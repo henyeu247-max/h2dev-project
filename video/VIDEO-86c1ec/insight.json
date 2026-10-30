@@ -1,0 +1,84 @@
+{
+  "sku": "VIDEO-86c1ec",
+  "title": "NGÁCH CỰC NHỎ KEY SỨC KHOẺ THỊ TRƯỜNG HÀN QUỐC ĐANG RẤT TRENDS",
+  "actual_topic": "Ngách cực nhỏ Sức khỏe thị trường Hàn Quốc — kênh mới lập hơn 1 tháng, chỉ 15 video đã có view khủng",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Sức Khỏe & Dinh Dưỡng",
+  "niche_id": "faceless-general",
+  "target_market": "Hàn Quốc",
+  "market_code": "KR",
+  "key_takeaways": [
+    "Tác giả giới thiệu một kênh sức khỏe ở thị trường Hàn Quốc, lập hơn một tháng và mới ra khoảng 15 video nhưng lượt xem rất cao, riêng việc làm video bắt đầu từ 11 ngày trước.",
+    "Dịch tiêu đề ra thì thấy các video nói về bốn loại thực phẩm, bốn loại hạt, và từ khóa ngách chính là từ khóa về thận; video nào cao view cũng đều có từ khóa này.",
+    "Ngách sức khỏe có rất nhiều ngách nhỏ, nên tác giả khuyên đánh vào một từ khóa ngách như từ khóa thận, làm về thực phẩm nên ăn hoặc tránh để không bị bệnh thận.",
+    "Kênh này dùng video chạy xuyên suốt cả video, và tác giả khuyên làm như vậy chứ đừng chỉ để một ảnh, vì chính sách YouTube hiện nay sẽ quét kênh chỉ để một ảnh và coi là trùng lặp nội dung hoặc sử dụng lại nội dung.",
+    "Tác giả để link kênh trong phần mô tả để anh em tham khảo và từ đó lập thêm các kênh đối thủ khác."
+  ],
+  "edit_sop": {
+    "primary": "Phân tích ngách sức khỏe thị trường Hàn Quốc theo từ khóa ngách thận và cách edit của kênh đối thủ",
+    "additional": [
+      "Dịch tiêu đề các video cao view để tìm từ khóa ngách",
+      "Bấm vào mục phổ biến rồi dịch ra, thấy video cao view đều có từ khóa thận",
+      "Đi sâu vào một ngách nhỏ trong ngách sức khỏe, ví dụ làm về thực phẩm tránh bị bệnh thận",
+      "Kênh đối thủ dùng video chạy xuyên suốt cả video, tác giả khuyên làm như vậy",
+      "Link kênh để trong mô tả để tham khảo và lập thêm kênh đối thủ khác"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng chỉ để một ảnh chạy suốt video, vì chính sách YouTube hiện nay quét kênh chỉ dùng một ảnh và dính loại nội dung trùng lặp hoặc sử dụng lại nội dung",
+    "Tránh làm chủ đề sức khỏe chung chung quá rộng mà phải đi sâu vào đúng một từ khóa ngách cụ thể đang có lượt xem cao như từ khóa về thận"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "HeyGen"
+  ],
+  "channels_mentioned": [
+    "@노인건강습관-m3o"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu ngách Sức khỏe thị trường Hàn Quốc"
+    },
+    {
+      "time": "00:34",
+      "seconds": 34,
+      "label": "Giới thiệu bối cảnh & Đặt vấn đề cốt lõi"
+    },
+    {
+      "time": "00:54",
+      "seconds": 54,
+      "label": "Phân tích kênh mẫu: hơn 1 tháng tuổi, chỉ 15 video"
+    },
+    {
+      "time": "01:19",
+      "seconds": 79,
+      "label": "Lọc mục Phổ biến: Toàn bộ video cao view đều xoay quanh từ khóa ngách thận"
+    },
+    {
+      "time": "01:56",
+      "seconds": 116,
+      "label": "Kỹ thuật dựng video chuyển động xuyên suốt (HeyGen) tránh bị quét lỗi 1 ảnh tĩnh"
+    },
+    {
+      "time": "02:28",
+      "seconds": 148,
+      "label": "Đánh giá tiềm năng và hướng khai thác ngách"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-86c1ec/transcript.txt",
+  "sop_steps": [
+    "Dịch tiêu đề các video cao view để tìm từ khóa ngách",
+    "Bấm vào mục phổ biến rồi dịch ra, thấy video cao view đều có từ khóa thận",
+    "Đi sâu vào một ngách nhỏ trong ngách sức khỏe, ví dụ làm về thực phẩm tránh bị bệnh thận",
+    "Kênh đối thủ dùng video chạy xuyên suốt cả video, tác giả khuyên làm như vậy",
+    "Link kênh để trong mô tả để tham khảo và lập thêm kênh đối thủ khác"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

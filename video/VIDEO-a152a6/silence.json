@@ -1,0 +1,143 @@
+{
+  "engine": "cuda_gpu",
+  "gpu_device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "stft_speech_band": true,
+  "gpu_chunk_bounds": [
+    0.0,
+    179.45,
+    364.4,
+    518.85,
+    703.45,
+    884.05,
+    1046.1,
+    1215.05,
+    1386.3,
+    1436.87
+  ],
+  "noise_db": -35,
+  "min_duration": 2.5,
+  "silence_regions": [
+    {
+      "start": 253.7,
+      "end": 258.05,
+      "duration": 4.35
+    },
+    {
+      "start": 418.65,
+      "end": 421.6,
+      "duration": 2.95
+    },
+    {
+      "start": 422.45,
+      "end": 425.45,
+      "duration": 3.0
+    },
+    {
+      "start": 498.05,
+      "end": 502.45,
+      "duration": 4.4
+    },
+    {
+      "start": 514.65,
+      "end": 521.0,
+      "duration": 6.35
+    },
+    {
+      "start": 531.0,
+      "end": 533.8,
+      "duration": 2.8
+    },
+    {
+      "start": 553.75,
+      "end": 557.6,
+      "duration": 3.85
+    },
+    {
+      "start": 614.7,
+      "end": 617.2,
+      "duration": 2.5
+    },
+    {
+      "start": 796.0,
+      "end": 800.05,
+      "duration": 4.05
+    },
+    {
+      "start": 805.3,
+      "end": 810.7,
+      "duration": 5.4
+    },
+    {
+      "start": 812.3,
+      "end": 815.5,
+      "duration": 3.2
+    },
+    {
+      "start": 871.5,
+      "end": 876.2,
+      "duration": 4.7
+    },
+    {
+      "start": 877.3,
+      "end": 880.7,
+      "duration": 3.4
+    },
+    {
+      "start": 886.0,
+      "end": 914.05,
+      "duration": 28.05
+    },
+    {
+      "start": 922.65,
+      "end": 927.7,
+      "duration": 5.05
+    },
+    {
+      "start": 970.0,
+      "end": 974.3,
+      "duration": 4.3
+    },
+    {
+      "start": 987.6,
+      "end": 991.8,
+      "duration": 4.2
+    },
+    {
+      "start": 1025.0,
+      "end": 1030.75,
+      "duration": 5.75
+    },
+    {
+      "start": 1074.6,
+      "end": 1092.6,
+      "duration": 18.0
+    },
+    {
+      "start": 1261.3,
+      "end": 1266.1,
+      "duration": 4.8
+    },
+    {
+      "start": 1289.7,
+      "end": 1292.3,
+      "duration": 2.6
+    },
+    {
+      "start": 1312.0,
+      "end": 1317.25,
+      "duration": 5.25
+    },
+    {
+      "start": 1358.1,
+      "end": 1361.55,
+      "duration": 3.45
+    },
+    {
+      "start": 1361.65,
+      "end": 1364.95,
+      "duration": 3.3
+    }
+  ],
+  "silence_count": 24,
+  "silence_total_sec": 97.2
+}

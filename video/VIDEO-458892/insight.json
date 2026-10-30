@@ -1,0 +1,79 @@
+{
+  "sku": "VIDEO-458892",
+  "title": "KIẾM HƠN $100,000.000 / THÁNG VỚI KEY LỊCH SỬ QUÂN SỰ NÀY - HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z",
+  "actual_topic": "Giải mã kênh đối thủ WW2 Tales đạt doanh thu $104,170/tháng (11.5M views/30 ngày) và toàn bộ quy trình sản xuất A-Z ngách Lịch Sử Quân Sự Thế Chiến",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Lịch Sử Quân Sự & Thế Chiến (WWII)",
+  "niche_id": "ww2-history-us",
+  "target_market": "Hoa Kỳ (US) / Quốc tế (Global)",
+  "market_code": "US,GLOBAL",
+  "channels_mentioned": [
+    "@WW2Tales"
+  ],
+  "tools_mentioned": [
+    "ChatGPT",
+    "Notepad++",
+    "Leonardo"
+  ],
+  "visual_audio_checked": true,
+  "accuracy_status": "verified_expert_summary",
+  "analysis_method": "frame_vision_manual_audit",
+  "key_takeaways": [
+    "Video hướng dẫn làm từ A đến Z cho ngách thế chiến thứ 2, mở đầu bằng doanh thu thực tế bằng đô la của một kênh được chủ kênh chia sẻ.",
+    "Kênh được phân tích có hơn 200 video nhưng mới làm từ 2 tháng trước, một ngày ra tới 7-8 video mà view vẫn ổn định vì đúng tệp khán giả.",
+    "Bước chủ đề và kịch bản dùng prompt trong ChatGPT 5, chủ đề thay chỗ X bằng số lượng cần, kịch bản chia từng phần khoảng 700 đến 800 từ, bấm continue đến khi có chữ end, rồi lưu bằng Notepad++.",
+    "Giọng đọc dùng ElevenLabs, tác giả chỉ vào web để lấy ID giọng rồi chạy bằng tool có API, còn hình ảnh dùng prompt copy từng phần kịch bản để tạo ảnh trong Leonardo, bản free.",
+    "Dựng bằng CapCut, tạo chuyển cảnh, chỉnh ảnh đen trắng giống đối thủ vì chủ đề thời xưa, tạo phụ đề từ file âm thanh, làm thumbnail tỉ lệ 16:9, và nhấn mạnh quan trọng nhất vẫn là kịch bản và giọng đọc."
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu & Bằng chứng doanh thu $104,170/tháng kênh @WW2Tales"
+    },
+    {
+      "time": "01:59",
+      "seconds": 119,
+      "label": "Phân tích cấu trúc video triệu view & Cách giật nhãn thumbnail USS Helena"
+    },
+    {
+      "time": "04:40",
+      "seconds": 280,
+      "label": "Quy trình train Claude AI viết kịch bản phân đoạn lịch sử chân thực"
+    },
+    {
+      "time": "07:30",
+      "seconds": 450,
+      "label": "Hướng dẫn lồng tiếng ElevenLabs và kỹ thuật dựng footage chiến tranh trong CapCut"
+    },
+    {
+      "time": "10:19",
+      "seconds": 619,
+      "label": "Tổng kết quy trình sản xuất hàng loạt và chia sẻ tài liệu Google Sheet"
+    }
+  ],
+  "edit_sop": {
+    "primary": "Quy trình A-Z làm video ngách Thế chiến 2: chủ đề, kịch bản, voice, ảnh, dựng, thumbnail",
+    "additional": [
+      "Dùng prompt trong ChatGPT sinh 10 hoặc 20 chủ đề, chọn một tiêu đề rồi dán vào prompt kịch bản",
+      "Kịch bản sinh theo từng phần khoảng 700-800 từ, bấm continue đến khi có chữ end",
+      "Voice dùng ElevenLabs: lấy ID giọng trên web, import file kịch bản vào tool rồi start",
+      "Ảnh: dán từng phần kịch bản vào prompt ảnh, đưa prompt sang Leonardo để tạo ảnh",
+      "Dựng trong CapCut: thêm hiệu ứng chuyển cảnh, cho hình đen trắng giống đối thủ, tạo phụ đề từ file âm thanh"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng copy hết cả kịch bản một lúc để tạo ảnh, làm từng phần thì tốt hơn",
+    "AI không tạo được nhiều một lúc nên phải chia kịch bản thành từng phần"
+  ],
+  "sop_steps": [
+    "Dùng prompt trong ChatGPT sinh 10 hoặc 20 chủ đề, chọn một tiêu đề rồi dán vào prompt kịch bản",
+    "Kịch bản sinh theo từng phần khoảng 700-800 từ, bấm continue đến khi có chữ end",
+    "Voice dùng ElevenLabs: lấy ID giọng trên web, import file kịch bản vào tool rồi start",
+    "Ảnh: dán từng phần kịch bản vào prompt ảnh, đưa prompt sang Leonardo để tạo ảnh",
+    "Dựng trong CapCut: thêm hiệu ứng chuyển cảnh, cho hình đen trắng giống đối thủ, tạo phụ đề từ file âm thanh"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T07:00:00Z",
+  "source_transcript": "video/VIDEO-458892/transcript.txt"
+}

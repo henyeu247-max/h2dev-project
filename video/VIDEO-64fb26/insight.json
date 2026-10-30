@@ -1,0 +1,165 @@
+{
+  "sku": "VIDEO-64fb26",
+  "title": "Cách Dùng Kho Tài Liệu Hiệu Quả",
+  "actual_topic": "Hướng dẫn khai thác bộ tài liệu quy trình làm việc chuẩn 4 vị trí (Quản lý kênh, Content, MC/Audio, Editor) của BMG/GODA và biểu mẫu Bài Tập 2 Dream 100 (50 kênh đối thủ, 50 trang báo, 50 cộng đồng fanpage, chương trình TV & Bilibili) để tổng hợp nội dung và làm chủ thị trường.",
+  "category_group": "he_thong",
+  "niche_primary": "Quy trình Vận hành Đội ngũ & Biểu mẫu Dream 100",
+  "niche_id": "cach_dung_kho_tai_lieu_hieu_qua",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "tools_mentioned": [
+    "YouTube",
+    "Storyblocks",
+    "ChatGPT",
+    "Bilibili",
+    "Google Drive",
+    "Google Docs",
+    "1of10"
+  ],
+  "channels_referenced": [
+    {
+      "name": "Thái Phạm",
+      "handle": "@ThaiPham",
+      "url": "https://www.youtube.com/@ThaiPham",
+      "niche": "Tài chính, Chứng khoán & Phát triển bản thân (Kênh mẫu số 1 trong bảng Bài Tập 2 Dream 100 với video 4M views, phong cách Thumbnail vàng-đen-đỏ kinh điển)",
+      "status": "VERIFIED_HTTP_200"
+    },
+    {
+      "name": "VTV24",
+      "handle": "@vtv24",
+      "url": "https://www.youtube.com/@vtv24",
+      "niche": "Mô hình chuẩn phối hợp MC dẫn hiện trường bên ngoài kết hợp giọng đọc Voice thuyết minh nội dung tổng hợp bên trong",
+      "status": "VERIFIED_HTTP_200"
+    },
+    {
+      "name": "5-Minute Crafts",
+      "handle": "@5MinuteCraftsYouTube",
+      "url": "https://www.youtube.com/@5MinuteCraftsYouTube",
+      "niche": "Kênh mẫu Faceless quốc tế lưu trực tiếp trên thanh dấu trang (Bookmark) trình duyệt điều hành hệ thống YTS",
+      "status": "VERIFIED_HTTP_200"
+    }
+  ],
+  "Analytics": {
+    "verdict": "GREEN",
+    "summary": "Quy trình tam giác vận hành (Quản lý kênh - Content/MC/Audio - Editor) kế thừa từ BMG kết hợp kỷ luật thực hành bảng Dream 100 (50 kênh, 50 báo, 50 fanpage) giúp rút ngắn thời gian nghiên cứu một ngách mới xuống chỉ còn 20 giờ để trở thành 'Chuyên gia tổng hợp' và nhân bản hệ thống kênh bền vững mà không bị gãy chất lượng."
+  },
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu kho tài liệu quy trình sản xuất video bán content của BMG và luồng phối hợp từ Quản lý kênh đến SEO up"
+    },
+    {
+      "time": "02:12",
+      "seconds": 132,
+      "label": "Quy trình 8 bước cho Quản lý kênh: ưu tiên tương tác bình luận trong 60 phút đầu và chăm sóc cả các video cũ"
+    },
+    {
+      "time": "02:43",
+      "seconds": 163,
+      "label": "Quy trình và các điều cấm kỵ cho Content: không lấy nguyên 1 bài báo, không copy lời dẫn và chỉnh sửa trên 50%"
+    },
+    {
+      "time": "04:41",
+      "seconds": 281,
+      "label": "Quy trình cho MC, Audio và Editor: mẹo chèn thumbnail 0,5-1 giây đầu chống lỗi clickbait, giới hạn ảnh dưới 12s, video dưới 9s"
+    },
+    {
+      "time": "06:24",
+      "seconds": 384,
+      "label": "Nguyên tắc chống trùng lặp cho Editor: bắt buộc zoom/lật tỷ lệ, cắt logo, khớp hình với lời và tư duy mở kênh mới"
+    },
+    {
+      "time": "08:07",
+      "seconds": 487,
+      "label": "Cách dùng biểu mẫu Dream 100: lập danh sách 50 trang báo, 50 cộng đồng fanpage, chương trình TV và Bilibili để tổng hợp bài"
+    },
+    {
+      "time": "09:32",
+      "seconds": 572,
+      "label": "Phân tích 50 kênh đối thủ trong Dream 100 (Thái Phạm, Đăng HNN) để đúc kết công thức tiêu đề, từ khóa SEO và bố cục thumbnail 1/3 - 2/3"
+    },
+    {
+      "time": "11:54",
+      "seconds": 714,
+      "label": "Tư duy trở thành chuyên gia tổng hợp sau 20 giờ nghiên cứu và biến Dream 100 thành thói quen theo dõi hàng ngày của chủ kênh"
+    }
+  ],
+  "key_takeaways": [
+    "Luồng vận hành bắt đầu từ Tiêu đề & Thumbnail (Tam giác Quản lý kênh – Content/MC/Audio – Editor): Quản lý kênh phải là người tìm chủ đề, chốt tiêu đề và thiết kế thumbnail trước rồi mới giao cho Content viết bài; sau khi duyệt kịch bản mới chuyển sang thu âm MC/Voice (như mô hình VTV tách MC dẫn và giọng đọc tổng hợp) rồi tới Editor dựng hình, cuối cùng Quản lý kênh nhận lại để SEO up và ưu tiên tương tác bình luận trong 60 phút đầu.",
+    "Kỷ luật sắt dành cho vị trí Content: Đưa phần tinh túy, hấp dẫn nhất lên ngay lời dẫn mở đầu; tuyệt đối không chép nguyên một bài báo hay copy lời dẫn của video khác (vì YouTube kiểm soát rất gắt những phút đầu tiên), không lấy quá 60% nội dung tham khảo mà phải ghép 5-7 bài báo kết hợp góc nhìn cá nhân và ChatGPT để biến đổi trên 50%.",
+    "Thông số kỹ thuật chống bản quyền và clickbait cho Editor: Chèn ảnh thumbnail vào 0,5 đến 1 giây đầu video để tránh bị bắt lỗi clickbait thumbnail; không giữ tĩnh một ảnh quá 12 giây, một đoạn video quá 9 giây (hoặc dưới 4 giây với video tổng hợp bình luận); mọi tư liệu lấy về (kể cả mua trên Storyblocks hay lấy từ Bilibili) đều phải zoom to/nhỏ, lật khung hình, xóa sạch logo và khớp 100% lời thoại (nói về trứng vịt phải hiện ảnh trứng vịt).",
+    "Khai thác biểu mẫu Dream 100 đa nguồn: Lập danh sách 50 kênh đối thủ cùng ngách, 50 trang báo, 50 cộng đồng fanpage, chương trình TV và nền tảng nước ngoài (như Bilibili Trung Quốc) để luôn có nguồn nguyên liệu dồi dào.",
+    "Đúc kết công thức SEO & Thumbnail từ 50 kênh đối thủ (Case study Thái Phạm & Đăng HNN): Thống kê các cấu trúc tiêu đề lặp lại ('N cách/bí quyết/tuyệt chiêu/sai lầm'), bộ từ khóa ngắn/dài (đánh từ khóa dài 'kiếm tiền từ hệ thống' trước để ăn ngách rồi mới ôm từ khóa ngắn 'kiếm tiền') và bố cục thumbnail chuẩn (1/3 ảnh chuyên gia trên nền mờ + 2/3 chữ màu trắng, vàng, đỏ hoặc xanh lá).",
+    "Trở thành Chuyên gia tổng hợp sau 20 giờ và trực tiếp làm Dream 100 mỗi ngày: Không cần là bác sĩ chuyên khoa nghiên cứu sâu, chỉ cần 20 giờ nghiên cứu tổng hợp từ báo chí và Dream 100 là đủ nắm bắt thị trường; chủ kênh tuyệt đối không được khoán trắng khâu nghiên cứu Dream 100 cho nhân viên khi mở kênh thứ 2, thứ 3."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình vận hành sản xuất video chuẩn BMG và khai thác bảng nghiên cứu Dream 100",
+    "additional": [
+      "Quản lý kênh nghiên cứu chủ đề, thiết kế thumbnail và đặt tiêu đề trước khi giao đề bài cho Content",
+      "Content thu thập 5-7 bài báo từ danh sách 50 trang báo/50 fanpage, kết hợp trải nghiệm cá nhân và ChatGPT để viết kịch bản mới (biến đổi trên 50%, không copy lời dẫn)",
+      "Editor dựng video theo quy chuẩn: chèn thumbnail 0,5-1s đầu, ảnh tĩnh dưới 12s, clip dưới 9s (clip bình luận dưới 4s), bắt buộc zoom/đổi tỷ lệ khung hình, xóa logo và đảm bảo hình ảnh khớp 100% lời thoại",
+      "Hoàn thành bảng Dream 100 gồm 50 kênh đối thủ để rút ra mẫu tiêu đề thu hút, bộ từ khóa dài/ngắn và bố cục màu sắc thumbnail (1/3 nhân vật, 2/3 chữ)",
+      "Chủ kênh duy trì thói quen xem các kênh trong Dream 100 mỗi sáng để bắt kịp xu hướng mới và tương tác bình luận khán giả trong 60 phút đầu sau khi đăng"
+    ]
+  },
+  "sop_steps": [
+    "Quản lý kênh nghiên cứu chủ đề, thiết kế thumbnail và đặt tiêu đề trước khi giao đề bài cho Content",
+    "Content thu thập 5-7 bài báo từ danh sách 50 trang báo/50 fanpage, kết hợp trải nghiệm cá nhân và ChatGPT để viết kịch bản mới (biến đổi trên 50%, không copy lời dẫn)",
+    "Editor dựng video theo quy chuẩn: chèn thumbnail 0,5-1s đầu, ảnh tĩnh dưới 12s, clip dưới 9s (clip bình luận dưới 4s), bắt buộc zoom/đổi tỷ lệ khung hình, xóa logo và đảm bảo hình ảnh khớp 100% lời thoại",
+    "Hoàn thành bảng Dream 100 gồm 50 kênh đối thủ để rút ra mẫu tiêu đề thu hút, bộ từ khóa dài/ngắn và bố cục màu sắc thumbnail (1/3 nhân vật, 2/3 chữ)",
+    "Chủ kênh duy trì thói quen xem các kênh trong Dream 100 mỗi sáng để bắt kịp xu hướng mới và tương tác bình luận khán giả trong 60 phút đầu sau khi đăng"
+  ],
+  "avoid_flags": [
+    "Lấy nguyên xi một bài báo, copy lời dẫn mở đầu hoặc giữ lại hơn 60% nội dung của video tham khảo khiến YouTube đánh trùng lặp",
+    "Giữ nguyên tỷ lệ khung hình gốc khi dùng lại video (kể cả video mua từ Storyblocks hoặc tải từ Bilibili), để sót logo hoặc dùng một cảnh quá 9-12 giây",
+    "Mang tư duy 'nhân bản/clone' làm y hệt video cũ khi mở kênh mới dẫn đến trùng lặp nội dung giữa các kênh",
+    "Phó mặc hoàn toàn việc nghiên cứu thị trường và lập bảng Dream 100 cho nhân sự hoặc phòng marketing dẫn đến người duyệt bài cuối cùng không hiểu khán giả"
+  ],
+  "course_docs": [
+    {
+      "title": "Quy Trình Làm Việc Siêu Chi Tiết (Quản Lý Kênh - Content - MC/Audio - Editor)",
+      "file": "assets/docs-huan/Quy_trinh_lam_viec_SIEU_CHI_TIET.pdf",
+      "readFile": "assets/docs-huan/Quy_trinh_lam_viec_SIEU_CHI_TIET.pdf.md",
+      "link": "https://drive.google.com/file/d/16esGLNpghBWcWgIPlb1UH6YfgDEGw6YJ/view"
+    },
+    {
+      "title": "Bài Tập 2 (Phải Làm): Mẫu Mô Hình Hóa Kênh YouTube Phát Triển Bản Thân (Dream 100)",
+      "file": "assets/docs-huan/BAI_TAP_2_DREAM_100_PHAI_LAM_MAU_MO_HINH_HOA_KENH_YOUTUBE_PHAT_TRIEN_BAN_THAN.docx",
+      "readFile": "assets/docs-huan/BAI_TAP_2_DREAM_100_PHAI_LAM_MAU_MO_HINH_HOA_KENH_YOUTUBE_PHAT_TRIEN_BAN_THAN.docx.md",
+      "link": "https://drive.google.com/file/d/1nghnbHF6vGJ_0S3OwzrI4r-2M1gzN3d4/view"
+    },
+    {
+      "title": "Checklist Quản Trị & Đánh Giá Nhân Sự Sản Xuất YouTube",
+      "file": "assets/docs-huan/CHECKLIST_NHAN_SU.xlsx",
+      "readFile": "assets/docs-huan/CHECKLIST_NHAN_SU.xlsx.md",
+      "link": "https://drive.google.com/file/d/1ZTyImW_81zhIaTTRZQujrJf7OEjQlXBJ/view"
+    },
+    {
+      "title": "Danh Sách Group Tuyển Dụng Nhân Sự Content, Voice & Editor",
+      "file": "assets/docs-huan/Group_Tuyen_Dung.xlsx",
+      "readFile": "assets/docs-huan/Group_Tuyen_Dung.xlsx.md",
+      "link": "https://drive.google.com/file/d/1P-IEDCLtXlZTYFhsY59Q-8Biqebo48bB/view"
+    },
+    {
+      "title": "Tài Liệu Chuẩn Hóa SEO YouTube 100 Điểm",
+      "file": "assets/docs-huan/SEO_100_DIEM.pdf",
+      "readFile": "assets/docs-huan/SEO_100_DIEM.pdf.md",
+      "link": "https://drive.google.com/file/d/15v_9JyWCIUskVsdegZ1jePL-PbnyAo8X/view"
+    },
+    {
+      "title": "Kế Hoạch Triển Khai Kênh GODA 2025",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/2._GODA_-_Ke_hoach_tren_khai_kenh.xlsx",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/2._GODA_-_Ke_hoach_tren_khai_kenh.xlsx.md",
+      "link": "https://drive.google.com/file/d/1boD7G9XnyWXJhHkKen29DT1QqFRWAgK_/view"
+    }
+  ],
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "channels_mentioned": [
+    "@ThaiPham",
+    "@vtv24",
+    "@5MinuteCraftsYouTube"
+  ],
+  "source_transcript": "video/VIDEO-64fb26/transcript.txt"
+}

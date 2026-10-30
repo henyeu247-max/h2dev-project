@@ -1,0 +1,7 @@
+{
+  "noise_db": -35,
+  "min_duration": 2.5,
+  "silence_regions": [],
+  "silence_count": 0,
+  "silence_total_sec": 0
+}

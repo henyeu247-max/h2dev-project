@@ -1,0 +1,864 @@
+1
+00:00:00,000 --> 00:00:12,360
+trong cái quá trình mà anh em mình làm bất kỳ một công việc gì thì chúng ta cũng đi từ
+
+2
+00:00:12,360 --> 00:00:19,860
+hai điểm là điểm A điểm B thì đầu tiên thì chúng ta đi từ cái cái điểm của chúng ta đang mong muốn
+
+3
+00:00:20,000 --> 00:00:22,680
+chúng ta có cái điểm A của chúng ta
+
+4
+00:00:22,680 --> 00:00:26,500
+sau đó chúng ta đều mong muốn đến một cái điểm B nào đấy
+
+5
+00:00:26,500 --> 00:00:28,400
+thì cái điểm B đấy của anh em mình á
+
+6
+00:00:28,400 --> 00:00:29,360
+nó là gì
+
+7
+00:00:30,000 --> 00:00:31,500
+Nó là 100.000 sub.
+
+8
+00:00:32,740 --> 00:00:35,360
+Ở đây thì mọi người đang mong muốn 100.000 sub của YouTube rồi ạ.
+
+9
+00:00:35,760 --> 00:00:43,360
+Sau đó thì chúng ta chuyển đổi sang các nền tảng khác về YouTube, TikTok, Google, Facebook, các nền tảng khác.
+
+10
+00:00:43,880 --> 00:00:49,380
+Khi mà chúng ta có được kết quả mà chúng ta cần thì cái đấy là cái rất là quan trọng.
+
+11
+00:00:49,700 --> 00:00:53,500
+Khi mà chúng ta làm và chúng ta không biết lý do tại sao chúng ta làm và không biết là chúng ta sẽ đi đến đâu,
+
+12
+00:00:53,920 --> 00:00:56,820
+thì nó sẽ gặp cái vấn đề là một thời gian là mình bị mất phương hướng và mình chán.
+
+13
+00:00:56,820 --> 00:01:03,680
+Bắt đầu có thể là mình rất là nhiệt huyết, nhưng càng ngày sau mình càng chán, mình càng đi xuống. Đấy là tâm lý chung của tất cả mọi người rồi.
+
+14
+00:01:03,680 --> 00:01:17,020
+Thì cái này là một trong số những công thức liên quan đến việc phát triển bản thân. Chúng ta cứ đi từ A đến B thì chắc chắn là nó sẽ có những rào cản đúng không?
+
+15
+00:01:17,020 --> 00:01:20,540
+Chúng ta biết chúng ta ở đâu, chúng ta đang như thế nào, chúng ta có gì.
+
+16
+00:01:21,120 --> 00:01:25,020
+Đa số mọi người ở đây cũng bắt đầu từ con số 0.
+
+17
+00:01:25,360 --> 00:01:25,780
+Không sao cả.
+
+18
+00:01:26,700 --> 00:01:27,580
+Đặt mục tiêu 100.000.
+
+19
+00:01:27,940 --> 00:01:30,360
+Thực chất đây là một cái bài toán mà chúng ta cần giải.
+
+20
+00:01:30,500 --> 00:01:36,820
+Và đây là một cái bài toán nếu mà nói rằng dễ thì cũng có thể là nó là dễ.
+
+21
+00:01:37,020 --> 00:01:39,537
+Nhưng nếu nói về khó thì có thể nói rất khó
+
+22
+00:01:40,000 --> 00:01:49,437
+Khi mà mình làm triển khai cái kênh Nguyệt Vân Phùng Gia, bên đấy là anh em triển khai, nó có thể lên đến khoảng 400.000 sub trong khoảng 2 tháng. Và sắp
+
+23
+00:01:49,437 --> 00:01:59,337
+tới mình đang đẩy nó lên để cho lên 1 triệu follow. Thì cái này là cái mà mình làm đến 100k chắc chỉ mất khoảng 10 ngày thôi. Nó cực kỳ nhanh.
+
+24
+00:01:59,337 --> 00:02:07,037
+Nhưng mà cùng cái chủ đề, cùng cái cách làm như thế, tại sao mà cũng có rất là nhiều người ngoài kia cũng đang làm và loay hoay và không có kết quả.
+
+25
+00:02:07,637 --> 00:02:13,497
+Bởi vì là chẳng qua là mình không có gì là giỏi hơn mọi người hay là không có gì đặc biệt cả.
+
+26
+00:02:13,937 --> 00:02:19,437
+Cái điều đặc biệt và cái điều mà nó có kết quả nhanh là việc cái thứ nhất là mình làm quá nhiều.
+
+27
+00:02:19,857 --> 00:02:24,617
+Mình làm quá nhiều và mình làm về cái chủ đề phong thủy quá nhiều để mình am hiểu về thị trường.
+
+28
+00:02:24,617 --> 00:02:32,000
+Thế mình hiểu được rằng là mình có cái định vị tương lai cái kênh của mình nó như thế nào?
+
+29
+00:02:32,000 --> 00:02:40,680
+Cái Phùng Gia thì nó sẽ có nhiều mảng. Thế vậy là định vị của Nguyệt Vân nó như thế nào? Nó khác với Master Phùng Phương ra làm sao? Tại sao nó lại không cạnh
+
+30
+00:02:40,680 --> 00:02:49,160
+tranh với Master Phùng Phương? Thì mình phải tìm được ra cái điểm định vị, cái kênh đấy nó khác với cái kênh cũ của bên mình đang làm như thế nào? Thì mình đang chọn
+
+31
+00:02:49,160 --> 00:02:57,640
+một cái mảng khác, một ngách khác về Master Phùng Phương thì mình chọn về phong thủy nhà, nó là định vị giá cao. Thì mình sẽ làm mọi thứ liên quan đến phong thủy nhà.
+
+32
+00:02:57,640 --> 00:03:04,740
+Còn bạn Nguyệt Vân này thì chỉ xác định là bán những cái sản phẩm, tức là mình đi từ việc là mình mong muốn bán những sản phẩm giá thấp hơn.
+
+33
+00:03:05,660 --> 00:03:13,220
+Nhưng nếu mà mình bán sản phẩm giá thấp hơn bằng định vị cao hơn, bằng cái hình ảnh cao hơn, nó gặp vấn đề.
+
+34
+00:03:13,840 --> 00:03:16,700
+Ngày những người mà họ có tiền chưa chắc họ đã mong muốn mua những sản phẩm thấp.
+
+35
+00:03:18,300 --> 00:03:20,680
+Thậm chí là càng ngày mình càng phải tăng giá.
+
+36
+00:03:20,680 --> 00:03:28,950
+Nên là khi mà mình muốn bán một cái sản phẩm mà nó từ 400k cho đến 200 triệu, nếu mà nguyên mình cứ giữ một
+
+37
+00:03:28,950 --> 00:03:37,220
+cái công ty và một cái định vị của mình và bán tất cả các dải sản phẩm như thế này thì mình sẽ gặp vấn đề.
+
+38
+00:03:37,220 --> 00:03:41,220
+Đó là lý do tại sao mình cần phải định vị lại
+
+39
+00:03:41,220 --> 00:03:48,220
+Mình tạo ra một thương hiệu con trong thương hiệu to để mình phân ra bán những sản phẩm dưới 5 triệu
+
+40
+00:03:48,220 --> 00:03:55,877
+Mình định vị kênh khác thì nó đưa ra được content khác
+
+41
+00:03:55,877 --> 00:03:57,917
+Mình xác định được đối tượng.
+
+42
+00:04:01,937 --> 00:04:03,297
+Đối tượng kênh nó cũng khác.
+
+43
+00:04:03,697 --> 00:04:09,017
+Đấy chính là cái mà mình đưa ra cho các bạn ngay từ ban đầu phải làm cái bài tập, định vị kênh này.
+
+44
+00:04:09,017 --> 00:04:10,737
+Những cái đối tượng kênh của mình là gì?
+
+45
+00:04:11,257 --> 00:04:13,017
+Những cái hình mẫu.
+
+46
+00:04:14,217 --> 00:04:22,797
+Hình mẫu của cái kênh của mình là gì? Nó rất là quan trọng. Cái này các bạn xem lại cái bài tập và xem lại cái case study của Cường hôm trước mà mình gửi.
+
+47
+00:04:23,297 --> 00:04:27,857
+Thì phải rất rõ ràng từ những cái điểm như vậy. Sau đó thì mình có thêm những cái tính cách.
+
+48
+00:04:30,437 --> 00:04:43,937
+Tính cách của cái kênh đấy là gì? Khi mà lên 100.000 sub thì mình đối với mình, mình phân chia ra rằng là thầy Master Phùng Phương sẽ là cái tính cách về việc, thứ nhất là cũng là sự đơn giản.
+
+49
+00:04:44,217 --> 00:04:56,537
+Cái thứ hai là liên quan đến sự logic và khoa học. Cái thứ ba là trẻ tuổi nhưng tham gia vào các hiệp hội phong thủy thế giới và du học ở Singapore tức là mang sự hiện đại của phương Tây.
+
+50
+00:04:57,197 --> 00:05:06,137
+Thu hút những người liên quan đến khoa học thực chứng và liên quan đến logic. Còn về tính cách của Nguyệt Vân thì sao? Mình đã ghi rất rõ ràng ở trong phần...
+
+51
+00:05:06,200 --> 00:05:20,020
+Kênh trên Facebook, YouTube là Nhà Tâm Linh Ngoại Cảm. Nó liên quan đến cái việc như vậy. Thì có thể xem về Tarot, xem về Tử Vi, xem về Nốt Ruồi, xem về Nhân Tướng và các kiểu.
+
+52
+00:05:20,020 --> 00:05:26,580
+Thì những cái đấy là những cái mà mình đi theo những cái kênh. Thì từ đấy mình đưa ra những cái content để nó phù hợp với cái điểm mà mình mong muốn.
+
+53
+00:05:27,000 --> 00:05:36,413
+Thì cái cách thức mà mình làm như vậy ấy. Và tại sao mình làm có kết quả? Bởi vì mình hiểu được cái một
+
+54
+00:05:36,413 --> 00:05:46,247
+cái chữ. Đó là gì? Insight. Insight của khách hàng. Cái này là cái mà mình làm rất nhiều rồi. Rất nhiều rồi. Mình test
+
+55
+00:05:46,247 --> 00:05:56,080
+được ra là cứ với cái chủ đề đấy, với cái nhóm khán giả đấy thì làm những video kiểu như vậy là sẽ lên.
+
+56
+00:05:59,780 --> 00:06:01,240
+nó đều lên được
+
+57
+00:06:01,240 --> 00:06:03,840
+Thế mình nắm rất là rõ về Insight ngành hàng
+
+58
+00:06:03,840 --> 00:06:05,600
+Thế vậy là kênh nào cũng như vậy
+
+59
+00:06:05,600 --> 00:06:09,760
+thì mình đều có một sự nghiên cứu về Insight ngành hàng
+
+60
+00:06:09,760 --> 00:06:11,420
+và mình nghiên cứu bằng việc
+
+61
+00:06:11,420 --> 00:06:13,300
+chính là những cái mà mình đưa cho các bạn
+
+62
+00:06:13,300 --> 00:06:15,780
+mình nghiên cứu từ những cái dấu vết còn lại
+
+63
+00:06:15,780 --> 00:06:18,660
+ở trên internet để mình phân tích ngược ra
+
+64
+00:06:18,660 --> 00:06:21,200
+cái mình hay làm là việc là phân tích
+
+65
+00:06:21,200 --> 00:06:24,620
+phân tích những cái điểm chung của những cái
+
+66
+00:06:24,620 --> 00:06:25,460
+đã có kết quả
+
+67
+00:06:25,460 --> 00:06:29,320
+sau đó từ những cái điểm chung đấy mình tìm được ra những cái nguyên lý
+
+68
+00:06:29,320 --> 00:06:32,320
+thông thường mình sẽ tìm được ra một cái nguyên lý nào đấy
+
+69
+00:06:32,320 --> 00:06:33,800
+từ cái nguyên lý đấy
+
+70
+00:06:33,800 --> 00:06:35,780
+mình sẽ coi như nó là nguyên lý gốc
+
+71
+00:06:35,780 --> 00:06:38,357
+Và từ nguyên lý đấy thì mình phát triển ra
+
+72
+00:06:38,357 --> 00:06:48,537
+Thì cũng như vậy thôi thì mình hiểu rằng là cái bản chất cái mạng xã hội nó là phản ánh người dùng, người dùng thật, nó là một cái tấm gương phản ánh.
+
+73
+00:06:48,837 --> 00:06:58,257
+Thế vậy là mình cố hiểu, mình hãy cố hiểu rằng là mình đứng vai trò làm một người khách hàng, mình lên trên mạng thì mình tìm hiểu những cái điều như thế nào thì đấy là một cái phần.
+
+74
+00:06:58,257 --> 00:07:05,607
+Cái thứ 2 là bản chất của cái việc mà mình đưa ra, mình đưa ra những cái thông tin, những cái công việc, những cái mà mình lên online, thì nó
+
+75
+00:07:05,607 --> 00:07:12,957
+là cái tấm gương phản chiếu chính mình, chính cái tổ chức của mình hoạt động hàng ngày hoặc là những cái mà mình mong muốn là mình đưa lên online thôi.
+
+76
+00:07:13,017 --> 00:07:20,177
+Chứ nó không cần phải cố là mình cần phải giống ai, mà cũng không cần phải là cố gồng mình lên để sao chép ai cả.
+
+77
+00:07:20,917 --> 00:07:27,117
+Thì tìm cách để mình đưa ra những cái tấm gương, những cái sự phản chiếu như vậy đến với đúng cái tệp khách hàng của mình.
+
+78
+00:07:27,117 --> 00:07:37,317
+Khi mà rõ được về Insight rồi, cái từ khóa Insight là một cái từ khóa cần phải nốt lại Insight khách hàng. Sau này mình làm mọi thứ nó đều xoay qua như thế này.
+
+79
+00:07:37,400 --> 00:07:43,280
+Khi mà chúng ta làm việc Insight thì đương nhiên là chúng ta sẽ không có được ngay cái kết quả đâu.
+
+80
+00:07:44,180 --> 00:07:48,360
+Mà chúng ta bắt buộc phải test. Internet là phải test. Internet người ta bảo cứ làm đi.
+
+81
+00:07:49,560 --> 00:07:54,560
+Trước mình học ông thầy mình năm 2016, 2017 không được rõ ràng như bây giờ đâu.
+
+82
+00:07:55,460 --> 00:07:58,840
+Chỉ có một câu là làm đi. Làm đi. Làm rồi có kết quả.
+
+83
+00:07:58,840 --> 00:08:01,780
+Nhưng làm đi. Làm rồi nó khác sai, sai nó khác có kết quả.
+
+84
+00:08:02,980 --> 00:08:05,400
+Sau khi thử sai khoảng 6 tháng mình bắt đầu kết quả.
+
+85
+00:08:05,400 --> 00:08:12,860
+6 tháng liên tục nhé, mỗi ngày 5 đến 10 video, tháng là 300 video, 6 tháng, thì kiểu gì nó cũng có kết quả thôi.
+
+86
+00:08:13,640 --> 00:08:17,400
+Thì mình mới đúc kết được ra những cái cách thức để mình có thể đi nhanh hơn và đúng hơn.
+
+87
+00:08:17,880 --> 00:08:26,460
+Tiếp theo nữa, có cái này nữa, là khi mà chúng ta đặt ra một cái mục tiêu là 100.000 sub và các cái mục tiêu, những cái kết quả đặt ra,
+
+88
+00:08:26,460 --> 00:08:39,520
+Đã thì bên mình có một vài công thức mà anh em đang áp dụng cho cả công ty bao gồm là từ CEO xuống các giám đốc cấp trung và đến tận nhân viên cấp thấp nhất.
+
+89
+00:08:40,060 --> 00:08:44,560
+Chúng ta sẽ có một vài cái nó liên quan đến phát triển bản thân ở đây khi đặt mục tiêu.
+
+90
+00:08:45,000 --> 00:08:54,520
+mục tiêu đầu tiên nó có ba dạng cái đầu tiên đấy là anh em tớ đang trước là đang thuê 25.000 đô để
+
+91
+00:08:54,520 --> 00:09:02,127
+coach cho cả công ty về việc đặt OKR OKR này thì bản chất của nó O là mục tiêu
+
+92
+00:09:02,127 --> 00:09:06,347
+Thế bạn đặt ra một cái mục tiêu. Mục tiêu này có thể là mục tiêu của bạn, mục tiêu của CEO, mục tiêu của tổ chức.
+
+93
+00:09:07,347 --> 00:09:18,827
+Cái mục tiêu này sau đấy chúng ta có thể chuyển xuống thành các cái KR (Key Results) là những cái việc, cái công việc mà các bạn cần phải hoàn thành.
+
+94
+00:09:18,827 --> 00:09:23,467
+Để làm sao các công việc ở dưới này hoàn thành, thì cái mục tiêu nó hoàn thành.
+
+95
+00:09:24,807 --> 00:09:31,867
+Khi mà mình đặt ra cái mục tiêu, ví dụ doanh số chẳng hạn, doanh số ở đây là 10 tỷ chẳng hạn, ví dụ thế.
+
+96
+00:09:32,907 --> 00:09:44,707
+Mục tiêu công ty phát triển lên 10 tỷ thì cái KR1 đầu tiên thì cần phải đạt về marketing như thế nào, về sale như thế nào, về hàng hóa, kho vận như thế nào, về tài chính như thế nào.
+
+97
+00:09:44,707 --> 00:09:58,067
+thì đều có các cái mục tiêu này đưa ra. Tức là những cái mục tiêu này là những cái mục tiêu của công ty đưa xuống. Sau đó mình tách nhỏ ra thành các cái nhiệm vụ cần phải hoàn thành. Từ những cái nhiệm vụ này khi mà nó hoàn thành rồi thì cái 10 tỷ này nó xong.
+
+98
+00:09:59,287 --> 00:10:06,637
+Thì đây là cái nhiệm vụ mà OKR đặt ra và cái này thì cả công ty đều biết, đều biết mục tiêu của CEO là gì, những cái nhiệm
+
+99
+00:10:06,637 --> 00:10:13,987
+vụ nào để các cái trưởng phòng, những cái giám đốc cần phải hoàn thành để làm. Đây là một phần để quản trị những cái mục tiêu của mình.
+
+100
+00:10:14,000 --> 00:10:23,400
+Tiếp theo thì nó có một cái phần nữa là cũng tương tự như thế này không? Chúng ta có thể thấy cái phương pháp thứ hai là cái phương pháp quản lý thời gian.
+
+101
+00:10:26,480 --> 00:10:40,200
+Quản lý thời gian này là gì? Chúng ta đưa ra những công việc hàng tuần, hàng tuần, tháng, quý, sau đó thì chuyển xuống là hàng ngày.
+
+102
+00:10:40,200 --> 00:10:46,140
+Sau đó viết công việc hàng ngày, tối ngày hôm trước thì viết công việc ngày hôm sau.
+
+103
+00:10:47,740 --> 00:10:51,580
+Làm như vậy sau đó thì review lại hàng ngày và viết lại cái nhật ký công việc hàng ngày.
+
+104
+00:10:51,860 --> 00:10:55,000
+Thì đây cũng là một cách thức để quản trị công việc, đó là quản lý thời gian.
+
+105
+00:10:56,500 --> 00:11:00,980
+Thì cái này nó áp dụng tốt cho quý.
+
+106
+00:11:03,500 --> 00:11:07,640
+Cái này nó áp dụng tốt cho ngày tuần.
+
+107
+00:11:07,640 --> 00:11:09,980
+nó rất là tốt
+
+108
+00:11:09,980 --> 00:11:13,900
+nó còn có một cái nữa
+
+109
+00:11:13,900 --> 00:11:15,740
+cái công thức này là cái công thức anh em
+
+110
+00:11:15,740 --> 00:11:18,760
+mà anh em mình đúc kết và anh em cũng làm
+
+111
+00:11:19,000 --> 00:11:21,800
+thì cái công thức này gọi là công thức đột phá
+
+112
+00:11:21,800 --> 00:11:24,400
+Công thức đột phá
+
+113
+00:11:24,400 --> 00:11:25,080
+Nó nói rằng gì
+
+114
+00:11:25,080 --> 00:11:27,440
+Khi mà bạn đặt ra một cái mục tiêu
+
+115
+00:11:27,440 --> 00:11:29,220
+Nó cũng giống như là
+
+116
+00:11:29,220 --> 00:11:30,340
+Objective ở bên trên đúng không
+
+117
+00:11:30,340 --> 00:11:31,440
+Nó là một cái mục tiêu
+
+118
+00:11:31,440 --> 00:11:33,140
+Và nó có cái mốc thời gian
+
+119
+00:11:33,140 --> 00:11:35,960
+Cái này có thể đúng với
+
+120
+00:11:35,960 --> 00:11:38,060
+3 tháng
+
+121
+00:11:38,060 --> 00:11:39,260
+6 tháng
+
+122
+00:11:39,260 --> 00:11:40,840
+3, 6 tháng
+
+123
+00:11:40,840 --> 00:11:41,800
+1 năm, 2 năm
+
+124
+00:11:41,800 --> 00:11:43,900
+5 năm các bạn đều có thể đạt được
+
+125
+00:11:43,917 --> 00:11:52,564
+Và tiếp theo khi mà từ cái mốc mục tiêu này thì chúng ta sẽ có những cái mốc xác nhận. Tức là những cái điểm nào trên cái quá
+
+126
+00:11:52,564 --> 00:12:01,210
+trình chúng ta đi mà chúng ta cần phải đạt để chúng ta có thể tiến được tới cái mục tiêu như vậy. Chúng ta đạt 100.000 đúng không? Đạt
+
+127
+00:12:01,210 --> 00:12:09,857
+100.000. Thế việc đầu tiên chúng ta cần đạt là 1.000. Chúng ta có những cái mốc xác nhận 1.000, 5.000, 10.000. Thì đấy là những cái mốc xác nhận.
+
+128
+00:12:09,857 --> 00:12:17,437
+Và tiếp theo nữa, khi mà mình làm rồi thì trong cái quá trình mình làm thì chắc chắn là khi anh em mình làm thì nó sẽ gặp vấn đề.
+
+129
+00:12:17,977 --> 00:12:25,917
+Rất là chắc chắn. Thế vậy là sẽ cần có những cái phần nó gọi là nguyên nhân. Nguyên nhân tại sao mà anh em mình không đạt được?
+
+130
+00:12:26,777 --> 00:12:34,417
+Cái này thì anh em có thể thấy là nó giống như việc là ở trên OKR này, mình đưa được ra cái mục tiêu.
+
+131
+00:12:34,417 --> 00:12:44,017
+Nhưng mà khi mà mình làm thì chắc chắn là nó sẽ có những cái phần nguyên nhân mà mình không đạt được kết quả. Không sao cả, đấy là chắc chắn.
+
+132
+00:12:44,100 --> 00:12:50,520
+Thế vậy mình cần phải liệt kê được ra tất cả những nguyên nhân 1, 2, 3, 4.
+
+133
+00:12:50,920 --> 00:12:53,260
+Những nguyên nhân như thế này để mình làm gì?
+
+134
+00:12:53,800 --> 00:12:55,120
+Mình thấy rằng đây là những cái rào cản.
+
+135
+00:12:55,640 --> 00:12:59,060
+Nó chính là rào cản từ A đến B ở đây.
+
+136
+00:13:01,620 --> 00:13:03,140
+Rào cản này chúng ta chưa tìm được ngách nè.
+
+137
+00:13:03,920 --> 00:13:05,820
+Chúng ta chưa tìm được đội quay dựng nè.
+
+138
+00:13:06,200 --> 00:13:07,520
+Chúng ta chưa tìm được biên kịch nè.
+
+139
+00:13:07,900 --> 00:13:08,940
+Chúng ta chưa có content nè.
+
+140
+00:13:09,060 --> 00:13:10,420
+Chúng ta chưa sắp xếp được thời gian nè.
+
+141
+00:13:10,420 --> 00:13:13,600
+Chúng ta chưa nghiêm túc được tất cả những nguyên nhân như vậy.
+
+142
+00:13:13,600 --> 00:13:14,540
+Cần phải có.
+
+143
+00:13:16,500 --> 00:13:19,100
+Để mình bóc tách từng cái vấn đề nhỏ ra.
+
+144
+00:13:20,040 --> 00:13:27,140
+Mình hiểu rằng là vì những cái nguyên nhân như vậy nên là chưa có được cái mốc xác nhận, chưa có được kết quả.
+
+145
+00:13:28,040 --> 00:13:31,080
+Có bao nhiêu cách thức để đạt được 1.000 sub.
+
+146
+00:13:31,240 --> 00:13:32,080
+Có rất nhiều cái mà.
+
+147
+00:13:32,340 --> 00:13:39,500
+Chúng ta có share cho cộng đồng này, chạy quảng cáo này, xin view, xin sub này, nhờ anh em buff đây, mọi cái.
+
+148
+00:13:39,500 --> 00:13:41,660
+Thế vậy là có rất là nhiều cái
+
+149
+00:13:41,660 --> 00:13:43,280
+Mình có thể làm
+
+150
+00:13:43,280 --> 00:13:45,080
+Nhưng mà những cái nguyên nhân
+
+151
+00:13:45,080 --> 00:13:46,500
+Mình chưa có là mình cần phải
+
+152
+00:13:46,500 --> 00:13:48,240
+Liệt kê ra
+
+153
+00:13:48,240 --> 00:13:49,960
+Sau đấy từ những cái nguyên nhân như vậy
+
+154
+00:13:49,960 --> 00:13:53,580
+Mình mới thấy rằng
+
+155
+00:13:53,580 --> 00:13:56,460
+Có những cái cách thức nào
+
+156
+00:13:59,500 --> 00:14:11,547
+cách thức nào ở đây thì anh em gọi nó là những cái phát minh sáng kiến
+
+157
+00:14:12,000 --> 00:14:14,067
+Tại sao phải dùng hẳn cái từ phát minh và từ sáng kiến?
+
+158
+00:14:15,747 --> 00:14:20,827
+Bởi vì đôi khi có những thứ mình chưa làm bao giờ.
+
+159
+00:14:22,267 --> 00:14:23,987
+Có những thứ mà mình chưa nghĩ đến bao giờ.
+
+160
+00:14:23,987 --> 00:14:25,867
+Có những thứ mà mình
+
+161
+00:14:25,867 --> 00:14:29,067
+Nó vượt ngoài cái vùng an toàn của mình
+
+162
+00:14:29,067 --> 00:14:32,767
+Thông thường là những cái phát minh là những cái
+
+163
+00:14:32,767 --> 00:14:34,487
+Nó liên quan đến tính đột phá
+
+164
+00:14:34,487 --> 00:14:38,187
+Nên là khi mà anh em tìm được những cái phát minh
+
+165
+00:14:38,187 --> 00:14:41,627
+Thì chúng ta có được một vài câu hỏi để chúng ta đặt ra
+
+166
+00:14:41,627 --> 00:14:43,167
+Một
+
+167
+00:14:43,167 --> 00:14:46,827
+Là chúng ta làm những cái chưa từng làm
+
+168
+00:14:46,827 --> 00:14:48,347
+Hai
+
+169
+00:14:48,347 --> 00:14:50,667
+Là chúng ta bán
+
+170
+00:14:50,667 --> 00:14:52,147
+Những cái chưa từng bán
+
+171
+00:14:52,147 --> 00:14:57,347
+Và cái thứ 3 đó là tiếp cận những khách hàng chưa từng tiếp cận.
+
+172
+00:14:58,087 --> 00:15:05,027
+Với những cái tư duy như vậy thôi, chúng ta sẽ có được những cái góc nhìn khác, những cái cách thức khác.
+
+173
+00:15:05,667 --> 00:15:17,107
+Thế nếu mà bên chú Tùng mà không thử làm, không thử quay, cũng đi lên từ những cái rất là khó ban đầu về việc đi tuyển diễn viên này,
+
+174
+00:15:17,200 --> 00:15:24,550
+Hay là ngay từ lúc mà mình, ban đầu mình sang, thì anh em đi quay đúng là cả ngày, cả buổi, quay được 3 video.
+
+175
+00:15:24,550 --> 00:15:31,900
+Cho đến bây giờ, một buổi sáng các bạn quay được 10 video rồi. Các bạn cũng làm những cái mà các bạn chưa từng làm.
+
+176
+00:15:32,200 --> 00:15:39,590
+Biên kịch chưa có nhé, vẫn phải thuê online, không sao cả, mình tìm cách để mình làm. Mình xác nhận là cái online là ok,
+
+177
+00:15:39,590 --> 00:15:46,980
+mình tìm cách để mình làm. Thì chúng ta liên tục phải tìm được ra những cái phát minh và tìm được ra những cái điểm.
+
+178
+00:15:47,200 --> 00:15:54,040
+Để chúng ta vượt ra khỏi cái tư duy cũ của mình, vượt ra những cái mà mình đang làm bây giờ.
+
+179
+00:15:54,500 --> 00:15:57,440
+Những cái mà mình đang làm bây giờ tạm thời là nó đang chưa có hiệu quả.
+
+180
+00:15:58,560 --> 00:16:05,700
+Thì chúng ta vẫn tiếp tục làm những cái như vậy và song song ở đấy thì chúng ta cần phải thử nghiệm thêm những cái cách thức mới và những cái cách làm mới.
+
+181
+00:16:06,700 --> 00:16:12,580
+Khi mà làm và triển khai thì chúng ta mới có được những cái kết quả.
+
+182
+00:16:12,580 --> 00:16:17,900
+Thì đây là một vài cái tư duy về việc là mình đặt mục tiêu
+
+183
+00:16:17,900 --> 00:16:23,080
+Mình đặt mục tiêu cái nếu mà mục tiêu hàng ngày là để duy trì kỷ luật
+
+184
+00:16:23,080 --> 00:16:24,860
+Thì cái này rất tốt
+
+185
+00:16:24,860 --> 00:16:28,660
+Cái này là cái hàng ngày chạy bao nhiêu km
+
+186
+00:16:28,660 --> 00:16:30,320
+Làm như thế nào
+
+187
+00:16:30,320 --> 00:16:32,420
+Các kiểu đây là duy trì kỷ luật hàng ngày
+
+188
+00:16:32,580 --> 00:16:37,480
+Còn cái mục tiêu này là mục tiêu 3 tháng, 6 tháng, mục tiêu năm cũng tốt.
+
+189
+00:16:38,040 --> 00:16:41,380
+Cái này nó giúp cho mình đi đến cái mục tiêu.
+
+190
+00:16:42,040 --> 00:16:44,020
+Mục tiêu này là mục tiêu có thể hoàn thành nhé.
+
+191
+00:16:44,280 --> 00:16:45,360
+Có thể nhé, trong khả năng.
+
+192
+00:16:46,860 --> 00:16:48,580
+Và nhờ những cái kỷ luật hằng ngày này.
+
+193
+00:16:49,520 --> 00:16:52,140
+Đấy thì chúng ta đạt được cái mục tiêu OKR này.
+
+194
+00:16:52,580 --> 00:16:54,300
+nhưng mà chúng ta cũng cần phải có thêm
+
+195
+00:16:54,300 --> 00:16:55,987
+một cái mục tiêu nữa là cái mục tiêu đột phá
+
+196
+00:16:55,987 --> 00:16:59,227
+Cái này nó là công thức đột phá.
+
+197
+00:16:59,667 --> 00:17:01,867
+Thì chúng ta cần phải có những mục tiêu đột phá để làm sao?
+
+198
+00:17:02,407 --> 00:17:06,107
+Chúng ta có những cái sự thoát ra khỏi vùng an toàn của mình.
+
+199
+00:17:06,847 --> 00:17:08,407
+Để mình làm những cái mới đi.
+
+200
+00:17:09,027 --> 00:17:10,967
+Sẵn sàng làm cái mới, sẵn sàng tiếp nhận những cái mới.
+
+201
+00:17:11,967 --> 00:17:16,587
+Mình đừng có bài xích, đừng có nhận xét, đừng có đánh giá gì vội.
+
+202
+00:17:16,987 --> 00:17:20,267
+Mình cứ tiếp nhận ở cái trải nghiệm của mình.
+
+203
+00:17:21,767 --> 00:17:23,727
+Sau đó thì chúng ta triển khai thôi.
+
+204
+00:17:24,000 --> 00:17:32,934
+Thì đây là cái tư duy về cách thức đặt mục tiêu, mục tiêu hàng ngày, mục tiêu tuần tháng và mục tiêu điên rồ, mục tiêu đột phá. Thế là cái nào là cái mà tạo cảm hứng cho mình
+
+205
+00:17:32,934 --> 00:17:42,140
+nhất? Nhưng mình thì là mình đang dùng cái mục tiêu đột phá để tạo cảm hứng cho chính mình. Còn cái mục tiêu hàng ngày là cái mục tiêu để duy trì cái kỷ luật. Mục tiêu hàng tháng,
+
+206
+00:17:42,140 --> 00:17:51,347
+hàng quý là mục tiêu để mình đạt được kết quả trên cái con đường đấy. Thì đấy là những cái cách thức mà mình đang làm. Và thực chất là nhiều lúc mà mình cũng mất động lực lắm nhé.
+
+207
+00:17:51,347 --> 00:18:01,407
+Nhưng cứ nghĩ đến mục tiêu đột phá, thì anh em lại quay trở lại và mình lại thấy rằng đây là đúng những cái mà mình mong muốn là mình làm rồi.
+
+208
+00:18:01,500 --> 00:18:10,280
+Thì đấy là về mục tiêu. Tương tự như vậy thì mình áp dụng sang bên YouTube như thế nào, Facebook như thế nào, TikTok
+
+209
+00:18:10,280 --> 00:18:19,060
+như thế nào. Thực sự là khi mà mình master một cái nền tảng rồi, thì mình không ngán bất kỳ một cái nền tảng nào
+
+210
+00:18:19,060 --> 00:18:27,840
+khác cả. Mình thấy sang những cái nền tảng khác nó dễ, cũng cùng công thức, cùng cách thức nó đều có kết quả đâu.
+
+211
+00:18:27,840 --> 00:18:34,200
+Đấy mình cũng may mắn là mình bắt đầu từ YouTube và mình lại đi theo cái hướng là xây dựng content.
+
+212
+00:18:34,800 --> 00:18:39,380
+Nên là cách thức của việc tư duy content nó đã khác với tư duy reup và tư duy ăn sổi rồi.
+
+213
+00:18:39,920 --> 00:18:45,640
+Nên là khó nhất là thằng YouTube là làm video dài hàng triệu view rồi.
+
+214
+00:18:45,960 --> 00:18:54,580
+Thì mình đã làm được cái đấy thì khi mà chuyển sang nền tảng video ngắn thì mình cảm thấy nó là một cái chân trời mới và một cái cơ hội cực kỳ tốt để các em có thể đột phá.
+
+215
+00:18:54,580 --> 00:19:04,080
+Rồi, ok, ở đây thì có những cái cách thức đặt mục tiêu như vậy và những cái tư duy đặt mục tiêu như vậy thì anh em có câu hỏi đúng không?
+
+216
+00:19:05,420 --> 00:19:16,080
+Cái này mình xin xác nhận lại nhé, là cái này là cái mà những cái doanh nghiệp nhỏ cũng áp dụng được, những doanh nghiệp lớn cũng áp dụng được, những doanh nghiệp kỳ lân cũng đang áp dụng được.
+

@@ -1,0 +1,376 @@
+{
+  "sku": "VIDEO-a59a5e",
+  "duration": 465.161311,
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 7.0,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:07,000",
+      "text": "Hôm nay em mới lọc ra thêm được một cái ngách mới nữa, thì sẵn đây em lên video chia sẻ cho mọi người luôn nha."
+    },
+    {
+      "id": 2,
+      "start": 7.0,
+      "end": 14.5,
+      "start_time": "00:00:07,000",
+      "end_time": "00:00:14,500",
+      "text": "Thì đây là cái kênh ở thị trường Hàn nha mọi người. Đây em bấm vào cho các bác xem qua trước. Kênh này thì dùng kênh 2023 nha."
+    },
+    {
+      "id": 3,
+      "start": 14.5,
+      "end": 22.0,
+      "start_time": "00:00:14,500",
+      "end_time": "00:00:22,000",
+      "text": "Kênh này thì chỉ mới ra được 8 video thôi mọi người ạ. Bắt đầu từ video đầu tiên là 13 ngày trước."
+    },
+    {
+      "id": 4,
+      "start": 22.0,
+      "end": 29.5,
+      "start_time": "00:00:22,000",
+      "end_time": "00:00:29,500",
+      "text": "View rất là cao luôn, hơn 100k view và có video là hơn 200 nghìn view luôn nè. Đa số là rất là cao view nha."
+    },
+    {
+      "id": 5,
+      "start": 29.5,
+      "end": 36.5,
+      "start_time": "00:00:29,500",
+      "end_time": "00:00:36,500",
+      "text": "Và em sẽ dịch cái dạng này cho các bác xem. Thì các bác đọc tiêu đề nè: 11 loài hoa lâu năm bạn nhất định phải cắt trước cuối tháng 9."
+    },
+    {
+      "id": 6,
+      "start": 36.5,
+      "end": 43.0,
+      "start_time": "00:00:36,500",
+      "end_time": "00:00:43,000",
+      "text": "Rồi những cái này cũng vậy nè: 11 loại cây lâu năm nè."
+    },
+    {
+      "id": 7,
+      "start": 43.0,
+      "end": 50.5,
+      "start_time": "00:00:43,000",
+      "end_time": "00:00:50,500",
+      "text": "Đây các bác đọc qua hết một lượt những cái tiêu đề của cái kênh này thì các bác hình dung ra được cái ngách nó là về dạng trồng cây, chăm sóc cây nha."
+    },
+    {
+      "id": 8,
+      "start": 50.5,
+      "end": 59.0,
+      "start_time": "00:00:50,500",
+      "end_time": "00:00:59,000",
+      "text": "Nhưng mà đi sâu vào á là nói cái tiêu đề này các bác để ý những cái từ khóa là 11 loài cây, 11 loài hoa lâu năm mà nếu mà không làm gì đó thì nó sẽ bị..."
+    },
+    {
+      "id": 9,
+      "start": 59.0,
+      "end": 68.0,
+      "start_time": "00:00:59,000",
+      "end_time": "00:01:08,000",
+      "text": "Đó là cái kiểu cấu trúc của tiêu đề nó như vậy nha, đánh vào tâm lý của người xem là họ bắt buộc phải xem bởi vì nếu bỏ lỡ thì cây của họ sẽ bị ảnh hưởng."
+    },
+    {
+      "id": 10,
+      "start": 68.0,
+      "end": 77.0,
+      "start_time": "00:01:08,000",
+      "end_time": "00:01:17,000",
+      "text": "Đấy các bác thấy không, kêu là ảnh hưởng tháng 9 này rồi vào tháng 10 này kia nè. Thì đây em sẽ xem một video cụ thể xem thử cách họ edit như thế nào luôn nha."
+    },
+    {
+      "id": 11,
+      "start": 77.0,
+      "end": 86.0,
+      "start_time": "00:01:17,000",
+      "end_time": "00:01:26,000",
+      "text": "Kênh này thì cũng đang bật kiếm tiền rồi mọi người ạ, view như này mà hơn 6k sub luôn. Đấy thì đầu tiên..."
+    },
+    {
+      "id": 12,
+      "start": 86.0,
+      "end": 95.0,
+      "start_time": "00:01:26,000",
+      "end_time": "00:01:35,000",
+      "text": "Họ giới thiệu về các loại giống cây trồng mùa thu và cách chăm sóc để qua mùa đông."
+    },
+    {
+      "id": 13,
+      "start": 95.0,
+      "end": 104.0,
+      "start_time": "00:01:35,000",
+      "end_time": "00:01:44,000",
+      "text": "Đấy em cho mọi người nghe qua trước cái giọng đọc thì nó cũng dùng AI thôi, cái này là ElevenLabs nha."
+    },
+    {
+      "id": 14,
+      "start": 104.0,
+      "end": 113.0,
+      "start_time": "00:01:44,000",
+      "end_time": "00:01:53,000",
+      "text": "Kênh này thì họ đầu tư AI cũng khá là ok nè. Đầu tiên là họ cho một cái hình ảnh và tạo video kiểu như giới thiệu sản phẩm đầu tiên ấy mọi người."
+    },
+    {
+      "id": 15,
+      "start": 113.0,
+      "end": 123.0,
+      "start_time": "00:01:53,000",
+      "end_time": "00:02:03,000",
+      "text": "Tiếp theo là những hình ảnh, video AI lồng ghép vào để minh họa tới cái đoạn kịch bản ấy."
+    },
+    {
+      "id": 16,
+      "start": 123.0,
+      "end": 135.0,
+      "start_time": "00:02:03,000",
+      "end_time": "00:02:15,000",
+      "text": "Đó thì em khuyên các bác á thì không nên là full AI nha. Nói chung là mình có hình ảnh video AI mình ghép vào để minh họa cũng rất là ok."
+    },
+    {
+      "id": 17,
+      "start": 135.0,
+      "end": 144.0,
+      "start_time": "00:02:15,000",
+      "end_time": "00:02:24,000",
+      "text": "Nhưng mà kèm vào đó là những cái hình ảnh tự nhiên nữa nha, chứ đừng có full AI 100% thì như vậy sẽ không tốt nha, rất là dễ bị quét."
+    },
+    {
+      "id": 18,
+      "start": 144.0,
+      "end": 153.0,
+      "start_time": "00:02:24,000",
+      "end_time": "00:02:33,000",
+      "text": "Đây nè, như kênh này thì họ cũng có chèn một số hình ảnh tự nhiên nè, nhưng mà em thấy đa số là toàn là AI không à."
+    },
+    {
+      "id": 19,
+      "start": 153.0,
+      "end": 162.0,
+      "start_time": "00:02:33,000",
+      "end_time": "00:02:42,000",
+      "text": "Đấy thì các bác có thể tham khảo và mình bám theo họ nhưng mà mình cũng phải rút được kinh nghiệm nha. Cái này em đã nói rất là nhiều rồi."
+    },
+    {
+      "id": 20,
+      "start": 162.0,
+      "end": 171.0,
+      "start_time": "00:02:42,000",
+      "end_time": "00:02:51,000",
+      "text": "Ngách này thì rất là hot và rất là ok đấy. Về riêng cái thị trường trồng cây này thì em thấy rất là nhiều người xem."
+    },
+    {
+      "id": 21,
+      "start": 171.0,
+      "end": 180.0,
+      "start_time": "00:02:51,000",
+      "end_time": "00:03:00,000",
+      "text": "Kể cả ở thị trường Việt Nam mình á thì mấy hôm trước em cũng có lọc ra được khá là nhiều kênh về trồng cây, cũng khá là nhiều người làm mấy bác, nhiều người xem luôn."
+    },
+    {
+      "id": 22,
+      "start": 180.0,
+      "end": 189.0,
+      "start_time": "00:03:00,000",
+      "end_time": "00:03:09,000",
+      "text": "Đấy thì để hôm sau em có thời gian rảnh em lọc lại và em chia sẻ thêm cho mọi người để tham khảo ở thị trường Việt nha."
+    },
+    {
+      "id": 23,
+      "start": 189.0,
+      "end": 198.0,
+      "start_time": "00:03:09,000",
+      "end_time": "00:03:18,000",
+      "text": "Còn đây là Hàn thì mấy bác nếu mà muốn làm cái ngách này thì cứ train form rồi làm thôi, cho nó bám theo cái kênh đối thủ này học trước."
+    },
+    {
+      "id": 24,
+      "start": 198.0,
+      "end": 208.0,
+      "start_time": "00:03:18,000",
+      "end_time": "00:03:28,000",
+      "text": "Rồi sau đó nó phân tích các thứ rồi nó tạo form, tạo chủ đề, tiêu đề cho mình thôi. Đấy, con Claude thì bây giờ nó làm đủ hết mọi, cái gì nó cũng làm được cả."
+    },
+    {
+      "id": 25,
+      "start": 208.0,
+      "end": 218.0,
+      "start_time": "00:03:28,000",
+      "end_time": "00:03:38,000",
+      "text": "Quan trọng là mọi người cho nó học và train nó theo yêu cầu của mình thôi. Về cách train thì hôm trước em cũng làm mẫu lại rồi, quy trình thì cũng như đó thôi, mấy bác cứ làm nha."
+    },
+    {
+      "id": 26,
+      "start": 218.0,
+      "end": 226.0,
+      "start_time": "00:03:38,000",
+      "end_time": "00:03:46,000",
+      "text": "Vấn đề là về ngách hay thì em chia sẻ mọi người, còn lại mọi người làm cho kịch bản nó tốt lên là ok thôi. Kênh này thì em sẽ để ở mô tả để các bác có thể tham khảo luôn nha."
+    },
+    {
+      "id": 27,
+      "start": 226.0,
+      "end": 234.0,
+      "start_time": "00:03:46,000",
+      "end_time": "00:03:54,000",
+      "text": "Tiếp theo thì em share thêm một cái cũng ở thị trường Hàn luôn nha mọi người. Kênh này mới ra được 6 video nè và view cũng khá là ổn."
+    },
+    {
+      "id": 28,
+      "start": 234.0,
+      "end": 242.0,
+      "start_time": "00:03:54,000",
+      "end_time": "00:04:02,000",
+      "text": "Kênh này đúng dùng kênh cổ luôn, dùng kênh 2018 nè. Kênh họ dùng 2018 và ở thị trường Hàn Quốc nha."
+    },
+    {
+      "id": 29,
+      "start": 242.0,
+      "end": 251.0,
+      "start_time": "00:04:02,000",
+      "end_time": "00:04:11,000",
+      "text": "Và video đầu tiên là từ 5 ngày trước và em thấy view nó rất là ổn nha, kênh mới như này là rất là ok rồi."
+    },
+    {
+      "id": 30,
+      "start": 251.0,
+      "end": 260.0,
+      "start_time": "00:04:11,000",
+      "end_time": "00:04:20,000",
+      "text": "Về cái dạng của ngách cái kênh này á thì họ dùng một cái nhân vật ông nổi tiếng nè. Ông này thì chắc ở bên thị trường Hoa Kỳ thôi, tí nữa em sẽ lọc cho các bác xem."
+    },
+    {
+      "id": 31,
+      "start": 260.0,
+      "end": 270.0,
+      "start_time": "00:04:20,000",
+      "end_time": "00:04:30,000",
+      "text": "Cái dạng của ngách này thì nói về trong cơ thể con người này kia nha. Mấy bác đọc tiêu đề là mấy bác có thể hình dung ra."
+    },
+    {
+      "id": 32,
+      "start": 270.0,
+      "end": 281.0,
+      "start_time": "00:04:30,000",
+      "end_time": "00:04:41,000",
+      "text": "Cái này thì nó hơi trừu tượng một tí, mọi người copy cái kênh này nè, mọi người đi train form á, cho con Claude nó sẽ phân tích và nó sẽ nói ra cụ thể được cái dạng nha."
+    },
+    {
+      "id": 33,
+      "start": 281.0,
+      "end": 292.0,
+      "start_time": "00:04:41,000",
+      "end_time": "00:04:52,000",
+      "text": "Chứ nó hơi trừu tượng em nói mấy bác cũng khá là khó hiểu á. Mình hiểu nhưng mà mình khó nói được ấy mọi người. Rồi bây giờ em copy một video em dịch sang tiếng Anh nha, rồi em sẽ search bên YouTube này nè,"
+    },
+    {
+      "id": 34,
+      "start": 292.0,
+      "end": 301.0,
+      "start_time": "00:04:52,000",
+      "end_time": "00:05:01,000",
+      "text": "để thử ra được các cái kênh bên thị trường Hoa Kỳ không. Thì như mọi người thấy không, đây ra rất là nhiều kênh luôn."
+    },
+    {
+      "id": 35,
+      "start": 301.0,
+      "end": 310.0,
+      "start_time": "00:05:01,000",
+      "end_time": "00:05:10,000",
+      "text": "Dịch cho các bác xem, và đúng với cái tên nhân vật ông đó luôn nha, kiểu như nhân vật nổi tiếng ấy mọi người."
+    },
+    {
+      "id": 36,
+      "start": 310.0,
+      "end": 319.0,
+      "start_time": "00:05:10,000",
+      "end_time": "00:05:19,000",
+      "text": "Thì các bác có thể là tham khảo theo những cái kênh này rồi mọi người lấy kịch bản về thôi. Và có rất là nhiều ngách khác nhau nha."
+    },
+    {
+      "id": 37,
+      "start": 319.0,
+      "end": 329.0,
+      "start_time": "00:05:19,000",
+      "end_time": "00:05:29,000",
+      "text": "Mấy bác, cái ông này chỉ là đại diện nổi tiếng để đứng ra nói thôi chứ không phải bắt buộc là mọi người phải cứ bám theo cái ngách nói về cơ thể con người đó đâu."
+    },
+    {
+      "id": 38,
+      "start": 329.0,
+      "end": 339.0,
+      "start_time": "00:05:29,000",
+      "end_time": "00:05:39,000",
+      "text": "Có rất là nhiều dạng ngách khác nhau nữa. Như cái kênh này bên Hoa Kỳ thì có vẻ như kênh này họ bị tắt kiếm tiền rồi nè, em thấy video từ 7 tháng, 8 tháng trước thôi."
+    },
+    {
+      "id": 39,
+      "start": 339.0,
+      "end": 349.0,
+      "start_time": "00:05:39,000",
+      "end_time": "00:05:49,000",
+      "text": "Nhưng mà cái quan trọng là mình đâu có làm thị trường này đâu, mình làm ở Hàn mà. Thì các bác cứ lấy content, kịch bản ở bên này về mọi người train rồi mọi người làm bên Hàn thôi."
+    },
+    {
+      "id": 40,
+      "start": 349.0,
+      "end": 358.0,
+      "start_time": "00:05:49,000",
+      "end_time": "00:05:58,000",
+      "text": "Mọi người nhân bản mọi người làm. Đó, đó là mọi người đi nhân bản thị trường nha."
+    },
+    {
+      "id": 41,
+      "start": 358.0,
+      "end": 366.0,
+      "start_time": "00:05:58,000",
+      "end_time": "00:06:06,000",
+      "text": "Đây thì em xem video của cái kênh bên Hàn này, thì đầu tiên mấy bác thấy cái giọng đọc nó cũng là dùng AI."
+    },
+    {
+      "id": 42,
+      "start": 366.0,
+      "end": 373.0,
+      "start_time": "00:06:06,000",
+      "end_time": "00:06:13,000",
+      "text": "Tiếp theo là về cách edit á, thì các bác để ý là cái ông nhân vật này nè, ổng đang đứng thuyết trình nhưng mà làm mờ đi, là thứ nhất là để tránh bản quyền nha."
+    },
+    {
+      "id": 43,
+      "start": 373.0,
+      "end": 382.0,
+      "start_time": "00:06:13,000",
+      "end_time": "00:06:22,000",
+      "text": "Cái thứ hai là nó đang dùng lặp đi lặp lại nè, chứ không phải là một video xuyên suốt đâu nha mấy bác. Kiểu cái video thuyết trình họ cắt ra từng đoạn rồi họ cho lặp đi lặp lại thôi."
+    },
+    {
+      "id": 44,
+      "start": 382.0,
+      "end": 392.0,
+      "start_time": "00:06:22,000",
+      "end_time": "00:06:32,000",
+      "text": "Còn video nền phía sau á thì mấy bác cứ search theo cái từ khóa là thiên hà, vũ trụ này kia, rồi mấy bác dịch sang tiếng Anh rồi đem vào những cái web video tự nhiên, free á."
+    },
+    {
+      "id": 45,
+      "start": 392.0,
+      "end": 401.0,
+      "start_time": "00:06:32,000",
+      "end_time": "00:06:41,000",
+      "text": "Thì mấy bác search vào đó thì nó sẽ ra rất là nhiều, rồi mọi người lấy về thôi, ghép vào thôi, làm video nền nha. Đó, rất là đơn giản thôi."
+    },
+    {
+      "id": 46,
+      "start": 401.0,
+      "end": 406.87,
+      "start_time": "00:06:41,000",
+      "end_time": "00:06:46,870",
+      "text": "Kênh này thì họ cũng làm bán content, họ bám theo, họ nhân bản thị trường từ các cái kênh bên Hoa Kỳ, bên Mỹ về thôi mấy bác ạ."
+    }
+  ],
+  "total_segments": 46,
+  "full_text": "Hôm nay em mới lọc ra thêm được một cái ngách mới nữa, thì sẵn đây em lên video chia sẻ cho mọi người luôn nha. Thì đây là cái kênh ở thị trường Hàn nha mọi người. Đây em bấm vào cho các bác xem qua trước. Kênh này thì dùng kênh 2023 nha. Kênh này thì chỉ mới ra được 8 video thôi mọi người ạ. Bắt đầu từ video đầu tiên là 13 ngày trước. View rất là cao luôn, hơn 100k view và có video là hơn 200 nghìn view luôn nè. Đa số là rất là cao view nha. Và em sẽ dịch cái dạng này cho các bác xem. Thì các bác đọc tiêu đề nè: 11 loài hoa lâu năm bạn nhất định phải cắt trước cuối tháng 9. Rồi những cái này cũng vậy nè: 11 loại cây lâu năm nè. Đây các bác đọc qua hết một lượt những cái tiêu đề của cái kênh này thì các bác hình dung ra được cái ngách nó là về dạng trồng cây, chăm sóc cây nha. Nhưng mà đi sâu vào á là nói cái tiêu đề này các bác để ý những cái từ khóa là 11 loài cây, 11 loài hoa lâu năm mà nếu mà không làm gì đó thì nó sẽ bị... Đó là cái kiểu cấu trúc của tiêu đề nó như vậy nha, đánh vào tâm lý của người xem là họ bắt buộc phải xem bởi vì nếu bỏ lỡ thì cây của họ sẽ bị ảnh hưởng. Đấy các bác thấy không, kêu là ảnh hưởng tháng 9 này rồi vào tháng 10 này kia nè. Thì đây em sẽ xem một video cụ thể xem thử cách họ edit như thế nào luôn nha. Kênh này thì cũng đang bật kiếm tiền rồi mọi người ạ, view như này mà hơn 6k sub luôn. Đấy thì đầu tiên... Họ giới thiệu về các loại giống cây trồng mùa thu và cách chăm sóc để qua mùa đông. Đấy em cho mọi người nghe qua trước cái giọng đọc thì nó cũng dùng AI thôi, cái này là ElevenLabs nha. Kênh này thì họ đầu tư AI cũng khá là ok nè. Đầu tiên là họ cho một cái hình ảnh và tạo video kiểu như giới thiệu sản phẩm đầu tiên ấy mọi người. Tiếp theo là những hình ảnh, video AI lồng ghép vào để minh họa tới cái đoạn kịch bản ấy. Đó thì em khuyên các bác á thì không nên là full AI nha. Nói chung là mình có hình ảnh video AI mình ghép vào để minh họa cũng rất là ok. Nhưng mà kèm vào đó là những cái hình ảnh tự nhiên nữa nha, chứ đừng có full AI 100% thì như vậy sẽ không tốt nha, rất là dễ bị quét. Đây nè, như kênh này thì họ cũng có chèn một số hình ảnh tự nhiên nè, nhưng mà em thấy đa số là toàn là AI không à. Đấy thì các bác có thể tham khảo và mình bám theo họ nhưng mà mình cũng phải rút được kinh nghiệm nha. Cái này em đã nói rất là nhiều rồi. Ngách này thì rất là hot và rất là ok đấy. Về riêng cái thị trường trồng cây này thì em thấy rất là nhiều người xem. Kể cả ở thị trường Việt Nam mình á thì mấy hôm trước em cũng có lọc ra được khá là nhiều kênh về trồng cây, cũng khá là nhiều người làm mấy bác, nhiều người xem luôn. Đấy thì để hôm sau em có thời gian rảnh em lọc lại và em chia sẻ thêm cho mọi người để tham khảo ở thị trường Việt nha. Còn đây là Hàn thì mấy bác nếu mà muốn làm cái ngách này thì cứ train form rồi làm thôi, cho nó bám theo cái kênh đối thủ này học trước. Rồi sau đó nó phân tích các thứ rồi nó tạo form, tạo chủ đề, tiêu đề cho mình thôi. Đấy, con Claude thì bây giờ nó làm đủ hết mọi, cái gì nó cũng làm được cả. Quan trọng là mọi người cho nó học và train nó theo yêu cầu của mình thôi. Về cách train thì hôm trước em cũng làm mẫu lại rồi, quy trình thì cũng như đó thôi, mấy bác cứ làm nha. Vấn đề là về ngách hay thì em chia sẻ mọi người, còn lại mọi người làm cho kịch bản nó tốt lên là ok thôi. Kênh này thì em sẽ để ở mô tả để các bác có thể tham khảo luôn nha. Tiếp theo thì em share thêm một cái cũng ở thị trường Hàn luôn nha mọi người. Kênh này mới ra được 6 video nè và view cũng khá là ổn. Kênh này đúng dùng kênh cổ luôn, dùng kênh 2018 nè. Kênh họ dùng 2018 và ở thị trường Hàn Quốc nha. Và video đầu tiên là từ 5 ngày trước và em thấy view nó rất là ổn nha, kênh mới như này là rất là ok rồi. Về cái dạng của ngách cái kênh này á thì họ dùng một cái nhân vật ông nổi tiếng nè. Ông này thì chắc ở bên thị trường Hoa Kỳ thôi, tí nữa em sẽ lọc cho các bác xem. Cái dạng của ngách này thì nói về trong cơ thể con người này kia nha. Mấy bác đọc tiêu đề là mấy bác có thể hình dung ra. Cái này thì nó hơi trừu tượng một tí, mọi người copy cái kênh này nè, mọi người đi train form á, cho con Claude nó sẽ phân tích và nó sẽ nói ra cụ thể được cái dạng nha. Chứ nó hơi trừu tượng em nói mấy bác cũng khá là khó hiểu á. Mình hiểu nhưng mà mình khó nói được ấy mọi người. Rồi bây giờ em copy một video em dịch sang tiếng Anh nha, rồi em sẽ search bên YouTube này nè, để thử ra được các cái kênh bên thị trường Hoa Kỳ không. Thì như mọi người thấy không, đây ra rất là nhiều kênh luôn. Dịch cho các bác xem, và đúng với cái tên nhân vật ông đó luôn nha, kiểu như nhân vật nổi tiếng ấy mọi người. Thì các bác có thể là tham khảo theo những cái kênh này rồi mọi người lấy kịch bản về thôi. Và có rất là nhiều ngách khác nhau nha. Mấy bác, cái ông này chỉ là đại diện nổi tiếng để đứng ra nói thôi chứ không phải bắt buộc là mọi người phải cứ bám theo cái ngách nói về cơ thể con người đó đâu. Có rất là nhiều dạng ngách khác nhau nữa. Như cái kênh này bên Hoa Kỳ thì có vẻ như kênh này họ bị tắt kiếm tiền rồi nè, em thấy video từ 7 tháng, 8 tháng trước thôi. Nhưng mà cái quan trọng là mình đâu có làm thị trường này đâu, mình làm ở Hàn mà. Thì các bác cứ lấy content, kịch bản ở bên này về mọi người train rồi mọi người làm bên Hàn thôi. Mọi người nhân bản mọi người làm. Đó, đó là mọi người đi nhân bản thị trường nha. Đây thì em xem video của cái kênh bên Hàn này, thì đầu tiên mấy bác thấy cái giọng đọc nó cũng là dùng AI. Tiếp theo là về cách edit á, thì các bác để ý là cái ông nhân vật này nè, ổng đang đứng thuyết trình nhưng mà làm mờ đi, là thứ nhất là để tránh bản quyền nha. Cái thứ hai là nó đang dùng lặp đi lặp lại nè, chứ không phải là một video xuyên suốt đâu nha mấy bác. Kiểu cái video thuyết trình họ cắt ra từng đoạn rồi họ cho lặp đi lặp lại thôi. Còn video nền phía sau á thì mấy bác cứ search theo cái từ khóa là thiên hà, vũ trụ này kia, rồi mấy bác dịch sang tiếng Anh rồi đem vào những cái web video tự nhiên, free á. Thì mấy bác search vào đó thì nó sẽ ra rất là nhiều, rồi mọi người lấy về thôi, ghép vào thôi, làm video nền nha. Đó, rất là đơn giản thôi. Kênh này thì họ cũng làm bán content, họ bám theo, họ nhân bản thị trường từ các cái kênh bên Hoa Kỳ, bên Mỹ về thôi mấy bác ạ."
+}

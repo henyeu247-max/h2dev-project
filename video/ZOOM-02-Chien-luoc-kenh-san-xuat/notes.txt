@@ -1,0 +1,208 @@
+Chiến lược tách kênh và quản lý rủi ro
+
+
+
+
+
+Không nên thay đổi chất lượng video khi đăng lên các kênh khác nhau; giữ nguyên chất lượng, nội dung.
+
+
+
+Khi đã có kênh lên và đủ điều kiện bật kiếm tiền, mới nên tách kênh để đảm bảo an toàn vì đã có lượng khán giả.
+
+
+
+Trường hợp 3 kênh cùng một Gmail: nếu chỉ 1 kênh lên, xóa 2 kênh không lên; nếu 2 kênh lên, xóa kênh không lên và chuyển quyền sở hữu 1 kênh sang Gmail khác, sau 7 ngày Gmail mới đá quyền sở hữu Gmail cũ.
+
+
+
+Mục đích tách kênh: tránh rủi ro kênh đang lên bị ảnh hưởng bởi các kênh không lên (bị quét, spam).
+
+
+
+Người mới chưa cần hiểu sâu, khi gặp vấn đề sẽ tự ngẫm ra.
+
+Thực trạng và lựa chọn phong cách kiếm tiền
+
+
+
+
+
+Trong nhóm Hà Thành có gần 300 người dùng tool nhưng chỉ khoảng 1/4 làm được kênh lên; không phải ai cũng biết cách kiếm tiền từ tool.
+
+
+
+Tool mạnh nhất thị trường nhưng chỉ hiệu quả với người biết dùng.
+
+
+
+Nhiều người làm theo sở thích cá nhân mà không theo thị trường: drama, hoạt hình, xuyên không, chất lượng hình ảnh kém, phi vật lý, phi cảm xúc → không kiếm được tiền YouTube.
+
+
+
+Phong cách kiếm tiền hiệu quả: phim tài liệu, chân thực, có giá trị; ví dụ về lịch sử, động vật, triết lý, sức khỏe.
+
+
+
+Khán giả rất kỵ AI kém chất lượng; cần AI đẳng cấp, chân thực.
+
+
+
+Key động vật (phim tài liệu động vật) từng bùng nổ 4 tháng trước, kiếm tiền tỷ, hiện vẫn còn cơ hội, chủ yếu thị trường Nhật Bản.
+
+
+
+Nên chuyển từ slide ảnh sang video để tăng tỷ lệ giữ chân.
+
+
+
+Ví dụ kênh lịch sử mới làm 2 tuần đã đạt 35.000 sub, view tăng mạnh.
+
+
+
+Có thể spam AI cho dạng phim tài liệu, nhưng cần chuyển thể về thị trường Việt Nam với nhân vật, bối cảnh Việt Nam.
+
+Quy trình tạo kênh và tối ưu hóa
+
+
+
+
+
+Sau khi chọn được key/chủ đề, không làm video ngay mà tạo kênh trước để "ngâm" 3-4 ngày.
+
+
+
+Sử dụng ChatGPT để tạo tên kênh, logo, ảnh bìa, mô tả kênh.
+
+
+
+Set up kênh: vào YouTube Studio → Tùy chỉnh (logo, ảnh bìa) và Cài đặt (đơn vị tiền tệ, quốc gia cư trú, từ khóa, thông số video).
+
+
+
+Quốc gia cư trú: có thể để Hoa Kỳ hoặc Việt Nam; không quan trọng.
+
+
+
+Bộ từ khóa: dùng ChatGPT tạo.
+
+
+
+Xác minh số điện thoại: có thể mua qua VOTP (3.000 VNĐ/số, hoàn tiền nếu không xác minh được). Chỉ dùng cho YouTube, không dùng cho Gmail.
+
+
+
+Bật xác minh 2 bước và 3 bước (quét mặt) để tránh gậy.
+
+
+
+Chế độ hiển thị video: để "Không công khai" sau khi tải lên, đợi hệ thống quét nội dung, bản quyền, xử lý chất lượng cao, sau đó mới hẹn giờ công khai vào khung giờ vàng. Không để riêng tư vì không được quét.
+
+
+
+Có thể dùng công chiếu để tạo tò mò.
+
+
+
+Thẻ từ khóa video: đã có sẵn từ chatbot, không cần thêm.
+
+
+
+Ngôn ngữ kênh: chọn theo thị trường (Việt, Anh, Nhật...).
+
+
+
+Địa điểm kênh: đặt theo quốc gia mục tiêu để tìm key và đề xuất phù hợp. Nếu muốn nghiên cứu thị trường khác, dùng Gmail/kênh riêng, không đổi địa điểm kênh đang chạy tốt.
+
+Quy trình sản xuất video hàng loạt
+
+
+
+
+
+Sau khi có kênh, ngâm kênh 3-4 ngày, đồng thời sản xuất 20-30 video.
+
+
+
+Lấy nội dung từ đối thủ: copy tiêu đề, link video vào bảng Google Sheets để quản lý.
+
+
+
+Dùng tool để lấy nội dung video đối thủ, chuyển ngữ sang tiếng Việt, viết lại và mở rộng.
+
+
+
+Không dùng tool: có thể dùng tiện ích YouTube Summary để lấy nội dung, sau đó dùng ChatGPT/Gemini viết lại.
+
+
+
+Quy trình: làm hàng loạt video theo từng bước, không làm hoàn chỉnh từng video một.
+
+
+
+Tool viết kịch bản: có thể tạo voice trực tiếp (Vio3 Pro), nhưng chỉ nên dùng 2 chức năng chính.
+
+
+
+Tool video: sử dụng tool video của khóa học (không crack), nạp kịch bản, chọn giọng đọc (7000 giọng), chọn video 3 (không tốn credit), tự động ghép video và giọng đọc.
+
+
+
+Cần nạp tài khoản Vio3 để sử dụng.
+
+
+
+Sử dụng Gemini Ultra (bắt buộc cho YouTube AI), tận dụng tài khoản có sẵn, không cần mua thêm Pro.
+
+
+
+Chatbot lịch sử 6: dùng để viết kịch bản cho nhiều chủ đề (lịch sử, triết lý, tử vi, phong thủy, sức khỏe, khoa học, khảo cổ, động vật).
+
+
+
+Mở nhiều tab (4 tab) để tăng năng suất; có thể dùng nhiều tài khoản Vio3 nếu spam nhiều.
+
+
+
+Thời lượng video: chọn theo đối thủ, có thể điều chỉnh bằng cách yêu cầu chatbot mở rộng hoặc thu ngắn kịch bản.
+
+Phong cách và câu lệnh tạo hình ảnh
+
+
+
+
+
+Phong cách kiếm tiền hiệu quả: phim tài liệu, chân thực, như thước phim thô bằng máy quay chuyên nghiệp, ống kính 50mm, quay cầm tay, ánh sáng hơi mờ, thiếu sáng, có zoom, cận, lấy nét, rung tay.
+
+
+
+Tránh phong cách realistic đơn thuần vì dễ bị phi vật lý, kém hấp dẫn.
+
+
+
+Câu lệnh cần thêm: không có hiệu ứng lóe sáng, ánh sáng huyền ảo, không có hiệu ứng CGI, không có vật thể hiện đại, không có tòa nhà hiện đại, không có phương tiện giao thông.
+
+
+
+Tùy chủ đề, thêm hiệu ứng nhòe, nhiễu, mờ ảo cho lịch sử, khảo cổ.
+
+
+
+Không copy y xì câu lệnh; cần biến tấu cho từng chủ đề bằng cách nhờ ChatGPT phân tích và điều chỉnh.
+
+
+
+Ví dụ: chủ đề nạn đói 1945, yêu cầu ChatGPT viết lại câu lệnh với bối cảnh làng mạc, ruộng đồng, nhà bếp, vật dụng gia đình miền Bắc Việt Nam 1945, ưu tiên chính xác lịch sử, không lời thoại, không cử động môi, không văn bản, không phụ đề, không logo, không hình mờ.
+
+
+
+Áp dụng câu lệnh cho các chủ đề khác như sức khỏe bằng cách nhờ ChatGPT biến đổi (bối cảnh tươi sáng hơn, không hiệu ứng nhòe).
+
+
+
+Sau khi có câu lệnh, dán trực tiếp vào phần kịch bản của tool.
+
+
+
+Có thể dùng chatbot trên tool để tạo kịch bản nhanh, nhưng chỉ làm được một kịch bản một lúc.
+

@@ -1,0 +1,82 @@
+{
+  "sku": "VIDEO-34f417",
+  "title": "SHARE NGÁCH THỊ TRƯỜNG VIỆT VÀ 2 NGÁCH THỊ TRƯỜNG HÀN QUỐC + 1 NGÁCH NHẬT BẢN",
+  "actual_topic": "SHARE NGÁCH THỊ TRƯỜNG VIỆT VÀ 2 NGÁCH THỊ TRƯỜNG HÀN QUỐC + 1 NGÁCH NHẬT BẢN",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Bán Content & Phát Triển Kênh",
+  "niche_id": "faceless-general",
+  "target_market": "Việt Nam / Hàn Quốc / Nhật Bản",
+  "market_code": "VN,KR,JP",
+  "key_takeaways": [
+    "Chiến lược phân bổ danh mục ngách đa thị trường: Kết hợp 1 ngách nội địa Việt Nam dễ kéo view với 2 ngách Hàn Quốc và 1 ngách Nhật Bản để tối ưu hóa RPM ngoại tệ.",
+    "Thị trường Hàn Quốc cực chuộng các kênh chia sẻ góc khuất tâm lý người già và bài học quản lý tài chính cá nhân ở tuổi trung niên.",
+    "Thị trường Nhật Bản ưu tiên các kênh phong cách người kể chuyện cổ xưa (người kể chuyện thế hệ bạc - Silver Generation), AVD cực cao.",
+    "Học viên không cần biết tiếng Hàn hay tiếng Nhật, sử dụng công thức bóc tách kịch bản đối thủ kết hợp lồng tiếng AI chuẩn bản địa.",
+    "Quy trình quản lý đa kênh trên các profile trình duyệt độc lập giúp hạn chế tối đa rủi ro chết chùm khi có biến động chính sách."
+  ],
+  "edit_sop": {
+    "primary": "Share ngách view Việt, Hàn Quốc, Nhật Bản và cách tìm kênh đối thủ theo trend",
+    "additional": [
+      "Ngách view Việt dạng tin tức, dự đoán, tiên tri bám theo trend thế giới, ghép video từ các nguồn free",
+      "Quan trọng nhất là kịch bản và giọng đọc; có thể clone giọng theo kênh mẫu",
+      "Ngách Hàn Quốc nói về chính sách mới năm 2026; dịch tiêu đề kênh mẫu để hiểu nội dung",
+      "Search theo tiêu đề và từ khóa của kênh mẫu để ra thêm kênh đối thủ",
+      "Ghép nhiều video thực tế với nhau, edit theo cách đã hướng dẫn ở các video trước"
+    ]
+  },
+  "avoid_flags": [
+    "Không dùng hoàn toàn 100% AI vì hiện nay bị quét AI rất cao",
+    "Tránh bỏ qua việc đầu tư vào chất lượng kịch bản và giọng đọc vì đây là hai yếu tố quan trọng nhất quyết định hiệu quả của dạng video tổng hợp"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "Pixabay"
+  ],
+  "channels_mentioned": [
+    "@gockhuatnhansinh-official",
+    "@노년의마음",
+    "@성실한경제학",
+    "@シルバー世代の語り部"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "01:12",
+      "seconds": 72,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "02:43",
+      "seconds": 163,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "03:57",
+      "seconds": 237,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "05:00",
+      "seconds": 300,
+      "label": "Kiểu như dạng truyện như này"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-34f417/transcript.txt",
+  "sop_steps": [
+    "Ngách view Việt dạng tin tức, dự đoán, tiên tri bám theo trend thế giới, ghép video từ các nguồn free",
+    "Quan trọng nhất là kịch bản và giọng đọc; có thể clone giọng theo kênh mẫu",
+    "Ngách Hàn Quốc nói về chính sách mới năm 2026; dịch tiêu đề kênh mẫu để hiểu nội dung",
+    "Search theo tiêu đề và từ khóa của kênh mẫu để ra thêm kênh đối thủ",
+    "Ghép nhiều video thực tế với nhau, edit theo cách đã hướng dẫn ở các video trước"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

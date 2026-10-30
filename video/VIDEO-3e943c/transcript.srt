@@ -1,0 +1,364 @@
+1
+00:00:00,000 --> 00:00:06,560
+Rồi, em chào mọi người nha. Thì ở video này em sẽ nói sâu well về cái con Cloud AI này nha mọi người.
+
+2
+00:00:07,000 --> 00:00:12,260
+Thì mọi người có thể dùng ở trên web nè. Đây, mọi người truy cập vào web là cloud.ai nha mọi người.
+
+3
+00:00:12,780 --> 00:00:17,080
+Đó, xong rồi thì anh em login bằng cái tài khoản Google của mọi người vào nha.
+
+4
+00:00:17,900 --> 00:00:22,300
+Tại đây em sẽ làm ví dụ cho mọi người xem nha. Nó có 2 phiên bản là web và app nha mọi người.
+
+5
+00:00:22,760 --> 00:00:25,500
+Đấy, thì trước tiên thì em giới thiệu ở trên web cho mọi người trước nha.
+
+6
+00:00:25,980 --> 00:00:28,140
+Thì anh em bấm chấp nhận các cái điều khoản nè.
+
+7
+00:00:28,140 --> 00:00:31,760
+Rồi, thì đầu tiên nó sẽ ra các cái gói cho mình luôn nè mọi người
+
+8
+00:00:31,760 --> 00:00:34,660
+Thì anh em cứ bấm vào hãy sử dụng miễn phí thôi
+
+9
+00:00:34,660 --> 00:00:37,000
+Đây, sử dụng cơ lêu miễn phí trước nha
+
+10
+00:00:37,000 --> 00:00:39,320
+Tí nữa em sẽ giải thích các cái gói này sau nha mọi người
+
+11
+00:00:39,320 --> 00:00:44,020
+Rồi, ok, bây giờ thì mọi người bấm hãy sử dụng miễn phí nè
+
+12
+00:00:44,020 --> 00:00:49,000
+Rồi, chỗ này thì nó hỏi mình có muốn tải xuống cho mấy mình không
+
+13
+00:00:49,000 --> 00:00:52,420
+Mấy em là quý ngã mọi người, anh em dùng Mac thì vẫn tải được hết nha
+
+14
+00:00:52,420 --> 00:00:54,080
+Thì mọi người nên tải xuống nha
+
+15
+00:00:54,080 --> 00:00:57,140
+Như của em hiện tại thì em đang dùng bằng cái app nha mọi người
+
+16
+00:00:57,140 --> 00:00:58,540
+tải xuống file .exe
+
+17
+00:00:58,540 --> 00:01:00,220
+nó cũng khá là nhẹ thôi mọi người
+
+18
+00:01:00,220 --> 00:01:02,980
+anh em dùng trực tiếp bằng cái app luôn
+
+19
+00:01:02,980 --> 00:01:05,020
+thì nó sẽ có nhiều cái tính năng hơn nha
+
+20
+00:01:05,020 --> 00:01:09,820
+Em bấm vượt ve này, em cho mọi người xem ve cái phiên bản trên web trước nha.
+
+21
+00:01:10,300 --> 00:01:18,000
+Thì mọi người tự đặt tên thôi, nếu mà anh em chưa có tài khoản, thì cái này em hướng dẫn cho những anh em mà chưa biết về chưa dùng con này bao giờ nha.
+
+22
+00:01:18,000 --> 00:01:20,180
+Còn anh em biết rồi thì anh em thông cảm bảo qua nha.
+
+23
+00:01:20,940 --> 00:01:24,780
+Đấy, nói chung là em hướng dẫn ngay từ đầu, nhẫn bước đầu luôn nha mọi người.
+
+24
+00:01:25,360 --> 00:01:30,640
+Rồi, sau khi mà mọi người đã thiết lập cho cái tài khoản của mọi người xong rồi thì nó sẽ diễn ra như này.
+
+25
+00:01:31,060 --> 00:01:32,680
+Thì anh em có thể chat trực tiếp luôn nha.
+
+26
+00:01:32,680 --> 00:01:38,060
+Và ở trong này thì trong này cũng có chỗ cho anh em có thể up cái file skill nè
+
+27
+00:01:38,060 --> 00:01:41,880
+Thì mọi người mà chưa xem video hôm qua em up trên YouTube á
+
+28
+00:01:41,880 --> 00:01:44,340
+Thì anh em nên xem nha, video đó cực kỳ là hay nha
+
+29
+00:01:44,340 --> 00:01:48,120
+Thì sắp tới là đương nhiên em cũng sẽ update rất là nhiều video hướng dẫn
+
+30
+00:01:48,120 --> 00:01:53,720
+Để cho mọi người tự trend và nói chung là làm các cái chủ đề khác nhau luôn nha mọi người
+
+31
+00:01:53,720 --> 00:01:58,100
+Nhưng mà trước tiên thì anh em nên xem video YouTube này của em hôm qua em up nè
+
+32
+00:01:58,100 --> 00:01:59,240
+Cực kỳ là hay nha
+
+33
+00:01:59,240 --> 00:02:03,760
+Về rồi thì cái giao dựng web này nó là như vậy nha mọi người
+
+34
+00:02:03,760 --> 00:02:06,040
+Nhưng mà nó không có đầy đủ nhiều tính năng đâu
+
+35
+00:02:06,040 --> 00:02:10,300
+Thì em sẽ mở cái phiên bản là app tải xuống cho mọi người xem nha
+
+36
+00:02:10,300 --> 00:02:12,860
+Đây em sẽ mở lên nha mọi người xem
+
+37
+00:02:12,860 --> 00:02:25,480
+Mở lên xem. Đây là phiên bản Cloud em dùng trên app này. Trực tiếp trên máy mình luôn. Nó sẽ có đầy đủ nha. Gói hiện tại em đang dùng là gói mát luôn nha mọi người. Gói 100$ trên 1 tháng.
+
+38
+00:02:26,100 --> 00:02:28,580
+Nói chung là cái này thì tùy nhu cầu mọi người nha.
+
+39
+00:02:29,000 --> 00:02:29,680
+Nếu mà anh em làm ít.
+
+40
+00:02:29,680 --> 00:02:33,980
+Nói chung là làm tương đối thì anh em nên nâng cái gói 20 đô thôi.
+
+41
+00:02:34,360 --> 00:02:36,060
+Cái gói như chat givety ấy mọi người.
+
+42
+00:02:36,480 --> 00:02:39,540
+Còn em thì do là em làm rất rất là nhiều thứ.
+
+43
+00:02:39,680 --> 00:02:40,480
+Mọi người cũng biết rồi.
+
+44
+00:02:40,920 --> 00:02:41,860
+Về rất là nhiều kỳ luôn.
+
+45
+00:02:42,240 --> 00:02:44,360
+Nên là em dùng cái gói 100 đô.
+
+46
+00:02:44,360 --> 00:02:47,200
+Còn mọi người thì nên dùng gói 20 đô thôi nha
+
+47
+00:02:47,200 --> 00:02:49,640
+Bởi vì nói chung là anh em dùng càng nhiều
+
+48
+00:02:49,640 --> 00:02:52,420
+Thì nó sẽ đốt cái token của mọi người càng nhiều
+
+49
+00:02:52,420 --> 00:02:54,420
+Anh em đạt tới cái ngưỡng
+
+50
+00:02:54,420 --> 00:02:57,340
+Thì nó sẽ khó mọi người lại tầm 2 giờ
+
+51
+00:02:57,340 --> 00:02:59,020
+Sau 2 giờ thì nó sẽ mở ra
+
+52
+00:02:59,020 --> 00:03:00,000
+Thì anh em sẽ làm tiếp
+
+53
+00:03:00,000 --> 00:03:03,200
+Đó là trong trường hợp mà anh em dùng nhiều nha
+
+54
+00:03:03,200 --> 00:03:05,480
+Thì tổng quan về các cái gói này
+
+55
+00:03:05,480 --> 00:03:06,600
+Đó là như vậy thôi mọi người
+
+56
+00:03:06,600 --> 00:03:08,080
+Thì mọi người có thể tham khảo
+
+57
+00:03:08,080 --> 00:03:10,460
+Này là các cái gói theo nem nè
+
+58
+00:03:10,460 --> 00:03:11,720
+Thì nó sẽ giảm cho mọi người
+
+59
+00:03:11,720 --> 00:03:13,380
+Một tháng là 77 đô
+
+60
+00:03:13,380 --> 00:03:15,480
+Còn gói hàng tháng là 20 đô nha
+
+61
+00:03:15,480 --> 00:03:18,180
+Nó cũng khá là giống như con chat givety thôi mọi người
+
+62
+00:03:18,180 --> 00:03:19,000
+Đấy
+
+63
+00:03:19,000 --> 00:03:21,900
+Thì nói chung con này thì làm cực kỳ là nhanh
+
+64
+00:03:21,900 --> 00:03:22,880
+Về tiện loại luôn
+
+65
+00:03:22,880 --> 00:03:25,180
+Về nó không có bị giới hạn nha mọi người
+
+66
+00:03:25,180 --> 00:03:33,235
+Đối hạn nha mọi người. Viết cực kỳ là thông minh luôn. Nói chung là mọi người dùng tới đâu thì mọi người sai thì nó sẽ fix trực tiếp cho mọi người luôn nha. Rồi thì về
+
+67
+00:03:33,235 --> 00:03:41,290
+cơ bản là như vậy. Em giới thiệu server cho mọi người biết nha. Vì em khuyên mọi người là nên tải cái app trực tiếp về máy mình luôn để mình dùng luôn nha mọi người.
+
+68
+00:03:41,290 --> 00:03:49,730
+Về rồi thì về ngày mai hoặc là vài hôm sau nữa thì em sẽ update liên tục những cái video hướng dẫn cách trên
+
+69
+00:03:49,730 --> 00:03:53,050
+Cũng như là dùng cái con Caleo này lên cho mọi người nha
+
+70
+00:03:53,050 --> 00:03:55,490
+Thì mình chỉ làm mảng YouTube thôi
+
+71
+00:03:55,490 --> 00:03:57,770
+Nên là những cái liên quan đến YouTube
+
+72
+00:03:57,770 --> 00:04:01,810
+Thì em sẽ trend và hướng dẫn mọi người làm trực tiếp cho con này
+
+73
+00:04:01,810 --> 00:04:02,790
+Thì em sẽ upload
+
+74
+00:04:02,790 --> 00:04:05,890
+Nên là em giới thiệu cơ bản QA một tí
+
+75
+00:04:05,890 --> 00:04:07,170
+Để cho mọi người ném QA thôi
+
+76
+00:04:07,170 --> 00:04:10,000
+Còn anh em mà muốn biết dùng con này chi tiết hơn
+
+77
+00:04:10,000 --> 00:04:11,330
+Thì anh em có thể lên YouTube
+
+78
+00:04:11,330 --> 00:04:14,190
+Anh em search là hướng dẫn dùng Cloud AI
+
+79
+00:04:14,190 --> 00:04:17,150
+Thì nói thật là có rất rất là nhiều người đã hướng dẫn rồi anh em
+
+80
+00:04:17,150 --> 00:04:19,430
+Mọi người muốn học chuyên sâu thêm
+
+81
+00:04:19,430 --> 00:04:22,010
+Thì mọi người có thể lên trên YouTube
+
+82
+00:04:22,010 --> 00:04:23,110
+Mọi người tham khảo thêm nha
+
+83
+00:04:23,110 --> 00:04:24,910
+Rất rất là nhiều người dạy miễn phí ra đó
+
+84
+00:04:24,910 --> 00:04:27,130
+Rồi thì em đang quay video
+
+85
+00:04:27,130 --> 00:04:28,850
+Đang quay rất là nhiều video
+
+86
+00:04:28,850 --> 00:04:30,330
+Cũng như là hướng dẫn mọi người
+
+87
+00:04:30,330 --> 00:04:31,590
+Trend luôn á
+
+88
+00:04:31,590 --> 00:04:33,630
+Thì My hay là Mod
+
+89
+00:04:33,630 --> 00:04:34,770
+Thì nói chung là
+
+90
+00:04:34,770 --> 00:04:38,190
+Xong những cái nào thì em sẽ up dần lên cho mọi người xem trước nha
+
+91
+00:04:38,190 --> 00:04:40,770
+Ok em cảm ơn mọi người đã xem video đến đây nha
+

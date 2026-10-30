@@ -1,0 +1,275 @@
+1
+00:00:00,000 --> 00:00:04,180
+Nhất quán nhân vật luôn, chứ không cần phải phô diễn làm gì, tự động hết.
+
+2
+00:00:04,780 --> 00:00:17,060
+Xin chào anh chị em học viên, hôm nay tôi sẽ dạy anh chị em học viên code ra một con tool để tạo ra những hình ảnh để làm story hoặc là làm video để tự động công việc của mình trên ngay Google Flow này.
+
+3
+00:00:17,200 --> 00:00:24,720
+Tất nhiên là có rất nhiều bài khác nữa và chúng ta sẽ đi vào luôn trang labs.google này để chúng ta tạo ra tool.
+
+4
+00:00:25,000 --> 00:00:28,220
+Ở giao diện labs.google thì anh em nhấn cho tôi tạo dự án mới này.
+
+5
+00:00:30,000 --> 00:00:38,100
+Sau khi nhấn tạo dự án mới thì anh em nhấn cho tôi vào công cụ nhé. Dưới phần tất cả nhân vật cảnh công cụ thì anh
+
+6
+00:00:38,100 --> 00:00:46,000
+em nhấn vào cho tôi công cụ. Khi mà anh em vào phần công cụ này thì chúng ta sẽ nhấn vào tạo công cụ này, tạo riêng nhé.
+
+7
+00:00:46,000 --> 00:00:59,460
+Sau khi đã vào được cái giao diện này thì chúng ta sẽ cần phải có câu lệnh Master Prompt để tạo ra một con tool để tạo ra cái tool để tự động tạo ảnh trên Nano Banana.
+
+8
+00:01:00,920 --> 00:01:06,580
+Thì cái Prompt này thì tôi sẽ để ngay ở dưới cái video này để cho anh chị em có thể vào lấy luôn.
+
+9
+00:01:06,580 --> 00:01:15,520
+Anh chị em copy tất cả những cái thông tin ở trên cái tài liệu này
+
+10
+00:01:15,520 --> 00:01:17,060
+Anh chị copy đầy đủ nhé
+
+11
+00:01:17,060 --> 00:01:19,220
+Và anh chị cũng có thể thay
+
+12
+00:01:19,220 --> 00:01:22,580
+Anh chị có thể thay tên của anh chị vào cũng được nhé
+
+13
+00:01:22,580 --> 00:01:23,440
+Rồi
+
+14
+00:01:23,440 --> 00:01:26,580
+Bây giờ là anh em sang Google Flow
+
+15
+00:01:26,580 --> 00:01:29,480
+anh em dán vào và nhấn là cho nó chạy thôi
+
+16
+00:01:29,480 --> 00:01:32,960
+để cho nó tự động tạo ra tool cho mình nhé
+
+17
+00:01:32,960 --> 00:01:35,540
+các dòng code các thứ là nó sẽ tự động hết
+
+18
+00:01:35,540 --> 00:01:37,760
+bây giờ AI nó làm chuyên nghiệp rồi
+
+19
+00:01:37,760 --> 00:01:40,620
+thì chúng ta chỉ vào để làm video thôi
+
+20
+00:01:40,620 --> 00:01:43,591
+con tool này sẽ làm nhất quán nhân vật nhé anh em nhé
+
+21
+00:01:44,000 --> 00:01:50,691
+Chúng ta có thể xem được mã code phía bên này. Phía bên này chúng ta có thể xem được mã code.
+
+22
+00:01:50,691 --> 00:02:03,931
+Đó, còn tool bây giờ nó đang tạo ra. Thì đoạn này mình sẽ tua nhanh đi. Đoạn này mình sẽ tua nhanh đi để cho anh em biết là chúng ta sẽ tạo ra một tool nhanh như thế nào nhé. Câu lệnh thì tôi để ở dưới.
+
+23
+00:02:03,931 --> 00:02:14,051
+Còn cái chi tiết để viết ra câu lệnh này thì trong cái bài tư duy để viết ra Master Prompt thì tôi đã có video rồi.
+
+24
+00:02:14,391 --> 00:02:18,551
+Cái này code thì nó chỉ mất tầm 5 đến 10 phút rồi. Nó rất là nhanh.
+
+25
+00:02:19,251 --> 00:02:27,991
+Thì đoạn này tôi sẽ tua nhé. Sau khi đợi một lúc thì tool nó đã tạo ra dựa trên cái câu lệnh nó đã có sẵn trong tài liệu này nhé.
+
+26
+00:02:27,991 --> 00:02:32,111
+Khi anh em bắt vào thì tất cả các con giao diện nó không giống nhau nhé.
+
+27
+00:02:32,491 --> 00:02:35,651
+Giao diện nó không giống nhau nhưng mà chức năng của nó sẽ giống nhau.
+
+28
+00:02:37,000 --> 00:02:39,611
+Thì bây giờ chúng ta sẽ sử dụng một hình ảnh tham chiếu.
+
+29
+00:02:40,171 --> 00:02:42,231
+Anh em nhấn tải cái hình ảnh tham chiếu lên cho tôi.
+
+30
+00:02:42,750 --> 00:02:45,290
+Tôi có một hình ảnh người que (Stickman).
+
+31
+00:02:47,510 --> 00:02:52,830
+Và tôi sẽ tải lên, tôi sẽ sử dụng hình ảnh này để tạo cho tất cả các video của tôi.
+
+32
+00:02:53,130 --> 00:02:54,010
+Tôi nhấn xác nhận nha.
+
+33
+00:02:55,530 --> 00:02:59,410
+Đó. Và anh em nhớ cho tôi là anh em nhấn là nhân vật.
+
+34
+00:03:00,950 --> 00:03:01,930
+Chọn vào nhé.
+
+35
+00:03:02,370 --> 00:03:07,690
+Nó sẽ có một cái nút tích để xác nhận là anh em có sử dụng nhân vật này làm nhân vật tham chiếu không.
+
+36
+00:03:08,000 --> 00:03:12,490
+Và bây giờ là sang ChatGPT để chúng ta viết 10 Prompt.
+
+37
+00:03:12,750 --> 00:03:19,550
+100 Prompt, 1000 Prompt cũng được tùy anh em.
+
+38
+00:03:19,550 --> 00:03:26,350
+Hãy tạo cho tôi 20 Prompt để sử dụng hình
+
+39
+00:03:26,350 --> 00:03:33,150
+ảnh này tạo ra hình ảnh trên Google Flow.
+
+40
+00:03:33,150 --> 00:03:42,570
+Sáng tạo 20 Prompt thay đổi cuộc sống
+
+41
+00:03:42,570 --> 00:03:50,570
+Hàng ngày của nhân vật này.
+
+42
+00:03:50,570 --> 00:04:02,570
+Thay đổi các góc quay cho từng Prompt. Sáng tạo các Prompt chi tiết đầy đủ.
+
+43
+00:04:02,570 --> 00:04:12,106
+các Prompt liền mạch, không cần đánh dấu các Prompt.
+
+44
+00:04:12,106 --> 00:04:16,746
+Tôi chỉ viết ra Prompt đơn giản thôi, không cần phải viết ra Master Prompt.
+
+45
+00:04:17,806 --> 00:04:18,726
+Đây là đang hướng dẫn.
+
+46
+00:04:18,726 --> 00:04:27,816
+Ok, sau khi chúng ta đã có 10 Prompt, về Stickman này nhé, à 20 Prompt chứ, về Stickman này, thì anh em nhớ cho tôi
+
+47
+00:04:27,816 --> 00:04:36,906
+là anh em nhấn sao chép này, sao chép này, anh em có thể cho 200 Prompt cũng được, nó sẽ auto làm cho anh em.
+
+48
+00:04:37,000 --> 00:04:45,526
+Và bây giờ là gì ạ? Anh em dán vào đây. Dán vào anh em. Dán vào anh em nhớ cho tôi là nhấn cập
+
+49
+00:04:45,526 --> 00:04:54,146
+nhật danh sách này. Đấy, nó sẽ đánh dấu cho anh em là 20 Prompt. Và gì ạ? Anh em có thể chạy 1 ảnh, 2
+
+50
+00:04:54,146 --> 00:05:02,766
+ảnh trên 1 Prompt. Chạy song song là 5 cái Prompt một lúc. Hoặc chạy một lúc là 8 Prompt cũng được. Tùy anh em.
+
+51
+00:05:02,766 --> 00:05:07,786
+Và cái tỷ lệ khung hình anh em muốn làm dạng gì, video dài, video ngắn đều được.
+
+52
+00:05:08,506 --> 00:05:13,426
+Ok, và chúng ta chỉ cần một cái bước nữa là nhấn bắt đầu chạy.
+
+53
+00:05:14,750 --> 00:05:23,510
+Bây giờ nó sẽ tự động chạy cho anh em, tạo ra hình ảnh cho anh em.
+
+54
+00:05:26,000 --> 00:05:34,320
+Vấn đề ở đây là vấn đề chúng ta sẽ tự động hóa để làm ra những hình ảnh dạng
+
+55
+00:05:34,320 --> 00:05:42,990
+story, người que làm chủ đề quân sự, làm chủ đề cao bồi, làm tất cả các chủ đề liên quan.
+
+56
+00:05:42,990 --> 00:05:50,730
+đến AI, tự động hết nhé. Nó chạy xong cái này thì nó sẽ tự động chạy khác cho các bạn.
+
+57
+00:05:50,730 --> 00:06:03,610
+Không cần phải suy nghĩ quá nhiều. Tôi chỉ để dạy cho anh em biết là anh em sẽ tự động làm tự động hóa, ngay cả khi anh em không cần biết sử dụng code tool.
+
+58
+00:06:04,490 --> 00:06:09,090
+Hãy đặt ra một Master Prompt để nó sẽ tạo sẵn cho anh em.
+
+59
+00:06:09,090 --> 00:06:19,590
+anh em nhìn nhớ nhất quán nhân vật luôn chứ không cần phải phô diễn làm gì tự động hết
+
+60
+00:06:19,590 --> 00:06:28,887
+auto chúng ta có thể tự động tạo ra mà kể cả tôi dạy anh em cũng có thể tự động tạo ra
+
+61
+00:06:28,887 --> 00:06:32,927
+Trong phần sau tôi sẽ hướng dẫn tạo tool để tạo video.
+
+62
+00:06:36,507 --> 00:06:38,327
+Ok, chào anh chị em.
+
+63
+00:06:38,327 --> 00:06:47,337
+Chắc là tới đây thôi cho anh em nhìn thấy là nó tự động như thế nào rồi thì tôi sẽ có
+
+64
+00:06:47,337 --> 00:06:56,347
+rất nhiều video thực chiến hơn để dành cho anh em làm ra những cái tự động hóa như thế nào.
+
+65
+00:06:56,347 --> 00:07:06,767
+Ok, chào tất cả anh chị em. Nếu mà anh em muốn dùng cái tài liệu thì ở ngay bên dưới tôi để luôn ở trong cái phần video này.
+
+66
+00:07:07,307 --> 00:07:18,087
+Cứ vào lấy mà tạo thay đổi tên của anh em đi được. Đại Gia Mang Dép thì để là Đại Gia Mang Dép cũng được. Anh em muốn để tên của mình cũng được. Không sao cả.
+
+67
+00:07:18,087 --> 00:07:20,487
+Đấy nha
+
+68
+00:07:20,487 --> 00:07:22,487
+Tự động tạo ra tool nha
+
+69
+00:07:22,487 --> 00:07:26,607
+Nó sẽ tự động đánh dấu số thứ tự cho anh em luôn nha

@@ -9,18 +9,19 @@ function nicheKeyFor(ngach) {
   const map = (global.H2Taxonomy && global.H2Taxonomy.NICHE_MAP) || {};
   if (map[clean]) return map[clean];
   const low = clean.toLowerCase();
-  if (/(phật|tâm linh|triết lý|khắc kỷ|kinh thánh|chúa|phúc âm|phong thủy|đạo làm người|nhân sinh)/.test(low)) return 'Triết lý / Tâm linh';
+  if (/(người que|stickman|what-if|2d explainer|chill dude|nonagon)/.test(low)) return 'Edit / Thumb';
+  if (/(reup|hoạt hình|bilibili|douyin|3d|anime|tiên hiệp|short drama|ai film|điện ảnh ai)/.test(low)) return 'Reup / Hoạt hình';
+  if (/(lịch sử|quân sự|địa chính trị|cổ đại|khảo cổ|tiền sử|sumer|anunnaki|chiến tranh|history)/.test(low)) return 'Lịch sử / Quân sự';
+  if (/(phật|tâm linh|triết lý|khắc kỷ|kinh thánh|chúa|phúc âm|phong thủy|đạo làm người|nhân sinh|tôn giáo)/.test(low)) return 'Triết lý / Tâm linh';
   if (/(sức khỏe|dưỡng sinh|lão hóa|tuổi già|người cao tuổi|dinh dưỡng|sống thọ|senior)/.test(low)) return 'Sức khỏe / Lão hóa';
   if (/(drama|tâm sự|kể chuyện|câu chuyện|bi kịch|kaidan|야담|gia đình)/.test(low)) return 'Drama / Stories';
-  if (/(lịch sử|quân sự|địa chính trị|cổ đại|chiến tranh|history)/.test(low)) return 'Lịch sử / Quân sự';
-  if (/(kinh tế|tài chính|đầu tư|làm giàu|thương hiệu|bất động sản)/.test(low)) return 'Kinh tế / Tài chính';
-  if (/(khoa học|vũ trụ|thiên nhiên|trái đất|lượng tử|động vật|wildlife)/.test(low)) return 'Khoa học EN';
-  if (/(reup|hoạt hình|bilibili|douyin|3d|anime)/.test(low)) return 'Reup / Hoạt hình';
+  if (/(kinh tế|tài chính|đầu tư|làm giàu|thương hiệu|bất động sản|tội phạm kinh tế|dark crime|corporate)/.test(low)) return 'Kinh tế / Tài chính';
+  if (/(khoa học|vũ trụ|thiên nhiên|trái đất|lượng tử|động vật|wildlife|khám phá|địa lý|tiếng anh|esl|comprehensible)/.test(low)) return 'Khoa học EN';
   if (/(bản quyền|kiếm tiền|adsense|ga|chính sách|kháng|bật kiếm tiền|thuế|rpm|cpm)/.test(low)) return 'Kiếm tiền / Chính sách';
   if (/(nhân bản|khám kênh|case study|đa thị trường|view ngoại)/.test(low)) return 'Nhân bản / Kênh';
-  if (/(vps|proxy|antidetect|setup|nuôi kênh|tự động hóa|automation|tool|công cụ|support)/.test(low)) return 'Nền tảng / Tool';
-  if (/(prompt|kịch bản|edit|capcut|thumbnail|ctr|giọng đọc|voice|video ngắn|shorts|reels)/.test(low)) return 'Edit / Thumb';
-  if (/(ngách nhỏ|share key|ẩm thực|mẹo vặt|sinh tồn|làm vườn)/.test(low)) return 'Share key / Ngách nhỏ';
+  if (/(vps|proxy|antidetect|setup|nuôi kênh|tự động hóa|automation|tool|công cụ|support|âm nhạc|lofi|nhạc)/.test(low)) return 'Nền tảng / Tool';
+  if (/(prompt|kịch bản|edit|capcut|thumbnail|ctr|giọng đọc|voice|video ngắn|\bshorts?\b|reels)/.test(low)) return 'Edit / Thumb';
+  if (/(ngách nhỏ|share key|ẩm thực|mẹo vặt|sinh tồn|làm vườn|xe cổ|cơ khí|nhà máy|thể thao|gaming)/.test(low)) return 'Share key / Ngách nhỏ';
   return 'Hệ thống / Quy trình';
 }
 

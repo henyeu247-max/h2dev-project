@@ -1,0 +1,80 @@
+{
+  "engine": "cuda_gpu",
+  "gpu_device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "stft_speech_band": true,
+  "gpu_chunk_bounds": [
+    0.0,
+    160.6,
+    343.0,
+    497.25,
+    651.15,
+    807.05,
+    839.17
+  ],
+  "noise_db": -35,
+  "min_duration": 2.5,
+  "silence_regions": [
+    {
+      "start": 62.15,
+      "duration": 4.45,
+      "end": 66.6
+    },
+    {
+      "start": 146.5,
+      "duration": 2.8,
+      "end": 149.3
+    },
+    {
+      "start": 315.0,
+      "duration": 3.45,
+      "end": 318.45
+    },
+    {
+      "start": 396.15,
+      "duration": 2.75,
+      "end": 398.9
+    },
+    {
+      "start": 558.8,
+      "duration": 2.9,
+      "end": 561.7
+    },
+    {
+      "start": 637.2,
+      "duration": 3.1,
+      "end": 640.3
+    },
+    {
+      "start": 665.9,
+      "duration": 3.4,
+      "end": 669.3
+    },
+    {
+      "start": 670.0,
+      "duration": 3.1,
+      "end": 673.1
+    },
+    {
+      "start": 701.3,
+      "duration": 3.85,
+      "end": 705.15
+    },
+    {
+      "start": 757.15,
+      "duration": 2.5,
+      "end": 759.65
+    },
+    {
+      "start": 770.75,
+      "duration": 4.1,
+      "end": 774.85
+    },
+    {
+      "start": 780.9,
+      "duration": 3.0,
+      "end": 783.9
+    }
+  ],
+  "silence_count": 12,
+  "silence_total_sec": 39.4
+}

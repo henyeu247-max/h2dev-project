@@ -1,0 +1,81 @@
+{
+  "sku": "VIDEO-469cb5",
+  "title": "Update thêm kênh đối thủ - ngách thị trường Hoa Kỳ (US)",
+  "actual_topic": "Update thêm kênh đối thủ - ngách thị trường Hoa Kỳ (US)",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Lời Chúa & Tâm Linh Ngoại",
+  "niche_id": "faceless-general",
+  "target_market": "Hoa Kỳ (US) / Quốc tế (Global)",
+  "market_code": "US,GLOBAL",
+  "key_takeaways": [
+    "Tác giả share thêm vài kênh đối thủ ngách Kinh Thánh ở thị trường Hoa Kỳ/Anh; các kênh này đều hoàn toàn mới (lập chưa đầy 1 tháng) và view rất cao.",
+    "Một kênh làm cùng dạng Kinh Thánh nhưng không đúng ngách nhỏ tác giả share, vẫn để tham khảo.",
+    "Ở một kênh khác, video nổ view nhất là \"thói quen của người phụ nữ được Chúa ban phước\" còn các video còn lại ít view; keyword cần đào sâu là \"người phụ nữ được Chúa ban phước\".",
+    "Ngách nhỏ chính tác giả share là dạng giải thích Kinh Thánh; các video dạng thói quen, bí quyết là hướng khác hoàn toàn.",
+    "Video hướng dẫn mới nhất trên kênh YouTube của tác giả (đăng 7h tối cùng ngày) có hướng dẫn chi tiết cách tạo form/skill bằng AI, kịch bản và hình ảnh."
+  ],
+  "edit_sop": {
+    "primary": "Phân tích thêm kênh đối thủ ngách Kinh Thánh thị trường Hoa Kỳ và tìm từ khóa ngách từ video cao view",
+    "additional": [
+      "Xem các kênh đối thủ mới lập chưa đầy 1 tháng ở thị trường Hoa Kỳ để tham khảo",
+      "Đọc tiêu đề video cao view nhất để rút ra từ khóa chính, ví dụ người phụ nữ được Chúa ban phước",
+      "Đào sâu vào từ khóa đó thay vì làm các video chung chung khác vì những video kia không có view",
+      "Video mới trên kênh tác giả có hướng dẫn chi tiết cách tạo kịch bản, hình ảnh và tạo skill bằng Claude"
+    ]
+  },
+  "avoid_flags": [
+    "Tránh làm dàn trải các chủ đề thói quen hay bí quyết chung chung có lượt xem thấp mà phải đào sâu vào đúng từ khóa ngách đang nổ view cao nhất",
+    "Không nhầm lẫn giữa dạng video kể chuyện thói quen với ngách nhỏ giải thích chuyên sâu đang có nhu cầu cao trên thị trường"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "Claude"
+  ],
+  "channels_mentioned": [
+    "@biblemadeclear26",
+    "@scripturemadesimpleyt",
+    "@ScriptureMadeSimpleTV",
+    "@theopenscriptures",
+    "@BibleLegacyAssets98"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Chia sẻ các kênh đối thủ mới ngách Kinh Thánh ở thị trường Hoa Kỳ và Anh"
+    },
+    {
+      "time": "00:42",
+      "seconds": 42,
+      "label": "Xem kênh đối thủ mới lập chưa đầy 1 tháng đã đạt lượng view rất cao"
+    },
+    {
+      "time": "01:07",
+      "seconds": 67,
+      "label": "Nhắc video hướng dẫn tạo kịch bản, hình ảnh và tạo skill bằng Claude trên kênh"
+    },
+    {
+      "time": "01:42",
+      "seconds": 102,
+      "label": "Phân tích từ khóa nổ view: thói quen của người phụ nữ được Chúa ban phước"
+    },
+    {
+      "time": "02:07",
+      "seconds": 127,
+      "label": "Phân biệt ngách chính giải thích Kinh Thánh với dạng thói quen, bí quyết"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-469cb5/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Xem các kênh đối thủ mới lập chưa đầy 1 tháng ở thị trường Hoa Kỳ để tham khảo",
+    "Đọc tiêu đề video cao view nhất để rút ra từ khóa chính, ví dụ người phụ nữ được Chúa ban phước",
+    "Đào sâu vào từ khóa đó thay vì làm các video chung chung khác vì những video kia không có view",
+    "Video mới trên kênh tác giả có hướng dẫn chi tiết cách tạo kịch bản, hình ảnh và tạo skill bằng Claude"
+  ]
+}

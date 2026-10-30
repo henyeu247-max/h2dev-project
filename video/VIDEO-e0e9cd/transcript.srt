@@ -1,0 +1,1108 @@
+1
+00:00:00,000 --> 00:00:05,960
+Rồi em chào tất cả mọi người nha. Thì mấy bác đã xem qua được cái video bản đầu tiên này rồi đúng không?
+
+2
+00:00:05,960 --> 00:00:15,140
+Thì đây là cái cách làm thủ công, cái cách làm thô. Thì bắt buộc mọi người cũng phải nên xem qua trước khi mà mọi người xem cái video này nha.
+
+3
+00:00:15,140 --> 00:00:24,100
+Video này chính là em sẽ hướng dẫn mọi người làm cùng với cái ngách này luôn, nhưng mà là về cái phiên bản thứ 2, về cách làm khác nha mọi người.
+
+4
+00:00:24,100 --> 00:00:28,560
+Đấy, nó tự động hóa hơn nhưng mà mọi người phải xem qua cái video kia trước nha.
+
+5
+00:00:28,560 --> 00:00:37,480
+Đầu tiên, để làm được bản V2 này, mấy bác tải file plugin này (`h2-2d-studio.plugin`) em có để ở dưới khung video mô tả nha mọi người.
+
+6
+00:00:37,480 --> 00:00:39,480
+Mấy bác tải về trước nha.
+
+7
+00:00:39,480 --> 00:00:42,680
+Rồi, sau đó mọi người vào con Claude nha anh em.
+
+8
+00:00:42,680 --> 00:00:48,020
+Mọi người chuyển về chế độ Cowork nha. Ví dụ như hiện tại là Chat, em chuyển về chế độ Cowork nè.
+
+9
+00:00:48,020 --> 00:00:51,940
+Rồi, mọi người bấm ở dưới này, mọi người bấm Add cái folder của mọi người vào.
+
+10
+00:00:51,940 --> 00:00:56,480
+Ví dụ như em tạo một cái thư mục mới luôn đi, `whatifV2` đi.
+
+11
+00:00:56,480 --> 00:01:03,160
+Mấy bác tạo 1 cái dự án nha. Dự án là 1 cái folder, 1 cái thư mục của mọi người. Đây.
+
+12
+00:01:03,160 --> 00:01:09,840
+Rồi em sẽ click vào, em chọn nè. Em sẽ import đó, em chấp nhận nè. Rồi, sau khi mình đã add
+
+13
+00:01:09,840 --> 00:01:16,520
+cái folder vào rồi á, thì bây giờ em sẽ vào Settings nè. Mọi người xem cái mũi tên em hướng dẫn.
+
+14
+00:01:16,520 --> 00:01:21,000
+Mấy bác chọn xuống ở dưới cuối cùng là phần Plugins.
+
+15
+00:01:21,000 --> 00:01:28,000
+Mọi người bấm ở trên góc phải là `+ Add`, bấm Upload a plugin lên, mọi người bấm vào.
+
+16
+00:01:28,000 --> 00:01:36,000
+Bây giờ mấy bác bấm vào dòng mũi tên, mình sẽ đi tải file plugin (`h2-2d-studio.plugin`) lúc nãy mà mấy bác tải từ Drive em về.
+
+17
+00:01:36,000 --> 00:01:41,660
+Như này đã xong, thì mấy bác bấm nút Upload.
+
+18
+00:01:41,660 --> 00:01:46,000
+Mình lưu lại nha mọi người, thì bây giờ hiện tại nó đã lên rồi.
+
+19
+00:01:46,000 --> 00:01:51,620
+Ví dụ như cái chỗ dấu mũi tên này là tắt, cái dấu công tắc này là tắt, thì mấy bác nhớ bật lên cho nó xanh nha.
+
+20
+00:01:51,620 --> 00:01:57,080
+Thì hiện tại mọi người thấy ở bên tab `Skills · 2` này đã có 2 skill là kịch bản (`kich-ban-whatif`) và làm video (`lam-video-2d`).
+
+21
+00:01:57,080 --> 00:02:00,480
+Như vậy là đã Upload thành công rồi nha mọi người.
+
+22
+00:02:00,480 --> 00:02:04,480
+Rồi, bây giờ mình sẽ quay lại với phần `+ New` chat của mình.
+
+23
+00:02:04,480 --> 00:02:07,480
+Kiểm tra lại đã add thư mục (`whatifV2`) rồi đúng không?
+
+24
+00:02:07,480 --> 00:02:09,480
+Bây giờ thì em sẽ gọi cái skill ra.
+
+25
+00:02:09,480 --> 00:02:12,480
+Em bấm dấu xuyệt (`/`). Mọi người nhìn ở dưới cuối cùng nha.
+
+26
+00:02:12,480 --> 00:02:16,480
+Nó sẽ có 2 cái skill ở trong cái phần plugin `H2 2d studio` của mình.
+
+27
+00:02:16,480 --> 00:02:18,480
+Bây giờ thì em sẽ viết kịch bản đúng không?
+
+28
+00:02:18,480 --> 00:02:21,480
+Đầu tiên là mình sẽ viết kịch bản, mà chọn chủ đề trước chứ.
+
+29
+00:02:21,480 --> 00:02:27,193
+Em sẽ gọi cái skill kịch bản What If (`/kich-ban-whatif`) ra. Ví dụ như mấy bác để không thì mọi người bấm Enter thì nó
+
+30
+00:02:27,193 --> 00:02:32,907
+sẽ chạy gợi ý ra cho mọi người những cái chủ đề. Còn không thì ví dụ mọi người muốn bám theo cái chủ
+
+31
+00:02:32,907 --> 00:02:38,620
+đề của đối thủ như này đúng không, thì anh em copy bỏ vào thì nó sẽ xào nấu lại và làm hay hơn thôi.
+
+32
+00:02:38,668 --> 00:02:50,208
+Nhưng mà em đang hướng dẫn mọi người là tự sáng tạo nội dung content mới luôn. Thế thì bây giờ mọi người để như này, mọi người chỉ cần việc bấm Enter thì nó sẽ tự động chạy và lọc ra các chủ đề mới nha.
+
+33
+00:02:50,208 --> 00:02:56,888
+Đúng đấy, hiện tại thì bây giờ nó đang mở một cái tab trình duyệt lên và nó sẽ kiểm tra với cái kênh đối thủ (`@IfverseTales`) này của em này.
+
+34
+00:02:57,308 --> 00:03:03,808
+Và nó sẽ lọc ra, nó sẽ loại bỏ những cái chủ đề mà đối thủ làm rồi thì nó không có viết lại nữa nha mọi người.
+
+35
+00:03:04,188 --> 00:03:08,528
+Đấy, nó tránh bị trùng với cái chủ đề mà đối thủ đã làm rồi.
+
+36
+00:03:08,528 --> 00:03:10,128
+Rồi.
+
+37
+00:03:10,208 --> 00:03:15,288
+Sau khi chờ đợi một tí thì cuối cùng nó cũng đã lọc ra và bây giờ em sẽ tắt cái tab trình duyệt kia đi nha.
+
+38
+00:03:15,728 --> 00:03:22,328
+Giờ thì nó sẽ thông báo cho mình là đã đọc hết kênh đối thủ nè: họ có 7 video nè, chủ yếu là về ngách phản xạ, IQ 500 và cảm nhận thời gian.
+
+39
+00:03:22,468 --> 00:03:23,668
+Nói chung là cái này nó phân tích thôi.
+
+40
+00:03:24,000 --> 00:03:26,548
+Rồi nó sẽ lưu lại những cái danh sách (`DOI-THU-IFVERSE.txt`).
+
+41
+00:03:26,988 --> 00:03:30,488
+Đây, nó sẽ tạo ra cho em một cái file trong cái folder (`D:\whatifV2\DOI-THU-IFVERSE.txt`) của mình nè.
+
+42
+00:03:30,908 --> 00:03:33,828
+Cái danh sách này là các cái chủ đề mà đối thủ đã làm rồi.
+
+43
+00:03:34,328 --> 00:03:37,508
+Đến lúc mà mình làm video tiếp theo thì nó sẽ lọc lại thôi.
+
+44
+00:03:37,508 --> 00:03:41,680
+Ở dưới là nó sẽ gợi ý cho em 10 chủ đề.
+
+45
+00:03:41,680 --> 00:03:46,720
+Bây giờ nó sẽ khuyến nghị cho em chọn số 1 hoặc số 2.
+
+46
+00:03:46,720 --> 00:03:53,120
+Còn mình có thể chọn số nào, chọn chủ đề nào bất kỳ mình muốn cũng được, chứ không cần phải số 1.
+
+47
+00:03:53,120 --> 00:03:57,508
+Nhưng mà bây giờ thì em sẽ làm theo khuyến nghị của nó luôn: em sẽ chọn số 1 và Enter luôn.
+
+48
+00:03:57,508 --> 00:04:03,508
+Mấy bác chỉ cần ghi số 1 và Enter phát là nó sẽ tự động, nó sẽ viết luôn, nó tự hiểu nha.
+
+49
+00:04:03,508 --> 00:04:05,508
+Mình không cần phải ghi dài dòng đâu mọi người ạ.
+
+50
+00:04:05,508 --> 00:04:16,508
+Đối với phiên bản hướng dẫn V2 này thì thật sự rất là nhàn cho mọi người và mọi người chỉ cần việc phụ thuộc vào chờ đợi con Claude này nó gen thôi.
+
+51
+00:04:16,508 --> 00:04:28,508
+Mấy bác lưu ý là phải xem qua bản hướng dẫn phần làm thô, làm thủ công video hôm trước cho em nha.
+
+52
+00:04:28,508 --> 00:04:31,708
+Mọi người phải xem trước video đó để mọi người hiểu được quy trình.
+
+53
+00:04:31,708 --> 00:04:39,708
+Bởi vì sau này có những cái ngách em chia sẻ cho mọi người và hướng dẫn mọi người làm thì nó có kết hợp cả 2 thứ 2 bên nữa nha.
+
+54
+00:04:39,708 --> 00:04:43,308
+Chứ không phải là nó chỉ phụ thuộc vào cái tự động không như này đâu nha mọi người.
+
+55
+00:04:43,308 --> 00:04:51,308
+Nên là đó là vấn đề em chia ra, em hướng dẫn cho mọi người từ cái cơ bản đơn giản nhất cho đến những cái cao hơn nha.
+
+56
+00:04:51,308 --> 00:04:56,548
+Rồi, khi chờ đợi xong một tí, cuối cùng nó đã gen xong hết toàn bộ kịch bản.
+
+57
+00:04:56,548 --> 00:05:02,108
+Đây là cái về chủ đề là: "What If You Never Needed to Sleep?" (Điều gì xảy ra nếu bạn không bao giờ ngủ?) nè.
+
+58
+00:05:02,108 --> 00:05:05,468
+Đây là cái Part 1, có nghĩa là Part 1 này á,
+
+59
+00:05:05,468 --> 00:05:08,016
+mấy bác hình dung là ví dụ mình làm cái chủ đề này đúng không?
+
+60
+00:05:08,016 --> 00:05:14,016
+Những video sau, mấy bác muốn làm thêm một cái tập nữa, một cái Part 2, một cái phần của chủ đề này nữa,
+
+61
+00:05:14,016 --> 00:05:18,016
+đối với video sau, mọi người tiếp tục gọi cái Part 2 thôi.
+
+62
+00:05:18,016 --> 00:05:20,016
+Còn video này nó để là Part 1 như vậy.
+
+63
+00:05:20,016 --> 00:05:23,016
+Còn mọi người không làm nữa thì mọi người không cần quan tâm.
+
+64
+00:05:23,016 --> 00:05:29,016
+Rồi ở dưới thì nó phân tích ra nhịp câu (`20 dấu "...", 20 câu hỏi, câu trung bình 4,4 từ`), kịch bản này kia thôi.
+
+65
+00:05:29,016 --> 00:05:30,016
+Mọi người có thể đọc qua.
+
+66
+00:05:30,016 --> 00:05:34,016
+Rồi nó sẽ gợi ý cho em là bước tiếp theo cần phải làm gì nè.
+
+67
+00:05:34,016 --> 00:05:44,016
+Bước tiếp theo là import file (`02-VOICE-never-sleep-DGT.txt`) vào tạo voice nè, xong rồi xuất cái MP3 vào, rồi cuối cùng gọi cái skill dựng video (`/lam-video-2d`) làm video lên thôi.
+
+68
+00:05:44,016 --> 00:05:46,016
+Đấy, nó chỉ đơn giản như vậy thôi.
+
+69
+00:05:46,016 --> 00:05:56,556
+Mấy bác đã xem video trước thì mấy bác biết là mình cần phải làm hình ảnh video này kia nó rất là lâu đúng không? Xong rồi đến voice. Còn bây giờ thì cái này chỉ cần voice thôi nha.
+
+70
+00:05:56,936 --> 00:05:59,656
+Rồi em cho mọi người xem qua kịch bản full của nó trước.
+
+71
+00:06:00,796 --> 00:06:03,616
+Đây, ví dụ đây là kịch bản full (`01-SCRIPT-never-sleep.txt`) của nó nha.
+
+72
+00:06:04,716 --> 00:06:09,016
+Đấy, video này thì hơn 6 phút, tầm gần 7 phút mọi người ạ.
+
+73
+00:06:09,576 --> 00:06:12,936
+Còn tiếp tục cái mình quan tâm là cái file này nha, file DGT (`02-VOICE-never-sleep-DGT.txt`) này.
+
+74
+00:06:12,936 --> 00:06:22,836
+Mấy bác bấm vào xem, thì đây nó cũng đã có chú thích là `#1` (thăng 1), `#2` (thăng 2), thăng tới `#6` (thăng 6). Có nghĩa là sẽ gồm 6 giọng, 6 voice nha.
+
+75
+00:06:22,836 --> 00:06:32,000
+Đấy, chỗ này thì nó cũng giống như cái video trước thôi mọi người ạ. Bởi vì cái ngách này thì là cần 6 voice bởi vì 6 nhân vật, hội thoại khác nhau ha.
+
+76
+00:06:32,000 --> 00:06:41,036
+Rồi, em sẽ mở cái tool ElevenLabs (`Dinh Media Auto TTS Subtitles`) của em lên và vẫn như cái hôm trước thôi. Và em đã import sẵn là 6 cái ID voice, 6 cái giọng vào rồi.
+
+77
+00:06:41,036 --> 00:06:45,036
+Và mỗi giọng nó sẽ tương ứng với những cái chỉ số mà em đã đặt nè.
+
+78
+00:06:45,036 --> 00:06:48,036
+`#3` (thăng 3) là ví dụ như là cái giọng số 3 bên này thôi.
+
+79
+00:06:48,036 --> 00:06:49,036
+Đấy.
+
+80
+00:06:49,036 --> 00:06:52,036
+Và tới 6, thì cái này em không giải thích thêm nữa nha.
+
+81
+00:06:52,036 --> 00:06:55,036
+Cái video trước em đã nói khá là chi tiết rồi.
+
+82
+00:06:55,036 --> 00:07:00,036
+Bây giờ thì em sẽ vào, import cái file kịch bản đó vào.
+
+83
+00:07:00,036 --> 00:07:03,036
+Đây, cái file DGT (`02-VOICE-never-sleep-DGT.txt`) này, nó có chú thích nè.
+
+84
+00:07:03,036 --> 00:07:06,036
+Chắc là em sẽ tua nhanh qua cái chỗ tạo giọng đọc này ha.
+
+85
+00:07:06,036 --> 00:07:15,036
+Nếu mà ví dụ như mấy bác mà dùng những cái công cụ khác, những cái tool khác, những cái lồng giọng đọc khác á, miễn sao mọi người ra được những cái voice hội thoại,
+
+86
+00:07:15,036 --> 00:07:23,036
+hoặc là mọi người cho nó một file dài cũng được, miễn sao mà nó có hội thoại đúng với cái ngách, đúng với cái nhu cầu mọi người muốn thôi.
+
+87
+00:07:23,036 --> 00:07:30,276
+Thì import vào thì con Claude nó cũng tự động làm thôi nha. Nó sẽ tự hiểu chứ không cần phải là tool ElevenLabs đâu.
+
+88
+00:07:30,276 --> 00:07:37,024
+Đây nè, mọi người có thể quay lại cái kênh đối thủ này mấy bác xem lại, nghe lại, nó sẽ có rất là nhiều cái giọng ở trong đó đấy.
+
+89
+00:07:37,024 --> 00:07:43,080
+Lúc train thì em đã train rất là kỹ rồi nên là con Claude nó đã báo rất là chính xác nha mọi người.
+
+90
+00:07:43,080 --> 00:07:49,024
+Nên là mình muốn làm giống theo họ thì phải chấp nhận là làm theo kiểu hội thoại giống họ luôn ha.
+
+91
+00:07:49,024 --> 00:07:53,424
+Rồi, sau khi mà đã gen xong voice rồi thì em sẽ vào kiểm tra lại ha.
+
+92
+00:07:53,424 --> 00:07:56,064
+Nó sẽ tự sinh ra một thư mục `voice` này.
+
+93
+00:07:56,064 --> 00:08:01,184
+Trong này nó gồm tất cả các đoạn đã chia ra (`1.mp3`, `2.mp3`...) nha mọi người.
+
+94
+00:08:01,184 --> 00:08:07,424
+Mấy bác có thể nghe lại nha, còn em thì chắc chắn là sẽ được rồi nên là em không cần nghe lại.
+
+95
+00:08:07,424 --> 00:08:10,624
+Mọi người kiểu nghe lại để kiểm tra thử có ok không á.
+
+96
+00:08:10,624 --> 00:08:14,384
+Còn đối với em thì dùng tool này chắc chắn nó sẽ ok rồi mọi người ạ.
+
+97
+00:08:14,384 --> 00:08:23,584
+Thì mọi người có thể thoát ra và mọi người có thể edit lại, chỉnh lại cái tên thư mục thành tên là `voice` cũng được. Còn không thì mọi người để vậy nó cũng tự hiểu.
+
+98
+00:08:23,584 --> 00:08:34,384
+Hôm nay em làm hướng dẫn thì em sẽ hướng dẫn đầy đủ cho mọi người luôn. Thì mấy bác chỉnh lại tên thư mục `voice` này, để khi mà cái con Claude nó đọc cái skill của mình thì nó sẽ dễ hiểu hơn ha.
+
+99
+00:08:34,384 --> 00:08:40,944
+Rồi thì ok, sau khi mà đã có được rồi, bây giờ mình sẽ đi vào dựng, gọi skill làm video (`/lam-video-2d`) nè.
+
+100
+00:08:40,944 --> 00:08:44,744
+Mình làm thôi mọi người, chứ không cần phải cung cấp thêm gì nữa nha.
+
+101
+00:08:44,744 --> 00:08:52,744
+Bây giờ đối với cái chỗ này, em sẽ ghi một câu lệnh là: `dựng video cho project của tôi`.
+
+102
+00:08:52,744 --> 00:08:57,784
+Project thì đây, em sẽ quay lại với cái đường dẫn của mình nè.
+
+103
+00:08:57,784 --> 00:09:00,944
+Đường dẫn của project nè (`projects\01-never-sleep`), copy cái tên dự án của mình nè mọi người.
+
+104
+00:09:00,944 --> 00:09:04,144
+Mấy bác copy dài như vậy cho nó chuẩn nha.
+
+105
+00:09:04,384 --> 00:09:16,384
+Em dán lại nè. Rồi, xong rồi em sẽ ghi thêm một câu nữa là: `voice trong thư mục voice`. Có nghĩa là cái âm thanh của tôi đang để ở trong cái thư mục `voice`. Đấy, như vậy để cho nó hiểu ha.
+
+106
+00:09:16,384 --> 00:09:28,384
+Thường thì mấy bác có thể chạy luôn cũng được, nó cũng sẽ tự động hiểu thôi. Nhưng mà để như này, để tiết kiệm thời gian nó đọc lại thì mình ghi ra như này luôn cho nó nhanh nha mọi người. Đấy, rồi, như này thì mấy bác chỉ cần việc Enter chạy.
+
+107
+00:09:28,384 --> 00:09:35,051
+Nó chạy, và khi chạy, nó sẽ hỏi mình những câu hỏi như này: là kích thước khung hình mình muốn, là ví dụ như em đang
+
+108
+00:09:35,051 --> 00:09:41,717
+dùng làm YouTube đúng không, là `16:9 · 1080p (Recommended)`, đương nhiên em sẽ chọn `16:9` rồi; và cái thứ 2 là cái nhạc nền và cái hiệu ứng âm thanh (`SFX`),
+
+109
+00:09:41,717 --> 00:09:51,300
+thì đương nhiên em sẽ chọn là `Tự tạo nhạc + SFX (Recommended)` nè, cái khuyến nghị đầu tiên recommend của nó nè, nó khuyến nghị gửi cho mình thì mình cũng chọn theo cái đề xuất của nó luôn nha.
+
+110
+00:09:51,300 --> 00:10:00,000
+Xong rồi mình chỉ cần việc đợi nó gen thôi nha mọi người. Thì cái cách làm phiên bản 2 này á, thì em cũng giải thích luôn cho mấy bác để rõ chi tiết
+
+111
+00:10:00,000 --> 00:10:03,000
+về nó có ưu điểm và nhược điểm như thế nào nhé.
+
+112
+00:10:03,000 --> 00:10:06,400
+Về ưu điểm, như mấy bác cũng đã thấy là
+
+113
+00:10:06,400 --> 00:10:12,060
+đối với bản này, mọi người không cần tốn quá nhiều thời gian cũng như là tiền tài nguyên
+
+114
+00:10:12,060 --> 00:10:15,800
+đầu tư vào công cụ tạo ảnh như Flow,
+
+115
+00:10:15,800 --> 00:10:18,860
+mọi người phải mất thời gian tốn tiền credit
+
+116
+00:10:18,860 --> 00:10:21,760
+đi tạo ảnh, tạo video, rất rất là tốn thời gian luôn.
+
+117
+00:10:21,760 --> 00:10:24,560
+Rất là mất công đúng không?
+
+118
+00:10:24,560 --> 00:10:28,460
+Cái này thì mọi người chỉ cần việc tạo voice thôi, tạo giọng đọc thôi,
+
+119
+00:10:28,460 --> 00:10:35,140
+và sau đó mọi người gọi skill nó chạy. Đó là về cái ưu điểm của nó. Còn về cái nhược điểm thì cái này
+
+120
+00:10:35,140 --> 00:10:41,820
+nó sẽ chạy phụ thuộc vào cái cấu hình máy của mấy bác. Ví dụ như máy mọi người cấu hình cao mạnh thì nó sẽ chạy
+
+121
+00:10:41,820 --> 00:10:48,460
+nhanh. Còn mọi người máy yếu thì đương nhiên mọi người sẽ đợi nó chạy lâu nha, chạy khá là lâu luôn ấy đối với hiện tại.
+
+122
+00:10:48,460 --> 00:10:54,600
+Em đang dùng máy PC của em, nó chạy tốt hơn, nhanh hơn máy MacBook của em nha mọi người.
+
+123
+00:10:54,600 --> 00:10:58,460
+Đấy, những cái ưu nhược điểm em nói để cho mấy bác rõ được.
+
+124
+00:10:58,460 --> 00:11:10,820
+Thì nói chung là lâu thì mấy bác cũng phải đợi thôi, tầm 1–2 tiếng nha mọi người. Đối với video tầm 7 phút thì khoảng thời gian đối với máy em nha,
+
+125
+00:11:10,820 --> 00:11:22,460
+hiện tại em đang test hôm bữa giờ thì đối với máy em video tầm 7 phút thì đợi tầm hơn 1 tiếng 40–50 phút nha mọi người: 1 giờ 50 phút, gần 2 tiếng nha mọi người.
+
+126
+00:11:22,460 --> 00:11:26,720
+Đấy, đó là em nói chi tiết rõ để mấy bác có thể nắm được.
+
+127
+00:11:26,720 --> 00:11:30,520
+Nói chung cái việc này đã nhàn mà, mình đợi nó gen thôi.
+
+128
+00:11:30,520 --> 00:11:33,260
+Trong lúc mà đợi thì mấy bác làm việc khác thôi.
+
+129
+00:11:33,260 --> 00:11:34,260
+Có gì đâu đúng không?
+
+130
+00:11:34,260 --> 00:11:39,600
+Còn một cái nữa đặc biệt là cái này nó không có tốn nhiều token của mọi người như mọi người nghĩ đâu nha.
+
+131
+00:11:39,600 --> 00:11:43,020
+Nhiều bác cứ nghĩ là nó sẽ đốt token của mọi người rất là nhiều đúng không?
+
+132
+00:11:43,020 --> 00:11:43,620
+Nhưng mà không.
+
+133
+00:11:43,620 --> 00:11:47,460
+Cái này nó chỉ tốn là tốn nhiều thời gian của mọi người đợi thôi.
+
+134
+00:11:47,460 --> 00:11:51,560
+Chứ còn về cái token thì nó không có tốn bao nhiêu cả.
+
+135
+00:11:51,560 --> 00:12:01,120
+Để tí nữa, xong cái demo hướng dẫn này á, thì em sẽ mở cái phiên làm việc vừa rồi cho mấy bác xem thử nó đốt bao nhiêu token nha, và nó chiếm bao nhiêu phần trăm nha.
+
+136
+00:12:01,120 --> 00:12:07,760
+Đấy, chút em cho mọi người thấy cái thực tế luôn. Thật sự nó đốt rất là ít, nó không có nhiều như mấy bác nghĩ đâu.
+
+137
+00:12:07,760 --> 00:12:18,300
+Và khi chạy, khi đợi nó gen, thì mọi người nhớ để ý nha: nó sẽ chạy đến cái đoạn và nó sẽ có một cái gợi ý, nó hỏi cho mình là nó sẽ cho một cái ảnh demo (`Style never sleep.JPG`) ở bên phải này,
+
+138
+00:12:18,300 --> 00:12:26,280
+và có một câu hỏi là mình muốn chọn kiểu như style phong cách cái màu nền nào mọi người, màu cho cái video của mình đó.
+
+139
+00:12:26,620 --> 00:12:31,280
+Thì ở trên này nó có recommend là màu đêm xanh nè, đêm xanh đèn vàng ấm (`Dusk (Recommended)`) nè.
+
+140
+00:12:31,560 --> 00:12:35,008
+Thì em sẽ chọn với cái recommend, cái khuyến nghị của nó luôn nha.
+
+141
+00:12:35,008 --> 00:12:40,008
+Còn lại mọi người nếu muốn màu khác (`Midnight`, `Golden`, `Storybook`) thì mấy bác có thể chọn những câu ở dưới thôi.
+
+142
+00:12:40,008 --> 00:12:44,008
+Mọi người tích vào, rồi tiếp tục nó sẽ gen tiếp, mình đợi tiếp ha.
+
+143
+00:12:44,008 --> 00:12:49,008
+Cái ảnh bên phải là nó gợi ý nó hiện ra để cho mình thấy được,
+
+144
+00:12:49,008 --> 00:12:52,008
+so sánh giữa 4 cái màu nó đề xuất nha mọi người.
+
+145
+00:12:52,008 --> 00:12:58,760
+Thì vừa rồi em chọn cái màu đầu tiên là `Dusk` gì đây nè, là cái màu nền đêm xanh và cái đèn vàng ha.
+
+146
+00:12:58,760 --> 00:13:03,120
+Tiếp tục chạy một lúc nữa thì nó sẽ cho ra một cái demo 30 giây (`Preview never sleep 30s.MP4`),
+
+147
+00:13:03,120 --> 00:13:13,008
+và nó sẽ hỏi mình là bạn xem cái bản demo 30 giây này xem thử thấy ổn không, ok chưa, và có cần chỉnh gì không thì nó sẽ chỉnh, còn không thì nó sẽ làm tiếp.
+
+148
+00:13:13,008 --> 00:13:17,980
+Rồi, bây giờ thì em sẽ cùng với mấy bác để xem cái demo 30 giây này thử như nào nha.
+
+149
+00:13:18,000 --> 00:13:25,760
+Most people sleep about eight hours a night. That's one-third of your life. Around 26 years... with your eyes closed.
+
+150
+00:13:25,760 --> 00:13:36,080
+Some rare people, with a lucky gene, feel fine on six. The world record for staying awake? 264 hours. Set in 1964. Eleven days.
+
+151
+00:13:36,080 --> 00:13:41,380
+You? Zero hours of sleep. Not one minute. Ever. So what if you never needed to sleep?
+
+152
+00:13:41,740 --> 00:13:47,800
+Amazing. And awful. Usually both at once. Your name is Theo. You're sixteen. Tonight...
+
+153
+00:13:48,000 --> 00:13:52,820
+Đấy, như mấy bác vừa xem với em xem thì thật sự thấy nó rất là đẳng cấp và rất là VIP đúng không?
+
+154
+00:13:53,260 --> 00:13:58,380
+Rất là xịn so với cái bản hướng dẫn hôm trước, cái bản V1 hôm trước mình làm thủ công đúng không mọi người?
+
+155
+00:13:58,860 --> 00:14:05,100
+Đấy, thì đó là cái vấn đề là chất lượng và phụ thuộc vào mỗi cách làm khác nhau ấy mọi người.
+
+156
+00:14:05,520 --> 00:14:14,960
+Đấy, bởi vậy nói chung á, cái này nó còn tùy thuộc vào mỗi ngách khác nhau nữa chứ không phải ngách nào cũng áp dụng theo cái kiểu tự động hóa không như này đâu nha mọi người.
+
+157
+00:14:14,960 --> 00:14:28,000
+Đó là lý do tại sao em nói mấy bác cứ xem cái bản kia trước. Hôm sau em sẽ có vài ngách có kết hợp cả 2 lại với nhau, thì lúc đó em hướng dẫn mọi người thì mọi người sẽ hiểu hơn và hình dung ra được rất là dễ dàng thôi.
+
+158
+00:14:28,000 --> 00:14:36,000
+Ok nha mọi người. Thì bây giờ em sẽ bấm chọn là `Ổn, xuất tiếp (Recommended)`: cái demo đã ổn rồi, bạn hãy làm tiếp đi nha.
+
+159
+00:14:36,000 --> 00:14:43,520
+Cái này thì mình không cần sửa gì nữa. Đến cái chỗ mà sau khi mà trả lời cái phần demo 30 giây này xong rồi, thì mấy bác chỉ cần việc
+
+160
+00:14:43,520 --> 00:14:51,000
+chờ đợi một lúc nữa thôi thì nó sẽ gen ra xong nha. Lúc này thì mình không cần trả lời, không còn câu hỏi gì nữa đâu mọi người ạ.
+
+161
+00:14:51,000 --> 00:14:55,008
+Đến khi mà xong thì nó sẽ xuất cho mình một cái file luôn.
+
+162
+00:14:55,008 --> 00:15:02,520
+Đấy. Rồi ok, bây giờ thì em sẽ tua nhanh qua cái đoạn này nha để tiết kiệm thời gian mọi người ạ.
+
+163
+00:15:04,848 --> 00:15:10,928
+Rồi, sau khi chờ đợi gần 2 tiếng đồng hồ, chính xác là 1 giờ 50 mấy phút luôn đấy mọi người,
+
+164
+00:15:11,308 --> 00:15:13,116
+thì cuối cùng nó đã tạo ra cho em này.
+
+165
+00:15:13,116 --> 00:15:21,316
+Nó đã dựng xong, có thông báo video chất lượng là 1080p, độ dài là 6 phút 11 giây.
+
+166
+00:15:21,316 --> 00:15:28,100
+Nói chung, lúc đầu nó ước lượng gần 7 phút thì cũng đúng thôi mọi người, tùy vào kịch bản nha.
+
+167
+00:15:28,520 --> 00:15:35,000
+Còn lúc mà mình làm voice, mình bỏ vào rồi nó edit này kia nữa, nó sẽ rút gọn lại, hoặc là nó có
+
+168
+00:15:35,000 --> 00:15:42,100
+phình to ra thì nói chung cái đó là đương nhiên nó sẽ xảy ra rồi, nhưng mà không biết cái tỷ lệ như nào thôi.
+
+169
+00:15:42,560 --> 00:15:48,000
+Cái đó thì nói chung mình không cần quan tâm lắm đâu mọi người. Rồi, ở dưới thì nó báo cáo cho mình là nó đã làm như
+
+170
+00:15:48,000 --> 00:15:54,800
+thế nào thôi. Về cái phần cuối ở dưới này nó thông báo cho mình là: "Bộ dựng có hai lỗi nhỏ, mình đã sửa...".
+
+171
+00:15:54,800 --> 00:15:58,500
+Nói chung có lỗi nào thì mọi người cứ yên tâm, nó fix rồi nó báo cho mình thôi.
+
+172
+00:15:58,500 --> 00:16:04,500
+Ví dụ như hiện tại là cái vừa rồi thì nó có 2 lỗi là lông mày ("giận" và "lo lắng") với cái gì đó,
+
+173
+00:16:04,500 --> 00:16:10,000
+và cái chữ text "Dr." ấy mọi người, bị sao lệch gì đó thì nó cũng đã fix cho em rồi,
+
+174
+00:16:10,000 --> 00:16:16,180
+và nó cũng sửa lại trong cái plugin gốc rồi, thì em cũng sẽ cập nhật cái mới nhất và cái chuẩn nhất cho mọi người lên Drive thôi.
+
+175
+00:16:16,180 --> 00:16:17,300
+Mấy bác yên tâm ha.
+
+176
+00:16:17,300 --> 00:16:21,100
+Bây giờ thì em sẽ tải cái video chất lượng 1080p (`never-sleep-final.mp4`) này về,
+
+177
+00:16:21,100 --> 00:16:24,000
+và em sẽ mở cho mọi người xem cùng demo với em nha.
+
+178
+00:16:24,000 --> 00:16:28,900
+Đây, đây là cái video bản demo 30 giây của em lúc nãy nè, và cái ảnh phân tích (`Style never sleep.JPG`) nè,
+
+179
+00:16:28,900 --> 00:16:33,040
+rồi cuối cùng là cái video full vừa rồi nó vừa xuất ra nè.
+
+180
+00:16:33,040 --> 00:16:43,560
+Thì bây giờ mấy bác cùng với em xem hết cái demo này. Mọi người nhớ xem cái phần cuối, em sẽ show cho mấy bác thấy được cái độ tốn token của nó là bao nhiêu nha.
+
+181
+00:16:43,560 --> 00:16:47,880
+Còn nếu mọi người không xem hết demo thì mọi người có thể tua qua thôi.
+
+182
+00:16:47,880 --> 00:16:54,760
+Demo này thì nó dài tầm 6 phút, thì em sẽ giữ nguyên 6 phút em không cắt để cho mọi người thấy được cái chất lượng nó như nào thôi.
+
+183
+00:16:54,760 --> 00:16:58,000
+Đấy, rồi ok, bây giờ thì em sẽ mở lên xem nhé.
+
+184
+00:16:58,000 --> 00:17:02,280
+Most people sleep about eight hours a night. That's one-third of your life.
+
+185
+00:17:02,640 --> 00:17:10,180
+Around 26 years... with your eyes closed.
+
+186
+00:17:10,700 --> 00:17:13,620
+Some rare people, with a lucky gene, feel fine on six.
+
+187
+00:17:14,100 --> 00:17:20,480
+The world record for staying awake? 264 hours. Set in 1964. Eleven days.
+
+188
+00:17:20,480 --> 00:17:27,483
+You? Zero hours of sleep. Not one minute. Ever. So what if you never needed to sleep?
+
+189
+00:17:27,483 --> 00:17:33,649
+Amazing. And awful. Usually both at once. Your name is Theo. You're sixteen. Tonight, like every
+
+190
+00:17:33,649 --> 00:17:39,816
+night, the house goes dark at ten. Mom yawns. Your little sister Mia yawns. You... don't.
+
+191
+00:17:40,076 --> 00:17:40,796
+Good night, Theo.
+
+192
+00:17:41,316 --> 00:17:41,996
+Night, Mia.
+
+193
+00:17:42,356 --> 00:17:43,016
+She means it.
+
+194
+00:17:43,076 --> 00:17:43,796
+You just nod.
+
+195
+00:17:44,196 --> 00:17:45,856
+Because for you, there's no night.
+
+196
+00:17:46,016 --> 00:17:47,616
+There's just... more day.
+
+197
+00:17:48,056 --> 00:17:48,876
+Here's how it works.
+
+198
+00:17:49,336 --> 00:17:53,076
+When you're awake, a chemical called adenosine builds up in your brain.
+
+199
+00:17:53,076 --> 00:17:56,220
+The more it piles up, the sleepier you feel.
+
+200
+00:17:56,220 --> 00:17:58,600
+Coffee works by blocking it.
+
+201
+00:17:58,600 --> 00:18:03,200
+Your adenosine? It never piles up. Not once. So coffee is useless.
+
+202
+00:18:03,200 --> 00:18:05,000
+It's just hot bean water.
+
+203
+00:18:05,000 --> 00:18:09,120
+And here's the rule. You never need to sleep. But you also can't.
+
+204
+00:18:09,120 --> 00:18:12,120
+Not even if you try. Not even if you want to.
+
+205
+00:18:12,120 --> 00:18:19,000
+People kept awake too long start having microsleeps. Tiny naps, a few seconds long, that they don't even notice.
+
+206
+00:18:19,000 --> 00:18:21,140
+You? Never. Not one.
+
+207
+00:18:21,140 --> 00:18:24,860
+Plus: eight extra hours. Every single day.
+
+208
+00:18:24,860 --> 00:18:32,024
+You learned guitar in a month. Spanish in three. Your homework is done by midnight. Your sister's homework too.
+
+209
+00:18:32,024 --> 00:18:33,320
+Did you do my math?
+
+210
+00:18:33,640 --> 00:18:35,560
+It's 2 a.m. What else would I do?
+
+211
+00:18:35,560 --> 00:18:45,000
+Minus: at 2 a.m., everyone you love is unconscious. The fridge hums. The clock ticks.
+
+212
+00:18:45,000 --> 00:18:54,260
+You've counted the ceiling tiles: 412. Twice. Plus: your brain stays clean. Normally, sleep is when the brain flushes out its waste.
+
+213
+00:18:54,260 --> 00:19:01,320
+Scientists watched it happen in mice in 2013, fluid rushing through, like a night shift of tiny janitors.
+
+214
+00:19:01,320 --> 00:19:06,000
+Your janitors? They work days too. While you're still using the room.
+
+215
+00:19:06,000 --> 00:19:09,920
+Minus: you have never dreamed. Not once.
+
+216
+00:19:09,920 --> 00:19:12,404
+Every morning, Mia tells you hers.
+
+217
+00:19:12,744 --> 00:19:17,364
+I was a dolphin! Dolphins sleep with half their brain! Did you dream?
+
+218
+00:19:17,864 --> 00:19:19,164
+I watched the microwave clock.
+
+219
+00:19:19,464 --> 00:19:19,784
+Again?
+
+220
+00:19:20,200 --> 00:19:25,220
+That half-brain thing is real, by the way. Dolphins really do it. You can't even do that.
+
+221
+00:19:25,580 --> 00:19:36,920
+Plus: you see the world nobody sees. The baker at four, the street sweeper at five, and every night at exactly three, your neighbor Sam's porch light blinks.
+
+222
+00:19:36,920 --> 00:19:48,000
+Three times. Sam is eighty-one. He doesn't sleep much either. Three blinks means all good. You blink your desk lamp back. Every night. For six years.
+
+223
+00:19:48,000 --> 00:19:58,000
+Minus: hiding it. When you were eight, Mom took you to a sleep lab. Dr. Lee stayed up with you for three nights. He drank nine coffees. You drank milk.
+
+224
+00:19:58,000 --> 00:20:02,000
+Fascinating. Could I keep him... for a year?
+
+225
+00:20:02,000 --> 00:20:06,720
+Absolutely not. So you hide. At sleepovers, you
+
+226
+00:20:06,720 --> 00:20:13,360
+lie still with your eyes closed for seven hours. Seven hours is very long.
+
+227
+00:20:13,360 --> 00:20:20,900
+Your friend Jake snores like a leaf blower. You know exactly when. You keep a chart. And your family hides it with you.
+
+228
+00:20:20,900 --> 00:20:25,460
+Mom leaves soup in the fridge, with a note, for your 3 a.m.
+
+229
+00:20:25,460 --> 00:20:29,160
+Mia leaves her door open, so the house feels less empty.
+
+230
+00:20:29,160 --> 00:20:31,520
+Mom never tells anyone. Ever.
+
+231
+00:20:31,520 --> 00:20:36,540
+Then, one evening, Dr. Lee calls. Theo. I have something new.
+
+232
+00:20:36,540 --> 00:20:42,760
+One tablet. It might let you sleep. Just once. Eight hours.
+
+233
+00:20:42,760 --> 00:20:45,040
+Would I... dream? Maybe.
+
+234
+00:20:45,040 --> 00:20:53,360
+That night, you hold the tablet. Tiny. White. Your first dream. Maybe you'd fly. Maybe you'd be a dolphin.
+
+235
+00:20:53,360 --> 00:20:59,080
+It's 2:59. You lift the glass of water. And out of habit, you look out the window.
+
+236
+00:20:59,200 --> 00:21:05,873
+Three o'clock. Sam's porch light doesn't blink. You wait. 3:01. Nothing. His kitchen light is on. And through
+
+237
+00:21:05,873 --> 00:21:12,547
+the window, Sam is on the phone. Shaking. The dream... or the neighbor? You put the tablet down.
+
+238
+00:21:12,547 --> 00:21:19,200
+Somebody has to stay awake. You knock on Sam's door. He opens it, phone still at his ear.
+
+239
+00:21:19,200 --> 00:21:26,560
+Theo? It's the police. Ava's in jail. My granddaughter. They need bail.
+
+240
+00:21:26,560 --> 00:21:38,480
+A voice on the speaker. Calm. Cold. Sir, $5,000 in gift cards. And don't call her parents. It only makes things worse.
+
+241
+00:21:38,480 --> 00:21:48,893
+Gift cards. At 3 a.m. Here's the truth: real police never ask for gift cards. Real banks never do either.
+
+242
+00:21:48,893 --> 00:21:57,050
+If someone tells you to keep it from your family, hang up. Then call your family, on the number you already know. Ava's number is on Sam's fridge. You call. It rings. Once. Twice.
+
+243
+00:21:57,450 --> 00:22:02,570
+Hello... Theo? It's three in the morning! Ava. Are you in jail? What? I'm in bed!
+
+244
+00:22:03,110 --> 00:22:08,070
+Sam hears it. He stares at his phone. And he hangs up. Hello? Sir? Sir?
+
+245
+00:22:08,070 --> 00:22:18,793
+Click. The next day, police traced the number. The caller called himself Officer Black. He had called 11 homes on your street that night, every one of them at 3 a.m.
+
+246
+00:22:18,893 --> 00:22:24,393
+Sam brings over a plate of cookies. Ava calls him every night now, at 9, not 3.
+
+247
+00:22:24,393 --> 00:22:31,250
+That evening, Mia hands you a drawing: a boy with a guitar, floating in the sea, next to a dolphin.
+
+248
+00:22:31,250 --> 00:22:36,290
+That's my dream from last night. You were in it. So now, you have one too.
+
+249
+00:22:36,290 --> 00:22:40,893
+You never took the tablet. Dr. Lee asks you why. Somebody has to stay awake.
+
+250
+00:22:40,893 --> 00:22:47,566
+3 a.m. Sam's porch light blinks. 1, 2, 3. All good. You blink back. But one thing keeps you
+
+251
+00:22:47,566 --> 00:22:54,240
+up. Not that you sleep anyway. The man on the phone called every night at 3. He never yawned.
+
+252
+00:22:54,240 --> 00:23:00,893
+He never slowed down. Who calls at 3 a.m. every night and never sounds tired? Someone else out there...
+
+253
+00:23:00,893 --> 00:23:02,613
+doesn't sleep either.
+
+254
+00:23:02,973 --> 00:23:05,353
+So what would you do with eight extra hours every night?
+
+255
+00:23:05,653 --> 00:23:07,813
+Tell us what you'd do at 3 a.m. in the comments.
+
+256
+00:23:07,813 --> 00:23:12,765
+And if you'd have put the tablet down too, hit like and subscribe for Part 2.
+
+257
+00:23:12,785 --> 00:23:21,000
+Rồi, mọi người thấy không, phần cuối này nó có để là mình kêu gọi đăng ký, comment và có thể ra Part 2 là cái phần 2 á mọi người.
+
+258
+00:23:21,000 --> 00:23:28,126
+Đó là lý do tại sao lúc nãy viết kịch bản nó ghi là nó chú thích là Part 1 (phần 1) á mọi người. Đấy, rồi.
+
+259
+00:23:28,126 --> 00:23:40,126
+Thì mấy bác xem video demo mọi người thấy nó làm rất là đỉnh không? Rất là giống kênh đối thủ luôn đúng không? Thì ở đây, ở phần cuối là có cái thumb (`Never sleep thumbnail.PNG`) nữa nè, nó tạo ra cho em một cái thumb luôn. Mọi người thấy ok không?
+
+260
+00:23:40,126 --> 00:23:50,126
+Còn nếu mấy bác muốn làm ảnh thumb khác hay không thích thì mọi người cứ yêu cầu nó làm lại thôi, không có gì hết á, nhưng mà em thấy khá là hợp lý rồi đó, rất là xịn luôn nha.
+
+261
+00:23:50,126 --> 00:23:56,126
+Cuối cùng thì bây giờ em sẽ mở cái Settings -> Usage lên để cho mọi người xem nè.
+
+262
+00:23:56,126 --> 00:24:02,806
+Đây, cái phiên vừa rồi (`Current session`) thì gói Max 100$ ha, chỉ tốn `1% used` thôi. Cái ở dưới này (`This week: 11% used`) là cả tuần nha mọi người.
+
+263
+00:24:02,806 --> 00:24:09,486
+Còn ở dưới này thì model `Fable` (`0% used`) em không có dùng. Lúc nãy giờ em dùng model là `Opus 5.5` nha. Và cái phiên làm việc lúc vừa rồi thì
+
+264
+00:24:09,486 --> 00:24:15,440
+chỉ tốn 1% token thôi. Mấy bác thấy kinh không? Rất rất là ít luôn.
+
+265
+00:24:15,440 --> 00:24:21,680
+Còn cái chính giữa là cái trong tuần (`This week`) nha. Lúc mà em làm video này thì là tối thứ Tư nha mọi người,
+
+266
+00:24:21,680 --> 00:24:25,760
+thì trước đó em làm rất là nhiều việc nên là nó trừ 11% đó, mấy bác đừng có quan tâm.
+
+267
+00:24:25,760 --> 00:24:30,678
+Mấy bác quan tâm là cái phiên làm việc đầu tiên (`Current session`) kia nè, nó chỉ tốn, nó đốt cho em có 1% thôi.
+
+268
+00:24:30,678 --> 00:24:37,678
+Và cái này là đối với em đang dùng gói Max là 100$/tháng nha mọi người. Còn mấy bác dùng gói Pro thì mấy bác có thể tự test xem.
+
+269
+00:24:37,678 --> 00:24:43,678
+Nhưng mà em chắc chắn đảm bảo rằng nó không có đốt nhiều. Mấy bác thấy không, nó chỉ đốt 1% như thế là rất là ít rồi.
+
+270
+00:24:43,678 --> 00:24:51,678
+Em làm rất là nhiều thứ trước giờ rồi, em so sánh được và em thấy được cái 1% này là rất rất là ít nha, chứ không có nhiều như mọi người nghĩ đâu.
+
+271
+00:24:51,678 --> 00:24:58,678
+Thường thì đầu vào mấy bác thấy ra được video rất là xịn như thế, mọi người cứ nghĩ là nó gen ra sẽ tốn nhiều token đúng không?
+
+272
+00:24:58,678 --> 00:25:08,918
+Nhưng mà em thấy rất là bình thường nha. Cái quan trọng em nhắc lại là cái này nó sẽ gen video rất là lâu và tùy thuộc vào cái cấu hình máy của mọi người nữa nha.
+
+273
+00:25:09,398 --> 00:25:18,078
+Rồi ok, em cảm ơn tất cả mọi người đã xem video đến đây. Thì cái video này là về cái ngách What If mà em đã làm 2 phiên bản.
+
+274
+00:25:18,078 --> 00:25:23,110
+Phiên bản 1 là cách làm thô thủ công mà mấy bác nên xem qua để biết được quy trình.
+
+275
+00:25:23,110 --> 00:25:26,990
+Và cái này là phiên bản tự động, tự động hóa luôn nha mọi người.
+
+276
+00:25:26,990 --> 00:25:31,678
+Sau này có những cái ngách mới thì em sẽ tiếp tục chia sẻ hướng dẫn mọi người sau nha.
+
+277
+00:25:31,678 --> 00:25:34,678
+Rồi, em cảm ơn tất cả mọi người đã xem video đến đây.
+

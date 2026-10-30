@@ -1,0 +1,79 @@
+{
+  "sku": "VIDEO-4a5aac",
+  "title": "SHARE NGÁCH REUP VIETSUB MỚI NHẤT CỰC TRENDS, VIEW QUÁ KHIẾP - RẤT ÍT CẠNH TRANH VÀ SHARE NGUỒN GỐC ĐỂ LÀM - UPDATE 30-03-2026",
+  "actual_topic": "SHARE NGÁCH REUP VIETSUB MỚI NHẤT CỰC TRENDS, VIEW QUÁ KHIẾP - RẤT ÍT CẠNH TRANH VÀ SHARE NGUỒN GỐC ĐỂ LÀM - UPDATE 30-03-2026",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Reup & Khai Thác Hoạt Hình",
+  "niche_id": "faceless-general",
+  "target_market": "Trung Quốc",
+  "market_code": "CN",
+  "key_takeaways": [
+    "Tác giả cho xem một kênh ngách phim mới có hơn 40 video, view rất cao, có video hơn 100.000 view và mỗi ngày đăng hai đến ba video.",
+    "Kênh đối thủ này lập từ ngày 14 tháng 3, 2026, dùng mail mới để lập kênh chứ không dùng kênh cổ, và khi setting vẫn phải làm theo như đã hướng dẫn.",
+    "Muốn tìm nguồn thì copy tiêu đề video, dịch sang tiếng Trung rồi dán vào tìm kiếm, sẽ ra rất nhiều kênh tương tự và cần lọc ra những kênh gốc.",
+    "Có thể đăng nhập để xem được nhiều video hơn, và sort, tìm kiếm thêm ở Bilibili để kiếm thêm kênh đối thủ.",
+    "Kênh đối thủ làm nhiều phim khác nhau chứ không phải một phần nhiều tập, và tác giả để link trong mô tả, cam kết liên tục update và share thêm kênh."
+  ],
+  "edit_sop": {
+    "primary": "Tìm nguồn phim gốc tiếng Trung để reup vietsub từ kênh đối thủ",
+    "additional": [
+      "Copy tiêu đề video đối thủ, dịch sang tiếng Trung rồi dán vào tìm kiếm để ra nhiều kênh tương tự",
+      "Lọc ra những kênh gốc trong kết quả tìm kiếm để lấy nguồn video chuẩn",
+      "Đăng nhập để xem được nhiều video hơn của kênh gốc",
+      "Có thể sort và tìm kiếm thêm kênh đối thủ bên Bilibili",
+      "Kênh mẫu được lập mới bằng mail, không dùng kênh cổ"
+    ]
+  },
+  "avoid_flags": [
+    "Khi dán tiêu đề tiếng Trung vào thanh tìm kiếm sẽ ra rất nhiều kênh làm lại nên phải chú ý lọc đúng kênh gốc chứ không lấy nhầm kênh đăng lại",
+    "Không bắt buộc phải tìm mua kênh cổ mới làm được vì kênh đối thủ mẫu hoàn toàn dùng thư điện tử mới để lập kênh mà vẫn nổ lượt xem cao"
+  ],
+  "tools_mentioned": [
+    "Bilibili",
+    "Douyin",
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@keodeovietsub"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Tổng quan nội dung bài giảng và mục tiêu thực hành"
+    },
+    {
+      "time": "01:14",
+      "seconds": 74,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "01:39",
+      "seconds": 99,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "02:21",
+      "seconds": 141,
+      "label": "Phương pháp tìm kiếm từ khóa và đào sâu vào các ngách nhỏ"
+    },
+    {
+      "time": "02:53",
+      "seconds": 173,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-4a5aac/transcript.txt",
+  "verified_expert_summary": true,
+  "sop_steps": [
+    "Copy tiêu đề video đối thủ, dịch sang tiếng Trung rồi dán vào tìm kiếm để ra nhiều kênh tương tự",
+    "Lọc ra những kênh gốc trong kết quả tìm kiếm để lấy nguồn video chuẩn",
+    "Đăng nhập để xem được nhiều video hơn của kênh gốc",
+    "Có thể sort và tìm kiếm thêm kênh đối thủ bên Bilibili",
+    "Kênh mẫu được lập mới bằng mail, không dùng kênh cổ"
+  ]
+}

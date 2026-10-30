@@ -1,0 +1,1834 @@
+{
+  "sku": "VIDEO-177e62",
+  "duration": 1224.3,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 228,
+  "full_text": "Phương pháp xây dựng kênh YouTube mà không cần nhiều thời gian làm việc, 1 ngày trên 1 tuần là đủ. Bạn không cần giỏi công nghệ, không cần giỏi kỹ năng làm video hay là bạn cũng không cần phải ngoại hình đẹp. Tháp hành vi thì chúng ta sẽ cùng nhau nói chuyện với nhau về cái tháp hành vi này trước Khi mà chúng ta nói chuyện với cái tháp hành vi này sau rồi chúng ta sẽ biết được đâu là cái công việc quan trọng, đâu là công việc này Công việc nó bớt quan trọng hơn để chúng ta làm. Thường thì chúng ta sẽ có cái là khi mà chúng ta làm thì chúng ta sẽ đi từ bên phải sang bên trái này. Giả sử ở dưới này chúng ta sẽ có những nền tảng môi trường, có YouTube, TikTok, Google, ví dụ thế chẳng hạn. Thường là mọi người sẽ bắt đầu đi từ đây. Thế mình cần phải làm thế nào, mình làm thế nào, mình làm ở đâu, Ừ thế mình làm phát triển nội dung ở YouTube rồi, thế mình làm cái gì? Mình làm cái gì? Mình làm như thế nào? Mình sản xuất video như thế nào? Mình quay dựng như thế nào? Mình viết content như thế nào? Mình SEO, up như thế nào đúng không ạ? Đa số các bạn sẽ đặt ra cái câu hỏi đấy như vậy trước. Nhưng mà cái câu hỏi đúng mà mình đặt ra, đầu tiên mình phải rõ được cái mục đích. Bạn muốn xây YouTube để làm gì? Tại sao bạn lại cần phải xây YouTube? Mục đích xây kênh là gì? Định hướng của các bạn là gì? Khi mà bạn phải rõ ràng được cái lý do tại sao bạn bắt đầu rồi ạ, thì bạn sau này bạn đi nó mới nhanh được. Chứ còn à, có YouTube đấy cứ lên làm đi, SEO, up đi, làm video đi. Thì rất là nhiều người chia sẻ cho các bạn như vậy, nhưng mà chính vì như vậy là mọi người bắt đầu loay hoay. Là một vài chục video mà không có kết quả, hoặc là một vài, thậm chí có những người kiên trì làm đến hàng trăm video mà vẫn không ra kết quả thì lúc đấy bắt đầu bị vấn đề. Và lúc đấy mới bắt đầu cảm thấy là à, nó sai sai. Nên là bị mất niềm tin. Thế từ mất niềm tin đấy thì mới bắt đầu bỏ cuộc. Thì khi mà chúng ta đặt cái câu hỏi là chúng ta làm thế nào thì chúng ta sẽ bế tắc bởi vì khả năng của chúng ta có hạn đúng không ạ? Các bạn có đồng ý với mình là khả năng của chúng ta có hạn đúng không ạ? Thế chúng ta phải rõ ràng được là à chúng ta mong muốn gì? Tại sao chúng ta làm cái đấy? Và ai là người có thể hỗ trợ được chúng ta? Đây này cái câu này. Ai là người có thể hỗ trợ được chúng ta? Nó rất là quan trọng nhé. Khi mà có YouTube, Facebook, TikTok, Google Thì những câu hỏi bế tắc là Câu hỏi là Cần những kỹ năng gì Mình cần phải làm cái gì Mình cần phải làm ở đâu Mình cần phải làm như thế nào Ai là người quay Ai là người viết content SEO, up làm thế nào để có nhiều view? Qua khó. Một người để làm tất cả những cái việc đấy thì mất rất là nhiều thời gian. Thay vì việc như vậy thì mình phải đặt câu hỏi khác. Câu hỏi ai? Ai là người có kỹ năng đấy? Ai là người làm được việc đó? Và ai là người có thể hỗ trợ bạn làm được cái việc đấy? Nó sẽ thay đổi hoàn toàn đấy ạ. Cái đằng này là cái mà mình tự làm hết. Thì tức làm hết thì đến lúc mà mình không làm được thì nó bế tắc thế thôi. Còn bên này là mình đặt câu hỏi là ai? Ai có thể hỗ trợ được kỹ năng đấy? Ai thuê? Mình có thể thuê được làm việc đấy. Các bạn đã bắt đầu thấy nó vỡ ra chưa ạ? Mình chỉ tập trung vào những cái việc mà nó quan trọng nhất thôi. Nên là mình sẽ đến với các bước mà khi mà làm triển khai một kênh YouTube. Đó là đầu tiên các bạn phải xác định là mục tiêu kênh, định hướng kênh, đối tượng kênh, hình mẫu kênh, nghiên cứu khán giả. Những cái này các bạn chỉ cần làm một lần thôi. Có biểu mẫu thì các bạn có thể làm được hết. Thì tất cả những cái này khi mà mình làm xong rồi mình biết là lý do tại sao, bạn muốn trở thành ai khi mà xuất hiện một kênh YouTube như vậy và tại sao bạn cần phải làm, tại sao bạn cần phải làm kênh YouTube như vậy, mục đích kênh là gì. Thì khi mà làm xong toàn bộ những cái này rồi mình định hướng được là YouTube mình sẽ làm như thế rồi. Thì bắt đầu đến cái giai đoạn là mình bắt đầu phải sản xuất video. video sản xuất video thì chúng ta cần phải tìm cái chủ đề tìm cái chủ đề để có thể làm tìm chủ đề có thể là đấy sau đó những cái chủ đề đấy nó liên quan đến kênh liên quan đến việc là phát triển YouTube thì chúng ta cần viết content Sau đó từ đấy chúng ta dựng video. Dựng video xong thì chúng ta cần phải up lên YouTube. Up lên YouTube thì có những cái liên quan đến kỹ thuật, liên quan đến đặt tiêu đề, làm hình thu nhỏ làm sao, thu hút, làm sao để SEO YouTube cho nó tốt. Tiếp theo khi mà up lên xong rồi thì các bạn cần phải phát triển nó, phát triển kênh làm sao để chia sẻ video, làm sao để chạy quảng cáo để video có nhiều view, nhiều sub và có nhiều khách hàng đúng không ạ? Và tiếp theo là chúng ta cần phải đo lường tối ưu, chúng ta cần phải đo lường về cái hiệu quả của kênh dựa trên tất cả các chỉ số của Analytics và chúng ta tối ưu từng chỉ số. Đấy, thế tất cả những cái việc như thế này là những cái việc mà cần phải làm để triển khai YouTube. Ví dụ cái bước mà cuối cùng khi mà mình làm được rồi, mình sản xuất được video rồi, mình up được video rồi, mình phát triển kênh rồi, thì đến lúc mà có view rồi thì chúng ta cần phải đo lường và tối ưu. Đấy. Cái đo lường tối ưu view như kênh của bạn Hoàng Mạnh Cường. Các bạn có thể thấy là khi mà mình vào một cái kênh là mình vào cái số liệu phân tích của kênh. Nó sẽ cho các bạn biết được rất là nhiều thông số, ví dụ thông số của bạn là đề xuất, video đề xuất là bao nhiêu phần trăm, tìm kiếm nó bao nhiêu phần trăm. Đấy. Những cái phễu như thế này, phễu. Ví dụ, một người, YouTube đề xuất, đến cho 2,2 triệu người, thì chỉ có 3%, 4%, mà họ nhấp vào thôi, nhấp vào cái mà mình đưa ra thế thôi. Tức là cái hình ảnh thu nhỏ nó đang kém đúng không ạ? Nó quá thấp. Đấy. Nhưng mà ngược lại là có rất là ít nhiều người ở đây á. Tức là khi một cái video YouTube nó hiện ra, YouTube nó gợi ý cho bạn nhưng bạn không kích vào. Thì là cái tỷ lệ nhấp này nó thấp này. Đấy. Thì nó thấp không được. Nhưng mà khi mà người ta vào xem kênh rồi, thì cái thời gian người ta ở lại đến tận 7 phút 37 cơ. Là thời gian xem trung bình. Thì cái thời gian xem này rất tốt. 7 phút xem là bắt đầu biến người ta thành fan rồi. Thì các bạn có thể để ý, từ những cái chỉ số như này mình sẽ tối ưu được. À, cái chỉ số như này mình cần phải tối ưu thumbnail với tiêu đề đi. À, còn cái chỉ số này nó cao rồi. À, thế thì nội dung của ông ok rồi. Thì ông bắt đầu phải tăng chất lượng nội dung và tăng cái độ dài của video lên. Mình sẽ có được cả những cái nguồn truy cập bên trong, bên ngoài như thế nào. Từ đây thì mình sẽ tối ưu được thêm những cái chỉ số. Và nhất là những cái chỉ số tiếp theo đây. Thời điểm khán giả xem nhiều nhất là gì? Mấy giờ thì khán giả hay xem trong ngày, trong tuần? Thì từ đấy trước đấy thì mình cũng sẽ biết được cả. À, thế từ đấy thì cái thời gian đấy là mình up video là hợp lý. Toàn bộ này nó có lịch sử, nó có cái dữ liệu hết rồi mà. Mình phân tích ra, mình xem, đấy mình tối ưu, mình chỉ số. Những kênh khác mà khán giả của bạn đang xem. Khán giả cũng đang xem Web5Ngày, Shopee này hay Big Man hay Thái Phạm hay Phạm Thành Long. Thì mình cũng phải tham khảo, mình cũng phải xem những kênh này để xem là khán giả đang xem những cái gì, nội dung khác, các video khác mà khán giả cũng đang xem. Khán giả đang xem những video khác, cũng có thể triển khai lại trên kênh của mình theo một cái góc nhìn khác cái cách làm cái mẹo làm của mình mà Đó là tất cả những cái này mình cần phải đo lường tối ưu và từ những cái đo lường tối ưu này thì kênh của mình nó phát triển rất là tốt. Và đây là toàn bộ những cái mà mình cần phải làm. Và cái quan trọng nhất trong tất cả cái bước này là chúng ta cần phải làm đúng, đủ và đều. Thì khi mà các bạn làm ở Internet thì các bạn bắt buộc phải làm đúng đủ đều rồi. Nó không thể nào là làm một cái ăn ngay hay làm nó gọi là ăn xổi được cả. Bắt đầu chúng ta phải làm đúng với luật lá của nền tảng, làm đủ video, làm đều ngày này qua tháng khác. Cái công việc của một chuyên gia YouTube đó là chúng ta quản lý kênh của chúng ta, chúng ta viết content, chúng ta làm video, chúng ta làm hình ảnh, chúng ta SEO, up, lên định hướng, SEO, up. Thì đấy là một công việc mà một người làm YouTube, chuyên gia YouTube có thể làm từ A đến Z. Ví dụ như mình, mình có thể làm được tất cả những cái này, mình làm từ A, Z, nhưng mà mình sẽ không làm tất cả những cái này, mình sẽ tập trung vào những cái việc mà quan trọng nhất, tức là Thứ nhất là học cái tư duy làm. Cái thứ hai là mình tìm ra cái thị trường ngách. Sau đó là mình định hướng cái content chủ đề. Bởi vì thực chất mình là người hiểu nhất cái thị trường của mình. Nên là mình hãy tập trung vào để mình chia sẻ đúng cái mà mình giỏi nhất. Các bạn làm y, dược, bác sĩ, các bạn là người giỏi nhất trong cái chuyên ngành của các bạn. Tức là nếu mà so với đội ngũ nhân viên và đội ngũ để có thể hỗ trợ nhé. Thì bạn sẽ là người giỏi nhất trong những phần đấy. Thì bạn cần phải học được cái tư duy làm, tư duy quản lý của một kênh YouTube. Sau đó bạn tìm được ra cái thị trường ngách nào mà khán giả đang quan tâm. Sau đó bạn lên định hướng content, làm chủ đề. Thì từ đấy chúng ta sẽ biết được là làm những cái việc gì để mình có thể tối ưu thời gian, việc gì mình có thể thuê được. Ví dụ content này các bạn có thể thuê được đúng không? View các bạn có thể thuê được mà, hình ảnh thuê được mà. Mục đích hay là tính cách kênh cái này làm một lần. Các bạn đã bắt đầu thấy cái cách làm làm sao để nó tối ưu chưa ạ? Mình chỉ tập trung vào những việc quan trọng nhất thôi. Những cái bước triển khai như này mình chỉ cần tập trung vào chủ đề. Và cái hiệu quả của kênh. Thế thôi. Còn những cái khác các bạn không cần phải tập trung quá nhiều. Nhưng các bạn vẫn phải hiểu. Các bạn cần phải hiểu cái tư duy làm Đấy, hiểu cái tư duy làm là quan trọng nhất Tất cả những cái phần ở đây mình nốt lại Mình đánh dấu bằng cái mũi tên này Là những cái phần mình đều có thể thuê được hết. Sản xuất video thuê được, up video YouTube thuê được, phát triển kênh chạy quảng cáo, chia sẻ video thuê được. Cách tối ưu từng chỉ số thuê được. Toàn bộ những cái này mình có thể thuê được. Thì khi mà mình biết rằng là 20% công việc quan trọng đem lại 80% kết quả, thì mình lọc ra 20% công việc quan trọng nhất, cần thiết nhất để mình làm YouTube. Còn lại là những cái cách còn lại mình tìm người khác làm, hỗ trợ hoặc thuê. Thì mình sẽ dành ra đó một ngày, làm việc trong một tuần để mình đầu tư. Khi mà mình làm và mình nhận ra được những cái như thế này thì mình mới bắt đầu xây dựng doanh nghiệp và mình bắt đầu tuyển dụng và mình bắt đầu làm. Thì làm một thời gian là đến lúc mà mình không cần phải động vào kênh YouTube nữa. Mình chỉ cần lên chủ đề thôi. Tìm chủ đề. Đấy. Cho anh em làm. Là đã ngon rồi. Còn lại mọi người làm được hết đấy mà. Quan trọng nhất là mình hiểu thị trường và hiểu chủ đề. Đó. Thì đấy là cái quan trọng nhất. Thì mình nốt lại ở đây. Đấy. Cái mà các bạn cần làm là tìm chủ đề và hiệu quả kênh. Còn những cái khác, toàn bộ những cái khác, các bạn hãy bỏ tiền ra, thuê được. Và đây là một cái lịch làm việc tham khảo của một cái kênh mà mình làm. Đây là cái cách mà mình làm việc một trước kia thôi. Bây giờ thì gần như mình không phải động vào nữa. Tức là mình sẽ... Có lịch làm việc là dành ra 1 ngày làm việc cho 1 tuần. Thế cứ cái đầu tuần này, khoảng chủ nhật, thì mình sẽ lên lịch. Mình sẽ lên lịch cho 1 tuần, chủ đề ở đây, mình sẽ tìm chủ đề. Nói là hôm tuần này mình sẽ làm chủ đề 1 loạt ở đây, từ thứ 2 đến chủ nhật. Đây là 1 ngày mình làm 2 video các bạn nhé. Nếu mà các bạn làm 1 ngày 1 video thì nó nhàn hơn này rất nhiều. Thì chỉ cần 7 video thôi. Thì các bạn có khi các bạn dành ra 2-3 ngày các bạn làm cho 1 tháng nữa. Như mình làm là 2 video 1 ngày. Thì mình cần phải làm dành cho ngày chủ nhật. Xong là mình điền hết chủ đề mà mình phân tích mình làm ra ở đây. Cái link tham khảo là những cái nội dung mà các bạn content có thể tham khảo được. Những cái nội dung ý mà mình mong muốn các bạn ấy làm theo. Xong là cách làm này mình cũng có thể nốt ra. Cách làm theo cái ý của mình. Mình mong muốn làm như thế nào? Số Zalo này là cái số để điền bán hàng vào thôi. Tiêu đề, tiêu đề đặt, thumbnail đặt như thế nào thì cái này là của bạn quản lý kênh các bạn làm, sẽ có bạn khác làm. SEO như thế nào các bạn quản lý kênh, content làm như thế nào thì đấy là của bạn content sẽ vào lấy, bạn audio này thì các bạn lấy content để đọc audio thôi. MC này thì bạn content làm luôn. Ừ thế sẽ sau này sẽ có cái tình trạng là à thế edit video đã xong chưa ngày quay đã xong chưa cái tình trạng up lên kênh YouTube như thế nào tình trạng thumbnail đã xong chưa thì các bạn cần phải điền báo cáo đây thì khi mà mình vào kênh chẳng hạn khi mà mình vào cái bảng báo cáo này mình xem luôn mình à thế cái ngày 30 tháng chẳng hạn hay là 29.58 các bạn đã làm được chưa Các bạn làm như thế nào rồi Ừ thì có thể thấy được là khi mà chúng ta làm như thế này ở đây mình có một cái lịch nữa lịch là thứ hai thứ ba thứ tư năm, sáu, chủ nhật Thì mình sẽ test những kênh bán hàng của mình, phần nào là phần liên quan đến bán hàng, phần nào liên quan đến traffic, phần nào liên quan đến seeding. Thì mình có bôi những màu khác nhau ở đây, và khi ở trên này mình làm đâu là traffic, đâu là seeding, đâu là bán hàng để cho các bạn content và các bạn kia làm các bạn biết được là viết cái content như thế nào, cái nội dung như thế nào. Đó, thì đấy là cái mà mình làm cái lịch làm việc như vậy. Thì khi mà các bạn làm việc như thế này thì các bạn làm chỉ cần một tuần, các bạn làm đúng một ngày là đủ rồi. Mình sẽ kiểm soát và quản lý toàn bộ trên Drive, trên Google Drive Online thì mình có phân ra cái này chính là cái tổng hợp lịch làm việc này. Lịch làm việc này chính là cái bảng Excel này. Sau đó thì mình sẽ có các cái thư mục, thư mục về content, thư mục về edit video, thư mục về audio, các cái nguyên liệu làm kênh. Khi các bạn quản lý kênh lên thì các bạn sẽ vào những thư mục này để các bạn lấy từng phần một để các bạn làm Các bạn đã hình dung ra cách thức mà mình quản lý chưa ạ? Các bạn có thể làm offline hoặc online đều được Đó là cái cách thức mà mình làm. Ở đây cái quy trình của BMG làm việc chẳng hạn, mình nói nhanh qua nhé, cái quy trình mà bên mình đang trực tiếp làm là có một bạn gọi là quản lý kênh, các bạn sẽ tìm chủ đề, tức là ngày xưa mình làm quản lý kênh nhé, ngày xưa mình làm, nhưng mà sau này đến lúc mà mình chia sẻ mà dạy được đệ tử thì đệ tử làm luôn. Tìm chủ đề, làm thumbnail, cộng tiêu đề. Sau đó gửi cho bạn content, content viết bài. Quản lý kênh duyệt bài xong thì gửi lại cho content để content đưa cho bên audio. Tức là quản lý kênh này đưa cho content này. Content làm xong thì để quản lý kênh duyệt bài. Content lại đưa cho bên MC audio xử lý các nguyên liệu như vậy. Sau đó đưa cho edit có đủ hết cả MC audio rồi. vô rồi thì các bạn edit video cần phải làm những cái video mà nó phù hợp với lại mình phù hợp hoạt cảnh hoặc là nếu mà các bạn đi quay dựng thì là đây là cái bạn làm hậu kỳ đấy ạ sau đó gửi lại cho các bạn quản lý kênh này hoàn thiện và kiểm tra kỹ đấy bạn quản lý kênh này các bạn sẽ làm nhiệm vụ là upload và public video tất cả các quá trình này các bạn đều phải làm đúng đủ đều thì trước kia mình làm là mình sẽ làm vị trí là quản lý kênh này thì chính ra sau này ban đầu các bạn làm thì các bạn cũng cần phải làm vị trí là quản lý kênh của các bạn đầu tiên sau đó thì chúng ta tất cả những phần khác chúng ta thuê được hết Thì khi mà làm thì chúng ta sẽ tập trung vào những việc quan trọng nhất. Tư duy làm và tìm ra thị trường ngách, lên định hướng content của chủ đề. Còn lại là chúng ta sẽ tìm cách chúng ta thuê và có thể thuê được hết. Một video chẳng hạn thì thuê tính theo phút nó cũng rất là rẻ. Có mấy chục nghìn một video thôi mà. Content cũng như vậy. Để chúng ta đầu tư tháng mà bỏ ra khoảng độ 5, 7, 10 triệu để đầu tư vào một kênh YouTube thì nó cũng không phải là cái vấn đề nó quá là lớn đúng không? Nếu mà các bạn có thể thuê được nhân sự mà làm luôn offline được thì các bạn đấy còn có thể làm được nhiều hơn nữa, rất là nhiều. Chúng ta sẽ tập trung vào 20% công việc để chiếm, 20% công việc quan trọng nhất, chiếm 80% kết quả. Lọc ra, lọc ra tất cả những việc mà chúng ta làm hoặc là những cái việc chúng ta không làm được. Nhớ nhé, những cái việc mà mình không làm được mình đừng tìm cách để có thể cố gắng mà làm, Các bạn có thể tìm cách khác dễ hơn, dùng Canva thì sẽ dễ hơn, hoặc là mình có thể tìm người khác hỗ trợ các bạn, nếu không được thì mình có thể thuê Hợp tác với ai đấy để đẩy kênh Hay là như bạn mình làm thì các bạn ấy có thể kết hợp với một đội khác làm về YouTube mới quay dựng Thì bạn ấy cần thương hiệu để bán hàng, còn bên kia cần view để ăn tiền Thì kết hợp với nhau là bên kia sẽ làm cho các bạn ý về kênh và phát triển Còn bạn ấy sẽ làm ở cái mảng bán hàng Còn cái tiền từ kênh thì anh em chia nhau như thế nào thì đấy là do các bạn làm Các bạn có những offer để các bạn có thể đi nhanh hơn. Và chúng ta bắt đầu tìm được ra điểm mấu chốt và xử lý những điểm mấu chốt đấy. Thì cứ có những đoạn đấy mình gỡ được ra. Thế là xong. Nhớ là câu hỏi là ai là người có thể hỗ trợ bạn? Chứ đừng đặt cho câu hỏi là mình làm như thế nào. Thì mình nhớ cái câu hỏi như vậy. Để mình tự vấn bản thân. Ai là người có thể hỗ trợ mình trong cái vấn đề mà xây dựng kênh hay là làm kênh như thế này? Đó Ok Chúng ta đã cùng nhau đi với nhau Phương pháp xây dựng kênh YouTube mà không cần nhiều thời gian làm việc Một ngày trên một tuần là đủ Bạn Các bạn không cần giỏi công nghệ đúng không ạ? Đến như bây giờ rồi thì các bạn sẽ thấy các bạn không cần giỏi công nghệ Cũng không cần giỏi các kỹ năng làm video Thậm chí cũng không cần ngoại hình đẹp Vẫn có thể làm được bình thường Anh em đã thử Anh em đã thấy bắt đầu công việc xây dựng kênh YouTube nó bắt đầu nhẹ nhàng hơn chưa? Anh em bắt đầu thấy nó nhẹ nhàng chưa? Đúng rồi, bởi vì là khi mà mình hiểu rõ cái bản chất của nó rồi và mình đặt ra những cái câu hỏi đúng thì là mình không bị bế tắc mà mình làm nó bắt đầu nó xuôi hơn rất là nhiều ạ. Thì anh em có thể làm và khi mà mọi người làm thì đâu phải nhất thiết là cứ ai cũng mong muốn là làm 1 ngày 1 tuần đâu. Các bạn có thể tập trung mà giai đoạn đầu, giai đoạn đầu các bạn có thể tập trung nhiều hơn cho kênh YouTube chẳng hạn. Các bạn tập trung mạnh một thời gian đầu tiên để nó ra kết quả sớm. Thì mình tập trung nhiều thì nó ra kết quả nhanh thôi. Còn nếu mà dành cho những bạn bận rộn, không có nhiều thời gian thì ý mình muốn nói là các bạn vẫn có thể làm để một cách tối ưu nhất về thời gian của các bạn. Còn nếu mà các bạn có thời gian và xác định tập trung vào để cho lên nhanh hơn thì chúng ta cũng có cách thức để lên nhanh hơn mà. Cứ tập trung và làm là nó sẽ ra kết quả nhanh mà.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 12.58,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:12,580",
+      "text": "Phương pháp xây dựng kênh YouTube mà không cần nhiều thời gian làm việc, 1 ngày trên 1 tuần là đủ."
+    },
+    {
+      "id": 2,
+      "start": 12.58,
+      "end": 20.0,
+      "start_time": "00:00:12,580",
+      "end_time": "00:00:20,000",
+      "text": "Bạn không cần giỏi công nghệ, không cần giỏi kỹ năng làm video hay là bạn cũng không cần phải ngoại hình đẹp."
+    },
+    {
+      "id": 3,
+      "start": 20.0,
+      "end": 25.54,
+      "start_time": "00:00:20,000",
+      "end_time": "00:00:25,540",
+      "text": "Tháp hành vi thì chúng ta sẽ cùng nhau nói chuyện với nhau về cái tháp hành vi này trước"
+    },
+    {
+      "id": 4,
+      "start": 25.54,
+      "end": 30.0,
+      "start_time": "00:00:25,540",
+      "end_time": "00:00:30,000",
+      "text": "Khi mà chúng ta nói chuyện với cái tháp hành vi này sau rồi chúng ta sẽ biết được đâu là cái công việc quan trọng, đâu là công việc này"
+    },
+    {
+      "id": 5,
+      "start": 30.0,
+      "end": 39.387,
+      "start_time": "00:00:30,000",
+      "end_time": "00:00:39,387",
+      "text": "Công việc nó bớt quan trọng hơn để chúng ta làm. Thường thì chúng ta sẽ có cái là khi mà chúng ta làm thì chúng ta sẽ"
+    },
+    {
+      "id": 6,
+      "start": 39.387,
+      "end": 48.773,
+      "start_time": "00:00:39,387",
+      "end_time": "00:00:48,773",
+      "text": "đi từ bên phải sang bên trái này. Giả sử ở dưới này chúng ta sẽ có những nền tảng môi trường, có YouTube, TikTok, Google, ví dụ"
+    },
+    {
+      "id": 7,
+      "start": 48.773,
+      "end": 58.16,
+      "start_time": "00:00:48,773",
+      "end_time": "00:00:58,160",
+      "text": "thế chẳng hạn. Thường là mọi người sẽ bắt đầu đi từ đây. Thế mình cần phải làm thế nào, mình làm thế nào, mình làm ở đâu,"
+    },
+    {
+      "id": 8,
+      "start": 58.16,
+      "end": 65.32,
+      "start_time": "00:00:58,160",
+      "end_time": "00:01:05,320",
+      "text": "Ừ thế mình làm phát triển nội dung ở YouTube rồi, thế mình làm cái gì? Mình làm cái gì? Mình làm như thế nào? Mình sản xuất video như thế"
+    },
+    {
+      "id": 9,
+      "start": 65.32,
+      "end": 72.48,
+      "start_time": "00:01:05,320",
+      "end_time": "00:01:12,480",
+      "text": "nào? Mình quay dựng như thế nào? Mình viết content như thế nào? Mình SEO, up như thế nào đúng không ạ? Đa số các bạn sẽ đặt ra cái câu"
+    },
+    {
+      "id": 10,
+      "start": 72.48,
+      "end": 79.64,
+      "start_time": "00:01:12,480",
+      "end_time": "00:01:19,640",
+      "text": "hỏi đấy như vậy trước. Nhưng mà cái câu hỏi đúng mà mình đặt ra, đầu tiên mình phải rõ được cái mục đích. Bạn muốn xây YouTube để làm gì?"
+    },
+    {
+      "id": 11,
+      "start": 79.64,
+      "end": 87.828,
+      "start_time": "00:01:19,640",
+      "end_time": "00:01:27,828",
+      "text": "Tại sao bạn lại cần phải xây YouTube? Mục đích"
+    },
+    {
+      "id": 12,
+      "start": 87.828,
+      "end": 96.016,
+      "start_time": "00:01:27,828",
+      "end_time": "00:01:36,016",
+      "text": "xây kênh là gì? Định hướng của các bạn là gì?"
+    },
+    {
+      "id": 13,
+      "start": 96.016,
+      "end": 98.876,
+      "start_time": "00:01:36,016",
+      "end_time": "00:01:38,876",
+      "text": "Khi mà bạn phải rõ ràng được cái lý do tại sao bạn bắt đầu rồi ạ,"
+    },
+    {
+      "id": 14,
+      "start": 99.756,
+      "end": 101.396,
+      "start_time": "00:01:39,756",
+      "end_time": "00:01:41,396",
+      "text": "thì bạn sau này bạn đi nó mới nhanh được."
+    },
+    {
+      "id": 15,
+      "start": 102.296,
+      "end": 104.336,
+      "start_time": "00:01:42,296",
+      "end_time": "00:01:44,336",
+      "text": "Chứ còn à, có YouTube đấy cứ lên làm đi,"
+    },
+    {
+      "id": 16,
+      "start": 104.996,
+      "end": 106.396,
+      "start_time": "00:01:44,996",
+      "end_time": "00:01:46,396",
+      "text": "SEO, up đi, làm video đi."
+    },
+    {
+      "id": 17,
+      "start": 107.356,
+      "end": 109.056,
+      "start_time": "00:01:47,356",
+      "end_time": "00:01:49,056",
+      "text": "Thì rất là nhiều người chia sẻ cho các bạn như vậy,"
+    },
+    {
+      "id": 18,
+      "start": 109.056,
+      "end": 111.796,
+      "start_time": "00:01:49,056",
+      "end_time": "00:01:51,796",
+      "text": "nhưng mà chính vì như vậy là mọi người bắt đầu loay hoay."
+    },
+    {
+      "id": 19,
+      "start": 111.796,
+      "end": 119.783,
+      "start_time": "00:01:51,796",
+      "end_time": "00:01:59,783",
+      "text": "Là một vài chục video mà không có kết quả, hoặc là một vài, thậm chí có những người kiên trì làm đến hàng"
+    },
+    {
+      "id": 20,
+      "start": 119.783,
+      "end": 127.769,
+      "start_time": "00:01:59,783",
+      "end_time": "00:02:07,769",
+      "text": "trăm video mà vẫn không ra kết quả thì lúc đấy bắt đầu bị vấn đề. Và lúc đấy mới bắt đầu cảm"
+    },
+    {
+      "id": 21,
+      "start": 127.769,
+      "end": 135.756,
+      "start_time": "00:02:07,769",
+      "end_time": "00:02:15,756",
+      "text": "thấy là à, nó sai sai. Nên là bị mất niềm tin. Thế từ mất niềm tin đấy thì mới bắt đầu bỏ cuộc."
+    },
+    {
+      "id": 22,
+      "start": 135.756,
+      "end": 144.636,
+      "start_time": "00:02:15,756",
+      "end_time": "00:02:24,636",
+      "text": "Thì khi mà chúng ta đặt cái câu hỏi là chúng ta làm thế nào thì chúng ta sẽ bế tắc bởi vì khả năng của chúng ta có hạn đúng không ạ?"
+    },
+    {
+      "id": 23,
+      "start": 145.536,
+      "end": 148.396,
+      "start_time": "00:02:25,536",
+      "end_time": "00:02:28,396",
+      "text": "Các bạn có đồng ý với mình là khả năng của chúng ta có hạn đúng không ạ?"
+    },
+    {
+      "id": 24,
+      "start": 149.636,
+      "end": 153.176,
+      "start_time": "00:02:29,636",
+      "end_time": "00:02:33,176",
+      "text": "Thế chúng ta phải rõ ràng được là à chúng ta mong muốn gì?"
+    },
+    {
+      "id": 25,
+      "start": 155.0,
+      "end": 157.836,
+      "start_time": "00:02:35,000",
+      "end_time": "00:02:37,836",
+      "text": "Tại sao chúng ta làm cái đấy? Và ai là người có thể hỗ trợ được chúng ta?"
+    },
+    {
+      "id": 26,
+      "start": 159.056,
+      "end": 161.456,
+      "start_time": "00:02:39,056",
+      "end_time": "00:02:41,456",
+      "text": "Đây này cái câu này. Ai là người có thể hỗ trợ được chúng ta?"
+    },
+    {
+      "id": 27,
+      "start": 162.676,
+      "end": 163.816,
+      "start_time": "00:02:42,676",
+      "end_time": "00:02:43,816",
+      "text": "Nó rất là quan trọng nhé."
+    },
+    {
+      "id": 28,
+      "start": 163.816,
+      "end": 168.936,
+      "start_time": "00:02:43,816",
+      "end_time": "00:02:48,936",
+      "text": "Khi mà có YouTube, Facebook, TikTok, Google"
+    },
+    {
+      "id": 29,
+      "start": 168.936,
+      "end": 171.296,
+      "start_time": "00:02:48,936",
+      "end_time": "00:02:51,296",
+      "text": "Thì những câu hỏi bế tắc là"
+    },
+    {
+      "id": 30,
+      "start": 171.296,
+      "end": 171.856,
+      "start_time": "00:02:51,296",
+      "end_time": "00:02:51,856",
+      "text": "Câu hỏi là"
+    },
+    {
+      "id": 31,
+      "start": 171.856,
+      "end": 173.556,
+      "start_time": "00:02:51,856",
+      "end_time": "00:02:53,556",
+      "text": "Cần những kỹ năng gì"
+    },
+    {
+      "id": 32,
+      "start": 173.556,
+      "end": 175.196,
+      "start_time": "00:02:53,556",
+      "end_time": "00:02:55,196",
+      "text": "Mình cần phải làm cái gì"
+    },
+    {
+      "id": 33,
+      "start": 175.196,
+      "end": 176.296,
+      "start_time": "00:02:55,196",
+      "end_time": "00:02:56,296",
+      "text": "Mình cần phải làm ở đâu"
+    },
+    {
+      "id": 34,
+      "start": 176.296,
+      "end": 177.536,
+      "start_time": "00:02:56,296",
+      "end_time": "00:02:57,536",
+      "text": "Mình cần phải làm như thế nào"
+    },
+    {
+      "id": 35,
+      "start": 177.536,
+      "end": 178.516,
+      "start_time": "00:02:57,536",
+      "end_time": "00:02:58,516",
+      "text": "Ai là người quay"
+    },
+    {
+      "id": 36,
+      "start": 178.516,
+      "end": 179.596,
+      "start_time": "00:02:58,516",
+      "end_time": "00:02:59,596",
+      "text": "Ai là người viết content"
+    },
+    {
+      "id": 37,
+      "start": 180.0,
+      "end": 189.013,
+      "start_time": "00:03:00,000",
+      "end_time": "00:03:09,013",
+      "text": "SEO, up làm thế nào để có nhiều view? Qua khó. Một người để làm tất cả những cái việc đấy thì mất rất là nhiều thời gian. Thay vì"
+    },
+    {
+      "id": 38,
+      "start": 189.013,
+      "end": 198.027,
+      "start_time": "00:03:09,013",
+      "end_time": "00:03:18,027",
+      "text": "việc như vậy thì mình phải đặt câu hỏi khác. Câu hỏi ai? Ai là người có kỹ năng đấy? Ai là người làm được việc đó? Và ai"
+    },
+    {
+      "id": 39,
+      "start": 198.027,
+      "end": 207.04,
+      "start_time": "00:03:18,027",
+      "end_time": "00:03:27,040",
+      "text": "là người có thể hỗ trợ bạn làm được cái việc đấy? Nó sẽ thay đổi hoàn toàn đấy ạ. Cái đằng này là cái mà mình tự làm hết."
+    },
+    {
+      "id": 40,
+      "start": 207.04,
+      "end": 210.8,
+      "start_time": "00:03:27,040",
+      "end_time": "00:03:30,800",
+      "text": "Thì tức làm hết thì đến lúc mà mình không làm được thì nó bế tắc thế thôi."
+    },
+    {
+      "id": 41,
+      "start": 212.38,
+      "end": 215.48,
+      "start_time": "00:03:32,380",
+      "end_time": "00:03:35,480",
+      "text": "Còn bên này là mình đặt câu hỏi là ai? Ai có thể hỗ trợ được kỹ năng đấy?"
+    },
+    {
+      "id": 42,
+      "start": 216.98,
+      "end": 218.84,
+      "start_time": "00:03:36,980",
+      "end_time": "00:03:38,840",
+      "text": "Ai thuê? Mình có thể thuê được làm việc đấy."
+    },
+    {
+      "id": 43,
+      "start": 219.96,
+      "end": 223.36,
+      "start_time": "00:03:39,960",
+      "end_time": "00:03:43,360",
+      "text": "Các bạn đã bắt đầu thấy nó vỡ ra chưa ạ?"
+    },
+    {
+      "id": 44,
+      "start": 224.82,
+      "end": 227.08,
+      "start_time": "00:03:44,820",
+      "end_time": "00:03:47,080",
+      "text": "Mình chỉ tập trung vào những cái việc mà nó quan trọng nhất thôi."
+    },
+    {
+      "id": 45,
+      "start": 228.66,
+      "end": 233.88,
+      "start_time": "00:03:48,660",
+      "end_time": "00:03:53,880",
+      "text": "Nên là mình sẽ đến với các bước mà khi mà làm triển khai một kênh YouTube."
+    },
+    {
+      "id": 46,
+      "start": 234.0,
+      "end": 243.28,
+      "start_time": "00:03:54,000",
+      "end_time": "00:04:03,280",
+      "text": "Đó là đầu tiên các bạn phải xác định là mục tiêu kênh, định hướng kênh, đối tượng kênh, hình mẫu kênh, nghiên cứu khán giả. Những cái này các bạn chỉ cần làm một lần thôi. Có biểu mẫu thì các bạn có thể làm được hết."
+    },
+    {
+      "id": 47,
+      "start": 244.1,
+      "end": 255.62,
+      "start_time": "00:04:04,100",
+      "end_time": "00:04:15,620",
+      "text": "Thì tất cả những cái này khi mà mình làm xong rồi mình biết là lý do tại sao, bạn muốn trở thành ai khi mà xuất hiện một kênh YouTube như vậy và tại sao bạn cần phải làm, tại sao bạn cần phải làm kênh YouTube như vậy, mục đích kênh là gì."
+    },
+    {
+      "id": 48,
+      "start": 255.88,
+      "end": 262.16,
+      "start_time": "00:04:15,880",
+      "end_time": "00:04:22,160",
+      "text": "Thì khi mà làm xong toàn bộ những cái này rồi mình định hướng được là YouTube mình sẽ làm như thế rồi. Thì bắt đầu đến cái giai đoạn là mình bắt đầu phải sản xuất video."
+    },
+    {
+      "id": 49,
+      "start": 262.16,
+      "end": 269.58,
+      "start_time": "00:04:22,160",
+      "end_time": "00:04:29,580",
+      "text": "video sản xuất video thì chúng ta cần phải tìm cái chủ đề tìm cái chủ đề để có thể làm tìm chủ đề có thể là"
+    },
+    {
+      "id": 50,
+      "start": 269.58,
+      "end": 277.776,
+      "start_time": "00:04:29,580",
+      "end_time": "00:04:37,776",
+      "text": "đấy sau đó những cái chủ đề đấy nó liên quan đến kênh liên quan đến việc là phát triển YouTube thì chúng ta cần viết content"
+    },
+    {
+      "id": 51,
+      "start": 277.776,
+      "end": 279.556,
+      "start_time": "00:04:37,776",
+      "end_time": "00:04:39,556",
+      "text": "Sau đó từ đấy chúng ta dựng video."
+    },
+    {
+      "id": 52,
+      "start": 280.556,
+      "end": 282.696,
+      "start_time": "00:04:40,556",
+      "end_time": "00:04:42,696",
+      "text": "Dựng video xong thì chúng ta cần phải up lên YouTube."
+    },
+    {
+      "id": 53,
+      "start": 283.076,
+      "end": 290.776,
+      "start_time": "00:04:43,076",
+      "end_time": "00:04:50,776",
+      "text": "Up lên YouTube thì có những cái liên quan đến kỹ thuật, liên quan đến đặt tiêu đề, làm hình thu nhỏ làm sao, thu hút, làm sao để SEO YouTube cho nó tốt."
+    },
+    {
+      "id": 54,
+      "start": 290.776,
+      "end": 301.056,
+      "start_time": "00:04:50,776",
+      "end_time": "00:05:01,056",
+      "text": "Tiếp theo khi mà up lên xong rồi thì các bạn cần phải phát triển nó, phát triển kênh làm sao để chia sẻ video, làm sao để chạy quảng cáo để video có nhiều view, nhiều sub và có nhiều khách hàng đúng không ạ?"
+    },
+    {
+      "id": 55,
+      "start": 302.496,
+      "end": 312.636,
+      "start_time": "00:05:02,496",
+      "end_time": "00:05:12,636",
+      "text": "Và tiếp theo là chúng ta cần phải đo lường tối ưu, chúng ta cần phải đo lường về cái hiệu quả của kênh dựa trên tất cả các chỉ số của Analytics và chúng ta tối ưu từng chỉ số."
+    },
+    {
+      "id": 56,
+      "start": 314.096,
+      "end": 318.0,
+      "start_time": "00:05:14,096",
+      "end_time": "00:05:18,000",
+      "text": "Đấy, thế tất cả những cái việc như thế này là những cái việc mà cần phải làm để triển khai YouTube."
+    },
+    {
+      "id": 57,
+      "start": 318.0,
+      "end": 327.723,
+      "start_time": "00:05:18,000",
+      "end_time": "00:05:27,723",
+      "text": "Ví dụ cái bước mà cuối cùng khi mà mình làm được rồi, mình sản xuất được video rồi, mình up được video rồi, mình phát triển kênh rồi, thì đến lúc mà có view rồi thì chúng ta cần phải đo"
+    },
+    {
+      "id": 58,
+      "start": 327.723,
+      "end": 337.209,
+      "start_time": "00:05:27,723",
+      "end_time": "00:05:37,209",
+      "text": "lường và tối ưu. Đấy. Cái đo lường tối ưu view như kênh của bạn Hoàng Mạnh Cường. Các bạn có thể thấy là khi mà mình vào một cái kênh là mình vào cái số liệu phân tích của kênh. Nó sẽ"
+    },
+    {
+      "id": 59,
+      "start": 337.209,
+      "end": 346.696,
+      "start_time": "00:05:37,209",
+      "end_time": "00:05:46,696",
+      "text": "cho các bạn biết được rất là nhiều thông số, ví dụ thông số của bạn là đề xuất, video đề xuất là bao nhiêu phần trăm, tìm kiếm nó bao nhiêu phần trăm. Đấy. Những cái phễu như thế này, phễu."
+    },
+    {
+      "id": 60,
+      "start": 346.696,
+      "end": 360.0,
+      "start_time": "00:05:46,696",
+      "end_time": "00:06:00,000",
+      "text": "Ví dụ, một người, YouTube đề xuất, đến cho 2,2 triệu người, thì chỉ có 3%, 4%, mà họ nhấp vào thôi, nhấp vào cái mà mình đưa ra thế thôi."
+    },
+    {
+      "id": 61,
+      "start": 360.0,
+      "end": 362.02,
+      "start_time": "00:06:00,000",
+      "end_time": "00:06:02,020",
+      "text": "Tức là cái hình ảnh thu nhỏ nó đang kém đúng không ạ?"
+    },
+    {
+      "id": 62,
+      "start": 363.28,
+      "end": 364.08,
+      "start_time": "00:06:03,280",
+      "end_time": "00:06:04,080",
+      "text": "Nó quá thấp."
+    },
+    {
+      "id": 63,
+      "start": 364.54,
+      "end": 368.08,
+      "start_time": "00:06:04,540",
+      "end_time": "00:06:08,080",
+      "text": "Đấy. Nhưng mà ngược lại là có rất là ít nhiều người ở đây á."
+    },
+    {
+      "id": 64,
+      "start": 368.88,
+      "end": 373.76,
+      "start_time": "00:06:08,880",
+      "end_time": "00:06:13,760",
+      "text": "Tức là khi một cái video YouTube nó hiện ra, YouTube nó gợi ý cho bạn nhưng bạn không kích vào."
+    },
+    {
+      "id": 65,
+      "start": 374.52,
+      "end": 376.62,
+      "start_time": "00:06:14,520",
+      "end_time": "00:06:16,620",
+      "text": "Thì là cái tỷ lệ nhấp này nó thấp này."
+    },
+    {
+      "id": 66,
+      "start": 378.08,
+      "end": 379.06,
+      "start_time": "00:06:18,080",
+      "end_time": "00:06:19,060",
+      "text": "Đấy. Thì nó thấp không được."
+    },
+    {
+      "id": 67,
+      "start": 379.46,
+      "end": 381.88,
+      "start_time": "00:06:19,460",
+      "end_time": "00:06:21,880",
+      "text": "Nhưng mà khi mà người ta vào xem kênh rồi,"
+    },
+    {
+      "id": 68,
+      "start": 383.26,
+      "end": 386.54,
+      "start_time": "00:06:23,260",
+      "end_time": "00:06:26,540",
+      "text": "thì cái thời gian người ta ở lại đến tận 7 phút 37 cơ."
+    },
+    {
+      "id": 69,
+      "start": 387.16,
+      "end": 388.06,
+      "start_time": "00:06:27,160",
+      "end_time": "00:06:28,060",
+      "text": "Là thời gian xem trung bình."
+    },
+    {
+      "id": 70,
+      "start": 388.06,
+      "end": 390.42,
+      "start_time": "00:06:28,060",
+      "end_time": "00:06:30,420",
+      "text": "Thì cái thời gian xem này rất tốt."
+    },
+    {
+      "id": 71,
+      "start": 392.62,
+      "end": 395.18,
+      "start_time": "00:06:32,620",
+      "end_time": "00:06:35,180",
+      "text": "7 phút xem là bắt đầu biến người ta thành fan rồi."
+    },
+    {
+      "id": 72,
+      "start": 396.08,
+      "end": 399.56,
+      "start_time": "00:06:36,080",
+      "end_time": "00:06:39,560",
+      "text": "Thì các bạn có thể để ý, từ những cái chỉ số như này mình sẽ tối ưu được."
+    },
+    {
+      "id": 73,
+      "start": 399.8,
+      "end": 402.98,
+      "start_time": "00:06:39,800",
+      "end_time": "00:06:42,980",
+      "text": "À, cái chỉ số như này mình cần phải tối ưu thumbnail với tiêu đề đi."
+    },
+    {
+      "id": 74,
+      "start": 403.52,
+      "end": 405.4,
+      "start_time": "00:06:43,520",
+      "end_time": "00:06:45,400",
+      "text": "À, còn cái chỉ số này nó cao rồi."
+    },
+    {
+      "id": 75,
+      "start": 405.52,
+      "end": 407.2,
+      "start_time": "00:06:45,520",
+      "end_time": "00:06:47,200",
+      "text": "À, thế thì nội dung của ông ok rồi."
+    },
+    {
+      "id": 76,
+      "start": 407.28,
+      "end": 410.4,
+      "start_time": "00:06:47,280",
+      "end_time": "00:06:50,400",
+      "text": "Thì ông bắt đầu phải tăng chất lượng nội dung và tăng cái độ dài của video lên."
+    },
+    {
+      "id": 77,
+      "start": 411.78,
+      "end": 415.76,
+      "start_time": "00:06:51,780",
+      "end_time": "00:06:55,760",
+      "text": "Mình sẽ có được cả những cái nguồn truy cập bên trong, bên ngoài như thế nào."
+    },
+    {
+      "id": 78,
+      "start": 415.76,
+      "end": 424.3,
+      "start_time": "00:06:55,760",
+      "end_time": "00:07:04,300",
+      "text": "Từ đây thì mình sẽ tối ưu được thêm những cái chỉ số. Và nhất là những cái chỉ số tiếp theo đây. Thời điểm khán giả xem nhiều nhất là gì? Mấy giờ thì khán"
+    },
+    {
+      "id": 79,
+      "start": 424.3,
+      "end": 432.84,
+      "start_time": "00:07:04,300",
+      "end_time": "00:07:12,840",
+      "text": "giả hay xem trong ngày, trong tuần? Thì từ đấy trước đấy thì mình cũng sẽ biết được cả. À, thế từ đấy thì cái thời gian đấy là mình up video là hợp lý."
+    },
+    {
+      "id": 80,
+      "start": 434.2,
+      "end": 444.34,
+      "start_time": "00:07:14,200",
+      "end_time": "00:07:24,340",
+      "text": "Toàn bộ này nó có lịch sử, nó có cái dữ liệu hết rồi mà. Mình phân tích ra, mình xem, đấy mình tối ưu, mình chỉ số. Những kênh khác mà khán giả của bạn đang xem."
+    },
+    {
+      "id": 81,
+      "start": 446.0,
+      "end": 447.12,
+      "start_time": "00:07:26,000",
+      "end_time": "00:07:27,120",
+      "text": "Khán giả cũng đang xem Web5Ngày,"
+    },
+    {
+      "id": 82,
+      "start": 447.36,
+      "end": 449.76,
+      "start_time": "00:07:27,360",
+      "end_time": "00:07:29,760",
+      "text": "Shopee này hay Big Man hay Thái Phạm hay Phạm Thành Long."
+    },
+    {
+      "id": 83,
+      "start": 450.14,
+      "end": 451.28,
+      "start_time": "00:07:30,140",
+      "end_time": "00:07:31,280",
+      "text": "Thì mình cũng phải tham khảo,"
+    },
+    {
+      "id": 84,
+      "start": 451.46,
+      "end": 452.4,
+      "start_time": "00:07:31,460",
+      "end_time": "00:07:32,400",
+      "text": "mình cũng phải xem những kênh này"
+    },
+    {
+      "id": 85,
+      "start": 452.48,
+      "end": 454.62,
+      "start_time": "00:07:32,480",
+      "end_time": "00:07:34,620",
+      "text": "để xem là khán giả đang xem những cái gì,"
+    },
+    {
+      "id": 86,
+      "start": 454.78,
+      "end": 457.2,
+      "start_time": "00:07:34,780",
+      "end_time": "00:07:37,200",
+      "text": "nội dung khác, các video khác mà khán giả cũng đang xem."
+    },
+    {
+      "id": 87,
+      "start": 459.44,
+      "end": 460.316,
+      "start_time": "00:07:39,440",
+      "end_time": "00:07:40,316",
+      "text": "Khán giả đang xem những video khác,"
+    },
+    {
+      "id": 88,
+      "start": 467.936,
+      "end": 473.736,
+      "start_time": "00:07:47,936",
+      "end_time": "00:07:53,736",
+      "text": "cũng có thể triển khai lại trên kênh của mình theo một cái góc nhìn khác cái cách làm cái mẹo làm của mình mà"
+    },
+    {
+      "id": 89,
+      "start": 473.736,
+      "end": 480.436,
+      "start_time": "00:07:53,736",
+      "end_time": "00:08:00,436",
+      "text": "Đó là tất cả những cái này mình cần phải đo lường tối ưu và từ những cái đo lường tối ưu này thì kênh của mình nó phát triển rất là tốt."
+    },
+    {
+      "id": 90,
+      "start": 482.976,
+      "end": 490.456,
+      "start_time": "00:08:02,976",
+      "end_time": "00:08:10,456",
+      "text": "Và đây là toàn bộ những cái mà mình cần phải làm. Và cái quan trọng nhất trong tất cả cái bước này là chúng ta cần phải làm đúng, đủ và đều."
+    },
+    {
+      "id": 91,
+      "start": 490.876,
+      "end": 494.236,
+      "start_time": "00:08:10,876",
+      "end_time": "00:08:14,236",
+      "text": "Thì khi mà các bạn làm ở Internet thì các bạn bắt buộc phải làm đúng đủ đều rồi."
+    },
+    {
+      "id": 92,
+      "start": 494.796,
+      "end": 500.296,
+      "start_time": "00:08:14,796",
+      "end_time": "00:08:20,296",
+      "text": "Nó không thể nào là làm một cái ăn ngay hay làm nó gọi là ăn xổi được cả."
+    },
+    {
+      "id": 93,
+      "start": 500.296,
+      "end": 508.116,
+      "start_time": "00:08:20,296",
+      "end_time": "00:08:28,116",
+      "text": "Bắt đầu chúng ta phải làm đúng với luật lá của nền tảng, làm đủ video, làm đều ngày này qua tháng khác."
+    },
+    {
+      "id": 94,
+      "start": 511.256,
+      "end": 523.636,
+      "start_time": "00:08:31,256",
+      "end_time": "00:08:43,636",
+      "text": "Cái công việc của một chuyên gia YouTube đó là chúng ta quản lý kênh của chúng ta, chúng ta viết content, chúng ta làm video, chúng ta làm hình ảnh, chúng ta SEO, up, lên định hướng, SEO, up."
+    },
+    {
+      "id": 95,
+      "start": 524.216,
+      "end": 528.0,
+      "start_time": "00:08:44,216",
+      "end_time": "00:08:48,000",
+      "text": "Thì đấy là một công việc mà một người làm YouTube, chuyên gia YouTube có thể làm từ A đến Z."
+    },
+    {
+      "id": 96,
+      "start": 528.0,
+      "end": 540.0,
+      "start_time": "00:08:48,000",
+      "end_time": "00:09:00,000",
+      "text": "Ví dụ như mình, mình có thể làm được tất cả những cái này, mình làm từ A, Z, nhưng mà mình sẽ không làm tất cả những cái này, mình sẽ tập trung vào những cái việc mà quan trọng nhất, tức là"
+    },
+    {
+      "id": 97,
+      "start": 540.0,
+      "end": 542.0,
+      "start_time": "00:09:00,000",
+      "end_time": "00:09:02,000",
+      "text": "Thứ nhất là học cái tư duy làm."
+    },
+    {
+      "id": 98,
+      "start": 542.52,
+      "end": 544.0,
+      "start_time": "00:09:02,520",
+      "end_time": "00:09:04,000",
+      "text": "Cái thứ hai là mình tìm ra cái thị trường ngách."
+    },
+    {
+      "id": 99,
+      "start": 545.2,
+      "end": 547.34,
+      "start_time": "00:09:05,200",
+      "end_time": "00:09:07,340",
+      "text": "Sau đó là mình định hướng cái content chủ đề."
+    },
+    {
+      "id": 100,
+      "start": 548.26,
+      "end": 551.56,
+      "start_time": "00:09:08,260",
+      "end_time": "00:09:11,560",
+      "text": "Bởi vì thực chất mình là người hiểu nhất cái thị trường của mình."
+    },
+    {
+      "id": 101,
+      "start": 552.76,
+      "end": 558.84,
+      "start_time": "00:09:12,760",
+      "end_time": "00:09:18,840",
+      "text": "Nên là mình hãy tập trung vào để mình chia sẻ đúng cái mà mình giỏi nhất."
+    },
+    {
+      "id": 102,
+      "start": 559.78,
+      "end": 563.88,
+      "start_time": "00:09:19,780",
+      "end_time": "00:09:23,880",
+      "text": "Các bạn làm y, dược, bác sĩ, các bạn là người giỏi nhất trong cái chuyên ngành của các bạn."
+    },
+    {
+      "id": 103,
+      "start": 566.4,
+      "end": 569.74,
+      "start_time": "00:09:26,400",
+      "end_time": "00:09:29,740",
+      "text": "Tức là nếu mà so với đội ngũ nhân viên và đội ngũ để có thể hỗ trợ nhé."
+    },
+    {
+      "id": 104,
+      "start": 570.0,
+      "end": 571.6,
+      "start_time": "00:09:30,000",
+      "end_time": "00:09:31,600",
+      "text": "Thì bạn sẽ là người giỏi nhất trong những phần đấy."
+    },
+    {
+      "id": 105,
+      "start": 572.28,
+      "end": 576.5,
+      "start_time": "00:09:32,280",
+      "end_time": "00:09:36,500",
+      "text": "Thì bạn cần phải học được cái tư duy làm, tư duy quản lý của một kênh YouTube."
+    },
+    {
+      "id": 106,
+      "start": 576.5,
+      "end": 579.44,
+      "start_time": "00:09:36,500",
+      "end_time": "00:09:39,440",
+      "text": "Sau đó bạn tìm được ra cái thị trường ngách nào mà khán giả đang quan tâm."
+    },
+    {
+      "id": 107,
+      "start": 580.04,
+      "end": 582.26,
+      "start_time": "00:09:40,040",
+      "end_time": "00:09:42,260",
+      "text": "Sau đó bạn lên định hướng content, làm chủ đề."
+    },
+    {
+      "id": 108,
+      "start": 582.66,
+      "end": 590.74,
+      "start_time": "00:09:42,660",
+      "end_time": "00:09:50,740",
+      "text": "Thì từ đấy chúng ta sẽ biết được là làm những cái việc gì để mình có thể tối ưu thời gian,"
+    },
+    {
+      "id": 109,
+      "start": 591.12,
+      "end": 592.24,
+      "start_time": "00:09:51,120",
+      "end_time": "00:09:52,240",
+      "text": "việc gì mình có thể thuê được."
+    },
+    {
+      "id": 110,
+      "start": 592.34,
+      "end": 594.4,
+      "start_time": "00:09:52,340",
+      "end_time": "00:09:54,400",
+      "text": "Ví dụ content này các bạn có thể thuê được đúng không?"
+    },
+    {
+      "id": 111,
+      "start": 595.06,
+      "end": 597.26,
+      "start_time": "00:09:55,060",
+      "end_time": "00:09:57,260",
+      "text": "View các bạn có thể thuê được mà, hình ảnh thuê được mà."
+    },
+    {
+      "id": 112,
+      "start": 597.26,
+      "end": 600.44,
+      "start_time": "00:09:57,260",
+      "end_time": "00:10:00,440",
+      "text": "Mục đích hay là tính cách kênh cái này làm một lần."
+    },
+    {
+      "id": 113,
+      "start": 602.16,
+      "end": 608.34,
+      "start_time": "00:10:02,160",
+      "end_time": "00:10:08,340",
+      "text": "Các bạn đã bắt đầu thấy cái cách làm làm sao để nó tối ưu chưa ạ?"
+    },
+    {
+      "id": 114,
+      "start": 610.22,
+      "end": 611.68,
+      "start_time": "00:10:10,220",
+      "end_time": "00:10:11,680",
+      "text": "Mình chỉ tập trung vào những việc quan trọng nhất thôi."
+    },
+    {
+      "id": 115,
+      "start": 613.18,
+      "end": 615.64,
+      "start_time": "00:10:13,180",
+      "end_time": "00:10:15,640",
+      "text": "Những cái bước triển khai như này mình chỉ cần tập trung vào chủ đề."
+    },
+    {
+      "id": 116,
+      "start": 617.34,
+      "end": 619.66,
+      "start_time": "00:10:17,340",
+      "end_time": "00:10:19,660",
+      "text": "Và cái hiệu quả của kênh. Thế thôi."
+    },
+    {
+      "id": 117,
+      "start": 620.62,
+      "end": 623.1,
+      "start_time": "00:10:20,620",
+      "end_time": "00:10:23,100",
+      "text": "Còn những cái khác các bạn không cần phải tập trung quá nhiều."
+    },
+    {
+      "id": 118,
+      "start": 623.44,
+      "end": 623.98,
+      "start_time": "00:10:23,440",
+      "end_time": "00:10:23,980",
+      "text": "Nhưng các bạn vẫn phải hiểu."
+    },
+    {
+      "id": 119,
+      "start": 623.98,
+      "end": 627.82,
+      "start_time": "00:10:23,980",
+      "end_time": "00:10:27,820",
+      "text": "Các bạn cần phải hiểu cái tư duy làm"
+    },
+    {
+      "id": 120,
+      "start": 627.82,
+      "end": 629.64,
+      "start_time": "00:10:27,820",
+      "end_time": "00:10:29,640",
+      "text": "Đấy, hiểu cái tư duy làm là quan trọng nhất"
+    },
+    {
+      "id": 121,
+      "start": 629.64,
+      "end": 635.38,
+      "start_time": "00:10:29,640",
+      "end_time": "00:10:35,380",
+      "text": "Tất cả những cái phần ở đây mình nốt lại"
+    },
+    {
+      "id": 122,
+      "start": 635.38,
+      "end": 637.14,
+      "start_time": "00:10:35,380",
+      "end_time": "00:10:37,140",
+      "text": "Mình đánh dấu bằng cái mũi tên này"
+    },
+    {
+      "id": 123,
+      "start": 638.956,
+      "end": 647.236,
+      "start_time": "00:10:38,956",
+      "end_time": "00:10:47,236",
+      "text": "Là những cái phần mình đều có thể thuê được hết. Sản xuất video thuê được, up video YouTube thuê được, phát triển kênh chạy quảng cáo, chia sẻ video thuê được."
+    },
+    {
+      "id": 124,
+      "start": 649.136,
+      "end": 650.956,
+      "start_time": "00:10:49,136",
+      "end_time": "00:10:50,956",
+      "text": "Cách tối ưu từng chỉ số thuê được."
+    },
+    {
+      "id": 125,
+      "start": 652.096,
+      "end": 653.636,
+      "start_time": "00:10:52,096",
+      "end_time": "00:10:53,636",
+      "text": "Toàn bộ những cái này mình có thể thuê được."
+    },
+    {
+      "id": 126,
+      "start": 655.016,
+      "end": 664.876,
+      "start_time": "00:10:55,016",
+      "end_time": "00:11:04,876",
+      "text": "Thì khi mà mình biết rằng là 20% công việc quan trọng đem lại 80% kết quả, thì mình lọc ra 20% công việc quan trọng nhất, cần thiết nhất để mình làm YouTube."
+    },
+    {
+      "id": 127,
+      "start": 665.036,
+      "end": 669.576,
+      "start_time": "00:11:05,036",
+      "end_time": "00:11:09,576",
+      "text": "Còn lại là những cái cách còn lại mình tìm người khác làm, hỗ trợ hoặc thuê."
+    },
+    {
+      "id": 128,
+      "start": 670.356,
+      "end": 674.816,
+      "start_time": "00:11:10,356",
+      "end_time": "00:11:14,816",
+      "text": "Thì mình sẽ dành ra đó một ngày, làm việc trong một tuần để mình đầu tư."
+    },
+    {
+      "id": 129,
+      "start": 675.276,
+      "end": 681.236,
+      "start_time": "00:11:15,276",
+      "end_time": "00:11:21,236",
+      "text": "Khi mà mình làm và mình nhận ra được những cái như thế này thì mình mới bắt đầu xây dựng doanh nghiệp và mình bắt đầu tuyển dụng và mình bắt đầu làm."
+    },
+    {
+      "id": 130,
+      "start": 681.236,
+      "end": 690.563,
+      "start_time": "00:11:21,236",
+      "end_time": "00:11:30,563",
+      "text": "Thì làm một thời gian là đến lúc mà mình không cần phải động vào kênh YouTube nữa. Mình chỉ cần lên chủ đề thôi. Tìm chủ đề. Đấy. Cho anh em làm. Là đã"
+    },
+    {
+      "id": 131,
+      "start": 690.563,
+      "end": 699.889,
+      "start_time": "00:11:30,563",
+      "end_time": "00:11:39,889",
+      "text": "ngon rồi. Còn lại mọi người làm được hết đấy mà. Quan trọng nhất là mình hiểu thị trường và hiểu chủ đề. Đó. Thì đấy là cái quan trọng nhất. Thì mình nốt"
+    },
+    {
+      "id": 132,
+      "start": 699.889,
+      "end": 709.0,
+      "start_time": "00:11:39,889",
+      "end_time": "00:11:49,000",
+      "text": "lại ở đây. Đấy. Cái mà các bạn cần làm là tìm chủ đề và hiệu quả kênh. Còn những cái khác, toàn bộ những cái khác, các bạn hãy bỏ tiền ra, thuê được."
+    },
+    {
+      "id": 133,
+      "start": 709.0,
+      "end": 720.0,
+      "start_time": "00:11:49,000",
+      "end_time": "00:12:00,000",
+      "text": "Và đây là một cái lịch làm việc tham khảo của một cái kênh mà mình làm. Đây là cái cách mà mình làm việc một trước kia thôi. Bây giờ thì gần như mình không phải động vào nữa. Tức là mình sẽ..."
+    },
+    {
+      "id": 134,
+      "start": 720.0,
+      "end": 722.2,
+      "start_time": "00:12:00,000",
+      "end_time": "00:12:02,200",
+      "text": "Có lịch làm việc là dành ra 1 ngày làm việc cho 1 tuần."
+    },
+    {
+      "id": 135,
+      "start": 723.02,
+      "end": 725.8,
+      "start_time": "00:12:03,020",
+      "end_time": "00:12:05,800",
+      "text": "Thế cứ cái đầu tuần này, khoảng chủ nhật, thì mình sẽ lên lịch."
+    },
+    {
+      "id": 136,
+      "start": 726.14,
+      "end": 729.58,
+      "start_time": "00:12:06,140",
+      "end_time": "00:12:09,580",
+      "text": "Mình sẽ lên lịch cho 1 tuần, chủ đề ở đây, mình sẽ tìm chủ đề."
+    },
+    {
+      "id": 137,
+      "start": 730.08,
+      "end": 734.32,
+      "start_time": "00:12:10,080",
+      "end_time": "00:12:14,320",
+      "text": "Nói là hôm tuần này mình sẽ làm chủ đề 1 loạt ở đây, từ thứ 2 đến chủ nhật."
+    },
+    {
+      "id": 138,
+      "start": 734.74,
+      "end": 736.72,
+      "start_time": "00:12:14,740",
+      "end_time": "00:12:16,720",
+      "text": "Đây là 1 ngày mình làm 2 video các bạn nhé."
+    },
+    {
+      "id": 139,
+      "start": 738.5,
+      "end": 741.46,
+      "start_time": "00:12:18,500",
+      "end_time": "00:12:21,460",
+      "text": "Nếu mà các bạn làm 1 ngày 1 video thì nó nhàn hơn này rất nhiều."
+    },
+    {
+      "id": 140,
+      "start": 742.28,
+      "end": 743.3,
+      "start_time": "00:12:22,280",
+      "end_time": "00:12:23,300",
+      "text": "Thì chỉ cần 7 video thôi."
+    },
+    {
+      "id": 141,
+      "start": 744.74,
+      "end": 748.18,
+      "start_time": "00:12:24,740",
+      "end_time": "00:12:28,180",
+      "text": "Thì các bạn có khi các bạn dành ra 2-3 ngày các bạn làm cho 1 tháng nữa."
+    },
+    {
+      "id": 142,
+      "start": 748.18,
+      "end": 752.68,
+      "start_time": "00:12:28,180",
+      "end_time": "00:12:32,680",
+      "text": "Như mình làm là 2 video 1 ngày."
+    },
+    {
+      "id": 143,
+      "start": 753.68,
+      "end": 756.54,
+      "start_time": "00:12:33,680",
+      "end_time": "00:12:36,540",
+      "text": "Thì mình cần phải làm dành cho ngày chủ nhật."
+    },
+    {
+      "id": 144,
+      "start": 757.34,
+      "end": 760.98,
+      "start_time": "00:12:37,340",
+      "end_time": "00:12:40,980",
+      "text": "Xong là mình điền hết chủ đề mà mình phân tích mình làm ra ở đây."
+    },
+    {
+      "id": 145,
+      "start": 761.64,
+      "end": 766.18,
+      "start_time": "00:12:41,640",
+      "end_time": "00:12:46,180",
+      "text": "Cái link tham khảo là những cái nội dung mà các bạn content có thể tham khảo được."
+    },
+    {
+      "id": 146,
+      "start": 766.34,
+      "end": 769.72,
+      "start_time": "00:12:46,340",
+      "end_time": "00:12:49,720",
+      "text": "Những cái nội dung ý mà mình mong muốn các bạn ấy làm theo."
+    },
+    {
+      "id": 147,
+      "start": 770.16,
+      "end": 772.12,
+      "start_time": "00:12:50,160",
+      "end_time": "00:12:52,120",
+      "text": "Xong là cách làm này mình cũng có thể nốt ra."
+    },
+    {
+      "id": 148,
+      "start": 772.54,
+      "end": 773.9,
+      "start_time": "00:12:52,540",
+      "end_time": "00:12:53,900",
+      "text": "Cách làm theo cái ý của mình."
+    },
+    {
+      "id": 149,
+      "start": 774.56,
+      "end": 775.54,
+      "start_time": "00:12:54,560",
+      "end_time": "00:12:55,540",
+      "text": "Mình mong muốn làm như thế nào?"
+    },
+    {
+      "id": 150,
+      "start": 775.54,
+      "end": 781.44,
+      "start_time": "00:12:55,540",
+      "end_time": "00:13:01,440",
+      "text": "Số Zalo này là cái số để điền bán hàng vào thôi."
+    },
+    {
+      "id": 151,
+      "start": 781.44,
+      "end": 788.84,
+      "start_time": "00:13:01,440",
+      "end_time": "00:13:08,840",
+      "text": "Tiêu đề, tiêu đề đặt, thumbnail đặt như thế nào thì cái này là của bạn quản lý kênh các bạn làm, sẽ có bạn khác làm."
+    },
+    {
+      "id": 152,
+      "start": 788.84,
+      "end": 797.04,
+      "start_time": "00:13:08,840",
+      "end_time": "00:13:17,040",
+      "text": "SEO như thế nào các bạn quản lý kênh, content làm như thế nào thì đấy là của bạn content sẽ vào lấy, bạn audio này thì các bạn lấy content để đọc audio thôi."
+    },
+    {
+      "id": 153,
+      "start": 797.04,
+      "end": 798.74,
+      "start_time": "00:13:17,040",
+      "end_time": "00:13:18,740",
+      "text": "MC này thì bạn content làm luôn."
+    },
+    {
+      "id": 154,
+      "start": 798.74,
+      "end": 805.16,
+      "start_time": "00:13:18,740",
+      "end_time": "00:13:25,160",
+      "text": "Ừ thế sẽ sau này sẽ có cái tình trạng là à thế edit video đã xong chưa ngày quay đã xong chưa"
+    },
+    {
+      "id": 155,
+      "start": 805.16,
+      "end": 811.28,
+      "start_time": "00:13:25,160",
+      "end_time": "00:13:31,280",
+      "text": "cái tình trạng up lên kênh YouTube như thế nào tình trạng thumbnail đã xong chưa thì các bạn cần"
+    },
+    {
+      "id": 156,
+      "start": 811.28,
+      "end": 815.84,
+      "start_time": "00:13:31,280",
+      "end_time": "00:13:35,840",
+      "text": "phải điền báo cáo đây thì khi mà mình vào kênh chẳng hạn khi mà mình vào cái bảng báo cáo này mình"
+    },
+    {
+      "id": 157,
+      "start": 815.84,
+      "end": 818.74,
+      "start_time": "00:13:35,840",
+      "end_time": "00:13:38,740",
+      "text": "xem luôn mình à thế cái ngày 30 tháng chẳng hạn"
+    },
+    {
+      "id": 158,
+      "start": 818.74,
+      "end": 820.54,
+      "start_time": "00:13:38,740",
+      "end_time": "00:13:40,540",
+      "text": "hay là 29.58 các bạn đã làm được chưa"
+    },
+    {
+      "id": 159,
+      "start": 822.32,
+      "end": 823.34,
+      "start_time": "00:13:42,320",
+      "end_time": "00:13:43,340",
+      "text": "Các bạn làm như thế nào rồi"
+    },
+    {
+      "id": 160,
+      "start": 824.38,
+      "end": 826.68,
+      "start_time": "00:13:44,380",
+      "end_time": "00:13:46,680",
+      "text": "Ừ thì có thể thấy được là"
+    },
+    {
+      "id": 161,
+      "start": 826.94,
+      "end": 828.98,
+      "start_time": "00:13:46,940",
+      "end_time": "00:13:48,980",
+      "text": "khi mà chúng ta làm như thế này"
+    },
+    {
+      "id": 162,
+      "start": 829.24,
+      "end": 831.54,
+      "start_time": "00:13:49,240",
+      "end_time": "00:13:51,540",
+      "text": "ở đây mình có một cái lịch nữa lịch là"
+    },
+    {
+      "id": 163,
+      "start": 832.82,
+      "end": 835.016,
+      "start_time": "00:13:52,820",
+      "end_time": "00:13:55,016",
+      "text": "thứ hai thứ ba thứ tư năm, sáu, chủ nhật"
+    },
+    {
+      "id": 164,
+      "start": 835.016,
+      "end": 845.016,
+      "start_time": "00:13:55,016",
+      "end_time": "00:14:05,016",
+      "text": "Thì mình sẽ test những kênh bán hàng của mình, phần nào là phần liên quan đến bán hàng, phần nào liên quan đến traffic, phần nào liên quan đến seeding."
+    },
+    {
+      "id": 165,
+      "start": 847.016,
+      "end": 859.016,
+      "start_time": "00:14:07,016",
+      "end_time": "00:14:19,016",
+      "text": "Thì mình có bôi những màu khác nhau ở đây, và khi ở trên này mình làm đâu là traffic, đâu là seeding, đâu là bán hàng để cho các bạn content và các bạn kia làm các bạn biết được là viết cái content như thế nào, cái nội dung như thế nào."
+    },
+    {
+      "id": 166,
+      "start": 859.016,
+      "end": 868.656,
+      "start_time": "00:14:19,016",
+      "end_time": "00:14:28,656",
+      "text": "Đó, thì đấy là cái mà mình làm cái lịch làm việc như vậy. Thì khi mà các bạn làm việc như thế này thì các bạn làm chỉ cần một tuần, các bạn làm đúng một ngày là đủ rồi."
+    },
+    {
+      "id": 167,
+      "start": 871.0,
+      "end": 881.756,
+      "start_time": "00:14:31,000",
+      "end_time": "00:14:41,756",
+      "text": "Mình sẽ kiểm soát và quản lý toàn bộ trên Drive, trên Google Drive Online thì mình có phân ra cái này chính là cái tổng hợp lịch làm việc này."
+    },
+    {
+      "id": 168,
+      "start": 881.756,
+      "end": 890.746,
+      "start_time": "00:14:41,756",
+      "end_time": "00:14:50,746",
+      "text": "Lịch làm việc này chính là cái bảng Excel này. Sau đó thì mình sẽ có các cái thư mục,"
+    },
+    {
+      "id": 169,
+      "start": 890.746,
+      "end": 899.736,
+      "start_time": "00:14:50,746",
+      "end_time": "00:14:59,736",
+      "text": "thư mục về content, thư mục về edit video, thư mục về audio, các cái nguyên liệu làm kênh."
+    },
+    {
+      "id": 170,
+      "start": 899.736,
+      "end": 910.736,
+      "start_time": "00:14:59,736",
+      "end_time": "00:15:10,736",
+      "text": "Khi các bạn quản lý kênh lên thì các bạn sẽ vào những thư mục này để các bạn lấy từng phần một để các bạn làm"
+    },
+    {
+      "id": 171,
+      "start": 910.736,
+      "end": 917.0,
+      "start_time": "00:15:10,736",
+      "end_time": "00:15:17,000",
+      "text": "Các bạn đã hình dung ra cách thức mà mình quản lý chưa ạ? Các bạn có thể làm offline hoặc online đều được"
+    },
+    {
+      "id": 172,
+      "start": 917.0,
+      "end": 924.227,
+      "start_time": "00:15:17,000",
+      "end_time": "00:15:24,227",
+      "text": "Đó là cái cách thức mà mình làm. Ở đây cái quy trình của BMG làm việc chẳng hạn, mình nói nhanh qua nhé, cái quy trình mà"
+    },
+    {
+      "id": 173,
+      "start": 924.227,
+      "end": 931.453,
+      "start_time": "00:15:24,227",
+      "end_time": "00:15:31,453",
+      "text": "bên mình đang trực tiếp làm là có một bạn gọi là quản lý kênh, các bạn sẽ tìm chủ đề, tức là ngày xưa mình làm"
+    },
+    {
+      "id": 174,
+      "start": 931.453,
+      "end": 938.68,
+      "start_time": "00:15:31,453",
+      "end_time": "00:15:38,680",
+      "text": "quản lý kênh nhé, ngày xưa mình làm, nhưng mà sau này đến lúc mà mình chia sẻ mà dạy được đệ tử thì đệ tử làm luôn."
+    },
+    {
+      "id": 175,
+      "start": 938.68,
+      "end": 947.7,
+      "start_time": "00:15:38,680",
+      "end_time": "00:15:47,700",
+      "text": "Tìm chủ đề, làm thumbnail, cộng tiêu đề. Sau đó gửi cho bạn content, content viết bài. Quản lý kênh duyệt bài xong thì gửi lại cho"
+    },
+    {
+      "id": 176,
+      "start": 947.7,
+      "end": 956.72,
+      "start_time": "00:15:47,700",
+      "end_time": "00:15:56,720",
+      "text": "content để content đưa cho bên audio. Tức là quản lý kênh này đưa cho content này. Content làm xong thì để quản lý kênh duyệt"
+    },
+    {
+      "id": 177,
+      "start": 956.72,
+      "end": 965.74,
+      "start_time": "00:15:56,720",
+      "end_time": "00:16:05,740",
+      "text": "bài. Content lại đưa cho bên MC audio xử lý các nguyên liệu như vậy. Sau đó đưa cho edit có đủ hết cả MC audio rồi."
+    },
+    {
+      "id": 178,
+      "start": 965.74,
+      "end": 972.58,
+      "start_time": "00:16:05,740",
+      "end_time": "00:16:12,580",
+      "text": "vô rồi thì các bạn edit video cần phải làm những cái video mà nó phù hợp với lại mình phù hợp hoạt"
+    },
+    {
+      "id": 179,
+      "start": 972.58,
+      "end": 978.5,
+      "start_time": "00:16:12,580",
+      "end_time": "00:16:18,500",
+      "text": "cảnh hoặc là nếu mà các bạn đi quay dựng thì là đây là cái bạn làm hậu kỳ đấy ạ sau đó gửi lại cho các"
+    },
+    {
+      "id": 180,
+      "start": 978.5,
+      "end": 985.74,
+      "start_time": "00:16:18,500",
+      "end_time": "00:16:25,740",
+      "text": "bạn quản lý kênh này hoàn thiện và kiểm tra kỹ đấy bạn quản lý kênh này các bạn sẽ làm nhiệm vụ là upload"
+    },
+    {
+      "id": 181,
+      "start": 985.74,
+      "end": 987.26,
+      "start_time": "00:16:25,740",
+      "end_time": "00:16:27,260",
+      "text": "và public video"
+    },
+    {
+      "id": 182,
+      "start": 987.26,
+      "end": 990.5,
+      "start_time": "00:16:27,260",
+      "end_time": "00:16:30,500",
+      "text": "tất cả các quá trình này các bạn đều phải làm đúng đủ đều"
+    },
+    {
+      "id": 183,
+      "start": 990.5,
+      "end": 992.08,
+      "start_time": "00:16:30,500",
+      "end_time": "00:16:32,080",
+      "text": "thì trước kia mình làm là"
+    },
+    {
+      "id": 184,
+      "start": 992.08,
+      "end": 994.06,
+      "start_time": "00:16:32,080",
+      "end_time": "00:16:34,060",
+      "text": "mình sẽ làm vị trí là quản lý kênh này"
+    },
+    {
+      "id": 185,
+      "start": 994.06,
+      "end": 995.34,
+      "start_time": "00:16:34,060",
+      "end_time": "00:16:35,340",
+      "text": "thì chính ra sau này"
+    },
+    {
+      "id": 186,
+      "start": 995.34,
+      "end": 997.66,
+      "start_time": "00:16:35,340",
+      "end_time": "00:16:37,660",
+      "text": "ban đầu các bạn làm thì các bạn cũng cần phải làm"
+    },
+    {
+      "id": 187,
+      "start": 997.66,
+      "end": 999.78,
+      "start_time": "00:16:37,660",
+      "end_time": "00:16:39,780",
+      "text": "vị trí là quản lý kênh của các bạn đầu tiên"
+    },
+    {
+      "id": 188,
+      "start": 999.78,
+      "end": 1001.78,
+      "start_time": "00:16:39,780",
+      "end_time": "00:16:41,780",
+      "text": "sau đó thì chúng ta"
+    },
+    {
+      "id": 189,
+      "start": 1001.78,
+      "end": 1003.0,
+      "start_time": "00:16:41,780",
+      "end_time": "00:16:43,000",
+      "text": "tất cả những phần khác chúng ta thuê được hết"
+    },
+    {
+      "id": 190,
+      "start": 1003.0,
+      "end": 1013.136,
+      "start_time": "00:16:43,000",
+      "end_time": "00:16:53,136",
+      "text": "Thì khi mà làm thì chúng ta sẽ tập trung vào những việc quan trọng nhất. Tư duy làm và tìm ra thị trường ngách, lên định hướng content của chủ đề. Còn lại là chúng ta"
+    },
+    {
+      "id": 191,
+      "start": 1013.136,
+      "end": 1022.996,
+      "start_time": "00:16:53,136",
+      "end_time": "00:17:02,996",
+      "text": "sẽ tìm cách chúng ta thuê và có thể thuê được hết. Một video chẳng hạn thì thuê tính theo phút nó cũng rất là rẻ. Có mấy chục nghìn một video thôi mà. Content cũng như vậy."
+    },
+    {
+      "id": 192,
+      "start": 1022.996,
+      "end": 1032.856,
+      "start_time": "00:17:02,996",
+      "end_time": "00:17:12,856",
+      "text": "Để chúng ta đầu tư tháng mà bỏ ra khoảng độ 5, 7, 10 triệu để đầu tư vào một kênh YouTube thì nó cũng không phải là cái vấn đề nó quá là lớn đúng không?"
+    },
+    {
+      "id": 193,
+      "start": 1032.856,
+      "end": 1038.596,
+      "start_time": "00:17:12,856",
+      "end_time": "00:17:18,596",
+      "text": "Nếu mà các bạn có thể thuê được nhân sự mà làm luôn offline được thì các bạn đấy còn có thể làm được nhiều hơn nữa, rất là nhiều."
+    },
+    {
+      "id": 194,
+      "start": 1040.296,
+      "end": 1046.456,
+      "start_time": "00:17:20,296",
+      "end_time": "00:17:26,456",
+      "text": "Chúng ta sẽ tập trung vào 20% công việc để chiếm, 20% công việc quan trọng nhất, chiếm 80% kết quả."
+    },
+    {
+      "id": 195,
+      "start": 1047.176,
+      "end": 1055.476,
+      "start_time": "00:17:27,176",
+      "end_time": "00:17:35,476",
+      "text": "Lọc ra, lọc ra tất cả những việc mà chúng ta làm hoặc là những cái việc chúng ta không làm được."
+    },
+    {
+      "id": 196,
+      "start": 1055.676,
+      "end": 1062.296,
+      "start_time": "00:17:35,676",
+      "end_time": "00:17:42,296",
+      "text": "Nhớ nhé, những cái việc mà mình không làm được mình đừng tìm cách để có thể cố gắng mà làm,"
+    },
+    {
+      "id": 197,
+      "start": 1062.296,
+      "end": 1071.148,
+      "start_time": "00:17:42,296",
+      "end_time": "00:17:51,148",
+      "text": "Các bạn có thể tìm cách khác dễ hơn, dùng Canva thì sẽ dễ hơn, hoặc là mình"
+    },
+    {
+      "id": 198,
+      "start": 1071.148,
+      "end": 1080.0,
+      "start_time": "00:17:51,148",
+      "end_time": "00:18:00,000",
+      "text": "có thể tìm người khác hỗ trợ các bạn, nếu không được thì mình có thể thuê"
+    },
+    {
+      "id": 199,
+      "start": 1080.0,
+      "end": 1083.0,
+      "start_time": "00:18:00,000",
+      "end_time": "00:18:03,000",
+      "text": "Hợp tác với ai đấy để đẩy kênh"
+    },
+    {
+      "id": 200,
+      "start": 1083.0,
+      "end": 1090.0,
+      "start_time": "00:18:03,000",
+      "end_time": "00:18:10,000",
+      "text": "Hay là như bạn mình làm thì các bạn ấy có thể kết hợp với một đội khác làm về YouTube mới quay dựng"
+    },
+    {
+      "id": 201,
+      "start": 1090.0,
+      "end": 1096.0,
+      "start_time": "00:18:10,000",
+      "end_time": "00:18:16,000",
+      "text": "Thì bạn ấy cần thương hiệu để bán hàng, còn bên kia cần view để ăn tiền"
+    },
+    {
+      "id": 202,
+      "start": 1096.0,
+      "end": 1100.0,
+      "start_time": "00:18:16,000",
+      "end_time": "00:18:20,000",
+      "text": "Thì kết hợp với nhau là bên kia sẽ làm cho các bạn ý về kênh và phát triển"
+    },
+    {
+      "id": 203,
+      "start": 1100.0,
+      "end": 1103.0,
+      "start_time": "00:18:20,000",
+      "end_time": "00:18:23,000",
+      "text": "Còn bạn ấy sẽ làm ở cái mảng bán hàng"
+    },
+    {
+      "id": 204,
+      "start": 1103.0,
+      "end": 1107.0,
+      "start_time": "00:18:23,000",
+      "end_time": "00:18:27,000",
+      "text": "Còn cái tiền từ kênh thì anh em chia nhau như thế nào thì đấy là do các bạn làm"
+    },
+    {
+      "id": 205,
+      "start": 1107.0,
+      "end": 1116.88,
+      "start_time": "00:18:27,000",
+      "end_time": "00:18:36,880",
+      "text": "Các bạn có những offer để các bạn có thể đi nhanh hơn. Và chúng ta bắt đầu tìm được ra điểm mấu chốt và xử lý những điểm mấu chốt đấy."
+    },
+    {
+      "id": 206,
+      "start": 1117.28,
+      "end": 1125.46,
+      "start_time": "00:18:37,280",
+      "end_time": "00:18:45,460",
+      "text": "Thì cứ có những đoạn đấy mình gỡ được ra. Thế là xong. Nhớ là câu hỏi là ai là người có thể hỗ trợ bạn? Chứ đừng đặt cho câu hỏi là mình làm như thế nào."
+    },
+    {
+      "id": 207,
+      "start": 1125.86,
+      "end": 1134.58,
+      "start_time": "00:18:45,860",
+      "end_time": "00:18:54,580",
+      "text": "Thì mình nhớ cái câu hỏi như vậy. Để mình tự vấn bản thân. Ai là người có thể hỗ trợ mình trong cái vấn đề mà xây dựng kênh hay là làm kênh như thế này?"
+    },
+    {
+      "id": 208,
+      "start": 1134.58,
+      "end": 1135.48,
+      "start_time": "00:18:54,580",
+      "end_time": "00:18:55,480",
+      "text": "Đó"
+    },
+    {
+      "id": 209,
+      "start": 1135.48,
+      "end": 1137.08,
+      "start_time": "00:18:55,480",
+      "end_time": "00:18:57,080",
+      "text": "Ok"
+    },
+    {
+      "id": 210,
+      "start": 1137.08,
+      "end": 1139.72,
+      "start_time": "00:18:57,080",
+      "end_time": "00:18:59,720",
+      "text": "Chúng ta đã cùng nhau đi với nhau"
+    },
+    {
+      "id": 211,
+      "start": 1139.72,
+      "end": 1142.54,
+      "start_time": "00:18:59,720",
+      "end_time": "00:19:02,540",
+      "text": "Phương pháp xây dựng kênh YouTube mà không cần nhiều thời gian làm việc"
+    },
+    {
+      "id": 212,
+      "start": 1142.54,
+      "end": 1143.94,
+      "start_time": "00:19:02,540",
+      "end_time": "00:19:03,940",
+      "text": "Một ngày trên một tuần là đủ"
+    },
+    {
+      "id": 213,
+      "start": 1143.94,
+      "end": 1144.9,
+      "start_time": "00:19:03,940",
+      "end_time": "00:19:04,900",
+      "text": "Bạn"
+    },
+    {
+      "id": 214,
+      "start": 1144.9,
+      "end": 1148.7,
+      "start_time": "00:19:04,900",
+      "end_time": "00:19:08,700",
+      "text": "Các bạn không cần giỏi công nghệ đúng không ạ?"
+    },
+    {
+      "id": 215,
+      "start": 1149.14,
+      "end": 1152.26,
+      "start_time": "00:19:09,140",
+      "end_time": "00:19:12,260",
+      "text": "Đến như bây giờ rồi thì các bạn sẽ thấy các bạn không cần giỏi công nghệ"
+    },
+    {
+      "id": 216,
+      "start": 1152.26,
+      "end": 1154.0,
+      "start_time": "00:19:12,260",
+      "end_time": "00:19:14,000",
+      "text": "Cũng không cần giỏi các kỹ năng làm video"
+    },
+    {
+      "id": 217,
+      "start": 1154.0,
+      "end": 1155.92,
+      "start_time": "00:19:14,000",
+      "end_time": "00:19:15,920",
+      "text": "Thậm chí cũng không cần ngoại hình đẹp"
+    },
+    {
+      "id": 218,
+      "start": 1155.92,
+      "end": 1157.04,
+      "start_time": "00:19:15,920",
+      "end_time": "00:19:17,040",
+      "text": "Vẫn có thể làm được bình thường"
+    },
+    {
+      "id": 219,
+      "start": 1157.04,
+      "end": 1158.059,
+      "start_time": "00:19:17,040",
+      "end_time": "00:19:18,059",
+      "text": "Anh em đã thử"
+    },
+    {
+      "id": 220,
+      "start": 1158.059,
+      "end": 1165.259,
+      "start_time": "00:19:18,059",
+      "end_time": "00:19:25,259",
+      "text": "Anh em đã thấy bắt đầu công việc xây dựng kênh YouTube nó bắt đầu nhẹ nhàng hơn chưa? Anh em bắt đầu thấy nó nhẹ nhàng chưa?"
+    },
+    {
+      "id": 221,
+      "start": 1165.259,
+      "end": 1178.559,
+      "start_time": "00:19:25,259",
+      "end_time": "00:19:38,559",
+      "text": "Đúng rồi, bởi vì là khi mà mình hiểu rõ cái bản chất của nó rồi và mình đặt ra những cái câu hỏi đúng thì là mình không bị bế tắc mà mình làm nó bắt đầu nó xuôi hơn rất là nhiều ạ."
+    },
+    {
+      "id": 222,
+      "start": 1179.219,
+      "end": 1187.079,
+      "start_time": "00:19:39,219",
+      "end_time": "00:19:47,079",
+      "text": "Thì anh em có thể làm và khi mà mọi người làm thì đâu phải nhất thiết là cứ ai cũng mong muốn là làm 1 ngày 1 tuần đâu."
+    },
+    {
+      "id": 223,
+      "start": 1187.519,
+      "end": 1191.939,
+      "start_time": "00:19:47,519",
+      "end_time": "00:19:51,939",
+      "text": "Các bạn có thể tập trung mà giai đoạn đầu, giai đoạn đầu các bạn có thể tập trung nhiều hơn cho kênh YouTube chẳng hạn."
+    },
+    {
+      "id": 224,
+      "start": 1191.939,
+      "end": 1194.939,
+      "start_time": "00:19:51,939",
+      "end_time": "00:19:54,939",
+      "text": "Các bạn tập trung mạnh một thời gian đầu tiên để nó ra kết quả sớm."
+    },
+    {
+      "id": 225,
+      "start": 1195.359,
+      "end": 1197.179,
+      "start_time": "00:19:55,359",
+      "end_time": "00:19:57,179",
+      "text": "Thì mình tập trung nhiều thì nó ra kết quả nhanh thôi."
+    },
+    {
+      "id": 226,
+      "start": 1197.279,
+      "end": 1205.439,
+      "start_time": "00:19:57,279",
+      "end_time": "00:20:05,439",
+      "text": "Còn nếu mà dành cho những bạn bận rộn, không có nhiều thời gian thì ý mình muốn nói là các bạn vẫn có thể làm để một cách tối ưu nhất về thời gian của các bạn."
+    },
+    {
+      "id": 227,
+      "start": 1205.439,
+      "end": 1210.859,
+      "start_time": "00:20:05,439",
+      "end_time": "00:20:10,859",
+      "text": "Còn nếu mà các bạn có thời gian và xác định tập trung vào để cho lên nhanh hơn thì chúng ta cũng có cách thức để lên nhanh hơn mà."
+    },
+    {
+      "id": 228,
+      "start": 1211.079,
+      "end": 1215.5,
+      "start_time": "00:20:11,079",
+      "end_time": "00:20:15,500",
+      "text": "Cứ tập trung và làm là nó sẽ ra kết quả nhanh mà."
+    }
+  ]
+}

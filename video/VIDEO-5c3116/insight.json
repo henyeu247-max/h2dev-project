@@ -1,0 +1,94 @@
+{
+  "key_takeaways": [
+    "Mở đầu video đầu tiên trên web của mình, tác giả nói không nhận dạy kèm một kèm một dù nhiều người hỏi vì quá bận quản lý kênh, và chia sẻ miễn phí kinh nghiệm thực chiến trên web, có ghi ngày update ký mới nhất.",
+    "Ngách hướng dẫn hôm nay là tin tức chính trị thị trường Canada, kênh mới một tháng nhưng view rất cao, một nửa là AI một nửa là ghép tổng hợp, giọng đọc là AI, và là kênh cổ lập từ 2006 do mua lại.",
+    "Tác giả phân tích tiêu đề gồm từ khóa chính, từ khóa phụ và từ khóa ngách; ở kênh này ngách là Canada chứ không phải Mỹ, và RPM của Canada không thua kém gì Mỹ.",
+    "Cách lấy kịch bản là vào mục phổ biến của kênh đối thủ, chọn video cao view nhất, sao chép link rồi dán vào một web lấy kịch bản, sau đó dán vào ChatGPT cùng prompt để chạy từng phần bằng Continue; tác giả khuyên đầu tư ChatGPT Plus để viết dài hơn.",
+    "Về sản xuất, giọng đọc làm bằng ElevenLabs hoặc công cụ clone giọng, ghép video nguồn miễn phí chỉ vài giây với video chính trị, tạo ảnh AI thực tế rồi tải lên mục video để chuyển thành video chuyển động, và nhấn mạnh quan trọng nhất là chất lượng kịch bản, giọng đọc, chủ đề và giữ chân người xem."
+  ],
+  "edit_sop": {
+    "primary": "Làm video tin chính trị ngách Canada: lấy kịch bản từ đối thủ, viết lại, tạo voice và ghép nguồn video",
+    "additional": [
+      "Vào kênh đối thủ, mở mục phổ biến, chọn video cao view nhất rồi sao chép link để lấy kịch bản qua web lấy kịch bản",
+      "Dán kịch bản đối thủ vào prompt trong ChatGPT, chạy rồi bấm continue cho các phần tiếp theo đến khi báo hoàn thành",
+      "Copy kịch bản vào file văn bản và lưu lại",
+      "Voice dùng ElevenLabs, chọn giọng hợp hoặc clone giọng đối thủ bằng tool riêng của tác giả",
+      "Tìm nguồn video, hình ảnh free trên các web tác giả chỉ rồi cắt ghép; tải phụ đề SRT của đối thủ để dùng làm phụ đề"
+    ]
+  },
+  "avoid_flags": [
+    "Video về ông Trump chỉ cắt ghép ngắn, khoảng 1-3 giây mỗi đoạn",
+    "Chính sách YouTube ngày 15 tháng 7 siết AI, không nên dùng AI quá nhiều, hãy ghép thêm video thật",
+    "Video phải sinh động, mang giá trị và giữ chân người xem thì không sợ bị quét hay tắt kiếm tiền",
+    "Viết kịch bản dài nên dùng ChatGPT Plus, bản thường viết không tốt"
+  ],
+  "verified_expert_summary": true,
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Video đầu tiên trên web; cập nhật video và key mới thường xuyên"
+    },
+    {
+      "time": "02:11",
+      "seconds": 131,
+      "label": "Key mới ghi rõ ngày cập nhật; bắt đầu video hướng dẫn hôm nay"
+    },
+    {
+      "time": "04:25",
+      "seconds": 265,
+      "label": "từ khóa ngách theo quốc gia: chọn Canada thay vì các nước khác"
+    },
+    {
+      "time": "06:30",
+      "seconds": 390,
+      "label": "Lấy video cao view nhất của kênh đối thủ để lấy kịch bản"
+    },
+    {
+      "time": "08:42",
+      "seconds": 522,
+      "label": "Dùng AI viết kịch bản theo từng phần: bấm Continue để chạy phần tiếp theo"
+    },
+    {
+      "time": "10:47",
+      "seconds": 647,
+      "label": "Chọn giọng đọc ElevenLabs/Minimax, có thể clone giọng đối thủ"
+    },
+    {
+      "time": "13:02",
+      "seconds": 782,
+      "label": "Kinh nghiệm làm nhiều kênh; hướng dẫn tự tạo ảnh"
+    },
+    {
+      "time": "15:05",
+      "seconds": 905,
+      "label": "Edit đơn giản: cắt nguồn video đã tải rồi ghép lại"
+    }
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "ChatGPT",
+    "ElevenLabs",
+    "Kling",
+    "YouTube"
+  ],
+  "sop_steps": [
+    "Vào kênh đối thủ, mở mục phổ biến, chọn video cao view nhất rồi sao chép link để lấy kịch bản qua web lấy kịch bản",
+    "Dán kịch bản đối thủ vào prompt trong ChatGPT, chạy rồi bấm continue cho các phần tiếp theo đến khi báo hoàn thành",
+    "Copy kịch bản vào file văn bản và lưu lại",
+    "Voice dùng ElevenLabs, chọn giọng hợp hoặc clone giọng đối thủ bằng tool riêng của tác giả",
+    "Tìm nguồn video, hình ảnh free trên các web tác giả chỉ rồi cắt ghép; tải phụ đề SRT của đối thủ để dùng làm phụ đề"
+  ],
+  "sku": "VIDEO-5c3116",
+  "title": "Share Key thị trường Canada mới nhất và hướng dẫn làm chi tiết từ A-Z - UPDATE 21/8/2025",
+  "actual_topic": "Share Key thị trường Canada mới nhất và hướng dẫn làm chi tiết từ A-Z - UPDATE 21/8/2025",
+  "channels_mentioned": [
+    "@nelymallorca"
+  ],
+  "visual_audio_checked": true,
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "source_transcript": "video/VIDEO-5c3116/transcript.txt",
+  "market_code": "CA,GLOBAL",
+  "target_market": "Canada / Quốc tế (Global)",
+  "niche_primary": "Tin Tức & Đời Sống Thị Trường Canada"
+}

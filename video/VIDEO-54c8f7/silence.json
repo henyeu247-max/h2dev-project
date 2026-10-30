@@ -1,0 +1,220 @@
+{
+  "engine": "cuda_gpu",
+  "gpu_device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "stft_speech_band": true,
+  "gpu_chunk_bounds": [
+    0.0,
+    162.05,
+    330.9,
+    498.35,
+    672.7,
+    850.6,
+    1029.45,
+    1180.35,
+    1333.4,
+    1483.4,
+    1635.65,
+    1812.45,
+    1991.45,
+    2160.6,
+    2332.85,
+    2503.2,
+    2657.2,
+    2828.95,
+    3009.55,
+    3192.3,
+    3348.75,
+    3524.85,
+    3705.4,
+    3876.6,
+    4045.95,
+    4195.9,
+    4353.32
+  ],
+  "noise_db": -35,
+  "min_duration": 2.5,
+  "silence_regions": [
+    {
+      "start": 250.1,
+      "duration": 2.9,
+      "end": 253.0
+    },
+    {
+      "start": 508.45,
+      "duration": 2.65,
+      "end": 511.1
+    },
+    {
+      "start": 633.2,
+      "duration": 2.5,
+      "end": 635.7
+    },
+    {
+      "start": 1276.35,
+      "duration": 2.75,
+      "end": 1279.1
+    },
+    {
+      "start": 1287.05,
+      "duration": 4.15,
+      "end": 1291.2
+    },
+    {
+      "start": 1420.6,
+      "duration": 2.55,
+      "end": 1423.15
+    },
+    {
+      "start": 1424.55,
+      "duration": 2.65,
+      "end": 1427.2
+    },
+    {
+      "start": 1478.5,
+      "duration": 12.8,
+      "end": 1491.3
+    },
+    {
+      "start": 1501.2,
+      "duration": 2.85,
+      "end": 1504.05
+    },
+    {
+      "start": 1646.9,
+      "duration": 3.2,
+      "end": 1650.1
+    },
+    {
+      "start": 1777.8,
+      "duration": 2.65,
+      "end": 1780.45
+    },
+    {
+      "start": 1790.45,
+      "duration": 4.35,
+      "end": 1794.8
+    },
+    {
+      "start": 1846.05,
+      "duration": 4.55,
+      "end": 1850.6
+    },
+    {
+      "start": 1998.95,
+      "duration": 4.2,
+      "end": 2003.15
+    },
+    {
+      "start": 2025.1,
+      "duration": 4.1,
+      "end": 2029.2
+    },
+    {
+      "start": 2151.3,
+      "duration": 2.85,
+      "end": 2154.15
+    },
+    {
+      "start": 2154.5,
+      "duration": 2.95,
+      "end": 2157.45
+    },
+    {
+      "start": 2328.7,
+      "duration": 4.55,
+      "end": 2333.25
+    },
+    {
+      "start": 2494.25,
+      "duration": 2.65,
+      "end": 2496.9
+    },
+    {
+      "start": 2655.55,
+      "duration": 3.65,
+      "end": 2659.2
+    },
+    {
+      "start": 2672.15,
+      "duration": 2.85,
+      "end": 2675.0
+    },
+    {
+      "start": 2848.65,
+      "duration": 2.6,
+      "end": 2851.25
+    },
+    {
+      "start": 2990.5,
+      "duration": 3.6,
+      "end": 2994.1
+    },
+    {
+      "start": 3129.95,
+      "duration": 2.8,
+      "end": 3132.75
+    },
+    {
+      "start": 3279.25,
+      "duration": 2.75,
+      "end": 3282.0
+    },
+    {
+      "start": 3306.0,
+      "duration": 2.75,
+      "end": 3308.75
+    },
+    {
+      "start": 3419.75,
+      "duration": 3.05,
+      "end": 3422.8
+    },
+    {
+      "start": 3482.5,
+      "duration": 4.65,
+      "end": 3487.15
+    },
+    {
+      "start": 3635.25,
+      "duration": 2.7,
+      "end": 3637.95
+    },
+    {
+      "start": 3640.6,
+      "duration": 4.55,
+      "end": 3645.15
+    },
+    {
+      "start": 3824.4,
+      "duration": 3.8,
+      "end": 3828.2
+    },
+    {
+      "start": 3875.1,
+      "duration": 33.95,
+      "end": 3909.05
+    },
+    {
+      "start": 3956.3,
+      "duration": 5.05,
+      "end": 3961.35
+    },
+    {
+      "start": 3969.25,
+      "duration": 4.7,
+      "end": 3973.95
+    },
+    {
+      "start": 4026.2,
+      "duration": 2.55,
+      "end": 4028.75
+    },
+    {
+      "start": 4110.85,
+      "duration": 242.45,
+      "end": 4353.3
+    }
+  ],
+  "silence_count": 36,
+  "silence_total_sec": 400.3
+}

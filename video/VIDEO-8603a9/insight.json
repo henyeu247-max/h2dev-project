@@ -1,0 +1,82 @@
+{
+  "key_takeaways": [
+    "Tác giả share thêm các ngách nhỏ ở nhiều thị trường; ngách không bao giờ thiếu, quan trọng là quy trình làm, nên tập trung 1-2 ngách và có kết quả rồi mới nhân bản.",
+    "Hai kênh Hong Kong (ngôn ngữ dành cho Đài Loan/Hồng Kông) làm ngách triết lý có một nhân vật đại diện nổi tiếng: view và chỉ số VPH rất cao, cạnh tranh thấp, phù hợp để bán content; các thị trường ngoài US ít cạnh tranh hơn.",
+    "Kênh Hàn thứ ba nói về tâm linh và đời sống, có video viral có video không (hên xui); khuyên bám theo các video nhiều view và bỏ dạng ít view.",
+    "Một kênh view Việt về tâm linh mới 18 video đã đủ điều kiện bật kiếm tiền.",
+    "Một kênh triết lý đời sống Hàn đổi qua lại giữa các nhân vật đại diện: sang nhân vật mới view tăng cao, quay lại nhân vật cũ view thấp; bài học là bám theo ngách/nhân vật đang lên. Video chỉ một ảnh dễ bị lỗi sử dụng lại nội dung (kháng nghị về 85-99% nhưng tốn công)."
+  ],
+  "edit_sop": {
+    "primary": "Share kênh ngách nhỏ ở các thị trường ngoài US (Hong Kong, Hàn Quốc, Việt) để làm bán content",
+    "additional": [
+      "Lấy kịch bản về xào nấu, làm tương tự các kênh mẫu theo quy trình đã hướng dẫn ở video trước.",
+      "Chọn ngách có view cao, vào mục view phổ biến xem chỉ số VPH để chọn video lấy về bán content.",
+      "Bám theo video nhiều view, video ít view thì bỏ.",
+      "Bám theo ngách nhỏ đang lên, ví dụ một nhân vật nổi tiếng đại diện đang có view cao nhất.",
+      "Không dùng một ảnh, ghép nhiều ảnh lại hoặc thêm video không bản quyền free từ các web."
+    ]
+  },
+  "avoid_flags": [
+    "Chính sách YouTube đang siết, không nên làm video chỉ một ảnh vì dễ bị sử dụng lại nội dung hoặc lặp lại nội dung.",
+    "Đừng chỉ tập trung vào thị trường US vì rất khó lên.",
+    "Đừng phô mô quá nhiều ngách, chỉ tập trung một hai ngách rồi có kết quả mới nhân bản.",
+    "Không bám theo ngách nhỏ đang lên là sai lầm: kênh chuyển qua lại giữa các nhân vật thì view lúc cao lúc thấp."
+  ],
+  "verified_expert_summary": true,
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Share thêm các ngách nhỏ trong các thị trường; không ôm nhiều kênh một lúc"
+    },
+    {
+      "time": "01:30",
+      "seconds": 90,
+      "label": "Dịch kênh dạng triết lý có nhân vật đại diện của thị trường đó để xem"
+    },
+    {
+      "time": "03:01",
+      "seconds": 181,
+      "label": "Kênh thứ 3 thị trường Hàn Quốc: tâm linh, cuộc sống; video viral hên xui"
+    },
+    {
+      "time": "04:30",
+      "seconds": 270,
+      "label": "Kênh chuyển sang ngách khác thì view tăng cao"
+    },
+    {
+      "time": "05:59",
+      "seconds": 359,
+      "label": "Chính sách YouTube đang chặt: không dùng một ảnh, ghép nhiều ảnh hoặc video không bản quyền"
+    }
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "Google Dịch"
+  ],
+  "sop_steps": [
+    "Lấy kịch bản về xào nấu, làm tương tự các kênh mẫu theo quy trình đã hướng dẫn ở video trước.",
+    "Chọn ngách có view cao, vào mục view phổ biến xem chỉ số VPH để chọn video lấy về bán content.",
+    "Bám theo video nhiều view, video ít view thì bỏ.",
+    "Bám theo ngách nhỏ đang lên, ví dụ một nhân vật nổi tiếng đại diện đang có view cao nhất.",
+    "Không dùng một ảnh, ghép nhiều ảnh lại hoặc thêm video không bản quyền free từ các web."
+  ],
+  "sku": "VIDEO-8603a9",
+  "title": "Share Key (Ngách Nhỏ) Các Thị Trường HongKong, Hàn, Việt - Update 7/9/2025",
+  "actual_topic": "Share Key (Ngách Nhỏ) Các Thị Trường HongKong, Hàn, Việt - Update 7/9/2025",
+  "channels_mentioned": [
+    "@fortune68studio",
+    "@WiseListen2Wise",
+    "@운세박사-공식",
+    "@TâmBìnhAnLạc",
+    "@wealtharrow",
+    "@풍수연구소999",
+    "@은빛인생여행"
+  ],
+  "visual_audio_checked": true,
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "source_transcript": "video/VIDEO-8603a9/transcript.txt",
+  "market_code": "HK,KR,VN",
+  "target_market": "Hồng Kông / Hàn Quốc / Việt Nam",
+  "niche_primary": "Tâm Linh & Thu Hút May Mắn"
+}

@@ -1,0 +1,75 @@
+{
+  "sku": "VIDEO-b559c8",
+  "title": "Hướng dẫn làm thumb ngách nhỏ trong key người que - Chill Dude - chi tiết",
+  "actual_topic": "Hướng dẫn làm thumb ngách nhỏ trong key người que - Chill Dude - chi tiết",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Thiết Kế Thumbnail Người Que (Chill Dude)",
+  "niche_id": "faceless-general",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "key_takeaways": [
+    "Video hướng dẫn làm thumbnail cho ngách người que, tác giả nói prompt đã có trên kênh YouTube và sẽ để trong thư mục đi kèm.",
+    "Bước đầu mở tool tạo ảnh AI dùng model Flux Schnell, viết prompt nhân vật cartoon người que nét vẽ tay run, style Cyanide & Happiness, tỉ lệ 16:9.",
+    "Tinh chỉnh prompt mô tả biểu cảm khuôn mặt (mắt xoáy, răng nghiến) và tóc gai vàng nhọn, rồi bấm Generate để tạo loạt biến thể nhân vật.",
+    "Import nhân vật vào Photopea, tách nền trắng bằng Magic Wand và chỉnh lại nét vẽ cho sạch, sau đó tạo thêm 4 nhân vật biểu cảm khác nhau (tức giận, cười toe, ăn burger, mắt xoáy) xếp hàng ngang.",
+    "Ghép nhân vật vào bố cục thumbnail với tiêu đề chữ đậm \"Totally wrong Facts everyone still believes\", cân chỉnh vị trí từng layer, tinh chỉnh độ tương phản rồi xuất file thành phẩm."
+  ],
+  "edit_sop": {
+    "primary": "Làm thumbnail người que kiểu Cyanide & Happiness bằng AI tạo ảnh và Photopea",
+    "additional": [
+      "Dùng tool tạo ảnh AI (model Flux Schnell), viết prompt nhân vật stick figure nét vẽ tay run, tỉ lệ 16:9",
+      "Tinh chỉnh prompt biểu cảm (mắt xoáy, răng nghiến), tóc gai vàng nhọn rồi bấm Generate tạo nhiều biến thể",
+      "Import nhân vật vào Photopea, tách nền trắng bằng Magic Wand, chỉnh nét vẽ cho sạch",
+      "Tạo thêm 4 nhân vật biểu cảm khác nhau, xếp hàng ngang rồi ghép vào bố cục thumbnail kèm tiêu đề chữ đậm",
+      "Tinh chỉnh độ tương phản, rà bố cục và xuất file"
+    ]
+  },
+  "avoid_flags": [
+    "Khi đưa nhân vật vẽ nét tay vào phần mềm thiết kế ảnh thu nhỏ cần nhớ tách sạch phông nền trắng và chỉnh lại nét vẽ trước khi ghép vào bố cục",
+    "Tránh để một biểu cảm nhân vật đơn điệu trên ảnh thu nhỏ mà nên tạo nhiều biểu cảm khuôn mặt khác nhau xếp hàng ngang kết hợp chữ tiêu đề đậm"
+  ],
+  "tools_mentioned": [
+    "Flux Schnell",
+    "Photopea"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu bài hướng dẫn thiết kế thumbnail cho ngách người que (Stickman)"
+    },
+    {
+      "time": "00:05",
+      "seconds": 5,
+      "label": "Mục tiêu tạo thumbnail chuẩn phong cách key người que"
+    },
+    {
+      "time": "00:09",
+      "seconds": 9,
+      "label": "Nguồn mẫu prompt tạo ảnh đã chia sẻ trên kênh YouTube"
+    },
+    {
+      "time": "00:14",
+      "seconds": 14,
+      "label": "Đính kèm sẵn file prompt trong thư mục tài liệu bài học"
+    },
+    {
+      "time": "00:19",
+      "seconds": 19,
+      "label": "Bắt đầu phần thực hành trực quan trên màn hình (nhạc nền 00:22–24:21)"
+    }
+  ],
+  "analysis_method": "forensic_multimodal_qa",
+  "accuracy_status": "verified_from_transcript",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-b559c8/transcript.txt",
+  "sop_steps": [
+    "Dùng tool tạo ảnh AI (model Flux Schnell), viết prompt nhân vật stick figure nét vẽ tay run, tỉ lệ 16:9",
+    "Tinh chỉnh prompt biểu cảm (mắt xoáy, răng nghiến), tóc gai vàng nhọn rồi bấm Generate tạo nhiều biến thể",
+    "Import nhân vật vào Photopea, tách nền trắng bằng Magic Wand, chỉnh nét vẽ cho sạch",
+    "Tạo thêm 4 nhân vật biểu cảm khác nhau, xếp hàng ngang rồi ghép vào bố cục thumbnail kèm tiêu đề chữ đậm",
+    "Tinh chỉnh độ tương phản, rà bố cục và xuất file"
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "sku": "VIDEO-dbd487",
+  "duration": 116.383333,
+  "language": "Vietnamese",
+  "full_text": "Rồi video này thì em sẽ để cái link Bilibili ở dưới mô tả nha mọi người. Và đây là kênh gốc của bên Bilibili nha. Bởi vì bên Bilibili thì nó mới cập nhật cái dạng câu cá này là nhanh nhất. Chứ ở bên Douyin là nó không có cập nhật nha. Mọi người có theo dõi thì mọi người biết. Đây em dịch cho mọi người xem này thấy không. Cái lúc em quay video này là tối ngày 27 nha mọi người. Thì nó đã ra tập 41 rồi. Thì hôm nay là ngày 28 thì nó sẽ ra tập 42 nha. Về cái đặc biệt quan trọng và hay ở đây á. Thì em sẽ cho mọi người một cái giờ cụ thể để mọi người vào canh, mọi người lấy và mọi người làm nhanh nhất có thể nha Đó, thì là cái kênh này là cập nhật video vào lúc là tầm là 15h20 đến 30 phút nha mọi người Là 3h20 đến 3h30 chiều nha mọi người Đó, thì mọi người sẽ, thời điểm này mọi người vào canh và mọi người reload liên tục Ở cái kênh này thì nó sẽ ra video mới thì mọi người lấy về mọi người bem làm luôn nha Bởi vì em đã test và em đã làm rồi Mọi người chưa xem video ở trong Youtube thì mọi người lên xem nha Em vừa đăng lúc nãy lúc tối ấy Đây, mọi người bấm vào video xong rồi mọi người sao chép thôi Rồi mọi người có thể dùng tool của em share free á Hoặc là anh em dùng web cũng được Nhưng mà Bilibili thì không có web nào mà tải ngon đâu Mọi người có thể dùng tool nha Rồi còn cách edit thì mọi người đã biết quá rành rồi đúng không Nó cũng chỉ như đó thôi Hoặc là anh em muốn xem lại về cái dạng này á Thì mọi người có thể lên lại youtube của em Kênh YouTube H2DEV của em nha Em cũng có vừa up video hướng dẫn edit đó nha mọi người Về cái quy trình cách edit cái dạng Reup Vietsub như này thì nó bao nhiêu đó Cái quy trình nó cũng chỉ có bao nhiêu đó thôi mọi người Nó cũng giống như những cái dạng khác thôi Đấy vậy em cũng có hướng dẫn rất là nhiều rồi Thì mọi người xem lại nha Còn em nào mà quen rồi thì mọi người cứ bem thôi Còn cái link gốc của cái kênh Bilibili này Thì em sẽ để dưới mô tả nha Mọi người lướt chuột xuống Mọi người mà dùng điện thoại thì mọi người bấm vào mục mô tả là mọi người thấy thôi",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.7,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:03,700",
+      "text": "Rồi video này thì em sẽ để cái link Bilibili ở dưới mô tả nha mọi người."
+    },
+    {
+      "id": 2,
+      "start": 3.84,
+      "end": 5.86,
+      "start_time": "00:00:03,840",
+      "end_time": "00:00:05,860",
+      "text": "Và đây là kênh gốc của bên Bilibili nha."
+    },
+    {
+      "id": 3,
+      "start": 6.3,
+      "end": 10.12,
+      "start_time": "00:00:06,300",
+      "end_time": "00:00:10,120",
+      "text": "Bởi vì bên Bilibili thì nó mới cập nhật cái dạng câu cá này là nhanh nhất."
+    },
+    {
+      "id": 4,
+      "start": 10.6,
+      "end": 12.22,
+      "start_time": "00:00:10,600",
+      "end_time": "00:00:12,220",
+      "text": "Chứ ở bên Douyin là nó không có cập nhật nha."
+    },
+    {
+      "id": 5,
+      "start": 12.3,
+      "end": 13.58,
+      "start_time": "00:00:12,300",
+      "end_time": "00:00:13,580",
+      "text": "Mọi người có theo dõi thì mọi người biết."
+    },
+    {
+      "id": 6,
+      "start": 13.92,
+      "end": 15.4,
+      "start_time": "00:00:13,920",
+      "end_time": "00:00:15,400",
+      "text": "Đây em dịch cho mọi người xem này thấy không."
+    },
+    {
+      "id": 7,
+      "start": 15.58,
+      "end": 18.18,
+      "start_time": "00:00:15,580",
+      "end_time": "00:00:18,180",
+      "text": "Cái lúc em quay video này là tối ngày 27 nha mọi người."
+    },
+    {
+      "id": 8,
+      "start": 18.34,
+      "end": 20.0,
+      "start_time": "00:00:18,340",
+      "end_time": "00:00:20,000",
+      "text": "Thì nó đã ra tập 41 rồi."
+    },
+    {
+      "id": 9,
+      "start": 20.0,
+      "end": 23.34,
+      "start_time": "00:00:20,000",
+      "end_time": "00:00:23,340",
+      "text": "Thì hôm nay là ngày 28 thì nó sẽ ra tập 42 nha."
+    },
+    {
+      "id": 10,
+      "start": 23.62,
+      "end": 25.46,
+      "start_time": "00:00:23,620",
+      "end_time": "00:00:25,460",
+      "text": "Về cái đặc biệt quan trọng và hay ở đây á."
+    },
+    {
+      "id": 11,
+      "start": 25.46,
+      "end": 30.9,
+      "start_time": "00:00:25,460",
+      "end_time": "00:00:30,900",
+      "text": "Thì em sẽ cho mọi người một cái giờ cụ thể để mọi người vào canh, mọi người lấy và mọi người làm nhanh nhất có thể nha"
+    },
+    {
+      "id": 12,
+      "start": 30.9,
+      "end": 37.42,
+      "start_time": "00:00:30,900",
+      "end_time": "00:00:37,420",
+      "text": "Đó, thì là cái kênh này là cập nhật video vào lúc là tầm là 15h20 đến 30 phút nha mọi người"
+    },
+    {
+      "id": 13,
+      "start": 37.42,
+      "end": 40.22,
+      "start_time": "00:00:37,420",
+      "end_time": "00:00:40,220",
+      "text": "Là 3h20 đến 3h30 chiều nha mọi người"
+    },
+    {
+      "id": 14,
+      "start": 40.22,
+      "end": 44.4,
+      "start_time": "00:00:40,220",
+      "end_time": "00:00:44,400",
+      "text": "Đó, thì mọi người sẽ, thời điểm này mọi người vào canh và mọi người reload liên tục"
+    },
+    {
+      "id": 15,
+      "start": 44.4,
+      "end": 49.58,
+      "start_time": "00:00:44,400",
+      "end_time": "00:00:49,580",
+      "text": "Ở cái kênh này thì nó sẽ ra video mới thì mọi người lấy về mọi người bem làm luôn nha"
+    },
+    {
+      "id": 16,
+      "start": 49.58,
+      "end": 51.0,
+      "start_time": "00:00:49,580",
+      "end_time": "00:00:51,000",
+      "text": "Bởi vì em đã test và em đã làm rồi"
+    },
+    {
+      "id": 17,
+      "start": 51.0,
+      "end": 54.0,
+      "start_time": "00:00:51,000",
+      "end_time": "00:00:54,000",
+      "text": "Mọi người chưa xem video ở trong Youtube thì mọi người lên xem nha"
+    },
+    {
+      "id": 18,
+      "start": 54.0,
+      "end": 55.6,
+      "start_time": "00:00:54,000",
+      "end_time": "00:00:55,600",
+      "text": "Em vừa đăng lúc nãy lúc tối ấy"
+    },
+    {
+      "id": 19,
+      "start": 55.6,
+      "end": 58.44,
+      "start_time": "00:00:55,600",
+      "end_time": "00:00:58,440",
+      "text": "Đây, mọi người bấm vào video xong rồi mọi người sao chép thôi"
+    },
+    {
+      "id": 20,
+      "start": 58.44,
+      "end": 61.58,
+      "start_time": "00:00:58,440",
+      "end_time": "00:01:01,580",
+      "text": "Rồi mọi người có thể dùng tool của em share free á"
+    },
+    {
+      "id": 21,
+      "start": 61.58,
+      "end": 62.96,
+      "start_time": "00:01:01,580",
+      "end_time": "00:01:02,960",
+      "text": "Hoặc là anh em dùng web cũng được"
+    },
+    {
+      "id": 22,
+      "start": 62.96,
+      "end": 66.24,
+      "start_time": "00:01:02,960",
+      "end_time": "00:01:06,240",
+      "text": "Nhưng mà Bilibili thì không có web nào mà tải ngon đâu"
+    },
+    {
+      "id": 23,
+      "start": 66.24,
+      "end": 68.0,
+      "start_time": "00:01:06,240",
+      "end_time": "00:01:08,000",
+      "text": "Mọi người có thể dùng tool nha"
+    },
+    {
+      "id": 24,
+      "start": 68.0,
+      "end": 71.0,
+      "start_time": "00:01:08,000",
+      "end_time": "00:01:11,000",
+      "text": "Rồi còn cách edit thì mọi người đã biết quá rành rồi đúng không"
+    },
+    {
+      "id": 25,
+      "start": 71.0,
+      "end": 72.26,
+      "start_time": "00:01:11,000",
+      "end_time": "00:01:12,260",
+      "text": "Nó cũng chỉ như đó thôi"
+    },
+    {
+      "id": 26,
+      "start": 72.26,
+      "end": 74.62,
+      "start_time": "00:01:12,260",
+      "end_time": "00:01:14,620",
+      "text": "Hoặc là anh em muốn xem lại về cái dạng này á"
+    },
+    {
+      "id": 27,
+      "start": 74.62,
+      "end": 76.68,
+      "start_time": "00:01:14,620",
+      "end_time": "00:01:16,680",
+      "text": "Thì mọi người có thể lên lại youtube của em"
+    },
+    {
+      "id": 28,
+      "start": 76.68,
+      "end": 78.32,
+      "start_time": "00:01:16,680",
+      "end_time": "00:01:18,320",
+      "text": "Kênh YouTube H2DEV của em nha"
+    },
+    {
+      "id": 29,
+      "start": 78.32,
+      "end": 80.9,
+      "start_time": "00:01:18,320",
+      "end_time": "00:01:20,900",
+      "text": "Em cũng có vừa up video hướng dẫn edit đó nha mọi người"
+    },
+    {
+      "id": 30,
+      "start": 80.9,
+      "end": 83.42,
+      "start_time": "00:01:20,900",
+      "end_time": "00:01:23,420",
+      "text": "Về cái quy trình cách edit cái dạng Reup"
+    },
+    {
+      "id": 31,
+      "start": 83.42,
+      "end": 85.5,
+      "start_time": "00:01:23,420",
+      "end_time": "00:01:25,500",
+      "text": "Vietsub như này thì nó bao nhiêu đó"
+    },
+    {
+      "id": 32,
+      "start": 85.5,
+      "end": 87.98,
+      "start_time": "00:01:25,500",
+      "end_time": "00:01:27,980",
+      "text": "Cái quy trình nó cũng chỉ có bao nhiêu đó thôi mọi người"
+    },
+    {
+      "id": 33,
+      "start": 88.0,
+      "end": 89.9,
+      "start_time": "00:01:28,000",
+      "end_time": "00:01:29,900",
+      "text": "Nó cũng giống như những cái dạng khác thôi"
+    },
+    {
+      "id": 34,
+      "start": 89.9,
+      "end": 91.88,
+      "start_time": "00:01:29,900",
+      "end_time": "00:01:31,880",
+      "text": "Đấy vậy em cũng có hướng dẫn rất là nhiều rồi"
+    },
+    {
+      "id": 35,
+      "start": 91.88,
+      "end": 93.24,
+      "start_time": "00:01:31,880",
+      "end_time": "00:01:33,240",
+      "text": "Thì mọi người xem lại nha"
+    },
+    {
+      "id": 36,
+      "start": 93.24,
+      "end": 95.42,
+      "start_time": "00:01:33,240",
+      "end_time": "00:01:35,420",
+      "text": "Còn em nào mà quen rồi thì mọi người cứ bem thôi"
+    },
+    {
+      "id": 37,
+      "start": 95.42,
+      "end": 98.16,
+      "start_time": "00:01:35,420",
+      "end_time": "00:01:38,160",
+      "text": "Còn cái link gốc của cái kênh Bilibili này"
+    },
+    {
+      "id": 38,
+      "start": 98.16,
+      "end": 99.56,
+      "start_time": "00:01:38,160",
+      "end_time": "00:01:39,560",
+      "text": "Thì em sẽ để dưới mô tả nha"
+    },
+    {
+      "id": 39,
+      "start": 99.56,
+      "end": 100.88,
+      "start_time": "00:01:39,560",
+      "end_time": "00:01:40,880",
+      "text": "Mọi người lướt chuột xuống"
+    },
+    {
+      "id": 40,
+      "start": 100.88,
+      "end": 104.48,
+      "start_time": "00:01:40,880",
+      "end_time": "00:01:44,480",
+      "text": "Mọi người mà dùng điện thoại thì mọi người bấm vào mục mô tả là mọi người thấy thôi"
+    }
+  ],
+  "total_segments": 40
+}

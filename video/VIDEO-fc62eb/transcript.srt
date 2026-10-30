@@ -1,0 +1,519 @@
+1
+00:00:00,000 --> 00:00:05,680
+Chào anh chị em học viên, hôm nay chúng ta sẽ đến với một cái bài cực kỳ quan trọng, hiểu về Prompt.
+
+2
+00:00:05,820 --> 00:00:12,160
+Prompt giúp chúng ta sẽ tạo ra được tất cả những câu chuyện, video hoặc là công việc.
+
+3
+00:00:12,360 --> 00:00:17,400
+Hôm nay chúng ta sẽ hiểu về Prompt, Prompt để kết hợp, để sản xuất các video AI hiệu quả.
+
+4
+00:00:17,540 --> 00:00:19,400
+Chúng ta sẽ đến với Prompt cơ bản.
+
+5
+00:00:20,000 --> 00:00:23,040
+Ở đây tôi có một nhân vật, đây là nhân vật Stickman.
+
+6
+00:00:23,440 --> 00:00:27,480
+Tôi kéo vào Google Flow, hoặc tôi có thể kéo vào ChatGPT.
+
+7
+00:00:27,480 --> 00:00:35,120
+Nếu mà anh chị viết một cái Prompt đơn giản để tạo ra một hình ảnh nhân vật này đang cầm một đồ vật gì đó thì anh chị sẽ viết như thế nào.
+
+8
+00:00:36,220 --> 00:00:48,440
+Hãy tạo cho tôi nhân vật này đang ôm 1 bao gạo, còn lại giữ nguyên chi tiết.
+
+9
+00:00:49,440 --> 00:00:53,020
+Và tôi sẽ thêm cái nhân vật này làm nhân vật tham chiếu.
+
+10
+00:00:53,020 --> 00:01:01,060
+Ok, chúng ta sẽ xem là nhân vật này sẽ ôm cái gì. Đây là cái tư duy về chỉ viết một
+
+11
+00:01:01,060 --> 00:01:09,100
+Prompt, ý là các bạn chỉ tạo ra được một hình ảnh trong một quá trình thời gian làm việc của các bạn.
+
+12
+00:01:09,100 --> 00:01:14,780
+Nếu mà các bạn hay theo những cái chủ nghĩa mà làm dạng Story
+
+13
+00:01:14,780 --> 00:01:18,160
+thì các bạn nếu mà các bạn tạo như thế này từng cảnh một luôn
+
+14
+00:01:18,160 --> 00:01:19,660
+Nó rất là lâu
+
+15
+00:01:19,660 --> 00:01:21,560
+Nó rất là khó chịu
+
+16
+00:01:21,560 --> 00:01:23,840
+Để mà chúng ta làm một cái việc hiệu quả
+
+17
+00:01:23,840 --> 00:01:25,420
+Một video dài hiệu quả
+
+18
+00:01:25,420 --> 00:01:26,760
+Nhưng khi
+
+19
+00:01:26,760 --> 00:01:28,700
+Khi
+
+20
+00:01:28,700 --> 00:01:31,000
+Khi tôi dùng
+
+21
+00:01:31,000 --> 00:01:33,340
+ChatGPT kết hợp với
+
+22
+00:01:33,340 --> 00:01:35,180
+Một câu lệnh
+
+23
+00:01:35,180 --> 00:01:37,116
+Để tạo ra một Master Prompt
+
+24
+00:01:37,116 --> 00:01:40,836
+Tôi sẽ tải cái hình ảnh nhân vật gốc này
+
+25
+00:01:40,836 --> 00:01:44,376
+Bây giờ
+
+26
+00:01:44,376 --> 00:01:45,856
+Cái quan trọng là cái này
+
+27
+00:01:45,856 --> 00:01:49,056
+Bây giờ chúng ta sẽ tạo ra một Master Prompt
+
+28
+00:01:49,056 --> 00:01:49,816
+Như sau
+
+29
+00:01:49,816 --> 00:01:53,296
+Hãy tạo cho tôi
+
+30
+00:01:53,296 --> 00:01:56,296
+Master Prompt
+
+31
+00:01:56,296 --> 00:01:57,756
+Khi tôi
+
+32
+00:01:57,756 --> 00:01:59,016
+Gửi
+
+33
+00:01:59,016 --> 00:02:01,396
+Nhân vật
+
+34
+00:02:01,396 --> 00:02:03,756
+Lên
+
+35
+00:02:03,756 --> 00:02:04,216
+Flow
+
+36
+00:02:04,216 --> 00:02:09,236
+Cái quan trọng là cái này nha
+
+37
+00:02:09,236 --> 00:02:11,096
+Khi tôi gửi
+
+38
+00:02:11,096 --> 00:02:12,736
+Nhân vật này lên Google Flow
+
+39
+00:02:12,736 --> 00:02:14,836
+Điều gì khiến tôi đang nói
+
+40
+00:02:14,836 --> 00:02:16,476
+Đến là tôi vất
+
+41
+00:02:16,476 --> 00:02:18,316
+Cái hình ảnh này lên Google Flow
+
+42
+00:02:18,316 --> 00:02:20,676
+Tại vì là tôi sẽ tạo ra một cái
+
+43
+00:02:20,676 --> 00:02:23,016
+Hình ảnh khác trên Google Flow
+
+44
+00:02:23,016 --> 00:02:26,716
+hoặc bất kể con AI khác thì các bạn phải áp dụng cách này.
+
+45
+00:02:27,000 --> 00:02:33,383
+Khi tôi gửi ảnh nhân vật này lên Google
+
+46
+00:02:33,383 --> 00:02:40,049
+Flow, bạn hãy tạo cho tôi 30 Prompt
+
+47
+00:02:40,049 --> 00:02:46,716
+để khi tôi gửi hình ảnh này lại ChatGPT.
+
+48
+00:02:46,716 --> 00:02:47,296
+ChatGPT.
+
+49
+00:02:47,376 --> 00:03:00,236
+Bạn hãy dựa vào 30 bối cảnh hàng ngày của một con người.
+
+50
+00:03:00,400 --> 00:03:03,720
+Tạo cho tôi 30 Prompt.
+
+51
+00:03:05,080 --> 00:03:09,420
+Yêu cầu các Prompt thay đổi.
+
+52
+00:03:11,380 --> 00:03:12,860
+Bối cảnh.
+
+53
+00:03:14,760 --> 00:03:16,000
+Hành động.
+
+54
+00:03:18,700 --> 00:03:19,360
+Sự vật.
+
+55
+00:03:20,360 --> 00:03:22,780
+Sự việc xảy ra.
+
+56
+00:03:23,360 --> 00:03:25,580
+Sự vật, sự việc xảy ra.
+
+57
+00:03:25,580 --> 00:03:32,247
+ra các góc quay phù hợp cho các Prompt.
+
+58
+00:03:32,247 --> 00:03:38,913
+Cảm xúc của nhân vật. Bây giờ, hãy
+
+59
+00:03:38,913 --> 00:03:45,580
+tạo cho tôi một Master Prompt để tôi gửi
+
+60
+00:03:45,580 --> 00:03:52,880
+Cho ChatGPT tạo ra 30 Prompt.
+
+61
+00:03:52,880 --> 00:03:56,680
+Chi tiết và đầy đủ.
+
+62
+00:03:59,800 --> 00:04:01,960
+Cái quan trọng là cái như thế này.
+
+63
+00:04:03,000 --> 00:04:10,940
+Nó sẽ tạo ra một Master Prompt cho các bạn là nó sẽ dựa vào những cái yêu cầu đơn giản của các bạn.
+
+64
+00:04:11,200 --> 00:04:12,000
+Sau đó nó sẽ tạo ra.
+
+65
+00:04:12,000 --> 00:04:14,980
+Anh em anh nhìn thấy những cái Prompt rất là dài
+
+66
+00:04:14,980 --> 00:04:17,360
+Ở trên Facebook
+
+67
+00:04:17,360 --> 00:04:19,160
+Mà người ta nốt ra
+
+68
+00:04:19,160 --> 00:04:21,620
+Thật ra là không ai rảnh lờ đi
+
+69
+00:04:21,620 --> 00:04:24,360
+Ngồi nốt ra những cái Prompt như thế này
+
+70
+00:04:24,360 --> 00:04:26,120
+Cái Master Prompt như thế này
+
+71
+00:04:26,120 --> 00:04:27,940
+Tôi nhìn sao chép này
+
+72
+00:04:27,940 --> 00:04:30,120
+Bây giờ tôi sẽ tạo một đoạn chat mới
+
+73
+00:04:32,000 --> 00:04:32,826
+Và dán vào.
+
+74
+00:04:32,826 --> 00:04:39,936
+Bạn có thể yêu cầu nó làm gì ạ? Dựa vào câu chuyện này, hãy tạo cho tôi những gì
+
+75
+00:04:39,936 --> 00:04:47,046
+ạ? 30 Prompt, 300 Prompt. Thì bắt buộc nhân vật của bạn nó sẽ dựa theo câu chuyện đấy.
+
+76
+00:04:47,666 --> 00:04:57,413
+Các bạn nhìn nhé. Nó sẽ tạo cho các bạn là 30 Prompt. Đây là nó viết đến 10 Prompt rồi.
+
+77
+00:04:57,413 --> 00:05:07,159
+Tiếp tục. 10 Prompt. Tiếp tục. Đây là một cái Master Prompt để cho các bạn hiểu được là cái giá
+
+78
+00:05:07,159 --> 00:05:16,906
+trị của tạo những cái video AI. Copy Prompt thứ nhất. Sang nhé. Tôi dùng câu lệnh. Thêm một câu lệnh.
+
+79
+00:05:18,000 --> 00:05:23,666
+Tôi sẽ tạo 1 hình 1
+
+80
+00:05:23,666 --> 00:05:26,666
+ở 2 hình 1
+
+81
+00:05:26,666 --> 00:05:28,666
+Prompt thứ 2
+
+82
+00:05:28,666 --> 00:05:35,666
+bắt buộc phải có 1 cái Master Prompt ra
+
+83
+00:05:35,666 --> 00:05:38,666
+nếu mà kia là chúng ta sẽ làm
+
+84
+00:05:38,666 --> 00:05:41,666
+nếu mà chúng ta viết 1 cái 1 thì nó sẽ là thủ công
+
+85
+00:05:41,666 --> 00:05:44,666
+còn khi mà chúng ta viết
+
+86
+00:05:44,900 --> 00:05:55,480
+Cái gì ạ? Viết ra 1 cái Master Prompt, để ChatGPT tạo ra 1 cái Master Prompt thì nó là 1 cái chuyên nghiệp cao hơn.
+
+87
+00:05:58,520 --> 00:06:04,780
+Chúng ta sẽ có những cái tư duy để tạo ra 1 cái Master Prompt cho anh chị.
+
+88
+00:06:05,700 --> 00:06:12,960
+Ví dụ như 1 cái Prompt thứ nhất, anh chị nhớ là nó sẽ cố định cho các bạn là ok.
+
+89
+00:06:12,960 --> 00:06:20,790
+Nhân vật này, cuộc sống hàng ngày, tôi chỉ nói với anh chị là, cái đơn giản nhất
+
+90
+00:06:20,790 --> 00:06:28,620
+của tôi ở trong cái câu lệnh, đây gọi là câu lệnh yêu cầu, là tôi bảo gì ạ?
+
+91
+00:06:28,620 --> 00:06:35,820
+Khi tôi gửi ảnh nhân vật này lên Google Flow, bạn hãy tạo cho tôi 30 Prompt
+
+92
+00:06:35,820 --> 00:06:45,380
+Để khi gửi hình ảnh này lại, ChatGPT, bạn hãy dựa vào 30 bối cảnh hàng ngày của một con người
+
+93
+00:06:45,380 --> 00:06:50,320
+Ý là trong cái bối cảnh, 30 cái bối cảnh hàng ngày của một con người này
+
+94
+00:06:50,320 --> 00:06:52,180
+Các bạn
+
+95
+00:06:52,180 --> 00:06:55,240
+Bạn có thể thay đổi
+
+96
+00:06:55,240 --> 00:06:57,160
+Thành câu chuyện
+
+97
+00:06:57,160 --> 00:06:59,540
+Nhưng mà bạn phải tư duy
+
+98
+00:06:59,540 --> 00:07:00,360
+Đặt cho tôi
+
+99
+00:07:00,360 --> 00:07:01,960
+Ở đây là tôi đã hành động
+
+100
+00:07:01,960 --> 00:07:03,600
+Sự việc xảy ra
+
+101
+00:07:03,600 --> 00:07:06,200
+Và các bạn muốn nhất quán
+
+102
+00:07:06,200 --> 00:07:09,740
+Muốn nhất quán như thế nào
+
+103
+00:07:09,740 --> 00:07:10,320
+Nó cũng
+
+104
+00:07:10,320 --> 00:07:12,620
+được kể cả ví dụ như nhân vật này
+
+105
+00:07:12,620 --> 00:07:13,940
+đang ngồi trong ngôi nhà này
+
+106
+00:07:13,940 --> 00:07:16,220
+nhưng góc quay khác đi nếu
+
+107
+00:07:16,220 --> 00:07:18,500
+bạn tải lại một hình ảnh bất kỳ
+
+108
+00:07:18,500 --> 00:07:19,400
+của nhân vật ấy
+
+109
+00:07:19,400 --> 00:07:22,300
+đấy là cái Master Prompt yêu cầu
+
+110
+00:07:22,300 --> 00:07:24,680
+là đây là những cái công việc
+
+111
+00:07:24,680 --> 00:07:26,000
+hàng ngày gì của một thanh niên
+
+112
+00:07:26,000 --> 00:07:33,391
+Đây, ngủ dậy, đánh răng, đọc báo, ăn sáng, đi chơi. Và
+
+113
+00:07:33,391 --> 00:07:40,561
+tôi sẽ dùng cái Prompt nó tạo vừa xong, Prompt 11.
+
+114
+00:07:42,941 --> 00:07:53,621
+Cứ phải có ảnh tham chiếu. Nếu mà các bạn làm thủ công, viết từng một Prompt 1, đúng không? Thì nó rất là lâu, mất thời gian.
+
+115
+00:07:53,621 --> 00:08:05,961
+Nhưng mà khi các bạn làm như thế này thì cái tỷ lệ để sản xuất video nó cực kì nhanh. Đó là một cách mà các bạn sản xuất.
+
+116
+00:08:05,961 --> 00:08:12,201
+Prompt thứ 13 này. Khi là tôi chỉ lấy mấy Prompt thôi. Tôi không lấy nhiều.
+
+117
+00:08:12,201 --> 00:08:19,581
+Prompt 14
+
+118
+00:08:19,581 --> 00:08:28,071
+cái việc ở đây là việc tạo ra Master Prompt là các bạn phải ghi nhớ
+
+119
+00:08:28,071 --> 00:08:36,561
+là một chúng ta phải có câu lệnh yêu cầu ChatGPT viết ra một cái Master Prompt
+
+120
+00:08:36,950 --> 00:08:43,230
+Đấy là một cái chi tiết khá quan trọng để người làm YouTube có thể hiểu được.
+
+121
+00:08:44,130 --> 00:08:48,210
+Các bạn phải viết ra được cái gì ạ? Mong muốn của các bạn.
+
+122
+00:08:49,490 --> 00:08:55,090
+Ví dụ như bạn muốn viết là nhân vật này làm gì, ngồi làm gì, ăn gì, ăn gì.
+
+123
+00:08:55,770 --> 00:09:02,930
+Ví dụ một công việc hàng ngày, một câu chuyện mà các bạn cứ ngồi các bạn dựa trên một câu chuyện story luôn.
+
+124
+00:09:02,930 --> 00:09:06,910
+Mà các bạn ngồi các bạn làm từng một cái hình ảnh một thì không được.
+
+125
+00:09:08,390 --> 00:09:10,410
+Bắt buộc bạn phải tạo ra như thế này.
+
+126
+00:09:11,170 --> 00:09:14,190
+Đây là một cái Master Prompt các bạn cần ghi nhớ cho tôi.
+
+127
+00:09:15,050 --> 00:09:16,690
+Yêu cầu các bạn ở đây là gì ạ?
+
+128
+00:09:17,270 --> 00:09:19,690
+Các bạn ghi nhớ cho tôi cái Prompt đơn giản như thế này.
+
+129
+00:09:20,210 --> 00:09:32,910
+Trước khi muốn tạo ra một cái video hoàn chỉnh thì chúng ta phải nghiêm túc viết ra những cái khó để cho ChatGPT nó viết ra cho mình.
+
+130
+00:09:32,930 --> 00:09:44,290
+nó làm ra cho chúng ta một cái Master Prompt hoàn chỉnh. Đấy là một cái tư duy để anh chị sản xuất video trên nền tảng YouTube này. Ok, chào anh chị em.

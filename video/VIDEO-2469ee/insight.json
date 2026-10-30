@@ -1,0 +1,80 @@
+{
+  "sku": "VIDEO-2469ee",
+  "title": "SHARE THÊM NGÁCH REUP CỰC MỚI NHẤT - CÁC KÊNH ĐỐI THỦ MỚI CHỈ 5 VIDEO VÀ HƯỚNG DẪN TƯ DUY TỰ SEARCH RA NGUỒN KÊNH GỐC ĐỂ LẤY VÀ LÀM",
+  "actual_topic": "SHARE THÊM NGÁCH REUP CỰC MỚI NHẤT - CÁC KÊNH ĐỐI THỦ MỚI CHỈ 5 VIDEO VÀ HƯỚNG DẪN TƯ DUY TỰ SEARCH RA NGUỒN KÊNH GỐC ĐỂ LẤY VÀ LÀM",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Reup & Khai Thác Hoạt Hình",
+  "niche_id": "faceless-general",
+  "target_market": "Trung Quốc",
+  "market_code": "CN",
+  "key_takeaways": [
+    "Tác giả chia sẻ thêm một ngách reup dạng review phim, là kênh mới làm lại từ 11 ngày trước mà view rất cao.",
+    "Cách tự tìm nguồn gốc là copy tiêu đề video, dịch sang tiếng Trung bằng Google dịch rồi dán vào ô tìm kiếm, sẽ ra những phim cùng dạng.",
+    "Bấm vào bộ sưu tập sẽ thấy tất cả các tập để tải về ghép lại làm xuyên suốt, còn tab bên cạnh hiện các video liên quan để tham khảo thêm.",
+    "Kênh thứ hai làm lại từ 13 ngày trước, lúc đầu view rất thấp, chuyển sang dạng hoạt hình thì có một video nổ 6.000 view, còn các dạng không trend chỉ được rất ít view.",
+    "Reup không bao giờ hết trend, làm nhanh và vẫn kiếm được tiền, nhưng phải chấp nhận rủi ro dính bản quyền hoặc bị gắn lỗi sử dụng lại nội dung; hai lỗi này đều kháng được nhưng mất thời gian và tốn phí."
+  ],
+  "edit_sop": {
+    "primary": "Tự tìm nguồn kênh gốc để reup: dịch tiêu đề sang tiếng Trung rồi search ra video gốc",
+    "additional": [
+      "Copy tiêu đề video của kênh đối thủ đang view cao",
+      "Dịch tiêu đề sang tiếng Trung bằng Google Dịch",
+      "Dán bản tiếng Trung vào ô tìm kiếm để ra các phim cùng dạng",
+      "Vào bộ sưu tập của kênh gốc để lấy tất cả các tập, tải về rồi ghép lại làm xuyên suốt",
+      "Xem tab video liên quan bên cạnh để tìm thêm ngách"
+    ]
+  },
+  "avoid_flags": [
+    "Làm reup phải chấp nhận rủi ro bị đánh bản quyền hoặc bị tag lỗi sử dụng lại nội dung",
+    "Hai lỗi đó đều kháng được nhưng mất thời gian và tốn phí"
+  ],
+  "tools_mentioned": [
+    "Google Dịch",
+    "Douyin",
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@HDVietsub-h7u",
+    "@redvoices90"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Tổng quan nội dung bài giảng và mục tiêu thực hành"
+    },
+    {
+      "time": "00:55",
+      "seconds": 55,
+      "label": "Phương pháp tìm kiếm từ khóa và đào sâu vào các ngách nhỏ"
+    },
+    {
+      "time": "01:43",
+      "seconds": 103,
+      "label": "Phân tích các video nổ view cao nhất của kênh đối thủ"
+    },
+    {
+      "time": "02:20",
+      "seconds": 140,
+      "label": "Đấy"
+    },
+    {
+      "time": "02:56",
+      "seconds": 176,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-2469ee/transcript.txt",
+  "verified_expert_summary": true,
+  "sop_steps": [
+    "Copy tiêu đề video của kênh đối thủ đang view cao",
+    "Dịch tiêu đề sang tiếng Trung bằng Google Dịch",
+    "Dán bản tiếng Trung vào ô tìm kiếm để ra các phim cùng dạng",
+    "Vào bộ sưu tập của kênh gốc để lấy tất cả các tập, tải về rồi ghép lại làm xuyên suốt",
+    "Xem tab video liên quan bên cạnh để tìm thêm ngách"
+  ]
+}

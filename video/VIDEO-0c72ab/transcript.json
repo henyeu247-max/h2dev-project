@@ -1,0 +1,4008 @@
+{
+  "sku": "VIDEO-0c72ab",
+  "duration": 3002.833333,
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 7.4,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:07,400",
+      "text": "Rồi, em chào tất cả các anh chị nha. Thì video hôm nay em share cho mọi người cái ngách đang cực kỳ là trend ở bên thị trường US này nha."
+    },
+    {
+      "id": 2,
+      "start": 7.4,
+      "end": 12.4,
+      "start_time": "00:00:07,400",
+      "end_time": "00:00:12,400",
+      "text": "Và sẽ hướng dẫn cho mọi người làm hoàn toàn bằng con Claude AI nha."
+    },
+    {
+      "id": 3,
+      "start": 12.4,
+      "end": 22.4,
+      "start_time": "00:00:12,400",
+      "end_time": "00:00:22,400",
+      "text": "Đây, mấy bác xem video đầu tiên của họ là 12 ngày trước và được 4 triệu view. Và những video sau là cũng vậy, rất là cao view luôn."
+    },
+    {
+      "id": 4,
+      "start": 22.4,
+      "end": 26.8,
+      "start_time": "00:00:22,400",
+      "end_time": "00:00:26,800",
+      "text": "Đấy, 11 giờ trước này. Lúc em quay là hôm thứ ba nha mọi người."
+    },
+    {
+      "id": 5,
+      "start": 26.8,
+      "end": 31.8,
+      "start_time": "00:00:26,800",
+      "end_time": "00:00:31,800",
+      "text": "Thì thứ tư em mới có thời gian để bình luận và edit để up cho mấy bác xem được."
+    },
+    {
+      "id": 6,
+      "start": 31.8,
+      "end": 43.8,
+      "start_time": "00:00:31,800",
+      "end_time": "00:00:43,800",
+      "text": "Mấy bác đã xem qua cái video mà em nói về cái chỉ số VPH á, thì mấy bác sẽ thấy được cái chỉ số này rất rất là cao nha, có nghĩa là đang rất rất là trend đấy."
+    },
+    {
+      "id": 7,
+      "start": 43.8,
+      "end": 46.84,
+      "start_time": "00:00:43,800",
+      "end_time": "00:00:46,840",
+      "text": "Ngách này thì nói là về dạng What-If nha mọi người."
+    },
+    {
+      "id": 8,
+      "start": 46.84,
+      "end": 54.36,
+      "start_time": "00:00:46,840",
+      "end_time": "00:00:54,360",
+      "text": "Thì What-If có nghĩa là nếu như... nếu như một cái gì đó đấy. Thì cái dạng này nó cũng là dạng hoạt hình người que thôi mấy bác ạ."
+    },
+    {
+      "id": 9,
+      "start": 54.36,
+      "end": 57.8,
+      "start_time": "00:00:54,360",
+      "end_time": "00:00:57,800",
+      "text": "Mấy bác nhìn là mấy bác cũng biết mà. Nhưng mà đang rất rất là trend nha."
+    },
+    {
+      "id": 10,
+      "start": 57.8,
+      "end": 66.8,
+      "start_time": "00:00:57,800",
+      "end_time": "00:01:06,800",
+      "text": "Thì em sẽ hướng dẫn mọi người dùng con Claude tạo ra những cái hình ảnh video này, và cũng là nhờ nó edit luôn."
+    },
+    {
+      "id": 11,
+      "start": 66.8,
+      "end": 71.44,
+      "start_time": "00:01:06,800",
+      "end_time": "00:01:11,440",
+      "text": "Đấy, không dùng một chút nào là CapCut luôn nha, không đụng tới CapCut luôn nha."
+    },
+    {
+      "id": 12,
+      "start": 71.44,
+      "end": 76.04,
+      "start_time": "00:01:11,440",
+      "end_time": "00:01:16,040",
+      "text": "Ở trong video này thì em hướng dẫn hoàn toàn bằng làm bằng con Claude luôn nha mọi người."
+    },
+    {
+      "id": 13,
+      "start": 76.04,
+      "end": 81.16,
+      "start_time": "00:01:16,040",
+      "end_time": "00:01:21,160",
+      "text": "Thì nói chung mỗi ngách và mỗi cách làm nó rất là đa dạng, nói chung là nhiều cách làm lắm mọi người ạ."
+    },
+    {
+      "id": 14,
+      "start": 81.16,
+      "end": 87.82,
+      "start_time": "00:01:21,160",
+      "end_time": "00:01:27,820",
+      "text": "Nên là em có cái gì thì em hướng dẫn hết cho mấy bác, rồi mấy bác cứ tham khảo rồi mấy bác thích thì chọn làm thôi."
+    },
+    {
+      "id": 15,
+      "start": 87.82,
+      "end": 91.44,
+      "start_time": "00:01:27,820",
+      "end_time": "00:01:31,440",
+      "text": "Đây, đây là thị trường Hoa Kỳ và họ dùng kênh cổ 2022 này."
+    },
+    {
+      "id": 16,
+      "start": 91.44,
+      "end": 95.84,
+      "start_time": "00:01:31,440",
+      "end_time": "00:01:35,840",
+      "text": "Đấy, 14 video và hơn 6 triệu view, thật sự rất là kinh khủng nha."
+    },
+    {
+      "id": 17,
+      "start": 95.84,
+      "end": 101.44,
+      "start_time": "00:01:35,840",
+      "end_time": "00:01:41,440",
+      "text": "Giờ em sẽ dịch cái tiêu đề ra để cho mọi người có thể rõ hơn nữa nha."
+    },
+    {
+      "id": 18,
+      "start": 101.44,
+      "end": 108.24,
+      "start_time": "00:01:41,440",
+      "end_time": "00:01:48,240",
+      "text": "Đây, cái video đầu tiên là nói về: Điều gì sẽ xảy ra nếu thời gian phản xạ của bạn nhanh hơn gấp 10 lần này."
+    },
+    {
+      "id": 19,
+      "start": 108.24,
+      "end": 113.44,
+      "start_time": "00:01:48,240",
+      "end_time": "00:01:53,440",
+      "text": "Video thứ hai là: Điều gì sẽ xảy ra nếu một giây trôi qua mà bạn cảm nhận như 10 giây này."
+    },
+    {
+      "id": 20,
+      "start": 113.44,
+      "end": 118.24,
+      "start_time": "00:01:53,440",
+      "end_time": "00:01:58,240",
+      "text": "Đấy: Điều gì sẽ xảy ra nếu một giây trôi qua cảm giác như cả một đời này."
+    },
+    {
+      "id": 21,
+      "start": 118.24,
+      "end": 125.04,
+      "start_time": "00:01:58,240",
+      "end_time": "00:02:05,040",
+      "text": "Thì nói chung mấy bác như vậy mấy bác có thể thấy cái từ khóa ngách hình dung ra được là đó chính là What-If."
+    },
+    {
+      "id": 22,
+      "start": 125.04,
+      "end": 127.04,
+      "start_time": "00:02:05,040",
+      "end_time": "00:02:07,040",
+      "text": "Là điều gì sẽ xảy ra đấy mọi người. Nếu bạn á."
+    },
+    {
+      "id": 23,
+      "start": 127.04,
+      "end": 134.04,
+      "start_time": "00:02:07,040",
+      "end_time": "00:02:14,040",
+      "text": "Đấy thì cái dạng này á thì nó không đơn thuần là một cái video giải thích khoa học đâu mấy bác ạ,"
+    },
+    {
+      "id": 24,
+      "start": 134.04,
+      "end": 138.04,
+      "start_time": "00:02:14,040",
+      "end_time": "00:02:18,040",
+      "text": "mà nó như là một cái phim hoạt hình ngắn có cái cốt truyện nha."
+    },
+    {
+      "id": 25,
+      "start": 138.04,
+      "end": 141.04,
+      "start_time": "00:02:18,040",
+      "end_time": "00:02:21,040",
+      "text": "Đấy, nó có cốt truyện từ đầu đến cuối hết nha mọi người."
+    },
+    {
+      "id": 26,
+      "start": 141.04,
+      "end": 147.88,
+      "start_time": "00:02:21,040",
+      "end_time": "00:02:27,880",
+      "text": "Thì tí nữa vào chi tiết làm thì em sẽ cho mấy bác thấy được nó sẽ ra được những cái chủ đề kịch bản rất là hay nha."
+    },
+    {
+      "id": 27,
+      "start": 147.88,
+      "end": 151.94,
+      "start_time": "00:02:27,880",
+      "end_time": "00:02:31,940",
+      "text": "Đây em sẽ vào một video bất kỳ, em chiếu qua cho mọi người thấy được trước đã."
+    },
+    {
+      "id": 28,
+      "start": 151.94,
+      "end": 156.5,
+      "start_time": "00:02:31,940",
+      "end_time": "00:02:36,500",
+      "text": "Every drop, and found something else."
+    },
+    {
+      "id": 29,
+      "start": 156.5,
+      "end": 165.01,
+      "start_time": "00:02:36,500",
+      "end_time": "00:02:45,010",
+      "text": "Your brain was still speeding up every single day."
+    },
+    {
+      "id": 30,
+      "start": 165.01,
+      "end": 173.01,
+      "start_time": "00:02:45,010",
+      "end_time": "00:02:53,010",
+      "text": "Và cái dạng này á thì nó cũng có một cái rất đặc biệt nữa là nó không đơn thuần chỉ là một người dẫn chuyện, cái giọng của một người đâu nha mấy bác,"
+    },
+    {
+      "id": 31,
+      "start": 173.01,
+      "end": 181.01,
+      "start_time": "00:02:53,010",
+      "end_time": "00:03:01,010",
+      "text": "mà nó là gồm rất là nhiều giọng của các nhân vật luôn nha. Đấy, thì tí nữa vào chi tiết em sẽ hướng dẫn mọi người làm hội thoại,"
+    },
+    {
+      "id": 32,
+      "start": 181.01,
+      "end": 189.01,
+      "start_time": "00:03:01,010",
+      "end_time": "00:03:09,010",
+      "text": "cái kiểu như là rất là nhiều giọng ở trong một video á, có nghĩa là gọi là hội thoại nha mọi người, chứ không phải là người kể chuyện, người dẫn chuyện không đâu,"
+    },
+    {
+      "id": 33,
+      "start": 189.01,
+      "end": 197.01,
+      "start_time": "00:03:09,010",
+      "end_time": "00:03:17,010",
+      "text": "mà có các nhân vật khác nữa nha. Đấy, em sẽ hướng dẫn mọi người chi tiết luôn. Đây như em vừa xem thì nó cũng hiện ra một kênh đối thủ khác này mọi người."
+    },
+    {
+      "id": 34,
+      "start": 197.01,
+      "end": 203.01,
+      "start_time": "00:03:17,010",
+      "end_time": "00:03:23,010",
+      "text": "Đây, em bấm vào cho mấy bác xem luôn. Đấy, mọi người thấy không? What-If này."
+    },
+    {
+      "id": 35,
+      "start": 203.01,
+      "end": 206.71,
+      "start_time": "00:03:23,010",
+      "end_time": "00:03:26,710",
+      "text": "Kênh này cũng hoàn toàn mới luôn, kênh này sau kênh kia luôn mọi người ạ."
+    },
+    {
+      "id": 36,
+      "start": 206.71,
+      "end": 208.91,
+      "start_time": "00:03:26,710",
+      "end_time": "00:03:28,910",
+      "text": "Đấy, 10 ngày trước này."
+    },
+    {
+      "id": 37,
+      "start": 208.91,
+      "end": 210.95,
+      "start_time": "00:03:28,910",
+      "end_time": "00:03:30,950",
+      "text": "Trên 100k view hết này."
+    },
+    {
+      "id": 38,
+      "start": 210.95,
+      "end": 214.51,
+      "start_time": "00:03:30,950",
+      "end_time": "00:03:34,510",
+      "text": "Đấy, view rất rất là cao luôn."
+    },
+    {
+      "id": 39,
+      "start": 214.51,
+      "end": 218.01,
+      "start_time": "00:03:34,510",
+      "end_time": "00:03:38,010",
+      "text": "Thì mọi người có thể tham khảo thêm những cái kênh này nha."
+    },
+    {
+      "id": 40,
+      "start": 218.01,
+      "end": 223.01,
+      "start_time": "00:03:38,010",
+      "end_time": "00:03:43,010",
+      "text": "Hoàn toàn toàn là những cái kênh mới thôi mọi người, bởi vì cái ngách này đang rất rất là trend nha."
+    },
+    {
+      "id": 41,
+      "start": 223.01,
+      "end": 228.01,
+      "start_time": "00:03:43,010",
+      "end_time": "00:03:48,010",
+      "text": "Thì mấy bác cũng có thể đem về nhân bản thị trường nha, cái đó thì tí nữa em nói sau mọi người ạ."
+    },
+    {
+      "id": 42,
+      "start": 228.01,
+      "end": 233.01,
+      "start_time": "00:03:48,010",
+      "end_time": "00:03:53,010",
+      "text": "Rồi, để làm được những cái dạng video như này á thì đương nhiên là sẽ có những cái prompt và skill rồi đúng không?"
+    },
+    {
+      "id": 43,
+      "start": 233.01,
+      "end": 237.01,
+      "start_time": "00:03:53,010",
+      "end_time": "00:03:57,010",
+      "text": "Thì ở video này em cũng đã soạn sẵn, train sẵn hết, làm hết cho mọi người rồi."
+    },
+    {
+      "id": 44,
+      "start": 237.01,
+      "end": 243.01,
+      "start_time": "00:03:57,010",
+      "end_time": "00:04:03,010",
+      "text": "Đầu tiên là sẽ có những skill, những cái tool dựng video này, edit video đấy mọi người, và những cái phần âm thanh này."
+    },
+    {
+      "id": 45,
+      "start": 243.01,
+      "end": 249.01,
+      "start_time": "00:04:03,010",
+      "end_time": "00:04:09,010",
+      "text": "Âm thanh này là những cái hiệu ứng âm thanh để khi con Claude nó edit video á thì nó sẽ tự thêm vào."
+    },
+    {
+      "id": 46,
+      "start": 249.01,
+      "end": 254.01,
+      "start_time": "00:04:09,010",
+      "end_time": "00:04:14,010",
+      "text": "Và những âm thanh này á, đây âm thanh nền nữa nha mấy bác, thì những âm thanh này á là không phải em tải về đâu nha,"
+    },
+    {
+      "id": 47,
+      "start": 254.01,
+      "end": 257.01,
+      "start_time": "00:04:14,010",
+      "end_time": "00:04:17,010",
+      "text": "mà là em đã train con Claude nó tự cho ra luôn,"
+    },
+    {
+      "id": 48,
+      "start": 257.01,
+      "end": 260.01,
+      "start_time": "00:04:17,010",
+      "end_time": "00:04:20,010",
+      "text": "và hoàn toàn là miễn phí và hoàn toàn là không bản quyền nha."
+    },
+    {
+      "id": 49,
+      "start": 265.01,
+      "end": 268.01,
+      "start_time": "00:04:25,010",
+      "end_time": "00:04:28,010",
+      "text": "Đấy, em cho mấy bác nghe qua một số đoạn. Đây đây chính là cái âm thanh hiệu ứng này."
+    },
+    {
+      "id": 50,
+      "start": 273.01,
+      "end": 277.93,
+      "start_time": "00:04:33,010",
+      "end_time": "00:04:37,930",
+      "text": "Đấy, cái file này là nó tổng hợp vào nha mọi người."
+    },
+    {
+      "id": 51,
+      "start": 284.13,
+      "end": 291.05,
+      "start_time": "00:04:44,130",
+      "end_time": "00:04:51,050",
+      "text": "Còn ở trong cái thư mục, còn ở trong thư mục kia thì nó đã tách ra mỗi cái hiệu ứng âm thanh khác nhau ấy."
+    },
+    {
+      "id": 52,
+      "start": 291.05,
+      "end": 293.01,
+      "start_time": "00:04:51,050",
+      "end_time": "00:04:53,010",
+      "text": "Đó, thì nói chung là hoàn toàn là con Claude..."
+    },
+    {
+      "id": 53,
+      "start": 293.01,
+      "end": 298.45,
+      "start_time": "00:04:53,010",
+      "end_time": "00:04:58,450",
+      "text": "con Claude nó cho ra hết nha, em đã train hết rồi mọi người, chứ không phải là em tải ở trên mạng hay đâu về đâu nha."
+    },
+    {
+      "id": 54,
+      "start": 298.45,
+      "end": 302.45,
+      "start_time": "00:04:58,450",
+      "end_time": "00:05:02,450",
+      "text": "Đấy, cái hiệu ứng nó rất rất là hay và mình không lo bị bản quyền nữa."
+    },
+    {
+      "id": 55,
+      "start": 302.45,
+      "end": 306.0,
+      "start_time": "00:05:02,450",
+      "end_time": "00:05:06,000",
+      "text": "Và khi con đã có được rồi thì con Claude nó edit cho mình luôn."
+    },
+    {
+      "id": 56,
+      "start": 306.0,
+      "end": 313.01,
+      "start_time": "00:05:06,000",
+      "end_time": "00:05:13,010",
+      "text": "Còn cái file WhatIf-Skills.zip này thì em đã nén hết tất cả các skill và tài nguyên ở trong cái folder... (he packaged them into the zip; \"giải nén\" = unzip)"
+    },
+    {
+      "id": 57,
+      "start": 313.01,
+      "end": 320.0,
+      "start_time": "00:05:13,010",
+      "end_time": "00:05:20,000",
+      "text": "nói chung là cái tài nguyên của cái dạng này cho mọi người rồi. Để em sẽ để dưới mô tả cho mấy bác tải ha."
+    },
+    {
+      "id": 58,
+      "start": 320.0,
+      "end": 328.0,
+      "start_time": "00:05:20,000",
+      "end_time": "00:05:28,000",
+      "text": "Và có cả cái file hướng dẫn dùng nữa, mọi người cứ yên tâm. Rồi, bây giờ để đầu tiên mà làm được á thì mấy bác sẽ add cái folder vào nha."
+    },
+    {
+      "id": 59,
+      "start": 328.0,
+      "end": 336.0,
+      "start_time": "00:05:28,000",
+      "end_time": "00:05:36,000",
+      "text": "Ví dụ như em đã add rồi này, em sẽ hướng dẫn mọi người add lại luôn, kiểu như cái folder cái dự án của mọi người á."
+    },
+    {
+      "id": 60,
+      "start": 336.0,
+      "end": 340.3,
+      "start_time": "00:05:36,000",
+      "end_time": "00:05:40,300",
+      "text": "Đây, mọi người bấm Add folder này."
+    },
+    {
+      "id": 61,
+      "start": 340.3,
+      "end": 348.3,
+      "start_time": "00:05:40,300",
+      "end_time": "00:05:48,300",
+      "text": "Đấy, ví dụ như mấy bác tạo một cái thư mục tên là whatif, và mọi người đã bỏ hết tất cả các cái tài nguyên mà em để ở mô tả á,"
+    },
+    {
+      "id": 62,
+      "start": 348.3,
+      "end": 356.3,
+      "start_time": "00:05:48,300",
+      "end_time": "00:05:56,300",
+      "text": "mấy bác tải về giải nén vào trong cái thư mục đó, rồi mọi người add cả cái thư mục vào nha. Rồi sau đó mọi người..."
+    },
+    {
+      "id": 63,
+      "start": 356.3,
+      "end": 364.3,
+      "start_time": "00:05:56,300",
+      "end_time": "00:06:04,300",
+      "text": "Đương nhiên mấy bác sẽ tải hai cái skill... hai cái skill viết kịch bản và edit video rồi đúng không?"
+    },
+    {
+      "id": 64,
+      "start": 364.3,
+      "end": 373.32,
+      "start_time": "00:06:04,300",
+      "end_time": "00:06:13,320",
+      "text": "Hai skill đó nó nằm trong cái file .zip đấy, mấy bác giải nén ra rồi mấy bác đẩy lên con Claude nha. Cái này thì mọi người đều biết hết rồi."
+    },
+    {
+      "id": 65,
+      "start": 373.32,
+      "end": 380.74,
+      "start_time": "00:06:13,320",
+      "end_time": "00:06:20,740",
+      "text": "Đấy, nên là em không nói lại cái chỗ đẩy lên nữa. Mà bây giờ em sẽ gọi luôn cái skill là script-whatif-en này."
+    },
+    {
+      "id": 66,
+      "start": 380.74,
+      "end": 389.91,
+      "start_time": "00:06:20,740",
+      "end_time": "00:06:29,910",
+      "text": "Đấy, cái này là sẽ viết kịch bản nha. Em sẽ ghi dấu xuyệt ra rồi em enter phát thì nó sẽ tự động đọc qua cái danh sách trên YouTube những cái kênh đối thủ ấy mọi người."
+    },
+    {
+      "id": 67,
+      "start": 389.91,
+      "end": 393.84,
+      "start_time": "00:06:29,910",
+      "end_time": "00:06:33,840",
+      "text": "Đấy, và những cái dạng nào làm rồi thì nó sẽ né ra nha."
+    },
+    {
+      "id": 68,
+      "start": 393.84,
+      "end": 400.74,
+      "start_time": "00:06:33,840",
+      "end_time": "00:06:40,740",
+      "text": "Rồi, đó, bây giờ thì nó sẽ đề xuất những cái dạng mới, những cái chủ đề hoàn toàn là trend và mới khác biệt so với đối thủ luôn nha mọi người. Đấy."
+    },
+    {
+      "id": 69,
+      "start": 400.74,
+      "end": 403.74,
+      "start_time": "00:06:40,740",
+      "end_time": "00:06:43,740",
+      "text": "Và nó cũng sẽ có những cái gợi ý cho mình là nên chọn nên làm những cái chủ đề nào này."
+    },
+    {
+      "id": 70,
+      "start": 403.74,
+      "end": 411.74,
+      "start_time": "00:06:43,740",
+      "end_time": "00:06:51,740",
+      "text": "Đấy, mấy bác thấy không? Rất rất là nhiều cái hay luôn. Cái dạng ngách này thì rất là mới nên là mình không cần phải đi kiểu như đi bám theo đối thủ về kịch bản đâu mọi người ạ."
+    },
+    {
+      "id": 71,
+      "start": 411.74,
+      "end": 417.74,
+      "start_time": "00:06:51,740",
+      "end_time": "00:06:57,740",
+      "text": "Cái này thì mình để cho con Claude nó tự sinh ra luôn, nó đề xuất ra luôn thì sẽ ok hơn nha."
+    },
+    {
+      "id": 72,
+      "start": 417.74,
+      "end": 420.74,
+      "start_time": "00:06:57,740",
+      "end_time": "00:07:00,740",
+      "text": "Còn mình đi học là học cách edit của họ thôi mọi người ạ."
+    },
+    {
+      "id": 73,
+      "start": 420.74,
+      "end": 424.74,
+      "start_time": "00:07:00,740",
+      "end_time": "00:07:04,740",
+      "text": "Đấy: \"Mình khuyên bạn nên là chọn chủ đề 1 hoặc 2 này\"."
+    },
+    {
+      "id": 74,
+      "start": 424.74,
+      "end": 435.0,
+      "start_time": "00:07:04,740",
+      "end_time": "00:07:15,000",
+      "text": "Đấy, nó có lời khuyên hết đấy. Nó bảo chủ đề 1 hoặc 2 là nó sẽ bám theo cái dạng cái khung cùng với cái khung video cao view nhất là 4 triệu view này mọi người thấy không?"
+    },
+    {
+      "id": 75,
+      "start": 435.0,
+      "end": 442.74,
+      "start_time": "00:07:15,000",
+      "end_time": "00:07:22,740",
+      "text": "Đấy, là đầu tiên nó sẽ bám theo những cái mà cao view nhất của đối thủ là rất là đúng với cái ý mình rồi đúng không mọi người?"
+    },
+    {
+      "id": 76,
+      "start": 442.74,
+      "end": 450.74,
+      "start_time": "00:07:22,740",
+      "end_time": "00:07:30,740",
+      "text": "Đấy, nên là nói chung em train rất là đầy đủ rồi. Giờ thì mình chỉ còn việc là chọn cái chủ đề, ví dụ ghi số 1 rồi mấy bác enter thôi thì nó cũng sẽ ghi ra,"
+    },
+    {
+      "id": 77,
+      "start": 450.74,
+      "end": 458.74,
+      "start_time": "00:07:30,740",
+      "end_time": "00:07:38,740",
+      "text": "và tự động lưu hết những cái file, cái output, những cái file kịch bản, những cái hướng dẫn làm prompt này kia vào bên trong cái thư mục..."
+    },
+    {
+      "id": 78,
+      "start": 458.74,
+      "end": 465.14,
+      "start_time": "00:07:38,740",
+      "end_time": "00:07:45,140",
+      "text": "tạo một cái thư mục mới có tên dự án là video này luôn nha. Đấy, để bây giờ em làm cho mấy bác sẽ hiểu. Em ví dụ em chọn chủ đề 1 nha."
+    },
+    {
+      "id": 79,
+      "start": 465.14,
+      "end": 473.14,
+      "start_time": "00:07:45,140",
+      "end_time": "00:07:53,140",
+      "text": "Đấy. Đây ví dụ bây giờ em chọn chủ đề 1. Thường thì mấy bác gõ số 1 mấy bác enter thôi nó cũng ra,"
+    },
+    {
+      "id": 80,
+      "start": 473.14,
+      "end": 476.14,
+      "start_time": "00:07:53,140",
+      "end_time": "00:07:56,140",
+      "text": "nhưng mà bởi vì em làm hướng dẫn cho mọi người để mọi người hiểu rõ chi tiết á,"
+    },
+    {
+      "id": 81,
+      "start": 476.14,
+      "end": 480.14,
+      "start_time": "00:07:56,140",
+      "end_time": "00:08:00,140",
+      "text": "nên là em sẽ ghi cụ thể ra ở dưới này nha. Em sẽ chọn chủ đề 1"
+    },
+    {
+      "id": 82,
+      "start": 480.14,
+      "end": 482.14,
+      "start_time": "00:08:00,140",
+      "end_time": "00:08:02,140",
+      "text": "và em dán luôn cái..."
+    },
+    {
+      "id": 83,
+      "start": 482.14,
+      "end": 487.14,
+      "start_time": "00:08:02,140",
+      "end_time": "00:08:07,140",
+      "text": "cái tiêu đề vào luôn này. Đó."
+    },
+    {
+      "id": 84,
+      "start": 487.14,
+      "end": 495.28,
+      "start_time": "00:08:07,140",
+      "end_time": "00:08:15,280",
+      "text": "Rồi, thì tiếp theo là chọn cái nhân vật, muốn cái nhân vật chính của mình là mặc áo... mặc áo màu gì á mọi người, mặc áo hoodie nè."
+    },
+    {
+      "id": 85,
+      "start": 495.28,
+      "end": 503.14,
+      "start_time": "00:08:15,280",
+      "end_time": "00:08:23,140",
+      "text": "Thì em sẽ ghi là màu đỏ luôn, cho nó giống đối thủ luôn nha. Còn cái này thì mấy bác nếu làm thì tùy ý mọi người thôi."
+    },
+    {
+      "id": 86,
+      "start": 503.14,
+      "end": 507.14,
+      "start_time": "00:08:23,140",
+      "end_time": "00:08:27,140",
+      "text": "Em làm demo hướng dẫn nên em sẽ chọn màu đỏ cho nó nổi bật nha mọi người."
+    },
+    {
+      "id": 87,
+      "start": 507.14,
+      "end": 514.14,
+      "start_time": "00:08:27,140",
+      "end_time": "00:08:34,140",
+      "text": "Đấy, bây giờ thì chỉ còn việc đợi nó gen ra kịch bản thôi nha. Bây giờ thì nó sẽ đọc qua toàn bộ cái folder của mình,"
+    },
+    {
+      "id": 88,
+      "start": 514.14,
+      "end": 521.14,
+      "start_time": "00:08:34,140",
+      "end_time": "00:08:41,140",
+      "text": "bên trong cái thư mục của mình, đọc qua các cái skill, prompt này kia rồi nó sẽ viết cái kịch bản cho mình nha."
+    },
+    {
+      "id": 89,
+      "start": 521.14,
+      "end": 525.79,
+      "start_time": "00:08:41,140",
+      "end_time": "00:08:45,790",
+      "text": "Hiện tại thì em đang dùng cái model Sonnet để viết kịch bản nha mọi người."
+    },
+    {
+      "id": 90,
+      "start": 525.79,
+      "end": 534.54,
+      "start_time": "00:08:45,790",
+      "end_time": "00:08:54,540",
+      "text": "Bởi vì cái model cao nhất của nó là Opus nha mọi người."
+    },
+    {
+      "id": 91,
+      "start": 534.54,
+      "end": 544.74,
+      "start_time": "00:08:54,540",
+      "end_time": "00:09:04,740",
+      "text": "Còn cái Sonnet thì nó sẽ tiết kiệm token hơn nha."
+    },
+    {
+      "id": 92,
+      "start": 544.74,
+      "end": 552.74,
+      "start_time": "00:09:04,740",
+      "end_time": "00:09:12,740",
+      "text": "Anh em nào mà dùng gói Max á thì anh em dùng Opus cũng được."
+    },
+    {
+      "id": 93,
+      "start": 552.74,
+      "end": 564.74,
+      "start_time": "00:09:12,740",
+      "end_time": "00:09:24,740",
+      "text": "Còn anh em nào mà dùng gói Pro á thì mọi người dùng Sonnet thôi nha."
+    },
+    {
+      "id": 94,
+      "start": 564.74,
+      "end": 575.0,
+      "start_time": "00:09:24,740",
+      "end_time": "00:09:35,000",
+      "text": "Đấy, em giải thích qua tí để có nhiều bác thắc mắc không biết nên chọn gói nào á. Thì nói chung mọi người làm bình thường làm không nhiều á thì mấy bác cứ dùng gói Pro cho em là dư sức rồi."
+    },
+    {
+      "id": 95,
+      "start": 575.0,
+      "end": 585.0,
+      "start_time": "00:09:35,000",
+      "end_time": "00:09:45,000",
+      "text": "Rồi, sau khi chờ đợi vài phút thì cuối cùng nó đã viết xong, hoàn thành xong cái phần viết kịch bản và cho ra cái prompt tạo ảnh này kia rồi nha mọi người."
+    },
+    {
+      "id": 96,
+      "start": 585.0,
+      "end": 594.0,
+      "start_time": "00:09:45,000",
+      "end_time": "00:09:54,000",
+      "text": "Thì đương nhiên nó sẽ không có hiện ra những cái file ở trên cái giao diện Claude này, mà lúc nãy mọi người nhớ là em có add cái folder phải không?"
+    },
+    {
+      "id": 97,
+      "start": 594.0,
+      "end": 600.0,
+      "start_time": "00:09:54,000",
+      "end_time": "00:10:00,000",
+      "text": "Thì bây giờ nó đã tạo một cái thư mục mới và nó đã lưu hết tất cả những cái tài nguyên tài liệu vào ở trong cái thư mục rồi."
+    },
+    {
+      "id": 98,
+      "start": 600.0,
+      "end": 604.72,
+      "start_time": "00:10:00,000",
+      "end_time": "00:10:04,720",
+      "text": "Nó tự động tạo một cái thư mục tên là ghi về cái chủ đề mà mình làm đấy mọi người,"
+    },
+    {
+      "id": 99,
+      "start": 604.72,
+      "end": 612.72,
+      "start_time": "00:10:04,720",
+      "end_time": "00:10:12,720",
+      "text": "vào trong cái thư mục project nha. Đấy, và nó sẽ tạo sẵn ra cho mình những cái thư mục rỗng là voice, ảnh này kia luôn, có hết nha."
+    },
+    {
+      "id": 100,
+      "start": 612.72,
+      "end": 621.08,
+      "start_time": "00:10:12,720",
+      "end_time": "00:10:21,080",
+      "text": "Còn đây là những cái số liệu chính mà khi nó gen ra này. Thì mấy bác cái này mấy bác có thể đọc sơ qua nha."
+    },
+    {
+      "id": 101,
+      "start": 621.08,
+      "end": 627.4,
+      "start_time": "00:10:21,080",
+      "end_time": "00:10:27,400",
+      "text": "Bây giờ thì em sẽ mở cái thư mục lên nha. Đây, đầu tiên thì em sẽ vào cái whatif của em này đúng không?"
+    },
+    {
+      "id": 102,
+      "start": 627.4,
+      "end": 635.4,
+      "start_time": "00:10:27,400",
+      "end_time": "00:10:35,400",
+      "text": "Sau đó em sẽ đi vào bên trong cái project này. Đây, cái đầu tiên là cái dự án demo của em làm trước đó thôi. Đây, cái dự án của mình thứ hai này chính là cái chủ đề em vừa làm này."
+    },
+    {
+      "id": 103,
+      "start": 635.4,
+      "end": 645.4,
+      "start_time": "00:10:35,400",
+      "end_time": "00:10:45,400",
+      "text": "Đó, và tất cả những cái đây thì nó đã vừa tự động gen ra cho em đấy. Thì đầu tiên sẽ có một file 01-SCRIPT. Đây là full cái kịch bản của mình nè mọi người ạ."
+    },
+    {
+      "id": 104,
+      "start": 645.4,
+      "end": 655.4,
+      "start_time": "00:10:45,400",
+      "end_time": "00:10:55,400",
+      "text": "Đấy, đây là phần full về kịch bản nha, khoảng tầm 8 phút nha mấy bác. Cái dạng này video trung bình tầm 8 phút thôi."
+    },
+    {
+      "id": 105,
+      "start": 655.4,
+      "end": 662.2,
+      "start_time": "00:10:55,400",
+      "end_time": "00:11:02,200",
+      "text": "Và cái phần thứ hai đó chính là... cái này có nghĩa là mấy bác không cần quan tâm đâu,"
+    },
+    {
+      "id": 106,
+      "start": 662.2,
+      "end": 669.0,
+      "start_time": "00:11:02,200",
+      "end_time": "00:11:09,000",
+      "text": "cái này để nó chú thích và để khi nó edit và nó gen nó tự học thôi mọi người. Cái đó thì mấy bác không quan tâm nha."
+    },
+    {
+      "id": 107,
+      "start": 669.0,
+      "end": 676.4,
+      "start_time": "00:11:09,000",
+      "end_time": "00:11:16,400",
+      "text": "Đấy, hai cái trên là mình không quan tâm đâu. Cái quan tâm là cái file thứ ba này, file 02-VOICE kịch bản DGT này mọi người ạ."
+    },
+    {
+      "id": 108,
+      "start": 676.4,
+      "end": 684.4,
+      "start_time": "00:11:16,400",
+      "end_time": "00:11:24,400",
+      "text": "Đấy, cái file này thì mấy bác là chính để dùng để khi đi tạo voice nha, tạo giọng đọc. Đấy, như kênh đối thủ lúc nãy em cũng có nói rồi mọi người có thể tự nghe qua nha."
+    },
+    {
+      "id": 109,
+      "start": 684.4,
+      "end": 692.0,
+      "start_time": "00:11:24,400",
+      "end_time": "00:11:32,000",
+      "text": "Mọi người tự xem video của đối thủ là mấy bác sẽ rõ được, nó có rất là nhiều cái giọng khác nhau của các nhân vật nữa, chứ không phải là chỉ một giọng đâu."
+    },
+    {
+      "id": 110,
+      "start": 692.0,
+      "end": 701.4,
+      "start_time": "00:11:32,000",
+      "end_time": "00:11:41,400",
+      "text": "Và trước giờ em cũng hướng dẫn nhiều cho mọi người là làm một giọng rồi, thì sẵn đây thì em hướng dẫn mọi người cách làm hội thoại luôn."
+    },
+    {
+      "id": 111,
+      "start": 701.4,
+      "end": 709.4,
+      "start_time": "00:11:41,400",
+      "end_time": "00:11:49,400",
+      "text": "Thì ví dụ như #4 này là cái giọng đọc 4 này, #5 là cái giọng đọc người số 5, #6 là giọng đọc nhân vật thứ 6. Đấy, và hiện tại cái kịch bản này là có 6 giọng đọc nha."
+    },
+    {
+      "id": 112,
+      "start": 709.4,
+      "end": 718.0,
+      "start_time": "00:11:49,400",
+      "end_time": "00:11:58,000",
+      "text": "Đấy, nên là nó chú thích cho em là #6. Đấy, em nói qua để cho mấy bác hiểu trước thôi. Và tiếp tục là cái file 02-VOICE-beat-map này,"
+    },
+    {
+      "id": 113,
+      "start": 718.0,
+      "end": 726.0,
+      "start_time": "00:11:58,000",
+      "end_time": "00:12:06,000",
+      "text": "thì cái này thì nó cũng chú thích để cho nó tự học thôi, mấy bác không cần quan tâm. Và cái file 03 này, mọi người cũng không cần quan tâm cái shot list đó."
+    },
+    {
+      "id": 114,
+      "start": 726.0,
+      "end": 735.4,
+      "start_time": "00:12:06,000",
+      "end_time": "00:12:15,400",
+      "text": "Cái mọi người quan tâm tiếp theo là cái file 04 này, cái file prompt đây. Cái này là phải cực kỳ là quan tâm và cái này là đặc biệt quan trọng nha mọi người."
+    },
+    {
+      "id": 115,
+      "start": 735.4,
+      "end": 742.08,
+      "start_time": "00:12:15,400",
+      "end_time": "00:12:22,080",
+      "text": "Trong này thì nó sẽ có các cái prompt để mình đi tạo ảnh, tạo nhân vật và tạo video nha."
+    },
+    {
+      "id": 116,
+      "start": 742.08,
+      "end": 748.76,
+      "start_time": "00:12:22,080",
+      "end_time": "00:12:28,760",
+      "text": "Đấy, và em tóm tắt lại là hai cái cần mình chú ý và quan tâm là chỉ hai file này thôi:"
+    },
+    {
+      "id": 117,
+      "start": 748.76,
+      "end": 755.4,
+      "start_time": "00:12:28,760",
+      "end_time": "00:12:35,400",
+      "text": "File 02-VOICE-...-DGT để tạo giọng đọc và cái file 04-PROMPTS thôi, còn lại tất cả là chỉ để mọi người tham khảo thôi,"
+    },
+    {
+      "id": 118,
+      "start": 755.4,
+      "end": 767.01,
+      "start_time": "00:12:35,400",
+      "end_time": "00:12:47,010",
+      "text": "và để con Claude nó kiểu như nó học cách làm thôi mọi người khi mà mình train thôi. Đấy, em nhắc lại nhắc đi nhắc lại là mấy bác chỉ cần việc quan tâm hai cái file này thôi."
+    },
+    {
+      "id": 119,
+      "start": 767.01,
+      "end": 774.41,
+      "start_time": "00:12:47,010",
+      "end_time": "00:12:54,410",
+      "text": "Thì cái file 02-VOICE kia thì mấy bác để ý để import đi tạo giọng đọc thôi chứ cũng không cần quan tâm gì mấy đâu."
+    },
+    {
+      "id": 120,
+      "start": 774.41,
+      "end": 779.81,
+      "start_time": "00:12:54,410",
+      "end_time": "00:12:59,810",
+      "text": "Cái mình quan tâm là cái file 04-PROMPTS này thôi nha mọi người. Đấy."
+    },
+    {
+      "id": 121,
+      "start": 779.81,
+      "end": 787.91,
+      "start_time": "00:12:59,810",
+      "end_time": "00:13:07,910",
+      "text": "Cái ở dưới là cái hướng dẫn này, đấy thì có hướng dẫn đầy đủ hết để mấy bác có thể nhìn theo mà mấy bác làm cũng được."
+    },
+    {
+      "id": 122,
+      "start": 787.91,
+      "end": 791.41,
+      "start_time": "00:13:07,910",
+      "end_time": "00:13:11,410",
+      "text": "Đây là cây thư mục này, chú thích lưu ở đâu,"
+    },
+    {
+      "id": 123,
+      "start": 791.41,
+      "end": 801.41,
+      "start_time": "00:13:11,410",
+      "end_time": "00:13:21,410",
+      "text": "rồi ở dưới là hướng dẫn tạo voice này, tạo giọng đọc, và cách để đi làm ảnh nhân vật và đi làm bối cảnh ảnh này kia video."
+    },
+    {
+      "id": 124,
+      "start": 801.41,
+      "end": 805.83,
+      "start_time": "00:13:21,410",
+      "end_time": "00:13:25,830",
+      "text": "Thì nói chung bây giờ đương nhiên mọi người nhìn vào thì sẽ thấy hơi loạn một tí,"
+    },
+    {
+      "id": 125,
+      "start": 805.83,
+      "end": 815.41,
+      "start_time": "00:13:25,830",
+      "end_time": "00:13:35,410",
+      "text": "nhưng mà yên tâm là bây giờ tí nữa sẽ đi vào chi tiết chỗ nào thì em sẽ giải thích rõ chỗ đó để cho mọi người hiểu qua nha. Đấy, nên là mấy bác cứ yên tâm."
+    },
+    {
+      "id": 126,
+      "start": 815.41,
+      "end": 827.31,
+      "start_time": "00:13:35,410",
+      "end_time": "00:13:47,310",
+      "text": "Ví dụ như cái phần nhân vật này thì nó có 8 ảnh nhân vật này. Đấy, thì tí nữa mình sẽ đi tạo cứng 8 cái ảnh nhân vật này trước nha. Tùy mỗi chủ đề mỗi khác nhau nha mấy bác,"
+    },
+    {
+      "id": 127,
+      "start": 827.31,
+      "end": 835.45,
+      "start_time": "00:13:47,310",
+      "end_time": "00:13:55,450",
+      "text": "chứ không phải là cái chủ đề video nào nó cũng đủ hết 8 nhân vật như này đâu, có chủ đề thì chỉ 5 hoặc là 6 nhân vật thôi. Đấy, 6 nhân vật chính đấy mọi người."
+    },
+    {
+      "id": 128,
+      "start": 835.45,
+      "end": 845.41,
+      "start_time": "00:13:55,450",
+      "end_time": "00:14:05,410",
+      "text": "Đây, em mở cái file... em sẽ mở cái file hướng dẫn cho mấy bác xem nha. Đây thì cái phần này nó nói là gen 8 ảnh character ở mục A này, và ở dưới là có cái mô tả các nhân vật đầy đủ."
+    },
+    {
+      "id": 129,
+      "start": 845.41,
+      "end": 851.41,
+      "start_time": "00:14:05,410",
+      "end_time": "00:14:11,410",
+      "text": "Và sau đó mình gen xong rồi mình sẽ lưu vào cái thư mục là CHARS này, và đồng thời là lưu trong cái thư mục series nữa."
+    },
+    {
+      "id": 130,
+      "start": 851.41,
+      "end": 857.41,
+      "start_time": "00:14:11,410",
+      "end_time": "00:14:17,410",
+      "text": "Thì nói chung là tí nữa để em lưu cho mấy bác thấy nha."
+    },
+    {
+      "id": 131,
+      "start": 857.41,
+      "end": 861.41,
+      "start_time": "00:14:17,410",
+      "end_time": "00:14:21,410",
+      "text": "Bởi vì mình lưu vào trong đó bởi vì những cái này là nhân vật chính nha."
+    },
+    {
+      "id": 132,
+      "start": 861.41,
+      "end": 868.41,
+      "start_time": "00:14:21,410",
+      "end_time": "00:14:28,410",
+      "text": "Sau những cái tập mà những cái chủ đề sau á, ví dụ như mình làm có cùng nhân vật á thì mình cũng không cần gen lại nữa,"
+    },
+    {
+      "id": 133,
+      "start": 868.41,
+      "end": 873.41,
+      "start_time": "00:14:28,410",
+      "end_time": "00:14:33,410",
+      "text": "mà con Claude nó sẽ tự động lấy luôn những cái ảnh cũ nha."
+    },
+    {
+      "id": 134,
+      "start": 873.41,
+      "end": 877.01,
+      "start_time": "00:14:33,410",
+      "end_time": "00:14:37,010",
+      "text": "Còn tiếp theo ở dưới này là có gồm 8 cái ảnh LOC này,"
+    },
+    {
+      "id": 135,
+      "start": 877.01,
+      "end": 880.41,
+      "start_time": "00:14:37,010",
+      "end_time": "00:14:40,410",
+      "text": "8 ảnh này có nghĩa là 8 cái khung hình các cái bối cảnh khác nhau nha mọi người."
+    },
+    {
+      "id": 136,
+      "start": 880.41,
+      "end": 887.41,
+      "start_time": "00:14:40,410",
+      "end_time": "00:14:47,410",
+      "text": "Thì bắt buộc mấy bác cũng phải gen ra 8 ảnh này. Và ở dưới này nó có chú thích này: Lưu ý là mọi người nên gen cái ảnh cái LOC-06 và cái LOC-07 cho nó chỉn chu,"
+    },
+    {
+      "id": 137,
+      "start": 887.41,
+      "end": 894.41,
+      "start_time": "00:14:47,410",
+      "end_time": "00:14:54,410",
+      "text": "bởi vì hai cái phần này quan trọng nhất là dùng cho nhiều ảnh sau này. Đấy, thì nói chung cụ thể ra sao thì tí nữa em làm mấy bác sẽ rõ nha."
+    },
+    {
+      "id": 138,
+      "start": 894.41,
+      "end": 899.71,
+      "start_time": "00:14:54,410",
+      "end_time": "00:14:59,710",
+      "text": "Đấy, đơn giản vậy thôi. Còn áo hoodie màu đỏ là màu bạn chọn này, vì đối thủ nó cũng màu đỏ nên là bây giờ nó làm cho tô đậm hay tươi hơn này kia thôi."
+    },
+    {
+      "id": 139,
+      "start": 899.71,
+      "end": 905.01,
+      "start_time": "00:14:59,710",
+      "end_time": "00:15:05,010",
+      "text": "Đấy, bởi vì lúc nãy em ghi là màu đỏ đấy mấy bác."
+    },
+    {
+      "id": 140,
+      "start": 905.01,
+      "end": 910.0,
+      "start_time": "00:15:05,010",
+      "end_time": "00:15:10,000",
+      "text": "Tiếp tới ở dưới bước 2 là về ảnh cảnh này. Thì cái phần này là nhiều ảnh nhất nha, gen nhiều ảnh nhất nha mấy bác."
+    },
+    {
+      "id": 141,
+      "start": 910.0,
+      "end": 917.32,
+      "start_time": "00:15:10,000",
+      "end_time": "00:15:17,320",
+      "text": "Như cái chủ đề hiện tại này là cái phần này gồm 74 ảnh nha, thì mình cũng phải gen hết 74 ảnh, từ ảnh I001 đến I074."
+    },
+    {
+      "id": 142,
+      "start": 917.32,
+      "end": 926.69,
+      "start_time": "00:15:17,320",
+      "end_time": "00:15:26,690",
+      "text": "Đấy, ở dưới là prompt dành cho video. Thì ok, những cái này thì đi vào chi tiết em sẽ giải thích rõ hơn,"
+    },
+    {
+      "id": 143,
+      "start": 926.69,
+      "end": 931.38,
+      "start_time": "00:15:26,690",
+      "end_time": "00:15:31,380",
+      "text": "chứ bây giờ nói thì mấy bác sẽ hơi khó hiểu đấy."
+    },
+    {
+      "id": 144,
+      "start": 931.38,
+      "end": 938.59,
+      "start_time": "00:15:31,380",
+      "end_time": "00:15:38,590",
+      "text": "Rồi, đầu tiên thì em sẽ đi tạo nhân vật là em sẽ copy cái prompt này nha."
+    },
+    {
+      "id": 145,
+      "start": 938.59,
+      "end": 945.0,
+      "start_time": "00:15:38,590",
+      "end_time": "00:15:45,000",
+      "text": "Em sẽ mở con Google Flow lên. Cái này thì mấy bác biết rồi đúng không?"
+    },
+    {
+      "id": 146,
+      "start": 945.0,
+      "end": 956.74,
+      "start_time": "00:15:45,000",
+      "end_time": "00:15:56,740",
+      "text": "Em sẽ chỉnh lại cái hình ảnh này, kích thước khung hình này, và em sẽ chọn là gen ra 4 ảnh nha. Bởi vì gen ra 4 ảnh như vậy để mình có nhiều cái sự lựa chọn hơn, cái nào ok thì mình chọn nha mọi người."
+    },
+    {
+      "id": 147,
+      "start": 956.74,
+      "end": 960.74,
+      "start_time": "00:15:56,740",
+      "end_time": "00:16:00,740",
+      "text": "Tiếp theo là nhân vật thứ hai. Đấy, cái này thì khá đơn giản, mấy bác chỉ cần việc copy cái prompt rồi mọi người qua gen thôi."
+    },
+    {
+      "id": 148,
+      "start": 960.74,
+      "end": 964.74,
+      "start_time": "00:16:00,740",
+      "end_time": "00:16:04,740",
+      "text": "Tiếp tục cái thứ ba là cái Mom này, character Mom là người mẹ mọi người."
+    },
+    {
+      "id": 149,
+      "start": 964.74,
+      "end": 970.0,
+      "start_time": "00:16:04,740",
+      "end_time": "00:16:10,000",
+      "text": "Tiếp tục cái thứ tư này, em copy dán vào thôi, đợi nó gen ra. Đấy."
+    },
+    {
+      "id": 150,
+      "start": 970.0,
+      "end": 976.22,
+      "start_time": "00:16:10,000",
+      "end_time": "00:16:16,220",
+      "text": "Thì đây nó đã gen ra: cái prompt ở đầu tiên, prompt 2, prompt 3, prompt 4."
+    },
+    {
+      "id": 151,
+      "start": 976.22,
+      "end": 985.0,
+      "start_time": "00:16:16,220",
+      "end_time": "00:16:25,000",
+      "text": "Mọi người xem qua các nhân vật người que đồng nhất rất là đẹp và đúng chuẩn phong cách hoạt hình What-If luôn nha."
+    },
+    {
+      "id": 152,
+      "start": 985.0,
+      "end": 992.26,
+      "start_time": "00:16:25,000",
+      "end_time": "00:16:32,260",
+      "text": "Giờ em sẽ tiếp tục copy các prompt nhân vật tiếp theo để gen đầy"
+    },
+    {
+      "id": 153,
+      "start": 992.26,
+      "end": 1000.0,
+      "start_time": "00:16:32,260",
+      "end_time": "00:16:40,000",
+      "text": "đủ trọn bộ 8 nhân vật này vào thư mục dự án cho mấy bác xem."
+    },
+    {
+      "id": 154,
+      "start": 1000.0,
+      "end": 1003.74,
+      "start_time": "00:16:40,000",
+      "end_time": "00:16:43,740",
+      "text": "04, 05, 06, 07, 08... đấy."
+    },
+    {
+      "id": 155,
+      "start": 1003.74,
+      "end": 1013.06,
+      "start_time": "00:16:43,740",
+      "end_time": "00:16:53,060",
+      "text": "Tất cả đủ hết 8 nhân vật nha. Và bây giờ thì em sẽ lựa chọn ra một trong những cái ảnh nét nhất của các prompt này em lưu lại thôi mọi người."
+    },
+    {
+      "id": 156,
+      "start": 1013.74,
+      "end": 1021.0,
+      "start_time": "00:16:53,740",
+      "end_time": "00:17:01,000",
+      "text": "Đấy. Đó đó là cái phần về nhân vật nha."
+    },
+    {
+      "id": 157,
+      "start": 1021.0,
+      "end": 1027.18,
+      "start_time": "00:17:01,000",
+      "end_time": "00:17:07,180",
+      "text": "Bây giờ thì em giả bộ em sẽ chọn cái này đi, em sẽ tải về em lưu luôn."
+    },
+    {
+      "id": 158,
+      "start": 1027.18,
+      "end": 1034.74,
+      "start_time": "00:17:07,180",
+      "end_time": "00:17:14,740",
+      "text": "Đấy, cái nhân vật này mình phải ảnh nét đúng không? Nét rõ chi tiết rồi thì em sẽ tải về thôi."
+    },
+    {
+      "id": 159,
+      "start": 1034.74,
+      "end": 1040.94,
+      "start_time": "00:17:14,740",
+      "end_time": "00:17:20,940",
+      "text": "Rồi em sẽ copy cái tên nhân vật nha, mọi người lưu ý là đặt đúng tên nha."
+    },
+    {
+      "id": 160,
+      "start": 1040.94,
+      "end": 1051.02,
+      "start_time": "00:17:20,940",
+      "end_time": "00:17:31,020",
+      "text": "Và mọi người bỏ đúng vào trong cái thư mục nó hướng dẫn nha, như đây hiện tại nó bảo em bỏ trong thư mục này đúng không, thì em sẽ đặt tên và bỏ đúng trong cái thư mục đó."
+    },
+    {
+      "id": 161,
+      "start": 1051.02,
+      "end": 1059.02,
+      "start_time": "00:17:31,020",
+      "end_time": "00:17:39,020",
+      "text": "Để khi mà mọi người, khi mà nó edit á thì nó sẽ làm được nha mấy bác, nó sẽ làm theo cái format đó."
+    },
+    {
+      "id": 162,
+      "start": 1059.02,
+      "end": 1063.0,
+      "start_time": "00:17:39,020",
+      "end_time": "00:17:43,000",
+      "text": "Chứ mọi người đừng có lưu ở chỗ khác nha."
+    },
+    {
+      "id": 163,
+      "start": 1063.0,
+      "end": 1068.0,
+      "start_time": "00:17:43,000",
+      "end_time": "00:17:48,000",
+      "text": "Rồi tiếp theo cái ảnh thứ hai cũng tương tự thôi, mọi người tải về nè."
+    },
+    {
+      "id": 164,
+      "start": 1068.0,
+      "end": 1073.0,
+      "start_time": "00:17:48,000",
+      "end_time": "00:17:53,000",
+      "text": "Rồi mấy bác lưu tên nhân vật vào, đấy đặt cho đúng nha mọi người."
+    },
+    {
+      "id": 165,
+      "start": 1073.0,
+      "end": 1082.3,
+      "start_time": "00:17:53,000",
+      "end_time": "00:18:02,300",
+      "text": "Thì đối với hiện tại là em đang dùng cái gói Ultra thì tải về nó không có cái logo, nhưng mà mọi người dùng gói Pro hay là Plus gì cũng được nha."
+    },
+    {
+      "id": 166,
+      "start": 1082.78,
+      "end": 1094.42,
+      "start_time": "00:18:02,780",
+      "end_time": "00:18:14,420",
+      "text": "Em đã train cái dạng này rồi, khi mà edit á thì mấy bác sẽ bị xóa, bị che cái logo... cái logo Flow với cái logo... nói chung là che đi cái logo ngôi sao ở dưới góc,"
+    },
+    {
+      "id": 167,
+      "start": 1095.02,
+      "end": 1104.54,
+      "start_time": "00:18:15,020",
+      "end_time": "00:18:24,540",
+      "text": "ở góc bên phải ở dưới mọi người, nên là các bác cứ yên tâm là mọi người không cần phải là xóa logo hay gì đâu. Như vậy thì nó sẽ mờ cái ảnh của mọi người đi."
+    },
+    {
+      "id": 168,
+      "start": 1105.02,
+      "end": 1111.18,
+      "start_time": "00:18:25,020",
+      "end_time": "00:18:31,180",
+      "text": "Mọi người dùng tool xóa thì nó sẽ vỡ cái ảnh của mấy bác. Nên là bác cứ tải về, mọi người làm ở dạng này cứ tải về đi."
+    },
+    {
+      "id": 169,
+      "start": 1111.68,
+      "end": 1118.62,
+      "start_time": "00:18:31,680",
+      "end_time": "00:18:38,620",
+      "text": "Khi edit thì cái skill edit nó đã che hết rồi, đấy. Em đã train thật sự rất rất là kỹ và giống đối thủ luôn nha."
+    },
+    {
+      "id": 170,
+      "start": 1119.06,
+      "end": 1124.4,
+      "start_time": "00:18:39,060",
+      "end_time": "00:18:44,400",
+      "text": "Cái khung hình màu đen che á thì nó giống đối thủ luôn. Tí nữa ra thành quả thì em sẽ cho mọi người xem."
+    },
+    {
+      "id": 171,
+      "start": 1124.82,
+      "end": 1128.42,
+      "start_time": "00:18:44,820",
+      "end_time": "00:18:48,420",
+      "text": "Rồi như vậy thì em đã vừa tải gen xong 8 cái ảnh rồi đúng không?"
+    },
+    {
+      "id": 172,
+      "start": 1128.42,
+      "end": 1130.66,
+      "start_time": "00:18:48,420",
+      "end_time": "00:18:50,660",
+      "text": "Và bây giờ em làm theo hướng dẫn, đồng thời"
+    },
+    {
+      "id": 173,
+      "start": 1130.66,
+      "end": 1136.0,
+      "start_time": "00:18:50,660",
+      "end_time": "00:18:56,000",
+      "text": "sẽ lưu sang một cái thư mục này nữa nè. Em sẽ chọn hết 8 ảnh đúng không?"
+    },
+    {
+      "id": 174,
+      "start": 1136.0,
+      "end": 1144.0,
+      "start_time": "00:18:56,000",
+      "end_time": "00:19:04,000",
+      "text": "Em bấm phím là Ctrl + C hoặc là mọi người bấm sao chép nha. Rồi em sẽ đi ra theo cái thư mục này. Đó, đấy làm đúng theo cái hướng dẫn của nó."
+    },
+    {
+      "id": 175,
+      "start": 1144.0,
+      "end": 1152.0,
+      "start_time": "00:19:04,000",
+      "end_time": "00:19:12,000",
+      "text": "Em sẽ tạo thêm một cái thư mục là Hear10X này nha mấy bác. Đấy mấy bác thấy không? Nó hướng dẫn nè, nên là mình sẽ làm theo luôn."
+    },
+    {
+      "id": 176,
+      "start": 1152.0,
+      "end": 1160.0,
+      "start_time": "00:19:12,000",
+      "end_time": "00:19:20,000",
+      "text": "Để bữa sau này mình mà làm những cái tập, những cái video tiếp theo á mà nó có cùng với cái dạng nhân vật á thì nó sẽ dùng những nhân vật này đồng bộ cho cái kênh mình luôn nha."
+    },
+    {
+      "id": 177,
+      "start": 1160.0,
+      "end": 1164.32,
+      "start_time": "00:19:20,000",
+      "end_time": "00:19:24,320",
+      "text": "Mọi người để ý cái kênh đối thủ á, mọi người thấy không, nhiều video có nhân vật chính"
+    },
+    {
+      "id": 178,
+      "start": 1164.32,
+      "end": 1170.08,
+      "start_time": "00:19:24,320",
+      "end_time": "00:19:30,080",
+      "text": "chỉ là một nhân vật chính đó thôi, nó không có thay đổi về cái ngoại hình nha. Đấy,"
+    },
+    {
+      "id": 179,
+      "start": 1170.08,
+      "end": 1176.76,
+      "start_time": "00:19:30,080",
+      "end_time": "00:19:36,760",
+      "text": "đó là lý do là mình sẽ làm như vậy để cho nó đồng bộ cho cả kênh mình nha mọi người."
+    },
+    {
+      "id": 180,
+      "start": 1176.76,
+      "end": 1187.98,
+      "start_time": "00:19:36,760",
+      "end_time": "00:19:47,980",
+      "text": "Rồi, tiếp theo thì sẽ gen tiếp những cái hình ảnh LOC nè. Hình ảnh LOC này có nghĩa là những cái bối cảnh khung hình, ví dụ như phòng ngủ nè, phòng khách hay là sân khấu này kia mọi người. Đấy."
+    },
+    {
+      "id": 181,
+      "start": 1187.98,
+      "end": 1191.74,
+      "start_time": "00:19:47,980",
+      "end_time": "00:19:51,740",
+      "text": "Thì bây giờ tiếp tục em sẽ copy cái prompt,"
+    },
+    {
+      "id": 182,
+      "start": 1191.74,
+      "end": 1200.0,
+      "start_time": "00:19:51,740",
+      "end_time": "00:20:00,000",
+      "text": "em sẽ ra con Flow này em sẽ dán vào làm tiếp ha. Vẫn là setting như này nha mọi người. Đấy."
+    },
+    {
+      "id": 183,
+      "start": 1200.0,
+      "end": 1202.0,
+      "start_time": "00:20:00,000",
+      "end_time": "00:20:02,000",
+      "text": "Em sẽ chọn 4 ảnh luôn để mình có nhiều sự lựa chọn nha."
+    },
+    {
+      "id": 184,
+      "start": 1202.0,
+      "end": 1209.0,
+      "start_time": "00:20:02,000",
+      "end_time": "00:20:09,000",
+      "text": "Bởi vì mình gen hình ảnh này nó không có tốn credit nha mấy bác, nên là mấy bác cứ gen thoải mái thôi, đấy."
+    },
+    {
+      "id": 185,
+      "start": 1209.0,
+      "end": 1214.0,
+      "start_time": "00:20:09,000",
+      "end_time": "00:20:14,000",
+      "text": "8 cái thì em sẽ tua nhanh luôn nha mọi người."
+    },
+    {
+      "id": 186,
+      "start": 1214.0,
+      "end": 1222.0,
+      "start_time": "00:20:14,000",
+      "end_time": "00:20:22,000",
+      "text": "Thật sự để mà làm ra được cái skill cái prompt hot như này thì em tốn hơn 3 ngày đấy mấy bác ạ, chứ không nhanh được đâu nha."
+    },
+    {
+      "id": 187,
+      "start": 1222.0,
+      "end": 1227.0,
+      "start_time": "00:20:22,000",
+      "end_time": "00:20:27,000",
+      "text": "Train rất là kỹ, rất là nhiều thứ, test đi test lại nữa."
+    },
+    {
+      "id": 188,
+      "start": 1227.0,
+      "end": 1235.0,
+      "start_time": "00:20:27,000",
+      "end_time": "00:20:35,000",
+      "text": "Em làm demo nữa chứ không phải là đơn thuần một phát là nó ra được liền đâu mấy bác ạ. Bởi vì cái dạng này thì thật sự rất là khó."
+    },
+    {
+      "id": 189,
+      "start": 1235.0,
+      "end": 1243.0,
+      "start_time": "00:20:35,000",
+      "end_time": "00:20:43,000",
+      "text": "Đến cả cách edit thì đối thủ thì em không biết là họ dùng AI kết hợp với edit thủ công này kia hay không, kiểu như họ học qua các cái khóa học vẽ 2D, 3D này kia mấy bác, đấy."
+    },
+    {
+      "id": 190,
+      "start": 1243.0,
+      "end": 1252.0,
+      "start_time": "00:20:43,000",
+      "end_time": "00:20:52,000",
+      "text": "Còn em thì em sẽ dùng con Claude em train nó, em cho làm luôn. Đấy, còn chất lượng như nào thì mấy bác sẽ tự đánh giá nha."
+    },
+    {
+      "id": 191,
+      "start": 1252.0,
+      "end": 1262.0,
+      "start_time": "00:20:52,000",
+      "end_time": "00:21:02,000",
+      "text": "Còn rồi là mấy bác có thể áp dụng thôi, phụ thuộc vào nhu cầu của mọi người."
+    },
+    {
+      "id": 192,
+      "start": 1262.0,
+      "end": 1273.26,
+      "start_time": "00:21:02,000",
+      "end_time": "00:21:13,260",
+      "text": "Bởi vì nếu mà mấy bác có kiểu như không có thời gian để edit, làm edit được hay là không biết edit, không có thời gian edit á mọi người, đấy thì bác áp dụng cho con Claude edit thôi."
+    },
+    {
+      "id": 193,
+      "start": 1273.26,
+      "end": 1278.86,
+      "start_time": "00:21:13,260",
+      "end_time": "00:21:18,860",
+      "text": "Mình muốn làm nhưng mình không biết edit thì mình chấp nhận cho con AI nó edit thôi mọi người, đấy."
+    },
+    {
+      "id": 194,
+      "start": 1278.86,
+      "end": 1285.94,
+      "start_time": "00:21:18,860",
+      "end_time": "00:21:25,940",
+      "text": "Rồi thì đây là những cái ảnh mà bối cảnh em vừa gen xong nè, bây giờ em cũng sẽ lưu lại."
+    },
+    {
+      "id": 195,
+      "start": 1285.94,
+      "end": 1291.74,
+      "start_time": "00:21:25,940",
+      "end_time": "00:21:31,740",
+      "text": "Và đương nhiên em cũng sẽ ra copy cái tên nè, ví dụ như ảnh đầu tiên là LOC01 đúng không?"
+    },
+    {
+      "id": 196,
+      "start": 1291.74,
+      "end": 1294.74,
+      "start_time": "00:21:31,740",
+      "end_time": "00:21:34,740",
+      "text": "Thì mấy bác phải nhớ là copy chính xác nha,"
+    },
+    {
+      "id": 197,
+      "start": 1294.74,
+      "end": 1297.74,
+      "start_time": "00:21:34,740",
+      "end_time": "00:21:37,740",
+      "text": "và mình sẽ lưu vào trong cái thư mục LOC luôn nha mọi người,"
+    },
+    {
+      "id": 198,
+      "start": 1297.74,
+      "end": 1299.74,
+      "start_time": "00:21:37,740",
+      "end_time": "00:21:39,740",
+      "text": "và đặt cái tên LOC01."
+    },
+    {
+      "id": 199,
+      "start": 1299.74,
+      "end": 1303.74,
+      "start_time": "00:21:39,740",
+      "end_time": "00:21:43,740",
+      "text": "Rồi tương tự những ảnh sau cũng là LOC02, LOC03 đấy,"
+    },
+    {
+      "id": 200,
+      "start": 1303.74,
+      "end": 1305.74,
+      "start_time": "00:21:43,740",
+      "end_time": "00:21:45,740",
+      "text": "đến khi nào mà xong thôi."
+    },
+    {
+      "id": 201,
+      "start": 1305.74,
+      "end": 1307.74,
+      "start_time": "00:21:45,740",
+      "end_time": "00:21:47,740",
+      "text": "Em tua qua cái đoạn lưu này nha,"
+    },
+    {
+      "id": 202,
+      "start": 1307.74,
+      "end": 1310.74,
+      "start_time": "00:21:47,740",
+      "end_time": "00:21:50,740",
+      "text": "và cuối cùng thì em cũng đã lưu xong 8 cái ảnh LOC rồi."
+    },
+    {
+      "id": 203,
+      "start": 1310.74,
+      "end": 1315.74,
+      "start_time": "00:21:50,740",
+      "end_time": "00:21:55,740",
+      "text": "Và bước tiếp theo thì sẽ quay lại với cái phần prompt của mình,"
+    },
+    {
+      "id": 204,
+      "start": 1315.74,
+      "end": 1320.74,
+      "start_time": "00:21:55,740",
+      "end_time": "00:22:00,740",
+      "text": "và mình sẽ đi tạo tiếp những cái hình ảnh tiếp theo là về phần ảnh cảnh này."
+    },
+    {
+      "id": 205,
+      "start": 1320.74,
+      "end": 1323.82,
+      "start_time": "00:22:00,740",
+      "end_time": "00:22:03,820",
+      "text": "Cái phần này là tạo và lưu trong cái thư mục img nha."
+    },
+    {
+      "id": 206,
+      "start": 1324.06,
+      "end": 1325.86,
+      "start_time": "00:22:04,060",
+      "end_time": "00:22:05,860",
+      "text": "Và cái phần này là nhiều ảnh nhất nha mấy bác."
+    },
+    {
+      "id": 207,
+      "start": 1326.12,
+      "end": 1329.44,
+      "start_time": "00:22:06,120",
+      "end_time": "00:22:09,440",
+      "text": "Như cái chủ đề này á thì nó sẽ gồm 74 ảnh nha."
+    },
+    {
+      "id": 208,
+      "start": 1329.7,
+      "end": 1331.5,
+      "start_time": "00:22:09,700",
+      "end_time": "00:22:11,500",
+      "text": "Và em quay lại với cái file hướng dẫn nè."
+    },
+    {
+      "id": 209,
+      "start": 1332.52,
+      "end": 1336.36,
+      "start_time": "00:22:12,520",
+      "end_time": "00:22:16,360",
+      "text": "Đây, ở đây nó cũng có hướng dẫn nè, em sẽ giải thích cho các bác thấy chi tiết."
+    },
+    {
+      "id": 210,
+      "start": 1336.86,
+      "end": 1339.18,
+      "start_time": "00:22:16,860",
+      "end_time": "00:22:19,180",
+      "text": "Đầu tiên thì nó nói mình dùng Flow nè,"
+    },
+    {
+      "id": 211,
+      "start": 1339.42,
+      "end": 1340.46,
+      "start_time": "00:22:19,420",
+      "end_time": "00:22:20,460",
+      "text": "và bước hai"
+    },
+    {
+      "id": 212,
+      "start": 1340.7,
+      "end": 1345.9,
+      "start_time": "00:22:20,700",
+      "end_time": "00:22:25,900",
+      "text": "về ảnh cảnh là từ I001 tới I074. Mỗi prompt có các cái dòng là REF."
+    },
+    {
+      "id": 213,
+      "start": 1345.9,
+      "end": 1353.7,
+      "start_time": "00:22:25,900",
+      "end_time": "00:22:33,700",
+      "text": "Cái dòng này có nghĩa là nó sẽ chú thích cho mình là chọn những cái ảnh tham chiếu vào để cho nó gen."
+    },
+    {
+      "id": 214,
+      "start": 1353.7,
+      "end": 1360.7,
+      "start_time": "00:22:33,700",
+      "end_time": "00:22:40,700",
+      "text": "Thì cụ thể như thế nào thì bây giờ em sẽ làm cho mấy bác thấy nha. Đầu tiên cái ảnh I001, ảnh 01 nha, mọi người sẽ"
+    },
+    {
+      "id": 215,
+      "start": 1360.7,
+      "end": 1363.92,
+      "start_time": "00:22:40,700",
+      "end_time": "00:22:43,920",
+      "text": "thấy những cái dòng này đầu tiên trước đúng không, mọi người không quan tâm nha."
+    },
+    {
+      "id": 216,
+      "start": 1364.38,
+      "end": 1369.8,
+      "start_time": "00:22:44,380",
+      "end_time": "00:22:49,800",
+      "text": "Đấy, cái khung ảnh thì mọi người không quan tâm và mọi người quan tâm là cái REF phía sau này, cái chú thích này."
+    },
+    {
+      "id": 217,
+      "start": 1369.88,
+      "end": 1374.24,
+      "start_time": "00:22:49,880",
+      "end_time": "00:22:54,240",
+      "text": "Đây đây đây, cái ngoài cùng nha, còn cái chính giữa này thì mấy bác đừng quan tâm chi."
+    },
+    {
+      "id": 218,
+      "start": 1374.24,
+      "end": 1382.24,
+      "start_time": "00:22:54,240",
+      "end_time": "00:23:02,240",
+      "text": "Đấy cái mọi người quan tâm là cái REF CH-MOM, LOC-02 này. Đó ví dụ như cái prompt cái ảnh đầu tiên là như vậy nha. Rồi bây giờ em sẽ quay lại với cái phần con Flow này."
+    },
+    {
+      "id": 219,
+      "start": 1382.24,
+      "end": 1390.24,
+      "start_time": "00:23:02,240",
+      "end_time": "00:23:10,240",
+      "text": "Mọi người bấm vào dấu cộng giúp em nha. Bây giờ thì mấy bác có thể chọn ảnh bên đây cũng được nhưng mà cái này thì nó theo các cái tên của nó theo cái prompt của mình rồi"
+    },
+    {
+      "id": 220,
+      "start": 1390.24,
+      "end": 1398.24,
+      "start_time": "00:23:10,240",
+      "end_time": "00:23:18,240",
+      "text": "nên là mình rất khó, rất khó để lựa chọn đúng không? Rất là bị loạn mà mình không nhớ được những ảnh nào. Thì mấy bác bấm vào dưới này tải lên,"
+    },
+    {
+      "id": 221,
+      "start": 1398.24,
+      "end": 1405.01,
+      "start_time": "00:23:18,240",
+      "end_time": "00:23:25,010",
+      "text": "mình sẽ tải lên tất cả các cái ảnh mà lúc nãy mình đã lưu theo tên đấy mấy bác,"
+    },
+    {
+      "id": 222,
+      "start": 1405.01,
+      "end": 1412.73,
+      "start_time": "00:23:25,010",
+      "end_time": "00:23:32,730",
+      "text": "để mọi người có thể dễ nhìn, mọi người nhìn một phát là biết cái ảnh tên gì luôn, đấy."
+    },
+    {
+      "id": 223,
+      "start": 1412.73,
+      "end": 1422.07,
+      "start_time": "00:23:32,730",
+      "end_time": "00:23:42,070",
+      "text": "Ví dụ như đây, các ảnh nhân vật đúng không, em sẽ tải lên, nó có đều các cái tên nè: CH-HERO, CH-MOM, CH-NOAH... nói chung là có hết các cái tên rồi, đấy."
+    },
+    {
+      "id": 224,
+      "start": 1422.07,
+      "end": 1429.45,
+      "start_time": "00:23:42,070",
+      "end_time": "00:23:49,450",
+      "text": "Và tiếp theo là cái phần là ảnh LOC-02 nữa đúng không? Thì em sẽ tải thêm cái thư mục LOC lên."
+    },
+    {
+      "id": 225,
+      "start": 1429.45,
+      "end": 1439.45,
+      "start_time": "00:23:49,450",
+      "end_time": "00:23:59,450",
+      "text": "Đây, em đợi nó load lên xong rồi đúng không, em sẽ tải tiếp cái thư mục các cái ảnh LOC lên nè. Đây, 8 ảnh thôi. Rồi, đó."
+    },
+    {
+      "id": 226,
+      "start": 1439.45,
+      "end": 1449.45,
+      "start_time": "00:23:59,450",
+      "end_time": "00:24:09,450",
+      "text": "Bây giờ thì mình đã có đầy đủ hết các cái dữ liệu để mình tham chiếu rồi đúng không? Đợi load một tí nha mọi người."
+    },
+    {
+      "id": 227,
+      "start": 1449.45,
+      "end": 1457.45,
+      "start_time": "00:24:09,450",
+      "end_time": "00:24:17,450",
+      "text": "Đấy mình đặt cái tên rõ ràng như này thì mình mới dễ nhìn và mình dễ làm được đúng không mọi người?"
+    },
+    {
+      "id": 228,
+      "start": 1457.45,
+      "end": 1462.45,
+      "start_time": "00:24:17,450",
+      "end_time": "00:24:22,450",
+      "text": "Rồi quay lại nè, bây giờ nó REF CH-MOM, LOC-02,"
+    },
+    {
+      "id": 229,
+      "start": 1462.45,
+      "end": 1467.45,
+      "start_time": "00:24:22,450",
+      "end_time": "00:24:27,450",
+      "text": "đó thì bây giờ em sẽ chọn vào cái CH-MOM nè, cái ảnh CH-MOM."
+    },
+    {
+      "id": 230,
+      "start": 1467.45,
+      "end": 1475.45,
+      "start_time": "00:24:27,450",
+      "end_time": "00:24:35,450",
+      "text": "Rồi, em sẽ Ctrl em di chuột em bấm chuột vào cái LOC-02 này nữa là em sẽ chọn 2 ảnh nha mấy bác."
+    },
+    {
+      "id": 231,
+      "start": 1475.45,
+      "end": 1483.45,
+      "start_time": "00:24:35,450",
+      "end_time": "00:24:43,450",
+      "text": "Rồi, đấy, em sẽ thêm vào bên trong câu lệnh nha. Đấy mọi người thấy chưa, như này là nó đã tham chiếu xong 2 ảnh nè."
+    },
+    {
+      "id": 232,
+      "start": 1483.45,
+      "end": 1486.85,
+      "start_time": "00:24:43,450",
+      "end_time": "00:24:46,850",
+      "text": "Quay lại tiếp tục em sẽ copy cái prompt này nữa thôi là xong,"
+    },
+    {
+      "id": 233,
+      "start": 1486.85,
+      "end": 1490.69,
+      "start_time": "00:24:46,850",
+      "end_time": "00:24:50,690",
+      "text": "đấy, copy prompt này nè dán vào."
+    },
+    {
+      "id": 234,
+      "start": 1491.0,
+      "end": 1493.35,
+      "start_time": "00:24:51,000",
+      "end_time": "00:24:53,350",
+      "text": "Rồi bây giờ thì chỉ công việc gen ra thôi."
+    },
+    {
+      "id": 235,
+      "start": 1493.35,
+      "end": 1502.35,
+      "start_time": "00:24:53,350",
+      "end_time": "00:25:02,350",
+      "text": "Chỗ này thì em cũng sẽ để 4 ảnh để có nhiều sự lựa chọn hợp lý cho mình thôi. Đơn giản như vậy thôi nha mấy bác."
+    },
+    {
+      "id": 236,
+      "start": 1502.35,
+      "end": 1510.02,
+      "start_time": "00:25:02,350",
+      "end_time": "00:25:10,020",
+      "text": "Tiếp theo là cái ảnh ví dụ như 02 đúng không? REF CH-HERO nè, LOC-01 đúng không, và cái prompt này."
+    },
+    {
+      "id": 237,
+      "start": 1510.02,
+      "end": 1520.02,
+      "start_time": "00:25:10,020",
+      "end_time": "00:25:20,020",
+      "text": "Thì em sẽ copy cái prompt này nè, rồi bây giờ thì qua em sẽ chọn với cái nhân vật là HERO, CH-HERO đâu, đây, đúng không? LOC-01 đúng không?"
+    },
+    {
+      "id": 238,
+      "start": 1520.02,
+      "end": 1528.52,
+      "start_time": "00:25:20,020",
+      "end_time": "00:25:28,520",
+      "text": "Tiếp tục Ctrl, giữ Ctrl nè, bấm thêm một cái LOC-01, ảnh LOC-01 này mọi người, đó là mình đã chọn 2 ảnh, dán cái prompt vào."
+    },
+    {
+      "id": 239,
+      "start": 1528.52,
+      "end": 1537.02,
+      "start_time": "00:25:28,520",
+      "end_time": "00:25:37,020",
+      "text": "Rồi, cứ thế thôi, bây giờ thì em Enter cho nó chạy gen ra. Đó. Và cái prompt đầu tiên, cái ảnh đầu tiên nè mấy bác thấy nó đã gen ra chưa?"
+    },
+    {
+      "id": 240,
+      "start": 1537.02,
+      "end": 1544.82,
+      "start_time": "00:25:37,020",
+      "end_time": "00:25:44,820",
+      "text": "Có nghĩa là nó sẽ kết hợp với cái ảnh nhân cái nhân vật người mẹ và cái bối cảnh là ở cái phòng dưới phòng khách đấy mọi người, đó."
+    },
+    {
+      "id": 241,
+      "start": 1544.82,
+      "end": 1555.9,
+      "start_time": "00:25:44,820",
+      "end_time": "00:25:55,900",
+      "text": "Nó ra biểu cảm là đang đứng nghe điện thoại nè, mấy bác thấy đỉnh cao chưa? Đấy, đó chính là cái vấn đề về tham chiếu cái chỗ đó nên là mình phải làm thật kỹ và chuẩn xác nha mọi người."
+    },
+    {
+      "id": 242,
+      "start": 1556.56,
+      "end": 1564.86,
+      "start_time": "00:25:56,560",
+      "end_time": "00:26:04,860",
+      "text": "Đôi khi mình làm sai một cái bối cảnh hoặc là một cái nhân vật á rồi sau đó thì nó sẽ kéo theo sai hết, nên là chỗ này mình làm thật sự là kỹ càng nha, đấy."
+    },
+    {
+      "id": 243,
+      "start": 1574.82,
+      "end": 1584.82,
+      "start_time": "00:26:14,820",
+      "end_time": "00:26:24,820",
+      "text": "Em giải thích rất là kỹ chỗ này luôn. Đấy, cái ảnh thứ hai cũng vậy nè: nhân vật HERO, nhân vật người con kết hợp với cái phòng ngủ của hắn nè, đấy thì sẽ ra thôi."
+    },
+    {
+      "id": 244,
+      "start": 1584.82,
+      "end": 1596.82,
+      "start_time": "00:26:24,820",
+      "end_time": "00:26:36,820",
+      "text": "Những cái phòng và những cái ở dưới là lúc nãy là ở trong cái thư mục LOC đấy mọi người, cái bối cảnh đấy. Rồi tiếp theo cái ảnh thứ ba nè nó cũng tương tự nè:"
+    },
+    {
+      "id": 245,
+      "start": 1596.82,
+      "end": 1607.06,
+      "start_time": "00:26:36,820",
+      "end_time": "00:26:47,060",
+      "text": "REF CH-HERO, CH-MOM và LOC-02. À thì cái này là nó sẽ gồm 3 ảnh luôn thì nó gợi ý bao nhiêu thì mình cứ chọn bấy nhiêu thôi mọi người đúng không? Thì bây giờ em quay lại nè, em sẽ chọn vào tải tệp lên,"
+    },
+    {
+      "id": 246,
+      "start": 1607.06,
+      "end": 1612.82,
+      "start_time": "00:26:47,060",
+      "end_time": "00:26:52,820",
+      "text": "em sẽ chọn vào CH-HERO, tiếp tục CH-MOM và LOC-02 đúng không? Đó, quay lại kiểm tra đúng nè, chọn 3 ảnh,"
+    },
+    {
+      "id": 247,
+      "start": 1612.82,
+      "end": 1618.02,
+      "start_time": "00:26:52,820",
+      "end_time": "00:26:58,020",
+      "text": "đấy và em sẽ copy cái prompt này thôi. Đấy rất là đơn giản, mấy bác hiểu được cái quy trình là thật sự rất là đơn giản luôn."
+    },
+    {
+      "id": 248,
+      "start": 1618.02,
+      "end": 1622.18,
+      "start_time": "00:26:58,020",
+      "end_time": "00:27:02,180",
+      "text": "Rồi bây giờ chuyển việc Enter để cho nó gen ra thôi."
+    },
+    {
+      "id": 249,
+      "start": 1622.18,
+      "end": 1624.4,
+      "start_time": "00:27:02,180",
+      "end_time": "00:27:04,400",
+      "text": "Tương tự các cái ở dưới cũng vậy nha,"
+    },
+    {
+      "id": 250,
+      "start": 1624.4,
+      "end": 1627.56,
+      "start_time": "00:27:04,400",
+      "end_time": "00:27:07,560",
+      "text": "đấy em giải thích 3 cái đều rất là chi tiết cụ thể rồi,"
+    },
+    {
+      "id": 251,
+      "start": 1627.56,
+      "end": 1631.44,
+      "start_time": "00:27:07,560",
+      "end_time": "00:27:11,440",
+      "text": "rất là dễ hiểu thôi, mấy bác nghe qua là hiểu liền mà."
+    },
+    {
+      "id": 252,
+      "start": 1631.44,
+      "end": 1637.44,
+      "start_time": "00:27:11,440",
+      "end_time": "00:27:17,440",
+      "text": "Đấy thấy, mọi người thấy nó tạo ra hình rất là rất là đỉnh không?"
+    },
+    {
+      "id": 253,
+      "start": 1637.44,
+      "end": 1640.1,
+      "start_time": "00:27:17,440",
+      "end_time": "00:27:20,100",
+      "text": "Tương tự những cái ảnh sau cũng vậy nha."
+    },
+    {
+      "id": 254,
+      "start": 1640.1,
+      "end": 1641.74,
+      "start_time": "00:27:20,100",
+      "end_time": "00:27:21,740",
+      "text": "Bây giờ thì em sẽ tua nhanh nha mấy bác."
+    },
+    {
+      "id": 255,
+      "start": 1641.74,
+      "end": 1649.74,
+      "start_time": "00:27:21,740",
+      "end_time": "00:27:29,740",
+      "text": "Mà ví dụ như đây em đang làm tới cái ảnh chỗ 09 nè, mọi người để ý là cái REF nó gợi ý là không cần đồ họa, không cần nhân vật"
+    },
+    {
+      "id": 256,
+      "start": 1649.74,
+      "end": 1657.74,
+      "start_time": "00:27:29,740",
+      "end_time": "00:27:37,740",
+      "text": "thì có nghĩa là bây giờ mình chỉ công việc copy cái prompt thôi, mình chạy cái prompt thôi nha, mình không cần tải ảnh tham chiếu nào cả nha mọi người, đấy."
+    },
+    {
+      "id": 257,
+      "start": 1657.74,
+      "end": 1661.74,
+      "start_time": "00:27:37,740",
+      "end_time": "00:27:41,740",
+      "text": "Và đây là toàn bộ những cái mà em"
+    },
+    {
+      "id": 258,
+      "start": 1661.74,
+      "end": 1663.14,
+      "start_time": "00:27:41,740",
+      "end_time": "00:27:43,140",
+      "text": "đã gen ra xong rồi nha mọi người, đấy."
+    },
+    {
+      "id": 259,
+      "start": 1663.68,
+      "end": 1665.52,
+      "start_time": "00:27:43,680",
+      "end_time": "00:27:45,520",
+      "text": "Em vừa tua qua đấy mấy bác."
+    },
+    {
+      "id": 260,
+      "start": 1666.4,
+      "end": 1671.18,
+      "start_time": "00:27:46,400",
+      "end_time": "00:27:51,180",
+      "text": "Cái nào mà nó REF nó chú thích là không cần á thì mọi người chỉ cần việc dán prompt và mọi người chạy thôi nha, đấy."
+    },
+    {
+      "id": 261,
+      "start": 1672.0,
+      "end": 1674.88,
+      "start_time": "00:27:52,000",
+      "end_time": "00:27:54,880",
+      "text": "Tất cả đã xong hết rồi"
+    },
+    {
+      "id": 262,
+      "start": 1675.02,
+      "end": 1682.82,
+      "start_time": "00:27:55,020",
+      "end_time": "00:28:02,820",
+      "text": "thì bây giờ em sẽ tải xuống lưu lại nha, rồi em sẽ bước tiếp theo thì sẽ đi tạo voice, tạo giọng đọc nha mọi người."
+    },
+    {
+      "id": 263,
+      "start": 1684.08,
+      "end": 1691.4,
+      "start_time": "00:28:04,080",
+      "end_time": "00:28:11,400",
+      "text": "Thì cái chỗ mà tải ảnh này á thì mấy bác cũng lưu ý là mọi người tải ảnh nào thì mọi người nhớ đặt đúng cái tên đó luôn nha,"
+    },
+    {
+      "id": 264,
+      "start": 1692.56,
+      "end": 1697.44,
+      "start_time": "00:28:12,560",
+      "end_time": "00:28:17,440",
+      "text": "đúng với cái tên trong cái file prompt của mình ấy."
+    },
+    {
+      "id": 265,
+      "start": 1698.58,
+      "end": 1701.5,
+      "start_time": "00:28:18,580",
+      "end_time": "00:28:21,500",
+      "text": "Đây cuối cùng là em cũng tải xong rồi mọi người, mọi người thấy không?"
+    },
+    {
+      "id": 266,
+      "start": 1701.5,
+      "end": 1709.5,
+      "start_time": "00:28:21,500",
+      "end_time": "00:28:29,500",
+      "text": "Phải nói là cái prompt này tạo ra những cái hình ảnh nhân vật và cái bối cảnh rất là chi tiết và rất là đẹp luôn nha mấy bác."
+    },
+    {
+      "id": 267,
+      "start": 1709.5,
+      "end": 1716.5,
+      "start_time": "00:28:29,500",
+      "end_time": "00:28:36,500",
+      "text": "Rồi, tiếp theo thì mình sẽ đi tạo là video nữa nha mọi người, em quên chứ, chưa tạo video mà đi tạo giọng đọc."
+    },
+    {
+      "id": 268,
+      "start": 1716.5,
+      "end": 1722.81,
+      "start_time": "00:28:36,500",
+      "end_time": "00:28:42,810",
+      "text": "Sẵn đây thì tiếp là hướng dẫn mọi người tạo video luôn. Ở cái video clip nè,"
+    },
+    {
+      "id": 269,
+      "start": 1722.81,
+      "end": 1729.5,
+      "start_time": "00:28:42,810",
+      "end_time": "00:28:49,500",
+      "text": "ví dụ cái ảnh đầu tiên là C01 này, nó sẽ chú thích là từ ảnh I001 và"
+    },
+    {
+      "id": 270,
+      "start": 1729.5,
+      "end": 1733.5,
+      "start_time": "00:28:49,500",
+      "end_time": "00:28:53,500",
+      "text": "tier là Quality."
+    },
+    {
+      "id": 271,
+      "start": 1733.5,
+      "end": 1737.5,
+      "start_time": "00:28:53,500",
+      "end_time": "00:28:57,500",
+      "text": "Thì đi vào chi tiết em sẽ giải thích cụ thể cho mọi người nha."
+    },
+    {
+      "id": 272,
+      "start": 1737.5,
+      "end": 1742.5,
+      "start_time": "00:28:57,500",
+      "end_time": "00:29:02,500",
+      "text": "Từ ảnh 01 này có nghĩa là sao, em sẽ giải thích khi mà làm để cho mấy bác dễ hiểu."
+    },
+    {
+      "id": 273,
+      "start": 1742.5,
+      "end": 1746.5,
+      "start_time": "00:29:02,500",
+      "end_time": "00:29:06,500",
+      "text": "Đây nè bên này mọi người quay lại cái file hướng dẫn nó cũng có giải thích nè,"
+    },
+    {
+      "id": 274,
+      "start": 1746.5,
+      "end": 1753.5,
+      "start_time": "00:29:06,500",
+      "end_time": "00:29:13,500",
+      "text": "nhưng mà để đi vào cái chi tiết để cho mấy bác dễ hiểu hơn nha, thực chiến cho mọi người hình dung được."
+    },
+    {
+      "id": 275,
+      "start": 1753.5,
+      "end": 1758.6,
+      "start_time": "00:29:13,500",
+      "end_time": "00:29:18,600",
+      "text": "Rồi bây giờ em sẽ tạo ảnh đầu tiên là với cái I001 này nha, em sẽ copy cái prompt trước nè mọi người."
+    },
+    {
+      "id": 276,
+      "start": 1758.6,
+      "end": 1765.4,
+      "start_time": "00:29:18,600",
+      "end_time": "00:29:25,400",
+      "text": "Tiếp tục em sẽ quay lại với con Google Flow, bấm vào cái setting và em sẽ chuyển qua video nha,"
+    },
+    {
+      "id": 277,
+      "start": 1765.4,
+      "end": 1770.8,
+      "start_time": "00:29:25,400",
+      "end_time": "00:29:30,800",
+      "text": "bởi vì bây giờ mình dùng video mà, mình làm video mà. Và mọi người nhớ là tích vào cái chọn là khung hình"
+    },
+    {
+      "id": 278,
+      "start": 1770.8,
+      "end": 1779.9,
+      "start_time": "00:29:30,800",
+      "end_time": "00:29:39,900",
+      "text": "và cái chỗ model là Quality nha. Đây, bởi vì lúc nãy nó có bảo mình là chỗ này là model là dùng Quality nè mọi người."
+    },
+    {
+      "id": 279,
+      "start": 1779.9,
+      "end": 1789.4,
+      "start_time": "00:29:39,900",
+      "end_time": "00:29:49,400",
+      "text": "Và từ ảnh I001 này có nghĩa là mấy bác là cái ảnh bắt đầu nè, mọi người chọn giúp em là ảnh 001 nha."
+    },
+    {
+      "id": 280,
+      "start": 1789.4,
+      "end": 1799.94,
+      "start_time": "00:29:49,400",
+      "end_time": "00:29:59,940",
+      "text": "Thì lúc nãy là em đã tải về hết rồi đúng không, và những cái tên như này thì đương nhiên mình cũng sẽ tải trong cái thư mục đây, cái thư mục img của mình là 74 ảnh lên đúng không?"
+    },
+    {
+      "id": 281,
+      "start": 1800.0,
+      "end": 1804.0,
+      "start_time": "00:30:00,000",
+      "end_time": "00:30:04,000",
+      "text": "Đấy em sẽ tải lên thôi."
+    },
+    {
+      "id": 282,
+      "start": 1804.0,
+      "end": 1812.0,
+      "start_time": "00:30:04,000",
+      "end_time": "00:30:12,000",
+      "text": "Giống như cái phần lúc trước ấy mọi người, mình tải lên để mình nhìn cái tên mà mình đã đặt để cho nó rõ chi tiết hơn nha."
+    },
+    {
+      "id": 283,
+      "start": 1812.0,
+      "end": 1821.0,
+      "start_time": "00:30:12,000",
+      "end_time": "00:30:21,000",
+      "text": "Rồi, đây, đó, đã tải lên đầy đủ hết rồi. Bây giờ thì mình chỉ công việc nhìn vào tham chiếu thôi."
+    },
+    {
+      "id": 284,
+      "start": 1821.0,
+      "end": 1825.0,
+      "start_time": "00:30:21,000",
+      "end_time": "00:30:25,000",
+      "text": "Ví dụ như đây: ảnh I001 thêm vào câu lệnh nè."
+    },
+    {
+      "id": 285,
+      "start": 1825.0,
+      "end": 1829.0,
+      "start_time": "00:30:25,000",
+      "end_time": "00:30:29,000",
+      "text": "Mình chỉ là thêm từ ảnh á ở phần bắt đầu thôi nha mấy bác."
+    },
+    {
+      "id": 286,
+      "start": 1829.0,
+      "end": 1834.0,
+      "start_time": "00:30:29,000",
+      "end_time": "00:30:34,000",
+      "text": "Rồi bước tiếp theo mọi người chỉ cần việc copy cái prompt nè, rồi mọi người đi tạo ảnh thôi."
+    },
+    {
+      "id": 287,
+      "start": 1834.0,
+      "end": 1837.0,
+      "start_time": "00:30:34,000",
+      "end_time": "00:30:37,000",
+      "text": "Đấy, nó chỉ cần như thế thôi, không cần ảnh kết thúc nha."
+    },
+    {
+      "id": 288,
+      "start": 1837.0,
+      "end": 1843.0,
+      "start_time": "00:30:37,000",
+      "end_time": "00:30:43,000",
+      "text": "Bên này thì mọi người để 8 giây và set cho cái Quality và chọn 1 ảnh thôi,"
+    },
+    {
+      "id": 289,
+      "start": 1843.0,
+      "end": 1847.0,
+      "start_time": "00:30:43,000",
+      "end_time": "00:30:47,000",
+      "text": "bởi vì cái này nó đốt credit của mọi người rất là căng nha."
+    },
+    {
+      "id": 290,
+      "start": 1847.0,
+      "end": 1851.0,
+      "start_time": "00:30:47,000",
+      "end_time": "00:30:51,000",
+      "text": "Cái Quality này nó đốt 100 credit trên một video ấy mọi người, đấy nên là các bác làm cân nhắc nha."
+    },
+    {
+      "id": 291,
+      "start": 1851.0,
+      "end": 1861.0,
+      "start_time": "00:30:51,000",
+      "end_time": "00:31:01,000",
+      "text": "Các cái model khác thì nó sẽ ít hơn, nhưng mà làm gì làm thì những cái video demo đầu tiên á thì mình cũng cần phải chất lượng nha mấy bác, trong cái file hướng dẫn nó cũng có nói rồi ấy."
+    },
+    {
+      "id": 292,
+      "start": 1861.0,
+      "end": 1869.0,
+      "start_time": "00:31:01,000",
+      "end_time": "00:31:09,000",
+      "text": "Tiếp tục là em đang làm cái video thứ hai nè, em sẽ chọn là cái I002 nha. Đây em sẽ lướt em tìm cái I002."
+    },
+    {
+      "id": 293,
+      "start": 1869.0,
+      "end": 1879.0,
+      "start_time": "00:31:09,000",
+      "end_time": "00:31:19,000",
+      "text": "Đây, cái ảnh I002 đây đúng không? Thêm vào câu lệnh nè, ảnh bắt đầu nè, chỉ có thế thôi và mình copy cái prompt. Đây,"
+    },
+    {
+      "id": 294,
+      "start": 1879.0,
+      "end": 1889.58,
+      "start_time": "00:31:19,000",
+      "end_time": "00:31:29,580",
+      "text": "đó mấy bác thấy chưa? Và cái title cái gợi ý của cái này nó cũng kêu là Quality đúng không? Thì em sẽ để vẫn để Quality đó thôi, em gen ra. Và đây, video đầu tiên nè mọi người."
+    },
+    {
+      "id": 295,
+      "start": 1898.42,
+      "end": 1906.76,
+      "start_time": "00:31:38,420",
+      "end_time": "00:31:46,760",
+      "text": "Những cái âm thanh ở trong video á thì mấy bác cũng không cần quan tâm đâu, bởi vì khi nó edit á cái nào không hợp lý là nó sẽ tự động tắt tiếng luôn cho mọi người nha."
+    },
+    {
+      "id": 296,
+      "start": 1906.76,
+      "end": 1912.76,
+      "start_time": "00:31:46,760",
+      "end_time": "00:31:52,760",
+      "text": "Đó, em train kỹ đến cái chỗ đó luôn rồi nên là mọi người cứ yên tâm, không cần phải lo gì cả."
+    },
+    {
+      "id": 297,
+      "start": 1912.76,
+      "end": 1919.76,
+      "start_time": "00:31:52,760",
+      "end_time": "00:31:59,760",
+      "text": "Về cái phần video ở cái tập này thì nó có 34, 35 video gì á thì bây giờ em cứ gen thôi mọi người."
+    },
+    {
+      "id": 298,
+      "start": 1919.76,
+      "end": 1928.76,
+      "start_time": "00:31:59,760",
+      "end_time": "00:32:08,760",
+      "text": "Đấy, tương tự như thế những cái video những cái phần sau nó có những cái chú thích model khác nè, Fast hay là Lite nè thì mấy bác cứ làm theo tương tự thôi."
+    },
+    {
+      "id": 299,
+      "start": 1928.76,
+      "end": 1933.47,
+      "start_time": "00:32:08,760",
+      "end_time": "00:32:13,470",
+      "text": "Ví dụ như tiếp theo là cái video thứ ba đi,"
+    },
+    {
+      "id": 300,
+      "start": 1933.47,
+      "end": 1944.46,
+      "start_time": "00:32:13,470",
+      "end_time": "00:32:24,460",
+      "text": "nó sẽ chọn là cái ảnh I001 và với cái vẫn là model là Quality đúng không? Vẫn như vậy em chỉ cần việc copy prompt thôi."
+    },
+    {
+      "id": 301,
+      "start": 1944.46,
+      "end": 1951.29,
+      "start_time": "00:32:24,460",
+      "end_time": "00:32:31,290",
+      "text": "Sẵn đây em hướng dẫn cho mọi người cái mẹo để search nhanh nữa. Ví dụ như ảnh thứ 10 này nó ảnh bắt đầu là I023 đúng không?"
+    },
+    {
+      "id": 302,
+      "start": 1951.29,
+      "end": 1956.94,
+      "start_time": "00:32:31,290",
+      "end_time": "00:32:36,940",
+      "text": "Rồi mọi người bấm bắt đầu nè, mấy bác search ở trên tìm kiếm nè, ghi 23 thì nó ra nó gợi ý nè."
+    },
+    {
+      "id": 303,
+      "start": 1957.01,
+      "end": 1962.34,
+      "start_time": "00:32:37,010",
+      "end_time": "00:32:42,340",
+      "text": "Đó, rồi mình chọn thôi, cái này là model là Quality, em sẽ dán prompt vào."
+    },
+    {
+      "id": 304,
+      "start": 1962.34,
+      "end": 1970.0,
+      "start_time": "00:32:42,340",
+      "end_time": "00:32:50,000",
+      "text": "Bởi vì khi mà mọi người tải ảnh lên ở cái phần phần I00 mấy á thì nó rất rất là nhiều ảnh."
+    },
+    {
+      "id": 305,
+      "start": 1970.0,
+      "end": 1974.01,
+      "start_time": "00:32:50,000",
+      "end_time": "00:32:54,010",
+      "text": "Lúc nãy là cái video này tận 74 ảnh mà đúng không?"
+    },
+    {
+      "id": 306,
+      "start": 1974.01,
+      "end": 1978.01,
+      "start_time": "00:32:54,010",
+      "end_time": "00:32:58,010",
+      "text": "Nên là mình tìm nó hơi lâu, mình lướt nó hơi lâu á thì mấy bác cứ search vào."
+    },
+    {
+      "id": 307,
+      "start": 1978.01,
+      "end": 1982.01,
+      "start_time": "00:32:58,010",
+      "end_time": "00:33:02,010",
+      "text": "Đây ví dụ như ảnh 25 nè, mọi người search vào như vậy nó ra rất là nhanh nha."
+    },
+    {
+      "id": 308,
+      "start": 1982.01,
+      "end": 1986.01,
+      "start_time": "00:33:02,010",
+      "end_time": "00:33:06,010",
+      "text": "Đấy, em hướng dẫn chi rất là chi tiết từ cách thủ công đến các cái mẹo có thể làm."
+    },
+    {
+      "id": 309,
+      "start": 1986.01,
+      "end": 1992.01,
+      "start_time": "00:33:06,010",
+      "end_time": "00:33:12,010",
+      "text": "Thì mọi người phải xem thật kỹ video để mọi người có thể hiểu được cái quy trình nha."
+    },
+    {
+      "id": 310,
+      "start": 1992.01,
+      "end": 2000.0,
+      "start_time": "00:33:12,010",
+      "end_time": "00:33:20,000",
+      "text": "Về sau đó những cái ngách khác thì tương tự như thế thôi. Ví dụ như những cái ngách người que..."
+    },
+    {
+      "id": 311,
+      "start": 2000.0,
+      "end": 2007.01,
+      "start_time": "00:33:20,000",
+      "end_time": "00:33:27,010",
+      "text": "Tương tự thế thôi. Ví dụ như những ngách người que khác, cứ tương tự thế mọi người làm thôi. Ví dụ như ảnh này 27, em cũng search 27, tìm kiếm 27, nó ra nè."
+    },
+    {
+      "id": 312,
+      "start": 2007.01,
+      "end": 2014.01,
+      "start_time": "00:33:27,010",
+      "end_time": "00:33:34,010",
+      "text": "Model Fast đúng không? Nè, em đổi qua model Fast thôi. Model này thì nó chỉ tốn 20 credit thôi."
+    },
+    {
+      "id": 313,
+      "start": 2014.01,
+      "end": 2021.01,
+      "start_time": "00:33:34,010",
+      "end_time": "00:33:41,010",
+      "text": "Cái thằng Quality là cái thằng chất lượng nhất mọi người ạ, nên là nó trừ tận 100 credit trên một video luôn, rất là khét nha."
+    },
+    {
+      "id": 314,
+      "start": 2021.01,
+      "end": 2031.01,
+      "start_time": "00:33:41,010",
+      "end_time": "00:33:51,010",
+      "text": "Như vậy là vừa rồi em cũng đã hướng dẫn mọi người cách để gen ra cái video như nào rồi ha. Đấy, rất là đơn giản thôi, mấy bác cứ xem thật kỹ video là rõ thôi."
+    },
+    {
+      "id": 315,
+      "start": 2031.01,
+      "end": 2037.84,
+      "start_time": "00:33:51,010",
+      "end_time": "00:33:57,840",
+      "text": "Vậy là em sẽ tua nhanh nha. Như vậy là em đã gen xong hết nè, ba mươi mấy cái video."
+    },
+    {
+      "id": 316,
+      "start": 2037.84,
+      "end": 2044.01,
+      "start_time": "00:33:57,840",
+      "end_time": "00:34:04,010",
+      "text": "Đấy, em đã bỏ trong cái thư mục clip luôn, giống như nó hướng dẫn mình đấy mọi người."
+    },
+    {
+      "id": 317,
+      "start": 2044.01,
+      "end": 2049.51,
+      "start_time": "00:34:04,010",
+      "end_time": "00:34:09,510",
+      "text": "Bây giờ thì đã có được các cái hình ảnh nhân vật, hình ảnh bối cảnh và gồm video này kia rồi."
+    },
+    {
+      "id": 318,
+      "start": 2049.51,
+      "end": 2053.51,
+      "start_time": "00:34:09,510",
+      "end_time": "00:34:13,510",
+      "text": "Thì bước tiếp theo thì em sẽ đi tạo âm thanh nha."
+    },
+    {
+      "id": 319,
+      "start": 2053.51,
+      "end": 2057.51,
+      "start_time": "00:34:13,510",
+      "end_time": "00:34:17,510",
+      "text": "Thì cái tạo âm thanh này mọi người có thể là đi tạo trước cũng được, đấy."
+    },
+    {
+      "id": 320,
+      "start": 2057.51,
+      "end": 2062.51,
+      "start_time": "00:34:17,510",
+      "end_time": "00:34:22,510",
+      "text": "Nói chung là nó không có quan trọng đâu, mình tạo âm thanh trước hay là tạo ảnh trước cũng được nha mọi người."
+    },
+    {
+      "id": 321,
+      "start": 2062.51,
+      "end": 2067.51,
+      "start_time": "00:34:22,510",
+      "end_time": "00:34:27,510",
+      "text": "Đấy, nó không có liên quan, không có xung đột với nhau đâu mấy bác à."
+    },
+    {
+      "id": 322,
+      "start": 2067.51,
+      "end": 2076.51,
+      "start_time": "00:34:27,510",
+      "end_time": "00:34:36,510",
+      "text": "Đây, bây giờ em mở lại cái file, đây là cái file full kịch bản của mình thì mình có thể giúp để cho mình có thể đọc lại tham khảo thôi mấy bác."
+    },
+    {
+      "id": 323,
+      "start": 2076.51,
+      "end": 2083.51,
+      "start_time": "00:34:36,510",
+      "end_time": "00:34:43,510",
+      "text": "Cái quan trọng là mình sẽ dùng cái file 02-DGT này là để đi tạo voice đối thoại nha."
+    },
+    {
+      "id": 324,
+      "start": 2083.51,
+      "end": 2095.51,
+      "start_time": "00:34:43,510",
+      "end_time": "00:34:55,510",
+      "text": "Và để cho mọi người biết được và nghe được những cái giọng đối thoại chi tiết hơn như nào á thì mọi người phải xem qua những cái video của kênh đối thủ nha, để mọi người rõ nha mọi người. Đấy."
+    },
+    {
+      "id": 325,
+      "start": 2095.51,
+      "end": 2103.51,
+      "start_time": "00:34:55,510",
+      "end_time": "00:35:03,510",
+      "text": "Rồi, bây giờ thì em sẽ quay lại, em sẽ dùng cái con tool ElevenLabs của em ha. Tool này thì nói chung anh em đã đều biết hết rồi."
+    },
+    {
+      "id": 326,
+      "start": 2103.51,
+      "end": 2106.53,
+      "start_time": "00:35:03,510",
+      "end_time": "00:35:06,530",
+      "text": "Em không có dùng web, đương nhiên là cái chức năng này trên web cũng có nha. Đấy,"
+    },
+    {
+      "id": 327,
+      "start": 2106.82,
+      "end": 2110.08,
+      "start_time": "00:35:06,820",
+      "end_time": "00:35:10,080",
+      "text": "em dùng cái chức năng nâng cao là hội thoại nha mọi người."
+    },
+    {
+      "id": 328,
+      "start": 2110.08,
+      "end": 2113.3,
+      "start_time": "00:35:10,080",
+      "end_time": "00:35:13,300",
+      "text": "Em đã import sẵn sáu cái voice của em vào rồi."
+    },
+    {
+      "id": 329,
+      "start": 2113.3,
+      "end": 2117.12,
+      "start_time": "00:35:13,300",
+      "end_time": "00:35:17,120",
+      "text": "Đây là những cái voice này thì em lấy từ web ElevenLabs thôi. Đấy."
+    },
+    {
+      "id": 330,
+      "start": 2117.12,
+      "end": 2121.88,
+      "start_time": "00:35:17,120",
+      "end_time": "00:35:21,880",
+      "text": "Thì cái đây là chức năng nâng cao nha, chứ không phải là mặc định nha mọi người."
+    },
+    {
+      "id": 331,
+      "start": 2121.88,
+      "end": 2127.0,
+      "start_time": "00:35:21,880",
+      "end_time": "00:35:27,000",
+      "text": "Mình phải nâng nâng cấp thêm ở trong cái gói của nó thì mới được nha mấy bác."
+    },
+    {
+      "id": 332,
+      "start": 2127.0,
+      "end": 2132.5,
+      "start_time": "00:35:27,000",
+      "end_time": "00:35:32,500",
+      "text": "Kể cả mọi người dùng web cũng vậy, mọi người mà dùng cái chức năng hội thoại á thì nó sẽ tốn nhiều tiền hơn nha mấy bác."
+    },
+    {
+      "id": 333,
+      "start": 2132.5,
+      "end": 2137.5,
+      "start_time": "00:35:32,500",
+      "end_time": "00:35:37,500",
+      "text": "Đấy, em giải thích chi tiết để cho mấy bác hình dung ra được chứ không phải là nó đơn giản là như cái gói nó trừ tiền như gói mặc định đâu nha mọi người."
+    },
+    {
+      "id": 334,
+      "start": 2137.5,
+      "end": 2141.88,
+      "start_time": "00:35:37,500",
+      "end_time": "00:35:41,880",
+      "text": "Nó sẽ tốn chi phí hơn đấy."
+    },
+    {
+      "id": 335,
+      "start": 2141.88,
+      "end": 2148.88,
+      "start_time": "00:35:41,880",
+      "end_time": "00:35:48,880",
+      "text": "Đấy, ví dụ như cái #3 này thì cái giọng nhân vật thứ ba, #2 là nhân vật thứ hai thôi."
+    },
+    {
+      "id": 336,
+      "start": 2148.88,
+      "end": 2153.88,
+      "start_time": "00:35:48,880",
+      "end_time": "00:35:53,880",
+      "text": "Bây giờ em đã import xong rồi, em đã gán cái voice xong rồi đúng không?"
+    },
+    {
+      "id": 337,
+      "start": 2153.88,
+      "end": 2156.88,
+      "start_time": "00:35:53,880",
+      "end_time": "00:35:56,880",
+      "text": "Thì bây giờ em sẽ import cái file kịch bản nè."
+    },
+    {
+      "id": 338,
+      "start": 2156.88,
+      "end": 2160.88,
+      "start_time": "00:35:56,880",
+      "end_time": "00:36:00,880",
+      "text": "Đó, cái file mà đã chú thích DGT nè mọi người, đấy."
+    },
+    {
+      "id": 339,
+      "start": 2160.88,
+      "end": 2164.88,
+      "start_time": "00:36:00,880",
+      "end_time": "00:36:04,880",
+      "text": "Bên này thì nó cũng đã có chú thích là voice # mấy nè."
+    },
+    {
+      "id": 340,
+      "start": 2164.88,
+      "end": 2168.88,
+      "start_time": "00:36:04,880",
+      "end_time": "00:36:08,880",
+      "text": "Ví dụ như #1 là gán với cái voice 1 của mình thôi. Bây giờ em sẽ chạy luôn nha."
+    },
+    {
+      "id": 341,
+      "start": 2168.88,
+      "end": 2176.56,
+      "start_time": "00:36:08,880",
+      "end_time": "00:36:16,560",
+      "text": "Trước giờ em tạo giọng đọc này kia thì em đều dùng tool của em thôi, bởi vì nếu mà anh em đã làm kiếm ra tiền được"
+    },
+    {
+      "id": 342,
+      "start": 2176.56,
+      "end": 2183.24,
+      "start_time": "00:36:16,560",
+      "end_time": "00:36:23,240",
+      "text": "cái mảng này thì mọi người đều biết là mấy bác phải dùng ở trên web ElevenLabs thì nó đốt rất là nhiều tiền luôn, và thật"
+    },
+    {
+      "id": 343,
+      "start": 2183.24,
+      "end": 2189.88,
+      "start_time": "00:36:23,240",
+      "end_time": "00:36:29,880",
+      "text": "sự gọi là đốt tiền luôn mọi người, nên là mới dùng tool nha. Đấy. Còn đối với cái gói hội thoại này là phải nâng cấp nha mọi người,"
+    },
+    {
+      "id": 344,
+      "start": 2189.88,
+      "end": 2194.14,
+      "start_time": "00:36:29,880",
+      "end_time": "00:36:34,140",
+      "text": "chứ gói mặc định là không có đâu nha. Em nói lại chi tiết để cho mấy bác hiểu chứ,"
+    },
+    {
+      "id": 345,
+      "start": 2194.14,
+      "end": 2199.84,
+      "start_time": "00:36:34,140",
+      "end_time": "00:36:39,840",
+      "text": "lỡ nhiều anh em đang dùng cái tool của em mà mấy bác vào lại không có cái chức năng đó mấy bác hỏi nữa."
+    },
+    {
+      "id": 346,
+      "start": 2199.88,
+      "end": 2208.88,
+      "start_time": "00:36:39,880",
+      "end_time": "00:36:48,880",
+      "text": "Vì nó phải là chức năng nâng cấp nha, nâng cao đấy. Bên web nó cũng vậy nha mọi người."
+    },
+    {
+      "id": 347,
+      "start": 2208.88,
+      "end": 2217.88,
+      "start_time": "00:36:48,880",
+      "end_time": "00:36:57,880",
+      "text": "Rồi sau khi mà chờ đợi, em chờ khoảng tầm hơn 160 giây, chính xác là 161 giây, thì khoảng hơn 2 phút gần 3 phút mọi người ạ,"
+    },
+    {
+      "id": 348,
+      "start": 2217.88,
+      "end": 2225.88,
+      "start_time": "00:36:57,880",
+      "end_time": "00:37:05,880",
+      "text": "thì nó đã gen xong hết rồi nha. Vì cái file kịch bản này, file voice này thì sẽ tầm tổng hết lại thì cũng tầm 8 phút đấy mọi người ạ. Đấy."
+    },
+    {
+      "id": 349,
+      "start": 2225.88,
+      "end": 2229.44,
+      "start_time": "00:37:05,880",
+      "end_time": "00:37:09,440",
+      "text": "Đây, đây là nó đã tạo cho em một cái thư mục voice nè."
+    },
+    {
+      "id": 350,
+      "start": 2229.44,
+      "end": 2232.94,
+      "start_time": "00:37:09,440",
+      "end_time": "00:37:12,940",
+      "text": "Kể cả cái thư mục, đây, cái thư mục voice nè,"
+    },
+    {
+      "id": 351,
+      "start": 2232.94,
+      "end": 2234.34,
+      "start_time": "00:37:12,940",
+      "end_time": "00:37:14,340",
+      "text": "gồm tất cả các cái file."
+    },
+    {
+      "id": 352,
+      "start": 2234.34,
+      "end": 2240.84,
+      "start_time": "00:37:14,340",
+      "end_time": "00:37:20,840",
+      "text": "Và trước đó thì Claude nó cũng tạo ra một cái thư mục rỗng là voice nè, để khi mình gen voice xong mình bỏ vào ấy mọi người."
+    },
+    {
+      "id": 353,
+      "start": 2240.84,
+      "end": 2243.84,
+      "start_time": "00:37:20,840",
+      "end_time": "00:37:23,840",
+      "text": "Nhưng mà bây giờ nó đã tạo ra cho em cái thư mục đó rồi mọi người."
+    },
+    {
+      "id": 354,
+      "start": 2243.84,
+      "end": 2254.62,
+      "start_time": "00:37:23,840",
+      "end_time": "00:37:34,620",
+      "text": "Để không trong đó cũng được, không cần đem ra trong thư mục voice đâu nha. Mấy bác cứ để vậy như em, hiện tại em để vậy luôn thì tí nữa em cho nó dựng video thì nó cũng sẽ tự hiểu nha mọi người."
+    },
+    {
+      "id": 355,
+      "start": 2254.62,
+      "end": 2263.88,
+      "start_time": "00:37:34,620",
+      "end_time": "00:37:43,880",
+      "text": "À, còn đây, cái file chấm zip toàn bộ tài nguyên các cái skill này kia thì em để trong cái link Drive ở dưới khung mô tả video nha."
+    },
+    {
+      "id": 356,
+      "start": 2263.88,
+      "end": 2271.88,
+      "start_time": "00:37:43,880",
+      "end_time": "00:37:51,880",
+      "text": "Mấy bác lướt xuống ở dưới khung video thì mấy bác sẽ thấy thôi. Còn một cái nữa, nếu mọi người chưa biết cài đặt và để cho cái tool,"
+    },
+    {
+      "id": 357,
+      "start": 2271.88,
+      "end": 2279.88,
+      "start_time": "00:37:51,880",
+      "end_time": "00:37:59,880",
+      "text": "cái con Claude nó dựng được video á thì mọi người cần phải cài Python nữa nha. Cái này là một cái môi trường ngôn ngữ lập trình thôi mấy bác ạ."
+    },
+    {
+      "id": 358,
+      "start": 2279.88,
+      "end": 2287.88,
+      "start_time": "00:37:59,880",
+      "end_time": "00:38:07,880",
+      "text": "Thì ở cuối video của video ở trên YouTube này em đã có hướng dẫn rất là chi tiết rồi, cách để mọi người cài vào rồi."
+    },
+    {
+      "id": 359,
+      "start": 2287.88,
+      "end": 2294.0,
+      "start_time": "00:38:07,880",
+      "end_time": "00:38:14,000",
+      "text": "Thì mấy bác mà máy mọi người chưa có Python á thì mọi người nhớ quay lại video trên YouTube này của em mọi người xem nha. Em đã có hướng dẫn rất là chi tiết, mọi người làm theo là được nha."
+    },
+    {
+      "id": 360,
+      "start": 2294.0,
+      "end": 2301.5,
+      "start_time": "00:38:14,000",
+      "end_time": "00:38:21,500",
+      "text": "Rồi, bước cuối cùng là sau khi mình đã có được toàn bộ hết tất cả các tài nguyên: kịch bản,"
+    },
+    {
+      "id": 361,
+      "start": 2301.5,
+      "end": 2308.62,
+      "start_time": "00:38:21,500",
+      "end_time": "00:38:28,620",
+      "text": "giọng đọc, hình ảnh, video này kia thì bây giờ thì sẽ tới cái phần là đi dựng video nha,"
+    },
+    {
+      "id": 362,
+      "start": 2308.62,
+      "end": 2310.62,
+      "start_time": "00:38:28,620",
+      "end_time": "00:38:30,620",
+      "text": "cho con Claude edit video."
+    },
+    {
+      "id": 363,
+      "start": 2310.62,
+      "end": 2314.62,
+      "start_time": "00:38:30,620",
+      "end_time": "00:38:34,620",
+      "text": "Thì vừa rồi em đã import lại cái folder What-If của em một lần nữa,"
+    },
+    {
+      "id": 364,
+      "start": 2314.62,
+      "end": 2317.62,
+      "start_time": "00:38:34,620",
+      "end_time": "00:38:37,620",
+      "text": "cũng như là bây giờ em sẽ gọi cái skill là dựng video nè,"
+    },
+    {
+      "id": 365,
+      "start": 2317.62,
+      "end": 2319.62,
+      "start_time": "00:38:37,620",
+      "end_time": "00:38:39,620",
+      "text": "đấy, dựng video What-If."
+    },
+    {
+      "id": 366,
+      "start": 2319.62,
+      "end": 2321.62,
+      "start_time": "00:38:39,620",
+      "end_time": "00:38:41,620",
+      "text": "Thì bây giờ mấy bác chỉ còn việc Enter thôi,"
+    },
+    {
+      "id": 367,
+      "start": 2321.62,
+      "end": 2323.62,
+      "start_time": "00:38:41,620",
+      "end_time": "00:38:43,620",
+      "text": "thì nó cũng sẽ tự hiểu và nó"
+    },
+    {
+      "id": 368,
+      "start": 2323.62,
+      "end": 2326.62,
+      "start_time": "00:38:43,620",
+      "end_time": "00:38:46,620",
+      "text": "làm, nó dựng, nó tự động edit video cho mình nha."
+    },
+    {
+      "id": 369,
+      "start": 2326.62,
+      "end": 2328.62,
+      "start_time": "00:38:46,620",
+      "end_time": "00:38:48,620",
+      "text": "Nhưng mà đây là vì demo hướng dẫn,"
+    },
+    {
+      "id": 370,
+      "start": 2328.62,
+      "end": 2330.62,
+      "start_time": "00:38:48,620",
+      "end_time": "00:38:50,620",
+      "text": "cho nên em ghi chi tiết cho mọi người hiểu luôn."
+    },
+    {
+      "id": 371,
+      "start": 2330.62,
+      "end": 2332.98,
+      "start_time": "00:38:50,620",
+      "end_time": "00:38:52,980",
+      "text": "Em sẽ ghi câu lệnh là: Hãy dựng video nè,"
+    },
+    {
+      "id": 372,
+      "start": 2332.98,
+      "end": 2334.98,
+      "start_time": "00:38:52,980",
+      "end_time": "00:38:54,980",
+      "text": "với cái chủ đề đó cho tôi, đấy."
+    },
+    {
+      "id": 373,
+      "start": 2334.98,
+      "end": 2338.66,
+      "start_time": "00:38:54,980",
+      "end_time": "00:38:58,660",
+      "text": "Chủ đề nào thì lúc nãy mọi người nhớ tạo ra cái thư mục tên gì á,"
+    },
+    {
+      "id": 374,
+      "start": 2338.66,
+      "end": 2342.66,
+      "start_time": "00:38:58,660",
+      "end_time": "00:39:02,660",
+      "text": "hoặc là mọi người chọn cái chủ đề gì rồi á thì mọi người ghi vào,"
+    },
+    {
+      "id": 375,
+      "start": 2342.66,
+      "end": 2345.22,
+      "start_time": "00:39:02,660",
+      "end_time": "00:39:05,220",
+      "text": "hoặc là nói chung mấy bác chỉ cần gọi skill ra rồi"
+    },
+    {
+      "id": 376,
+      "start": 2345.22,
+      "end": 2347.22,
+      "start_time": "00:39:05,220",
+      "end_time": "00:39:07,220",
+      "text": "Enter thôi thì nó cũng sẽ ra nha."
+    },
+    {
+      "id": 377,
+      "start": 2347.22,
+      "end": 2348.62,
+      "start_time": "00:39:07,220",
+      "end_time": "00:39:08,620",
+      "text": "À cái này,"
+    },
+    {
+      "id": 378,
+      "start": 2348.62,
+      "end": 2359.16,
+      "start_time": "00:39:08,620",
+      "end_time": "00:39:19,160",
+      "text": "ui cái này lúc nãy em tạo hình ảnh mà 74 cái á, 74 cái hình ảnh á mọi người thì em bị sót một cái prompt mất, thế nên là nó báo thiếu luôn nè, mọi người thấy không?"
+    },
+    {
+      "id": 379,
+      "start": 2359.76,
+      "end": 2368.34,
+      "start_time": "00:39:19,760",
+      "end_time": "00:39:28,340",
+      "text": "Đấy, cái này rất là thực chiến luôn nha, cái này em bị mắc sai sai ở chỗ là bị thiếu ảnh nè, nên là nó nhắc luôn. Bây giờ thì em sẽ"
+    },
+    {
+      "id": 380,
+      "start": 2368.62,
+      "end": 2370.62,
+      "start_time": "00:39:28,620",
+      "end_time": "00:39:30,620",
+      "text": "chọn cái là cho nó thay thế ảnh khác đi, đấy."
+    },
+    {
+      "id": 381,
+      "start": 2370.62,
+      "end": 2378.29,
+      "start_time": "00:39:30,620",
+      "end_time": "00:39:38,290",
+      "text": "Mọi người thấy không? Nó sẽ quét qua tất cả rất là nhanh. Và cái nào mình còn sai sót hay là thiếu thì nó báo nha,"
+    },
+    {
+      "id": 382,
+      "start": 2378.29,
+      "end": 2383.12,
+      "start_time": "00:39:38,290",
+      "end_time": "00:39:43,120",
+      "text": "cái nào đầy đủ thì nó sẽ chú thích luôn. Rất rất là hay nha mọi người."
+    },
+    {
+      "id": 383,
+      "start": 2383.12,
+      "end": 2390.62,
+      "start_time": "00:39:43,120",
+      "end_time": "00:39:50,620",
+      "text": "Thì em vừa chọn cái phương án là thay thế như vậy để chữa cháy nha mọi người. Thì đây cũng là một cái để mấy bác rút kinh nghiệm nha, mình làm phải"
+    },
+    {
+      "id": 384,
+      "start": 2390.62,
+      "end": 2398.62,
+      "start_time": "00:39:50,620",
+      "end_time": "00:39:58,620",
+      "text": "xem thật kỹ nha. Bởi vì cái phần lúc nãy thật sự rất là lú, rất là nhiều prompt luôn. Thường thì em làm demo thì em làm 1/3"
+    },
+    {
+      "id": 385,
+      "start": 2398.62,
+      "end": 2401.0,
+      "start_time": "00:39:58,620",
+      "end_time": "00:40:01,000",
+      "text": "hoặc là một nửa thôi, mọi người nhớ không?"
+    },
+    {
+      "id": 386,
+      "start": 2401.0,
+      "end": 2405.5,
+      "start_time": "00:40:01,000",
+      "end_time": "00:40:05,500",
+      "text": "Nhưng mà cái này thì em làm chi tiết full cả video luôn cho mấy bác xem luôn."
+    },
+    {
+      "id": 387,
+      "start": 2405.5,
+      "end": 2409.0,
+      "start_time": "00:40:05,500",
+      "end_time": "00:40:09,000",
+      "text": "Nên là lúc nãy em... đây, cái phần này nè mọi người."
+    },
+    {
+      "id": 388,
+      "start": 2409.0,
+      "end": 2413.5,
+      "start_time": "00:40:09,000",
+      "end_time": "00:40:13,500",
+      "text": "Em copy rất là nhanh nên là bị sót ấy, chắc là bị sót."
+    },
+    {
+      "id": 389,
+      "start": 2413.5,
+      "end": 2417.5,
+      "start_time": "00:40:13,500",
+      "end_time": "00:40:17,500",
+      "text": "Nhưng mà không sao, bây giờ thì chữa cháy theo cách là"
+    },
+    {
+      "id": 390,
+      "start": 2417.5,
+      "end": 2421.0,
+      "start_time": "00:40:17,500",
+      "end_time": "00:40:21,000",
+      "text": "nó đã thay tạm một ảnh khác thôi, yêu cầu nó thay thôi."
+    },
+    {
+      "id": 391,
+      "start": 2421.0,
+      "end": 2426.0,
+      "start_time": "00:40:21,000",
+      "end_time": "00:40:26,000",
+      "text": "Những cái nào mà bị bug á, bị lỗi thì nó đều báo cho mình cả nha."
+    },
+    {
+      "id": 392,
+      "start": 2426.0,
+      "end": 2429.5,
+      "start_time": "00:40:26,000",
+      "end_time": "00:40:29,500",
+      "text": "Đấy, nói chung là rất là ok, mấy bác cứ yên tâm, không lo bị sai gì đâu."
+    },
+    {
+      "id": 393,
+      "start": 2429.5,
+      "end": 2440.5,
+      "start_time": "00:40:29,500",
+      "end_time": "00:40:40,500",
+      "text": "Còn bây giờ thì mình chỉ còn việc đợi nó gen ra video thôi nha mọi người. Bây giờ nó sẽ tự động edit gộp tất cả, nói chung là khớp giọng đọc rồi khớp hình ảnh này kia luôn ha."
+    },
+    {
+      "id": 394,
+      "start": 2440.5,
+      "end": 2449.5,
+      "start_time": "00:40:40,500",
+      "end_time": "00:40:49,500",
+      "text": "Và rồi, cuối cùng thì sau khi chờ đợi hơn 30 - 40 phút thì cuối cùng nó đã gen xong. Và video chất lượng là ở 1080 nha, em đã train cái chất lượng này rồi."
+    },
+    {
+      "id": 395,
+      "start": 2449.5,
+      "end": 2460.9,
+      "start_time": "00:40:49,500",
+      "end_time": "00:41:00,900",
+      "text": "Và đối với chất lượng cao như này á thì đương nhiên nó sẽ không lưu một lần hết mà nó sẽ tách ra nha mấy bác. Thì nó cũng sẽ có một cái là GHEP.bat nè."
+    },
+    {
+      "id": 396,
+      "start": 2460.9,
+      "end": 2469.5,
+      "start_time": "00:41:00,900",
+      "end_time": "00:41:09,500",
+      "text": "Thì bây giờ em sẽ vào thư mục output nè. Đây. Thì em chỉ cần việc nháy đúp chuột vào như hướng dẫn của nó thì nó sẽ tự động ghép hết những cái"
+    },
+    {
+      "id": 397,
+      "start": 2469.5,
+      "end": 2474.0,
+      "start_time": "00:41:09,500",
+      "end_time": "00:41:14,000",
+      "text": "video nối kia lại với nhau nha, video cắt kia lại với nhau thành một cái video như này."
+    },
+    {
+      "id": 398,
+      "start": 2474.0,
+      "end": 2478.16,
+      "start_time": "00:41:14,000",
+      "end_time": "00:41:18,160",
+      "text": "Your mom is whispering on the phone in the kitchen."
+    },
+    {
+      "id": 399,
+      "start": 2478.16,
+      "end": 2481.68,
+      "start_time": "00:41:18,160",
+      "end_time": "00:41:21,680",
+      "text": "You're upstairs, two rooms away, with the door closed."
+    },
+    {
+      "id": 400,
+      "start": 2482.04,
+      "end": 2483.72,
+      "start_time": "00:41:22,040",
+      "end_time": "00:41:23,720",
+      "text": "Don't tell Kai, it's a surprise."
+    },
+    {
+      "id": 401,
+      "start": 2484.24,
+      "end": 2485.28,
+      "start_time": "00:41:24,240",
+      "end_time": "00:41:25,280",
+      "text": "A puppy? Really?"
+    },
+    {
+      "id": 402,
+      "start": 2485.74,
+      "end": 2486.78,
+      "start_time": "00:41:25,740",
+      "end_time": "00:41:26,780",
+      "text": "How did you hear that?"
+    },
+    {
+      "id": 403,
+      "start": 2487.18,
+      "end": 2489.4,
+      "start_time": "00:41:27,180",
+      "end_time": "00:41:29,400",
+      "text": "At lunch, your friend Nora's phone buzzes."
+    },
+    {
+      "id": 404,
+      "start": 2490.04,
+      "end": 2493.76,
+      "start_time": "00:41:30,040",
+      "end_time": "00:41:33,760",
+      "text": "It's on silent, inside her backpack, under three books."
+    },
+    {
+      "id": 405,
+      "start": 2494.3,
+      "end": 2495.5,
+      "start_time": "00:41:34,300",
+      "end_time": "00:41:35,500",
+      "text": "And she's sitting across the cafeteria."
+    },
+    {
+      "id": 406,
+      "start": 2495.5,
+      "end": 2504.5,
+      "start_time": "00:41:35,500",
+      "end_time": "00:41:44,500",
+      "text": "Nora, your bag's buzzing. - Okay, that's not normal. - A normal person can hear a whisper across a room. You?"
+    },
+    {
+      "id": 407,
+      "start": 2504.5,
+      "end": 2514.5,
+      "start_time": "00:41:44,500",
+      "end_time": "00:41:54,500",
+      "text": "Across the street, you hear things from 10 times farther away than anyone else. So what if you could hear 10 times better?"
+    },
+    {
+      "id": 408,
+      "start": 2514.5,
+      "end": 2516.5,
+      "start_time": "00:41:54,500",
+      "end_time": "00:41:56,500",
+      "text": "Here's how it works."
+    },
+    {
+      "id": 409,
+      "start": 2516.5,
+      "end": 2518.5,
+      "start_time": "00:41:56,500",
+      "end_time": "00:41:58,500",
+      "text": "The Bat."
+    },
+    {
+      "id": 410,
+      "start": 2518.5,
+      "end": 2524.5,
+      "start_time": "00:41:58,500",
+      "end_time": "00:42:04,500",
+      "text": "Đấy, thì vừa rồi em đã tua qua cho nó nhanh nha mấy bác. Và để em giải thích cái chỗ này một tí."
+    },
+    {
+      "id": 411,
+      "start": 2524.5,
+      "end": 2533.5,
+      "start_time": "00:42:04,500",
+      "end_time": "00:42:13,500",
+      "text": "Thì video hiện tại thì nó đang có cái phụ đề nè, thì mọi người không muốn có phụ đề thì mọi người yêu cầu không cần phụ đề cũng được, nhưng mà em khuyên là nên để phụ đề như này."
+    },
+    {
+      "id": 412,
+      "start": 2533.5,
+      "end": 2536.5,
+      "start_time": "00:42:13,500",
+      "end_time": "00:42:16,500",
+      "text": "Thì người xem họ sẽ rõ hơn, chi tiết hơn nha."
+    },
+    {
+      "id": 413,
+      "start": 2536.5,
+      "end": 2541.5,
+      "start_time": "00:42:16,500",
+      "end_time": "00:42:21,500",
+      "text": "Và phụ đề này nói chung là nó tự làm hết tất cả và chính xác 100% nha mọi người. Đấy."
+    },
+    {
+      "id": 414,
+      "start": 2541.5,
+      "end": 2545.6,
+      "start_time": "00:42:21,500",
+      "end_time": "00:42:25,600",
+      "text": "Thì đó là về cách con Claude edit video thôi."
+    },
+    {
+      "id": 415,
+      "start": 2545.6,
+      "end": 2553.28,
+      "start_time": "00:42:25,600",
+      "end_time": "00:42:33,280",
+      "text": "Cho dành cho những bác nào kiểu như không biết cách edit video nè, lười edit hay là không có thời gian làm video,"
+    },
+    {
+      "id": 416,
+      "start": 2553.78,
+      "end": 2557.73,
+      "start_time": "00:42:33,780",
+      "end_time": "00:42:37,730",
+      "text": "thì mình có skill thì mình cho con Claude nó tự động nó làm thôi mọi người."
+    },
+    {
+      "id": 417,
+      "start": 2557.73,
+      "end": 2561.05,
+      "start_time": "00:42:37,730",
+      "end_time": "00:42:41,050",
+      "text": "Đấy, còn về chất lượng thì mấy bác tự đánh giá nha."
+    },
+    {
+      "id": 418,
+      "start": 2561.05,
+      "end": 2564.15,
+      "start_time": "00:42:41,050",
+      "end_time": "00:42:44,150",
+      "text": "Thì đối với em thì em thấy cũng tương đối ok."
+    },
+    {
+      "id": 419,
+      "start": 2564.15,
+      "end": 2572.61,
+      "start_time": "00:42:44,150",
+      "end_time": "00:42:52,610",
+      "text": "Đương nhiên nó sẽ không thể nào mà bằng một người chuyên nghiệp mà học về edit hay là học về thiết kế này kia họ đi edit đâu."
+    },
+    {
+      "id": 420,
+      "start": 2572.61,
+      "end": 2574.57,
+      "start_time": "00:42:52,610",
+      "end_time": "00:42:54,570",
+      "text": "Thì đương nhiên nó sẽ không bao giờ bằng được mọi người, đấy."
+    },
+    {
+      "id": 421,
+      "start": 2574.57,
+      "end": 2582.57,
+      "start_time": "00:42:54,570",
+      "end_time": "00:43:02,570",
+      "text": "Chủ yếu là về cách tương đối và nó tiết kiệm rất là nhiều thứ cho mình thôi. Ví dụ như thời gian và công sức, đấy, kiểu vậy."
+    },
+    {
+      "id": 422,
+      "start": 2582.57,
+      "end": 2594.57,
+      "start_time": "00:43:02,570",
+      "end_time": "00:43:14,570",
+      "text": "Bây giờ thì em cho mọi người xem qua một bản nữa là bản không có phụ đề. Và cái bản này thì em yêu cầu nó là hiện trên cái cửa sổ con Claude này luôn nha, đấy."
+    },
+    {
+      "id": 423,
+      "start": 2594.57,
+      "end": 2604.47,
+      "start_time": "00:43:14,570",
+      "end_time": "00:43:24,470",
+      "text": "Và đối với cái bản này thì nó cũng sẽ không có cái phụ đề, đấy, để cho mấy bác có thể xem qua hết cái clip để so sánh được cái chất lượng nó như nào nha."
+    },
+    {
+      "id": 424,
+      "start": 2604.57,
+      "end": 2615.03,
+      "start_time": "00:43:24,570",
+      "end_time": "00:43:35,030",
+      "text": "Và cái bản này là cái chất lượng nó hiện ở trên cái màn hình Claude á thì nó chỉ là 720p thôi nha, nó không có được chất lượng HD 1080 nha mấy bác."
+    },
+    {
+      "id": 425,
+      "start": 2615.03,
+      "end": 2624.83,
+      "start_time": "00:43:35,030",
+      "end_time": "00:43:44,830",
+      "text": "Rồi ok, thì clip đến đây nó cũng là kết thúc. Em đã hướng dẫn mọi người full về cái quy trình là làm về cái key này và edit tự động bằng cái key này luôn."
+    },
+    {
+      "id": 426,
+      "start": 2624.83,
+      "end": 2631.23,
+      "start_time": "00:43:44,830",
+      "end_time": "00:43:51,230",
+      "text": "Và tất cả các cái skill em cũng để dưới mô tả, mấy bác nhớ là lướt xuống xem nha."
+    },
+    {
+      "id": 427,
+      "start": 2631.23,
+      "end": 2641.95,
+      "start_time": "00:43:51,230",
+      "end_time": "00:44:01,950",
+      "text": "Và ngoài ra á thì em cũng nhắc lại về cái chỗ nhân bản thị trường, thì mấy bác mà trước giờ mấy bác đã xem em rất là nhiều và mọi người hiểu được cái tư duy nhân bản thị trường đúng không?"
+    },
+    {
+      "id": 428,
+      "start": 2641.95,
+      "end": 2647.63,
+      "start_time": "00:44:01,950",
+      "end_time": "00:44:07,630",
+      "text": "Thì mọi người cứ đem cái key này, muốn làm thị trường Việt mọi người về nhân bản thị trường Việt cho em. Đấy."
+    },
+    {
+      "id": 429,
+      "start": 2647.63,
+      "end": 2659.23,
+      "start_time": "00:44:07,630",
+      "end_time": "00:44:19,230",
+      "text": "Như lúc trước có cái key người que mà về cái ngách ngủ, ngách người tiền sử ngủ á, thì cũng có vài bác lấy về nhân bản thị trường lên rất là ngon."
+    },
+    {
+      "id": 430,
+      "start": 2659.23,
+      "end": 2665.23,
+      "start_time": "00:44:19,230",
+      "end_time": "00:44:25,230",
+      "text": "Đây, đây là một ví dụ một cái kênh của một bác nhân bản thị trường, đấy cũng là key người que từ US về thôi mọi người."
+    },
+    {
+      "id": 431,
+      "start": 2665.23,
+      "end": 2670.23,
+      "start_time": "00:44:25,230",
+      "end_time": "00:44:30,230",
+      "text": "Mà ngoài ra thì không phải là một cái key ngoài cái ngách này đâu, còn rất là nhiều thứ nữa."
+    },
+    {
+      "id": 432,
+      "start": 2670.23,
+      "end": 2673.23,
+      "start_time": "00:44:30,230",
+      "end_time": "00:44:33,230",
+      "text": "Mọi người cứ hiểu được cái nhân bản thị trường là mấy bác ok thôi."
+    },
+    {
+      "id": 433,
+      "start": 2673.23,
+      "end": 2676.23,
+      "start_time": "00:44:33,230",
+      "end_time": "00:44:36,230",
+      "text": "Về cách làm nhân bản thị trường em cũng đã có video hướng dẫn rồi."
+    },
+    {
+      "id": 434,
+      "start": 2676.23,
+      "end": 2679.23,
+      "start_time": "00:44:36,230",
+      "end_time": "00:44:39,230",
+      "text": "Thì từ cái skill này mọi người cứ đẩy lên con Claude,"
+    },
+    {
+      "id": 435,
+      "start": 2679.23,
+      "end": 2686.23,
+      "start_time": "00:44:39,230",
+      "end_time": "00:44:46,230",
+      "text": "mọi người ví dụ như mọi người muốn nhân bản cái ngách này, cái skill này về thị trường Việt Nam, về tiếng Việt, đúng không?"
+    },
+    {
+      "id": 436,
+      "start": 2686.23,
+      "end": 2690.23,
+      "start_time": "00:44:46,230",
+      "end_time": "00:44:50,230",
+      "text": "Thì mọi người cứ tải hết của em lên xong rồi mọi người ghi là yêu cầu như thế thì nó sẽ ra thôi."
+    },
+    {
+      "id": 437,
+      "start": 2690.23,
+      "end": 2692.23,
+      "start_time": "00:44:50,230",
+      "end_time": "00:44:52,230",
+      "text": "Đấy, rất là đơn giản thôi."
+    },
+    {
+      "id": 438,
+      "start": 2692.23,
+      "end": 2694.23,
+      "start_time": "00:44:52,230",
+      "end_time": "00:44:54,230",
+      "text": "Mọi người muốn như nào thì mọi người cứ train con AI như vậy thôi. Đấy."
+    },
+    {
+      "id": 439,
+      "start": 2694.23,
+      "end": 2696.23,
+      "start_time": "00:44:54,230",
+      "end_time": "00:44:56,230",
+      "text": "Rồi ok, em cảm ơn tất cả mọi người đã xem video đến đây nha."
+    },
+    {
+      "id": 440,
+      "start": 2696.23,
+      "end": 2700.23,
+      "start_time": "00:44:56,230",
+      "end_time": "00:45:00,230",
+      "text": "Và ngoài ra nó có một cái file hướng dẫn nữa,"
+    },
+    {
+      "id": 441,
+      "start": 2700.23,
+      "end": 2702.23,
+      "start_time": "00:45:00,230",
+      "end_time": "00:45:02,230",
+      "text": "và cái form nó cũng có là cái phần thumb,"
+    },
+    {
+      "id": 442,
+      "start": 2702.23,
+      "end": 2708.02,
+      "start_time": "00:45:02,230",
+      "end_time": "00:45:08,020",
+      "text": "thì cái đây mấy bác tự tham khảo thêm nha."
+    },
+    {
+      "id": 443,
+      "start": 2708.02,
+      "end": 2716.02,
+      "start_time": "00:45:08,020",
+      "end_time": "00:45:16,020",
+      "text": "Your mom is whispering on the phone in the kitchen. You're upstairs, two rooms away, with the door closed."
+    },
+    {
+      "id": 444,
+      "start": 2716.02,
+      "end": 2724.02,
+      "start_time": "00:45:16,020",
+      "end_time": "00:45:24,020",
+      "text": "Don't tell Kai, it's a surprise. - A puppy? Really? - How did you hear that?"
+    },
+    {
+      "id": 445,
+      "start": 2724.02,
+      "end": 2732.02,
+      "start_time": "00:45:24,020",
+      "end_time": "00:45:32,020",
+      "text": "At lunch, your friend Nora's phone buzzes. It's on silent, inside her backpack, under three books."
+    },
+    {
+      "id": 446,
+      "start": 2732.02,
+      "end": 2740.02,
+      "start_time": "00:45:32,020",
+      "end_time": "00:45:40,020",
+      "text": "And she's sitting across the cafeteria. Nora, your bag's buzzing. - Okay, that's not normal."
+    },
+    {
+      "id": 447,
+      "start": 2740.02,
+      "end": 2745.02,
+      "start_time": "00:45:40,020",
+      "end_time": "00:45:45,020",
+      "text": "A normal person can hear a whisper across a room. You? Across the street, you hear things from 10 times farther away than anyone else."
+    },
+    {
+      "id": 448,
+      "start": 2745.02,
+      "end": 2747.4,
+      "start_time": "00:45:45,020",
+      "end_time": "00:45:47,400",
+      "text": "So what if you could hear 10 times better?"
+    },
+    {
+      "id": 449,
+      "start": 2749.12,
+      "end": 2750.32,
+      "start_time": "00:45:49,120",
+      "end_time": "00:45:50,320",
+      "text": "Here's how it works."
+    },
+    {
+      "id": 450,
+      "start": 2751.34,
+      "end": 2755.0,
+      "start_time": "00:45:51,340",
+      "end_time": "00:45:55,000",
+      "text": "Sound is just air, pushing on air, like ripples in a pond."
+    },
+    {
+      "id": 451,
+      "start": 2755.02,
+      "end": 2759.02,
+      "start_time": "00:45:55,020",
+      "end_time": "00:45:59,020",
+      "text": "Those ripples hit your eardrum and make it shake."
+    },
+    {
+      "id": 452,
+      "start": 2759.02,
+      "end": 2762.02,
+      "start_time": "00:45:59,020",
+      "end_time": "00:46:02,020",
+      "text": "Three tiny bones pass the shake along."
+    },
+    {
+      "id": 453,
+      "start": 2762.02,
+      "end": 2765.02,
+      "start_time": "00:46:02,020",
+      "end_time": "00:46:05,020",
+      "text": "The smallest one is about 3 mm long."
+    },
+    {
+      "id": 454,
+      "start": 2765.02,
+      "end": 2769.02,
+      "start_time": "00:46:05,020",
+      "end_time": "00:46:09,020",
+      "text": "Then comes a snail-shaped tube called the cochlea."
+    },
+    {
+      "id": 455,
+      "start": 2769.02,
+      "end": 2774.02,
+      "start_time": "00:46:09,020",
+      "end_time": "00:46:14,020",
+      "text": "Inside, thousands of tiny hair cells bend like grass in the wind,"
+    },
+    {
+      "id": 456,
+      "start": 2774.02,
+      "end": 2779.02,
+      "start_time": "00:46:14,020",
+      "end_time": "00:46:19,020",
+      "text": "and turn every push into a signal for your brain."
+    },
+    {
+      "id": 457,
+      "start": 2779.02,
+      "end": 2782.02,
+      "start_time": "00:46:19,020",
+      "end_time": "00:46:22,020",
+      "text": "Yours bend at almost nothing."
+    },
+    {
+      "id": 458,
+      "start": 2782.02,
+      "end": 2784.02,
+      "start_time": "00:46:22,020",
+      "end_time": "00:46:24,020",
+      "text": "But here's the weird part."
+    },
+    {
+      "id": 459,
+      "start": 2784.02,
+      "end": 2788.02,
+      "start_time": "00:46:24,020",
+      "end_time": "00:46:28,020",
+      "text": "Sound spreads out as it travels, so it gets weaker fast."
+    },
+    {
+      "id": 460,
+      "start": 2788.02,
+      "end": 2792.02,
+      "start_time": "00:46:28,020",
+      "end_time": "00:46:32,020",
+      "text": "Double the distance, and you get a quarter of the sound."
+    },
+    {
+      "id": 461,
+      "start": 2792.02,
+      "end": 2798.02,
+      "start_time": "00:46:32,020",
+      "end_time": "00:46:38,020",
+      "text": "So to hear 10 times farther, your ears need to be 100 times more sensitive."
+    },
+    {
+      "id": 462,
+      "start": 2798.02,
+      "end": 2802.02,
+      "start_time": "00:46:38,020",
+      "end_time": "00:46:42,020",
+      "text": "And here's the catch: your ears got 100 times stronger,"
+    },
+    {
+      "id": 463,
+      "start": 2802.02,
+      "end": 2804.02,
+      "start_time": "00:46:42,020",
+      "end_time": "00:46:44,020",
+      "text": "your volume knob did not."
+    },
+    {
+      "id": 464,
+      "start": 2804.02,
+      "end": 2808.02,
+      "start_time": "00:46:44,020",
+      "end_time": "00:46:48,020",
+      "text": "Dr. Patel, a hearing doctor, puts you in a soundproof booth."
+    },
+    {
+      "id": 465,
+      "start": 2808.02,
+      "end": 2812.02,
+      "start_time": "00:46:48,020",
+      "end_time": "00:46:52,020",
+      "text": "She plays a tiny beep, and turns it down."
+    },
+    {
+      "id": 466,
+      "start": 2812.02,
+      "end": 2820.02,
+      "start_time": "00:46:52,020",
+      "end_time": "00:47:00,020",
+      "text": "Quieter, quieter, until the machine hits its lowest setting. - Still hear it. - That's below zero, do it again."
+    },
+    {
+      "id": 467,
+      "start": 2820.02,
+      "end": 2828.02,
+      "start_time": "00:47:00,020",
+      "end_time": "00:47:08,020",
+      "text": "At home, nothing ever surprises you again. You order a pizza, and you hear the delivery scooter three blocks away."
+    },
+    {
+      "id": 468,
+      "start": 2828.02,
+      "end": 2836.02,
+      "start_time": "00:47:08,020",
+      "end_time": "00:47:16,020",
+      "text": "You open the door before he even reaches the bell. At school, teachers become easy. Mr. Greer's keys jingle two hallways away."
+    },
+    {
+      "id": 469,
+      "start": 2836.02,
+      "end": 2844.02,
+      "start_time": "00:47:16,020",
+      "end_time": "00:47:24,020",
+      "text": "You cough once, and 30 phones vanish into 30 pockets. Sound moves about 340 m every second."
+    },
+    {
+      "id": 470,
+      "start": 2844.02,
+      "end": 2852.02,
+      "start_time": "00:47:24,020",
+      "end_time": "00:47:32,020",
+      "text": "Mr. Greer walks about one. That's a very long warning. Why is everyone always sitting so nicely?"
+    },
+    {
+      "id": 471,
+      "start": 2852.02,
+      "end": 2860.02,
+      "start_time": "00:47:32,020",
+      "end_time": "00:47:40,020",
+      "text": "Hide and seek is over forever, because you can hear heartbeats behind the couch, under the stairs, in the dryer, Nora?"
+    },
+    {
+      "id": 472,
+      "start": 2860.02,
+      "end": 2862.02,
+      "start_time": "00:47:40,020",
+      "end_time": "00:47:42,020",
+      "text": "Really?"
+    },
+    {
+      "id": 473,
+      "start": 2863.86,
+      "end": 2865.34,
+      "start_time": "00:47:43,860",
+      "end_time": "00:47:45,340",
+      "text": "My heart was not that loud."
+    },
+    {
+      "id": 474,
+      "start": 2865.7,
+      "end": 2866.92,
+      "start_time": "00:47:45,700",
+      "end_time": "00:47:46,920",
+      "text": "140 beats a minute."
+    },
+    {
+      "id": 475,
+      "start": 2867.36,
+      "end": 2869.94,
+      "start_time": "00:47:47,360",
+      "end_time": "00:47:49,940",
+      "text": "Your uncle's car shop hires you for the summer."
+    },
+    {
+      "id": 476,
+      "start": 2870.62,
+      "end": 2873.92,
+      "start_time": "00:47:50,620",
+      "end_time": "00:47:53,920",
+      "text": "Mechanics use a stethoscope to hunt for a dying engine part."
+    },
+    {
+      "id": 477,
+      "start": 2875.02,
+      "end": 2880.02,
+      "start_time": "00:47:55,020",
+      "end_time": "00:48:00,020",
+      "text": "You hear it from the parking lot, front left wheel. 20 bucks an hour just to listen."
+    },
+    {
+      "id": 478,
+      "start": 2881.02,
+      "end": 2884.02,
+      "start_time": "00:48:01,020",
+      "end_time": "00:48:04,020",
+      "text": "But where it gets really crazy is video games."
+    },
+    {
+      "id": 479,
+      "start": 2885.02,
+      "end": 2887.02,
+      "start_time": "00:48:05,020",
+      "end_time": "00:48:07,020",
+      "text": "In shooter games, sound is everything."
+    },
+    {
+      "id": 480,
+      "start": 2887.02,
+      "end": 2892.02,
+      "start_time": "00:48:07,020",
+      "end_time": "00:48:12,020",
+      "text": "Footsteps, reloads, a door creaking open somewhere upstairs."
+    },
+    {
+      "id": 481,
+      "start": 2892.02,
+      "end": 2895.02,
+      "start_time": "00:48:12,020",
+      "end_time": "00:48:15,020",
+      "text": "Your brain can tell which ear a sound hit first,"
+    },
+    {
+      "id": 482,
+      "start": 2896.02,
+      "end": 2899.02,
+      "start_time": "00:48:16,020",
+      "end_time": "00:48:19,020",
+      "text": "by a gap of about 10 millionths of a second."
+    },
+    {
+      "id": 483,
+      "start": 2900.02,
+      "end": 2902.02,
+      "start_time": "00:48:20,020",
+      "end_time": "00:48:22,020",
+      "text": "That's how you know where a sound comes from."
+    },
+    {
+      "id": 484,
+      "start": 2902.02,
+      "end": 2904.02,
+      "start_time": "00:48:22,020",
+      "end_time": "00:48:24,020",
+      "text": "Yours is sharper than anyone's."
+    },
+    {
+      "id": 485,
+      "start": 2904.02,
+      "end": 2906.62,
+      "start_time": "00:48:24,020",
+      "end_time": "00:48:26,620",
+      "text": "Hear an enemy reload through two walls."
+    },
+    {
+      "id": 486,
+      "start": 2907.1,
+      "end": 2907.84,
+      "start_time": "00:48:27,100",
+      "end_time": "00:48:27,840",
+      "text": "He's on the stairs."
+    },
+    {
+      "id": 487,
+      "start": 2908.08,
+      "end": 2909.7,
+      "start_time": "00:48:28,080",
+      "end_time": "00:48:29,700",
+      "text": "Third step, left side."
+    },
+    {
+      "id": 488,
+      "start": 2910.38,
+      "end": 2912.32,
+      "start_time": "00:48:30,380",
+      "end_time": "00:48:32,320",
+      "text": "Bronze, gold, diamond."
+    },
+    {
+      "id": 489,
+      "start": 2912.98,
+      "end": 2916.02,
+      "start_time": "00:48:32,980",
+      "end_time": "00:48:36,020",
+      "text": "Number one in the whole country in four months."
+    },
+    {
+      "id": 490,
+      "start": 2916.44,
+      "end": 2919.5,
+      "start_time": "00:48:36,440",
+      "end_time": "00:48:39,500",
+      "text": "Dude, are you in my house right now?"
+    },
+    {
+      "id": 491,
+      "start": 2919.5,
+      "end": 2922.64,
+      "start_time": "00:48:39,500",
+      "end_time": "00:48:42,640",
+      "text": "The internet gives you a nickname: The Bat."
+    },
+    {
+      "id": 492,
+      "start": 2924.02,
+      "end": 2929.98,
+      "start_time": "00:48:44,020",
+      "end_time": "00:48:49,980",
+      "text": "Then the internet gives you another one: Cheater. Nobody can know that much, they say, unless he sees through walls."
+    },
+    {
+      "id": 493,
+      "start": 2930.38,
+      "end": 2932.9,
+      "start_time": "00:48:50,380",
+      "end_time": "00:48:52,900",
+      "text": "No way he heard that. No way."
+    },
+    {
+      "id": 494,
+      "start": 2933.14,
+      "end": 2934.0,
+      "start_time": "00:48:53,140",
+      "end_time": "00:48:54,000",
+      "text": "So they test you."
+    },
+    {
+      "id": 495,
+      "start": 2934.0,
+      "end": 2942.0,
+      "start_time": "00:48:54,000",
+      "end_time": "00:49:02,000",
+      "text": "Their computer, their mouse, their keyboard. Two officials stand behind you, watching every move. You win anyway."
+    },
+    {
+      "id": 496,
+      "start": 2942.0,
+      "end": 2950.0,
+      "start_time": "00:49:02,000",
+      "end_time": "00:49:10,000",
+      "text": "Then you qualify for your first live tournament, on a real stage. And there's one problem: on stage, pro players wear big, sealed headsets."
+    },
+    {
+      "id": 497,
+      "start": 2950.0,
+      "end": 2958.0,
+      "start_time": "00:49:10,000",
+      "end_time": "00:49:18,000",
+      "text": "Some tournaments even pipe in white noise. Can I turn it down? Three floors... roars... Then back, voice actor..."
+    },
+    {
+      "id": 498,
+      "start": 2958.0,
+      "end": 2964.02,
+      "start_time": "00:49:18,000",
+      "end_time": "00:49:24,020",
+      "text": "And if you'd have taken off that headset, now you can hear me. So what would you do with 10 times better hearing?"
+    },
+    {
+      "id": 499,
+      "start": 2964.02,
+      "end": 2968.82,
+      "start_time": "00:49:24,020",
+      "end_time": "00:49:28,820",
+      "text": "10 times better hearing. Tell us the one sound you'd never want to hear again in the comments."
+    },
+    {
+      "id": 500,
+      "start": 2968.82,
+      "end": 2976.82,
+      "start_time": "00:49:28,820",
+      "end_time": "00:49:36,820",
+      "text": "Take off the headset? Like and subscribe for part 2."
+    }
+  ],
+  "total_segments": 500,
+  "full_text": "Rồi, em chào tất cả các anh chị nha. Thì video hôm nay em share cho mọi người cái ngách đang cực kỳ là trend ở bên thị trường US này nha. Và sẽ hướng dẫn cho mọi người làm hoàn toàn bằng con Claude AI nha. Đây, mấy bác xem video đầu tiên của họ là 12 ngày trước và được 4 triệu view. Và những video sau là cũng vậy, rất là cao view luôn. Đấy, 11 giờ trước này. Lúc em quay là hôm thứ ba nha mọi người. Thì thứ tư em mới có thời gian để bình luận và edit để up cho mấy bác xem được. Mấy bác đã xem qua cái video mà em nói về cái chỉ số VPH á, thì mấy bác sẽ thấy được cái chỉ số này rất rất là cao nha, có nghĩa là đang rất rất là trend đấy. Ngách này thì nói là về dạng What-If nha mọi người. Thì What-If có nghĩa là nếu như... nếu như một cái gì đó đấy. Thì cái dạng này nó cũng là dạng hoạt hình người que thôi mấy bác ạ. Mấy bác nhìn là mấy bác cũng biết mà. Nhưng mà đang rất rất là trend nha. Thì em sẽ hướng dẫn mọi người dùng con Claude tạo ra những cái hình ảnh video này, và cũng là nhờ nó edit luôn. Đấy, không dùng một chút nào là CapCut luôn nha, không đụng tới CapCut luôn nha. Ở trong video này thì em hướng dẫn hoàn toàn bằng làm bằng con Claude luôn nha mọi người. Thì nói chung mỗi ngách và mỗi cách làm nó rất là đa dạng, nói chung là nhiều cách làm lắm mọi người ạ. Nên là em có cái gì thì em hướng dẫn hết cho mấy bác, rồi mấy bác cứ tham khảo rồi mấy bác thích thì chọn làm thôi. Đây, đây là thị trường Hoa Kỳ và họ dùng kênh cổ 2022 này. Đấy, 14 video và hơn 6 triệu view, thật sự rất là kinh khủng nha. Giờ em sẽ dịch cái tiêu đề ra để cho mọi người có thể rõ hơn nữa nha. Đây, cái video đầu tiên là nói về: Điều gì sẽ xảy ra nếu thời gian phản xạ của bạn nhanh hơn gấp 10 lần này. Video thứ hai là: Điều gì sẽ xảy ra nếu một giây trôi qua mà bạn cảm nhận như 10 giây này. Đấy: Điều gì sẽ xảy ra nếu một giây trôi qua cảm giác như cả một đời này. Thì nói chung mấy bác như vậy mấy bác có thể thấy cái từ khóa ngách hình dung ra được là đó chính là What-If. Là điều gì sẽ xảy ra đấy mọi người. Nếu bạn á. Đấy thì cái dạng này á thì nó không đơn thuần là một cái video giải thích khoa học đâu mấy bác ạ, mà nó như là một cái phim hoạt hình ngắn có cái cốt truyện nha. Đấy, nó có cốt truyện từ đầu đến cuối hết nha mọi người. Thì tí nữa vào chi tiết làm thì em sẽ cho mấy bác thấy được nó sẽ ra được những cái chủ đề kịch bản rất là hay nha. Đây em sẽ vào một video bất kỳ, em chiếu qua cho mọi người thấy được trước đã. Every drop, and found something else. Your brain was still speeding up every single day. Và cái dạng này á thì nó cũng có một cái rất đặc biệt nữa là nó không đơn thuần chỉ là một người dẫn chuyện, cái giọng của một người đâu nha mấy bác, mà nó là gồm rất là nhiều giọng của các nhân vật luôn nha. Đấy, thì tí nữa vào chi tiết em sẽ hướng dẫn mọi người làm hội thoại, cái kiểu như là rất là nhiều giọng ở trong một video á, có nghĩa là gọi là hội thoại nha mọi người, chứ không phải là người kể chuyện, người dẫn chuyện không đâu, mà có các nhân vật khác nữa nha. Đấy, em sẽ hướng dẫn mọi người chi tiết luôn. Đây như em vừa xem thì nó cũng hiện ra một kênh đối thủ khác này mọi người. Đây, em bấm vào cho mấy bác xem luôn. Đấy, mọi người thấy không? What-If này. Kênh này cũng hoàn toàn mới luôn, kênh này sau kênh kia luôn mọi người ạ. Đấy, 10 ngày trước này. Trên 100k view hết này. Đấy, view rất rất là cao luôn. Thì mọi người có thể tham khảo thêm những cái kênh này nha. Hoàn toàn toàn là những cái kênh mới thôi mọi người, bởi vì cái ngách này đang rất rất là trend nha. Thì mấy bác cũng có thể đem về nhân bản thị trường nha, cái đó thì tí nữa em nói sau mọi người ạ. Rồi, để làm được những cái dạng video như này á thì đương nhiên là sẽ có những cái prompt và skill rồi đúng không? Thì ở video này em cũng đã soạn sẵn, train sẵn hết, làm hết cho mọi người rồi. Đầu tiên là sẽ có những skill, những cái tool dựng video này, edit video đấy mọi người, và những cái phần âm thanh này. Âm thanh này là những cái hiệu ứng âm thanh để khi con Claude nó edit video á thì nó sẽ tự thêm vào. Và những âm thanh này á, đây âm thanh nền nữa nha mấy bác, thì những âm thanh này á là không phải em tải về đâu nha, mà là em đã train con Claude nó tự cho ra luôn, và hoàn toàn là miễn phí và hoàn toàn là không bản quyền nha. Đấy, em cho mấy bác nghe qua một số đoạn. Đây đây chính là cái âm thanh hiệu ứng này. Đấy, cái file này là nó tổng hợp vào nha mọi người. Còn ở trong cái thư mục, còn ở trong thư mục kia thì nó đã tách ra mỗi cái hiệu ứng âm thanh khác nhau ấy. Đó, thì nói chung là hoàn toàn là con Claude... con Claude nó cho ra hết nha, em đã train hết rồi mọi người, chứ không phải là em tải ở trên mạng hay đâu về đâu nha. Đấy, cái hiệu ứng nó rất rất là hay và mình không lo bị bản quyền nữa. Và khi con đã có được rồi thì con Claude nó edit cho mình luôn. Còn cái file WhatIf-Skills.zip này thì em đã nén hết tất cả các skill và tài nguyên ở trong cái folder... (he packaged them into the zip; \"giải nén\" = unzip) nói chung là cái tài nguyên của cái dạng này cho mọi người rồi. Để em sẽ để dưới mô tả cho mấy bác tải ha. Và có cả cái file hướng dẫn dùng nữa, mọi người cứ yên tâm. Rồi, bây giờ để đầu tiên mà làm được á thì mấy bác sẽ add cái folder vào nha. Ví dụ như em đã add rồi này, em sẽ hướng dẫn mọi người add lại luôn, kiểu như cái folder cái dự án của mọi người á. Đây, mọi người bấm Add folder này. Đấy, ví dụ như mấy bác tạo một cái thư mục tên là whatif, và mọi người đã bỏ hết tất cả các cái tài nguyên mà em để ở mô tả á, mấy bác tải về giải nén vào trong cái thư mục đó, rồi mọi người add cả cái thư mục vào nha. Rồi sau đó mọi người... Đương nhiên mấy bác sẽ tải hai cái skill... hai cái skill viết kịch bản và edit video rồi đúng không? Hai skill đó nó nằm trong cái file .zip đấy, mấy bác giải nén ra rồi mấy bác đẩy lên con Claude nha. Cái này thì mọi người đều biết hết rồi. Đấy, nên là em không nói lại cái chỗ đẩy lên nữa. Mà bây giờ em sẽ gọi luôn cái skill là script-whatif-en này. Đấy, cái này là sẽ viết kịch bản nha. Em sẽ ghi dấu xuyệt ra rồi em enter phát thì nó sẽ tự động đọc qua cái danh sách trên YouTube những cái kênh đối thủ ấy mọi người. Đấy, và những cái dạng nào làm rồi thì nó sẽ né ra nha. Rồi, đó, bây giờ thì nó sẽ đề xuất những cái dạng mới, những cái chủ đề hoàn toàn là trend và mới khác biệt so với đối thủ luôn nha mọi người. Đấy. Và nó cũng sẽ có những cái gợi ý cho mình là nên chọn nên làm những cái chủ đề nào này. Đấy, mấy bác thấy không? Rất rất là nhiều cái hay luôn. Cái dạng ngách này thì rất là mới nên là mình không cần phải đi kiểu như đi bám theo đối thủ về kịch bản đâu mọi người ạ. Cái này thì mình để cho con Claude nó tự sinh ra luôn, nó đề xuất ra luôn thì sẽ ok hơn nha. Còn mình đi học là học cách edit của họ thôi mọi người ạ. Đấy: \"Mình khuyên bạn nên là chọn chủ đề 1 hoặc 2 này\". Đấy, nó có lời khuyên hết đấy. Nó bảo chủ đề 1 hoặc 2 là nó sẽ bám theo cái dạng cái khung cùng với cái khung video cao view nhất là 4 triệu view này mọi người thấy không? Đấy, là đầu tiên nó sẽ bám theo những cái mà cao view nhất của đối thủ là rất là đúng với cái ý mình rồi đúng không mọi người? Đấy, nên là nói chung em train rất là đầy đủ rồi. Giờ thì mình chỉ còn việc là chọn cái chủ đề, ví dụ ghi số 1 rồi mấy bác enter thôi thì nó cũng sẽ ghi ra, và tự động lưu hết những cái file, cái output, những cái file kịch bản, những cái hướng dẫn làm prompt này kia vào bên trong cái thư mục... tạo một cái thư mục mới có tên dự án là video này luôn nha. Đấy, để bây giờ em làm cho mấy bác sẽ hiểu. Em ví dụ em chọn chủ đề 1 nha. Đấy. Đây ví dụ bây giờ em chọn chủ đề 1. Thường thì mấy bác gõ số 1 mấy bác enter thôi nó cũng ra, nhưng mà bởi vì em làm hướng dẫn cho mọi người để mọi người hiểu rõ chi tiết á, nên là em sẽ ghi cụ thể ra ở dưới này nha. Em sẽ chọn chủ đề 1 và em dán luôn cái... cái tiêu đề vào luôn này. Đó. Rồi, thì tiếp theo là chọn cái nhân vật, muốn cái nhân vật chính của mình là mặc áo... mặc áo màu gì á mọi người, mặc áo hoodie nè. Thì em sẽ ghi là màu đỏ luôn, cho nó giống đối thủ luôn nha. Còn cái này thì mấy bác nếu làm thì tùy ý mọi người thôi. Em làm demo hướng dẫn nên em sẽ chọn màu đỏ cho nó nổi bật nha mọi người. Đấy, bây giờ thì chỉ còn việc đợi nó gen ra kịch bản thôi nha. Bây giờ thì nó sẽ đọc qua toàn bộ cái folder của mình, bên trong cái thư mục của mình, đọc qua các cái skill, prompt này kia rồi nó sẽ viết cái kịch bản cho mình nha. Hiện tại thì em đang dùng cái model Sonnet để viết kịch bản nha mọi người. Bởi vì cái model cao nhất của nó là Opus nha mọi người. Còn cái Sonnet thì nó sẽ tiết kiệm token hơn nha. Anh em nào mà dùng gói Max á thì anh em dùng Opus cũng được. Còn anh em nào mà dùng gói Pro á thì mọi người dùng Sonnet thôi nha. Đấy, em giải thích qua tí để có nhiều bác thắc mắc không biết nên chọn gói nào á. Thì nói chung mọi người làm bình thường làm không nhiều á thì mấy bác cứ dùng gói Pro cho em là dư sức rồi. Rồi, sau khi chờ đợi vài phút thì cuối cùng nó đã viết xong, hoàn thành xong cái phần viết kịch bản và cho ra cái prompt tạo ảnh này kia rồi nha mọi người. Thì đương nhiên nó sẽ không có hiện ra những cái file ở trên cái giao diện Claude này, mà lúc nãy mọi người nhớ là em có add cái folder phải không? Thì bây giờ nó đã tạo một cái thư mục mới và nó đã lưu hết tất cả những cái tài nguyên tài liệu vào ở trong cái thư mục rồi. Nó tự động tạo một cái thư mục tên là ghi về cái chủ đề mà mình làm đấy mọi người, vào trong cái thư mục project nha. Đấy, và nó sẽ tạo sẵn ra cho mình những cái thư mục rỗng là voice, ảnh này kia luôn, có hết nha. Còn đây là những cái số liệu chính mà khi nó gen ra này. Thì mấy bác cái này mấy bác có thể đọc sơ qua nha. Bây giờ thì em sẽ mở cái thư mục lên nha. Đây, đầu tiên thì em sẽ vào cái whatif của em này đúng không? Sau đó em sẽ đi vào bên trong cái project này. Đây, cái đầu tiên là cái dự án demo của em làm trước đó thôi. Đây, cái dự án của mình thứ hai này chính là cái chủ đề em vừa làm này. Đó, và tất cả những cái đây thì nó đã vừa tự động gen ra cho em đấy. Thì đầu tiên sẽ có một file 01-SCRIPT. Đây là full cái kịch bản của mình nè mọi người ạ. Đấy, đây là phần full về kịch bản nha, khoảng tầm 8 phút nha mấy bác. Cái dạng này video trung bình tầm 8 phút thôi. Và cái phần thứ hai đó chính là... cái này có nghĩa là mấy bác không cần quan tâm đâu, cái này để nó chú thích và để khi nó edit và nó gen nó tự học thôi mọi người. Cái đó thì mấy bác không quan tâm nha. Đấy, hai cái trên là mình không quan tâm đâu. Cái quan tâm là cái file thứ ba này, file 02-VOICE kịch bản DGT này mọi người ạ. Đấy, cái file này thì mấy bác là chính để dùng để khi đi tạo voice nha, tạo giọng đọc. Đấy, như kênh đối thủ lúc nãy em cũng có nói rồi mọi người có thể tự nghe qua nha. Mọi người tự xem video của đối thủ là mấy bác sẽ rõ được, nó có rất là nhiều cái giọng khác nhau của các nhân vật nữa, chứ không phải là chỉ một giọng đâu. Và trước giờ em cũng hướng dẫn nhiều cho mọi người là làm một giọng rồi, thì sẵn đây thì em hướng dẫn mọi người cách làm hội thoại luôn. Thì ví dụ như #4 này là cái giọng đọc 4 này, #5 là cái giọng đọc người số 5, #6 là giọng đọc nhân vật thứ 6. Đấy, và hiện tại cái kịch bản này là có 6 giọng đọc nha. Đấy, nên là nó chú thích cho em là #6. Đấy, em nói qua để cho mấy bác hiểu trước thôi. Và tiếp tục là cái file 02-VOICE-beat-map này, thì cái này thì nó cũng chú thích để cho nó tự học thôi, mấy bác không cần quan tâm. Và cái file 03 này, mọi người cũng không cần quan tâm cái shot list đó. Cái mọi người quan tâm tiếp theo là cái file 04 này, cái file prompt đây. Cái này là phải cực kỳ là quan tâm và cái này là đặc biệt quan trọng nha mọi người. Trong này thì nó sẽ có các cái prompt để mình đi tạo ảnh, tạo nhân vật và tạo video nha. Đấy, và em tóm tắt lại là hai cái cần mình chú ý và quan tâm là chỉ hai file này thôi: File 02-VOICE-...-DGT để tạo giọng đọc và cái file 04-PROMPTS thôi, còn lại tất cả là chỉ để mọi người tham khảo thôi, và để con Claude nó kiểu như nó học cách làm thôi mọi người khi mà mình train thôi. Đấy, em nhắc lại nhắc đi nhắc lại là mấy bác chỉ cần việc quan tâm hai cái file này thôi. Thì cái file 02-VOICE kia thì mấy bác để ý để import đi tạo giọng đọc thôi chứ cũng không cần quan tâm gì mấy đâu. Cái mình quan tâm là cái file 04-PROMPTS này thôi nha mọi người. Đấy. Cái ở dưới là cái hướng dẫn này, đấy thì có hướng dẫn đầy đủ hết để mấy bác có thể nhìn theo mà mấy bác làm cũng được. Đây là cây thư mục này, chú thích lưu ở đâu, rồi ở dưới là hướng dẫn tạo voice này, tạo giọng đọc, và cách để đi làm ảnh nhân vật và đi làm bối cảnh ảnh này kia video. Thì nói chung bây giờ đương nhiên mọi người nhìn vào thì sẽ thấy hơi loạn một tí, nhưng mà yên tâm là bây giờ tí nữa sẽ đi vào chi tiết chỗ nào thì em sẽ giải thích rõ chỗ đó để cho mọi người hiểu qua nha. Đấy, nên là mấy bác cứ yên tâm. Ví dụ như cái phần nhân vật này thì nó có 8 ảnh nhân vật này. Đấy, thì tí nữa mình sẽ đi tạo cứng 8 cái ảnh nhân vật này trước nha. Tùy mỗi chủ đề mỗi khác nhau nha mấy bác, chứ không phải là cái chủ đề video nào nó cũng đủ hết 8 nhân vật như này đâu, có chủ đề thì chỉ 5 hoặc là 6 nhân vật thôi. Đấy, 6 nhân vật chính đấy mọi người. Đây, em mở cái file... em sẽ mở cái file hướng dẫn cho mấy bác xem nha. Đây thì cái phần này nó nói là gen 8 ảnh character ở mục A này, và ở dưới là có cái mô tả các nhân vật đầy đủ. Và sau đó mình gen xong rồi mình sẽ lưu vào cái thư mục là CHARS này, và đồng thời là lưu trong cái thư mục series nữa. Thì nói chung là tí nữa để em lưu cho mấy bác thấy nha. Bởi vì mình lưu vào trong đó bởi vì những cái này là nhân vật chính nha. Sau những cái tập mà những cái chủ đề sau á, ví dụ như mình làm có cùng nhân vật á thì mình cũng không cần gen lại nữa, mà con Claude nó sẽ tự động lấy luôn những cái ảnh cũ nha. Còn tiếp theo ở dưới này là có gồm 8 cái ảnh LOC này, 8 ảnh này có nghĩa là 8 cái khung hình các cái bối cảnh khác nhau nha mọi người. Thì bắt buộc mấy bác cũng phải gen ra 8 ảnh này. Và ở dưới này nó có chú thích này: Lưu ý là mọi người nên gen cái ảnh cái LOC-06 và cái LOC-07 cho nó chỉn chu, bởi vì hai cái phần này quan trọng nhất là dùng cho nhiều ảnh sau này. Đấy, thì nói chung cụ thể ra sao thì tí nữa em làm mấy bác sẽ rõ nha. Đấy, đơn giản vậy thôi. Còn áo hoodie màu đỏ là màu bạn chọn này, vì đối thủ nó cũng màu đỏ nên là bây giờ nó làm cho tô đậm hay tươi hơn này kia thôi. Đấy, bởi vì lúc nãy em ghi là màu đỏ đấy mấy bác. Tiếp tới ở dưới bước 2 là về ảnh cảnh này. Thì cái phần này là nhiều ảnh nhất nha, gen nhiều ảnh nhất nha mấy bác. Như cái chủ đề hiện tại này là cái phần này gồm 74 ảnh nha, thì mình cũng phải gen hết 74 ảnh, từ ảnh I001 đến I074. Đấy, ở dưới là prompt dành cho video. Thì ok, những cái này thì đi vào chi tiết em sẽ giải thích rõ hơn, chứ bây giờ nói thì mấy bác sẽ hơi khó hiểu đấy. Rồi, đầu tiên thì em sẽ đi tạo nhân vật là em sẽ copy cái prompt này nha. Em sẽ mở con Google Flow lên. Cái này thì mấy bác biết rồi đúng không? Em sẽ chỉnh lại cái hình ảnh này, kích thước khung hình này, và em sẽ chọn là gen ra 4 ảnh nha. Bởi vì gen ra 4 ảnh như vậy để mình có nhiều cái sự lựa chọn hơn, cái nào ok thì mình chọn nha mọi người. Tiếp theo là nhân vật thứ hai. Đấy, cái này thì khá đơn giản, mấy bác chỉ cần việc copy cái prompt rồi mọi người qua gen thôi. Tiếp tục cái thứ ba là cái Mom này, character Mom là người mẹ mọi người. Tiếp tục cái thứ tư này, em copy dán vào thôi, đợi nó gen ra. Đấy. Thì đây nó đã gen ra: cái prompt ở đầu tiên, prompt 2, prompt 3, prompt 4. Mọi người xem qua các nhân vật người que đồng nhất rất là đẹp và đúng chuẩn phong cách hoạt hình What-If luôn nha. Giờ em sẽ tiếp tục copy các prompt nhân vật tiếp theo để gen đầy đủ trọn bộ 8 nhân vật này vào thư mục dự án cho mấy bác xem. 04, 05, 06, 07, 08... đấy. Tất cả đủ hết 8 nhân vật nha. Và bây giờ thì em sẽ lựa chọn ra một trong những cái ảnh nét nhất của các prompt này em lưu lại thôi mọi người. Đấy. Đó đó là cái phần về nhân vật nha. Bây giờ thì em giả bộ em sẽ chọn cái này đi, em sẽ tải về em lưu luôn. Đấy, cái nhân vật này mình phải ảnh nét đúng không? Nét rõ chi tiết rồi thì em sẽ tải về thôi. Rồi em sẽ copy cái tên nhân vật nha, mọi người lưu ý là đặt đúng tên nha. Và mọi người bỏ đúng vào trong cái thư mục nó hướng dẫn nha, như đây hiện tại nó bảo em bỏ trong thư mục này đúng không, thì em sẽ đặt tên và bỏ đúng trong cái thư mục đó. Để khi mà mọi người, khi mà nó edit á thì nó sẽ làm được nha mấy bác, nó sẽ làm theo cái format đó. Chứ mọi người đừng có lưu ở chỗ khác nha. Rồi tiếp theo cái ảnh thứ hai cũng tương tự thôi, mọi người tải về nè. Rồi mấy bác lưu tên nhân vật vào, đấy đặt cho đúng nha mọi người. Thì đối với hiện tại là em đang dùng cái gói Ultra thì tải về nó không có cái logo, nhưng mà mọi người dùng gói Pro hay là Plus gì cũng được nha. Em đã train cái dạng này rồi, khi mà edit á thì mấy bác sẽ bị xóa, bị che cái logo... cái logo Flow với cái logo... nói chung là che đi cái logo ngôi sao ở dưới góc, ở góc bên phải ở dưới mọi người, nên là các bác cứ yên tâm là mọi người không cần phải là xóa logo hay gì đâu. Như vậy thì nó sẽ mờ cái ảnh của mọi người đi. Mọi người dùng tool xóa thì nó sẽ vỡ cái ảnh của mấy bác. Nên là bác cứ tải về, mọi người làm ở dạng này cứ tải về đi. Khi edit thì cái skill edit nó đã che hết rồi, đấy. Em đã train thật sự rất rất là kỹ và giống đối thủ luôn nha. Cái khung hình màu đen che á thì nó giống đối thủ luôn. Tí nữa ra thành quả thì em sẽ cho mọi người xem. Rồi như vậy thì em đã vừa tải gen xong 8 cái ảnh rồi đúng không? Và bây giờ em làm theo hướng dẫn, đồng thời sẽ lưu sang một cái thư mục này nữa nè. Em sẽ chọn hết 8 ảnh đúng không? Em bấm phím là Ctrl + C hoặc là mọi người bấm sao chép nha. Rồi em sẽ đi ra theo cái thư mục này. Đó, đấy làm đúng theo cái hướng dẫn của nó. Em sẽ tạo thêm một cái thư mục là Hear10X này nha mấy bác. Đấy mấy bác thấy không? Nó hướng dẫn nè, nên là mình sẽ làm theo luôn. Để bữa sau này mình mà làm những cái tập, những cái video tiếp theo á mà nó có cùng với cái dạng nhân vật á thì nó sẽ dùng những nhân vật này đồng bộ cho cái kênh mình luôn nha. Mọi người để ý cái kênh đối thủ á, mọi người thấy không, nhiều video có nhân vật chính chỉ là một nhân vật chính đó thôi, nó không có thay đổi về cái ngoại hình nha. Đấy, đó là lý do là mình sẽ làm như vậy để cho nó đồng bộ cho cả kênh mình nha mọi người. Rồi, tiếp theo thì sẽ gen tiếp những cái hình ảnh LOC nè. Hình ảnh LOC này có nghĩa là những cái bối cảnh khung hình, ví dụ như phòng ngủ nè, phòng khách hay là sân khấu này kia mọi người. Đấy. Thì bây giờ tiếp tục em sẽ copy cái prompt, em sẽ ra con Flow này em sẽ dán vào làm tiếp ha. Vẫn là setting như này nha mọi người. Đấy. Em sẽ chọn 4 ảnh luôn để mình có nhiều sự lựa chọn nha. Bởi vì mình gen hình ảnh này nó không có tốn credit nha mấy bác, nên là mấy bác cứ gen thoải mái thôi, đấy. 8 cái thì em sẽ tua nhanh luôn nha mọi người. Thật sự để mà làm ra được cái skill cái prompt hot như này thì em tốn hơn 3 ngày đấy mấy bác ạ, chứ không nhanh được đâu nha. Train rất là kỹ, rất là nhiều thứ, test đi test lại nữa. Em làm demo nữa chứ không phải là đơn thuần một phát là nó ra được liền đâu mấy bác ạ. Bởi vì cái dạng này thì thật sự rất là khó. Đến cả cách edit thì đối thủ thì em không biết là họ dùng AI kết hợp với edit thủ công này kia hay không, kiểu như họ học qua các cái khóa học vẽ 2D, 3D này kia mấy bác, đấy. Còn em thì em sẽ dùng con Claude em train nó, em cho làm luôn. Đấy, còn chất lượng như nào thì mấy bác sẽ tự đánh giá nha. Còn rồi là mấy bác có thể áp dụng thôi, phụ thuộc vào nhu cầu của mọi người. Bởi vì nếu mà mấy bác có kiểu như không có thời gian để edit, làm edit được hay là không biết edit, không có thời gian edit á mọi người, đấy thì bác áp dụng cho con Claude edit thôi. Mình muốn làm nhưng mình không biết edit thì mình chấp nhận cho con AI nó edit thôi mọi người, đấy. Rồi thì đây là những cái ảnh mà bối cảnh em vừa gen xong nè, bây giờ em cũng sẽ lưu lại. Và đương nhiên em cũng sẽ ra copy cái tên nè, ví dụ như ảnh đầu tiên là LOC01 đúng không? Thì mấy bác phải nhớ là copy chính xác nha, và mình sẽ lưu vào trong cái thư mục LOC luôn nha mọi người, và đặt cái tên LOC01. Rồi tương tự những ảnh sau cũng là LOC02, LOC03 đấy, đến khi nào mà xong thôi. Em tua qua cái đoạn lưu này nha, và cuối cùng thì em cũng đã lưu xong 8 cái ảnh LOC rồi. Và bước tiếp theo thì sẽ quay lại với cái phần prompt của mình, và mình sẽ đi tạo tiếp những cái hình ảnh tiếp theo là về phần ảnh cảnh này. Cái phần này là tạo và lưu trong cái thư mục img nha. Và cái phần này là nhiều ảnh nhất nha mấy bác. Như cái chủ đề này á thì nó sẽ gồm 74 ảnh nha. Và em quay lại với cái file hướng dẫn nè. Đây, ở đây nó cũng có hướng dẫn nè, em sẽ giải thích cho các bác thấy chi tiết. Đầu tiên thì nó nói mình dùng Flow nè, và bước hai về ảnh cảnh là từ I001 tới I074. Mỗi prompt có các cái dòng là REF. Cái dòng này có nghĩa là nó sẽ chú thích cho mình là chọn những cái ảnh tham chiếu vào để cho nó gen. Thì cụ thể như thế nào thì bây giờ em sẽ làm cho mấy bác thấy nha. Đầu tiên cái ảnh I001, ảnh 01 nha, mọi người sẽ thấy những cái dòng này đầu tiên trước đúng không, mọi người không quan tâm nha. Đấy, cái khung ảnh thì mọi người không quan tâm và mọi người quan tâm là cái REF phía sau này, cái chú thích này. Đây đây đây, cái ngoài cùng nha, còn cái chính giữa này thì mấy bác đừng quan tâm chi. Đấy cái mọi người quan tâm là cái REF CH-MOM, LOC-02 này. Đó ví dụ như cái prompt cái ảnh đầu tiên là như vậy nha. Rồi bây giờ em sẽ quay lại với cái phần con Flow này. Mọi người bấm vào dấu cộng giúp em nha. Bây giờ thì mấy bác có thể chọn ảnh bên đây cũng được nhưng mà cái này thì nó theo các cái tên của nó theo cái prompt của mình rồi nên là mình rất khó, rất khó để lựa chọn đúng không? Rất là bị loạn mà mình không nhớ được những ảnh nào. Thì mấy bác bấm vào dưới này tải lên, mình sẽ tải lên tất cả các cái ảnh mà lúc nãy mình đã lưu theo tên đấy mấy bác, để mọi người có thể dễ nhìn, mọi người nhìn một phát là biết cái ảnh tên gì luôn, đấy. Ví dụ như đây, các ảnh nhân vật đúng không, em sẽ tải lên, nó có đều các cái tên nè: CH-HERO, CH-MOM, CH-NOAH... nói chung là có hết các cái tên rồi, đấy. Và tiếp theo là cái phần là ảnh LOC-02 nữa đúng không? Thì em sẽ tải thêm cái thư mục LOC lên. Đây, em đợi nó load lên xong rồi đúng không, em sẽ tải tiếp cái thư mục các cái ảnh LOC lên nè. Đây, 8 ảnh thôi. Rồi, đó. Bây giờ thì mình đã có đầy đủ hết các cái dữ liệu để mình tham chiếu rồi đúng không? Đợi load một tí nha mọi người. Đấy mình đặt cái tên rõ ràng như này thì mình mới dễ nhìn và mình dễ làm được đúng không mọi người? Rồi quay lại nè, bây giờ nó REF CH-MOM, LOC-02, đó thì bây giờ em sẽ chọn vào cái CH-MOM nè, cái ảnh CH-MOM. Rồi, em sẽ Ctrl em di chuột em bấm chuột vào cái LOC-02 này nữa là em sẽ chọn 2 ảnh nha mấy bác. Rồi, đấy, em sẽ thêm vào bên trong câu lệnh nha. Đấy mọi người thấy chưa, như này là nó đã tham chiếu xong 2 ảnh nè. Quay lại tiếp tục em sẽ copy cái prompt này nữa thôi là xong, đấy, copy prompt này nè dán vào. Rồi bây giờ thì chỉ công việc gen ra thôi. Chỗ này thì em cũng sẽ để 4 ảnh để có nhiều sự lựa chọn hợp lý cho mình thôi. Đơn giản như vậy thôi nha mấy bác. Tiếp theo là cái ảnh ví dụ như 02 đúng không? REF CH-HERO nè, LOC-01 đúng không, và cái prompt này. Thì em sẽ copy cái prompt này nè, rồi bây giờ thì qua em sẽ chọn với cái nhân vật là HERO, CH-HERO đâu, đây, đúng không? LOC-01 đúng không? Tiếp tục Ctrl, giữ Ctrl nè, bấm thêm một cái LOC-01, ảnh LOC-01 này mọi người, đó là mình đã chọn 2 ảnh, dán cái prompt vào. Rồi, cứ thế thôi, bây giờ thì em Enter cho nó chạy gen ra. Đó. Và cái prompt đầu tiên, cái ảnh đầu tiên nè mấy bác thấy nó đã gen ra chưa? Có nghĩa là nó sẽ kết hợp với cái ảnh nhân cái nhân vật người mẹ và cái bối cảnh là ở cái phòng dưới phòng khách đấy mọi người, đó. Nó ra biểu cảm là đang đứng nghe điện thoại nè, mấy bác thấy đỉnh cao chưa? Đấy, đó chính là cái vấn đề về tham chiếu cái chỗ đó nên là mình phải làm thật kỹ và chuẩn xác nha mọi người. Đôi khi mình làm sai một cái bối cảnh hoặc là một cái nhân vật á rồi sau đó thì nó sẽ kéo theo sai hết, nên là chỗ này mình làm thật sự là kỹ càng nha, đấy. Em giải thích rất là kỹ chỗ này luôn. Đấy, cái ảnh thứ hai cũng vậy nè: nhân vật HERO, nhân vật người con kết hợp với cái phòng ngủ của hắn nè, đấy thì sẽ ra thôi. Những cái phòng và những cái ở dưới là lúc nãy là ở trong cái thư mục LOC đấy mọi người, cái bối cảnh đấy. Rồi tiếp theo cái ảnh thứ ba nè nó cũng tương tự nè: REF CH-HERO, CH-MOM và LOC-02. À thì cái này là nó sẽ gồm 3 ảnh luôn thì nó gợi ý bao nhiêu thì mình cứ chọn bấy nhiêu thôi mọi người đúng không? Thì bây giờ em quay lại nè, em sẽ chọn vào tải tệp lên, em sẽ chọn vào CH-HERO, tiếp tục CH-MOM và LOC-02 đúng không? Đó, quay lại kiểm tra đúng nè, chọn 3 ảnh, đấy và em sẽ copy cái prompt này thôi. Đấy rất là đơn giản, mấy bác hiểu được cái quy trình là thật sự rất là đơn giản luôn. Rồi bây giờ chuyển việc Enter để cho nó gen ra thôi. Tương tự các cái ở dưới cũng vậy nha, đấy em giải thích 3 cái đều rất là chi tiết cụ thể rồi, rất là dễ hiểu thôi, mấy bác nghe qua là hiểu liền mà. Đấy thấy, mọi người thấy nó tạo ra hình rất là rất là đỉnh không? Tương tự những cái ảnh sau cũng vậy nha. Bây giờ thì em sẽ tua nhanh nha mấy bác. Mà ví dụ như đây em đang làm tới cái ảnh chỗ 09 nè, mọi người để ý là cái REF nó gợi ý là không cần đồ họa, không cần nhân vật thì có nghĩa là bây giờ mình chỉ công việc copy cái prompt thôi, mình chạy cái prompt thôi nha, mình không cần tải ảnh tham chiếu nào cả nha mọi người, đấy. Và đây là toàn bộ những cái mà em đã gen ra xong rồi nha mọi người, đấy. Em vừa tua qua đấy mấy bác. Cái nào mà nó REF nó chú thích là không cần á thì mọi người chỉ cần việc dán prompt và mọi người chạy thôi nha, đấy. Tất cả đã xong hết rồi thì bây giờ em sẽ tải xuống lưu lại nha, rồi em sẽ bước tiếp theo thì sẽ đi tạo voice, tạo giọng đọc nha mọi người. Thì cái chỗ mà tải ảnh này á thì mấy bác cũng lưu ý là mọi người tải ảnh nào thì mọi người nhớ đặt đúng cái tên đó luôn nha, đúng với cái tên trong cái file prompt của mình ấy. Đây cuối cùng là em cũng tải xong rồi mọi người, mọi người thấy không? Phải nói là cái prompt này tạo ra những cái hình ảnh nhân vật và cái bối cảnh rất là chi tiết và rất là đẹp luôn nha mấy bác. Rồi, tiếp theo thì mình sẽ đi tạo là video nữa nha mọi người, em quên chứ, chưa tạo video mà đi tạo giọng đọc. Sẵn đây thì tiếp là hướng dẫn mọi người tạo video luôn. Ở cái video clip nè, ví dụ cái ảnh đầu tiên là C01 này, nó sẽ chú thích là từ ảnh I001 và tier là Quality. Thì đi vào chi tiết em sẽ giải thích cụ thể cho mọi người nha. Từ ảnh 01 này có nghĩa là sao, em sẽ giải thích khi mà làm để cho mấy bác dễ hiểu. Đây nè bên này mọi người quay lại cái file hướng dẫn nó cũng có giải thích nè, nhưng mà để đi vào cái chi tiết để cho mấy bác dễ hiểu hơn nha, thực chiến cho mọi người hình dung được. Rồi bây giờ em sẽ tạo ảnh đầu tiên là với cái I001 này nha, em sẽ copy cái prompt trước nè mọi người. Tiếp tục em sẽ quay lại với con Google Flow, bấm vào cái setting và em sẽ chuyển qua video nha, bởi vì bây giờ mình dùng video mà, mình làm video mà. Và mọi người nhớ là tích vào cái chọn là khung hình và cái chỗ model là Quality nha. Đây, bởi vì lúc nãy nó có bảo mình là chỗ này là model là dùng Quality nè mọi người. Và từ ảnh I001 này có nghĩa là mấy bác là cái ảnh bắt đầu nè, mọi người chọn giúp em là ảnh 001 nha. Thì lúc nãy là em đã tải về hết rồi đúng không, và những cái tên như này thì đương nhiên mình cũng sẽ tải trong cái thư mục đây, cái thư mục img của mình là 74 ảnh lên đúng không? Đấy em sẽ tải lên thôi. Giống như cái phần lúc trước ấy mọi người, mình tải lên để mình nhìn cái tên mà mình đã đặt để cho nó rõ chi tiết hơn nha. Rồi, đây, đó, đã tải lên đầy đủ hết rồi. Bây giờ thì mình chỉ công việc nhìn vào tham chiếu thôi. Ví dụ như đây: ảnh I001 thêm vào câu lệnh nè. Mình chỉ là thêm từ ảnh á ở phần bắt đầu thôi nha mấy bác. Rồi bước tiếp theo mọi người chỉ cần việc copy cái prompt nè, rồi mọi người đi tạo ảnh thôi. Đấy, nó chỉ cần như thế thôi, không cần ảnh kết thúc nha. Bên này thì mọi người để 8 giây và set cho cái Quality và chọn 1 ảnh thôi, bởi vì cái này nó đốt credit của mọi người rất là căng nha. Cái Quality này nó đốt 100 credit trên một video ấy mọi người, đấy nên là các bác làm cân nhắc nha. Các cái model khác thì nó sẽ ít hơn, nhưng mà làm gì làm thì những cái video demo đầu tiên á thì mình cũng cần phải chất lượng nha mấy bác, trong cái file hướng dẫn nó cũng có nói rồi ấy. Tiếp tục là em đang làm cái video thứ hai nè, em sẽ chọn là cái I002 nha. Đây em sẽ lướt em tìm cái I002. Đây, cái ảnh I002 đây đúng không? Thêm vào câu lệnh nè, ảnh bắt đầu nè, chỉ có thế thôi và mình copy cái prompt. Đây, đó mấy bác thấy chưa? Và cái title cái gợi ý của cái này nó cũng kêu là Quality đúng không? Thì em sẽ để vẫn để Quality đó thôi, em gen ra. Và đây, video đầu tiên nè mọi người. Những cái âm thanh ở trong video á thì mấy bác cũng không cần quan tâm đâu, bởi vì khi nó edit á cái nào không hợp lý là nó sẽ tự động tắt tiếng luôn cho mọi người nha. Đó, em train kỹ đến cái chỗ đó luôn rồi nên là mọi người cứ yên tâm, không cần phải lo gì cả. Về cái phần video ở cái tập này thì nó có 34, 35 video gì á thì bây giờ em cứ gen thôi mọi người. Đấy, tương tự như thế những cái video những cái phần sau nó có những cái chú thích model khác nè, Fast hay là Lite nè thì mấy bác cứ làm theo tương tự thôi. Ví dụ như tiếp theo là cái video thứ ba đi, nó sẽ chọn là cái ảnh I001 và với cái vẫn là model là Quality đúng không? Vẫn như vậy em chỉ cần việc copy prompt thôi. Sẵn đây em hướng dẫn cho mọi người cái mẹo để search nhanh nữa. Ví dụ như ảnh thứ 10 này nó ảnh bắt đầu là I023 đúng không? Rồi mọi người bấm bắt đầu nè, mấy bác search ở trên tìm kiếm nè, ghi 23 thì nó ra nó gợi ý nè. Đó, rồi mình chọn thôi, cái này là model là Quality, em sẽ dán prompt vào. Bởi vì khi mà mọi người tải ảnh lên ở cái phần phần I00 mấy á thì nó rất rất là nhiều ảnh. Lúc nãy là cái video này tận 74 ảnh mà đúng không? Nên là mình tìm nó hơi lâu, mình lướt nó hơi lâu á thì mấy bác cứ search vào. Đây ví dụ như ảnh 25 nè, mọi người search vào như vậy nó ra rất là nhanh nha. Đấy, em hướng dẫn chi rất là chi tiết từ cách thủ công đến các cái mẹo có thể làm. Thì mọi người phải xem thật kỹ video để mọi người có thể hiểu được cái quy trình nha. Về sau đó những cái ngách khác thì tương tự như thế thôi. Ví dụ như những cái ngách người que... Tương tự thế thôi. Ví dụ như những ngách người que khác, cứ tương tự thế mọi người làm thôi. Ví dụ như ảnh này 27, em cũng search 27, tìm kiếm 27, nó ra nè. Model Fast đúng không? Nè, em đổi qua model Fast thôi. Model này thì nó chỉ tốn 20 credit thôi. Cái thằng Quality là cái thằng chất lượng nhất mọi người ạ, nên là nó trừ tận 100 credit trên một video luôn, rất là khét nha. Như vậy là vừa rồi em cũng đã hướng dẫn mọi người cách để gen ra cái video như nào rồi ha. Đấy, rất là đơn giản thôi, mấy bác cứ xem thật kỹ video là rõ thôi. Vậy là em sẽ tua nhanh nha. Như vậy là em đã gen xong hết nè, ba mươi mấy cái video. Đấy, em đã bỏ trong cái thư mục clip luôn, giống như nó hướng dẫn mình đấy mọi người. Bây giờ thì đã có được các cái hình ảnh nhân vật, hình ảnh bối cảnh và gồm video này kia rồi. Thì bước tiếp theo thì em sẽ đi tạo âm thanh nha. Thì cái tạo âm thanh này mọi người có thể là đi tạo trước cũng được, đấy. Nói chung là nó không có quan trọng đâu, mình tạo âm thanh trước hay là tạo ảnh trước cũng được nha mọi người. Đấy, nó không có liên quan, không có xung đột với nhau đâu mấy bác à. Đây, bây giờ em mở lại cái file, đây là cái file full kịch bản của mình thì mình có thể giúp để cho mình có thể đọc lại tham khảo thôi mấy bác. Cái quan trọng là mình sẽ dùng cái file 02-DGT này là để đi tạo voice đối thoại nha. Và để cho mọi người biết được và nghe được những cái giọng đối thoại chi tiết hơn như nào á thì mọi người phải xem qua những cái video của kênh đối thủ nha, để mọi người rõ nha mọi người. Đấy. Rồi, bây giờ thì em sẽ quay lại, em sẽ dùng cái con tool ElevenLabs của em ha. Tool này thì nói chung anh em đã đều biết hết rồi. Em không có dùng web, đương nhiên là cái chức năng này trên web cũng có nha. Đấy, em dùng cái chức năng nâng cao là hội thoại nha mọi người. Em đã import sẵn sáu cái voice của em vào rồi. Đây là những cái voice này thì em lấy từ web ElevenLabs thôi. Đấy. Thì cái đây là chức năng nâng cao nha, chứ không phải là mặc định nha mọi người. Mình phải nâng nâng cấp thêm ở trong cái gói của nó thì mới được nha mấy bác. Kể cả mọi người dùng web cũng vậy, mọi người mà dùng cái chức năng hội thoại á thì nó sẽ tốn nhiều tiền hơn nha mấy bác. Đấy, em giải thích chi tiết để cho mấy bác hình dung ra được chứ không phải là nó đơn giản là như cái gói nó trừ tiền như gói mặc định đâu nha mọi người. Nó sẽ tốn chi phí hơn đấy. Đấy, ví dụ như cái #3 này thì cái giọng nhân vật thứ ba, #2 là nhân vật thứ hai thôi. Bây giờ em đã import xong rồi, em đã gán cái voice xong rồi đúng không? Thì bây giờ em sẽ import cái file kịch bản nè. Đó, cái file mà đã chú thích DGT nè mọi người, đấy. Bên này thì nó cũng đã có chú thích là voice # mấy nè. Ví dụ như #1 là gán với cái voice 1 của mình thôi. Bây giờ em sẽ chạy luôn nha. Trước giờ em tạo giọng đọc này kia thì em đều dùng tool của em thôi, bởi vì nếu mà anh em đã làm kiếm ra tiền được cái mảng này thì mọi người đều biết là mấy bác phải dùng ở trên web ElevenLabs thì nó đốt rất là nhiều tiền luôn, và thật sự gọi là đốt tiền luôn mọi người, nên là mới dùng tool nha. Đấy. Còn đối với cái gói hội thoại này là phải nâng cấp nha mọi người, chứ gói mặc định là không có đâu nha. Em nói lại chi tiết để cho mấy bác hiểu chứ, lỡ nhiều anh em đang dùng cái tool của em mà mấy bác vào lại không có cái chức năng đó mấy bác hỏi nữa. Vì nó phải là chức năng nâng cấp nha, nâng cao đấy. Bên web nó cũng vậy nha mọi người. Rồi sau khi mà chờ đợi, em chờ khoảng tầm hơn 160 giây, chính xác là 161 giây, thì khoảng hơn 2 phút gần 3 phút mọi người ạ, thì nó đã gen xong hết rồi nha. Vì cái file kịch bản này, file voice này thì sẽ tầm tổng hết lại thì cũng tầm 8 phút đấy mọi người ạ. Đấy. Đây, đây là nó đã tạo cho em một cái thư mục voice nè. Kể cả cái thư mục, đây, cái thư mục voice nè, gồm tất cả các cái file. Và trước đó thì Claude nó cũng tạo ra một cái thư mục rỗng là voice nè, để khi mình gen voice xong mình bỏ vào ấy mọi người. Nhưng mà bây giờ nó đã tạo ra cho em cái thư mục đó rồi mọi người. Để không trong đó cũng được, không cần đem ra trong thư mục voice đâu nha. Mấy bác cứ để vậy như em, hiện tại em để vậy luôn thì tí nữa em cho nó dựng video thì nó cũng sẽ tự hiểu nha mọi người. À, còn đây, cái file chấm zip toàn bộ tài nguyên các cái skill này kia thì em để trong cái link Drive ở dưới khung mô tả video nha. Mấy bác lướt xuống ở dưới khung video thì mấy bác sẽ thấy thôi. Còn một cái nữa, nếu mọi người chưa biết cài đặt và để cho cái tool, cái con Claude nó dựng được video á thì mọi người cần phải cài Python nữa nha. Cái này là một cái môi trường ngôn ngữ lập trình thôi mấy bác ạ. Thì ở cuối video của video ở trên YouTube này em đã có hướng dẫn rất là chi tiết rồi, cách để mọi người cài vào rồi. Thì mấy bác mà máy mọi người chưa có Python á thì mọi người nhớ quay lại video trên YouTube này của em mọi người xem nha. Em đã có hướng dẫn rất là chi tiết, mọi người làm theo là được nha. Rồi, bước cuối cùng là sau khi mình đã có được toàn bộ hết tất cả các tài nguyên: kịch bản, giọng đọc, hình ảnh, video này kia thì bây giờ thì sẽ tới cái phần là đi dựng video nha, cho con Claude edit video. Thì vừa rồi em đã import lại cái folder What-If của em một lần nữa, cũng như là bây giờ em sẽ gọi cái skill là dựng video nè, đấy, dựng video What-If. Thì bây giờ mấy bác chỉ còn việc Enter thôi, thì nó cũng sẽ tự hiểu và nó làm, nó dựng, nó tự động edit video cho mình nha. Nhưng mà đây là vì demo hướng dẫn, cho nên em ghi chi tiết cho mọi người hiểu luôn. Em sẽ ghi câu lệnh là: Hãy dựng video nè, với cái chủ đề đó cho tôi, đấy. Chủ đề nào thì lúc nãy mọi người nhớ tạo ra cái thư mục tên gì á, hoặc là mọi người chọn cái chủ đề gì rồi á thì mọi người ghi vào, hoặc là nói chung mấy bác chỉ cần gọi skill ra rồi Enter thôi thì nó cũng sẽ ra nha. À cái này, ui cái này lúc nãy em tạo hình ảnh mà 74 cái á, 74 cái hình ảnh á mọi người thì em bị sót một cái prompt mất, thế nên là nó báo thiếu luôn nè, mọi người thấy không? Đấy, cái này rất là thực chiến luôn nha, cái này em bị mắc sai sai ở chỗ là bị thiếu ảnh nè, nên là nó nhắc luôn. Bây giờ thì em sẽ chọn cái là cho nó thay thế ảnh khác đi, đấy. Mọi người thấy không? Nó sẽ quét qua tất cả rất là nhanh. Và cái nào mình còn sai sót hay là thiếu thì nó báo nha, cái nào đầy đủ thì nó sẽ chú thích luôn. Rất rất là hay nha mọi người. Thì em vừa chọn cái phương án là thay thế như vậy để chữa cháy nha mọi người. Thì đây cũng là một cái để mấy bác rút kinh nghiệm nha, mình làm phải xem thật kỹ nha. Bởi vì cái phần lúc nãy thật sự rất là lú, rất là nhiều prompt luôn. Thường thì em làm demo thì em làm 1/3 hoặc là một nửa thôi, mọi người nhớ không? Nhưng mà cái này thì em làm chi tiết full cả video luôn cho mấy bác xem luôn. Nên là lúc nãy em... đây, cái phần này nè mọi người. Em copy rất là nhanh nên là bị sót ấy, chắc là bị sót. Nhưng mà không sao, bây giờ thì chữa cháy theo cách là nó đã thay tạm một ảnh khác thôi, yêu cầu nó thay thôi. Những cái nào mà bị bug á, bị lỗi thì nó đều báo cho mình cả nha. Đấy, nói chung là rất là ok, mấy bác cứ yên tâm, không lo bị sai gì đâu. Còn bây giờ thì mình chỉ còn việc đợi nó gen ra video thôi nha mọi người. Bây giờ nó sẽ tự động edit gộp tất cả, nói chung là khớp giọng đọc rồi khớp hình ảnh này kia luôn ha. Và rồi, cuối cùng thì sau khi chờ đợi hơn 30 - 40 phút thì cuối cùng nó đã gen xong. Và video chất lượng là ở 1080 nha, em đã train cái chất lượng này rồi. Và đối với chất lượng cao như này á thì đương nhiên nó sẽ không lưu một lần hết mà nó sẽ tách ra nha mấy bác. Thì nó cũng sẽ có một cái là GHEP.bat nè. Thì bây giờ em sẽ vào thư mục output nè. Đây. Thì em chỉ cần việc nháy đúp chuột vào như hướng dẫn của nó thì nó sẽ tự động ghép hết những cái video nối kia lại với nhau nha, video cắt kia lại với nhau thành một cái video như này. Your mom is whispering on the phone in the kitchen. You're upstairs, two rooms away, with the door closed. Don't tell Kai, it's a surprise. A puppy? Really? How did you hear that? At lunch, your friend Nora's phone buzzes. It's on silent, inside her backpack, under three books. And she's sitting across the cafeteria. Nora, your bag's buzzing. - Okay, that's not normal. - A normal person can hear a whisper across a room. You? Across the street, you hear things from 10 times farther away than anyone else. So what if you could hear 10 times better? Here's how it works. The Bat. Đấy, thì vừa rồi em đã tua qua cho nó nhanh nha mấy bác. Và để em giải thích cái chỗ này một tí. Thì video hiện tại thì nó đang có cái phụ đề nè, thì mọi người không muốn có phụ đề thì mọi người yêu cầu không cần phụ đề cũng được, nhưng mà em khuyên là nên để phụ đề như này. Thì người xem họ sẽ rõ hơn, chi tiết hơn nha. Và phụ đề này nói chung là nó tự làm hết tất cả và chính xác 100% nha mọi người. Đấy. Thì đó là về cách con Claude edit video thôi. Cho dành cho những bác nào kiểu như không biết cách edit video nè, lười edit hay là không có thời gian làm video, thì mình có skill thì mình cho con Claude nó tự động nó làm thôi mọi người. Đấy, còn về chất lượng thì mấy bác tự đánh giá nha. Thì đối với em thì em thấy cũng tương đối ok. Đương nhiên nó sẽ không thể nào mà bằng một người chuyên nghiệp mà học về edit hay là học về thiết kế này kia họ đi edit đâu. Thì đương nhiên nó sẽ không bao giờ bằng được mọi người, đấy. Chủ yếu là về cách tương đối và nó tiết kiệm rất là nhiều thứ cho mình thôi. Ví dụ như thời gian và công sức, đấy, kiểu vậy. Bây giờ thì em cho mọi người xem qua một bản nữa là bản không có phụ đề. Và cái bản này thì em yêu cầu nó là hiện trên cái cửa sổ con Claude này luôn nha, đấy. Và đối với cái bản này thì nó cũng sẽ không có cái phụ đề, đấy, để cho mấy bác có thể xem qua hết cái clip để so sánh được cái chất lượng nó như nào nha. Và cái bản này là cái chất lượng nó hiện ở trên cái màn hình Claude á thì nó chỉ là 720p thôi nha, nó không có được chất lượng HD 1080 nha mấy bác. Rồi ok, thì clip đến đây nó cũng là kết thúc. Em đã hướng dẫn mọi người full về cái quy trình là làm về cái key này và edit tự động bằng cái key này luôn. Và tất cả các cái skill em cũng để dưới mô tả, mấy bác nhớ là lướt xuống xem nha. Và ngoài ra á thì em cũng nhắc lại về cái chỗ nhân bản thị trường, thì mấy bác mà trước giờ mấy bác đã xem em rất là nhiều và mọi người hiểu được cái tư duy nhân bản thị trường đúng không? Thì mọi người cứ đem cái key này, muốn làm thị trường Việt mọi người về nhân bản thị trường Việt cho em. Đấy. Như lúc trước có cái key người que mà về cái ngách ngủ, ngách người tiền sử ngủ á, thì cũng có vài bác lấy về nhân bản thị trường lên rất là ngon. Đây, đây là một ví dụ một cái kênh của một bác nhân bản thị trường, đấy cũng là key người que từ US về thôi mọi người. Mà ngoài ra thì không phải là một cái key ngoài cái ngách này đâu, còn rất là nhiều thứ nữa. Mọi người cứ hiểu được cái nhân bản thị trường là mấy bác ok thôi. Về cách làm nhân bản thị trường em cũng đã có video hướng dẫn rồi. Thì từ cái skill này mọi người cứ đẩy lên con Claude, mọi người ví dụ như mọi người muốn nhân bản cái ngách này, cái skill này về thị trường Việt Nam, về tiếng Việt, đúng không? Thì mọi người cứ tải hết của em lên xong rồi mọi người ghi là yêu cầu như thế thì nó sẽ ra thôi. Đấy, rất là đơn giản thôi. Mọi người muốn như nào thì mọi người cứ train con AI như vậy thôi. Đấy. Rồi ok, em cảm ơn tất cả mọi người đã xem video đến đây nha. Và ngoài ra nó có một cái file hướng dẫn nữa, và cái form nó cũng có là cái phần thumb, thì cái đây mấy bác tự tham khảo thêm nha. Your mom is whispering on the phone in the kitchen. You're upstairs, two rooms away, with the door closed. Don't tell Kai, it's a surprise. - A puppy? Really? - How did you hear that? At lunch, your friend Nora's phone buzzes. It's on silent, inside her backpack, under three books. And she's sitting across the cafeteria. Nora, your bag's buzzing. - Okay, that's not normal. A normal person can hear a whisper across a room. You? Across the street, you hear things from 10 times farther away than anyone else. So what if you could hear 10 times better? Here's how it works. Sound is just air, pushing on air, like ripples in a pond. Those ripples hit your eardrum and make it shake. Three tiny bones pass the shake along. The smallest one is about 3 mm long. Then comes a snail-shaped tube called the cochlea. Inside, thousands of tiny hair cells bend like grass in the wind, and turn every push into a signal for your brain. Yours bend at almost nothing. But here's the weird part. Sound spreads out as it travels, so it gets weaker fast. Double the distance, and you get a quarter of the sound. So to hear 10 times farther, your ears need to be 100 times more sensitive. And here's the catch: your ears got 100 times stronger, your volume knob did not. Dr. Patel, a hearing doctor, puts you in a soundproof booth. She plays a tiny beep, and turns it down. Quieter, quieter, until the machine hits its lowest setting. - Still hear it. - That's below zero, do it again. At home, nothing ever surprises you again. You order a pizza, and you hear the delivery scooter three blocks away. You open the door before he even reaches the bell. At school, teachers become easy. Mr. Greer's keys jingle two hallways away. You cough once, and 30 phones vanish into 30 pockets. Sound moves about 340 m every second. Mr. Greer walks about one. That's a very long warning. Why is everyone always sitting so nicely? Hide and seek is over forever, because you can hear heartbeats behind the couch, under the stairs, in the dryer, Nora? Really? My heart was not that loud. 140 beats a minute. Your uncle's car shop hires you for the summer. Mechanics use a stethoscope to hunt for a dying engine part. You hear it from the parking lot, front left wheel. 20 bucks an hour just to listen. But where it gets really crazy is video games. In shooter games, sound is everything. Footsteps, reloads, a door creaking open somewhere upstairs. Your brain can tell which ear a sound hit first, by a gap of about 10 millionths of a second. That's how you know where a sound comes from. Yours is sharper than anyone's. Hear an enemy reload through two walls. He's on the stairs. Third step, left side. Bronze, gold, diamond. Number one in the whole country in four months. Dude, are you in my house right now? The internet gives you a nickname: The Bat. Then the internet gives you another one: Cheater. Nobody can know that much, they say, unless he sees through walls. No way he heard that. No way. So they test you. Their computer, their mouse, their keyboard. Two officials stand behind you, watching every move. You win anyway. Then you qualify for your first live tournament, on a real stage. And there's one problem: on stage, pro players wear big, sealed headsets. Some tournaments even pipe in white noise. Can I turn it down? Three floors... roars... Then back, voice actor... And if you'd have taken off that headset, now you can hear me. So what would you do with 10 times better hearing? 10 times better hearing. Tell us the one sound you'd never want to hear again in the comments. Take off the headset? Like and subscribe for part 2."
+}

@@ -372,6 +372,7 @@ window.addEventListener('keydown', (e)=>{
           catalogBySku: bySku,
           catalogBySkuLower: bySkuLower,
           bootstrapInsight: boot.insight || null,
+          bootstrapTranscript: boot.transcript || null,
           deadChannelsList: Array.isArray(boot.deadChannels) ? boot.deadChannels : []
         };
       }
@@ -443,6 +444,7 @@ window.addEventListener('keydown', (e)=>{
         catalogBySku,
         catalogBySkuLower,
         bootstrapInsight: null,
+        bootstrapTranscript: null,
         deadChannelsList
       };
     }
@@ -454,6 +456,7 @@ window.addEventListener('keydown', (e)=>{
       catalogBySku,
       catalogBySkuLower,
       bootstrapInsight,
+      bootstrapTranscript,
       deadChannelsList
     } = await loadCourseCatalog(sku);
 
@@ -830,11 +833,11 @@ window.addEventListener('keydown', (e)=>{
         return null;
       };
 
-      let trData = null;
+      let trData = bootstrapTranscript || null;
       const jsonCandidate = declaredJson || jsonPath;
-      if (jsonCandidate) {
+      if (!trData && jsonCandidate) {
         try {
-          const trRes = await fetch(jsonCandidate);
+          const trRes = await fetch(jsonCandidate, { cache: 'no-store' });
           if (trRes.ok) trData = await trRes.json();
         } catch (e) { /* fall through to txt */ }
       }

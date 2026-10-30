@@ -1,0 +1,83 @@
+{
+  "sku": "VIDEO-2ba0d1",
+  "title": "Update ngách mới thị trường Nhật Bản làm bán content",
+  "actual_topic": "Update ngách mới thị trường Nhật Bản làm bán content",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Triết Lý & Phật Pháp",
+  "niche_id": "faceless-general",
+  "target_market": "Nhật Bản",
+  "market_code": "JP",
+  "key_takeaways": [
+    "Tác giả share thêm ngách dạng bán content ở thị trường Nhật: kênh về Nikola Tesla và các nhân vật nổi tiếng; view ổn định chứ không quá cao, nhưng là ngách nhỏ nhiều tiềm năng, còn nhiều kênh đối thủ để tham khảo ở phần mô tả.",
+    "Ngách nhân vật nổi tiếng/triết lý không bao giờ hot trend nhưng cũng không bao giờ thiếu view; kênh bị quét là chuyện hên xui, và kênh cũ mất kiếm tiền là cơ hội cho kênh mới lên.",
+    "Ví dụ chuyển ngách đúng: một kênh Nhật trước làm ngách Phật pháp, 11 ngày trước chuyển sang lời dạy/giáo lý của Kukai thì 3-4 video nổ hàng chục nghìn view, trong khi các video cũ chỉ vài trăm đến vài nghìn.",
+    "Tiêu đề phải chứa từ khóa ngách (ví dụ 'lời dạy của Kukai') và đủ hấp dẫn; các video gần đây bỏ từ khóa này chỉ đạt vài nghìn view.",
+    "Cách edit đơn giản: tìm ảnh nhân vật trên mạng để chèn, video nền lấy từ nguồn video tự nhiên theo từ khóa vũ trụ, thiên nhiên; ngách Tesla từng rất cao ở US nhưng cạnh tranh lớn từ nhiều nước."
+  ],
+  "edit_sop": {
+    "primary": "Share ngách bán content thị trường Nhật: Nikola Tesla, giáo lý Kukai, tâm lý học thiền",
+    "additional": [
+      "Tìm kênh đối thủ, dịch tiêu đề ra tiếng Việt để hiểu ngách",
+      "Kênh edit đơn giản: search tên nhân vật trên mạng lấy ảnh về chèn vào",
+      "Video bên ngoài tìm trên nguồn video thiên nhiên free theo từ khóa vũ trụ, thiên nhiên",
+      "Tiêu đề phải có từ khóa ngách (ví dụ lời dạy của Kukai, giáo lý của Kukai) và phải hấp dẫn",
+      "Nội dung bám theo kịch bản, làm dạng bán content"
+    ]
+  },
+  "avoid_flags": [
+    "Video bỏ từ khóa ngách trên đầu tiêu đề thì chỉ được vài nghìn view, khác hẳn video có từ khóa",
+    "Ngách Nikola Tesla bên US cạnh tranh rất cao, nhiều nước cùng làm"
+  ],
+  "tools_mentioned": [
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@izinnokatari",
+    "@kotobano-housekibako",
+    "@IjinNoNouri",
+    "@偉人の救い",
+    "@空海の真理",
+    "@お金の心理"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu ngách bán content thị trường Nhật: Nikola Tesla và vĩ nhân"
+    },
+    {
+      "time": "01:25",
+      "seconds": 85,
+      "label": "Cách edit chèn ảnh nhân vật và tìm nguồn video thiên nhiên, vũ trụ"
+    },
+    {
+      "time": "02:23",
+      "seconds": 143,
+      "label": "Ví dụ kênh chuyển từ ngách Phật pháp sang lời dạy của Kukai nổ view"
+    },
+    {
+      "time": "03:44",
+      "seconds": 224,
+      "label": "So sánh tiêu đề có từ khóa giáo lý Kukai và tiêu đề bỏ từ khóa"
+    },
+    {
+      "time": "05:00",
+      "seconds": 300,
+      "label": "Ngách tâm lý học thiền và lưu ý cạnh tranh ngách Tesla ở thị trường US"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-2ba0d1/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Tìm kênh đối thủ, dịch tiêu đề ra tiếng Việt để hiểu ngách",
+    "Kênh edit đơn giản: search tên nhân vật trên mạng lấy ảnh về chèn vào",
+    "Video bên ngoài tìm trên nguồn video thiên nhiên free theo từ khóa vũ trụ, thiên nhiên",
+    "Tiêu đề phải có từ khóa ngách (ví dụ lời dạy của Kukai, giáo lý của Kukai) và phải hấp dẫn",
+    "Nội dung bám theo kịch bản, làm dạng bán content"
+  ]
+}

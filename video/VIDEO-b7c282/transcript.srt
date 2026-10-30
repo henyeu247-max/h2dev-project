@@ -1,0 +1,248 @@
+1
+00:00:00,000 --> 00:00:13,420
+Đó là một số 3 yếu tố tiên quyết trên bất kỳ nền tảng online nào cũng cần.
+
+2
+00:00:14,280 --> 00:00:16,520
+Yếu tố đầu tiên là chúng ta cần phải làm đúng.
+
+3
+00:00:17,940 --> 00:00:22,640
+Chúng ta cần phải đúng cái luật của nền tảng, đúng với tệp khách hàng tiềm năng và đúng với hành vi của người dùng.
+
+4
+00:00:24,000 --> 00:00:29,980
+Chúng ta cần phải làm đủ phân bổ vốn, phân bổ nguồn lực một cách hợp lý, không làm nhiều quá.
+
+5
+00:00:39,830 --> 00:00:41,090
+Theo kiểu là hôm nay chúng ta vui
+
+6
+00:00:41,090 --> 00:00:42,690
+Chúng ta làm một phát 10 cái video
+
+7
+00:00:42,690 --> 00:00:44,490
+Up lên trên YouTube
+
+8
+00:00:44,490 --> 00:00:47,170
+Nhưng mà về sau mình lại không làm nữa
+
+9
+00:00:47,170 --> 00:00:49,130
+Hoặc là mình lại đi spam
+
+10
+00:00:49,680 --> 00:00:51,680
+Nhưng mà như thế thì không nên
+
+11
+00:00:51,680 --> 00:00:56,680
+Mình cần phải làm đúng nhưng mà mình cần phải làm đủ
+
+12
+00:00:56,680 --> 00:01:00,000
+Mình cần phải đưa ra được cái kế hoạch, cái lộ trình
+
+13
+00:01:00,000 --> 00:01:05,520
+Các bạn có thể làm đều, duy trì, bền vững những yếu tố trên.
+
+14
+00:01:06,000 --> 00:01:16,520
+Và các bạn đã phân bổ được nguồn lực, ví dụ 1 ngày 1 video chẳng hạn, hoặc là 2 ngày 1 cái, hoặc 3 ngày 1 cái, thì các bạn cũng cần phải sắp xếp nguồn lực để các bạn có thể làm.
+
+15
+00:01:17,040 --> 00:01:23,540
+Và luôn luôn có 1 kho video để chúng ta có thể backup cho những trường hợp mà giả thử chúng ta bận làm gì đấy.
+
+16
+00:01:23,540 --> 00:01:27,540
+Chúng ta sẽ có cách thức để làm được những điều như vậy
+
+17
+00:01:27,540 --> 00:01:32,540
+Đấy là những yếu tố đầu tiên khi mình nói với các bạn
+
+18
+00:01:32,540 --> 00:01:42,616
+Và những yếu tố này cũng sẽ là những yếu tố mà chúng ta sẽ nói và làm việc với nhau rất nhiều trong suốt chương trình này
+
+19
+00:01:42,616 --> 00:01:43,436
+Chúng ta tiếp nhờ.
+
+20
+00:01:44,356 --> 00:01:45,996
+Chúng ta sẽ đến với một ví dụ.
+
+21
+00:01:46,000 --> 00:01:50,736
+Làm thế nào để một thanh niên y khoa thực tập đạt được kết quả triệu đô sau 4 năm?
+
+22
+00:01:50,736 --> 00:01:57,796
+Đây là mình xem một bài báo, trích lại bài báo và có phân tích lại
+
+23
+00:01:57,796 --> 00:02:04,856
+kênh của bạn Ali Abdaal này, bạn Ali Abdaal này, mình đọc tiếng Anh nó hơi kém.
+
+24
+00:02:05,736 --> 00:02:13,376
+Sau đó thì mình làm ra một cái sơ đồ như thế này, làm ra một cái sơ đồ như thế này để cho các bạn dễ nhìn.
+
+25
+00:02:13,376 --> 00:02:26,936
+Tức là cái màu xanh này, cái biểu đồ này, chúng ta có thể thấy cái màu xanh là video up. Cái màu đỏ này, nó là người đăng ký. Và cái màu xanh nhạt này thì nó là số tiền.
+
+26
+00:02:28,000 --> 00:02:37,976
+Thì cái năm 2017, bạn ấy up 59 video và bạn có 1.600 người đăng ký. Năm 2018 thì bạn ấy up 88 video và bạn ấy có 120.000 người đăng ký.
+
+27
+00:02:37,976 --> 00:02:43,656
+Thu nhập lúc này bắt đầu có 17.000 đô, nó khoảng hơn 300 triệu, 400 triệu gì đấy.
+
+28
+00:02:44,876 --> 00:02:54,076
+Đến năm 2019 bạn up 62 video, bạn có 450.000 người đăng ký, bạn có 47.000 đô thu nhập.
+
+29
+00:02:54,176 --> 00:03:00,000
+Và đến năm 2020 bạn up 98 video, bạn có 1.780.000 người đăng ký.
+
+30
+00:03:00,000 --> 00:03:05,460
+Và thu về 142.000 đô, tức là nó khoảng hơn 3 tỷ, hơn 3 tỷ Việt Nam.
+
+31
+00:03:07,000 --> 00:03:13,687
+Và cái năm 2020, bạn ấy có thêm 4 nguồn thu nhập khác, là về các chương trình Affiliate, chương trình bán hàng ở
+
+32
+00:03:13,687 --> 00:03:20,553
+trên Amazon chẳng hạn, có những cái sản phẩm nổi tiếng bạn review, bạn ấy đặt link bán hàng ở trong cái phần mô tả
+
+33
+00:03:20,553 --> 00:03:27,420
+của video, mấy bạn ấy làm những video để bạn giới thiệu bán hàng, thì nó có thêm khoảng 4,3 tỷ thu nhập nữa.
+
+34
+00:03:27,420 --> 00:03:37,227
+Bạn có thêm các hợp đồng quảng cáo từ các nhãn hàng nữa, khoảng 4,6 tỷ. Vì lúc đấy bạn hơn triệu sub rồi bạn cũng là người nổi tiếng rồi. Bạn ấy
+
+35
+00:03:37,227 --> 00:03:47,033
+bán các khóa học kỹ năng về cái tối ưu hiệu suất làm việc, nó cũng được khoảng 12 tỷ. Và khóa học bán thời gian của bạn ấy nữa thì được khoảng
+
+36
+00:03:47,033 --> 00:03:56,840
+8,8 tỷ. Tổng thu nhập năm 2020 của bạn là 33 tỷ, tức là xấp xỉ 1,4 triệu đô trong một năm. Và bạn ấy bắt đầu từ con số 0 năm 2017.
+
+37
+00:03:57,420 --> 00:04:00,220
+Bạn ấy bắt đầu từ con số 0 năm 2017
+
+38
+00:04:00,220 --> 00:04:02,000
+Các bạn có thể để ý
+
+39
+00:04:02,000 --> 00:04:07,520
+Bạn ấy làm là năm đầu tiên up 59 video
+
+40
+00:04:07,520 --> 00:04:09,660
+Năm thứ 2 bạn ấy up 88
+
+41
+00:04:09,660 --> 00:04:11,660
+Năm thứ 3 up 62
+
+42
+00:04:11,660 --> 00:04:14,160
+Năm thứ 4 là up 98
+
+43
+00:04:14,160 --> 00:04:18,660
+Và các bạn ấy up nó đúng
+
+44
+00:04:18,660 --> 00:04:21,160
+Và nó đủ
+
+45
+00:04:21,160 --> 00:04:22,260
+Và nó đều
+
+46
+00:04:22,260 --> 00:04:23,732
+ít nhất là một tuần một video
+
+47
+00:04:23,732 --> 00:04:26,552
+1 năm chúng ta có 52 tuần đúng không ạ?
+
+48
+00:04:27,492 --> 00:04:29,232
+Thì bạn up ít nhất là 59 video
+
+49
+00:04:29,232 --> 00:04:32,412
+Thì bạn up ít nhất là 1 tuần 1 video
+
+50
+00:04:32,412 --> 00:04:35,372
+Và về sau càng về sau thì bạn sẽ up nhiều hơn
+
+51
+00:04:35,372 --> 00:04:40,452
+Thì cái kết quả của bạn ấy đến nó không phải là đến từ 1 ngày 2 ngày
+
+52
+00:04:40,452 --> 00:04:43,000
+Mà cái kết quả của bạn ấy các bạn có thể thấy
+
+53
+00:04:43,000 --> 00:04:46,932
+Nó bắt đầu đi là là là là này
+
+54
+00:04:46,932 --> 00:04:48,272
+Trong vòng 3 năm đầu tiên
+
+55
+00:04:48,272 --> 00:04:49,712
+Nó chưa có gì đột phá cả
+
+56
+00:04:49,712 --> 00:04:51,192
+Nhưng đến năm thứ 4
+
+57
+00:04:51,192 --> 00:04:52,612
+Nó bắt đầu vụt lên
+
+58
+00:04:52,612 --> 00:04:56,492
+Nó vụt lên, nó bắt đầu tìm được ra cái điểm đột phá, và nó bắt đầu vụt lên.
+
+59
+00:04:57,332 --> 00:05:00,032
+Đấy, nó vụt lên mạnh mẽ, chỉ trong 1 năm thôi.
+
+60
+00:05:00,792 --> 00:05:06,192
+Thì nó bằng tất cả những năm trước cộng lại, và nó nhân lên thêm mấy lần nữa.
+
+61
+00:05:07,572 --> 00:05:10,792
+Đấy, thì nó là cái kết quả từ 1 kênh YouTube thôi ạ.
+
+62
+00:05:11,472 --> 00:05:12,272
+Kết quả từ 1 kênh YouTube.
+

@@ -1,0 +1,74 @@
+{
+  "sku": "VIDEO-b96929",
+  "title": "Hướng dẫn edit key triết lý _ khắc kỷ chi tiết từ A-Z ",
+  "actual_topic": "Kỹ thuật dựng video ngách Triết lý sống & Khắc kỷ chuẩn điện ảnh trên CapCut Desktop",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Triết Lý Sống & Đạo Làm Người",
+  "niche_id": "faceless-general",
+  "target_market": "Quốc tế (Global) / Hoa Kỳ (US)",
+  "market_code": "GLOBAL,US",
+  "key_takeaways": [
+    "Video hướng dẫn dựng chi tiết một video ngách triết lý Khắc kỷ trên CapCut; cách làm áp dụng được cho các key có dạng tương tự.",
+    "Phần voice mẫu là lời triết lý sống: đến một độ tuổi phải bỏ đi 4 thứ (tiệc tùng vô nghĩa, người không yêu bạn, họ hàng coi thường bạn, bạn bè giả dối) và giữ lại 4 thứ (tự tin, lòng nhân hậu, khí phách, sự kiên cường).",
+    "CapCut bước 1-2: đưa file voiceover và kịch bản vào timeline, cắt khoảng lặng thừa, rồi chèn ảnh tượng đá cổ đại và video thiên nhiên chuyển động chậm khớp từng câu thoại.",
+    "CapCut bước 3-4: thêm hiệu ứng zoom in/out chậm và chuyển cảnh mờ dần (dissolve/fade); chèn nhạc nền không lời sâu lắng, chỉnh âm lượng nhạc nền ở mức -18 dB đến -22 dB.",
+    "CapCut bước 5: tạo phụ đề tự động tiếng Anh/Việt với font trang nhã, rà soát tổng thể rồi xuất video 4K hoặc 1080p."
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu bài hướng dẫn edit chi tiết cho ngách triết lý khắc kỷ"
+    },
+    {
+      "time": "00:06",
+      "seconds": 6,
+      "label": "Nguyên tắc áp dụng chung kỹ thuật dựng cho các ngách tương tự"
+    },
+    {
+      "time": "00:16",
+      "seconds": 16,
+      "label": "Chuyển sang phần thực hành trực quan trên màn hình kèm nhạc nền"
+    },
+    {
+      "time": "00:21",
+      "seconds": 21,
+      "label": "Kiểm tra nhịp đoạn voiceover mẫu triết lý nhân sinh để căn nhịp dựng"
+    },
+    {
+      "time": "00:54",
+      "seconds": 54,
+      "label": "Cao trào đoạn voiceover mẫu và bắt đầu chuỗi thao tác dựng CapCut"
+    }
+  ],
+  "edit_sop": {
+    "primary": "Edit video key triết lý khắc kỷ trên CapCut, áp dụng được cho các key tương tự",
+    "additional": [
+      "Import file voiceover và kịch bản vào timeline, cắt các khoảng lặng thừa.",
+      "Chèn hình tượng đá cổ đại và video thiên nhiên chuyển động chậm theo từng câu thoại.",
+      "Thêm hiệu ứng Zoom In/Out chậm rãi và chuyển cảnh Dissolve/Fade.",
+      "Chèn nhạc nền không lời sâu lắng, chỉnh âm lượng nhạc nền từ -18dB đến -22dB.",
+      "Tạo phụ đề tự động, rà soát tổng thể rồi xuất video 4K/1080p."
+    ]
+  },
+  "avoid_flags": [
+    "Khi dựng dòng thời gian âm thanh cần cắt bỏ các khoảng lặng thừa và không để âm lượng nhạc nền quá lớn làm lấn át giọng đọc triết lý",
+    "Tránh chuyển cảnh đột ngột gây mỏi mắt người xem mà nên dùng hiệu ứng phóng to thu nhỏ chậm rãi kết hợp chuyển cảnh mờ dần khớp từng câu thoại"
+  ],
+  "tools_mentioned": [
+    "CapCut"
+  ],
+  "channels_mentioned": [],
+  "analysis_method": "human_verified_deep_audit",
+  "accuracy_status": "verified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-b96929/transcript.txt",
+  "sop_steps": [
+    "Import file voiceover và kịch bản vào timeline, cắt các khoảng lặng thừa.",
+    "Chèn hình tượng đá cổ đại và video thiên nhiên chuyển động chậm theo từng câu thoại.",
+    "Thêm hiệu ứng Zoom In/Out chậm rãi và chuyển cảnh Dissolve/Fade.",
+    "Chèn nhạc nền không lời sâu lắng, chỉnh âm lượng nhạc nền từ -18dB đến -22dB.",
+    "Tạo phụ đề tự động, rà soát tổng thể rồi xuất video 4K/1080p."
+  ]
+}

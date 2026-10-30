@@ -1,0 +1,80 @@
+{
+  "sku": "VIDEO-bdfab7",
+  "title": "BẮT BUỘC PHẢI XEM - HƯỚNG DẪN CHI TIẾT TỰ TRAIN PROMPT VÀ PHÂN TÍCH KÊNH ĐỐI THỦ TỰ TẠO PROMPT CHO CHỦ ĐỀ (KEY) BẤT KỲ NÀO MUỐN + HƯỚNG DẪN VÀ SHARE NGÁCH NHỎ SỨC KHOẺ THỊ TRƯỜNG HÀN QUỐC CỰC TRENDS - UPDATE MỚI NHẤT 01-03-2026",
+  "actual_topic": "Phân tích ngách Sức khỏe người cao tuổi Hàn Quốc & Bộ Prompt Master 3 bước tạo kịch bản 70-90 phút kèm tạo ảnh Whisk đồng bộ",
+  "category_group": "ban_content",
+  "niche_primary": "Sức Khỏe Người Cao Tuổi Hàn Quốc",
+  "niche_id": "kr-senior-health",
+  "target_market": "Hàn Quốc",
+  "market_code": "KR",
+  "key_takeaways": [
+    "Tác giả hướng dẫn chi tiết cách tự train prompt cho bất kỳ chủ đề nào, lấy ví dụ trực tiếp từ kênh sức khỏe người cao tuổi Hàn Quốc mới làm khoảng 1 đến 2 tháng nhưng view rất đều.",
+    "Quy trình tạo prompt kịch bản: sao chép toàn bộ thông tin kênh đối thủ đưa vào ChatGPT hoặc Gemini bản trả phí để phân tích, sau đó dùng câu lệnh yêu cầu lấy 70% đến 80% nội dung gốc kết hợp sáng tạo mới với thời lượng 40 đến 50 phút chia theo từng phần.",
+    "Sau khi AI xuất prompt bằng tiếng Hàn, cần dịch qua Google Dịch để kiểm tra kỹ xem đã có đầy đủ vùng nhập tiêu đề và kịch bản gốc của đối thủ chưa, nếu thiếu phải yêu cầu AI bổ sung và train lại nhiều lần.",
+    "Quy trình train prompt hình ảnh: yêu cầu AI tạo bộ 15 đến 30 prompt ảnh theo từng phần kịch bản, đồng thời chụp màn hình khoảng 4 ảnh trong video đối thủ dán vào để AI phân tích và khóa đúng phong cách hình ảnh bác sĩ Hàn Quốc.",
+    "Thực hành tạo ảnh thực tế trên Whisk với tính năng kéo ảnh mẫu sang thanh tham chiếu bên trái để đồng bộ khuôn mặt nhân vật nam bác sĩ xuyên suốt, kết hợp chèn thêm video tự nhiên từ Pexels/Pixabay và giọng đọc ElevenLabs qua tool để tránh bị quét chính sách 2026."
+  ],
+  "edit_sop": {
+    "primary": "Train prompt bằng AI từ kênh đối thủ để tạo kịch bản, prompt ảnh và thumbnail cho ngách sức khỏe Hàn",
+    "additional": [
+      "Copy toàn bộ thông tin kênh đối thủ bỏ vào AI để phân tích kênh, chủ đề",
+      "Dán prompt của tác giả, chỉnh số phút theo đối thủ (40 đến 50 phút) và quốc gia, lấy khoảng 70 đến 80% nội dung chứ không lấy 100%",
+      "Dịch bằng Google Dịch để kiểm tra, thiếu chỗ nhập tiêu đề và kịch bản gốc thì yêu cầu AI thêm input, train đi train lại",
+      "Chụp khoảng 4 ảnh khác nhau của đối thủ dán vào để AI phân tích phong cách ảnh, rồi tạo prompt cho từng phần kịch bản",
+      "Chèn thêm video tự nhiên (nguồn video free như Pexels/Pixabay) vào, AI chỉ dùng cho giọng đọc"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng lấy 100% nội dung đối thủ vì dễ bị sử dụng lại nội dung",
+    "Đừng tự sáng tạo kịch bản, phải bám theo đối thủ đã lên",
+    "Muốn sống sót chính sách 2026 thì edit nhiều và dùng nhiều video tự nhiên"
+  ],
+  "tools_mentioned": [
+    "ChatGPT",
+    "Google Dịch"
+  ],
+  "channels_mentioned": [
+    "@시니어건강정보r"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân tích tiềm năng doanh thu khổng lồ của ngách sức khỏe người cao tuổi Hàn Quốc"
+    },
+    {
+      "time": "05:20",
+      "seconds": 320,
+      "label": "Bóc tách kênh mẫu 구름야담 và giải mã cấu trúc video dài 70-90 phút"
+    },
+    {
+      "time": "10:46",
+      "seconds": 646,
+      "label": "Hướng dẫn chạy Prompt Master tạo kịch bản tiếng Hàn tỷ lệ 70/30"
+    },
+    {
+      "time": "16:28",
+      "seconds": 988,
+      "label": "Tối ưu prompt tạo 15-30 ảnh phong cách tranh Hàn Quốc trên Whisk và Gemini"
+    },
+    {
+      "time": "21:51",
+      "seconds": 1311,
+      "label": "Thiết kế thumbnail phong cách y học Hàn Quốc và lưu ý phòng ngừa quét YMYL"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-bdfab7/transcript.txt",
+  "sop_steps": [
+    "Copy toàn bộ thông tin kênh đối thủ bỏ vào AI để phân tích kênh, chủ đề",
+    "Dán prompt của tác giả, chỉnh số phút theo đối thủ (40 đến 50 phút) và quốc gia, lấy khoảng 70 đến 80% nội dung chứ không lấy 100%",
+    "Dịch bằng Google Dịch để kiểm tra, thiếu chỗ nhập tiêu đề và kịch bản gốc thì yêu cầu AI thêm input, train đi train lại",
+    "Chụp khoảng 4 ảnh khác nhau của đối thủ dán vào để AI phân tích phong cách ảnh, rồi tạo prompt cho từng phần kịch bản",
+    "Chèn thêm video tự nhiên (nguồn video free như Pexels/Pixabay) vào, AI chỉ dùng cho giọng đọc"
+  ],
+  "last_verified_at": "2026-10-09T06:30:00Z"
+}

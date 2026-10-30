@@ -1,0 +1,72 @@
+{
+  "key_takeaways": [
+    "Nhiều người hỏi về tool và tài khoản giá rẻ nên tác giả làm clip tổng quan các tool và tài khoản share giá rẻ mà mình có.",
+    "ElevenLabs và Minimax là tool tạo giọng đọc có giá theo tháng/năm rất đắt; dùng tool của tác giả tiết kiệm nhiều chi phí và thời gian, khoảng 5-6 nghìn học viên đã dùng 2 tool này từ tháng 2.",
+    "Có thêm tool dịch phụ đề (subtitle editor) để dịch phim, review phim từ nguồn Trung Quốc như Douyin, Bilibili sang tiếng Việt.",
+    "Tác giả còn share tài khoản CapCut giá rẻ (chính chủ, dùng riêng, không dùng chung) và một loại tài khoản khác rất hiếm hàng, hết ngay khi có.",
+    "Ai cần dùng hoặc mua thì nhắn trực tiếp cho tác giả vì các group đã đầy; tác giả rảnh sẽ gửi thông tin."
+  ],
+  "edit_sop": {
+    "primary": "Giới thiệu tổng quan các tool tạo giọng đọc, tool dịch phụ đề và tài khoản share giá rẻ của tác giả",
+    "additional": [
+      "Tool tạo giọng đọc dùng thay ElevenLabs/Minimax để tiết kiệm chi phí và thời gian khi giá gốc theo tháng khá đắt",
+      "Tool dịch phụ đề editor dùng để dịch phim, review phim lấy từ Douyin hoặc Bilibili sang tiếng Việt",
+      "Tài khoản share như CapCut là tài khoản chính chủ dùng riêng, không dùng chung",
+      "Ai có nhu cầu mua thì nhắn tin trực tiếp cho tác giả vì group đã đầy"
+    ]
+  },
+  "avoid_flags": [
+    "Tránh mua trực tiếp gói tháng hoặc gói năm trên trang web chính thức nếu muốn tiết kiệm chi phí sản xuất giọng đọc",
+    "Không dùng chung tài khoản chỉnh sửa video khi cần sự ổn định mà nên dùng tài khoản chính chủ riêng biệt"
+  ],
+  "verified_expert_summary": true,
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Tổng quan các tool và tài khoản giá rẻ, trả lời bình luận của học viên"
+    },
+    {
+      "time": "00:42",
+      "seconds": 42,
+      "label": "Dùng tool tiết kiệm chi phí và thời gian; hàng nghìn anh em đã dùng từ tháng 2"
+    },
+    {
+      "time": "01:20",
+      "seconds": 80,
+      "label": "Tool dịch video Douyin/Bilibili sang tiếng Việt; chia sẻ thêm tài khoản CapCut giá rẻ"
+    },
+    {
+      "time": "01:50",
+      "seconds": 110,
+      "label": "Tài khoản dùng riêng chính chủ, hay hết hàng nên không trả lời hết bình luận"
+    },
+    {
+      "time": "02:27",
+      "seconds": 147,
+      "label": "Group đã full; muốn mua thì nhắn trực tiếp, rảnh sẽ gửi thông tin"
+    }
+  ],
+  "tools_mentioned": [
+    "ElevenLabs",
+    "Minimax",
+    "CapCut",
+    "Bilibili"
+  ],
+  "sop_steps": [
+    "Tool tạo giọng đọc dùng thay ElevenLabs/Minimax để tiết kiệm chi phí và thời gian khi giá gốc theo tháng khá đắt",
+    "Tool dịch phụ đề editor dùng để dịch phim, review phim lấy từ Douyin hoặc Bilibili sang tiếng Việt",
+    "Tài khoản share như CapCut là tài khoản chính chủ dùng riêng, không dùng chung",
+    "Ai có nhu cầu mua thì nhắn tin trực tiếp cho tác giả vì group đã đầy"
+  ],
+  "sku": "VIDEO-04c2e3",
+  "title": "Tool Elevenlab, Clone Minimax, Dịch SRT, Tài Khoản ChatGPT Plus/ CapCut Pro - Giá rẻ",
+  "actual_topic": "Tool Elevenlab, Clone Minimax, Dịch SRT, Tài Khoản ChatGPT Plus/ CapCut Pro - Giá rẻ",
+  "channels_mentioned": [],
+  "visual_audio_checked": true,
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "source_transcript": "video/VIDEO-04c2e3/transcript.txt",
+  "market_code": "KR",
+  "target_market": "Hàn Quốc",
+  "niche_primary": "Bán Content & Phát Triển Kênh"
+}

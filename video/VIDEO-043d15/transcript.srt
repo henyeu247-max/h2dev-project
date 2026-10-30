@@ -1,0 +1,1219 @@
+1
+00:00:00,000 --> 00:00:07,520
+Em chào tất cả mấy bác nha. Thì như video hôm trước update ngách nhỏ thị trường Hàn ngày 29 tháng 9 nè thì em có nói là em
+
+2
+00:00:07,520 --> 00:00:15,300
+sẽ làm thêm một video riêng để hướng dẫn lại train form của cái ngách riêng cái ngách nhỏ này luôn. Thì hôm nay em sẽ làm cho mọi người.
+
+3
+00:00:15,300 --> 00:00:23,300
+Và thật ra thì tất cả mấy bác cũng đều tự làm được hết rồi bởi vì em đã có hướng dẫn hết ở trong mục Module hướng dẫn quy trình dùng Claude nè.
+
+4
+00:00:23,300 --> 00:00:32,300
+Và cái mục Module 3 này là em đã hướng dẫn train form hết rồi, thì mấy bác có thể xem chỗ đó rồi làm những cái ngách khác nữa nha.
+
+5
+00:00:32,300 --> 00:00:34,300
+Cái này thì trước giờ em có nói rất là nhiều lần rồi.
+
+6
+00:00:34,300 --> 00:00:42,800
+Mục Module 3 này thì lúc trước em hướng dẫn dùng con ChatGPT á, còn cái mục hướng dẫn quy trình dùng Claude này thì là em hướng dẫn trên con Claude.
+
+7
+00:00:42,800 --> 00:00:46,940
+Đấy, con Claude AI á mọi người.
+
+8
+00:00:46,940 --> 00:00:49,240
+Đấy bởi vì nay nó là theo em nha.
+
+9
+00:00:49,240 --> 00:00:53,360
+Đối với em là nay con Claude AI là xịn và ngon nhất rồi mọi người ạ.
+
+10
+00:00:53,360 --> 00:00:55,200
+Em ít có dùng ChatGPT nữa.
+
+11
+00:00:55,200 --> 00:00:57,500
+ChatGPT thì em dùng để tạo ảnh thôi.
+
+12
+00:00:57,500 --> 00:01:03,700
+Quay lại vấn đề chính thì ok 2 kênh đối thủ này hôm trước em cũng có show cho mọi người thấy rồi đúng không?
+
+13
+00:01:03,700 --> 00:01:06,040
+Thì em cũng có lọc thêm một kênh nữa.
+
+14
+00:01:06,040 --> 00:01:09,200
+Đây, kênh này thì tí nữa em nói sau nha mọi người.
+
+15
+00:01:09,200 --> 00:01:14,300
+Nó cũng cùng là cái ngách thực phẩm luôn á.
+
+16
+00:01:14,300 --> 00:01:22,300
+Rồi ok bây giờ đối với kênh đầu tiên thì bấm vào mục Phổ biến nè. Vẫn như quy trình trước giờ em hướng dẫn thôi, mọi người copy toàn bộ cái thông tin của kênh này nha.
+
+17
+00:01:22,300 --> 00:01:31,300
+Đấy như em là bôi đen tất cả, rồi dán vào con Claude AI. Quay lại tiếp tục em copy dán tiếp cái kênh thứ 2 nha.
+
+18
+00:01:31,300 --> 00:01:42,300
+Đấy mấy bác lọc ra bao nhiêu kênh đối thủ thì mấy bác dán vào. Thì em khuyên là nên tầm là 2 đến 3 kênh nha, 3 kênh là ok nhất để cho nó có dữ liệu thông tin để nó phân tích và nó học nha mọi người.
+
+19
+00:01:42,300 --> 00:01:44,300
+Rồi tiếp theo là kênh thứ 3 này.
+
+20
+00:01:44,300 --> 00:01:52,760
+Thì kênh này á thì em thấy cái key á thì nó ok nó giống rồi, nhưng mà đi sâu vào trong cái ngách nhỏ thì là nó khác nha mọi người.
+
+21
+00:01:52,760 --> 00:02:00,420
+Bởi vì 2 kênh đầu này á, 2 kênh mà hôm bữa trước em share cho mọi người rồi á thì nó nói về chủ yếu là dạng táo, cà rốt nè.
+
+22
+00:02:00,420 --> 00:02:05,700
+Còn đối với riêng kênh này á thì nó lại đi riêng sang một cái hướng khác, gọi là...
+
+23
+00:02:05,700 --> 00:02:15,300
+Mấy bác đọc tiêu đề những video cao view của nó thì mấy bác thấy là cái dạng kiểu như là hành tây hoặc là đậu xanh này kia nè mọi người.
+
+24
+00:02:15,300 --> 00:02:18,500
+Đấy thì mấy bác có thể tham khảo thêm kênh này nha.
+
+25
+00:02:18,500 --> 00:02:23,860
+Nó cũng riêng về một cái ngách riêng nhỏ khác nữa chứ không giống 2 kênh kia đâu.
+
+26
+00:02:23,860 --> 00:02:31,960
+Thì đương nhiên là nói về cái key chung thì nó là key sức khỏe thực phẩm thôi, nhưng mà đi sâu vào là một cái ngách làm về những cái loại thực phẩm khác nha,
+
+27
+00:02:31,960 --> 00:02:41,000
+về những cái món ăn khác. Đấy thì em phân tích như vậy. Rồi riêng kênh này thì em không train và em để ở đây, và em sẽ để mô tả thêm cho mọi người có thể tham khảo nha.
+
+28
+00:02:41,000 --> 00:02:48,330
+Em chỉ cho con Claude nó học 2 cái kênh đầu tiên này thôi. Đấy bởi vì nó cùng một cái dạng, cùng một hướng luôn.
+
+29
+00:02:48,330 --> 00:02:53,730
+Sau khi mà đã copy 2 cái dữ liệu của kênh đối thủ rồi, tiếp theo thì em nhập một cái câu lệnh như này:
+
+30
+00:02:53,730 --> 00:03:00,400
+"Đây là kênh đối thủ và tôi đang có định hướng sắp tới sẽ làm về chủ đề ngách này. Trước tiên
+
+31
+00:03:00,400 --> 00:03:07,060
+bạn hãy phân tích và học thật kỹ 2 kênh này. Phân tích làm về chủ đề ngách gì, từ khóa chính,
+
+32
+00:03:07,060 --> 00:03:13,730
+từ khóa phụ và từ khóa ngách, tiêu đề như nào đấy, rồi viết kịch bản các kiểu, và nếu cần tôi cung cấp thêm
+
+33
+00:03:13,730 --> 00:03:21,730
+kịch bản cao view nhất của các kênh đối thủ để học thêm thì bạn hãy nói, tôi sẽ cung cấp. Đấy, đầu tiên thì em sẽ cho nó phân tích và viết như vậy để cho nó học trước nha mọi người.
+
+34
+00:03:21,730 --> 00:03:25,230
+Đấy, sau đó thì em sẽ tiếp tục...
+
+35
+00:03:25,230 --> 00:03:36,890
+cung cấp thêm các kịch bản của những kịch bản cao view nhất của các kênh đối thủ để nó phân tích, bóc tách ra và nó làm tiếp nha mọi người.
+
+36
+00:03:36,890 --> 00:03:39,490
+Đầu tiên đại loại là như thế thôi nha mọi người.
+
+37
+00:03:39,490 --> 00:03:44,710
+Đấy để cho mình train nó từ từ từ từ để cho nó học qua và nó bóc tách dần dần nha.
+
+38
+00:03:44,710 --> 00:03:49,490
+Chứ không thể nào mà train một lúc cùng lúc một lần ra liền được đâu nha.
+
+39
+00:03:49,490 --> 00:03:55,210
+Mấy cái đoạn chờ nó generate ra như này thì em sẽ tua nhanh nha để tiết kiệm thời gian của mình nha mọi người.
+
+40
+00:03:55,210 --> 00:03:59,730
+Sau một thời gian chờ đợi thì cuối cùng đã xong.
+
+41
+00:03:59,730 --> 00:04:04,730
+Thì nó đã phân tích xong toàn bộ này, nó ra cho em rất là nhiều thứ nè.
+
+42
+00:04:04,730 --> 00:04:09,730
+Đầu tiên thì nó sẽ quy chung lại 2 kênh này là làm về gì.
+
+43
+00:04:09,730 --> 00:04:14,730
+Đó, thì nó phân tích ra rất là kỹ, nói chung mấy bác train thì mấy bác có thể đọc qua nha.
+
+44
+00:04:14,730 --> 00:04:17,730
+Còn đây là em sẽ lướt nhanh qua thôi.
+
+45
+00:04:17,730 --> 00:04:21,730
+Quan trọng là để cho mọi người hiểu được cái quy trình, cái quá trình làm như nào thôi.
+
+46
+00:04:21,730 --> 00:04:24,690
+Đây, rất có thể 2 kênh cùng một ngách nè.
+
+47
+00:04:24,690 --> 00:04:26,590
+Đương nhiên là cùng trường phái rồi,
+
+48
+00:04:26,590 --> 00:04:28,010
+bởi vì nó chung một ngách nhỏ mà.
+
+49
+00:04:28,010 --> 00:04:31,330
+Đấy nó nói về những cái từ khóa nè.
+
+50
+00:04:31,330 --> 00:04:34,250
+Rồi tiếp tục ở dưới thứ 2 là ngách chính xác.
+
+51
+00:04:34,250 --> 00:04:36,390
+Là không phải ngách sức khỏe chung chung,
+
+52
+00:04:36,390 --> 00:04:39,410
+đấy, mà là điểm hợp của 3 trục.
+
+53
+00:04:39,410 --> 00:04:43,730
+Có nghĩa là ngách sức khỏe là một cái ngách chung rất là lớn rồi.
+
+54
+00:04:43,730 --> 00:04:47,150
+Đây là đi sâu vào một cái ngách nhỏ, cực kỳ nhỏ nha mọi người.
+
+55
+00:04:47,150 --> 00:04:48,730
+Đấy kiểu là như vậy.
+
+56
+00:04:48,730 --> 00:04:51,170
+Đấy, đây là những cái từ khóa nè:
+
+57
+00:04:51,170 --> 00:04:53,090
+táo, cà rốt, mấy bác thấy không?
+
+58
+00:04:53,090 --> 00:04:54,490
+Khoai tây nè.
+
+59
+00:04:54,490 --> 00:04:56,230
+Đấy những từ khóa mà train
+
+60
+00:04:56,230 --> 00:04:58,670
+ở trong những video của kênh này nè.
+
+61
+00:04:58,670 --> 00:05:00,390
+Đấy nó phân tích ra rất rất là kỹ.
+
+62
+00:05:00,390 --> 00:05:02,210
+Thì mọi người khi mà train á
+
+63
+00:05:02,210 --> 00:05:04,970
+thì mọi người nhớ đọc để nắm được nha.
+
+64
+00:05:04,970 --> 00:05:10,990
+Đấy đại loại là như thế thôi, và cái thứ 3 là các cái từ khóa này kia thôi.
+
+65
+00:05:10,990 --> 00:05:17,990
+À nếu mà mấy bác dùng con Claude AI để làm này á thì em khuyên mọi người là nên nâng cấp gói Pro để làm nha.
+
+66
+00:05:17,990 --> 00:05:25,120
+Để cho nó viết ngon và nói chung là nó thông minh, nó viết nó hỗ trợ mình. Chứ mấy bác mà dùng cái free á thì em nói thật
+
+67
+00:05:25,120 --> 00:05:31,120
+là không có được gì đâu mọi người ạ. Em thì hiện tại đang dùng gói Max trước giờ rồi bởi vì em làm
+
+68
+00:05:31,120 --> 00:05:37,550
+rất rất là nhiều thứ, rất nhiều kênh, nên là nhu cầu dùng rất là nhiều. Còn mấy bác mà dùng để làm
+
+69
+00:05:37,550 --> 00:05:42,880
+sơ sơ, làm ít, làm một vài kênh, làm vài ba kênh thôi á thì chỉ cần gói Pro thôi là đủ rồi nha,
+
+70
+00:05:42,880 --> 00:05:48,580
+dư sức nha. Tại cái này em thấy có một số bác người mới á thì cũng hơi thắc mắc nên là sẵn đây em nói luôn nha.
+
+71
+00:05:48,580 --> 00:05:50,990
+Tiếp tục sau khi mà mình đã đọc qua hết được
+
+72
+00:05:50,990 --> 00:05:54,670
+những cái phân tích của nó vừa cho ra rồi á,
+
+73
+00:05:54,670 --> 00:06:02,810
+thì bước tiếp là nó yêu cầu mình là nếu được thì hãy cung cấp cho nó mô tả và thẻ tag của 2 kênh đối thủ này.
+
+74
+00:06:02,810 --> 00:06:06,690
+Và tiếp theo là cung cấp với 4 cái kịch bản nó đưa ra này mọi người.
+
+75
+00:06:06,690 --> 00:06:14,560
+Đấy 2 cái kịch bản cao view nhất của cả 2 kênh và những cái về cái 3, số 4 này.
+
+76
+00:06:15,000 --> 00:06:16,520
+Thì mình nói chung mình cứ làm theo nó thôi.
+
+77
+00:06:16,520 --> 00:06:20,810
+Em sẽ dùng cái web này để lấy kịch bản và cung cấp cho nó nha.
+
+78
+00:06:20,810 --> 00:06:24,990
+Rồi đối với kênh đầu tiên thì em sẽ copy video cao view nhất này.
+
+79
+00:06:24,990 --> 00:06:28,990
+Web này thì mấy bác là biết hết rồi đúng không?
+
+80
+00:06:28,990 --> 00:06:31,990
+Em cũng sẽ để lại mô tả cho mọi người nha.
+
+81
+00:06:31,990 --> 00:06:34,990
+Web này thì lấy kịch bản free thôi mọi người, không có gì hết.
+
+82
+00:06:34,990 --> 00:06:41,990
+Và em sẽ tua nhanh cái đoạn này nha. Em sẽ lấy 4 cái kịch bản theo hướng dẫn yêu cầu của con Claude thôi.
+
+83
+00:06:41,990 --> 00:06:47,990
+Em thì dùng cái Notepad hay là cái Notepad++ để lưu cái kịch bản thôi mọi người.
+
+84
+00:06:47,990 --> 00:06:54,990
+Rồi ok thì em sẽ lấy hết đầy đủ 4 cái kịch bản của 4 cái video như nó yêu cầu nha.
+
+85
+00:06:54,990 --> 00:07:00,990
+Và em sẽ cắt bỏ nhanh những cái đoạn lấy này cho video mình nó nhanh nha mấy bác.
+
+86
+00:07:00,990 --> 00:07:04,990
+Cái này thì chỉ việc sao chép rồi qua web mình lấy thôi, không có gì hết.
+
+87
+00:07:04,990 --> 00:07:12,990
+Rồi ok sau khi mà em đã lấy xong hết 4 cái kịch bản đó về rồi thì bước tiếp theo thì em sẽ tải lên thôi, đẩy 4 cái file đó lên.
+
+88
+00:07:12,990 --> 00:07:22,990
+Rồi và tiếp tục là làm theo yêu cầu nó là lấy những cái thẻ tag của kênh cũng như là mô tả và thẻ tag video của 2 kênh đối thủ luôn nha.
+
+89
+00:07:22,990 --> 00:07:26,790
+Kênh đầu tiên thì em sẽ copy cái thẻ tag video trước nè.
+
+90
+00:07:26,790 --> 00:07:30,490
+Thẻ tag kênh chứ, đây là các cái thẻ tag kênh nha mọi người,
+
+91
+00:07:30,490 --> 00:07:31,490
+em nói nhầm.
+
+92
+00:07:31,490 --> 00:07:34,490
+Rồi tiếp theo thì em sẽ bấm vào video nè.
+
+93
+00:07:34,490 --> 00:07:38,980
+Em copy full toàn bộ cái mô tả của kênh đối thủ luôn nha.
+
+94
+00:07:38,980 --> 00:07:50,980
+Đấy thì nói chung em cho AI nó học tất cả các thứ luôn. Mình muốn mà chất lượng và chỉn chu, viết tốt nhất á thì mình phải cho nó học nhiều nhất của các kênh đối thủ nha mấy bác.
+
+95
+00:07:50,980 --> 00:07:53,980
+Rồi em chú thích là mô tả video nè, rồi em dán vào.
+
+96
+00:07:53,980 --> 00:07:58,980
+Tiếp theo là từ khóa thẻ video, thẻ tag video ấy.
+
+97
+00:07:58,980 --> 00:08:02,980
+Ở trên này thì nó cũng có cái thẻ tag channel nè, thì mấy bác có thể vào đây lấy luôn.
+
+98
+00:08:02,980 --> 00:08:05,980
+Còn lúc nãy thì em ở ngoài em đã copy trước rồi.
+
+99
+00:08:05,980 --> 00:08:08,980
+Đây là cái thẻ từ khóa video thôi.
+
+100
+00:08:08,980 --> 00:08:13,980
+Rồi xong kênh 1 nha. Bắt đầu kênh thứ 2 thì em chú thích là kênh 2.
+
+101
+00:08:13,980 --> 00:08:17,980
+Mình ghi như vậy thôi là nó tự hiểu thôi mấy bác ạ.
+
+102
+00:08:17,980 --> 00:08:21,300
+Qua kênh thứ 2 thì em cũng bấm vào video cao view nhất.
+
+103
+00:08:21,300 --> 00:08:28,440
+Rồi kéo xuống em lấy cái thẻ tag kênh trước nha.
+
+104
+00:08:28,440 --> 00:08:32,480
+Tiếp theo thì em chú thích là mô tả nè.
+
+105
+00:08:32,480 --> 00:08:37,120
+Ghi mô tả thôi là cũng được rồi.
+
+106
+00:08:37,120 --> 00:08:41,160
+Cái mô tả kênh này nó cũng khá giống với kênh đầu luôn á.
+
+107
+00:08:41,160 --> 00:08:45,560
+Nói chung làm bán content mà, mình cứ ăn theo, học theo thôi mấy bác ạ.
+
+108
+00:08:45,560 --> 00:08:52,560
+Rồi tiếp theo cái cuối cùng là em sẽ copy cái thẻ tag video nha.
+
+109
+00:08:52,560 --> 00:08:55,560
+Rồi dán vào như này.
+
+110
+00:08:55,560 --> 00:09:01,560
+Ok bây giờ thì em sẽ cho nó chạy luôn, không cần ghi thêm gì nữa nha.
+
+111
+00:09:01,560 --> 00:09:04,560
+Chạy như này thì nó sẽ tự hiểu và nó sẽ generate ra cho em thôi.
+
+112
+00:09:04,560 --> 00:09:08,560
+Và bây giờ đoạn này em sẽ tiếp tục em sẽ tua em bỏ qua cho nó nhanh nha.
+
+113
+00:09:08,560 --> 00:09:12,560
+Sau khi chờ đợi tầm vài phút thì cuối cùng nó đã generate xong hết rồi.
+
+114
+00:09:12,560 --> 00:09:18,560
+Đây là nó ra những cái thông số kỹ thuật mà nó đo được cả 2 kênh đối thủ nè.
+
+115
+00:09:18,560 --> 00:09:26,560
+Mấy bác nói chung lúc mà mấy bác train qua thì mấy bác chắc chắn phải đọc qua để mình hiểu được cái ngách mình làm nó như nào nha.
+
+116
+00:09:26,560 --> 00:09:30,560
+Ví dụ như hiện tại nó ra của em nó ra 2 cái trường phái nè.
+
+117
+00:09:30,560 --> 00:09:36,560
+Kiểu A thì nó là dẫn dắt nỗi sợ, cái kiểu dạng kịch bản nó làm ấy.
+
+118
+00:09:36,560 --> 00:09:39,560
+Còn kiểu B là câu đố, nguyên tắc và nhân vật.
+
+119
+00:09:39,560 --> 00:09:47,390
+Mấy bác có thể đọc qua hết toàn bộ như này. Phần 4 là các cái SEO đi kèm là về mô tả, thẻ tag các thứ này.
+
+120
+00:09:47,390 --> 00:09:56,200
+Thì cái này là khi mình gọi cái skill mình viết kịch bản thì nó ra kịch bản rồi nó sẽ kèm theo cái này cho mình để mình để trong video luôn nha.
+
+121
+00:09:56,200 --> 00:09:59,980
+Cái này em train rất rất là cụ thể vào luôn.
+
+122
+00:09:59,980 --> 00:10:08,300
+Để cho mình không phải làm thêm bước nào nữa. Tiết kiệm thời gian, khi mình viết kịch bản á thì nó sẽ ra đầy đủ luôn á mọi người.
+
+123
+00:10:08,300 --> 00:10:12,720
+Cuối cùng là cái phần 5 thì nó khuyên mình nên làm gì và không nên làm gì thôi.
+
+124
+00:10:12,720 --> 00:10:17,000
+Và cuối cùng thì nó sẽ sẵn sàng đóng gói toàn bộ thành skill kịch bản cho mình nè.
+
+125
+00:10:17,000 --> 00:10:26,920
+Thì cái này hiện tại em chưa có cái tên kênh cũng như là cái brand keyword, cái này có nghĩa là từ khóa thương hiệu cho kênh của mình thôi.
+
+126
+00:10:26,920 --> 00:10:36,920
+Và nó hỏi mình là dùng Voice là ElevenLabs hay là Clone, Minimax này, rất là cụ thể luôn, mấy bác thấy không?
+
+127
+00:10:36,920 --> 00:10:38,920
+Thì bây giờ em sẽ trả lời cho nó nha.
+
+128
+00:10:38,920 --> 00:10:46,920
+Nếu mà mấy bác đã có sẵn tên kênh và ý tưởng của tên kênh, từ khóa thương hiệu kênh của mấy bác rồi thì mấy bác cứ nhập vào thôi là ok.
+
+129
+00:10:46,920 --> 00:10:52,920
+Còn hiện tại ví dụ như em chưa biết gì và chưa có cái gì cả thì em sẽ yêu cầu nó nha.
+
+130
+00:10:52,920 --> 00:10:56,920
+Bây giờ còn một vấn đề nữa thì em phải train thêm cho nó mới được.
+
+131
+00:10:56,920 --> 00:11:02,920
+Có nghĩa là khi mà viết kịch bản á thì chủ đề ở đâu ra và mình có bám theo đối thủ được không, kiểu vậy nha.
+
+132
+00:11:02,920 --> 00:11:04,920
+Thì em sẽ yêu cầu train thêm để cho nó hiểu nha.
+
+133
+00:11:04,920 --> 00:11:07,920
+"Trước khi tôi chốt nè, thì cho tôi hỏi
+
+134
+00:11:07,920 --> 00:11:14,920
+output ra có gợi ý tiêu đề, chủ đề để viết kịch bản không, hay là tôi phải nhập một chủ đề bất kỳ nào đó,
+
+135
+00:11:14,920 --> 00:11:17,920
+hoặc là lấy bám theo của đối thủ?"
+
+136
+00:11:17,920 --> 00:11:25,000
+Có nghĩa là cái bám này gọi là bán content đúng cái mà 70% lúc trước em có hướng dẫn mọi người á,
+
+137
+00:11:25,000 --> 00:11:33,920
+là lấy kịch bản của đối thủ cộng với cái tiêu đề của đối thủ bỏ vào thôi để cho nó viết ra kịch bản mới á mọi người.
+
+138
+00:11:33,920 --> 00:11:44,720
+Rồi và kết hợp cả 2 lại vào trong một cái form đó luôn, trong một form chung luôn, để khi mình gọi skill ra thì mình muốn như nào thì nó vẫn phục vụ cho mình được hết nha.
+
+139
+00:11:44,720 --> 00:11:54,560
+Thì bản chất là đầu tiên thì nó cũng đã hiểu được cái này rồi mấy bác ạ, nhưng mà mình phải train thêm như này để cho nó thêm vào trong cái form mình cứng luôn, cái skill mình á.
+
+140
+00:11:54,560 --> 00:12:01,630
+Để khi mình gọi ra mình làm, sau này mình làm rất là nhiều thứ, thì mình không cần phải ghi lại nữa. Nhiều khi mà bác không train kỹ á,
+
+141
+00:12:01,630 --> 00:12:07,780
+thì sau này nó viết được những cái đầu, nhưng mà sau này mấy bác làm rất rất là nhiều ngách hay là nhiều thứ khác nhau.
+
+142
+00:12:07,780 --> 00:12:19,360
+Sau nó sẽ loạn và nó không, kiểu nó không còn mặc định, nó không hiểu cái cũ nữa ấy, nên là sẽ không viết được chuẩn và hay đâu nha. Cho nên là mình phải train kỹ cái lúc đầu nha mọi người, cho nó vào cứng luôn.
+
+143
+00:12:19,360 --> 00:12:28,300
+Giờ nó trả lời em nè: "Tôi sẽ thiết kế skill nhận 3 chế độ cho mình luôn nè." Đấy chế độ 1 thì nó sẽ tự động gợi ý cái chủ đề cho mình nha.
+
+144
+00:12:28,300 --> 00:12:38,980
+Thì ví dụ mấy bác để trống á, mấy bác chỉ cần bấm một dấu xẹt gọi skill ra, hoặc là mọi người ghi là gợi ý đề tài thì nó sẽ tự động là cho 10 cái chủ đề ngẫu nhiên nha.
+
+145
+00:12:38,980 --> 00:12:46,990
+10 cái chủ đề đó thì nó sẽ phân tích thật kỹ và nó cho 10 cái chủ đề trend nha, chứ không phải là chủ đề tào lao đâu nha mấy bác.
+
+146
+00:12:46,990 --> 00:12:52,990
+Đấy còn mà mình muốn bao nhiêu, ví dụ như 20 hay 30 nhiều hơn thì mình cứ nhập số vào.
+
+147
+00:12:52,990 --> 00:13:02,990
+Ví dụ như ghi gợi ý 20 chủ đề đề tài á thì nó sẽ ra 20 cái thôi. Rất là đơn giản như vậy, tí nữa em làm cụ thể chi tiết cho mấy bác hiểu nha.
+
+148
+00:13:02,990 --> 00:13:13,990
+Cái chế độ 2 thì là bạn nhập chủ đề vào. Thì mọi người đã có sẵn một chủ đề muốn làm rồi đúng không, thì mọi người chỉ cần gọi skill ra và ghi cái từ khóa đó vào thôi.
+
+149
+00:13:13,990 --> 00:13:15,990
+Bấm Enter thì nó sẽ tự động viết thôi.
+
+150
+00:13:15,990 --> 00:13:21,990
+Cuối cùng là chế độ 3 này thì là mấy bác lấy kịch bản của đối thủ á, mấy bác muốn kiểu bám theo video cao view nhất.
+
+151
+00:13:21,990 --> 00:13:29,990
+Em ví dụ như video này đúng không, thì mấy bác sao chép lấy kịch bản nè, xong rồi tải kịch bản lên cộng với cái tiêu đề của đối thủ dán vào.
+
+152
+00:13:29,990 --> 00:13:33,990
+Đó rồi mấy bác bấm Enter thì nó sẽ chạy ra thôi, đơn giản.
+
+153
+00:13:33,990 --> 00:13:40,990
+Đấy cái chế độ thứ 3 thì đúng theo kiểu bán content lúc trước mà em nói mọi người lấy 70% á.
+
+154
+00:13:40,990 --> 00:13:50,790
+Chứ bây giờ mà như con Claude hay con ChatGPT mấy bác bảo nó vào không không cứ bảo nó lấy 70% thì chắc chắn nó sẽ không lấy nha,
+
+155
+00:13:50,790 --> 00:13:54,990
+và nó sẽ trả lời là bị vi phạm này kia.
+
+156
+00:13:54,990 --> 00:14:00,000
+Nói chung là do những cái model AI này thì được update lên bảo vệ bản quyền này kia ấy mấy bác, nói chung là nó hạn chế lại thôi.
+
+157
+00:14:00,000 --> 00:14:02,990
+bảo vệ bản quyền này kia ấy mấy bác, nói chung là nó hạn chế lại thôi.
+
+158
+00:14:02,990 --> 00:14:09,690
+Vấn đề về luật YouTube thì rất là bình thường, cái này là YouTube được cho phép nha, không có vấn đề gì cả mấy bác ạ.
+
+159
+00:14:09,690 --> 00:14:17,380
+Nhưng mà những con AI này thì được người ta train rồi, người ta hạn chế để bảo vệ bản quyền, nói chung là nhiều thứ, chứ không phải là ấy,
+
+160
+00:14:17,380 --> 00:14:26,060
+nên là mặc định nó bị hạn chế như vậy. Nên là mình ghi cứng thì nó sẽ không ra được. Nên là train theo cách của em như này là nó sẽ ok được.
+
+161
+00:14:26,060 --> 00:14:31,770
+Nói chung bây giờ con Claude nó viết rất là ok hết rồi mấy bác ạ, nó viết kiểu gì cũng được cả.
+
+162
+00:14:31,770 --> 00:14:35,770
+Ý là chất lượng em nói là chất lượng kịch bản ấy nha.
+
+163
+00:14:35,770 --> 00:14:41,770
+Nhưng mà trước khi để nó viết được ngon thì mấy bác phải cho nó học những kênh đối thủ kỹ nha.
+
+164
+00:14:41,770 --> 00:14:43,770
+Đấy, như những gì em cung cấp cho nó đấy.
+
+165
+00:14:43,770 --> 00:14:46,770
+Rồi, giờ quay lại với vấn đề chốt nha mọi người.
+
+166
+00:14:46,770 --> 00:14:51,770
+Chốt lúc nãy á, thì em ví dụ như giờ em chưa có tên kênh hay chưa có biết gì hết.
+
+167
+00:14:51,770 --> 00:14:58,270
+Thì em sẽ ghi là: Bạn hãy gợi ý cho tôi là tên kênh đi, brand keyword luôn đi, đấy tôi chưa biết như nào cả.
+
+168
+00:14:58,270 --> 00:15:06,770
+Và thời lượng thì em sẽ ghi theo chọn theo cái đề xuất của nó nha, bởi vì nó phân tích hai kênh đối thủ rồi, mình làm theo hai kênh đối thủ luôn.
+
+169
+00:15:06,770 --> 00:15:12,270
+Rồi còn cái giọng đọc á thì em sẽ chọn là con ElevenLabs nha mấy bác.
+
+170
+00:15:12,270 --> 00:15:19,270
+Bởi vì cái clone á thì mọi người muốn clone giống theo cái giọng đối thủ thì mấy bác cứ clone theo thôi, đây nè.
+
+171
+00:15:19,270 --> 00:15:22,270
+Em sẽ cho mấy bác nghe qua kênh đối thủ này.
+
+172
+00:15:25,770 --> 00:15:29,770
+Đấy, mấy bác muốn clone thì mấy bác sao chép tải về rồi clone.
+
+173
+00:15:29,770 --> 00:15:34,770
+Thì cái clone này em hướng dẫn rất là nhiều rồi, mấy bác nếu mà muốn clone làm giống giọng đối thủ nha.
+
+174
+00:15:34,770 --> 00:15:38,770
+Hoặc là cái giọng nào đó mấy bác thích bên Hàn thì mấy bác cứ clone thôi, bình thường.
+
+175
+00:15:38,770 --> 00:15:41,770
+Còn đây em hướng dẫn nhanh thì em sẽ dùng ElevenLabs.
+
+176
+00:15:41,770 --> 00:15:48,770
+Và cái thị trường Hàn này thì em cũng hay dùng ElevenLabs lắm, cái Nhật thì em mới clone thôi.
+
+177
+00:15:48,770 --> 00:15:52,770
+Còn Hàn này thì em dùng ElevenLabs là chủ yếu nha.
+
+178
+00:15:52,770 --> 00:15:54,970
+Cái này thì cũng tùy key, tùy chủ đề, tùy nhu cầu mỗi người.
+
+179
+00:15:54,970 --> 00:16:02,360
+Nếu mà làm các cái ngách triết lý người nổi tiếng thì cái đó chắc chắn là phải clone mới ok nha.
+
+180
+00:16:02,360 --> 00:16:09,090
+Còn về sức khỏe hay là về cái dạng sức khỏe này á thì cho nó cái giọng đọc tốt,
+
+181
+00:16:09,090 --> 00:16:15,810
+giọng đọc hay là được rồi mọi người ạ. Quan trọng nhất là cái phần kịch bản của mình thôi.
+
+182
+00:16:15,810 --> 00:16:24,270
+Sau khi mà em đã chạy cái câu lệnh đó rồi á thì nó đã tự động viết cho em, nó tự động gen ra cái skill luôn nè.
+
+183
+00:16:24,270 --> 00:16:29,950
+Bây giờ thì nếu mà em muốn lưu thì em chỉ cần việc bấm lưu thôi. Nhưng mà trước khi lưu á thì em sẽ đọc lại nha.
+
+184
+00:16:29,950 --> 00:16:33,650
+Bởi vì ở đây nó chỉ mới ra cái bản đầu tiên thôi, nó đề xuất nè.
+
+185
+00:16:33,650 --> 00:16:45,000
+Bởi vì lúc nãy em yêu cầu nó là gợi ý các cái tên kênh ấy mọi người, nên là bây giờ nó đề xuất ra năm cái tên kênh và năm cái từ khóa thương hiệu cho kênh nè.
+
+186
+00:16:45,000 --> 00:16:55,110
+Thì nó đã viết ra theo cái phương án một, số một đầu tiên, viết để cho em tham khảo trước.
+
+187
+00:16:55,110 --> 00:17:02,310
+Và nếu như em muốn thay đổi chọn cái số khác á thì em chỉ cần việc nhập số vào thôi, thì nó sẽ viết lại cho em thôi và em lưu thôi.
+
+188
+00:17:02,310 --> 00:17:10,310
+Nhưng bây giờ mặc định thì em chọn một thôi nha mọi người, đấy để cho nó nhanh, bởi vì nó đã ra rồi mà.
+
+189
+00:17:10,310 --> 00:17:19,310
+Bây giờ em chỉ cần việc bấm cái nút lưu thôi thì nó sẽ tự động lưu cái skill này vào skill con Claude AI của em luôn nha.
+
+190
+00:17:19,310 --> 00:17:22,310
+Không cần phải là tải hay gì cả.
+
+191
+00:17:22,310 --> 00:17:29,310
+Và ở dưới này thì nó hướng dẫn cách dùng thôi mọi người, cái này thì mấy bác đều rõ hết rồi.
+
+192
+00:17:29,310 --> 00:17:34,960
+Giờ em bấm lưu skill nè, thì nó sẽ tự động lưu skill lên.
+
+193
+00:17:34,960 --> 00:17:43,960
+Và ví dụ như mấy bác không muốn tự động lưu như này mà mấy bác muốn cho nó ra file zip và tải về, mình muốn tự tải lên thì cũng được.
+
+194
+00:17:43,960 --> 00:17:53,960
+Ghi câu lệnh như em nè, thì em yêu cầu như này để cho nó ra file zip để em up lên cái mô tả cho mọi người tham khảo cái em gen, em train hôm nay luôn.
+
+195
+00:17:53,960 --> 00:18:01,140
+Để cho anh em có thể tham khảo, mấy bác có thể lấy làm luôn cũng được, không thì mấy bác xem em xong rồi mấy bác tự thực hành,
+
+196
+00:18:01,140 --> 00:18:07,840
+tự thực chiến lại nha. Em vẫn ưu tiên là em khuyên mọi người là nên phải tự làm, tự thực chiến thì mới dễ dàng được nha.
+
+197
+00:18:07,840 --> 00:18:16,840
+Để sau này mọi người còn làm rất là nhiều thứ nữa chứ không phải làm một cách này đâu. Mấy bác làm lên một kênh rồi thì mấy bác nhân bản làm thêm những kênh khác, những ngách khác nữa.
+
+198
+00:18:16,840 --> 00:18:20,360
+Ở cả ba thị trường Việt, Nhật và Hàn.
+
+199
+00:18:20,360 --> 00:18:23,000
+Ba cái thị trường em luôn luôn khuyên mọi người và
+
+200
+00:18:23,000 --> 00:18:26,640
+nói chung là update hướng dẫn mọi người liên tục ấy.
+
+201
+00:18:26,640 --> 00:18:28,620
+Rất là nhiều anh em ở trong web của em
+
+202
+00:18:28,620 --> 00:18:32,120
+đa số anh em làm bây giờ hiện tại là làm hai kênh rồi đấy.
+
+203
+00:18:32,120 --> 00:18:36,020
+Chứ còn một kênh bật kiếm tiền thì quá bình thường đối với anh em rồi.
+
+204
+00:18:36,020 --> 00:18:37,680
+Thật sự là như vậy luôn.
+
+205
+00:18:37,680 --> 00:18:41,340
+Mấy bác lướt group thì thấy rất là nhiều anh em bật kiếm tiền mà.
+
+206
+00:18:41,340 --> 00:18:44,160
+Rồi ví dụ như nó ra như này thì bác tải về,
+
+207
+00:18:44,160 --> 00:18:46,840
+rồi tải lên con Claude thôi.
+
+208
+00:18:46,840 --> 00:18:52,080
+Cách tải thì em đã hướng dẫn rất nhiều rồi, nói chung là mọi người biết hết rồi nên là em không hướng dẫn lại nữa nha.
+
+209
+00:18:52,080 --> 00:18:54,000
+Mấy cái này quá đơn giản rồi.
+
+210
+00:18:54,000 --> 00:18:58,840
+Tiếp tục là em sẽ làm mẫu thêm cái chỗ đoạn gọi skill và viết kịch bản nha.
+
+211
+00:18:58,840 --> 00:19:03,080
+Thì mấy bác gọi skill ra xong rồi mấy bác ghi là gợi ý đề tài,
+
+212
+00:19:03,080 --> 00:19:06,340
+hoặc là mọi người để trống luôn, chỉ cần gọi skill thôi.
+
+213
+00:19:06,340 --> 00:19:11,680
+Thì lúc này nó sẽ tự động mặc định là ra 10 cái chủ đề đề tài gợi ý cho mình nha.
+
+214
+00:19:11,680 --> 00:19:15,180
+Còn nếu mấy bác muốn nhiều hơn, ví dụ như 20 hay là 30,
+
+215
+00:19:15,180 --> 00:19:25,240
+thì mấy bác ghi ra thì nó sẽ ra đúng 20 cái đó. Ví dụ như em là em ghi 20 nè, bây giờ thì nó sẽ đọc qua cái skill, sau đó thì nó sẽ viết luôn.
+
+216
+00:19:25,240 --> 00:19:32,700
+Đấy, bây giờ thì nó sẽ viết đủ 20 cái chủ đề, cái tiêu đề cho mình chọn thôi mọi người ạ.
+
+217
+00:19:32,700 --> 00:19:41,260
+Cái này là em đang để viết kịch bản mới thì em đã tạo một cái new chat mới rồi nha, em không có viết chung ở một cái lúc nãy trên đâu.
+
+218
+00:19:41,260 --> 00:19:52,260
+Kể cả mà mấy bác đã viết xong, ví dụ như đây là video đầu tiên của em đi, và sang video thứ hai thì mấy bác cũng nên tạo một cái new chat mới, viết tiếp mới nha, chứ đừng có viết chung một cái nha.
+
+219
+00:19:52,260 --> 00:20:00,000
+Thường mấy bác lầm tưởng là tưởng đâu mấy bác cứ viết chung là nó sẽ ngon, nhưng mà thật ra là nó sẽ không ngon đâu nha, mình sẽ tách ra.
+
+220
+00:20:00,000 --> 00:20:06,000
+Những đoạn chat mới để mình làm mỗi kịch bản mới nha mọi người.
+
+221
+00:20:06,000 --> 00:20:12,000
+Rồi thì bây giờ nó đã gen ra cho em 20 cái chủ đề khác nhau nè.
+
+222
+00:20:12,000 --> 00:20:17,000
+Và nó phân chia luôn cái nào nhóm nào luôn, ví dụ như nhóm A là nhóm đường huyết, mạch máu nè,
+
+223
+00:20:17,000 --> 00:20:23,000
+nhóm mẹo thực hành, rồi nhóm minh oan tin đồn, đấy dạng kiểu drama này kia nữa nha.
+
+224
+00:20:23,000 --> 00:20:29,000
+Rất rất là nhiều thứ thì mấy bác có thể chọn thôi, bám theo đối thủ hoặc là mọi người bám theo đối thủ mọi người làm.
+
+225
+00:20:29,000 --> 00:20:33,800
+Lúc nãy mà viết kịch bản á, lúc nãy gọi skill á,
+
+226
+00:20:33,800 --> 00:20:45,000
+thì em gọi ví dụ mấy bác muốn bám theo một video cao view của đối thủ đi thì mấy bác cứ gọi skill rồi dán cái kịch bản vào cộng với tiêu đề của video đó vào thôi rồi cho nó chạy thì nó sẽ viết ra kịch bản luôn.
+
+227
+00:20:45,000 --> 00:20:49,000
+Còn bây giờ thì em yêu cầu gợi ý thì nó sẽ gợi ý thôi mọi người.
+
+228
+00:20:49,000 --> 00:20:55,000
+Giờ em giả sử em chọn cái chủ đề thứ hai, em ghi số 2 thôi, bấm enter một phát nè.
+
+229
+00:20:55,000 --> 00:21:03,320
+Bây giờ thì nó sẽ gen ra kịch bản cho em thôi. Đây là em tua nhanh nha, chứ để chờ nó viết kịch bản thì cũng khá là lâu á, bởi vì nó phân tích rất rất là lâu nha mọi người.
+
+230
+00:21:03,320 --> 00:21:14,940
+Đấy, cuối cùng thì em tua nhanh ra thì nó đã viết xong và nó có tóm tắt lại bao nhiêu ký tự, bao nhiêu từ, các kiểu này, và bấm vào cái file này thì đầu tiên là phần kịch bản nha.
+
+231
+00:21:14,940 --> 00:21:23,620
+Đây, kịch bản xuống dưới này. Rồi dưới này là những cái tóm tắt ở phần trên đấy mọi người, cái tóm tắt của kịch bản nó đã viết có những cái gì á.
+
+232
+00:21:23,620 --> 00:21:27,620
+Rồi tiếp theo là ở dưới là tiêu đề nè và text trong thumb.
+
+233
+00:21:27,620 --> 00:21:33,620
+Text trong thumb này có nghĩa là đây nè, cái text ở cái thumb này mọi người, cái chữ trong thumb á.
+
+234
+00:21:33,620 --> 00:21:41,620
+Thì mấy bác mà muốn làm theo kiểu như cái phong cách màu chữ giống đối thủ thì mấy bác xem cái video clone thumb của em nha, em đã có hướng dẫn rồi đấy.
+
+235
+00:21:41,620 --> 00:21:44,620
+là được, đấy.
+
+236
+00:21:44,620 --> 00:21:47,620
+Rồi ở dưới là có mô tả rồi từ khóa các thứ thôi.
+
+237
+00:21:47,620 --> 00:21:49,620
+Đấy, cái này thì ra hết rồi.
+
+238
+00:21:49,620 --> 00:21:52,600
+Đấy nếu mấy bác mà không hiểu thì mấy bác đem qua dịch thôi, em cũng đâu hiểu đâu.
+
+239
+00:21:52,600 --> 00:21:55,560
+Ví dụ như em đem cái kia em dịch nè,
+
+240
+00:21:55,560 --> 00:21:58,240
+đây là danh sách những cái xác minh nè,
+
+241
+00:21:58,240 --> 00:22:00,140
+xác minh lại trong kịch bản của mình,
+
+242
+00:22:00,140 --> 00:22:01,140
+viết có đúng hay không
+
+243
+00:22:01,140 --> 00:22:03,140
+và có đúng sự thật này kia không á.
+
+244
+00:22:03,140 --> 00:22:06,470
+Đấy, cái đó là vấn đề chất lượng để giữ chân người xem nha mọi người.
+
+245
+00:22:06,470 --> 00:22:13,130
+Rồi cái này thì là ra được hơn 9.000 từ và độ dài thì ước lượng là tầm 28 phút nè,
+
+246
+00:22:13,130 --> 00:22:19,790
+28 phút 9 nè. Thì cái đó đương nhiên là ước lượng thôi nha, chứ không phải là chính xác là 28 phút đâu nha mấy bác.
+
+247
+00:22:19,790 --> 00:22:26,470
+Mình phải cho AI đọc và tùy theo cái tốc độ điều chỉnh ở trong cái voice nữa nha,
+
+248
+00:22:26,470 --> 00:22:33,810
+chứ không phải là mấy bác thấy vậy mấy bác gen ra thấy lúc dài lúc ngắn thì mấy bác lại thắc mắc nữa.
+
+249
+00:22:33,810 --> 00:22:42,280
+현미밥, 사골 국물... 이 세 가지가 여러분의 콩팥 필터를 망가뜨릴 수 있습니다.
+
+250
+00:22:42,280 --> 00:22:47,090
+Vừa rồi thì em nghe lại cái giọng của kênh đối thủ này. Nếu mà mọi người muốn clone á,
+
+251
+00:22:47,090 --> 00:22:53,090
+thì như em nói rồi, thì mọi người clone bình thường thôi
+
+252
+00:22:53,090 --> 00:22:57,090
+Còn bây giờ thì em sẽ dùng cái giọng ElevenLabs cho nó nhanh nha.
+
+253
+00:22:57,090 --> 00:23:08,000
+Cũng như là đa số ngách sức khỏe ở bên Hàn thì em dùng ElevenLabs cả mọi người ạ.
+
+254
+00:23:08,000 --> 00:23:12,470
+Rồi em bấm vào Voices nè, vào web ElevenLabs nha, vào bộ lọc.
+
+255
+00:23:12,470 --> 00:23:16,470
+Thì đây là làm thị trường Hàn Quốc đúng không, thì đương nhiên là chọn quốc gia là Hàn Quốc rồi.
+
+256
+00:23:16,470 --> 00:23:18,470
+Và cái chỗ này mấy bác không hiểu thì dịch ra thôi, em cũng không hiểu đâu.
+
+257
+00:23:18,470 --> 00:23:20,470
+Em chọn giọng tiêu chuẩn nè.
+
+258
+00:23:20,470 --> 00:23:28,470
+Cái này tùy mọi người nha, rồi những cái chỗ này thì em sẽ chọn là giáo dục nha, mục giáo dục, bởi vì cái dạng này là sức khỏe, hướng dẫn giáo dục này kia thì nó sẽ vào cái dạng giáo dục nha.
+
+259
+00:23:28,470 --> 00:23:34,470
+Đấy rồi mình sẽ nghe qua tất cả các voice.
+
+260
+00:23:34,470 --> 00:23:42,470
+우주의 가장... 관계에서 불행을... 새로운 기술을 사용할...
+
+261
+00:23:42,470 --> 00:23:50,470
+모든 기회는 위기를 내포하고 모든 위기는 기회를 내포한다.
+
+262
+00:23:50,470 --> 00:23:56,470
+Đó thì mấy bác cứ nghe qua hết tất cả các voice trên này xem cái nào hợp rồi mấy bác lấy thôi, có rất rất là nhiều voice nha. Thì ví dụ như em sẽ thấy cái này hợp đi, cái vừa rồi nè, cái thứ 4 này nha.
+
+263
+00:23:56,470 --> 00:23:58,470
+Đấy thì em sẽ lấy cái này em làm luôn.
+
+264
+00:23:58,470 --> 00:24:03,470
+Rồi thì em sẽ copy Voice ID, bấm vào dấu ba chấm, copy Voice ID nè.
+
+265
+00:24:03,470 --> 00:24:05,840
+Em sẽ vào tool của em em làm thôi mọi người.
+
+266
+00:24:05,840 --> 00:24:09,640
+Cái tool này thì chắc em không cần giới thiệu quá nhiều nữa ha.
+
+267
+00:24:09,640 --> 00:24:13,840
+Chắc nhiều bác dùng của em chắc cũng gần hai năm luôn rồi đấy.
+
+268
+00:24:13,840 --> 00:24:19,140
+À cái ElevenLabs này thì nó cũng vừa update cái model v4 thì ở bên tool nó cũng có nha.
+
+269
+00:24:19,140 --> 00:24:22,640
+Nói chung là cái tool á là API từ web ra mọi người ạ.
+
+270
+00:24:22,640 --> 00:24:31,000
+Cái web như thế nào thì tool nó như thế thôi. Tool thì dùng để tiết kiệm chi phí và tốc độ, nói chung là tiết kiệm tài nguyên và thời gian để mình gen ra thôi chứ không có gì hết.
+
+271
+00:24:31,000 --> 00:24:35,640
+Mình dùng web thì tốn rất là nhiều tiền tài nguyên nha.
+
+272
+00:24:35,640 --> 00:24:40,640
+Mấy bác dùng voice nào thì mình sẽ set theo cái thông số voice đó ở trên web cho nó chuẩn nha.
+
+273
+00:24:40,640 --> 00:24:49,640
+Em thấy cái chỗ này có một số bác dùng tool thì hơi bị nhầm ấy, nên là ra nhiều lúc cái giọng nó bị sai á nên mấy bác không biết fix như thế nào.
+
+274
+00:24:49,640 --> 00:24:53,640
+Thì đây nè, mấy bác bấm vào Use Voice rồi đúng không, thì ngay chỗ model của mỗi voice thì nó có gợi ý một cái model tương thích.
+
+275
+00:24:53,640 --> 00:24:57,640
+Ví dụ như cái voice này nó có model là Eleven Multilingual v2 nè,
+
+276
+00:24:57,640 --> 00:25:05,640
+thì bên tool thì em cũng sẽ chọn đúng theo cái model đó luôn nha.
+
+277
+00:25:05,640 --> 00:25:09,640
+Như tiếng Việt thì nó ưu tiên model v3,
+
+278
+00:25:09,640 --> 00:25:13,640
+nhưng mà mình chọn model v2 thì nó sẽ đọc sai,
+
+279
+00:25:13,640 --> 00:25:17,640
+và nhiều lúc nó sẽ đọc ra tiếng Thái Lan luôn.
+
+280
+00:25:17,640 --> 00:25:21,900
+Nên là nhiều bác bị nhầm chỗ đó nha, nên là mình phải set chuẩn theo cái web nha.
+
+281
+00:25:21,900 --> 00:25:26,980
+Cái này là API từ web nó sang, mình phải giống 100% cả, mình phải set theo.
+
+282
+00:25:26,980 --> 00:25:34,600
+Tiếp tục là các cái thông số ở dưới này: tốc độ, sự độ ổn định và âm thanh này kia, thì mình cũng phải set theo các thông số này nha.
+
+283
+00:25:34,600 --> 00:25:37,700
+Ví dụ như tốc độ bên này là 0.96 nè, em cũng set theo luôn.
+
+284
+00:25:37,700 --> 00:25:44,400
+Và set xong rồi á thì ở bên tool thì nhớ tích vào cái ô vuông là Change Voice Settings thì nó mới nhận được cái thông số đó nha.
+
+285
+00:25:44,400 --> 00:25:48,400
+Mấy bác mà set mà không tích vào á thì nó sẽ không nhận được đâu nha.
+
+286
+00:25:48,400 --> 00:25:52,400
+Đó, về phần cơ bản dùng tool này đơn giản như vậy thôi mấy bác, không có gì cả.
+
+287
+00:25:52,400 --> 00:25:56,400
+Xong rồi em sẽ bấm Start cho nó chạy để nó làm nó gen ra thôi.
+
+288
+00:25:56,400 --> 00:26:01,400
+Thì em hướng dẫn lại một số bác đang dùng tool của em để cho rõ hơn thôi,
+
+289
+00:26:01,400 --> 00:26:06,400
+chứ còn những anh em dùng lâu rồi thì mấy bác biết hết rồi, không cần phải nói nhiều nữa.
+
+290
+00:26:06,400 --> 00:26:11,410
+Sau khi gen xong rồi thì em sẽ gộp lại, em bấm Join Voice, em sẽ nghe qua thử nha.
+
+291
+00:26:11,410 --> 00:26:18,610
+매일 아침 찜기에 쪄서 드시는 그 고구마... 요즘 유튜브를 켜면 이런 영상이 자꾸 뜨지요? 고구마가 콩팥을 망가뜨린다...
+
+292
+00:26:18,610 --> 00:26:26,180
+Đó, như vậy là đã xong về phần viết kịch bản và tạo giọng đọc rồi nha mọi người.
+
+293
+00:26:26,180 --> 00:26:37,580
+Video này thì em có thời gian rảnh nên em hướng dẫn lại cái quy trình train prompt về cái ngách nhỏ sức khỏe thị trường Hàn như này để mấy bác có thể tham khảo thêm.
+
+294
+00:26:37,580 --> 00:26:42,680
+Còn về cách edit thì cái này quá đơn giản rồi, mấy bác cứ search theo những cái từ khóa.
+
+295
+00:26:42,680 --> 00:26:48,420
+Đây, cái kênh này em đang xem có quảng cáo luôn, đang bật kiếm tiền nè.
+
+296
+00:26:48,420 --> 00:26:52,740
+Kênh này cũng hơn 1k sub rồi mọi người ạ, chắc chắn là bật kiếm tiền luôn.
+
+297
+00:26:52,740 --> 00:26:58,780
+Thì mấy bác search cái từ khóa, ví dụ như mấy bác làm về chủ đề táo hay là cà rốt,
+
+298
+00:26:58,780 --> 00:27:07,920
+thì search từ khóa lấy những hình ảnh, video tự nhiên về cái sản phẩm đó, rồi mấy bác edit vào thôi, rất đơn giản.
+
+299
+00:27:07,920 --> 00:27:16,080
+Đây nè, mọi người có thể xem lại video này, em cũng có hướng dẫn cách edit lấy những video tự nhiên ấy.
+
+300
+00:27:16,080 --> 00:27:25,120
+Và ở dưới mô tả thì em có để cái link nè, đây cái link này, thì mấy bác có thể vào lấy những cái nguồn tự nhiên miễn phí này.
+
+301
+00:27:25,120 --> 00:27:30,730
+Thì thôi để em copy tất cả cái link này em để ở mô tả video này luôn cũng được.
+
+302
+00:27:30,730 --> 00:27:38,730
+Còn về phần edit video thì em bỏ qua em không làm mẫu nữa nha, bởi vì cái này em hướng dẫn rất rất là nhiều video rồi.
+
+303
+00:27:38,730 --> 00:27:45,730
+Và nó còn rất đơn giản cả mọi người, không có gì hết, mấy bác tự làm nha. Cái quan trọng và khó nhất là có được cái ngách để làm.
+
+304
+00:27:45,730 --> 00:27:53,730
+Và tiếp đó là làm sao để có được kịch bản tốt, chất lượng thôi. Còn lại mọi thứ khác thì đơn giản thôi mọi người.
+
+305
+00:27:53,730 --> 00:27:58,060
+Rồi ok, em cảm ơn tất cả mọi người đã xem video đến đây nha.

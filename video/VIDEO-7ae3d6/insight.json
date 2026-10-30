@@ -1,0 +1,82 @@
+{
+  "sku": "VIDEO-7ae3d6",
+  "title": "SHARE NGÁCH VIEW VIỆT (KHÔNG BAO GIỜ BỊ 0 VIEW HOẶC KHÔNG CÓ VIEW) LUÔN LUÔN TRENDS",
+  "actual_topic": "Phân tích ngách quân sự nước ngoài tại thị trường Việt Nam: Dùng kênh cổ, hình ảnh AI, giọng clone và quy tắc không làm tin Việt Nam",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Khám Kênh & Tối Ưu Tăng Trưởng",
+  "niche_id": "faceless-general",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Tác giả chia sẻ ngách quân sự ở thị trường Việt Nam, kênh mẫu là kênh cổ có view rất cao.",
+    "Kênh mẫu làm nội dung chiến tranh quân sự giữa Campuchia và Thái Lan, hình ảnh hoàn toàn bằng AI, mới làm cách đây một đến hai tháng và gần đây mới ra nhiều video.",
+    "Về giọng đọc, nên clone theo kênh này hoặc các kênh thuyết minh, đừng dùng giọng Eleven Lab.",
+    "Quan trọng nhất là kịch bản và tiêu đề phải đủ giật tít để câu view, còn nội dung bên trong chủ yếu là hình ảnh AI.",
+    "Cảnh báo: đừng đưa tin chính trị, quân sự về Việt Nam vì đã có nhiều người bị bắt do đưa tin sai hoặc giật tít cao view; nên đưa tin về nước ngoài như Thái Lan, Campuchia."
+  ],
+  "edit_sop": {
+    "primary": "Ngách quân sự thị trường Việt: tin chiến sự nước ngoài, kênh cổ, hình AI, giọng clone",
+    "additional": [
+      "Kênh mẫu dùng kênh cổ, làm tin chiến tranh quân sự Campuchia và Thái Lan, hình ảnh hoàn toàn bằng AI",
+      "Quan trọng nhất là kịch bản và tiêu đề đủ giật tích để câu view",
+      "Dùng giọng clone theo kênh mẫu hoặc theo các kênh thuyết minh",
+      "Chỉ đưa tin quân sự về nước ngoài như Thái Lan, Campuchia, không đưa tin về Việt Nam",
+      "Link kênh mẫu để ở phần bổ sung cho mọi người tham khảo"
+    ]
+  },
+  "avoid_flags": [
+    "Không dùng giọng ElevenLabs cho dạng này, nên dùng giọng clone",
+    "Không làm chính trị, quân sự về Việt Nam vì sẽ bị cảnh báo",
+    "Không đưa sai thông tin hay giật tích quá mức vì gần đây nhiều người bị bắt",
+    "Làm ở thị trường nước ngoài thì không sao, đưa tin ở Việt Nam thì không được"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "ElevenLabs",
+    "Vbee"
+  ],
+  "channels_mentioned": [
+    "@militarytactics113"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu kênh mẫu ngách quân sự tại thị trường Việt Nam sử dụng kênh cổ view cao"
+    },
+    {
+      "time": "00:55",
+      "seconds": 55,
+      "label": "Phân tích tần suất đăng bài và hướng dẫn dùng giọng clone thay vì ElevenLabs"
+    },
+    {
+      "time": "01:20",
+      "seconds": 80,
+      "label": "Vai trò quyết định của kịch bản, tiêu đề giật tít và hình ảnh tạo hoàn toàn bằng AI"
+    },
+    {
+      "time": "01:53",
+      "seconds": 113,
+      "label": "Cảnh báo bắt buộc: Chỉ đưa tin nước ngoài (Thái Lan, Campuchia), không làm về Việt Nam"
+    },
+    {
+      "time": "02:20",
+      "seconds": 140,
+      "label": "Lưu ý rủi ro pháp lý khi đưa tin sai sự thật trong nước và cách làm an toàn"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-7ae3d6/transcript.txt",
+  "sop_steps": [
+    "Kênh mẫu dùng kênh cổ, làm tin chiến tranh quân sự Campuchia và Thái Lan, hình ảnh hoàn toàn bằng AI",
+    "Quan trọng nhất là kịch bản và tiêu đề đủ giật tích để câu view",
+    "Dùng giọng clone theo kênh mẫu hoặc theo các kênh thuyết minh",
+    "Chỉ đưa tin quân sự về nước ngoài như Thái Lan, Campuchia, không đưa tin về Việt Nam",
+    "Link kênh mẫu để ở phần bổ sung cho mọi người tham khảo"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

@@ -770,7 +770,12 @@
         "VIDEO-573b94",
         "VIDEO-3bba93",
         "VIDEO-d19b55",
-        "VIDEO-73c662"
+        "VIDEO-73c662",
+        "VIDEO-e91589",
+        "VIDEO-aacc70",
+        "VIDEO-f59aa7",
+        "VIDEO-39ae49",
+        "VIDEO-ab1137"
       ],
       "mauSach": [
         "@長生きの秘訣22",
@@ -1400,7 +1405,9 @@
         "VIDEO-6657cd",
         "VIDEO-5c2c51",
         "VIDEO-9c557d",
-        "VIDEO-ca7ecf"
+        "VIDEO-ca7ecf",
+        "VIDEO-82f8a8",
+        "VIDEO-e91589"
       ],
       "mauSach": [
         "@シニア流人生の教え",
@@ -1547,7 +1554,11 @@
         "VIDEO-f72ddb",
         "VIDEO-3bba93",
         "VIDEO-f97cd2",
-        "VIDEO-c0353f"
+        "VIDEO-c0353f",
+        "VIDEO-82f8a8",
+        "VIDEO-f59aa7",
+        "VIDEO-39ae49",
+        "VIDEO-ab1137"
       ],
       "mauSach": [
         "@シニア流人生の教え",
@@ -2380,9 +2391,9 @@
       "skus": [
         "VIDEO-8b69c9",
         "VIDEO-502960",
-        "VIDEO-82f8a8",
         "VIDEO-f72ddb",
-        "VIDEO-c0353f"
+        "VIDEO-c0353f",
+        "VIDEO-e91589"
       ],
       "mauSach": [
         "@江戸怪異ものがたり",
@@ -2536,7 +2547,10 @@
         "VIDEO-573b94",
         "VIDEO-3bba93",
         "VIDEO-d19b55",
-        "VIDEO-73c662"
+        "VIDEO-73c662",
+        "VIDEO-a59a5e",
+        "VIDEO-aacc70",
+        "VIDEO-ab1137"
       ],
       "mauSach": [
         "@시니어살림노트",
@@ -2702,7 +2716,6 @@
         "🇻🇳 Việt"
       ],
       "skus": [
-        "VIDEO-2aa1f7",
         "VIDEO-af90f4"
       ],
       "docs": [
@@ -2904,7 +2917,9 @@
         "VIDEO-42f5cf",
         "VIDEO-94631c",
         "VIDEO-a8cd5b",
-        "VIDEO-16241d"
+        "VIDEO-16241d",
+        "VIDEO-b380a1",
+        "VIDEO-39ae49"
       ],
       "docs": [
         "docs/NOI-BO/prompt/north-effect.md",
@@ -3085,7 +3100,8 @@
         "VIDEO-42f5cf",
         "VIDEO-94631c",
         "VIDEO-a8cd5b",
-        "VIDEO-16241d"
+        "VIDEO-16241d",
+        "VIDEO-2aa1f7"
       ],
       "mauBan": [
         "@thecoldwartales",
@@ -3309,7 +3325,8 @@
         "VIDEO-6657cd",
         "VIDEO-5c2c51",
         "VIDEO-d4f7e6",
-        "VIDEO-5a4861"
+        "VIDEO-5a4861",
+        "VIDEO-b380a1"
       ],
       "docs": [
         "docs/NOI-BO/prompt/triet-ly.md",
@@ -3462,7 +3479,6 @@
         "🇬🇧 Anh"
       ],
       "skus": [
-        "VIDEO-2aa1f7",
         "VIDEO-ffccd2",
         "VIDEO-f72ddb",
         "VIDEO-a8cd5b",
@@ -4243,7 +4259,6 @@
         "🇺🇸 US"
       ],
       "skus": [
-        "VIDEO-2aa1f7",
         "VIDEO-f72ddb"
       ],
       "docs": [
@@ -4355,7 +4370,8 @@
         "VIDEO-3936ab",
         "VIDEO-1ead1c",
         "VIDEO-94631c",
-        "VIDEO-6a7a0e"
+        "VIDEO-6a7a0e",
+        "VIDEO-53a547"
       ],
       "docs": [
         "docs/NOI-BO/prompt/tien-su-veo3.md",
@@ -4524,9 +4540,10 @@
         "🇬🇧 Anh"
       ],
       "skus": [
-        "VIDEO-2aa1f7",
         "VIDEO-1ead1c",
-        "VIDEO-6a7a0e"
+        "VIDEO-6a7a0e",
+        "VIDEO-a59a5e",
+        "VIDEO-53a547"
       ],
       "docs": [
         "docs/NOI-BO/prompt/sinh-hoc-combat.md",
@@ -4687,8 +4704,6 @@
         "🇯🇵 Nhật"
       ],
       "skus": [
-        "VIDEO-e91589",
-        "VIDEO-aacc70",
         "VIDEO-49a108",
         "VIDEO-eb5891",
         "VIDEO-227162",
@@ -5061,7 +5076,11 @@
         "VIDEO-4483df",
         "VIDEO-ad6a82",
         "VIDEO-fc62eb",
-        "VIDEO-27e4e0"
+        "VIDEO-27e4e0",
+        "VIDEO-a59a5e",
+        "VIDEO-82f8a8",
+        "VIDEO-2aa1f7",
+        "VIDEO-ab1137"
       ],
       "mauSach": [
         "@evievshistory",
@@ -6128,7 +6147,10 @@
         "docs/NOI-BO/prompt/ban-do-120-ngach-va-1500-kenh-toan-cuc-2026.md"
       ],
       "skus": [
-        "VIDEO-ab1137"
+        "VIDEO-23723f",
+        "VIDEO-96b420",
+        "VIDEO-0963e3",
+        "VIDEO-77e80c"
       ],
       "subNiches120": [
         {
@@ -6504,7 +6526,6 @@
       ],
       "skus": [
         "VIDEO-502960",
-        "VIDEO-82f8a8",
         "VIDEO-3df94e"
       ],
       "subNiches120": [
@@ -6905,7 +6926,11 @@
       ],
       "skus": [
         "VIDEO-817ae6",
-        "VIDEO-33f474"
+        "VIDEO-33f474",
+        "VIDEO-d124e8",
+        "VIDEO-ab68db",
+        "VIDEO-f2ebfb",
+        "VIDEO-043b07"
       ],
       "subNiches120": [
         {
@@ -7162,10 +7187,10 @@
     }
   ],
   "thiTruongXanh": {
-    "US / Tiếng Anh (RPM $8.00 – $32.00)": "Everyday History EN (20 mẫu sống, 174 SKU), Stickman / 2D Paint Explainer (18 mẫu sống [4/4 ads breakout], 6 SKU), Kinh Thánh EN (7 mẫu sống, 10 SKU), Wildlife documentary (12 mẫu sống, 12 SKU), Địa chính trị / Bản đồ EN (12 mẫu sống, 9 SKU), Khảo cổ & Văn minh cổ đại (10 mẫu sống, 8 SKU), True Origin EN (8 mẫu sống, 4 SKU), Food History EN (10 mẫu sống, 5 SKU), Khoa học EN (13 mẫu sống, 5 SKU), UFO/Roswell EN (7 mẫu sống, 2 SKU), Lịch sử Quân sự EN (16 mẫu sống, 14 SKU), Kinh tế Rewind EN (6 mẫu sống, 5 SKU), Dark Crime & Bodycam (8 mẫu sống, 2 SKU), Điện ảnh AI 4K (15 mẫu sống, 3 SKU), Discovery Địa lý 4K (14 mẫu sống, 2 SKU), Kiểm soát sinh học / chiến thuật (4 mẫu sống, 3 SKU)",
-    "Nhật Bản (RPM $6.00 – $11.00)": "Phật pháp Nhật (3 mẫu sống, 9 SKU), Danh ngôn/vĩ nhân (12 mẫu sống, 14 SKU), Chuyện đời senior (14 mẫu sống [757K breakout], 13 SKU), Sức khỏe Nhật (15 mẫu sống, 16 SKU), Tâm linh/luật hấp dẫn (5 mẫu sống, 9 SKU), Kinh tế Nhật (6 mẫu sống, 5 SKU), Kaidan Nhật (4 mẫu sống, 5 SKU), Triết lý / khắc kỷ (15 mẫu sống, 13 SKU)",
-    "Hàn Quốc (RPM $5.25 – $9.00)": "Senior Wisdom KR (17 mẫu sống, 16 SKU), Tâm linh/phúc lộc Hàn (5 mẫu sống, 11 SKU), Sức khỏe senior Hàn (11 mẫu sống, 27 SKU), Phật pháp Hàn (4 mẫu sống, 7 SKU), Kinh tế Hàn (7 mẫu sống, 10 SKU), Drama/야담 Hàn (6 mẫu sống, 4 SKU), Đứa trẻ Hàn (4 mẫu sống, 2 SKU)",
-    "Việt Nam & Đa quốc gia (RPM $1.50 – $8.50)": "Phong thủy VN (5 mẫu sống, 22 SKU), Sức khỏe VN (17 mẫu sống, 23 SKU), Chúa/Phúc âm (4 mẫu sống, 4 SKU), Cơ khí / Nhà máy (8 mẫu sống, 2 SKU), Reup hoạt hình (7 mẫu sống, 24 SKU), Sinh tồn VN (9 mẫu sống, 3 SKU), Học Tiếng Anh ESL (9 mẫu sống, 1 SKU), Hoạt hình 3D AI (9 mẫu sống, 2 SKU), Âm nhạc AI / Cổ phong (4 mẫu sống, 2 SKU)"
+    "US / Tiếng Anh (RPM $8.00 – $32.00)": "Everyday History EN (20 mẫu sống, 178 SKU), Stickman / 2D Paint Explainer (18 mẫu sống [4/4 ads breakout], 6 SKU), Kinh Thánh EN (7 mẫu sống, 10 SKU), Wildlife documentary (12 mẫu sống, 10 SKU), Địa chính trị / Bản đồ EN (12 mẫu sống, 11 SKU), Khảo cổ & Văn minh cổ đại (10 mẫu sống, 9 SKU), True Origin EN (8 mẫu sống, 4 SKU), Food History EN (10 mẫu sống, 5 SKU), Khoa học EN (13 mẫu sống, 5 SKU), UFO/Roswell EN (7 mẫu sống, 2 SKU), Lịch sử Quân sự EN (16 mẫu sống, 15 SKU), Kinh tế Rewind EN (6 mẫu sống, 4 SKU), Dark Crime & Bodycam (8 mẫu sống, 2 SKU), Điện ảnh AI 4K (15 mẫu sống, 2 SKU), Discovery Địa lý 4K (14 mẫu sống, 2 SKU), Kiểm soát sinh học / chiến thuật (4 mẫu sống, 4 SKU)",
+    "Nhật Bản (RPM $6.00 – $11.00)": "Phật pháp Nhật (3 mẫu sống, 9 SKU), Danh ngôn/vĩ nhân (12 mẫu sống, 16 SKU), Chuyện đời senior (14 mẫu sống [757K breakout], 17 SKU), Sức khỏe Nhật (15 mẫu sống, 21 SKU), Tâm linh/luật hấp dẫn (5 mẫu sống, 9 SKU), Kinh tế Nhật (6 mẫu sống, 5 SKU), Kaidan Nhật (4 mẫu sống, 5 SKU), Triết lý / khắc kỷ (15 mẫu sống, 14 SKU)",
+    "Hàn Quốc (RPM $5.25 – $9.00)": "Senior Wisdom KR (17 mẫu sống, 16 SKU), Tâm linh/phúc lộc Hàn (5 mẫu sống, 11 SKU), Sức khỏe senior Hàn (11 mẫu sống, 30 SKU), Phật pháp Hàn (4 mẫu sống, 7 SKU), Kinh tế Hàn (7 mẫu sống, 10 SKU), Drama/야담 Hàn (6 mẫu sống, 4 SKU), Đứa trẻ Hàn (4 mẫu sống, 1 SKU)",
+    "Việt Nam & Đa quốc gia (RPM $1.50 – $8.50)": "Phong thủy VN (5 mẫu sống, 22 SKU), Sức khỏe VN (17 mẫu sống, 23 SKU), Chúa/Phúc âm (4 mẫu sống, 4 SKU), Cơ khí / Nhà máy (8 mẫu sống, 1 SKU), Reup hoạt hình (7 mẫu sống, 24 SKU), Sinh tồn VN (9 mẫu sống, 3 SKU), Học Tiếng Anh ESL (9 mẫu sống, 4 SKU), Hoạt hình 3D AI (9 mẫu sống, 2 SKU), Âm nhạc AI / Cổ phong (4 mẫu sống, 6 SKU)"
   },
   "loiDataKho": [
     "@KapitalKompass-US gắn Kinh tế US — vidIQ trả kênh Jazz KR.",
@@ -7200,33 +7225,33 @@
   "chuaDoConLai": [],
   "rpmNote": "Không dùng RPM để gắn XANH. XANH = tăng trưởng sống trên kênh mẫu trong kho.",
   "bangXepHang": [
-    "#1 [UU_TIEN_SAN_XUAT] Everyday History EN (lịch sử đồ vật thường ngày) (H30): 20 mẫu sống (9 sạch + 11 phụ), 5 mẫu bẩn, 174 SKU bài học, RPM median $10.22",
+    "#1 [UU_TIEN_SAN_XUAT] Everyday History EN (lịch sử đồ vật thường ngày) (H30): 20 mẫu sống (9 sạch + 11 phụ), 5 mẫu bẩn, 178 SKU bài học, RPM median $10.22",
     "#2 [UU_TIEN_SAN_XUAT] Người que / Chill Dude / Nonagon (H25): 18 mẫu sống (13 sạch + 5 phụ), 2 mẫu bẩn, 6 SKU bài học, RPM median $10.50",
     "#3 [UU_TIEN_SAN_XUAT] Kinh Thánh EN (giáo dục) (H01): 7 mẫu sống (3 sạch + 4 phụ), 3 mẫu bẩn, 10 SKU bài học, RPM median $9.25",
-    "#4 [UU_TIEN_SAN_XUAT] Wildlife documentary / animal behavior / conservation (H29): 12 mẫu sống (8 sạch + 4 phụ), 1 mẫu bẩn, 12 SKU bài học, RPM median $9.50",
-    "#5 [UU_TIEN_SAN_XUAT] Địa chính trị EN (North Effect) (H18): 12 mẫu sống (8 sạch + 4 phụ), 0 mẫu bẩn, 9 SKU bài học, RPM median $10.00",
-    "#6 [UU_TIEN_SAN_XUAT] Khảo cổ học / Tiền sử & Nền văn minh Đã mất (Sumer, Anunnaki, Göbekli Tepe) (H27): 10 mẫu sống (8 sạch + 2 phụ), 2 mẫu bẩn, 8 SKU bài học, RPM median $11.50",
+    "#4 [UU_TIEN_SAN_XUAT] Wildlife documentary / animal behavior / conservation (H29): 12 mẫu sống (8 sạch + 4 phụ), 1 mẫu bẩn, 10 SKU bài học, RPM median $9.50",
+    "#5 [UU_TIEN_SAN_XUAT] Địa chính trị EN (North Effect) (H18): 12 mẫu sống (8 sạch + 4 phụ), 0 mẫu bẩn, 11 SKU bài học, RPM median $10.00",
+    "#6 [UU_TIEN_SAN_XUAT] Khảo cổ học / Tiền sử & Nền văn minh Đã mất (Sumer, Anunnaki, Göbekli Tepe) (H27): 10 mẫu sống (8 sạch + 2 phụ), 2 mẫu bẩn, 9 SKU bài học, RPM median $11.50",
     "#7 [UU_TIEN_SAN_XUAT] Phật pháp Nhật (H02): 3 mẫu sống (2 sạch + 1 phụ), 3 mẫu bẩn, 9 SKU bài học, RPM median $7.50",
-    "#8 [UU_TIEN_SAN_XUAT] Danh ngôn / trí tuệ cổ Nhật (H08): 12 mẫu sống (6 sạch + 6 phụ), 0 mẫu bẩn, 14 SKU bài học, RPM median $7.50",
+    "#8 [UU_TIEN_SAN_XUAT] Danh ngôn / trí tuệ cổ Nhật (H08): 12 mẫu sống (6 sạch + 6 phụ), 0 mẫu bẩn, 16 SKU bài học, RPM median $7.50",
     "#9 [UU_TIEN_SAN_XUAT] True Origin / Economic History EN (giải mã gốc tích) (H31): 8 mẫu sống (5 sạch + 3 phụ), 0 mẫu bẩn, 4 SKU bài học, RPM median $10.22",
     "#10 [UU_TIEN_SAN_XUAT] Food History EN (lịch sử thực phẩm) (H32): 10 mẫu sống (6 sạch + 4 phụ), 2 mẫu bẩn, 5 SKU bài học, RPM median $10.22",
-    "#11 [UU_TIEN_SAN_XUAT] Điện ảnh AI Dài tập / AI Film & Sci-Fi / Cổ trang Tiên hiệp 4K (H38): 15 mẫu sống (7 sạch + 8 phụ), 2 mẫu bẩn, 3 SKU bài học, RPM median $9.00",
-    "#12 [UU_TIEN_SAN_XUAT] Chuyện đời / kể chuyện senior Nhật (H09): 14 mẫu sống (7 sạch + 7 phụ), 0 mẫu bẩn, 13 SKU bài học, RPM median $7.50",
+    "#11 [UU_TIEN_SAN_XUAT] Điện ảnh AI Dài tập / AI Film & Sci-Fi / Cổ trang Tiên hiệp 4K (H38): 15 mẫu sống (7 sạch + 8 phụ), 2 mẫu bẩn, 2 SKU bài học, RPM median $9.00",
+    "#12 [UU_TIEN_SAN_XUAT] Chuyện đời / kể chuyện senior Nhật (H09): 14 mẫu sống (7 sạch + 7 phụ), 0 mẫu bẩn, 17 SKU bài học, RPM median $7.50",
     "#13 [WATCHLIST] Khoa học / Trái Đất EN (documentary thiên nhiên–vũ trụ) (H11): 13 mẫu sống (5 sạch + 8 phụ), 1 mẫu bẩn, 5 SKU bài học, RPM median $9.00",
-    "#14 [WATCHLIST] Lịch sử / quân sự (H19): 16 mẫu sống (9 sạch + 7 phụ), 2 mẫu bẩn, 14 SKU bài học, RPM median $9.50",
-    "#15 [WATCHLIST] Nhà máy sản xuất (H17): 8 mẫu sống (2 sạch + 6 phụ), 1 mẫu bẩn, 2 SKU bài học, RPM median $8.50",
-    "#16 [WATCHLIST] Quy luật kinh tế / Economy Rewind (H21): 6 mẫu sống (2 sạch + 4 phụ), 0 mẫu bẩn, 5 SKU bài học, RPM median $14.50",
+    "#14 [WATCHLIST] Lịch sử / quân sự (H19): 16 mẫu sống (9 sạch + 7 phụ), 2 mẫu bẩn, 15 SKU bài học, RPM median $9.50",
+    "#15 [WATCHLIST] Nhà máy sản xuất (H17): 8 mẫu sống (2 sạch + 6 phụ), 1 mẫu bẩn, 1 SKU bài học, RPM median $8.50",
+    "#16 [WATCHLIST] Quy luật kinh tế / Economy Rewind (H21): 6 mẫu sống (2 sạch + 4 phụ), 0 mẫu bẩn, 4 SKU bài học, RPM median $14.50",
     "#17 [WATCHLIST] Tội phạm Kinh tế / Dark Crime & Bodycam Điều tra (FOIA / The Paper Trail) (H35): 8 mẫu sống (6 sạch + 2 phụ), 2 mẫu bẩn, 2 SKU bài học, RPM median $13.50",
     "#18 [WATCHLIST] Senior Wisdom KR (không-bác-sĩ, tâm lý/tài chính/đời sống) (H34): 17 mẫu sống (5 sạch + 12 phụ), 1 mẫu bẩn, 16 SKU bài học, RPM median $6.25",
     "#19 [WATCHLIST] Discovery / Địa lý Tò mò / Khám phá Thế giới & Du lịch Quốc tế 4K (H39): 14 mẫu sống (5 sạch + 9 phụ), 2 mẫu bẩn, 2 SKU bài học, RPM median $9.50",
     "#20 [WATCHLIST] UFO / Alien / Roswell EN (đóng khung điều tra) (H33): 7 mẫu sống (3 sạch + 4 phụ), 2 mẫu bẩn, 2 SKU bài học, RPM median $10.50",
     "#21 [WATCHLIST] Phong thủy VN (H05): 5 mẫu sống (3 sạch + 2 phụ), 0 mẫu bẩn, 22 SKU bài học, RPM median $1.65",
-    "#22 [WATCHLIST] Sức khỏe Nhật (H03): 15 mẫu sống (5 sạch + 10 phụ), 1 mẫu bẩn, 16 SKU bài học, RPM median $7.50",
+    "#22 [WATCHLIST] Sức khỏe Nhật (H03): 15 mẫu sống (5 sạch + 10 phụ), 1 mẫu bẩn, 21 SKU bài học, RPM median $7.50",
     "#23 [WATCHLIST] Tâm linh / luật hấp dẫn (H07): 5 mẫu sống (4 sạch + 1 phụ), 4 mẫu bẩn, 9 SKU bài học, RPM median $6.50",
     "#24 [WATCHLIST] Tâm linh / phúc lộc Hàn (H10): 5 mẫu sống (2 sạch + 3 phụ), 4 mẫu bẩn, 11 SKU bài học, RPM median $5.50",
-    "#25 [WATCHLIST] Sức khỏe / sinh hoạt senior Hàn (H16): 11 mẫu sống (4 sạch + 7 phụ), 8 mẫu bẩn, 27 SKU bài học, RPM median $5.80",
+    "#25 [WATCHLIST] Sức khỏe / sinh hoạt senior Hàn (H16): 11 mẫu sống (4 sạch + 7 phụ), 8 mẫu bẩn, 30 SKU bài học, RPM median $5.80",
     "#26 [WATCHLIST] Chúa / Phúc âm Hàn (H06): 4 mẫu sống (2 sạch + 2 phụ), 0 mẫu bẩn, 4 SKU bài học, RPM median $8.50",
-    "#27 [TEST_FORMAT] Học Tiếng Anh Thụ Động / Comprehensible Input & Hội thoại Đời sống 2 Tốc độ (H36): 9 mẫu sống (6 sạch + 3 phụ), 2 mẫu bẩn, 1 SKU bài học, RPM median $6.50",
+    "#27 [TEST_FORMAT] Học Tiếng Anh Thụ Động / Comprehensible Input & Hội thoại Đời sống 2 Tốc độ (H36): 9 mẫu sống (6 sạch + 3 phụ), 2 mẫu bẩn, 4 SKU bài học, RPM median $6.50",
     "#28 [TEST_FORMAT] Hoạt hình 3D AI / Pixar-Style / Truyện Cổ tích & IP Gia đình (Story-to-Animation) (H37): 9 mẫu sống (5 sạch + 4 phụ), 0 mẫu bẩn, 2 SKU bài học, RPM median $5.50",
     "#29 [TEST_FORMAT] Kinh tế Nhật (H14): 6 mẫu sống (4 sạch + 2 phụ), 0 mẫu bẩn, 5 SKU bài học, RPM median $11.00",
     "#30 [TEST_FORMAT] Drama / kaidan Nhật (H15): 4 mẫu sống (2 sạch + 2 phụ), 2 mẫu bẩn, 5 SKU bài học, RPM median $6.00",
@@ -7234,12 +7259,12 @@
     "#32 [TEST_FORMAT] Kinh tế Hàn (giáo dục) (H13): 7 mẫu sống (4 sạch + 3 phụ), 4 mẫu bẩn, 10 SKU bài học, RPM median $9.00",
     "#33 [TEST_FORMAT] Drama / 야담 Hàn (H23): 6 mẫu sống (5 sạch + 1 phụ), 3 mẫu bẩn, 4 SKU bài học, RPM median $5.25",
     "#34 [TEST_FORMAT] Sinh tồn VN (H24): 9 mẫu sống (5 sạch + 4 phụ), 2 mẫu bẩn, 3 SKU bài học, RPM median $7.00",
-    "#35 [TEST_FORMAT] Kiểm soát sinh học / chiến thuật (H28): 4 mẫu sống (2 sạch + 2 phụ), 0 mẫu bẩn, 3 SKU bài học, RPM median $9.00",
-    "#36 [TEST_FORMAT] Triết lý / khắc kỷ (H20): 15 mẫu sống (7 sạch + 8 phụ), 0 mẫu bẩn, 13 SKU bài học, RPM median $9.00",
+    "#35 [TEST_FORMAT] Kiểm soát sinh học / chiến thuật (H28): 4 mẫu sống (2 sạch + 2 phụ), 0 mẫu bẩn, 4 SKU bài học, RPM median $9.00",
+    "#36 [TEST_FORMAT] Triết lý / khắc kỷ (H20): 15 mẫu sống (7 sạch + 8 phụ), 0 mẫu bẩn, 14 SKU bài học, RPM median $9.00",
     "#37 [KHONG_DU_EVIDENCE] Sức khỏe VN (H04): 17 mẫu sống (6 sạch + 11 phụ), 9 mẫu bẩn, 23 SKU bài học, RPM median $1.50",
-    "#38 [KHONG_DU_EVIDENCE] Âm nhạc AI / Nhạc Cổ Phong / Lofi / Retro 80s-90s & Visualizer (H40): 4 mẫu sống (3 sạch + 1 phụ), 2 mẫu bẩn, 2 SKU bài học, RPM median $2.20",
+    "#38 [KHONG_DU_EVIDENCE] Âm nhạc AI / Nhạc Cổ Phong / Lofi / Retro 80s-90s & Visualizer (H40): 4 mẫu sống (3 sạch + 1 phụ), 2 mẫu bẩn, 6 SKU bài học, RPM median $2.20",
     "#39 [TACH_KHOI_DE_XUAT] Reup hoạt hình (đã transform) (H22): 7 mẫu sống (3 sạch + 4 phụ), 3 mẫu bẩn, 24 SKU bài học, RPM median $2.00",
-    "#40 [TACH_KHOI_DE_XUAT] Đứa trẻ Hàn (H26): 4 mẫu sống (2 sạch + 2 phụ), 1 mẫu bẩn, 2 SKU bài học, RPM median $4.50"
+    "#40 [TACH_KHOI_DE_XUAT] Đứa trẻ Hàn (H26): 4 mẫu sống (2 sạch + 2 phụ), 1 mẫu bẩn, 1 SKU bài học, RPM median $4.50"
   ],
   "note": "SKU gắn theo title + kênh trong video + docs/prompt. Hướng dẫn = title nói đúng ngách. Liên quan = kênh mẫu hoặc file/prompt trong video. Không gắn vì trùng 1 chữ.",
   "deadHandles2026": [

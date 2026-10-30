@@ -1,0 +1,78 @@
+{
+  "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
+  "title": "Zoom 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Quảng cáo",
+  "actual_topic": "Kỹ Thuật X3 Cơ Hội Bằng 3 Kênh Test, Đột Phá Giữ Chân AVD Bằng Ghép Đuôi Video, Hack Đề Xuất Playlist Đối Thủ & Tối Ưu Midroll Ads",
+  "category_group": "chien_luoc",
+  "niche_primary": "Quy Trình Tool, Tối Ưu AVD, SEO & Seeding",
+  "niche_id": "retention-rpm-optimization",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Quy trình chạy tool sản xuất video Veo 3 đa luồng (khuyên chạy 5–8 luồng) kết hợp công cụ rà soát prompt tự động để lọc bỏ các câu lệnh vi phạm chính sách trước khi ghép.",
+    "Mẹo nối đuôi video (ghép thêm đoạn video đã nổ view vào phần cuối video mới trong khoảng 30% thời lượng) để kéo thời lượng xem trung bình và tăng doanh thu RPM.",
+    "Thiết kế thumbnail nhất quán bằng Gemini và Flow, lưu trữ khoa học theo từng thư mục kịch bản để tránh nhầm lẫn khi sản xuất số lượng lớn.",
+    "Kỹ thuật seeding kéo đề xuất sau khi đăng (mở 3–4 tab xem qua danh sách phát, tự bình luận và ghim comment) kết hợp cài tiện ích tự động đặt quảng cáo mỗi 2 phút cho video dài."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình sản xuất hàng loạt kênh: tool tạo video, ghép đuôi tăng thời lượng xem, tiêu đề, thumbnail, danh sách phát, quảng cáo",
+    "additional": [
+      "Tìm được chủ đề tốt thì lập khoảng 3 kênh cùng chủ đề, mỗi kênh đăng video khác nhau, kênh nào lên mạnh nhất thì dồn lực, bỏ hai kênh còn lại",
+      "Tăng thời lượng xem trung bình bằng cách ghép video cũ vào đuôi video mới, ví dụ ghép video số 1 sau video số 3, để video dài khoảng 40 đến 45 phút và các video có thời lượng sàn sàn nhau",
+      "Tiêu đề, mô tả, từ khóa làm bằng ChatGPT; thumbnail dựa vào thumbnail đối thủ rồi chuyển sang phong cách của mình, nhờ Gemini viết lệnh rồi tạo ảnh bằng Flow và khóa phong cách để ảnh đồng nhất",
+      "Đặt tên danh sách phát là tên kênh của đối thủ để ăn thêm đề xuất",
+      "Đặt quảng cáo giữa video bằng tiện ích YouTube bản free, ví dụ video 1 giờ 11 phút đặt mỗi 2 phút khoảng 35 quảng cáo rồi bấm add"
+    ]
+  },
+  "avoid_flags": [
+    "Không đăng một video lên cả ba kênh, mỗi kênh đăng video khác nhau",
+    "Không đăng ngay video vừa tool làm xong, cần cho vào CapCut thêm nhạc, hiệu ứng, văn bản để nâng chất lượng",
+    "Không thêm video đối thủ vào danh sách phát của mình",
+    "Không bê nguyên thumbnail của đối thủ mà phải chuyển sang phong cách của mình"
+  ],
+  "tools_mentioned": [
+    "Gemini",
+    "CapCut",
+    "ChatGPT",
+    "Flow"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Chiến lược đăng test 3 kênh khác video và dồn lực cho kênh có chuyển đổi tốt"
+    },
+    {
+      "time": "07:57",
+      "seconds": 477,
+      "label": "Quy trình chạy tool Veo 3 đa luồng (5–8 luồng) và rà soát prompt lỗi"
+    },
+    {
+      "time": "23:12",
+      "seconds": 1392,
+      "label": "Bí quyết nối đuôi video để tăng thời lượng xem trung bình và tối ưu RPM"
+    },
+    {
+      "time": "41:36",
+      "seconds": 2496,
+      "label": "Quy trình làm thumbnail đồng bộ trên Gemini và chạy prompt trên Flow"
+    },
+    {
+      "time": "62:23",
+      "seconds": 3743,
+      "label": "Kỹ thuật seeding 3–4 tab qua danh sách phát và tự động đặt quảng cáo mỗi 2 phút"
+    }
+  ],
+  "analysis_method": "expert_grounded_audit",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/ZOOM-03-Quy-trinh-tool-toi-uu/transcript.txt",
+  "sop_steps": [
+    "Tìm được chủ đề tốt thì lập khoảng 3 kênh cùng chủ đề, mỗi kênh đăng video khác nhau, kênh nào lên mạnh nhất thì dồn lực, bỏ hai kênh còn lại",
+    "Tăng thời lượng xem trung bình bằng cách ghép video cũ vào đuôi video mới, ví dụ ghép video số 1 sau video số 3, để video dài khoảng 40 đến 45 phút và các video có thời lượng sàn sàn nhau",
+    "Tiêu đề, mô tả, từ khóa làm bằng ChatGPT; thumbnail dựa vào thumbnail đối thủ rồi chuyển sang phong cách của mình, nhờ Gemini viết lệnh rồi tạo ảnh bằng Flow và khóa phong cách để ảnh đồng nhất",
+    "Đặt tên danh sách phát là tên kênh của đối thủ để ăn thêm đề xuất",
+    "Đặt quảng cáo giữa video bằng tiện ích YouTube bản free, ví dụ video 1 giờ 11 phút đặt mỗi 2 phút khoảng 35 quảng cáo rồi bấm add"
+  ]
+}

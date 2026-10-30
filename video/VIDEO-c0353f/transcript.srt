@@ -1,0 +1,783 @@
+1
+00:00:00,000 --> 00:00:04,100
+Ok, xin chào tất cả anh chị em học viên. Hôm nay chúng ta đến với một cái bài câu chuyện.
+
+2
+00:00:04,280 --> 00:00:07,200
+Thì ở đây là anh em có thể nhìn thấy một cái kênh như thế này.
+
+3
+00:00:07,440 --> 00:00:13,520
+Ở đây tôi sẽ cho các bạn 2 kênh tham khảo. Một kênh 49 video, kênh thì chỉ tầm 24 video thôi.
+
+4
+00:00:14,160 --> 00:00:17,020
+Và chúng ta sẽ đánh vào đúng tâm lý của người già.
+
+5
+00:00:17,260 --> 00:00:21,560
+Tập trung vào người lớn thì chúng ta sẽ sản xuất ra những cái câu chuyện audio như thế này.
+
+6
+00:00:21,780 --> 00:00:25,820
+Thì những cái câu chuyện như thế này thì chúng ta sẽ có một cái tỷ lệ giữ chân rất là cao.
+
+7
+00:00:26,080 --> 00:00:29,280
+Và hôm nay chúng ta sẽ đi vào cách làm chi tiết như thế nào.
+
+8
+00:00:29,280 --> 00:00:32,200
+chúng ta sẽ xem qua và bóc tách một cái video.
+
+9
+00:00:33,000 --> 00:00:38,160
+Ở đây thì các bạn có thể nhìn thấy một hình ảnh AI và những video thực tế.
+
+10
+00:00:38,960 --> 00:00:42,020
+Cái video này chúng ta có thể lấy được kèm thêm là logo.
+
+11
+00:00:42,540 --> 00:00:43,780
+Đây là logo của kênh nhé.
+
+12
+00:00:43,920 --> 00:00:45,560
+Các bạn có thể chèn logo bất kỳ.
+
+13
+00:00:46,160 --> 00:00:52,580
+Và chúng ta sẽ có những cái hiệu ứng kéo like, sub, chia sẻ và comment.
+
+14
+00:00:52,580 --> 00:00:55,640
+Ở đây thì các bạn có thể nhìn thấy ở trong cái video này.
+
+15
+00:00:55,640 --> 00:01:02,640
+người ta chỉ cần những cái thẻ tag liên quan đến chuyện tuổi già đọc truyện đêm khuya và truyện audio gia đình
+
+16
+00:01:02,640 --> 00:01:08,640
+đấy thì các bạn chỉ cần cho tôi 3 cái thẻ lấy được tôi ở trong cái tiêu đề video nhé
+
+17
+00:01:08,640 --> 00:01:17,640
+ở đây thì các bạn có thể nhìn thấy một cái mô tả cũng không cần phải quá là chi tiết giống như những cái video khác
+
+18
+00:01:17,640 --> 00:01:21,340
+thì bản chất ở đây là những cái câu chuyện này nó dài đến tới tận 1 tiếng
+
+19
+00:01:21,340 --> 00:01:28,900
+một tiếng thì kể cả Việt hay ngoại tôi vẫn bảo anh em rồi ngoại thì anh em vẫn mất cái gì mất thuế
+
+20
+00:01:28,900 --> 00:01:34,540
+thuế của Hoa Kỳ cực kỳ cao thì anh em có thể làm việc ngay từ khi bắt đầu được giống như cái cách
+
+21
+00:01:34,540 --> 00:01:40,060
+tôi bảo ở trong phần tư duy thì các bạn cứ áp dụng 1.000 người đăng ký các bạn chuyển qua chủ đề audio
+
+22
+00:01:40,060 --> 00:01:41,260
+này nó rất là dễ lên
+
+23
+00:01:41,340 --> 00:01:48,000
+và rất là nhanh các bạn nhé Ok thì đối với cách làm chúng ta sẽ sử dụng những công cụ như sau
+
+24
+00:01:48,000 --> 00:01:55,462
+ở đây thì chúng ta có thể nhìn thấy là ChatGPT là một này Vbee là hai này và Pexels là ba này
+
+25
+00:01:55,462 --> 00:02:04,669
+Pinterest là 4 và Picsart là 5. Ở đây tôi sẽ có 1 cái Master Prompt. Đây là 1 Master Prompt tôi đã chuẩn bị sẵn rồi. Thì thường anh em hỏi là Master
+
+26
+00:02:04,669 --> 00:02:13,875
+Prompt ở đâu? Thì khi anh em nhấn vào khóa học như thế này nhé. Ở trên website. Khi anh em đăng nhập vào khóa học thì các bạn đăng nhập vào này.
+
+27
+00:02:13,875 --> 00:02:23,082
+Sau đó các bạn nhấn cho tôi học ngay nhé. Thì khi mà nó ra giao diện học ngay này thì thường các bạn hay nhìn thấy cái phần mô tả đây đúng không?
+
+28
+00:02:23,082 --> 00:02:26,922
+Nó thường có danh mục này, mô tả này, các bạn nhấn vào cho tôi phần mô tả.
+
+29
+00:02:27,402 --> 00:02:35,402
+Thì đây là cái Master Prompt nhé, các bạn copy cái đường link này, sau đó các bạn dán ra cái trang web thì nó sẽ tự động nó ra cái Master Prompt nhé.
+
+30
+00:02:35,942 --> 00:02:38,902
+Giống như cái Master Prompt ở cái chuyện audio nhé các bạn nhé.
+
+31
+00:02:39,402 --> 00:02:47,542
+Ok, bắt đầu chúng ta đi vào cái quy trình thì tôi nói với anh em là cái chuyện này thì anh em phải test trên một kênh tầm 3 video trở lên nhé.
+
+32
+00:02:47,922 --> 00:02:49,000
+Thì nó mới có hiệu suất nhé.
+
+33
+00:02:49,000 --> 00:02:53,562
+Đầu tiên anh em copy cho tôi cái Master Prompt này. Các bạn có thể copy hết nhé.
+
+34
+00:02:53,562 --> 00:03:00,402
+Copy toàn bộ cho tôi này. Tất cả là nó có 6 trang nhé. 6 trang thì các bạn phải copy liên tục như thế này cho tôi.
+
+35
+00:03:01,042 --> 00:03:02,282
+Anh em nhấn sao chép này.
+
+36
+00:03:02,450 --> 00:03:06,570
+Sau khi sao chép xong thì anh em dán vào cái ChatGPT nha anh em nhé.
+
+37
+00:03:07,250 --> 00:03:07,450
+Đấy.
+
+38
+00:03:08,410 --> 00:03:14,530
+Bây giờ nó sẽ viết cho anh em dựa trên cái Master Prompt này nó viết ra cho anh em 100 cái kịch bản, 100 ý tưởng.
+
+39
+00:03:15,230 --> 00:03:20,850
+Thì 100 ý tưởng này tôi đã liệt kê ra và tại sao nó lại không trùng lặp nhau.
+
+40
+00:03:21,290 --> 00:03:25,990
+Nếu mà trùng lặp câu chuyện có cái kiểu ná ná nhau quá thì tỷ lệ tắt kiếm tiền rất là cao.
+
+41
+00:03:26,190 --> 00:03:31,570
+Bản chất bây giờ là làm YouTube thì anh em phải liên quan đến cái vấn đề là sản xuất nội dung.
+
+42
+00:03:31,570 --> 00:03:38,090
+Nhưng nội dung cứ 10 video nó có thể để khớp nhau thì là toang. Anh em có thể nghe xem cái mục 1 nhé.
+
+43
+00:03:38,550 --> 00:03:46,930
+Người thợ sửa đồng hồ và chiếc đồng hồ không chịu chạy này. Ông Phúc 62 tuổi sống bằng tiệm sửa đồng hồ trong một con phố cũ ở Hà Nội sau khi vợ mất.
+
+44
+00:03:47,350 --> 00:03:54,290
+Cả 2 đều cho rằng ông bảo thủ và nghèo túng. Đấy, anh em có thể nhìn thấy nha, nó viết đầy đủ cho anh em như này.
+
+45
+00:03:54,450 --> 00:03:58,210
+Nhưng cái này là chưa dùng được nha các bạn nha. Cái này là chưa dùng được.
+
+46
+00:03:58,210 --> 00:04:07,130
+Nghĩa là tiêu đề của câu chuyện anh em có thể để vào câu chuyện như thế này. Nhưng chúng ta sẽ làm gì? Câu chuyện nó không thể nào ngắn tũn như thế này được.
+
+47
+00:04:07,130 --> 00:04:12,470
+Và ở đây tôi sẽ viết đến tầm 100 cái ý tưởng nha các bạn nhé.
+
+48
+00:04:12,670 --> 00:04:14,570
+Nó sẽ liệt kê ra cho anh em 100 ý tưởng.
+
+49
+00:04:15,050 --> 00:04:20,410
+Anh em muốn viết thêm 100 ý tưởng nữa thì nó sẽ viết lên cho anh em 100 ý tưởng tiếp theo.
+
+50
+00:04:20,650 --> 00:04:24,290
+Cái này tôi sẽ để cho nó chạy đủ 100 cái để cho các bạn nhìn thế.
+
+51
+00:04:24,550 --> 00:04:25,770
+Ok các bạn hãy nhìn đây.
+
+52
+00:04:26,010 --> 00:04:27,130
+Đây là 100 cái ý tưởng.
+
+53
+00:04:27,130 --> 00:04:34,810
+ý tưởng nha các bạn nhé khi mà ChatGPT viết xong nó sẽ ra 100 ý tưởng như thế này các bạn có thể nhìn thấy từ ý tưởng đầu tiên này
+
+54
+00:04:34,810 --> 00:04:43,000
+đây nha từ ý tưởng thứ nhất đến ý tưởng thứ 100 nghĩa là các bạn có thể viết thêm viết thêm gì viết thêm 100 ý tưởng nữa thì các bạn hãy nhập
+
+55
+00:04:43,000 --> 00:04:52,461
+Nếu mà các bạn muốn làm thêm các câu chuyện khi các bạn làm xong 100 ý tưởng này rồi, sau khi đã xong thì các bạn hãy copy cho tôi cái này.
+
+56
+00:04:52,461 --> 00:05:01,681
+Đấy, các bạn dán ra đây. Đây là từng 1 ý tưởng 1 nhé, tôi đang lấy từ ý tưởng thứ 100 này các bạn này. Thì các bạn dán ra đây. Thì bây
+
+57
+00:05:01,681 --> 00:05:10,901
+giờ nó sẽ dựa trên Master Prompt và dựa trên cái ý tưởng này. Nó sẽ viết ra cho bạn một câu chuyện có độ dài hơn 1 tiếng nhé các bạn nhé.
+
+58
+00:05:10,901 --> 00:05:22,801
+Nghĩa là cái cấu trúc tôi đã soạn sẵn rồi, các bạn chỉ việc làm sao để cho kênh nó hiệu quả, làm sao tất cả câu chuyện nó có một cái logic, nó phù hợp chính sách nữa.
+
+59
+00:05:23,221 --> 00:05:34,000
+Anh em hãy nhìn đây nhé, đêm thứ 13, sau ngày chôn anh trai, ông Hưng nhìn thấy mà theo lẽ thường không thể nào sáng được nữa, đó là ngọn đèn tín hiệu màu đỏ.
+
+60
+00:05:34,000 --> 00:05:43,680
+treo thấp dưới chân cây cầu sắt bắc qua con rạch cái bột. Anh em nhìn thấy đây là một câu chuyện. Bây giờ nó sẽ viết cho anh em một câu chuyện có
+
+61
+00:05:43,680 --> 00:05:53,360
+độ dài tầm 50-60.000 ký tự hoặc thậm chí là tầm 80-90. Có những câu chuyện rất là dài. Nó đang viết đầy đủ cho anh em như thế này. Trong khi để
+
+62
+00:05:53,360 --> 00:06:03,040
+nó đang viết chuyện thì chúng ta sẽ làm gì ạ? Chúng ta sẽ đi vào Pexels. Bây giờ các bạn hãy dựa theo các kênh thì các bạn hãy tìm cho tôi là
+
+63
+00:06:03,040 --> 00:06:09,780
+Cánh đồng, đồng lúa này. Các bạn có thể tìm những video cánh đồng lúa này. Nó có rất nhiều cánh đồng lúa, cánh
+
+64
+00:06:09,780 --> 00:06:16,520
+đồng lúa này. Rất là nhiều nha các bạn nha. Hay là các cảnh quê, video về quê này các bạn nè. Đấy thì các
+
+65
+00:06:16,520 --> 00:06:23,260
+bạn có thể tải xuống cho tôi. Đây là tải xuống miễn phí nha. Như cái nguồn này thì các bạn tha hồ nha.
+
+66
+00:06:23,260 --> 00:06:30,707
+thoải mái các bạn tải nha. Anh em tải xuống. Chúng ta không cần phải đi quay nữa. Nghĩa là chúng ta sẽ bỏ qua tất cả những cái bước
+
+67
+00:06:30,707 --> 00:06:38,153
+quay mà anh em hay đi. Nếu mà anh em có cái khả năng ấy, anh em cầm một cái điện thoại anh em bỏ ở xe, anh em quay ngang
+
+68
+00:06:38,153 --> 00:06:45,600
+ra, anh em thấy nguồn video mà anh em đi trên đường cũng được. Đấy là một cách tốt nhất để anh em sản xuất. Đây, anh em tải xuống.
+
+69
+00:06:45,600 --> 00:06:50,840
+sau khi tải xuống thì anh em nhìn thấy nhé
+
+70
+00:06:50,840 --> 00:06:54,000
+những cái video về cánh đồng như thế này nhé
+
+71
+00:06:54,000 --> 00:06:57,260
+mình thì sẽ làm một cái đoạn ngắn để cho anh em hiểu rõ
+
+72
+00:06:57,260 --> 00:07:00,380
+nếu mà làm đoạn dài thì nó hơi bị vướng phần
+
+73
+00:07:00,380 --> 00:07:03,191
+anh em tải hết xuống cho mình nhé
+
+74
+00:07:03,191 --> 00:07:06,191
+Đây là 5 cái video mình đã tải về nhé các bạn nhé.
+
+75
+00:07:06,191 --> 00:07:09,000
+Mình sẽ làm một đoạn ngắn để cho anh em hiểu về cách làm nhé.
+
+76
+00:07:09,000 --> 00:07:13,191
+Sau khi anh chị em đã tải video xong thì các bạn vào cho tôi cái Pinterest nhé.
+
+77
+00:07:13,191 --> 00:07:15,191
+Trong Pinterest thì các bạn tìm cho tôi nè.
+
+78
+00:07:15,191 --> 00:07:18,191
+Phông nền xanh lá cây.
+
+79
+00:07:18,191 --> 00:07:22,191
+Ok, anh em tìm cho tôi đúng cái tên từ khóa này nhé.
+
+80
+00:07:22,191 --> 00:07:35,031
+Đây, phông nền xanh lá cây này, nó có rất nhiều phông nền nhé. Các bạn có thể kéo xuống này. Các bạn có thể nhấn vào cái phông nền này thì nó sẽ đề xuất ra các phông nền tương tự nhé.
+
+81
+00:07:38,631 --> 00:07:49,971
+Đó, anh em có thể nhấn vào, cứ để cho nó hiện lên, nó cập nhật nhanh nhé. Nó có nền xanh, dương, nền tối, nền sáng thì anh em lựa chọn một cái nền bất kỳ này.
+
+82
+00:07:49,971 --> 00:07:59,944
+anh em cứ nhấn vào thì nó sẽ đề xuất anh em tôi lấy cái này đi đây là cái nền xanh này đây nha tôi sẽ lấy cái nền này anh em nhé anh em nhấn Lưu
+
+83
+00:07:59,944 --> 00:08:09,918
+hình ảnh dưới dạng này anh em nhấn download xuống này Ok sau khi đã download xong thì anh em có thể nhớ cho tôi là anh em có thể thêm nhé anh em có thể thêm
+
+84
+00:08:09,918 --> 00:08:19,891
+là người già Việt Nam Việt Nam anh em có thể tìm cho tôi những cái hình ảnh cụ già Việt Nam như thế này nhé ở đây thì chúng ta sẽ tạo lại hoàn toàn nghĩa là
+
+85
+00:08:19,971 --> 00:08:21,831
+Chúng ta sẽ áp dụng cái hình ảnh này thôi.
+
+86
+00:08:22,350 --> 00:08:31,350
+Tí nữa tôi sẽ hướng dẫn các bạn tạo lại những hình ảnh AI hoặc là các bạn có thể lấy luôn những hình ảnh này cũng được. Nhưng mà chúng ta sẽ tạo nét đi.
+
+87
+00:08:31,350 --> 00:08:38,850
+Ví dụ như tôi sẽ lấy hình ảnh này. Đối với hình ảnh này thì các bạn hãy tạo cho tôi một cái
+
+88
+00:08:38,850 --> 00:08:46,350
+ChatGPT khác nhé. Cái bên này nó vẫn đang tạo chuyện này. Câu chuyện này quá dài nhé các bạn nhé.
+
+89
+00:08:46,350 --> 00:08:54,170
+Các bạn biết là nó sẽ viết từ đầu đến cuối cho các bạn. Ok. Thì tôi sẽ dán cái hình ảnh ông cụ này vào. Tôi sẽ viết một câu lệnh như sau.
+
+90
+00:08:54,170 --> 00:09:07,190
+Hãy tạo lại cho tôi một hình ảnh về người đàn ông này, hình ảnh sắc nét, không cần phông nền xung quanh.
+
+91
+00:09:07,370 --> 00:09:14,830
+Đây nha. Các bạn có thể viết lại prompt. Nghĩa là prompt các bạn có thể lấy ra prompt các bạn tạo ở trên. Những cái con Flow AI cũng được nha các bạn nha.
+
+92
+00:09:14,830 --> 00:09:16,830
+sau đó các bạn nhấn Enter
+
+93
+00:09:16,830 --> 00:09:19,830
+bây giờ ChatGPT nó sẽ tự động tạo cho các bạn nhé
+
+94
+00:09:19,830 --> 00:09:21,830
+nó sẽ dựa trên hình ảnh này
+
+95
+00:09:21,830 --> 00:09:23,830
+hoặc là chúng ta sẽ bám sát nhân vật này
+
+96
+00:09:23,830 --> 00:09:25,830
+chúng ta tạo ra một hình ảnh khác
+
+97
+00:09:25,830 --> 00:09:28,830
+không nhất thiết là lúc nào chúng ta có người đàn ông này nha các bạn nhé
+
+98
+00:09:28,830 --> 00:09:29,830
+đây anh em nha
+
+99
+00:09:29,830 --> 00:09:31,830
+anh em có thể lưu hình ảnh này về nè
+
+100
+00:09:31,830 --> 00:09:34,830
+đây là hình ảnh mà ông cụ vừa tạo ra
+
+101
+00:09:34,830 --> 00:09:44,000
+ra bằng ChatGPT nhé các bạn nhé sau khi đã lưu về xong thì các bạn nhớ cho tôi là trong cái xây dựng này các bạn nhìn thấy câu chuyện này không
+
+102
+00:09:44,000 --> 00:09:54,830
+Nếu mà các bạn copy tất cả nha thì nó rất là dài sang Vbee này Vbee thì nó sẽ cho tối đa là 3000 ký tự một lần nhé anh em có thể nhìn thấy đây
+
+103
+00:09:54,830 --> 00:09:57,330
+có thể nâng cấp gói lên thì nó sẽ dùng cao hơn
+
+104
+00:09:57,330 --> 00:10:00,831
+anh em có thể nhìn thấy đây là câu chuyện dài 41.000 ký tự nhé
+
+105
+00:10:00,831 --> 00:10:14,451
+Thì tôi sẽ lấy một đoạn nha các bạn nha. Tôi sẽ lấy một đoạn như thế này. Và bây giờ là trong phần Vbee nha các bạn nha. Các bạn nhớ cho tôi là trong phần thư viện giọng này các bạn hãy lựa chọn một giọng bất kỳ nha. Các bạn hãy nhìn này.
+
+106
+00:10:15,371 --> 00:10:17,711
+Đây là giọng về Phật pháp này.
+
+107
+00:10:20,511 --> 00:10:28,231
+Đây là giọng Nguyễn Ngọc Ngạn này thì các bạn có thể lấy giọng Nguyễn Ngọc Ngạn cũng được nha. Thì giọng Nguyễn Ngọc Ngạn đọc rất là ok nha các bạn nha.
+
+108
+00:10:28,231 --> 00:10:37,298
+Anh em nghe thử cái truyện nha, anh em dán chữ vào nè. Đây tôi sẽ sử dụng giọng voice tầm 655 ký tự nha. Tôi nhấn tạo
+
+109
+00:10:37,298 --> 00:10:46,364
+audio nè. Anh em cứ để bình thường cho tôi tốc độ bằng 1 nha. Hoặc là anh em có thể vào. CapCut anh em chỉnh cũng được. Ok
+
+110
+00:10:46,364 --> 00:10:55,000
+anh em nhấn tải xuống nè. Đấy đây là giọng voice mà đêm thứ 13 nè. Sau đó thì chúng ta sẽ vào cho tôi cái con CapCut nha.
+
+111
+00:10:55,000 --> 00:11:00,671
+Sau khi vào CapCut thì các bạn nhập cho tôi toàn bộ những hình ảnh lên nhé.
+
+112
+00:11:00,800 --> 00:11:09,467
+có những hình ảnh và video nhé các bạn nhé và voice này đầu tiên thì các bạn thêm cho tôi cái hình ảnh là 9:16 này vào nhé Ok thì bây giờ là chúng ta
+
+113
+00:11:09,467 --> 00:11:18,133
+sẽ lựa chọn tỷ lệ khung hình các bạn nhớ cho tôi là thanh trắng này ở đâu thì vị trí màn hình ở đó các bạn luôn luôn nhớ cho tôi cái câu đấy
+
+114
+00:11:18,133 --> 00:11:26,800
+nhé và đây là tỷ lệ khung hình này các bạn để cho tôi 16:9 thì các bạn xoay ngang cho tôi cái hình này đi đấy các bạn xoay ngang cho tôi cái này đi
+
+115
+00:11:26,800 --> 00:11:36,493
+Bây giờ chúng ta đi vào trang trí này. Ví dụ hình ảnh người đàn ông này nó đã xóa nền luôn ở trong đấy rồi nhé. Các bạn có thể để nó thấp bé như thế này cũng
+
+116
+00:11:36,493 --> 00:11:46,187
+được. Hoặc các bạn trang trí ở giữa cũng được, ở ngay đây cũng được. Đấy là tùy mỗi form thì chúng ta sẽ làm một cách khác nhau nhé. Ok, về phần video nhé các bạn nhé. Đây là.
+
+117
+00:11:46,187 --> 00:11:55,880
+Các bạn thêm cho tôi cái video vào bất kỳ một cái nào đó ở trong đây nhé. Hoặc là chúng ta đưa cái hình ảnh ông cụ này lên thì video nó sẽ ở phía sau nhé các bạn.
+
+118
+00:11:55,880 --> 00:12:00,240
+Chúng ta sẽ kéo đầy cái nền này ra và chúng ta nhân bản video ra.
+
+119
+00:12:01,020 --> 00:12:04,240
+Anh em nhân bản, khi anh em nhân bản video thì anh em cắt bớt đi nè.
+
+120
+00:12:04,960 --> 00:12:07,160
+Sau đó những cái video sau thì anh em chèn vào.
+
+121
+00:12:08,300 --> 00:12:10,140
+Anh em nhấn thay thế clip là được nha.
+
+122
+00:12:10,400 --> 00:12:14,160
+Anh em nhấn thay thế clip thì nó vẫn luôn ở cái vị trí đấy nha các bạn nha.
+
+123
+00:12:14,160 --> 00:12:16,720
+Đây, kéo dài là copy sang nè.
+
+124
+00:12:17,620 --> 00:12:18,560
+Anh em kéo xuống nè.
+
+125
+00:12:19,080 --> 00:12:19,580
+Thay thế clip nè.
+
+126
+00:12:19,580 --> 00:12:27,820
+cái vị trí nó đã ở đấy rồi thì các bạn có thay ở đâu cũng được tất cả các khung hình nó đều có tỷ lệ
+
+127
+00:12:27,820 --> 00:12:39,580
+mà giống nhau ở đây thì mỗi người có một cái trang trí khác nhau nó không phải giống nhau đâu nha các bạn nhé không phải anh em
+
+128
+00:12:39,580 --> 00:12:42,340
+vậy giống tôi anh em có thể để người đàn ông phía bên này
+
+129
+00:12:42,340 --> 00:12:45,642
+hoặc là anh em có thể đảo ngược sang này phản chiếu này
+
+130
+00:12:45,642 --> 00:12:59,422
+Ông ấy nhìn sao thì bên này cũng được. Đấy là tùy mọi người, mỗi người sẽ có một cái cách làm khác nhau. Khi mà các bạn xong như thế này rồi nhé, các bạn thêm cho tôi cái voice này. Các bạn nhớ cho tôi là những cái đoạn mà vuông vuông như này, các bạn cắt đi cũng được không, các bạn để nguyên vậy cũng được.
+
+131
+00:12:59,682 --> 00:13:07,902
+Đêm thứ 13 sau ngày chôn anh trai, ông Hưng nhìn thấy một thứ mà theo lẽ thường không thể nào sáng được nữa. Đó là ngọn đèn tín.
+
+132
+00:13:07,902 --> 00:13:17,649
+Các bạn có thể cắt đi nhé, cắt những cái phần thừa đi. Đây tôi làm ngắn gọn cho các bạn. Và ở đây thì chúng ta sẽ thêm những cái nhãn dán nhé. Đây các bạn nhớ
+
+133
+00:13:17,649 --> 00:13:27,395
+cho tôi là like, subscribe và chia sẻ này. Anh em có thể thêm những cái nhãn dán này vào. Anh em thêm cho tôi những cái nhãn dán này vào nhé. Thì các bạn có thể để
+
+134
+00:13:27,395 --> 00:13:37,142
+ở dưới này cũng được, mà để ở trên này cũng được nhé. Để đâu cũng được, nghĩa là các bạn có thể để full ở video cũng đều được nhé. Các bạn có thể thêm xuống này.
+
+135
+00:13:37,142 --> 00:13:44,652
+để ở đây cũng được nhé hoặc là để trên này cũng được hoặc là để trên đầu này cũng được nghĩa là các bạn có thể để bất kỳ ở
+
+136
+00:13:44,652 --> 00:13:52,162
+đâu khi các bạn muốn ok Bây giờ là khi mà các bạn xong như này nhé các bạn nhớ cho tôi là các bạn thêm cho tôi văn bản này
+
+137
+00:13:52,450 --> 00:14:02,117
+nhấn thêm phụ đề tự động nhé anh em nhấn phụ đề tự động anh em chọn tiếng Việt nhé anh em nhấn tạo ra này anh em nhìn thấy nó sẽ ra những cái câu như
+
+138
+00:14:02,117 --> 00:14:11,783
+cái văn bản như thế này đúng không thì chúng ta sẽ lựa chọn cái phông chữ bất kỳ thì tôi sẽ sử dụng Anton này phông chữ Anton nhé anh em chọn phông chữ bất kỳ nhé
+
+139
+00:14:11,783 --> 00:14:21,450
+thì tôi sẽ chọn tất cả tôi sẽ chọn màu xanh hoặc là anh em chọn màu đen này cũng được nhé tiếp theo thì anh em chọn ra tôi một cái phông nền bất kỳ nhé
+
+140
+00:14:21,450 --> 00:14:31,530
+Phông nền thì anh em có thể trang trí là bo góc tròn này, độ mờ của nó này, để cho nút nó đè lên người này, nó nhìn nó sáng hơn này, một người dễ đọc hơn này.
+
+141
+00:14:31,910 --> 00:14:36,330
+Chữ thì anh em để cho tôi là tối ưu là chữ to lên nhé, chữ to lên một tí đều được nhé.
+
+142
+00:14:37,050 --> 00:14:40,530
+Và bây giờ là gì ạ? Anh em có thể thêm những cái văn bản nhé.
+
+143
+00:14:42,830 --> 00:14:49,590
+Thêm những cái văn bản. Anh em có thể thêm cho tôi những cái văn bản nhé, ví dụ như là kênh của anh em là Video.
+
+144
+00:14:49,590 --> 00:14:59,180
+Video kể chuyện mới. Đó. Thì anh em có thể lựa chọn một phông chữ bất kỳ. Ở đây nó còn rất nhiều phông chữ để cho anh em lựa
+
+145
+00:14:59,180 --> 00:15:08,770
+chọn nhé. Anh em có thể lựa chọn này. Đấy. Video kể chuyện mới này. Đấy. Anh em có thể trang trí bất kỳ lúc nào cũng được nhé.
+
+146
+00:15:08,770 --> 00:15:14,730
+Đêm thứ 13 sau ngày chôn anh trai, ông Hưng nhìn thấy một thứ mà theo lẽ thường không thể
+
+147
+00:15:14,730 --> 00:15:19,010
+Đây là cái phần video nha, cuối video thì anh em nhấn o và anh em xuất ra
+
+148
+00:15:19,010 --> 00:15:27,730
+Cái video độ dài càng dài thì tỷ lệ mà làm anh em có view phát là tỷ lệ mà bật kiếm tiền rất là nhanh nha các bạn nha
+
+149
+00:15:27,730 --> 00:15:28,770
+Ok xong
+
+150
+00:15:28,770 --> 00:15:30,770
+sau khi đó thì anh em xuất ra cho tôi nhé
+
+151
+00:15:30,770 --> 00:15:31,970
+xuất ra này
+
+152
+00:15:31,970 --> 00:15:34,870
+anh em để cho tôi cái tên file
+
+153
+00:15:34,870 --> 00:15:37,830
+ví dụ tên file giống như là cái tên mà câu chuyện
+
+154
+00:15:37,830 --> 00:15:39,710
+đây Người giữ cầu và chiếc
+
+155
+00:15:39,710 --> 00:15:41,241
+đèn tín hiệu sáng ngày anh mất này
+
+156
+00:15:41,241 --> 00:15:54,000
+Đối với cái video audio này thì anh em chỉ nhớ cho tôi là anh em xuất cho tôi tầm khoảng 1080p là được nha. Hoặc thậm chí anh em có thể xuất 720, không cần phải 2k, 4k đâu các bạn nhé. Cứ xuất cho tôi 1080 nha các bạn nhé.
+
+157
+00:15:54,000 --> 00:16:01,241
+Sau khi đã xuất cái phần video xong thì các bạn trở ra cho tôi Picsart nha. Trong Picsart này chúng ta sẽ đi vào tạo
+
+158
+00:16:01,241 --> 00:16:08,241
+ảnh thumbnail. Ở đây anh em chọn cho tôi Start này, Blank Canvas này, vẫn như những cái video mà tôi dạy anh em nhé.
+
+159
+00:16:08,241 --> 00:16:18,741
+Anh em sẽ làm gì ạ? Bây giờ là gì ạ? Anh em tải cho tôi cái hình nền. Hình thứ nhất là hình nền này, 2 hình ảnh người già này.
+
+160
+00:16:18,741 --> 00:16:25,641
+Anh em tải lên như này cho tôi. Sau khi đã tải lên thì các bạn lựa chọn cho tôi đổi cỡ này, anh em nhấn vào đổi cỡ này.
+
+161
+00:16:25,641 --> 00:16:35,241
+Anh em kéo xuống cho tôi vẫn là tỷ lệ là gì ạ? Tỷ lệ 1920 x 1080 nha các bạn nhé. Đấy, sau đó thì các bạn chọn cho tôi thumbnail này.
+
+162
+00:16:35,241 --> 00:16:38,981
+Các bạn xoay cho tôi hoặc là các bạn đảo ngược đảo cho tôi nhé.
+
+163
+00:16:40,000 --> 00:16:47,900
+anh em chọn cho tôi phần 3 chấm này anh em chọn phần cho tôi phần đảo này
+
+164
+00:16:47,900 --> 00:16:55,800
+đây phần đảo ngang dòng hiểu được nhé các bạn nhé các bạn kéo dài ra cho tôi ok
+
+165
+00:16:55,800 --> 00:17:00,200
+sau đó thì là gì ạ
+
+166
+00:17:00,200 --> 00:17:09,400
+thì các bạn có thể thêm cái hình ảnh phía bên nào cũng được nhé đây là hình ảnh thumbnail sau khi mà đã thêm hình ảnh như thế này nha
+
+167
+00:17:09,400 --> 00:17:18,907
+Các em sẽ thêm một cái text bất kỳ nhé. Anh em nhấn vào phần text này. Anh em thêm được thôi. Thì ở đây thì chúng ta sẽ lựa chọn phông chữ nhé. Anh em có thể lựa
+
+168
+00:17:18,907 --> 00:17:28,413
+chọn phông chữ bất kỳ và bây giờ dựa trên cái câu chuyện nhé các bạn nhé. Các bạn dựa cho tôi cái câu chuyện mà lúc nãy chúng ta đã viết nhé. Anh em nhìn đấy nhé. Trả
+
+169
+00:17:28,413 --> 00:17:37,920
+lại danh dự cho người bị oan. Anh em có thể copy một cái phần nào bất kỳ ở trên nhé. Trả lại danh dự cho người bị oan. Đấy. Hoặc là anh em viết ở tiêu đề được.
+
+170
+00:17:37,920 --> 00:17:44,587
+được trả lại danh dự cho người bị oan
+
+171
+00:17:44,587 --> 00:17:51,253
+anh em lấy một trong những cái chữ mà nó
+
+172
+00:17:51,253 --> 00:17:57,920
+phù hợp nhé Các phần này khi các bạn
+
+173
+00:17:57,920 --> 00:18:00,520
+up video lên thì các bạn nhớ cho tôi là cái gì ạ
+
+174
+00:18:00,520 --> 00:18:02,720
+các bạn để cho tôi là
+
+175
+00:18:02,720 --> 00:18:05,280
+nội dung tạo bằng AI
+
+176
+00:18:05,280 --> 00:18:05,920
+đấy
+
+177
+00:18:08,506 --> 00:18:16,366
+Rồi, cái này sau khi đã thêm như này rồi các bạn cho tôi cái màu này. Anh em nhìn cho tôi bất kỳ một cái màu nào anh em thích nhé.
+
+178
+00:18:16,366 --> 00:18:26,259
+Anh em thêm, ví dụ như tôi thêm cái màu này, tôi sẽ lựa chọn cái phông nét này, anh em chọn edit này, chọn nét này, anh em sẽ lựa chọn cái
+
+179
+00:18:26,259 --> 00:18:36,153
+màu trắng cũng được nhé, màu trắng này, trả lại danh dự cho người bị oan này, sau khi đã cho cái tên trắng nhé, anh em copy cho tôi này, anh em nhấn
+
+180
+00:18:36,153 --> 00:18:46,046
+Ctrl C này, Ctrl V này, copy 1 dòng nữa, thì ở đây là chúng ta sẽ viết là gì ạ, câu chuyện mới nhất, đây, anh em viết cũng chữ hoa nhé,
+
+181
+00:18:46,366 --> 00:18:55,213
+Ở đây thì các bạn có thể lựa chọn nền bất kỳ một cái phông chữ nào, đen hoặc trắng đều được nhé. Nếu
+
+182
+00:18:55,213 --> 00:19:04,059
+mà cái nền trắng thì anh em sẽ lựa chọn cho tôi cái nền đen, ok viền đen nhé, anh em chọn viền
+
+183
+00:19:04,059 --> 00:19:12,906
+đen này thì nó sẽ nổi bật hơn. Ok thì ở đây thì anh em có thể cho to phông chữ hơn một tí.
+
+184
+00:19:13,700 --> 00:19:15,700
+Đó là câu chuyện mới nhất này.
+
+185
+00:19:15,700 --> 00:19:18,700
+Dựa trên cái thumbnail của họ cũng được.
+
+186
+00:19:18,700 --> 00:19:20,700
+Hoặc là anh em đè cũng được.
+
+187
+00:19:20,700 --> 00:19:23,700
+Ở đây thì anh em cho tôi cái chữ này nó càng to lên.
+
+188
+00:19:23,700 --> 00:19:28,700
+Bản chất càng to lên thì người ta nhìn thấy, à câu chuyện này có gay cấn đấy, người ta sẽ nhấn vào người ta nghe.
+
+189
+00:19:28,700 --> 00:19:31,700
+Ok, đây là hình ảnh về thumbnail nhé các bạn nhé.
+
+190
+00:19:31,700 --> 00:19:33,700
+Anh em nhấn tải xuống này.
+
+191
+00:19:33,700 --> 00:19:38,700
+Đó là 2 cái phần là chúng ta sẽ đặt phần tạo video.
+
+192
+00:19:38,700 --> 00:19:40,700
+Voice lấy như thế nào?
+
+193
+00:19:40,700 --> 00:19:42,700
+Và dựa trên câu chuyện thì chúng ta sẽ làm như thế nào?
+
+194
+00:19:42,700 --> 00:19:52,693
+Các bạn có thể thêm bất kỳ ở trên, xuống dưới cũng được, không nhất thiết là các bạn phải làm giống như kênh của họ. Các kênh như thế này các bạn không cần phải làm
+
+195
+00:19:52,693 --> 00:20:02,687
+giống như họ. Nếu mà làm giống như họ là sao chép nhưng mà chúng ta sẽ làm khác đi. Ví dụ như thế này thì các bạn có thể thấy không? Chúng ta có thể tư duy cách
+
+196
+00:20:02,687 --> 00:20:12,680
+nào, hiệu quả như thế nào. Ok, anh em nhớ cho tôi là anh em phải đo lường từ 3 đến 10 video nó có hiệu quả nha các bạn nha. Ok, chào tất cả các bạn.

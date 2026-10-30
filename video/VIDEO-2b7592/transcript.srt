@@ -1,0 +1,735 @@
+1
+00:00:00,000 --> 00:00:08,400
+Thì anh em có thể nhìn thấy đây, trên này là một cái hình ảnh mà chúng ta vừa lấy trong cái video review phim đúng không?
+
+2
+00:00:08,640 --> 00:00:13,740
+Xin chào anh chị em học viên, hôm nay chúng ta đến với một cái chủ đề hiện tại đang rất là hot.
+
+3
+00:00:13,860 --> 00:00:19,880
+Và thật ra không phải hiện tại, mà rất từ lâu rồi những cái chủ đề review phim như thế này nó rất là hot rồi.
+
+4
+00:00:19,880 --> 00:00:21,560
+Anh em có thể nhìn thấy những cái video đây.
+
+5
+00:00:21,680 --> 00:00:25,540
+25 phút trước 18.000 view và 1 ngày trước 200.000 view này.
+
+6
+00:00:25,840 --> 00:00:29,080
+Và 1 ngày trước 1 ngày trước đều toàn 200.000 view.
+
+7
+00:00:29,080 --> 00:00:38,727
+Và cái kênh như thế này chỉ trong 4 tháng thôi. Và anh em có thể nhìn đến mức độ phổ biến này. Toàn 500.000 view 1 tháng trước và 10 ngày trước. Và những cái kênh
+
+8
+00:00:38,727 --> 00:00:48,373
+mà đang làm cái chủ đề hoạt hình câu cá như thế này. Có từ khóa câu cá nha anh em nha. Rất là cao. Hoạt hình kết hợp với câu cá. Thì câu cá vạn cân
+
+9
+00:00:48,373 --> 00:00:58,000
+này đang được chiếm sóng. Và chúng ta có thể kiếm được những cái nguồn video. Hoạt hình này ở đâu để sản xuất ra video và làm ra một cái thumbnail hoàn chỉnh như thế nào.
+
+10
+00:00:58,000 --> 00:01:06,240
+Bằng AI. Thì đầu tiên anh em hãy nhớ cho tôi là anh em phải biết tìm nguồn. Thì ở đây tôi đã ghi là tìm nguồn thì chúng ta sẽ tìm ở Douyin
+
+11
+00:01:06,240 --> 00:01:14,460
+và công cụ sản xuất thì chúng ta cần cho tôi là CapCut và ChatGPT thôi. Thì hai cái này hầu như anh em nào làm YouTube hoặc là làm tất cả các
+
+12
+00:01:14,460 --> 00:01:22,680
+nền tảng khác anh em đều có. Anh em đã biết là cách tìm nguồn ở Douyin và công cụ sản xuất ở CapCut và ChatGPT thì chúng ta đi với từng bước một.
+
+13
+00:01:23,000 --> 00:01:25,200
+Bước 1, anh chị em chuẩn bị cho tôi một cái Google dịch.
+
+14
+00:01:25,480 --> 00:01:28,660
+Đây là trang Google dịch thì chúng ta sẽ dịch từ tiếng Việt sang tiếng Trung.
+
+15
+00:01:29,160 --> 00:01:32,640
+Tiếng Trung này thì anh chị em chủ động cho tôi là Trung phồn thể nhé.
+
+16
+00:01:33,020 --> 00:01:34,780
+Thì anh em tìm cho tôi là hoạt hình câu cá.
+
+17
+00:01:37,881 --> 00:01:46,141
+Thì bây giờ là chúng ta đã có một cái từ khóa bằng tiếng Trung, tiêu đề bằng tiếng Trung để chúng ta sao chép.
+
+18
+00:01:46,821 --> 00:01:50,981
+Anh chị em nhấn sao chép này. Bây giờ là sang cái app Douyin cho tôi.
+
+19
+00:01:51,501 --> 00:01:55,681
+Cái app Douyin này thì bây giờ ai có số điện thoại Việt Nam người ta đều đăng ký được rồi.
+
+20
+00:01:55,681 --> 00:02:09,181
+Nó không khó như ngày trước nữa. Bây giờ anh em hãy nhớ cho tôi là cứ lên cái YouTube thì anh em tìm kiếm là đăng ký tài khoản Douyin. Rất nhiều anh em hướng dẫn cho anh chị em là đăng ký cái app Douyin này. Thì đây là giao diện của Douyin thì anh em dán vào cho tôi.
+
+21
+00:02:10,000 --> 00:02:21,621
+Thì anh em có thể nhìn thấy những cái nguồn mà câu cá vạn cân như thế này đúng không? Thì anh em phải tư ghi cho tôi là người Trung Quốc rất là nhiều dân, tỷ lệ dân cứ một tỷ biết cách tận dụng những nguồn free này để sao chép.
+
+22
+00:02:21,621 --> 00:02:30,081
+thì chúng ta sẽ sử dụng nguồn như nào để làm ra video để cho người Việt chúng ta xem chúng ta có thể làm video ngoại cũng được. Anh em muốn làm cho nền tảng nào cũng được.
+
+23
+00:02:30,581 --> 00:02:34,581
+Thì anh em nhấn vào một cái video bất kỳ. Dù ở đây là tôi nhấn vào một cái video này.
+
+24
+00:02:35,401 --> 00:02:40,241
+Khi mà anh em nhấn vào một cái video bất kỳ thì đây là hoàn toàn là video bằng tiếng Trung.
+
+25
+00:02:40,701 --> 00:02:47,161
+Thì anh em khi mà anh em tìm anh em nhấn vào thử thì anh em biết là đây hoàn toàn tiếng Trung và chúng ta sẽ làm những cái bước cơ bản như sau.
+
+26
+00:02:47,161 --> 00:02:49,701
+Anh em nhớ nhấn Tim vào nhé
+
+27
+00:02:49,701 --> 00:02:52,501
+Thì bây giờ là anh em nhấn sao chép cái đường link này cho mình
+
+28
+00:02:52,501 --> 00:02:55,441
+Nhấn ở cái chỗ mà cái mũi tên này
+
+29
+00:02:55,441 --> 00:02:56,601
+Anh em nhấn sao chép
+
+30
+00:02:56,601 --> 00:02:58,501
+Chúng ta trở ra cái Cốc Cốc của chúng ta
+
+31
+00:02:58,501 --> 00:03:00,121
+Chúng ta ghi là Tải video
+
+32
+00:03:00,121 --> 00:03:01,341
+Douyin
+
+33
+00:03:02,050 --> 00:03:09,570
+Đó, anh chỉ nhấn vào một cái đường link tải bất kỳ nhé, anh em dán cái đường link vào.
+
+34
+00:03:11,910 --> 00:03:13,770
+Và bây giờ là chúng ta nhấn tải xuống.
+
+35
+00:03:15,330 --> 00:03:18,990
+Sau khi nó đã tải xong như thế này rồi thì chúng ta sẽ vào cho tôi là cái CapCut.
+
+36
+00:03:19,610 --> 00:03:21,570
+Sau khi tải xong thì chúng ta sẽ vào CapCut.
+
+37
+00:03:21,570 --> 00:03:25,870
+Thì đầu tiên anh em nhớ cho tôi là trong cái CapCut này thì chúng ta edit cơ bản.
+
+38
+00:03:26,070 --> 00:03:29,530
+Nó không giống như là những cái video pro là edit nâng cao.
+
+39
+00:03:29,650 --> 00:03:31,990
+Thì anh em nhấn cho tôi vào cái tạo dự án đầu tiên này.
+
+40
+00:03:32,050 --> 00:03:38,190
+Thì đây là cái giao diện mà chúng ta vừa nhấn vào trong CapCut để edit video thì anh em phải nhập video vào nhé.
+
+41
+00:03:38,890 --> 00:03:41,550
+Thì đây là tôi sẽ nhập video vào như thế này.
+
+42
+00:03:42,210 --> 00:03:45,350
+Thì bây giờ anh em vẫn nhớ cho tôi là anh em kéo cái video xuống này.
+
+43
+00:03:46,270 --> 00:03:53,170
+Vẫn nhớ cho tôi là tôi thường dạy anh em là nhớ là thanh trắng này ở đâu thì vị trí màn hình ở đó và số dây ở đấy.
+
+44
+00:03:53,690 --> 00:03:55,750
+Đây là điều cơ bản nhất để edit video.
+
+45
+00:03:56,000 --> 00:03:59,570
+Và bây giờ anh em mạnh nhớ cho tôi là cái yêu cầu ở đây là gì ạ?
+
+46
+00:03:59,570 --> 00:04:02,930
+Yêu cầu là chọn phần tách giọng nói.
+
+47
+00:04:03,350 --> 00:04:05,670
+Tắt hết các âm thanh hiệu ứng nhạc nền.
+
+48
+00:04:06,090 --> 00:04:07,650
+Thì chúng ta đi từng bước một nhé.
+
+49
+00:04:08,010 --> 00:04:08,650
+Vào CapCut này.
+
+50
+00:04:09,030 --> 00:04:10,470
+Anh em phải nhấn vào video nhé.
+
+51
+00:04:11,050 --> 00:04:12,770
+Anh em nhấn cho tôi cái mục âm thanh này.
+
+52
+00:04:13,450 --> 00:04:14,190
+Nhấn âm thanh này.
+
+53
+00:04:14,810 --> 00:04:17,450
+Và chúng ta nhấn là tách giọng nói nhé.
+
+54
+00:04:17,730 --> 00:04:18,790
+Anh em nhấn tách giọng nói.
+
+55
+00:04:18,890 --> 00:04:19,570
+Anh em giữ mỗi lần.
+
+56
+00:04:19,570 --> 00:04:20,150
+Chờ thôi nha
+
+57
+00:04:20,150 --> 00:04:22,770
+Thì anh em để chờ một lúc
+
+58
+00:04:22,770 --> 00:04:26,550
+Thì nó sẽ tách hết toàn bộ cái âm thanh nhạc nền ra cho anh em
+
+59
+00:04:26,550 --> 00:04:27,131
+Đấy
+
+60
+00:04:27,131 --> 00:04:31,831
+Đấy, ở phần âm thanh này. Đấy, tôi đang tách thì nó đang tách được 13% rồi.
+
+61
+00:04:32,351 --> 00:04:37,871
+Thì như cái đoạn này tôi sẽ tua và tôi cắt bỏ đi để cho anh em biết là anh em phải tách cái giọng nói này đi.
+
+62
+00:04:37,871 --> 00:04:48,471
+Đang làm bước này thì tôi sẽ đi đến cái bước sau luôn là anh em nhớ cho tôi là dịch tiếng Trung sang tiếng Việt nhé. Đây là một cái đoạn mà tôi đã ghi ở trong này rồi.
+
+63
+00:04:49,000 --> 00:04:57,591
+Thì đối với dịch tiếng Trung sang tiếng Việt thì anh em nhấn cho tôi vào cái văn bản này. Đây là cái phần văn bản nhé. Anh em nhấn cho tôi cái phụ đề tự động này.
+
+64
+00:04:57,591 --> 00:05:04,921
+Thì ở đây là anh em thấy không? Anh em nhấn vào ngôn ngữ nói. Ngôn ngữ nói này là video của anh em là
+
+65
+00:05:04,921 --> 00:05:12,251
+tiếng Trung hoặc là video tiếng Anh hoặc video bất kỳ thứ tiếng gì đó thì anh em nhấn vào thứ tiếng đấy, tiếng Trung.
+
+66
+00:05:12,451 --> 00:05:23,311
+Thì tôi muốn dịch sang tiếng gì? Ví dụ tiếng Trung tôi muốn dịch sang tiếng Anh cũng được. Anh em muốn dịch sang tiếng Nhật cũng được, tiếng Hàn cũng được. Và tôi sẽ dịch sang tiếng Việt nhé. Và tôi nhấn tạo.
+
+67
+00:05:23,311 --> 00:05:29,191
+Rất nhanh thôi thì nó đã tạo ra cho tôi phụ đề dòng trên của anh chị là tiếng Trung và dòng dưới là tiếng Việt.
+
+68
+00:05:29,711 --> 00:05:33,171
+Thì anh chị em hãy nhớ cho tôi là anh chị em xóa tiếng Trung dòng trên đi nhé.
+
+69
+00:05:34,000 --> 00:05:42,473
+Và bây giờ là gì ạ? Anh chị em chọn hết những cái văn bản này cho tôi và anh chị em nhấn chuyển đổi văn bản thành giọng nói. Nhớ là anh chị để một
+
+70
+00:05:42,473 --> 00:05:51,247
+tiếng Việt nhé. Và bây giờ là anh chị rê con chuột này ở cái mũi tên của vị trí ở trên màn hình của tôi. Thì anh chị nhấn chọn tất cả này. Và bắt
+
+71
+00:05:51,247 --> 00:06:00,020
+đầu là chúng ta nhấn vào chú tích chuyển đổi văn bản thành giọng nói nhé. Đấy thì anh chị kéo lên hoặc anh chị nhấn tìm ngôn ngữ là tiếng Việt này. Tiếng Việt nhé.
+
+72
+00:06:00,020 --> 00:06:10,013
+thì ở đây là có một cái giọng đặc trưng của cái review phim này thì anh chị em chọn cho tôi là cô gái hoạt ngôn nhé anh chị em nhấn tạo giọng nói ở đây là không phải anh
+
+73
+00:06:10,013 --> 00:06:20,007
+chị em nhấn tạo giọng nói này anh em để không vậy đâu thì ở trong cái tài liệu tôi đã ghi rõ rồi là anh em phải để cái giọng này khi anh em dịch ra nó là tốc
+
+74
+00:06:20,007 --> 00:06:30,000
+độ 1.2 đợi một lúc thì nó đã dịch ra cho anh em những cái giọng như thế này rồi nhé anh em có thể kéo những cái thanh to nhỏ ra để anh em để ý như thế này đó
+
+75
+00:06:30,020 --> 00:06:33,120
+Và bây giờ là để như thế này không thì không được.
+
+76
+00:06:33,620 --> 00:06:37,680
+Thì bây giờ chúng ta sẽ chọn tất cả những phần âm thanh ở dưới như thế này nhé.
+
+77
+00:06:37,900 --> 00:06:41,240
+Anh em không được chọn thêm cái video và thêm những cái văn bản này.
+
+78
+00:06:41,800 --> 00:06:43,260
+Và anh em nhấn cho tôi tốc độ nhé.
+
+79
+00:06:43,720 --> 00:06:46,300
+Bây giờ chúng ta sẽ để tốc độ là 1.2.
+
+80
+00:06:46,960 --> 00:06:48,660
+Cố định cho tôi là 1.2 nhé.
+
+81
+00:06:49,080 --> 00:06:51,100
+Và một cái điều ghi nhớ nữa.
+
+82
+00:06:51,100 --> 00:06:56,880
+Khi anh em để tốc độ thì dưới cái phần tốc độ đấy nó có một cái phần thay đổi âm thanh độ cao nhé.
+
+83
+00:06:56,880 --> 00:07:01,480
+thay đổi âm thanh độ cao mà trong tài liệu tôi đã ghi cực kì rõ này
+
+84
+00:07:01,480 --> 00:07:05,080
+cho tốc độ 1.2 giữ ở cao độ âm thanh nhé
+
+85
+00:07:05,080 --> 00:07:07,080
+giữ cao độ âm thanh
+
+86
+00:07:07,080 --> 00:07:12,880
+đấy và bây giờ chúng ta sẽ cho nhỏ cái âm thanh nhạc của video này đi
+
+87
+00:07:12,880 --> 00:07:16,880
+anh em để cho tôi là dưới tầm 24
+
+88
+00:07:16,880 --> 00:07:18,616
+xuống nha -24.2 dB
+
+89
+00:07:18,616 --> 00:07:22,616
+Anh em để tiếng như này cho tôi. Và anh em hãy nghe này.
+
+90
+00:07:22,616 --> 00:07:23,956
+Cá nhỏ, hàng triệu cân cá sông.
+
+91
+00:07:24,756 --> 00:07:29,000
+Thì chúng ta khi mà chúng ta đã cho nhỏ rồi thì nó không bị áp những cái tiếng Việt của chúng ta nữa.
+
+92
+00:07:29,000 --> 00:07:37,456
+Thì sau khi đó thì anh chị nhấn cho tôi là nhấn vào cái video này hoặc là anh chị nhấn cho tôi là Ctrl C và Ctrl V.
+
+93
+00:07:37,676 --> 00:07:39,656
+Chúng ta sẽ tạo ra 2 cái video như thế này.
+
+94
+00:07:40,236 --> 00:07:44,116
+Thì cái video ở trên thì anh em tắt hết toàn bộ âm thanh đi cho tôi nhé.
+
+95
+00:07:44,916 --> 00:07:45,536
+Tắt hết âm thanh.
+
+96
+00:07:46,136 --> 00:07:51,976
+Và bây giờ là chúng ta sẽ sử dụng một cái Mờ để che những cái chữ tiếng Trung này đi.
+
+97
+00:07:51,976 --> 00:07:54,736
+Và anh chị em nhấn cho tôi vào phần hiệu ứng nhé.
+
+98
+00:07:55,256 --> 00:08:00,456
+Thì trong phần hiệu ứng này thì anh em tìm cho tôi chữ Mờ nhé.
+
+99
+00:08:01,316 --> 00:08:02,396
+Chữ Mờ bằng tiếng Anh nhé.
+
+100
+00:08:02,556 --> 00:08:04,656
+Anh chị em thêm cái Mờ này vào cho tôi nhé.
+
+101
+00:08:04,756 --> 00:08:05,736
+Thì anh em kéo dài ra.
+
+102
+00:08:06,296 --> 00:08:08,916
+Kéo dài ra thẳng hết toàn bộ cái video nhé.
+
+103
+00:08:09,596 --> 00:08:10,596
+Tôi sẽ kéo dài ra.
+
+104
+00:08:11,276 --> 00:08:13,356
+Thì anh em kéo giữa 2 cái video này.
+
+105
+00:08:13,696 --> 00:08:14,656
+Kéo cái Mờ này vào nhé.
+
+106
+00:08:14,756 --> 00:08:16,356
+Anh em giữ chuột phải này.
+
+107
+00:08:16,896 --> 00:08:18,136
+Anh em kéo thẳng xuống như thế này.
+
+108
+00:08:18,136 --> 00:08:21,956
+Anh em nhớ cho tôi là anh em phải nhấn vào cái video ở trên này nhé.
+
+109
+00:08:21,976 --> 00:08:33,236
+Và anh em nhấn cho tôi vào phần video này. Có phần cơ bản xóa nền và mặt nạ. Thì anh em nhấn vào cho tôi cái mặt nạ này. Và sau đó anh em nhấn cho tôi cái thêm mặt nạ này nhé.
+
+110
+00:08:33,500 --> 00:08:42,000
+Thì nó sẽ ra cái hình vuông như thế này. Bây giờ là anh em điều chỉnh cho tôi khoảng cách nhé. Anh em để cho tôi như thế này đi. Và kéo hạn xuống như thế này.
+
+111
+00:08:43,260 --> 00:08:51,440
+Thì bây giờ là anh em kéo cho tôi cái này để cho nó vuông tròn tròn, nó mờ tròn nhé. Sau khi đã xong rồi thì anh em nhớ cho tôi này.
+
+112
+00:08:51,920 --> 00:09:02,220
+Anh em nhìn cho tôi ở dưới cái mặt nạ này đúng không? Thì có cái tùy chọn mặt nạ tách sang này. Thì nó có cái đảo ngược như thế này nhé. Anh em nhấn cho tôi một cái luôn.
+
+113
+00:09:02,220 --> 00:09:11,860
+thì cái chữ ở dưới cái video này nó đã mờ rồi thì cái tiếng Việt của chúng ta có thể hoàn toàn đè lên nó và để mờ nó cao hơn
+
+114
+00:09:11,860 --> 00:09:21,500
+thì anh chị em nhấn vào cái mờ này nhé anh chị em kéo lên cho tôi là 100% này mờ 100% anh em nếu mà để như này thì chúng
+
+115
+00:09:21,500 --> 00:09:31,140
+ta sẽ để mờ đúng như này cho tôi và tiếp theo là gì ạ những cái văn bản như thế này thì anh em chọn cho tôi vào văn bản này
+
+116
+00:09:31,140 --> 00:09:33,140
+và phông chữ nhé
+
+117
+00:09:33,140 --> 00:09:35,140
+phông chữ thì anh em nhấn cho tôi là
+
+118
+00:09:35,140 --> 00:09:37,140
+Anton này
+
+119
+00:09:37,140 --> 00:09:39,140
+tôi thường để chữ Anton này
+
+120
+00:09:39,140 --> 00:09:41,140
+và anh chị em chọn cho tôi cái màu vàng
+
+121
+00:09:41,140 --> 00:09:43,140
+hoặc là bất kỳ cái màu gì
+
+122
+00:09:43,140 --> 00:09:45,140
+mà anh chị em muốn ở phần hiệu ứng này
+
+123
+00:09:45,140 --> 00:09:47,140
+đều có, đây là tùy theo phong cách của anh em
+
+124
+00:09:47,140 --> 00:09:49,140
+sau khi đã xong như thế này rồi nhé
+
+125
+00:09:49,140 --> 00:09:51,140
+đây là một cái video
+
+126
+00:09:51,140 --> 00:09:52,520
+đoạn video hoàn chỉnh như thế này.
+
+127
+00:09:52,980 --> 00:09:53,720
+Cô biết anh ta không?
+
+128
+00:09:54,460 --> 00:09:55,280
+Nghe nói về anh ta,
+
+129
+00:09:55,680 --> 00:09:56,820
+cùng Tăng Thiên Quốc là anh em,
+
+130
+00:09:57,220 --> 00:09:57,700
+10 năm trước,
+
+131
+00:09:57,760 --> 00:09:58,580
+bởi vì con cá âm dương
+
+132
+00:09:58,580 --> 00:09:59,460
+mà Tăng Thiên Quốc bắt được.
+
+133
+00:09:59,740 --> 00:10:01,080
+Sau đó thì chúng ta sẽ
+
+134
+00:10:01,080 --> 00:10:02,720
+làm một cái ảnh thumbnail.
+
+135
+00:10:02,900 --> 00:10:03,740
+Cái ảnh thumbnail này
+
+136
+00:10:03,740 --> 00:10:05,240
+là cái ảnh mà đơn giản
+
+137
+00:10:05,240 --> 00:10:07,140
+để tí nữa chúng ta sẽ đưa ra
+
+138
+00:10:07,140 --> 00:10:08,420
+ChatGPT tạo hình ảnh
+
+139
+00:10:08,420 --> 00:10:10,060
+có tỷ lệ click cao.
+
+140
+00:10:10,220 --> 00:10:11,000
+Thì đầu tiên thì
+
+141
+00:10:11,000 --> 00:10:16,520
+để tạo một cái hình ảnh thumbnail thì chúng ta sẽ không biết là nội dung ở trong cái video này như thế nào
+
+142
+00:10:16,520 --> 00:10:22,041
+thì chúng ta lại lấy ở cái tiêu đề mà cái video lúc nãy mà chúng ta đã tải xuống nha anh chị em nhé
+
+143
+00:10:22,041 --> 00:10:25,821
+Khi anh em nhấn vào video này thì anh em nhấn vào những dòng chữ này cho tôi nhé.
+
+144
+00:10:26,241 --> 00:10:28,421
+Thì nó sẽ ra cho anh em một cái bảng như thế này.
+
+145
+00:10:29,521 --> 00:10:34,041
+Và bây giờ là gì ạ? Anh em đưa sang cho tôi là cái ChatGPT của anh em nhé.
+
+146
+00:10:34,261 --> 00:10:38,861
+Anh em copy toàn bộ cái dòng chữ này rồi. Sau đó thì chúng ta sẽ sang cái ChatGPT này.
+
+147
+00:10:39,621 --> 00:10:46,281
+Bây giờ anh em dán vào đây. Anh em ghi cho tôi là dịch văn bản này cho tôi sang tiếng Việt.
+
+148
+00:10:46,281 --> 00:10:53,021
+Đó thì sau khi chúng ta dịch văn bản này sang tiếng Việt rồi thì anh em biết là nội dung ở trong video này là gì ạ?
+
+149
+00:10:53,441 --> 00:10:59,121
+Chuyện của người câu cá tình cha bao la như núi lớn thì chúng ta copy cho tôi cái này.
+
+150
+00:11:00,721 --> 00:11:02,341
+Copy cho tôi một cái đoạn này nhé.
+
+151
+00:11:02,821 --> 00:11:10,081
+Ở trong cái CapCut này anh em nhớ cho tôi là chúng ta sẽ tạo ra một cái hình thumbnail thì chúng ta sẽ lấy một cái đoạn bất kỳ ở trong video này.
+
+152
+00:11:10,081 --> 00:11:13,461
+Anh em để cho cái này to ra như thế này để cho nó dễ nhìn.
+
+153
+00:11:13,461 --> 00:11:20,021
+Sau khi lấy được một cái đoạn như thế này thì anh em nhấn vào chỗ cái ảnh bìa này cho tôi. Nhấn chỉnh sửa ảnh bìa này.
+
+154
+00:11:20,550 --> 00:11:24,530
+Và bây giờ là gì ạ? Chúng ta sẽ nhấn vào cái văn bản này cho tôi nhé.
+
+155
+00:11:25,130 --> 00:11:30,390
+Văn bản này. Anh em sẽ kéo xuống cho tôi và tìm cho tôi đúng cái ngôn ngữ này nhé.
+
+156
+00:11:30,470 --> 00:11:31,850
+Đó. Và anh em dán vào đây.
+
+157
+00:11:36,670 --> 00:11:39,150
+Đó. Và bây giờ anh em x hết những cái này này.
+
+158
+00:11:50,550 --> 00:12:00,550
+Anh em có thể để màu chữ, tôi sẽ để màu này là màu trắng đi, hoặc màu đen đều được nhé.
+
+159
+00:12:00,550 --> 00:12:08,470
+Đấy, và sau đó thì anh em nhấn Lưu. Cái này, cái thumbnail này hoàn toàn chưa dùng được nhé
+
+160
+00:12:08,470 --> 00:12:16,390
+anh em nhé. Đây là chỉ là cái thumbnail demo để tí chúng ta tạo ra hình ảnh thumbnail khác.
+
+161
+00:12:16,390 --> 00:12:19,390
+và anh chị em nhớ nhấn cho tôi xuất ra nhé
+
+162
+00:12:19,390 --> 00:12:21,050
+tôi sẽ nhấn xuất ra
+
+163
+00:12:21,050 --> 00:12:23,310
+xuất ra
+
+164
+00:12:23,310 --> 00:12:29,350
+nhớ cho tôi để độ phân giải là 1080 là được nhé
+
+165
+00:12:29,350 --> 00:12:32,870
+chứ không cần anh em nhất thiết phải để 2k, 4k đâu
+
+166
+00:12:32,870 --> 00:12:35,950
+chẳng để làm gì cả, nó nặng MB của YouTube thì nó càng ghét thôi
+
+167
+00:12:36,000 --> 00:12:41,510
+Sau khi đã xuất ra xong rồi thì chúng ta sẽ vào cho tôi cái tài liệu này
+
+168
+00:12:41,510 --> 00:12:44,330
+Trong cái tài liệu thì nó có một cái câu prompt như thế này nhé
+
+169
+00:12:44,330 --> 00:12:49,130
+Anh em nhấn sao chép và anh em nhìn vào thì anh em biết ra được những cái câu prompt như thế này
+
+170
+00:12:49,130 --> 00:12:51,750
+Sau đó thì sang cho tôi cái ChatGPT nhé
+
+171
+00:12:51,750 --> 00:12:56,390
+Thì anh em dán cho tôi cái hình ảnh mà lúc nãy chúng ta vừa tạo cùng cái video vào
+
+172
+00:12:56,390 --> 00:13:00,570
+Đây là một cái video và một cái hình ảnh
+
+173
+00:13:00,570 --> 00:13:02,230
+Thì chúng ta dán hình ảnh vào đây
+
+174
+00:13:02,230 --> 00:13:05,030
+Bây giờ chúng ta sẽ tạo lại
+
+175
+00:13:05,030 --> 00:13:06,400
+Thì anh em nhấn tạo hình ảnh
+
+176
+00:13:06,400 --> 00:13:13,620
+nhấn màn ảnh rộng nhé. Anh em nhấn tạo này. Thì đợi một lúc thôi thì ChatGPT sẽ cho
+
+177
+00:13:13,620 --> 00:13:20,840
+chúng ta một hình ảnh thumbnail có cảm xúc mạnh hơn, có tương lai, có gay cấn hơn nhé.
+
+178
+00:13:21,000 --> 00:13:29,500
+Thì anh em có thể nhìn thấy đây. Trên này là một hình ảnh mà chúng ta vừa lấy trong video review phim đúng không?
+
+179
+00:13:29,820 --> 00:13:34,660
+Thì ở dưới chúng ta đã tạo ra một hình ảnh thumbnail nó bám sát hình ảnh thumbnail gốc rồi.
+
+180
+00:13:34,660 --> 00:13:38,620
+Thì bây giờ anh em nhấn tải xuống, tải xuống như thế này nhé.
+
+181
+00:13:39,840 --> 00:13:42,980
+Đấy là chúng ta đã hoàn thành một cái video và hình ảnh thumbnail này nhé.
+
+182
+00:13:48,300 --> 00:13:56,860
+Đấy là cái chủ đề mà review phim mà cho anh em mới đầu, mới tập làm YouTube thì anh em nên làm những cái đơn giản trước.
+
+183
+00:13:56,860 --> 00:14:02,880
+Sau đó thì chúng ta sẽ làm những cái pro sau thì những cái pro thì nó sẽ liên quan đến thiết kế nhiều hơn.
+
+184
+00:14:03,240 --> 00:14:04,460
+Ok, chào anh chị em học viên.

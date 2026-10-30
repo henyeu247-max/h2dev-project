@@ -1,0 +1,81 @@
+{
+  "sku": "VIDEO-9aff6d",
+  "title": "4 video nổ hơn 300k view - Update 2 ngách mới cực kỳ trends và hướng dẫn edit tạo khung cho ngách nhỏ...",
+  "actual_topic": "4 Video nổ 300k view ngách Xe cộ Nhật (@kurumanozokitai), Trí tuệ người xưa (@昔の人の知恵) & Kỹ thuật tạo khung viền (Frame Overlay) né quét",
+  "category_group": "ban_content",
+  "niche_primary": "Xe Cộ & Trí Tuệ Dân Gian Nhật Bản",
+  "niche_id": "auto-and-ancient-wisdom-jp",
+  "target_market": "Nhật Bản",
+  "market_code": "JP",
+  "key_takeaways": [
+    "Ngách xe điện/ô tô Nhật: kênh dùng kênh cổ 2011, video đầu cách đây 1 ngày, spam 2 video/ngày mà vẫn nổ; tiêu đề giải thích về biến động xe điện (ví dụ Hyundai bên bờ vực phá sản vì sai lầm chiến lược xe điện) và có từ khóa 'giải thích chi tiết' ở cuối mỗi tiêu đề; nền là video tự quay hoặc nguồn free, lớp trên ghép hình AI.",
+    "Ngách mẹo vặt cuộc sống kiểu 'mẹo xưa' thị trường Nhật: kênh mới 4 video, đăng cách 3 ngày một video, có video hơn 50k view (ví dụ tiêu đề về lọc nước), dùng toàn hình AI; tác giả vẫn khuyên ghép thêm video tự nhiên cho chỉnh chu và an toàn.",
+    "Kênh sức khỏe của học viên bộ rổ (hơn 15 video, hơn 600 sub): video đầu hơn 400 view, video thứ 3 bắt đầu nổ, có video hơn 20k view; kênh mới cần khoảng 10-15 video mới xác định được.",
+    "Phải bám đúng từ khóa của video cao view (ví dụ 'tai biến', 'dấu hiệu ung thư'); video dùng từ khóa không có ai quan tâm (như 'thấp khớp') chỉ vài chục view.",
+    "Cách làm khung viền kênh đối thủ: chụp màn hình khung rồi nhờ ChatGPT tạo ảnh khung giống mẫu, đổi tên kênh và màu (ví dụ từ xanh sang đỏ) rồi ghép các video vào khung khi edit; kênh US dùng để lấy kịch bản nhân bản sang Việt, Nhật, Hàn vì làm thẳng ở US rất khó cạnh tranh."
+  ],
+  "edit_sop": {
+    "primary": "Tạo khung viền cho video bằng ChatGPT tạo ảnh theo khung của kênh đối thủ rồi ghép video vào",
+    "additional": [
+      "Chụp màn hình khung của kênh đối thủ rồi đưa vào ChatGPT tạo ảnh, yêu cầu làm giống khung mẫu.",
+      "Đổi tên kênh và màu theo ý mình (ví dụ khung đỏ thay vì xanh), ô hình bác sĩ ngồi làm màu xanh.",
+      "Lưu ảnh khung về, ghép video tự nhiên vào khung hình chữ nhật.",
+      "Ghép nhân vật bác sĩ vào khung hình dọc rồi edit ghép các video lại với nhau.",
+      "Muốn khác phong cách đối thủ thì ghi yêu cầu để AI thiết kế lại phong cách khác."
+    ]
+  },
+  "avoid_flags": [
+    "Đừng làm ở thị trường US vì cạnh tranh rất cao, nên lấy kịch bản về nhân bản sang Việt hoặc Nhật Hàn.",
+    "Không làm tùy ý muốn làm gì thì làm, phải bám theo từ khóa của video cao view nếu không sẽ không đúng ngách và không lên.",
+    "Kênh mới phải làm khoảng 10 đến 15 video mới xác định được kênh có lên hay không."
+  ],
+  "tools_mentioned": [
+    "ChatGPT"
+  ],
+  "channels_mentioned": [
+    "@kurumanozokitai",
+    "@昔の人の知恵",
+    "@DoctorJohnMeyers",
+    "@EricBennettMD"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:01",
+      "seconds": 1,
+      "label": "Phân tích hiện tượng kênh xe hơi Nhật @kurumanozokitai 4 video nổ 300k view"
+    },
+    {
+      "time": "02:41",
+      "seconds": 161,
+      "label": "Khám phá ngách trí tuệ người xưa @昔の人の知恵"
+    },
+    {
+      "time": "05:16",
+      "seconds": 316,
+      "label": "Hướng dẫn kỹ thuật thiết kế khung viền (Frame Overlay) thay đổi mã băm video"
+    },
+    {
+      "time": "07:58",
+      "seconds": 478,
+      "label": "Khai thác nguồn kịch bản sức khỏe chuyên nghiệp từ 2 bác sĩ Mỹ"
+    },
+    {
+      "time": "10:20",
+      "seconds": 620,
+      "label": "Show ảnh kênh học viên Pro và bài học chọn từ khóa xu hướng thực tế"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-9aff6d/transcript.txt",
+  "sop_steps": [
+    "Chụp màn hình khung của kênh đối thủ rồi đưa vào ChatGPT tạo ảnh, yêu cầu làm giống khung mẫu.",
+    "Đổi tên kênh và màu theo ý mình (ví dụ khung đỏ thay vì xanh), ô hình bác sĩ ngồi làm màu xanh.",
+    "Lưu ảnh khung về, ghép video tự nhiên vào khung hình chữ nhật.",
+    "Ghép nhân vật bác sĩ vào khung hình dọc rồi edit ghép các video lại với nhau.",
+    "Muốn khác phong cách đối thủ thì ghi yêu cầu để AI thiết kế lại phong cách khác."
+  ]
+}

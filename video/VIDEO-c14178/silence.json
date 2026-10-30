@@ -1,0 +1,13 @@
+{
+  "noise_db": -35,
+  "min_duration": 2.5,
+  "silence_regions": [
+    {
+      "start": 306.44,
+      "duration": 2.72,
+      "end": 309.16
+    }
+  ],
+  "silence_count": 1,
+  "silence_total_sec": 2.72
+}

@@ -1,0 +1,77 @@
+{
+  "key_takeaways": [
+    "Tác giả hướng dẫn chỗ lấy prompt và tài liệu: ở phần mô tả dưới video có hai file tài liệu, chỉ cần di chuột bấm vào là chuyển tới trang tài liệu, hoặc bấm chuột phải để mở tab khác mà không gián đoạn video đang xem.",
+    "Kênh thị trường Nhật đang dùng kênh cổ, hơn 500.000 view, đọc tiêu đề dịch ra thì ngách là vụ án mất tích, và tiêu đề luôn có ba phần là từ khóa chính, từ khóa phụ để gây chú ý và từ khóa ngách là mất tích.",
+    "Kênh đó chỉ edit một ảnh kèm giọng đọc Eleven Lab, nhưng tác giả khuyên nên edit nhiều ảnh hoặc ghép thêm video tự nhiên miễn phí bản quyền, vì đợt update ngày 15 tháng 7 YouTube đã siết chính sách và một ảnh có khi không bật kiếm tiền được.",
+    "Muốn tìm thêm kênh đối thủ thì xem nhiều video cùng dạng, YouTube sẽ tự đề xuất ở bên phải hoặc ngoài trang chủ; kênh Hàn Quốc 21 video kể chuyện người già, nên xem kỹ video update ngày 8 tháng 8 và ngày 15 tháng 8.",
+    "Tác giả sẽ ra thêm video về tool và về cách mua kênh cổ, mail cổ, và nhắc nên tập trung vào một ngách chứ không nhảy từ ngách này sang ngách khác hay ôm nhiều ngách một lúc."
+  ],
+  "edit_sop": {
+    "primary": "Phân tích ngách mất tích (Nhật Bản) và ngách người già (Hàn Quốc), cách tìm kênh đối thủ và dựng video",
+    "additional": [
+      "Dịch tiêu đề video của kênh đối thủ ra để phân tích; tiêu đề luôn có từ khóa chính, từ khóa phụ và từ khóa ngách",
+      "Xem nhiều video của một kênh thì YouTube tự đề xuất kênh đối thủ tương tự ở bên phải hoặc ở trang chủ",
+      "Dựng dạng này đơn giản: chỉ cần âm thanh, kịch bản rồi ghép video, ảnh vào",
+      "Giọng đọc tạo bằng ElevenLabs hoặc MiniMax",
+      "Prompt và tài liệu lấy ở phần mô tả (description) dưới video"
+    ]
+  },
+  "avoid_flags": [
+    "Không nên chỉ dùng một ảnh, nên làm nhiều ảnh hoặc ghép video free không bản quyền vì chính sách YouTube siết chặt sau đợt update ngày 15/7, một ảnh có khi bật kiếm tiền không được",
+    "Không nhảy từ ngách này sang ngách khác hoặc ôm nhiều ngách một lúc, nên tập trung vào một ngách"
+  ],
+  "verified_expert_summary": true,
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Share key mới; chỉ chỗ lấy prompt và tài liệu"
+    },
+    {
+      "time": "01:53",
+      "seconds": 113,
+      "label": "Sẽ có video riêng về nguồn mua kênh cổ; xem kênh mẫu ở mục Phổ biến"
+    },
+    {
+      "time": "03:40",
+      "seconds": 220,
+      "label": "từ khóa chính và từ khóa ngách (ví dụ ngách mất tích)"
+    },
+    {
+      "time": "05:30",
+      "seconds": 330,
+      "label": "Edit đơn giản: có âm thanh, kịch bản rồi ghép video, ảnh"
+    },
+    {
+      "time": "07:23",
+      "seconds": 443,
+      "label": "Kênh mới 21 video view tốt; dạng kể chuyện nghiêng về người già"
+    }
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "Google Dịch",
+    "ChatGPT",
+    "ElevenLabs"
+  ],
+  "sop_steps": [
+    "Dịch tiêu đề video của kênh đối thủ ra để phân tích; tiêu đề luôn có từ khóa chính, từ khóa phụ và từ khóa ngách",
+    "Xem nhiều video của một kênh thì YouTube tự đề xuất kênh đối thủ tương tự ở bên phải hoặc ở trang chủ",
+    "Dựng dạng này đơn giản: chỉ cần âm thanh, kịch bản rồi ghép video, ảnh vào",
+    "Giọng đọc tạo bằng ElevenLabs hoặc MiniMax",
+    "Prompt và tài liệu lấy ở phần mô tả (description) dưới video"
+  ],
+  "sku": "VIDEO-82f8a8",
+  "title": "Share Key MỚI NHẤT Update 23/08/2025 - Ngách nhỏ thị trường Nhật Bản",
+  "actual_topic": "Share Key MỚI NHẤT Update 23/08/2025 - Ngách nhỏ thị trường Nhật Bản",
+  "channels_mentioned": [
+    "@黒猫の予言",
+    "@誇りを守った日本人.8386"
+  ],
+  "visual_audio_checked": true,
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "source_transcript": "video/VIDEO-82f8a8/transcript.txt",
+  "market_code": "JP",
+  "target_market": "Nhật Bản",
+  "niche_primary": "Bán Content & Phát Triển Kênh"
+}

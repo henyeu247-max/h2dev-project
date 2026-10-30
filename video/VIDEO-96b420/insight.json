@@ -1,0 +1,127 @@
+{
+  "sku": "VIDEO-96b420",
+  "title": "Quy Trình Sản Xuất Video Hội Thoại Tiếng Anh",
+  "Track": "T2",
+  "module_id": "DGMD-M05",
+  "duration_sec": 1020.27,
+  "Step": "M05.1 — Quy trình sản xuất video Hội thoại Tiếng Anh 3D Pixar (ChitChat English Style)",
+  "Validation": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "Action": "Dùng câu lệnh trong Google Docs yêu cầu ChatGPT viết kịch bản hội thoại tiếng Anh công sở giữa Nam và Nữ chia thành 2 cột song song (Tiếng Anh – Tiếng Việt) -> Tiếp tục dùng 3 câu lệnh trên ChatGPT tạo hình ảnh đồng nhất phong cách 'Pixar Cinematic 3D Style' gồm: Nhân vật Nam (9:16, góc trung cảnh, quay mặt sang trái), Nhân vật Nữ (9:16, góc trung cảnh, quay mặt sang phải) và Bối cảnh công sở (16:9, không có người) -> Đưa vào CapCut PC xếp bối cảnh 16:9 ở dưới, bật 'Xóa nền -> Xóa tự động' cho 2 nhân vật đứng hai bên nhìn vào nhau và gắn hiệu ứng 'Máy ảnh rung' (Tốc độ 1, Khoảng cách 1) -> Lên Picsart xóa nền trắng tạo cặp bong bóng thoại (Speech Bubble) màu trắng có mũi nhọn chỉ về phía Nam và Nữ -> Đưa bong bóng thoại vào CapCut, dán từng câu thoại tiếng Anh (phông Anton, cỡ 9), bấm 'Chuyển đổi văn bản thành giọng nói' (Text to Speech) chọn giọng đọc Nam & Nữ đối đáp so le, bật 'Chuẩn hóa âm lượng' (-23 LUFS) cho toàn bộ rãnh thoại và bấm 'Ảnh bìa' lưu trực tiếp khung hình trong video làm Thumbnail.",
+  "summary": "Bài 15 mở đầu Module 5 hướng dẫn quy trình sản xuất dòng video Hội thoại Tiếng Anh (English Conversation for Beginners) theo mô hình kênh đối thủ ChitChat English (@ChitChat0 — có video đạt 7,6 triệu và 3,1 triệu lượt xem, mang tính Evergreen bền vững qua nhiều năm). Chỉ với 3 công cụ duy nhất gồm ChatGPT, Picsart và CapCut PC, giảng viên hướng dẫn từ cách viết câu lệnh tạo kịch bản hội thoại chia 2 cột Anh – Việt (giúp người không biết tiếng Anh vẫn dễ dàng biên tập), tạo bộ 3 hình ảnh đồng nhất phong cách 'Pixar Cinematic 3D Style' đúng tỷ lệ (2 nhân vật 9:16 góc trung cảnh quay mặt đối diện nhau + 1 bối cảnh 16:9 không người), tách nền tự động và làm chuyển động lắc nhẹ bằng hiệu ứng 'Máy ảnh rung', tự thiết kế cặp bong bóng thoại riêng trên Picsart, đến kỹ thuật lồng tiếng TTS Nam/Nữ đối đáp so le, chuẩn hóa âm lượng (-23 LUFS) và trích xuất Ảnh bìa làm Thumbnail ngay trên CapCut.",
+  "key_takeaways": [
+    "Khảo sát kênh đối thủ mẫu ChitChat English (@ChitChat0 — video 'Start Speaking English Today, Easy Conversation For Beginners!' đạt 7,6 triệu views, 'Essential Conversations for Beginners' đạt 3,1 triệu views): Dòng nội dung học giao tiếp tiếng Anh qua hội thoại hoạt hình có tuổi thọ (Evergreen) kéo dài nhiều năm và thu hút lượng xem toàn cầu bền vững.",
+    "Kỹ thuật viết Prompt kịch bản hội thoại cho người không rành ngoại ngữ: Yêu cầu ChatGPT sáng tạo cuộc trò chuyện tiếng Anh đánh dấu rõ lượt thoại Nam/Nữ và chia đều thành 2 mục song song (1 bên Tiếng Anh, 1 bên Tiếng Việt) để người dựng hiểu rõ nghĩa từng câu và không ghép nhầm thứ tự.",
+    "3 quy tắc vàng khi tạo ảnh trên ChatGPT: (1) Hai nhân vật phải tạo ở tỷ lệ dọc 9:16 với góc nhìn trung cảnh (từ đùi trở lên), còn bối cảnh nền bắt buộc tạo ở tỷ lệ ngang 16:9 và không có con người; (2) Một nhân vật quay mặt sang trái, nhân vật kia quay mặt sang phải để khi ghép lên màn hình hai người nhìn vào nhau đối thoại tự nhiên; (3) Giữ cố định 1 phong cách đồ họa xuyên suốt kênh ('Pixar Cinematic 3D Style').",
+    "Xử lý nhân vật & bong bóng thoại chống trùng lặp (Anti-Reused Content): Trên CapCut PC, bật 'Xóa nền -> Xóa tự động' cho 2 nhân vật rồi gắn hiệu ứng 'Máy ảnh rung' (chỉnh Tốc độ = 1, Khoảng cách = 1) để nhân vật có nhịp cử động nhẹ; đồng thời tự thiết kế cặp bong bóng thoại (Speech Bubble) nền trong suốt trên Picsart thay vì dùng mẫu có sẵn của CapCut.",
+    "Kỹ thuật dựng thoại đối đáp, chuẩn hóa âm lượng & xuất Thumbnail: Chọn cố định 1 giọng đọc TTS Nam và 1 giọng TTS Nữ tiếng Anh trên CapCut, chỉ copy phần lời thoại (bỏ chữ 'Nam:'/'Nữ:' ở đầu câu), xếp chữ và âm thanh so le theo từng lượt nói, bôi đen toàn bộ các đoạn âm thanh bật 'Chuẩn hóa âm lượng' (-23 LUFS) và bấm nút 'Ảnh bìa' đầu timeline để lưu ngay khung hình hội thoại làm Thumbnail."
+  ],
+  "tools_mentioned": [
+    "Google Docs",
+    "ChatGPT",
+    "Picsart",
+    "CapCut"
+  ],
+  "prompts_shown": [
+    "Câu lệnh tạo câu thoại (ChatGPT): '- hãy sáng tạo cho tôi 1 cuộc trò chuyện bằng tiếng anh , giữa 1 nam thanh niên và 1 cô gái , sáng tạo câu chuyện ngày mới , bắt đầu nơi làm việc tại công sở , đánh dấu cuộc trò chuyện nam và nữ , cố định cuộc hội thoại này bằng tiếng anh , chia đều sang thành 2 mục đôi bên , 1 bên là tiếng anh , 1 bên là tiếng việt , sáng tạo cho tôi để sản xuất video'",
+    "Câu lệnh tạo nhân vật Nam (ChatGPT): '- hãy tạo cho tôi 1 hình ảnh 1 nhân vật nam khoảng 20 tuổi , mặc bộ quần áo vest chỉnh tề , góc nhìn trung cảnh nhân vật , nhân vật đang quay mặt sang hướng bên trái , phong cách Pixar Cinematic 3D Style , không cần phông nền , hình ảnh 9.16 , tạo cho tôi hình ảnh sắc nét'",
+    "Câu lệnh tạo nhân vật Nữ (ChatGPT): '- hãy tạo cho tôi 1 hình ảnh 1 nhân vật nữ khoảng 20 tuổi , mặc bộ váy đẹp , góc nhìn trung cảnh nhân vật , nhân vật đang quay mặt sang hướng bên phải , phong cách Pixar Cinematic 3D Style , không cần phông nền , hình ảnh 9.16 , tạo cho tôi hình ảnh sắc nét'",
+    "Câu lệnh tạo bối cảnh (ChatGPT): '- Hãy tạo cho tôi 1 hình ảnh , bối cảnh công sở , phía xa là các tòa nhà thành phố hiện đại , được làm mờ nhẹ , có băng ghế gỗ và cây xanh tươi tốt , ánh sáng ban ngày ấm áp , trong hình không có nhân vật hay con người , chỉ có hình ảnh bối cảnh , hình ảnh kích thước 16.9 , phong cách hình ảnh 3d hoạt hình'"
+  ],
+  "channels_mentioned": [
+    "@ChitChat0"
+  ],
+  "CourseDocs": "assets/docs-dgmd/VIDEO-96b420/master_prompt.md",
+  "course_docs": [
+    {
+      "title": "Bộ Câu Lệnh Hội Thoại Song Ngữ & Tạo Nhân Vật 3D Pixar (Chuẩn Hóa)",
+      "path": "assets/docs-dgmd/VIDEO-96b420/master_prompt.md",
+      "type": "prompt",
+      "file": "assets/docs-dgmd/VIDEO-96b420/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-96b420/master_prompt.md",
+      "link": "https://docs.google.com/document/d/1_2L1jCi7d_5EhLJ0RtWGR9uC8mZ9iKJaILTlVRwUO18/edit?tab=t.ryefdsc495p5"
+    },
+    {
+      "title": "Bản Text Câu Lệnh Gốc Đính Kèm Bài Học (master_prompt.txt)",
+      "path": "assets/docs-dgmd/VIDEO-96b420/master_prompt.txt",
+      "type": "prompt",
+      "file": "assets/docs-dgmd/VIDEO-96b420/master_prompt.txt",
+      "readFile": "assets/docs-dgmd/VIDEO-96b420/master_prompt.txt",
+      "link": "https://docs.google.com/document/d/1_2L1jCi7d_5EhLJ0RtWGR9uC8mZ9iKJaILTlVRwUO18/edit?tab=t.ryefdsc495p5"
+    }
+  ],
+  "Homework": "1. Dùng câu lệnh trong Google Docs yêu cầu ChatGPT tạo 1 kịch bản hội thoại tiếng Anh (chia 2 cột Anh – Việt) và tạo 3 hình ảnh đồng nhất phong cách 'Pixar Cinematic 3D Style' (1 nhân vật Nam 9:16 quay trái, 1 nhân vật Nữ 9:16 quay phải, 1 bối cảnh 16:9 không có người).\n2. Lên Picsart tạo 2 hình bong bóng thoại (Speech Bubble) màu trắng trên nền trong suốt với mũi nhọn hướng về phía nhân vật Nam và Nữ.\n3. Đưa vào CapCut PC: xếp nền 16:9 ở dưới, bật 'Xóa tự động' phông nền cho 2 nhân vật, gắn hiệu ứng 'Máy ảnh rung' (Tốc độ 1, Khoảng cách 1), ghép bong bóng thoại, tạo giọng đọc TTS Nam/Nữ đối đáp so le, bật 'Chuẩn hóa âm lượng' và lưu 'Ảnh bìa' làm Thumbnail.",
+  "edit_sop": {
+    "primary": "Quy trình 5 bước thực chiến: Bài 15 mở đầu Module 5 hướng dẫn quy trình sản xuất dòng video Hội thoại Tiếng Anh (English Conversation for Beginners) theo mô hình kênh...",
+    "additional": [
+      "Sử dụng câu lệnh chuẩn trên ChatGPT để tạo kịch bản hội thoại tiếng Anh giữa 2 nhân vật (ví dụ: ngày mới tại công sở giữa Nam và Nữ) chia đều thành 2 cột song song (1 bên Tiếng Anh, 1 bên Tiếng Việt) để dễ dàng kiểm soát nội dung.",
+      "Dùng 3 câu lệnh tạo ảnh trên ChatGPT theo đúng thông số kỹ thuật: Nhân vật Nam (tỷ lệ 9:16, góc trung cảnh từ đùi lên, quay mặt sang trái, phong cách Pixar Cinematic 3D Style), Nhân vật Nữ (tỷ lệ 9:16, góc trung cảnh, quay mặt sang phải, Pixar Cinematic 3D Style) và Bối cảnh (tỷ lệ 16:9, không có con người).",
+      "Mở CapCut PC đưa 3 ảnh vào timeline: Đặt bối cảnh 16:9 ở tầng dưới cùng, đặt nhân vật Nam bên phải và nhân vật Nữ bên trái ở 2 tầng trên (nếu ngược hướng nhìn thì bấm nút 'Phản chiếu'), chọn từng nhân vật vào 'Xóa nền -> Xóa tự động', sau đó gắn hiệu ứng 'Máy ảnh rung' (chỉnh Tốc độ = 1, Khoảng cách = 1) lên cả 2 nhân vật để tạo cử động nhẹ tự nhiên.",
+      "Mở Picsart tạo khung vẽ trống, xóa bỏ lớp nền trắng để lấy nền caro trong suốt, vào mục 'Yếu tố' ghép hình chữ nhật bo góc màu trắng (#ffffff) với hình thoi/mũi nhọn chỉ về phía miệng nhân vật để xuất ra 2 file PNG bong bóng thoại (1 bản mũi nhọn bên trái cho Nữ, 1 bản mũi nhọn bên phải cho Nam) rồi đưa vào CapCut.",
+      "Dán từng câu thoại tiếng Anh từ ChatGPT vào khung bong bóng tương ứng (lưu ý chỉ copy nội dung câu nói, không copy chữ 'Nam:'/'Nữ:' ở đầu dòng), chọn 'Chuyển đổi văn bản thành giọng nói' (Text to Speech) cố định 1 giọng Nam và 1 giọng Nữ xuyên suốt, căn chỉnh các lượt thoại nối tiếp nhau, bật 'Chuẩn hóa âm lượng' cho toàn bộ rãnh thoại và bấm nút 'Ảnh bìa' ở đầu timeline CapCut để lưu trực tiếp khung hình trong video làm Thumbnail."
+    ]
+  },
+  "avoid_flags": [
+    "Tạo hình ảnh 2 nhân vật cùng nhìn thẳng ra màn hình hoặc cùng quay về một phía, hoặc tạo nhân vật ở tỷ lệ 16:9 toàn thân thay vì tỷ lệ 9:16 góc trung cảnh (từ đùi trở lên), khiến khi ghép lên bối cảnh hai nhân vật không nhìn vào nhau đối thoại tự nhiên.",
+    "Pha trộn lộn xộn nhiều phong cách hình ảnh trên cùng một kênh (hôm nay dùng Pixar 3D, ngày mai dùng ảnh thật, ngày kia dùng truyện tranh 2D), làm kênh mất tính nhận diện thương hiệu trong mắt thuật toán và khán giả.",
+    "Đặt nhân vật đứng đơ như tượng suốt 10 phút mà không gắn hiệu ứng 'Máy ảnh rung' nhẹ (Tốc độ 1, Khoảng cách 1) và lạm dụng mẫu bong bóng có sẵn của CapCut thay vì tự thiết kế bong bóng thoại riêng trên Picsart, làm tăng nguy cơ bị đánh lỗi nội dung lặp lại.",
+    "Copy nguyên cả chữ đánh dấu 'Nam:' hoặc 'Nữ:' ở đầu câu thoại dán vào công cụ đọc văn bản (Text to Speech) khiến AI đọc luôn cả từ đó lên, hoặc quên bật 'Chuẩn hóa âm lượng' làm giọng Nam và giọng Nữ bên to bên nhỏ lệch nhau."
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu Bài 15: Quy trình sản xuất video Hội thoại Tiếng Anh & khảo sát kênh mẫu @ChitChat0 (ChitChat English — 7,6 triệu views)"
+    },
+    {
+      "time": "00:34",
+      "seconds": 34,
+      "label": "Câu lệnh tạo kịch bản hội thoại công sở song ngữ trên ChatGPT (chia 2 cột Tiếng Anh – Tiếng Việt, đánh dấu rõ Nam và Nữ)"
+    },
+    {
+      "time": "01:30",
+      "seconds": 90,
+      "label": "Tạo hình ảnh minh họa 3D đồng nhất từ kịch bản"
+    },
+    {
+      "time": "03:47",
+      "seconds": 227,
+      "label": "Đưa 3 ảnh vào CapCut PC: Bật 'Xóa nền -> Xóa tự động' cho 2 nhân vật và gắn hiệu ứng 'Máy ảnh rung' (Tốc độ 1, Khoảng cách 1)"
+    },
+    {
+      "time": "06:19",
+      "seconds": 379,
+      "label": "Thiết kế cặp bong bóng thoại (Speech Bubble) nền trong suốt trên Picsart với mũi nhọn hướng riêng về phía Nam và Nữ"
+    },
+    {
+      "time": "09:39",
+      "seconds": 579,
+      "label": "Cân chỉnh âm lượng nhạc nền và định dạng phụ đề trên CapCut"
+    },
+    {
+      "time": "15:11",
+      "seconds": 911,
+      "label": "Cân chỉnh âm lượng nhạc nền và định dạng phụ đề trên CapCut"
+    },
+    {
+      "time": "16:05",
+      "seconds": 965,
+      "label": "Chọn khung hình hội thoại đẹp nhất ngay trên timeline CapCut làm 'Ảnh bìa' (Thumbnail) và xuất bản thành phẩm"
+    }
+  ],
+  "actual_topic": "Bài 15 mở đầu Module 5 hướng dẫn quy trình sản xuất dòng video Hội thoại Tiếng Anh (English Conversation for Beginners) theo mô hình kênh đối thủ ChitChat English (@ChitChat0 — có video đạt 7,6 triệu và 3,1 triệu lượt xem, mang tính Evergreen bền vững qua nhiều năm). Chỉ với 3 công cụ duy nhất gồm ChatGPT, Picsart và CapCut PC, giảng viên hướng dẫn từ cách viết câu lệnh tạo kịch bản hội thoại chia 2 cột Anh – Việt (giúp người không biết tiếng Anh vẫn dễ dàng biên tập), tạo bộ 3 hình ảnh đồng nhất phong cách 'Pixar Cinematic 3D Style' đúng tỷ lệ (2 nhân vật 9:16 góc trung cảnh quay mặt đối diện nhau + 1 bối cảnh 16:9 không người), tách nền tự động và làm chuyển động lắc nhẹ bằng hiệu ứng 'Máy ảnh rung', tự thiết kế cặp bong bóng thoại riêng trên Picsart, đến kỹ thuật lồng tiếng TTS Nam/Nữ đối đáp so le, chuẩn hóa âm lượng (-23 LUFS) và trích xuất Ảnh bìa làm Thumbnail ngay trên CapCut.",
+  "category_group": "chuyen_gia",
+  "niche_primary": "Học Tiếng Anh Thụ Động",
+  "niche_id": "dgmd_workflow",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "sop_steps": [
+    "Sử dụng câu lệnh chuẩn trên ChatGPT để tạo kịch bản hội thoại tiếng Anh giữa 2 nhân vật (ví dụ: ngày mới tại công sở giữa Nam và Nữ) chia đều thành 2 cột song song (1 bên Tiếng Anh, 1 bên Tiếng Việt) để dễ dàng kiểm soát nội dung.",
+    "Dùng 3 câu lệnh tạo ảnh trên ChatGPT theo đúng thông số kỹ thuật: Nhân vật Nam (tỷ lệ 9:16, góc trung cảnh từ đùi lên, quay mặt sang trái, phong cách Pixar Cinematic 3D Style), Nhân vật Nữ (tỷ lệ 9:16, góc trung cảnh, quay mặt sang phải, Pixar Cinematic 3D Style) và Bối cảnh (tỷ lệ 16:9, không có con người).",
+    "Mở CapCut PC đưa 3 ảnh vào timeline: Đặt bối cảnh 16:9 ở tầng dưới cùng, đặt nhân vật Nam bên phải và nhân vật Nữ bên trái ở 2 tầng trên (nếu ngược hướng nhìn thì bấm nút 'Phản chiếu'), chọn từng nhân vật vào 'Xóa nền -> Xóa tự động', sau đó gắn hiệu ứng 'Máy ảnh rung' (chỉnh Tốc độ = 1, Khoảng cách = 1) lên cả 2 nhân vật để tạo cử động nhẹ tự nhiên.",
+    "Mở Picsart tạo khung vẽ trống, xóa bỏ lớp nền trắng để lấy nền caro trong suốt, vào mục 'Yếu tố' ghép hình chữ nhật bo góc màu trắng (#ffffff) với hình thoi/mũi nhọn chỉ về phía miệng nhân vật để xuất ra 2 file PNG bong bóng thoại (1 bản mũi nhọn bên trái cho Nữ, 1 bản mũi nhọn bên phải cho Nam) rồi đưa vào CapCut.",
+    "Dán từng câu thoại tiếng Anh từ ChatGPT vào khung bong bóng tương ứng (lưu ý chỉ copy nội dung câu nói, không copy chữ 'Nam:'/'Nữ:' ở đầu dòng), chọn 'Chuyển đổi văn bản thành giọng nói' (Text to Speech) cố định 1 giọng Nam và 1 giọng Nữ xuyên suốt, căn chỉnh các lượt thoại nối tiếp nhau, bật 'Chuẩn hóa âm lượng' cho toàn bộ rãnh thoại và bấm nút 'Ảnh bìa' ở đầu timeline CapCut để lưu trực tiếp khung hình trong video làm Thumbnail."
+  ],
+  "source_transcript": "video/VIDEO-96b420/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED"
+}

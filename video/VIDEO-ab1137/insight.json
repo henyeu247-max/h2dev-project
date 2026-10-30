@@ -1,0 +1,75 @@
+{
+  "sku": "VIDEO-ab1137",
+  "title": "Khám kênh show thực tế kênh làm nhân bản thị trường từ Hàn sang Nhật sau chỉ 1 video đầu tiên",
+  "actual_topic": "Khám Kênh Thực Tế: Nhân Bản Thị Trường Từ Hàn Sang Nhật Ăn Đề Xuất Ngay Video Đầu Tiên",
+  "category_group": "nhan_ban",
+  "niche_primary": "Dưỡng Sinh & Mẹo Sức Khỏe Hàn - Nhật",
+  "niche_id": "cross-market-replication",
+  "target_market": "Nhật Bản / Hàn Quốc",
+  "market_code": "JP,KR",
+  "key_takeaways": [
+    "📌 Minh chứng thực chiến Nhân Bản Thị Trường (Hàn -> Nhật): Ngay sau bài share ngày 08/10 về ngách làm vườn mùa thu tại Hàn Quốc, một học viên trong nhóm Pro đã nhân bản ngay sang thị trường Nhật Bản (tiêu đề: '10月に切ってはいけない花木9選' — 9 loại cây hoa tuyệt đối không được cắt tỉa vào tháng 10).",
+    "📌 Ăn đề xuất ngay từ 1 video đầu tiên: Chỉ sau khoảng 1 ngày đăng thử video đầu tiên, kênh đã đạt hơn 535 lượt xem trong YouTube Studio (hơn 1.400 view tổng khi báo cáo trong nhóm) với thời lượng xem trung bình 4 phút 03 giây, trong đó 94,8% lưu lượng đến từ Tính năng duyệt xem (Browse features) và 5,0% từ Video đề xuất.",
+    "📌 Quy luật 70% thắng lợi nằm ở Chọn Ngách: Khi chọn đúng ngách nhỏ đang có sóng nhu cầu cao và ít cạnh tranh, thuật toán YouTube tự động phân phối đề xuất ngay từ video đầu tiên; có thể nhân bản tiếp từ Hàn sang Nhật hoặc về Việt Nam.",
+    "📌 Bài toán RPM & Thuế giữa Hàn/Nhật và Hoa Kỳ (US): Thị trường Hoa Kỳ tuy rộng nhưng cạnh tranh cực kỳ khốc liệt và bị khấu trừ thuế Mỹ rất nặng (tới 30% từ view Mỹ), trong khi làm thị trường Hàn Quốc và Nhật Bản vừa dễ lên view vừa giữ được RPM thực nhận rất tốt do không bị trừ thuế Mỹ."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình nhân bản ngách làm vườn theo mùa vụ từ Hàn Quốc sang Nhật Bản (và Việt Nam) ăn đề xuất tự nhiên ngay từ video đầu tiên.",
+    "additional": [
+      "Lấy đúng công thức chủ đề đang thắng ở Hàn Quốc (ví dụ: các loại cây/hoa lâu năm tuyệt đối không được cắt tỉa vào tháng 10) để chuyển ngữ bản địa hóa sang tiếng Nhật.",
+      "Thiết kế Thumbnail chữ lớn cảnh báo trực diện theo mùa vụ (ví dụ: '10月は絶対に切らないで!' — Tháng 10 tuyệt đối đừng cắt!) đánh trúng tâm lý sợ hỏng cây của người làm vườn Nhật Bản.",
+      "Tập trung đánh thị trường Nhật Bản, Hàn Quốc và Việt Nam thay vì nhảy vào thị trường Hoa Kỳ cạnh tranh cao và chịu mức khấu trừ thuế nặng."
+    ]
+  },
+  "avoid_flags": [
+    "Không nhảy vào thị trường Hoa Kỳ (US) với ngách này khi mới bắt đầu vì độ cạnh tranh quá khốc liệt và bị trừ thuế thu nhập từ view Mỹ rất cao.",
+    "Không dịch máy thô sơ sai thuật ngữ tên cây trồng và thời vụ cắt tỉa của địa phương khi nhân bản từ Hàn sang Nhật."
+  ],
+  "tools_mentioned": [],
+  "channels_mentioned": [
+    "@HopeGarden-KR"
+  ],
+  "key_timestamps": [
+    {
+      "seconds": 0,
+      "time": "00:00",
+      "label": "Mở đầu: Nhắc lại ngách làm vườn Hàn Quốc ngày 8/10 và định hướng nhân bản thị trường"
+    },
+    {
+      "seconds": 12,
+      "time": "00:12",
+      "label": "Case study học viên: Nhân bản ngách cắt tỉa cây mùa thu từ Hàn Quốc sang Nhật Bản"
+    },
+    {
+      "seconds": 48,
+      "time": "00:48",
+      "label": "Show YouTube Studio thực tế: Mới đăng 1 video đầu tiên đã cắn đề xuất 94,8% Browse features"
+    },
+    {
+      "seconds": 67,
+      "time": "01:07",
+      "label": "Phân tích video đầu tiên: '9 loại cây hoa không được cắt tỉa tháng 10' đạt AVD 4 phút 03 giây"
+    },
+    {
+      "seconds": 118,
+      "time": "01:58",
+      "label": "So sánh RPM & Thuế: Hàn và Nhật thực nhận rất tốt vì không bị trừ thuế nặng như Hoa Kỳ"
+    },
+    {
+      "seconds": 155,
+      "time": "02:35",
+      "label": "Tổng kết quy luật: Chọn đúng ngách quyết định 70% thành công khi làm YouTube view ngoại"
+    }
+  ],
+  "analysis_method": "agv_3.8_multimodal_7layer_verified",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-ab1137/transcript.txt",
+  "sop_steps": [
+    "Tối ưu hóa tiêu đề và thumbnail chuẩn phong cách và ngữ cảm người dùng Nhật Bản",
+    "Sử dụng giọng lồng tiếng tự nhiên chuẩn bản ngữ tiếng Nhật",
+    "Cắt dựng nhịp nhàng, nhạc nền phù hợp tạo cảm giác thư giãn"
+  ]
+}

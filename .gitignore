@@ -1,6 +1,14 @@
-# Dữ liệu nặng / media — KHÔNG đưa vào git
+# Dữ liệu nặng / media — KHÔNG đưa vào git (.mp4 / .webm), nhưng BẮT BUỘC đồng bộ phụ đề & insight chuẩn 333 bài
 node_modules/
-video/
+video/*
+!video/*/
+video/*/*
+!video/*/transcript.json
+!video/*/transcript.srt
+!video/*/transcript.txt
+!video/*/insight.json
+!video/*/silence.json
+!video/*/notes.txt
 assets/nhac-nen/
 
 # Bản sao lưu & nhật ký kiểm chứng nội bộ

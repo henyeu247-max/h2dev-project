@@ -6,8 +6,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "Phát Triển Kênh & Chiến Lược Chủ Đề Đa Nền Tảng",
     "niche_id": "youtube_growth",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "YouTube",
       "Facebook",
@@ -110,8 +110,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Tâm Linh & Video AI Phật Pháp (Facebook Reels / Shorts)",
     "niche_id": "buddha_quotes",
-    "target_market": "Việt Nam & Cộng Đồng Phật Tử",
-    "market_code": "VN",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "Facebook",
       "Pinterest",
@@ -235,8 +235,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "Chiến Lược Xây Kênh 100K Sub & Bình Thẩm Shorts Fair Use",
     "niche_id": "youtube_growth",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "YouTube",
       "Google Trends",
@@ -250,41 +250,13 @@
       "TikTok"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@SchoolBabyChannel",
-        "name": "School Baby Channel",
-        "url": "https://www.youtube.com/channel/UCUrlBFOepGstteAWaXc91xA"
-      },
-      {
-        "handle": "@thanhhieumangdep",
-        "name": "Thành Hiếu Mang Dép",
-        "url": "https://www.youtube.com/@thanhhieumangdep"
-      },
-      {
-        "handle": "@TheJokersHome-j5b",
-        "name": "Rumi KING",
-        "url": "https://www.youtube.com/@TheJokersHome-j5b"
-      },
-      {
-        "handle": "@SonyPicturesAnimation",
-        "name": "Sony Pictures Animation",
-        "url": "https://www.youtube.com/@SonyPicturesAnimation"
-      },
-      {
-        "handle": "@raj_jaiswal_shorts8080",
-        "name": "raj jaiswal shorts 8080",
-        "url": "https://www.youtube.com/@raj_jaiswal_shorts8080"
-      },
-      {
-        "handle": "@QuangTalks",
-        "name": "Quang Talks",
-        "url": "https://www.youtube.com/@QuangTalks"
-      },
-      {
-        "handle": "@MariHoNgoc",
-        "name": "Mari Hồ Ngọc",
-        "url": "https://www.youtube.com/channel/UCxk--0Ei8TjnKQX-rdnWMeg"
-      }
+      "@SchoolBabyChannel",
+      "@thanhhieumangdep",
+      "@TheJokersHome-j5b",
+      "@SonyPicturesAnimation",
+      "@raj_jaiswal_shorts8080",
+      "@QuangTalks",
+      "@MariHoNgoc"
     ],
     "course_docs": [
       {
@@ -393,8 +365,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Âm Nhạc Bản Quyền Mở",
     "niche_id": "cover_music",
-    "target_market": "Việt Nam & Đông Nam Á",
-    "market_code": "VN_SEA",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "YouTube",
       "TikTok",
@@ -404,13 +376,7 @@
       "CapCut"
     ],
     "channels_mentioned": [
-      {
-        "name": "m u s i c i s l i f e",
-        "handle": "@musicislife.genzzz",
-        "url": "https://www.youtube.com/@musicislife.genzzz",
-        "niche": "Kênh YouTube Shorts nhạc Cover Việt Nam (50K sub, 262 video) sử dụng phôi nền giấy nhăn trắng xám + khung video ca sĩ bo tròn góc bên trái + toàn bộ lời bài hát bên phải, đạt 1,3 – 2,8 triệu view/video",
-        "status": "verified_200"
-      }
+      "@musicislife.genzzz"
     ],
     "key_timestamps": [
       {
@@ -522,8 +488,8 @@
     "category_group": "ha_tang",
     "niche_primary": "Quản Trị AdSense & Hạ Tầng Kênh",
     "niche_id": "adsense_ops",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "Google AdSense",
       "Gmail",
@@ -621,8 +587,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "youtube_growth",
-    "target_market": "Việt Nam & Toàn Cầu (Hàn, Nhật, Mỹ)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "CapCut",
       "TikTok",
@@ -631,26 +597,10 @@
       "Cốc Cốc"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Popa-Pipo",
-        "name": "PoPa PiPo",
-        "url": "https://www.youtube.com/@Popa-Pipo"
-      },
-      {
-        "handle": "@tuoicuaxechieu",
-        "name": "Tuổi Xế Chiều",
-        "url": "https://www.youtube.com/channel/UCZOCat45XQoN9vUiYC2QD2A"
-      },
-      {
-        "handle": "@TinLiveStream",
-        "name": "Tin Live Stream",
-        "url": "https://www.youtube.com/channel/UC--BRdCMIHK_XcMS4SRH4wg"
-      },
-      {
-        "handle": "@HieuMangDep",
-        "name": "Hiếu Mang Dép",
-        "url": "https://www.youtube.com/channel/UCs9II6amKbHIPJYPKLEI_pA"
-      }
+      "@Popa-Pipo",
+      "@tuoicuaxechieu",
+      "@TinLiveStream",
+      "@HieuMangDep"
     ],
     "course_docs": [
       {
@@ -749,8 +699,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "So Sánh & Đố Vui Visual",
     "niche_id": "comparison_quiz",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "ChatGPT",
       "Pinterest",
@@ -874,8 +824,8 @@
     "category_group": "ha_tang",
     "niche_primary": "Quản Trị AdSense & Kháng Kênh",
     "niche_id": "channel_recovery",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "ChatGPT",
       "Gmail",
@@ -983,8 +933,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Tâm Linh & Tôn Giáo Toàn Cầu",
     "niche_id": "faith_shorts",
-    "target_market": "Hoa Kỳ, Châu Âu & Mỹ Latin",
-    "market_code": "US_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "Pinterest",
       "ChatGPT",
@@ -995,17 +945,7 @@
       "YouTube"
     ],
     "channels_mentioned": [
-      {
-        "name": "Jesus Quiz",
-        "handle": "@JesusLovesEvery-1",
-        "url": "https://www.youtube.com/@JesusLovesEvery-1",
-        "subscribers": "2.1M",
-        "views": "838,046,091",
-        "videos": 544,
-        "country": "US",
-        "joined": "2024-08-26",
-        "description": "Kênh mẫu ngách Jesus Shorts thị trường Hoa Kỳ đạt 2,1 triệu người đăng ký và hơn 838 triệu lượt xem chỉ với 544 video ngắn (nhiều video đạt 101M - 105M views)."
-      }
+      "@JesusLovesEvery-1"
     ],
     "key_timestamps": [
       {
@@ -1103,8 +1043,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Bán Content & Reup Hợp Pháp",
     "niche_id": "douyin_reup",
-    "target_market": "Việt Nam & Đông Nam Á",
-    "market_code": "VN_SEA",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "Gemini",
       "Douyin",
@@ -1117,24 +1057,8 @@
       "Facebook"
     ],
     "channels_mentioned": [
-      {
-        "name": "Triệu Que Củi",
-        "handle": "@TrieuNe05",
-        "url": "https://www.youtube.com/@TrieuNe05",
-        "subscribers": "363K",
-        "views": "391,000,000",
-        "videos": 283,
-        "description": "Kênh mẫu số 1 làm YouTube Shorts review hài hước từ nguồn video Douyin đạt 363 nghìn người đăng ký và tổng 391 triệu lượt xem chỉ với 283 video."
-      },
-      {
-        "name": "Đảo Chiều",
-        "handle": "@daochieu037",
-        "url": "https://www.youtube.com/@daochieu037",
-        "subscribers": "1.17M",
-        "views": "300,000,000+",
-        "videos": 1200,
-        "description": "Kênh mẫu số 2 khai thác video ngắn Douyin/quốc tế thuyết minh tiếng Việt đạt 1,17 triệu người đăng ký với loạt Shorts 15M - 33M views."
-      }
+      "@TrieuNe05",
+      "@daochieu037"
     ],
     "key_timestamps": [
       {
@@ -1248,20 +1172,14 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Thể Thao & Câu Đố Bóng Đá Tương Tác (Sports Quiz Shorts)",
     "niche_id": "sports_shorts",
-    "target_market": "Việt Nam & Toàn Cầu (Anh, Pháp, Ý, Nhật, Hàn, Bồ Đào Nha)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "ChatGPT",
       "CapCut"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Goat_Faceoff",
-        "name": "Goat Faceoff",
-        "url": "https://www.youtube.com/@Goat_Faceoff",
-        "dead": true,
-        "deadNote": "Kênh mẫu Shorts bóng đá (@Goat_Faceoff - youtube.com/shorts/F5Ja-6UP560 'Ronaldo, Messi or Neymar - GUESS THE PLAYER!') được giảng viên mở ở đầu bài học hiện đã ngừng hoạt động hoặc đổi handle trên YouTube"
-      }
+      "@Goat_Faceoff"
     ],
     "course_docs": [
       {
@@ -1356,8 +1274,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Âm Nhạc Thư Giãn & Cổ Phong Trung Hoa (Ancient Chinese Instrumental)",
     "niche_id": "guqin_relax_music",
-    "target_market": "Việt Nam, Châu Á & Toàn Cầu (Nhạc Thư Giãn Không Lời)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "ChatGPT",
       "Suno AI",
@@ -1369,11 +1287,7 @@
       "Cốc Cốc"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@shenharmony2798",
-        "name": "Shen Harmony",
-        "url": "https://www.youtube.com/@shenharmony2798"
-      }
+      "@shenharmony2798"
     ],
     "course_docs": [
       {
@@ -1492,13 +1406,7 @@
       "Style Prompt tiếng Anh dán vào Suno AI (Simple -> Instrumental): 'Upbeat, playful, curious quiz show background music, tropical marimba, light pizzicato strings, bouncy synth bass, subtle jungle percussion, lively woodwinds, rhythmic ticking clock feel, smart and adventurous atmosphere, medium-fast tempo (118 BPM), clean modern production, loopable, engaging, cheerful tension, suitable for a 30-question animal trivia challenge video, instrumental only, no vocals.'"
     ],
     "channels_mentioned": [
-      {
-        "name": "English Grammar Challenge",
-        "handle": "@englishgrammarchallenge6953",
-        "url": "https://www.youtube.com/@englishgrammarchallenge6953",
-        "subscribers": "123 N người đăng ký (875 video)",
-        "note": "Kênh đối thủ mẫu làm ngách English Grammar Quiz xuất hiện trực tiếp trên màn hình (00:09 – 00:56), sở hữu video 'Mixed English Grammar Quiz: CAN YOU SCORE 10/10?' đạt 6,2 triệu lượt xem."
-      }
+      "@englishgrammarchallenge6953"
     ],
     "CourseDocs": "assets/docs-dgmd/VIDEO-23723f/master_prompt.md",
     "course_docs": [
@@ -1574,8 +1482,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "Quiz & Trắc Nghiệm Kiến Thức",
     "niche_id": "dgmd_workflow",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "sop_steps": [
       "Sử dụng câu lệnh chuẩn trong Google Docs yêu cầu ChatGPT tạo 30 câu hỏi trắc nghiệm 4 đáp án (có 1 đáp án đúng) kèm đoạn Mở đầu (Hook) bằng tiếng Việt trước để kiểm duyệt đáp án, sau đó dịch sang tiếng Anh khi sản xuất cho thị trường ngoại.",
       "Mở Picsart tạo khung 16:9 (1920x1080) thiết kế 4 tài nguyên PNG: Nền câu hỏi kèm 4 ô đáp án bo góc viền đen, Khung bảng trắng cho phần Intro, và 2 bản Thanh thời gian (1 bản màu Trắng, 1 bản đổi sang màu Vàng nhưng giữ nguyên tuyệt đối vị trí tọa độ).",
@@ -1622,27 +1530,9 @@
       "Prompt số 1 (trong bộ 10 Prompt) tạo nhạc nền hài hước trên Suno AI: 'Create a funny, upbeat, quirky instrumental background music track with playful pizzicato strings, light marimba, bouncy bass, cheeky woodwinds, and subtle cartoon percussion, fast-medium tempo, cheerful and mischievous mood, clean modern mix, loop-friendly, no vocals.'"
     ],
     "channels_mentioned": [
-      {
-        "name": "Adam Rose",
-        "handle": "@realadamrose",
-        "url": "https://www.youtube.com/@realadamrose",
-        "subscribers": "6,26 Tr người đăng ký (1,6 N video)",
-        "note": "Kênh chính chủ của diễn viên hài Adam Rose được giảng viên mở trực tiếp trên màn hình (00:15 & 06:12) để lấy các đoạn video Shorts đóng vai kỹ sư công trường đội mũ vàng ('i seriously have to find a new job...' — 257 triệu views) làm nhân vật phản ứng (Reaction)."
-      },
-      {
-        "name": "Smart Pocket",
-        "handle": "@Smartpocket-r9b",
-        "url": "https://www.youtube.com/@Smartpocket-r9b",
-        "subscribers": "533 video",
-        "note": "Kênh tham khảo làm dạng Bán Content kết hợp nhân vật Adam Rose được đính kèm trong tài liệu Google Docs và mở trên thanh tab trình duyệt của giảng viên, có video dài 1 tiếng đạt tới 2 triệu lượt xem."
-      },
-      {
-        "name": "Adam-RoseFans1",
-        "handle": "@Adam-RoseFans1",
-        "url": "https://www.youtube.com/@Adam-RoseFans1",
-        "dead": true,
-        "deadNote": "Kênh tham khảo thứ 2 trong tài liệu Google Docs của giảng viên hiện đã ngừng hoạt động hoặc bị xóa trên YouTube (HTTP 404 khi kiểm tra trực tiếp)."
-      }
+      "@realadamrose",
+      "@Smartpocket-r9b",
+      "@Adam-RoseFans1"
     ],
     "CourseDocs": "assets/docs-dgmd/VIDEO-a152a6/master_prompt.md",
     "course_docs": [
@@ -1734,8 +1624,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "Bán Content & Reup Hợp Pháp",
     "niche_id": "dgmd_workflow",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "sop_steps": [
       "Sử dụng Google Dịch chuyển từ khóa chủ đề thu hút (như 'gái xinh xây dựng', 'cô gái xây dựng') sang tiếng Trung phồn thể để tìm nguồn trên Douyin, đăng nhập trình duyệt Cốc Cốc tải trực tiếp về máy (tổng độ dài trên 8 phút) và bấm Like vào từng video đã lấy để không tải trùng ở các video sau.",
       "Truy cập kênh YouTube @realadamrose (mục Shorts -> Phổ biến) tải các đoạn biểu cảm của nhân vật Adam Rose; đưa toàn bộ nguyên liệu vào CapCut PC, đổi tỷ lệ khung hình sang 16:9, bôi đen tất cả clip gốc chỉnh 'Tỷ lệ' (Scale) lên đúng 174% và bật 'Nền -> Mờ' (Blur), sau đó cắt chèn cảnh Adam Rose xen kẽ và tắt sạch các rãnh âm thanh có nhạc bản quyền rồi xuất file nháp.",
@@ -1777,13 +1667,7 @@
       "Câu lệnh tạo bối cảnh (ChatGPT): '- Hãy tạo cho tôi 1 hình ảnh , bối cảnh công sở , phía xa là các tòa nhà thành phố hiện đại , được làm mờ nhẹ , có băng ghế gỗ và cây xanh tươi tốt , ánh sáng ban ngày ấm áp , trong hình không có nhân vật hay con người , chỉ có hình ảnh bối cảnh , hình ảnh kích thước 16.9 , phong cách hình ảnh 3d hoạt hình'"
     ],
     "channels_mentioned": [
-      {
-        "name": "ChitChat English",
-        "handle": "@ChitChat0",
-        "url": "https://www.youtube.com/@ChitChat0",
-        "subscribers": "Kênh mẫu Hội thoại Tiếng Anh (7,6 Tr views video Top 1)",
-        "note": "Kênh đối thủ mẫu được giảng viên mở trực tiếp trên màn hình ở đầu bài giảng (00:05 – 00:35) với loạt video triệu views: 'Start Speaking English Today, Easy Conversation For Beginners!' (7,6 Tr lượt xem), 'Essential Conversations for Beginners' (3,1 Tr lượt xem)."
-      }
+      "@ChitChat0"
     ],
     "CourseDocs": "assets/docs-dgmd/VIDEO-96b420/master_prompt.md",
     "course_docs": [
@@ -1867,8 +1751,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "Học Tiếng Anh Thụ Động",
     "niche_id": "dgmd_workflow",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "sop_steps": [
       "Sử dụng câu lệnh chuẩn trên ChatGPT để tạo kịch bản hội thoại tiếng Anh giữa 2 nhân vật (ví dụ: ngày mới tại công sở giữa Nam và Nữ) chia đều thành 2 cột song song (1 bên Tiếng Anh, 1 bên Tiếng Việt) để dễ dàng kiểm soát nội dung.",
       "Dùng 3 câu lệnh tạo ảnh trên ChatGPT theo đúng thông số kỹ thuật: Nhân vật Nam (tỷ lệ 9:16, góc trung cảnh từ đùi lên, quay mặt sang trái, phong cách Pixar Cinematic 3D Style), Nhân vật Nữ (tỷ lệ 9:16, góc trung cảnh, quay mặt sang phải, Pixar Cinematic 3D Style) và Bối cảnh (tỷ lệ 16:9, không có con người).",
@@ -1966,26 +1850,10 @@
       }
     ],
     "channels_mentioned": [
-      {
-        "handle": "@SunnyRainbowYoga",
-        "name": "Sunny Rainbow Yoga",
-        "url": "https://www.youtube.com/@SunnyRainbowYoga"
-      },
-      {
-        "handle": "@GalaxyYoga",
-        "name": "Galaxy Yoga",
-        "url": "https://www.youtube.com/@GalaxyYoga"
-      },
-      {
-        "handle": "@ToonYogaTime",
-        "name": "Toon Yoga Time",
-        "url": "https://www.youtube.com/@ToonYogaTime"
-      },
-      {
-        "handle": "@MovewithJojoforKids",
-        "name": "Move with Jojo for Kids",
-        "url": "https://www.youtube.com/@MovewithJojoforKids"
-      }
+      "@SunnyRainbowYoga",
+      "@GalaxyYoga",
+      "@ToonYogaTime",
+      "@MovewithJojoforKids"
     ],
     "key_timestamps": [
       {
@@ -2065,8 +1933,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "Hoạt Hình 3D Tập Yoga & Sức Khỏe (Kids / Character Yoga)",
     "niche_id": "dgmd_workflow",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "sop_steps": [
       "Khi tách nền ảnh chụp màn hình kênh đối thủ có nhân vật nhỏ tuổi hoặc nhân vật hoạt hình nổi tiếng, tuyệt đối không đưa trực tiếp lên Google Flow vì dễ bị bộ lọc từ chối; hãy đưa sang Grok Imagine để xóa nhân vật và đổi màu thảm tập mượt mà.",
       "Nhờ ép điều kiện 'tỉ lệ nhân vật bé hơn tỉ lệ khung hình, xóa nền xung quanh chỉ để nền trắng' ngay từ Câu lệnh 1 & 4, mọi bức ảnh tư thế Yoga xuất ra từ Google Flow đều nằm trọn trong khung và tách nền tự động trên CapCut sạch 100% không bị mất bàn tay hay bàn chân.",
@@ -2207,17 +2075,13 @@
       "Chuyển văn bản từ vựng ('LION') thành giọng đọc tiếng Anh phát âm 2 lần liên tiếp, sau đó ghép nối tiếp đoạn video 6 giây con vật hoạt động thực tế kèm âm thanh tự nhiên tải từ Grok Imagine vào ngay phía sau."
     ],
     "channels_mentioned": [
-      {
-        "handle": "@StudyClasses_sa",
-        "name": "Saba study Classes",
-        "url": "https://www.youtube.com/@StudyClasses_sa"
-      }
+      "@StudyClasses_sa"
     ],
     "category_group": "chuyen_gia",
     "niche_primary": "Học Tiếng Anh Thụ Động",
     "niche_id": "dgmd_workflow",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "sop_steps": [
       "Khi tạo ảnh con vật trên Google Flow (Nano Banana 2), bắt buộc ép điều kiện 'nền trắng tinh, không bối cảnh, tỉ lệ con vật nhỏ hơn khung hình (khoảng 60%)' để khi đưa vào CapCut nhấn Xóa nền tự động sẽ tách sạch tuyệt đối trong 1 cú nhấp chuột.",
       "Văn bản thông thường trên CapCut không có tab Mặt nạ (Mask); bắt buộc phải nhân đôi lớp chữ (ví dụ 2 lớp chữ LION) rồi nhấn chuột phải chọn 'Tạo clip ghép' (Compound Clip) thì mới xuất hiện công cụ Mặt nạ Hình chữ nhật để làm hiệu ứng viết chữ.",
@@ -2388,37 +2252,17 @@
       "Có thể mở rộng mô hình kênh xếp hạng ra thị trường quốc tế để đạt doanh thu khoảng 2.000 – 3.000 USD/tháng khi kênh lên đề xuất."
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Oogway_Ranks",
-        "name": "Oogway Ranks",
-        "url": "https://www.youtube.com/@Oogway_Ranks"
-      },
-      {
-        "handle": "@Ladrank",
-        "name": "LADRANKS",
-        "url": "https://www.youtube.com/@Ladrank"
-      },
-      {
-        "handle": "@PhucAnhHoang-i3e",
-        "name": "Phuc Anh Hoang",
-        "url": "https://www.youtube.com/@PhucAnhHoang-i3e"
-      },
-      {
-        "handle": "@BasileKhaber",
-        "name": "Basile Khaber",
-        "url": "https://www.youtube.com/@BasileKhaber"
-      },
-      {
-        "handle": "@OmerfarukKocatas-j4c",
-        "name": "Omerfaruk Kocatas",
-        "url": "https://www.youtube.com/@OmerfarukKocatas-j4c"
-      }
+      "@Oogway_Ranks",
+      "@Ladrank",
+      "@PhucAnhHoang-i3e",
+      "@BasileKhaber",
+      "@OmerfarukKocatas-j4c"
     ],
     "category_group": "chuyen_gia",
     "niche_primary": "Bảng Xếp Hạng & Top Trend",
     "niche_id": "dgmd_workflow",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "sop_steps": [
       "Khi tìm nguồn trên Douyin mà kết quả tìm kiếm trực tiếp bị ít, hãy bấm thẳng vào các thẻ hashtag (#) nằm ở dòng mô tả của một video chuẩn chủ đề (như #干净又卫生 hoặc #印度街头小吃) để thuật toán Douyin mở ra hàng loạt video cùng ngách.",
       "Thay vì bấm tách âm thanh từng clip lẻ tẻ, hãy kéo đủ 7 phân đoạn xuống timeline CapCut rồi quét chọn tất cả 7 clip cùng lúc và nhấn 'Tách giọng nói' một lần để tiết kiệm tối đa thời gian biên tập.",
@@ -2574,22 +2418,14 @@
       "Mở Google Flow (Veo 3), tải ảnh Bác sĩ 9:16 lên làm Thành phần tham chiếu + gắn cố định 1 Giọng nói nam, dán Prompt số 3 và copy từng câu thoại ngắn (tương ứng khoảng 8 giây/clip) từ phần Hook kịch bản vào trong dấu ngoặc kép; dùng nút 'Sử dụng lại câu lệnh' để render nối tiếp toàn bộ bài nói và tải thêm video B-Roll y tế từ Pexels/Pixabay."
     ],
     "channels_mentioned": [
-      {
-        "handle": "@BsMinhTâm60",
-        "name": "BS. Minh Tâm 60+",
-        "url": "https://www.youtube.com/@BsMinhT%C3%A2m60"
-      },
-      {
-        "handle": "@PodcastTimMạch",
-        "name": "Podcast Tim Mạch",
-        "url": "https://www.youtube.com/@PodcastTimM%E1%BA%A1ch"
-      }
+      "@BsMinhTâm60",
+      "@PodcastTimMạch"
     ],
     "category_group": "chuyen_gia",
     "niche_primary": "Sức Khỏe & Đời Sống",
     "niche_id": "dgmd_workflow",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "sop_steps": [
       "Khi yêu cầu ChatGPT tạo lại nhân vật Bác sĩ từ ảnh chụp đối thủ, tuyệt đối không bảo ChatGPT sửa trực tiếp trên ảnh gốc (vì dễ bị lỗi hoặc giống hệt người cũ); hãy bảo ChatGPT 'viết ra 1 prompt mô tả', sau đó copy prompt đó sang một cuộc trò chuyện (New Chat) hoàn toàn mới để sinh ra gương mặt Bác sĩ độc bản cho kênh của mình.",
       "Mỗi đoạn video tạo bằng Veo 3 trên Google Flow có thời lượng tối đa khoảng 8 giây; do đó cần ngắt kịch bản của ChatGPT thành từng câu ngắn vừa vặn 15–22 từ rồi dán lần lượt vào mục \"câu thoại\" thông qua nút 'Sử dụng lại câu lệnh' (Reuse Prompt).",
@@ -2686,21 +2522,9 @@
       }
     ],
     "channels_mentioned": [
-      {
-        "handle": "@AnimeAI1616",
-        "name": "AnimeAI",
-        "url": "https://www.youtube.com/@AnimeAI1616"
-      },
-      {
-        "handle": "@Animereal-y8o",
-        "name": "Anime real",
-        "url": "https://www.youtube.com/@Animereal-y8o"
-      },
-      {
-        "handle": "@pai0212",
-        "name": "PAI CHANNEL",
-        "url": "https://www.youtube.com/@pai0212"
-      }
+      "@AnimeAI1616",
+      "@Animereal-y8o",
+      "@pai0212"
     ],
     "key_timestamps": [
       {
@@ -2781,8 +2605,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "Biến Đổi Visual & Anime",
     "niche_id": "dgmd_workflow",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "sop_steps": [
       "Khi tạo ảnh trên Grok Imagine (mục Image), bắt buộc phải khóa tỷ lệ khung hình là 1:1 (Vuông) — tuyệt đối không để 9:16 — để khi đặt 2 bức ảnh cạnh nhau trên khung ngang 16:9 của CapCut, hai khung ảnh bằng nhau tăm tắp.",
       "Với những bức ảnh 2D gốc tải từ Pinterest chưa phải hình vuông, ngay khi đưa bức ảnh đầu tiên (Doraemon) vào CapCut hãy dùng công cụ Cắt (Crop) khóa về tỷ lệ 1:1; nhờ đó khi Copy-Paste hai track ảnh ra toàn timeline và kéo ảnh nhân vật mới đè vào, mọi bức ảnh sau đều tự động giữ nguyên khung 1:1.",
@@ -2798,8 +2622,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Học Tiếng Anh Thụ Động",
     "niche_id": "english_quotes",
-    "target_market": "Việt Nam & Toàn Cầu (Facebook Reels / Shorts)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "ChatGPT",
       "Pinterest",
@@ -2914,8 +2738,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "facebook_growth",
-    "target_market": "Việt Nam & Toàn Cầu (Facebook Reels)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "Pinterest",
       "Picsart",
@@ -3031,8 +2855,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Phật Pháp & Tâm Linh",
     "niche_id": "buddhist_reels",
-    "target_market": "Việt Nam & Toàn Cầu (Facebook Reels / TikTok)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "duration": "17:38",
     "duration_sec": 1058.32,
     "Instructor": "Đại Gia Mang Dép (Văn Thế Web)",
@@ -3170,8 +2994,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Âm Nhạc Truyền Thống & Tâm Linh (Nhạc Chầu Văn AI)",
     "niche_id": "chau_van_music",
-    "target_market": "Việt Nam (YouTube Long-form 16:9)",
-    "market_code": "VN",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "duration": "13:16",
     "duration_sec": 796,
     "Instructor": "Đại Gia Mang Dép (Văn Thế Web)",
@@ -3189,11 +3013,7 @@
       "CapCut"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@PhatGiaoLangSen",
-        "name": "Phật Giáo Làng Sen",
-        "url": "https://www.youtube.com/@PhatGiaoLangSen"
-      }
+      "@PhatGiaoLangSen"
     ],
     "course_docs": [
       {
@@ -3313,8 +3133,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Âm Nhạc Dân Gian & Đời Sống (Nhạc Xẩm AI)",
     "niche_id": "xam_folk_music",
-    "target_market": "Việt Nam (YouTube Long-form 16:9)",
-    "market_code": "VN",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "duration": "09:03",
     "duration_sec": 543.8,
     "Instructor": "Đại Gia Mang Dép (Văn Thế Web)",
@@ -3333,11 +3153,7 @@
       "CapCut"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@XamDoiofficial",
-        "name": "Xẩm-Đời",
-        "url": "https://www.youtube.com/@XamDoiofficial"
-      }
+      "@XamDoiofficial"
     ],
     "course_docs": [
       {
@@ -3457,8 +3273,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Review Phim & Hoạt Hình Câu Cá (Douyin Vietsub)",
     "niche_id": "movie_recap",
-    "target_market": "Việt Nam & Toàn Cầu (Đa ngôn ngữ)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "Douyin",
       "CapCut",
@@ -3478,23 +3294,9 @@
       "YouTube"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@redevietsub",
-        "name": "Rede Vietsub",
-        "url": "https://www.youtube.com/@redevietsub"
-      },
-      {
-        "handle": "@caucavancanchinhchu",
-        "name": "Vũ Trụ Câu Cá Vạn Cân",
-        "url": "https://www.youtube.com/@caucavancanchinhchu"
-      },
-      {
-        "handle": "@cameosub",
-        "name": "Cá Mèo Sub",
-        "url": "https://www.youtube.com/@cameosub",
-        "dead": true,
-        "deadNote": "Kênh xuất hiện trực tiếp trên màn hình bài giảng ở mốc 00:45 (Cá Mèo Sub - @cameosub • 1,47 N người đăng ký • 29 video, các tập Câu Cá Vạn Cân P3 đạt 74N–94N view sau 6 ngày), hiện đã đóng hoặc đổi handle trên YouTube."
-      }
+      "@redevietsub",
+      "@caucavancanchinhchu",
+      "@cameosub"
     ],
     "competitor_channels": [
       {
@@ -3635,8 +3437,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Tâm Linh & Lời Phật Dạy (Video Dài 60–120 Phút)",
     "niche_id": "buddha_teachings",
-    "target_market": "Việt Nam & Cộng Đồng Phật Tử Hải Ngoại",
-    "market_code": "VN",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "ChatGPT",
       "MiniMax",
@@ -3664,16 +3466,8 @@
       "YouTube"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@PhậtPhápLinhỨng-v7z",
-        "name": "Phật Pháp Linh Ứng",
-        "url": "https://www.youtube.com/@Ph%E1%BA%ADtPh%C3%A1pLinh%E1%BB%A8ng-v7z"
-      },
-      {
-        "handle": "@loiphatdaymoinhat",
-        "name": "Lời Phật Dạy",
-        "url": "https://www.youtube.com/@loiphatdaymoinhat"
-      }
+      "@PhậtPhápLinhỨng-v7z",
+      "@loiphatdaymoinhat"
     ],
     "competitor_channels": [
       {
@@ -3816,8 +3610,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Truyện Audio Drama Tâm Lý & Ngôn Tình (Video Dài 16–60 Phút)",
     "niche_id": "audio_drama_story",
-    "target_market": "Việt Nam",
-    "market_code": "VN",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "ChatGPT",
       "MiniMax Audio",
@@ -3840,21 +3634,9 @@
       "Picsart"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@MeoCungAudio",
-        "name": "Mèo Cưng Audio",
-        "url": "https://www.youtube.com/@MeoCungAudio"
-      },
-      {
-        "handle": "@KhoBáuTrọngSinh",
-        "name": "Kho Báu Trọng Sinh",
-        "url": "https://www.youtube.com/@KhoB%C3%A1uTr%E1%BB%8DngSinh"
-      },
-      {
-        "handle": "@nhalamaudio",
-        "name": "Nhã Lam Audio",
-        "url": "https://www.youtube.com/@nhalamaudio"
-      }
+      "@MeoCungAudio",
+      "@KhoBáuTrọngSinh",
+      "@nhalamaudio"
     ],
     "competitor_channels": [
       {
@@ -4003,8 +3785,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "Truyện Audio Tâm Sự Tuổi Già & Gia Đình",
     "niche_id": "dgmd_workflow",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "ChatGPT",
       "Vbee",
@@ -4022,16 +3804,8 @@
       "Picsart"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@HayLangNgheTuoiGia",
-        "name": "Lắng Nghe Tuổi Già",
-        "url": "https://www.youtube.com/@HayLangNgheTuoiGia"
-      },
-      {
-        "handle": "@chuyendoixechieu888",
-        "name": "Chuyện Đời Tuổi Già",
-        "url": "https://www.youtube.com/@chuyendoixechieu888"
-      }
+      "@HayLangNgheTuoiGia",
+      "@chuyendoixechieu888"
     ],
     "competitor_channels": [
       {
@@ -4284,21 +4058,9 @@
     ],
     "actual_topic": "Bài 30 hướng dẫn chi tiết quy trình sản xuất dòng video Âm Thanh Động Vật (Animal Sounds / Farm Animals Compilation) đánh thị trường View Ngoại toàn cầu mà không cần tự đi quay phim hay dùng công cụ tạo video AI phức tạp. Giảng viên phân tích trực tiếp kênh đối thủ mẫu Animal Farm Sounds (@animalfarmsounds86) cùng các kênh đạt hàng triệu view/tháng trên kết quả tìm kiếm YouTube (@BlueBearKids, @QuizBlitz), đồng thời giải thích nguyên lý trẻ nhỏ 3–5 tuổi luôn xem bằng điện thoại và tài khoản Gmail của bố mẹ (người lớn). Quy trình thực chiến đi qua trọn bộ công cụ miễn phí: dùng ChatGPT liệt kê bảng tên động vật song ngữ Việt – Anh theo từng môi trường sống, lên Pexels tải các video động vật thực tế tỷ lệ ngang 16:9 (Chó, Mèo, Gà, Vịt, Bò), vào Pixabay (Sound Effects) tải hiệu ứng tiếng kêu thật của từng loài, dựng trên CapCut PC (tắt âm gốc video, làm mờ hai bên khung vuông, nhân bản tiếng kêu ngắn, bôi đen toàn bộ track âm thanh bật 'Chuẩn hóa âm lượng', chèn chữ tiếng Anh Dog/Cat/Chicken/Duck/Cow, áp chuyển tiếp 'Mờ chậm' cho toàn bộ clip, phủ bộ lọc '4K' cường độ 50%, xuất 1080p/2K 60fps) và lên Pinterest tải ảnh 7 con vật thật + nền cỏ xanh 16:9 để ghép Thumbnail 1920x1080 bằng tính năng 'Gỡ nền' trên Picsart.",
     "channels_mentioned": [
-      {
-        "handle": "@animalfarmsounds86",
-        "name": "Animal Farm Sounds",
-        "url": "https://www.youtube.com/@animalfarmsounds86"
-      },
-      {
-        "handle": "@BlueBearKids",
-        "name": "Blue Bear Kids",
-        "url": "https://www.youtube.com/@BlueBearKids"
-      },
-      {
-        "handle": "@QuizBlitz",
-        "name": "Quiz Blitz",
-        "url": "https://www.youtube.com/@QuizBlitz"
-      }
+      "@animalfarmsounds86",
+      "@BlueBearKids",
+      "@QuizBlitz"
     ],
     "tools_mentioned": [
       "Google Dịch",
@@ -4320,8 +4082,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "Âm Thanh Động Vật & Trẻ Em",
     "niche_id": "dgmd_workflow",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "source_transcript": "video/VIDEO-af2c29/transcript.txt",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
@@ -4333,8 +4095,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Trò Chơi Tương Tác & Thử Thách Bắt Nhịp (Say The Word On Beat)",
     "niche_id": "lyric_text_sync",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "Pinterest",
       "Picsart",
@@ -4343,11 +4105,7 @@
       "TikTok"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@WibloDares",
-        "name": "Wiblo Dares",
-        "url": "https://www.youtube.com/@WibloDares"
-      }
+      "@WibloDares"
     ],
     "course_docs": [
       {
@@ -4456,8 +4214,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (PC)",
     "niche_id": "tiktok_pc_reedit",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "CapCut",
       "ChatGPT",
@@ -4472,11 +4230,7 @@
       "YouTube"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@HieuMangDep",
-        "name": "Hiếu Mang Dép",
-        "url": "https://www.youtube.com/channel/UCs9II6amKbHIPJYPKLEI_pA"
-      }
+      "@HieuMangDep"
     ],
     "course_docs": [
       {
@@ -4585,8 +4339,8 @@
     "category_group": "ngach_xanh",
     "niche_primary": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (Mobile)",
     "niche_id": "tiktok_mobile_reedit",
-    "target_market": "Việt Nam",
-    "market_code": "VN",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "CapCut",
       "ChatGPT",
@@ -4595,11 +4349,7 @@
       "YouTube"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@HieuMangDep",
-        "name": "Hiếu Mang Dép",
-        "url": "https://www.youtube.com/channel/UCs9II6amKbHIPJYPKLEI_pA"
-      }
+      "@HieuMangDep"
     ],
     "course_docs": [
       {
@@ -4703,8 +4453,8 @@
     "category_group": "ha_tang",
     "niche_primary": "Tự Động Hóa & Lập Trình Tool Livestream Đa Luồng",
     "niche_id": "multistream_automation",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "ChatGPT",
       "Claude",
@@ -4713,11 +4463,7 @@
       "Facebook"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@LofiGirl",
-        "name": "Lofi Girl",
-        "url": "https://www.youtube.com/@LofiGirl"
-      }
+      "@LofiGirl"
     ],
     "course_docs": [
       {
@@ -4838,8 +4584,8 @@
     "category_group": "ha_tang",
     "niche_primary": "Tooling & Tự Động Hóa YouTube",
     "niche_id": "character_consistency_tool",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "Google Flow",
       "Veo 3 Ultra",
@@ -4955,38 +4701,18 @@
     "category_group": "chuyen_gia",
     "niche_primary": "SEO & Thuật Toán YouTube",
     "niche_id": "keyword_research",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "YouTube",
       "Cốc Cốc"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@GalaxyYoga",
-        "name": "Galaxy Yoga",
-        "url": "https://www.youtube.com/@GalaxyYoga"
-      },
-      {
-        "handle": "@VatVoStudio",
-        "name": "Vật Vờ Studio",
-        "url": "https://www.youtube.com/@VatVoStudio"
-      },
-      {
-        "handle": "@TonyPhungStudio",
-        "name": "Tony Phùng Studio",
-        "url": "https://www.youtube.com/@TonyPhungStudio"
-      },
-      {
-        "handle": "@NgoDucDuy",
-        "name": "Ngô Đức Duy",
-        "url": "https://www.youtube.com/@NgoDucDuy"
-      },
-      {
-        "handle": "@fachannel",
-        "name": "F.A CHANNEL",
-        "url": "https://www.youtube.com/@fachannel"
-      }
+      "@GalaxyYoga",
+      "@VatVoStudio",
+      "@TonyPhungStudio",
+      "@NgoDucDuy",
+      "@fachannel"
     ],
     "course_docs": [
       {
@@ -5079,43 +4805,19 @@
     "category_group": "chuyen_gia",
     "niche_primary": "SEO & Thuật Toán YouTube",
     "niche_id": "hashtag_seo",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "YouTube",
       "Cốc Cốc"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@CrazyFrog",
-        "name": "Crazy Frog",
-        "url": "https://www.youtube.com/@CrazyFrog"
-      },
-      {
-        "handle": "@HongyuASMR",
-        "name": "Hongyu ASMR 홍유",
-        "url": "https://www.youtube.com/@HongyuASMR"
-      },
-      {
-        "handle": "@Xenopaw",
-        "name": "Xenopaw",
-        "url": "https://www.youtube.com/@Xenopaw"
-      },
-      {
-        "handle": "@JojosASMR",
-        "name": "Jojo's ASMR",
-        "url": "https://www.youtube.com/@JojosASMR"
-      },
-      {
-        "handle": "@YabaiFunny",
-        "name": "YabaiFunny",
-        "url": "https://www.youtube.com/@YabaiFunny"
-      },
-      {
-        "handle": "@ansari_anam",
-        "name": "ASMR123",
-        "url": "https://www.youtube.com/@ansari_anam"
-      }
+      "@CrazyFrog",
+      "@HongyuASMR",
+      "@Xenopaw",
+      "@JojosASMR",
+      "@YabaiFunny",
+      "@ansari_anam"
     ],
     "course_docs": [
       {
@@ -5208,34 +4910,18 @@
     "category_group": "chuyen_gia",
     "niche_primary": "SEO & Thuật Toán YouTube",
     "niche_id": "google_trends_viral",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "Google Trends",
       "YouTube",
       "Cốc Cốc"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@SonyPicturesAnimation",
-        "name": "Sony Pictures Animation",
-        "url": "https://www.youtube.com/@SonyPicturesAnimation"
-      },
-      {
-        "handle": "@7clouds",
-        "name": "7clouds",
-        "url": "https://www.youtube.com/@7clouds"
-      },
-      {
-        "handle": "@NetflixKContent",
-        "name": "Netflix K-Content",
-        "url": "https://www.youtube.com/@NetflixKContent"
-      },
-      {
-        "handle": "@BabyMonkeyAnimal",
-        "name": "Baby Monkey Animal",
-        "url": "https://www.youtube.com/@BabyMonkeyAnimal"
-      }
+      "@SonyPicturesAnimation",
+      "@7clouds",
+      "@NetflixKContent",
+      "@BabyMonkeyAnimal"
     ],
     "course_docs": [
       {
@@ -5328,8 +5014,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "SEO & Thuật Toán YouTube",
     "niche_id": "youtube_categories",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "YouTube Studio",
       "Google Search",
@@ -5338,22 +5024,7 @@
       "Facebook"
     ],
     "channels_mentioned": [
-      {
-        "name": "Linh Giới Hát Văn (Kênh demo thao tác cài đặt Danh mục mặc định trong YouTube Studio)",
-        "handle": "@LinhGioiHatVan",
-        "url": "https://www.youtube.com/channel/UCBPGUH6eET9nTlbF72YmI7g",
-        "niche": "Văn hóa Hát Văn / Kênh Demo YouTube Studio",
-        "Subscribers": "Kênh demo thực chiến",
-        "avatar_url": ""
-      },
-      {
-        "name": "MrBeast (Ví dụ chiến dịch tình nguyện trồng cây & làm sạch môi trường trong Danh mục Tổ chức phi lợi nhuận)",
-        "handle": "@MrBeast",
-        "url": "https://www.youtube.com/@MrBeast",
-        "niche": "Entertainment / Nonprofits & Activism",
-        "Subscribers": "300M+",
-        "avatar_url": ""
-      }
+      "@MrBeast"
     ],
     "key_timestamps": [
       {
@@ -5448,8 +5119,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "Quản Trị AdSense & Hạ Tầng Kênh",
     "niche_id": "monetization_pitfalls",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "YouTube Studio",
       "YouTube Audio Library",
@@ -5463,14 +5134,7 @@
       "Zing MP3"
     ],
     "channels_mentioned": [
-      {
-        "name": "Hòa Minzy (Ví dụ ca khúc Bắc Bling bị chặn quốc gia/báo bản quyền ngay lập tức nếu lấy 5-10 giây nhạc đưa vào video)",
-        "handle": "@HoaMinzyOfficial",
-        "url": "https://www.youtube.com/@HoaMinzyOfficial",
-        "niche": "Music / V-Pop (Case Study Bản Quyền Content ID)",
-        "Subscribers": "3M+",
-        "avatar_url": ""
-      }
+      "@HoaMinzyOfficial"
     ],
     "key_timestamps": [
       {
@@ -5566,8 +5230,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche_id": "channel_setup",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "YouTube Studio",
       "ChatGPT",
@@ -5576,16 +5240,8 @@
       "Gmail"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@StorylineEnglishOfficial",
-        "name": "Storyline English",
-        "url": "https://www.youtube.com/@StorylineEnglishOfficial"
-      },
-      {
-        "handle": "@wisdomhistoryenglish",
-        "name": "Wisdom History English",
-        "url": "https://www.youtube.com/@wisdomhistoryenglish"
-      }
+      "@StorylineEnglishOfficial",
+      "@wisdomhistoryenglish"
     ],
     "course_docs": [
       {
@@ -5684,18 +5340,14 @@
     "category_group": "chuyen_gia",
     "niche_primary": "SEO & Thuật Toán YouTube",
     "niche_id": "video_upload_seo",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "YouTube Studio",
       "ChatGPT"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@ChillBuồnStudio",
-        "name": "Chill Buồn Studio",
-        "url": "https://www.youtube.com/channel/UCpV0ce2xtGTY-2R0K0Ncr4g"
-      }
+      "@ChillBuồnStudio"
     ],
     "course_docs": [
       {
@@ -5789,8 +5441,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "Prompt Engineering & Visual AI",
     "niche_id": "camera_angles_prompting",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "Grok",
       "Google Flow",
@@ -5899,8 +5551,8 @@
     "category_group": "chuyen_gia",
     "niche_primary": "Prompt Engineering & Visual AI",
     "niche_id": "master_prompt_formula",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "ChatGPT",
       "Google Flow",
@@ -6014,8 +5666,8 @@
     "category_group": "ha_tang",
     "niche_primary": "Tooling & Tự Động Hóa YouTube",
     "niche_id": "prompt_automation_pipeline",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "market_code": "GLOBAL",
     "tools_mentioned": [
       "Google Flow",
       "Nano Banana",

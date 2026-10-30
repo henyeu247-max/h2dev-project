@@ -1,0 +1,855 @@
+1
+00:00:00,000 --> 00:00:04,340
+Bạn đã bao giờ nghĩ đến việc bắt đầu một kênh YouTube nhưng lại bối rối không biết bắt đầu từ đâu chưa?
+
+2
+00:00:05,080 --> 00:00:12,920
+Hôm nay, mình sẽ chia sẻ với các bạn những bước cơ bản nhất để tạo ra một video hoàn chỉnh, cùng với một vài mẹo hữu ích giúp bạn dễ dàng hơn trong quá trình thực hiện.
+
+3
+00:00:13,600 --> 00:00:18,380
+Chủ đề video hôm nay sẽ là về Chủ nghĩa Khắc Kỷ, một dạng chủ đề dễ làm và có thể bắt đầu ngay.
+
+4
+00:00:19,060 --> 00:00:26,680
+Đừng quên nâng cấp ngay tài khoản Premium tại Huân Academy để bắt đầu khóa học bài bản, chi tiết để xây dựng và kiếm tiền từ lượt xem trên kênh YouTube nhé.
+
+5
+00:00:26,920 --> 00:00:28,520
+Giờ thì cùng bắt đầu thôi nào.
+
+6
+00:00:29,000 --> 00:00:36,760
+A. Lên kịch bản. Để hoàn thiện một kịch bản, chúng ta cần trải qua 3 bước. Tổng hợp, tự viết, làm lại. Bước 1, tổng hợp. Ở bước
+
+7
+00:00:36,760 --> 00:00:45,000
+này chúng ta sẽ thực hiện tổng hợp nội dung từ các website, các báo, các kênh YouTube cùng chủ đề có nội dung tương tự để tham khảo.
+
+8
+00:00:45,000 --> 00:00:51,867
+Trong quá trình làm kịch bản, nhận thấy tiêu đề, tư duy ngược đang có lượt view khá tốt ở các kênh đi tham khảo. Mình sẽ đào sâu vào
+
+9
+00:00:51,867 --> 00:00:58,733
+tiêu đề này. Với chủ đề chủ nghĩa Khắc Kỷ cùng tiêu đề mình đã chọn, tư duy ngược giải quyết các vấn đề cuộc sống. Mình sẽ bắt đầu
+
+10
+00:00:58,733 --> 00:01:05,600
+triển khai tìm kiếm và tham khảo các dữ liệu liên quan ở các nguồn như báo, trang web hoặc từ chính kênh đã làm những nội dung tương tự.
+
+11
+00:01:05,600 --> 00:01:10,680
+Hãy xây dựng Dream 100 như mình đã hướng dẫn trong khóa học, để có thể tổng hợp nội dung một cách tốt nhất nhé.
+
+12
+00:01:10,680 --> 00:01:15,820
+Nhé, để nắm rõ các bước hay làm thế nào để tổng hợp hiệu quả, mọi người hãy học lại bài 3.1
+
+13
+00:01:15,820 --> 00:01:19,920
+Xây dựng kho ý tưởng và content tự phát triển nắm chắc chiến thắng trong thị trường nhé
+
+14
+00:01:19,920 --> 00:01:21,640
+Bước 2, tự viết
+
+15
+00:01:21,640 --> 00:01:25,020
+Sau khi đã tổng hợp, tôi đã tạo ra được một dàn ý
+
+16
+00:01:25,020 --> 00:01:28,060
+Các câu hỏi bổ trợ để tạo content từ ChatGPT
+
+17
+00:01:28,461 --> 00:01:34,961
+Các câu hỏi, câu lệnh này sẽ giúp ChatGPT hiểu rõ những ý tôi muốn triển khai và viết chi tiết kịch bản về dạng chủ đề đang làm.
+
+18
+00:01:34,961 --> 00:01:40,521
+Đây là những câu lệnh mà mình đã kiểm tra thử và đạt được hiệu quả. Mọi người có thể tham khảo các câu lệnh của tôi nhé.
+
+19
+00:01:40,521 --> 00:01:46,761
+Với chủ đề, tiêu đề khác, mọi người cũng làm tương tự hoặc sáng tạo thêm những câu lệnh để triển khai chi tiết kịch bản hơn.
+
+20
+00:01:47,421 --> 00:01:51,781
+Tiếp theo, chúng ta sẽ ứng dụng AI vào công việc bằng cách sử dụng ChatGPT để làm kịch bản.
+
+21
+00:01:52,981 --> 00:01:56,521
+Chúng ta sẽ sử dụng những câu lệnh đã chuẩn bị để tạo thành một kịch bản hoàn chỉnh.
+
+22
+00:01:56,981 --> 00:01:58,541
+Mình sẽ ví dụ cho mọi người nhé.
+
+23
+00:01:59,001 --> 00:02:03,441
+Mình sẽ ghim những câu lệnh ở đây để mọi người tiện theo dõi và cùng thực hành với mình nhé.
+
+24
+00:02:05,121 --> 00:02:08,601
+Câu lệnh đầu tiên sẽ giúp chúng ta xác định vai trò của chúng ta khi dùng ChatGPT,
+
+25
+00:02:08,601 --> 00:02:11,061
+ChatGPT, giúp ChatGPT trả kết quả phù hợp nhất.
+
+26
+00:02:11,921 --> 00:02:13,901
+Như vậy ChatGPT đã xác nhận vai trò.
+
+27
+00:02:14,381 --> 00:02:17,881
+Tiếp đến chúng ta sẽ triển khai và phân tích cụ thể cho tiêu đề mà chúng ta đã chọn.
+
+28
+00:02:18,301 --> 00:02:19,861
+Copy câu lệnh mà bạn đã chuẩn bị.
+
+29
+00:02:20,401 --> 00:02:25,701
+Với câu lệnh thứ 2 này, ChatGPT sẽ giúp bạn triển khai và phân tích tiêu đề, chủ đề bạn chọn.
+
+30
+00:02:28,621 --> 00:02:30,521
+Đây chính là dàn ý chi tiết của chủ đề.
+
+31
+00:02:31,001 --> 00:02:35,401
+Từ dàn ý này bạn có thể tham khảo, sửa hoặc dùng trực tiếp để làm kịch bản nhé.
+
+32
+00:02:35,401 --> 00:02:40,341
+ChatGPT đã phân tích vô cùng chi tiết, tạo các đầu mục để bạn có thể dễ dàng triển khai.
+
+33
+00:02:41,250 --> 00:02:48,717
+Giờ thì chúng ta sẽ dùng câu lệnh sau. Hãy phát triển dàn ý thành kịch bản video YouTube giúp tôi. Câu lệnh này sẽ trả cho bạn kết quả
+
+34
+00:02:48,717 --> 00:02:56,183
+là một dòng thời gian cho video một cách hợp lý. Từ tiêu đề, thời gian, hình ảnh minh họa. Và đây là kết quả. Tiếp đến chúng ta
+
+35
+00:02:56,183 --> 00:03:03,650
+sẽ chuyển dàn ý trên thành một kịch bản hoàn chỉnh bằng câu lệnh sau nhé. Hãy viết dàn ý trên thành một đoạn văn hoàn chỉnh cho video YouTube.
+
+36
+00:03:03,650 --> 00:03:13,270
+Phần dàn ý trên đã được ChatGPT triển khai thành kịch bản.
+
+37
+00:03:16,430 --> 00:03:21,190
+Như vậy, ChatGPT đã giúp bạn tạo ra kịch bản đọc hoàn chỉnh dựa theo chủ đề mà bạn mong muốn.
+
+38
+00:03:23,210 --> 00:03:28,990
+Mọi người hãy lưu phần kết quả này lại ra một bản Word, kiểm tra một lượt rồi sửa lại những phần mà bạn thấy chưa ưng ý.
+
+39
+00:03:30,090 --> 00:03:32,630
+Phần kịch bản này sẽ được chúng ta dùng để chuyển sang giọng đọc.
+
+40
+00:03:34,000 --> 00:03:36,630
+Một vài điều cần lưu ý khi làm kịch bản.
+
+41
+00:03:37,410 --> 00:03:40,350
+Một, phải làm kịch bản để hiểu được nội dung video.
+
+42
+00:03:41,070 --> 00:03:44,490
+Hai, phải xem video đối thủ để hiểu tại sao họ làm vậy.
+
+43
+00:03:44,930 --> 00:03:48,610
+Ba, tìm kiếm, tham khảo càng nhiều thì chất lượng đầu ra càng tốt.
+
+44
+00:03:49,570 --> 00:03:52,150
+Vậy là chúng ta đã có một kịch bản hoàn chỉnh từ ChatGPT.
+
+45
+00:03:52,690 --> 00:03:55,530
+Chúng ta sẽ dùng phần kịch bản này để tạo giọng đọc bằng phần mềm Vbee nhé.
+
+46
+00:03:55,530 --> 00:03:59,770
+Nhé, ở đây mình có video cùng chủ đề mà chúng ta đang làm với lượt xem khá tốt.
+
+47
+00:04:00,230 --> 00:04:02,970
+Cùng nghe thử giọng đọc video của họ và tham khảo nhé.
+
+48
+00:04:03,230 --> 00:04:10,990
+Trong video này, bạn sẽ khám phá bí quyết vận dụng tư duy ngược để mở ra những cánh cửa mới trong cuộc đời và xoay chuyển vận mệnh của chính mình.
+
+49
+00:04:11,610 --> 00:04:15,530
+Đây là nghệ thuật sống đạt đến đỉnh cao, nơi bạn không cần phải cố gắng đến đỉnh cao.
+
+50
+00:04:15,530 --> 00:04:16,270
+Đạt được điều gì?
+
+51
+00:04:16,636 --> 00:04:18,000
+Giờ thì tạo giọng đọc thôi nào.
+
+52
+00:04:18,000 --> 00:04:31,156
+Đây là trang web Vbee, công cụ chuyển đổi văn bản thành giọng nói. Chúng ta sẽ dùng trang web này để tạo giọng đọc cho video. Để tìm giọng đọc mong muốn và nghe thử, chúng ta chọn vào phần này.
+
+53
+00:04:31,836 --> 00:04:40,376
+Ở Vbee, chúng ta có rất nhiều lựa chọn về cả giọng nam lẫn giọng nữ. Trong quá trình làm, mọi người có thể tham khảo và chọn ra giọng đọc mà mọi người mong muốn.
+
+54
+00:04:40,656 --> 00:04:45,416
+Mình sẽ chọn giọng đọc Anh Khôi, giọng đọc giống với video cùng chủ đề chúng ta vừa xem.
+
+55
+00:04:48,056 --> 00:04:51,636
+Cùng nghe thử nhé!
+
+56
+00:04:52,516 --> 00:04:55,996
+Chủ nghĩa Khắc Kỷ, tư duy ngược giải quyết các vấn đề trong cuộc sống.
+
+57
+00:04:56,636 --> 00:04:59,336
+Trùng khớp với giọng đọc video chúng ta vừa xem phải không nào?
+
+58
+00:05:11,936 --> 00:05:16,456
+Hãy sao chép kịch bản của chúng ta đã tạo từ ChatGPT và tạo giọng đọc cho video nhé!
+
+59
+00:05:16,456 --> 00:05:19,916
+Mình sẽ làm ví dụ một đoạn ngắn trong kịch bản chúng ta đã chuẩn bị.
+
+60
+00:05:20,950 --> 00:05:25,870
+Và đây là kết quả.
+
+61
+00:05:26,550 --> 00:05:35,770
+Bạn có bao giờ tự hỏi, tại sao càng cố gắng giải quyết vấn đề, mọi thứ lại càng rối tung lên, hoặc càng lo lắng, thì bạn lại càng mất kiểm soát.
+
+62
+00:05:36,290 --> 00:05:41,350
+Có lẽ bạn đang suy nghĩ theo một cách đã quá quen thuộc và chính điều đó đang khiến bạn mắc kẹt.
+
+63
+00:05:42,130 --> 00:05:46,030
+Giọng đọc trùng khớp với video cùng chủ đề mà chúng ta vừa xem phải không nào.
+
+64
+00:05:47,030 --> 00:05:50,770
+Tải giọng đọc về, mọi người hãy đặt tên cho giọng đọc để tránh nhầm lẫn nhé.
+
+65
+00:05:50,950 --> 00:05:54,870
+Khi làm giọng đọc, chúng ta cần chú ý những điều sau.
+
+66
+00:05:56,490 --> 00:06:00,710
+1. Chỉ nên copy từng đoạn kịch bản và cho vào Vbee để tạo giọng đọc.
+
+67
+00:06:01,070 --> 00:06:06,550
+2. Nên nghe lại từng lượt để soát lỗi chính tả, ngắt nghỉ của giọng đọc và sửa lại theo mong muốn.
+
+68
+00:06:07,030 --> 00:06:10,970
+3. Đặt tên cho file giọng đọc sau khi tạo để dễ kiểm soát và tránh nhầm lẫn.
+
+69
+00:06:12,000 --> 00:06:15,610
+Tiếp theo chúng ta sẽ làm tài nguyên ảnh cho video bằng phần mềm Midjourney nhé.
+
+70
+00:06:16,010 --> 00:06:18,550
+Đây là trang web Midjourney, công cụ tạo ảnh bằng AI.
+
+71
+00:06:18,550 --> 00:06:21,750
+AI, chúng ta sẽ dùng các câu lệnh và từ những câu lệnh này,
+
+72
+00:06:21,990 --> 00:06:24,190
+Midjourney sẽ tạo ra những bức ảnh theo ý của bạn.
+
+73
+00:06:24,430 --> 00:06:25,770
+Chọn phần Grid để tạo ảnh.
+
+74
+00:06:26,730 --> 00:06:30,050
+Để tạo ra được một bức ảnh hoàn chỉnh, sắc nét và đúng với yêu cầu,
+
+75
+00:06:30,670 --> 00:06:32,430
+chúng ta cần một cấu trúc prompt chi tiết.
+
+76
+00:06:32,850 --> 00:06:35,290
+Đây là cấu trúc của một prompt tốt với những yếu tố cơ bản.
+
+77
+00:06:35,790 --> 00:06:38,550
+Cùng với đó, mình đã chuẩn bị một câu lệnh ví dụ.
+
+78
+00:06:38,550 --> 00:06:40,430
+cho dạng chủ đề Stoic chúng ta đang làm.
+
+79
+00:06:40,830 --> 00:06:41,650
+Cùng thực hành nhé.
+
+80
+00:06:41,990 --> 00:06:43,770
+Midjourney sẽ nhận câu lệnh bằng tiếng Anh.
+
+81
+00:06:44,170 --> 00:06:45,950
+Vậy nên chúng ta cần truy cập Google Dịch,
+
+82
+00:06:46,210 --> 00:06:47,670
+viết những yếu tố bạn muốn bằng tiếng Việt
+
+83
+00:06:47,670 --> 00:06:48,710
+và chuyển sang tiếng Anh.
+
+84
+00:06:49,181 --> 00:06:52,001
+Mình sẽ để cấu trúc prompt ở đây để mọi người tiện làm theo nhé.
+
+85
+00:06:52,921 --> 00:06:59,461
+Đầu tiên chính là mô tả về đối tượng chính. Đối tượng chính ở đây sẽ là tượng đá cẩm thạch trắng của một triết gia Hy Lạp.
+
+86
+00:07:03,641 --> 00:07:05,341
+Tiếp đến là phần mô tả chi tiết.
+
+87
+00:07:06,141 --> 00:07:15,221
+Mình sẽ viết mong muốn về bối cảnh, không gian, hình dáng của bức tượng, mô tả chi tiết về bức tượng.
+
+88
+00:08:01,300 --> 00:08:07,880
+Và cuối cùng là tổ hợp cấu trúc phong cách, góc nhìn, ánh sáng, độ phân giải.
+
+89
+00:08:31,300 --> 00:08:41,300
+Mình sẽ phân tích câu lệnh lại một lượt cho mọi người. Đối tượng chính trong câu lệnh là tượng đá cẩm thạch trắng của một triết gia Hy Lạp. Mô tả chi tiết chính được hiểu là mô tả
+
+90
+00:08:41,300 --> 00:08:51,300
+về đối tượng. Ứng với câu lệnh trên sẽ là bên trong cung điện Hy Lạp. Mạnh mẽ, đứng hiên ngang với vương miện Nguyệt Quế và cuộn giấy. Trước một không gian rộng lớn, hình dáng cơ bắp,
+
+91
+00:08:51,300 --> 00:09:01,300
+mặc áo giáp của ông toát lên sức mạnh, với đôi mắt sắc sảo và cái nhìn chăm chú. Và cuối cùng chính phần phong cách và ánh sáng, ứng với bối cảnh Rome cổ đại. Ánh sáng chiều sâu.
+
+92
+00:09:01,300 --> 00:09:04,900
+Và cùng xem thử kết quả khi tạo bên Midjourney với câu lệnh này nhé.
+
+93
+00:09:24,600 --> 00:09:32,080
+Nhận thấy kết quả vẫn chưa đúng ý mình mong muốn
+
+94
+00:09:32,080 --> 00:09:33,740
+Mình sẽ viết thêm câu lệnh
+
+95
+00:09:33,740 --> 00:09:36,020
+Mình mong muốn hình ảnh sẽ có chất lượng cao hơn
+
+96
+00:09:36,020 --> 00:09:37,680
+Mình sẽ thêm câu mô tả
+
+97
+00:09:37,680 --> 00:09:39,020
+Hình ảnh chất lượng cao
+
+98
+00:09:40,836 --> 00:09:43,756
+Giờ thì cùng kiểm tra lại ảnh khi tạo với câu lệnh mới này nào.
+
+99
+00:09:44,996 --> 00:09:51,876
+Mọi người lưu ý thêm phần mô tả này vào câu lệnh nhé. Đây là kích thước khung hình của bức ảnh và đây là kết quả với câu lệnh của chúng ta.
+
+100
+00:09:56,016 --> 00:10:05,076
+Có thể thấy, chất lượng bức ảnh đã được cải thiện, kết quả đã đúng ý của mình.
+
+101
+00:10:06,796 --> 00:10:08,556
+Để tạo thêm nhiều ảnh, chúng ta chọn Reroll.
+
+102
+00:10:08,556 --> 00:10:10,556
+Ta chọn Reroll.
+
+103
+00:10:22,556 --> 00:10:24,556
+Tải những bức ảnh mà bạn muốn.
+
+104
+00:10:24,556 --> 00:10:27,556
+Như vậy chúng ta đã có nguyên liệu để làm video rồi.
+
+105
+00:10:27,556 --> 00:10:29,896
+Một vài lưu ý khi tạo ảnh bằng phần mềm Midjourney.
+
+106
+00:10:30,856 --> 00:10:33,456
+1. Midjourney là phần mềm tính phí.
+
+107
+00:10:33,936 --> 00:10:37,876
+2. Để tạo ảnh trên Midjourney, cần dùng câu lệnh tiếng Anh.
+
+108
+00:10:38,000 --> 00:10:46,696
+3. Câu lệnh càng chi tiết thì ảnh càng đạt kết quả tốt. Giờ chúng ta sẽ đến bước tiếp theo. Dựng video với những tài nguyên vừa chuẩn bị. Phần mềm mình sử dụng để dựng video
+
+109
+00:10:46,696 --> 00:10:55,516
+sẽ là CapCut. Mọi người hãy mua bản Pro để có thể sử dụng được hết tất cả các tính năng nhé. Đầu tiên mình sẽ đặt tên dự án theo chủ đề để dễ kiểm soát.
+
+110
+00:11:00,700 --> 00:11:09,040
+Tiếp đến chúng ta hãy thêm các nguyên liệu mà chúng ta đã chuẩn bị, gồm có giọng đọc từ Vbee, ảnh tạo từ Midjourney vào CapCut nhé.
+
+111
+00:11:10,700 --> 00:11:14,540
+Mình thường thêm hết các nguyên liệu đã chuẩn bị vào trước, rồi mới bắt đầu chỉnh sửa.
+
+112
+00:11:17,300 --> 00:11:20,400
+Bạn có bao giờ tự hỏi, tại sao càng cố gắng?
+
+113
+00:11:20,400 --> 00:11:27,287
+Chúng ta sẽ đến bước đầu tiên, thêm phụ đề cho video. Để
+
+114
+00:11:27,287 --> 00:11:34,173
+thêm phụ đề cho video, mọi người hãy chọn vào phần văn
+
+115
+00:11:34,173 --> 00:11:41,060
+bản, chọn phụ đề tự động. Ngôn ngữ nói sẽ để tiếng Việt.
+
+116
+00:11:41,060 --> 00:11:49,500
+Sau đó bấm tạo, CapCut sẽ tự động tạo cho bạn phụ đề dựa theo giọng đọc mà các bạn đã chuẩn bị trước.
+
+117
+00:11:49,940 --> 00:11:53,160
+Bước 2, chọn phông chữ, sửa lỗi chính tả của phụ đề.
+
+118
+00:11:53,640 --> 00:11:58,940
+Ở bước này chúng ta sẽ chọn phông chữ mà chúng ta đã tham khảo từ kênh đối thủ, hoặc chọn phông chữ mà chúng ta muốn.
+
+119
+00:11:59,480 --> 00:12:03,520
+Kéo dài phụ đề để hiển thị xuyên suốt video, các bạn bấm vào phụ đề vừa tạo.
+
+120
+00:12:04,280 --> 00:12:10,060
+Chọn phần văn bản, đây là bảng thông số để các bạn điều chỉnh cỡ chữ, phông chữ, hiệu ứng chữ mà các bạn mong muốn.
+
+121
+00:12:10,060 --> 00:12:13,800
+Muốn chọn phông chữ ở đây, có rất nhiều phông chữ cho các bạn chọn.
+
+122
+00:12:14,280 --> 00:12:19,380
+Để phù hợp với chủ đề Stoic, mình sẽ chọn phông chữ có nét cứng cáp một chút, phông chữ Montserrat.
+
+123
+00:12:23,560 --> 00:12:27,860
+Tiếp đến, để phụ đề của chúng ta nổi bật, mình sẽ thêm hiệu ứng chữ tại đây.
+
+124
+00:12:31,701 --> 00:12:33,981
+Phụ đề đã hấp dẫn hơn rất nhiều phải không nào?
+
+125
+00:12:37,361 --> 00:12:42,721
+Giờ thì mình sẽ sửa lỗi chính tả cùng với kéo dài phụ đề, để phụ đề có thể hiển thị xuyên suốt video.
+
+126
+00:12:43,361 --> 00:12:44,981
+Mọi người hãy làm thật kỹ phần này nhé.
+
+127
+00:12:44,981 --> 00:12:49,881
+Vì phụ đề tự động tạo có thể sẽ có những lỗi sai vậy nên các bạn hãy xem và sửa thật kỹ nhé.
+
+128
+00:12:50,961 --> 00:12:53,501
+Mình sẽ làm bước này thật chậm để mọi người cùng theo dõi.
+
+129
+00:12:53,921 --> 00:12:59,541
+Mình sẽ sửa chính tả theo các yếu tố, chữ đầu dòng sẽ viết hoa, ngắt nghỉ theo đoạn, sửa lỗi chính tả.
+
+130
+00:13:07,941 --> 00:13:13,021
+Trong quá trình làm, mọi người hãy vừa xem kịch bản, vừa nghe giọng đọc để sửa phụ đề nhé.
+
+131
+00:13:43,870 --> 00:13:49,870
+Quen thuộc và chính điều đó đang khiến bạn mắc kẹt
+
+132
+00:13:49,870 --> 00:13:52,721
+Hôm nay, mình muốn...
+
+133
+00:13:52,721 --> 00:14:02,721
+Mình muốn giới thiệu
+
+134
+00:14:02,721 --> 00:14:10,750
+Một cách nhìn nhận. Hoàn toàn.
+
+135
+00:14:10,750 --> 00:14:16,650
+Tư duy ngược một tư duy ngược đợt
+
+136
+00:14:16,650 --> 00:14:18,150
+Đợi
+
+137
+00:14:18,150 --> 00:14:30,390
+Nhìn nhận
+
+138
+00:14:30,390 --> 00:14:36,650
+Nhìn nhận hoàn toàn hát
+
+139
+00:14:45,650 --> 00:14:52,950
+Khác, tư duy ngược một tư duy ngược đời nhưng lại cực kỳ hiệu quả
+
+140
+00:14:52,950 --> 00:14:54,650
+Đặc biệt khi
+
+141
+00:14:54,650 --> 00:14:56,650
+Đặc biệt khi kết hợp với
+
+142
+00:14:56,650 --> 00:15:01,650
+Bạn nhìn rõ
+
+143
+00:15:01,650 --> 00:15:06,866
+Tìm thấy ư
+
+144
+00:15:06,866 --> 00:15:15,306
+Hướng đi thanh thản hơn trong cuộc sống
+
+145
+00:15:22,526 --> 00:15:23,866
+Tư duy ngược là gì
+
+146
+00:15:23,866 --> 00:15:35,126
+Tư duy ngược là gì? Đó là khi bạn đảo ngược lại câu hỏi.
+
+147
+00:15:39,446 --> 00:15:40,506
+Tư duy ngược lại lối.
+
+148
+00:15:44,906 --> 00:15:46,686
+Để soi chiếu vấn đề từ một góc.
+
+149
+00:15:46,686 --> 00:15:53,526
+Ví dụ, thay vì hỏi làm sao để thành
+
+150
+00:15:53,526 --> 00:16:04,526
+Hãy thử hỏi làm sao để thất bại
+
+151
+00:16:04,526 --> 00:16:09,526
+Nghe có vẻ kỳ quặc.
+
+152
+00:16:21,950 --> 00:16:23,950
+Nhưng chính những câu
+
+153
+00:16:23,950 --> 00:16:29,750
+Hãy giúp bạn
+
+154
+00:16:29,750 --> 00:16:38,550
+Điều bạn đáp
+
+155
+00:16:38,550 --> 00:16:44,030
+Lặp lại và tránh
+
+156
+00:16:44,030 --> 00:16:56,830
+Hãy giúp bạn nhận ra những điều bạn đang vô tình lặp lại và tránh được chúng. Chiết ra Khắc Kỷ Epictetus tử.
+
+157
+00:17:10,690 --> 00:17:12,030
+Không phải sự việc.
+
+158
+00:17:14,030 --> 00:17:27,470
+Mà chính là cách chúng ta nhìn nhận sự việc đó, nghĩa là
+
+159
+00:17:27,470 --> 00:17:35,790
+Nghĩa là, thay vì cố gắng kiểm soát mọi thứ bên ngoài
+
+160
+00:17:43,391 --> 00:17:45,851
+Ấy bắt đầu từ bên trong từ góc nhìn của bạn.
+
+161
+00:17:47,371 --> 00:17:48,991
+Vậy, làm...
+
+162
+00:17:57,131 --> 00:17:59,691
+Vậy, làm sao để áp dụng tư duy ngược trong...
+
+163
+00:18:15,291 --> 00:18:25,351
+Mình muốn giới thiệu đến bạn một cách nhìn nhận hoàn toàn khác, tư duy ngược một tư duy ngược đời nhưng lại cực kỳ hiệu quả, đặc biệt khi kết hợp với triết lý Stoic giúp bạn
+
+164
+00:18:25,351 --> 00:18:38,071
+Tức giúp bạn nhìn rõ bản chất vấn đề và tìm thấy hướng đi thanh thản hơn trong cuộc sống.
+
+165
+00:18:38,911 --> 00:18:39,471
+Tư duy ngược.
+
+166
+00:18:39,671 --> 00:18:41,411
+Như vậy chúng ta đã hoàn thành bước phụ đề.
+
+167
+00:18:42,000 --> 00:18:44,491
+Bước 3. Chọn ảnh phù hợp với từng đoạn giọng đọc.
+
+168
+00:18:45,351 --> 00:18:49,351
+Một vài lưu ý khi chọn ảnh minh họa trong video đó là
+
+169
+00:18:49,351 --> 00:18:52,351
+1. Chất lượng hình ảnh, clip minh họa sắc nét
+
+170
+00:18:52,351 --> 00:18:54,000
+2. Sắc nét
+
+171
+00:18:54,000 --> 00:18:59,520
+Sắp xếp ảnh phù hợp và sát với nội dung. 3. Không sử dụng một ảnh quá 12 giây.
+
+172
+00:19:02,560 --> 00:19:07,180
+Mình sẽ xem kịch bản và nghe giọng đọc để sắp xếp ảnh sao cho phù hợp với nội dung từng đoạn nhé.
+
+173
+00:19:12,880 --> 00:19:22,340
+Bạn có bao giờ tự hỏi tại sao càng cố gắng giải quyết vấn đề, mọi thứ lại càng rối tung lên, hoặc càng lo lắng thì bạn lại càng mất kiểm soát.
+
+174
+00:19:22,340 --> 00:19:30,780
+Bước 4. Thêm hiệu ứng phù hợp vào video. Hiệu ứng chữ. Để video thêm phần hấp dẫn, chúng ta sẽ thêm hiệu ứng bằng cách sau.
+
+175
+00:19:33,480 --> 00:19:34,240
+Chọn hiệu ứng.
+
+176
+00:19:36,620 --> 00:19:43,400
+Trong CapCut sẽ có rất nhiều sự lựa chọn cho chúng ta. Mình sẽ để một vài ví dụ về hiệu ứng cho dạng chủ đề Stoic ở đây nhé.
+
+177
+00:19:45,200 --> 00:19:50,060
+Mọi người có thể tìm theo tên hiệu ứng mà mình đã ghi chú để tiết kiệm thời gian bằng cách nhìn vào phần tìm kiếm nhé.
+
+178
+00:19:52,340 --> 00:19:54,380
+Mình sẽ chọn hiệu ứng tên Nhiễu 2.
+
+179
+00:19:57,980 --> 00:20:01,400
+Rất giống với video mà chúng ta đã tham khảo lúc đầu phải không nào?
+
+180
+00:20:02,580 --> 00:20:05,420
+Bạn có bao giờ tự hỏi tại sao càng cố gắng?
+
+181
+00:20:12,020 --> 00:20:14,060
+Kéo dài hiệu ứng để chạy xuyên suốt video.
+
+182
+00:20:19,680 --> 00:20:25,300
+Bàn Công ty
+
+183
+00:20:25,300 --> 00:20:31,360
+Bạn có bao giờ tự hỏi, tại sao càng cố gắng giải quyết vấn đề, mọi thứ lại càng rối tung lên?
+
+184
+00:20:33,760 --> 00:20:35,066
+Chương trình
+
+185
+00:20:35,066 --> 00:20:40,046
+Mình muốn làm video khác với video tham khảo một chút, mình sẽ chọn hiệu ứng sang hiệu ứng nhiễu đen.
+
+186
+00:20:40,046 --> 00:20:49,046
+Bạn có bao giờ tự hỏi tại sao càng cố gắng giải quyết vấn đề, mọi thứ lại càng rối tung lên?
+
+187
+00:20:49,046 --> 00:20:51,546
+Mọi người có thể chỉnh các thông số hiệu ứng tại đây nhé.
+
+188
+00:20:55,246 --> 00:21:02,026
+Mọi thứ lại càng rối tung lên, hoặc càng lo lắng, thì bạn lại càng mất kiểm soát. Có lẽ bạn đang suy nghĩ.
+
+189
+00:21:02,626 --> 00:21:07,686
+Để hấp dẫn hơn, mình sẽ thêm một hiệu ứng chuyển động nữa. Hiệu ứng mình chọn tên là Lắc qua lại.
+
+190
+00:21:34,870 --> 00:21:40,046
+LỘI HỌI
+
+191
+00:21:40,046 --> 00:21:42,006
+Tự hỏi, tại sao càng cục?
+
+192
+00:21:44,700 --> 00:21:48,780
+Kéo phần hiệu ứng xuống dưới phần phụ đề để hiệu ứng chỉ áp dụng cho nền ảnh.
+
+193
+00:21:51,000 --> 00:21:52,400
+Bạn có bao giờ tự hỏi?
+
+194
+00:21:54,340 --> 00:21:57,260
+Chỉnh lại thông số của hiệu ứng sao cho phù hợp và hấp dẫn.
+
+195
+00:22:00,620 --> 00:22:12,580
+Bạn có bao giờ tự hỏi tại sao càng cố gắng?
+
+196
+00:22:14,700 --> 00:22:28,400
+Bạn có bao giờ tự hỏi, tại sao càng cố gắng giải quyết vấn đề, mọi thứ lại càng rối tung lên, hoặc càng lo lắng, thì bạn lại càng mất kiểm soát?
+
+197
+00:22:33,700 --> 00:22:39,860
+Bạn có bao giờ tự hỏi, giờ thì thêm hiệu ứng hiển thị chữ phụ đề, mọi người chọn phụ đề, chọn hiệu ứng động.
+
+198
+00:22:45,000 --> 00:22:53,240
+Hiệu ứng mình dùng trong video tên là Rõ dần. Bạn có bao giờ tự hỏi tại sao càng? Bôi
+
+199
+00:22:53,240 --> 00:23:01,780
+tất cả phụ đề rồi chọn lại hiệu ứng một lần nữa để áp dụng cho toàn video. Hôm nay.
+
+200
+00:23:01,780 --> 00:23:06,980
+Mình đã chuẩn bị trước một bài nhạc nền cho chủ đề này
+
+201
+00:23:06,980 --> 00:23:10,560
+Mình sẽ để một vài trang web chọn nhạc nền cho chủ đề hay ở đây nhé
+
+202
+00:23:21,480 --> 00:23:30,056
+Bạn có bao giờ tự hỏi tại sao càng cuối lưu ý?
+
+203
+00:23:30,056 --> 00:23:33,676
+Lưu ý, hãy để âm lượng nhạc nền nhỏ hơn giọng đọc mọi người nhé.
+
+204
+00:23:35,856 --> 00:23:39,436
+Âm lượng phù hợp dùng cho nhạc nền là ở khoảng trừ 15 đến 20 dB.
+
+205
+00:23:39,436 --> 00:23:45,616
+Bạn có bao giờ tự hỏi, tại sao càng cố gắng giải quyết vấn đề, mọi thứ lại càng rối tung lên?
+
+206
+00:23:49,456 --> 00:23:54,656
+Như vậy chúng ta đã hoàn thành một video chủ đề Stoic rồi, giờ thì cùng xem lại kết quả nhé.
+
+207
+00:23:55,336 --> 00:24:04,556
+Bạn có bao giờ tự hỏi, tại sao càng cố gắng giải quyết vấn đề, mọi thứ lại càng rối tung lên, hoặc càng lo lắng, thì bạn lại càng mất kiểm soát?
+
+208
+00:24:04,556 --> 00:24:14,426
+Có lẽ bạn đang suy nghĩ theo một cách đã quá quen thuộc và chính điều đó đang khiến bạn mắc kẹt. Hôm nay, mình muốn giới thiệu đến bạn một cách nhìn nhận hoàn toàn khác. Tư duy ngược
+
+209
+00:24:14,426 --> 00:24:24,296
+một tư duy ngược đời nhưng lại cực kỳ hiệu quả, đặc biệt khi kết hợp với triết lý Stoic giúp bạn nhìn rõ bản chất vấn đề và tìm thấy hướng đi thanh thản hơn trong cuộc sống.
+
+210
+00:24:24,296 --> 00:24:31,436
+Tư duy ngược là gì? Đó là khi bạn đảo ngược lại câu hỏi, đi ngược lại lối mòn thông thường để soi chiếu vấn đề từ
+
+211
+00:24:31,436 --> 00:24:38,576
+một góc nhìn hoàn toàn mới. Ví dụ, thay vì hỏi làm sao để thành công, hãy thử hỏi làm sao để thất bại nhanh nhất. Nghe có
+
+212
+00:24:38,576 --> 00:24:45,716
+vẻ kỳ quặc, nhưng chính những câu hỏi ngược này lại giúp bạn nhận ra những điều bạn đang vô tình lặp lại và tránh được chúng.
+
+213
+00:24:46,100 --> 00:24:54,860
+Chiết gia Khắc Kỷ Epictetus từng nói, không phải sự việc khiến chúng ta đau khổ, mà chính là cách chúng ta nhìn nhận sự việc đó. Nghĩa là, thay vì cố
+
+214
+00:24:54,860 --> 00:25:03,620
+gắng kiểm soát mọi thứ bên ngoài, hãy bắt đầu từ bên trong từ góc nhìn của bạn. Vậy, làm sao để áp dụng tư duy ngược trong đời sống hàng ngày?

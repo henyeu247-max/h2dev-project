@@ -1,0 +1,83 @@
+{
+  "sku": "VIDEO-33d701",
+  "title": "MẸO EDIT LÁCH LỖI KHÔNG TRUNG THỰC MỚI NHẤT TỪ ĐỐI THỦ VÀ SHARE NGÁCH TRIẾT LÝ THỊ TRƯỜNG NHẬT KÊNH MỚI BUILD ĐÃ BKT + THÊM 3 NGÁCH NHỎ NHẬT & VIỆT",
+  "actual_topic": "MẸO EDIT LÁCH LỖI KHÔNG TRUNG THỰC MỚI NHẤT TỪ ĐỐI THỦ VÀ SHARE NGÁCH TRIẾT LÝ THỊ TRƯỜNG NHẬT KÊNH MỚI BUILD ĐÃ BKT + THÊM 3 NGÁCH NHỎ NHẬT & VIỆT",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Triết Lý Sống & Đạo Làm Người",
+  "niche_id": "faceless-general",
+  "target_market": "Nhật Bản / Việt Nam",
+  "market_code": "JP,VN",
+  "key_takeaways": [
+    "Kênh đầu lập tháng 3-2026 có 14 video, hơn 3k sub, video cao nhất hơn 200.000 lượt xem, tiêu đề dạng khuyến cáo người xem cân nhắc để gây tò mò, và ngách này lấy một nhân vật đại diện để kể câu chuyện.",
+    "Cách edit là ghép nhiều video tự nhiên lại với nhau, chỉ vậy mà đủ điều kiện kiếm tiền; muốn an toàn hơn thì ghép nhiều ảnh nhân vật hòa trộn với video.",
+    "Ngách ở thị trường Việt Nam có video hơn 140.000 view và video 8.000 view, bật quảng cáo bình thường, khai báo có dùng AI, và nên bám theo những video lên cao view nhất, đừng làm theo video ít view.",
+    "Kênh cổ 2009 ở thị trường Nhật có thời lượng video hơn 1 tiếng, RPM khoảng 4 đến 8, tiêu đề luôn có chữ biến mất, kể về nhân vật mất tích bí ẩn, và kênh này vẫn bật kiếm tiền.",
+    "Kênh về cuộc đời người nổi tiếng rất trend nhưng edit cực vì phải ghép đúng ảnh nhân vật; biết tiếng Nhật là lợi thế lớn để search tên nhân vật trên Google và sưu tập ảnh."
+  ],
+  "edit_sop": {
+    "primary": "Phân tích các ngách nhỏ thị trường Nhật và Việt cùng cách edit ghép video tự nhiên để lách lỗi không trung thực",
+    "additional": [
+      "Ghép nhiều video tự nhiên với nhau, muốn an toàn hơn thì ghép thêm nhiều ảnh nhân vật rồi cho hòa trộn với video",
+      "Với video nói về cuộc đời người nổi tiếng thì phải ghép đúng ảnh nhân vật: search tên nhân vật trên Google, sưu tập ảnh rồi ghép khớp với lời",
+      "Bám theo các video đối thủ lên cao view nhất để làm bán content, không làm theo video ít view",
+      "Giọng thuyết minh nên làm bằng giọng clone bám theo giọng của đối thủ, không dùng giọng VIP ElevenLabs vì giọng đẹp cũng không hay",
+      "Dịch tiêu đề để biết ngách nhỏ xoay quanh một nhân vật hay một chủ đề (ví dụ nhân vật mất tích bí ẩn)"
+    ]
+  },
+  "avoid_flags": [
+    "Chỉ ghép ảnh nhân vật chạy đơn giản thì edit chưa đủ tốt, dễ bị quét",
+    "Không làm theo những video ít view vì phí thời gian"
+  ],
+  "tools_mentioned": [
+    "Google",
+    "YouTube",
+    "ElevenLabs"
+  ],
+  "channels_mentioned": [
+    "@人生を読む",
+    "@VaultBoy001",
+    "@時代を生きた声",
+    "@thuatphongthuy26"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "01:37",
+      "seconds": 97,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "03:26",
+      "seconds": 206,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "05:32",
+      "seconds": 332,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "07:03",
+      "seconds": 423,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-33d701/transcript.txt",
+  "sop_steps": [
+    "Ghép nhiều video tự nhiên với nhau, muốn an toàn hơn thì ghép thêm nhiều ảnh nhân vật rồi cho hòa trộn với video",
+    "Với video nói về cuộc đời người nổi tiếng thì phải ghép đúng ảnh nhân vật: search tên nhân vật trên Google, sưu tập ảnh rồi ghép khớp với lời",
+    "Bám theo các video đối thủ lên cao view nhất để làm bán content, không làm theo video ít view",
+    "Giọng thuyết minh nên làm bằng giọng clone bám theo giọng của đối thủ, không dùng giọng VIP ElevenLabs vì giọng đẹp cũng không hay",
+    "Dịch tiêu đề để biết ngách nhỏ xoay quanh một nhân vật hay một chủ đề (ví dụ nhân vật mất tích bí ẩn)"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T06:30:00Z"
+}

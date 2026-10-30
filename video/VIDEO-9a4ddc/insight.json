@@ -1,0 +1,73 @@
+{
+  "key_takeaways": [
+    "Video chia sẻ mẹo test bản quyền cho dạng re-up bán content từ Douyin, để khỏi tốn thời gian edit rồi lên lại bị bản quyền và bị xóa.",
+    "Tác giả nói đây là bán content vì kênh Trung Quốc lấy video từ YouTube về cắt ghép chỉnh sửa, họ chỉ up trên Douyin, còn người Việt lấy về Việt sub lại up ngược lên YouTube, và cần thay đổi khoảng 60% sáng tạo lại.",
+    "Cách test là lập một kênh phụ bằng gmail khác, up video lên ở chế độ riêng tư, chờ nó xét duyệt, nếu dính bản quyền hình ảnh thì xóa và lấy nguồn khác.",
+    "Nếu bị bản quyền âm thanh thì vẫn giữ video, bấm xem chi tiết để biết đoạn nào, trích xuất âm thanh ra và thay bằng âm thanh khác là ổn.",
+    "Làm dạng này phải chấp nhận rủi ro, sau khi bật kiếm tiền có đợt quét thì dính sử dụng lại nội dung nhưng kháng được khoảng 99%, nên giữ lại một vài video khi chỉnh sửa trong CapCut."
+  ],
+  "edit_sop": {
+    "primary": "Mẹo test bản quyền bằng kênh phụ trước khi edit video reup bán content từ Douyin",
+    "additional": [
+      "Tạo một kênh phụ bằng một Gmail bất kỳ, không cần kênh cổ, để dùng test bản quyền.",
+      "Tải video từ nguồn về, chưa edit, up thẳng lên kênh phụ ở chế độ riêng tư và chờ YouTube xét duyệt.",
+      "Nếu video dính bản quyền hình ảnh thì bỏ luôn, tìm nguồn video khác.",
+      "Nếu chỉ dính bản quyền nhạc thì vẫn giữ, vào xem chi tiết để biết phút nào, rồi khi edit trích xuất âm thanh và thay bằng âm thanh khác.",
+      "Sau khi test không dính bản quyền mới bắt đầu edit và up lên kênh chính."
+    ]
+  },
+  "avoid_flags": [
+    "Không tải về edit tốn công rồi mới up thì bị bản quyền và bị xóa.",
+    "Không nên bám làm video đã dính bản quyền hình ảnh, dù bỏ âm thanh vẫn còn dính hình.",
+    "Làm reup bán content phải chấp nhận rủi ro dính bản quyền hoặc bị quét sử dụng lại nội dung."
+  ],
+  "verified_expert_summary": true,
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mẹo bản quyền cho dạng Reup bán content từ Douyin"
+    },
+    {
+      "time": "02:12",
+      "seconds": 132,
+      "label": "Phải thay đổi khoảng 60% bằng sáng tạo: cắt ghép, chèn thêm hình ảnh, văn bản"
+    },
+    {
+      "time": "04:18",
+      "seconds": 258,
+      "label": "Tạo kênh phụ để test bản quyền: không yêu cầu kênh cổ, chỉ cần có kênh"
+    },
+    {
+      "time": "06:28",
+      "seconds": 388,
+      "label": "Xem chi tiết bản quyền ở mục Hạn chế: bản quyền có nhiều dạng, demo video bị bản quyền"
+    },
+    {
+      "time": "08:37",
+      "seconds": 517,
+      "label": "Quan trọng là cách tự làm và lấy nguồn; có rất nhiều ngách (ví dụ sinh tồn)"
+    }
+  ],
+  "tools_mentioned": [
+    "Douyin",
+    "YouTube"
+  ],
+  "sop_steps": [
+    "Tạo một kênh phụ bằng một Gmail bất kỳ, không cần kênh cổ, để dùng test bản quyền.",
+    "Tải video từ nguồn về, chưa edit, up thẳng lên kênh phụ ở chế độ riêng tư và chờ YouTube xét duyệt.",
+    "Nếu video dính bản quyền hình ảnh thì bỏ luôn, tìm nguồn video khác.",
+    "Nếu chỉ dính bản quyền nhạc thì vẫn giữ, vào xem chi tiết để biết phút nào, rồi khi edit trích xuất âm thanh và thay bằng âm thanh khác.",
+    "Sau khi test không dính bản quyền mới bắt đầu edit và up lên kênh chính."
+  ],
+  "sku": "VIDEO-9a4ddc",
+  "title": "TÚT/ TRICK (mẹo) test bản quyền khi reup - bán content dạng nguồn từ douyin sang youtube",
+  "actual_topic": "TÚT/ TRICK (mẹo) test bản quyền khi reup - bán content dạng nguồn từ douyin sang youtube",
+  "channels_mentioned": [],
+  "visual_audio_checked": true,
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "source_transcript": "video/VIDEO-9a4ddc/transcript.txt",
+  "market_code": "VN,CN,GLOBAL",
+  "target_market": "Việt Nam / Trung Quốc / Quốc tế (Global)",
+  "niche_primary": "Kháng Bản Quyền & Xử Lý Lỗi GA"
+}

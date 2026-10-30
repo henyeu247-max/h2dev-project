@@ -1,0 +1,79 @@
+{
+  "sku": "VIDEO-10ceec",
+  "title": "SHOW NGÁCH REUP MỚI CỰC HOT VÀ NHIỀU NGUỒN GỐC ĐỂ LÀM TỪ BILIBILI",
+  "actual_topic": "Chia sẻ ngách Reup hoạt hình mới cực hot từ Bilibili (đăng full tập vài chục phút đến hơn 1 tiếng) — Kênh mẫu @Camnhonvietsub và kho nguồn gốc Bilibili",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Reup & Khai Thác Hoạt Hình",
+  "niche_id": "faceless-general",
+  "target_market": "Trung Quốc",
+  "market_code": "CN",
+  "key_takeaways": [
+    "Phân tích kênh đối thủ mẫu (@Camnhonvietsub) reup hoạt hình từ Bilibili: Kênh dùng phôi cổ năm 2022, mới chỉ đăng 12 video từ 11 ngày trước nhưng lượng view lên cực kỳ tốt; toàn bộ nội dung đều được reup từ bên Bilibili (Trung Quốc).",
+    "Đặc trưng định dạng đăng Full tập (từ vài chục phút đến hơn 1 tiếng): Khác với việc cắt lẻ từng tập ngắn, ngách hoạt hình này chủ yếu đăng nguyên full tập dài từ mấy chục phút đến trên 1 tiếng giúp tối ưu thời lượng xem cực cao.",
+    "Đối chiếu trực tiếp kênh nguồn gốc bên Bilibili (hơn 5 vạn / 50.000 view): Tác giả mở trực tiếp trang kênh nguồn trên Bilibili (space.bilibili.com/292057296) để chứng minh video gốc đăng ngày 5 tháng 4 (7 ngày trước) đạt hơn 5 vạn lượt xem (50.000 view) đã được kênh YouTube lấy về che phụ đề tiếng Trung bên dưới để đăng lại.",
+    "Phát hiện thêm kênh câu cá vạn cân (làm 8 ngày trước) nổ view ở cột đề xuất: Ngay ở cột đề xuất bên tay phải xuất hiện một kênh của học viên trong group mới chuyển sang ngách câu cá vạn cân từ 8 ngày trước (các video ngách cũ trước đó không có view), đăng cập nhật theo tập thường xuyên và nổ view rất lớn.",
+    "Hướng dẫn tải video đa nền tảng (TikTok, Douyin, Bilibili) bằng Tool dịch: Để lấy video gốc, chỉ cần sao chép liên kết video Bilibili rồi dán vào mục Download Free trong tool dịch của tác giả để tải về cả video lẫn hình thu nhỏ (hỗ trợ TikTok, Douyin, Bilibili); quy trình dịch chi tiết đã có ở Module 8 và người dùng tool dịch còn được tặng kèm danh sách các kênh gốc Bilibili."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình khai thác ngách Reup hoạt hình Full tập từ Bilibili bằng Tool dịch và xử lý che phụ đề tiếng Trung",
+    "additional": [
+      "Tham khảo kênh đối thủ mẫu (@Camnhonvietsub) đang làm dạng hoạt hình reup full tập có độ dài từ vài chục phút đến hơn 1 tiếng.",
+      "Truy cập kênh nguồn gốc trên Bilibili (đính kèm dưới phần mô tả bài học) để chọn các bộ video hoạt hình có lượt xem cao (như video hơn 5 vạn / 50.000 lượt xem).",
+      "Sao chép đường link video trên Bilibili, đưa vào mục Download Free bên trong tool dịch của tác giả để tải miễn phí cả file video gốc và ảnh thu nhỏ (hỗ trợ đa nền tảng TikTok, Douyin, Bilibili).",
+      "Thực hiện che phần phụ đề tiếng Trung gốc ở phía dưới khung hình và tiến hành dịch, lồng ghép theo đúng quy trình đã hướng dẫn tại video riêng ở Module 8."
+    ]
+  },
+  "avoid_flags": [
+    "Khi lấy video hoạt hình từ Bilibili về làm lại trên YouTube, nhớ phải che phần phụ đề chữ Trung Quốc ở dưới khung hình giống như cách kênh mẫu thực hiện.",
+    "Nếu kênh đang đăng các ngách cũ mà không có view (như trường hợp kênh ở cột đề xuất trước khi đổi sang ngách câu cá vạn cân), cần mạnh dạn chuyển sang ngách đang có sóng người xem thực tế và cập nhật tập thường xuyên."
+  ],
+  "tools_mentioned": [
+    "Bilibili",
+    "YouTube",
+    "TikTok",
+    "Douyin"
+  ],
+  "channels_mentioned": [
+    "@Camnhonvietsub"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân tích kênh @Camnhonvietsub mới đăng 12 video từ 11 ngày trước nổ view"
+    },
+    {
+      "time": "00:42",
+      "seconds": 42,
+      "label": "Đặc điểm đăng Full tập (vài chục phút đến trên 1 tiếng) và mở kênh gốc Bilibili"
+    },
+    {
+      "time": "01:32",
+      "seconds": 92,
+      "label": "Đối chiếu video gốc 5 vạn view ngày 5/4 và kênh câu cá vạn cân làm 8 ngày trước"
+    },
+    {
+      "time": "02:35",
+      "seconds": 155,
+      "label": "Cách copy link Bilibili vào mục Download Free trong Tool dịch để tải video & thumb"
+    },
+    {
+      "time": "02:59",
+      "seconds": 179,
+      "label": "Hướng dẫn xem lại quy trình dịch tại Module 8 và quà tặng kho kênh gốc Bilibili"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-10ceec/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-24",
+  "sop_steps": [
+    "Tham khảo kênh đối thủ mẫu (@Camnhonvietsub) đang làm dạng hoạt hình reup full tập có độ dài từ vài chục phút đến hơn 1 tiếng.",
+    "Truy cập kênh nguồn gốc trên Bilibili (đính kèm dưới phần mô tả bài học) để chọn các bộ video hoạt hình có lượt xem cao (như video hơn 5 vạn / 50.000 lượt xem).",
+    "Sao chép đường link video trên Bilibili, đưa vào mục Download Free bên trong tool dịch của tác giả để tải miễn phí cả file video gốc và ảnh thu nhỏ (hỗ trợ đa nền tảng TikTok, Douyin, Bilibili).",
+    "Thực hiện che phần phụ đề tiếng Trung gốc ở phía dưới khung hình và tiến hành dịch, lồng ghép theo đúng quy trình đã hướng dẫn tại video riêng ở Module 8."
+  ]
+}

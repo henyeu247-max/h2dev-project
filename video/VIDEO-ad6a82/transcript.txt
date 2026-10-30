@@ -1,0 +1,70 @@
+Chào anh chị em học viên. Hôm nay chúng ta đến với một cái bài đó là bài các câu Prompt về các góc quay khi anh em làm video AI.
+Thì ở đây tại sao chúng ta phải có cái bài này? Thì rất nhiều anh em làm một cái video AI thì anh em luôn luôn để một cái góc là góc toàn thân như thế này, gọi là góc ngang toàn thân.
+Thì anh em chỉ để một góc này thôi thì cái video của anh chị rất sẽ là nhàm chán.
+Tại sao tôi lại nói như thế? Tại vì nếu mà anh em làm video AI như thế này thì có phải người ta không bao giờ người ta chú ý đến cái video
+của anh em quá nhiều. Ví dụ anh em làm 10 cảnh mà nó chỉ có một cái góc toàn thân như thế này thì nó rất là nhàm chán. Anh em phải có
+thêm những cái góc như là góc gần mặt này, trung cảnh này, toàn cảnh này. Và ở đây tôi đã liệt kê ra những cái góc quay mà anh em phải ghi nhớ.
+Bây giờ anh em phải lưu lại tất cả những cái góc quay này để sau khi mà anh em đặt những cái câu Prompt ấy thì nó sẽ hoàn chỉnh hơn.
+Anh em phải ghi nhớ cho tôi những cái chi tiết như thế này để sau này mình đặt cái câu Prompt thì mình sẽ phải tư duy ra.
+Cái đoạn này thì mình cần câu Prompt như thế nào, cái đoạn này thì anh em cần cái góc quay như thế nào cho phù hợp.
+Và tất cả những cái góc quay này vào cuối video này tôi sẽ hướng dẫn anh chị em tạo ra được những cái hình ảnh về góc quay để anh chị đặt câu Prompt
+để cho nó đúng vào cái video AI của anh chị sáng tạo nội dung ra. Đầu tiên là góc ngang toàn thân, anh chị có thể nhìn thấy đây là cái hình đầu tiên.
+tiếp theo là góc cận mặt và góc trung cảnh rồi đến góc toàn cảnh là cái cảnh thứ tư
+tiếp đến là góc thấp toàn thân ý là góc nó sẽ ở dưới camera hướng thẳng trên mặt của anh em góc thấp cận mặt
+góc thấp trung cảnh này
+góc thấp toàn cảnh này
+góc qua vai nhé
+góc này là góc anh chị em hãy xem
+những bộ phim góc qua vai
+nhân vật khác
+góc nhìn từ trên cao này
+góc rộng này
+góc 3/4 này
+Góc nghiêng và góc nghiêng khung. Đó là những góc cơ bản nhất của anh em để làm được những video AI.
+Thì ở đây tôi sẽ test cho anh chị em một vài chi tiết.
+Ở đây thì hôm nay tôi sẽ hướng dẫn anh chị em để khi mà anh chị em tạo ảnh hoặc sau đó anh em tạo video thì anh em phải bắt buộc có hình ảnh trước.
+Thì ở đây tôi đã chuẩn bị sẵn một hình ảnh Donald Trump để anh em có thể nhìn thấy trên cái màn hình đây.
+Tôi đã chuẩn bị sẵn một hình ảnh Donald Trump như thế này.
+Và bây giờ thì tôi sẽ sử dụng cái phần image trong Grok này để tạo ra một hình ảnh khác và sử dụng một cái góc quay. Ở đây tôi sẽ sử dụng một cái góc là góc trung cảnh.
+Thì đối với cái con Grok này hoặc cái con Flow ấy thì anh em khi mà anh em tạo ảnh thì anh em có thể sử dụng hai con này. Hiện tại nó đang là ok nhất.
+Thì tôi sẽ viết một câu Prompt như sau. Hãy tạo cho tôi hình ảnh nhân vật này đang đứng tại một khu quân sự góc nhìn trung cảnh.
+Hình ảnh sắc nét
+Thì tôi sẽ sử dụng hình ảnh là 16:9 và tôi sẽ tạo một cái hình ảnh.
+Từ cái hình ảnh chính này thì anh em sẽ có một cái hình ảnh về Donald Trump khác và góc trung cảnh.
+Đấy, anh chị em có thể nhìn thấy.
+Đây là cái góc bằng góc trung cảnh nhé.
+Mà tôi đã viết ở trong cái câu Prompt này.
+Anh chị em hãy nhìn thấy đây.
+Hãy tạo cho tôi một hình ảnh.
+Nhân vật này đang đứng tại một khu quân sự góc nhìn trung cảnh.
+Hình ảnh sắc nét, thì anh em có thể thấy là nó đã tạo ra cho anh chị em một cái hình ảnh như thế này rồi.
+Thì dùng hình ảnh này thì chúng ta sẽ đặt ra, đặt ra cái gì ạ?
+Đặt ra được những cái câu Prompt để tạo ra những cái video.
+Thì bắt buộc phải có những cái góc như thế này.
+Ở đây khi anh em đã tạo ra một cái hình ảnh như thế này rồi,
+thì bây giờ chúng ta sẽ test một cái góc quay khác.
+Tôi sẽ viết một câu lệnh khác đi.
+Hãy tạo cho tôi một hình ảnh góc nhìn qua vai nhân
+vật này, bối cảnh khu quân sự, hình ảnh sắc nét.
+Thì tôi nhấn Enter.
+Thì bây giờ là dựa trên cái góc nhìn qua vai này, anh chị em hãy nhìn đây.
+Thì đây, nó sẽ tạo ra cho anh chị em một cái hình ảnh là góc qua vai của nhân vật Donald Trump này.
+Và khu kia là khu quân sự.
+Đó là cái tư duy để anh chị em đặt cái câu lệnh.
+Và cũng tiếp tục như thế, ví dụ như được góc nhìn từ trên cao.
+Thì tôi sẽ tạo một cái hình ảnh như sau.
+Hãy tạo cho tôi 1 hình ảnh
+góc nhìn từ
+trên cao
+bối cảnh
+khu vực
+khu quân sự
+hình ảnh sắc nét
+Đây là cái góc nhìn từ trên cao nha anh chị em nha. Ví dụ như là ở trong cái hình này nếu mà nó to quá như thế này đúng không thì anh chị em sửa luôn ở trong cái hình ảnh này đi.
+Đấy tạo lại hình ảnh cho tôi nhân vật bé hơn còn là giữ nguyên chi tiết.
+Thì nếu mà cái hình ảnh nhân vật to quá thì chúng ta sẽ điều hướng cái câu Prompt của chúng ta để cho nhân vật bé đi.
+Đấy là những cái cách mà tư duy mà anh chị em đặt ra những cái câu Prompt để tạo ra những cái góc quay nó khác nhau.
+Đây là những cái bài tốt nhất để cho anh chị em nhớ là bất kỳ khi làm video AI anh em phải nhớ là phải có góc quay trong cái gì ạ?
+Trong yếu tố tạo ra Prompt để tạo hình ảnh hoặc Prompt để tạo ra video.
+Phải tạo hình ảnh trước rồi chúng ta sẽ đến cái tạo video sau.
+Ok, xin chào mọi người.

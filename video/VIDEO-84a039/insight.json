@@ -1,0 +1,80 @@
+{
+  "sku": "VIDEO-84a039",
+  "title": "Kênh mới tạo 6 ngày và đăng được 5 video đã đủ bật kiếm tiền - Update 2 ngách bán content view ngoại mới nhất",
+  "actual_topic": "Kênh mới tạo 6 ngày và đăng được 5 video đã đủ bật kiếm tiền - Update 2 ngách bán content view ngoại mới nhất",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Tâm Linh & Thu Hút May Mắn",
+  "niche_id": "faceless-general",
+  "target_market": "Quốc tế (Global) / Nhật Bản",
+  "market_code": "GLOBAL,JP",
+  "key_takeaways": [
+    "Tác giả chia sẻ hai ngách mới của thị trường Nhật, mở đầu là một kênh lập từ ngày 30 tháng 5, quay video ngày 5 tức mới 6 ngày mà đã hơn 2.000 sub và đủ điều kiện bật kiếm tiền.",
+    "Kênh đầu thuộc dạng tâm linh theo hướng tích cực với lời chúc mừng, lời cảm ơn, tương tự ngách Nikola Tesla chia sẻ trước đó nhưng đi vào một nhân vật khác tên Saito Hitori, kênh chỉ chèn video hoặc hình ảnh tự nhiên, sub chạy chữ, tên kênh và tên nhân vật.",
+    "Cách tìm hiểu ngách nhỏ là dịch tiêu đề, copy tên nhân vật rồi search Google chế độ AI và YouTube để biết nhân vật là ai và ra thêm các kênh đối thủ, còn thumbnail thì làm đúng phông chữ và phong cách đối thủ, chỉ đổi hình nhân vật như mặc áo màu khác.",
+    "Kênh thứ hai cũng của thị trường Nhật, lập từ ngày 24 tháng 5 năm 2026, mới 8 video, thuộc ngách về Chúa, có video cao nhất 10k view và thời lượng trung bình khoảng 42 đến 44 phút, kịch bản có thể lấy từ thị trường US rồi làm lại.",
+    "Video dài mà giữ chân được người xem thì RPM cao và YouTube phân phối mạnh vì đánh giá theo thời lượng xem trung bình, đồng thời tác giả khuyên cứ kiên trì làm một ngách chứ đừng nhảy sang ngách khác."
+  ],
+  "edit_sop": {
+    "primary": "Chia sẻ 2 ngách bán content thị trường Nhật và cách làm kênh nhân vật tích cực theo đối thủ",
+    "additional": [
+      "Dịch tiêu đề để nhận ra ngách nhỏ, copy tên nhân vật rồi search Google chế độ AI và YouTube để hiểu nhân vật và tìm thêm kênh đối thủ",
+      "Kênh chỉ chèn hình ảnh hoặc video tự nhiên vào, chạy sub, chèn tên kênh, tên nhân vật và logo, rất đơn giản",
+      "Thumbnail làm đúng phong chữ và phong cách của đối thủ, chỉ đổi hình nhân vật (ví dụ mặc áo màu khác), có thể tạo ảnh bằng model mới của ChatGPT",
+      "Ngách Chúa ở thị trường Nhật có thể nhân bản từ thị trường US, lấy kịch bản bên US về xào nấu lại",
+      "Video dài khoảng 42 đến 44 phút, kịch bản phải hay để giữ chân người xem"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng đang làm ngách này lại nhảy sang ngách khác",
+    "Thời lượng xem trung bình thấp thì YouTube đánh giá kênh và video không tốt, không phân phối"
+  ],
+  "tools_mentioned": [
+    "Google",
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@asuhetsudukumichi",
+    "@イエスのアファメーション"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "02:05",
+      "seconds": 125,
+      "label": "Có thể chèn video hoặc hình ảnh tự nhiên vào bài dựng"
+    },
+    {
+      "time": "03:53",
+      "seconds": 233,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "05:58",
+      "seconds": 358,
+      "label": "Về cái content không thiếu đâu mọi người Mọi người cứ đi sang bên Bên thị trường US á"
+    },
+    {
+      "time": "07:53",
+      "seconds": 473,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-84a039/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Dịch tiêu đề để nhận ra ngách nhỏ, copy tên nhân vật rồi search Google chế độ AI và YouTube để hiểu nhân vật và tìm thêm kênh đối thủ",
+    "Kênh chỉ chèn hình ảnh hoặc video tự nhiên vào, chạy sub, chèn tên kênh, tên nhân vật và logo, rất đơn giản",
+    "Thumbnail làm đúng phong chữ và phong cách của đối thủ, chỉ đổi hình nhân vật (ví dụ mặc áo màu khác), có thể tạo ảnh bằng model mới của ChatGPT",
+    "Ngách Chúa ở thị trường Nhật có thể nhân bản từ thị trường US, lấy kịch bản bên US về xào nấu lại",
+    "Video dài khoảng 42 đến 44 phút, kịch bản phải hay để giữ chân người xem"
+  ]
+}

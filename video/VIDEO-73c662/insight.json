@@ -1,0 +1,163 @@
+{
+  "sku": "VIDEO-73c662",
+  "title": "Quy Trình Sản Xuất Video PODCAST Sức Khỏe",
+  "duration_sec": 1343.65,
+  "Step_1_Niche": "AI Health & Medical Podcast for Seniors 50–60+ (Podcast Sức Khỏe Chủ Động định dạng Bác sĩ AI trò chuyện tâm tình cùng cô chú trung niên & cao tuổi)",
+  "Step_2_Theme": "Xây dựng kênh Podcast Sức Khỏe 100% bằng AI với nhân vật Bác sĩ Việt Nam và giọng đọc trầm ấm nhất quán xuyên suốt toàn kênh: kết hợp khung giao diện đôi (Split-Screen Overlay phông xanh) hiển thị Bác sĩ AI nói chuyện ở khung phải (tạo bằng Google Flow Veo 3) và video minh họa y khoa B-Roll ở khung trái (tải từ Pexels/Pixabay)",
+  "Step_3_Tools": [
+    "ChatGPT Pro",
+    "Google Flow (Veo 3 & Nano Banana Pro)",
+    "Pexels",
+    "Pixabay",
+    "CapCut Pro"
+  ],
+  "tools_mentioned": [
+    "ChatGPT",
+    "Google Flow",
+    "Veo 3",
+    "Nano Banana",
+    "Pexels",
+    "Pixabay",
+    "CapCut"
+  ],
+  "Step_4_Prompt": {
+    "description": "Hệ thống 4 Prompt kỹ thuật (Tạo khung nền phông xanh 16:9, Tạo ảnh Bác sĩ AI 9:16, Tạo video Bác sĩ nói chuyện khớp môi trên Veo 3, Tạo ảnh Thumbnail 16:9) kết hợp cùng Master Prompt 7 Phần sinh 100 ý tưởng & kịch bản Podcast Sức Khỏe 17 mục chuẩn YMYL.",
+    "template": "1. Prompt Khung nền 16:9 (ChatGPT): \"ảnh nền : xóa bỏ cho tôi 2 chi tiết trong 2 khung hình bên phải và bên trái , giữ nguyên các khung , thay đổi các khung sang màu đỏ , thay đổi dòng chữ podcast tim mạch , sang dòng chữ podcast sức khỏe chủ động , còn lại giữ nguyên chi tiết , đổi 2 nền trong 2 khung hình sang màu xanh lá cây hình ảnh sắc nét, kích thước hình ảnh 16.9\"\n\n2. Prompt Video Bác sĩ nói chuyện trên Google Flow (Veo 3, đính kèm Ảnh Bác sĩ 9:16 + Giọng nói cố định): \"Sử dụng hình ảnh gốc này , hãy tạo cho tôi 1 video podcast chân thực , giữ nguyên 100% nhân vật nam trong ảnh ... Camera cố định hoàn toàn ở một góc chính diện trung cảnh ... Nhân vật nam nói bằng tiếng việt , với giọng rõ ràng, chậm rãi , truyền cảm , phù hợp phong cách kể podcast . \\\"câu thoại\\\" Yêu cầu kỹ thuật: không thêm từ hoặc bớt từ vào câu thoại , môi khớp chính xác với lời thoại tiếng Việt...\"\n\n3. Master Prompt 7 Phần (xem đầy đủ tại doc_1.txt & master_prompt.md): Tạo 100 ý tưởng chia làm 10 nhóm bệnh lý tuổi 50–60+ (Tim mạch/Huyết áp, Tiểu đường, Mỡ máu, Thận, Trí nhớ, Giấc ngủ, Xương khớp, Dinh dưỡng, Thuốc men, Lối sống) và triển khai kịch bản chi tiết 17 phần."
+  },
+  "Step_5_Voice": "Khóa cố định giọng đọc ngay trong công cụ tạo video Google Flow (Veo 3): khi tải ảnh Bác sĩ lên câu lệnh, bấm dấu '+' -> chọn 'Giọng nói' -> chọn 1 giọng nam trầm ấm truyền cảm cố định; ở các đoạn thoại tiếp theo chỉ cần bấm 'Sử dụng lại câu lệnh' để giữ nguyên 100% cả gương mặt bác sĩ lẫn giọng nói.",
+  "Step_6_Edit_Checklist": [
+    "Chụp màn hình bố cục khung đôi của kênh mẫu (@PodcastTimMạch), đưa vào ChatGPT kèm Prompt số 1 để xóa nhân vật cũ, đổi viền khung sang màu đỏ, đổi tên thành 'Podcast Sức Khỏe Chủ Động' và tô màu xanh lá cây (Green Screen) cho 2 ô cửa sổ trái/phải.",
+    "Chụp ảnh nhân vật bác sĩ mẫu đưa vào ChatGPT để trích xuất Prompt mô tả nhân vật, sau đó mở đoạn chat mới yêu cầu ChatGPT vẽ một bức chân dung Bác sĩ nam Việt Nam độc bản (tỷ lệ 9:16, đeo kính, mặc áo blouse/scrubs trong bệnh viện) để dùng cố định cho toàn bộ kênh.",
+    "Dán Master Prompt 7 Phần vào ChatGPT để lập danh sách 100 chủ đề sức khỏe chia theo 10 nhóm bệnh lý tuổi 50–60+, sau đó chọn Ý tưởng số 1 (ví dụ: 'Bác sĩ cảnh báo: Con số huyết áp đẹp chưa chắc trái tim đã khỏe') để ChatGPT viết kịch bản chi tiết 17 mục.",
+    "Mở Google Flow (Veo 3), tải ảnh Bác sĩ 9:16 lên làm Thành phần tham chiếu + gắn cố định 1 Giọng nói nam, dán Prompt số 3 và copy từng câu thoại ngắn (tương ứng khoảng 8 giây/clip) từ phần Hook kịch bản vào trong dấu ngoặc kép; dùng nút 'Sử dụng lại câu lệnh' để render nối tiếp toàn bộ bài nói và tải thêm video B-Roll y tế từ Pexels/Pixabay.",
+    "Trên CapCut PC, đặt tấm ảnh Khung nền 16:9 ở lớp trên rồi dùng 'Xóa nền -> Phông xanh' đục thủng 2 ô cửa sổ; xếp chuỗi video Bác sĩ nói chuyện khớp vào khung dọc bên phải, xếp chuỗi video B-Roll Pexels vào khung ngang bên trái, chạy 'Phụ đề tự động' tiếng Việt (font Anton) ở cạnh dưới và tạo ảnh bìa Thumbnail Bác sĩ đau cổ (Nano Banana Pro 16:9) ngay trong trình Thiết kế ảnh bìa của CapCut."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước thực chiến: Quy trình sản xuất video Podcast Sức Khỏe chia sẻ kiến thức y khoa thường thức",
+    "additional": [
+      "Khi yêu cầu ChatGPT tạo lại nhân vật Bác sĩ từ ảnh chụp đối thủ, tuyệt đối không bảo ChatGPT sửa trực tiếp trên ảnh gốc (vì dễ bị lỗi hoặc giống hệt người cũ); hãy bảo ChatGPT 'viết ra 1 prompt mô tả', sau đó copy prompt đó sang một cuộc trò chuyện (New Chat) hoàn toàn mới để sinh ra gương mặt Bác sĩ độc bản cho kênh của mình.",
+      "Mỗi đoạn video tạo bằng Veo 3 trên Google Flow có thời lượng tối đa khoảng 8 giây; do đó cần ngắt kịch bản của ChatGPT thành từng câu ngắn vừa vặn 15–22 từ rồi dán lần lượt vào mục \"câu thoại\" thông qua nút 'Sử dụng lại câu lệnh' (Reuse Prompt).",
+      "Khi xử lý tấm ảnh Khung nền trên CapCut PC, tuyệt đối không bấm 'Xóa tự động' (Auto Removal) vì AI sẽ xóa mất viền khung trang trí; bắt buộc phải chọn 'Xóa nền -> Phông xanh' (Chroma Key) và chấm bút hút màu vào vùng xanh lá cây để đục thủng chính xác 2 ô cửa sổ.",
+      "Để giữ chân người xem lớn tuổi và tuân thủ nghiêm ngặt chính sách nội dung YMYL (Y tế - Sức khỏe) của YouTube, kịch bản luôn phải đi theo 17 mục của Master Prompt: giải thích cơ chế bằng ví dụ đời thường, không tự ý kê đơn/liều thuốc và luôn có lời dặn tham khảo bác sĩ điều trị trực tiếp.",
+      "Khi làm Thumbnail cho toàn kênh, hãy giữ nguyên bức ảnh Bác sĩ gốc làm tham chiếu trên Google Flow (chế độ Hình ảnh 16:9, Nano Banana Pro), cố định bối cảnh hành lang bệnh viện và vị trí bác sĩ đứng sát bên trái, chỉ thay đổi duy nhất 'biểu cảm/vị trí đau' (đau cổ, đau ngực, đau đầu...) rồi đưa vào công cụ 'Thiết kế ảnh bìa' của CapCut để chèn 4 dòng chữ Anton đa sắc màu viền trắng."
+    ]
+  },
+  "Step_7_Monetization": [
+    "Ngách Podcast Sức Khỏe hướng tới khán giả trung niên và cao tuổi (50–60+ tuổi) có sức hút tự nhiên cực mạnh và bền vững: kênh mẫu @BsMinhTâm60 chỉ với 7 video đã đạt 21,9K người đăng ký (video đạt 540K views sau 11 ngày); kênh @PodcastTimMạch đạt 21,6K người đăng ký với video đạt 453K views sau 11 ngày.",
+    "Khán giả lớn tuổi có thói quen nghe trọn vẹn các bài trò chuyện dài 20–30 phút, giúp thời lượng xem trung bình (AVD) và doanh thu quảng cáo (RPM) vượt trội; đồng thời bộ Master Prompt 100 ý tưởng chia làm 10 nhóm bệnh lý giúp chủ kênh sản xuất đều đặn mỗi ngày 1 video dài chỉ trong 2–3 giờ làm việc."
+  ],
+  "avoid_flags": [
+    "Không thay đổi gương mặt bác sĩ hoặc đổi giọng đọc qua từng video khác nhau; sự nhất quán 100% về nhân vật Bác sĩ đại diện và giọng nói trầm ấm là yếu tố sống còn để xây dựng niềm tin thương hiệu với khán giả lớn tuổi.",
+    "Không nhồi nhét đoạn văn bản quá dài (trên 25–30 từ) vào một lần tạo video 8 giây trên Veo 3 vì nhân vật sẽ phải nói vấp, nói quá nhanh hoặc bị cắt cụt câu ở cuối clip.",
+    "Không dùng công cụ 'Xóa tự động' trên CapCut cho lớp ảnh Khung nền Podcast; phải dùng 'Phông xanh' (Chroma Key) mới giữ nguyên được toàn bộ khung viền đỏ, biểu tượng nhịp tim và bảng tên kênh.",
+    "Không để phụ đề tự động bị tràn thành 2–3 dòng chồng chéo lên khung hình bác sĩ; phải chọn phông Anton, thu gọn cỡ chữ vừa phải và kéo rộng thanh giới hạn văn bản để phụ đề luôn nằm gọn trên 1 dòng ở đáy khung hình."
+  ],
+  "competitor_channels": [
+    {
+      "name": "BS. Minh Tâm 60+",
+      "url": "https://www.youtube.com/@BsMinhT%C3%A2m60",
+      "handle": "@BsMinhTâm60",
+      "subscribers": "21.9K+ subscribers",
+      "notes": "Kênh mẫu số 1 giảng viên mở trực tiếp đầu bài giảng (00:08 - 00:20): chỉ mới đăng 7 video đã đạt 21,9 N người đăng ký; các video đạt 540 N lượt xem ('Huyết áp lý tưởng cho người TRÊN 60 TUỔI là bao nhiêu?'), 341 N lượt xem, 270 N lượt xem."
+    },
+    {
+      "name": "Podcast Tim Mạch",
+      "url": "https://www.youtube.com/@PodcastTimM%E1%BA%A1ch",
+      "handle": "@PodcastTimMạch",
+      "subscribers": "21.6K+ subscribers",
+      "notes": "Kênh mẫu số 2 giảng viên mở phân tích sâu và lấy bố cục khung hình đôi (00:20 - 01:38): đạt 21,6 N người đăng ký, video 'KHÔNG THỂ TIN ĐƯỢC: Đây là 5 loại trái cây âm thầm đẩy người già vào nguy cơ ĐỘT QUỴ' đạt 453 N lượt xem sau 11 ngày."
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân tích 2 kênh mẫu @BsMinhTâm60 (540K views) và @PodcastTimMạch (453K views) & Tiềm năng ngách Podcast Sức Khỏe AI"
+    },
+    {
+      "time": "01:02",
+      "seconds": 62,
+      "label": "Bước 1: Chụp màn hình khung đôi kênh đối thủ & Dùng ChatGPT thiết kế lại Khung nền 16:9 có 2 ô cửa sổ phông xanh lá"
+    },
+    {
+      "time": "03:50",
+      "seconds": 230,
+      "label": "Bước 2: Trích xuất Prompt nhân vật từ ảnh gốc & Tạo chân dung Bác sĩ AI Việt Nam (9:16) độc bản trên ChatGPT"
+    },
+    {
+      "time": "05:04",
+      "seconds": 304,
+      "label": "Bước 3: Chạy Master Prompt 7 Phần trên ChatGPT để lập kế hoạch 100 ý tưởng Podcast chia theo 10 nhóm bệnh lý tuổi 50–60+"
+    },
+    {
+      "time": "07:42",
+      "seconds": 462,
+      "label": "Bước 4: Triển khai kịch bản chi tiết 17 phần cho Ý tưởng số 1 ('Bác sĩ cảnh báo: Con số huyết áp đẹp chưa chắc trái tim đã khỏe')"
+    },
+    {
+      "time": "09:03",
+      "seconds": 543,
+      "label": "Bước 5: Khóa nhất quán Ảnh Bác sĩ + Giọng nói trên Google Flow (Veo 3) & Render từng câu thoại 8 giây bằng nút 'Sử dụng lại câu lệnh'"
+    },
+    {
+      "time": "13:10",
+      "seconds": 790,
+      "label": "Bước 6: Tìm kiếm và tải nguồn video B-Roll minh họa y khoa, đo huyết áp miễn phí bản quyền trên Pexels & Pixabay"
+    },
+    {
+      "time": "14:04",
+      "seconds": 844,
+      "label": "Bước 7: Dựng video trên CapCut: Xóa phông xanh Khung nền, lồng ghép video Bác sĩ + B-Roll & Tạo phụ đề tự động font Anton"
+    },
+    {
+      "time": "18:50",
+      "seconds": 1130,
+      "label": "Bước 8: Tạo ảnh Bác sĩ đau cổ bằng Nano Banana Pro (16:9) trên Google Flow & Thiết kế chữ Thumbnail bắt mắt trên CapCut"
+    }
+  ],
+  "course_docs": [
+    {
+      "name": "Master Prompt & Quy Trình Chuẩn — Bài 19: Video PODCAST Sức Khỏe (DGMD-M06)",
+      "path": "assets/docs-dgmd/VIDEO-73c662/master_prompt.md",
+      "type": "markdown",
+      "description": "Tổng hợp 4 Prompt kỹ thuật (Khung nền phông xanh, Bác sĩ 9:16, Video Veo 3 khớp khẩu hình, Thumbnail 16:9) và cấu trúc Master Prompt 7 Phần.",
+      "file": "assets/docs-dgmd/VIDEO-73c662/master_prompt.md"
+    },
+    {
+      "name": "Tài Liệu Google Docs Gốc Đính Kèm Bài Giảng (Full 100-Idea Master Prompt)",
+      "path": "assets/docs-dgmd/VIDEO-73c662/doc_1.txt",
+      "type": "text",
+      "description": "Nguyên văn 216 dòng tài liệu Google Docs gốc của giảng viên (1zbyKlWjmIK4bj9B_xyMcZX04yh7JWCLxyVcCRohaolY) chứa trọn vẹn Master Prompt 7 phần.",
+      "file": "assets/docs-dgmd/VIDEO-73c662/doc_1.txt"
+    }
+  ],
+  "verification_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "actual_topic": "Quy trình sản xuất video Podcast Sức Khỏe chia sẻ kiến thức y khoa thường thức",
+  "key_takeaways": [
+    "Ngách Podcast Sức Khỏe hướng tới khán giả trung niên và cao tuổi (50–60+ tuổi) có sức hút tự nhiên cực mạnh và bền vững: kênh mẫu @BsMinhTâm60 chỉ với 7 video đã đạt 21,9K người đăng ký (video đạt 540K views sau 11 ngày); kênh @PodcastTimMạch đạt 21,6K người đăng ký với video đạt 453K views sau 11 ngày.",
+    "Khán giả lớn tuổi có thói quen nghe trọn vẹn các bài trò chuyện dài 20–30 phút, giúp thời lượng xem trung bình (AVD) và doanh thu quảng cáo (RPM) vượt trội; đồng thời bộ Master Prompt 100 ý tưởng chia làm 10 nhóm bệnh lý giúp chủ kênh sản xuất đều đặn mỗi ngày 1 video dài chỉ trong 2–3 giờ làm việc.",
+    "Chụp màn hình bố cục khung đôi của kênh mẫu (@PodcastTimMạch), đưa vào ChatGPT kèm Prompt số 1 để xóa nhân vật cũ, đổi viền khung sang màu đỏ, đổi tên thành 'Podcast Sức Khỏe Chủ Động' và tô màu xanh lá cây (Green Screen) cho 2 ô cửa sổ trái/phải.",
+    "Chụp ảnh nhân vật bác sĩ mẫu đưa vào ChatGPT để trích xuất Prompt mô tả nhân vật, sau đó mở đoạn chat mới yêu cầu ChatGPT vẽ một bức chân dung Bác sĩ nam Việt Nam độc bản (tỷ lệ 9:16, đeo kính, mặc áo blouse/scrubs trong bệnh viện) để dùng cố định cho toàn bộ kênh.",
+    "Dán Master Prompt 7 Phần vào ChatGPT để lập danh sách 100 chủ đề sức khỏe chia theo 10 nhóm bệnh lý tuổi 50–60+, sau đó chọn Ý tưởng số 1 (ví dụ: 'Bác sĩ cảnh báo: Con số huyết áp đẹp chưa chắc trái tim đã khỏe') để ChatGPT viết kịch bản chi tiết 17 mục.",
+    "Mở Google Flow (Veo 3), tải ảnh Bác sĩ 9:16 lên làm Thành phần tham chiếu + gắn cố định 1 Giọng nói nam, dán Prompt số 3 và copy từng câu thoại ngắn (tương ứng khoảng 8 giây/clip) từ phần Hook kịch bản vào trong dấu ngoặc kép; dùng nút 'Sử dụng lại câu lệnh' để render nối tiếp toàn bộ bài nói và tải thêm video B-Roll y tế từ Pexels/Pixabay."
+  ],
+  "channels_mentioned": [
+    "@BsMinhTâm60",
+    "@PodcastTimMạch"
+  ],
+  "category_group": "chuyen_gia",
+  "niche_primary": "Sức Khỏe & Đời Sống",
+  "niche_id": "dgmd_workflow",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "sop_steps": [
+    "Khi yêu cầu ChatGPT tạo lại nhân vật Bác sĩ từ ảnh chụp đối thủ, tuyệt đối không bảo ChatGPT sửa trực tiếp trên ảnh gốc (vì dễ bị lỗi hoặc giống hệt người cũ); hãy bảo ChatGPT 'viết ra 1 prompt mô tả', sau đó copy prompt đó sang một cuộc trò chuyện (New Chat) hoàn toàn mới để sinh ra gương mặt Bác sĩ độc bản cho kênh của mình.",
+    "Mỗi đoạn video tạo bằng Veo 3 trên Google Flow có thời lượng tối đa khoảng 8 giây; do đó cần ngắt kịch bản của ChatGPT thành từng câu ngắn vừa vặn 15–22 từ rồi dán lần lượt vào mục \"câu thoại\" thông qua nút 'Sử dụng lại câu lệnh' (Reuse Prompt).",
+    "Khi xử lý tấm ảnh Khung nền trên CapCut PC, tuyệt đối không bấm 'Xóa tự động' (Auto Removal) vì AI sẽ xóa mất viền khung trang trí; bắt buộc phải chọn 'Xóa nền -> Phông xanh' (Chroma Key) và chấm bút hút màu vào vùng xanh lá cây để đục thủng chính xác 2 ô cửa sổ.",
+    "Để giữ chân người xem lớn tuổi và tuân thủ nghiêm ngặt chính sách nội dung YMYL (Y tế - Sức khỏe) của YouTube, kịch bản luôn phải đi theo 17 mục của Master Prompt: giải thích cơ chế bằng ví dụ đời thường, không tự ý kê đơn/liều thuốc và luôn có lời dặn tham khảo bác sĩ điều trị trực tiếp.",
+    "Khi làm Thumbnail cho toàn kênh, hãy giữ nguyên bức ảnh Bác sĩ gốc làm tham chiếu trên Google Flow (chế độ Hình ảnh 16:9, Nano Banana Pro), cố định bối cảnh hành lang bệnh viện và vị trí bác sĩ đứng sát bên trái, chỉ thay đổi duy nhất 'biểu cảm/vị trí đau' (đau cổ, đau ngực, đau đầu...) rồi đưa vào công cụ 'Thiết kế ảnh bìa' của CapCut để chèn 4 dòng chữ Anton đa sắc màu viền trắng."
+  ],
+  "source_transcript": "video/VIDEO-73c662/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED"
+}

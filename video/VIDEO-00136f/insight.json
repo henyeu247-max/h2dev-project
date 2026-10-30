@@ -1,0 +1,76 @@
+{
+  "sku": "VIDEO-00136f",
+  "title": "HƯỚNG DẪN FIX / ADD QUYỀN CHO TK GOOGLE ADSENSE KHÔNG BỊ DIE (MẤT) KHI LỠ BỊ QUÉT",
+  "actual_topic": "Quản trị an toàn tài khoản Google AdSense đa tầng & Phương pháp phân quyền Admin dự phòng né mất kênh khi bị quét bước 2 kiếm tiền",
+  "category_group": "ky_thuat",
+  "niche_primary": "Quản Trị AdSense & Bật Kiếm Tiền",
+  "niche_id": "adsense-management",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "key_takeaways": [
+    "Google AdSense là huyết mạch giữ dòng tiền của cả hệ thống kênh YouTube; mất tài khoản AdSense đồng nghĩa với việc mất toàn bộ doanh thu.",
+    "Cơ chế quét hàng loạt của Google: Khi 1 kênh liên kết AdSense bị die vì vi phạm nghiêm trọng, tài khoản AdSense đó có thể bị khóa vĩnh viễn (chết chùm).",
+    "Quy trình phân quyền Quản trị viên (Admin) và Người dùng (User) an toàn: Luôn có tối thiểu 2 tài khoản Gmail quản lý một AdSense trên 2 IP độc lập.",
+    "Sử dụng AdSense doanh nghiệp hoặc AdSense ngoại có độ trust cao hơn so với AdSense cá nhân mới tạo.",
+    "File SOP độc quyền kèm theo bài học hướng dẫn từng bước click chuột add quyền cứu tài khoản khi có biến động."
+  ],
+  "edit_sop": {
+    "primary": "Thêm quyền quản lý cho Gmail phụ vào tài khoản Google AdSense để phòng khi mail chính bị die",
+    "additional": [
+      "Vào mục quản lý người dùng của tài khoản AdSense, bấm thêm người dùng mới.",
+      "Nhập Gmail phụ (Gmail bình thường, chưa tạo AdSense) và cho lên quyền quản lý.",
+      "Mở Gmail phụ, mở tab login rồi bấm chấp nhận lời mời.",
+      "Nếu AdSense chính bị tạm ngưng, dùng tài khoản phụ vào xóa mail chính, rồi vào lại kênh YouTube sẽ xanh lại bình thường."
+    ]
+  },
+  "avoid_flags": [
+    "Tránh để tài khoản chỉ có một mail quản lý duy nhất vì khi mail chính bị tạm ngưng sẽ mất quyền xử lý bước bật kiếm tiền",
+    "Lưu ý trường hợp nhận thông báo chấm dứt thanh toán gửi về mail là bị khóa vĩnh viễn không cứu được, khác với trường hợp tạm ngưng"
+  ],
+  "tools_mentioned": [
+    "Google AdSense",
+    "YouTube",
+    "Gmail"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân tích nguy cơ quét tài khoản Google AdSense và lỗi Bước 2 kiếm tiền"
+    },
+    {
+      "time": "00:56",
+      "seconds": 56,
+      "label": "Cách kiểm tra nguyên nhân lỗi trên YouTube Studio giao diện máy tính"
+    },
+    {
+      "time": "01:49",
+      "seconds": 109,
+      "label": "Thao tác vào mục Quản lý người dùng và thêm email phụ sạch"
+    },
+    {
+      "time": "02:46",
+      "seconds": 166,
+      "label": "Nâng quyền Quản trị viên (Administrator) cho tài khoản dự phòng"
+    },
+    {
+      "time": "03:41",
+      "seconds": 221,
+      "label": "Kiểm tra xác thực độc lập và bảo vệ dòng tiền kênh"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-00136f/transcript.txt",
+  "sop_steps": [
+    "Vào mục quản lý người dùng của tài khoản AdSense, bấm thêm người dùng mới.",
+    "Nhập Gmail phụ (Gmail bình thường, chưa tạo AdSense) và cho lên quyền quản lý.",
+    "Mở Gmail phụ, mở tab login rồi bấm chấp nhận lời mời.",
+    "Nếu AdSense chính bị tạm ngưng, dùng tài khoản phụ vào xóa mail chính, rồi vào lại kênh YouTube sẽ xanh lại bình thường."
+  ],
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

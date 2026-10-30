@@ -1,0 +1,97 @@
+{
+  "sku": "VIDEO-4425fc",
+  "title": "Hướng dẫn Fix và giải thích cách tạo tài khoản Google Adsense (GA) an toàn, trâu nhất để không bị quét",
+  "actual_topic": "Hướng dẫn Fix và giải thích cách tạo tài khoản Google Adsense (GA) an toàn, trâu nhất để không bị quét",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Google AdSense & Quản trị dòng tiền",
+  "niche_id": "faceless-general",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "key_takeaways": [
+    "Đang có đợt quét tài khoản Google AdSense rất gắt, và tác giả cho rằng khoảng 90-95% tài khoản bị quét là loại mua từ bên ngoài chứ không phải tài khoản chính chủ tự tạo, kể cả những tài khoản dùng fake IP hay browser nuôi.",
+    "Nguyên nhân bị quét là thông tin, thiết bị và IP bị trùng nhiều; có hai tình trạng là lỗi trùng thông tin ở bước 2 (ảnh 1) còn gỡ được, còn tài khoản bị vô hiệu hóa (ảnh 2) thì không cứu được, chỉ kháng cáo với tỷ lệ thành công thấp, chỉ vài phần trăm.",
+    "Cách an toàn nhất là tự tạo chính chủ bằng căn cước công dân, tên, số điện thoại của mình nếu trước giờ chưa từng tạo AdSense, và chỉ tạo một lần trên một thiết bị và một IP mạng.",
+    "Muốn tạo thêm tài khoản thứ hai thì phải mượn thông tin của vợ chồng hoặc người thân, đi sang địa chỉ IP mạng khác (nhà khác, quán cà phê) và dùng máy khác, để số điện thoại, tên, căn cước đều không trùng với lần trước.",
+    "Khi gặp lỗi trùng thông tin bước 2 thì bấm chuyển đổi tài khoản liên kết rồi nối YouTube sang tài khoản AdSense khác; tác giả cũng cảnh báo các dịch vụ nhận cứu tài khoản đã bị vô hiệu hóa là lừa đảo và nói bản thân không dùng proxy hay VPN fake IP để làm YouTube."
+  ],
+  "edit_sop": {
+    "primary": "Tạo tài khoản Google AdSense chính chủ để không bị quét hàng loạt",
+    "additional": [
+      "Tự tạo bằng căn cước công dân, tên, số điện thoại của chính mình chưa từng tạo AdSense",
+      "Mỗi bộ thông tin, thiết bị, địa chỉ IP mạng chỉ tạo một tài khoản",
+      "Muốn tạo tài khoản thứ hai thì mượn thông tin của vợ chồng hoặc người thân, đổi chỗ khác như nhà khác hoặc quán cà phê và dùng máy khác",
+      "Lỗi trùng thông tin gỡ được bằng cách chọn chuyển đổi tài khoản liên kết rồi nối tài khoản AdSense khác vào"
+    ]
+  },
+  "avoid_flags": [
+    "Không mua tài khoản AdSense bên ngoài, đợt quét vừa rồi bị vô hiệu hóa là không cứu được",
+    "Cẩn thận dịch vụ nhận cứu tài khoản bị vô hiệu hóa, tác giả nói chắc chắn là lừa đảo, không đưa tài khoản cho họ",
+    "Không dùng proxy hay VPN để fake IP vì Google biết hết",
+    "Không tạo nhiều tài khoản trùng thiết bị, IP, thông tin vì dễ bị quét"
+  ],
+  "tools_mentioned": [
+    "Google AdSense",
+    "YouTube"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Đợt quét tài khoản Google AdSense (GA) hàng loạt: 90-95% là GA mua ngoài về nối vào"
+    },
+    {
+      "time": "00:59",
+      "seconds": 59,
+      "label": "GA tính chủ tạo từ nhiều năm trước vẫn trâu; GA mua ngoài bị đai luôn"
+    },
+    {
+      "time": "01:18",
+      "seconds": 78,
+      "label": "Hai ảnh minh họa: ảnh 1 lỗi trùng thông tin gỡ được, ảnh 2 bị vô hiệu hóa không cứu được"
+    },
+    {
+      "time": "02:24",
+      "seconds": 144,
+      "label": "Đợt quét này gắt nhất nhiều năm; dùng fake IP hay browser cũng không qua mặt được"
+    },
+    {
+      "time": "03:04",
+      "seconds": 184,
+      "label": "Cách tạo an toàn: dùng thông tin chính chủ, thiết bị và IP của mình, chỉ tạo một lần"
+    },
+    {
+      "time": "04:55",
+      "seconds": 295,
+      "label": "Tạo thêm GA thứ 2: mượn thông tin người thân, đổi địa chỉ IP và thiết bị khác để tránh trùng thông tin"
+    },
+    {
+      "time": "06:00",
+      "seconds": 360,
+      "label": "Gỡ lỗi trùng thông tin (ảnh 1): chuyển đổi tài khoản liên kết, nối GA khác vào"
+    },
+    {
+      "time": "07:01",
+      "seconds": 421,
+      "label": "GA đã bị vô hiệu hóa (ảnh 2) gần như không cứu được, kháng chỉ vài phần trăm"
+    },
+    {
+      "time": "08:28",
+      "seconds": 508,
+      "label": "Cảnh giác dịch vụ nhận kháng GA bị vô hiệu hóa, đã có người bị lừa"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-4425fc/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Tự tạo bằng căn cước công dân, tên, số điện thoại của chính mình chưa từng tạo AdSense",
+    "Mỗi bộ thông tin, thiết bị, địa chỉ IP mạng chỉ tạo một tài khoản",
+    "Muốn tạo tài khoản thứ hai thì mượn thông tin của vợ chồng hoặc người thân, đổi chỗ khác như nhà khác hoặc quán cà phê và dùng máy khác",
+    "Lỗi trùng thông tin gỡ được bằng cách chọn chuyển đổi tài khoản liên kết rồi nối tài khoản AdSense khác vào"
+  ]
+}

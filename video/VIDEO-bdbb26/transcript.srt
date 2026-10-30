@@ -1,0 +1,1332 @@
+1
+00:00:00,000 --> 00:00:03,960
+Ok, quay trở lại với nội dung chính của chúng ta.
+
+2
+00:00:05,920 --> 00:00:08,740
+Trước giờ nghỉ thì chúng ta đã có phần phân tích kỹ thuật.
+
+3
+00:00:10,020 --> 00:00:23,280
+Thì đây sẽ đến phần triển khai chi tiết về cách viết content bằng ChatGPT, cách làm thumbnail bằng ChatGPT bản mới nhất, và cách edit video CapCut đơn giản.
+
+4
+00:00:24,660 --> 00:00:28,160
+Đầu tiên chúng ta sẽ đến phần là cách viết content bằng ChatGPT.
+
+5
+00:00:30,000 --> 00:00:39,340
+Đây là file tài liệu mới nhất về cách đào tạo và viết content với ChatGPT.
+
+6
+00:00:40,720 --> 00:00:44,860
+Cái phần này nó sẽ có 2 phần. Phần 1 là đào tạo và phần 2 là phần viết.
+
+7
+00:00:46,500 --> 00:00:48,540
+Đầu tiên chúng ta đến với phần tư duy trước.
+
+8
+00:00:50,000 --> 00:00:54,120
+Phần đào tạo ChatGPT thì chúng ta cần trả lời những câu hỏi sau.
+
+9
+00:00:55,520 --> 00:00:58,080
+Bạn muốn nội dung của mình mang phong cách gì?
+
+10
+00:00:59,220 --> 00:00:59,700
+Hài hước.
+
+11
+00:01:00,000 --> 00:01:11,700
+Bí ẩn, châm biếm, nghiêm túc, hay là phá án, v.v. Ai là đối tượng khán giả của bạn? Bạn muốn hướng đến cái tệp khán giả nào?
+
+12
+00:01:11,700 --> 00:01:16,600
+Ví dụ, tệp khán giả thích những câu chuyện trinh thám
+
+13
+00:01:16,600 --> 00:01:20,120
+Tệp khán giả thích những câu chuyện hài hước
+
+14
+00:01:20,120 --> 00:01:25,620
+Tệp khán giả thích những câu chuyện về tình cảm gia đình
+
+15
+00:01:25,620 --> 00:01:31,420
+Tệp khán giả thích những câu chuyện về câu chuyện cảm động về động vật
+
+16
+00:01:31,700 --> 00:01:34,780
+Thế đó, chúng ta cần phải trả lời đến câu hỏi này
+
+17
+00:01:34,780 --> 00:01:37,900
+Và mục tiêu cuối cùng của bạn là gì?
+
+18
+00:01:38,572 --> 00:01:42,132
+Giúp khán giả giải quyết được vấn đề gì trong cuộc sống của họ.
+
+19
+00:01:44,652 --> 00:01:46,052
+Cái này là một phần trong kinh doanh.
+
+20
+00:01:48,552 --> 00:01:51,032
+Chúng ta càng giải quyết được nhiều vấn đề cho xã hội,
+
+21
+00:01:52,272 --> 00:01:54,912
+thì tự nhiên tiền nó chỉ là kết quả thôi.
+
+22
+00:01:56,492 --> 00:02:09,772
+Ví dụ như ở đây là giúp khán giả phát triển bản thân, giúp khán giả có niềm tin trong cuộc sống, giúp khán giả giải trí, thư giãn sau những giờ làm việc, học tập vất vả.
+
+23
+00:02:13,000 --> 00:02:19,912
+Tiếp theo chúng ta sẽ đến phần cung cấp bài mẫu hoặc nội dung định hướng kênh cho ChatGPT.
+
+24
+00:02:19,912 --> 00:02:30,492
+Ở phần này chúng ta sẽ thực hiện việc nạp nội dung cho ChatGPT bằng cách là đưa 10 đến 20 bài content của các kênh trong chủ đề của mình.
+
+25
+00:02:31,452 --> 00:02:35,912
+Đang có lượt xem tốt nhất gần đây vào ChatGPT với câu lệnh như sau.
+
+26
+00:02:36,592 --> 00:02:45,732
+Ghi nhớ bài content sau đây là mẫu để triển khai các bài viết sau với cùng văn phong, cấu trúc và cách tiếp cận.
+
+27
+00:02:45,732 --> 00:02:53,512
+Cái văn phong cực kỳ quan trọng với dạng chủ đề câu chuyện này, như ông ví dụ ở đây, và hầu hết các dạng còn lại là như vậy hết.
+
+28
+00:02:54,132 --> 00:02:58,292
+Vì chúng ta thực tế nói chuyện với nhau chủ yếu là bằng câu chuyện.
+
+29
+00:03:00,772 --> 00:03:02,132
+Mọi thứ đều là câu chuyện hết.
+
+30
+00:03:02,950 --> 00:03:10,310
+Bây giờ sẽ thực hành trực tiếp luôn, chúng ta sẽ lấy khoảng 5 đến 10 bài content trong chủ đề vào các kênh top đi Tuấn.
+
+31
+00:03:12,430 --> 00:03:15,850
+Kênh Undercover Boss nhỉ? Undercover Tales á.
+
+32
+00:03:17,370 --> 00:03:19,310
+Tales, ok. Vào video phổ biến nhất.
+
+33
+00:03:21,210 --> 00:03:23,090
+Ấn vào nội dung, lấy content.
+
+34
+00:03:25,190 --> 00:03:26,250
+Copy content của họ lại.
+
+35
+00:03:27,290 --> 00:03:27,630
+Content.
+
+36
+00:03:28,290 --> 00:03:28,690
+Kéo xuống.
+
+37
+00:03:28,690 --> 00:03:32,770
+Chúng ta dùng cái YouTube Summary, copy content.
+
+38
+00:03:32,950 --> 00:03:34,890
+Và đưa vào ChatGPT với câu lệnh.
+
+39
+00:03:38,550 --> 00:03:40,190
+Hãy ghi nhớ nội dung này.
+
+40
+00:03:40,810 --> 00:03:42,450
+Copy bên kia ở đi cho nó đúng quy trình.
+
+41
+00:03:42,690 --> 00:03:43,850
+Copy cái câu lệnh trước đi.
+
+42
+00:03:45,890 --> 00:03:46,530
+Câu lệnh, câu lệnh.
+
+43
+00:03:50,750 --> 00:03:51,950
+Đến dấu 2 chấm luôn.
+
+44
+00:03:56,190 --> 00:03:57,470
+Ok, đưa bài content vào.
+
+45
+00:04:02,950 --> 00:04:08,950
+Xóa cái...
+
+46
+00:04:08,950 --> 00:04:10,950
+Đấy, đúng rồi, đúng rồi.
+
+47
+00:04:11,150 --> 00:04:15,150
+Ok, rồi transcript rồi ok, enter vào
+
+48
+00:04:15,150 --> 00:04:19,150
+Thế này nó cũng ok rồi, anh em đưa vào
+
+49
+00:04:19,150 --> 00:04:23,150
+Ok, chúng ta thì có cái
+
+50
+00:04:23,150 --> 00:04:26,607
+tiếng Việt là ngôn ngữ mình thông hiểu hơn, mình ok hơn nhưng mà chúng ta
+
+51
+00:04:26,607 --> 00:04:30,047
+Nhưng mà chúng ta mới ưu tiên làm việc với những cái nền tảng AI này bằng tiếng Anh.
+
+52
+00:04:30,587 --> 00:04:34,607
+Vì nó là ngôn ngữ mà nó được đào tạo ra để làm, được đào tạo để hiểu nhất.
+
+53
+00:04:35,067 --> 00:04:38,687
+Thì mình ưu tiên mình viết làm việc bằng tiếng Anh thì cho nó sẽ hiệu quả hơn.
+
+54
+00:04:39,067 --> 00:04:41,007
+Nó sẽ đưa ra chính xác cái điều mình muốn hơn.
+
+55
+00:04:41,687 --> 00:04:43,047
+Làm lại với các video tiếp theo.
+
+56
+00:04:43,047 --> 00:04:47,927
+Đấy, nó gợi ý cho mình là có muốn đưa ra một ý tưởng mới hay không.
+
+57
+00:04:49,587 --> 00:04:51,527
+Làm video tiếp theo mình sẽ làm mẫu khoảng 5 video thôi.
+
+58
+00:04:52,287 --> 00:04:53,407
+Để cái việc này làm gì?
+
+59
+00:04:53,727 --> 00:04:57,027
+Cái việc này để nó ghi nhớ cái dữ liệu về sau nó viết bài content cho mình nó hay.
+
+60
+00:04:58,047 --> 00:05:05,967
+Cái việc mình nạp càng dữ liệu cho nó càng tốt thì nó lại càng đưa cho mình những cái kết quả nó hay hơn, nó chính xác hơn.
+
+61
+00:05:13,047 --> 00:05:25,447
+Ok, nạp liên tục vào. Nạp, nhớ phải có câu lệnh nhé.
+
+62
+00:05:29,127 --> 00:05:31,227
+Mỗi lần nạp, mỗi bài nạp là phải có câu lệnh.
+
+63
+00:05:38,550 --> 00:05:47,550
+Copy câu lệnh rồi.
+
+64
+00:05:55,630 --> 00:05:55,990
+Ok.
+
+65
+00:05:57,030 --> 00:05:57,710
+Enter tiếp.
+
+66
+00:06:01,000 --> 00:06:05,730
+Đã ghi nhớ. Đấy là một cái dòng ấy. Nó đã ghi nhớ đấy. Mỗi lần như thế nó phải có xác nhận là đã ghi nhớ anh em nhé.
+
+67
+00:06:05,730 --> 00:06:14,030
+Ok, tiếp theo là 5 video đi. 5 video mình nghĩ là nó cũng ra là kết quả tương đối rồi đấy. Anh em nạp càng nhiều hơn
+
+68
+00:06:14,030 --> 00:06:22,330
+tốt nhé. Với đặc biệt là content này là mỗi kênh một tài khoản ChatGPT riêng. Đừng dùng chung. Bên mình mỗi content một tài khoản ChatGPT riêng hết.
+
+69
+00:06:22,330 --> 00:06:32,250
+Ok, lặp lại, liên tục, liên
+
+70
+00:06:32,250 --> 00:06:42,170
+tục, liên tục như vậy
+
+71
+00:06:42,330 --> 00:06:46,930
+Về sau chúng ta mà nạp được những cái tài khoản ChatGPT mà nạp dữ liệu nó ngon đấy
+
+72
+00:06:46,930 --> 00:06:50,530
+Đưa mỗi ý tưởng, mỗi tiêu đề vào viết cho mình cả một bài luôn
+
+73
+00:06:50,530 --> 00:06:54,110
+Và về sau mình thêm mỗi cái quan điểm cá nhân mới là xong
+
+74
+00:06:54,110 --> 00:07:00,890
+Về sau có những cái tài khoản mà mình nghĩ rằng sau những cái dạng tài khoản ChatGPT này mà được đào tạo ngon
+
+75
+00:07:00,890 --> 00:07:02,330
+Viết xịn
+
+76
+00:07:02,330 --> 00:07:03,530
+Cũng là một cái tài sản của mình đấy
+
+77
+00:07:12,477 --> 00:07:17,717
+Ok, sau khi đã xong thì chúng ta...
+
+78
+00:07:17,717 --> 00:07:19,677
+Từ từ, kéo lên tí.
+
+79
+00:07:22,417 --> 00:07:24,197
+Ok, đứng lại, đứng lại.
+
+80
+00:07:25,717 --> 00:07:32,997
+Video từ kênh khác mà bạn muốn học theo phong cách viết hoặc dàn bài mà bạn thấy hiệu quả. Đây là quá trình mình nạp dữ liệu này.
+
+81
+00:07:35,077 --> 00:07:43,297
+Cái phần ví dụ rất là quan trọng kìa. Tôi thích nội dung này vì kênh đó đạt được lượt xem cao,
+
+82
+00:07:43,297 --> 00:07:51,517
+khán giả xem lâu. Tôi muốn video của tôi có phong cách tương tự nhưng thêm một yếu tố nào đó.
+
+83
+00:07:51,517 --> 00:07:55,877
+Thì đây chính là đoạn mình đưa cho nó cái yêu cầu của mình về quan điểm cá nhân.
+
+84
+00:07:56,697 --> 00:08:00,597
+Thì cái này nó sẽ dựa theo sự sáng tạo về viết content của mỗi anh em là khác nhau.
+
+85
+00:08:01,097 --> 00:08:02,477
+Vậy nên là chúng ta cứ linh hoạt phần này.
+
+86
+00:08:04,000 --> 00:08:05,657
+Định hình cấu trúc một bài content chuẩn là
+
+87
+00:08:05,657 --> 00:08:10,937
+nếu bạn có một công thức viết content hiệu quả hãy chia sẻ với ChatGPT để tối ưu nó.
+
+88
+00:08:12,257 --> 00:08:15,357
+Ví dụ như phần mở bài cách thu hút khán giả ngay từ đầu tiên,
+
+89
+00:08:15,677 --> 00:08:17,937
+thân bài cách kể chuyện, bố cục, văn phong, nhấn mạnh.
+
+90
+00:08:18,557 --> 00:08:20,177
+Kết bài là kêu gọi hành động như thế nào.
+
+91
+00:08:20,177 --> 00:08:21,837
+Để lại dư âm ra sao?
+
+92
+00:08:22,850 --> 00:08:28,910
+Thông thường thì cái tỷ lệ giữ chân của cái dạng story đến cuối video nó chỉ 10% hay là cao rồi.
+
+93
+00:08:29,710 --> 00:08:33,710
+Nhưng nếu chúng ta mà có khoảng 100.000 view mà giữ chân được 10% là 10.000.
+
+94
+00:08:34,210 --> 00:08:44,070
+Mà 10.000 này chúng ta có thể chuyển đổi dần ra các cái dạng video khác và thu hút họ click vào video khác thì có phải video mới của mình up ra là có thể có 10.000 view ngay không?
+
+95
+00:08:45,130 --> 00:08:46,850
+Thì chỉ cần như thế là quá kinh khủng rồi.
+
+96
+00:08:46,850 --> 00:08:55,950
+Ví dụ tôi muốn mở đầu video bằng một câu hỏi gây tò mò, sau đó kể chuyện
+
+97
+00:08:55,950 --> 00:09:05,050
+theo dòng thời gian, cuối cùng kết luận bằng góc nhìn chuyên gia và một câu kết gây sốc.
+
+98
+00:09:05,050 --> 00:09:18,290
+Đặc biệt với cái ví dụ này thì các dạng câu chuyện mà làm về câu chuyện về người nổi tiếng cực kỳ tốt với dạng này thì chúng ta hãy linh hoạt sử dụng theo từng câu chuyện khác nhau.
+
+99
+00:09:19,810 --> 00:09:22,370
+Đưa feedback cho ChatGPT cực kỳ quan trọng.
+
+100
+00:09:23,190 --> 00:09:30,290
+Như anh em bảo là ChatGPT nó viết chán lắm, Grok nó viết chán lắm, rồi nền tảng A, nền tảng B, nền tảng C nó viết chán lắm.
+
+101
+00:09:30,830 --> 00:09:34,510
+Nó chán là do mình, nó chưa hợp ý mình thì mình phải feedback chứ.
+
+102
+00:09:35,050 --> 00:09:40,710
+Giống như nhân sự làm việc mình cũng vậy thôi. Anh em làm chưa hay thì phải phân tích cho anh em là làm chưa hay ở đâu.
+
+103
+00:09:41,770 --> 00:09:46,530
+Và cái gì cần phải tối ưu, cái gì cần phải làm tốt để anh em tiếp tục phát huy chứ.
+
+104
+00:09:48,050 --> 00:09:49,390
+Lặp lại và tối ưu liên tục.
+
+105
+00:09:51,390 --> 00:09:55,490
+Mỗi lần tôi viết bài hãy tiếp tục tinh chỉnh.
+
+106
+00:09:56,550 --> 00:10:00,410
+Mỗi lần tôi viết bài hãy tiếp tục tinh chỉnh đến khi ChatGPT hoàn thành, hiểu được phong cách bạn muốn.
+
+107
+00:10:00,410 --> 00:10:05,910
+Các bạn muốn càng nhiều vòng lặp, ChatGPT sẽ càng nắm bắt văn phong của bạn tốt hơn.
+
+108
+00:10:05,917 --> 00:10:13,387
+Bên mình có những cái tài khoản anh em viết về dạng triết lý mà đến bây giờ thực sự là có những cái đề bài anh em đưa là mình đưa
+
+109
+00:10:13,387 --> 00:10:20,857
+anh em là thử thách anh em một vài lần thôi là đưa mỗi tiêu đề chả có video ví dụ gì cả và anh em vẫn viết ra bài hoàn chỉnh.
+
+110
+00:10:20,857 --> 00:10:28,000
+Thì chứng tỏ một điều là con ChatGPT bên mình làm anh em là training cũng khá là tốt rồi. Anh em viết quá nhiều trên đấy dạng nội dung ấy rồi. Thì là làm rất là tốt rồi.
+
+111
+00:10:28,000 --> 00:10:36,837
+Phần viết content, gán cho ChatGPT một vai trò cụ thể, phần này mình sẽ đi vào trực tiếp là thực hành luôn.
+
+112
+00:10:38,597 --> 00:10:44,837
+Gán cho ChatGPT một vai trò cụ thể, ví dụ bạn là chuyên gia viết content, viết câu chuyện về...
+
+113
+00:10:46,977 --> 00:10:48,857
+Ví dụ ở đây là dạng câu chuyện của mình là gì?
+
+114
+00:10:50,157 --> 00:10:52,517
+Là Undercover Boss đúng không? Undercover CEO đúng không?
+
+115
+00:10:53,017 --> 00:10:56,837
+Thì mình sẽ vào gán vai cho con ChatGPT luôn, vào cái phần mà mình vừa đào tạo đó ấy.
+
+116
+00:10:58,257 --> 00:11:04,037
+Để tốt nhất thì anh em nên dịch cái này, cái từ câu lệnh này sang tiếng Anh nhé.
+
+117
+00:11:04,877 --> 00:11:07,497
+Đây để mình ví dụ, mình sẽ để tiếng Việt luôn, anh em dễ đọc.
+
+118
+00:11:08,637 --> 00:11:10,057
+Câu chuyện về dạng nội dung.
+
+119
+00:11:12,777 --> 00:11:17,757
+Chủ tịch giả vờ và cái kết.
+
+120
+00:11:18,950 --> 00:11:28,240
+Với các từ khóa Undercover Boss, Undercover CEO là từ khóa chính,
+
+121
+00:11:28,240 --> 00:11:37,530
+là từ khóa chính, nhân vật chính, phải nhân vật chính.
+
+122
+00:11:42,370 --> 00:11:47,410
+Ok, rồi bỏ ra đằng sau đi, đây là câu lệnh, rồi Enter.
+
+123
+00:11:47,410 --> 00:11:52,110
+Mình gán cho nó một vai trò cụ thể để nó biết được cái nhiệm vụ của nó là gì.
+
+124
+00:11:57,570 --> 00:12:01,550
+Mình hoàn toàn hiểu định hướng các cái câu chuyện phong cách chủ tịch giả vờ và cái kết.
+
+125
+00:12:02,610 --> 00:12:07,670
+Mình sẽ là người đồng hành cùng bạn để xây dựng nhân vật CEO giả dạng một người bình thường.
+
+126
+00:12:08,290 --> 00:12:11,450
+Sau đó để thâm nhập hệ thống, vạch trần hành vi xấu.
+
+127
+00:12:12,110 --> 00:12:16,870
+Đây là kết quả của việc mình nạp dữ liệu một cách chuẩn chỉ và nó sẽ ra được những cái dạng như này.
+
+128
+00:12:16,870 --> 00:12:19,510
+Nó còn đề xuất cho mình các dạng nội dung mà.
+
+129
+00:12:22,010 --> 00:12:24,990
+Ok, quay lại về phần đào tạo để đến bước tiếp theo.
+
+130
+00:12:27,750 --> 00:12:29,010
+Cái bảng, bảng content.
+
+131
+00:12:30,310 --> 00:12:31,750
+Cách đào tạo ChatGPT, đúng không?
+
+132
+00:12:31,750 --> 00:12:33,000
+Đúng rồi.
+
+133
+00:12:33,000 --> 00:12:35,410
+Hãy phân tích toàn bộ câu chuyện phía sau
+
+134
+00:12:35,410 --> 00:12:38,810
+và chia thành phần nội dung chính của câu chuyện trả lời bằng tiếng Việt.
+
+135
+00:12:38,810 --> 00:12:40,550
+Đây sẽ đến phần mình viết content này.
+
+136
+00:12:40,550 --> 00:12:42,090
+Bây giờ mình chọn một cái bài ấy đi.
+
+137
+00:12:42,090 --> 00:12:45,710
+Với kênh Undercover Tales đi.
+
+138
+00:12:45,710 --> 00:12:48,090
+Rồi, ok.
+
+139
+00:12:48,090 --> 00:12:51,750
+Rồi copy đấy, không lấy một cái bài content bên kia.
+
+140
+00:12:51,750 --> 00:12:55,030
+Bài này 1 tháng trước 169.000 view, ok hay quá.
+
+141
+00:12:55,350 --> 00:12:56,390
+Bài trend, lấy luôn.
+
+142
+00:12:57,890 --> 00:13:00,070
+Mình sẽ lấy ý tưởng của họ về và viết lại nhá.
+
+143
+00:13:00,250 --> 00:13:03,290
+Nhưng không được là lấy y nguyên về và copy lại đâu, đánh bản quyền đấy.
+
+144
+00:13:03,297 --> 00:13:13,997
+Lại tại sao mình phải phân tích một tiếng Việt? Vì mình cũng sẽ cần phải hiểu câu lệnh mình dùng tiếng Anh, nhưng mà mình cần viết content là mình phải viết được tiếng Việt, chứ không thì mình không hiểu được đâu.
+
+145
+00:13:16,277 --> 00:13:17,157
+Rồi, Enter.
+
+146
+00:13:24,177 --> 00:13:27,717
+Nó sẽ phân tích, dựa vào câu lệnh này, nó sẽ phân tích cho mình các bố cục.
+
+147
+00:13:28,417 --> 00:13:32,757
+Đó, bao gồm là giới thiệu là gì, nếu mà chính là gì, tình huống ban đầu, phản hồi hành động.
+
+148
+00:13:33,297 --> 00:13:39,457
+Rồi, cứ để nó phân tích, mình sẽ sang phần tiếp theo, bên cách đào tạo ChatGPT đến phần tiếp theo.
+
+149
+00:13:40,877 --> 00:13:43,277
+Đây là một câu lệnh tiếp theo, giữ nguyên nội dung chính.
+
+150
+00:13:44,137 --> 00:13:44,637
+Đâu rồi?
+
+151
+00:13:46,157 --> 00:13:49,577
+Giữ nguyên nội dung chính của câu chuyện trên thay đổi một số chi tiết sau.
+
+152
+00:13:50,417 --> 00:13:51,197
+Mình muốn thay đổi điều gì?
+
+153
+00:13:51,437 --> 00:13:52,957
+Dạng được câu chuyện này mình sẽ cần thay đổi.
+
+154
+00:13:52,957 --> 00:13:59,397
+Thứ nhất là về nhân vật, tên nhân vật này, độ tuổi nhân vật này, cộng với đó là bối cảnh thay đổi một chút.
+
+155
+00:14:01,057 --> 00:14:01,717
+Là ok.
+
+156
+00:14:05,850 --> 00:14:12,890
+Tên nhân vật thay đổi thành Steve chẳng hạn,
+
+157
+00:14:12,890 --> 00:14:19,930
+S, hoặc John đi, John đi, John cho dễ.
+
+158
+00:14:23,770 --> 00:14:33,330
+John, ok. Tên nhân vật là độ tuổi. Chủ tịch thì nó cũng phải tầm 40 thì nghe nó hợp lý hơn. 40 tuổi.
+
+159
+00:14:33,330 --> 00:14:39,590
+Ok, bối cảnh, bối cảnh, xem lại bối cảnh của cái bài cũ là gì?
+
+160
+00:14:47,850 --> 00:14:56,830
+Giờ nhân vật chính là Jason Carter, đây nó vẫn thích là cái chủ chuỗi đại lý xe tải, à bây giờ mình sẽ, chủ chuỗi xe tải, zone gì đấy, John's Truck.
+
+161
+00:14:57,730 --> 00:15:00,330
+Đổi bối cảnh, đổi tên các cái phần đấy đi.
+
+162
+00:15:00,330 --> 00:15:02,110
+Đấy
+
+163
+00:15:02,110 --> 00:15:03,450
+Chủ
+
+164
+00:15:03,450 --> 00:15:06,670
+À bỏ trước bối cảnh đi
+
+165
+00:15:06,670 --> 00:15:08,350
+Mình đang giới thiệu nhân vật
+
+166
+00:15:08,350 --> 00:15:09,350
+Chủ chuỗi
+
+167
+00:15:09,350 --> 00:15:12,410
+Chuỗi
+
+168
+00:15:12,410 --> 00:15:15,290
+Sửa xe
+
+169
+00:15:15,290 --> 00:15:18,370
+Đây, John
+
+170
+00:15:18,370 --> 00:15:19,810
+John's Truck
+
+171
+00:15:19,810 --> 00:15:21,650
+Đấy, đúng không?
+
+172
+00:15:21,650 --> 00:15:23,650
+Đúng không?
+
+173
+00:15:23,650 --> 00:15:29,650
+John's Truck phải có chữ S, phẩy S đằng sau chữ John ấy.
+
+174
+00:15:29,650 --> 00:15:31,650
+Đúng ngữ pháp.
+
+175
+00:15:31,650 --> 00:15:33,650
+Ok.
+
+176
+00:15:33,650 --> 00:15:41,650
+Đó, còn phần còn lại nếu mà anh em muốn thay đổi những yếu tố về mặt nội dung như thế nào thì do tùy chỉnh của mình.
+
+177
+00:15:42,137 --> 00:15:48,697
+Cái dạng câu chuyện này về bản chất nó là những câu chuyện không có thật và không ảnh hưởng, không làm hại đến ai.
+
+178
+00:15:49,557 --> 00:15:52,437
+Nên là chúng ta chọn, chúng ta hoàn toàn có thể sáng tạo theo hướng của mình.
+
+179
+00:15:52,437 --> 00:16:05,797
+Tuy nhiên mới đầu thì chúng ta nên làm những cái việc là mình đi Shu đã. Không nên thay đổi quá nhiều, mình chỉ nên thay đổi những yếu tố cần thiết thôi. Để mình hiểu nội dung đã. Ok, Enter để nó ra các nội dung của mình chưa.
+
+180
+00:16:05,797 --> 00:16:17,457
+Ok, dựa vào các tiếp theo đến phần quay lại cái phần mà đào tạo và viết content với ChatGPT ấy, nó sẽ có cái câu lệnh tiếp theo.
+
+181
+00:16:19,000 --> 00:16:30,697
+Đấy, bây giờ là cái phần quan trọng này, hãy thêm vào đầy đủ những yếu tố tình tiết trên, vào thành phân tích, phần phân tích trên sau cho, và các phần còn lại.
+
+182
+00:16:30,697 --> 00:16:34,357
+Thì cái này là cái phần mà mình sẽ phân tích và mình thêm các yếu tố thể ra.
+
+183
+00:16:35,457 --> 00:16:36,957
+Ở bước này nó sẽ có 2 trường hợp thể ra.
+
+184
+00:16:37,097 --> 00:16:41,417
+Nếu ChatGPT đưa ra đúng ý, dàn ý mà mình mong muốn rồi thì có thể bắt đầu viết bài.
+
+185
+00:16:41,977 --> 00:16:49,817
+Nếu ChatGPT chưa đưa ra dàn ý yêu cầu mình mong muốn thì nhập prompt để ChatGPT viết lại yêu cầu thật kỹ, chỉnh sửa chi tiết đến khi đúng ý.
+
+186
+00:16:50,237 --> 00:16:53,717
+Bây giờ mình sẽ quay lại cái dàn ý kia xem mình nó thấy nó ưng ý chưa.
+
+187
+00:16:55,297 --> 00:16:58,797
+Về cơ bản câu chuyện, kéo lên trên đầu từ phần mục 1 đấy.
+
+188
+00:16:59,817 --> 00:17:04,857
+Giới thiệu, nghi ngờ và hành động nhân vật chính là John, chủ chuỗi gara sửa xe và buôn bán xe tải cũ.
+
+189
+00:17:06,017 --> 00:17:13,417
+Ok, khoảng 40 tuổi, dù doanh thu vẫn ổn, John thấy nhiều khách hàng phàn nàn việc thu phí ẩn, ép giá khi sửa chữa và mua bán xe.
+
+190
+00:17:13,417 --> 00:17:15,097
+Hành động là gì?
+
+191
+00:17:15,297 --> 00:17:16,817
+John quyết định là làm khách hàng
+
+192
+00:17:16,817 --> 00:17:18,997
+Tên giả thành Mike Thompson
+
+193
+00:17:18,997 --> 00:17:22,917
+Để điều tra chính cửa hàng của mình
+
+194
+00:17:22,917 --> 00:17:24,750
+Ok, mình thấy nó có dàn ý khá ok rồi
+
+195
+00:17:24,750 --> 00:17:27,050
+Ok rồi, kéo xuống dưới tiếp để xem các phần còn lại xem nào.
+
+196
+00:17:28,450 --> 00:17:30,550
+Cao trào khách hàng bị lừa ngay trước mặt.
+
+197
+00:17:31,650 --> 00:17:39,250
+Một khách hàng khác Mark Henderson bị thông báo phải trả thêm khoảng 3.000 phí ẩn, dù đã được báo giá trước đó là 32.000 đô.
+
+198
+00:17:40,550 --> 00:17:43,550
+Ok, quay lại bản triển khai mình thấy dàn ý khá ổn rồi.
+
+199
+00:17:45,050 --> 00:17:46,950
+Thì mình có thể đến bước tiếp theo.
+
+200
+00:17:47,000 --> 00:17:48,950
+Hãy bắt đầu viết phần 1.
+
+201
+00:17:50,150 --> 00:17:52,250
+Đó, copy, cả dòng đấy luôn.
+
+202
+00:17:54,750 --> 00:18:05,490
+Tại sao phải yêu cầu nó viết từng phần một? Để mình còn kiểm soát xem nó hay chưa? Nếu nó hay rồi mình mới yêu cầu viết phần tiếp theo để nó đỡ mất thời gian mình. Mình sửa cả một cái bài dài cả tiếng liền.
+
+203
+00:18:08,910 --> 00:18:09,450
+Ok, Enter.
+
+204
+00:18:09,450 --> 00:18:10,450
+Center
+
+205
+00:18:16,450 --> 00:18:19,450
+John ngồi lặng trong chiếc Toyota Corolla cũ kỹ
+
+206
+00:18:19,450 --> 00:18:22,630
+Đôi tay gõ nhịp chậm rãi lên vô lăng
+
+207
+00:18:22,630 --> 00:18:24,910
+Trước mặt anh là bãi xe của John's Truck
+
+208
+00:18:24,910 --> 00:18:26,910
+Cơ sở đầu tiên và quan trọng nhất
+
+209
+00:18:26,910 --> 00:18:28,870
+Ok
+
+210
+00:18:29,450 --> 00:18:30,150
+Khá ổn
+
+211
+00:18:30,150 --> 00:18:31,810
+Để nó viết xong đi
+
+212
+00:18:31,810 --> 00:18:32,930
+Cái này sẽ cần thời gian
+
+213
+00:18:32,930 --> 00:18:42,057
+Ok
+
+214
+00:18:42,057 --> 00:18:43,937
+Ok, kéo xếp, viết hết chưa?
+
+215
+00:18:43,937 --> 00:18:54,077
+Ok, hãy tiếp tục với những phần còn lại sang copy câu lệnh tiếp. Hãy tiếp tục với những phần còn lại để nó viết nốt content cho mình. Thế nó khá ổn rồi.
+
+216
+00:18:58,177 --> 00:19:00,737
+Ok, ở Enter để cho nó viết những phần còn lại nhé.
+
+217
+00:19:03,557 --> 00:19:06,597
+Đấy, bây giờ ChatGPT nó có một phần khác là hay như thế này.
+
+218
+00:19:07,137 --> 00:19:13,657
+Là khi mình đã cho nó những cái phần đoạn cụ thể rồi thì phần còn lại nó viết nó rất là kỹ, từng phần từng phần một.
+
+219
+00:19:13,937 --> 00:19:16,137
+Ok, quay lại phần tư liệu.
+
+220
+00:19:17,837 --> 00:19:23,277
+Nếu đoạn văn qua ngắn hoặc viết sai nội dung, phải yêu cầu viết lại đảm bảo dung lượng và chất lượng của nội dung.
+
+221
+00:19:23,717 --> 00:19:25,717
+Cái này là mình feedback cho con ChatGPT để nó hiểu đấy.
+
+222
+00:19:28,157 --> 00:19:31,157
+Lưu ý viết intro và outro cuối cùng.
+
+223
+00:19:31,517 --> 00:19:32,377
+Đấy, cũng phải đánh giá lại.
+
+224
+00:19:34,037 --> 00:19:36,697
+Ok, về cơ bản mình đã có một cái phần content rồi.
+
+225
+00:19:36,897 --> 00:19:39,637
+Thì chúng ta sẽ cần tùy chỉnh theo chính cái nội dung của anh em.
+
+226
+00:19:39,837 --> 00:19:42,317
+Thì cái đấy là cái kỹ năng bắt buộc phải luyện.
+
+227
+00:19:42,577 --> 00:19:43,377
+Content là vua mà.
+
+228
+00:19:43,377 --> 00:19:52,017
+Content is king. Bạn buộc chúng ta phải luyện thôi. Nhớ anh em hỏi là làm nào viết content hay. Chỉ có cách viết nhiều thôi, không có cách nào khác. Viết nhiều, xem nhiều.
+
+229
+00:19:52,850 --> 00:19:54,850
+Chăm hay không bằng tay quen mà.
+
+230
+00:19:55,870 --> 00:20:00,470
+Tổng kết lại quá trình viết kịch bản, thì chúng ta cần các cái lưu ý sau đây.
+
+231
+00:20:00,690 --> 00:20:03,410
+Đầu tiên là gắn cho ChatGPT một vai trò cụ thể.
+
+232
+00:20:04,270 --> 00:20:06,470
+Thứ hai là hãy phân tích toàn bộ câu chuyện mẫu.
+
+233
+00:20:07,270 --> 00:20:09,250
+Thứ ba là thay đổi một số chi tiết.
+
+234
+00:20:10,310 --> 00:20:12,630
+Thứ tư là thêm tình tiết hấp dẫn hơn.
+
+235
+00:20:13,410 --> 00:20:15,790
+Thêm các cao trào đấy, để cho hấp dẫn hơn.
+
+236
+00:20:16,430 --> 00:20:20,570
+Chúng ta mới đầu có thể là người sao chép, nhưng về sau hãy thành người cải tiến.
+
+237
+00:20:20,570 --> 00:20:28,530
+Đấy là cách mà Trung Quốc lên mình nghĩ là top 1 thế giới với quan điểm của mình copy và cải tiến.
+
+238
+00:20:31,610 --> 00:20:42,890
+Kết hợp tính, tình tiết thêm và dàn ý mẫu, viết lần lượt các phần, viết outro và intro cuối cùng và đánh giá lại đưa feedback cho nó.
+
+239
+00:20:42,890 --> 00:20:47,030
+Chúng ta đã có một kịch bản content bằng tiếng Việt rồi.
+
+240
+00:20:47,430 --> 00:20:50,090
+Thì việc của mình bây giờ là phải dịch nó sang tiếng Anh.
+
+241
+00:20:50,530 --> 00:20:55,070
+Đây cũng là một phần anh em cũng khá ngại vì ngôn ngữ của mình không phải tiếng Anh là ngôn ngữ chính.
+
+242
+00:20:55,590 --> 00:20:57,350
+Chúng ta là biết tiếng Việt, mình giỏi tiếng Việt.
+
+243
+00:20:58,030 --> 00:21:00,190
+Vì phần này là mình sẽ dùng các công cụ như sau.
+
+244
+00:21:00,850 --> 00:21:03,270
+Một là mình sẽ dùng ChatGPT để dịch luôn.
+
+245
+00:21:04,290 --> 00:21:06,270
+Lưu ý muốn dịch, không.
+
+246
+00:21:06,890 --> 00:21:07,450
+Viết hết chưa?
+
+247
+00:21:08,650 --> 00:21:09,930
+Ok, ok, phần 2 đúng không?
+
+248
+00:21:10,270 --> 00:21:10,950
+Cứ cho nó viết tiếp.
+
+249
+00:21:11,830 --> 00:21:12,070
+Đó.
+
+250
+00:21:12,890 --> 00:21:15,530
+Đấy, mình yêu cầu một lúc nó mới viết được hết, vì nó dài mà.
+
+251
+00:21:15,530 --> 00:21:16,990
+Thế bây giờ quá trình dịch
+
+252
+00:21:16,990 --> 00:21:18,000
+Mình trong thời gian đợi nó viết
+
+253
+00:21:18,000 --> 00:21:19,830
+Thì mình sẽ hướng dẫn em luôn quá trình dịch
+
+254
+00:21:19,830 --> 00:21:22,350
+Cái việc quá trình dịch này mình sẽ cần một cái tab
+
+255
+00:21:22,350 --> 00:21:24,270
+ChatGPT riêng, không dùng một cái cũ nhá
+
+256
+00:21:24,270 --> 00:21:27,410
+Mình sẽ cần nạp dữ liệu lại cho nó từ đầu luôn
+
+257
+00:21:27,410 --> 00:21:29,370
+Để nó dịch cho mình ok
+
+258
+00:21:29,370 --> 00:21:29,827
+Mở theo một cái tab
+
+259
+00:21:29,827 --> 00:21:31,467
+Mở thêm một tab mới, cái này viết xong chưa?
+
+260
+00:21:37,907 --> 00:21:42,707
+Ok, kéo kéo xuống lại, đừng ngắt tác vụ nó, dùng ChatGPT đừng ngắt tác vụ nó đang làm nốt.
+
+261
+00:21:42,707 --> 00:21:46,927
+Ok, phần 4 cuộc đối đầu, cho nó viết đủ đi.
+
+262
+00:21:53,007 --> 00:21:53,787
+Cho viết hết đi.
+
+263
+00:21:56,647 --> 00:21:57,667
+Tổng nó có 7 phần đó.
+
+264
+00:21:59,687 --> 00:22:01,087
+Kéo lên trên nó phải có 7 phần đó.
+
+265
+00:22:03,927 --> 00:22:05,267
+Cái này xong anh em phải check lại nhé.
+
+266
+00:22:05,567 --> 00:22:06,447
+Đây là mình hướng dẫn.
+
+267
+00:22:07,167 --> 00:22:09,767
+Vậy nên nếu mà ngồi check lại thì nó sẽ mất rất nhiều thời gian.
+
+268
+00:22:09,767 --> 00:22:15,287
+Ok, tiếp theo cho nó viết bằng hết thì thôi đến tận phần 9
+
+269
+00:22:15,287 --> 00:22:23,327
+Đây là cách mình viết một nội dung dài khoảng 3 tiếng
+
+270
+00:22:23,327 --> 00:22:28,187
+Tại vì ChatGPT nó có một cái giới hạn là giới hạn về token
+
+271
+00:22:28,187 --> 00:22:31,247
+Mỗi một lần anh em viết nó không được dài đâu
+
+272
+00:22:31,247 --> 00:22:37,427
+Bây giờ mà mình cứ copy mà paste cả một cái bài vào chắc chắn nó viết sai rồi, viết lặp rồi
+
+273
+00:22:37,427 --> 00:22:40,487
+Đây mình sẽ kiểm soát bằng cách là mình viết từng phần thôi.
+
+274
+00:22:41,087 --> 00:22:44,087
+Sau đó mình kiểm soát nếu như mà ổn rồi thì mình cho nó viết tiếp.
+
+275
+00:22:44,547 --> 00:22:46,847
+Chưa ổn, bắt feedback cho nó là bắt nó viết lại.
+
+276
+00:22:52,407 --> 00:22:53,967
+Rồi tiếp tục với các phần tiếp theo.
+
+277
+00:22:56,867 --> 00:22:59,567
+Vẫn lưu ý cái gì quan trọng là nhắc lại 3 lần.
+
+278
+00:22:59,927 --> 00:23:02,547
+Là đừng ngắt tác vụ của cái con ChatGPT.
+
+279
+00:23:03,027 --> 00:23:05,047
+Ngắt nó đi đang mạch nó viết rồi sao nó biết nó sai đấy.
+
+280
+00:23:12,547 --> 00:23:14,547
+Mỗi một đoạn dài như thế này mà!
+
+281
+00:23:14,547 --> 00:23:16,547
+Đấy! Cách viết content bằng ChatGPT dài đấy!
+
+282
+00:23:16,547 --> 00:23:20,450
+Tất nhiên có những con khác nó viết khá là hay nhưng mà...
+
+283
+00:23:20,450 --> 00:23:24,730
+Nó có một cái nhược điểm là nó không nạp vào dữ liệu giống như con ChatGPT này, nó chưa nạp được.
+
+284
+00:23:25,270 --> 00:23:27,570
+Nên là mình vẫn đang ưu tiên hướng dẫn anh em bằng ChatGPT hơn.
+
+285
+00:23:29,190 --> 00:23:32,070
+Ví dụ con Grok thì nó đang viết bài quảng cáo rất là tốt.
+
+286
+00:23:35,070 --> 00:23:39,490
+Mình có trong cái tài khoản ChatGPT mình có đào tạo một cái con là chuyên viết status.
+
+287
+00:23:41,370 --> 00:23:44,050
+Vì sao kiểu mình không nghĩ được ý tưởng viết ấy.
+
+288
+00:23:44,650 --> 00:23:47,350
+Là phải đào tạo nó để nó viết cho mình, đưa ý tưởng cho nó và viết.
+
+289
+00:23:47,350 --> 00:23:56,790
+Đôi khi chỉ paste cái ảnh của mình vào, tôi bí ý tưởng viết status này quá gợi ý cho tôi một cái. Thế là gợi ý được. Rất là hay.
+
+290
+00:23:59,650 --> 00:24:02,210
+Kết thúc câu chuyện nhưng bắt đầu một chuẩn mực mới.
+
+291
+00:24:02,210 --> 00:24:04,410
+Ok
+
+292
+00:24:04,410 --> 00:24:05,990
+Nếu bạn muốn
+
+293
+00:24:05,990 --> 00:24:08,310
+Mình chuyển thể câu chuyện này
+
+294
+00:24:08,310 --> 00:24:10,910
+Thành video script, slide thuyết trình
+
+295
+00:24:10,910 --> 00:24:12,770
+Hoặc phiên bản rút gọn
+
+296
+00:24:12,770 --> 00:24:13,850
+Để viral trên mạng xã hội
+
+297
+00:24:13,850 --> 00:24:16,670
+Dạng CEO cải trang, lật mặt quản lý tham nhũng
+
+298
+00:24:16,670 --> 00:24:18,030
+Mình có thể giúp bạn
+
+299
+00:24:18,030 --> 00:24:19,702
+Thì cái này
+
+300
+00:24:19,702 --> 00:24:27,562
+Thì cái này mình có thể yêu cầu nó thành một cái file Word để mình có thể sử dụng luôn nhưng mà mình không ưu tiên được đấy.
+
+301
+00:24:28,102 --> 00:24:32,782
+Tại vì sao? Có một cái việc là chúng ta khi mà copy paste cũng là một hành động mà chúng ta xem lại nội dung đấy.
+
+302
+00:24:32,882 --> 00:24:34,582
+Xem lại một lần nữa, check lại một lần nữa.
+
+303
+00:24:34,582 --> 00:24:41,622
+Ok, bây giờ chúng ta sẽ mở một cái bài Word. Mình sẽ tạo một cái file mới ở trên desktop đi. Tạo một file mới trên desktop.
+
+304
+00:24:44,162 --> 00:24:49,882
+Anh em có muốn có cái bài content này không? Để tham khảo thôi. Ok, thế tạo một file online đi.
+
+305
+00:24:52,282 --> 00:25:00,922
+Vào cái bảng, tạo ở đây đâu nhỉ? Tạo ở đâu? Cứ tạo một file mới đi, tạo một file Word mới.
+
+306
+00:25:00,922 --> 00:25:09,502
+Các Doc mới, ok, new, document, ok. Mình sẽ ghi
+
+307
+00:25:09,502 --> 00:25:18,082
+là content mẫu, content mẫu, GODA Story, tên kênh ấy.
+
+308
+00:25:18,082 --> 00:25:25,232
+Ok, copy từng phần content vào, xem kỹ lại nó có chưa. Cái phần chưa viết intro và
+
+309
+00:25:25,232 --> 00:25:32,382
+outro đúng không? Kéo lên lại đi Tuấn, mình xem lại xem nó có viết intro, outro chưa.
+
+310
+00:25:32,382 --> 00:25:34,382
+Chưa chưa?
+
+311
+00:25:36,382 --> 00:25:40,382
+Check lại tại vì khi nó viết phần intro, intro của dạng story nó không rõ ràng đâu.
+
+312
+00:25:40,382 --> 00:25:42,382
+Nó chỉ là kể lại câu chuyện thôi.
+
+313
+00:25:42,382 --> 00:25:44,382
+Thế nên là mình cần check lại.
+
+314
+00:25:44,382 --> 00:25:48,382
+John ngồi lặng trong chiếc Toyota Corolla cũ kỹ, đôi tay gõ nhịp chậm rãi trên vô lăng.
+
+315
+00:25:48,382 --> 00:25:52,382
+Đây là một cách vào vấn đề trực tiếp vào dạng story anh em.
+
+316
+00:25:52,382 --> 00:25:55,722
+Làm dạng này, chúng ta không nên kể câu chuyện nó quá dài dòng
+
+317
+00:25:55,722 --> 00:25:57,082
+vào thẳng cái vấn đề luôn
+
+318
+00:25:57,082 --> 00:25:58,562
+Thế hay rồi
+
+319
+00:25:58,562 --> 00:26:01,562
+Ok, copy lại toàn bộ tờ đoạn cuối đi
+
+320
+00:26:06,000 --> 00:26:09,200
+Đó, đừng copy các chapter để mình tí mình còn dịch.
+
+321
+00:26:17,600 --> 00:26:20,540
+Dài chứ làm thoải mái, làm 10 tiếng content còn được.
+
+322
+00:26:22,920 --> 00:26:29,320
+Giờ mình có thử thách bạn hàng đang ngồi kia làm content, quên có video 20 phút làm lên 2-3 tiếng được không?
+
+323
+00:26:30,100 --> 00:26:35,500
+Lúc đầu làm cũng thấy khó lắm, sau làm thời gian theo quy trình như thế này và bạn ấy tối ưu thêm nữa thì,
+
+324
+00:26:36,000 --> 00:26:36,780
+Bạn làm được.
+
+325
+00:26:37,840 --> 00:26:39,400
+Content là cũng 2 tiếng, trung bình.
+
+326
+00:26:39,920 --> 00:26:40,720
+Một ngày làm 2 bài.
+
+327
+00:26:44,620 --> 00:26:46,340
+Rồi copy hết, đưa vào.
+
+328
+00:26:48,740 --> 00:26:51,580
+Sau khi xong content thì chúng ta sẽ đến cái bước dịch.
+
+329
+00:27:20,333 --> 00:27:20,953
+Đúng chưa? Có kỹ chuẩn.
+
+330
+00:27:26,953 --> 00:27:35,513
+Anh em phải check kĩ lại content nhé. Những cái phần đề mục kia phải xóa đi kìa. Nó
+
+331
+00:27:35,513 --> 00:27:44,073
+là phần đề mục của ChatGPT, nó đưa theo cái form mình đưa cho nó thôi. Cứ đưa cái đấy
+
+332
+00:27:44,073 --> 00:27:52,633
+vào câu chuyện đang đọc dài tự nhiên lại và đó là di sản bằng tiếng Anh ấy thôi.
+
+333
+00:27:52,633 --> 00:28:03,233
+Nhớ anh em bị lỗi thế nhưng mà video vẫn lên, nói chuyện bình thường nhé, không có nghĩa là mình làm đúng đâu, mình làm sai mà video vẫn lên, nó là bình thường, nó là may mắn.
+

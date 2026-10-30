@@ -1,0 +1,73 @@
+{
+  "sku": "VIDEO-2235fb",
+  "title": "Show kênh REUP nhân bản thị trường Hoa Kỳ, view cực kỳ kinh khủng + thêm kênh thị trường Thái Lan và hướng dẫn tư duy làm đúng ngách đúng thị trường auto có view",
+  "actual_topic": "Show kênh REUP nhân bản thị trường Hoa Kỳ, view cực kỳ kinh khủng + thêm kênh thị trường Thái Lan và hướng dẫn tư duy làm đúng ngách đúng thị trường auto có view",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Reup & Khai Thác Hoạt Hình",
+  "niche_id": "faceless-general",
+  "target_market": "Hoa Kỳ (US) / Thái Lan / Việt Nam",
+  "market_code": "US,TH,VN",
+  "key_takeaways": [
+    "Tác giả cho xem sức mạnh của việc nhân bản thị trường: một kênh hoạt hình reup, lấy nguồn từ bên Trung Quốc, có view rất lớn và toàn bình luận tiếng Anh.",
+    "Kênh này trước đó từng làm sang thị trường khác nhưng làm không đúng ngách nên view giảm và lẹt đẹt, đến khi chuyển sang ngách hoàn toàn mới thì view mới lên.",
+    "Quy trình làm vẫn như tác giả đã hướng dẫn: có người dịch sang tiếng Anh cho thị trường Mỹ, và tác giả để mặc định một số quốc gia thường dùng, cần thị trường nào gần thì thêm vào.",
+    "Kênh thứ hai là kênh reup hoạt hình nhân bản sang thị trường Thái Lan, có video đăng 20 giờ trước đạt hơn 16k view, lấy lại từ video của chính kênh đó hai ngày trước nhưng dài hơn, và có nhiều nguồn.",
+    "Trước khi nhân bản sang thị trường khác phải tìm xem đã có ai làm, có kênh và có view hay chưa, vì có nước dân số già hoặc không ai quan tâm chủ đề thì làm cũng không có view; tác giả nhắc bán content và reup nhiều lần vì hiểu được thì làm được rất nhiều thứ."
+  ],
+  "edit_sop": {
+    "primary": "Nhân bản thị trường kênh reup hoạt hình sang thị trường Mỹ và Thái Lan",
+    "additional": [
+      "Trước khi làm, search thử thị trường muốn làm xem có ai làm, có kênh, có view không",
+      "Quy trình làm giống đã hướng dẫn: một người dịch sang tiếng Anh, một người chỉnh",
+      "Các quốc gia đang để mặc định thường dùng, cần thị trường nào thì bỏ thêm vào"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng đem ngách sang quốc gia dân số già hoặc không ai quan tâm chủ đề đó vì sẽ không có view",
+    "Tránh nhân bản sang thị trường nước ngoài mà không tìm kiếm kiểm tra trước xem thị trường đó đã có kênh làm và có lượt xem hay chưa"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "Bilibili"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "00:43",
+      "seconds": 43,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "01:22",
+      "seconds": 82,
+      "label": "Phân tích các video nổ view cao nhất của kênh đối thủ"
+    },
+    {
+      "time": "02:23",
+      "seconds": 143,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "02:54",
+      "seconds": 174,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-2235fb/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Trước khi làm, search thử thị trường muốn làm xem có ai làm, có kênh, có view không",
+    "Quy trình làm giống đã hướng dẫn: một người dịch sang tiếng Anh, một người chỉnh",
+    "Các quốc gia đang để mặc định thường dùng, cần thị trường nào thì bỏ thêm vào"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "sku": "VIDEO-5fd052",
+  "title": "SHARE 3 NGÁCH THỊ TRƯỜNG NHẬT BẢN (TRUYỆN + STORIES + TRIẾT LÝ)",
+  "actual_topic": "SHARE 3 NGÁCH THỊ TRƯỜNG NHẬT BẢN (TRUYỆN + STORIES + TRIẾT LÝ)",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Drama Gia Đình & Xã Hội",
+  "niche_id": "faceless-general",
+  "target_market": "Nhật Bản",
+  "market_code": "JP",
+  "key_takeaways": [
+    "Tác giả chia sẻ ba ngách thị trường Nhật Bản; ngách đầu là kênh story về gia đình, vợ chồng, mẹ chồng nàng dâu, mới có 11 video, lập từ tháng 7 nhưng view rất cao dù ra video ít.",
+    "Tác giả nói dạng ngách ở thị trường Nhật hay Hàn như vậy không bao giờ hết hot.",
+    "Ngách thứ hai là dạng triết lý của Nhật, kênh làm được gần hai tháng, view đều và cao, dùng một nhân vật thương hiệu đứng ra phát biểu; link các kênh để ở phần mô tả.",
+    "Ngách thứ ba là kênh khá lớn làm từ năm 2024 với nhiều loại nội dung tổng hợp; tác giả nhắc làm bán content thì cứ bám theo những video nhiều view và chỉ số cao, đừng bám video ít view vì kênh sẽ không phát triển.",
+    "Tác giả dặn lại đừng FOMO nhiều ngách, chỉ tập trung một hoặc hai ngách, người mới chỉ nên làm một, lên rồi mới làm thêm, vì làm nhiều sẽ loạn và khó phát triển."
+  ],
+  "edit_sop": {
+    "primary": "Chia sẻ 3 ngách thị trường Nhật Bản: truyện gia đình, nhân vật thương hiệu nói triết lý, kênh tổng hợp lớn",
+    "additional": [
+      "Ngách đầu là kênh truyện đam mê gia đình, vợ chồng, mẹ chồng nàng dâu, ít video nhưng view cao",
+      "Ngách hai là triết lý Nhật, một nhân vật thương hiệu đứng ra phát biểu, kênh mới lập hơn một tháng mà view đều",
+      "Ngách ba là kênh lớn làm từ 2024 với nhiều loại truyện; link kênh để ở phần mô tả",
+      "Làm bán content thì bám theo các video nhiều view của kênh mẫu, vì view cao thì chỉ số RPM cũng cao"
+    ]
+  },
+  "avoid_flags": [
+    "Không bám theo video ít view vì kênh sẽ không lên",
+    "Đừng phô mô nhiều ngách, người mới chỉ nên làm một ngách, làm lên rồi mới làm thêm"
+  ],
+  "tools_mentioned": [
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@buddhamind60s",
+    "@賢者の灯",
+    "@黄金の老年期-x9g"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "01:18",
+      "seconds": 78,
+      "label": "Như cái tên này thì nó làm được gần 2 tháng rồi nha Bây giờ em sẽ phân tích software để cho mọi người rõ nha.…"
+    },
+    {
+      "time": "02:22",
+      "seconds": 142,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "03:17",
+      "seconds": 197,
+      "label": "đam me, mẹ nó làm nhiều"
+    },
+    {
+      "time": "04:04",
+      "seconds": 244,
+      "label": "Bám theo những video cao view và có chỉ số VPH cao"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-5fd052/transcript.txt",
+  "sop_steps": [
+    "Ngách đầu là kênh truyện đam mê gia đình, vợ chồng, mẹ chồng nàng dâu, ít video nhưng view cao",
+    "Ngách hai là triết lý Nhật, một nhân vật thương hiệu đứng ra phát biểu, kênh mới lập hơn một tháng mà view đều",
+    "Ngách ba là kênh lớn làm từ 2024 với nhiều loại truyện; link kênh để ở phần mô tả",
+    "Làm bán content thì bám theo các video nhiều view của kênh mẫu, vì view cao thì chỉ số RPM cũng cao"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

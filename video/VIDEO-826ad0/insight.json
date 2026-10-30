@@ -1,0 +1,134 @@
+{
+  "sku": "VIDEO-826ad0",
+  "title": "Cách Để Không Bao Giờ Cạn Ý Tưởng Làm Video",
+  "actual_topic": "Quy trình sản xuất kịch bản Bán Content không bao giờ cạn ý tưởng theo nguyên tắc Shu-Ha-Ri (lọc 20 đề bài phổ biến nhất 3 tháng gần đây từ Dream 100), 3 phương pháp viết (Tổng hợp 50 báo/web/ngoại ngữ, Tự viết bằng ChatGPT, Làm lại đảo cấu trúc) cùng 6 lưu ý và 6 điều cấm kỵ sống còn cho Content.",
+  "category_group": "content_script",
+  "niche_primary": "Quy Trình Lên Kịch Bản Shu-Ha-Ri & 3 Phương Pháp Sáng Tạo Content",
+  "niche_id": "content_kich_ban_shu_ha_ri",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "tools_mentioned": [
+    "ChatGPT",
+    "YouTube",
+    "Google Drive",
+    "Facebook",
+    "Excel"
+  ],
+  "channels_mentioned": [
+    "@Web5Ngay",
+    "@SoiSangBrightSideVietnamese",
+    "@TruyenDinhSoan"
+  ],
+  "course_docs": [
+    {
+      "title": "Tài Liệu Gốc: Phương Pháp Sáng Tạo Content Không Bao Giờ Cạn Ý Tưởng (Pp sáng tạo content.pdf)",
+      "file": "assets/docs-huan/Pp_sang_tao_content.pdf",
+      "readFile": "assets/docs-huan/Pp_sang_tao_content.pdf.md",
+      "link": "https://drive.google.com/file/d/1giOf8XwVIDRVaAgmLp3XdoicAjMso95p/view"
+    },
+    {
+      "title": "Biểu Mẫu Gốc: Cách Đào Tạo ChatGPT & Prompt Viết Kịch Bản (Cách đào tạo ChatGPT.docx)",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/Cach_dao_tao_ChatGPT.docx",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/Cach_dao_tao_ChatGPT.docx.md",
+      "link": "https://drive.google.com/file/d/1TDdvSSYLzWPWI7EZBqAWOPWXAp1Os8ru/view"
+    },
+    {
+      "title": "Kịch Bản Mẫu: Content Mẫu GODA Story.docx",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/Content_Mau_GODA_Story.docx",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/Content_Mau_GODA_Story.docx.md",
+      "link": "https://drive.google.com/file/d/1OOmgWv3YmlP4zavlI0jp_yDRcpKSjA-H/view"
+    },
+    {
+      "title": "Bảng Excel Gốc: GODA - Kế Hoạch Nội Dung - Mẫu.xlsx",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/GODA_-_Ke_hoach_noi_dung_-_Mau.xlsx",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/GODA_-_Ke_hoach_noi_dung_-_Mau.xlsx.md",
+      "link": "https://drive.google.com/file/d/1I19aDJuy0odjI3x2wqwLZ7OejhneaczH/view"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Ôn lại cấu trúc Bán Content 50/50 và vai trò trung tâm của kịch bản trong luật Fair Use"
+    },
+    {
+      "time": "01:07",
+      "seconds": 67,
+      "label": "Nguyên tắc Shu-Ha-Ri: Chọn 20 đề bài đầu tiên từ 20 video phổ biến nhất trong 3 tháng của kênh mới nổi"
+    },
+    {
+      "time": "01:48",
+      "seconds": 108,
+      "label": "Bóc tách 4 thông số đề bài: Tiêu đề, Thumbnail, từ khóa và Đại ý nội dung muốn triển khai"
+    },
+    {
+      "time": "02:47",
+      "seconds": 167,
+      "label": "Phương pháp 1 (Tổng hợp): Gom chất liệu từ 50 tờ báo, website, Facebook Group và dịch từ nước ngoài"
+    },
+    {
+      "time": "03:49",
+      "seconds": 229,
+      "label": "Phương pháp 2 (Tự viết): Đưa câu lệnh mô tả và dàn ý cho ChatGPT viết theo giọng văn riêng"
+    },
+    {
+      "time": "04:14",
+      "seconds": 254,
+      "label": "Phương pháp 3 (Làm lại): Đảo thứ tự danh sách (Top 10) hoặc viết tương tự dựa trên video đã phổ biến"
+    },
+    {
+      "time": "04:58",
+      "seconds": 298,
+      "label": "Tư duy làm lại thông minh: Thay đổi từ khóa ngách và số lượng trên bộ khung tiêu đề đã chứng minh triệu view"
+    },
+    {
+      "time": "06:00",
+      "seconds": 360,
+      "label": "Kỹ thuật giữ chân khán giả: Cài yếu tố cảm xúc, quan điểm cá nhân, bài học và câu chuyện thu hút lên đầu kịch bản"
+    },
+    {
+      "time": "07:16",
+      "seconds": 436,
+      "label": "6 điều lưu ý dành cho Content: Quản lý audio, viết lời dẫn gây tò mò, chuyển đoạn logic và nâng cấp kỹ năng mỗi ngày"
+    },
+    {
+      "time": "08:28",
+      "seconds": 508,
+      "label": "6 điều cấm kỵ tuyệt đối: Không chép nguyên 1 bài báo, không copy lời dẫn, không lấy quá 60% nội dung 1 video"
+    }
+  ],
+  "key_takeaways": [
+    "Khi bắt đầu kênh mới, tuyệt đối không tự nghĩ ra đề tài theo cảm tính mà phải áp dụng triết lý Shu-Ha-Ri: lọc ra 20 video phổ biến nhất trong 3 tháng gần đây của các kênh mới nổi trong danh sách Dream 100 để làm 20 đề bài đầu tiên.",
+    "Một đề bài chuẩn trước khi bắt tay vào viết kịch bản phải trích xuất đủ 4 yếu tố từ video mẫu của đối thủ: Tiêu đề, Thumbnail, từ khóa chính và Đại ý nội dung muốn triển khai.",
+    "Có 3 phương pháp viết kịch bản không bao giờ cạn ý tưởng: (1) Tổng hợp từ 50 tờ báo/website/Facebook Group hoặc dịch từ nước ngoài; (2) Tự viết bằng cách giao dàn ý và giọng văn cho ChatGPT; (3) Làm lại dựa trên video phổ biến bằng cách đảo thứ tự (ví dụ từ Top 1-10 thành Top 10-1) và kết hợp ChatGPT viết mới.",
+    "Kịch bản là yếu tố quan trọng số 1 để hợp thức hóa luật Fair Use: phải cài các câu chuyện thu hút và đoạn lời dẫn (Hook) gây tò mò ngay đầu kịch bản, đồng thời lồng ghép cảm xúc, quan điểm cá nhân và bài học rút ra.",
+    "Người viết Content phải tuân thủ 6 lưu ý vận hành (trực tiếp quản lý chất lượng file audio, viết lời dẫn kích thích tò mò, nối đoạn logic trôi chảy, rõ ý đầy đủ, nâng cấp kỹ năng mỗi ngày, sáng tạo trong khuôn khổ chủ đề).",
+    "6 điều cấm kỵ sống còn đối với Content: Không lấy y nguyên 1 bài báo, không copy lời dẫn của bất kỳ video nào, không lấy quá 60% nội dung từ 1 video tham khảo, không viết lạc đề/lạc đối tượng, không lặp ý và phải kiểm duyệt kỹ trước khi đẩy lên Google Drive."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước nghiên cứu đề tài và sản xuất kịch bản Bán Content theo chuẩn GODA:",
+    "additional": [
+      "Lọc 20 đề bài đầu tiên theo nguyên tắc Shu (Sao chép có chọn lọc): Quét danh sách kênh Dream 100, chọn các kênh mới nổi trong 3 tháng gần đây và lấy ra 20 video nhiều view nhất kèm Tiêu đề, Thumbnail, từ khóa và Đại ý.",
+      "Thu thập chất liệu đa nguồn (Tăng đầu vào để tăng chất lượng đầu ra): Xem kỹ video đối thủ để hiểu lý do họ thành công, sau đó gom thông tin từ các báo, website, hội nhóm Facebook hoặc dịch tư liệu nước ngoài.",
+      "Triển khai viết kịch bản bằng 1 trong 3 phương pháp (Tổng hợp, Tự viết cùng ChatGPT, hoặc Làm lại đảo cấu trúc): Đảm bảo không lấy quá 60% thông tin từ bất kỳ một nguồn đơn lẻ nào.",
+      "Tối ưu mở bài (Hook) và chiều sâu cảm xúc: Đưa câu chuyện hấp dẫn và lời dẫn kích thích sự tò mò lên ngay 15-30 giây đầu tiên, cài thêm quan điểm cá nhân và bài học giá trị vào thân bài.",
+      "Rà soát 6 điều cấm kỵ và quản lý đầu ra Audio: Kiểm tra độ trôi chảy logic, loại bỏ các đoạn trùng lặp ý, xuất file lên Google Drive và trực tiếp nghiệm thu bản thu âm Audio khớp với tinh thần kịch bản."
+    ]
+  },
+  "sop_steps": [
+    "Lọc 20 đề bài đầu tiên theo nguyên tắc Shu (Sao chép có chọn lọc): Quét danh sách kênh Dream 100, chọn các kênh mới nổi trong 3 tháng gần đây và lấy ra 20 video nhiều view nhất kèm Tiêu đề, Thumbnail, từ khóa và Đại ý.",
+    "Thu thập chất liệu đa nguồn (Tăng đầu vào để tăng chất lượng đầu ra): Xem kỹ video đối thủ để hiểu lý do họ thành công, sau đó gom thông tin từ các báo, website, hội nhóm Facebook hoặc dịch tư liệu nước ngoài.",
+    "Triển khai viết kịch bản bằng 1 trong 3 phương pháp (Tổng hợp, Tự viết cùng ChatGPT, hoặc Làm lại đảo cấu trúc): Đảm bảo không lấy quá 60% thông tin từ bất kỳ một nguồn đơn lẻ nào.",
+    "Tối ưu mở bài (Hook) và chiều sâu cảm xúc: Đưa câu chuyện hấp dẫn và lời dẫn kích thích sự tò mò lên ngay 15-30 giây đầu tiên, cài thêm quan điểm cá nhân và bài học giá trị vào thân bài.",
+    "Rà soát 6 điều cấm kỵ và quản lý đầu ra Audio: Kiểm tra độ trôi chảy logic, loại bỏ các đoạn trùng lặp ý, xuất file lên Google Drive và trực tiếp nghiệm thu bản thu âm Audio khớp với tinh thần kịch bản."
+  ],
+  "avoid_flags": [
+    "Tuyệt đối không lấy y nguyên 1 bài báo hay 1 nguồn duy nhất làm kịch bản, và không bao giờ lấy quá 60% nội dung của bất kỳ video tham khảo nào.",
+    "Tuyệt đối không copy nguyên văn đoạn lời dẫn (Intro/Hook) của video đối thủ mà chỉ được tham khảo cách họ đặt vấn đề.",
+    "Không tự nghĩ đề tài viển vông khi mới làm kênh mà phải bám sát 20 video phổ biến nhất trong 3 tháng gần đây của các kênh mới nổi cùng ngách.",
+    "Không viết kịch bản lan man lạc đề, lạc tệp khán giả mục tiêu hoặc lặp đi lặp lại một ý ở nhiều đoạn để câu giờ."
+  ],
+  "source_transcript": "video/VIDEO-826ad0/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true
+}

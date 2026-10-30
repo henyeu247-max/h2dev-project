@@ -1,0 +1,149 @@
+{
+  "sku": "VIDEO-420b07",
+  "title": "Hiểu Rõ Các Nguồn VIEW chính của Youtube",
+  "actual_topic": "Giải mã chi tiết 6 nguồn lưu lượng truy cập (Traffic Sources) trong YouTube Analytics theo chuẩn khung 90 ngày (thực chiến trên kênh Phong Thủy 175,37 triệu hiển thị / 19,75 triệu view, kênh Bí Quyết Thành Công 556N sub và kênh Hoàng Mạnh Cường 196.780 view): (1) Các tính năng duyệt xem (Trang chủ 99,3% & Kênh đăng ký), (2) Video đề xuất (phân biệt Video đề xuất ở giữa và Video được đề xuất ở cột phải), (3) Tìm kiếm trên YouTube (khai thác gợi ý Autocomplete), (4) Danh sách phát & Mix tự động, (5) Các trang của kênh (Phi Nhung, Ngẫm Sự Đời) để săn ngách mới, và (6) Quảng cáo YouTube mồi đúng tệp đối thủ đạt tỷ lệ xem >40% để kích hoạt đề xuất.",
+  "category_group": "he_thong",
+  "niche_primary": "Phân tích nguồn lưu lượng truy cập (Traffic Sources) trên YouTube",
+  "niche_id": "phan_tich_nguon_view_youtube",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "tools_mentioned": [
+    "YouTube Studio",
+    "YouTube Analytics",
+    "YouTube Search Autocomplete",
+    "Google Ads",
+    "Google",
+    "Facebook",
+    "TikTok",
+    "Word",
+    "Excel"
+  ],
+  "channels_mentioned": [
+    "@biquyetthanhcong68",
+    "@HoangManhCuongMarketing",
+    "@NgamSuDoi",
+    "@PhiNhungOfficial"
+  ],
+  "course_docs": [
+    {
+      "title": "Sơ Đồ Làm Video YouTube (PDF)",
+      "file": "assets/docs-huan/Youtube_SO_DO_LAM_VIDEO.pdf",
+      "readFile": "assets/docs-huan/Youtube_SO_DO_LAM_VIDEO.pdf.md",
+      "link": "https://drive.google.com/file/d/10Rflw__1eebTxr6fxxy6ilKQ6YG0KJb-/view"
+    },
+    {
+      "title": "Quy Trình Làm Việc Siêu Chi Tiết (PDF)",
+      "file": "assets/docs-huan/Quy_trinh_lam_viec_SIEU_CHI_TIET.pdf",
+      "readFile": "assets/docs-huan/Quy_trinh_lam_viec_SIEU_CHI_TIET.pdf.md",
+      "link": "https://drive.google.com/file/d/16esGLNpghBWcWgIPlb1UH6YfgDEGw6YJ/view"
+    },
+    {
+      "title": "Phương Pháp Sáng Tạo Content Đa Góc Nhìn (PDF)",
+      "file": "assets/docs-huan/Pp_sang_tao_content.pdf",
+      "readFile": "assets/docs-huan/Pp_sang_tao_content.pdf.md",
+      "link": "https://drive.google.com/file/d/1giOf8XwVIDRVaAgmLp3XdoicAjMso95p/view"
+    },
+    {
+      "title": "GODA - Kế Hoạch Nội Dung Mẫu 2025 (XLSX)",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/GODA_-_Ke_hoach_noi_dung_-_Mau.xlsx",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/GODA_-_Ke_hoach_noi_dung_-_Mau.xlsx.md",
+      "link": "https://drive.google.com/file/d/1I19aDJuy0odjI3x2wqwLZ7OejhneaczH/view"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Nguyên lý gốc rễ 6 năm: Thấu hiểu nền tảng và thấu hiểu khách hàng",
+      "summary": "Giảng viên khẳng định dù nền tảng nào (YouTube, Google, Facebook, TikTok) lên xu hướng thì công thức gốc đúc kết suốt 6 năm vẫn nằm ở hai trụ cột bất biến: thấu hiểu cơ chế phân phối của nền tảng và thấu hiểu hành vi khách hàng trên nền tảng đó."
+    },
+    {
+      "time": "01:41",
+      "seconds": 101,
+      "label": "Bài học đợt quét chính sách năm 2019 (chủ đề Kids) và tư duy xây dựng doanh nghiệp đa kênh",
+      "summary": "Sau đợt YouTube siết chính sách toàn cầu năm 2019 khiến hàng loạt kênh chủ đề trẻ em (Kids) nút vàng, nút bạc hàng chục triệu sub bị xóa sổ, bài học sống còn là không làm lẻ mà phải xây dựng doanh nghiệp sở hữu nhiều kênh ở nhiều nhóm chủ đề khác nhau để bảo vệ dòng doanh thu."
+    },
+    {
+      "time": "03:13",
+      "seconds": 193,
+      "label": "Cách đọc bảng Nguồn lưu lượng truy cập và lý do bắt buộc chọn khung phân tích 90 ngày",
+      "summary": "Vào Số liệu phân tích -> Nội dung -> Cách người xem tìm thấy video của bạn -> Xem thêm; bắt buộc chuyển khung thời gian từ 28 ngày sang 90 ngày (3 tháng) để có đủ mẫu dữ liệu đánh giá độ bền của xu hướng (trend)."
+    },
+    {
+      "time": "04:16",
+      "seconds": 256,
+      "label": "Tính năng duyệt xem (81,69 triệu hiển thị / 9,63 triệu view) và lý do 70-80% người xem chưa đăng ký",
+      "summary": "Báo cáo 90 ngày của kênh Phong Thủy đạt 175.371.040 hiển thị (CTR 8,0%) và 19.755.752 view, riêng Tính năng duyệt xem chiếm 81.699.155 hiển thị (CTR 8,8%, 9.636.094 view); do 70-80% người xem trên Trang chủ chưa bấm đăng ký nên phải luôn kêu gọi đăng ký (CTA) trong video."
+    },
+    {
+      "time": "06:31",
+      "seconds": 391,
+      "label": "Bóc tách bên trong Tính năng duyệt xem: Trang chủ chiếm 99,3% (9.570.902 view) vs Kênh đăng ký (0,5%)",
+      "summary": "Khi nhấp vào bên trong Các tính năng duyệt xem, Trang chủ/màn hình chính đóng góp tới 81.004.243 hiển thị (CTR 8,9%) và 9.570.902 lượt xem (99,3%), trong khi mục Kênh đăng ký chỉ chiếm 45.079 lượt xem (0,5%)."
+    },
+    {
+      "time": "07:19",
+      "seconds": 439,
+      "label": "Nguồn Video đề xuất (32,8% - 38,5% view) & Phân biệt 'Video đề xuất' vs 'Video được đề xuất'",
+      "summary": "Qua ví dụ trực quan trên kênh Bí Quyết Thành Công (556N sub, video 1,47 triệu view), giảng viên quy ước rõ thuật ngữ: video khán giả đang xem ở giữa màn hình là 'Video đề xuất' (nguồn kéo traffic), còn cột video gợi ý bên phải là 'Video được đề xuất'."
+    },
+    {
+      "time": "08:25",
+      "seconds": 505,
+      "label": "Nguồn Tìm kiếm trên YouTube (520.082 - 1,55 triệu view) & Khai thác gợi ý Autocomplete",
+      "summary": "YouTube là công cụ tìm kiếm lớn thứ 2 thế giới và khác biệt với Google Search; ngoài việc đọc bảng Các từ khóa tìm kiếm hàng đầu (như 'phong thủy'), người làm kênh phải gõ từ khóa gốc (như 'bí quyết') lên thanh tìm kiếm YouTube để thu hoạch 12 cụm từ người dùng đang tìm thật."
+    },
+    {
+      "time": "09:30",
+      "seconds": 570,
+      "label": "Chiến lược Danh sách phát (Playlist) kẹp video triệu view lên đầu & Danh sách Mix tự động",
+      "summary": "Tạo danh sách phát lấy tên gần giống video đang triệu view cùng chủ đề, đặt video triệu view đó ở vị trí số 1 và xếp các video của kênh mình ở vị trí số 2 trở đi để kéo view dây chuyền; đồng thời tận dụng tính năng Mix tự động của máy học YouTube."
+    },
+    {
+      "time": "11:15",
+      "seconds": 675,
+      "label": "Nguồn Các trang của kênh (Phi Nhung, Ngẫm Sự Đời): Phát hiện đối thủ đang test ngách mới",
+      "summary": "Trong báo cáo Các trang của kênh (171.592 hiển thị, 4.483 view), sự xuất hiện của các kênh khác như Phi Nhung (16.108 hiển thị, 286 view) hay Ngẫm Sự Đời (6.288 hiển thị, 96 view, AVD 5:53) giúp phát hiện những kênh lớn đang đăng thử 1 video khác chủ đề và test thị trường thành công."
+    },
+    {
+      "time": "12:22",
+      "seconds": 742,
+      "label": "Cách chạy Quảng cáo YouTube mồi đúng tệp đạt tỷ lệ xem >40% để kích hoạt đề xuất tự nhiên",
+      "summary": "Minh họa bằng bảng số liệu kênh chạy Ads (196.780 tổng view: Quảng cáo 124.688 view kéo theo Tìm kiếm 31.677 view AVD 7:56 và Đề xuất 18.399 view AVD 11:02): muốn chạy quảng cáo ăn đề xuất phải nhắm mục tiêu hẹp thẳng vào video/kênh đối thủ và tối ưu nội dung để người xem xem trên 40% thời lượng."
+    }
+  ],
+  "key_takeaways": [
+    "Tư duy doanh nghiệp đa kênh phân tán rủi ro: Đợt quét chính sách toàn cầu năm 2019 xóa sổ hàng loạt kênh Kids hàng chục triệu sub chứng minh rằng muốn bền vững không thể làm lẻ một kênh, mà phải xây dựng hệ thống nhiều kênh thuộc các nhóm chủ đề khác nhau.",
+    "Chuẩn khung thời gian phân tích 90 ngày: Khi đọc Nguồn lưu lượng truy cập (Traffic Sources) trong YouTube Analytics, bắt buộc chọn mốc 90 ngày (3 tháng) thay vì 28 ngày để có đủ độ lớn mẫu thống kê đánh giá sức sống thật của xu hướng (trend).",
+    "Bản chất Tính năng duyệt xem (Browse Features) và bắt buộc có CTA đăng ký: Trên kênh Phong Thủy (19,75 triệu view / 90 ngày), Tính năng duyệt xem mang về 9,63 triệu view (trong đó Trang chủ chiếm tới 99,3% với 9,57 triệu view); vì 70–80% khán giả xem qua Trang chủ chưa bấm đăng ký nên phải luôn kêu gọi đăng ký kênh trong video.",
+    "Phân biệt chuẩn xác 'Video đề xuất' và 'Video được đề xuất': Video đang phát ở giữa màn hình là 'Video đề xuất' (nguồn giữ chân người xem), còn danh sách bên phải là 'Video được đề xuất'; nắm rõ danh sách các video đang đề xuất cho kênh mình là chìa khóa giải mã nguồn đến của khách hàng.",
+    "Chiến thuật Danh sách phát (Playlist) kẹp video triệu view và khai thác Các trang của kênh: Đặt 1 video triệu view đang lên xu hướng cùng chủ đề ở vị trí số 1 trong Playlist rồi chèn video của mình ở vị trí số 2 để hưởng sái luồng tự động phát; đồng thời soi mục 'Các trang của kênh' (như Phi Nhung, Ngẫm Sự Đời) để phát hiện sớm chủ đề mới mà kênh khác vừa test thành công.",
+    "Công thức chạy Quảng cáo YouTube kích hoạt Đề xuất (>40% Retention): Quảng cáo YouTube chỉ đẩy video vào luồng đề xuất tự nhiên khi khán giả xem trên 40% thời lượng (50–80%); cần chấp nhận giá thầu cao hơn để chạy quảng cáo mồi nhắm hẹp trực tiếp vào các video/kênh đối thủ thay vì chạy phủ rộng khiến tỷ lệ xem tụt xuống 5–10%."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước kiểm toán Nguồn lưu lượng truy cập (Traffic Sources) khung 90 ngày và tối ưu 6 nguồn view chính trên YouTube Studio.",
+    "additional": [
+      "Mở YouTube Studio -> Số liệu phân tích -> Nội dung -> Xem thêm tại mục 'Cách người xem tìm thấy video của bạn' và chuyển khung thời gian lên 90 ngày để đọc toàn cảnh tỷ trọng 6 nguồn view.",
+      "Tối ưu nguồn Duyệt xem (Trang chủ) và Tìm kiếm: chèn lời kêu gọi đăng ký kênh (CTA) định kỳ để thu nạp 70–80% người xem chưa đăng ký, đồng thời gõ từ khóa gốc lên thanh tìm kiếm YouTube để thu thập 10–12 cụm từ gợi ý (Autocomplete) làm chủ đề sản xuất.",
+      "Thiết lập Danh sách phát (Playlist) đón luồng: chọn 1 video đang triệu view cùng chủ đề đặt làm video số 1 trong Playlist, đặt tên Playlist tương đồng với video đó và xếp chuỗi video của kênh mình ở vị trí số 2, số 3.",
+      "Kiểm tra chi tiết mục 'Video đề xuất' và 'Các trang của kênh' hàng ngày để lập danh sách các video và kênh lạ đang kéo view cho mình, từ đó phát hiện các chủ đề đột biến mà đối thủ vừa test thị trường thành công để tách thành kênh mới.",
+      "Khi chạy Quảng cáo YouTube (Google Ads) mồi cho video mới, thiết lập nhắm mục tiêu hẹp trực tiếp vào danh sách video hoặc kênh đối thủ cùng tệp và tối ưu kịch bản mở đầu để giữ tỷ lệ thời lượng xem trung bình vượt ngưỡng 40%."
+    ]
+  },
+  "sop_steps": [
+    "Mở YouTube Studio -> Số liệu phân tích -> Nội dung -> Xem thêm tại mục 'Cách người xem tìm thấy video của bạn' và chuyển khung thời gian lên 90 ngày để đọc toàn cảnh tỷ trọng 6 nguồn view.",
+    "Tối ưu nguồn Duyệt xem (Trang chủ) và Tìm kiếm: chèn lời kêu gọi đăng ký kênh (CTA) định kỳ để thu nạp 70–80% người xem chưa đăng ký, đồng thời gõ từ khóa gốc lên thanh tìm kiếm YouTube để thu thập 10–12 cụm từ gợi ý (Autocomplete) làm chủ đề sản xuất.",
+    "Thiết lập Danh sách phát (Playlist) đón luồng: chọn 1 video đang triệu view cùng chủ đề đặt làm video số 1 trong Playlist, đặt tên Playlist tương đồng với video đó và xếp chuỗi video của kênh mình ở vị trí số 2, số 3.",
+    "Kiểm tra chi tiết mục 'Video đề xuất' và 'Các trang của kênh' hàng ngày để lập danh sách các video và kênh lạ đang kéo view cho mình, từ đó phát hiện các chủ đề đột biến mà đối thủ vừa test thị trường thành công để tách thành kênh mới.",
+    "Khi chạy Quảng cáo YouTube (Google Ads) mồi cho video mới, thiết lập nhắm mục tiêu hẹp trực tiếp vào danh sách video hoặc kênh đối thủ cùng tệp và tối ưu kịch bản mở đầu để giữ tỷ lệ thời lượng xem trung bình vượt ngưỡng 40%."
+  ],
+  "avoid_flags": [
+    "Chỉ xem thống kê Nguồn lưu lượng truy cập trong khung 28 ngày mặc định khiến mẫu dữ liệu quá ngắn, dẫn đến đánh giá sai độ bền của xu hướng (trend) và hiệu quả thực sự của từng nguồn traffic.",
+    "Lạm dụng mẹo cũ cắt ghép cảnh sốc/nhạy cảm 1–2 giây đầu kèm tiêu đề giật gân để câu kéo Danh sách phát — thủ thuật này hiện đã bị thuật toán YouTube quét và đánh dấu là spam.",
+    "Chạy quảng cáo YouTube phủ quá rộng bằng từ khóa chung chung hoặc không chọn lọc tệp khiến tỷ lệ thời lượng xem chỉ đạt 5–10%, bóp chết hoàn toàn khả năng video được thuật toán đề xuất tự nhiên.",
+    "Đặt toàn bộ sinh mệnh tài chính vào một kênh duy nhất hoặc một ngách nhạy cảm chính sách mà không xây dựng hệ thống đa kênh thuộc nhiều nhóm chủ đề để phân tán rủi ro."
+  ],
+  "source_transcript": "video/VIDEO-420b07/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true
+}

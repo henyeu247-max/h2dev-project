@@ -1,0 +1,86 @@
+{
+  "sku": "VIDEO-ff9be6",
+  "title": "XÁC ĐỊNH BAO NHIÊU VIDEO KHÔNG LÊN LÀ BỎ VÀ PHÂN TÍCH CHỈ SỐ ĐỂ GIỮ LÀM TIẾP",
+  "actual_topic": "XÁC ĐỊNH BAO NHIÊU VIDEO KHÔNG LÊN LÀ BỎ VÀ PHÂN TÍCH CHỈ SỐ ĐỂ GIỮ LÀM TIẾP",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Phân tích chỉ số & Đánh giá kênh",
+  "niche_id": "faceless-general",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "key_takeaways": [
+    "Tác giả mở đầu bằng một kênh mới có 57 video, ban đầu chỉ vài chục đến vài trăm view, nhưng nhờ kiên trì làm mấy chục video nên đến khoảng nửa tháng sau bắt đầu nổ view.",
+    "Theo kinh nghiệm test của tác giả, kênh không lên thì bỏ sau khoảng 20 đến 30 video, chứ không phải 100 hay vài trăm video như một số người dạy; bình thường 20 đến 25 video mà xác định không lên là bỏ.",
+    "Trong khoảng 10 đến 15 video đầu, xem lượt hiển thị của từng video: nếu thấp hoặc gần như không có thì bỏ, còn cao hoặc trung bình thì làm tiếp đến khoảng 30 video.",
+    "Tác giả mở phạm vi tiếp cận trên kênh thật: một video hơn 400.000 lượt hiển thị dù tỷ lệ click hơi thấp vẫn nên giữ làm tiếp, còn tỷ lệ click chỉ 1% hay 2% thì phải cải thiện thumbnail.",
+    "Chốt vấn đề: tỷ lệ click khoảng 8 đến 10 là ngon, lượt hiển thị cao mà ít view thì cải thiện tỷ lệ click, còn không có lượt hiển thị thì bỏ."
+  ],
+  "edit_sop": {
+    "primary": "Xác định khi nào bỏ kênh và giữ làm tiếp dựa trên lượt hiển thị và tỷ lệ click của từng video",
+    "additional": [
+      "Xem lượt hiển thị trong phạm vi tiếp cận của từng video, không xem chung cả kênh",
+      "Trong khoảng 10 đến 15 video đầu, lượt hiển thị thấp hoặc không có thì bỏ",
+      "Lượt hiển thị cao hoặc trung bình thì làm tiếp đến khoảng 30 video, nếu vẫn không lên thì bỏ",
+      "Có lượt hiển thị nhưng ít view tức là tỷ lệ click thấp thì phải cải thiện thumbnail",
+      "Tỷ lệ click khoảng 8 đến 10 là tốt, khoảng 8 đã ổn"
+    ]
+  },
+  "avoid_flags": [
+    "Không làm cả trăm hay vài trăm video mới bỏ, vì làm đến mức đó thì đã nản bỏ YouTube",
+    "Video chỉ có vài chục lượt hiển thị thì nên bỏ, không tiếp tục làm tốn thời gian",
+    "Nội dung lấy lại hay sao chép đơn thuần thì không bao giờ hot được, phải tìm cách edit lại cho hợp lý"
+  ],
+  "tools_mentioned": [],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Câu hỏi: làm bao nhiêu video không lên thì bỏ, phân tích chỉ số để giữ làm tiếp"
+    },
+    {
+      "time": "00:21",
+      "seconds": 21,
+      "label": "Ví dụ kênh học viên kiên trì: ban đầu vài chục view, hơn một tháng sau mới nổ"
+    },
+    {
+      "time": "01:51",
+      "seconds": 111,
+      "label": "Phân tích kênh: mới 57 video mới lên, cần kiên trì"
+    },
+    {
+      "time": "02:08",
+      "seconds": 128,
+      "label": "Quan điểm: thử khoảng 20-30 video; 20-25 video mà không lên thì xác định bỏ"
+    },
+    {
+      "time": "03:23",
+      "seconds": 203,
+      "label": "Xem chỉ số phạm vi tiếp cận: lượt hiển thị theo từng video, ví dụ hơn 400.000 lượt hiển thị"
+    },
+    {
+      "time": "03:44",
+      "seconds": 224,
+      "label": "Hiển thị cao nhưng tỷ lệ click thấp thì cải thiện thêm; không có lượt hiển thị thì bỏ"
+    },
+    {
+      "time": "04:56",
+      "seconds": 296,
+      "label": "Tỷ lệ click 8-10% là ngon; theo dõi thường xuyên số liệu phân tích"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-ff9be6/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Xem lượt hiển thị trong phạm vi tiếp cận của từng video, không xem chung cả kênh",
+    "Trong khoảng 10 đến 15 video đầu, lượt hiển thị thấp hoặc không có thì bỏ",
+    "Lượt hiển thị cao hoặc trung bình thì làm tiếp đến khoảng 30 video, nếu vẫn không lên thì bỏ",
+    "Có lượt hiển thị nhưng ít view tức là tỷ lệ click thấp thì phải cải thiện thumbnail",
+    "Tỷ lệ click khoảng 8 đến 10 là tốt, khoảng 8 đã ổn"
+  ],
+  "last_verified_at": "2026-10-09T06:30:00Z"
+}

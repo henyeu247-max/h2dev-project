@@ -1,0 +1,99 @@
+{
+  "sku": "VIDEO-e706d3",
+  "title": "Khắc phục lỗi khi tạo tài khoản adsense",
+  "actual_topic": "Quy trình khắc phục lỗi không được phê duyệt Bước 2 Google AdSense (GA) và bộ 4 điều kiện chuẩn (CCCD mới + SĐT mới + Gmail mới ngâm 12–48h + Hồ sơ khách/Ẩn danh) để tự tạo tài khoản GA New",
+  "category_group": "ha_tang",
+  "niche_primary": "Quản Trị AdSense & Hạ Tầng Kênh",
+  "niche_id": "adsense_ops",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "tools_mentioned": [
+    "Google AdSense",
+    "Gmail",
+    "Cốc Cốc",
+    "Notepad"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "00:00 — Thực trạng siết duyệt Bước 2 Google AdSense (GA New) trong 3 tháng gần đây và nguyên nhân lỗi dây chuyền giữa các tài khoản"
+    },
+    {
+      "time": "00:20",
+      "seconds": 20,
+      "label": "00:20 — Biến động giá tài khoản GA New trên thị trường: Tăng vọt từ 20.000đ–100.000đ lên 1.100.000đ–1.200.000đ/tài khoản"
+    },
+    {
+      "time": "00:40",
+      "seconds": 40,
+      "label": "00:40 — Thao tác bắt buộc khi bị từ chối duyệt: Vào Cài đặt > Thông tin tài khoản > Đóng tài khoản AdSense bị lỗi trên thiết bị cũ"
+    },
+    {
+      "time": "01:11",
+      "seconds": 71,
+      "label": "01:10 — Cách ly môi trường khi tạo GA mới: Chuyển sang thiết bị khác hoặc mở Hồ sơ khách (Guest Profile) / Thẻ ẩn danh (Incognito)"
+    },
+    {
+      "time": "01:22",
+      "seconds": 82,
+      "label": "01:22 — Checklist 3 nguyên liệu sạch bắt buộc: 1 CCCD mới (mượn người thân) + 1 Số điện thoại mới (nhận mã PIN) + 1 Gmail mới chưa từng tạo AdSense"
+    },
+    {
+      "time": "02:16",
+      "seconds": 136,
+      "label": "02:15 — Nguyên tắc đồng bộ danh tính: Gắn (Add) trực tiếp số điện thoại của người đứng tên CCCD vào Gmail mới chưa từng đăng ký GA"
+    },
+    {
+      "time": "02:30",
+      "seconds": 150,
+      "label": "02:30 — Quy tắc ngâm Gmail mới từ 12 đến 48 giờ trên thiết bị hoặc treo máy trên tab ẩn danh trước khi bấm đăng ký AdSense"
+    }
+  ],
+  "key_takeaways": [
+    "Khi tạo tài khoản Google AdSense (GA) mà bị báo lỗi 'Tài khoản của bạn chưa được phê duyệt' ở Bước 2, nếu không đóng ngay tài khoản GA lỗi đó trên thiết bị hiện tại thì toàn bộ các tài khoản GA tạo phía sau sẽ bị lỗi dây chuyền hàng loạt.",
+    "Do Google siết chặt thuật toán duyệt Bước 2 trong 3 tháng gần đây, giá một tài khoản GA New đã tăng vọt từ mức 20.000đ–100.000đ trước kia lên tới 1.100.000đ–1.200.000đ/con, vì vậy nắm vững quy trình tự tạo GA sạch giúp tiết kiệm chi phí hạ tầng rất lớn.",
+    "Cách xử lý tài khoản GA bị từ chối trên máy cũ: Truy cập thẳng vào Google AdSense > Tài khoản > Cài đặt > Thông tin tài khoản > nhấn 'Đóng tài khoản' (Close account) để hủy hoàn toàn hồ sơ lỗi.",
+    "Bộ 3 nguyên liệu sạch bắt buộc khi đăng ký GA New mới: (1) 1 Căn cước công dân (CCCD) mới chưa từng đăng ký AdSense (mượn người nhà, bạn bè), (2) 1 Số điện thoại mới của chính người đứng tên CCCD đó để sau này nhận mã PIN, và (3) 1 Gmail mới tinh chưa từng mở AdSense và đã gắn sẵn số điện thoại mới vào.",
+    "Quy tắc ngâm thiết bị 12–48 giờ: Phải đăng nhập Gmail mới trên một thiết bị khác hoặc mở Hồ sơ khách (Guest Profile) / Tab ẩn danh (giữ máy bật liên tục) từ 12 đến 48 giờ trước khi tiến hành bấm đăng ký tài khoản Google AdSense."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước đóng tài khoản Google AdSense lỗi Bước 2 và khởi tạo tài khoản GA New sạch 100%",
+    "additional": [
+      "Đăng nhập vào tài khoản Google AdSense đang bị báo lỗi 'Tài khoản của bạn chưa được phê duyệt' trên thiết bị hiện tại, vào mục Tài khoản > Cài đặt > Thông tin tài khoản và nhấn Đóng tài khoản để cắt đứt vết trùng lặp",
+      "Chuẩn bị bộ hồ sơ danh tính mới hoàn toàn gồm 1 Căn cước công dân (CCCD) mới của người thân/bạn bè chưa từng đăng ký AdSense và 1 số điện thoại mới của chính người đó để nhận mã PIN bưu điện",
+      "Chuẩn bị 1 tài khoản Gmail mới chưa từng đăng ký Google AdSense bao giờ và thêm (Add) trực tiếp số điện thoại mới ở bước 2 vào phần bảo mật/khôi phục của Gmail này",
+      "Chuyển sang một thiết bị khác (máy tính/điện thoại sạch) hoặc mở Hồ sơ khách (Guest Profile) / Tab ẩn danh (Incognito) trên trình duyệt để đăng nhập tài khoản Gmail mới",
+      "Ngâm phiên đăng nhập Gmail mới trên thiết bị sạch (hoặc giữ nguyên cửa sổ ẩn danh không tắt máy) liên tục từ 12 đến 48 giờ để tạo độ tin cậy thiết bị rồi mới truy cập Google AdSense bấm đăng ký GA mới"
+    ]
+  },
+  "sop_steps": [
+    "Đăng nhập vào tài khoản Google AdSense đang bị báo lỗi 'Tài khoản của bạn chưa được phê duyệt' trên thiết bị hiện tại, vào mục Tài khoản > Cài đặt > Thông tin tài khoản và nhấn Đóng tài khoản để cắt đứt vết trùng lặp",
+    "Chuẩn bị bộ hồ sơ danh tính mới hoàn toàn gồm 1 Căn cước công dân (CCCD) mới của người thân/bạn bè chưa từng đăng ký AdSense và 1 số điện thoại mới của chính người đó để nhận mã PIN bưu điện",
+    "Chuẩn bị 1 tài khoản Gmail mới chưa từng đăng ký Google AdSense bao giờ và thêm (Add) trực tiếp số điện thoại mới ở bước 2 vào phần bảo mật/khôi phục của Gmail này",
+    "Chuyển sang một thiết bị khác (máy tính/điện thoại sạch) hoặc mở Hồ sơ khách (Guest Profile) / Tab ẩn danh (Incognito) trên trình duyệt để đăng nhập tài khoản Gmail mới",
+    "Ngâm phiên đăng nhập Gmail mới trên thiết bị sạch (hoặc giữ nguyên cửa sổ ẩn danh không tắt máy) liên tục từ 12 đến 48 giờ để tạo độ tin cậy thiết bị rồi mới truy cập Google AdSense bấm đăng ký GA mới"
+  ],
+  "avoid_flags": [
+    "Tuyệt đối không giữ nguyên tài khoản Google AdSense đang bị lỗi chưa phê duyệt trên máy rồi cố tạo tiếp các tài khoản GA khác vì sẽ gây chết dây chuyền toàn bộ các GA phía sau",
+    "Không dùng lại Gmail cũ từng đăng ký AdSense thất bại hoặc số điện thoại đã liên kết với các hồ sơ AdSense bị từ chối trước đó",
+    "Không vừa đăng nhập Gmail mới vào máy lạ đã bấm tạo Google AdSense ngay lập tức mà bỏ qua thời gian ngâm thiết bị tối thiểu từ 12 đến 48 giờ",
+    "Không dùng số điện thoại ảo không liên lạc được khi đăng ký GA vì bưu tá sẽ gọi vào đúng số điện thoại này khi giao thư chứa mã PIN xác minh địa chỉ"
+  ],
+  "course_docs": [
+    {
+      "title": "Quy Trình Chuẩn & Checklist Khắc Phục Lỗi Bước 2 Khi Tạo Tài Khoản Google AdSense",
+      "path": "assets/docs-dgmd/VIDEO-e706d3/master_prompt.md",
+      "type": "prompt",
+      "file": "assets/docs-dgmd/VIDEO-e706d3/master_prompt.md"
+    }
+  ],
+  "analysis_method": " multimodal_verified_gpu_fp16_vision ",
+  "source_transcript": "video/VIDEO-e706d3/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "last_verified_at": "2026-10-24T06:22:00Z"
+}

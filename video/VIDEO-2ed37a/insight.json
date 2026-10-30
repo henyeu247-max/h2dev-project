@@ -1,0 +1,76 @@
+{
+  "sku": "VIDEO-2ed37a",
+  "title": "NGÁCH THỊ TRƯỜNG PHILIPPINES + VIEW HOA KỲ ĐANG CỰC TRENDS VÀ CẠNH TRANH THẤP",
+  "actual_topic": "NGÁCH THỊ TRƯỜNG PHILIPPINES + VIEW HOA KỲ ĐANG CỰC TRENDS VÀ CẠNH TRANH THẤP",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Bán Content & Phát Triển Kênh",
+  "niche_id": "faceless-general",
+  "target_market": "Hoa Kỳ (US) / Philippines",
+  "market_code": "US,PH",
+  "key_takeaways": [
+    "Ngách thị trường Philippines kết hợp kéo view từ kiều bào tại Hoa Kỳ (US) là một mỏ vàng ít cạnh tranh với RPM rất tốt.",
+    "Người Philippines cực kỳ thành thạo tiếng Anh, có thói quen lướt YouTube giải trí cao và rất cởi mở với các nội dung tò mò, khám phá tri thức.",
+    "Kênh đối thủ @HinognaKaalamanYT khai thác xuất sắc các bí ẩn khoa học, sự thật kỳ lạ về cơ thể người và thế giới tự nhiên.",
+    "Sử dụng tiếng Anh hoặc Tagalog chuẩn giọng bản xứ kết hợp các câu hỏi giật gân ngay tiêu đề để kích thích tỷ lệ nhấp (CTR > 10%).",
+    "Tư liệu hình ảnh dễ sản xuất, tận dụng kho B-roll miễn phí kết hợp đồ họa chuyển động đơn giản trên CapCut."
+  ],
+  "edit_sop": {
+    "primary": "Phân tích kênh mua lại đổi ngách sang bí mật chỗ ngồi hãng hàng không, thị trường Hoa Kỳ",
+    "additional": [
+      "Dịch tiêu đề video của kênh ra để hiểu nội dung",
+      "Chú ý từ khóa trong tiêu đề của kênh đối thủ",
+      "Làm theo ngách này, bám theo cách đặt tiêu đề và từ khóa",
+      "Mở đường link kênh mẫu tham khảo được đặt sẵn ở dưới phần mô tả"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng lo sợ khi thấy kênh đối thủ có nhiều người đăng ký và tích xanh vì thực chất đó là kênh mua lại và mới đổi sang ngách mới",
+    "Tránh bỏ qua các từ khóa quan trọng nằm ngay trong tiêu đề video của kênh đối thủ khi phân tích ngách thị trường Hoa Kỳ"
+  ],
+  "tools_mentioned": [
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@HinognaKaalamanYT"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "00:43",
+      "seconds": 43,
+      "label": "Nhưng mà cũng có lẹt đẹt"
+    },
+    {
+      "time": "01:06",
+      "seconds": 66,
+      "label": "2, 4, 6, 8 thì mới có tầm 8-10 video thôi mọi người"
+    },
+    {
+      "time": "01:46",
+      "seconds": 106,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "02:06",
+      "seconds": 126,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-2ed37a/transcript.txt",
+  "sop_steps": [
+    "Dịch tiêu đề video của kênh ra để hiểu nội dung",
+    "Chú ý từ khóa trong tiêu đề của kênh đối thủ",
+    "Làm theo ngách này, bám theo cách đặt tiêu đề và từ khóa",
+    "Mở đường link kênh mẫu tham khảo được đặt sẵn ở dưới phần mô tả"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

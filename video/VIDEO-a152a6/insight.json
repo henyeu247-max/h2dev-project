@@ -1,0 +1,142 @@
+{
+  "sku": "VIDEO-a152a6",
+  "title": "Quy Trình Sản Xuất Video Bán Content",
+  "Track": "T2",
+  "module_id": "DGMD-M04",
+  "duration_sec": 1437.08,
+  "Step": "M04.4 — Quy trình sản xuất video Bán Content kết hợp nhân vật nổi tiếng (Adam Rose Reaction)",
+  "Validation": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "Action": "Dùng Google Dịch chuyển từ khóa ('gái xinh xây dựng' / 'cô gái xây dựng') sang tiếng Trung phồn thể để tìm và tải nguồn video ngắn trên Douyin bằng trình duyệt Cốc Cốc (tổng thời lượng trên 8 phút) + tải video Shorts biểu cảm của diễn viên Adam Rose (@realadamrose) -> Đưa vào CapCut PC chuyển tỷ lệ 16:9, phóng đồng loạt kích cỡ 174%, bật 'Nền -> Mờ', chèn xen kẽ cảnh Adam Rose, tắt sạch âm thanh có nhạc bản quyền (chỉ giữ tiếng động hiện trường như tiếng xúc cát) rồi xuất bản nháp -> Gửi Master Prompt vào Google Gemini và tải video nháp lên để AI phân tích từng mốc giây (00:00-00:03, 00:03-00:06...) và viết câu bình luận meme tiếng Anh (Fair Use) -> Chèn text tiếng Anh vào CapCut, ghép nhạc nền hài hước tạo từ Suno AI ('Mischief in Pocket.wav' + 'Chuẩn hóa âm lượng'), thêm avatar mặt nạ tròn góc trái, chèn hiệu ứng âm thanh tiếng cười (CapCut / myinstants.com), gắn bộ lọc 4K + chuyển cảnh 'Trượt góc', và thiết kế Thumbnail 1920x1080 trên Picsart.",
+  "summary": "Bài 14 hướng dẫn toàn diện quy trình sản xuất dòng video Bán Content (Semi-Content) kết hợp nhân vật nổi tiếng Adam Rose (@realadamrose — 6,26 triệu người đăng ký, có video Shorts đạt 257 triệu lượt xem) theo mô hình các kênh đối thủ như Smart Pocket (@Smartpocket-r9b — 533 video, có video dài 1 tiếng đạt 2 triệu lượt xem với RPM rất cao). Quy trình đi từ khâu tìm nguồn ngách thu hút nam giới trên Douyin bằng từ khóa tiếng Trung phồn thể, tải hàng loạt qua trình duyệt Cốc Cốc, xử lý khung 16:9 (tỷ lệ 174%, nền mờ) và cắt ghép cảnh phản ứng Adam Rose trên CapCut PC, đến việc dùng Google Gemini đọc trực tiếp file video theo Master Prompt để xuất bảng câu bình luận tiếng Anh hài hước theo từng mốc giây nhằm đáp ứng yếu tố bình phẩm Fair Use, kết hợp nhạc nền Suno AI, hiệu ứng âm thanh myinstants.com và làm Thumbnail điểm nhấn trên Picsart.",
+  "key_takeaways": [
+    "Chiến thuật vận hành dòng kênh Bán Content (Semi-Content): Dù có xác suất bị tắt kiếm tiền theo đợt quét nhưng RPM cực kỳ cao (đặc biệt với video dài trên 8 phút đến 1 tiếng đạt hàng triệu views như kênh @Smartpocket-r9b), do đó nên làm song song 5–10 kênh (thậm chí 20–30 kênh) để thu hoạch doanh thu lớn trong chu kỳ 3–5 tháng.",
+    "Cách khai thác nguồn video gốc không cạn kiệt: Chọn chủ đề đánh trúng tâm lý tò mò của khán giả nam (Gái xinh kết hợp Xây dựng, Võ thuật, Nội trợ, Cô giáo...), dùng Google Dịch sang tiếng Trung phồn thể để tìm trên Douyin, đăng nhập trình duyệt Cốc Cốc để tải trực tiếp không dính logo và bấm Like vào từng video đã tải để đánh dấu tránh trùng lặp.",
+    "Kỹ thuật xử lý hình ảnh & âm thanh gốc trên CapCut PC: Gom đủ nguồn video tổng thời lượng trên 8 phút, chuyển khung hình sang 16:9, chọn tất cả clip chỉnh Tỷ lệ (Scale) lên đúng 174% và bật 'Nền -> Mờ' (Blur); cắt lấy phần nhân vật biểu cảm Adam Rose chèn xen kẽ; bắt buộc tắt sạch âm thanh các clip gốc có nhạc nền bản quyền (chỉ giữ lại tiếng động thực tế như tiếng xúc cát).",
+    "Ứng dụng Google Gemini để lách luật Fair Use (Bình phẩm nội dung): Gửi trước 'Master Prompt' vào Google Gemini rồi tải trực tiếp file video đã cắt ghép lên để AI xem từng giây và xuất bảng câu chữ tiếng Anh hài hước (kèm dịch nghĩa tiếng Việt) theo đúng từng mốc 00:00–00:03, 00:03–00:06... để dán làm phụ đề bình phẩm trực tiếp trên màn hình.",
+    "Gia tăng yếu tố tự biên tập (High-Edit Value) & Thumbnail: Tạo nhạc nền hài hước không lời trên Suno AI và bật 'Chuẩn hóa âm lượng', chèn thêm avatar kênh cắt Mặt nạ Hình tròn ở góc trên bên trái, đắp thêm tiếng cười từ kho CapCut hoặc myinstants.com, phủ bộ lọc '4K' + chuyển tiếp 'Trượt góc', và thiết kế Thumbnail 1920x1080 trên Picsart ghép 2 ảnh cô gái công trường + 1 ảnh Adam Rose (tải từ Pinterest) kèm vòng tròn đỏ & mũi tên đỏ."
+  ],
+  "tools_mentioned": [
+    "Google Docs",
+    "Picsart",
+    "CapCut",
+    "Suno AI",
+    "Gemini",
+    "Google Dịch",
+    "Douyin",
+    "Cốc Cốc",
+    "Pinterest",
+    "ChatGPT"
+  ],
+  "prompts_shown": [
+    "Master Prompt phân tích video cho Google Gemini: 'BẠN LÀ CHUYÊN GIA PHÂN TÍCH VIDEO NGẮN VIRAL, BIÊN TẬP VIÊN CAPTION HÀI HƯỚC VÀ ĐẠO DIỄN NHỊP DỰNG CHO TIKTOK / YOUTUBE SHORTS / REELS... Tạo ra các câu chữ (on-screen text / phụ đề chèn vào video) bằng TIẾNG ANH thật tự nhiên, ngắn gọn, hài hước, đúng ngữ cảnh từng cảnh trong video. Gợi ý thời điểm chèn chữ theo mốc giây cụ thể (00:00 - 00:03, 00:03 - 00:06...)...'",
+    "Các câu text tiếng Anh Gemini xuất ra và được chèn trực tiếp vào video mẫu: Cảnh 1 (00:00-00:03): 'When you accidentally apply for construction but dressed for a party.' | Cảnh 2 (00:03-00:06): 'Work hard, stay glamorous.' | Transition (00:06-00:07): 'Meanwhile, the site manager...' | Các cảnh sau: 'Is this even legal?', 'DIY but make it fashion.', 'Professional tool juggling', 'Bro is questioning his whole career', 'Just another normal day at work.'",
+    "Prompt số 1 (trong bộ 10 Prompt) tạo nhạc nền hài hước trên Suno AI: 'Create a funny, upbeat, quirky instrumental background music track with playful pizzicato strings, light marimba, bouncy bass, cheeky woodwinds, and subtle cartoon percussion, fast-medium tempo, cheerful and mischievous mood, clean modern mix, loop-friendly, no vocals.'"
+  ],
+  "channels_mentioned": [
+    "@realadamrose",
+    "@Smartpocket-r9b",
+    "@Adam-RoseFans1"
+  ],
+  "CourseDocs": "assets/docs-dgmd/VIDEO-a152a6/master_prompt.md",
+  "course_docs": [
+    {
+      "title": "Bộ Master Prompt Gemini & 10 Prompt Nhạc Nền Hài Hước Suno AI (Chuẩn Hóa)",
+      "path": "assets/docs-dgmd/VIDEO-a152a6/master_prompt.md",
+      "type": "prompt",
+      "file": "assets/docs-dgmd/VIDEO-a152a6/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-a152a6/master_prompt.md",
+      "link": "https://docs.google.com/document/d/17fkHWAzYnl-TIx7C8GyHIcJIldewQKtlmSTbogtXvJ8/edit?usp=sharing"
+    },
+    {
+      "title": "Tài Liệu Bán Content Gốc Đính Kèm Khóa Học (doc_1.txt)",
+      "path": "assets/docs-dgmd/VIDEO-a152a6/doc_1.txt",
+      "type": "doc",
+      "file": "assets/docs-dgmd/VIDEO-a152a6/doc_1.txt",
+      "readFile": "assets/docs-dgmd/VIDEO-a152a6/doc_1.txt",
+      "link": "https://docs.google.com/document/d/17fkHWAzYnl-TIx7C8GyHIcJIldewQKtlmSTbogtXvJ8/edit?usp=sharing"
+    },
+    {
+      "title": "Bản Text Master Prompt Gốc (master_prompt.txt)",
+      "path": "assets/docs-dgmd/VIDEO-a152a6/master_prompt.txt",
+      "type": "prompt",
+      "file": "assets/docs-dgmd/VIDEO-a152a6/master_prompt.txt",
+      "readFile": "assets/docs-dgmd/VIDEO-a152a6/master_prompt.txt",
+      "link": "https://docs.google.com/document/d/17fkHWAzYnl-TIx7C8GyHIcJIldewQKtlmSTbogtXvJ8/edit?usp=sharing"
+    }
+  ],
+  "Homework": "1. Dùng Google Dịch chuyển từ khóa ('cô gái xây dựng' / 'gái xinh võ thuật'...) sang tiếng Trung phồn thể, lên Douyin bằng trình duyệt Cốc Cốc tải đủ nguồn clip dài tổng cộng trên 8 phút + tải video Shorts biểu cảm của Adam Rose (@realadamrose).\n2. Đưa vào CapCut PC chuyển khung 16:9, chỉnh đồng loạt tỷ lệ 174% + Nền Mờ, cắt ghép cảnh phản ứng Adam Rose xen kẽ, tắt toàn bộ âm thanh gốc có nhạc bản quyền và xuất video nháp.\n3. Gửi Master Prompt cho Google Gemini rồi tải video nháp lên để lấy bảng câu bình luận tiếng Anh theo từng mốc giây, chèn text vào CapCut kèm nhạc nền Suno AI, hiệu ứng tiếng cười, avatar mặt nạ tròn, bộ lọc 4K + chuyển cảnh 'Trượt góc' và làm Thumbnail 1920x1080 trên Picsart.",
+  "edit_sop": {
+    "primary": "Quy trình 5 bước thực chiến: Bài 14 hướng dẫn toàn diện quy trình sản xuất dòng video Bán Content (Semi-Content) kết hợp nhân vật nổi tiếng Adam Rose (@realadamrose —...",
+    "additional": [
+      "Sử dụng Google Dịch chuyển từ khóa chủ đề thu hút (như 'gái xinh xây dựng', 'cô gái xây dựng') sang tiếng Trung phồn thể để tìm nguồn trên Douyin, đăng nhập trình duyệt Cốc Cốc tải trực tiếp về máy (tổng độ dài trên 8 phút) và bấm Like vào từng video đã lấy để không tải trùng ở các video sau.",
+      "Truy cập kênh YouTube @realadamrose (mục Shorts -> Phổ biến) tải các đoạn biểu cảm của nhân vật Adam Rose; đưa toàn bộ nguyên liệu vào CapCut PC, đổi tỷ lệ khung hình sang 16:9, bôi đen tất cả clip gốc chỉnh 'Tỷ lệ' (Scale) lên đúng 174% và bật 'Nền -> Mờ' (Blur), sau đó cắt chèn cảnh Adam Rose xen kẽ và tắt sạch các rãnh âm thanh có nhạc bản quyền rồi xuất file nháp.",
+      "Mở Google Gemini (gemini.google.com), gửi toàn bộ văn bản 'Master Prompt' cho AI ghi nhớ trước rồi tải file video nháp lên để Gemini phân tích từng khung hình và xuất bảng câu bình luận tiếng Anh hài hước theo đúng mốc giây (kèm bản dịch tiếng Việt đối chiếu).",
+      "Quay lại CapCut PC dán từng câu text tiếng Anh vào đúng mốc giây tương ứng (00:00-00:03, 00:03-00:06...) có bật phông nền chữ mờ; tạo nhạc nền hài hước bằng 1 trong 10 prompt trên Suno AI đưa vào timeline và bấm 'Chuẩn hóa âm lượng'.",
+      "Gia tăng độ sâu biên tập (Edit) bằng cách chèn ảnh nhân vật cắt 'Mặt nạ -> Hình tròn' làm logo ở góc trái trên cùng, thêm hiệu ứng âm thanh tiếng cười từ CapCut hoặc trang myinstants.com, phủ bộ lọc màu '4K', gắn chuyển tiếp 'Trượt góc' cho toàn bộ các điểm cắt, và lên Picsart thiết kế Thumbnail 1920x1080 ghép 2 ảnh cô gái công trường + 1 ảnh Adam Rose (tải từ Pinterest) kèm nhãn dán vòng tròn đỏ & mũi tên đỏ."
+    ]
+  },
+  "avoid_flags": [
+    "Giữ nguyên nhạc nền gốc của các video tải từ Douyin/TikTok mà không tắt âm thanh trên CapCut PC, khiến video chắc chắn bị đánh bản quyền hoặc tắt kiếm tiền ngay lập tức (chỉ được giữ lại âm thanh tiếng động thật như tiếng xúc cát).",
+    "Kéo phóng to từng đoạn video dọc bằng tay trên màn hình Preview thay vì bôi đen tất cả clip rồi nhập thông số 'Tỷ lệ = 174%' kết hợp 'Nền -> Mờ', làm khung hình các đoạn sau bị lệch kích cỡ lộn xộn.",
+    "Ghép nối các đoạn video thô lại với nhau mà không dùng Google Gemini phân tích chèn các câu chữ bình phẩm tiếng Anh (Commentary/Meme Text) và không thêm mặt nạ logo, bộ lọc màu 4K, chuyển cảnh hay hiệu ứng âm thanh, dẫn đến vi phạm lỗi nội dung sử dụng lại (Reused Content) không đủ yếu tố Fair Use.",
+    "Quên nhấn nút Like (Thích) trên Douyin cho những video đã tải hoặc không đăng nhập trình duyệt Cốc Cốc khi cào nguồn, dẫn đến không hiện nút tải nhanh và lấy trùng lặp lại cùng một clip nhiều lần trên một kênh."
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu chủ đề Bán Content kết hợp nhân vật nổi tiếng (@realadamrose) & khảo sát kênh mẫu (@Smartpocket-r9b đạt 2 triệu views)"
+    },
+    {
+      "time": "02:22",
+      "seconds": 142,
+      "label": "Dịch từ khóa sang tiếng Trung phồn thể ('cô gái xây dựng'), dùng trình duyệt Cốc Cốc tải nguồn video trên Douyin và tải Shorts Adam Rose"
+    },
+    {
+      "time": "06:47",
+      "seconds": 407,
+      "label": "Đưa video vào CapCut PC: chuyển khung 16:9, phóng đồng loạt tỷ lệ 174%, bật Nền Mờ, chèn cảnh Adam Rose và tắt sạch nhạc nền bản quyền"
+    },
+    {
+      "time": "11:40",
+      "seconds": 700,
+      "label": "Copy Master Prompt gửi vào Google Gemini và tải video nháp lên để AI phân tích từng giây và viết câu bình luận tiếng Anh (Fair Use)"
+    },
+    {
+      "time": "13:06",
+      "seconds": 786,
+      "label": "Chèn các câu text tiếng Anh theo từng mốc giây (00:00-00:03, 00:03-00:06...) vào CapCut PC với phông nền chữ bán trong suốt"
+    },
+    {
+      "time": "15:38",
+      "seconds": 938,
+      "label": "Tải hiệu ứng âm thanh tiếng cười và ghép hoàn thiện trên CapCut"
+    },
+    {
+      "time": "17:39",
+      "seconds": 1059,
+      "label": "Tải hiệu ứng âm thanh tiếng cười và ghép hoàn thiện trên CapCut"
+    },
+    {
+      "time": "19:51",
+      "seconds": 1191,
+      "label": "Thiết kế Thumbnail 1920x1080 trên Picsart: Ghép 2 cảnh cô gái công trường + ảnh Adam Rose (tải từ Pinterest) kèm vòng tròn đỏ & mũi tên đỏ"
+    }
+  ],
+  "actual_topic": "Bài 14 hướng dẫn toàn diện quy trình sản xuất dòng video Bán Content (Semi-Content) kết hợp nhân vật nổi tiếng Adam Rose (@realadamrose — 6,26 triệu người đăng ký, có video Shorts đạt 257 triệu lượt xem) theo mô hình các kênh đối thủ như Smart Pocket (@Smartpocket-r9b — 533 video, có video dài 1 tiếng đạt 2 triệu lượt xem với RPM rất cao). Quy trình đi từ khâu tìm nguồn ngách thu hút nam giới trên Douyin bằng từ khóa tiếng Trung phồn thể, tải hàng loạt qua trình duyệt Cốc Cốc, xử lý khung 16:9 (tỷ lệ 174%, nền mờ) và cắt ghép cảnh phản ứng Adam Rose trên CapCut PC, đến việc dùng Google Gemini đọc trực tiếp file video theo Master Prompt để xuất bảng câu bình luận tiếng Anh hài hước theo từng mốc giây nhằm đáp ứng yếu tố bình phẩm Fair Use, kết hợp nhạc nền Suno AI, hiệu ứng âm thanh myinstants.com và làm Thumbnail điểm nhấn trên Picsart.",
+  "category_group": "chuyen_gia",
+  "niche_primary": "Bán Content & Reup Hợp Pháp",
+  "niche_id": "dgmd_workflow",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "sop_steps": [
+    "Sử dụng Google Dịch chuyển từ khóa chủ đề thu hút (như 'gái xinh xây dựng', 'cô gái xây dựng') sang tiếng Trung phồn thể để tìm nguồn trên Douyin, đăng nhập trình duyệt Cốc Cốc tải trực tiếp về máy (tổng độ dài trên 8 phút) và bấm Like vào từng video đã lấy để không tải trùng ở các video sau.",
+    "Truy cập kênh YouTube @realadamrose (mục Shorts -> Phổ biến) tải các đoạn biểu cảm của nhân vật Adam Rose; đưa toàn bộ nguyên liệu vào CapCut PC, đổi tỷ lệ khung hình sang 16:9, bôi đen tất cả clip gốc chỉnh 'Tỷ lệ' (Scale) lên đúng 174% và bật 'Nền -> Mờ' (Blur), sau đó cắt chèn cảnh Adam Rose xen kẽ và tắt sạch các rãnh âm thanh có nhạc bản quyền rồi xuất file nháp.",
+    "Mở Google Gemini (gemini.google.com), gửi toàn bộ văn bản 'Master Prompt' cho AI ghi nhớ trước rồi tải file video nháp lên để Gemini phân tích từng khung hình và xuất bảng câu bình luận tiếng Anh hài hước theo đúng mốc giây (kèm bản dịch tiếng Việt đối chiếu).",
+    "Quay lại CapCut PC dán từng câu text tiếng Anh vào đúng mốc giây tương ứng (00:00-00:03, 00:03-00:06...) có bật phông nền chữ mờ; tạo nhạc nền hài hước bằng 1 trong 10 prompt trên Suno AI đưa vào timeline và bấm 'Chuẩn hóa âm lượng'.",
+    "Gia tăng độ sâu biên tập (Edit) bằng cách chèn ảnh nhân vật cắt 'Mặt nạ -> Hình tròn' làm logo ở góc trái trên cùng, thêm hiệu ứng âm thanh tiếng cười từ CapCut hoặc trang myinstants.com, phủ bộ lọc màu '4K', gắn chuyển tiếp 'Trượt góc' cho toàn bộ các điểm cắt, và lên Picsart thiết kế Thumbnail 1920x1080 ghép 2 ảnh cô gái công trường + 1 ảnh Adam Rose (tải từ Pinterest) kèm nhãn dán vòng tròn đỏ & mũi tên đỏ."
+  ],
+  "source_transcript": "video/VIDEO-a152a6/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED"
+}

@@ -1,0 +1,89 @@
+{
+  "key_takeaways": [
+    "Chuyển vùng kênh bằng cách đổi địa điểm sang Hoa Kỳ ở giao diện chính, đổi ngôn ngữ sang tiếng Anh Mỹ, rồi vào YouTube Studio đổi lại quốc gia trong phần cài đặt; làm YouTube view ngoại không cần fake VPN hay proxy.",
+    "Phải làm đủ 3 dòng xanh xác minh: một số điện thoại xác minh được 2 kênh nên có thể mượn số người thân, còn ảnh mặt trước và mặt sau giấy phép lái xe thì xác minh được rất nhiều kênh, không giới hạn.",
+    "Đặt tên kênh bằng cách cho ChatGPT xem tên kênh đối thủ rồi nhờ gợi ý 10 tên hay cùng chủ đề và chuyển sang tiếng Anh; logo thì lưu ảnh của đối thủ rồi đưa vào ChatGPT, Leonardo để tạo ảnh tương tự, còn ảnh bìa có hay không cũng được.",
+    "từ khóa kênh phải lấy từ kênh đối thủ bằng một tiện ích bản miễn phí, tham khảo khoảng 5 đến 10 kênh, chứ đừng nhờ ChatGPT vì nó chỉ cho từ khóa xa trọng tâm; tổng từ khóa không được vượt quá 500 từ nên phải xóa bớt, và từ khóa kênh khác với từ khóa video.",
+    "Phần mô tả lấy từ mô tả của kênh đối thủ cùng chủ đề rồi nhờ ChatGPT viết lại bằng tiếng Anh cho hấp dẫn hơn; video nên để riêng tư trước rồi đặt lịch hoặc mở công khai sau, và nên chọn từ khóa của kênh đối thủ có điểm cao."
+  ],
+  "edit_sop": {
+    "primary": "Cài đặt kênh YouTube mới: chuyển vùng, đặt tên, logo, từ khóa và mô tả lấy theo kênh đối thủ",
+    "additional": [
+      "Chuyển vùng quốc gia và ngôn ngữ ở trang chủ rồi vào Studio đổi quốc gia tiếp, không cần VPN hay proxy",
+      "Nhờ ChatGPT đưa 10 tên kênh hay theo chủ đề rồi chuyển sang tiếng Anh để chọn",
+      "Chụp logo kênh đối thủ đưa ChatGPT, nhờ viết prompt tạo ảnh tương tự rồi tạo ảnh bằng Leonardo",
+      "Lấy từ khóa kênh từ 5 đến 10 kênh đối thủ bằng tiện ích, giữ dưới 500 từ",
+      "Copy mô tả kênh đối thủ, nhờ ChatGPT viết lại hấp dẫn hơn bằng tiếng Anh rồi dán vào mô tả"
+    ]
+  },
+  "avoid_flags": [
+    "Không nhờ ChatGPT cho từ khóa vì ra từ khóa xa trọng tâm, phải lấy từ kênh đối thủ",
+    "từ khóa kênh không được vượt 500 từ",
+    "từ khóa kênh và từ khóa video là khác nhau",
+    "Phải chuyển vùng cả ở trang chủ lẫn trong Studio"
+  ],
+  "verified_expert_summary": true,
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Setting chứng cho kênh: chuyển vùng/vị trí kênh sau khi đã có mail và kênh"
+    },
+    {
+      "time": "02:12",
+      "seconds": 132,
+      "label": "Chọn quốc gia mục tiêu (Hoa Kỳ); từ khóa kênh sẽ hướng dẫn sau"
+    },
+    {
+      "time": "04:30",
+      "seconds": 270,
+      "label": "Copy nội dung rồi dán vào ChatGPT để nó hiểu bước đang làm"
+    },
+    {
+      "time": "06:36",
+      "seconds": 396,
+      "label": "Làm logo và tên kênh: chụp/copy ảnh bằng chuột phải > kiểm tra"
+    },
+    {
+      "time": "08:52",
+      "seconds": 532,
+      "label": "từ khóa kênh và từ khóa video là khác nhau; lấy từ khóa từ kênh đối thủ"
+    },
+    {
+      "time": "10:58",
+      "seconds": 658,
+      "label": "Chỉ lấy từ khóa từ kênh đối thủ của mình, không nhờ ChatGPT nghĩ ra"
+    },
+    {
+      "time": "13:17",
+      "seconds": 797,
+      "label": "Có nhiều kênh đối thủ càng có lợi; copy từ khóa bỏ vào kênh mình"
+    },
+    {
+      "time": "15:20",
+      "seconds": 920,
+      "label": "Cài đặt nâng cao: chọn mục, chỉnh ngôn ngữ tiếng Anh Mỹ"
+    }
+  ],
+  "tools_mentioned": [
+    "Leonardo",
+    "YouTube Studio"
+  ],
+  "sop_steps": [
+    "Chuyển vùng quốc gia và ngôn ngữ ở trang chủ rồi vào Studio đổi quốc gia tiếp, không cần VPN hay proxy",
+    "Nhờ ChatGPT đưa 10 tên kênh hay theo chủ đề rồi chuyển sang tiếng Anh để chọn",
+    "Chụp logo kênh đối thủ đưa ChatGPT, nhờ viết prompt tạo ảnh tương tự rồi tạo ảnh bằng Leonardo",
+    "Lấy từ khóa kênh từ 5 đến 10 kênh đối thủ bằng tiện ích, giữ dưới 500 từ",
+    "Copy mô tả kênh đối thủ, nhờ ChatGPT viết lại hấp dẫn hơn bằng tiếng Anh rồi dán vào mô tả"
+  ],
+  "sku": "VIDEO-027064",
+  "title": "Cách tạo kênh, lập kênh chuyển đổi kênh sang thị trường ngoại chuẩn nhất",
+  "actual_topic": "Cách tạo kênh, lập kênh chuyển đổi kênh sang thị trường ngoại chuẩn nhất",
+  "channels_mentioned": [],
+  "visual_audio_checked": true,
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "source_transcript": "video/VIDEO-027064/transcript.txt",
+  "market_code": "US,GLOBAL",
+  "target_market": "Hoa Kỳ (US) / Quốc tế (Global)",
+  "niche_primary": "Kỹ Thuật Tạo Kênh & Chuyển Đổi Thị Trường Ngoại"
+}

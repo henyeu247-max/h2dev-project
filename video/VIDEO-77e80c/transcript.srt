@@ -1,0 +1,707 @@
+1
+00:00:00,000 --> 00:00:01,380
+Chúng ta cùng xem qua nhé.
+
+2
+00:00:01,780 --> 00:00:05,000
+Con gái ơi, đây là con vật gì đang sủa trong sân nhà mình?
+
+3
+00:00:05,620 --> 00:00:06,040
+Dog!
+
+4
+00:00:06,440 --> 00:00:07,420
+Chào anh chị em học viên.
+
+5
+00:00:07,580 --> 00:00:14,560
+Hôm nay, thầy giáo đại gia mang dép sẽ dạy cho anh chị em chủ đề về xây dựng fanpage tiếng Anh như thế này.
+
+6
+00:00:14,860 --> 00:00:16,480
+Và đồng nhất nhân vật luôn nhé.
+
+7
+00:00:16,560 --> 00:00:19,320
+Thì anh em nhìn thấy những cái fanpage dạy tiếng Anh như thế này đúng không?
+
+8
+00:00:19,420 --> 00:00:23,560
+Đối với những anh chị em không biết tiếng Anh thì chúng ta cũng có thể hoàn toàn làm được.
+
+9
+00:00:23,560 --> 00:00:26,260
+Và anh chị em nhìn thấy những cái video rất là viral.
+
+10
+00:00:26,480 --> 00:00:28,960
+Người mẹ hỏi, con gái ơi, đây là cái gì?
+
+11
+00:00:28,960 --> 00:00:37,000
+Người con gái trả lời bằng tiếng Anh thì chúng ta sẽ làm như thế nào? Chúng ta cùng xem qua một video nhé. Video 2 triệu 3 view là. Giờ chúng xem.
+
+12
+00:00:37,140 --> 00:00:48,700
+Vậy còn nhai là gì con? Chew. Chew. Hút nước thì nói sao con? Sip. Còn nuốt là gì con ha? Swallow. Chúng ta chỉ xem một đoạn ngắn như thế này thôi.
+
+13
+00:00:48,700 --> 00:00:56,700
+Chúng ta sẽ làm như thế nào để xây dựng ra những cái fanpage tiếng Anh mà nó sẽ đồng nhất. Kể cả 100 video của anh chị nó cũng đồng nhất như thế nhé.
+
+14
+00:00:57,000 --> 00:01:02,820
+Thì ở đây tôi đã chuẩn bị một cái tài liệu để xây dựng một fanpage tiếng Anh thì chúng ta cần những cái công cụ như sau.
+
+15
+00:01:03,360 --> 00:01:09,740
+ChatGPT là Pinterest này, Flow tạo ảnh này, hoặc Veo 3 để tạo video luôn.
+
+16
+00:01:10,760 --> 00:01:14,800
+Grok tạo video cũng được và CapCut để edit video.
+
+17
+00:01:15,240 --> 00:01:17,580
+Thì đầu tiên thì chúng ta sẽ tạo ảnh tham chiếu.
+
+18
+00:01:17,580 --> 00:01:24,700
+bước chiếu bước một nhà bước quan trọng nhất để tất cả các hình ảnh của anh chị em nó sẽ đồng nhất
+
+19
+00:01:24,700 --> 00:01:32,000
+100% và nó sẽ không dính như vậy không dính những cái hình ảnh nhân vật của người khác vào và bây
+
+20
+00:01:32,000 --> 00:01:37,580
+giờ là anh chị em nên cho tôi cái Pinterest đầu tiên tôi sẽ tìm là cô gái
+
+21
+00:01:37,966 --> 00:01:45,746
+Thì chúng ta đã ra một cái hình ảnh như cô gái này đi.
+
+22
+00:01:46,046 --> 00:01:50,046
+Thì tôi sẽ để cô gái này làm người mẹ đưa vào.
+
+23
+00:01:51,646 --> 00:01:54,646
+Và tôi sẽ tìm một cô con gái đáng yêu nữa.
+
+24
+00:01:55,026 --> 00:01:58,686
+Và đây cô gái này thì tôi sẽ để là nhân vật là cô con gái.
+
+25
+00:01:59,226 --> 00:02:00,246
+Tôi nhấn tải xuống nhé.
+
+26
+00:02:01,126 --> 00:02:05,666
+Thì chúng ta đã có hai hình ảnh là hình ảnh nhân vật người mẹ và con gái nhé.
+
+27
+00:02:05,670 --> 00:02:14,810
+Anh chị phải nhớ là tìm đủ cái hình ảnh mà đầy đủ chân tay như thế này nhé. Không là thiếu là mai để bảo thầy là dậy. Không vào đầu. Khi mà chúng ta đã có
+
+28
+00:02:14,810 --> 00:02:23,960
+2 hình ảnh người mẹ và con gái rồi đúng không? Thì chúng ta lại quay trở lại cái tài liệu. Thì ở đây là có 1 cái câu prompt để dùng tạo ra hình ảnh người mẹ
+
+29
+00:02:23,960 --> 00:02:32,626
+và con gái. Thì anh chị hãy đọc cho kỹ nhé. Những cái bài tư duy về viết prompt hay tư duy để đặt câu lệnh thì tôi đã có những cái video như thế rồi.
+
+30
+00:02:33,000 --> 00:02:43,806
+Sau khi anh chị em copy cái prompt này xong nhé, hoặc anh chị em viết ra, viết đúng cái câu này thôi. Và bây giờ là chúng ta sang labs.google (Google Flow) nhé. Anh chị nhấn vào tạo dự án này.
+
+31
+00:02:45,626 --> 00:02:55,086
+Thì bây giờ chúng ta sẽ tải cái hình ảnh lên. Tải hình ảnh người mẹ và con gái lên. Tôi tải một lúc 2 hình ảnh người mẹ và con gái lên nhé.
+
+32
+00:02:56,500 --> 00:02:59,440
+Anh em phải làm đúng như thầy nói nhé.
+
+33
+00:03:02,600 --> 00:03:09,460
+Sau khi hình ảnh và người mẹ và con gái đã lên xong thì chúng ta sẽ nhấn vào đây, thêm một câu lệnh này.
+
+34
+00:03:10,100 --> 00:03:12,400
+Và nhấn vào hình ảnh người mẹ cũng thêm một câu lệnh luôn này.
+
+35
+00:03:12,980 --> 00:03:17,540
+Sau đó thì anh chị em dán Ctrl+V cái câu prompt vừa giờ, câu prompt rất ngắn gọn.
+
+36
+00:03:17,780 --> 00:03:21,580
+Không cần phải phức tạp làm gì, phức tạp vào không hiểu cái gì hết.
+
+37
+00:03:21,580 --> 00:03:29,490
+Thì đây là Nano Banana 2 thì anh chị em chọn tạo ảnh nha. Bắt buộc phải tạo ảnh chứ không được tạo video nha. Tí nữa thì chúng ta
+
+38
+00:03:29,490 --> 00:03:37,400
+sẽ tạo video sau. Thì anh chị em nhấn vào hình ảnh này. 9.16 này. Anh chị tạo 2 hình ảnh cũng được nha. Tạo 4 hình ảnh cũng được.
+
+39
+00:03:37,400 --> 00:03:46,770
+Thì cái bước này là cái bước tạo ảnh, con flow này nó cho tạo ảnh free luôn. Anh chị đăng nhập một cái Gmail vào, anh chị tạo ảnh thoải
+
+40
+00:03:46,770 --> 00:03:56,140
+mái. Mà cái app tạo ảnh của cái con flow Nano Banana 2 này nó rất là đẹp. Nó đẹp mà nó lại phù hợp nữa. Không mất tiền, free luôn.
+
+41
+00:03:56,140 --> 00:04:01,220
+Đấy
+
+42
+00:04:01,220 --> 00:04:04,500
+Thì anh chị nhìn thấy nó đã cho anh chị là 2 hình ảnh đúng không
+
+43
+00:04:04,500 --> 00:04:06,560
+Thì bây giờ là anh chị tải xuống này
+
+44
+00:04:06,560 --> 00:04:08,020
+Tải xuống nha
+
+45
+00:04:08,020 --> 00:04:09,660
+Tôi sẽ tải hình ảnh này xuống này
+
+46
+00:04:09,660 --> 00:04:12,220
+Hình ảnh này nó sẽ giống hơn hình ảnh bên cạnh
+
+47
+00:04:12,220 --> 00:04:14,420
+Và bây giờ là gì ạ
+
+48
+00:04:14,420 --> 00:04:15,960
+Lại qua tài liệu
+
+49
+00:04:16,000 --> 00:04:23,460
+Thì trong cái câu prompt để tạo ra câu hỏi này, anh chị có thể tạo ra một nghìn câu hỏi, một vạn câu hỏi.
+
+50
+00:04:23,681 --> 00:04:30,641
+Hãy tạo cho tôi 10 câu hỏi người mẹ dành cho con gái nhé. Và anh chị nhớ cho tôi là để ý cái màu xanh này.
+
+51
+00:04:30,901 --> 00:04:35,101
+Viết chủ đề mà bạn muốn nhé. Thì tôi sẽ hướng dẫn anh chị em dùng như sau.
+
+52
+00:04:35,101 --> 00:04:47,081
+thì anh chị viết ra đúng cho tôi câu lệnh này hoặc chụp màn hình lại và trích xuất ra. Anh chị copy cho tôi cái câu hỏi này.
+
+53
+00:04:48,421 --> 00:04:55,341
+Dán vào ChatGPT ở cái vị trí mà tôi đã đóng hoặc này. Anh chị nhớ cho tôi là anh chị có thể viết chủ đề mà anh chị muốn.
+
+54
+00:04:56,021 --> 00:05:04,341
+Có thể là đồ dùng học sinh, các hoạt động hàng ngày, thể thao, các thứ đều được. Đây là cái tư duy về viết prompt câu hỏi.
+
+55
+00:05:04,341 --> 00:05:10,721
+Ví dụ như tôi sẽ ghi là những loài động vật trong gia đình.
+
+56
+00:05:13,901 --> 00:05:20,281
+Anh chị em nhìn thấy đây không? Con gái ơi, đây là con vật gì đang sủa trong sân nhà mình nhỉ?
+
+57
+00:05:20,981 --> 00:05:23,581
+Thì con gái sẽ trả lời là Dog, là chó đấy.
+
+58
+00:05:23,881 --> 00:05:28,201
+Khi mà đã có 10 câu hỏi này rồi thì anh chị lại sang cho tôi cái tài liệu.
+
+59
+00:05:29,000 --> 00:05:38,270
+Thì chúng ta sẽ có một cái form là prompt tạo ảnh và prompt tạo video. Anh chị hãy đọc kỹ cái prompt này cho tôi. Vì cái form
+
+60
+00:05:38,270 --> 00:05:47,650
+này tôi sẽ hướng dẫn trong cái video mà tư duy về viết prompt. Copy cho tôi cái prompt này. Sao chép này. Bây giờ dán xuống đây.
+
+61
+00:05:47,650 --> 00:05:50,970
+Chưa ơi nhé
+
+62
+00:05:50,970 --> 00:05:53,130
+Khi anh em dán vào như thế này rồi
+
+63
+00:05:53,130 --> 00:05:55,670
+Thì anh em phải thêm cho tôi cái ảnh tham chiếu vào
+
+64
+00:05:55,670 --> 00:05:59,470
+Đây là cái ảnh tham chiếu người mẹ và con gái này
+
+65
+00:05:59,470 --> 00:06:01,690
+Mà chúng ta vừa tạo ra
+
+66
+00:06:01,690 --> 00:06:03,610
+Thì anh chị nhấn Enter cho tôi
+
+67
+00:06:03,610 --> 00:06:05,530
+Bây giờ là gì ạ
+
+68
+00:06:07,650 --> 00:06:17,950
+anh chị nhớ cho tôi nha là anh chị phải biết là tạo prompt không phải tạo ảnh
+
+69
+00:06:17,950 --> 00:06:27,640
+ChatGPT của anh chị bị lỗi. Tạo prompt chứ không phải tạo ảnh. Bây giờ ChatGPT sẽ viết cho anh chị. Nó cứ viết như thế cho 10
+
+70
+00:06:27,640 --> 00:06:37,330
+prompt. Gồm prompt tạo ảnh và prompt tạo video. Thì ở trong cái prompt tạo ảnh này, anh chị copy cho tôi cái này. Sao chép nhé. Và
+
+71
+00:06:37,330 --> 00:06:47,000
+bây giờ là anh chị sang cho tôi cái con Flow này. Cái hình ảnh mà chúng ta vừa tạo cũng lại. Hình ảnh mẹ con gái này.
+
+72
+00:06:47,000 --> 00:06:48,210
+Thêm một câu lệnh nhé
+
+73
+00:06:48,210 --> 00:06:55,210
+Tôi sẽ tạo 2 hình ảnh
+
+74
+00:06:55,210 --> 00:07:04,210
+Tôi sẽ lấy tầm 4 prompt
+
+75
+00:07:04,210 --> 00:07:09,210
+Nhớ là prompt tạo ảnh
+
+76
+00:07:18,616 --> 00:07:26,136
+Thì tôi đang tạo ra các hình ảnh liên quan đến cái gì ạ?
+
+77
+00:07:26,376 --> 00:07:28,736
+Liên quan đến cái câu hỏi trong tiếng Anh.
+
+78
+00:07:29,236 --> 00:07:32,276
+Dùng câu đầu tiên là chú chó này, tạo ra 2 cái hình ảnh.
+
+79
+00:07:33,156 --> 00:07:38,976
+Chú chó này, câu hỏi về chú mèo này, câu hỏi về cá này, câu hỏi về chim này.
+
+80
+00:07:40,096 --> 00:07:45,216
+Thì khi mà anh chị em đã có những cái hình ảnh nhất quán như thế này rồi đúng không?
+
+81
+00:07:45,696 --> 00:07:47,896
+Thì chúng ta sẽ gì ạ? Tải xuống.
+
+82
+00:07:48,616 --> 00:07:50,516
+Đây là hình ảnh về cá này.
+
+83
+00:07:51,436 --> 00:07:53,336
+Hình ảnh chú chó này, tôi lấy 1 hình ảnh nhé.
+
+84
+00:07:55,176 --> 00:07:56,156
+Tải xuống này.
+
+85
+00:07:57,476 --> 00:07:58,936
+Hình ảnh về meo này.
+
+86
+00:08:00,116 --> 00:08:01,296
+Thì tôi lấy 1 hình ảnh này.
+
+87
+00:08:01,576 --> 00:08:03,936
+Hình ảnh về cá này, tôi lấy 1 hình ảnh này.
+
+88
+00:08:04,576 --> 00:08:07,236
+Hình ảnh về chim này, tôi lấy 1 hình ảnh này.
+
+89
+00:08:08,000 --> 00:08:11,896
+Sau khi đã tải 4 hình ảnh xuống xong, thì chúng ta sang con Grok.
+
+90
+00:08:12,676 --> 00:08:13,596
+Thì bây giờ là gì ạ?
+
+91
+00:08:13,756 --> 00:08:15,276
+Anh chị em nhớ cho tôi nhé.
+
+92
+00:08:15,516 --> 00:08:16,076
+Kéo xuống này.
+
+93
+00:08:16,256 --> 00:08:17,396
+Hình ảnh chú chó đầu tiên này.
+
+94
+00:08:17,696 --> 00:08:18,296
+Kéo xuống này.
+
+95
+00:08:18,650 --> 00:08:31,790
+Và bây giờ lại sang cho tôi cái câu prompt, prompt đầu tiên nha, prompt đầu tiên là nhấn Sao chép nè, dán vào Grok thì anh chị nhấn vào, dán vào như này thôi.
+
+96
+00:08:32,830 --> 00:08:39,210
+Chọn là độ phân giải nha, độ phân giải thì con Grok thì anh chị 720 và thời lượng là 10 giây nha.
+
+97
+00:08:40,490 --> 00:08:41,510
+Nhấn tạo nè.
+
+98
+00:08:42,110 --> 00:08:45,370
+Con gái ơi, đây là con vật gì đang sủa trong sân nhà mình?
+
+99
+00:08:45,950 --> 00:08:46,390
+Dog!
+
+100
+00:08:46,390 --> 00:08:53,250
+Đây là một cái video đầu tiên mà con Grok vừa tạo ra nhé. Anh chị em có thể xem lại đây.
+
+101
+00:08:54,390 --> 00:08:57,890
+Con gái ơi, đây là con vật gì đang sủa trong sân nhà mình?
+
+102
+00:08:58,490 --> 00:08:58,990
+Dog!
+
+103
+00:09:00,630 --> 00:09:02,230
+Anh chị nhấn tải xuống này.
+
+104
+00:09:05,350 --> 00:09:06,050
+Trở ra.
+
+105
+00:09:07,190 --> 00:09:11,410
+Và cứ lần lượt như thế thì chúng ta sẽ đến với hình ảnh con mèo này.
+
+106
+00:09:11,410 --> 00:09:16,850
+Anh chị cứ làm như thế bao giờ xong 10 cái video nhé.
+
+107
+00:09:17,730 --> 00:09:19,650
+Còn thứ 3 này, dán cá vào đây.
+
+108
+00:09:21,970 --> 00:09:22,510
+Tạo này.
+
+109
+00:09:24,750 --> 00:09:35,250
+Đây là video về con mèo này
+
+110
+00:09:35,250 --> 00:09:38,130
+Tải xuống này
+
+111
+00:09:38,130 --> 00:09:40,890
+Thì anh chỉ có thể nhấn vào lịch sử đây nhé
+
+112
+00:09:40,890 --> 00:09:43,772
+Đây là con chim này
+
+113
+00:09:43,772 --> 00:09:45,292
+Đây là con vật gì đang hót trong lồng này.
+
+114
+00:09:46,312 --> 00:09:47,892
+Anh chị nhấn tải xuống nhé.
+
+115
+00:09:50,000 --> 00:09:55,332
+Sau khi tải xuống xong 4 cái video này rồi thì chúng ta sẽ vào CapCut cho tôi nhé.
+
+116
+00:09:55,832 --> 00:09:57,792
+Bây giờ là chúng ta sẽ vào CapCut này.
+
+117
+00:09:58,192 --> 00:09:59,832
+Và chúng ta sẽ edit video nhé.
+
+118
+00:09:59,912 --> 00:10:01,312
+Anh em nhấn vào tạo dự án này.
+
+119
+00:10:02,290 --> 00:10:10,990
+Sau khi nhấn vật tạo dự án xong thì chúng ta thêm 4 video vào. Chó, mèo, cá, chim, thêm vào. Và bây giờ là gì ạ? Chúng
+
+120
+00:10:10,990 --> 00:10:19,690
+ta sẽ luôn luôn nhớ cho tôi là con chó đầu tiên. Đây nhỉ, đây là có cái đoạn âm thanh này. Anh chị em nhìn thấy, nếu
+
+121
+00:10:19,690 --> 00:10:28,390
+chị em kéo anh chị em nhìn đến cái dưới video này, nó sẽ có đoạn âm thanh thừa và không thừa nhé. Cắt đi, cắt bớt đi.
+
+122
+00:10:28,392 --> 00:10:35,392
+Và đây, video thứ 2, cặp mèo, cắt đi này.
+
+123
+00:10:36,892 --> 00:10:39,432
+Anh chị nhấn Cắt là Ctrl+B nhé.
+
+124
+00:10:40,952 --> 00:10:43,132
+Hoặc là anh chị nhấn Tách ở đây này.
+
+125
+00:10:44,192 --> 00:10:47,812
+Nhớ cho tôi là cái thanh trắng này ở đâu thì vị trí màn hình ở đó.
+
+126
+00:10:48,592 --> 00:10:52,592
+Và cái video của anh chị đang edit video đang ở số giây bao nhiêu.
+
+127
+00:10:52,872 --> 00:10:53,772
+Đây là 10 giây này.
+
+128
+00:10:55,900 --> 00:11:04,300
+Lần lượt kéo như thế đến thứ 3 lại cũng chán. Cắt này. Anh chị nhớ
+
+129
+00:11:04,300 --> 00:11:12,700
+cho tôi là anh chị phải luôn thao tác tay nhé. Để làm những cái fanpage
+
+130
+00:11:12,700 --> 00:11:20,580
+hay là làm video trên YouTube cũng thế. Chúng ta phải edit video liên tục.
+
+131
+00:11:21,000 --> 00:11:29,870
+Đây là 4 cái video về 4 con gì ạ? Con động vật nha, anh chị em nha. Thì bây giờ chúng ta sẽ chọn
+
+132
+00:11:29,870 --> 00:11:39,160
+văn bản này, thêm văn bản. Bây giờ là chúng ta sẽ để là câu hỏi người mẹ nha. Chúng ta sang cho tôi là
+
+133
+00:11:39,160 --> 00:11:48,440
+ChatGPT nè. Ở trên này nó có câu hỏi. Con gái ơi, đây là con vật gì? Anh chị em dán ra đây cho tôi.
+
+134
+00:11:50,580 --> 00:11:56,280
+Nếu mà anh chị em muốn cho cái này khi mà anh chị em edit to hơn thì chị em kéo to ra.
+
+135
+00:11:56,280 --> 00:12:03,220
+Con vật gì? Nhấn Enter, S, S
+
+136
+00:12:03,220 --> 00:12:07,160
+Và chúng ta sẽ chọn một cái phông chữ bất kỳ
+
+137
+00:12:07,160 --> 00:12:09,380
+Tôi sẽ chọn phông chữ tiếng Việt này đi
+
+138
+00:12:09,380 --> 00:12:11,340
+Và tôi sẽ để là màu vàng
+
+139
+00:12:11,340 --> 00:12:16,220
+Vâng
+
+140
+00:12:16,280 --> 00:12:19,720
+Anh chị có thể để cho tôi một cái phông nền nhé
+
+141
+00:12:19,720 --> 00:12:20,860
+Phông nền như này được
+
+142
+00:12:20,860 --> 00:12:22,860
+Hoặc anh chị để màu trắng này
+
+143
+00:12:22,860 --> 00:12:24,420
+Màu gì cũng được
+
+144
+00:12:27,301 --> 00:12:30,821
+Con gái ơi, đây là con vật gì đang sủa trong sân nhà mình?
+
+145
+00:12:31,601 --> 00:12:38,461
+Hoặc anh chị không. Sau đó thì người con gái sẽ trả lời sao ạ? Anh chị copy cho tôi một cái văn bản sau này.
+
+146
+00:12:38,461 --> 00:12:39,021
+Dog.
+
+147
+00:12:40,641 --> 00:12:43,101
+Chúng ta thêm Dog rồi.
+
+148
+00:12:48,541 --> 00:12:51,241
+Đấy, bây giờ anh chị copy cho tôi gây văn bản sang này.
+
+149
+00:12:52,041 --> 00:12:59,541
+Đi ra là copy, chúng ta sẽ đi copy tất cả những cái câu thoại.
+
+150
+00:13:00,641 --> 00:13:04,561
+Anh chị có thể thêm câu thoại được và không thêm câu thoại người mẹ cũng được.
+
+151
+00:13:06,081 --> 00:13:06,721
+Cat này.
+
+152
+00:13:08,461 --> 00:13:20,461
+Câu thứ 3 này
+
+153
+00:13:20,461 --> 00:13:27,461
+Anh chị nhớ cho tôi là cái âm này
+
+154
+00:13:27,461 --> 00:13:29,461
+Đến cái đoạn này này
+
+155
+00:13:29,461 --> 00:13:32,461
+Cái đoạn mà người con gái sẽ trả lời nha
+
+156
+00:13:32,461 --> 00:13:35,461
+Con gái ơi đây là con vật gì đang bơi trong bể cá
+
+157
+00:13:35,550 --> 00:13:41,750
+Shift Enter này, là xuống dòng nhé.
+
+158
+00:13:42,830 --> 00:13:45,010
+Thì anh chị dám cho tôi cái Fish vào.
+
+159
+00:13:54,270 --> 00:13:56,710
+Con gái ơi, cái gì ạ?
+
+160
+00:13:58,170 --> 00:13:59,590
+Con gì đã hót trong lồng?
+
+161
+00:14:00,850 --> 00:14:02,350
+Chúng ta sẽ để làm sao?
+
+162
+00:14:05,550 --> 00:14:09,830
+Chim nhé.
+
+163
+00:14:12,090 --> 00:14:14,750
+Và chúng ta đã có một cái video hoàn chỉnh như thế này.
+
+164
+00:14:17,590 --> 00:14:19,130
+Chúng ta cùng xem qua nhé.
+
+165
+00:14:19,510 --> 00:14:22,750
+Con gái ơi, đây là con vật gì đang sủa trong sân nhà mình?
+
+166
+00:14:23,350 --> 00:14:23,790
+Dog.
+
+167
+00:14:24,270 --> 00:14:27,570
+Con gái ơi, đây là con vật gì đang nằm ngủ trên ghế sofa?
+
+168
+00:14:28,310 --> 00:14:28,670
+Cat.
+
+169
+00:14:29,890 --> 00:14:32,770
+Con gái ơi, đây là con vật gì đang bơi trong bể cá?
+
+170
+00:14:33,110 --> 00:14:33,510
+Fish.
+
+171
+00:14:33,510 --> 00:14:37,150
+Con gái ơi, đây là con vật gì đang hót trong lồng?
+
+172
+00:14:37,590 --> 00:14:37,950
+Bird
+
+173
+00:14:37,950 --> 00:14:46,710
+Đó là video để sản xuất ra cái fanpage tiếng Anh nha, và anh chị em nhấn xuất ra.
+
+174
+00:14:47,410 --> 00:14:50,370
+Đây là edit, CapCut cơ bản nha anh chị em nha.
+
+175
+00:14:51,790 --> 00:14:52,230
+Tiếng Anh
+
+176
+00:14:52,230 --> 00:14:55,650
+Con gái ơi, đây là
+
+177
+00:14:55,650 --> 00:14:57,890
+Ok, chào anh chị em học viên.

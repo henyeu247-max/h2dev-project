@@ -1,0 +1,110 @@
+{
+  "key_takeaways": [
+    "Làm view ngoại không nên chỉ tập trung vào Mỹ vì cạnh tranh rất cao và bị trừ thuế; RPM Mỹ khoảng sáu đến tám, Nhật khoảng năm đến sáu, Hàn khoảng bốn đến năm mà không bị mất thuế.",
+    "Ở Nhật, dân số già nên người xem rất quan tâm sức khỏe người già; kênh mẫu mới mười video với bác sĩ tám mươi mốt tuổi đã có view tốt, các kênh khác có bác sĩ chín mươi mốt, tám mươi tám tuổi và video hơn 500.000 view, cạnh tranh rất thấp.",
+    "Cách edit rất dễ: chỉ cần một ảnh cùng phụ đề chạy theo giọng đọc; lưu ý ngữ văn tiếng Nhật khó, làm sai một chút người xem có thể chửi.",
+    "Thị trường Hàn Quốc cũng cạnh tranh thấp, có kênh lập từ tháng 5 mới mười video mà có video 166.000 view, nên phải bám theo kênh và tiêu đề của đối thủ.",
+    "Cách lấy kịch bản: chọn mười kênh đối thủ, mỗi kênh lấy một đến hai video trong khoảng hai tuần gần đây, quá một tháng thì không lấy; copy link vào web free rồi dán vào ChatGPT cùng prompt dịch sang ngôn ngữ thị trường để viết đủ 15 phần, nên dùng ChatGPT Plus hoặc Grok, và ngâm kênh khoảng năm ngày, đừng nóng vội."
+  ],
+  "edit_sop": {
+    "primary": "Làm view ngoại thị trường Nhật và Hàn: tìm kênh đối thủ cao view, lấy kịch bản bằng web free rồi viết lại bằng prompt 15 phần",
+    "additional": [
+      "Chọn khoảng 10 kênh đối thủ, mỗi kênh lấy 1 đến 2 video cao view trong khoảng 2 tuần gần đây, quá 1 tháng thì không lấy",
+      "Muốn tìm thêm đối thủ thì bấm xem video rồi nhìn mục đề xuất bên tay phải",
+      "Copy link video vào web lấy kịch bản free, bấm copy toàn bộ kịch bản, dán vào ChatGPT cùng prompt đã dịch sang tiếng Nhật (làm thị trường nào thì dịch prompt sang ngôn ngữ đó)",
+      "Bấm tiếp tục để AI viết từng phần cho đủ 15 phần, vì AI không viết dài một lần được; nên dùng ChatGPT Plus hoặc Grok",
+      "Tạo giọng đọc bằng ElevenLabs hoặc công cụ khác; video chỉ cần một ảnh chạy phụ đề, hoặc ghép video Pixabay như hướng dẫn ở video 5"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng ham hố hay nóng vội, nên ngâm kênh khoảng một tuần; kênh dính spam hoặc tạo không chuẩn thì làm kiểu gì cũng không lên",
+    "Ngữ văn tiếng Nhật khó, viết sai một chút người xem có thể chửi nên làm cẩn thận ngôn ngữ"
+  ],
+  "verified_expert_summary": true,
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Nhắc lại nhân bản thị trường làm view ngoại trước khi share key thị trường Nhật, Hàn"
+    },
+    {
+      "time": "03:17",
+      "seconds": 197,
+      "label": "Lập danh sách kênh đối thủ và dịch tiếng Việt kênh mẫu đầu tiên"
+    },
+    {
+      "time": "06:42",
+      "seconds": 402,
+      "label": "Xem video mẫu làm bằng công cụ gì: edit đơn giản, chỉ cần một ảnh"
+    },
+    {
+      "time": "09:51",
+      "seconds": 591,
+      "label": "Từ kênh mẫu tìm thêm kênh khác làm đối thủ; kênh mới 4 video vẫn kéo được view"
+    },
+    {
+      "time": "13:19",
+      "seconds": 799,
+      "label": "Kênh thứ hai cùng chủ đề, view thấp hơn, 81 video"
+    },
+    {
+      "time": "16:26",
+      "seconds": 986,
+      "label": "Em làm nhiều thị trường (Brazil, Bồ Đào Nha, Tây Ban Nha, Nhật, Hàn), không chỉ US"
+    },
+    {
+      "time": "19:52",
+      "seconds": 1192,
+      "label": "Kiên nhẫn ngâm kênh như hướng dẫn, không nóng vội kẻo dính spam"
+    },
+    {
+      "time": "23:00",
+      "seconds": 1380,
+      "label": "Dùng ChatGPT Plus để viết và dịch form sang tiếng Nhật"
+    }
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "Google Dịch",
+    "ChatGPT"
+  ],
+  "sop_steps": [
+    "Chọn khoảng 10 kênh đối thủ, mỗi kênh lấy 1 đến 2 video cao view trong khoảng 2 tuần gần đây, quá 1 tháng thì không lấy",
+    "Muốn tìm thêm đối thủ thì bấm xem video rồi nhìn mục đề xuất bên tay phải",
+    "Copy link video vào web lấy kịch bản free, bấm copy toàn bộ kịch bản, dán vào ChatGPT cùng prompt đã dịch sang tiếng Nhật (làm thị trường nào thì dịch prompt sang ngôn ngữ đó)",
+    "Bấm tiếp tục để AI viết từng phần cho đủ 15 phần, vì AI không viết dài một lần được; nên dùng ChatGPT Plus hoặc Grok",
+    "Tạo giọng đọc bằng ElevenLabs hoặc công cụ khác; video chỉ cần một ảnh chạy phụ đề, hoặc ghép video Pixabay như hướng dẫn ở video 5"
+  ],
+  "sku": "VIDEO-25fddf",
+  "title": "Share key thị trường Nhật + Hàn - UPDATE 6/6/2025",
+  "actual_topic": "Share key thị trường Nhật + Hàn - UPDATE 6/6/2025",
+  "channels_mentioned": [
+    "@wise-stories-2504",
+    "@SeniorLab2025",
+    "@지혜의샘-h2f",
+    "@ni-i7i",
+    "@금빛노",
+    "@1-ji2mx",
+    "@노후클라스",
+    "@老後の物語",
+    "@다시_청춘",
+    "@olderhealth-z8z",
+    "@건행시대",
+    "@医師たちの言葉",
+    "@지혜의보물-v5w",
+    "@百寿の知恵",
+    "@은빛-노후",
+    "@100年の歩み百寿",
+    "@지혜의벤치",
+    "@やさしい人生の知恵",
+    "@노을꽃길",
+    "@건강지혜사전",
+    "@mindorosi"
+  ],
+  "visual_audio_checked": true,
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "source_transcript": "video/VIDEO-25fddf/transcript.txt",
+  "market_code": "JP,KR",
+  "target_market": "Nhật Bản / Hàn Quốc",
+  "niche_primary": "Drama Gia Đình & Xã Hội"
+}

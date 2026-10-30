@@ -1,0 +1,110 @@
+{
+  "sku": "VIDEO-d4f7e6",
+  "title": "Quy Trình Sản Xuất Video Jesus Shorts ",
+  "actual_topic": "Quy trình sản xuất video 3D Jesus & Satan trên cầu treo bằng Pinterest + ChatGPT + Google Flow (9:16) + Grok Imagine (720p 10s) & hậu kỳ CapCut PC 9,9s đăng qua điện thoại",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Tâm Linh & Tôn Giáo Toàn Cầu",
+  "niche_id": "faith_shorts",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "tools_mentioned": [
+    "Pinterest",
+    "ChatGPT",
+    "Flow",
+    "Grok",
+    "CapCut",
+    "Google Drive",
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@JesusLovesEvery-1"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân tích kênh đối thủ Jesus Quiz (@JesusLovesEvery-1) đạt 2,1 Tr sub, 544 video và hơn 838 Tr lượt xem"
+    },
+    {
+      "time": "00:36",
+      "seconds": 36,
+      "label": "Vào Pinterest tìm và sao chép 2 hình ảnh nhân vật mẫu: Chúa Giê-su và Quỷ Satan dán vào ChatGPT"
+    },
+    {
+      "time": "01:35",
+      "seconds": 95,
+      "label": "Sao chép câu lệnh Prompt tiếng Anh từ ChatGPT đưa sang Google Flow tạo hình ảnh tỷ lệ 9:16"
+    },
+    {
+      "time": "02:11",
+      "seconds": 131,
+      "label": "Đưa ảnh Flow ngược lại ChatGPT lấy Prompt chuyển động và tạo video 720p 10 giây trên Grok Imagine"
+    },
+    {
+      "time": "03:17",
+      "seconds": 197,
+      "label": "Giải thích chi tiết cấu trúc viết Prompt tạo ảnh và cách biến tấu chất liệu cây cầu (gỗ, bánh, sắt, vàng, kim cương)"
+    },
+    {
+      "time": "04:18",
+      "seconds": 258,
+      "label": "Quy tắc bắt buộc ghi từ khóa ánh sáng ban ngày tự nhiên và hình ảnh 9:16 để tránh AI tạo cảnh ban đêm"
+    },
+    {
+      "time": "05:05",
+      "seconds": 305,
+      "label": "Phân tích câu lệnh tạo video cảnh cầu gãy dưới chân Quỷ Satan và mẹo khóa camera cố định vị trí chống lỗi zoom"
+    },
+    {
+      "time": "06:11",
+      "seconds": 371,
+      "label": "Hậu kỳ CapCut PC: Cắt video còn 9,9 giây, chèn chữ Đây là video AI, xuất 2K HEVC và chuyển lên Google Drive đăng bằng điện thoại"
+    }
+  ],
+  "key_takeaways": [
+    "Kênh mẫu Jesus Quiz (@JesusLovesEvery-1) tại thị trường Hoa Kỳ đạt tới 2,1 triệu người đăng ký và 838.046.091 lượt xem chỉ với 544 video nhờ mô hình kịch bản đối kháng trực quan giữa 2 nhân vật Chúa Giê-su và Quỷ Satan trên cây cầu bắc qua hai ngọn núi.",
+    "Quy trình phối hợp đa công cụ AI: Lấy 2 ảnh tham chiếu nhân vật trên Pinterest -> Dán vào ChatGPT để sinh Prompt tạo ảnh tiếng Anh -> Tạo ảnh dọc 9:16 chất lượng cao trên Google Flow -> Đưa ảnh Flow ngược lại ChatGPT sinh Prompt chuyển động -> Dựng video 720p 10 giây trên Grok Imagine.",
+    "Hai nguyên tắc vàng khi viết Prompt cho ChatGPT: (1) Khi tạo ảnh phải ghi rõ 'ánh sáng ban ngày tự nhiên, hình ảnh 9:16' để AI không tự ý vẽ cảnh ban đêm tối đen; (2) Khi tạo video phải ghi rõ 'camera cố định vị trí, camera giữ nguyên chi tiết' để chống lỗi AI tự động zoom thẳng vào mặt nhân vật.",
+    "Khả năng nhân bản vô hạn ý tưởng từ 1 cấu trúc gốc bằng cách biến tấu chất liệu cây cầu (cầu gỗ, cầu bánh kem, cầu sắt, cầu vàng, cầu kim cương, cầu dưa hấu) và bối cảnh phía dưới cầu (dòng sông, lũ lụt, bão tố, dòng sông nước đỏ).",
+    "Mẹo hậu kỳ 'bàn tay con người' và tối ưu phân phối Shorts: Đưa video 10s vào CapCut PC cắt ngắn còn 9,9 giây, chèn dòng chữ nhỏ 'Đây là video AI' ở cuối video, xuất định dạng 2K HEVC 30fps rồi tải lên Google Drive để lấy về điện thoại đăng trực tiếp qua app YouTube."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình sản xuất video Jesus Shorts 9:16 bằng Pinterest + ChatGPT + Google Flow + Grok Imagine + CapCut PC",
+    "additional": [
+      "Sao chép 2 ảnh tham chiếu nhân vật Chúa Giê-su và Quỷ Satan từ Pinterest dán thẳng vào khung chat ChatGPT.",
+      "Nhập câu lệnh tiếng Việt mô tả bối cảnh đi trên cầu gỗ giữa hai ngọn núi có ánh sáng ban ngày tự nhiên và tỷ lệ 9:16.",
+      "Dán Prompt tiếng Anh của ChatGPT sang Google Flow tạo ảnh 9:16 rồi tải ảnh gốc đó ngược lại vào ChatGPT để lấy Prompt tạo video.",
+      "Bắt buộc thêm cụm từ khóa khóa góc máy 'camera cố định vị trí, camera giữ nguyên chi tiết' trước khi đưa sang Grok Imagine tạo video 720p 10 giây.",
+      "Đưa video vào CapCut PC cắt còn 9,9 giây, chèn chữ 'Đây là video AI', xuất file 2K HEVC 30fps và tải lên Google Drive để đăng bằng điện thoại."
+    ]
+  },
+  "sop_steps": [
+    "Bước 1: Truy cập Pinterest tìm kiếm và sao chép 2 bức ảnh nhân vật mẫu gồm Chúa Giê-su (Jesus) và Quỷ Satan dán vào khung chat của ChatGPT.",
+    "Bước 2: Nhập câu lệnh yêu cầu ChatGPT viết Prompt tạo ảnh chi tiết tỷ lệ 9:16 với bối cảnh Chúa Giê-su đi trên cây cầu gỗ bắc qua hai ngọn núi, Quỷ Satan cầm rìu đuổi theo phía sau, bên dưới là dòng sông và ánh sáng ban ngày tự nhiên.",
+    "Bước 3: Sao chép Prompt tiếng Anh từ ChatGPT dán vào Google Flow (chọn chế độ Image, khung hình 9:16) để tạo ảnh và tải bức ảnh sắc nét nhất về máy.",
+    "Bước 4: Tải bức ảnh 9:16 vừa tạo từ Flow lên lại ChatGPT, nhập câu lệnh tạo Prompt video mô tả cảnh đoạn cầu dưới chân Quỷ Satan bị thủng rơi xuống vực còn Chúa Giê-su vẫn tiến về phía trước, kèm điều kiện 'camera cố định vị trí, camera giữ nguyên chi tiết'.",
+    "Bước 5: Truy cập Grok Imagine (grok.com/imagine), tải ảnh gốc từ Flow lên, dán Prompt video tiếng Anh, chọn chế độ Video - 720p - 10s để xuất video chuyển động.",
+    "Bước 6: Đưa video 10s vào CapCut PC cắt ngắn còn 9,9 giây, thêm dòng văn bản 'Đây là video AI' ở cuối video, xuất file MP4 2K HEVC 30fps rồi đưa lên Google Drive tải về điện thoại đăng lên YouTube Shorts."
+  ],
+  "avoid_flags": [
+    "Không bỏ quên cụm từ 'ánh sáng ban ngày tự nhiên' trong Prompt tạo ảnh vì có nhân vật Satan nên AI rất dễ tự động vẽ khung cảnh ban đêm tối tăm.",
+    "Tuyệt đối không thiếu câu lệnh 'camera cố định vị trí, camera giữ nguyên chi tiết' trong Prompt tạo video để tránh lỗi AI tự ý zoom cận mặt nhân vật làm vỡ bối cảnh.",
+    "Không đăng tải ngay tệp video 10 giây thô tải về từ Grok Imagine mà phải đưa qua CapCut PC cắt còn 9,9 giây và chèn thêm lớp chữ để có thao tác hậu kỳ của con người.",
+    "Không đăng video Shorts trực tiếp trên trình duyệt máy tính; luôn đồng bộ qua Google Drive về điện thoại để đăng bằng ứng dụng YouTube di động."
+  ],
+  "analysis_method": "visual_frames_and_audio_verified",
+  "source_transcript": "video/VIDEO-d4f7e6/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "last_verified_at": "2026-10-24T13:23:00Z",
+  "course_docs": [
+    {
+      "title": "Master Prompt Quy Trình Sản Xuất Video Jesus Shorts 9:16 (ChatGPT + Google Flow + Grok Imagine)",
+      "file": "assets/docs-dgmd/VIDEO-d4f7e6/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-d4f7e6/master_prompt.md",
+      "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-d4f7e6/master_prompt.md"
+    }
+  ]
+}

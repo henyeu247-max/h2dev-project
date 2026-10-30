@@ -1,0 +1,583 @@
+1
+00:00:00,000 --> 00:00:09,933
+Ok, chào các em yêu của thầy. Hôm nay tao sẽ dạy chúng mày code tool và nhất quán nhân vật như thế nào để cho nó hiệu quả. Và chúng mày hoàn toàn là người mới đúng không? Chúng
+
+2
+00:00:09,933 --> 00:00:19,867
+mày có thể áp dụng cách này để tạo 1 ngày 100 hình ảnh, 1 ngày 1.000 hình ảnh cũng được, 1 ngày 1.000 video cũng được. Và cái độ nhất quán của nó cứ gọi là mẹ mày
+
+3
+00:00:19,867 --> 00:00:29,800
+ngon luôn. Các em hiểu không? Vấn đề ở đây là chúng mày sẽ tự động code được tool. Chứ đéo cần phải chúng mày phải đi học giỏi. Mẹ mày phải biết code, phải biết thế này thế nọ.
+
+4
+00:00:29,800 --> 00:00:38,527
+Phải biết code những cái chuyên nghiệp. Bây giờ AI nó làm hết cho chúng mày rồi. Việc chúng mày hãy dựa theo cách làm mà tao dạy để chúng mày áp dụng vào, chúng mày
+
+5
+00:00:38,527 --> 00:00:47,253
+tạo ra tool. Và đầu tiên, ở trong đây thì chúng mày cần cho tao một cái con Google Flow. Là con Google Flow này thì chúng mày mua thì nó chỉ có 3 mấy, 5
+
+6
+00:00:47,253 --> 00:00:55,980
+mấy ca thôi. Nâng cấp lên Google Flow là được. Chứ đéo cần phải pro. Nếu mà pro là chúng mày tạo video thì chúng mày có thể dùng cái tài khoản Veo 3 Ultra ấy.
+
+7
+00:00:55,980 --> 00:01:00,780
+Và một công cụ nữa là không thể thiếu là ChatGPT
+
+8
+00:01:00,780 --> 00:01:04,900
+Nghĩa là chúng mày bắt buộc phải có cái con ChatGPT để chúng mày làm gì ạ
+
+9
+00:01:04,900 --> 00:01:08,000
+Tạo ra cái yêu cầu để chúng mày tạo ra tool hiểu chưa
+
+10
+00:01:08,000 --> 00:01:12,060
+Thì ở đây tao là có 2 cái Master Prompt để code tool như này
+
+11
+00:01:12,060 --> 00:01:15,980
+Thì đầu tiên tao sẽ giải thích cho chúng mày cái câu prompt để tạo Master Prompt
+
+12
+00:01:15,980 --> 00:01:19,980
+Hãy tạo cho tôi một Master Prompt
+
+13
+00:01:19,980 --> 00:01:22,980
+Nhưng đầu tiên bạn hãy đóng vai thành một chuyên gia code tool
+
+14
+00:01:22,980 --> 00:01:25,980
+Nghĩa là chúng mày phải giao nhiệm vụ cho nó
+
+15
+00:01:25,980 --> 00:01:29,980
+Là gì ạ? Mày phải trở thành một chuyên gia code tool cho tao
+
+16
+00:01:29,980 --> 00:01:31,980
+Hãy tạo cho tôi một Master Prompt
+
+17
+00:01:31,980 --> 00:01:33,980
+Để gửi trực tiếp vào Google Flow
+
+18
+00:01:33,980 --> 00:01:35,980
+Nghĩa là chúng mày phải giao nhiệm vụ cho nó
+
+19
+00:01:35,980 --> 00:01:44,940
+phải áp dụng tư duy để yêu cầu ChatGPT tạo ra một cái Master Prompt để gửi cho cái con Google Flow để tạo ra một tool tự động tạo ảnh
+
+20
+00:01:44,940 --> 00:01:51,491
+ở đây tao dạy chúng mày code ra tool tự động tạo ảnh thì chúng mày phải tư duy là code ra tool tự động tạo video
+
+21
+00:01:51,491 --> 00:01:55,991
+Thì chúng mày thay đổi cho tao cái hình ảnh sang cái video nào được. Hiểu chưa?
+
+22
+00:01:56,251 --> 00:02:00,631
+Trong tool có nút thêm hình ảnh tham chiếu để có thể thêm nhiều hình ảnh ghi nhớ.
+
+23
+00:02:00,771 --> 00:02:10,891
+Nghĩa là ví dụ như là nếu chúng mày học được cái Master Prompt để yêu cầu nó, ví dụ như 5 nhân vật trong một cái câu chuyện hay là trong một bộ phim, nó sẽ nhất quán. Hiểu chưa?
+
+24
+00:02:11,000 --> 00:02:21,311
+Có các kích thước tạo ảnh 16.9, 4.3, 1.1, 3.4 và 9.16. Nghĩa là trong cái con Google Flow này này, khi chúng mày tạo ảnh từng một ảnh một đúng không?
+
+25
+00:02:21,491 --> 00:02:30,244
+Thì chúng mày nhìn thấy nó có một cái tác nhân như này, hình ảnh. Đúng không? Thì nó sẽ có các kích cỡ 16.9, 4.3, 1.1, 3.4 và 9.16. Và tiếp theo
+
+26
+00:02:30,244 --> 00:02:38,998
+là gì ạ? Có thể lựa chọn số ảnh cho từng prompt. Ví dụ như 1 ảnh, 2 ảnh, 3 ảnh, 4 ảnh. Thì nó sẽ chọn là nó tạo 4 ảnh
+
+27
+00:02:38,998 --> 00:02:47,751
+trên 1 prompt. Đấy, chúng mày phải tư duy cái câu prompt này cho tao. Tool sẽ tự động gửi ảnh tham chiếu nhân vật nếu có hình ảnh tham chiếu nhân vật.
+
+28
+00:02:47,751 --> 00:02:56,831
+Đây là câu yêu cầu là nếu chúng mày làm nhân vật tham chiếu để cho nó xuyên suốt một video của chúng mày đúng không? Thì chúng mày hãy áp dụng cái câu này vào. Hiểu chưa?
+
+29
+00:02:56,950 --> 00:03:05,950
+Yêu cầu tạo 5 prompt 1 lúc, nghĩa là nó sẽ tạo cho chúng mày 5 cái hình ảnh 1 lúc, thì nó sẽ là tự động và tạo liên tục, tốc độ tạo ảnh nhanh.
+
+30
+00:03:06,130 --> 00:03:13,330
+Tool có tên là Đại Gia Mang Dép, cái câu này thì chúng mày có thể thay là Tool có tên là Thằng Đéo Là cũng được, tên là gì cũng được.
+
+31
+00:03:13,510 --> 00:03:23,950
+Hiểu chưa? Tool có nút yêu cầu tải về file và thư mục để mình lựa chọn, thư mục bất kỳ, nghĩa là nó sẽ tự động tải về thư mục cho chúng mày, chúng mày không cần phải đi mẹ mà nằm thủ công nữa.
+
+32
+00:03:23,950 --> 00:03:33,823
+Hiểu chưa? Khi tải ảnh về có tool tự động, nhớ từng ảnh 1 để đánh dấu. Khi vào file, tool sẽ tự động tải ảnh đó về. Tool có giao diện đẹp, giao
+
+33
+00:03:33,823 --> 00:03:43,697
+diện bắt mắt, yêu cầu cho tôi một Master Prompt chi tiết để gửi cho Google Flow. Chúng mày copy nguyên cái câu này cho tao. Đây này. Đấy. Chúng mày nhấn sao chép.
+
+34
+00:03:43,697 --> 00:03:53,570
+Tao sẽ để cái này trong phần mô tả. Ở cái video này thì nó sẽ có phần mô tả ở góc 4 giờ chiều ấy. Chúng mày cứ nhìn kim đồng hồ này.
+
+35
+00:03:56,670 --> 00:03:58,170
+Đấy thì góc 4h chiều
+
+36
+00:03:58,170 --> 00:03:59,470
+Thì nó sẽ có phần mô tả
+
+37
+00:03:59,470 --> 00:04:02,870
+Đấy chúng mày vào cái file tài liệu này chúng mày cóp
+
+38
+00:04:02,870 --> 00:04:05,770
+Sau đó thì chúng mày dán luôn cho tao lên con ChatGPT nhé
+
+39
+00:04:05,770 --> 00:04:08,170
+Không cần thiết là chúng mày phải call
+
+40
+00:04:08,170 --> 00:04:10,470
+Chúng mày chỉ cần đặt ra cái yêu cầu là
+
+41
+00:04:10,470 --> 00:04:13,270
+Con Google Flow này nó có các thông số như nào
+
+42
+00:04:13,270 --> 00:04:16,470
+và nó có tác nhân như nào để tạo ra tool
+
+43
+00:04:16,470 --> 00:04:16,970
+hiểu chưa
+
+44
+00:04:16,970 --> 00:04:17,470
+đấy
+
+45
+00:04:17,470 --> 00:04:21,070
+nó sẽ đóng gói cho chúng mày một Master Prompt hoàn chỉnh
+
+46
+00:04:21,070 --> 00:04:23,970
+gồm giao diện luồng xử lý tạo ảnh tham chiếu
+
+47
+00:04:23,970 --> 00:04:26,370
+thì tao sẽ dạy code tool trước
+
+48
+00:04:26,370 --> 00:04:29,870
+sau đó là tao sẽ dạy cho chúng mày là nhất quán nhân vật như thế nào
+
+49
+00:04:29,870 --> 00:04:30,670
+để cho hiệu quả
+
+50
+00:04:30,670 --> 00:04:31,970
+nó code rất là nhanh nhé
+
+51
+00:04:31,970 --> 00:04:33,270
+thật ra là cái video này
+
+52
+00:04:33,270 --> 00:04:38,650
+Nói thật chúng mày là chúng mày không cần không bao giờ tìm thấy những cái video này ở trên mạng đâu
+
+53
+00:04:38,650 --> 00:04:39,150
+Hiểu chưa
+
+54
+00:04:39,410 --> 00:04:41,970
+Chỉ có thầy giáo đại gia mang dép của các em thôi
+
+55
+00:04:42,230 --> 00:04:42,750
+Hiểu không
+
+56
+00:04:43,000 --> 00:04:43,770
+Đấy
+
+57
+00:04:44,790 --> 00:04:48,110
+Bây giờ nó ra cho chúng mày một cái Master Prompt như thế này
+
+58
+00:04:48,370 --> 00:04:52,516
+Chúng mày thường thấy ở trên mạng nó chia sẻ những cái prompt rất là dài đúng không
+
+59
+00:04:52,516 --> 00:05:03,656
+Nhưng mà đéo phải đâu? Nó phải yêu cầu gì ạ? Yêu cầu ChatGPT mày viết ra cho tao một kịch bản, một Master Prompt để tạo ra một con chatbot học thuộc ghi nhớ.
+
+60
+00:05:03,856 --> 00:05:13,056
+Đấy, thì bây giờ là chúng mày đã nhìn thấy này. Nó sẽ tạo ra một cái file như này cho mày. Chúng mày chỉ cần dán cái câu lệnh kia vào là nó sẽ tạo ra cho chúng mày như thế này đúng không?
+
+61
+00:05:13,056 --> 00:05:21,883
+Nó sẽ tạo ra cho chúng mày hệ thống xử lý hoặc là tất cả những gì dựa vào cái trí thông minh của nó đã đóng vai thành
+
+62
+00:05:21,883 --> 00:05:30,709
+một người chuyên gia code tool. Yêu cầu tại sao? Xương rồng thì đơm lá đơm hoa, nước cao nguyên đông đầy sỏi đá là ngày đại gia
+
+63
+00:05:30,709 --> 00:05:39,536
+mang dép trở về nhà. Đây là một cái cách mà chúng mày áp dụng vào để tạo ra những cái tool trên tất cả những cái con AI.
+
+64
+00:05:39,536 --> 00:05:48,766
+Nếu có thumbnail nó cho chúng mày tạo những công cụ để chúng mày tạo ảnh hàng loạt, tạo video hàng loạt. Đó, hiểu chưa? Đấy, nó sẽ ra cho chúng mày một cái Master Prompt dài như
+
+65
+00:05:48,766 --> 00:05:57,996
+thế này. Chúng mày nghĩ là có những cái Master Prompt dài như thế này, bọn nó ngồi bọn nó viết ra, chẳng thằng nào rảnh luôn mà ngồi một ngày mà ngồi viết như thế này.
+
+66
+00:05:58,050 --> 00:06:07,450
+Viết nhưng mà chúng mày không hiểu được, kể cả không bao giờ chúng mày viết được. Nếu mà chúng mày là người mới, chúng mày bảo viết tất cả hai mấy tiêu chí như này, đéo gì quá
+
+67
+00:06:07,450 --> 00:06:16,850
+cái chuyện đấy. Nói chung là nó sẽ ra cho chúng mày một Master Prompt. Thì tất cả những cái gì mà yêu cầu trong cái câu lệnh thì tao đã ghi hết rồi. Thì bây giờ nha, nó
+
+68
+00:06:16,850 --> 00:06:26,000
+sẽ cho chúng mày như này, đúng không? Thì nó sẽ dài như này, một Master Prompt dài như này. Thì chúng mày chỉ cần copy cho tao này, nhấn sao chép này. Đấy nha, nhấn sao chép xong.
+
+69
+00:06:26,000 --> 00:06:30,310
+Thì bây giờ sang cho ta con Google Flow, đây là giao diện của nó.
+
+70
+00:06:30,870 --> 00:06:35,210
+Thì trong đó nó có một cái phần là phần công cụ này, phải nhìn vào cái con chuột nha.
+
+71
+00:06:35,990 --> 00:06:38,570
+Mẹ mày tao thao tác đến đâu thì con chuột nó di chuyển đến đấy.
+
+72
+00:06:38,990 --> 00:06:43,350
+Không phải là tao di chuyển phía bên trái mà mày nhìn phía bên phải đéo được đâu.
+
+73
+00:06:43,990 --> 00:06:45,050
+Đấy nhấn vào công cụ này.
+
+74
+00:06:45,830 --> 00:06:50,150
+Bây giờ là chúng mày là nhấn vào cho tao là tạo mới này.
+
+75
+00:06:50,490 --> 00:06:51,710
+Đấy có nút dấu cộng đấy.
+
+76
+00:06:51,890 --> 00:06:54,810
+Chúng mày dán toàn bộ câu Master Prompt vào đây.
+
+77
+00:06:56,250 --> 00:07:03,077
+Dán vào, thì nó sẽ gì ạ? Thì chúng ta sẽ gửi nguồn cho con Google Flow này, code
+
+78
+00:07:03,077 --> 00:07:09,903
+tool, nó gọi là chúng mày phải có một cái tư duy là, à, ChatGPT, để tạo ra một câu
+
+79
+00:07:09,903 --> 00:07:16,730
+Master Prompt yêu cầu dựa vào trí thông minh của người code tool mà mình đã giao nhiệm vụ.
+
+80
+00:07:16,730 --> 00:07:30,050
+Trước khi nó viết ra Master Prompt thì nó phải là trở thành một chuyên gia code tool. Ngoài ra là tao sẽ áp ra cho chúng mày tầm 20 bài về code tool để chúng mày áp dụng vào sản xuất video.
+
+81
+00:07:30,330 --> 00:07:36,730
+Đây là code tool này nó còn đơn giản. code tool đéo là nó cũng đơn giản. Nhưng mà chúng mày phải hiểu được kể cả chúng mày là người mới hay người cũ.
+
+82
+00:07:36,730 --> 00:07:47,730
+Chúng bạn đều có thể làm được áp dụng vào để tạo ảnh làm affiliate, áp dụng vào tạo ảnh để sản xuất những video về chim, về cò, về rừng, về núi.
+
+83
+00:07:48,296 --> 00:07:58,289
+Khi mà chúng mày có một list prompt không thể nào chúng mày ngồi chúng mày nhập từng prompt một vào. Đéo có chuyện đó xảy ra. Đấy. Thì chúng mày nó sẽ có một cái tool như này nhé. Trong các
+
+84
+00:07:58,289 --> 00:08:08,283
+tool nó sẽ có một cái chế độ giống nhau. Lúc nào mà nó có lỗi thì chúng mày nhấn vào nó tự fix cho chúng mày luôn. Thì nó sẽ ra tool như thế này cho chúng mày. Hiểu chưa?
+
+85
+00:08:08,283 --> 00:08:18,276
+Đây là một trong những cái cách mà nó sẽ ra cho chúng mày cái tool một cái này. Cái tool đại gia mang dép thì cái tên này nhé. Và đây này. Đây là thông số tỷ lệ khung hình này.
+
+86
+00:08:18,296 --> 00:08:28,183
+Đấy chúng mày có thể lựa chọn giống như cái Master Prompt đã yêu cầu. Hiểu chưa? Khóa định dạng đồng nhất nhân vật này, hệ thống này, nhập file này, tiến trình này, tham chiếu này, thư viện này. Thì nó sẽ ra cho
+
+87
+00:08:28,183 --> 00:08:38,069
+chúng mày một con tool nó kiểu giống như thế này. Ý là các chức năng nó sẽ giống nhau nhưng mà giao diện nó sẽ không giống nhau. Hiểu chưa? Giao diện mỗi thằng nó sẽ khác nhau. Tại vì câu prompt, câu
+
+88
+00:08:38,069 --> 00:08:47,956
+Master Prompt của nó ra không bao giờ hoàn chỉnh cả. Kể cả chúng mày tạo Video AI nó cũng thế. Và bây giờ là khi mà chúng ta đã fix xong như thế này nha. Thì bây giờ chúng ta sẽ làm gì ạ?
+
+89
+00:08:48,000 --> 00:08:58,476
+Tạo ra nhân vật tham chiếu để chúng mày nhất quán nhân vật 100 hình ảnh, 1.000 hình ảnh cũng được. Ví dụ, đây là Pinterest, chúng mày hay thấy những cái Stickman đúng không?
+
+90
+00:08:59,150 --> 00:09:06,937
+Stickman như này, kể cả người thật nhé, chúng mày có thể áp dụng cách này vào. Ví dụ như tao sẽ tải bất kỳ một
+
+91
+00:09:06,937 --> 00:09:14,723
+hình ảnh nào mà Stickman hơi dễ, bây giờ là tao phải cho là người thật. Ví dụ như Rumi đi, nhân vật mà cô
+
+92
+00:09:14,723 --> 00:09:22,510
+gái tao bảo luôn luôn hết trẻ. Chúng mày ghi nhớ cho tao nhân vật này nhé, tải cái hình ảnh này về. Tải về nhé.
+
+93
+00:09:22,510 --> 00:09:29,810
+Sau khi tải về xong, chúng mày nhớ cho tao là vào cho tao cái ChatGPT và chúng mày thêm hình ảnh lên.
+
+94
+00:09:31,070 --> 00:09:40,390
+Thêm hình ảnh Rumi này. Và bây giờ là đến với câu prompt tham chiếu. Cái này thì tao chỉ tư duy cho chúng mày những cái câu mà để chúng mày tạo ảnh nhất quán thôi.
+
+95
+00:09:40,790 --> 00:09:49,290
+Chứ không thể nào bảo là ui dợ anh ơi viết ra một cái câu chuyện xong rồi ngồi tạo ra cho em Master Prompt để phù hợp những cái hình ảnh vào trong câu chuyện đó đúng không?
+
+96
+00:09:49,290 --> 00:09:55,090
+Đúng không? Làm được nhưng mà tư duy của chúng mày, Master Prompt của chúng mày và thực chiến như thế nào?
+
+97
+00:09:55,210 --> 00:09:57,410
+Thì ví dụ như câu prompt này tao sẽ như sau.
+
+98
+00:09:57,690 --> 00:10:05,370
+Yêu cầu tạo cho tôi một Master Prompt để tạo cho tôi 100 prompt khi dùng hình ảnh này tạo lên Google Flow làm nhân vật tham chiếu.
+
+99
+00:10:05,370 --> 00:10:09,290
+Thay đổi cử chỉ hành động cho từng prompt, sáng tạo các bối cảnh cùng phong cách.
+
+100
+00:10:09,290 --> 00:10:16,050
+Các nhân vật tạo hình ảnh kích thước 16.9, nghĩa là chúng mày có thể tạo ảnh 9.16, 1.1, các thứ đều được.
+
+101
+00:10:16,050 --> 00:10:20,866
+Sáng tạo cho tôi một Master Prompt, trả 100 prompt chi tiết, không cần đánh dấu prompt.
+
+102
+00:10:20,866 --> 00:10:30,766
+Thì chúng mày copy câu này cho tao. Chúng mày dán cùng cái hình ảnh này. Thì bây giờ nó sẽ tạo ra cho chúng mày 1 Master Prompt, rồi tạo gì ạ? 100 cái prompt.
+
+103
+00:10:30,986 --> 00:10:38,366
+Không cần đánh dấu prompt nha, thì chúng ta sẽ có 1 cái list prompt. Khi đang chờ nó viết ra prompt như này, thì chúng ta sẽ vào cái Tool.
+
+104
+00:10:38,366 --> 00:10:48,286
+Thì nó sẽ có 1 cái hình ảnh là tham chiếu nhé. Thêm ảnh tham chiếu vào này. Chúng mày tải lên. Tải cái nhân vật này lên làm
+
+105
+00:10:48,286 --> 00:10:58,206
+ảnh tham chiếu để tí nữa nó sẽ tự động auto tạo ảnh. Chúng mày tư duy không? Nghĩa là bắt buộc chúng mày phải có 1 nhân vật.
+
+106
+00:10:58,206 --> 00:11:08,126
+Đấy, đây nhé. Chúng mày có thể xóa này được nhé. Nhưng hãy nhớ cho tao là phải có ảnh tham chiếu. Các tool nó đều giống nhau nhé.
+
+107
+00:11:08,366 --> 00:11:15,993
+Đây, nó sẽ ra cho chúng mày một Master Prompt như thế này, hiểu chưa? Nó sẽ có là tư thế này, biểu cảm này,
+
+108
+00:11:15,993 --> 00:11:23,619
+có bối cảnh này, nghĩa là câu prompt của tao yêu cầu rất ngắn, nhưng mà nó sẽ viết ra cho tao một cái
+
+109
+00:11:23,619 --> 00:11:31,246
+Master Prompt như thế này, thì chúng mày hiểu là cái tư duy của chúng mày luôn luôn phải đặt vấn đề về Master Prompt.
+
+110
+00:11:31,550 --> 00:11:33,990
+Nó phải có cái gì dài đó
+
+111
+00:11:34,000 --> 00:11:37,290
+100
+
+112
+00:11:37,290 --> 00:11:39,330
+prompt cho tôi
+
+113
+00:11:39,330 --> 00:11:45,690
+Đấy
+
+114
+00:11:45,690 --> 00:11:49,650
+Thì chúng mày chỉ cần gửi cho nó là tạo 100 prompt cho tôi
+
+115
+00:11:49,650 --> 00:11:52,310
+Thì bây giờ nó sẽ tạo cho chúng mày 100 prompt
+
+116
+00:11:52,310 --> 00:11:54,110
+Khi mà có cái master như này
+
+117
+00:11:54,110 --> 00:11:56,390
+Thì chúng mày sẽ yêu cầu
+
+118
+00:11:56,390 --> 00:11:59,310
+Thì các prompt nó sẽ không bao giờ bị gì ạ
+
+119
+00:11:59,310 --> 00:12:00,510
+Bị ngắn
+
+120
+00:12:00,510 --> 00:12:09,557
+Mẹ mày nhiều thằng tạo ra video AI, mẹ mày cái thì ngắn quá, cái thì dài quá. Đéo biết đâu mà lần em hiểu không? Đấy là một trong
+
+121
+00:12:09,557 --> 00:12:18,603
+những cái tư duy để các em làm gì ạ? Nhất quán nhân vật, kể cả chúng mày nhất quán cái đéo gì cũng được. Miễn là có những cái hình
+
+122
+00:12:18,603 --> 00:12:27,650
+ảnh mà nó sẽ vi phạm chính sách, ví dụ như người nổi tiếng hay là những nhân vật hở hang, thì nó sẽ bị vi phạm chứ, đúng không?
+
+123
+00:12:28,110 --> 00:12:29,510
+Thì chúng mày làm bằng cách gì hả?
+
+124
+00:12:29,930 --> 00:12:33,970
+Cách là chúng mày sẽ tạo ra những cái nhân vật mà chúng mày có thể ghép vào.
+
+125
+00:12:34,590 --> 00:12:37,450
+Ví dụ như thế giới động vật làm sao để nhất quán được bối cảnh.
+
+126
+00:12:37,450 --> 00:12:38,810
+Nó quá đơn giản.
+
+127
+00:12:39,490 --> 00:12:45,450
+Khi chúng mày hiểu được, tư duy được là ok.
+
+128
+00:12:46,010 --> 00:12:47,350
+Thì chúng ta sẽ đợi.
+
+129
+00:12:47,350 --> 00:12:54,370
+nó tạo ra 100 prompt rồi tôi nói tiếp cái đoạn này tôi sẽ tua nhé đây đợi một lúc thì nó sẽ ra cho chúng
+
+130
+00:12:54,370 --> 00:13:01,810
+mày 100 prompt nhân vật như thế này chúng mày phải nhìn nhé tất cả 100 prompt 1000 prompt nó đều có một
+
+131
+00:13:01,810 --> 00:13:07,350
+cái chế độ dài như nhau này chứ không phải cái prompt của chúng mày mẹ mày ngắn ngủ như này thì làm làm
+
+132
+00:13:07,350 --> 00:13:08,890
+cái đéo gì đúng không
+
+133
+00:13:08,890 --> 00:13:10,790
+đấy thì chúng mày copy cho tao
+
+134
+00:13:10,790 --> 00:13:12,000
+100 cái prompt này nha
+
+135
+00:13:12,000 --> 00:13:13,842
+nhấn sao chép này
+
+136
+00:13:13,842 --> 00:13:23,682
+Đấy nhá, đấy là 100 prompt nhá. Thì bây giờ là ở trên cái tool của chúng mày, chúng mày dán vào đây, dán vào và phân tích này. Đấy, thì nó sẽ
+
+137
+00:13:23,682 --> 00:13:33,522
+ra cho chúng mày là 100 prompt như này đúng không? Thì bây giờ là chúng mày chỉ nhấn cho tao là bắt đầu tạo. Thì bây giờ là gì ạ? Nó sẽ tự
+
+138
+00:13:33,522 --> 00:13:43,362
+động auto cho chúng mày. Auto cho chúng mày. Thì bây giờ là gì ạ? Nó sẽ lấy từng 5 cái prompt 1 nhá. Đây ạ, đang chạy 1 lúc 5 prompt nhá.
+
+139
+00:13:43,842 --> 00:13:51,175
+Chúng mày có thể nhìn thấy ở đây. Đấy, bây giờ nha, chúng mày nhìn cho tao là nó sẽ chạy một lúc tầm 5 prompt như
+
+140
+00:13:51,175 --> 00:13:58,509
+này. Nghĩa là chúng mày có thể là nó chạy xong 5 prompt, nó sẽ chạy 5 prompt tiếp và chúng mày không cần phải ngồi,
+
+141
+00:13:58,509 --> 00:14:05,842
+chúng mày ngồi, quy trình làm gì cả. Hiểu chưa? Thì nó sẽ ra cho chúng mày nhân vật như thế này. Chúng mày nhìn thấy chưa?
+
+142
+00:14:06,100 --> 00:14:13,400
+5 prompt tiếp theo thì nó sẽ tự động tải về luôn thư mục cho chúng mày không phải chúng mày phải ngồi tải nữa thì
+
+143
+00:14:13,400 --> 00:14:20,700
+đây là một trong những cái nhất quán nhân vật chúng mày áp dụng cái tư duy vào để tạo ra những cái hình ảnh.
+
+144
+00:14:20,700 --> 00:14:26,500
+Phong cách thực tế như thế nào nó tự động tải về cho chúng mày như thế này này.
+
+145
+00:14:26,500 --> 00:14:35,110
+Nói chung là cái này là chúng mày có thể auto bằng tất cả các công cụ ví dụ như Stickman các thứ đều được áp dụng vào cái
+
+146
+00:14:35,110 --> 00:14:43,720
+tư duy này để tạo ra được những cái câu chuyện story của mình. Đây là một quy trình tạo tool thực tế. Chào các em yêu của thầy.

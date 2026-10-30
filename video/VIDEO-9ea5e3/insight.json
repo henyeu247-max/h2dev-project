@@ -1,0 +1,79 @@
+{
+  "sku": "VIDEO-9ea5e3",
+  "title": "TÚT (MẸO) HƯỚNG DẪN CÁCH KHẮC PHỤC GÃY VIEW MỚI NHẤT 2026",
+  "actual_topic": "TÚT (MẸO) HƯỚNG DẪN CÁCH KHẮC PHỤC GÃY VIEW MỚI NHẤT 2026",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Bán Content & Phát Triển Kênh",
+  "niche_id": "faceless-general",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "key_takeaways": [
+    "Hiện tượng 'gãy view' (video đang có hàng chục nghìn view đột ngột tụt về 0 - vài chục view) là bài toán phổ biến trong thuật toán 2026.",
+    "Nguyên nhân cốt lõi của gãy view: Kênh bị gãy tệp phân phối do đăng video lệch chủ đề, chỉ số CTR tụt dốc thảm hại, hoặc bị quét bản quyền ngầm.",
+    "Tút khắc phục: Lập tức rà soát 3 video gần nhất, đối chiếu nguồn lưu lượng truy cập (Traffic Sources) trong YouTube Studio.",
+    "Kỹ thuật nối lại luồng đề xuất: Đăng một video 'mồi' đúng ngách gốc có CTR cực cao kết hợp ghim bình luận và màn hình kết thúc kéo view sang video cũ.",
+    "Kiên nhẫn duy trì nhịp đăng đều đặn từ 3 - 5 video chuẩn ngách để huấn luyện lại thuật toán phân phối tệp."
+  ],
+  "edit_sop": {
+    "primary": "Bốn cách khắc phục gãy view cho kênh YouTube video dài từ kinh nghiệm tác giả",
+    "additional": [
+      "Chuyển đổi kênh thương hiệu: tạo kênh mới cùng tên, rồi di chuyển kênh đến tài khoản thương hiệu và bấm thay thế",
+      "Ngưng video dài, chuyển sang short rồi quay lại video dài",
+      "Giảm thời lượng video xuống còn khoảng 8 đến 10 phút",
+      "Giảm tần suất đăng, đăng 2 ngày một video trong khoảng một tuần",
+      "Add thêm một mail khác làm chủ sở hữu kênh để phòng mail chính bị die"
+    ]
+  },
+  "avoid_flags": [
+    "Không dùng chuyển đổi kênh thương hiệu cho kênh đã gãy view lâu, chỉ dùng khi vừa mới gãy 2-3 hôm",
+    "Khi bị flop đừng đăng spam một ngày một video",
+    "Không áp dụng cả 4 cách cùng lúc, thử riêng từng cách",
+    "Ngách không trend, không ai tìm kiếm thì không có view là do ngách, không phải gãy view"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "YouTube Studio"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Tổng quan nội dung bài giảng và mục tiêu thực hành"
+    },
+    {
+      "time": "03:00",
+      "seconds": 180,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "05:46",
+      "seconds": 346,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "08:25",
+      "seconds": 505,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "11:31",
+      "seconds": 691,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-9ea5e3/transcript.txt",
+  "sop_steps": [
+    "Chuyển đổi kênh thương hiệu: tạo kênh mới cùng tên, rồi di chuyển kênh đến tài khoản thương hiệu và bấm thay thế",
+    "Ngưng video dài, chuyển sang short rồi quay lại video dài",
+    "Giảm thời lượng video xuống còn khoảng 8 đến 10 phút",
+    "Giảm tần suất đăng, đăng 2 ngày một video trong khoảng một tuần",
+    "Add thêm một mail khác làm chủ sở hữu kênh để phòng mail chính bị die"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

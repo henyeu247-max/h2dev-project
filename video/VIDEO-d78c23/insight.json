@@ -1,0 +1,122 @@
+{
+  "sku": "VIDEO-d78c23",
+  "title": "Nhìn lại 10 năm Youtube 2015-2025",
+  "Summary": "Bức tranh toàn cảnh 10 năm tiến hóa của thuật toán và chính sách kiếm tiền YouTube tại Việt Nam (2015–2025) qua hơn 12 đợt thay đổi lớn chia làm 5 giai đoạn: (1) 2015–2016: Thời kỳ 'View là vua' kết thúc, chuyển sang Watch Time; (2) 2017–2018: Cú sốc Adpocalypse siết nội dung thân thiện nhà quảng cáo, nâng chuẩn YPP lên 1.000 sub + 4.000 giờ xem và xuất hiện trạng thái vàng tiền (Limited Ads); (3) 2019–2020: Thanh lọc kênh Kid sau án phạt FTC và ưu tiên Session Time (xâu chuỗi nội dung qua End Screen/Cards cùng công thức chèn MC người thật ở 3 vị trí đầu - giữa - cuối để trị vàng tiền); (4) 2021–2024: Bùng nổ Shorts và kỷ nguyên vàng của AI (ChatGPT, ElevenLabs, PlayHT) giúp nhân bản kênh Faceless ra toàn cầu; (5) 2025: Đại thanh lọc AI vô hồn (Reused Content & Mass-Produced Content) và sự lên ngôi của mô hình Human-First Faceless Model (kết hợp Editorial Judgment, Creative Transformation và vận hành bài bản như doanh nghiệp).",
+  "tools_mentioned": [
+    "ChatGPT",
+    "Google Ads",
+    "ElevenLabs",
+    "PlayHT",
+    "vidIQ"
+  ],
+  "channels_mentioned": [
+    "@MasterPhungPhuong",
+    "@ThayTamNguyen"
+  ],
+  "course_docs": [
+    {
+      "title": "1. GODA — Quy Trình Triển Khai Kênh YouTube Chuẩn 2025",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/1._GODA_-_QUY_TRINH_TRIEN_KHAI_KENH.pdf",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/1._GODA_-_QUY_TRINH_TRIEN_KHAI_KENH.pdf.md",
+      "link": "https://drive.google.com/file/d/1Oez2iFNDTxAt-oWznLzKXLbj_AaJgtPs/view"
+    },
+    {
+      "title": "SEO YouTube Checklist — Bảng Kiểm Tối Ưu Hóa Kênh & Video Toàn Diện",
+      "file": "assets/docs-huan/SEO_Youtube_Checklist_.xlsx",
+      "readFile": "assets/docs-huan/SEO_Youtube_Checklist_.xlsx.md",
+      "link": "https://drive.google.com/file/d/1KbRWbYoNXTNduMPsTuN42CyEfl0QQWfP/view"
+    },
+    {
+      "title": "7 Bước Thành Công Với YouTube — Bí Mật Kiếm Tiền YouTube",
+      "file": "assets/docs-huan/7_buoc_thanh_cong_voi_Youtube_-_BI_MAT_KIEM_TIEN_YOUTUBE_.pdf",
+      "readFile": "assets/docs-huan/7_buoc_thanh_cong_voi_Youtube_-_BI_MAT_KIEM_TIEN_YOUTUBE_.pdf.md",
+      "link": "https://drive.google.com/file/d/1DjL8FIY0VknSZcn9W1m2WYltKXmTDh27/view"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:55",
+      "label": "Bối cảnh 10 năm YouTube chính thức bật kiếm tiền tại Việt Nam (2015–2025) và giai đoạn sơ khai 2015–2016 cứ lên view là ăn tiền qua thủ thuật nuôi playlist, chạy Google Ads",
+      "seconds": 55
+    },
+    {
+      "time": "03:26",
+      "label": "Cú sốc kiếm tiền 2017–2018 (Adpocalypse): Siết chặt chính sách quảng cáo, xuất hiện trạng thái vàng tiền (Limited Ad) và tụt RPM hàng trăm lần khiến nhiều người rời cuộc chơi",
+      "seconds": 206
+    },
+    {
+      "time": "05:29",
+      "label": "Đợt thanh lọc kênh Kid năm 2019–2020 sau vụ kiện quảng cáo thương hiệu lớn và bài học kiên trì làm nội dung trắng của Sconnect (Woofu)",
+      "seconds": 329
+    },
+    {
+      "time": "07:42",
+      "label": "Giải pháp vượt bão vàng tiền 2019–2021: Đưa người thật (MC) dẫn ở 3 vị trí đầu, giữa và cuối video kết hợp nối vòng tròn hệ thống màn hình kết thúc và thẻ card",
+      "seconds": 462
+    },
+    {
+      "time": "12:40",
+      "label": "Thời kỳ vàng 2023–2024 khi ChatGPT, ElevenLabs, PlayHT bùng nổ giúp thay thế quy trình phòng thu thủ công và nhân bản các ngách sức khỏe, lịch sử, phong thủy, triết lý ra toàn cầu",
+      "seconds": 760
+    },
+    {
+      "time": "17:37",
+      "label": "Làn sóng spam AI đầu năm 2025 và lộ trình YouTube quét theo chủ đề từ tháng 7 đến tháng 12/2025 (tin tức, bầu cử, y tế, trẻ vị thành niên, đến story 1-2 ảnh bị gắn lỗi nội dung không trung thực)",
+      "seconds": 1057
+    },
+    {
+      "time": "20:37",
+      "label": "Sự dịch chuyển cốt lõi năm 2025 sang nội dung nguyên bản (Authentic): Phân biệt kênh Faceless rác với kênh Faceless có kịch bản, insight và vận hành YouTube như một doanh nghiệp",
+      "seconds": 1237
+    },
+    {
+      "time": "23:46",
+      "label": "Giải mã lý do 90% kênh Faceless chết năm 2025 (nội dung tái sử dụng không tạo giá trị mới, sản xuất hàng loạt bằng tool 200 video/ngày) và mô hình sống sót Human-First Faceless Model",
+      "seconds": 1426
+    },
+    {
+      "time": "30:11",
+      "label": "Bài học kinh doanh bền vững từ thị trường thực tế (bỉm sữa chính ngạch COCQ, chuỗi nhà hàng đóng thuế 100%) trong năm thanh lọc toàn diện 2025",
+      "seconds": 1811
+    }
+  ],
+  "key_takeaways": [
+    "Lịch sử 10 năm YouTube (2015–2025) chứng minh quy luật bất biến: Mọi thủ thuật lách luật (reup, kéo playlist, spam tool 200 video/ngày) đều bị xóa sổ sau mỗi chu kỳ cập nhật; chỉ những người làm nội dung trắng (như Sconnect hay hệ thống GODA) mới trụ vững và lớn mạnh",
+    "Công thức hóa giải 'vàng tiền' (Limited Ads) và tăng Session Time giai đoạn 2019–2021: Đưa MC người thật xuất hiện ở 3 điểm (đầu, giữa, cuối video) để chứng minh tính nguyên bản, kết hợp thiết kế End Screen và Thẻ Card nối vòng tròn giữ chân người xem trên kênh",
+    "Năm 2025 YouTube không cấm AI và không cấm kênh Faceless, nhưng thẳng tay tiêu diệt 'AI vô hồn' thông qua 2 án phạt cốt lõi: Reused Content (thiếu phán đoán biên tập Editorial Judgment & chuyển hóa sáng tạo Creative Transformation) và Mass-Produced Content (thiếu dấu vân tay con người Human Fingerprint)",
+    "Lộ trình quét theo từng ngách chủ đề nửa cuối năm 2025 diễn ra tuần tự từ tháng 7 đến tháng 12: khởi đầu từ Tin tức giả/Bầu cử/Chính trị -> Y tế/Sức khỏe -> Trẻ vị thành niên -> Финансы/Tài chính -> và cuối cùng là dòng kênh Story chỉ treo 1–2 bức ảnh tĩnh (bị gắn nhãn Inauthentic Content)",
+    "Mô hình sống sót và thắng lớn từ năm 2025 trở đi là Human-First Faceless Model: con người nắm giữ Insight, góc nhìn phản biện và cấu trúc biên tập, còn AI chỉ đóng vai trò công cụ tăng tốc thực thi; vận hành hệ thống kênh minh bạch như một doanh nghiệp chính ngạch"
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước chuyển đổi từ kênh Faceless sản xuất hàng loạt sang mô hình Human-First Faceless Model chuẩn chính sách YouTube 2025",
+    "additional": [
+      "Loại bỏ hoàn toàn tư duy dùng tool tự động cào kịch bản và ghép 1–2 ảnh tĩnh sản xuất hàng loạt (Mass-Produced Content) để tránh án phạt Inauthentic Content",
+      "Đưa yếu tố Editorial Judgment (phán đoán biên tập) và Creative Transformation (chuyển hóa sáng tạo) của con người vào khâu lập dàn ý: mỗi video phải có góc nhìn mới, luận điểm riêng và giải quyết đúng nỗi đau người xem",
+      "Tạo dấu vân tay con người (Human Fingerprint) rõ nét trong khâu hậu kỳ: đa dạng hóa nhịp dựng, kết hợp B-roll/chuyển động linh hoạt và có thể lồng ghép dẫn chuyện hoặc bình luận thực tế",
+      "Thiết lập hệ thống điều hướng giữ chân khán giả (Session Time) bằng cách gắn Màn hình kết thúc (End Screen) và Thẻ gợi ý (Cards) dẫn dắt có chủ đích sang chuỗi video liên quan trên kênh",
+      "Chuẩn hóa hoạt động sản xuất YouTube như một doanh nghiệp thực thụ: lựa chọn ngách nội dung trắng bền vững, tuân thủ nguyên tắc bản quyền và đầu tư chất lượng chiều sâu thay vì chạy theo số lượng rác"
+    ]
+  },
+  "sop_steps": [
+    "Loại bỏ hoàn toàn tư duy dùng tool tự động cào kịch bản và ghép 1–2 ảnh tĩnh sản xuất hàng loạt (Mass-Produced Content) để tránh án phạt Inauthentic Content",
+    "Đưa yếu tố Editorial Judgment (phán đoán biên tập) và Creative Transformation (chuyển hóa sáng tạo) của con người vào khâu lập dàn ý: mỗi video phải có góc nhìn mới, luận điểm riêng và giải quyết đúng nỗi đau người xem",
+    "Tạo dấu vân tay con người (Human Fingerprint) rõ nét trong khâu hậu kỳ: đa dạng hóa nhịp dựng, kết hợp B-roll/chuyển động linh hoạt và có thể lồng ghép dẫn chuyện hoặc bình luận thực tế",
+    "Thiết lập hệ thống điều hướng giữ chân khán giả (Session Time) bằng cách gắn Màn hình kết thúc (End Screen) và Thẻ gợi ý (Cards) dẫn dắt có chủ đích sang chuỗi video liên quan trên kênh",
+    "Chuẩn hóa hoạt động sản xuất YouTube như một doanh nghiệp thực thụ: lựa chọn ngách nội dung trắng bền vững, tuân thủ nguyên tắc bản quyền và đầu tư chất lượng chiều sâu thay vì chạy theo số lượng rác"
+  ],
+  "avoid_flags": [
+    "Ghép video stock có sẵn với giọng đọc AI theo một khuôn mẫu cố định mà không có góc nhìn biên tập mới (dính lỗi Reused Content)",
+    "Sử dụng tool tự động tạo hàng trăm video mỗi ngày với kịch bản na ná nhau và chỉ treo 1–2 ảnh tĩnh (dính lỗi Mass-Produced / Inauthentic Content)",
+    "Đi vào các ngách nhạy cảm bị YouTube quét gắt (tin tức chính trị giả mạo, phác đồ y khoa không kiểm chứng, nội dung vi phạm an toàn trẻ em)",
+    "Làm YouTube theo tư duy ăn xổi, đánh quả ngắn hạn thay vì xây dựng hệ thống nội dung bài bản có giá trị tích lũy như một doanh nghiệp"
+  ],
+  "source_transcript": "video/VIDEO-d78c23/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "actual_topic": "Tổng kết 10 năm lịch sử thuật toán và chính sách kiếm tiền YouTube tại Việt Nam (2015–2025) qua 12 đợt thay đổi lớn, phân tích làn sóng quét AI spam/nội dung không trung thực năm 2025 và mô hình Human-First Faceless Model lấy con người làm lõi.",
+  "category_group": "he_thong",
+  "niche_primary": "Chiến lược Hệ thống & Lịch sử Chính sách YouTube (2015-2025)",
+  "niche_id": "he_thong_youtube",
+  "target_market": "Việt Nam",
+  "market_code": "VN"
+}

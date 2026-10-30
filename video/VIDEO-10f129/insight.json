@@ -1,0 +1,83 @@
+{
+  "sku": "VIDEO-10f129",
+  "title": "SHARE KEY NGÁCH NHỎ VIEW VIỆT BÁN CONTENT VÀ HƯỚNG DẪN TƯ DUY ÁP DỤNG LÀM NHÂN BẢN THỊ TRƯỜNG KHÔNG BAO GIỜ LO THIẾU KỊCH BẢN CONTENT",
+  "actual_topic": "Chia sẻ 2 ngách nhỏ bán content view Việt (Triết lý cổ nhân & Sức khỏe tuổi già) và quy trình nhân bản thị trường Nhật - Hàn - US không lo thiếu kịch bản",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Sức Khỏe & Dinh Dưỡng",
+  "niche_id": "faceless-general",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Phân tích kênh mẫu Triết lý cổ nhân (@trihueconhan-vn): Kênh mới làm từ 4 tuần trước, mới chỉ đăng 21 video nhưng đã có video nổ 75k view và đang bật kiếm tiền có quảng cáo chạy.",
+    "Cảnh báo về cách edit hình ảnh 3D/2D và hướng đi an toàn: Kênh mẫu thứ nhất dùng ảnh 3D, 2D hoạt hình kết hợp video tự nhiên, nhưng tác giả khuyên không nên làm theo ảnh 3D/2D mà hãy ghép các video tự nhiên thực tế để an toàn hơn trước đợt quét kênh của YouTube.",
+    "Cách chọn kịch bản thắng lợi qua video cao view và chỉ số VPH: Khi khai thác kịch bản trên kênh đối thủ, luôn bám sát vào những video đạt nhiều lượt xem nhất kết hợp kiểm tra chỉ số VPH cao bằng tiện ích vidIQ.",
+    "Quy trình nhân bản thị trường sang Nhật, Hàn, US bằng Google Dịch: Sao chép tiêu đề video tiếng Việt (ví dụ chủ đề trang phục, ăn mặc thu hút), dịch sang tiếng Nhật bằng Google Dịch rồi tìm trên YouTube sẽ ra ngay các kênh Nhật làm từ 2 tuần trước; từ đó lấy kịch bản dịch ngược về tiếng Việt và dùng Gemini viết lại theo văn phong, ngữ điệu người Việt.",
+    "Kênh mẫu thứ hai về Sức khỏe người già (@BàiHọcTuổiGià-VN) và kỹ thuật Clone giọng đọc: Kênh lập đúng tròn 1 tháng, áp dụng đúng cách edit ghép video tự nhiên tác giả đã hướng dẫn; đặc biệt khi làm thị trường Việt nên clone giọng đọc của đối thủ hoặc giọng đọc hay để tăng chất lượng giữ chân người xem."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình nhân bản thị trường (Việt - Nhật - Hàn - US) kết hợp Gemini Việt hóa kịch bản, ghép video tự nhiên và clone giọng đọc",
+    "additional": [
+      "Truy cập kênh đối thủ, lọc các video cao view nhất kết hợp chỉ số VPH cao để chọn chủ đề kịch bản.",
+      "Sao chép tiêu đề video, dùng Google Dịch chuyển sang tiếng Nhật (hoặc tiếng Hàn, tiếng Anh) rồi dán lên thanh tìm kiếm YouTube để tìm kho kênh ngoại cùng ngách.",
+      "Lấy kịch bản từ các kênh thị trường Nhật/Hàn/US đem về dịch sang tiếng Việt, đưa vào Gemini yêu cầu viết lại theo đúng chất văn, ngữ điệu và ngữ cảnh của người Việt Nam.",
+      "Dựng hình bằng cách ghép các đoạn video tự nhiên thực tế (như cách làm của kênh @BàiHọcTuổiGià-VN), tránh ghép ảnh 3D hoặc 2D hoạt hình.",
+      "Sử dụng công cụ clone giọng đọc của đối thủ hoặc một giọng đọc truyền cảm tại thị trường Việt để nâng cao tỷ lệ giữ chân khán giả."
+    ]
+  },
+  "avoid_flags": [
+    "Không nên bắt chước việc ghép ảnh 3D hoặc 2D hoạt hình như kênh mẫu thứ nhất; bắt buộc ưu tiên ghép video tự nhiên thực tế để bảo đảm an toàn trước đợt quét mạnh của YouTube.",
+    "Khi dịch kịch bản từ thị trường Nhật/Hàn về Việt Nam, tránh dùng bản dịch thô máy móc mà phải qua Gemini biên tập lại đúng văn phong và ngữ cảnh người Việt."
+  ],
+  "tools_mentioned": [
+    "Google Dịch",
+    "YouTube",
+    "Google",
+    "Gemini",
+    "VidIQ"
+  ],
+  "channels_mentioned": [
+    "@trihueconhan-vn",
+    "@BàiHọcTuổiGià-VN"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân tích kênh Triết lý cổ nhân (@trihueconhan-vn) 4 tuần 21 video nổ 75k view"
+    },
+    {
+      "time": "01:28",
+      "seconds": 88,
+      "label": "Cách chọn kịch bản theo video cao view nhất và chỉ số VPH trên vidIQ"
+    },
+    {
+      "time": "02:12",
+      "seconds": 132,
+      "label": "Thực hành dịch tiêu đề sang tiếng Nhật trên Google Dịch để tìm kênh gốc Nhật Bản"
+    },
+    {
+      "time": "03:08",
+      "seconds": 188,
+      "label": "Dùng Gemini chuyển thể kịch bản tiếng Nhật sang văn phong và ngữ cảnh Việt Nam"
+    },
+    {
+      "time": "04:16",
+      "seconds": 256,
+      "label": "Khảo sát kênh @BàiHọcTuổiGià-VN (1 tháng) và lời khuyên dùng Clone giọng đọc"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-10f129/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-24",
+  "sop_steps": [
+    "Truy cập kênh đối thủ, lọc các video cao view nhất kết hợp chỉ số VPH cao để chọn chủ đề kịch bản.",
+    "Sao chép tiêu đề video, dùng Google Dịch chuyển sang tiếng Nhật (hoặc tiếng Hàn, tiếng Anh) rồi dán lên thanh tìm kiếm YouTube để tìm kho kênh ngoại cùng ngách.",
+    "Lấy kịch bản từ các kênh thị trường Nhật/Hàn/US đem về dịch sang tiếng Việt, đưa vào Gemini yêu cầu viết lại theo đúng chất văn, ngữ điệu và ngữ cảnh của người Việt Nam.",
+    "Dựng hình bằng cách ghép các đoạn video tự nhiên thực tế (như cách làm của kênh @BàiHọcTuổiGià-VN), tránh ghép ảnh 3D hoặc 2D hoạt hình.",
+    "Sử dụng công cụ clone giọng đọc của đối thủ hoặc một giọng đọc truyền cảm tại thị trường Việt để nâng cao tỷ lệ giữ chân khán giả."
+  ]
+}

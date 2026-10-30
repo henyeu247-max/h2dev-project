@@ -1,0 +1,353 @@
+Hello anh em, về phần VPS thì thực ra nó có rất nhiều quan điểm về việc là dùng nên dùng hay không. Một số anh em thì họ vẫn dùng theo cách truyền thống là
+một trong một cái máy họ có thể login đến cả mấy chục kênh, cả trăm kênh. Có những anh em thì họ chọn là Proxy để cho nó rẻ, nó tối ưu chi phí.
+Tuy nhiên thì với GODA thì mình luôn hướng đến là xây dựng một cái nền nó vững chắc, nó vẫn chắc từ những cái nhỏ nhất, từ những cái bảo mật rồi là phần kênh,
+Vậy nên là bên mình cũng làm VPS bản thân mình làm VPS từ 2017 đến bây giờ thì mình cũng kiểm chứng là có những con VPS dùng đến bây giờ 8-9
+năm rồi thì nó vẫn còn nguyên nó không bị làm sao cả đến bây giờ vẫn 1 IP và 1 cái con máy đấy 1 con máy ảo đấy nó không
+bị ảnh hưởng đấy thì mình thấy là nó nó có sự ổn định như thế thì mình cũng yên tâm hơn phần nào so với là là proxy hay là những cái
+Cái dạng khác. Anh em làm ít thì có thể là không phải quan tâm quá phần này nhưng anh em đã làm đến vài kênh hoặc chục kênh thì cũng sẽ cần phải rất là kỹ ở phần này.
+Đặc biệt là về phần khi mà nó có chính sách mới từ tháng 7 đến bây giờ, nó có chính sách là quét những kênh liên quan.
+liên quan thì bất kỳ khi mà anh em dính một cái lỗi nào đó liên quan đến kênh mà nó bị mà phát thôi thì gần như là có thể bị quét bay cả hệ thống luôn
+thì đấy là một cái phần rất là đáng lưu tâm
+dưới mấy kênh thì nên chứ nên dùng để nó tách ra
+Anh em vẫn có lựa chọn riêng của anh em thôi. Nếu mà mình dùng mà nó cảm thấy ổn thì mình vẫn cứ dùng. Không có ai bắt
+ép cả. Bởi vì nó là cái niềm tin của mỗi người. Bên mình thì cũng làm rất là nhiều. Bây giờ quản lý khoảng 1.000 cái mail. Một
+cái mail bao gồm mail gốc, mail quản trị, GA các thứ. Dùng rất là nhiều. Có khoảng hơn 100 con VPS rồi. Chấm 2, chấm 3 con này.
+Anh em cứ để phần hỏi đáp tí nữa mình sẽ đến phần hỏi đáp nhé. Có hỏi để sau nhé, sẽ có phần hỏi đáp riêng.
+Phần hỏi đáp bao gồm về tất cả các hỏi liên quan đến VPS và bảo mật.
+Hôm nay sẽ là một cái Zoom dự định là mình tổ chức từ trước đó cơ nhưng mà liên quan đến
+phần VPS để cung cấp đến anh em thì cái giải pháp mình đã test từ tháng 7 đến bây giờ
+Họp đồng hơi lâu một chút, đến hôm nay với Chốt được lịch, có tuần rồi Chốt được lịch và hôm nay thì anh em mới ngồi Zoom với nhau, chia sẻ.
+Đây là những phần mà chính mình đang làm, đang thấy nó hiệu quả và nó đảm bảo an toàn cho hệ thống nên là mình chia sẻ với anh em.
+Ở cái mảng MMO này thì cũng muốn lưu ý với anh em là nó không có đúng, không có sai.
+Mỗi anh em sẽ có một góc nhìn và mỗi anh em một quan điểm khác nhau.
+Vậy là anh em hãy tham khảo cái cách này là cách của GODA nhé.
+Mình không đại diện tất cả anh em nào hay là trường phái nào cả.
+Chỉ là cái cách mình làm thôi.
+Đó đảm bảo an toàn thôi.
+Anh em nhìn thấy màn hình nhỉ? Anh em nhìn thấy rồi thì gõ phím 1 nhé. Ok ok. Phần này là quản trị bảo mật kênh YouTube theo mô hình của GODA mình đang triển khai bây giờ nhé.
+Đầu tiên là về phần tư duy quản trị cốt lõi. VPS trong hệ thống của mình thì mình coi nó không chỉ là một cái máy ảo mà nó là một cái tài sản để nó chứa cái email, làm kênh, chứa kênh YouTube.
+và hiện tại thì mình đang dùng nó để chứa cả tài khoản Google AdSense nữa luôn.
+Nguyên tắc vàng khi mình sử dụng cái VPS này, máy chủ ảo này thì nó là một hệ sinh thái khép kín.
+Thì cái mục tiêu của mình khi mình dùng VPS, mình cũng test rất là nhiều, mình test Proxy, test cả GPMLogin, anh em hay bảo cái đấy.
+Thì bên mình có test hết, mình sử dụng hết.
+thì GPMLogin mà dùng với sim 4G thì cũng được nhưng thực ra thì nếu như mà dùng nhiều sim như thế thì nó cũng không ổn lắm
+xây dạng phone farm thì nó cũng không ổn lắm về mặt tối ưu và nó không chủ động lắm nên là mình không thích mình test không ổn lắm
+Proxy thì nó thiếu sự ổn định nên mình không dùng.
+Mục tiêu ở đây là tránh liên đới, tránh bị quét hàng loạt, tăng độ tin cậy lâu dài.
+Đợt vừa qua sau tháng 7 thì anh em thấy là có những hệ thống bay cả một hệ thống luôn.
+Bên bay cả hệ thống bởi vì là bị quét lan.
+Thì cái bản chất của cái quét lan là gì? Thì họ sẽ quét một là những cái thông tin mà cái người đó đang đăng ký.
+Ví dụ như mình đăng ký với cái tên của mình đi, Hoàng đi, với cái số điện thoại đấy và các email đấy. Lại còn chung một
+IP và chung cái fingerprint là cái nhận diện của mình ấy. Với cái thao tác tay của mình và mọi thứ, lịch sử các thứ ấy.
+Về sau khi một kênh gặp sự cố bị die chết vì một lý do nào đó thì tất cả các kênh khác đều bị
+thì nó quá rủi ro khi mà mình dùng chung một cái IP và nhiều kênh như đó
+thế này cứ là mục tiêu của nó
+và về dài hạn thì bởi vì là VPS nó rất là
+mình cảm nhận nó rất là an toàn và nó rất là ổn định
+Vì vậy nên là về dài hạn với 1 email chỉ để trên 1 con VPS thì nó cũng sẽ tốt hơn rất là nhiều.
+Tiếp theo đó là phần quản trị bảo mật kênh với VPS.
+Phần này thì mình cần phải phân loại rõ 2 loại email nhé.
+2 loại email. Bên mình thì dùng VPS, nên là mình chia sẻ cho VPS, thì nó có 2 loại email. Đầu tiên nó là email gốc nè.
+Email gốc là gì? Là email mình dùng để mình nuôi rồi mình tạo kênh trên cái email đó. Tạo kênh nhé, chủ sở hữu chính của kênh ấy.
+Tạo ra cái kênh đó. Quản trị kênh đó. Và backup. Thì thông thường là email gốc này thì mình chỉ tạo kênh và sau đó mình xác minh 3 dòng rồi setup đủ các thứ.
+và mình để không nó thôi, mình không dùng đến luôn. Cái email này thỉnh thoảng vào check, đọc email rồi là tương tác một chút thôi chứ cũng gần như là không sử dụng bởi vì là nó là email gốc mà mình để cho nó back up để an toàn thôi.
+Thì ở cái email gốc này thì mình sẽ login là tối đa là 5 email, 5 email, 5 kênh trên 1 VPS, tối đa chỉ thế thôi.
+Thì mình cảm thấy nó an toàn, anh em có thể login nhiều hơn nhưng mà với góc nhìn của mình thì nên 5 kênh thôi, 5 kênh, 5 email thôi.
+Mình không nên tiết kiệm một cách mình login nhiều quá thì thành ra nó lại như bài toán cũ là chục kênh trên 1 IP thì nó cũng bằng nhau.
+Khi nó gặp rủi ro quá thì nó vẫn lan lên bình thường.
+có một cái lưu ý ở đây nữa là không dùng email gốc để làm kênh và đặc biệt là không chứa tài
+khoản Google AdSense anh em có một cái lỗi là là mình dùng email gốc của cái kênh xong mình là dùng
+làm AdSense luôn thì nó có một cái rủi ro như thế này là khi cái kênh đến lỡ mình làm sai nó gặp vấn đề một
+thì có thể là mình vứt cả cái AdSense ấy luôn
+thì mình không dùng cho kênh khác được
+có những cái lỗi nhẹ nhẹ thì mình vẫn có thể dùng lại Google AdSense
+ví dụ như lỗi Reuse này
+mà nhẹ nhàng thì mình vẫn có thể dùng được AdSense này
+hoặc trong trường hợp là mình bị chết kênh, dạng chết kênh mà dạng lỗi nhẹ, dạng spam các thứ thì thực ra là cái AdSense này anh em vẫn dùng được lại.
+Không nhất thiết là cứ phải bỏ đi dùng AdSense mới vì cái thông tin mình có nó cũng giới hạn thôi.
+Mình mượn cũng chỉ được là trong vòng quan hệ là vợ chồng hay là anh em họ hàng mà rất thân thiết thì mới mượn được thôi.
+Chứ còn ngoài ra thì cũng rất là khó để mượn được thông tin của anh em khác nữa.
+để họ sẽ lo ngại vấn đề về thông tin cá nhân rồi bảo mật các thứ.
+Có những lưu ý như này.
+Về phần email làm kênh, thì mỗi email chỉ có sở hữu 1 kênh duy nhất thôi.
+Mỗi email chỉ sở hữu 1 kênh duy nhất và chỉ sử dụng trên 1 VPS duy nhất.
+Thì có nghĩa là gì?
+Có nghĩa là nếu với 1 kênh của GODA làm thì bên mình sẽ sử dụng 2 VPS, bao gồm 1 VPS gốc.
+chứa 5 email gốc có kênh ở trong đó và 1 email để làm kênh thì 1 email thì bằng 1 kênh 1 VPS thì cái này nó liên quan đến cô lập rủi
+ro từng kênh này và bên mình thì bên mình sẽ cấp quyền vào VPS cho anh em quản lý anh em quản lý thì anh em lại sẽ lên chỉ làm việc thôi
+chứ không dùng cái gì khác vì VPS thực ra nó hơi lag một chút anh em dùng quen thì nó quen thôi chứ còn thực ra nó vẫn lag và mình sẽ quản
+Quản trị bằng cách như vậy, toàn bộ email làm kênh rồi email gốc là mình cầm hết thông tin hết để bảo mật thông tin.
+Còn anh em quản lý thì chỉ tập trung làm nghề thôi, có những cái phần mà cấp kênh cái thứ thì mình làm hết.
+Đó, thì nó rất là tối ưu trong quá trình mà quản trị nhiều kênh. Bây giờ bên mình cũng khá là nhiều kênh rồi thì không thể nào
+mà cứ cấp quyền cho nhiều anh em xong anh em lại làm việc ở máy ở nhà được thì nó cũng bị vấn đề là anh em bị
+thì nó cũng bị vấn đề về bảo mật và đồng bộ IP.
+Bên mình có câu chuyện vui vui là anh em đang nhậu
+Anh nhậu rồi tự nhiên thấy đến giờ 8-9 giờ thì đồng loạt lôi điện thoại ra
+Thì lúc đấy là anh em đang đăng bài bài tab cộng đồng hoặc là anh em đang vào public video
+Có một điểm nữa bên mình là
+video trừ các video mà vào public vào cái khung giờ mà 1 giờ sáng đến 7 giờ sáng ấy thì bên mình không public bằng tay mà hẹn giờ còn lại thì là bên mình ưu tiên bằng tay hết
+link bằng tay công khai bằng tay đấy là cái cách bên mình làm thôi. Ở đây thì mình có một cái nguyên tắc bảo mật email này cái phần này
+là cái kinh nghiệm của mình làm và cũng kiểm nghiệm qua cái đợt vừa rồi là quét lan rất là nhiều bên mình cũng chết nhiều kênh chứ không phải không
+thì những chủ đề mà nó có rủi ro để có chết kênh chứ không phải không thì mỗi email khôi phục mỗi email chỉ nối một email khôi phục thôi.
+Mỗi email chỉ nối 1 email khôi phục duy nhất nhé. Và các email được nối theo vòng tròn khép kín.
+Thì mình thì mình hay nối là 2 đến 3 email trong 1 vòng tròn.
+2 đến 3 email trong 1 vòng tròn. Ví dụ như hoàng 1 nối khôi phục với hoàng 2, trong hoàng 2 nối khôi phục với hoàng 3, hoàng 3 nối khôi phục lại với hoàng 1. Thì mình chỉ nối như vậy thôi.
+tốt nhất là 2 email nối với nhau
+khoảng 1 nối với 2 email backup lẫn cho nhau
+thì nó sẽ tốt nhất để tránh rủi ro bị chết lan nhiều
+ở phần này thì khi mà liên quan đến phần chết lan thì một lý do nữa mình dùng VPS
+khi mà trong một con VPS có 5 kênh gốc thì nó có một kênh gặp vấn đề
+Các bạn có thể thì mình sẽ cô lập kênh đó ở lại con VPS đó để về sau mình kháng. Mình sẽ tìm khách mình khám bằng được. Còn 4 kênh còn lại mình sẽ login sang con VPS mới tinh.
+Đó thì đấy là cái phần mình cô lập, cô lập những cái kênh. Giống như anh em là ở quê thì biết rằng là mình nuôi lợn, nuôi gà, nó có một con mà nó bị bệnh thì mình phải cô lập nó lại.
+Để mình phải chuyển nó sang một trại mới để mình đảm bảo nó không bị lây lan. Bây giờ để nó lây lan thì bao công sức đổ sông đổ bể hết.
+Ở phần đây lưu ý không được làm là mình không nối quá 3 email. Một số anh em làm theo kiểu là 1 email khôi phục cho hàng chục kênh, mấy chục kênh liền.
+Anh em bảo không vấn đề gì cho đến khi gặp vấn đề
+Thì đến khi mà nó gặp vấn đề rồi thì nó quá là xót xa
+Có khi cả hệ thống một vài trăm nghìn có thể bay vì những lỗi
+Lỗi quá đơn giản và lỗi quá lười như vậy thì nó phí lắm
+Nó phí công sức anh em làm lắm
+Xây dựng thì lâu chứ mà rụng thì nhanh lắm
+Mà cái đấy mình có thể làm được thì anh em nên làm.
+Tiếp đấy thì không được làm mỗi email khôi phục cho nhiều email khác này.
+Lý do này, khi mà mình để nhiều kênh khôi phục cùng một email thì nó bị vấn đề là nó lan.
+Thế mà phần này mình không làm thì để cho nó là không bị sập, cả một dây chuyền, cả một hệ thống của mình nó không bị sập tất.
+Thế đây là lý do thôi.
+Tiếp theo thì chúng ta đến phần 3 là nuôi email chăm sóc tài khoản Google AdSense.
+Vừa rồi anh em quan tâm khá nhiều bởi vì anh em bị bị mắc vào phần này rất là nhiều thì lát nữa
+nó sẽ có một video hướng dẫn anh em chi tiết các bước từ A đến Z tạo tài khoản Google AdSense luôn.
+Lát nữa sẽ có. Ở phần chuẩn bị email này, trước khi anh em lập tài khoản Google AdSense thì mình sẽ cần phải có email trước.
+Thì anh em có thể sử dụng email mình đã dùng lâu rồi, nhưng mà mình chưa tạo Google AdSense. Nhưng mà có cái điều phải lưu ý là
+Thứ là cái phần email này nhé. Nếu như email của anh em đã dùng
+để tạo tài khoản Google AdSense rồi thì không được dùng thông tin tạo tiếp.
+Và cái IP nào đã tạo rồi thì không nên tạo tiếp. Vì một IP nếu anh em tạo thêm thì nó hay báo lỗi lắm. Mình là mình test nhiều rồi. Nó bị như thế.
+Thì với email mới thì anh em phải tạo và nuôi tối thiểu là 14 ngày, tốt nhất là được 1 tháng thì càng
+tốt. Điều kiện thì email phải chưa từng tạo GA, chưa từng dính vi phạm gì, chưa từng chết mail các thứ này.
+Để chết cái lỗi spam đơn giản thì có thể nhắn đội hỗ trợ của Huân Academy để anh em gửi cho cái form kháng đơn giản, dạng đấy nó khá là dễ thôi, kháng được.
+dạng đấy thì không vấn đề gì. Còn dạng vi phạm như anh em bị cấm hẳn chức năng dùng email rồi là Google AI cái thứ đó. Đấy là những dạng vi phạm nặng thì anh em sẽ không được dùng được nữa.
+Về phần số điện thoại thì mình lưu ý là mình dùng số mới hoàn toàn nhé. Chưa từng tạo ra này. Chưa từng liên kết bất cứ GA nào.
+Thì có thể là mình có thể mua một số mới. Mua một số mới tin bằng thông tin chính chủ của mình.
+Còn này thì mình lưu ý là không nóng vội
+Tài khoản Google AdSense nó là một cái tài sản của mình
+Nó không phải là công cụ dùng một lần
+Vì vậy nên là trong quá trình anh em tạo
+Thật sự kiên nhẫn
+Bình tĩnh thì tạo
+Chăm nó nuôi nó đúng thì
+Khi anh em tạo thì có thể nhanh là một ngày
+Có thể được duyệt luôn rồi
+Nếu mình nóng vội, mình vừa tạo ngày hôm nay, 3 hôm sau, 5 hôm sau đã tạo Google AdSense chắc chắn là nó bị đánh là có vấn đề rồi.
+Chứ chả có ai mà tự nhiên tạo email hôm nay, ngày mai tạo GA mà Google nó duyệt cho vào.
+Nếu có dễ thì cũng rất là may mắn thôi chứ còn không có chuyện là nó nhanh như thế được. Ngoài ra thì về phần tạo email tạo GA thì anh em cũng
+có chia sẻ rằng là anh em dùng email cổ rồi là theo dạng là anh em mua ấy. Thế thì với mình thì mình không dùng bởi vì là nó cũng sẽ có
+rủi ro về nguồn email. Thế nên là mình ưu tiên phương án là mình tự tạo email sau đó mình tự tạo GA thì nó đảm bảo cho mình yên tâm hơn thôi.
+tính mình nó hơi khó tính, phần này mình kỹ tính phần này.
+Nguyên tắc về VPS, sử dụng VPS cho Google AdSense bên mình đang dùng thì
+cái nguyên tắc của mình là 1 VPS chỉ đăng nhập 1 tài khoản Google AdSense duy nhất thôi, 1 VPS chỉ 1 Google AdSense duy nhất.
+Thì trên đó thì chỉ chứa là 1 email chứa tài khoản Google AdSense và 1 email khôi phục cho cái tài khoản email mà chứa GA lại.
+Thì trên 1 VPS là tổng là có 2 email thôi. Thì nó back up cho lẫn nhau mà.
+Còn này tuyệt đối là không login nhiều GA trên cùng 1 VPS, login GA trên nhiều IP khác nhau.
+Anh em hay bị cái lỗi là mình bật kiếm tiền đúng không? Thế là mình login GA lung tung bèo hết lên.
+IP nhảy lung tung bèo hết lên. Về sau nó bị vi phạm gì, nó bị quét gì đấy thì nó chết GA là điều đương nhiên rồi.
+Nhiều anh em là GA chính chủ này nhưng vẫn bị chết bởi vì login nhiều chỗ quá
+Nó không cố định được, rất là nguy hiểm
+Mục tiêu của những phần này là tránh Google quét IP, tránh Google khóa nhiều GA cùng một lúc
+Đang nhiều tài khoản Google AdSense cùng với một IP
+Được rồi anh em thấy là bên họ kêu rất nhiều việc chết GA
+Bên mình có bị chết GA ở đợt bão đầu tiên, tháng 6-7, đợt mà quét GA dạng mua
+Sau đợt đó bên mình làm lại 100% GA đến bây giờ tất cả đều ổn hết và có những con GA tháng trước còn không
+đủ minpay, chỉ tầm 30-40$, tháng sau có thể nhận được mức khoảng 340.000$ 1 kênh, 1 con GA thì không gặp vấn đề gì nhé.
+Nó đều ổn hết vì mình tạo chính chủ mà, vì mình yên tâm.
+Ở phần này thì mình cần phải là nuôi hành vi người dùng này
+nuôi cái điểm Trust Score dành cho Google họ đánh giá
+con AI Google đánh giá hành vi của mình dùng ấy
+nó phải giống người thật
+mình cần phải làm thường xuyên hàng ngày đó
+hoặc là anh em một vài ngày làm một lần
+làm đều đều
+thì mới
+email để check email thường xuyên
+thì cái phần này
+Thì cái phần email này thì anh em có thể là đăng ký, nhận tin nhắn tự động của một số cái web như là web tin tức này, nước ngoài này.
+Thì anh em nhận email thường xuyên thì nó là hành vi người dùng.
+Thì anh em vào mở email đấy, đọc email đấy thì cũng là hành vi người dùng.
+có một điểm nữa thì là phần xem video trên YouTube thì mình có thể xem 24/24 được tại vì VPS thì nó không tắt mà VPS thì nó cứ mở cả ngày lẫn đêm thôi.
+Thì anh em có thể cho xem YouTube xem nhạc rồi tin tức các thứ thì tùy anh em không quá là là phải đóng khung là mình phải làm như thế nào chỉ là mình tương tác hàng ngày thôi.
+Sau đó có thể đọc báo, tìm kiếm thông tin. Hành vi cần tránh là mình tạo email xong mình bỏ không. Chỉ vào VPS khi cần bật kiếm tiền.
+Thế lỡ anh em không check thường xuyên rồi là nó gặp vấn đề gì đó, email mình không biết nó check email hay bị nào đấy.
+Hoặc mình không tương tác thường xuyên thì nó không giống người dùng thật. Đấy thì nó sẽ bị ảnh hưởng.
+Vì vậy, anh em lại chơi cái bài là VPS thấy lười quá không làm, không có tương tác, quay ra
+là chơi tool vào, xong quay quét, bay cả dàn. VPS vẫn chết bình thường, bởi vì anh em dùng tool.
+Thế thì cái phần này thực ra nó cũng chả tốn bao nhiêu thời gian đâu, có khi một ngày, 30 giây chứ mấy. 30 giây thì nó đáng bao nhiêu thời gian đâu mà, mà mình phải dùng tool làm gì.
+Tư duy ở đây là nuôi con người số, không nuôi tài khoản chết. Với mỗi cái IP VPS của mình thì mình rất là quan trọng nó và mình rất là giữ gìn nó.
+Tại vì mình biết rằng là mình nuôi được một cái IP mà ngon rồi là nó ổn định qua nhiều năm tháng thì tài khoản của mình nó rất là khỏe.
+Ờ, ở đây, phần quy trình bật kiếm tiền an toàn của mình hiện tại đang làm nhé.
+thì mình không login GA ở nhiều nơi này nó chỉ có trên một con VPS thôi và khi mình bật kiếm tiền thì mình chỉ có thao tác ở trên cái VPS chứa cái con GA đó thôi chứ còn mình không login GA linh tinh.
+Về phần quy trình thì mình sẽ có các bước sau đây đầu tiên nhé thì ở cái email gốc ấy thì mình sẽ cấp quyền chủ sở hữu cho cái email chứa tài khoản Google AdSense này
+sau đó thì mình sẽ bật kiếm tiền trên VPS chứa con GA đấy. Sau khi bật thì mình để yên thôi. Không dùng con VPS chứa GA đi luôn. Chỉ
+để xem YouTube, không dùng đi tương tác cái thứ gì cả. Không dùng tương tác cái khác. Mình chỉ để vậy thôi. Mình xác định nó là một cái
+mình giữ cái tài khoản Google AdSense của mình nó được an toàn đây mà. Tổng kết ở đây này nó có những cái điều mà anh em cần nhận ra.
+em cần nhớ này thì VPS là một cái dạng danh tính số này thì YouTube nó sẽ định danh mỗi một cái người
+dùng dựa trên IP và lịch sử người dùng đâu chứ nó không thể nắm được các thông tin khác đâu nó chỉ
+định danh vậy thôi email ở đây nó là cái gốc có mọi thứ của anh em làm đợt vừa rồi thì mình cũng nhận
+Một số thông tin khá là buồn vì các anh em làm dạng dùng email của tên miền email domain
+Buồn vì anh em hơi chủ quan về việc dùng email domain. Bản chất mình nhìn thấy nó có vấn đề rồi. Khi mà tất
+cả email đều có một cái tên miền là A còng gì đó là tên miền domain tên miền công ty thì nó sẽ có rủi
+ro khi anh em làm sai là anh em sẽ bị quét toàn bộ. Nó rất là nguy hiểm. Ví dụ như đây là hoang@goda.media.
+Ví dụ như này đi, một email như này thì lỡ mà mình lại tạo rất nhiều cái tên miền, a.goda.media.vn này, một trong các email mình làm kênh này nó gặp
+vấn đề phát thì có thể là bay tất cả luôn, nó xóa hết. Và email domain mà đã gặp vấn đề rồi là gần như không kháng được. Mình thấy là
+nó bị như vậy, thì nó rủi ro rất là cao. Vì đôi khi anh em lại còn ham rẻ, còn chơi cái bài là mua nguồn email domain giá rẻ nữa.
+thì các bên tut trick họ sẽ có cái cách họ bán cho anh em đó. Nếu mình thì mình không ưu tiên như vậy.
+Mỗi một tài khoản Google AdSense là một tài sản dài hạn vì nó là cái chỗ mình nhận tiền về thì phải thật sự rất là coi trọng. Một
+một sai lầm nhỏ khi mình bảo mật hệ thống như nó có thể trả giá rất là lớn. Có thể cả một hệ thống bay hết luôn. Đợt
+vừa qua thì mình cũng gặp nhiều kênh bị chết, nhiều kênh bị kiếm tiền, các cái lỗi. Vì mỗi một đợt thì nó quét một cái lỗi khác nhau.
+có đợt thì nó quét cái dạng spam này, chết cả kênh này, sau đó nó quét dạng die chết dạng nội dung nguy hiểm có sự tham gia của trẻ vị thành niên này bên mình cũng dính.
+Sau thì nó die chết những dạng nội dung không trung thực này.
+Có những kênh làm rất là chỉn chu, rất là kỹ, sáng tạo rất xịn nhưng mà khi vào bão thì nó vẫn có khả năng bị quét nhầm.
+Nhầm
+Mà hiện tại thì là toàn bộ phần
+Kiểm duyệt rồi là
+Các thứ là
+Rồi là kháng chứ
+AI nó kiểm soát hết chứ còn
+Gần như bây giờ là không gặp được người kiểm duyệt thật nữa
+Để mình kháng nữa
+Những cái dạng đấy đã bị quét rồi thì
+Gần như không kháng được
+Mà khi mà đã bị quét một kênh rồi thì
+Em biết là là
+Nó quá là kinh khủng luôn
+Nhưng cái kênh khác mà nối cùng GA đấy mà nó gặp vấn đề mà phát là
+Là mình phải tách ra luôn
+Chứ không thì nó có thể bay cả vào hệ thống luôn
+Cái chi phí mà anh em
+Nghĩ rằng là nó là chi phí khi mà mình dùng nhiều VPS
+Thì đôi khi nó không phải chi phí nó là khoản đầu tư
+Với mình mình coi nó là khoản đầu tư để mình đảm bảo cái an toàn hệ thống.
+Để cho toàn bộ cái hệ thống của mình nó an toàn hơn.
+Ok, ở đây mình cũng có thấy một vài câu hỏi, tuy nhiên là mình sẽ đi tiếp nhé, tại vì là lát nữa sẽ có phần hỏi đáp riêng, anh em thoải mái.
+Hôm nay chủ yếu sẽ hỏi đáp vì phần chia sẻ cũng khá là ngắn thôi, chủ yếu anh em hỏi đáp về tất cả những cái thắc mắc của anh em.
+Tiếp theo thì mình sẽ đến với phần là video hướng dẫn tạo tài khoản Google AdSense và bật kiếm tiền nhé.
+Nhưng em yên tâm nhé tất cả những tài liệu này sau sẽ có được gửi cho anh em cập nhật trên web Huân Academy đầy đủ nhé anh em yên tâm
+Ok mình chia sẻ
+Ok anh em nhìn thêm video chưa anh em nhìn video thì lên phím 1 cho mình
+Ok.
+Trong video này, tôi sẽ hướng dẫn bạn toàn bộ quy trình bật kiếm tiền kênh YouTube
+từ điều kiện cần có, cách tạo tài khoản Google AdSense cho đến xác minh AdSense đúng chuẩn
+và có thể tóm gọn lại bằng lộ trình bật kiếm tiền với 4 giai đoạn sau:
+1. Đạt điều kiện, kiểm tra và đáp ứng các yêu cầu tối thiểu của YouTube. 2.
+Đăng ký và tạo AdSense, nộp đơn và liên kết với tài khoản Google AdSense 3
+Chờ duyệt kênh, giai đoạn xem xét kênh của bạn bởi đội ngũ YouTube
+4. Xác minh danh tính, hoàn tất xác minh để nhận thanh toán đầu tiên
+Vậy thì điều kiện để bật kiếm tiền YouTube là gì?
+Để bật kiếm tiền YouTube
+Kênh của bạn cần đáp ứng đồng thời 3 điều kiện. Thứ nhất, kênh có ít nhất 500 người đăng ký. Thứ hai, có 3 video công khai trong 90 ngày và 3.000 giờ xem công khai
+trong 12 tháng hoặc 3 triệu view Shorts. Thứ ba, kênh tuân thủ chính sách cộng đồng và chính sách kiếm tiền của YouTube. Đây là bước đệm trước khi đủ điều kiện cho kênh bật kiếm tiền
+đầy đủ cho video dài ở mốc 1.000 người đăng ký và 4.000 giờ xem. Khi đã đủ điều kiện bật kiếm tiền, chúng ta sẽ làm theo các bước sau. Bạn truy cập vào YouTube Studio.
+Chọn mục kiếm tiền. Tại đây, YouTube sẽ yêu cầu bạn 1. Đồng ý điều khoản chương trình đối tác YouTube. 2. Kết nối hoặc tạo tài khoản Google AdSense.
+Lưu ý, mỗi người chỉ nên có một tài khoản AdSense duy nhất. Việc tạo nhiều tài khoản có thể khiến bạn bị từ chối hoặc khóa vĩnh viễn.
+Đầu tiên, hãy đọc và đồng ý các điều khoản chương trình đối tác YouTube.
+Bước thứ 2. Kết nối với tài khoản GA. Nếu bạn chưa có, hãy chọn vào đây để tạo mới nhé.
+Chọn tài khoản Gmail để tạo GA.
+Chọn quốc gia Việt Nam.
+Đọc và tích đã đọc hết điều khoản.
+Chọn Setup Account.
+Tiếp theo, mọi người sẽ điền thông tin cá nhân tại đây.
+Chọn Individual là tài khoản cá nhân.
+Điền các thông tin của bạn như họ và tên.
+địa chỉ, thành phố và mã Postal Code của thành phố đó.
+Bạn có thể search Google để tra mã Postal Code nhé.
+Sau đó điền số điện thoại của bản thân và chọn submit.
+Chúng ta sẽ có vài lưu ý với những thông tin cần điền như sau. Thông tin bạn điền ở bước này sẽ được dùng để xác minh danh tính và nhận thanh toán. Mọi sai sót có thể dẫn đến việc
+bạn không nhận được tiền. Họ và tên phải trùng khớp 100% với tên trên giấy tờ tùy thân, căn cước công dân, hộ chiếu. Địa chỉ cư trú, địa chỉ thật, chính xác theo giấy tờ để nhận mã pin nếu
+cần. Số điện thoại, sim đang sử dụng và chính chủ có thể mua số mới. Chính chủ để tạo sẽ tốt hơn. Mã bưu chính, Postal Code, tìm mã bưu chính chính xác của tỉnh thành phố của bạn trên Google.
+Sau khi đã điền đầy đủ thông tin cá nhân, số điện thoại và submit, chúng ta sẽ xác minh số điện thoại, mã sẽ được gửi về máy trong 1 đến 3 phút.
+Sau khi hoàn thành, chọn trở về trang YouTube.
+Tài khoản Google AdSense đang đợi duyệt. Để kiểm tra lại một lần nữa, mọi người có thể truy cập vào Google AdSense.
+Thời gian tạo tài khoản nhanh thì trong một ngày, cá biệt lâu hơn có thể đến 2 tuần.
+Các bạn hãy kiểm tra thường xuyên ở phần bật kiếm tiền ở kênh hoặc trên tài khoản Google AdSense nhé. Đây là giao diện trang chủ của Google AdSense sau khi tài khoản đã được phê duyệt.
+Và bên trong YouTube Studio, bạn cũng có thể thấy trạng thái tài khoản đã được duyệt thành công.
+Sau khi tài khoản AdSense được duyệt, các bạn sẽ cần đợi duyệt bật kiếm tiền cho kênh. Thời gian đợi thông thường từ 3 đến 7 ngày, kênh bật kiếm tiền thành công sẽ có thông báo như thế này.
+Các bạn tiếp tục phát triển kênh, khi doanh thu đạt ngưỡng thu nhập nhất định thường là 10 USD, sẽ đến bước tiếp theo là xác minh danh tính cho tài khoản AdSense.
+Để xác minh danh tính tài khoản Google AdSense, bạn cần đạt ngưỡng thu nhập nhất định thường là 10 USD và cung cấp giấy tờ tùy thân hợp lệ, hộ chiếu.
+Chứng minh nhân dân, giấy phép lái xe có thông tin khớp với tài khoản, kèm theo ảnh rõ nét. Điều quan trọng là thông tin trên giấy tờ, tên, ngày sinh, địa chỉ phải khớp 100% với thông tin trong AdSense.
+Có 2 cách để xác minh. Cách 1, xác minh cách mới bằng giấy tờ tùy thân và xác minh khuôn mặt. Cách 2, xác minh bằng giấy tờ tùy thân và mã pin nhận qua đường bưu điện.
+Ở video này, mình sẽ hướng dẫn các bạn xác minh bằng cách 1, xác minh nhanh và an toàn hơn.
+Bước 1, các bạn ấn vào xác minh ngay. Xác minh danh tính qua Persona. Chúng ta sẽ được dẫn đến trang xác minh.
+Bạn bấm vào bắt đầu xác minh ngay. Tiếp theo bạn lựa chọn quốc gia.
+Bước này bạn có thể xác minh bằng giấy phép lái xe, căn cước công dân hoặc hộ chiếu. Mình chọn xác minh bằng căn cước công dân.
+Bước tiếp theo mình sẽ thực hiện trên điện thoại di động bằng cách quét mã trên màn hình.
+Trên điện thoại, bạn tiến hành chụp ảnh giấy tờ
+Bạn đưa mặt trước giấy tờ vào nằm bên trong 4 góc của khung hình
+Đảm bảo hình ảnh không lóa, rõ nét rồi thì các bạn bấm vào sử dụng ảnh này và đợi tải lên
+Hệ thống sẽ kiểm tra giấy tờ tùy thân của bạn
+Các bạn lưu ý rằng căn cước phải là căn cước công dân bản cũ
+Có đầy đủ thông tin nơi thường trú ở mặt trước thì mới xác minh được
+Nếu giấy tờ của bạn hợp lệ rồi thì sẽ hiện ra biểu mẫu này để bạn kiểm tra lại thông tin. Các bạn điền chính xác và đầy đủ thông tin theo giấy tờ và bấm tiếp tục.
+Bạn cấp quyền cho phép truy cập máy ảnh và tiến hành quét khuôn mặt theo mũi tên chỉ dẫn.
+Thông báo chúc mừng hiện lên là bạn đã xác minh thành công.
+Những lưu ý khi xác minh danh tính cần tránh
+1. Không sử dụng một thông tin cá nhân để tạo nhiều tài khoản. Có thể vẫn tạo được nhưng sau sẽ bị quét và vô hiệu hóa toàn bộ.
+2. Khi xác minh thất bại đến lần thứ 2, hãy nhờ sự trợ giúp từ đội ngũ hỗ trợ để đảm bảo xác minh chính xác.
+Vì mỗi tài khoản chỉ được phép xác minh 3 lần.
+3. Thông tin sử dụng để tạo phải là thông tin thật, không làm giả giấy tờ để lách luật, cố tình sẽ bị vô hiệu hóa tài khoản.
+Đây là toàn bộ quy trình tạo tài khoản Google AdSense và bật kiếm tiền chính xác nhất, tuân thủ luật của YouTube.
+Chúc các bạn thực hiện thành công. Nếu cần hỗ trợ, hãy liên hệ qua hotline hoặc Zalo Huân Academy 088 9697 888.
+Ok, đây là video hướng dẫn.
+Dành cho video hướng dẫn bật kiếm tiền nhé.
+Cảm ơn anh em. Thật ra vừa qua anh em cũng hỏi khá nhiều phần này. Tuy nhiên là mình để làm video hướng dẫn nó được chi tiết thì cần thời gian để mình xác minh.
+Có những cách làm nó, anh em hộ đội, các đội họ có các cái tut, các mẹo người ta làm nhiều thì mình cũng biết. Nhưng mà tuy nhiên là mình muốn chia sẻ với anh em cái cách làm chuẩn nhất.
+Nhất anh em yên tâm nhé tất cả những video hướng dẫn này là sẽ có cập nhật đầy đủ trên website Huân Academy chi tiết đầy đủ
+sẽ có thêm cả phần hướng dẫn khai thuế 30%
+dành cho công dân không ở Hoa Kỳ và phần Add Bank phần đó khá đơn giản nhưng mình vẫn sẽ làm đầy đủ chi tiết để cho mọi người làm theo chuẩn yên tâm
+nó không bị sai bởi vì những cái phần này anh em bị làm sai một hai lần mà mình không không biết thì nó rất là nguy hiểm
+có lưu ý là cái phần xác minh danh tính này nó sẽ chỉ xác minh được ba lần thôi vì vậy nếu như mà anh em bị xác minh mà nó bị sai đến lần thứ hai rồi mà nó vẫn gặp vấn đề nó không xác minh được thì nên liên hệ với
+là cái này để anh em có thể nhận sự hỗ trợ có thể là TeamViewer để hỗ trợ thì anh em hãy tận dụng nguồn lực
+được hỗ trợ nhé chưa ra ngoài kia dịch vụ thì kiểu gì cũng mất tiền mà cũng chưa biết được như thế nào
+Ok mình có nhận được một vài câu hỏi ở đây liên quan đến
+VPS thì mình cũng sẽ chia sẻ một vài số đơn vị mà mình đang sử dụng mình cũng thấy đang ổn
+Về VPS nước ngoài thì mình cũng test khá là nhiều mình test cả của Google
+test của cả Amazon Amazon thì mình dùng lâu rồi
+Test của một vài đơn vị ở bên Pháp, bên Pháp mà nó sẽ, khi mình tạo mình không nhớ tên lắm nhưng mà mình tạo là mình phải, xác minh hộ chiếu nó mới cho mình dùng VPS của nó cơ.
+Thế thì trong quá trình sử dụng thì mình thấy là Amazon vẫn là top đầu về phần máy chủ ảo.
+Đợt vừa rồi thì anh em thấy có một cái đợt là nó bị sập mà không dùng Storyblocks rồi CapCut cái thứ ấy.
+Đó là liên quan đến server của ông Cloudflare, mà gốc của nó là VPS của
+Amazon gặp vấn đề. Máy chủ của Cloudflare đặt ở Amazon thì nó gặp vấn đề.
+Tất cả những tập đoàn lớn, công ty lớn về công nghệ thông tin thì họ đều đặt máy chủ ở máy chủ của Amazon hết.
+thì mình dùng thì mình thấy khá ổn. Trong quá trình đúc kết thì mình thấy là
+hiện tại thì mình chỉ tin dùng Amazon thôi. Và mình dùng cái gói mà 22$ 1 tháng
+thì thấy cũng khá là ổn. Về VPS của Việt Nam
+VPS ở Việt Nam thì mình cũng test khá nhiều đơn vị
+Tuy nhiên thì đến hiện tại thì mình chỉ có tìm thấy một đơn vị duy nhất mình cảm thấy là tin tưởng được và thời gian vừa qua mình cũng có tạo GA trên đó
+Mình cũng có đăng nhập rất là nhiều kênh lớn của bên mình lên trên đó
+Những mail gốc rất là lớn để đăng nhập trên đó để nuôi
+thì dùng từ tháng 7 đến bây giờ thì mình thấy nó rất là ổn định và mình kiểm tra mình check IP nó thấy ổn IP sạch,
+khá là sạch thì mình cảm thấy là nó ổn. Hiện tại mình đã đăng ký đại lý thành công với bên đó thì anh em có nhu cầu
+sử dụng VPS bên này thì có thể là nhắn tin qua Zalo của Huân Academy để nhận được báo giá và đăng ký sử dụng dịch vụ.
+thì từ đầu tuần tới thì dựa vào số lượng đăng ký thì mình sẽ bắt đầu cung cấp cho anh em và phần này thì mình lưu ý là
+lưu ý một chút là VPS này thì không rẻ anh em nhé, không rẻ, không rẻ, phần này VPS không rẻ đâu, nhưng mà mình thấy nó yên tâm.
+Ngoài ra thì có một vài đơn vị khác cung cấp của Việt Nam mà mình thấy cũng ổn và anh em dùng khá là nhiều
+Tuy nhiên là mình sẽ không đưa ra ý kiến rằng nó tốt hay là không tốt
+Bởi vì là hiện tại thì mình không dùng
+Mình không dùng, mình có test rồi
+Nhưng mà hiện tại mình không dùng, mình chỉ chia sẻ những cái mà mình dùng thôi
+Thì cái sẽ có một vài đơn vị anh em có thể tìm được
+Mình sẽ search web cho anh em nhé
+Em nhìn thấy màn hình của Chrome chưa
+Nhìn thấy rồi lên phím 1 giúp mình
+Ok
+Một vài đơn vị của Việt Nam thì mình thấy nó cũng khá ổn
+thì anh em có thể test thì mấy đơn vị này nó cũng có gói cấu hình nó cũng khá là ổn. Với kinh nghiệm của mình thì
+anh em sử dụng gói 2GB RAM. 2GB RAM là cũng ổn ổn rồi, gói trung bình rồi. Mình sẽ check thử nhé. Đây là Low End Việt nhé.
+Low End Việt. Đây là một đơn vị khá là tốt, anh em có thể test.
+Mình sẽ check thêm một đơn vị khác nữa. Họ cũng làm khá là lâu rồi, anh em có thể test thêm.
+Vietnix, Vietnix họ cũng có dịch vụ VPS này. Anh em có thể test thêm. Giá thì nó cũng hợp lý thôi.
+Ngoài ra thì có một đơn vị khác nữa gần đây mình thấy cũng khá là nổi. Lanit. Lanit.
+3 đơn vị này thì mình thấy là họ cũng có lịch sử bề dày, họ triển khai rồi thì anh em có thể là mình sẽ dùng
+VPS 3 bên này được nhé. Nước ngoài thì ưu tiên dùng Amazon này, ở Việt Nam thì có thể test 3 đơn vị này, họ có
+thể liên hệ với đội ngũ hỗ trợ của Huân Academy để được báo giá về phần VPS, VPS trung bình, trung bình nhé, khoảng 300.000 một tháng.
+Ok ạ
+Anh em hỏi đáp
+Đến phần hỏi đáp
+Anh em hỏi đáp nếu có mic thì anh em có thể
+Raise hand nhé
+Mình sẽ mở mic nhé

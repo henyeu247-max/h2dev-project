@@ -1,0 +1,76 @@
+{
+  "sku": "VIDEO-5fe83a",
+  "title": "UPDATE 05/11/2025 - Ngách Nhỏ MỚI THỊ TRƯỜNG VIỆT NAM TRENDS CỰC CAO",
+  "actual_topic": "Phân tích 3 kênh ngách Sức khỏe thị trường Việt Nam mới lập 2 tuần đến 1 tháng đạt hơn 5.000 sub & Kỹ thuật ghép bác sĩ AI HeyGen",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Sức Khỏe & Dinh Dưỡng",
+  "niche_id": "faceless-general",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Share thêm các kênh ngách sức khỏe thị trường Việt: kênh thứ nhất lập tháng 10, hơn 20 video, view đều và cao, thumbnail đồng bộ giữa các video; ngách đúng nhu cầu người xem nên view lên.",
+    "Kênh thứ hai cũng mới (hơn 20 video), ngách sức khỏe khác với đại diện là một ông bác sĩ đứng nói; dùng video từ HeyGen ghép với cảnh AI nhép miệng.",
+    "Kênh thứ ba lập ngày 20/10/2025 (đúng 2 tuần) nhưng view rất cao, hơn 5.000 sub và đủ điều kiện bật kiếm tiền.",
+    "Sức khỏe có rất nhiều ngách; tác giả đã hướng dẫn quy trình làm (kịch bản, prompt...), nay chỉ còn share key.",
+    "Phải thực chiến, làm thật mới ra kết quả; không nên đứng núi này trông núi nọ."
+  ],
+  "edit_sop": {
+    "primary": "Giới thiệu kênh ngách sức khỏe thị trường Việt mới lập, view cao, để anh em rút ra ngách và tiêu đề",
+    "additional": [
+      "Vào mục phổ biến của kênh mẫu, xem tiêu đề video cao view nhất để rút ra ngách và cách làm theo",
+      "Kênh bác sĩ đứng nói dùng hình ảnh video AI từ HeyGen, lồng ghép vào giữa phần AI nhép miệng",
+      "Thiết kế hình thu nhỏ đồng bộ giữa các video trên kênh và kết hợp nguồn video miễn phí minh họa"
+    ]
+  },
+  "avoid_flags": [
+    "Phải thực chiến, làm thật thì mới tạo ra kết quả, không thể chỉ đứng núi này trông núi nọ",
+    "Tránh làm hình thu nhỏ lộn xộn thiếu đồng bộ giữa các video trên kênh và phải chọn đúng ngách chủ đề mà khán giả đang muốn xem"
+  ],
+  "tools_mentioned": [
+    "HeyGen"
+  ],
+  "channels_mentioned": [
+    "@SuGia_SucKhoe",
+    "@suckhoedongy99",
+    "@KhỏeVềGià"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu kênh sức khỏe Việt Nam thứ nhất lập tháng 10, hơn 20 video, Thumbnail đồng bộ"
+    },
+    {
+      "time": "00:53",
+      "seconds": 53,
+      "label": "Cách lọc tiêu đề trong mục Phổ biến và khảo sát kênh thứ hai có hình ông bác sĩ đứng nói"
+    },
+    {
+      "time": "01:33",
+      "seconds": 93,
+      "label": "Kỹ thuật lồng ghép nhân vật AI nhép miệng từ HeyGen với các nguồn video minh họa"
+    },
+    {
+      "time": "02:14",
+      "seconds": 134,
+      "label": "Phân tích kênh thứ ba lập ngày 20/10/2025 (đúng 2 tuần) đã vượt 5.000 sub và bật kiếm tiền"
+    },
+    {
+      "time": "02:44",
+      "seconds": 164,
+      "label": "Tổng kết tiềm năng mảng sức khỏe và lời khuyên bắt tay vào thực chiến ngay"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-5fe83a/transcript.txt",
+  "sop_steps": [
+    "Vào mục phổ biến của kênh mẫu, xem tiêu đề video cao view nhất để rút ra ngách và cách làm theo",
+    "Kênh bác sĩ đứng nói dùng hình ảnh video AI từ HeyGen, lồng ghép vào giữa phần AI nhép miệng",
+    "Thiết kế hình thu nhỏ đồng bộ giữa các video trên kênh và kết hợp nguồn video miễn phí minh họa"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

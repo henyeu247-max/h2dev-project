@@ -1,0 +1,3904 @@
+1
+00:00:10,000 --> 00:00:13,690
+Đây là bản quy trình đã in ra thành bản giấy
+
+2
+00:00:13,690 --> 00:00:15,290
+Anh chị em yên tâm
+
+3
+00:00:15,380 --> 00:00:18,800
+Rằng các quy trình mà mình chia sẻ hôm nay
+
+4
+00:00:18,800 --> 00:00:20,000
+Là quy trình làm
+
+5
+00:00:20,000 --> 00:00:27,200
+Các quy trình làm chi tiết, mình đảm bảo rằng các quy trình này mình sẽ chia sẻ cho anh em chính xác lại.
+
+6
+00:00:27,840 --> 00:00:29,860
+Nên là hôm nay không cần chụp ảnh.
+
+7
+00:00:30,000 --> 00:00:34,100
+Không cần quay phim, chỉ cần tập trung vào trong quá trình mình tiếp nhận thông tin.
+
+8
+00:00:40,460 --> 00:00:43,900
+Chúng ta sẽ đến với quy trình chi tiết kể chuyện bằng nhân vật hoạt hình.
+
+9
+00:00:44,820 --> 00:00:49,540
+Đây là một chủ đề gọi theo tiếng Anh là 2D Animation.
+
+10
+00:00:52,640 --> 00:00:54,800
+Tuấn vào giúp mình bảng kế hoạch triển khai kênh.
+
+11
+00:00:54,800 --> 00:01:00,800
+để mình đưa ra một vài cái ví dụ, lý do tại sao chúng ta lại chọn cái chủ đề này.
+
+12
+00:01:00,800 --> 00:01:04,800
+Chuyển sang phần Dream 100 kênh. Ở đây chúng ta sẽ có rằng là
+
+13
+00:01:04,800 --> 00:01:10,800
+các cái kênh mẫu, file này mình cũng sẽ chia sẻ cho anh chị em nhé.
+
+14
+00:01:11,280 --> 00:01:13,700
+những kênh mẫu, những kênh mẫu như này
+
+15
+00:01:13,700 --> 00:01:15,820
+mình sẽ không phân tích chi tiết
+
+16
+00:01:15,820 --> 00:01:18,580
+mình có thể làm xong bản phân tích chi tiết này
+
+17
+00:01:18,580 --> 00:01:20,440
+có thể dành một tuần để nghiên cứu cho anh em
+
+18
+00:01:20,650 --> 00:01:22,090
+Một bản phân tích chi tiết
+
+19
+00:01:22,090 --> 00:01:22,770
+Tuy nhiên
+
+20
+00:01:22,770 --> 00:01:25,330
+Cái cách của mình sẽ không bao giờ là như vậy
+
+21
+00:01:25,330 --> 00:01:26,690
+Vì nếu như mình phân tích như thế
+
+22
+00:01:26,690 --> 00:01:28,110
+Thì anh em sẽ follow đúng như thế
+
+23
+00:01:28,110 --> 00:01:28,870
+Và làm đúng như thế
+
+24
+00:01:28,870 --> 00:01:30,500
+Thì nó sẽ không có cái sự khác biệt
+
+25
+00:01:30,500 --> 00:01:32,920
+Các kênh y hiệt nhau thì mình sẽ không làm điều đó
+
+26
+00:01:32,920 --> 00:01:34,280
+Thì mong anh em thông cảm
+
+27
+00:01:34,280 --> 00:01:35,260
+Và nếu như mà
+
+28
+00:01:35,260 --> 00:01:37,660
+Có cơ hội ở trong một buổi zoom
+
+29
+00:01:37,660 --> 00:01:40,660
+Nào đó thì mình sẽ chia sẻ chi tiết hơn
+
+30
+00:01:40,660 --> 00:01:41,300
+Kỹ hơn
+
+31
+00:01:41,300 --> 00:01:43,427
+Về cái tư duy của mình ứng dụng
+
+32
+00:01:43,427 --> 00:01:53,167
+Ứng dụng vào khi mình nghiên cứu, mình làm Dream 100. Ở bảng kế hoạch này thì có thể lướt xuống một chút, chúng ta sẽ có một vài những
+
+33
+00:01:53,167 --> 00:02:02,907
+cái ví dụ kênh đang rất là nổi bật trong chủ đề này. Ví dụ như kênh Zen kia, ở cuối cùng ấy ạ. Rồi. Vào kênh này thì
+
+34
+00:02:02,907 --> 00:02:12,647
+xem lượt view nhé. Chúng ta sẽ xem lượt view một chút này. Kênh này đang có 2,1 triệu view trong 30 ngày gần đây nhất. Lượt subscribe là 32.000.
+
+35
+00:02:12,647 --> 00:02:14,327
+Ok ra trang kênh giúp mình
+
+36
+00:02:14,327 --> 00:02:17,587
+Tại đây chúng ta kéo lên trên một chút
+
+37
+00:02:17,587 --> 00:02:20,847
+Tổng là có 18 video lúc mình thống kê là 16
+
+38
+00:02:20,847 --> 00:02:24,367
+Thì họ up thêm 2 video vào 2 ngày gần đây nhất
+
+39
+00:02:24,367 --> 00:02:26,967
+Video nhiều view nhất đấy ạ
+
+40
+00:02:26,967 --> 00:02:31,147
+Ở đây họ có 7,6 triệu view
+
+41
+00:02:31,147 --> 00:02:32,967
+7,6 triệu view
+
+42
+00:02:32,967 --> 00:02:34,107
+Xem tổng view ạ
+
+43
+00:02:34,107 --> 00:02:37,227
+Tổng view của kênh
+
+44
+00:02:37,700 --> 00:02:41,820
+Tổng view của kênh này là 15,8 triệu view.
+
+45
+00:02:42,880 --> 00:02:46,900
+Dạng chủ đề này kéo xuống chút cho mình xem cái thời lượng để mình đoán RPM.
+
+46
+00:02:47,680 --> 00:02:51,340
+Dạng chủ đề này RPM khoảng 5 đến 6 với video dài 8 phút.
+
+47
+00:02:52,120 --> 00:02:55,140
+Đối tượng tiệm khán giả của chủ đề này chủ yếu là tiệm khán giả Mỹ.
+
+48
+00:02:57,660 --> 00:03:02,380
+Rồi quay lại bảng kế hoạch triển khai kênh để mình show thêm một vài những cái ví dụ khác để lý do tại sao chọn cái này.
+
+49
+00:03:04,060 --> 00:03:07,140
+Chúng ta sẽ có một số cái kênh kéo xuống một chút thì anh em nhìn được bên dưới.
+
+50
+00:03:07,140 --> 00:03:14,810
+Một số kênh mới như kênh Explain in Paint có 18 video và 900.000 view không cần click
+
+51
+00:03:14,810 --> 00:03:22,480
+vào đâu. Một số kênh như kênh 35 là 17.000 sắp, 2.4 triệu view với 42 video.
+
+52
+00:03:22,960 --> 00:03:35,840
+Thế đây là mình lên danh sách nhanh một số kênh vì cái ngách chủ đề này thì nó rất là lớn. Nó có đến khoảng 300-400 kênh gì đó đang phát triển tốt. Các kênh mà họ ngừng không phát triển nữa có thể lên rất là nhiều.
+
+53
+00:03:35,840 --> 00:03:39,660
+Thì anh em có thể dựa theo cái bảng này và phân tích nghiên cứu sâu thêm.
+
+54
+00:03:41,000 --> 00:03:48,000
+Chia sẻ thêm cái cách mà nghiên cứu sâu thêm khi mà mình đã có một cái định hướng rồi thì tuấn vào YouTube giúp mình để hướng dẫn cái phần này.
+
+55
+00:03:48,000 --> 00:03:50,540
+Ok đầu tiên vào
+
+56
+00:03:50,540 --> 00:03:52,520
+Vào phần kênh đi
+
+57
+00:03:52,520 --> 00:03:54,180
+Lịch sử của kênh đi
+
+58
+00:03:54,180 --> 00:03:56,740
+Bên bên bên trái
+
+59
+00:03:56,740 --> 00:03:57,420
+Bên bên trái
+
+60
+00:03:57,420 --> 00:04:00,060
+Lịch sử history
+
+61
+00:04:00,060 --> 00:04:02,680
+Cách mình làm nhé
+
+62
+00:04:02,680 --> 00:04:03,900
+Mình hướng dẫn chi tiết luôn này
+
+63
+00:04:03,900 --> 00:04:07,320
+Và đây mình sẽ xóa hết cái lịch sử đã xem của kênh này đi
+
+64
+00:04:07,320 --> 00:04:08,000
+Xóa hết đi
+
+65
+00:04:08,000 --> 00:04:10,520
+Ok vào trang chủ đi
+
+66
+00:04:10,520 --> 00:04:11,320
+Loát lại
+
+67
+00:04:11,320 --> 00:04:13,040
+Đây là một kênh trắng
+
+68
+00:04:13,040 --> 00:04:14,360
+Một kênh trắng
+
+69
+00:04:14,522 --> 00:04:21,335
+Thì với mỗi một chủ đề mình nghiên cứu mình sẽ tạo một kênh trắng như thế này. Mới tin sau đó
+
+70
+00:04:21,335 --> 00:04:28,149
+thì nghiên cứu bằng cái cách là đăng ký các kênh liên quan. Thì Tuấn vào đăng ký một cái kênh
+
+71
+00:04:28,149 --> 00:04:34,962
+trong cái Dream 100 đi. Mình sẽ đăng ký một kênh trong Dream 100 này. Đăng ký. Rồi ấn xem một video.
+
+72
+00:04:34,962 --> 00:04:42,962
+Tô tuô một chút, cái phần này làm nhanh để demo thôi.
+
+73
+00:04:44,262 --> 00:04:46,982
+Ok, rồi mình kéo sang, mình nhìn xem bên phải nhé.
+
+74
+00:04:47,062 --> 00:04:50,282
+Mình nhìn bên phải mình sẽ có một vài những cái kênh liên quan dạng chủ đề này ạ.
+
+75
+00:04:51,122 --> 00:04:51,922
+Một số kênh liên quan.
+
+76
+00:04:52,682 --> 00:04:55,602
+Thì đây là cách mình tìm các kênh liên quan trong cùng một cái nhóm chủ đề đó.
+
+77
+00:04:56,342 --> 00:04:57,402
+Để chia sẻ cho anh yên em luôn ạ.
+
+78
+00:05:00,162 --> 00:05:03,742
+Rồi, sau khi mình đã xem được khoảng một vài video đúng dạng chủ đề của mình rồi,
+
+79
+00:05:04,222 --> 00:05:05,762
+Thì khi mình quay trở lại trang chủ.
+
+80
+00:05:06,142 --> 00:05:07,202
+Thì YouTube sẽ liên tiếp.
+
+81
+00:05:07,382 --> 00:05:09,242
+Tiếp tục đề xuất các kênh liên quan nữa.
+
+82
+00:05:09,342 --> 00:05:09,922
+Ở phần trang chủ.
+
+83
+00:05:10,542 --> 00:05:11,942
+Thì lặp đi lặp lại phần này.
+
+84
+00:05:12,550 --> 00:05:25,670
+Anh em lưu ý là cái quá trình nghiên cứu này làm bảng kế hoạch chiến khai kênh nó không thể nhanh được. Như bên mình các cấp giám đốc làm trung bình hết một tuần ạ, không nhanh hơn được nên là anh em hãy dành thời gian về nó, nghiên cứu thật kỹ.
+
+85
+00:05:26,150 --> 00:05:33,850
+Bên mình có những bạn, ví dụ như bạn Trang ở GODA, bạn làm thành thục một chủ đề rất là tốt rồi, có kết quả rồi, doanh thu tốt
+
+86
+00:05:33,850 --> 00:05:41,550
+rồi. Tuy nhiên là đến khi mà làm một chủ đề mới mình vẫn yêu cầu làm lại bảng Dream 100 kế hoạch chiến khai kênh như bình thường.
+
+87
+00:05:41,550 --> 00:05:52,370
+Và cái quá trình đấy bạn đã làm mất 1 tuần. Mình đã có sẵn kênh rồi, mình tạo sẵn cho bạn rồi. Đến khi bạn làm xong bảng Dream 100, mình duyệt cái là bắt đầu cấp kênh ra để anh em chăm sóc và làm kênh theo quy trình luôn.
+
+88
+00:05:53,270 --> 00:06:04,390
+Đấy thì trong cái quá trình đó thì mình cũng động viên, mình bảo là cái quá trình này làm sẽ tốt cho em. Tốt cho em để em có thể hiểu chủ đề hơn, hiểu khán giả hơn 1 lần nữa cho dù em đã làm có kết quả rồi.
+
+89
+00:06:04,390 --> 00:06:07,310
+Thì hãy dành thời gian để nghiên cứu lại
+
+90
+00:06:07,310 --> 00:06:09,810
+Thì đâu đó khoảng 1 tuần sau thì bạn gửi cho mình
+
+91
+00:06:09,810 --> 00:06:11,910
+Bạn gửi cho mình trước buổi offline này
+
+92
+00:06:11,910 --> 00:06:14,110
+Về sẽ cân duyệt và cấp kênh cho bạn
+
+93
+00:06:14,110 --> 00:06:17,850
+Thế đấy, mình chia sẻ thực tế là làm cái này nó không thể nhanh được
+
+94
+00:06:17,850 --> 00:06:20,910
+Nhưng mà làm vào thì lợi lọc nó sẽ rất là nhiều
+
+95
+00:06:20,910 --> 00:06:22,590
+Mình hiểu chủ đề, mình hiểu khán giả
+
+96
+00:06:22,590 --> 00:06:25,850
+Ok, chúng ta quay trở lại với quy trình chi tiết nhé
+
+97
+00:06:29,310 --> 00:06:33,390
+Đầu tiên thì chúng ta cần phải đến với lý do tại sao mà lại có cái tài liệu này
+
+98
+00:06:33,390 --> 00:06:36,610
+Câu chuyện là bây giờ là
+
+99
+00:06:36,610 --> 00:06:38,810
+Kiến thức thì nó là vô biên đúng không ạ
+
+100
+00:06:38,810 --> 00:06:40,370
+Và AI nó có thể
+
+101
+00:06:40,370 --> 00:06:42,850
+Anh em đưa ra một dòng lệnh
+
+102
+00:06:42,850 --> 00:06:44,670
+Và nó có thể làm hết mọi thứ cho anh em được
+
+103
+00:06:44,670 --> 00:06:46,810
+Tuy nhiên
+
+104
+00:06:46,810 --> 00:06:48,750
+Cái người kiểm chứng lại kiến thức đó
+
+105
+00:06:48,750 --> 00:06:50,030
+Là ai
+
+106
+00:06:50,030 --> 00:06:52,590
+Có phải là một người anh em tin tưởng hay không
+
+107
+00:06:53,390 --> 00:06:55,450
+Thực tế ra là có rất nhiều kiến thức
+
+108
+00:06:55,450 --> 00:06:58,230
+Từ AI ra là nó không chính xác
+
+109
+00:06:58,230 --> 00:07:00,710
+Không chính xác
+
+110
+00:07:00,710 --> 00:07:03,132
+Thì nó là nội dung không trung thực đấy ạ
+
+111
+00:07:03,132 --> 00:07:15,892
+Mục tiêu của tài liệu này là sau khi đọc xong tài liệu này, người học cần có khả năng tự triển khai một video hoàn chỉnh theo mô hình kể chuyện bằng nhân vật hoạt hình.
+
+112
+00:07:16,412 --> 00:07:23,572
+Người học không chỉ hiểu chủ đề là gì mà còn biết cách chọn ngách, xây dựng nhân vật, viết kịch bản,
+
+113
+00:07:23,572 --> 00:07:30,732
+chia cảnh, tạo ảnh, chuyển ảnh thành video, dựng voice, chọn nhạc, làm thumbnail, đăng video và theo dõi chỉ số.
+
+114
+00:07:30,732 --> 00:07:40,202
+Mục tiêu thực hành cuối cùng là người học có thể hoàn thành ít nhất một video đầu tiên với đầy đủ các thành phần bao gồm ý
+
+115
+00:07:40,202 --> 00:07:49,672
+tưởng, kịch bản, bảng chia cảnh, bộ ảnh nhân vật, video chuyển động, voice, nhạc nền, hiệu ứng, thumbnail, tiêu đề mô tả và bình luận ghim.
+
+116
+00:07:50,832 --> 00:07:56,032
+Thực tế là anh em mình đang làm phần này đúng không ạ? Nhưng mà chúng ta có bao giờ nói ra rằng chúng ta đang làm việc đấy không?
+
+117
+00:07:56,032 --> 00:08:05,082
+Với anh em cá nhân, làm tốt ân cả, ok, không cần liệt kê, không vấn đề gì. Nhưng nếu chúng ta làm đội nhóm, chúng ta làm doanh
+
+118
+00:08:05,082 --> 00:08:14,132
+nghiệp mà chúng ta không nói được nó ra, không đặt tên được nó ra, không liệt kê được nó ra, thì chúng ta do việc kiểu gì ạ?
+
+119
+00:08:16,600 --> 00:08:24,390
+Mình lại mong là tuyển một ông nào đó ở đâu đó vào và làm tốt hơn mình. Họ mà làm tốt hơn mình, họ tự làm rồi. Họ làm
+
+120
+00:08:24,390 --> 00:08:32,000
+ngang mình, họ đã tự làm rồi chứ không phải nói. Thế nên nhiệm vụ của mình là phải nắm rõ quy trình mà mình phải đào tạo anh em.
+
+121
+00:08:32,000 --> 00:08:37,500
+Đầu tiên đến với chủ đề này là gì?
+
+122
+00:08:38,500 --> 00:08:39,800
+Chúng ta sẽ có khái nhận cơ bản.
+
+123
+00:08:40,500 --> 00:08:46,620
+Kể chuyện bằng nhân vật hoạt hình là dạng nội dung sử dụng một hoặc nhiều nhân vật hoạt hình để dẫn dắt câu chuyện.
+
+124
+00:08:47,960 --> 00:08:52,220
+Truyền tải thông điệp, phân tích một vấn đề hoặc minh họa một bài học trong cuộc sống.
+
+125
+00:08:53,300 --> 00:08:58,700
+Thay vì người làm nội dung xuất hiện trực tiếp trên camera, kênh sử dụng một nhân vật đại diện.
+
+126
+00:08:58,700 --> 00:09:06,610
+Nhân vật này có thể xuyên suốt trong nhiều video trở thành gương mặt thương hiệu của kênh. Người xem có thể chưa nhớ
+
+127
+00:09:06,610 --> 00:09:14,520
+tên kênh, nhưng nếu nhân vật xuất hiện đủ nhiều, họ sẽ nhớ phong cách, biểu cảm và cách kể chuyện của kênh.
+
+128
+00:09:15,300 --> 00:09:23,640
+Bao nhiêu anh em ở đây viết kênh vui vẻ? Cho mình xin cánh tay. Vui vẻ là một dạng kênh làm rất tốt cái dạng này ở Việt Nam.
+
+129
+00:09:23,640 --> 00:09:31,180
+Mình rất nhớ cái phong cách kể chuyện ở kênh này và thường xuyên đưa kênh này làm ví dụ cho các anh em làm dạng chủ đề này.
+
+130
+00:09:31,900 --> 00:09:35,000
+Tại GODA. GODA có làm nhá.
+
+131
+00:09:36,360 --> 00:09:41,020
+Thì mình học rất là nhiều. Mình không ngại chia sẻ chủ đề bởi vì đây là một chủ đề quá lớn.
+
+132
+00:09:41,800 --> 00:09:45,120
+Ngày trước với cái dạng chủ đề như này để mà anh em xây dựng được dạng
+
+133
+00:09:45,380 --> 00:09:48,720
+2D animation như thế này thì cần một đối ngũ rất là đồ sộ
+
+134
+00:09:48,960 --> 00:09:51,020
+từ phần vẽ rồi là phần dựng
+
+135
+00:09:51,520 --> 00:09:53,580
+Hậu kỳ các thứ rất là nhiều công sức
+
+136
+00:09:53,840 --> 00:09:56,400
+Nhưng với bây giờ với cái sự hỗ trợ của AI
+
+137
+00:09:56,900 --> 00:09:58,440
+anh em lưu ý là hỗ trợ nhỉ
+
+138
+00:09:58,700 --> 00:09:59,720
+chứ không phải AI làm tất
+
+139
+00:10:00,720 --> 00:10:04,000
+Ta đã rút ngắn được cái khoảng cách rất nhiều và một người có thể làm được.
+
+140
+00:10:04,780 --> 00:10:05,560
+Một người có thể làm được.
+
+141
+00:10:06,400 --> 00:10:09,460
+Tất nhiên là một người làm không phải một ngày giao được một video đâu, không có đâu.
+
+142
+00:10:10,360 --> 00:10:14,600
+Dạng này là một người mà làm ít nhất phải 3 năm hôm mới được một video đấy ạ.
+
+143
+00:10:16,100 --> 00:10:17,640
+Anh em nhìn thấy các cái kênh họ đăng ít ạ.
+
+144
+00:10:17,640 --> 00:10:20,760
+Không phải là vì chiến lược họ đăng ít đâu.
+
+145
+00:10:25,500 --> 00:10:28,720
+Thường nó sẽ mang màu sắc của phong cách cá nhân khá là nhiều
+
+146
+00:10:28,720 --> 00:10:30,740
+Và họ yêu thích cái màu sắc như vậy
+
+147
+00:10:30,740 --> 00:10:35,740
+Nhân vật hoạt hình có thể đóng nhiều vai trò khác nhau
+
+148
+00:10:35,740 --> 00:10:37,620
+Như là nhân vật chính trong câu chuyện này
+
+149
+00:10:37,620 --> 00:10:39,980
+Người kể chuyện, người quan sát xã hội
+
+150
+00:10:40,720 --> 00:10:41,840
+Trải nghiệm một vấn đề
+
+151
+00:10:41,840 --> 00:10:43,917
+Người đại diện cho người xem
+
+152
+00:10:43,917 --> 00:10:50,737
+Người xem, người truyền tải bài học cuối video, người dẫn dắt, phân tích về tài chính, tâm lý, sự nghiệp hoặc phát triển bản thân.
+
+153
+00:10:51,897 --> 00:10:59,657
+Ví dụ, một kênh có thể xây dựng nhân vật chính là một người đa đông trẻ, gương mặt lạnh, ít biểu cảm, luôn quan sát thế giới xung quanh.
+
+154
+00:11:00,597 --> 00:11:10,437
+Trong mỗi video, nhân vật này được đặt vào một tình huống khác nhau như đi làm văn phòng, ngồi trong ngân hàng, uống cà phê một mình, đứng trước một căn hộ cao cấp,
+
+155
+00:11:10,437 --> 00:11:20,817
+Nhìn biểu đồ tài chính, ngồi trong phòng tối hoặc đi dạo trên bãi biển, thì nó có sự linh hoạt theo mong muốn của mình. Mình không bị đóng khung.
+
+156
+00:11:21,200 --> 00:11:30,133
+Anh em biết phim Marvel chứ ạ? Ở đây chắc hầu hết ai cũng biết Marvel. Vũ trụ Marvel ạ. Đấy là một cái vũ trụ mà trong câu chuyện khi mà chúng ta
+
+157
+00:11:30,133 --> 00:11:39,067
+có thể là nhìn vào đấy là xem đọc nguyên tác và phim nó chả giống như anh nhau ạ. Bởi vì đấy là thế giới riêng của họ. Thì họ có quyền là
+
+158
+00:11:39,067 --> 00:11:48,000
+sáng tạo theo ý thích của họ. Miễn là không vi phạm về mặt pháp luật và mặt đạo đức là ok. Thì đây là một cái dạng nó là nhỏ hơn của nó.
+
+159
+00:11:48,000 --> 00:11:55,340
+Cái dạng này anh em nhìn qua thì sẽ hơi giống story một chút. Nó là dạng nâng cấp của dạng câu chuyện story. Nó
+
+160
+00:11:55,340 --> 00:12:02,680
+sẽ khó hơn ở những cái phần về tính cách nhân vật kênh, về xây dựng hình ảnh. Nên nó sẽ cần chi tiết hơn.
+
+161
+00:12:02,680 --> 00:12:10,640
+Thông qua nhân vật này thì kênh có thể kể những câu chuyện như
+
+162
+00:12:10,640 --> 00:12:13,060
+Cuộc sống của bạn thay đổi thế nào ở từng mức lương
+
+163
+00:12:13,060 --> 00:12:15,900
+Bạn cần bao nhiêu tiền để sống bằng cổ tức
+
+164
+00:12:15,900 --> 00:12:18,920
+Vì sao bạn đi làm 10 năm nhưng vẫn không có tài sản
+
+165
+00:12:18,920 --> 00:12:22,140
+Điểm quan trọng nhất của chủ đề này là
+
+166
+00:12:22,140 --> 00:12:24,020
+Nhân vật hoạt hình chỉ là phương tiện thôi
+
+167
+00:12:24,020 --> 00:12:27,200
+Còn thứ giữ cho người xem là cái câu chuyện mình kể này
+
+168
+00:12:27,200 --> 00:12:29,200
+Những cái insight về bài học
+
+169
+00:12:29,200 --> 00:12:31,280
+Ở trong video mà mình đưa ra
+
+170
+00:12:34,580 --> 00:12:35,960
+Bản chất của dạng nội dung này.
+
+171
+00:12:36,920 --> 00:12:38,520
+Nhiều người khi mới nhìn vào dạng kênh này.
+
+172
+00:12:38,600 --> 00:12:41,420
+Thường nghĩ rằng chỉ cần tạo ảnh hoạt hình thật đẹp.
+
+173
+00:12:41,760 --> 00:12:42,380
+Là được.
+
+174
+00:12:43,560 --> 00:12:44,200
+Nhưng mà chưa đủ.
+
+175
+00:12:46,892 --> 00:12:50,252
+Một video kể chuyện bằng nhân vật hoạt hình thực chất gồm có rất nhiều lớp khác nhau.
+
+176
+00:12:51,192 --> 00:12:57,752
+Lớp thứ nhất là ý tưởng. Video phải có một chủ đề khiến người xem tò mò, đồng cảm hoặc muốn bấm vào xem.
+
+177
+00:12:57,752 --> 00:13:04,952
+Ví dụ như, bạn cần bao nhiêu tiền để nghỉ việc? Tại sao người làm việc chăm chỉ
+
+178
+00:13:04,952 --> 00:13:12,152
+nhưng vẫn nghèo? Nếu ý tưởng yếu, hình ảnh đẹp cũng rất là khó để kéo được người xem.
+
+179
+00:13:14,092 --> 00:13:22,752
+Lớt thứ 2 là kịch bản. Kịch bản phải có mở đầu quấn hút, câu chuyện rõ ràng, diễn biến hợp lý và có kết luận giá trị.
+
+180
+00:13:22,752 --> 00:13:35,132
+Một video tốt thường không chỉ liệt kê thông tin mà phải dẫn dắt người xem đi qua một hành trình cảm xúc từ tò mò, đồng cảm, nhận ra vấn đề, hiểu góc nhìn mới và ghi nhớ bài học.
+
+181
+00:13:36,832 --> 00:13:50,132
+Lớp thứ 3 mời đến nhân vật. Nhân vật hoạt hình giúp kênh có sự nhất quán và dễ nhận diện. Người xem có thể nghĩ đây là kênh của nhân vật hoạt hình mặt lạnh chuyên kể chuyện về tiền bạc và cuộc sống.
+
+182
+00:13:52,750 --> 00:14:01,930
+Lớp thứ 4 về hình ảnh. Hình ảnh giúp minh họa nội dung kịch bản. Mỗi cảnh cần phục vụ cho câu chuyện, không phải tạo cho đẹp nhưng không
+
+183
+00:14:01,930 --> 00:14:11,110
+liên quan. Khi kịch bản nói về lương tháng nào cũng hết, hình ảnh nên là nhân vật nhìn điện thoại báo tiền lương, xung quanh là các tờ
+
+184
+00:14:11,110 --> 00:14:20,290
+hóa đơn, tiền thuê nhà, khoản vai, chi phí ăn uống. Không nên dùng cảnh nhân vật đứng ngoài bãi biển vì nó không liên quan gì đến bối cảnh.
+
+185
+00:14:20,290 --> 00:14:26,270
+Thì đây là yếu tố để tránh không trung thực. Nói đến cái gì thì hiển thị cái đó.
+
+186
+00:14:29,750 --> 00:14:32,730
+Chúng ta đến với lớp thứ 5 là chuyển động, motion.
+
+187
+00:14:33,970 --> 00:14:36,810
+Dạng này thường dùng ảnh tính được chuyển thành video.
+
+188
+00:14:37,850 --> 00:14:40,530
+Chuyển động có thể đơn giản nhưng phải tạo cảm giác sống động.
+
+189
+00:14:41,230 --> 00:14:47,630
+Ví dụ, camera zoom nhẹ, nhân vật chấp mắt, ánh đèn nhấp nháy, mưa rơi ngoài cửa sổ,
+
+190
+00:14:47,630 --> 00:14:53,630
+Biểu đồ chuyển động, đồng hồ chạy, hoặc các hóa đơn xuất hiện. Nó là các dạng animation.
+
+191
+00:14:55,610 --> 00:14:59,630
+Lớp thứ 6 là Voice, Nhạc và Âm Thanh.
+
+192
+00:15:00,250 --> 00:15:03,690
+Giọng đọc và âm thanh quyết định cảm xúc của video cùng một kịch bản.
+
+193
+00:15:04,410 --> 00:15:07,710
+Nếu đọc bằng giọng đều đều thì video sẽ rất là chán.
+
+194
+00:15:08,350 --> 00:15:14,330
+Nhưng nếu giọng đọc có nhấn nhá, kết hợp, nhạc nền phù hợp, video sẽ có chiều sâu hơn nhiều.
+
+195
+00:15:22,410 --> 00:15:27,490
+Video cần có nhịp, có truyền cảnh, có điểm nhấn, có đoạn nghỉ và có cao trào.
+
+196
+00:15:30,492 --> 00:15:34,432
+Chúng ta sẽ đến với phần tiếp theo, 1.3 công thức tổng quát của một video.
+
+197
+00:15:34,432 --> 00:15:44,352
+Một video dạng này thường có công thức bắt đầu vào một insight rất là mạnh, đưa nhân vật vào một tình huống, một bối cảnh.
+
+198
+00:15:45,912 --> 00:15:56,452
+Các vấn đề được đẩy lên cao trào, đưa thêm các góc nhìn mới, đúc kết thành bài học, thành kết luận. Đó là cấu trúc của dạng này.
+
+199
+00:15:58,292 --> 00:16:02,592
+Ví dụ ở đây, với chủ đề Vì sao bạn đi làm 10 năm nhưng vẫn nghèo?
+
+200
+00:16:04,432 --> 00:16:14,412
+Insight mạnh ở đây là bạn có thể đi làm điều lặn trong 10 năm, nhận lương tháng, nhưng đến cuối cùng vẫn không có gì ngoài một chiếc điện thoại mới hơn và nhiều hóa đơn hơn.
+
+201
+00:16:15,952 --> 00:16:28,632
+Nhân vật rơi vào tình huống. Nhân vật thức dậy lúc 6 giờ sáng, đi làm, ngồi trong văn phòng, nhận lương, trả tiền nhà, trả nợ và mua vài món đồ đã khiến bản thân thấy vui tơ hơn tạm thời.
+
+202
+00:16:28,632 --> 00:16:37,462
+Vấn đề được đẩy lên cao. Sau nhiều năm, nhân vật nhận ra mức lương có tăng, nhưng áp lực cũng tăng nhiều hơn.
+
+203
+00:16:37,462 --> 00:16:46,292
+Chi phí tăng, kỳ vọng xã hội tăng, nhu cầu tiêu dùng tăng. Anh ấy làm nhiều hơn, nhưng vẫn không tự do hơn.
+
+204
+00:16:47,000 --> 00:16:54,210
+Góc nhìn mới ở đây, vấn đề không phải chỉ là ở thu nhập thấp, vấn đề là
+
+205
+00:16:54,210 --> 00:17:01,420
+toàn bộ thu nhập phụ thuộc vào thời gian. Khi anh ấy ngừng làm, thì tiền cũng ngừng đấy.
+
+206
+00:17:01,420 --> 00:17:08,940
+Bài học kết luận, tự do không bắt đầu từ việc có mức lương cao hơn, tự do bắt đầu khi
+
+207
+00:17:08,940 --> 00:17:16,460
+bạn biết đến tiền, kỹ năng hoặc tài sản thành thứ tiếp tục làm việc ngay cả khi bạn nghỉ ngơi.
+
+208
+00:17:16,960 --> 00:17:21,560
+Anh em về phân tích tất cả những video dạng, về dạng mà lời khuyên tài chính đều có câu trúc như này hết.
+
+209
+00:17:22,800 --> 00:17:24,440
+Thì đây là cái cách phân tích.
+
+210
+00:17:25,680 --> 00:17:27,840
+Tất cả những tài liệu này sau mình sẽ gửi lại cho anh chị em.
+
+211
+00:17:27,840 --> 00:17:35,667
+Đơn giản là mình sẽ đưa cái bài liệu vào AI, phân tích ra cấu trúc. Mình phân tích, mình tìm được cái tư duy mà bên mình đã áp dụng vào để
+
+212
+00:17:35,667 --> 00:17:43,493
+mình nghiên cứu và mình kiểm soát dạng cái dạng này. Sau đó thì có thể dùng chính AI đó để phân tích cái dạng chủ đề khác. Nhưng mà đặc biệt
+
+213
+00:17:43,493 --> 00:17:51,320
+lưu ý là lấy tư duy nhưng mà phải kiểm soát dạng lại. Đừng phụ thuộc vào AI ạ. Mình lấy nó làm công cụ hỗ trợ để mình làm nhanh hơn thôi.
+
+214
+00:17:51,320 --> 00:17:58,120
+1.4. Sự khác nhau giữa video hoạt hình giải trí và video kể chuyện hoạt hình
+
+215
+00:17:58,120 --> 00:18:05,740
+Video hoạt hình giải trí thông thường có mục tiêu là gây cười, kể chuyện vui tạo tình huống hài hước hoặc giải trí nhanh
+
+216
+00:18:06,260 --> 00:18:06,540
+Ví dụ.
+
+217
+00:18:06,800 --> 00:18:07,340
+Họa hình hài.
+
+218
+00:18:07,480 --> 00:18:08,180
+Họa hình học đường.
+
+219
+00:18:08,580 --> 00:18:09,720
+Họa hình tình huống gia đình.
+
+220
+00:18:11,080 --> 00:18:12,120
+Video kể chuyện bằng nhân vật.
+
+221
+00:18:12,220 --> 00:18:12,560
+Họa hình.
+
+222
+00:18:12,760 --> 00:18:14,940
+Có mục tiêu chính là truyền tải một góc nhìn.
+
+223
+00:18:15,200 --> 00:18:15,840
+Một bài học.
+
+224
+00:18:16,300 --> 00:18:16,880
+Một sự thật.
+
+225
+00:18:17,620 --> 00:18:18,000
+Cuộc sống.
+
+226
+00:18:18,120 --> 00:18:19,360
+Hoặc một phân tích có chiều sâu.
+
+227
+00:18:20,337 --> 00:18:27,397
+Thì cái phần này nó liên quan đến việc là chúng ta đưa được giá trị gì cho khán giả. Đấy là cái quan trọng nhất. Chứ không phải cứ hình ảnh đẹp vào lên.
+
+228
+00:18:28,177 --> 00:18:34,000
+Còn dạng giải trí nhé, hình ảnh phải đẹp, video phải hài, nó phải cung cấp đúng giá trị. Thì là kênh video lên, nó đơn giản chỉ vậy thôi.
+
+229
+00:18:34,000 --> 00:18:39,717
+Chúng ta đến với phần thứ 2 là lý do tại sao tìm chọn chủ đề này.
+
+230
+00:18:42,677 --> 00:18:45,677
+Đầu tiên chúng ta sẽ có là phù hợp với xu hướng nội dung hiện nay.
+
+231
+00:18:48,157 --> 00:18:53,837
+Người xem ngày càng thích các video có hình ảnh độc lạ, câu chuyện ngắn gọn, thông điệp rõ ràng và dễ xem.
+
+232
+00:18:54,617 --> 00:19:02,737
+Dạng nhân vật hoạt động hình kể chuyện đáp ứng được các yếu tố là không cần quay mặt thật, không cần phải studio quá là mạnh,
+
+233
+00:19:02,737 --> 00:19:10,557
+Không cần diễn viên có sự hỗ trợ đắc lực bởi AI. Không thể chống lại AI đó anh em ạ.
+
+234
+00:19:13,477 --> 00:19:19,157
+Dễ tạo phong cách riêng, có thể làm nhiều video theo cùng một công thức. Cái này rất quan trọng.
+
+235
+00:19:20,397 --> 00:19:25,337
+Tí mình sẽ giải thích rõ hơn cái việc mà làm cùng một công thức thì có nghĩa là như thế nào?
+
+236
+00:19:25,337 --> 00:19:38,817
+Nó khác với việc là sao chép một video ra thành nhiều video nhé. Tìm được một công thức để mình biết cái công thức nó là gì để bắt đầu mình nhân cái công thức nó ra. Chứ không phải nhân cái bài đấy ra. Nhân công thức ạ.
+
+237
+00:19:41,800 --> 00:19:50,540
+Phù hợp với các dạng chủ đề Evergreen, tức là đối dung có thể xem lâu dài, 1 năm sau, 2 năm sau vẫn có thể có view với những kênh làm tốt.
+
+238
+00:19:54,340 --> 00:20:04,020
+Một kênh video về tự do tài chính, sự nghiệp, tâm lý con người, động lực sống hoặc sự khác biệt giữa người giàu và người nghèo thường không bị lỗi thời quá nhanh.
+
+239
+00:20:04,440 --> 00:20:09,040
+Sau 6 tháng, 1 năm hoặc nhiều năm, người xem vẫn có thể tìm và xem lại.
+
+240
+00:20:09,040 --> 00:20:21,260
+Đây là lợi thế lớn so với cuộc chủ đề tin tức, drama hoặc sự kiện ngắn hạn. Tuy nhiên là không phô mô ạ. Mình xem, mình ngẫm, có thể về test.
+
+241
+00:20:21,260 --> 00:20:30,360
+Phù hợp với chính sách nền tảng, nếu làm đúng, chủ đề này có thể triển khai theo hướng nội dung gốc, sáng tạo và an toàn hơn so
+
+242
+00:20:30,360 --> 00:20:39,460
+với việc sao chép lại video thật của người khác, đó là những dạng tổng hợp ấy ạ, thì nó sẽ có nguy cơ bản quyền rất là nhiều.
+
+243
+00:20:39,460 --> 00:20:53,440
+Người làm nội dung có thể tự viết kịch bản, tự tạo nhân vật riêng, tự tạo bối cảnh riêng, tự tạo voice hoặc dùng voice có quyền sử dụng các giọng voice AI chất lượng cao như ở trên Minimax hoặc là ElevenLabs có thể sử dụng được.
+
+244
+00:20:53,440 --> 00:20:58,360
+Được rồi xảy ra một vài tranh cãi rất là lớn trên các cộng đồng lớn mà mình có theo dõi
+
+245
+00:20:58,360 --> 00:21:03,140
+Họ có nói rằng là một số nguyên nhân dẫn đến cây mị không trung thực đó là dùng voice AI
+
+246
+00:21:03,140 --> 00:21:07,720
+Thì không phải nhá, bên mình kiểm chứng với cái kinh nghiệm của bên mình thì không phải
+
+247
+00:21:08,497 --> 00:21:21,397
+Thực chất ra là voice AI nó vẫn đang có sẵn ở đấy rồi và trong bất kỳ một sản phẩm nào mình làm bằng AI nó sẽ đều có dấu vết kỹ thuật số để cho nền tảng họ nhận diện rằng là voice đó làm bằng AI hay là voice thật.
+
+248
+00:21:21,397 --> 00:21:25,357
+Thế nên là nền tảng họ cũng đâu có cấm đâu.
+
+249
+00:21:25,977 --> 00:21:28,237
+Nên anh em cứ yên tâm sử dụng voice AI.
+
+250
+00:21:28,717 --> 00:21:31,397
+Miễn là mình đừng clone giọng của người nổi tiếng.
+
+251
+00:21:32,277 --> 00:21:33,937
+Rồi đừng clone giọng của người khác là được.
+
+252
+00:21:34,217 --> 00:21:35,517
+Mình cứ dùng các giọng trả phí thôi.
+
+253
+00:21:41,937 --> 00:21:45,877
+Người triển khai thì cần tránh là không dùng lại nhân vật hoạt hình nổi tiếng lại có bản quyền này.
+
+254
+00:21:46,477 --> 00:21:49,357
+Không lấy nguyên phong cách nhận diện của một thương hiệu hoặc bộ phim cụ thể.
+
+255
+00:21:49,357 --> 00:21:56,397
+Các bạn có thể không reup video hoạt hình của người khác, không dùng hình ảnh người thật nổi tiếng rồi chuyển thành hoạt hình với mục đích gây hiểu nhầm.
+
+256
+00:21:56,757 --> 00:22:06,257
+Cái dạng video mà ông Trump mà em bé, cái dạng đấy là view rất là kinh nhưng mà cũng rất dễ chết kinh bởi vì vi phạm chính sách.
+
+257
+00:22:08,917 --> 00:22:12,797
+Không sao chép y nguyên kịch bản của kênh khác, không lấy từ các cái nguồn mạng xã hội khác.
+
+258
+00:22:15,800 --> 00:22:25,190
+Muốn phát triển kênh bền vững thì video cần có sự biến đổi sáng tạo và giá trị riêng. Với chủ đề nhân vật hoạt hình kể chuyện thì người làm cần có nhiều
+
+259
+00:22:25,190 --> 00:22:34,580
+cơ hội tạo thành giá trị riêng thông qua các góc nhìn trong kịch bản, nhân vật riêng, phong cách kể chuyện riêng, cách dựng riêng, bộ hình ảnh riêng và thông điệp riêng.
+
+260
+00:22:34,580 --> 00:22:37,360
+2.3
+
+261
+00:22:37,360 --> 00:22:48,300
+Có thể kết hợp nhiều loại tư liệu khác nhau bao gồm là ảnh hoạt hình, ảnh truyền thể sang video, video thật minh họa, video stock ạ, video thật minh họa, hiệu ứng hoạt hình.
+
+262
+00:22:49,540 --> 00:22:53,640
+Thì cái phần này nó rất là quan trọng bởi vì chúng ta có thể chủ động và linh hoạt được.
+
+263
+00:22:54,240 --> 00:23:00,000
+Còn với dạng story thì sao? Thực tế anh em mà làm video mà 2 tiếng mà anh em biến đổi kiểu này thì chết.
+
+264
+00:23:00,600 --> 00:23:04,200
+2 tiếng không làm được. Mà đưa vào tool thì lại phụ thuộc vào tool.
+
+265
+00:23:04,580 --> 00:23:07,360
+Đấy thì lý do tại sao mình lại gợi ý chủ đề này nó là như vậy.
+
+266
+00:23:08,740 --> 00:23:17,700
+2.4. Dễ xây dựng thương hiệu kênh. Một lệ thế lớn của chủ đề này là người làm nội dung có thể xây dựng một nhân vật thương hiệu. Khi
+
+267
+00:23:17,700 --> 00:23:26,660
+nhân vật xuất hiện lặp lại trong nhiều video, người xem sẽ ghi nhớ sau một thời gian khi nhân vật trở thành dấu hiệu nhận diện của kênh.
+
+268
+00:23:26,660 --> 00:23:33,327
+Ví dụ, với kênh có một nhân vật tóc đen, ngắn, mặt lạnh, mắt
+
+269
+00:23:33,327 --> 00:23:39,993
+hơi buồn, mặc áo đen hoặc sơ mi trắng, ít biểu cảm, thường
+
+270
+00:23:39,993 --> 00:23:46,660
+xuất hiện trong các bối cảnh tài chính, công việc, thành phố, văn phòng.
+
+271
+00:23:46,660 --> 00:23:47,557
+Thì hóng sẽ
+
+272
+00:23:47,557 --> 00:23:56,417
+Thì nó sẽ tạo điểm nhấn cho khán giả để họ nhớ về cái nhân vật đấy. Chưa chắc họ đã nhớ tin kênh đâu nhé, vì tin kênh nó rất là nhiều. Nhưng họ xem đủ nhiều, họ sẽ nhớ cái phong cách, tính cách nhân vật đó.
+
+273
+00:23:57,637 --> 00:24:02,717
+2.5 là không cần lộ mặt, không cần quay dựng phức tạp, thì dạng này có thể tiếp cận được với một người.
+
+274
+00:24:02,717 --> 00:24:15,997
+Em lưu ý là mình sẽ chia sẻ dạng này là với một người anh có thể làm được, với đội nhóm thì hãy nâng cấp chất lượng lên. Ngoài ra thì hãy tham khảo thêm các cái nguồn về tài liệu, về chủ đề rất là nhiều.
+
+275
+00:24:15,997 --> 00:24:24,577
+2.6 có thể mở rộng với lâu dài. Lâu dài ở đây mình tính rằng chu kỳ của dạng này ít nhất phải được 6 tháng 1 năm với
+
+276
+00:24:24,577 --> 00:24:33,157
+kênh. Ít nhất ạ. Còn dài hơn thì không dám chắc. Vì dạng chủ đề nào nó cũng sẽ có chu kỳ của nó thôi. Không mãi mãi được.
+
+277
+00:24:35,677 --> 00:24:41,077
+Giới điệu, giới điệu các chủ đề với nhiều ngách khác nhau. Đầu tiên là chúng ta sẽ có ngách tâm lý học.
+
+278
+00:24:41,077 --> 00:24:47,944
+Đó xuống dưới, đúng rồi. Tâm lý học ở đây chúng ta sẽ là một cách rất là phù hợp, nó sẽ liên quan đến cảm
+
+279
+00:24:47,944 --> 00:24:54,810
+xúc, hành vi, suy nghĩ và các tình huống mà người xem dễ đồng cảm. Người xem thường bị thu hút bởi các câu hỏi như tại
+
+280
+00:24:54,810 --> 00:25:01,677
+sao mình lại cảm thấy cô đơn. Tâm lý học triết lý nó đều tương tự như nhau đấy ạ. Ok, tiếp theo xuống dưới đi.
+
+281
+00:25:05,000 --> 00:25:12,190
+Ngách tiếp theo, chủ đề tâm lý học trong hiện đại, trong công việc, chủ đề tâm lý học trong
+
+282
+00:25:12,190 --> 00:25:19,380
+các mối quan hệ, rất nhiều dạng khác nhau. Tại sao người tốt thường bị xem nhẹ? Các topic của nó.
+
+283
+00:25:20,660 --> 00:25:26,720
+Chúng ta có phần tiếp theo là chủ đề tâm lý học xã hội, các nhóm chủ đề con trong phần tâm lý học.
+
+284
+00:25:26,720 --> 00:25:34,400
+Thứ 2 là có cái ngách thứ 2 liên quan đến tài chính, finance ấy. Ngách này là
+
+285
+00:25:34,400 --> 00:25:42,080
+một ngách rất lớn và RPM rất cao nhé. Video 15 phút có thể RPM lên 10 rồi.
+
+286
+00:25:43,080 --> 00:25:56,000
+Có thể RPM lên 10 rồi. Và ngách này thì có thể bán dạng ebook được. Thực tế ra là mình theo dõi các cái đội họ làm YouTube nước ngoài, họ không quá nặng về vấn đề ebook này được. Họ dùng Claude họ viết hết.
+
+287
+00:25:56,720 --> 00:26:06,880
+Nhưng họ kiểm duyệt lại theo kiến thức kinh nghiệm của họ. Và có một người khác nữa là chuyên gia họ đứng ra và kiểm duyệt. Và vậy là họ thành công. Chỉ đơn giản vậy thôi.
+
+288
+00:26:09,800 --> 00:26:21,940
+Nhóm chủ đề nó sẽ có những dạng như là chủ đề tài chính cá nhân này, chủ đề về tư duy của người giàu này, nhóm chủ đề đầu tư và tự do tài chính này, nhóm chủ đề các cấp độ tài sản này.
+
+289
+00:26:21,940 --> 00:26:26,600
+Tiếp theo là chúng ta sẽ có ngách phát triển bản thân
+
+290
+00:26:28,920 --> 00:26:31,060
+Phát triển bản thân thì luôn luôn ai cũng có nhu cầu đúng không ạ?
+
+291
+00:26:31,240 --> 00:26:34,680
+Nếu một giai điện nào đó trong cuộc đời chúng ta đều có mong muốn phát triển về bản thân.
+
+292
+00:26:35,060 --> 00:26:38,100
+Bởi vì là nó có cái điều gì đó không ổn trong cuộc sống của mình.
+
+293
+00:26:39,572 --> 00:26:46,972
+Chúng ta sẽ có như là các chủ đề về kỷ luật cá nhân. Rồi kéo xuống dưới. Chủ đề về tư duy trưởng thành. Ví dụ
+
+294
+00:26:46,972 --> 00:26:54,372
+như là một ngày bạn nhận ra không ai đến cứu mình. Trưởng thành là khi bạn ngừng giải thích bản thân. Rồi ok kéo xuống dưới.
+
+295
+00:26:54,372 --> 00:27:06,932
+Bên dưới nó sẽ có các cái cấu trúc về lưu ý, thì anh em về có thể tham khảo thêm. Những cái phần nào cần chi tiết thì mình sẽ rất là chi tiết hóa. Còn những phần còn lại thì anh em hãy tham khảo về phần tư liệu, về phần tài liệu.
+
+296
+00:27:08,252 --> 00:27:16,252
+Nhóm chủ đề vượt qua thất bại. Rồi tiếp theo đến phần các cái ngách mở rộng bên dưới. Sự nghiệp và công sở là một cái ngách rất là
+
+297
+00:27:16,252 --> 00:27:24,252
+lớn. Xã hội và tầng lớp liên quan đến phần là phần hóa xã hội này. Ví dụ như là chủ đề tại sao người giàu ngay càng giàu.
+
+298
+00:27:24,372 --> 00:27:27,652
+Còn người nghèo thì lại vẫn mãi nghèo.
+
+299
+00:27:28,652 --> 00:27:30,892
+Nó là các vấn đề cơ bản trong cuộc sống thôi.
+
+300
+00:27:31,892 --> 00:27:36,092
+Anh em cứ thấy nó bình thường thôi nhưng mà có những kênh nào đó họ làm rất là tốt và kết quả rất tuyệt vời.
+
+301
+00:27:37,372 --> 00:27:38,012
+Cái vật rất là lớn.
+
+302
+00:27:39,432 --> 00:27:40,392
+Lối sống tối giản này.
+
+303
+00:27:41,952 --> 00:27:44,272
+Minimalist, cái lối sống của Nhật.
+
+304
+00:27:45,332 --> 00:27:47,252
+So sánh các cấp độ trong cuộc sống này.
+
+305
+00:27:47,992 --> 00:27:48,992
+Rồi, ok, kẹo xuống.
+
+306
+00:27:51,832 --> 00:27:54,252
+Bắt đầu đến phần chi tiết, phần này không bỏ qua tới nào.
+
+307
+00:27:54,372 --> 00:27:56,752
+Còn này sẽ là rất kỹ, rất rất kỹ.
+
+308
+00:27:59,000 --> 00:28:12,750
+Hướng dẫn chi tiết quy trình làm chủ đề kể chuyện bằng nhân vật hoạt hình.
+
+309
+00:28:13,330 --> 00:28:21,300
+Bước đầu tiên là xác định ngách chính của kênh. Vì sao lại phải chọn ngách? Như anh em bảo là bây giờ cái gì cũng đánh hay là đánh vòng ngách. Đánh vòng ngách
+
+310
+00:28:21,300 --> 00:28:29,270
+thì sợ là bí trong ngách hay không? Hay là mở rộng kiểu gì? Thì cái cách mở rộng bên mình chia sẻ rồi mà. Mở rộng 5 cộng 2, mình đánh từ ngách thôi.
+
+311
+00:28:29,350 --> 00:28:32,530
+Làm vua nước nhỏ, còn hơn là làm quan thần nước lớn.
+
+312
+00:28:33,410 --> 00:28:45,330
+Bởi vì là mình làm chủ 1 ngách rồi, mình ngon rồi thì mở kênh thứ 2 ngách khác, dùng kênh 1 kéo qua, dùng công thức 5 cộng 2, 5 video ở ngách A cộng với 2 video ở ngách B, test theo tuần, mở rộng dần ra.
+
+313
+00:28:45,850 --> 00:28:48,030
+Đăng số lượng video ít hơn thì giảm xuống theo tỷ lệ.
+
+314
+00:28:48,870 --> 00:28:54,110
+4 video thì 1 tuần thì 3 cái đang phục vụ chính cho khán giả của kênh 1 cái mở rộng.
+
+315
+00:28:54,610 --> 00:28:55,370
+Thì anh em cứ test và đo lường.
+
+316
+00:28:55,370 --> 00:29:01,970
+Nhiều người mới thường mắc lỗi là thấy chủ đề nào hay thì cũng làm
+
+317
+00:29:01,970 --> 00:29:03,790
+Trong cùng một cái chủ đề lớn
+
+318
+00:29:03,790 --> 00:29:05,230
+Ví dụ như là tâm lý học
+
+319
+00:29:05,230 --> 00:29:07,090
+Thì nó có rất là nhiều cái ngách khác nhau
+
+320
+00:29:07,090 --> 00:29:10,570
+Kênh của mình làm về tài chính nhưng mình lại cứ làm về cả phát triển bản thân nữa
+
+321
+00:29:10,570 --> 00:29:11,890
+Cho khi đó kênh mình còn bé
+
+322
+00:29:11,890 --> 00:29:14,910
+Mình làm nay một topic mai một topic ngày kia một topic
+
+323
+00:29:14,910 --> 00:29:21,150
+Thì làm sao mà mình phát triển được đúng không ạ? Làm sao mà YouTube mới hiểu mình làm gì về cái gì mà đề xuất được?
+
+324
+00:29:22,750 --> 00:29:29,310
+Một kênh mới nên tập trung vào một nhóm nội dung đủ rõ. Ví dụ là tài chính cá nhân và tự do tài chính.
+
+325
+00:29:30,990 --> 00:29:35,910
+Tâm lý người trưởng thành, công việc văn phòng và sự nghiệp, phát triển bản thân trong mình.
+
+326
+00:29:38,170 --> 00:29:40,550
+hoặc là những sự thật xã hội qua góc nhìn tiền bạc.
+
+327
+00:29:41,797 --> 00:29:44,757
+Không nên định vị quá rộng như kênh kể mọi thứ trong cuộc sống.
+
+328
+00:29:45,337 --> 00:29:46,917
+Thì chắc chắn là không có đề xuất đâu ạ.
+
+329
+00:29:46,917 --> 00:29:50,217
+Đừng có học kênh to, mình phải học từ kênh nhỏ, mình phải đính thông ách.
+
+330
+00:29:52,157 --> 00:29:56,097
+Kênh làm nội dung hay hay, kênh chia sẻ kiến thức tổng hợp.
+
+331
+00:29:56,917 --> 00:30:03,057
+Không, mình là phải chuyên môn hóa, chứ không có vào kênh cái gì cũng có, nhưng thực ra chẳng có cái gì cả.
+
+332
+00:30:03,997 --> 00:30:05,217
+Thì YouTube làm sao đề xuất được.
+
+333
+00:30:07,657 --> 00:30:11,597
+Cách chọn ngách phù hợp, anh chị em có thể chọn dựa trên 4 cái tiêu chí sau đây.
+
+334
+00:30:12,217 --> 00:30:14,497
+Đầu tiên là có nhu cầu người xem.
+
+335
+00:30:15,497 --> 00:30:16,517
+Mình đo lường thực tế nhé.
+
+336
+00:30:16,917 --> 00:30:22,757
+Nghiên cứu thực tế. Chứ không có mình nghĩ rằng là ngách tài chính sẽ nhiều view không có đâu, không nghĩ được.
+
+337
+00:30:23,177 --> 00:30:27,417
+Xem thực tế trong cái ngách của mình, trong cái chủ đề của mình, ngách tài chính là có nhiều kênh mới làm lên không?
+
+338
+00:30:28,897 --> 00:30:33,977
+Rồi là có kênh to hay không? Có kênh mà phát triển vài năm rồi hay không? Thì phân tích từng phần một.
+
+339
+00:30:36,257 --> 00:30:42,137
+Có thể làm nhiều video, ngay rất quan trọng. Có những cái ngách chủ đề nó rất là bí tưởng, làm đến vài chục video.
+
+340
+00:30:42,537 --> 00:30:45,957
+Anh em xem có những kênh nhiều view nhất, nhiều video nhất nó chỉ có vài chục cái đến trăm cái.
+
+341
+00:30:45,957 --> 00:30:48,850
+Thì anh em mình làm cái đoạn đấy nó sẽ bị vướng
+
+342
+00:30:48,850 --> 00:30:58,070
+Đó thì cũng phải cân nhắc rất là kỹ. Phù hợp với nhân vật hoạt hình nên có khả năng minh họa bằng nhân vật hoạt hình, bối cảnh và câu chuyện.
+
+343
+00:30:59,070 --> 00:31:04,790
+Người thực hiện có thể sản xuất lâu dài nên chọn ngách mà người làm nội dung có thể nghiên cứu, viết kịch bản và làm liên tục.
+
+344
+00:31:04,790 --> 00:31:13,590
+Có nghĩa là mình có một chút gì đó yêu thích về nó thì sẽ tốt hơn. Chứ không thể là mình cứ cày tiền nhưng mình chẳng thích lắm.
+
+345
+00:31:13,590 --> 00:31:21,423
+Nhưng bên mình là biết rằng có cam ngon đấy nhưng bên mình không làm ạ. Bên mình không làm bởi vì là bên mình không thích cái máu me bạo lực. Cảm
+
+346
+00:31:21,423 --> 00:31:29,257
+giác mà phải duyệt dạng đấy là mình thấy hơi đau đầu rồi, hơi nhức nhức cái đầu rồi. Và mình thấy khó chịu, mình cảm thấy là về là những cái
+
+347
+00:31:29,257 --> 00:31:37,090
+áp lực về cái việc duyệt bài cái về mình áp lực ngược lại vợ con thì nó không đúng. Đó, thì nó phải cân bằng thì mình không chọn cái đó thôi.
+
+348
+00:31:37,090 --> 00:31:43,710
+Ở đây chúng ta sẽ có bài tập thực hành chọn ngách.
+
+349
+00:31:44,190 --> 00:31:46,110
+Thì anh chị em hãy xem kỹ phần bài tập này.
+
+350
+00:31:47,270 --> 00:31:49,850
+Nó sẽ có các câu hỏi là kênh mình muốn phục vụ ai?
+
+351
+00:31:50,570 --> 00:31:53,070
+Người xem của mình đang đau ở điểm nào?
+
+352
+00:31:53,770 --> 00:31:57,390
+Đó là mình giải quyết nỗi đau của khán giả đó, khách hàng đó.
+
+353
+00:31:58,010 --> 00:31:59,450
+Họ muốn thay đổi điều gì trong cuộc sống?
+
+354
+00:32:00,210 --> 00:32:03,290
+Mình muốn nhân vật hoặc hình đại diện cho kiểu người nào?
+
+355
+00:32:04,030 --> 00:32:06,350
+Mình có thể làm 30 video đầu tiên.
+
+356
+00:32:06,890 --> 00:32:07,910
+Xoay quanh chủ đề gì.
+
+357
+00:32:08,570 --> 00:32:09,910
+30 video đầu tiên.
+
+358
+00:32:10,470 --> 00:32:12,170
+Hôm qua mình có nhắc đến con số 30 ạ.
+
+359
+00:32:12,570 --> 00:32:13,310
+Lý do tại sao 30.
+
+360
+00:32:13,430 --> 00:32:15,250
+Vì 1 tháng trung bình chúng ta có 30 ngày.
+
+361
+00:32:15,777 --> 00:32:23,357
+Thì với các dạng nội dung mà làm được 1 video 1 ngày thì kế hoạch của mình mở kênh là 30 video. Chạy 1 tháng đầu tiên theo đúng kế hoạch không chỉnh sửa.
+
+362
+00:32:24,397 --> 00:32:28,137
+Sau 1 tháng review lại, kế hoạch không ổn thì bắt đầu mới điều chỉnh chiến lược.
+
+363
+00:32:28,137 --> 00:32:38,917
+Còn nếu dạng video mà nó ít video hơn, như một tháng mình chỉ là up được khoảng 4 cái hoặc là 10 cái thôi thì sẽ tùy theo cái của anh em đo lường và chúng ta sẽ lên kế hoạch theo tháng như vậy.
+
+364
+00:32:39,717 --> 00:32:46,017
+Rất hạn chế cái việc là mình thay đổi liên tục, thay đổi liên tục. Như thế nó sẽ khiến là YouTube chẳng hiểu mình làm được cái gì.
+
+365
+00:32:47,037 --> 00:32:52,997
+Nay chỉnh một cái, mai chỉnh một cái, lanh quanh là chỉnh loạn xã lên là chết. Là sẽ không có điều gì thể ra cả.
+
+366
+00:32:53,437 --> 00:32:54,697
+Đó, thì mình cần tránh điều đó ạ.
+
+367
+00:32:54,697 --> 00:33:02,664
+Chủ đề này có thể mở rộng thành series không? Là các cái tập ấy ạ. Sau 3 tháng, người xem sẽ nhớ kênh mình vì điều gì? Phải có dấu ấn trong
+
+368
+00:33:02,664 --> 00:33:10,630
+chủ đề. Thông thường người top 3 chủ đề lán tất, traffic nó về 3 kênh to tất, to nhất. Thế phần còn lại thì anh em chia nhau. Chia nhau xong
+
+369
+00:33:10,630 --> 00:33:18,597
+cuối cùng vẫn đề xuất lại 3 kênh top đầu thôi. Thế còn những cái kênh nó cứ mạnh dần mạnh dần, càng nhiều kênh làm trong chủ đề thì nó càng mạnh.
+
+370
+00:33:18,597 --> 00:33:22,897
+Còn những kênh còn lại thì nó sẽ ở mức nào đó thôi.
+
+371
+00:33:23,297 --> 00:33:26,137
+Thì mục tiêu của bên mình là luôn luôn cố gắng lên top 3.
+
+372
+00:33:26,997 --> 00:33:27,877
+Cố gắng là phải lên top 3.
+
+373
+00:33:32,000 --> 00:33:35,850
+Bước 2. Xây dựng nhân vật đại diện cho kênh.
+
+374
+00:33:36,830 --> 00:33:38,050
+Vì sao nhân vật quan trọng?
+
+375
+00:33:38,790 --> 00:33:40,910
+Nhân vật là tài sản nhận diện lớn nhất của kênh.
+
+376
+00:33:41,710 --> 00:33:45,370
+Một nhân vật tốt giúp kênh dễ nhớ hơn, thumbnail đồng bộ hơn.
+
+377
+00:33:45,850 --> 00:33:47,910
+Video có cảm giác thuộc cùng một hệ sinh thái.
+
+378
+00:33:48,550 --> 00:33:54,830
+Người xem có cảm giác đang theo dõi hành trình của một nhân vật quen thuộc và người làm nội dung dễ sản xuất hàng loạt.
+
+379
+00:33:54,830 --> 00:34:03,790
+Lưu ý nha, sản xuất hàng loạt có thể là sản xuất được liên tục, chứ không phải là sản xuất một phát là băm được 10 video đâu.
+
+380
+00:34:04,510 --> 00:34:07,490
+Mình phải rõ về định nghĩa, không là bị hiểu nhầm là chết.
+
+381
+00:34:07,870 --> 00:34:11,650
+Lại về bảo ông Huân cũng chia sẻ là dạng này làm được sản xuất hàng loạt băm cun được là chết.
+
+382
+00:34:12,690 --> 00:34:15,530
+Thì nó, mình cần phải thống nhất nhau về đoạn này.
+
+383
+00:34:19,430 --> 00:34:23,530
+Nếu mỗi video dùng một kiểu nhân vật khác nhau thì kênh sẽ bị rời rạc.
+
+384
+00:34:23,530 --> 00:34:29,250
+Vì vậy, ngay từ đầu cần xây dựng một kế hoạch, một nhân vật đại diện rõ ràng.
+
+385
+00:34:30,090 --> 00:34:39,750
+Các yếu tố cần xác định, người học cần viết hồ sơ nhân vật bao gồm là tên nhân vật là gì? Adam hoặc là Taylor hoặc là gì đó, tránh tên nhân vật người nổi tiếng nhé.
+
+386
+00:34:41,110 --> 00:34:51,550
+Giới tính, độ tuổi, ngoại hình, kiểu tóc, màu tóc, khuân mặt, dáng người, trang phục, phụ kiện, biểu cảm chính, các cái biểu cảm phụ nữa.
+
+387
+00:34:52,170 --> 00:34:53,610
+Màu sắc chủ đạo của video là gì?
+
+388
+00:34:54,410 --> 00:34:59,450
+Ví dụ dạng tài chính mà nói về chủ đề chính là về những cái công trình.
+
+389
+00:34:59,450 --> 00:35:08,310
+Câu chuyện là gặp khó khăn trong cuộc sống, tài chính là kiệt quệ thì mau nó phải sám sám một tí, sinh em chơi màu đỏ ở đấy là không phù hợp rồi.
+
+390
+00:35:08,332 --> 00:35:19,012
+Nó sẽ có các tính cách khác nhau, các vai trò trong video, nỗi đau hiện đại diện, mục tiêu nhân vật theo đuổi.
+
+391
+00:35:19,812 --> 00:35:27,432
+Ví dụ ở đây có một cái ví dụ về hồ sơ nhân vật là tên là Minh này, tuổi 30, rồi tính nam, người nghiệp ban đầu là nhân viên văn phòng.
+
+392
+00:35:28,972 --> 00:35:35,952
+Có các cái mẫu về ngoại hình là tóc đen ngắn, mắt hơi mệt, gương mặt ít biểu cảm mà có đen hoặc sơ mây trắng.
+
+393
+00:35:35,952 --> 00:35:39,392
+Thì những cái phần này anh em cần nghiên cứu theo cái đối tượng của mình làm.
+
+394
+00:35:39,512 --> 00:35:46,452
+Ví dụ mình làm về đối tượng khán giả ở Mỹ thì mình phải tìm hiểu về cái trong chủ đề mình là cái nhận diện nó như thế nào.
+
+395
+00:35:47,332 --> 00:35:48,492
+Chứ mình không thể nói mình đoán được.
+
+396
+00:35:50,872 --> 00:35:52,612
+Cách tạo bộ ảnh nhân vật ban đầu.
+
+397
+00:35:53,412 --> 00:35:58,212
+Trước khi làm video hàng loạt, người làm nội dung nên tạo một bộ ảnh nhân vật gồm ít nhất là 20 ảnh.
+
+398
+00:35:58,532 --> 00:36:01,372
+Cũng có cái cảm xúc và các cái dáng ngồi khác nhau.
+
+399
+00:36:02,192 --> 00:36:03,912
+Nhân vật là đứng thẳng này, nhìn thẳng.
+
+400
+00:36:03,912 --> 00:36:09,400
+Nhân vật nhìn nghiêng trái, nghiêng phải, nhân vật ngồi làm việc, nhân vật...
+
+401
+00:36:09,400 --> 00:36:15,460
+Cầm cốc cà phê, nhân vật nhìn điện thoại, đó là các biểu cảm khác nhau, các hình ảnh khác nhau.
+
+402
+00:36:15,600 --> 00:36:17,500
+Về sau chúng ta làm sẽ đồng bộ nhân vật rất dễ.
+
+403
+00:36:18,040 --> 00:36:21,220
+Bây giờ thì kể cả là ChatGPT họ làm đồng bộ nhân vật cũng rất là tốt rồi.
+
+404
+00:36:21,800 --> 00:36:24,800
+Và cái mẹo của mình mình chia sẻ cho anh em là phần làm ảnh này nhé.
+
+405
+00:36:25,300 --> 00:36:30,320
+Mình đừng có sợ prompt, mình muốn làm bất cứ một dạng nào thì mình đưa trực tiếp vào ChatGPT.
+
+406
+00:36:30,900 --> 00:36:34,600
+Bảo nó là làm cho tôi prompt cho dạng ảnh tương tự như này.
+
+407
+00:36:34,940 --> 00:36:37,620
+Tuy nhiên về sau mình điều chỉnh lại prompt theo ý hiểu của mình.
+
+408
+00:36:37,620 --> 00:36:46,720
+Anh em mình cứ dịch sang tiếng Việt, xong là mình điều chỉnh theo ý của mình thôi, đến khi mình ra được cái như ý của mình. AI bây giờ dùng rất là dễ, nó không còn
+
+409
+00:36:46,720 --> 00:36:55,820
+rào cản nữa, không còn phải đi xin prompt nữa. Lát nữa mình cũng sẽ chia sẻ một số prompt mẫu, tuy nhiên nó chỉ là mẫu thôi, thì anh em tham khảo và sau đó điều chỉnh lại.
+
+410
+00:36:55,820 --> 00:37:08,660
+Ở đây sẽ có một cái prompt mẫu như thế này. Anh em có thể dùng tài liệu, mình sẽ gửi bản tài liệu anh em copy ra. Nếu là bản PDF thì có thể chụp ảnh đưa vào ChatGPT được.
+
+411
+00:37:08,660 --> 00:37:18,660
+Lưu ý để giữ nhân vật đồng nhất ở đây thì là mình cần phải làm việc trên một phiên thôi.
+
+412
+00:37:19,440 --> 00:37:21,320
+Nếu như làm trên ChatGPT làm việc một phiên thôi.
+
+413
+00:37:21,900 --> 00:37:24,920
+Nếu như là Midjourney thì mình tạo một cái thư mục riêng dành riêng cho tạo cái đấy thôi.
+
+414
+00:37:25,120 --> 00:37:28,460
+Chứ đừng có tạo linh tinh mà là sao nó lại bị sai mất.
+
+415
+00:37:31,640 --> 00:37:33,440
+Nó sẽ có một cái cụm mô tả nên lặp lại ở đây.
+
+416
+00:37:33,440 --> 00:37:35,040
+Lại ở đây, mình đưa cái mẫu ở đây
+
+417
+00:37:35,040 --> 00:37:36,980
+Thì anh em có tham khảo nhé
+
+418
+00:37:36,980 --> 00:37:39,320
+Bước thứ 3
+
+419
+00:37:39,320 --> 00:37:41,200
+Xây dựng phong cách hình ảnh cho kênh
+
+420
+00:37:41,200 --> 00:37:43,800
+Vì sao cần phong cách cố định
+
+421
+00:37:43,800 --> 00:37:44,857
+Ngoài nhân vật
+
+422
+00:37:44,857 --> 00:37:47,137
+Ngoài nhân vật, kênh cần có phong cách hình ảnh nhất quán.
+
+423
+00:37:47,977 --> 00:37:57,157
+Phong cách hình ảnh bao gồm kiểu hoạt hình, màu sắc, ánh sáng, bố cục, cảm xúc, bối cảnh, cách dùng chữ và cách làm thumbnail.
+
+424
+00:37:58,377 --> 00:37:59,797
+Nó có phong cách thôi nhé.
+
+425
+00:37:59,897 --> 00:38:01,977
+Chứ không phải là thumbnail giống nhau hết đâu.
+
+426
+00:38:01,977 --> 00:38:15,817
+Đặc biệt anh em là dạng triệt lý với cả mấy cái dạng ấy là hay bị một cái lỗi bên mình cũng từng dính. Làm là bố cục y hệt nhau, thay mỗi cái tích thôi, thay mỗi cái chữ thôi. Còn bố cục chữ cũng giống nhau. Thế thì về sau nó gặp vấn đề không trung thực.
+
+427
+00:38:16,517 --> 00:38:23,157
+Thế thì mình cần hiểu rõ là bố cục nó khác so với là cái dạng mà nó y hệt nhau, nó khác nhau đấy ạ.
+
+428
+00:38:23,157 --> 00:38:32,647
+Một số phong cách phù hợp cho dạng này đó dạng là Cinematic 2D Animation. Nó phù hợp với các dạng tài chính, tâm lý phát
+
+429
+00:38:32,647 --> 00:38:42,137
+triển bản thân. Nó sẽ có hình ảnh đẹp, có chiều sâu, ánh sáng điện ảnh, màu sắc trầm và nhân vật có cảm xúc.
+
+430
+00:38:42,137 --> 00:38:53,237
+Nó sẽ có các ví dụ bên dưới, đây nữa như là Documentary Animation, phù hợp với các dạng về xã hội, tiền bạc, sự thật cuộc sống, phơi bày các sự thật cuộc sống.
+
+431
+00:38:55,017 --> 00:39:06,497
+Các dạng về Education thì mình sẽ cần màu sắc tươi sáng hơn một chút, bởi vì giáo dục thì chúng ta sẽ cần là màu sắc tươi sáng, thì nó sẽ tiếp nhận được tốt hơn, khán giả sẽ tiếp nhận được tốt hơn.
+
+432
+00:39:09,000 --> 00:39:16,093
+Bước 4. Tìm ý tưởng video. Tư duy tìm ý tưởng ở đây là một ý tưởng tốt không chỉ có một, không
+
+433
+00:39:16,093 --> 00:39:23,387
+chỉ là một chủ đề chung chung. Ý tưởng tốt phải khiến người xem dừng lại và tự hỏi. Có đúng với mình không?
+
+434
+00:39:23,387 --> 00:39:30,680
+Tại sao lại như vậy? Mình muốn biết câu trả lời? Hay là video này có vẻ nói đúng vấn đề của mình?
+
+435
+00:39:30,680 --> 00:39:39,100
+Công thức tìm ý tưởng ở đây là nỗi đau của người xem cộng tình huống quen thuộc cộng góc nhìn bất ngờ.
+
+436
+00:39:39,100 --> 00:39:48,120
+Anh em có thể ghi chép phần này lại. Công thức tìm ý tưởng là nỗi đau của người xem cộng tình huống quen thuộc cộng một góc nhìn bất ngờ.
+
+437
+00:39:54,300 --> 00:39:58,320
+Ví dụ ở đây chúng ta có ví dụ là nỗi đau là làm nhiều nhưng vẫn nghèo.
+
+438
+00:39:58,320 --> 00:40:09,360
+Tình huống quen thuộc là đi làm nhận lương mỗi tháng. Góc nhìn bất ngờ, vấn đề không phải bạn kiếm ít, mà là bạn chỉ bán thời gian để lấy tiền.
+
+439
+00:40:10,580 --> 00:40:16,180
+Tiêu đề ở đây là vì sao bạn đi làm 10 năm nhưng vẫn không có tài sản. Đây là một ví dụ.
+
+440
+00:40:17,840 --> 00:40:24,000
+Về nguồn tìm ý tưởng ở đây chúng ta sẽ là quan sát video thành công cùng ngách. Cái này quan trọng nhất, thực chế, thực chiến.
+
+441
+00:40:24,000 --> 00:40:28,640
+Chủ đề có gì thành công thì tập trung vào đó
+
+442
+00:40:28,640 --> 00:40:34,660
+Làm ở đâu, khán giả ở đâu, khách hàng ở đâu thì mình đào sâu ở đó
+
+443
+00:40:34,660 --> 00:40:36,280
+Đối thủ ở đâu thì đào sâu ở đó
+
+444
+00:40:37,467 --> 00:40:38,887
+Mình xem thêm bình luận của người xem.
+
+445
+00:40:39,947 --> 00:40:42,527
+Có thể họ comment một số dạng ý tưởng hay sao.
+
+446
+00:40:43,007 --> 00:40:44,647
+Mà chính chủ kênh họ không phục vụ được.
+
+447
+00:40:45,427 --> 00:40:46,287
+Thì mình phục vụ hô.
+
+448
+00:40:49,667 --> 00:40:52,787
+Sách và kiến thức nền thì cái này nó sẽ đào sâu thêm vào giai đoạn sau.
+
+449
+00:40:52,787 --> 00:41:00,807
+Giai đoạn đầu anh em ưu tiên là thực tế nhé. Trên kênh đối thủ, trên các cái kênh mà trong chủ đề làm như thế nào thì mình tham khảo.
+
+450
+00:41:02,467 --> 00:41:05,987
+Trong cuộc sống thực tế thì cái này cũng là giai đoạn sau khi mà mình đã đủ hiểu chủ đề rồi.
+
+451
+00:41:07,947 --> 00:41:09,647
+Công thức tiêu đề là đây có các cái ví dụ.
+
+452
+00:41:10,427 --> 00:41:13,227
+Đó là tại sao bạn đi làm 10 năm nhưng vẫn nghèo?
+
+453
+00:41:14,087 --> 00:41:16,007
+Hay là điều gì xảy ra cộng vấn đề?
+
+454
+00:41:17,007 --> 00:41:20,807
+Đó là điều gì xảy ra khi bạn tiết kiệm 30% thu nhập trong 10 năm?
+
+455
+00:41:20,807 --> 00:41:29,577
+Đó thì nó công thức nó. Về cơ bản công thức tất cả các dạng thiệu đều đều giống nhau hết. Anh em đi phân tích nó sẽ như vậy thôi. Nó đều có công thức thành công
+
+456
+00:41:29,577 --> 00:41:38,347
+hết. Thì mình cần phải phân tích ra để mình làm. Bạn tưởng là nhưng thực ra nó lại như thế này này. Đó thì là mình vừa tạo vấn đề mình vừa giải quyết vấn đề luôn.
+
+457
+00:41:40,407 --> 00:41:47,127
+5 ý tưởng mẫu ở đây nó sẽ có các ý tưởng liên quan đến các chủ đề tài chính, công việc. Anh em tham khảo nhé. Phần này mình sẽ đi qua.
+
+458
+00:41:47,127 --> 00:41:51,847
+Về tâm lý, về phát triển bản thân, về xã hội và cuộc sống.
+
+459
+00:41:55,900 --> 00:41:58,800
+Rồi chúng ta sẽ đến với phần thứ 5 là viết kịch bản cho video.
+
+460
+00:42:01,320 --> 00:42:02,900
+Vì sao kịch bản là phần quan trọng nhất?
+
+461
+00:42:03,340 --> 00:42:04,480
+Linh hồn của video là kịch bản.
+
+462
+00:42:04,780 --> 00:42:05,900
+Muốn làm video phải có kịch bản.
+
+463
+00:42:06,980 --> 00:42:08,460
+Muốn có video phải có kịch bản.
+
+464
+00:42:08,580 --> 00:42:11,920
+Không có kịch bản lúc đấy bắt đầu mới mò mò viết thì sao được đúng không ạ?
+
+465
+00:42:12,140 --> 00:42:15,100
+Mình phải xác định rõ topic của video sau đó là mình viết kịch bản.
+
+466
+00:42:17,120 --> 00:42:18,740
+Trong dạng video này kịch bản là sương sống.
+
+467
+00:42:19,400 --> 00:42:22,160
+Hình ảnh đẹp chỉ giúp người xem bấm vào ở lại một lúc.
+
+468
+00:42:22,760 --> 00:42:24,160
+Nhưng nếu kịch bản mà rời rạc,
+
+469
+00:42:25,900 --> 00:42:33,020
+Thì sao? Thì khán giả xem thấp, đơn giản chỉ có vậy thôi, logic mà không đủ thì khán giả xem sẽ rất ngắn.
+
+470
+00:42:35,080 --> 00:42:44,100
+Cấu trúc kịch bản sẽ gồm có 5 phần. Đầu tiên là hook mở đầu, intro đấy ạ. Hook là cái kéo ạ, cái mỏ neo ạ, kéo khán giả, giữ chân khán giả.
+
+471
+00:42:44,500 --> 00:42:48,340
+YouTube nó có một cái chỉ số cực kỳ quan trọng mà anh em cần đến lưu tâm, đó là 30 giây đầu tiên.
+
+472
+00:42:49,300 --> 00:42:55,380
+Thì thông thường như bên mình đo lường, bên mình thấy rằng là 30 giây đầu tiên mà được khoảng 7-6% trở lên là cũng khá ổn rồi.
+
+473
+00:42:55,900 --> 00:43:04,600
+Nhưng mà để mà tốt nhất mà xịn nhất các video mà nổ mạnh nhất của bên mình mình đeo lường ấy nó phải từ tầm 7 8 đến 80 phần trăm trở lên
+
+474
+00:43:05,120 --> 00:43:12,500
+Là bên mình thấy là cũng cá là ok rồi thì em lưu tâm cái 30 giây đầu tiên để mình hút khán giả lời mình kéo khán giả vào
+
+475
+00:43:12,500 --> 00:43:19,160
+Về sau mình sẽ có một cái dũng mình chia sẻ thêm về về công thức làm intro
+
+476
+00:43:19,160 --> 00:43:25,560
+Tài liệu mình tham khảo từ một chuyên gia YouTube rất là lớn
+
+477
+00:43:25,560 --> 00:43:32,500
+Họ làm việc trực tiếp với MrBeast với một số những YouTuber khác nổi tiếng và lớn nhất
+
+478
+00:43:32,500 --> 00:43:34,400
+Trên thế giới, họ có công thức
+
+479
+00:43:34,400 --> 00:43:36,900
+là 8, 15 và 25.
+
+480
+00:43:37,460 --> 00:43:38,980
+Công thức intro chỉ có 3 dạng thôi.
+
+481
+00:43:39,140 --> 00:43:39,720
+8, 15, 25.
+
+482
+00:43:39,757 --> 00:43:50,177
+Sau sẽ có phần zoom để chia sẻ thêm cho anh em về phần intro này. Vì riêng phần intro với một bối zoom lại không hết rồi. Thì không thể nào mà chia sẻ qua loà ở đây được.
+
+483
+00:43:52,357 --> 00:44:00,957
+Phần thứ 2 là mở bối cảnh của câu chuyện. Sau hook, cần đưa nhân vật vào một tình huống cụ thể. Là phải rõ ràng đúng không ạ? Anh ấy thức
+
+484
+00:44:00,957 --> 00:44:09,557
+dậy vào lúc 6 giờ sáng, căn phòng vẫn tối, điện thoại báo thức gieo lần thứ 3. Anh ấy tắt báo thức, ngồi dậy, mặc cùng một chiếc áo sơ mi.
+
+485
+00:44:09,757 --> 00:44:15,257
+Đi cùng một con đường, đến cùng một văn phòng và bắt đầu một ngày giống hệt hôm qua.
+
+486
+00:44:16,777 --> 00:44:17,837
+Thế đây là một ví dụ.
+
+487
+00:44:18,817 --> 00:44:22,977
+Đến phần thứ ba chúng ta sẽ cần đẩy cao trào lên để giữ khán giả thôi.
+
+488
+00:44:23,917 --> 00:44:30,497
+Mà câu chuyện là nó có phải có bắt đầu xong bắt đầu đưa vào bối cảnh rồi bắt đầu là mình phải có phần cao trào chứ.
+
+489
+00:44:31,637 --> 00:44:33,357
+Đây là một phần khiến người xem đồng cảm mạnh.
+
+490
+00:44:33,357 --> 00:44:44,177
+Mỗi tháng tiền lương đến rồi biến mất, một phần cho tiền nhà, một phần cho ăn uống, một phần cho trả góp, một phần cho những thứ anh ấy mua chỉ để cảm thấy cuộc sống.
+
+491
+00:44:44,500 --> 00:44:45,700
+Vẫn còn đáng chịu được.
+
+492
+00:44:46,760 --> 00:44:49,740
+Chúng ta đến với phần thứ 4, đó là đưa ra góc nhìn mới.
+
+493
+00:44:50,320 --> 00:44:55,980
+Góc nhìn mới này sẽ là điều quyết định rất là lớn kênh của anh em khác với những kênh ngoài kia.
+
+494
+00:44:56,800 --> 00:44:59,040
+Bởi vì mỗi người sẽ có một góc nhìn khác nhau.
+
+495
+00:45:00,340 --> 00:45:06,580
+Thế nên là cái phần này thì anh em dùng AI viết, nhưng hãy lưu ý riêng cái phần đưa góc nhìn mới thì chúng ta phải đưa ý tưởng cho nó.
+
+496
+00:45:07,200 --> 00:45:11,540
+Chứ đừng có mà bảo AI là mày đưa luôn ý tưởng về phần góc nhìn mới cho tao.
+
+497
+00:45:11,760 --> 00:45:12,540
+Thế là hỏng đấy.
+
+498
+00:45:12,540 --> 00:45:16,680
+Thế thành ra lấy ý tưởng của góc nhìn mới của AI chứ không phải góc nhìn mới của mình đâu.
+
+499
+00:45:17,700 --> 00:45:19,340
+Đó thì anh em phải làm được phần đó.
+
+500
+00:45:20,960 --> 00:45:22,860
+Đấy là lý do mình bảo dạng này khó hơn một chút.
+
+501
+00:45:25,380 --> 00:45:27,820
+Đến phần thứ 5 là kết luận và gây suy nghĩa.
+
+502
+00:45:28,200 --> 00:45:33,900
+Trong một video về dạng này thì nó cần có bài học, cần phải có kết luận thì nó mới chọn vẹn.
+
+503
+00:45:34,020 --> 00:45:35,620
+Chứ mình đừng có bỏ ngỏ vấn đề ở giữa.
+
+504
+00:45:35,620 --> 00:45:43,050
+Cố chúc một kịch bản cho video 8 đến 10 phút ở đây sẽ có khoảng 1.000 đến 1.500 từ từ
+
+505
+00:45:43,050 --> 00:45:50,480
+tiếng Việt hoặc 1.200 đến 1.800 từ tiếng Anh tùy theo thuốc độ độc của cái giọng voice anh em chọn.
+
+506
+00:45:52,120 --> 00:45:54,960
+Mình gợi ý ở đây đoạn đầu hook từ 10 đến 20 giây.
+
+507
+00:45:54,960 --> 00:45:57,420
+Công thức về hook
+
+508
+00:45:57,420 --> 00:45:59,520
+Về intro mình sẽ chia sẻ
+
+509
+00:45:59,520 --> 00:46:00,460
+Trong một buổi zoom sau
+
+510
+00:46:00,460 --> 00:46:02,220
+Công thức 8, 15, 25
+
+511
+00:46:02,220 --> 00:46:05,580
+Đoạn 2
+
+512
+00:46:05,580 --> 00:46:07,320
+Giới thiệu tình huống
+
+513
+00:46:07,320 --> 00:46:09,740
+Bao gồm khoảng 45 đến 60 giây
+
+514
+00:46:10,082 --> 00:46:14,702
+Anh em tham khảo, hãy nghiên cứu trực tiếp trong chủ đề mình làm, ngách mình làm, để đưa ra là con số chuẩn nhất.
+
+515
+00:46:15,182 --> 00:46:17,702
+Nó đều có công thức thành công hết, phân tích là sẽ ra.
+
+516
+00:46:18,782 --> 00:46:24,642
+Lưu ý, phân tích thì đừng dùng AI, bởi vì mình quăng link vào đấy kể cả con Claude, nó có thể đọc được video.
+
+517
+00:46:24,642 --> 00:46:28,622
+Nhưng mà nó sẽ không có cảm nhận của mình. Mình hay phân tích để mình hiểu.
+
+518
+00:46:30,202 --> 00:46:32,342
+Đoạn 3 là vòng lập vấn đề từ 1 đến 2 phút.
+
+519
+00:46:33,242 --> 00:46:34,462
+Đoạn thứ 4 là hệ quả.
+
+520
+00:46:35,142 --> 00:46:35,722
+1 đến 2 phút.
+
+521
+00:46:36,122 --> 00:46:38,342
+Đúng không? Mình có vấn đề đấy nó phải có hệ quả chứ đúng không ạ?
+
+522
+00:46:38,822 --> 00:46:40,042
+Nó phải rõ ràng về mạch câu chuyện.
+
+523
+00:46:40,882 --> 00:46:43,562
+Đoạn thứ 5 là sự thật ở góc nhìn mới khoảng 2 đến 3 phút.
+
+524
+00:46:45,082 --> 00:46:46,882
+Đoạn 6, hành trình thay đổi.
+
+525
+00:46:47,462 --> 00:46:49,082
+Và đoạn 7 là kết luận bài học.
+
+526
+00:46:50,262 --> 00:46:51,422
+Xong một video 8 người phút.
+
+527
+00:46:52,342 --> 00:46:54,022
+Ở đây mình có cái mẫu kịch bản hoàn chỉnh ngắn ở đây.
+
+528
+00:46:54,022 --> 00:46:58,442
+Ở đây anh em về tham khảo những phần mẫu thì mình sẽ đi qua nhanh để tránh mất thời gian.
+
+529
+00:47:00,702 --> 00:47:04,662
+Ví dụ mình đọc một đoạn đây là vì sao bạn đi làm 10 năm nhưng vẫn không có tài sản.
+
+530
+00:47:05,082 --> 00:47:13,542
+Thì hook ở đây là bạn có thể đi làm điều đoạn trong 10 năm, nhận lương mỗi tháng, tăng lương vài lần, mua được nhiều đồ hơn nhưng cuối cùng vẫn không có tự do hơn.
+
+531
+00:47:14,022 --> 00:47:16,350
+Ngày đầu tiên trước khi đi làm
+
+532
+00:47:16,350 --> 00:47:20,730
+Đó, nghe nó cũng thấy có một cái điều đó cân cấn đúng không ạ?
+
+533
+00:47:21,870 --> 00:47:31,550
+Tiếp theo đưa lên bối cảnh là anh ấy thức dậy lúc 6 giờ sáng, căn phòng vẫn tối, điện thoại báo thức, báo thức gieo lần thứ 3, rồi tiếp tục đưa vấn đề vào.
+
+534
+00:47:32,690 --> 00:47:44,190
+Đưa thêm một góc nhìn, đoạn này là đoạn của anh em mình này, góc nhìn vào, để mà đa dạng hóa không góc nhìn khi mình mới làm chủ đề thì mình có thể là sử dụng đa dạng AI hơn để gợi ý cho mình.
+
+535
+00:47:44,190 --> 00:47:55,370
+Mình gợi ý thêm một con AI mà làm khá tốt liên quan đến phần là ý tưởng trong thực tế đó là con Grok ạ. Grok nó trả lời khá là thật. Một số anh em dùng Grok để chửi nhau ấy, xả sát chết.
+
+536
+00:47:57,910 --> 00:48:06,310
+Đến phần thay đổi thì chúng ta sẽ đưa ra những cái góc nhìn về phần thay đổi, rằng là cái điều gì đó không ổn nên phải có sự thay đổi. Cuối cùng là kết luận.
+
+537
+00:48:08,000 --> 00:48:11,850
+Rồi chúng ta sẽ đến với phần tiếp theo là bước thứ 6, chia cảnh theo kịch bản.
+
+538
+00:48:11,850 --> 00:48:21,990
+Trong kịch bản, đoạn này anh em sẽ thấy là nếu mà chúng ta là một mình thì thật ra không phải quá kỹ, thật ra không phải quá kỹ.
+
+539
+00:48:22,200 --> 00:48:24,360
+Nhưng nếu chúng ta chuyên môn hóa
+
+540
+00:48:24,360 --> 00:48:25,620
+Anh em làm theo đội nhóm
+
+541
+00:48:25,620 --> 00:48:27,580
+Anh em làm theo doanh nghiệp
+
+542
+00:48:27,580 --> 00:48:29,140
+Thì chúng ta phải chuyên môn hóa ra
+
+543
+00:48:29,140 --> 00:48:30,380
+Như bên mình ấy
+
+544
+00:48:30,380 --> 00:48:32,050
+Cái phần mà chia cảnh và tình hình
+
+545
+00:48:32,050 --> 00:48:36,290
+Và tìm source rồi là bổ sung source này nó sẽ là thông thường là sẽ của content
+
+546
+00:48:36,290 --> 00:48:39,450
+Đó thì mình cần chuyên môn hóa các phần này ra
+
+547
+00:48:39,450 --> 00:48:41,590
+Lý do tại sao nó lại cứ có từng mục như vậy
+
+548
+00:48:43,902 --> 00:48:49,422
+Vì sao phải chia cảnh? Là sau khi có kịch bản không nên tạo ảnh ngay, cần chia kịch bản thành những cảnh nhỏ.
+
+549
+00:48:49,922 --> 00:48:58,622
+Việc chia cảnh giúp người thực hiện biết cần bao nhiêu ảnh, mỗi ảnh minh họa đoạn nào, cảnh nào cần nhân vật, cảnh nào cần bối cảnh, cảnh nào cần footage thật,
+
+550
+00:48:58,622 --> 00:49:04,182
+Cảnh nào cần tách hoặc biểu đồ và cảnh nào cần chuyển động mạnh hay là nhẹ.
+
+551
+00:49:05,762 --> 00:49:12,702
+Nếu không có chia cảnh, người thực hiện sẽ tạo ảnh ngẫu nhiên, đến lúc dựng video sẽ thiếu cảnh, thừa cảnh hoặc hình ảnh sẽ không khớp lời thoại.
+
+552
+00:49:13,702 --> 00:49:25,102
+Cái này có quen không ạ? Nếu mà chúng ta không chia rõ rằng công việc ra thì thực tế anh như bản thân một người làm lúc đấy là cũng loay hoay, làm lúc nào tạo ảnh ở đó thì có phải là mình không tối ưu thời gian, mình không tối ưu quy trình.
+
+553
+00:49:25,102 --> 00:49:31,502
+Thì khi mình làm thành công một kênh mình cũng chẳng đúc kết được quy trình, mình cũng chẳng chia sẻ cho đội ngũ, mình không mở rộng thêm đội nhóm.
+
+554
+00:49:32,482 --> 00:49:34,402
+Đó thì mình mãi mãi vẫn chỉ làm một mình thôi.
+
+555
+00:49:38,062 --> 00:49:39,342
+Bỗi cảnh nên dài bao lâu?
+
+556
+00:49:40,602 --> 00:49:47,182
+Mình sẽ phân định rõ ra, nó sẽ ước chừng ban đầu là mình ước chừng bởi sau mình sẽ ra được chi tiết, nó ra được cụ thể từng bước từng bước một.
+
+557
+00:49:48,702 --> 00:49:50,922
+Đây sẽ có ví dụ về mẫu chia cảnh, em tham khảo ạ.
+
+558
+00:49:53,900 --> 00:49:58,960
+Ở phần chia cạnh này chúng ta sẽ có các quy tắc chọn ảnh.
+
+559
+00:49:59,760 --> 00:50:04,540
+Đó là mỗi một hình ảnh thì mình cần phải trả lời là người xem nhìn cảnh này có hiểu lời thoại nói gì không?
+
+560
+00:50:05,520 --> 00:50:07,540
+Story anh em hay bị cái là đúng là story luôn.
+
+561
+00:50:08,540 --> 00:50:09,460
+Story là story.
+
+562
+00:50:10,580 --> 00:50:13,060
+Ảnh với cả content chả khớp gì với nhau cả.
+
+563
+00:50:13,940 --> 00:50:15,520
+Thì rõ ràng không trung thực là điều đương nhiên.
+
+564
+00:50:16,000 --> 00:50:21,060
+Bên mình còn dính là video thì nói vì chất lý hay lắm.
+
+565
+00:50:21,840 --> 00:50:23,100
+Cảnh thì mây bay nước chảy.
+
+566
+00:50:23,100 --> 00:50:24,260
+Trả liên quan gì nhau.
+
+567
+00:50:25,600 --> 00:50:31,300
+Đấy, bài học lớn, một kênh khoảng mấy chục nghìn, ra đi.
+
+568
+00:50:32,300 --> 00:50:34,820
+Chủ kỳ là mất 6 tháng là chưa bật được lại kiếm tiền.
+
+569
+00:50:39,760 --> 00:50:42,920
+Đến bước 7 ở đây, chúng ta sẽ sử dụng AI để tạo ảnh này.
+
+570
+00:50:43,820 --> 00:50:47,080
+Nguyên tắc tạo ảnh là chúng ta cần phải follow 5 nguyên tắc sau đây.
+
+571
+00:50:47,080 --> 00:50:56,620
+Ảnh phải đúng nhân vật, ảnh phải đúng bối cảnh, ảnh phải đúng cảm xúc, ảnh phải đúng theo phong cách kênh, và ảnh phải phục vụ lời thoại.
+
+572
+00:50:57,480 --> 00:51:05,280
+Đó, có 5 nguyên tắc cơ bản này thì anh em cần nắm rõ để chúng ta đảm bảo rằng là trung thực. Đừng làm không trung thực nữa.
+
+573
+00:51:08,180 --> 00:51:12,460
+Anh em story tham khảo cái này về làm story thì nó cũng sẽ yên tâm hơn rất là nhiều. Tất nhiên là vất hơn rồi.
+
+574
+00:51:12,460 --> 00:51:14,940
+Rồi, bây giờ anh em có khi ngày bắn chụp video
+
+575
+00:51:14,940 --> 00:51:17,300
+Giờ về lại là 2-3 ngày là 1 video
+
+576
+00:51:17,300 --> 00:51:19,800
+Thì có thể là cũng thấy là vất vả đấy
+
+577
+00:51:19,800 --> 00:51:22,480
+Vì là story nó có bị 1 cái giới hạn như này
+
+578
+00:51:22,480 --> 00:51:24,980
+Là bên mình cũng phải bỏ story nhá
+
+579
+00:51:24,980 --> 00:51:26,740
+Bên mình bỏ nhá
+
+580
+00:51:26,847 --> 00:51:29,027
+Bên mình có những kênh doanh thu rất là tốt đấy.
+
+581
+00:51:29,567 --> 00:51:31,287
+Nhưng về sau quyết định của bọn mình là bỏ.
+
+582
+00:51:31,547 --> 00:51:34,707
+Bởi vì là mình nhận thấy vấn đề là story ông ấy làm 2 tiếng.
+
+583
+00:51:35,747 --> 00:51:39,067
+Mà 1 ngày bắn 2-3 video thì đọc content kiểu gì.
+
+584
+00:51:41,227 --> 00:51:43,767
+Mà đấy là mới có 2-3 video 1 ngày nhá.
+
+585
+00:51:43,767 --> 00:51:51,014
+Thì làm sao mới đọc được content, thời gian đâu mà duyệt. Anh em làm thì có 8 tiếng 1 ngày trên công ty, thời gian
+
+586
+00:51:51,014 --> 00:51:58,260
+là buổi tối về app, upload video, thì mình không có thể đủ thời gian để duyệt được. Thế nên là bên mình lựa chọn là bỏ.
+
+587
+00:51:58,260 --> 00:52:05,507
+Chứ còn story vẫn rất ngon, không phải không ngon. RPM toàn 20-30 thôi. Đúng không ạ? Đấy, nhưng chỉ là lựa chọn bên mình thôi.
+
+588
+00:52:06,127 --> 00:52:10,487
+Thì mình chia sẻ thêm góc nhìn, anh em tham khảo thêm góc nhìn ạ, lựa chọn cách phù hợp với mình.
+
+589
+00:52:13,767 --> 00:52:22,197
+Cấu trúc 1 prompt chuẩn ở đây chúng ta cần các phần là loại hình ảnh, nhân vật, bối cảnh, hành động, cảm xúc, ánh sáng, phong cách và tỷ lệ khung
+
+590
+00:52:22,197 --> 00:52:30,627
+hình. Tỷ lệ khung hình nó sẽ có tỷ lệ 16.9 là chuẩn cho YouTube Full HD. Thì em lưu ý phần này ở trong prompt để chúng ta làm ảnh.
+
+591
+00:52:30,627 --> 00:52:32,487
+Prompt nó không khó
+
+592
+00:52:32,487 --> 00:52:35,187
+Anh em lấy những mẫu công thức mình
+
+593
+00:52:35,187 --> 00:52:38,087
+Ví dụ ở đây và sau đó mình dịch thẳng ra tiếng Việt
+
+594
+00:52:38,087 --> 00:52:40,687
+Mình xem là ông này đưa mẫu như thế này
+
+595
+00:52:40,687 --> 00:52:43,467
+Thì nó có cấu trúc như thế nào
+
+596
+00:52:43,467 --> 00:52:45,267
+Sau đó thì anh em sử dụng lại
+
+597
+00:52:45,267 --> 00:52:48,167
+Xong biến đổi thành cho anh em thôi
+
+598
+00:52:48,200 --> 00:52:57,347
+Đó, có cái ví dụ về cảnh đi làm này, cảnh văn phòng, cảnh nhận lương này. Ví dụ mình đi qua nhanh nhé. Cuối cùng chúng ta sẽ đến phần
+
+599
+00:52:57,347 --> 00:53:06,493
+checklist. Checklist, checklist, checklist, checklist ở phần này. Ồ kéo lên một chút, quá rồi. Đó. Trước khi dùng ảnh, là trước khi edit video ấy ạ, thì chúng ta cần
+
+600
+00:53:06,493 --> 00:53:15,640
+phải kiểm tra là nhân vật có giống mấy mẫu không? Khuôn mặt có bị méo mói không? Nên là lỗi mà AI, check lỗi. Cuối cùng là mình phải check.
+
+601
+00:53:15,640 --> 00:53:19,880
+Chứ đừng có thấy là vất quá là bỏ qua là chết.
+
+602
+00:53:20,520 --> 00:53:24,020
+Có những cái sự bỏ qua, những sự lười biếng thì sẽ phải trả giá bằng rất nhiều tiền mặt.
+
+603
+00:53:25,000 --> 00:53:26,720
+Có những cái kênh rất là lớn, bên mình lười.
+
+604
+00:53:28,020 --> 00:53:31,940
+Bên mình là fixed mindset, bên mình là thiên kiến, làm đúng, làm tốt, làm đủ rồi.
+
+605
+00:53:32,560 --> 00:53:36,300
+Đến lúc là ZZ kiếm tiền, anh em bảo kênh mấy chục nghìn một tháng.
+
+606
+00:53:37,040 --> 00:53:39,440
+ZZ 6 tháng rồi, thiệt hại bao nhiêu tiền ạ?
+
+607
+00:53:40,740 --> 00:53:43,000
+Đấy là những cái thiệt hại đó.
+
+608
+00:53:43,680 --> 00:53:45,180
+Chỉ nhìn vào những cái nhỏ là lười thôi.
+
+609
+00:53:45,640 --> 00:53:54,210
+Đến bây giờ điều chỉnh, 2 ngày được 1 video, ngày xưa 1 ngày bắn 1, 2 video, bây giờ 2 ngày được 1 video, Răng tối yêu
+
+610
+00:53:54,210 --> 00:54:02,780
+quy trình ngày giữa 1 video, lâu hơn rất là nhiều, làm mất công hơn rất là nhiều, nhưng mà làm cách mới thì an toàn hơn.
+
+611
+00:54:02,780 --> 00:54:08,800
+Ảnh có quá nhiều chi tiết gây dối hay không?
+
+612
+00:54:09,140 --> 00:54:10,200
+Ảnh có yếu tố bản quyền
+
+613
+00:54:10,200 --> 00:54:11,500
+Hoặc nhân vật nổi tiếng hay không?
+
+614
+00:54:11,600 --> 00:54:13,880
+Thì cái này anh em dựa theo các chích lý để xử lý
+
+615
+00:54:13,880 --> 00:54:15,500
+Quy trình sẽ rất dài
+
+616
+00:54:15,500 --> 00:54:17,340
+Tuy nhiên thì hãy follow từng phần 1
+
+617
+00:54:17,340 --> 00:54:19,260
+Làm từng phần 1 thì nó
+
+618
+00:54:19,260 --> 00:54:21,062
+Thực tế ra nó không còn dài nữa
+
+619
+00:54:21,062 --> 00:54:24,722
+Bước 8 là chuyển ảnh thành video.
+
+620
+00:54:25,022 --> 00:54:30,302
+Cái này dựa theo thực tế là mình dùng các cái AI, Grok và chuyển ảnh thì video khá là chân thực nhé.
+
+621
+00:54:30,682 --> 00:54:32,102
+Là ổn nhé, Veo 3 cũng ổn.
+
+622
+00:54:32,402 --> 00:54:35,062
+Thì anh em sử dụng, đừng dùng tool, đừng dùng tool cố gắng là mình...
+
+623
+00:54:35,862 --> 00:54:40,462
+Nếu mà anh em làm cá nhân mà chưa đầu tư được nhiều thì ok, dùng tool được.
+
+624
+00:54:41,162 --> 00:54:45,442
+Các cái tool hay là các cái tài khoản họ bán giá nó hợp lý hơn thì ok dùng được.
+
+625
+00:54:45,502 --> 00:54:49,662
+Còn anh em đội nhóm một doanh nghiệp thì mình hãy có một cái tư duyên làm chuẩn.
+
+626
+00:54:49,662 --> 00:54:59,862
+Cố gắng làm chuẩn nhất trong tầm hiểu biết của mình thì dần dần nó sẽ ok. Bởi vì sao? Bởi vì cái tư duy làm chuẩn nó sẽ chi phú toàn bộ những cái hành động của mình, những cái quyết định của mình.
+
+627
+00:55:00,642 --> 00:55:10,922
+Nếu như đợt vừa rồi anh em win bản quyền đúng không ạ? Bên mình ngay lập tức 150 mấy win bản quyền. Gần 5 triệu một win.
+
+628
+00:55:10,922 --> 00:55:17,982
+Xử lý xong hết rồi, ngay đợt Creator Empire bây giờ, về phát xử lý xong luôn. Adobe
+
+629
+00:55:17,982 --> 00:55:25,042
+mua bản quyền 100%, Office với đội Hành Trình Nhân Sự sẽ mua bản quyền cho anh em.
+
+630
+00:55:25,962 --> 00:55:32,762
+Đây đủ, còn lại là cái gì không cần thì không buộc. Thì cái tư duy đấy nó sẽ chi phú hành động của mình.
+
+631
+00:55:33,650 --> 00:55:47,430
+Thì anh em cứ trả chi phí đi, có sao đâu mà. Đội nhóm hay doanh nghiệp anh em có chi phí duy trì rồi, có doanh thu duy trì rồi, thì anh em mới đầu tư đi. Nó tính được vào chi phí mà. Hộ kinh doanh cũng ghi nhận được chi phí mà. Doanh nghiệp cũng ghi nhận được chi phí mà, thì anh em lấy chi phí về.
+
+632
+00:55:47,430 --> 00:55:54,137
+Những cái anh em gặp vấn đề trong việc xuất hóa đơn để mà duyên hiện chi phí thì có thể liên hệ với mình. Mình
+
+633
+00:55:54,137 --> 00:56:00,843
+sẽ chia sẻ các cái cách và mình sẽ tạo một cái nhóm liên quan đến kế toán để giải đáp một số những cái thắc mắc.
+
+634
+00:56:00,843 --> 00:56:07,550
+Hoặc có một cái bửi zoom nào đó liên quan đến phần đó. Thì trước mắt để giải quyết nhanh thì cứ nhắn tin với mình.
+
+635
+00:56:07,550 --> 00:56:17,510
+Với những đơn vị mà họ đã đóng thuế nhà thầu ở Việt Nam thì việc xuất hóa đơn nó là đơn giản rồi. Với những đơn vị mà họ chưa đóng thuế nhà thầu thì mình đóng thôi. Mất thêm phần trăm.
+
+636
+00:56:21,210 --> 00:56:28,840
+Chúng ta chuyển sang bước thứ 8 chuyển ảnh thêm video này. Mình gợi ý một số những cái liên quan đến AI như Grok này, Veo 3 này là
+
+637
+00:56:28,840 --> 00:56:36,470
+dùng khá là tốt. Có Leonardo cũng ok nhé. Nhưng mà Leonardo thì nó bị cái hay lỗi anh em ạ. Nó rẻ hơn, mỗi tội là hay lỗi rồi.
+
+638
+00:56:36,470 --> 00:56:45,610
+Thì anh em sẽ dựa theo cái chủ đề cái kênh mình làm và sau mình test, test nhé, cái nào phù hợp mình dùng, không có cái tool nào tốt nhất đâu, chỉ có cái tool phù hợp thôi.
+
+639
+00:56:45,610 --> 00:56:59,430
+Mình đưa ra các cái ví dụ ở đây thì anh em tham khảo nhé tham khảo về cái cách cái prompt chuyển từ ảnh sang video sau đó thì cái rất có rất là nhiều đơn vị họ đang dạy
+
+640
+00:56:59,430 --> 00:57:05,610
+khóa học rất là rẻ về prompt về cách chuyển ảnh này rất là rẻ luôn anh em học chỉ một hai buổi thôi các
+
+641
+00:57:05,610 --> 00:57:07,610
+Các kỹ năng anh em học rất là nhanh ạ
+
+642
+00:57:07,610 --> 00:57:10,130
+Thì mình cố gắng mình dành thời gian mình đi học
+
+643
+00:57:10,130 --> 00:57:12,370
+Có những cái khóa họ chỉ tầm vài trăm nghìn thôi
+
+644
+00:57:12,370 --> 00:57:13,790
+Có những khóa 1-2 triệu
+
+645
+00:57:13,790 --> 00:57:15,870
+Thì nó không đáng là bao nhiêu để mình học
+
+646
+00:57:15,870 --> 00:57:16,617
+Tục thế giới
+
+647
+00:57:16,617 --> 00:57:22,617
+Thực tế ra là để mà học được một cái kỹ năng đúng không ạ? Để học một cái nghề, anh em học đại học là 4 năm ít nhất.
+
+648
+00:57:24,317 --> 00:57:36,057
+Học lấy xe đi thì cũng phải cả năm. Thì xong bắt đầu mới lá được xe. Thế tại sao chúng ta lại tiết kiệm phần học một cái kỹ năng về AI? Nó chỉ có vài trăm nghìn. Đó thì đừng tiếc phần đó.
+
+649
+00:57:38,297 --> 00:57:44,117
+Các lỗi thường gặp ở đây thì có một số những cái lỗi mình đặt kê ở đây thì có những cái cách để xử lý thì anh em tham khảo.
+
+650
+00:57:44,117 --> 00:57:50,117
+Chúng ta đến với bước thứ 9 là kết hợp footage thật với cả là minh hoạ.
+
+651
+00:57:50,897 --> 00:57:54,297
+Thì cái phần này để nó tránh cái việc là video mình toàn làm với AI.
+
+652
+00:57:55,437 --> 00:57:58,757
+Đó thì mình có thể là mình dùng nhân vật là nó vẫn chỉ trỏ ở đây đúng không ạ?
+
+653
+00:57:58,757 --> 00:58:02,137
+Chỉ về cái khung hình đấy. Nhưng mà cái video đấy là video thật.
+
+654
+00:58:02,617 --> 00:58:05,717
+Mình dùng stock là nó cũng ok, nó cũng đa dạng hơn rồi.
+
+655
+00:58:06,257 --> 00:58:08,597
+Đó mình tối ưu hơn một chút, tối ưu hơn một chút là ok.
+
+656
+00:58:09,550 --> 00:58:16,880
+Footage thật nên dùng khi cần tăng tính thực tế hoặc minh họa các bối cảnh như thành phố, văn phòng, đường phố, giao thông,
+
+657
+00:58:16,880 --> 00:58:24,210
+tòa nhà ngân hàng, màn hình chứng khoán. Đừng cố gượng ép đoạn này nhé. Mình dùng phù hợp thôi ạ. Đừng cố gượng ép.
+
+658
+00:58:24,670 --> 00:58:36,570
+Gợi ý tỷ lệ của mình ở đây là 70% là ảnh video hoạt hình vì chủ đề của mình là dùng video hoạt hình. Thế có 20% còn lại thì nên sử dụng footage thật và 10% là làm các dạng biểu đồ.
+
+659
+00:58:36,570 --> 00:58:40,650
+Biểu đồ, text, hiệu ứng, motion graphic, chuyển động.
+
+660
+00:58:42,000 --> 00:58:45,530
+Chúng ta đến với bước thứ 10 là tạo voice, nhạc nền và âm thanh.
+
+661
+00:58:46,810 --> 00:58:51,930
+Voice, rất quan trọng rằng này, kênh sẽ nhớ về voice rất là nhiều, một trong các yếu tố.
+
+662
+00:58:52,790 --> 00:59:04,950
+Voice là linh hồn của dạng video kể chuyện, một voice tốt cần rõ chữ, tốc độ vừa phải, có nhân nhá, phù hợp cảm xúc chủ đề, không đọc quá nhanh, không đều đều như robot phải biết dừng ở câu quan trọng.
+
+663
+00:59:04,950 --> 00:59:09,950
+Một cái mèo ở đây khi mình chọn voice là mình sẽ không chọn những giọng mà quá phổ biến giặc AI đâu ạ.
+
+664
+00:59:09,950 --> 00:59:16,650
+Mình sẽ chọn ở ElevenLabs mình sẽ tìm những cái voice mới mà có giá cao. Đấy là mình chọn nha, mình chia sẻ cách mình chọn nha.
+
+665
+00:59:16,650 --> 00:59:22,370
+Cái cách mình chọn nhé, mình sẽ chọn những cái dạng mà nó có mô hình V3 là mới nhất và giá nó rất là cao.
+
+666
+00:59:22,730 --> 00:59:28,310
+Ví dụ trung bình là render một đoạn khoảng một phút thì nghe ví dụ bình thường là tốn khoảng 1000 credit đi.
+
+667
+00:59:28,790 --> 00:59:31,130
+Nhưng mình sẽ chọn cái dọng nào mà nó tốn tận 3000 credit.
+
+668
+00:59:32,170 --> 00:59:34,670
+Để làm sao? Để ít ông dùng cái đấy thì nó đỡ bị trùng lập.
+
+669
+00:59:35,490 --> 00:59:36,650
+Đơn giản tư duyên mình chỉ là nhiều.
+
+670
+00:59:36,650 --> 00:59:38,570
+Thì em hãy lựa chọn cho
+
+671
+00:59:38,570 --> 00:59:40,090
+Cái sự phù hợp nhé
+
+672
+00:59:40,757 --> 00:59:49,617
+Footage thì phải đúng nội dung này, chất lượng tốt, không có watermark. Và chỉ dùng các nguồn có bản quyền thôi. Vì xác định mình đã dùng thì
+
+673
+00:59:49,617 --> 00:59:58,477
+nên dùng Storyblocks hoặc là Freepik nhé. Bên mình đề xuất 2 cái dạng đó. Bên mình dùng cũng thời gian dài rồi và mình thấy rất là ổn.
+
+674
+00:59:58,477 --> 01:00:08,237
+Còn về cái dạng mà các trang web khác mà miễn phí, nhưng mà anh em lưu ý này, miễn phí, nhưng mà họ miễn phí cho sử dụng cá nhân thôi, không miễn phí cho kiếm tiền.
+
+675
+01:00:08,737 --> 01:00:12,537
+Nên về sau là gặp vấn đề bản quyền là mình không được xử lý đâu, mình không được hỗ trợ xử lý.
+
+676
+01:00:17,917 --> 01:00:23,117
+Rồi ok đến phần nhạc nền, nhạc nền thì sẽ tùy thuộc theo cái mình mong muốn.
+
+677
+01:00:23,117 --> 01:00:36,657
+Ví dụ như là tái chính thì nó phải có cái dạng nhạc vẹn khác hay là dạng về phát triển bản thân thì nó phải khác. Đấy thì anh em phải phân tích dựa theo chính chủ đề của mình. Và tìm nhạc. Nhạc thì mình đề xuất dùng nhạc của YouTube và Epidemic Sound.
+
+678
+01:00:42,250 --> 01:00:49,330
+Đến phần âm thanh phụ là các cái sound effect, thì chúng ta sử dụng phù hợp với từng bối cảnh khác nhau.
+
+679
+01:00:52,330 --> 01:01:02,430
+Có thể là tiếng báo thức, tiếng mưa, âm thanh của thành phố, tiếng bàn phím gõ, tiếng trung điện thoại, thông báo tin nhắn, tiếng đồng hồ, tích tắc.
+
+680
+01:01:02,850 --> 01:01:07,610
+Thì đấy là những yếu tố rất nhỏ nhưng mà nó tạo nên cảm xúc của video và nó tạo nên sự khác biệt rất là lớn.
+
+681
+01:01:07,610 --> 01:01:15,850
+Đấy thì khi mà chúng ta đã có những cái tổng quan như thế này thì khi mà anh em thực tế mà đi xem một video ấy thì chúng ta sẽ nhìn được
+
+682
+01:01:15,850 --> 01:01:24,090
+sâu hơn rất là nhiều. Có những góc nhìn rất là mới. Mình hiểu rõ ràng là tại sao video nó lên luôn. Vì nó hay như thế cơ mà. Thì nó mới lên.
+
+683
+01:01:24,090 --> 01:01:31,390
+Bước cuối cùng là dựng video hành trình, quy trình dựng chuẩn là đưa voice vào timeline, thì cái này tham khảo, mình chia sẻ.
+
+684
+01:01:32,270 --> 01:01:44,350
+Sau đó cắt voice theo từng đoạn, đặt marker cho các dạng quan trọng này, trên hình ảnh video này, mô tả này, cắn thời lượng cho từng cảnh theo lời thoại này, dựa vào voice này, thêm các footage thật này, thêm text này.
+
+685
+01:01:44,750 --> 01:01:49,510
+Có một kênh như này mình chia sẻ là anh em làm những dạng chủ đề liên quan đến người già nhé, đối tượng già nhé.
+
+686
+01:01:49,510 --> 01:01:53,350
+Thì ngoài video anh em phải có cả text, text phải để to ra.
+
+687
+01:01:53,350 --> 01:01:56,930
+Thì làm gì người già mắt người ta kém, tai người ta lãng.
+
+688
+01:01:56,930 --> 01:02:02,050
+Thì nó kết hợp cả nghe và nhìn thì người ta sẽ có trải nghiệm tốt hơn và người ta sẽ xem lâu hơn.
+
+689
+01:02:02,050 --> 01:02:03,550
+Đó thì mình chia sẻ phần đó.
+
+690
+01:02:03,550 --> 01:02:07,870
+Mình phải chỉnh âm lượng cho phù hợp này
+
+691
+01:02:07,870 --> 01:02:08,690
+Chỉnh màu nếu cần
+
+692
+01:02:08,690 --> 01:02:09,770
+Bởi cùng là suốt video
+
+693
+01:02:09,770 --> 01:02:13,330
+Mình sẽ có cái công thức gợi ý cấu trúc ở đây
+
+694
+01:02:13,330 --> 01:02:14,570
+30 giây đầu như thế này
+
+695
+01:02:14,570 --> 01:02:16,390
+Thì anh em tham khảo
+
+696
+01:02:16,390 --> 01:02:18,530
+Và có thể là điều chỉnh
+
+697
+01:02:18,530 --> 01:02:21,070
+Nghiên cứu trực tiếp trong chủ đề để tham khảo nhé
+
+698
+01:02:21,070 --> 01:02:21,710
+Để làm nhé
+
+699
+01:02:29,872 --> 01:02:33,532
+Đây là có phần dùng text trên màn hình, dùng text trên màn hình kéo xuống.
+
+700
+01:02:33,532 --> 01:02:42,232
+Đó, Text là nhấn mạnh, không nên hiện toàn bộ lời thoại, nó tùy chủ đề nha, ví dụ rằng riêng dạng này, riêng dạng này là mình sẽ có những cái Text
+
+701
+01:02:42,232 --> 01:02:50,932
+Pop Up ra, nó bật ra ấy, ví dụ như có cái cảnh là ngạc nhiên chưa, thì nó có một cái chữ Surprise ra, Surprise đấy, nó hiện ra, nổi bật ra
+
+702
+01:02:50,932 --> 01:02:59,632
+phát, thì nó là nó hút khán giả vào đấy, mỗi lần hút được như thế đúng không ạ, thì là mình kéo được 5 giây, 10 giây của khán giả rồi ấy,
+
+703
+01:02:59,632 --> 01:03:05,212
+Nó đương nhiên liên tục, liên tục như thế thì là mình giữ chân được khán giả đó. Nó chỉ đơn giản vậy thôi ạ.
+
+704
+01:03:07,252 --> 01:03:11,832
+Nhịp dựng này, không nên nhịp dựng quá chậm hoặc quá nhanh, nó sẽ tùy theo chủ đề thì anh em không tính kỹ.
+
+705
+01:03:12,612 --> 01:03:19,412
+Chúng ta làm một cái video hoàn hảo là phục vụ đúng nhu cầu của khán giả, chứ không phải là theo cảm nhận của mình. Không phải.
+
+706
+01:03:20,232 --> 01:03:24,712
+Khán giả cần gì mà phục vụ đấy. Thế có những cái chủ đề đó, họ chỉ làm 2 phút thôi anh em ạ.
+
+707
+01:03:24,712 --> 01:03:26,372
+2 phút 1 video thôi
+
+708
+01:03:26,372 --> 01:03:29,432
+Làm lên 10 phút khán giả không xem
+
+709
+01:03:29,432 --> 01:03:32,132
+Như cái dạng mà mẹo tips tricks ấy
+
+710
+01:03:32,132 --> 01:03:34,752
+Mà mỗi 1 video chỉ có 1 mẹo thôi
+
+711
+01:03:34,752 --> 01:03:38,172
+Thì họ sẽ xem là 1 mẹo duy nhất đấy thôi ạ
+
+712
+01:03:38,500 --> 01:03:44,740
+Còn video nào mà tổng hợp nhiều mẹo, video dài thì em có khi phải tổng hợp 3-40 cái mẹo vào đấy.
+
+713
+01:03:45,140 --> 01:03:47,600
+Thế nó thành video dài được thì mình phải hiểu rõ về bản chất.
+
+714
+01:03:48,080 --> 01:03:54,120
+Dẫu mình là bây giờ mà lên YouTube mà tìm hiểu là mẹo thay pin cho chìa khóa xe ô tô.
+
+715
+01:03:55,080 --> 01:03:58,260
+Làm quả video xem 20 phút không thấy mẹo đâu là thôi, report ngay.
+
+716
+01:03:58,900 --> 01:04:00,620
+Đó nên mình phải hiểu rất là rõ về bối cảnh.
+
+717
+01:04:01,400 --> 01:04:05,520
+Việc đang gấp rồi nó bắt xem video dài mãi vẫn chưa vào nội dung là report là cái chắc rồi.
+
+718
+01:04:05,520 --> 01:04:14,580
+Hoặc là mình bỏ video đúng không ạ? Thì mình hiểu rõ từng phần đó. Cuối cùng là làm thumbnail. Thumbnail thì bây giờ anh em hãy sử dụng các cái
+
+719
+01:04:14,580 --> 01:04:23,640
+tool, các cái AI để nó hỗ trợ mình. Mình thấy làm rất là tuyệt vời bây giờ. Cái phần tạo ảnh của ChatGPT bây giờ làm cực kỳ đẹp, cực kỳ
+
+720
+01:04:23,640 --> 01:04:32,700
+chi tiết. Đấy thì anh em dùng ChatGPT cũng khá ổn. Sau đó thì mình điều chỉnh lại cho cần thiết ở trên Photoshop. Nên sử dụng Photoshop để làm nhé.
+
+721
+01:04:32,700 --> 01:04:38,140
+Photoshop thì những cái phần thêm chữ rồi các thứ là nó đẹp hơn, nó nét hơn.
+
+722
+01:04:38,520 --> 01:04:41,940
+Thì hình em nên sử dụng Photoshop. Canva thì nó hơi bị mỏ.
+
+723
+01:04:45,200 --> 01:04:50,940
+Chúng ta sẽ có những cái phần công thức ở đây là nhân vật cộng tình huống, cộng chữ, cộng yếu tố tò mò.
+
+724
+01:04:52,520 --> 01:05:00,200
+Ví dụ là bạn cần bao nhiêu tiền để sống bằng cổ tức này, thumbnail có nhân vật ngồi ở bãi biển, bên cạnh là laptop và biểu đồ cổ tức.
+
+725
+01:05:00,500 --> 01:05:03,680
+Đấy có một cái dòng chữ ở đây
+
+726
+01:05:03,680 --> 01:05:04,500
+Đó
+
+727
+01:05:04,500 --> 01:05:07,160
+Là để mình bổ trợ cho nội dung đấy ạ
+
+728
+01:05:07,160 --> 01:05:09,280
+Hoặc là có cái con số lớn
+
+729
+01:05:09,280 --> 01:05:11,780
+Như 500.000 đô hoặc 1 triệu đô chẳng hạn
+
+730
+01:05:11,780 --> 01:05:12,900
+Đấy thì nó bổ trợ cho
+
+731
+01:05:12,900 --> 01:05:14,460
+Đấy thì đây là cái công thức
+
+732
+01:05:14,460 --> 01:05:16,700
+Thì anh em về phân tích ra nội dung của mình
+
+733
+01:05:16,700 --> 01:05:19,700
+Thì khi mình có cái công thức cơ bản rồi
+
+734
+01:05:19,700 --> 01:05:20,200
+Công thức tổng rồi
+
+735
+01:05:20,200 --> 01:05:22,462
+tổng rồi thì mình phân tích ra nó sẽ rất là nhiều
+
+736
+01:05:22,462 --> 01:05:32,149
+Quy tắc làm chữ trong thumbnail này rất quan trọng này. Nhưng quy tắc này áp dụng cho tiếng Anh thôi nhé. Anh em mà áp dụng cho các cái thị trường mà tiếng chữ Jun chẳng hạn hay là thị
+
+737
+01:05:32,149 --> 01:05:41,835
+trường Nhật Bản, Hàn Quốc thì nó sẽ không phù hợp đâu ạ. Bởi vì sao? Bởi vì có những cái chủ đề ấy như thị trường tiếng Nhật Bản nhé. Một cái chữ của họ rất là dài, dài dài
+
+738
+01:05:41,835 --> 01:05:51,522
+dài dài này. Anh em mà viết ngắn quá 3-5 chữ nữa nó không đủ nội dung đúng không? Anh em để ý các cái thị trường như Nhật Bản, Hàn Quốc hay là các cái thị trường Ả Rập ấy.
+
+739
+01:05:51,522 --> 01:05:55,122
+Thì chữ của họ rất là dài, thì công thức này nó sẽ không còn đúng nữa.
+
+740
+01:05:55,582 --> 01:05:59,022
+Bởi vậy nên anh em tham khảo cái công thức dành cho chủ đề này, thị trường tiếng Anh.
+
+741
+01:06:00,662 --> 01:06:03,762
+Không quá 3, 5 từ này, chữ to dễ đọc trên điện thoại này.
+
+742
+01:06:04,422 --> 01:06:10,042
+Đó, thì khi mình dễ đọc trên điện thoại thì trên cái màn hình của máy tính ấy, nó sẽ hiển thị để khán giả họ xem dễ được.
+
+743
+01:06:11,722 --> 01:06:16,462
+Không dùng quá nhiều phông thì đồng nhất cái phông của các cái thumbnail của mình, cái phông chữ ấy.
+
+744
+01:06:16,462 --> 01:06:22,642
+Nên dùng từ gây tò mò để bổ trợ cho phần tiêu đề và hình ảnh.
+
+745
+01:06:23,982 --> 01:06:25,882
+Đây có phần checklist thumbnail thì anh em tham khảo này.
+
+746
+01:06:26,502 --> 01:06:26,902
+Mình checklist.
+
+747
+01:06:29,222 --> 01:06:31,142
+Đến mấy bước thứ 13, viết tiêu đề video.
+
+748
+01:06:35,550 --> 01:06:42,090
+Tiêu đề phải khiến người xem hiểu nhanh video nói về điều gì và vì sao nên xem.
+
+749
+01:06:42,690 --> 01:06:47,030
+Cái đặc biệt của tiêu đề tiếng Anh thì anh em cố gắng viết là tầm 70 đến 80 thôi.
+
+750
+01:06:47,410 --> 01:06:50,850
+Ký tự thôi, đừng viết hơn. Đừng tận dụng hết 100 ký tự của nó.
+
+751
+01:06:52,210 --> 01:06:58,930
+Lý do là vì trên cái thanh giao diện của YouTube nó chỉ hiển thị khi mà cái tiêu đề nó hiển thị trên trang chủ ấy.
+
+752
+01:06:59,190 --> 01:07:00,070
+Tuấn vào trang chủ ấy Tuấn ơi.
+
+753
+01:07:01,070 --> 01:07:03,530
+Demo trực tiếp cho anh em xem luôn. Nó không hiển thị được hết đâu.
+
+754
+01:07:03,530 --> 01:07:12,160
+Đấy cái tiêu đề kìa, nó rất là ngắn, nó không thể thấy được hết đâu. Nó chỉ được một đoạn đấy kia thôi. Thế nên là anh em mình cố gắng tối ưu
+
+755
+01:07:12,160 --> 01:07:20,790
+làm sao để cho nó nền tảng hiển thị video thumbnail mình được tốt nhất. À cái tiêu đề mình được tốt nhất nhá. 70 đến 80 ký tự ở tối đa là đẹp rồi.
+
+756
+01:07:20,790 --> 01:07:29,370
+Ở đây có các ví dụ về tiếng Anh và tiếng Việt ở đây, tình em tham khảo.
+
+757
+01:07:30,110 --> 01:07:33,170
+Lỗi thường gặp là tiêu đề quá chung chung như cách quản lý tiền.
+
+758
+01:07:33,950 --> 01:07:40,790
+Đó, 2026 là năm mà chúng ta sẽ tập trung vào các chuyên môn nhất định và chúng ta phải trở thành chuyên gia lĩnh vực của mình.
+
+759
+01:07:41,290 --> 01:07:44,490
+Thì kênh YouTube của mình cũng thế, tập trung vào một cái ngách thôi, nhất định.
+
+760
+01:07:44,930 --> 01:07:49,370
+Đào sâu vào nó là ok, sau đó thì khi mà nó đã lên rồi, có khán giả rồi thì mở rộng ra.
+
+761
+01:07:50,790 --> 01:07:56,690
+Có ý gợi ý ở đây về cách sửa như thế này thì anh em tham khảo.
+
+762
+01:07:57,570 --> 01:07:59,950
+Tiếp theo đến mấy bước thứ 14 là đăng video và tối ưu.
+
+763
+01:07:59,950 --> 01:08:06,960
+Mô tả không cần quá dài nhưng nên có tóm tắt nội dung từ khóa chính, lời nhắc người xem,
+
+764
+01:08:06,960 --> 01:08:13,970
+theo dõi và playlist liên quan nếu có và ghi chú nếu nội dung là giáo dục tài chính.
+
+765
+01:08:14,932 --> 01:08:22,992
+Ví dụ mô tả là video này kể về câu chuyện một người đi làm văn phòng trong nhiều năm nhưng nhận ra rằng lương không đồng nghĩa với tự do.
+
+766
+01:08:23,812 --> 01:08:30,812
+Thông qua nhân vật hoạt hình chúng ta sẽ nhìn lại cách tiền lương, chi phí, tài sản và dòng tiền anh hưởng đến cuộc sống của một người trưởng thành.
+
+767
+01:08:30,812 --> 01:08:38,359
+Thì cái phần mô tả này thì mình có thể là đề xuất anh em sử dụng tiếng Anh, à sử dụng AI nhé, AI để phân tích ra các công thức của các
+
+768
+01:08:38,359 --> 01:08:45,905
+kênh chủ đề. Sau đó thì mình đưa tiêu đề và yêu cầu nó viết. Thì mình thấy là cái việc này thì AI làm thay mình khá là tốt và lặp đi lặp lại
+
+769
+01:08:45,905 --> 01:08:53,452
+được. Và nó không ảnh hưởng gì đến nội dung và phần mô tả của mình cả. Thì anh em có thể sử dụng AI cho phần này. Mình thấy rất là hiệu quả.
+
+770
+01:08:53,452 --> 01:08:57,812
+Đến bước thứ 14 là đăng video tối ưu ở đây
+
+771
+01:08:57,812 --> 01:09:01,712
+Thì phần playlist anh em cũng cần phải lưu ý nhé
+
+772
+01:09:01,712 --> 01:09:04,692
+Đó là theo nhóm nội dung chủ đề nhé
+
+773
+01:09:04,692 --> 01:09:06,692
+Chúng ta sẽ có playlist tổng của kênh
+
+774
+01:09:06,692 --> 01:09:09,572
+Nhưng chúng ta sẽ cần phải có playlist liên quan đến topic riêng
+
+775
+01:09:09,572 --> 01:09:11,232
+Cụ thể ra
+
+776
+01:09:11,232 --> 01:09:13,932
+Thì đấy là cái xu hướng của 2026
+
+777
+01:09:13,932 --> 01:09:15,492
+Đó là chuyên môn hóa
+
+778
+01:09:15,492 --> 01:09:17,172
+Playlist cũng phải chuyên môn hóa
+
+779
+01:09:17,172 --> 01:09:18,032
+Rõ ràng ra
+
+780
+01:09:18,032 --> 01:09:19,692
+Đôi khi nhé
+
+781
+01:09:19,692 --> 01:09:21,492
+Chỉ cần vài view đến từ playlist thôi
+
+782
+01:09:21,492 --> 01:09:22,812
+Khán giả họ vào xem kênh thôi
+
+783
+01:09:22,812 --> 01:09:29,982
+Đấy chính là điểm kích hoạt cho hệ thống đấy. Hệ thống họ xem xét rằng là kênh này có nội dung chất lượng và có một nhóm
+
+784
+01:09:29,982 --> 01:09:37,152
+khán giả có hành vi vào trực tiếp kênh để xem kênh. Đó, thì họ sẽ đề xuất mạnh hơn. Đôi khi nó chỉ đơn giản như thế thôi.
+
+785
+01:09:40,400 --> 01:09:48,360
+Có các gợi ý về cách ghim bình luận ở đây, đặt là đặt vấn đề hoặc là hỏi đáp với khán giả, thì anh em hãy sử dụng tối đa các tí năng của YouTube.
+
+786
+01:09:48,800 --> 01:09:55,480
+Đăng video lên đi thì mình làm cái comment ở đấy, ghim lên tương tác với khán giả, sau thì có khán giả comment thì trả lời tương tác với họ.
+
+787
+01:09:57,000 --> 01:09:59,440
+Bước thứ 15 ở đây là đọc chỉ số và cải thiện.
+
+788
+01:09:59,940 --> 01:10:02,540
+Đây anh em hỏi mình là bây giờ làm sao để video hay hơn?
+
+789
+01:10:03,200 --> 01:10:05,260
+Thì câu hỏi đấy cũng đúng nhưng chưa đủ.
+
+790
+01:10:06,000 --> 01:10:08,600
+Câu hỏi là phải làm sao để cải thiện được chỉ số?
+
+791
+01:10:10,400 --> 01:10:19,480
+Đấy thì khi mà mình khám kênh thì mình sẽ yêu cầu là anh em gửi cho mình chỉ số. Anh em mình tại GODA cũng thế đầu tháng là xem kênh là xem chỉ số. Đầu
+
+792
+01:10:19,480 --> 01:10:28,560
+tiên là xem tiền xem nó có tăng không, xem tiền xem nó có giảm không, sau đó là xem chỉ số. Bài nào tốt thì anh em xem là bài này tại sao tốt, chia sẻ
+
+793
+01:10:28,560 --> 01:10:37,640
+ra công thức. Bài nào chưa tốt thì nguyên nhân không tốt ở đâu. Nguyên nhân mà cái lượt view nó thấp như thế là ở đâu. Đây chúng ta phải phân tích rất là kỹ ra.
+
+794
+01:10:37,640 --> 01:10:46,780
+Các chỉ số chính cần theo dõi ở đây đó là CTR, đó là Click Through Rate, có nghĩa là tỷ lệ click thumbnail ấy ạ.
+
+795
+01:10:48,420 --> 01:10:54,400
+Cho biết thumbnail và tiêu đề có hấp dẫn hay không? Thì thông thường các cái tỷ lệ click nó sẽ từ 5 đến 7, thông thường.
+
+796
+01:10:55,100 --> 01:11:00,840
+Tuy nhiên một số dạng chủ đề như tin tức thì tỷ lệ click nó sẽ khác, nó sẽ khoảng trên 10 chấm mới là tốt.
+
+797
+01:11:00,840 --> 01:11:02,840
+tốt các chủ đề giật gơn đấy ạ
+
+798
+01:11:03,140 --> 01:11:06,920
+story cũng vậy đúng không ạ trên phải trên 10 bắt đầu mới ổn
+
+799
+01:11:07,440 --> 01:11:11,820
+đấy thì nó sẽ tùy dạng chủ đề thế nên là mình không đưa ra cái phần trăm cụ thể ở đây
+
+800
+01:11:12,240 --> 01:11:18,620
+thì em cứ làm và sau đó khả cần khám quyết gửi cho mình mình sẽ xem mình sẽ dựa trên kinh nghiệm của mình vào cái nguồn tham khảo của mình
+
+801
+01:11:18,840 --> 01:11:20,840
+xem xem rằng là cái tỉa click đấy có ổn hả
+
+802
+01:11:20,840 --> 01:11:22,260
+hay chưa có cần khắc phục gì hay không
+
+803
+01:11:22,260 --> 01:11:24,940
+tỷ lệ giữ chân cho 30 giây đầu này
+
+804
+01:11:24,940 --> 01:11:26,380
+thì cái này rất quan trọng
+
+805
+01:11:26,380 --> 01:11:27,340
+nãy mình đã chia sẻ rồi
+
+806
+01:11:27,340 --> 01:11:30,280
+cho biết hook và mở đầu có đủ mạnh hay không
+
+807
+01:11:30,280 --> 01:11:32,500
+hook quan trọng nhất kéo khán giả vào nội dung ạ
+
+808
+01:11:32,500 --> 01:11:34,317
+thời lượng xem trung bình này
+
+809
+01:11:34,317 --> 01:11:41,384
+Mình này, cho biết video có giữ chân người xem ở phần giữa, phần cuối không? Phần này rất là quan trọng, chúng ta
+
+810
+01:11:41,384 --> 01:11:48,450
+cố gắng là kênh mới thì trên 25%, kênh đã phát triển mạnh thì cố gắng duy trì ít nhất 30%, thì kênh bắt
+
+811
+01:11:48,450 --> 01:11:55,517
+đầu nó mới duy trì được view, kênh mới thì nổ, còn kênh đang có view thì duy trì, và phát triển mạnh hơn.
+
+812
+01:11:55,517 --> 01:12:04,277
+Cuối cùng bình luận, mình xem khán giả quan tâm điều gì, hay là video này có lỗi không, thì còn điều chỉnh về sau, có lỗi thì xin lỗi, sau điều chỉnh lại.
+
+813
+01:12:05,317 --> 01:12:06,157
+Chỉ đơn giản như vậy thôi.
+
+814
+01:12:07,037 --> 01:12:16,277
+Ở đây nếu tỷ lệ click thăm thấp thì cần xem lại thumbnail, xem lại text, xem lại tiêu đề và cái topic mình đã chọn cho video đó, thì cần phải xem lại tất cả.
+
+815
+01:12:17,317 --> 01:12:21,377
+Nếu nhiều người thoát trong 30 giây đầu thì vấn đề nằm ở hook, intro là chủ yếu.
+
+816
+01:12:21,377 --> 01:12:28,857
+Phần mở đầu có thể là quá dây dòng, hình ảnh đầu không hấp dẫn, không có những cái mà họ cần, voice thiếu
+
+817
+01:12:28,857 --> 01:12:36,337
+cảm xúc hoặc video vào vấn đề quá chậm, xem mãi xem video hướng dẫn mở khóa mà 20 phút thì vẫn chưa thấy đâu.
+
+818
+01:12:38,200 --> 01:12:47,800
+Nếu người xem rời ở giữa video, có thể do kịch bạt bị lập, ít điểm mới hoặc hình ảnh quá đơn điệu, nhịp dựng chậm, thiếu chuyển ý hoặc không có cao trào.
+
+819
+01:12:48,420 --> 01:12:54,360
+Cái phần này thì thông thường với một số anh em trước hỏi mình là tại sao kênh làm một thời gian nó cứ y mãi nó không lên được.
+
+820
+01:12:55,760 --> 01:13:00,000
+Thì anh em cần phải xem lại trong kịch bản mới của anh em nó có khác gì kịch bản cũ không? Hay anh em viết y hệt?
+
+821
+01:13:02,080 --> 01:13:06,460
+Thì nếu một cái mới mà nó y hệt với cái cũ thì cái đó không phải cái khán giả cần.
+
+822
+01:13:08,200 --> 01:13:17,380
+Họ sẽ bỏ video đó, đơn giản. Họ bỏ một thời gian bắt đầu là nó đưa tín hiệu về YouTube, vì YouTube sẽ ngừng đề xuất. Nó chỉ như vậy thôi. Nguyên lý nó chỉ đơn giản như vậy thôi.
+
+823
+01:13:19,080 --> 01:13:31,280
+Sau khi đăng video 24h là một ngày, đến 72h là 3 ngày, thì người thực hiện nên tự đánh giá video có tỷ lệ click thăm tốt không, vì nó sẽ cần thời gian update, thì mình mới xem dữ liệu cũng được chuẩn được.
+
+824
+01:13:31,280 --> 01:13:38,180
+Nếu sau 1 ngày mấy anh em xem luôn, với kênh lớn thì ok, kênh nhỏ thì đừng thay đổi nhiều quá, thay đổi là hỏng kênh ấy.
+
+825
+01:13:39,420 --> 01:13:46,240
+Người xem có rời trong 30 giây đầu không? Thì đặc biệt cái đoạn 30 giây đầu sau 2 ngày đúng không ạ? Thông thường là sau 1-2 ngày, mình thấy tùy kênh.
+
+826
+01:13:46,240 --> 01:13:49,020
+Thông thường sau 2 ngày nó mới update cái 30 giây đầu
+
+827
+01:13:49,020 --> 01:13:50,100
+Đó
+
+828
+01:13:50,100 --> 01:13:51,520
+Đoạn nào giữa chân tốt nhất này
+
+829
+01:13:51,520 --> 01:13:53,340
+Mình xem cái thanh sóng ấy
+
+830
+01:13:53,340 --> 01:13:54,540
+Xem đoạn nào giữa chân tốt nhất
+
+831
+01:13:54,540 --> 01:13:56,280
+Đoạn nào bị tụt mạnh này
+
+832
+01:13:56,280 --> 01:13:57,800
+Xem đoạn đấy nó có vấn đề gì
+
+833
+01:13:57,800 --> 01:13:58,660
+Điều chỉnh lại
+
+834
+01:13:58,660 --> 01:14:01,600
+Bình luận có nhắc đến điều gì nhiều nhất
+
+835
+01:14:01,600 --> 01:14:03,560
+Cái vấn đề nỗi đau của khán giả
+
+836
+01:14:03,560 --> 01:14:05,020
+Thì mình có thể khai thác cái video sau
+
+837
+01:14:05,020 --> 01:14:06,240
+Hoặc là sửa lỗi
+
+838
+01:14:06,240 --> 01:14:06,840
+video của mình.
+
+839
+01:14:08,307 --> 01:14:09,247
+Thumbnail có cần đổi không?
+
+840
+01:14:10,607 --> 01:14:13,747
+Chủ đề này có thể làm phần 2 không? Có thể biến thành series hay không?
+
+841
+01:14:16,107 --> 01:14:21,227
+Tiếp theo chúng ta sẽ đến với phần thứ 5, là quy trình sản xuất một video hoàn chỉnh từ A đến Z.
+
+842
+01:14:21,227 --> 01:14:27,227
+Quy trình em tham khảo, ngày 1 chúng ta sẽ có các đầu việc là chọn chủ đề về kịch bản này.
+
+843
+01:14:28,507 --> 01:14:32,107
+Đây là tham khảo nhé, tùy theo nguồn lực và tùy theo cách phân công của anh em.
+
+844
+01:14:32,927 --> 01:14:35,507
+Cá nhân thì khác, đội nhóm thì khác, nó khác nhau.
+
+845
+01:14:36,827 --> 01:14:39,567
+Đây sẽ là các đầu việc cần làm thì mình có liệt kê ra đây.
+
+846
+01:14:40,087 --> 01:14:47,487
+Thì anh em sẽ liệt kê ra vào nếu có đội nhóm và doanh nghiệp thì anh em chia việc rõ ràng ra, chuyên môn hóa cao hơn.
+
+847
+01:14:47,487 --> 01:14:51,607
+Một trong những cái key khiến GODA phát triển rất là nhanh là bên mình chuyên môn hóa.
+
+848
+01:14:52,107 --> 01:14:57,467
+Chuyên môn hóa rất là sâu. Ví dụ như là content chỉ viết content, edit chỉ edit và design chỉ design thôi.
+
+849
+01:14:58,007 --> 01:15:02,847
+Thumbnail chỉ làm thăm thôi. Và khai thác kênh đó là bạn quản lý kênh, SEO up đấy ạ.
+
+850
+01:15:03,407 --> 01:15:08,407
+Chỉ làm SEO up thôi. Bên mình có bộ phận là SEO up kênh, là bộ phận bức đệm để lên vị trí cao hơn.
+
+851
+01:15:08,907 --> 01:15:14,687
+Thì bộ phận đó SEO là gì? Là SEO cho video. Và up là gì? Là upload.
+
+852
+01:15:14,687 --> 01:15:18,187
+SEO up đó có nghĩa là làm bộ SEO cho video và upload cho video.
+
+853
+01:15:19,500 --> 01:15:21,340
+Bộ phận chỉ như thế thôi, đơn giản như thế thôi.
+
+854
+01:15:21,700 --> 01:15:31,620
+Mình chuyên môn hóa từng phần như vậy, thì những anh em đó họ sẽ có thời gian để học tập, để trao dồi kiến thức, để thực chiến, để họ có kinh nghiệm.
+
+855
+01:15:32,180 --> 01:15:37,320
+Thì càng về sau anh em họ làm càng tốt, họ càng chuyên môn là họ càng giỏi.
+
+856
+01:15:38,420 --> 01:15:45,460
+Và phần mô hình kinh doanh thì chúng ta cần phải tạo điều kiện, tạo cơ chế để cho anh em, các vị chuyên môn họ phát triển không ngừng.
+
+857
+01:15:46,060 --> 01:15:48,560
+Họ có thể đạt mức A, mức B, mức C theo từng năm.
+
+858
+01:15:49,500 --> 01:15:58,513
+Đến ngày thứ 2 là chia cảnh và tạo ảnh này. Đấy là mình chia theo ngày thì anh em có thể chia theo theo
+
+859
+01:15:58,513 --> 01:16:07,527
+các bước mình hoàn thành bước 1 sang bước 2 đúng không ạ? Cái thoảng thời gian nó chỉ là cái ước chừng thôi ạ. Đến
+
+860
+01:16:07,527 --> 01:16:16,540
+ngày thứ 3 là chuyển ảnh thành video tạo voice. Thứ 4 là dựng video. Thứ 5 là làm thumbnail tiêu đề và đăng video.
+
+861
+01:16:16,540 --> 01:16:20,140
+Các bước nó sẽ gói gọn ở trong 5 bước chính ở đó.
+
+862
+01:16:24,700 --> 01:16:27,200
+6. Mẫu bộ khung làm video thực hành.
+
+863
+01:16:27,460 --> 01:16:32,980
+Đây thì anh em tham khảo cái mẫu bộ khung này để mình thử, mình thử xem là, mình án chừng xem là mình làm hết khoảng bao lâu.
+
+864
+01:16:32,980 --> 01:16:34,980
+Cứ thử đi
+
+865
+01:16:34,980 --> 01:16:42,760
+Ở đây mình có sẽ cung cấp thêm cái bảng ở phần 6.2
+
+866
+01:16:42,760 --> 01:16:44,920
+Đó là mẫu về phần chia cảnh
+
+867
+01:16:44,920 --> 01:16:47,640
+Mẫu thì anh em làm và mình xử lý
+
+868
+01:16:47,640 --> 01:16:49,620
+Lý do tại sao cần phải lưu prompt
+
+869
+01:16:49,620 --> 01:16:51,960
+Bởi vì lưu prompt thì về sau đó là tài sản
+
+870
+01:16:51,960 --> 01:16:52,980
+Prompt đó là tài sản
+
+871
+01:16:52,980 --> 01:16:55,000
+Ngày xưa anh em hay đi hỏi prompt nè
+
+872
+01:16:55,000 --> 01:16:57,200
+Mất tiền để đi hỏi prompt
+
+873
+01:16:57,200 --> 01:16:59,720
+Và vào khoa học mới biết là có vài prompt thôi
+
+874
+01:16:59,720 --> 01:17:01,480
+Thì tập prompt là tài sản nha
+
+875
+01:17:03,367 --> 01:17:09,827
+Rồi chúng ta sẽ đến với phần 7 về các lỗi thường gặp và cách khắc phục này.
+
+876
+01:17:12,287 --> 01:17:14,147
+Đầu tiên lỗi 1 chủ đề quá rộng.
+
+877
+01:17:15,127 --> 01:17:19,587
+Ví dụ kênh làm đuổi đủ mọi thứ từ tài chính, tâm lý, lịch sử, tình yêu, bóng đá.
+
+878
+01:17:20,167 --> 01:17:20,827
+Cái gì cũng làm hết.
+
+879
+01:17:21,647 --> 01:17:23,627
+Không khác gì một cái quán tập hóa, cái gì cũng có.
+
+880
+01:17:24,407 --> 01:17:25,447
+Nhưng mà chả cái gì xịn cả.
+
+881
+01:17:26,347 --> 01:17:27,127
+Thì đấy là điểm chết.
+
+882
+01:17:27,687 --> 01:17:28,687
+Chúng ta cần phải tập trung vào.
+
+883
+01:17:28,687 --> 01:17:35,547
+Thì chúng ta cần phải là chọn một ngách chính trong 30 đến 50 video đầu tiên.
+
+884
+01:17:36,307 --> 01:17:38,507
+Đấy, một tháng hay hai tháng đầu tiên tập trung một ngách thôi.
+
+885
+01:17:39,087 --> 01:17:42,067
+Khi kinh lên tốt thì mở rộng công thức 5 cộng 2.
+
+886
+01:17:42,667 --> 01:17:43,367
+Chia sẻ rất nhiều rồi ạ.
+
+887
+01:17:44,427 --> 01:17:49,227
+Lỗi thứ hai, nhân vật không đồng nhất ở đây thì mỗi nhân vật lại nhìn lại khác nhau.
+
+888
+01:17:50,267 --> 01:17:51,627
+Mỗi một video nó lại khác nhau.
+
+889
+01:17:51,967 --> 01:17:55,047
+Thế thì nó khiến cho cái câu chuyện mà mình kể nó không đồng nhất nữa.
+
+890
+01:17:56,587 --> 01:17:56,947
+Đó.
+
+891
+01:17:57,200 --> 01:18:00,540
+Lối thứ 3 ở đây là kịch bản chỉ nói lý thuyết không có câu chuyện.
+
+892
+01:18:01,800 --> 01:18:04,560
+Thì chúng ta cần phải rõ ràng theo cái bố cục.
+
+893
+01:18:05,520 --> 01:18:07,800
+Cuối cùng là phải có bài học, phải có đúc kết.
+
+894
+01:18:08,480 --> 01:18:10,920
+Thì nó mới là giá trị cuối cùng là khán giả mới ở lại cuối.
+
+895
+01:18:12,520 --> 01:18:14,900
+Lối thứ 4 là hình ảnh đẹp nhưng không khớp lời thoại.
+
+896
+01:18:15,700 --> 01:18:17,580
+Thì chúng ta cần phải khắc phục là làm cho nó khớp thôi.
+
+897
+01:18:18,280 --> 01:18:19,620
+Chỉ có cách đấy là không có cách nào khác cả.
+
+898
+01:18:20,440 --> 01:18:22,600
+Anh em có thể ứng dụng tool vào trong quá trình tạo ảnh.
+
+899
+01:18:22,700 --> 01:18:25,180
+Tuy nhiên về sau mình phải kiểm duyệt lại và thấy không ổn thì điều chỉnh.
+
+900
+01:18:25,180 --> 01:18:34,360
+Nên mình không có áp cảnh với tool, mình không có basic tool, tool rất tuyệt vời, các tool tư động hóa rất tuyệt vời, do cách mình sử dụng thôi.
+
+901
+01:18:35,240 --> 01:18:36,980
+Tôi yêu được thêm những phần nào thì mình tối yêu.
+
+902
+01:18:39,080 --> 01:18:48,440
+Video quá đều, không có điểm nhấn thì mình xử lý bằng cách là thêm các cái cảnh mạnh này, một câu quất hoặc là một motion graphics, những chuyển động để chúng ta tạo điểm khác biệt.
+
+903
+01:18:48,440 --> 01:18:56,260
+Lối xứ xáo voice đều đều thì chủ yếu là do mình chọn thôi. Nếu dùng voice AI do mình chọn. Nói chọn voice người thì không vẫn do
+
+904
+01:18:56,260 --> 01:19:04,080
+mình chọn thôi. Anh em đừng cố nhé, đừng cố chỉnh nhé. Chúng ta chọn cái giọng hay sẵn đi, thì đỡ phải chỉnh. Nếu thuê giọng người thật thì
+
+905
+01:19:04,080 --> 01:19:11,900
+chọn người có nhân nhá sẵn đi, đỡ phải chỉnh. Chỉnh họ mệt lắm. Voice AI thì chọn luôn giọng xịn đi, đỡ phải chỉnh. Đỡ phải hậu kỳ.
+
+906
+01:19:11,940 --> 01:19:15,340
+Thumbnail nhiều chữ thì đơn giản thôi
+
+907
+01:19:15,340 --> 01:19:16,340
+Tập trung lại đúng công thức
+
+908
+01:19:16,340 --> 01:19:18,660
+Tiếng Anh thì đơn giản ngắn chữ to
+
+909
+01:19:18,660 --> 01:19:19,860
+Khán giả dễ đọc
+
+910
+01:19:19,860 --> 01:19:23,260
+Rồi lỗi thứ 8 là copy in nguyên kênh khác
+
+911
+01:19:23,260 --> 01:19:24,660
+Thì cái lỗi này ở đâu ạ
+
+912
+01:19:24,660 --> 01:19:25,540
+Do mình
+
+913
+01:19:25,540 --> 01:19:28,460
+Đơn giản thôi làm lại
+
+914
+01:19:28,460 --> 01:19:29,460
+Đừng copy
+
+915
+01:19:29,460 --> 01:19:32,717
+Mình hiểu rằng cái gốc của mình làm copy là mình sẽ gặp vấn đề
+
+916
+01:19:32,717 --> 01:19:40,217
+Thực tế là đến khi triển khai vẫn ăn đòn. GODA mình là có như anh em là cũng rất là mạnh rồi đấy, cũng ngồi bàn đầu
+
+917
+01:19:40,217 --> 01:19:47,717
+rồi đấy. Kinh nghiệm cũng rất dày dặn rồi đấy. Một ngày đẹp trời vào check kênh ăn một gậy, bị xóa 4 video. 4 video anh em nhá.
+
+918
+01:19:47,717 --> 01:19:54,704
+Đấy thì check lại thì nhận lỗi thôi. Sai lầm, không vấn đề gì cả. Đôi khi nhá, anh em tìm
+
+919
+01:19:54,704 --> 01:20:01,690
+được một cái ảnh đấy ở trên mạng, tưởng rằng cái ảnh đấy là ảnh gốc của tư liệu. Tư liệu là
+
+920
+01:20:01,690 --> 01:20:08,677
+nguồn free. Nhưng thực kế ra ảnh đấy là được tạo bởi một người khác, hoặc chụp bởi một người khác.
+
+921
+01:20:08,677 --> 01:20:15,677
+Và sau thì ông nào mà dùng trên YouTube đầu tiên mà ông ấy chỉnh lại rồi, mà mình dùng lại
+
+922
+01:20:15,677 --> 01:20:22,677
+chính cái ảnh chỉnh đấy, thì mình vi phạm với ông chỉnh đấy, chứ không phải vi phạm với nguồn gốc.
+
+923
+01:20:23,837 --> 01:20:25,437
+Đấy là một cái chia sẻ, lưu ý.
+
+924
+01:20:26,837 --> 01:20:31,017
+Thứ 8, mà checklist hoàn thiện trước khi đăng video này, thì anh em tham khảo cái checklist nội dung này.
+
+925
+01:20:31,017 --> 01:20:40,057
+Ở đây có các cái phần về checklist nội dung, checklist hình ảnh, checklist âm thanh, checklist dựng video, checklist đăng video.
+
+926
+01:20:44,800 --> 01:20:50,200
+Ở phần thứ 9 thì mình có chia sẻ một bài tập thực hành ở đây thì anh em về thực hành và ứng dụng.
+
+927
+01:20:51,520 --> 01:20:54,260
+Để mình chọn ra được cái ngách chủ đề cho cái chủ đề lớn này.
+
+928
+01:20:55,700 --> 01:20:57,100
+Bài tập 1 về chọn ngách này.
+
+929
+01:20:58,320 --> 01:21:04,440
+Hãy cho em chọn một trong các ngách về tài chính cá nhân, tâm lý, người trưởng thành, phát triển bản thân, công việc văn phòng, xã hội tầng lớp.
+
+930
+01:21:04,680 --> 01:21:07,240
+Nếu như anh em chọn chủ đề này để làm thì có thể tham khảo bài tập này.
+
+931
+01:21:07,640 --> 01:21:10,940
+Còn chọn chủ đề khác thì có thể tham khảo cái form để làm.
+
+932
+01:21:11,640 --> 01:21:12,700
+Cái thứ 2 là tạo nhân vật.
+
+933
+01:21:14,800 --> 01:21:23,140
+Cần phải viết hồ sơ và nhân vật bao gồm tên, tuổi, giới tính, ngoại hình, trang phục, tính cách, nỗi đau, mục tiêu, bối cảnh xuất hiện và vai trò trong kênh.
+
+934
+01:21:24,820 --> 01:21:27,200
+Đến bài tập thứ 3 là lên ý tưởng trong video này.
+
+935
+01:21:27,840 --> 01:21:32,860
+Lên 20 ý tưởng, ít nhất là 20 cái đến 30 cái tùy theo số lượng sản xuất của mình.
+
+936
+01:21:33,680 --> 01:21:35,540
+Thứ 4 là viết kịch bản video đầu tiên này.
+
+937
+01:21:36,240 --> 01:21:44,480
+Bên mình có một cách này áp dụng cũng khá là hay khi mà nghiên cứu một chủ đề mới đó là trực tiếp các bạn quản lý cái dự án kênh đó.
+
+938
+01:21:44,800 --> 01:21:53,360
+Các bạn ấy sẽ cần phải viết content. Thông dường là như thế. Để các bạn ấy hiểu. Hiểu thì mới giao việc ở bên dưới. Chứ không hiểu là không giao được.
+
+939
+01:21:55,120 --> 01:22:01,200
+Bản tập thứ 5 là chia cảnh này. Thứ 6 là sản xuất video hoàn chỉnh. Chúng ta đến phần cuối cùng là tổng kết.
+
+940
+01:22:01,220 --> 01:22:03,240
+Của phần
+
+941
+01:22:03,240 --> 01:22:04,860
+Chủ đề này
+
+942
+01:22:04,860 --> 01:22:08,060
+Chủ đề kể chuyện bằng nhân vật hoạt hình
+
+943
+01:22:08,060 --> 01:22:10,140
+Là một hướng nội dung rất tiềm năng
+
+944
+01:22:10,140 --> 01:22:12,260
+Về kết hợp được nhiều yếu tố
+
+945
+01:22:12,260 --> 01:22:14,080
+Nhân vật, kịch bản
+
+946
+01:22:14,080 --> 01:22:15,540
+Hình ảnh AI
+
+947
+01:22:15,540 --> 01:22:17,900
+Chuyển động, footage thật, âm thanh
+
+948
+01:22:17,900 --> 01:22:18,800
+Và tư duy kể chuyện
+
+949
+01:22:18,800 --> 01:22:19,662
+Tuy nhiên
+
+950
+01:22:19,662 --> 01:22:28,522
+Tuy nhiên, anh chị em cần hiểu rằng thành công của chủ đề này không nằm ở việc tạo một vài hình ảnh thật đẹp và nghĩ rằng nó sẽ lên. Không có đâu.
+
+951
+01:22:29,502 --> 01:22:36,602
+Thành công nằm ở việc xây dựng được một hệ thống nội dung có nhận diện, có câu chuyện, có thông điệp và có khả năng sản xuất lâu dài.
+
+952
+01:22:39,242 --> 01:22:46,622
+Công thức cốt lõi cần ghi nhớ ở đây là chọn ngách rõ, xây dựng nhân vật cố định,
+
+953
+01:22:46,622 --> 01:22:54,002
+tìm insight mạnh, viết kịch bản, có câu chuyện, chia cảnh chi tiết, tạo ảnh đồng nhất, chuyển
+
+954
+01:22:54,002 --> 01:23:01,382
+ảnh thành video, dựng voice, nhạc, hiệu ứng, làm thumbnail hấp dẫn, đăng, đo chỉ số và cải thiện.
+
+955
+01:23:01,382 --> 01:23:09,002
+Nếu người mới bắt đầu không cần làm video đầu tiên quá hoàn hảo, hoàn thành hơn hoàn hảo.
+
+956
+01:23:10,462 --> 01:23:12,022
+Điều quan trọng là làm đúng quy trình.
+
+957
+01:23:12,742 --> 01:23:18,342
+Sau 10, 5 đến 10 video, người học sẽ bắt đầu hiểu rõ hơn về chủ đề nào dễ kéo view.
+
+958
+01:23:18,922 --> 01:23:25,022
+Khi đó là sẽ cảm nhận, anh em làm đến một giai đoạn là có cảm nhận là làm cái này nó lên, làm cái khi nó lên.
+
+959
+01:23:25,742 --> 01:23:28,862
+Làm cái này không lên, làm cái khi không lên thì nó thành kinh nghiệm.
+
+960
+01:23:28,862 --> 01:23:40,582
+Thì đấy là kinh nghiệm, kỹ năng, kiến thức của anh em. Thì cái giai đoạn đấy mới là giai đoạn tuyệt vời. Còn tất cả quy trình sẽ chỉ là quy trình. Sẽ không có nghĩa lý gì hết nếu như anh em không làm. Đơn giản chỉ vậy thôi.
+
+961
+01:23:43,650 --> 01:23:53,710
+Thumbnail nào có tỷ lệ click tốt này, hook nào giữ chân tốt này, nhân vật xuất hiện ở bối cảnh nào thì hiệu quả này. Người xem thích dạng câu chuyện nào, series nào nên phát triển tiếp.
+
+962
+01:23:54,590 --> 01:24:03,490
+Trong 30 đến 50 video đầu tiên, hãy tập trung vào sự nhất quán về ngách, nhân vật, phong cách, hình ảnh, giọng kể và cấu trúc nội dung.
+
+963
+01:24:03,850 --> 01:24:10,570
+Khi đó có sự nhất quán, kênh sẽ dễ nhận diện được hơn, người xem sẽ dễ quay lại hơn và quá trình sản xuất cũng nhanh hơn.
+
+964
+01:24:10,570 --> 01:24:13,710
+Điều người thực hiện cần nhớ nhất là
+
+965
+01:24:13,710 --> 01:24:16,310
+Nhân vật hoạt hình là bộ mặt của kênh
+
+966
+01:24:16,310 --> 01:24:19,070
+Kịch bản là linh hồn của video
+
+967
+01:24:19,070 --> 01:24:22,110
+Hình ảnh là công cụ kể chuyện
+
+968
+01:24:22,110 --> 01:24:25,590
+Voice và âm thanh là cảm xúc
+
+969
+01:24:25,590 --> 01:24:30,750
+Thumbnail và tiêu đề chính là cánh cửa để đưa người xem vào video
+
+970
+01:24:30,750 --> 01:24:34,470
+Đoạn này là mình chỉnh lại 100%
+
+971
+01:24:34,470 --> 01:24:35,630
+Không phải AI
+
+972
+01:24:35,630 --> 01:24:42,750
+Làm tốt đủ các phần này, người làm nội dung có thể tự xây một kênh kể chuyện
+
+973
+01:24:42,750 --> 01:24:49,870
+bằng nhân vật hoạt hình, có chiều sâu, có nhận diện và có khả năng phát triển lâu dài.
+
+974
+01:24:51,650 --> 01:24:52,330
+Ok, kết thúc.
+
+975
+01:24:54,030 --> 01:24:54,910
+Cảm ơn anh em đã nghe.
+
+976
+01:24:54,910 --> 01:24:55,770
+Lắng nghe, lắng nghe.
+

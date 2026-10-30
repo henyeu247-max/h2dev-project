@@ -1,0 +1,73 @@
+{
+  "sku": "VIDEO-0be6c9",
+  "title": "Kinh khủng với ngách cực nhỏ view Việt - kênh mới 8 video hơn 3 triệu view - bán content ngách người cao tuổi",
+  "actual_topic": "Phân tích các kênh Việt Nam làm ngách ngoại tình U60/U70, mượn hình ảnh người nổi tiếng (bác Lại Văn Sâm) và ngách con cái bất hiếu",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Nhà Máy Sản Xuất & Cơ Khí Công Nghiệp",
+  "niche_id": "vietnam-elderly-stories",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "channels_mentioned": [
+    "@ChuyệnNhàXưaNay-s2j",
+    "@Admin_vansamtamsuthamkin",
+    "@RADIOCuaNguoiGia77",
+    "@chuyendoituoigia83"
+  ],
+  "tools_mentioned": [],
+  "visual_audio_checked": true,
+  "accuracy_status": "verified_expert_summary",
+  "analysis_method": "agv_3.8_multimodal_7layer_verified",
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-0be6c9/transcript.txt",
+  "key_timestamps": [
+    {
+      "seconds": 0,
+      "time": "00:00",
+      "label": "Phân tích Kênh 1 (@ChuyệnNhàXưaNay-s2j): Mới 8 video nổ 3,1 triệu view ngách ngoại tình tuổi 65 (U60/U70)"
+    },
+    {
+      "seconds": 81,
+      "time": "01:21",
+      "label": "Nghe thử video mẫu 1,7 triệu view: Giọng đọc clone kể chuyện đêm khuya và cách dùng AI viết cốt truyện mới"
+    },
+    {
+      "seconds": 144,
+      "time": "02:24",
+      "label": "Phân tích Kênh 2 (@Admin_vansamtamsuthamkin): Ngách mượn hình tượng bác Lại Văn Sâm và cảnh báo rủi ro pháp lý tại VN"
+    },
+    {
+      "seconds": 264,
+      "time": "04:24",
+      "label": "Phân tích Kênh 3 (@RADIOCuaNguoiGia77): Ngách cha mẹ già và những người con bất hiếu nổ 424K view"
+    },
+    {
+      "seconds": 304,
+      "time": "05:04",
+      "label": "Tổng kết hành vi xem TV/điện thoại của người cao tuổi Việt Nam và định hướng chọn ngách an toàn"
+    }
+  ],
+  "key_takeaways": [
+    "Ngách câu chuyện ngoại tình tuổi già (U60, U70) ở thị trường Việt Nam đánh trúng tâm lý tò mò nên cắn view rất mạnh dù kênh mới chỉ đăng khoảng 8 video (có bài đạt 1,7 triệu view).",
+    "Một số kênh mượn tên và hình ảnh người nổi tiếng (như bác Lại Văn Sâm) để tăng tỷ lệ click, nhưng tiềm ẩn rủi ro pháp lý rất lớn tại Việt Nam nếu làm lâu dài.",
+    "Lời khuyên an toàn: nếu làm để kiếm thêm thu nhập bền vững thì nên thay bằng nhân vật hư cấu hoặc đi sang ngách tâm sự người già, chuyện con cái bất hiếu thay vì dùng tên thật của người nổi tiếng trong nước.",
+    "Khi nghiên cứu đối thủ, hãy vào mục Phổ biến của kênh để xem các công thức tiêu đề câu kéo cảm xúc mạnh nhất rồi biến tấu lại cho kênh của mình."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 3 bước thực chiến: Phân tích các kênh Việt Nam làm ngách ngoại tình U60/U70, mượn hình ảnh người nổi tiếng (bác Lại Văn Sâm) và ngách con cái bất hiếu",
+    "additional": [
+      "Nghiên cứu các kênh đối thủ ngách tâm sự tuổi già, ngoại tình U60/U70 hoặc chuyện gia đình để lọc ra những chủ đề nổ view cao nhất.",
+      "Xây dựng kịch bản xoay quanh mâu thuẫn gia đình, đạo hiếu nhưng sử dụng nhân vật ẩn danh để đảm bảo an toàn pháp lý.",
+      "Thiết kế thumbnail chữ to, tương phản mạnh kèm câu hỏi gợi sự tò mò cho tệp khán giả trung niên và cao tuổi."
+    ]
+  },
+  "avoid_flags": [
+    "Tuyệt đối không xuyên tạc, bịa đặt đời tư hoặc lạm dụng hình ảnh/giọng nói clone của người nổi tiếng tại Việt Nam (như bác Lại Văn Sâm) vào mục đích vi phạm pháp luật vì rất dễ bị kiện tụng.",
+    "Không đặt tiêu đề ngoại tình chung chung cho mọi lứa tuổi khiến thuật toán phân phối loãng; bắt buộc gắn mốc tuổi 60, 65, U60, U70 để khóa đúng tệp khán giả cao tuổi."
+  ],
+  "sop_steps": [
+    "Dùng kịch bản của các video kênh này để AI viết thêm các câu chuyện khác",
+    "từ khóa chính của ngách là ngoại tình ở tuổi 60, 65",
+    "Giọng đọc kênh này dùng giọng clone từ kênh đối thủ",
+    "Đối tượng khán giả là người già xem TV và điện thoại hàng ngày"
+  ]
+}

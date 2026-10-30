@@ -1,0 +1,912 @@
+1
+00:00:00,000 --> 00:00:12,580
+Phương pháp xây dựng kênh YouTube mà không cần nhiều thời gian làm việc, 1 ngày trên 1 tuần là đủ.
+
+2
+00:00:12,580 --> 00:00:20,000
+Bạn không cần giỏi công nghệ, không cần giỏi kỹ năng làm video hay là bạn cũng không cần phải ngoại hình đẹp.
+
+3
+00:00:20,000 --> 00:00:25,540
+Tháp hành vi thì chúng ta sẽ cùng nhau nói chuyện với nhau về cái tháp hành vi này trước
+
+4
+00:00:25,540 --> 00:00:30,000
+Khi mà chúng ta nói chuyện với cái tháp hành vi này sau rồi chúng ta sẽ biết được đâu là cái công việc quan trọng, đâu là công việc này
+
+5
+00:00:30,000 --> 00:00:39,387
+Công việc nó bớt quan trọng hơn để chúng ta làm. Thường thì chúng ta sẽ có cái là khi mà chúng ta làm thì chúng ta sẽ
+
+6
+00:00:39,387 --> 00:00:48,773
+đi từ bên phải sang bên trái này. Giả sử ở dưới này chúng ta sẽ có những nền tảng môi trường, có YouTube, TikTok, Google, ví dụ
+
+7
+00:00:48,773 --> 00:00:58,160
+thế chẳng hạn. Thường là mọi người sẽ bắt đầu đi từ đây. Thế mình cần phải làm thế nào, mình làm thế nào, mình làm ở đâu,
+
+8
+00:00:58,160 --> 00:01:05,320
+Ừ thế mình làm phát triển nội dung ở YouTube rồi, thế mình làm cái gì? Mình làm cái gì? Mình làm như thế nào? Mình sản xuất video như thế
+
+9
+00:01:05,320 --> 00:01:12,480
+nào? Mình quay dựng như thế nào? Mình viết content như thế nào? Mình SEO, up như thế nào đúng không ạ? Đa số các bạn sẽ đặt ra cái câu
+
+10
+00:01:12,480 --> 00:01:19,640
+hỏi đấy như vậy trước. Nhưng mà cái câu hỏi đúng mà mình đặt ra, đầu tiên mình phải rõ được cái mục đích. Bạn muốn xây YouTube để làm gì?
+
+11
+00:01:19,640 --> 00:01:27,828
+Tại sao bạn lại cần phải xây YouTube? Mục đích
+
+12
+00:01:27,828 --> 00:01:36,016
+xây kênh là gì? Định hướng của các bạn là gì?
+
+13
+00:01:36,016 --> 00:01:38,876
+Khi mà bạn phải rõ ràng được cái lý do tại sao bạn bắt đầu rồi ạ,
+
+14
+00:01:39,756 --> 00:01:41,396
+thì bạn sau này bạn đi nó mới nhanh được.
+
+15
+00:01:42,296 --> 00:01:44,336
+Chứ còn à, có YouTube đấy cứ lên làm đi,
+
+16
+00:01:44,996 --> 00:01:46,396
+SEO, up đi, làm video đi.
+
+17
+00:01:47,356 --> 00:01:49,056
+Thì rất là nhiều người chia sẻ cho các bạn như vậy,
+
+18
+00:01:49,056 --> 00:01:51,796
+nhưng mà chính vì như vậy là mọi người bắt đầu loay hoay.
+
+19
+00:01:51,796 --> 00:01:59,783
+Là một vài chục video mà không có kết quả, hoặc là một vài, thậm chí có những người kiên trì làm đến hàng
+
+20
+00:01:59,783 --> 00:02:07,769
+trăm video mà vẫn không ra kết quả thì lúc đấy bắt đầu bị vấn đề. Và lúc đấy mới bắt đầu cảm
+
+21
+00:02:07,769 --> 00:02:15,756
+thấy là à, nó sai sai. Nên là bị mất niềm tin. Thế từ mất niềm tin đấy thì mới bắt đầu bỏ cuộc.
+
+22
+00:02:15,756 --> 00:02:24,636
+Thì khi mà chúng ta đặt cái câu hỏi là chúng ta làm thế nào thì chúng ta sẽ bế tắc bởi vì khả năng của chúng ta có hạn đúng không ạ?
+
+23
+00:02:25,536 --> 00:02:28,396
+Các bạn có đồng ý với mình là khả năng của chúng ta có hạn đúng không ạ?
+
+24
+00:02:29,636 --> 00:02:33,176
+Thế chúng ta phải rõ ràng được là à chúng ta mong muốn gì?
+
+25
+00:02:35,000 --> 00:02:37,836
+Tại sao chúng ta làm cái đấy? Và ai là người có thể hỗ trợ được chúng ta?
+
+26
+00:02:39,056 --> 00:02:41,456
+Đây này cái câu này. Ai là người có thể hỗ trợ được chúng ta?
+
+27
+00:02:42,676 --> 00:02:43,816
+Nó rất là quan trọng nhé.
+
+28
+00:02:43,816 --> 00:02:48,936
+Khi mà có YouTube, Facebook, TikTok, Google
+
+29
+00:02:48,936 --> 00:02:51,296
+Thì những câu hỏi bế tắc là
+
+30
+00:02:51,296 --> 00:02:51,856
+Câu hỏi là
+
+31
+00:02:51,856 --> 00:02:53,556
+Cần những kỹ năng gì
+
+32
+00:02:53,556 --> 00:02:55,196
+Mình cần phải làm cái gì
+
+33
+00:02:55,196 --> 00:02:56,296
+Mình cần phải làm ở đâu
+
+34
+00:02:56,296 --> 00:02:57,536
+Mình cần phải làm như thế nào
+
+35
+00:02:57,536 --> 00:02:58,516
+Ai là người quay
+
+36
+00:02:58,516 --> 00:02:59,596
+Ai là người viết content
+
+37
+00:03:00,000 --> 00:03:09,013
+SEO, up làm thế nào để có nhiều view? Qua khó. Một người để làm tất cả những cái việc đấy thì mất rất là nhiều thời gian. Thay vì
+
+38
+00:03:09,013 --> 00:03:18,027
+việc như vậy thì mình phải đặt câu hỏi khác. Câu hỏi ai? Ai là người có kỹ năng đấy? Ai là người làm được việc đó? Và ai
+
+39
+00:03:18,027 --> 00:03:27,040
+là người có thể hỗ trợ bạn làm được cái việc đấy? Nó sẽ thay đổi hoàn toàn đấy ạ. Cái đằng này là cái mà mình tự làm hết.
+
+40
+00:03:27,040 --> 00:03:30,800
+Thì tức làm hết thì đến lúc mà mình không làm được thì nó bế tắc thế thôi.
+
+41
+00:03:32,380 --> 00:03:35,480
+Còn bên này là mình đặt câu hỏi là ai? Ai có thể hỗ trợ được kỹ năng đấy?
+
+42
+00:03:36,980 --> 00:03:38,840
+Ai thuê? Mình có thể thuê được làm việc đấy.
+
+43
+00:03:39,960 --> 00:03:43,360
+Các bạn đã bắt đầu thấy nó vỡ ra chưa ạ?
+
+44
+00:03:44,820 --> 00:03:47,080
+Mình chỉ tập trung vào những cái việc mà nó quan trọng nhất thôi.
+
+45
+00:03:48,660 --> 00:03:53,880
+Nên là mình sẽ đến với các bước mà khi mà làm triển khai một kênh YouTube.
+
+46
+00:03:54,000 --> 00:04:03,280
+Đó là đầu tiên các bạn phải xác định là mục tiêu kênh, định hướng kênh, đối tượng kênh, hình mẫu kênh, nghiên cứu khán giả. Những cái này các bạn chỉ cần làm một lần thôi. Có biểu mẫu thì các bạn có thể làm được hết.
+
+47
+00:04:04,100 --> 00:04:15,620
+Thì tất cả những cái này khi mà mình làm xong rồi mình biết là lý do tại sao, bạn muốn trở thành ai khi mà xuất hiện một kênh YouTube như vậy và tại sao bạn cần phải làm, tại sao bạn cần phải làm kênh YouTube như vậy, mục đích kênh là gì.
+
+48
+00:04:15,880 --> 00:04:22,160
+Thì khi mà làm xong toàn bộ những cái này rồi mình định hướng được là YouTube mình sẽ làm như thế rồi. Thì bắt đầu đến cái giai đoạn là mình bắt đầu phải sản xuất video.
+
+49
+00:04:22,160 --> 00:04:29,580
+video sản xuất video thì chúng ta cần phải tìm cái chủ đề tìm cái chủ đề để có thể làm tìm chủ đề có thể là
+
+50
+00:04:29,580 --> 00:04:37,776
+đấy sau đó những cái chủ đề đấy nó liên quan đến kênh liên quan đến việc là phát triển YouTube thì chúng ta cần viết content
+
+51
+00:04:37,776 --> 00:04:39,556
+Sau đó từ đấy chúng ta dựng video.
+
+52
+00:04:40,556 --> 00:04:42,696
+Dựng video xong thì chúng ta cần phải up lên YouTube.
+
+53
+00:04:43,076 --> 00:04:50,776
+Up lên YouTube thì có những cái liên quan đến kỹ thuật, liên quan đến đặt tiêu đề, làm hình thu nhỏ làm sao, thu hút, làm sao để SEO YouTube cho nó tốt.
+
+54
+00:04:50,776 --> 00:05:01,056
+Tiếp theo khi mà up lên xong rồi thì các bạn cần phải phát triển nó, phát triển kênh làm sao để chia sẻ video, làm sao để chạy quảng cáo để video có nhiều view, nhiều sub và có nhiều khách hàng đúng không ạ?
+
+55
+00:05:02,496 --> 00:05:12,636
+Và tiếp theo là chúng ta cần phải đo lường tối ưu, chúng ta cần phải đo lường về cái hiệu quả của kênh dựa trên tất cả các chỉ số của Analytics và chúng ta tối ưu từng chỉ số.
+
+56
+00:05:14,096 --> 00:05:18,000
+Đấy, thế tất cả những cái việc như thế này là những cái việc mà cần phải làm để triển khai YouTube.
+
+57
+00:05:18,000 --> 00:05:27,723
+Ví dụ cái bước mà cuối cùng khi mà mình làm được rồi, mình sản xuất được video rồi, mình up được video rồi, mình phát triển kênh rồi, thì đến lúc mà có view rồi thì chúng ta cần phải đo
+
+58
+00:05:27,723 --> 00:05:37,209
+lường và tối ưu. Đấy. Cái đo lường tối ưu view như kênh của bạn Hoàng Mạnh Cường. Các bạn có thể thấy là khi mà mình vào một cái kênh là mình vào cái số liệu phân tích của kênh. Nó sẽ
+
+59
+00:05:37,209 --> 00:05:46,696
+cho các bạn biết được rất là nhiều thông số, ví dụ thông số của bạn là đề xuất, video đề xuất là bao nhiêu phần trăm, tìm kiếm nó bao nhiêu phần trăm. Đấy. Những cái phễu như thế này, phễu.
+
+60
+00:05:46,696 --> 00:06:00,000
+Ví dụ, một người, YouTube đề xuất, đến cho 2,2 triệu người, thì chỉ có 3%, 4%, mà họ nhấp vào thôi, nhấp vào cái mà mình đưa ra thế thôi.
+
+61
+00:06:00,000 --> 00:06:02,020
+Tức là cái hình ảnh thu nhỏ nó đang kém đúng không ạ?
+
+62
+00:06:03,280 --> 00:06:04,080
+Nó quá thấp.
+
+63
+00:06:04,540 --> 00:06:08,080
+Đấy. Nhưng mà ngược lại là có rất là ít nhiều người ở đây á.
+
+64
+00:06:08,880 --> 00:06:13,760
+Tức là khi một cái video YouTube nó hiện ra, YouTube nó gợi ý cho bạn nhưng bạn không kích vào.
+
+65
+00:06:14,520 --> 00:06:16,620
+Thì là cái tỷ lệ nhấp này nó thấp này.
+
+66
+00:06:18,080 --> 00:06:19,060
+Đấy. Thì nó thấp không được.
+
+67
+00:06:19,460 --> 00:06:21,880
+Nhưng mà khi mà người ta vào xem kênh rồi,
+
+68
+00:06:23,260 --> 00:06:26,540
+thì cái thời gian người ta ở lại đến tận 7 phút 37 cơ.
+
+69
+00:06:27,160 --> 00:06:28,060
+Là thời gian xem trung bình.
+
+70
+00:06:28,060 --> 00:06:30,420
+Thì cái thời gian xem này rất tốt.
+
+71
+00:06:32,620 --> 00:06:35,180
+7 phút xem là bắt đầu biến người ta thành fan rồi.
+
+72
+00:06:36,080 --> 00:06:39,560
+Thì các bạn có thể để ý, từ những cái chỉ số như này mình sẽ tối ưu được.
+
+73
+00:06:39,800 --> 00:06:42,980
+À, cái chỉ số như này mình cần phải tối ưu thumbnail với tiêu đề đi.
+
+74
+00:06:43,520 --> 00:06:45,400
+À, còn cái chỉ số này nó cao rồi.
+
+75
+00:06:45,520 --> 00:06:47,200
+À, thế thì nội dung của ông ok rồi.
+
+76
+00:06:47,280 --> 00:06:50,400
+Thì ông bắt đầu phải tăng chất lượng nội dung và tăng cái độ dài của video lên.
+
+77
+00:06:51,780 --> 00:06:55,760
+Mình sẽ có được cả những cái nguồn truy cập bên trong, bên ngoài như thế nào.
+
+78
+00:06:55,760 --> 00:07:04,300
+Từ đây thì mình sẽ tối ưu được thêm những cái chỉ số. Và nhất là những cái chỉ số tiếp theo đây. Thời điểm khán giả xem nhiều nhất là gì? Mấy giờ thì khán
+
+79
+00:07:04,300 --> 00:07:12,840
+giả hay xem trong ngày, trong tuần? Thì từ đấy trước đấy thì mình cũng sẽ biết được cả. À, thế từ đấy thì cái thời gian đấy là mình up video là hợp lý.
+
+80
+00:07:14,200 --> 00:07:24,340
+Toàn bộ này nó có lịch sử, nó có cái dữ liệu hết rồi mà. Mình phân tích ra, mình xem, đấy mình tối ưu, mình chỉ số. Những kênh khác mà khán giả của bạn đang xem.
+
+81
+00:07:26,000 --> 00:07:27,120
+Khán giả cũng đang xem Web5Ngày,
+
+82
+00:07:27,360 --> 00:07:29,760
+Shopee này hay Big Man hay Thái Phạm hay Phạm Thành Long.
+
+83
+00:07:30,140 --> 00:07:31,280
+Thì mình cũng phải tham khảo,
+
+84
+00:07:31,460 --> 00:07:32,400
+mình cũng phải xem những kênh này
+
+85
+00:07:32,480 --> 00:07:34,620
+để xem là khán giả đang xem những cái gì,
+
+86
+00:07:34,780 --> 00:07:37,200
+nội dung khác, các video khác mà khán giả cũng đang xem.
+
+87
+00:07:39,440 --> 00:07:40,316
+Khán giả đang xem những video khác,
+
+88
+00:07:47,936 --> 00:07:53,736
+cũng có thể triển khai lại trên kênh của mình theo một cái góc nhìn khác cái cách làm cái mẹo làm của mình mà
+
+89
+00:07:53,736 --> 00:08:00,436
+Đó là tất cả những cái này mình cần phải đo lường tối ưu và từ những cái đo lường tối ưu này thì kênh của mình nó phát triển rất là tốt.
+
+90
+00:08:02,976 --> 00:08:10,456
+Và đây là toàn bộ những cái mà mình cần phải làm. Và cái quan trọng nhất trong tất cả cái bước này là chúng ta cần phải làm đúng, đủ và đều.
+
+91
+00:08:10,876 --> 00:08:14,236
+Thì khi mà các bạn làm ở Internet thì các bạn bắt buộc phải làm đúng đủ đều rồi.
+
+92
+00:08:14,796 --> 00:08:20,296
+Nó không thể nào là làm một cái ăn ngay hay làm nó gọi là ăn xổi được cả.
+
+93
+00:08:20,296 --> 00:08:28,116
+Bắt đầu chúng ta phải làm đúng với luật lá của nền tảng, làm đủ video, làm đều ngày này qua tháng khác.
+
+94
+00:08:31,256 --> 00:08:43,636
+Cái công việc của một chuyên gia YouTube đó là chúng ta quản lý kênh của chúng ta, chúng ta viết content, chúng ta làm video, chúng ta làm hình ảnh, chúng ta SEO, up, lên định hướng, SEO, up.
+
+95
+00:08:44,216 --> 00:08:48,000
+Thì đấy là một công việc mà một người làm YouTube, chuyên gia YouTube có thể làm từ A đến Z.
+
+96
+00:08:48,000 --> 00:09:00,000
+Ví dụ như mình, mình có thể làm được tất cả những cái này, mình làm từ A, Z, nhưng mà mình sẽ không làm tất cả những cái này, mình sẽ tập trung vào những cái việc mà quan trọng nhất, tức là
+
+97
+00:09:00,000 --> 00:09:02,000
+Thứ nhất là học cái tư duy làm.
+
+98
+00:09:02,520 --> 00:09:04,000
+Cái thứ hai là mình tìm ra cái thị trường ngách.
+
+99
+00:09:05,200 --> 00:09:07,340
+Sau đó là mình định hướng cái content chủ đề.
+
+100
+00:09:08,260 --> 00:09:11,560
+Bởi vì thực chất mình là người hiểu nhất cái thị trường của mình.
+
+101
+00:09:12,760 --> 00:09:18,840
+Nên là mình hãy tập trung vào để mình chia sẻ đúng cái mà mình giỏi nhất.
+
+102
+00:09:19,780 --> 00:09:23,880
+Các bạn làm y, dược, bác sĩ, các bạn là người giỏi nhất trong cái chuyên ngành của các bạn.
+
+103
+00:09:26,400 --> 00:09:29,740
+Tức là nếu mà so với đội ngũ nhân viên và đội ngũ để có thể hỗ trợ nhé.
+
+104
+00:09:30,000 --> 00:09:31,600
+Thì bạn sẽ là người giỏi nhất trong những phần đấy.
+
+105
+00:09:32,280 --> 00:09:36,500
+Thì bạn cần phải học được cái tư duy làm, tư duy quản lý của một kênh YouTube.
+
+106
+00:09:36,500 --> 00:09:39,440
+Sau đó bạn tìm được ra cái thị trường ngách nào mà khán giả đang quan tâm.
+
+107
+00:09:40,040 --> 00:09:42,260
+Sau đó bạn lên định hướng content, làm chủ đề.
+
+108
+00:09:42,660 --> 00:09:50,740
+Thì từ đấy chúng ta sẽ biết được là làm những cái việc gì để mình có thể tối ưu thời gian,
+
+109
+00:09:51,120 --> 00:09:52,240
+việc gì mình có thể thuê được.
+
+110
+00:09:52,340 --> 00:09:54,400
+Ví dụ content này các bạn có thể thuê được đúng không?
+
+111
+00:09:55,060 --> 00:09:57,260
+View các bạn có thể thuê được mà, hình ảnh thuê được mà.
+
+112
+00:09:57,260 --> 00:10:00,440
+Mục đích hay là tính cách kênh cái này làm một lần.
+
+113
+00:10:02,160 --> 00:10:08,340
+Các bạn đã bắt đầu thấy cái cách làm làm sao để nó tối ưu chưa ạ?
+
+114
+00:10:10,220 --> 00:10:11,680
+Mình chỉ tập trung vào những việc quan trọng nhất thôi.
+
+115
+00:10:13,180 --> 00:10:15,640
+Những cái bước triển khai như này mình chỉ cần tập trung vào chủ đề.
+
+116
+00:10:17,340 --> 00:10:19,660
+Và cái hiệu quả của kênh. Thế thôi.
+
+117
+00:10:20,620 --> 00:10:23,100
+Còn những cái khác các bạn không cần phải tập trung quá nhiều.
+
+118
+00:10:23,440 --> 00:10:23,980
+Nhưng các bạn vẫn phải hiểu.
+
+119
+00:10:23,980 --> 00:10:27,820
+Các bạn cần phải hiểu cái tư duy làm
+
+120
+00:10:27,820 --> 00:10:29,640
+Đấy, hiểu cái tư duy làm là quan trọng nhất
+
+121
+00:10:29,640 --> 00:10:35,380
+Tất cả những cái phần ở đây mình nốt lại
+
+122
+00:10:35,380 --> 00:10:37,140
+Mình đánh dấu bằng cái mũi tên này
+
+123
+00:10:38,956 --> 00:10:47,236
+Là những cái phần mình đều có thể thuê được hết. Sản xuất video thuê được, up video YouTube thuê được, phát triển kênh chạy quảng cáo, chia sẻ video thuê được.
+
+124
+00:10:49,136 --> 00:10:50,956
+Cách tối ưu từng chỉ số thuê được.
+
+125
+00:10:52,096 --> 00:10:53,636
+Toàn bộ những cái này mình có thể thuê được.
+
+126
+00:10:55,016 --> 00:11:04,876
+Thì khi mà mình biết rằng là 20% công việc quan trọng đem lại 80% kết quả, thì mình lọc ra 20% công việc quan trọng nhất, cần thiết nhất để mình làm YouTube.
+
+127
+00:11:05,036 --> 00:11:09,576
+Còn lại là những cái cách còn lại mình tìm người khác làm, hỗ trợ hoặc thuê.
+
+128
+00:11:10,356 --> 00:11:14,816
+Thì mình sẽ dành ra đó một ngày, làm việc trong một tuần để mình đầu tư.
+
+129
+00:11:15,276 --> 00:11:21,236
+Khi mà mình làm và mình nhận ra được những cái như thế này thì mình mới bắt đầu xây dựng doanh nghiệp và mình bắt đầu tuyển dụng và mình bắt đầu làm.
+
+130
+00:11:21,236 --> 00:11:30,563
+Thì làm một thời gian là đến lúc mà mình không cần phải động vào kênh YouTube nữa. Mình chỉ cần lên chủ đề thôi. Tìm chủ đề. Đấy. Cho anh em làm. Là đã
+
+131
+00:11:30,563 --> 00:11:39,889
+ngon rồi. Còn lại mọi người làm được hết đấy mà. Quan trọng nhất là mình hiểu thị trường và hiểu chủ đề. Đó. Thì đấy là cái quan trọng nhất. Thì mình nốt
+
+132
+00:11:39,889 --> 00:11:49,000
+lại ở đây. Đấy. Cái mà các bạn cần làm là tìm chủ đề và hiệu quả kênh. Còn những cái khác, toàn bộ những cái khác, các bạn hãy bỏ tiền ra, thuê được.
+
+133
+00:11:49,000 --> 00:12:00,000
+Và đây là một cái lịch làm việc tham khảo của một cái kênh mà mình làm. Đây là cái cách mà mình làm việc một trước kia thôi. Bây giờ thì gần như mình không phải động vào nữa. Tức là mình sẽ...
+
+134
+00:12:00,000 --> 00:12:02,200
+Có lịch làm việc là dành ra 1 ngày làm việc cho 1 tuần.
+
+135
+00:12:03,020 --> 00:12:05,800
+Thế cứ cái đầu tuần này, khoảng chủ nhật, thì mình sẽ lên lịch.
+
+136
+00:12:06,140 --> 00:12:09,580
+Mình sẽ lên lịch cho 1 tuần, chủ đề ở đây, mình sẽ tìm chủ đề.
+
+137
+00:12:10,080 --> 00:12:14,320
+Nói là hôm tuần này mình sẽ làm chủ đề 1 loạt ở đây, từ thứ 2 đến chủ nhật.
+
+138
+00:12:14,740 --> 00:12:16,720
+Đây là 1 ngày mình làm 2 video các bạn nhé.
+
+139
+00:12:18,500 --> 00:12:21,460
+Nếu mà các bạn làm 1 ngày 1 video thì nó nhàn hơn này rất nhiều.
+
+140
+00:12:22,280 --> 00:12:23,300
+Thì chỉ cần 7 video thôi.
+
+141
+00:12:24,740 --> 00:12:28,180
+Thì các bạn có khi các bạn dành ra 2-3 ngày các bạn làm cho 1 tháng nữa.
+
+142
+00:12:28,180 --> 00:12:32,680
+Như mình làm là 2 video 1 ngày.
+
+143
+00:12:33,680 --> 00:12:36,540
+Thì mình cần phải làm dành cho ngày chủ nhật.
+
+144
+00:12:37,340 --> 00:12:40,980
+Xong là mình điền hết chủ đề mà mình phân tích mình làm ra ở đây.
+
+145
+00:12:41,640 --> 00:12:46,180
+Cái link tham khảo là những cái nội dung mà các bạn content có thể tham khảo được.
+
+146
+00:12:46,340 --> 00:12:49,720
+Những cái nội dung ý mà mình mong muốn các bạn ấy làm theo.
+
+147
+00:12:50,160 --> 00:12:52,120
+Xong là cách làm này mình cũng có thể nốt ra.
+
+148
+00:12:52,540 --> 00:12:53,900
+Cách làm theo cái ý của mình.
+
+149
+00:12:54,560 --> 00:12:55,540
+Mình mong muốn làm như thế nào?
+
+150
+00:12:55,540 --> 00:13:01,440
+Số Zalo này là cái số để điền bán hàng vào thôi.
+
+151
+00:13:01,440 --> 00:13:08,840
+Tiêu đề, tiêu đề đặt, thumbnail đặt như thế nào thì cái này là của bạn quản lý kênh các bạn làm, sẽ có bạn khác làm.
+
+152
+00:13:08,840 --> 00:13:17,040
+SEO như thế nào các bạn quản lý kênh, content làm như thế nào thì đấy là của bạn content sẽ vào lấy, bạn audio này thì các bạn lấy content để đọc audio thôi.
+
+153
+00:13:17,040 --> 00:13:18,740
+MC này thì bạn content làm luôn.
+
+154
+00:13:18,740 --> 00:13:25,160
+Ừ thế sẽ sau này sẽ có cái tình trạng là à thế edit video đã xong chưa ngày quay đã xong chưa
+
+155
+00:13:25,160 --> 00:13:31,280
+cái tình trạng up lên kênh YouTube như thế nào tình trạng thumbnail đã xong chưa thì các bạn cần
+
+156
+00:13:31,280 --> 00:13:35,840
+phải điền báo cáo đây thì khi mà mình vào kênh chẳng hạn khi mà mình vào cái bảng báo cáo này mình
+
+157
+00:13:35,840 --> 00:13:38,740
+xem luôn mình à thế cái ngày 30 tháng chẳng hạn
+
+158
+00:13:38,740 --> 00:13:40,540
+hay là 29.58 các bạn đã làm được chưa
+
+159
+00:13:42,320 --> 00:13:43,340
+Các bạn làm như thế nào rồi
+
+160
+00:13:44,380 --> 00:13:46,680
+Ừ thì có thể thấy được là
+
+161
+00:13:46,940 --> 00:13:48,980
+khi mà chúng ta làm như thế này
+
+162
+00:13:49,240 --> 00:13:51,540
+ở đây mình có một cái lịch nữa lịch là
+
+163
+00:13:52,820 --> 00:13:55,016
+thứ hai thứ ba thứ tư năm, sáu, chủ nhật
+
+164
+00:13:55,016 --> 00:14:05,016
+Thì mình sẽ test những kênh bán hàng của mình, phần nào là phần liên quan đến bán hàng, phần nào liên quan đến traffic, phần nào liên quan đến seeding.
+
+165
+00:14:07,016 --> 00:14:19,016
+Thì mình có bôi những màu khác nhau ở đây, và khi ở trên này mình làm đâu là traffic, đâu là seeding, đâu là bán hàng để cho các bạn content và các bạn kia làm các bạn biết được là viết cái content như thế nào, cái nội dung như thế nào.
+
+166
+00:14:19,016 --> 00:14:28,656
+Đó, thì đấy là cái mà mình làm cái lịch làm việc như vậy. Thì khi mà các bạn làm việc như thế này thì các bạn làm chỉ cần một tuần, các bạn làm đúng một ngày là đủ rồi.
+
+167
+00:14:31,000 --> 00:14:41,756
+Mình sẽ kiểm soát và quản lý toàn bộ trên Drive, trên Google Drive Online thì mình có phân ra cái này chính là cái tổng hợp lịch làm việc này.
+
+168
+00:14:41,756 --> 00:14:50,746
+Lịch làm việc này chính là cái bảng Excel này. Sau đó thì mình sẽ có các cái thư mục,
+
+169
+00:14:50,746 --> 00:14:59,736
+thư mục về content, thư mục về edit video, thư mục về audio, các cái nguyên liệu làm kênh.
+
+170
+00:14:59,736 --> 00:15:10,736
+Khi các bạn quản lý kênh lên thì các bạn sẽ vào những thư mục này để các bạn lấy từng phần một để các bạn làm
+
+171
+00:15:10,736 --> 00:15:17,000
+Các bạn đã hình dung ra cách thức mà mình quản lý chưa ạ? Các bạn có thể làm offline hoặc online đều được
+
+172
+00:15:17,000 --> 00:15:24,227
+Đó là cái cách thức mà mình làm. Ở đây cái quy trình của BMG làm việc chẳng hạn, mình nói nhanh qua nhé, cái quy trình mà
+
+173
+00:15:24,227 --> 00:15:31,453
+bên mình đang trực tiếp làm là có một bạn gọi là quản lý kênh, các bạn sẽ tìm chủ đề, tức là ngày xưa mình làm
+
+174
+00:15:31,453 --> 00:15:38,680
+quản lý kênh nhé, ngày xưa mình làm, nhưng mà sau này đến lúc mà mình chia sẻ mà dạy được đệ tử thì đệ tử làm luôn.
+
+175
+00:15:38,680 --> 00:15:47,700
+Tìm chủ đề, làm thumbnail, cộng tiêu đề. Sau đó gửi cho bạn content, content viết bài. Quản lý kênh duyệt bài xong thì gửi lại cho
+
+176
+00:15:47,700 --> 00:15:56,720
+content để content đưa cho bên audio. Tức là quản lý kênh này đưa cho content này. Content làm xong thì để quản lý kênh duyệt
+
+177
+00:15:56,720 --> 00:16:05,740
+bài. Content lại đưa cho bên MC audio xử lý các nguyên liệu như vậy. Sau đó đưa cho edit có đủ hết cả MC audio rồi.
+
+178
+00:16:05,740 --> 00:16:12,580
+vô rồi thì các bạn edit video cần phải làm những cái video mà nó phù hợp với lại mình phù hợp hoạt
+
+179
+00:16:12,580 --> 00:16:18,500
+cảnh hoặc là nếu mà các bạn đi quay dựng thì là đây là cái bạn làm hậu kỳ đấy ạ sau đó gửi lại cho các
+
+180
+00:16:18,500 --> 00:16:25,740
+bạn quản lý kênh này hoàn thiện và kiểm tra kỹ đấy bạn quản lý kênh này các bạn sẽ làm nhiệm vụ là upload
+
+181
+00:16:25,740 --> 00:16:27,260
+và public video
+
+182
+00:16:27,260 --> 00:16:30,500
+tất cả các quá trình này các bạn đều phải làm đúng đủ đều
+
+183
+00:16:30,500 --> 00:16:32,080
+thì trước kia mình làm là
+
+184
+00:16:32,080 --> 00:16:34,060
+mình sẽ làm vị trí là quản lý kênh này
+
+185
+00:16:34,060 --> 00:16:35,340
+thì chính ra sau này
+
+186
+00:16:35,340 --> 00:16:37,660
+ban đầu các bạn làm thì các bạn cũng cần phải làm
+
+187
+00:16:37,660 --> 00:16:39,780
+vị trí là quản lý kênh của các bạn đầu tiên
+
+188
+00:16:39,780 --> 00:16:41,780
+sau đó thì chúng ta
+
+189
+00:16:41,780 --> 00:16:43,000
+tất cả những phần khác chúng ta thuê được hết
+
+190
+00:16:43,000 --> 00:16:53,136
+Thì khi mà làm thì chúng ta sẽ tập trung vào những việc quan trọng nhất. Tư duy làm và tìm ra thị trường ngách, lên định hướng content của chủ đề. Còn lại là chúng ta
+
+191
+00:16:53,136 --> 00:17:02,996
+sẽ tìm cách chúng ta thuê và có thể thuê được hết. Một video chẳng hạn thì thuê tính theo phút nó cũng rất là rẻ. Có mấy chục nghìn một video thôi mà. Content cũng như vậy.
+
+192
+00:17:02,996 --> 00:17:12,856
+Để chúng ta đầu tư tháng mà bỏ ra khoảng độ 5, 7, 10 triệu để đầu tư vào một kênh YouTube thì nó cũng không phải là cái vấn đề nó quá là lớn đúng không?
+
+193
+00:17:12,856 --> 00:17:18,596
+Nếu mà các bạn có thể thuê được nhân sự mà làm luôn offline được thì các bạn đấy còn có thể làm được nhiều hơn nữa, rất là nhiều.
+
+194
+00:17:20,296 --> 00:17:26,456
+Chúng ta sẽ tập trung vào 20% công việc để chiếm, 20% công việc quan trọng nhất, chiếm 80% kết quả.
+
+195
+00:17:27,176 --> 00:17:35,476
+Lọc ra, lọc ra tất cả những việc mà chúng ta làm hoặc là những cái việc chúng ta không làm được.
+
+196
+00:17:35,676 --> 00:17:42,296
+Nhớ nhé, những cái việc mà mình không làm được mình đừng tìm cách để có thể cố gắng mà làm,
+
+197
+00:17:42,296 --> 00:17:51,148
+Các bạn có thể tìm cách khác dễ hơn, dùng Canva thì sẽ dễ hơn, hoặc là mình
+
+198
+00:17:51,148 --> 00:18:00,000
+có thể tìm người khác hỗ trợ các bạn, nếu không được thì mình có thể thuê
+
+199
+00:18:00,000 --> 00:18:03,000
+Hợp tác với ai đấy để đẩy kênh
+
+200
+00:18:03,000 --> 00:18:10,000
+Hay là như bạn mình làm thì các bạn ấy có thể kết hợp với một đội khác làm về YouTube mới quay dựng
+
+201
+00:18:10,000 --> 00:18:16,000
+Thì bạn ấy cần thương hiệu để bán hàng, còn bên kia cần view để ăn tiền
+
+202
+00:18:16,000 --> 00:18:20,000
+Thì kết hợp với nhau là bên kia sẽ làm cho các bạn ý về kênh và phát triển
+
+203
+00:18:20,000 --> 00:18:23,000
+Còn bạn ấy sẽ làm ở cái mảng bán hàng
+
+204
+00:18:23,000 --> 00:18:27,000
+Còn cái tiền từ kênh thì anh em chia nhau như thế nào thì đấy là do các bạn làm
+
+205
+00:18:27,000 --> 00:18:36,880
+Các bạn có những offer để các bạn có thể đi nhanh hơn. Và chúng ta bắt đầu tìm được ra điểm mấu chốt và xử lý những điểm mấu chốt đấy.
+
+206
+00:18:37,280 --> 00:18:45,460
+Thì cứ có những đoạn đấy mình gỡ được ra. Thế là xong. Nhớ là câu hỏi là ai là người có thể hỗ trợ bạn? Chứ đừng đặt cho câu hỏi là mình làm như thế nào.
+
+207
+00:18:45,860 --> 00:18:54,580
+Thì mình nhớ cái câu hỏi như vậy. Để mình tự vấn bản thân. Ai là người có thể hỗ trợ mình trong cái vấn đề mà xây dựng kênh hay là làm kênh như thế này?
+
+208
+00:18:54,580 --> 00:18:55,480
+Đó
+
+209
+00:18:55,480 --> 00:18:57,080
+Ok
+
+210
+00:18:57,080 --> 00:18:59,720
+Chúng ta đã cùng nhau đi với nhau
+
+211
+00:18:59,720 --> 00:19:02,540
+Phương pháp xây dựng kênh YouTube mà không cần nhiều thời gian làm việc
+
+212
+00:19:02,540 --> 00:19:03,940
+Một ngày trên một tuần là đủ
+
+213
+00:19:03,940 --> 00:19:04,900
+Bạn
+
+214
+00:19:04,900 --> 00:19:08,700
+Các bạn không cần giỏi công nghệ đúng không ạ?
+
+215
+00:19:09,140 --> 00:19:12,260
+Đến như bây giờ rồi thì các bạn sẽ thấy các bạn không cần giỏi công nghệ
+
+216
+00:19:12,260 --> 00:19:14,000
+Cũng không cần giỏi các kỹ năng làm video
+
+217
+00:19:14,000 --> 00:19:15,920
+Thậm chí cũng không cần ngoại hình đẹp
+
+218
+00:19:15,920 --> 00:19:17,040
+Vẫn có thể làm được bình thường
+
+219
+00:19:17,040 --> 00:19:18,059
+Anh em đã thử
+
+220
+00:19:18,059 --> 00:19:25,259
+Anh em đã thấy bắt đầu công việc xây dựng kênh YouTube nó bắt đầu nhẹ nhàng hơn chưa? Anh em bắt đầu thấy nó nhẹ nhàng chưa?
+
+221
+00:19:25,259 --> 00:19:38,559
+Đúng rồi, bởi vì là khi mà mình hiểu rõ cái bản chất của nó rồi và mình đặt ra những cái câu hỏi đúng thì là mình không bị bế tắc mà mình làm nó bắt đầu nó xuôi hơn rất là nhiều ạ.
+
+222
+00:19:39,219 --> 00:19:47,079
+Thì anh em có thể làm và khi mà mọi người làm thì đâu phải nhất thiết là cứ ai cũng mong muốn là làm 1 ngày 1 tuần đâu.
+
+223
+00:19:47,519 --> 00:19:51,939
+Các bạn có thể tập trung mà giai đoạn đầu, giai đoạn đầu các bạn có thể tập trung nhiều hơn cho kênh YouTube chẳng hạn.
+
+224
+00:19:51,939 --> 00:19:54,939
+Các bạn tập trung mạnh một thời gian đầu tiên để nó ra kết quả sớm.
+
+225
+00:19:55,359 --> 00:19:57,179
+Thì mình tập trung nhiều thì nó ra kết quả nhanh thôi.
+
+226
+00:19:57,279 --> 00:20:05,439
+Còn nếu mà dành cho những bạn bận rộn, không có nhiều thời gian thì ý mình muốn nói là các bạn vẫn có thể làm để một cách tối ưu nhất về thời gian của các bạn.
+
+227
+00:20:05,439 --> 00:20:10,859
+Còn nếu mà các bạn có thời gian và xác định tập trung vào để cho lên nhanh hơn thì chúng ta cũng có cách thức để lên nhanh hơn mà.
+
+228
+00:20:11,079 --> 00:20:15,500
+Cứ tập trung và làm là nó sẽ ra kết quả nhanh mà.
+

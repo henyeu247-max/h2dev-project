@@ -1,0 +1,76 @@
+{
+  "sku": "VIDEO-28e1cc",
+  "title": "Show kênh mới vừa bật kiếm tiền Và Hướng dẫn thực chiến full quy trình làm Reup ngách nhỏ hoạt hình từ bilibili",
+  "actual_topic": "Full quy trình Reup hoạt hình ngắn Bilibili bật kiếm tiền an toàn & Kỹ thuật dùng Tool dịch phụ đề SRT kết hợp giọng đọc Ngọc Huyền",
+  "category_group": "reup_china",
+  "niche_primary": "Reup Hoạt Hình Bilibili Lồng Tiếng",
+  "niche_id": "reup-bilibili-animation",
+  "target_market": "Việt Nam / Trung Quốc",
+  "market_code": "VN,CN",
+  "key_takeaways": [
+    "Đây là kênh reup phim hoạt hình đam mỹ của một thành viên nhóm Pro, vừa bật kiếm tiền ngày 9 tháng 7; tác giả nhắc ngách reup chỉ để kiếm thêm chứ không kiếm được nhiều, và chủ kênh muốn nhượng lại kênh, tác giả chỉ làm trung gian kết nối.",
+    "Lấy nguồn từ Bilibili nên dùng trình duyệt Cốc Cốc có sẵn nút tải video; kênh có logo màu hồng hoặc dấu xám phải trả phí gói mới xem và tải được full video, không tải được full HD, còn kênh miễn phí thì tải full.",
+    "Trên CapCut, giảm tốc video xuống 0.8 (hoặc 0.7) để giọng đọc không bị chèn lên nhau, trích phụ đề tự động chọn tiếng Trung, xuất phụ đề, dịch bằng tool dịch rồi tạo giọng Ngọc Huyền với tốc độ 1.5-1.6 ở tool của tác giả hoặc khoảng 1.1 ở Vip Voice.",
+    "Âm gốc nên xóa hẳn vì nhạc nền hay dính bản quyền; phụ đề tiếng Trung che bằng hiệu ứng làm mờ, logo Bilibili chèn logo kênh hoặc làm mờ, rồi chèn phụ đề Việt, âm lượng giọng trên 10, ghép xong tăng tốc 1.2 hoặc 1.3; tên kênh và logo lưu thành kiểu cài sẵn để các tập sau chỉ cần import.",
+    "Thumbnail do AI tạo: copy link video, tải ảnh thumbnail gốc bằng tool dịch, dịch tiêu đề video để hiểu phim nói về gì rồi tải ảnh lên yêu cầu tạo lại; tác giả khuyên làm từng bước như vậy, hoặc chụp màn hình cảnh đẹp trong video để tạo thay vì dùng ảnh thumbnail gốc."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình reup phim hoạt hình đam mỹ từ Bilibili: tải video, tách phụ đề, dịch, tạo giọng Ngọc Huyền, edit CapCut và làm thumbnail bằng AI",
+    "additional": [
+      "Dùng trình duyệt Cốc Cốc có nút tải video, kênh miễn phí tải full HD, kênh trả phí thì không tải đủ",
+      "Import CapCut, giảm tốc video xuống 0.8, trích xuất phụ đề tự động chọn tiếng Trung rồi xuất ra dịch bằng tool dịch",
+      "Tạo giọng đọc Ngọc Huyền trong tool dịch, tốc độ khoảng 1.5 đến 1.6 (Vbee bản VIP thì khoảng 1.1), xóa hẳn âm gốc",
+      "Làm mờ logo Bilibili và phụ đề tiếng Trung, import phụ đề Việt và file âm thanh, tăng âm lượng khoảng 10 rồi gộp tăng tốc 1.2 hoặc 1.3",
+      "Lưu logo, tên kênh, hiệu ứng thành mẫu cài sẵn để tập sau import dùng lại; thumbnail dịch tiêu đề rồi nhờ AI tạo ảnh từ ảnh bìa"
+    ]
+  },
+  "avoid_flags": [
+    "Muốn giữ âm nền gốc thì dễ dính bản quyền nên tác giả khuyên xóa hẳn âm gốc",
+    "Không muốn mua kênh thì đừng liên hệ, tốn thời gian của nhau"
+  ],
+  "tools_mentioned": [
+    "Bilibili",
+    "Cốc Cốc"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:01",
+      "seconds": 1,
+      "label": "Show bằng chứng kênh học viên VIP Pro vừa bật kiếm tiền thành công từ ngách Reup"
+    },
+    {
+      "time": "03:10",
+      "seconds": 190,
+      "label": "Giới thiệu 2 kênh nguồn hoạt hình nhân văn trên nền tảng Bilibili"
+    },
+    {
+      "time": "07:20",
+      "seconds": 440,
+      "label": "Kỹ thuật xử lý hình ảnh, cắt cúp và làm mờ logo gốc chống quét mã hash"
+    },
+    {
+      "time": "12:44",
+      "seconds": 764,
+      "label": "Hướng dẫn sử dụng tool dịch phụ đề SRT tích hợp giọng đọc AI Ngọc Huyền"
+    },
+    {
+      "time": "17:29",
+      "seconds": 1049,
+      "label": "Lắp ghép hoàn chỉnh video trên CapCut và chiến lược quản trị rủi ro bản quyền"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-28e1cc/transcript.txt",
+  "sop_steps": [
+    "Dùng trình duyệt Cốc Cốc có nút tải video, kênh miễn phí tải full HD, kênh trả phí thì không tải đủ",
+    "Import CapCut, giảm tốc video xuống 0.8, trích xuất phụ đề tự động chọn tiếng Trung rồi xuất ra dịch bằng tool dịch",
+    "Tạo giọng đọc Ngọc Huyền trong tool dịch, tốc độ khoảng 1.5 đến 1.6 (Vbee bản VIP thì khoảng 1.1), xóa hẳn âm gốc",
+    "Làm mờ logo Bilibili và phụ đề tiếng Trung, import phụ đề Việt và file âm thanh, tăng âm lượng khoảng 10 rồi gộp tăng tốc 1.2 hoặc 1.3",
+    "Lưu logo, tên kênh, hiệu ứng thành mẫu cài sẵn để tập sau import dùng lại; thumbnail dịch tiêu đề rồi nhờ AI tạo ảnh từ ảnh bìa"
+  ]
+}

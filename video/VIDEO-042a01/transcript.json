@@ -1,0 +1,458 @@
+{
+  "sku": "VIDEO-042a01",
+  "duration": 226.37,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 56,
+  "full_text": "Rồi sai lầm tiếp theo Cuối cùng Đó là Vì đã thành công ở những thứ cũ rồi Nên ngại thay đổi Ngại cách làm mới Hoặc là có những người hỏi mình như thế này Nhưng mà hỏi là để không làm nhé Nó có một câu anh em nhớ nhé Hỏi để làm hay để không làm? Thì cách hỏi nó sẽ liên quan đến cái phần là làm hay không làm? Họ hỏi lòng vòng một lúc. Quy trình ABC cuối cùng hỏi. Câu cuối cùng họ chốt mình hỏi là gì ạ? Thế quy trình này thì là VPS. Em không mua mà Proxy thì em mua ở đâu? Câu cuối cùng nó vẫn là Proxy Thế thì sao mình phải nhắn lại cho cả cái nhóm của GODA Nhiều anh em họ chấp niệm Proxy kinh khủng luôn Nói chuyện lòng vòng một lúc sau VPS Cuối cùng là Proxy này em mua ở đây có được không Rồi Cái việc là đang làm một ngày là trung bình 4 đến 5 video một ngày Xong bây giờ bảo một ngày một cái hoặc là hai ngày một cái thì bắt đầu bảo thế này kênh lên thì đéo không được. Mẹ đang bốn năm cái một ngày còn đéo lên được. Nên này thì một ngày một cái lên làm sao được. Thế rất ngại để thay đổi những cái liên quan đến chất lượng nhé, mà cứ bám theo cái số lượng suốt thôi. Ok số lượng cũng được, nhưng nó phải kèm theo chất lượng nhé. Bây giờ ông cứ farm video 2 tiếng rồi, nhưng bây giờ ông không thèm đọc. Đang quen cái kiểu làm đấy rồi, không cần phải duyệt content, vì là cái số 4 nó quá phụ thuộc, không thèm. Bây giờ bảo làm cách làm mới, mà rõ ràng nhé, biết là cách làm mới là hiệu quả nhé, biết thằng khác đã làm được rồi nhé, nhưng không làm. Vẫn đang phải tìm cách làm thế nào đấy để làm cách cũ, để lách được một tí, để quay trở lại cách cũ. Không được, không được. Vì đó, đó là những cái sai lầm mà mình thấy rằng là đa số anh em gặp phải. Anh em nào đã từng gặp phải một trong năm cái anh em giơ tay. Giơ tay rồi mà, giữ nguyên tay rồi mà. Ok, 90%. Rất đa số rồi đấy. Và bên mình cũng gặp phải tất cả những cái điều này. Xong lại còn đổ lỗi cho thị trường nữa. Thế không phải không. Nguy hiểm, quá nguy hiểm. Chúng ta sẽ thấy rằng là khi mà mình làm với những thứ cũ, nhưng mình cứ nghĩ đấy là đúng. Và thực tế thì mình bảo là ta sẽ chứng minh được cái này đấy là đúng. Ờ thì cũng chứng minh được, cũng ví dụ được mọi thứ. Nhưng mà Mình đâu biết rằng là Cái thứ đấy là một cái thứ sai Mà mình cứ tưởng mình là đúng thôi Thì khi mình lần đầu tiên biết đến cái khái niệm này Và được gọi tên khái niệm này Thì cách từ khoảng khóa 5 Bắt đầu biết đến Và bắt đầu sử dụng Và bắt đầu gọi tên lên được Thì mọi thứ bắt đầu rõ ràng hơn rất nhiều Vấn đề không Là vấn đề khi không được gọi tên Hẹn gặp lại bạn trong bài học tiếp theo.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 12.62,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:12,620",
+      "text": "Rồi sai lầm tiếp theo"
+    },
+    {
+      "id": 2,
+      "start": 12.62,
+      "end": 13.84,
+      "start_time": "00:00:12,620",
+      "end_time": "00:00:13,840",
+      "text": "Cuối cùng"
+    },
+    {
+      "id": 3,
+      "start": 13.84,
+      "end": 15.4,
+      "start_time": "00:00:13,840",
+      "end_time": "00:00:15,400",
+      "text": "Đó là"
+    },
+    {
+      "id": 4,
+      "start": 15.4,
+      "end": 17.94,
+      "start_time": "00:00:15,400",
+      "end_time": "00:00:17,940",
+      "text": "Vì đã thành công ở những thứ cũ rồi"
+    },
+    {
+      "id": 5,
+      "start": 17.94,
+      "end": 20.54,
+      "start_time": "00:00:17,940",
+      "end_time": "00:00:20,540",
+      "text": "Nên ngại thay đổi"
+    },
+    {
+      "id": 6,
+      "start": 20.58,
+      "end": 22.54,
+      "start_time": "00:00:20,580",
+      "end_time": "00:00:22,540",
+      "text": "Ngại cách làm mới"
+    },
+    {
+      "id": 7,
+      "start": 22.54,
+      "end": 25.86,
+      "start_time": "00:00:22,540",
+      "end_time": "00:00:25,860",
+      "text": "Hoặc là có những người hỏi mình như thế này"
+    },
+    {
+      "id": 8,
+      "start": 26.0,
+      "end": 28.0,
+      "start_time": "00:00:26,000",
+      "end_time": "00:00:28,000",
+      "text": "Nhưng mà hỏi là để không làm nhé"
+    },
+    {
+      "id": 9,
+      "start": 28.0,
+      "end": 30.0,
+      "start_time": "00:00:28,000",
+      "end_time": "00:00:30,000",
+      "text": "Nó có một câu anh em nhớ nhé"
+    },
+    {
+      "id": 10,
+      "start": 30.0,
+      "end": 32.98,
+      "start_time": "00:00:30,000",
+      "end_time": "00:00:32,980",
+      "text": "Hỏi để làm hay để không làm?"
+    },
+    {
+      "id": 11,
+      "start": 36.22,
+      "end": 41.8,
+      "start_time": "00:00:36,220",
+      "end_time": "00:00:41,800",
+      "text": "Thì cách hỏi nó sẽ liên quan đến cái phần là làm hay không làm?"
+    },
+    {
+      "id": 12,
+      "start": 43.06,
+      "end": 44.12,
+      "start_time": "00:00:43,060",
+      "end_time": "00:00:44,120",
+      "text": "Họ hỏi lòng vòng một lúc."
+    },
+    {
+      "id": 13,
+      "start": 47.98,
+      "end": 50.2,
+      "start_time": "00:00:47,980",
+      "end_time": "00:00:50,200",
+      "text": "Quy trình ABC cuối cùng hỏi."
+    },
+    {
+      "id": 14,
+      "start": 50.54,
+      "end": 52.24,
+      "start_time": "00:00:50,540",
+      "end_time": "00:00:52,240",
+      "text": "Câu cuối cùng họ chốt mình hỏi là gì ạ?"
+    },
+    {
+      "id": 15,
+      "start": 53.0,
+      "end": 56.0,
+      "start_time": "00:00:53,000",
+      "end_time": "00:00:56,000",
+      "text": "Thế quy trình này thì là VPS."
+    },
+    {
+      "id": 16,
+      "start": 57.1,
+      "end": 58.98,
+      "start_time": "00:00:57,100",
+      "end_time": "00:00:58,980",
+      "text": "Em không mua mà Proxy thì em mua ở đâu?"
+    },
+    {
+      "id": 17,
+      "start": 58.98,
+      "end": 62.92,
+      "start_time": "00:00:58,980",
+      "end_time": "00:01:02,920",
+      "text": "Câu cuối cùng nó vẫn là Proxy"
+    },
+    {
+      "id": 18,
+      "start": 62.92,
+      "end": 65.8,
+      "start_time": "00:01:02,920",
+      "end_time": "00:01:05,800",
+      "text": "Thế thì sao mình phải nhắn lại cho cả cái nhóm của GODA"
+    },
+    {
+      "id": 19,
+      "start": 65.8,
+      "end": 68.02,
+      "start_time": "00:01:05,800",
+      "end_time": "00:01:08,020",
+      "text": "Nhiều anh em họ chấp niệm Proxy kinh khủng luôn"
+    },
+    {
+      "id": 20,
+      "start": 68.02,
+      "end": 69.94,
+      "start_time": "00:01:08,020",
+      "end_time": "00:01:09,940",
+      "text": "Nói chuyện lòng vòng một lúc sau VPS"
+    },
+    {
+      "id": 21,
+      "start": 69.94,
+      "end": 71.8,
+      "start_time": "00:01:09,940",
+      "end_time": "00:01:11,800",
+      "text": "Cuối cùng là Proxy này em mua ở đây có được không"
+    },
+    {
+      "id": 22,
+      "start": 71.8,
+      "end": 74.0,
+      "start_time": "00:01:11,800",
+      "end_time": "00:01:14,000",
+      "text": "Rồi"
+    },
+    {
+      "id": 23,
+      "start": 74.0,
+      "end": 78.66,
+      "start_time": "00:01:14,000",
+      "end_time": "00:01:18,660",
+      "text": "Cái việc là đang làm một ngày là trung bình 4 đến 5 video một ngày"
+    },
+    {
+      "id": 24,
+      "start": 78.98,
+      "end": 84.18,
+      "start_time": "00:01:18,980",
+      "end_time": "00:01:24,180",
+      "text": "Xong bây giờ bảo một ngày một cái hoặc là hai ngày một cái thì bắt đầu bảo thế này kênh lên thì đéo không được."
+    },
+    {
+      "id": 25,
+      "start": 85.48,
+      "end": 87.3,
+      "start_time": "00:01:25,480",
+      "end_time": "00:01:27,300",
+      "text": "Mẹ đang bốn năm cái một ngày còn đéo lên được."
+    },
+    {
+      "id": 26,
+      "start": 87.38,
+      "end": 89.3,
+      "start_time": "00:01:27,380",
+      "end_time": "00:01:29,300",
+      "text": "Nên này thì một ngày một cái lên làm sao được."
+    },
+    {
+      "id": 27,
+      "start": 90.912,
+      "end": 95.972,
+      "start_time": "00:01:30,912",
+      "end_time": "00:01:35,972",
+      "text": "Thế rất ngại để thay đổi những cái liên quan đến chất lượng nhé, mà cứ bám theo cái số lượng suốt thôi."
+    },
+    {
+      "id": 28,
+      "start": 96.552,
+      "end": 99.392,
+      "start_time": "00:01:36,552",
+      "end_time": "00:01:39,392",
+      "text": "Ok số lượng cũng được, nhưng nó phải kèm theo chất lượng nhé."
+    },
+    {
+      "id": 29,
+      "start": 100.0,
+      "end": 103.832,
+      "start_time": "00:01:40,000",
+      "end_time": "00:01:43,832",
+      "text": "Bây giờ ông cứ farm video 2 tiếng rồi, nhưng bây giờ ông không thèm đọc."
+    },
+    {
+      "id": 30,
+      "start": 103.832,
+      "end": 112.672,
+      "start_time": "00:01:43,832",
+      "end_time": "00:01:52,672",
+      "text": "Đang quen cái kiểu làm đấy rồi, không cần phải duyệt content, vì là cái số 4 nó quá phụ thuộc, không thèm."
+    },
+    {
+      "id": 31,
+      "start": 113.552,
+      "end": 121.0,
+      "start_time": "00:01:53,552",
+      "end_time": "00:02:01,000",
+      "text": "Bây giờ bảo làm cách làm mới, mà rõ ràng nhé, biết là cách làm mới là hiệu quả nhé, biết thằng khác đã làm được rồi nhé, nhưng không làm."
+    },
+    {
+      "id": 32,
+      "start": 121.0,
+      "end": 127.812,
+      "start_time": "00:02:01,000",
+      "end_time": "00:02:07,812",
+      "text": "Vẫn đang phải tìm cách làm thế nào đấy để làm cách cũ, để lách được một tí, để quay trở lại cách cũ."
+    },
+    {
+      "id": 33,
+      "start": 127.812,
+      "end": 129.252,
+      "start_time": "00:02:07,812",
+      "end_time": "00:02:09,252",
+      "text": "Không được, không được."
+    },
+    {
+      "id": 34,
+      "start": 129.252,
+      "end": 140.872,
+      "start_time": "00:02:09,252",
+      "end_time": "00:02:20,872",
+      "text": "Vì đó, đó là những cái sai lầm mà mình thấy rằng là đa số anh em gặp phải. Anh em nào đã từng gặp phải một trong năm cái anh em giơ tay."
+    },
+    {
+      "id": 35,
+      "start": 143.252,
+      "end": 145.372,
+      "start_time": "00:02:23,252",
+      "end_time": "00:02:25,372",
+      "text": "Giơ tay rồi mà, giữ nguyên tay rồi mà."
+    },
+    {
+      "id": 36,
+      "start": 149.0,
+      "end": 157.352,
+      "start_time": "00:02:29,000",
+      "end_time": "00:02:37,352",
+      "text": "Ok, 90%. Rất đa số rồi đấy. Và bên mình cũng gặp phải tất cả những cái điều này."
+    },
+    {
+      "id": 37,
+      "start": 159.252,
+      "end": 161.752,
+      "start_time": "00:02:39,252",
+      "end_time": "00:02:41,752",
+      "text": "Xong lại còn đổ lỗi cho thị trường nữa."
+    },
+    {
+      "id": 38,
+      "start": 162.872,
+      "end": 163.752,
+      "start_time": "00:02:42,872",
+      "end_time": "00:02:43,752",
+      "text": "Thế không phải không."
+    },
+    {
+      "id": 39,
+      "start": 165.75,
+      "end": 167.31,
+      "start_time": "00:02:45,750",
+      "end_time": "00:02:47,310",
+      "text": "Nguy hiểm, quá nguy hiểm."
+    },
+    {
+      "id": 40,
+      "start": 169.49,
+      "end": 178.65,
+      "start_time": "00:02:49,490",
+      "end_time": "00:02:58,650",
+      "text": "Chúng ta sẽ thấy rằng là khi mà mình làm với những thứ cũ, nhưng mình cứ nghĩ đấy là đúng."
+    },
+    {
+      "id": 41,
+      "start": 180.71,
+      "end": 184.53,
+      "start_time": "00:03:00,710",
+      "end_time": "00:03:04,530",
+      "text": "Và thực tế thì mình bảo là ta sẽ chứng minh được cái này đấy là đúng."
+    },
+    {
+      "id": 42,
+      "start": 186.07,
+      "end": 188.43,
+      "start_time": "00:03:06,070",
+      "end_time": "00:03:08,430",
+      "text": "Ờ thì cũng chứng minh được, cũng ví dụ được mọi thứ."
+    },
+    {
+      "id": 43,
+      "start": 188.43,
+      "end": 190.51,
+      "start_time": "00:03:08,430",
+      "end_time": "00:03:10,510",
+      "text": "Nhưng mà"
+    },
+    {
+      "id": 44,
+      "start": 190.51,
+      "end": 192.71,
+      "start_time": "00:03:10,510",
+      "end_time": "00:03:12,710",
+      "text": "Mình đâu biết rằng là"
+    },
+    {
+      "id": 45,
+      "start": 192.71,
+      "end": 194.63,
+      "start_time": "00:03:12,710",
+      "end_time": "00:03:14,630",
+      "text": "Cái thứ đấy là một cái thứ sai"
+    },
+    {
+      "id": 46,
+      "start": 195.0,
+      "end": 195.87,
+      "start_time": "00:03:15,000",
+      "end_time": "00:03:15,870",
+      "text": "Mà mình cứ tưởng mình là đúng thôi"
+    },
+    {
+      "id": 47,
+      "start": 195.87,
+      "end": 200.75,
+      "start_time": "00:03:15,870",
+      "end_time": "00:03:20,750",
+      "text": "Thì khi mình lần đầu tiên biết đến cái khái niệm này"
+    },
+    {
+      "id": 48,
+      "start": 200.75,
+      "end": 202.87,
+      "start_time": "00:03:20,750",
+      "end_time": "00:03:22,870",
+      "text": "Và được gọi tên khái niệm này"
+    },
+    {
+      "id": 49,
+      "start": 202.87,
+      "end": 205.63,
+      "start_time": "00:03:22,870",
+      "end_time": "00:03:25,630",
+      "text": "Thì cách từ khoảng khóa 5"
+    },
+    {
+      "id": 50,
+      "start": 205.63,
+      "end": 208.25,
+      "start_time": "00:03:25,630",
+      "end_time": "00:03:28,250",
+      "text": "Bắt đầu biết đến"
+    },
+    {
+      "id": 51,
+      "start": 208.25,
+      "end": 209.49,
+      "start_time": "00:03:28,250",
+      "end_time": "00:03:29,490",
+      "text": "Và bắt đầu sử dụng"
+    },
+    {
+      "id": 52,
+      "start": 209.49,
+      "end": 210.73,
+      "start_time": "00:03:29,490",
+      "end_time": "00:03:30,730",
+      "text": "Và bắt đầu gọi tên lên được"
+    },
+    {
+      "id": 53,
+      "start": 210.73,
+      "end": 213.07,
+      "start_time": "00:03:30,730",
+      "end_time": "00:03:33,070",
+      "text": "Thì mọi thứ bắt đầu rõ ràng hơn rất nhiều"
+    },
+    {
+      "id": 54,
+      "start": 213.07,
+      "end": 215.53,
+      "start_time": "00:03:33,070",
+      "end_time": "00:03:35,530",
+      "text": "Vấn đề không"
+    },
+    {
+      "id": 55,
+      "start": 215.53,
+      "end": 217.35,
+      "start_time": "00:03:35,530",
+      "end_time": "00:03:37,350",
+      "text": "Là vấn đề khi không được gọi tên"
+    },
+    {
+      "id": 56,
+      "start": 217.35,
+      "end": 221.17,
+      "start_time": "00:03:37,350",
+      "end_time": "00:03:41,170",
+      "text": "Hẹn gặp lại bạn trong bài học tiếp theo."
+    }
+  ]
+}

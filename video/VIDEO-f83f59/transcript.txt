@@ -1,0 +1,382 @@
+Ok, đầu tiên là chúng ta
+sẽ đến phần mục tiêu này
+Quy trình này dùng để chuẩn hóa việc tạo email chăm sóc email và đăng ký tài khoản AdSense
+cho kênh YouTube
+thì cái cốt lõi ở đây là gì
+bọn mình sẽ tìm hiểu cái cách vận hành
+để bọn mình làm chuẩn
+chỉ đơn giản vậy thôi
+tìm cách làm chuẩn ạ
+không có cách nào khác
+Bên mình không tút, không trick, không dùng bước 2, không dùng mẹo tút trick để mình tạo hàng loạt, không có. Bên mình tạo đúng theo quy trình này, tạo rất chậm nhưng mà tỷ lệ rất cao và mình cảm thấy an toàn.
+Đấy thì mình chia sẻ với anh em, anh em thử áp dụng cho em có được không.
+Mục tiêu chính ở đây là tạo email chính chủ ổn định, hạn chế rủi ro, mất quyền truy cập email, đảm bảo email có lịch sử sử dụng tự nhiên trước khi dùng người đăng ký AdSense.
+Đăng ký Google AdSense đúng thông tin, đúng chính sách, hạn chế lỗi xét duyệt.
+Cuối cùng ở đây là gì? Là không sử dụng email cho spam, tạo tài khoản hàng loạt, khai báo sai thông tin hoặc né tránh hệ thống xác minh của Google.
+Làm đúng làm chuẩn ạ, cố gắng làm đúng chuẩn nhất có thể.
+Đầu tiên chúng ta sẽ đến phần tạo mail.
+Nguyên tắc ưu tiên, dùng SIM chính chủ.
+Chính chủ, anh em dùng ít sim thì dùng sim trả trước thì trung bình sẽ dùng được mua được ba sim
+Anh em nhiều hơn thì mua sim trả sau sim trả sau thì mua được nhiều hơn
+Doanh nghiệp thì còn mua được nhiều hơn nữa
+Thì anh em cứ liên hệ với các nhà mạng và mua ở đây thì mình gợi ý gợi ý phần sim
+Thì nên sử dụng sim trả sau của nhà mạng VinaPhone của Viettel
+Bên mình thì dùng VinaPhone
+Đấy thì mình gợi ý như vậy. Thì anh em hãy thử nghiệm. Thử nghiệm nhé. Để xem như thế nào.
+Thiết bị ổn định, ưu tiên thiết bị sạch này, chưa từng có kênh hoặc Gmail bị vô hiệu hóa. Có thể sử dụng VPS nếu quản lý ổn định và đúng mục đích. Mình chia
+sẻ VPS bởi vì bên mình dùng. Còn anh em hãy thử test các cái khác nữa. Mình không bài xích bất cứ một cái nào hết. Anh em test thấy cái nào ổn thì dùng.
+Yêu cầu về SIM thì chính chủ rồi, trả sau này. Đấy, lý do ưu tiên ở đây là gì? SIM trả sau thường có mức độ ràng buộc thông tin cao hơn. Ví
+dụ như bên mình mua một cái SIM nhé, là ký hợp đồng ít nhất 18 tháng mà anh em. Dùng ít nhất 18 tháng có được hủy SIM đâu, có được hủy.
+Thì mức độ ràng buộc nó cao như thế thì tỷ lệ cái SIM đấy bị spam bằng các nền tảng nhận OTP nó sẽ thấp hơn. Thấp hơn. Đấy thì đấy là cái tư duy cốt lõi.
+Bây giờ mình sẽ chọn những cái gì mà chi phí nó ở mức trung bình đến cao. Thì ít nhất là trung bình đến cao thì nó đỡ spam. Đỡ spam thì mình an toàn hơn.
+Lưu ý là không sử dụng các nền tảng thuê mã OTP đến lúc mà không kiểm soát được, không xử lý được.
+Bị SIM ẩn, số ẩn thì chết.
+Số ẩn là cái tình trạng mà nó yêu cầu xác minh mà nó về một cái số nào đấy mình chẳng biết số nào ấy.
+Thông thường trường hợp nó xảy ra khi nghe mà mua kênh, mua kênh hoặc mua AdSense.
+Thì họ đã dùng một cái số nào đấy để họ tạo tài khoản mà mình không biết đấy là số nào.
+Thì đến khi một vài tháng sau nó không bị ngay đâu.
+Một vài tháng sau tự nhiên nó bị báo là xác minh.
+Trong khi đó mình cũng chả biết cái số này là số nào. Đó. Đấy không phải lỗi của Google đâu. Đây là tính năng đấy. Đây là yêu
+cầu bảo mật của họ đấy. Thì đến lúc đấy là mình gặp vấn đề. Thì mình cũng theo dõi có một số anh em họ kêu là kênh đang
+làm tốt, có doanh thu tốt, lúc vào để add được bank để nhận thanh toán, tự nhiên nó bị ver. Verify á. Anh em hay gọi là ver.
+Về phần tạo tài khoản email thì thực hiện tạo tài khoản Gmail.
+Theo các bước sau, cái này mình hướng dẫn theo quy trình của máy tính nhé.
+1. Truy cập trang tạo tài khoản Google
+Chọn một tài khoản cá nhân hoặc tài khoản dùng cho công việc tùy mục đích sử dụng
+Nhập đầy đủ họ tên, ngày tháng năm sinh, giới tính, tên email và mật khẩu
+Thêm số điện thoại khôi phục bằng SIM đã chuẩn bị
+Thêm email khôi phục nếu có
+Hoàn tất xác minh theo yêu cầu của Google
+Anh em thấy chi tiết không ạ
+Những cái thao tác rất bình thường
+Thì mình khẳng định luôn kể cả mình đưa cái bản như thế này anh em về có thể đăng ký được luôn. Và đúng quy trình đảm bảo là nó không sai vào bước nào. Thì khi mà làm đội nhóm và doanh nghiệp
+thì anh em phải đảm bảo được điều đó. Thì khi mình đưa quy trình cho anh em nó mới không tam sao thất bản được. Nó phải chi tiết được ạ. Còn anh em cá nhân thì mình cứ làm đúng bước nào đó.
+Đây đến bước thứ 7 là hoàn tất, ở bước hoàn tất xác minh thì nên sử dụng điện thoại iPhone để quét QR để xác minh một số điện thoại.
+Nếu sử dụng điện thoại Android, quá trình xác minh sẽ có thể là theo thiết bị thay vì xác minh một số điện thoại.
+Thì cái phần này thì mình có test và với những cái thông tin mình tìm hiểu được thì mình thấy rằng là quét bằng iPhone nó sẽ nhảy ra cái mục là gửi tin nhắn SMS.
+Thì nó sẽ xác minh một số điện thoại. Còn xác minh mà mình quét mã bằng Android thì nó sẽ xác minh xong luôn. Nó sẽ không cần gửi tin nhắn nữa. Thế đấy là mình test như vậy. Lát nữa sẽ có video chi tiết. Anh em xem phần đó.
+Đăng nhập Gmail để kiểm tra hoạt động bình thường. Bước thứ 4 là gì ạ? Là thiết lập bảo mật sau khi tạo. Nó sẽ có từng cái bậc checklist cụ thể ở
+đây. Lát nữa sẽ có video hướng dẫn chi tiết. Các thông tin cần lưu này. Ở tài liệu gốc nó sẽ có cái link ở đây là link quy trình tạo và xác minh
+Gmail. Nó sẽ có một số quy trình nó sẽ có cái link nhỏ nhỏ nhỏ nhỏ để anh em xem. Ở cái bước đấy. Và sẽ có video tổng quan ở cuối cùng.
+Quy trình chăm sóc email trước khi đăng ký AdSense. Cái này cực kỳ quan trọng, kể cả anh em làm kênh hay là anh em đăng ký tài khoản AdSense, thì anh
+em đều phải chăm hết. Với như email để tạo tài khoản AdSense, bên mình sẽ chăm sóc ít nhất 14 ngày. Chăm sóc là gì? Là đây có các quy trình ở
+đây, đó là đảm bảo email được sử dụng tự nhiên, tuân thủ đúng luật, không spam nền tảng, tạo độ tin cậy với nền tảng trước khi đăng ký tài khoản AdSense.
+Cái hoạt động chăm sóc ở đây mình sẽ có cái checklist như thế này, anh em tham khảo và làm tương đối thôi, đừng rập khuôn y hệt, đừng rập khuôn y hệt.
+Ngày 1 đến ngày 3 là thiết lập và kiểm tra tài khoản là tạo và bảo mật đấy ạ, thì chúng ta làm những việc đơn giản thôi, đừng tương tác ngay, đừng có vào xem video YouTube nhiều
+quá nó bị spam, nó là những cái dấu hiệu rất là nhỏ, toàn bộ là hệ thống YouTube bây giờ nó sẽ vận hành với AI, đằng sau nó, nó kiểm tra được ngay ngay, nó xử lý với AI,
+Thì nó sẽ có những cái tín hiệu nhỏ nhỏ nhỏ nhỏ và nó sẽ đánh giá cái tín hiệu đó
+Một tín hiệu nhỏ thôi không sao
+Hai tín hiệu nhỏ không sao
+Tín hiệu thứ ba là gặp vấn đề
+Thì anh em cần phải lưu ý rất là lưu ý phần đó
+Mình là hơi khó tính và hơi chi tiết ở phần này
+Nên là mình cố gắng làm cho nhất có thể
+Trong quá trình mình test thì cũng may mắn là nó cũng khá ổn
+Để thấy hả ta
+Đến ngày 4 đến ngày 7 là sử dụng email cho họ
+Hoạt động là đọc và nhận tin nhắn
+Nhận email ấy ạ
+Ở đây nó dùng email để đăng ký
+Nhận bản tin từ các trang báo
+Website thì mình sẽ có
+Những cái nguồn như sau
+Kéo xuống nguồn
+Các cái trang báo chính thức như cả CNN, US News, Reuters, The Guardian, Google News, các cái trang khác.
+Như ông Daily Stoic vừa nãy, ông ấy cũng có phần nhận email hàng ngày, nó sẽ có hoạt động gửi nhận email liên tục, nó là email chốt.
+Mình tạo xây dựng độ tin cậy với cả Google.
+Ngày 8-14 thì duy trì hoạt động, tự nhiên, thỉnh thoảng vào check, thỉnh thoảng đọc email, thỉnh thoảng xem video, đừng để nó chạy 24 trên 7.
+Thì cái lợi thế của việc là, nếu anh chị em dùng VPS, cái lợi thế đó là chúng ta có thể xem video và để đấy và nó tách riêng môi trường, video nó vẫn chạy, hết video mà mình không phải sợ cái điều khác.
+Ví dụ nếu mình làm chính cá nhân nhé, thì là khi mình bật một video, mình bật một video khác thì nó bị một cái là tự nhiên lại xem hai video cùng lúc nó vô lý, đúng không ạ? Thì
+đấy là cái điểm lưu ý. Vẫn là nhấn mạnh lại, anh em làm ít kênh, 3 kênh, 5 kênh, không cần quan tâm VPS, nó không phải là thần thánh, nó không phải là thuốc tiên. Đấy, anh em hãy tham khảo.
+Những việc không được làm trong giai đoạn chăm sóc email, tuyệt đối, không dùng tool để tương tác.
+Anh em lại tư duy tối ưu hóa quy trình, vác anh con tool, cắm cái đống email vào, gửi loạn xà ngầu lên, là hỏng hết.
+Thực ra là mình cũng không cần nhiều email đâu, thật ra là không nhiều email đâu.
+Chẳng qua anh em quen là đi mua cho nó nhanh, bây giờ không được mua nữa, tự tạo thôi, an toàn hơn.
+Và luật bây giờ cũng vậy rồi, cấm mua bán thông tin.
+Thì anh em lưu ý phần đó, đội nhóm, doanh nghiệp, về sau lỡ bị dò lại là nguy hiểm đấy anh em nhé.
+Thì anh em cố gắng tự tạo đấy.
+Đấy, tuần này mình bổ sung thêm là như bên mình làm nhé.
+Thì với email làm kênh bọn mình sẽ tạo và chăm sóc ít nhất 3 tháng, 6 tháng mới làm kênh.
+Tạo email tối thiểu 14 ngày, sau đó tạo kênh và chăm sóc thêm 3-6 tháng nữa.
+Đôi khi một tuần mình mới vào VPS một lần để xem một tí thôi mà. Không có gì phức tạp đâu. Đừng phức tạp vào vấn đề. Nhanh lắm. Bản thân mình vẫn làm điều đấy luôn đấy.
+Không dùng email để đăng ký hàng loạt các tài khoản không cần thiết này. Làm việc gì thì mình đăng ký cái đó thôi.
+Không dùng SIM thuê OTP, nhận mã ở trên các web ấy. Bây giờ thì các web họ cũng sẽ ngừng dần rồi. Anh em thấy ít dần đúng không ạ? Ngày xưa có nhiều bây giờ không có nữa.
+Còn về luật về xác minh thông tin sim chính chủ cái nghị định mới ra các cái mỗi một cái SIM mình phải xác minh xác minh mình là chính chủ ấy thì bây giờ là rất là chặt rồi
+Không được email lên thiết bị lạ hoặc IP khác thì mình giữ nguyên thôi
+Giữ nguyên một, cố gắng giữ nguyên ở một thiết bị IP thôi vì trong quá trình chăm sóc rất là nhạy cảm
+Anh em cố gắng là giữ nguyên ở đó
+Không khai báo sai thông tin cá nhân hoặc thông tin thanh toán
+Đấy thì anh em lưu ý
+Bước thứ 4, trước khi chúng ta đăng ký, chúng ta phải kiểm tra những checklist này, để đảm bảo rằng tài khoản chúng ta nó được ok nhất.
+Đầu tiên là đăng ký tài khoản email này, email đặt yêu cầu khi đã tạo tối thiểu 14 ngày, tối thiểu 14 ngày nhé, em đừng có vội, em tạo cả tháng càng tốt, đừng có vội, dục tốc bất đạt.
+Mình vội ở đoạn đấy là mình lại chậm thêm 32 ngày đấy. Cố gắng, cố gắng.
+Có số điện thoại khôi phục, có email khôi phục nếu có. Email khôi phục là một cái tùy chọn này. Anh em có thể có email khôi phục hoặc không.
+Mình bảo mật đến cái kia ok rồi thì cũng tương đối rồi. Nó chỉ là một trong các phần thôi.
+Đăng nhập ổn định trên một IP, một thiết bị thôi. Không bị cảnh báo bảo mật này. Cái này rất là quan trọng này.
+Thì nó liên quan đến cái IP của cái máy anh em ấy, IP mạng của anh em ấy, hoặc là IP của VPS Proxy ấy.
+Thì mình chia sẻ một chút lý do tại sao mình không dùng Proxy nhá.
+Là vì Proxy nó không ổn định và nó rất hay bị chết.
+Thế thì mỗi một lần mà chết Proxy như thế mình lại phải đổi Proxy đúng không ạ?
+Thì cái thiết bị để vào Proxy thì nó không thay đổi đúng không? Anh em dùng các cái phần mềm ấy.
+Thì nó không thay đổi. Nhưng cái IP Proxy nó thay đổi dẫn đến là mình bị đổi IP liên tục.
+Và nó sẽ yêu cầu xác minh liên tục.
+Thì khi một cái tài khoản
+Gmail, email của anh em mà nó bị xác minh liên tục thì nó là một tín hiệu xấu dành cho hệ thống Google là nó sẽ kiểm duyệt gắt gao hơn, có thể là không duyệt anh em. Thì thôi cái gì có rủi ro thì mình đừng làm.
+Có lịch sử sử dụng tự nhiên này.
+Phần thứ 2, kiểm tra thông tin chủ thể đăng ký.
+Với đăng ký cần chuẩn bị sát là họ tên chính xác này, số điện thoại chính chủ này, quốc gia khu vực chính xác này, đảm bảo đăng ký trên 18 tuổi này, chưa từng sử dụng tài khoản này.
+Thứ 5, Quy trình đăng ký tài khoản Google AdSense dành cho YouTube này. Đây là các bước rất là chi tiết, rất là chi tiết. Thì anh em có thể nhìn
+bản này và có thể làm được luôn. Có những cái hướng dẫn, có những cái lưu ý thì anh em dành thời gian để đọc. Đọc thì nó chỉ mất khoảng 10-20
+phút của anh em thôi. Nhưng mà nó sẽ tiết kiệm cho anh em rất là nhiều lần 32 ngày. Đó. Bên mình cũng tiết kiệm vào rất là nhiều thời gian.
+Như một cái kênh đang bật kiếm tiền đúng không ạ?
+Chuẩn bị bật kiếm tiền, nối GA vào, nối GA vào tạo, tạo sai quy trình, hay là mình vội quá, tạo
+email được 5-7 ngày mình nối vào, thế là bị từ chối trong khi đó thông tin sạch đúng không ạ?
+Thế là mình có thể mất 32 ngày mất bao nhiêu tiền đó rất là phí
+Thế thì mình cố gắng cố gắng ở follow sát
+Phần thứ hai là chuẩn bị thông tin đăng ký AdSense này chúng ta sẽ chuẩn bị các thông tin để đăng ký tài khoản
+Cái bước này thì mình cần phải đảm bảo rằng là thông tin mình đúng với trên giấy tờ tùy thân nhé
+Hợp lệ
+Một thông tin
+Một người thì đừng có sử dụng thông tin
+Người đó là căn cước công dân tạo một con
+Rồi là giấy phép lái xe tạo một con
+Rồi là hộ chiếu tạo một con
+Đôi khi vẫn tạo được nhé
+Xác minh được luôn
+Nhưng về sau nó quét lại
+Xét lại là khai báo không trung thực, mấy cả sở hữu nhiều tài khoản ấy. Nguyên tắc, luật của AdSense là một người chỉ được sở hữu một tài khoản Google AdSense thôi. Chính chủ tên người đó.
+Chỉ được sở hữu một tài khoản thôi.
+Bước thứ 3 là tạo tài khoản Google AdSense. Đây thì mình sẽ chia ra 2 trường hợp, tí video cũng sẽ có nói rõ. Trường hợp 1 là email sở hữu kênh và email tạo tài khoản AdSense là 2 email riêng biệt.
+Trường hợp này áp dụng khi email đang sở hữu kênh YouTube đó không phải là email sẽ sử dụng tài khoản để tạo tài khoản AdSense.
+Khi sử dụng 2 email riêng biệt, người phụ trách cần cấp quyền sở hữu kênh cho email dự định dùng để tạo tài khoản Google AdSense trước khi tiến hành đăng ký.
+Việc này giúp email tạo AdSense có đủ quyền cần thiết để liên kết tài khoản AdSense với kênh YouTube.
+Ở đây cũng sẽ có cái video hướng dẫn để là chuyển kênh qua cái tài khoản thương hiệu và cấp quyền sở hữu cho email khác.
+Mình em có thể xem.
+Còn trường hợp thứ 2 đó là email sở hữu kênh cũng là email mình đăng ký tài khoản Google AdSense.
+Thì có thể bỏ qua cái bước là cấp quyền sở hữu.
+Cái phần này thì mình hướng dẫn chi tiết dành cho những anh em mới thao tác theo từng bước đỡ bị sai đỡ bị nhầm.
+Chí tiết các bước tạo tài khoản AdSense này chúng ta xem video nhé.
+Đến phần thứ 6, chăm sóc tài khoản sau khi gửi đơn này thì cần lưu ý như sau.
+Theo dõi trạng thái duyệt này, kiểm tra thông báo từ Google trong YouTube Studio, AdSense và email đăng ký, không thay đổi thông tin trong quá trình xét duyệt nhé.
+Có một số anh em hỏi rằng là duyệt bị xịt thì thay đổi thông tin có được không? Không được.
+Thay đổi thông tin người khác vào vẫn xịt.
+Thì chúng ta cần phải lưu ý điều đó.
+Đảm bảo ổn định đến thiết bị IP này.
+Cố gắng đảm bảo thiết bị IP.
+Lưu ý thời gian xét duyệt tài khoản cho AdSense cho YouTube thường mất từ 1 đến 7 ngày.
+Có những trường hợp nhanh của mình chỉ vài tiếng.
+Đấy thì nó cũng không phải là giỏi gì cả.
+Chỉ là may thì cái tài khoản nó nhanh thôi.
+Không giỏi giang gì đâu.
+Còn lâu hơn thì một số trường hợp là 2 đến 4 tuần.
+4 tuần thì bên mình làm đúng theo
+Quy trình như thế này
+Chưa có AdSense nào
+Bên mình tạo quá 3 ngày
+Chẳng có 5 ngày
+Hình như có cái là 3 ngày rồi
+Chưa có cái nào 5 ngày
+Là đã được duyệt rồi
+Trong thời gian
+Trong thời gian chờ xét duyệt không nên chỉnh sửa khai được thông tin để đăng ký. Tránh phát sinh lỗi làm kéo dài quá trình xét duyệt.
+Thì anh em, đòi về lưu ý phần này nè, ngày xưa anh em là hay có cái cách là lấy cái link của bước 2 kênh YouTube đúng không ạ? Để tạo AdSense. Bây giờ
+Google người ta đã fix cái đấy rồi. Anh em mà lấy bước 2 mà tạo tài khoản Google AdSense là nó treo vĩnh viễn luôn. Anh em phải nối kênh vào tài khoản AdSense thì bắt
+đầu mới xét duyệt. Còn bây giờ là bị treo. Thì em lưu ý phần đó. Ngày xưa là có thể lấy một link tạo được rất nhiều GA đúng không ạ? Bây giờ fix rồi.
+7. Quy trình xác minh tài khoản Google AdSense.
+Thì anh em sẽ ưu tiên sử dụng phương án là xác minh online nhé.
+Xác minh online, ưu tiên xác minh online.
+Nếu như trong trường hợp xác minh một lần bị xịt, thì hãy liên hệ với bộ phận hỗ trợ của Huân Academy để có hình thức hỗ trợ được tốt nhất.
+Để tìm ra nguyên nhân nó ở đâu.
+Vì nếu anh em mà bị xịt ngay lần đầu tiên mà bị sai mà không được ấy, mà cố thêm phát nữa ấy,
+Là nó sẽ báo xịt luôn mà sẽ phải có cách khác để xử lý. Tất nhiên có cách nhưng cách đó thì thật ra là bản chất
+là mình hiểu rằng có cái rủi ro nào đấy về dài hạn. Thì anh em cố gắng làm đúng theo hướng dẫn, làm đúng theo quy trình.
+Bước thứ 8 đó là thêm thông tin thuế Hoa Kỳ và phương thức thanh toán thì chúng ta sẽ xem trong video hướng dẫn nhé.
+Chúng ta đến với phần thứ 9.
+Xử lý các lỗi thực gặp ở đây nè.
+Chúng ta sẽ có một vài cái lỗi nè.
+Email nó cần xác minh, yêu cầu xác minh ấy.
+Thì mình có số điện thoại rồi thì em không cần phải lo lắng.
+Lắp SIM vào yêu cầu xác minh thì mình gửi mã về thôi là xong.
+Lưu ý cái phần là không nhận được mã SMS này có thể là do sóng, do điện thoại nào đó.
+Thì mình tách nốt hết ra để dành cho anh em mới.
+Anh em check kỹ.
+Với trường hợp AdSense mà từ chối nhiều anh em bị cái này đúng không ạ?
+AdSense này từ chối là khi tài khoản AdSense mà bị từ chối ấy.
+Kéo lên cho anh em xem nó là thấp quá.
+Thì người phụ trách cần xử lý theo đúng.
+Nguyên nhân là Google đưa ra.
+Thực tế trong quá trình bên mình làm ấy.
+Thì các cái phát từ chối là bỏ luôn.
+Có sửa cái gì xong gửi lại không được.
+Mình không biết vì sao rồi. Và Google cũng không giải thích. Có những cái tài khoản mình bị từ chối theo kiểu là không đưa nguyên nhân luôn. Chỉ ghi từ chối vì vi phạm chính sách thôi. Thì bên mình không làm nào được.
+Thì mình chia sẻ
+Hai cái cách mà bên mình áp dụng được
+Thì bên mình tìm được ra nguyên nhân
+Nó là nó chỉ có hai cái rồi
+Nguyên nhân chính của anh em bằng dính
+Đó là bị từ chối do bạn đã có một tài khoản AdSense
+Cái trường hợp này đôi khi là
+Anh em mà chưa sử dụng tài khoản AdSense đâu
+Nhưng nó vẫn bị dính
+Bởi vì nó dính IP của số điện thoại đấy
+Kể cả anh em dùng VPS hay proxy nhá
+Thì nó vẫn có tỷ lệ là cái IP đó
+đã từng có người tạo
+Tuy nhiên về phần VPS thì mình thấy có một cái điểm này nó nổi trội hơn một chút.
+Đó là mỗi một khi mà VPS được cung cấp đến mình thì thông thường là cái Windows ở trên máy đấy đã được cài đặt lại rồi.
+Thông thường là mình thấy như vậy, thì nó sẽ bớt một yếu tố là thiết bị đi. Nó bớt một yếu tố là thiết bị đi, còn yếu tố IP thì nó không quá nặng. Có nghĩa là
+mình có IP và thiết bị đúng không ạ? Thì mình giảm được một cái thì nó đỡ hơn. Đó. Đấy. Thông báo thì nó sẽ có cái thông báo tiếng Việt và tiếng Anh là bạn đã có
+một tài khoản rồi. Đấy. Thông thường là anh em dính cái lỗi này thì chưa chắc anh em đã có tài khoản nào đâu. Vẫn dính. Đúng không ạ? Tạo bằng SIM chính chủ vẫn dính. Đấy. Thì.
+Cách xử lý là gì? Kiểm tra và đóng tài khoản AdSense đã có, nếu có, còn thông thường thì anh em đã có tài khoản AdSense rồi thì chẳng ai dại gì đăng ký tài khoản mới làm gì cả.
+Thì nó bị lỗi thôi, lỗi thì cách khắc phục do số điện thoại đã từng được đăng ký tài khoản AdSense bởi người sử dụng trước đó.
+Anh em mua SIM mới vẫn có tỷ lệ dính SIM người ta đã dùng nhá.
+Và lỡ người ta đăng ký tài khoản AdSense thì vẫn có tỷ lệ, thế nên là mình đề xuất anh em thử dùng SIM VinaPhone trả sau.
+Vì mỗi một thuê bao ít nhất phải dùng 18 tháng.
+Là 1 năm rưỡi đấy ạ. 1 năm rưỡi là dài nhá. Mình dùng 1 tỷ số. Thế thì cái tỷ lệ rủi ro bị trùng sẽ thấp hơn rất là nhiều. Do IP đã từng
+sử dụng để đăng ký tài khoản AdSense, cái này thì mình thấy là nó sẽ ít hơn 1 chút, ít hơn 1 chút nhưng vẫn có tỷ lệ. Và Google sẽ không bao giờ chia sẻ
+cho anh em lý do chính xác là gì. Mình chỉ có thể đoán thôi. Thế thì mình đoán là có 2 cái đó thôi. Thì mình loại trừ cả 2. Thì cái cách khắc phục.
+Với cả
+Ôi ok
+Xuống trường hợp tiếp theo luôn đi
+Xem cách khắc phục tổng
+Đơn giản lắm
+Nó chỉ có như thế thôi
+Trường hợp thứ 2 là tài khoản không được phê duyệt
+Không được duyệt do vi phạm chính sách
+Tương tự như cái bên trên
+Không biết vi phạm chính sách gì
+Thì nó chỉ có IP với số điện thoại hết
+Chẳng có cách nào khác
+Hỏi cách nào fix không
+Bên mình chưa tìm ra
+Nếu như anh em có cách fix thì
+Mong rằng anh em rộng lượng chia sẻ
+Để mình có thể có cơ hội chia sẻ với anh em ở đây
+nó đỡ tốn thời gian hơn. Thật sự đấy, anh em mình làm kênh đã vất rồi. Làm GA còn mung lung không biết như nào nữa thì nó vất quá.
+Cố gắng chia sẻ cho nhau vì nó không mất gì cả. Mình chia sẻ là anh em còn được mà, không mất gì cả.
+Đấy thì cái cách khắc phục tổng của 2 trường hợp
+Để bên mình đúc kết lại thì chỉ có 1 quy trình khắc phục thôi
+Đầu tiên là chuẩn bị 1 số điện thoại mới
+Yêu tiên xin trả sau nhà mạng VinaPhone
+Viettel cũng được
+Chính chủ chưa từng sử dụng và đăng ký
+Bất kỳ tài khoản
+Gmail hoặc AdSense nào
+Trong tầm hiểu biết và kiểm soát của mình
+Chứ còn ngoài ra là mình không kiểm soát được.
+Sử dụng thiết bị mới, ưu tiên thiết bị sạch này, chưa từng đăng nhập hoặc tạo các tài khoản email, YouTube, Google AdSense có vấn đề trước đó.
+Mình kiểm soát phần của mình thôi. Còn phần không kiểm soát được thì phải chấp nhận ạ. Phải chấp nhận. Phải sao ạ? Phải chịu.
+Sử dụng IP hoặc môi trường mạng ổn định nè. Không sử dụng IP đã từng dùng để đăng ký tài khoản của AdSense xem về lỗi hoặc từ chối này. Đặc biệt không? Phải tránh nha. Đừng có cố đấm ăn xôi. Nó là lỗi rồi. Còn cố fix. Fix làm sao được? Chẳng fix được.
+Nếu mà anh em mà fix được cái đấy là
+Mà ra là cái tool mà
+Cái tút ấy
+Mà fix được mấy AdSense đấy nha là giàu chắc luôn
+Vì mình chưa thấy ai fix được
+Anh em chỉ có chỉ là đăng ký lại thôi
+Chứ còn chưa fix được
+Nếu mà kháng được GA nữa thì giàu lắm
+Đùa là đâu
+Bởi vì nhá
+Không phải ai người ta cũng mua tài khoản của AdSense đâu
+Rất nhiều anh em ở đây mình biết
+Trong cộng đồng mình cũng biết
+Em đăng ký chính chủ.
+Vẫn đứt hoài luôn, bây giờ.
+Không nói hay đâu.
+Bên mình cũng vậy, không dám nói hay, VPS là vô địch được. Mình chỉ biết là mình loại trừ các phương án nguy hiểm ra, mình thấy VPS nó ổn nhất với cái cách quản trị bên mình, và mình chia
+sẻ lại với anh em. Đó, thì anh em thử nghiệm. Thế còn chính chủ vẫn dính. Phải làm nào được, chả làm nào được. Thôi thì tìm hướng làm lại thôi. Cố gắng tìm hướng làm lại. Thì bàn làm
+chứ đừng bàn lui. Thế là mình phải tìm ông nào cũng làm được, đúng không ạ? Thì chúng ta cùng chia sẻ với nhau xong rồi thử nghiệm. Chứ chúng ta đã mất thời gian đến đây rồi đúng không ạ?
+Thì chúng ta phải bàn làm chứ. Thì đây là cái cách mà bên mình làm thì anh em thử xem có được không? Thử, thử xem đã.
+Chăm sóc email thực đúng quy trình tối thiểu là 14 ngày. Sau đó thì tuân thủ ổn định thiết bị này. Cuối cùng là gì?
+Chăm sóc đủ rồi thì đăng ký lại tài khoản. Rồi, cái đầu mà xịt thì đăng ký lại cái thứ 2. Chấp nhận thôi, dành thời gian với nó thôi.
+Lưu ý là không nên đăng ký lại ngay sau khi tạo email mới. Email cần là chăm sóc tối thiểu 14 ngày để đảm bảo tài khoản hoạt động ổn định này.
+Cái lý do nhé, lý do tại sao phải làm điều này? Thì đây là cái kéo lên cho anh em xem bên dưới cái lý do tại sao bên mình lại chia sẻ với phần này.
+Bởi vì mình test nhiều mà chẳng có cách nào khác cả.
+Đây là cách khắc phục lỗi hiệu quả nhất ở thời điểm hiện tại mà GODA đã test ra.
+Không có cách khác
+Bên mình không biết cách khác
+Nếu anh em biết
+Thì mong anh em rộng lượng chia sẻ
+Thông thường khi tài khoản AdSense bị từ chối
+Dù người đăng ký đã điền đúng thông tin
+Và không cố tình vi phạm chính sách
+Chúng ta không cố tình vi phạm chính sách để làm gì cả
+Vì chúng ta không muốn bán GA
+Chúng ta chỉ có mong muốn là tạo một tài khoản
+Để kết nối với kênh để bật kiếm tiền kênh thôi
+Nhưng mà vẫn bị
+Thì không làm cách nào khác được ạ
+Đấy thì nó có 2 cái yếu tố là số điện thoại đăng ký xác minh này, thiết bị IP môi trường này. Đó thì chúng ta cần phải xử lý. Cái gốc rễ
+của cách làm này là không phải là né chính sách của Google mà để đảm bảo rằng quá trình đăng ký được thực hiện trong một môi trường sạch. Thông tin chính chủ
+và hạn chế tối đa các yếu tố lịch sử có thể khiến tài khoản bị gắn rủi ro. Chúng ta kiểm soát những phần chúng ta có thể kiểm soát được là được.
+Cần hiểu rõ bối cảnh thực tế ở Việt Nam như sao? Anh em cần hiểu rõ bối cảnh này. Trước đây có một số đơn vị kinh doanh dịch vụ Proxy.
+VPS hoặc các dịch vụ mạng dùng chung. Trong quá trình sử dụng, nhiều IP có thể đã từng bị người khác lạm dụng để spam, tạo rất nhiều tài khoản hàng loạt hoặc thực hiện các hành vi vi phạm chính sách nền tảng.
+Vì vậy, rồi hiện tại người dùng sử dụng IP đó có mục đích cá nhân và hợp lệ, không cố tình vi phạm chính sách.
+Nhưng nếu IP nằm trong giải đã từng bị lạm dụng, hệ thống Google vẫn có thể đánh giá đây là môi trường
+có rủi ro cao vào việc dẫn đến tài khoản bị từ chối, tự động, hoặc là chặn luôn cả dải IP đó.
+Tương tự với số điện thoại. Trước đây việc quản lý SIM chính chủ chưa chặt chẽ, ngày xưa anh em mua không phải quan tâm đúng không ạ? Mua SIM rác được.
+Thì những cái số đi đâu? Nó lại một vòng lặp thôi mà. Nhà mạng người ta lại thu hồi số thôi. Chứ làm gì có mất đi đâu. Ngày xưa có
+cái đợt là SIM 11 số chuyển thành 10 số thôi. Vậy sao họ thống nhất lại là chỉ có 10 số thôi mà? Đó. Thì mình phải hiểu rõ cái nguồn gốc.
+Do đó những số điện thoại hiện tại người dùng đang sử dụng hợp pháp nhưng trong lịch sử trước đó có thể đã từng bị người khác sử dụng rồi.
+Và spam rồi. Hay những web OTP ấy, anh em nghĩ lấy ở đâu SIM này. Tại sao lại có SIM số mình thuê có mấy nghìn một lượt?
+Không phải tự nhiên, mình hãy suy nghĩ sâu hơn về gốc gác. Lý do? Bây giờ thì nhà nước mình quản lý rất chặt về phần này rồi.
+Sở hữu SIM phải chính chủ, phải xác minh thì mới dùng được, còn không nó không có sóng, nó bị tắt 1 chiều, 2 chiều.
+Chúng ta chỉ có cách thôi
+Sử dụng số điện thoại mới
+Chính chủ ưu tiên có độ tin cậy cao là quản lý lâu dài
+Sử dụng thiết bị sạch
+Không môi trường ổn định
+Không có lịch sử đăng nhập các tài khoản
+Từng bị lỗi bị khóa mà bị từ chối
+Sử dụng IP mạng ổn định
+Hạn chế các IP công cộng
+IP dùng chung
+Proxy VPN hoặc VPS không rõ lịch sử
+Tạo tài khoản email mới bằng thông tin thật chính chủ
+Chăm sóc email theo đúng quy trình tối thiểu 14 ngày trước khi đăng ký lại AdSense
+Đăng ký lại tài khoản và xác minh thông tin chính xác nhất quán và có khả năng xác minh
+Điều quan trọng ở đây chúng ta cần hiểu là chúng ta phải làm đúng luật nền tảng
+sử dụng thông tin thật
+và không tạo hành vi spam
+cuối cùng vẫn quay trở lại
+làm đúng làm chuẩn đúng không ạ
+không có cách nào khác không lách được
+Kéo xuống, nguyên tắc bắt buộc và tuân thủ.
+Đầu tiên chúng ta sẽ có là sử dụng thông tin thật chính chủ của chính chúng ta, của người thân, bạn bè, của anh em trong đội ngũ, trao đổi với họ để mượn thông tin.
+Đó, cần thiết thì có văn bản để ràng buộc.
+Không dùng thông tin giả, giấy tờ giả hoặc địa chỉ không có thật.
+Không dùng SIM thuê OTP trên các website hoặc nguồn không xác định.
+Không tạo tài khoản hàng loạt này, không spam email.
+spam đăng ký hoặc tạo thành vi bất thường, không tìm cách né tránh hệ thống xác minh của Google, không tự động hóa hành vi tương tác nhằm tạo độ tin cậy giả, không vi phạm chính sách AdSense, YouTube và chính sách của Google.
+Cuối cùng vẫn là tuân thủ đây anh em ạ, tuân thủ, tuân thủ và tuân thủ.
+Không mua bán, cho thuê hoặc chuyển nhượng tài khoản trái quy định.
+Mua bán, tài khoản AdSense là quy vào tội mua bán thông tin cá nhân, tuyệt đối không.
+Không đăng nhập tài khoản trên nhiều thiết bị, nhiều IP bất thường nếu không cần thiết. Cố gắng, một IP, một thiết bị
+cho nó an toàn. Cái đấy nó là cái chỗ để mình nhận tiền đấy. Anh em cố gắng để cho nó an toàn.
+Rồi ok cuối cùng là phần kết luận
+Quy trình tạo email, chăm sóc email và đăng ký AdSense cần được thực hiện cẩn thận và chính xác
+Nhằm đảm bảo tuân thủ chính sách của Google
+Mục tiêu quy trình không phải là tạo hành vi giả hoặc né tránh hệ thống xét duyệt
+Mà đảm bảo email và tài khoản AdSense được xây dựng chính chủ ổn định
+Và có khả năng quản lý lâu dài
+Hạn chế rủi ro
+Mất quyền truy cập
+Hoặc bị đóng tài khoản.
+Mọi thông tin sử dụng đăng ký tài khoản AdSense phải là thông tin thật, có khả năng xác minh và thuộc quyền kiểm soát hợp pháp của người đăng ký hoặc tổ chức đăng ký.
+Đưa ý nhé, người hoặc tổ chức.
+Người phụ trách thì cần thường xuyên cập nhật chính sách mới Google của YouTube AdSense để điều chỉnh quy trình cho phù hợp đến từng thời điểm.
+Ở đây có một yếu tố như thế này liên quan đến tài khoản ngân hàng nhận tiền dành cho các đội nhóm và doanh nghiệp.
+Theo như mình tìm hiểu trên chính sách của YouTube, Google AdSense, thì họ cho phép mượn số tài khoản của người khác để nhận tiền.
+Em hiểu ý mượn ở đây nghĩa là gì đúng không ạ?
+có thể sử dụng số tài khoản người khác để nhận tiền
+Tuy nhiên, mình thấy rằng về dài hạn vẫn có một cái rủi ro nhất định.
+Thì nếu nên được, thì đầu tiên anh em làm một cái phương án đó là
+vẫn pháp nhân đó nhưng tạo nhiều tài khoản ở nhiều ngân hàng khác nhau
+để cho nó khác số tài khoản đi ạ.
+Thì mình thấy nó cũng đỡ rủi ro hơn.
+Tiếp theo, thì tốt nhất được thì tên chủ sở hữu tài khoản là ai?
+Thì tên nhận tiền ở ngân hàng là người đó.
+Tuy nhiên với đội nhóm doanh nghiệp thì nó hơi khó khăn vì quá trình làm việc với anh em rất là khó và còn bảo mật thông tin nữa rất là khó.
+Áp dụng với đội lead thì ok, được. Còn đội bên dưới thì hơi khó. Bởi vì đội lead thì họ vào kênh rồi mà.
+Ok, thì đây là toàn bộ quy trình về AdSense.
+Hẹn gặp lại bạn trong bài học tiếp theo.

@@ -1,0 +1,105 @@
+Ok, chào các em yêu của thầy. Hôm nay bố mày sẽ dạy chúng mày code tool phát trực tiếp. Phát trực tiếp gì ạ? Phát trực tiếp đa luồng.
+Nghĩa là chúng mày hãy nhìn trên màn hình này. Đấy, một kênh YouTube này đang phát trực tiếp 2, 4, 6, 8, 10, 12, 14, 15, 16, 17, 18,
+19, 20 luồng phát trực tiếp. Và chúng mày biết là nếu không phát được trực tiếp, người ta không rảnh nợ để người ta đi phát trực tiếp đâu.
+Các em chưa có doanh thu thì các em chưa biết được doanh thu từ phát trực tiếp nó khủng như thế nào. Và hôm nay thầy giáo sẽ
+dạy cho các em code một con tool. Có thể chúng mày phát trực tiếp 10 nguồn, 20 nguồn cũng được. Tùy vào chúng mày có thích hay không.
+Ở đây, thầy đã chuẩn bị cho các em một câu prompt. Câu prompt để yêu cầu ChatGPT đặt ra một master prompt là yêu cầu trả ngược lại nó để nó code
+tool cho mình. Tư duy, tư duy. Hãy đóng vai thành một chuyên gia code tool. Hiểu không? Mình phải ra lệnh cho nó. Mày hãy trở thành chuyên gia cho tao. Bạn hãy
+tạo cho tôi một master prompt thì ạ. Yêu cầu để gửi trực tiếp cho ChatGPT. Code cho tôi một con tool có chức năng như sau. Đọc kỹ cái đoạn này nha.
+Tool này có tên là phát trực tiếp đa luồng, nghĩa là tí ta code ra thì tool này nó sẽ là gì ạ?
+Tool phát trực tiếp đa luồng. Chức năng của tool là phát trực tiếp trên YouTube, nghĩa là chúng mày có thể phát trên Facebook thì chúng mày có thể tạo ra tool như thế.
+Bao gồm 2 kích thước có thể lựa chọn trong tool. Kích thước 1 là 9.16 và
+16.9
+Ghi nhớ URL của sự kiện phát trực tiếp này là luồng cố định cho các luồng. Nghĩa là sao? Nghĩa là trong sự mã sự kiện phát trực tiếp đây à?
+Cái kênh YouTube của chúng mày đúng không? Nó sẽ có một cái URL của sự kiện phát trực tiếp. Đấy, nó sẽ lưu lại cho tất cả các luồng về sau.
+Tiếp theo, có nút thêm luồng nếu muốn. Nghĩa là trong con tool này của chúng mày có thể thêm 2 luồng, 3 luồng,
+4 luồng, 5 luồng, 10 luồng kệ mẹ chúng mày. Và dòng sự kiện. Và có dòng mã sự kiện phát trực tiếp.
+Chỉ cần dán mã sự kiện phát trực tiếp này có thể nhấn nút bắt đầu phát. Nghĩa là đây là cái mã sự kiện này chúng mày chỉ cần
+sao chép, chúng mày dán vào là chúng mày nhấn bắt đầu phát là được. Có nút bắt đầu phát, có nút dừng phát và trong các luồng có
+thêm video thư mục và trong các luồng có thêm video và từ thư mục. Nghĩa là chúng mày chọn video nào từ thư mục chúng mày phát đúng không?
+Mỗi luồng có thể chọn 1 video tùy thích, trong tool có chức năng lặp đi lặp lại. Câu này nhé.
+Để chúng mày phát những cái nguồn relax, nhạc relax hay audio, chúng mày phát lặp đi lặp lại cho tao. Video của tôi có thể lặp đi lặp lại mà không
+tắt. Thiết kế một giao diện công nghệ bắt mắt, sáng tạo một master prompt để gửi trực tiếp cho ChatGPT. Yêu cầu đóng gói và code tool phát trực tiếp hoàn chỉnh.
+Đấy, chúng mày copy toàn bộ cái này cho tao. Cái này thì tao để ở trong cái phần mô tả video chúng mày đang xem đúng không? Thì chúng
+mày hãy nhìn cho tao góc 4 giờ nó có phần mô tả. Đấy, copy này. Và chúng mày dán vào ChatGPT cho tao. Dán cái này vào. Thì bây
+giờ nó là gì ạ? Nhiệm vụ của nó sẽ trả lại, trả lại gì ạ? Cho mình 1 Master Prompt để yêu cầu lại ChatGPT code tool cho mình.
+Chúng mày có thể code bằng Claude, nhưng mà không cần. Code bằng ChatGPT luôn. Hiểu chưa? Bây
+giờ là gì ạ? Người mù cũng có thể giỏi công nghệ. Tại sao tao lại nói như thế?
+Chúng mày hãy làm theo. Đấy. Bây giờ là chúng mày sẽ có một master prompt như này.
+bắt buộc ghi nhớ và sáng tạo đầu của chúng mày nhảy số như thế nào hiểu chưa
+cái tool này thì chúng mày có thể bán 200 300.000 mẹ bố mày bán rất là nhiều
+nhưng mà bây giờ bố sẽ dạy nhưng mà bây giờ thầy sẽ dạy cho các em là gì
+em code để cho em sử dụng hoặc em bán cũng được thầy là mày thầy chán tool nó ngừng thì không muốn
+tui nữa rồi đấy nhớ ra chúng mày phải là thực tế vào sản xuất bằng tay khi sản xuất bằng tay chúng
+mày sẽ tự động biết code tool để
+để sản xuất video đấy hay nó phải đẳng cấp như thế nhé nhé nhé tư duy đây chúng mày theo một dòng lệnh tạo ra
+một master prompt dài như thế này hiểu ra nó phải gọi là tư duy đặt ra cái vấn đề nhưng mà chúng mày dùng AI mà
+chúng mày làm những cái vớ vẩn là chết à sau đó chúng mày copy toàn bộ nha chúng mày lại dán ngược lại cho tao
+Trả ngược lại cho gì ạ? Cho ChatGPT. Nghĩa là tao bắt mày làm việc cho tao.
+Code tool cho tao. Hiểu chưa? Cái đoạn này nhìn nha. Bắt đầu bắt đầu code
+tool cho tôi. Hiểu chưa? Các em hình dung cách của thầy. Mẹ em hướng dẫn nhé.
+Tôi sẽ dựng một dự án Windows hoàn chỉnh theo đặc tả đã gửi giao diện.
+Quá đẹp nha, quản lý nhiều tiến trình FFmpeg, đóng gói chạy bằng mã nguồn.
+Đồng hơi để sẵn chấp đậm. Ok, cái gì ạ? Sương rồng đơm lá đơm hoa, nước cao nguyên đông đầy sỏi đá là ngày đại gia mang dép
+trở về nhà. Cứ từ từ đoạn này thầy sẽ tua nha, để nó chạy cái dự án này, không nó hơi bị lâu một tí thôi. Nó
+chỉ cần mất mấy phút rồi các em ạ. Đấy, chúng mày thấy không? Bây giờ nó gì ạ? Nó đã đóng gói toàn bộ một cái tool nha.
+Để chúng mày download cho tao cái này. Sau khi chúng mày tải xuống như thế này nhé, thì chúng mày sẽ bật lên cho tao. Đúng cái
+file nhé, giải nén nó ra. Đấy, chúng mày nhấn vào Extract Here này. Xoài ôi, đẹp luôn. Chúng mày nhớ cho tao nhé. Nhấn vào run
+này. Xoài ôi, mở lên. Chúng mày đã có một con tool phát trực tiếp. Nhưng, gì ạ? Nhưng cái này chưa chạy được nha các em nhé.
+Các em còn thiếu gì ạ? Trong tool đã nói, chúng mày phải tìm đúng cái file này, FFmpeg, chúng mày x cái này ra. Bây giờ
+là chúng mày sẽ phải tìm file này để tải về nha, để cho vào tool nó mới chạy được. Đấy, chúng mày nhấn vào đây. Sau
+khi nhấn vào như thế này rồi, đúng không? Thì chúng mày nhấn vào như thế nào? Nhấn theo từng bước nha, thầy nhấn rất là chậm.
+chậm
+nhấn vào download này
+sau khi nhấn vào phần download xong
+thì chúng mình nhấn vào Windows
+thì sau khi nhấn vào Windows
+chúng mình nhấn cho ta Windows builds này
+nó sẽ ra cái giao diện như thế này
+đúng không
+việc của chúng mày bây giờ là gì ạ chúng mày sẽ nhấn vào cho tao là cái release builds này đấy sau đó chúng mày tải cho tao cái file thứ hai nhé
+Trong phần này, chúng ta nhấn vào nó sẽ ra, chúng ta tải cho ta file thứ 2. Tải đúng
+cho ta file thứ 2. Bây giờ là gì? Chờ nó tải xuống xong, chúng ta sẽ giải nén
+nó ra. Ok, sau khi đã tải xong, chúng ta vào thư mục. Chúng ta giải nén như thế này.
+Các bạn nhấn vào file này, chúng mày nhấn vào phần bin cho tao nhé, bin thì chúng mày copy
+cho tao 2 cái file này, file này với file ở trên nhé, chúng mày nhấn Ctrl C này,
+Ctrl C, sau đó gì ạ, ở trong cái tool phát trực tiếp là, chúng mày nhớ cho tao nhé,
+phần bin nhé anh em dán vào Ctrl V là chúng mày đã dán vào như thế này đúng không bây giờ là gì ạ Bây giờ chúng anh
+nhấn vào build thứ hai cho tao nhé, chúng mày nhấn vào cái build_onefile này nhé, nhấn vào cái build_onefile này theo như cái hướng dẫn của ChatGPT nhé
+Đấy, chúng mình nhấn vào, nó sẽ chạy ra như thế này cho mày. Đợi một tí nhé, để cửa sổ CMD nó sẽ chạy. Cái này các em đéo cần làm gì các em cũng biết code tool
+mà. Thầy đã nói các em rồi mẹ mày. Đẳng cấp như nào? Đẳng cấp như thầy. Thầy giáo Đại Gia Mang Dép. Làm sao? Đẹp dai nhất hành tinh. Đấy, để nó chạy hết cho chúng mày nè.
+Sau khi nó build, chúng mình nhấn vào build 1 file vừa rồi xong rồi nhé. Thì chúng mày nhấn cho tao phần dist này. Chúng mày nhớ cho tao là đâu xem. Cái này thì chưa có nhé.
+đây nè, trong bin này chưa có file FFmpeg thì chúng mày này dán vào đây ra, trường hợp không may là lỗi nhé, copy này nè, sang lại phần dist này, dán vào đây,
+để cho nó chạy ổn định, đấy, chúng mày nhấn vào phát trực tiếp đa luồng trong phần dist nhé, thì chúng mày sẽ có file như này, chúng mày đóng gói mới gửi cho ai
+cũng được, đấy, sau đó là gì ạ, chúng mày nhớ cho tao nè, chúng mày có thể thêm luồng nhé, tất cả các chức năng thì nó sẽ có cái độ giống nhau nhé,
+Cái này mỗi thằng code nó sẽ khác nhau nhé
+Các em thêm cho thầy này
+Ví dụ trong cái Luồng 01 này nhé
+Chúng mày dán mã sự kiện phát trực tiếp vào này
+Đây nhé
+Đây là cái mã sự kiện phát trực tiếp này
+Nhấn sao chép này
+Bật tool lên này
+Chúng mày dán vào đây
+Chúng mày có thể nhấn ghi nhớ mã nhé
+hoặc không ghi nhớ cũng được
+thì bây giờ là gì ạ
+chúng mày nhớ cho tao là tỷ lệ này
+Thầy sẽ để là 16.9 nhé
+nó sẽ có chức năng như nhau
+tại vì mỗi tool nó sẽ có một cái khác
+đây là chọn video này
+đây là phần video thầy có một cái video sẵn
+đấy
+thì bây giờ là gì ạ
+thầy sẽ lựa chọn căn khung
+cũng cắt đầy đủ là thêm viền đen cũng được này nó có sẽ có nhiều cái cho chúng mày ở trong cái
+tất cả những cái audio các thông số như thế này nhé mà nhớ tao nhé mày bắt đầu nhấn phát
+bây giờ là gì ạ nó sẽ phát trực tiếp như thế này cho chúng mày nhìn chung chưa nghĩa là cái video của chúng mày
+đang được phát trực tiếp ở trên cái YouTube này luôn đấy đây là một cái quy trình tool nhé chú mây nhấn thêm luồng được nhé
+thêm luồng thì chúng mày có thể là thêm luồng 02 03 chúng mày nhìn thấy đây là video có tầm chưa đến một phút này
+video chưa đến 1 phút mà nó có thể lặp đi lặp lại nhé. Đó, chúng mày nhìn nhé. Video này của thầy là chưa đến 1 phút. Đó, 53 giây thì nó có thể phát lặp
+đi lặp lại cho chúng mày liên tục cũng được. Nghĩa là các con tool chúng mày code nó sẽ không khác nhé, nó không giống nhau nhiều. Nhưng mà chúng mày hãy cái gì ạ? Bắt
+nó, ví dụ sửa lỗi fix các thứ này mày hãy dùng bằng ChatGPT luôn. Ví dụ như nó chưa thêm được nhiều luồng hay lỗi gì phát ra chúng mày có thể bắt nó là tool.
+YouTube, tải tool kia chưa code được nhiều luồng thì chúng mày có thể áp dụng cái cách này để
+Tạo là tool phát trực tiếp. Đó vẫn đang phát trực tiếp như thế này nha các em em. 3 phút rồi, phát đi, phát lại luôn. Ok. Video đến đây là kết thúc. Chào các em yêu của thầy.

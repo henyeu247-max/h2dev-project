@@ -1,0 +1,164 @@
+{
+  "sku": "VIDEO-2b7592",
+  "title": "Quy Trình Sản Xuất Video Review Phim",
+  "duration": "14:05",
+  "module": "DGMD-M08",
+  "actual_topic": "Quy trình sản xuất video Review Hoạt Hình Câu Cá Vạn Cân triệu view từ Douyin: Khảo sát kênh mẫu (@redevietsub 200K view/ngày, @caucavancanchinhchu, @cameosub), dùng Google Dịch lấy từ khóa tiếng Trung phồn thể (釣魚動畫), tải không logo qua Snaptik Douyin (UnduhTikTok), dựng CapCut (Tách giọng nói, Phụ đề tự động Trung-Việt, TTS 'Cô gái hoạt ngôn' tốc độ 1.2x giữ cao độ, hạ nhạc nền -24.2 dB, nhân đôi layer + Blur 100% + Mask đảo ngược che sub gốc, phông Anton/Bangers-Regular) và tái tạo Thumbnail CTR cao bằng ChatGPT.",
+  "summary": "Bài 26 hướng dẫn thực chiến quy trình sản xuất dòng video Review Hoạt Hình Câu Cá Vạn Cân từ nguồn Douyin đạt hàng trăm nghìn lượt xem mỗi ngày. Giảng viên phân tích trực tiếp 3 kênh mẫu (@redevietsub đạt 200K–600K view/video, @caucavancanchinhchu, @cameosub), hướng dẫn dùng Google Dịch chuyển từ khóa 'hoạt hình câu cá' sang tiếng Trung phồn thể (釣魚動畫), tìm tập phim trên Douyin và tải không logo qua Snaptik Douyin (unduhtiktok.com). Toàn bộ khâu hậu kỳ trên CapCut PC được thao tác chi tiết: dùng 'Tách giọng nói' (Voice Isolation) để bỏ thoại Trung và hạ nhạc nền xuống -24.2 dB, dịch Phụ đề tự động Trung – Việt, chuyển văn bản thành giọng nói 'Cô gái hoạt ngôn' tốc độ 1.2x kèm bật 'Giữ cao độ âm thanh', nhân đôi layer video kẹp hiệu ứng Mờ 100% kết hợp Mặt nạ (Mask hình chữ nhật đảo ngược) để che sạch phụ đề tiếng Trung gốc, định dạng sub phông Anton màu vàng, và kết hợp CapCut (phông Bangers-Regular) + ChatGPT Image để tái tạo Thumbnail 16:9 có CTR cao.",
+  "Core_Value": "Làm chủ quy trình Việt hóa & Remix dòng video Hoạt hình Câu Cá Douyin sang tiếng Việt (hoặc đa ngôn ngữ Anh, Nhật, Hàn) chỉ với CapCut PC và ChatGPT: xử lý sạch giọng nói gốc nhưng giữ trọn vẹn âm thanh hiệu ứng câu cá, che phụ đề tiếng Trung bằng kỹ thuật Mask đảo ngược và nâng cấp Thumbnail bằng AI để bùng nổ đề xuất.",
+  "Key_Action": "Dịch từ khóa 'hoạt hình câu cá' sang tiếng Trung phồn thể (釣魚動畫) trên Google Dịch để tìm video trên Douyin, tải không logo qua Snaptik Douyin (unduhtiktok.com), đưa vào CapCut PC chạy 'Tách giọng nói' + hạ nhạc nền -24.2 dB, tạo 'Phụ đề tự động' dịch Trung sang Việt, xuất giọng đọc 'Cô gái hoạt ngôn' (tốc độ 1.2x + giữ cao độ âm thanh), che sub gốc bằng 2 layer video + Blur 100% + Mask hình chữ nhật đảo ngược, và đưa ảnh bìa demo vào ChatGPT để vẽ lại Thumbnail 16:9.",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Review Phim & Hoạt Hình Câu Cá (Douyin Vietsub)",
+  "niche_id": "movie_recap",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "tools_mentioned": [
+    "Douyin",
+    "CapCut",
+    "ChatGPT",
+    "Google Dịch",
+    "Cốc Cốc",
+    "Snaptik Douyin",
+    "YouTube"
+  ],
+  "tools_used": [
+    "Douyin",
+    "CapCut",
+    "ChatGPT",
+    "Google Dịch",
+    "Cốc Cốc",
+    "Snaptik Douyin",
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@redevietsub",
+    "@caucavancanchinhchu",
+    "@cameosub"
+  ],
+  "competitor_channels": [
+    {
+      "handle": "@redevietsub",
+      "name": "Rede Vietsub",
+      "url": "https://www.youtube.com/@redevietsub",
+      "description": "Kênh mẫu số 1 xuất hiện ở 00:10–00:50 (64,4 N người đăng ký, 159 video). Chỉ sau 4 tháng triển khai dòng hoạt hình Câu Cá Vạn Cân đã đạt 18 N view sau 25 phút, 200 N – 247 N view sau 1 ngày và gần 600 N view ở tab Phổ biến."
+    },
+    {
+      "handle": "@caucavancanchinhchu",
+      "name": "Vũ Trụ Câu Cá Vạn Cân",
+      "url": "https://www.youtube.com/@caucavancanchinhchu",
+      "description": "Kênh mẫu số 2 xuất hiện ở 00:35–00:44 (2,16 N người đăng ký, 51 video), chuyên đăng trọn bộ series Câu Cá Vạn Cân thuyết minh tiếng Việt."
+    },
+    {
+      "handle": "@cameosub",
+      "name": "Cá Mèo Sub",
+      "url": "https://www.youtube.com/@cameosub",
+      "dead": true,
+      "deadNote": "Kênh xuất hiện trực tiếp trên màn hình bài giảng ở mốc 00:45 (Cá Mèo Sub - @cameosub • 1,47 N người đăng ký • 29 video, các tập Câu Cá Vạn Cân P3 đạt 74N–94N view sau 6 ngày), hiện đã đóng hoặc đổi handle trên YouTube.",
+      "description": "Kênh mẫu số 3 xuất hiện ở 00:45 (1,47 N người đăng ký, 29 video), đạt 74 N – 94 N lượt xem mỗi tập chỉ sau 6 ngày đăng tải."
+    }
+  ],
+  "niche_Potential": {
+    "RPM": "$0.40 – $1.50 (View Việt Nam; có thể nhân bản sang View Ngoại tiếng Anh, Nhật, Hàn với RPM $2.50 – $6.00 bằng đúng tính năng dịch phụ đề tự động của CapCut)",
+    "production_Difficulty": "Thấp (Toàn bộ khâu tách lời, dịch phụ đề Trung - Việt, lồng giọng đọc TTS và che sub gốc đều thực hiện gói gọn trên CapCut PC)",
+    "monetization_Risk": "Trung bình (Cần xử lý kỹ khâu tách bỏ giọng gốc, lồng thuyết minh mới 1.2x, làm mờ sub gốc bằng Mask đảo ngược và vẽ lại Thumbnail bằng ChatGPT)",
+    "verdict": "Ngách có tốc độ kéo view và tăng trưởng người đăng ký cực nhanh nhờ cốt truyện hoạt hình câu cá gay cấn, hài hước và kho nguồn video Douyin dồi dào."
+  },
+  "course_docs": [
+    {
+      "title": "Tài Liệu Thực Chiến & Master Prompt: Quy Trình Sản Xuất Video Review Phim Hoạt Hình Câu Cá (Google Docs Gốc)",
+      "name": "Tài Liệu Thực Chiến & Master Prompt: Quy Trình Sản Xuất Video Review Phim Hoạt Hình Câu Cá (Google Docs Gốc)",
+      "file": "assets/docs-dgmd/VIDEO-2b7592/master_prompt.md",
+      "path": "assets/docs-dgmd/VIDEO-2b7592/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-2b7592/master_prompt.md",
+      "type": "prompt",
+      "link": "https://docs.google.com/document/d/1_2L1jCi7d_5EhLJ0RTwGR9uC8mZ9iKJaILTIVRwUO18/edit?tab=t.a5jqhiru62pa",
+      "source_url": "https://docs.google.com/document/d/1_2L1jCi7d_5EhLJ0RTwGR9uC8mZ9iKJaILTIVRwUO18/edit?tab=t.a5jqhiru62pa"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu & Khảo sát thị trường: Ngách Review Hoạt Hình Câu Cá Vạn Cân (@redevietsub 200K view/ngày, @caucavancanchinhchu, @cameosub)"
+    },
+    {
+      "time": "00:58",
+      "seconds": 58,
+      "label": "Tài liệu quy trình gốc: Tìm nguồn Douyin & Sản xuất bằng bộ đôi CapCut + ChatGPT"
+    },
+    {
+      "time": "01:23",
+      "seconds": 83,
+      "label": "Bước 1 - Tìm nguồn: Dùng Google Dịch chuyển từ khóa 'hoạt hình câu cá' sang tiếng Trung phồn thể (釣魚動畫)"
+    },
+    {
+      "time": "02:10",
+      "seconds": 130,
+      "label": "Bước 2 - Khai thác Douyin & Tải video: Tìm video gốc tiếng Trung trên Douyin, sao chép link tải không logo qua Snaptik Douyin (UnduhTikTok)"
+    },
+    {
+      "time": "03:56",
+      "seconds": 236,
+      "label": "Bước 3 - Tách âm thanh gốc: Đưa video vào CapCut, dùng tính năng 'Tách giọng nói' (Voice Isolation) để tách riêng lời thoại và nhạc nền"
+    },
+    {
+      "time": "04:49",
+      "seconds": 289,
+      "label": "Bước 4 - Dịch phụ đề song ngữ: Dùng 'Phụ đề tự động' (Ngôn ngữ nói: Tiếng Trung -> Dịch sang: Tiếng Việt) và xóa dòng chữ Trung"
+    },
+    {
+      "time": "05:34",
+      "seconds": 334,
+      "label": "Bước 5 - Lồng giọng AI & Chỉnh âm thanh: Chọn giọng 'Cô gái hoạt ngôn', tốc độ cố định 1.2x, bật 'Giữ cao độ âm thanh' và hạ nhạc nền xuống -24.2 dB"
+    },
+    {
+      "time": "07:29",
+      "seconds": 449,
+      "label": "Bước 6 - Che phụ đề tiếng Trung: Nhân đôi layer video, chèn hiệu ứng Làm mờ (Blur 100%) kết hợp Mặt nạ (Mask hình chữ nhật đảo ngược) và chữ Anton màu vàng"
+    },
+    {
+      "time": "10:11",
+      "seconds": 611,
+      "label": "Bước 7 - Tạo ảnh bìa (Thumbnail) mồi: Dịch tiêu đề gốc Douyin bằng ChatGPT ('Chuyện của người câu cá, tình cha bao la như núi lớn') và chèn phông Bangers-Regular"
+    },
+    {
+      "time": "12:36",
+      "seconds": 756,
+      "label": "Bước 8 - Xuất video 1080p & Tái tạo Thumbnail CTR cao bằng ChatGPT (Màn ảnh rộng 16:9)"
+    }
+  ],
+  "key_takeaways": [
+    "Ngách Review Hoạt Hình Câu Cá ('Câu Cá Vạn Cân') có sức hút cực lớn và tốc độ lên view thần tốc: Kênh mẫu @redevietsub (64,4N sub) chỉ làm trong 4 tháng đã đạt 18.000 view sau 25 phút, 200.000 – 247.000 view sau 1 ngày và gần 600.000 view cho các video phổ biến; các kênh cùng ngách như @caucavancanchinhchu và @cameosub cũng thu hút hàng chục nghìn view mỗi tập.",
+    "Khai thác kho video gốc miễn phí từ thị trường tỷ dân trên Douyin: Dùng Google Dịch chuyển từ khóa 'hoạt hình câu cá' sang tiếng Trung phồn thể (釣魚動畫), dán vào app Douyin để lấy các tập phim hoạt hình câu cá (@楚新钓, @林八), nhấn thả tim lưu lại rồi sao chép link tải không logo qua Snaptik Douyin (unduhtiktok.com).",
+    "Quy trình tách lời thoại giữ hiệu ứng và dịch tự động ngay trong CapCut PC: Dùng tính năng 'Tách giọng nói' (Voice Isolation) để tách riêng giọng nói tiếng Trung và giữ lại âm thanh hiệu ứng/nhạc nền (hạ âm lượng nhạc nền xuống dưới -24.2 dB); sau đó dùng 'Phụ đề tự động' dịch thẳng từ Tiếng Trung sang Tiếng Việt (hoặc Tiếng Anh, Nhật, Hàn nếu làm view ngoại) và xóa dòng chữ Trung.",
+    "Công thức giọng đọc Review đặc trưng: Chọn toàn bộ phụ đề tiếng Việt, chuyển văn bản thành giọng nói (TTS) với giọng 'Cô gái hoạt ngôn', sau đó quét chọn toàn bộ các file âm thanh thoại, khóa tốc độ cố định ở mức 1.2x và bắt buộc tích chọn 'Thay đổi âm thanh độ cao' (Giữ cao độ âm thanh) để giọng đọc lôi cuốn, không bị méo tiếng.",
+    "Kỹ thuật che phụ đề tiếng Trung tinh gọn bằng Mask đảo ngược: Nhân đôi layer video (Ctrl+C / Ctrl+V), tắt âm thanh layer trên, kẹp hiệu ứng 'Mờ' (Blur kéo lên 100%) vào giữa 2 layer video; ở video tầng trên chọn 'Mặt nạ' (Mask hình chữ nhật) bao quanh vùng phụ đề gốc rồi bấm 'Đảo ngược' (Invert) và đặt phụ đề tiếng Việt phông Anton màu vàng đè lên trên.",
+    "Quy trình 2 bước tạo Thumbnail có tỷ lệ click (CTR) cao bằng CapCut + ChatGPT: Dịch tiêu đề gốc Douyin qua ChatGPT ('Tập 71: Chuyện của người câu cá, tình cha bao la như núi lớn'), tạo ảnh bìa demo trong CapCut với phông chữ Bangers-Regular, xuất video ở chuẩn 1080p rồi nạp ảnh bìa demo vào ChatGPT (chế độ Tạo hình ảnh - Màn ảnh rộng) kèm câu lệnh yêu cầu làm lại thumbnail gay cấn hơn, cảm xúc mạnh hơn."
+  ],
+  "edit_sop": {
+    "primary": "SOP 5 Bước Sản Xuất Video Review Hoạt Hình Câu Cá Từ Douyin Bằng CapCut PC & ChatGPT",
+    "additional": [
+      "Dùng Google Dịch dịch từ khóa 'hoạt hình câu cá' sang tiếng Trung phồn thể (釣魚動畫), tìm nguồn trên app Douyin, nhấn thả tim và sao chép liên kết tải video không logo qua Snaptik Douyin (unduhtiktok.com) trên trình duyệt Cốc Cốc.",
+      "Đưa video vào CapCut PC, vào mục Âm thanh chọn 'Tách giọng nói' để loại bỏ giọng Trung gốc và hạ âm lượng track hiệu ứng/nhạc nền xuống mức -24.2 dB.",
+      "Vào Văn bản -> Phụ đề tự động, chọn ngôn ngữ nói Tiếng Trung dịch sang Tiếng Việt, xóa dòng phụ đề tiếng Trung phía trên rồi bấm 'Chuyển văn bản thành giọng nói' với giọng 'Cô gái hoạt ngôn', chỉnh tốc độ âm thanh lên 1.2x và bật 'Giữ cao độ âm thanh'.",
+      "Nhân đôi layer video (Ctrl+C, Ctrl+V), tắt tiếng layer trên, chèn Hiệu ứng 'Mờ' (Blur 100%) vào giữa 2 video, dùng 'Mặt nạ' (Mask hình chữ nhật) trên video tầng trên rồi bấm 'Đảo ngược' để làm mờ vùng chữ Trung gốc và đổi phụ đề tiếng Việt sang phông Anton màu vàng.",
+      "Dùng ChatGPT dịch tiêu đề gốc của video Douyin sang tiếng Việt để tạo ảnh bìa demo trong CapCut (phông Bangers-Regular), xuất video ở độ phân giải 1080p, sau đó tải ảnh bìa demo lên ChatGPT (bật Tạo hình ảnh - Màn ảnh rộng) kèm câu lệnh tạo lại thumbnail gay cấn, cảm xúc mạnh và CTR cao."
+    ]
+  },
+  "sop_steps": [
+    "Dùng Google Dịch dịch từ khóa 'hoạt hình câu cá' sang tiếng Trung phồn thể (釣魚動畫), tìm nguồn trên app Douyin, nhấn thả tim và sao chép liên kết tải video không logo qua Snaptik Douyin (unduhtiktok.com) trên trình duyệt Cốc Cốc.",
+    "Đưa video vào CapCut PC, vào mục Âm thanh chọn 'Tách giọng nói' để loại bỏ giọng Trung gốc và hạ âm lượng track hiệu ứng/nhạc nền xuống mức -24.2 dB.",
+    "Vào Văn bản -> Phụ đề tự động, chọn ngôn ngữ nói Tiếng Trung dịch sang Tiếng Việt, xóa dòng phụ đề tiếng Trung phía trên rồi bấm 'Chuyển văn bản thành giọng nói' với giọng 'Cô gái hoạt ngôn', chỉnh tốc độ âm thanh lên 1.2x và bật 'Giữ cao độ âm thanh'.",
+    "Nhân đôi layer video (Ctrl+C, Ctrl+V), tắt tiếng layer trên, chèn Hiệu ứng 'Mờ' (Blur 100%) vào giữa 2 video, dùng 'Mặt nạ' (Mask hình chữ nhật) trên video tầng trên rồi bấm 'Đảo ngược' để làm mờ vùng chữ Trung gốc và đổi phụ đề tiếng Việt sang phông Anton màu vàng.",
+    "Dùng ChatGPT dịch tiêu đề gốc của video Douyin sang tiếng Việt để tạo ảnh bìa demo trong CapCut (phông Bangers-Regular), xuất video ở độ phân giải 1080p, sau đó tải ảnh bìa demo lên ChatGPT (bật Tạo hình ảnh - Màn ảnh rộng) kèm câu lệnh tạo lại thumbnail gay cấn, cảm xúc mạnh và CTR cao."
+  ],
+  "avoid_flags": [
+    "Khi chỉnh tốc độ giọng đọc AI lên 1.2x, tuyệt đối không được quét chọn nhầm cả track video và track văn bản phụ đề, chỉ được chọn riêng các track âm thanh giọng nói ở phía dưới.",
+    "Không quên bật tùy chọn 'Thay đổi âm thanh độ cao' (Giữ cao độ âm thanh) khi tăng tốc độ 1.2x và phải hạ âm lượng nhạc nền gốc xuống khoảng -24.2 dB để không lấn át tiếng Việt.",
+    "Không sử dụng trực tiếp ảnh bìa chỉnh sửa sơ sài trong CapCut làm thumbnail chính thức, mà chỉ dùng làm ảnh demo mồi để đưa vào ChatGPT tái tạo lại hình ảnh có cảm xúc mạnh và CTR cao.",
+    "Không xuất video ở độ phân giải 2K hay 4K vì vừa nặng dung lượng (MB) vừa mất thời gian mà thuật toán YouTube không ưu tiên hơn bản 1080p chuẩn."
+  ],
+  "source_transcript": "video/VIDEO-2b7592/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true
+}

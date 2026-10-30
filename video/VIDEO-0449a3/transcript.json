@@ -1,0 +1,3138 @@
+{
+  "sku": "VIDEO-0449a3",
+  "duration": 2058.08,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 391,
+  "full_text": "Thuật toán đề xuất của video Cái này là cái mà ai cũng hỏi này Mình nhắc lại nó có cái đề xuất về trang chủ của người đăng ký Thì nó bao gồm 2 phần là các cái tính năng duyệt xem vào video đề xuất ở đây là có những cái nốt rõ rồi anh em đọc và tìm hiểu Trang chủ là trang màn hình chính, bao gồm cả người xem đăng nhập và đăng xuất. Tức là người ta không cần phải đăng nhập vào một người dùng mới cứng, không có Gmail. Vào mà xem một cái kênh nào đấy nhiều, sau này nó vẫn xuất hiện trên trang chủ của họ bình thường. Họ chả cần đăng ký. Cái đấy là cái hay. Cũng không cần phải bắt, phải vào đăng ký tài khoản mới xem được giống như ở Facebook đúng không? Facebook phải đăng ký tài khoản mới vào được. Tiếp theo là nguồn cấp dữ liệu kênh đăng ký. Như vừa nãy mình nói nó có thể từ bất kỳ cái nguồn lưu lượng truy cập nào nhưng không chỉ riêng những cái nguồn này. Nó có thể từ kênh của mình, có thể từ kênh của người khác. Và cái dạng thứ 2 là dạng đề xuất là đề xuất trực tiếp từ video. Cái dạng đầu tiên nó làm ở cái là chúng ta cần phải có video nhiều rồi. Chúng ta đề xuất rồi, chúng ta có người đăng ký rồi. Những cái này là những cái mà người ta đã xem video của mình rồi Còn cái thứ 2 là cái dạng trực tiếp nó đề xuất video của mình Mình xem video này đề xuất video kia Hoặc xem nó là cả một cái luồng từ video A đến B đến C đến D Thì nó có 2 cái dạng đề xuất Nó là như vậy Thì hôm nay chúng ta sẽ nói sâu hơn về cái luồng đề xuất của video và của khán giả. Cái thực chất khi mà mình nói, anh em mình nói, nhìn cái lượng view, lượng sub á, nó thể hiện cho cái gì? Nó cũng thể hiện cho sự quan tâm của khán giả. Nó cũng thể hiện cho việc là cái nội dung của mình nó đúng đối tượng hay không. Và cái phần này, chúng ta có các cái thông số về việc là thời gian xem á, Thì chính là cái mà cái khán giả của mình ở lại trên kênh nó như thế nào. Thì chính là cái mà chúng ta cần phải tối ưu những cái như vậy. Thì tổng hợp lại chúng ta có 2 phần như vậy. Và tiếp theo chúng ta cần phải có được cái hiểu được cái phần video đề xuất. Thứ 2 là video được đề xuất. Thứ 3 là video nối đề xuất. Tức là đây là video của mình nè, đang xem. Thế vậy là video mình đang xem này, video nào nó đang đề xuất video của mình? Và từ video đang xem này thì đang đề xuất tiếp video này? Tức là nó cả một cái luồng khán giả nhé. Tức là người ta có thể xem kênh 1, xong người ta xem kênh 2, xong người ta xem kênh 3, kênh 4, kênh 5, kênh 6, kênh 7. Vì là một người anh em để ý. Một người thì họ không có, không phải là chỉ có một sở thích duy nhất, mà một người có nhiều sở thích và có thể xem được nhiều nội dung đa dạng khác nhau. Nên là khi mà mình xem bất kỳ một cái video nào thì mình cũng có thể phân tích được ngược lại cái video nào đang đề xuất video đó và video đó đề xuất cái video nào tiếp theo. Thì đấy là cái phần giúp cho mình thấu hiểu hơn được cái hành vi của khách hàng. Mở rộng được cái tệp ra ngoài những video này họ đang xem, họ còn muốn xem những cái nào nữa. Để mình tìm cách mình mở rộng, mình phục vụ cái tệp khán giả của mình. Khi mà phân tích một video đó thì cần biết thứ nhất video nào đang đề xuất video của mình. Cái thứ hai là video đang được đề xuất nó như thế nào, tại sao nó lại được đề xuất. Cái thứ 3 là video đang được đề xuất đấy, nó tiếp tục đề xuất video nào. Anh em hiểu cái luồng khán giả nó là như vậy, cái luồng hành vi của họ là như vậy, cái luồng mà họ đang làm ở trên Internet nó là như vậy. Thế mình nói là Internet luôn luôn để lại dấu vết, nó là như thế. như thế khi mà mình phải hiểu được những cái nội dung như vậy thì đến lúc mình có làm video hay mình phân tích video hay mình có thử sai hay mình có làm sản xuất thì nó nhanh thành công hơn cho việc mình làm mò và đặc biệt là khi mà mình làm những cái kênh mà mình không biết đến ngôn ngữ nhiều nữa mình không hiểu được ngôn ngữ và mình không hiểu được hết những cái ý của cái ngôn ngữ mà họ muốn nói nhưng mà khi mà dựa vào những cái video những cái video và những cái thông số được phân tích này, làm được hết Đầu tiên chúng ta sẽ nói với nhau về trong cái kênh của mình một cái video nó đang được đề xuất bởi video nào thì chúng ta click vào cái phần lưu lượng truy cập và nó có cái phần là video đề xuất. Kích ở đây, nó là toàn bộ những cái dấu vết vì việc những cái video nào đang đề xuất video mình, bao gồm video trong kênh của mình và video ở ngoài. Ví dụ ở đây mình, đấy, ví dụ một video nó đề xuất nhé, còn video của mình là video được đề xuất, thế là đây là video của mình. Nhưng mà làm sao để mình biết được những cái video nào, đây đằng trước này này, nó đang đề xuất video của mình ở bên phải này, mà người ta xem. Thì đơn giản đấy, chỉ cần chúng ta cần kích vào cái phần video đề xuất này là nó có toàn bộ các thông số đấy. Đây là những cái thông số chính để chúng ta có thể tìm hiểu. Kích vào đấy, ví dụ kích vào bí quyết thành công chẳng hạn. Thì cái video mà đang đề xuất video của mình nhiều nhất là nghèo cỡ mấy cũng phải hiểu 4 cái này. Thì nó là video trong kênh của mình. Nhưng nó sẽ có những cái video nó khác nữa. ở ngoài kênh của mình, nó vẫn đề xuất bình thường. Sau đó thì, đây là những cái video này của mình nhé. Mình cần chụp lại toàn bộ những cái thumbnail tiêu đề này. Kích nhẹ vào cái video này cái là nó cũng hiện lên cái phần ở bên trên thumbnail tiêu đề mình chụp rồi. Ví dụ như mình đây, mình chụp lại toàn bộ những cái video nó đang đề xuất cái video của mình nhận ạ. Ở đây nó đang có những cái phần video trong kênh của mình đề xuất video Ngẫm Plus hay là video tài chính 24h. Đây là những cái kênh khác nó đề xuất. Tư duy làm giàu nó đề xuất. Đấy là những cái kênh khác họ đang đề xuất video của mình. Mình cứ nốt hết lại. Thì đây là cái phần mà giúp cho mình hiểu được video đằng trước, đằng trước đấy nhé. Họ xem những cái này, một trong số những cái này. Sau đó họ được đề xuất bên phải của mình, là video của mình. Thì đấy là một cái hành vi là họ cũng đang quan tâm đến cái nội dung kiểu tương tự như thế. Thì đấy là một phần. Sau đấy thì mình có phân tích ở đây là chủ đề xuyên suốt là làm giàu Bí quyết thành công này. Những cái nội dung giống nhau chẳng hạn là thumbnail thì có người góc 1 phần 3 này, doanh nhân nổi tiếng này. Thì đấy là cái nội dung mà mình vừa phân tích là những cái điểm chung. Thế vậy là mình cần phải tìm xem những cái mô típ lập lại giống nhau mà khán giả đang xem, đang thích xem. Nó là như thế nào? Vẫn là những công thức rất đơn giản như vậy thôi. Sau đó tiếp tục mình làm. Và cái này nó có nhược điểm. Tại sao mình chưa chia sẻ cái này ngay cho anh em? Và cái này, cái module này nó mới có. Sau rất dài thời gian rồi. Bởi vì là kênh nó phải có lượng view sub nhất định thì nó mới có dữ liệu để nghiên cứu được. Cái thứ 2 là cái lượng truy cập theo thời gian nó khác nhau nên có thể theo cái trending nhiều khi phân tích video nó bị lệch so với cái nhóm chủ đề đang xuyên suốt. Ví dụ phân tích vào cái thời mà đang Covid chẳng hạn thì cái nội dung người ta đang quan tâm rất rất nhiều đến Covid thì cứ nói Covid là người ta xem. Lúc đấy nó là trend thị trường. Nếu mà mình dùng cái đấy để mình phân tích mà mình không tỉnh táo thì mình cứ đi theo follow những cái như vậy thì nó cũng sẽ, cái kết quả nó sẽ bị lệch. Cái thứ 3 là có thể là tham anh em làm có thể là vì có được những cái thông số như vậy nên anh em đang làm bất chấp cái ban đầu để tham view nên làm nhiều chủ đề nó bị loãng kênh. Khi mà mình phân tích view nó sẽ khó hơn về sau. Đặt ra câu hỏi là Ở đây ai cũng muốn đề xuất? Thì đề xuất thì làm nè Thì vẫn quay trở lại Cái thứ nhất là nghiên cứu chủ đề Để hiểu được mô típ khán giả muốn xem. Chủ đề ở đây có thể hiểu là một là cái chủ đề lớn của khán giả muốn xem là cái nội dung kênh mình muốn làm. Cái thứ hai là chủ đề ngách, là những cái ngách video, những cái nội dung nào mà mình có thể làm. Cái quan trọng là giữ được cái từ khóa là khán giả muốn xem. Quan trọng, cực kỳ quan trọng. Insight, Insight khách hàng. Còn sau đó thì về kỹ thuật thì đơn giản là sản xuất các video theo chủ đề, học tập các mô típ về thumbnail, tiêu đề, content để nhắm tới mục tiêu cuối cùng là phục vụ đối tượng khán giả muốn xem. Từ đầu đến giờ mình nhấn rất là mạnh vào việc là khán giả nhé, nhắm đến người dùng nhé, nhắm đến một tệp khán giả, một tệp người dùng. Mình không nói nhiều về các kỹ thuật, cái này nó liên quan đến insight khách hàng. Rồi tiếp theo nữa là ở chính một cái video đề xuất hay là gọi là video dẫn kênh. Có những video nào, dạng nào đang kéo cả kênh của mình lên. Vì thường cái kênh của các bạn lên nó sẽ có những cái bộ video khoảng độ 5-7 video là nhiều view nhất và lúc nào nó cũng được đề xuất nó kéo cái kênh của mình lên. Không video này dẫn kênh thì video kia dẫn kênh. Thế vậy thì top 5 video mà đang dẫn kênh của mình thì phân tích nó như thế nào. Là mình đang nói về video được đề xuất. Ví dụ, video này là video dẫn kênh của kênh Bí quyết thành công. 2 triệu view, nó được khoảng 4.300 đô, tức là RPM 2 đô đấy. Từ 1 video đấy nhé, đây là 1 video đấy. Nó cứ đem lại tiền cho mình đều, đều, đều từ ngày này tháng khác, ngày này tháng khác. Nó ít view thôi nhưng mà nó vẫn cứ có tiền. Khi mà một cái video này để mình phân tích cái video nó đang đề xuất và video dẫn kênh thì cũng lại phân tích giống hết như lúc trước thôi. Mình lại phân tích về tiêu đề của nó đang như thế nào, từ khóa nào, thumbnail nào, dạng nào, kiểu như thế nào. Và trong cái phần tiếp cận này nó sẽ có được hết những cái thông số phân tích của một cái kênh để mình có thể tìm. Đây, người xem nào đang đến từ video này? Lượt hiển thị hình thu nhỏ bao nhiêu này? Tỷ lệ nhấp và tỷ lệ xem như thế nào? Tiếp theo nữa là các cụm từ tìm kiếm nào của video này? Cách làm giàu này? Kinh doanh gì để giàu này? Học cách làm giàu này? Bí quyết thành công này? Tư duy làm giàu này? Thì sau này những cái từ khóa và những cái nội dung kiểu như thế này á, mình có thể cho vào một video khác và mình cũng xem những từ khóa như thế này. Và nội dung nó tương tự như thế này Thì cũng có khả năng là được ăn đề xuất từ chính kênh Cái này là từ chính kênh của mình. Nó cũng có cái phần là nội dung giúp người xem tìm thấy video này. Mình cũng lại xem video nào đang đề xuất video này. Mình cũng lại phân tích y hệt như là cái cách vừa nãy là mình phân tích cả kênh. Bây giờ mình phân tích một video là video dẫn kênh. Đây chính là bí mật của việc mình làm chưa từng thất bại. Một cái kênh YouTube mà từ 100.000 lên 1 triệu. Tức là Ở năm 2017 mình có một cái bài viết Anh em nào làm lên đến 100.000 trên 48h Nhắn tin trực tiếp cho mình Thì mình sẽ hỗ trợ anh em lên 1 triệu trên 48h trong khoảng 2 đến 4 tuần. Thì đây chính là bí mật này Anh em rất là khó khăn trong việc là 3 tháng đầu tiên, 4 tháng đầu tiên, 5 tháng đầu tiên để mình tìm ra, test ra cái video dẫn kênh này. Tức là bản chất của mình hiểu, mình tìm được ra đúng cái video, cái nội dung mà khán giả muốn xem. Sau đó phân tích thật kỹ video này. Từ video này, sản xuất các nội dung content có nội dung tương tự. tương tự hoặc những cái nội dung liên quan đến những cụm từ mà khách hàng tìm kiếm hoặc sản xuất những cái nó liên quan cùng tiêu đề cùng thumbnail. Anh em nhớ cái ví dụ hôm trước về việc kênh của Kính Lúp TV ấy. Khi mà họ đã tìm được ra một cái nội dung phổ biến thì họ bắt đầu tiếp tục nhân những cái nội dung đấy ra. Và với kênh của mình, ngày xưa mình làm là lúc nào mình cũng nhấn mạnh một video mà đã dẫn kênh rồi. Mình sẽ phải nhân lên cả tháng đấy. Chỉ làm những nội dung xoáy quanh những cái chủ đề và những cái nội dung như vậy. Để mình có thể phục vụ khán giả. Và đấy chính là cách mà lên từ 100.000 đến 1 triệu. Khi mà mình có một video, nó dẫn kênh rồi. Nó có thể kéo một kênh của mình lên 100.000 trên 48 giờ. Sau đó mình tìm cách mình sản xuất các nội dung tương tự. Chúng ta đừng để ý nhiều những cái kỹ thuật là tìm những cái cụm từ đấy như cái nào hay nội dung nào giúp mình tìm kiếm view này. Mà chúng ta để ý đến việc là mình đặt mình ở khán giả. Cái tâm lý của cái khán giả đấy, cái nhóm khán giả đấy thích xem những cái kiểu gì. Là cái ngách của mình đang chọn, đang tìm. Mình phải là cái người hiểu cái kênh của mình nhất. Mình phải là cái người hiểu cái tệp khách hàng của mình nhất. Thì khi mà cái tệp khách hàng đấy mình cứ ném cho cái nội dung này là họ sẽ xem. Khi mà anh em làm nhiều rồi Anh em sẽ có được cái cảm giác như vậy, cứ ném ra đúng cái tiêu đề đấy, đúng cái thumbnail đấy, đúng cái kiểu nội dung như vậy là sẽ lên, là sẽ xem. Nha khoa Lạc Việt, Niềng Răng thì họ cũng đã làm được cái đấy rồi, cứ làm cái kiểu như vậy, cứ Niềng Răng như vậy là xem, là xem. Thì đương nhiên là họ cũng chọn ngách và cái từ khóa đấy cũng là một trong số những cái ở trong ngành rồi. Nhưng mà họ đã hiểu được cái mô típ là khán giả muốn gì, muốn xem gì về Niềng Răng. Thì là họ cứ nhấn vào đấy, họ làm nhai đi nhai lại, nhai đi nhai lại, vẫn rất nhiều view. Và ngày xưa mình có trêu anh em rằng là tại sao mà xem cái kênh của tôi anh em lại thấy nó nhàm chán và thậm chí nếu anh em ở ngoài anh em lại còn thấy là nó chắc là chẳng có view đâu. Nhưng mà thực chất khi mà mình làm như vậy, nó nhiều view kinh khủng thôi. Và những cái mô típ lập đi lập lại như vậy, nếu mà chúng ta kèm được thêm cái bài tập tuần 1, là cái mà mình phân tích được cái mô típ kênh này, phân tích được tính cách kênh này, phân tích được các cái giọng điệu ở trong kênh này, hay là những cái gọi là hình ảnh mình muốn xây dựng đó. Thì đấy là cái để mình giúp mình phổ biến nhanh nhất về cái tính cách của kênh, về cái xây dựng thương hiệu của kênh. kênh nên là chúng ta phải có được những cái đấy tức là chúng ta đã có sự chuẩn bị những cái như vậy từ cái tuần 1 rồi thì đến khi mà đến cái tuần như thế này là chúng ta có được video bùng nổ rồi là người ta đã bắt đầu thấy cái đặc điểm của cái kênh đấy rồi Và cái cách để mà đi vào đầu người ta, NLP nó có 3 cách thì cách giật tít câu view là sốc đấy. Cũng là một cách mà cái cách thức lập đi lập lại những cái điều đơn giản. Nó cũng tạo thành thương hiệu. Nhiều cái mình làm nó nhất quán đến mức nó buồn cười nữa. Chả hiểu sao nhưng mà nó thành những cái đơn giản. Ví dụ mình vào Circle K, mình mua một cái cốc cà phê, thì thôi mình mua cái size XL, size to nhất ở đấy, size 30.000 để làm sao uống từ sáng đến chiều được ạ. Thế mình vô tình như vậy, thế là lần nào mình vào mình cũng một thằng đầu trọc mà áo màu đen và mua cái cốc cà phê size XL. Thế mình khá bất ngờ thì gần đây là mình vào quán cái là hôm đấy mình đích trong đầu là mình làm một buổi sáng, buổi chiều mình về có việc rồi. Mà cái thằng em nó bảo anh lại đặt XL phải không? Đấy anh thanh toán đi nè em đặt xong cho anh rồi. Nghe thật nói những cái lập đi lập lại. Rất đơn giản để khẳng định cái hình ảnh thương hiệu cá nhân. Thì trong kênh như vậy có những cái việc là nó sẽ tạo ra những cái góc nhìn khác. Ví dụ bên mình có 2 cái kênh. Nói về lịch sử, nói về những tin tức, ví dụ kênh Nabi Việt Nam là kênh bên mình. Thì cái kênh bên đấy nếu mà nói, cùng là phân tích một cái vấn đề về chính trị, về văn hóa, cái kênh đấy sẽ tôn vinh Việt Nam, ví dụ so sánh Việt Nam với Trung Quốc. Thì trong cái giọng văn của nó, trong cái content của nó là Nabi là Nâng Bi, Nâng Bi Việt Nam, kiểu kiểu như vậy. Thì những cái người mà yêu Việt Nam hay yêu nước, lúc nào người ta cũng xem và người ta cảm thấy thích ở cái kênh đấy, ở giọng đấy. Nhưng mà sẽ có một kênh ở kênh Hố Xanh Kiến Thức, cũng cái nội dung như vậy, ý hề như vậy, những content như vậy. Nhưng mà nó giọng ở content kiểu cà khịa. Thì mọi người xem mình sẽ thấy là cái nội dung nhé, cùng là một cái content, cùng là một cái nội dung. Nhưng mà một bên thì nói về góc nhìn là cà khịa, một bên thì nói về tốt, nâng bi. Thì đấy là cái trong cái tuần trước của mình có nói, một nội dung nhưng nhìn ở nhiều góc cạnh và nhiều vấn đề. Thì nó ra được những cái khác nhau. Và mình làm, anh em là nhất quán, thì cái kênh Nabi kia thì auto là như vậy. Nội dung content phải như vậy và mình hiểu được cái điều đấy thì mình hiểu cái khán giả của mình thích như vậy. Thì mình đưa yêu cầu cho các bạn content làm là nó cũng sẽ như vậy. thì nó nhất quán cái kênh như vậy thì đến tại vì mình hiểu khán giả mình làm được nhất quán thì đây là cái cách thức để có thể ích lên tổng Tổng hợp lại đơn giản là chúng ta phải mò mẫm từ ban đầu. Test rất nhiều, thử ngách, tìm ngách, cho khi tìm đúng. Và tìm đúng được rồi. Thì bắt đầu kênh sẽ lên 30.000, 50.000, 100.000. Thì bắt đầu nhân cái top những cái kênh dẫn đầu ra. có khi chỉ cần 1 đến 3 video dẫn đầu thôi, hoặc là video dẫn kênh. Nghiên cứu thật mạnh, xoáy sâu rồi đấy, tìm các góc, các cái mảng, các cái góc nhìn liên quan đến cái nhóm này, để chúng ta có thể làm và chúng ta phát triển là có kết quả thôi. Cứ lên đến 100.000, lên 1 triệu, cực kỳ nhanh. Ví dụ bắt đầu anh thấy có dấu hiệu nhé, có 1 video lên khoảng 7-8.000 view rồi, mà mới có 1-200 sub thôi. Tiếp tục đào sâu video đấy, xoáy sâu vào, vào trong số liệu phân tích, phạm vi tiếp cận này. Phân tích cái kênh ra, tìm kiếm làm những cái nội dung xoáy quanh đấy, vẫn SEO thêm những cái từ khóa như vậy. Tìm những cái nội dung đã giúp cho video của mình họ xem, sản xuất kiểu tương tự. Là lên, nhanh lên. Cái quan trọng là ban đầu là mình chưa test ở cái đoạn đấy thôi. Cái cách này mình làm nhé, chưa từng thất bại nhé. Tiếp theo nữa là Khi mà Mình phân tích các yếu tố, tiêu đề, nội dung content, từ khóa tìm kiếm các video đề xuất, những dạng như vừa nãy mình nói. Cuối cùng thì những điểm chung của nó là gì? Thì mình lại phân tích ra, nốt lại nhé. Điểm chung của nó là gì để làm sao? Mục tiêu của mình cuối cùng vẫn là để phục vụ nhóm khán giả của mình. Đấy mới là cái quan trọng. Tiêu đề từ khóa nội dung content hay là các cái video đề xuất của mình. Quay đi quẩn lại, nó là phục vụ cái nhóm khán giả mà mình đang săn, đang tìm. Kể cả là cái nội dung ở trong cái khóa học mình nói là anh em mình cần phải có một cái gọi là từ khóa lý tưởng. Từ khóa lý tưởng là gì? Từ khóa lý tưởng thực chất ở trong khóa này mình mới nói nó sâu sắc về việc là thực chất đấy là từ khóa mà khán giả. Đang quen. Mình tạo ra thói quen cho một cái nhóm khán giả về cái từ khóa đấy. Thì họ nhìn thấy cái thói quen như vậy thì họ xem thôi. Một yếu tố về tâm lý. Rồi chúng ta có được 2 cái dạng là thứ nhất là mình đang xem một video, mình hiểu được video đằng trước, tất cả những video đằng trước nó đang đề xuất video của mình. Cái thứ 2 là bản thân cái video đấy của mình nó đang như thế nào Thì 2 cái phần đấy là 2 cái phần mà chung quy lại vẫn là thấu hiểu của khách hàng Rồi chúng ta đến phần tiếp theo là cái video nối tiếp cái video được đề xuất đấy Thì nó như thế nào Thì cái này thì nó rất là đơn giản rồi anh em em có thể thấy là Từ 1 cái video của mình Đây là video Đề xuất video của mình Sau đến video được đề xuất Thì ở bên phải này này Góc phải màn hình của mình Nó sẽ có những video mà nó đề xuất tiếp Thì những cái này là những cái mà anh em nên dùng cái tab ẩn danh nhé Tab ẩn danh của Google Chrome đây Ở trên này mình hãy nói ẩn danh này Để làm sao nó không lưu lại cái cookie người dùng ấy Thì nó đưa ra những cái đề xuất này nó chuẩn hơn so với một người mà mình hay xem các kênh rồi thì nó không đúng nữa. Thì cũng đơn giản là mình lại chụp lại toàn bộ những cái phần này, chụp lại toàn bộ cái phần bên phải này. Đưa vào Word, Excel gì đấy, chụp. Thì nó ra được những cái dạng như này. Đây là những cái dạng mà nội dung bên phải mà mình đang được đề xuất đấy. Nó là nối cái đề xuất của mình Cứ chụp lại toàn bộ Anh em chụp lại toàn bộ Làm Word, Excel thành một cái bản để phân tích Làm thật tốt vào Bản để phân tích Sau đấy mình có giảng giải cho đội ngũ của mình Hay là giảng giải cho đội content Hay là các đội kia kìa Thì họ sẽ hiểu được cái tư Để họ có thể làm được nó đơn giản hơn. Và khi mà mình tìm thấy được những cái nội dung như này, nó có các cái luồng khán giả khác nhau. Ví dụ đây là cái luồng ở trong kênh của mình, là màu đỏ này, mình làm này, màu đỏ này. Thì tức là cái nội dung là từ video trước đến video sau, đến video sau nữa là nội dung là nó đề xuất nội dung ở ngoài, xong đến các nội dung của mình, rồi lại đến tiếp các nội dung của mình. Thì nó là một luồng khán giả. Tiếp theo nó có những luồng khác ở ngoài kênh của mình. Nó đề xuất cả những kênh ở ngoài này. Tiền đạo, Web 5 Ngày, Đọc sách cùng Thùy Yên, các kiểu để mình biết có thêm góc nhìn về cái luồng như vậy. Vẫn một câu hỏi đặt ra là phân tích luồng đề xuất trong kênh thì muốn đề xuất thì làm nào. Thì cũng lại như vừa nãy thôi. Vẫn là phân tích cái từ khóa, à vẫn là phân tích giống như video dẫn kênh á, vẫn tìm các cái chung cái chủ đề đề xuất của mình. Từ khóa này, chủ đề này, sự lập đi lập lại nhiều nhất, chung nhất của các video. Và mình đào sâu ở đấy. Đào sâu ở đó. Đấy là đề xuất của trong kênh Tức là cái luồng tiếp theo Là nó các nội dung của mình Còn cái dạng tiếp theo nữa là Đề xuất Chúng ta có thể mở rộng cái luồng đề xuất của mình Là Phân tích nhóm video đề xuất bên phải, mở rộng tệp khán giả ra các video ngoài kênh của mình. Xem chủ đề nào có thể khai thác thêm mà vẫn đúng tệp khán giả. Thì mình có thể làm. Như ở đây, ở đây chẳng hạn thì có rất nhiều cái đề xuất đằng sau này. Mình phải chọn để xem là cái chủ đề nào. Một đó nó gần giống chủ đề của mình. Hai là cái nội dung mà khán giả họ cũng quan tâm như thế này nhưng cũng lại phải xem xem với lại cái kênh của mình. Cũng là đọc sách này, cũng là làm những cái dạng như thế này. Như ví dụ đầu tư chứng khoán chẳng hạn thì cái này bên mình không làm. mình sẽ không chọn kể cả nó có nhiều view đó thì như ở đây mình đưa ra là những view này phân tích nhóm ở bên phải mở rộng tệp khán giả ngoài những cái luồng của mình thì nó có thêm những cái luồng khác ở ngoài nữa xong bắt đầu tìm chủ đề nào có thể khai thác thêm mà vẫn đúng tệp khán giả nhớ nhé xem chủ đề nào có thể khai thác thêm mà vẫn đúng tệp khán giả quay trở lại là vẫn phục vụ khán giả của mình thôi Bí quyết thành công là có thêm chủ đề tiền bạc, ngoài ra có cách đầu tư tiền, cách kiếm tiền, cách tạo ra tiền, tìm thêm những chủ đề khác như vậy. Thì nó mở rộng, nó thêm được những cái khác về tư duy, về sống khôn ngoan, về cách nói chuyện nó rất là rất là nhiều. để mình chọn, để mình test. Ngoài ra nữa thì khi mà vào trong kênh mình xem đối tượng người xem và trong số liệu phân tích này, nó có cái phần đối tượng người xem, đây cũng là phần mình cần phải khai thác trong kênh của mình. Những kênh khác mà khán giả của bạn cũng xem. Ngẫm Plus, Mắt Thần, Góc Nhìn Đa Chiều, Web 5 Ngày. Những video khác mà khán giả của bạn cũng xem. Anh em có để ý nhé, kênh Bí quyết thành công, kênh này nói làm giàu, cách thức tư duy để phát triển. Người ta vẫn xem vợ hoa hồng tuổi lái xe riêng, người ta vẫn xem phim, vẫn xem gái xinh hảo hán, người ta vẫn xem kênh bóng đá, người ta vẫn xem tin tức. Một người có rất nhiều cái có thể làm mà, có thể xem mà. Đây là cái bí mật về việc là Anh em làm YouTube kiếm tiền Họ nhân kênh Và họ phát triển kênh Không phải 1 kênh nữa mà 20 kênh, 30 kênh như thế nào Cũng là bên mình đang làm Nó chính là phân tích từ chính kênh của mình Xem những cái kênh khác Sau đó xem những cái video nội dung khán giả đã xem Các bạn có thể tìm ra một kênh bóng đá Nó cũng như thế này thôi. Là mình tìm cái nội dung kênh của mình. Thì vô tình mình thấy rằng, à, ở đây nó có những cái dạng như thế này, người ta cũng thích xem bóng đá, cái nội dung kênh xem bóng đá. Và mình nghiên cứu cái dạng mô típ video bóng đá như thế nào? Xem bên mình có đủ năng lực để sản xuất không? Đủ khả năng làm không? Sau đó thì bên mình cho làm những cái nội dung kiểu tương tự như này hoặc chất lượng tốt hơn. Sau đó thì mình dùng cái kênh Bí quyết thành công này, kéo nhẹ cái video này. Ở trong cái tab cộng đồng, giới thiệu sang tab cộng đồng Và giới thiệu trong các cái nội dung video mà nó có kiểu tương tự về Ví dụ Công Vinh Thủy Tiên chẳng hạn Những cái người mà thành công từ bóng đá Hoặc là những cái tin tức hoặc là cách kiếm tiền của Quang Hải chẳng hạn Khi mà bán thương hiệu Hoặc là Quang Hải ra nước ngoài thì là tốt hay xấu so với việc ở Việt Nam chẳng hạn Ví dụ ở đây là những cái nội dung mà bí quyết thành công có thể kéo sang được Thì đây chính là cách mình tạo tìm được ra một cái chủ đề mới, một cái kênh mới. Và khi mà kéo sang phát này là bắt đầu nó có view luôn. Vì là cái kênh này nó to và nó đã có những nội dung, những người đã thích xem những cái dạng chủ đề này rồi. Nên mình kéo sang phát là video đầu tiên cái là có kết quả luôn. Nên là những cái kênh sau nhân lên nó rất nhanh anh em ạ. Nó không khó như cái kênh ban đầu đâu. Nên là bên mình mới có mấy chục kênh nó là như thế chứ. Bình thường anh em tự làm một kênh thì nó phải mất 3-6 tháng thì nó mới lên được. Nhưng mà khi mà đã có kênh và có hệ thống kênh rồi thì bọn mình đẩy nó nhanh lắm. Đấy là một cái keyword, nhưng mà quay trở lại là cái nguyên lý của nó là gì? Nguyên lý của nó là một cái nhóm khán giả họ có thể xem rất nhiều nội dung. Thế vậy là mình chọn cái nội dung nào để có thể sáng tạo cái content của mình thì mình có thể dựa vào cái đối tượng người xem này và đưa ra những cái phân tích của YouTube. Họ đưa ra những cái nội dung như vậy. Những cái mà họ đã đưa ra và máy nó tìm chứ không phải mình nhé. Nhiều lúc máy nó tìm nó còn tốt hơn người rất là nhiều. Nên là mình cứ tin vào những cái thông số mà họ đưa ra như thế này. Mình nghiên cứu thì nó ok. Tuy nhiên Google trong cái trải nghiệm của mình nó chỉ có một cái là chúng ta không nên tin vào việc gợi ý của Google. Nó là cái quảng cáo. Anh em mà dựa theo tối ưu, theo những cái mà Google nó quảng cáo thì tốn tiền kinh khủng luôn. Riêng quảng cáo thì chúng ta cần phải làm nó khác. Mình trong khoảng 3 tháng gần đây, mình nghiên cứu rất kỹ về quảng cáo Google Về từ việc nuôi content, nuôi tài khoản, cách thức làm, cách thức nhân Rất kỹ về quảng cáo Google rồi Nhưng mà nó lại không dùng để chọn Trong cái mảng YouTube nó dùng ở một vài mảng khác. Tuy nhiên là nó vẫn đủ kiến thức để anh em có thể làm chiến đấu về việc là chúng ta đến lúc mà chúng ta cần phải đốt tiền. Chúng ta làm như thế nào? Sẽ có cái giai đoạn về việc là chúng ta test và chúng ta chạy quảng cáo. Và bây giờ cái tài khoản Google nó rất là khó. Thật sự khó vì anh em chạy quảng cáo anh em sẽ biết nó chết tài khoản liên tục. Thế làm nào để chạy được cái này thì mình cũng có cách và mình cũng xử lý được rồi. Nó rất ok. Đến cái phần quảng cáo mình sẽ share lại cho anh em những cái phần này. Ngoài ra nữa nếu mà trong anh em nào đang làm đến Affiliate ấy, anh em muốn quan tâm đến quảng cáo Google thì mình cũng có thể chia sẻ thêm về quảng cáo Google. Nhưng anh em ở Eagle, anh em triệu phú ở Eagle mà từ Affiliate ấy toàn bộ cũng bắt đầu từ quảng cáo Google hết. Có một cái lưu ý khi mà mở rộng đề xuất là cái này mình luôn luôn nói nè, sản xuất video cơ bản là phục vụ một nhóm khán giả của mình, của kênh của mình. Nên khi mở rộng cần có sự liên kết giữa các video để mở rộng đúng hướng, không sa vào trending và bị lệch hướng khán giả. Không tham mở rộng view mà nó không cùng với tệp khán giả. Mục đích cuối cùng nó vẫn là phục vụ khán giả của mình. Nó quan trọng vô cùng luôn. Và để tìm được đúng cái đối tượng khán giả của mình thì chúng ta cần phải có tìm được cái một cái nhóm nhỏ trước. Một cái nhóm nhỏ chấp nhận video của mình trước. Tức là cái ngách. Vì ban đầu là mình chưa làm rộng, chưa làm lớn và chưa phủ thị trường được. Mà YouTube bản chất ban đầu anh em hiểu là khi chúng ta mới làm view ít, sub ít thì cái độ reach của nó cũng sẽ ít. Nên là mình cần phải trân trọng những cái view, cái reach ban đầu của mình. Thì mình cần phải tìm được đúng ngách, nó là như thế. Khi mà mình tìm được đúng ngách rồi thì chúng ta có quyền để mở rộng ngách. Thì chúng ta mở rộng có rất nhiều cách rồi. Đấy là cái mà chúng ta có thể làm. Ok. Thì cái nội dung chính của chúng ta là biết được video nào là video đề xuất video của mình. Cái thứ 2 là video dẫn kênh là video nào. Cái thứ 3 là video nối đề xuất là video nào.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 10.22,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:10,220",
+      "text": "Thuật toán đề xuất của video"
+    },
+    {
+      "id": 2,
+      "start": 10.22,
+      "end": 12.74,
+      "start_time": "00:00:10,220",
+      "end_time": "00:00:12,740",
+      "text": "Cái này là cái mà ai cũng hỏi này"
+    },
+    {
+      "id": 3,
+      "start": 12.74,
+      "end": 17.5,
+      "start_time": "00:00:12,740",
+      "end_time": "00:00:17,500",
+      "text": "Mình nhắc lại nó có cái đề xuất về trang chủ của người đăng ký"
+    },
+    {
+      "id": 4,
+      "start": 17.5,
+      "end": 20.0,
+      "start_time": "00:00:17,500",
+      "end_time": "00:00:20,000",
+      "text": "Thì nó bao gồm 2 phần"
+    },
+    {
+      "id": 5,
+      "start": 20.0,
+      "end": 22.08,
+      "start_time": "00:00:20,000",
+      "end_time": "00:00:22,080",
+      "text": "là các cái tính năng duyệt xem vào video đề xuất"
+    },
+    {
+      "id": 6,
+      "start": 22.08,
+      "end": 24.66,
+      "start_time": "00:00:22,080",
+      "end_time": "00:00:24,660",
+      "text": "ở đây là có những cái"
+    },
+    {
+      "id": 7,
+      "start": 24.66,
+      "end": 25.94,
+      "start_time": "00:00:24,660",
+      "end_time": "00:00:25,940",
+      "text": "nốt rõ rồi"
+    },
+    {
+      "id": 8,
+      "start": 25.94,
+      "end": 27.82,
+      "start_time": "00:00:25,940",
+      "end_time": "00:00:27,820",
+      "text": "anh em đọc và"
+    },
+    {
+      "id": 9,
+      "start": 27.82,
+      "end": 28.76,
+      "start_time": "00:00:27,820",
+      "end_time": "00:00:28,760",
+      "text": "tìm hiểu"
+    },
+    {
+      "id": 10,
+      "start": 30.0,
+      "end": 38.387,
+      "start_time": "00:00:30,000",
+      "end_time": "00:00:38,387",
+      "text": "Trang chủ là trang màn hình chính, bao gồm cả người xem đăng nhập và đăng xuất. Tức là người ta không cần phải đăng nhập vào một người dùng mới cứng,"
+    },
+    {
+      "id": 11,
+      "start": 38.387,
+      "end": 46.773,
+      "start_time": "00:00:38,387",
+      "end_time": "00:00:46,773",
+      "text": "không có Gmail. Vào mà xem một cái kênh nào đấy nhiều, sau này nó vẫn xuất hiện trên trang chủ của họ bình thường. Họ chả cần đăng ký. Cái đấy"
+    },
+    {
+      "id": 12,
+      "start": 46.773,
+      "end": 55.16,
+      "start_time": "00:00:46,773",
+      "end_time": "00:00:55,160",
+      "text": "là cái hay. Cũng không cần phải bắt, phải vào đăng ký tài khoản mới xem được giống như ở Facebook đúng không? Facebook phải đăng ký tài khoản mới vào được."
+    },
+    {
+      "id": 13,
+      "start": 55.16,
+      "end": 58.42,
+      "start_time": "00:00:55,160",
+      "end_time": "00:00:58,420",
+      "text": "Tiếp theo là nguồn cấp dữ liệu kênh đăng ký."
+    },
+    {
+      "id": 14,
+      "start": 58.64,
+      "end": 65.24,
+      "start_time": "00:00:58,640",
+      "end_time": "00:01:05,240",
+      "text": "Như vừa nãy mình nói nó có thể từ bất kỳ cái nguồn lưu lượng truy cập nào nhưng không chỉ riêng những cái nguồn này."
+    },
+    {
+      "id": 15,
+      "start": 65.8,
+      "end": 68.2,
+      "start_time": "00:01:05,800",
+      "end_time": "00:01:08,200",
+      "text": "Nó có thể từ kênh của mình, có thể từ kênh của người khác."
+    },
+    {
+      "id": 16,
+      "start": 71.42,
+      "end": 76.36,
+      "start_time": "00:01:11,420",
+      "end_time": "00:01:16,360",
+      "text": "Và cái dạng thứ 2 là dạng đề xuất là đề xuất trực tiếp từ video."
+    },
+    {
+      "id": 17,
+      "start": 77.42,
+      "end": 82.7,
+      "start_time": "00:01:17,420",
+      "end_time": "00:01:22,700",
+      "text": "Cái dạng đầu tiên nó làm ở cái là chúng ta cần phải có video nhiều rồi."
+    },
+    {
+      "id": 18,
+      "start": 83.0,
+      "end": 84.4,
+      "start_time": "00:01:23,000",
+      "end_time": "00:01:24,400",
+      "text": "Chúng ta đề xuất rồi, chúng ta có người đăng ký rồi."
+    },
+    {
+      "id": 19,
+      "start": 84.4,
+      "end": 88.3,
+      "start_time": "00:01:24,400",
+      "end_time": "00:01:28,300",
+      "text": "Những cái này là những cái mà người ta đã xem video của mình rồi"
+    },
+    {
+      "id": 20,
+      "start": 88.3,
+      "end": 92.82,
+      "start_time": "00:01:28,300",
+      "end_time": "00:01:32,820",
+      "text": "Còn cái thứ 2 là cái dạng trực tiếp nó đề xuất video của mình"
+    },
+    {
+      "id": 21,
+      "start": 92.82,
+      "end": 94.94,
+      "start_time": "00:01:32,820",
+      "end_time": "00:01:34,940",
+      "text": "Mình xem video này đề xuất video kia"
+    },
+    {
+      "id": 22,
+      "start": 95.0,
+      "end": 99.32,
+      "start_time": "00:01:35,000",
+      "end_time": "00:01:39,320",
+      "text": "Hoặc xem nó là cả một cái luồng từ video A đến B đến C đến D"
+    },
+    {
+      "id": 23,
+      "start": 99.32,
+      "end": 102.44,
+      "start_time": "00:01:39,320",
+      "end_time": "00:01:42,440",
+      "text": "Thì nó có 2 cái dạng đề xuất"
+    },
+    {
+      "id": 24,
+      "start": 102.44,
+      "end": 103.696,
+      "start_time": "00:01:42,440",
+      "end_time": "00:01:43,696",
+      "text": "Nó là như vậy"
+    },
+    {
+      "id": 25,
+      "start": 103.696,
+      "end": 111.136,
+      "start_time": "00:01:43,696",
+      "end_time": "00:01:51,136",
+      "text": "Thì hôm nay chúng ta sẽ nói sâu hơn về cái luồng đề xuất của video và của khán giả."
+    },
+    {
+      "id": 26,
+      "start": 111.676,
+      "end": 117.456,
+      "start_time": "00:01:51,676",
+      "end_time": "00:01:57,456",
+      "text": "Cái thực chất khi mà mình nói, anh em mình nói, nhìn cái lượng view, lượng sub á, nó thể hiện cho cái gì?"
+    },
+    {
+      "id": 27,
+      "start": 117.936,
+      "end": 119.796,
+      "start_time": "00:01:57,936",
+      "end_time": "00:01:59,796",
+      "text": "Nó cũng thể hiện cho sự quan tâm của khán giả."
+    },
+    {
+      "id": 28,
+      "start": 120.716,
+      "end": 124.176,
+      "start_time": "00:02:00,716",
+      "end_time": "00:02:04,176",
+      "text": "Nó cũng thể hiện cho việc là cái nội dung của mình nó đúng đối tượng hay không."
+    },
+    {
+      "id": 29,
+      "start": 124.736,
+      "end": 129.656,
+      "start_time": "00:02:04,736",
+      "end_time": "00:02:09,656",
+      "text": "Và cái phần này, chúng ta có các cái thông số về việc là thời gian xem á,"
+    },
+    {
+      "id": 30,
+      "start": 129.656,
+      "end": 139.556,
+      "start_time": "00:02:09,656",
+      "end_time": "00:02:19,556",
+      "text": "Thì chính là cái mà cái khán giả của mình ở lại trên kênh nó như thế nào. Thì chính là cái mà chúng ta cần phải tối ưu những cái như vậy."
+    },
+    {
+      "id": 31,
+      "start": 141.0,
+      "end": 149.676,
+      "start_time": "00:02:21,000",
+      "end_time": "00:02:29,676",
+      "text": "Thì tổng hợp lại chúng ta có 2 phần như vậy. Và tiếp theo chúng ta cần phải có được cái hiểu được cái phần video"
+    },
+    {
+      "id": 32,
+      "start": 149.676,
+      "end": 157.976,
+      "start_time": "00:02:29,676",
+      "end_time": "00:02:37,976",
+      "text": "đề xuất. Thứ 2 là video được đề xuất. Thứ 3 là video nối đề xuất. Tức là đây là video của mình nè, đang xem."
+    },
+    {
+      "id": 33,
+      "start": 157.976,
+      "end": 167.516,
+      "start_time": "00:02:37,976",
+      "end_time": "00:02:47,516",
+      "text": "Thế vậy là video mình đang xem này, video nào nó đang đề xuất video của mình? Và từ video đang xem này thì đang đề xuất tiếp video này?"
+    },
+    {
+      "id": 34,
+      "start": 169.976,
+      "end": 180.0,
+      "start_time": "00:02:49,976",
+      "end_time": "00:03:00,000",
+      "text": "Tức là nó cả một cái luồng khán giả nhé. Tức là người ta có thể xem kênh 1, xong người ta xem kênh 2, xong người ta xem kênh 3, kênh 4, kênh 5, kênh 6, kênh 7. Vì là một người anh em để ý."
+    },
+    {
+      "id": 35,
+      "start": 180.0,
+      "end": 192.42,
+      "start_time": "00:03:00,000",
+      "end_time": "00:03:12,420",
+      "text": "Một người thì họ không có, không phải là chỉ có một sở thích duy nhất, mà một người có nhiều sở thích và có thể xem được nhiều nội dung đa dạng khác nhau."
+    },
+    {
+      "id": 36,
+      "start": 193.74,
+      "end": 205.1,
+      "start_time": "00:03:13,740",
+      "end_time": "00:03:25,100",
+      "text": "Nên là khi mà mình xem bất kỳ một cái video nào thì mình cũng có thể phân tích được ngược lại cái video nào đang đề xuất video đó và video đó đề xuất cái video nào tiếp theo."
+    },
+    {
+      "id": 37,
+      "start": 205.1,
+      "end": 210.58,
+      "start_time": "00:03:25,100",
+      "end_time": "00:03:30,580",
+      "text": "Thì đấy là cái phần giúp cho mình thấu hiểu hơn được cái hành vi của khách hàng."
+    },
+    {
+      "id": 38,
+      "start": 211.34,
+      "end": 216.34,
+      "start_time": "00:03:31,340",
+      "end_time": "00:03:36,340",
+      "text": "Mở rộng được cái tệp ra ngoài những video này họ đang xem, họ còn muốn xem những cái nào nữa."
+    },
+    {
+      "id": 39,
+      "start": 217.06,
+      "end": 220.32,
+      "start_time": "00:03:37,060",
+      "end_time": "00:03:40,320",
+      "text": "Để mình tìm cách mình mở rộng, mình phục vụ cái tệp khán giả của mình."
+    },
+    {
+      "id": 40,
+      "start": 223.1,
+      "end": 227.66,
+      "start_time": "00:03:43,100",
+      "end_time": "00:03:47,660",
+      "text": "Khi mà phân tích một video đó thì cần biết thứ nhất video nào đang đề xuất video của mình."
+    },
+    {
+      "id": 41,
+      "start": 228.3,
+      "end": 231.82,
+      "start_time": "00:03:48,300",
+      "end_time": "00:03:51,820",
+      "text": "Cái thứ hai là video đang được đề xuất nó như thế nào, tại sao nó lại được đề xuất."
+    },
+    {
+      "id": 42,
+      "start": 231.82,
+      "end": 238.02,
+      "start_time": "00:03:51,820",
+      "end_time": "00:03:58,020",
+      "text": "Cái thứ 3 là video đang được đề xuất đấy, nó tiếp tục đề xuất video nào."
+    },
+    {
+      "id": 43,
+      "start": 239.44,
+      "end": 249.28,
+      "start_time": "00:03:59,440",
+      "end_time": "00:04:09,280",
+      "text": "Anh em hiểu cái luồng khán giả nó là như vậy, cái luồng hành vi của họ là như vậy, cái luồng mà họ đang làm ở trên Internet nó là như vậy."
+    },
+    {
+      "id": 44,
+      "start": 249.76,
+      "end": 252.9,
+      "start_time": "00:04:09,760",
+      "end_time": "00:04:12,900",
+      "text": "Thế mình nói là Internet luôn luôn để lại dấu vết, nó là như thế."
+    },
+    {
+      "id": 45,
+      "start": 252.9,
+      "end": 254.7,
+      "start_time": "00:04:12,900",
+      "end_time": "00:04:14,700",
+      "text": "như thế"
+    },
+    {
+      "id": 46,
+      "start": 254.7,
+      "end": 256.22,
+      "start_time": "00:04:14,700",
+      "end_time": "00:04:16,220",
+      "text": "khi mà"
+    },
+    {
+      "id": 47,
+      "start": 256.22,
+      "end": 258.28,
+      "start_time": "00:04:16,220",
+      "end_time": "00:04:18,280",
+      "text": "mình phải hiểu được những cái"
+    },
+    {
+      "id": 48,
+      "start": 258.28,
+      "end": 259.3,
+      "start_time": "00:04:18,280",
+      "end_time": "00:04:19,300",
+      "text": "nội dung như vậy"
+    },
+    {
+      "id": 49,
+      "start": 259.3,
+      "end": 262.62,
+      "start_time": "00:04:19,300",
+      "end_time": "00:04:22,620",
+      "text": "thì đến lúc mình có làm video hay mình phân tích video"
+    },
+    {
+      "id": 50,
+      "start": 262.62,
+      "end": 265.44,
+      "start_time": "00:04:22,620",
+      "end_time": "00:04:25,440",
+      "text": "hay mình có thử sai hay mình có làm sản xuất"
+    },
+    {
+      "id": 51,
+      "start": 265.44,
+      "end": 267.5,
+      "start_time": "00:04:25,440",
+      "end_time": "00:04:27,500",
+      "text": "thì nó nhanh thành công hơn"
+    },
+    {
+      "id": 52,
+      "start": 267.5,
+      "end": 270.06,
+      "start_time": "00:04:27,500",
+      "end_time": "00:04:30,060",
+      "text": "cho việc mình làm mò"
+    },
+    {
+      "id": 53,
+      "start": 270.06,
+      "end": 272.9,
+      "start_time": "00:04:30,060",
+      "end_time": "00:04:32,900",
+      "text": "và đặc biệt là khi mà mình làm những cái kênh mà mình"
+    },
+    {
+      "id": 54,
+      "start": 272.9,
+      "end": 274.72,
+      "start_time": "00:04:32,900",
+      "end_time": "00:04:34,720",
+      "text": "không biết đến ngôn ngữ nhiều nữa"
+    },
+    {
+      "id": 55,
+      "start": 274.72,
+      "end": 277.2,
+      "start_time": "00:04:34,720",
+      "end_time": "00:04:37,200",
+      "text": "mình không hiểu được ngôn ngữ"
+    },
+    {
+      "id": 56,
+      "start": 277.2,
+      "end": 279.18,
+      "start_time": "00:04:37,200",
+      "end_time": "00:04:39,180",
+      "text": "và mình không hiểu được hết những cái ý"
+    },
+    {
+      "id": 57,
+      "start": 279.18,
+      "end": 280.74,
+      "start_time": "00:04:39,180",
+      "end_time": "00:04:40,740",
+      "text": "của cái ngôn ngữ mà họ muốn nói"
+    },
+    {
+      "id": 58,
+      "start": 280.74,
+      "end": 283.48,
+      "start_time": "00:04:40,740",
+      "end_time": "00:04:43,480",
+      "text": "nhưng mà khi mà dựa vào những cái video"
+    },
+    {
+      "id": 59,
+      "start": 283.48,
+      "end": 285.1,
+      "start_time": "00:04:43,480",
+      "end_time": "00:04:45,100",
+      "text": "những cái video và những cái thông số"
+    },
+    {
+      "id": 60,
+      "start": 285.1,
+      "end": 286.716,
+      "start_time": "00:04:45,100",
+      "end_time": "00:04:46,716",
+      "text": "được phân tích này, làm được hết"
+    },
+    {
+      "id": 61,
+      "start": 287.0,
+      "end": 295.296,
+      "start_time": "00:04:47,000",
+      "end_time": "00:04:55,296",
+      "text": "Đầu tiên chúng ta sẽ nói với nhau về trong cái kênh của mình một cái video nó đang được đề xuất"
+    },
+    {
+      "id": 62,
+      "start": 295.296,
+      "end": 303.876,
+      "start_time": "00:04:55,296",
+      "end_time": "00:05:03,876",
+      "text": "bởi video nào thì chúng ta click vào cái phần lưu lượng truy cập và nó có cái phần là video đề xuất."
+    },
+    {
+      "id": 63,
+      "start": 303.876,
+      "end": 312.796,
+      "start_time": "00:05:03,876",
+      "end_time": "00:05:12,796",
+      "text": "Kích ở đây, nó là toàn bộ những cái dấu vết vì việc những cái video nào đang đề xuất video mình, bao gồm video trong kênh của mình và video ở ngoài."
+    },
+    {
+      "id": 64,
+      "start": 314.716,
+      "end": 322.996,
+      "start_time": "00:05:14,716",
+      "end_time": "00:05:22,996",
+      "text": "Ví dụ ở đây mình, đấy, ví dụ một video nó đề xuất nhé, còn video của mình là video được đề xuất, thế là đây là video của mình."
+    },
+    {
+      "id": 65,
+      "start": 324.456,
+      "end": 331.596,
+      "start_time": "00:05:24,456",
+      "end_time": "00:05:31,596",
+      "text": "Nhưng mà làm sao để mình biết được những cái video nào, đây đằng trước này này, nó đang đề xuất video của mình ở bên phải này, mà người ta xem."
+    },
+    {
+      "id": 66,
+      "start": 331.596,
+      "end": 338.496,
+      "start_time": "00:05:31,596",
+      "end_time": "00:05:38,496",
+      "text": "Thì đơn giản đấy, chỉ cần chúng ta cần kích vào cái phần video đề xuất này là nó có toàn bộ các thông số đấy."
+    },
+    {
+      "id": 67,
+      "start": 340.576,
+      "end": 344.436,
+      "start_time": "00:05:40,576",
+      "end_time": "00:05:44,436",
+      "text": "Đây là những cái thông số chính để chúng ta có thể tìm hiểu."
+    },
+    {
+      "id": 68,
+      "start": 344.876,
+      "end": 347.456,
+      "start_time": "00:05:44,876",
+      "end_time": "00:05:47,456",
+      "text": "Kích vào đấy, ví dụ kích vào bí quyết thành công chẳng hạn."
+    },
+    {
+      "id": 69,
+      "start": 347.796,
+      "end": 355.536,
+      "start_time": "00:05:47,796",
+      "end_time": "00:05:55,536",
+      "text": "Thì cái video mà đang đề xuất video của mình nhiều nhất là nghèo cỡ mấy cũng phải hiểu 4 cái này."
+    },
+    {
+      "id": 70,
+      "start": 355.536,
+      "end": 357.396,
+      "start_time": "00:05:55,536",
+      "end_time": "00:05:57,396",
+      "text": "Thì nó là video trong kênh của mình."
+    },
+    {
+      "id": 71,
+      "start": 358.096,
+      "end": 360.0,
+      "start_time": "00:05:58,096",
+      "end_time": "00:06:00,000",
+      "text": "Nhưng nó sẽ có những cái video nó khác nữa."
+    },
+    {
+      "id": 72,
+      "start": 360.0,
+      "end": 361.8,
+      "start_time": "00:06:00,000",
+      "end_time": "00:06:01,800",
+      "text": "ở ngoài kênh của mình, nó vẫn đề xuất bình thường."
+    },
+    {
+      "id": 73,
+      "start": 363.46,
+      "end": 366.54,
+      "start_time": "00:06:03,460",
+      "end_time": "00:06:06,540",
+      "text": "Sau đó thì, đây là những cái video này của mình nhé."
+    },
+    {
+      "id": 74,
+      "start": 368.46,
+      "end": 371.74,
+      "start_time": "00:06:08,460",
+      "end_time": "00:06:11,740",
+      "text": "Mình cần chụp lại toàn bộ những cái thumbnail tiêu đề này."
+    },
+    {
+      "id": 75,
+      "start": 372.82,
+      "end": 377.82,
+      "start_time": "00:06:12,820",
+      "end_time": "00:06:17,820",
+      "text": "Kích nhẹ vào cái video này cái là nó cũng hiện lên cái phần ở bên trên thumbnail tiêu đề mình chụp rồi."
+    },
+    {
+      "id": 76,
+      "start": 380.94,
+      "end": 388.38,
+      "start_time": "00:06:20,940",
+      "end_time": "00:06:28,380",
+      "text": "Ví dụ như mình đây, mình chụp lại toàn bộ những cái video nó đang đề xuất cái video của mình nhận ạ."
+    },
+    {
+      "id": 77,
+      "start": 390.0,
+      "end": 399.7,
+      "start_time": "00:06:30,000",
+      "end_time": "00:06:39,700",
+      "text": "Ở đây nó đang có những cái phần video trong kênh của mình đề xuất video Ngẫm Plus hay là video tài chính 24h. Đây là những cái kênh"
+    },
+    {
+      "id": 78,
+      "start": 399.7,
+      "end": 409.4,
+      "start_time": "00:06:39,700",
+      "end_time": "00:06:49,400",
+      "text": "khác nó đề xuất. Tư duy làm giàu nó đề xuất. Đấy là những cái kênh khác họ đang đề xuất video của mình. Mình cứ nốt hết lại."
+    },
+    {
+      "id": 79,
+      "start": 409.4,
+      "end": 419.08,
+      "start_time": "00:06:49,400",
+      "end_time": "00:06:59,080",
+      "text": "Thì đây là cái phần mà giúp cho mình hiểu được video đằng trước, đằng trước đấy nhé. Họ xem những cái này, một trong số những cái này. Sau đó họ được đề xuất"
+    },
+    {
+      "id": 80,
+      "start": 419.08,
+      "end": 428.76,
+      "start_time": "00:06:59,080",
+      "end_time": "00:07:08,760",
+      "text": "bên phải của mình, là video của mình. Thì đấy là một cái hành vi là họ cũng đang quan tâm đến cái nội dung kiểu tương tự như thế. Thì đấy là một phần."
+    },
+    {
+      "id": 81,
+      "start": 428.76,
+      "end": 434.8,
+      "start_time": "00:07:08,760",
+      "end_time": "00:07:14,800",
+      "text": "Sau đấy thì mình có phân tích ở đây là chủ đề xuyên suốt là làm giàu Bí quyết thành công này."
+    },
+    {
+      "id": 82,
+      "start": 435.18,
+      "end": 441.62,
+      "start_time": "00:07:15,180",
+      "end_time": "00:07:21,620",
+      "text": "Những cái nội dung giống nhau chẳng hạn là thumbnail thì có người góc 1 phần 3 này, doanh nhân nổi tiếng này."
+    },
+    {
+      "id": 83,
+      "start": 441.62,
+      "end": 451.42,
+      "start_time": "00:07:21,620",
+      "end_time": "00:07:31,420",
+      "text": "Thì đấy là cái nội dung mà mình vừa phân tích là những cái điểm chung."
+    },
+    {
+      "id": 84,
+      "start": 451.96,
+      "end": 459.496,
+      "start_time": "00:07:31,960",
+      "end_time": "00:07:39,496",
+      "text": "Thế vậy là mình cần phải tìm xem những cái mô típ lập lại giống nhau mà khán giả đang xem, đang thích xem."
+    },
+    {
+      "id": 85,
+      "start": 459.496,
+      "end": 460.176,
+      "start_time": "00:07:39,496",
+      "end_time": "00:07:40,176",
+      "text": "Nó là như thế nào?"
+    },
+    {
+      "id": 86,
+      "start": 461.576,
+      "end": 463.896,
+      "start_time": "00:07:41,576",
+      "end_time": "00:07:43,896",
+      "text": "Vẫn là những công thức rất đơn giản như vậy thôi."
+    },
+    {
+      "id": 87,
+      "start": 465.096,
+      "end": 466.716,
+      "start_time": "00:07:45,096",
+      "end_time": "00:07:46,716",
+      "text": "Sau đó tiếp tục mình làm."
+    },
+    {
+      "id": 88,
+      "start": 467.056,
+      "end": 468.176,
+      "start_time": "00:07:47,056",
+      "end_time": "00:07:48,176",
+      "text": "Và cái này nó có nhược điểm."
+    },
+    {
+      "id": 89,
+      "start": 468.596,
+      "end": 470.276,
+      "start_time": "00:07:48,596",
+      "end_time": "00:07:50,276",
+      "text": "Tại sao mình chưa chia sẻ cái này ngay cho anh em?"
+    },
+    {
+      "id": 90,
+      "start": 471.056,
+      "end": 472.976,
+      "start_time": "00:07:51,056",
+      "end_time": "00:07:52,976",
+      "text": "Và cái này, cái module này nó mới có."
+    },
+    {
+      "id": 91,
+      "start": 473.396,
+      "end": 474.816,
+      "start_time": "00:07:53,396",
+      "end_time": "00:07:54,816",
+      "text": "Sau rất dài thời gian rồi."
+    },
+    {
+      "id": 92,
+      "start": 475.016,
+      "end": 479.196,
+      "start_time": "00:07:55,016",
+      "end_time": "00:07:59,196",
+      "text": "Bởi vì là kênh nó phải có lượng view sub nhất định thì nó mới có dữ liệu để nghiên cứu được."
+    },
+    {
+      "id": 93,
+      "start": 480.216,
+      "end": 488.636,
+      "start_time": "00:08:00,216",
+      "end_time": "00:08:08,636",
+      "text": "Cái thứ 2 là cái lượng truy cập theo thời gian nó khác nhau nên có thể theo cái trending nhiều khi phân tích video nó bị lệch so với cái nhóm chủ đề đang xuyên suốt."
+    },
+    {
+      "id": 94,
+      "start": 489.076,
+      "end": 495.656,
+      "start_time": "00:08:09,076",
+      "end_time": "00:08:15,656",
+      "text": "Ví dụ phân tích vào cái thời mà đang Covid chẳng hạn thì cái nội dung người ta đang quan tâm rất rất nhiều đến Covid thì cứ nói Covid là người ta xem."
+    },
+    {
+      "id": 95,
+      "start": 496.316,
+      "end": 497.596,
+      "start_time": "00:08:16,316",
+      "end_time": "00:08:17,596",
+      "text": "Lúc đấy nó là trend thị trường."
+    },
+    {
+      "id": 96,
+      "start": 497.596,
+      "end": 507.596,
+      "start_time": "00:08:17,596",
+      "end_time": "00:08:27,596",
+      "text": "Nếu mà mình dùng cái đấy để mình phân tích mà mình không tỉnh táo thì mình cứ đi theo follow những cái như vậy thì nó cũng sẽ, cái kết quả nó sẽ bị lệch."
+    },
+    {
+      "id": 97,
+      "start": 507.976,
+      "end": 515.886,
+      "start_time": "00:08:27,976",
+      "end_time": "00:08:35,886",
+      "text": "Cái thứ 3 là có thể là tham anh em làm có thể là vì có được những cái thông số như"
+    },
+    {
+      "id": 98,
+      "start": 515.886,
+      "end": 523.796,
+      "start_time": "00:08:35,886",
+      "end_time": "00:08:43,796",
+      "text": "vậy nên anh em đang làm bất chấp cái ban đầu để tham view nên làm nhiều chủ đề nó bị loãng kênh."
+    },
+    {
+      "id": 99,
+      "start": 523.796,
+      "end": 527.116,
+      "start_time": "00:08:43,796",
+      "end_time": "00:08:47,116",
+      "text": "Khi mà mình phân tích view nó sẽ khó hơn về sau."
+    },
+    {
+      "id": 100,
+      "start": 528.636,
+      "end": 529.816,
+      "start_time": "00:08:48,636",
+      "end_time": "00:08:49,816",
+      "text": "Đặt ra câu hỏi là"
+    },
+    {
+      "id": 101,
+      "start": 529.816,
+      "end": 531.916,
+      "start_time": "00:08:49,816",
+      "end_time": "00:08:51,916",
+      "text": "Ở đây ai cũng muốn đề xuất?"
+    },
+    {
+      "id": 102,
+      "start": 532.556,
+      "end": 533.536,
+      "start_time": "00:08:52,556",
+      "end_time": "00:08:53,536",
+      "text": "Thì đề xuất thì làm nè"
+    },
+    {
+      "id": 103,
+      "start": 533.536,
+      "end": 536.096,
+      "start_time": "00:08:53,536",
+      "end_time": "00:08:56,096",
+      "text": "Thì vẫn quay trở lại"
+    },
+    {
+      "id": 104,
+      "start": 536.096,
+      "end": 539.516,
+      "start_time": "00:08:56,096",
+      "end_time": "00:08:59,516",
+      "text": "Cái thứ nhất là nghiên cứu chủ đề"
+    },
+    {
+      "id": 105,
+      "start": 540.0,
+      "end": 542.5,
+      "start_time": "00:09:00,000",
+      "end_time": "00:09:02,500",
+      "text": "Để hiểu được mô típ khán giả muốn xem."
+    },
+    {
+      "id": 106,
+      "start": 545.1,
+      "end": 551.6,
+      "start_time": "00:09:05,100",
+      "end_time": "00:09:11,600",
+      "text": "Chủ đề ở đây có thể hiểu là một là cái chủ đề lớn của khán giả muốn xem là cái nội dung kênh mình muốn làm."
+    },
+    {
+      "id": 107,
+      "start": 552.1,
+      "end": 559.44,
+      "start_time": "00:09:12,100",
+      "end_time": "00:09:19,440",
+      "text": "Cái thứ hai là chủ đề ngách, là những cái ngách video, những cái nội dung nào mà mình có thể làm."
+    },
+    {
+      "id": 108,
+      "start": 559.88,
+      "end": 563.76,
+      "start_time": "00:09:19,880",
+      "end_time": "00:09:23,760",
+      "text": "Cái quan trọng là giữ được cái từ khóa là khán giả muốn xem."
+    },
+    {
+      "id": 109,
+      "start": 564.28,
+      "end": 565.32,
+      "start_time": "00:09:24,280",
+      "end_time": "00:09:25,320",
+      "text": "Quan trọng, cực kỳ quan trọng."
+    },
+    {
+      "id": 110,
+      "start": 566.62,
+      "end": 568.18,
+      "start_time": "00:09:26,620",
+      "end_time": "00:09:28,180",
+      "text": "Insight, Insight khách hàng."
+    },
+    {
+      "id": 111,
+      "start": 570.0,
+      "end": 580.32,
+      "start_time": "00:09:30,000",
+      "end_time": "00:09:40,320",
+      "text": "Còn sau đó thì về kỹ thuật thì đơn giản là sản xuất các video theo chủ đề, học tập các mô típ về thumbnail, tiêu đề, content để nhắm tới mục tiêu cuối cùng là phục vụ đối tượng khán giả muốn xem."
+    },
+    {
+      "id": 112,
+      "start": 581.54,
+      "end": 590.46,
+      "start_time": "00:09:41,540",
+      "end_time": "00:09:50,460",
+      "text": "Từ đầu đến giờ mình nhấn rất là mạnh vào việc là khán giả nhé, nhắm đến người dùng nhé, nhắm đến một tệp khán giả, một tệp người dùng."
+    },
+    {
+      "id": 113,
+      "start": 591.86,
+      "end": 596.42,
+      "start_time": "00:09:51,860",
+      "end_time": "00:09:56,420",
+      "text": "Mình không nói nhiều về các kỹ thuật, cái này nó liên quan đến insight khách hàng."
+    },
+    {
+      "id": 114,
+      "start": 596.42,
+      "end": 605.933,
+      "start_time": "00:09:56,420",
+      "end_time": "00:10:05,933",
+      "text": "Rồi tiếp theo nữa là ở chính một cái video đề xuất hay là gọi là video dẫn kênh. Có những video nào, dạng nào đang kéo cả kênh của mình lên. Vì"
+    },
+    {
+      "id": 115,
+      "start": 605.933,
+      "end": 615.447,
+      "start_time": "00:10:05,933",
+      "end_time": "00:10:15,447",
+      "text": "thường cái kênh của các bạn lên nó sẽ có những cái bộ video khoảng độ 5-7 video là nhiều view nhất và lúc nào nó cũng được đề xuất nó kéo cái"
+    },
+    {
+      "id": 116,
+      "start": 615.447,
+      "end": 624.96,
+      "start_time": "00:10:15,447",
+      "end_time": "00:10:24,960",
+      "text": "kênh của mình lên. Không video này dẫn kênh thì video kia dẫn kênh. Thế vậy thì top 5 video mà đang dẫn kênh của mình thì phân tích nó như thế nào."
+    },
+    {
+      "id": 117,
+      "start": 628.04,
+      "end": 630.38,
+      "start_time": "00:10:28,040",
+      "end_time": "00:10:30,380",
+      "text": "Là mình đang nói về video được đề xuất."
+    },
+    {
+      "id": 118,
+      "start": 632.28,
+      "end": 635.14,
+      "start_time": "00:10:32,280",
+      "end_time": "00:10:35,140",
+      "text": "Ví dụ, video này là video dẫn kênh của kênh Bí quyết thành công."
+    },
+    {
+      "id": 119,
+      "start": 637.0,
+      "end": 643.056,
+      "start_time": "00:10:37,000",
+      "end_time": "00:10:43,056",
+      "text": "2 triệu view, nó được khoảng 4.300 đô, tức là RPM 2 đô đấy."
+    },
+    {
+      "id": 120,
+      "start": 644.396,
+      "end": 646.296,
+      "start_time": "00:10:44,396",
+      "end_time": "00:10:46,296",
+      "text": "Từ 1 video đấy nhé, đây là 1 video đấy."
+    },
+    {
+      "id": 121,
+      "start": 648.616,
+      "end": 652.416,
+      "start_time": "00:10:48,616",
+      "end_time": "00:10:52,416",
+      "text": "Nó cứ đem lại tiền cho mình đều, đều, đều từ ngày này tháng khác, ngày này tháng khác."
+    },
+    {
+      "id": 122,
+      "start": 652.656,
+      "end": 654.556,
+      "start_time": "00:10:52,656",
+      "end_time": "00:10:54,556",
+      "text": "Nó ít view thôi nhưng mà nó vẫn cứ có tiền."
+    },
+    {
+      "id": 123,
+      "start": 655.016,
+      "end": 667.516,
+      "start_time": "00:10:55,016",
+      "end_time": "00:11:07,516",
+      "text": "Khi mà một cái video này để mình phân tích cái video nó đang đề xuất và video dẫn kênh thì cũng lại phân tích giống hết như lúc trước thôi."
+    },
+    {
+      "id": 124,
+      "start": 667.516,
+      "end": 675.556,
+      "start_time": "00:11:07,516",
+      "end_time": "00:11:15,556",
+      "text": "Mình lại phân tích về tiêu đề của nó đang như thế nào, từ khóa nào, thumbnail nào, dạng nào, kiểu như thế nào."
+    },
+    {
+      "id": 125,
+      "start": 677.216,
+      "end": 683.516,
+      "start_time": "00:11:17,216",
+      "end_time": "00:11:23,516",
+      "text": "Và trong cái phần tiếp cận này nó sẽ có được hết những cái thông số phân tích của một cái kênh để mình có thể tìm."
+    },
+    {
+      "id": 126,
+      "start": 683.516,
+      "end": 692.656,
+      "start_time": "00:11:23,516",
+      "end_time": "00:11:32,656",
+      "text": "Đây, người xem nào đang đến từ video này? Lượt hiển thị hình thu nhỏ bao nhiêu này? Tỷ lệ nhấp và tỷ lệ xem như thế nào?"
+    },
+    {
+      "id": 127,
+      "start": 695.956,
+      "end": 705.076,
+      "start_time": "00:11:35,956",
+      "end_time": "00:11:45,076",
+      "text": "Tiếp theo nữa là các cụm từ tìm kiếm nào của video này? Cách làm giàu này? Kinh doanh gì để giàu này? Học cách làm giàu này? Bí quyết thành công này? Tư duy làm giàu này?"
+    },
+    {
+      "id": 128,
+      "start": 706.756,
+      "end": 713.336,
+      "start_time": "00:11:46,756",
+      "end_time": "00:11:53,336",
+      "text": "Thì sau này những cái từ khóa và những cái nội dung kiểu như thế này á, mình có thể cho vào một video khác và mình cũng xem những từ khóa như thế này."
+    },
+    {
+      "id": 129,
+      "start": 713.516,
+      "end": 715.796,
+      "start_time": "00:11:53,516",
+      "end_time": "00:11:55,796",
+      "text": "Và nội dung nó tương tự như thế này"
+    },
+    {
+      "id": 130,
+      "start": 715.796,
+      "end": 720.0,
+      "start_time": "00:11:55,796",
+      "end_time": "00:12:00,000",
+      "text": "Thì cũng có khả năng là được ăn đề xuất từ chính kênh"
+    },
+    {
+      "id": 131,
+      "start": 720.0,
+      "end": 723.74,
+      "start_time": "00:12:00,000",
+      "end_time": "00:12:03,740",
+      "text": "Cái này là từ chính kênh của mình."
+    },
+    {
+      "id": 132,
+      "start": 725.76,
+      "end": 729.14,
+      "start_time": "00:12:05,760",
+      "end_time": "00:12:09,140",
+      "text": "Nó cũng có cái phần là nội dung giúp người xem tìm thấy video này."
+    },
+    {
+      "id": 133,
+      "start": 730.16,
+      "end": 732.4,
+      "start_time": "00:12:10,160",
+      "end_time": "00:12:12,400",
+      "text": "Mình cũng lại xem video nào đang đề xuất video này."
+    },
+    {
+      "id": 134,
+      "start": 732.64,
+      "end": 735.82,
+      "start_time": "00:12:12,640",
+      "end_time": "00:12:15,820",
+      "text": "Mình cũng lại phân tích y hệt như là cái cách vừa nãy là mình phân tích cả kênh."
+    },
+    {
+      "id": 135,
+      "start": 736.08,
+      "end": 739.12,
+      "start_time": "00:12:16,080",
+      "end_time": "00:12:19,120",
+      "text": "Bây giờ mình phân tích một video là video dẫn kênh."
+    },
+    {
+      "id": 136,
+      "start": 741.54,
+      "end": 748.94,
+      "start_time": "00:12:21,540",
+      "end_time": "00:12:28,940",
+      "text": "Đây chính là bí mật của việc mình làm chưa từng thất bại."
+    },
+    {
+      "id": 137,
+      "start": 750.0,
+      "end": 753.78,
+      "start_time": "00:12:30,000",
+      "end_time": "00:12:33,780",
+      "text": "Một cái kênh YouTube mà từ 100.000 lên 1 triệu."
+    },
+    {
+      "id": 138,
+      "start": 755.64,
+      "end": 756.4,
+      "start_time": "00:12:35,640",
+      "end_time": "00:12:36,400",
+      "text": "Tức là"
+    },
+    {
+      "id": 139,
+      "start": 756.4,
+      "end": 760.18,
+      "start_time": "00:12:36,400",
+      "end_time": "00:12:40,180",
+      "text": "Ở năm 2017 mình có một cái bài viết"
+    },
+    {
+      "id": 140,
+      "start": 760.18,
+      "end": 764.58,
+      "start_time": "00:12:40,180",
+      "end_time": "00:12:44,580",
+      "text": "Anh em nào làm lên đến 100.000 trên 48h"
+    },
+    {
+      "id": 141,
+      "start": 764.58,
+      "end": 766.66,
+      "start_time": "00:12:44,580",
+      "end_time": "00:12:46,660",
+      "text": "Nhắn tin trực tiếp cho mình"
+    },
+    {
+      "id": 142,
+      "start": 767.0,
+      "end": 771.06,
+      "start_time": "00:12:47,000",
+      "end_time": "00:12:51,060",
+      "text": "Thì mình sẽ hỗ trợ anh em lên 1 triệu trên 48h trong khoảng 2 đến 4 tuần."
+    },
+    {
+      "id": 143,
+      "start": 772.86,
+      "end": 774.74,
+      "start_time": "00:12:52,860",
+      "end_time": "00:12:54,740",
+      "text": "Thì đây chính là bí mật này"
+    },
+    {
+      "id": 144,
+      "start": 774.74,
+      "end": 782.66,
+      "start_time": "00:12:54,740",
+      "end_time": "00:13:02,660",
+      "text": "Anh em rất là khó khăn trong việc là 3 tháng đầu tiên, 4 tháng đầu tiên, 5 tháng đầu tiên để mình tìm ra, test ra cái video dẫn kênh này."
+    },
+    {
+      "id": 145,
+      "start": 784.68,
+      "end": 792.98,
+      "start_time": "00:13:04,680",
+      "end_time": "00:13:12,980",
+      "text": "Tức là bản chất của mình hiểu, mình tìm được ra đúng cái video, cái nội dung mà khán giả muốn xem."
+    },
+    {
+      "id": 146,
+      "start": 794.12,
+      "end": 796.78,
+      "start_time": "00:13:14,120",
+      "end_time": "00:13:16,780",
+      "text": "Sau đó phân tích thật kỹ video này."
+    },
+    {
+      "id": 147,
+      "start": 797.96,
+      "end": 802.16,
+      "start_time": "00:13:17,960",
+      "end_time": "00:13:22,160",
+      "text": "Từ video này, sản xuất các nội dung content có nội dung tương tự."
+    },
+    {
+      "id": 148,
+      "start": 802.16,
+      "end": 813.0,
+      "start_time": "00:13:22,160",
+      "end_time": "00:13:33,000",
+      "text": "tương tự hoặc những cái nội dung liên quan đến những cụm từ mà khách hàng tìm kiếm hoặc sản xuất những cái nó liên quan cùng tiêu đề cùng thumbnail."
+    },
+    {
+      "id": 149,
+      "start": 815.576,
+      "end": 819.876,
+      "start_time": "00:13:35,576",
+      "end_time": "00:13:39,876",
+      "text": "Anh em nhớ cái ví dụ hôm trước về việc kênh của Kính Lúp TV ấy."
+    },
+    {
+      "id": 150,
+      "start": 820.916,
+      "end": 826.176,
+      "start_time": "00:13:40,916",
+      "end_time": "00:13:46,176",
+      "text": "Khi mà họ đã tìm được ra một cái nội dung phổ biến thì họ bắt đầu tiếp tục nhân những cái nội dung đấy ra."
+    },
+    {
+      "id": 151,
+      "start": 827.096,
+      "end": 833.796,
+      "start_time": "00:13:47,096",
+      "end_time": "00:13:53,796",
+      "text": "Và với kênh của mình, ngày xưa mình làm là lúc nào mình cũng nhấn mạnh một video mà đã dẫn kênh rồi."
+    },
+    {
+      "id": 152,
+      "start": 833.796,
+      "end": 841.836,
+      "start_time": "00:13:53,796",
+      "end_time": "00:14:01,836",
+      "text": "Mình sẽ phải nhân lên cả tháng đấy. Chỉ làm những nội dung xoáy quanh những cái chủ đề và những cái nội dung như vậy."
+    },
+    {
+      "id": 153,
+      "start": 845.296,
+      "end": 852.116,
+      "start_time": "00:14:05,296",
+      "end_time": "00:14:12,116",
+      "text": "Để mình có thể phục vụ khán giả. Và đấy chính là cách mà lên từ 100.000 đến 1 triệu."
+    },
+    {
+      "id": 154,
+      "start": 854.216,
+      "end": 860.496,
+      "start_time": "00:14:14,216",
+      "end_time": "00:14:20,496",
+      "text": "Khi mà mình có một video, nó dẫn kênh rồi. Nó có thể kéo một kênh của mình lên 100.000 trên 48 giờ."
+    },
+    {
+      "id": 155,
+      "start": 861.276,
+      "end": 863.376,
+      "start_time": "00:14:21,276",
+      "end_time": "00:14:23,376",
+      "text": "Sau đó mình tìm cách mình sản xuất các nội dung tương tự."
+    },
+    {
+      "id": 156,
+      "start": 863.796,
+      "end": 872.256,
+      "start_time": "00:14:23,796",
+      "end_time": "00:14:32,256",
+      "text": "Chúng ta đừng để ý nhiều những cái kỹ thuật là tìm những cái cụm từ đấy như cái nào hay nội dung nào giúp mình tìm kiếm view này."
+    },
+    {
+      "id": 157,
+      "start": 872.676,
+      "end": 877.116,
+      "start_time": "00:14:32,676",
+      "end_time": "00:14:37,116",
+      "text": "Mà chúng ta để ý đến việc là mình đặt mình ở khán giả."
+    },
+    {
+      "id": 158,
+      "start": 877.776,
+      "end": 881.356,
+      "start_time": "00:14:37,776",
+      "end_time": "00:14:41,356",
+      "text": "Cái tâm lý của cái khán giả đấy, cái nhóm khán giả đấy thích xem những cái kiểu gì."
+    },
+    {
+      "id": 159,
+      "start": 883.916,
+      "end": 885.696,
+      "start_time": "00:14:43,916",
+      "end_time": "00:14:45,696",
+      "text": "Là cái ngách của mình đang chọn, đang tìm."
+    },
+    {
+      "id": 160,
+      "start": 886.036,
+      "end": 887.976,
+      "start_time": "00:14:46,036",
+      "end_time": "00:14:47,976",
+      "text": "Mình phải là cái người hiểu cái kênh của mình nhất."
+    },
+    {
+      "id": 161,
+      "start": 888.236,
+      "end": 890.836,
+      "start_time": "00:14:48,236",
+      "end_time": "00:14:50,836",
+      "text": "Mình phải là cái người hiểu cái tệp khách hàng của mình nhất."
+    },
+    {
+      "id": 162,
+      "start": 890.836,
+      "end": 900.0,
+      "start_time": "00:14:50,836",
+      "end_time": "00:15:00,000",
+      "text": "Thì khi mà cái tệp khách hàng đấy mình cứ ném cho cái nội dung này là họ sẽ xem. Khi mà anh em làm nhiều rồi"
+    },
+    {
+      "id": 163,
+      "start": 900.0,
+      "end": 906.04,
+      "start_time": "00:15:00,000",
+      "end_time": "00:15:06,040",
+      "text": "Anh em sẽ có được cái cảm giác như vậy, cứ ném ra đúng cái tiêu đề đấy, đúng cái thumbnail đấy, đúng cái kiểu nội dung như vậy là sẽ lên, là sẽ xem."
+    },
+    {
+      "id": 164,
+      "start": 908.5,
+      "end": 916.52,
+      "start_time": "00:15:08,500",
+      "end_time": "00:15:16,520",
+      "text": "Nha khoa Lạc Việt, Niềng Răng thì họ cũng đã làm được cái đấy rồi, cứ làm cái kiểu như vậy, cứ Niềng Răng như vậy là xem, là xem."
+    },
+    {
+      "id": 165,
+      "start": 917.1,
+      "end": 920.86,
+      "start_time": "00:15:17,100",
+      "end_time": "00:15:20,860",
+      "text": "Thì đương nhiên là họ cũng chọn ngách và cái từ khóa đấy cũng là một trong số những cái ở trong ngành rồi."
+    },
+    {
+      "id": 166,
+      "start": 921.64,
+      "end": 926.76,
+      "start_time": "00:15:21,640",
+      "end_time": "00:15:26,760",
+      "text": "Nhưng mà họ đã hiểu được cái mô típ là khán giả muốn gì, muốn xem gì về Niềng Răng."
+    },
+    {
+      "id": 167,
+      "start": 926.76,
+      "end": 935.34,
+      "start_time": "00:15:26,760",
+      "end_time": "00:15:35,340",
+      "text": "Thì là họ cứ nhấn vào đấy, họ làm nhai đi nhai lại, nhai đi nhai lại, vẫn rất nhiều view. Và ngày xưa mình có trêu anh em rằng là tại sao mà"
+    },
+    {
+      "id": 168,
+      "start": 935.34,
+      "end": 943.92,
+      "start_time": "00:15:35,340",
+      "end_time": "00:15:43,920",
+      "text": "xem cái kênh của tôi anh em lại thấy nó nhàm chán và thậm chí nếu anh em ở ngoài anh em lại còn thấy là nó chắc là chẳng có view đâu."
+    },
+    {
+      "id": 169,
+      "start": 943.92,
+      "end": 948.38,
+      "start_time": "00:15:43,920",
+      "end_time": "00:15:48,380",
+      "text": "Nhưng mà thực chất khi mà mình làm như vậy, nó nhiều view kinh khủng thôi."
+    },
+    {
+      "id": 170,
+      "start": 949.54,
+      "end": 956.4,
+      "start_time": "00:15:49,540",
+      "end_time": "00:15:56,400",
+      "text": "Và những cái mô típ lập đi lập lại như vậy, nếu mà chúng ta kèm được thêm cái bài tập tuần 1,"
+    },
+    {
+      "id": 171,
+      "start": 957.3,
+      "end": 963.54,
+      "start_time": "00:15:57,300",
+      "end_time": "00:16:03,540",
+      "text": "là cái mà mình phân tích được cái mô típ kênh này, phân tích được tính cách kênh này,"
+    },
+    {
+      "id": 172,
+      "start": 964.06,
+      "end": 971.14,
+      "start_time": "00:16:04,060",
+      "end_time": "00:16:11,140",
+      "text": "phân tích được các cái giọng điệu ở trong kênh này, hay là những cái gọi là hình ảnh mình muốn xây dựng đó."
+    },
+    {
+      "id": 173,
+      "start": 971.14,
+      "end": 981.14,
+      "start_time": "00:16:11,140",
+      "end_time": "00:16:21,140",
+      "text": "Thì đấy là cái để mình giúp mình phổ biến nhanh nhất về cái tính cách của kênh, về cái xây dựng thương hiệu của kênh."
+    },
+    {
+      "id": 174,
+      "start": 981.14,
+      "end": 981.82,
+      "start_time": "00:16:21,140",
+      "end_time": "00:16:21,820",
+      "text": "kênh"
+    },
+    {
+      "id": 175,
+      "start": 981.82,
+      "end": 985.08,
+      "start_time": "00:16:21,820",
+      "end_time": "00:16:25,080",
+      "text": "nên là chúng ta phải có"
+    },
+    {
+      "id": 176,
+      "start": 985.08,
+      "end": 985.82,
+      "start_time": "00:16:25,080",
+      "end_time": "00:16:25,820",
+      "text": "được những cái đấy"
+    },
+    {
+      "id": 177,
+      "start": 985.82,
+      "end": 989.36,
+      "start_time": "00:16:25,820",
+      "end_time": "00:16:29,360",
+      "text": "tức là chúng ta đã có sự chuẩn bị"
+    },
+    {
+      "id": 178,
+      "start": 989.36,
+      "end": 990.9,
+      "start_time": "00:16:29,360",
+      "end_time": "00:16:30,900",
+      "text": "những cái như vậy từ cái tuần 1 rồi"
+    },
+    {
+      "id": 179,
+      "start": 990.9,
+      "end": 992.9,
+      "start_time": "00:16:30,900",
+      "end_time": "00:16:32,900",
+      "text": "thì đến khi mà đến cái tuần như thế này"
+    },
+    {
+      "id": 180,
+      "start": 992.9,
+      "end": 994.72,
+      "start_time": "00:16:32,900",
+      "end_time": "00:16:34,720",
+      "text": "là chúng ta có được video bùng nổ rồi"
+    },
+    {
+      "id": 181,
+      "start": 994.72,
+      "end": 997.06,
+      "start_time": "00:16:34,720",
+      "end_time": "00:16:37,060",
+      "text": "là người ta đã bắt đầu thấy"
+    },
+    {
+      "id": 182,
+      "start": 997.06,
+      "end": 999.756,
+      "start_time": "00:16:37,060",
+      "end_time": "00:16:39,756",
+      "text": "cái đặc điểm của cái kênh đấy rồi"
+    },
+    {
+      "id": 183,
+      "start": 999.756,
+      "end": 1009.016,
+      "start_time": "00:16:39,756",
+      "end_time": "00:16:49,016",
+      "text": "Và cái cách để mà đi vào đầu người ta, NLP nó có 3 cách thì cách giật tít câu view là sốc đấy."
+    },
+    {
+      "id": 184,
+      "start": 1009.276,
+      "end": 1012.756,
+      "start_time": "00:16:49,276",
+      "end_time": "00:16:52,756",
+      "text": "Cũng là một cách mà cái cách thức lập đi lập lại những cái điều đơn giản."
+    },
+    {
+      "id": 185,
+      "start": 1013.996,
+      "end": 1014.876,
+      "start_time": "00:16:53,996",
+      "end_time": "00:16:54,876",
+      "text": "Nó cũng tạo thành thương hiệu."
+    },
+    {
+      "id": 186,
+      "start": 1018.136,
+      "end": 1021.796,
+      "start_time": "00:16:58,136",
+      "end_time": "00:17:01,796",
+      "text": "Nhiều cái mình làm nó nhất quán đến mức nó buồn cười nữa."
+    },
+    {
+      "id": 187,
+      "start": 1022.196,
+      "end": 1024.956,
+      "start_time": "00:17:02,196",
+      "end_time": "00:17:04,956",
+      "text": "Chả hiểu sao nhưng mà nó thành những cái đơn giản."
+    },
+    {
+      "id": 188,
+      "start": 1024.956,
+      "end": 1035.956,
+      "start_time": "00:17:04,956",
+      "end_time": "00:17:15,956",
+      "text": "Ví dụ mình vào Circle K, mình mua một cái cốc cà phê, thì thôi mình mua cái size XL, size to nhất ở đấy, size 30.000 để làm sao uống từ sáng đến chiều được ạ."
+    },
+    {
+      "id": 189,
+      "start": 1035.956,
+      "end": 1044.956,
+      "start_time": "00:17:15,956",
+      "end_time": "00:17:24,956",
+      "text": "Thế mình vô tình như vậy, thế là lần nào mình vào mình cũng một thằng đầu trọc mà áo màu đen và mua cái cốc cà phê size XL."
+    },
+    {
+      "id": 190,
+      "start": 1044.956,
+      "end": 1052.956,
+      "start_time": "00:17:24,956",
+      "end_time": "00:17:32,956",
+      "text": "Thế mình khá bất ngờ thì gần đây là mình vào quán cái là hôm đấy mình đích trong đầu là mình làm một buổi sáng, buổi chiều mình về có việc rồi."
+    },
+    {
+      "id": 191,
+      "start": 1052.956,
+      "end": 1060.576,
+      "start_time": "00:17:32,956",
+      "end_time": "00:17:40,576",
+      "text": "Mà cái thằng em nó bảo anh lại đặt XL phải không? Đấy anh thanh toán đi nè em đặt xong cho anh rồi."
+    },
+    {
+      "id": 192,
+      "start": 1061.036,
+      "end": 1063.656,
+      "start_time": "00:17:41,036",
+      "end_time": "00:17:43,656",
+      "text": "Nghe thật nói những cái lập đi lập lại."
+    },
+    {
+      "id": 193,
+      "start": 1064.716,
+      "end": 1067.036,
+      "start_time": "00:17:44,716",
+      "end_time": "00:17:47,036",
+      "text": "Rất đơn giản để khẳng định cái hình ảnh thương hiệu cá nhân."
+    },
+    {
+      "id": 194,
+      "start": 1067.896,
+      "end": 1075.896,
+      "start_time": "00:17:47,896",
+      "end_time": "00:17:55,896",
+      "text": "Thì trong kênh như vậy có những cái việc là nó sẽ tạo ra những cái góc nhìn khác."
+    },
+    {
+      "id": 195,
+      "start": 1076.636,
+      "end": 1079.996,
+      "start_time": "00:17:56,636",
+      "end_time": "00:17:59,996",
+      "text": "Ví dụ bên mình có 2 cái kênh."
+    },
+    {
+      "id": 196,
+      "start": 1080.0,
+      "end": 1087.56,
+      "start_time": "00:18:00,000",
+      "end_time": "00:18:07,560",
+      "text": "Nói về lịch sử, nói về những tin tức, ví dụ kênh Nabi Việt Nam là kênh bên mình."
+    },
+    {
+      "id": 197,
+      "start": 1089.04,
+      "end": 1099.8,
+      "start_time": "00:18:09,040",
+      "end_time": "00:18:19,800",
+      "text": "Thì cái kênh bên đấy nếu mà nói, cùng là phân tích một cái vấn đề về chính trị, về văn hóa, cái kênh đấy sẽ tôn vinh Việt Nam, ví dụ so sánh Việt Nam với Trung Quốc."
+    },
+    {
+      "id": 198,
+      "start": 1099.8,
+      "end": 1108.36,
+      "start_time": "00:18:19,800",
+      "end_time": "00:18:28,360",
+      "text": "Thì trong cái giọng văn của nó, trong cái content của nó là Nabi là Nâng Bi, Nâng Bi Việt Nam, kiểu kiểu như vậy."
+    },
+    {
+      "id": 199,
+      "start": 1109.3,
+      "end": 1116.36,
+      "start_time": "00:18:29,300",
+      "end_time": "00:18:36,360",
+      "text": "Thì những cái người mà yêu Việt Nam hay yêu nước, lúc nào người ta cũng xem và người ta cảm thấy thích ở cái kênh đấy, ở giọng đấy."
+    },
+    {
+      "id": 200,
+      "start": 1117.14,
+      "end": 1122.64,
+      "start_time": "00:18:37,140",
+      "end_time": "00:18:42,640",
+      "text": "Nhưng mà sẽ có một kênh ở kênh Hố Xanh Kiến Thức, cũng cái nội dung như vậy, ý hề như vậy, những content như vậy."
+    },
+    {
+      "id": 201,
+      "start": 1122.7,
+      "end": 1124.82,
+      "start_time": "00:18:42,700",
+      "end_time": "00:18:44,820",
+      "text": "Nhưng mà nó giọng ở content kiểu cà khịa."
+    },
+    {
+      "id": 202,
+      "start": 1124.82,
+      "end": 1132.1,
+      "start_time": "00:18:44,820",
+      "end_time": "00:18:52,100",
+      "text": "Thì mọi người xem mình sẽ thấy là cái nội dung nhé, cùng là một cái content, cùng là một cái nội dung."
+    },
+    {
+      "id": 203,
+      "start": 1132.58,
+      "end": 1138.3,
+      "start_time": "00:18:52,580",
+      "end_time": "00:18:58,300",
+      "text": "Nhưng mà một bên thì nói về góc nhìn là cà khịa, một bên thì nói về tốt, nâng bi."
+    },
+    {
+      "id": 204,
+      "start": 1138.84,
+      "end": 1146.06,
+      "start_time": "00:18:58,840",
+      "end_time": "00:19:06,060",
+      "text": "Thì đấy là cái trong cái tuần trước của mình có nói, một nội dung nhưng nhìn ở nhiều góc cạnh và nhiều vấn đề."
+    },
+    {
+      "id": 205,
+      "start": 1146.28,
+      "end": 1153.62,
+      "start_time": "00:19:06,280",
+      "end_time": "00:19:13,620",
+      "text": "Thì nó ra được những cái khác nhau. Và mình làm, anh em là nhất quán, thì cái kênh Nabi kia thì auto là như vậy."
+    },
+    {
+      "id": 206,
+      "start": 1154.82,
+      "end": 1159.22,
+      "start_time": "00:19:14,820",
+      "end_time": "00:19:19,220",
+      "text": "Nội dung content phải như vậy và mình hiểu được cái điều đấy thì mình hiểu cái khán giả của mình thích như vậy."
+    },
+    {
+      "id": 207,
+      "start": 1159.64,
+      "end": 1163.38,
+      "start_time": "00:19:19,640",
+      "end_time": "00:19:23,380",
+      "text": "Thì mình đưa yêu cầu cho các bạn content làm là nó cũng sẽ như vậy."
+    },
+    {
+      "id": 208,
+      "start": 1163.4,
+      "end": 1165.88,
+      "start_time": "00:19:23,400",
+      "end_time": "00:19:25,880",
+      "text": "thì nó nhất quán"
+    },
+    {
+      "id": 209,
+      "start": 1165.88,
+      "end": 1166.74,
+      "start_time": "00:19:25,880",
+      "end_time": "00:19:26,740",
+      "text": "cái kênh như vậy"
+    },
+    {
+      "id": 210,
+      "start": 1166.74,
+      "end": 1167.24,
+      "start_time": "00:19:26,740",
+      "end_time": "00:19:27,240",
+      "text": "thì đến"
+    },
+    {
+      "id": 211,
+      "start": 1167.24,
+      "end": 1169.08,
+      "start_time": "00:19:27,240",
+      "end_time": "00:19:29,080",
+      "text": "tại vì mình hiểu"
+    },
+    {
+      "id": 212,
+      "start": 1169.08,
+      "end": 1169.64,
+      "start_time": "00:19:29,080",
+      "end_time": "00:19:29,640",
+      "text": "khán giả"
+    },
+    {
+      "id": 213,
+      "start": 1169.64,
+      "end": 1170.54,
+      "start_time": "00:19:29,640",
+      "end_time": "00:19:30,540",
+      "text": "mình làm được nhất quán"
+    },
+    {
+      "id": 214,
+      "start": 1170.54,
+      "end": 1172.3,
+      "start_time": "00:19:30,540",
+      "end_time": "00:19:32,300",
+      "text": "thì đây là cái"
+    },
+    {
+      "id": 215,
+      "start": 1172.3,
+      "end": 1173.5,
+      "start_time": "00:19:32,300",
+      "end_time": "00:19:33,500",
+      "text": "cách thức để có thể"
+    },
+    {
+      "id": 216,
+      "start": 1173.5,
+      "end": 1174.74,
+      "start_time": "00:19:33,500",
+      "end_time": "00:19:34,740",
+      "text": "ích lên"
+    },
+    {
+      "id": 217,
+      "start": 1174.74,
+      "end": 1177.296,
+      "start_time": "00:19:34,740",
+      "end_time": "00:19:37,296",
+      "text": "tổng"
+    },
+    {
+      "id": 218,
+      "start": 1177.296,
+      "end": 1179.856,
+      "start_time": "00:19:37,296",
+      "end_time": "00:19:39,856",
+      "text": "Tổng hợp lại đơn giản là chúng ta phải mò mẫm từ ban đầu."
+    },
+    {
+      "id": 219,
+      "start": 1180.616,
+      "end": 1184.396,
+      "start_time": "00:19:40,616",
+      "end_time": "00:19:44,396",
+      "text": "Test rất nhiều, thử ngách, tìm ngách, cho khi tìm đúng."
+    },
+    {
+      "id": 220,
+      "start": 1185.176,
+      "end": 1185.956,
+      "start_time": "00:19:45,176",
+      "end_time": "00:19:45,956",
+      "text": "Và tìm đúng được rồi."
+    },
+    {
+      "id": 221,
+      "start": 1187.136,
+      "end": 1189.796,
+      "start_time": "00:19:47,136",
+      "end_time": "00:19:49,796",
+      "text": "Thì bắt đầu kênh sẽ lên 30.000, 50.000, 100.000."
+    },
+    {
+      "id": 222,
+      "start": 1190.476,
+      "end": 1194.456,
+      "start_time": "00:19:50,476",
+      "end_time": "00:19:54,456",
+      "text": "Thì bắt đầu nhân cái top những cái kênh dẫn đầu ra."
+    },
+    {
+      "id": 223,
+      "start": 1194.456,
+      "end": 1198.376,
+      "start_time": "00:19:54,456",
+      "end_time": "00:19:58,376",
+      "text": "có khi chỉ cần 1 đến 3 video dẫn đầu thôi, hoặc là video dẫn kênh."
+    },
+    {
+      "id": 224,
+      "start": 1199.616,
+      "end": 1209.596,
+      "start_time": "00:19:59,616",
+      "end_time": "00:20:09,596",
+      "text": "Nghiên cứu thật mạnh, xoáy sâu rồi đấy, tìm các góc, các cái mảng, các cái góc nhìn liên quan đến cái nhóm này, để chúng ta có thể làm và chúng ta phát triển là có kết quả thôi."
+    },
+    {
+      "id": 225,
+      "start": 1210.796,
+      "end": 1212.536,
+      "start_time": "00:20:10,796",
+      "end_time": "00:20:12,536",
+      "text": "Cứ lên đến 100.000, lên 1 triệu, cực kỳ nhanh."
+    },
+    {
+      "id": 226,
+      "start": 1213.876,
+      "end": 1220.976,
+      "start_time": "00:20:13,876",
+      "end_time": "00:20:20,976",
+      "text": "Ví dụ bắt đầu anh thấy có dấu hiệu nhé, có 1 video lên khoảng 7-8.000 view rồi, mà mới có 1-200 sub thôi."
+    },
+    {
+      "id": 227,
+      "start": 1220.976,
+      "end": 1226.676,
+      "start_time": "00:20:20,976",
+      "end_time": "00:20:26,676",
+      "text": "Tiếp tục đào sâu video đấy, xoáy sâu vào, vào trong số liệu phân tích, phạm vi tiếp cận này."
+    },
+    {
+      "id": 228,
+      "start": 1227.956,
+      "end": 1232.916,
+      "start_time": "00:20:27,956",
+      "end_time": "00:20:32,916",
+      "text": "Phân tích cái kênh ra, tìm kiếm làm những cái nội dung xoáy quanh đấy, vẫn SEO thêm những cái từ khóa như vậy."
+    },
+    {
+      "id": 229,
+      "start": 1234.496,
+      "end": 1239.756,
+      "start_time": "00:20:34,496",
+      "end_time": "00:20:39,756",
+      "text": "Tìm những cái nội dung đã giúp cho video của mình họ xem, sản xuất kiểu tương tự."
+    },
+    {
+      "id": 230,
+      "start": 1241.236,
+      "end": 1242.976,
+      "start_time": "00:20:41,236",
+      "end_time": "00:20:42,976",
+      "text": "Là lên, nhanh lên."
+    },
+    {
+      "id": 231,
+      "start": 1244.536,
+      "end": 1247.296,
+      "start_time": "00:20:44,536",
+      "end_time": "00:20:47,296",
+      "text": "Cái quan trọng là ban đầu là mình chưa test ở cái đoạn đấy thôi."
+    },
+    {
+      "id": 232,
+      "start": 1249.156,
+      "end": 1250.956,
+      "start_time": "00:20:49,156",
+      "end_time": "00:20:50,956",
+      "text": "Cái cách này mình làm nhé, chưa từng thất bại nhé."
+    },
+    {
+      "id": 233,
+      "start": 1250.976,
+      "end": 1257.756,
+      "start_time": "00:20:50,976",
+      "end_time": "00:20:57,756",
+      "text": "Tiếp theo nữa là"
+    },
+    {
+      "id": 234,
+      "start": 1257.756,
+      "end": 1260.0,
+      "start_time": "00:20:57,756",
+      "end_time": "00:21:00,000",
+      "text": "Khi mà"
+    },
+    {
+      "id": 235,
+      "start": 1260.0,
+      "end": 1270.14,
+      "start_time": "00:21:00,000",
+      "end_time": "00:21:10,140",
+      "text": "Mình phân tích các yếu tố, tiêu đề, nội dung content, từ khóa tìm kiếm các video đề xuất, những dạng như vừa nãy mình nói."
+    },
+    {
+      "id": 236,
+      "start": 1270.96,
+      "end": 1277.32,
+      "start_time": "00:21:10,960",
+      "end_time": "00:21:17,320",
+      "text": "Cuối cùng thì những điểm chung của nó là gì? Thì mình lại phân tích ra, nốt lại nhé. Điểm chung của nó là gì để làm sao?"
+    },
+    {
+      "id": 237,
+      "start": 1278.34,
+      "end": 1283.9,
+      "start_time": "00:21:18,340",
+      "end_time": "00:21:23,900",
+      "text": "Mục tiêu của mình cuối cùng vẫn là để phục vụ nhóm khán giả của mình. Đấy mới là cái quan trọng."
+    },
+    {
+      "id": 238,
+      "start": 1283.9,
+      "end": 1294.76,
+      "start_time": "00:21:23,900",
+      "end_time": "00:21:34,760",
+      "text": "Tiêu đề từ khóa nội dung content hay là các cái video đề xuất của mình. Quay đi quẩn lại, nó là phục vụ cái nhóm khán giả mà mình đang săn, đang tìm."
+    },
+    {
+      "id": 239,
+      "start": 1298.32,
+      "end": 1303.58,
+      "start_time": "00:21:38,320",
+      "end_time": "00:21:43,580",
+      "text": "Kể cả là cái nội dung ở trong cái khóa học mình nói là anh em mình cần phải có một cái gọi là từ khóa lý tưởng."
+    },
+    {
+      "id": 240,
+      "start": 1304.8,
+      "end": 1313.76,
+      "start_time": "00:21:44,800",
+      "end_time": "00:21:53,760",
+      "text": "Từ khóa lý tưởng là gì? Từ khóa lý tưởng thực chất ở trong khóa này mình mới nói nó sâu sắc về việc là thực chất đấy là từ khóa mà khán giả."
+    },
+    {
+      "id": 241,
+      "start": 1313.9,
+      "end": 1320.82,
+      "start_time": "00:21:53,900",
+      "end_time": "00:22:00,820",
+      "text": "Đang quen. Mình tạo ra thói quen cho một cái nhóm khán giả về cái từ khóa đấy."
+    },
+    {
+      "id": 242,
+      "start": 1323.8,
+      "end": 1326.36,
+      "start_time": "00:22:03,800",
+      "end_time": "00:22:06,360",
+      "text": "Thì họ nhìn thấy cái thói quen như vậy thì họ xem thôi."
+    },
+    {
+      "id": 243,
+      "start": 1328.54,
+      "end": 1329.82,
+      "start_time": "00:22:08,540",
+      "end_time": "00:22:09,820",
+      "text": "Một yếu tố về tâm lý."
+    },
+    {
+      "id": 244,
+      "start": 1334.9,
+      "end": 1343.14,
+      "start_time": "00:22:14,900",
+      "end_time": "00:22:23,140",
+      "text": "Rồi chúng ta có được 2 cái dạng là thứ nhất là mình đang xem một video, mình hiểu được video đằng trước, tất cả những video đằng trước nó đang đề xuất video của mình."
+    },
+    {
+      "id": 245,
+      "start": 1343.14,
+      "end": 1348.26,
+      "start_time": "00:22:23,140",
+      "end_time": "00:22:28,260",
+      "text": "Cái thứ 2 là bản thân cái video đấy của mình nó đang như thế nào"
+    },
+    {
+      "id": 246,
+      "start": 1348.26,
+      "end": 1354.04,
+      "start_time": "00:22:28,260",
+      "end_time": "00:22:34,040",
+      "text": "Thì 2 cái phần đấy là 2 cái phần mà chung quy lại vẫn là thấu hiểu của khách hàng"
+    },
+    {
+      "id": 247,
+      "start": 1354.04,
+      "end": 1359.26,
+      "start_time": "00:22:34,040",
+      "end_time": "00:22:39,260",
+      "text": "Rồi chúng ta đến phần tiếp theo là cái video nối tiếp cái video được đề xuất đấy"
+    },
+    {
+      "id": 248,
+      "start": 1359.26,
+      "end": 1360.7,
+      "start_time": "00:22:39,260",
+      "end_time": "00:22:40,700",
+      "text": "Thì nó như thế nào"
+    },
+    {
+      "id": 249,
+      "start": 1360.7,
+      "end": 1363.14,
+      "start_time": "00:22:40,700",
+      "end_time": "00:22:43,140",
+      "text": "Thì cái này thì nó rất là đơn giản rồi anh em"
+    },
+    {
+      "id": 250,
+      "start": 1363.14,
+      "end": 1364.016,
+      "start_time": "00:22:43,140",
+      "end_time": "00:22:44,016",
+      "text": "em có thể thấy là"
+    },
+    {
+      "id": 251,
+      "start": 1364.016,
+      "end": 1368.216,
+      "start_time": "00:22:44,016",
+      "end_time": "00:22:48,216",
+      "text": "Từ 1 cái video của mình"
+    },
+    {
+      "id": 252,
+      "start": 1368.216,
+      "end": 1369.636,
+      "start_time": "00:22:48,216",
+      "end_time": "00:22:49,636",
+      "text": "Đây là video"
+    },
+    {
+      "id": 253,
+      "start": 1369.636,
+      "end": 1372.076,
+      "start_time": "00:22:49,636",
+      "end_time": "00:22:52,076",
+      "text": "Đề xuất video của mình"
+    },
+    {
+      "id": 254,
+      "start": 1372.076,
+      "end": 1375.136,
+      "start_time": "00:22:52,076",
+      "end_time": "00:22:55,136",
+      "text": "Sau đến video được đề xuất"
+    },
+    {
+      "id": 255,
+      "start": 1375.136,
+      "end": 1376.536,
+      "start_time": "00:22:55,136",
+      "end_time": "00:22:56,536",
+      "text": "Thì ở bên phải này này"
+    },
+    {
+      "id": 256,
+      "start": 1376.536,
+      "end": 1377.656,
+      "start_time": "00:22:56,536",
+      "end_time": "00:22:57,656",
+      "text": "Góc phải màn hình của mình"
+    },
+    {
+      "id": 257,
+      "start": 1377.656,
+      "end": 1380.436,
+      "start_time": "00:22:57,656",
+      "end_time": "00:23:00,436",
+      "text": "Nó sẽ có những video mà nó đề xuất tiếp"
+    },
+    {
+      "id": 258,
+      "start": 1380.436,
+      "end": 1384.616,
+      "start_time": "00:23:00,436",
+      "end_time": "00:23:04,616",
+      "text": "Thì những cái này là những cái mà anh em nên dùng cái tab ẩn danh nhé"
+    },
+    {
+      "id": 259,
+      "start": 1385.0,
+      "end": 1387.856,
+      "start_time": "00:23:05,000",
+      "end_time": "00:23:07,856",
+      "text": "Tab ẩn danh của Google Chrome đây"
+    },
+    {
+      "id": 260,
+      "start": 1387.856,
+      "end": 1390.136,
+      "start_time": "00:23:07,856",
+      "end_time": "00:23:10,136",
+      "text": "Ở trên này mình hãy nói ẩn danh này"
+    },
+    {
+      "id": 261,
+      "start": 1390.136,
+      "end": 1393.376,
+      "start_time": "00:23:10,136",
+      "end_time": "00:23:13,376",
+      "text": "Để làm sao nó không lưu lại cái cookie người dùng ấy"
+    },
+    {
+      "id": 262,
+      "start": 1394.016,
+      "end": 1400.756,
+      "start_time": "00:23:14,016",
+      "end_time": "00:23:20,756",
+      "text": "Thì nó đưa ra những cái đề xuất này nó chuẩn hơn so với một người mà mình hay xem các kênh rồi thì nó không đúng nữa."
+    },
+    {
+      "id": 263,
+      "start": 1401.936,
+      "end": 1406.036,
+      "start_time": "00:23:21,936",
+      "end_time": "00:23:26,036",
+      "text": "Thì cũng đơn giản là mình lại chụp lại toàn bộ những cái phần này, chụp lại toàn bộ cái phần bên phải này."
+    },
+    {
+      "id": 264,
+      "start": 1407.436,
+      "end": 1409.196,
+      "start_time": "00:23:27,436",
+      "end_time": "00:23:29,196",
+      "text": "Đưa vào Word, Excel gì đấy, chụp."
+    },
+    {
+      "id": 265,
+      "start": 1413.476,
+      "end": 1414.956,
+      "start_time": "00:23:33,476",
+      "end_time": "00:23:34,956",
+      "text": "Thì nó ra được những cái dạng như này."
+    },
+    {
+      "id": 266,
+      "start": 1417.596,
+      "end": 1421.956,
+      "start_time": "00:23:37,596",
+      "end_time": "00:23:41,956",
+      "text": "Đây là những cái dạng mà nội dung bên phải mà mình đang được đề xuất đấy."
+    },
+    {
+      "id": 267,
+      "start": 1421.956,
+      "end": 1424.496,
+      "start_time": "00:23:41,956",
+      "end_time": "00:23:44,496",
+      "text": "Nó là nối cái đề xuất của mình"
+    },
+    {
+      "id": 268,
+      "start": 1424.496,
+      "end": 1426.196,
+      "start_time": "00:23:44,496",
+      "end_time": "00:23:46,196",
+      "text": "Cứ chụp lại toàn bộ"
+    },
+    {
+      "id": 269,
+      "start": 1426.196,
+      "end": 1427.136,
+      "start_time": "00:23:46,196",
+      "end_time": "00:23:47,136",
+      "text": "Anh em chụp lại toàn bộ"
+    },
+    {
+      "id": 270,
+      "start": 1427.136,
+      "end": 1429.916,
+      "start_time": "00:23:47,136",
+      "end_time": "00:23:49,916",
+      "text": "Làm Word, Excel thành một cái bản để phân tích"
+    },
+    {
+      "id": 271,
+      "start": 1429.916,
+      "end": 1432.656,
+      "start_time": "00:23:49,916",
+      "end_time": "00:23:52,656",
+      "text": "Làm thật tốt vào"
+    },
+    {
+      "id": 272,
+      "start": 1432.656,
+      "end": 1433.796,
+      "start_time": "00:23:52,656",
+      "end_time": "00:23:53,796",
+      "text": "Bản để phân tích"
+    },
+    {
+      "id": 273,
+      "start": 1433.796,
+      "end": 1435.996,
+      "start_time": "00:23:53,796",
+      "end_time": "00:23:55,996",
+      "text": "Sau đấy mình có giảng giải cho đội ngũ của mình"
+    },
+    {
+      "id": 274,
+      "start": 1435.996,
+      "end": 1437.356,
+      "start_time": "00:23:55,996",
+      "end_time": "00:23:57,356",
+      "text": "Hay là giảng giải cho đội content"
+    },
+    {
+      "id": 275,
+      "start": 1437.356,
+      "end": 1438.456,
+      "start_time": "00:23:57,356",
+      "end_time": "00:23:58,456",
+      "text": "Hay là các đội kia kìa"
+    },
+    {
+      "id": 276,
+      "start": 1438.456,
+      "end": 1440.0,
+      "start_time": "00:23:58,456",
+      "end_time": "00:24:00,000",
+      "text": "Thì họ sẽ hiểu được cái tư"
+    },
+    {
+      "id": 277,
+      "start": 1440.0,
+      "end": 1443.62,
+      "start_time": "00:24:00,000",
+      "end_time": "00:24:03,620",
+      "text": "Để họ có thể làm được nó đơn giản hơn."
+    },
+    {
+      "id": 278,
+      "start": 1445.06,
+      "end": 1450.46,
+      "start_time": "00:24:05,060",
+      "end_time": "00:24:10,460",
+      "text": "Và khi mà mình tìm thấy được những cái nội dung như này, nó có các cái luồng khán giả khác nhau."
+    },
+    {
+      "id": 279,
+      "start": 1451.62,
+      "end": 1455.12,
+      "start_time": "00:24:11,620",
+      "end_time": "00:24:15,120",
+      "text": "Ví dụ đây là cái luồng ở trong kênh của mình, là màu đỏ này, mình làm này, màu đỏ này."
+    },
+    {
+      "id": 280,
+      "start": 1456.16,
+      "end": 1464.92,
+      "start_time": "00:24:16,160",
+      "end_time": "00:24:24,920",
+      "text": "Thì tức là cái nội dung là từ video trước đến video sau, đến video sau nữa là nội dung là nó đề xuất nội dung ở ngoài,"
+    },
+    {
+      "id": 281,
+      "start": 1464.92,
+      "end": 1468.58,
+      "start_time": "00:24:24,920",
+      "end_time": "00:24:28,580",
+      "text": "xong đến các nội dung của mình, rồi lại đến tiếp các nội dung của mình."
+    },
+    {
+      "id": 282,
+      "start": 1468.58,
+      "end": 1470.28,
+      "start_time": "00:24:28,580",
+      "end_time": "00:24:30,280",
+      "text": "Thì nó là một luồng khán giả."
+    },
+    {
+      "id": 283,
+      "start": 1471.54,
+      "end": 1475.54,
+      "start_time": "00:24:31,540",
+      "end_time": "00:24:35,540",
+      "text": "Tiếp theo nó có những luồng khác ở ngoài kênh của mình."
+    },
+    {
+      "id": 284,
+      "start": 1475.76,
+      "end": 1477.08,
+      "start_time": "00:24:35,760",
+      "end_time": "00:24:37,080",
+      "text": "Nó đề xuất cả những kênh ở ngoài này."
+    },
+    {
+      "id": 285,
+      "start": 1478.1,
+      "end": 1486.74,
+      "start_time": "00:24:38,100",
+      "end_time": "00:24:46,740",
+      "text": "Tiền đạo, Web 5 Ngày, Đọc sách cùng Thùy Yên, các kiểu để mình biết có thêm góc nhìn về cái luồng như vậy."
+    },
+    {
+      "id": 286,
+      "start": 1488.08,
+      "end": 1493.06,
+      "start_time": "00:24:48,080",
+      "end_time": "00:24:53,060",
+      "text": "Vẫn một câu hỏi đặt ra là phân tích luồng đề xuất trong kênh thì muốn đề xuất thì làm nào."
+    },
+    {
+      "id": 287,
+      "start": 1493.64,
+      "end": 1494.58,
+      "start_time": "00:24:53,640",
+      "end_time": "00:24:54,580",
+      "text": "Thì cũng lại như vừa nãy thôi."
+    },
+    {
+      "id": 288,
+      "start": 1494.58,
+      "end": 1502.34,
+      "start_time": "00:24:54,580",
+      "end_time": "00:25:02,340",
+      "text": "Vẫn là phân tích cái từ khóa, à vẫn là phân tích giống như video dẫn kênh á, vẫn tìm các cái chung cái chủ đề đề xuất của mình."
+    },
+    {
+      "id": 289,
+      "start": 1502.94,
+      "end": 1507.22,
+      "start_time": "00:25:02,940",
+      "end_time": "00:25:07,220",
+      "text": "Từ khóa này, chủ đề này, sự lập đi lập lại nhiều nhất, chung nhất của các video."
+    },
+    {
+      "id": 290,
+      "start": 1508.58,
+      "end": 1509.48,
+      "start_time": "00:25:08,580",
+      "end_time": "00:25:09,480",
+      "text": "Và mình đào sâu ở đấy."
+    },
+    {
+      "id": 291,
+      "start": 1514.12,
+      "end": 1514.64,
+      "start_time": "00:25:14,120",
+      "end_time": "00:25:14,640",
+      "text": "Đào sâu ở đó."
+    },
+    {
+      "id": 292,
+      "start": 1514.64,
+      "end": 1521.18,
+      "start_time": "00:25:14,640",
+      "end_time": "00:25:21,180",
+      "text": "Đấy là đề xuất của trong kênh"
+    },
+    {
+      "id": 293,
+      "start": 1521.18,
+      "end": 1523.22,
+      "start_time": "00:25:21,180",
+      "end_time": "00:25:23,220",
+      "text": "Tức là cái luồng tiếp theo"
+    },
+    {
+      "id": 294,
+      "start": 1523.22,
+      "end": 1524.84,
+      "start_time": "00:25:23,220",
+      "end_time": "00:25:24,840",
+      "text": "Là nó các nội dung của mình"
+    },
+    {
+      "id": 295,
+      "start": 1524.84,
+      "end": 1527.36,
+      "start_time": "00:25:24,840",
+      "end_time": "00:25:27,360",
+      "text": "Còn cái dạng tiếp theo nữa là"
+    },
+    {
+      "id": 296,
+      "start": 1527.36,
+      "end": 1528.98,
+      "start_time": "00:25:27,360",
+      "end_time": "00:25:28,980",
+      "text": "Đề xuất"
+    },
+    {
+      "id": 297,
+      "start": 1528.98,
+      "end": 1532.1,
+      "start_time": "00:25:28,980",
+      "end_time": "00:25:32,100",
+      "text": "Chúng ta có thể mở rộng cái luồng đề xuất của mình"
+    },
+    {
+      "id": 298,
+      "start": 1532.1,
+      "end": 1534.02,
+      "start_time": "00:25:32,100",
+      "end_time": "00:25:34,020",
+      "text": "Là"
+    },
+    {
+      "id": 299,
+      "start": 1534.64,
+      "end": 1539.56,
+      "start_time": "00:25:34,640",
+      "end_time": "00:25:39,560",
+      "text": "Phân tích nhóm video đề xuất bên phải, mở rộng tệp khán giả ra các video ngoài kênh của mình."
+    },
+    {
+      "id": 300,
+      "start": 1540.76,
+      "end": 1544.876,
+      "start_time": "00:25:40,760",
+      "end_time": "00:25:44,876",
+      "text": "Xem chủ đề nào có thể khai thác thêm mà vẫn đúng tệp khán giả."
+    },
+    {
+      "id": 301,
+      "start": 1544.876,
+      "end": 1554.576,
+      "start_time": "00:25:44,876",
+      "end_time": "00:25:54,576",
+      "text": "Thì mình có thể làm. Như ở đây, ở đây chẳng hạn thì có rất nhiều cái đề xuất đằng sau này. Mình phải chọn để xem là cái chủ đề nào. Một"
+    },
+    {
+      "id": 302,
+      "start": 1554.576,
+      "end": 1564.276,
+      "start_time": "00:25:54,576",
+      "end_time": "00:26:04,276",
+      "text": "đó nó gần giống chủ đề của mình. Hai là cái nội dung mà khán giả họ cũng quan tâm như thế này nhưng cũng lại phải xem xem với lại cái"
+    },
+    {
+      "id": 303,
+      "start": 1564.276,
+      "end": 1573.976,
+      "start_time": "00:26:04,276",
+      "end_time": "00:26:13,976",
+      "text": "kênh của mình. Cũng là đọc sách này, cũng là làm những cái dạng như thế này. Như ví dụ đầu tư chứng khoán chẳng hạn thì cái này bên mình không làm."
+    },
+    {
+      "id": 304,
+      "start": 1573.976,
+      "end": 1576.736,
+      "start_time": "00:26:13,976",
+      "end_time": "00:26:16,736",
+      "text": "mình sẽ không chọn kể cả nó có nhiều view"
+    },
+    {
+      "id": 305,
+      "start": 1576.736,
+      "end": 1583.816,
+      "start_time": "00:26:16,736",
+      "end_time": "00:26:23,816",
+      "text": "đó thì như ở đây mình đưa ra là những view này"
+    },
+    {
+      "id": 306,
+      "start": 1583.816,
+      "end": 1588.196,
+      "start_time": "00:26:23,816",
+      "end_time": "00:26:28,196",
+      "text": "phân tích nhóm ở bên phải mở rộng tệp khán giả ngoài những cái luồng của mình"
+    },
+    {
+      "id": 307,
+      "start": 1588.196,
+      "end": 1589.956,
+      "start_time": "00:26:28,196",
+      "end_time": "00:26:29,956",
+      "text": "thì nó có thêm những cái luồng khác ở ngoài nữa"
+    },
+    {
+      "id": 308,
+      "start": 1589.956,
+      "end": 1595.216,
+      "start_time": "00:26:29,956",
+      "end_time": "00:26:35,216",
+      "text": "xong bắt đầu tìm chủ đề nào có thể khai thác thêm mà vẫn đúng tệp khán giả"
+    },
+    {
+      "id": 309,
+      "start": 1595.216,
+      "end": 1599.796,
+      "start_time": "00:26:35,216",
+      "end_time": "00:26:39,796",
+      "text": "nhớ nhé xem chủ đề nào có thể khai thác thêm mà vẫn đúng tệp khán giả"
+    },
+    {
+      "id": 310,
+      "start": 1599.796,
+      "end": 1602.656,
+      "start_time": "00:26:39,796",
+      "end_time": "00:26:42,656",
+      "text": "quay trở lại là vẫn phục vụ khán giả của mình thôi"
+    },
+    {
+      "id": 311,
+      "start": 1603.976,
+      "end": 1611.936,
+      "start_time": "00:26:43,976",
+      "end_time": "00:26:51,936",
+      "text": "Bí quyết thành công là có thêm chủ đề tiền bạc, ngoài ra có cách đầu tư tiền, cách kiếm tiền, cách tạo ra tiền, tìm thêm những chủ đề khác như vậy."
+    },
+    {
+      "id": 312,
+      "start": 1612.716,
+      "end": 1619.156,
+      "start_time": "00:26:52,716",
+      "end_time": "00:26:59,156",
+      "text": "Thì nó mở rộng, nó thêm được những cái khác về tư duy, về sống khôn ngoan, về cách nói chuyện nó rất là rất là nhiều."
+    },
+    {
+      "id": 313,
+      "start": 1620.0,
+      "end": 1621.46,
+      "start_time": "00:27:00,000",
+      "end_time": "00:27:01,460",
+      "text": "để mình chọn, để mình test."
+    },
+    {
+      "id": 314,
+      "start": 1626.0,
+      "end": 1630.74,
+      "start_time": "00:27:06,000",
+      "end_time": "00:27:10,740",
+      "text": "Ngoài ra nữa thì khi mà vào trong kênh mình xem đối tượng người xem và trong số liệu phân tích này,"
+    },
+    {
+      "id": 315,
+      "start": 1631.92,
+      "end": 1636.14,
+      "start_time": "00:27:11,920",
+      "end_time": "00:27:16,140",
+      "text": "nó có cái phần đối tượng người xem, đây cũng là phần mình cần phải khai thác trong kênh của mình."
+    },
+    {
+      "id": 316,
+      "start": 1637.22,
+      "end": 1639.62,
+      "start_time": "00:27:17,220",
+      "end_time": "00:27:19,620",
+      "text": "Những kênh khác mà khán giả của bạn cũng xem."
+    },
+    {
+      "id": 317,
+      "start": 1642.16,
+      "end": 1645.6,
+      "start_time": "00:27:22,160",
+      "end_time": "00:27:25,600",
+      "text": "Ngẫm Plus, Mắt Thần, Góc Nhìn Đa Chiều, Web 5 Ngày."
+    },
+    {
+      "id": 318,
+      "start": 1645.6,
+      "end": 1650.18,
+      "start_time": "00:27:25,600",
+      "end_time": "00:27:30,180",
+      "text": "Những video khác mà khán giả của bạn cũng xem."
+    },
+    {
+      "id": 319,
+      "start": 1652.4,
+      "end": 1658.74,
+      "start_time": "00:27:32,400",
+      "end_time": "00:27:38,740",
+      "text": "Anh em có để ý nhé, kênh Bí quyết thành công, kênh này nói làm giàu, cách thức tư duy để phát triển."
+    },
+    {
+      "id": 320,
+      "start": 1659.18,
+      "end": 1668.1,
+      "start_time": "00:27:39,180",
+      "end_time": "00:27:48,100",
+      "text": "Người ta vẫn xem vợ hoa hồng tuổi lái xe riêng, người ta vẫn xem phim, vẫn xem gái xinh hảo hán, người ta vẫn xem kênh bóng đá, người ta vẫn xem tin tức."
+    },
+    {
+      "id": 321,
+      "start": 1669.78,
+      "end": 1673.4,
+      "start_time": "00:27:49,780",
+      "end_time": "00:27:53,400",
+      "text": "Một người có rất nhiều cái có thể làm mà, có thể xem mà."
+    },
+    {
+      "id": 322,
+      "start": 1675.6,
+      "end": 1678.64,
+      "start_time": "00:27:55,600",
+      "end_time": "00:27:58,640",
+      "text": "Đây là cái bí mật về việc là"
+    },
+    {
+      "id": 323,
+      "start": 1678.64,
+      "end": 1683.88,
+      "start_time": "00:27:58,640",
+      "end_time": "00:28:03,880",
+      "text": "Anh em làm YouTube kiếm tiền"
+    },
+    {
+      "id": 324,
+      "start": 1683.88,
+      "end": 1686.16,
+      "start_time": "00:28:03,880",
+      "end_time": "00:28:06,160",
+      "text": "Họ nhân kênh"
+    },
+    {
+      "id": 325,
+      "start": 1686.16,
+      "end": 1687.74,
+      "start_time": "00:28:06,160",
+      "end_time": "00:28:07,740",
+      "text": "Và họ phát triển kênh"
+    },
+    {
+      "id": 326,
+      "start": 1687.74,
+      "end": 1691.24,
+      "start_time": "00:28:07,740",
+      "end_time": "00:28:11,240",
+      "text": "Không phải 1 kênh nữa mà 20 kênh, 30 kênh như thế nào"
+    },
+    {
+      "id": 327,
+      "start": 1691.24,
+      "end": 1692.96,
+      "start_time": "00:28:11,240",
+      "end_time": "00:28:12,960",
+      "text": "Cũng là bên mình đang làm"
+    },
+    {
+      "id": 328,
+      "start": 1692.96,
+      "end": 1696.4,
+      "start_time": "00:28:12,960",
+      "end_time": "00:28:16,400",
+      "text": "Nó chính là phân tích từ chính kênh của mình"
+    },
+    {
+      "id": 329,
+      "start": 1696.4,
+      "end": 1700.34,
+      "start_time": "00:28:16,400",
+      "end_time": "00:28:20,340",
+      "text": "Xem những cái kênh khác"
+    },
+    {
+      "id": 330,
+      "start": 1701.28,
+      "end": 1703.64,
+      "start_time": "00:28:21,280",
+      "end_time": "00:28:23,640",
+      "text": "Sau đó xem những cái video nội dung khán giả đã xem"
+    },
+    {
+      "id": 331,
+      "start": 1703.64,
+      "end": 1713.62,
+      "start_time": "00:28:23,640",
+      "end_time": "00:28:33,620",
+      "text": "Các bạn có thể tìm ra một kênh bóng đá"
+    },
+    {
+      "id": 332,
+      "start": 1717.216,
+      "end": 1717.936,
+      "start_time": "00:28:37,216",
+      "end_time": "00:28:37,936",
+      "text": "Nó cũng như thế này thôi."
+    },
+    {
+      "id": 333,
+      "start": 1720.416,
+      "end": 1722.556,
+      "start_time": "00:28:40,416",
+      "end_time": "00:28:42,556",
+      "text": "Là mình tìm cái nội dung kênh của mình."
+    },
+    {
+      "id": 334,
+      "start": 1724.396,
+      "end": 1729.816,
+      "start_time": "00:28:44,396",
+      "end_time": "00:28:49,816",
+      "text": "Thì vô tình mình thấy rằng, à, ở đây nó có những cái dạng như thế này, người ta cũng thích xem bóng đá, cái nội dung kênh xem bóng đá."
+    },
+    {
+      "id": 335,
+      "start": 1731.156,
+      "end": 1734.516,
+      "start_time": "00:28:51,156",
+      "end_time": "00:28:54,516",
+      "text": "Và mình nghiên cứu cái dạng mô típ video bóng đá như thế nào?"
+    },
+    {
+      "id": 336,
+      "start": 1735.016,
+      "end": 1742.166,
+      "start_time": "00:28:55,016",
+      "end_time": "00:29:02,166",
+      "text": "Xem bên mình có đủ năng lực để sản xuất không? Đủ khả năng làm không? Sau đó thì bên mình cho làm những cái nội dung"
+    },
+    {
+      "id": 337,
+      "start": 1742.166,
+      "end": 1749.316,
+      "start_time": "00:29:02,166",
+      "end_time": "00:29:09,316",
+      "text": "kiểu tương tự như này hoặc chất lượng tốt hơn. Sau đó thì mình dùng cái kênh Bí quyết thành công này, kéo nhẹ cái video này."
+    },
+    {
+      "id": 338,
+      "start": 1749.316,
+      "end": 1752.556,
+      "start_time": "00:29:09,316",
+      "end_time": "00:29:12,556",
+      "text": "Ở trong cái tab cộng đồng, giới thiệu sang tab cộng đồng"
+    },
+    {
+      "id": 339,
+      "start": 1752.556,
+      "end": 1759.176,
+      "start_time": "00:29:12,556",
+      "end_time": "00:29:19,176",
+      "text": "Và giới thiệu trong các cái nội dung video mà nó có kiểu tương tự về"
+    },
+    {
+      "id": 340,
+      "start": 1759.176,
+      "end": 1761.056,
+      "start_time": "00:29:19,176",
+      "end_time": "00:29:21,056",
+      "text": "Ví dụ Công Vinh Thủy Tiên chẳng hạn"
+    },
+    {
+      "id": 341,
+      "start": 1761.056,
+      "end": 1763.716,
+      "start_time": "00:29:21,056",
+      "end_time": "00:29:23,716",
+      "text": "Những cái người mà thành công từ bóng đá"
+    },
+    {
+      "id": 342,
+      "start": 1763.716,
+      "end": 1767.296,
+      "start_time": "00:29:23,716",
+      "end_time": "00:29:27,296",
+      "text": "Hoặc là những cái tin tức hoặc là cách kiếm tiền của Quang Hải chẳng hạn"
+    },
+    {
+      "id": 343,
+      "start": 1767.296,
+      "end": 1768.356,
+      "start_time": "00:29:27,296",
+      "end_time": "00:29:28,356",
+      "text": "Khi mà bán thương hiệu"
+    },
+    {
+      "id": 344,
+      "start": 1768.356,
+      "end": 1774.596,
+      "start_time": "00:29:28,356",
+      "end_time": "00:29:34,596",
+      "text": "Hoặc là Quang Hải ra nước ngoài thì là tốt hay xấu so với việc ở Việt Nam chẳng hạn"
+    },
+    {
+      "id": 345,
+      "start": 1774.596,
+      "end": 1778.516,
+      "start_time": "00:29:34,596",
+      "end_time": "00:29:38,516",
+      "text": "Ví dụ ở đây là những cái nội dung mà bí quyết thành công có thể kéo sang được"
+    },
+    {
+      "id": 346,
+      "start": 1779.316,
+      "end": 1788.876,
+      "start_time": "00:29:39,316",
+      "end_time": "00:29:48,876",
+      "text": "Thì đây chính là cách mình tạo tìm được ra một cái chủ đề mới, một cái kênh mới. Và khi mà kéo sang phát này là bắt đầu nó có view luôn. Vì là cái kênh"
+    },
+    {
+      "id": 347,
+      "start": 1788.876,
+      "end": 1798.436,
+      "start_time": "00:29:48,876",
+      "end_time": "00:29:58,436",
+      "text": "này nó to và nó đã có những nội dung, những người đã thích xem những cái dạng chủ đề này rồi. Nên mình kéo sang phát là video đầu tiên cái là có kết quả luôn."
+    },
+    {
+      "id": 348,
+      "start": 1800.0,
+      "end": 1809.42,
+      "start_time": "00:30:00,000",
+      "end_time": "00:30:09,420",
+      "text": "Nên là những cái kênh sau nhân lên nó rất nhanh anh em ạ. Nó không khó như cái kênh ban đầu đâu. Nên là bên mình mới có mấy chục kênh nó là như thế chứ. Bình"
+    },
+    {
+      "id": 349,
+      "start": 1809.42,
+      "end": 1818.84,
+      "start_time": "00:30:09,420",
+      "end_time": "00:30:18,840",
+      "text": "thường anh em tự làm một kênh thì nó phải mất 3-6 tháng thì nó mới lên được. Nhưng mà khi mà đã có kênh và có hệ thống kênh rồi thì bọn mình đẩy nó nhanh lắm."
+    },
+    {
+      "id": 350,
+      "start": 1818.84,
+      "end": 1832.0,
+      "start_time": "00:30:18,840",
+      "end_time": "00:30:32,000",
+      "text": "Đấy là một cái keyword, nhưng mà quay trở lại là cái nguyên lý của nó là gì? Nguyên lý của nó là một cái nhóm khán giả họ có thể xem rất nhiều nội dung."
+    },
+    {
+      "id": 351,
+      "start": 1833.32,
+      "end": 1842.04,
+      "start_time": "00:30:33,320",
+      "end_time": "00:30:42,040",
+      "text": "Thế vậy là mình chọn cái nội dung nào để có thể sáng tạo cái content của mình thì mình có thể dựa vào cái đối tượng người xem này và đưa ra những cái phân tích của YouTube."
+    },
+    {
+      "id": 352,
+      "start": 1842.04,
+      "end": 1844.58,
+      "start_time": "00:30:42,040",
+      "end_time": "00:30:44,580",
+      "text": "Họ đưa ra những cái nội dung như vậy."
+    },
+    {
+      "id": 353,
+      "start": 1845.72,
+      "end": 1849.4,
+      "start_time": "00:30:45,720",
+      "end_time": "00:30:49,400",
+      "text": "Những cái mà họ đã đưa ra và máy nó tìm chứ không phải mình nhé."
+    },
+    {
+      "id": 354,
+      "start": 1850.16,
+      "end": 1852.6,
+      "start_time": "00:30:50,160",
+      "end_time": "00:30:52,600",
+      "text": "Nhiều lúc máy nó tìm nó còn tốt hơn người rất là nhiều."
+    },
+    {
+      "id": 355,
+      "start": 1853.4,
+      "end": 1857.4,
+      "start_time": "00:30:53,400",
+      "end_time": "00:30:57,400",
+      "text": "Nên là mình cứ tin vào những cái thông số mà họ đưa ra như thế này."
+    },
+    {
+      "id": 356,
+      "start": 1857.96,
+      "end": 1859.74,
+      "start_time": "00:30:57,960",
+      "end_time": "00:30:59,740",
+      "text": "Mình nghiên cứu thì nó ok."
+    },
+    {
+      "id": 357,
+      "start": 1862.22,
+      "end": 1867.8,
+      "start_time": "00:31:02,220",
+      "end_time": "00:31:07,800",
+      "text": "Tuy nhiên Google trong cái trải nghiệm của mình nó chỉ có một cái là chúng ta không nên tin vào việc gợi ý của Google."
+    },
+    {
+      "id": 358,
+      "start": 1868.06,
+      "end": 1868.84,
+      "start_time": "00:31:08,060",
+      "end_time": "00:31:08,840",
+      "text": "Nó là cái quảng cáo."
+    },
+    {
+      "id": 359,
+      "start": 1868.84,
+      "end": 1873.9,
+      "start_time": "00:31:08,840",
+      "end_time": "00:31:13,900",
+      "text": "Anh em mà dựa theo tối ưu, theo những cái mà Google nó quảng cáo thì tốn tiền kinh khủng luôn."
+    },
+    {
+      "id": 360,
+      "start": 1875.76,
+      "end": 1878.78,
+      "start_time": "00:31:15,760",
+      "end_time": "00:31:18,780",
+      "text": "Riêng quảng cáo thì chúng ta cần phải làm nó khác."
+    },
+    {
+      "id": 361,
+      "start": 1878.78,
+      "end": 1885.18,
+      "start_time": "00:31:18,780",
+      "end_time": "00:31:25,180",
+      "text": "Mình trong khoảng 3 tháng gần đây, mình nghiên cứu rất kỹ về quảng cáo Google"
+    },
+    {
+      "id": 362,
+      "start": 1885.18,
+      "end": 1892.72,
+      "start_time": "00:31:25,180",
+      "end_time": "00:31:32,720",
+      "text": "Về từ việc nuôi content, nuôi tài khoản, cách thức làm, cách thức nhân"
+    },
+    {
+      "id": 363,
+      "start": 1892.72,
+      "end": 1895.96,
+      "start_time": "00:31:32,720",
+      "end_time": "00:31:35,960",
+      "text": "Rất kỹ về quảng cáo Google rồi"
+    },
+    {
+      "id": 364,
+      "start": 1895.96,
+      "end": 1898.78,
+      "start_time": "00:31:35,960",
+      "end_time": "00:31:38,780",
+      "text": "Nhưng mà nó lại không dùng để chọn"
+    },
+    {
+      "id": 365,
+      "start": 1898.78,
+      "end": 1901.356,
+      "start_time": "00:31:38,780",
+      "end_time": "00:31:41,356",
+      "text": "Trong cái mảng YouTube nó dùng ở một vài mảng khác."
+    },
+    {
+      "id": 366,
+      "start": 1901.356,
+      "end": 1911.776,
+      "start_time": "00:31:41,356",
+      "end_time": "00:31:51,776",
+      "text": "Tuy nhiên là nó vẫn đủ kiến thức để anh em có thể làm chiến đấu về việc là chúng ta đến lúc mà chúng ta cần phải đốt tiền."
+    },
+    {
+      "id": 367,
+      "start": 1912.196,
+      "end": 1913.196,
+      "start_time": "00:31:52,196",
+      "end_time": "00:31:53,196",
+      "text": "Chúng ta làm như thế nào?"
+    },
+    {
+      "id": 368,
+      "start": 1913.956,
+      "end": 1918.156,
+      "start_time": "00:31:53,956",
+      "end_time": "00:31:58,156",
+      "text": "Sẽ có cái giai đoạn về việc là chúng ta test và chúng ta chạy quảng cáo."
+    },
+    {
+      "id": 369,
+      "start": 1918.776,
+      "end": 1921.876,
+      "start_time": "00:31:58,776",
+      "end_time": "00:32:01,876",
+      "text": "Và bây giờ cái tài khoản Google nó rất là khó."
+    },
+    {
+      "id": 370,
+      "start": 1922.396,
+      "end": 1925.136,
+      "start_time": "00:32:02,396",
+      "end_time": "00:32:05,136",
+      "text": "Thật sự khó vì anh em chạy quảng cáo anh em sẽ biết nó chết tài khoản liên tục."
+    },
+    {
+      "id": 371,
+      "start": 1926.236,
+      "end": 1930.376,
+      "start_time": "00:32:06,236",
+      "end_time": "00:32:10,376",
+      "text": "Thế làm nào để chạy được cái này thì mình cũng có cách và mình cũng xử lý được rồi."
+    },
+    {
+      "id": 372,
+      "start": 1931.356,
+      "end": 1939.736,
+      "start_time": "00:32:11,356",
+      "end_time": "00:32:19,736",
+      "text": "Nó rất ok. Đến cái phần quảng cáo mình sẽ share lại cho anh em những cái phần này. Ngoài ra nữa nếu mà trong anh em"
+    },
+    {
+      "id": 373,
+      "start": 1939.736,
+      "end": 1948.116,
+      "start_time": "00:32:19,736",
+      "end_time": "00:32:28,116",
+      "text": "nào đang làm đến Affiliate ấy, anh em muốn quan tâm đến quảng cáo Google thì mình cũng có thể chia sẻ thêm về quảng cáo Google."
+    },
+    {
+      "id": 374,
+      "start": 1949.176,
+      "end": 1956.996,
+      "start_time": "00:32:29,176",
+      "end_time": "00:32:36,996",
+      "text": "Nhưng anh em ở Eagle, anh em triệu phú ở Eagle mà từ Affiliate ấy toàn bộ cũng bắt đầu từ quảng cáo Google hết."
+    },
+    {
+      "id": 375,
+      "start": 1956.996,
+      "end": 1968.296,
+      "start_time": "00:32:36,996",
+      "end_time": "00:32:48,296",
+      "text": "Có một cái lưu ý khi mà mở rộng đề xuất là cái này mình luôn luôn nói nè, sản xuất video cơ bản là phục vụ một nhóm khán giả của mình, của kênh của mình."
+    },
+    {
+      "id": 376,
+      "start": 1969.0,
+      "end": 1976.356,
+      "start_time": "00:32:49,000",
+      "end_time": "00:32:56,356",
+      "text": "Nên khi mở rộng cần có sự liên kết giữa các video để mở rộng đúng hướng, không sa vào trending và bị lệch hướng khán giả."
+    },
+    {
+      "id": 377,
+      "start": 1977.216,
+      "end": 1980.0,
+      "start_time": "00:32:57,216",
+      "end_time": "00:33:00,000",
+      "text": "Không tham mở rộng view mà nó không cùng với tệp khán giả."
+    },
+    {
+      "id": 378,
+      "start": 1980.0,
+      "end": 1989.96,
+      "start_time": "00:33:00,000",
+      "end_time": "00:33:09,960",
+      "text": "Mục đích cuối cùng nó vẫn là phục vụ khán giả của mình. Nó quan trọng vô cùng luôn."
+    },
+    {
+      "id": 379,
+      "start": 1993.44,
+      "end": 2000.58,
+      "start_time": "00:33:13,440",
+      "end_time": "00:33:20,580",
+      "text": "Và để tìm được đúng cái đối tượng khán giả của mình thì chúng ta cần phải có tìm được cái một cái nhóm nhỏ trước."
+    },
+    {
+      "id": 380,
+      "start": 2001.42,
+      "end": 2004.4,
+      "start_time": "00:33:21,420",
+      "end_time": "00:33:24,400",
+      "text": "Một cái nhóm nhỏ chấp nhận video của mình trước. Tức là cái ngách."
+    },
+    {
+      "id": 381,
+      "start": 2004.4,
+      "end": 2010.2,
+      "start_time": "00:33:24,400",
+      "end_time": "00:33:30,200",
+      "text": "Vì ban đầu là mình chưa làm rộng, chưa làm lớn và chưa phủ thị trường được."
+    },
+    {
+      "id": 382,
+      "start": 2010.94,
+      "end": 2019.3,
+      "start_time": "00:33:30,940",
+      "end_time": "00:33:39,300",
+      "text": "Mà YouTube bản chất ban đầu anh em hiểu là khi chúng ta mới làm view ít, sub ít thì cái độ reach của nó cũng sẽ ít."
+    },
+    {
+      "id": 383,
+      "start": 2020.26,
+      "end": 2025.38,
+      "start_time": "00:33:40,260",
+      "end_time": "00:33:45,380",
+      "text": "Nên là mình cần phải trân trọng những cái view, cái reach ban đầu của mình."
+    },
+    {
+      "id": 384,
+      "start": 2025.94,
+      "end": 2028.14,
+      "start_time": "00:33:45,940",
+      "end_time": "00:33:48,140",
+      "text": "Thì mình cần phải tìm được đúng ngách, nó là như thế."
+    },
+    {
+      "id": 385,
+      "start": 2029.14,
+      "end": 2031.94,
+      "start_time": "00:33:49,140",
+      "end_time": "00:33:51,940",
+      "text": "Khi mà mình tìm được đúng ngách rồi thì chúng ta có quyền để mở rộng ngách."
+    },
+    {
+      "id": 386,
+      "start": 2031.94,
+      "end": 2034.72,
+      "start_time": "00:33:51,940",
+      "end_time": "00:33:54,720",
+      "text": "Thì chúng ta mở rộng có rất nhiều cách rồi."
+    },
+    {
+      "id": 387,
+      "start": 2036.12,
+      "end": 2038.66,
+      "start_time": "00:33:56,120",
+      "end_time": "00:33:58,660",
+      "text": "Đấy là cái mà chúng ta có thể làm."
+    },
+    {
+      "id": 388,
+      "start": 2040.08,
+      "end": 2040.4,
+      "start_time": "00:34:00,080",
+      "end_time": "00:34:00,400",
+      "text": "Ok."
+    },
+    {
+      "id": 389,
+      "start": 2041.54,
+      "end": 2045.84,
+      "start_time": "00:34:01,540",
+      "end_time": "00:34:05,840",
+      "text": "Thì cái nội dung chính của chúng ta là biết được video nào là video đề xuất video của mình."
+    },
+    {
+      "id": 390,
+      "start": 2046.5,
+      "end": 2048.76,
+      "start_time": "00:34:06,500",
+      "end_time": "00:34:08,760",
+      "text": "Cái thứ 2 là video dẫn kênh là video nào."
+    },
+    {
+      "id": 391,
+      "start": 2049.22,
+      "end": 2051.0,
+      "start_time": "00:34:09,220",
+      "end_time": "00:34:11,000",
+      "text": "Cái thứ 3 là video nối đề xuất là video nào."
+    }
+  ]
+}

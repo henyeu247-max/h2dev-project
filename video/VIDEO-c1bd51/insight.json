@@ -1,0 +1,81 @@
+{
+  "sku": "VIDEO-c1bd51",
+  "title": "HƯỚNG DẪN CHI TIẾT A-Z REUP/BÁN CONTENT THÊM NGÁCH CỰC NHỎ HOẠT HÌNH DOUYIN TRENDS CỰC KỲ TRENDS CHƯA AI CÓ THỂ BIẾT + HƯỚNG DẪN EDIT CHUẨN LÀM A-Z | UPDATE MỚI NHẤT 12-03-2026",
+  "actual_topic": "HƯỚNG DẪN CHI TIẾT A-Z REUP/BÁN CONTENT THÊM NGÁCH CỰC NHỎ HOẠT HÌNH DOUYIN TRENDS CỰC KỲ TRENDS CHƯA AI CÓ THỂ BIẾT + HƯỚNG DẪN EDIT CHUẨN LÀM A-Z | UPDATE MỚI NHẤT 12-03-2026",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Reup & Khai Thác Hoạt Hình",
+  "niche_id": "faceless-general",
+  "target_market": "Trung Quốc",
+  "market_code": "CN",
+  "key_takeaways": [
+    "Tác giả giới thiệu ngách hoạt hình reup từ Douyin, phân tích hai kênh đối thủ làm bộ hoạt hình câu kéo; vào thời điểm quay tối ngày 11 tháng 3 năm 2026, video mới nhất ra cách đó 3 giờ đã có 99.000 lượt xem.",
+    "Bên Douyin tính theo lượng tim chứ không phải lượt xem như TikTok, và các video có trên 3, 4, 5 vạn tim, trong đó 1 vạn bằng 10.000 lượt xem.",
+    "Kênh gốc có nhiều bộ, có bộ đã đến khoảng 400 tập, và để tìm thêm kênh đối thủ thì đăng ký tài khoản Douyin rồi xem, like video để nó tự đề xuất kênh và video tương tự.",
+    "Về edit, tác giả tải 2 tập, mỗi video khoảng 5 phút, giảm tốc độ về 0.7 rồi tách phụ đề tiếng Trung, dùng tool dịch sang tiếng Việt và tool tạo giọng đọc, sau đó chạy lại trong CapCut với tốc độ 1.0 và âm thanh gốc để khoảng âm 16 đến âm 18.",
+    "Sau cùng thêm tên kênh ở góc trái và logo ở góc phải video, và tác giả nói ngách này còn rất mới nên có thể làm thêm hoặc kiếm sub để bán kênh."
+  ],
+  "edit_sop": {
+    "primary": "Reup hoạt hình Douyin sang tiếng Việt: lấy phụ đề tiếng Trung, dịch, tạo giọng đọc rồi edit trong CapCut",
+    "additional": [
+      "Tải 2 video tập 1 và tập 2, mỗi video khoảng 5 phút, giảm tốc độ về 0.7 để lấy phụ đề tiếng Trung",
+      "Dùng tool dịch phụ đề sang tiếng Việt, import file vừa dịch vào kiểm tra độ khớp rồi xóa phụ đề tiếng Trung",
+      "Tắt dự án CapCut để lưu, rồi dùng tool tạo giọng đọc, chọn đúng đường dẫn thư mục lưu dự án CapCut và file phụ đề tiếng Việt",
+      "Âm thanh gốc hạ về khoảng âm 16 đến âm 18; tốc độ chỉnh lại sau khi đã giảm xuống 0.7",
+      "Thêm tên kênh bên góc trái, logo bên góc phải, tên kênh chạy xung quanh video; độ dài 3 đến 5 phút là hợp lý"
+    ]
+  },
+  "avoid_flags": [
+    "Giảm tốc độ khi lấy phụ đề để giọng đọc không bị câu sau đè lên câu trước",
+    "Không quên xóa lớp phụ đề tiếng Trung sau khi đã nhập bản dịch tiếng Việt và nhớ hạ nhỏ âm thanh gốc kèm chèn tên kênh và biểu tượng riêng"
+  ],
+  "tools_mentioned": [
+    "Douyin",
+    "CapCut",
+    "ElevenLabs",
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@vuivesub"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Tổng quan nội dung bài giảng và mục tiêu thực hành"
+    },
+    {
+      "time": "02:27",
+      "seconds": 147,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "05:09",
+      "seconds": 309,
+      "label": "Phân tích các video nổ view cao nhất của kênh đối thủ"
+    },
+    {
+      "time": "07:27",
+      "seconds": 447,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "10:33",
+      "seconds": 633,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-c1bd51/transcript.txt",
+  "sop_steps": [
+    "Tải 2 video tập 1 và tập 2, mỗi video khoảng 5 phút, giảm tốc độ về 0.7 để lấy phụ đề tiếng Trung",
+    "Dùng tool dịch phụ đề sang tiếng Việt, import file vừa dịch vào kiểm tra độ khớp rồi xóa phụ đề tiếng Trung",
+    "Tắt dự án CapCut để lưu, rồi dùng tool tạo giọng đọc, chọn đúng đường dẫn thư mục lưu dự án CapCut và file phụ đề tiếng Việt",
+    "Âm thanh gốc hạ về khoảng âm 16 đến âm 18; tốc độ chỉnh lại sau khi đã giảm xuống 0.7",
+    "Thêm tên kênh bên góc trái, logo bên góc phải, tên kênh chạy xung quanh video; độ dài 3 đến 5 phút là hợp lý"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T06:30:00Z"
+}

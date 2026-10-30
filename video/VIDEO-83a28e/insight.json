@@ -1,0 +1,79 @@
+{
+  "key_takeaways": [
+    "Kênh được phân tích lập từ 3 tháng trước, lúc đầu làm chủ đề khác, một đến hai tháng gần đây mới đổi ngách và view lên rất cao, rất đều.",
+    "Tác giả khuyên chọn ngách nhỏ, xem chỉ số VPH, cái nào cao thì bám theo làm, và copy tiêu đề đi tìm thì ra các kênh đối thủ.",
+    "Anh em mới đừng ham hay bị FOMO, chỉ chọn một ngách đi, khi kênh đã lên rồi mới nhân bản và làm thêm.",
+    "Kênh dùng HeyGen để tạo nhép miệng ở một, hai phần đầu rồi các phần sau đứng hình chỉ còn giọng đọc, làm khoảng 8 đến 10 phút đầu hoặc 5 phút cũng được, để video sinh động và tránh bị đánh trùng lặp hay sử dụng lại nội dung.",
+    "Các kênh AI này đều dùng ElevenLabs hoặc clone, tác giả thấy ElevenLabs nhắn ngon hơn clone, còn clone trên web thì rất đắt, và link tham khảo để ở mô tả."
+  ],
+  "edit_sop": {
+    "primary": "Tìm ngách nhỏ theo chỉ số VPH và dùng HeyGen cho nhép miệng phần đầu video",
+    "additional": [
+      "Xem chỉ số VPH, video nào cao thì bám theo ngách đó mà làm",
+      "Dịch hoặc copy tiêu đề video rồi tìm kiếm để ra kênh đối thủ; xem video kênh để YouTube tự đề xuất kênh tương tự",
+      "Khoảng 8-10 phút đầu (hoặc 5 phút cũng được) cho HeyGen tạo nhép miệng theo giọng đọc, phần sau để ảnh đứng yên chỉ chạy giọng đọc",
+      "Giọng đọc dùng ElevenLabs, tự nghe thử và chọn giọng hợp ngách",
+      "Có thể cắt ghép nhiều đoạn video minh họa lại với nhau cho sinh động"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng ham quét nhiều ngách, chỉ chọn 1 ngách; ôm nhiều một lúc thì không hiệu quả",
+    "Để một ảnh chạy liên tục cả video thì chính sách YouTube ghét, dễ bị đánh trùng lặp hoặc sử dụng lại nội dung"
+  ],
+  "verified_expert_summary": true,
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Share kênh lập từ 3 tháng trước và phân tích kênh"
+    },
+    {
+      "time": "01:14",
+      "seconds": 74,
+      "label": "Xem tiêu đề, tìm kiếm tiêu đề để ra các kênh đối thủ tương tự"
+    },
+    {
+      "time": "02:29",
+      "seconds": 149,
+      "label": "Chỉ chọn một ngách làm trước, có kết quả mới nhân bản; không ôm nhiều"
+    },
+    {
+      "time": "03:41",
+      "seconds": 221,
+      "label": "Phần đầu video cần sinh động để giữ chân người xem và tránh bị coi là trùng lặp / sử dụng lại nội dung"
+    },
+    {
+      "time": "04:53",
+      "seconds": 293,
+      "label": "Link tham khảo để ở mô tả; giọng đọc các kênh AI thường dùng ElevenLabs hoặc clone"
+    }
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "HeyGen",
+    "ElevenLabs"
+  ],
+  "sop_steps": [
+    "Xem chỉ số VPH, video nào cao thì bám theo ngách đó mà làm",
+    "Dịch hoặc copy tiêu đề video rồi tìm kiếm để ra kênh đối thủ; xem video kênh để YouTube tự đề xuất kênh tương tự",
+    "Khoảng 8-10 phút đầu (hoặc 5 phút cũng được) cho HeyGen tạo nhép miệng theo giọng đọc, phần sau để ảnh đứng yên chỉ chạy giọng đọc",
+    "Giọng đọc dùng ElevenLabs, tự nghe thử và chọn giọng hợp ngách",
+    "Có thể cắt ghép nhiều đoạn video minh họa lại với nhau cho sinh động"
+  ],
+  "sku": "VIDEO-83a28e",
+  "title": "UPDATE KEY 13/10/2025 - SHARE (Ngách Nhỏ) Thị Trường Hàn",
+  "actual_topic": "UPDATE KEY 13/10/2025 - SHARE (Ngách Nhỏ) Thị Trường Hàn",
+  "channels_mentioned": [
+    "@튼튼라디오",
+    "@지혜로운하루-k6h",
+    "@지혜샘라디오",
+    "@노을빛시간",
+    "@세월의지혜TV"
+  ],
+  "visual_audio_checked": true,
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "source_transcript": "video/VIDEO-83a28e/transcript.txt",
+  "market_code": "KR",
+  "target_market": "Hàn Quốc",
+  "niche_primary": "Bán Content & Phát Triển Kênh"
+}

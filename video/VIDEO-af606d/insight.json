@@ -1,0 +1,79 @@
+{
+  "sku": "VIDEO-af606d",
+  "title": "SHOW KEY KÊNH MỚI CỰC NGON THỊ TRƯỜNG HÀN QUỐC",
+  "actual_topic": "Phân tích kênh ngách mới thị trường Hàn Quốc về Triều Tiên & Kỹ thuật dựng 1 phút đầu ghép video kết hợp nhiều ảnh chống quét",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Bán Content & Phát Triển Kênh",
+  "niche_id": "faceless-general",
+  "target_market": "Hàn Quốc",
+  "market_code": "KR",
+  "key_takeaways": [
+    "Tác giả share một ngách rất mới ở thị trường Hàn Quốc: kênh lập ngày 4/11, cách đây chưa tới 1 tháng, mới 10 video nhưng view phổ biến rất cao.",
+    "Nội dung đưa tin xấu về Triều Tiên theo kiểu giật tít; người Hàn ghét Triều Tiên nên bấm xem nhiều, thumbnail cũng thu hút.",
+    "Kênh đã bật kiếm tiền; cách edit: khoảng 1 phút đầu ghép nhiều video để giữ chân người xem, sau đó ghép ảnh.",
+    "Cảnh báo chính sách YouTube đang quét gắt: không để một video chỉ một ảnh chạy hết hoặc ảnh lặp đi lặp lại vì dễ bị đánh sử dụng lại nội dung, nội dung không trung thực hoặc trùng lặp, dẫn tới die kênh hoặc tắt kiếm tiền; nên ghép nhiều ảnh kết hợp video.",
+    "Cách tự viết prompt và tự trend nằm trong video cập nhật ngày 8/8; nên xem các video Pro và video bên dưới theo thứ tự từ dưới lên."
+  ],
+  "edit_sop": {
+    "primary": "Soi kênh ngách mới thị trường Hàn Quốc và cách edit video ghép ảnh, video chống bị quét",
+    "additional": [
+      "Vào kênh, bấm mục phổ biến để xem video cao view nhất",
+      "Đọc và dịch tiêu đề sang tiếng Việt để hiểu dạng ngách",
+      "Làm ảnh thumbnail thu hút, dạng kênh này chỉ ghép ảnh vào",
+      "Khoảng 1 phút đầu ghép nhiều video lại với nhau để giữ chân người xem, sau 1 phút thì ghép ảnh",
+      "Xem lại video cũ hướng dẫn tự viết prompt và tự làm form theo ngách bất kỳ, xem từ dưới lên"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng làm video chỉ có một ảnh chạy hết video hoặc nhiều ảnh lặp đi lặp lại",
+    "Làm vậy bị quét là tái sử dụng nội dung, nội dung không trung thực hoặc trùng lặp, có thể die kênh hoặc bị tắt kiếm tiền",
+    "Nội dung AI cần ghép nhiều hình ảnh, kết hợp với video"
+  ],
+  "tools_mentioned": [
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@새벽의두만강"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu kênh ngách mới tại Hàn Quốc lập ngày 4/11, mới 10 video đã nổ view cao"
+    },
+    {
+      "time": "00:46",
+      "seconds": 46,
+      "label": "Giải mã tâm lý người Hàn ghét Triều Tiên và cách đặt tiêu đề giật tít câu view"
+    },
+    {
+      "time": "01:35",
+      "seconds": 95,
+      "label": "Cảnh báo chính sách YouTube quét gắt: Ghép nhiều ảnh và video tránh lỗi 1 ảnh tĩnh"
+    },
+    {
+      "time": "02:21",
+      "seconds": 141,
+      "label": "Phân tích cấu trúc edit: 1 phút đầu ghép nhiều video giữ chân, sau đó ghép ảnh"
+    },
+    {
+      "time": "03:08",
+      "seconds": 188,
+      "label": "Nhắc lại bài học ngày 8/8 về cách tự viết prompt và xem lộ trình từ dưới lên"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-af606d/transcript.txt",
+  "sop_steps": [
+    "Vào kênh, bấm mục phổ biến để xem video cao view nhất",
+    "Đọc và dịch tiêu đề sang tiếng Việt để hiểu dạng ngách",
+    "Làm ảnh thumbnail thu hút, dạng kênh này chỉ ghép ảnh vào",
+    "Khoảng 1 phút đầu ghép nhiều video lại với nhau để giữ chân người xem, sau 1 phút thì ghép ảnh",
+    "Xem lại video cũ hướng dẫn tự viết prompt và tự làm form theo ngách bất kỳ, xem từ dưới lên"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

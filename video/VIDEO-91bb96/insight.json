@@ -1,0 +1,76 @@
+{
+  "sku": "VIDEO-91bb96",
+  "title": "SHARE NGÁCH HOT MỚI NHẤT THỊ TRƯỜNG US/ CANADA CỰC TRENDS - KÊNH ĐỐI THỦ 6 VIDEO / 1 NGÀY",
+  "actual_topic": "SHARE NGÁCH HOT MỚI NHẤT THỊ TRƯỜNG US/ CANADA CỰC TRENDS - KÊNH ĐỐI THỦ 6 VIDEO / 1 NGÀY",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Bán Content & Phát Triển Kênh",
+  "niche_id": "faceless-general",
+  "target_market": "Hoa Kỳ (US) / Canada",
+  "market_code": "US,CA",
+  "key_takeaways": [
+    "Tác giả share một ngách hoàn toàn mới: kênh đối thủ mới chỉ có 6 video, đăng cách đó 1 ngày (khoảng 4 video trong một ngày) nhưng view đã rất cao.",
+    "Kênh làm dạng tin nóng/tin tức, riêng về một nhà tỷ phú tên Buffett; có thể dịch từ khoá ra để tìm các kênh đối thủ cùng ngách.",
+    "Kênh gốc đang edit kiểu podcast chỉ với một ảnh; với việc YouTube quét AI gần đây, tác giả khuyên không edit kiểu này mà ghép nhiều ảnh hoặc nhiều video để an toàn hơn.",
+    "Tác giả đánh giá ngách này rất trend, làm theo cẩn thận thì sẽ lên view.",
+    "Cài công cụ hỗ trợ đã hướng dẫn ở bài trước để xem từ khoá của kênh đối thủ."
+  ],
+  "edit_sop": {
+    "primary": "Chia sẻ ngách tin nóng về tỷ phú Buffett (thị trường US/Canada) và cách edit an toàn hơn kênh đối thủ",
+    "additional": [
+      "Chọn kênh cổ và khai thác ngách tin nóng về tỷ phú Buffett với tần suất đăng khoảng 4 video mỗi ngày như kênh mẫu",
+      "Dịch tiêu đề và nội dung kênh đối thủ ra để nắm rõ chủ đề họ đang triển khai",
+      "Cài tiện ích VidIQ đã hướng dẫn ở video trước để soi các từ khóa của kênh đối thủ",
+      "Edit ghép nhiều ảnh hoặc nhiều video lại với nhau thay vì chỉ dùng một ảnh tĩnh dạng podcast"
+    ]
+  },
+  "avoid_flags": [
+    "Không nên edit kiểu podcast chỉ một ảnh vì AI đang quét dạng này",
+    "Làm cẩn thận khi edit, không làm cẩu thả"
+  ],
+  "tools_mentioned": [
+    "VidIQ"
+  ],
+  "channels_mentioned": [
+    "@FinalUrgency"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "00:16",
+      "seconds": 16,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "00:46",
+      "seconds": 46,
+      "label": "Phân tích các video nổ view cao nhất của kênh đối thủ"
+    },
+    {
+      "time": "01:04",
+      "seconds": 64,
+      "label": "Chiến lược nhân bản nội dung sang thị trường quốc tế"
+    },
+    {
+      "time": "01:20",
+      "seconds": 80,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-91bb96/transcript.txt",
+  "sop_steps": [
+    "Chọn kênh cổ và khai thác ngách tin nóng về tỷ phú Buffett với tần suất đăng khoảng 4 video mỗi ngày như kênh mẫu",
+    "Dịch tiêu đề và nội dung kênh đối thủ ra để nắm rõ chủ đề họ đang triển khai",
+    "Cài tiện ích VidIQ đã hướng dẫn ở video trước để soi các từ khóa của kênh đối thủ",
+    "Edit ghép nhiều ảnh hoặc nhiều video lại với nhau thay vì chỉ dùng một ảnh tĩnh dạng podcast"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T06:30:00Z"
+}

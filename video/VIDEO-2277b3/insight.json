@@ -1,0 +1,78 @@
+{
+  "sku": "VIDEO-2277b3",
+  "title": "Share thêm ngách nhỏ thị trường Việt và phân tích hướng dẫn tư duy làm nhân bản tất cả các thị trường",
+  "actual_topic": "Share thêm ngách nhỏ thị trường Việt và phân tích hướng dẫn tư duy làm nhân bản tất cả các thị trường",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Sức Khỏe & Dinh Dưỡng",
+  "niche_id": "faceless-general",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Tác giả chia sẻ thêm 2 kênh đối thủ ngách sức khỏe ở thị trường Việt lập từ giữa tháng 4, một kênh mới làm 3 tuần, view rất lớn và làm đúng quy trình nhân bản thị trường đã hướng dẫn ở video hôm trước.",
+    "Key sức khỏe rất lớn nhưng đi sâu vào thì chia ra nhiều ngách nhỏ; ngách càng nhỏ thì chỉ lên tầm vài trăm nghìn view nhưng ít cạnh tranh, dễ lên, còn mở rộng ra thì nhiều khán giả hơn nhưng cạnh tranh cao hơn.",
+    "Tác giả đưa ví dụ một kênh Mỹ ngách sức khỏe chung chung và một kênh bác sĩ nổi tiếng bên Mỹ là content thật, để lấy kịch bản về làm ở thị trường mình; kênh ngoại kia dùng HeyGen nhép miệng rồi ghép video hình ảnh minh họa.",
+    "Về edit, ghép nguồn tự nhiên có sẵn trên các web chia sẻ, chọn giọng đọc ít người dùng để giảm rủi ro bị quét, và không được fake logo đài truyền hình vì vi phạm pháp luật.",
+    "Nhân bản thị trường không chỉ từ Mỹ về Việt mà còn từ Mỹ sang Nhật, Hàn hoặc ngược lại, tác giả nhắc đã hướng dẫn cách này hơn một năm trước và nó không bao giờ lỗi thời."
+  ],
+  "edit_sop": {
+    "primary": "Nhân bản thị trường: lấy kênh ngoại hoặc kênh ngách nhỏ về làm lại ở thị trường mình",
+    "additional": [
+      "Tìm thị trường có view rồi đem kịch bản về làm, có thể từ US sang Việt, Nhật, Hàn hoặc ngược lại",
+      "Ngách càng nhỏ thì view tầm vài trăm nghìn nhưng ít cạnh tranh, dễ lên hơn; ngách mở rộng thì nhiều khán giả nhưng cạnh tranh cao hơn",
+      "Hình ảnh edit bằng cách ghép nguồn có sẵn trên mạng như các web share",
+      "Giọng đọc nên chọn giọng ít người dùng rồi clone theo để giảm rủi ro bị quét",
+      "Nên chèn tên kênh của mình vào logo, không fake logo đài truyền hình"
+    ]
+  },
+  "avoid_flags": [
+    "Không fake logo của đài truyền hình lớn vì vi phạm pháp luật",
+    "Không dùng giọng đọc quá nhiều người dùng vì dễ bị quét",
+    "Không bám một thị trường vì cạnh tranh cao, người làm tốt mới lên"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "HeyGen"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu và chia sẻ 2 kênh sức khỏe thị trường Việt làm theo nhân bản thị trường"
+    },
+    {
+      "time": "01:54",
+      "seconds": 114,
+      "label": "Phân tích key sức khỏe lớn và cách đi sâu vào các ngách nhỏ ít cạnh tranh"
+    },
+    {
+      "time": "03:57",
+      "seconds": 237,
+      "label": "Ví dụ kênh ngoại dùng AI HeyGen nhép miệng và ghép hình ảnh minh họa"
+    },
+    {
+      "time": "05:33",
+      "seconds": 333,
+      "label": "Lưu ý chọn giọng đọc ít người dùng và tuyệt đối không fake logo đài truyền hình"
+    },
+    {
+      "time": "07:39",
+      "seconds": 459,
+      "label": "Tư duy nhân bản chéo giữa các thị trường Mỹ, Việt, Nhật, Hàn"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-2277b3/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Tìm thị trường có view rồi đem kịch bản về làm, có thể từ US sang Việt, Nhật, Hàn hoặc ngược lại",
+    "Ngách càng nhỏ thì view tầm vài trăm nghìn nhưng ít cạnh tranh, dễ lên hơn; ngách mở rộng thì nhiều khán giả nhưng cạnh tranh cao hơn",
+    "Hình ảnh edit bằng cách ghép nguồn có sẵn trên mạng như các web share",
+    "Giọng đọc nên chọn giọng ít người dùng rồi clone theo để giảm rủi ro bị quét",
+    "Nên chèn tên kênh của mình vào logo, không fake logo đài truyền hình"
+  ]
+}

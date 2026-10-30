@@ -1,0 +1,79 @@
+{
+  "sku": "VIDEO-dbd487",
+  "title": "NGUỒN BILIBILI VÀ GIỜ CỤ THỂ CỦA KÊNH GỐC RA VIDEO \"NGÁCH REUP CÂU CÁ VẠN CÂN\"",
+  "actual_topic": "NGUỒN BILIBILI VÀ GIỜ CỤ THỂ CỦA KÊNH GỐC RA VIDEO \"NGÁCH REUP CÂU CÁ VẠN CÂN\"",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Reup & Khai Thác Hoạt Hình",
+  "niche_id": "faceless-general",
+  "target_market": "Trung Quốc",
+  "market_code": "CN",
+  "key_takeaways": [
+    "Kênh gốc nằm trên Bilibili vì Bilibili cập nhật dạng video câu cá nhanh nhất; bên Douyin không cập nhật.",
+    "Lúc quay (tối ngày 27) kênh gốc đã ra tập 41, hôm sau (ngày 28) sẽ ra tập 42.",
+    "Kênh gốc cập nhật video vào khoảng 15h20 đến 15h30 (3h20-3h30 chiều); nên vào canh và reload liên tục để lấy video mới và làm nhanh nhất, tác giả đã test cách này.",
+    "Có thể tải bằng tool miễn phí do tác giả chia sẻ hoặc dùng web, nhưng gần như không có web tải tốt; cách edit giống các dạng reup trước.",
+    "Link Bilibili của kênh gốc để ở phần mô tả; tác giả có video hướng dẫn quy trình edit dạng reup trên kênh YouTube của mình."
+  ],
+  "edit_sop": {
+    "primary": "Canh nguồn Bilibili của kênh câu cá vạn cân theo giờ ra tập mới để lấy về làm nhanh",
+    "additional": [
+      "Link Bilibili để ở phần mô tả; Bilibili cập nhật tập mới nhanh nhất, Douyin không cập nhật",
+      "Kênh gốc cập nhật video khoảng 15h20 đến 15h30 (3h20 đến 3h30 chiều), vào canh và reload liên tục",
+      "Khi kênh gốc vừa đăng tập video mới thì tải về bắt tay vào làm ngay",
+      "Tải bằng tool tác giả share free, hoặc dùng web nhưng không web nào tải ngon",
+      "Cách edit giống các dạng reup đã hướng dẫn ở video khác"
+    ]
+  },
+  "avoid_flags": [
+    "Không tìm nguồn câu cá vạn cân bên Douyin vì Douyin không cập nhật tập mới nhanh như kênh gốc trên Bilibili.",
+    "Không nên phụ thuộc vào các trang web tải video trực tuyến vì gần như không có web nào tải video Bilibili ổn định và đầy đủ.",
+    "Tránh vào muộn sau khung giờ 15h20 đến 15h30 chiều khiến việc lấy tập mới và đăng tải chậm hơn các kênh đối thủ."
+  ],
+  "tools_mentioned": [
+    "Bilibili",
+    "Douyin",
+    "YouTube"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Tổng quan nội dung bài giảng và mục tiêu thực hành"
+    },
+    {
+      "time": "00:20",
+      "seconds": 20,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "00:51",
+      "seconds": 51,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "01:11",
+      "seconds": 71,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "01:28",
+      "seconds": 88,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-dbd487/transcript.txt",
+  "sop_steps": [
+    "Link Bilibili để ở phần mô tả; Bilibili cập nhật tập mới nhanh nhất, Douyin không cập nhật",
+    "Kênh gốc cập nhật video khoảng 15h20 đến 15h30 (3h20 đến 3h30 chiều), vào canh và reload liên tục",
+    "Khi kênh gốc vừa đăng tập video mới thì tải về bắt tay vào làm ngay",
+    "Tải bằng tool tác giả share free, hoặc dùng web nhưng không web nào tải ngon",
+    "Cách edit giống các dạng reup đã hướng dẫn ở video khác"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T06:30:00Z"
+}

@@ -1,0 +1,1763 @@
+1
+00:00:00,000 --> 00:00:11,780
+Rồi em chào tất cả mọi người nha, như hôm trước em đã có nói và hứa là sẽ lên video và hướng dẫn mọi người là làm một cái form prompt nhân bản thị trường, bất kỳ thị trường nào muốn luôn nha
+
+2
+00:00:11,780 --> 00:00:16,400
+Thì hôm nay em sẽ share cái form prompt đó và hướng dẫn mọi người làm nha
+
+3
+00:00:16,400 --> 00:00:24,600
+Thì cái, thật ra cái form prompt này thì em đã trên sánh rồi, và cái này là dùng để cho mọi người làm bất kỳ cái thị trường nào muốn luôn nha
+
+4
+00:00:24,600 --> 00:00:29,120
+Ví dụ như mọi người có thể lấy từ Nhật về Việt Nam
+
+5
+00:00:29,120 --> 00:00:32,140
+Hoặc là một người lấy từ Việt Nam sang Hoa Kỳ
+
+6
+00:00:32,140 --> 00:00:34,280
+Hay là từ Hoa Kỳ sang Hàn
+
+7
+00:00:34,280 --> 00:00:36,240
+Đấy tất cả là đều được kìa nha
+
+8
+00:00:36,240 --> 00:00:38,680
+Thì em để đóng gói vào một cái form prompt này rồi
+
+9
+00:00:38,680 --> 00:00:41,320
+Thì từ cái form prompt này thì nó sẽ gen ra
+
+10
+00:00:41,320 --> 00:00:43,540
+Mọi người phải cho nó hẹp cái kênh đối thủ
+
+11
+00:00:43,540 --> 00:00:45,540
+Sau đó thì nó sẽ gen ra cái form prompt
+
+12
+00:00:45,540 --> 00:00:47,260
+Để mọi người làm nha
+
+13
+00:00:47,260 --> 00:00:50,260
+Thì em nói sâu ra trước để mọi người hiểu ra thôi
+
+14
+00:00:50,260 --> 00:00:52,720
+Tí nữa em vào chi tiết nữa em sẽ giải thích
+
+15
+00:00:52,720 --> 00:00:55,220
+Về làm demo cho một người hình dung ra rõ hơn nha
+
+16
+00:00:55,220 --> 00:00:56,840
+Thì trước khi vào á
+
+17
+00:00:56,840 --> 00:00:59,480
+Thì em cũng sẽ share thêm cho mọi người
+
+18
+00:00:59,480 --> 00:01:02,440
+Một vài cái kênh đối thủ về ngách sức khỏe mới nữa nha
+
+19
+00:01:02,440 --> 00:01:04,360
+Thì hôm trước cái ngách sức khỏe
+
+20
+00:01:04,360 --> 00:01:06,700
+Thì em cũng có share cho mấy bác làm rồi
+
+21
+00:01:06,700 --> 00:01:08,800
+Thì hôm nay em share thêm
+
+22
+00:01:08,800 --> 00:01:10,300
+Hai kênh đối thủ nữa
+
+23
+00:01:10,300 --> 00:01:11,460
+Vài kênh đối thủ nữa nha
+
+24
+00:01:11,460 --> 00:01:13,100
+Đây là ở thị trường Việt Nam nha
+
+25
+00:01:13,100 --> 00:01:15,360
+Thì mấy bác thấy không view thật sự rất là kinh khủng luôn
+
+26
+00:01:15,360 --> 00:01:17,560
+Kênh này mới có 9 video thôi nha
+
+27
+00:01:17,560 --> 00:01:19,140
+Nhưng mà tổng lượng view á
+
+28
+00:01:19,140 --> 00:01:20,600
+Thì hơn 2 triệu view luôn
+
+29
+00:01:20,600 --> 00:01:23,900
+Thì mọi người thấy video nào cũng rất là cao view luôn
+
+30
+00:01:23,900 --> 00:01:25,780
+Đây em bấm vào bộ phổ biến nè
+
+31
+00:01:25,780 --> 00:01:30,060
+Kênh này thật sự rất rất là kính view luôn nha
+
+32
+00:01:30,060 --> 00:01:32,420
+Thì hoàn toàn thì nó cũng làm bằng AI thôi
+
+33
+00:01:32,420 --> 00:01:34,860
+Và làm bằng HeyGain cho em để hướng dẫn ấy
+
+34
+00:01:34,860 --> 00:01:37,000
+Đang là bật kiếm tiền luôn nha mấy bác
+
+35
+00:01:37,000 --> 00:01:40,360
+Đây, đây là bằng HeyGain nè
+
+36
+00:01:40,360 --> 00:01:42,940
+Tạo hình ảnh thì mấy bác có thể làm bằng
+
+37
+00:01:42,940 --> 00:01:45,680
+Con GetMate hoặc là con ChatGPT nha
+
+38
+00:01:45,680 --> 00:01:47,440
+Con ChatGPT này đã tạo rất là đẹp rồi
+
+39
+00:01:47,440 --> 00:01:50,300
+Thì đây, ví dụ như đây là cái hình ảnh nè
+
+40
+00:01:50,300 --> 00:01:52,680
+Thì mọi người có thể chụp cái phong cách
+
+41
+00:01:52,680 --> 00:01:54,180
+Muốn làm theo phong cách như này đúng không
+
+42
+00:01:54,180 --> 00:01:56,120
+Thì mọi người có thể chụp xong rồi gửi cho
+
+43
+00:01:56,120 --> 00:01:58,600
+Cái con Caleo nó sẽ làm
+
+44
+00:01:58,600 --> 00:01:59,680
+Cái phong cách nảnh thôi
+
+45
+00:01:59,680 --> 00:02:01,680
+Cái này thì lúc trước em có hướng dẫn mọi người rồi
+
+46
+00:02:01,680 --> 00:02:04,200
+Thì kênh này nhìn sâu ra thì em thấy
+
+47
+00:02:04,200 --> 00:02:05,180
+Nó edit là
+
+48
+00:02:05,180 --> 00:02:07,700
+Nó ghép vào những hình ảnh AI thôi
+
+49
+00:02:07,700 --> 00:02:09,880
+Chứ không có video tự nhiên
+
+50
+00:02:09,880 --> 00:02:11,720
+Hay hình ảnh video minh họa tự nhiên nha
+
+51
+00:02:11,720 --> 00:02:14,000
+Em khiêu mọi người thì cứ nên
+
+52
+00:02:14,000 --> 00:02:16,200
+Ghép vào những cái tự nhiên
+
+53
+00:02:16,200 --> 00:02:17,240
+Thì nó sẽ ok hơn
+
+54
+00:02:17,240 --> 00:02:19,660
+Thì cùng với đó mọi người cũng có thể kèm vào
+
+55
+00:02:19,660 --> 00:02:22,640
+Những cái hình ảnh AI như này cũng được nha
+
+56
+00:02:22,640 --> 00:02:24,300
+Nhưng mà hạn chế thôi mấy bác
+
+57
+00:02:24,300 --> 00:02:26,640
+Để tránh nó bị quét nha
+
+58
+00:02:26,640 --> 00:02:28,720
+Thì thật ra các cái lỗi không trung thực này
+
+59
+00:02:28,720 --> 00:02:31,300
+Hiện nay YouTube nó cũng nhẹ ra bớt rồi
+
+60
+00:02:31,300 --> 00:02:32,240
+Mấy bác có để ý không
+
+61
+00:02:32,240 --> 00:02:35,220
+Nó đã nhẹ ra bớt rồi nha
+
+62
+00:02:35,220 --> 00:02:38,520
+Không có bị quét kênh như những tháng trước nữa đâu
+
+63
+00:02:38,520 --> 00:02:40,760
+Rồi đây là một kênh nha
+
+64
+00:02:40,760 --> 00:02:41,420
+Kênh thứ nhất
+
+65
+00:02:41,420 --> 00:02:43,400
+Còn đây là kênh thứ hai nha
+
+66
+00:02:43,400 --> 00:02:45,620
+Kênh này thì cũng mới 10 mail video thôi
+
+67
+00:02:45,620 --> 00:02:47,000
+Nó cũng cùng tên luôn
+
+68
+00:02:47,000 --> 00:02:48,600
+Cùng một người làm luôn mấy bác
+
+69
+00:02:48,600 --> 00:02:50,500
+Đấy em share thêm cho mọi người
+
+70
+00:02:50,500 --> 00:02:52,240
+Cả thể tham khảo những kênh đối thủ này
+
+71
+00:02:52,240 --> 00:02:54,020
+Từ đó mọi người có thể
+
+72
+00:02:54,020 --> 00:02:56,000
+Chọn lọc ra thêm nhiều thứ nữa
+
+73
+00:02:56,000 --> 00:02:58,080
+Đấy về cách edit thì
+
+74
+00:02:58,080 --> 00:03:00,780
+Giống như kênh kia thôi cùng một người làm nè
+
+75
+00:03:00,780 --> 00:03:04,460
+Đấy em share thêm nha
+
+76
+00:03:04,460 --> 00:03:06,580
+Tiếp tục là một cái kênh
+
+77
+00:03:06,580 --> 00:03:08,020
+Thị trường hàng nữa
+
+78
+00:03:08,020 --> 00:03:09,060
+Thị trường Nhật nữa nha
+
+79
+00:03:09,060 --> 00:03:13,340
+Kênh này thì đã dùng kênh
+
+80
+00:03:13,340 --> 00:03:14,340
+2025 thôi
+
+81
+00:03:14,340 --> 00:03:15,000
+Chứ thật ra thì
+
+82
+00:03:15,000 --> 00:03:18,140
+Mới đăng video và mới làm từ 3 tuần trước thôi
+
+83
+00:03:18,140 --> 00:03:21,740
+Về mọi người để ý á, những video đầu thì nó hơi lẹt đẹt view
+
+84
+00:03:21,740 --> 00:03:25,020
+Sau video thứ 3 này bắt đầu nổ view nè
+
+85
+00:03:25,020 --> 00:03:26,500
+Vậy cũng có video lẹt đẹt nha
+
+86
+00:03:26,500 --> 00:03:27,940
+Bởi vì tùy theo ngắt nè
+
+87
+00:03:27,940 --> 00:03:29,700
+Đúng ngắt trên thì nó mới lên thôi
+
+88
+00:03:29,700 --> 00:03:32,820
+Sau đó thì cũng có khá là nhiều video nổ view
+
+89
+00:03:32,820 --> 00:03:37,400
+Thì em thấy kênh này cũng khá là mới nên em share thêm
+
+90
+00:03:37,400 --> 00:03:39,020
+Đây em bắt một phổ biến này
+
+91
+00:03:39,020 --> 00:03:43,720
+Em sẽ dịch ra cho mấy bác xem hiểu được kênh này nó làm về cái ngách sức khỏe gì nha
+
+92
+00:03:43,720 --> 00:03:46,400
+Đây này mấy bác đọc cái tiêu đề là
+
+93
+00:03:46,400 --> 00:03:49,160
+Ở mức hiếp áp nào thì hiếp áp có thể
+
+94
+00:03:49,160 --> 00:03:50,000
+Nên nghi hiểm
+
+95
+00:03:50,000 --> 00:03:51,840
+Video thứ 2 là
+
+96
+00:03:51,840 --> 00:03:54,920
+Nêm loại thực phẩm cho người cao tuổi
+
+97
+00:03:54,920 --> 00:03:55,960
+Để hiếp áp
+
+98
+00:03:55,960 --> 00:03:57,400
+Mấy bác đọc như vậy
+
+99
+00:03:57,400 --> 00:04:00,660
+Mấy bác đỡi những video phổ biến cao view
+
+100
+00:04:00,660 --> 00:04:03,120
+Của cái kênh này thì mấy bác hình dung ra
+
+101
+00:04:03,120 --> 00:04:04,880
+Nói về ngách nào không
+
+102
+00:04:04,880 --> 00:04:07,440
+Thì kênh này nó trên về cái ngách là
+
+103
+00:04:07,440 --> 00:04:08,520
+Hiếp áp nha
+
+104
+00:04:08,520 --> 00:04:10,420
+Mọi người đỡi cái từ kho ngách nha
+
+105
+00:04:10,420 --> 00:04:12,400
+Từ kho ngách là hiếp áp nha
+
+106
+00:04:12,400 --> 00:04:14,580
+Rồi thêm một kênh nữa
+
+107
+00:04:14,580 --> 00:04:16,120
+Kênh này thì cũng về
+
+108
+00:04:16,120 --> 00:04:19,280
+dạng sức khỏe nha, nhưng mà nó làm từ 5 tháng trước
+
+109
+00:04:19,280 --> 00:04:22,120
+nhưng mà thật ra thì nó rất là ít video thôi, 1 tháng thì
+
+110
+00:04:22,120 --> 00:04:24,240
+tầm vài video, 2 video thôi
+
+111
+00:04:24,240 --> 00:04:27,840
+mọi người để ý nè, dạo gần đây thì
+
+112
+00:04:27,840 --> 00:04:31,120
+1 tháng gần đây thì nó nổ view cao nha, chứ dẫn lúc trước
+
+113
+00:04:31,120 --> 00:04:44,990
+Chứ dẫn lúc trước thì nó hơi lẹt đẹt. Đấy, nên là em thấy nó khá là trend nên là em share thêm cho mọi người luôn. Nên em có thể tham khảo thêm. Thực ra thì có rất rất nhiều câu nối thủ luôn. Có cái nào trend thì em thấy sẽ share thêm cho mọi người thôi.
+
+114
+00:04:46,030 --> 00:04:51,190
+Rồi ok bây giờ thì quay lại vấn đề chính hôm nay thì em sẽ hướng dẫn mọi người cách dùng cái Chrome
+
+115
+00:04:51,190 --> 00:04:55,810
+về cách nhăn bản thị trường theo nhu cầu mong muốn của mình là như nào nhé.
+
+116
+00:04:56,670 --> 00:05:00,150
+Cái Chrome chính này thì em đã trend thật sự rất rất kỹ luôn rồi.
+
+117
+00:05:00,150 --> 00:05:06,810
+Thì vai trò của nó thì nó sẽ là tạo ra cái format video
+
+118
+00:05:06,810 --> 00:05:13,790
+Kiểu như là theo mong muốn của mình là mình nhăn bản video kịch bản từ Mỹ sang Nhật
+
+119
+00:05:13,790 --> 00:05:15,050
+Hoặc là từ Nhật sang Hàn
+
+120
+00:05:15,050 --> 00:05:20,170
+Nói chung là mong muốn như nào thì nó sẽ hỏi mọi người
+
+121
+00:05:20,170 --> 00:05:21,490
+Xong mọi người sẽ nhặt vào thôi
+
+122
+00:05:21,490 --> 00:05:23,390
+Thì nó sẽ ra nha
+
+123
+00:05:23,390 --> 00:05:25,430
+Cơ bản là vai trò của nó như vậy
+
+124
+00:05:25,430 --> 00:05:29,450
+Và nó sẽ được dùng chung cho tất cả mọi lần
+
+125
+00:05:29,450 --> 00:05:32,950
+Mọi người muốn làm những cái ngách mới hay là ngách khác như nào
+
+126
+00:05:32,950 --> 00:05:33,810
+Đều được kể nha
+
+127
+00:05:33,810 --> 00:05:37,030
+Cơ bản là nó sẽ ra một cái form prompt
+
+128
+00:05:37,030 --> 00:05:39,450
+Và nó sẽ cho mọi người nhóm bản
+
+129
+00:05:39,450 --> 00:05:41,190
+Nhưng mà không phải là dịch đơn thần
+
+130
+00:05:41,190 --> 00:05:42,890
+Dịch kiểu như dịch cứng đâu
+
+131
+00:05:42,890 --> 00:05:46,190
+Nó sẽ là dịch theo cái ngôn ngữ văn hóa
+
+132
+00:05:46,190 --> 00:05:47,570
+Cái nhân vật bối cảnh
+
+133
+00:05:47,570 --> 00:05:48,570
+Và cách sưng hô
+
+134
+00:05:48,570 --> 00:05:50,570
+Cái giọng điệu sao cho chứng
+
+135
+00:05:50,570 --> 00:05:54,170
+Đúng với cái ngôn ngữ về con người đích
+
+136
+00:05:54,170 --> 00:05:59,790
+Cô người đích có nghĩa là cái thị trường đích mà mọi người muốn nhăn sang á
+
+137
+00:05:59,790 --> 00:06:02,630
+Ví dụ như từ Hàn mà em đem sang Việt Nam á
+
+138
+00:06:02,630 --> 00:06:08,130
+Thì cái giọng điệu về cái cách kế chuyện thì nó cũng phải đúng như cái người Việt Nam nha
+
+139
+00:06:08,130 --> 00:06:13,650
+Chứ không phải đơn thần là dịch từ Hàn sang Việt đâu mọi người
+
+140
+00:06:13,650 --> 00:06:18,850
+Thì bây giờ em sẽ ví dụ như lấy cái kênh này ở Hàn Quốc này em sẽ làm mẫu luôn nha
+
+141
+00:06:18,850 --> 00:06:22,990
+Thì cái ngách cái kênh này thì hôm trước em cũng đã có update về xe cho mọi người rồi
+
+142
+00:06:22,990 --> 00:06:23,790
+Mọi người nhớ không?
+
+143
+00:06:24,170 --> 00:06:26,170
+Thế thì bây giờ em sẽ làm mẫu nha
+
+144
+00:06:26,170 --> 00:06:29,130
+Rồi còn đi tới đâu thì em sẽ nói thêm và giải thích thêm nha
+
+145
+00:06:29,130 --> 00:06:32,970
+Rồi bây giờ thì ở dưới này nó có cái này dán tại đây
+
+146
+00:06:32,970 --> 00:06:37,070
+Có nghĩa là mình sẽ copy toàn bộ cái kênh đối thủ
+
+147
+00:06:37,070 --> 00:06:40,000
+Kiểu như tư đờ thông số này kia
+
+148
+00:06:40,000 --> 00:06:42,230
+Chai AI nó phân tích và nó học
+
+149
+00:06:42,230 --> 00:06:45,930
+Cái cách trên này thì em đã hướng dẫn một người rất rất nhiều lần rồi đúng không
+
+150
+00:06:45,930 --> 00:06:49,330
+Rồi bây giờ ví dụ như đã có cái form prompt rồi đúng không
+
+151
+00:06:49,330 --> 00:06:51,710
+Bây giờ thì em sẽ copy toàn bộ cái
+
+152
+00:06:51,710 --> 00:06:54,950
+Kênh đối thủ này nè
+
+153
+00:06:54,950 --> 00:06:58,390
+Rồi em sẽ quay lại cái form prompt
+
+154
+00:06:58,390 --> 00:07:00,550
+cái form prompt này thì em đang bỏ ở trong
+
+155
+00:07:00,550 --> 00:07:02,550
+Notepad thì nó dựng các cái tựa như vậy thôi
+
+156
+00:07:02,550 --> 00:07:03,330
+Cũng không sao nha
+
+157
+00:07:03,330 --> 00:07:05,550
+Rồi thì em sẽ dán vào đây thôi
+
+158
+00:07:05,550 --> 00:07:08,450
+Nếu như mọi người làm nhiều kênh
+
+159
+00:07:08,450 --> 00:07:09,890
+Làm 2-3 kênh đối thủ
+
+160
+00:07:09,890 --> 00:07:11,010
+Mọi người cứ copy thôi
+
+161
+00:07:11,010 --> 00:07:14,710
+Cách trên này thì hôm trước em có dẫn mọi người rất nhiều rồi đấy
+
+162
+00:07:14,710 --> 00:07:16,450
+Cứ copy cho nó hẹp thôi
+
+163
+00:07:16,450 --> 00:07:18,370
+Rồi bây giờ thì mọi người bấm
+
+164
+00:07:18,370 --> 00:07:20,330
+Ctrl E, Ctrl S, ĐCOPPED.
+
+165
+00:07:20,330 --> 00:07:22,550
+tắt toàn bộ rồi que tạo
+
+166
+00:07:22,550 --> 00:07:24,790
+cái new chart ở trong con cloud nha
+
+167
+00:07:24,790 --> 00:07:26,630
+thì tiếp theo
+
+168
+00:07:26,630 --> 00:07:27,850
+thì mọi người có thể là
+
+169
+00:07:27,850 --> 00:07:30,690
+chụp cái title
+
+170
+00:07:30,690 --> 00:07:32,390
+của con đối thủ để cho nó
+
+171
+00:07:32,390 --> 00:07:33,490
+phân tích sâu hơn nha
+
+172
+00:07:33,490 --> 00:07:35,850
+thì ví dụ như em sẽ chụp 2 ảnh đi
+
+173
+00:07:35,850 --> 00:07:38,070
+em phải bấm vào cái phổ biến nha
+
+174
+00:07:38,070 --> 00:07:39,490
+sẽ chụp tầm 2 ảnh
+
+175
+00:07:39,490 --> 00:07:41,790
+mỗi ảnh là tầm 6 cái video như này
+
+176
+00:07:41,790 --> 00:07:43,930
+mình chụp để cho mình
+
+177
+00:07:43,930 --> 00:07:46,270
+trên cho nó hẹp kỹ hơn nha mọi người
+
+178
+00:07:46,270 --> 00:07:48,930
+Đấy, như vậy nó sẽ làm ok hơn nhiều nha
+
+179
+00:07:48,930 --> 00:07:50,990
+Đấy, em sẽ bỏ vào
+
+180
+00:07:50,990 --> 00:07:52,770
+Rồi, em sẽ cho nó chạy nè
+
+181
+00:07:52,770 --> 00:07:54,950
+Lúc này thì em chưa bỏ cái kịch bản nha
+
+182
+00:07:54,950 --> 00:07:55,930
+Em quên bỏ kịch bản
+
+183
+00:07:55,930 --> 00:07:59,670
+Thì đảm bảo nó sẽ nhắc em là vì thiếu kịch bản nè
+
+184
+00:07:59,670 --> 00:08:04,010
+Bởi vì mình phải cần cái kịch bản video góc nữa
+
+185
+00:08:04,010 --> 00:08:04,890
+Để cho nó học thêm
+
+186
+00:08:04,890 --> 00:08:06,610
+Đấy, bây giờ mọi người thấy không
+
+187
+00:08:06,610 --> 00:08:09,910
+Nó bảo là thiếu cái phần
+
+188
+00:08:09,910 --> 00:08:14,110
+Trên strip kia là phần kịch bản á
+
+189
+00:08:14,110 --> 00:08:16,230
+Nhưng mà nó sẽ phân tích trước
+
+190
+00:08:16,230 --> 00:08:18,090
+Rồi nó sẽ chờ mình bổ sung sau
+
+191
+00:08:18,090 --> 00:08:20,030
+Thực ra em cố tình như vậy
+
+192
+00:08:20,030 --> 00:08:21,050
+Để cho mấy bác thấy được
+
+193
+00:08:21,050 --> 00:08:23,310
+Khi mà mình thiếu thì nó sẽ nhắc mình
+
+194
+00:08:23,310 --> 00:08:25,770
+Thực ra cái này
+
+195
+00:08:25,770 --> 00:08:27,930
+Mấy bác có thể bỏ chung vào luôn
+
+196
+00:08:27,930 --> 00:08:29,250
+Mấy bác copy một video
+
+197
+00:08:29,250 --> 00:08:31,630
+Lấy một cái kịch bản video cụ thể nào đó
+
+198
+00:08:31,630 --> 00:08:33,450
+Người bỏ vào cho nó học luôn
+
+199
+00:08:33,450 --> 00:08:34,750
+Chạy một lần luôn
+
+200
+00:08:34,750 --> 00:08:36,610
+Thì nó sẽ đỡ tốn token của mọi người
+
+201
+00:08:36,610 --> 00:08:38,530
+Còn đây là em đang làm demo
+
+202
+00:08:38,530 --> 00:08:40,070
+Cho mấy bác hiểu quen nha
+
+203
+00:08:40,070 --> 00:08:41,790
+Em đang dùng gói mát
+
+204
+00:08:41,790 --> 00:08:43,710
+Thì nó cũng không tốn token bao nhiêu đâu
+
+205
+00:08:43,710 --> 00:08:52,010
+Đấy, thì sau khi phân tích thì nó sẽ phân tích ra cái ngách như nào, ngách nhỏ, về nói về gì nè
+
+206
+00:08:52,010 --> 00:08:53,670
+Đấy, tất cả đều có hết
+
+207
+00:08:53,670 --> 00:08:57,010
+Trong dung khán giả trên đêm tuổi
+
+208
+00:08:57,010 --> 00:09:02,350
+Đấy, về các cái bệnh, về công thức này kia thì nói chung nó phân tích hết nha
+
+209
+00:09:02,350 --> 00:09:07,550
+Vậy nó cũng có gửi cho mình là những cái tiêu đề, chủ đề là viral nhất nè
+
+210
+00:09:07,550 --> 00:09:08,590
+Đấy
+
+211
+00:09:08,590 --> 00:09:15,995
+Thứ hai là thiếu phần kịch bản. Bây giờ nó sẽ kêu mình lấy 2 kịch bản
+
+212
+00:09:15,995 --> 00:09:23,400
+của 2 video này. Đúng không? Thì ok, em sẽ lấy 2 video của nó gửi luôn.
+
+213
+00:09:24,160 --> 00:09:29,620
+Mấy bác cứ lấy 2 video nào mà cao view nhất cũng được nha, chứ không cần phải quan tâm là video nào đâu.
+
+214
+00:09:30,340 --> 00:09:37,060
+Cứ bấm vào 1 phổ biến lấy 2 video cao view nhất, hoặc là nếu mà 2 kênh đối thủ thì mọi người lấy mỗi kênh 1 video thôi là được rồi.
+
+215
+00:09:37,900 --> 00:09:41,020
+Nhưng miễn sao mình cho nó hẹp đầy đủ cụ thể là được nha.
+
+216
+00:09:41,020 --> 00:09:43,060
+Đấy, mình sẽ copy kịch bản
+
+217
+00:09:43,060 --> 00:09:44,260
+Tiếp tục video thứ 2 nè
+
+218
+00:09:44,260 --> 00:09:47,100
+Rồi, sau như này thì em sẽ bấm cho nó chạy nha
+
+219
+00:09:47,100 --> 00:09:49,040
+Thì sau khi nó phân tích thêm phần này
+
+220
+00:09:49,040 --> 00:09:50,580
+Thì nó sẽ đến giai đoạn 2 nha
+
+221
+00:09:50,580 --> 00:09:52,600
+Bởi vì chưa có cái kịch bản
+
+222
+00:09:52,600 --> 00:09:53,740
+Nó chưa phân tích đầy đủ
+
+223
+00:09:53,740 --> 00:09:55,580
+Thì nó chưa qua giai đoạn 2 đâu
+
+224
+00:09:55,580 --> 00:09:59,380
+Đấy, ban đầu thì nếu mọi người
+
+225
+00:09:59,380 --> 00:10:01,620
+Nhập vào nghiêng cái form prompt
+
+226
+00:10:01,620 --> 00:10:03,320
+Cái hình ảnh cũng như là
+
+227
+00:10:03,320 --> 00:10:04,680
+Cái kịch bản chạy một lần
+
+228
+00:10:04,680 --> 00:10:06,780
+Thì nó sẽ đỡ tốn token hơn
+
+229
+00:10:06,780 --> 00:10:09,000
+Mọi người trend nhiều thì nó sẽ tốn nhiều thôi
+
+230
+00:10:09,000 --> 00:10:10,440
+Đây là em làm demo
+
+231
+00:10:10,440 --> 00:10:12,640
+Thì giải thích chi tiết hơn
+
+232
+00:10:12,640 --> 00:10:13,920
+Để cho mọi người hiểu quen nha
+
+233
+00:10:13,920 --> 00:10:16,760
+Con Cleo này thì mọi người cứ train
+
+234
+00:10:16,760 --> 00:10:18,120
+Và dùng nhiều á, yêu cầu nhiều
+
+235
+00:10:18,120 --> 00:10:20,740
+Thì nó sẽ đốt token rất là nhanh nha
+
+236
+00:10:20,740 --> 00:10:24,600
+Sau khi trò đọc tới
+
+237
+00:10:24,600 --> 00:10:26,200
+Thì nó cũng đã hẹp về phân tích
+
+238
+00:10:26,200 --> 00:10:28,320
+Cho ra cái toàn bộ cấu trúc
+
+239
+00:10:28,320 --> 00:10:29,500
+Của kịch bản thì mọi người
+
+240
+00:10:29,500 --> 00:10:31,760
+Thì bác có thể đặt quen thêm nha
+
+241
+00:10:31,760 --> 00:10:34,380
+Rất là chi tiết luôn, đầy đủ
+
+242
+00:10:34,380 --> 00:10:36,980
+Các câu hốc và lộ trình
+
+243
+00:10:36,980 --> 00:10:38,500
+Làm như nào
+
+244
+00:10:38,500 --> 00:10:40,460
+thì nó đều đưa ra hết nha
+
+245
+00:10:40,460 --> 00:10:42,440
+bây giờ tiếp tục tới cái giai đoạn 2
+
+246
+00:10:42,440 --> 00:10:44,300
+là cấu hình nè, nó sẽ hỏi mình
+
+247
+00:10:44,300 --> 00:10:46,420
+và mình sẽ trả lời theo cái số của nó
+
+248
+00:10:46,420 --> 00:10:48,060
+đánh dấu nha, ví dụ như
+
+249
+00:10:48,060 --> 00:10:49,940
+cái câu hỏi đầu tiên thứ nhất là
+
+250
+00:10:49,940 --> 00:10:52,320
+thị trường đích mọi người muốn làm, ví dụ như
+
+251
+00:10:52,320 --> 00:10:53,980
+cái lúc nãy là thị trường hàng đúng không
+
+252
+00:10:53,980 --> 00:10:56,480
+mọi người muốn làm sang Việt Nam thì mọi người
+
+253
+00:10:56,480 --> 00:10:58,400
+cứ trả lời nó là đúng
+
+254
+00:10:58,400 --> 00:11:00,420
+hoặc là mọi người ghi Việt Nam
+
+255
+00:11:00,420 --> 00:11:02,500
+cũng được, đấy, còn nếu như
+
+256
+00:11:02,500 --> 00:11:04,380
+mấy bác mà làm từ
+
+257
+00:11:04,380 --> 00:11:06,480
+hàng đem sang Hoa Kỳ hay là
+
+258
+00:11:06,480 --> 00:11:08,420
+Nhật thì mọi người cứ chỉ vòng việc ghi số
+
+259
+00:11:08,420 --> 00:11:12,900
+Rồi nhập cái tên thị trường mà bác muốn thôi
+
+260
+00:11:12,900 --> 00:11:15,000
+Đây là ví dụ em ghi đúng nè
+
+261
+00:11:15,000 --> 00:11:17,600
+Còn bác ghi nhật thì bác ghi nhật thôi
+
+262
+00:11:17,600 --> 00:11:18,580
+Đấy đúng không?
+
+263
+00:11:18,980 --> 00:11:20,000
+Rất là cơ bản đơn giản thôi
+
+264
+00:11:20,000 --> 00:11:23,860
+Rồi xong câu 1 thì mình sẽ tiếp tới câu 2
+
+265
+00:11:23,860 --> 00:11:25,680
+Câu 2 nói là kháng giả đích
+
+266
+00:11:25,680 --> 00:11:30,540
+Là cụ thể là 55 tuổi, 35 tuổi hay là mở rộng thêm
+
+267
+00:11:30,540 --> 00:11:32,620
+Thì em sẽ ghi là như góc luôn nha
+
+268
+00:11:32,620 --> 00:11:33,760
+55 tuổi thôi
+
+269
+00:11:33,760 --> 00:11:36,720
+35 tuổi nha
+
+270
+00:11:36,720 --> 00:11:39,100
+Rồi tiếp tục câu hỏi thứ 3
+
+271
+00:11:39,100 --> 00:11:40,820
+Thì cái này rất là hay nha
+
+272
+00:11:40,820 --> 00:11:43,440
+Nó hỏi là theo cái giọng điệu
+
+273
+00:11:43,440 --> 00:11:44,460
+Của miền nào nè
+
+274
+00:11:44,460 --> 00:11:45,600
+Nam Bắc nè
+
+275
+00:11:45,600 --> 00:11:48,140
+Thì cái này tùy theo mọi người thôi
+
+276
+00:11:48,140 --> 00:11:50,860
+Theo em thì em sẽ chọn theo cái quyết định
+
+277
+00:11:50,860 --> 00:11:52,380
+Từ vận nè
+
+278
+00:11:52,380 --> 00:11:53,360
+Là dưa chuột nha
+
+279
+00:11:53,360 --> 00:11:54,720
+Dưa chuột thì hầu như là
+
+280
+00:11:54,720 --> 00:11:57,760
+Tất cả mọi người dân mình thì ai cũng biết đúng không
+
+281
+00:11:57,760 --> 00:11:59,540
+Thì đó như vậy thì sẽ ok
+
+282
+00:11:59,540 --> 00:12:01,760
+Chứ em ghi dưa leo thì nhiều khi
+
+283
+00:12:01,760 --> 00:12:04,480
+Các bác ở miền Bắc hay là sao đấy không hiểu
+
+284
+00:12:04,480 --> 00:12:06,880
+em ví dụ như vậy thôi nha mọi người
+
+285
+00:12:06,880 --> 00:12:09,020
+rồi tiếp tục cái thứ 4
+
+286
+00:12:09,020 --> 00:12:09,780
+là
+
+287
+00:12:09,780 --> 00:12:13,120
+nó sẽ hỏi mình là
+
+288
+00:12:13,120 --> 00:12:14,980
+cái phương án xử lý
+
+289
+00:12:14,980 --> 00:12:16,820
+khi mà cái tên kênh
+
+290
+00:12:16,820 --> 00:12:18,800
+về câu chào của
+
+291
+00:12:18,800 --> 00:12:19,960
+cái kênh mình như thế nào
+
+292
+00:12:19,960 --> 00:12:21,740
+thì cái này thật sự cũng rất là hay
+
+293
+00:12:21,740 --> 00:12:23,560
+nếu mấy bác có tên kênh rồi
+
+294
+00:12:23,560 --> 00:12:25,180
+hoặc là mấy bác muốn chào
+
+295
+00:12:25,180 --> 00:12:28,140
+phần mở đều như thế nào thì mọi người cứ ghi vào thôi
+
+296
+00:12:28,140 --> 00:12:28,900
+thì nó sẽ ra
+
+297
+00:12:28,900 --> 00:12:32,200
+còn em thì sẽ làm ví dụ em sẽ ghi cái phương án
+
+298
+00:12:32,200 --> 00:12:34,300
+e của nó đưa ra nha
+
+299
+00:12:34,300 --> 00:12:36,020
+Rồi cái name này cũng rất là hay nè.
+
+300
+00:12:36,200 --> 00:12:41,180
+Cái name này là em đã trên nó là không những là chỉ ra phần kịch bản thôi.
+
+301
+00:12:41,180 --> 00:12:43,720
+Mọi người muốn là kèm theo cái tiêu đề viral.
+
+302
+00:12:44,140 --> 00:12:46,420
+Hoặc là cái thumb bè tầng.
+
+303
+00:12:46,620 --> 00:12:48,740
+Có nghĩa là cái title trong cái thumb á.
+
+304
+00:12:49,200 --> 00:12:50,740
+Cái tiêu đề trong cái thumb á.
+
+305
+00:12:51,060 --> 00:12:52,480
+Bè dòng á mọi người.
+
+306
+00:12:52,840 --> 00:12:53,020
+Đấy.
+
+307
+00:12:53,120 --> 00:12:54,260
+Và cái form prompt ảnh nữa nha.
+
+308
+00:12:54,660 --> 00:12:56,360
+Thì nó sẽ ra cho mọi người luôn.
+
+309
+00:12:57,140 --> 00:13:00,200
+Và bây giờ em sẽ yêu cầu nó thêm tắt kẽ luôn nha.
+
+310
+00:13:00,200 --> 00:13:03,140
+Thật sự cái này em trên rất là nhiều thời gian
+
+311
+00:13:03,140 --> 00:13:04,460
+Và cũng như là rất là ngon
+
+312
+00:13:04,460 --> 00:13:06,020
+Mấy bác có thể dùng luôn
+
+313
+00:13:06,020 --> 00:13:08,680
+Câu hỏi cuối cùng là câu 6 nè
+
+314
+00:13:08,680 --> 00:13:11,080
+Nó hỏi là cái này thật sự rất là hay nha
+
+315
+00:13:11,080 --> 00:13:12,600
+Ví dụ như mọi người muốn
+
+316
+00:13:12,600 --> 00:13:14,300
+Khi mà con AI nó đọc
+
+317
+00:13:14,300 --> 00:13:17,320
+Cái số mọi người ghi thành số
+
+318
+00:13:17,320 --> 00:13:18,360
+Hay là ghi thành chữ
+
+319
+00:13:18,360 --> 00:13:20,600
+Thì thật ra con AI hiện nay
+
+320
+00:13:20,600 --> 00:13:21,960
+Cái số cứng
+
+321
+00:13:21,960 --> 00:13:23,480
+Ví dụ như 1954
+
+322
+00:13:23,480 --> 00:13:25,820
+Thì nó đọc cũng được rồi
+
+323
+00:13:25,820 --> 00:13:27,480
+Nên là em ghi giữ số luôn nha
+
+324
+00:13:27,480 --> 00:13:29,980
+Còn mấy bác muốn ghi ra thành chữ
+
+325
+00:13:29,980 --> 00:13:31,740
+Thì cũng đều được nha
+
+326
+00:13:31,740 --> 00:13:34,680
+Rất là ràng buộc cụ thể luôn
+
+327
+00:13:34,680 --> 00:13:35,720
+Để cho nó
+
+328
+00:13:35,720 --> 00:13:37,580
+Khi mà tạo vôi thì nó không bị
+
+329
+00:13:37,580 --> 00:13:38,700
+Ảnh hưởng nha
+
+330
+00:13:38,700 --> 00:13:41,880
+Ví dụ như khi mà mọi người làm cái thị trường nhật á
+
+331
+00:13:41,880 --> 00:13:44,120
+Thì mọi người ghi đỡ cái số
+
+332
+00:13:44,120 --> 00:13:45,160
+Thì nó đẹp không ngon đâu
+
+333
+00:13:45,160 --> 00:13:47,360
+Như con Eleven Lab nó đẹp tiếng nhật
+
+334
+00:13:47,360 --> 00:13:48,900
+Mà đẹp số thì nó sẽ đẹp sai
+
+335
+00:13:48,900 --> 00:14:00,200
+nên là mọi người bảo nó chuyển sang dạng chữ Katakana hay Hiragana gì đấy của Nhật á, để khi bỏ vào tool đọc voice nó không bị đọc sai số nha.
+
+336
+00:14:00,200 --> 00:14:01,520
+thì chắc chắn nó sẽ ra
+
+337
+00:14:01,520 --> 00:14:03,160
+cái yêu cầu đó
+
+338
+00:14:03,160 --> 00:14:04,600
+thì mọi người chỉ cần việc chọn thôi
+
+339
+00:14:04,600 --> 00:14:05,940
+em đã trên rất là kỹ rồi
+
+340
+00:14:05,940 --> 00:14:06,560
+có hết nha
+
+341
+00:14:06,560 --> 00:14:07,920
+không phải là đâu
+
+342
+00:14:07,920 --> 00:14:09,400
+rồi ok
+
+343
+00:14:09,400 --> 00:14:09,940
+bây giờ thì
+
+344
+00:14:09,940 --> 00:14:11,680
+mình sau khi mà mình đã chọn
+
+345
+00:14:11,680 --> 00:14:12,360
+câu trả lời xong
+
+346
+00:14:12,360 --> 00:14:13,760
+mình chỉ việc bấm enter
+
+347
+00:14:13,760 --> 00:14:14,080
+và
+
+348
+00:14:14,080 --> 00:14:15,860
+chờ đợi nó tạo ra thôi nha
+
+349
+00:14:15,860 --> 00:14:18,540
+bây giờ thì nó sẽ viết
+
+350
+00:14:18,540 --> 00:14:19,500
+cái prompt
+
+351
+00:14:19,500 --> 00:14:21,840
+cho mình nha, em chỉ tua nhanh nha
+
+352
+00:14:21,840 --> 00:14:22,100
+mấy bác
+
+353
+00:14:22,100 --> 00:14:25,860
+đây, sau khi xong thì nó sẽ
+
+354
+00:14:25,860 --> 00:14:27,380
+ra cái form prompt master
+
+355
+00:14:27,380 --> 00:14:29,820
+kịch bản sức khỏe râu củ cho người Việt
+
+356
+00:14:29,820 --> 00:14:31,100
+trên lem lem tuổi nè
+
+357
+00:14:31,100 --> 00:14:33,860
+thì cái form prompt này chính là cái form prompt
+
+358
+00:14:33,860 --> 00:14:35,780
+mình dùng để lấy
+
+359
+00:14:35,780 --> 00:14:37,880
+kịch bản cũng như là từ cái kịch bản
+
+360
+00:14:37,880 --> 00:14:39,140
+đó rồi xong rồi mình
+
+361
+00:14:39,140 --> 00:14:42,040
+chỉ làm ra được cái phần kịch bản
+
+362
+00:14:42,040 --> 00:14:44,060
+nhân bản ra thị trường Việt nha
+
+363
+00:14:44,060 --> 00:14:45,660
+đầy đủ hết nha mấy bác
+
+364
+00:14:45,660 --> 00:14:47,780
+thì phần cuối này đương nhiên chắc chắn
+
+365
+00:14:47,780 --> 00:14:49,660
+Thì nó sẽ có một cái yêu cầu là
+
+366
+00:14:49,660 --> 00:14:53,840
+Nhập cái dán cái toàn bộ kịch bản góc
+
+367
+00:14:53,840 --> 00:14:54,980
+Ở thị trường góc á
+
+368
+00:14:54,980 --> 00:14:56,360
+Vào để cho nó ra
+
+369
+00:14:56,360 --> 00:14:58,220
+Để cho nó nhân bản ra
+
+370
+00:14:58,220 --> 00:15:01,640
+Còn cái ở dưới này là hẹp chủ đề cần viết mới
+
+371
+00:15:01,640 --> 00:15:04,120
+Có nghĩa là cái ở dưới này á
+
+372
+00:15:04,120 --> 00:15:07,080
+Thì mọi người có thể dán cái tiêu đề bất kỳ nào cũng được
+
+373
+00:15:07,080 --> 00:15:08,840
+Thì nó sẽ tự viết ra một người
+
+374
+00:15:08,840 --> 00:15:10,980
+Nhưng mà chủ yếu thì đương nhiên
+
+375
+00:15:10,980 --> 00:15:15,200
+Để nhân bản thì mấy bác chỉ lấy kênh đối thủ về làm thôi đúng không
+
+376
+00:15:15,200 --> 00:15:17,480
+Thì ví dụ em sẽ lấy cái video này luôn nha
+
+377
+00:15:17,480 --> 00:15:18,760
+Em sẽ làm nha
+
+378
+00:15:18,760 --> 00:15:20,700
+Em sẽ dán cái ở đầu tiên này
+
+379
+00:15:20,700 --> 00:15:23,140
+Còn cái dưới này thì không cần
+
+380
+00:15:23,140 --> 00:15:24,840
+Vác có thể xóa hoặc bảo vệ nha
+
+381
+00:15:24,840 --> 00:15:27,340
+Bởi vì mục đích chính của mình thì mình nhân bản nha
+
+382
+00:15:27,340 --> 00:15:28,500
+Đâu phải mình viết mới đâu
+
+383
+00:15:28,500 --> 00:15:30,980
+Nên là mình quan tâm tới cái đầu tiên này thôi
+
+384
+00:15:31,000 --> 00:15:33,400
+Rồi ok
+
+385
+00:15:33,400 --> 00:15:35,540
+Em sẽ tải cái form prompt này về trước nha
+
+386
+00:15:35,540 --> 00:15:37,760
+Rồi em sẽ mở cái con
+
+387
+00:15:37,760 --> 00:15:38,620
+Notepad lên
+
+388
+00:15:38,620 --> 00:15:41,000
+Em sẽ xóa cái dòng này đi
+
+389
+00:15:41,000 --> 00:15:42,080
+Cái này thì em không cần
+
+390
+00:15:42,080 --> 00:15:45,400
+Em không cần thì mọi người cứ xóa đi nha
+
+391
+00:15:45,400 --> 00:15:49,540
+Rồi bây giờ thì quay lại với cái phần kịch bản mà mình muốn lấy
+
+392
+00:15:49,540 --> 00:15:51,660
+Ví dụ như em muốn lấy video này đúng không?
+
+393
+00:15:51,760 --> 00:15:52,700
+Kịch bản của video này
+
+394
+00:15:52,700 --> 00:15:56,540
+Rồi copy xong rồi quay lại mình dán phần kịch bản vào đây thôi
+
+395
+00:15:56,540 --> 00:15:57,980
+Ok
+
+396
+00:15:57,980 --> 00:16:02,780
+Sau khi xong thì mình sẽ copy toàn bộ cái kịch bản
+
+397
+00:16:02,780 --> 00:16:05,100
+Tạo một cái new chat mới nha
+
+398
+00:16:05,100 --> 00:16:06,920
+Rồi mình sẽ cho nó chạy nha
+
+399
+00:16:06,920 --> 00:16:10,740
+Bây giờ thì chỉ cần việc chờ đợi nó
+
+400
+00:16:10,740 --> 00:16:16,680
+Đọc que xem rồi nó sẽ tự động viết cái phần kịch bản cho mình thôi nha mấy bác
+
+401
+00:16:16,680 --> 00:16:20,740
+Ví dụ như bây giờ thì nó sẽ viết phần 1 nè
+
+402
+00:16:20,740 --> 00:16:22,860
+Thì đương nhiên nó sẽ chia ra nhiều phần nha
+
+403
+00:16:22,860 --> 00:16:28,500
+Mình sẽ bấm tiếp tục chứ không thể nào nó viết một lần nghiêng cái kịch bản được
+
+404
+00:16:28,500 --> 00:16:31,700
+Nếu như vậy thì phần kịch bản mình nó sẽ rất là không hay
+
+405
+00:16:31,700 --> 00:16:33,700
+Nó sẽ không đạt được yêu cầu đâu
+
+406
+00:16:33,700 --> 00:16:36,160
+Mình phải cho nó chia ra nhiều phần nha
+
+407
+00:16:36,160 --> 00:16:38,560
+Như bây giờ thì nó đang viết cái phần 1
+
+408
+00:16:38,560 --> 00:16:46,680
+Lúc nãy thì em chưa có nhập tên con là tên mình là như nào nên là nó ra cái random cụ thể
+
+409
+00:16:46,680 --> 00:16:49,640
+Nó ra cái bất kỳ tên bếp việc gì kia nè
+
+410
+00:16:49,640 --> 00:16:56,200
+Còn mấy bác này đã có tên con rồi, hoặc là muốn làm như nào thì mỗi cứ nhập vào thì nó sẽ viết ra như vậy thôi nha
+
+411
+00:16:56,200 --> 00:17:02,500
+Thì như này nó đã viết xong một cái phát phần 1 rồi
+
+412
+00:17:02,500 --> 00:17:07,060
+Mấy bác cứ việc bấm tiếp ghi tiếp tục thì nó sẽ tiếp ghi phần 2 thôi
+
+413
+00:17:07,060 --> 00:17:09,360
+Nói chung là khi nào mà nó để hoàn thành kịch bản
+
+414
+00:17:09,360 --> 00:17:11,360
+Thì nó sẽ có cho mình
+
+415
+00:17:11,360 --> 00:17:13,060
+Một cái thông báo là hoàn thành nha
+
+416
+00:17:13,060 --> 00:17:14,900
+Bây giờ tiếp tục sau đó
+
+417
+00:17:14,900 --> 00:17:16,300
+Thì nó sẽ viết tiếp cái
+
+418
+00:17:16,300 --> 00:17:19,280
+Tiêu đề thơm này kia nữa nha
+
+419
+00:17:19,280 --> 00:17:19,580
+Mấy bác
+
+420
+00:17:19,580 --> 00:17:23,400
+Em để trên kỹ và có sẵn hết rồi nha
+
+421
+00:17:23,400 --> 00:17:24,560
+Thì bây giờ làm demo
+
+422
+00:17:24,560 --> 00:17:27,380
+Để cho mọi người hiểu về được cách dùng như thế nào thôi
+
+423
+00:17:27,380 --> 00:17:28,680
+Chứ em không thể nào mà
+
+424
+00:17:28,680 --> 00:17:30,900
+Quay full cái video mà
+
+425
+00:17:30,900 --> 00:17:33,180
+Trên hết bấm tiếp rồi được
+
+426
+00:17:33,180 --> 00:17:34,800
+Thì chờ nó rất là lâu nha
+
+427
+00:17:34,800 --> 00:17:37,580
+Thì em làm ví dụ như vậy để bác hiểu quen
+
+428
+00:17:37,580 --> 00:17:40,760
+Rồi thì video hôm nay em muốn chia sẻ là như vậy nha
+
+429
+00:17:40,760 --> 00:17:44,180
+Thì từ cái form prompt chính em sẽ để ở mô tả
+
+430
+00:17:44,180 --> 00:17:50,560
+Thì cái đó thì bác có thể lấy muốn tạo muốn nhân bản thị trường nào cũng được kẻ nha
+
+431
+00:17:50,560 --> 00:17:55,240
+Thì cái form prompt này của em thì em cũng đã làm về tối ưu rất rất là nhiều thứ rồi
+
+432
+00:17:55,240 --> 00:17:57,880
+Vì em cũng đang dùng cho những kênh của bạn em
+
+433
+00:17:57,880 --> 00:18:03,140
+Còn mấy bác nếu mà thấy nó khác muốn làm khác hay là tối ưu lại chỗ nào
+
+434
+00:18:03,140 --> 00:18:05,180
+Thì mấy bác có thể lấy và sửa lại thôi
+
+435
+00:18:05,180 --> 00:18:05,960
+Bình thường thôi nha
+
+436
+00:18:05,960 --> 00:18:09,640
+Chứ không cần phải là cứ theo của em đâu nha
+
+437
+00:18:09,640 --> 00:18:11,760
+Còn mấy bác này để thấy ok rồi
+
+438
+00:18:11,760 --> 00:18:13,260
+Thì cứ việc lấy mà dùng thôi
+
+439
+00:18:13,260 --> 00:18:15,320
+Em sẽ để cái form prompt đó
+
+440
+00:18:15,320 --> 00:18:16,540
+Ở phần mô tả nha
+
+441
+00:18:16,540 --> 00:18:19,240
+Rồi ok em cảm ơn mọi người để xem video đến đây nha

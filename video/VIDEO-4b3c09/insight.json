@@ -1,0 +1,81 @@
+{
+  "sku": "VIDEO-4b3c09",
+  "title": "Update 4 ngách nhỏ làm bán content thị trường Hàn Quốc",
+  "actual_topic": "Khảo sát 4 Micro-Niche bán content Hàn Quốc: Sức khỏe người già, Triết lý làm giàu, Bác sĩ giấu kín & Bài học chuyển ngách hồi sinh kênh",
+  "category_group": "ban_content",
+  "niche_primary": "Bán Content Đa Ngách Hàn Quốc",
+  "niche_id": "kr-multi-niche",
+  "target_market": "Hàn Quốc",
+  "market_code": "KR",
+  "key_takeaways": [
+    "Ngách Sống khỏe mỗi ngày (@시니어살림노트, @HealthyToday0): Kênh chỉ 14 video nhưng lượng view tăng trưởng chóng mặt nhờ tập trung vào các mẹo bảo vệ xương khớp và giấc ngủ cho người già.",
+    "Ngách Nghiên cứu mô thức người giàu (@RichPatternResearchInstitute): Khai thác thói quen tư duy và cách quản lý tài chính của giới thượng lưu, thu hút nhóm khán giả trung niên khao khát độc lập tài chính.",
+    "Ngách Phương pháp sức khỏe bác sĩ giấu kín (@의사가숨긴건강법-z9n): Giật tít mạnh mẽ vào các bí quyết y học thường thức ít được công bố, kích thích sự tò mò tột độ của người xem.",
+    "Kỹ thuật xoay trục ngách (Niche Pivot) cứu kênh: Phân tích kênh có hơn 100 video cũ view lẹt đẹt do thử nghiệm lan man; sau khi dứt khoát chuyển hẳn sang ngách triết lý cuộc sống thì lượt xem bùng nổ đều đặn.",
+    "Đừng nản khi nhìn số lượng video cũ: Số lượng video cũ không quyết định tương lai kênh; thuật toán YouTube đánh giá từng video độc lập dựa trên chất lượng nội dung và độ thỏa mãn của khán giả hiện tại."
+  ],
+  "edit_sop": {
+    "primary": "Khảo sát 4 ngách nhỏ làm bán content thị trường Hàn Quốc qua tiêu đề video cao view và bài học chuyển ngách",
+    "additional": [
+      "Đọc kỹ tiêu đề video cao view để xác định từ khóa ngách, ví dụ chuối, hành tây và thương ớt, quay thứ gì đó trong lò vi sóng",
+      "Dịch tiêu đề ra, bám theo các video cao view nhất; nếu bán content lấy 70% thì lấy video cao view nhất làm trước",
+      "Thiết kế ảnh thumbnail đồng bộ phong cách xuyên suốt cho toàn bộ kênh",
+      "Edit ghép nhiều video tự nhiên hoặc video AI minh họa, hạn chế ghép nhiều hình ảnh AI",
+      "Nếu đã chọn làm video ngắn hoặc dài thì giữ nguyên, đừng trộn lẫn"
+    ]
+  },
+  "avoid_flags": [
+    "Ghép nhiều hình ảnh AI thay vì video thì chắc chắn dễ bị quét, có nguy cơ bị tắt kiếm tiền",
+    "Đừng làm kịch bản giật tít hoặc câu view không đúng sự thật vì dễ bị quét, như kênh bị YouTube xóa",
+    "Đổi ngách trên cùng một kênh thì video ngách mới sẽ flop thời gian đầu vì phải phân phối lại tập khán giả; làm kênh mới sẽ tốt hơn",
+    "Đã làm video ngắn thì đừng làm dài, đã làm dài thì đừng làm ngắn, vì sẽ bị flop"
+  ],
+  "tools_mentioned": [],
+  "channels_mentioned": [
+    "@시니어살림노트",
+    "@HealthyToday0",
+    "@desidilse",
+    "@RichPatternResearchInstitute",
+    "@의사가숨긴건강법-z9n"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu kênh sức khỏe Hàn Quốc @시니어살림노트 14 video view khủng"
+    },
+    {
+      "time": "03:19",
+      "seconds": 199,
+      "label": "Bóc tách kênh nghiên cứu người giàu @RichPatternResearchInstitute"
+    },
+    {
+      "time": "06:16",
+      "seconds": 376,
+      "label": "Phân tích ngách bí mật bác sĩ @의사가숨긴건강법-z9n"
+    },
+    {
+      "time": "09:39",
+      "seconds": 579,
+      "label": "Bài học đắt giá về việc chuyển đổi ngách thành công trên kênh hơn 100 video cũ"
+    },
+    {
+      "time": "13:31",
+      "seconds": 811,
+      "label": "Chiến lược định hình lại kênh và tối ưu hóa doanh thu dài hạn"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-4b3c09/transcript.txt",
+  "sop_steps": [
+    "Đọc kỹ tiêu đề video cao view để xác định từ khóa ngách, ví dụ chuối, hành tây và thương ớt, quay thứ gì đó trong lò vi sóng",
+    "Dịch tiêu đề ra, bám theo các video cao view nhất; nếu bán content lấy 70% thì lấy video cao view nhất làm trước",
+    "Thiết kế ảnh thumbnail đồng bộ phong cách xuyên suốt cho toàn bộ kênh",
+    "Edit ghép nhiều video tự nhiên hoặc video AI minh họa, hạn chế ghép nhiều hình ảnh AI",
+    "Nếu đã chọn làm video ngắn hoặc dài thì giữ nguyên, đừng trộn lẫn"
+  ]
+}

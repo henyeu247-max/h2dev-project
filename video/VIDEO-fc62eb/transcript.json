@@ -1,0 +1,1050 @@
+{
+  "sku": "VIDEO-fc62eb",
+  "duration": 584.6,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 130,
+  "full_text": "Chào anh chị em học viên, hôm nay chúng ta sẽ đến với một cái bài cực kỳ quan trọng, hiểu về Prompt. Prompt giúp chúng ta sẽ tạo ra được tất cả những câu chuyện, video hoặc là công việc. Hôm nay chúng ta sẽ hiểu về Prompt, Prompt để kết hợp, để sản xuất các video AI hiệu quả. Chúng ta sẽ đến với Prompt cơ bản. Ở đây tôi có một nhân vật, đây là nhân vật Stickman. Tôi kéo vào Google Flow, hoặc tôi có thể kéo vào ChatGPT. Nếu mà anh chị viết một cái Prompt đơn giản để tạo ra một hình ảnh nhân vật này đang cầm một đồ vật gì đó thì anh chị sẽ viết như thế nào. Hãy tạo cho tôi nhân vật này đang ôm 1 bao gạo, còn lại giữ nguyên chi tiết. Và tôi sẽ thêm cái nhân vật này làm nhân vật tham chiếu. Ok, chúng ta sẽ xem là nhân vật này sẽ ôm cái gì. Đây là cái tư duy về chỉ viết một Prompt, ý là các bạn chỉ tạo ra được một hình ảnh trong một quá trình thời gian làm việc của các bạn. Nếu mà các bạn hay theo những cái chủ nghĩa mà làm dạng Story thì các bạn nếu mà các bạn tạo như thế này từng cảnh một luôn Nó rất là lâu Nó rất là khó chịu Để mà chúng ta làm một cái việc hiệu quả Một video dài hiệu quả Nhưng khi Khi Khi tôi dùng ChatGPT kết hợp với Một câu lệnh Để tạo ra một Master Prompt Tôi sẽ tải cái hình ảnh nhân vật gốc này Bây giờ Cái quan trọng là cái này Bây giờ chúng ta sẽ tạo ra một Master Prompt Như sau Hãy tạo cho tôi Master Prompt Khi tôi Gửi Nhân vật Lên Flow Cái quan trọng là cái này nha Khi tôi gửi Nhân vật này lên Google Flow Điều gì khiến tôi đang nói Đến là tôi vất Cái hình ảnh này lên Google Flow Tại vì là tôi sẽ tạo ra một cái Hình ảnh khác trên Google Flow hoặc bất kể con AI khác thì các bạn phải áp dụng cách này. Khi tôi gửi ảnh nhân vật này lên Google Flow, bạn hãy tạo cho tôi 30 Prompt để khi tôi gửi hình ảnh này lại ChatGPT. ChatGPT. Bạn hãy dựa vào 30 bối cảnh hàng ngày của một con người. Tạo cho tôi 30 Prompt. Yêu cầu các Prompt thay đổi. Bối cảnh. Hành động. Sự vật. Sự việc xảy ra. Sự vật, sự việc xảy ra. ra các góc quay phù hợp cho các Prompt. Cảm xúc của nhân vật. Bây giờ, hãy tạo cho tôi một Master Prompt để tôi gửi Cho ChatGPT tạo ra 30 Prompt. Chi tiết và đầy đủ. Cái quan trọng là cái như thế này. Nó sẽ tạo ra một Master Prompt cho các bạn là nó sẽ dựa vào những cái yêu cầu đơn giản của các bạn. Sau đó nó sẽ tạo ra. Anh em anh nhìn thấy những cái Prompt rất là dài Ở trên Facebook Mà người ta nốt ra Thật ra là không ai rảnh lờ đi Ngồi nốt ra những cái Prompt như thế này Cái Master Prompt như thế này Tôi nhìn sao chép này Bây giờ tôi sẽ tạo một đoạn chat mới Và dán vào. Bạn có thể yêu cầu nó làm gì ạ? Dựa vào câu chuyện này, hãy tạo cho tôi những gì ạ? 30 Prompt, 300 Prompt. Thì bắt buộc nhân vật của bạn nó sẽ dựa theo câu chuyện đấy. Các bạn nhìn nhé. Nó sẽ tạo cho các bạn là 30 Prompt. Đây là nó viết đến 10 Prompt rồi. Tiếp tục. 10 Prompt. Tiếp tục. Đây là một cái Master Prompt để cho các bạn hiểu được là cái giá trị của tạo những cái video AI. Copy Prompt thứ nhất. Sang nhé. Tôi dùng câu lệnh. Thêm một câu lệnh. Tôi sẽ tạo 1 hình 1 ở 2 hình 1 Prompt thứ 2 bắt buộc phải có 1 cái Master Prompt ra nếu mà kia là chúng ta sẽ làm nếu mà chúng ta viết 1 cái 1 thì nó sẽ là thủ công còn khi mà chúng ta viết Cái gì ạ? Viết ra 1 cái Master Prompt, để ChatGPT tạo ra 1 cái Master Prompt thì nó là 1 cái chuyên nghiệp cao hơn. Chúng ta sẽ có những cái tư duy để tạo ra 1 cái Master Prompt cho anh chị. Ví dụ như 1 cái Prompt thứ nhất, anh chị nhớ là nó sẽ cố định cho các bạn là ok. Nhân vật này, cuộc sống hàng ngày, tôi chỉ nói với anh chị là, cái đơn giản nhất của tôi ở trong cái câu lệnh, đây gọi là câu lệnh yêu cầu, là tôi bảo gì ạ? Khi tôi gửi ảnh nhân vật này lên Google Flow, bạn hãy tạo cho tôi 30 Prompt Để khi gửi hình ảnh này lại, ChatGPT, bạn hãy dựa vào 30 bối cảnh hàng ngày của một con người Ý là trong cái bối cảnh, 30 cái bối cảnh hàng ngày của một con người này Các bạn Bạn có thể thay đổi Thành câu chuyện Nhưng mà bạn phải tư duy Đặt cho tôi Ở đây là tôi đã hành động Sự việc xảy ra Và các bạn muốn nhất quán Muốn nhất quán như thế nào Nó cũng được kể cả ví dụ như nhân vật này đang ngồi trong ngôi nhà này nhưng góc quay khác đi nếu bạn tải lại một hình ảnh bất kỳ của nhân vật ấy đấy là cái Master Prompt yêu cầu là đây là những cái công việc hàng ngày gì của một thanh niên Đây, ngủ dậy, đánh răng, đọc báo, ăn sáng, đi chơi. Và tôi sẽ dùng cái Prompt nó tạo vừa xong, Prompt 11. Cứ phải có ảnh tham chiếu. Nếu mà các bạn làm thủ công, viết từng một Prompt 1, đúng không? Thì nó rất là lâu, mất thời gian. Nhưng mà khi các bạn làm như thế này thì cái tỷ lệ để sản xuất video nó cực kì nhanh. Đó là một cách mà các bạn sản xuất. Prompt thứ 13 này. Khi là tôi chỉ lấy mấy Prompt thôi. Tôi không lấy nhiều. Prompt 14 cái việc ở đây là việc tạo ra Master Prompt là các bạn phải ghi nhớ là một chúng ta phải có câu lệnh yêu cầu ChatGPT viết ra một cái Master Prompt Đấy là một cái chi tiết khá quan trọng để người làm YouTube có thể hiểu được. Các bạn phải viết ra được cái gì ạ? Mong muốn của các bạn. Ví dụ như bạn muốn viết là nhân vật này làm gì, ngồi làm gì, ăn gì, ăn gì. Ví dụ một công việc hàng ngày, một câu chuyện mà các bạn cứ ngồi các bạn dựa trên một câu chuyện story luôn. Mà các bạn ngồi các bạn làm từng một cái hình ảnh một thì không được. Bắt buộc bạn phải tạo ra như thế này. Đây là một cái Master Prompt các bạn cần ghi nhớ cho tôi. Yêu cầu các bạn ở đây là gì ạ? Các bạn ghi nhớ cho tôi cái Prompt đơn giản như thế này. Trước khi muốn tạo ra một cái video hoàn chỉnh thì chúng ta phải nghiêm túc viết ra những cái khó để cho ChatGPT nó viết ra cho mình. nó làm ra cho chúng ta một cái Master Prompt hoàn chỉnh. Đấy là một cái tư duy để anh chị sản xuất video trên nền tảng YouTube này. Ok, chào anh chị em.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 5.68,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:05,680",
+      "text": "Chào anh chị em học viên, hôm nay chúng ta sẽ đến với một cái bài cực kỳ quan trọng, hiểu về Prompt."
+    },
+    {
+      "id": 2,
+      "start": 5.82,
+      "end": 12.16,
+      "start_time": "00:00:05,820",
+      "end_time": "00:00:12,160",
+      "text": "Prompt giúp chúng ta sẽ tạo ra được tất cả những câu chuyện, video hoặc là công việc."
+    },
+    {
+      "id": 3,
+      "start": 12.36,
+      "end": 17.4,
+      "start_time": "00:00:12,360",
+      "end_time": "00:00:17,400",
+      "text": "Hôm nay chúng ta sẽ hiểu về Prompt, Prompt để kết hợp, để sản xuất các video AI hiệu quả."
+    },
+    {
+      "id": 4,
+      "start": 17.54,
+      "end": 19.4,
+      "start_time": "00:00:17,540",
+      "end_time": "00:00:19,400",
+      "text": "Chúng ta sẽ đến với Prompt cơ bản."
+    },
+    {
+      "id": 5,
+      "start": 20.0,
+      "end": 23.04,
+      "start_time": "00:00:20,000",
+      "end_time": "00:00:23,040",
+      "text": "Ở đây tôi có một nhân vật, đây là nhân vật Stickman."
+    },
+    {
+      "id": 6,
+      "start": 23.44,
+      "end": 27.48,
+      "start_time": "00:00:23,440",
+      "end_time": "00:00:27,480",
+      "text": "Tôi kéo vào Google Flow, hoặc tôi có thể kéo vào ChatGPT."
+    },
+    {
+      "id": 7,
+      "start": 27.48,
+      "end": 35.12,
+      "start_time": "00:00:27,480",
+      "end_time": "00:00:35,120",
+      "text": "Nếu mà anh chị viết một cái Prompt đơn giản để tạo ra một hình ảnh nhân vật này đang cầm một đồ vật gì đó thì anh chị sẽ viết như thế nào."
+    },
+    {
+      "id": 8,
+      "start": 36.22,
+      "end": 48.44,
+      "start_time": "00:00:36,220",
+      "end_time": "00:00:48,440",
+      "text": "Hãy tạo cho tôi nhân vật này đang ôm 1 bao gạo, còn lại giữ nguyên chi tiết."
+    },
+    {
+      "id": 9,
+      "start": 49.44,
+      "end": 53.02,
+      "start_time": "00:00:49,440",
+      "end_time": "00:00:53,020",
+      "text": "Và tôi sẽ thêm cái nhân vật này làm nhân vật tham chiếu."
+    },
+    {
+      "id": 10,
+      "start": 53.02,
+      "end": 61.06,
+      "start_time": "00:00:53,020",
+      "end_time": "00:01:01,060",
+      "text": "Ok, chúng ta sẽ xem là nhân vật này sẽ ôm cái gì. Đây là cái tư duy về chỉ viết một"
+    },
+    {
+      "id": 11,
+      "start": 61.06,
+      "end": 69.1,
+      "start_time": "00:01:01,060",
+      "end_time": "00:01:09,100",
+      "text": "Prompt, ý là các bạn chỉ tạo ra được một hình ảnh trong một quá trình thời gian làm việc của các bạn."
+    },
+    {
+      "id": 12,
+      "start": 69.1,
+      "end": 74.78,
+      "start_time": "00:01:09,100",
+      "end_time": "00:01:14,780",
+      "text": "Nếu mà các bạn hay theo những cái chủ nghĩa mà làm dạng Story"
+    },
+    {
+      "id": 13,
+      "start": 74.78,
+      "end": 78.16,
+      "start_time": "00:01:14,780",
+      "end_time": "00:01:18,160",
+      "text": "thì các bạn nếu mà các bạn tạo như thế này từng cảnh một luôn"
+    },
+    {
+      "id": 14,
+      "start": 78.16,
+      "end": 79.66,
+      "start_time": "00:01:18,160",
+      "end_time": "00:01:19,660",
+      "text": "Nó rất là lâu"
+    },
+    {
+      "id": 15,
+      "start": 79.66,
+      "end": 81.56,
+      "start_time": "00:01:19,660",
+      "end_time": "00:01:21,560",
+      "text": "Nó rất là khó chịu"
+    },
+    {
+      "id": 16,
+      "start": 81.56,
+      "end": 83.84,
+      "start_time": "00:01:21,560",
+      "end_time": "00:01:23,840",
+      "text": "Để mà chúng ta làm một cái việc hiệu quả"
+    },
+    {
+      "id": 17,
+      "start": 83.84,
+      "end": 85.42,
+      "start_time": "00:01:23,840",
+      "end_time": "00:01:25,420",
+      "text": "Một video dài hiệu quả"
+    },
+    {
+      "id": 18,
+      "start": 85.42,
+      "end": 86.76,
+      "start_time": "00:01:25,420",
+      "end_time": "00:01:26,760",
+      "text": "Nhưng khi"
+    },
+    {
+      "id": 19,
+      "start": 86.76,
+      "end": 88.7,
+      "start_time": "00:01:26,760",
+      "end_time": "00:01:28,700",
+      "text": "Khi"
+    },
+    {
+      "id": 20,
+      "start": 88.7,
+      "end": 91.0,
+      "start_time": "00:01:28,700",
+      "end_time": "00:01:31,000",
+      "text": "Khi tôi dùng"
+    },
+    {
+      "id": 21,
+      "start": 91.0,
+      "end": 93.34,
+      "start_time": "00:01:31,000",
+      "end_time": "00:01:33,340",
+      "text": "ChatGPT kết hợp với"
+    },
+    {
+      "id": 22,
+      "start": 93.34,
+      "end": 95.18,
+      "start_time": "00:01:33,340",
+      "end_time": "00:01:35,180",
+      "text": "Một câu lệnh"
+    },
+    {
+      "id": 23,
+      "start": 95.18,
+      "end": 97.116,
+      "start_time": "00:01:35,180",
+      "end_time": "00:01:37,116",
+      "text": "Để tạo ra một Master Prompt"
+    },
+    {
+      "id": 24,
+      "start": 97.116,
+      "end": 100.836,
+      "start_time": "00:01:37,116",
+      "end_time": "00:01:40,836",
+      "text": "Tôi sẽ tải cái hình ảnh nhân vật gốc này"
+    },
+    {
+      "id": 25,
+      "start": 100.836,
+      "end": 104.376,
+      "start_time": "00:01:40,836",
+      "end_time": "00:01:44,376",
+      "text": "Bây giờ"
+    },
+    {
+      "id": 26,
+      "start": 104.376,
+      "end": 105.856,
+      "start_time": "00:01:44,376",
+      "end_time": "00:01:45,856",
+      "text": "Cái quan trọng là cái này"
+    },
+    {
+      "id": 27,
+      "start": 105.856,
+      "end": 109.056,
+      "start_time": "00:01:45,856",
+      "end_time": "00:01:49,056",
+      "text": "Bây giờ chúng ta sẽ tạo ra một Master Prompt"
+    },
+    {
+      "id": 28,
+      "start": 109.056,
+      "end": 109.816,
+      "start_time": "00:01:49,056",
+      "end_time": "00:01:49,816",
+      "text": "Như sau"
+    },
+    {
+      "id": 29,
+      "start": 109.816,
+      "end": 113.296,
+      "start_time": "00:01:49,816",
+      "end_time": "00:01:53,296",
+      "text": "Hãy tạo cho tôi"
+    },
+    {
+      "id": 30,
+      "start": 113.296,
+      "end": 116.296,
+      "start_time": "00:01:53,296",
+      "end_time": "00:01:56,296",
+      "text": "Master Prompt"
+    },
+    {
+      "id": 31,
+      "start": 116.296,
+      "end": 117.756,
+      "start_time": "00:01:56,296",
+      "end_time": "00:01:57,756",
+      "text": "Khi tôi"
+    },
+    {
+      "id": 32,
+      "start": 117.756,
+      "end": 119.016,
+      "start_time": "00:01:57,756",
+      "end_time": "00:01:59,016",
+      "text": "Gửi"
+    },
+    {
+      "id": 33,
+      "start": 119.016,
+      "end": 121.396,
+      "start_time": "00:01:59,016",
+      "end_time": "00:02:01,396",
+      "text": "Nhân vật"
+    },
+    {
+      "id": 34,
+      "start": 121.396,
+      "end": 123.756,
+      "start_time": "00:02:01,396",
+      "end_time": "00:02:03,756",
+      "text": "Lên"
+    },
+    {
+      "id": 35,
+      "start": 123.756,
+      "end": 124.216,
+      "start_time": "00:02:03,756",
+      "end_time": "00:02:04,216",
+      "text": "Flow"
+    },
+    {
+      "id": 36,
+      "start": 124.216,
+      "end": 129.236,
+      "start_time": "00:02:04,216",
+      "end_time": "00:02:09,236",
+      "text": "Cái quan trọng là cái này nha"
+    },
+    {
+      "id": 37,
+      "start": 129.236,
+      "end": 131.096,
+      "start_time": "00:02:09,236",
+      "end_time": "00:02:11,096",
+      "text": "Khi tôi gửi"
+    },
+    {
+      "id": 38,
+      "start": 131.096,
+      "end": 132.736,
+      "start_time": "00:02:11,096",
+      "end_time": "00:02:12,736",
+      "text": "Nhân vật này lên Google Flow"
+    },
+    {
+      "id": 39,
+      "start": 132.736,
+      "end": 134.836,
+      "start_time": "00:02:12,736",
+      "end_time": "00:02:14,836",
+      "text": "Điều gì khiến tôi đang nói"
+    },
+    {
+      "id": 40,
+      "start": 134.836,
+      "end": 136.476,
+      "start_time": "00:02:14,836",
+      "end_time": "00:02:16,476",
+      "text": "Đến là tôi vất"
+    },
+    {
+      "id": 41,
+      "start": 136.476,
+      "end": 138.316,
+      "start_time": "00:02:16,476",
+      "end_time": "00:02:18,316",
+      "text": "Cái hình ảnh này lên Google Flow"
+    },
+    {
+      "id": 42,
+      "start": 138.316,
+      "end": 140.676,
+      "start_time": "00:02:18,316",
+      "end_time": "00:02:20,676",
+      "text": "Tại vì là tôi sẽ tạo ra một cái"
+    },
+    {
+      "id": 43,
+      "start": 140.676,
+      "end": 143.016,
+      "start_time": "00:02:20,676",
+      "end_time": "00:02:23,016",
+      "text": "Hình ảnh khác trên Google Flow"
+    },
+    {
+      "id": 44,
+      "start": 143.016,
+      "end": 146.716,
+      "start_time": "00:02:23,016",
+      "end_time": "00:02:26,716",
+      "text": "hoặc bất kể con AI khác thì các bạn phải áp dụng cách này."
+    },
+    {
+      "id": 45,
+      "start": 147.0,
+      "end": 153.383,
+      "start_time": "00:02:27,000",
+      "end_time": "00:02:33,383",
+      "text": "Khi tôi gửi ảnh nhân vật này lên Google"
+    },
+    {
+      "id": 46,
+      "start": 153.383,
+      "end": 160.049,
+      "start_time": "00:02:33,383",
+      "end_time": "00:02:40,049",
+      "text": "Flow, bạn hãy tạo cho tôi 30 Prompt"
+    },
+    {
+      "id": 47,
+      "start": 160.049,
+      "end": 166.716,
+      "start_time": "00:02:40,049",
+      "end_time": "00:02:46,716",
+      "text": "để khi tôi gửi hình ảnh này lại ChatGPT."
+    },
+    {
+      "id": 48,
+      "start": 166.716,
+      "end": 167.296,
+      "start_time": "00:02:46,716",
+      "end_time": "00:02:47,296",
+      "text": "ChatGPT."
+    },
+    {
+      "id": 49,
+      "start": 167.376,
+      "end": 180.236,
+      "start_time": "00:02:47,376",
+      "end_time": "00:03:00,236",
+      "text": "Bạn hãy dựa vào 30 bối cảnh hàng ngày của một con người."
+    },
+    {
+      "id": 50,
+      "start": 180.4,
+      "end": 183.72,
+      "start_time": "00:03:00,400",
+      "end_time": "00:03:03,720",
+      "text": "Tạo cho tôi 30 Prompt."
+    },
+    {
+      "id": 51,
+      "start": 185.08,
+      "end": 189.42,
+      "start_time": "00:03:05,080",
+      "end_time": "00:03:09,420",
+      "text": "Yêu cầu các Prompt thay đổi."
+    },
+    {
+      "id": 52,
+      "start": 191.38,
+      "end": 192.86,
+      "start_time": "00:03:11,380",
+      "end_time": "00:03:12,860",
+      "text": "Bối cảnh."
+    },
+    {
+      "id": 53,
+      "start": 194.76,
+      "end": 196.0,
+      "start_time": "00:03:14,760",
+      "end_time": "00:03:16,000",
+      "text": "Hành động."
+    },
+    {
+      "id": 54,
+      "start": 198.7,
+      "end": 199.36,
+      "start_time": "00:03:18,700",
+      "end_time": "00:03:19,360",
+      "text": "Sự vật."
+    },
+    {
+      "id": 55,
+      "start": 200.36,
+      "end": 202.78,
+      "start_time": "00:03:20,360",
+      "end_time": "00:03:22,780",
+      "text": "Sự việc xảy ra."
+    },
+    {
+      "id": 56,
+      "start": 203.36,
+      "end": 205.58,
+      "start_time": "00:03:23,360",
+      "end_time": "00:03:25,580",
+      "text": "Sự vật, sự việc xảy ra."
+    },
+    {
+      "id": 57,
+      "start": 205.58,
+      "end": 212.247,
+      "start_time": "00:03:25,580",
+      "end_time": "00:03:32,247",
+      "text": "ra các góc quay phù hợp cho các Prompt."
+    },
+    {
+      "id": 58,
+      "start": 212.247,
+      "end": 218.913,
+      "start_time": "00:03:32,247",
+      "end_time": "00:03:38,913",
+      "text": "Cảm xúc của nhân vật. Bây giờ, hãy"
+    },
+    {
+      "id": 59,
+      "start": 218.913,
+      "end": 225.58,
+      "start_time": "00:03:38,913",
+      "end_time": "00:03:45,580",
+      "text": "tạo cho tôi một Master Prompt để tôi gửi"
+    },
+    {
+      "id": 60,
+      "start": 225.58,
+      "end": 232.88,
+      "start_time": "00:03:45,580",
+      "end_time": "00:03:52,880",
+      "text": "Cho ChatGPT tạo ra 30 Prompt."
+    },
+    {
+      "id": 61,
+      "start": 232.88,
+      "end": 236.68,
+      "start_time": "00:03:52,880",
+      "end_time": "00:03:56,680",
+      "text": "Chi tiết và đầy đủ."
+    },
+    {
+      "id": 62,
+      "start": 239.8,
+      "end": 241.96,
+      "start_time": "00:03:59,800",
+      "end_time": "00:04:01,960",
+      "text": "Cái quan trọng là cái như thế này."
+    },
+    {
+      "id": 63,
+      "start": 243.0,
+      "end": 250.94,
+      "start_time": "00:04:03,000",
+      "end_time": "00:04:10,940",
+      "text": "Nó sẽ tạo ra một Master Prompt cho các bạn là nó sẽ dựa vào những cái yêu cầu đơn giản của các bạn."
+    },
+    {
+      "id": 64,
+      "start": 251.2,
+      "end": 252.0,
+      "start_time": "00:04:11,200",
+      "end_time": "00:04:12,000",
+      "text": "Sau đó nó sẽ tạo ra."
+    },
+    {
+      "id": 65,
+      "start": 252.0,
+      "end": 254.98,
+      "start_time": "00:04:12,000",
+      "end_time": "00:04:14,980",
+      "text": "Anh em anh nhìn thấy những cái Prompt rất là dài"
+    },
+    {
+      "id": 66,
+      "start": 254.98,
+      "end": 257.36,
+      "start_time": "00:04:14,980",
+      "end_time": "00:04:17,360",
+      "text": "Ở trên Facebook"
+    },
+    {
+      "id": 67,
+      "start": 257.36,
+      "end": 259.16,
+      "start_time": "00:04:17,360",
+      "end_time": "00:04:19,160",
+      "text": "Mà người ta nốt ra"
+    },
+    {
+      "id": 68,
+      "start": 259.16,
+      "end": 261.62,
+      "start_time": "00:04:19,160",
+      "end_time": "00:04:21,620",
+      "text": "Thật ra là không ai rảnh lờ đi"
+    },
+    {
+      "id": 69,
+      "start": 261.62,
+      "end": 264.36,
+      "start_time": "00:04:21,620",
+      "end_time": "00:04:24,360",
+      "text": "Ngồi nốt ra những cái Prompt như thế này"
+    },
+    {
+      "id": 70,
+      "start": 264.36,
+      "end": 266.12,
+      "start_time": "00:04:24,360",
+      "end_time": "00:04:26,120",
+      "text": "Cái Master Prompt như thế này"
+    },
+    {
+      "id": 71,
+      "start": 266.12,
+      "end": 267.94,
+      "start_time": "00:04:26,120",
+      "end_time": "00:04:27,940",
+      "text": "Tôi nhìn sao chép này"
+    },
+    {
+      "id": 72,
+      "start": 267.94,
+      "end": 270.12,
+      "start_time": "00:04:27,940",
+      "end_time": "00:04:30,120",
+      "text": "Bây giờ tôi sẽ tạo một đoạn chat mới"
+    },
+    {
+      "id": 73,
+      "start": 272.0,
+      "end": 272.826,
+      "start_time": "00:04:32,000",
+      "end_time": "00:04:32,826",
+      "text": "Và dán vào."
+    },
+    {
+      "id": 74,
+      "start": 272.826,
+      "end": 279.936,
+      "start_time": "00:04:32,826",
+      "end_time": "00:04:39,936",
+      "text": "Bạn có thể yêu cầu nó làm gì ạ? Dựa vào câu chuyện này, hãy tạo cho tôi những gì"
+    },
+    {
+      "id": 75,
+      "start": 279.936,
+      "end": 287.046,
+      "start_time": "00:04:39,936",
+      "end_time": "00:04:47,046",
+      "text": "ạ? 30 Prompt, 300 Prompt. Thì bắt buộc nhân vật của bạn nó sẽ dựa theo câu chuyện đấy."
+    },
+    {
+      "id": 76,
+      "start": 287.666,
+      "end": 297.413,
+      "start_time": "00:04:47,666",
+      "end_time": "00:04:57,413",
+      "text": "Các bạn nhìn nhé. Nó sẽ tạo cho các bạn là 30 Prompt. Đây là nó viết đến 10 Prompt rồi."
+    },
+    {
+      "id": 77,
+      "start": 297.413,
+      "end": 307.159,
+      "start_time": "00:04:57,413",
+      "end_time": "00:05:07,159",
+      "text": "Tiếp tục. 10 Prompt. Tiếp tục. Đây là một cái Master Prompt để cho các bạn hiểu được là cái giá"
+    },
+    {
+      "id": 78,
+      "start": 307.159,
+      "end": 316.906,
+      "start_time": "00:05:07,159",
+      "end_time": "00:05:16,906",
+      "text": "trị của tạo những cái video AI. Copy Prompt thứ nhất. Sang nhé. Tôi dùng câu lệnh. Thêm một câu lệnh."
+    },
+    {
+      "id": 79,
+      "start": 318.0,
+      "end": 323.666,
+      "start_time": "00:05:18,000",
+      "end_time": "00:05:23,666",
+      "text": "Tôi sẽ tạo 1 hình 1"
+    },
+    {
+      "id": 80,
+      "start": 323.666,
+      "end": 326.666,
+      "start_time": "00:05:23,666",
+      "end_time": "00:05:26,666",
+      "text": "ở 2 hình 1"
+    },
+    {
+      "id": 81,
+      "start": 326.666,
+      "end": 328.666,
+      "start_time": "00:05:26,666",
+      "end_time": "00:05:28,666",
+      "text": "Prompt thứ 2"
+    },
+    {
+      "id": 82,
+      "start": 328.666,
+      "end": 335.666,
+      "start_time": "00:05:28,666",
+      "end_time": "00:05:35,666",
+      "text": "bắt buộc phải có 1 cái Master Prompt ra"
+    },
+    {
+      "id": 83,
+      "start": 335.666,
+      "end": 338.666,
+      "start_time": "00:05:35,666",
+      "end_time": "00:05:38,666",
+      "text": "nếu mà kia là chúng ta sẽ làm"
+    },
+    {
+      "id": 84,
+      "start": 338.666,
+      "end": 341.666,
+      "start_time": "00:05:38,666",
+      "end_time": "00:05:41,666",
+      "text": "nếu mà chúng ta viết 1 cái 1 thì nó sẽ là thủ công"
+    },
+    {
+      "id": 85,
+      "start": 341.666,
+      "end": 344.666,
+      "start_time": "00:05:41,666",
+      "end_time": "00:05:44,666",
+      "text": "còn khi mà chúng ta viết"
+    },
+    {
+      "id": 86,
+      "start": 344.9,
+      "end": 355.48,
+      "start_time": "00:05:44,900",
+      "end_time": "00:05:55,480",
+      "text": "Cái gì ạ? Viết ra 1 cái Master Prompt, để ChatGPT tạo ra 1 cái Master Prompt thì nó là 1 cái chuyên nghiệp cao hơn."
+    },
+    {
+      "id": 87,
+      "start": 358.52,
+      "end": 364.78,
+      "start_time": "00:05:58,520",
+      "end_time": "00:06:04,780",
+      "text": "Chúng ta sẽ có những cái tư duy để tạo ra 1 cái Master Prompt cho anh chị."
+    },
+    {
+      "id": 88,
+      "start": 365.7,
+      "end": 372.96,
+      "start_time": "00:06:05,700",
+      "end_time": "00:06:12,960",
+      "text": "Ví dụ như 1 cái Prompt thứ nhất, anh chị nhớ là nó sẽ cố định cho các bạn là ok."
+    },
+    {
+      "id": 89,
+      "start": 372.96,
+      "end": 380.79,
+      "start_time": "00:06:12,960",
+      "end_time": "00:06:20,790",
+      "text": "Nhân vật này, cuộc sống hàng ngày, tôi chỉ nói với anh chị là, cái đơn giản nhất"
+    },
+    {
+      "id": 90,
+      "start": 380.79,
+      "end": 388.62,
+      "start_time": "00:06:20,790",
+      "end_time": "00:06:28,620",
+      "text": "của tôi ở trong cái câu lệnh, đây gọi là câu lệnh yêu cầu, là tôi bảo gì ạ?"
+    },
+    {
+      "id": 91,
+      "start": 388.62,
+      "end": 395.82,
+      "start_time": "00:06:28,620",
+      "end_time": "00:06:35,820",
+      "text": "Khi tôi gửi ảnh nhân vật này lên Google Flow, bạn hãy tạo cho tôi 30 Prompt"
+    },
+    {
+      "id": 92,
+      "start": 395.82,
+      "end": 405.38,
+      "start_time": "00:06:35,820",
+      "end_time": "00:06:45,380",
+      "text": "Để khi gửi hình ảnh này lại, ChatGPT, bạn hãy dựa vào 30 bối cảnh hàng ngày của một con người"
+    },
+    {
+      "id": 93,
+      "start": 405.38,
+      "end": 410.32,
+      "start_time": "00:06:45,380",
+      "end_time": "00:06:50,320",
+      "text": "Ý là trong cái bối cảnh, 30 cái bối cảnh hàng ngày của một con người này"
+    },
+    {
+      "id": 94,
+      "start": 410.32,
+      "end": 412.18,
+      "start_time": "00:06:50,320",
+      "end_time": "00:06:52,180",
+      "text": "Các bạn"
+    },
+    {
+      "id": 95,
+      "start": 412.18,
+      "end": 415.24,
+      "start_time": "00:06:52,180",
+      "end_time": "00:06:55,240",
+      "text": "Bạn có thể thay đổi"
+    },
+    {
+      "id": 96,
+      "start": 415.24,
+      "end": 417.16,
+      "start_time": "00:06:55,240",
+      "end_time": "00:06:57,160",
+      "text": "Thành câu chuyện"
+    },
+    {
+      "id": 97,
+      "start": 417.16,
+      "end": 419.54,
+      "start_time": "00:06:57,160",
+      "end_time": "00:06:59,540",
+      "text": "Nhưng mà bạn phải tư duy"
+    },
+    {
+      "id": 98,
+      "start": 419.54,
+      "end": 420.36,
+      "start_time": "00:06:59,540",
+      "end_time": "00:07:00,360",
+      "text": "Đặt cho tôi"
+    },
+    {
+      "id": 99,
+      "start": 420.36,
+      "end": 421.96,
+      "start_time": "00:07:00,360",
+      "end_time": "00:07:01,960",
+      "text": "Ở đây là tôi đã hành động"
+    },
+    {
+      "id": 100,
+      "start": 421.96,
+      "end": 423.6,
+      "start_time": "00:07:01,960",
+      "end_time": "00:07:03,600",
+      "text": "Sự việc xảy ra"
+    },
+    {
+      "id": 101,
+      "start": 423.6,
+      "end": 426.2,
+      "start_time": "00:07:03,600",
+      "end_time": "00:07:06,200",
+      "text": "Và các bạn muốn nhất quán"
+    },
+    {
+      "id": 102,
+      "start": 426.2,
+      "end": 429.74,
+      "start_time": "00:07:06,200",
+      "end_time": "00:07:09,740",
+      "text": "Muốn nhất quán như thế nào"
+    },
+    {
+      "id": 103,
+      "start": 429.74,
+      "end": 430.32,
+      "start_time": "00:07:09,740",
+      "end_time": "00:07:10,320",
+      "text": "Nó cũng"
+    },
+    {
+      "id": 104,
+      "start": 430.32,
+      "end": 432.62,
+      "start_time": "00:07:10,320",
+      "end_time": "00:07:12,620",
+      "text": "được kể cả ví dụ như nhân vật này"
+    },
+    {
+      "id": 105,
+      "start": 432.62,
+      "end": 433.94,
+      "start_time": "00:07:12,620",
+      "end_time": "00:07:13,940",
+      "text": "đang ngồi trong ngôi nhà này"
+    },
+    {
+      "id": 106,
+      "start": 433.94,
+      "end": 436.22,
+      "start_time": "00:07:13,940",
+      "end_time": "00:07:16,220",
+      "text": "nhưng góc quay khác đi nếu"
+    },
+    {
+      "id": 107,
+      "start": 436.22,
+      "end": 438.5,
+      "start_time": "00:07:16,220",
+      "end_time": "00:07:18,500",
+      "text": "bạn tải lại một hình ảnh bất kỳ"
+    },
+    {
+      "id": 108,
+      "start": 438.5,
+      "end": 439.4,
+      "start_time": "00:07:18,500",
+      "end_time": "00:07:19,400",
+      "text": "của nhân vật ấy"
+    },
+    {
+      "id": 109,
+      "start": 439.4,
+      "end": 442.3,
+      "start_time": "00:07:19,400",
+      "end_time": "00:07:22,300",
+      "text": "đấy là cái Master Prompt yêu cầu"
+    },
+    {
+      "id": 110,
+      "start": 442.3,
+      "end": 444.68,
+      "start_time": "00:07:22,300",
+      "end_time": "00:07:24,680",
+      "text": "là đây là những cái công việc"
+    },
+    {
+      "id": 111,
+      "start": 444.68,
+      "end": 446.0,
+      "start_time": "00:07:24,680",
+      "end_time": "00:07:26,000",
+      "text": "hàng ngày gì của một thanh niên"
+    },
+    {
+      "id": 112,
+      "start": 446.0,
+      "end": 453.391,
+      "start_time": "00:07:26,000",
+      "end_time": "00:07:33,391",
+      "text": "Đây, ngủ dậy, đánh răng, đọc báo, ăn sáng, đi chơi. Và"
+    },
+    {
+      "id": 113,
+      "start": 453.391,
+      "end": 460.561,
+      "start_time": "00:07:33,391",
+      "end_time": "00:07:40,561",
+      "text": "tôi sẽ dùng cái Prompt nó tạo vừa xong, Prompt 11."
+    },
+    {
+      "id": 114,
+      "start": 462.941,
+      "end": 473.621,
+      "start_time": "00:07:42,941",
+      "end_time": "00:07:53,621",
+      "text": "Cứ phải có ảnh tham chiếu. Nếu mà các bạn làm thủ công, viết từng một Prompt 1, đúng không? Thì nó rất là lâu, mất thời gian."
+    },
+    {
+      "id": 115,
+      "start": 473.621,
+      "end": 485.961,
+      "start_time": "00:07:53,621",
+      "end_time": "00:08:05,961",
+      "text": "Nhưng mà khi các bạn làm như thế này thì cái tỷ lệ để sản xuất video nó cực kì nhanh. Đó là một cách mà các bạn sản xuất."
+    },
+    {
+      "id": 116,
+      "start": 485.961,
+      "end": 492.201,
+      "start_time": "00:08:05,961",
+      "end_time": "00:08:12,201",
+      "text": "Prompt thứ 13 này. Khi là tôi chỉ lấy mấy Prompt thôi. Tôi không lấy nhiều."
+    },
+    {
+      "id": 117,
+      "start": 492.201,
+      "end": 499.581,
+      "start_time": "00:08:12,201",
+      "end_time": "00:08:19,581",
+      "text": "Prompt 14"
+    },
+    {
+      "id": 118,
+      "start": 499.581,
+      "end": 508.071,
+      "start_time": "00:08:19,581",
+      "end_time": "00:08:28,071",
+      "text": "cái việc ở đây là việc tạo ra Master Prompt là các bạn phải ghi nhớ"
+    },
+    {
+      "id": 119,
+      "start": 508.071,
+      "end": 516.561,
+      "start_time": "00:08:28,071",
+      "end_time": "00:08:36,561",
+      "text": "là một chúng ta phải có câu lệnh yêu cầu ChatGPT viết ra một cái Master Prompt"
+    },
+    {
+      "id": 120,
+      "start": 516.95,
+      "end": 523.23,
+      "start_time": "00:08:36,950",
+      "end_time": "00:08:43,230",
+      "text": "Đấy là một cái chi tiết khá quan trọng để người làm YouTube có thể hiểu được."
+    },
+    {
+      "id": 121,
+      "start": 524.13,
+      "end": 528.21,
+      "start_time": "00:08:44,130",
+      "end_time": "00:08:48,210",
+      "text": "Các bạn phải viết ra được cái gì ạ? Mong muốn của các bạn."
+    },
+    {
+      "id": 122,
+      "start": 529.49,
+      "end": 535.09,
+      "start_time": "00:08:49,490",
+      "end_time": "00:08:55,090",
+      "text": "Ví dụ như bạn muốn viết là nhân vật này làm gì, ngồi làm gì, ăn gì, ăn gì."
+    },
+    {
+      "id": 123,
+      "start": 535.77,
+      "end": 542.93,
+      "start_time": "00:08:55,770",
+      "end_time": "00:09:02,930",
+      "text": "Ví dụ một công việc hàng ngày, một câu chuyện mà các bạn cứ ngồi các bạn dựa trên một câu chuyện story luôn."
+    },
+    {
+      "id": 124,
+      "start": 542.93,
+      "end": 546.91,
+      "start_time": "00:09:02,930",
+      "end_time": "00:09:06,910",
+      "text": "Mà các bạn ngồi các bạn làm từng một cái hình ảnh một thì không được."
+    },
+    {
+      "id": 125,
+      "start": 548.39,
+      "end": 550.41,
+      "start_time": "00:09:08,390",
+      "end_time": "00:09:10,410",
+      "text": "Bắt buộc bạn phải tạo ra như thế này."
+    },
+    {
+      "id": 126,
+      "start": 551.17,
+      "end": 554.19,
+      "start_time": "00:09:11,170",
+      "end_time": "00:09:14,190",
+      "text": "Đây là một cái Master Prompt các bạn cần ghi nhớ cho tôi."
+    },
+    {
+      "id": 127,
+      "start": 555.05,
+      "end": 556.69,
+      "start_time": "00:09:15,050",
+      "end_time": "00:09:16,690",
+      "text": "Yêu cầu các bạn ở đây là gì ạ?"
+    },
+    {
+      "id": 128,
+      "start": 557.27,
+      "end": 559.69,
+      "start_time": "00:09:17,270",
+      "end_time": "00:09:19,690",
+      "text": "Các bạn ghi nhớ cho tôi cái Prompt đơn giản như thế này."
+    },
+    {
+      "id": 129,
+      "start": 560.21,
+      "end": 572.91,
+      "start_time": "00:09:20,210",
+      "end_time": "00:09:32,910",
+      "text": "Trước khi muốn tạo ra một cái video hoàn chỉnh thì chúng ta phải nghiêm túc viết ra những cái khó để cho ChatGPT nó viết ra cho mình."
+    },
+    {
+      "id": 130,
+      "start": 572.93,
+      "end": 584.29,
+      "start_time": "00:09:32,930",
+      "end_time": "00:09:44,290",
+      "text": "nó làm ra cho chúng ta một cái Master Prompt hoàn chỉnh. Đấy là một cái tư duy để anh chị sản xuất video trên nền tảng YouTube này. Ok, chào anh chị em."
+    }
+  ]
+}

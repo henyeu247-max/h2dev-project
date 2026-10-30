@@ -1,0 +1,84 @@
+{
+  "sku": "VIDEO-3a38f9",
+  "title": "Quá kinh khủng với 2 kênh mới hoàn toàn làm đúng ngách không bao giờ thiếu view - Share kênh Thị trường Hàn và Việt",
+  "actual_topic": "Phân tích kênh sức khỏe trường thọ Hàn Quốc (cảnh báo lỗi buff sub) và cách nhân bản ngách drama người già 60–70+ về thị trường Việt Nam",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Triết Lý Đời Sống & Chuyện Nhân Gian",
+  "niche_id": "life-wisdom-kr-vn",
+  "target_market": "Hàn Quốc / Việt Nam",
+  "market_code": "KR,VN",
+  "key_takeaways": [
+    "Kênh mẫu Hàn Quốc về sức khỏe và bí quyết sống thọ trên 100 tuổi (từ khóa trí tuệ cuộc sống) đạt hơn 100k tổng lượt xem nhưng có tới hơn 5k sub — dấu hiệu rõ ràng của việc buff sub.",
+    "Tuyệt đối không bao giờ buff sub hay bơm sub ảo: việc này làm kênh bị flop, mất đề xuất tự nhiên và rất dễ dính đợt quét của YouTube.",
+    "Kênh mẫu Việt Nam làm ngách drama nhắm thẳng vào tệp khán giả 60–70+ tuổi (tiêu đề gắn tuổi 71, 77...) kết hợp ghép cảnh quay tự nhiên giúp cắn view đều dù mới lập.",
+    "Khi nhân bản kịch bản từ Nhật/Hàn về Việt Nam, dùng Claude hoặc ChatGPT để Việt hóa văn phong cho gần gũi với người xem trong nước và ưu tiên tạo kênh trên Gmail cá nhân đang dùng thực tế để có độ trust cao."
+  ],
+  "edit_sop": {
+    "primary": "Share ngách người già thị trường Hàn và ngách drama người già thị trường Việt",
+    "additional": [
+      "Edit theo quy trình đã hướng dẫn: ghép video tự nhiên, giọng đọc, phụ đề, thêm hình ảnh nhân vật và minh họa",
+      "Giọng đọc: clone giọng của đối thủ hoặc lên ElevenLabs lọc quốc gia, nữ, người già rồi nghe thử",
+      "Thị trường Việt: lấy kịch bản đối thủ Nhật Hàn cho Claude học cách diễn đạt, bố cục rồi Việt hóa theo văn hóa Việt",
+      "Train AI từ từ, đừng làm một phát ra liền",
+      "Tạo kênh bằng mail cá nhân hay dùng, đừng dùng mail cổ"
+    ]
+  },
+  "avoid_flags": [
+    "Tuyệt đối không bút sub/boost sub vì kênh sẽ bị flop và dễ bị quét",
+    "Đừng dùng mail cổ để tạo kênh"
+  ],
+  "tools_mentioned": [
+    "ElevenLabs",
+    "Claude",
+    "ChatGPT"
+  ],
+  "channels_mentioned": [
+    "@오늘의삶의지혜",
+    "@Haythauhieuchuyendoi"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:01",
+      "seconds": 1,
+      "label": "Giới thiệu kênh Hàn Quốc ngách sức khỏe người cao tuổi và dấu hiệu buff 5k sub"
+    },
+    {
+      "time": "01:06",
+      "seconds": 66,
+      "label": "Cảnh báo tuyệt đối không buff sub để tránh làm kênh bị flop và bị quét"
+    },
+    {
+      "time": "02:34",
+      "seconds": 154,
+      "label": "Phân tích cách edit và đặt từ khóa trí tuệ cuộc sống ở đầu tiêu đề"
+    },
+    {
+      "time": "04:42",
+      "seconds": 282,
+      "label": "Phân tích kênh Việt Nam làm ngách drama hướng tới khán giả 60–70+ tuổi"
+    },
+    {
+      "time": "06:33",
+      "seconds": 393,
+      "label": "Dùng Claude và ChatGPT để Việt hóa kịch bản nhân bản từ Nhật/Hàn"
+    },
+    {
+      "time": "09:09",
+      "seconds": 549,
+      "label": "Kinh nghiệm dùng Gmail cá nhân tạo kênh mới để có độ trust cao"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-3a38f9/transcript.txt",
+  "sop_steps": [
+    "Edit theo quy trình đã hướng dẫn: ghép video tự nhiên, giọng đọc, phụ đề, thêm hình ảnh nhân vật và minh họa",
+    "Giọng đọc: clone giọng của đối thủ hoặc lên ElevenLabs lọc quốc gia, nữ, người già rồi nghe thử",
+    "Thị trường Việt: lấy kịch bản đối thủ Nhật Hàn cho Claude học cách diễn đạt, bố cục rồi Việt hóa theo văn hóa Việt",
+    "Train AI từ từ, đừng làm một phát ra liền",
+    "Tạo kênh bằng mail cá nhân hay dùng, đừng dùng mail cổ"
+  ]
+}

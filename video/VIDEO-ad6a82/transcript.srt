@@ -1,0 +1,279 @@
+1
+00:00:00,000 --> 00:00:07,900
+Chào anh chị em học viên. Hôm nay chúng ta đến với một cái bài đó là bài các câu Prompt về các góc quay khi anh em làm video AI.
+
+2
+00:00:08,140 --> 00:00:18,580
+Thì ở đây tại sao chúng ta phải có cái bài này? Thì rất nhiều anh em làm một cái video AI thì anh em luôn luôn để một cái góc là góc toàn thân như thế này, gọi là góc ngang toàn thân.
+
+3
+00:00:18,780 --> 00:00:22,780
+Thì anh em chỉ để một góc này thôi thì cái video của anh chị rất sẽ là nhàm chán.
+
+4
+00:00:22,780 --> 00:00:30,333
+Tại sao tôi lại nói như thế? Tại vì nếu mà anh em làm video AI như thế này thì có phải người ta không bao giờ người ta chú ý đến cái video
+
+5
+00:00:30,333 --> 00:00:37,887
+của anh em quá nhiều. Ví dụ anh em làm 10 cảnh mà nó chỉ có một cái góc toàn thân như thế này thì nó rất là nhàm chán. Anh em phải có
+
+6
+00:00:37,887 --> 00:00:45,440
+thêm những cái góc như là góc gần mặt này, trung cảnh này, toàn cảnh này. Và ở đây tôi đã liệt kê ra những cái góc quay mà anh em phải ghi nhớ.
+
+7
+00:00:45,440 --> 00:00:52,740
+Bây giờ anh em phải lưu lại tất cả những cái góc quay này để sau khi mà anh em đặt những cái câu Prompt ấy thì nó sẽ hoàn chỉnh hơn.
+
+8
+00:00:52,740 --> 00:00:58,400
+Anh em phải ghi nhớ cho tôi những cái chi tiết như thế này để sau này mình đặt cái câu Prompt thì mình sẽ phải tư duy ra.
+
+9
+00:00:58,540 --> 00:01:03,800
+Cái đoạn này thì mình cần câu Prompt như thế nào, cái đoạn này thì anh em cần cái góc quay như thế nào cho phù hợp.
+
+10
+00:01:03,900 --> 00:01:11,900
+Và tất cả những cái góc quay này vào cuối video này tôi sẽ hướng dẫn anh chị em tạo ra được những cái hình ảnh về góc quay để anh chị đặt câu Prompt
+
+11
+00:01:12,000 --> 00:01:20,700
+để cho nó đúng vào cái video AI của anh chị sáng tạo nội dung ra. Đầu tiên là góc ngang toàn thân, anh chị có thể nhìn thấy đây là cái hình đầu tiên.
+
+12
+00:01:20,700 --> 00:01:27,000
+tiếp theo là góc cận mặt và góc trung cảnh rồi đến góc toàn cảnh là cái cảnh thứ tư
+
+13
+00:01:27,000 --> 00:01:40,460
+tiếp đến là góc thấp toàn thân ý là góc nó sẽ ở dưới camera hướng thẳng trên mặt của anh em góc thấp cận mặt
+
+14
+00:01:40,700 --> 00:01:42,000
+góc thấp trung cảnh này
+
+15
+00:01:42,000 --> 00:01:44,000
+góc thấp toàn cảnh này
+
+16
+00:01:44,000 --> 00:01:45,300
+góc qua vai nhé
+
+17
+00:01:45,300 --> 00:01:47,500
+góc này là góc anh chị em hãy xem
+
+18
+00:01:47,500 --> 00:01:49,100
+những bộ phim góc qua vai
+
+19
+00:01:49,100 --> 00:01:50,340
+nhân vật khác
+
+20
+00:01:50,340 --> 00:01:52,320
+góc nhìn từ trên cao này
+
+21
+00:01:52,320 --> 00:01:53,380
+góc rộng này
+
+22
+00:01:53,380 --> 00:01:55,267
+góc 3/4 này
+
+23
+00:01:55,267 --> 00:02:02,767
+Góc nghiêng và góc nghiêng khung. Đó là những góc cơ bản nhất của anh em để làm được những video AI.
+
+24
+00:02:02,967 --> 00:02:05,927
+Thì ở đây tôi sẽ test cho anh chị em một vài chi tiết.
+
+25
+00:02:06,307 --> 00:02:15,187
+Ở đây thì hôm nay tôi sẽ hướng dẫn anh chị em để khi mà anh chị em tạo ảnh hoặc sau đó anh em tạo video thì anh em phải bắt buộc có hình ảnh trước.
+
+26
+00:02:16,000 --> 00:02:21,267
+Thì ở đây tôi đã chuẩn bị sẵn một hình ảnh Donald Trump để anh em có thể nhìn thấy trên cái màn hình đây.
+
+27
+00:02:22,027 --> 00:02:24,387
+Tôi đã chuẩn bị sẵn một hình ảnh Donald Trump như thế này.
+
+28
+00:02:24,387 --> 00:02:35,387
+Và bây giờ thì tôi sẽ sử dụng cái phần image trong Grok này để tạo ra một hình ảnh khác và sử dụng một cái góc quay. Ở đây tôi sẽ sử dụng một cái góc là góc trung cảnh.
+
+29
+00:02:35,387 --> 00:02:45,000
+Thì đối với cái con Grok này hoặc cái con Flow ấy thì anh em khi mà anh em tạo ảnh thì anh em có thể sử dụng hai con này. Hiện tại nó đang là ok nhất.
+
+30
+00:02:45,000 --> 00:02:58,507
+Thì tôi sẽ viết một câu Prompt như sau. Hãy tạo cho tôi hình ảnh nhân vật này đang đứng tại một khu quân sự góc nhìn trung cảnh.
+
+31
+00:03:00,500 --> 00:03:02,500
+Hình ảnh sắc nét
+
+32
+00:03:02,500 --> 00:03:09,020
+Thì tôi sẽ sử dụng hình ảnh là 16:9 và tôi sẽ tạo một cái hình ảnh.
+
+33
+00:03:09,560 --> 00:03:16,860
+Từ cái hình ảnh chính này thì anh em sẽ có một cái hình ảnh về Donald Trump khác và góc trung cảnh.
+
+34
+00:03:17,320 --> 00:03:18,900
+Đấy, anh chị em có thể nhìn thấy.
+
+35
+00:03:19,460 --> 00:03:21,260
+Đây là cái góc bằng góc trung cảnh nhé.
+
+36
+00:03:21,800 --> 00:03:23,760
+Mà tôi đã viết ở trong cái câu Prompt này.
+
+37
+00:03:23,960 --> 00:03:24,980
+Anh chị em hãy nhìn thấy đây.
+
+38
+00:03:25,560 --> 00:03:26,720
+Hãy tạo cho tôi một hình ảnh.
+
+39
+00:03:26,720 --> 00:03:31,180
+Nhân vật này đang đứng tại một khu quân sự góc nhìn trung cảnh.
+
+40
+00:03:32,680 --> 00:03:38,780
+Hình ảnh sắc nét, thì anh em có thể thấy là nó đã tạo ra cho anh chị em một cái hình ảnh như thế này rồi.
+
+41
+00:03:39,160 --> 00:03:42,880
+Thì dùng hình ảnh này thì chúng ta sẽ đặt ra, đặt ra cái gì ạ?
+
+42
+00:03:43,320 --> 00:03:46,100
+Đặt ra được những cái câu Prompt để tạo ra những cái video.
+
+43
+00:03:46,460 --> 00:03:48,160
+Thì bắt buộc phải có những cái góc như thế này.
+
+44
+00:03:48,460 --> 00:03:51,680
+Ở đây khi anh em đã tạo ra một cái hình ảnh như thế này rồi,
+
+45
+00:03:51,680 --> 00:03:53,980
+thì bây giờ chúng ta sẽ test một cái góc quay khác.
+
+46
+00:03:54,180 --> 00:03:55,660
+Tôi sẽ viết một câu lệnh khác đi.
+
+47
+00:03:56,000 --> 00:04:02,960
+Hãy tạo cho tôi một hình ảnh góc nhìn qua vai nhân
+
+48
+00:04:02,960 --> 00:04:10,260
+vật này, bối cảnh khu quân sự, hình ảnh sắc nét.
+
+49
+00:04:12,040 --> 00:04:13,300
+Thì tôi nhấn Enter.
+
+50
+00:04:13,900 --> 00:04:18,620
+Thì bây giờ là dựa trên cái góc nhìn qua vai này, anh chị em hãy nhìn đây.
+
+51
+00:04:18,620 --> 00:04:23,820
+Thì đây, nó sẽ tạo ra cho anh chị em một cái hình ảnh là góc qua vai của nhân vật Donald Trump này.
+
+52
+00:04:24,380 --> 00:04:25,660
+Và khu kia là khu quân sự.
+
+53
+00:04:26,260 --> 00:04:29,380
+Đó là cái tư duy để anh chị em đặt cái câu lệnh.
+
+54
+00:04:30,000 --> 00:04:33,280
+Và cũng tiếp tục như thế, ví dụ như được góc nhìn từ trên cao.
+
+55
+00:04:34,000 --> 00:04:35,620
+Thì tôi sẽ tạo một cái hình ảnh như sau.
+
+56
+00:04:36,900 --> 00:04:38,120
+Hãy tạo cho tôi 1 hình ảnh
+
+57
+00:04:38,120 --> 00:04:40,500
+góc nhìn từ
+
+58
+00:04:48,620 --> 00:04:50,620
+trên cao
+
+59
+00:04:50,620 --> 00:04:54,380
+bối cảnh
+
+60
+00:04:54,380 --> 00:04:54,980
+khu vực
+
+61
+00:04:54,980 --> 00:04:57,240
+khu quân sự
+
+62
+00:04:58,620 --> 00:05:01,398
+hình ảnh sắc nét
+
+63
+00:05:01,398 --> 00:05:12,398
+Đây là cái góc nhìn từ trên cao nha anh chị em nha. Ví dụ như là ở trong cái hình này nếu mà nó to quá như thế này đúng không thì anh chị em sửa luôn ở trong cái hình ảnh này đi.
+
+64
+00:05:12,398 --> 00:05:24,398
+Đấy tạo lại hình ảnh cho tôi nhân vật bé hơn còn là giữ nguyên chi tiết.
+
+65
+00:05:24,398 --> 00:05:30,998
+Thì nếu mà cái hình ảnh nhân vật to quá thì chúng ta sẽ điều hướng cái câu Prompt của chúng ta để cho nhân vật bé đi.
+
+66
+00:05:31,398 --> 00:05:37,358
+Đấy là những cái cách mà tư duy mà anh chị em đặt ra những cái câu Prompt để tạo ra những cái góc quay nó khác nhau.
+
+67
+00:05:38,000 --> 00:05:49,618
+Đây là những cái bài tốt nhất để cho anh chị em nhớ là bất kỳ khi làm video AI anh em phải nhớ là phải có góc quay trong cái gì ạ?
+
+68
+00:05:51,458 --> 00:05:55,998
+Trong yếu tố tạo ra Prompt để tạo hình ảnh hoặc Prompt để tạo ra video.
+
+69
+00:05:56,498 --> 00:06:00,078
+Phải tạo hình ảnh trước rồi chúng ta sẽ đến cái tạo video sau.
+
+70
+00:06:00,078 --> 00:06:01,538
+Ok, xin chào mọi người.

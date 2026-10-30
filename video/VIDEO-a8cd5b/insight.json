@@ -1,0 +1,151 @@
+{
+  "sku": "VIDEO-a8cd5b",
+  "title": "Chia Sẻ Cách Lên Top 1 Chủ Đề Của Top 1 GODA",
+  "actual_topic": "Chia sẻ thực chiến của Tuấn (Top 1 doanh thu tại BMG/GODA đạt 100.000 USD/tháng, chủ kênh Ngược Dòng Lịch Sử đạt 1 triệu view/48h sau 1 tuần và Hố Xanh Kiến Thức 719K subs đạt gần 30.000 USD/tháng) về phương pháp đưa kênh lên Top 1 chủ đề qua nguồn View tính năng (Browse Features = Chủ đề + CTR + Thời lượng xem), công thức CTR = A + B = C và kịch bản biểu đồ hình sin.",
+  "category_group": "he_thong",
+  "niche_primary": "Chiến Lược Lên Top 1 Chủ Đề & Tối Ưu View Tính Năng (Browse Features)",
+  "niche_id": "top1_chu_de_goda",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "tools_mentioned": [
+    "YouTube",
+    "1of10",
+    "vidIQ",
+    "YouTube Studio",
+    "Cốc Cốc"
+  ],
+  "channels_referenced": [
+    {
+      "name": "Hố Xanh Kiến Thức",
+      "handle": "@HoXanhKienThuc",
+      "url": "https://www.youtube.com/@HoXanhKienThuc",
+      "niche": "Phân tích tin tức địa chính trị & kinh tế nóng hổi (719K subs, từng đạt doanh thu Top 1 BMG gần 30.000 USD/tháng tại thị trường Việt Nam với RPM ~0.7 USD)",
+      "status": "VERIFIED_HTTP_200"
+    },
+    {
+      "name": "Ngược Dòng Lịch Sử",
+      "handle": "@NguocDongLichSu",
+      "url": "https://www.youtube.com/@NguocDongLichSu",
+      "niche": "Lịch sử & Quân sự (Case study kênh đầu tiên của Tuấn tại BMG đạt 1 triệu view/48h chỉ trong đúng 1 tuần từ khi lập kênh)",
+      "status": "VERIFIED_HTTP_200"
+    },
+    {
+      "name": "Movieclips",
+      "handle": "@MOVIECLIPS",
+      "url": "https://www.youtube.com/@MOVIECLIPS",
+      "niche": "Trích đoạn phim điện ảnh kịch tính (Minh họa trích đoạn 'Goosebumps - Werewolf in the Supermarket' cấu trúc nhịp căng - chùng theo biểu đồ hình sin)",
+      "status": "VERIFIED_HTTP_200"
+    }
+  ],
+  "Analytics": {
+    "verdict": "GREEN",
+    "summary": "Công thức đánh chiếm Top 1 chủ đề bằng nguồn View tính năng (Browse Features = Chủ đề đỏ + CTR đảo ngược tự nhiên + Thời lượng xem hình sin) đã được kiểm chứng thực chiến qua kênh Ngược Dòng Lịch Sử (1M views/tuần), Hố Xanh Kiến Thức (719K subs, ~30.000 USD/tháng) và hệ thống kênh 100.000 USD/tháng của Tuấn tại GODA."
+  },
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu Tuấn - Top 1 doanh thu hệ thống 100.000 USD/tháng tại GODA (xuất phát điểm gia nhập BMG từ 07/07/2019)"
+    },
+    {
+      "time": "01:42",
+      "seconds": 102,
+      "label": "Case study kênh Ngược Dòng Lịch Sử (1 triệu view/48h sau 1 tuần) và Hố Xanh Kiến Thức (719K subs, gần 30.000 USD/tháng)"
+    },
+    {
+      "time": "03:28",
+      "seconds": 208,
+      "label": "Tư duy 1of10 và 3 yếu tố quyết định nguồn View tính năng (Browse Features): Chủ đề (CĐ) + Tỷ lệ click (TLCL) + Thời lượng xem (TIME)"
+    },
+    {
+      "time": "05:10",
+      "seconds": 310,
+      "label": "Yếu tố 1 - Chọn chủ đề: Nhảy vào thị trường đỏ và bắt trend có sẵn nhu cầu lớn (ví dụ: bà Trương Mỹ Lan giấu tiền ở đâu)"
+    },
+    {
+      "time": "06:56",
+      "seconds": 416,
+      "label": "Yếu tố 2 - Công thức View = Lượt tiếp cận (Impressions) x CTR và phân tích video 42 triệu lượt hiển thị thu nhỏ (301.300 giờ xem)"
+    },
+    {
+      "time": "08:35",
+      "seconds": 515,
+      "label": "Công thức đánh cắp ý tưởng (A + B = C) và đảo ngược quy luật tự nhiên trên Thumbnail (người cắn chó / 1 con trâu húc chết 2 con sư tử)"
+    },
+    {
+      "time": "11:05",
+      "seconds": 665,
+      "label": "Yếu tố 3 - Tối ưu thời lượng xem qua phân tích trích đoạn rượt đuổi người sói trong siêu thị (Goosebumps)"
+    },
+    {
+      "time": "15:02",
+      "seconds": 902,
+      "label": "Kịch bản biểu đồ hình sin (căng - chùng) và kỹ thuật kẹp song song 2 trận đánh lịch sử (Trân Châu Cảng) để khóa chân người xem"
+    }
+  ],
+  "key_takeaways": [
+    "Tập trung tối đa vào nguồn View tính năng (Browse Features): Muốn video bứt phá nhanh nhất và mạnh nhất lên Top 1 phải đánh vào nguồn View tính năng (hiển thị ngay trên trang chủ YouTube), được quyết định bởi phương trình 3 trụ cột viết trên bảng: TN = CĐ (Chủ đề) + TLCL (Tỷ lệ click) + TIME (Thời lượng xem).",
+    "Chiến lược nhảy thẳng vào Thị trường đỏ & Bắt trend có sẵn nhu cầu: Không ngại thị trường đỏ nhiều đối thủ vì đó là nơi YouTube sẵn sàng phân phối lớn (ví dụ chủ đề bà Trương Mỹ Lan kiếm tiền như thế nào và giấu tiền ở đâu).",
+    "Công thức View = Lượt tiếp cận (Impressions) x Tỷ lệ click (CTR): Muốn tăng view phải tăng lượt hiển thị thu nhỏ (qua SEO và chọn chủ đề đỏ) kết hợp đẩy cao CTR — minh chứng trực tiếp trên YouTube Studio với video về Phạm Nhật Vượng đạt 42 triệu lượt hiển thị thu nhỏ, 301.300 giờ xem và thời lượng xem trung bình 5:56 (39,7%).",
+    "Công thức Thumbnail A + B = C & Đảo ngược quy luật tự nhiên: Ứng dụng cuốn sách 'Nghệ thuật đánh cắp ý tưởng' (ghép ý tưởng A + B thành C) và nguyên lý báo chí 'người cắn chó' trong từ khóa Animal Fights (làm thumbnail 1 con trâu húc chết 2 con sư tử thay vì sư tử săn trâu) để giải quyết 50% chiến thắng.",
+    "Giữ chân khán giả bằng Biểu đồ hình sin (Sine Wave): Qua trích đoạn người sói rượt đuổi trong siêu thị (Goosebumps), kịch bản giữ chân tốt nhất không được căng thẳng một mạch mà phải mở đầu bằng đỉnh Parabol bùng nổ (sói nhỏ dãi), hạ nhịp xuống điểm trũng cho khán giả thở phào (ném đùi gà thoát hiểm) rồi lập tức đẩy lên đỉnh cao trào mới.",
+    "Kỹ thuật kẹp song song 2 trận đánh lịch sử & Tư duy Ha-Ri: Khi làm lịch sử, kẹp song song trận đánh A với bối cảnh trận đánh B (khi trận A sắp lên đỉnh thì cắt sang giới thiệu trận B như Trân Châu Cảng, khi trận B lên đỉnh lại cắt về trận A); đồng thời phải hiểu bản chất tại sao phân đoạn đó tạo cao trào để sáng tạo vượt qua đối thủ chứ không sao chép máy móc."
+  ],
+  "edit_sop": {
+    "primary": "SOP Đưa Kênh Lên Top 1 Chủ Đề Bằng View Tính Năng & Kịch Bản Hình Sin",
+    "additional": [
+      "Chọn chủ đề trong thị trường đỏ hoặc trend đang có sẵn nhu cầu tìm hiểu lớn của khán giả để tối đa hóa lượt hiển thị thu nhỏ (Impressions)",
+      "Thiết kế Thumbnail theo công thức Ý tưởng A + Ý tưởng B = Ý tưởng C và đảo ngược quy luật mạnh - yếu tự nhiên để bứt phá CTR",
+      "Cấu trúc kịch bản theo biểu đồ hình sin: Mở đầu bằng điểm bùng nổ (đỉnh Parabol), hạ nhịp cho khán giả relax rồi đẩy tiếp lên đỉnh cao trào mới",
+      "Áp dụng kỹ thuật kẹp song song 2 sự kiện/trận đánh lịch sử (đang đến đỉnh trận A thì chuyển sang bối cảnh trận B rồi quay lại A) để giữ chân khán giả đi hết video",
+      "Phân tích bản chất tại sao một phân đoạn đạt cao trào để sáng tạo nâng cấp ở giai đoạn Ha - Ri thay vì chỉ sao chép máy móc như giai đoạn Shu"
+    ]
+  },
+  "sop_steps": [
+    "Chọn chủ đề trong thị trường đỏ hoặc trend đang có sẵn nhu cầu tìm hiểu lớn của khán giả để tối đa hóa lượt hiển thị thu nhỏ (Impressions)",
+    "Thiết kế Thumbnail theo công thức Ý tưởng A + Ý tưởng B = Ý tưởng C và đảo ngược quy luật mạnh - yếu tự nhiên để bứt phá CTR",
+    "Cấu trúc kịch bản theo biểu đồ hình sin: Mở đầu bằng điểm bùng nổ (đỉnh Parabol), hạ nhịp cho khán giả relax rồi đẩy tiếp lên đỉnh cao trào mới",
+    "Áp dụng kỹ thuật kẹp song song 2 sự kiện/trận đánh lịch sử (đang đến đỉnh trận A thì chuyển sang bối cảnh trận B rồi quay lại A) để giữ chân khán giả đi hết video",
+    "Phân tích bản chất tại sao một phân đoạn đạt cao trào để sáng tạo nâng cấp ở giai đoạn Ha - Ri thay vì chỉ sao chép máy móc như giai đoạn Shu"
+  ],
+  "avoid_flags": [
+    "Lao vào thị trường xanh quá ngách không có nhu cầu khán giả khiến YouTube không phân phối lượt hiển thị thu nhỏ (Impressions)",
+    "Thiết kế Thumbnail thuận theo quy luật tự nhiên nhàm chán (như sư tử ăn thịt trâu) làm tụt tỷ lệ click (CTR)",
+    "Giữ nhịp kịch bản căng thẳng liên tục không có điểm chùng thư giãn (relax) khiến khán giả mệt mỏi và thoát video sớm",
+    "Chỉ cắt ghép máy móc đoạn cao trào của đối thủ như một cỗ máy mà không hiểu nguyên lý tâm lý đằng sau cao trào đó"
+  ],
+  "course_docs": [
+    {
+      "title": "Phương Pháp Sáng Tạo Content & Kịch Bản Giữ Chân Khán Giả",
+      "file": "assets/docs-huan/Pp_sang_tao_content.pdf",
+      "readFile": "assets/docs-huan/Pp_sang_tao_content.pdf.md",
+      "link": "https://drive.google.com/file/d/1giOf8XwVIDRVaAgmLp3XdoicAjMso95p/view"
+    },
+    {
+      "title": "Tài Liệu Chuẩn Hóa SEO YouTube 100 Điểm",
+      "file": "assets/docs-huan/SEO_100_DIEM.pdf",
+      "readFile": "assets/docs-huan/SEO_100_DIEM.pdf.md",
+      "link": "https://drive.google.com/file/d/15v_9JyWCIUskVsdegZ1jePL-PbnyAo8X/view"
+    },
+    {
+      "title": "Kế Hoạch Triển Khai Kênh GODA 2025",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/2._GODA_-_Ke_hoach_tren_khai_kenh.xlsx",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/2._GODA_-_Ke_hoach_tren_khai_kenh.xlsx.md",
+      "link": "https://drive.google.com/file/d/1boD7G9XnyWXJhHkKen29DT1QqFRWAgK_/view"
+    },
+    {
+      "title": "Bản Đồ Nội Dung YouTube Content Map",
+      "file": "assets/docs-huan/Youtube_content_map_2023.pdf",
+      "readFile": "assets/docs-huan/Youtube_content_map_2023.pdf.md",
+      "link": "https://drive.google.com/file/d/1hbD_O8AFziSLccCSx-Jhxj80xjgOJCyt/view"
+    }
+  ],
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "channels_mentioned": [
+    "@HoXanhKienThuc",
+    "@NguocDongLichSu",
+    "@MOVIECLIPS"
+  ],
+  "source_transcript": "video/VIDEO-a8cd5b/transcript.txt"
+}

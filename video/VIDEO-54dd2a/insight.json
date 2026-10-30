@@ -1,0 +1,181 @@
+{
+  "sku": "VIDEO-54dd2a",
+  "title": "Quy Trình Sản Xuất Video Xếp Hạng Shorts",
+  "duration_sec": 1219.55,
+  "Step_1_Niche": "YouTube Shorts Ranking & Viral Compilation (Video ngắn Xếp hạng Top 1–7 săn view ngoại từ kho nguyên liệu Douyin/Xiaohongshu)",
+  "Step_2_Theme": "Khai thác kho video ngắn khổng lồ từ thị trường tỷ dân Trung Quốc (Douyin, Xiaohongshu) bằng từ khóa Google Dịch, tải 7 video đồng nhất chủ đề (ẩm thực đường phố kỳ lạ ở Ấn Độ, động vật hài hước, thể thao, ảo thuật) và biên tập theo bố cục Ranking 1–7 đảo thứ tự giữ chân người xem trên CapCut",
+  "Step_3_Tools": [
+    "Douyin",
+    "Xiaohongshu",
+    "Google Dịch (Google Translate)",
+    "Cốc Cốc",
+    "Snaptik Douyin (unduhtiktok.com)",
+    "MyInstants",
+    "CapCut"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "TikTok",
+    "Douyin",
+    "Facebook",
+    "Xiaohongshu",
+    "Google Dịch",
+    "Cốc Cốc",
+    "Snaptik Douyin",
+    "MyInstants",
+    "CapCut"
+  ],
+  "Step_4_Prompt": {
+    "description": "Quy trình chuyển ngữ từ khóa tìm nguồn trên Google Dịch (Tiếng Việt -> Tiếng Trung Phồn thể) để săn 7 video đồng chủ đề trên Douyin, kết hợp bảng dịch tên 7 hạng mục sang Tiếng Anh để dựng bảng xếp hạng (Ranking Overlay) trên CapCut.",
+    "template": "1. từ khóa tìm nguồn Douyin (Google Dịch Việt -> Trung Phồn thể): 'đồ ăn Ấn Độ' / 'đồ ăn bẩn ở Ấn Độ' -> '印度菜' / '脏兮兮的印度菜' (kết hợp bấm vào các thẻ tag #印度街头小吃, #干净又卫生, #搞笑动物 để lấy chuỗi 7 video liên quan).\n2. Tiêu đề chính trên CapCut (Font Anton, phối nhiều màu): 'Ranking of the\\ndirtiest foods in India'.\n3. Ma trận đảo thứ tự 7 hạng mục giữ chân khán giả (giấu Top 1 ở cuối):\n- Clip 1 -> gắn vào #6: 'meatballs made with feet'\n- Clip 2 -> gắn vào #7: 'steamed buns kneaded with the belly'\n- Clip 3 -> gắn vào #3: 'fried cakes made with feet'\n- Clip 4 -> gắn vào #5: 'bread with soup'\n- Clip 5 -> gắn vào #2: 'divine soup'\n- Clip 6 -> gắn vào #1 (Top 1): 'Pasta kneaded with feet'\n- Clip 7 -> gắn vào #4: 'daily breakfast'"
+  },
+  "Step_5_Voice": "Không sử dụng giọng đọc thuyết minh mới; bắt buộc bôi đen toàn bộ 7 video trên CapCut -> vào tab Âm thanh -> chọn 'Tách giọng nói' (chỉ giữ lại lời nói/tiếng động hiện trường tự nhiên và xóa sạch 100% nhạc nền gốc để tránh bản quyền), có thể chèn thêm hiệu ứng âm thanh từ MyInstants và ghép nhạc trend ngoại trực tiếp khi đăng bằng điện thoại.",
+  "Step_6_Edit_Checklist": [
+    "Dùng Google Dịch dịch từ khóa chủ đề (ví dụ: đồ ăn bẩn ở Ấn Độ, động vật hài hước) từ tiếng Việt sang tiếng Trung Phồn thể, dán vào ô tìm kiếm của app Douyin và bấm mở rộng qua các thẻ hashtag (#) để gom đủ đúng 7 video có cùng một chủ đề xuyên suốt.",
+    "Sao chép liên kết chia sẻ của từng video trên Douyin, dán vào công cụ tải không logo Snaptik Douyin (unduhtiktok.com/vi/douyin/) trên trình duyệt Cốc Cốc để tải về máy tính 7 file MP4 chất lượng HD.",
+    "Đưa 7 video vào CapCut PC, thiết lập khung hình dọc Shorts (9:16), cắt gọt những video quá dài (40–44 giây) chỉ lấy phân đoạn đắt giá nhất, sau đó bôi đen cả 7 clip -> chọn Âm thanh -> 'Tách giọng nói' (Chỉ giữ lời) để loại bỏ hoàn toàn nhạc nền gốc.",
+    "Tạo lớp Văn bản tiêu đề trên đỉnh màn hình ('Ranking of the / dirtiest foods in India') với phông chữ Anton, bôi đen từng chữ để đổi sang các màu sắc tương phản (vàng, xanh dương, cam, xanh lá, trắng, đỏ), rồi nhân bản (Ctrl+C, Ctrl+V) để tạo cột số thứ tự dọc từ 1. đến 7. bên sườn trái.",
+    "Điền tên tiếng Anh của từng món ăn vào đúng thời điểm từng clip xuất hiện theo thứ tự đảo lộn (ví dụ: 6 -> 7 -> 3 -> 5 -> 2 -> 1 -> 4, giấu vị trí số 1 chất lượng nhất ở gần cuối video để giữ chân người xem), hạ Độ mờ (Opacity) của 7 dòng chữ xuống 50–56% và xuất file 1080p 60fps để đăng bằng điện thoại kèm nhạc trend ngoại."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 3 bước sản xuất video Bảng Xếp Hạng Shorts (Ranking 9:16) bằng Douyin & CapCut PC",
+    "additional": [
+      "Lên danh sách chủ đề xếp hạng và dùng AI tạo bộ hình ảnh/clip minh họa cho từng thứ hạng.",
+      "Đưa nguyên liệu vào CapCut, dựng khung chữ số thứ hạng, ghép nhạc nền và hiệu ứng chuyển cảnh giữa các mục.",
+      "Kiểm tra lại bố cục thẩm mỹ, căn chỉnh nhịp xuất hiện từ đầu đến cuối và xuất video 60fps."
+    ]
+  },
+  "Step_7_Monetization": [
+    "Dòng video Ranking Shorts view ngoại sở hữu khả năng bùng nổ lượt xem cực lớn (kênh mẫu @Oogway_Ranks có video đạt 373 triệu views, 214 triệu views, 206 triệu views; kênh @Ladrank đạt 62 triệu views chỉ với 87 video).",
+    "Ngay cả khi tính với mức RPM thấp nhất (0.02 USD / 1.000 views), một video Shorts đạt 300 triệu views chủ đích đã mang về khoảng 6.000 USD; khi đánh sang tệp khán giả ngoại (Mỹ, Châu Âu) bằng tiêu đề và hạng mục tiếng Anh, doanh thu mỗi video ngắn bùng nổ có thể đạt từ 2.000 – 6.000+ USD và giúp kênh bật kiếm tiền cực nhanh."
+  ],
+  "avoid_flags": [
+    "Không pha trộn các cảnh khác chủ đề vào cùng một video xếp hạng (ví dụ: cảnh 1 là đồ ăn, cảnh 2 là con vật, cảnh 3 là gia đình) vì sự rời rạc nội dung sẽ làm sập tỷ lệ giữ chân và khiến video bị flop.",
+    "Không giữ nguyên nhạc nền gốc có sẵn trong các video tải từ Douyin/TikTok/Facebook; bắt buộc phải dùng tính năng 'Tách giọng nói' trên CapCut để xóa nhạc nền gốc, tránh bị YouTube đánh gậy bản quyền hoặc tắt kiếm tiền.",
+    "Không để toàn bộ tiêu đề và cột số thứ tự 1–7 chỉ có một màu trắng đơn điệu hoặc để độ mờ chữ ở mức 100% đặc kín vì vừa kém thu hút thị giác vừa che mất chủ thể hành động trong video.",
+    "Không xếp hạng mục Số 1 (Top 1) xuất hiện ngay ở giây đầu tiên của video; nếu khán giả đã biết kết quả Top 1 ngay từ đầu, họ sẽ vuốt bỏ qua ngay lập tức mà không xem hết các hạng mục còn lại."
+  ],
+  "competitor_channels": [
+    {
+      "name": "Oogway Ranks",
+      "url": "https://www.youtube.com/@Oogway_Ranks",
+      "handle": "@Oogway_Ranks",
+      "subscribers": "1.13M+ subscribers",
+      "notes": "Kênh mẫu số 1 giảng viên mở phân tích trực tiếp đầu bài giảng (00:18 - 01:05): chỉ với 79 video Shorts đã đạt 1,13 triệu người đăng ký; các video phổ biến nhất đạt 373 triệu views, 214 triệu views, 206 triệu views, 137 triệu views."
+    },
+    {
+      "name": "LADRANKS",
+      "url": "https://www.youtube.com/@Ladrank",
+      "handle": "@Ladrank",
+      "subscribers": "130K+ subscribers",
+      "notes": "Kênh mẫu số 2 trong danh sách tài liệu của giảng viên (01:05 - 01:15): sở hữu 87 video và 130.000 người đăng ký, video cao nhất đạt 62 triệu lượt xem."
+    },
+    {
+      "name": "Phuc Anh Hoang",
+      "url": "https://www.youtube.com/@PhucAnhHoang-i3e",
+      "handle": "@PhucAnhHoang-i3e",
+      "subscribers": "Verified Competitor",
+      "notes": "Kênh mẫu số 3 nằm trong tài liệu Google Docs 'Online shorts' của giảng viên (01:28)."
+    },
+    {
+      "name": "Basile Khaber",
+      "url": "https://www.youtube.com/@BasileKhaber",
+      "handle": "@BasileKhaber",
+      "subscribers": "Verified Competitor",
+      "notes": "Kênh mẫu số 4 nằm trong tài liệu Google Docs 'Online shorts' của giảng viên (01:28) chuyên làm dạng video xếp hạng khoảnh khắc viral."
+    },
+    {
+      "name": "Omerfaruk Kocatas",
+      "url": "https://www.youtube.com/@OmerfarukKocatas-j4c",
+      "handle": "@OmerfarukKocatas-j4c",
+      "subscribers": "Verified Competitor",
+      "notes": "Kênh mẫu số 5 nằm trong tài liệu Google Docs 'Online shorts' của giảng viên (01:28)."
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân tích kênh mẫu @Oogway_Ranks (video đạt 373 triệu views), @Ladrank (62 triệu views) & Bài toán doanh thu Shorts ngoại"
+    },
+    {
+      "time": "01:24",
+      "seconds": 84,
+      "label": "Xem tài liệu Google Docs 'Online shorts' & Tư duy khai thác kho video miễn phí từ thị trường tỷ dân Douyin, Xiaohongshu"
+    },
+    {
+      "time": "02:54",
+      "seconds": 174,
+      "label": "Sử dụng Google Dịch chuyển từ khóa sang tiếng Trung Phồn thể & Tìm kiếm 7 video cùng chủ đề trên ứng dụng Douyin"
+    },
+    {
+      "time": "04:27",
+      "seconds": 267,
+      "label": "Sao chép link Douyin, tải 7 video không dính logo qua Snaptik Douyin (unduhtiktok.com) & Mẹo đào sâu bằng thẻ Hashtag (#)"
+    },
+    {
+      "time": "06:20",
+      "seconds": 380,
+      "label": "Đưa 7 video vào CapCut khung dọc, cắt chọn phân cảnh đắt giá & Dùng 'Tách giọng nói' để xóa sạch nhạc nền bản quyền"
+    },
+    {
+      "time": "09:37",
+      "seconds": 577,
+      "label": "Tạo tiêu đề tiếng Anh ('Ranking of the dirtiest foods in India') với phông Anton & Kỹ thuật bôi đen đổi màu từng chữ"
+    },
+    {
+      "time": "12:49",
+      "seconds": 769,
+      "label": "Nhân bản lớp chữ để dựng cột số thứ tự 1–7 đa sắc màu dọc bên trái khung hình"
+    },
+    {
+      "time": "14:52",
+      "seconds": 892,
+      "label": "Chiến thuật đảo thứ tự xếp hạng giữ chân người xem (giấu Top 1 ở cuối) & Ghép tên tiếng Anh cho 7 món ăn Ấn Độ"
+    },
+    {
+      "time": "18:15",
+      "seconds": 1095,
+      "label": "Cắt bằng các lớp chữ, hạ Độ mờ (Opacity 50–56%), xuất file 1080p 60fps & Quy tắc đăng bằng điện thoại kèm nhạc trend"
+    }
+  ],
+  "course_docs": [
+    {
+      "name": "Tài Liệu Gốc & Bộ từ khóa Douyin — Bài 18: Video Xếp Hạng Shorts (DGMD-M06)",
+      "path": "assets/docs-dgmd/VIDEO-54dd2a/master_prompt.md",
+      "type": "markdown",
+      "description": "Nguyên văn tài liệu Google Docs 'Online shorts' trên màn hình giảng viên, danh sách kênh mẫu, từ khóa tiếng Trung tìm nguồn Douyin và ma trận đảo thứ tự xếp hạng 1–7 trên CapCut.",
+      "file": "assets/docs-dgmd/VIDEO-54dd2a/master_prompt.md"
+    }
+  ],
+  "verification_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "actual_topic": "Quy trình sản xuất video Bảng Xếp Hạng Shorts (Tier List / Ranking) thu hút view ngoại",
+  "key_takeaways": [
+    "Ngách video bảng xếp hạng (Ranking / Top List) có ưu điểm giữ chân người xem từ đầu đến cuối vì khán giả luôn tò mò vị trí số 1.",
+    "Dùng AI để tổng hợp danh sách xếp hạng, thông số so sánh và tạo các khung hình minh họa đồng bộ theo tỷ lệ khung hình chuẩn.",
+    "Khi dựng trên CapCut, sắp xếp thứ tự đếm ngược rõ ràng, kết hợp hiệu ứng chuyển cảnh mượt mà và xuất file ở tốc độ khung hình 60fps.",
+    "Có thể mở rộng mô hình kênh xếp hạng ra thị trường quốc tế để đạt doanh thu khoảng 2.000 – 3.000 USD/tháng khi kênh lên đề xuất."
+  ],
+  "channels_mentioned": [
+    "@Oogway_Ranks",
+    "@Ladrank",
+    "@PhucAnhHoang-i3e",
+    "@BasileKhaber",
+    "@OmerfarukKocatas-j4c"
+  ],
+  "category_group": "chuyen_gia",
+  "niche_primary": "Bảng Xếp Hạng & Top Trend",
+  "niche_id": "dgmd_workflow",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "sop_steps": [
+    "Khi tìm nguồn trên Douyin mà kết quả tìm kiếm trực tiếp bị ít, hãy bấm thẳng vào các thẻ hashtag (#) nằm ở dòng mô tả của một video chuẩn chủ đề (như #干净又卫生 hoặc #印度街头小吃) để thuật toán Douyin mở ra hàng loạt video cùng ngách.",
+    "Thay vì bấm tách âm thanh từng clip lẻ tẻ, hãy kéo đủ 7 phân đoạn xuống timeline CapCut rồi quét chọn tất cả 7 clip cùng lúc và nhấn 'Tách giọng nói' một lần để tiết kiệm tối đa thời gian biên tập.",
+    "Sử dụng tổ hợp phím Shift + Enter để ngắt dòng tiêu đề tiếng Anh làm đôi cho cân đối khung dọc 9:16, sau đó dùng chuột bôi đen riêng từng từ (như chữ 'Ranking', chữ 'India') trong ô cơ bản để phối 5–6 màu khác nhau trên cùng một câu.",
+    "Tuyệt đối không xếp thứ tự xuất hiện xuôi từ 1 đến 7 hoặc đưa video hay nhất (Top 1) lên đầu tiên; hãy gán clip đầu tiên vào vị trí số 6 hoặc số 7 và để dành vị trí số 1 cho clip thứ 6 hoặc thứ 7 nhằm đẩy tỷ lệ xem hết video (Retention Rate) lên mức tối đa.",
+    "Trước khi xuất video (1080p, 60fps), bắt buộc bôi đen cả 7 lớp văn bản tên hạng mục và kéo thanh Độ mờ (Opacity) trong mục Cơ bản xuống mức 50–56% để chữ hiển thị bán trong suốt, không che khuất nội dung hình ảnh ở giữa màn hình."
+  ],
+  "source_transcript": "video/VIDEO-54dd2a/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED"
+}

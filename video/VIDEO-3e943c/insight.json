@@ -1,0 +1,75 @@
+{
+  "sku": "VIDEO-3e943c",
+  "title": "Nên dùng bản web hay app? và giải thích nên dùng gói nào của Claude AI",
+  "actual_topic": "Phân tích hạ tầng Claude AI (Web vs Desktop App) & Chiến lược sử dụng gói Claude Pro $20 tối ưu cho viết kịch bản YouTube dài",
+  "category_group": "ky_thuat",
+  "niche_primary": "Kỹ Thuật AI & Hạ Tầng Công Cụ",
+  "niche_id": "ai-infrastructure",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "key_takeaways": [
+    "Tác giả giới thiệu dùng Claude trên web: truy cập trang web của Claude, đăng nhập bằng tài khoản Google, chấp nhận điều khoản rồi bấm dùng miễn phí; có hai phiên bản là web và app.",
+    "Tác giả khuyên nên tải app về máy (file .exe, máy Mac cũng tải được) vì dùng app có nhiều tính năng hơn bản web, còn bản web không đầy đủ tính năng nhưng có chỗ để up file skill.",
+    "Tác giả đang dùng gói 100 đô một tháng vì làm rất nhiều thứ; người làm ít hoặc tương đối thì nên dùng gói 20 đô, giống gói của ChatGPT.",
+    "Dùng càng nhiều thì càng đốt token; chạm ngưỡng thì bị khóa khoảng 2 giờ rồi mở lại để làm tiếp.",
+    "Tác giả sẽ ra thêm video hướng dẫn dùng Claude cho mảng YouTube, khuyên xem video đăng hôm trước trên YouTube, và ai muốn học sâu hơn có thể tìm video hướng dẫn miễn phí của nhiều người trên YouTube."
+  ],
+  "edit_sop": {
+    "primary": "Giới thiệu dùng Claude bản web và app, cách chọn gói",
+    "additional": [
+      "Truy cập web claude.ai, đăng nhập bằng tài khoản Google, chấp nhận điều khoản rồi bấm dùng miễn phí",
+      "Nên tải app về máy (file .exe, Mac cũng tải được) vì dùng app có nhiều tính năng hơn bản web",
+      "Trong giao diện có chỗ để upload file skill",
+      "Làm ít thì nên dùng gói 20 đô như ChatGPT; tác giả làm rất nhiều nên dùng gói 100 đô một tháng",
+      "Dùng nhiều đạt ngưỡng thì bị khóa khoảng 2 giờ rồi mở ra làm tiếp"
+    ]
+  },
+  "avoid_flags": [
+    "Tránh chỉ dùng phiên bản trên trình duyệt web khi làm việc chuyên sâu vì bản web không đầy đủ tính năng như bản cài đặt trên máy tính",
+    "Nếu nhu cầu sử dụng ít thì không cần đăng ký gói cước đắt tiền nhất mà chỉ nên dùng gói cơ bản để tránh lãng phí chi phí hàng tháng"
+  ],
+  "tools_mentioned": [
+    "Claude"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu giao diện web và app của Claude AI"
+    },
+    {
+      "time": "01:18",
+      "seconds": 78,
+      "label": "Hướng dẫn đăng ký tài khoản và so sánh bản miễn phí vs bản trả phí"
+    },
+    {
+      "time": "02:29",
+      "seconds": 149,
+      "label": "Lý do nên chọn gói Claude Pro $20/tháng để làm kịch bản dài"
+    },
+    {
+      "time": "03:19",
+      "seconds": 199,
+      "label": "Cơ chế giới hạn token, hiện tượng bị khóa tạm thời 2 giờ và cách khắc phục"
+    },
+    {
+      "time": "04:10",
+      "seconds": 250,
+      "label": "Định hướng xây dựng Prompt Master và đóng gói Skill tự động"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-3e943c/transcript.txt",
+  "sop_steps": [
+    "Truy cập web claude.ai, đăng nhập bằng tài khoản Google, chấp nhận điều khoản rồi bấm dùng miễn phí",
+    "Nên tải app về máy (file .exe, Mac cũng tải được) vì dùng app có nhiều tính năng hơn bản web",
+    "Trong giao diện có chỗ để upload file skill",
+    "Làm ít thì nên dùng gói 20 đô như ChatGPT; tác giả làm rất nhiều nên dùng gói 100 đô một tháng",
+    "Dùng nhiều đạt ngưỡng thì bị khóa khoảng 2 giờ rồi mở ra làm tiếp"
+  ]
+}

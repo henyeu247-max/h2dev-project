@@ -1,0 +1,90 @@
+{
+  "sku": "VIDEO-b380a1",
+  "title": "Share Key (ngách cực nhỏ) view Việt mới và hướng dẫn tự tạo prompt lấy kịch bản theo chủ yếu bất kỳ - UPDATE 8/8/2025",
+  "actual_topic": "Khai phá Micro-Niche view Việt Nam mới tinh & Kỹ thuật Clone giọng MC Lại Văn Sâm làm video triết lý đời sống",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Triết Lý Nhân Sinh View Việt",
+  "niche_id": "vn-life-philosophy",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Tác giả chọn thị trường view Việt để người mới dễ tiếp cận, mở đầu bằng một kênh mới 2 tuần, mới 16 video, sub tăng từ 10.000 lên hơn 25.000 trong vài ngày, ngách nhỏ là clone giọng bác Lại Văn Sâm để nói về tuổi già và sức khỏe người già.",
+    "Kênh này lúc làm chủ đề bí mật thì view thấp, đến khi bám theo chủ đề tuổi già, người trên 60 tuổi thì view lên lại, và với đối tượng này hình ảnh không quan trọng bằng giọng đọc và kịch bản vì nhiều người nghe để ngủ.",
+    "Cách lấy kịch bản là nhờ ChatGPT phân tích kênh để tạo prompt, lấy khoảng 70% kịch bản gốc và 30% tự sáng tạo (có thể chỉnh 80/20), chọn video đối thủ có view cao trong khoảng một tuần gần nhất, lấy kịch bản bằng một trang web hoặc extension rồi dán vào prompt và bấm tiếp tục cho đến khi viết xong.",
+    "Cách clone giọng là tải video của bác Lại Văn Sâm bằng Cốc Cốc hoặc web chuyển đổi, cắt đoạn âm thanh khoảng 60 giây, tách nhạc nền nếu có, rồi import vào web clone giọng giống ElevenLabs, trong khi tác giả dùng tool nên tiết kiệm hơn rất nhiều.",
+    "Phần dựng đơn giản: ghép video tự quay hoặc video miễn phí, thêm sóng nhạc, ảnh bác Lại Văn Sâm đã xóa nền, đặt tiêu đề theo chủ đề và có thể bỏ phụ đề, và tác giả nhấn mạnh phải chọn đúng ngách nhỏ, giữ chân người xem và kiên trì chứ không làm 1-2 ngày."
+  ],
+  "edit_sop": {
+    "primary": "Ngách nhỏ người già: clone giọng MC Lại Văn Sâm, lấy kịch bản đối thủ bằng ChatGPT, dựng video",
+    "additional": [
+      "Dán prompt vào ChatGPT để nó phân tích và tạo form prompt, rồi dán kịch bản video đối thủ vào để nó viết lại từng phần, bấm tiếp tục cho tới khi xong",
+      "Chọn video của kênh đối thủ có view cao và đăng gần đây (ví dụ hơn 200.000 view cách 3 ngày) để lấy kịch bản",
+      "Clone giọng: tải file âm thanh giọng muốn clone, cắt khoảng 60 giây, tách bỏ nhạc nền, rồi import vào MiniMax cùng kịch bản để tạo giọng",
+      "Dựng khung 16:9, ghép ảnh nhân vật đã xóa nền, video sóng nhạc tải từ YouTube và file giọng đã clone, thêm hiệu ứng dễ nhìn",
+      "Phụ đề xuất hay không đều được vì khán giả là người già chủ yếu nghe; đặt tiêu đề bám theo kênh đối thủ"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng chạy theo nhiều ngách, phải kiên trì một ngách đã chọn và làm đúng ngay từ đầu",
+    "Hiệu ứng không nên quá tối hoặc nhức mắt"
+  ],
+  "tools_mentioned": [
+    "Cốc Cốc"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Share thêm một kênh và cách làm mới; Hàn Quốc, Nhật Bản sẽ hướng dẫn ở clip sau"
+    },
+    {
+      "time": "04:10",
+      "seconds": 250,
+      "label": "Dùng ChatGPT tạo prompt để lấy kịch bản theo chủ đề mình muốn"
+    },
+    {
+      "time": "08:25",
+      "seconds": 505,
+      "label": "Cách chọn video lấy kịch bản: vào mục Phổ biến, không phải video nào cũng lấy"
+    },
+    {
+      "time": "12:27",
+      "seconds": 747,
+      "label": "Chạy kịch bản theo phần: xong phần 1 thì bấm tiếp tục"
+    },
+    {
+      "time": "16:42",
+      "seconds": 1002,
+      "label": "Ngách nhỏ chọn giọng kể cuộc đời tuổi 60, khán giả rất thích"
+    },
+    {
+      "time": "20:45",
+      "seconds": 1245,
+      "label": "Bám theo video đang lên; bán content thì ít nhất bằng đối thủ, làm tốt có thể vượt"
+    },
+    {
+      "time": "24:58",
+      "seconds": 1498,
+      "label": "Phần edit: xóa phông nền xanh, chỉnh hiệu ứng cho dễ nhìn, không quá tối"
+    },
+    {
+      "time": "29:01",
+      "seconds": 1741,
+      "label": "Chốt lại quy trình làm và ngách nhỏ; ví dụ sức khỏe người già, chuyện người già"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-b380a1/transcript.txt",
+  "sop_steps": [
+    "Dán prompt vào ChatGPT để nó phân tích và tạo form prompt, rồi dán kịch bản video đối thủ vào để nó viết lại từng phần, bấm tiếp tục cho tới khi xong",
+    "Chọn video của kênh đối thủ có view cao và đăng gần đây (ví dụ hơn 200.000 view cách 3 ngày) để lấy kịch bản",
+    "Clone giọng: tải file âm thanh giọng muốn clone, cắt khoảng 60 giây, tách bỏ nhạc nền, rồi import vào MiniMax cùng kịch bản để tạo giọng",
+    "Dựng khung 16:9, ghép ảnh nhân vật đã xóa nền, video sóng nhạc tải từ YouTube và file giọng đã clone, thêm hiệu ứng dễ nhìn",
+    "Phụ đề xuất hay không đều được vì khán giả là người già chủ yếu nghe; đặt tiêu đề bám theo kênh đối thủ"
+  ]
+}

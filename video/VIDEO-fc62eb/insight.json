@@ -1,0 +1,115 @@
+{
+  "sku": "VIDEO-fc62eb",
+  "title": "Hãy Tạo Ra Master Prompt Trước Khi Sản Xuất Video",
+  "actual_topic": "Tư duy xây dựng Master Prompt trên ChatGPT để tự động sinh hàng loạt Prompt phân cảnh đồng nhất nhân vật trên Google Flow (Nano Banana 2)",
+  "category_group": "chuyen_gia",
+  "niche_primary": "Prompt Engineering & Visual AI",
+  "niche_id": "master_prompt_formula",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "tools_mentioned": [
+    "ChatGPT",
+    "Google Flow",
+    "Nano Banana 2"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Vai trò cốt lõi của Prompt và tư duy Master Prompt khi sản xuất các chuỗi video câu chuyện AI"
+    },
+    {
+      "time": "00:20",
+      "seconds": 20,
+      "label": "Thực hành Prompt đơn lẻ trên Google Flow (Nano Banana 2): Tạo 1 ảnh nhân vật Stickman ôm 1 bao gạo và hạn chế về tốc độ"
+    },
+    {
+      "time": "01:31",
+      "seconds": 91,
+      "label": "Chuyển sang ChatGPT kết hợp ảnh nhân vật gốc để thiết lập câu lệnh yêu cầu tạo Master Prompt"
+    },
+    {
+      "time": "02:27",
+      "seconds": 147,
+      "label": "Công thức viết câu lệnh yêu cầu ChatGPT đúc Master Prompt gồm 30 bối cảnh đời thường, hành động, sự vật, góc quay và cảm xúc"
+    },
+    {
+      "time": "04:03",
+      "seconds": 243,
+      "label": "Phân tích cấu trúc bản Master Prompt hoàn chỉnh do ChatGPT xuất ra với danh sách 30 tình huống hàng ngày"
+    },
+    {
+      "time": "04:32",
+      "seconds": 272,
+      "label": "Mở đoạn chat mới, dán Master Prompt kèm ảnh nhân vật Stickman để ChatGPT tự bóc tách ngoại hình và sinh 30 Prompt tiếng Anh"
+    },
+    {
+      "time": "05:18",
+      "seconds": 318,
+      "label": "Sao chép từng Prompt con từ ChatGPT sang Google Flow kèm ảnh tham chiếu để tạo hàng loạt phân cảnh nối tiếp"
+    },
+    {
+      "time": "07:26",
+      "seconds": 446,
+      "label": "Kiểm chứng bộ ảnh nhân vật Stickman (ngủ dậy, đánh răng, đọc báo, ăn sáng, đi siêu thị) và tổng kết tư duy dùng AI viết Prompt"
+    }
+  ],
+  "key_takeaways": [
+    "Viết từng câu lệnh ngắn thủ công (như 'hãy tạo cho tôi nhân vật này đang ôm 1 bao gạo') chỉ tạo được 1 hình ảnh mỗi lần, rất tốn thời gian và không thể mở rộng cho video dài dạng Storytelling.",
+    "Người làm video AI chuyên nghiệp không tự ngồi viết lẻ tẻ hàng chục Prompt mà viết 1 câu lệnh yêu cầu để ChatGPT đúc ra bộ Master Prompt hoàn chỉnh.",
+    "Câu lệnh tạo Master Prompt chuẩn phải chỉ rõ 6 biến số cần thay đổi qua từng phân cảnh: Bối cảnh, Hành động, Sự vật/Đạo cụ, Sự việc xảy ra, Góc quay phù hợp và Cảm xúc nhân vật.",
+    "Khi dán Master Prompt kèm ảnh nhân vật gốc vào đoạn chat mới trên ChatGPT, AI sẽ tự động lập bảng (PHÂN TÍCH NHÂN VẬT) (ngoại hình, phong cách, đặc điểm nhận dạng) trước khi sinh 30–300 Prompt tiếng Anh.",
+    "Khi đưa các Prompt con sang Google Flow (model Nano Banana 2), bắt buộc luôn phải đính kèm ảnh nhân vật gốc làm ảnh tham chiếu (Tác nhân) để khóa chặt 100% nhận diện nhân vật."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước dùng ChatGPT đúc Master Prompt và sản xuất hàng loạt ảnh nhân vật nhất quán trên Google Flow",
+    "additional": [
+      "Chuẩn bị 1 hình ảnh nhân vật gốc rõ nét làm chuẩn tham chiếu xuyên suốt toàn bộ dự án video.",
+      "Tải ảnh nhân vật lên ChatGPT và nhập câu lệnh yêu cầu thiết kế 1 Master Prompt sinh 30–300 Prompt theo cốt truyện hoặc 30 bối cảnh đời thường.",
+      "Sao chép khối Master Prompt vừa tạo, mở một đoạn chat ChatGPT mới, tải lại ảnh nhân vật gốc kèm Master Prompt để ChatGPT xuất danh sách 30 Prompt tiếng Anh chi tiết.",
+      "Mở Google Flow (chọn model Nano Banana 2), bấm dấu cộng thêm ảnh nhân vật gốc làm ảnh tham chiếu trong khung nhập lệnh.",
+      "Lần lượt sao chép các Prompt tiếng Anh từ ChatGPT dán sang Google Flow để render hàng loạt phân cảnh (thức dậy, đánh răng, ăn sáng, đi bộ, mua sắm) đồng nhất 100% nhân vật."
+    ]
+  },
+  "sop_steps": [
+    "Chuẩn bị 1 hình ảnh nhân vật gốc rõ nét làm chuẩn tham chiếu xuyên suốt toàn bộ dự án video.",
+    "Tải ảnh nhân vật lên ChatGPT và nhập câu lệnh yêu cầu thiết kế 1 Master Prompt sinh 30–300 Prompt theo cốt truyện hoặc 30 bối cảnh đời thường.",
+    "Sao chép khối Master Prompt vừa tạo, mở một đoạn chat ChatGPT mới, tải lại ảnh nhân vật gốc kèm Master Prompt để ChatGPT xuất danh sách 30 Prompt tiếng Anh chi tiết.",
+    "Mở Google Flow (chọn model Nano Banana 2), bấm dấu cộng thêm ảnh nhân vật gốc làm ảnh tham chiếu trong khung nhập lệnh.",
+    "Lần lượt sao chép các Prompt tiếng Anh từ ChatGPT dán sang Google Flow để render hàng loạt phân cảnh (thức dậy, đánh răng, ăn sáng, đi bộ, mua sắm) đồng nhất 100% nhân vật."
+  ],
+  "avoid_flags": [
+    "Ngồi gõ thủ công từng câu Prompt ngắn cho từng cảnh một khi làm video dài dạng câu chuyện (Storytelling), gây lãng phí thời gian và đứt gãy mạch sản xuất.",
+    "Quên đính kèm hình ảnh nhân vật gốc làm ảnh tham chiếu khi dán các Prompt con vào Google Flow khiến AI vẽ ra nhân vật hoàn toàn khác.",
+    "Viết câu lệnh yêu cầu tạo Master Prompt quá sơ sài, thiếu yêu cầu thay đổi góc quay, cảm xúc, sự vật và hành động dẫn đến 30 bức ảnh bị trùng lặp bố cục nhàm chán.",
+    "Tự tay ngồi viết các bài Master Prompt dài hàng trang như trên mạng xã hội thay vì ra lệnh cho ChatGPT tự động cấu trúc hóa Master Prompt."
+  ],
+  "analysis_method": "visual_audio_grounded_v2",
+  "source_transcript": "video/VIDEO-fc62eb/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "last_verified_at": "2026-10-24T13:26:00Z",
+  "course_docs": [
+    {
+      "title": "Cẩm Nang Thực Chiến & Master Prompt 30 Tình Huống Đời Thường (Markdown)",
+      "file": "assets/docs-dgmd/VIDEO-fc62eb/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-fc62eb/master_prompt.md",
+      "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-fc62eb/master_prompt.md"
+    },
+    {
+      "title": "Công Thức Đúc Master Prompt Nhất Quán Nhân Vật AI (TXT)",
+      "file": "assets/docs-dgmd/VIDEO-fc62eb/master_prompt.txt",
+      "readFile": "assets/docs-dgmd/VIDEO-fc62eb/master_prompt.txt",
+      "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-fc62eb/master_prompt.txt"
+    },
+    {
+      "title": "Tài Liệu Học Phần Gốc: Tư Duy Master Prompt (HTML)",
+      "file": "assets/docs-dgmd/VIDEO-fc62eb/description.html",
+      "readFile": "assets/docs-dgmd/VIDEO-fc62eb/description.html",
+      "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-fc62eb/description.html"
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+{
+  "sku": "VIDEO-a85eac",
+  "duration": 606.113533,
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 9.5,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:09,500",
+      "text": "Rồi em chào tất cả mọi người nha. Thì hôm nay em vừa khám một kênh của một bác ở trong Pro của mình á. Bác này mới nhờ em khám kênh"
+    },
+    {
+      "id": 2,
+      "start": 9.5,
+      "end": 18.0,
+      "start_time": "00:00:09,500",
+      "end_time": "00:00:18,000",
+      "text": "thì sẵn đây em chia sẻ luôn. Và em cũng xin phép bác đó là bác đó có cho phép là chia sẻ kênh này lên cho anh em xem luôn."
+    },
+    {
+      "id": 3,
+      "start": 18.0,
+      "end": 26.5,
+      "start_time": "00:00:18,000",
+      "end_time": "00:00:26,500",
+      "text": "Thì sẵn đây em chia sẻ luôn nha mọi người. Thì kênh này làm về thị trường Hàn Quốc và bác ấy lập và làm từ ngày 14 tháng 9 năm 2024 này nha,"
+    },
+    {
+      "id": 4,
+      "start": 26.5,
+      "end": 33.0,
+      "start_time": "00:00:26,500",
+      "end_time": "00:00:33,000",
+      "text": "mới cách đây nửa tháng thôi mọi người ạ. Và video đầu tiên bác ấy đăng là 2 tuần trước, ấy và bắt đầu dần dần là nó lên nè."
+    },
+    {
+      "id": 5,
+      "start": 33.0,
+      "end": 42.0,
+      "start_time": "00:00:33,000",
+      "end_time": "00:00:42,000",
+      "text": "Và mọi người thấy không, video bắt đầu lên view dần nè. Và cao view nhất là video này hơn 200.000 view nè, 7 ngày trước."
+    },
+    {
+      "id": 6,
+      "start": 42.0,
+      "end": 50.0,
+      "start_time": "00:00:42,000",
+      "end_time": "00:00:50,000",
+      "text": "Và cái dạng ngách này là về sức khỏe nha, nhưng mà một cái ngách nhỏ rất là khác. Đây, em bấm vào mục Phổ biến và em sẽ dịch ra cho mọi người xem."
+    },
+    {
+      "id": 7,
+      "start": 50.0,
+      "end": 59.0,
+      "start_time": "00:00:50,000",
+      "end_time": "00:00:59,000",
+      "text": "Đây, mọi người có thể đọc các cái tiêu đề nha. Như video cao view nhất nè là video nhất định phải xem nếu bạn bị suy thận."
+    },
+    {
+      "id": 8,
+      "start": 59.0,
+      "end": 71.0,
+      "start_time": "00:00:59,000",
+      "end_time": "00:01:11,000",
+      "text": "Đấy, ngay từ cái câu đầu của cái tiêu đề này thì bác đó đã cho một cái câu hook nè mọi người: \"Video nhất định phải xem nếu bạn bị suy thận\". Đó, đó là cái câu hook của cái tiêu đề luôn ấy."
+    },
+    {
+      "id": 9,
+      "start": 71.0,
+      "end": 80.0,
+      "start_time": "00:01:11,000",
+      "end_time": "00:01:20,000",
+      "text": "Và cái từ khóa ngách của video này là về kiểu như dạng thận về suy thận nha. Đấy, mọi người đọc cái tiêu đề là mọi người sẽ rõ."
+    },
+    {
+      "id": 10,
+      "start": 80.0,
+      "end": 89.0,
+      "start_time": "00:01:20,000",
+      "end_time": "00:01:29,000",
+      "text": "Mấy bác train AI á, cho con Claude làm á thì mọi người cứ copy tiêu đề của đối thủ này vào, xong rồi mọi người cứ bảo nó cho phân tích và học theo,"
+    },
+    {
+      "id": 11,
+      "start": 89.0,
+      "end": 99.0,
+      "start_time": "00:01:29,000",
+      "end_time": "00:01:39,000",
+      "text": "rồi nó sẽ cho mọi người các cái bố cục và cái prompt để viết cái... Nói chung là nó sẽ tự động ra cái tiêu đề có tất cả yếu tố cho mọi người,"
+    },
+    {
+      "id": 12,
+      "start": 99.0,
+      "end": 109.5,
+      "start_time": "00:01:39,000",
+      "end_time": "00:01:49,500",
+      "text": "gồm câu hook, rồi từ khóa chính, từ khóa phụ luôn. Đấy, mọi người không phải lo đâu. Rồi thì hai video tiếp theo là nói về táo và cà rốt nè."
+    },
+    {
+      "id": 13,
+      "start": 109.5,
+      "end": 119.0,
+      "start_time": "00:01:49,500",
+      "end_time": "00:01:59,000",
+      "text": "Video thứ ba cũng nói về các cái rau, củ, quả. Đây, video thứ tư lại cũng nói về dạng táo và cà rốt."
+    },
+    {
+      "id": 14,
+      "start": 119.0,
+      "end": 129.0,
+      "start_time": "00:01:59,000",
+      "end_time": "00:02:09,000",
+      "text": "Thì nhìn chung á, mọi người thấy những video sau này á thì là những cái dạng khác nha. Đây như video mới gần đây nhất là bác ấy bám theo là cà rốt nè."
+    },
+    {
+      "id": 15,
+      "start": 129.0,
+      "end": 138.0,
+      "start_time": "00:02:09,000",
+      "end_time": "00:02:18,000",
+      "text": "Còn những cái video mà lẹt đẹt view ấy, kiểu nó không được cao lắm á, thì là nói về những cái dạng rau củ khác."
+    },
+    {
+      "id": 16,
+      "start": 138.0,
+      "end": 147.0,
+      "start_time": "00:02:18,000",
+      "end_time": "00:02:27,000",
+      "text": "Rồi, thì nhìn chung qua phân tích như vậy á thì rút ra được một cái mọi người rút ra được cái kinh nghiệm về cái từ khóa ngách ở trong cái kênh này chính là:"
+    },
+    {
+      "id": 17,
+      "start": 147.0,
+      "end": 154.5,
+      "start_time": "00:02:27,000",
+      "end_time": "00:02:34,500",
+      "text": "thứ nhất là về cái về cái kiểu là suy thận nè. Rồi cái thứ hai á là cái này là quan trọng nha,"
+    },
+    {
+      "id": 18,
+      "start": 154.5,
+      "end": 162.0,
+      "start_time": "00:02:34,500",
+      "end_time": "00:02:42,000",
+      "text": "cái này là từ khóa là về táo và cà rốt nè. Đấy, mấy bác để ý những cái video mà có từ khóa táo và cà rốt thì view nó khá là cao, khá là ổn nha."
+    },
+    {
+      "id": 19,
+      "start": 162.0,
+      "end": 170.0,
+      "start_time": "00:02:42,000",
+      "end_time": "00:02:50,000",
+      "text": "Đấy, như kênh mới như này thì view như này rất là ổn rồi nha mọi người. Đấy, còn lại những cái dạng mà mọi người thấy những video khác bị lẹt đẹt view nè"
+    },
+    {
+      "id": 20,
+      "start": 170.0,
+      "end": 178.0,
+      "start_time": "00:02:50,000",
+      "end_time": "00:02:58,000",
+      "text": "thì đó là những cái dạng rau củ khác, thì nó không có trend bằng cái từ khóa là táo và cà rốt."
+    },
+    {
+      "id": 21,
+      "start": 178.0,
+      "end": 187.0,
+      "start_time": "00:02:58,000",
+      "end_time": "00:03:07,000",
+      "text": "Đó, nên là mấy bác nào mà muốn làm thêm á thì mọi người cứ dịch cái tiêu đề ra rồi mọi người phân tích như em ấy. Bấm vào mục Phổ biến rồi phân tích những video cao view nhất,"
+    },
+    {
+      "id": 22,
+      "start": 187.0,
+      "end": 195.0,
+      "start_time": "00:03:07,000",
+      "end_time": "00:03:15,000",
+      "text": "mình đọc cái từ khóa của nó ấy. Đấy thì nói chung cái dạng này thì mọi người nếu mà làm thì nên bám vào cái dạng là táo và cà rốt và cái từ khóa là thận nha."
+    },
+    {
+      "id": 23,
+      "start": 195.0,
+      "end": 204.0,
+      "start_time": "00:03:15,000",
+      "end_time": "00:03:24,000",
+      "text": "Đấy, còn cách train prompt này kia thì em đã hướng dẫn hết rồi, mọi người cứ copy và train thôi. Thì riêng về cái dạng kênh này á thì để tầm mai hoặc là mốt"
+    },
+    {
+      "id": 24,
+      "start": 204.0,
+      "end": 213.0,
+      "start_time": "00:03:24,000",
+      "end_time": "00:03:33,000",
+      "text": "em sẽ lên thêm video hướng dẫn chi tiết, tặng cho mấy bác là thêm video là train cái ngách này luôn nha. Đấy, train prompt luôn, cách làm từ đầu tới cuối luôn cho mọi người."
+    },
+    {
+      "id": 25,
+      "start": 213.0,
+      "end": 222.0,
+      "start_time": "00:03:33,000",
+      "end_time": "00:03:42,000",
+      "text": "Rồi thì tiếp theo là thêm một cái kênh đối thủ nữa, sẵn là em cho mọi người xem luôn. Kênh này thì họ cũng mới làm thôi, 2 tuần trước, 19 video này mọi người."
+    },
+    {
+      "id": 26,
+      "start": 222.0,
+      "end": 230.0,
+      "start_time": "00:03:42,000",
+      "end_time": "00:03:50,000",
+      "text": "Đây, kênh này cũng là thị trường Hàn Quốc và đúng với cái ngách đó luôn nha. Em bấm mục Phổ biến và em cũng dịch ra tiêu đề ra."
+    },
+    {
+      "id": 27,
+      "start": 230.0,
+      "end": 238.0,
+      "start_time": "00:03:50,000",
+      "end_time": "00:03:58,000",
+      "text": "Mọi người đọc nè: \"Ăn một quả táo vào buổi sáng nè\", đấy, \"cà rốt và táo nè\", đó, mấy bác thấy hình dung ra được vấn đề chưa?"
+    },
+    {
+      "id": 28,
+      "start": 238.0,
+      "end": 246.0,
+      "start_time": "00:03:58,000",
+      "end_time": "00:04:06,000",
+      "text": "Đó chính là cái từ khóa của cái ngách mà em muốn share ở video này cho mọi người đấy. Đó, mọi người dịch cái tiêu đề ra mà mọi người đọc những video mà cao view nhất"
+    },
+    {
+      "id": 29,
+      "start": 246.0,
+      "end": 254.0,
+      "start_time": "00:04:06,000",
+      "end_time": "00:04:14,000",
+      "text": "là mấy bác ra được vấn đề liền. Đấy như video mà nói về khoai tây này thì nó cũng có lên nè. Đấy nhưng mà đa số là mọi người thấy không,"
+    },
+    {
+      "id": 30,
+      "start": 254.0,
+      "end": 264.0,
+      "start_time": "00:04:14,000",
+      "end_time": "00:04:24,000",
+      "text": "toàn là từ khóa là táo và cà rốt thì nó sẽ cao view nhất thôi. Từ đó thì mọi người lọc ra những cái từ khóa ngách trend rồi mọi người làm, bám theo mà làm nha."
+    },
+    {
+      "id": 31,
+      "start": 264.0,
+      "end": 275.0,
+      "start_time": "00:04:24,000",
+      "end_time": "00:04:35,000",
+      "text": "Đấy, còn những cái mà lẹt đẹt á thì mấy bác tránh nó ra, loại bỏ nó ra. Đấy, để cho mọi người không phải đi theo con đường sai nữa."
+    },
+    {
+      "id": 32,
+      "start": 275.0,
+      "end": 284.0,
+      "start_time": "00:04:35,000",
+      "end_time": "00:04:44,000",
+      "text": "Đó là cách làm bán content mà trước giờ em đã hướng dẫn, nói đi nói lại cho mấy bác rất là nhiều lần luôn rồi. Mình cứ ăn theo đối thủ thôi mọi người ạ,"
+    },
+    {
+      "id": 33,
+      "start": 284.0,
+      "end": 293.0,
+      "start_time": "00:04:44,000",
+      "end_time": "00:04:53,000",
+      "text": "mình cứ bấm vào mục Phổ biến rồi mình phân tích, rồi mình bám theo những cái từ khóa và những cái trend của họ thôi. Đấy, thì riêng về cái ngách này thì mọi người đợi em tầm 1-2 ngày nữa nha."
+    },
+    {
+      "id": 34,
+      "start": 293.0,
+      "end": 302.0,
+      "start_time": "00:04:53,000",
+      "end_time": "00:05:02,000",
+      "text": "Thì em có thời gian thì em sẽ làm thêm video chi tiết train cái prompt của kênh hai cái kênh đối thủ này cho bác luôn. Rồi, đây bấm vào chi tiết video thì"
+    },
+    {
+      "id": 35,
+      "start": 302.0,
+      "end": 310.5,
+      "start_time": "00:05:02,000",
+      "end_time": "00:05:10,500",
+      "text": "về cách edit thì rất là đơn giản thôi mọi người. Về dạng sức khỏe thì đây là lấy những hình ảnh minh họa nè, đấy mọi người có thể tải những hình ảnh về thôi."
+    },
+    {
+      "id": 36,
+      "start": 310.5,
+      "end": 319.0,
+      "start_time": "00:05:10,500",
+      "end_time": "00:05:19,000",
+      "text": "Hoặc là thêm video vào nữa nha, video thì những cái nguồn miễn phí như ở những lúc trước em share rồi á mọi người, tải về chèn vào."
+    },
+    {
+      "id": 37,
+      "start": 319.0,
+      "end": 328.0,
+      "start_time": "00:05:19,000",
+      "end_time": "00:05:28,000",
+      "text": "Như cái kênh này thì đa số là họ chèn bằng hình ảnh thôi nè, xong rồi zoom to, phóng nhỏ, kéo qua kéo lại thôi, không có gì hết mọi người."
+    },
+    {
+      "id": 38,
+      "start": 328.0,
+      "end": 336.5,
+      "start_time": "00:05:28,000",
+      "end_time": "00:05:36,500",
+      "text": "Đấy, nhưng mà mấy bác thấy không, view rất là cao luôn. Đấy, cái vấn đề chủ yếu là nằm ở kịch bản á, còn lấy kịch bản của đối thủ cho AI nó học"
+    },
+    {
+      "id": 39,
+      "start": 336.5,
+      "end": 344.0,
+      "start_time": "00:05:36,500",
+      "end_time": "00:05:44,000",
+      "text": "thì mọi người cứ sao chép thôi. Hôm sau thì em sẽ làm thêm video để hướng dẫn chi tiết. Còn nói chung thì nếu mà mấy bác tự làm thì mấy bác cũng đều tự làm,"
+    },
+    {
+      "id": 40,
+      "start": 344.0,
+      "end": 353.0,
+      "start_time": "00:05:44,000",
+      "end_time": "00:05:53,000",
+      "text": "tự train được hết mà đúng không? Bởi vì em đã có lên rất rất là nhiều video hướng dẫn cách train Claude hoặc ChatGPT luôn rồi."
+    },
+    {
+      "id": 41,
+      "start": 353.0,
+      "end": 361.0,
+      "start_time": "00:05:53,000",
+      "end_time": "00:06:01,000",
+      "text": "Đấy, mọi người cứ một quy trình thế mọi người làm thôi. Mấy bác mà chưa xem hoặc là chưa xem hết á, mấy bác cứ vào web và xem cái mục module thứ ba"
+    },
+    {
+      "id": 42,
+      "start": 361.0,
+      "end": 371.0,
+      "start_time": "00:06:01,000",
+      "end_time": "00:06:11,000",
+      "text": "và cái mục module là hướng dẫn quy trình dùng Claude AI nè, thì mọi người xem nha. Những cái video trong này thì em có hướng dẫn chi tiết cách train prompt này kia ấy,"
+    },
+    {
+      "id": 43,
+      "start": 371.0,
+      "end": 381.0,
+      "start_time": "00:06:11,000",
+      "end_time": "00:06:21,000",
+      "text": "đấy và cứ một cái quy trình công thức đó thì mấy bác có thể làm bất cứ cái ngách hay cái key nào cũng được, đều được cả nha. Còn cái mục module 4 này"
+    },
+    {
+      "id": 44,
+      "start": 381.0,
+      "end": 390.0,
+      "start_time": "00:06:21,000",
+      "end_time": "00:06:30,000",
+      "text": "thì cũng có một vài cái nhưng mà đa số trong mục module 4 này thì em update share key, share ngách cho mọi người thôi. Rồi, sẵn tiện đây thì em share thêm một cái kênh nữa."
+    },
+    {
+      "id": 45,
+      "start": 390.0,
+      "end": 399.0,
+      "start_time": "00:06:30,000",
+      "end_time": "00:06:39,000",
+      "text": "Cái kênh này thì cũng là về làm ở thị trường Hàn luôn nha. Đây, làm từ đầu tháng 9 này mọi người, cách đây cũng chưa được một tháng nha."
+    },
+    {
+      "id": 46,
+      "start": 399.0,
+      "end": 409.0,
+      "start_time": "00:06:39,000",
+      "end_time": "00:06:49,000",
+      "text": "Kênh này thì dạng này thì nói về dạng người già nha. Đây, video rất là cao view luôn, 12 ngày trước hơn 100k view nè, 9 ngày trước cũng vậy."
+    },
+    {
+      "id": 47,
+      "start": 409.0,
+      "end": 418.0,
+      "start_time": "00:06:49,000",
+      "end_time": "00:06:58,000",
+      "text": "Ấy, kênh này chỉ mới 4 video thôi. Đây, em sẽ dịch ra cho mấy bác xem. Mọi người có thể đọc tiêu đề nha:"
+    },
+    {
+      "id": 48,
+      "start": 418.0,
+      "end": 427.0,
+      "start_time": "00:06:58,000",
+      "end_time": "00:07:07,000",
+      "text": "\"Tại sao con cái lại phải chịu đựng khổ sở hơn khi cha mẹ sống càng lâu nè\". Đấy, thì nói chung cái dạng này á thì nói về"
+    },
+    {
+      "id": 49,
+      "start": 427.0,
+      "end": 436.0,
+      "start_time": "00:07:07,000",
+      "end_time": "00:07:16,000",
+      "text": "đánh vào cái ngách là những người cao tuổi họ xem nha. \"Tại sao những người cao tuổi hoàn toàn hoàn toàn khỏe mạnh lại qua đời nhanh chóng nè\","
+    },
+    {
+      "id": 50,
+      "start": 436.0,
+      "end": 444.0,
+      "start_time": "00:07:16,000",
+      "end_time": "00:07:24,000",
+      "text": "thì nói chung cái này là đánh vào cái tệp khán giả người già thôi mọi người. Đấy kiểu như tâm lý người già ấy, drama vừa drama mà vừa tâm lý cho người già nha."
+    },
+    {
+      "id": 51,
+      "start": 444.0,
+      "end": 453.0,
+      "start_time": "00:07:24,000",
+      "end_time": "00:07:33,000",
+      "text": "Cái dạng nói chung chung là như vậy thì em sẽ để cái kênh này ở mô tả luôn để cho mấy bác nếu mà làm á thì mọi người có thể tham khảo."
+    },
+    {
+      "id": 52,
+      "start": 453.0,
+      "end": 462.0,
+      "start_time": "00:07:33,000",
+      "end_time": "00:07:42,000",
+      "text": "Đây, em bấm vào một video em xem về cách edit thì nó cũng giống 100% là cái quy trình với cách làm mà em đã hướng dẫn mọi người làm cả thị trường Việt và Nhật luôn ấy."
+    },
+    {
+      "id": 53,
+      "start": 462.0,
+      "end": 471.0,
+      "start_time": "00:07:42,000",
+      "end_time": "00:07:51,000",
+      "text": "Lấy video tự nhiên về ghép vào cho phụ đề chạy và cũng như là kèm thêm một cái hình ảnh nhân vật vào nữa thôi. Ở dưới là có cái thẻ tag kênh và thẻ tag video nè,"
+    },
+    {
+      "id": 54,
+      "start": 471.0,
+      "end": 480.0,
+      "start_time": "00:07:51,000",
+      "end_time": "00:08:00,000",
+      "text": "thì mấy bác cũng có thể tham khảo nha. Rồi thì những cái kênh này em sẽ để hết ở mô tả cho mọi người. Và video hôm sau á thì 1-2 ngày nữa mọi người,"
+    },
+    {
+      "id": 55,
+      "start": 480.0,
+      "end": 489.0,
+      "start_time": "00:08:00,000",
+      "end_time": "00:08:09,000",
+      "text": "em có thời gian rảnh thì chắc chắn em sẽ ra thêm một video nữa em hướng dẫn chi tiết về cách train prompt của cái kênh này nha. Đấy, thì thật ra mọi người đều làm tự làm được hết,"
+    },
+    {
+      "id": 56,
+      "start": 489.0,
+      "end": 499.0,
+      "start_time": "00:08:09,000",
+      "end_time": "00:08:19,000",
+      "text": "nhưng mà em rảnh nên là em share thêm, em làm thêm một video hướng dẫn chi tiết về cái ngách này luôn để cho bác có thể tham khảo thêm nha."
+    },
+    {
+      "id": 57,
+      "start": 499.0,
+      "end": 508.0,
+      "start_time": "00:08:19,000",
+      "end_time": "00:08:28,000",
+      "text": "Và em đã share cái ngách những cái kênh này á thì nếu mà mấy bác đã nhạy bén rồi và mấy bác thường xem hết tất cả video của em và mọi người luôn luôn nhớ rằng"
+    },
+    {
+      "id": 58,
+      "start": 508.0,
+      "end": 515.0,
+      "start_time": "00:08:28,000",
+      "end_time": "00:08:35,000",
+      "text": "những em nói em nói về cái nhân bản thị trường á thì mấy bác sẽ nhảy số là mọi người sẽ có nhiều bác thì sẽ không làm Hàn"
+    },
+    {
+      "id": 59,
+      "start": 515.0,
+      "end": 521.0,
+      "start_time": "00:08:35,000",
+      "end_time": "00:08:41,000",
+      "text": "và mọi người lấy xào nấu, nói chung là lấy kịch bản của những cái kênh bên Hàn này nè,"
+    },
+    {
+      "id": 60,
+      "start": 521.0,
+      "end": 530.0,
+      "start_time": "00:08:41,000",
+      "end_time": "00:08:50,000",
+      "text": "mọi người đem về thị trường Việt mình làm thì em đảm bảo 100% nó cũng sẽ lên nha. Bởi vì nói chung là dạng sức khỏe mà, nhu cầu thị trường lúc nào cũng có cả mọi người ạ."
+    },
+    {
+      "id": 61,
+      "start": 530.0,
+      "end": 539.0,
+      "start_time": "00:08:50,000",
+      "end_time": "00:08:59,000",
+      "text": "Ấy, đi vào những cái ngách nhỏ đó thì bên Hàn họ xem thì ở Việt mình họ cũng xem thôi. Cái quan trọng nhất của về làm cái ngách sức khỏe này"
+    },
+    {
+      "id": 62,
+      "start": 539.0,
+      "end": 548.0,
+      "start_time": "00:08:59,000",
+      "end_time": "00:09:08,000",
+      "text": "sau khi mình đã có được cái ngách nhỏ để mình làm rồi á thì mấy bác phải train và nói chung là trau chuốt cái kịch bản sao cho nó ok nhất, cho nó hay nhất"
+    },
+    {
+      "id": 63,
+      "start": 548.0,
+      "end": 557.0,
+      "start_time": "00:09:08,000",
+      "end_time": "00:09:17,000",
+      "text": "và để cho nó giữ chân được người xem nha. Chứ còn video minh họa hình ảnh minh họa trong video thì nó không có chiếm cái tỷ lệ quan trọng cao bằng kịch bản đâu mọi người ạ."
+    },
+    {
+      "id": 64,
+      "start": 557.0,
+      "end": 565.84,
+      "start_time": "00:09:17,000",
+      "end_time": "00:09:25,840",
+      "text": "Kịch bản xong rồi đến cái giọng đọc nha, đấy thì đó là những thứ quan trọng nhất về khi mọi người làm cái ngách sức khỏe này."
+    }
+  ],
+  "full_text": "Rồi em chào tất cả mọi người nha. Thì hôm nay em vừa khám một kênh của một bác ở trong Pro của mình á. Bác này mới nhờ em khám kênh thì sẵn đây em chia sẻ luôn. Và em cũng xin phép bác đó là bác đó có cho phép là chia sẻ kênh này lên cho anh em xem luôn. Thì sẵn đây em chia sẻ luôn nha mọi người. Thì kênh này làm về thị trường Hàn Quốc và bác ấy lập và làm từ ngày 14 tháng 9 năm 2024 này nha, mới cách đây nửa tháng thôi mọi người ạ. Và video đầu tiên bác ấy đăng là 2 tuần trước, ấy và bắt đầu dần dần là nó lên nè. Và mọi người thấy không, video bắt đầu lên view dần nè. Và cao view nhất là video này hơn 200.000 view nè, 7 ngày trước. Và cái dạng ngách này là về sức khỏe nha, nhưng mà một cái ngách nhỏ rất là khác. Đây, em bấm vào mục Phổ biến và em sẽ dịch ra cho mọi người xem. Đây, mọi người có thể đọc các cái tiêu đề nha. Như video cao view nhất nè là video nhất định phải xem nếu bạn bị suy thận. Đấy, ngay từ cái câu đầu của cái tiêu đề này thì bác đó đã cho một cái câu hook nè mọi người: \"Video nhất định phải xem nếu bạn bị suy thận\". Đó, đó là cái câu hook của cái tiêu đề luôn ấy. Và cái từ khóa ngách của video này là về kiểu như dạng thận về suy thận nha. Đấy, mọi người đọc cái tiêu đề là mọi người sẽ rõ. Mấy bác train AI á, cho con Claude làm á thì mọi người cứ copy tiêu đề của đối thủ này vào, xong rồi mọi người cứ bảo nó cho phân tích và học theo, rồi nó sẽ cho mọi người các cái bố cục và cái prompt để viết cái... Nói chung là nó sẽ tự động ra cái tiêu đề có tất cả yếu tố cho mọi người, gồm câu hook, rồi từ khóa chính, từ khóa phụ luôn. Đấy, mọi người không phải lo đâu. Rồi thì hai video tiếp theo là nói về táo và cà rốt nè. Video thứ ba cũng nói về các cái rau, củ, quả. Đây, video thứ tư lại cũng nói về dạng táo và cà rốt. Thì nhìn chung á, mọi người thấy những video sau này á thì là những cái dạng khác nha. Đây như video mới gần đây nhất là bác ấy bám theo là cà rốt nè. Còn những cái video mà lẹt đẹt view ấy, kiểu nó không được cao lắm á, thì là nói về những cái dạng rau củ khác. Rồi, thì nhìn chung qua phân tích như vậy á thì rút ra được một cái mọi người rút ra được cái kinh nghiệm về cái từ khóa ngách ở trong cái kênh này chính là: thứ nhất là về cái về cái kiểu là suy thận nè. Rồi cái thứ hai á là cái này là quan trọng nha, cái này là từ khóa là về táo và cà rốt nè. Đấy, mấy bác để ý những cái video mà có từ khóa táo và cà rốt thì view nó khá là cao, khá là ổn nha. Đấy, như kênh mới như này thì view như này rất là ổn rồi nha mọi người. Đấy, còn lại những cái dạng mà mọi người thấy những video khác bị lẹt đẹt view nè thì đó là những cái dạng rau củ khác, thì nó không có trend bằng cái từ khóa là táo và cà rốt. Đó, nên là mấy bác nào mà muốn làm thêm á thì mọi người cứ dịch cái tiêu đề ra rồi mọi người phân tích như em ấy. Bấm vào mục Phổ biến rồi phân tích những video cao view nhất, mình đọc cái từ khóa của nó ấy. Đấy thì nói chung cái dạng này thì mọi người nếu mà làm thì nên bám vào cái dạng là táo và cà rốt và cái từ khóa là thận nha. Đấy, còn cách train prompt này kia thì em đã hướng dẫn hết rồi, mọi người cứ copy và train thôi. Thì riêng về cái dạng kênh này á thì để tầm mai hoặc là mốt em sẽ lên thêm video hướng dẫn chi tiết, tặng cho mấy bác là thêm video là train cái ngách này luôn nha. Đấy, train prompt luôn, cách làm từ đầu tới cuối luôn cho mọi người. Rồi thì tiếp theo là thêm một cái kênh đối thủ nữa, sẵn là em cho mọi người xem luôn. Kênh này thì họ cũng mới làm thôi, 2 tuần trước, 19 video này mọi người. Đây, kênh này cũng là thị trường Hàn Quốc và đúng với cái ngách đó luôn nha. Em bấm mục Phổ biến và em cũng dịch ra tiêu đề ra. Mọi người đọc nè: \"Ăn một quả táo vào buổi sáng nè\", đấy, \"cà rốt và táo nè\", đó, mấy bác thấy hình dung ra được vấn đề chưa? Đó chính là cái từ khóa của cái ngách mà em muốn share ở video này cho mọi người đấy. Đó, mọi người dịch cái tiêu đề ra mà mọi người đọc những video mà cao view nhất là mấy bác ra được vấn đề liền. Đấy như video mà nói về khoai tây này thì nó cũng có lên nè. Đấy nhưng mà đa số là mọi người thấy không, toàn là từ khóa là táo và cà rốt thì nó sẽ cao view nhất thôi. Từ đó thì mọi người lọc ra những cái từ khóa ngách trend rồi mọi người làm, bám theo mà làm nha. Đấy, còn những cái mà lẹt đẹt á thì mấy bác tránh nó ra, loại bỏ nó ra. Đấy, để cho mọi người không phải đi theo con đường sai nữa. Đó là cách làm bán content mà trước giờ em đã hướng dẫn, nói đi nói lại cho mấy bác rất là nhiều lần luôn rồi. Mình cứ ăn theo đối thủ thôi mọi người ạ, mình cứ bấm vào mục Phổ biến rồi mình phân tích, rồi mình bám theo những cái từ khóa và những cái trend của họ thôi. Đấy, thì riêng về cái ngách này thì mọi người đợi em tầm 1-2 ngày nữa nha. Thì em có thời gian thì em sẽ làm thêm video chi tiết train cái prompt của kênh hai cái kênh đối thủ này cho bác luôn. Rồi, đây bấm vào chi tiết video thì về cách edit thì rất là đơn giản thôi mọi người. Về dạng sức khỏe thì đây là lấy những hình ảnh minh họa nè, đấy mọi người có thể tải những hình ảnh về thôi. Hoặc là thêm video vào nữa nha, video thì những cái nguồn miễn phí như ở những lúc trước em share rồi á mọi người, tải về chèn vào. Như cái kênh này thì đa số là họ chèn bằng hình ảnh thôi nè, xong rồi zoom to, phóng nhỏ, kéo qua kéo lại thôi, không có gì hết mọi người. Đấy, nhưng mà mấy bác thấy không, view rất là cao luôn. Đấy, cái vấn đề chủ yếu là nằm ở kịch bản á, còn lấy kịch bản của đối thủ cho AI nó học thì mọi người cứ sao chép thôi. Hôm sau thì em sẽ làm thêm video để hướng dẫn chi tiết. Còn nói chung thì nếu mà mấy bác tự làm thì mấy bác cũng đều tự làm, tự train được hết mà đúng không? Bởi vì em đã có lên rất rất là nhiều video hướng dẫn cách train Claude hoặc ChatGPT luôn rồi. Đấy, mọi người cứ một quy trình thế mọi người làm thôi. Mấy bác mà chưa xem hoặc là chưa xem hết á, mấy bác cứ vào web và xem cái mục module thứ ba và cái mục module là hướng dẫn quy trình dùng Claude AI nè, thì mọi người xem nha. Những cái video trong này thì em có hướng dẫn chi tiết cách train prompt này kia ấy, đấy và cứ một cái quy trình công thức đó thì mấy bác có thể làm bất cứ cái ngách hay cái key nào cũng được, đều được cả nha. Còn cái mục module 4 này thì cũng có một vài cái nhưng mà đa số trong mục module 4 này thì em update share key, share ngách cho mọi người thôi. Rồi, sẵn tiện đây thì em share thêm một cái kênh nữa. Cái kênh này thì cũng là về làm ở thị trường Hàn luôn nha. Đây, làm từ đầu tháng 9 này mọi người, cách đây cũng chưa được một tháng nha. Kênh này thì dạng này thì nói về dạng người già nha. Đây, video rất là cao view luôn, 12 ngày trước hơn 100k view nè, 9 ngày trước cũng vậy. Ấy, kênh này chỉ mới 4 video thôi. Đây, em sẽ dịch ra cho mấy bác xem. Mọi người có thể đọc tiêu đề nha: \"Tại sao con cái lại phải chịu đựng khổ sở hơn khi cha mẹ sống càng lâu nè\". Đấy, thì nói chung cái dạng này á thì nói về đánh vào cái ngách là những người cao tuổi họ xem nha. \"Tại sao những người cao tuổi hoàn toàn hoàn toàn khỏe mạnh lại qua đời nhanh chóng nè\", thì nói chung cái này là đánh vào cái tệp khán giả người già thôi mọi người. Đấy kiểu như tâm lý người già ấy, drama vừa drama mà vừa tâm lý cho người già nha. Cái dạng nói chung chung là như vậy thì em sẽ để cái kênh này ở mô tả luôn để cho mấy bác nếu mà làm á thì mọi người có thể tham khảo. Đây, em bấm vào một video em xem về cách edit thì nó cũng giống 100% là cái quy trình với cách làm mà em đã hướng dẫn mọi người làm cả thị trường Việt và Nhật luôn ấy. Lấy video tự nhiên về ghép vào cho phụ đề chạy và cũng như là kèm thêm một cái hình ảnh nhân vật vào nữa thôi. Ở dưới là có cái thẻ tag kênh và thẻ tag video nè, thì mấy bác cũng có thể tham khảo nha. Rồi thì những cái kênh này em sẽ để hết ở mô tả cho mọi người. Và video hôm sau á thì 1-2 ngày nữa mọi người, em có thời gian rảnh thì chắc chắn em sẽ ra thêm một video nữa em hướng dẫn chi tiết về cách train prompt của cái kênh này nha. Đấy, thì thật ra mọi người đều làm tự làm được hết, nhưng mà em rảnh nên là em share thêm, em làm thêm một video hướng dẫn chi tiết về cái ngách này luôn để cho bác có thể tham khảo thêm nha. Và em đã share cái ngách những cái kênh này á thì nếu mà mấy bác đã nhạy bén rồi và mấy bác thường xem hết tất cả video của em và mọi người luôn luôn nhớ rằng những em nói em nói về cái nhân bản thị trường á thì mấy bác sẽ nhảy số là mọi người sẽ có nhiều bác thì sẽ không làm Hàn và mọi người lấy xào nấu, nói chung là lấy kịch bản của những cái kênh bên Hàn này nè, mọi người đem về thị trường Việt mình làm thì em đảm bảo 100% nó cũng sẽ lên nha. Bởi vì nói chung là dạng sức khỏe mà, nhu cầu thị trường lúc nào cũng có cả mọi người ạ. Ấy, đi vào những cái ngách nhỏ đó thì bên Hàn họ xem thì ở Việt mình họ cũng xem thôi. Cái quan trọng nhất của về làm cái ngách sức khỏe này sau khi mình đã có được cái ngách nhỏ để mình làm rồi á thì mấy bác phải train và nói chung là trau chuốt cái kịch bản sao cho nó ok nhất, cho nó hay nhất và để cho nó giữ chân được người xem nha. Chứ còn video minh họa hình ảnh minh họa trong video thì nó không có chiếm cái tỷ lệ quan trọng cao bằng kịch bản đâu mọi người ạ. Kịch bản xong rồi đến cái giọng đọc nha, đấy thì đó là những thứ quan trọng nhất về khi mọi người làm cái ngách sức khỏe này.",
+  "total_segments": 64
+}

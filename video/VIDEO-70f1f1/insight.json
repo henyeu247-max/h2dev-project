@@ -1,0 +1,81 @@
+{
+  "sku": "VIDEO-70f1f1",
+  "title": "KEY BÁN CONTENT NGÁCH NHỎ ĐỨC PHẬT VÀ CHÚA THỊ TRƯỜNG HÀN QUỐC",
+  "actual_topic": "KEY BÁN CONTENT NGÁCH NHỎ ĐỨC PHẬT VÀ CHÚA THỊ TRƯỜNG HÀN QUỐC",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Triết Lý & Phật Pháp",
+  "niche_id": "faceless-general",
+  "target_market": "Hàn Quốc",
+  "market_code": "KR",
+  "key_takeaways": [
+    "Tác giả tiếp tục thêm một ngách nhỏ về Phật Pháp ở thị trường Hàn Quốc, kênh đã làm lâu, nhiều video và hiện vẫn đang bật kiếm tiền (video có chạy quảng cáo).",
+    "Tác giả cho rằng kênh còn đăng video đều thì chắc chắn còn bật kiếm tiền, vì không ai đã thử kiếm tiền xong lại tiếp tục đăng.",
+    "Cách edit khá đơn giản: ghép nền vào rồi cho dưỡng chạy; kênh quét lỗi không trung thực chủ yếu đến từ kịch bản gian lận view, hoặc từ tài khoản Google/AdSense từng dính lỗi dùng chung máy hay chung kênh khác.",
+    "Tác giả sẽ ra video hướng dẫn làm thumbnail và phông chữ giống đối thủ, đồng thời hướng dẫn clone theo đối thủ đúng cách mình làm từ trước tới giờ.",
+    "Ngách thứ hai là Chúa cũng ở thị trường Hàn, dùng hình ảnh AI, video cao view nhờ nội dung hay và tiêu đề hấp dẫn; một kênh hơn trăm video có video chỉ vài trăm view, có video nổ vài chục nghìn view, nên khi bán content cần bám theo những video đã nổ cao view."
+  ],
+  "edit_sop": {
+    "primary": "Chia sẻ ngách nhỏ Phật pháp và ngách Chúa ở thị trường Hàn Quốc để làm key bán content",
+    "additional": [
+      "Chọn kênh đối thủ còn đăng video đều vì còn đăng nghĩa là còn bật kiếm tiền",
+      "Cách edit khá đơn giản: ghép nền vào rồi cho dưỡng chạy",
+      "Ngách Chúa dùng hình ảnh AI, nội dung hay và tiêu đề hấp dẫn thì video cao view",
+      "Làm bán content thì bám theo những video đã nổ cao view",
+      "Video sau sẽ hướng dẫn làm thumbnail, phông chữ giống đối thủ và clone theo đối thủ"
+    ]
+  },
+  "avoid_flags": [
+    "Kênh bị quét lỗi không trung thực chủ yếu do kịch bản và cách cày view; tài khoản Google đã dính lỗi trước đó mà dùng chung máy hoặc chung kênh khác thì bị kéo theo lỗi",
+    "Không nên bám theo những video có lượt xem thấp lẹt đẹt trên kênh đối thủ mà chỉ chọn lọc bám sát các video đã nổ lượt xem cao"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "Google"
+  ],
+  "channels_mentioned": [
+    "@こころの道しるべブッダの教え",
+    "@은빛복음",
+    "@주님의손길-handofgod"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Tổng quan nội dung bài giảng và mục tiêu thực hành"
+    },
+    {
+      "time": "00:51",
+      "seconds": 51,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "01:45",
+      "seconds": 105,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "02:37",
+      "seconds": 157,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "03:25",
+      "seconds": 205,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-70f1f1/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Chọn kênh đối thủ còn đăng video đều vì còn đăng nghĩa là còn bật kiếm tiền",
+    "Cách edit khá đơn giản: ghép nền vào rồi cho dưỡng chạy",
+    "Ngách Chúa dùng hình ảnh AI, nội dung hay và tiêu đề hấp dẫn thì video cao view",
+    "Làm bán content thì bám theo những video đã nổ cao view",
+    "Video sau sẽ hướng dẫn làm thumbnail, phông chữ giống đối thủ và clone theo đối thủ"
+  ]
+}

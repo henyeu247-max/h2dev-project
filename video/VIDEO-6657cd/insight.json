@@ -1,0 +1,118 @@
+{
+  "sku": "VIDEO-6657cd",
+  "title": "Chi tiết từ A-Z cách làm video AI ĐƠN GIẢN - Chủ nghĩa Khắc Kỷ",
+  "Summary": "Hướng dẫn thực hành từ A–Z quy trình sản xuất video AI chủ đề Chủ nghĩa Khắc Kỷ (Stoicism) tiếng Việt qua 3 giai đoạn: (A) Lên kịch bản bằng danh sách Dream 100 và chuỗi 3 câu lệnh ChatGPT (đóng vai chuyên gia -> lên dàn ý chi tiết -> viết sâu từng phần nối thành kịch bản dài); (B) Chuẩn bị tài nguyên gồm tạo giọng đọc trầm ấm 'Anh Khôi' trên Vbee và tạo bộ ảnh tượng đá triết gia Hy Lạp tỷ lệ 16:9 bằng Midjourney kết hợp Google Dịch theo công thức 6 thành phần; (C) Dựng video hoàn chỉnh trên CapCut PC với phụ đề tự động font Montserrat (cỡ 9, Y -788), quy tắc cắt ảnh không quá 12 giây/ảnh, hiệu ứng Nhiễu 2 + Nhiễu đen + Lắc qua lại và nhạc nền giảm âm lượng -15 đến -20 dB.",
+  "tools_mentioned": [
+    "ChatGPT",
+    "Vbee",
+    "Midjourney",
+    "Google Dịch",
+    "CapCut"
+  ],
+  "channels_mentioned": [
+    "@TuDuyDung",
+    "@Web5ngay",
+    "@BetterVersionvn"
+  ],
+  "course_docs": [
+    {
+      "title": "Quy Trình Làm Video Triết Lý — Hướng Dẫn Từng Bước (ChatGPT + Vbee + Midjourney + CapCut)",
+      "file": "assets/docs-huan/Quy_trinh_lam_video_triet_ly.pdf",
+      "readFile": "assets/docs-huan/Quy_trinh_lam_video_triet_ly.pdf.md",
+      "link": "https://drive.google.com/file/d/1H5qzM3fJAtCczdIQ9F7kTyxgZov5a_Aw/view"
+    },
+    {
+      "title": "Quy Trình Triển Khai Kênh Triết Lý Nghe Để Ngủ (Offline K6)",
+      "file": "assets/docs-huan/OFFLINE_K6_-_QUY_TRINH_TRIEN_KHAI_KENH_CHU_DE_NGHE_DE_DI_NGU/QUY_TRINH_TRIEN_KHAI_KENH_TRIET_LY_NGHE_DE_NGU.pdf",
+      "readFile": "assets/docs-huan/OFFLINE_K6_-_QUY_TRINH_TRIEN_KHAI_KENH_CHU_DE_NGHE_DE_DI_NGU/QUY_TRINH_TRIEN_KHAI_KENH_TRIET_LY_NGHE_DE_NGU.pdf.md",
+      "link": "https://drive.google.com/file/d/1dAmtWOF7CUvnkEHMD8MDKGAfjfmqdKD3/view"
+    },
+    {
+      "title": "Bộ Các Câu Prompt Mẫu Làm Kênh Triết Lý (Kịch Bản, Tạo Ảnh & Nhạc Nền)",
+      "file": "assets/docs-huan/OFFLINE_K6_-_QUY_TRINH_TRIEN_KHAI_KENH_CHU_DE_NGHE_DE_DI_NGU/PROJECT_VA_SAN_PHAM/CAC_CAU_PROMPT.txt",
+      "readFile": "assets/docs-huan/OFFLINE_K6_-_QUY_TRINH_TRIEN_KHAI_KENH_CHU_DE_NGHE_DE_DI_NGU/PROJECT_VA_SAN_PHAM/CAC_CAU_PROMPT.txt",
+      "link": "https://drive.google.com/file/d/1Zbm73pEXkE4X7bEtzBQMv3IYaDK5NJrWvTmQ0_-clmA/view"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "label": "Giới thiệu chủ đề Chủ nghĩa Khắc Kỷ (Stoic) và 3 bước lên kịch bản (Tổng hợp, Tự viết, Làm lại)",
+      "seconds": 0
+    },
+    {
+      "time": "00:29",
+      "label": "Bước 1 & 2 làm kịch bản: Tổng hợp ý tưởng từ Dream 100 và dùng chuỗi câu lệnh ChatGPT viết kịch bản",
+      "seconds": 29
+    },
+    {
+      "time": "03:34",
+      "label": "Ba lưu ý cốt lõi khi làm kịch bản và phân tích giọng đọc của kênh đối thủ",
+      "seconds": 214
+    },
+    {
+      "time": "04:18",
+      "label": "Hướng dẫn chuyển văn bản thành giọng nói trên Vbee với giọng đọc Anh Khôi và 3 lưu ý kiểm soát lỗi",
+      "seconds": 258
+    },
+    {
+      "time": "06:12",
+      "label": "Tạo bộ ảnh tượng đá triết gia Hy Lạp bằng Midjourney kết hợp Google Dịch và cấu trúc prompt 3 phần",
+      "seconds": 372
+    },
+    {
+      "time": "10:38",
+      "label": "Đưa nguyên liệu vào CapCut Pro, tạo phụ đề tự động tiếng Việt và chỉnh phông chữ Montserrat",
+      "seconds": 638
+    },
+    {
+      "time": "18:42",
+      "label": "Sắp xếp ảnh minh họa khớp lời thoại (không quá 12 giây/ảnh) và thêm hiệu ứng Nhiễu 2, Nhiễu đen, Lắc qua lại",
+      "seconds": 1122
+    },
+    {
+      "time": "22:45",
+      "label": "Thêm hiệu ứng chữ Rõ dần, chèn nhạc nền ở mức âm lượng trừ 15 đến 20 dB và xuất bản thành phẩm",
+      "seconds": 1365
+    }
+  ],
+  "key_takeaways": [
+    "Muốn ChatGPT viết được kịch bản dài và sâu sắc về Chủ nghĩa Khắc Kỷ, tuyệt đối không bảo viết ngay cả bài mà phải đi theo chuỗi 3 bước: (1) Gán vai chuyên gia -> (2) Yêu cầu lập dàn ý chi tiết -> (3) Yêu cầu viết chi tiết từng mục trong dàn ý rồi ghép lại",
+    "Giọng đọc quyết định cảm xúc của kênh triết lý tiếng Việt: chọn giọng trầm ấm như 'Anh Khôi' trên Vbee, kiểm tra kỹ các từ tiếng Anh/tên riêng triết gia để phiên âm sang tiếng Việt và cắt bỏ các khoảng lặng quá dài",
+    "Cấu trúc prompt tạo ảnh tượng đá chuẩn trên Midjourney gồm 6 thành phần: (Đối tượng chính) + (Mô tả chi tiết) + (Phong cách) + (Góc nhìn) + (Ánh sáng) + (Độ phân giải), thiết lập tỷ lệ khung hình 16:9",
+    "Khi dựng video trên CapCut, mỗi bức ảnh tĩnh không được xuất hiện quá 12 giây để tránh gây nhàm chán và giảm rủi ro quét nội dung tĩnh; kết hợp bộ 3 hiệu ứng video (Nhiễu 2, Nhiễu đen, Lắc qua lại) để tạo chiều sâu điện ảnh cổ điển",
+    "Tỷ lệ âm thanh chuẩn cho video triết lý: Giọng đọc chính giữ nguyên 0 dB, nhạc nền (ambient/piano trầm) phải kéo giảm xuống mức -15 dB đến -20 dB để tôn giọng đọc rõ ràng"
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước sản xuất video Chủ nghĩa Khắc Kỷ tiếng Việt bằng bộ công cụ ChatGPT, Vbee, Midjourney và CapCut",
+    "additional": [
+      "Khai thác chủ đề từ danh sách kênh Dream 100 (như kênh Tư Duy Đúng) và dùng chuỗi 3 câu lệnh ChatGPT (đóng vai chuyên gia -> lập dàn ý -> triển khai chi tiết từng mục) để hoàn thiện kịch bản sâu sắc",
+      "Đưa kịch bản vào Vbee Studio, chọn giọng đọc nam trầm 'Anh Khôi', phiên âm các tên riêng nước ngoài sang tiếng Việt để tránh đọc lỗi và xuất file MP3",
+      "Soạn câu lệnh mô tả tượng đá cẩm thạch triết gia Hy Lạp theo cấu trúc 6 phần bằng tiếng Việt trên Google Dịch, chuyển sang tiếng Anh rồi tạo bộ ảnh tỷ lệ 16:9 trên Midjourney",
+      "Mở CapCut PC, đưa file giọng đọc vào tạo Phụ đề tự động tiếng Việt, rà soát lỗi chính tả, chỉnh font chữ Montserrat cỡ 9, bật nền đen mờ hoặc viền chữ và đặt vị trí trục Y ở mức -788",
+      "Rải ảnh minh họa khớp với nội dung từng câu thoại (tối đa 12 giây/ảnh), phủ lớp hiệu ứng Nhiễu 2 + Nhiễu đen + Lắc qua lại, thêm chuyển cảnh Kết hợp, lồng nhạc nền ở mức -15 đến -20 dB rồi xuất video Full HD"
+    ]
+  },
+  "sop_steps": [
+    "Khai thác chủ đề từ danh sách kênh Dream 100 (như kênh Tư Duy Đúng) và dùng chuỗi 3 câu lệnh ChatGPT (đóng vai chuyên gia -> lập dàn ý -> triển khai chi tiết từng mục) để hoàn thiện kịch bản sâu sắc",
+    "Đưa kịch bản vào Vbee Studio, chọn giọng đọc nam trầm 'Anh Khôi', phiên âm các tên riêng nước ngoài sang tiếng Việt để tránh đọc lỗi và xuất file MP3",
+    "Soạn câu lệnh mô tả tượng đá cẩm thạch triết gia Hy Lạp theo cấu trúc 6 phần bằng tiếng Việt trên Google Dịch, chuyển sang tiếng Anh rồi tạo bộ ảnh tỷ lệ 16:9 trên Midjourney",
+    "Mở CapCut PC, đưa file giọng đọc vào tạo Phụ đề tự động tiếng Việt, rà soát lỗi chính tả, chỉnh font chữ Montserrat cỡ 9, bật nền đen mờ hoặc viền chữ và đặt vị trí trục Y ở mức -788",
+    "Rải ảnh minh họa khớp với nội dung từng câu thoại (tối đa 12 giây/ảnh), phủ lớp hiệu ứng Nhiễu 2 + Nhiễu đen + Lắc qua lại, thêm chuyển cảnh Kết hợp, lồng nhạc nền ở mức -15 đến -20 dB rồi xuất video Full HD"
+  ],
+  "avoid_flags": [
+    "Ra lệnh cho ChatGPT viết toàn bộ kịch bản chỉ bằng 1 câu nhắc duy nhất khiến nội dung ngắn, hời hợt và sáo rỗng",
+    "Để nguyên từ viết tắt hoặc tên riêng tiếng Anh trong kịch bản tiếng Việt trên Vbee làm giọng AI đọc vấp hoặc sai phát âm",
+    "Giữ một bức ảnh tĩnh quá 12 giây trên màn hình mà không cắt chuyển cảnh hoặc không thêm hiệu ứng chuyển động",
+    "Để âm lượng nhạc nền quá lớn lấn át giọng đọc triết lý (không hạ nhạc nền xuống mức -15 đến -20 dB)"
+  ],
+  "source_transcript": "video/VIDEO-6657cd/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "actual_topic": "Hướng dẫn thực hành từ A-Z quy trình làm video chủ đề Chủ nghĩa Khắc Kỷ (Stoic) tiếng Việt bằng bộ công cụ ChatGPT, Vbee, Midjourney và dựng hoàn chỉnh trên CapCut.",
+  "category_group": "he_thong",
+  "niche_primary": "Chủ Nghĩa Khắc Kỷ (Stoic) & Quy Trình AI",
+  "niche_id": "he_thong_youtube",
+  "target_market": "Việt Nam",
+  "market_code": "VN"
+}

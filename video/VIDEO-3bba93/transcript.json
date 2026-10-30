@@ -1,0 +1,1282 @@
+{
+  "sku": "VIDEO-3bba93",
+  "duration": 976.71,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 159,
+  "full_text": "Đây là video nói về thuật toán đề xuất của YouTube, của chính YouTube. Mình sub tiếng Việt cho anh em. Là nhà sáng tạo, chắc hẳn bạn đã tự hỏi những điều như sau. YouTube chọn video để quảng bá bằng cách nào? Biểu tượng màu vàng có ảnh hưởng đến tiềm năng khám phá của video không? Các thẻ thì quan trọng như thế nào? Trong video này, chúng tôi sẽ giải đáp tất cả những câu hỏi đó và nhiều điều khác về hệ thống tìm kiếm và khám phá của YouTube và nêu một số mẹo về tiềm năng khám phá của video. Đầu tiên, YouTube chọn video để quảng bá bằng cách nào? Dù là trên trang chủ YouTube, phần tìm kiếm hay phần đề xuất, hệ thống đề xuất của YouTube thật ra là tìm video cho người xem, thay vì tìm người xem cho video. Thuật toán không đẩy hoặc quảng bá video, mà tìm video cho từng người dùng mỗi khi họ truy cập YouTube. Mục tiêu của hệ thống tìm kiếm và khám phá là tìm ra cho từng người xem những video phù hợp mà họ nhiều khả năng sẽ thích xem. Vì vậy, nội dung đề xuất cho mỗi người xem đều khác biệt một đôi chút. Các video được xếp hạng dựa trên hàng trăm tín hiệu, chủ yếu thuộc hai loại. Hoạt động cá nhân của người xem và hiệu suất của video. Hoạt động cá nhân của người xem thì dựa trên các tín hiệu về lựa chọn ưu tiên của một người dùng, như những video họ chọn xem, video họ chọn bỏ qua, hay là video họ loại bỏ. Tần suất họ xem một kênh hoặc chủ đề và nhiều tín hiệu khác. Hệ thống của chúng tôi cũng xem xét hiệu suất của video, tức là sức hút của nội dung đối với người xem, khi được giới thiệu cho họ. Ví dụ, người xem chọn video, bỏ qua, hay nhấp vào nút không quan tâm. Nếu họ chọn xem, họ xem bao lâu và xem bao nhiêu phần trong video. Lúc này, thời lượng xem trung bình của video và tỷ lệ phần trăm đã xem trung bình được hệ thống coi là những tín hiệu để xếp hạng video. Và cuối cùng, người xem có thích video hay không? Chúng tôi đo lường mức độ hài lòng bằng nhiều tín hiệu như khảo sát dành cho những người dùng và số lượng thích. Những tín hiệu này giúp hệ thống của chúng tôi thu hẹp nhóm video phù hợp nhất để giới thiệu cho từng người xem. Nhà sáng tạo thường muốn biết thuật toán ưa chuộng loại video nào nhất. Nhưng hệ thống của chúng tôi không có ý kiến về loại video của bạn tạo ra và không ưu tiên dạng thức nào cụ thể. Thay vào đó, thuật toán cố gắng điều chỉnh theo khán giả. Vì vậy, thay vì lo, phải hiểu thuật toán hoặc số liệu phân tích, hãy tập trung tìm hiểu khán giả và nội dung họ thích xem. Tiếp theo, việc thay đổi tiêu đề hoặc hình thu nhỏ có đổi thứ hạng của video trong thuật toán hay không? Có thể. Nhưng đó là do hệ thống của chúng tôi phản hồi khác đi, theo cách người xem tương tác với video của bạn. Chứ không phải do việc thay đổi tiêu đề hoặc hình thu nhỏ video. Khi người xem thấy video của bạn có vẻ khác, cách họ tương tác với video sẽ thay đổi khi chúng tôi giới thiệu video cho họ. Việc đổi tiêu đề và hình thu nhỏ của video có thể là cách hiệu quả để có nhiều lượt xem hơn. Nhưng nếu video của bạn đang hoạt động tốt thì bạn không cần thay đổi. Nếu một video của tôi hoạt động kém thì kênh của tôi có bị ảnh hưởng gì không? Điều quan trọng là cách người xem phản hồi với từng video. Khi video được đề xuất cho họ, hệ thống của chúng tôi phụ thuộc vào nhiều tín hiệu ở cấp video và cấp khán giả để quyết định những video đề xuất phù hợp nhất với khán giả của bạn. Số lượng người xem tổng thể của kênh giảm có thể do mối quan tâm của mọi người thay đổi theo thời gian, hoặc khi người xem ngừng xem hầu hết các video của bạn khi video được giới thiệu. Trạng thái kiếm tiền, những biểu tượng màu vàng có ảnh hưởng đến phần tiềm năng khám phá của video không? Không. Hệ thống tìm kiếm và đề xuất của chúng tôi không biết video nào được kiếm tiền và video nào không. Hệ thống tập trung đề xuất những video mà khán giả thấy hài lòng khi xem, bất kể khi chúng có được kiếm tiền hay là không. Nhưng nếu có nội dung bạo lực không phù hợp cho người xem chưa đến tuổi trưởng thành hoặc các nội dung phản cảm khác, video của bạn có thể bị tắt kiếm tiền vì không phù hợp với tất cả các nhà quảng cáo. Video cũng có thể không được đề xuất cho nhiều người xem vì không phù hợp với tất cả các đối tượng xem. Tôi có cần tải lên video hàng ngày hoặc ít nhất một tuần một lần không? Không. Sau nhiều năm phân tích, chúng tôi nhận ra rằng sự tăng trưởng số lượt xem và các video tải lên không tương quan với khoảng thời gian giữa các lần tải lên. Nhiều nhà sáng tạo đã xây dựng được mối gắn kết đáng tin cậy với khán giả bằng chất lượng thay vì là số lượng. Chúng tôi khuyến khích bạn chăm sóc bản thân để tránh kiệt sức. Điều này rất quan trọng đối với khán giả và sức khỏe của bạn. Có những yếu tố nào khác ảnh hưởng đến lượng người xem video của tôi không? Có 3 yếu tố chính cho biết khán giả của bạn đến từ đâu. Đó là mối quan tâm đến với chủ đề, mức độ cạnh tranh và tính thời vụ. Mối quan tâm đến chủ đề đó là số lượng người trên toàn thế giới quan tâm và xem video về một chủ đề cụ thể. Một số chủ đề có sức hút lớn hơn những chủ đề khác, và sức hút này có thể thay đổi theo thời gian, khi một số chủ đề tăng hoặc giảm độ đột biến. Google Xu hướng là công cụ giúp bạn biết mức độ quan tâm của thế giới thay đổi như thế nào theo thời gian. Bạn thậm chí có thể lọc cụ thể đến mức quan tâm trong hoạt động tìm kiếm trên YouTube. Bạn chỉ cần vào Google Trends. Tiếp theo là mức độ cạnh tranh. Hệ thống của YouTube phải tìm kiếm và xếp hạng tất cả video mà người xem có thể muốn xem nhất. Ngay cả khi video của bạn có hiệu suất và có các chỉ số tốt, bạn vẫn có thể nhận ít được hiển thị hơn nếu video của các kênh hoặc nhà sáng tạo khác hoạt động còn tốt hơn. Sau cùng là tính thời vụ. Lưu lượng truy cập trên YouTube có thể thay đổi vào các thời điểm khác nhau trong năm. Và hãy nghĩ xem khán giả của bạn đang sống ở quốc gia nào, có những gì đang ảnh hưởng trong cuộc sống của họ. và biết rằng sẽ có rất là nhiều biến động về lượng người xem trong các ngày lễ lớn. Câu hỏi cuối cùng, các thẻ quan trọng như thế nào? Thật sự thì, không quan trọng lắm. Thẻ chủ yếu được dùng để sửa các lỗi chính tả phổ biến. Ví dụ, YouTube so với YouTube vs YouTube. Hãy nhớ rằng, hệ thống của YouTube cá nhân hóa nội dung cho từng người xem và đề xuất nội dung dựa trên mối quan tâm của khán giả. Hệ thống cũng chịu ảnh hưởng của các hiệu suất và mức độ tương tác của video, cùng các yếu tố bên ngoài ảnh hưởng đến mối quan tâm của mọi người theo thời gian. Hãy tập trung vào những nội dung mà khán giả của bạn thích. Nếu bạn làm vậy và mọi người thích xem, thì hệ thống đề xuất sẽ điều chỉnh theo. Rồi, ok, ok. Video này có gửi cho anh em rồi, nhưng không biết anh em có xem không? Khóa nào cũng nói rồi. Tìm những thứ chính thống ở trên YouTube họ dạy đây. Họ nói rõ mà, họ là nền tảng, nên họ cũng muốn mình hiểu và làm. Bởi vì sao? Họ có 45% tiền của anh em kiếm được ấy. Thế thì ở đây trong cái video nó nói về video đề xuất của YouTube, tức là nó có rất nhiều video đem video đến cho người dùng, chứ không phải là nhấc người dùng đi tìm video của bạn. Tức là nó hiểu rằng một người có xu hướng xem nhiều nội dung khác nhau. Đây cũng là tư duy trong việc xây dựng mô hình kinh doanh long tail, tức là cái đuôi dài. Chúng ta có một tệp khách hàng và chúng ta bán cho họ nhiều sản phẩm, thay vì việc chúng ta phải đi tìm một khách hàng mới. Mô hình này trong canvas nó cũng có. Mô hình kinh doanh canvas nó cũng có. Nên họ giải thích rằng nếu một video của bạn mặc dù đang được xanh các chỉ số rất tốt so với trong kênh của bạn, nhưng nó không có người xem bởi vì ở một đâu đó có một video nào đấy của đối thủ họ đang quan tâm nhiều hơn. Nó liên quan đến tính thời vụ. Ví dụ tự nhiên mà lại có một cái tin gì đấy hot là mọi người sẽ dồn đổ xô sang cái tin hot đấy. Ví dụ hôm nay mà có trận bóng đá, 7h tối có trận bóng đá, giờ vàng của anh em là 7h tối. Anh em đăng YouTube lên 7h tối mà xem. Làm gì có ai xem? Người ta đi xem bóng đá hết rồi. Sau bóng đá, view nó mới dựng ngược lên. Và họ nói rằng là vì một người này có nhiều sở thích như vậy nên họ sẽ dựa vào các tín hiệu của video đấy để có thể là đề xuất. Và tín hiệu đấy nó dựa trên 2 thứ Một là tương tác ở trong video Hai là hiệu suất của video Tương tác ở trong video tức là hành vi của người dùng với video đấy trên nền tảng YouTube Bao gồm like, share, comment Kích vào cái thanh lên xuống Tua qua, tua lại Chọn 0.5 hay là chọn 1 hay tốc độ 2 Chọn video HD hay Full HD cái gì đấy để tương tác với nền tảng Đấy là phần tương tác Nó giúp cho tăng view rất mạnh Bởi vì thế nó là 1 phần 2 rồi Nó là 1 phần 2 cái yếu tố để ảnh hưởng đến lượng view Tương tác. Nên cần phải có những sự tương tác ở trong kênh. Cái tương tác dễ nhất, đơn giản nhất là chăm tab cộng đồng. Họ nói rằng có những nội dung mà không cần đăng lên nhiều. Nhưng cái tính gắn kết với khán giả đã được hình thành. Và tính gắn kết với khán giả này, chúng ta có thể tận dụng được các tính năng. Một là chăm tab cộng đồng. Tab cộng đồng, Hoàng bật một cái tab cộng đồng bất kỳ của một kênh lên đi. Thông thường anh em đều dùng tab cộng đồng kiểu spam, có video up lên. Thì nó sẽ gặp một cái vấn đề lớn. Ví dụ kênh này, kéo lên nữa đi. Kênh này Việt Nam làm trăm phần trăm. Đây là một dạng spam khán giả. Tab cộng đồng này vứt đi. Mình mà nhảy vào kênh, vào chủ đề này, mình sẽ vượt thằng này luôn. Thế này là nhồi vào đầu khán giả rồi, làm gì có mà tương tác, làm gì có mà hai chiều, người ta nhìn qua cái này người ta còn bỏ qua, là nó tính vào trong hệ thống đề xuất là nó bỏ qua video hay không. Rồi, kích vào tab cộng đồng, vào một kênh của tab cộng đồng để anh em xem. Bí quyết thành công đi. Cái này mình bỏ, mình không làm nữa, không chăm tab cộng đồng. Rồi, nhìn này, nó có cái yếu tố, hình ảnh. Hình ảnh, cuộc thăm dò ý kiến, thăm dò ý kiến cá nhân, đố vui và video. Hãy coi đây là một cái fanpage của anh em. Và làm đầy đủ cả 5 cái này để tương tác với khán giả. Nó giúp cho chúng ta tăng phần gắn kết với khán giả. Phần tương tác cực kỳ quan trọng Chăm tab cộng đồng bên mình Cực kỳ chú trọng về chăm tab cộng đồng Và đây là một bí mật để là lên top 1 đấy. Tất cả những kênh top 1 của mình đều chăm tab cộng đồng rất kinh luôn. Có các yếu tố của một con người Khi mà xem video bao gồm Cái mối quan tâm của cái chủ đề đấy Tức là tư duy của chúng ta là chọn thị trường đỏ Là nơi có nhiều view để làm là ok Cái tính cạnh tranh này Tức là nó giải thích tính cạnh tranh là nhiều video cạnh tranh với nhau để tranh giành thời gian xem của một người sử dụng nền tảng. Ví dụ một người về đàn ông có rất nhiều sở thích. Thích xem về gái xinh, thích xem về ô tô, thích xem về nhà đẹp. Nếu bình thường sở thích đang là xem một cái nhà mà hôm đấy tự nhiên lại có trend về gái xinh, rất có thể lượng view sẽ bị tụt. Mặc dù các kênh, các trong kênh của mình chỉ số này đều rất ok, nhưng vì chúng ta đã thua với một thằng đối thủ nào đấy trên thị trường kia mà chúng ta không biết. Và tính thời vụ, tính thời vụ là nó liên quan đến thời gian và theo mùa. Cái video về chữa lành ấy, nó có những video là 8 tiếng liền. Nó chỉ quay cái cảnh củi đốt trong lò. Tiếng nổ lách tách, lách tách của những cái khúc gỗ. Nhưng mà đến mùa hè thì ai xem những cái đấy nữa? Nóng, cảm giác nóng. Thích xem tuyết rơi, thích xem mưa, thích nghe tiếng lộp, bộp, lộp, bộp, lộp, bộp. Thì video về bên kia của mình tự nhiên là nó hết view nhé. Nó tính thời vụ, nó tính theo mùa. Hoặc những cái bệnh mà theo mùa không thế. Thì phải đến cái mùa đấy, đến mùa lạnh thì nó mới cảm cúm nhiều. Thì video về chữa cảm cúm mọi thứ nó lại quay trở lại. Nó có tính theo trend và theo thời vụ như vậy. Nên khi mà chúng ta làm Cuối cùng họ nói rằng là Thay vì tập trung vào nền tảng Thay vì tập trung vào các yếu tố về đề xuất Bạn không cần phải trở thành một chuyên gia trong việc SEO Bạn không cần phải trở thành một chuyên gia để về dữ liệu phân tích Cái thứ duy nhất chúng ta cần tập trung là khán giả Đây là điều quan trọng nhất Nó cũng thể hiện cho việc là chúng ta làm Fair Use. Fair Use là cái trụ cột đầu tiên là chúng ta có biến đổi nhiều hay không so với tác phẩm gốc. Để làm gì? Để chúng ta phục vụ cho khán giả. Cái thứ hai là chúng ta có chọn những cái nội dung đấy mà tránh những cái thằng to ra, tránh những cái thằng bản quyền to ra, tức là những cái thằng nó có công ty đằng sau, pháp lý đằng sau để hỗ trợ. bao gồm các công ty về game show, truyền hình, thể thao, âm nhạc. Thì tránh những cái đấy ra và tránh quyền sở hữu của các network ra. Nó cũng có. Thì mình tập trung vào chọn những nội dung. Một, footage liên quan đến việc chúng ta có thể mua được. Cái thứ hai, chính những nhà sáng tạo ở trên YouTube đấy họ dùng. Mình cũng có thể mua lại được. Nhắn tin cho họ mua lại được cái quyền sử dụng, vẫn được bình thường. Ở các nền tảng khác cũng thế. Nhắn tin xin họ về bản quyền, rất ok. Ngày xưa bên mình làm Fortnite là lấy cái nội dung ở trên cái nền tảng Twitch.tv là cái nền tảng live stream lớn nhất thế giới. Đem về tổng hợp những đoạn hay nhất up lên. Và lúc đó là nhắn tin cho chủ bản quyền, xin là cho mình sử dụng lại, nhưng mình sẽ có thêm thuyết minh và những cái khác nữa. Họ đồng ý mà. Rồi cái trụ cột thứ, thứ ba, đó là việc chúng ta sử dụng ngắn hay là dài, có rơi vào trọng tâm của cái video kia không? Nếu video của họ 2 tiếng mà chỉ có 1 cái đoạn 1 phút đầu tiên hay nhất, không phải 1 phút đầu tiên là 1 phút trong video đấy hay nhất, cái nội dung đấy hay nhất, có thể flash ra toàn bộ cái nội dung đấy chẳng hạn, mà mình lại dùng đúng cái đoạn đấy thì vẫn ăn đòn bình thường, chứ không phải 3 giây, 5 giây hay 10 giây để an toàn. Trụ cột thứ 4 Đó là chúng ta có ảnh hưởng đến thị phần của người ta không? Nếu ảnh hưởng đến miếng bánh của người ta, thì chắc chắn Sớm hay muộn thôi, cũng ăn đòn Đấy Đấy là hợp tình hợp lý với Fair Use",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 6.44,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:06,440",
+      "text": "Đây là video nói về thuật toán đề xuất của YouTube, của chính YouTube."
+    },
+    {
+      "id": 2,
+      "start": 8.04,
+      "end": 11.46,
+      "start_time": "00:00:08,040",
+      "end_time": "00:00:11,460",
+      "text": "Mình sub tiếng Việt cho anh em."
+    },
+    {
+      "id": 3,
+      "start": 13.46,
+      "end": 16.58,
+      "start_time": "00:00:13,460",
+      "end_time": "00:00:16,580",
+      "text": "Là nhà sáng tạo, chắc hẳn bạn đã tự hỏi những điều như sau."
+    },
+    {
+      "id": 4,
+      "start": 16.92,
+      "end": 19.12,
+      "start_time": "00:00:16,920",
+      "end_time": "00:00:19,120",
+      "text": "YouTube chọn video để quảng bá bằng cách nào?"
+    },
+    {
+      "id": 5,
+      "start": 19.82,
+      "end": 22.72,
+      "start_time": "00:00:19,820",
+      "end_time": "00:00:22,720",
+      "text": "Biểu tượng màu vàng có ảnh hưởng đến tiềm năng khám phá của video không?"
+    },
+    {
+      "id": 6,
+      "start": 23.64,
+      "end": 25.32,
+      "start_time": "00:00:23,640",
+      "end_time": "00:00:25,320",
+      "text": "Các thẻ thì quan trọng như thế nào?"
+    },
+    {
+      "id": 7,
+      "start": 25.32,
+      "end": 34.08,
+      "start_time": "00:00:25,320",
+      "end_time": "00:00:34,080",
+      "text": "Trong video này, chúng tôi sẽ giải đáp tất cả những câu hỏi đó và nhiều điều khác về hệ thống tìm kiếm và khám phá của YouTube và nêu một số mẹo về tiềm năng khám phá của video."
+    },
+    {
+      "id": 8,
+      "start": 35.22,
+      "end": 38.34,
+      "start_time": "00:00:35,220",
+      "end_time": "00:00:38,340",
+      "text": "Đầu tiên, YouTube chọn video để quảng bá bằng cách nào?"
+    },
+    {
+      "id": 9,
+      "start": 39.0,
+      "end": 49.18,
+      "start_time": "00:00:39,000",
+      "end_time": "00:00:49,180",
+      "text": "Dù là trên trang chủ YouTube, phần tìm kiếm hay phần đề xuất, hệ thống đề xuất của YouTube thật ra là tìm video cho người xem, thay vì tìm người xem cho video."
+    },
+    {
+      "id": 10,
+      "start": 49.18,
+      "end": 56.32,
+      "start_time": "00:00:49,180",
+      "end_time": "00:00:56,320",
+      "text": "Thuật toán không đẩy hoặc quảng bá video, mà tìm video cho từng người dùng mỗi khi họ truy cập YouTube."
+    },
+    {
+      "id": 11,
+      "start": 56.84,
+      "end": 63.22,
+      "start_time": "00:00:56,840",
+      "end_time": "00:01:03,220",
+      "text": "Mục tiêu của hệ thống tìm kiếm và khám phá là tìm ra cho từng người xem những video phù hợp mà họ nhiều khả năng sẽ thích xem."
+    },
+    {
+      "id": 12,
+      "start": 63.3,
+      "end": 66.26,
+      "start_time": "00:01:03,300",
+      "end_time": "00:01:06,260",
+      "text": "Vì vậy, nội dung đề xuất cho mỗi người xem đều khác biệt một đôi chút."
+    },
+    {
+      "id": 13,
+      "start": 66.26,
+      "end": 71.16,
+      "start_time": "00:01:06,260",
+      "end_time": "00:01:11,160",
+      "text": "Các video được xếp hạng dựa trên hàng trăm tín hiệu, chủ yếu thuộc hai loại."
+    },
+    {
+      "id": 14,
+      "start": 71.88,
+      "end": 74.26,
+      "start_time": "00:01:11,880",
+      "end_time": "00:01:14,260",
+      "text": "Hoạt động cá nhân của người xem và hiệu suất của video."
+    },
+    {
+      "id": 15,
+      "start": 75.96,
+      "end": 86.26,
+      "start_time": "00:01:15,960",
+      "end_time": "00:01:26,260",
+      "text": "Hoạt động cá nhân của người xem thì dựa trên các tín hiệu về lựa chọn ưu tiên của một người dùng, như những video họ chọn xem, video họ chọn bỏ qua, hay là video họ loại bỏ."
+    },
+    {
+      "id": 16,
+      "start": 86.26,
+      "end": 90.867,
+      "start_time": "00:01:26,260",
+      "end_time": "00:01:30,867",
+      "text": "Tần suất họ xem một kênh hoặc chủ đề và nhiều tín hiệu khác."
+    },
+    {
+      "id": 17,
+      "start": 90.867,
+      "end": 97.387,
+      "start_time": "00:01:30,867",
+      "end_time": "00:01:37,387",
+      "text": "Hệ thống của chúng tôi cũng xem xét hiệu suất của video, tức là sức hút của nội dung đối với người xem, khi được giới thiệu cho họ."
+    },
+    {
+      "id": 18,
+      "start": 97.387,
+      "end": 104.974,
+      "start_time": "00:01:37,387",
+      "end_time": "00:01:44,974",
+      "text": "Ví dụ, người xem chọn video, bỏ qua, hay nhấp vào nút không quan tâm. Nếu họ chọn xem, họ xem bao lâu"
+    },
+    {
+      "id": 19,
+      "start": 104.974,
+      "end": 112.56,
+      "start_time": "00:01:44,974",
+      "end_time": "00:01:52,560",
+      "text": "và xem bao nhiêu phần trong video. Lúc này, thời lượng xem trung bình của video và tỷ lệ phần trăm đã xem trung"
+    },
+    {
+      "id": 20,
+      "start": 112.56,
+      "end": 120.147,
+      "start_time": "00:01:52,560",
+      "end_time": "00:02:00,147",
+      "text": "bình được hệ thống coi là những tín hiệu để xếp hạng video. Và cuối cùng, người xem có thích video hay không?"
+    },
+    {
+      "id": 21,
+      "start": 120.147,
+      "end": 125.247,
+      "start_time": "00:02:00,147",
+      "end_time": "00:02:05,247",
+      "text": "Chúng tôi đo lường mức độ hài lòng bằng nhiều tín hiệu như khảo sát dành cho những người dùng và số lượng thích."
+    },
+    {
+      "id": 22,
+      "start": 125.567,
+      "end": 130.547,
+      "start_time": "00:02:05,567",
+      "end_time": "00:02:10,547",
+      "text": "Những tín hiệu này giúp hệ thống của chúng tôi thu hẹp nhóm video phù hợp nhất để giới thiệu cho từng người xem."
+    },
+    {
+      "id": 23,
+      "start": 131.067,
+      "end": 135.127,
+      "start_time": "00:02:11,067",
+      "end_time": "00:02:15,127",
+      "text": "Nhà sáng tạo thường muốn biết thuật toán ưa chuộng loại video nào nhất."
+    },
+    {
+      "id": 24,
+      "start": 135.807,
+      "end": 141.207,
+      "start_time": "00:02:15,807",
+      "end_time": "00:02:21,207",
+      "text": "Nhưng hệ thống của chúng tôi không có ý kiến về loại video của bạn tạo ra và không ưu tiên dạng thức nào cụ thể."
+    },
+    {
+      "id": 25,
+      "start": 141.947,
+      "end": 144.467,
+      "start_time": "00:02:21,947",
+      "end_time": "00:02:24,467",
+      "text": "Thay vào đó, thuật toán cố gắng điều chỉnh theo khán giả."
+    },
+    {
+      "id": 26,
+      "start": 144.467,
+      "end": 150.987,
+      "start_time": "00:02:24,467",
+      "end_time": "00:02:30,987",
+      "text": "Vì vậy, thay vì lo, phải hiểu thuật toán hoặc số liệu phân tích, hãy tập trung tìm hiểu khán giả và nội dung họ thích xem."
+    },
+    {
+      "id": 27,
+      "start": 151.0,
+      "end": 158.187,
+      "start_time": "00:02:31,000",
+      "end_time": "00:02:38,187",
+      "text": "Tiếp theo, việc thay đổi tiêu đề hoặc hình thu nhỏ có đổi thứ hạng của video trong thuật toán hay không? Có thể. Nhưng đó là do hệ"
+    },
+    {
+      "id": 28,
+      "start": 158.187,
+      "end": 165.273,
+      "start_time": "00:02:38,187",
+      "end_time": "00:02:45,273",
+      "text": "thống của chúng tôi phản hồi khác đi, theo cách người xem tương tác với video của bạn. Chứ không phải do việc thay đổi tiêu đề hoặc hình thu"
+    },
+    {
+      "id": 29,
+      "start": 165.273,
+      "end": 172.36,
+      "start_time": "00:02:45,273",
+      "end_time": "00:02:52,360",
+      "text": "nhỏ video. Khi người xem thấy video của bạn có vẻ khác, cách họ tương tác với video sẽ thay đổi khi chúng tôi giới thiệu video cho họ."
+    },
+    {
+      "id": 30,
+      "start": 172.36,
+      "end": 180.273,
+      "start_time": "00:02:52,360",
+      "end_time": "00:03:00,273",
+      "text": "Việc đổi tiêu đề và hình thu nhỏ của video có thể là cách hiệu quả để có nhiều lượt xem hơn. Nhưng nếu video của bạn đang hoạt động tốt thì bạn không cần thay"
+    },
+    {
+      "id": 31,
+      "start": 180.273,
+      "end": 188.187,
+      "start_time": "00:03:00,273",
+      "end_time": "00:03:08,187",
+      "text": "đổi. Nếu một video của tôi hoạt động kém thì kênh của tôi có bị ảnh hưởng gì không? Điều quan trọng là cách người xem phản hồi với từng video. Khi video được đề"
+    },
+    {
+      "id": 32,
+      "start": 188.187,
+      "end": 196.1,
+      "start_time": "00:03:08,187",
+      "end_time": "00:03:16,100",
+      "text": "xuất cho họ, hệ thống của chúng tôi phụ thuộc vào nhiều tín hiệu ở cấp video và cấp khán giả để quyết định những video đề xuất phù hợp nhất với khán giả của bạn."
+    },
+    {
+      "id": 33,
+      "start": 196.1,
+      "end": 206.4,
+      "start_time": "00:03:16,100",
+      "end_time": "00:03:26,400",
+      "text": "Số lượng người xem tổng thể của kênh giảm có thể do mối quan tâm của mọi người thay đổi theo thời gian, hoặc khi người xem ngừng xem hầu hết các video của bạn khi video được giới thiệu."
+    },
+    {
+      "id": 34,
+      "start": 207.56,
+      "end": 212.54,
+      "start_time": "00:03:27,560",
+      "end_time": "00:03:32,540",
+      "text": "Trạng thái kiếm tiền, những biểu tượng màu vàng có ảnh hưởng đến phần tiềm năng khám phá của video không?"
+    },
+    {
+      "id": 35,
+      "start": 213.3,
+      "end": 218.6,
+      "start_time": "00:03:33,300",
+      "end_time": "00:03:38,600",
+      "text": "Không. Hệ thống tìm kiếm và đề xuất của chúng tôi không biết video nào được kiếm tiền và video nào không."
+    },
+    {
+      "id": 36,
+      "start": 219.46,
+      "end": 225.34,
+      "start_time": "00:03:39,460",
+      "end_time": "00:03:45,340",
+      "text": "Hệ thống tập trung đề xuất những video mà khán giả thấy hài lòng khi xem, bất kể khi chúng có được kiếm tiền hay là không."
+    },
+    {
+      "id": 37,
+      "start": 225.34,
+      "end": 234.76,
+      "start_time": "00:03:45,340",
+      "end_time": "00:03:54,760",
+      "text": "Nhưng nếu có nội dung bạo lực không phù hợp cho người xem chưa đến tuổi trưởng thành hoặc các nội dung phản cảm khác, video của bạn có thể bị tắt kiếm tiền vì không phù hợp với tất cả các nhà quảng cáo."
+    },
+    {
+      "id": 38,
+      "start": 235.0,
+      "end": 239.66,
+      "start_time": "00:03:55,000",
+      "end_time": "00:03:59,660",
+      "text": "Video cũng có thể không được đề xuất cho nhiều người xem vì không phù hợp với tất cả các đối tượng xem."
+    },
+    {
+      "id": 39,
+      "start": 240.892,
+      "end": 252.412,
+      "start_time": "00:04:00,892",
+      "end_time": "00:04:12,412",
+      "text": "Tôi có cần tải lên video hàng ngày hoặc ít nhất một tuần một lần không? Không. Sau nhiều năm phân tích, chúng tôi nhận ra rằng sự tăng trưởng số lượt xem và các video tải lên không tương quan với khoảng thời gian giữa các lần tải lên."
+    },
+    {
+      "id": 40,
+      "start": 252.412,
+      "end": 259.552,
+      "start_time": "00:04:12,412",
+      "end_time": "00:04:19,552",
+      "text": "Nhiều nhà sáng tạo đã xây dựng được mối gắn kết đáng tin cậy với khán giả bằng chất lượng thay vì là số lượng."
+    },
+    {
+      "id": 41,
+      "start": 260.252,
+      "end": 266.292,
+      "start_time": "00:04:20,252",
+      "end_time": "00:04:26,292",
+      "text": "Chúng tôi khuyến khích bạn chăm sóc bản thân để tránh kiệt sức. Điều này rất quan trọng đối với khán giả và sức khỏe của bạn."
+    },
+    {
+      "id": 42,
+      "start": 267.492,
+      "end": 270.692,
+      "start_time": "00:04:27,492",
+      "end_time": "00:04:30,692",
+      "text": "Có những yếu tố nào khác ảnh hưởng đến lượng người xem video của tôi không?"
+    },
+    {
+      "id": 43,
+      "start": 271.0,
+      "end": 278.792,
+      "start_time": "00:04:31,000",
+      "end_time": "00:04:38,792",
+      "text": "Có 3 yếu tố chính cho biết khán giả của bạn đến từ đâu. Đó là mối quan tâm đến với chủ đề, mức độ cạnh tranh và tính thời vụ."
+    },
+    {
+      "id": 44,
+      "start": 278.792,
+      "end": 285.232,
+      "start_time": "00:04:38,792",
+      "end_time": "00:04:45,232",
+      "text": "Mối quan tâm đến chủ đề đó là số lượng người trên toàn thế giới quan tâm và xem video về một chủ đề cụ thể."
+    },
+    {
+      "id": 45,
+      "start": 285.692,
+      "end": 293.412,
+      "start_time": "00:04:45,692",
+      "end_time": "00:04:53,412",
+      "text": "Một số chủ đề có sức hút lớn hơn những chủ đề khác, và sức hút này có thể thay đổi theo thời gian, khi một số chủ đề tăng hoặc giảm độ đột biến."
+    },
+    {
+      "id": 46,
+      "start": 295.152,
+      "end": 300.012,
+      "start_time": "00:04:55,152",
+      "end_time": "00:05:00,012",
+      "text": "Google Xu hướng là công cụ giúp bạn biết mức độ quan tâm của thế giới thay đổi như thế nào theo thời gian."
+    },
+    {
+      "id": 47,
+      "start": 300.572,
+      "end": 306.812,
+      "start_time": "00:05:00,572",
+      "end_time": "00:05:06,812",
+      "text": "Bạn thậm chí có thể lọc cụ thể đến mức quan tâm trong hoạt động tìm kiếm trên YouTube. Bạn chỉ cần vào Google Trends."
+    },
+    {
+      "id": 48,
+      "start": 308.792,
+      "end": 310.032,
+      "start_time": "00:05:08,792",
+      "end_time": "00:05:10,032",
+      "text": "Tiếp theo là mức độ cạnh tranh."
+    },
+    {
+      "id": 49,
+      "start": 310.53,
+      "end": 316.55,
+      "start_time": "00:05:10,530",
+      "end_time": "00:05:16,550",
+      "text": "Hệ thống của YouTube phải tìm kiếm và xếp hạng tất cả video mà người xem có thể muốn xem nhất."
+    },
+    {
+      "id": 50,
+      "start": 317.09,
+      "end": 326.73,
+      "start_time": "00:05:17,090",
+      "end_time": "00:05:26,730",
+      "text": "Ngay cả khi video của bạn có hiệu suất và có các chỉ số tốt, bạn vẫn có thể nhận ít được hiển thị hơn nếu video của các kênh hoặc nhà sáng tạo khác hoạt động còn tốt hơn."
+    },
+    {
+      "id": 51,
+      "start": 327.75,
+      "end": 329.57,
+      "start_time": "00:05:27,750",
+      "end_time": "00:05:29,570",
+      "text": "Sau cùng là tính thời vụ."
+    },
+    {
+      "id": 52,
+      "start": 330.11,
+      "end": 333.67,
+      "start_time": "00:05:30,110",
+      "end_time": "00:05:33,670",
+      "text": "Lưu lượng truy cập trên YouTube có thể thay đổi vào các thời điểm khác nhau trong năm."
+    },
+    {
+      "id": 53,
+      "start": 334.61,
+      "end": 339.43,
+      "start_time": "00:05:34,610",
+      "end_time": "00:05:39,430",
+      "text": "Và hãy nghĩ xem khán giả của bạn đang sống ở quốc gia nào, có những gì đang ảnh hưởng trong cuộc sống của họ."
+    },
+    {
+      "id": 54,
+      "start": 339.43,
+      "end": 343.65,
+      "start_time": "00:05:39,430",
+      "end_time": "00:05:43,650",
+      "text": "và biết rằng sẽ có rất là nhiều biến động về lượng người xem trong các ngày lễ lớn."
+    },
+    {
+      "id": 55,
+      "start": 344.31,
+      "end": 346.93,
+      "start_time": "00:05:44,310",
+      "end_time": "00:05:46,930",
+      "text": "Câu hỏi cuối cùng, các thẻ quan trọng như thế nào?"
+    },
+    {
+      "id": 56,
+      "start": 347.41,
+      "end": 349.43,
+      "start_time": "00:05:47,410",
+      "end_time": "00:05:49,430",
+      "text": "Thật sự thì, không quan trọng lắm."
+    },
+    {
+      "id": 57,
+      "start": 349.73,
+      "end": 352.43,
+      "start_time": "00:05:49,730",
+      "end_time": "00:05:52,430",
+      "text": "Thẻ chủ yếu được dùng để sửa các lỗi chính tả phổ biến."
+    },
+    {
+      "id": 58,
+      "start": 353.75,
+      "end": 358.59,
+      "start_time": "00:05:53,750",
+      "end_time": "00:05:58,590",
+      "text": "Ví dụ, YouTube so với YouTube vs YouTube."
+    },
+    {
+      "id": 59,
+      "start": 360.87,
+      "end": 367.33,
+      "start_time": "00:06:00,870",
+      "end_time": "00:06:07,330",
+      "text": "Hãy nhớ rằng, hệ thống của YouTube cá nhân hóa nội dung cho từng người xem và đề xuất nội dung dựa trên mối quan tâm của khán giả."
+    },
+    {
+      "id": 60,
+      "start": 367.33,
+      "end": 375.83,
+      "start_time": "00:06:07,330",
+      "end_time": "00:06:15,830",
+      "text": "Hệ thống cũng chịu ảnh hưởng của các hiệu suất và mức độ tương tác của video, cùng các yếu tố bên ngoài ảnh hưởng đến mối quan tâm của mọi người theo thời gian."
+    },
+    {
+      "id": 61,
+      "start": 375.83,
+      "end": 383.53,
+      "start_time": "00:06:15,830",
+      "end_time": "00:06:23,530",
+      "text": "Hãy tập trung vào những nội dung mà khán giả của bạn thích. Nếu bạn làm vậy và mọi người thích xem, thì hệ thống đề xuất sẽ điều chỉnh theo."
+    },
+    {
+      "id": 62,
+      "start": 398.0,
+      "end": 410.187,
+      "start_time": "00:06:38,000",
+      "end_time": "00:06:50,187",
+      "text": "Rồi, ok, ok. Video này có gửi cho anh em rồi, nhưng không biết anh em có xem không? Khóa nào cũng nói rồi. Tìm những thứ chính thống ở trên YouTube họ dạy đây."
+    },
+    {
+      "id": 63,
+      "start": 410.867,
+      "end": 415.967,
+      "start_time": "00:06:50,867",
+      "end_time": "00:06:55,967",
+      "text": "Họ nói rõ mà, họ là nền tảng, nên họ cũng muốn mình hiểu và làm."
+    },
+    {
+      "id": 64,
+      "start": 416.467,
+      "end": 420.547,
+      "start_time": "00:06:56,467",
+      "end_time": "00:07:00,547",
+      "text": "Bởi vì sao? Họ có 45% tiền của anh em kiếm được ấy."
+    },
+    {
+      "id": 65,
+      "start": 422.527,
+      "end": 430.687,
+      "start_time": "00:07:02,527",
+      "end_time": "00:07:10,687",
+      "text": "Thế thì ở đây trong cái video nó nói về video đề xuất của YouTube, tức là nó có rất"
+    },
+    {
+      "id": 66,
+      "start": 430.687,
+      "end": 438.847,
+      "start_time": "00:07:10,687",
+      "end_time": "00:07:18,847",
+      "text": "nhiều video đem video đến cho người dùng, chứ không phải là nhấc người dùng đi tìm video của bạn."
+    },
+    {
+      "id": 67,
+      "start": 438.847,
+      "end": 445.76,
+      "start_time": "00:07:18,847",
+      "end_time": "00:07:25,760",
+      "text": "Tức là nó hiểu rằng một người có xu hướng xem nhiều nội dung khác nhau. Đây cũng là tư duy"
+    },
+    {
+      "id": 68,
+      "start": 445.76,
+      "end": 452.674,
+      "start_time": "00:07:25,760",
+      "end_time": "00:07:32,674",
+      "text": "trong việc xây dựng mô hình kinh doanh long tail, tức là cái đuôi dài. Chúng ta có một tệp khách hàng"
+    },
+    {
+      "id": 69,
+      "start": 452.674,
+      "end": 459.587,
+      "start_time": "00:07:32,674",
+      "end_time": "00:07:39,587",
+      "text": "và chúng ta bán cho họ nhiều sản phẩm, thay vì việc chúng ta phải đi tìm một khách hàng mới."
+    },
+    {
+      "id": 70,
+      "start": 461.45,
+      "end": 466.53,
+      "start_time": "00:07:41,450",
+      "end_time": "00:07:46,530",
+      "text": "Mô hình này trong canvas nó cũng có. Mô hình kinh doanh canvas nó cũng có."
+    },
+    {
+      "id": 71,
+      "start": 467.91,
+      "end": 477.29,
+      "start_time": "00:07:47,910",
+      "end_time": "00:07:57,290",
+      "text": "Nên họ giải thích rằng nếu một video của bạn mặc dù đang được xanh các chỉ số rất tốt so với trong kênh của bạn,"
+    },
+    {
+      "id": 72,
+      "start": 477.95,
+      "end": 488.51,
+      "start_time": "00:07:57,950",
+      "end_time": "00:08:08,510",
+      "text": "nhưng nó không có người xem bởi vì ở một đâu đó có một video nào đấy của đối thủ họ đang quan tâm nhiều hơn."
+    },
+    {
+      "id": 73,
+      "start": 488.51,
+      "end": 497.99,
+      "start_time": "00:08:08,510",
+      "end_time": "00:08:17,990",
+      "text": "Nó liên quan đến tính thời vụ. Ví dụ tự nhiên mà lại có một cái tin gì đấy hot là mọi người sẽ dồn đổ xô sang cái"
+    },
+    {
+      "id": 74,
+      "start": 497.99,
+      "end": 507.47,
+      "start_time": "00:08:17,990",
+      "end_time": "00:08:27,470",
+      "text": "tin hot đấy. Ví dụ hôm nay mà có trận bóng đá, 7h tối có trận bóng đá, giờ vàng của anh em là 7h tối. Anh em"
+    },
+    {
+      "id": 75,
+      "start": 507.47,
+      "end": 516.95,
+      "start_time": "00:08:27,470",
+      "end_time": "00:08:36,950",
+      "text": "đăng YouTube lên 7h tối mà xem. Làm gì có ai xem? Người ta đi xem bóng đá hết rồi. Sau bóng đá, view nó mới dựng ngược lên."
+    },
+    {
+      "id": 76,
+      "start": 516.95,
+      "end": 524.84,
+      "start_time": "00:08:36,950",
+      "end_time": "00:08:44,840",
+      "text": "Và họ nói rằng là vì một người này có nhiều sở thích như vậy nên"
+    },
+    {
+      "id": 77,
+      "start": 524.84,
+      "end": 532.73,
+      "start_time": "00:08:44,840",
+      "end_time": "00:08:52,730",
+      "text": "họ sẽ dựa vào các tín hiệu của video đấy để có thể là đề xuất."
+    },
+    {
+      "id": 78,
+      "start": 533.0,
+      "end": 535.43,
+      "start_time": "00:08:53,000",
+      "end_time": "00:08:55,430",
+      "text": "Và tín hiệu đấy nó dựa trên 2 thứ"
+    },
+    {
+      "id": 79,
+      "start": 535.43,
+      "end": 538.27,
+      "start_time": "00:08:55,430",
+      "end_time": "00:08:58,270",
+      "text": "Một là tương tác ở trong video"
+    },
+    {
+      "id": 80,
+      "start": 538.27,
+      "end": 540.71,
+      "start_time": "00:08:58,270",
+      "end_time": "00:09:00,710",
+      "text": "Hai là hiệu suất của video"
+    },
+    {
+      "id": 81,
+      "start": 540.71,
+      "end": 546.63,
+      "start_time": "00:09:00,710",
+      "end_time": "00:09:06,630",
+      "text": "Tương tác ở trong video tức là hành vi của người dùng với video đấy trên nền tảng YouTube"
+    },
+    {
+      "id": 82,
+      "start": 546.63,
+      "end": 549.61,
+      "start_time": "00:09:06,630",
+      "end_time": "00:09:09,610",
+      "text": "Bao gồm like, share, comment"
+    },
+    {
+      "id": 83,
+      "start": 549.61,
+      "end": 552.73,
+      "start_time": "00:09:09,610",
+      "end_time": "00:09:12,730",
+      "text": "Kích vào cái thanh lên xuống"
+    },
+    {
+      "id": 84,
+      "start": 552.73,
+      "end": 554.73,
+      "start_time": "00:09:12,730",
+      "end_time": "00:09:14,730",
+      "text": "Tua qua, tua lại"
+    },
+    {
+      "id": 85,
+      "start": 554.73,
+      "end": 557.73,
+      "start_time": "00:09:14,730",
+      "end_time": "00:09:17,730",
+      "text": "Chọn 0.5 hay là chọn 1 hay tốc độ 2"
+    },
+    {
+      "id": 86,
+      "start": 557.73,
+      "end": 561.73,
+      "start_time": "00:09:17,730",
+      "end_time": "00:09:21,730",
+      "text": "Chọn video HD hay Full HD cái gì đấy để tương tác với nền tảng"
+    },
+    {
+      "id": 87,
+      "start": 561.73,
+      "end": 563.73,
+      "start_time": "00:09:21,730",
+      "end_time": "00:09:23,730",
+      "text": "Đấy là phần tương tác"
+    },
+    {
+      "id": 88,
+      "start": 563.73,
+      "end": 565.73,
+      "start_time": "00:09:23,730",
+      "end_time": "00:09:25,730",
+      "text": "Nó giúp cho tăng view rất mạnh"
+    },
+    {
+      "id": 89,
+      "start": 565.73,
+      "end": 568.73,
+      "start_time": "00:09:25,730",
+      "end_time": "00:09:28,730",
+      "text": "Bởi vì thế nó là 1 phần 2 rồi"
+    },
+    {
+      "id": 90,
+      "start": 568.73,
+      "end": 572.73,
+      "start_time": "00:09:28,730",
+      "end_time": "00:09:32,730",
+      "text": "Nó là 1 phần 2 cái yếu tố để ảnh hưởng đến lượng view"
+    },
+    {
+      "id": 91,
+      "start": 572.73,
+      "end": 573.33,
+      "start_time": "00:09:32,730",
+      "end_time": "00:09:33,330",
+      "text": "Tương tác."
+    },
+    {
+      "id": 92,
+      "start": 573.347,
+      "end": 577.667,
+      "start_time": "00:09:33,347",
+      "end_time": "00:09:37,667",
+      "text": "Nên cần phải có những sự tương tác ở trong kênh."
+    },
+    {
+      "id": 93,
+      "start": 579.807,
+      "end": 586.167,
+      "start_time": "00:09:39,807",
+      "end_time": "00:09:46,167",
+      "text": "Cái tương tác dễ nhất, đơn giản nhất là chăm tab cộng đồng."
+    },
+    {
+      "id": 94,
+      "start": 589.167,
+      "end": 594.087,
+      "start_time": "00:09:49,167",
+      "end_time": "00:09:54,087",
+      "text": "Họ nói rằng có những nội dung mà không cần đăng lên nhiều."
+    },
+    {
+      "id": 95,
+      "start": 595.047,
+      "end": 598.0,
+      "start_time": "00:09:55,047",
+      "end_time": "00:09:58,000",
+      "text": "Nhưng cái tính gắn kết với khán giả đã được hình thành."
+    },
+    {
+      "id": 96,
+      "start": 598.0,
+      "end": 607.507,
+      "start_time": "00:09:58,000",
+      "end_time": "00:10:07,507",
+      "text": "Và tính gắn kết với khán giả này, chúng ta có thể tận dụng được các tính năng. Một là chăm tab cộng đồng. Tab cộng đồng, Hoàng"
+    },
+    {
+      "id": 97,
+      "start": 607.507,
+      "end": 616.807,
+      "start_time": "00:10:07,507",
+      "end_time": "00:10:16,807",
+      "text": "bật một cái tab cộng đồng bất kỳ của một kênh lên đi. Thông thường anh em đều dùng tab cộng đồng kiểu spam, có video up lên."
+    },
+    {
+      "id": 98,
+      "start": 616.807,
+      "end": 626.357,
+      "start_time": "00:10:16,807",
+      "end_time": "00:10:26,357",
+      "text": "Thì nó sẽ gặp một cái vấn đề lớn. Ví dụ kênh này, kéo lên nữa đi. Kênh này Việt Nam làm trăm phần trăm. Đây"
+    },
+    {
+      "id": 99,
+      "start": 626.357,
+      "end": 635.907,
+      "start_time": "00:10:26,357",
+      "end_time": "00:10:35,907",
+      "text": "là một dạng spam khán giả. Tab cộng đồng này vứt đi. Mình mà nhảy vào kênh, vào chủ đề này, mình sẽ vượt thằng này luôn."
+    },
+    {
+      "id": 100,
+      "start": 638.45,
+      "end": 651.65,
+      "start_time": "00:10:38,450",
+      "end_time": "00:10:51,650",
+      "text": "Thế này là nhồi vào đầu khán giả rồi, làm gì có mà tương tác, làm gì có mà hai chiều, người ta nhìn qua cái này người ta còn bỏ qua, là nó tính vào trong hệ thống đề xuất là nó bỏ qua video hay không."
+    },
+    {
+      "id": 101,
+      "start": 652.57,
+      "end": 656.75,
+      "start_time": "00:10:52,570",
+      "end_time": "00:10:56,750",
+      "text": "Rồi, kích vào tab cộng đồng, vào một kênh của tab cộng đồng để anh em xem."
+    },
+    {
+      "id": 102,
+      "start": 657.91,
+      "end": 658.55,
+      "start_time": "00:10:57,910",
+      "end_time": "00:10:58,550",
+      "text": "Bí quyết thành công đi."
+    },
+    {
+      "id": 103,
+      "start": 659.61,
+      "end": 662.21,
+      "start_time": "00:10:59,610",
+      "end_time": "00:11:02,210",
+      "text": "Cái này mình bỏ, mình không làm nữa, không chăm tab cộng đồng."
+    },
+    {
+      "id": 104,
+      "start": 663.03,
+      "end": 664.95,
+      "start_time": "00:11:03,030",
+      "end_time": "00:11:04,950",
+      "text": "Rồi, nhìn này, nó có cái yếu tố, hình ảnh."
+    },
+    {
+      "id": 105,
+      "start": 664.95,
+      "end": 670.65,
+      "start_time": "00:11:04,950",
+      "end_time": "00:11:10,650",
+      "text": "Hình ảnh, cuộc thăm dò ý kiến, thăm dò ý kiến cá nhân, đố vui và video."
+    },
+    {
+      "id": 106,
+      "start": 671.77,
+      "end": 674.11,
+      "start_time": "00:11:11,770",
+      "end_time": "00:11:14,110",
+      "text": "Hãy coi đây là một cái fanpage của anh em."
+    },
+    {
+      "id": 107,
+      "start": 675.59,
+      "end": 679.95,
+      "start_time": "00:11:15,590",
+      "end_time": "00:11:19,950",
+      "text": "Và làm đầy đủ cả 5 cái này để tương tác với khán giả."
+    },
+    {
+      "id": 108,
+      "start": 680.53,
+      "end": 682.99,
+      "start_time": "00:11:20,530",
+      "end_time": "00:11:22,990",
+      "text": "Nó giúp cho chúng ta tăng phần gắn kết với khán giả."
+    },
+    {
+      "id": 109,
+      "start": 685.15,
+      "end": 689.15,
+      "start_time": "00:11:25,150",
+      "end_time": "00:11:29,150",
+      "text": "Phần tương tác cực kỳ quan trọng"
+    },
+    {
+      "id": 110,
+      "start": 689.15,
+      "end": 692.09,
+      "start_time": "00:11:29,150",
+      "end_time": "00:11:32,090",
+      "text": "Chăm tab cộng đồng bên mình"
+    },
+    {
+      "id": 111,
+      "start": 692.09,
+      "end": 695.21,
+      "start_time": "00:11:32,090",
+      "end_time": "00:11:35,210",
+      "text": "Cực kỳ chú trọng về chăm tab cộng đồng"
+    },
+    {
+      "id": 112,
+      "start": 695.45,
+      "end": 702.79,
+      "start_time": "00:11:35,450",
+      "end_time": "00:11:42,790",
+      "text": "Và đây là một bí mật để là lên top 1 đấy. Tất cả những kênh top 1 của mình đều chăm tab cộng đồng rất kinh luôn."
+    },
+    {
+      "id": 113,
+      "start": 702.79,
+      "end": 708.59,
+      "start_time": "00:11:42,790",
+      "end_time": "00:11:48,590",
+      "text": "Có các yếu tố của một con người"
+    },
+    {
+      "id": 114,
+      "start": 708.59,
+      "end": 710.91,
+      "start_time": "00:11:48,590",
+      "end_time": "00:11:50,910",
+      "text": "Khi mà xem video bao gồm"
+    },
+    {
+      "id": 115,
+      "start": 710.91,
+      "end": 713.65,
+      "start_time": "00:11:50,910",
+      "end_time": "00:11:53,650",
+      "text": "Cái mối quan tâm của cái chủ đề đấy"
+    },
+    {
+      "id": 116,
+      "start": 713.65,
+      "end": 717.05,
+      "start_time": "00:11:53,650",
+      "end_time": "00:11:57,050",
+      "text": "Tức là tư duy của chúng ta là chọn thị trường đỏ"
+    },
+    {
+      "id": 117,
+      "start": 717.05,
+      "end": 720.53,
+      "start_time": "00:11:57,050",
+      "end_time": "00:12:00,530",
+      "text": "Là nơi có nhiều view để làm là ok"
+    },
+    {
+      "id": 118,
+      "start": 720.53,
+      "end": 722.79,
+      "start_time": "00:12:00,530",
+      "end_time": "00:12:02,790",
+      "text": "Cái tính cạnh tranh này"
+    },
+    {
+      "id": 119,
+      "start": 722.79,
+      "end": 732.892,
+      "start_time": "00:12:02,790",
+      "end_time": "00:12:12,892",
+      "text": "Tức là nó giải thích tính cạnh tranh là nhiều video cạnh tranh với nhau để tranh giành thời gian xem của một người sử dụng nền tảng."
+    },
+    {
+      "id": 120,
+      "start": 732.892,
+      "end": 735.772,
+      "start_time": "00:12:12,892",
+      "end_time": "00:12:15,772",
+      "text": "Ví dụ một người về đàn ông có rất nhiều sở thích."
+    },
+    {
+      "id": 121,
+      "start": 736.612,
+      "end": 740.912,
+      "start_time": "00:12:16,612",
+      "end_time": "00:12:20,912",
+      "text": "Thích xem về gái xinh, thích xem về ô tô, thích xem về nhà đẹp."
+    },
+    {
+      "id": 122,
+      "start": 740.912,
+      "end": 750.852,
+      "start_time": "00:12:20,912",
+      "end_time": "00:12:30,852",
+      "text": "Nếu bình thường sở thích đang là xem một cái nhà mà hôm đấy tự nhiên lại có trend về gái xinh, rất có thể lượng view sẽ bị tụt."
+    },
+    {
+      "id": 123,
+      "start": 751.592,
+      "end": 761.172,
+      "start_time": "00:12:31,592",
+      "end_time": "00:12:41,172",
+      "text": "Mặc dù các kênh, các trong kênh của mình chỉ số này đều rất ok, nhưng vì chúng ta đã thua với một thằng đối thủ nào đấy trên thị trường kia mà chúng ta không biết."
+    },
+    {
+      "id": 124,
+      "start": 761.172,
+      "end": 769.232,
+      "start_time": "00:12:41,172",
+      "end_time": "00:12:49,232",
+      "text": "Và tính thời vụ, tính thời vụ là nó liên quan đến thời gian và theo mùa."
+    },
+    {
+      "id": 125,
+      "start": 772.032,
+      "end": 781.612,
+      "start_time": "00:12:52,032",
+      "end_time": "00:13:01,612",
+      "text": "Cái video về chữa lành ấy, nó có những video là 8 tiếng liền. Nó chỉ quay cái cảnh củi đốt trong lò."
+    },
+    {
+      "id": 126,
+      "start": 783.552,
+      "end": 788.072,
+      "start_time": "00:13:03,552",
+      "end_time": "00:13:08,072",
+      "text": "Tiếng nổ lách tách, lách tách của những cái khúc gỗ."
+    },
+    {
+      "id": 127,
+      "start": 788.072,
+      "end": 796.932,
+      "start_time": "00:13:08,072",
+      "end_time": "00:13:16,932",
+      "text": "Nhưng mà đến mùa hè thì ai xem những cái đấy nữa? Nóng, cảm giác nóng. Thích xem tuyết rơi, thích xem mưa, thích nghe tiếng lộp,"
+    },
+    {
+      "id": 128,
+      "start": 796.932,
+      "end": 805.792,
+      "start_time": "00:13:16,932",
+      "end_time": "00:13:25,792",
+      "text": "bộp, lộp, bộp, lộp, bộp. Thì video về bên kia của mình tự nhiên là nó hết view nhé. Nó tính thời vụ, nó tính theo mùa."
+    },
+    {
+      "id": 129,
+      "start": 807.9,
+      "end": 820.04,
+      "start_time": "00:13:27,900",
+      "end_time": "00:13:40,040",
+      "text": "Hoặc những cái bệnh mà theo mùa không thế. Thì phải đến cái mùa đấy, đến mùa lạnh thì nó mới cảm cúm nhiều. Thì video về chữa cảm cúm mọi thứ nó lại quay trở lại. Nó có tính theo trend và theo thời vụ như vậy."
+    },
+    {
+      "id": 130,
+      "start": 820.04,
+      "end": 823.2,
+      "start_time": "00:13:40,040",
+      "end_time": "00:13:43,200",
+      "text": "Nên khi mà chúng ta làm"
+    },
+    {
+      "id": 131,
+      "start": 823.2,
+      "end": 825.9,
+      "start_time": "00:13:43,200",
+      "end_time": "00:13:45,900",
+      "text": "Cuối cùng họ nói rằng là"
+    },
+    {
+      "id": 132,
+      "start": 825.9,
+      "end": 828.46,
+      "start_time": "00:13:45,900",
+      "end_time": "00:13:48,460",
+      "text": "Thay vì tập trung vào nền tảng"
+    },
+    {
+      "id": 133,
+      "start": 828.46,
+      "end": 832.38,
+      "start_time": "00:13:48,460",
+      "end_time": "00:13:52,380",
+      "text": "Thay vì tập trung vào các yếu tố về đề xuất"
+    },
+    {
+      "id": 134,
+      "start": 832.38,
+      "end": 835.32,
+      "start_time": "00:13:52,380",
+      "end_time": "00:13:55,320",
+      "text": "Bạn không cần phải trở thành một chuyên gia trong việc SEO"
+    },
+    {
+      "id": 135,
+      "start": 835.32,
+      "end": 839.44,
+      "start_time": "00:13:55,320",
+      "end_time": "00:13:59,440",
+      "text": "Bạn không cần phải trở thành một chuyên gia để về dữ liệu phân tích"
+    },
+    {
+      "id": 136,
+      "start": 839.44,
+      "end": 843.08,
+      "start_time": "00:13:59,440",
+      "end_time": "00:14:03,080",
+      "text": "Cái thứ duy nhất chúng ta cần tập trung là khán giả"
+    },
+    {
+      "id": 137,
+      "start": 845.0,
+      "end": 846.92,
+      "start_time": "00:14:05,000",
+      "end_time": "00:14:06,920",
+      "text": "Đây là điều quan trọng nhất"
+    },
+    {
+      "id": 138,
+      "start": 846.92,
+      "end": 859.52,
+      "start_time": "00:14:06,920",
+      "end_time": "00:14:19,520",
+      "text": "Nó cũng thể hiện cho việc là chúng ta làm Fair Use. Fair Use là cái trụ cột đầu tiên là chúng ta có biến đổi nhiều hay không so với tác phẩm gốc. Để làm gì? Để chúng ta phục vụ cho khán giả."
+    },
+    {
+      "id": 139,
+      "start": 860.74,
+      "end": 874.08,
+      "start_time": "00:14:20,740",
+      "end_time": "00:14:34,080",
+      "text": "Cái thứ hai là chúng ta có chọn những cái nội dung đấy mà tránh những cái thằng to ra, tránh những cái thằng bản quyền to ra, tức là những cái thằng nó có công ty đằng sau, pháp lý đằng sau để hỗ trợ."
+    },
+    {
+      "id": 140,
+      "start": 874.08,
+      "end": 878.9,
+      "start_time": "00:14:34,080",
+      "end_time": "00:14:38,900",
+      "text": "bao gồm các công ty về game show, truyền hình, thể thao, âm nhạc."
+    },
+    {
+      "id": 141,
+      "start": 881.52,
+      "end": 886.5,
+      "start_time": "00:14:41,520",
+      "end_time": "00:14:46,500",
+      "text": "Thì tránh những cái đấy ra và tránh quyền sở hữu của các network ra. Nó cũng có."
+    },
+    {
+      "id": 142,
+      "start": 888.4,
+      "end": 890.4,
+      "start_time": "00:14:48,400",
+      "end_time": "00:14:50,400",
+      "text": "Thì mình tập trung vào chọn những nội dung."
+    },
+    {
+      "id": 143,
+      "start": 890.62,
+      "end": 892.76,
+      "start_time": "00:14:50,620",
+      "end_time": "00:14:52,760",
+      "text": "Một, footage liên quan đến việc chúng ta có thể mua được."
+    },
+    {
+      "id": 144,
+      "start": 893.58,
+      "end": 896.12,
+      "start_time": "00:14:53,580",
+      "end_time": "00:14:56,120",
+      "text": "Cái thứ hai, chính những nhà sáng tạo ở trên YouTube đấy họ dùng."
+    },
+    {
+      "id": 145,
+      "start": 896.42,
+      "end": 897.58,
+      "start_time": "00:14:56,420",
+      "end_time": "00:14:57,580",
+      "text": "Mình cũng có thể mua lại được."
+    },
+    {
+      "id": 146,
+      "start": 898.439,
+      "end": 901.319,
+      "start_time": "00:14:58,439",
+      "end_time": "00:15:01,319",
+      "text": "Nhắn tin cho họ mua lại được cái quyền sử dụng, vẫn được bình thường."
+    },
+    {
+      "id": 147,
+      "start": 902.319,
+      "end": 906.459,
+      "start_time": "00:15:02,319",
+      "end_time": "00:15:06,459",
+      "text": "Ở các nền tảng khác cũng thế. Nhắn tin xin họ về bản quyền, rất ok."
+    },
+    {
+      "id": 148,
+      "start": 907.119,
+      "end": 914.219,
+      "start_time": "00:15:07,119",
+      "end_time": "00:15:14,219",
+      "text": "Ngày xưa bên mình làm Fortnite là lấy cái nội dung ở trên cái nền tảng Twitch.tv là cái nền tảng live stream lớn nhất thế giới."
+    },
+    {
+      "id": 149,
+      "start": 914.839,
+      "end": 916.819,
+      "start_time": "00:15:14,839",
+      "end_time": "00:15:16,819",
+      "text": "Đem về tổng hợp những đoạn hay nhất up lên."
+    },
+    {
+      "id": 150,
+      "start": 917.259,
+      "end": 927.299,
+      "start_time": "00:15:17,259",
+      "end_time": "00:15:27,299",
+      "text": "Và lúc đó là nhắn tin cho chủ bản quyền, xin là cho mình sử dụng lại, nhưng mình sẽ có thêm thuyết minh và những cái khác nữa. Họ đồng ý mà."
+    },
+    {
+      "id": 151,
+      "start": 929.779,
+      "end": 940.179,
+      "start_time": "00:15:29,779",
+      "end_time": "00:15:40,179",
+      "text": "Rồi cái trụ cột thứ, thứ ba, đó là việc chúng ta sử dụng ngắn hay là dài, có rơi vào trọng tâm của cái video kia không?"
+    },
+    {
+      "id": 152,
+      "start": 940.179,
+      "end": 949.339,
+      "start_time": "00:15:40,179",
+      "end_time": "00:15:49,339",
+      "text": "Nếu video của họ 2 tiếng mà chỉ có 1 cái đoạn 1 phút đầu tiên hay nhất, không phải 1 phút đầu tiên là 1 phút trong video đấy hay nhất, cái nội dung đấy hay nhất,"
+    },
+    {
+      "id": 153,
+      "start": 949.339,
+      "end": 958.499,
+      "start_time": "00:15:49,339",
+      "end_time": "00:15:58,499",
+      "text": "có thể flash ra toàn bộ cái nội dung đấy chẳng hạn, mà mình lại dùng đúng cái đoạn đấy thì vẫn ăn đòn bình thường, chứ không phải 3 giây, 5 giây hay 10 giây để an toàn."
+    },
+    {
+      "id": 154,
+      "start": 958.499,
+      "end": 962.319,
+      "start_time": "00:15:58,499",
+      "end_time": "00:16:02,319",
+      "text": "Trụ cột thứ 4"
+    },
+    {
+      "id": 155,
+      "start": 962.319,
+      "end": 965.939,
+      "start_time": "00:16:02,319",
+      "end_time": "00:16:05,939",
+      "text": "Đó là chúng ta có ảnh hưởng đến thị phần của người ta không?"
+    },
+    {
+      "id": 156,
+      "start": 966.799,
+      "end": 969.219,
+      "start_time": "00:16:06,799",
+      "end_time": "00:16:09,219",
+      "text": "Nếu ảnh hưởng đến miếng bánh của người ta, thì chắc chắn"
+    },
+    {
+      "id": 157,
+      "start": 969.219,
+      "end": 971.539,
+      "start_time": "00:16:09,219",
+      "end_time": "00:16:11,539",
+      "text": "Sớm hay muộn thôi, cũng ăn đòn"
+    },
+    {
+      "id": 158,
+      "start": 971.539,
+      "end": 972.639,
+      "start_time": "00:16:11,539",
+      "end_time": "00:16:12,639",
+      "text": "Đấy"
+    },
+    {
+      "id": 159,
+      "start": 972.639,
+      "end": 975.899,
+      "start_time": "00:16:12,639",
+      "end_time": "00:16:15,899",
+      "text": "Đấy là hợp tình hợp lý với Fair Use"
+    }
+  ]
+}

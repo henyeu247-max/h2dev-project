@@ -1,0 +1,3728 @@
+{
+  "sku": "VIDEO-f59aa7",
+  "duration": 2588.366667,
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.0,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:03,000",
+      "text": "Xin chào tất cả mấy bác."
+    },
+    {
+      "id": 2,
+      "start": 3.0,
+      "end": 11.0,
+      "start_time": "00:00:03,000",
+      "end_time": "00:00:11,000",
+      "text": "Hôm nay em sẽ hướng dẫn cho các bạn về cách làm kênh nhân bản ở các thị trường cho mọi người."
+    },
+    {
+      "id": 3,
+      "start": 11.0,
+      "end": 18.0,
+      "start_time": "00:00:11,000",
+      "end_time": "00:00:18,000",
+      "text": "Em đang bị ốm nên giọng hơi khàn mấy bác thông cảm tí nha."
+    },
+    {
+      "id": 4,
+      "start": 18.0,
+      "end": 21.0,
+      "start_time": "00:00:18,000",
+      "end_time": "00:00:21,000",
+      "text": "Bây giờ em sẽ ví dụ về kênh này nha mọi người."
+    },
+    {
+      "id": 5,
+      "start": 21.0,
+      "end": 27.0,
+      "start_time": "00:00:21,000",
+      "end_time": "00:00:27,000",
+      "text": "Ở video này em sẽ hướng dẫn cho mấy bác về ví dụ cho bác bia kì luôn nha về cách nhân bản thị trường nha."
+    },
+    {
+      "id": 6,
+      "start": 27.0,
+      "end": 35.35,
+      "start_time": "00:00:27,000",
+      "end_time": "00:00:35,350",
+      "text": "Ok, về cái kênh này thì view của nó rất là thấp. Về cái kênh này đang ở thị trường Hoa Kỳ, nha mọi người. Đấy, và cái"
+    },
+    {
+      "id": 7,
+      "start": 35.35,
+      "end": 43.7,
+      "start_time": "00:00:35,350",
+      "end_time": "00:00:43,700",
+      "text": "view của nó đang rất là thấp nè. Nhưng mà em chỉ cho bác xem một cái điều rất là kinh khủng, rất là thú vị nha."
+    },
+    {
+      "id": 8,
+      "start": 43.7,
+      "end": 51.7,
+      "start_time": "00:00:43,700",
+      "end_time": "00:00:51,700",
+      "text": "Tại đây, kênh đang ở thị trường Hoa Kỳ, và view của nó rất là thấp, chỉ có 1-2 view thôi."
+    },
+    {
+      "id": 9,
+      "start": 51.7,
+      "end": 57.7,
+      "start_time": "00:00:51,700",
+      "end_time": "00:00:57,700",
+      "text": "Nhưng em sẽ cho các bạn xem cách làm ở thị trường khác như thế nào nha mọi người."
+    },
+    {
+      "id": 10,
+      "start": 57.7,
+      "end": 64.7,
+      "start_time": "00:00:57,700",
+      "end_time": "00:01:04,700",
+      "text": "Ở clip này em sẽ không khác gì mà truyền nghề luôn nha mọi người, đây là cách em làm thường xuyên luôn nha."
+    },
+    {
+      "id": 11,
+      "start": 64.7,
+      "end": 67.88,
+      "start_time": "00:01:04,700",
+      "end_time": "00:01:07,880",
+      "text": "Rồi đây là ví dụ một cái kênh"
+    },
+    {
+      "id": 12,
+      "start": 67.88,
+      "end": 71.42,
+      "start_time": "00:01:07,880",
+      "end_time": "00:01:11,420",
+      "text": "Đấy mọi người thấy không view cao nhất của nó chỉ có 2.2k thôi"
+    },
+    {
+      "id": 13,
+      "start": 71.42,
+      "end": 73.76,
+      "start_time": "00:01:11,420",
+      "end_time": "00:01:13,760",
+      "text": "Đấy, 2k2 người xem thôi"
+    },
+    {
+      "id": 14,
+      "start": 73.76,
+      "end": 76.68,
+      "start_time": "00:01:13,760",
+      "end_time": "00:01:16,680",
+      "text": "Vậy đang ở thị trường Hoa Kỳ nha mọi người đang view rất thấp"
+    },
+    {
+      "id": 15,
+      "start": 76.68,
+      "end": 81.48,
+      "start_time": "00:01:16,680",
+      "end_time": "00:01:21,480",
+      "text": "Rồi bây giờ em sẽ tiếp tục sẽ cho bác kênh xem kênh của nó nữa nè"
+    },
+    {
+      "id": 16,
+      "start": 81.48,
+      "end": 84.62,
+      "start_time": "00:01:21,480",
+      "end_time": "00:01:24,620",
+      "text": "Nhưng mà lúc này thì nó đang nhân bản kênh của nó"
+    },
+    {
+      "id": 17,
+      "start": 84.62,
+      "end": 86.86,
+      "start_time": "00:01:24,620",
+      "end_time": "00:01:26,860",
+      "text": "Đang ở thị trường Nhật Bản nha mọi người"
+    },
+    {
+      "id": 18,
+      "start": 86.86,
+      "end": 90.7,
+      "start_time": "00:01:26,860",
+      "end_time": "00:01:30,700",
+      "text": "Đấy cái chỗ này Hoa Kỳ thì nó đang setting chưa chuyển đổi vị trí nè"
+    },
+    {
+      "id": 19,
+      "start": 90.7,
+      "end": 92.44,
+      "start_time": "00:01:30,700",
+      "end_time": "00:01:32,440",
+      "text": "Nhưng vẫn cắn view đều nha"
+    },
+    {
+      "id": 20,
+      "start": 92.44,
+      "end": 97.94,
+      "start_time": "00:01:32,440",
+      "end_time": "00:01:37,940",
+      "text": "Nếu mọi người làm thì mọi người phải setting chuyển sang quốc gia mà mọi người làm luôn"
+    },
+    {
+      "id": 21,
+      "start": 97.94,
+      "end": 100.94,
+      "start_time": "00:01:37,940",
+      "end_time": "00:01:40,940",
+      "text": "Ví dụ Nhật Bản thì mọi người chuyển Nhật Bản luôn cho em nha"
+    },
+    {
+      "id": 22,
+      "start": 100.94,
+      "end": 102.94,
+      "start_time": "00:01:40,940",
+      "end_time": "00:01:42,940",
+      "text": "Rồi đây mọi người có thấy không"
+    },
+    {
+      "id": 23,
+      "start": 102.94,
+      "end": 105.94,
+      "start_time": "00:01:42,940",
+      "end_time": "00:01:45,940",
+      "text": "Đấy mọi người có thấy view của nó kinh khủng không"
+    },
+    {
+      "id": 24,
+      "start": 105.94,
+      "end": 110.44,
+      "start_time": "00:01:45,940",
+      "end_time": "00:01:50,440",
+      "text": "Ở thị trường Hoa Kỳ thì nó chỉ có vài nghìn view vài view thôi"
+    },
+    {
+      "id": 25,
+      "start": 110.44,
+      "end": 112.94,
+      "start_time": "00:01:50,440",
+      "end_time": "00:01:52,940",
+      "text": "Nhưng mà qua cái thị trường Nhật Bản này mọi người có thấy không"
+    },
+    {
+      "id": 26,
+      "start": 112.94,
+      "end": 114.7,
+      "start_time": "00:01:52,940",
+      "end_time": "00:01:54,700",
+      "text": "Rất là nhiều view luôn"
+    },
+    {
+      "id": 27,
+      "start": 114.7,
+      "end": 122.7,
+      "start_time": "00:01:54,700",
+      "end_time": "00:02:02,700",
+      "text": "Tại sao em biết được cùng một chủ?"
+    },
+    {
+      "id": 28,
+      "start": 122.7,
+      "end": 126.7,
+      "start_time": "00:02:02,700",
+      "end_time": "00:02:06,700",
+      "text": "Video của nó vẫn như vậy thôi."
+    },
+    {
+      "id": 29,
+      "start": 126.7,
+      "end": 130.7,
+      "start_time": "00:02:06,700",
+      "end_time": "00:02:10,700",
+      "text": "Video của nó rất giống nhau."
+    },
+    {
+      "id": 30,
+      "start": 130.7,
+      "end": 134.7,
+      "start_time": "00:02:10,700",
+      "end_time": "00:02:14,700",
+      "text": "Bởi vì nó chỉ cần sản xuất ra một video thôi."
+    },
+    {
+      "id": 31,
+      "start": 134.7,
+      "end": 140.7,
+      "start_time": "00:02:14,700",
+      "end_time": "00:02:20,700",
+      "text": "Nó chỉ cần dịch ra ngôn ngữ và nó xuất theo ngôn ngữ của quốc gia và thị trường nó làm thôi."
+    },
+    {
+      "id": 32,
+      "start": 140.7,
+      "end": 149.854,
+      "start_time": "00:02:20,700",
+      "end_time": "00:02:29,854",
+      "text": "thôi thì được rồi nha. Rồi, tiếp theo, em sẽ tiếp tục đến với một cái kênh của nó tiếp theo là ở thị trường Hàn và cái này là ở thị"
+    },
+    {
+      "id": 33,
+      "start": 149.854,
+      "end": 159.008,
+      "start_time": "00:02:29,854",
+      "end_time": "00:02:39,008",
+      "text": "trường à Hàn Quốc nha mọi người. Đấy, và chỗ này nó vẫn để Hoa Kỳ nè. Mọi người có làm thì mọi người chuyển đổi quốc gia thành Hàn Quốc."
+    },
+    {
+      "id": 34,
+      "start": 159.008,
+      "end": 165.008,
+      "start_time": "00:02:39,008",
+      "end_time": "00:02:45,008",
+      "text": "Thị trường này view nó kính còn kinh khủng khiếp và đều hơn nữa."
+    },
+    {
+      "id": 35,
+      "start": 165.008,
+      "end": 168.008,
+      "start_time": "00:02:45,008",
+      "end_time": "00:02:48,008",
+      "text": "Và nó có 8, hơn 8.000 người đăng ký luôn nè."
+    },
+    {
+      "id": 36,
+      "start": 168.008,
+      "end": 170.008,
+      "start_time": "00:02:48,008",
+      "end_time": "00:02:50,008",
+      "text": "Ở thị trường Nhật Bản thì chỉ có 5 video thôi."
+    },
+    {
+      "id": 37,
+      "start": 170.008,
+      "end": 173.008,
+      "start_time": "00:02:50,008",
+      "end_time": "00:02:53,008",
+      "text": "Đấy, anh em có thấy vấn đề là nó khác nhau chỗ đấy không?"
+    },
+    {
+      "id": 38,
+      "start": 173.008,
+      "end": 175.008,
+      "start_time": "00:02:53,008",
+      "end_time": "00:02:55,008",
+      "text": "Đấy, và qua cái này á thì em muốn nói cho mấy bác là"
+    },
+    {
+      "id": 39,
+      "start": 175.008,
+      "end": 182.008,
+      "start_time": "00:02:55,008",
+      "end_time": "00:03:02,008",
+      "text": "tư duy mình làm ngoại á là không phải chỉ nhắm đến cái thằng Hoa Kỳ không đâu."
+    },
+    {
+      "id": 40,
+      "start": 182.008,
+      "end": 189.008,
+      "start_time": "00:03:02,008",
+      "end_time": "00:03:09,008",
+      "text": "Bởi vì cái thằng Hoa Kỳ rất là nhiều người làm và nó sẽ suy ra là nó sẽ thành cạnh tranh rất là cao."
+    },
+    {
+      "id": 41,
+      "start": 189.008,
+      "end": 194.008,
+      "start_time": "00:03:09,008",
+      "end_time": "00:03:14,008",
+      "text": "Đấy, từ cái video này nè, mọi người có thấy không? Rất là giống hai cái kênh trước luôn đúng không?"
+    },
+    {
+      "id": 42,
+      "start": 194.008,
+      "end": 200.008,
+      "start_time": "00:03:14,008",
+      "end_time": "00:03:20,008",
+      "text": "Và tóm lại thì ba cái kênh này của một người làm thôi anh em ạ."
+    },
+    {
+      "id": 43,
+      "start": 200.008,
+      "end": 209.008,
+      "start_time": "00:03:20,008",
+      "end_time": "00:03:29,008",
+      "text": "Đấy, cũng có thể là do em đấy, em truyền lại cho mọi người luôn, em không chia sẻ là kênh của em, nói chung là em chia sẻ cho mấy bác biết vậy thôi."
+    },
+    {
+      "id": 44,
+      "start": 209.008,
+      "end": 216.508,
+      "start_time": "00:03:29,008",
+      "end_time": "00:03:36,508",
+      "text": "Đấy, và cái thị trường Việt Nam thì hôm đợt cái kênh này em cũng có giới thiệu cho mấy bác rồi, nó cũng lấy từ"
+    },
+    {
+      "id": 45,
+      "start": 216.508,
+      "end": 224.008,
+      "start_time": "00:03:36,508",
+      "end_time": "00:03:44,008",
+      "text": "những cái sub, kiểu như câu chuyện, kiểu kịch bản ở bên nước ngoài này, nó về nó làm thôi mọi người."
+    },
+    {
+      "id": 46,
+      "start": 224.008,
+      "end": 228.0,
+      "start_time": "00:03:44,008",
+      "end_time": "00:03:48,000",
+      "text": "Đấy, view cắn rất là cao luôn nha."
+    },
+    {
+      "id": 47,
+      "start": 228.0,
+      "end": 234.44,
+      "start_time": "00:03:48,000",
+      "end_time": "00:03:54,440",
+      "text": "Em muốn nói cho bác là tư duy mình làm view ngoại thì không chỉ làm ở thị trường Hoa Kỳ không đâu nha mọi người"
+    },
+    {
+      "id": 48,
+      "start": 234.44,
+      "end": 238.0,
+      "start_time": "00:03:54,440",
+      "end_time": "00:03:58,000",
+      "text": "Hoa Kỳ nó rất là cạnh tranh tuy RPM của nó rất là cao"
+    },
+    {
+      "id": 49,
+      "start": 238.0,
+      "end": 241.8,
+      "start_time": "00:03:58,000",
+      "end_time": "00:04:01,800",
+      "text": "Ví dụ Hoa Kỳ là RPM của nó trung bình là 8 đến 10 đô"
+    },
+    {
+      "id": 50,
+      "start": 241.8,
+      "end": 246.9,
+      "start_time": "00:04:01,800",
+      "end_time": "00:04:06,900",
+      "text": "Thì qua thị trường Nhật Bản thì mọi người sẽ được 5 đến 7"
+    },
+    {
+      "id": 51,
+      "start": 246.9,
+      "end": 252.14,
+      "start_time": "00:04:06,900",
+      "end_time": "00:04:12,140",
+      "text": "Đấy, qua thị trường Hàn Quốc thì mọi người được 4 đến 6"
+    },
+    {
+      "id": 52,
+      "start": 252.14,
+      "end": 254.008,
+      "start_time": "00:04:12,140",
+      "end_time": "00:04:14,008",
+      "text": "Đấy, như vậy là nó rất là cao"
+    },
+    {
+      "id": 53,
+      "start": 254.008,
+      "end": 258.868,
+      "start_time": "00:04:14,008",
+      "end_time": "00:04:18,868",
+      "text": "Nhưng mà bù lại thì mọi người biết là Hoa Kỳ thì nó bị trừ thuế W-8BEN đúng không?"
+    },
+    {
+      "id": 54,
+      "start": 259.248,
+      "end": 263.588,
+      "start_time": "00:04:19,248",
+      "end_time": "00:04:23,588",
+      "text": "Nhưng mà các thị trường khác như Nhật, như Hàn thì nó không bị trừ thuế."
+    },
+    {
+      "id": 55,
+      "start": 263.908,
+      "end": 270.068,
+      "start_time": "00:04:23,908",
+      "end_time": "00:04:30,068",
+      "text": "Như đi ngược lại thì anh em càng rất dễ chơi và càng rất là không bị trừ thuế nữa."
+    },
+    {
+      "id": 56,
+      "start": 270.508,
+      "end": 271.888,
+      "start_time": "00:04:30,508",
+      "end_time": "00:04:31,888",
+      "text": "Đấy, lợi thế của anh em đó chỗ đấy."
+    },
+    {
+      "id": 57,
+      "start": 272.308,
+      "end": 275.448,
+      "start_time": "00:04:32,308",
+      "end_time": "00:04:35,448",
+      "text": "Nhưng mà rất nhiều người không biết và không ai hướng dẫn mọi người cả."
+    },
+    {
+      "id": 58,
+      "start": 276.368,
+      "end": 279.988,
+      "start_time": "00:04:36,368",
+      "end_time": "00:04:39,988",
+      "text": "Nhưng mà ở clip này thì em chia sẻ cái điều đó cho mấy bác luôn."
+    },
+    {
+      "id": 59,
+      "start": 280.548,
+      "end": 282.268,
+      "start_time": "00:04:40,548",
+      "end_time": "00:04:42,268",
+      "text": "Đấy, mấy bác phải biết là như vậy nha."
+    },
+    {
+      "id": 60,
+      "start": 282.268,
+      "end": 289.851,
+      "start_time": "00:04:42,268",
+      "end_time": "00:04:49,851",
+      "text": "Rồi bây giờ tiếp tục em chỉ lấy ví dụ một kênh tiếp theo nha mọi người. Và kênh này là hoàn toàn mới luôn nha. Đây về cái key Phật pháp"
+    },
+    {
+      "id": 61,
+      "start": 289.851,
+      "end": 297.434,
+      "start_time": "00:04:49,851",
+      "end_time": "00:04:57,434",
+      "text": "nè, kiểu như kể chuyện về Phật pháp. Và kênh này đang là Hoa Kỳ. Trước kia á thì nó là làm về dạng sức khỏe nè mọi người. Đấy, cắn view"
+    },
+    {
+      "id": 62,
+      "start": 297.434,
+      "end": 305.017,
+      "start_time": "00:04:57,434",
+      "end_time": "00:05:05,017",
+      "text": "cũng khá là ok. Và hai tuần vừa rồi á, bắt đầu hai tuần vừa rồi á thì nó đã chuyển sang một cái key hoàn toàn mới là về cái key."
+    },
+    {
+      "id": 63,
+      "start": 305.017,
+      "end": 314.257,
+      "start_time": "00:05:05,017",
+      "end_time": "00:05:14,257",
+      "text": "Phật Pháp, và kể chuyện về Phật Pháp này nha mọi người. Đấy, về cái key này thì mọi người có thể dịch ra, mọi người xem thêm nha. Đấy, và cắn view rất rất rất là cao luôn."
+    },
+    {
+      "id": 64,
+      "start": 315.017,
+      "end": 317.017,
+      "start_time": "00:05:15,017",
+      "end_time": "00:05:17,017",
+      "text": "Và đây là ở thị trường Hoa Kỳ nha mọi người."
+    },
+    {
+      "id": 65,
+      "start": 317.017,
+      "end": 325.0,
+      "start_time": "00:05:17,017",
+      "end_time": "00:05:25,000",
+      "text": "Rồi ok, bây giờ em sẽ cho mọi người biết là một cái kênh ở Việt Nam nè, nó đang lấy cái key này nó làm nha."
+    },
+    {
+      "id": 66,
+      "start": 325.0,
+      "end": 327.017,
+      "start_time": "00:05:25,000",
+      "end_time": "00:05:27,017",
+      "text": "Đấy, anh em có thấy không?"
+    },
+    {
+      "id": 67,
+      "start": 327.017,
+      "end": 329.017,
+      "start_time": "00:05:27,017",
+      "end_time": "00:05:29,017",
+      "text": "Và cái view của nó rất là cao luôn nha,"
+    },
+    {
+      "id": 68,
+      "start": 329.017,
+      "end": 333.017,
+      "start_time": "00:05:29,017",
+      "end_time": "00:05:33,017",
+      "text": "cái kênh này chỉ là 13 ngày trước thôi nha mọi người."
+    },
+    {
+      "id": 69,
+      "start": 333.017,
+      "end": 337.017,
+      "start_time": "00:05:33,017",
+      "end_time": "00:05:37,017",
+      "text": "Và mọi người có thấy là kênh của nó cắn view rất là cao luôn,"
+    },
+    {
+      "id": 70,
+      "start": 337.017,
+      "end": 341.017,
+      "start_time": "00:05:37,017",
+      "end_time": "00:05:41,017",
+      "text": "và video này nè, nó đã đạt được 200.000 view luôn nè mọi người."
+    },
+    {
+      "id": 71,
+      "start": 341.017,
+      "end": 343.577,
+      "start_time": "00:05:41,017",
+      "end_time": "00:05:43,577",
+      "text": "Anh em đừng có chê ở thị trường Việt nha."
+    },
+    {
+      "id": 72,
+      "start": 343.577,
+      "end": 348.457,
+      "start_time": "00:05:43,577",
+      "end_time": "00:05:48,457",
+      "text": "Và cái kênh này nó đang lập, nó mới chỉ lập là ngày 13 tháng 5 thôi."
+    },
+    {
+      "id": 73,
+      "start": 348.457,
+      "end": 354.137,
+      "start_time": "00:05:48,457",
+      "end_time": "00:05:54,137",
+      "text": "Đấy, và mọi người mới thì mọi người, em khuyên mọi người là nên làm view Việt trước,"
+    },
+    {
+      "id": 74,
+      "start": 354.137,
+      "end": 357.417,
+      "start_time": "00:05:54,137",
+      "end_time": "00:05:57,417",
+      "text": "hoặc là các cái nhân bản các cái thị trường khác."
+    },
+    {
+      "id": 75,
+      "start": 357.417,
+      "end": 360.857,
+      "start_time": "00:05:57,417",
+      "end_time": "00:06:00,857",
+      "text": "Bởi vì tỷ lệ cạnh tranh nó rất là thấp và nó rất là dễ làm."
+    },
+    {
+      "id": 76,
+      "start": 360.857,
+      "end": 368.697,
+      "start_time": "00:06:00,857",
+      "end_time": "00:06:08,697",
+      "text": "Và view của nó cắn rất là ngon. Đấy, nó sẽ lên view và mọi người sẽ có cái động lực và mọi người sẽ làm."
+    },
+    {
+      "id": 77,
+      "start": 368.697,
+      "end": 375.857,
+      "start_time": "00:06:08,697",
+      "end_time": "00:06:15,857",
+      "text": "Anh em đừng có chê thị trường Việt như kênh này view như này á thì nếu mà ổn định như này á thì em nói"
+    },
+    {
+      "id": 78,
+      "start": 375.857,
+      "end": 383.017,
+      "start_time": "00:06:15,857",
+      "end_time": "00:06:23,017",
+      "text": "thật sự cái doanh thu của tháng của kênh nó thì nó sẽ đạt tầm 15 đến 30 triệu trên một tháng nha mọi người."
+    },
+    {
+      "id": 79,
+      "start": 383.017,
+      "end": 393.877,
+      "start_time": "00:06:23,017",
+      "end_time": "00:06:33,877",
+      "text": "Đấy, chứ anh em đừng có nghĩ mà thị trường Việt ít tiền đâu nha anh em. Đấy, RPM nó thấp thật nhưng mà bù lại thì view nó cao thì nó sẽ kéo lên nha anh em."
+    },
+    {
+      "id": 80,
+      "start": 393.877,
+      "end": 397.877,
+      "start_time": "00:06:33,877",
+      "end_time": "00:06:37,877",
+      "text": "Ok, vấn đề tư duy là như thế nha mọi người."
+    },
+    {
+      "id": 81,
+      "start": 397.877,
+      "end": 402.877,
+      "start_time": "00:06:37,877",
+      "end_time": "00:06:42,877",
+      "text": "Bây giờ em sẽ cho mọi người xem nè, tại sao em biết nó là lấy từ kênh nước ngoài về."
+    },
+    {
+      "id": 82,
+      "start": 402.877,
+      "end": 404.877,
+      "start_time": "00:06:42,877",
+      "end_time": "00:06:44,877",
+      "text": "Mọi người cứ dịch ra cho em nha."
+    },
+    {
+      "id": 83,
+      "start": 404.877,
+      "end": 407.877,
+      "start_time": "00:06:44,877",
+      "end_time": "00:06:47,877",
+      "text": "Mọi người dịch ra, xem cái video nè."
+    },
+    {
+      "id": 84,
+      "start": 407.877,
+      "end": 413.877,
+      "start_time": "00:06:47,877",
+      "end_time": "00:06:53,877",
+      "text": "Video chữ số cuối cùng của năm sinh nói về kiếp trước nè mọi người."
+    },
+    {
+      "id": 85,
+      "start": 413.877,
+      "end": 415.877,
+      "start_time": "00:06:53,877",
+      "end_time": "00:06:55,877",
+      "text": "Anh em có thấy không?"
+    },
+    {
+      "id": 86,
+      "start": 415.877,
+      "end": 418.877,
+      "start_time": "00:06:55,877",
+      "end_time": "00:06:58,877",
+      "text": "View của bên Hoa Kỳ thì cao bảy cao 9 thôi."
+    },
+    {
+      "id": 87,
+      "start": 418.877,
+      "end": 420.877,
+      "start_time": "00:06:58,877",
+      "end_time": "00:07:00,877",
+      "text": "Nhưng mà nó đem sang Việt Nam nè mọi người."
+    },
+    {
+      "id": 88,
+      "start": 420.877,
+      "end": 428.207,
+      "start_time": "00:07:00,877",
+      "end_time": "00:07:08,207",
+      "text": "Từ số cuối cùng trong năm sinh nói về kiếp trước nè. Đấy, anh em có thấy không? View của nó lên cả 200.000 lượt view"
+    },
+    {
+      "id": 89,
+      "start": 428.207,
+      "end": 435.537,
+      "start_time": "00:07:08,207",
+      "end_time": "00:07:15,537",
+      "text": "luôn. Đấy, mọi người có thấy cái sự thật là nó chỗ đó không? Đấy, đó là một cái tư duy về cách làm nha mọi người."
+    },
+    {
+      "id": 90,
+      "start": 436.317,
+      "end": 443.22,
+      "start_time": "00:07:16,317",
+      "end_time": "00:07:23,220",
+      "text": "mọi người áp dụng cho em nó rất là rất là thành sẽ là thành công nha. Đấy, cái này không khác gì em truyền nghề luôn đâu. Và"
+    },
+    {
+      "id": 91,
+      "start": 443.22,
+      "end": 450.122,
+      "start_time": "00:07:23,220",
+      "end_time": "00:07:30,122",
+      "text": "đây là cách của em làm với nhân bản thị trường ở Tây Ban Nha đồ nha mọi người. Đấy, nên là mọi người mới á thì mọi"
+    },
+    {
+      "id": 92,
+      "start": 450.122,
+      "end": 457.025,
+      "start_time": "00:07:30,122",
+      "end_time": "00:07:37,025",
+      "text": "người cứ làm view Việt trước cho em đã. Rồi, ok, bây giờ thì tiếp tục đến một cái key về sức khỏe nữa nha. Và em sẽ lấy"
+    },
+    {
+      "id": 93,
+      "start": 457.025,
+      "end": 461.025,
+      "start_time": "00:07:37,025",
+      "end_time": "00:07:41,025",
+      "text": "Đấy, cái key này em sẽ làm ví dụ,"
+    },
+    {
+      "id": 94,
+      "start": 461.025,
+      "end": 465.025,
+      "start_time": "00:07:41,025",
+      "end_time": "00:07:45,025",
+      "text": "và em sẽ lấy kịch bản, edit và cũng như tạo thumb cho mọi người luôn nha."
+    },
+    {
+      "id": 95,
+      "start": 465.025,
+      "end": 469.025,
+      "start_time": "00:07:45,025",
+      "end_time": "00:07:49,025",
+      "text": "Rồi, về cái key này thì nó rất là hot ở thị trường Hoa Kỳ"
+    },
+    {
+      "id": 96,
+      "start": 469.025,
+      "end": 473.0,
+      "start_time": "00:07:49,025",
+      "end_time": "00:07:53,000",
+      "text": "và cũng như được em share cũng như rất là nhiều người share rồi."
+    },
+    {
+      "id": 97,
+      "start": 473.0,
+      "end": 483.6,
+      "start_time": "00:07:53,000",
+      "end_time": "00:08:03,600",
+      "text": "Thì em nói 100%, không còn 1 nói 100% là cũng đúng, tầm 90% thì mọi người sẽ thất bại bởi vì cạnh tranh rất rất rất là cao."
+    },
+    {
+      "id": 98,
+      "start": 484.1,
+      "end": 493.04,
+      "start_time": "00:08:04,100",
+      "end_time": "00:08:13,040",
+      "text": "Mọi người cứ nghĩ xem một cái ngách mà có lượng người xem nhất định nào đấy, nhưng mà cái số người làm nó còn nhiều hơn cái số người xem nữa."
+    },
+    {
+      "id": 99,
+      "start": 493.22,
+      "end": 498.42,
+      "start_time": "00:08:13,220",
+      "end_time": "00:08:18,420",
+      "text": "Thì mọi người có nghĩ cạnh tranh nó rất là cao, nên vì thế mọi người phải nhân bản ở thị trường khác."
+    },
+    {
+      "id": 100,
+      "start": 498.42,
+      "end": 503.025,
+      "start_time": "00:08:18,420",
+      "end_time": "00:08:23,025",
+      "text": "Ví dụ mình sẽ đem về thị trường Việt Nam mình làm thì nó sẽ ăn rất là ngon"
+    },
+    {
+      "id": 101,
+      "start": 503.025,
+      "end": 511.012,
+      "start_time": "00:08:23,025",
+      "end_time": "00:08:31,012",
+      "text": "Thật sự, một tháng, mọi người kiếm 20-30 củ trên thị trường Việt thì bình thường."
+    },
+    {
+      "id": 102,
+      "start": 511.012,
+      "end": 519.0,
+      "start_time": "00:08:31,012",
+      "end_time": "00:08:39,000",
+      "text": "Thị trường Hoa Kỳ thì mọi người kiếm nhiều hơn, nhưng mà cạnh tranh cao hơn."
+    },
+    {
+      "id": 103,
+      "start": 519.0,
+      "end": 530.12,
+      "start_time": "00:08:39,000",
+      "end_time": "00:08:50,120",
+      "text": "Thấy, về cái này á, thì cái kênh này nó lấy toàn là kịch bản ở bên cái kênh Hoa Kỳ em vừa chia sẻ á mọi người"
+    },
+    {
+      "id": 104,
+      "start": 530.12,
+      "end": 533.12,
+      "start_time": "00:08:50,120",
+      "end_time": "00:08:53,120",
+      "text": "Và để biết sao em biết không thì ok bây giờ nha"
+    },
+    {
+      "id": 105,
+      "start": 533.12,
+      "end": 534.68,
+      "start_time": "00:08:53,120",
+      "end_time": "00:08:54,680",
+      "text": "Đây, cái video này"
+    },
+    {
+      "id": 106,
+      "start": 534.68,
+      "end": 537.26,
+      "start_time": "00:08:54,680",
+      "end_time": "00:08:57,260",
+      "text": "Năm vị trí ngứa nè"
+    },
+    {
+      "id": 107,
+      "start": 537.26,
+      "end": 541.0,
+      "start_time": "00:08:57,260",
+      "end_time": "00:09:01,000",
+      "text": "Năm cảnh báo, năm vị trí ngứa ung thư ở người cao tuổi nè mọi người"
+    },
+    {
+      "id": 108,
+      "start": 541.0,
+      "end": 544.78,
+      "start_time": "00:09:01,000",
+      "end_time": "00:09:04,780",
+      "text": "Đấy, bây giờ em sẽ cho mấy bác biết tại sao nó lấy ở bên này nha"
+    },
+    {
+      "id": 109,
+      "start": 545.025,
+      "end": 552.135,
+      "start_time": "00:09:05,025",
+      "end_time": "00:09:12,135",
+      "text": "Rồi, em sẽ quay cái kênh của cái người nước ngoài nè. Bây giờ em sẽ kéo xuống em tìm cho bác. Rồi, đây, đây, đây, đây, video"
+    },
+    {
+      "id": 110,
+      "start": 552.135,
+      "end": 559.245,
+      "start_time": "00:09:12,135",
+      "end_time": "00:09:19,245",
+      "text": "đã đây mọi người, 8 ngày trước nè. Rồi, bây giờ em sẽ bấm ngừng, vì em sẽ dịch ra cái tiêu đề cho mọi người xem nha."
+    },
+    {
+      "id": 111,
+      "start": 559.245,
+      "end": 565.925,
+      "start_time": "00:09:19,245",
+      "end_time": "00:09:25,925",
+      "text": "Đấy, chỗ ngứa này có nghĩa là 99% ung thư. Nè, đó, mọi người có thấy không? Vì em cũng đã lấy"
+    },
+    {
+      "id": 112,
+      "start": 565.925,
+      "end": 572.605,
+      "start_time": "00:09:25,925",
+      "end_time": "00:09:32,605",
+      "text": "cái kịch bản này về rồi. Về trong cái kịch bản đó để nói về lệnh em cái vấn đề nha mọi người."
+    },
+    {
+      "id": 113,
+      "start": 572.605,
+      "end": 579.245,
+      "start_time": "00:09:32,605",
+      "end_time": "00:09:39,245",
+      "text": "Đấy, về cái ông người Việt Nam mình á, thì ổng để ghi cái tiêu đề khác. Thì mọi người, cái lúc này,"
+    },
+    {
+      "id": 114,
+      "start": 579.245,
+      "end": 589.225,
+      "start_time": "00:09:39,245",
+      "end_time": "00:09:49,225",
+      "text": "Thì mọi người có thể tự đặt, hay là kêu con ChatGPT đó, nó hình dung ra kiểu như nó biến tấu thêm cái kịch về cái tiêu đề nha."
+    },
+    {
+      "id": 115,
+      "start": 589.245,
+      "end": 600.0,
+      "start_time": "00:09:49,245",
+      "end_time": "00:10:00,000",
+      "text": "Mình làm khác cái thị trường á thì mình có thể kêu con ChatGPT nó dựa theo cái tiêu đề của cái nước đó mà nó sẽ làm ra các cái tiêu đề khác hay hơn."
+    },
+    {
+      "id": 116,
+      "start": 600.0,
+      "end": 610.0,
+      "start_time": "00:10:00,000",
+      "end_time": "00:10:10,000",
+      "text": "Còn về vấn đề cùng thị trường thì anh em có thể đặt theo tên tiêu đề của kênh đối thủ luôn."
+    },
+    {
+      "id": 117,
+      "start": 610.0,
+      "end": 614.0,
+      "start_time": "00:10:10,000",
+      "end_time": "00:10:14,000",
+      "text": "Rồi, vấn đề này thì đã ok rồi nha mọi người."
+    },
+    {
+      "id": 118,
+      "start": 614.0,
+      "end": 621.0,
+      "start_time": "00:10:14,000",
+      "end_time": "00:10:21,000",
+      "text": "Về mục tiêu để em chia sẻ hôm nay, về những cái ký này thì không phải là em muốn tắt kéo mọi người."
+    },
+    {
+      "id": 119,
+      "start": 621.0,
+      "end": 629.0,
+      "start_time": "00:10:21,000",
+      "end_time": "00:10:29,000",
+      "text": "Ví dụ như 50, 60 con người mọi người nhảy ra làm hết mấy cái ký này, thì thành ra mọi người đang bị cảnh tranh nhau rồi đúng không?"
+    },
+    {
+      "id": 120,
+      "start": 629.0,
+      "end": 637.45,
+      "start_time": "00:10:29,000",
+      "end_time": "00:10:37,450",
+      "text": "Đấy, thì nó sẽ thêm là tỷ lệ nó rất là khó nữa. Đấy, nên là em muốn mọi người tư duy á là cách làm như thế này và nhân bản thị trường như thế này."
+    },
+    {
+      "id": 121,
+      "start": 637.45,
+      "end": 645.9,
+      "start_time": "00:10:37,450",
+      "end_time": "00:10:45,900",
+      "text": "mọi người có thể tìm các cái key khác, các cái ngách nhỏ khác, mọi người nhân bản thêm, đúng không mọi người?"
+    },
+    {
+      "id": 122,
+      "start": 645.9,
+      "end": 651.76,
+      "start_time": "00:10:45,900",
+      "end_time": "00:10:51,760",
+      "text": "Đấy, chứ mọi người mà cứ 50 hay 60 người cứ nhảy vào làm hết cái này á"
+    },
+    {
+      "id": 123,
+      "start": 652.0,
+      "end": 654.62,
+      "start_time": "00:10:52,000",
+      "end_time": "00:10:54,620",
+      "text": "Thì thành ra thì mọi người tự nhiên cạnh tranh nhau rồi"
+    },
+    {
+      "id": 124,
+      "start": 654.62,
+      "end": 656.72,
+      "start_time": "00:10:54,620",
+      "end_time": "00:10:56,720",
+      "text": "Thì thành nó sẽ khó hơn, đấy đúng không?"
+    },
+    {
+      "id": 125,
+      "start": 657.02,
+      "end": 662.36,
+      "start_time": "00:10:57,020",
+      "end_time": "00:11:02,360",
+      "text": "Nên là mọi người có tư duy và làm mỗi cái ngách khác nhau"
+    },
+    {
+      "id": 126,
+      "start": 662.36,
+      "end": 665.78,
+      "start_time": "00:11:02,360",
+      "end_time": "00:11:05,780",
+      "text": "Ngách nhỏ khác nhau để cho tỷ lệ cạnh tranh nó thấp đi"
+    },
+    {
+      "id": 127,
+      "start": 665.78,
+      "end": 668.32,
+      "start_time": "00:11:05,780",
+      "end_time": "00:11:08,320",
+      "text": "Và thành công nó sẽ cao nha mọi người"
+    },
+    {
+      "id": 128,
+      "start": 668.32,
+      "end": 670.94,
+      "start_time": "00:11:08,320",
+      "end_time": "00:11:10,940",
+      "text": "Đấy, thì thật sự em chia sẻ như vậy luôn"
+    },
+    {
+      "id": 129,
+      "start": 670.94,
+      "end": 673.84,
+      "start_time": "00:11:10,940",
+      "end_time": "00:11:13,840",
+      "text": "Đấy, để mấy bác biết được và tư duy được nha"
+    },
+    {
+      "id": 130,
+      "start": 673.84,
+      "end": 677.18,
+      "start_time": "00:11:13,840",
+      "end_time": "00:11:17,180",
+      "text": "Chứ không phải là mọi người cứ nhảy vào làm hết"
+    },
+    {
+      "id": 131,
+      "start": 677.18,
+      "end": 679.52,
+      "start_time": "00:11:17,180",
+      "end_time": "00:11:19,520",
+      "text": "Thì thành ra nó thì cạnh tranh rất là cao"
+    },
+    {
+      "id": 132,
+      "start": 679.52,
+      "end": 684.42,
+      "start_time": "00:11:19,520",
+      "end_time": "00:11:24,420",
+      "text": "Đấy nên là mấy bác phải hiểu về tư duy theo cái cách mà em đã nói nha"
+    },
+    {
+      "id": 133,
+      "start": 684.42,
+      "end": 689.84,
+      "start_time": "00:11:24,420",
+      "end_time": "00:11:29,840",
+      "text": "Cũng như là ví dụ em đã public những cái kênh mà lên tiktok hoặc là YouTube của em á"
+    },
+    {
+      "id": 134,
+      "start": 689.84,
+      "end": 691.8,
+      "start_time": "00:11:29,840",
+      "end_time": "00:11:31,800",
+      "text": "Thì rất rất rất là nhiều người làm luôn"
+    },
+    {
+      "id": 135,
+      "start": 691.8,
+      "end": 693.62,
+      "start_time": "00:11:31,800",
+      "end_time": "00:11:33,620",
+      "text": "Thì mọi người mà nhảy vào làm hết á"
+    },
+    {
+      "id": 136,
+      "start": 693.62,
+      "end": 695.3,
+      "start_time": "00:11:33,620",
+      "end_time": "00:11:35,300",
+      "text": "Thì về cùng một thị trường á"
+    },
+    {
+      "id": 137,
+      "start": 695.3,
+      "end": 697.3,
+      "start_time": "00:11:35,300",
+      "end_time": "00:11:37,300",
+      "text": "Thì sẽ cạnh tranh cao"
+    },
+    {
+      "id": 138,
+      "start": 697.3,
+      "end": 700.32,
+      "start_time": "00:11:37,300",
+      "end_time": "00:11:40,320",
+      "text": "Và sẽ tỷ lệ khả năng để mình lên được á"
+    },
+    {
+      "id": 139,
+      "start": 700.32,
+      "end": 701.56,
+      "start_time": "00:11:40,320",
+      "end_time": "00:11:41,560",
+      "text": "Thì rất là khó nha mọi người"
+    },
+    {
+      "id": 140,
+      "start": 701.56,
+      "end": 703.94,
+      "start_time": "00:11:41,560",
+      "end_time": "00:11:43,940",
+      "text": "Đấy nên là mọi người đã vào đây rồi á"
+    },
+    {
+      "id": 141,
+      "start": 703.94,
+      "end": 705.78,
+      "start_time": "00:11:43,940",
+      "end_time": "00:11:45,780",
+      "text": "Thì mọi người cứ làm theo cách của em"
+    },
+    {
+      "id": 142,
+      "start": 705.94,
+      "end": 711.94,
+      "start_time": "00:11:45,940",
+      "end_time": "00:11:51,940",
+      "text": "những cái kinh nghiệm em chia sẻ và hướng dẫn về những cái key mà em đã chia sẻ cho mọi người nha."
+    },
+    {
+      "id": 143,
+      "start": 711.94,
+      "end": 719.94,
+      "start_time": "00:11:51,940",
+      "end_time": "00:11:59,940",
+      "text": "Tiếp tới, em sẽ hướng dẫn các bạn cách để lấy kịch bản của kênh đối thủ hoặc kênh mình muốn lấy."
+    },
+    {
+      "id": 144,
+      "start": 719.94,
+      "end": 725.94,
+      "start_time": "00:11:59,940",
+      "end_time": "00:12:05,940",
+      "text": "Bây giờ, mọi người truy cập vào trang web này để lấy kịch bản free."
+    },
+    {
+      "id": 145,
+      "start": 725.94,
+      "end": 732.94,
+      "start_time": "00:12:05,940",
+      "end_time": "00:12:12,940",
+      "text": "Bây giờ, em sẽ để link của con web này ở trong file cho mọi người."
+    },
+    {
+      "id": 146,
+      "start": 732.94,
+      "end": 742.629,
+      "start_time": "00:12:12,940",
+      "end_time": "00:12:22,629",
+      "text": "Con web này lấy kịch bản và nói là hoàn toàn là free nha mọi người và rất là ngon nha. Rồi bây giờ em sẽ lấy đại một video này, em sẽ ví dụ cho mọi người nha."
+    },
+    {
+      "id": 147,
+      "start": 742.629,
+      "end": 752.319,
+      "start_time": "00:12:22,629",
+      "end_time": "00:12:32,319",
+      "text": "Đây. Video này hình như là nó không phải nói về sức khỏe mà nó nói về kiểu như ngôi nhà bừa bộn gì đấy mọi người. Thôi kệ đi, cứ làm đi. Bởi vì mọi người cứ tư"
+    },
+    {
+      "id": 148,
+      "start": 752.319,
+      "end": 762.008,
+      "start_time": "00:12:32,319",
+      "end_time": "00:12:42,008",
+      "text": "duy và cách làm như em nha. Rồi bây giờ sau khi copy á thì anh em mở vào cái link và mọi người bấm là nó sẽ chạy ra như thế này nha. Đấy, nó đã lấy hết."
+    },
+    {
+      "id": 149,
+      "start": 762.008,
+      "end": 765.008,
+      "start_time": "00:12:42,008",
+      "end_time": "00:12:45,008",
+      "text": "Đấy, nó đã lấy hết các cái sub, cái kịch bản của cái video này rồi."
+    },
+    {
+      "id": 150,
+      "start": 765.008,
+      "end": 770.608,
+      "start_time": "00:12:45,008",
+      "end_time": "00:12:50,608",
+      "text": "Bây giờ á thì mọi người cần là cái prompt để train con ChatGPT đúng không?"
+    },
+    {
+      "id": 151,
+      "start": 770.608,
+      "end": 777.008,
+      "start_time": "00:12:50,608",
+      "end_time": "00:12:57,008",
+      "text": "Đây là cái prompt nha. Nói chung các tài liệu này em sẽ để trong cái file doc cho mọi người nha."
+    },
+    {
+      "id": 152,
+      "start": 777.008,
+      "end": 785.008,
+      "start_time": "00:12:57,008",
+      "end_time": "00:13:05,008",
+      "text": "Đây, đây là cái prompt nha. Nói chung các tài liệu này em sẽ để trong cái file doc cho mọi người nha, yên tâm."
+    },
+    {
+      "id": 153,
+      "start": 785.008,
+      "end": 797.008,
+      "start_time": "00:13:05,008",
+      "end_time": "00:13:17,008",
+      "text": "Rồi, bây giờ cái prompt này em đã viết là, cái này thì em đã tự train nha mọi người và em đã tự nghĩ ra."
+    },
+    {
+      "id": 154,
+      "start": 797.008,
+      "end": 802.008,
+      "start_time": "00:13:17,008",
+      "end_time": "00:13:22,008",
+      "text": "Bởi vì nha, em nói cho mọi người hiểu cái chỗ này tí: nếu mà mọi người làm chung cái thị trường á và mọi người lấy cái kịch bản của đối thủ á"
+    },
+    {
+      "id": 155,
+      "start": 802.008,
+      "end": 807.008,
+      "start_time": "00:13:22,008",
+      "end_time": "00:13:27,008",
+      "text": "và chung cái thị trường ví dụ thị trường Hoa Kỳ đi, thì anh em cần phải thay đổi ví dụ lấy 40% và thay đổi 60%."
+    },
+    {
+      "id": 156,
+      "start": 807.008,
+      "end": 812.008,
+      "start_time": "00:13:27,008",
+      "end_time": "00:13:32,008",
+      "text": "Nhưng mà đối với cái chuyện mà nhân bản thị trường á thì mọi người không cần thay đổi luôn nha, mọi người chỉ cần lấy kịch bản của nó dịch ra nha, và kêu nó tạo,"
+    },
+    {
+      "id": 157,
+      "start": 812.008,
+      "end": 815.008,
+      "start_time": "00:13:32,008",
+      "end_time": "00:13:35,008",
+      "text": "nói chung là làm như cái prompt của em nè,"
+    },
+    {
+      "id": 158,
+      "start": 815.008,
+      "end": 817.008,
+      "start_time": "00:13:35,008",
+      "end_time": "00:13:37,008",
+      "text": "đấy là ok nha mọi người."
+    },
+    {
+      "id": 159,
+      "start": 817.008,
+      "end": 823.008,
+      "start_time": "00:13:37,008",
+      "end_time": "00:13:43,008",
+      "text": "Chứ không cần phải chỉnh kịch bản hay là kêu con chat nó tạo thêm nữa nha."
+    },
+    {
+      "id": 160,
+      "start": 823.008,
+      "end": 825.008,
+      "start_time": "00:13:43,008",
+      "end_time": "00:13:45,008",
+      "text": "Bởi vì con chat nó tạo thêm thì rất là dở nha."
+    },
+    {
+      "id": 161,
+      "start": 825.008,
+      "end": 828.448,
+      "start_time": "00:13:45,008",
+      "end_time": "00:13:48,448",
+      "text": "Nó dở nha mọi người, kiểu như rất là ngu vậy."
+    },
+    {
+      "id": 162,
+      "start": 828.448,
+      "end": 831.808,
+      "start_time": "00:13:48,448",
+      "end_time": "00:13:51,808",
+      "text": "Rồi, ok, về cái vấn đề là như vậy nha."
+    },
+    {
+      "id": 163,
+      "start": 831.808,
+      "end": 837.508,
+      "start_time": "00:13:51,808",
+      "end_time": "00:13:57,508",
+      "text": "Cái này thì ngôn ngữ tiếng Việt, về ngữ về người Việt nè, thì mọi người làm ở thị trường khác."
+    },
+    {
+      "id": 164,
+      "start": 837.508,
+      "end": 842.608,
+      "start_time": "00:13:57,508",
+      "end_time": "00:14:02,608",
+      "text": "Ví dụ như thị trường Nhật thì anh em có thể ghi là tiếng Nhật, về ngôn ngữ Nhật."
+    },
+    {
+      "id": 165,
+      "start": 842.608,
+      "end": 845.008,
+      "start_time": "00:14:02,608",
+      "end_time": "00:14:05,008",
+      "text": "Vì anh em muốn làm thị trường nào thì mọi người làm ở thị trường khác."
+    },
+    {
+      "id": 166,
+      "start": 845.008,
+      "end": 854.988,
+      "start_time": "00:14:05,008",
+      "end_time": "00:14:14,988",
+      "text": "Thế giới thiệu, mọi người dịch sang nước đó, mọi người bỏ qua, để trên con chat cho nó uống."
+    },
+    {
+      "id": 167,
+      "start": 855.008,
+      "end": 861.688,
+      "start_time": "00:14:15,008",
+      "end_time": "00:14:21,688",
+      "text": "Để em để tiếng Việt này mọi người. Rồi ok. Sau khi có cái kịch bản rồi mọi"
+    },
+    {
+      "id": 168,
+      "start": 861.688,
+      "end": 868.368,
+      "start_time": "00:14:21,688",
+      "end_time": "00:14:28,368",
+      "text": "người bấm Ctrl A, Ctrl C để sao chép nha mọi người. Rồi sau khi sao chép xong thì"
+    },
+    {
+      "id": 169,
+      "start": 868.368,
+      "end": 875.008,
+      "start_time": "00:14:28,368",
+      "end_time": "00:14:35,008",
+      "text": "mọi người vào ChatGPT giúp em. Tiếp tục sau khi mà vào á, dán vào mọi người."
+    },
+    {
+      "id": 170,
+      "start": 875.008,
+      "end": 884.988,
+      "start_time": "00:14:35,008",
+      "end_time": "00:14:44,988",
+      "text": "Mọi người quay lại lấy kịch bản nè, copy kịch bản lúc này á, rồi mọi người dán vào nha, mọi người yên tâm là nó không có bị dính sốt nha mọi người, đấy rồi, ok bây giờ thì"
+    },
+    {
+      "id": 171,
+      "start": 885.008,
+      "end": 895.005,
+      "start_time": "00:14:45,008",
+      "end_time": "00:14:55,005",
+      "text": "anh em cứ để cho nó nó chạy thôi. Và mọi người yên tâm là không lo bị bản quyền hay sử dụng lại nội dung nha. Không bao giờ có chuyện đó được đâu nha. Bởi vì những cái cách"
+    },
+    {
+      "id": 172,
+      "start": 895.005,
+      "end": 905.003,
+      "start_time": "00:14:55,005",
+      "end_time": "00:15:05,003",
+      "text": "này em đã áp dụng em làm 3 4 tháng nay rồi mọi người ơi. Và em làm cả chục kênh rồi ấy. Nên là mọi người yên tâm nha. Rồi, giờ thì chỉ cần đợi nó dịch ra thôi mọi"
+    },
+    {
+      "id": 173,
+      "start": 905.003,
+      "end": 915.0,
+      "start_time": "00:15:05,003",
+      "end_time": "00:15:15,000",
+      "text": "người và mình chỉ cần lấy về thôi. Rồi em tua nhanh về cái đoạn đó để tránh mất thời gian nha mọi người. Rồi bây giờ thì anh em copy hết cái kịch bản này giúp em. Ờ bây giờ thì"
+    },
+    {
+      "id": 174,
+      "start": 915.0,
+      "end": 924.997,
+      "start_time": "00:15:15,000",
+      "end_time": "00:15:24,997",
+      "text": "mọi người bỏ cái đoạn trên này nha. Mọi người bỏ cái đoạn này nha. Đây mọi người copy cái từ ở dưới này xuống dưới này cho em. Cái đoạn ở trên thì tí nữa em sẽ nói sau nha. Rồi."
+    },
+    {
+      "id": 175,
+      "start": 925.017,
+      "end": 926.017,
+      "start_time": "00:15:25,017",
+      "end_time": "00:15:26,017",
+      "text": "Mọi người sao chép nha."
+    },
+    {
+      "id": 176,
+      "start": 926.017,
+      "end": 929.017,
+      "start_time": "00:15:26,017",
+      "end_time": "00:15:29,017",
+      "text": "Tiếp tục, qua bên Notepad nè."
+    },
+    {
+      "id": 177,
+      "start": 929.017,
+      "end": 935.017,
+      "start_time": "00:15:29,017",
+      "end_time": "00:15:35,017",
+      "text": "Mọi người, trên máy ai cũng có cái Notepad ấy, mọi người vào để làm, bỏ kịch bản vào cho nó ok nha."
+    },
+    {
+      "id": 178,
+      "start": 935.017,
+      "end": 939.017,
+      "start_time": "00:15:35,017",
+      "end_time": "00:15:39,017",
+      "text": "Mọi người sao chép, vào, dán vào, mọi người lưu lại nha."
+    },
+    {
+      "id": 179,
+      "start": 939.017,
+      "end": 942.017,
+      "start_time": "00:15:39,017",
+      "end_time": "00:15:42,017",
+      "text": "Cái này thì mấy bác đã biết hết rồi, chắc em không còn nói nhiều nữa đâu đúng không?"
+    },
+    {
+      "id": 180,
+      "start": 942.017,
+      "end": 946.017,
+      "start_time": "00:15:42,017",
+      "end_time": "00:15:46,017",
+      "text": "Rồi, ok, bây giờ thì mọi người xem video của đối thủ nè."
+    },
+    {
+      "id": 181,
+      "start": 946.017,
+      "end": 950.017,
+      "start_time": "00:15:46,017",
+      "end_time": "00:15:50,017",
+      "text": "Mọi người có thấy không, là nó toàn là cảnh thiên nhiên, hoặc là cảnh gì không à nha."
+    },
+    {
+      "id": 182,
+      "start": 950.017,
+      "end": 957.157,
+      "start_time": "00:15:50,017",
+      "end_time": "00:15:57,157",
+      "text": "Bây giờ em sẽ hướng dẫn cho mọi người cách để lấy được những video đấy về hoàn toàn là free và không bản quyền nha mọi người."
+    },
+    {
+      "id": 183,
+      "start": 957.157,
+      "end": 967.0,
+      "start_time": "00:15:57,157",
+      "end_time": "00:16:07,000",
+      "text": "Đây là những trang web mà em share cho mọi người để lấy video free về nha. Những trang web này phải nói là hoàn toàn là free và không bị bản quyền nha mọi người."
+    },
+    {
+      "id": 184,
+      "start": 967.0,
+      "end": 978.0,
+      "start_time": "00:16:07,000",
+      "end_time": "00:16:18,000",
+      "text": "Nên anh em không quan trọng và không sợ bị sử dụng lại nội dung hay bản quyền nha. Nếu có bị thì mình cũng kháng rất là dễ mọi người ơi, bởi vì cái lỗi sử dụng lại nội dung thì kháng rất là dễ."
+    },
+    {
+      "id": 185,
+      "start": 978.0,
+      "end": 988.2,
+      "start_time": "00:16:18,000",
+      "end_time": "00:16:28,200",
+      "text": "Đấy, nói chung là không bao giờ bị hoặc nếu có bị thì cũng kháng dễ lắm nên anh em yên tâm mà dùng, bởi vì em đang có 3-4 kênh làm như này nè mọi người, nhiều người làm lắm chứ không phải riêng mình đâu."
+    },
+    {
+      "id": 186,
+      "start": 988.2,
+      "end": 998.457,
+      "start_time": "00:16:28,200",
+      "end_time": "00:16:38,457",
+      "text": "Đấy mọi người cứ tìm kiếm những cái video thiên nhiên hoặc là những cái video cảnh gì đấy thì mọi người cứ dịch ra tiếng Anh, mọi người search vào."
+    },
+    {
+      "id": 187,
+      "start": 998.457,
+      "end": 1006.227,
+      "start_time": "00:16:38,457",
+      "end_time": "00:16:46,227",
+      "text": "Mọi người bấm tải về. Tải bao nhiêu video thì mọi người cứ canh. Ví dụ như kịch bản mọi người đã gen ra"
+    },
+    {
+      "id": 188,
+      "start": 1006.227,
+      "end": 1013.997,
+      "start_time": "00:16:46,227",
+      "end_time": "00:16:53,997",
+      "text": "âm thanh tầm 8 hay 10 phút thì mọi người cứ tải nhiều video về ghép lại cho nó đủ phút thôi là được nha."
+    },
+    {
+      "id": 189,
+      "start": 1014.617,
+      "end": 1022.617,
+      "start_time": "00:16:54,617",
+      "end_time": "00:17:02,617",
+      "text": "Bây giờ không chỉ có cái web này đâu nha mọi người, còn rất là nhiều web khác nhau nha. Đấy, em sẽ để cái link ở trong cái file cho mọi người tải luôn nha."
+    },
+    {
+      "id": 190,
+      "start": 1023.157,
+      "end": 1025.877,
+      "start_time": "00:17:03,157",
+      "end_time": "00:17:05,877",
+      "text": "Rồi, anh em cứ yên tâm là em sẽ để cái link cho mọi người."
+    },
+    {
+      "id": 191,
+      "start": 1025.877,
+      "end": 1032.877,
+      "start_time": "00:17:05,877",
+      "end_time": "00:17:12,877",
+      "text": "Bây giờ mình đã tạo video rồi, mình sẽ tạo âm thanh trước nha. Đáng lý ra mình"
+    },
+    {
+      "id": 192,
+      "start": 1032.877,
+      "end": 1039.877,
+      "start_time": "00:17:12,877",
+      "end_time": "00:17:19,877",
+      "text": "sẽ tạo voice trước, nhưng thôi cứ kệ mình cứ lấy tài nguyên video trước nha mọi người."
+    },
+    {
+      "id": 193,
+      "start": 1039.877,
+      "end": 1043.877,
+      "start_time": "00:17:19,877",
+      "end_time": "00:17:23,877",
+      "text": "Làm theo cái dạng này thì mình làm cái gì trước cũng được không sao nha mọi người ơi."
+    },
+    {
+      "id": 194,
+      "start": 1043.877,
+      "end": 1051.611,
+      "start_time": "00:17:23,877",
+      "end_time": "00:17:31,611",
+      "text": "Sau khi mà mình đã có kịch bản và mình đã lưu cái kịch bản rồi á thì mọi người làm cái này là làm view Việt đúng không? Thì mọi người dùng cái"
+    },
+    {
+      "id": 195,
+      "start": 1051.611,
+      "end": 1059.345,
+      "start_time": "00:17:31,611",
+      "end_time": "00:17:39,345",
+      "text": "con Vbee này nha. Em thấy con Vbee này thì ổn nhất rồi và nó cũng khá là rẻ. Nên là anh em có thể dùng cái con Vbee này cũng được nha."
+    },
+    {
+      "id": 196,
+      "start": 1059.345,
+      "end": 1066.345,
+      "start_time": "00:17:39,345",
+      "end_time": "00:17:46,345",
+      "text": "Điều này là nếu mọi người làm view ngoại hay các nước ngoài thì dùng con ElevenLabs thì nó sẽ ngon hơn."
+    },
+    {
+      "id": 197,
+      "start": 1066.345,
+      "end": 1079.345,
+      "start_time": "00:17:46,345",
+      "end_time": "00:17:59,345",
+      "text": "Bởi vì nếu mà dùng tiếng Việt cho con ElevenLabs nó cũng có, nó cũng có nha mọi người, nhưng mà kiểu như con ElevenLabs là của người nước ngoài họ train ấy, nên là nhiều lúc nó sẽ đọc bị ngu nha mọi người."
+    },
+    {
+      "id": 198,
+      "start": 1079.345,
+      "end": 1083.345,
+      "start_time": "00:17:59,345",
+      "end_time": "00:18:03,345",
+      "text": "Nó không có đọc hay và không có đọc đúng được cái ngôn ngữ của mình."
+    },
+    {
+      "id": 199,
+      "start": 1083.345,
+      "end": 1088.345,
+      "start_time": "00:18:03,345",
+      "end_time": "00:18:08,345",
+      "text": "Đấy, nên là thành ra nhiều lúc nó đọc không có hay và không có đúng được nha mọi người."
+    },
+    {
+      "id": 200,
+      "start": 1088.345,
+      "end": 1094.345,
+      "start_time": "00:18:08,345",
+      "end_time": "00:18:14,345",
+      "text": "Nên là anh em lưu ý chỗ đó, mọi người làm view ngoại thì có thể dùng ElevenLabs được."
+    },
+    {
+      "id": 201,
+      "start": 1094.345,
+      "end": 1101.345,
+      "start_time": "00:18:14,345",
+      "end_time": "00:18:21,345",
+      "text": "Rồi bây giờ em sẽ chọn lại 1 cái giọng này nha, rồi em sẽ upload file lên rồi, chỗ này thì mọi người chỉnh theo tùy ý thôi."
+    },
+    {
+      "id": 202,
+      "start": 1101.345,
+      "end": 1109.345,
+      "start_time": "00:18:21,345",
+      "end_time": "00:18:29,345",
+      "text": "Về cái chỗ tốc độ nè, em sẽ để 0.75 nha, để tốc độ hơi chậm tý, mọi người có thể tự chỉnh theo em muốn nha."
+    },
+    {
+      "id": 203,
+      "start": 1109.345,
+      "end": 1114.345,
+      "start_time": "00:18:29,345",
+      "end_time": "00:18:34,345",
+      "text": "ngồi chờ nó gen ra thôi anh em."
+    },
+    {
+      "id": 204,
+      "start": 1114.345,
+      "end": 1116.3,
+      "start_time": "00:18:34,345",
+      "end_time": "00:18:36,300",
+      "text": "xem thôi anh em. Rồi sau khi..."
+    },
+    {
+      "id": 205,
+      "start": 1116.3,
+      "end": 1119.22,
+      "start_time": "00:18:36,300",
+      "end_time": "00:18:39,220",
+      "text": "Mọi người bấm tải về nha, vậy đây em đã tải về rồi nha mọi người"
+    },
+    {
+      "id": 206,
+      "start": 1119.22,
+      "end": 1124.42,
+      "start_time": "00:18:39,220",
+      "end_time": "00:18:44,420",
+      "text": "Rồi tiếp theo bây giờ sẽ tiếp tục làm về cái ảnh cái nhân vật nha mọi người"
+    },
+    {
+      "id": 207,
+      "start": 1124.42,
+      "end": 1127.88,
+      "start_time": "00:18:44,420",
+      "end_time": "00:18:47,880",
+      "text": "Đấy một cái nhân vật thì mọi người chỉ làm một ảnh thôi"
+    },
+    {
+      "id": 208,
+      "start": 1127.88,
+      "end": 1131.42,
+      "start_time": "00:18:47,880",
+      "end_time": "00:18:51,420",
+      "text": "Đấy như này thì mọi người để xuyên suốt cả cái kênh mọi người luôn nha"
+    },
+    {
+      "id": 209,
+      "start": 1131.42,
+      "end": 1135.44,
+      "start_time": "00:18:51,420",
+      "end_time": "00:18:55,440",
+      "text": "Nên là cái key này, cái dạng này làm rất là dễ luôn nha mọi người"
+    },
+    {
+      "id": 210,
+      "start": 1135.44,
+      "end": 1139.14,
+      "start_time": "00:18:55,440",
+      "end_time": "00:18:59,140",
+      "text": "Chỉ cần một nhân vật thôi, vậy là mọi người tạo ảnh chỉ một lần thôi"
+    },
+    {
+      "id": 211,
+      "start": 1139.14,
+      "end": 1140.86,
+      "start_time": "00:18:59,140",
+      "end_time": "00:19:00,860",
+      "text": "Và làm thêm cũng rất là dễ"
+    },
+    {
+      "id": 212,
+      "start": 1140.86,
+      "end": 1143.36,
+      "start_time": "00:19:00,860",
+      "end_time": "00:19:03,360",
+      "text": "Đấy em sẽ hướng dẫn mọi người chi tiết luôn nha"
+    },
+    {
+      "id": 213,
+      "start": 1143.36,
+      "end": 1144.3,
+      "start_time": "00:19:03,360",
+      "end_time": "00:19:04,300",
+      "text": "Rồi bây giờ"
+    },
+    {
+      "id": 214,
+      "start": 1144.345,
+      "end": 1152.678,
+      "start_time": "00:19:04,345",
+      "end_time": "00:19:12,678",
+      "text": "Ví dụ như này đúng không? Về cái thằng này á, cái của cái kênh này á, nó đang dùng HeyGen nha mọi người. Nhưng mà nó chỉ làm một cái đoạn"
+    },
+    {
+      "id": 215,
+      "start": 1152.678,
+      "end": 1161.012,
+      "start_time": "00:19:12,678",
+      "end_time": "00:19:21,012",
+      "text": "ngắn vài giây thôi. Về nó ghép đi lặp đi lặp lại mọi người. Về mọi người nhìn cái khẩu miệng của nó, nó không có được đúng, về nó không"
+    },
+    {
+      "id": 216,
+      "start": 1161.012,
+      "end": 1169.345,
+      "start_time": "00:19:21,012",
+      "end_time": "00:19:29,345",
+      "text": "có hay đúng không mọi người? Như vậy thành ra tỷ lệ giữ cho người xem thì sẽ thấp hơn nha. Bởi vì người xem không có được thích nha mọi người."
+    },
+    {
+      "id": 217,
+      "start": 1169.345,
+      "end": 1178.345,
+      "start_time": "00:19:29,345",
+      "end_time": "00:19:38,345",
+      "text": "Để làm thì nên đầu tư hẳn hoi, con HeyGen rồi mọi người làm hẳn một cái video nói về như vậy luôn nha."
+    },
+    {
+      "id": 218,
+      "start": 1178.345,
+      "end": 1184.345,
+      "start_time": "00:19:38,345",
+      "end_time": "00:19:44,345",
+      "text": "Tí nữa em sẽ ví dụ làm cho mọi người luôn, yên tâm là em sẽ hướng dẫn từ A đến Z cho mọi người."
+    },
+    {
+      "id": 219,
+      "start": 1184.345,
+      "end": 1190.345,
+      "start_time": "00:19:44,345",
+      "end_time": "00:19:50,345",
+      "text": "Đây là ví dụ em tạo ra cái ảnh nè, cái ảnh ông bác sĩ nè mọi người."
+    },
+    {
+      "id": 220,
+      "start": 1190.345,
+      "end": 1195.345,
+      "start_time": "00:19:50,345",
+      "end_time": "00:19:55,345",
+      "text": "Và cái prompt này thì em đang để là Việt Nam nè, cái nhân vật Việt Nam nè."
+    },
+    {
+      "id": 221,
+      "start": 1195.345,
+      "end": 1200.0,
+      "start_time": "00:19:55,345",
+      "end_time": "00:20:00,000",
+      "text": "Và cái prompt này thì mọi người yên tâm, em cũng sẽ để trong cái file doc cho mọi người nha."
+    },
+    {
+      "id": 222,
+      "start": 1200.0,
+      "end": 1210.0,
+      "start_time": "00:20:00,000",
+      "end_time": "00:20:10,000",
+      "text": "Rồi sau khi mà có được cái ảnh đã tạo ra rồi á thì mọi người truy cập vào trang web này giúp em nha, để mình xóa cái phông nền của nó ấy. Link thì em cũng sẽ để trong cái file doc cho mọi người nha."
+    },
+    {
+      "id": 223,
+      "start": 1210.0,
+      "end": 1218.0,
+      "start_time": "00:20:10,000",
+      "end_time": "00:20:18,000",
+      "text": "Đấy ok, sau khi mà xóa phông nền xong á thì mọi người lưu về nha."
+    },
+    {
+      "id": 224,
+      "start": 1218.0,
+      "end": 1226.0,
+      "start_time": "00:20:18,000",
+      "end_time": "00:20:26,000",
+      "text": "Tiếp tục, mình chỉ làm cho nhân vật nhép miệng và nói chuẩn theo kịch bản của mình luôn nha mọi người."
+    },
+    {
+      "id": 225,
+      "start": 1226.0,
+      "end": 1237.0,
+      "start_time": "00:20:26,000",
+      "end_time": "00:20:37,000",
+      "text": "Ví dụ như kênh này em nãy em có nói nè mọi người, nó làm không có hay, không có khớp và thật sự là dễ luôn nha. Nên là em hướng dẫn cho mọi người làm một cách chỉn chu luôn nha."
+    },
+    {
+      "id": 226,
+      "start": 1237.0,
+      "end": 1246.25,
+      "start_time": "00:20:37,000",
+      "end_time": "00:20:46,250",
+      "text": "Một cách tránh trùng luôn nha. Rồi mọi người truy cập vào con web HeyGen nè mọi người. Đây nè ban đầu thì nó chỉ cho mọi người dùng free."
+    },
+    {
+      "id": 227,
+      "start": 1246.25,
+      "end": 1255.5,
+      "start_time": "00:20:46,250",
+      "end_time": "00:20:55,500",
+      "text": "free ở đâu có ngon đâu. Free thì nó chỉ tạo được vài cái, vì là nó cực kỳ chậm, vì là nó có cả cái logo HeyGen nữa, nên rất là không ngon nha."
+    },
+    {
+      "id": 228,
+      "start": 1255.5,
+      "end": 1262.127,
+      "start_time": "00:20:55,500",
+      "end_time": "00:21:02,127",
+      "text": "Đây em đang dùng cái gói 29 đô này nha mọi người, mọi người có thể dùng cái gói Team nè, mọi người có"
+    },
+    {
+      "id": 229,
+      "start": 1262.127,
+      "end": 1268.753,
+      "start_time": "00:21:02,127",
+      "end_time": "00:21:08,753",
+      "text": "thể anh em trong nhóm nếu có dùng thì có thể góp lại với nhau hoặc là dùng sao đấy, nói chung là mọi"
+    },
+    {
+      "id": 230,
+      "start": 1268.753,
+      "end": 1275.38,
+      "start_time": "00:21:08,753",
+      "end_time": "00:21:15,380",
+      "text": "người cân đối nha. Nhưng mà em khuyên mọi người là nên đầu tư nha mọi người, để làm cho nó hẳn hoi nha."
+    },
+    {
+      "id": 231,
+      "start": 1275.5,
+      "end": 1277.5,
+      "start_time": "00:21:15,500",
+      "end_time": "00:21:17,500",
+      "text": "Để anh mua cái gói này"
+    },
+    {
+      "id": 232,
+      "start": 1277.5,
+      "end": 1287.5,
+      "start_time": "00:21:17,500",
+      "end_time": "00:21:27,500",
+      "text": "Tạo video không giới hạn, video gen ra dưới 30 phút là khá hợp lý với key này."
+    },
+    {
+      "id": 233,
+      "start": 1287.5,
+      "end": 1290.5,
+      "start_time": "00:21:27,500",
+      "end_time": "00:21:30,500",
+      "text": "Key của mình tầm 10 phút, 20 phút thôi."
+    },
+    {
+      "id": 234,
+      "start": 1290.5,
+      "end": 1293.5,
+      "start_time": "00:21:30,500",
+      "end_time": "00:21:33,500",
+      "text": "Bây giờ em sẽ hướng dẫn cách tạo."
+    },
+    {
+      "id": 235,
+      "start": 1293.5,
+      "end": 1296.0,
+      "start_time": "00:21:33,500",
+      "end_time": "00:21:36,000",
+      "text": "Vấn đề mà mua thì mọi người có thể tự cân nhắc."
+    },
+    {
+      "id": 236,
+      "start": 1296.0,
+      "end": 1298.5,
+      "start_time": "00:21:36,000",
+      "end_time": "00:21:38,500",
+      "text": "Mọi người bấm vào avatar giúp em."
+    },
+    {
+      "id": 237,
+      "start": 1298.5,
+      "end": 1302.5,
+      "start_time": "00:21:38,500",
+      "end_time": "00:21:42,500",
+      "text": "Những cái này thì em làm mẫu trước, giờ em sẽ làm mẫu lại nữa."
+    },
+    {
+      "id": 238,
+      "start": 1302.5,
+      "end": 1307.16,
+      "start_time": "00:21:42,500",
+      "end_time": "00:21:47,160",
+      "text": "Mọi người bấm vào Create nè, mọi người bấm cái thứ 2 nha, custom photo avatar nha."
+    },
+    {
+      "id": 239,
+      "start": 1308.06,
+      "end": 1315.16,
+      "start_time": "00:21:48,060",
+      "end_time": "00:21:55,160",
+      "text": "Rồi, anh em bấm vào cái slide này, tải ảnh lên. Lúc nãy nè, có cái ảnh để xóa nền nè mọi người. Đấy, tải về nha."
+    },
+    {
+      "id": 240,
+      "start": 1316.5,
+      "end": 1319.62,
+      "start_time": "00:21:56,500",
+      "end_time": "00:21:59,620",
+      "text": "Tải lên nha, chưa nhầm. Rồi, mọi người bấm upload nha."
+    },
+    {
+      "id": 241,
+      "start": 1320.44,
+      "end": 1325.52,
+      "start_time": "00:22:00,440",
+      "end_time": "00:22:05,520",
+      "text": "Rồi, sau khi upload lên thì nó sẽ chuyển ra cái mục này mà mọi người chờ nó load lên tí nữa nha."
+    },
+    {
+      "id": 242,
+      "start": 1325.96,
+      "end": 1327.8,
+      "start_time": "00:22:05,960",
+      "end_time": "00:22:07,800",
+      "text": "Rồi, mọi người bấm tiếp tục nha."
+    },
+    {
+      "id": 243,
+      "start": 1327.8,
+      "end": 1333.84,
+      "start_time": "00:22:07,800",
+      "end_time": "00:22:13,840",
+      "text": "Để tìm out cái tên của nhân vật hoặc tên của dự án thì cho theo tên của mọi người."
+    },
+    {
+      "id": 244,
+      "start": 1333.84,
+      "end": 1341.563,
+      "start_time": "00:22:13,840",
+      "end_time": "00:22:21,563",
+      "text": "chung cái này không quan trọng đâu anh em, đặt sao cũng được và chọn sao cũng được nha. Kiểu như chính chỗ này thì nó làm cho mình để mình đặt cái tên"
+    },
+    {
+      "id": 245,
+      "start": 1341.563,
+      "end": 1349.285,
+      "start_time": "00:22:21,563",
+      "end_time": "00:22:29,285",
+      "text": "dự án hoặc là cái tên nhân vật để cho nó khỏi bị nhầm ấy. Chỗ này thì em chọn khác này. Rồi mọi người bấm tiếp tục thôi. Rồi sau khi xong"
+    },
+    {
+      "id": 246,
+      "start": 1349.285,
+      "end": 1357.008,
+      "start_time": "00:22:29,285",
+      "end_time": "00:22:37,008",
+      "text": "thì nó sẽ ra như thế này nha mọi người. Và mọi người chỉ cần đợi vài giây thôi nha. Rồi sau vài giây thì nó đã load xong thì mọi người bấm vào."
+    },
+    {
+      "id": 247,
+      "start": 1357.008,
+      "end": 1361.008,
+      "start_time": "00:22:37,008",
+      "end_time": "00:22:41,008",
+      "text": "Sau vài giây thì nó đã load xong."
+    },
+    {
+      "id": 248,
+      "start": 1361.008,
+      "end": 1365.008,
+      "start_time": "00:22:41,008",
+      "end_time": "00:22:45,008",
+      "text": "Mọi người bấm Create, chọn khung hình."
+    },
+    {
+      "id": 249,
+      "start": 1365.008,
+      "end": 1369.008,
+      "start_time": "00:22:45,008",
+      "end_time": "00:22:49,008",
+      "text": "Mọi người nên chọn khung hình dọc."
+    },
+    {
+      "id": 250,
+      "start": 1369.008,
+      "end": 1373.008,
+      "start_time": "00:22:49,008",
+      "end_time": "00:22:53,008",
+      "text": "Nó sẽ hợp với ảnh hơn."
+    },
+    {
+      "id": 251,
+      "start": 1373.008,
+      "end": 1377.008,
+      "start_time": "00:22:53,008",
+      "end_time": "00:22:57,008",
+      "text": "Mọi người có thể nhập văn bản, kịch bản lên, nhưng mà em khuyên không nên."
+    },
+    {
+      "id": 252,
+      "start": 1377.008,
+      "end": 1384.008,
+      "start_time": "00:22:57,008",
+      "end_time": "00:23:04,008",
+      "text": "Bởi vì mình đã gen ra phần âm thanh rồi, thì mọi người bấm vào Upload"
+    },
+    {
+      "id": 253,
+      "start": 1384.008,
+      "end": 1391.008,
+      "start_time": "00:23:04,008",
+      "end_time": "00:23:11,008",
+      "text": "Audio, mọi người chọn file mà lúc nãy em tạo bên Vbee để gen ra được."
+    },
+    {
+      "id": 254,
+      "start": 1391.008,
+      "end": 1397.008,
+      "start_time": "00:23:11,008",
+      "end_time": "00:23:17,008",
+      "text": "Mọi người open lên. Hình như lúc nãy em tạo là được 8 phút mấy."
+    },
+    {
+      "id": 255,
+      "start": 1397.008,
+      "end": 1405.008,
+      "start_time": "00:23:17,008",
+      "end_time": "00:23:25,008",
+      "text": "Đấy, anh em lưu ý là bởi vì sao lại 8 phút mà bên kia mười mấy phút? Bởi vì là cái tiếng Anh thì nó sẽ đọc chậm hơn."
+    },
+    {
+      "id": 256,
+      "start": 1405.008,
+      "end": 1415.008,
+      "start_time": "00:23:25,008",
+      "end_time": "00:23:35,008",
+      "text": "Tiếng Việt mình thì nó đọc nhanh hơn, nên là anh em cứ cân nhắc và chỉnh tốc độ âm thanh để cho nó ra được kịch bản dài hơn tí được nha."
+    },
+    {
+      "id": 257,
+      "start": 1415.008,
+      "end": 1419.008,
+      "start_time": "00:23:35,008",
+      "end_time": "00:23:39,008",
+      "text": "Để nó upload lên nha mọi người."
+    },
+    {
+      "id": 258,
+      "start": 1419.008,
+      "end": 1425.008,
+      "start_time": "00:23:39,008",
+      "end_time": "00:23:45,008",
+      "text": "Thật sự những chia sẻ cũng như hướng dẫn kinh nghiệm của em thì mấy bác nên làm theo em nha mọi người."
+    },
+    {
+      "id": 259,
+      "start": 1425.008,
+      "end": 1431.008,
+      "start_time": "00:23:45,008",
+      "end_time": "00:23:51,008",
+      "text": "Mọi người đã bỏ tiền vào đây rồi thì mọi người cứ làm theo em đảm bảo là nó sẽ lên nha anh em ơi."
+    },
+    {
+      "id": 260,
+      "start": 1431.008,
+      "end": 1438.008,
+      "start_time": "00:23:51,008",
+      "end_time": "00:23:58,008",
+      "text": "Những cái vấn đề thực chiến thực tế này thì em đã làm rồi thì em mới nói và chia sẻ cho mấy bác thôi."
+    },
+    {
+      "id": 261,
+      "start": 1438.008,
+      "end": 1443.008,
+      "start_time": "00:23:58,008",
+      "end_time": "00:24:03,008",
+      "text": "Những cái khó học mấy chục cũ hồi kia thì em nói thật sự không bằng một gấp của em đâu."
+    },
+    {
+      "id": 262,
+      "start": 1443.008,
+      "end": 1453.008,
+      "start_time": "00:24:03,008",
+      "end_time": "00:24:13,008",
+      "text": "Thật sự như vậy luôn á mọi người. Mấy bác nào mà đã học những cái khóa mấy chục củ hoặc là mấy củ đó rồi á thì thật sự để so với cái của em á thì không bằng đâu nha mọi người."
+    },
+    {
+      "id": 263,
+      "start": 1453.008,
+      "end": 1462.008,
+      "start_time": "00:24:13,008",
+      "end_time": "00:24:22,008",
+      "text": "Những cái free mà em share trên kênh YouTube thì đã đủ ăn đứt rồi. Về cách tìm key, về tư duy tìm key đó ấy. Nó rất là thực chiến và rất là hay nha mọi người."
+    },
+    {
+      "id": 264,
+      "start": 1462.008,
+      "end": 1469.008,
+      "start_time": "00:24:22,008",
+      "end_time": "00:24:29,008",
+      "text": "Rồi sau khi đợi nó upload tí á thì nó đã gen xong rồi nha mọi người. Rồi bây giờ thì mình chỉ cần bấm vào Add to."
+    },
+    {
+      "id": 265,
+      "start": 1469.008,
+      "end": 1475.688,
+      "start_time": "00:24:29,008",
+      "end_time": "00:24:35,688",
+      "text": "Cái nút mà tím tím ở dưới nè mọi người. Rồi sau khi bấm xong thì mọi người đợi một tí để"
+    },
+    {
+      "id": 266,
+      "start": 1475.688,
+      "end": 1482.368,
+      "start_time": "00:24:35,688",
+      "end_time": "00:24:42,368",
+      "text": "nó log lên nha. Để nó tải lên. Ok sau khi tải lên xong thì mọi người ở bên kia một bên tiên"
+    },
+    {
+      "id": 267,
+      "start": 1482.368,
+      "end": 1489.008,
+      "start_time": "00:24:42,368",
+      "end_time": "00:24:49,008",
+      "text": "phải ở trên góc phải nè mọi người có thấy cái chữ Gen không? Đấy mọi người bấm vào đấy để cho nó"
+    },
+    {
+      "id": 268,
+      "start": 1489.008,
+      "end": 1495.011,
+      "start_time": "00:24:49,008",
+      "end_time": "00:24:55,011",
+      "text": "Về phần chỗ này cũng như là đặt tên file, em sẽ đặt hướng dẫn H2Dev đi"
+    },
+    {
+      "id": 269,
+      "start": 1495.011,
+      "end": 1501.014,
+      "start_time": "00:24:55,011",
+      "end_time": "00:25:01,014",
+      "text": "nha. Chỗ này thì mọi người đặt tên gì cũng được. Chọn chất lượng là 1080 nha."
+    },
+    {
+      "id": 270,
+      "start": 1501.014,
+      "end": 1507.017,
+      "start_time": "00:25:01,014",
+      "end_time": "00:25:07,017",
+      "text": "Ở thông số này thì mọi người nên chọn P50 nha để cho video nó mượt màng."
+    },
+    {
+      "id": 271,
+      "start": 1507.017,
+      "end": 1513.017,
+      "start_time": "00:25:07,017",
+      "end_time": "00:25:13,017",
+      "text": "Chỉ để hài lem thôi."
+    },
+    {
+      "id": 272,
+      "start": 1513.017,
+      "end": 1519.017,
+      "start_time": "00:25:13,017",
+      "end_time": "00:25:19,017",
+      "text": "Chỉ cần chờ đợi nó gen xong rồi làm thôi."
+    },
+    {
+      "id": 273,
+      "start": 1519.017,
+      "end": 1528.417,
+      "start_time": "00:25:19,017",
+      "end_time": "00:25:28,417",
+      "text": "Đây là lúc xong rồi nha. Rồi mọi người bấm vào. Và ở ngay ở trên dưới phải này nó có chữ download thì mọi người download về nha. Đấy mọi người chọn cái chất lượng 1080 nha."
+    },
+    {
+      "id": 274,
+      "start": 1529.057,
+      "end": 1536.237,
+      "start_time": "00:25:29,057",
+      "end_time": "00:25:36,237",
+      "text": "Rồi ok bây giờ thì đã có kịch bản, đã có voice, đã có hình ảnh âm thanh rồi thì bây giờ mình sẽ vào edit thôi nha mọi người."
+    },
+    {
+      "id": 275,
+      "start": 1536.717,
+      "end": 1539.437,
+      "start_time": "00:25:36,717",
+      "end_time": "00:25:39,437",
+      "text": "Em sẽ hướng dẫn cho mọi người cách edit và tạo thumb luôn nha."
+    },
+    {
+      "id": 276,
+      "start": 1540.217,
+      "end": 1545.217,
+      "start_time": "00:25:40,217",
+      "end_time": "00:25:45,217",
+      "text": "Rồi đây lúc nãy thì em đã có tải những cái video này rồi và bây giờ em sẽ add vào nha mọi người."
+    },
+    {
+      "id": 277,
+      "start": 1545.217,
+      "end": 1551.217,
+      "start_time": "00:25:45,217",
+      "end_time": "00:25:51,217",
+      "text": "Rồi trước tiên thì em sẽ add cái file âm thanh của mình vào trước nha mọi người."
+    },
+    {
+      "id": 278,
+      "start": 1551.217,
+      "end": 1559.217,
+      "start_time": "00:25:51,217",
+      "end_time": "00:25:59,217",
+      "text": "Cái file âm thanh lúc nãy là tầm 8 phút nha. Đấy, bởi vì cái tiếng Việt của mình nó nói rất là nhanh nên là chỉ có 8 phút thôi."
+    },
+    {
+      "id": 279,
+      "start": 1559.217,
+      "end": 1565.897,
+      "start_time": "00:25:59,217",
+      "end_time": "00:26:05,897",
+      "text": "Rồi bây giờ thì mọi người chỉ cần chọn những cái video này, đấy anh em có thể chọn theo thứ tự, hoặc là copy tất cả"
+    },
+    {
+      "id": 280,
+      "start": 1565.897,
+      "end": 1572.577,
+      "start_time": "00:26:05,897",
+      "end_time": "00:26:12,577",
+      "text": "bỏ vào, hoặc là chọn theo cái nào mà kiểu như video nó hay trước á thì"
+    },
+    {
+      "id": 281,
+      "start": 1572.577,
+      "end": 1579.217,
+      "start_time": "00:26:12,577",
+      "end_time": "00:26:19,217",
+      "text": "mọi người để trước nha. Đấy, nói chung là sao cũng được mọi người ạ."
+    },
+    {
+      "id": 282,
+      "start": 1579.217,
+      "end": 1581.157,
+      "start_time": "00:26:19,217",
+      "end_time": "00:26:21,157",
+      "text": "Rồi xong thì mọi người kéo bỏ vào nha."
+    },
+    {
+      "id": 283,
+      "start": 1581.217,
+      "end": 1586.217,
+      "start_time": "00:26:21,217",
+      "end_time": "00:26:26,217",
+      "text": "Và cái chỗ tỷ lệ khung hình này mọi người nhớ chỉnh giúp em là 16:9 nha mọi người. Đấy."
+    },
+    {
+      "id": 284,
+      "start": 1586.217,
+      "end": 1598.217,
+      "start_time": "00:26:26,217",
+      "end_time": "00:26:38,217",
+      "text": "Rồi bây giờ chỗ này thì em sẽ rà soát lại coi thử cái nào mà nó bị kích thước khung hình bị nhỏ á thì em sẽ phóng to ra nha mọi người, để làm cho nó tương đối bằng nhau luôn nha."
+    },
+    {
+      "id": 285,
+      "start": 1598.217,
+      "end": 1610.217,
+      "start_time": "00:26:38,217",
+      "end_time": "00:26:50,217",
+      "text": "Đây, ví dụ như cái này nè, nó đang bị nhỏ nè, đấy mình kéo ra cho nó phù hợp với khung hình nha. Rồi, ví dụ như cái này nữa nè mọi người. Đấy, vậy cho nó ok nha anh em."
+    },
+    {
+      "id": 286,
+      "start": 1610.217,
+      "end": 1623.677,
+      "start_time": "00:26:50,217",
+      "end_time": "00:27:03,677",
+      "text": "Sau khi xong rồi thì mọi người có thể xếp theo ý thích của mọi người cái video nào lên trước cũng được. Ví dụ như này nè, mọi người copy bỏ lên trên, như nào cũng được nha. Như thế mà cái video mình nó hay là được."
+    },
+    {
+      "id": 287,
+      "start": 1625.0,
+      "end": 1631.117,
+      "start_time": "00:27:05,000",
+      "end_time": "00:27:11,117",
+      "text": "Rồi tiếp tới thì em sẽ làm cái phần giới thiệu cái bàn đều cho mọi người nghe xem nha. Bây giờ em kéo cái phần tàn tria tí đây."
+    },
+    {
+      "id": 288,
+      "start": 1631.657,
+      "end": 1639.417,
+      "start_time": "00:27:11,657",
+      "end_time": "00:27:19,417",
+      "text": "Đấy, mọi người có nhớ mà cái văn bản lúc nãy mà em không copy không? Đây nè, cái đoạn này nè. Bây giờ thì mọi người copy vào cho em nha."
+    },
+    {
+      "id": 289,
+      "start": 1640.217,
+      "end": 1648.92,
+      "start_time": "00:27:20,217",
+      "end_time": "00:27:28,920",
+      "text": "Đã bao giờ bạn nhìn quanh nhà và thấy gì đấy? Bừa bộn này mọi người. Cái kênh lấy kịch bản lúc nãy á thì nó nói về chung kiểu như tuổi già"
+    },
+    {
+      "id": 290,
+      "start": 1648.92,
+      "end": 1657.622,
+      "start_time": "00:27:28,920",
+      "end_time": "00:27:37,622",
+      "text": "ấy mọi người. Nó nói về sức khỏe có và cuộc sống có và kể chuyện có nha. Đấy nên là mọi người cứ dịch ra cho em. Mọi người xem cái"
+    },
+    {
+      "id": 291,
+      "start": 1657.622,
+      "end": 1666.325,
+      "start_time": "00:27:37,622",
+      "end_time": "00:27:46,325",
+      "text": "key mọi người muốn làm cái key nào hoặc là cái ngách nào đó thì mọi người cứ ờ dịch ra và thấy nó phù hợp á thì mọi người lấy về nha."
+    },
+    {
+      "id": 292,
+      "start": 1666.325,
+      "end": 1672.325,
+      "start_time": "00:27:46,325",
+      "end_time": "00:27:52,325",
+      "text": "Ví dụ video này đang nói về người già ở nhà bừa bộn gì đấy."
+    },
+    {
+      "id": 293,
+      "start": 1672.325,
+      "end": 1675.325,
+      "start_time": "00:27:52,325",
+      "end_time": "00:27:55,325",
+      "text": "Nên mọi người lưu ý chỗ này cho mọi người nha."
+    },
+    {
+      "id": 294,
+      "start": 1675.325,
+      "end": 1680.325,
+      "start_time": "00:27:55,325",
+      "end_time": "00:28:00,325",
+      "text": "Về đây cũng chỉ là ví dụ của em thôi. Cách mọi người làm thì cứ tương tự như em mà làm nha."
+    },
+    {
+      "id": 295,
+      "start": 1680.325,
+      "end": 1685.325,
+      "start_time": "00:28:00,325",
+      "end_time": "00:28:05,325",
+      "text": "Sau khi xong thì mọi người vào văn bản và kéo xuống chỗ phông nền nè mọi người."
+    },
+    {
+      "id": 296,
+      "start": 1685.325,
+      "end": 1690.325,
+      "start_time": "00:28:05,325",
+      "end_time": "00:28:10,325",
+      "text": "Chọn phông nền để giúp em vẽ giảm độ mờ xuống nha."
+    },
+    {
+      "id": 297,
+      "start": 1690.325,
+      "end": 1692.325,
+      "start_time": "00:28:10,325",
+      "end_time": "00:28:12,325",
+      "text": "Như này thì hợp lý nè mọi người."
+    },
+    {
+      "id": 298,
+      "start": 1692.325,
+      "end": 1696.325,
+      "start_time": "00:28:12,325",
+      "end_time": "00:28:16,325",
+      "text": "Và mình sẽ cho nó in đậm thêm tí nha mọi người."
+    },
+    {
+      "id": 299,
+      "start": 1696.325,
+      "end": 1700.325,
+      "start_time": "00:28:16,325",
+      "end_time": "00:28:20,325",
+      "text": "In đậm đâu? Đây, in đậm đây. Đấy, như vậy thì..."
+    },
+    {
+      "id": 300,
+      "start": 1700.325,
+      "end": 1708.325,
+      "start_time": "00:28:20,325",
+      "end_time": "00:28:28,325",
+      "text": "Mọi người có thể chỉnh theo phông chữ, nhưng mà theo mình thì để mặc định như thế này cũng hợp lý."
+    },
+    {
+      "id": 301,
+      "start": 1708.325,
+      "end": 1712.325,
+      "start_time": "00:28:28,325",
+      "end_time": "00:28:32,325",
+      "text": "Anh em có thể tự chỉnh theo ý thích."
+    },
+    {
+      "id": 302,
+      "start": 1712.325,
+      "end": 1718.325,
+      "start_time": "00:28:32,325",
+      "end_time": "00:28:38,325",
+      "text": "Tiếp tục là em sẽ làm đều cái đoạn đánh dấu, kiểu như đánh văn bản vào."
+    },
+    {
+      "id": 303,
+      "start": 1718.325,
+      "end": 1725.325,
+      "start_time": "00:28:38,325",
+      "end_time": "00:28:45,325",
+      "text": "Để tìm kiếm những cái đoạn mở đầu, em sẽ chọn một cái."
+    },
+    {
+      "id": 304,
+      "start": 1725.325,
+      "end": 1733.325,
+      "start_time": "00:28:45,325",
+      "end_time": "00:28:53,325",
+      "text": "Cái này hợp lý, cái ở trước này hợp lý hơn."
+    },
+    {
+      "id": 305,
+      "start": 1733.325,
+      "end": 1738.325,
+      "start_time": "00:28:53,325",
+      "end_time": "00:28:58,325",
+      "text": "Rồi bây giờ em sẽ tùy chỉnh thời lượng lên để cho nó chậm lại."
+    },
+    {
+      "id": 306,
+      "start": 1738.325,
+      "end": 1742.325,
+      "start_time": "00:28:58,325",
+      "end_time": "00:29:02,325",
+      "text": "Như này thì thấy khá ổn"
+    },
+    {
+      "id": 307,
+      "start": 1742.325,
+      "end": 1749.325,
+      "start_time": "00:29:02,325",
+      "end_time": "00:29:09,325",
+      "text": "Tiếp tục đến với phần hiệu ứng âm thanh."
+    },
+    {
+      "id": 308,
+      "start": 1749.325,
+      "end": 1752.325,
+      "start_time": "00:29:09,325",
+      "end_time": "00:29:12,325",
+      "text": "Mọi người bấm vào âm thanh về chọn hiệu ứng âm thanh giúp em."
+    },
+    {
+      "id": 309,
+      "start": 1752.325,
+      "end": 1755.325,
+      "start_time": "00:29:12,325",
+      "end_time": "00:29:15,325",
+      "text": "Mọi người search như em nha."
+    },
+    {
+      "id": 310,
+      "start": 1755.325,
+      "end": 1758.325,
+      "start_time": "00:29:15,325",
+      "end_time": "00:29:18,325",
+      "text": "Search như này nè. Đấy thì nó sẽ ra nè."
+    },
+    {
+      "id": 311,
+      "start": 1758.325,
+      "end": 1761.325,
+      "start_time": "00:29:18,325",
+      "end_time": "00:29:21,325",
+      "text": "Rồi, mọi người kéo xuống thì sẽ thấy nha."
+    },
+    {
+      "id": 312,
+      "start": 1761.325,
+      "end": 1763.325,
+      "start_time": "00:29:21,325",
+      "end_time": "00:29:23,325",
+      "text": "Bây giờ em sẽ nghe thử những cái này thôi."
+    },
+    {
+      "id": 313,
+      "start": 1763.325,
+      "end": 1767.325,
+      "start_time": "00:29:23,325",
+      "end_time": "00:29:27,325",
+      "text": "Cái này khá là ngắn nên là mọi người lấy ở dưới này nha."
+    },
+    {
+      "id": 314,
+      "start": 1767.325,
+      "end": 1770.325,
+      "start_time": "00:29:27,325",
+      "end_time": "00:29:30,325",
+      "text": "Cái nào ngắn quá thì không nên lấy nha mọi người."
+    },
+    {
+      "id": 315,
+      "start": 1770.325,
+      "end": 1776.325,
+      "start_time": "00:29:30,325",
+      "end_time": "00:29:36,325",
+      "text": "Ví dụ như cái này mọi người có thể lấy, hoặc là cái dưới này."
+    },
+    {
+      "id": 316,
+      "start": 1776.325,
+      "end": 1783.325,
+      "start_time": "00:29:36,325",
+      "end_time": "00:29:43,325",
+      "text": "Đấy, em sẽ lấy cái này nha mọi người. Cái này rất là hợp lý luôn."
+    },
+    {
+      "id": 317,
+      "start": 1783.325,
+      "end": 1786.325,
+      "start_time": "00:29:43,325",
+      "end_time": "00:29:46,325",
+      "text": "Rồi, bây giờ chỉ cần việc mình edit lại tí."
+    },
+    {
+      "id": 318,
+      "start": 1786.325,
+      "end": 1788.325,
+      "start_time": "00:29:46,325",
+      "end_time": "00:29:48,325",
+      "text": "Đấy, mình canh chỉnh nè."
+    },
+    {
+      "id": 319,
+      "start": 1788.325,
+      "end": 1791.325,
+      "start_time": "00:29:48,325",
+      "end_time": "00:29:51,325",
+      "text": "Rồi, bây giờ mình chỉ cần cắt ra thôi nha."
+    },
+    {
+      "id": 320,
+      "start": 1795.325,
+      "end": 1800.0,
+      "start_time": "00:29:55,325",
+      "end_time": "00:30:00,000",
+      "text": "Sau khi xong rồi thì anh em kéo cái âm thanh của mình, âm thanh gốc của mình, âm thanh của mình,"
+    },
+    {
+      "id": 321,
+      "start": 1800.0,
+      "end": 1807.14,
+      "start_time": "00:30:00,000",
+      "end_time": "00:30:07,140",
+      "text": "thêm thêm thanh kịch bản của mình lại nha rồi như này Ok tiếp tục mình sẽ import mình sẽ thêm vào"
+    },
+    {
+      "id": 322,
+      "start": 1807.14,
+      "end": 1814.58,
+      "start_time": "00:30:07,140",
+      "end_time": "00:30:14,580",
+      "text": "cái video HeyGen nha Đây này cái video của cái ông này nói này mọi người nãy bây giờ thì mọi người"
+    },
+    {
+      "id": 323,
+      "start": 1814.58,
+      "end": 1820.76,
+      "start_time": "00:30:14,580",
+      "end_time": "00:30:20,760",
+      "text": "để thêm vào rồi á thì anh em nhớ luôn giúp em làm lại xóa phông nền đó đi vì là ngay cái chỗ xóa nền"
+    },
+    {
+      "id": 324,
+      "start": 1820.76,
+      "end": 1828.02,
+      "start_time": "00:30:20,760",
+      "end_time": "00:30:28,020",
+      "text": "nè em mọi người vào cái phông nền nha mọi người bấm vào cái dấu này cho em bấm hai lần nha đấy"
+    },
+    {
+      "id": 325,
+      "start": 1828.02,
+      "end": 1830.0,
+      "start_time": "00:30:28,020",
+      "end_time": "00:30:30,000",
+      "text": "Mình chọn vào cái màu trắng rồi"
+    },
+    {
+      "id": 326,
+      "start": 1830.0,
+      "end": 1840.0,
+      "start_time": "00:30:30,000",
+      "end_time": "00:30:40,000",
+      "text": "Như vậy thì nó đã xóa nha, mọi người có thể tùy chỉnh ở dưới này nữa. Và em sẽ làm mờ cái đường viền đi. Đấy, cái đường viền màu trắng nó bị mất đi rồi đấy mọi người."
+    },
+    {
+      "id": 327,
+      "start": 1840.0,
+      "end": 1850.0,
+      "start_time": "00:30:40,000",
+      "end_time": "00:30:50,000",
+      "text": "Đấy, như vậy là hợp lý nha. Rồi em sẽ phóng to lên tí. Đấy, và anh em có thể căn chỉnh để sao cho nó hợp lý nhất nha, để như này là ok rồi nè."
+    },
+    {
+      "id": 328,
+      "start": 1850.0,
+      "end": 1858.1,
+      "start_time": "00:30:50,000",
+      "end_time": "00:30:58,100",
+      "text": "Như này là ok luôn mọi người ơi. Bây giờ em sẽ test cái âm thanh ở trong cái video này nha. Bởi vì nó cùng âm thanh đấy. Mọi người cứ test đi một cái là được."
+    },
+    {
+      "id": 329,
+      "start": 1858.1,
+      "end": 1865.1,
+      "start_time": "00:30:58,100",
+      "end_time": "00:31:05,100",
+      "text": "Rồi bây giờ em sẽ bấm chạy thử cho mọi người xem nha. Chưa edit xong đâu nhưng mà em sẽ bấm chạy thử cho mọi người xem."
+    },
+    {
+      "id": 330,
+      "start": 1865.1,
+      "end": 1874.1,
+      "start_time": "00:31:05,100",
+      "end_time": "00:31:14,100",
+      "text": "Càng lớn tuổi, ngôi nhà của chúng ta càng thay đổi theo thời gian."
+    },
+    {
+      "id": 331,
+      "start": 1874.1,
+      "end": 1878.1,
+      "start_time": "00:31:14,100",
+      "end_time": "00:31:18,100",
+      "text": "Đấy, mấy bác có thấy cái miệng của nó nhép rất là đúng và rất là chuẩn luôn không?"
+    },
+    {
+      "id": 332,
+      "start": 1883.1,
+      "end": 1894.1,
+      "start_time": "00:31:23,100",
+      "end_time": "00:31:34,100",
+      "text": "Như kênh của đối thủ, nó chỉ làm những đoạn ca sản trước, chỉ lặp đi lặp lại một đoạn ngắn hết cho hết video thôi, và nó không hề khớp tí nào."
+    },
+    {
+      "id": 333,
+      "start": 1894.1,
+      "end": 1904.1,
+      "start_time": "00:31:34,100",
+      "end_time": "00:31:44,100",
+      "text": "Như vậy thì khán giả sẽ ghét hoặc không thích hơn. Như mình phải làm thì mình phải làm hơn đối thủ, như vậy thì mình sẽ thu hút được."
+    },
+    {
+      "id": 334,
+      "start": 1904.1,
+      "end": 1915.1,
+      "start_time": "00:31:44,100",
+      "end_time": "00:31:55,100",
+      "text": "Sau khi xong thì mọi người bấm vào âm thanh, trích xuất phụ đề tự động ra, mọi người chọn tiếng Việt, mọi người làm thị trường khác thì có thể chọn ngôn ngữ khác thôi."
+    },
+    {
+      "id": 335,
+      "start": 1915.1,
+      "end": 1918.1,
+      "start_time": "00:31:55,100",
+      "end_time": "00:31:58,100",
+      "text": "Bây giờ chỉ cần đợi nó tạo ra thôi."
+    },
+    {
+      "id": 336,
+      "start": 1918.1,
+      "end": 1924.1,
+      "start_time": "00:31:58,100",
+      "end_time": "00:32:04,100",
+      "text": "Rồi ok, như vậy nó đã tạo ra phụ đề xong rồi thì mọi người vào edit một tí nữa nha."
+    },
+    {
+      "id": 337,
+      "start": 1924.1,
+      "end": 1932.1,
+      "start_time": "00:32:04,100",
+      "end_time": "00:32:12,100",
+      "text": "Chỉnh cho phông chữ của nó và cỡ chữ của nó to lên để dễ nhìn nha mọi người."
+    },
+    {
+      "id": 338,
+      "start": 1932.1,
+      "end": 1937.1,
+      "start_time": "00:32:12,100",
+      "end_time": "00:32:17,100",
+      "text": "Bởi vì cái key này mình làm cho người già xem thì mình phải càng để cho nó rõ ràng."
+    },
+    {
+      "id": 339,
+      "start": 1937.1,
+      "end": 1942.0,
+      "start_time": "00:32:17,100",
+      "end_time": "00:32:22,000",
+      "text": "Vì càng cái phông chữ nó càng to thì nó sẽ càng ngon hơn nha mọi người."
+    },
+    {
+      "id": 340,
+      "start": 1942.0,
+      "end": 1950.322,
+      "start_time": "00:32:22,000",
+      "end_time": "00:32:30,322",
+      "text": "bởi vì người già thì họ thường là thích phông chữ to đấy mọi người. Bởi vì phông chữ nhỏ thì họ đọc không có được nha. Đấy"
+    },
+    {
+      "id": 341,
+      "start": 1950.322,
+      "end": 1958.544,
+      "start_time": "00:32:30,322",
+      "end_time": "00:32:38,544",
+      "text": "như vậy em sẽ chỉnh cho nó xuống tí nữa đi. Như vậy thì hơi to quá. Đấy như này chỉnh tiếp đi. Như này thì cũng hợp"
+    },
+    {
+      "id": 342,
+      "start": 1958.544,
+      "end": 1966.766,
+      "start_time": "00:32:38,544",
+      "end_time": "00:32:46,766",
+      "text": "lý nha. và mọi người bấm in đậm giúp em nha. Rồi chỗ này, ui chỗ này không cần đâu. Mọi người cứ bấm vào cái phông nền này"
+    },
+    {
+      "id": 343,
+      "start": 1966.766,
+      "end": 1974.988,
+      "start_time": "00:32:46,766",
+      "end_time": "00:32:54,988",
+      "text": "cho em là được rồi. Rồi cái chỗ mờ, độ mờ thì mọi người giảm xuống tầm 50 giúp em nha. Đấy, như nào cũng được, tầm 50."
+    },
+    {
+      "id": 344,
+      "start": 1975.0,
+      "end": 1975.84,
+      "start_time": "00:32:55,000",
+      "end_time": "00:32:55,840",
+      "text": "Cũng hợp lý"
+    },
+    {
+      "id": 345,
+      "start": 1976.8,
+      "end": 1978.32,
+      "start_time": "00:32:56,800",
+      "end_time": "00:32:58,320",
+      "text": "Rồi mọi người thu nhỏ lại tí"
+    },
+    {
+      "id": 346,
+      "start": 1978.58,
+      "end": 1980.38,
+      "start_time": "00:32:58,580",
+      "end_time": "00:33:00,380",
+      "text": "Rồi để cho nó hợp lý tí nha"
+    },
+    {
+      "id": 347,
+      "start": 1980.88,
+      "end": 1983.2,
+      "start_time": "00:33:00,880",
+      "end_time": "00:33:03,200",
+      "text": "Rồi ok như này là chuẩn rồi nha mọi người"
+    },
+    {
+      "id": 348,
+      "start": 1983.7,
+      "end": 1986.78,
+      "start_time": "00:33:03,700",
+      "end_time": "00:33:06,780",
+      "text": "Thấy chỗ này nó hơi bị ái"
+    },
+    {
+      "id": 349,
+      "start": 1987.04,
+      "end": 1988.32,
+      "start_time": "00:33:07,040",
+      "end_time": "00:33:08,320",
+      "text": "Để em chỉnh xuống tí nữa"
+    },
+    {
+      "id": 350,
+      "start": 1988.56,
+      "end": 1990.62,
+      "start_time": "00:33:08,560",
+      "end_time": "00:33:10,620",
+      "text": "Đấy như này ok hơn nha mọi người"
+    },
+    {
+      "id": 351,
+      "start": 1991.64,
+      "end": 1994.2,
+      "start_time": "00:33:11,640",
+      "end_time": "00:33:14,200",
+      "text": "Rồi quá là ok luôn đúng không mọi người ơi"
+    },
+    {
+      "id": 352,
+      "start": 1994.46,
+      "end": 1999.008,
+      "start_time": "00:33:14,460",
+      "end_time": "00:33:19,008",
+      "text": "Bây giờ em sẽ cho mấy bác nghe qua thử nha, xem qua thử cái đoạn này tí nha"
+    },
+    {
+      "id": 353,
+      "start": 1999.008,
+      "end": 2011.008,
+      "start_time": "00:33:19,008",
+      "end_time": "00:33:31,008",
+      "text": "Để có thời gian đầy ấp những món đồ tích góp suốt nhiều năm, những kỷ niệm, món quà, thói quen, và đôi khi dù chẳng cố ý."
+    },
+    {
+      "id": 354,
+      "start": 2011.008,
+      "end": 2016.608,
+      "start_time": "00:33:31,008",
+      "end_time": "00:33:36,608",
+      "text": "Xong rồi mọi người ơi, cái mục Edit của mình chỉ đến thế thôi, rất là đơn giản và rất là hay nha mọi người."
+    },
+    {
+      "id": 355,
+      "start": 2017.208,
+      "end": 2018.328,
+      "start_time": "00:33:37,208",
+      "end_time": "00:33:38,328",
+      "text": "Đấy, rồi ok."
+    },
+    {
+      "id": 356,
+      "start": 2020.088,
+      "end": 2025.848,
+      "start_time": "00:33:40,088",
+      "end_time": "00:33:45,848",
+      "text": "Cái vấn đề Edit này thì mấy bác nào mà cao chiêu hơn thì có thể Edit thêm hiệu ứng các kiểu vô."
+    },
+    {
+      "id": 357,
+      "start": 2026.168,
+      "end": 2029.008,
+      "start_time": "00:33:46,168",
+      "end_time": "00:33:49,008",
+      "text": "Nhưng mà theo em thì như này là quá là hợp lý, quá là ok."
+    },
+    {
+      "id": 358,
+      "start": 2029.008,
+      "end": 2032.688,
+      "start_time": "00:33:49,008",
+      "end_time": "00:33:52,688",
+      "text": "Ok luôn rồi nha. Mọi người có thể tham khảo theo cách này của em nha."
+    },
+    {
+      "id": 359,
+      "start": 2033.368,
+      "end": 2036.108,
+      "start_time": "00:33:53,368",
+      "end_time": "00:33:56,108",
+      "text": "Rồi bây giờ thì chỉ tới việc thumb thôi mọi người."
+    },
+    {
+      "id": 360,
+      "start": 2036.528,
+      "end": 2040.808,
+      "start_time": "00:33:56,528",
+      "end_time": "00:34:00,808",
+      "text": "Mọi người kéo xuống những cái phần sau này, mọi người xóa những cái dư thừa đi nha."
+    },
+    {
+      "id": 361,
+      "start": 2041.368,
+      "end": 2045.628,
+      "start_time": "00:34:01,368",
+      "end_time": "00:34:05,628",
+      "text": "Ví dụ như nãy của mình nó bị dài nè. Mọi người xóa hết đi."
+    },
+    {
+      "id": 362,
+      "start": 2046.748,
+      "end": 2050.288,
+      "start_time": "00:34:06,748",
+      "end_time": "00:34:10,288",
+      "text": "Để canh cho nó đủ cái kịch của mình được rồi nha."
+    },
+    {
+      "id": 363,
+      "start": 2051.188,
+      "end": 2053.928,
+      "start_time": "00:34:11,188",
+      "end_time": "00:34:13,928",
+      "text": "Rồi ok như này xong rồi, mọi người chỉ cần xuất ra thôi."
+    },
+    {
+      "id": 364,
+      "start": 2053.928,
+      "end": 2060.928,
+      "start_time": "00:34:13,928",
+      "end_time": "00:34:20,928",
+      "text": "Mọi người nên xuất video ở chất lượng 4K nha."
+    },
+    {
+      "id": 365,
+      "start": 2060.928,
+      "end": 2064.928,
+      "start_time": "00:34:20,928",
+      "end_time": "00:34:24,928",
+      "text": "Bởi vì lúc nào em làm cũng xuất ở chất lượng 4K đó mọi người."
+    },
+    {
+      "id": 366,
+      "start": 2064.928,
+      "end": 2068.928,
+      "start_time": "00:34:24,928",
+      "end_time": "00:34:28,928",
+      "text": "Dù anh em máy yếu thì có thể xuất ở 1080p cũng được."
+    },
+    {
+      "id": 367,
+      "start": 2068.928,
+      "end": 2073.928,
+      "start_time": "00:34:28,928",
+      "end_time": "00:34:33,928",
+      "text": "Nhưng mà thật sự là nên xuất nằm lên xuất 4K nha mọi người."
+    },
+    {
+      "id": 368,
+      "start": 2073.928,
+      "end": 2079.928,
+      "start_time": "00:34:33,928",
+      "end_time": "00:34:39,928",
+      "text": "Bởi vì video càng chất lượng thì thuật toán của thằng YouTube nó sẽ đẩy mọi người càng lên cao nha."
+    },
+    {
+      "id": 369,
+      "start": 2079.928,
+      "end": 2084.628,
+      "start_time": "00:34:39,928",
+      "end_time": "00:34:44,628",
+      "text": "Bây giờ em sẽ hướng dẫn cho mọi người cách làm thumbnail luôn nha."
+    },
+    {
+      "id": 370,
+      "start": 2084.628,
+      "end": 2088.328,
+      "start_time": "00:34:44,628",
+      "end_time": "00:34:48,328",
+      "text": "Làm thumbnail y như đối thủ, đẹp hơn đối thủ luôn nha mọi người."
+    },
+    {
+      "id": 371,
+      "start": 2088.328,
+      "end": 2091.528,
+      "start_time": "00:34:48,328",
+      "end_time": "00:34:51,528",
+      "text": "Như này thì đối thủ nó làm cũng khá là đơn giản."
+    },
+    {
+      "id": 372,
+      "start": 2091.528,
+      "end": 2105.017,
+      "start_time": "00:34:51,528",
+      "end_time": "00:35:05,017",
+      "text": "nhưng mà mọi người thấy không? Nó hút rất là nhiều view luôn. Đấy, em sẽ hướng dẫn mọi người cách tạo thum đẹp hơn đối thủ luôn nha. Đấy, mọi người có thể tham khảo. Rồi, bây giờ nãy là em làm cái video ở trên này đúng không?"
+    },
+    {
+      "id": 373,
+      "start": 2105.017,
+      "end": 2109.017,
+      "start_time": "00:35:05,017",
+      "end_time": "00:35:09,017",
+      "text": "Rồi ok, bây giờ em sẽ lấy dịch ra để em làm luôn nha mọi người."
+    },
+    {
+      "id": 374,
+      "start": 2109.017,
+      "end": 2114.017,
+      "start_time": "00:35:09,017",
+      "end_time": "00:35:14,017",
+      "text": "Rồi, trước hết á thì mọi người vào những cái trang web mà em có đưa mọi người nè,"
+    },
+    {
+      "id": 375,
+      "start": 2114.017,
+      "end": 2120.017,
+      "start_time": "00:35:14,017",
+      "end_time": "00:35:20,017",
+      "text": "và mọi người dùng để lấy cái ảnh nền á thì mọi người có thể dùng cái con này nha. Con này khá hay."
+    },
+    {
+      "id": 376,
+      "start": 2120.017,
+      "end": 2122.217,
+      "start_time": "00:35:20,017",
+      "end_time": "00:35:22,217",
+      "text": "Và mọi người search cho em là công viên xanh nha."
+    },
+    {
+      "id": 377,
+      "start": 2122.217,
+      "end": 2124.017,
+      "start_time": "00:35:22,217",
+      "end_time": "00:35:24,017",
+      "text": "Đấy, công viên xanh,"
+    },
+    {
+      "id": 378,
+      "start": 2124.017,
+      "end": 2126.217,
+      "start_time": "00:35:24,017",
+      "end_time": "00:35:26,217",
+      "text": "rồi mọi người copy, dịch ra tiếng Anh nha,"
+    },
+    {
+      "id": 379,
+      "start": 2126.217,
+      "end": 2128.217,
+      "start_time": "00:35:26,217",
+      "end_time": "00:35:28,217",
+      "text": "mọi người paste vào"
+    },
+    {
+      "id": 380,
+      "start": 2128.217,
+      "end": 2130.217,
+      "start_time": "00:35:28,217",
+      "end_time": "00:35:30,217",
+      "text": "và enter nha."
+    },
+    {
+      "id": 381,
+      "start": 2130.217,
+      "end": 2132.217,
+      "start_time": "00:35:30,217",
+      "end_time": "00:35:32,217",
+      "text": "Rồi, và lưu ý chỗ này thì"
+    },
+    {
+      "id": 382,
+      "start": 2132.217,
+      "end": 2134.017,
+      "start_time": "00:35:32,217",
+      "end_time": "00:35:34,017",
+      "text": "mọi người bấm vào Photo nha,"
+    },
+    {
+      "id": 383,
+      "start": 2134.017,
+      "end": 2135.237,
+      "start_time": "00:35:34,017",
+      "end_time": "00:35:35,237",
+      "text": "là ảnh ấy."
+    },
+    {
+      "id": 384,
+      "start": 2135.237,
+      "end": 2137.237,
+      "start_time": "00:35:35,237",
+      "end_time": "00:35:37,237",
+      "text": "Đấy, như này thì nó sẽ ra"
+    },
+    {
+      "id": 385,
+      "start": 2137.237,
+      "end": 2139.237,
+      "start_time": "00:35:37,237",
+      "end_time": "00:35:39,237",
+      "text": "rất là nhiều ảnh kiểu công viên xanh luôn nha."
+    },
+    {
+      "id": 386,
+      "start": 2139.237,
+      "end": 2141.237,
+      "start_time": "00:35:39,237",
+      "end_time": "00:35:41,237",
+      "text": "Mọi người lưu ý giúp em là"
+    },
+    {
+      "id": 387,
+      "start": 2141.237,
+      "end": 2143.437,
+      "start_time": "00:35:41,237",
+      "end_time": "00:35:43,437",
+      "text": "chỗ này mọi người bấm vào"
+    },
+    {
+      "id": 388,
+      "start": 2143.437,
+      "end": 2145.437,
+      "start_time": "00:35:43,437",
+      "end_time": "00:35:45,437",
+      "text": "Free nha."
+    },
+    {
+      "id": 389,
+      "start": 2145.437,
+      "end": 2155.4,
+      "start_time": "00:35:45,437",
+      "end_time": "00:35:55,400",
+      "text": "Đây mọi người bấm vào Free nha, đấy thì nó sẽ ra những cái free, không phải những cái trả phí nha, nên là anh em tha hồ mà chọn. Rồi bây giờ ví dụ em sẽ chọn đại cái này đi."
+    },
+    {
+      "id": 390,
+      "start": 2155.4,
+      "end": 2165.437,
+      "start_time": "00:35:55,400",
+      "end_time": "00:36:05,437",
+      "text": "Rồi bây giờ em sẽ download xuống nha mọi người. Rồi ok, sau khi xong rồi thì bây giờ mọi người tải ảnh lên nha, bởi vì em đã tải rồi nè mọi người, đấy mọi người thấy không?"
+    },
+    {
+      "id": 391,
+      "start": 2165.437,
+      "end": 2171.297,
+      "start_time": "00:36:05,437",
+      "end_time": "00:36:11,297",
+      "text": "Giờ chỉ cần thêm vào thôi, và anh em phóng to lên nha, phóng to lên. Để cho"
+    },
+    {
+      "id": 392,
+      "start": 2171.297,
+      "end": 2177.157,
+      "start_time": "00:36:11,297",
+      "end_time": "00:36:17,157",
+      "text": "nó cân đối nha mọi người. Rồi tiếp tục, bây giờ thì mình sẽ thêm cái văn bản vào nha."
+    },
+    {
+      "id": 393,
+      "start": 2177.157,
+      "end": 2183.017,
+      "start_time": "00:36:17,157",
+      "end_time": "00:36:23,017",
+      "text": "Đầu tiên thì mình để cho cái nền của nó mờ đi đã, mọi người bấm vào Sửa nha."
+    },
+    {
+      "id": 394,
+      "start": 2183.437,
+      "end": 2190.487,
+      "start_time": "00:36:23,437",
+      "end_time": "00:36:30,487",
+      "text": "Mọi người thấy chữ Mờ nè, mọi người kéo cường độ của nó nha, toàn bộ hình ảnh, cường độ của nó nè, mờ nha, mọi"
+    },
+    {
+      "id": 395,
+      "start": 2190.487,
+      "end": 2197.537,
+      "start_time": "00:36:30,487",
+      "end_time": "00:36:37,537",
+      "text": "người có thể tùy thích, chỉnh theo cũng được, nhưng mà theo em như này thì hợp lý nha, nó mờ vừa vừa thôi mọi người ạ."
+    },
+    {
+      "id": 396,
+      "start": 2197.537,
+      "end": 2204.637,
+      "start_time": "00:36:37,537",
+      "end_time": "00:36:44,637",
+      "text": "Nó mờ nhiều quá thì nhìn vào nó sẽ đau mắt nha mọi người, và không thấy được ấy. Rồi, 4 lem như này là hợp lý nha."
+    },
+    {
+      "id": 397,
+      "start": 2204.637,
+      "end": 2212.837,
+      "start_time": "00:36:44,637",
+      "end_time": "00:36:52,837",
+      "text": "Tiếp tục em sẽ thêm cái ảnh của ông bác sĩ vào luôn nha mọi người. Một cái ảnh này thì mọi người làm xuyên suốt cả cái kênh của mình luôn."
+    },
+    {
+      "id": 398,
+      "start": 2212.837,
+      "end": 2219.837,
+      "start_time": "00:36:52,837",
+      "end_time": "00:36:59,837",
+      "text": "Đấy, làm mấy key này nên là những cái key này không cần quá là nhiều hình ảnh đâu mọi người, thành ra là quá là ngon, và không cần AI video hay là AI ảnh đâu nha, chỉ cần 1-2 ảnh là được rồi."
+    },
+    {
+      "id": 399,
+      "start": 2226.837,
+      "end": 2231.837,
+      "start_time": "00:37:06,837",
+      "end_time": "00:37:11,837",
+      "text": "Mọi người có thể tùy chọn bộ lọc chỗ này cho nó sáng. Như này thì ok nè."
+    },
+    {
+      "id": 400,
+      "start": 2231.837,
+      "end": 2235.837,
+      "start_time": "00:37:11,837",
+      "end_time": "00:37:15,837",
+      "text": "Như này thì em thấy là ok luôn nha."
+    },
+    {
+      "id": 401,
+      "start": 2235.837,
+      "end": 2242.9,
+      "start_time": "00:37:15,837",
+      "end_time": "00:37:22,900",
+      "text": "Rồi tiếp tục bây giờ thì mình sẽ làm cái chữ nha mọi người. Về cái chỗ này thì em đã dịch ra rồi. Và nó nói"
+    },
+    {
+      "id": 402,
+      "start": 2242.9,
+      "end": 2249.962,
+      "start_time": "00:37:22,900",
+      "end_time": "00:37:29,962",
+      "text": "kiểu như là năm điều khiến cho ngôi nhà của bạn trở nên bừa bộn sau khi về già ấy mọi người. Đấy em dịch ra là như"
+    },
+    {
+      "id": 403,
+      "start": 2249.962,
+      "end": 2257.025,
+      "start_time": "00:37:29,962",
+      "end_time": "00:37:37,025",
+      "text": "thế nha. Rồi anh em có thể tự dịch chụp màn hình lại vào Google dịch đấy, mọi người tải ảnh lên để cho nó dịch ra."
+    },
+    {
+      "id": 404,
+      "start": 2257.025,
+      "end": 2266.0,
+      "start_time": "00:37:37,025",
+      "end_time": "00:37:46,000",
+      "text": "Để biết được tiêu đề, bây giờ mình chỉ cần bấm vào thêm tiêu đề, mọi người edit thôi."
+    },
+    {
+      "id": 405,
+      "start": 2266.0,
+      "end": 2270.025,
+      "start_time": "00:37:46,000",
+      "end_time": "00:37:50,025",
+      "text": "Bấm số 5 trước."
+    },
+    {
+      "id": 406,
+      "start": 2270.025,
+      "end": 2274.025,
+      "start_time": "00:37:50,025",
+      "end_time": "00:37:54,025",
+      "text": "Chọn phông chữ này."
+    },
+    {
+      "id": 407,
+      "start": 2274.025,
+      "end": 2278.025,
+      "start_time": "00:37:54,025",
+      "end_time": "00:37:58,025",
+      "text": "Phông chữ này khá dễ nhìn."
+    },
+    {
+      "id": 408,
+      "start": 2278.025,
+      "end": 2282.025,
+      "start_time": "00:37:58,025",
+      "end_time": "00:38:02,025",
+      "text": "Chỉnh cho nó to thêm tí."
+    },
+    {
+      "id": 409,
+      "start": 2282.025,
+      "end": 2286.025,
+      "start_time": "00:38:02,025",
+      "end_time": "00:38:06,025",
+      "text": "Chỉnh cho nó màu trắng chứ không màu đen."
+    },
+    {
+      "id": 410,
+      "start": 2286.025,
+      "end": 2290.025,
+      "start_time": "00:38:06,025",
+      "end_time": "00:38:10,025",
+      "text": "Hiệu ứng."
+    },
+    {
+      "id": 411,
+      "start": 2290.025,
+      "end": 2294.0,
+      "start_time": "00:38:10,025",
+      "end_time": "00:38:14,000",
+      "text": "Hiệu ứng thì cho nó cái viền."
+    },
+    {
+      "id": 412,
+      "start": 2294.0,
+      "end": 2295.2,
+      "start_time": "00:38:14,000",
+      "end_time": "00:38:15,200",
+      "text": "Đó cái viền nha mọi người"
+    },
+    {
+      "id": 413,
+      "start": 2295.2,
+      "end": 2296.98,
+      "start_time": "00:38:15,200",
+      "end_time": "00:38:16,980",
+      "text": "Đấy cái viền màu đen nha"
+    },
+    {
+      "id": 414,
+      "start": 2296.98,
+      "end": 2298.82,
+      "start_time": "00:38:16,980",
+      "end_time": "00:38:18,820",
+      "text": "Làm giống như đối thủ luôn"
+    },
+    {
+      "id": 415,
+      "start": 2306.42,
+      "end": 2309.5,
+      "start_time": "00:38:26,420",
+      "end_time": "00:38:29,500",
+      "text": "Rồi sau khi ok rồi thì mọi người nhấp chuột vào cái số 5 nè"
+    },
+    {
+      "id": 416,
+      "start": 2309.5,
+      "end": 2310.78,
+      "start_time": "00:38:29,500",
+      "end_time": "00:38:30,780",
+      "text": "Mọi người bấm Ctrl-C"
+    },
+    {
+      "id": 417,
+      "start": 2310.78,
+      "end": 2312.46,
+      "start_time": "00:38:30,780",
+      "end_time": "00:38:32,460",
+      "text": "Ctrl-V ra nha"
+    },
+    {
+      "id": 418,
+      "start": 2312.46,
+      "end": 2313.84,
+      "start_time": "00:38:32,460",
+      "end_time": "00:38:33,840",
+      "text": "Để cho nó sao chép ra"
+    },
+    {
+      "id": 419,
+      "start": 2313.84,
+      "end": 2315.18,
+      "start_time": "00:38:33,840",
+      "end_time": "00:38:35,180",
+      "text": "Cùng một cái"
+    },
+    {
+      "id": 420,
+      "start": 2315.18,
+      "end": 2317.7,
+      "start_time": "00:38:35,180",
+      "end_time": "00:38:37,700",
+      "text": "Cùng một cái định dạng và cùng cái luôn"
+    },
+    {
+      "id": 421,
+      "start": 2317.7,
+      "end": 2318.88,
+      "start_time": "00:38:37,700",
+      "end_time": "00:38:38,880",
+      "text": "Mình đã chỉnh rồi cho nó"
+    },
+    {
+      "id": 422,
+      "start": 2318.88,
+      "end": 2320.58,
+      "start_time": "00:38:38,880",
+      "end_time": "00:38:40,580",
+      "text": "Đỡ bị chỉnh nữa nha mọi người"
+    },
+    {
+      "id": 423,
+      "start": 2320.58,
+      "end": 2323.84,
+      "start_time": "00:38:40,580",
+      "end_time": "00:38:43,840",
+      "text": "Đấy bây giờ thì em sẽ ghi vào điều khiến nè"
+    },
+    {
+      "id": 424,
+      "start": 2324.025,
+      "end": 2330.325,
+      "start_time": "00:38:44,025",
+      "end_time": "00:38:50,325",
+      "text": "Tại sao làm như thế này thì mọi người xem hết thì mọi người sẽ hiểu nha."
+    },
+    {
+      "id": 425,
+      "start": 2330.825,
+      "end": 2334.165,
+      "start_time": "00:38:50,825",
+      "end_time": "00:38:54,165",
+      "text": "Rồi bây giờ thì mình canh chỉnh cho nó hợp lý tí thôi nha mọi người."
+    },
+    {
+      "id": 426,
+      "start": 2334.865,
+      "end": 2337.085,
+      "start_time": "00:38:54,865",
+      "end_time": "00:38:57,085",
+      "text": "Canh chỉnh như nào cũng được tùy ý mọi người nha."
+    },
+    {
+      "id": 427,
+      "start": 2337.685,
+      "end": 2341.925,
+      "start_time": "00:38:57,685",
+      "end_time": "00:39:01,925",
+      "text": "Mọi người có thấy không? Cái phông nền này thì nó hơi bị trói cái phần ở chính giữa nè."
+    },
+    {
+      "id": 428,
+      "start": 2342.405,
+      "end": 2344.005,
+      "start_time": "00:39:02,405",
+      "end_time": "00:39:04,005",
+      "text": "Nên là em sẽ phóng to lên tí nha."
+    },
+    {
+      "id": 429,
+      "start": 2344.125,
+      "end": 2345.925,
+      "start_time": "00:39:04,125",
+      "end_time": "00:39:05,925",
+      "text": "Đấy, em sẽ đẩy nó lên cao tí nha."
+    },
+    {
+      "id": 430,
+      "start": 2346.505,
+      "end": 2352.145,
+      "start_time": "00:39:06,505",
+      "end_time": "00:39:12,145",
+      "text": "Bởi vì nó trói thì nó sẽ khiến người xem nhìn vào thì bị trói mắt khó đọc mấy mọi người."
+    },
+    {
+      "id": 431,
+      "start": 2352.145,
+      "end": 2360.385,
+      "start_time": "00:39:12,145",
+      "end_time": "00:39:20,385",
+      "text": "Đấy nên là mình chỉ cân nhắc lại chỗ này nha. Rồi, ok sau khi xong thì mọi người tiếp tục copy paste ra và ghi tiếp tục nha."
+    },
+    {
+      "id": 432,
+      "start": 2364.385,
+      "end": 2366.385,
+      "start_time": "00:39:24,385",
+      "end_time": "00:39:26,385",
+      "text": "Em sẽ ghi là cái ngôi nhà."
+    },
+    {
+      "id": 433,
+      "start": 2372.145,
+      "end": 2373.985,
+      "start_time": "00:39:32,145",
+      "end_time": "00:39:33,985",
+      "text": "Tiếp tục paste ra, ghi là: của bạn"
+    },
+    {
+      "id": 434,
+      "start": 2382.145,
+      "end": 2389.455,
+      "start_time": "00:39:42,145",
+      "end_time": "00:39:49,455",
+      "text": "Đấy, chỗ này mọi người cứ xem"
+    },
+    {
+      "id": 435,
+      "start": 2389.455,
+      "end": 2396.765,
+      "start_time": "00:39:49,455",
+      "end_time": "00:39:56,765",
+      "text": "cách của em làm là mọi người biết à. Rất là dễ nha mọi người."
+    },
+    {
+      "id": 436,
+      "start": 2408.0,
+      "end": 2413.0,
+      "start_time": "00:40:08,000",
+      "end_time": "00:40:13,000",
+      "text": "Và tại sao em tách như này á thì tí nữa mọi người sẽ thấy nha."
+    },
+    {
+      "id": 437,
+      "start": 2413.0,
+      "end": 2419.0,
+      "start_time": "00:40:13,000",
+      "end_time": "00:40:19,000",
+      "text": "Bởi vì đối thủ của mình có chữ màu vàng và chữ màu trắng rồi đúng không?"
+    },
+    {
+      "id": 438,
+      "start": 2419.0,
+      "end": 2423.0,
+      "start_time": "00:40:19,000",
+      "end_time": "00:40:23,000",
+      "text": "Mọi người cắt ra như này thì mọi người có thể chỉnh nó màu luôn nha."
+    },
+    {
+      "id": 439,
+      "start": 2423.0,
+      "end": 2427.0,
+      "start_time": "00:40:23,000",
+      "end_time": "00:40:27,000",
+      "text": "Bây giờ em sẽ tương đối lại tí để cho nó cân bằng tí nha."
+    },
+    {
+      "id": 440,
+      "start": 2457.0,
+      "end": 2460.0,
+      "start_time": "00:40:57,000",
+      "end_time": "00:41:00,000",
+      "text": "Chỗ khi về già này em tách ra 2 vùng"
+    },
+    {
+      "id": 441,
+      "start": 2460.0,
+      "end": 2468.0,
+      "start_time": "00:41:00,000",
+      "end_time": "00:41:08,000",
+      "text": "Tách ra hai vế đi, để chung như này thì"
+    },
+    {
+      "id": 442,
+      "start": 2468.0,
+      "end": 2476.0,
+      "start_time": "00:41:08,000",
+      "end_time": "00:41:16,000",
+      "text": "không ok lắm, tách ra hai vế đi."
+    },
+    {
+      "id": 443,
+      "start": 2476.0,
+      "end": 2484.041,
+      "start_time": "00:41:16,000",
+      "end_time": "00:41:24,041",
+      "text": "Rồi sau khi mà okay hết rồi á thì mọi người nè, quay ra cái con của đối thủ nè, mọi người thấy không? Có cái chỗ mà màu vàng,"
+    },
+    {
+      "id": 444,
+      "start": 2484.041,
+      "end": 2492.082,
+      "start_time": "00:41:24,041",
+      "end_time": "00:41:32,082",
+      "text": "màu vàng và màu trắng này, mọi người thấy không? Những cái chỗ đấy thì nó nhấn mạnh nó in đậm lên ấy mọi người. Đấy, để cho nó"
+    },
+    {
+      "id": 445,
+      "start": 2492.082,
+      "end": 2500.123,
+      "start_time": "00:41:32,082",
+      "end_time": "00:41:40,123",
+      "text": "dễ thu hút hơn á. Thì bây giờ quay lại thì mình sẽ cũng làm theo như nó nha mọi người. Số năm nè, em sẽ để màu vàng rồi."
+    },
+    {
+      "id": 446,
+      "start": 2500.123,
+      "end": 2506.123,
+      "start_time": "00:41:40,123",
+      "end_time": "00:41:46,123",
+      "text": "Nêm điều khiến ngôi nhà, bây giờ ngôi nhà thì em sẽ để ở nè, đối với màu vàng lên nè mọi người."
+    },
+    {
+      "id": 447,
+      "start": 2506.123,
+      "end": 2509.123,
+      "start_time": "00:41:46,123",
+      "end_time": "00:41:49,123",
+      "text": "Trong lộn xộn em cũng đổi sang màu vàng, key nè."
+    },
+    {
+      "id": 448,
+      "start": 2509.123,
+      "end": 2512.123,
+      "start_time": "00:41:49,123",
+      "end_time": "00:41:52,123",
+      "text": "Đấy, như vậy thì nó sẽ thu hút hơn nha mọi người."
+    },
+    {
+      "id": 449,
+      "start": 2512.123,
+      "end": 2514.123,
+      "start_time": "00:41:52,123",
+      "end_time": "00:41:54,123",
+      "text": "Quá là đơn giản luôn đúng không anh em ơi."
+    },
+    {
+      "id": 450,
+      "start": 2514.123,
+      "end": 2518.1,
+      "start_time": "00:41:54,123",
+      "end_time": "00:41:58,100",
+      "text": "Rồi, về cái ảnh bìa này á thì em sẽ làm cho nó..."
+    },
+    {
+      "id": 451,
+      "start": 2518.1,
+      "end": 2524.66,
+      "start_time": "00:41:58,100",
+      "end_time": "00:42:04,660",
+      "text": "Bởi vì như này thì nhìn nó hơi chói và nó khó thấy nên là mọi người chỉnh cho em cái chỗ này tí nha"
+    },
+    {
+      "id": 452,
+      "start": 2524.66,
+      "end": 2527.88,
+      "start_time": "00:42:04,660",
+      "end_time": "00:42:07,880",
+      "text": "Tone màu này mọi người cho nó tối lại 1 tí nha"
+    },
+    {
+      "id": 453,
+      "start": 2527.88,
+      "end": 2530.56,
+      "start_time": "00:42:07,880",
+      "end_time": "00:42:10,560",
+      "text": "Đấy như này nó sẽ rất là dễ nhìn hơn nha mọi người"
+    },
+    {
+      "id": 454,
+      "start": 2530.56,
+      "end": 2533.02,
+      "start_time": "00:42:10,560",
+      "end_time": "00:42:13,020",
+      "text": "Đấy như vậy rất là ok hơn"
+    },
+    {
+      "id": 455,
+      "start": 2533.02,
+      "end": 2540.44,
+      "start_time": "00:42:13,020",
+      "end_time": "00:42:20,440",
+      "text": "Bởi vì như kia thì nó sẽ khiến cho người xem khó nhìn hơn và sẽ ít click hơn nha mọi người"
+    },
+    {
+      "id": 456,
+      "start": 2540.44,
+      "end": 2542.74,
+      "start_time": "00:42:20,440",
+      "end_time": "00:42:22,740",
+      "text": "Đấy vấn đề thumb là chỗ đó đấy mọi người"
+    },
+    {
+      "id": 457,
+      "start": 2542.74,
+      "end": 2543.92,
+      "start_time": "00:42:22,740",
+      "end_time": "00:42:23,920",
+      "text": "Rồi"
+    },
+    {
+      "id": 458,
+      "start": 2544.123,
+      "end": 2548.123,
+      "start_time": "00:42:24,123",
+      "end_time": "00:42:28,123",
+      "text": "Về chỗ này thì mọi người cứ chỉnh như thế này cho em nha."
+    },
+    {
+      "id": 459,
+      "start": 2548.123,
+      "end": 2550.123,
+      "start_time": "00:42:28,123",
+      "end_time": "00:42:30,123",
+      "text": "Rồi, ok nha mọi người."
+    },
+    {
+      "id": 460,
+      "start": 2550.123,
+      "end": 2557.123,
+      "start_time": "00:42:30,123",
+      "end_time": "00:42:37,123",
+      "text": "Về video này thì nó chỉ đến thế thôi anh em ơi. Cách làm và cách tư duy như vậy á, thì mọi người cứ làm theo em nha."
+    },
+    {
+      "id": 461,
+      "start": 2557.123,
+      "end": 2564.123,
+      "start_time": "00:42:37,123",
+      "end_time": "00:42:44,123",
+      "text": "Về mọi người lưu ý cho em á thì không phải em chia sẻ như thế này thì mọi người cứ lao vào làm hết những cái key này đâu."
+    },
+    {
+      "id": 462,
+      "start": 2564.123,
+      "end": 2567.123,
+      "start_time": "00:42:44,123",
+      "end_time": "00:42:47,123",
+      "text": "Mọi người cần phải làm những cái key khác."
+    },
+    {
+      "id": 463,
+      "start": 2567.123,
+      "end": 2572.123,
+      "start_time": "00:42:47,123",
+      "end_time": "00:42:52,123",
+      "text": "Những key em chia sẻ nhiều mà đúng không? Em cứ tự chọn hoặc là chọn cái ngách nhỏ nào đó nữa."
+    },
+    {
+      "id": 464,
+      "start": 2572.123,
+      "end": 2578.123,
+      "start_time": "00:42:52,123",
+      "end_time": "00:42:58,123",
+      "text": "Tư duy là như thế nha mọi người."
+    },
+    {
+      "id": 465,
+      "start": 2578.123,
+      "end": 2588.123,
+      "start_time": "00:42:58,123",
+      "end_time": "00:43:08,123",
+      "text": "Rồi, về ở cái video này thì cái giọng em đang bị ốm nên cái giọng hơi khàn tí nên mấy bác thông cảm cho em nha. Rồi, cảm ơn mấy bác đã xem video nha."
+    }
+  ],
+  "total_segments": 465,
+  "full_text": "Xin chào tất cả mấy bác. Hôm nay em sẽ hướng dẫn cho các bạn về cách làm kênh nhân bản ở các thị trường cho mọi người. Em đang bị ốm nên giọng hơi khàn mấy bác thông cảm tí nha. Bây giờ em sẽ ví dụ về kênh này nha mọi người. Ở video này em sẽ hướng dẫn cho mấy bác về ví dụ cho bác bia kì luôn nha về cách nhân bản thị trường nha. Ok, về cái kênh này thì view của nó rất là thấp. Về cái kênh này đang ở thị trường Hoa Kỳ, nha mọi người. Đấy, và cái view của nó đang rất là thấp nè. Nhưng mà em chỉ cho bác xem một cái điều rất là kinh khủng, rất là thú vị nha. Tại đây, kênh đang ở thị trường Hoa Kỳ, và view của nó rất là thấp, chỉ có 1-2 view thôi. Nhưng em sẽ cho các bạn xem cách làm ở thị trường khác như thế nào nha mọi người. Ở clip này em sẽ không khác gì mà truyền nghề luôn nha mọi người, đây là cách em làm thường xuyên luôn nha. Rồi đây là ví dụ một cái kênh Đấy mọi người thấy không view cao nhất của nó chỉ có 2.2k thôi Đấy, 2k2 người xem thôi Vậy đang ở thị trường Hoa Kỳ nha mọi người đang view rất thấp Rồi bây giờ em sẽ tiếp tục sẽ cho bác kênh xem kênh của nó nữa nè Nhưng mà lúc này thì nó đang nhân bản kênh của nó Đang ở thị trường Nhật Bản nha mọi người Đấy cái chỗ này Hoa Kỳ thì nó đang setting chưa chuyển đổi vị trí nè Nhưng vẫn cắn view đều nha Nếu mọi người làm thì mọi người phải setting chuyển sang quốc gia mà mọi người làm luôn Ví dụ Nhật Bản thì mọi người chuyển Nhật Bản luôn cho em nha Rồi đây mọi người có thấy không Đấy mọi người có thấy view của nó kinh khủng không Ở thị trường Hoa Kỳ thì nó chỉ có vài nghìn view vài view thôi Nhưng mà qua cái thị trường Nhật Bản này mọi người có thấy không Rất là nhiều view luôn Tại sao em biết được cùng một chủ? Video của nó vẫn như vậy thôi. Video của nó rất giống nhau. Bởi vì nó chỉ cần sản xuất ra một video thôi. Nó chỉ cần dịch ra ngôn ngữ và nó xuất theo ngôn ngữ của quốc gia và thị trường nó làm thôi. thôi thì được rồi nha. Rồi, tiếp theo, em sẽ tiếp tục đến với một cái kênh của nó tiếp theo là ở thị trường Hàn và cái này là ở thị trường à Hàn Quốc nha mọi người. Đấy, và chỗ này nó vẫn để Hoa Kỳ nè. Mọi người có làm thì mọi người chuyển đổi quốc gia thành Hàn Quốc. Thị trường này view nó kính còn kinh khủng khiếp và đều hơn nữa. Và nó có 8, hơn 8.000 người đăng ký luôn nè. Ở thị trường Nhật Bản thì chỉ có 5 video thôi. Đấy, anh em có thấy vấn đề là nó khác nhau chỗ đấy không? Đấy, và qua cái này á thì em muốn nói cho mấy bác là tư duy mình làm ngoại á là không phải chỉ nhắm đến cái thằng Hoa Kỳ không đâu. Bởi vì cái thằng Hoa Kỳ rất là nhiều người làm và nó sẽ suy ra là nó sẽ thành cạnh tranh rất là cao. Đấy, từ cái video này nè, mọi người có thấy không? Rất là giống hai cái kênh trước luôn đúng không? Và tóm lại thì ba cái kênh này của một người làm thôi anh em ạ. Đấy, cũng có thể là do em đấy, em truyền lại cho mọi người luôn, em không chia sẻ là kênh của em, nói chung là em chia sẻ cho mấy bác biết vậy thôi. Đấy, và cái thị trường Việt Nam thì hôm đợt cái kênh này em cũng có giới thiệu cho mấy bác rồi, nó cũng lấy từ những cái sub, kiểu như câu chuyện, kiểu kịch bản ở bên nước ngoài này, nó về nó làm thôi mọi người. Đấy, view cắn rất là cao luôn nha. Em muốn nói cho bác là tư duy mình làm view ngoại thì không chỉ làm ở thị trường Hoa Kỳ không đâu nha mọi người Hoa Kỳ nó rất là cạnh tranh tuy RPM của nó rất là cao Ví dụ Hoa Kỳ là RPM của nó trung bình là 8 đến 10 đô Thì qua thị trường Nhật Bản thì mọi người sẽ được 5 đến 7 Đấy, qua thị trường Hàn Quốc thì mọi người được 4 đến 6 Đấy, như vậy là nó rất là cao Nhưng mà bù lại thì mọi người biết là Hoa Kỳ thì nó bị trừ thuế W-8BEN đúng không? Nhưng mà các thị trường khác như Nhật, như Hàn thì nó không bị trừ thuế. Như đi ngược lại thì anh em càng rất dễ chơi và càng rất là không bị trừ thuế nữa. Đấy, lợi thế của anh em đó chỗ đấy. Nhưng mà rất nhiều người không biết và không ai hướng dẫn mọi người cả. Nhưng mà ở clip này thì em chia sẻ cái điều đó cho mấy bác luôn. Đấy, mấy bác phải biết là như vậy nha. Rồi bây giờ tiếp tục em chỉ lấy ví dụ một kênh tiếp theo nha mọi người. Và kênh này là hoàn toàn mới luôn nha. Đây về cái key Phật pháp nè, kiểu như kể chuyện về Phật pháp. Và kênh này đang là Hoa Kỳ. Trước kia á thì nó là làm về dạng sức khỏe nè mọi người. Đấy, cắn view cũng khá là ok. Và hai tuần vừa rồi á, bắt đầu hai tuần vừa rồi á thì nó đã chuyển sang một cái key hoàn toàn mới là về cái key. Phật Pháp, và kể chuyện về Phật Pháp này nha mọi người. Đấy, về cái key này thì mọi người có thể dịch ra, mọi người xem thêm nha. Đấy, và cắn view rất rất rất là cao luôn. Và đây là ở thị trường Hoa Kỳ nha mọi người. Rồi ok, bây giờ em sẽ cho mọi người biết là một cái kênh ở Việt Nam nè, nó đang lấy cái key này nó làm nha. Đấy, anh em có thấy không? Và cái view của nó rất là cao luôn nha, cái kênh này chỉ là 13 ngày trước thôi nha mọi người. Và mọi người có thấy là kênh của nó cắn view rất là cao luôn, và video này nè, nó đã đạt được 200.000 view luôn nè mọi người. Anh em đừng có chê ở thị trường Việt nha. Và cái kênh này nó đang lập, nó mới chỉ lập là ngày 13 tháng 5 thôi. Đấy, và mọi người mới thì mọi người, em khuyên mọi người là nên làm view Việt trước, hoặc là các cái nhân bản các cái thị trường khác. Bởi vì tỷ lệ cạnh tranh nó rất là thấp và nó rất là dễ làm. Và view của nó cắn rất là ngon. Đấy, nó sẽ lên view và mọi người sẽ có cái động lực và mọi người sẽ làm. Anh em đừng có chê thị trường Việt như kênh này view như này á thì nếu mà ổn định như này á thì em nói thật sự cái doanh thu của tháng của kênh nó thì nó sẽ đạt tầm 15 đến 30 triệu trên một tháng nha mọi người. Đấy, chứ anh em đừng có nghĩ mà thị trường Việt ít tiền đâu nha anh em. Đấy, RPM nó thấp thật nhưng mà bù lại thì view nó cao thì nó sẽ kéo lên nha anh em. Ok, vấn đề tư duy là như thế nha mọi người. Bây giờ em sẽ cho mọi người xem nè, tại sao em biết nó là lấy từ kênh nước ngoài về. Mọi người cứ dịch ra cho em nha. Mọi người dịch ra, xem cái video nè. Video chữ số cuối cùng của năm sinh nói về kiếp trước nè mọi người. Anh em có thấy không? View của bên Hoa Kỳ thì cao bảy cao 9 thôi. Nhưng mà nó đem sang Việt Nam nè mọi người. Từ số cuối cùng trong năm sinh nói về kiếp trước nè. Đấy, anh em có thấy không? View của nó lên cả 200.000 lượt view luôn. Đấy, mọi người có thấy cái sự thật là nó chỗ đó không? Đấy, đó là một cái tư duy về cách làm nha mọi người. mọi người áp dụng cho em nó rất là rất là thành sẽ là thành công nha. Đấy, cái này không khác gì em truyền nghề luôn đâu. Và đây là cách của em làm với nhân bản thị trường ở Tây Ban Nha đồ nha mọi người. Đấy, nên là mọi người mới á thì mọi người cứ làm view Việt trước cho em đã. Rồi, ok, bây giờ thì tiếp tục đến một cái key về sức khỏe nữa nha. Và em sẽ lấy Đấy, cái key này em sẽ làm ví dụ, và em sẽ lấy kịch bản, edit và cũng như tạo thumb cho mọi người luôn nha. Rồi, về cái key này thì nó rất là hot ở thị trường Hoa Kỳ và cũng như được em share cũng như rất là nhiều người share rồi. Thì em nói 100%, không còn 1 nói 100% là cũng đúng, tầm 90% thì mọi người sẽ thất bại bởi vì cạnh tranh rất rất rất là cao. Mọi người cứ nghĩ xem một cái ngách mà có lượng người xem nhất định nào đấy, nhưng mà cái số người làm nó còn nhiều hơn cái số người xem nữa. Thì mọi người có nghĩ cạnh tranh nó rất là cao, nên vì thế mọi người phải nhân bản ở thị trường khác. Ví dụ mình sẽ đem về thị trường Việt Nam mình làm thì nó sẽ ăn rất là ngon Thật sự, một tháng, mọi người kiếm 20-30 củ trên thị trường Việt thì bình thường. Thị trường Hoa Kỳ thì mọi người kiếm nhiều hơn, nhưng mà cạnh tranh cao hơn. Thấy, về cái này á, thì cái kênh này nó lấy toàn là kịch bản ở bên cái kênh Hoa Kỳ em vừa chia sẻ á mọi người Và để biết sao em biết không thì ok bây giờ nha Đây, cái video này Năm vị trí ngứa nè Năm cảnh báo, năm vị trí ngứa ung thư ở người cao tuổi nè mọi người Đấy, bây giờ em sẽ cho mấy bác biết tại sao nó lấy ở bên này nha Rồi, em sẽ quay cái kênh của cái người nước ngoài nè. Bây giờ em sẽ kéo xuống em tìm cho bác. Rồi, đây, đây, đây, đây, video đã đây mọi người, 8 ngày trước nè. Rồi, bây giờ em sẽ bấm ngừng, vì em sẽ dịch ra cái tiêu đề cho mọi người xem nha. Đấy, chỗ ngứa này có nghĩa là 99% ung thư. Nè, đó, mọi người có thấy không? Vì em cũng đã lấy cái kịch bản này về rồi. Về trong cái kịch bản đó để nói về lệnh em cái vấn đề nha mọi người. Đấy, về cái ông người Việt Nam mình á, thì ổng để ghi cái tiêu đề khác. Thì mọi người, cái lúc này, Thì mọi người có thể tự đặt, hay là kêu con ChatGPT đó, nó hình dung ra kiểu như nó biến tấu thêm cái kịch về cái tiêu đề nha. Mình làm khác cái thị trường á thì mình có thể kêu con ChatGPT nó dựa theo cái tiêu đề của cái nước đó mà nó sẽ làm ra các cái tiêu đề khác hay hơn. Còn về vấn đề cùng thị trường thì anh em có thể đặt theo tên tiêu đề của kênh đối thủ luôn. Rồi, vấn đề này thì đã ok rồi nha mọi người. Về mục tiêu để em chia sẻ hôm nay, về những cái ký này thì không phải là em muốn tắt kéo mọi người. Ví dụ như 50, 60 con người mọi người nhảy ra làm hết mấy cái ký này, thì thành ra mọi người đang bị cảnh tranh nhau rồi đúng không? Đấy, thì nó sẽ thêm là tỷ lệ nó rất là khó nữa. Đấy, nên là em muốn mọi người tư duy á là cách làm như thế này và nhân bản thị trường như thế này. mọi người có thể tìm các cái key khác, các cái ngách nhỏ khác, mọi người nhân bản thêm, đúng không mọi người? Đấy, chứ mọi người mà cứ 50 hay 60 người cứ nhảy vào làm hết cái này á Thì thành ra thì mọi người tự nhiên cạnh tranh nhau rồi Thì thành nó sẽ khó hơn, đấy đúng không? Nên là mọi người có tư duy và làm mỗi cái ngách khác nhau Ngách nhỏ khác nhau để cho tỷ lệ cạnh tranh nó thấp đi Và thành công nó sẽ cao nha mọi người Đấy, thì thật sự em chia sẻ như vậy luôn Đấy, để mấy bác biết được và tư duy được nha Chứ không phải là mọi người cứ nhảy vào làm hết Thì thành ra nó thì cạnh tranh rất là cao Đấy nên là mấy bác phải hiểu về tư duy theo cái cách mà em đã nói nha Cũng như là ví dụ em đã public những cái kênh mà lên tiktok hoặc là YouTube của em á Thì rất rất rất là nhiều người làm luôn Thì mọi người mà nhảy vào làm hết á Thì về cùng một thị trường á Thì sẽ cạnh tranh cao Và sẽ tỷ lệ khả năng để mình lên được á Thì rất là khó nha mọi người Đấy nên là mọi người đã vào đây rồi á Thì mọi người cứ làm theo cách của em những cái kinh nghiệm em chia sẻ và hướng dẫn về những cái key mà em đã chia sẻ cho mọi người nha. Tiếp tới, em sẽ hướng dẫn các bạn cách để lấy kịch bản của kênh đối thủ hoặc kênh mình muốn lấy. Bây giờ, mọi người truy cập vào trang web này để lấy kịch bản free. Bây giờ, em sẽ để link của con web này ở trong file cho mọi người. Con web này lấy kịch bản và nói là hoàn toàn là free nha mọi người và rất là ngon nha. Rồi bây giờ em sẽ lấy đại một video này, em sẽ ví dụ cho mọi người nha. Đây. Video này hình như là nó không phải nói về sức khỏe mà nó nói về kiểu như ngôi nhà bừa bộn gì đấy mọi người. Thôi kệ đi, cứ làm đi. Bởi vì mọi người cứ tư duy và cách làm như em nha. Rồi bây giờ sau khi copy á thì anh em mở vào cái link và mọi người bấm là nó sẽ chạy ra như thế này nha. Đấy, nó đã lấy hết. Đấy, nó đã lấy hết các cái sub, cái kịch bản của cái video này rồi. Bây giờ á thì mọi người cần là cái prompt để train con ChatGPT đúng không? Đây là cái prompt nha. Nói chung các tài liệu này em sẽ để trong cái file doc cho mọi người nha. Đây, đây là cái prompt nha. Nói chung các tài liệu này em sẽ để trong cái file doc cho mọi người nha, yên tâm. Rồi, bây giờ cái prompt này em đã viết là, cái này thì em đã tự train nha mọi người và em đã tự nghĩ ra. Bởi vì nha, em nói cho mọi người hiểu cái chỗ này tí: nếu mà mọi người làm chung cái thị trường á và mọi người lấy cái kịch bản của đối thủ á và chung cái thị trường ví dụ thị trường Hoa Kỳ đi, thì anh em cần phải thay đổi ví dụ lấy 40% và thay đổi 60%. Nhưng mà đối với cái chuyện mà nhân bản thị trường á thì mọi người không cần thay đổi luôn nha, mọi người chỉ cần lấy kịch bản của nó dịch ra nha, và kêu nó tạo, nói chung là làm như cái prompt của em nè, đấy là ok nha mọi người. Chứ không cần phải chỉnh kịch bản hay là kêu con chat nó tạo thêm nữa nha. Bởi vì con chat nó tạo thêm thì rất là dở nha. Nó dở nha mọi người, kiểu như rất là ngu vậy. Rồi, ok, về cái vấn đề là như vậy nha. Cái này thì ngôn ngữ tiếng Việt, về ngữ về người Việt nè, thì mọi người làm ở thị trường khác. Ví dụ như thị trường Nhật thì anh em có thể ghi là tiếng Nhật, về ngôn ngữ Nhật. Vì anh em muốn làm thị trường nào thì mọi người làm ở thị trường khác. Thế giới thiệu, mọi người dịch sang nước đó, mọi người bỏ qua, để trên con chat cho nó uống. Để em để tiếng Việt này mọi người. Rồi ok. Sau khi có cái kịch bản rồi mọi người bấm Ctrl A, Ctrl C để sao chép nha mọi người. Rồi sau khi sao chép xong thì mọi người vào ChatGPT giúp em. Tiếp tục sau khi mà vào á, dán vào mọi người. Mọi người quay lại lấy kịch bản nè, copy kịch bản lúc này á, rồi mọi người dán vào nha, mọi người yên tâm là nó không có bị dính sốt nha mọi người, đấy rồi, ok bây giờ thì anh em cứ để cho nó nó chạy thôi. Và mọi người yên tâm là không lo bị bản quyền hay sử dụng lại nội dung nha. Không bao giờ có chuyện đó được đâu nha. Bởi vì những cái cách này em đã áp dụng em làm 3 4 tháng nay rồi mọi người ơi. Và em làm cả chục kênh rồi ấy. Nên là mọi người yên tâm nha. Rồi, giờ thì chỉ cần đợi nó dịch ra thôi mọi người và mình chỉ cần lấy về thôi. Rồi em tua nhanh về cái đoạn đó để tránh mất thời gian nha mọi người. Rồi bây giờ thì anh em copy hết cái kịch bản này giúp em. Ờ bây giờ thì mọi người bỏ cái đoạn trên này nha. Mọi người bỏ cái đoạn này nha. Đây mọi người copy cái từ ở dưới này xuống dưới này cho em. Cái đoạn ở trên thì tí nữa em sẽ nói sau nha. Rồi. Mọi người sao chép nha. Tiếp tục, qua bên Notepad nè. Mọi người, trên máy ai cũng có cái Notepad ấy, mọi người vào để làm, bỏ kịch bản vào cho nó ok nha. Mọi người sao chép, vào, dán vào, mọi người lưu lại nha. Cái này thì mấy bác đã biết hết rồi, chắc em không còn nói nhiều nữa đâu đúng không? Rồi, ok, bây giờ thì mọi người xem video của đối thủ nè. Mọi người có thấy không, là nó toàn là cảnh thiên nhiên, hoặc là cảnh gì không à nha. Bây giờ em sẽ hướng dẫn cho mọi người cách để lấy được những video đấy về hoàn toàn là free và không bản quyền nha mọi người. Đây là những trang web mà em share cho mọi người để lấy video free về nha. Những trang web này phải nói là hoàn toàn là free và không bị bản quyền nha mọi người. Nên anh em không quan trọng và không sợ bị sử dụng lại nội dung hay bản quyền nha. Nếu có bị thì mình cũng kháng rất là dễ mọi người ơi, bởi vì cái lỗi sử dụng lại nội dung thì kháng rất là dễ. Đấy, nói chung là không bao giờ bị hoặc nếu có bị thì cũng kháng dễ lắm nên anh em yên tâm mà dùng, bởi vì em đang có 3-4 kênh làm như này nè mọi người, nhiều người làm lắm chứ không phải riêng mình đâu. Đấy mọi người cứ tìm kiếm những cái video thiên nhiên hoặc là những cái video cảnh gì đấy thì mọi người cứ dịch ra tiếng Anh, mọi người search vào. Mọi người bấm tải về. Tải bao nhiêu video thì mọi người cứ canh. Ví dụ như kịch bản mọi người đã gen ra âm thanh tầm 8 hay 10 phút thì mọi người cứ tải nhiều video về ghép lại cho nó đủ phút thôi là được nha. Bây giờ không chỉ có cái web này đâu nha mọi người, còn rất là nhiều web khác nhau nha. Đấy, em sẽ để cái link ở trong cái file cho mọi người tải luôn nha. Rồi, anh em cứ yên tâm là em sẽ để cái link cho mọi người. Bây giờ mình đã tạo video rồi, mình sẽ tạo âm thanh trước nha. Đáng lý ra mình sẽ tạo voice trước, nhưng thôi cứ kệ mình cứ lấy tài nguyên video trước nha mọi người. Làm theo cái dạng này thì mình làm cái gì trước cũng được không sao nha mọi người ơi. Sau khi mà mình đã có kịch bản và mình đã lưu cái kịch bản rồi á thì mọi người làm cái này là làm view Việt đúng không? Thì mọi người dùng cái con Vbee này nha. Em thấy con Vbee này thì ổn nhất rồi và nó cũng khá là rẻ. Nên là anh em có thể dùng cái con Vbee này cũng được nha. Điều này là nếu mọi người làm view ngoại hay các nước ngoài thì dùng con ElevenLabs thì nó sẽ ngon hơn. Bởi vì nếu mà dùng tiếng Việt cho con ElevenLabs nó cũng có, nó cũng có nha mọi người, nhưng mà kiểu như con ElevenLabs là của người nước ngoài họ train ấy, nên là nhiều lúc nó sẽ đọc bị ngu nha mọi người. Nó không có đọc hay và không có đọc đúng được cái ngôn ngữ của mình. Đấy, nên là thành ra nhiều lúc nó đọc không có hay và không có đúng được nha mọi người. Nên là anh em lưu ý chỗ đó, mọi người làm view ngoại thì có thể dùng ElevenLabs được. Rồi bây giờ em sẽ chọn lại 1 cái giọng này nha, rồi em sẽ upload file lên rồi, chỗ này thì mọi người chỉnh theo tùy ý thôi. Về cái chỗ tốc độ nè, em sẽ để 0.75 nha, để tốc độ hơi chậm tý, mọi người có thể tự chỉnh theo em muốn nha. ngồi chờ nó gen ra thôi anh em. xem thôi anh em. Rồi sau khi... Mọi người bấm tải về nha, vậy đây em đã tải về rồi nha mọi người Rồi tiếp theo bây giờ sẽ tiếp tục làm về cái ảnh cái nhân vật nha mọi người Đấy một cái nhân vật thì mọi người chỉ làm một ảnh thôi Đấy như này thì mọi người để xuyên suốt cả cái kênh mọi người luôn nha Nên là cái key này, cái dạng này làm rất là dễ luôn nha mọi người Chỉ cần một nhân vật thôi, vậy là mọi người tạo ảnh chỉ một lần thôi Và làm thêm cũng rất là dễ Đấy em sẽ hướng dẫn mọi người chi tiết luôn nha Rồi bây giờ Ví dụ như này đúng không? Về cái thằng này á, cái của cái kênh này á, nó đang dùng HeyGen nha mọi người. Nhưng mà nó chỉ làm một cái đoạn ngắn vài giây thôi. Về nó ghép đi lặp đi lặp lại mọi người. Về mọi người nhìn cái khẩu miệng của nó, nó không có được đúng, về nó không có hay đúng không mọi người? Như vậy thành ra tỷ lệ giữ cho người xem thì sẽ thấp hơn nha. Bởi vì người xem không có được thích nha mọi người. Để làm thì nên đầu tư hẳn hoi, con HeyGen rồi mọi người làm hẳn một cái video nói về như vậy luôn nha. Tí nữa em sẽ ví dụ làm cho mọi người luôn, yên tâm là em sẽ hướng dẫn từ A đến Z cho mọi người. Đây là ví dụ em tạo ra cái ảnh nè, cái ảnh ông bác sĩ nè mọi người. Và cái prompt này thì em đang để là Việt Nam nè, cái nhân vật Việt Nam nè. Và cái prompt này thì mọi người yên tâm, em cũng sẽ để trong cái file doc cho mọi người nha. Rồi sau khi mà có được cái ảnh đã tạo ra rồi á thì mọi người truy cập vào trang web này giúp em nha, để mình xóa cái phông nền của nó ấy. Link thì em cũng sẽ để trong cái file doc cho mọi người nha. Đấy ok, sau khi mà xóa phông nền xong á thì mọi người lưu về nha. Tiếp tục, mình chỉ làm cho nhân vật nhép miệng và nói chuẩn theo kịch bản của mình luôn nha mọi người. Ví dụ như kênh này em nãy em có nói nè mọi người, nó làm không có hay, không có khớp và thật sự là dễ luôn nha. Nên là em hướng dẫn cho mọi người làm một cách chỉn chu luôn nha. Một cách tránh trùng luôn nha. Rồi mọi người truy cập vào con web HeyGen nè mọi người. Đây nè ban đầu thì nó chỉ cho mọi người dùng free. free ở đâu có ngon đâu. Free thì nó chỉ tạo được vài cái, vì là nó cực kỳ chậm, vì là nó có cả cái logo HeyGen nữa, nên rất là không ngon nha. Đây em đang dùng cái gói 29 đô này nha mọi người, mọi người có thể dùng cái gói Team nè, mọi người có thể anh em trong nhóm nếu có dùng thì có thể góp lại với nhau hoặc là dùng sao đấy, nói chung là mọi người cân đối nha. Nhưng mà em khuyên mọi người là nên đầu tư nha mọi người, để làm cho nó hẳn hoi nha. Để anh mua cái gói này Tạo video không giới hạn, video gen ra dưới 30 phút là khá hợp lý với key này. Key của mình tầm 10 phút, 20 phút thôi. Bây giờ em sẽ hướng dẫn cách tạo. Vấn đề mà mua thì mọi người có thể tự cân nhắc. Mọi người bấm vào avatar giúp em. Những cái này thì em làm mẫu trước, giờ em sẽ làm mẫu lại nữa. Mọi người bấm vào Create nè, mọi người bấm cái thứ 2 nha, custom photo avatar nha. Rồi, anh em bấm vào cái slide này, tải ảnh lên. Lúc nãy nè, có cái ảnh để xóa nền nè mọi người. Đấy, tải về nha. Tải lên nha, chưa nhầm. Rồi, mọi người bấm upload nha. Rồi, sau khi upload lên thì nó sẽ chuyển ra cái mục này mà mọi người chờ nó load lên tí nữa nha. Rồi, mọi người bấm tiếp tục nha. Để tìm out cái tên của nhân vật hoặc tên của dự án thì cho theo tên của mọi người. chung cái này không quan trọng đâu anh em, đặt sao cũng được và chọn sao cũng được nha. Kiểu như chính chỗ này thì nó làm cho mình để mình đặt cái tên dự án hoặc là cái tên nhân vật để cho nó khỏi bị nhầm ấy. Chỗ này thì em chọn khác này. Rồi mọi người bấm tiếp tục thôi. Rồi sau khi xong thì nó sẽ ra như thế này nha mọi người. Và mọi người chỉ cần đợi vài giây thôi nha. Rồi sau vài giây thì nó đã load xong thì mọi người bấm vào. Sau vài giây thì nó đã load xong. Mọi người bấm Create, chọn khung hình. Mọi người nên chọn khung hình dọc. Nó sẽ hợp với ảnh hơn. Mọi người có thể nhập văn bản, kịch bản lên, nhưng mà em khuyên không nên. Bởi vì mình đã gen ra phần âm thanh rồi, thì mọi người bấm vào Upload Audio, mọi người chọn file mà lúc nãy em tạo bên Vbee để gen ra được. Mọi người open lên. Hình như lúc nãy em tạo là được 8 phút mấy. Đấy, anh em lưu ý là bởi vì sao lại 8 phút mà bên kia mười mấy phút? Bởi vì là cái tiếng Anh thì nó sẽ đọc chậm hơn. Tiếng Việt mình thì nó đọc nhanh hơn, nên là anh em cứ cân nhắc và chỉnh tốc độ âm thanh để cho nó ra được kịch bản dài hơn tí được nha. Để nó upload lên nha mọi người. Thật sự những chia sẻ cũng như hướng dẫn kinh nghiệm của em thì mấy bác nên làm theo em nha mọi người. Mọi người đã bỏ tiền vào đây rồi thì mọi người cứ làm theo em đảm bảo là nó sẽ lên nha anh em ơi. Những cái vấn đề thực chiến thực tế này thì em đã làm rồi thì em mới nói và chia sẻ cho mấy bác thôi. Những cái khó học mấy chục cũ hồi kia thì em nói thật sự không bằng một gấp của em đâu. Thật sự như vậy luôn á mọi người. Mấy bác nào mà đã học những cái khóa mấy chục củ hoặc là mấy củ đó rồi á thì thật sự để so với cái của em á thì không bằng đâu nha mọi người. Những cái free mà em share trên kênh YouTube thì đã đủ ăn đứt rồi. Về cách tìm key, về tư duy tìm key đó ấy. Nó rất là thực chiến và rất là hay nha mọi người. Rồi sau khi đợi nó upload tí á thì nó đã gen xong rồi nha mọi người. Rồi bây giờ thì mình chỉ cần bấm vào Add to. Cái nút mà tím tím ở dưới nè mọi người. Rồi sau khi bấm xong thì mọi người đợi một tí để nó log lên nha. Để nó tải lên. Ok sau khi tải lên xong thì mọi người ở bên kia một bên tiên phải ở trên góc phải nè mọi người có thấy cái chữ Gen không? Đấy mọi người bấm vào đấy để cho nó Về phần chỗ này cũng như là đặt tên file, em sẽ đặt hướng dẫn H2Dev đi nha. Chỗ này thì mọi người đặt tên gì cũng được. Chọn chất lượng là 1080 nha. Ở thông số này thì mọi người nên chọn P50 nha để cho video nó mượt màng. Chỉ để hài lem thôi. Chỉ cần chờ đợi nó gen xong rồi làm thôi. Đây là lúc xong rồi nha. Rồi mọi người bấm vào. Và ở ngay ở trên dưới phải này nó có chữ download thì mọi người download về nha. Đấy mọi người chọn cái chất lượng 1080 nha. Rồi ok bây giờ thì đã có kịch bản, đã có voice, đã có hình ảnh âm thanh rồi thì bây giờ mình sẽ vào edit thôi nha mọi người. Em sẽ hướng dẫn cho mọi người cách edit và tạo thumb luôn nha. Rồi đây lúc nãy thì em đã có tải những cái video này rồi và bây giờ em sẽ add vào nha mọi người. Rồi trước tiên thì em sẽ add cái file âm thanh của mình vào trước nha mọi người. Cái file âm thanh lúc nãy là tầm 8 phút nha. Đấy, bởi vì cái tiếng Việt của mình nó nói rất là nhanh nên là chỉ có 8 phút thôi. Rồi bây giờ thì mọi người chỉ cần chọn những cái video này, đấy anh em có thể chọn theo thứ tự, hoặc là copy tất cả bỏ vào, hoặc là chọn theo cái nào mà kiểu như video nó hay trước á thì mọi người để trước nha. Đấy, nói chung là sao cũng được mọi người ạ. Rồi xong thì mọi người kéo bỏ vào nha. Và cái chỗ tỷ lệ khung hình này mọi người nhớ chỉnh giúp em là 16:9 nha mọi người. Đấy. Rồi bây giờ chỗ này thì em sẽ rà soát lại coi thử cái nào mà nó bị kích thước khung hình bị nhỏ á thì em sẽ phóng to ra nha mọi người, để làm cho nó tương đối bằng nhau luôn nha. Đây, ví dụ như cái này nè, nó đang bị nhỏ nè, đấy mình kéo ra cho nó phù hợp với khung hình nha. Rồi, ví dụ như cái này nữa nè mọi người. Đấy, vậy cho nó ok nha anh em. Sau khi xong rồi thì mọi người có thể xếp theo ý thích của mọi người cái video nào lên trước cũng được. Ví dụ như này nè, mọi người copy bỏ lên trên, như nào cũng được nha. Như thế mà cái video mình nó hay là được. Rồi tiếp tới thì em sẽ làm cái phần giới thiệu cái bàn đều cho mọi người nghe xem nha. Bây giờ em kéo cái phần tàn tria tí đây. Đấy, mọi người có nhớ mà cái văn bản lúc nãy mà em không copy không? Đây nè, cái đoạn này nè. Bây giờ thì mọi người copy vào cho em nha. Đã bao giờ bạn nhìn quanh nhà và thấy gì đấy? Bừa bộn này mọi người. Cái kênh lấy kịch bản lúc nãy á thì nó nói về chung kiểu như tuổi già ấy mọi người. Nó nói về sức khỏe có và cuộc sống có và kể chuyện có nha. Đấy nên là mọi người cứ dịch ra cho em. Mọi người xem cái key mọi người muốn làm cái key nào hoặc là cái ngách nào đó thì mọi người cứ ờ dịch ra và thấy nó phù hợp á thì mọi người lấy về nha. Ví dụ video này đang nói về người già ở nhà bừa bộn gì đấy. Nên mọi người lưu ý chỗ này cho mọi người nha. Về đây cũng chỉ là ví dụ của em thôi. Cách mọi người làm thì cứ tương tự như em mà làm nha. Sau khi xong thì mọi người vào văn bản và kéo xuống chỗ phông nền nè mọi người. Chọn phông nền để giúp em vẽ giảm độ mờ xuống nha. Như này thì hợp lý nè mọi người. Và mình sẽ cho nó in đậm thêm tí nha mọi người. In đậm đâu? Đây, in đậm đây. Đấy, như vậy thì... Mọi người có thể chỉnh theo phông chữ, nhưng mà theo mình thì để mặc định như thế này cũng hợp lý. Anh em có thể tự chỉnh theo ý thích. Tiếp tục là em sẽ làm đều cái đoạn đánh dấu, kiểu như đánh văn bản vào. Để tìm kiếm những cái đoạn mở đầu, em sẽ chọn một cái. Cái này hợp lý, cái ở trước này hợp lý hơn. Rồi bây giờ em sẽ tùy chỉnh thời lượng lên để cho nó chậm lại. Như này thì thấy khá ổn Tiếp tục đến với phần hiệu ứng âm thanh. Mọi người bấm vào âm thanh về chọn hiệu ứng âm thanh giúp em. Mọi người search như em nha. Search như này nè. Đấy thì nó sẽ ra nè. Rồi, mọi người kéo xuống thì sẽ thấy nha. Bây giờ em sẽ nghe thử những cái này thôi. Cái này khá là ngắn nên là mọi người lấy ở dưới này nha. Cái nào ngắn quá thì không nên lấy nha mọi người. Ví dụ như cái này mọi người có thể lấy, hoặc là cái dưới này. Đấy, em sẽ lấy cái này nha mọi người. Cái này rất là hợp lý luôn. Rồi, bây giờ chỉ cần việc mình edit lại tí. Đấy, mình canh chỉnh nè. Rồi, bây giờ mình chỉ cần cắt ra thôi nha. Sau khi xong rồi thì anh em kéo cái âm thanh của mình, âm thanh gốc của mình, âm thanh của mình, thêm thêm thanh kịch bản của mình lại nha rồi như này Ok tiếp tục mình sẽ import mình sẽ thêm vào cái video HeyGen nha Đây này cái video của cái ông này nói này mọi người nãy bây giờ thì mọi người để thêm vào rồi á thì anh em nhớ luôn giúp em làm lại xóa phông nền đó đi vì là ngay cái chỗ xóa nền nè em mọi người vào cái phông nền nha mọi người bấm vào cái dấu này cho em bấm hai lần nha đấy Mình chọn vào cái màu trắng rồi Như vậy thì nó đã xóa nha, mọi người có thể tùy chỉnh ở dưới này nữa. Và em sẽ làm mờ cái đường viền đi. Đấy, cái đường viền màu trắng nó bị mất đi rồi đấy mọi người. Đấy, như vậy là hợp lý nha. Rồi em sẽ phóng to lên tí. Đấy, và anh em có thể căn chỉnh để sao cho nó hợp lý nhất nha, để như này là ok rồi nè. Như này là ok luôn mọi người ơi. Bây giờ em sẽ test cái âm thanh ở trong cái video này nha. Bởi vì nó cùng âm thanh đấy. Mọi người cứ test đi một cái là được. Rồi bây giờ em sẽ bấm chạy thử cho mọi người xem nha. Chưa edit xong đâu nhưng mà em sẽ bấm chạy thử cho mọi người xem. Càng lớn tuổi, ngôi nhà của chúng ta càng thay đổi theo thời gian. Đấy, mấy bác có thấy cái miệng của nó nhép rất là đúng và rất là chuẩn luôn không? Như kênh của đối thủ, nó chỉ làm những đoạn ca sản trước, chỉ lặp đi lặp lại một đoạn ngắn hết cho hết video thôi, và nó không hề khớp tí nào. Như vậy thì khán giả sẽ ghét hoặc không thích hơn. Như mình phải làm thì mình phải làm hơn đối thủ, như vậy thì mình sẽ thu hút được. Sau khi xong thì mọi người bấm vào âm thanh, trích xuất phụ đề tự động ra, mọi người chọn tiếng Việt, mọi người làm thị trường khác thì có thể chọn ngôn ngữ khác thôi. Bây giờ chỉ cần đợi nó tạo ra thôi. Rồi ok, như vậy nó đã tạo ra phụ đề xong rồi thì mọi người vào edit một tí nữa nha. Chỉnh cho phông chữ của nó và cỡ chữ của nó to lên để dễ nhìn nha mọi người. Bởi vì cái key này mình làm cho người già xem thì mình phải càng để cho nó rõ ràng. Vì càng cái phông chữ nó càng to thì nó sẽ càng ngon hơn nha mọi người. bởi vì người già thì họ thường là thích phông chữ to đấy mọi người. Bởi vì phông chữ nhỏ thì họ đọc không có được nha. Đấy như vậy em sẽ chỉnh cho nó xuống tí nữa đi. Như vậy thì hơi to quá. Đấy như này chỉnh tiếp đi. Như này thì cũng hợp lý nha. và mọi người bấm in đậm giúp em nha. Rồi chỗ này, ui chỗ này không cần đâu. Mọi người cứ bấm vào cái phông nền này cho em là được rồi. Rồi cái chỗ mờ, độ mờ thì mọi người giảm xuống tầm 50 giúp em nha. Đấy, như nào cũng được, tầm 50. Cũng hợp lý Rồi mọi người thu nhỏ lại tí Rồi để cho nó hợp lý tí nha Rồi ok như này là chuẩn rồi nha mọi người Thấy chỗ này nó hơi bị ái Để em chỉnh xuống tí nữa Đấy như này ok hơn nha mọi người Rồi quá là ok luôn đúng không mọi người ơi Bây giờ em sẽ cho mấy bác nghe qua thử nha, xem qua thử cái đoạn này tí nha Để có thời gian đầy ấp những món đồ tích góp suốt nhiều năm, những kỷ niệm, món quà, thói quen, và đôi khi dù chẳng cố ý. Xong rồi mọi người ơi, cái mục Edit của mình chỉ đến thế thôi, rất là đơn giản và rất là hay nha mọi người. Đấy, rồi ok. Cái vấn đề Edit này thì mấy bác nào mà cao chiêu hơn thì có thể Edit thêm hiệu ứng các kiểu vô. Nhưng mà theo em thì như này là quá là hợp lý, quá là ok. Ok luôn rồi nha. Mọi người có thể tham khảo theo cách này của em nha. Rồi bây giờ thì chỉ tới việc thumb thôi mọi người. Mọi người kéo xuống những cái phần sau này, mọi người xóa những cái dư thừa đi nha. Ví dụ như nãy của mình nó bị dài nè. Mọi người xóa hết đi. Để canh cho nó đủ cái kịch của mình được rồi nha. Rồi ok như này xong rồi, mọi người chỉ cần xuất ra thôi. Mọi người nên xuất video ở chất lượng 4K nha. Bởi vì lúc nào em làm cũng xuất ở chất lượng 4K đó mọi người. Dù anh em máy yếu thì có thể xuất ở 1080p cũng được. Nhưng mà thật sự là nên xuất nằm lên xuất 4K nha mọi người. Bởi vì video càng chất lượng thì thuật toán của thằng YouTube nó sẽ đẩy mọi người càng lên cao nha. Bây giờ em sẽ hướng dẫn cho mọi người cách làm thumbnail luôn nha. Làm thumbnail y như đối thủ, đẹp hơn đối thủ luôn nha mọi người. Như này thì đối thủ nó làm cũng khá là đơn giản. nhưng mà mọi người thấy không? Nó hút rất là nhiều view luôn. Đấy, em sẽ hướng dẫn mọi người cách tạo thum đẹp hơn đối thủ luôn nha. Đấy, mọi người có thể tham khảo. Rồi, bây giờ nãy là em làm cái video ở trên này đúng không? Rồi ok, bây giờ em sẽ lấy dịch ra để em làm luôn nha mọi người. Rồi, trước hết á thì mọi người vào những cái trang web mà em có đưa mọi người nè, và mọi người dùng để lấy cái ảnh nền á thì mọi người có thể dùng cái con này nha. Con này khá hay. Và mọi người search cho em là công viên xanh nha. Đấy, công viên xanh, rồi mọi người copy, dịch ra tiếng Anh nha, mọi người paste vào và enter nha. Rồi, và lưu ý chỗ này thì mọi người bấm vào Photo nha, là ảnh ấy. Đấy, như này thì nó sẽ ra rất là nhiều ảnh kiểu công viên xanh luôn nha. Mọi người lưu ý giúp em là chỗ này mọi người bấm vào Free nha. Đây mọi người bấm vào Free nha, đấy thì nó sẽ ra những cái free, không phải những cái trả phí nha, nên là anh em tha hồ mà chọn. Rồi bây giờ ví dụ em sẽ chọn đại cái này đi. Rồi bây giờ em sẽ download xuống nha mọi người. Rồi ok, sau khi xong rồi thì bây giờ mọi người tải ảnh lên nha, bởi vì em đã tải rồi nè mọi người, đấy mọi người thấy không? Giờ chỉ cần thêm vào thôi, và anh em phóng to lên nha, phóng to lên. Để cho nó cân đối nha mọi người. Rồi tiếp tục, bây giờ thì mình sẽ thêm cái văn bản vào nha. Đầu tiên thì mình để cho cái nền của nó mờ đi đã, mọi người bấm vào Sửa nha. Mọi người thấy chữ Mờ nè, mọi người kéo cường độ của nó nha, toàn bộ hình ảnh, cường độ của nó nè, mờ nha, mọi người có thể tùy thích, chỉnh theo cũng được, nhưng mà theo em như này thì hợp lý nha, nó mờ vừa vừa thôi mọi người ạ. Nó mờ nhiều quá thì nhìn vào nó sẽ đau mắt nha mọi người, và không thấy được ấy. Rồi, 4 lem như này là hợp lý nha. Tiếp tục em sẽ thêm cái ảnh của ông bác sĩ vào luôn nha mọi người. Một cái ảnh này thì mọi người làm xuyên suốt cả cái kênh của mình luôn. Đấy, làm mấy key này nên là những cái key này không cần quá là nhiều hình ảnh đâu mọi người, thành ra là quá là ngon, và không cần AI video hay là AI ảnh đâu nha, chỉ cần 1-2 ảnh là được rồi. Mọi người có thể tùy chọn bộ lọc chỗ này cho nó sáng. Như này thì ok nè. Như này thì em thấy là ok luôn nha. Rồi tiếp tục bây giờ thì mình sẽ làm cái chữ nha mọi người. Về cái chỗ này thì em đã dịch ra rồi. Và nó nói kiểu như là năm điều khiến cho ngôi nhà của bạn trở nên bừa bộn sau khi về già ấy mọi người. Đấy em dịch ra là như thế nha. Rồi anh em có thể tự dịch chụp màn hình lại vào Google dịch đấy, mọi người tải ảnh lên để cho nó dịch ra. Để biết được tiêu đề, bây giờ mình chỉ cần bấm vào thêm tiêu đề, mọi người edit thôi. Bấm số 5 trước. Chọn phông chữ này. Phông chữ này khá dễ nhìn. Chỉnh cho nó to thêm tí. Chỉnh cho nó màu trắng chứ không màu đen. Hiệu ứng. Hiệu ứng thì cho nó cái viền. Đó cái viền nha mọi người Đấy cái viền màu đen nha Làm giống như đối thủ luôn Rồi sau khi ok rồi thì mọi người nhấp chuột vào cái số 5 nè Mọi người bấm Ctrl-C Ctrl-V ra nha Để cho nó sao chép ra Cùng một cái Cùng một cái định dạng và cùng cái luôn Mình đã chỉnh rồi cho nó Đỡ bị chỉnh nữa nha mọi người Đấy bây giờ thì em sẽ ghi vào điều khiến nè Tại sao làm như thế này thì mọi người xem hết thì mọi người sẽ hiểu nha. Rồi bây giờ thì mình canh chỉnh cho nó hợp lý tí thôi nha mọi người. Canh chỉnh như nào cũng được tùy ý mọi người nha. Mọi người có thấy không? Cái phông nền này thì nó hơi bị trói cái phần ở chính giữa nè. Nên là em sẽ phóng to lên tí nha. Đấy, em sẽ đẩy nó lên cao tí nha. Bởi vì nó trói thì nó sẽ khiến người xem nhìn vào thì bị trói mắt khó đọc mấy mọi người. Đấy nên là mình chỉ cân nhắc lại chỗ này nha. Rồi, ok sau khi xong thì mọi người tiếp tục copy paste ra và ghi tiếp tục nha. Em sẽ ghi là cái ngôi nhà. Tiếp tục paste ra, ghi là: của bạn Đấy, chỗ này mọi người cứ xem cách của em làm là mọi người biết à. Rất là dễ nha mọi người. Và tại sao em tách như này á thì tí nữa mọi người sẽ thấy nha. Bởi vì đối thủ của mình có chữ màu vàng và chữ màu trắng rồi đúng không? Mọi người cắt ra như này thì mọi người có thể chỉnh nó màu luôn nha. Bây giờ em sẽ tương đối lại tí để cho nó cân bằng tí nha. Chỗ khi về già này em tách ra 2 vùng Tách ra hai vế đi, để chung như này thì không ok lắm, tách ra hai vế đi. Rồi sau khi mà okay hết rồi á thì mọi người nè, quay ra cái con của đối thủ nè, mọi người thấy không? Có cái chỗ mà màu vàng, màu vàng và màu trắng này, mọi người thấy không? Những cái chỗ đấy thì nó nhấn mạnh nó in đậm lên ấy mọi người. Đấy, để cho nó dễ thu hút hơn á. Thì bây giờ quay lại thì mình sẽ cũng làm theo như nó nha mọi người. Số năm nè, em sẽ để màu vàng rồi. Nêm điều khiến ngôi nhà, bây giờ ngôi nhà thì em sẽ để ở nè, đối với màu vàng lên nè mọi người. Trong lộn xộn em cũng đổi sang màu vàng, key nè. Đấy, như vậy thì nó sẽ thu hút hơn nha mọi người. Quá là đơn giản luôn đúng không anh em ơi. Rồi, về cái ảnh bìa này á thì em sẽ làm cho nó... Bởi vì như này thì nhìn nó hơi chói và nó khó thấy nên là mọi người chỉnh cho em cái chỗ này tí nha Tone màu này mọi người cho nó tối lại 1 tí nha Đấy như này nó sẽ rất là dễ nhìn hơn nha mọi người Đấy như vậy rất là ok hơn Bởi vì như kia thì nó sẽ khiến cho người xem khó nhìn hơn và sẽ ít click hơn nha mọi người Đấy vấn đề thumb là chỗ đó đấy mọi người Rồi Về chỗ này thì mọi người cứ chỉnh như thế này cho em nha. Rồi, ok nha mọi người. Về video này thì nó chỉ đến thế thôi anh em ơi. Cách làm và cách tư duy như vậy á, thì mọi người cứ làm theo em nha. Về mọi người lưu ý cho em á thì không phải em chia sẻ như thế này thì mọi người cứ lao vào làm hết những cái key này đâu. Mọi người cần phải làm những cái key khác. Những key em chia sẻ nhiều mà đúng không? Em cứ tự chọn hoặc là chọn cái ngách nhỏ nào đó nữa. Tư duy là như thế nha mọi người. Rồi, về ở cái video này thì cái giọng em đang bị ốm nên cái giọng hơi khàn tí nên mấy bác thông cảm cho em nha. Rồi, cảm ơn mấy bác đã xem video nha."
+}

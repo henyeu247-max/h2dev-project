@@ -1,0 +1,70 @@
+{
+  "key_takeaways": [
+    "Trong 5 đến 7 ngày ngâm kênh trước khi đăng video, tác giả hướng dẫn vào kênh đối thủ xem video vài phút rồi mới like, và khoảng 1 đến 2 phút sau mới bấm đăng ký, không spam liên tục.",
+    "Với phần bình luận, copy tiêu đề video đối thủ rồi nhờ chat viết 10 bình luận hay về chủ đề đó bằng tiếng Anh.",
+    "Mỗi ngày chỉ bình luận khoảng 4 đến 5 video, và video đã bình luận rồi thì không bình luận lại nữa.",
+    "Like và đăng ký thì làm bao nhiêu cũng được, còn nút share có thể bấm giả vờ share.",
+    "Cảnh báo của tác giả: bình luận quá nhiều lần sẽ bị dính spam."
+  ],
+  "edit_sop": {
+    "primary": "Tương tác ngâm kênh 5 đến 7 ngày trước khi đăng video: xem, like, đăng ký, bình luận trên video kênh đối thủ",
+    "additional": [
+      "Vào video của kênh đối thủ, xem vài phút rồi mới like",
+      "Cách 1-2 phút sau mới bấm đăng ký kênh, đừng spam liên tục",
+      "Copy tiêu đề video, nhờ chat viết 10 bình luận hay về chủ đề đó bằng tiếng Anh rồi dán vào phần bình luận",
+      "Mỗi ngày tương tác khoảng 4 đến 5 video, mỗi video chỉ comment một lần",
+      "Like và đăng ký làm bao nhiêu cũng được, phần share có thể bấm giả bộ"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng bấm like rồi đăng ký liên tục, phải xem vài phút và cách nhau 1-2 phút",
+    "Không comment quá nhiều lần, chỉ khoảng 4 đến 5 video mỗi ngày, nếu không sẽ dính spam",
+    "Video đã comment rồi thì không comment lại nữa"
+  ],
+  "verified_expert_summary": true,
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Cách tương tác trong thời gian ngâm kênh (5-7 ngày trước khi đăng video)"
+    },
+    {
+      "time": "00:11",
+      "seconds": 11,
+      "label": "Vào kênh đối thủ, xem vài phút rồi mới like"
+    },
+    {
+      "time": "00:30",
+      "seconds": 30,
+      "label": "Đăng ký kênh cách 1-2 phút, không spam liên tục; nhờ AI viết 10 bình luận tiếng Anh"
+    },
+    {
+      "time": "01:01",
+      "seconds": 61,
+      "label": "Mỗi ngày chỉ bình luận khoảng 4-5 video; like và đăng ký thì không giới hạn"
+    },
+    {
+      "time": "01:57",
+      "seconds": 117,
+      "label": "Không comment quá nhiều lần một ngày kẻo dính spam"
+    }
+  ],
+  "tools_mentioned": [],
+  "sop_steps": [
+    "Vào video của kênh đối thủ, xem vài phút rồi mới like",
+    "Cách 1-2 phút sau mới bấm đăng ký kênh, đừng spam liên tục",
+    "Copy tiêu đề video, nhờ chat viết 10 bình luận hay về chủ đề đó bằng tiếng Anh rồi dán vào phần bình luận",
+    "Mỗi ngày tương tác khoảng 4 đến 5 video, mỗi video chỉ comment một lần",
+    "Like và đăng ký làm bao nhiêu cũng được, phần share có thể bấm giả bộ"
+  ],
+  "sku": "VIDEO-199f44",
+  "title": "Hướng dẫn cách ngâm kênh và các thủ thuật mẹo tương tác kênh đối thủ trong quá trình ngâm kênh",
+  "actual_topic": "Hướng dẫn cách ngâm kênh và các thủ thuật mẹo tương tác kênh đối thủ trong quá trình ngâm kênh",
+  "channels_mentioned": [],
+  "visual_audio_checked": true,
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "source_transcript": "video/VIDEO-199f44/transcript.txt",
+  "market_code": "GLOBAL",
+  "target_market": "Quốc tế (Global)",
+  "niche_primary": "Kỹ Thuật Ngâm Kênh & Tương Tác Kênh Đối Thủ"
+}

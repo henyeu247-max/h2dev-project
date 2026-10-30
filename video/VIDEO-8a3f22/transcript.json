@@ -1,0 +1,890 @@
+{
+  "sku": "VIDEO-8a3f22",
+  "duration": 608.75,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 110,
+  "full_text": "Vừa rồi là ví dụ về cách thức làm mô hình hóa cho chủ đề phong thủy. Nhưng mà cái công thức mô hình hóa này thì nó không chỉ áp dụng ở phong thủy đâu nha, nó áp dụng ở tất cả các chủ đề luôn. Đây là một phần đặc biệt quan trọng ở trong khóa học, anh em nhớ kĩ nha, đặc biệt quan trọng đấy. Thì đây là cái phần mà chúng ta cần chuẩn bị. Thứ nhất là anh em tạo một cái profile người dùng Cốc Cốc hoặc là Chrome mới. Rồi tiếp theo thì anh em đăng nhập một email riêng với cái kênh khác với kênh chính nhé. Từ đấy thì anh em tạo ra một kênh YouTube mới cứng chỉ để nghiên cứu chủ đề thôi. Cái này thì nó sẽ không liên quan đến cái lịch sử cũ của anh em ở trong những kênh YouTube cũ thì chúng ta sẽ nghiên cứu nó sẽ chuẩn hơn. Rồi công thức chuẩn của nó về mô hình hóa. Thứ nhất là tìm các hệ thống kênh đã thành công trong chủ đề. Đề bài. Thứ nhất liệt kê 50 kênh YouTube cùng thị trường trọng điểm và đăng ký nó. Liệt kê tiếp theo là 50 trang báo cộng 50 trang website hay cùng với chủ đề. Cái này là để sau này chúng ta tìm và tham khảo nguồn content ấy. Chứ anh em không tự viết content được đâu. Content chúng ta sẽ dựa vào các trang báo, các website hay này để chúng ta có được cái gốc trước. Sau đó chúng ta trộn lại, tìm lại và sáng tạo lại rồi viết lại rồi dùng ChatGPT để sáng tạo thêm để tạo được ra những cái content hay. Chứ chúng ta không tự nghĩ được hết đâu. Tiếp theo là liệt kê 30 cộng đồng về fanpage, group Facebook cùng chủ đề. Cùng chủ đề liệt kê các chương trình TV, sưu tầm các video trên các nền tảng khác cùng chủ đề có nhiều lượt người theo dõi nhất. Các chương trình như là TV, Instagram, TikTok, Facebook, Twitter, Twitch.tv, rồi rất rất rất nhiều các chương trình khác nữa. Để làm gì? Để chúng ta tìm được ra các cái hệ thống kênh, các cái dạng video đã thành công ở trong chủ đề này trên tất cả mọi nơi trên toàn thế giới nhé. Chứ không chỉ là nguyên YouTube thôi. Và ở đây có một lưu ý là nếu mà các bạn chủ đề mới chưa có nhiều để follow thì hãy cố gắng follow càng nhiều càng tốt. Nếu không được 50 thì được 30, không được 30 thì được 20. Hoặc là tốt hơn chủ đề rộng, lớn, làm được 100 thì là tốt nhất thì đấy gọi là Dream 100. Là liệt kê chính xác là 100 đấy chứ không phải là 50 đâu. Bước thứ 2, tìm ra chủ đề hay nhất đã được xác nhận triệu view. Đề bài là anh em tìm ra kho nội dung, kho ngôn từ, các chủ đề đã được thị trường xác nhận là triệu view. Thứ nhất là anh em có đã được 50 đến 100 kênh YouTube cùng thị trường trọng điểm và đã đăng ký nó rồi. Anh em vào trong mục video tìm vào mục phổ biến nhất của kênh. Sau đó lấy 18 cái tiêu đề trở lên. Những cái tiêu đề này gọi là nhiều view nhất của tất cả các kênh đã đăng ký ở cái phần bước 1 đầu tiên á. Đấy. Thế thì ít nhất là anh em có khoảng độ 1.800 cái tiêu đề hay nhất rồi. Sau đó anh em chụp lại 3 dòng phổ biến nhất. Đấy. Chụp lại cái này và nốt lại hình ảnh thumbnail phổ biến nhất cho vào một folder riêng để sau này mình nghiên cứu lại. Đây là kho tài liệu về chủ đề cực kỳ quan trọng giúp cho anh em hiểu chủ đề rất là nhanh. Lưu ý là phải viết bằng bút ra giấy, ưu tiên là bút chì viết ra giấy hoặc là gõ bằng Word, không copy để làm sao để anh em có được cái insight ở trong cái tiêu đề của cái từ khóa đấy vào đầu anh em ạ. Ở đây có lý do luôn này. Quan trọng nhất là hiểu bộ ngôn từ triệu view và bộ hình ảnh thumbnail triệu view mà thị trường đã quen và chấp nhận và đã xác nhận rằng nó triệu view. Thứ 2 là anh em có các trang báo cộng website hay cùng chủ đề. Anh em chọn lọc ra 50 tiêu đề giật tít hấp dẫn, tìm ra những từ khóa lặp đi lặp lại cao của báo. Thì đấy chính là các từ khóa, gọi là từ khóa thôi miên. Chắc chắn sau này chúng ta sẽ dùng đến. Rồi chúng ta tương lai sẽ có một cái tư duy gọi là tư duy Jetlag. Tức là chúng ta đem thứ phổ biến từ nơi này sang nơi khác. Thứ đã phổ biến ở nền tảng này có khả năng phổ biến ở nền tảng khác. Thứ đã phổ biến từ website này có thể chuyển được sang website khác. Thứ đã phổ biến từ video này có thể chuyển thành video khác. Sau này sẽ có video về Jetlag, anh em sẽ hiểu rõ hơn. Tiếp theo là anh em tìm các chương trình khác. Đấy, chịu khó, nốt lại tất cả các tiêu đề và chủ đề thu hút. Đưa nó vào kho ngôn từ của chủ đề. Chủ đề bổ sung hàng ngày cập nhật ngôn từ khán giả quen thuộc và phổ biến. Sau đó thì làm gì? Chúng ta tiếp tục nhóm các chủ đề lại với nhau. Tìm ra các dạng chủ đề phổ biến nhất mà khán giả đang quan tâm. Kiểu gì khi mà tìm thì chúng ta sẽ thấy được cái điểm lặp đi lặp lại lặp đi lặp lại ở tất cả các kênh trong chủ đề cho mà xem. Bước thứ 3 là chọn ra thị trường ngách, chủ đề ngách. Chúng ta phân tích kênh cùng chủ đề, cùng thị trường, xác định được đối thủ của mình, họ làm gì, chia sẻ thế nào, từng bước ra sao. Biết có những nội dung nào là phổ biến. Dần dần bạn sẽ biết rằng bạn thích hợp với vị trí nào trong hệ sinh thái đấy. Bạn sẽ chọn lọc được thị trường ngách, đưa tới thông điệp mang tính bổ trợ, cải tiến so với những gì còn thiếu, chứ không phải là cạnh tranh trực tiếp với những người khác. Và khi làm tốt điều này thì tất cả các đối thủ lớn sẽ trở thành đối tác tốt nhất. Cái này đơn giản anh em hiểu rồi là khi mà anh em làm xong cái Dream 100 này á, thì anh em sẽ thấy rằng là à không phải là tất cả thị trường đang làm tốt đâu. Mà thậm chí là thị trường còn rất nhiều mảnh đất màu mỡ cho anh em mình. Ít người làm bài bản và ít người làm đẹp, ít người làm tốt lắm. Nên là dần dần chúng ta sẽ có được cái chỗ đứng của mình ở trong thị trường. Yên tâm anh em cứ làm theo từng bước là có kết quả. Rồi tiếp theo là chúng ta cần phải tìm ra 3 đến 5 ngách thị trường và chủ đề ngách cho nó phù hợp với lại cái năng lực của mình, với lại cái nguồn lực của mình. Ví dụ là bây giờ mình chỉ có một mình mình thôi thì mình sẽ chọn cái chủ đề nào như thế nào. Mình phân tích ra thì mình sẽ thấy là nó có hợp với mình không? Nó hợp với miếng bánh của mình không? Đề bài này. Vào một chủ đề nào đấy, anh em cần phải dành thời gian nghe, xem, tìm hiểu thị trường. Ít nhất là tìm hiểu khoảng 20-30 nội dung phổ biến nhất của các video trong thị trường. Anh em có thể ấn tua x2 cho nhanh và nốt lại các điểm mạnh, yếu, đặc sắc của các video đã phổ biến ngay hiện tại. Sau đấy thì chúng ta bắt đầu có một nhìn tổng quan về thị trường này rồi. Thì anh em sẽ có kết quả nó nhanh chóng hơn rất là nhiều. Rồi, lập thành file đầy đủ, chuẩn bị các bước tiếp theo của bài tập 2. Ở trong phần tài liệu của anh em đã có cái file mẫu của bài tập 2 rồi. Chuyển sang cái file mẫu của bài tập 2 nhé. Với công thức mô hình hóa thì các bạn có một cái mẫu để các bạn có thể làm được bài tập này. Bài tập này gọi là mô hình hóa hay là gọi là Dream 100. Thì đây chính là bài tập anh em phải làm và bắt buộc phải làm. Đấy, chuẩn bị thì giống như mô hình hóa rồi nhé. Tiếp theo này, tìm ra các hệ thống kênh đã thành công trong chủ đề. Đấy, 50 kênh YouTube cùng thị trường trọng điểm và đăng ký này. Đấy, các bạn sẽ điền vào đây nhé. Sau khi mà anh em làm á, thì anh em sẽ tạo ra một bản sao từ cái phần bản Word này. Sau đó thì anh em xóa những cái link này đi, anh em chọn vào cái thị trường của anh em và anh em đi tìm. Đây, chọn 50 kênh này. Sau đó chọn các trang báo, website hay cùng chủ đề này. Đó. Đây chính là nguồn content tương lai của anh em nhé. YouTube cũng chính là một nguồn để tham khảo content Website Báo Fanpage đều là cái để chúng ta tiếp tục tham khảo cái nguồn content của anh em mình Rồi các chương trình TV cũng như vậy thôi Rồi cái tiếp theo cái thứ 2 là Tìm ra các chủ đề hay nhất đã được xác nhận triệu view thì cũng có mẫu ở đây cho anh em xem rồi. Đấy. Cứ mỗi một kênh thì lại chọn ra các cái nội dung hay nhất của cái kênh đấy và tìm ra điểm lặp đi lặp lại. Anh em nhìn thấy này, tiêu đề phổ biến nhất này, lượt xem, từ khóa lặp lại, thumbnail, hình ảnh. Thì đấy là cái nốt lại những điểm chung của các kênh. Anh em xem nhìn ví dụ là anh em sẽ hiểu được cái cách thức làm. Rồi tiếp theo làm lặp đi lặp lại với tất cả các kênh lớn ở trong chủ đề đấy của mình. Thì chỉ cần làm như thế này thôi là anh em đã bắt đầu có cái đầu vào rồi. Và có cái phần hiểu thị trường rồi. Dần dần anh em sẽ thấy rằng là mình nắm cái thị trường ở trong tay rồi biết cái nào là cái mà thị trường đang lên, cái nào là cái thị trường đã xác nhận triệu view, cái nào là thị trường không lên. Thì phải làm những cái này thì mới biết được. Nếu anh em không làm cái này thì chắc chắn là không thể nắm được cái thị trường mới được. Mà làm được toàn cầu may thôi. Anh em nhìn 48 trang thôi mà. Tiếp theo nữa nhé, ở bên dưới, sau khi làm xong các kênh như này rồi, các điểm chung như này rồi, đến phần cuối cùng tổng kết là anh em phải tìm được ra các dạng tiêu đề thu hút, các từ khóa hàng đầu. Các thumbnail hàng đầu, các cái ngách mà anh em mong muốn triển khai và thấy rằng mình hoàn toàn có khả năng làm được. Rồi các từ khóa mà mình mong muốn chiếm lấy. Rồi sau những từ khóa lặp đi lặp lại lặp đi lặp lại thì gọi là từ khóa lý tưởng. Tất cả những thứ đấy dùng để sau này chúng ta làm kênh, chúng ta SEO kênh rồi chúng ta phát triển. Dream 100 là phần quan trọng nhất để anh em làm có kết quả hay là không có kết quả. Mặc dù là nó không ra tiền ngay, nhưng nó là một thứ mà chúng ta bắt buộc phải làm khi mà làm YouTube. Anh em cứ yên tâm học xong khóa học rồi bắt tay vào làm từng bước từng bước một. Anh em sẽ nhận ra rằng là những anh em khóa 1, 2, 3 hay là các hệ thống bên mình, tất cả những kết quả nó đến không hề ngẫu nhiên và không hề làm ăn may. Tất cả chúng ta làm đều có công thức hết. Rồi sau các bạn sẽ hiểu được DNA của một cái video mà nó phổ biến nó hàng triệu view. Thậm chí chúng ta chủ động cài cắm được cái ngòi nổ có sẵn để vào để chúng ta làm và chúng ta đợi cái kết quả nó triệu view. Chứ nó không phải là ăn may đâu. Tất cả nó được tính toán trước hết.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 12.0,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:12,000",
+      "text": "Vừa rồi là ví dụ về cách thức làm mô hình hóa cho chủ đề phong thủy. Nhưng mà cái công thức mô hình hóa này thì nó không chỉ áp dụng ở phong thủy đâu nha, nó áp dụng ở tất cả các chủ đề luôn."
+    },
+    {
+      "id": 2,
+      "start": 12.0,
+      "end": 20.0,
+      "start_time": "00:00:12,000",
+      "end_time": "00:00:20,000",
+      "text": "Đây là một phần đặc biệt quan trọng ở trong khóa học, anh em nhớ kĩ nha, đặc biệt quan trọng đấy. Thì đây là cái phần mà chúng ta cần chuẩn bị."
+    },
+    {
+      "id": 3,
+      "start": 20.0,
+      "end": 24.12,
+      "start_time": "00:00:20,000",
+      "end_time": "00:00:24,120",
+      "text": "Thứ nhất là anh em tạo một cái profile người dùng Cốc Cốc hoặc là Chrome mới."
+    },
+    {
+      "id": 4,
+      "start": 25.16,
+      "end": 29.6,
+      "start_time": "00:00:25,160",
+      "end_time": "00:00:29,600",
+      "text": "Rồi tiếp theo thì anh em đăng nhập một email riêng với cái kênh khác với kênh chính nhé."
+    },
+    {
+      "id": 5,
+      "start": 30.0,
+      "end": 33.5,
+      "start_time": "00:00:30,000",
+      "end_time": "00:00:33,500",
+      "text": "Từ đấy thì anh em tạo ra một kênh YouTube mới cứng chỉ để nghiên cứu chủ đề thôi."
+    },
+    {
+      "id": 6,
+      "start": 33.94,
+      "end": 39.84,
+      "start_time": "00:00:33,940",
+      "end_time": "00:00:39,840",
+      "text": "Cái này thì nó sẽ không liên quan đến cái lịch sử cũ của anh em ở trong những kênh YouTube cũ thì chúng ta sẽ nghiên cứu nó sẽ chuẩn hơn."
+    },
+    {
+      "id": 7,
+      "start": 41.0,
+      "end": 46.48,
+      "start_time": "00:00:41,000",
+      "end_time": "00:00:46,480",
+      "text": "Rồi công thức chuẩn của nó về mô hình hóa. Thứ nhất là tìm các hệ thống kênh đã thành công trong chủ đề."
+    },
+    {
+      "id": 8,
+      "start": 47.26,
+      "end": 52.0,
+      "start_time": "00:00:47,260",
+      "end_time": "00:00:52,000",
+      "text": "Đề bài. Thứ nhất liệt kê 50 kênh YouTube cùng thị trường trọng điểm và đăng ký nó."
+    },
+    {
+      "id": 9,
+      "start": 52.86,
+      "end": 57.82,
+      "start_time": "00:00:52,860",
+      "end_time": "00:00:57,820",
+      "text": "Liệt kê tiếp theo là 50 trang báo cộng 50 trang website hay cùng với chủ đề."
+    },
+    {
+      "id": 10,
+      "start": 57.82,
+      "end": 64.62,
+      "start_time": "00:00:57,820",
+      "end_time": "00:01:04,620",
+      "text": "Cái này là để sau này chúng ta tìm và tham khảo nguồn content ấy. Chứ anh em không tự viết content được đâu. Content chúng ta sẽ"
+    },
+    {
+      "id": 11,
+      "start": 64.62,
+      "end": 71.42,
+      "start_time": "00:01:04,620",
+      "end_time": "00:01:11,420",
+      "text": "dựa vào các trang báo, các website hay này để chúng ta có được cái gốc trước. Sau đó chúng ta trộn lại, tìm lại và sáng tạo"
+    },
+    {
+      "id": 12,
+      "start": 71.42,
+      "end": 78.22,
+      "start_time": "00:01:11,420",
+      "end_time": "00:01:18,220",
+      "text": "lại rồi viết lại rồi dùng ChatGPT để sáng tạo thêm để tạo được ra những cái content hay. Chứ chúng ta không tự nghĩ được hết đâu."
+    },
+    {
+      "id": 13,
+      "start": 78.22,
+      "end": 83.54,
+      "start_time": "00:01:18,220",
+      "end_time": "00:01:23,540",
+      "text": "Tiếp theo là liệt kê 30 cộng đồng về fanpage, group Facebook cùng chủ đề."
+    },
+    {
+      "id": 14,
+      "start": 83.54,
+      "end": 91.54,
+      "start_time": "00:01:23,540",
+      "end_time": "00:01:31,540",
+      "text": "Cùng chủ đề liệt kê các chương trình TV, sưu tầm các video trên các nền tảng khác cùng chủ đề có nhiều lượt người theo dõi nhất."
+    },
+    {
+      "id": 15,
+      "start": 91.54,
+      "end": 101.98,
+      "start_time": "00:01:31,540",
+      "end_time": "00:01:41,980",
+      "text": "Các chương trình như là TV, Instagram, TikTok, Facebook, Twitter, Twitch.tv, rồi rất rất rất nhiều các chương trình khác nữa."
+    },
+    {
+      "id": 16,
+      "start": 102.356,
+      "end": 111.996,
+      "start_time": "00:01:42,356",
+      "end_time": "00:01:51,996",
+      "text": "Để làm gì? Để chúng ta tìm được ra các cái hệ thống kênh, các cái dạng video đã thành công ở trong chủ đề này trên tất cả mọi nơi trên toàn thế giới nhé."
+    },
+    {
+      "id": 17,
+      "start": 112.516,
+      "end": 114.156,
+      "start_time": "00:01:52,516",
+      "end_time": "00:01:54,156",
+      "text": "Chứ không chỉ là nguyên YouTube thôi."
+    },
+    {
+      "id": 18,
+      "start": 115.016,
+      "end": 122.669,
+      "start_time": "00:01:55,016",
+      "end_time": "00:02:02,669",
+      "text": "Và ở đây có một lưu ý là nếu mà các bạn chủ đề mới chưa có nhiều để follow thì hãy cố gắng follow càng"
+    },
+    {
+      "id": 19,
+      "start": 122.669,
+      "end": 130.323,
+      "start_time": "00:02:02,669",
+      "end_time": "00:02:10,323",
+      "text": "nhiều càng tốt. Nếu không được 50 thì được 30, không được 30 thì được 20. Hoặc là tốt hơn chủ đề rộng, lớn, làm"
+    },
+    {
+      "id": 20,
+      "start": 130.323,
+      "end": 137.976,
+      "start_time": "00:02:10,323",
+      "end_time": "00:02:17,976",
+      "text": "được 100 thì là tốt nhất thì đấy gọi là Dream 100. Là liệt kê chính xác là 100 đấy chứ không phải là 50 đâu."
+    },
+    {
+      "id": 21,
+      "start": 138.0,
+      "end": 149.476,
+      "start_time": "00:02:18,000",
+      "end_time": "00:02:29,476",
+      "text": "Bước thứ 2, tìm ra chủ đề hay nhất đã được xác nhận triệu view. Đề bài là anh em tìm ra kho nội dung, kho ngôn từ, các chủ đề đã được thị trường xác nhận là triệu view."
+    },
+    {
+      "id": 22,
+      "start": 150.336,
+      "end": 159.996,
+      "start_time": "00:02:30,336",
+      "end_time": "00:02:39,996",
+      "text": "Thứ nhất là anh em có đã được 50 đến 100 kênh YouTube cùng thị trường trọng điểm và đã đăng ký nó rồi. Anh em vào trong mục video tìm vào mục phổ biến nhất của kênh."
+    },
+    {
+      "id": 23,
+      "start": 159.996,
+      "end": 170.656,
+      "start_time": "00:02:39,996",
+      "end_time": "00:02:50,656",
+      "text": "Sau đó lấy 18 cái tiêu đề trở lên. Những cái tiêu đề này gọi là nhiều view nhất của tất cả các kênh đã đăng ký ở cái phần bước 1 đầu tiên á. Đấy."
+    },
+    {
+      "id": 24,
+      "start": 171.316,
+      "end": 180.0,
+      "start_time": "00:02:51,316",
+      "end_time": "00:03:00,000",
+      "text": "Thế thì ít nhất là anh em có khoảng độ 1.800 cái tiêu đề hay nhất rồi. Sau đó anh em chụp lại 3 dòng phổ biến nhất. Đấy."
+    },
+    {
+      "id": 25,
+      "start": 180.0,
+      "end": 187.12,
+      "start_time": "00:03:00,000",
+      "end_time": "00:03:07,120",
+      "text": "Chụp lại cái này và nốt lại hình ảnh thumbnail phổ biến nhất cho vào một folder riêng để sau này mình nghiên cứu"
+    },
+    {
+      "id": 26,
+      "start": 187.12,
+      "end": 194.24,
+      "start_time": "00:03:07,120",
+      "end_time": "00:03:14,240",
+      "text": "lại. Đây là kho tài liệu về chủ đề cực kỳ quan trọng giúp cho anh em hiểu chủ đề rất là nhanh."
+    },
+    {
+      "id": 27,
+      "start": 194.94,
+      "end": 207.52,
+      "start_time": "00:03:14,940",
+      "end_time": "00:03:27,520",
+      "text": "Lưu ý là phải viết bằng bút ra giấy, ưu tiên là bút chì viết ra giấy hoặc là gõ bằng Word, không copy để làm sao để anh em có được cái insight ở trong cái tiêu đề của cái từ khóa đấy vào đầu anh em ạ."
+    },
+    {
+      "id": 28,
+      "start": 207.52,
+      "end": 217.32,
+      "start_time": "00:03:27,520",
+      "end_time": "00:03:37,320",
+      "text": "Ở đây có lý do luôn này. Quan trọng nhất là hiểu bộ ngôn từ triệu view và bộ hình ảnh thumbnail triệu view mà thị trường đã quen và chấp nhận và đã xác nhận rằng nó triệu view."
+    },
+    {
+      "id": 29,
+      "start": 218.0,
+      "end": 227.78,
+      "start_time": "00:03:38,000",
+      "end_time": "00:03:47,780",
+      "text": "Thứ 2 là anh em có các trang báo cộng website hay cùng chủ đề. Anh em chọn lọc ra 50 tiêu đề giật tít hấp dẫn, tìm ra những từ khóa lặp đi lặp lại cao của báo."
+    },
+    {
+      "id": 30,
+      "start": 227.84,
+      "end": 232.96,
+      "start_time": "00:03:47,840",
+      "end_time": "00:03:52,960",
+      "text": "Thì đấy chính là các từ khóa, gọi là từ khóa thôi miên. Chắc chắn sau này chúng ta sẽ dùng đến."
+    },
+    {
+      "id": 31,
+      "start": 232.96,
+      "end": 236.86,
+      "start_time": "00:03:52,960",
+      "end_time": "00:03:56,860",
+      "text": "Rồi chúng ta tương lai sẽ có một cái tư duy gọi là tư duy Jetlag."
+    },
+    {
+      "id": 32,
+      "start": 237.58,
+      "end": 240.06,
+      "start_time": "00:03:57,580",
+      "end_time": "00:04:00,060",
+      "text": "Tức là chúng ta đem thứ phổ biến từ nơi này sang nơi khác."
+    },
+    {
+      "id": 33,
+      "start": 240.72,
+      "end": 243.38,
+      "start_time": "00:04:00,720",
+      "end_time": "00:04:03,380",
+      "text": "Thứ đã phổ biến ở nền tảng này có khả năng phổ biến ở nền tảng khác."
+    },
+    {
+      "id": 34,
+      "start": 243.8,
+      "end": 247.4,
+      "start_time": "00:04:03,800",
+      "end_time": "00:04:07,400",
+      "text": "Thứ đã phổ biến từ website này có thể chuyển được sang website khác."
+    },
+    {
+      "id": 35,
+      "start": 247.78,
+      "end": 250.98,
+      "start_time": "00:04:07,780",
+      "end_time": "00:04:10,980",
+      "text": "Thứ đã phổ biến từ video này có thể chuyển thành video khác."
+    },
+    {
+      "id": 36,
+      "start": 251.22,
+      "end": 254.1,
+      "start_time": "00:04:11,220",
+      "end_time": "00:04:14,100",
+      "text": "Sau này sẽ có video về Jetlag, anh em sẽ hiểu rõ hơn."
+    },
+    {
+      "id": 37,
+      "start": 254.96,
+      "end": 256.96,
+      "start_time": "00:04:14,960",
+      "end_time": "00:04:16,960",
+      "text": "Tiếp theo là anh em tìm các chương trình khác."
+    },
+    {
+      "id": 38,
+      "start": 257.32,
+      "end": 260.04,
+      "start_time": "00:04:17,320",
+      "end_time": "00:04:20,040",
+      "text": "Đấy, chịu khó, nốt lại tất cả các tiêu đề và chủ đề thu hút."
+    },
+    {
+      "id": 39,
+      "start": 260.64,
+      "end": 262.46,
+      "start_time": "00:04:20,640",
+      "end_time": "00:04:22,460",
+      "text": "Đưa nó vào kho ngôn từ của chủ đề."
+    },
+    {
+      "id": 40,
+      "start": 262.46,
+      "end": 266.16,
+      "start_time": "00:04:22,460",
+      "end_time": "00:04:26,160",
+      "text": "Chủ đề bổ sung hàng ngày cập nhật ngôn từ khán giả quen thuộc và phổ biến."
+    },
+    {
+      "id": 41,
+      "start": 267.32,
+      "end": 268.38,
+      "start_time": "00:04:27,320",
+      "end_time": "00:04:28,380",
+      "text": "Sau đó thì làm gì?"
+    },
+    {
+      "id": 42,
+      "start": 268.82,
+      "end": 271.16,
+      "start_time": "00:04:28,820",
+      "end_time": "00:04:31,160",
+      "text": "Chúng ta tiếp tục nhóm các chủ đề lại với nhau."
+    },
+    {
+      "id": 43,
+      "start": 271.66,
+      "end": 274.6,
+      "start_time": "00:04:31,660",
+      "end_time": "00:04:34,600",
+      "text": "Tìm ra các dạng chủ đề phổ biến nhất mà khán giả đang quan tâm."
+    },
+    {
+      "id": 44,
+      "start": 275.66,
+      "end": 279.34,
+      "start_time": "00:04:35,660",
+      "end_time": "00:04:39,340",
+      "text": "Kiểu gì khi mà tìm thì chúng ta sẽ thấy được cái điểm lặp đi lặp lại lặp đi lặp lại"
+    },
+    {
+      "id": 45,
+      "start": 279.34,
+      "end": 281.16,
+      "start_time": "00:04:39,340",
+      "end_time": "00:04:41,160",
+      "text": "ở tất cả các kênh trong chủ đề cho mà xem."
+    },
+    {
+      "id": 46,
+      "start": 282.0,
+      "end": 295.016,
+      "start_time": "00:04:42,000",
+      "end_time": "00:04:55,016",
+      "text": "Bước thứ 3 là chọn ra thị trường ngách, chủ đề ngách. Chúng ta phân tích kênh cùng chủ đề, cùng thị trường, xác định được đối thủ của mình, họ làm gì, chia sẻ thế nào, từng bước ra sao."
+    },
+    {
+      "id": 47,
+      "start": 295.016,
+      "end": 296.316,
+      "start_time": "00:04:55,016",
+      "end_time": "00:04:56,316",
+      "text": "Biết có những nội dung nào là phổ biến."
+    },
+    {
+      "id": 48,
+      "start": 297.216,
+      "end": 300.616,
+      "start_time": "00:04:57,216",
+      "end_time": "00:05:00,616",
+      "text": "Dần dần bạn sẽ biết rằng bạn thích hợp với vị trí nào trong hệ sinh thái đấy."
+    },
+    {
+      "id": 49,
+      "start": 301.136,
+      "end": 308.336,
+      "start_time": "00:05:01,136",
+      "end_time": "00:05:08,336",
+      "text": "Bạn sẽ chọn lọc được thị trường ngách, đưa tới thông điệp mang tính bổ trợ, cải tiến so với những gì còn thiếu, chứ không phải là cạnh tranh trực tiếp với những người khác."
+    },
+    {
+      "id": 50,
+      "start": 309.556,
+      "end": 313.836,
+      "start_time": "00:05:09,556",
+      "end_time": "00:05:13,836",
+      "text": "Và khi làm tốt điều này thì tất cả các đối thủ lớn sẽ trở thành đối tác tốt nhất."
+    },
+    {
+      "id": 51,
+      "start": 315.576,
+      "end": 323.656,
+      "start_time": "00:05:15,576",
+      "end_time": "00:05:23,656",
+      "text": "Cái này đơn giản anh em hiểu rồi là khi mà anh em làm xong cái Dream 100 này á, thì anh em sẽ thấy rằng là à không phải là tất cả thị trường đang làm tốt đâu."
+    },
+    {
+      "id": 52,
+      "start": 323.656,
+      "end": 328.216,
+      "start_time": "00:05:23,656",
+      "end_time": "00:05:28,216",
+      "text": "Mà thậm chí là thị trường còn rất nhiều mảnh đất màu mỡ cho anh em mình."
+    },
+    {
+      "id": 53,
+      "start": 329.236,
+      "end": 332.756,
+      "start_time": "00:05:29,236",
+      "end_time": "00:05:32,756",
+      "text": "Ít người làm bài bản và ít người làm đẹp, ít người làm tốt lắm."
+    },
+    {
+      "id": 54,
+      "start": 332.956,
+      "end": 336.796,
+      "start_time": "00:05:32,956",
+      "end_time": "00:05:36,796",
+      "text": "Nên là dần dần chúng ta sẽ có được cái chỗ đứng của mình ở trong thị trường."
+    },
+    {
+      "id": 55,
+      "start": 337.156,
+      "end": 339.196,
+      "start_time": "00:05:37,156",
+      "end_time": "00:05:39,196",
+      "text": "Yên tâm anh em cứ làm theo từng bước là có kết quả."
+    },
+    {
+      "id": 56,
+      "start": 340.076,
+      "end": 347.816,
+      "start_time": "00:05:40,076",
+      "end_time": "00:05:47,816",
+      "text": "Rồi tiếp theo là chúng ta cần phải tìm ra 3 đến 5 ngách thị trường và chủ đề ngách cho nó phù hợp với lại cái năng lực của mình, với lại cái nguồn lực của mình."
+    },
+    {
+      "id": 57,
+      "start": 348.416,
+      "end": 352.936,
+      "start_time": "00:05:48,416",
+      "end_time": "00:05:52,936",
+      "text": "Ví dụ là bây giờ mình chỉ có một mình mình thôi thì mình sẽ chọn cái chủ đề nào như thế nào."
+    },
+    {
+      "id": 58,
+      "start": 352.936,
+      "end": 356.756,
+      "start_time": "00:05:52,936",
+      "end_time": "00:05:56,756",
+      "text": "Mình phân tích ra thì mình sẽ thấy là nó có hợp với mình không? Nó hợp với miếng bánh của mình không?"
+    },
+    {
+      "id": 59,
+      "start": 357.496,
+      "end": 358.156,
+      "start_time": "00:05:57,496",
+      "end_time": "00:05:58,156",
+      "text": "Đề bài này."
+    },
+    {
+      "id": 60,
+      "start": 360.0,
+      "end": 364.42,
+      "start_time": "00:06:00,000",
+      "end_time": "00:06:04,420",
+      "text": "Vào một chủ đề nào đấy, anh em cần phải dành thời gian nghe, xem, tìm hiểu thị trường."
+    },
+    {
+      "id": 61,
+      "start": 364.98,
+      "end": 368.72,
+      "start_time": "00:06:04,980",
+      "end_time": "00:06:08,720",
+      "text": "Ít nhất là tìm hiểu khoảng 20-30 nội dung phổ biến nhất của các video trong thị trường."
+    },
+    {
+      "id": 62,
+      "start": 369.04,
+      "end": 376.14,
+      "start_time": "00:06:09,040",
+      "end_time": "00:06:16,140",
+      "text": "Anh em có thể ấn tua x2 cho nhanh và nốt lại các điểm mạnh, yếu, đặc sắc của các video đã phổ biến ngay hiện tại."
+    },
+    {
+      "id": 63,
+      "start": 377.28,
+      "end": 381.92,
+      "start_time": "00:06:17,280",
+      "end_time": "00:06:21,920",
+      "text": "Sau đấy thì chúng ta bắt đầu có một nhìn tổng quan về thị trường này rồi."
+    },
+    {
+      "id": 64,
+      "start": 382.96,
+      "end": 385.48,
+      "start_time": "00:06:22,960",
+      "end_time": "00:06:25,480",
+      "text": "Thì anh em sẽ có kết quả nó nhanh chóng hơn rất là nhiều."
+    },
+    {
+      "id": 65,
+      "start": 386.24,
+      "end": 389.9,
+      "start_time": "00:06:26,240",
+      "end_time": "00:06:29,900",
+      "text": "Rồi, lập thành file đầy đủ, chuẩn bị các bước tiếp theo của bài tập 2."
+    },
+    {
+      "id": 66,
+      "start": 390.0,
+      "end": 396.887,
+      "start_time": "00:06:30,000",
+      "end_time": "00:06:36,887",
+      "text": "Ở trong phần tài liệu của anh em đã có cái file mẫu của bài tập 2 rồi. Chuyển sang cái file mẫu của bài tập 2"
+    },
+    {
+      "id": 67,
+      "start": 396.887,
+      "end": 403.773,
+      "start_time": "00:06:36,887",
+      "end_time": "00:06:43,773",
+      "text": "nhé. Với công thức mô hình hóa thì các bạn có một cái mẫu để các bạn có thể làm được bài tập này. Bài tập"
+    },
+    {
+      "id": 68,
+      "start": 403.773,
+      "end": 410.66,
+      "start_time": "00:06:43,773",
+      "end_time": "00:06:50,660",
+      "text": "này gọi là mô hình hóa hay là gọi là Dream 100. Thì đây chính là bài tập anh em phải làm và bắt buộc phải làm."
+    },
+    {
+      "id": 69,
+      "start": 410.66,
+      "end": 417.28,
+      "start_time": "00:06:50,660",
+      "end_time": "00:06:57,280",
+      "text": "Đấy, chuẩn bị thì giống như mô hình hóa rồi nhé. Tiếp theo này, tìm ra các hệ thống kênh đã thành công trong chủ đề."
+    },
+    {
+      "id": 70,
+      "start": 417.62,
+      "end": 427.26,
+      "start_time": "00:06:57,620",
+      "end_time": "00:07:07,260",
+      "text": "Đấy, 50 kênh YouTube cùng thị trường trọng điểm và đăng ký này. Đấy, các bạn sẽ điền vào đây nhé. Sau khi mà anh em làm á, thì anh em sẽ tạo ra một bản sao từ cái phần bản Word này."
+    },
+    {
+      "id": 71,
+      "start": 427.68,
+      "end": 432.04,
+      "start_time": "00:07:07,680",
+      "end_time": "00:07:12,040",
+      "text": "Sau đó thì anh em xóa những cái link này đi, anh em chọn vào cái thị trường của anh em và anh em đi tìm."
+    },
+    {
+      "id": 72,
+      "start": 433.44,
+      "end": 438.96,
+      "start_time": "00:07:13,440",
+      "end_time": "00:07:18,960",
+      "text": "Đây, chọn 50 kênh này. Sau đó chọn các trang báo, website hay cùng chủ đề này. Đó."
+    },
+    {
+      "id": 73,
+      "start": 438.96,
+      "end": 442.18,
+      "start_time": "00:07:18,960",
+      "end_time": "00:07:22,180",
+      "text": "Đây chính là nguồn content tương lai của anh em nhé."
+    },
+    {
+      "id": 74,
+      "start": 442.18,
+      "end": 443.74,
+      "start_time": "00:07:22,180",
+      "end_time": "00:07:23,740",
+      "text": "YouTube"
+    },
+    {
+      "id": 75,
+      "start": 443.74,
+      "end": 445.06,
+      "start_time": "00:07:23,740",
+      "end_time": "00:07:25,060",
+      "text": "cũng chính là một nguồn"
+    },
+    {
+      "id": 76,
+      "start": 445.06,
+      "end": 445.88,
+      "start_time": "00:07:25,060",
+      "end_time": "00:07:25,880",
+      "text": "để tham khảo content"
+    },
+    {
+      "id": 77,
+      "start": 445.88,
+      "end": 447.04,
+      "start_time": "00:07:25,880",
+      "end_time": "00:07:27,040",
+      "text": "Website"
+    },
+    {
+      "id": 78,
+      "start": 447.04,
+      "end": 447.54,
+      "start_time": "00:07:27,040",
+      "end_time": "00:07:27,540",
+      "text": "Báo"
+    },
+    {
+      "id": 79,
+      "start": 447.54,
+      "end": 448.28,
+      "start_time": "00:07:27,540",
+      "end_time": "00:07:28,280",
+      "text": "Fanpage"
+    },
+    {
+      "id": 80,
+      "start": 448.28,
+      "end": 449.52,
+      "start_time": "00:07:28,280",
+      "end_time": "00:07:29,520",
+      "text": "đều là cái"
+    },
+    {
+      "id": 81,
+      "start": 449.52,
+      "end": 450.44,
+      "start_time": "00:07:29,520",
+      "end_time": "00:07:30,440",
+      "text": "để chúng ta tiếp tục"
+    },
+    {
+      "id": 82,
+      "start": 450.44,
+      "end": 450.96,
+      "start_time": "00:07:30,440",
+      "end_time": "00:07:30,960",
+      "text": "tham khảo"
+    },
+    {
+      "id": 83,
+      "start": 450.96,
+      "end": 451.68,
+      "start_time": "00:07:30,960",
+      "end_time": "00:07:31,680",
+      "text": "cái nguồn content"
+    },
+    {
+      "id": 84,
+      "start": 451.68,
+      "end": 452.2,
+      "start_time": "00:07:31,680",
+      "end_time": "00:07:32,200",
+      "text": "của anh em mình"
+    },
+    {
+      "id": 85,
+      "start": 452.2,
+      "end": 454.08,
+      "start_time": "00:07:32,200",
+      "end_time": "00:07:34,080",
+      "text": "Rồi"
+    },
+    {
+      "id": 86,
+      "start": 454.08,
+      "end": 455.0,
+      "start_time": "00:07:34,080",
+      "end_time": "00:07:35,000",
+      "text": "các chương trình TV"
+    },
+    {
+      "id": 87,
+      "start": 455.0,
+      "end": 455.96,
+      "start_time": "00:07:35,000",
+      "end_time": "00:07:35,960",
+      "text": "cũng như vậy thôi"
+    },
+    {
+      "id": 88,
+      "start": 455.96,
+      "end": 461.36,
+      "start_time": "00:07:35,960",
+      "end_time": "00:07:41,360",
+      "text": "Rồi cái tiếp theo"
+    },
+    {
+      "id": 89,
+      "start": 461.36,
+      "end": 461.88,
+      "start_time": "00:07:41,360",
+      "end_time": "00:07:41,880",
+      "text": "cái thứ 2 là"
+    },
+    {
+      "id": 90,
+      "start": 461.88,
+      "end": 466.7,
+      "start_time": "00:07:41,880",
+      "end_time": "00:07:46,700",
+      "text": "Tìm ra các chủ đề hay nhất đã được xác nhận triệu view thì cũng có mẫu ở đây cho anh em xem rồi."
+    },
+    {
+      "id": 91,
+      "start": 467.4,
+      "end": 467.6,
+      "start_time": "00:07:47,400",
+      "end_time": "00:07:47,600",
+      "text": "Đấy."
+    },
+    {
+      "id": 92,
+      "start": 468.7,
+      "end": 474.74,
+      "start_time": "00:07:48,700",
+      "end_time": "00:07:54,740",
+      "text": "Cứ mỗi một kênh thì lại chọn ra các cái nội dung hay nhất của cái kênh đấy và tìm ra điểm lặp đi lặp lại."
+    },
+    {
+      "id": 93,
+      "start": 475.016,
+      "end": 480.096,
+      "start_time": "00:07:55,016",
+      "end_time": "00:08:00,096",
+      "text": "Anh em nhìn thấy này, tiêu đề phổ biến nhất này, lượt xem, từ khóa lặp lại, thumbnail, hình ảnh."
+    },
+    {
+      "id": 94,
+      "start": 480.916,
+      "end": 485.096,
+      "start_time": "00:08:00,916",
+      "end_time": "00:08:05,096",
+      "text": "Thì đấy là cái nốt lại những điểm chung của các kênh."
+    },
+    {
+      "id": 95,
+      "start": 487.676,
+      "end": 490.676,
+      "start_time": "00:08:07,676",
+      "end_time": "00:08:10,676",
+      "text": "Anh em xem nhìn ví dụ là anh em sẽ hiểu được cái cách thức làm."
+    },
+    {
+      "id": 96,
+      "start": 491.616,
+      "end": 495.956,
+      "start_time": "00:08:11,616",
+      "end_time": "00:08:15,956",
+      "text": "Rồi tiếp theo làm lặp đi lặp lại với tất cả các kênh lớn ở trong chủ đề đấy của mình."
+    },
+    {
+      "id": 97,
+      "start": 496.696,
+      "end": 500.056,
+      "start_time": "00:08:16,696",
+      "end_time": "00:08:20,056",
+      "text": "Thì chỉ cần làm như thế này thôi là anh em đã bắt đầu có cái đầu vào rồi."
+    },
+    {
+      "id": 98,
+      "start": 500.676,
+      "end": 502.316,
+      "start_time": "00:08:20,676",
+      "end_time": "00:08:22,316",
+      "text": "Và có cái phần hiểu thị trường rồi."
+    },
+    {
+      "id": 99,
+      "start": 502.316,
+      "end": 512.036,
+      "start_time": "00:08:22,316",
+      "end_time": "00:08:32,036",
+      "text": "Dần dần anh em sẽ thấy rằng là mình nắm cái thị trường ở trong tay rồi biết cái nào là cái mà thị trường đang lên, cái nào là cái thị trường đã xác nhận triệu view, cái nào là thị trường không lên."
+    },
+    {
+      "id": 100,
+      "start": 512.576,
+      "end": 520.396,
+      "start_time": "00:08:32,576",
+      "end_time": "00:08:40,396",
+      "text": "Thì phải làm những cái này thì mới biết được. Nếu anh em không làm cái này thì chắc chắn là không thể nắm được cái thị trường mới được. Mà làm được toàn cầu may thôi."
+    },
+    {
+      "id": 101,
+      "start": 521.836,
+      "end": 523.896,
+      "start_time": "00:08:41,836",
+      "end_time": "00:08:43,896",
+      "text": "Anh em nhìn 48 trang thôi mà."
+    },
+    {
+      "id": 102,
+      "start": 524.0,
+      "end": 531.948,
+      "start_time": "00:08:44,000",
+      "end_time": "00:08:51,948",
+      "text": "Tiếp theo nữa nhé, ở bên dưới, sau khi làm xong các kênh như này rồi, các điểm chung như này rồi, đến"
+    },
+    {
+      "id": 103,
+      "start": 531.948,
+      "end": 540.0,
+      "start_time": "00:08:51,948",
+      "end_time": "00:09:00,000",
+      "text": "phần cuối cùng tổng kết là anh em phải tìm được ra các dạng tiêu đề thu hút, các từ khóa hàng đầu."
+    },
+    {
+      "id": 104,
+      "start": 540.0,
+      "end": 549.36,
+      "start_time": "00:09:00,000",
+      "end_time": "00:09:09,360",
+      "text": "Các thumbnail hàng đầu, các cái ngách mà anh em mong muốn triển khai và thấy rằng mình hoàn toàn có khả năng làm được. Rồi các từ khóa mà mình mong muốn chiếm lấy. Rồi sau những"
+    },
+    {
+      "id": 105,
+      "start": 549.36,
+      "end": 558.72,
+      "start_time": "00:09:09,360",
+      "end_time": "00:09:18,720",
+      "text": "từ khóa lặp đi lặp lại lặp đi lặp lại thì gọi là từ khóa lý tưởng. Tất cả những thứ đấy dùng để sau này chúng ta làm kênh, chúng ta SEO kênh rồi chúng ta phát triển."
+    },
+    {
+      "id": 106,
+      "start": 558.72,
+      "end": 571.24,
+      "start_time": "00:09:18,720",
+      "end_time": "00:09:31,240",
+      "text": "Dream 100 là phần quan trọng nhất để anh em làm có kết quả hay là không có kết quả. Mặc dù là nó không ra tiền ngay, nhưng nó là một thứ mà chúng ta bắt buộc phải làm khi mà làm YouTube."
+    },
+    {
+      "id": 107,
+      "start": 571.24,
+      "end": 580.11,
+      "start_time": "00:09:31,240",
+      "end_time": "00:09:40,110",
+      "text": "Anh em cứ yên tâm học xong khóa học rồi bắt tay vào làm từng bước từng bước một. Anh em sẽ nhận ra rằng là những anh em khóa 1, 2, 3 hay"
+    },
+    {
+      "id": 108,
+      "start": 580.11,
+      "end": 588.98,
+      "start_time": "00:09:40,110",
+      "end_time": "00:09:48,980",
+      "text": "là các hệ thống bên mình, tất cả những kết quả nó đến không hề ngẫu nhiên và không hề làm ăn may. Tất cả chúng ta làm đều có công thức hết."
+    },
+    {
+      "id": 109,
+      "start": 588.98,
+      "end": 597.82,
+      "start_time": "00:09:48,980",
+      "end_time": "00:09:57,820",
+      "text": "Rồi sau các bạn sẽ hiểu được DNA của một cái video mà nó phổ biến nó hàng triệu view. Thậm chí chúng ta chủ động cài cắm được cái ngòi nổ có"
+    },
+    {
+      "id": 110,
+      "start": 597.82,
+      "end": 606.66,
+      "start_time": "00:09:57,820",
+      "end_time": "00:10:06,660",
+      "text": "sẵn để vào để chúng ta làm và chúng ta đợi cái kết quả nó triệu view. Chứ nó không phải là ăn may đâu. Tất cả nó được tính toán trước hết."
+    }
+  ]
+}

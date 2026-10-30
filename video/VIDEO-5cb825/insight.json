@@ -1,0 +1,84 @@
+{
+  "sku": "VIDEO-5cb825",
+  "title": "Share Key Và Hướng Dẫn Làm Youtube View Ngoại Và Prompt Lấy + Tạo Kịch Bản Từ Kênh Đối Thủ",
+  "actual_topic": "Phương Pháp Đảo Ngược Kịch Bản Đối Thủ Triệu View (Reverse Engineering): Dùng Tool Bóc Tách Phụ Đề & Prompt ChatGPT Tái Tạo Kịch Bản Khắc Kỷ Độc Bản",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Prompt AI & Nhân Bản Kịch Bản",
+  "niche_id": "faceless-general",
+  "target_market": "Hoa Kỳ (US) / Quốc tế (Global)",
+  "market_code": "US,GLOBAL",
+  "key_takeaways": [
+    "Tác giả show doanh thu 7 ngày trên app điện thoại theo yêu cầu bình luận của người xem, rồi hướng dẫn làm ngách triết lý khách kỷ và show khoảng sáu bảy kênh đối thủ, video dài khoảng hai mươi mấy đến 30 phút.",
+    "Tác giả đo thử các kênh đối thủ: một kênh có video 1 triệu view cách đây 3 tuần, một kênh khác 42 video đạt hơn 13.000 đô, lập từ tháng 3, RPM gần 6 và chủ yếu là view Mỹ.",
+    "Cách lấy kịch bản đối thủ là sao chép link video, dùng một công cụ miễn phí để lấy toàn bộ lời đọc, rồi dán vào ChatGPT cùng prompt của tác giả, nên dùng bản tiếng Anh.",
+    "Vì AI không viết dài được, tác giả yêu cầu ChatGPT chia kịch bản thành 3 phần và bấm Continue cho tới khi đủ, sau đó gom vào Notepad, tạo giọng đọc bằng ElevenLabs và nhờ ChatGPT tạo 30 prompt hình ảnh để đưa sang Leonardo.",
+    "Phần dựng đưa ảnh và âm thanh vào phần mềm edit, thêm hiệu ứng phim, xuất phụ đề, lấy âm thanh nền miễn phí không bản quyền trong thư viện studio rồi chỉnh nhỏ âm lượng."
+  ],
+  "edit_sop": {
+    "primary": "Lấy kịch bản kênh đối thủ bằng công cụ free + ChatGPT viết lại, làm voice ElevenLabs, ảnh AI, dựng video khắc kỷ",
+    "additional": [
+      "Chọn video nhiều view nhất của kênh đối thủ, sao chép link vào công cụ free lấy kịch bản, rồi dán vào ChatGPT cùng prompt (nên dùng prompt tiếng Anh)",
+      "Yêu cầu ChatGPT viết kịch bản chia 3 phần vì AI không viết dài được, bấm Continue cho tới khi đủ",
+      "Copy từng phần kịch bản vào Notepad++ hoặc Word, rồi đưa vào ElevenLabs để tạo giọng đọc",
+      "Nhờ ChatGPT tạo 30 prompt hình ảnh phù hợp kịch bản, copy từng cái sang Leonardo hoặc Midjourney để tạo ảnh",
+      "Import ảnh và âm thanh vào phần mềm edit, thêm hiệu ứng, phụ đề, rồi thêm âm thanh nền free không bản quyền và giảm âm lượng"
+    ]
+  },
+  "avoid_flags": [
+    "Không yêu cầu công cụ viết toàn bộ kịch bản dài trong một lần duy nhất mà phải chia nhỏ thành từng phần và bấm tiếp tục để đảm bảo độ dài",
+    "Khi chèn nhạc nền miễn phí không bản quyền vào video cần nhớ giảm nhỏ âm lượng nhạc nền xuống để không lấn át giọng đọc chính"
+  ],
+  "tools_mentioned": [
+    "ElevenLabs",
+    "Leonardo",
+    "Notepad++",
+    "Word",
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@Psyphos_official",
+    "@MachiavellianMindset7",
+    "@Philosos",
+    "@DarkPsychologyCoded",
+    "@thetruearcanevault"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Show doanh thu 7 ngày thực tế trên ứng dụng điện thoại"
+    },
+    {
+      "time": "01:50",
+      "seconds": 110,
+      "label": "Phân tích 6-7 kênh đối thủ ngách triết lý khắc kỷ mới lập đạt triệu view"
+    },
+    {
+      "time": "04:11",
+      "seconds": 251,
+      "label": "Hướng dẫn sử dụng công cụ bóc tách phụ đề video YouTube đối thủ miễn phí"
+    },
+    {
+      "time": "06:30",
+      "seconds": 390,
+      "label": "Nhập prompt ChatGPT đảo ngược kịch bản và chia nhỏ phần viết sâu sắc"
+    },
+    {
+      "time": "09:08",
+      "seconds": 548,
+      "label": "Tạo giọng đọc ElevenLabs và ghép nối timeline video hoàn chỉnh trên CapCut"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-5cb825/transcript.txt",
+  "sop_steps": [
+    "Chọn video nhiều view nhất của kênh đối thủ, sao chép link vào công cụ free lấy kịch bản, rồi dán vào ChatGPT cùng prompt (nên dùng prompt tiếng Anh)",
+    "Yêu cầu ChatGPT viết kịch bản chia 3 phần vì AI không viết dài được, bấm Continue cho tới khi đủ",
+    "Copy từng phần kịch bản vào Notepad++ hoặc Word, rồi đưa vào ElevenLabs để tạo giọng đọc",
+    "Nhờ ChatGPT tạo 30 prompt hình ảnh phù hợp kịch bản, copy từng cái sang Leonardo hoặc Midjourney để tạo ảnh",
+    "Import ảnh và âm thanh vào phần mềm edit, thêm hiệu ứng, phụ đề, rồi thêm âm thanh nền free không bản quyền và giảm âm lượng"
+  ]
+}

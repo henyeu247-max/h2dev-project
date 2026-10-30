@@ -1,0 +1,743 @@
+1
+00:00:00,000 --> 00:00:07,710
+Chào anh chị em học viên. Hôm nay chúng ta đến với bài học yoga. Và đến với bài học này thì một bài
+
+2
+00:00:07,710 --> 00:00:15,420
+học cực kỳ bền để cho anh em làm và anh em bám sát cho tôi vào tất cả những nhân vật đang nổi.
+
+3
+00:00:15,720 --> 00:00:24,640
+Anh chị em chỉ cần tìm cho tôi từ khóa liên quan đến Rumi và những nhân vật nổi tiếng là anh chị em có thể làm ra những video như thế này.
+
+4
+00:00:24,640 --> 00:00:34,860
+Chỉ cần anh chị em áp dụng vào làm thôi, sản xuất video thôi. Còn này khâu sản xuất này cực kỳ dễ cho anh em làm những cái chủ đề như thế này.
+
+5
+00:00:35,080 --> 00:00:41,140
+Đầu tiên, anh chị em tìm cho tôi một nhân vật để tạo hình ảnh tham chiếu. Chúng ta đi từng bước nhé.
+
+6
+00:00:41,140 --> 00:00:55,040
+Anh chị lên Pinterest tìm Rumi, hoặc là Người Nhện, hoặc là Spiderman, hoặc là những nhân vật gì mà anh chị em thấy nổi tiếng là anh chị em có thể sản xuất được.
+
+7
+00:00:56,420 --> 00:01:04,000
+Ví dụ ở đây tôi lấy một hình ảnh bất kỳ, những cô gái này đi. Rumi nhé, tôi tải xuống.
+
+8
+00:01:04,000 --> 00:01:12,300
+Sau khi tải xuống thì anh chị sẽ gì ạ? Đây là một câu prompt. Câu prompt này chúng ta
+
+9
+00:01:12,300 --> 00:01:20,400
+sẽ sử dụng tạo hình ảnh tham chiếu cho nhân vật nữ nên như các bài mà tôi đã đăng.
+
+10
+00:01:20,400 --> 00:01:23,500
+Anh chị em đọc cho tôi câu prompt này
+
+11
+00:01:23,500 --> 00:01:25,920
+Sau đó anh chị em lên Flow
+
+12
+00:01:25,920 --> 00:01:28,380
+Anh chị em dán cái câu này này vào cho tôi
+
+13
+00:01:28,380 --> 00:01:32,300
+Và copy cái hình ảnh của cô gái này
+
+14
+00:01:32,300 --> 00:01:33,300
+Dán vào
+
+15
+00:01:36,626 --> 00:01:42,846
+Chúng ta sẽ lấy một hình ảnh gốc và kết hợp cùng câu prompt này để tạo ra hình ảnh tham chiếu.
+
+16
+00:01:43,406 --> 00:01:47,826
+Nghĩa là các bạn sẽ tạo ra một hình ảnh nhân vật đầy đủ chi tiết trong hình ảnh.
+
+17
+00:01:48,826 --> 00:01:51,246
+Mặc một bộ quần áo yoga nha anh chị em nha.
+
+18
+00:01:52,166 --> 00:01:59,166
+Anh chị em sẽ chọn cho tôi cái kích thước hình ảnh là 16:9, tôi sẽ nhấn tạo.
+
+19
+00:01:59,466 --> 00:02:03,566
+Chờ một lúc thì Flow sẽ cho anh chị em một hình ảnh tham chiếu.
+
+20
+00:02:04,006 --> 00:02:10,526
+Nhớ trước mặt anh chị em đây là hai hình ảnh vừa được tạo ra thì anh em nhấn tải xuống như tôi.
+
+21
+00:02:11,666 --> 00:02:13,000
+Tôi sẽ tải chất lượng 1K nhé.
+
+22
+00:02:13,000 --> 00:02:18,106
+Bây giờ chúng ta sẽ làm cái hình nền để cho nhân vật này tập yoga.
+
+23
+00:02:18,106 --> 00:02:25,773
+Thì dựa trên những video của tôi gọi là
+
+24
+00:02:25,773 --> 00:02:33,439
+đối thủ. Tôi sẽ lấy những hình ảnh như này.
+
+25
+00:02:33,439 --> 00:02:41,106
+nhấn cho tôi Alt + Z.
+
+26
+00:02:41,106 --> 00:02:54,300
+YouTube, hình ảnh này cho tôi. 16:9 anh chị em nhé. Bây giờ là gì ạ? Trên Grok,
+
+27
+00:02:54,300 --> 00:03:02,230
+Lúc nãy tại sao tôi lại không tạo trên Flow luôn? Vì rất nhiều hình ảnh, nhân vật ít tuổi hoặc là nhân vật
+
+28
+00:03:02,230 --> 00:03:10,160
+nổi tiếng nếu các bạn đưa lên, úp ảnh lên có khi nó bị lỗi. Đây là chúng ta sẽ tạo như thế này.
+
+29
+00:03:10,160 --> 00:03:16,260
+Bây giờ là gì ạ? Anh chị em copy cho tôi câu xóa phông nền nhé.
+
+30
+00:03:18,260 --> 00:03:20,240
+Sang Grok, nhấn tạo.
+
+31
+00:03:21,480 --> 00:03:28,160
+Bây giờ nó sẽ tạo cho anh chị em một hình ảnh xóa tất cả các chi tiết trong hình ảnh gốc.
+
+32
+00:03:29,440 --> 00:03:32,140
+Để anh chị làm một hình ảnh nền, anh chị nhìn thấy nhé.
+
+33
+00:03:33,080 --> 00:03:37,320
+Và tiếp theo là gì ạ? Anh chị em lại copy cho tôi câu lệnh thay đổi.
+
+34
+00:03:37,320 --> 00:03:42,060
+Nghĩa là chúng ta sẽ không làm giống, không làm giống nhé.
+
+35
+00:03:43,680 --> 00:03:49,160
+Anh chị có thể thay đổi thành màu xanh, màu trắng, màu vàng, màu gì cũng được.
+
+36
+00:03:49,340 --> 00:03:55,140
+Nghĩa là chúng ta có cái độ thẩm mỹ từ hình ảnh gốc của hình ảnh này.
+
+37
+00:03:55,740 --> 00:03:58,520
+Chúng ta xóa tất cả các chi tiết trong hình ảnh đi.
+
+38
+00:03:59,140 --> 00:04:00,000
+Và sau đó là gì ạ?
+
+39
+00:04:01,340 --> 00:04:04,000
+Tạo ra hình ảnh phông như là tải xuống.
+
+40
+00:04:04,000 --> 00:04:17,180
+anh em đỡ cái câu thiết kế này luôn. Sau đó anh chị em hãy sang cho tôi ChatGPT và copy câu lệnh động tác yoga này nhé.
+
+41
+00:04:17,180 --> 00:04:27,020
+Ở đây tôi chỉ viết là 10 câu thôi anh chị có thể viết 100 câu 1.000 câu được 1.000 động tác cũng được
+
+42
+00:04:27,020 --> 00:04:37,180
+nó sẽ thay đổi cho anh chị em nhưng mà anh chị em phải luôn nhớ là anh chị em phải thay đổi liên tục nhân vật đi mỗi video anh chị em làm tầm 5
+
+43
+00:04:37,180 --> 00:04:41,180
+vì bản chất là người ta không tập yoga 1 tiếng nữa
+
+44
+00:04:41,180 --> 00:04:42,000
+rất là lâu
+
+45
+00:04:42,000 --> 00:04:51,691
+Thì sau khi có hình ảnh như thế này đúng không? Sau khi có prompt như thế này nhé, anh chị em nhé.
+
+46
+00:04:51,691 --> 00:05:00,951
+Anh chị em copy ra tôi từng prompt 1 này. Chúng ta lại sang gì ạ? Sang Flow. Bây giờ là gì
+
+47
+00:05:00,951 --> 00:05:10,211
+ạ? Chọn cái hình ảnh màu nâu này nhé. Dán vào. Anh chị em cứ làm như thế thôi. Prompt thứ 2 này.
+
+48
+00:05:12,431 --> 00:05:25,991
+Dán vào đây. Prompt thứ 3 này. Dán vào đây. Để cho nó tạo nha anh chị em nhé. Chúng ta tạo từ từ thôi. Có nhiều lúc nó sẽ lỗi.
+
+49
+00:05:25,991 --> 00:05:34,251
+Nên là anh chị em cứ bình tĩnh tạo. Được prompt nào thì anh chị em tải xuống prompt đấy. Anh em cứ làm như thế cho thôi.
+
+50
+00:05:34,251 --> 00:05:42,317
+Đây, tải xuống này, tải xuống này, tải xuống
+
+51
+00:05:42,317 --> 00:05:50,384
+này, và tiếp theo là prompt thứ 6 này, dán
+
+52
+00:05:50,384 --> 00:05:58,450
+vào, prompt thứ 7 này, prompt thứ 8 này,
+
+53
+00:05:58,450 --> 00:06:01,090
+Prompt thứ 9
+
+54
+00:06:01,090 --> 00:06:06,870
+Prompt thứ 10
+
+55
+00:06:06,870 --> 00:06:18,370
+Là chúng ta sẽ tạo tất cả những hình ảnh liên quan đến những bài tập yoga này
+
+56
+00:06:24,370 --> 00:06:25,970
+Anh em tải xuống nhé
+
+57
+00:06:25,970 --> 00:06:27,910
+Tải xuống này
+
+58
+00:06:27,910 --> 00:06:32,910
+Nhấn tải xuống này. Tải xuống này.
+
+59
+00:06:37,910 --> 00:06:44,910
+Một prompt cộng hình ảnh thì chúng ta sẽ tạo ra một hình ảnh. Là hai hình ảnh nhưng mà chúng ta tải một hình ảnh xuống không?
+
+60
+00:06:46,910 --> 00:06:54,910
+Sau khi có tất cả những hình ảnh như thế này rồi thì anh chị em sẽ làm gì? Anh chị em sẽ viết câu lệnh cho tôi.
+
+61
+00:06:55,000 --> 00:07:00,610
+đây nhá, câu lệnh để tạo nhạc nền trên Suno AI, thì anh chị em viết vào đây chưa?
+
+62
+00:07:00,610 --> 00:07:12,610
+bây giờ chúng ta tạo nhạc trên Suno AI đây là cái prompt nhé
+
+63
+00:07:12,610 --> 00:07:20,110
+prompt tạo nhạc trên Suno AI anh chị dán vào đây chưa rồi anh chị nhấn tạo
+
+64
+00:07:20,110 --> 00:07:26,943
+thì trong lúc chờ nó tạo ấy thì chúng
+
+65
+00:07:26,943 --> 00:07:33,777
+ta sẽ đi làm một cái hình xóa để
+
+66
+00:07:33,777 --> 00:07:40,610
+xóa cho tôi chiếc thảm còn lại giữ nguyên
+
+67
+00:07:40,610 --> 00:07:41,930
+Chịp.
+
+68
+00:07:42,191 --> 00:07:50,271
+Tôi sẽ lấy một cái hình ảnh này để tôi làm cái mở đầu luôn trong video của anh chị em nhé.
+
+69
+00:07:51,631 --> 00:08:01,391
+Đấy, tải xuống này. Tí chúng ta làm hình thumbnail luôn cũng được. Và bây giờ là câu mở đầu nhé. Câu mở đầu cho 10 prompt yoga này.
+
+70
+00:08:01,791 --> 00:08:09,491
+Thì anh chị em dán luôn cái phần vào dưới đây. Anh chị em nhớ dừng lại những cái đoạn như thế này. Anh chị em nhìn cái prompt tôi làm ấy.
+
+71
+00:08:09,491 --> 00:08:16,491
+Anh chị em tư duy, anh chị em viết ra và sau mọi người sẽ viết lại hoàn toàn khác.
+
+72
+00:08:16,491 --> 00:08:27,491
+Chúng ta có thể chuyển đổi, ví dụ anh chị làm tiếng Anh đúng không? Chuyển đổi cho tôi sang tiếng Anh.
+
+73
+00:08:27,491 --> 00:08:32,491
+Hoặc anh chị viết luôn ở trên 10 động tác yoga bằng tiếng Anh luôn, cũng được.
+
+74
+00:08:32,491 --> 00:08:35,431
+Mà tôi sẽ làm tiếng Việt cho anh chị dễ hiểu nhất.
+
+75
+00:08:36,211 --> 00:08:38,231
+Xong nhạc rồi thì anh chị em tải xuống nhé.
+
+76
+00:08:38,851 --> 00:08:40,171
+Tải cho tôi nhạc nền xuống.
+
+77
+00:08:40,500 --> 00:08:51,040
+Cái này là 3 phút nhé. Nghĩa là tôi viết 10 prompt kia là chỉ tạo 10 hình ảnh thôi. Anh chị nên viết 20 hình ảnh, 30 hình ảnh nhé.
+
+78
+00:08:52,360 --> 00:08:58,920
+Làm sao để cho mình biết là lúc nào mình phải sáng tạo hơn, chứ không phải sáng tạo kém thầy à.
+
+79
+00:09:01,600 --> 00:09:04,340
+Đấy, anh chị thêm cho tôi. Những cái hình ảnh này vào.
+
+80
+00:09:06,000 --> 00:09:09,920
+Bây giờ là gì ạ? Chúng ta sẽ làm một cái đoạn mở đầu.
+
+81
+00:09:10,000 --> 00:09:19,080
+Ví dụ trong mở đầu của anh chị, anh chị thêm cho tôi cái văn bản này, trở ra cái bên ChatGPT nhé, copy
+
+82
+00:09:19,080 --> 00:09:27,660
+câu mở đầu này cho tôi, dán vào đây, thì tôi sẽ chuyển đổi văn bản thành giọng nói, trong này rất nhiều giọng
+
+83
+00:09:27,660 --> 00:09:36,240
+nhé, mọi người không cần phải đi đâu lấy giọng hay làm gì đâu, tiếng Anh, tiếng Việt ở trong đây rất là nhiều.
+
+84
+00:09:36,240 --> 00:09:43,740
+giọng nam, giọng nữ rất là nhiều, có khi lấy ở đây nó có khi là nhiều hơn.
+
+85
+00:09:43,740 --> 00:09:55,440
+Rồi, tôi sẽ sử dụng phông chữ, tôi sẽ sử dụng phông chữ Anton này.
+
+86
+00:09:55,440 --> 00:10:01,320
+mọi người có thể sử dụng nhiều phông chữ hơn
+
+87
+00:10:01,320 --> 00:10:08,896
+cỡ chữ cho nhỏ lại
+
+88
+00:10:08,896 --> 00:10:11,116
+Và anh chị em có thể thêm màu.
+
+89
+00:10:11,896 --> 00:10:15,736
+Ví dụ như màu sắc mà anh chị em muốn, thì bên hiệu ứng này rất là nhiều màu sắc.
+
+90
+00:10:16,636 --> 00:10:19,296
+Anh chị nhấn vào phông chữ thì anh chị nhấn hiệu ứng này.
+
+91
+00:10:21,796 --> 00:10:23,916
+Ví dụ như tôi sẽ lấy màu hồng đi.
+
+92
+00:10:24,776 --> 00:10:26,356
+Để cho những chị em tập yoga.
+
+93
+00:10:28,416 --> 00:10:35,156
+Và bây giờ là gì ạ? Chúng ta cùng hiệu ứng đỡ nhé. Anh chị em chọn cho tôi một cái hiệu ứng đỡ.
+
+94
+00:10:35,716 --> 00:10:48,836
+Chỉ cần 5 phút mỗi ngày để có thể dẻo dai hơn, tinh thần thư thái hơn và tràn đầy năng lượng hơn. Hãy tập cùng tôi từ động tác đầu tiên đến cuối cùng, vì mỗi tư thế hôm nay sẽ giúp bạn tiến gần hơn đến một cơ thể khỏe mạnh và cân bằng hơn.
+
+95
+00:10:49,256 --> 00:10:57,776
+Đó. Tiếp theo chúng ta thêm cái ảnh nền mà có cái thảm vào. Anh chị em kéo dài ra cho tôi.
+
+96
+00:10:58,000 --> 00:11:07,076
+Kéo dài đây nhé. Chúng ta thử kéo dài đây. Và bây giờ là gì ạ? Chúng ta bắt đầu vào những cái động tác đầu tiên. Anh chị
+
+97
+00:11:07,076 --> 00:11:15,736
+em nhấn xóa này cho nó xóa tự động. Nhấn vào hình ảnh này nhé. Sau đó nhấn xóa tự động nhé. Thì chúng ta đã có một hình như
+
+98
+00:11:15,736 --> 00:11:24,396
+thế này rồi. Nhưng nếu mà anh chị để như thế này nó rất là khô. Mọi người hình dung không? Đây này, mọi người để tầm 10 giây.
+
+99
+00:11:26,300 --> 00:11:36,300
+để 10 giây như này rất là khô, không có gì là chuyển động cả. Thì anh chị em chọn cho tôi hiệu ứng nhé, nhấn vào hiệu ứng này.
+
+100
+00:11:36,300 --> 00:11:49,300
+Thì bây giờ chúng ta sẽ tìm cho tôi một cái camera rung nhé. Rung nhé, đấy, thì đây là cái camera rung là cái máy ảnh rung nhé.
+
+101
+00:11:49,300 --> 00:11:59,293
+Thì ở trên này anh chị em để cho tôi khoảng tầm 1 thôi. Còn tốc độ thì anh chị để là 2. Thì anh chị có thể nhìn thấy nó sẽ rung rung
+
+102
+00:11:59,293 --> 00:12:09,287
+này. Đấy. Để cho nó có tí thao tác. Chứ mình làm mình không có tí thao tác thì nó lại không hay. Và tiếp theo là văn bản nhé. Và hôm nay
+
+103
+00:12:09,287 --> 00:12:19,280
+tôi sẽ hướng dẫn anh chị em luôn là cái vấn đề là làm giây. Bây giờ Thanh Trắng ở đâu này? Thì anh chị luôn luôn nhìn thấy các bài và tôi hãy
+
+104
+00:12:19,280 --> 00:12:22,280
+và tôi sẽ bảo là thanh trắng ở đâu vị trí ở đấy đúng không?
+
+105
+00:12:22,280 --> 00:12:30,280
+Dán vào đây rồi. Cái này thì làm gì ạ? Để làm 1 giây nhá. Tại sao tôi biết nó là 1 giây?
+
+106
+00:12:30,280 --> 00:12:42,280
+Vì thanh trắng tôi ở đây thì cái số này giờ từ bên tay trái của anh chị là giờ phút đến giây thì nó là 1 giây. Anh chị cắt đi cho tôi.
+
+107
+00:12:42,280 --> 00:12:44,140
+Vì này Sáng
+
+108
+00:12:44,140 --> 00:12:54,340
+và chúng ta sẽ làm từ 10 giây ở lại 10 giây tôi sẽ chọn một cái hiệu ứng màu hiệu ứng chữ khác đi
+
+109
+00:12:54,340 --> 00:13:04,140
+anh chị có thể chọn nếu mà tùy theo mắt thẩm mỹ của mọi người nhé hoặc là anh chị làm sao để cho nó khác đi chứ không thể nào
+
+110
+00:13:04,140 --> 00:13:10,500
+chữ hôm nay cái video này chữ này xong video khác xong rồi bắt đầu làm xấu hơn không được
+
+111
+00:13:10,500 --> 00:13:17,316
+mỗi ngày chúng ta phải làm đẹp lên nhé mọi người ạ
+
+112
+00:13:17,316 --> 00:13:21,676
+Cái này để làm gì ạ? Để làm giây nha anh chị em nhé.
+
+113
+00:13:21,936 --> 00:13:22,216
+9
+
+114
+00:13:22,216 --> 00:13:26,196
+8
+
+115
+00:13:26,196 --> 00:13:30,676
+7
+
+116
+00:13:30,676 --> 00:13:33,016
+6
+
+117
+00:13:33,016 --> 00:13:35,316
+Cứ làm như thế rồi. Đến 6
+
+118
+00:13:35,316 --> 00:13:38,616
+Không phải là cái đoạn nào chúng ta cũng làm như thế này đâu.
+
+119
+00:13:39,476 --> 00:13:39,756
+5
+
+120
+00:13:39,756 --> 00:13:43,916
+4
+
+121
+00:13:43,916 --> 00:13:44,916
+3
+
+122
+00:13:44,916 --> 00:13:54,409
+3 này, 2 này, 1 này. Anh chị ấn cắt cho tôi cái đoạn thừa này. Thì bây giờ là gì ạ? Chúng ta sẽ
+
+123
+00:13:54,409 --> 00:14:03,903
+có cái hiệu ứng như này. Để người ta biết là người ta phải tập cái này tập 10 giây. Hoặc là anh chị
+
+124
+00:14:03,903 --> 00:14:13,396
+tập 20 giây thì video của anh chị nó sẽ dài hơn. Hiệu ứng động là ví dụ như chúng ta sẽ cho vào đi.
+
+125
+00:14:18,300 --> 00:14:21,800
+nó có hiệu ứng ở trên số nhé.
+
+126
+00:14:21,800 --> 00:14:24,300
+và anh chị nhấn tạo clip ghép này.
+
+127
+00:14:24,300 --> 00:14:28,300
+chọn tất cả số là nhấn tạo clip ghép nhé.
+
+128
+00:14:28,300 --> 00:14:35,300
+và tiếp theo thì cứ tầm ở giữa giữa này, anh chị có thể thêm cái nhãn dán.
+
+129
+00:14:39,300 --> 00:14:42,300
+ví dụ anh đồng hồ đi.
+
+130
+00:14:42,300 --> 00:14:44,300
+đồng hồ này.
+
+131
+00:14:44,300 --> 00:14:46,980
+Đồng hồ Cát
+
+132
+00:14:46,980 --> 00:14:54,580
+Đấy, chỉ thêm những cái hiệu
+
+133
+00:14:54,580 --> 00:15:02,180
+ứng đồng hồ này và
+
+134
+00:15:02,180 --> 00:15:04,020
+Tôi trong video
+
+135
+00:15:04,020 --> 00:15:06,600
+Đầm mình sẽ làm cho sinh động hơn
+
+136
+00:15:06,600 --> 00:15:09,340
+Thì tôi để như này
+
+137
+00:15:09,340 --> 00:15:11,820
+Hoặc thêm logo của kênh cũng được
+
+138
+00:15:11,820 --> 00:15:13,920
+Và tiếp theo là gì ạ
+
+139
+00:15:14,000 --> 00:15:22,833
+chúng ta sẽ nhân rất là nhanh, đoạn này nhân rất là nhanh này, anh chị nhìn nhé, copy cái hình ảnh gốc, cái hình ảnh đang rung rung này, copy
+
+140
+00:15:22,833 --> 00:15:31,747
+vào, copy sang, thì anh chị em chỉ cần nhớ cho tôi đây, anh chị em kéo vào là được nhé, kéo vào là, và chỉnh to nhỏ luôn là
+
+141
+00:15:31,747 --> 00:15:40,660
+được, đấy, thấy chưa, kéo sang này, cái này nó có độ rung luôn, vì là nó dựa trên cái độ rung của cái hình ảnh trước, cứ copy được không,
+
+142
+00:15:40,660 --> 00:15:46,540
+là cứ cứ thôi xong rồi mình nhìn thấy mình thẩm mỹ nữa
+
+143
+00:15:46,540 --> 00:15:51,160
+có những hình ảnh mà nó như thế này thì chúng ta làm sao chúng ta kéo nó vào cái thảm mà được
+
+144
+00:15:51,160 --> 00:15:54,600
+đó, không có cái đầu
+
+145
+00:15:54,600 --> 00:15:57,180
+dán
+
+146
+00:15:57,180 --> 00:16:00,660
+cái này ví dụ như
+
+147
+00:16:00,660 --> 00:16:02,660
+nó nhỏ quá cho to lên
+
+148
+00:16:02,660 --> 00:16:11,091
+cái này thì kéo xuống này
+
+149
+00:16:11,091 --> 00:16:22,491
+Cái này to quá thì cho nhỏ lại. Đấy. Làm sao để cho chúng ta, chứ không phải là chúng ta cho vào chúng ta làm hàng loạt mà chúng ta làm hình to hình nhỏ đâu.
+
+150
+00:16:23,151 --> 00:16:35,851
+Nhìn phải có tí, thẩm mỹ một tí, ví dụ to lên tí này cũng được. Làm sao để cho chúng ta hiểu được là cái video của chúng ta đang hướng dẫn các động tác liên quan đến gì ạ?
+
+151
+00:16:35,851 --> 00:16:37,931
+Liên quan đến yoga nghe chị em nhé.
+
+152
+00:16:41,091 --> 00:16:45,631
+Đó, đây nữa.
+
+153
+00:16:52,851 --> 00:16:54,531
+Có bì rất là nhanh nhé.
+
+154
+00:16:55,651 --> 00:17:00,811
+Làm sao cho tôi là anh chị em không bị bí về cái vấn đề edit này.
+
+155
+00:17:01,811 --> 00:17:10,011
+Tôi đã dạy cả anh chị em là cả khi cả edit rồi anh chị em không làm được nữa thì tôi để chịu tay anh chị em luôn nhé anh chị em nhé.
+
+156
+00:17:11,091 --> 00:17:15,651
+Ví dụ tôi O đây, và bây giờ tôi thêm cái nhạc nền thôi mà.
+
+157
+00:17:15,651 --> 00:17:27,391
+tôi tách cái đầu nhạc đấy
+
+158
+00:17:27,391 --> 00:17:29,231
+tôi cho nó vào luôn
+
+159
+00:17:29,231 --> 00:17:31,971
+chỉ cần 5 phút mỗi ngày để có thể dẻo dai hơn
+
+160
+00:17:31,971 --> 00:17:34,371
+tinh thần thư thái hơn và tràn đầy năng lượng hơn
+
+161
+00:17:34,371 --> 00:17:35,651
+hãy tập cùng tôi từ động
+
+162
+00:17:35,651 --> 00:17:40,991
+tác đầu tiên đến cuối cùng, vì mỗi tư thế hôm nay sẽ giúp bạn tiến gần hơn đến một cơ thể khỏe mạnh và cân bằng hơn.
+
+163
+00:17:47,000 --> 00:17:56,323
+Đó là cái video mà chúng ta đã tạo ra là tập yoga anh
+
+164
+00:17:56,323 --> 00:18:05,597
+chị em nhé. Thì bây giờ là gì ạ? Bây giờ chúng ta sẽ
+
+165
+00:18:05,597 --> 00:18:14,870
+sang cái phần thumbnail. Bây giờ trong phần Picsart của anh chị em nhé.
+
+166
+00:18:14,870 --> 00:18:20,310
+nhé cái này nó rất là rẻ, cái Picsart rất là rẻ nhé nhé nhấn bắt đầu thiết kế mới này
+
+167
+00:18:20,310 --> 00:18:30,350
+tạo vẽ từ khung vẽ trống này bây giờ là rỉa, khi anh chị em nhấn vào thì đầu tiên cái phần đổi cỡ ở trên góc trái của anh chị em này
+
+168
+00:18:30,350 --> 00:18:34,870
+anh chị em chọn cho tôi là cái rỉa
+
+169
+00:18:34,870 --> 00:18:43,693
+1920 x 1080 nhé đúng cái kích thước này nhé 1920 x 1080 nhé bây
+
+170
+00:18:43,693 --> 00:18:52,516
+giờ chúng ta sẽ tải đây cho tôi là một cái này và 6 tên
+
+171
+00:18:52,516 --> 00:19:00,016
+Để chúng ta làm gì ạ? Để chúng ta
+
+172
+00:19:00,016 --> 00:19:07,516
+làm thumbnail. Thêm được không? Thêm, gỡ nền này. Thấy
+
+173
+00:19:07,516 --> 00:19:15,016
+chị em thấy hình ảnh cũng rất là nét.
+
+174
+00:19:15,016 --> 00:19:19,656
+Rồi
+
+175
+00:19:19,656 --> 00:19:23,616
+Gửi lên này
+
+176
+00:19:23,616 --> 00:19:28,036
+Mình đi không thể làm, mình mình mình
+
+177
+00:19:28,036 --> 00:19:33,856
+Biết tập yoga được, nhưng mình sẽ sản xuất ra những cái video nó có ích như này
+
+178
+00:20:13,556 --> 00:20:18,236
+chúng ta sẽ làm sao trang trí 6 hình ảnh này
+
+179
+00:20:18,236 --> 00:20:21,950
+và bây giờ là ví dụ như
+
+180
+00:20:21,950 --> 00:20:29,210
+Ví dụ như thêm chữ này, anh chị chọn được cái Anton này. Tôi luôn luôn thấy cái chữ này rất là đẹp.
+
+181
+00:20:29,210 --> 00:20:36,290
+YouTube, dùng 10 động tác, tập yoga.
+
+182
+00:20:36,290 --> 00:20:38,000
+Yoga
+
+183
+00:20:51,590 --> 00:20:55,250
+Làm sao để cho nó hiệu quả hơn nữa là ok.
+
+184
+00:20:55,250 --> 00:21:09,070
+Đây là một trong những cái cách thức chú tật làm video. Đây anh chị em nhé, cuối cùng là chúng ta đã xong cái video này.
+
+185
+00:21:09,070 --> 00:21:19,370
+Hoàn chỉnh, anh chị có thể làm dài hơn, thì anh chị làm nhiều cảnh hơn và làm số giây, ví dụ như nó lâu hơn, ví dụ một cái hình ảnh này anh chị làm 20 giây.
+
+186
+00:21:19,370 --> 00:21:24,510
+Tôi làm 10 giây, không nghĩa là xong là anh chị cứ làm 10 giây, không được nhé.

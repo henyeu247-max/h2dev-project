@@ -1,0 +1,85 @@
+{
+  "sku": "VIDEO-c5837a",
+  "title": "Update share các ngách Bán content và Reup mới nhất - tất cả thị trường Nhật - Hàn - Việt",
+  "actual_topic": "Tổng hợp Ngách Bán Content & Reup đa quốc gia (Nhật - Hàn - Việt): Lời vàng Saitou Hitori, Hoạt hình Toon Review, Vật lý lượng tử",
+  "category_group": "ban_content",
+  "niche_primary": "Bán Content & Reup Đa Thị Trường",
+  "niche_id": "cross-market-ban-content",
+  "target_market": "Nhật Bản / Hàn Quốc / Việt Nam",
+  "market_code": "JP,KR,VN",
+  "key_takeaways": [
+    "Tác giả show một kênh mới của một học viên trong nhóm, làm ngách tâm linh, tâm lý, may mắn xoay quanh nhân vật Saito Hitori: lập từ ngày 25 tháng 6, mới 7 video mà tổng đã hơn 200k view, video đầu hơn 100k view.",
+    "Tiếp theo là một kênh cùng ngách cũng mới lập được một tuần, nhưng mắc lỗi spam video: một ngày đăng 3-4 video, trong khi có video chỉ được 20k view.",
+    "Tác giả khuyên khoảng 4-5 video đầu nên đăng cách ngày, sau đó mỗi ngày một video; đăng dồn dập thì YouTube đánh giá không tốt, video sẽ không được phân phối và bị flop.",
+    "Với ngách sức khỏe ở thị trường Hoa Kỳ, kênh chuyển sang nói về một ông tiến sĩ và có video mấy trăm ngàn view, tác giả chỉ khuyên lấy kịch bản về làm lại cho thị trường Việt, Nhật hoặc Hàn, không làm ở Mỹ vì cạnh tranh rất cao, đặc biệt các pháp sư Ấn Độ làm rất mạnh.",
+    "Ở ngách Reup, kênh mới có 24 video nhưng có video hơn 400k view và một video gần 100k view; cách tìm là copy tiêu đề, dịch sang tiếng Trung bằng Google dịch rồi tìm trên Bilibili, và cuối video tác giả chia sẻ thêm ngách Phật pháp cho thị trường Nhật, link các kênh để ở mô tả."
+  ],
+  "edit_sop": {
+    "primary": "Chia sẻ các ngách tâm linh Saito Hitori, sức khỏe, reup và Phật pháp; cách đăng video và tìm nguồn reup",
+    "additional": [
+      "Mới lập kênh thì 4-5 video đầu đăng cách ngày, sau đó đăng đều mỗi ngày 1 video",
+      "Lấy kịch bản, content kênh sức khỏe Hoa Kỳ (link ở mô tả) rồi dịch ra làm cho thị trường Việt, Nhật hoặc Hàn",
+      "Tìm nguồn reup: copy tiêu đề, dịch sang tiếng Trung bằng Google Dịch rồi search trên Bilibili",
+      "Cũng có thể cắt màn hình trong video rồi dán lên Google để tìm kiếm",
+      "Khi edit reup có giảm tốc độ nên video dài hơn bản gốc"
+    ]
+  },
+  "avoid_flags": [
+    "Không spam video, 1 ngày đăng 3-4 video thì chắc chắn không ổn, YouTube đánh giá không tốt",
+    "Không nên làm ngách sức khỏe ở thị trường US tiếng Anh vì cạnh tranh rất cao"
+  ],
+  "tools_mentioned": [
+    "Bilibili",
+    "Google Dịch",
+    "Google"
+  ],
+  "channels_mentioned": [
+    "@斎藤一人の福の言霊",
+    "@oijfwaoldsfae",
+    "@fansdrWilliamLI",
+    "@NắngNhỏToonReview",
+    "@幻界と神域の扉",
+    "@다시이팔청춘-k5d",
+    "@양자과학이야기"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Khám kênh học viên làm ngách triết lý tỷ phú Nhật Saito Hitori nổ view sau 1 tuần"
+    },
+    {
+      "time": "02:26",
+      "seconds": 146,
+      "label": "Khai thác nguồn tài liệu dinh dưỡng quốc tế từ Tiến sĩ William Li"
+    },
+    {
+      "time": "04:46",
+      "seconds": 286,
+      "label": "Phân tích kênh review hoạt hình ngắn Việt Nam @NắngNhỏToonReview"
+    },
+    {
+      "time": "06:50",
+      "seconds": 410,
+      "label": "Khám phá ngách thần bí huyền ảo @幻界と神域の扉"
+    },
+    {
+      "time": "08:01",
+      "seconds": 481,
+      "label": "Giới thiệu 2 kênh mới Hàn Quốc về hồi xuân và khoa học lượng tử"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-c5837a/transcript.txt",
+  "sop_steps": [
+    "Mới lập kênh thì 4-5 video đầu đăng cách ngày, sau đó đăng đều mỗi ngày 1 video",
+    "Lấy kịch bản, content kênh sức khỏe Hoa Kỳ (link ở mô tả) rồi dịch ra làm cho thị trường Việt, Nhật hoặc Hàn",
+    "Tìm nguồn reup: copy tiêu đề, dịch sang tiếng Trung bằng Google Dịch rồi search trên Bilibili",
+    "Cũng có thể cắt màn hình trong video rồi dán lên Google để tìm kiếm",
+    "Khi edit reup có giảm tốc độ nên video dài hơn bản gốc"
+  ]
+}

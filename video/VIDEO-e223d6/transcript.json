@@ -1,0 +1,4130 @@
+{
+  "sku": "VIDEO-e223d6",
+  "duration": 2321.27,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 515,
+  "full_text": "Ok đủ chưa? Đủ rồi chúng ta đến bước dịch nhá! Về kia đây chúng ta sẽ quay lại bảng hướng dẫn Quá trình dịch Khi viết kịch bản tiếng Việt bằng ChatGPT Dịch cũng ở ChatGPT yêu cầu Yêu cầu là phải tab riêng. Mình sẽ gán cho nó là bạn là người dịch content nội dung cho tôi với nội dung. Quay lại ChatGPT để mình gán. Gán cho nó một cái tab riêng đi. Bạn là trợ lý dịch content cho nội dung của tôi là Undercover Boss, Undercover CEO ấy. Mình đưa dữ liệu cho nó, mình cấp dữ liệu cho nó. Cấp càng kỹ thì kết quả mình nhận lại được càng xịn. Ok, Enter, gán cho nó đã, gán xong bấm vào mấy dịch. Vì trên dữ liệu tổng của cái con ChatGPT này á, thì khi Tuấn có thể click vào cái phần profile của ChatGPT á, click vào. Profile bên phải. Bên phải, bên phải, phải, phải. Đấy là trái. Đấy. Cài đặt. Kiểm soát dữ liệu. Số tư liệu không gọi. Chung phần chung thôi. Mình thấy... Để phần đấy lấy cái phần quản lý. Đoạn chat đã lưu trữ, không phải... Dữ liệu nó ở đâu nhỉ? Cá nhân hóa đúng không? Ok, cá nhân hóa đi. Quản lý bộ nhớ đúng rồi, đúng rồi. Chưa lưu à? Chưa update à? Thông thường thì nó sẽ lưu ở đây nhé, F5 lại cái xem nó có lưu cho. Quản lý bộ nhớ xem lưu cho, vẫn chưa lưu. Có thể là đang bị lỗi, không sao, bỏ qua mặt đấy. Thông thường thì chúng ta khi mà lưu dữ liệu ở kia nó sẽ lưu ở đấy là các cái dữ liệu mình đã lưu ở đấy là nó sẽ nạp dữ liệu ở đấy đấy. Chúng ta kiểm tra ở đấy xem nó có lưu chứ nhé. Nó chưa lưu rồi mình phải nạp lại đấy. Bắt buộc đấy, nạp đến khi nào nó lưu thì thôi. Vậy sao nó viết nó theo ý mình được. Ok, gửi nội dung. Không cần cái dữ liệu đâu, không cần, bỏ đi. Có thể nó đang bị lỗi, nó có dữ liệu ở đấy, nó đang ghi rồi mà. Rồi copy content vào đây, dịch cho tôi content này. Có chuột A, xong copy toàn bộ, dịch cho content này, sang tiếng Anh. Đó là một tệp dài và nặng, vì vậy nó sẽ cần thời gian. Chúng ta sẽ dịch các đoạn nhỏ hơn Dịch các đoạn nhỏ hơn Chia ra các chapter vừa nãy Nó đúng theo một cái token của nó Chỉ có thể sử dụng thôi Mình dịch dài quá nó cũng dịch được Theo chapter thôi Cứ đến hết chapter là mình dịch một phát Ok copy bằng dịch đi Nhưng mà đúng chapter nhé Cái dịch này mình cũng nên dịch đoạn ngắn thôi, mục đích là để mình cũng phải kiểm soát lại nữa, chứ không phải dịch cả đoạn dài được, nó sai nghĩa. Đó, nó sẽ dịch cho mình, từng đoạn, từng đoạn như vậy. Như vậy Cái việc của mình sẽ cần phải check lại chính tả Vì đôi khi là Dịch một đoạn dài như thế này chưa chắc nó đúng 100% đâu Vậy nên chúng ta sẽ cần dùng thêm các công cụ khác nữa Các extension khác nữa để mình check Copy content này đi Copy content Rồi quay lại tại phần hướng dẫn nếu ChatGPT dịch không chuẩn xuống dòng nhiều tiếp tục yêu cầu và check chính tả bằng Grammarly thì chúng ta sẽ có cái extension là Grammarly Ở, ấn vào extension đi rồi này. Đó, chúng ta sẽ paste 1 cái content ra cái file bên dưới nào, mình sẽ có bản tính, tiếng Việt bên trên đúng không, và bản tiếng Anh bên dưới. Cái file content đâu, chuyển vào file content, xuống cái dưới cùng. Dưới cùng, và paste bản tiếng Anh vào. Enter, nữa nữa rồi, tiếng Anh, bản tiếng Anh. Các bạn content bên mình cũng đều phải làm content là song ngữ, cả tiếng Việt và tiếng Anh để mình cũng check lại. Chứ thật ra là nếu như mình mà ngồi check content tầm 2 tiếng một tiếng Anh thì check làm sao được? Không check được, chỉ cứ check tiếng Việt thôi. Vì quy trình dịch những em đã có rồi là không sai được. Đó, những cái khoảng mà họ bôi đỏ kia là những cái đoạn mà mình cần sửa lại kìa. Nó liên quan đến ngữ pháp và sau mình đưa vào cái phần sử dụng ElevenLabs, các phần mềm Voice, Audio AI, nó sẽ không bị lỗi. Ấn vào đấy, nó sẽ sửa cho mình các cái lỗi dấu câu này, đó, sửa. Rồi, most important, ấn vào đấy xem có có sửa gì không. Accept, xong. Vậy là xong bằng content. Dịch xong. Ok, mình sẽ dịch ví dụ một đoạn như vậy, anh em sẽ lặp lại lặp lại liên tục cho đến khi hết bài vì content rất dài. Với đây chỉ có thể ví dụ một đoạn thôi. Ok, tiếp theo, quay lại slide sẽ đến phần tiếp theo. Chúng ta đã làm xong phần cách viết content bằng ChatGPT, dịch xong rồi. Thì chúng ta sẽ đến bước là cách làm thumbnail bằng ChatGPT. Cái này là update mới nhất, bên mình vẫn đang test và tối ưu rất là tốt. Bên mình sẽ sử dụng linh hoạt cả Leonardo AI này, vì nó rẻ và nó chất lượng tốt. Hiện tại bên mình đánh giá là cái Midjourney nó là một cái khá đắt. Và thực tế là nó đang update rất chậm so với đội còn lại. Mình không đánh giá cao thằng Midjourney nữa. Bên mình là có 3 tài khoản Midjourney kìa. 3 tài khoản mua gói năm. Mà bây giờ cũng hủy hết rồi. Không dùng nữa. Anh em còn lại còn thời hạn dùng nốt rồi. Đấy thì chúng ta sẽ dùng ChatGPT để làm luôn. Thì chúng ta sẽ tạo một ChatGPT mới. Và ChatGPT để làm thumb luôn. Cái cách đơn giản nhất để làm một cái thumb hay là mình đi sao chép phong cách của đối thủ. Thì chúng ta sẽ thực hiện cái việc là remake lại cái thumbnail của đối thủ thôi. Tìm lại cái bài vừa nãy mình đang làm content. Lấy cái thumb. Ấn vào. vidIQ nó sẽ có cái tính năng này mà anh em mình lưu được. Thumb nhá, lưu hình ảnh thành. Desktop đi. Thumb mẫu. Thumb mẫu Ok Vào ChatGPT Paste cái thumb vào, đưa thumb vào. Không tính ra bình thường nhé, cái này không ra đâu nhé. Không ra đâu, cứ thử xem, cứ thử đi, thử để biết, thử biết nó sẽ không ra. Làm lại thumb này cho tôi, với nhân vật khoảng 40 tuổi, nhân vật chính khoảng 40 tuổi. Xem vẽ được không? Đấy, về tab bình thường đi. Vế không ra đâu, về tab bình thường, paste lại cái thumbnail. Rồi, viết lại, vẽ lại thumbnail này cho tôi với kích thước 1280 x 720. Cái này anh em cần chi tiết đây. Nhân vật chính. Mình muốn người ta như thế nào? Mình mô tả như vậy. Ví dụ như đây mình muốn là nhân vật chính. Nhân vật chính khoảng 40 tuổi. Tóc vàng, mặc quần áo, mặc áo hơi rách. Tóc vàng vì sao? Vì bên họ tóc vàng. Mặc áo hơi rách, mặt nghiêm trọng. Rồi chấm, hai nhân vật phía sau đang thỉ thẩm điều gì đó. Bí ẩn. Cái này thì chúng ta cần phải xem nhiều và phân tích nhiều. Rồi ấn Enter, xem nó có ra không. Thông thường nó ra được khoảng 70% đấy. Cái ChatGPT mới là nó ngon. Mỗi tội là render đang hơi lâu, không biết là sắp tới có khắc phục được không. Hiện tại mình thấy là render hơi lâu. Cái ChatGPT mới này thì trên các cộng đồng ở nước ngoài họ đang chia sẻ rất là nhiều. Nên là họ đưa một cái bản gọi là vẽ tay ấy, nguệch ngoạc ra. Và cũng ra những kết quả thực sự là rất là wow. Mình không nghĩ là ChatGPT hoàn thiện nhanh những mức như vậy. Cái việc mà sao chép lại một cái thumb khác thì mình nghĩ nó không quá khó. Nhưng cái việc mà từ một cái bản vẽ tay, bản vẽ nguệch ngoạc thôi mà nó cũng ra được thì đấy là một sự rất là kinh khủng đấy. Nó sẽ mất thời gian đấy, cái này là khá là lâu đấy. Giữ nguyên, đừng có tắt tab, ngắt tác vụ của nó. Đang tạo ảnh có thể mất một lúc. Mình mô tả càng chi tiết bao nhiêu thì nó càng lâu với nhiêu nhưng mà nó ra kết quả đúng ý mình. Đây thấy có cả mũi tên kìa, hay nhỉ. Đấy, tóc vàng rồi kìa. Đấy, tóc vàng rồi. Đó, mặt có vẻ nhìn cũng có vẻ hơi nghiêm trọng rồi. Vũ khí bí mật đấy Nhân nó rồi, nghiêm trọng rồi Đấy, 2 nhân vật đằng sau bắt thấy nó bắt đầu thầm thì rồi Nhìn thì có vẻ hơi giống cái bên trên Nhưng lại không đánh bản quyền được Đó, thi thầm chưa? Siêu nét! Và đây là cái bên GODA mình đang làm mà triển khai, cái này mới ra mắt mình nhớ không nhầm được khoảng 1 tuần gần đây thôi. Tại vì là với 1 cái áp lực là người dẫn đầu, thì bên mình luôn luôn phải đi tìm những thứ mới và update những thứ mới nhất. Ví dụ đợt vừa rồi mình có update thêm những cái về chính sách về quảng cáo ấy, thì tí nữa cũng sẽ có phần đấy hỗ trợ anh em. Đây là một cái cực kỳ dễ, cực kỳ đẹp. Thì vậy nãy giờ chúng ta đã trải qua hết những cái phần là từ làm content này, dịch này, đã giải quyết tất cả mọi vấn đề của anh em rồi. Đến bây giờ là thumbnail. Thế còn phần gì nhỉ? Edit video đúng không? Phần này là phần dễ nhất. Giống như câu chuyện của 2 anh chị làm ra 80.000 đô một tháng với một kênh thì họ dành ra phần lớn thời gian của họ 70-80% thời gian của họ để họ làm content Thumbnail của họ làm bằng ChatGPT nhưng mà nó là bản cũ thì nó hơi xấu Nhưng với cái bản mới như bây giờ thì mình nghĩ là với cái tốc độ như này thì chắc chắn anh chị sẽ còn nhân được nhiều nhiều kênh như thế nữa Con số nó sẽ lên rất là nhiều, rất là khác Cái này mấy mươi anh chị sẽ được update, có thể sau anh em một chút Ok, khi chúng ta đã có 1 cái thumbnail rồi, 1 content rồi, chúng ta cần là gì? Voiceover, là âm thanh, là giọng đọc. Thì chúng ta sẽ sử dụng là ElevenLabs, copy content vừa nãy vào đi. Bản tiếng Anh nhá. Nếu mà có ngắn quá thì mình sẽ cần làm dài hơn 1 chút, chứ không làm ngắn quá. Ờ, mình nghĩ là sẽ cần phải dịch thêm 1 chút nữa, dịch thêm câu chuyện 1 chút nữa. Này nó ngắn quá, mình sẽ làm mẫu khoảng 10 phút nhé, 10 phút. Lấy content phần tiếp theo rồi dịch ra đi, lấy khoảng độ 7 đến 10 phút đi là được. Tiếp tục dịch. Ok, trong quá trình đấu dịch thì mình sẽ copy cái phần đầu tiên mình quăng vào ChatGPT đi. À quăng vào ElevenLabs đi để mình lấy voice. Cái phần content tiếng Anh đó. Rồi khoảng đấy là copy các bạn này. Copy vào nhé nhưng mà đừng quăng cả vào phần ElevenLabs đi Tuấn ơi. Chúng ta sẽ sử dụng phần project trong ElevenLabs nhé. Project. À, ngày trước là Project bây giờ nó đổi thành Studio rồi. Ấn vào Studio tạo một cái bản mới. Dưới là bản test đúng không? Ok, chúng ta sẽ copy vào. Tiếp theo sẽ đợi cái phần kia nó dịch xong. Xăng lấy phần kia đi, đưa vào. Dịch tiếp. Chọn một cái giọng hay hay một chút. Rồi, nó sẽ chia ra một các cái đoạn đấy. Rồi. Đẩy âm thanh lên nhá. Để tí còn nghe, để còn test giọng Rồi copy cái bản mới đi Liên lạc vào Là được Rồi tiếp theo Ớ từ từ cẩn thận mất nha Cẩu thận mất nha Rồi ấn Copy, paste, paste vào Ok, ok, đúng rồi. Rồi, được rồi, mình sẽ thử cái đoạn này nhé. Chọn giọng đi. Đẩy đẩy âm thanh lên. Có không? Chọn một cái giọng như thế. Ở, đang render à. Cái việc mà chọn giọng anh em chọn từ ngoài nhé, chọn một cái giọng hay. A silver Ford F-150 was brought out. It was nearly new, solid engine, great specs, one of the branch's bestsellers. But then Tom slipped. Sticker price is 37 grand, but that includes the Carter's protection package, only available here. Love all, trust a few, do wrong to none. God has given you one face, and you make yourself another. Ok, mình sẽ export toàn bộ cái vài đấy luôn. Ok, rồi, chất lượng âm thanh nên chọn là WAV nhé, thì nó sẽ hay hơn là MP3. Chất lượng tiêu chuẩn đấy, nó sẽ nặng hơn, nhưng mà nó hay hơn. Export, xem có đủ credit không? Rồi nó sẽ ngân thời gian rồi, Export. Trong quá trình đó mình sẽ tạo một project ở trên CapCut để mình làm việc với cái này. Xem cái tốc độ Export nó có lâu không? 7% ờ khá nhanh, đợi một chút cũng được, đợi được. Cái thumb vừa nãy mình tải về chưa? Tải về đi, tải về desktop đi. Cái này là hướng dẫn cơ bản thôi. Thêm một lần nữa khẳng định là những thứ đơn giản như vậy, nó chỉ có video, slide ảnh, cộng với audio và nó cũng có thể ra kết quả 100-200.000 đô một tháng với một nhóm kênh nhé, chứ không phải một kênh, là hoàn toàn khả thi. Vậy nên anh em đôi khi là cũng đi tìm những thứ phức tạp nhiều quá. Đây cũng là lời nhắc nhở cho anh em nội bộ GODA nhé, làm thứ đơn giản thôi, ra tiền, dùng tiền mua thứ phức tạp. Nghĩ nhiều quá. Ok, đã xong rồi đúng không? Cho nó xem cái bản export ấy đi nó tải về đúng không? Cho vào CapCut thôi. Mở CapCut lên. Rồi, tạo project mới thôi. CapCut là dễ dùng nhất rồi. Ngày xưa CapCut này nó có cái phần Auto Caption bằng Free, Free, nhưng bây giờ nó Nó cho mình dùng nghiện rồi Nó bắt mình trả tiền Rồi, lấy audio vào Đó, cho vào Rồi, cho hôm dưới thôi, edit thôi Rồi, kéo cái Kéo cái ảnh kia vào Ok, xong. Rồi, bây giờ kiếm cái hiệu ứng cho ảnh đi. Kiếm cái hiệu ứng ảnh đi. Hiệu ứng nhẹ nhàng thôi. Bây giờ ấn vào cái ảnh đi kìa, cho effect. Kiếm cái effect nào đấy. John sat quiet. John sat quietly in his old Toyota Corolla. Nghe em thấy cái này giống trong chủ đề story không? Gặp nhiều dã man luôn. Vì dạng này người ta có xem hình đâu, toàn nghe ấy mà. Có auto caption chưa? Bật auto caption lên. Đấy, bắt đầu auto caption. Cái này siêu nhanh luôn, còn CapCut này xịn thật. Còn con Premiere bao lâu đời bao lâu thế nhưng mà. Để bây giờ anh em bên GODA bây giờ dùng những cái con, cái con Premiere, Premiere Pro ấy. Vẫn phải Caption chạy bằng cơm. Được cái ảo đẹp hơn thôi chứ còn. Thật ra là không ngon mà con này. Cái auto Caption nó cùi lắm. 85, 86, ok. Xong. Ấn chạy thế nào. John sat quietly in his old Toyota Corolla. Cái phong chữ khác cho nó đẹp đẹp hơn tí. Tính mình hơi OCD. Tích Ở Chọn phông đi Chúng cái phông khác Để Thử thử một cái, vài cái xem cái nào nó dày dày ấy. Cái nào dày dày một tí ấy. Đấy, nhìn cái đấy, được ấy. Đấy, ok đấy, có vẻ đứng được ấy. Ok, được rồi, đẩy lên. Đấy, nhìn cho nó dễ nhìn thôi. Còn anh em thì tùy chọn nhé. Đừng để ở giữa, để ở dưới thôi. Ok, rồi cho thêm opacity, stroke các thứ vào, viền đen vào. Shadow vào đấy cho nó nổi lên. Ok, chạy đi, chạy video xem nào. John sat quietly in his old Toyota Corolla, fingers tapping slowly on the steering wheel. In front of him was the lot of John's trucks. Ok, video, chạy video. Xong. Xong rồi? Quy trình chỉ có thế thôi. Ok, chúng ta đã có kết xuất này trong thời gian xuất. Chúng ta đến phần tiếp theo. Chúng ta đã có thumbnail rồi. Chúng ta đã có video rồi. Thì bây giờ việc của chúng ta là viết một cái tiêu đề. Tiêu đề chúng ta đã có sẵn rồi đúng không ạ? Thì bây giờ chúng ta sẽ quay lại phần để chuẩn bị một file để upload video. Với phần này thì quay lại phần tiêu đề Public, xuất nhanh thật, công nhận ông này Ông này, ông CapCut này có một cái là xuất video dài nó hơi hay bị lỗi nên anh em phải check kỹ lại nhé. Video khoảng 2-3 tiếng hay lỗi lắm. John sat quietly in his old. Rồi bây giờ mình sẽ chuẩn bị một cái file. Mở một cái tab đơn giản là file Word đi. File Word khác đi. Một file Word mới để mình làm. Mình táo tặng. Ok. Tiêu đề đâu nhỉ? Lấy tiêu đề sang đi. Trang đi. Trong trường hợp mình có một cái tiêu đề này mình đã chỉnh sửa rồi nhá. Nếu mà mình chỉnh thì nó sẽ mất rất nhiều thời gian vì cái tư duy chỉnh nó sẽ khác nhau. Anh em thì sẽ... Nên thực ra là mỗi cái tiêu đề nó là một cái key. Chỉ công thức là giữ nguyên và thêm. Thêm một yếu tố gì đấy gây sốc. Một từ nào đấy gây sốc thôi là ok. Hoặc là mình có thể đổi bối cảnh đi. Undercover Boss. Đây là biochart. Thì có thể là bio... Luxury Car chẳng hạn, hoặc là Super Car chẳng hạn. Đấy là cái mình thay đổi. Đấy. Thì đây là, ví dụ đây là một cái tiêu đề mình đã chọn xong rồi này. Tiếp theo đến đây ạ. Mô tả. Mô tả thì chúng ta sẽ sử dụng phần intro đầu của video và phần tiêu đề của mình để viết. Thì chúng ta sẽ lại tạo một tab mới của ChatGPT. Tạo tab mới chuyên để viết mô tả. Chúng ta cần phải chuyên biệt nó ra. Rồi. Tạo tab mới. Ừ, tạo đi. Rồi, bạn là... Trợ lý hỗ trợ tôi viết phần mô tả cho các video chủ đề Undercover Boss và Undercover CEO. Cái này chủ đề do anh em nhỉ. Cái này mình đào tạo, nó cũng giống như cái phần đào tạo content thôi. Cũng như vậy, không có gì khác biệt. Ok, Enter rồi được. Và trong quá trình anh em làm nghiên cứu ấy, thì chúng ta sẽ xem rất là nhiều cái dạng mô tả khác nhau. Thì cái việc của mình là thu thập và đào tạo con ChatGPT thì chúng ta sẽ quăng rất là nhiều những cái yếu tố như thế. Nó cập nhật bộ nhớ kìa. Đấy, thì bây giờ mình sẽ đưa một phần intro của mình vào và phần tiêu đề của mình vào. Đây là intro của tôi. À đây là tiêu đề của tôi. Copy đưa vào. Đây là tiêu đề của tôi. Tôi 2 chấm, cái copy của tiêu đề chấm. Đấy, từ từ. Đấy, mình nạp thiếu là nó sẽ viết linh ta linh tinh đấy. Thôi bây giờ, hủy hủy hủy. Và đây là intro của tôi. Đấy copy phần intro ra Copy phần intro quăng cái phần đầu mình vào Tiếng Anh ấy Đúng rồi Intro nó ngắn mà Copy Đấy đúng rồi đấy thôi Bất dồn nét tơ đấy đến phần intro Anh em copy đúng hết phần intro Hết phần giới thiệu đầu Ok Hãy viết cho tôi mô tả Video Chuẩn SEO YouTube Chuẩn SEO, Việt Nam mới học ở là SEO. Enter, gửi đi, nó sẽ viết cho mình. Dưới đây là mô tả. Tuy nhiên, không nên phụ thuộc vào ChatGPT. Chúng ta cần phải xem xét kỹ lại ngôn từ. Phải thật kỹ, chúng ta phải là người điều khiển, sử dụng nó, chứ không phải là người phụ thuộc vào nó. Đó, trong trường hợp này mình thấy là, what happened with CEO? Ok, mình thấy nó cũng tạm tạm được, thì mình có thể sử dụng được. Đây là ví dụ của anh em phải kỹ hơn. Mình càng kỹ tính thì sản phẩm mình càng tốt, khán giả càng yêu quý mình. Copy, đừng copy hết. Đấy, đến đấy thôi. Nó có cái phần gọi là twist, là cú ngoặt đấy. Copy vào. Ví dụ như vậy, mình đưa sang kia là mô tả. Mô tả Đó, trong mô tả thì nó có xem một phần là hashtag thì chúng ta sẽ quay lại bảng nghiên cứu, chúng ta chọn hashtag cho mình. Nếu trong trường hợp mà trong chủ đề không có hashtag, tất cả các kênh đều không dùng cơ, thì mình sẽ phải nghiên cứu kỹ xem là cái hashtag nó phù hợp. Tại vì SEO nó cực kỳ quan trọng với kênh mới. Thì chúng ta sẽ chọn hashtag, tìm hashtag trong cái bảng nghiên cứu cơ, có đấy, bảng nghiên cứu, Dream 100 video ấy. Dream 100 video có không? Hashtag vừa nãy có. À bảng tổng, bằng tổng, đúng rồi, bằng tổng, quay lại bằng tổng. Đấy, chúng ta sẽ lấy 3 cái hashtag này vào, đưa vào. Rồi, đưa sang bên kia, là file upload video. Hashtag. Xong, thế là xong. Dạng này nó không có phần thẻ tag thì thôi mình không dùng. Trong kênh, trong chủ đề không dùng thì mình cũng không dùng. Xong rồi video đã xuất xong, chúng ta sẽ upload video thì mình sẽ upload mẫu lên một kênh luôn. Upload trực tiếp lên kênh đi xem video nó được bao nhiêu phút đã kênh này có thể chưa xác minh nó chưa được upload được video trên 15 phút đâu xem thời lượng đi check lại video lần cuối bật xem đi 5 phút 5 phút 5 phút, 5, 7, ok, được rồi. Thế nên mình upload trực tiếp lên kênh này luôn. Giá chất lượng 1, 6 hay không? Nãy không chỉnh chất lượng. Ok, rồi được rồi. Sau mình xuất mình sẽ kỹ hơn rồi đấy. Upload lên kênh đi. 1, 6, hình như nó là kích thước Upload đây xem được không? Cái này nó có một phần những thói quen của mình từ ngày xưa đến giờ nhé Mà mình đã đào tạo anh em trong nội bộ GODA là Trước khi upload một file thì mình thông thường hay đổi toàn bộ tiêu đề Từ chữ viết hoa thành viết thường hết Sau đó mới upload Thì đấy là cái cách của mình Và YouTube thì nó có rất là nhiều trường phái khác nhau Và nó không có đúng, có sai. Nó chỉ có cách phù hợp thôi. Thế là mình chia sẻ cái cách của mình. Đấy thì mình hay đổi toàn bộ tiêu đề của video sang chữ viết thường. Thì Tuấn đổi cho mình toàn bộ tiêu đề sang viết thường. Đó. Copy cái đấy và đưa dưới viết thành viết thường hết. Lạm dụng ChatGPT Quá phụ thuộc rồi Hôm nay ăn gì? Tôi có nên đưa người yêu đi chơi vào hôm nay không? Mùng 8 tháng 3 tặng quà gì cho vợ? Đó, ok, upload lên. Và cả với thumb cũng vậy nhá, đấy là thói quen của mình. Mình được anh Huân đào tạo về việc đấy. Là cái thói quen từ ngày xưa, từ 2016 anh ấy đã làm. Và mình Shu tuân thủ cái điều đấy và mình thấy nó hiệu quả. Các anh em mới bây giờ làm thì có thể là cũng chả cần. Và anh em thấy vẫn hiệu quả. Thì nó không có đúng có sai. Nó chỉ có cái phù hợp với mình thôi. Ok, upload thì chúng ta sẽ có toàn bộ mọi thứ rồi. Thì upload lên thôi. Tiêu đề thì chỉnh chuẩn. Sao lại x đi? Upload đây đúng không? Mình chỉnh thôi, chỉnh các yếu tố thôi. Lấy tiêu đề chuẩn vào, cho vào đây nhé. Copy vào. OK, mô tả. Các bạn có thể tìm hiểu thêm nhiều video mới nhé. paste vào, rồi hashtag, hashtag thì anh em lưu ý từng cái một nhé, đừng copy cả 3 cái quang vào, nó không nhận đâu. Rồi ấn vào từ từ bình tĩnh rồi, ấn, thấy nó hiện thấy click vào bộ phát, đấy, cái sau cũng nó cũng như vậy thôi, ấn vào, Cho vào, click 1 phát nó mới nhận. Rồi cái tiếp theo. Ok, thừa rồi. Rồi click vào, xong. Rồi chúng ta đến cái tiếp theo là upload thumbnail rồi đẩy thumb lên. Đấy, ai à? Chưa được à? Đây, chuyển kênh khác, chuyển tạm kênh khác để upload để hoàn thiện nút quy trình. Lỗi mình, sorry nha. Về đấy xem, verify chứ, không phải vào tạm kênh, hai kênh kia cũng được mà, kênh nào cũng được. Mình có làm ở đâu? Đấy. Mình có để public đâu mà, cứ upload lên. Tha, Rồi. À, đấy có một cái phần chia sẻ khi mình nhìn thấy cái phần mô tả, có một cái thói quen của mình là mình không có thể để mô tả gọi là mặc định đâu nhá. Và với một niềm tin nào đấy trong mình, mình nghĩ rằng cái việc mặc định đấy nó khiến cái video nó không lên. Cũng giống như kiểu là public video bằng tay ấy. Thì mình được học cái điều đấy từ ngày xưa. Xưa mình cũng duy trì đến bây giờ. Mình không hẹn giờ. Trừ trường hợp bất khả kháng thôi. Thì mình mới hẹn giờ ra còn khởi lại. Không bao giờ hẹn giờ hết. 100% video public bằng tay hết. Ok Rồi thumbnail lên Rồi lưu lại Nếu như chưa đổi tên kìa Đổi đi không chịu được đâu, OCD không chịu được đâu Nhìn được ngớ mắt lắm Sao đấy Xem, sai kích thước à? Sai kích thước là lấy Photoshop resize lại. New file, đúng kích thước của mình đấy, 280720 mà, kích thước của YouTube, full HD cũng đúng Full HD cũng được, nhưng mình hay để là 1, 2, 8, 0 để HD thôi. 1, 2, 8, 0. 7, 20. 7, 20. Ok. Rồi, lấy cái file vừa nãy vào. Zai không chuẩn lắm, ok, kéo ra, cho nó full đi, bên này. Ok, chỉnh đẩy lên một tí, một tí, ok, được rồi, xong, xuất, xuất video, xuất thumb, đẩy thumb bên kia đi. Rồi, export, PNG, được, ok. Rồi, cho desktop ấy. Nhớ đổi tên nhé. Quá phụ thuộc ChatGPT, nghiện không bỏ được. Rồi, cho lên đây. Ok Ở phần danh sách phát này chúng ta sẽ tạo các danh sách phát nó liên quan đến tên kênh của mình và chủ đề của mình. Ví dụ như ở đây mình sẽ tạo ví dụ một danh sách phát ở đây. Cái này nó liên quan đến phần SEO nhưng là để đủ bước thì mình vẫn hướng dẫn anh em. Chúng ta sẽ chọn playlist tạo một cái mới, danh sách phát mới với tên kênh của mình như ví dụ là GODA Story. Cái này là danh sách phát chính của kênh nhé. Còn về sau khi anh em có rất nhiều topic trong cùng một kênh như vậy thì chúng ta có thể chia ra làm các playlist khác nhau. Ví dụ như là câu chuyện chủ tịch giả vờ và cái kết nhưng mà nó lại bối cảnh nhà hàng chẳng hạn. Thì mình có thể ghi là restaurant story, hoặc là hotel story, hoặc là bank story. Kiểu như vậy thì mình sẽ tìm trong chủ đề của mình các cái từ khóa nó đại diện cho cái dạng nội dung đấy. Thì chúng ta sẽ chọn. Đó, chọn nội dung công khai, ngày xuất bản mới nhất. Cái việc mà mình đưa vào ngày xuất bản mới nhất để về sau là khi mà mỗi một cái video chúng ta để playlist ở màn hình kết thúc ấy, thì khi chúng ta kéo kênh mới hoặc khi chúng ta upload video mới vào playlist này, mặc định tất cả những video cũ nó sẽ hiển thị video mới của mình, nó sẽ kéo view cho video mới. Đó, rồi lưu lại tiếp theo Chọn vào playlist chưa Ừ, không lưu à Có chưa Có chưa? Có playlist chưa? Tạo một playlist đi Tuấn. Vào kênh, vào studio tạo. Nó nhiều playlist quá, nó tràn hông dưới. Hôm, đổi tạm với cái kia, tin 3 phút bí ẩn kia, đổi nữa đi. Đấy. Đó. Rồi, add vào cái SingularStory, đấy là ok mà. Đấy là mình lấy ví dụ mà, đâu rồi? Không có, rồi, cứ lấy mới lấy đi. Được rồi, xong đã, xong đã. Rồi, kéo xuống dưới, chưa xong, kéo xuống dưới. Nội dung của tôi không dành cho trẻ em là thứ nhất này. Thứ hai là nội dung đã bị chỉnh sửa. Cái này anh em làm dạng AI nên tích vào nhé. Không là nó bị Reused đấy. Tích vào có. Rồi kéo trong dưới. Cho phép khai thác rồi. Cái phần này nó cứ mặc định như vậy thôi. Rồi xóa cái khai thác mặc định như thế đi. Với đây nó không có. Tiếp theo kéo trong dưới nữa. Ngôn ngữ phụ đề. Cái này quan trọng này. Ngôn ngữ video thì chúng ta sẽ chọn là ngôn ngữ video của mình. Đó là tiếng Anh và Mỹ. English, United States. Rồi, tiếng Anh Hoa Kỳ, đây là tiếng Việt. Chứng nhận phụ đề, chọn vào chứng nhận phụ đề. Nội dung này chưa bao giờ được phát sóng trên truyền hình ở Hoa Kỳ là ok. Cái bên trên. Đó, rồi kéo hông dưới tiếp. Vị trí video anh em có thể để hoặc không nhá. Nếu như mình muốn target nhanh trực tiếp vào Hoa Kỳ, thì để United States là ok. Danh mục, chúng ta chọn danh mục. Giải trí đúng không? Entertainment đúng không? Hay people, vlog. Check lại bảng. Ok, Entertainment là giải trí. Được rồi. Xong. Upload video. Rồi, tiếp theo. Đây là phần cài kiếm tiền này. À, kênh này đang trong net đúng không? Ok, kênh này lâu lắm không làm rồi. Tiếp theo, rồi kiểm tra, tiếp theo. Mức độ phù hợp kéo xuống cuối cùng. Cái này, có kênh này bán kiếm tiền sẵn thì mình cài này cho anh em xem luôn. Không chứa các nội dung nào ở trên, có nghĩa là mình không chứa các nội dung liên quan đến súng ống này, bạo lực này, mọi thứ này. Thứ này, thì mình làm nội dung sạch Mình xác nhận như vậy để YouTube nó duyệt cho mình xanh tiền Đấy rồi, tiếp theo Gửi thông tin đánh giá kìa Gửi thông tin đánh giá Đó, xong tiếp theo Rồi Tiếp theo. Kiểm tra. Rồi. Chế độ hiển thị. Cứ để không công khai. Không công khai là được. Rồi. Ok. Vậy là đã xong toàn bộ quy trình từ việc mình triển khai một content, ý tưởng, nghiên cứu, triển khai content, xong đến phần mình chỉnh sửa video, xong đến phần mình upload lên kênh. Mình sẽ có một cái phần nữa sau đó, đó là một câu hỏi đặt ra rất nhiều anh em là, khi có video, ăn view rồi thì làm thế nào để phát triển tiếp? Và làm thế nào để bắt trend? Anh em có quan tâm vấn đề này không ạ? Hello? Hello? Ok, anh em quan tâm thì mình sẽ chia sẻ nốt. Còn không thì thôi. Có quan tâm không ạ? Ok, xin mời slide tiếp theo. Cái phần này là phần rất là ngắn nhưng mà phần cực kỳ quan trọng về mặt tư duy.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 5.0,
+      "end": 9.22,
+      "start_time": "00:00:05,000",
+      "end_time": "00:00:09,220",
+      "text": "Ok đủ chưa? Đủ rồi chúng ta đến bước dịch nhá!"
+    },
+    {
+      "id": 2,
+      "start": 10.25,
+      "end": 12.91,
+      "start_time": "00:00:10,250",
+      "end_time": "00:00:12,910",
+      "text": "Về kia đây chúng ta sẽ quay lại bảng hướng dẫn"
+    },
+    {
+      "id": 3,
+      "start": 12.91,
+      "end": 14.73,
+      "start_time": "00:00:12,910",
+      "end_time": "00:00:14,730",
+      "text": "Quá trình dịch"
+    },
+    {
+      "id": 4,
+      "start": 14.73,
+      "end": 18.43,
+      "start_time": "00:00:14,730",
+      "end_time": "00:00:18,430",
+      "text": "Khi viết kịch bản tiếng Việt bằng ChatGPT"
+    },
+    {
+      "id": 5,
+      "start": 18.43,
+      "end": 20.0,
+      "start_time": "00:00:18,430",
+      "end_time": "00:00:20,000",
+      "text": "Dịch cũng ở ChatGPT yêu cầu"
+    },
+    {
+      "id": 6,
+      "start": 20.0,
+      "end": 21.3,
+      "start_time": "00:00:20,000",
+      "end_time": "00:00:21,300",
+      "text": "Yêu cầu là phải tab riêng."
+    },
+    {
+      "id": 7,
+      "start": 22.4,
+      "end": 27.76,
+      "start_time": "00:00:22,400",
+      "end_time": "00:00:27,760",
+      "text": "Mình sẽ gán cho nó là bạn là người dịch content nội dung cho tôi với nội dung."
+    },
+    {
+      "id": 8,
+      "start": 28.88,
+      "end": 30.0,
+      "start_time": "00:00:28,880",
+      "end_time": "00:00:30,000",
+      "text": "Quay lại ChatGPT để mình gán."
+    },
+    {
+      "id": 9,
+      "start": 30.0,
+      "end": 31.92,
+      "start_time": "00:00:30,000",
+      "end_time": "00:00:31,920",
+      "text": "Gán cho nó một cái tab riêng đi."
+    },
+    {
+      "id": 10,
+      "start": 36.2,
+      "end": 46.36,
+      "start_time": "00:00:36,200",
+      "end_time": "00:00:46,360",
+      "text": "Bạn là trợ lý dịch content cho nội dung của tôi là Undercover Boss, Undercover CEO ấy."
+    },
+    {
+      "id": 11,
+      "start": 48.4,
+      "end": 49.8,
+      "start_time": "00:00:48,400",
+      "end_time": "00:00:49,800",
+      "text": "Mình đưa dữ liệu cho nó, mình cấp dữ liệu cho nó."
+    },
+    {
+      "id": 12,
+      "start": 50.16,
+      "end": 53.08,
+      "start_time": "00:00:50,160",
+      "end_time": "00:00:53,080",
+      "text": "Cấp càng kỹ thì kết quả mình nhận lại được càng xịn."
+    },
+    {
+      "id": 13,
+      "start": 60.0,
+      "end": 63.62,
+      "start_time": "00:01:00,000",
+      "end_time": "00:01:03,620",
+      "text": "Ok, Enter, gán cho nó đã, gán xong bấm vào mấy dịch."
+    },
+    {
+      "id": 14,
+      "start": 67.1,
+      "end": 74.22,
+      "start_time": "00:01:07,100",
+      "end_time": "00:01:14,220",
+      "text": "Vì trên dữ liệu tổng của cái con ChatGPT này á, thì khi Tuấn có thể click vào cái phần profile của ChatGPT á, click vào."
+    },
+    {
+      "id": 15,
+      "start": 76.08,
+      "end": 77.02,
+      "start_time": "00:01:16,080",
+      "end_time": "00:01:17,020",
+      "text": "Profile bên phải."
+    },
+    {
+      "id": 16,
+      "start": 78.38,
+      "end": 80.08,
+      "start_time": "00:01:18,380",
+      "end_time": "00:01:20,080",
+      "text": "Bên phải, bên phải, phải, phải."
+    },
+    {
+      "id": 17,
+      "start": 80.74,
+      "end": 81.2,
+      "start_time": "00:01:20,740",
+      "end_time": "00:01:21,200",
+      "text": "Đấy là trái."
+    },
+    {
+      "id": 18,
+      "start": 81.88,
+      "end": 82.12,
+      "start_time": "00:01:21,880",
+      "end_time": "00:01:22,120",
+      "text": "Đấy."
+    },
+    {
+      "id": 19,
+      "start": 82.74,
+      "end": 83.08,
+      "start_time": "00:01:22,740",
+      "end_time": "00:01:23,080",
+      "text": "Cài đặt."
+    },
+    {
+      "id": 20,
+      "start": 86.34,
+      "end": 87.32,
+      "start_time": "00:01:26,340",
+      "end_time": "00:01:27,320",
+      "text": "Kiểm soát dữ liệu."
+    },
+    {
+      "id": 21,
+      "start": 91.1,
+      "end": 92.2,
+      "start_time": "00:01:31,100",
+      "end_time": "00:01:32,200",
+      "text": "Số tư liệu không gọi."
+    },
+    {
+      "id": 22,
+      "start": 92.38,
+      "end": 92.98,
+      "start_time": "00:01:32,380",
+      "end_time": "00:01:32,980",
+      "text": "Chung phần chung thôi."
+    },
+    {
+      "id": 23,
+      "start": 93.08,
+      "end": 93.92,
+      "start_time": "00:01:33,080",
+      "end_time": "00:01:33,920",
+      "text": "Mình thấy..."
+    },
+    {
+      "id": 24,
+      "start": 93.92,
+      "end": 95.62,
+      "start_time": "00:01:33,920",
+      "end_time": "00:01:35,620",
+      "text": "Để phần đấy lấy cái phần quản lý."
+    },
+    {
+      "id": 25,
+      "start": 95.66,
+      "end": 97.72,
+      "start_time": "00:01:35,660",
+      "end_time": "00:01:37,720",
+      "text": "Đoạn chat đã lưu trữ, không phải..."
+    },
+    {
+      "id": 26,
+      "start": 99.88,
+      "end": 101.52,
+      "start_time": "00:01:39,880",
+      "end_time": "00:01:41,520",
+      "text": "Dữ liệu nó ở đâu nhỉ?"
+    },
+    {
+      "id": 27,
+      "start": 102.58,
+      "end": 104.46,
+      "start_time": "00:01:42,580",
+      "end_time": "00:01:44,460",
+      "text": "Cá nhân hóa đúng không? Ok, cá nhân hóa đi."
+    },
+    {
+      "id": 28,
+      "start": 104.86,
+      "end": 105.81,
+      "start_time": "00:01:44,860",
+      "end_time": "00:01:45,810",
+      "text": "Quản lý bộ nhớ đúng rồi, đúng rồi."
+    },
+    {
+      "id": 29,
+      "start": 105.81,
+      "end": 116.53,
+      "start_time": "00:01:45,810",
+      "end_time": "00:01:56,530",
+      "text": "Chưa lưu à? Chưa update à? Thông thường thì nó sẽ lưu ở đây nhé, F5 lại cái xem nó có lưu cho."
+    },
+    {
+      "id": 30,
+      "start": 123.89,
+      "end": 131.87,
+      "start_time": "00:02:03,890",
+      "end_time": "00:02:11,870",
+      "text": "Quản lý bộ nhớ xem lưu cho, vẫn chưa lưu. Có thể là đang bị lỗi, không sao, bỏ qua mặt đấy."
+    },
+    {
+      "id": 31,
+      "start": 131.87,
+      "end": 138.31,
+      "start_time": "00:02:11,870",
+      "end_time": "00:02:18,310",
+      "text": "Thông thường thì chúng ta khi mà lưu dữ liệu ở kia nó sẽ lưu ở đấy là các cái dữ liệu mình đã lưu ở đấy là nó sẽ nạp dữ liệu ở đấy đấy."
+    },
+    {
+      "id": 32,
+      "start": 138.75,
+      "end": 145.95,
+      "start_time": "00:02:18,750",
+      "end_time": "00:02:25,950",
+      "text": "Chúng ta kiểm tra ở đấy xem nó có lưu chứ nhé. Nó chưa lưu rồi mình phải nạp lại đấy. Bắt buộc đấy, nạp đến khi nào nó lưu thì thôi. Vậy sao nó viết nó theo ý mình được."
+    },
+    {
+      "id": 33,
+      "start": 147.57,
+      "end": 148.59,
+      "start_time": "00:02:27,570",
+      "end_time": "00:02:28,590",
+      "text": "Ok, gửi nội dung."
+    },
+    {
+      "id": 34,
+      "start": 151.23,
+      "end": 153.53,
+      "start_time": "00:02:31,230",
+      "end_time": "00:02:33,530",
+      "text": "Không cần cái dữ liệu đâu, không cần, bỏ đi."
+    },
+    {
+      "id": 35,
+      "start": 154.49,
+      "end": 156.91,
+      "start_time": "00:02:34,490",
+      "end_time": "00:02:36,910",
+      "text": "Có thể nó đang bị lỗi, nó có dữ liệu ở đấy, nó đang ghi rồi mà."
+    },
+    {
+      "id": 36,
+      "start": 158.13,
+      "end": 160.59,
+      "start_time": "00:02:38,130",
+      "end_time": "00:02:40,590",
+      "text": "Rồi copy content vào đây, dịch cho tôi content này."
+    },
+    {
+      "id": 37,
+      "start": 161.87,
+      "end": 166.99,
+      "start_time": "00:02:41,870",
+      "end_time": "00:02:46,990",
+      "text": "Có chuột A, xong copy toàn bộ, dịch cho content này, sang tiếng Anh."
+    },
+    {
+      "id": 38,
+      "start": 171.35,
+      "end": 178.78,
+      "start_time": "00:02:51,350",
+      "end_time": "00:02:58,780",
+      "text": "Đó là một tệp dài"
+    },
+    {
+      "id": 39,
+      "start": 178.78,
+      "end": 186.22,
+      "start_time": "00:02:58,780",
+      "end_time": "00:03:06,220",
+      "text": "và nặng, vì vậy"
+    },
+    {
+      "id": 40,
+      "start": 186.22,
+      "end": 193.65,
+      "start_time": "00:03:06,220",
+      "end_time": "00:03:13,650",
+      "text": "nó sẽ cần thời gian."
+    },
+    {
+      "id": 41,
+      "start": 193.65,
+      "end": 196.89,
+      "start_time": "00:03:13,650",
+      "end_time": "00:03:16,890",
+      "text": "Chúng ta sẽ dịch các đoạn nhỏ hơn"
+    },
+    {
+      "id": 42,
+      "start": 196.89,
+      "end": 198.89,
+      "start_time": "00:03:16,890",
+      "end_time": "00:03:18,890",
+      "text": "Dịch các đoạn nhỏ hơn"
+    },
+    {
+      "id": 43,
+      "start": 198.89,
+      "end": 200.45,
+      "start_time": "00:03:18,890",
+      "end_time": "00:03:20,450",
+      "text": "Chia ra các chapter vừa nãy"
+    },
+    {
+      "id": 44,
+      "start": 200.45,
+      "end": 203.47,
+      "start_time": "00:03:20,450",
+      "end_time": "00:03:23,470",
+      "text": "Nó đúng theo một cái token của nó"
+    },
+    {
+      "id": 45,
+      "start": 203.47,
+      "end": 204.49,
+      "start_time": "00:03:23,470",
+      "end_time": "00:03:24,490",
+      "text": "Chỉ có thể sử dụng thôi"
+    },
+    {
+      "id": 46,
+      "start": 204.49,
+      "end": 206.01,
+      "start_time": "00:03:24,490",
+      "end_time": "00:03:26,010",
+      "text": "Mình dịch dài quá nó cũng dịch được"
+    },
+    {
+      "id": 47,
+      "start": 206.01,
+      "end": 210.43,
+      "start_time": "00:03:26,010",
+      "end_time": "00:03:30,430",
+      "text": "Theo chapter thôi"
+    },
+    {
+      "id": 48,
+      "start": 210.43,
+      "end": 213.29,
+      "start_time": "00:03:30,430",
+      "end_time": "00:03:33,290",
+      "text": "Cứ đến hết chapter là mình dịch một phát"
+    },
+    {
+      "id": 49,
+      "start": 213.29,
+      "end": 214.35,
+      "start_time": "00:03:33,290",
+      "end_time": "00:03:34,350",
+      "text": "Ok copy bằng dịch đi"
+    },
+    {
+      "id": 50,
+      "start": 214.35,
+      "end": 215.47,
+      "start_time": "00:03:34,350",
+      "end_time": "00:03:35,470",
+      "text": "Nhưng mà đúng chapter nhé"
+    },
+    {
+      "id": 51,
+      "start": 223.65,
+      "end": 230.47,
+      "start_time": "00:03:43,650",
+      "end_time": "00:03:50,470",
+      "text": "Cái dịch này mình cũng nên dịch đoạn ngắn thôi, mục"
+    },
+    {
+      "id": 52,
+      "start": 230.47,
+      "end": 237.29,
+      "start_time": "00:03:50,470",
+      "end_time": "00:03:57,290",
+      "text": "đích là để mình cũng phải kiểm soát lại nữa,"
+    },
+    {
+      "id": 53,
+      "start": 237.29,
+      "end": 244.11,
+      "start_time": "00:03:57,290",
+      "end_time": "00:04:04,110",
+      "text": "chứ không phải dịch cả đoạn dài được, nó sai nghĩa."
+    },
+    {
+      "id": 54,
+      "start": 248.67,
+      "end": 250.99,
+      "start_time": "00:04:08,670",
+      "end_time": "00:04:10,990",
+      "text": "Đó, nó sẽ dịch cho mình, từng đoạn, từng đoạn như vậy."
+    },
+    {
+      "id": 55,
+      "start": 250.99,
+      "end": 251.75,
+      "start_time": "00:04:10,990",
+      "end_time": "00:04:11,750",
+      "text": "Như vậy"
+    },
+    {
+      "id": 56,
+      "start": 253.81,
+      "end": 256.11,
+      "start_time": "00:04:13,810",
+      "end_time": "00:04:16,110",
+      "text": "Cái việc của mình sẽ cần phải check lại chính tả"
+    },
+    {
+      "id": 57,
+      "start": 256.11,
+      "end": 257.13,
+      "start_time": "00:04:16,110",
+      "end_time": "00:04:17,130",
+      "text": "Vì đôi khi là"
+    },
+    {
+      "id": 58,
+      "start": 257.39,
+      "end": 259.95,
+      "start_time": "00:04:17,390",
+      "end_time": "00:04:19,950",
+      "text": "Dịch một đoạn dài như thế này chưa chắc nó đúng 100% đâu"
+    },
+    {
+      "id": 59,
+      "start": 259.95,
+      "end": 262.51,
+      "start_time": "00:04:19,950",
+      "end_time": "00:04:22,510",
+      "text": "Vậy nên chúng ta sẽ cần dùng thêm các công cụ khác nữa"
+    },
+    {
+      "id": 60,
+      "start": 262.51,
+      "end": 264.05,
+      "start_time": "00:04:22,510",
+      "end_time": "00:04:24,050",
+      "text": "Các extension khác nữa để mình check"
+    },
+    {
+      "id": 61,
+      "start": 264.05,
+      "end": 265.59,
+      "start_time": "00:04:24,050",
+      "end_time": "00:04:25,590",
+      "text": "Copy content này đi"
+    },
+    {
+      "id": 62,
+      "start": 267.37,
+      "end": 268.15,
+      "start_time": "00:04:27,370",
+      "end_time": "00:04:28,150",
+      "text": "Copy content"
+    },
+    {
+      "id": 63,
+      "start": 270.19,
+      "end": 270.99,
+      "start_time": "00:04:30,190",
+      "end_time": "00:04:30,990",
+      "text": "Rồi quay lại"
+    },
+    {
+      "id": 64,
+      "start": 270.99,
+      "end": 272.99,
+      "start_time": "00:04:30,990",
+      "end_time": "00:04:32,990",
+      "text": "tại phần hướng dẫn"
+    },
+    {
+      "id": 65,
+      "start": 277.0,
+      "end": 285.09,
+      "start_time": "00:04:37,000",
+      "end_time": "00:04:45,090",
+      "text": "nếu ChatGPT dịch không chuẩn xuống dòng nhiều tiếp tục yêu cầu và check chính tả bằng Grammarly thì chúng ta sẽ có cái extension là Grammarly"
+    },
+    {
+      "id": 66,
+      "start": 285.09,
+      "end": 287.41,
+      "start_time": "00:04:45,090",
+      "end_time": "00:04:47,410",
+      "text": "Ở, ấn vào extension đi rồi này."
+    },
+    {
+      "id": 67,
+      "start": 292.65,
+      "end": 299.57,
+      "start_time": "00:04:52,650",
+      "end_time": "00:04:59,570",
+      "text": "Đó, chúng ta sẽ paste 1 cái content ra cái file bên dưới nào, mình sẽ có bản tính, tiếng Việt bên trên đúng không, và bản tiếng Anh bên dưới."
+    },
+    {
+      "id": 68,
+      "start": 299.99,
+      "end": 302.61,
+      "start_time": "00:04:59,990",
+      "end_time": "00:05:02,610",
+      "text": "Cái file content đâu, chuyển vào file content, xuống cái dưới cùng."
+    },
+    {
+      "id": 69,
+      "start": 304.57,
+      "end": 306.57,
+      "start_time": "00:05:04,570",
+      "end_time": "00:05:06,570",
+      "text": "Dưới cùng, và paste bản tiếng Anh vào."
+    },
+    {
+      "id": 70,
+      "start": 307.75,
+      "end": 310.61,
+      "start_time": "00:05:07,750",
+      "end_time": "00:05:10,610",
+      "text": "Enter, nữa nữa rồi, tiếng Anh, bản tiếng Anh."
+    },
+    {
+      "id": 71,
+      "start": 310.61,
+      "end": 319.15,
+      "start_time": "00:05:10,610",
+      "end_time": "00:05:19,150",
+      "text": "Các bạn content bên mình cũng đều phải làm content là song ngữ, cả tiếng Việt và tiếng Anh để mình cũng check lại."
+    },
+    {
+      "id": 72,
+      "start": 319.85,
+      "end": 323.65,
+      "start_time": "00:05:19,850",
+      "end_time": "00:05:23,650",
+      "text": "Chứ thật ra là nếu như mình mà ngồi check content tầm 2 tiếng một tiếng Anh thì check làm sao được?"
+    },
+    {
+      "id": 73,
+      "start": 324.13,
+      "end": 325.71,
+      "start_time": "00:05:24,130",
+      "end_time": "00:05:25,710",
+      "text": "Không check được, chỉ cứ check tiếng Việt thôi."
+    },
+    {
+      "id": 74,
+      "start": 326.39,
+      "end": 328.55,
+      "start_time": "00:05:26,390",
+      "end_time": "00:05:28,550",
+      "text": "Vì quy trình dịch những em đã có rồi là không sai được."
+    },
+    {
+      "id": 75,
+      "start": 330.71,
+      "end": 335.59,
+      "start_time": "00:05:30,710",
+      "end_time": "00:05:35,590",
+      "text": "Đó, những cái khoảng mà họ bôi đỏ kia là những cái đoạn mà mình cần sửa lại kìa."
+    },
+    {
+      "id": 76,
+      "start": 335.59,
+      "end": 344.67,
+      "start_time": "00:05:35,590",
+      "end_time": "00:05:44,670",
+      "text": "Nó liên quan đến ngữ pháp và sau mình đưa vào cái phần sử dụng ElevenLabs, các phần mềm Voice, Audio AI, nó sẽ không bị lỗi."
+    },
+    {
+      "id": 77,
+      "start": 344.67,
+      "end": 354.8,
+      "start_time": "00:05:44,670",
+      "end_time": "00:05:54,800",
+      "text": "Ấn vào đấy, nó sẽ sửa cho mình các cái lỗi dấu câu này, đó, sửa. Rồi, most important, ấn vào đấy xem có có sửa gì không."
+    },
+    {
+      "id": 78,
+      "start": 354.8,
+      "end": 362.5,
+      "start_time": "00:05:54,800",
+      "end_time": "00:06:02,500",
+      "text": "Accept, xong. Vậy là xong bằng content. Dịch xong."
+    },
+    {
+      "id": 79,
+      "start": 367.8,
+      "end": 373.5,
+      "start_time": "00:06:07,800",
+      "end_time": "00:06:13,500",
+      "text": "Ok, mình sẽ dịch ví dụ một đoạn như vậy, anh em sẽ lặp lại lặp lại liên tục cho đến khi hết bài vì content rất dài."
+    },
+    {
+      "id": 80,
+      "start": 374.0,
+      "end": 375.38,
+      "start_time": "00:06:14,000",
+      "end_time": "00:06:15,380",
+      "text": "Với đây chỉ có thể ví dụ một đoạn thôi."
+    },
+    {
+      "id": 81,
+      "start": 377.04,
+      "end": 379.92,
+      "start_time": "00:06:17,040",
+      "end_time": "00:06:19,920",
+      "text": "Ok, tiếp theo, quay lại slide sẽ đến phần tiếp theo."
+    },
+    {
+      "id": 82,
+      "start": 380.8,
+      "end": 384.6,
+      "start_time": "00:06:20,800",
+      "end_time": "00:06:24,600",
+      "text": "Chúng ta đã làm xong phần cách viết content bằng ChatGPT, dịch xong rồi."
+    },
+    {
+      "id": 83,
+      "start": 385.0,
+      "end": 394.77,
+      "start_time": "00:06:25,000",
+      "end_time": "00:06:34,770",
+      "text": "Thì chúng ta sẽ đến bước là cách làm thumbnail bằng ChatGPT. Cái này là update mới nhất, bên mình vẫn đang test và tối ưu rất là tốt. Bên mình sẽ sử dụng linh hoạt cả"
+    },
+    {
+      "id": 84,
+      "start": 394.77,
+      "end": 404.73,
+      "start_time": "00:06:34,770",
+      "end_time": "00:06:44,730",
+      "text": "Leonardo AI này, vì nó rẻ và nó chất lượng tốt. Hiện tại bên mình đánh giá là cái Midjourney nó là một cái khá đắt. Và thực tế là nó đang update rất chậm so"
+    },
+    {
+      "id": 85,
+      "start": 404.73,
+      "end": 414.7,
+      "start_time": "00:06:44,730",
+      "end_time": "00:06:54,700",
+      "text": "với đội còn lại. Mình không đánh giá cao thằng Midjourney nữa. Bên mình là có 3 tài khoản Midjourney kìa. 3 tài khoản mua gói năm. Mà bây giờ cũng hủy hết rồi. Không dùng nữa."
+    },
+    {
+      "id": 86,
+      "start": 414.8,
+      "end": 417.3,
+      "start_time": "00:06:54,800",
+      "end_time": "00:06:57,300",
+      "text": "Anh em còn lại còn thời hạn dùng nốt rồi."
+    },
+    {
+      "id": 87,
+      "start": 417.3,
+      "end": 420.3,
+      "start_time": "00:06:57,300",
+      "end_time": "00:07:00,300",
+      "text": "Đấy thì chúng ta sẽ dùng ChatGPT để làm luôn."
+    },
+    {
+      "id": 88,
+      "start": 420.3,
+      "end": 422.8,
+      "start_time": "00:07:00,300",
+      "end_time": "00:07:02,800",
+      "text": "Thì chúng ta sẽ tạo một ChatGPT mới."
+    },
+    {
+      "id": 89,
+      "start": 422.8,
+      "end": 425.3,
+      "start_time": "00:07:02,800",
+      "end_time": "00:07:05,300",
+      "text": "Và ChatGPT để làm thumb luôn."
+    },
+    {
+      "id": 90,
+      "start": 425.3,
+      "end": 433.0,
+      "start_time": "00:07:05,300",
+      "end_time": "00:07:13,000",
+      "text": "Cái cách đơn giản nhất để làm một cái thumb hay là mình đi sao chép phong cách của đối thủ."
+    },
+    {
+      "id": 91,
+      "start": 433.0,
+      "end": 435.54,
+      "start_time": "00:07:13,000",
+      "end_time": "00:07:15,540",
+      "text": "Thì chúng ta sẽ thực hiện cái việc là"
+    },
+    {
+      "id": 92,
+      "start": 435.54,
+      "end": 438.1,
+      "start_time": "00:07:15,540",
+      "end_time": "00:07:18,100",
+      "text": "remake lại cái thumbnail của đối thủ thôi."
+    },
+    {
+      "id": 93,
+      "start": 438.1,
+      "end": 441.1,
+      "start_time": "00:07:18,100",
+      "end_time": "00:07:21,100",
+      "text": "Tìm lại cái bài vừa nãy mình đang làm content."
+    },
+    {
+      "id": 94,
+      "start": 441.1,
+      "end": 444.1,
+      "start_time": "00:07:21,100",
+      "end_time": "00:07:24,100",
+      "text": "Lấy cái thumb."
+    },
+    {
+      "id": 95,
+      "start": 444.1,
+      "end": 445.5,
+      "start_time": "00:07:24,100",
+      "end_time": "00:07:25,500",
+      "text": "Ấn vào."
+    },
+    {
+      "id": 96,
+      "start": 445.5,
+      "end": 447.8,
+      "start_time": "00:07:25,500",
+      "end_time": "00:07:27,800",
+      "text": "vidIQ nó sẽ có cái tính năng này mà anh em mình lưu được."
+    },
+    {
+      "id": 97,
+      "start": 447.8,
+      "end": 450.2,
+      "start_time": "00:07:27,800",
+      "end_time": "00:07:30,200",
+      "text": "Thumb nhá, lưu hình ảnh thành."
+    },
+    {
+      "id": 98,
+      "start": 450.2,
+      "end": 451.2,
+      "start_time": "00:07:30,200",
+      "end_time": "00:07:31,200",
+      "text": "Desktop đi."
+    },
+    {
+      "id": 99,
+      "start": 451.2,
+      "end": 453.0,
+      "start_time": "00:07:31,200",
+      "end_time": "00:07:33,000",
+      "text": "Thumb mẫu."
+    },
+    {
+      "id": 100,
+      "start": 453.0,
+      "end": 458.26,
+      "start_time": "00:07:33,000",
+      "end_time": "00:07:38,260",
+      "text": "Thumb mẫu"
+    },
+    {
+      "id": 101,
+      "start": 458.26,
+      "end": 458.9,
+      "start_time": "00:07:38,260",
+      "end_time": "00:07:38,900",
+      "text": "Ok"
+    },
+    {
+      "id": 102,
+      "start": 458.9,
+      "end": 459.84,
+      "start_time": "00:07:38,900",
+      "end_time": "00:07:39,840",
+      "text": "Vào ChatGPT"
+    },
+    {
+      "id": 103,
+      "start": 459.87,
+      "end": 469.44,
+      "start_time": "00:07:39,870",
+      "end_time": "00:07:49,440",
+      "text": "Paste cái thumb vào, đưa thumb vào. Không tính ra bình thường nhé, cái này không ra đâu nhé. Không ra đâu, cứ thử xem, cứ thử đi,"
+    },
+    {
+      "id": 104,
+      "start": 469.44,
+      "end": 479.01,
+      "start_time": "00:07:49,440",
+      "end_time": "00:07:59,010",
+      "text": "thử để biết, thử biết nó sẽ không ra. Làm lại thumb này cho tôi, với nhân vật khoảng 40 tuổi, nhân vật chính khoảng 40 tuổi."
+    },
+    {
+      "id": 105,
+      "start": 489.87,
+      "end": 494.35,
+      "start_time": "00:08:09,870",
+      "end_time": "00:08:14,350",
+      "text": "Xem vẽ được không?"
+    },
+    {
+      "id": 106,
+      "start": 502.57,
+      "end": 503.89,
+      "start_time": "00:08:22,570",
+      "end_time": "00:08:23,890",
+      "text": "Đấy, về tab bình thường đi."
+    },
+    {
+      "id": 107,
+      "start": 505.71,
+      "end": 508.05,
+      "start_time": "00:08:25,710",
+      "end_time": "00:08:28,050",
+      "text": "Vế không ra đâu, về tab bình thường, paste lại cái thumbnail."
+    },
+    {
+      "id": 108,
+      "start": 510.0,
+      "end": 519.15,
+      "start_time": "00:08:30,000",
+      "end_time": "00:08:39,150",
+      "text": "Rồi, viết lại, vẽ lại thumbnail này cho tôi với kích thước 1280 x 720."
+    },
+    {
+      "id": 109,
+      "start": 523.75,
+      "end": 531.62,
+      "start_time": "00:08:43,750",
+      "end_time": "00:08:51,620",
+      "text": "Cái này anh em cần chi tiết đây. Nhân vật chính. Mình muốn người ta như thế nào? Mình"
+    },
+    {
+      "id": 110,
+      "start": 531.62,
+      "end": 539.5,
+      "start_time": "00:08:51,620",
+      "end_time": "00:08:59,500",
+      "text": "mô tả như vậy. Ví dụ như đây mình muốn là nhân vật chính. Nhân vật chính khoảng 40"
+    },
+    {
+      "id": 111,
+      "start": 539.5,
+      "end": 547.37,
+      "start_time": "00:08:59,500",
+      "end_time": "00:09:07,370",
+      "text": "tuổi. Tóc vàng, mặc quần áo, mặc áo hơi rách. Tóc vàng vì sao? Vì bên họ tóc vàng."
+    },
+    {
+      "id": 112,
+      "start": 547.37,
+      "end": 553.37,
+      "start_time": "00:09:07,370",
+      "end_time": "00:09:13,370",
+      "text": "Mặc áo hơi rách, mặt nghiêm trọng."
+    },
+    {
+      "id": 113,
+      "start": 558.05,
+      "end": 567.25,
+      "start_time": "00:09:18,050",
+      "end_time": "00:09:27,250",
+      "text": "Rồi chấm, hai nhân vật phía sau đang thỉ thẩm điều gì đó."
+    },
+    {
+      "id": 114,
+      "start": 570.81,
+      "end": 571.45,
+      "start_time": "00:09:30,810",
+      "end_time": "00:09:31,450",
+      "text": "Bí ẩn."
+    },
+    {
+      "id": 115,
+      "start": 572.61,
+      "end": 574.91,
+      "start_time": "00:09:32,610",
+      "end_time": "00:09:34,910",
+      "text": "Cái này thì chúng ta cần phải xem nhiều và phân tích nhiều."
+    },
+    {
+      "id": 116,
+      "start": 574.91,
+      "end": 581.91,
+      "start_time": "00:09:34,910",
+      "end_time": "00:09:41,910",
+      "text": "Rồi ấn Enter, xem nó có ra không. Thông thường nó ra được khoảng 70% đấy. Cái ChatGPT mới là nó ngon."
+    },
+    {
+      "id": 117,
+      "start": 581.91,
+      "end": 592.61,
+      "start_time": "00:09:41,910",
+      "end_time": "00:09:52,610",
+      "text": "Mỗi tội là render đang hơi lâu, không biết là sắp tới có khắc phục được không. Hiện tại mình thấy là render hơi lâu."
+    },
+    {
+      "id": 118,
+      "start": 592.61,
+      "end": 600.61,
+      "start_time": "00:09:52,610",
+      "end_time": "00:10:00,610",
+      "text": "Cái ChatGPT mới này thì trên các cộng đồng ở nước ngoài họ đang chia sẻ rất là nhiều."
+    },
+    {
+      "id": 119,
+      "start": 600.61,
+      "end": 604.61,
+      "start_time": "00:10:00,610",
+      "end_time": "00:10:04,610",
+      "text": "Nên là họ đưa một cái bản gọi là vẽ tay ấy, nguệch ngoạc ra."
+    },
+    {
+      "id": 120,
+      "start": 604.61,
+      "end": 607.8,
+      "start_time": "00:10:04,610",
+      "end_time": "00:10:07,800",
+      "text": "Và cũng ra những kết quả thực sự là rất là wow."
+    },
+    {
+      "id": 121,
+      "start": 607.8,
+      "end": 610.52,
+      "start_time": "00:10:07,800",
+      "end_time": "00:10:10,520",
+      "text": "Mình không nghĩ là ChatGPT hoàn thiện nhanh những mức như vậy."
+    },
+    {
+      "id": 122,
+      "start": 611.6,
+      "end": 614.26,
+      "start_time": "00:10:11,600",
+      "end_time": "00:10:14,260",
+      "text": "Cái việc mà sao chép lại một cái thumb khác thì mình nghĩ nó không quá khó."
+    },
+    {
+      "id": 123,
+      "start": 614.68,
+      "end": 620.72,
+      "start_time": "00:10:14,680",
+      "end_time": "00:10:20,720",
+      "text": "Nhưng cái việc mà từ một cái bản vẽ tay, bản vẽ nguệch ngoạc thôi mà nó cũng ra được thì đấy là một sự rất là kinh khủng đấy."
+    },
+    {
+      "id": 124,
+      "start": 622.82,
+      "end": 624.22,
+      "start_time": "00:10:22,820",
+      "end_time": "00:10:24,220",
+      "text": "Nó sẽ mất thời gian đấy, cái này là khá là lâu đấy."
+    },
+    {
+      "id": 125,
+      "start": 624.72,
+      "end": 628.08,
+      "start_time": "00:10:24,720",
+      "end_time": "00:10:28,080",
+      "text": "Giữ nguyên, đừng có tắt tab, ngắt tác vụ của nó."
+    },
+    {
+      "id": 126,
+      "start": 629.7,
+      "end": 631.1,
+      "start_time": "00:10:29,700",
+      "end_time": "00:10:31,100",
+      "text": "Đang tạo ảnh có thể mất một lúc."
+    },
+    {
+      "id": 127,
+      "start": 631.54,
+      "end": 635.58,
+      "start_time": "00:10:31,540",
+      "end_time": "00:10:35,580",
+      "text": "Mình mô tả càng chi tiết bao nhiêu thì nó càng lâu với nhiêu nhưng mà nó ra kết quả đúng ý mình."
+    },
+    {
+      "id": 128,
+      "start": 637.4,
+      "end": 639.22,
+      "start_time": "00:10:37,400",
+      "end_time": "00:10:39,220",
+      "text": "Đây thấy có cả mũi tên kìa, hay nhỉ."
+    },
+    {
+      "id": 129,
+      "start": 642.52,
+      "end": 643.48,
+      "start_time": "00:10:42,520",
+      "end_time": "00:10:43,480",
+      "text": "Đấy, tóc vàng rồi kìa."
+    },
+    {
+      "id": 130,
+      "start": 644.72,
+      "end": 645.48,
+      "start_time": "00:10:44,720",
+      "end_time": "00:10:45,480",
+      "text": "Đấy, tóc vàng rồi."
+    },
+    {
+      "id": 131,
+      "start": 646.8,
+      "end": 649.64,
+      "start_time": "00:10:46,800",
+      "end_time": "00:10:49,640",
+      "text": "Đó, mặt có vẻ nhìn cũng có vẻ hơi nghiêm trọng rồi."
+    },
+    {
+      "id": 132,
+      "start": 649.64,
+      "end": 654.88,
+      "start_time": "00:10:49,640",
+      "end_time": "00:10:54,880",
+      "text": "Vũ khí bí mật đấy"
+    },
+    {
+      "id": 133,
+      "start": 654.88,
+      "end": 660.08,
+      "start_time": "00:10:54,880",
+      "end_time": "00:11:00,080",
+      "text": "Nhân nó rồi, nghiêm trọng rồi"
+    },
+    {
+      "id": 134,
+      "start": 660.08,
+      "end": 663.98,
+      "start_time": "00:11:00,080",
+      "end_time": "00:11:03,980",
+      "text": "Đấy, 2 nhân vật đằng sau bắt thấy nó bắt đầu thầm thì rồi"
+    },
+    {
+      "id": 135,
+      "start": 663.98,
+      "end": 670.48,
+      "start_time": "00:11:03,980",
+      "end_time": "00:11:10,480",
+      "text": "Nhìn thì có vẻ hơi giống cái bên trên"
+    },
+    {
+      "id": 136,
+      "start": 670.48,
+      "end": 672.36,
+      "start_time": "00:11:10,480",
+      "end_time": "00:11:12,360",
+      "text": "Nhưng lại không đánh bản quyền được"
+    },
+    {
+      "id": 137,
+      "start": 675.65,
+      "end": 678.57,
+      "start_time": "00:11:15,650",
+      "end_time": "00:11:18,570",
+      "text": "Đó, thi thầm chưa?"
+    },
+    {
+      "id": 138,
+      "start": 683.05,
+      "end": 683.73,
+      "start_time": "00:11:23,050",
+      "end_time": "00:11:23,730",
+      "text": "Siêu nét!"
+    },
+    {
+      "id": 139,
+      "start": 688.73,
+      "end": 694.99,
+      "start_time": "00:11:28,730",
+      "end_time": "00:11:34,990",
+      "text": "Và đây là cái bên GODA mình đang làm mà triển khai, cái này mới ra mắt mình nhớ không nhầm được khoảng 1 tuần gần đây thôi."
+    },
+    {
+      "id": 140,
+      "start": 696.09,
+      "end": 703.97,
+      "start_time": "00:11:36,090",
+      "end_time": "00:11:43,970",
+      "text": "Tại vì là với 1 cái áp lực là người dẫn đầu, thì bên mình luôn luôn phải đi tìm những thứ mới và update những thứ mới nhất."
+    },
+    {
+      "id": 141,
+      "start": 703.97,
+      "end": 713.09,
+      "start_time": "00:11:43,970",
+      "end_time": "00:11:53,090",
+      "text": "Ví dụ đợt vừa rồi mình có update thêm những cái về chính sách về quảng cáo ấy, thì tí nữa cũng sẽ có phần đấy hỗ trợ anh em. Đây"
+    },
+    {
+      "id": 142,
+      "start": 713.09,
+      "end": 722.21,
+      "start_time": "00:11:53,090",
+      "end_time": "00:12:02,210",
+      "text": "là một cái cực kỳ dễ, cực kỳ đẹp. Thì vậy nãy giờ chúng ta đã trải qua hết những cái phần là từ làm content này, dịch này, đã"
+    },
+    {
+      "id": 143,
+      "start": 722.21,
+      "end": 731.33,
+      "start_time": "00:12:02,210",
+      "end_time": "00:12:11,330",
+      "text": "giải quyết tất cả mọi vấn đề của anh em rồi. Đến bây giờ là thumbnail. Thế còn phần gì nhỉ? Edit video đúng không? Phần này là phần dễ nhất."
+    },
+    {
+      "id": 144,
+      "start": 731.33,
+      "end": 738.65,
+      "start_time": "00:12:11,330",
+      "end_time": "00:12:18,650",
+      "text": "Giống như câu chuyện của 2 anh chị làm ra 80.000 đô một tháng với một kênh"
+    },
+    {
+      "id": 145,
+      "start": 738.65,
+      "end": 745.85,
+      "start_time": "00:12:18,650",
+      "end_time": "00:12:25,850",
+      "text": "thì họ dành ra phần lớn thời gian của họ 70-80% thời gian của họ để họ làm content"
+    },
+    {
+      "id": 146,
+      "start": 745.85,
+      "end": 750.91,
+      "start_time": "00:12:25,850",
+      "end_time": "00:12:30,910",
+      "text": "Thumbnail của họ làm bằng ChatGPT nhưng mà nó là bản cũ thì nó hơi xấu"
+    },
+    {
+      "id": 147,
+      "start": 750.91,
+      "end": 758.61,
+      "start_time": "00:12:30,910",
+      "end_time": "00:12:38,610",
+      "text": "Nhưng với cái bản mới như bây giờ thì mình nghĩ là với cái tốc độ như này thì chắc chắn anh chị sẽ còn nhân được nhiều nhiều kênh như thế nữa"
+    },
+    {
+      "id": 148,
+      "start": 758.61,
+      "end": 761.29,
+      "start_time": "00:12:38,610",
+      "end_time": "00:12:41,290",
+      "text": "Con số nó sẽ lên rất là nhiều, rất là khác"
+    },
+    {
+      "id": 149,
+      "start": 761.29,
+      "end": 765.0,
+      "start_time": "00:12:41,290",
+      "end_time": "00:12:45,000",
+      "text": "Cái này mấy mươi anh chị sẽ được update, có thể sau anh em một chút"
+    },
+    {
+      "id": 150,
+      "start": 765.0,
+      "end": 774.75,
+      "start_time": "00:12:45,000",
+      "end_time": "00:12:54,750",
+      "text": "Ok, khi chúng ta đã có 1 cái thumbnail rồi, 1 content rồi, chúng ta cần là gì? Voiceover, là âm thanh, là giọng đọc."
+    },
+    {
+      "id": 151,
+      "start": 775.31,
+      "end": 779.95,
+      "start_time": "00:12:55,310",
+      "end_time": "00:12:59,950",
+      "text": "Thì chúng ta sẽ sử dụng là ElevenLabs, copy content vừa nãy vào đi."
+    },
+    {
+      "id": 152,
+      "start": 782.41,
+      "end": 788.09,
+      "start_time": "00:13:02,410",
+      "end_time": "00:13:08,090",
+      "text": "Bản tiếng Anh nhá. Nếu mà có ngắn quá thì mình sẽ cần làm dài hơn 1 chút, chứ không làm ngắn quá."
+    },
+    {
+      "id": 153,
+      "start": 789.13,
+      "end": 792.63,
+      "start_time": "00:13:09,130",
+      "end_time": "00:13:12,630",
+      "text": "Ờ, mình nghĩ là sẽ cần phải dịch thêm 1 chút nữa, dịch thêm câu chuyện 1 chút nữa."
+    },
+    {
+      "id": 154,
+      "start": 792.63,
+      "end": 796.85,
+      "start_time": "00:13:12,630",
+      "end_time": "00:13:16,850",
+      "text": "Này nó ngắn quá, mình sẽ làm mẫu khoảng 10 phút nhé, 10 phút."
+    },
+    {
+      "id": 155,
+      "start": 801.23,
+      "end": 805.43,
+      "start_time": "00:13:21,230",
+      "end_time": "00:13:25,430",
+      "text": "Lấy content phần tiếp theo rồi dịch ra đi, lấy khoảng độ 7 đến 10 phút đi là được."
+    },
+    {
+      "id": 156,
+      "start": 821.11,
+      "end": 821.87,
+      "start_time": "00:13:41,110",
+      "end_time": "00:13:41,870",
+      "text": "Tiếp tục dịch."
+    },
+    {
+      "id": 157,
+      "start": 827.25,
+      "end": 833.45,
+      "start_time": "00:13:47,250",
+      "end_time": "00:13:53,450",
+      "text": "Ok, trong quá trình đấu dịch thì mình sẽ copy cái phần đầu tiên mình quăng vào ChatGPT đi."
+    },
+    {
+      "id": 158,
+      "start": 833.83,
+      "end": 836.15,
+      "start_time": "00:13:53,830",
+      "end_time": "00:13:56,150",
+      "text": "À quăng vào ElevenLabs đi để mình lấy voice."
+    },
+    {
+      "id": 159,
+      "start": 838.43,
+      "end": 839.81,
+      "start_time": "00:13:58,430",
+      "end_time": "00:13:59,810",
+      "text": "Cái phần content tiếng Anh đó."
+    },
+    {
+      "id": 160,
+      "start": 842.71,
+      "end": 844.97,
+      "start_time": "00:14:02,710",
+      "end_time": "00:14:04,970",
+      "text": "Rồi khoảng đấy là copy các bạn này."
+    },
+    {
+      "id": 161,
+      "start": 845.71,
+      "end": 849.11,
+      "start_time": "00:14:05,710",
+      "end_time": "00:14:09,110",
+      "text": "Copy vào nhé nhưng mà đừng quăng cả vào phần ElevenLabs đi Tuấn ơi."
+    },
+    {
+      "id": 162,
+      "start": 850.37,
+      "end": 852.71,
+      "start_time": "00:14:10,370",
+      "end_time": "00:14:12,710",
+      "text": "Chúng ta sẽ sử dụng phần project trong ElevenLabs nhé."
+    },
+    {
+      "id": 163,
+      "start": 853.55,
+      "end": 853.91,
+      "start_time": "00:14:13,550",
+      "end_time": "00:14:13,910",
+      "text": "Project."
+    },
+    {
+      "id": 164,
+      "start": 853.91,
+      "end": 857.45,
+      "start_time": "00:14:13,910",
+      "end_time": "00:14:17,450",
+      "text": "À, ngày trước là Project bây giờ nó đổi thành Studio rồi."
+    },
+    {
+      "id": 165,
+      "start": 858.01,
+      "end": 861.35,
+      "start_time": "00:14:18,010",
+      "end_time": "00:14:21,350",
+      "text": "Ấn vào Studio tạo một cái bản mới."
+    },
+    {
+      "id": 166,
+      "start": 862.31,
+      "end": 863.19,
+      "start_time": "00:14:22,310",
+      "end_time": "00:14:23,190",
+      "text": "Dưới là bản test đúng không?"
+    },
+    {
+      "id": 167,
+      "start": 864.77,
+      "end": 866.35,
+      "start_time": "00:14:24,770",
+      "end_time": "00:14:26,350",
+      "text": "Ok, chúng ta sẽ copy vào."
+    },
+    {
+      "id": 168,
+      "start": 868.27,
+      "end": 869.77,
+      "start_time": "00:14:28,270",
+      "end_time": "00:14:29,770",
+      "text": "Tiếp theo sẽ đợi cái phần kia nó dịch xong."
+    },
+    {
+      "id": 169,
+      "start": 869.87,
+      "end": 871.21,
+      "start_time": "00:14:29,870",
+      "end_time": "00:14:31,210",
+      "text": "Xăng lấy phần kia đi, đưa vào."
+    },
+    {
+      "id": 170,
+      "start": 871.99,
+      "end": 872.33,
+      "start_time": "00:14:31,990",
+      "end_time": "00:14:32,330",
+      "text": "Dịch tiếp."
+    },
+    {
+      "id": 171,
+      "start": 874.91,
+      "end": 876.35,
+      "start_time": "00:14:34,910",
+      "end_time": "00:14:36,350",
+      "text": "Chọn một cái giọng hay hay một chút."
+    },
+    {
+      "id": 172,
+      "start": 876.77,
+      "end": 878.61,
+      "start_time": "00:14:36,770",
+      "end_time": "00:14:38,610",
+      "text": "Rồi, nó sẽ chia ra một các cái đoạn đấy."
+    },
+    {
+      "id": 173,
+      "start": 880.29,
+      "end": 880.57,
+      "start_time": "00:14:40,290",
+      "end_time": "00:14:40,570",
+      "text": "Rồi."
+    },
+    {
+      "id": 174,
+      "start": 882.09,
+      "end": 883.21,
+      "start_time": "00:14:42,090",
+      "end_time": "00:14:43,210",
+      "text": "Đẩy âm thanh lên nhá."
+    },
+    {
+      "id": 175,
+      "start": 883.21,
+      "end": 885.27,
+      "start_time": "00:14:43,210",
+      "end_time": "00:14:45,270",
+      "text": "Để tí còn nghe, để còn test giọng"
+    },
+    {
+      "id": 176,
+      "start": 885.27,
+      "end": 887.61,
+      "start_time": "00:14:45,270",
+      "end_time": "00:14:47,610",
+      "text": "Rồi copy cái bản mới đi"
+    },
+    {
+      "id": 177,
+      "start": 887.61,
+      "end": 888.89,
+      "start_time": "00:14:47,610",
+      "end_time": "00:14:48,890",
+      "text": "Liên lạc vào"
+    },
+    {
+      "id": 178,
+      "start": 888.89,
+      "end": 890.69,
+      "start_time": "00:14:48,890",
+      "end_time": "00:14:50,690",
+      "text": "Là được"
+    },
+    {
+      "id": 179,
+      "start": 890.69,
+      "end": 896.47,
+      "start_time": "00:14:50,690",
+      "end_time": "00:14:56,470",
+      "text": "Rồi tiếp theo"
+    },
+    {
+      "id": 180,
+      "start": 896.47,
+      "end": 898.23,
+      "start_time": "00:14:56,470",
+      "end_time": "00:14:58,230",
+      "text": "Ớ từ từ cẩn thận mất nha"
+    },
+    {
+      "id": 181,
+      "start": 898.23,
+      "end": 899.21,
+      "start_time": "00:14:58,230",
+      "end_time": "00:14:59,210",
+      "text": "Cẩu thận mất nha"
+    },
+    {
+      "id": 182,
+      "start": 899.21,
+      "end": 901.69,
+      "start_time": "00:14:59,210",
+      "end_time": "00:15:01,690",
+      "text": "Rồi ấn"
+    },
+    {
+      "id": 183,
+      "start": 901.69,
+      "end": 903.03,
+      "start_time": "00:15:01,690",
+      "end_time": "00:15:03,030",
+      "text": "Copy, paste, paste vào"
+    },
+    {
+      "id": 184,
+      "start": 903.21,
+      "end": 904.57,
+      "start_time": "00:15:03,210",
+      "end_time": "00:15:04,570",
+      "text": "Ok, ok, đúng rồi."
+    },
+    {
+      "id": 185,
+      "start": 905.67,
+      "end": 907.63,
+      "start_time": "00:15:05,670",
+      "end_time": "00:15:07,630",
+      "text": "Rồi, được rồi, mình sẽ thử cái đoạn này nhé."
+    },
+    {
+      "id": 186,
+      "start": 908.45,
+      "end": 908.93,
+      "start_time": "00:15:08,450",
+      "end_time": "00:15:08,930",
+      "text": "Chọn giọng đi."
+    },
+    {
+      "id": 187,
+      "start": 910.41,
+      "end": 911.17,
+      "start_time": "00:15:10,410",
+      "end_time": "00:15:11,170",
+      "text": "Đẩy đẩy âm thanh lên."
+    },
+    {
+      "id": 188,
+      "start": 914.43,
+      "end": 915.03,
+      "start_time": "00:15:14,430",
+      "end_time": "00:15:15,030",
+      "text": "Có không?"
+    },
+    {
+      "id": 189,
+      "start": 917.71,
+      "end": 918.65,
+      "start_time": "00:15:17,710",
+      "end_time": "00:15:18,650",
+      "text": "Chọn một cái giọng như thế."
+    },
+    {
+      "id": 190,
+      "start": 923.21,
+      "end": 925.21,
+      "start_time": "00:15:23,210",
+      "end_time": "00:15:25,210",
+      "text": "Ở, đang render à."
+    },
+    {
+      "id": 191,
+      "start": 925.21,
+      "end": 928.75,
+      "start_time": "00:15:25,210",
+      "end_time": "00:15:28,750",
+      "text": "Cái việc mà chọn giọng anh em chọn từ ngoài nhé, chọn một cái giọng hay."
+    },
+    {
+      "id": 192,
+      "start": 928.75,
+      "end": 937.55,
+      "start_time": "00:15:28,750",
+      "end_time": "00:15:37,550",
+      "text": "A silver Ford F-150 was brought out. It was nearly new, solid engine, great specs, one of the branch's bestsellers."
+    },
+    {
+      "id": 193,
+      "start": 937.55,
+      "end": 946.35,
+      "start_time": "00:15:37,550",
+      "end_time": "00:15:46,350",
+      "text": "But then Tom slipped. Sticker price is 37 grand, but that includes the Carter's protection package, only available here."
+    },
+    {
+      "id": 194,
+      "start": 952.05,
+      "end": 958.73,
+      "start_time": "00:15:52,050",
+      "end_time": "00:15:58,730",
+      "text": "Love all, trust a few, do wrong to none. God has given you one face, and you make yourself another."
+    },
+    {
+      "id": 195,
+      "start": 958.75,
+      "end": 967.24,
+      "start_time": "00:15:58,750",
+      "end_time": "00:16:07,240",
+      "text": "Ok, mình sẽ export toàn bộ cái vài đấy luôn. Ok, rồi, chất lượng âm thanh nên chọn là WAV nhé,"
+    },
+    {
+      "id": 196,
+      "start": 967.24,
+      "end": 975.73,
+      "start_time": "00:16:07,240",
+      "end_time": "00:16:15,730",
+      "text": "thì nó sẽ hay hơn là MP3. Chất lượng tiêu chuẩn đấy, nó sẽ nặng hơn, nhưng mà nó hay hơn."
+    },
+    {
+      "id": 197,
+      "start": 975.73,
+      "end": 984.52,
+      "start_time": "00:16:15,730",
+      "end_time": "00:16:24,520",
+      "text": "Export, xem có đủ credit không? Rồi nó sẽ ngân thời gian rồi, Export. Trong quá trình đó mình sẽ tạo một project ở trên CapCut"
+    },
+    {
+      "id": 198,
+      "start": 984.52,
+      "end": 993.31,
+      "start_time": "00:16:24,520",
+      "end_time": "00:16:33,310",
+      "text": "để mình làm việc với cái này. Xem cái tốc độ Export nó có lâu không? 7% ờ khá nhanh, đợi một chút cũng được, đợi được."
+    },
+    {
+      "id": 199,
+      "start": 995.11,
+      "end": 1002.85,
+      "start_time": "00:16:35,110",
+      "end_time": "00:16:42,850",
+      "text": "Cái thumb vừa nãy mình tải về chưa? Tải về đi, tải về desktop đi."
+    },
+    {
+      "id": 200,
+      "start": 1002.85,
+      "end": 1011.76,
+      "start_time": "00:16:42,850",
+      "end_time": "00:16:51,760",
+      "text": "Cái này là hướng dẫn cơ bản thôi. Thêm một lần nữa khẳng định là những thứ đơn giản như vậy, nó chỉ có video, slide ảnh, cộng"
+    },
+    {
+      "id": 201,
+      "start": 1011.76,
+      "end": 1020.67,
+      "start_time": "00:16:51,760",
+      "end_time": "00:17:00,670",
+      "text": "với audio và nó cũng có thể ra kết quả 100-200.000 đô một tháng với một nhóm kênh nhé, chứ không phải một kênh, là hoàn toàn khả thi."
+    },
+    {
+      "id": 202,
+      "start": 1021.67,
+      "end": 1032.73,
+      "start_time": "00:17:01,670",
+      "end_time": "00:17:12,730",
+      "text": "Vậy nên anh em đôi khi là cũng đi tìm những thứ phức tạp nhiều quá. Đây cũng là lời nhắc nhở cho anh em nội bộ GODA nhé, làm thứ đơn giản thôi, ra tiền, dùng tiền mua thứ phức tạp."
+    },
+    {
+      "id": 203,
+      "start": 1032.85,
+      "end": 1034.55,
+      "start_time": "00:17:12,850",
+      "end_time": "00:17:14,550",
+      "text": "Nghĩ nhiều quá."
+    },
+    {
+      "id": 204,
+      "start": 1036.89,
+      "end": 1038.43,
+      "start_time": "00:17:16,890",
+      "end_time": "00:17:18,430",
+      "text": "Ok, đã xong rồi đúng không?"
+    },
+    {
+      "id": 205,
+      "start": 1039.07,
+      "end": 1041.49,
+      "start_time": "00:17:19,070",
+      "end_time": "00:17:21,490",
+      "text": "Cho nó xem cái bản export ấy đi nó tải về đúng không?"
+    },
+    {
+      "id": 206,
+      "start": 1042.0,
+      "end": 1042.61,
+      "start_time": "00:17:22,000",
+      "end_time": "00:17:22,610",
+      "text": "Cho vào CapCut thôi."
+    },
+    {
+      "id": 207,
+      "start": 1044.03,
+      "end": 1044.65,
+      "start_time": "00:17:24,030",
+      "end_time": "00:17:24,650",
+      "text": "Mở CapCut lên."
+    },
+    {
+      "id": 208,
+      "start": 1051.87,
+      "end": 1053.51,
+      "start_time": "00:17:31,870",
+      "end_time": "00:17:33,510",
+      "text": "Rồi, tạo project mới thôi."
+    },
+    {
+      "id": 209,
+      "start": 1054.09,
+      "end": 1054.99,
+      "start_time": "00:17:34,090",
+      "end_time": "00:17:34,990",
+      "text": "CapCut là dễ dùng nhất rồi."
+    },
+    {
+      "id": 210,
+      "start": 1055.95,
+      "end": 1059.65,
+      "start_time": "00:17:35,950",
+      "end_time": "00:17:39,650",
+      "text": "Ngày xưa CapCut này nó có cái phần Auto Caption bằng Free,"
+    },
+    {
+      "id": 211,
+      "start": 1059.65,
+      "end": 1060.77,
+      "start_time": "00:17:39,650",
+      "end_time": "00:17:40,770",
+      "text": "Free, nhưng bây giờ nó"
+    },
+    {
+      "id": 212,
+      "start": 1060.77,
+      "end": 1062.91,
+      "start_time": "00:17:40,770",
+      "end_time": "00:17:42,910",
+      "text": "Nó cho mình dùng nghiện rồi"
+    },
+    {
+      "id": 213,
+      "start": 1062.91,
+      "end": 1064.13,
+      "start_time": "00:17:42,910",
+      "end_time": "00:17:44,130",
+      "text": "Nó bắt mình trả tiền"
+    },
+    {
+      "id": 214,
+      "start": 1064.13,
+      "end": 1067.65,
+      "start_time": "00:17:44,130",
+      "end_time": "00:17:47,650",
+      "text": "Rồi, lấy audio vào"
+    },
+    {
+      "id": 215,
+      "start": 1067.65,
+      "end": 1074.07,
+      "start_time": "00:17:47,650",
+      "end_time": "00:17:54,070",
+      "text": "Đó, cho vào"
+    },
+    {
+      "id": 216,
+      "start": 1074.07,
+      "end": 1075.97,
+      "start_time": "00:17:54,070",
+      "end_time": "00:17:55,970",
+      "text": "Rồi, cho hôm dưới thôi, edit thôi"
+    },
+    {
+      "id": 217,
+      "start": 1075.97,
+      "end": 1077.59,
+      "start_time": "00:17:55,970",
+      "end_time": "00:17:57,590",
+      "text": "Rồi, kéo cái"
+    },
+    {
+      "id": 218,
+      "start": 1077.59,
+      "end": 1079.19,
+      "start_time": "00:17:57,590",
+      "end_time": "00:17:59,190",
+      "text": "Kéo cái ảnh kia vào"
+    },
+    {
+      "id": 219,
+      "start": 1079.19,
+      "end": 1084.73,
+      "start_time": "00:17:59,190",
+      "end_time": "00:18:04,730",
+      "text": "Ok, xong."
+    },
+    {
+      "id": 220,
+      "start": 1085.83,
+      "end": 1087.79,
+      "start_time": "00:18:05,830",
+      "end_time": "00:18:07,790",
+      "text": "Rồi, bây giờ kiếm cái hiệu ứng cho ảnh đi."
+    },
+    {
+      "id": 221,
+      "start": 1088.19,
+      "end": 1088.97,
+      "start_time": "00:18:08,190",
+      "end_time": "00:18:08,970",
+      "text": "Kiếm cái hiệu ứng ảnh đi."
+    },
+    {
+      "id": 222,
+      "start": 1090.27,
+      "end": 1091.09,
+      "start_time": "00:18:10,270",
+      "end_time": "00:18:11,090",
+      "text": "Hiệu ứng nhẹ nhàng thôi."
+    },
+    {
+      "id": 223,
+      "start": 1093.01,
+      "end": 1094.71,
+      "start_time": "00:18:13,010",
+      "end_time": "00:18:14,710",
+      "text": "Bây giờ ấn vào cái ảnh đi kìa, cho effect."
+    },
+    {
+      "id": 224,
+      "start": 1094.97,
+      "end": 1095.77,
+      "start_time": "00:18:14,970",
+      "end_time": "00:18:15,770",
+      "text": "Kiếm cái effect nào đấy."
+    },
+    {
+      "id": 225,
+      "start": 1098.68,
+      "end": 1099.76,
+      "start_time": "00:18:18,680",
+      "end_time": "00:18:19,760",
+      "text": "John sat quiet."
+    },
+    {
+      "id": 226,
+      "start": 1105.86,
+      "end": 1108.64,
+      "start_time": "00:18:25,860",
+      "end_time": "00:18:28,640",
+      "text": "John sat quietly in his old Toyota Corolla."
+    },
+    {
+      "id": 227,
+      "start": 1108.64,
+      "end": 1112.34,
+      "start_time": "00:18:28,640",
+      "end_time": "00:18:32,340",
+      "text": "Nghe em thấy cái này giống trong chủ đề story không? Gặp nhiều dã man luôn."
+    },
+    {
+      "id": 228,
+      "start": 1112.34,
+      "end": 1117.94,
+      "start_time": "00:18:32,340",
+      "end_time": "00:18:37,940",
+      "text": "Vì dạng này người ta có xem hình đâu, toàn nghe ấy mà."
+    },
+    {
+      "id": 229,
+      "start": 1119.72,
+      "end": 1123.0,
+      "start_time": "00:18:39,720",
+      "end_time": "00:18:43,000",
+      "text": "Có auto caption chưa? Bật auto caption lên."
+    },
+    {
+      "id": 230,
+      "start": 1129.0,
+      "end": 1130.34,
+      "start_time": "00:18:49,000",
+      "end_time": "00:18:50,340",
+      "text": "Đấy, bắt đầu auto caption."
+    },
+    {
+      "id": 231,
+      "start": 1131.92,
+      "end": 1134.72,
+      "start_time": "00:18:51,920",
+      "end_time": "00:18:54,720",
+      "text": "Cái này siêu nhanh luôn, còn CapCut này xịn thật."
+    },
+    {
+      "id": 232,
+      "start": 1135.3,
+      "end": 1137.78,
+      "start_time": "00:18:55,300",
+      "end_time": "00:18:57,780",
+      "text": "Còn con Premiere bao lâu đời bao lâu thế nhưng mà."
+    },
+    {
+      "id": 233,
+      "start": 1137.78,
+      "end": 1144.18,
+      "start_time": "00:18:57,780",
+      "end_time": "00:19:04,180",
+      "text": "Để bây giờ anh em bên GODA bây giờ dùng những cái con, cái con Premiere, Premiere Pro ấy."
+    },
+    {
+      "id": 234,
+      "start": 1145.86,
+      "end": 1150.22,
+      "start_time": "00:19:05,860",
+      "end_time": "00:19:10,220",
+      "text": "Vẫn phải Caption chạy bằng cơm. Được cái ảo đẹp hơn thôi chứ còn."
+    },
+    {
+      "id": 235,
+      "start": 1151.06,
+      "end": 1153.62,
+      "start_time": "00:19:11,060",
+      "end_time": "00:19:13,620",
+      "text": "Thật ra là không ngon mà con này. Cái auto Caption nó cùi lắm."
+    },
+    {
+      "id": 236,
+      "start": 1158.36,
+      "end": 1160.94,
+      "start_time": "00:19:18,360",
+      "end_time": "00:19:20,940",
+      "text": "85, 86, ok. Xong. Ấn chạy thế nào."
+    },
+    {
+      "id": 237,
+      "start": 1161.74,
+      "end": 1164.58,
+      "start_time": "00:19:21,740",
+      "end_time": "00:19:24,580",
+      "text": "John sat quietly in his old Toyota Corolla."
+    },
+    {
+      "id": 238,
+      "start": 1164.58,
+      "end": 1168.74,
+      "start_time": "00:19:24,580",
+      "end_time": "00:19:28,740",
+      "text": "Cái phong chữ khác cho nó đẹp đẹp hơn tí. Tính mình hơi OCD."
+    },
+    {
+      "id": 239,
+      "start": 1168.8,
+      "end": 1173.96,
+      "start_time": "00:19:28,800",
+      "end_time": "00:19:33,960",
+      "text": "Tích"
+    },
+    {
+      "id": 240,
+      "start": 1173.96,
+      "end": 1174.3,
+      "start_time": "00:19:33,960",
+      "end_time": "00:19:34,300",
+      "text": "Ở"
+    },
+    {
+      "id": 241,
+      "start": 1174.3,
+      "end": 1175.14,
+      "start_time": "00:19:34,300",
+      "end_time": "00:19:35,140",
+      "text": "Chọn phông đi"
+    },
+    {
+      "id": 242,
+      "start": 1175.14,
+      "end": 1177.32,
+      "start_time": "00:19:35,140",
+      "end_time": "00:19:37,320",
+      "text": "Chúng cái phông khác"
+    },
+    {
+      "id": 243,
+      "start": 1177.32,
+      "end": 1180.15,
+      "start_time": "00:19:37,320",
+      "end_time": "00:19:40,150",
+      "text": "Để"
+    },
+    {
+      "id": 244,
+      "start": 1180.15,
+      "end": 1186.15,
+      "start_time": "00:19:40,150",
+      "end_time": "00:19:46,150",
+      "text": "Thử thử một cái, vài cái xem cái nào nó dày dày ấy. Cái nào dày dày một tí ấy."
+    },
+    {
+      "id": 245,
+      "start": 1191.15,
+      "end": 1198.15,
+      "start_time": "00:19:51,150",
+      "end_time": "00:19:58,150",
+      "text": "Đấy, nhìn cái đấy, được ấy. Đấy, ok đấy, có vẻ đứng được ấy. Ok, được rồi, đẩy lên. Đấy, nhìn cho nó dễ nhìn thôi."
+    },
+    {
+      "id": 246,
+      "start": 1198.15,
+      "end": 1202.15,
+      "start_time": "00:19:58,150",
+      "end_time": "00:20:02,150",
+      "text": "Còn anh em thì tùy chọn nhé. Đừng để ở giữa, để ở dưới thôi."
+    },
+    {
+      "id": 247,
+      "start": 1202.15,
+      "end": 1208.97,
+      "start_time": "00:20:02,150",
+      "end_time": "00:20:08,970",
+      "text": "Ok, rồi cho thêm opacity, stroke các thứ vào, viền đen vào."
+    },
+    {
+      "id": 248,
+      "start": 1212.45,
+      "end": 1214.09,
+      "start_time": "00:20:12,450",
+      "end_time": "00:20:14,090",
+      "text": "Shadow vào đấy cho nó nổi lên."
+    },
+    {
+      "id": 249,
+      "start": 1214.73,
+      "end": 1216.95,
+      "start_time": "00:20:14,730",
+      "end_time": "00:20:16,950",
+      "text": "Ok, chạy đi, chạy video xem nào."
+    },
+    {
+      "id": 250,
+      "start": 1218.57,
+      "end": 1224.31,
+      "start_time": "00:20:18,570",
+      "end_time": "00:20:24,310",
+      "text": "John sat quietly in his old Toyota Corolla, fingers tapping slowly on the steering wheel."
+    },
+    {
+      "id": 251,
+      "start": 1224.99,
+      "end": 1227.25,
+      "start_time": "00:20:24,990",
+      "end_time": "00:20:27,250",
+      "text": "In front of him was the lot of John's trucks."
+    },
+    {
+      "id": 252,
+      "start": 1227.25,
+      "end": 1227.49,
+      "start_time": "00:20:27,250",
+      "end_time": "00:20:27,490",
+      "text": "Ok, video, chạy video."
+    },
+    {
+      "id": 253,
+      "start": 1228.87,
+      "end": 1229.07,
+      "start_time": "00:20:28,870",
+      "end_time": "00:20:29,070",
+      "text": "Xong."
+    },
+    {
+      "id": 254,
+      "start": 1231.21,
+      "end": 1231.79,
+      "start_time": "00:20:31,210",
+      "end_time": "00:20:31,790",
+      "text": "Xong rồi?"
+    },
+    {
+      "id": 255,
+      "start": 1232.15,
+      "end": 1234.09,
+      "start_time": "00:20:32,150",
+      "end_time": "00:20:34,090",
+      "text": "Quy trình chỉ có thế thôi."
+    },
+    {
+      "id": 256,
+      "start": 1240.87,
+      "end": 1244.53,
+      "start_time": "00:20:40,870",
+      "end_time": "00:20:44,530",
+      "text": "Ok, chúng ta đã có kết xuất này trong thời gian xuất. Chúng ta đến phần tiếp theo."
+    },
+    {
+      "id": 257,
+      "start": 1245.59,
+      "end": 1249.23,
+      "start_time": "00:20:45,590",
+      "end_time": "00:20:49,230",
+      "text": "Chúng ta đã có thumbnail rồi. Chúng ta đã có video rồi."
+    },
+    {
+      "id": 258,
+      "start": 1250.37,
+      "end": 1253.87,
+      "start_time": "00:20:50,370",
+      "end_time": "00:20:53,870",
+      "text": "Thì bây giờ việc của chúng ta là viết một cái tiêu đề. Tiêu đề chúng ta đã có sẵn rồi đúng không ạ?"
+    },
+    {
+      "id": 259,
+      "start": 1254.77,
+      "end": 1258.21,
+      "start_time": "00:20:54,770",
+      "end_time": "00:20:58,210",
+      "text": "Thì bây giờ chúng ta sẽ quay lại phần để chuẩn bị một file để upload video."
+    },
+    {
+      "id": 260,
+      "start": 1258.21,
+      "end": 1261.47,
+      "start_time": "00:20:58,210",
+      "end_time": "00:21:01,470",
+      "text": "Với phần này thì quay lại phần tiêu đề"
+    },
+    {
+      "id": 261,
+      "start": 1261.47,
+      "end": 1263.83,
+      "start_time": "00:21:01,470",
+      "end_time": "00:21:03,830",
+      "text": "Public, xuất nhanh thật, công nhận ông này"
+    },
+    {
+      "id": 262,
+      "start": 1263.83,
+      "end": 1269.83,
+      "start_time": "00:21:03,830",
+      "end_time": "00:21:09,830",
+      "text": "Ông này, ông CapCut này có một cái là xuất video dài nó hơi hay bị lỗi nên anh em phải check kỹ lại nhé."
+    },
+    {
+      "id": 263,
+      "start": 1271.01,
+      "end": 1272.27,
+      "start_time": "00:21:11,010",
+      "end_time": "00:21:12,270",
+      "text": "Video khoảng 2-3 tiếng hay lỗi lắm."
+    },
+    {
+      "id": 264,
+      "start": 1275.04,
+      "end": 1276.88,
+      "start_time": "00:21:15,040",
+      "end_time": "00:21:16,880",
+      "text": "John sat quietly in his old."
+    },
+    {
+      "id": 265,
+      "start": 1278.1,
+      "end": 1281.34,
+      "start_time": "00:21:18,100",
+      "end_time": "00:21:21,340",
+      "text": "Rồi bây giờ mình sẽ chuẩn bị một cái file."
+    },
+    {
+      "id": 266,
+      "start": 1283.18,
+      "end": 1285.48,
+      "start_time": "00:21:23,180",
+      "end_time": "00:21:25,480",
+      "text": "Mở một cái tab đơn giản là file Word đi."
+    },
+    {
+      "id": 267,
+      "start": 1285.62,
+      "end": 1286.22,
+      "start_time": "00:21:25,620",
+      "end_time": "00:21:26,220",
+      "text": "File Word khác đi."
+    },
+    {
+      "id": 268,
+      "start": 1286.9,
+      "end": 1288.96,
+      "start_time": "00:21:26,900",
+      "end_time": "00:21:28,960",
+      "text": "Một file Word mới để mình làm."
+    },
+    {
+      "id": 269,
+      "start": 1289.72,
+      "end": 1290.12,
+      "start_time": "00:21:29,720",
+      "end_time": "00:21:30,120",
+      "text": "Mình táo tặng."
+    },
+    {
+      "id": 270,
+      "start": 1291.44,
+      "end": 1291.68,
+      "start_time": "00:21:31,440",
+      "end_time": "00:21:31,680",
+      "text": "Ok."
+    },
+    {
+      "id": 271,
+      "start": 1292.16,
+      "end": 1293.5,
+      "start_time": "00:21:32,160",
+      "end_time": "00:21:33,500",
+      "text": "Tiêu đề đâu nhỉ? Lấy tiêu đề sang đi."
+    },
+    {
+      "id": 272,
+      "start": 1293.5,
+      "end": 1295.5,
+      "start_time": "00:21:33,500",
+      "end_time": "00:21:35,500",
+      "text": "Trang đi."
+    },
+    {
+      "id": 273,
+      "start": 1299.5,
+      "end": 1302.5,
+      "start_time": "00:21:39,500",
+      "end_time": "00:21:42,500",
+      "text": "Trong trường hợp mình có một cái tiêu đề này mình đã chỉnh sửa rồi nhá."
+    },
+    {
+      "id": 274,
+      "start": 1302.5,
+      "end": 1306.5,
+      "start_time": "00:21:42,500",
+      "end_time": "00:21:46,500",
+      "text": "Nếu mà mình chỉnh thì nó sẽ mất rất nhiều thời gian vì cái tư duy chỉnh nó sẽ khác nhau."
+    },
+    {
+      "id": 275,
+      "start": 1306.5,
+      "end": 1307.5,
+      "start_time": "00:21:46,500",
+      "end_time": "00:21:47,500",
+      "text": "Anh em thì sẽ..."
+    },
+    {
+      "id": 276,
+      "start": 1307.5,
+      "end": 1310.5,
+      "start_time": "00:21:47,500",
+      "end_time": "00:21:50,500",
+      "text": "Nên thực ra là mỗi cái tiêu đề nó là một cái key."
+    },
+    {
+      "id": 277,
+      "start": 1310.5,
+      "end": 1313.5,
+      "start_time": "00:21:50,500",
+      "end_time": "00:21:53,500",
+      "text": "Chỉ công thức là giữ nguyên và thêm."
+    },
+    {
+      "id": 278,
+      "start": 1313.5,
+      "end": 1314.7,
+      "start_time": "00:21:53,500",
+      "end_time": "00:21:54,700",
+      "text": "Thêm một yếu tố gì đấy gây sốc."
+    },
+    {
+      "id": 279,
+      "start": 1315.14,
+      "end": 1317.02,
+      "start_time": "00:21:55,140",
+      "end_time": "00:21:57,020",
+      "text": "Một từ nào đấy gây sốc thôi là ok."
+    },
+    {
+      "id": 280,
+      "start": 1317.44,
+      "end": 1318.86,
+      "start_time": "00:21:57,440",
+      "end_time": "00:21:58,860",
+      "text": "Hoặc là mình có thể đổi bối cảnh đi."
+    },
+    {
+      "id": 281,
+      "start": 1319.5,
+      "end": 1320.16,
+      "start_time": "00:21:59,500",
+      "end_time": "00:22:00,160",
+      "text": "Undercover Boss."
+    },
+    {
+      "id": 282,
+      "start": 1320.94,
+      "end": 1322.38,
+      "start_time": "00:22:00,940",
+      "end_time": "00:22:02,380",
+      "text": "Đây là biochart."
+    },
+    {
+      "id": 283,
+      "start": 1322.68,
+      "end": 1324.16,
+      "start_time": "00:22:02,680",
+      "end_time": "00:22:04,160",
+      "text": "Thì có thể là bio..."
+    },
+    {
+      "id": 284,
+      "start": 1324.22,
+      "end": 1329.84,
+      "start_time": "00:22:04,220",
+      "end_time": "00:22:09,840",
+      "text": "Luxury Car chẳng hạn, hoặc là Super Car chẳng hạn. Đấy là cái mình thay đổi. Đấy."
+    },
+    {
+      "id": 285,
+      "start": 1330.42,
+      "end": 1332.58,
+      "start_time": "00:22:10,420",
+      "end_time": "00:22:12,580",
+      "text": "Thì đây là, ví dụ đây là một cái tiêu đề mình đã chọn xong rồi này."
+    },
+    {
+      "id": 286,
+      "start": 1333.0,
+      "end": 1334.4,
+      "start_time": "00:22:13,000",
+      "end_time": "00:22:14,400",
+      "text": "Tiếp theo đến đây ạ. Mô tả."
+    },
+    {
+      "id": 287,
+      "start": 1335.44,
+      "end": 1340.92,
+      "start_time": "00:22:15,440",
+      "end_time": "00:22:20,920",
+      "text": "Mô tả thì chúng ta sẽ sử dụng phần intro đầu của video và phần tiêu đề của mình để viết."
+    },
+    {
+      "id": 288,
+      "start": 1341.24,
+      "end": 1344.18,
+      "start_time": "00:22:21,240",
+      "end_time": "00:22:24,180",
+      "text": "Thì chúng ta sẽ lại tạo một tab mới của ChatGPT."
+    },
+    {
+      "id": 289,
+      "start": 1344.98,
+      "end": 1346.44,
+      "start_time": "00:22:24,980",
+      "end_time": "00:22:26,440",
+      "text": "Tạo tab mới chuyên để viết mô tả."
+    },
+    {
+      "id": 290,
+      "start": 1347.32,
+      "end": 1348.44,
+      "start_time": "00:22:27,320",
+      "end_time": "00:22:28,440",
+      "text": "Chúng ta cần phải chuyên biệt nó ra."
+    },
+    {
+      "id": 291,
+      "start": 1349.86,
+      "end": 1350.14,
+      "start_time": "00:22:29,860",
+      "end_time": "00:22:30,140",
+      "text": "Rồi."
+    },
+    {
+      "id": 292,
+      "start": 1351.54,
+      "end": 1352.7,
+      "start_time": "00:22:31,540",
+      "end_time": "00:22:32,700",
+      "text": "Tạo tab mới. Ừ, tạo đi."
+    },
+    {
+      "id": 293,
+      "start": 1354.22,
+      "end": 1357.22,
+      "start_time": "00:22:34,220",
+      "end_time": "00:22:37,220",
+      "text": "Rồi, bạn là..."
+    },
+    {
+      "id": 294,
+      "start": 1358.25,
+      "end": 1370.11,
+      "start_time": "00:22:38,250",
+      "end_time": "00:22:50,110",
+      "text": "Trợ lý hỗ trợ tôi viết phần mô tả cho các video chủ đề Undercover Boss và Undercover CEO."
+    },
+    {
+      "id": 295,
+      "start": 1371.03,
+      "end": 1372.33,
+      "start_time": "00:22:51,030",
+      "end_time": "00:22:52,330",
+      "text": "Cái này chủ đề do anh em nhỉ."
+    },
+    {
+      "id": 296,
+      "start": 1373.29,
+      "end": 1375.81,
+      "start_time": "00:22:53,290",
+      "end_time": "00:22:55,810",
+      "text": "Cái này mình đào tạo, nó cũng giống như cái phần đào tạo content thôi."
+    },
+    {
+      "id": 297,
+      "start": 1376.37,
+      "end": 1377.93,
+      "start_time": "00:22:56,370",
+      "end_time": "00:22:57,930",
+      "text": "Cũng như vậy, không có gì khác biệt."
+    },
+    {
+      "id": 298,
+      "start": 1381.09,
+      "end": 1382.09,
+      "start_time": "00:23:01,090",
+      "end_time": "00:23:02,090",
+      "text": "Ok, Enter rồi được."
+    },
+    {
+      "id": 299,
+      "start": 1383.07,
+      "end": 1385.21,
+      "start_time": "00:23:03,070",
+      "end_time": "00:23:05,210",
+      "text": "Và trong quá trình anh em làm nghiên cứu ấy,"
+    },
+    {
+      "id": 300,
+      "start": 1385.39,
+      "end": 1388.11,
+      "start_time": "00:23:05,390",
+      "end_time": "00:23:08,110",
+      "text": "thì chúng ta sẽ xem rất là nhiều cái dạng mô tả khác nhau."
+    },
+    {
+      "id": 301,
+      "start": 1388.25,
+      "end": 1394.63,
+      "start_time": "00:23:08,250",
+      "end_time": "00:23:14,630",
+      "text": "Thì cái việc của mình là thu thập và đào tạo con ChatGPT thì chúng ta sẽ quăng rất là nhiều những cái yếu tố như thế."
+    },
+    {
+      "id": 302,
+      "start": 1394.81,
+      "end": 1395.89,
+      "start_time": "00:23:14,810",
+      "end_time": "00:23:15,890",
+      "text": "Nó cập nhật bộ nhớ kìa."
+    },
+    {
+      "id": 303,
+      "start": 1396.49,
+      "end": 1401.01,
+      "start_time": "00:23:16,490",
+      "end_time": "00:23:21,010",
+      "text": "Đấy, thì bây giờ mình sẽ đưa một phần intro của mình vào và phần tiêu đề của mình vào."
+    },
+    {
+      "id": 304,
+      "start": 1402.17,
+      "end": 1403.45,
+      "start_time": "00:23:22,170",
+      "end_time": "00:23:23,450",
+      "text": "Đây là intro của tôi."
+    },
+    {
+      "id": 305,
+      "start": 1404.59,
+      "end": 1406.19,
+      "start_time": "00:23:24,590",
+      "end_time": "00:23:26,190",
+      "text": "À đây là tiêu đề của tôi. Copy đưa vào."
+    },
+    {
+      "id": 306,
+      "start": 1406.71,
+      "end": 1407.59,
+      "start_time": "00:23:26,710",
+      "end_time": "00:23:27,590",
+      "text": "Đây là tiêu đề của tôi."
+    },
+    {
+      "id": 307,
+      "start": 1412.27,
+      "end": 1415.37,
+      "start_time": "00:23:32,270",
+      "end_time": "00:23:35,370",
+      "text": "Tôi 2 chấm, cái copy của tiêu đề chấm."
+    },
+    {
+      "id": 308,
+      "start": 1416.49,
+      "end": 1417.31,
+      "start_time": "00:23:36,490",
+      "end_time": "00:23:37,310",
+      "text": "Đấy, từ từ."
+    },
+    {
+      "id": 309,
+      "start": 1418.25,
+      "end": 1422.75,
+      "start_time": "00:23:38,250",
+      "end_time": "00:23:42,750",
+      "text": "Đấy, mình nạp thiếu là nó sẽ viết linh ta linh tinh đấy."
+    },
+    {
+      "id": 310,
+      "start": 1422.75,
+      "end": 1426.75,
+      "start_time": "00:23:42,750",
+      "end_time": "00:23:46,750",
+      "text": "Thôi bây giờ, hủy hủy hủy."
+    },
+    {
+      "id": 311,
+      "start": 1426.75,
+      "end": 1430.45,
+      "start_time": "00:23:46,750",
+      "end_time": "00:23:50,450",
+      "text": "Và đây là intro của tôi."
+    },
+    {
+      "id": 312,
+      "start": 1430.45,
+      "end": 1437.55,
+      "start_time": "00:23:50,450",
+      "end_time": "00:23:57,550",
+      "text": "Đấy copy phần intro ra"
+    },
+    {
+      "id": 313,
+      "start": 1437.55,
+      "end": 1440.39,
+      "start_time": "00:23:57,550",
+      "end_time": "00:24:00,390",
+      "text": "Copy phần intro quăng cái phần đầu mình vào"
+    },
+    {
+      "id": 314,
+      "start": 1440.39,
+      "end": 1443.29,
+      "start_time": "00:24:00,390",
+      "end_time": "00:24:03,290",
+      "text": "Tiếng Anh ấy"
+    },
+    {
+      "id": 315,
+      "start": 1443.29,
+      "end": 1444.03,
+      "start_time": "00:24:03,290",
+      "end_time": "00:24:04,030",
+      "text": "Đúng rồi"
+    },
+    {
+      "id": 316,
+      "start": 1444.03,
+      "end": 1446.71,
+      "start_time": "00:24:04,030",
+      "end_time": "00:24:06,710",
+      "text": "Intro nó ngắn mà"
+    },
+    {
+      "id": 317,
+      "start": 1446.71,
+      "end": 1447.73,
+      "start_time": "00:24:06,710",
+      "end_time": "00:24:07,730",
+      "text": "Copy"
+    },
+    {
+      "id": 318,
+      "start": 1447.73,
+      "end": 1450.45,
+      "start_time": "00:24:07,730",
+      "end_time": "00:24:10,450",
+      "text": "Đấy đúng rồi đấy thôi"
+    },
+    {
+      "id": 319,
+      "start": 1450.45,
+      "end": 1454.87,
+      "start_time": "00:24:10,450",
+      "end_time": "00:24:14,870",
+      "text": "Bất dồn nét tơ đấy đến phần intro"
+    },
+    {
+      "id": 320,
+      "start": 1454.87,
+      "end": 1456.63,
+      "start_time": "00:24:14,870",
+      "end_time": "00:24:16,630",
+      "text": "Anh em copy đúng hết phần intro"
+    },
+    {
+      "id": 321,
+      "start": 1456.63,
+      "end": 1457.89,
+      "start_time": "00:24:16,630",
+      "end_time": "00:24:17,890",
+      "text": "Hết phần giới thiệu đầu"
+    },
+    {
+      "id": 322,
+      "start": 1457.89,
+      "end": 1459.19,
+      "start_time": "00:24:17,890",
+      "end_time": "00:24:19,190",
+      "text": "Ok"
+    },
+    {
+      "id": 323,
+      "start": 1459.19,
+      "end": 1462.21,
+      "start_time": "00:24:19,190",
+      "end_time": "00:24:22,210",
+      "text": "Hãy viết cho tôi mô tả"
+    },
+    {
+      "id": 324,
+      "start": 1462.21,
+      "end": 1463.89,
+      "start_time": "00:24:22,210",
+      "end_time": "00:24:23,890",
+      "text": "Video"
+    },
+    {
+      "id": 325,
+      "start": 1463.89,
+      "end": 1465.01,
+      "start_time": "00:24:23,890",
+      "end_time": "00:24:25,010",
+      "text": "Chuẩn SEO"
+    },
+    {
+      "id": 326,
+      "start": 1465.01,
+      "end": 1466.77,
+      "start_time": "00:24:25,010",
+      "end_time": "00:24:26,770",
+      "text": "YouTube"
+    },
+    {
+      "id": 327,
+      "start": 1467.04,
+      "end": 1475.52,
+      "start_time": "00:24:27,040",
+      "end_time": "00:24:35,520",
+      "text": "Chuẩn SEO, Việt Nam mới học ở là SEO. Enter, gửi đi, nó sẽ viết cho mình."
+    },
+    {
+      "id": 328,
+      "start": 1480.7,
+      "end": 1481.62,
+      "start_time": "00:24:40,700",
+      "end_time": "00:24:41,620",
+      "text": "Dưới đây là mô tả."
+    },
+    {
+      "id": 329,
+      "start": 1484.56,
+      "end": 1495.54,
+      "start_time": "00:24:44,560",
+      "end_time": "00:24:55,540",
+      "text": "Tuy nhiên, không nên phụ thuộc vào ChatGPT. Chúng ta cần phải xem xét kỹ lại ngôn từ. Phải thật kỹ, chúng ta phải là người điều khiển, sử dụng nó, chứ không phải là người phụ thuộc vào nó."
+    },
+    {
+      "id": 330,
+      "start": 1497.04,
+      "end": 1502.04,
+      "start_time": "00:24:57,040",
+      "end_time": "00:25:02,040",
+      "text": "Đó, trong trường hợp này mình thấy là, what happened with CEO?"
+    },
+    {
+      "id": 331,
+      "start": 1502.04,
+      "end": 1508.04,
+      "start_time": "00:25:02,040",
+      "end_time": "00:25:08,040",
+      "text": "Ok, mình thấy nó cũng tạm tạm được, thì mình có thể sử dụng được. Đây là ví dụ của anh em phải kỹ hơn."
+    },
+    {
+      "id": 332,
+      "start": 1508.04,
+      "end": 1511.04,
+      "start_time": "00:25:08,040",
+      "end_time": "00:25:11,040",
+      "text": "Mình càng kỹ tính thì sản phẩm mình càng tốt, khán giả càng yêu quý mình."
+    },
+    {
+      "id": 333,
+      "start": 1511.04,
+      "end": 1521.04,
+      "start_time": "00:25:11,040",
+      "end_time": "00:25:21,040",
+      "text": "Copy, đừng copy hết. Đấy, đến đấy thôi. Nó có cái phần gọi là twist, là cú ngoặt đấy. Copy vào."
+    },
+    {
+      "id": 334,
+      "start": 1521.04,
+      "end": 1525.8,
+      "start_time": "00:25:21,040",
+      "end_time": "00:25:25,800",
+      "text": "Ví dụ như vậy, mình đưa sang kia là mô tả."
+    },
+    {
+      "id": 335,
+      "start": 1525.8,
+      "end": 1527.8,
+      "start_time": "00:25:25,800",
+      "end_time": "00:25:27,800",
+      "text": "Mô tả"
+    },
+    {
+      "id": 336,
+      "start": 1527.8,
+      "end": 1535.8,
+      "start_time": "00:25:27,800",
+      "end_time": "00:25:35,800",
+      "text": "Đó, trong mô tả thì nó có xem một phần là hashtag thì chúng ta sẽ quay lại bảng nghiên cứu, chúng ta chọn hashtag cho mình."
+    },
+    {
+      "id": 337,
+      "start": 1535.8,
+      "end": 1544.8,
+      "start_time": "00:25:35,800",
+      "end_time": "00:25:44,800",
+      "text": "Nếu trong trường hợp mà trong chủ đề không có hashtag, tất cả các kênh đều không dùng cơ, thì mình sẽ phải nghiên cứu kỹ xem là cái hashtag nó phù hợp."
+    },
+    {
+      "id": 338,
+      "start": 1544.8,
+      "end": 1547.8,
+      "start_time": "00:25:44,800",
+      "end_time": "00:25:47,800",
+      "text": "Tại vì SEO nó cực kỳ quan trọng với kênh mới."
+    },
+    {
+      "id": 339,
+      "start": 1547.8,
+      "end": 1554.8,
+      "start_time": "00:25:47,800",
+      "end_time": "00:25:54,800",
+      "text": "Thì chúng ta sẽ chọn hashtag, tìm hashtag trong cái bảng nghiên cứu cơ, có đấy, bảng nghiên cứu, Dream 100 video ấy."
+    },
+    {
+      "id": 340,
+      "start": 1555.8,
+      "end": 1563.56,
+      "start_time": "00:25:55,800",
+      "end_time": "00:26:03,560",
+      "text": "Dream 100 video có không? Hashtag vừa nãy có. À bảng tổng, bằng tổng, đúng rồi,"
+    },
+    {
+      "id": 341,
+      "start": 1563.56,
+      "end": 1571.32,
+      "start_time": "00:26:03,560",
+      "end_time": "00:26:11,320",
+      "text": "bằng tổng, quay lại bằng tổng. Đấy, chúng ta sẽ lấy 3 cái hashtag này vào,"
+    },
+    {
+      "id": 342,
+      "start": 1571.32,
+      "end": 1579.08,
+      "start_time": "00:26:11,320",
+      "end_time": "00:26:19,080",
+      "text": "đưa vào. Rồi, đưa sang bên kia, là file upload video. Hashtag. Xong, thế là xong."
+    },
+    {
+      "id": 343,
+      "start": 1579.08,
+      "end": 1587.08,
+      "start_time": "00:26:19,080",
+      "end_time": "00:26:27,080",
+      "text": "Dạng này nó không có phần thẻ tag thì thôi mình không dùng. Trong kênh, trong chủ đề không dùng thì mình cũng không dùng."
+    },
+    {
+      "id": 344,
+      "start": 1587.08,
+      "end": 1592.58,
+      "start_time": "00:26:27,080",
+      "end_time": "00:26:32,580",
+      "text": "Xong rồi video đã xuất xong, chúng ta sẽ upload video thì mình sẽ upload mẫu lên một kênh luôn."
+    },
+    {
+      "id": 345,
+      "start": 1592.58,
+      "end": 1594.58,
+      "start_time": "00:26:32,580",
+      "end_time": "00:26:34,580",
+      "text": "Upload trực tiếp lên kênh đi"
+    },
+    {
+      "id": 346,
+      "start": 1594.58,
+      "end": 1596.58,
+      "start_time": "00:26:34,580",
+      "end_time": "00:26:36,580",
+      "text": "xem video nó được bao nhiêu phút đã"
+    },
+    {
+      "id": 347,
+      "start": 1596.58,
+      "end": 1598.58,
+      "start_time": "00:26:36,580",
+      "end_time": "00:26:38,580",
+      "text": "kênh này có thể chưa xác minh"
+    },
+    {
+      "id": 348,
+      "start": 1598.58,
+      "end": 1600.58,
+      "start_time": "00:26:38,580",
+      "end_time": "00:26:40,580",
+      "text": "nó chưa được upload được video trên 15 phút đâu"
+    },
+    {
+      "id": 349,
+      "start": 1600.58,
+      "end": 1602.58,
+      "start_time": "00:26:40,580",
+      "end_time": "00:26:42,580",
+      "text": "xem thời lượng đi"
+    },
+    {
+      "id": 350,
+      "start": 1602.58,
+      "end": 1604.58,
+      "start_time": "00:26:42,580",
+      "end_time": "00:26:44,580",
+      "text": "check lại video lần cuối bật xem đi"
+    },
+    {
+      "id": 351,
+      "start": 1604.58,
+      "end": 1607.85,
+      "start_time": "00:26:44,580",
+      "end_time": "00:26:47,850",
+      "text": "5 phút 5 phút"
+    },
+    {
+      "id": 352,
+      "start": 1607.85,
+      "end": 1609.25,
+      "start_time": "00:26:47,850",
+      "end_time": "00:26:49,250",
+      "text": "5 phút, 5, 7, ok, được rồi."
+    },
+    {
+      "id": 353,
+      "start": 1609.43,
+      "end": 1610.71,
+      "start_time": "00:26:49,430",
+      "end_time": "00:26:50,710",
+      "text": "Thế nên mình upload trực tiếp lên kênh này luôn."
+    },
+    {
+      "id": 354,
+      "start": 1613.75,
+      "end": 1615.69,
+      "start_time": "00:26:53,750",
+      "end_time": "00:26:55,690",
+      "text": "Giá chất lượng 1, 6 hay không?"
+    },
+    {
+      "id": 355,
+      "start": 1615.87,
+      "end": 1616.79,
+      "start_time": "00:26:55,870",
+      "end_time": "00:26:56,790",
+      "text": "Nãy không chỉnh chất lượng."
+    },
+    {
+      "id": 356,
+      "start": 1618.11,
+      "end": 1618.69,
+      "start_time": "00:26:58,110",
+      "end_time": "00:26:58,690",
+      "text": "Ok, rồi được rồi."
+    },
+    {
+      "id": 357,
+      "start": 1619.73,
+      "end": 1621.57,
+      "start_time": "00:26:59,730",
+      "end_time": "00:27:01,570",
+      "text": "Sau mình xuất mình sẽ kỹ hơn rồi đấy."
+    },
+    {
+      "id": 358,
+      "start": 1623.19,
+      "end": 1623.77,
+      "start_time": "00:27:03,190",
+      "end_time": "00:27:03,770",
+      "text": "Upload lên kênh đi."
+    },
+    {
+      "id": 359,
+      "start": 1623.77,
+      "end": 1628.37,
+      "start_time": "00:27:03,770",
+      "end_time": "00:27:08,370",
+      "text": "1, 6, hình như nó là kích thước"
+    },
+    {
+      "id": 360,
+      "start": 1628.37,
+      "end": 1632.73,
+      "start_time": "00:27:08,370",
+      "end_time": "00:27:12,730",
+      "text": "Upload đây xem được không?"
+    },
+    {
+      "id": 361,
+      "start": 1635.0,
+      "end": 1638.07,
+      "start_time": "00:27:15,000",
+      "end_time": "00:27:18,070",
+      "text": "Cái này nó có một phần những thói quen của mình từ ngày xưa đến giờ nhé"
+    },
+    {
+      "id": 362,
+      "start": 1638.07,
+      "end": 1640.23,
+      "start_time": "00:27:18,070",
+      "end_time": "00:27:20,230",
+      "text": "Mà mình đã đào tạo anh em trong nội bộ GODA là"
+    },
+    {
+      "id": 363,
+      "start": 1640.23,
+      "end": 1644.77,
+      "start_time": "00:27:20,230",
+      "end_time": "00:27:24,770",
+      "text": "Trước khi upload một file thì mình thông thường hay đổi toàn bộ tiêu đề"
+    },
+    {
+      "id": 364,
+      "start": 1644.77,
+      "end": 1647.55,
+      "start_time": "00:27:24,770",
+      "end_time": "00:27:27,550",
+      "text": "Từ chữ viết hoa thành viết thường hết"
+    },
+    {
+      "id": 365,
+      "start": 1647.55,
+      "end": 1648.33,
+      "start_time": "00:27:27,550",
+      "end_time": "00:27:28,330",
+      "text": "Sau đó mới upload"
+    },
+    {
+      "id": 366,
+      "start": 1648.33,
+      "end": 1649.97,
+      "start_time": "00:27:28,330",
+      "end_time": "00:27:29,970",
+      "text": "Thì đấy là cái cách của mình"
+    },
+    {
+      "id": 367,
+      "start": 1649.97,
+      "end": 1652.63,
+      "start_time": "00:27:29,970",
+      "end_time": "00:27:32,630",
+      "text": "Và YouTube thì nó có rất là nhiều trường phái khác nhau"
+    },
+    {
+      "id": 368,
+      "start": 1652.63,
+      "end": 1655.43,
+      "start_time": "00:27:32,630",
+      "end_time": "00:27:35,430",
+      "text": "Và nó không có đúng, có sai. Nó chỉ có cách phù hợp thôi."
+    },
+    {
+      "id": 369,
+      "start": 1655.91,
+      "end": 1657.37,
+      "start_time": "00:27:35,910",
+      "end_time": "00:27:37,370",
+      "text": "Thế là mình chia sẻ cái cách của mình."
+    },
+    {
+      "id": 370,
+      "start": 1657.99,
+      "end": 1662.97,
+      "start_time": "00:27:37,990",
+      "end_time": "00:27:42,970",
+      "text": "Đấy thì mình hay đổi toàn bộ tiêu đề của video sang chữ viết thường."
+    },
+    {
+      "id": 371,
+      "start": 1663.31,
+      "end": 1665.73,
+      "start_time": "00:27:43,310",
+      "end_time": "00:27:45,730",
+      "text": "Thì Tuấn đổi cho mình toàn bộ tiêu đề sang viết thường."
+    },
+    {
+      "id": 372,
+      "start": 1669.69,
+      "end": 1672.31,
+      "start_time": "00:27:49,690",
+      "end_time": "00:27:52,310",
+      "text": "Đó. Copy cái đấy và đưa dưới viết thành viết thường hết."
+    },
+    {
+      "id": 373,
+      "start": 1678.15,
+      "end": 1680.15,
+      "start_time": "00:27:58,150",
+      "end_time": "00:28:00,150",
+      "text": "Lạm dụng ChatGPT"
+    },
+    {
+      "id": 374,
+      "start": 1680.15,
+      "end": 1685.15,
+      "start_time": "00:28:00,150",
+      "end_time": "00:28:05,150",
+      "text": "Quá phụ thuộc rồi"
+    },
+    {
+      "id": 375,
+      "start": 1685.15,
+      "end": 1688.71,
+      "start_time": "00:28:05,150",
+      "end_time": "00:28:08,710",
+      "text": "Hôm nay ăn gì?"
+    },
+    {
+      "id": 376,
+      "start": 1690.51,
+      "end": 1693.15,
+      "start_time": "00:28:10,510",
+      "end_time": "00:28:13,150",
+      "text": "Tôi có nên đưa người yêu đi chơi vào hôm nay không?"
+    },
+    {
+      "id": 377,
+      "start": 1694.83,
+      "end": 1696.89,
+      "start_time": "00:28:14,830",
+      "end_time": "00:28:16,890",
+      "text": "Mùng 8 tháng 3 tặng quà gì cho vợ?"
+    },
+    {
+      "id": 378,
+      "start": 1699.37,
+      "end": 1703.43,
+      "start_time": "00:28:19,370",
+      "end_time": "00:28:23,430",
+      "text": "Đó, ok, upload lên. Và cả với thumb cũng vậy nhá, đấy là thói quen của mình."
+    },
+    {
+      "id": 379,
+      "start": 1703.85,
+      "end": 1705.67,
+      "start_time": "00:28:23,850",
+      "end_time": "00:28:25,670",
+      "text": "Mình được anh Huân đào tạo về việc đấy."
+    },
+    {
+      "id": 380,
+      "start": 1705.67,
+      "end": 1709.19,
+      "start_time": "00:28:25,670",
+      "end_time": "00:28:29,190",
+      "text": "Là cái thói quen từ ngày xưa, từ 2016 anh ấy đã làm."
+    },
+    {
+      "id": 381,
+      "start": 1709.73,
+      "end": 1711.71,
+      "start_time": "00:28:29,730",
+      "end_time": "00:28:31,710",
+      "text": "Và mình Shu tuân thủ cái điều đấy và mình thấy nó hiệu quả."
+    },
+    {
+      "id": 382,
+      "start": 1712.63,
+      "end": 1715.87,
+      "start_time": "00:28:32,630",
+      "end_time": "00:28:35,870",
+      "text": "Các anh em mới bây giờ làm thì có thể là cũng chả cần."
+    },
+    {
+      "id": 383,
+      "start": 1716.13,
+      "end": 1717.03,
+      "start_time": "00:28:36,130",
+      "end_time": "00:28:37,030",
+      "text": "Và anh em thấy vẫn hiệu quả."
+    },
+    {
+      "id": 384,
+      "start": 1717.55,
+      "end": 1718.45,
+      "start_time": "00:28:37,550",
+      "end_time": "00:28:38,450",
+      "text": "Thì nó không có đúng có sai."
+    },
+    {
+      "id": 385,
+      "start": 1719.17,
+      "end": 1720.49,
+      "start_time": "00:28:39,170",
+      "end_time": "00:28:40,490",
+      "text": "Nó chỉ có cái phù hợp với mình thôi."
+    },
+    {
+      "id": 386,
+      "start": 1721.35,
+      "end": 1724.01,
+      "start_time": "00:28:41,350",
+      "end_time": "00:28:44,010",
+      "text": "Ok, upload thì chúng ta sẽ có toàn bộ mọi thứ rồi."
+    },
+    {
+      "id": 387,
+      "start": 1724.11,
+      "end": 1724.81,
+      "start_time": "00:28:44,110",
+      "end_time": "00:28:44,810",
+      "text": "Thì upload lên thôi."
+    },
+    {
+      "id": 388,
+      "start": 1726.65,
+      "end": 1727.67,
+      "start_time": "00:28:46,650",
+      "end_time": "00:28:47,670",
+      "text": "Tiêu đề thì chỉnh chuẩn."
+    },
+    {
+      "id": 389,
+      "start": 1730.67,
+      "end": 1731.57,
+      "start_time": "00:28:50,670",
+      "end_time": "00:28:51,570",
+      "text": "Sao lại x đi?"
+    },
+    {
+      "id": 390,
+      "start": 1731.57,
+      "end": 1739.77,
+      "start_time": "00:28:51,570",
+      "end_time": "00:28:59,770",
+      "text": "Upload đây đúng không? Mình chỉnh thôi, chỉnh các yếu tố thôi. Lấy tiêu đề chuẩn vào, cho vào đây nhé."
+    },
+    {
+      "id": 391,
+      "start": 1739.77,
+      "end": 1744.97,
+      "start_time": "00:28:59,770",
+      "end_time": "00:29:04,970",
+      "text": "Copy vào."
+    },
+    {
+      "id": 392,
+      "start": 1744.97,
+      "end": 1749.77,
+      "start_time": "00:29:04,970",
+      "end_time": "00:29:09,770",
+      "text": "OK, mô tả."
+    },
+    {
+      "id": 393,
+      "start": 1749.77,
+      "end": 1762.22,
+      "start_time": "00:29:09,770",
+      "end_time": "00:29:22,220",
+      "text": "Các bạn có thể tìm hiểu thêm nhiều video mới nhé."
+    },
+    {
+      "id": 394,
+      "start": 1762.22,
+      "end": 1768.02,
+      "start_time": "00:29:22,220",
+      "end_time": "00:29:28,020",
+      "text": "paste vào, rồi hashtag, hashtag thì anh em lưu ý từng cái một nhé, đừng copy cả 3 cái quang vào, nó không nhận đâu."
+    },
+    {
+      "id": 395,
+      "start": 1771.1,
+      "end": 1779.76,
+      "start_time": "00:29:31,100",
+      "end_time": "00:29:39,760",
+      "text": "Rồi ấn vào từ từ bình tĩnh rồi, ấn, thấy nó hiện thấy click vào bộ phát, đấy, cái sau cũng nó cũng như vậy thôi, ấn vào,"
+    },
+    {
+      "id": 396,
+      "start": 1779.76,
+      "end": 1788.38,
+      "start_time": "00:29:39,760",
+      "end_time": "00:29:48,380",
+      "text": "Cho vào, click 1 phát nó mới nhận. Rồi cái tiếp theo. Ok, thừa rồi. Rồi"
+    },
+    {
+      "id": 397,
+      "start": 1788.38,
+      "end": 1797.0,
+      "start_time": "00:29:48,380",
+      "end_time": "00:29:57,000",
+      "text": "click vào, xong. Rồi chúng ta đến cái tiếp theo là upload thumbnail rồi đẩy thumb lên."
+    },
+    {
+      "id": 398,
+      "start": 1797.0,
+      "end": 1802.64,
+      "start_time": "00:29:57,000",
+      "end_time": "00:30:02,640",
+      "text": "Đấy, ai à? Chưa được à?"
+    },
+    {
+      "id": 399,
+      "start": 1804.26,
+      "end": 1807.46,
+      "start_time": "00:30:04,260",
+      "end_time": "00:30:07,460",
+      "text": "Đây, chuyển kênh khác, chuyển tạm kênh khác để upload để hoàn thiện nút quy trình."
+    },
+    {
+      "id": 400,
+      "start": 1809.0,
+      "end": 1810.0,
+      "start_time": "00:30:09,000",
+      "end_time": "00:30:10,000",
+      "text": "Lỗi mình, sorry nha."
+    },
+    {
+      "id": 401,
+      "start": 1811.74,
+      "end": 1815.28,
+      "start_time": "00:30:11,740",
+      "end_time": "00:30:15,280",
+      "text": "Về đấy xem, verify chứ, không phải vào tạm kênh, hai kênh kia cũng được mà, kênh nào cũng được."
+    },
+    {
+      "id": 402,
+      "start": 1817.48,
+      "end": 1819.16,
+      "start_time": "00:30:17,480",
+      "end_time": "00:30:19,160",
+      "text": "Mình có làm ở đâu? Đấy."
+    },
+    {
+      "id": 403,
+      "start": 1823.3,
+      "end": 1825.8,
+      "start_time": "00:30:23,300",
+      "end_time": "00:30:25,800",
+      "text": "Mình có để public đâu mà, cứ upload lên."
+    },
+    {
+      "id": 404,
+      "start": 1827.0,
+      "end": 1829.64,
+      "start_time": "00:30:27,000",
+      "end_time": "00:30:29,640",
+      "text": "Tha,"
+    },
+    {
+      "id": 405,
+      "start": 1829.64,
+      "end": 1830.64,
+      "start_time": "00:30:29,640",
+      "end_time": "00:30:30,640",
+      "text": "Rồi."
+    },
+    {
+      "id": 406,
+      "start": 1830.64,
+      "end": 1839.64,
+      "start_time": "00:30:30,640",
+      "end_time": "00:30:39,640",
+      "text": "À, đấy có một cái phần chia sẻ khi mình nhìn thấy cái phần mô tả, có một cái thói quen của mình là mình không có thể để mô tả gọi là mặc định đâu nhá."
+    },
+    {
+      "id": 407,
+      "start": 1839.64,
+      "end": 1844.64,
+      "start_time": "00:30:39,640",
+      "end_time": "00:30:44,640",
+      "text": "Và với một niềm tin nào đấy trong mình, mình nghĩ rằng cái việc mặc định đấy nó khiến cái video nó không lên."
+    },
+    {
+      "id": 408,
+      "start": 1844.64,
+      "end": 1847.64,
+      "start_time": "00:30:44,640",
+      "end_time": "00:30:47,640",
+      "text": "Cũng giống như kiểu là public video bằng tay ấy."
+    },
+    {
+      "id": 409,
+      "start": 1847.64,
+      "end": 1849.64,
+      "start_time": "00:30:47,640",
+      "end_time": "00:30:49,640",
+      "text": "Thì mình được học cái điều đấy từ ngày xưa."
+    },
+    {
+      "id": 410,
+      "start": 1849.64,
+      "end": 1850.84,
+      "start_time": "00:30:49,640",
+      "end_time": "00:30:50,840",
+      "text": "Xưa mình cũng duy trì đến bây giờ."
+    },
+    {
+      "id": 411,
+      "start": 1851.36,
+      "end": 1852.44,
+      "start_time": "00:30:51,360",
+      "end_time": "00:30:52,440",
+      "text": "Mình không hẹn giờ."
+    },
+    {
+      "id": 412,
+      "start": 1853.0,
+      "end": 1854.1,
+      "start_time": "00:30:53,000",
+      "end_time": "00:30:54,100",
+      "text": "Trừ trường hợp bất khả kháng thôi."
+    },
+    {
+      "id": 413,
+      "start": 1854.54,
+      "end": 1855.74,
+      "start_time": "00:30:54,540",
+      "end_time": "00:30:55,740",
+      "text": "Thì mình mới hẹn giờ ra còn khởi lại."
+    },
+    {
+      "id": 414,
+      "start": 1855.82,
+      "end": 1856.56,
+      "start_time": "00:30:55,820",
+      "end_time": "00:30:56,560",
+      "text": "Không bao giờ hẹn giờ hết."
+    },
+    {
+      "id": 415,
+      "start": 1857.18,
+      "end": 1858.54,
+      "start_time": "00:30:57,180",
+      "end_time": "00:30:58,540",
+      "text": "100% video public bằng tay hết."
+    },
+    {
+      "id": 416,
+      "start": 1863.85,
+      "end": 1870.65,
+      "start_time": "00:31:03,850",
+      "end_time": "00:31:10,650",
+      "text": "Ok"
+    },
+    {
+      "id": 417,
+      "start": 1870.65,
+      "end": 1873.63,
+      "start_time": "00:31:10,650",
+      "end_time": "00:31:13,630",
+      "text": "Rồi thumbnail lên"
+    },
+    {
+      "id": 418,
+      "start": 1873.63,
+      "end": 1877.49,
+      "start_time": "00:31:13,630",
+      "end_time": "00:31:17,490",
+      "text": "Rồi lưu lại"
+    },
+    {
+      "id": 419,
+      "start": 1877.49,
+      "end": 1879.37,
+      "start_time": "00:31:17,490",
+      "end_time": "00:31:19,370",
+      "text": "Nếu như chưa đổi tên kìa"
+    },
+    {
+      "id": 420,
+      "start": 1879.37,
+      "end": 1884.43,
+      "start_time": "00:31:19,370",
+      "end_time": "00:31:24,430",
+      "text": "Đổi đi không chịu được đâu, OCD không chịu được đâu"
+    },
+    {
+      "id": 421,
+      "start": 1884.43,
+      "end": 1887.57,
+      "start_time": "00:31:24,430",
+      "end_time": "00:31:27,570",
+      "text": "Nhìn được ngớ mắt lắm"
+    },
+    {
+      "id": 422,
+      "start": 1891.63,
+      "end": 1892.29,
+      "start_time": "00:31:31,630",
+      "end_time": "00:31:32,290",
+      "text": "Sao đấy"
+    },
+    {
+      "id": 423,
+      "start": 1892.29,
+      "end": 1897.89,
+      "start_time": "00:31:32,290",
+      "end_time": "00:31:37,890",
+      "text": "Xem, sai kích thước à? Sai kích thước là lấy Photoshop resize lại."
+    },
+    {
+      "id": 424,
+      "start": 1897.89,
+      "end": 1907.17,
+      "start_time": "00:31:37,890",
+      "end_time": "00:31:47,170",
+      "text": "New file, đúng kích thước của mình đấy, 280720"
+    },
+    {
+      "id": 425,
+      "start": 1907.17,
+      "end": 1916.44,
+      "start_time": "00:31:47,170",
+      "end_time": "00:31:56,440",
+      "text": "mà, kích thước của YouTube, full HD cũng đúng"
+    },
+    {
+      "id": 426,
+      "start": 1916.44,
+      "end": 1919.2,
+      "start_time": "00:31:56,440",
+      "end_time": "00:31:59,200",
+      "text": "Full HD cũng được, nhưng mình hay để là 1, 2, 8, 0 để HD thôi."
+    },
+    {
+      "id": 427,
+      "start": 1921.94,
+      "end": 1922.86,
+      "start_time": "00:32:01,940",
+      "end_time": "00:32:02,860",
+      "text": "1, 2, 8, 0."
+    },
+    {
+      "id": 428,
+      "start": 1924.32,
+      "end": 1925.0,
+      "start_time": "00:32:04,320",
+      "end_time": "00:32:05,000",
+      "text": "7, 20."
+    },
+    {
+      "id": 429,
+      "start": 1926.3,
+      "end": 1927.68,
+      "start_time": "00:32:06,300",
+      "end_time": "00:32:07,680",
+      "text": "7, 20. Ok."
+    },
+    {
+      "id": 430,
+      "start": 1928.9,
+      "end": 1930.34,
+      "start_time": "00:32:08,900",
+      "end_time": "00:32:10,340",
+      "text": "Rồi, lấy cái file vừa nãy vào."
+    },
+    {
+      "id": 431,
+      "start": 1936.24,
+      "end": 1943.86,
+      "start_time": "00:32:16,240",
+      "end_time": "00:32:23,860",
+      "text": "Zai không chuẩn lắm, ok, kéo ra, cho nó full đi, bên này."
+    },
+    {
+      "id": 432,
+      "start": 1946.34,
+      "end": 1954.88,
+      "start_time": "00:32:26,340",
+      "end_time": "00:32:34,880",
+      "text": "Ok, chỉnh đẩy lên một tí, một tí, ok, được rồi, xong, xuất, xuất video, xuất thumb, đẩy thumb bên kia đi."
+    },
+    {
+      "id": 433,
+      "start": 1956.0,
+      "end": 1959.28,
+      "start_time": "00:32:36,000",
+      "end_time": "00:32:39,280",
+      "text": "Rồi, export, PNG, được, ok."
+    },
+    {
+      "id": 434,
+      "start": 1961.92,
+      "end": 1963.0,
+      "start_time": "00:32:41,920",
+      "end_time": "00:32:43,000",
+      "text": "Rồi, cho desktop ấy."
+    },
+    {
+      "id": 435,
+      "start": 1964.4,
+      "end": 1965.22,
+      "start_time": "00:32:44,400",
+      "end_time": "00:32:45,220",
+      "text": "Nhớ đổi tên nhé."
+    },
+    {
+      "id": 436,
+      "start": 1966.24,
+      "end": 1973.68,
+      "start_time": "00:32:46,240",
+      "end_time": "00:32:53,680",
+      "text": "Quá phụ thuộc ChatGPT,"
+    },
+    {
+      "id": 437,
+      "start": 1973.68,
+      "end": 1981.12,
+      "start_time": "00:32:53,680",
+      "end_time": "00:33:01,120",
+      "text": "nghiện không bỏ được."
+    },
+    {
+      "id": 438,
+      "start": 1982.6,
+      "end": 1983.48,
+      "start_time": "00:33:02,600",
+      "end_time": "00:33:03,480",
+      "text": "Rồi, cho lên đây."
+    },
+    {
+      "id": 439,
+      "start": 1988.6,
+      "end": 1990.6,
+      "start_time": "00:33:08,600",
+      "end_time": "00:33:10,600",
+      "text": "Ok"
+    },
+    {
+      "id": 440,
+      "start": 1995.0,
+      "end": 2000.6,
+      "start_time": "00:33:15,000",
+      "end_time": "00:33:20,600",
+      "text": "Ở phần danh sách phát này chúng ta sẽ tạo các danh sách phát nó liên quan đến tên kênh của mình và chủ đề của mình."
+    },
+    {
+      "id": 441,
+      "start": 2000.6,
+      "end": 2002.6,
+      "start_time": "00:33:20,600",
+      "end_time": "00:33:22,600",
+      "text": "Ví dụ như ở đây mình sẽ tạo ví dụ một danh sách phát ở đây."
+    },
+    {
+      "id": 442,
+      "start": 2002.6,
+      "end": 2007.6,
+      "start_time": "00:33:22,600",
+      "end_time": "00:33:27,600",
+      "text": "Cái này nó liên quan đến phần SEO nhưng là để đủ bước thì mình vẫn hướng dẫn anh em."
+    },
+    {
+      "id": 443,
+      "start": 2007.6,
+      "end": 2016.6,
+      "start_time": "00:33:27,600",
+      "end_time": "00:33:36,600",
+      "text": "Chúng ta sẽ chọn playlist tạo một cái mới, danh sách phát mới với tên kênh của mình như ví dụ là GODA Story."
+    },
+    {
+      "id": 444,
+      "start": 2016.6,
+      "end": 2018.84,
+      "start_time": "00:33:36,600",
+      "end_time": "00:33:38,840",
+      "text": "Cái này là danh sách phát chính của kênh nhé."
+    },
+    {
+      "id": 445,
+      "start": 2019.2,
+      "end": 2025.0,
+      "start_time": "00:33:39,200",
+      "end_time": "00:33:45,000",
+      "text": "Còn về sau khi anh em có rất nhiều topic trong cùng một kênh như vậy thì chúng ta có thể chia ra làm các playlist khác nhau."
+    },
+    {
+      "id": 446,
+      "start": 2025.16,
+      "end": 2030.8,
+      "start_time": "00:33:45,160",
+      "end_time": "00:33:50,800",
+      "text": "Ví dụ như là câu chuyện chủ tịch giả vờ và cái kết nhưng mà nó lại bối cảnh nhà hàng chẳng hạn."
+    },
+    {
+      "id": 447,
+      "start": 2031.2,
+      "end": 2038.42,
+      "start_time": "00:33:51,200",
+      "end_time": "00:33:58,420",
+      "text": "Thì mình có thể ghi là restaurant story, hoặc là hotel story, hoặc là bank story."
+    },
+    {
+      "id": 448,
+      "start": 2038.42,
+      "end": 2044.26,
+      "start_time": "00:33:58,420",
+      "end_time": "00:34:04,260",
+      "text": "Kiểu như vậy thì mình sẽ tìm trong chủ đề của mình các cái từ khóa nó đại diện cho cái dạng nội dung đấy."
+    },
+    {
+      "id": 449,
+      "start": 2044.64,
+      "end": 2045.34,
+      "start_time": "00:34:04,640",
+      "end_time": "00:34:05,340",
+      "text": "Thì chúng ta sẽ chọn."
+    },
+    {
+      "id": 450,
+      "start": 2045.34,
+      "end": 2049.1,
+      "start_time": "00:34:05,340",
+      "end_time": "00:34:09,100",
+      "text": "Đó, chọn nội dung công khai, ngày xuất bản mới nhất."
+    },
+    {
+      "id": 451,
+      "start": 2049.7,
+      "end": 2055.6,
+      "start_time": "00:34:09,700",
+      "end_time": "00:34:15,600",
+      "text": "Cái việc mà mình đưa vào ngày xuất bản mới nhất để về sau là khi mà mỗi một cái video chúng ta để playlist ở màn hình kết thúc ấy,"
+    },
+    {
+      "id": 452,
+      "start": 2056.22,
+      "end": 2059.94,
+      "start_time": "00:34:16,220",
+      "end_time": "00:34:19,940",
+      "text": "thì khi chúng ta kéo kênh mới hoặc khi chúng ta upload video mới vào playlist này,"
+    },
+    {
+      "id": 453,
+      "start": 2060.4,
+      "end": 2065.1,
+      "start_time": "00:34:20,400",
+      "end_time": "00:34:25,100",
+      "text": "mặc định tất cả những video cũ nó sẽ hiển thị video mới của mình, nó sẽ kéo view cho video mới."
+    },
+    {
+      "id": 454,
+      "start": 2065.16,
+      "end": 2067.3,
+      "start_time": "00:34:25,160",
+      "end_time": "00:34:27,300",
+      "text": "Đó, rồi lưu lại tiếp theo"
+    },
+    {
+      "id": 455,
+      "start": 2067.3,
+      "end": 2068.42,
+      "start_time": "00:34:27,300",
+      "end_time": "00:34:28,420",
+      "text": "Chọn vào playlist chưa"
+    },
+    {
+      "id": 456,
+      "start": 2068.42,
+      "end": 2071.9,
+      "start_time": "00:34:28,420",
+      "end_time": "00:34:31,900",
+      "text": "Ừ, không lưu à"
+    },
+    {
+      "id": 457,
+      "start": 2071.9,
+      "end": 2081.03,
+      "start_time": "00:34:31,900",
+      "end_time": "00:34:41,030",
+      "text": "Có chưa"
+    },
+    {
+      "id": 458,
+      "start": 2081.03,
+      "end": 2082.37,
+      "start_time": "00:34:41,030",
+      "end_time": "00:34:42,370",
+      "text": "Có chưa? Có playlist chưa?"
+    },
+    {
+      "id": 459,
+      "start": 2085.11,
+      "end": 2086.43,
+      "start_time": "00:34:45,110",
+      "end_time": "00:34:46,430",
+      "text": "Tạo một playlist đi Tuấn."
+    },
+    {
+      "id": 460,
+      "start": 2091.21,
+      "end": 2092.79,
+      "start_time": "00:34:51,210",
+      "end_time": "00:34:52,790",
+      "text": "Vào kênh, vào studio tạo."
+    },
+    {
+      "id": 461,
+      "start": 2093.13,
+      "end": 2094.69,
+      "start_time": "00:34:53,130",
+      "end_time": "00:34:54,690",
+      "text": "Nó nhiều playlist quá, nó tràn hông dưới."
+    },
+    {
+      "id": 462,
+      "start": 2096.19,
+      "end": 2105.13,
+      "start_time": "00:34:56,190",
+      "end_time": "00:35:05,130",
+      "text": "Hôm, đổi tạm với cái kia, tin 3 phút bí ẩn kia, đổi nữa đi."
+    },
+    {
+      "id": 463,
+      "start": 2107.41,
+      "end": 2107.67,
+      "start_time": "00:35:07,410",
+      "end_time": "00:35:07,670",
+      "text": "Đấy."
+    },
+    {
+      "id": 464,
+      "start": 2109.03,
+      "end": 2109.31,
+      "start_time": "00:35:09,030",
+      "end_time": "00:35:09,310",
+      "text": "Đó."
+    },
+    {
+      "id": 465,
+      "start": 2110.19,
+      "end": 2112.59,
+      "start_time": "00:35:10,190",
+      "end_time": "00:35:12,590",
+      "text": "Rồi, add vào cái SingularStory, đấy là ok mà."
+    },
+    {
+      "id": 466,
+      "start": 2114.23,
+      "end": 2115.73,
+      "start_time": "00:35:14,230",
+      "end_time": "00:35:15,730",
+      "text": "Đấy là mình lấy ví dụ mà, đâu rồi?"
+    },
+    {
+      "id": 467,
+      "start": 2117.35,
+      "end": 2118.53,
+      "start_time": "00:35:17,350",
+      "end_time": "00:35:18,530",
+      "text": "Không có, rồi, cứ lấy mới lấy đi."
+    },
+    {
+      "id": 468,
+      "start": 2119.19,
+      "end": 2120.25,
+      "start_time": "00:35:19,190",
+      "end_time": "00:35:20,250",
+      "text": "Được rồi, xong đã, xong đã."
+    },
+    {
+      "id": 469,
+      "start": 2121.35,
+      "end": 2123.07,
+      "start_time": "00:35:21,350",
+      "end_time": "00:35:23,070",
+      "text": "Rồi, kéo xuống dưới, chưa xong, kéo xuống dưới."
+    },
+    {
+      "id": 470,
+      "start": 2123.51,
+      "end": 2126.01,
+      "start_time": "00:35:23,510",
+      "end_time": "00:35:26,010",
+      "text": "Nội dung của tôi không dành cho trẻ em là thứ nhất này."
+    },
+    {
+      "id": 471,
+      "start": 2126.19,
+      "end": 2135.38,
+      "start_time": "00:35:26,190",
+      "end_time": "00:35:35,380",
+      "text": "Thứ hai là nội dung đã bị chỉnh sửa. Cái này anh em làm dạng AI nên tích vào nhé. Không là nó bị Reused đấy. Tích vào có. Rồi kéo trong dưới."
+    },
+    {
+      "id": 472,
+      "start": 2135.38,
+      "end": 2144.56,
+      "start_time": "00:35:35,380",
+      "end_time": "00:35:44,560",
+      "text": "Cho phép khai thác rồi. Cái phần này nó cứ mặc định như vậy thôi. Rồi xóa cái khai thác mặc định như thế đi. Với đây nó không có. Tiếp theo"
+    },
+    {
+      "id": 473,
+      "start": 2144.56,
+      "end": 2153.75,
+      "start_time": "00:35:44,560",
+      "end_time": "00:35:53,750",
+      "text": "kéo trong dưới nữa. Ngôn ngữ phụ đề. Cái này quan trọng này. Ngôn ngữ video thì chúng ta sẽ chọn là ngôn ngữ video của mình. Đó là tiếng Anh và Mỹ."
+    },
+    {
+      "id": 474,
+      "start": 2153.75,
+      "end": 2155.31,
+      "start_time": "00:35:53,750",
+      "end_time": "00:35:55,310",
+      "text": "English, United States."
+    },
+    {
+      "id": 475,
+      "start": 2156.77,
+      "end": 2158.51,
+      "start_time": "00:35:56,770",
+      "end_time": "00:35:58,510",
+      "text": "Rồi, tiếng Anh Hoa Kỳ, đây là tiếng Việt."
+    },
+    {
+      "id": 476,
+      "start": 2158.85,
+      "end": 2160.85,
+      "start_time": "00:35:58,850",
+      "end_time": "00:36:00,850",
+      "text": "Chứng nhận phụ đề, chọn vào chứng nhận phụ đề."
+    },
+    {
+      "id": 477,
+      "start": 2162.31,
+      "end": 2165.45,
+      "start_time": "00:36:02,310",
+      "end_time": "00:36:05,450",
+      "text": "Nội dung này chưa bao giờ được phát sóng trên truyền hình ở Hoa Kỳ là ok."
+    },
+    {
+      "id": 478,
+      "start": 2165.79,
+      "end": 2166.23,
+      "start_time": "00:36:05,790",
+      "end_time": "00:36:06,230",
+      "text": "Cái bên trên."
+    },
+    {
+      "id": 479,
+      "start": 2167.49,
+      "end": 2169.07,
+      "start_time": "00:36:07,490",
+      "end_time": "00:36:09,070",
+      "text": "Đó, rồi kéo hông dưới tiếp."
+    },
+    {
+      "id": 480,
+      "start": 2170.29,
+      "end": 2172.33,
+      "start_time": "00:36:10,290",
+      "end_time": "00:36:12,330",
+      "text": "Vị trí video anh em có thể để hoặc không nhá."
+    },
+    {
+      "id": 481,
+      "start": 2172.99,
+      "end": 2178.19,
+      "start_time": "00:36:12,990",
+      "end_time": "00:36:18,190",
+      "text": "Nếu như mình muốn target nhanh trực tiếp vào Hoa Kỳ, thì để United States là ok."
+    },
+    {
+      "id": 482,
+      "start": 2179.87,
+      "end": 2181.49,
+      "start_time": "00:36:19,870",
+      "end_time": "00:36:21,490",
+      "text": "Danh mục, chúng ta chọn danh mục."
+    },
+    {
+      "id": 483,
+      "start": 2183.75,
+      "end": 2190.47,
+      "start_time": "00:36:23,750",
+      "end_time": "00:36:30,470",
+      "text": "Giải trí đúng không? Entertainment đúng không? Hay people, vlog. Check lại bảng."
+    },
+    {
+      "id": 484,
+      "start": 2193.75,
+      "end": 2197.93,
+      "start_time": "00:36:33,750",
+      "end_time": "00:36:37,930",
+      "text": "Ok, Entertainment là giải trí. Được rồi. Xong. Upload video."
+    },
+    {
+      "id": 485,
+      "start": 2202.65,
+      "end": 2205.93,
+      "start_time": "00:36:42,650",
+      "end_time": "00:36:45,930",
+      "text": "Rồi, tiếp theo. Đây là phần cài kiếm tiền này."
+    },
+    {
+      "id": 486,
+      "start": 2208.59,
+      "end": 2212.13,
+      "start_time": "00:36:48,590",
+      "end_time": "00:36:52,130",
+      "text": "À, kênh này đang trong net đúng không? Ok, kênh này lâu lắm không làm rồi."
+    },
+    {
+      "id": 487,
+      "start": 2212.13,
+      "end": 2214.51,
+      "start_time": "00:36:52,130",
+      "end_time": "00:36:54,510",
+      "text": "Tiếp theo, rồi kiểm tra, tiếp theo."
+    },
+    {
+      "id": 488,
+      "start": 2215.67,
+      "end": 2216.93,
+      "start_time": "00:36:55,670",
+      "end_time": "00:36:56,930",
+      "text": "Mức độ phù hợp kéo xuống cuối cùng."
+    },
+    {
+      "id": 489,
+      "start": 2217.07,
+      "end": 2221.53,
+      "start_time": "00:36:57,070",
+      "end_time": "00:37:01,530",
+      "text": "Cái này, có kênh này bán kiếm tiền sẵn thì mình cài này cho anh em xem luôn."
+    },
+    {
+      "id": 490,
+      "start": 2221.91,
+      "end": 2229.51,
+      "start_time": "00:37:01,910",
+      "end_time": "00:37:09,510",
+      "text": "Không chứa các nội dung nào ở trên, có nghĩa là mình không chứa các nội dung liên quan đến súng ống này, bạo lực này, mọi thứ này."
+    },
+    {
+      "id": 491,
+      "start": 2229.51,
+      "end": 2231.01,
+      "start_time": "00:37:09,510",
+      "end_time": "00:37:11,010",
+      "text": "Thứ này, thì mình làm nội dung sạch"
+    },
+    {
+      "id": 492,
+      "start": 2231.01,
+      "end": 2233.95,
+      "start_time": "00:37:11,010",
+      "end_time": "00:37:13,950",
+      "text": "Mình xác nhận như vậy để YouTube nó duyệt cho mình xanh tiền"
+    },
+    {
+      "id": 493,
+      "start": 2233.95,
+      "end": 2235.61,
+      "start_time": "00:37:13,950",
+      "end_time": "00:37:15,610",
+      "text": "Đấy rồi, tiếp theo"
+    },
+    {
+      "id": 494,
+      "start": 2235.61,
+      "end": 2238.25,
+      "start_time": "00:37:15,610",
+      "end_time": "00:37:18,250",
+      "text": "Gửi thông tin đánh giá kìa"
+    },
+    {
+      "id": 495,
+      "start": 2238.25,
+      "end": 2238.95,
+      "start_time": "00:37:18,250",
+      "end_time": "00:37:18,950",
+      "text": "Gửi thông tin đánh giá"
+    },
+    {
+      "id": 496,
+      "start": 2238.95,
+      "end": 2240.49,
+      "start_time": "00:37:18,950",
+      "end_time": "00:37:20,490",
+      "text": "Đó, xong tiếp theo"
+    },
+    {
+      "id": 497,
+      "start": 2240.49,
+      "end": 2243.05,
+      "start_time": "00:37:20,490",
+      "end_time": "00:37:23,050",
+      "text": "Rồi"
+    },
+    {
+      "id": 498,
+      "start": 2243.21,
+      "end": 2243.53,
+      "start_time": "00:37:23,210",
+      "end_time": "00:37:23,530",
+      "text": "Tiếp theo."
+    },
+    {
+      "id": 499,
+      "start": 2245.17,
+      "end": 2245.79,
+      "start_time": "00:37:25,170",
+      "end_time": "00:37:25,790",
+      "text": "Kiểm tra."
+    },
+    {
+      "id": 500,
+      "start": 2245.97,
+      "end": 2246.25,
+      "start_time": "00:37:25,970",
+      "end_time": "00:37:26,250",
+      "text": "Rồi."
+    },
+    {
+      "id": 501,
+      "start": 2246.61,
+      "end": 2247.23,
+      "start_time": "00:37:26,610",
+      "end_time": "00:37:27,230",
+      "text": "Chế độ hiển thị."
+    },
+    {
+      "id": 502,
+      "start": 2247.47,
+      "end": 2248.27,
+      "start_time": "00:37:27,470",
+      "end_time": "00:37:28,270",
+      "text": "Cứ để không công khai."
+    },
+    {
+      "id": 503,
+      "start": 2250.57,
+      "end": 2251.55,
+      "start_time": "00:37:30,570",
+      "end_time": "00:37:31,550",
+      "text": "Không công khai là được."
+    },
+    {
+      "id": 504,
+      "start": 2252.55,
+      "end": 2252.79,
+      "start_time": "00:37:32,550",
+      "end_time": "00:37:32,790",
+      "text": "Rồi."
+    },
+    {
+      "id": 505,
+      "start": 2252.87,
+      "end": 2256.53,
+      "start_time": "00:37:32,870",
+      "end_time": "00:37:36,530",
+      "text": "Ok."
+    },
+    {
+      "id": 506,
+      "start": 2256.99,
+      "end": 2261.31,
+      "start_time": "00:37:36,990",
+      "end_time": "00:37:41,310",
+      "text": "Vậy là đã xong toàn bộ quy trình từ việc mình triển khai một content,"
+    },
+    {
+      "id": 507,
+      "start": 2261.31,
+      "end": 2267.55,
+      "start_time": "00:37:41,310",
+      "end_time": "00:37:47,550",
+      "text": "ý tưởng, nghiên cứu, triển khai content, xong đến phần mình chỉnh sửa video, xong đến phần mình upload lên kênh."
+    },
+    {
+      "id": 508,
+      "start": 2268.57,
+      "end": 2277.47,
+      "start_time": "00:37:48,570",
+      "end_time": "00:37:57,470",
+      "text": "Mình sẽ có một cái phần nữa sau đó, đó là một câu hỏi đặt ra rất nhiều anh em là, khi có video, ăn view rồi thì làm thế nào để phát triển tiếp?"
+    },
+    {
+      "id": 509,
+      "start": 2278.51,
+      "end": 2281.67,
+      "start_time": "00:37:58,510",
+      "end_time": "00:38:01,670",
+      "text": "Và làm thế nào để bắt trend? Anh em có quan tâm vấn đề này không ạ?"
+    },
+    {
+      "id": 510,
+      "start": 2283.79,
+      "end": 2286.15,
+      "start_time": "00:38:03,790",
+      "end_time": "00:38:06,150",
+      "text": "Hello? Hello?"
+    },
+    {
+      "id": 511,
+      "start": 2287.97,
+      "end": 2290.85,
+      "start_time": "00:38:07,970",
+      "end_time": "00:38:10,850",
+      "text": "Ok, anh em quan tâm thì mình sẽ chia sẻ nốt."
+    },
+    {
+      "id": 512,
+      "start": 2291.31,
+      "end": 2292.31,
+      "start_time": "00:38:11,310",
+      "end_time": "00:38:12,310",
+      "text": "Còn không thì thôi."
+    },
+    {
+      "id": 513,
+      "start": 2294.99,
+      "end": 2295.55,
+      "start_time": "00:38:14,990",
+      "end_time": "00:38:15,550",
+      "text": "Có quan tâm không ạ?"
+    },
+    {
+      "id": 514,
+      "start": 2297.17,
+      "end": 2298.73,
+      "start_time": "00:38:17,170",
+      "end_time": "00:38:18,730",
+      "text": "Ok, xin mời slide tiếp theo."
+    },
+    {
+      "id": 515,
+      "start": 2300.55,
+      "end": 2303.45,
+      "start_time": "00:38:20,550",
+      "end_time": "00:38:23,450",
+      "text": "Cái phần này là phần rất là ngắn nhưng mà phần cực kỳ quan trọng về mặt tư duy."
+    }
+  ]
+}

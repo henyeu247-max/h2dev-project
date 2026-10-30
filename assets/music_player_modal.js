@@ -18,7 +18,7 @@
   async function loadMusicCatalog() {
     if (musicData) return musicData;
     try {
-      const res = await fetch('data/music_catalog.json?v=20261030-uifix95');
+      const res = await fetch('data/music_catalog.json?v=20261030-uifix96');
       musicData = await res.json();
       return musicData;
     } catch (e) {

@@ -110,12 +110,19 @@ function computeCounts() {
 
   // Tach bai VIDEO-* va phien ZOOM-* (tong videos = ca hai).
   const videoList = Array.isArray(videos) ? videos : [];
+  const videosHuanList = Array.isArray(readJson('data/videos_huan.json')) ? readJson('data/videos_huan.json') : [];
+  const videosDgmdList = Array.isArray(readJson('data/videos_dgmd.json')) ? readJson('data/videos_dgmd.json') : [];
+  const allSystemVideos = videoList.concat(videosHuanList, videosDgmdList);
   const videoLessons = videoList.filter(v => v && /^VIDEO/i.test(String(v.sku || ''))).length;
   const zoomSessions = videoList.filter(v => v && /^ZOOM/i.test(String(v.sku || ''))).length;
 
   // Module lo trinh (data/modules.json co the la array hoac {modules:[...]}).
   const modulesFile = readJson('data/modules.json') || [];
   const modulesRaw = Array.isArray(modulesFile) ? modulesFile : (Array.isArray(modulesFile.modules) ? modulesFile.modules : []);
+  const modulesHuanFile = readJson('data/modules_huan.json') || [];
+  const modulesHuanRaw = Array.isArray(modulesHuanFile) ? modulesHuanFile : (Array.isArray(modulesHuanFile.modules) ? modulesHuanFile.modules : []);
+  const modulesDgmdFile = readJson('data/modules_dgmd.json') || [];
+  const modulesDgmdRaw = Array.isArray(modulesDgmdFile) ? modulesDgmdFile : (Array.isArray(modulesDgmdFile.modules) ? modulesDgmdFile.modules : []);
   let modulesItems = 0;
   let modulesWithBadge = 0;
   for (const m of modulesRaw) {
@@ -126,6 +133,7 @@ function computeCounts() {
       if (badge) modulesWithBadge += 1;
     }
   }
+  const subNichesTotal = nicheList.reduce((acc, n) => acc + len(n && n.subNiches120) + len(n && n.subNiches2026), 0);
 
   const media = scanVideoDir();
   const isVpsDeploy = !fs.existsSync(path.join(ROOT, 'raw-kenh-goc'));
@@ -139,13 +147,19 @@ function computeCounts() {
     }
   })();
   const liveVideoDirs = countEntries('video', { onlyDirs: true });
+  const videoFreeTotal = allSystemVideos.filter(v => v && Boolean(v.free ?? v.is_free)).length;
 
   return {
     videos: len(videos),
+    videosHuan: len(videosHuanList),
+    videosDgmd: len(videosDgmdList),
+    totalSystemVideos: len(allSystemVideos),
     videoLessons,
     zoomSessions,
     videoFree: videoList.filter(v => v && v.free === true).length,
     videoPro: videoList.filter(v => v && v.free === false).length,
+    videoFreeTotal,
+    videoProTotal: len(allSystemVideos) - videoFreeTotal,
     documents: len(documents),
     docKindPrompt: countKind('prompt'),
     docKindReport: countKind('report'),
@@ -171,6 +185,7 @@ function computeCounts() {
     nguonReup: len(nguonReup),
     chienLuocSteps: len(chienLuoc.workflow),
     niches: nicheList.length,
+    subNichesTotal,
     nichesGreenTrue,
     nichesCoMauTang,
     nichesChuaDuBc,
@@ -180,6 +195,9 @@ function computeCounts() {
     catalogRecords: len(readJson('data/catalog.json')),
     catalogFullRecords: len(readJson('data/catalog_full.json')),
     modules: len(modulesRaw),
+    modulesHuan: len(modulesHuanRaw),
+    modulesDgmd: len(modulesDgmdRaw),
+    modulesTotal: len(modulesRaw) + len(modulesHuanRaw) + len(modulesDgmdRaw),
     modulesItems: modulesItems,
     modulesWithBadge: modulesWithBadge,
     // Tren server deploy VPS (thu muc video/ va raw-kenh-goc/ bi gitignore), giu nguyen gia tri tu manifest da commit

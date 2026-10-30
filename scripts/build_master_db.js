@@ -468,9 +468,12 @@ const slimBySku = new Map(catalogSlim.concat(catalogHuan, catalogDgmd).map(v => 
 const tabsBySku = new Map((Array.isArray(videoTabs) ? videoTabs : []).concat(videosHuan, videosDgmd).map(v => [v.sku, v]));
 
 const MARKET_FLAG_TO_CODE = {
-  '🇻🇳 Việt': 'VN', '🇯🇵 Nhật': 'JP', '🇰🇷 Hàn': 'KR', '🇨🇳 Trung': 'CN',
-  '🇺🇸 Mỹ': 'US', '🇷🇺 Nga': 'RU', '🌐 Ngoại': 'GLOBAL', '🇨🇦 Canada': 'CA',
-  '🇹🇭 Thái': 'TH', '🇵🇭 Phil': 'PH', '🇬🇧 Anh': 'GB', '🇭🇰 HK': 'HK'
+  '🇻🇳 Việt': 'VN', '🇻🇳 Việt Nam': 'VN', '🇯🇵 Nhật': 'JP', '🇯🇵 Nhật Bản': 'JP',
+  '🇰🇷 Hàn': 'KR', '🇰🇷 Hàn Quốc': 'KR', '🇨🇳 Trung': 'CN',
+  '🇺🇸 Mỹ': 'US', '🇺🇸 US / Global': 'US', '🇺🇸 Mỹ / Global': 'US',
+  '🇷🇺 Nga': 'RU', '🌐 Ngoại': 'GLOBAL', '🌍 View Ngoại': 'GLOBAL', 'View Ngoại': 'GLOBAL',
+  '🇨🇦 Canada': 'CA', '🇹🇭 Thái': 'TH', '🇵🇭 Phil': 'PH', '🇬🇧 Anh': 'GB', '🇭🇰 HK': 'HK',
+  '📘 Facebook': 'FB', '📱 Shorts / Reels': 'SHORTS'
 };
 function marketCodeFromTab(tab) {
   if (!tab || !Array.isArray(tab.market) || !tab.market.length) return null;

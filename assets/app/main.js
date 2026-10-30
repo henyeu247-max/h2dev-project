@@ -97,7 +97,7 @@
      * (tabMarkup / more-menu) khong phai biet gi ve he icon. */
     TABS.forEach(t => { t.icon = ico(t.icon, 16); });
 
-    const APP_BUILD_VER = '20260922-g2-esc-onclick-a11y-v1';
+    const APP_BUILD_VER = '20261030-uifix96';
     // G-std: fallback chain like FckSignups useTools (primary -> no-ver -> fail soft)
     const _loadErrors = [];
     function noteLoadError(path, msg) {
@@ -205,6 +205,7 @@
         };
       }
       const c = (raw && raw.counts) || raw || {};
+      const st = (raw && raw.storage) || {};
       const vH2Count = Number(c.videosH2dev ?? c.h2devVideos ?? c.videos ?? 148);
       const vHuanCount = Number(c.videosHuan ?? c.huanVideos ?? 140);
       const vDgmdCount = Number(c.videosDgmd ?? c.dgmdVideos ?? 45);
@@ -215,14 +216,14 @@
         videosHuan: vHuanCount,
         videosDgmd: vDgmdCount,
         documents: Number(c.documents ?? c.totalDocuments ?? c.taiLieu ?? 580),
-        channels: Number(c.channels ?? c.totalChannels ?? c.kenhTotal ?? 1082),
-        liveChannels: Number(c.liveChannels ?? c.kenhLive ?? 993),
+        channels: Number(c.channels ?? c.totalChannels ?? c.kenhTotal ?? 1076),
+        liveChannels: Number(c.liveChannels ?? c.kenhLive ?? 987),
         deadChannels: Number(c.deadChannels ?? c.kenhDead ?? 89),
         deadChannelsCount: Number(c.deadChannels ?? c.deadChannelsCount ?? c.kenhDead ?? 89),
         nguonReup: Number(c.nguonReup ?? c.reupSources ?? c.reupTotal ?? 52),
         reupSources: Number(c.nguonReup ?? c.reupSources ?? c.reupTotal ?? 52),
-        totalVideoSizeMb: Number(c.totalVideoSizeMb ?? c.diskMb ?? c.videoSizeMb ?? (c.mediaBytes ? Math.round(Number(c.mediaBytes) / (1024 * 1024)) : 85122)),
-        modulesTotal: Number(c.modulesTotal ?? c.totalModules ?? 35),
+        totalVideoSizeMb: Number(st.totalVideoSizeMb ?? st.diskMb ?? c.totalVideoSizeMb ?? c.diskMb ?? c.videoSizeMb ?? ((st.mediaBytes || c.mediaBytes) ? Math.round(Number(st.mediaBytes || c.mediaBytes) / (1024 * 1024)) : 85122.8)),
+        modulesTotal: Number(c.modulesTotal ?? c.modules ?? c.totalModules ?? 35),
         rawChannels: Number(c.rawChannels ?? c.canonicalRaw ?? 156),
         rawDeepProfiles: Number(c.rawDeepProfiles ?? c.canonicalRawUniqueChannels ?? 149)
       });
@@ -436,6 +437,8 @@
       if (t === 'rawkenh' && state.rawVitality) url.searchParams.set('rv', state.rawVitality);
       if (t === 'rawkenh' && state.rawFaceless) url.searchParams.set('rf', state.rawFaceless);
       if (t === 'rawkenh' && state.rawLang) url.searchParams.set('rl', state.rawLang);
+      /* --- Lo trinh --- */
+      if (t === 'lotrinh' && state.lotrinhTrack) url.searchParams.set('track', state.lotrinhTrack);
       /* --- Chien luoc --- */
       if (t === 'chienluoc' && state.clSubTab && state.clSubTab !== 'principles') url.searchParams.set('sub', state.clSubTab);
       /* --- So do DB --- */
@@ -453,6 +456,8 @@
       if (nextTab !== 'tai-lieu' && keep.docDid === undefined) { state.docDid = ''; state.docIdx = -1; }
       if (nextTab !== 'sodo' && keep.sodoNode === undefined) state.sodoNode = '';
       if (nextTab !== 'sodo' && keep.sodoQ === undefined) state.sodoQ = '';
+      if (nextTab !== 'chienluoc' && keep.clSubTab === undefined) state.clSubTab = 'principles';
+      if (nextTab !== 'lotrinh' && keep.lotrinhTrack === undefined) state.lotrinhTrack = '';
       /* Bo loc raw chi song o tab Raw. */
       if (nextTab !== 'rawkenh') { state.rawQ = ''; state.rawNiche = ''; state.rawGroup = ''; state.rawVitality = ''; state.rawFaceless = ''; state.rawLang = ''; state.rawPage = 1; }
       /* Bo loc nguonreup chi song o tab Nguon reup. */
@@ -491,7 +496,7 @@
         } catch (e) {}
       }
       renderTabs();
-      render();
+      return render();
     }
     function openNicheVideos(key, skus) {
       try { sessionStorage.setItem('h2dev-video-track', 'all'); } catch (err) {}
@@ -554,12 +559,38 @@
       document.querySelectorAll('[data-expand-niche]').forEach(btn => {
         btn.addEventListener('click', e => { e.preventDefault(); expandNicheMore(btn); });
       });
+      document.querySelectorAll('[data-toggle-tatca-list]').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.preventDefault();
+          const kind = btn.getAttribute('data-toggle-tatca-list');
+          if (kind === 'markets') state.tatcaMarketsExpanded = !state.tatcaMarketsExpanded;
+          else if (kind === 'niches') state.tatcaNichesExpanded = !state.tatcaNichesExpanded;
+          render();
+        });
+      });
       document.querySelectorAll('[data-open-tab]').forEach(btn => {
         btn.addEventListener('click', e => {
           e.preventDefault();
           const tab = btn.getAttribute('data-open-tab');
           const extra = {};
-          if (tab === 'tai-lieu') { extra.kindFilter = btn.getAttribute('data-kind') || ''; extra.promptNiche = btn.getAttribute('data-prompt-niche') || ''; extra.promptQ = ''; extra.docPage = 1; }
+          if (tab === 'tai-lieu') {
+            extra.kindFilter = btn.getAttribute('data-kind') || '';
+            extra.docBranch = btn.getAttribute('data-doc-branch') || '';
+            extra.promptNiche = btn.getAttribute('data-prompt-niche') || '';
+            extra.promptQ = '';
+            extra.docPage = 1;
+          }
+          if (tab === 'lotrinh') {
+            const ltr = btn.getAttribute('data-lotrinh-track') || btn.getAttribute('data-video-track') || '';
+            if (ltr) {
+              extra.lotrinhTrack = ltr;
+              try { sessionStorage.setItem('h2dev-track', ltr); } catch (err) {}
+            }
+          }
+          if (tab === 'chienluoc') {
+            const clSub = btn.getAttribute('data-cl-subtab') || '';
+            if (clSub) extra.clSubTab = clSub;
+          }
           if (tab === 'video') {
             const trAttr = btn.getAttribute('data-video-track') || '';
             if (trAttr) {
@@ -702,7 +733,11 @@
         quickScrollTo(btn.getAttribute('data-quick-section'), state.tab);
       } else if (type === 'cross-tab') {
         const target = btn.getAttribute('data-quick-target');
-        if (target) openTab(target, patch);
+        const sec = btn.getAttribute('data-quick-section');
+        if (target) {
+          const p = openTab(target, patch);
+          if (sec) Promise.resolve(p).then(() => quickScrollTo(sec, target));
+        }
       } else if (type === 'strategy-tab') {
         state.clSubTab = patch.clSubTab || 'principles';
         syncClSubUrl();
@@ -1127,6 +1162,10 @@
 
     function normalizeFilterChipA11y() {
       document.querySelectorAll('#content button.filter-btn').forEach(btn => {
+        if (btn.hasAttribute('data-open-tab') || btn.hasAttribute('data-sodo-jump') || btn.getAttribute('data-quick-action') === 'cross-tab') {
+          btn.removeAttribute('aria-pressed');
+          return;
+        }
         btn.setAttribute('aria-pressed', btn.classList.contains('active') ? 'true' : 'false');
       });
     }
@@ -1206,7 +1245,9 @@
             const lQp = new URLSearchParams(location.search);
             const lExtra = new URLSearchParams();
             lExtra.set('embed', '1');
-            ['track', 'tab', 'q'].forEach(k => { if (lQp.get(k)) lExtra.set(k, lQp.get(k)); });
+            const tr = state.lotrinhTrack || lQp.get('track') || '';
+            if (tr) lExtra.set('track', tr);
+            ['tab', 'q'].forEach(k => { if (lQp.get(k)) lExtra.set(k, lQp.get(k)); });
             html = `<iframe id="lotrinh-embed-frame" class="learn-frame" title="Lộ trình học" src="/learn.html?${lExtra.toString()}"></iframe>`;
             break;
           }
@@ -1280,7 +1321,7 @@
             const ov = await loadOverviewSummary();
             const totalVideos = Number(ov.totalVideos || ov.lessons || 333);
             const totalDocs = Number(ov.documents || 580);
-            const kenhLive = Number(ov.liveChannels || ov.channels || 1082);
+            const kenhLive = Number(ov.liveChannels || ov.channels || 987);
             window._cachedStatsText = totalVideos + " video · " + totalDocs + " TL · " + kenhLive + " kênh";
           } catch(e) {}
         }

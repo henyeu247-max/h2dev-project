@@ -5,9 +5,9 @@
    sw-register.js do lai dang ky '/assets/app/sw.js' voi scope '/' — hop le nho
    header Service-Worker-Allowed: '/' ma server.js phuc vu cho file nay.
    /sw.js (root) chuyen thanh legacy. SHELL + CACHE giu nguyen ban batchd. */
-/* 2026-10-30: bump ten cache -> SW moi install + activate xoa cache cu (uifix95, shell & data v10). */
-const SHELL_CACHE = 'h2dev-shell-v10';
-const DATA_CACHE = 'h2dev-data-v10';
+/* 2026-10-30: bump ten cache -> SW moi install + activate xoa cache cu (uifix96, shell & data v11). */
+const SHELL_CACHE = 'h2dev-shell-v11';
+const DATA_CACHE = 'h2dev-data-v11';
 const SHELL = [
   '/',
   '/index.html',

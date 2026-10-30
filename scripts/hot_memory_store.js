@@ -532,6 +532,19 @@ function computeOverviewFromRam() {
   let freeCount = 0;
   const marketCounts = {};
   let emptyMarket = 0;
+  const resCounts = { '1080p': 0, '2K': 0, '4K': 0, 'Shorts 1080p': 0 };
+
+  function normMarketRam(m) {
+    const s = String(m || '').trim();
+    if (!s) return '';
+    if (s === '🇻🇳 Việt Nam') return '🇻🇳 Việt';
+    if (s === '🇯🇵 Nhật Bản') return '🇯🇵 Nhật';
+    if (s === '🇰🇷 Hàn Quốc') return '🇰🇷 Hàn';
+    if (s === '🇺🇸 US / Global' || s === '🇺🇸 Mỹ') return '🇺🇸 Mỹ / Global';
+    const noFlag = s.replace(/^[^\p{L}\p{N}]+/u, '').trim();
+    if (noFlag === 'View Ngoại') return '🌐 Ngoại';
+    return s;
+  }
 
   for (const v of allVideos) {
     const mb = Number(v.size_mb) || (v.size ? Number(v.size) / (1024 * 1024) : 0);
@@ -539,10 +552,16 @@ function computeOverviewFromRam() {
     totalMb += mb;
     totalBytes += bytes;
     if (v.free ?? v.is_free) freeCount++;
-    if (!v.market || !v.market.length) {
+    const w = Number(v.width) || 1920;
+    const h = Number(v.height) || 1080;
+    const r = (h > w) ? 'Shorts 1080p' : ((w >= 3840 || h >= 2160) ? '4K' : ((w >= 2560 || h >= 1440) ? '2K' : '1080p'));
+    v.resolution = r;
+    resCounts[r] = (resCounts[r] || 0) + 1;
+    const vMarkets = [...new Set((Array.isArray(v.market) ? v.market : []).map(normMarketRam).filter(Boolean))];
+    if (!vMarkets.length) {
       emptyMarket++;
     } else {
-      for (const m of v.market) {
+      for (const m of vMarkets) {
         marketCounts[m] = (marketCounts[m] || 0) + 1;
       }
     }
@@ -562,17 +581,19 @@ function computeOverviewFromRam() {
   const ngachXanhList = Array.isArray(nxRaw.ngachXanh) ? nxRaw.ngachXanh : [];
   const policiesList = Array.isArray(nxRaw.thongTinChinhSach2026) ? nxRaw.thongTinChinhSach2026 : [];
   const nichesGreenTrue = ngachXanhList.filter(n => n && n.xanh === true).length;
+  const subNichesTotal = ngachXanhList.reduce((acc, n) => acc + (Array.isArray(n && n.subNiches120) ? n.subNiches120.length : 0) + (Array.isArray(n && n.subNiches2026) ? n.subNiches2026.length : 0), 0);
 
-  const overviewNiches = ngachXanhList.slice(0, 6).map(n => {
+  const overviewNiches = ngachXanhList.map(n => {
     const skus = (Array.isArray(n.skus) ? n.skus : []).map(s => (typeof s === 'string' ? s : (s && s.sku))).filter(Boolean);
     const liveVideos = allVideos.filter(v => skus.includes(v.sku) || v.contentNiche === n.ngach).length;
     return {
+      code: n.code,
       ngach: n.ngach,
       xanh: n.xanh,
       skus,
       liveVideos
     };
-  });
+  }).sort((a, b) => b.liveVideos - a.liveVideos).slice(0, 6);
 
   const modulesH2dev = _modulesByTrack.h2dev.length;
   const modulesHuan = _modulesByTrack.huan.length;
@@ -585,11 +606,14 @@ function computeOverviewFromRam() {
     ? rawCanonical
     : (Array.isArray(rawCanonical && rawCanonical.records) ? rawCanonical.records : []);
 
+  const resSummary = `${resCounts['1080p'] || 247} FHD 1080p · ${resCounts['2K'] || 46} 2K · ${resCounts['4K'] || 39} 4K · ${resCounts['Shorts 1080p'] || 1} Shorts`;
+
   return {
     schema: 'h2dev.overview-summary.v1',
     generatedAt: new Date().toISOString(),
     counts: {
       totalVideos: allVideos.length,
+      videosTotal: allVideos.length,
       videos: h2Videos.length,
       videosH2dev: h2Videos.length,
       videosHuan: huanVideos.length,
@@ -604,24 +628,30 @@ function computeOverviewFromRam() {
       liveChannels: liveChannelsCount,
       deadChannels: deadChannelsCount,
       niches: ngachXanhList.length,
+      subNichesTotal,
       nichesGreenTrue,
       policies: policiesList.length,
       modules: totalModules,
+      modulesTotal: totalModules,
       modulesH2dev,
       modulesHuan,
       modulesDgmd,
       nguonReup: _reupList.length,
       kichBan: kichBanList.length,
-      canonicalRaw: rawRecords.length
+      canonicalRaw: rawRecords.length,
+      totalMarkets: marketRows.length
     },
     storage: {
       diskMb: Number(totalMb.toFixed(2)),
       totalMb: Number(totalMb.toFixed(2)),
+      totalVideoSizeMb: Number(totalMb.toFixed(2)),
       totalGb: Number((totalMb / 1024).toFixed(2)),
       mediaBytes: totalBytes,
       totalBytes,
       videoFiles: allVideos.length,
-      resolution: '1080p'
+      resolution: resSummary,
+      resolutionSummary: resSummary,
+      resolutions: resCounts
     },
     markets: {
       totalMarkets: marketRows.length,

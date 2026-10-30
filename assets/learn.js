@@ -18,7 +18,7 @@
   var TRACK_KEY = 'h2dev-track';
   var initParams = new URLSearchParams(location.search);
   var currentTrack = initParams.get('track') || sessionStorage.getItem(TRACK_KEY) || 'h2dev';
-  if (currentTrack !== 'dgmd' && currentTrack !== 'huan' && currentTrack !== 'h2dev') currentTrack = 'h2dev';
+  if (currentTrack !== 'dgmd' && currentTrack !== 'huan' && currentTrack !== 'h2dev' && currentTrack !== 'all') currentTrack = 'h2dev';
   var currentData = null;
 
   var initTab = initParams.get('tab') || 'danhmuc';
@@ -56,6 +56,21 @@
       if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + url);
       return r.json();
     });
+  }
+  function loadTrackData(track) {
+    if (track === 'all') {
+      return Promise.all([
+        loadJSON(TRACK_URLS.h2dev),
+        loadJSON(TRACK_URLS.huan),
+        loadJSON(TRACK_URLS.dgmd)
+      ]).then(function (res) {
+        var m1 = ((res[0] && res[0].modules) || []).map(function (m) { return Object.assign({}, m, { title: '[H2DEV] ' + m.title }); });
+        var m2 = ((res[1] && res[1].modules) || []).map(function (m) { return Object.assign({}, m, { title: '[HUÂN] ' + m.title }); });
+        var m3 = ((res[2] && res[2].modules) || []).map(function (m) { return Object.assign({}, m, { title: '[DGMD] ' + m.title }); });
+        return { modules: m1.concat(m2, m3) };
+      });
+    }
+    return loadJSON(TRACK_URLS[track] || TRACK_URLS.h2dev);
   }
 
   function loadCollapsed() {
@@ -107,7 +122,7 @@
     var mods = (data && data.modules) || [];
     var titleEl = document.getElementById('learn-title');
     if (titleEl && mods.length) {
-      var trackPrefix = currentTrack === 'huan' ? 'Nhánh Huân Academy · Lộ trình ' : (currentTrack === 'dgmd' ? 'Nhánh DGMD · Lộ trình ' : 'Nhánh H2DEV · Lộ trình ');
+      var trackPrefix = currentTrack === 'all' ? 'Tất cả 3 nhánh · Lộ trình ' : (currentTrack === 'huan' ? 'Nhánh Huân Academy · Lộ trình ' : (currentTrack === 'dgmd' ? 'Nhánh DGMD · Lộ trình ' : 'Nhánh H2DEV · Lộ trình '));
       titleEl.textContent = trackPrefix + mods.length + ' module';
     }
     var st = calcTotalProgress(data);
@@ -115,11 +130,11 @@
     els.progressText.innerHTML = '<span>' + pct + '%</span>' + st.done + '/' + st.total + ' bài · đã hoàn thành';
     var countEl = document.getElementById('learnCount');
     if (countEl) {
-      var trackDesc = currentTrack === 'huan' ? 'Nhánh con Huân Academy (97yo-dev)' : (currentTrack === 'dgmd' ? 'Nhánh con Đại Gia Mang Dép (97yo-dev)' : 'Nhánh con H2DEV Faceless (97yo-dev)');
+      var trackDesc = currentTrack === 'all' ? 'Tổng hợp 3 nhánh H2DEV · Huân · DGMD (97yo-dev)' : (currentTrack === 'huan' ? 'Nhánh con Huân Academy (97yo-dev)' : (currentTrack === 'dgmd' ? 'Nhánh con Đại Gia Mang Dép (97yo-dev)' : 'Nhánh con H2DEV Faceless (97yo-dev)'));
       countEl.textContent = st.total + ' bài · ' + trackDesc;
     }
     try {
-      var docTrackName = currentTrack === 'huan' ? 'Nhánh Huân Academy (' + st.total + ' bài)' : (currentTrack === 'dgmd' ? 'Nhánh Đại Gia Mang Dép (' + st.total + ' bài)' : 'Nhánh H2DEV (' + st.total + ' bài)');
+      var docTrackName = currentTrack === 'all' ? 'Tất cả 3 nhánh (' + st.total + ' bài)' : (currentTrack === 'huan' ? 'Nhánh Huân Academy (' + st.total + ' bài)' : (currentTrack === 'dgmd' ? 'Nhánh Đại Gia Mang Dép (' + st.total + ' bài)' : 'Nhánh H2DEV (' + st.total + ' bài)'));
       document.title = docTrackName + ' — 97yo-dev';
     } catch (e) {}
     var R = 15, CIR = 2 * Math.PI * R;
@@ -143,12 +158,12 @@
   }
 
   function switchTrack(track) {
-    if (track !== 'dgmd' && track !== 'huan' && track !== 'h2dev') track = 'h2dev';
+    if (track !== 'dgmd' && track !== 'huan' && track !== 'h2dev' && track !== 'all') track = 'h2dev';
     currentTrack = track;
     try { sessionStorage.setItem(TRACK_KEY, currentTrack); } catch (e) {}
     syncTrackButtons();
     var u = new URL(location.href);
-    if (currentTrack === 'dgmd' || currentTrack === 'huan') u.searchParams.set('track', currentTrack);
+    if (currentTrack === 'dgmd' || currentTrack === 'huan' || currentTrack === 'all') u.searchParams.set('track', currentTrack);
     else u.searchParams.delete('track');
     history.replaceState(null, '', u);
     notifyParentLearnState();
@@ -156,8 +171,7 @@
     els.panelRoot.setAttribute('aria-busy', 'true');
     if (C.skeletonList) els.panelRoot.innerHTML = C.skeletonList(6, { thumb: true, lines: 2 });
 
-    var targetUrl = TRACK_URLS[currentTrack] || TRACK_URLS.h2dev;
-    return loadJSON(targetUrl).then(function (data) {
+    return loadTrackData(currentTrack).then(function (data) {
       currentData = data;
       renderHeaderProgress(currentData);
       renderResumeBanner(currentData);
@@ -546,8 +560,7 @@
       history.replaceState(null, '', curUrl.pathname + curUrl.search + curUrl.hash);
     }
   } catch (e) {}
-  var initialUrl = TRACK_URLS[currentTrack] || TRACK_URLS.h2dev;
-  loadJSON(initialUrl).then(function (data) {
+  loadTrackData(currentTrack).then(function (data) {
     currentData = data;
     var hydrate = C.hydrateAdmin ? C.hydrateAdmin() : Promise.resolve();
     return hydrate.then(function () {

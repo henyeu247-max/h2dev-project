@@ -111,7 +111,10 @@
     "visual_audio_needs_eye_confirm": true,
     "media_audit_date": "2026-09-18",
     "seq": "03",
-    "docsCount": 6
+    "docsCount": 6,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-484f9e",
@@ -199,9 +202,9 @@
     "tags": [
       "Việt"
     ],
-    "width": 1280,
-    "height": 720,
-    "resolution": "720p",
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p",
     "visual_audio_check_method": "local_transcript_heuristic",
     "visual_audio_checked": true,
     "visual_audio_needs_eye_confirm": true,
@@ -284,7 +287,10 @@
     "visual_audio_needs_eye_confirm": true,
     "media_audit_date": "2026-09-18",
     "seq": "05",
-    "docsCount": 5
+    "docsCount": 5,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-a7bfd0",
@@ -370,7 +376,10 @@
     "visual_audio_needs_eye_confirm": true,
     "media_audit_date": "2026-09-18",
     "seq": "06",
-    "docsCount": 6
+    "docsCount": 6,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-4b3c09",
@@ -448,7 +457,10 @@
     "visual_audio_needs_eye_confirm": true,
     "media_audit_date": "2026-09-18",
     "seq": "07",
-    "docsCount": 5
+    "docsCount": 5,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-28e1cc",
@@ -524,7 +536,10 @@
     "visual_audio_needs_eye_confirm": true,
     "media_audit_date": "2026-09-18",
     "seq": "08",
-    "docsCount": 6
+    "docsCount": 6,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-d2cd90",
@@ -602,7 +617,10 @@
     "visual_audio_needs_eye_confirm": true,
     "media_audit_date": "2026-09-18",
     "seq": "09",
-    "docsCount": 5
+    "docsCount": 5,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-9aff6d",
@@ -681,7 +699,10 @@
     "visual_audio_needs_eye_confirm": true,
     "media_audit_date": "2026-09-18",
     "seq": "10",
-    "docsCount": 6
+    "docsCount": 6,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-e90874",
@@ -768,7 +789,10 @@
     "visual_audio_needs_eye_confirm": true,
     "media_audit_date": "2026-09-18",
     "seq": "04",
-    "docsCount": 7
+    "docsCount": 7,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-c5837a",
@@ -852,7 +876,10 @@
     "visual_audio_needs_eye_confirm": true,
     "media_audit_date": "2026-09-18",
     "seq": "11",
-    "docsCount": 5
+    "docsCount": 5,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-348217",
@@ -911,7 +938,10 @@
     "visual_audio_needs_eye_confirm": true,
     "media_audit_date": "2026-09-18",
     "seq": "12",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-f74bb1",
@@ -969,7 +999,10 @@
     "visual_audio_needs_eye_confirm": true,
     "media_audit_date": "2026-09-18",
     "seq": "13",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-1aaf46",
@@ -1059,7 +1092,10 @@
     "visual_audio_needs_eye_confirm": true,
     "media_audit_date": "2026-09-18",
     "seq": "14",
-    "docsCount": 9
+    "docsCount": 9,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-21956b",
@@ -1115,7 +1151,10 @@
       "@늦기전에알아야할것"
     ],
     "seq": "15",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-e91589",
@@ -1173,7 +1212,10 @@
       "Việt"
     ],
     "docsCount": 4,
-    "seq": "01"
+    "seq": "01",
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-34c92b",
@@ -1218,7 +1260,10 @@
     ],
     "channels": [],
     "seq": "16",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-21824a",
@@ -1276,7 +1321,10 @@
       "Việt"
     ],
     "docsCount": 4,
-    "seq": "02"
+    "seq": "02",
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-84a039",
@@ -1333,7 +1381,10 @@
       "@イエスのアファメーション"
     ],
     "seq": "17",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-817ae6",
@@ -1381,7 +1432,10 @@
       "@プレアデス最終通知556"
     ],
     "seq": "18",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-4425fc",
@@ -1431,7 +1485,10 @@
     ],
     "channels": [],
     "docsCount": 3,
-    "seq": "06"
+    "seq": "06",
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-2de9e4",
@@ -1478,7 +1535,10 @@
       "@PHONGTHUYTIEMTANG"
     ],
     "seq": "19",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-2ba0d1",
@@ -1528,7 +1588,10 @@
       "@お金の心理"
     ],
     "seq": "20",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-5d54d0",
@@ -1583,7 +1646,10 @@
     ],
     "channels": [],
     "seq": "03",
-    "docsCount": 4
+    "docsCount": 4,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-2277b3",
@@ -1626,7 +1692,10 @@
     ],
     "channels": [],
     "seq": "21",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-f77c31",
@@ -1676,7 +1745,10 @@
       "Việt"
     ],
     "docsCount": 3,
-    "seq": "03"
+    "seq": "03",
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-ca0b1a",
@@ -1728,7 +1800,10 @@
     ],
     "channels": [],
     "seq": "22",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-54c8f7",
@@ -1777,7 +1852,10 @@
     ],
     "channels": [],
     "seq": "02",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-3e943c",
@@ -1836,7 +1914,10 @@
     ],
     "channels": [],
     "seq": "01",
-    "docsCount": 4
+    "docsCount": 4,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-469cb5",
@@ -1887,7 +1968,10 @@
       "@BibleLegacyAssets98"
     ],
     "seq": "23",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-7312df",
@@ -1932,7 +2016,10 @@
     ],
     "channels": [],
     "seq": "24",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-2235fb",
@@ -1979,7 +2066,10 @@
     ],
     "channels": [],
     "seq": "25",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-e9e879",
@@ -2022,7 +2112,10 @@
     ],
     "channels": [],
     "seq": "26",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-6283a6",
@@ -2072,7 +2165,10 @@
       "Việt"
     ],
     "seq": "01",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-46c57e",
@@ -2137,7 +2233,10 @@
     ],
     "channels": [],
     "docsCount": 5,
-    "seq": "04"
+    "seq": "04",
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-b1208e",
@@ -2180,7 +2279,10 @@
     ],
     "channels": [],
     "seq": "27",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-1acb10",
@@ -2223,7 +2325,10 @@
     ],
     "channels": [],
     "seq": "28",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-a1c98f",
@@ -2266,7 +2371,10 @@
     ],
     "channels": [],
     "seq": "01",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-70f1f1",
@@ -2313,7 +2421,10 @@
       "@주님의손길-handofgod"
     ],
     "seq": "29",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-33f474",
@@ -2356,7 +2467,10 @@
     ],
     "channels": [],
     "seq": "30",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-28bb9b",
@@ -2401,7 +2515,10 @@
     ],
     "channels": [],
     "seq": "31",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-9f9fbc",
@@ -2462,7 +2579,10 @@
     ],
     "channels": [],
     "docsCount": 5,
-    "seq": "03"
+    "seq": "03",
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-10f129",
@@ -2508,7 +2628,10 @@
       "@BàiHọcTuổiGià-VN"
     ],
     "seq": "32",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-2553da",
@@ -2557,7 +2680,10 @@
     ],
     "channels": [],
     "seq": "33",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-3fd0d9",
@@ -2609,7 +2735,10 @@
       "@Kyn_Sub"
     ],
     "seq": "34",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-502960",
@@ -2654,7 +2783,10 @@
       "@静かな家族の秘密"
     ],
     "seq": "35",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-9873fb",
@@ -2704,7 +2836,10 @@
     ],
     "channels": [],
     "docsCount": 3,
-    "seq": "02"
+    "seq": "02",
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-10ceec",
@@ -2755,7 +2890,10 @@
       "@Camnhonvietsub"
     ],
     "seq": "36",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-e83319",
@@ -2810,7 +2948,10 @@
       "@家族の物語123-p3k"
     ],
     "seq": "37",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-9a6957",
@@ -2862,7 +3003,10 @@
     ],
     "channels": [],
     "seq": "38",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-ba3904",
@@ -2911,7 +3055,10 @@
     ],
     "channels": [],
     "docsCount": 3,
-    "seq": "01"
+    "seq": "01",
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-acd33f",
@@ -2958,7 +3105,10 @@
       "@kyzoravietsub"
     ],
     "seq": "39",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-1a7f58",
@@ -3006,7 +3156,10 @@
       "@静思の道"
     ],
     "seq": "40",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-5785a5",
@@ -3059,7 +3212,10 @@
       "@Tieulongreview2026"
     ],
     "seq": "41",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-64130d",
@@ -3112,7 +3268,10 @@
     ],
     "channels": [],
     "seq": "02",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-5c0b20",
@@ -3164,7 +3323,10 @@
       "@AnNhienChuyenDoiBinhDi"
     ],
     "seq": "42",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-3f85a1",
@@ -3212,7 +3374,10 @@
       "@100歳まで元気1"
     ],
     "seq": "43",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-bf7b32",
@@ -3257,7 +3422,10 @@
       "@Socnaureview2026"
     ],
     "seq": "44",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-4a5aac",
@@ -3314,7 +3482,10 @@
       "@keodeovietsub"
     ],
     "seq": "45",
-    "docsCount": 4
+    "docsCount": 4,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-a2b317",
@@ -3363,7 +3534,10 @@
       "@MindfulPawsPsychology"
     ],
     "seq": "46",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-2469ee",
@@ -3409,7 +3583,10 @@
       "@redvoices90"
     ],
     "seq": "47",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-dbd487",
@@ -3453,7 +3630,10 @@
     "channels": [],
     "thumb": "assets/thumbs/VIDEO-dbd487.png",
     "seq": "48",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-d71802",
@@ -3500,7 +3680,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-d71802.png",
     "seq": "49",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-d20744",
@@ -3586,7 +3769,10 @@
     "channels": [],
     "thumb": "assets/thumbs/VIDEO-d20744.png",
     "seq": "03",
-    "docsCount": 8
+    "docsCount": 8,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-33d701",
@@ -3637,7 +3823,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-33d701.png",
     "seq": "50",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-7e00ee",
@@ -3693,7 +3882,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-7e00ee.png",
     "seq": "51",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-ff9be6",
@@ -3746,7 +3938,10 @@
     "channels": [],
     "docsCount": 3,
     "thumb": "assets/thumbs/VIDEO-ff9be6.png",
-    "seq": "06"
+    "seq": "06",
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-6ad3fe",
@@ -3799,7 +3994,10 @@
     "channels": [],
     "docsCount": 3,
     "thumb": "assets/thumbs/VIDEO-6ad3fe.png",
-    "seq": "07"
+    "seq": "07",
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-7f0bb4",
@@ -3852,7 +4050,10 @@
     "channels": [],
     "docsCount": 3,
     "thumb": "assets/thumbs/VIDEO-7f0bb4.png",
-    "seq": "05"
+    "seq": "05",
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-7db740",
@@ -3905,7 +4106,10 @@
     "channels": [],
     "docsCount": 3,
     "thumb": "assets/thumbs/VIDEO-7db740.png",
-    "seq": "04"
+    "seq": "04",
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-546afa",
@@ -3954,7 +4158,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-546afa.png",
     "seq": "52",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-d84a78",
@@ -4026,7 +4233,10 @@
     "channels": [],
     "docsCount": 5,
     "thumb": "assets/thumbs/VIDEO-d84a78.png",
-    "seq": "01"
+    "seq": "01",
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-c1bd51",
@@ -4072,7 +4282,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-c1bd51.png",
     "seq": "53",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-026112",
@@ -4119,7 +4332,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-026112.png",
     "seq": "54",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-e25d3b",
@@ -4168,7 +4384,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-e25d3b.png",
     "seq": "55",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-bdfab7",
@@ -4248,7 +4467,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-bdfab7.png",
     "seq": "01",
-    "docsCount": 6
+    "docsCount": 6,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-e95a8f",
@@ -4329,7 +4551,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-e95a8f.png",
     "seq": "56",
-    "docsCount": 7
+    "docsCount": 7,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-91bb96",
@@ -4377,7 +4602,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-91bb96.png",
     "seq": "57",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-8b69c9",
@@ -4427,7 +4655,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-8b69c9.png",
     "seq": "58",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-35014d",
@@ -4476,7 +4707,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-35014d.png",
     "seq": "59",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-cb907b",
@@ -4546,7 +4780,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-cb907b.png",
     "seq": "60",
-    "docsCount": 5
+    "docsCount": 5,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-34f417",
@@ -4599,7 +4836,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-34f417.png",
     "seq": "61",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-1b4be3",
@@ -4652,7 +4892,10 @@
     "channels": [],
     "thumb": "assets/thumbs/VIDEO-1b4be3.png",
     "seq": "03",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-ec9c50",
@@ -4705,7 +4948,10 @@
     "channels": [],
     "docsCount": 3,
     "thumb": "assets/thumbs/VIDEO-ec9c50.png",
-    "seq": "05"
+    "seq": "05",
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-134a25",
@@ -4752,7 +4998,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-134a25.png",
     "seq": "62",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-5fd052",
@@ -4809,7 +5058,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-5fd052.png",
     "seq": "63",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-00136f",
@@ -4870,7 +5122,10 @@
     "channels": [],
     "thumb": "assets/thumbs/VIDEO-00136f.png",
     "seq": "12",
-    "docsCount": 4
+    "docsCount": 4,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-9ea5e3",
@@ -4914,7 +5169,10 @@
     "channels": [],
     "thumb": "assets/thumbs/VIDEO-9ea5e3.png",
     "seq": "01",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-2ed37a",
@@ -4962,7 +5220,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-2ed37a.png",
     "seq": "64",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-54422c",
@@ -5044,7 +5305,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-54422c.png",
     "seq": "02",
-    "docsCount": 5
+    "docsCount": 5,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-af606d",
@@ -5090,7 +5354,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-af606d.png",
     "seq": "65",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-9ef6fe",
@@ -5138,7 +5405,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-9ef6fe.png",
     "seq": "67",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-7ae3d6",
@@ -5184,7 +5454,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-7ae3d6.png",
     "seq": "68",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-86c1ec",
@@ -5230,7 +5503,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-86c1ec.png",
     "seq": "69",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-3e5a21",
@@ -5283,7 +5559,10 @@
     "channels": [],
     "docsCount": 3,
     "thumb": "assets/thumbs/VIDEO-3e5a21.png",
-    "seq": "11"
+    "seq": "11",
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-ffccd2",
@@ -5338,7 +5617,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-ffccd2.png",
     "seq": "70",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-de2564",
@@ -5393,7 +5675,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-de2564.png",
     "seq": "71",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-2aa1f7",
@@ -5544,7 +5829,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-2aa1f7.png",
     "seq": "66",
-    "docsCount": 14
+    "docsCount": 14,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-5fe83a",
@@ -5592,7 +5880,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-5fe83a.png",
     "seq": "72",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-3ae732",
@@ -5641,7 +5932,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-3ae732.png",
     "seq": "73",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-458892",
@@ -5729,7 +6023,10 @@
     ],
     "thumb": "assets/thumbs/VIDEO-458892.png",
     "seq": "74",
-    "docsCount": 7
+    "docsCount": 7,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-806c0c",
@@ -5780,7 +6077,10 @@
       "@만사형통2"
     ],
     "seq": "75",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-83a28e",
@@ -5835,7 +6135,10 @@
       "@세월의지혜TV"
     ],
     "seq": "77",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-948336",
@@ -5886,7 +6189,10 @@
       "@한국사이야기100"
     ],
     "seq": "78",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-04c2e3",
@@ -5938,7 +6244,10 @@
       "Trung"
     ],
     "seq": "04",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-ca266f",
@@ -6000,7 +6309,10 @@
       "@USAMilitaryNews-8"
     ],
     "seq": "79",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-8603a9",
@@ -6061,7 +6373,10 @@
       "@은빛인생여행"
     ],
     "seq": "80",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-aacc70",
@@ -6111,7 +6426,10 @@
     ],
     "channels": [],
     "seq": "02",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-82f8a8",
@@ -6163,7 +6481,10 @@
       "@誇りを守った日本人.8386"
     ],
     "seq": "81",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-9a4ddc",
@@ -6213,7 +6534,10 @@
     ],
     "channels": [],
     "seq": "04",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-199f44",
@@ -6263,7 +6587,10 @@
     ],
     "channels": [],
     "docsCount": 3,
-    "seq": "10"
+    "seq": "10",
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-027064",
@@ -6315,7 +6642,10 @@
     ],
     "channels": [],
     "docsCount": 3,
-    "seq": "08"
+    "seq": "08",
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-ed1be9",
@@ -6365,7 +6695,10 @@
     ],
     "channels": [],
     "seq": "03",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-a348a5",
@@ -6417,7 +6750,10 @@
       "Ngoại"
     ],
     "seq": "05",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-25fddf",
@@ -6497,7 +6833,10 @@
       "@mindorosi"
     ],
     "seq": "83",
-    "docsCount": 4
+    "docsCount": 4,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-943781",
@@ -6547,7 +6886,10 @@
     ],
     "channels": [],
     "docsCount": 3,
-    "seq": "09"
+    "seq": "09",
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-f59aa7",
@@ -6599,7 +6941,10 @@
     "media_audit_date": "2026-09-30",
     "media_audit_updated": "2026-09-30T05:49:21+07:00",
     "seq": "01",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-b380a1",
@@ -6649,7 +6994,10 @@
     ],
     "channels": [],
     "seq": "03",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-39ae49",
@@ -6707,7 +7055,10 @@
     ],
     "seq": "82",
     "docsCount": 3,
-    "channelsCount": 2
+    "channelsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-5c3116",
@@ -6782,7 +7133,10 @@
     ],
     "seq": "76",
     "docsCount": 6,
-    "channelsCount": 1
+    "channelsCount": 1,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-3df94e",
@@ -6838,7 +7192,10 @@
     ],
     "seq": "87",
     "docsCount": 3,
-    "channelsCount": 1
+    "channelsCount": 1,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-5cb825",
@@ -6898,7 +7255,10 @@
     ],
     "seq": "85",
     "docsCount": 3,
-    "channelsCount": 5
+    "channelsCount": 5,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-891f32",
@@ -6953,7 +7313,10 @@
     ],
     "seq": "86",
     "docsCount": 3,
-    "channelsCount": 1
+    "channelsCount": 1,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-61e354",
@@ -7014,7 +7377,10 @@
       "Ngoại"
     ],
     "seq": "01",
-    "docsCount": 4
+    "docsCount": 4,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-bdfa54",
@@ -7069,7 +7435,10 @@
     ],
     "seq": "88",
     "docsCount": 3,
-    "channelsCount": 1
+    "channelsCount": 1,
+    "width": 3840,
+    "height": 2160,
+    "resolution": "4K"
   },
   {
     "sku": "VIDEO-8e0275",
@@ -7153,7 +7522,10 @@
     "media_audit_date": "2026-09-30",
     "media_audit_updated": "2026-09-30T10:45:00+07:00",
     "seq": "06",
-    "docsCount": 7
+    "docsCount": 7,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-b559c8",
@@ -7196,7 +7568,10 @@
     ],
     "channels": [],
     "seq": "02",
-    "docsCount": 2
+    "docsCount": 2,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-b96929",
@@ -7249,7 +7624,10 @@
       "Mỹ"
     ],
     "seq": "04",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-44cf22",
@@ -7303,7 +7681,10 @@
     ],
     "seq": "84",
     "docsCount": 3,
-    "channelsCount": 7
+    "channelsCount": 7,
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-5c438a",
@@ -7374,7 +7755,10 @@
       "Ngoại"
     ],
     "docsCount": 6,
-    "seq": "02"
+    "seq": "02",
+    "width": 2560,
+    "height": 1440,
+    "resolution": "2K"
   },
   {
     "sku": "VIDEO-61ad94",
@@ -7453,9 +7837,9 @@
       "Nhật",
       "Hàn"
     ],
-    "width": 1280,
-    "height": 720,
-    "resolution": "720p",
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p",
     "duration_sec": 630,
     "visual_audio_check_method": "local_transcript_heuristic",
     "visual_audio_checked": true,
@@ -7540,7 +7924,10 @@
     "visual_audio_needs_eye_confirm": true,
     "media_audit_date": "2026-09-18",
     "seq": "01",
-    "docsCount": 5
+    "docsCount": 5,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-73d98a",
@@ -7598,7 +7985,10 @@
       "Hàn"
     ],
     "seq": "89",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "ZOOM-01-Nen-tang-moi-truong",
@@ -7657,7 +8047,10 @@
     ],
     "channels": [],
     "seq": "01",
-    "docsCount": 4
+    "docsCount": 4,
+    "width": 1080,
+    "height": 1920,
+    "resolution": "Shorts 1080p"
   },
   {
     "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
@@ -7716,7 +8109,10 @@
     ],
     "channels": [],
     "seq": "02",
-    "docsCount": 4
+    "docsCount": 4,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
@@ -7775,7 +8171,10 @@
     ],
     "channels": [],
     "seq": "03",
-    "docsCount": 4
+    "docsCount": 4,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "ZOOM-04-Adsense-khang-loi",
@@ -7834,7 +8233,10 @@
     ],
     "channels": [],
     "seq": "04",
-    "docsCount": 4
+    "docsCount": 4,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-8bc3ce",
@@ -7901,7 +8303,10 @@
       "Việt"
     ],
     "docsCount": 5,
-    "seq": "07"
+    "seq": "07",
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-d56768",
@@ -7966,7 +8371,10 @@
       "RPM"
     ],
     "seq": "90",
-    "docsCount": 4
+    "docsCount": 4,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-989053",
@@ -8027,7 +8435,10 @@
       "May mắn"
     ],
     "seq": "91",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-0bb86b",
@@ -8089,7 +8500,10 @@
       "Outlier"
     ],
     "seq": "92",
-    "docsCount": 3
+    "docsCount": 3,
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-0be6c9",
@@ -8164,7 +8578,10 @@
     "tags": [
       "Việt"
     ],
-    "seq": "93"
+    "seq": "93",
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-a85eac",
@@ -8248,7 +8665,10 @@
     "tags": [
       "Hàn"
     ],
-    "seq": "94"
+    "seq": "94",
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-043d15",
@@ -8372,7 +8792,10 @@
     "tags": [
       "Hàn"
     ],
-    "seq": "95"
+    "seq": "95",
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-a59a5e",
@@ -8445,7 +8868,10 @@
     "tags": [
       "Hàn"
     ],
-    "seq": "96"
+    "seq": "96",
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-ab1137",
@@ -8501,7 +8927,10 @@
       "Nhân bản",
       "Case study"
     ],
-    "seq": "97"
+    "seq": "97",
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-0b3f44",
@@ -8557,7 +8986,10 @@
       "Outlier",
       "Thumbnail"
     ],
-    "seq": "98"
+    "seq": "98",
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-e0e9cd",
@@ -8621,7 +9053,10 @@
       "Claude Automation",
       "Plugin"
     ],
-    "seq": "99"
+    "seq": "99",
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   },
   {
     "sku": "VIDEO-0c72ab",
@@ -8683,6 +9118,9 @@
       "Claude Code",
       "Edit 100%"
     ],
-    "seq": "100"
+    "seq": "100",
+    "width": 1920,
+    "height": 1080,
+    "resolution": "1080p"
   }
 ]

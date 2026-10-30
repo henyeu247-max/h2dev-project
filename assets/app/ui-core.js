@@ -176,13 +176,14 @@ function statCard(icon, label, value, sub, tabTarget, live) {
   if (isSvg || isH2Icon) glyph = icon;
   else if (isIcoName && H2I && typeof H2I.ico === 'function') glyph = H2I.ico(icon, 16);
   else glyph = icon ? `<span class="stat-glyph">${esc(icon)}</span>` : '';
-  const clickAttr = tabTarget ? ` data-open-tab="${esc(tabTarget)}" role="button" tabindex="0" title="Mở tab ${safeLabel}" data-kpi-card="1"` : '';
+  const fullTitle = sub ? `${safeLabel} — ${esc(sub)}` : safeLabel;
+  const clickAttr = tabTarget ? ` data-open-tab="${esc(tabTarget)}" role="button" tabindex="0" title="Mở tab ${fullTitle}" data-kpi-card="1"` : (sub ? ` title="${fullTitle}"` : '');
   return `<div class="bento-card${tabTarget ? ' cursor-pointer hover:border-brand/40 transition-colors' : ''}"${clickAttr}>
 <div class="stat-icon">${glyph}</div>
 <div class="stat-body">
   <div class="stat-value"${live ? ' aria-live="polite"': ''}>${esc(value)}</div>
   <div class="stat-label">${safeLabel}</div>
-  ${sub ? `<div class="stat-sub">${esc(sub)}</div>` : ''}
+  ${sub ? `<div class="stat-sub" title="${esc(sub)}">${esc(sub)}</div>` : ''}
 </div>
 ${tabTarget ? `<span class="stat-arrow text-gray-500 text-xs font-mono">→</span>` : ''}
   </div>`;
@@ -196,7 +197,7 @@ function pageBanner(title, sub, stats) {
   ${/* FIX 2026-09-30: topbar da co <h1 id="page-title"> -> render h1 o day tao 2 h1/trang (sai cau truc
        heading cho trinh doc man hinh). Tieu de khoi noi dung la h2; giu class .page-h1 nen hinh thuc khong doi. */ ''}
   ${title ? `<h2 class="page-h1">${esc(title)}</h2>` : ''}
-  ${sub ? `<p class="page-lede">${sub}</p>` : ''}
+  ${sub ? `<p class="page-lede" title="${esc(sub)}">${sub}</p>` : ''}
   ${cards ? `<div class="bento-grid mb-6">${cards}</div>` : ''}`;
 }
 

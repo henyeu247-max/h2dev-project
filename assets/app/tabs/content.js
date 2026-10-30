@@ -838,9 +838,49 @@ async function renderNgachXanh() {
   const arrH2 = Array.isArray(rawVideosH2) ? rawVideosH2 : safeArray(rawVideosH2 && rawVideosH2.videos);
   const videos = arrH2.concat(safeArray(rawVideosHuan), safeArray(rawVideosDgmd));
   const allKenh = safeArray(kenhRaw);
-  const deadKenhSet = new Set(allKenh.filter(k => k && k.dead).map(k => String(k.handle || '').replace(/^@/, '').toLowerCase()));
-  const deadBanSet = new Set([...deadKenhSet, ...safeArray(nx && nx.deadHandles2026).map(h => String(h || '').replace(/^@/, '').toLowerCase())]);
+  const kenhByHandle = new Map();
+  allKenh.forEach(k => {
+    if (!k || !k.handle) return;
+    const cleanH = String(k.handle).replace(/^@/, '').trim().toLowerCase();
+    if (cleanH) kenhByHandle.set(cleanH, k);
+  });
+  const deadKenhSet = new Set(allKenh.filter(k => k && k.dead).map(k => String(k.handle || '').trim().replace(/^@/, '').trim().toLowerCase()));
+  const deadBanSet = new Set([...deadKenhSet, ...safeArray(nx && nx.deadHandles2026).map(h => String(h || '').trim().replace(/^@/, '').trim().toLowerCase())]);
   const bySku = new Map(videos.map(v => [String(v.sku || '').toLowerCase(), v]));
+
+  function renderNxChannelChip(chRaw, n, isExtended) {
+    const chStr = String(chRaw || '').trim();
+    const h = chStr.replace(/^@/, '').trim().toLowerCase();
+    const meta = kenhByHandle.get(h) || null;
+    const isDead = deadBanSet.has(h) || Boolean(meta && meta.dead);
+    const isBanLive = !isDead && Boolean(n.banSet && n.banSet.has(h));
+    const chipClass = isDead ? 'channel-chip-dead' : (isBanLive ? 'channel-chip-ban' : '');
+    const initChar = (h[0] || '?').toUpperCase();
+    const avatarUrl = (meta && meta.avatar) ? String(meta.avatar) : '';
+    const avatarNode = avatarUrl
+      ? `<img src="${esc(avatarUrl)}" alt="" width="20" height="20" class="channel-chip-avatar" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex'"><span class="channel-chip-initial" style="display:none" aria-hidden="true">${esc(initChar)}</span>`
+      : `<span class="channel-chip-initial" aria-hidden="true">${esc(initChar)}</span>`;
+    const metaParts = [chStr];
+    if (meta && meta.title && meta.title.toLowerCase() !== chStr.toLowerCase() && meta.title.toLowerCase() !== h) {
+      metaParts.push(meta.title);
+    }
+    if (meta && meta.subscribers) {
+      metaParts.push(Number(meta.subscribers).toLocaleString('vi-VN') + ' subs');
+    }
+    if (isDead) {
+      metaParts.push((meta && meta.deadNote) ? meta.deadNote : 'Kênh đối chứng đã dừng hoặc bị YouTube gỡ (404/wipe)');
+    } else if (isBanLive) {
+      metaParts.push('Nhóm mẫu bẩn / không copy (facecam, clip gốc, YMYL rủi ro hoặc ngủ đông)');
+    } else if (isExtended) {
+      metaParts.push('Kênh mở rộng 2026');
+    }
+    const chipTitle = esc(metaParts.join(' · '));
+    const badgeHtml = isDead
+      ? '<span class="channel-chip-dead-badge">DIE</span>'
+      : (isBanLive ? '<span class="channel-chip-ban-badge">BẨN</span>' : '');
+    const hrefUrl = (meta && meta.url) ? meta.url : `https://www.youtube.com/${encodeURI(chStr.startsWith('@') ? chStr : '@' + chStr)}`;
+    return `<a href="${esc(hrefUrl)}" target="_blank" rel="noopener noreferrer" class="channel-chip ${chipClass}" translate="no" title="${chipTitle}">${avatarNode}<span class="channel-chip-handle">${esc(chStr)}</span>${badgeHtml}<span class="channel-chip-arrow" aria-hidden="true">↗</span></a>`;
+  }
 
   function vidsFor(n) {
     const out = [];
@@ -909,10 +949,36 @@ async function renderNgachXanh() {
     else if (/\bvn\b|việt|vietnam/.test(primaryMarketLower)) mTag = 'VN';
     else if (/\bus\b|\ben\b|tiếng anh|mỹ|quốc tế/.test(primaryMarketLower)) mTag = 'US';
 
-    const cleanChannels = [...new Set([...safeArray(detail.mauSach), ...safeArray(detail.mauPhu)])];
+    function dedupHandlesCaseInsensitive(arr, excludeLowerSet) {
+      const out = [];
+      const seen = excludeLowerSet ? new Set(excludeLowerSet) : new Set();
+      safeArray(arr).forEach(item => {
+        const s = String(typeof item === 'string' ? item : (item && item.handle) || '').trim();
+        if (!s) return;
+        const k = s.replace(/^@/, '').toLowerCase();
+        if (!k || seen.has(k)) return;
+        seen.add(k);
+        out.push(s);
+      });
+      return { list: out, seen };
+    }
+    const cleanDedup = dedupHandlesCaseInsensitive([...safeArray(detail.mauSach), ...safeArray(detail.mauPhu)]);
+    const cleanChannels = cleanDedup.list;
     const banChannels = safeArray(detail.mauBan);
-    const banSet = new Set(banChannels.map(x => String(x || '').replace(/^@/, '').toLowerCase()));
-    const allCardChannels = [...cleanChannels, ...banChannels.filter(x => !cleanChannels.includes(x))];
+    const banSet = new Set(banChannels.map(x => String(x || '').replace(/^@/, '').trim().toLowerCase()));
+    const allCardDedup = dedupHandlesCaseInsensitive([...cleanChannels, ...banChannels]);
+    const allCardChannels = allCardDedup.list;
+    const extDedup = dedupHandlesCaseInsensitive(detail.kenhMoRong2026, allCardDedup.seen);
+    const extSet = new Set(extDedup.list.map(x => String(x || '').trim().replace(/^@/, '').trim().toLowerCase()));
+    const PRIMARY_CHANNEL_CAP = 6;
+    const primaryVisibleChannels = allCardChannels.slice(0, PRIMARY_CHANNEL_CAP);
+    const overflowPrimaryChannels = allCardChannels.slice(PRIMARY_CHANNEL_CAP);
+    const drawerChannels = [...overflowPrimaryChannels, ...extDedup.list];
+    const drawerLabel = overflowPrimaryChannels.length > 0 && extDedup.list.length > 0
+      ? `+${drawerChannels.length} kênh đối thủ & mở rộng 2026 (bấm để xem)`
+      : (overflowPrimaryChannels.length > 0
+        ? `+${drawerChannels.length} kênh đối thủ tham khảo (bấm để xem)`
+        : `+${drawerChannels.length} kênh mở rộng 2026 (bấm để xem)`);
     return {
       rank: r.thuTu,
       recordId: r.record,
@@ -932,12 +998,15 @@ async function renderNgachXanh() {
       avoidTrap: detail.viPham || 'Tránh lặp template, không quote-farm, không mạo danh chuyên gia.',
       cleanChannels: cleanChannels,
       banSet: banSet,
-      channels: allCardChannels,
+      extSet: extSet,
+      drawerLabel: drawerLabel,
+      channels: primaryVisibleChannels,
+      allChannelsCount: allCardChannels.length + extDedup.list.length,
       docs: safeArray(detail.docs),
       skills: safeArray(detail.skills),
       subNiches120: safeArray(detail.subNiches120),
       subNiches2026: safeArray(detail.subNiches2026),
-      kenhMoRong2026: safeArray(detail.kenhMoRong2026),
+      kenhMoRong2026: drawerChannels,
       nenLam: detail.nenLam,
       nenLamNote: detail.nenLamNote || '',
       vids: vidsFor(detail),
@@ -1144,7 +1213,7 @@ ${nxItems.map(n => {
       <div class="nx-card-point leading-relaxed"><b class="text-white font-semibold"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" class="glyph-inline"><path d="M9 21c0 .5.4 1 1 1h4c.6 0 1-.5 1-1v-1H9v1zm3-19C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V17c0 .5.4 1 1 1h6c.6 0 1-.5 1-1v-2.3c1.8-1.3 3-3.4 3-5.7 0-3.9-3.1-7-7-7z"/></svg> Luận điểm:</b> ${esc(n.thesis)}</div>
       <div class="nx-card-point leading-relaxed"><b class="text-emerald-400 font-semibold"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" class="glyph-inline"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg> Safe Format:</b> ${esc(n.safeFormat)}</div>
       <div class="nx-card-point leading-relaxed"><b class="text-rose-400 font-semibold"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" class="glyph-inline"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg> Tránh:</b> ${esc(n.avoidTrap)}</div>
-      ${(n.subNiches2026 && n.subNiches2026.length) ? `<div class="nx-card-point leading-relaxed"><b class="text-sky-300 font-semibold">Vi ngách 2026 (${n.subNiches2026.length}):</b> ${n.subNiches2026.map(sn => {
+      ${(n.subNiches2026 && n.subNiches2026.length) ? `<div class="nx-card-subniches leading-relaxed"><b class="text-sky-300 font-semibold">Vi ngách 2026 (${n.subNiches2026.length}):</b> ${n.subNiches2026.map(sn => {
         const rpmVal = sn.benchmarkRPM ? (sn.benchmarkRPM.median ? ('$' + sn.benchmarkRPM.median) : (sn.benchmarkRPM.min ? ('$' + sn.benchmarkRPM.min + '-' + sn.benchmarkRPM.max) : '')) : '';
         const chs = safeArray(sn.sampleChannels);
         const tipParts = [
@@ -1155,58 +1224,37 @@ ${nxItems.map(n => {
           sn.inStreamAdRatio ? ('InStream: ' + sn.inStreamAdRatio) : '',
           chs.length ? ('Kênh: ' + chs.join(', ')) : ''
         ].filter(Boolean);
-        return `<span class="badge badge-blue mr-1" title="${esc(tipParts.join(' · '))}">#${esc(sn.subCode)} ${esc(sn.title)}${rpmVal ? ` · ${esc(rpmVal)}` : ''}</span>`;
+        return `<span class="badge badge-blue mr-1 mb-1" title="${esc(tipParts.join(' · '))}">#${esc(sn.subCode)} ${esc(sn.title)}${rpmVal ? ` · ${esc(rpmVal)}` : ''}</span>`;
       }).join('')}</div>` : ''}
-      ${(n.subNiches120 && n.subNiches120.length) ? `<div class="nx-card-point leading-relaxed"><b class="text-gray-400 font-semibold">Vi ngách truyền thống (${n.subNiches120.length}):</b> ${n.subNiches120.map(sn => `<span class="badge badge-muted mr-1" title="${esc((sn.formula || '') + ' · RPM ' + (sn.rpm || ''))}">#${esc(sn.id)} ${esc(sn.name)}</span>`).join('')}</div>` : ''}
+      ${(n.subNiches120 && n.subNiches120.length) ? `<div class="nx-card-subniches leading-relaxed"><b class="text-gray-400 font-semibold">Vi ngách truyền thống (${n.subNiches120.length}):</b> ${n.subNiches120.map(sn => `<span class="badge badge-muted mr-1 mb-1" title="${esc((sn.formula || '') + ' · RPM ' + (sn.rpm || ''))}">#${esc(sn.id)} ${esc(sn.name)}</span>`).join('')}</div>` : ''}
     </div>
     ${n.channels.length ? `
-    <div class="mb-3">
-      <div class="nx-card-channel-label">Kênh đối thủ tham khảo (30 ngày):</div>
+    <div class="mb-2">
+      <div class="nx-card-channel-label">Kênh đối thủ tham khảo (${n.allChannelsCount || n.channels.length} kênh):</div>
       <div class="nc-channels">
-        ${n.channels.map(ch => {
-          const h = String(ch || '').replace(/^@/, '').toLowerCase();
-          const isDead = deadBanSet.has(h);
-          const isBanLive = !isDead && (n.banSet && n.banSet.has(h));
-          const chipClass = isDead ? 'channel-chip-dead' : (isBanLive ? 'channel-chip-ban' : '');
-          const chipTitle = isDead
-            ? 'Kênh đối chứng đã dừng hoặc bị YouTube gỡ (404/wipe)'
-            : (isBanLive ? 'Kênh đang sống nhưng thuộc nhóm mẫu bẩn / không copy (facecam, clip gốc, YMYL rủi ro hoặc ngủ đông)' : esc(ch));
-          const badgeHtml = isDead
-            ? '<span class="channel-chip-dead-badge">DIE</span>'
-            : (isBanLive ? '<span class="channel-chip-ban-badge badge badge-amber ml-1">BẨN</span>' : '');
-          return `<a href="https://www.youtube.com/${esc(ch)}" target="_blank" rel="noopener noreferrer" class="channel-chip ${chipClass}" translate="no" title="${chipTitle}"><span class="channel-chip-handle">${esc(ch)}</span>${badgeHtml}<span class="channel-chip-arrow">↗</span></a>`;
-        }).join('')}
+        ${n.channels.map(ch => renderNxChannelChip(ch, n, false)).join('')}
       </div>
-      ${(n.kenhMoRong2026 && n.kenhMoRong2026.length) ? `<details class="mt-2 text-xs group min-w-0">
-        <summary class="flex items-center justify-between cursor-pointer text-sky-400 hover:text-white font-medium select-none py-2 min-h-[44px]">
+      ${(n.kenhMoRong2026 && n.kenhMoRong2026.length) ? `<details class="nx-drawer mt-1 text-xs group min-w-0">
+        <summary class="flex items-center justify-between cursor-pointer text-sky-400 hover:text-white font-medium select-none">
           <span class="flex items-center gap-1.5 min-w-0">
-            <span class="drawer-chevron text-xs font-mono" aria-hidden="true">▸</span>
-            <span class="truncate min-w-0">+${n.kenhMoRong2026.length} kênh mở rộng 2026 (bấm để xem)</span>
+            <span class="text-sky-400 shrink-0 inline-flex" aria-hidden="true">${ico('tv', 14)}</span>
+            <span class="truncate min-w-0">${esc(n.drawerLabel || ('+' + n.kenhMoRong2026.length + ' kênh mở rộng 2026 (bấm để xem)'))}</span>
           </span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform text-xs font-mono shrink-0">${ico('chevron-down', 14)}</span>
         </summary>
-        <div class="nc-channels mt-1.5">
+        <div class="nc-channels">
           ${n.kenhMoRong2026.map(ch => {
-            const h = String(ch || '').replace(/^@/, '').toLowerCase();
-            const isDead = deadBanSet.has(h);
-            const isBanLive = !isDead && (n.banSet && n.banSet.has(h));
-            const chipClass = isDead ? 'channel-chip-dead' : (isBanLive ? 'channel-chip-ban' : '');
-            const chipTitle = isDead
-              ? 'Kênh đối chứng đã dừng hoặc bị YouTube gỡ (404/wipe)'
-              : (isBanLive ? 'Kênh mở rộng 2026 (mẫu bẩn / không copy): ' + esc(ch) : 'Kênh mở rộng 2026: ' + esc(ch));
-            const badgeHtml = isDead
-              ? '<span class="channel-chip-dead-badge">DIE</span>'
-              : (isBanLive ? '<span class="channel-chip-ban-badge badge badge-amber ml-1">BẨN</span>' : '');
-            return `<a href="https://www.youtube.com/${esc(ch)}" target="_blank" rel="noopener noreferrer" class="channel-chip ${chipClass}" translate="no" title="${chipTitle}"><span class="channel-chip-handle">${esc(ch)}</span>${badgeHtml}<span class="channel-chip-arrow">↗</span></a>`;
+            const cleanH = String(ch || '').trim().replace(/^@/, '').trim().toLowerCase();
+            return renderNxChannelChip(ch, n, Boolean(n.extSet && n.extSet.has(cleanH)));
           }).join('')}
         </div>
       </details>` : ''}
     </div>` : ''}
-    ${(n.docs && n.docs.length) ? `<details class="mb-2.5 text-xs group min-w-0">
-      <summary class="flex items-center justify-between cursor-pointer text-gray-300 hover:text-white font-medium select-none py-2 min-h-[44px]">
+    ${(n.docs && n.docs.length) ? `<details class="nx-drawer text-xs group min-w-0">
+      <summary class="flex items-center justify-between cursor-pointer text-gray-300 hover:text-white font-medium select-none">
         <span class="flex items-center gap-1.5 min-w-0">
-          <span class="drawer-chevron text-xs font-mono" aria-hidden="true">▸</span>
-          <span class="truncate min-w-0">Tài liệu & SOP ngách (${n.docs.length})</span>
+          <span class="text-gray-400 shrink-0 inline-flex" aria-hidden="true">${ico('file-text', 14)}</span>
+          <span class="truncate min-w-0">Tài liệu &amp; SOP ngách (${n.docs.length})</span>
         </span>
         <span class="text-gray-400 group-open:rotate-180 transition-transform text-xs font-mono shrink-0">${ico('chevron-down', 14)}</span>
       </summary>
@@ -1216,9 +1264,9 @@ ${nxItems.map(n => {
           const mTl = s.match(/^TL-(\d+)\b/i);
           if (mTl) {
             const docNum = parseInt(mTl[1], 10);
-            return `<a href="/tai-lieu?did=DOC_${docNum}&di=${docNum - 1}" class="text-brand-400 hover:text-brand-300 flex items-center min-h-[44px] py-2.5 min-w-0" title="${esc(s)}"><span class="truncate min-w-0">↗ ${esc(s)}</span></a>`;
+            return `<a href="/tai-lieu?did=DOC_${docNum}&di=${docNum - 1}" class="text-brand-400 hover:text-brand-300 flex items-center min-h-[44px] py-1.5 min-w-0" title="${esc(s)}"><span class="truncate min-w-0">↗ ${esc(s)}</span></a>`;
           }
-          return `<a href="${esc(s)}" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white flex items-center min-h-[44px] py-2.5 min-w-0" title="${esc(s)}"><span class="truncate min-w-0">↗ ${esc(s)}</span></a>`;
+          return `<a href="${esc(s)}" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white flex items-center min-h-[44px] py-1.5 min-w-0" title="${esc(s)}"><span class="truncate min-w-0">↗ ${esc(s)}</span></a>`;
         }).join('')}
       </div>
     </details>` : ''}

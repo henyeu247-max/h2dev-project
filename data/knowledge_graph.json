@@ -1,10 +1,10 @@
 {
   "schema": "h2dev.nexus-graph.v2",
-  "generatedAt": "2026-10-30T10:21:20.971Z",
-  "buildTimeMs": 2281,
+  "generatedAt": "2026-10-30T12:48:03.903Z",
+  "buildTimeMs": 2426,
   "stats": {
     "totalNodes": 4143,
-    "totalEdges": 8396,
+    "totalEdges": 8400,
     "knowledgeNodes": 2787,
     "infraNodes": 1356,
     "projects": 17,
@@ -30486,7 +30486,7 @@
       "track": "h2dev",
       "sku": "niche:Chúa / Phúc âm Hàn",
       "path": "knowledge-hub/vault/niches/chua-phuc-am-han.md",
-      "degree": 26,
+      "degree": 28,
       "meta": {
         "code": "H06",
         "hang": 26,
@@ -30498,7 +30498,7 @@
         ],
         "videoCount": 4,
         "channelCount": 4,
-        "expandedChannelCount": 13,
+        "expandedChannelCount": 15,
         "subNicheCount": 3,
         "targetUrl": "/ngachxanh?niche=Ch%C3%BAa%20%2F%20Ph%C3%BAc%20%C3%A2m%20H%C3%A0n"
       }
@@ -30524,6 +30524,29 @@
         "nicheCode": "H06",
         "videoCount": 0,
         "targetUrl": "/kenh-mau?handle=%40GraceForPurpose"
+      }
+    },
+    {
+      "id": "channel:수복강녕-g6h",
+      "type": "channel",
+      "layer": "knowledge",
+      "level": 5,
+      "parentId": "",
+      "projectId": "",
+      "label": "@수복강녕-g6h",
+      "track": "all",
+      "sku": "",
+      "path": "knowledge-hub/vault/channels/수복강녕-g6h.md",
+      "degree": 1,
+      "meta": {
+        "handle": "@수복강녕-g6h",
+        "name": "수복강녕: 복이 깃들고 행복한 길",
+        "url": "https://www.youtube.com/@수복강녕-g6h",
+        "dead": false,
+        "channelId": "UCTNzSWV2ken0gF8T2iqFsrg",
+        "nicheCode": "H06",
+        "videoCount": 0,
+        "targetUrl": "/kenh-mau?handle=%40%EC%88%98%EB%B3%B5%EA%B0%95%EB%85%95-g6h"
       }
     },
     {
@@ -33693,26 +33716,26 @@
       }
     },
     {
-      "id": "channel:tiny empires",
+      "id": "channel:tinyempires",
       "type": "channel",
       "layer": "knowledge",
       "level": 5,
       "parentId": "",
       "projectId": "",
-      "label": "@Tiny Empires",
+      "label": "@TinyEmpires",
       "track": "all",
       "sku": "",
-      "path": "knowledge-hub/vault/channels/Tiny_Empires.md",
+      "path": "knowledge-hub/vault/channels/TinyEmpires.md",
       "degree": 1,
       "meta": {
-        "handle": "@Tiny Empires",
-        "name": "@Tiny Empires",
+        "handle": "@TinyEmpires",
+        "name": "@TinyEmpires",
         "url": "https://www.youtube.com/@TinyEmpires",
         "dead": false,
         "channelId": "",
         "nicheCode": "H14",
         "videoCount": 0,
-        "targetUrl": "/kenh-mau?handle=%40Tiny%20Empires"
+        "targetUrl": "/kenh-mau?handle=%40TinyEmpires"
       }
     },
     {
@@ -34992,7 +35015,7 @@
         ],
         "videoCount": 9,
         "channelCount": 12,
-        "expandedChannelCount": 13,
+        "expandedChannelCount": 8,
         "subNicheCount": 3,
         "targetUrl": "/ngachxanh?niche=%C4%90%E1%BB%8Ba%20ch%C3%ADnh%20tr%E1%BB%8B%20EN%20(North%20Effect)"
       }
@@ -35447,7 +35470,7 @@
         ],
         "videoCount": 14,
         "channelCount": 18,
-        "expandedChannelCount": 41,
+        "expandedChannelCount": 40,
         "subNicheCount": 3,
         "targetUrl": "/ngachxanh?niche=L%E1%BB%8Bch%20s%E1%BB%AD%20%2F%20qu%C3%A2n%20s%E1%BB%B1"
       }
@@ -36459,7 +36482,7 @@
         ],
         "videoCount": 13,
         "channelCount": 15,
-        "expandedChannelCount": 52,
+        "expandedChannelCount": 51,
         "subNicheCount": 3,
         "targetUrl": "/ngachxanh?niche=Tri%E1%BA%BFt%20l%C3%BD%20%2F%20kh%E1%BA%AFc%20k%E1%BB%B7"
       }
@@ -38600,7 +38623,7 @@
         ],
         "videoCount": 6,
         "channelCount": 20,
-        "expandedChannelCount": 35,
+        "expandedChannelCount": 29,
         "subNicheCount": 5,
         "targetUrl": "/ngachxanh?niche=Ng%C6%B0%E1%BB%9Di%20que%20%2F%20Chill%20Dude%20%2F%20Nonagon"
       }
@@ -39544,7 +39567,7 @@
         ],
         "videoCount": 8,
         "channelCount": 12,
-        "expandedChannelCount": 14,
+        "expandedChannelCount": 13,
         "subNicheCount": 3,
         "targetUrl": "/ngachxanh?niche=Kh%E1%BA%A3o%20c%E1%BB%95%20h%E1%BB%8Dc%20%2F%20Ti%E1%BB%81n%20s%E1%BB%AD%20%26%20N%E1%BB%81n%20v%C4%83n%20minh%20%C4%90%C3%A3%20m%E1%BA%A5t%20(Sumer%2C%20Anunnaki%2C%20G%C3%B6bekli%20Tepe)"
       }
@@ -40585,7 +40608,7 @@
         ],
         "videoCount": 12,
         "channelCount": 13,
-        "expandedChannelCount": 29,
+        "expandedChannelCount": 27,
         "subNicheCount": 6,
         "targetUrl": "/ngachxanh?niche=Wildlife%20documentary%20%2F%20animal%20behavior%20%2F%20conservation"
       }
@@ -41296,7 +41319,7 @@
       "track": "h2dev",
       "sku": "niche:Everyday History EN (lịch sử đồ vật thường ngày)",
       "path": "knowledge-hub/vault/niches/everyday-history-en-lich-su-do-vat-thuong-ngay.md",
-      "degree": 373,
+      "degree": 367,
       "meta": {
         "code": "H30",
         "hang": 1,
@@ -41309,7 +41332,7 @@
         ],
         "videoCount": 174,
         "channelCount": 25,
-        "expandedChannelCount": 16,
+        "expandedChannelCount": 5,
         "subNicheCount": 3,
         "targetUrl": "/ngachxanh?niche=Everyday%20History%20EN%20(l%E1%BB%8Bch%20s%E1%BB%AD%20%C4%91%E1%BB%93%20v%E1%BA%ADt%20th%C6%B0%E1%BB%9Dng%20ng%C3%A0y)"
       }
@@ -41863,121 +41886,6 @@
         "nicheCode": "H30",
         "videoCount": 0,
         "targetUrl": "/kenh-mau?handle=%40Jinx"
-      }
-    },
-    {
-      "id": "channel:수복강녕-g6h",
-      "type": "channel",
-      "layer": "knowledge",
-      "level": 5,
-      "parentId": "",
-      "projectId": "",
-      "label": "@수복강녕-g6h",
-      "track": "all",
-      "sku": "",
-      "path": "knowledge-hub/vault/channels/수복강녕-g6h.md",
-      "degree": 1,
-      "meta": {
-        "handle": "@수복강녕-g6h",
-        "name": "수복강녕: 복이 깃들고 행복한 길",
-        "url": "https://www.youtube.com/@수복강녕-g6h",
-        "dead": false,
-        "channelId": "UCTNzSWV2ken0gF8T2iqFsrg",
-        "nicheCode": "H30",
-        "videoCount": 0,
-        "targetUrl": "/kenh-mau?handle=%40%EC%88%98%EB%B3%B5%EA%B0%95%EB%85%95-g6h"
-      }
-    },
-    {
-      "id": "channel:bụichill",
-      "type": "channel",
-      "layer": "knowledge",
-      "level": 5,
-      "parentId": "",
-      "projectId": "",
-      "label": "@BụiChill",
-      "track": "all",
-      "sku": "",
-      "path": "knowledge-hub/vault/channels/BụiChill.md",
-      "degree": 1,
-      "meta": {
-        "handle": "@BụiChill",
-        "name": "Bụi Chill",
-        "url": "https://www.youtube.com/@BụiChill",
-        "dead": false,
-        "channelId": "UCaar2zTMRWkO9niTT0MJd0Q",
-        "nicheCode": "H30",
-        "videoCount": 0,
-        "targetUrl": "/kenh-mau?handle=%40B%E1%BB%A5iChill"
-      }
-    },
-    {
-      "id": "channel:legends80smix",
-      "type": "channel",
-      "layer": "knowledge",
-      "level": 5,
-      "parentId": "",
-      "projectId": "",
-      "label": "@Legends80sMix",
-      "track": "all",
-      "sku": "",
-      "path": "knowledge-hub/vault/channels/Legends80sMix.md",
-      "degree": 1,
-      "meta": {
-        "handle": "@Legends80sMix",
-        "name": "Legends 80s Mix",
-        "url": "https://www.youtube.com/@Legends80sMix",
-        "dead": false,
-        "channelId": "UCjJQWL9PLCQBUm0GFiFFCuw",
-        "nicheCode": "H30",
-        "videoCount": 0,
-        "targetUrl": "/kenh-mau?handle=%40Legends80sMix"
-      }
-    },
-    {
-      "id": "channel:outlawcam",
-      "type": "channel",
-      "layer": "knowledge",
-      "level": 5,
-      "parentId": "",
-      "projectId": "",
-      "label": "@OutlawCam",
-      "track": "all",
-      "sku": "",
-      "path": "knowledge-hub/vault/channels/OutlawCam.md",
-      "degree": 1,
-      "meta": {
-        "handle": "@OutlawCam",
-        "name": "Cam Beck",
-        "url": "https://www.youtube.com/@OutlawCam",
-        "dead": false,
-        "channelId": "UCqzuOHdZPJZ4Olx85V3KpJg",
-        "nicheCode": "H30",
-        "videoCount": 0,
-        "targetUrl": "/kenh-mau?handle=%40OutlawCam"
-      }
-    },
-    {
-      "id": "channel:retrodiscogold",
-      "type": "channel",
-      "layer": "knowledge",
-      "level": 5,
-      "parentId": "",
-      "projectId": "",
-      "label": "@RetroDiscoGold",
-      "track": "all",
-      "sku": "",
-      "path": "knowledge-hub/vault/channels/RetroDiscoGold.md",
-      "degree": 1,
-      "meta": {
-        "handle": "@RetroDiscoGold",
-        "name": "Retro Disco Gold",
-        "url": "https://www.youtube.com/@RetroDiscoGold",
-        "dead": false,
-        "channelId": "UCdpZe3RpyElHgimI6KFqwAw",
-        "nicheCode": "H30",
-        "videoCount": 0,
-        "targetUrl": "/kenh-mau?handle=%40RetroDiscoGold"
       }
     },
     {
@@ -43464,7 +43372,7 @@
         ],
         "videoCount": 16,
         "channelCount": 18,
-        "expandedChannelCount": 28,
+        "expandedChannelCount": 27,
         "subNicheCount": 3,
         "targetUrl": "/ngachxanh?niche=Senior%20Wisdom%20KR%20(kh%C3%B4ng-b%C3%A1c-s%C4%A9%2C%20t%C3%A2m%20l%C3%BD%2Ft%C3%A0i%20ch%C3%ADnh%2F%C4%91%E1%BB%9Di%20s%E1%BB%91ng)"
       }
@@ -43526,7 +43434,7 @@
       "track": "h2dev",
       "sku": "niche:Tội phạm Kinh tế / Dark Crime & Bodycam Điều tra (FOIA / The Paper Trail)",
       "path": "knowledge-hub/vault/niches/toi-pham-kinh-te-dark-crime-bodycam-dieu-tra-foia-the-paper-trail.md",
-      "degree": 55,
+      "degree": 56,
       "meta": {
         "code": "H35",
         "hang": 17,
@@ -44066,6 +43974,29 @@
         "nicheCode": "H35",
         "videoCount": 0,
         "targetUrl": "/kenh-mau?handle=%40JCS"
+      }
+    },
+    {
+      "id": "channel:outlawcam",
+      "type": "channel",
+      "layer": "knowledge",
+      "level": 5,
+      "parentId": "",
+      "projectId": "",
+      "label": "@OutlawCam",
+      "track": "all",
+      "sku": "",
+      "path": "knowledge-hub/vault/channels/OutlawCam.md",
+      "degree": 1,
+      "meta": {
+        "handle": "@OutlawCam",
+        "name": "Cam Beck",
+        "url": "https://www.youtube.com/@OutlawCam",
+        "dead": false,
+        "channelId": "UCqzuOHdZPJZ4Olx85V3KpJg",
+        "nicheCode": "H35",
+        "videoCount": 0,
+        "targetUrl": "/kenh-mau?handle=%40OutlawCam"
       }
     },
     {
@@ -44835,7 +44766,7 @@
         ],
         "videoCount": 2,
         "channelCount": 9,
-        "expandedChannelCount": 21,
+        "expandedChannelCount": 20,
         "subNicheCount": 5,
         "targetUrl": "/ngachxanh?niche=Ho%E1%BA%A1t%20h%C3%ACnh%203D%20AI%20%2F%20Pixar-Style%20%2F%20Truy%E1%BB%87n%20C%E1%BB%95%20t%C3%ADch%20%26%20IP%20Gia%20%C4%91%C3%ACnh%20(Story-to-Animation)"
       }
@@ -45488,7 +45419,7 @@
         ],
         "videoCount": 3,
         "channelCount": 17,
-        "expandedChannelCount": 17,
+        "expandedChannelCount": 16,
         "subNicheCount": 4,
         "targetUrl": "/ngachxanh?niche=%C4%90i%E1%BB%87n%20%E1%BA%A3nh%20AI%20D%C3%A0i%20t%E1%BA%ADp%20%2F%20AI%20Film%20%26%20Sci-Fi%20%2F%20C%E1%BB%95%20trang%20Ti%C3%AAn%20hi%E1%BB%87p%204K"
       }
@@ -45969,7 +45900,7 @@
         ],
         "videoCount": 2,
         "channelCount": 16,
-        "expandedChannelCount": 172,
+        "expandedChannelCount": 171,
         "subNicheCount": 4,
         "targetUrl": "/ngachxanh?niche=Discovery%20%2F%20%C4%90%E1%BB%8Ba%20l%C3%BD%20T%C3%B2%20m%C3%B2%20%2F%20Kh%C3%A1m%20ph%C3%A1%20Th%E1%BA%BF%20gi%E1%BB%9Bi%20%26%20Du%20l%E1%BB%8Bch%20Qu%E1%BB%91c%20t%E1%BA%BF%204K"
       }
@@ -49192,7 +49123,7 @@
       "track": "h2dev",
       "sku": "niche:Âm nhạc AI / Nhạc Cổ Phong / Lofi / Retro 80s-90s & Visualizer",
       "path": "knowledge-hub/vault/niches/am-nhac-ai-nhac-co-phong-lofi-retro-80s-90s-visualizer.md",
-      "degree": 55,
+      "degree": 58,
       "meta": {
         "code": "H40",
         "hang": 38,
@@ -49209,7 +49140,7 @@
         ],
         "videoCount": 2,
         "channelCount": 6,
-        "expandedChannelCount": 39,
+        "expandedChannelCount": 42,
         "subNicheCount": 3,
         "targetUrl": "/ngachxanh?niche=%C3%82m%20nh%E1%BA%A1c%20AI%20%2F%20Nh%E1%BA%A1c%20C%E1%BB%95%20Phong%20%2F%20Lofi%20%2F%20Retro%2080s-90s%20%26%20Visualizer"
       }
@@ -49792,6 +49723,75 @@
         "nicheCode": "H40",
         "videoCount": 0,
         "targetUrl": "/kenh-mau?handle=%40SolaChillMusic"
+      }
+    },
+    {
+      "id": "channel:bụichill",
+      "type": "channel",
+      "layer": "knowledge",
+      "level": 5,
+      "parentId": "",
+      "projectId": "",
+      "label": "@BụiChill",
+      "track": "all",
+      "sku": "",
+      "path": "knowledge-hub/vault/channels/BụiChill.md",
+      "degree": 1,
+      "meta": {
+        "handle": "@BụiChill",
+        "name": "Bụi Chill",
+        "url": "https://www.youtube.com/@BụiChill",
+        "dead": false,
+        "channelId": "UCaar2zTMRWkO9niTT0MJd0Q",
+        "nicheCode": "H40",
+        "videoCount": 0,
+        "targetUrl": "/kenh-mau?handle=%40B%E1%BB%A5iChill"
+      }
+    },
+    {
+      "id": "channel:legends80smix",
+      "type": "channel",
+      "layer": "knowledge",
+      "level": 5,
+      "parentId": "",
+      "projectId": "",
+      "label": "@Legends80sMix",
+      "track": "all",
+      "sku": "",
+      "path": "knowledge-hub/vault/channels/Legends80sMix.md",
+      "degree": 1,
+      "meta": {
+        "handle": "@Legends80sMix",
+        "name": "Legends 80s Mix",
+        "url": "https://www.youtube.com/@Legends80sMix",
+        "dead": false,
+        "channelId": "UCjJQWL9PLCQBUm0GFiFFCuw",
+        "nicheCode": "H40",
+        "videoCount": 0,
+        "targetUrl": "/kenh-mau?handle=%40Legends80sMix"
+      }
+    },
+    {
+      "id": "channel:retrodiscogold",
+      "type": "channel",
+      "layer": "knowledge",
+      "level": 5,
+      "parentId": "",
+      "projectId": "",
+      "label": "@RetroDiscoGold",
+      "track": "all",
+      "sku": "",
+      "path": "knowledge-hub/vault/channels/RetroDiscoGold.md",
+      "degree": 1,
+      "meta": {
+        "handle": "@RetroDiscoGold",
+        "name": "Retro Disco Gold",
+        "url": "https://www.youtube.com/@RetroDiscoGold",
+        "dead": false,
+        "channelId": "UCdpZe3RpyElHgimI6KFqwAw",
+        "nicheCode": "H40",
+        "videoCount": 0,
+        "targetUrl": "/kenh-mau?handle=%40RetroDiscoGold"
       }
     },
     {
@@ -62824,8 +62824,8 @@
         "relToProject": "graph.html",
         "ext": ".html",
         "sizeBytes": 25464,
-        "mtimeMs": 1793354596863,
-        "updatedAt": "2026-10-30T10:03:16.863Z",
+        "mtimeMs": 1793364130947,
+        "updatedAt": "2026-10-30T12:42:10.947Z",
         "role": "Web Application View / Entrypoint",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fgraph.html"
       }
@@ -62928,8 +62928,8 @@
         "relToProject": "index.html",
         "ext": ".html",
         "sizeBytes": 15134,
-        "mtimeMs": 1793319014308,
-        "updatedAt": "2026-10-30T00:10:14.307Z",
+        "mtimeMs": 1793364130944,
+        "updatedAt": "2026-10-30T12:42:10.944Z",
         "role": "Web Application View / Entrypoint",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Findex.html"
       }
@@ -62980,8 +62980,8 @@
         "relToProject": "learn.html",
         "ext": ".html",
         "sizeBytes": 8043,
-        "mtimeMs": 1793321504921,
-        "updatedAt": "2026-10-30T00:51:44.921Z",
+        "mtimeMs": 1793364130947,
+        "updatedAt": "2026-10-30T12:42:10.946Z",
         "role": "Web Application View / Entrypoint",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Flearn.html"
       }
@@ -63084,8 +63084,8 @@
         "relToProject": "player.html",
         "ext": ".html",
         "sizeBytes": 21792,
-        "mtimeMs": 1793321449850,
-        "updatedAt": "2026-10-30T00:50:49.849Z",
+        "mtimeMs": 1793364130947,
+        "updatedAt": "2026-10-30T12:42:10.946Z",
         "role": "Web Application View / Entrypoint",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fplayer.html"
       }
@@ -63538,8 +63538,8 @@
         "relToProject": "assets/app/sw.js",
         "ext": ".js",
         "sizeBytes": 4329,
-        "mtimeMs": 1793318467063,
-        "updatedAt": "2026-10-30T00:01:07.062Z",
+        "mtimeMs": 1793364130947,
+        "updatedAt": "2026-10-30T12:42:10.947Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fassets%2Fapp%2Fsw.js"
       }
@@ -63582,9 +63582,9 @@
         "relPath": "H2DEV-Project/assets/app/tabs/content.js",
         "relToProject": "assets/app/tabs/content.js",
         "ext": ".js",
-        "sizeBytes": 234010,
-        "mtimeMs": 1793354637972,
-        "updatedAt": "2026-10-30T10:03:57.972Z",
+        "sizeBytes": 235608,
+        "mtimeMs": 1793364411247,
+        "updatedAt": "2026-10-30T12:46:51.246Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fassets%2Fapp%2Ftabs%2Fcontent.js"
       }
@@ -64229,9 +64229,9 @@
         "relPath": "H2DEV-Project/data-tabs/kenh-mau.json",
         "relToProject": "data-tabs/kenh-mau.json",
         "ext": ".json",
-        "sizeBytes": 1093398,
-        "mtimeMs": 1793354418594,
-        "updatedAt": "2026-10-30T10:00:18.593Z",
+        "sizeBytes": 1143377,
+        "mtimeMs": 1793364478703,
+        "updatedAt": "2026-10-30T12:47:58.703Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata-tabs%2Fkenh-mau.json"
       }
@@ -64273,7 +64273,7 @@
       "track": "infra",
       "sku": "",
       "path": "H2DEV-Project/data-tabs/ngach-xanh.json",
-      "degree": 10,
+      "degree": 11,
       "meta": {
         "projectId": "project:h2dev-project",
         "projectName": "Hệ Thống Lõi 97yo-dev (Master Hub & 3 Nhánh Đào Tạo — 333 Video)",
@@ -64281,9 +64281,9 @@
         "relPath": "H2DEV-Project/data-tabs/ngach-xanh.json",
         "relToProject": "data-tabs/ngach-xanh.json",
         "ext": ".json",
-        "sizeBytes": 368103,
-        "mtimeMs": 1793354596822,
-        "updatedAt": "2026-10-30T10:03:16.821Z",
+        "sizeBytes": 367374,
+        "mtimeMs": 1793364478697,
+        "updatedAt": "2026-10-30T12:47:58.697Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata-tabs%2Fngach-xanh.json"
       }
@@ -64325,7 +64325,7 @@
       "track": "infra",
       "sku": "",
       "path": "H2DEV-Project/data-tabs/raw-kenh-mau.json",
-      "degree": 21,
+      "degree": 22,
       "meta": {
         "projectId": "project:h2dev-project",
         "projectName": "Hệ Thống Lõi 97yo-dev (Master Hub & 3 Nhánh Đào Tạo — 333 Video)",
@@ -64333,9 +64333,9 @@
         "relPath": "H2DEV-Project/data-tabs/raw-kenh-mau.json",
         "relToProject": "data-tabs/raw-kenh-mau.json",
         "ext": ".json",
-        "sizeBytes": 1400116,
-        "mtimeMs": 1793351433507,
-        "updatedAt": "2026-10-30T09:10:33.507Z",
+        "sizeBytes": 1418208,
+        "mtimeMs": 1793363922913,
+        "updatedAt": "2026-10-30T12:38:42.913Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata-tabs%2Fraw-kenh-mau.json"
       }
@@ -64657,8 +64657,8 @@
         "relToProject": "data/h2dev_knowledge_graph.db",
         "ext": ".db",
         "sizeBytes": 18075648,
-        "mtimeMs": 1793355667989,
-        "updatedAt": "2026-10-30T10:21:07.989Z",
+        "mtimeMs": 1793364416561,
+        "updatedAt": "2026-10-30T12:46:56.561Z",
         "role": "Project Resource File",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fh2dev_knowledge_graph.db"
       }
@@ -64682,9 +64682,9 @@
         "relPath": "H2DEV-Project/data/h2dev_master.db",
         "relToProject": "data/h2dev_master.db",
         "ext": ".db",
-        "sizeBytes": 11567104,
-        "mtimeMs": 1793355220957,
-        "updatedAt": "2026-10-30T10:13:40.956Z",
+        "sizeBytes": 11603968,
+        "mtimeMs": 1793364481427,
+        "updatedAt": "2026-10-30T12:48:01.426Z",
         "role": "Project Resource File",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fh2dev_master.db"
       }
@@ -64734,9 +64734,9 @@
         "relPath": "H2DEV-Project/data/knowledge_graph.json",
         "relToProject": "data/knowledge_graph.json",
         "ext": ".json",
-        "sizeBytes": 4549490,
-        "mtimeMs": 1793355629914,
-        "updatedAt": "2026-10-30T10:20:29.914Z",
+        "sizeBytes": 4548988,
+        "mtimeMs": 1793364009207,
+        "updatedAt": "2026-10-30T12:40:09.206Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fknowledge_graph.json"
       }
@@ -65142,7 +65142,7 @@
       "track": "infra",
       "sku": "",
       "path": "H2DEV-Project/data/videos_dgmd.json",
-      "degree": 13,
+      "degree": 14,
       "meta": {
         "projectId": "project:h2dev-project",
         "projectName": "Hệ Thống Lõi 97yo-dev (Master Hub & 3 Nhánh Đào Tạo — 333 Video)",
@@ -65168,7 +65168,7 @@
       "track": "infra",
       "sku": "",
       "path": "H2DEV-Project/data/videos_huan.json",
-      "degree": 11,
+      "degree": 12,
       "meta": {
         "projectId": "project:h2dev-project",
         "projectName": "Hệ Thống Lõi 97yo-dev (Master Hub & 3 Nhánh Đào Tạo — 333 Video)",
@@ -68779,7 +68779,7 @@
       "track": "infra",
       "sku": "",
       "path": "H2DEV-Project/scripts/sync-missing-avatars.cjs",
-      "degree": 2,
+      "degree": 4,
       "meta": {
         "projectId": "project:h2dev-project",
         "projectName": "Hệ Thống Lõi 97yo-dev (Master Hub & 3 Nhánh Đào Tạo — 333 Video)",
@@ -68787,9 +68787,9 @@
         "relPath": "H2DEV-Project/scripts/sync-missing-avatars.cjs",
         "relToProject": "scripts/sync-missing-avatars.cjs",
         "ext": ".cjs",
-        "sizeBytes": 6299,
-        "mtimeMs": 1789225927073,
-        "updatedAt": "2026-09-12T15:12:07.072Z",
+        "sizeBytes": 13983,
+        "mtimeMs": 1793363832152,
+        "updatedAt": "2026-10-30T12:37:12.152Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Fsync-missing-avatars.cjs"
       }
@@ -68857,7 +68857,7 @@
       "track": "infra",
       "sku": "",
       "path": "H2DEV-Project/scripts/sync_db_to_tabs.js",
-      "degree": 4,
+      "degree": 6,
       "meta": {
         "projectId": "project:h2dev-project",
         "projectName": "Hệ Thống Lõi 97yo-dev (Master Hub & 3 Nhánh Đào Tạo — 333 Video)",
@@ -68865,9 +68865,9 @@
         "relPath": "H2DEV-Project/scripts/sync_db_to_tabs.js",
         "relToProject": "scripts/sync_db_to_tabs.js",
         "ext": ".js",
-        "sizeBytes": 3494,
-        "mtimeMs": 1789582263114,
-        "updatedAt": "2026-09-16T18:11:03.114Z",
+        "sizeBytes": 3851,
+        "mtimeMs": 1793364004474,
+        "updatedAt": "2026-10-30T12:40:04.474Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Fsync_db_to_tabs.js"
       }
@@ -114743,6 +114743,18 @@
       "weight": 1.2
     },
     {
+      "source": "niche:chua-phuc-am-han",
+      "target": "channel:노년기건강길잡이",
+      "relation": "BENCHMARKS_CHANNEL",
+      "weight": 1.2
+    },
+    {
+      "source": "niche:chua-phuc-am-han",
+      "target": "channel:수복강녕-g6h",
+      "relation": "BENCHMARKS_CHANNEL",
+      "weight": 1.2
+    },
+    {
       "source": "track:h2dev",
       "target": "niche:tam-linh-luat-hap-dan",
       "relation": "HAS_NICHE",
@@ -116598,7 +116610,7 @@
     },
     {
       "source": "niche:kinh-te-nhat",
-      "target": "channel:tiny empires",
+      "target": "channel:tinyempires",
       "relation": "BENCHMARKS_CHANNEL",
       "weight": 1.2
     },
@@ -121823,42 +121835,6 @@
       "weight": 1.2
     },
     {
-      "source": "niche:everyday-history-en-lich-su-do-vat-thuong-ngay",
-      "target": "channel:노년기건강길잡이",
-      "relation": "BENCHMARKS_CHANNEL",
-      "weight": 1.2
-    },
-    {
-      "source": "niche:everyday-history-en-lich-su-do-vat-thuong-ngay",
-      "target": "channel:수복강녕-g6h",
-      "relation": "BENCHMARKS_CHANNEL",
-      "weight": 1.2
-    },
-    {
-      "source": "niche:everyday-history-en-lich-su-do-vat-thuong-ngay",
-      "target": "channel:bụichill",
-      "relation": "BENCHMARKS_CHANNEL",
-      "weight": 1.2
-    },
-    {
-      "source": "niche:everyday-history-en-lich-su-do-vat-thuong-ngay",
-      "target": "channel:legends80smix",
-      "relation": "BENCHMARKS_CHANNEL",
-      "weight": 1.2
-    },
-    {
-      "source": "niche:everyday-history-en-lich-su-do-vat-thuong-ngay",
-      "target": "channel:outlawcam",
-      "relation": "BENCHMARKS_CHANNEL",
-      "weight": 1.2
-    },
-    {
-      "source": "niche:everyday-history-en-lich-su-do-vat-thuong-ngay",
-      "target": "channel:retrodiscogold",
-      "relation": "BENCHMARKS_CHANNEL",
-      "weight": 1.2
-    },
-    {
       "source": "track:h2dev",
       "target": "niche:true-origin-economic-history-en-giai-ma-goc-tich",
       "relation": "HAS_NICHE",
@@ -123019,6 +122995,12 @@
     {
       "source": "niche:toi-pham-kinh-te-dark-crime-bodycam-dieu-tra-foia-the-paper-trail",
       "target": "channel:jcs",
+      "relation": "BENCHMARKS_CHANNEL",
+      "weight": 1.2
+    },
+    {
+      "source": "niche:toi-pham-kinh-te-dark-crime-bodycam-dieu-tra-foia-the-paper-trail",
+      "target": "channel:outlawcam",
       "relation": "BENCHMARKS_CHANNEL",
       "weight": 1.2
     },
@@ -125089,6 +125071,24 @@
     {
       "source": "niche:am-nhac-ai-nhac-co-phong-lofi-retro-80s-90s-visualizer",
       "target": "channel:solachillmusic",
+      "relation": "BENCHMARKS_CHANNEL",
+      "weight": 1.2
+    },
+    {
+      "source": "niche:am-nhac-ai-nhac-co-phong-lofi-retro-80s-90s-visualizer",
+      "target": "channel:bụichill",
+      "relation": "BENCHMARKS_CHANNEL",
+      "weight": 1.2
+    },
+    {
+      "source": "niche:am-nhac-ai-nhac-co-phong-lofi-retro-80s-90s-visualizer",
+      "target": "channel:legends80smix",
+      "relation": "BENCHMARKS_CHANNEL",
+      "weight": 1.2
+    },
+    {
+      "source": "niche:am-nhac-ai-nhac-co-phong-lofi-retro-80s-90s-visualizer",
+      "target": "channel:retrodiscogold",
       "relation": "BENCHMARKS_CHANNEL",
       "weight": 1.2
     },
@@ -144437,6 +144437,18 @@
       "weight": 1.5
     },
     {
+      "source": "file:H2DEV-Project/scripts/sync-missing-avatars.cjs",
+      "target": "file:H2DEV-Project/data-tabs/raw-kenh-mau.json",
+      "relation": "READS_WRITES_DATA",
+      "weight": 1.5
+    },
+    {
+      "source": "file:H2DEV-Project/scripts/sync-missing-avatars.cjs",
+      "target": "file:H2DEV-Project/data-tabs/ngach-xanh.json",
+      "relation": "READS_WRITES_DATA",
+      "weight": 1.5
+    },
+    {
       "source": "file:H2DEV-Project/scripts/sync-ngoai-vao-h2dev.js",
       "target": "file:H2DEV-Project/data-tabs/tai-lieu-full.json",
       "relation": "READS_WRITES_DATA",
@@ -144499,6 +144511,18 @@
     {
       "source": "file:H2DEV-Project/scripts/sync_db_to_tabs.js",
       "target": "file:H2DEV-Project/data/h2dev_master.db",
+      "relation": "READS_DATA",
+      "weight": 1.5
+    },
+    {
+      "source": "file:H2DEV-Project/scripts/sync_db_to_tabs.js",
+      "target": "file:H2DEV-Project/data/videos_huan.json",
+      "relation": "READS_DATA",
+      "weight": 1.5
+    },
+    {
+      "source": "file:H2DEV-Project/scripts/sync_db_to_tabs.js",
+      "target": "file:H2DEV-Project/data/videos_dgmd.json",
       "relation": "READS_DATA",
       "weight": 1.5
     },

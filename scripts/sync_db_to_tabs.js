@@ -19,7 +19,7 @@ if (!fs.existsSync(DB_PATH)) {
 console.log('=== H2DEV MASTER DB TO JSON PROJECTIONS SYNC AUDIT ===');
 const db = new DatabaseSync(DB_PATH);
 
-// 1. Verify and Sync Lessons (136 records)
+// 1. Verify and Sync Lessons (333 records across H2DEV + HUAN + DGMD)
 const lessons = db.prepare(`
   SELECT l.*, n.name_vi AS niche_name
   FROM lessons l
@@ -27,9 +27,13 @@ const lessons = db.prepare(`
   ORDER BY l.rowid ASC
 `).all();
 
-console.log(`[1/5] Master DB Lessons: ${lessons.length} records.`);
-if (lessons.length !== C.videos) {
-  console.error(`[SyncEngine] Inconsistency: Expected ${C.videos} lessons, found ${lessons.length}`);
+const huanLen = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'videos_huan.json'), 'utf8')).length;
+const dgmdLen = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'videos_dgmd.json'), 'utf8')).length;
+const expectedTotalLessons = C.videos + huanLen + dgmdLen;
+
+console.log(`[1/5] Master DB Lessons: ${lessons.length} records (Expected: ${expectedTotalLessons}).`);
+if (lessons.length !== expectedTotalLessons) {
+  console.error(`[SyncEngine] Inconsistency: Expected ${expectedTotalLessons} lessons, found ${lessons.length}`);
   process.exit(1);
 }
 

@@ -3316,9 +3316,9 @@
     "handle": "@HinognaKaalamanYT",
     "count": 1,
     "url": "https://www.youtube.com/@HinognaKaalamanYT",
-    "niche": "Nhà máy sản xuất",
+    "niche": "Discovery / Địa lý Tò mò / Khám phá Thế giới & Du lịch Quốc tế 4K",
     "niches": [
-      "Nhà máy sản xuất"
+      "Discovery / Địa lý Tò mò / Khám phá Thế giới & Du lịch Quốc tế 4K"
     ],
     "markets": [
       "🇵🇭 Philippines",
@@ -3339,8 +3339,8 @@
     "status": "LIVE",
     "nguon_do": "Đo thực tế 2026-10-14: HTTP trang kênh + channel_dossier + RSS → LIVE (bằng chứng _audit/20261014-kenh-mau-probe.jsonl)",
     "ngay_do_check": "Đối soát đa nguồn 2026-10-14: LIVE",
-    "ngach": "Nhà máy sản xuất",
-    "nicheCode": "H17",
+    "ngach": "Discovery / Địa lý Tò mò / Khám phá Thế giới & Du lịch Quốc tế 4K",
+    "nicheCode": "H39",
     "phanLoaiNguon": "cong-dong-xac-thuc",
     "channelId": "UCVNoFFqBL73eSycGLRbiFQQ",
     "title": "Hinog na Kaalaman"
@@ -13786,17 +13786,18 @@
     "handle": "@Einzelgänger",
     "count": 1,
     "url": "https://www.youtube.com/@Einzelgänger",
-    "niche": "Phật pháp Nhật",
-    "ngach": "Phật pháp Nhật",
+    "niche": "Triết lý / khắc kỷ",
+    "ngach": "Triết lý / khắc kỷ",
     "niches": [
-      "Phật pháp Nhật"
+      "Triết lý / khắc kỷ"
     ],
-    "nicheCode": "H02",
+    "nicheCode": "H20",
     "subNicheId": "054",
     "markets": [
-      "🇯🇵 Nhật"
+      "🇺🇸 US",
+      "🌍 Toàn cầu"
     ],
-    "thiTruong": "🇯🇵 Nhật",
+    "thiTruong": "🇺🇸 US",
     "dead": false,
     "trangThai": "LIVE",
     "ngay_do": "2026-10-28",
@@ -13805,7 +13806,7 @@
     "ngay_do_check": "Đối soát kho chuẩn 2026-10-28: LIVE",
     "phanLoaiNguon": "ban-do-120-ngach-2026",
     "phanLoaiNgay": "2026-10-28",
-    "note": "[Vi ngách #054: Philosophical Video Essays & Existentialism (Tiểu luận triết học) · RPM $7–$14] Phân tích Nietzsche, Jung, Camus qua điện ảnh và hội họa cổ điển"
+    "note": "Kênh chuẩn Stoicism / Philosophy (H20) — Phân tích Nietzsche, Jung, Camus qua điện ảnh và hội họa cổ điển"
   },
   {
     "name": "PursuitofWonder",
@@ -22215,62 +22216,6 @@
     "note": "Kênh chuẩn (Benchmark) trong Master Prompt dien-anh-ai-dai-tap-4k.md (H38)"
   },
   {
-    "name": "image1",
-    "tenKenh": "image1",
-    "kenh": "image1",
-    "handle": "@image1",
-    "count": 1,
-    "url": "https://www.youtube.com/@image1",
-    "niche": "Điện ảnh AI Dài tập / AI Film & Sci-Fi / Cổ trang Tiên hiệp 4K",
-    "ngach": "Điện ảnh AI Dài tập / AI Film & Sci-Fi / Cổ trang Tiên hiệp 4K",
-    "niches": [
-      "Điện ảnh AI Dài tập / AI Film & Sci-Fi / Cổ trang Tiên hiệp 4K"
-    ],
-    "nicheCode": "H38",
-    "subNicheId": "096",
-    "markets": [
-      "🇯🇵 Nhật"
-    ],
-    "thiTruong": "🇯🇵 Nhật",
-    "dead": false,
-    "trangThai": "LIVE",
-    "ngay_do": "2026-10-28",
-    "ngayDo": "2026-10-28",
-    "nguon_do": "Đối soát Master Prompt docs/NOI-BO/prompt/dien-anh-ai-dai-tap-4k.md (2026-10-28)",
-    "ngay_do_check": "Đối soát kho chuẩn 2026-10-28: LIVE",
-    "phanLoaiNguon": "ban-do-120-ngach-2026",
-    "phanLoaiNgay": "2026-10-28",
-    "note": "Kênh chuẩn (Benchmark) trong Master Prompt dien-anh-ai-dai-tap-4k.md (H38)"
-  },
-  {
-    "name": "video1",
-    "tenKenh": "video1",
-    "kenh": "video1",
-    "handle": "@video1",
-    "count": 1,
-    "url": "https://www.youtube.com/@video1",
-    "niche": "Điện ảnh AI Dài tập / AI Film & Sci-Fi / Cổ trang Tiên hiệp 4K",
-    "ngach": "Điện ảnh AI Dài tập / AI Film & Sci-Fi / Cổ trang Tiên hiệp 4K",
-    "niches": [
-      "Điện ảnh AI Dài tập / AI Film & Sci-Fi / Cổ trang Tiên hiệp 4K"
-    ],
-    "nicheCode": "H38",
-    "subNicheId": "096",
-    "markets": [
-      "🇯🇵 Nhật"
-    ],
-    "thiTruong": "🇯🇵 Nhật",
-    "dead": false,
-    "trangThai": "LIVE",
-    "ngay_do": "2026-10-28",
-    "ngayDo": "2026-10-28",
-    "nguon_do": "Đối soát Master Prompt docs/NOI-BO/prompt/dien-anh-ai-dai-tap-4k.md (2026-10-28)",
-    "ngay_do_check": "Đối soát kho chuẩn 2026-10-28: LIVE",
-    "phanLoaiNguon": "ban-do-120-ngach-2026",
-    "phanLoaiNgay": "2026-10-28",
-    "note": "Kênh chuẩn (Benchmark) trong Master Prompt dien-anh-ai-dai-tap-4k.md (H38)"
-  },
-  {
     "name": "RuhiCenetMedya",
     "tenKenh": "RuhiCenetMedya",
     "kenh": "RuhiCenetMedya",
@@ -22638,12 +22583,12 @@
     "note": "Kênh chuẩn (Benchmark) trong Master Prompt kinh-te-nhat-saas-affiliate-v2.md (H14)"
   },
   {
-    "name": "Tiny",
-    "tenKenh": "Tiny",
-    "kenh": "Tiny",
-    "handle": "@Tiny",
+    "name": "Tiny Empires",
+    "tenKenh": "Tiny Empires",
+    "kenh": "Tiny Empires",
+    "handle": "@Tiny Empires",
     "count": 1,
-    "url": "https://www.youtube.com/@Tiny",
+    "url": "https://www.youtube.com/@TinyEmpires",
     "niche": "Kinh tế Nhật",
     "ngach": "Kinh tế Nhật",
     "niches": [
@@ -23321,62 +23266,6 @@
     "note": "Kênh chuẩn (Benchmark) trong Master Prompt sinh-ton-offgrid-passive-cooling-v2.md (H24)"
   },
   {
-    "name": "100",
-    "tenKenh": "100",
-    "kenh": "100",
-    "handle": "@100",
-    "count": 1,
-    "url": "https://www.youtube.com/@100",
-    "niche": "Sức khỏe Nhật",
-    "ngach": "Sức khỏe Nhật",
-    "niches": [
-      "Sức khỏe Nhật"
-    ],
-    "nicheCode": "H03",
-    "subNicheId": "056",
-    "markets": [
-      "🇯🇵 Nhật"
-    ],
-    "thiTruong": "🇯🇵 Nhật",
-    "dead": false,
-    "trangThai": "LIVE",
-    "ngay_do": "2026-10-28",
-    "ngayDo": "2026-10-28",
-    "nguon_do": "Đối soát Master Prompt docs/NOI-BO/prompt/suc-khoe-nhat.md (2026-10-28)",
-    "ngay_do_check": "Đối soát kho chuẩn 2026-10-28: LIVE",
-    "phanLoaiNguon": "ban-do-120-ngach-2026",
-    "phanLoaiNgay": "2026-10-28",
-    "note": "Kênh chuẩn (Benchmark) trong Master Prompt suc-khoe-nhat.md (H03)"
-  },
-  {
-    "name": "Chuy",
-    "tenKenh": "Chuy",
-    "kenh": "Chuy",
-    "handle": "@Chuy",
-    "count": 1,
-    "url": "https://www.youtube.com/@Chuy",
-    "niche": "Sức khỏe VN",
-    "ngach": "Sức khỏe VN",
-    "niches": [
-      "Sức khỏe VN"
-    ],
-    "nicheCode": "H04",
-    "subNicheId": "055",
-    "markets": [
-      "🇻🇳 Việt"
-    ],
-    "thiTruong": "🇻🇳 Việt",
-    "dead": false,
-    "trangThai": "LIVE",
-    "ngay_do": "2026-10-28",
-    "ngayDo": "2026-10-28",
-    "nguon_do": "Đối soát Master Prompt docs/NOI-BO/prompt/suc-khoe-vn.md (2026-10-28)",
-    "ngay_do_check": "Đối soát kho chuẩn 2026-10-28: LIVE",
-    "phanLoaiNguon": "ban-do-120-ngach-2026",
-    "phanLoaiNgay": "2026-10-28",
-    "note": "Kênh chuẩn (Benchmark) trong Master Prompt suc-khoe-vn.md (H04)"
-  },
-  {
     "name": "Psych2Go",
     "tenKenh": "Psych2Go",
     "kenh": "Psych2Go",
@@ -23411,34 +23300,6 @@
     "handle": "@TheSchoolOfLife",
     "count": 1,
     "url": "https://www.youtube.com/@TheSchoolOfLife",
-    "niche": "Đứa trẻ Hàn",
-    "ngach": "Đứa trẻ Hàn",
-    "niches": [
-      "Đứa trẻ Hàn"
-    ],
-    "nicheCode": "H26",
-    "subNicheId": "013",
-    "markets": [
-      "🇰🇷 Hàn"
-    ],
-    "thiTruong": "🇰🇷 Hàn",
-    "dead": false,
-    "trangThai": "LIVE",
-    "ngay_do": "2026-10-28",
-    "ngayDo": "2026-10-28",
-    "nguon_do": "Đối soát Master Prompt docs/NOI-BO/prompt/tam-ly-dua-tre-han-healing-v2.md (2026-10-28)",
-    "ngay_do_check": "Đối soát kho chuẩn 2026-10-28: LIVE",
-    "phanLoaiNguon": "ban-do-120-ngach-2026",
-    "phanLoaiNgay": "2026-10-28",
-    "note": "Kênh chuẩn (Benchmark) trong Master Prompt tam-ly-dua-tre-han-healing-v2.md (H26)"
-  },
-  {
-    "name": "Einzelg",
-    "tenKenh": "Einzelg",
-    "kenh": "Einzelg",
-    "handle": "@Einzelg",
-    "count": 1,
-    "url": "https://www.youtube.com/@Einzelg",
     "niche": "Đứa trẻ Hàn",
     "ngach": "Đứa trẻ Hàn",
     "niches": [
@@ -23859,34 +23720,6 @@
     "phanLoaiNguon": "ban-do-120-ngach-2026",
     "phanLoaiNgay": "2026-10-28",
     "note": "Kênh chuẩn (Benchmark) trong Master Prompt wildlife-documentary-en.md (H29)"
-  },
-  {
-    "name": "handle",
-    "tenKenh": "handle",
-    "kenh": "handle",
-    "handle": "@handle",
-    "count": 1,
-    "url": "https://www.youtube.com/@handle",
-    "niche": "Wildlife documentary / animal behavior / conservation",
-    "ngach": "Wildlife documentary / animal behavior / conservation",
-    "niches": [
-      "Wildlife documentary / animal behavior / conservation"
-    ],
-    "nicheCode": "H29",
-    "subNicheId": "091",
-    "markets": [
-      "🇯🇵 Nhật"
-    ],
-    "thiTruong": "🇯🇵 Nhật",
-    "dead": false,
-    "trangThai": "LIVE",
-    "ngay_do": "2026-10-28",
-    "ngayDo": "2026-10-28",
-    "nguon_do": "Đối soát Master Prompt docs/NOI-BO/prompt/wildlife-multi-biome-kiwi-naturalism-v5.md (2026-10-28)",
-    "ngay_do_check": "Đối soát kho chuẩn 2026-10-28: LIVE",
-    "phanLoaiNguon": "ban-do-120-ngach-2026",
-    "phanLoaiNgay": "2026-10-28",
-    "note": "Kênh chuẩn (Benchmark) trong Master Prompt wildlife-multi-biome-kiwi-naturalism-v5.md (H29)"
   },
   {
     "name": "TheCrusaderReturns",

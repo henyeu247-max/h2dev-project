@@ -42,7 +42,7 @@ Y:\YTB\
     │   └── *.db (h2dev_master · h2dev_knowledge_graph · intelligence) · knowledge_graph.json
     ├── data-tabs\                 # data LIVE của 9 tab (8 data tab + tab Lộ trình/lotrinh) — đúng 9 file JSON
     │   ├── videos.json            # 148 SKU (27 free · 121 pro — gồm 4 Zoom free)
-    │   ├── kenh-mau.json          # 1082 kênh (993 sống · 89 dead ẩn) · ngay_do 1082/1082 (đo thực tế: 993 sống · 75 DIE 404 · 14 rỗng)
+    │   ├── kenh-mau.json          # 1076 kênh (987 sống · 89 dead ẩn) · ngay_do 1076/1076 (đo thực tế: 987 sống · 75 DIE 404 · 14 rỗng)
     │   ├── tai-lieu-full.json     # 580 card (kind: prompt 211 · report 28 · tool 40 · list 22 · other 8 · internal-doc 11 · sop 90 · guide 102 · transcript 57 · sheet 11 · 0 chưa gán)
     │   ├── nguon-reup.json        # 52
     │   ├── ngach-xanh.json        # 40 ngách (xanh:true 16 · CÓ MẪU TĂNG 11 · CHƯA ĐỦ BC 6 · THẬN TRỌNG 5 · CÓ ĐK 2) + 5 meta kho + 5 đỏ + 12 Trụ cột Chính sách YouTube 2026

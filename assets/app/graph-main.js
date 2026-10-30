@@ -484,7 +484,7 @@
   // ============================================================================
   // MODE 2: OBSIDIAN NETWORK GRAPH CANVAS (EGO-CONSTELLATION + GALAXY CLUSTERS)
   // ============================================================================
-  let graphScope = 'ego'; // 'ego' (Mạch Tâm Điểm Rõ Nét) | 'galaxy' (Toàn Cảnh 4.148 Nút)
+  let graphScope = 'ego'; // 'ego' (Mạch Tâm Điểm Rõ Nét) | 'galaxy' (Toàn Cảnh 4.143 Nút)
   let egoPositions = new Map();
   let egoVisibleSet = new Set();
 

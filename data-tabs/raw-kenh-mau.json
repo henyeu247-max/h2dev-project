@@ -306,7 +306,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-001.mp3"
-      }
+      },
+      "nicheCode": "H37"
     },
     {
       "id": "RAW-002",
@@ -621,7 +622,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-002.mp3"
-      }
+      },
+      "nicheCode": "H01"
     },
     {
       "id": "RAW-003",
@@ -909,7 +911,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-003.mp3"
-      }
+      },
+      "nicheCode": "H11"
     },
     {
       "id": "RAW-004",
@@ -1202,7 +1205,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-004.mp3"
-      }
+      },
+      "nicheCode": "H30"
     },
     {
       "id": "RAW-005",
@@ -1488,7 +1492,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-005.mp3"
-      }
+      },
+      "nicheCode": "H11"
     },
     {
       "id": "RAW-006",
@@ -1783,7 +1788,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-006.mp3"
-      }
+      },
+      "nicheCode": "H19"
     },
     {
       "id": "RAW-007",
@@ -2065,7 +2071,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-007.mp3"
-      }
+      },
+      "nicheCode": "H31"
     },
     {
       "id": "RAW-008",
@@ -2330,7 +2337,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-008.mp3"
-      }
+      },
+      "nicheCode": "H30"
     },
     {
       "id": "RAW-009",
@@ -2588,7 +2596,8 @@
         "wpmNote": "chars/min",
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-009.mp3"
-      }
+      },
+      "nicheCode": "H09"
     },
     {
       "id": "RAW-010",
@@ -2841,7 +2850,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-010.mp3"
-      }
+      },
+      "nicheCode": "H37"
     },
     {
       "id": "RAW-011",
@@ -3099,7 +3109,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-011.mp3"
-      }
+      },
+      "nicheCode": "H35"
     },
     {
       "id": "RAW-012",
@@ -3337,7 +3348,8 @@
         "auditedAt": "2026-09-16",
         "evidenceDate": "2026-09-09",
         "schemaVersion": 1
-      }
+      },
+      "nicheCode": "H19"
     },
     {
       "id": "RAW-013",
@@ -3601,7 +3613,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-013.mp3"
-      }
+      },
+      "nicheCode": "H04"
     },
     {
       "id": "RAW-014",
@@ -3858,7 +3871,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-014.mp3"
-      }
+      },
+      "nicheCode": "H11"
     },
     {
       "id": "RAW-015",
@@ -4116,7 +4130,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-015.mp3"
-      }
+      },
+      "nicheCode": "H30"
     },
     {
       "id": "RAW-016",
@@ -4374,7 +4389,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-016.mp3"
-      }
+      },
+      "nicheCode": "H24"
     },
     {
       "id": "RAW-017",
@@ -4639,7 +4655,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-017.mp3"
-      }
+      },
+      "nicheCode": "H30"
     },
     {
       "id": "RAW-018",
@@ -4927,7 +4944,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-018.mp3"
-      }
+      },
+      "nicheCode": "H19"
     },
     {
       "id": "RAW-019",
@@ -5192,7 +5210,8 @@
         "wpmNote": "chars/min",
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-019.mp3"
-      }
+      },
+      "nicheCode": "H29"
     },
     {
       "id": "RAW-020",
@@ -5487,7 +5506,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-020.mp3"
-      }
+      },
+      "nicheCode": "H30"
     },
     {
       "id": "RAW-021",
@@ -5797,7 +5817,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-021.mp3"
-      }
+      },
+      "nicheCode": "H11"
     },
     {
       "id": "RAW-022",
@@ -6085,7 +6106,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-022.mp3"
-      }
+      },
+      "nicheCode": "H19"
     },
     {
       "id": "RAW-023",
@@ -6370,7 +6392,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-023.mp3"
-      }
+      },
+      "nicheCode": "H37"
     },
     {
       "id": "RAW-024",
@@ -6664,7 +6687,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-024.mp3"
-      }
+      },
+      "nicheCode": "H11"
     },
     {
       "id": "RAW-025",
@@ -6952,7 +6976,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-025.mp3"
-      }
+      },
+      "nicheCode": "H37"
     },
     {
       "id": "RAW-028",
@@ -7209,7 +7234,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-028.mp3"
-      }
+      },
+      "nicheCode": "H17"
     },
     {
       "id": "RAW-029",
@@ -7521,7 +7547,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-029.mp3"
-      }
+      },
+      "nicheCode": "H37"
     },
     {
       "id": "RAW-030",
@@ -7779,7 +7806,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-030.mp3"
-      }
+      },
+      "nicheCode": "H04"
     },
     {
       "id": "RAW-031",
@@ -8054,7 +8082,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-031.mp3"
-      }
+      },
+      "nicheCode": "H37"
     },
     {
       "id": "RAW-032",
@@ -8312,7 +8341,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-032.mp3"
-      }
+      },
+      "nicheCode": "H36"
     },
     {
       "id": "RAW-033",
@@ -8557,7 +8587,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-033.mp3"
-      }
+      },
+      "nicheCode": "H36"
     },
     {
       "id": "RAW-034",
@@ -8815,7 +8846,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-034.mp3"
-      }
+      },
+      "nicheCode": "H36"
     },
     {
       "id": "RAW-035",
@@ -9080,7 +9112,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-035.mp3"
-      }
+      },
+      "nicheCode": "H36"
     },
     {
       "id": "RAW-037",
@@ -9338,7 +9371,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-037.mp3"
-      }
+      },
+      "nicheCode": "H36"
     },
     {
       "id": "RAW-038",
@@ -9596,7 +9630,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-038.mp3"
-      }
+      },
+      "nicheCode": "H36"
     },
     {
       "id": "RAW-039",
@@ -9861,7 +9896,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-039.mp3"
-      }
+      },
+      "nicheCode": "H36"
     },
     {
       "id": "RAW-040",
@@ -10128,7 +10164,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-040.mp3"
-      }
+      },
+      "nicheCode": "H36"
     },
     {
       "id": "RAW-042",
@@ -10387,7 +10424,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-042.mp3"
-      }
+      },
+      "nicheCode": "H31"
     },
     {
       "id": "RAW-043",
@@ -10647,7 +10685,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-043.mp3"
-      }
+      },
+      "nicheCode": "H32"
     },
     {
       "id": "RAW-044",
@@ -10905,7 +10944,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-044.mp3"
-      }
+      },
+      "nicheCode": "H32"
     },
     {
       "id": "RAW-045",
@@ -11175,7 +11215,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-045.mp3"
-      }
+      },
+      "nicheCode": "H32"
     },
     {
       "id": "RAW-046",
@@ -11432,7 +11473,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-046.mp3"
-      }
+      },
+      "nicheCode": "H32"
     },
     {
       "id": "RAW-047",
@@ -11690,7 +11732,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-047.mp3"
-      }
+      },
+      "nicheCode": "H32"
     },
     {
       "id": "RAW-048",
@@ -11956,7 +11999,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-048.mp3"
-      }
+      },
+      "nicheCode": "H31"
     },
     {
       "id": "RAW-049",
@@ -12214,7 +12258,8 @@
         "wpmNote": "chars/min",
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-049.mp3"
-      }
+      },
+      "nicheCode": "H11"
     },
     {
       "id": "RAW-050",
@@ -12458,7 +12503,8 @@
         "wpmNote": "chars/min",
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-050.mp3"
-      }
+      },
+      "nicheCode": "H37"
     },
     {
       "id": "RAW-051",
@@ -12746,7 +12792,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-051.mp3"
-      }
+      },
+      "nicheCode": "H17"
     },
     {
       "id": "RAW-052",
@@ -13032,7 +13079,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-052.mp3"
-      }
+      },
+      "nicheCode": "H20"
     },
     {
       "id": "RAW-053",
@@ -13318,7 +13366,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-053.mp3"
-      }
+      },
+      "nicheCode": "H30"
     },
     {
       "id": "RAW-054",
@@ -13612,7 +13661,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-054.mp3"
-      }
+      },
+      "nicheCode": "H11"
     },
     {
       "id": "RAW-055",
@@ -13909,7 +13959,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-055.mp3"
-      }
+      },
+      "nicheCode": "H39"
     },
     {
       "id": "RAW-056",
@@ -14198,7 +14249,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-056.mp3"
-      }
+      },
+      "nicheCode": "H39"
     },
     {
       "id": "RAW-057",
@@ -14495,7 +14547,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-057.mp3"
-      }
+      },
+      "nicheCode": "H39"
     },
     {
       "id": "RAW-058",
@@ -14789,7 +14842,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-058.mp3"
-      }
+      },
+      "nicheCode": "H39"
     },
     {
       "id": "RAW-059",
@@ -15055,7 +15109,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-059.mp3"
-      }
+      },
+      "nicheCode": "H30"
     },
     {
       "id": "RAW-060",
@@ -15322,7 +15377,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-060.mp3"
-      }
+      },
+      "nicheCode": "H11"
     },
     {
       "id": "RAW-062",
@@ -15581,7 +15637,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-062.mp3"
-      }
+      },
+      "nicheCode": "H18"
     },
     {
       "id": "RAW-063",
@@ -15847,7 +15904,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-063.mp3"
-      }
+      },
+      "nicheCode": "H19"
     },
     {
       "id": "RAW-064",
@@ -16111,7 +16169,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-064.mp3"
-      }
+      },
+      "nicheCode": "H04"
     },
     {
       "id": "RAW-065",
@@ -16405,7 +16464,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-065.mp3"
-      }
+      },
+      "nicheCode": "H30"
     },
     {
       "id": "RAW-066",
@@ -16670,7 +16730,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-066.mp3"
-      }
+      },
+      "nicheCode": "H20"
     },
     {
       "id": "RAW-067",
@@ -16933,7 +16994,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-067.mp3"
-      }
+      },
+      "nicheCode": "H11"
     },
     {
       "id": "RAW-068",
@@ -17217,7 +17279,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-068.mp3"
-      }
+      },
+      "nicheCode": "H31"
     },
     {
       "id": "RAW-069",
@@ -17504,7 +17567,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-069.mp3"
-      }
+      },
+      "nicheCode": "H01"
     },
     {
       "id": "RAW-070",
@@ -17762,7 +17826,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-070.mp3"
-      }
+      },
+      "nicheCode": "H19"
     },
     {
       "id": "RAW-075",
@@ -18025,7 +18090,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-075.mp3"
-      }
+      },
+      "nicheCode": "H37"
     },
     {
       "id": "RAW-076",
@@ -18301,7 +18367,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-076.mp3"
-      }
+      },
+      "nicheCode": "H35"
     },
     {
       "id": "RAW-077",
@@ -18588,7 +18655,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-077.mp3"
-      }
+      },
+      "nicheCode": "H11"
     },
     {
       "id": "RAW-078",
@@ -18875,7 +18943,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-078.mp3"
-      }
+      },
+      "nicheCode": "H31"
     },
     {
       "id": "RAW-079",
@@ -19159,7 +19228,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-079.mp3"
-      }
+      },
+      "nicheCode": "H37"
     },
     {
       "id": "RAW-080",
@@ -19451,7 +19521,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-080.mp3"
-      }
+      },
+      "nicheCode": "H20"
     },
     {
       "id": "RAW-081",
@@ -19740,7 +19811,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-081.mp3"
-      }
+      },
+      "nicheCode": "H28"
     },
     {
       "id": "RAW-082",
@@ -20027,7 +20099,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-082.mp3"
-      }
+      },
+      "nicheCode": "H39"
     },
     {
       "id": "RAW-083",
@@ -20314,7 +20387,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-083.mp3"
-      }
+      },
+      "nicheCode": "H31"
     },
     {
       "id": "RAW-084",
@@ -20580,7 +20654,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-084.mp3"
-      }
+      },
+      "nicheCode": "H27"
     },
     {
       "id": "RAW-085",
@@ -20837,7 +20912,8 @@
         "wpmNote": "chars/min",
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-085.mp3"
-      }
+      },
+      "nicheCode": "H36"
     },
     {
       "id": "RAW-086",
@@ -21095,7 +21171,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-086.mp3"
-      }
+      },
+      "nicheCode": "H19"
     },
     {
       "id": "RAW-087",
@@ -21391,7 +21468,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-087.mp3"
-      }
+      },
+      "nicheCode": "H25"
     },
     {
       "id": "RAW-088",
@@ -21675,7 +21753,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-088.mp3"
-      }
+      },
+      "nicheCode": "H23"
     },
     {
       "id": "RAW-089",
@@ -21987,7 +22066,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-089.mp3"
-      }
+      },
+      "nicheCode": "H39"
     },
     {
       "id": "RAW-091",
@@ -22308,7 +22388,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-091.mp3"
-      }
+      },
+      "nicheCode": "H30"
     },
     {
       "id": "RAW-092",
@@ -22595,7 +22676,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-092.mp3"
-      }
+      },
+      "nicheCode": "H17"
     },
     {
       "id": "RAW-095",
@@ -22854,7 +22936,8 @@
         "wpmNote": null,
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-095.mp3"
-      }
+      },
+      "nicheCode": "H39"
     },
     {
       "id": "RAW-096",
@@ -23056,7 +23139,8 @@
           }
         ],
         "scannedAt": "2026-09-30 04:50:51"
-      }
+      },
+      "nicheCode": "H39"
     },
     {
       "id": "RAW-097",
@@ -23319,7 +23403,8 @@
           }
         ],
         "scannedAt": "2026-09-30 04:51:10"
-      }
+      },
+      "nicheCode": "H38"
     },
     {
       "id": "RAW-098",
@@ -23548,7 +23633,8 @@
           }
         ],
         "scannedAt": "2026-09-30 04:51:28"
-      }
+      },
+      "nicheCode": "H09"
     },
     {
       "id": "RAW-099",
@@ -23750,7 +23836,8 @@
           }
         ],
         "scannedAt": "2026-09-30 04:51:39"
-      }
+      },
+      "nicheCode": "H08"
     },
     {
       "id": "RAW-100",
@@ -23952,7 +24039,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:08:58"
-      }
+      },
+      "nicheCode": "H14"
     },
     {
       "id": "RAW-101",
@@ -24153,7 +24241,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:09:07"
-      }
+      },
+      "nicheCode": "H24"
     },
     {
       "id": "RAW-102",
@@ -24379,7 +24468,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:09:33"
-      }
+      },
+      "nicheCode": "H24"
     },
     {
       "id": "RAW-103",
@@ -24590,7 +24680,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:10:02"
-      }
+      },
+      "nicheCode": "H32"
     },
     {
       "id": "RAW-104",
@@ -24802,7 +24893,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:11:20"
-      }
+      },
+      "nicheCode": "H32"
     },
     {
       "id": "RAW-105",
@@ -25023,7 +25115,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:11:55"
-      }
+      },
+      "nicheCode": "H32"
     },
     {
       "id": "RAW-106",
@@ -25244,7 +25337,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:12:22"
-      }
+      },
+      "nicheCode": "H11"
     },
     {
       "id": "RAW-107",
@@ -25465,7 +25559,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:12:51"
-      }
+      },
+      "nicheCode": "H11"
     },
     {
       "id": "RAW-108",
@@ -25668,7 +25763,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:13:15"
-      }
+      },
+      "nicheCode": "H35"
     },
     {
       "id": "RAW-109",
@@ -25889,7 +25985,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:13:38"
-      }
+      },
+      "nicheCode": "H35"
     },
     {
       "id": "RAW-110",
@@ -26099,7 +26196,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:13:43"
-      }
+      },
+      "nicheCode": "H24"
     },
     {
       "id": "RAW-111",
@@ -26309,7 +26407,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:14:10"
-      }
+      },
+      "nicheCode": "H24"
     },
     {
       "id": "RAW-112",
@@ -26491,7 +26590,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:14:23"
-      }
+      },
+      "nicheCode": "H40"
     },
     {
       "id": "RAW-113",
@@ -26673,7 +26773,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:14:40"
-      }
+      },
+      "nicheCode": "H39"
     },
     {
       "id": "RAW-114",
@@ -26855,7 +26956,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:14:58"
-      }
+      },
+      "nicheCode": "H39"
     },
     {
       "id": "RAW-115",
@@ -27047,7 +27149,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:15:46"
-      }
+      },
+      "nicheCode": "H39"
     },
     {
       "id": "RAW-116",
@@ -27257,7 +27360,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:16:21"
-      }
+      },
+      "nicheCode": "H21"
     },
     {
       "id": "RAW-117",
@@ -27511,7 +27615,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:16:48"
-      }
+      },
+      "nicheCode": "H39"
     },
     {
       "id": "RAW-118",
@@ -27722,7 +27827,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:17:10"
-      }
+      },
+      "nicheCode": "H04"
     },
     {
       "id": "RAW-119",
@@ -27968,7 +28074,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:18:52"
-      }
+      },
+      "nicheCode": "H38"
     },
     {
       "id": "RAW-120",
@@ -28205,7 +28312,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:19:23"
-      }
+      },
+      "nicheCode": "H24"
     },
     {
       "id": "RAW-121",
@@ -28367,7 +28475,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:20:03"
-      }
+      },
+      "nicheCode": "H38"
     },
     {
       "id": "RAW-122",
@@ -28577,7 +28686,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:20:29"
-      }
+      },
+      "nicheCode": "H17"
     },
     {
       "id": "RAW-123",
@@ -28823,7 +28933,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:20:52"
-      }
+      },
+      "nicheCode": "H24"
     },
     {
       "id": "RAW-124",
@@ -29042,7 +29153,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:20:59"
-      }
+      },
+      "nicheCode": "H38"
     },
     {
       "id": "RAW-125",
@@ -29279,7 +29391,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:21:10"
-      }
+      },
+      "nicheCode": "H18"
     },
     {
       "id": "RAW-126",
@@ -29489,7 +29602,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:22:15"
-      }
+      },
+      "nicheCode": "H11"
     },
     {
       "id": "RAW-127",
@@ -29732,7 +29846,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:22:48"
-      }
+      },
+      "nicheCode": "H39"
     },
     {
       "id": "RAW-128",
@@ -29969,7 +30084,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:22:58"
-      }
+      },
+      "nicheCode": "H33"
     },
     {
       "id": "RAW-129",
@@ -30233,7 +30349,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:23:25"
-      }
+      },
+      "nicheCode": "H27"
     },
     {
       "id": "RAW-130",
@@ -30469,7 +30586,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:24:39"
-      }
+      },
+      "nicheCode": "H24"
     },
     {
       "id": "RAW-131",
@@ -30696,7 +30814,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:25:23"
-      }
+      },
+      "nicheCode": "H27"
     },
     {
       "id": "RAW-132",
@@ -30906,7 +31025,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:26:04"
-      }
+      },
+      "nicheCode": "H30"
     },
     {
       "id": "RAW-133",
@@ -31143,7 +31263,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:27:05"
-      }
+      },
+      "nicheCode": "H19"
     },
     {
       "id": "RAW-134",
@@ -31407,7 +31528,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:27:44"
-      }
+      },
+      "nicheCode": "H27"
     },
     {
       "id": "RAW-135",
@@ -31644,7 +31766,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:27:51"
-      }
+      },
+      "nicheCode": "H13"
     },
     {
       "id": "RAW-136",
@@ -31881,7 +32004,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:28:14"
-      }
+      },
+      "nicheCode": "H07"
     },
     {
       "id": "RAW-137",
@@ -32071,7 +32195,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:41:50"
-      }
+      },
+      "nicheCode": "H25"
     },
     {
       "id": "RAW-138",
@@ -32351,7 +32476,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:42:01"
-      }
+      },
+      "nicheCode": "H27"
     },
     {
       "id": "RAW-139",
@@ -32541,7 +32667,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:31:10"
-      }
+      },
+      "nicheCode": "H27"
     },
     {
       "id": "RAW-140",
@@ -32758,7 +32885,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:42:07"
-      }
+      },
+      "nicheCode": "H27"
     },
     {
       "id": "RAW-141",
@@ -32984,7 +33112,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:42:28"
-      }
+      },
+      "nicheCode": "H27"
     },
     {
       "id": "RAW-142",
@@ -33201,7 +33330,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:42:33"
-      }
+      },
+      "nicheCode": "H38"
     },
     {
       "id": "RAW-143",
@@ -33382,7 +33512,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:34:43"
-      }
+      },
+      "nicheCode": "H04"
     },
     {
       "id": "RAW-144",
@@ -33563,7 +33694,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:42:38"
-      }
+      },
+      "nicheCode": "H04"
     },
     {
       "id": "RAW-145",
@@ -33725,7 +33857,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:36:00"
-      }
+      },
+      "nicheCode": "H04"
     },
     {
       "id": "RAW-146",
@@ -33888,7 +34021,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:42:50"
-      }
+      },
+      "nicheCode": "H04"
     },
     {
       "id": "RAW-147",
@@ -34051,7 +34185,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:37:38"
-      }
+      },
+      "nicheCode": "H04"
     },
     {
       "id": "RAW-148",
@@ -34186,7 +34321,8 @@
         "monetized": "unknown",
         "videoRows": [],
         "scannedAt": "2026-09-30 05:42:53"
-      }
+      },
+      "nicheCode": "H05"
     },
     {
       "id": "RAW-149",
@@ -34367,7 +34503,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:38:42"
-      }
+      },
+      "nicheCode": "H05"
     },
     {
       "id": "RAW-150",
@@ -34530,7 +34667,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:39:04"
-      }
+      },
+      "nicheCode": "H05"
     },
     {
       "id": "RAW-151",
@@ -34662,7 +34800,8 @@
         "monetized": "unknown",
         "videoRows": [],
         "scannedAt": "2026-09-30 05:39:21"
-      }
+      },
+      "nicheCode": "H11"
     },
     {
       "id": "RAW-152",
@@ -34797,7 +34936,8 @@
         "monetized": "unknown",
         "videoRows": [],
         "scannedAt": "2026-09-30 05:43:00"
-      }
+      },
+      "nicheCode": "H03"
     },
     {
       "id": "RAW-153",
@@ -34943,7 +35083,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:43:11"
-      }
+      },
+      "nicheCode": "H03"
     },
     {
       "id": "RAW-154",
@@ -35125,7 +35266,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:43:16"
-      }
+      },
+      "nicheCode": "H03"
     },
     {
       "id": "RAW-155",
@@ -35307,7 +35449,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:43:21"
-      }
+      },
+      "nicheCode": "H04"
     },
     {
       "id": "RAW-156",
@@ -35489,7 +35632,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:43:29"
-      }
+      },
+      "nicheCode": "H09"
     },
     {
       "id": "RAW-157",
@@ -35671,7 +35815,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:43:34"
-      }
+      },
+      "nicheCode": "H09"
     },
     {
       "id": "RAW-158",
@@ -35835,7 +35980,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:43:43"
-      }
+      },
+      "nicheCode": "H14"
     },
     {
       "id": "RAW-159",
@@ -35999,7 +36145,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:43:47"
-      }
+      },
+      "nicheCode": "H16"
     },
     {
       "id": "RAW-160",
@@ -36134,7 +36281,8 @@
         "monetized": "unknown",
         "videoRows": [],
         "scannedAt": "2026-09-30 05:43:50"
-      }
+      },
+      "nicheCode": "H23"
     },
     {
       "id": "RAW-161",
@@ -36315,7 +36463,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:44:01"
-      }
+      },
+      "nicheCode": "H23"
     },
     {
       "id": "RAW-162",
@@ -36450,7 +36599,8 @@
         "monetized": "unknown",
         "videoRows": [],
         "scannedAt": "2026-09-30 05:44:06"
-      }
+      },
+      "nicheCode": "H23"
     },
     {
       "id": "RAW-163",
@@ -36613,7 +36763,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:44:12"
-      }
+      },
+      "nicheCode": "H23"
     },
     {
       "id": "RAW-164",
@@ -36776,7 +36927,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:44:24"
-      }
+      },
+      "nicheCode": "H23"
     },
     {
       "id": "RAW-165",
@@ -36911,7 +37063,8 @@
         "monetized": "unknown",
         "videoRows": [],
         "scannedAt": "2026-09-30 05:44:29"
-      }
+      },
+      "nicheCode": "H23"
     },
     {
       "id": "RAW-166",
@@ -37119,7 +37272,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:44:47"
-      }
+      },
+      "nicheCode": "H38"
     },
     {
       "id": "RAW-167",
@@ -37336,7 +37490,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:44:53"
-      }
+      },
+      "nicheCode": "H38"
     },
     {
       "id": "RAW-168",
@@ -37553,7 +37708,8 @@
           }
         ],
         "scannedAt": "2026-09-30 05:45:01"
-      }
+      },
+      "nicheCode": "H21"
     }
   ],
   "summary": {

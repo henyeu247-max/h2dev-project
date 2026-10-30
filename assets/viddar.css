@@ -2010,8 +2010,8 @@ button.niche-row:focus-visible,
 @media (max-width: 640px) {
   #video-filter-selects { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 8px !important; }
   #video-filter-selects > select#fniche { grid-column: 1 / -1; }
-  #video-filter-watch { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 6px !important; width: 100%; }
-  #video-filter-watch .filter-btn { min-height: 44px; padding: 8px 6px !important; line-height: 1.2; justify-content: center; text-align: center; white-space: normal !important; }
+  #video-filter-watch { display: grid !important; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.3fr) minmax(0, 0.95fr) !important; align-items: stretch !important; gap: 6px !important; width: 100%; }
+  #video-filter-watch .filter-btn { min-height: 44px; height: 100% !important; display: inline-flex; align-items: center; padding: 8px 4px !important; line-height: 1.2 !important; justify-content: center !important; text-align: center !important; white-space: normal !important; box-sizing: border-box; }
   #video-chip-cloud { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 8px !important; }
   #video-chip-cloud > .filter-btn:last-child:nth-child(odd) { grid-column: 1 / -1; }
   #video-chip-cloud .filter-btn { min-height: 40px; justify-content: center; text-align: center; white-space: normal !important; }
@@ -2026,8 +2026,18 @@ button.niche-row:focus-visible,
 /* UI-standard A-1 (2026-10-09): nut chu nho (text-xs) co vung cham toi thieu 24px, giu nguyen bo cuc chip; nut .btn-press trong the video giu min-height 38px. */
 #content button.text-xs:where(:not(.btn-press):not(.btn-primary):not(.filter-btn)) { min-height: 24px; display: inline-flex; align-items: center; }
 #content .tq-head button.btn-primary { min-height: 44px; padding: 10px 14px; }
-#content #fq { min-height: 36px; }
+#content #fq,
+#content #freset,
+#video-filter-selects select { min-height: 44px; box-sizing: border-box; }
 #content .card .btn-press { min-height: 38px; }
+#content .card .video-card-actions > .btn-press { min-height: 44px !important; box-sizing: border-box; }
+#content .card .video-card-actions > a[aria-label="Trang gốc"] { min-width: 44px !important; width: 44px !important; }
+@media (min-width: 640px) {
+  #content .video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
+@media (min-width: 1280px) {
+  #content .video-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+}
 #btn-clear-video-q { position: absolute; }
 #btn-clear-video-q::after { content: ""; position: absolute; top: 50%; left: 50%; width: 44px; height: 44px; transform: translate(-50%, -50%); }
 .js-v-sug-jump { min-height: 24px; display: inline-flex; align-items: center; }
@@ -2040,7 +2050,8 @@ button.niche-row:focus-visible,
 .btn-doc-link { min-height: 24px; }
 
 /* UI-standard T-8 (2026-10-09): chu nut trang thai xem khong de mot tu le o dong cuoi. */
-#video-filter-watch .filter-btn { text-wrap: balance; }
+#video-filter-watch { align-items: stretch; }
+#video-filter-watch .filter-btn { min-height: 44px; height: 100% !important; display: inline-flex; align-items: center; justify-content: center !important; text-align: center !important; box-sizing: border-box; text-wrap: balance; }
 
 /* UI-fix 2026-10-09 (M1): chip le cuoi hang chiem ca hang (G-3). Loai tru hai khoi loc video (giu layout rieng).
    D-06: hang co nhan di kem (vd "Tinh trang song:", toi 4 chip) tu 641px chia deu chieu rong chip (G-2). Cum nhieu chip (vd Kenh mau 34 chip) giu auto: chia deu o day lam chip co 30px (da do bang anh). */
@@ -2064,8 +2075,27 @@ button.niche-row:focus-visible,
 /* UI-fix 2026-10-09 (G-3): thanh topbar co dung 6 nut tren dien thoai (vd /chienluoc) giu MOT hang (dai subnav cao 48px, tu cuon ngang); truoc day 6 nut tren luoi 5 cot thanh 2 hang cao 92px, tran khoi dai 48px nen hang dau bi tieu de che va nut thu 6 nam ngoai tieu de. */
 @media (max-width: 640px) {
   .quick-access--topbar .quick-access__list:has(> .quick-access__button:nth-child(6):last-child) { grid-template-columns: repeat(6, minmax(76px, 1fr)); }
+  #video-transcript-modal { padding: 8px !important; }
+  #video-transcript-modal .video-sub-modal-box { max-height: 95vh !important; border-radius: 12px !important; }
+  #video-transcript-modal .video-sub-header { padding: 8px 10px !important; gap: 6px !important; }
+  #video-transcript-modal .video-sub-meta { gap: 4px 6px !important; margin-top: 2px !important; }
+  #video-transcript-modal .video-sub-actions { width: 100%; display: grid !important; grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); gap: 6px !important; }
+  #video-transcript-modal .video-sub-toolbar { padding: 6px 10px !important; gap: 6px !important; }
+  #video-transcript-modal #sub-tabs-container { width: 100%; display: grid !important; grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); gap: 6px !important; }
+  #video-transcript-modal .video-sub-toolbar > div:last-child { width: 100%; }
+  #video-transcript-modal #btn-copy-sub-active { width: 100%; }
+  #video-transcript-modal #sub-content-body { padding: 10px !important; }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  #video-filter-selects { flex: 1 1 100% !important; display: grid !important; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr) !important; gap: 8px !important; width: 100%; }
+  #video-filter-selects > select#fniche { max-width: none !important; width: 100%; }
+  #video-filter-selects > select { width: 100%; min-width: 0; }
+  #video-filter-watch { width: 100%; display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; align-items: stretch !important; gap: 8px !important; }
+  #video-filter-watch .filter-btn { min-height: 44px; height: 100% !important; line-height: 1.2 !important; justify-content: center !important; text-align: center !important; }
+  #video-chip-cloud > .filter-btn { flex: 1 1 118px; }
 }
 .bottom-2\.5 { bottom: 0.625rem; }
 .max-w-full { max-width: 100%; }
 .pointer-events-none { pointer-events: none; }
 .text-ellipsis { text-overflow: ellipsis; }
+

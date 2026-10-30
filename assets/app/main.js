@@ -97,7 +97,7 @@
      * (tabMarkup / more-menu) khong phai biet gi ve he icon. */
     TABS.forEach(t => { t.icon = ico(t.icon, 16); });
 
-    const APP_BUILD_VER = '20261030-uifix96';
+    const APP_BUILD_VER = '20261030-uifix97';
     // G-std: fallback chain like FckSignups useTools (primary -> no-ver -> fail soft)
     const _loadErrors = [];
     function noteLoadError(path, msg) {
@@ -312,7 +312,10 @@
       try {
         const u = new URL(location.href);
         const onVideo = state.tab === 'video';
-        if (onVideo && (state.videoTrack === 'dgmd' || state.videoTrack === 'huan' || state.videoTrack === 'all')) u.searchParams.set('track', state.videoTrack); else if (state.tab !== 'lotrinh') u.searchParams.delete('track');
+        u.searchParams.delete('vbranch');
+        u.searchParams.delete('vmod');
+        const hasActiveVideoFilter = Boolean(state.q || state.nicheFilter || state.skuFilter || state.marketFilter);
+        if (onVideo && (state.videoTrack === 'dgmd' || state.videoTrack === 'huan' || state.videoTrack === 'all' || (state.videoTrack === 'h2dev' && hasActiveVideoFilter))) u.searchParams.set('track', state.videoTrack); else if (state.tab !== 'lotrinh') u.searchParams.delete('track');
         if (onVideo && state.q) u.searchParams.set('vq', state.q); else u.searchParams.delete('vq');
         if (onVideo && state.nicheFilter) u.searchParams.set('niche', state.nicheFilter); else if (state.tab !== 'ngachxanh') u.searchParams.delete('niche');
         if (onVideo && state.skuFilter) u.searchParams.set('skus', state.skuFilter); else u.searchParams.delete('skus');
@@ -356,14 +359,15 @@
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
     }
-    /* UI-fix 2026-10-09: muc "Chinh sach YouTube" tren /tatca - cham de mo/thu gon. Chi hien goi y khi chu bi cat (scrollHeight > clientHeight). */
+    /* UI-fix 2026-10-09: muc "Chinh sach YouTube" tren /tatca - cham de mo/thu gon. Chi hien goi y khi chu bi cat (scrollHeight > clientHeight) hoac co .policy-links. */
     function measurePolicyClamp() {
       document.querySelectorAll('#content .policy-toggle').forEach(btn => {
         const more = btn.querySelector('.policy-more');
         if (!more) return;
         if (btn.classList.contains('is-open')) { more.hidden = false; return; }
         const txt = btn.querySelector('.policy-text');
-        more.hidden = !(txt && txt.scrollHeight > txt.clientHeight + 1);
+        const hasLinks = Boolean(btn.parentElement && btn.parentElement.querySelector('.policy-links'));
+        more.hidden = !hasLinks && !(txt && txt.scrollHeight > txt.clientHeight + 1);
       });
     }
     function bindPolicyToggles() {
@@ -392,7 +396,8 @@
     function applyTabParams(url) {
       const t = state.tab;
       /* --- Video --- */
-      if (t === 'video' && (state.videoTrack === 'dgmd' || state.videoTrack === 'huan' || state.videoTrack === 'all')) url.searchParams.set('track', state.videoTrack);
+      const hasActiveVideoFilter = Boolean(state.q || state.nicheFilter || state.skuFilter || state.marketFilter);
+      if (t === 'video' && (state.videoTrack === 'dgmd' || state.videoTrack === 'huan' || state.videoTrack === 'all' || (state.videoTrack === 'h2dev' && hasActiveVideoFilter))) url.searchParams.set('track', state.videoTrack);
       if (t === 'video' && state.q) url.searchParams.set('vq', state.q);
       if (t === 'video' && state.skuFilter) url.searchParams.set('skus', state.skuFilter);
       if (t === 'video' && state.sortBy && state.sortBy !== 'newest') url.searchParams.set('sort', state.sortBy);
@@ -983,6 +988,17 @@
             vSugBox.classList.add('hidden');
             state.q = term || sku;
             state.skuFilter = '';
+            state.nicheFilter = '';
+            if (sku && state.videoTrack !== 'all') {
+              const skuUp = sku.toUpperCase();
+              const matchedVid = (window._allVideos || []).find(x => x && String(x.sku || '').toUpperCase() === skuUp)
+                || (Array.isArray(CAT['data/videos_huan.json']) && CAT['data/videos_huan.json'].find(x => x && String(x.sku || '').toUpperCase() === skuUp))
+                || (Array.isArray(CAT['data/videos_dgmd.json']) && CAT['data/videos_dgmd.json'].find(x => x && String(x.sku || '').toUpperCase() === skuUp));
+              const isHuanSku = Boolean((matchedVid && (matchedVid.isHuan || matchedVid.platform === 'huan.academy' || matchedVid.track === 'huan' || /^HUAN-/i.test(matchedVid.module_id || ''))) || /^HUAN-/i.test(sku));
+              const isDgmdSku = Boolean((matchedVid && (matchedVid.isDgmd || matchedVid.platform === 'daigiamangdep.com' || matchedVid.track === 'dgmd' || /^DGMD-/i.test(matchedVid.module_id || ''))) || /^DGMD-/i.test(sku));
+              const skuTrack = isHuanSku ? 'huan' : (isDgmdSku ? 'dgmd' : 'h2dev');
+              if (state.videoTrack !== skuTrack) state.videoTrack = 'all';
+            }
             state.videoPage = 1;
             syncVideoUrl();
             render();
@@ -1120,7 +1136,21 @@
         };
       });
       const fn = document.getElementById('fniche');
-      if (fn) { fn.onchange = () => { state.nicheFilter = fn.value; state.skuFilter = ''; state.videoPage = 1; syncVideoUrl(); render(); }; }
+      if (fn) {
+        fn.onchange = () => {
+          state.nicheFilter = fn.value;
+          state.skuFilter = '';
+          const optGrp = fn.selectedOptions && fn.selectedOptions[0] && fn.selectedOptions[0].parentElement
+            ? (fn.selectedOptions[0].parentElement.label || '')
+            : '';
+          if (fn.value && (/^H\d{2}\b/i.test(fn.value) || optGrp.includes('40 Ngách chuẩn') || optGrp.includes('Nhóm ngách lớn'))) {
+            state.videoTrack = 'all';
+          }
+          state.videoPage = 1;
+          syncVideoUrl();
+          render();
+        };
+      }
       const fm = document.getElementById('fmarket');
       if (fm) { fm.onchange = () => { state.marketFilter = fm.value; state.videoPage = 1; syncVideoUrl(); render(); }; }
       const fs = document.getElementById('fsort');
@@ -1161,8 +1191,9 @@
     }
 
     function normalizeFilterChipA11y() {
-      document.querySelectorAll('#content button.filter-btn').forEach(btn => {
-        if (btn.hasAttribute('data-open-tab') || btn.hasAttribute('data-sodo-jump') || btn.getAttribute('data-quick-action') === 'cross-tab') {
+      document.querySelectorAll('#content button.filter-btn[data-page]').forEach(btn => btn.removeAttribute('aria-pressed'));
+      document.querySelectorAll('#content button.filter-btn:not([data-page])').forEach(btn => {
+        if (btn.hasAttribute('data-open-tab') || btn.hasAttribute('data-sodo-jump') || btn.hasAttribute('data-page') || btn.getAttribute('data-quick-action') === 'cross-tab') {
           btn.removeAttribute('aria-pressed');
           return;
         }
@@ -1359,12 +1390,18 @@
          loc sai. Nay moi nhom tham so chi duoc nap khi tab tuong ung; URL duoc don (xem
          scrubForeignParams) nen F5 khong loc lai theo tham so cua tab khac. */
       const t = state.tab;
-      state.videoTrack = (t === 'video') ? (qp.get('track') || sessionStorage.getItem('h2dev-video-track') || 'h2dev') : 'h2dev';
+      const rawVmod = (qp.get('vmod') || qp.get('niche') || '').trim();
+      const inferredVmodTrack = /^huan-m/i.test(rawVmod) ? 'huan' : (/^dgmd-m/i.test(rawVmod) ? 'dgmd' : (/^(?:h2dev-)?m\d+/i.test(rawVmod) ? 'h2dev' : ''));
+      const explicitVideoTrack = qp.get('track') || qp.get('vbranch') || inferredVmodTrack || '';
+      const hasCrossTrackVideoFilter = Boolean(qp.get('vq') || qp.get('niche') || qp.get('vmod') || qp.get('skus') || qp.get('market'));
+      state.videoTrack = (t === 'video')
+        ? (explicitVideoTrack || (hasCrossTrackVideoFilter ? 'all' : (sessionStorage.getItem('h2dev-video-track') || 'h2dev')))
+        : 'h2dev';
       if (state.videoTrack !== 'dgmd' && state.videoTrack !== 'huan' && state.videoTrack !== 'h2dev' && state.videoTrack !== 'all') state.videoTrack = 'h2dev';
       state.q = (t === 'video') ? (qp.get('vq') || '') : '';
       state.sortBy = (t === 'video') ? (qp.get('sort') || '') : '';
       state.marketFilter = (t === 'video') ? (qp.get('market') || '') : '';
-      state.nicheFilter = (t === 'video') ? (qp.get('niche') || '') : '';
+      state.nicheFilter = (t === 'video') ? (qp.get('niche') || qp.get('vmod') || '') : '';
       /* UI-fix 2026-10-09: danh sach SKU cua bo loc ngach phai nam tren URL de tai lai / Back / Forward van dung ket qua. */
       state.skuFilter = (t === 'video') ? (qp.get('skus') || '') : '';
       state.watchFilter = (t === 'video') ? (qp.get('watch') || '') : '';
@@ -1415,7 +1452,7 @@
     /* FIX (uifix88) F2 — don URL: bo moi tham so KHONG thuoc tab dang mo (giu tab + tham so mine).
        Goi 1 lan sau init va moi lan popstate de link cu / link FTS dinh tham so khong lam ban URL. */
     const PARAM_OWNER = {
-      track: ['video', 'lotrinh'], vq: ['video'], sort: ['video'],
+      track: ['video', 'lotrinh'], vbranch: ['video'], vmod: ['video'], vq: ['video'], sort: ['video'],
       market: ['video', 'ngachxanh'], niche: ['video', 'ngachxanh'],
       skus: ['video'], vp: ['video'], watch: ['video'], free: ['video'],
       q: ['ngachxanh', 'lotrinh'], nt: ['ngachxanh'], nxm: ['ngachxanh'], nxl: ['ngachxanh'], np: ['ngachxanh'],
@@ -2748,11 +2785,11 @@
         const btn = e.target.closest('.btn-open-video-sub');
         if (btn) {
           e.stopPropagation();
-          const dossier = btn.getAttribute('data-dossier');
-          const vid = btn.getAttribute('data-vid');
-          const title = btn.getAttribute('data-title');
-          const channel = btn.getAttribute('data-channel');
-          const views = btn.getAttribute('data-views');
+          const dossier = btn.getAttribute('data-dossier') || '';
+          const vid = btn.getAttribute('data-sku') || btn.getAttribute('data-vid') || '';
+          const title = btn.getAttribute('data-title') || '';
+          const channel = btn.getAttribute('data-channel') || '';
+          const views = btn.getAttribute('data-views') || '';
           if (window.openVideoTranscriptModal) {
             window.openVideoTranscriptModal(dossier, vid, title, channel, views);
           }
@@ -2761,19 +2798,158 @@
 
       function inlineMdFull(md) {
         if (!md) return '';
-        return md
-          .replace(/^### (.*$)/gim, '<h3 style="color:#fcd34d; font-size: 16px; font-weight:700; margin:1rem 0 0.5rem 0;">$1</h3>')
-          .replace(/^## (.*$)/gim, '<h2 style="color:#38bdf8; font-size: 18px; font-weight: 700; border-bottom:1px solid var(--border-strong); padding-bottom:0.35rem; margin:1.25rem 0 0.65rem 0;">$1</h2>')
-          .replace(/^# (.*$)/gim, '<h1 style="color:#fff; font-size: 20px; font-weight: 700; margin:0 0 1rem 0;">$1</h1>')
-          .replace(/\*\*(.*?)\*\*/g, '<strong style="color:#fff; font-weight:700;">$1</strong>')
-          .replace(/\*(.*?)\*/g, '<em class="c-slate-300">$1</em>')
-          .replace(/`([^`]+)`/g, '<code style="background:var(--surface-2); color:#f59e0b; padding:0.15rem 0.35rem; border-radius:0.25rem; font-family:monospace; font-size: 13px;">$1</code>')
-          .replace(/\n\n/g, '<br><br>')
-          .replace(/^- (.*$)/gim, '<li style="margin-left:1.25rem; color:var(--fg-2);">$1</li>');
+        const codeBlocks = [];
+        const inlineCodes = [];
+        let src = String(md).replace(/\r\n/g, '\n');
+
+        src = src.replace(/```([a-zA-Z0-9_-]*)\n([\s\S]*?)```/g, (_, lang, code) => {
+          const idx = codeBlocks.length;
+          codeBlocks.push(`<pre style="background:var(--surface-2); border:1px solid var(--border-strong); border-radius:0.5rem; padding:0.85rem 1rem; overflow-x:auto; margin:0.75rem 0; font-family:monospace; font-size: 13px; line-height:1.5; color:#fcd34d;"><code>${esc(code.replace(/\n$/, ''))}</code></pre>`);
+          return `\n@@CODEBLOCK_${idx}@@\n`;
+        });
+
+        function formatInline(str) {
+          let s = String(str || '').replace(/`([^`\n]+)`/g, (_, c) => {
+            const idx = inlineCodes.length;
+            inlineCodes.push(`<code style="background:var(--surface-2); color:#f59e0b; padding:0.15rem 0.35rem; border-radius:0.25rem; font-family:monospace; font-size: 13px;">${esc(c)}</code>`);
+            return `@@INLINECODE_${idx}@@`;
+          });
+          s = s.replace(/<br\s*\/?>/gi, '@@BR@@');
+          s = esc(s);
+          s = s
+            .replace(/\*\*(.+?)\*\*/g, '<strong style="color:#fff; font-weight:700;">$1</strong>')
+            .replace(/\*(.+?)\*/g, '<em class="c-slate-300">$1</em>')
+            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, rawUrl) => {
+              const u = String(rawUrl || '').trim();
+              if (/^(https?:\/\/|\/|#)/i.test(u)) {
+                const ext = /^https?:\/\//i.test(u) ? ' target="_blank" rel="noopener noreferrer"' : '';
+                return `<a href="${u}"${ext} style="color:#38bdf8; text-decoration:underline; font-weight:600;">${label}</a>`;
+              }
+              return `${label} (${u})`;
+            })
+            .replace(/@@BR@@/g, '<br>')
+            .replace(/@@INLINECODE_(\d+)@@/g, (_, i) => inlineCodes[Number(i)] || '');
+          return s;
+        }
+
+        const lines = src.split('\n');
+        const out = [];
+        let i = 0;
+        while (i < lines.length) {
+          const line = lines[i];
+          const trimmed = line.trim();
+          if (!trimmed) { i++; continue; }
+
+          const cbMatch = trimmed.match(/^@@CODEBLOCK_(\d+)@@$/);
+          if (cbMatch) {
+            out.push(codeBlocks[Number(cbMatch[1])] || '');
+            i++;
+            continue;
+          }
+
+          if (trimmed.startsWith('|') && i + 1 < lines.length && /^\s*\|[\s:|-]+\|\s*$/.test(lines[i + 1])) {
+            const parseCells = (rowStr) => rowStr.trim().replace(/^\||\|$/g, '').split('|').map(c => formatInline(c.trim()));
+            const headers = parseCells(trimmed);
+            i += 2;
+            const rows = [];
+            while (i < lines.length && lines[i].trim().startsWith('|')) {
+              rows.push(parseCells(lines[i]));
+              i++;
+            }
+            out.push(`<div style="overflow-x:auto; margin:0.85rem 0; border:1px solid var(--border-strong); border-radius:0.625rem;"><table style="width:100%; border-collapse:collapse; font-size: 13px; line-height:1.5;"><thead><tr style="background:var(--surface-2); border-bottom:1px solid var(--border-strong);">${headers.map(h => `<th style="padding:0.55rem 0.75rem; text-align:left; font-weight:700; color:#38bdf8;">${h}</th>`).join('')}</tr></thead><tbody>${rows.map((r, rIdx) => `<tr style="border-bottom:1px solid var(--border-strong); background:${rIdx % 2 === 1 ? 'var(--surface-2)' : 'var(--surface)'};">${headers.map((_, cIdx) => `<td style="padding:0.5rem 0.75rem; vertical-align:top; color:var(--fg);">${r[cIdx] != null ? r[cIdx] : ''}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`);
+            continue;
+          }
+
+          if (/^---+$/.test(trimmed)) {
+            out.push('<hr style="border:0; border-top:1px solid var(--border-strong); margin:1rem 0;">');
+            i++;
+            continue;
+          }
+
+          const hMatch = trimmed.match(/^(#{1,4})\s+(.*)$/);
+          if (hMatch) {
+            const lvl = hMatch[1].length;
+            const content = formatInline(hMatch[2]);
+            if (lvl === 1) out.push(`<h1 style="color:#fff; font-size: 20px; font-weight: 700; margin:0 0 0.85rem 0; line-height:1.2;">${content}</h1>`);
+            else if (lvl === 2) out.push(`<h2 style="color:#38bdf8; font-size: 18px; font-weight: 700; border-bottom:1px solid var(--border-strong); padding-bottom:0.35rem; margin:1.15rem 0 0.6rem 0; line-height:1.35;">${content}</h2>`);
+            else if (lvl === 3) out.push(`<h3 style="color:#fcd34d; font-size: 16px; font-weight:700; margin:0.95rem 0 0.45rem 0; line-height:1.35;">${content}</h3>`);
+            else out.push(`<h4 style="color:#a7f3d0; font-size: 14px; font-weight:700; margin:0.8rem 0 0.35rem 0; line-height:1.35;">${content}</h4>`);
+            i++;
+            continue;
+          }
+
+          if (trimmed.startsWith('>')) {
+            const qLines = [];
+            while (i < lines.length && lines[i].trim().startsWith('>')) {
+              qLines.push(formatInline(lines[i].trim().replace(/^>\s?/, '')));
+              i++;
+            }
+            out.push(`<blockquote style="border-left:3px solid #38bdf8; background:var(--surface-2); padding:0.65rem 0.9rem; margin:0.65rem 0; border-radius:0 0.5rem 0.5rem 0; color:var(--fg-2); font-size: 13px; line-height:1.5;">${qLines.join('<br>')}</blockquote>`);
+            continue;
+          }
+
+          if (/^[-*]\s+/.test(trimmed)) {
+            const items = [];
+            while (i < lines.length && /^[-*]\s+/.test(lines[i].trim())) {
+              items.push(`<li style="color:var(--fg-2); line-height:1.5;">${formatInline(lines[i].trim().replace(/^[-*]\s+/, ''))}</li>`);
+              i++;
+            }
+            out.push(`<ul style="margin:0.5rem 0 0.75rem 1.25rem; padding:0; list-style:disc; display:flex; flex-direction:column; gap:0.3rem;">${items.join('')}</ul>`);
+            continue;
+          }
+
+          if (/^\d+\.\s+/.test(trimmed)) {
+            const items = [];
+            while (i < lines.length && /^\d+\.\s+/.test(lines[i].trim())) {
+              items.push(`<li style="color:var(--fg-2); line-height:1.5;">${formatInline(lines[i].trim().replace(/^\d+\.\s+/, ''))}</li>`);
+              i++;
+            }
+            out.push(`<ol style="margin:0.5rem 0 0.75rem 1.25rem; padding:0; list-style:decimal; display:flex; flex-direction:column; gap:0.3rem;">${items.join('')}</ol>`);
+            continue;
+          }
+
+          out.push(`<p style="margin:0.5rem 0; color:var(--fg); line-height:1.6;">${formatInline(trimmed)}</p>`);
+          i++;
+        }
+        return out.join('');
       }
 
       window.openVideoTranscriptModal = async function(dossierPath, videoId, videoTitle, channelName, views) {
+        const isLessonSku = !dossierPath && /^(?:VIDEO|ZOOM|HUAN|DGMD)-[A-Za-z0-9-]+$/i.test(String(videoId || '').trim());
+        const skuNorm = isLessonSku ? String(videoId || '').trim() : '';
+        const findLessonInPool = () => {
+          if (!isLessonSku) return null;
+          const targetSku = skuNorm.toUpperCase();
+          const h2Cat = CAT['data-tabs/videos.json'];
+          const pools = [
+            window._allVideos,
+            CAT['data/videos_huan.json'],
+            CAT['data/videos_dgmd.json'],
+            Array.isArray(h2Cat) ? h2Cat : (h2Cat && h2Cat.videos)
+          ];
+          for (const p of pools) {
+            if (Array.isArray(p)) {
+              const found = p.find(x => x && String(x.sku || '').toUpperCase() === targetSku);
+              if (found) return found;
+            }
+          }
+          return null;
+        };
+        let lessonObj = findLessonInPool();
+        if (isLessonSku && lessonObj) {
+          if (!videoTitle) videoTitle = lessonObj.title || '';
+          if (!views) views = lessonObj.duration || '';
+        }
+
         let modal = document.getElementById('video-transcript-modal');
+        const closeSubModal = () => {
+          if (!modal) return;
+          modal.style.display = 'none';
+          document.body.style.overflow = '';
+          if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
+            try { modal._prevActiveElement.focus(); } catch (err) {}
+          }
+        };
         if (!modal) {
           modal = document.createElement('div');
           modal.id = 'video-transcript-modal';
@@ -2784,11 +2960,7 @@
           modal.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:var(--h2-z-modal-top); background:var(--h2-overlay-bg); backdrop-filter:blur(var(--h2-backdrop-blur)); -webkit-backdrop-filter:blur(var(--h2-backdrop-blur)); align-items:center; justify-content:center; padding:16px; box-sizing:border-box;';
           modal.onclick = (e) => {
             if (e.target === modal || e.target.id === 'close-video-sub' || (e.target.closest && e.target.closest('#close-video-sub'))) {
-              modal.style.display = 'none';
-              document.body.style.overflow = '';
-              if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
-                try { modal._prevActiveElement.focus(); } catch (err) {}
-              }
+              closeSubModal();
             }
           };
           document.body.appendChild(modal);
@@ -2796,17 +2968,17 @@
 
         // Loading state
         modal.innerHTML = `
-          <div style="position:relative; width:100%; max-width:980px; max-height:92vh; background:var(--surface); border:1px solid var(--border-strong); border-radius:1.25rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
-            <div style="display:flex; align-items:center; justify-content:space-between; padding:1rem 1.25rem; background:var(--surface-2); border-bottom:1px solid var(--border-strong); flex-shrink:0;">
+          <div class="video-sub-modal-box" style="position:relative; width:100%; max-width:980px; max-height:92vh; background:var(--surface); border:1px solid var(--border-strong); border-radius:1.25rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
+            <div class="video-sub-header" style="display:flex; align-items:center; justify-content:space-between; padding:1rem 1.25rem; background:var(--surface-2); border-bottom:1px solid var(--border-strong); flex-shrink:0;">
               <div style="display:flex; align-items:center; gap:0.75rem; min-width:0;">
                 <span style="font-size: 18px; display:inline-flex;">${ico('scroll-text', 20)}</span>
-                <h3 style="font-size: 14px; font-weight:700; color:#fff;" class="truncate">Đang nạp Sub & Kịch bản: ${esc(videoTitle)}</h3>
+                <h3 style="font-size: 14px; font-weight:700; color:#fff;" class="truncate">Đang nạp Sub & Kịch bản: ${esc(videoTitle || skuNorm || videoId)}</h3>
               </div>
-              <button type="button" id="close-video-sub" style="padding:0.4rem 0.85rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 13px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
+              <button type="button" id="close-video-sub" style="min-height:44px; box-sizing:border-box; padding:0.4rem 0.85rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 13px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
             </div>
             <div style="padding:3rem; text-align:center; color:var(--fg-muted);">
               <div style="font-size: 32px; margin-bottom:0.5rem; display:flex; justify-content:center;">${ico('hourglass', 24)}</div>
-              Đang tải phụ đề song ngữ và kịch bản lồng tiếng...
+              Đang tải phụ đề và tóm tắt bài học...
             </div>
           </div>
         `;
@@ -2819,19 +2991,54 @@
         // Fetch transcript & summary
         let trData = null;
         let summaryMd = '';
-        try {
-          const res = await fetch(dossierPath + '/transcripts/' + videoId + '_transcript.json');
-          if (res.ok) trData = await res.json();
-        } catch(e) { console.warn('[H2DEV] đọc transcript dossier lỗi', e); }
-        try {
-          const sRes = await fetch(dossierPath + '/transcripts/' + videoId + '_summary_vi.md');
-          if (sRes.ok) summaryMd = await sRes.text();
-        } catch(e) { console.warn('[H2DEV] đọc summary dossier lỗi', e); }
+        if (isLessonSku) {
+          if (!lessonObj && typeof loadJSON === 'function') {
+            try {
+              await Promise.all([
+                !CAT['data/videos_huan.json'] ? loadJSON('data/videos_huan.json').catch(() => []) : Promise.resolve(),
+                !CAT['data/videos_dgmd.json'] ? loadJSON('data/videos_dgmd.json').catch(() => []) : Promise.resolve(),
+                !CAT['data-tabs/videos.json'] ? loadJSON('data-tabs/videos.json').catch(() => []) : Promise.resolve()
+              ]);
+              lessonObj = findLessonInPool();
+              if (lessonObj) {
+                if (!videoTitle) videoTitle = lessonObj.title || '';
+                if (!views) views = lessonObj.duration || '';
+              }
+            } catch (e) {}
+          }
+          try {
+            const res = await fetch('/video/' + encodeURIComponent(skuNorm) + '/transcript.json');
+            if (res.ok) trData = await res.json();
+          } catch (e) { console.warn('[H2DEV] đọc transcript bài học lỗi', e); }
+          try {
+            const sRes = await fetch('/docs/' + encodeURIComponent(skuNorm) + '/README.md');
+            if (sRes.ok) summaryMd = await sRes.text();
+          } catch (e) { console.warn('[H2DEV] đọc tài liệu bài học lỗi', e); }
+        } else {
+          try {
+            const res = await fetch(dossierPath + '/transcripts/' + videoId + '_transcript.json');
+            if (res.ok) trData = await res.json();
+          } catch (e) { console.warn('[H2DEV] đọc transcript dossier lỗi', e); }
+          try {
+            const sRes = await fetch(dossierPath + '/transcripts/' + videoId + '_summary_vi.md');
+            if (sRes.ok) summaryMd = await sRes.text();
+          } catch (e) { console.warn('[H2DEV] đọc summary dossier lỗi', e); }
+        }
 
-        const segments = (trData && trData.segments) ? trData.segments : [];
-        const fullEn = (trData && trData.fullText) ? trData.fullText : segments.map(s => s.text).join(' ');
-        const fullVi = (trData && trData.fullTextVi) ? trData.fullTextVi : segments.map(s => s.viText || '').filter(Boolean).join(' ');
-        const fullBilingual = segments.map(s => `[${formatSec(s.start)}] ${s.text}\n-> ${s.viText || ''}`).join('\n\n');
+        if (isLessonSku && !channelName) {
+          const mdHead = (summaryMd || '').slice(0, 1200);
+          const isHuanLesson = Boolean(
+            (lessonObj && (lessonObj.isHuan || lessonObj.platform === 'huan.academy' || String(lessonObj.track || '').toLowerCase() === 'huan' || /^HUAN-/i.test(lessonObj.module_id || lessonObj.module || ''))) ||
+            /^HUAN[-_]/i.test(skuNorm) ||
+            (!lessonObj && /huan\.academy|Huân Academy|Bá Huân|HUAN-M/i.test(mdHead))
+          );
+          const isDgmdLesson = Boolean(
+            (lessonObj && (lessonObj.isDgmd || lessonObj.platform === 'daigiamangdep.com' || String(lessonObj.track || '').toLowerCase() === 'dgmd' || /^DGMD-/i.test(lessonObj.module_id || lessonObj.module || ''))) ||
+            /^DGMD[-_]/i.test(skuNorm) ||
+            (!lessonObj && /daigiamangdep|Đại Gia Mang Dép|DGMD-M|DGMD ACADEMY/i.test(mdHead))
+          );
+          channelName = isHuanLesson ? 'Huân Academy' : (isDgmdLesson ? 'Đại Gia Mang Dép' : 'H2DEV Faceless');
+        }
 
         function formatSec(sec) {
           if (sec == null) return '00:00';
@@ -2841,50 +3048,93 @@
           return (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
         }
 
+        const mdTitleFallback = summaryMd
+          ? ((summaryMd.match(/^#\s+(.+)$/m) || [])[1] || '').replace(/^[^\wÀ-ỹ]+/, '').trim()
+          : '';
+        const resolvedTitle = (trData && (trData.titleVi || trData.title)) || videoTitle || mdTitleFallback || skuNorm || String(videoId || '');
+
+        const segments = (trData && Array.isArray(trData.segments)) ? trData.segments : [];
+        const fullEn = (trData && (trData.fullText || trData.full_text))
+          ? (trData.fullText || trData.full_text)
+          : segments.map(s => s.text || '').join(' ');
+        const fullVi = (trData && (trData.fullTextVi || trData.full_text))
+          ? (trData.fullTextVi || trData.full_text)
+          : segments.map(s => s.viText || s.text || '').filter(Boolean).join(' ');
+        const fullBilingual = segments.map(s => {
+          const line1 = `[${formatSec(s.start)}] ${s.text || ''}`;
+          return (s.viText && s.viText !== s.text) ? `${line1}\n-> ${s.viText}` : line1;
+        }).join('\n\n');
+
+        const headerActionsHtml = isLessonSku
+          ? `
+            <a href="/lotrinh/${encodeURIComponent(skuNorm)}" style="min-height:44px; box-sizing:border-box; padding:0.4rem 0.75rem; border-radius:0.5rem; background:rgba(225,29,72,0.92); border:1px solid #f43f5e; color:#fff; font-size: 12px; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:0.35rem;" title="Mở trình phát bài học ${esc(skuNorm)}">${ico('clapperboard', 14)} Mở Bài Học ${ico('arrow-up-right', 14)}</a>
+            ${lessonObj && lessonObj.origin ? `<a href="${esc(lessonObj.origin)}" target="_blank" rel="noopener noreferrer" style="min-height:44px; box-sizing:border-box; padding:0.4rem 0.75rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:#38bdf8; font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:0.35rem;">${ico('tv', 14)} Trang gốc ${ico('arrow-up-right', 14)}</a>` : ''}
+            <button type="button" id="close-video-sub" style="min-height:44px; box-sizing:border-box; padding:0.4rem 0.75rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
+          `
+          : `
+            <button type="button" class="js-quick-video" data-vid="${esc(videoId)}" data-title="${esc(resolvedTitle)}" data-channel="${esc(channelName)}" data-badge="Đang xem Transcript" style="min-height:44px; box-sizing:border-box; padding:0.4rem 0.75rem; border-radius:0.5rem; background:rgba(225,29,72,0.92); border:1px solid #f43f5e; color:#fff; font-size: 12px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.35rem;" title="Mở video xem trực tiếp đồng bộ với phụ đề">${ico('clapperboard', 14)} Xem Video Nhanh</button>
+            <a href="https://www.youtube.com/watch?v=${esc(videoId)}" target="_blank" rel="noopener noreferrer" style="min-height:44px; box-sizing:border-box; padding:0.4rem 0.75rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:#38bdf8; font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:0.35rem;">${ico('tv', 14)} YouTube ${ico('arrow-up-right', 14)}</a>
+            <button type="button" id="close-video-sub" style="min-height:44px; box-sizing:border-box; padding:0.4rem 0.75rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
+          `;
+
+        const headerMetaHtml = isLessonSku
+          ? `
+            <span>Mã: <strong class="c-slate-300">${esc(skuNorm)}</strong></span>
+            <span>•</span>
+            <span>Nhánh: <strong class="c-sky">${esc(channelName || '97yo-dev')}</strong></span>
+            <span>•</span>
+            <span>Thời lượng: <strong class="c-purple">${esc(views || formatSec(trData && trData.duration))}</strong></span>
+            <span>•</span>
+            <span>Số câu thoại: <strong class="c-green">${segments.length} câu</strong></span>
+          `
+          : `
+            <span>Gốc: <em class="c-slate-300">"${esc(resolvedTitle)}"</em></span>
+            <span>•</span>
+            <span>Kênh: <strong class="c-sky">${esc(channelName)}</strong></span>
+            <span>•</span>
+            <span>Lượt xem: <strong class="c-purple">${views} views</strong></span>
+            <span>•</span>
+            <span>Số câu thoại: <strong class="c-green">${segments.length} câu</strong></span>
+          `;
+
         modal.innerHTML = `
-          <div style="position:relative; width:100%; max-width:1040px; max-height:92vh; background:var(--surface-2); border:1px solid var(--border-strong); border-radius:1.25rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
+          <div class="video-sub-modal-box" style="position:relative; width:100%; max-width:1040px; max-height:92vh; background:var(--surface-2); border:1px solid var(--border-strong); border-radius:1.25rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
             <!-- Header -->
-            <div style="display:flex; align-items:center; justify-content:space-between; padding:0.9rem 1.25rem; background:var(--surface); border-bottom:1px solid var(--border-strong); flex-shrink:0; gap:1rem;">
-              <div class="min-w-0-g3">
-                <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
-                  <span style="font-size: 16px; display:inline-flex;">${ico('scroll-text', 20)}</span>
-                  <h3 style="font-size: 14px; font-weight: 700; color:#fff; margin:0;" class="truncate">${esc((trData && trData.titleVi) ? trData.titleVi : videoTitle)}</h3>
+            <div class="video-sub-header" style="display:flex; align-items:center; justify-content:space-between; padding:0.9rem 1.25rem; background:var(--surface); border-bottom:1px solid var(--border-strong); flex-shrink:0; gap:0.75rem; flex-wrap:wrap;">
+              <div class="min-w-0-g3" style="flex:1 1 240px;">
+                <div style="display:flex; align-items:center; gap:0.5rem; min-width:0;">
+                  <span style="font-size: 16px; display:inline-flex; flex-shrink:0;">${ico('scroll-text', 20)}</span>
+                  <h3 style="font-size: 14px; font-weight: 700; color:#fff; margin:0;" class="truncate">${esc(resolvedTitle)}</h3>
                 </div>
-                <div style="display:flex; align-items:center; gap:0.75rem; font-size: 12px; color:var(--fg-muted); margin-top:0.25rem; flex-wrap:wrap;">
-                  <span>Gốc: <em class="c-slate-300">"${esc(videoTitle)}"</em></span>
-                  <span>•</span>
-                  <span>Kênh: <strong class="c-sky">${esc(channelName)}</strong></span>
-                  <span>•</span>
-                  <span>Lượt xem: <strong class="c-purple">${views} views</strong></span>
-                  <span>•</span>
-                  <span>Số câu thoại: <strong class="c-green">${segments.length} câu</strong></span>
+                <div class="video-sub-meta" style="display:flex; align-items:center; gap:0.5rem; font-size: 12px; color:var(--fg-muted); margin-top:0.25rem; flex-wrap:wrap;">
+                  ${headerMetaHtml}
                 </div>
               </div>
-              <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
-                <button type="button" class="js-quick-video" data-vid="${esc(videoId)}" data-title="${esc(videoTitle)}" data-channel="${esc(channelName)}" data-badge="🔥 Đang xem Transcript" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:rgba(225,29,72,0.9); border:1px solid #f43f5e; color:#fff; font-size: 12px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:0.35rem;" title="Mở video xem trực tiếp đồng bộ với phụ đề">${ico('clapperboard', 14)} Xem Video Nhanh</button>
-                <a href="https://www.youtube.com/watch?v=${esc(videoId)}" target="_blank" rel="noopener noreferrer" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:#38bdf8; font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:0.35rem;">${ico('tv', 14)} YouTube ${ico('arrow-up-right', 14)}</a>
-                <button type="button" id="close-video-sub" style="padding:0.4rem 0.8rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
+              <div class="video-sub-actions" style="display:flex; align-items:center; gap:0.4rem; flex-shrink:0; flex-wrap:wrap;">
+                ${headerActionsHtml}
               </div>
             </div>
 
             <!-- Toolbar Tabs & Copy -->
-            <div style="display:flex; align-items:center; justify-content:space-between; padding:0.6rem 1.25rem; background:var(--surface); border-bottom:1px solid #233148; flex-shrink:0; flex-wrap:wrap; gap:0.5rem;">
+            <div class="video-sub-toolbar" style="display:flex; align-items:center; justify-content:space-between; padding:0.55rem 1.25rem; background:var(--surface); border-bottom:1px solid #233148; flex-shrink:0; flex-wrap:wrap; gap:0.4rem;">
               <div style="display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap;" id="sub-tabs-container">
-                <button type="button" class="sub-tab-btn" data-tab="bilingual" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:700; background:#2563eb; color:#fff; border:1px solid #3b82f6; cursor:pointer;">${ico('globe', 14)} Song ngữ 1:1</button>
-                <button type="button" class="sub-tab-btn" data-tab="vietnamese" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:var(--surface-2); color:var(--fg-2); border:1px solid var(--border-strong); cursor:pointer;">🇻🇳 Tiếng Việt</button>
-                <button type="button" class="sub-tab-btn" data-tab="original" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:var(--surface-2); color:var(--fg-2); border:1px solid var(--border-strong); cursor:pointer;">🇺🇸 Tiếng Gốc</button>
-                ${summaryMd ? `<button type="button" class="sub-tab-btn" data-tab="summary" style="padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:var(--surface-2); color:#fcd34d; border:1px solid rgba(245,158,11,0.4); cursor:pointer;">${ico('mic', 14)} Kịch bản AI</button>` : ''}
+                <button type="button" class="sub-tab-btn" data-tab="bilingual" style="min-height:44px; box-sizing:border-box; padding:0.35rem 0.65rem; border-radius:0.5rem; font-size: 12px; font-weight:700; background:#2563eb; color:#fff; border:1px solid #3b82f6; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">${ico('globe', 14)} ${isLessonSku ? 'Phân đoạn theo mốc' : 'Song ngữ 1:1'}</button>
+                <button type="button" class="sub-tab-btn" data-tab="vietnamese" style="min-height:44px; box-sizing:border-box; padding:0.35rem 0.65rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:var(--surface-2); color:var(--fg-2); border:1px solid var(--border-strong); cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">🇻🇳 ${isLessonSku ? 'Toàn văn lời giảng' : 'Tiếng Việt'}</button>
+                ${(isLessonSku || String(fullVi || '').trim() === String(fullEn || '').trim()) ? '' : `<button type="button" class="sub-tab-btn" id="sub-lang-toggle" data-tab="original" style="min-height:44px; box-sizing:border-box; padding:0.35rem 0.65rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:var(--surface-2); color:var(--fg-2); border:1px solid var(--border-strong); cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">🇺🇸 Tiếng Gốc</button>`}
+                ${summaryMd ? `<button type="button" class="sub-tab-btn" data-tab="summary" style="min-height:44px; box-sizing:border-box; padding:0.35rem 0.65rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:var(--surface-2); color:#fcd34d; border:1px solid rgba(245,158,11,0.4); cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">${ico('mic', 14)} ${isLessonSku ? 'Tài liệu & SOP' : 'Kịch bản AI'}</button>` : ''}
               </div>
               <div style="display:flex; align-items:center; gap:0.35rem;">
-                <button type="button" id="btn-copy-sub-active" style="padding:0.35rem 0.8rem; border-radius:0.5rem; font-size: 12px; font-weight:700; background:#10b981; color:#fff; border:1px solid #059669; cursor:pointer; display:inline-flex; align-items:center; gap:0.3rem;">${ico('clipboard-copy', 14)} Sao Chép Bản Này</button>
+                <button type="button" id="btn-copy-sub-active" style="min-height:44px; box-sizing:border-box; padding:0.35rem 0.75rem; border-radius:0.5rem; font-size: 12px; font-weight:700; background:#047857; color:#fff; border:1px solid #10b981; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">${ico('clipboard-copy', 14)} Sao Chép Bản Này</button>
               </div>
             </div>
 
             <!-- Content Area -->
-            <div id="sub-content-body" style="padding:1.25rem; overflow-y:auto; max-height:calc(92vh - 125px); font-size: 14px; line-height:1.6; color:var(--fg);">
+            <div id="sub-content-body" style="padding:1.15rem; overflow-y:auto; flex:1 1 auto; min-height:0; font-size: 14px; line-height:1.6; color:var(--fg);">
             </div>
           </div>
         `;
+        const closeBtnEl = modal.querySelector('#close-video-sub');
+        if (closeBtnEl) closeBtnEl.onclick = closeSubModal;
 
         let currentTab = 'bilingual';
         const contentEl = document.getElementById('sub-content-body');
@@ -2909,37 +3159,43 @@
 
           if (tab === 'bilingual') {
             if (!segments.length) {
-              contentEl.innerHTML = `<div style="text-align:center; color:var(--fg-muted); padding:2rem;">Chưa có phân đoạn phụ đề song ngữ cho video này.</div>`;
+              contentEl.innerHTML = `<div style="text-align:center; color:var(--fg-muted); padding:2rem;">Chưa có phân đoạn phụ đề cho video này.</div>`;
               return;
             }
             contentEl.innerHTML = `
               <div style="display:flex; flex-direction:column; gap:0.6rem;">
-                ${segments.map((seg) => `
+                ${segments.map((seg) => {
+                  const secVal = Math.max(0, Math.floor(Number(seg.start) || 0));
+                  const timeBadge = isLessonSku
+                    ? `<a href="/lotrinh/${encodeURIComponent(skuNorm)}?t=${secVal}" style="font-family:monospace; font-size: 12px; color:#38bdf8; background:var(--surface); padding:0.15rem 0.45rem; border-radius:0.35rem; border:1px solid var(--border-strong); flex-shrink:0; font-weight:700; text-decoration:none;" title="Tua bài học đến ${formatSec(seg.start)}">[${formatSec(seg.start)}]</a>`
+                    : `<span style="font-family:monospace; font-size: 12px; color:#38bdf8; background:var(--surface); padding:0.15rem 0.45rem; border-radius:0.35rem; border:1px solid var(--border-strong); flex-shrink:0; font-weight:700;">[${formatSec(seg.start)}]</span>`;
+                  return `
                   <div style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.65rem 0.85rem; background:var(--surface); border:1px solid var(--border-strong); border-radius:0.625rem;">
-                    <span style="font-family:monospace; font-size: 12px; color:#38bdf8; background:var(--surface); padding:0.15rem 0.45rem; border-radius:0.35rem; border:1px solid var(--border-strong); flex-shrink:0; font-weight:700;">[${formatSec(seg.start)}]</span>
+                    ${timeBadge}
                     <div style="flex:1; min-width:0;">
-                      <div style="font-size: 14px; font-weight:600; color:#fff; line-height:1.4;">${esc(seg.text)}</div>
-                      <div style="font-size: 13px; color:#fcd34d; margin-top:0.25rem; line-height:1.4;">${esc(seg.viText || '')}</div>
+                      <div style="font-size: 14px; font-weight:600; color:#fff; line-height:1.5;">${esc(seg.text || '')}</div>
+                      ${(seg.viText && seg.viText !== seg.text) ? `<div style="font-size: 13px; color:#fcd34d; margin-top:0.25rem; line-height:1.5;">${esc(seg.viText)}</div>` : ''}
                     </div>
                   </div>
-                `).join('')}
+                `;
+                }).join('')}
               </div>
             `;
           } else if (tab === 'vietnamese') {
             contentEl.innerHTML = `
               <div style="background:var(--surface); border:1px solid var(--border-strong); border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size: 14px; line-height:1.6; color:#fef3c7;">
-                ${esc(fullVi || segments.map(s => s.viText).join('\n'))}
+                ${esc(fullVi || segments.map(s => s.viText || s.text || '').join('\n'))}
               </div>
             `;
           } else if (tab === 'original') {
             contentEl.innerHTML = `
               <div style="background:var(--surface); border:1px solid var(--border-strong); border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size: 14px; line-height:1.6; color:var(--fg); font-family:monospace;">
-                ${esc(fullEn || segments.map(s => s.text).join('\n'))}
+                ${esc(fullEn || segments.map(s => s.text || '').join('\n'))}
               </div>
             `;
           } else if (tab === 'summary') {
             contentEl.innerHTML = `
-              <div class="max-w-none" style="background:var(--surface); border:1px solid var(--border-strong); border-radius:0.875rem; padding:1.5rem; color:var(--fg); font-size: 14px; line-height:1.65;">
+              <div class="max-w-none" style="background:var(--surface); border:1px solid var(--border-strong); border-radius:0.875rem; padding:1.25rem; color:var(--fg); font-size: 14px; line-height:1.6;">
                 ${inlineMdFull(summaryMd)}
               </div>
             `;
@@ -2962,9 +3218,8 @@
           else if (currentTab === 'summary') textToCopy = summaryMd;
 
           const copyDone = () => {
-            /* PHASE 3: textContent => chu thuan, khong emoji. */
-            copyBtn.textContent = 'Đã sao chép!';
-            setTimeout(() => { copyBtn.textContent = 'Sao Chép Bản Này'; }, 2000);
+            copyBtn.innerHTML = `${ico('check', 14)} Đã sao chép!`;
+            setTimeout(() => { copyBtn.innerHTML = `${ico('clipboard-copy', 14)} Sao Chép Bản Này`; }, 2000);
           };
           const fallbackCopy = () => {
             const ta = document.createElement('textarea');

@@ -60,11 +60,21 @@
 function normMarket(m) {
   const s = String(m || '').trim();
   if (!s) return '';
-  if (s === '🇻🇳 Việt Nam') return '🇻🇳 Việt';
-  if (s === '🇯🇵 Nhật Bản') return '🇯🇵 Nhật';
-  if (s === '🇰🇷 Hàn Quốc') return '🇰🇷 Hàn';
-  if (s === '🇺🇸 US / Global' || s === '🇺🇸 Mỹ') return '🇺🇸 Mỹ / Global';
-  if (stripDecorEmoji(s) === 'View Ngoại') return '\uD83C\uDF10 Ngoại';
+  const up = s.toUpperCase();
+  if (s === '🇻🇳 Việt Nam' || up === 'VN' || up === 'VIETNAM' || up === 'VIỆT NAM' || up === 'VIỆT') return '🇻🇳 Việt';
+  if (s === '🇯🇵 Nhật Bản' || up === 'JP' || up === 'JAPAN' || up === 'NHẬT BẢN' || up === 'NHẬT') return '🇯🇵 Nhật';
+  if (s === '🇰🇷 Hàn Quốc' || up === 'KR' || up === 'KOREA' || up === 'HÀN QUỐC' || up === 'HÀN') return '🇰🇷 Hàn';
+  if (s === '🇺🇸 US / Global' || s === '🇺🇸 Mỹ' || up === 'US' || up === 'USA' || up === 'GLOBAL' || up === 'US / GLOBAL' || up === 'MỸ' || up === 'MỸ / GLOBAL') return '🇺🇸 Mỹ / Global';
+  if (stripDecorEmoji(s) === 'View Ngoại' || up === 'NGOẠI' || up === 'NGOAI' || up === 'VIEW NGOẠI' || up === 'VIEW NGOAI') return '\uD83C\uDF10 Ngoại';
+  if (up === 'CN' || up === 'CHINA' || up === 'TRUNG' || up === 'TRUNG QUỐC') return '🇨🇳 Trung';
+  if (up === 'UK' || up === 'GB' || up === 'ANH') return '🇬🇧 Anh';
+  if (up === 'CA' || up === 'CANADA') return '🇨🇦 Canada';
+  if (up === 'TH' || up === 'THAI' || up === 'THÁI' || up === 'THÁI LAN') return '🇹🇭 Thái';
+  if (up === 'RU' || up === 'RUSSIA' || up === 'NGA') return '🇷🇺 Nga';
+  if (up === 'PH' || up === 'PHIL' || up === 'PHILIPPINES') return '🇵🇭 Phil';
+  if (up === 'HK' || up === 'HONG KONG') return '🇭🇰 HK';
+  if (up === 'FB' || up === 'FACEBOOK') return '\uD83D\uDCD8 Facebook';
+  if (up === 'SHORTS' || up === 'REELS' || up === 'SHORTS / REELS') return '\uD83D\uDCF1 Shorts / Reels';
   return s;
 }
 
@@ -314,7 +324,7 @@ async function renderTongQuan() {
   ${(nx.thongTinChinhSach2026 || []).map((s, i) => {
     const pCode = 'P' + String(i + 1).padStart(2, '0');
     const citedSkus = [...new Set((String(s || '').match(/\b(?:VIDEO-[A-Za-z0-9]{6}|ZOOM-0[1-4]-[A-Za-z0-9-]+)\b/g) || []))];
-    return `<li class="policy-item"><span class="policy-i">${String(i + 1).padStart(2, '0')}</span><div class="min-w-0 flex-1"><button type="button" class="policy-toggle" aria-expanded="false" title="${esc(s)}"><span class="policy-text" title="${esc(s)}">${esc(s)}</span><span class="policy-more" hidden>Xem đầy đủ ▾</span></button><div class="policy-links mt-2 flex flex-wrap items-center gap-1.5"><button type="button" class="filter-btn text-xs" data-sodo-jump="policy:${pCode}">Sơ đồ ${pCode} ↗</button>${citedSkus.map(sku => `<a href="/lotrinh/${encodeURIComponent(sku)}" class="filter-btn text-xs text-brand-300">${esc(sku)} ▶</a>`).join('')}</div></div></li>`;
+    return `<li class="policy-item"><span class="policy-i">${String(i + 1).padStart(2, '0')}</span><div class="min-w-0 flex-1"><button type="button" class="policy-toggle" aria-expanded="false" title="${esc(s)}"><span class="policy-text" title="${esc(s)}">${esc(s)}</span><span class="policy-more" hidden>Xem đầy đủ ▾</span></button><div class="policy-links mt-2 flex flex-wrap items-center gap-1.5" hidden><button type="button" class="filter-btn text-xs" data-sodo-jump="policy:${pCode}">Sơ đồ ${pCode} ↗</button>${citedSkus.map(sku => `<a href="/lotrinh/${encodeURIComponent(sku)}" class="filter-btn text-xs text-brand-300">${esc(sku)} ▶</a>`).join('')}</div></div></li>`;
   }).join('')}
 </ol>
   </div>`;
@@ -346,6 +356,11 @@ function videoCard(v) {
   const drm = (isDgmd || isHuan || Boolean(v.mp4) || Boolean(v.local))
     ? '<span class="badge badge-blue">MP4</span>'
     : ((v.drm ?? v.is_drm) ? '<span class="badge badge-amber">DRM</span>' : '<span class="badge badge-blue">HLS</span>');
+  const resBadge = (v.resolution === '4K' || Number(v.width) >= 3840)
+    ? '<span class="badge badge-amber" title="Độ phân giải Ultra HD 4K">4K</span>'
+    : ((v.resolution === '2K' || (Number(v.width) >= 2560 && Number(v.width) < 3840))
+        ? '<span class="badge badge-blue" title="Độ phân giải QHD 2K">2K</span>'
+        : '');
   const notDownloaded = (!v.size && !v.size_mb) ? '<span class="badge badge-red" title="MP4 0 byte — tải lại từ nguồn gốc">Chưa tải</span>' : '';
   const wb = watchedBadge(v.sku);
   const wp = watchedProgress(v.sku);
@@ -375,7 +390,7 @@ function videoCard(v) {
 <div>
   <a href="${vUrl}" class="relative block aspect-video bg-black overflow-hidden" title="Xem: ${esc(v.title)}">
     <img src="${esc(v.image || v.thumb || 'assets/thumbs/placeholder.svg')}" alt="Thumbnail: ${esc(v.title)}" width="320" height="180" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
-    <div class="absolute top-2.5 left-2.5 right-2.5 flex flex-wrap gap-1 pointer-events-none">${trackBadge}${curBadge}${lock}${drm}${wb}${notDownloaded}</div>
+    <div class="absolute top-2.5 left-2.5 right-2.5 flex flex-wrap gap-1 pointer-events-none">${trackBadge}${curBadge}${lock}${drm}${resBadge}${wb}${notDownloaded}</div>
     ${channels.length ? '<div class="absolute bottom-2.5 left-2.5 badge badge-blue pointer-events-none">' + channels.length + ' kênh</div>' : ''}
     ${v.duration ? '<div class="absolute bottom-2.5 right-2.5 badge badge-muted font-mono pointer-events-none">' + esc(v.duration) + '</div>' : ''}
     ${wp}
@@ -393,12 +408,21 @@ function videoCard(v) {
     </div>
   </div>
 </div>
-<div class="px-4 pb-4 pt-1 flex items-center gap-2">
+<div class="px-4 pb-4 pt-1 flex items-center gap-1.5 video-card-actions">
   ${playBtn}
+  <button type="button" class="btn-press btn-open-video-sub px-2.5 min-h-[38px] flex items-center justify-center bg-ink-800 hover:bg-ink-700 text-xs text-amber-300 rounded-xl border border-ink-600/80 transition-colors shrink-0" data-sku="${esc(v.sku)}" data-vid="${esc(v.sku)}" data-title="${esc(v.title)}" data-channel="${esc(isHuan ? 'Huân Academy' : (isDgmd ? 'Đại Gia Mang Dép' : 'H2DEV Faceless'))}" data-views="${esc(v.duration || '')}" title="Xem phụ đề & tóm tắt bài học ${esc(v.sku)}">Phụ đề</button>
   <button type="button" class="btn-press px-2.5 min-h-[38px] flex items-center justify-center bg-ink-800 hover:bg-ink-700 text-xs text-sky-300 rounded-xl border border-ink-600/80 transition-colors shrink-0" data-sodo-jump="video:${esc(v.sku)}" title="Xem liên kết bài học ${esc(v.sku)} trên Sơ đồ DB">Sơ đồ</button>
   ${v.origin ? `<a href="${esc(v.origin)}" target="_blank" rel="noopener noreferrer" class="btn-press w-9 min-h-[38px] flex items-center justify-center bg-ink-800 hover:bg-ink-700 text-xs rounded-xl border border-ink-600/80 transition-colors shrink-0" title="${isDgmd ? 'Trang gốc DGMD' : (isHuan ? 'Trang gốc Huân Academy' : 'Trang gốc H2Dev')}" aria-label="Trang gốc">↗</a>` : ''}
 </div>
   </div>`;
+}
+
+function trimSearchPhrase(str, maxLen) {
+  const s = String(str || '').trim();
+  if (s.length <= maxLen) return s;
+  const cut = s.slice(0, maxLen);
+  const lastSpace = cut.lastIndexOf(' ');
+  return (lastSpace >= 16 ? cut.slice(0, lastSpace) : cut).trim();
 }
 
 function buildVideoSearchSuggestions(query) {
@@ -478,7 +502,7 @@ function buildVideoSearchSuggestions(query) {
             badgeColor: 'bg-amber-950/60 text-amber-300 border-amber-800/60',
             title: tk,
             sub: `Bài học: ${title} (${sku})`,
-            searchTerm: tk.slice(0, 40),
+            searchTerm: trimSearchPhrase(tk, 44),
             sku: sku,
             directUrl: `/lotrinh/${encodeURIComponent(sku)}`,
             btnLabel: 'Xem bài ↗',
@@ -502,7 +526,7 @@ function buildVideoSearchSuggestions(query) {
             badgeColor: 'bg-red-950/60 text-red-300 border-red-800/60',
             title: af,
             sub: `Cảnh báo YPP: ${title} (${sku})`,
-            searchTerm: af.slice(0, 40),
+            searchTerm: trimSearchPhrase(af, 44),
             sku: sku,
             directUrl: `/lotrinh/${encodeURIComponent(sku)}`,
             btnLabel: 'Xem bài ↗',
@@ -619,7 +643,13 @@ window.showVideoSearchSuggestions = function(inputVal, _premerged) {
 };
 
 async function renderVideo() {
-  const currentTrack = state.videoTrack || (new URLSearchParams(location.search).get('track') || sessionStorage.getItem('h2dev-video-track') || 'h2dev');
+  const urlQp = new URLSearchParams(location.search);
+  const explicitTrack = urlQp.get('track') || urlQp.get('vbranch') || '';
+  if (!state.nicheFilter && urlQp.get('vmod')) state.nicheFilter = urlQp.get('vmod');
+  const modHint = String(urlQp.get('vmod') || state.nicheFilter || '').trim().toUpperCase();
+  const inferredTrackFromMod = modHint.startsWith('HUAN-M') ? 'huan' : (modHint.startsWith('DGMD-M') ? 'dgmd' : (/^(H2DEV-)?M\d/i.test(modHint) ? 'h2dev' : ''));
+  const hasCrossTrackFilter = Boolean(urlQp.get('vq') || urlQp.get('niche') || urlQp.get('vmod') || urlQp.get('skus') || urlQp.get('market'));
+  const currentTrack = explicitTrack || inferredTrackFromMod || state.videoTrack || (hasCrossTrackFilter ? 'all' : (sessionStorage.getItem('h2dev-video-track') || 'h2dev'));
   state.videoTrack = (currentTrack === 'dgmd' || currentTrack === 'huan' || currentTrack === 'all') ? currentTrack : 'h2dev';
   const isDgmd = state.videoTrack === 'dgmd';
   const isHuan = state.videoTrack === 'huan';
@@ -645,31 +675,70 @@ async function renderVideo() {
   window._videoInsights = Object.assign({}, insH2 || {}, insDgmd || {}, insHuan || {});
   const exactNicheToSkus = {};
   const macroToSkus = {};
+  const canonicalNiches = [];
+  const canonicalByCode = new Map();
+  const canonicalByOption = new Map();
   if (rawNx && Array.isArray(rawNx.ngachXanh)) {
-    rawNx.ngachXanh.forEach(x => {
-      const rawKey = String(x.ngach || '').trim().toLowerCase();
+    rawNx.ngachXanh.forEach((x, idx) => {
+      const code = String(x.id || ('H' + String(idx + 1).padStart(2, '0'))).trim().toUpperCase();
+      const name = String(x.ngach || '').trim();
+      const rawKey = name.toLowerCase();
+      const optionVal = `${code} — ${name}`;
       const macro = (nicheKeyFor(x.ngach) || x.ngach || '').toLowerCase();
       if (rawKey && !exactNicheToSkus[rawKey]) exactNicheToSkus[rawKey] = new Set();
-      if (rawKey && !macroToSkus[rawKey]) macroToSkus[rawKey] = new Set();
       if (macro && !macroToSkus[macro]) macroToSkus[macro] = new Set();
+      const skuSet = new Set();
       (x.skus || []).forEach(s => {
         const skuVal = (typeof s === 'string' ? s : (s && s.sku) || '').toLowerCase();
         if (!skuVal) return;
-        if (rawKey) {
-          exactNicheToSkus[rawKey].add(skuVal);
-          macroToSkus[rawKey].add(skuVal);
-        }
+        skuSet.add(skuVal);
+        if (rawKey) exactNicheToSkus[rawKey].add(skuVal);
         if (macro) macroToSkus[macro].add(skuVal);
       });
+      if (name) {
+        const item = { code, name, rawKey, optionVal, skus: skuSet };
+        canonicalNiches.push(item);
+        canonicalByCode.set(code.toLowerCase(), item);
+        canonicalByOption.set(optionVal.toLowerCase(), item);
+      }
     });
   }
-  const macroNiches = [...new Set(videos.map(v => nicheKeyFor(v.contentNiche || v.niche || v.category_name || '')).filter(Boolean))].sort();
+  const moduleIdByTitle = new Map();
+  videos.forEach(v => {
+    const t = (v.module_title || v.category_name || '').trim();
+    const id = (v.module_id || '').trim();
+    if (t && id && !moduleIdByTitle.has(t)) moduleIdByTitle.set(t, id);
+  });
+  let urlNeedsSync = false;
+  if (state.nicheFilter) {
+    const nfRaw = String(state.nicheFilter).trim().toLowerCase().replace(/^h2dev-/, '');
+    const matchedModVid = videos.find(v => String(v.module_id || '').trim().toLowerCase() === nfRaw);
+    if (matchedModVid) {
+      const resolvedModTitle = (matchedModVid.module_title || matchedModVid.category_name || '').trim();
+      if (resolvedModTitle && state.nicheFilter !== resolvedModTitle) {
+        state.nicheFilter = resolvedModTitle;
+        urlNeedsSync = true;
+      }
+    }
+  }
+  if (state.marketFilter && state.marketFilter !== '__EMPTY__') {
+    const nm = normMarket(state.marketFilter);
+    if (nm && state.marketFilter !== nm) {
+      state.marketFilter = nm;
+      urlNeedsSync = true;
+    }
+  }
+  if (state.sortBy === 'views' || state.sortBy === 'popular') { state.sortBy = 'channels'; urlNeedsSync = true; }
+  else if (state.sortBy === 'order' || state.sortBy === 'module') { state.sortBy = 'curriculum'; urlNeedsSync = true; }
+  if (urlNeedsSync && typeof syncVideoUrl === 'function') syncVideoUrl();
+  const macroNiches = [...new Set([
+    ...videos.map(v => nicheKeyFor(v.contentNiche || v.niche || v.category_name || '')),
+    ...(rawNx && Array.isArray(rawNx.ngachXanh) ? rawNx.ngachXanh.map(x => nicheKeyFor(x.ngach)) : [])
+  ].filter(Boolean))].sort();
   const macroSet = new Set(macroNiches.map(x => x.toLowerCase()));
   const moduleNiches = [...new Set(videos.map(v => (v.module_title || v.category_name || '').trim()).filter(Boolean))];
   const moduleSet = new Set(moduleNiches.map(x => x.toLowerCase()));
-  const microNiches = (isHuan)
-    ? []
-    : [...new Set(videos.flatMap(v => [v.contentNiche, v.niche].map(s => (s || '').trim()).filter(s => s && s.length <= 44 && !macroSet.has(s.toLowerCase()) && !moduleSet.has(s.toLowerCase()))))].sort();
+  const microNiches = [...new Set(videos.flatMap(v => [v.contentNiche, v.niche].map(s => (s || '').trim()).filter(s => s && !macroSet.has(s.toLowerCase()) && !moduleSet.has(s.toLowerCase()))))].sort();
   const marketCountMap = new Map();
   videos.forEach(v => {
     [...new Set(safeArray(v.market).map(normMarket).filter(Boolean))].forEach(m => {
@@ -706,22 +775,39 @@ async function renderVideo() {
       }
       let nicheMatched = false;
       if (state.nicheFilter) {
-        const target = state.nicheFilter.trim().toLowerCase();
-        const vKey = (nicheKeyFor(v.contentNiche || v.niche || v.category_name || '') || '').trim().toLowerCase();
-        const allowedSkus = macroToSkus[target] || new Set();
-        const exactFields = [
-          v.contentNiche,
-          v.niche,
-          v.category_name,
-          v.module_title,
-          v.module_id,
-          vKey
-        ].map(x => (x || '').trim().toLowerCase()).filter(Boolean);
-        nicheMatched = exactFields.includes(target) || allowedSkus.has(vSku);
+        const rawTarget = state.nicheFilter.trim();
+        const target = rawTarget.toLowerCase();
+        const codeMatch = /^h(\d{2})(?:\b|\s|—|-)/i.exec(rawTarget);
+        const matchedCanon = (codeMatch && canonicalByCode.get('h' + codeMatch[1]))
+          || canonicalByOption.get(target)
+          || (!macroNiches.includes(rawTarget) ? canonicalNiches.find(c => c.name === rawTarget || (c.rawKey === target && !macroSet.has(target))) : null);
+        if (matchedCanon) {
+          const vContentLower = String(v.contentNiche || '').trim().toLowerCase();
+          const vNicheLower = String(v.niche || '').trim().toLowerCase();
+          nicheMatched = matchedCanon.skus.has(vSku) || vContentLower === matchedCanon.rawKey || vNicheLower === matchedCanon.rawKey;
+        } else {
+          const vKey = (nicheKeyFor(v.contentNiche || v.niche || v.category_name || '') || '').trim().toLowerCase();
+          const allowedMacroSkus = macroSet.has(target) ? (macroToSkus[target] || new Set()) : new Set();
+          const exactFields = [
+            v.contentNiche,
+            v.niche,
+            v.category_name,
+            v.module_title,
+            v.module_id,
+            ...(macroSet.has(target) ? [vKey] : [])
+          ].map(x => (x || '').trim().toLowerCase()).filter(Boolean);
+          nicheMatched = exactFields.includes(target) || allowedMacroSkus.has(vSku);
+        }
       }
       if (state.skuFilter && state.nicheFilter) {
-        const target = state.nicheFilter.trim().toLowerCase();
-        const exactMatch = String(v.contentNiche || '').trim().toLowerCase() === target || (exactNicheToSkus[target] && exactNicheToSkus[target].has(vSku));
+        const rawTarget = state.nicheFilter.trim();
+        const target = rawTarget.toLowerCase();
+        const codeMatch = /^h(\d{2})(?:\b|\s|—|-)/i.exec(rawTarget);
+        const matchedCanon = (codeMatch && canonicalByCode.get('h' + codeMatch[1]))
+          || canonicalByOption.get(target)
+          || canonicalNiches.find(c => c.rawKey === target);
+        const canonKey = matchedCanon ? matchedCanon.rawKey : target;
+        const exactMatch = String(v.contentNiche || '').trim().toLowerCase() === canonKey || (exactNicheToSkus[canonKey] && exactNicheToSkus[canonKey].has(vSku));
         if (!skuMatched && !exactMatch) return false;
       } else if (state.skuFilter) {
         if (!skuMatched) return false;
@@ -838,7 +924,16 @@ async function renderVideo() {
     { icon: ICONS.video, label: 'Đang hiện', value: SC.pad2(list.length), live: true, sub: list.length === videos.length ? 'Không lọc' : 'Đang filter' }
   ];
 
-  const hasCustomNiche = state.nicheFilter && !macroNiches.includes(state.nicheFilter) && !moduleNiches.includes(state.nicheFilter) && !microNiches.includes(state.nicheFilter);
+  const nfTrim = String(state.nicheFilter || '').trim();
+  const nfUpper = nfTrim.toUpperCase();
+  const matchedCanonForUi = canonicalNiches.find(c => c.optionVal === nfTrim || c.code === nfUpper || (!macroNiches.includes(nfTrim) && c.name === nfTrim));
+  const hasCustomNiche = nfTrim && !macroNiches.includes(nfTrim) && !moduleNiches.includes(nfTrim) && !microNiches.includes(nfTrim) && !matchedCanonForUi;
+  const activeModId = nfTrim ? (moduleIdByTitle.get(nfTrim) || '') : '';
+  const activeNicheBannerLabel = matchedCanonForUi
+    ? matchedCanonForUi.optionVal
+    : (activeModId && !nfTrim.startsWith(activeModId)
+        ? `${activeModId} — ${nfTrim}`
+        : (nfTrim || 'SKU'));
 
   return `
   ${pageBanner(bannerTitle, bannerSub, bannerKpis)}
@@ -883,7 +978,8 @@ async function renderVideo() {
       <option value="">Mọi ngách</option>
       ${hasCustomNiche ? `<option value="${esc(state.nicheFilter)}" selected>Đang lọc: ${esc(state.nicheFilter)}</option>` : ''}
       ${macroNiches.length ? `<optgroup label="── Nhóm ngách lớn (${macroNiches.length}) ──">${macroNiches.map(m => `<option value="${esc(m)}" ${state.nicheFilter === m ? 'selected' : ''}>${esc(m)}</option>`).join('')}</optgroup>` : ''}
-      ${moduleNiches.length ? `<optgroup label="── Học phần / Lộ trình (${moduleNiches.length}) ──">${moduleNiches.map(m => { const label = m.length > 48 ? m.slice(0, 45).trim() + '…' : m; return `<option value="${esc(m)}" title="${esc(m)}" ${state.nicheFilter === m ? 'selected' : ''}>${esc(label)}</option>`; }).join('')}</optgroup>` : ''}
+      ${canonicalNiches.length ? `<optgroup label="40 Ngách chuẩn (H01–H40)">${canonicalNiches.map(c => `<option value="${esc(c.optionVal)}" ${matchedCanonForUi && matchedCanonForUi.code === c.code ? 'selected' : ''}>${esc(c.optionVal)}</option>`).join('')}</optgroup>` : ''}
+      ${moduleNiches.length ? `<optgroup label="── Học phần / Lộ trình (${moduleNiches.length}) ──">${moduleNiches.map(m => { const mId = moduleIdByTitle.get(m); const fullM = mId && !m.startsWith(mId) ? `${mId} — ${m}` : m; const label = fullM.length > 52 ? fullM.slice(0, 49).trim() + '…' : fullM; return `<option value="${esc(m)}" title="${esc(fullM)}" ${state.nicheFilter === m ? 'selected' : ''}>${esc(label)}</option>`; }).join('')}</optgroup>` : ''}
       ${microNiches.length ? `<optgroup label="── Ngách chi tiết (${microNiches.length}) ──">${microNiches.map(n => `<option value="${esc(n)}" ${state.nicheFilter === n ? 'selected' : ''}>${esc(n)}</option>`).join('')}</optgroup>` : ''}
     </select>
     <label class="sr-only" for="fmarket">Lọc theo thị trường</label>
@@ -915,7 +1011,7 @@ ${markets.map(m => `<button type="button" data-market-chip="${esc(m)}" class="fi
   </div>
   ${(state.nicheFilter || state.skuFilter) ? `
   <div class="flex items-center gap-2 mb-4 bg-brand-500/10 border border-brand-500/20 px-3.5 py-2 rounded-xl text-xs text-brand-300">
-<span class="inline-flex items-center gap-1.5">${ico('target', 14)} Đang lọc theo ngách: <strong class="text-white">${esc(state.nicheFilter || 'SKU')}</strong> (${list.length} video)</span>
+<span class="inline-flex items-center gap-1.5">${ico('target', 14)} Đang lọc theo ngách: <strong class="text-white">${esc(activeNicheBannerLabel)}</strong> (${list.length} video)</span>
 <button type="button" data-action="video-filter-reset" class="ml-auto inline-flex items-center gap-1 text-brand-400 hover:text-white font-semibold underline">${ico('x', 14)} Xóa bộ lọc</button>
   </div>` : ''}
   ${(() => {
@@ -926,7 +1022,7 @@ ${markets.map(m => `<button type="button" data-market-chip="${esc(m)}" class="fi
     const paged = list.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
     const videoPager = (pos) => totalPages <= 1 ? '' : `<nav aria-label="Phân trang video${pos === 'bottom' ? ' (cuối danh sách)' : ''}" class="flex items-center justify-between gap-2 ${pos === 'bottom' ? 'mt-6' : 'mb-3'} text-xs text-gray-400"><span>Trang ${page}/${totalPages} · ${list.length} bài học</span><span class="flex gap-1">${page > 1 ? `<button type="button" class="filter-btn" data-action="video-page" data-pos="${pos}" data-page="${page - 1}">← Trước</button>` : ''}${page < totalPages ? `<button type="button" class="filter-btn" data-action="video-page" data-pos="${pos}" data-page="${page + 1}">Sau →</button>` : ''}</span></nav>`;
     return videoPager('top') + `
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">${paged.map(videoCard).join('') || `<div class="card p-12 text-gray-400 col-span-full text-center py-10"><p class="mb-3">Không tìm thấy video phù hợp với bộ lọc hiện tại.</p><button type="button" id="freset-empty" class="bg-surface-2 hover:bg-surface border border-border px-4 py-2 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Xóa bộ lọc</button></div>`}</div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 video-grid">${paged.map(videoCard).join('') || `<div class="card p-12 text-gray-400 col-span-full text-center py-10"><p class="mb-3">Không tìm thấy video phù hợp với bộ lọc hiện tại.</p><button type="button" id="freset-empty" class="bg-surface-2 hover:bg-surface border border-border px-4 py-2 rounded-xl text-xs font-semibold text-fg-2 hover:text-fg transition-colors">Xóa bộ lọc</button></div>`}</div>
   ${videoPager('bottom')}`;
   })()}`;
 }

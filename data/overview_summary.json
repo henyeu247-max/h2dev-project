@@ -1,6 +1,6 @@
 {
   "schema": "h2dev.overview-summary.v1",
-  "generatedAt": "2026-10-29T09:10:11.257Z",
+  "generatedAt": "2026-10-30T10:00:20.724Z",
   "counts": {
     "videosTotal": 333,
     "videosH2dev": 148,
@@ -11,9 +11,9 @@
     "modulesHuan": 13,
     "modulesDgmd": 10,
     "documents": 580,
-    "channels": 1082,
+    "channels": 1076,
     "deadChannels": 89,
-    "liveChannels": 993,
+    "liveChannels": 987,
     "rawChannels": 156,
     "niches": 40,
     "microNiches": 120,

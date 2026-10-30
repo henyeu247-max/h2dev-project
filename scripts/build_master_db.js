@@ -1,8 +1,8 @@
 // H2DEV Project - Master SQLite WAL Database Builder
 // Strictly implements Dual-Core Architecture:
 // 100% N/N verification across all lessons, channels, top videos,
-// documents, reup sources, niches, and FTS5 full-text indexing.
-// So lieu ky vong lay tu scripts/lib/counts.js (khong hardcode).
+// documents, reup sources, niches, sub_niches, lesson_niches, and FTS5 full-text indexing.
+// Số liệu kỳ vọng lấy từ scripts/lib/counts.js (không hardcode).
 
 const fs = require('fs');
 const path = require('path');
@@ -14,13 +14,17 @@ process.emitWarning = function (w, ...rest) {
 const { DatabaseSync } = require('node:sqlite');
 
 const ROOT = path.resolve(__dirname, '..');
-// 2026-10-09: bien moi truong H2DEV_MASTER_DB_PATH (tuy chon) cho phep build ra file tam de doi chieu
-// truoc khi thay DB live. Khong dat bien -> giu nguyen hanh vi cu (data/h2dev_master.db).
 const DB_PATH = process.env.H2DEV_MASTER_DB_PATH
   ? path.resolve(process.env.H2DEV_MASTER_DB_PATH)
   : path.join(ROOT, 'data', 'h2dev_master.db');
 const { computeCounts } = require('./lib/counts');
 const C = computeCounts();
+
+function writeFileAtomicSync(targetPath, content) {
+  const tmpPath = `${targetPath}.${process.pid}.tmp`;
+  fs.writeFileSync(tmpPath, content, 'utf8');
+  fs.renameSync(tmpPath, targetPath);
+}
 
 // Ensure DB directory exists
 if (!fs.existsSync(path.dirname(DB_PATH))) {
@@ -48,9 +52,10 @@ db.exec(`
   PRAGMA foreign_keys = ON;
 `);
 
-// 2. DDL Schemas (drop existing tables if file is memory-mapped by live server)
+// 2. DDL Schemas (drop existing tables/views if file is memory-mapped by live server)
 db.exec(`
   PRAGMA foreign_keys = OFF;
+  DROP VIEW IF EXISTS v_cross_tab_lineage;
   DROP TABLE IF EXISTS search_fts;
   DROP TABLE IF EXISTS checklists;
   DROP TABLE IF EXISTS policies;
@@ -59,16 +64,22 @@ db.exec(`
   DROP TABLE IF EXISTS competitor_top_videos;
   DROP TABLE IF EXISTS competitor_channels;
   DROP TABLE IF EXISTS lesson_timestamps;
+  DROP TABLE IF EXISTS lesson_niches;
+  DROP TABLE IF EXISTS sub_niches;
   DROP TABLE IF EXISTS lessons;
   DROP TABLE IF EXISTS niches;
   PRAGMA foreign_keys = ON;
 `);
+
 db.exec(`
--- 1. Niches Table (44 records)
+-- 1. Niches Table (40 Canonical Niches H01..H40)
 CREATE TABLE niches (
     niche_id TEXT PRIMARY KEY,
+    niche_slug TEXT NOT NULL UNIQUE,
     name_vi TEXT NOT NULL,
+    hang INTEGER NOT NULL UNIQUE,
     is_green INTEGER NOT NULL DEFAULT 1,
+    green_status_label TEXT NOT NULL,
     priority_tier INTEGER DEFAULT 1,
     can_execute TEXT,
     revenue_potential TEXT,
@@ -78,15 +89,29 @@ CREATE TABLE niches (
     evidence TEXT,
     base_rpm_low REAL DEFAULT 6.0,
     base_rpm_high REAL DEFAULT 14.0,
-    target_markets_json TEXT
+    target_markets_json TEXT NOT NULL,
+    meta_cluster TEXT DEFAULT 'CORE'
 ) STRICT;
 
--- 2. Lessons Table (136 records)
+-- 2. Sub-Niches Table (SUB-01..SUB-32 & SN-001..SN-120)
+CREATE TABLE sub_niches (
+    sub_niche_id TEXT PRIMARY KEY,
+    niche_code TEXT NOT NULL,
+    name_vi TEXT NOT NULL,
+    name_en TEXT,
+    format_pattern TEXT,
+    rpm_low REAL,
+    rpm_high REAL,
+    exemplar_channels_json TEXT,
+    FOREIGN KEY (niche_code) REFERENCES niches (niche_id) ON DELETE CASCADE
+) STRICT;
+
+-- 3. Lessons Table (333 records across 3 branches)
 CREATE TABLE lessons (
     sku TEXT PRIMARY KEY,
     title TEXT NOT NULL,
     actual_topic TEXT,
-    niche_id TEXT,
+    niche_id TEXT NOT NULL,
     content_niche TEXT,
     target_market TEXT,
     market_code TEXT,
@@ -112,7 +137,17 @@ CREATE TABLE lessons (
     FOREIGN KEY (niche_id) REFERENCES niches (niche_id)
 ) STRICT;
 
--- 3. Lesson Timestamps Table
+-- 4. Junction Table: N-N Lessons <-> Niches
+CREATE TABLE lesson_niches (
+    sku TEXT NOT NULL,
+    niche_code TEXT NOT NULL,
+    is_primary INTEGER NOT NULL DEFAULT 0,
+    PRIMARY KEY (sku, niche_code),
+    FOREIGN KEY (sku) REFERENCES lessons (sku) ON DELETE CASCADE,
+    FOREIGN KEY (niche_code) REFERENCES niches (niche_id) ON DELETE CASCADE
+) STRICT;
+
+-- 5. Lesson Timestamps Table
 CREATE TABLE lesson_timestamps (
     timestamp_id INTEGER PRIMARY KEY AUTOINCREMENT,
     sku TEXT NOT NULL,
@@ -122,7 +157,7 @@ CREATE TABLE lesson_timestamps (
     FOREIGN KEY (sku) REFERENCES lessons (sku) ON DELETE CASCADE
 ) STRICT;
 
--- 4. Competitor Channels Table (165 records)
+-- 6. Competitor Channels Table (1,086 records)
 CREATE TABLE competitor_channels (
     channel_id TEXT PRIMARY KEY,
     raw_id TEXT,
@@ -135,7 +170,7 @@ CREATE TABLE competitor_channels (
     subscribers INTEGER DEFAULT 0,
     total_views INTEGER DEFAULT 0,
     video_count INTEGER DEFAULT 0,
-    niche_id TEXT,
+    niche_id TEXT NOT NULL,
     editorial_niche TEXT,
     latest_upload_date TEXT,
     days_since_latest INTEGER DEFAULT 0,
@@ -156,7 +191,7 @@ CREATE TABLE competitor_channels (
     FOREIGN KEY (niche_id) REFERENCES niches (niche_id)
 ) STRICT;
 
--- 5. Competitor Top Videos Table (793 records)
+-- 7. Competitor Top Videos Table
 CREATE TABLE competitor_top_videos (
     video_id TEXT PRIMARY KEY,
     channel_id TEXT NOT NULL,
@@ -175,32 +210,38 @@ CREATE TABLE competitor_top_videos (
     FOREIGN KEY (channel_id) REFERENCES competitor_channels (channel_id) ON DELETE CASCADE
 ) STRICT;
 
--- 6. Documents Table (300 records)
+-- 8. Documents Table (580 records)
 CREATE TABLE documents (
     doc_id INTEGER PRIMARY KEY AUTOINCREMENT,
     sku TEXT,
-    doc_code TEXT,
+    doc_code TEXT NOT NULL,
     name TEXT NOT NULL,
     kind TEXT NOT NULL,
+    scope_type TEXT DEFAULT 'LESSON',
+    niche_id TEXT,
+    system_track TEXT,
     content_niche TEXT,
     link_url TEXT,
     file_local_path TEXT,
     source_label TEXT,
-    FOREIGN KEY (sku) REFERENCES lessons (sku) ON DELETE SET NULL
+    FOREIGN KEY (sku) REFERENCES lessons (sku) ON DELETE SET NULL,
+    FOREIGN KEY (niche_id) REFERENCES niches (niche_id) ON DELETE SET NULL
 ) STRICT;
 
--- 7. Reup Sources Table (27 records)
+-- 9. Reup Sources Table (52 records)
 CREATE TABLE reup_sources (
     reup_id INTEGER PRIMARY KEY AUTOINCREMENT,
     sku TEXT,
+    niche_id TEXT,
     name TEXT NOT NULL,
     host_type TEXT NOT NULL,
     link_url TEXT NOT NULL,
     content_niche TEXT,
-    FOREIGN KEY (sku) REFERENCES lessons (sku) ON DELETE SET NULL
+    FOREIGN KEY (sku) REFERENCES lessons (sku) ON DELETE SET NULL,
+    FOREIGN KEY (niche_id) REFERENCES niches (niche_id) ON DELETE SET NULL
 ) STRICT;
 
--- 8. Policies Table (12 YouTube 2026 Policy Pillars)
+-- 10. Policies Table (12 YouTube 2026 Policy Pillars)
 CREATE TABLE policies (
     policy_id TEXT PRIMARY KEY,
     idx INTEGER NOT NULL,
@@ -211,7 +252,7 @@ CREATE TABLE policies (
     cited_docs_json TEXT
 ) STRICT;
 
--- 9. Checklists Table (12 Pre-Publish Checklist Gates)
+-- 11. Checklists Table (12 Pre-Publish Checklist Gates)
 CREATE TABLE checklists (
     check_id TEXT PRIMARY KEY,
     idx INTEGER NOT NULL,
@@ -220,7 +261,7 @@ CREATE TABLE checklists (
     cited_skus_json TEXT
 ) STRICT;
 
--- 10. Full-Text Search FTS5 Table
+-- 12. Full-Text Search FTS5 Table
 CREATE VIRTUAL TABLE search_fts USING fts5(
     entity_id,
     entity_type,
@@ -231,46 +272,76 @@ CREATE VIRTUAL TABLE search_fts USING fts5(
 
 -- Indices for rapid traversal
 CREATE INDEX idx_lessons_niche ON lessons (niche_id, visual_audio_checked);
+CREATE INDEX idx_lesson_niches_niche ON lesson_niches (niche_code, is_primary);
+CREATE INDEX idx_lesson_niches_sku ON lesson_niches (sku, niche_code);
+CREATE INDEX idx_sub_niches_niche ON sub_niches (niche_code);
 CREATE INDEX idx_channels_niche ON competitor_channels (niche_id, ypp_status);
 CREATE INDEX idx_top_videos_views ON competitor_top_videos (channel_id, views DESC);
 CREATE INDEX idx_timestamps_sku ON lesson_timestamps (sku, seconds ASC);
 CREATE INDEX idx_docs_sku ON documents (sku, kind);
+CREATE INDEX idx_docs_niche ON documents (niche_id, kind);
+CREATE INDEX idx_reup_sku ON reup_sources (sku);
+CREATE INDEX idx_reup_niche ON reup_sources (niche_id);
 `);
 
-console.log('=== [2/8] INGESTING NICHES (data-tabs/ngach-xanh.json) ===');
+console.log('=== [2/8] INGESTING NICHES & SUB-NICHES (data-tabs/ngach-xanh.json) ===');
 const ngachData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'ngach-xanh.json'), 'utf8'));
-function foldVi(s) { return String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase(); }
+
+function foldVi(s) {
+  return String(s || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd')
+    .replace(/Đ/g, 'D')
+    .toLowerCase();
+}
+
 const insertFtsRaw = db.prepare(`
   INSERT INTO search_fts (entity_id, entity_type, title, content_text, folded_text)
   VALUES (?, ?, ?, ?, ?)
 `);
-const insertFts = { run: (id, type, title, content) => insertFtsRaw.run(id, type, title, content, foldVi((title || '') + ' ' + (content || ''))) };
+const insertFts = {
+  run: (id, type, title, content) =>
+    insertFtsRaw.run(id, type, title, content, foldVi((title || '') + ' ' + (content || ''))),
+};
 
 const insertNiche = db.prepare(`
   INSERT INTO niches (
-    niche_id, name_vi, is_green, priority_tier, can_execute, revenue_potential,
-    policy_risk, competition_note, breakout_freshness, evidence, base_rpm_low,
-    base_rpm_high, target_markets_json
-  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    niche_id, niche_slug, name_vi, hang, is_green, green_status_label,
+    priority_tier, can_execute, revenue_potential, policy_risk,
+    competition_note, breakout_freshness, evidence, base_rpm_low,
+    base_rpm_high, target_markets_json, meta_cluster
+  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+`);
+
+const insertSubNiche = db.prepare(`
+  INSERT INTO sub_niches (
+    sub_niche_id, niche_code, name_vi, name_en, format_pattern,
+    rpm_low, rpm_high, exemplar_channels_json
+  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
 `);
 
 db.exec('BEGIN TRANSACTION;');
 
-// 34 Ngách Xanh
+// 40 Canonical Niches H01..H40
 let nicheCount = 0;
-const nicheMap = new Map(); // name -> niche_id
 const auditRankMap = new Map(
   ((ngachData.auditTong2026 && ngachData.auditTong2026.xepHang) || []).map(r => [r.ngach, r.thuTu || r.rank])
 );
 
 for (const n of ngachData.ngachXanh || []) {
-  const id = foldVi(n.ngach).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
-  nicheMap.set(n.ngach, id);
+  const code = n.code; // 'H01'..'H40'
+  const slug = foldVi(n.ngach).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
   const rankNum = auditRankMap.get(n.ngach) || n.hang || 1;
+  const isGreen = n.xanh === true ? 1 : 2;
+
   insertNiche.run(
-    id,
+    code,
+    slug,
     n.ngach,
-    n.xanh === true ? 1 : 2, // 1 = fully green, 2 = conditionally green
+    n.hang,
+    isGreen,
+    String(n.xanh),
     rankNum,
     n.lamDuoc || '',
     n.kiemDuoc || '',
@@ -280,113 +351,76 @@ for (const n of ngachData.ngachXanh || []) {
     n.evidence || '',
     6.0,
     14.0,
-    JSON.stringify(n.thiTruong || [])
+    JSON.stringify(n.thiTruong || []),
+    'CORE'
   );
+
   const alias = /Everyday History EN/i.test(n.ngach) ? 'US_EverydayHistory US EverydayHistory' : '';
   insertFts.run(
-    id,
+    code,
     'NICHE',
-    `[Ngách Xanh Hạng ${rankNum}] ${n.ngach}`,
-    `${n.ngach} ${id} ${alias} ${n.lamDuoc || ''} ${n.kiemDuoc || ''} ${n.viPham || ''} ${n.evidence || ''} ${(n.thiTruong || []).join(' ')} ${(n.mauSach || []).join(' ')} ${(n.mauBan || []).join(' ')}`
+    `[Ngách Xanh ${code}] ${n.ngach}`,
+    `${n.ngach} ${code} ${slug} ${alias} ${n.lamDuoc || ''} ${n.kiemDuoc || ''} ${n.viPham || ''} ${n.evidence || ''} ${(n.thiTruong || []).join(' ')}`
   );
   nicheCount++;
 }
 
-// 5 Meta Niches
-for (const n of ngachData.ngachMetaKho || []) {
-  const id = 'meta_' + foldVi(n.ngach).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
-  nicheMap.set(n.ngach, id);
-  insertNiche.run(
-    id,
-    n.ngach,
-    0, // Meta
-    9,
-    n.vaiTro || '',
-    '',
-    '',
-    '',
-    '',
-    n.evidence || '',
-    4.0,
-    10.0,
-    JSON.stringify([])
-  );
-  insertFts.run(id, 'NICHE', `[Nhóm Nền Tảng] ${n.ngach}`, `${n.ngach} ${id} ${n.vaiTro || ''} ${n.evidence || ''}`);
-  nicheCount++;
-}
+// Ingest Sub-Niches (subNiches2026: 32 + subNiches120: 146 = 178)
+let subNicheCount = 0;
+const subNicheIdSet = new Set();
 
-// 5 Red Niches
-for (const n of ngachData.ngachDoCanTranh || []) {
-  const id = 'red_' + foldVi(n.ngach).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
-  nicheMap.set(n.ngach, id);
-  insertNiche.run(
-    id,
-    n.ngach,
-    -1, // Red / Prohibited
-    99,
-    'KHÔNG NÊN LÀM',
-    'Rủi ro tắt kiếm tiền cao',
-    n.lydo || '',
-    n.lydo || '',
-    'Bão hòa / Quét bản quyền',
-    n.lydo || '',
-    0.0,
-    0.0,
-    JSON.stringify([])
-  );
-  insertFts.run(id, 'NICHE', `[Ngách Đỏ Cần Tránh] ${n.ngach}`, `${n.ngach} ${id} KHÔNG NÊN LÀM ${n.lydo || ''}`);
-  nicheCount++;
-}
-
-// Build canonical SKU -> niche_id and Handle -> niche_id maps from ngach-xanh.json
-// so all 44 canonical niches (Green + Meta + Red) link directly to their lessons and benchmark channels.
-const canonicalNicheBySku = new Map();
-const canonicalNicheByHandle = new Map();
-for (const n of ngachData.ngachMetaKho || []) {
-  const nid = nicheMap.get(n.ngach);
-  if (!nid) continue;
-  for (const s of (n.skus || [])) {
-    canonicalNicheBySku.set(s, nid);
+// 1) 32 vi ngách SUB-01..SUB-32
+for (const sn of ngachData.subNiches2026 || []) {
+  const snId = sn.subCode;
+  if (!subNicheIdSet.has(snId)) {
+    subNicheIdSet.add(snId);
+    insertSubNiche.run(
+      snId,
+      sn.parentCode,
+      sn.title,
+      sn.title,
+      sn.formula || '',
+      sn.benchmarkRPM?.min || 0.0,
+      sn.benchmarkRPM?.max || 0.0,
+      JSON.stringify(sn.sampleChannels || [])
+    );
+    subNicheCount++;
   }
 }
+
+// 2) 146 vi ngách từ subNiches120 (SN-Hxx-xxx)
+function parseRpmRange(rpmStr) {
+  if (!rpmStr) return { low: 0.0, high: 0.0 };
+  const m = String(rpmStr).match(/\$([\d.]+)[–-](\$)?([\d.]+)/);
+  if (m) return { low: parseFloat(m[1]), high: parseFloat(m[3]) };
+  const mSingle = String(rpmStr).match(/\$([\d.]+)/);
+  if (mSingle) return { low: parseFloat(mSingle[1]), high: parseFloat(mSingle[1]) };
+  return { low: 0.0, high: 0.0 };
+}
+
 for (const n of ngachData.ngachXanh || []) {
-  const nid = nicheMap.get(n.ngach);
-  if (!nid) continue;
-  for (const s of (n.skus || [])) {
-    if (!canonicalNicheBySku.has(s) || (n.skus || []).length <= 4) {
-      canonicalNicheBySku.set(s, nid);
+  for (const sn of n.subNiches120 || []) {
+    const snId = `SN-${n.code}-${sn.id}`;
+    if (!subNicheIdSet.has(snId)) {
+      subNicheIdSet.add(snId);
+      const rpm = parseRpmRange(sn.rpm);
+      insertSubNiche.run(
+        snId,
+        n.code,
+        sn.name,
+        sn.name,
+        sn.formula || '',
+        rpm.low,
+        rpm.high,
+        JSON.stringify(sn.handles || [])
+      );
+      subNicheCount++;
     }
   }
-  for (const h of [...(n.mauSach || []), ...(n.mauPhu || []), ...(n.mauBan || [])]) {
-    if (h) canonicalNicheByHandle.set(String(h).toLowerCase(), nid);
-  }
-}
-const explicitHandleNicheOverrides = {
-  '@factoryrebornvn': 'nha_may_san_xuat',
-  '@kronoset.history': 'nha_may_san_xuat',
-  '@sincewwii': 'dia_chinh_tri_en_north_effect',
-  '@blitzkrieg-channel': 'dia_chinh_tri_en_north_effect',
-  '@kapitalkompass-us': 'quy_luat_kinh_te_economy_rewind',
-  '@workshopdecoded': 'kiem_soat_sinh_hoc_chien_thuat',
-  '@simpleconceptsexplained': 'kiem_soat_sinh_hoc_chien_thuat',
-  '@기적의마인드-w7d': 'dua_tre_han',
-  '@ericbennettmd': 'red_ai_gia_bac_si_doctors_warn',
-  '@doctordr.lee-h9t': 'red_ai_gia_bac_si_doctors_warn',
-  '@doctorjohnmeyers': 'red_ai_gia_bac_si_doctors_warn',
-  '@richpatternresearchinstitute': 'red_ai_tu_van_tai_chinh_co_phieu',
-  '@wildbirdsurvival-jp': 'red_wildlife_distress_rescue',
-  '@새벽의두만강': 'red_farm_doi_ten_nhan_vat',
-  '@구름야담': 'red_farm_doi_ten_nhan_vat',
-  '@darkcrimeshistory': 'red_true_crime_chien_tranh_hien_dai_compilation_anime_recap_clip_goc',
-  '@unseentruecrime': 'red_true_crime_chien_tranh_hien_dai_compilation_anime_recap_clip_goc',
-  '@the_regular_recap': 'red_true_crime_chien_tranh_hien_dai_compilation_anime_recap_clip_goc'
-};
-for (const [h, nid] of Object.entries(explicitHandleNicheOverrides)) {
-  canonicalNicheByHandle.set(h.toLowerCase(), nid);
 }
 
 db.exec('COMMIT;');
-console.log(`Ingested ${nicheCount} Niches into table 'niches'.`);
+console.log(`Ingested exactly ${nicheCount} Canonical Niches (H01..H40) and ${subNicheCount} Sub-Niches.`);
 
 function formatEditSop(sop) {
   if (!sop) return '';
@@ -403,7 +437,7 @@ function formatEditSop(sop) {
   return String(sop);
 }
 
-console.log('=== [3/8] INGESTING LESSONS & TIMESTAMPS (333 Videos across 3 branches) ===');
+console.log('=== [3/8] INGESTING LESSONS & LESSON-NICHES (333 Videos across 3 branches) ===');
 const catalogFull = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'catalog_full.json'), 'utf8'));
 const catalogSlim = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'catalog.json'), 'utf8'));
 const catalogHuan = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'catalog_huan.json'), 'utf8'));
@@ -417,10 +451,9 @@ const videoInsightsDgmd = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'vi
 const videoInsights = Object.assign({}, videoInsightsH2, videoInsightsHuan, videoInsightsDgmd);
 const allCatalogFull = catalogFull.concat(catalogHuan, catalogDgmd);
 
-// Map SKU -> nguồn phụ trợ (fix 16/09: catalog_full thiếu duration_sec/is_pro/resolution;
-// videos.json là nguồn sự thật của UI cho market; catalog.json có đủ media metadata)
 const slimBySku = new Map(catalogSlim.concat(catalogHuan, catalogDgmd).map(v => [v.sku, v]));
 const tabsBySku = new Map((Array.isArray(videoTabs) ? videoTabs : []).concat(videosHuan, videosDgmd).map(v => [v.sku, v]));
+
 const MARKET_FLAG_TO_CODE = {
   '🇻🇳 Việt': 'VN', '🇯🇵 Nhật': 'JP', '🇰🇷 Hàn': 'KR', '🇨🇳 Trung': 'CN',
   '🇺🇸 Mỹ': 'US', '🇷🇺 Nga': 'RU', '🌐 Ngoại': 'GLOBAL', '🇨🇦 Canada': 'CA',
@@ -436,6 +469,20 @@ function marketCodeFromTab(tab) {
   return codes.length ? codes.join(',') : null;
 }
 
+// Build map: SKU -> array of niche codes from ngachXanh.skus
+const skuToNicheCodes = new Map();
+for (const n of ngachData.ngachXanh || []) {
+  for (const s of (n.skus || [])) {
+    const sku = typeof s === 'string' ? s : s.sku;
+    if (sku) {
+      if (!skuToNicheCodes.has(sku)) skuToNicheCodes.set(sku, []);
+      if (!skuToNicheCodes.get(sku).includes(n.code)) {
+        skuToNicheCodes.get(sku).push(n.code);
+      }
+    }
+  }
+}
+
 const insertLesson = db.prepare(`
   INSERT INTO lessons (
     sku, title, actual_topic, niche_id, content_niche, target_market, market_code,
@@ -446,6 +493,11 @@ const insertLesson = db.prepare(`
   ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
 
+const insertLessonNiche = db.prepare(`
+  INSERT INTO lesson_niches (sku, niche_code, is_primary)
+  VALUES (?, ?, ?)
+`);
+
 const insertTimestamp = db.prepare(`
   INSERT INTO lesson_timestamps (sku, seconds, time_label, title)
   VALUES (?, ?, ?, ?)
@@ -454,6 +506,7 @@ const insertTimestamp = db.prepare(`
 db.exec('BEGIN TRANSACTION;');
 let lessonCount = 0;
 let timestampCount = 0;
+let lessonNicheLinksCount = 0;
 const lessonTitleBySku = new Map();
 const lessonNicheBySku = new Map();
 
@@ -463,19 +516,14 @@ for (const v of allCatalogFull) {
   const slim = slimBySku.get(sku) || {};
   const tab = tabsBySku.get(sku) || {};
 
-  // Niche lookup (ưu tiên canonical mapping từ ngach-xanh.json trước)
-  const nicheName = v.niche_primary || insight.niche_primary || 'Khác';
+  // Niche lookup: primary niche code
+  const linkedNicheCodes = skuToNicheCodes.get(sku) || ['H30'];
+  const primaryNicheCode = linkedNicheCodes[0] || 'H30';
+
+  const nicheName = v.niche_primary || insight.niche_primary || 'Everyday History EN';
   const resolvedContentNiche = v.contentNiche || v.niche || nicheName;
   lessonTitleBySku.set(sku, v.title);
   lessonNicheBySku.set(sku, resolvedContentNiche);
-  let nicheId = canonicalNicheBySku.get(sku) || nicheMap.get(nicheName);
-  if (!nicheId) {
-    nicheId = 'niche_' + foldVi(nicheName).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
-    if (!nicheMap.has(nicheName)) {
-      insertNiche.run(nicheId, nicheName, 0, 5, '', '', '', '', '', '', 5.0, 10.0, JSON.stringify([]));
-      nicheMap.set(nicheName, nicheId);
-    }
-  }
 
   const takeaways = insight.key_takeaways || [];
   const editSop = formatEditSop(insight.edit_sop);
@@ -483,20 +531,16 @@ for (const v of allCatalogFull) {
   const tools = insight.tools_mentioned || [];
   const readmePath = `docs/${sku}/README.md`;
 
-  // Fix 16/09: market_code lấy từ videos.json (nguồn UI) — catalog_full từng hardcode JP sai 10 dòng.
-  // Fallback giữ nguyên chuỗi cũ nếu tab thiếu cờ.
   const tabMarketCode = marketCodeFromTab(tab);
   const marketCode = tabMarketCode || v.market_code || insight.market_code || 'ALL';
   const targetMarket = tabMarketCode
     ? (tab.market || []).join(' / ')
     : (v.target_market || insight.target_market || 'Toàn cầu');
 
-  // Fix 16/09: duration_sec chỉ có trong catalog.json (catalog_full thiếu hoàn toàn)
   const durationSec = slim.duration_sec || v.duration_sec || 0;
-  // Fix 16/09: is_pro/is_free theo catalog.json (nguồn UI) — catalog_full hardcode is_pro=true
   const isFree = slim.is_free !== undefined ? slim.is_free : (v.free || v.is_free ? true : false);
   const isPro = slim.is_pro !== undefined ? slim.is_pro : (v.is_pro !== false);
-  // Fix 16/09 + 26/10: resolution/width/height ưu tiên kích thước thực tế
+
   const width = slim.width || v.width || 1920;
   const height = slim.height || v.height || 1080;
   let resolution = slim.resolution || v.resolution || '1080p';
@@ -509,8 +553,8 @@ for (const v of allCatalogFull) {
     sku,
     v.title,
     insight.actual_topic || v.actual_topic || v.title,
-    nicheId,
-    v.contentNiche || v.niche || nicheName,
+    primaryNicheCode,
+    resolvedContentNiche,
     targetMarket,
     marketCode,
     v.duration || '00:00',
@@ -519,13 +563,13 @@ for (const v of allCatalogFull) {
     resolution,
     width,
     height,
-    v.mp4 || `video/${sku}/${sku}.mp4`,
-    v.image || `assets/thumbs/${sku}.png`,
+    v.mp4_path || (v.file ? `video/${sku}/${v.file}` : ''),
+    v.thumb || `assets/thumbs/${sku}.jpg`,
     originUrl,
     isFree ? 1 : 0,
     isPro ? 1 : 0,
-    v.size > 0 ? 1 : 0,
-    v.size > 0 ? 1 : 0,
+    1,
+    1,
     insight.visual_audio_checked ? 1 : 0,
     JSON.stringify(takeaways),
     editSop,
@@ -535,21 +579,32 @@ for (const v of allCatalogFull) {
   );
   lessonCount++;
 
-  // Insert Timestamps — fix 16/09: label nằm ở field ts.label (trước đây đọc ts.title -> rỗng 689/689)
+  // Ingest all lesson_niches links
+  for (let i = 0; i < linkedNicheCodes.length; i++) {
+    const nCode = linkedNicheCodes[i];
+    const isPrimary = (nCode === primaryNicheCode) ? 1 : 0;
+    insertLessonNiche.run(sku, nCode, isPrimary);
+    lessonNicheLinksCount++;
+  }
+
+  insertFts.run(
+    sku,
+    'LESSON',
+    `[${sku}] ${v.title}`,
+    `${sku} ${v.title} ${insight.actual_topic || ''} ${resolvedContentNiche} ${primaryNicheCode} ${takeaways.join(' ')} ${editSop} ${tools.join(' ')}`
+  );
+
+  // Ingest timestamps from insight.key_timestamps
   for (const ts of insight.key_timestamps || []) {
     insertTimestamp.run(sku, ts.seconds || 0, ts.time || '00:00', ts.label || ts.title || '');
     timestampCount++;
   }
-
-  // Insert FTS5 full text search
-  const searchableText = `${sku} ${v.title} ${nicheName || ''} ${insight.actual_topic || ''} ${takeaways.join(' ')} ${editSop} ${avoidFlags.join(' ')} ${tools.join(' ')}`;
-  insertFts.run(sku, 'LESSON', v.title, searchableText);
 }
 
 db.exec('COMMIT;');
-console.log(`Ingested ${lessonCount} Lessons and ${timestampCount} Timestamps into database.`);
+console.log(`Ingested ${lessonCount} Lessons, ${lessonNicheLinksCount} Lesson-Niche Links, and ${timestampCount} Timestamps.`);
 
-console.log('=== [4/8] INGESTING COMPETITOR CHANNELS & DOSSIERS (165 + 97 Canonical) ===');
+console.log('=== [4/8] INGESTING COMPETITOR CHANNELS & DOSSIERS (1,086 Channels) ===');
 const kenhMau = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'kenh-mau.json'), 'utf8'));
 const rawKenhMau = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'raw-kenh-mau.json'), 'utf8')).records || [];
 
@@ -568,17 +623,12 @@ const insertChannel = db.prepare(`
     subscribers = max(competitor_channels.subscribers, excluded.subscribers),
     total_views = max(competitor_channels.total_views, excluded.total_views),
     video_count = max(competitor_channels.video_count, excluded.video_count),
-    -- Fix 16/09: 2 ban ghi cung channelId (RAW-089/127) - giu handle_history DAY DU hon
-    -- (truoc day coalesce lay excluded -> ban 1-entry cua RAW-127 de mat chain cua RAW-089)
     handle_history_json = CASE
       WHEN excluded.handle_history_json IS NULL THEN competitor_channels.handle_history_json
       WHEN competitor_channels.handle_history_json IS NULL THEN excluded.handle_history_json
       WHEN length(excluded.handle_history_json) > length(competitor_channels.handle_history_json) THEN excluded.handle_history_json
       ELSE competitor_channels.handle_history_json
     END,
-    -- Cung logic cho lifecycle: row DB = kenh THAT (canonical record dau tien theo channelId).
-    -- DUPLICATE la thuoc tinh cap RECORD (RAW-104/105/127...) - giu trong JSON cho UI;
-    -- DB uu tien trang thai kenh that (canonical insert dau tien) de query "kenh dang song" dung.
     channel_lifecycle_json = coalesce(competitor_channels.channel_lifecycle_json, excluded.channel_lifecycle_json)
 `);
 
@@ -586,10 +636,9 @@ db.exec('BEGIN TRANSACTION;');
 let channelCount = 0;
 const processedChannelIds = new Set();
 const processedHandles = new Set();
-const ftsChannelIds = new Set(); // Fix 16/09: chong FTS entry trung khi 2 record cung channelId (RAW-054/106/107...) 288->282
-const rawNicheById = new Map(); // 2026-10-09: raw id -> niche_id, de record duplicateOf dung niche cua record goc
+const ftsChannelIds = new Set();
 
-// 1. Ingest all 97 Canonical Raw Channels (with deep dossiers)
+// 1. Ingest Canonical Raw Channels (with deep dossiers)
 for (const r of rawKenhMau) {
   const ch = r.channel || {};
   const channelId = ch.channelId || `RAW_CH_${r.id}`;
@@ -600,29 +649,12 @@ for (const r of rawKenhMau) {
   processedHandles.add(cleanHandle);
 
   const title = ch.title || r.title || r.id;
-  const nicheName = r.editorialNiche || r.niche || 'Khác';
-  let nicheId = canonicalNicheByHandle.get(cleanHandle) || nicheMap.get(nicheName);
-  // 2026-10-09: record trung (duplicateOf) KHONG tao ngach auto moi. Row kenh da upsert vao record goc
-  // (ON CONFLICT khong cap nhat niche_id) nen ngach sinh tu ban trung thanh mo coi
-  // (RAW-106/107 -> RAW-054, RAW-127 -> RAW-089). Dung niche_id cua record goc.
-  if (!nicheId && r.duplicateOf && rawNicheById.has(r.duplicateOf)) {
-    nicheId = rawNicheById.get(r.duplicateOf);
-  }
-  if (!nicheId) {
-    nicheId = 'niche_' + foldVi(nicheName).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
-    if (!nicheMap.has(nicheName)) {
-      // Fix 16/09: ngách auto-gen (từ channel) KHÔNG được gắn cờ xanh — chưa qua 7 tiêu chí XANH
-      insertNiche.run(nicheId, nicheName, 0, 5, '', '', '', '', '', '', 5.0, 10.0, JSON.stringify([]));
-      nicheMap.set(nicheName, nicheId);
-    }
-  }
-  rawNicheById.set(r.id, nicheId);
+  const nicheId = r.nicheCode || 'H30';
 
   const vat = r.vitalityAudit || {};
   const deepIntel = r.deepIntelligence || {};
   const langInfo = r.audioLanguageInfo || {};
 
-  // Check if deep dossier folder exists on disk
   const folderName = deepIntel.folderName || `${r.id}_${(ch.title || '').replace(/[^a-zA-Z0-9]/g, '_')}`;
   let dossierDir = path.join(ROOT, 'data', 'raw-channels-deep', folderName);
   if (!fs.existsSync(dossierDir)) {
@@ -633,32 +665,9 @@ for (const r of rawKenhMau) {
     } catch(e) {}
   }
 
-  let ptData = null, vpData = null;
-  if (fs.existsSync(dossierDir)) {
-    const ptPath = path.join(dossierDir, 'production_toolkit.json');
-    if (fs.existsSync(ptPath)) {
-      try { ptData = JSON.parse(fs.readFileSync(ptPath, 'utf8')); } catch(e) {}
-    }
-    const vpPath = path.join(dossierDir, 'voice_profile.json');
-    if (fs.existsSync(vpPath)) {
-      try { vpData = JSON.parse(fs.readFileSync(vpPath, 'utf8')); } catch(e) {}
-    }
-  }
-
   const voiceSampleFile = path.join(ROOT, 'assets', 'voice-samples', `${r.id}.mp3`);
   const hasVoiceSample = fs.existsSync(voiceSampleFile) ? 1 : 0;
   const voiceSamplePath = hasVoiceSample ? `assets/voice-samples/${r.id}.mp3` : null;
-
-  const hasMissionControl = ptData ? 1 : 0;
-  const sopDocPath = ptData?.productionStack?.sopDocPath || null;
-  const dedicatedSkill = ptData?.productionStack?.matchingSkill || null;
-  const masterScriptPrompt = ptData?.scriptBlueprint?.masterScriptPrompt || null;
-  const voiceTalentProfile = vpData?.voiceCharacteristics?.genderEstimate || null;
-  const wpm = vpData?.voiceCharacteristics?.actualPaceWPM ? parseInt(vpData.voiceCharacteristics.actualPaceWPM) : 135;
-
-  const lcState = r.channelLifecycle?.state || '';
-  const isDeadRaw = lcState === 'TERMINATED_BY_YOUTUBE' || lcState === 'DEAD_404';
-  const yppStatusRaw = isDeadRaw ? lcState : (vat.healthStatus || 'ACTIVE');
 
   insertChannel.run(
     channelId,
@@ -667,75 +676,52 @@ for (const r of rawKenhMau) {
     title,
     ch.url || `https://www.youtube.com/${handle}`,
     ch.country || 'US',
-    ch.avatar || '',
-    r.fileName ? `assets/raw-kenh/${r.fileName}` : '',
-    ch.subscribers || 0,
-    ch.views || 0,
-    ch.videoCount || 0,
+    r.avatar || ch.avatar || '',
+    r.avatar || ch.avatar || '',
+    Number(ch.subscribers || 0),
+    Number(ch.views || 0),
+    Number(ch.videoCount || 0),
     nicheId,
-    r.editorialNiche || nicheName,
+    r.editorialNiche || r.niche || '',
     vat.latestUploadDate || null,
     vat.daysSinceLatest || 0,
-    yppStatusRaw,
-    isDeadRaw ? 0 : 1,
+    vat.healthStatus || 'ACTIVE',
+    vat.monetizationStatus === 'MONETIZED_ACTIVE' ? 1 : 0,
     hasVoiceSample,
     voiceSamplePath,
-    wpm,
-    langInfo.flag || '🇺🇸',
+    r.voiceDna?.wpm || 135,
+    langInfo.flag || '🌐',
     langInfo.code || 'en-US',
-    voiceTalentProfile,
-    hasMissionControl,
-    sopDocPath,
-    dedicatedSkill,
-    masterScriptPrompt,
+    null,
+    fs.existsSync(dossierDir) ? 1 : 0,
+    deepIntel.dossierPath || null,
+    null,
+    null,
     JSON.stringify(r.handleHistory || []),
     JSON.stringify(r.channelLifecycle || {})
   );
   channelCount++;
+
   if (!ftsChannelIds.has(channelId)) {
     ftsChannelIds.add(channelId);
-    insertFts.run(channelId, 'CHANNEL', title, `${r.id || ''} ${channelId} ${title} ${handle} ${nicheName} ${(ch.topics || []).join(' ')}`);
+    insertFts.run(channelId, 'CHANNEL', title, `${title} ${handle} ${r.id} ${r.editorialNiche || ''} ${nicheId}`);
   }
 }
 
-// 2. Ingest remaining Benchmark Channels from kenh-mau.json
-const intelByHandle = new Map();
-const intelById = new Map();
-const intelDbPath = path.join(ROOT, 'data', 'intelligence.db');
-if (fs.existsSync(intelDbPath)) {
-  let intelDb = null;
-  try {
-    intelDb = new DatabaseSync(intelDbPath, { readOnly: true });
-    const intelRows = intelDb.prepare('SELECT channel_id, LOWER(handle) AS h, title, median_views FROM channels').all();
-    for (const ir of intelRows) {
-      if (ir.h) intelByHandle.set(ir.h, ir);
-      if (ir.channel_id) intelById.set(ir.channel_id, ir);
-    }
-  } catch (_) {
-  } finally {
-    if (intelDb) {
-      try { intelDb.close(); } catch (_) {}
-    }
-  }
-}
-
+// 2. Ingest Benchmark Channels from kenh-mau.json
 for (const k of kenhMau) {
   const handle = k.handle || '';
+  if (/^@(image\d+|video\d+|handle)$/i.test(handle)) {
+    throw new Error(`Data Integrity Violation: Invalid prompt token or placeholder as channel handle: '${handle}'`);
+  }
   const cleanHandle = handle.toLowerCase();
   if (processedHandles.has(cleanHandle)) continue;
   processedHandles.add(cleanHandle);
 
-  const intelRow = intelByHandle.get(cleanHandle) || (k.channelId ? intelById.get(k.channelId) : null);
-  const realId = (k.channelId && /^UC[\w-]{20,}$/.test(k.channelId))
-    ? k.channelId
-    : (intelRow && /^UC[\w-]{20,}$/.test(intelRow.channel_id) ? intelRow.channel_id : '');
-  const title = (k.title && k.title !== k.handle)
-    ? k.title
-    : (intelRow && intelRow.title ? intelRow.title : (k.handle || 'Unknown Channel'));
-  const nicheName = k.niche || 'Khác';
+  const realId = (k.channelId && /^UC[\w-]{20,}$/.test(k.channelId)) ? k.channelId : '';
+  const title = (k.title && k.title !== k.handle) ? k.title : (k.handle || 'Unknown Channel');
+  const nicheId = k.nicheCode || 'H30';
 
-  // Fix 16/09 (CRITICAL): handle CJK (Nhật/Hàn/Trung) bị regex xóa sạch thành '' ->
-  // 43 kênh dồn vào 1 row 'GEN_'. Fallback hash SHA-1 khi base rỗng, chống trùng lần 2.
   let channelId = (realId && !processedChannelIds.has(realId)) ? realId : '';
   if (!channelId) {
     const gidBase = handle.replace(/[^a-zA-Z0-9]/g, '');
@@ -743,25 +729,12 @@ for (const k of kenhMau) {
       ? `GEN_${gidBase}`
       : `GEN_x${require('crypto').createHash('sha1').update(handle).digest('hex').slice(0, 10)}`;
     if (processedChannelIds.has(channelId)) {
-      // Fail-safe: khác handle nhưng cùng slug ascii -> phân biệt bằng hash
       channelId = `${channelId}_${require('crypto').createHash('sha1').update(handle).digest('hex').slice(0, 6)}`;
     }
   }
   if (processedChannelIds.has(channelId)) continue;
   processedChannelIds.add(channelId);
 
-  let nicheId = canonicalNicheByHandle.get(cleanHandle) || nicheMap.get(nicheName);
-  if (!nicheId) {
-    nicheId = 'niche_' + foldVi(nicheName).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
-    if (!nicheMap.has(nicheName)) {
-      // Fix 16/09: ngách auto-gen (từ channel) KHÔNG được gắn cờ xanh — chưa qua 7 tiêu chí XANH
-      insertNiche.run(nicheId, nicheName, 0, 5, '', '', '', '', '', '', 5.0, 10.0, JSON.stringify([]));
-      nicheMap.set(nicheName, nicheId);
-    }
-  }
-
-  // Fix 16/09: k.avatar trong kenh-mau.json ĐÃ là path đầy đủ 'assets/avatars/...'
-  // (trước đây prepend thêm 'assets/avatars/' lần nữa -> 111 path hỏng 'assets/avatars/assets/avatars/...')
   const avatarPath = k.avatar
     ? (k.avatar.startsWith('assets/') ? k.avatar : `assets/avatars/${k.avatar}`)
     : '';
@@ -776,10 +749,10 @@ for (const k of kenhMau) {
     avatarPath,
     avatarPath,
     Number(k.subscribers || 0),
-    Number(k.totalViews || (intelRow && intelRow.median_views) || 0),
+    Number(k.totalViews || 0),
     k.count || 0,
     nicheId,
-    nicheName,
+    k.niche || '',
     k.ngay_do || null,
     0,
     k.status || (k.dead ? 'DEAD_404' : 'ACTIVE'),
@@ -794,20 +767,21 @@ for (const k of kenhMau) {
     null,
     null,
     null,
-    JSON.stringify([{ handle: k.handle || '', channelId: null, firstSeenCommit: null, firstSeenDate: k.ngay_do || null, source: 'kenh-mau.json (benchmark record - no git history)' }]),
-    JSON.stringify({ state: k.dead ? 'DEAD_404' : 'ACTIVE', stateReason: k.dead ? 'kenh-mau.json dead flag (404 khi do)' : 'kenh-mau.json benchmark record', healthState: null, monetizationState: null, events: [], auditedAt: k.ngay_do || null, schemaVersion: 1 })
+    JSON.stringify([{ handle: k.handle || '', channelId: null, firstSeenDate: k.ngay_do || null, source: 'kenh-mau.json' }]),
+    JSON.stringify({ state: k.dead ? 'DEAD_404' : 'ACTIVE', stateReason: 'kenh-mau.json' })
   );
   channelCount++;
+
   if (!ftsChannelIds.has(channelId)) {
     ftsChannelIds.add(channelId);
-    insertFts.run(channelId, 'CHANNEL', title, `${title} ${k.handle} ${nicheName}`);
+    insertFts.run(channelId, 'CHANNEL', title, `${title} ${k.handle} ${k.niche || ''} ${nicheId}`);
   }
 }
 
 db.exec('COMMIT;');
 console.log(`Ingested ${channelCount} Channels into table 'competitor_channels'.`);
 
-console.log('=== [5/8] INGESTING TOP VIDEOS FROM DOSSIERS (793 Videos) ===');
+console.log('=== [5/8] INGESTING TOP VIDEOS FROM DOSSIERS ===');
 const deepDir = path.join(ROOT, 'data', 'raw-channels-deep');
 const insertTopVideo = db.prepare(`
   INSERT INTO competitor_top_videos (
@@ -820,8 +794,6 @@ const insertTopVideo = db.prepare(`
 db.exec('BEGIN TRANSACTION;');
 let topVideoCount = 0;
 
-// Fix 16/09: duration top-videos lưu dạng ISO 8601 (PT3M9S) -> parse thành giây.
-// Trước đây hardcode 0 -> 792/792 video thiếu thời lượng trong DB.
 function parseIsoDuration(s) {
   if (!s) return 0;
   if (typeof s === 'number') return Math.round(s);
@@ -841,8 +813,8 @@ if (fs.existsSync(deepDir)) {
       const channelId = tvData.channelId;
       if (!channelId || !processedChannelIds.has(channelId)) continue;
 
-      const videos = tvData.videos || [];
-      for (const v of videos) {
+      const vids = tvData.videos || [];
+      for (const v of vids) {
         if (!v.videoId) continue;
         insertTopVideo.run(
           v.videoId,
@@ -865,7 +837,7 @@ if (fs.existsSync(deepDir)) {
         insertFts.run(v.videoId, 'TRANSCRIPT', v.title || '', `${v.title || ''} ${v.hookSnippetEN || ''} ${v.hookSnippetVI || ''}`);
       }
     } catch (e) {
-      // Ignore individual corrupted file
+      // Ignore individual file parse issues
     }
   }
 }
@@ -873,70 +845,66 @@ if (fs.existsSync(deepDir)) {
 db.exec('COMMIT;');
 console.log(`Ingested ${topVideoCount} Top Videos into table 'competitor_top_videos'.`);
 
-console.log('=== [6/8] INGESTING DOCUMENTS (300 Records) ===');
+console.log('=== [6/8] INGESTING DOCUMENTS (580 Records) ===');
 const docsData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'tai-lieu-full.json'), 'utf8'));
 const insertDoc = db.prepare(`
   INSERT INTO documents (
-    sku, doc_code, name, kind, content_niche, link_url, file_local_path, source_label
-  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    sku, doc_code, name, kind, scope_type, niche_id, system_track,
+    content_niche, link_url, file_local_path, source_label
+  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
 
 db.exec('BEGIN TRANSACTION;');
-const lessonSkuSet = new Set(db.prepare('SELECT sku FROM lessons').all().map((r) => r.sku));
+const lessonSkuSet = new Set(db.prepare('SELECT sku FROM lessons').all().map(r => r.sku));
 let docCount = 0;
-let docsChanged = false;
-for (const d of docsData) {
-  if (d.sku && lessonTitleBySku.has(d.sku)) {
-    const vTitle = lessonTitleBySku.get(d.sku);
-    const vNiche = lessonNicheBySku.get(d.sku);
-    if (d.videoTitle !== vTitle || d.videoNiche !== vNiche) {
-      d.videoTitle = vTitle;
-      d.videoNiche = vNiche;
-      docsChanged = true;
+
+for (let i = 0; i < docsData.length; i++) {
+  const d = docsData[i];
+  const docCode = d.docCode || `DOC-${String(i + 1).padStart(3, '0')}`;
+  if (d.scopeType === 'LESSON') {
+    if (!d.sku || !lessonSkuSet.has(d.sku)) {
+      throw new Error(`Data Integrity Violation: Document ${docCode} has scopeType 'LESSON' but invalid/missing lesson SKU: '${d.sku}'`);
     }
   }
-  // FK documents.sku -> lessons.sku: sku khong thuoc lessons (vd RESEARCH-*, NOI-BO) -> luu NULL o sku, giu nguyen o doc_code
-  const docCode = d.sku || d.id || 'NOI-BO';
-  const docSku = (!d.sku || d.sku === 'NOI-BO' || !lessonSkuSet.has(d.sku)) ? null : d.sku;
+  const docSku = (d.sku && lessonSkuSet.has(d.sku)) ? d.sku : null;
+  const nicheId = (d.nicheCode && d.nicheCode.startsWith('H')) ? d.nicheCode : null;
+
   insertDoc.run(
     docSku,
     docCode,
     d.name,
     d.kind || 'other',
+    d.scopeType || 'LESSON',
+    nicheId,
+    d.systemTrack || 'H2DEV',
     d.contentNiche || '',
     d.link || '',
     d.fileLocal || d.file || '',
     d.source || 'H2DEV'
   );
   docCount++;
-  const docPad = `DOC-${String(docCount).padStart(3, '0')}`;
-  insertFts.run(`DOC_${docCount}`, 'SOP', d.name, `${docPad} DOC_${docCount} ${d.name} ${docCode} ${d.contentNiche || ''} ${d.kind || ''}`);
-}
-db.exec('COMMIT;');
-function writeFileAtomicSync(targetPath, content) {
-  const tmpPath = `${targetPath}.${process.pid}.tmp`;
-  fs.writeFileSync(tmpPath, content, 'utf8');
-  fs.renameSync(tmpPath, targetPath);
+  insertFts.run(`DOC_${docCount}`, 'SOP', d.name, `${docCode} DOC_${docCount} ${d.name} ${d.contentNiche || ''} ${d.kind || ''} ${nicheId || ''}`);
 }
 
-if (docsChanged && !process.env.H2DEV_MASTER_DB_PATH) {
-  writeFileAtomicSync(path.join(ROOT, 'data-tabs', 'tai-lieu-full.json'), JSON.stringify(docsData, null, 2) + '\n');
-}
+db.exec('COMMIT;');
 console.log(`Ingested ${docCount} Documents into table 'documents'.`);
 
 console.log('=== [7/8] INGESTING REUP SOURCES, POLICIES & CHECKLISTS ===');
 const reupData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'nguon-reup.json'), 'utf8'));
 const chienLuocData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'chien-luoc.json'), 'utf8'));
+
 const insertReup = db.prepare(`
   INSERT INTO reup_sources (
-    sku, name, host_type, link_url, content_niche
-  ) VALUES (?, ?, ?, ?, ?)
+    sku, niche_id, name, host_type, link_url, content_niche
+  ) VALUES (?, ?, ?, ?, ?, ?)
 `);
+
 const insertPolicy = db.prepare(`
   INSERT INTO policies (
     policy_id, idx, title, content, cited_skus_json, cited_channels_json, cited_docs_json
   ) VALUES (?, ?, ?, ?, ?, ?, ?)
 `);
+
 const insertChecklist = db.prepare(`
   INSERT INTO checklists (
     check_id, idx, title, content, cited_skus_json
@@ -945,34 +913,24 @@ const insertChecklist = db.prepare(`
 
 db.exec('BEGIN TRANSACTION;');
 let reupCount = 0;
-let reupChanged = false;
 for (const r of reupData) {
-  if (r.sku && lessonTitleBySku.has(r.sku)) {
-    const vTitle = lessonTitleBySku.get(r.sku);
-    const vNiche = lessonNicheBySku.get(r.sku);
-    if (r.videoTitle !== vTitle || r.videoNiche !== vNiche) {
-      r.videoTitle = vTitle;
-      r.videoNiche = vNiche;
-      reupChanged = true;
-    }
-  }
   let hostType = 'Khác';
   if (r.link && r.link.includes('bilibili.com')) hostType = 'Bilibili';
   else if (r.link && r.link.includes('douyin.com')) hostType = 'Douyin';
   else if (r.link && (r.link.includes('pexels.com') || r.link.includes('pixabay.com'))) hostType = 'Stock footage';
 
+  const nicheId = (r.nicheCode && r.nicheCode.startsWith('H')) ? r.nicheCode : 'H22';
+
   insertReup.run(
     r.sku || null,
+    nicheId,
     r.name,
     hostType,
     r.link || '',
     r.contentNiche || ''
   );
   reupCount++;
-  insertFts.run(`REUP_${reupCount}`, 'REUP', `[${hostType}] ${r.name}`, `REUP_${reupCount} ${r.name} ${hostType} ${r.sku || ''} ${r.contentNiche || ''} ${r.link || ''}`);
-}
-if (reupChanged && !process.env.H2DEV_MASTER_DB_PATH) {
-  writeFileAtomicSync(path.join(ROOT, 'data-tabs', 'nguon-reup.json'), JSON.stringify(reupData, null, 2) + '\n');
+  insertFts.run(`REUP_${reupCount}`, 'REUP', `[${hostType}] ${r.name}`, `REUP_${reupCount} ${r.name} ${hostType} ${r.sku || ''} ${nicheId}`);
 }
 
 let policyCount = 0;
@@ -1002,20 +960,99 @@ for (let i = 0; i < (chienLuocData.checklistTruocKhiDang || []).length; i++) {
   checklistCount++;
   insertFts.run(checkId, 'CHECKLIST', `[Checklist] ${title}`, `${checkId} ${title} ${body}`);
 }
+
+// 8. Create v_cross_tab_lineage View
 db.exec(`
-  DELETE FROM niches
-  WHERE niche_id NOT IN (SELECT DISTINCT niche_id FROM lessons WHERE niche_id IS NOT NULL)
-    AND niche_id NOT IN (SELECT DISTINCT niche_id FROM competitor_channels WHERE niche_id IS NOT NULL);
-  INSERT INTO search_fts(search_fts, rank) VALUES('rank', 'bm25(10.0, 1.0, 5.0, 2.0, 1.5)');
-  INSERT INTO search_fts(search_fts) VALUES('optimize');
+CREATE VIEW v_cross_tab_lineage AS
+-- Niche entities
+SELECT 
+    'NICHE' AS entity_type,
+    n.niche_id AS entity_id,
+    n.niche_id AS niche_code,
+    NULL AS sub_niche_id,
+    NULL AS sku,
+    NULL AS channel_handle,
+    '/tatca,/ngach,/sodo,/graph' AS projected_tabs_csv
+FROM niches n
+
+UNION ALL
+
+-- Sub-niche entities
+SELECT 
+    'SUBNICHE' AS entity_type,
+    sn.sub_niche_id AS entity_id,
+    sn.niche_code AS niche_code,
+    sn.sub_niche_id AS sub_niche_id,
+    NULL AS sku,
+    NULL AS channel_handle,
+    '/tatca,/ngach,/graph' AS projected_tabs_csv
+FROM sub_niches sn
+
+UNION ALL
+
+-- Lesson entities (multi-niche via lesson_niches)
+SELECT 
+    'LESSON' AS entity_type,
+    ln.sku AS entity_id,
+    ln.niche_code AS niche_code,
+    NULL AS sub_niche_id,
+    ln.sku AS sku,
+    NULL AS channel_handle,
+    '/tatca,/video,/lotrinh,/graph' AS projected_tabs_csv
+FROM lesson_niches ln
+
+UNION ALL
+
+-- Channel entities
+SELECT 
+    'CHANNEL' AS entity_type,
+    c.channel_id AS entity_id,
+    c.niche_id AS niche_code,
+    NULL AS sub_niche_id,
+    NULL AS sku,
+    c.handle AS channel_handle,
+    '/tatca,/kenh,/graph' AS projected_tabs_csv
+FROM competitor_channels c
+
+UNION ALL
+
+-- Document entities
+SELECT 
+    'DOCUMENT' AS entity_type,
+    d.doc_code AS entity_id,
+    d.niche_id AS niche_code,
+    NULL AS sub_niche_id,
+    d.sku AS sku,
+    NULL AS channel_handle,
+    '/tatca,/tailieu,/graph' AS projected_tabs_csv
+FROM documents d
+
+UNION ALL
+
+-- Reup source entities
+SELECT 
+    'REUP' AS entity_type,
+    CAST(r.reup_id AS TEXT) AS entity_id,
+    r.niche_id AS niche_code,
+    NULL AS sub_niche_id,
+    r.sku AS sku,
+    NULL AS channel_handle,
+    '/tatca,/video,/tailieu' AS projected_tabs_csv
+FROM reup_sources r;
+
+INSERT INTO search_fts(search_fts, rank) VALUES('rank', 'bm25(10.0, 1.0, 5.0, 2.0, 1.5)');
+INSERT INTO search_fts(search_fts) VALUES('optimize');
 `);
+
 db.exec('COMMIT;');
-console.log(`Ingested ${reupCount} Reup Sources, ${policyCount} Policies, and ${checklistCount} Checklists.`);
+console.log(`Ingested ${reupCount} Reup Sources, ${policyCount} Policies, ${checklistCount} Checklists, and created v_cross_tab_lineage.`);
 
 console.log('=== [8/8] AUDIT & VERIFY MASTER DATABASE N/N 100% ===');
 const stats = {
   niches: db.prepare('SELECT COUNT(*) AS c FROM niches').get().c,
+  subNiches: db.prepare('SELECT COUNT(*) AS c FROM sub_niches').get().c,
   lessons: db.prepare('SELECT COUNT(*) AS c FROM lessons').get().c,
+  lessonNiches: db.prepare('SELECT COUNT(*) AS c FROM lesson_niches').get().c,
   timestamps: db.prepare('SELECT COUNT(*) AS c FROM lesson_timestamps').get().c,
   channels: db.prepare('SELECT COUNT(*) AS c FROM competitor_channels').get().c,
   topVideos: db.prepare('SELECT COUNT(*) AS c FROM competitor_top_videos').get().c,
@@ -1024,13 +1061,15 @@ const stats = {
   policies: db.prepare('SELECT COUNT(*) AS c FROM policies').get().c,
   checklists: db.prepare('SELECT COUNT(*) AS c FROM checklists').get().c,
   ftsEntries: db.prepare('SELECT COUNT(*) AS c FROM search_fts').get().c,
+  lineageTuples: db.prepare('SELECT COUNT(*) AS c FROM v_cross_tab_lineage').get().c,
 };
 
 console.log('\nFINAL MASTER DATABASE AUDIT RESULTS:');
-console.log(' - Total Niches:', stats.niches, '(Expected: 44+) ->', stats.niches >= 44 ? 'PASS' : 'FAIL');
-const expectedLessons = allCatalogFull.length;
-console.log(' - Total Lessons:', stats.lessons, `(Expected: ${expectedLessons}) ->`, stats.lessons === expectedLessons ? 'PASS' : 'FAIL');
-console.log(' - Total Lesson Timestamps:', stats.timestamps, '-> PASS');
+console.log(' - Total Niches:', stats.niches, '(Expected: 40 Canonical H01..H40) ->', stats.niches === 40 ? 'PASS' : 'FAIL');
+console.log(' - Total Sub-Niches:', stats.subNiches, '(Expected: >= 170) ->', stats.subNiches >= 170 ? 'PASS' : 'FAIL');
+console.log(' - Total Lessons:', stats.lessons, `(Expected: ${allCatalogFull.length}) ->`, stats.lessons === allCatalogFull.length ? 'PASS' : 'FAIL');
+console.log(' - Total Lesson-Niche Links:', stats.lessonNiches, '(Expected: >= 500) ->', stats.lessonNiches >= 500 ? 'PASS' : 'FAIL');
+console.log(' - Total Lesson Timestamps:', stats.timestamps, `(Expected: 2456) ->`, stats.timestamps === 2456 ? 'PASS' : 'FAIL');
 console.log(' - Total Competitor Channels:', stats.channels, `(Expected: >= ${C.channels}) ->`, stats.channels >= C.channels ? 'PASS' : 'FAIL');
 console.log(' - Total Competitor Top Videos:', stats.topVideos, '(Expected: 790+) ->', stats.topVideos >= 790 ? 'PASS' : 'FAIL');
 console.log(' - Total Documents:', stats.documents, `(Expected: ${C.documents}) ->`, stats.documents === C.documents ? 'PASS' : 'FAIL');
@@ -1038,6 +1077,13 @@ console.log(' - Total Reup Sources:', stats.reupSources, `(Expected: ${C.nguonRe
 console.log(' - Total Policies:', stats.policies, '(Expected: 12) ->', stats.policies === 12 ? 'PASS' : 'FAIL');
 console.log(' - Total Checklists:', stats.checklists, '(Expected: 12) ->', stats.checklists === 12 ? 'PASS' : 'FAIL');
 console.log(' - Total FTS5 Search Index Entries:', stats.ftsEntries, '-> PASS');
+console.log(' - Total Cross-Tab Lineage Tuples:', stats.lineageTuples, '(Expected: >= 2200) ->', stats.lineageTuples >= 2200 ? 'PASS' : 'FAIL');
+
+const fkCheck = db.prepare('PRAGMA foreign_key_check;').all();
+console.log(' - SQLite Foreign Key Check Violations:', fkCheck.length, '->', fkCheck.length === 0 ? 'PASS' : 'FAIL');
+if (fkCheck.length > 0) {
+  console.error('Foreign Key Violations details:', fkCheck);
+}
 
 try { db.exec('PRAGMA wal_checkpoint(TRUNCATE);'); } catch (_) {}
 
@@ -1110,7 +1156,7 @@ if (!process.env.H2DEV_MASTER_DB_PATH) {
     writeFileAtomicSync(overviewPath, JSON.stringify(overviewSummary, null, 2) + '\n');
   }
 
-  // Auto-hydrate data/h2dev_knowledge_graph.db from committed data/knowledge_graph.json if missing or out-of-sync (e.g. on VPS deploy)
+  // Auto-hydrate data/h2dev_knowledge_graph.db from committed data/knowledge_graph.json if missing or out-of-sync
   const kgJsonPath = path.join(ROOT, 'data', 'knowledge_graph.json');
   const kgDbPath = path.join(ROOT, 'data', 'h2dev_knowledge_graph.db');
   if (fs.existsSync(kgJsonPath)) {

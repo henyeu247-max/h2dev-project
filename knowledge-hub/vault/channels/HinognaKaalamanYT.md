@@ -11,7 +11,7 @@ videos_count: 1
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@HinognaKaalamanYT](https://www.youtube.com/@HinognaKaalamanYT)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
-- **Ngách (kenh-mau.json):** `Nhà máy sản xuất`
+- **Ngách (kenh-mau.json):** `Discovery / Địa lý Tò mò / Khám phá Thế giới & Du lịch Quốc tế 4K`
 - **Thị trường:** `🇵🇭 Philippines, 🌍 Quốc tế`
 
 ## Các Video Bài Giảng Phân Tích Kênh Này (1)

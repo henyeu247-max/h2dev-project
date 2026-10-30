@@ -30,7 +30,7 @@
 
 ## Current live baseline (đo lại 2026-10-29; nguồn: `data/counts-manifest.json`, chạy `node scripts/sync-counts.js --check`)
 
-- 148 learning records (144 video + 4 Zoom; 27 free · 121 pro) · 580 tài liệu · 1082 kênh (993 live · 89 dead: 75 DIE 404 + 14 rỗng; `ngay_do` 1082/1082) · 40 ngách (16 `xanh:true`) · 60 kịch bản · 52 nguồn reup.
+- 148 learning records (144 video + 4 Zoom; 27 free · 121 pro) · 580 tài liệu · 1076 kênh (987 live · 89 dead: 75 DIE 404 + 14 rỗng; `ngay_do` 1076/1076) · 40 ngách (16 `xanh:true`) · 60 kịch bản · 52 nguồn reup.
 - Media: 333/333 file có trên đĩa (148 H2DEV + 140 Huân + 45 DGMD), 0 file 0 byte · 89.26 GB (83.13 GiB) · `docs/` 339 thư mục · `assets/thumbs/` 148/148 khớp SKU H2DEV (tổng 289 files).
 - Raw channel: 156 record canonical (149 kênh unique) phân rã thành **12 Nhóm Chủ Đề Lớn + 3 Nhóm Đặc Nhiệm (Tổng 15 Nhóm)**.
 - **Hạ tầng Kỹ Năng Tác Chiến `h2dev-*` — nay nằm ở kho skill chung `~/.agents/source/skills/` (thư mục `D:\YTB\.agents\skills\` không còn, đo 2026-10-14); danh sách 13 kỹ năng gốc:**

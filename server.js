@@ -949,6 +949,7 @@ const server = http.createServer(async (req,res)=>{
   const REDIRECTS = {
     '/tongquan': '/',
     '/kichban': '/tai-lieu',
+    '/tailieu': '/tai-lieu',
     '/kenh': '/kenh-mau',
     '/raw': '/rawkenh'
   };

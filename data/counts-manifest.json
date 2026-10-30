@@ -1,6 +1,6 @@
 {
   "schema": "h2dev.counts-manifest.v1",
-  "generatedAt": "2026-10-29T09:33:05.040Z",
+  "generatedAt": "2026-10-30T10:03:16.784Z",
   "counts": {
     "videos": 148,
     "videoLessons": 144,
@@ -19,12 +19,12 @@
     "docKindTranscript": 57,
     "docKindSheet": 11,
     "docKindUncategorized": 0,
-    "channels": 1082,
-    "liveChannels": 993,
+    "channels": 1076,
+    "liveChannels": 987,
     "deadChannels": 89,
     "deadChannelsGone": 75,
     "deadChannelsEmpty": 14,
-    "channelsWithNgayDo": 1082,
+    "channelsWithNgayDo": 1076,
     "canonicalRaw": 156,
     "canonicalRawUniqueChannels": 149,
     "kichBan": 60,

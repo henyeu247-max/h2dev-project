@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-28",
-  "note": "Quy trình xây kênh YouTube Faceless A–Z (Đề cương & SOP 24 bước thực chiến toàn diện trên hệ thống 97yo-dev). Tổng hợp và đối soát từ 333 video bài học toàn hệ thống (148 H2DEV [144 video + 4 Zoom] · 140 Huân Academy · 45 DGMD), 580 tài liệu SOP catalog (+1.409 tài liệu đính kèm 3 nhánh), 40 Ngách trụ cột × 120 Vi Ngách (Micro-Niches), 1.082 kênh mẫu (993 live · 89 dead) và 19 H2DEV Specialized Agent Skills.",
+  "note": "Quy trình xây kênh YouTube Faceless A–Z (Đề cương & SOP 24 bước thực chiến toàn diện trên hệ thống 97yo-dev). Tổng hợp và đối soát từ 333 video bài học toàn hệ thống (148 H2DEV [144 video + 4 Zoom] · 140 Huân Academy · 45 DGMD), 580 tài liệu SOP catalog (+1.409 tài liệu đính kèm 3 nhánh), 40 Ngách trụ cột × 120 Vi Ngách (Micro-Niches), 1.076 kênh mẫu (987 live · 89 dead) và 19 H2DEV Specialized Agent Skills.",
   "nguyenTacCotLoi": [
     "NGÁCH KHÔNG QUYẾT ĐỊNH XANH/ĐỎ — CÁCH LÀM QUYẾT ĐỊNH. Phải có giá trị gốc nhìn thấy được, câu chuyện có nguồn sử học/khoa học/bảo tàng xác thực, triệt tiêu 100% bẫy sao chép máy móc.",
     "HAI CỬA ĐỘC LẬP CỦA YOUTUBE: Inauthentic Content (tự làm nội dung công nghiệp lặp lại, slide ảnh tĩnh) và Reused Content (lấy clip người khác không biên tập). Faceless/AI hoàn toàn hợp lệ nếu áp dụng kỹ thuật hậu kỳ đa lớp (Multi-layer Compositing) và đóng góp giá trị sáng tạo riêng.",
@@ -63,7 +63,7 @@
       "n": 3,
       "phase": "Giai đoạn II: Tình Báo Thị Trường & Lựa Chọn Ngách Xanh",
       "title": "Tình Báo Đối Thủ, Khai Thác 156 Raw Kênh & Thẩm Định Micro-Niche Bằng vidIQ",
-      "detail": "Khai thác cơ sở dữ liệu 156 hồ sơ Raw kênh (149 kênh độc nhất) và 1082 đối thủ mẫu (993 kênh live · 89 case study DIE). Đo lường chỉ số vidIQ: Search Volume (>65) và Competition Score (<50). Lùng sục các Micro-Niche (ngách cực nhỏ) ít đối thủ cạnh tranh: Thói quen ăn rau sống, bài thuốc bàn ăn, xe cộ xưa, triết lý Saitou Hitori, câu chuyện Sukatto, vật lý lượng tử dễ hiểu.",
+      "detail": "Khai thác cơ sở dữ liệu 156 hồ sơ Raw kênh (149 kênh độc nhất) và 1076 đối thủ mẫu (987 kênh live · 89 case study DIE). Đo lường chỉ số vidIQ: Search Volume (>65) và Competition Score (<50). Lùng sục các Micro-Niche (ngách cực nhỏ) ít đối thủ cạnh tranh: Thói quen ăn rau sống, bài thuốc bàn ăn, xe cộ xưa, triết lý Saitou Hitori, câu chuyện Sukatto, vật lý lượng tử dễ hiểu.",
       "tab": "rawkenh",
       "tabLabel": "Kho 156 Raw Kênh",
       "docPath": "docs/NOI-BO/zoom/ZOOM-02-Chien-luoc-kenh-san-xuat.md",
@@ -738,7 +738,7 @@
     "[11. Kỷ Luật Upload Unlisted >= 2 Giờ & Lưu Project] Kênh đã bật đủ 3 Dòng Xanh, chọn 'Not Made for Kids', tải lên ở chế độ Không công khai (Unlisted) ít nhất 2 giờ để hệ thống Checks duyệt xanh tiền hoàn tất trước giờ vàng, và đã lưu trữ file project CapCut/Premiere gốc để sẵn sàng quay Video Appeal OBS nếu cần (VIDEO-46c57e, VIDEO-7f0bb4)?",
     "[12. Cách Ly VPS/GA & Lá Chắn Human Footprint] Thực hiện đăng bài trên đúng Work VPS của kênh (cách ly với Root VPS và GA VPS), giữ nhịp đăng <= 1 video / 2 ngày, không trộn Shorts vào kênh Video Dài, và duy trì lịch đăng 1 video hậu trường Unlisted mỗi 2–3 tuần (VIDEO-b522d6, VIDEO-f83f59, VIDEO-1a7f58)?"
   ],
-  "nguonDuLieu": "Hệ thống 97yo-dev: 333 bài học (148 H2DEV [144 video bài giảng + 4 buổi Zoom] + 140 Huân Academy + 45 DGMD) + 580 tài liệu SOP catalog + 40 Ngách trụ cột × 120 Vi Ngách + 1.082 kênh mẫu (993 live · 89 dead) + 156 hồ sơ raw kênh (149 kênh độc nhất) + 52 nguồn tư liệu gốc & 19 H2DEV Specialized Skills.",
+  "nguonDuLieu": "Hệ thống 97yo-dev: 333 bài học (148 H2DEV [144 video bài giảng + 4 buổi Zoom] + 140 Huân Academy + 45 DGMD) + 580 tài liệu SOP catalog + 40 Ngách trụ cột × 120 Vi Ngách + 1.076 kênh mẫu (987 live · 89 dead) + 156 hồ sơ raw kênh (149 kênh độc nhất) + 52 nguồn tư liệu gốc & 19 H2DEV Specialized Skills.",
   "nguonChinhSach": [
     "https://support.google.com/youtube/answer/72851",
     "https://support.google.com/youtube/answer/1311392",

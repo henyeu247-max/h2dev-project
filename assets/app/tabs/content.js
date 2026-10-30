@@ -936,6 +936,7 @@ async function renderNgachXanh() {
       docs: safeArray(detail.docs),
       skills: safeArray(detail.skills),
       subNiches120: safeArray(detail.subNiches120),
+      subNiches2026: safeArray(detail.subNiches2026),
       kenhMoRong2026: safeArray(detail.kenhMoRong2026),
       nenLam: detail.nenLam,
       nenLamNote: detail.nenLamNote || '',
@@ -1143,7 +1144,20 @@ ${nxItems.map(n => {
       <div class="nx-card-point leading-relaxed"><b class="text-white font-semibold"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" class="glyph-inline"><path d="M9 21c0 .5.4 1 1 1h4c.6 0 1-.5 1-1v-1H9v1zm3-19C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V17c0 .5.4 1 1 1h6c.6 0 1-.5 1-1v-2.3c1.8-1.3 3-3.4 3-5.7 0-3.9-3.1-7-7-7z"/></svg> Luận điểm:</b> ${esc(n.thesis)}</div>
       <div class="nx-card-point leading-relaxed"><b class="text-emerald-400 font-semibold"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" class="glyph-inline"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg> Safe Format:</b> ${esc(n.safeFormat)}</div>
       <div class="nx-card-point leading-relaxed"><b class="text-rose-400 font-semibold"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" class="glyph-inline"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg> Tránh:</b> ${esc(n.avoidTrap)}</div>
-      ${(n.subNiches120 && n.subNiches120.length) ? `<div class="nx-card-point leading-relaxed"><b class="text-sky-300 font-semibold">Vi ngách 2026 (${n.subNiches120.length}):</b> ${n.subNiches120.map(sn => `<span class="badge badge-muted mr-1" title="${esc((sn.formula || '') + ' · RPM ' + (sn.rpm || ''))}">#${esc(sn.id)} ${esc(sn.name)}</span>`).join('')}</div>` : ''}
+      ${(n.subNiches2026 && n.subNiches2026.length) ? `<div class="nx-card-point leading-relaxed"><b class="text-sky-300 font-semibold">Vi ngách 2026 (${n.subNiches2026.length}):</b> ${n.subNiches2026.map(sn => {
+        const rpmVal = sn.benchmarkRPM ? (sn.benchmarkRPM.median ? ('$' + sn.benchmarkRPM.median) : (sn.benchmarkRPM.min ? ('$' + sn.benchmarkRPM.min + '-' + sn.benchmarkRPM.max) : '')) : '';
+        const chs = safeArray(sn.sampleChannels);
+        const tipParts = [
+          sn.title,
+          rpmVal ? ('RPM ' + rpmVal) : '',
+          sn.formula ? ('Format: ' + sn.formula) : '',
+          sn.vphVelocity ? ('VPH: ' + sn.vphVelocity) : '',
+          sn.inStreamAdRatio ? ('InStream: ' + sn.inStreamAdRatio) : '',
+          chs.length ? ('Kênh: ' + chs.join(', ')) : ''
+        ].filter(Boolean);
+        return `<span class="badge badge-blue mr-1" title="${esc(tipParts.join(' · '))}">#${esc(sn.subCode)} ${esc(sn.title)}${rpmVal ? ` · ${esc(rpmVal)}` : ''}</span>`;
+      }).join('')}</div>` : ''}
+      ${(n.subNiches120 && n.subNiches120.length) ? `<div class="nx-card-point leading-relaxed"><b class="text-gray-400 font-semibold">Vi ngách truyền thống (${n.subNiches120.length}):</b> ${n.subNiches120.map(sn => `<span class="badge badge-muted mr-1" title="${esc((sn.formula || '') + ' · RPM ' + (sn.rpm || ''))}">#${esc(sn.id)} ${esc(sn.name)}</span>`).join('')}</div>` : ''}
     </div>
     ${n.channels.length ? `
     <div class="mb-3">

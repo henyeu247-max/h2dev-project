@@ -4,7 +4,7 @@ name: "Hạ Tầng Điều Phối Gốc (D:\\YTB Services & NSSM)"
 category: "workspace-infra"
 root_path: "."
 domains_count: 1
-files_count: 13
+files_count: 12
 ---
 
 # Hạ Tầng Điều Phối Gốc (D:\YTB Services & NSSM)
@@ -13,17 +13,16 @@ files_count: 13
 - **Phân loại:** `workspace-infra`
 - **Đường dẫn gốc:** `.`
 - **Tổng số phân khu (Domains):** `1`
-- **Tổng số file cốt lõi đã lập chỉ mục:** `13`
+- **Tổng số file cốt lõi đã lập chỉ mục:** `12`
 
 ## 1. Các Phân Khu / Nhánh Dữ Liệu (`Domains`)
 - **NSSM Services, Khởi Động & Quản Trị Server** (`domain:ytb-root-infra/services`)
 
-## 2. Danh Sách File Thực Thi & Dữ Liệu Cốt Lõi (13)
+## 2. Danh Sách File Thực Thi & Dữ Liệu Cốt Lõi (12)
 - `AGENTS.md` — *Technical Documentation / SOP Guide* (`4222 B`)
 - `CHECK_SERVERS_STATUS.bat` — *HTTP & API Gateway Server* (`929 B`)
 - `CLAUDE.md` — *Technical Documentation / SOP Guide* (`11 B`)
 - `INSTALL_BOOT_SERVICES_NSSM.bat` — *Windows Service & Process Orchestrator* (`2526 B`)
-- `MAINT-CLEANUP-JEV-LEAK.ps1` — *Windows Service & Process Orchestrator* (`3205 B`)
 - `README.md` — *Technical Documentation / SOP Guide* (`1008 B`)
 - `RESTART-H2DEV-SERVICE-ADMIN.cmd` — *Windows Service & Process Orchestrator* (`1403 B`)
 - `RESTART-MCP-POOL-ADMIN.cmd` — *Windows Service & Process Orchestrator* (`1607 B`)

@@ -25,7 +25,7 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 4. Ngách xanh
 5. Tài liệu — catalog + nội bộ
 6. Nguồn reup
-7. Kênh mẫu — 1082
+7. Kênh mẫu — 1076
 8. Raw kênh — 156 record canonical (149 kênh unique · 7 bản ghi trùng)
 9. Chiến lược
 
@@ -44,7 +44,7 @@ Cây chuẩn: **[TREE.md](TREE.md)**
 - **4 buổi Zoom** (2026-09): Nền tảng/Môi trường · Chiến lược kênh · Quy trình Tool · AdSense & Kháng lỗi — kèm tài liệu `docs/NOI-BO/zoom/` và `ZOOM-00` (tài liệu quy trình, không phải bài học)
 - **580 tài liệu**: theo `kind` (100% đã phân loại) prompt 211 · report 28 · tool 40 · list 22 · other 8 · internal-doc 11 · sop 90 · guide 102 · transcript 57 · sheet 11 · 0 chưa gán `kind`; gồm cẩm nang nhạc nền NOI-BO-MUSIC-01
 - **49 tracks nhạc nền đã audit Gemini Multimodal & FFprobe**: 36 SAFE (YPP) · 9 REVIEW · 4 COPYRIGHTED loại bỏ — quản lý tại `data/music_catalog.json` & cẩm nang `assets/docs/tai-lieu/CATALOG-NHAC-NEN-EDIT-CHUAN-NGACH.md`
-- **1082 kênh mẫu** (993 sống · 89 dead 404 đã ẩn) · `ngay_do` 1082/1082 (đo thực tế cả 1082 kênh: 993 sống · 75 DIE 404 · 14 kênh rỗng 0 video; bằng chứng `_audit/20261014-kenh-mau-probe.jsonl` & `data/ngachxanh_handle_probes.json`)
+- **1076 kênh mẫu** (987 sống · 89 dead 404 đã ẩn) · `ngay_do` 1076/1076 (đo thực tế cả 1076 kênh: 987 sống · 75 DIE 404 · 14 kênh rỗng 0 video; bằng chứng `_audit/20261014-kenh-mau-probe.jsonl` & `data/ngachxanh_handle_probes.json`)
 - **40 ngách** + 5 khối meta (tab Ngách xanh) — `xanh:true` 16 · CÓ MẪU TĂNG 11 · CHƯA ĐỦ BẰNG CHỨNG 6 · THẬN TRỌNG 5 · CÓ ĐK 2
   - Nhóm ứng viên khảo sát tiêu biểu: Phật Nhật · Everyday History EN · Khoa học ru ngủ EN · Kinh Thánh EN explainer · Wildlife documentary (luôn rà soát theo dữ liệu YouTube sống)
 - 5 pipeline trong `pipelines/` (`hoat-hinh-ai`, `wildlife`, `ton-giao`, `everyday-history`, `bible-explainer`) · Knowledge Hub trong `knowledge-hub/`

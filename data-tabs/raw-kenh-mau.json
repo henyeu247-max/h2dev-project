@@ -22,14 +22,15 @@
         "views": 53115286,
         "videoCount": 4,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/FeECUxuavHp9eHurR8SJFT9Z98em5lxY1Mv7OXYcwzEqvQwlXeOTuWYi2oAYlsRtIc72vJ2T=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/pekaboosongs-61c7abad5b.jpg",
         "topics": [
           "Entertainment",
           "Television program",
           "Music",
           "Film"
         ],
-        "publishedAt": "2026-01-15T15:40:17.449Z"
+        "publishedAt": "2026-01-15T15:40:17.449Z",
+        "remoteAvatar": "https://yt3.ggpht.com/FeECUxuavHp9eHurR8SJFT9Z98em5lxY1Mv7OXYcwzEqvQwlXeOTuWYi2oAYlsRtIc72vJ2T=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Âm nhạc / Thiếu nhi / Family",
       "visionAnalysis": {
@@ -307,7 +308,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-001.mp3"
       },
-      "nicheCode": "H37"
+      "nicheCode": "H37",
+      "avatar": "assets/avatars/pekaboosongs-61c7abad5b.jpg"
     },
     {
       "id": "RAW-002",
@@ -328,13 +330,14 @@
         "views": 159716,
         "videoCount": 570,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/-Ai-cw9Qr_qTIA8hbJdVT-URl0qvmlK2d09bD0CKsTow2bViidK1meEYHFt8lltnZxGN75MTcg=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/TheHelpfullChristian-8a11ffa673.jpg",
         "topics": [
           "Knowledge",
           "Religion",
           "Society"
         ],
-        "publishedAt": "2011-09-28T18:21:42Z"
+        "publishedAt": "2011-09-28T18:21:42Z",
+        "remoteAvatar": "https://yt3.ggpht.com/-Ai-cw9Qr_qTIA8hbJdVT-URl0qvmlK2d09bD0CKsTow2bViidK1meEYHFt8lltnZxGN75MTcg=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kinh Thánh EN (giáo dục)",
       "visionAnalysis": {
@@ -623,7 +626,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-002.mp3"
       },
-      "nicheCode": "H01"
+      "nicheCode": "H01",
+      "avatar": "assets/avatars/TheHelpfullChristian-8a11ffa673.jpg"
     },
     {
       "id": "RAW-003",
@@ -644,13 +648,14 @@
         "views": 24411,
         "videoCount": 66,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/9JD9kpEg6mr6XXq6x5ZZVNwmFCcm5jw1-INCbgvCLLn62piCmnom6MJ2m-sR4mK0NNtOmJ4Q4Q=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/NoFluffSleep-8d664dcbe7.jpg",
         "topics": [
           "Health",
           "Knowledge",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2026-05-23T14:05:43.098Z"
+        "publishedAt": "2026-05-23T14:05:43.098Z",
+        "remoteAvatar": "https://yt3.ggpht.com/9JD9kpEg6mr6XXq6x5ZZVNwmFCcm5jw1-INCbgvCLLn62piCmnom6MJ2m-sR4mK0NNtOmJ4Q4Q=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Khoa học / Trái Đất EN",
       "visionAnalysis": {
@@ -912,7 +917,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-003.mp3"
       },
-      "nicheCode": "H11"
+      "nicheCode": "H11",
+      "avatar": "assets/avatars/NoFluffSleep-8d664dcbe7.jpg"
     },
     {
       "id": "RAW-004",
@@ -933,11 +939,12 @@
         "views": 3294,
         "videoCount": 9,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/iIGNZA5EBCe3pnQA1vjTOSoex6N7bauQg9OoXT3ycJp6P4f8SspLoage1rUolt99_1wqvZTdLQ=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/NoFluff-History-e9247323dd.jpg",
         "topics": [
           "Knowledge"
         ],
-        "publishedAt": "2026-05-23T16:52:31.11Z"
+        "publishedAt": "2026-05-23T16:52:31.11Z",
+        "remoteAvatar": "https://yt3.ggpht.com/iIGNZA5EBCe3pnQA1vjTOSoex6N7bauQg9OoXT3ycJp6P4f8SspLoage1rUolt99_1wqvZTdLQ=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -1206,7 +1213,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-004.mp3"
       },
-      "nicheCode": "H30"
+      "nicheCode": "H30",
+      "avatar": "assets/avatars/NoFluff-History-e9247323dd.jpg"
     },
     {
       "id": "RAW-005",
@@ -1227,11 +1235,12 @@
         "views": 4657850,
         "videoCount": 42,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/fzWZhdmES_XGvlsm7l5yV7ZyR_tw2jLf3c5edsmzYI5efiNC0vAaa5NJbxxp3LeBA09nWrILxQ=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/NoFluffAcademy-51f9faaaca.jpg",
         "topics": [
           "Knowledge"
         ],
-        "publishedAt": "2026-01-30T15:35:23.164Z"
+        "publishedAt": "2026-01-30T15:35:23.164Z",
+        "remoteAvatar": "https://yt3.ggpht.com/fzWZhdmES_XGvlsm7l5yV7ZyR_tw2jLf3c5edsmzYI5efiNC0vAaa5NJbxxp3LeBA09nWrILxQ=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Khoa học / Trái Đất EN",
       "visionAnalysis": {
@@ -1493,7 +1502,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-005.mp3"
       },
-      "nicheCode": "H11"
+      "nicheCode": "H11",
+      "avatar": "assets/avatars/NoFluffAcademy-51f9faaaca.jpg"
     },
     {
       "id": "RAW-006",
@@ -1514,13 +1524,14 @@
         "views": 5231142,
         "videoCount": 34,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/GNvKgGhy_fJJaoNjSbQBe3kC89EjrQwuzxfyCr4nqW7fATaRlxA712ybOIeIjDEGPNTPKcMwSRk=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/ArthurRevivesthePast-8ecedfc459.jpg",
         "topics": [
           "Lifestyle (sociology)",
           "Knowledge",
           "Tourism"
         ],
-        "publishedAt": "2026-01-19T21:07:44.831Z"
+        "publishedAt": "2026-01-19T21:07:44.831Z",
+        "remoteAvatar": "https://yt3.ggpht.com/GNvKgGhy_fJJaoNjSbQBe3kC89EjrQwuzxfyCr4nqW7fATaRlxA712ybOIeIjDEGPNTPKcMwSRk=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -1789,7 +1800,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-006.mp3"
       },
-      "nicheCode": "H19"
+      "nicheCode": "H19",
+      "avatar": "assets/avatars/ArthurRevivesthePast-8ecedfc459.jpg"
     },
     {
       "id": "RAW-007",
@@ -1810,11 +1822,12 @@
         "views": 1012378,
         "videoCount": 45,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/1tynwULtQFgANW2RgBv_PmRQIK6mAQjjARylTNjCfvu8xveifG2fsT4P9ByrNc2FlekD6onH1Q=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/SimplifyActually-9bb2a35ce0.jpg",
         "topics": [
           "Knowledge"
         ],
-        "publishedAt": "2025-03-02T05:09:03.08Z"
+        "publishedAt": "2025-03-02T05:09:03.08Z",
+        "remoteAvatar": "https://yt3.ggpht.com/1tynwULtQFgANW2RgBv_PmRQIK6mAQjjARylTNjCfvu8xveifG2fsT4P9ByrNc2FlekD6onH1Q=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -2072,7 +2085,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-007.mp3"
       },
-      "nicheCode": "H31"
+      "nicheCode": "H31",
+      "avatar": "assets/avatars/SimplifyActually-9bb2a35ce0.jpg"
     },
     {
       "id": "RAW-008",
@@ -2093,12 +2107,13 @@
         "views": 8641691,
         "videoCount": 27,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/e7RuUEbTPaNpVIlQdBSRZtj0eNLGfDoKJtt0MhaSm9qNn1x2aDlMd5JUQAtAjgv7jvqdiEPe=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/RestoredTimeline-b154493f36.jpg",
         "topics": [
           "Lifestyle (sociology)",
           "Knowledge"
         ],
-        "publishedAt": "2014-05-27T09:33:49Z"
+        "publishedAt": "2014-05-27T09:33:49Z",
+        "remoteAvatar": "https://yt3.ggpht.com/e7RuUEbTPaNpVIlQdBSRZtj0eNLGfDoKJtt0MhaSm9qNn1x2aDlMd5JUQAtAjgv7jvqdiEPe=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -2338,7 +2353,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-008.mp3"
       },
-      "nicheCode": "H30"
+      "nicheCode": "H30",
+      "avatar": "assets/avatars/RestoredTimeline-b154493f36.jpg"
     },
     {
       "id": "RAW-009",
@@ -2359,13 +2375,14 @@
         "views": 175514,
         "videoCount": 8,
         "country": "JP",
-        "avatar": "https://yt3.ggpht.com/aOxXML97G1PCEynuFYEuixeOz2nF6XTw3RK2V3w2jNMO8zb5MgTQHJ5H8LBNyxWvRyBdWbEm2g=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/ch-19d007eb00.jpg",
         "topics": [
           "Lifestyle (sociology)",
           "Entertainment",
           "Hobby"
         ],
-        "publishedAt": "2026-07-04T14:14:34.598Z"
+        "publishedAt": "2026-07-04T14:14:34.598Z",
+        "remoteAvatar": "https://yt3.ggpht.com/aOxXML97G1PCEynuFYEuixeOz2nF6XTw3RK2V3w2jNMO8zb5MgTQHJ5H8LBNyxWvRyBdWbEm2g=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Chuyện đời / kể chuyện senior Nhật",
       "visionAnalysis": {
@@ -2597,7 +2614,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-009.mp3"
       },
-      "nicheCode": "H09"
+      "nicheCode": "H09",
+      "avatar": "assets/avatars/ch-19d007eb00.jpg"
     },
     {
       "id": "RAW-010",
@@ -2618,12 +2636,13 @@
         "views": 107036545,
         "videoCount": 110,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/UovcpzHTh_SRj0rdnI31dvnsy4nDTgFTEyt4gcxeHo7tK0wnqGZ3XY8jSQR8kqUJ_t-yWS2s_Q=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/LandonsAnimationWheelhouse-b493b64465.jpg",
         "topics": [
           "Film",
           "Entertainment"
         ],
-        "publishedAt": "2010-04-03T17:04:38Z"
+        "publishedAt": "2010-04-03T17:04:38Z",
+        "remoteAvatar": "https://yt3.ggpht.com/UovcpzHTh_SRj0rdnI31dvnsy4nDTgFTEyt4gcxeHo7tK0wnqGZ3XY8jSQR8kqUJ_t-yWS2s_Q=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -2851,7 +2870,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-010.mp3"
       },
-      "nicheCode": "H37"
+      "nicheCode": "H37",
+      "avatar": "assets/avatars/LandonsAnimationWheelhouse-b493b64465.jpg"
     },
     {
       "id": "RAW-011",
@@ -2872,12 +2892,13 @@
         "views": 555879,
         "videoCount": 40,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/vwMKgGcLNor7kWuAjcCti599xH5OtFfpPTvMa3w1yDXZrkVjC2lyJs67RjW0MDP1bXhFkjP9=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/DarkCrimesHistory-dbd1ef24eb.jpg",
         "topics": [
           "Society",
           "Knowledge"
         ],
-        "publishedAt": "2026-05-29T07:52:39.237Z"
+        "publishedAt": "2026-05-29T07:52:39.237Z",
+        "remoteAvatar": "https://yt3.ggpht.com/vwMKgGcLNor7kWuAjcCti599xH5OtFfpPTvMa3w1yDXZrkVjC2lyJs67RjW0MDP1bXhFkjP9=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -3110,7 +3131,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-011.mp3"
       },
-      "nicheCode": "H35"
+      "nicheCode": "H35",
+      "avatar": "assets/avatars/DarkCrimesHistory-dbd1ef24eb.jpg"
     },
     {
       "id": "RAW-012",
@@ -3131,7 +3153,7 @@
         "views": 903834,
         "videoCount": 28,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/PsQBBtL2n4G_f2GFlv2gtIZaWNcWhkwL3Cn_0t3VH-uSsV5ASOJaYZq6oC2vgR9vGo6R3YI7=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/HistoryEndures-68-977f2c9ce4.jpg",
         "topics": [
           "Knowledge",
           "Film",
@@ -3140,7 +3162,8 @@
           "Society",
           "Military"
         ],
-        "publishedAt": "2026-06-17T13:46:32.699Z"
+        "publishedAt": "2026-06-17T13:46:32.699Z",
+        "remoteAvatar": "https://yt3.ggpht.com/PsQBBtL2n4G_f2GFlv2gtIZaWNcWhkwL3Cn_0t3VH-uSsV5ASOJaYZq6oC2vgR9vGo6R3YI7=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -3349,7 +3372,8 @@
         "evidenceDate": "2026-09-09",
         "schemaVersion": 1
       },
-      "nicheCode": "H19"
+      "nicheCode": "H19",
+      "avatar": "assets/avatars/HistoryEndures-68-977f2c9ce4.jpg"
     },
     {
       "id": "RAW-013",
@@ -3370,12 +3394,13 @@
         "views": 1307164,
         "videoCount": 26,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/6ypOIzFEywj7EtDFVrp7EzjSoSKCrPSbpCKniUugxioePu7QZvydC2d28eW47y22uW1xNSzGdoo=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/BackyardStoryUS-eed0780d29.jpg",
         "topics": [
           "Lifestyle (sociology)",
           "Knowledge"
         ],
-        "publishedAt": "2017-04-17T13:49:35Z"
+        "publishedAt": "2017-04-17T13:49:35Z",
+        "remoteAvatar": "https://yt3.ggpht.com/6ypOIzFEywj7EtDFVrp7EzjSoSKCrPSbpCKniUugxioePu7QZvydC2d28eW47y22uW1xNSzGdoo=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Hoạt hình / Giáo dục",
       "visionAnalysis": {
@@ -3614,7 +3639,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-013.mp3"
       },
-      "nicheCode": "H04"
+      "nicheCode": "H04",
+      "avatar": "assets/avatars/BackyardStoryUS-eed0780d29.jpg"
     },
     {
       "id": "RAW-014",
@@ -3635,12 +3661,13 @@
         "views": 856426,
         "videoCount": 37,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/0Nw4wNBF6zOB_-Wj8HBySKd32SvUoAPRAk0vU7bsS5ZlTjCPkCEsqTSovlbChroyiQaxsJE1RGc=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/CalmScienceToSleep-de04bb2365.jpg",
         "topics": [
           "Knowledge",
           "Religion"
         ],
-        "publishedAt": "2026-03-19T09:31:11.003Z"
+        "publishedAt": "2026-03-19T09:31:11.003Z",
+        "remoteAvatar": "https://yt3.ggpht.com/0Nw4wNBF6zOB_-Wj8HBySKd32SvUoAPRAk0vU7bsS5ZlTjCPkCEsqTSovlbChroyiQaxsJE1RGc=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Khoa học / Trái Đất EN",
       "visionAnalysis": {
@@ -3872,7 +3899,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-014.mp3"
       },
-      "nicheCode": "H11"
+      "nicheCode": "H11",
+      "avatar": "assets/avatars/CalmScienceToSleep-de04bb2365.jpg"
     },
     {
       "id": "RAW-015",
@@ -3893,13 +3921,14 @@
         "views": 455628,
         "videoCount": 36,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/Xb7Bh2vNBBgn0KNU0fqbItf15_c_MoV1cbHGkODVGQ7IzPFgbjyeA9g--MUhKw9v0sHPJiBIFQ=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/VanishedBritainUK-2efb510380.jpg",
         "topics": [
           "Knowledge",
           "Lifestyle (sociology)",
           "Hobby"
         ],
-        "publishedAt": "2007-11-14T07:41:43Z"
+        "publishedAt": "2007-11-14T07:41:43Z",
+        "remoteAvatar": "https://yt3.ggpht.com/Xb7Bh2vNBBgn0KNU0fqbItf15_c_MoV1cbHGkODVGQ7IzPFgbjyeA9g--MUhKw9v0sHPJiBIFQ=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -4131,7 +4160,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-015.mp3"
       },
-      "nicheCode": "H30"
+      "nicheCode": "H30",
+      "avatar": "assets/avatars/VanishedBritainUK-2efb510380.jpg"
     },
     {
       "id": "RAW-016",
@@ -4152,13 +4182,14 @@
         "views": 1401544,
         "videoCount": 42,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/wsX_shqeoEqH2lQ2BYbBRLwIPeFoUYDUgt9jKDybC4-7O69SJ--2cpXj_PtxHhGCFb3Ren9BONM=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/slowlivingagricultureus-4ce3052b0a.jpg",
         "topics": [
           "Food",
           "Lifestyle (sociology)",
           "Knowledge"
         ],
-        "publishedAt": "2025-11-12T13:34:51.95Z"
+        "publishedAt": "2025-11-12T13:34:51.95Z",
+        "remoteAvatar": "https://yt3.ggpht.com/wsX_shqeoEqH2lQ2BYbBRLwIPeFoUYDUgt9jKDybC4-7O69SJ--2cpXj_PtxHhGCFb3Ren9BONM=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -4390,7 +4421,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-016.mp3"
       },
-      "nicheCode": "H24"
+      "nicheCode": "H24",
+      "avatar": "assets/avatars/slowlivingagricultureus-4ce3052b0a.jpg"
     },
     {
       "id": "RAW-017",
@@ -4411,13 +4443,14 @@
         "views": 17934180,
         "videoCount": 191,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/85EsA_2lFtcXKUTqn8YoTLEtGGOmiq46WWx3Lfk4Bn5Ei6HMPbZFXWl-QPTnzGus7fwR8q1ypw=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/HistoryinPicturesENG-2125375ece.jpg",
         "topics": [
           "Film",
           "Entertainment",
           "Knowledge"
         ],
-        "publishedAt": "2025-08-08T14:43:55.985Z"
+        "publishedAt": "2025-08-08T14:43:55.985Z",
+        "remoteAvatar": "https://yt3.ggpht.com/85EsA_2lFtcXKUTqn8YoTLEtGGOmiq46WWx3Lfk4Bn5Ei6HMPbZFXWl-QPTnzGus7fwR8q1ypw=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -4656,7 +4689,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-017.mp3"
       },
-      "nicheCode": "H30"
+      "nicheCode": "H30",
+      "avatar": "assets/avatars/HistoryinPicturesENG-2125375ece.jpg"
     },
     {
       "id": "RAW-018",
@@ -4677,13 +4711,14 @@
         "views": 2984885,
         "videoCount": 148,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/0RovtnCaiLcKjXmC3KfohwXujQhJ2RbGPJhJMb40S58p4jqDiJmtjGHL7XPo1Fu2WzL0kRze=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/SinceWWII-cb831a6fa6.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Military"
         ],
-        "publishedAt": "2026-03-05T08:58:40.999Z"
+        "publishedAt": "2026-03-05T08:58:40.999Z",
+        "remoteAvatar": "https://yt3.ggpht.com/0RovtnCaiLcKjXmC3KfohwXujQhJ2RbGPJhJMb40S58p4jqDiJmtjGHL7XPo1Fu2WzL0kRze=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -4945,7 +4980,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-018.mp3"
       },
-      "nicheCode": "H19"
+      "nicheCode": "H19",
+      "avatar": "assets/avatars/SinceWWII-cb831a6fa6.jpg"
     },
     {
       "id": "RAW-019",
@@ -4966,12 +5002,13 @@
         "views": 509838,
         "videoCount": 21,
         "country": "JP",
-        "avatar": "https://yt3.ggpht.com/Wj0MqX3wB_BAc96YfvNv2J0INQL4xcmTXNJOheIk6he8UObjeNdzr_Ra7vU_sENAM7bkCAei4A=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/wanko-saikoTV-ac644c2b39.jpg",
         "topics": [
           "Pet",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2025-12-01T04:36:56.863Z"
+        "publishedAt": "2025-12-01T04:36:56.863Z",
+        "remoteAvatar": "https://yt3.ggpht.com/Wj0MqX3wB_BAc96YfvNv2J0INQL4xcmTXNJOheIk6he8UObjeNdzr_Ra7vU_sENAM7bkCAei4A=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -5211,7 +5248,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-019.mp3"
       },
-      "nicheCode": "H29"
+      "nicheCode": "H29",
+      "avatar": "assets/avatars/wanko-saikoTV-ac644c2b39.jpg"
     },
     {
       "id": "RAW-020",
@@ -5232,13 +5270,14 @@
         "views": 10271586,
         "videoCount": 18,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/ypWRPBOQV_fiJ08DD_N99xtx0TG_al8tfPXyTsWDH_FfPrYoS1GHGpSSBtyHUbwndCW_H08M0Q=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/official-yesterday-24b6a62326.jpg",
         "topics": [
           "Entertainment",
           "Society",
           "Knowledge"
         ],
-        "publishedAt": "2025-09-04T08:46:28.497Z"
+        "publishedAt": "2025-09-04T08:46:28.497Z",
+        "remoteAvatar": "https://yt3.ggpht.com/ypWRPBOQV_fiJ08DD_N99xtx0TG_al8tfPXyTsWDH_FfPrYoS1GHGpSSBtyHUbwndCW_H08M0Q=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -5507,7 +5546,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-020.mp3"
       },
-      "nicheCode": "H30"
+      "nicheCode": "H30",
+      "avatar": "assets/avatars/official-yesterday-24b6a62326.jpg"
     },
     {
       "id": "RAW-021",
@@ -5528,13 +5568,14 @@
         "views": 4887452,
         "videoCount": 18,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/N_36T8876xVNvJaNv8aUxL-_iSoV4VyMTh1CgZm2QIejfvOs_lSctT6Cd5lDlSk9vl24vseGXA=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/HiddenPlanetDocs-aeaa355a6f.jpg",
         "topics": [
           "Knowledge",
           "Tourism",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2026-02-22T18:52:25.918Z"
+        "publishedAt": "2026-02-22T18:52:25.918Z",
+        "remoteAvatar": "https://yt3.ggpht.com/N_36T8876xVNvJaNv8aUxL-_iSoV4VyMTh1CgZm2QIejfvOs_lSctT6Cd5lDlSk9vl24vseGXA=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -5818,7 +5859,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-021.mp3"
       },
-      "nicheCode": "H11"
+      "nicheCode": "H11",
+      "avatar": "assets/avatars/HiddenPlanetDocs-aeaa355a6f.jpg"
     },
     {
       "id": "RAW-022",
@@ -5839,13 +5881,14 @@
         "views": 443923,
         "videoCount": 28,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/YulG8GsET8xE_yMspDrNaFTDm7buO_qnZ_Hi66DGdcTxCASqyAqd2h518DNPQwV3ECJHbFHQHw8=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/Blitzkrieg-channel-10efce6acb.jpg",
         "topics": [
           "Society",
           "Knowledge",
           "Military"
         ],
-        "publishedAt": "2018-06-07T12:31:58Z"
+        "publishedAt": "2018-06-07T12:31:58Z",
+        "remoteAvatar": "https://yt3.ggpht.com/YulG8GsET8xE_yMspDrNaFTDm7buO_qnZ_Hi66DGdcTxCASqyAqd2h518DNPQwV3ECJHbFHQHw8=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -6107,7 +6150,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-022.mp3"
       },
-      "nicheCode": "H19"
+      "nicheCode": "H19",
+      "avatar": "assets/avatars/Blitzkrieg-channel-10efce6acb.jpg"
     },
     {
       "id": "RAW-023",
@@ -6128,14 +6172,15 @@
         "views": 6196350,
         "videoCount": 21,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/IlTcCtpxAI0bHORcKIfs9x56EMll5PZp_rp9_gx-fIv8UMai5mLTFmMIZZYo38hNrZOQWLRCEWQ=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/LatentDiffusion-586c7a4de0.jpg",
         "topics": [
           "Entertainment",
           "Video game culture",
           "Film",
           "Action-adventure game"
         ],
-        "publishedAt": "2023-04-27T19:42:24.873Z"
+        "publishedAt": "2023-04-27T19:42:24.873Z",
+        "remoteAvatar": "https://yt3.ggpht.com/IlTcCtpxAI0bHORcKIfs9x56EMll5PZp_rp9_gx-fIv8UMai5mLTFmMIZZYo38hNrZOQWLRCEWQ=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -6393,7 +6438,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-023.mp3"
       },
-      "nicheCode": "H37"
+      "nicheCode": "H37",
+      "avatar": "assets/avatars/LatentDiffusion-586c7a4de0.jpg"
     },
     {
       "id": "RAW-024",
@@ -6414,11 +6460,12 @@
         "views": 20000778,
         "videoCount": 356,
         "country": "BR",
-        "avatar": "https://yt3.ggpht.com/ytc/AIdro_lZ7MRhTziIZeT-BiaCGDmUPaxG04jpqdlnNY0VLflAiA=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/aoinfinitoealem7567-ab96a1d43c.jpg",
         "topics": [
           "Knowledge"
         ],
-        "publishedAt": "2020-09-13T20:07:20.757Z"
+        "publishedAt": "2020-09-13T20:07:20.757Z",
+        "remoteAvatar": "https://yt3.ggpht.com/ytc/AIdro_lZ7MRhTziIZeT-BiaCGDmUPaxG04jpqdlnNY0VLflAiA=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -6688,7 +6735,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-024.mp3"
       },
-      "nicheCode": "H11"
+      "nicheCode": "H11",
+      "avatar": "assets/avatars/aoinfinitoealem7567-ab96a1d43c.jpg"
     },
     {
       "id": "RAW-025",
@@ -6709,12 +6757,13 @@
         "views": 24787479,
         "videoCount": 30,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/XsRFweQyp2qJRoJ3wgfVaPe9SuV1EVMklsO8E986dHR32cmBau2jwma8h2O1XDUkxbWfWJmi0o8=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/gamemp4-7d22ef9cac.jpg",
         "topics": [
           "Action game",
           "Video game culture"
         ],
-        "publishedAt": "2023-01-22T21:01:29.467Z"
+        "publishedAt": "2023-01-22T21:01:29.467Z",
+        "remoteAvatar": "https://yt3.ggpht.com/XsRFweQyp2qJRoJ3wgfVaPe9SuV1EVMklsO8E986dHR32cmBau2jwma8h2O1XDUkxbWfWJmi0o8=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Hoạt hình / Giáo dục",
       "visionAnalysis": {
@@ -6977,7 +7026,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-025.mp3"
       },
-      "nicheCode": "H37"
+      "nicheCode": "H37",
+      "avatar": "assets/avatars/gamemp4-7d22ef9cac.jpg"
     },
     {
       "id": "RAW-028",
@@ -6998,12 +7048,13 @@
         "views": 992032,
         "videoCount": 6,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/rMeVHV9xAEG9mvxGZHePufigstXI9VqZQlSJ444EMIC-jw2VBWaXiofBT3AC1C7gfoN_KKx9MnE=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/WorkshopDecoded-64bad4fdcb.jpg",
         "topics": [
           "Lifestyle (sociology)",
           "Hobby"
         ],
-        "publishedAt": "2017-02-12T08:52:29Z"
+        "publishedAt": "2017-02-12T08:52:29Z",
+        "remoteAvatar": "https://yt3.ggpht.com/rMeVHV9xAEG9mvxGZHePufigstXI9VqZQlSJ444EMIC-jw2VBWaXiofBT3AC1C7gfoN_KKx9MnE=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -7235,7 +7286,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-028.mp3"
       },
-      "nicheCode": "H17"
+      "nicheCode": "H17",
+      "avatar": "assets/avatars/WorkshopDecoded-64bad4fdcb.jpg"
     },
     {
       "id": "RAW-029",
@@ -7256,13 +7308,14 @@
         "views": 48913058,
         "videoCount": 16,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/JEU6LdvFS2oLuzxXorKgsHgKDHgTvzb8SPRzfnUK4yIziUhVmNOxQK1C9gSgOOeENe1D2TSCxfE=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/MamaToonss-897d193be0.jpg",
         "topics": [
           "Humour",
           "Film",
           "Entertainment"
         ],
-        "publishedAt": "2025-05-07T15:47:13.734Z"
+        "publishedAt": "2025-05-07T15:47:13.734Z",
+        "remoteAvatar": "https://yt3.ggpht.com/JEU6LdvFS2oLuzxXorKgsHgKDHgTvzb8SPRzfnUK4yIziUhVmNOxQK1C9gSgOOeENe1D2TSCxfE=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -7548,7 +7601,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-029.mp3"
       },
-      "nicheCode": "H37"
+      "nicheCode": "H37",
+      "avatar": "assets/avatars/MamaToonss-897d193be0.jpg"
     },
     {
       "id": "RAW-030",
@@ -7569,13 +7623,14 @@
         "views": 1855055,
         "videoCount": 10,
         "country": "TR",
-        "avatar": "https://yt3.ggpht.com/OK5G5xEZcMlQcojK_A-Cr9lyw37eLG8dB23GTsl1w_L96eDrPN5E4rONbu7JVbqvSrYBj4U3=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/GYMDECODED1-44346c1b63.jpg",
         "topics": [
           "Lifestyle (sociology)",
           "Health",
           "Physical fitness"
         ],
-        "publishedAt": "2025-04-11T16:06:36.525Z"
+        "publishedAt": "2025-04-11T16:06:36.525Z",
+        "remoteAvatar": "https://yt3.ggpht.com/OK5G5xEZcMlQcojK_A-Cr9lyw37eLG8dB23GTsl1w_L96eDrPN5E4rONbu7JVbqvSrYBj4U3=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -7807,7 +7862,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-030.mp3"
       },
-      "nicheCode": "H04"
+      "nicheCode": "H04",
+      "avatar": "assets/avatars/GYMDECODED1-44346c1b63.jpg"
     },
     {
       "id": "RAW-031",
@@ -7828,13 +7884,14 @@
         "views": 308637735,
         "videoCount": 97,
         "country": "BR",
-        "avatar": "https://yt3.ggpht.com/lVlrm3exc22U37L7L8OUfLZeJMQxVD5bPdQM_6juo4gNBR0fiOUMPl3TgCIOwRzVm0tUQWftIg=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/jotadrive-b9b0cbc64b.jpg",
         "topics": [
           "Racing video game",
           "Video game culture",
           "Simulation video game"
         ],
-        "publishedAt": "2022-10-13T02:08:34.846Z"
+        "publishedAt": "2022-10-13T02:08:34.846Z",
+        "remoteAvatar": "https://yt3.ggpht.com/lVlrm3exc22U37L7L8OUfLZeJMQxVD5bPdQM_6juo4gNBR0fiOUMPl3TgCIOwRzVm0tUQWftIg=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Du lịch / Lái xe POV",
       "visionAnalysis": {
@@ -8083,7 +8140,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-031.mp3"
       },
-      "nicheCode": "H37"
+      "nicheCode": "H37",
+      "avatar": "assets/avatars/jotadrive-b9b0cbc64b.jpg"
     },
     {
       "id": "RAW-032",
@@ -8104,13 +8162,14 @@
         "views": 9516875,
         "videoCount": 86,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/N-HjE_xOHomDXpXvMeeqjDnke1VcL5cj9ovnJ9gFW_EMVDOeRi2mfATnHMO3XMUjnPUT9VoT-A=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/GraceDailyEnglish-e7fb352d06.jpg",
         "topics": [
           "Film",
           "Entertainment",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2007-09-21T17:58:34Z"
+        "publishedAt": "2007-09-21T17:58:34Z",
+        "remoteAvatar": "https://yt3.ggpht.com/N-HjE_xOHomDXpXvMeeqjDnke1VcL5cj9ovnJ9gFW_EMVDOeRi2mfATnHMO3XMUjnPUT9VoT-A=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -8342,7 +8401,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-032.mp3"
       },
-      "nicheCode": "H36"
+      "nicheCode": "H36",
+      "avatar": "assets/avatars/GraceDailyEnglish-e7fb352d06.jpg"
     },
     {
       "id": "RAW-033",
@@ -8363,13 +8423,14 @@
         "views": 0,
         "videoCount": 0,
         "country": "GB",
-        "avatar": "https://yt3.ggpht.com/K6yxMyTW1UbQbXw7Ek2D-T4hkcdo4WuVaZeBNfzkWiD4gyfL-4MNh9jLy2YbJJEnMRZGY0gBTco=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/tobikdh1-8beac36100.jpg",
         "topics": [
           "Lifestyle (sociology)",
           "Entertainment",
           "Film"
         ],
-        "publishedAt": "2025-09-16T15:46:34.565Z"
+        "publishedAt": "2025-09-16T15:46:34.565Z",
+        "remoteAvatar": "https://yt3.ggpht.com/K6yxMyTW1UbQbXw7Ek2D-T4hkcdo4WuVaZeBNfzkWiD4gyfL-4MNh9jLy2YbJJEnMRZGY0gBTco=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -8588,7 +8649,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-033.mp3"
       },
-      "nicheCode": "H36"
+      "nicheCode": "H36",
+      "avatar": "assets/avatars/tobikdh1-8beac36100.jpg"
     },
     {
       "id": "RAW-034",
@@ -8609,13 +8671,14 @@
         "views": 1420184,
         "videoCount": 36,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/B5nLy9X_6JPtetywmL4sv6CHL7O2f0PnVetVDAimLEJTaoo3VApFjPa2P263LePm9HruNb1Hozk=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/GraceEnglishLearning-1061dfc972.jpg",
         "topics": [
           "Lifestyle (sociology)",
           "Entertainment",
           "Film"
         ],
-        "publishedAt": "2026-05-27T05:09:08.057Z"
+        "publishedAt": "2026-05-27T05:09:08.057Z",
+        "remoteAvatar": "https://yt3.ggpht.com/B5nLy9X_6JPtetywmL4sv6CHL7O2f0PnVetVDAimLEJTaoo3VApFjPa2P263LePm9HruNb1Hozk=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Khoa học / Trái Đất EN",
       "visionAnalysis": {
@@ -8847,7 +8910,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-034.mp3"
       },
-      "nicheCode": "H36"
+      "nicheCode": "H36",
+      "avatar": "assets/avatars/GraceEnglishLearning-1061dfc972.jpg"
     },
     {
       "id": "RAW-035",
@@ -8868,13 +8932,14 @@
         "views": 4627714,
         "videoCount": 113,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/G7DgnOPoYf84I9H0Ij611c9VOU5b4nGC_ROUH8o01JX3Uuzp67dYvDsOwmCnHsujP0Jmsp0UC4g=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/PassionLearningLive-688a09922e.jpg",
         "topics": [
           "Lifestyle (sociology)",
           "Film",
           "Entertainment"
         ],
-        "publishedAt": "2026-02-28T11:08:41.231Z"
+        "publishedAt": "2026-02-28T11:08:41.231Z",
+        "remoteAvatar": "https://yt3.ggpht.com/G7DgnOPoYf84I9H0Ij611c9VOU5b4nGC_ROUH8o01JX3Uuzp67dYvDsOwmCnHsujP0Jmsp0UC4g=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Khoa học / Trái Đất EN",
       "visionAnalysis": {
@@ -9113,7 +9178,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-035.mp3"
       },
-      "nicheCode": "H36"
+      "nicheCode": "H36",
+      "avatar": "assets/avatars/PassionLearningLive-688a09922e.jpg"
     },
     {
       "id": "RAW-037",
@@ -9134,13 +9200,14 @@
         "views": 30047961,
         "videoCount": 86,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/tYpB57CnpecBPY0MWqWuuI2-q3R-T3ORH8PQ_tkbbf9Ce45jj-Jr0379uW-0dLwPgAVbs8TG=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/FamilyLifeEnglish888-50ee2fce0f.jpg",
         "topics": [
           "Lifestyle (sociology)",
           "Entertainment",
           "Film"
         ],
-        "publishedAt": "2026-06-12T02:01:35.808Z"
+        "publishedAt": "2026-06-12T02:01:35.808Z",
+        "remoteAvatar": "https://yt3.ggpht.com/tYpB57CnpecBPY0MWqWuuI2-q3R-T3ORH8PQ_tkbbf9Ce45jj-Jr0379uW-0dLwPgAVbs8TG=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Hoạt hình / Giáo dục",
       "visionAnalysis": {
@@ -9372,7 +9439,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-037.mp3"
       },
-      "nicheCode": "H36"
+      "nicheCode": "H36",
+      "avatar": "assets/avatars/FamilyLifeEnglish888-50ee2fce0f.jpg"
     },
     {
       "id": "RAW-038",
@@ -9393,13 +9461,14 @@
         "views": 4879977,
         "videoCount": 53,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/9AH1X5uuT4RR-rtTExYCn0_MWAjWJmBLqJN8ACSRrVF_6m0GxbBAD7DZfAM0CvsQKzpGfpTsiSw=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/HLGooDailyEnglish888-b6c42b928e.jpg",
         "topics": [
           "Film",
           "Entertainment",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2026-07-02T07:10:15.566Z"
+        "publishedAt": "2026-07-02T07:10:15.566Z",
+        "remoteAvatar": "https://yt3.ggpht.com/9AH1X5uuT4RR-rtTExYCn0_MWAjWJmBLqJN8ACSRrVF_6m0GxbBAD7DZfAM0CvsQKzpGfpTsiSw=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -9631,7 +9700,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-038.mp3"
       },
-      "nicheCode": "H36"
+      "nicheCode": "H36",
+      "avatar": "assets/avatars/HLGooDailyEnglish888-b6c42b928e.jpg"
     },
     {
       "id": "RAW-039",
@@ -9652,13 +9722,14 @@
         "views": 2304543,
         "videoCount": 525,
         "country": "IN",
-        "avatar": "https://yt3.ggpht.com/Z1v6_qjrv37nLhFBWT2IHCKxzedTwA5koufTvzEkHvDYuzUjX7cowcg_fO0fOVYZLltOyZyj=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/BeginnerEnglishZone123-e725993b25.jpg",
         "topics": [
           "Lifestyle (sociology)",
           "Entertainment",
           "Knowledge"
         ],
-        "publishedAt": "2025-02-22T06:28:41.301Z"
+        "publishedAt": "2025-02-22T06:28:41.301Z",
+        "remoteAvatar": "https://yt3.ggpht.com/Z1v6_qjrv37nLhFBWT2IHCKxzedTwA5koufTvzEkHvDYuzUjX7cowcg_fO0fOVYZLltOyZyj=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -9897,7 +9968,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-039.mp3"
       },
-      "nicheCode": "H36"
+      "nicheCode": "H36",
+      "avatar": "assets/avatars/BeginnerEnglishZone123-e725993b25.jpg"
     },
     {
       "id": "RAW-040",
@@ -9918,14 +9990,15 @@
         "views": 5514070,
         "videoCount": 26,
         "country": "BR",
-        "avatar": "https://yt3.ggpht.com/aQQ6nQCqAjGQQyFC1JZYAKr3xRuGDY8Un5l8SDYTjrqHrkllX58uYl30vt2YR7tASkDt6NzC8A=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/Amelia_DailyEnglish-2f658893d2.jpg",
         "topics": [
           "Film",
           "Entertainment",
           "Knowledge",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2025-12-17T11:07:18.072Z"
+        "publishedAt": "2025-12-17T11:07:18.072Z",
+        "remoteAvatar": "https://yt3.ggpht.com/aQQ6nQCqAjGQQyFC1JZYAKr3xRuGDY8Un5l8SDYTjrqHrkllX58uYl30vt2YR7tASkDt6NzC8A=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -10165,7 +10238,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-040.mp3"
       },
-      "nicheCode": "H36"
+      "nicheCode": "H36",
+      "avatar": "assets/avatars/Amelia_DailyEnglish-2f658893d2.jpg"
     },
     {
       "id": "RAW-042",
@@ -10186,14 +10260,15 @@
         "views": 926837,
         "videoCount": 50,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/4v4w_JfDc0TqMFi_hwlUy8ceqNvevtVbsQvu9hnqiHq4krMeFQy_ic8y7D6BM2urdVuOEJCSVQ=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/theorigin619-966966df34.jpg",
         "topics": [
           "Entertainment",
           "Film",
           "Knowledge",
           "Society"
         ],
-        "publishedAt": "2026-06-27T19:41:44.982Z"
+        "publishedAt": "2026-06-27T19:41:44.982Z",
+        "remoteAvatar": "https://yt3.ggpht.com/4v4w_JfDc0TqMFi_hwlUy8ceqNvevtVbsQvu9hnqiHq4krMeFQy_ic8y7D6BM2urdVuOEJCSVQ=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -10425,7 +10500,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-042.mp3"
       },
-      "nicheCode": "H31"
+      "nicheCode": "H31",
+      "avatar": "assets/avatars/theorigin619-966966df34.jpg"
     },
     {
       "id": "RAW-043",
@@ -10446,7 +10522,7 @@
         "views": 1043856,
         "videoCount": 27,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/PDLRh0e8N_n7FIPTFhr0Y5eouOAaajTfdGA8HhV86KdWRz4vLVUQ9txXEq_ATDcOT53JqXS4=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/Shipped_YT-044e0dffb2.jpg",
         "topics": [
           "Film",
           "Entertainment",
@@ -10454,7 +10530,8 @@
           "Knowledge",
           "Health"
         ],
-        "publishedAt": "2026-03-26T18:27:24.648Z"
+        "publishedAt": "2026-03-26T18:27:24.648Z",
+        "remoteAvatar": "https://yt3.ggpht.com/PDLRh0e8N_n7FIPTFhr0Y5eouOAaajTfdGA8HhV86KdWRz4vLVUQ9txXEq_ATDcOT53JqXS4=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -10686,7 +10763,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-043.mp3"
       },
-      "nicheCode": "H32"
+      "nicheCode": "H32",
+      "avatar": "assets/avatars/Shipped_YT-044e0dffb2.jpg"
     },
     {
       "id": "RAW-044",
@@ -10707,13 +10785,14 @@
         "views": 3119368,
         "videoCount": 57,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/qtHKYwYy5QV4BKxRiLli6t0IF7U1Iks3c7XCmI_S6bNMAGzzaLvZJDs4KrK9_KYbx0eMaVPZ=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/crumblore-yt-2a099113ce.jpg",
         "topics": [
           "Knowledge",
           "Food",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2026-05-14T16:18:43.498Z"
+        "publishedAt": "2026-05-14T16:18:43.498Z",
+        "remoteAvatar": "https://yt3.ggpht.com/qtHKYwYy5QV4BKxRiLli6t0IF7U1Iks3c7XCmI_S6bNMAGzzaLvZJDs4KrK9_KYbx0eMaVPZ=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -10945,7 +11024,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-044.mp3"
       },
-      "nicheCode": "H32"
+      "nicheCode": "H32",
+      "avatar": "assets/avatars/crumblore-yt-2a099113ce.jpg"
     },
     {
       "id": "RAW-045",
@@ -10966,13 +11046,14 @@
         "views": 290915,
         "videoCount": 42,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/Wdkvu7cAT_1pXQUKRS0XpnqGEHUIc6U65zMvWkMOVlF5a8aOFFMkXm3BGQrA-BjERffkDKvHNQ=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/Historybeneathofficial-e4816d736e.jpg",
         "topics": [
           "Knowledge",
           "Food",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2015-10-15T23:15:26Z"
+        "publishedAt": "2015-10-15T23:15:26Z",
+        "remoteAvatar": "https://yt3.ggpht.com/Wdkvu7cAT_1pXQUKRS0XpnqGEHUIc6U65zMvWkMOVlF5a8aOFFMkXm3BGQrA-BjERffkDKvHNQ=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -11216,7 +11297,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-045.mp3"
       },
-      "nicheCode": "H32"
+      "nicheCode": "H32",
+      "avatar": "assets/avatars/Historybeneathofficial-e4816d736e.jpg"
     },
     {
       "id": "RAW-046",
@@ -11237,12 +11319,13 @@
         "views": 3789607,
         "videoCount": 120,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/12RRCuKj14M98f3yYaEAA2dnxuqMineuy6bt3XP_0Nr_v65u3aS9fL3UBw789D-BOHABLjx0Fw=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/WeirdwardBound-917a64cb3f.jpg",
         "topics": [
           "Knowledge",
           "Society"
         ],
-        "publishedAt": "2026-04-09T14:46:11.869Z"
+        "publishedAt": "2026-04-09T14:46:11.869Z",
+        "remoteAvatar": "https://yt3.ggpht.com/12RRCuKj14M98f3yYaEAA2dnxuqMineuy6bt3XP_0Nr_v65u3aS9fL3UBw789D-BOHABLjx0Fw=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -11474,7 +11557,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-046.mp3"
       },
-      "nicheCode": "H32"
+      "nicheCode": "H32",
+      "avatar": "assets/avatars/WeirdwardBound-917a64cb3f.jpg"
     },
     {
       "id": "RAW-047",
@@ -11495,13 +11579,14 @@
         "views": 97799,
         "videoCount": 54,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/RcdXphcSqyEVTzYIMH9isIfAusvcB_fkrNMOPdfKVY5N1A8HXrrDXI5pQP7YPYSj-u9M9fmLdg=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/AppetiteForHistory-b02ede9b7b.jpg",
         "topics": [
           "Knowledge",
           "Food",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2026-07-02T21:38:40.185Z"
+        "publishedAt": "2026-07-02T21:38:40.185Z",
+        "remoteAvatar": "https://yt3.ggpht.com/RcdXphcSqyEVTzYIMH9isIfAusvcB_fkrNMOPdfKVY5N1A8HXrrDXI5pQP7YPYSj-u9M9fmLdg=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -11733,7 +11818,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-047.mp3"
       },
-      "nicheCode": "H32"
+      "nicheCode": "H32",
+      "avatar": "assets/avatars/AppetiteForHistory-b02ede9b7b.jpg"
     },
     {
       "id": "RAW-048",
@@ -11754,13 +11840,14 @@
         "views": 1521373,
         "videoCount": 17,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/gnMEkHUG1dEcoMdpUu_gmjsqsUO1UaBDxoHN3C6nhP6C4ISD-fpWjbp_iq6FPH9xSzzmUL7xmDo=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/kronosethistory-975fd97fc4.jpg",
         "topics": [
           "Technology",
           "Knowledge",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2026-04-27T15:45:34.968Z"
+        "publishedAt": "2026-04-27T15:45:34.968Z",
+        "remoteAvatar": "https://yt3.ggpht.com/gnMEkHUG1dEcoMdpUu_gmjsqsUO1UaBDxoHN3C6nhP6C4ISD-fpWjbp_iq6FPH9xSzzmUL7xmDo=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -12000,7 +12087,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-048.mp3"
       },
-      "nicheCode": "H31"
+      "nicheCode": "H31",
+      "avatar": "assets/avatars/kronosethistory-975fd97fc4.jpg"
     },
     {
       "id": "RAW-049",
@@ -12021,13 +12109,14 @@
         "views": 963671,
         "videoCount": 24,
         "country": "JP",
-        "avatar": "https://yt3.ggpht.com/ipcQbZHU59JLJmwsfy5HbjL9i5XIaMiSNUmLH2qravcr91ereq59Wco8hklhuRGtLV6JFuhA=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/ch-aed4bfd337.jpg",
         "topics": [
           "Health",
           "Knowledge",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2026-06-18T14:43:40.388Z"
+        "publishedAt": "2026-06-18T14:43:40.388Z",
+        "remoteAvatar": "https://yt3.ggpht.com/ipcQbZHU59JLJmwsfy5HbjL9i5XIaMiSNUmLH2qravcr91ereq59Wco8hklhuRGtLV6JFuhA=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Khoa học / Trái Đất EN",
       "visionAnalysis": {
@@ -12259,7 +12348,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-049.mp3"
       },
-      "nicheCode": "H11"
+      "nicheCode": "H11",
+      "avatar": "assets/avatars/ch-aed4bfd337.jpg"
     },
     {
       "id": "RAW-050",
@@ -12280,12 +12370,13 @@
         "views": 27155736,
         "videoCount": 693,
         "country": "JP",
-        "avatar": "https://yt3.ggpht.com/CHI2ryZIgL8ZNpyOSRlap6ixZV8nQr7UgWeQIzFYLLrZKp885RKn309SjsVeyDX24OY_BtX3qI0=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/yamato2030byromifilm-5e19737642.jpg",
         "topics": [
           "Film",
           "Entertainment"
         ],
-        "publishedAt": "2018-02-21T06:15:42Z"
+        "publishedAt": "2018-02-21T06:15:42Z",
+        "remoteAvatar": "https://yt3.ggpht.com/CHI2ryZIgL8ZNpyOSRlap6ixZV8nQr7UgWeQIzFYLLrZKp885RKn309SjsVeyDX24OY_BtX3qI0=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Hoạt hình / Giáo dục",
       "visionAnalysis": {
@@ -12504,7 +12595,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-050.mp3"
       },
-      "nicheCode": "H37"
+      "nicheCode": "H37",
+      "avatar": "assets/avatars/yamato2030byromifilm-5e19737642.jpg"
     },
     {
       "id": "RAW-051",
@@ -12525,13 +12617,14 @@
         "views": 4138532,
         "videoCount": 176,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/QPGthfME3ZMiT2I36GHBq7K2CL6YvS3v2vtBlk2LN3_XKp_Q_Qzk20hcp9Wge7VLNhWl0wQbJg=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/SimpleConceptsExplained-73429e2f4e.jpg",
         "topics": [
           "Lifestyle (sociology)",
           "Knowledge",
           "Technology"
         ],
-        "publishedAt": "2025-12-16T14:57:17.911Z"
+        "publishedAt": "2025-12-16T14:57:17.911Z",
+        "remoteAvatar": "https://yt3.ggpht.com/QPGthfME3ZMiT2I36GHBq7K2CL6YvS3v2vtBlk2LN3_XKp_Q_Qzk20hcp9Wge7VLNhWl0wQbJg=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -12793,7 +12886,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-051.mp3"
       },
-      "nicheCode": "H17"
+      "nicheCode": "H17",
+      "avatar": "assets/avatars/SimpleConceptsExplained-73429e2f4e.jpg"
     },
     {
       "id": "RAW-052",
@@ -12814,11 +12908,12 @@
         "views": 304834,
         "videoCount": 52,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/AOwuhBDGEXDDaMnG9Nt9gulLPkk5zi3EDVx84ht7Cf5RDYwdC-Li65yp1DTW5P8rhSMQXdFMbw=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/PsychUnboxed-c5bd115f77.jpg",
         "topics": [
           "Knowledge"
         ],
-        "publishedAt": "2024-09-01T14:42:07.466Z"
+        "publishedAt": "2024-09-01T14:42:07.466Z",
+        "remoteAvatar": "https://yt3.ggpht.com/AOwuhBDGEXDDaMnG9Nt9gulLPkk5zi3EDVx84ht7Cf5RDYwdC-Li65yp1DTW5P8rhSMQXdFMbw=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -13080,7 +13175,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-052.mp3"
       },
-      "nicheCode": "H20"
+      "nicheCode": "H20",
+      "avatar": "assets/avatars/PsychUnboxed-c5bd115f77.jpg"
     },
     {
       "id": "RAW-053",
@@ -13101,11 +13197,12 @@
         "views": 4584378,
         "videoCount": 68,
         "country": "PT",
-        "avatar": "https://yt3.ggpht.com/KRUB6L65UStkJPGw_A6ofn91bbGnc__tBI1xb6J1BzkgOLi8sf15tqUA6vtQJJCNySfFA1xAe0U=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/WorldsBeforeUsofficial-86580b3ea0.jpg",
         "topics": [
           "Knowledge"
         ],
-        "publishedAt": "2026-01-09T01:57:29.239Z"
+        "publishedAt": "2026-01-09T01:57:29.239Z",
+        "remoteAvatar": "https://yt3.ggpht.com/KRUB6L65UStkJPGw_A6ofn91bbGnc__tBI1xb6J1BzkgOLi8sf15tqUA6vtQJJCNySfFA1xAe0U=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -13367,7 +13464,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-053.mp3"
       },
-      "nicheCode": "H30"
+      "nicheCode": "H30",
+      "avatar": "assets/avatars/WorldsBeforeUsofficial-86580b3ea0.jpg"
     },
     {
       "id": "RAW-054",
@@ -13388,12 +13486,13 @@
         "views": 42633488,
         "videoCount": 88,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/rC9UTaSbmb2L5k8Fd_IJ-3RDNK_te9KkOM7ndbKonh1AsM4XQ-GUaB32lJ9WKgC2O8WsJjspDg=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/OfficialBeyondTheBlue-a2a40c548d.jpg",
         "topics": [
           "Knowledge",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2024-12-22T23:47:50.965Z"
+        "publishedAt": "2024-12-22T23:47:50.965Z",
+        "remoteAvatar": "https://yt3.ggpht.com/rC9UTaSbmb2L5k8Fd_IJ-3RDNK_te9KkOM7ndbKonh1AsM4XQ-GUaB32lJ9WKgC2O8WsJjspDg=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -13662,7 +13761,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-054.mp3"
       },
-      "nicheCode": "H11"
+      "nicheCode": "H11",
+      "avatar": "assets/avatars/OfficialBeyondTheBlue-a2a40c548d.jpg"
     },
     {
       "id": "RAW-055",
@@ -13683,14 +13783,15 @@
         "views": 29409672,
         "videoCount": 121,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/RFcxmnk-Pf5gG-QETE5vXGV9aW49y0tEtEFZJHNi4x9EEIeEcB5ySAdktkGqHn_Kyv0NwUTczw=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/trueglobe66-d86a1e8694.jpg",
         "topics": [
           "Film",
           "Tourism",
           "Lifestyle (sociology)",
           "Entertainment"
         ],
-        "publishedAt": "2025-07-23T09:10:03.683Z"
+        "publishedAt": "2025-07-23T09:10:03.683Z",
+        "remoteAvatar": "https://yt3.ggpht.com/RFcxmnk-Pf5gG-QETE5vXGV9aW49y0tEtEFZJHNi4x9EEIeEcB5ySAdktkGqHn_Kyv0NwUTczw=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -13960,7 +14061,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-055.mp3"
       },
-      "nicheCode": "H39"
+      "nicheCode": "H39",
+      "avatar": "assets/avatars/trueglobe66-d86a1e8694.jpg"
     },
     {
       "id": "RAW-056",
@@ -13981,14 +14083,15 @@
         "views": 5789244,
         "videoCount": 27,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/rH-HMyG3JR-HQ6TQOjDQNs3aZs0WBiNDSCCOLfCxy8M-AMloTnsGhSOAS_2KYOKS1U_qEtS6=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/HappyTravel99-05f95084cc.jpg",
         "topics": [
           "Entertainment",
           "Film",
           "Lifestyle (sociology)",
           "Tourism"
         ],
-        "publishedAt": "2026-07-06T07:21:40.069Z"
+        "publishedAt": "2026-07-06T07:21:40.069Z",
+        "remoteAvatar": "https://yt3.ggpht.com/rH-HMyG3JR-HQ6TQOjDQNs3aZs0WBiNDSCCOLfCxy8M-AMloTnsGhSOAS_2KYOKS1U_qEtS6=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Du lịch / Lái xe POV",
       "visionAnalysis": {
@@ -14250,7 +14353,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-056.mp3"
       },
-      "nicheCode": "H39"
+      "nicheCode": "H39",
+      "avatar": "assets/avatars/HappyTravel99-05f95084cc.jpg"
     },
     {
       "id": "RAW-057",
@@ -14271,14 +14375,15 @@
         "views": 42591618,
         "videoCount": 35,
         "country": "CA",
-        "avatar": "https://yt3.ggpht.com/iKWOxRTwjs5_tqrPwc2rq2-JRnSFCIYHtGi2MRkUgdiQm-NB-sK8Ba3YiSZAaUGzhD5xqEiD=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/travpedia-c443cef954.jpg",
         "topics": [
           "Tourism",
           "Lifestyle (sociology)",
           "Film",
           "Entertainment"
         ],
-        "publishedAt": "2023-02-04T23:38:18.815Z"
+        "publishedAt": "2023-02-04T23:38:18.815Z",
+        "remoteAvatar": "https://yt3.ggpht.com/iKWOxRTwjs5_tqrPwc2rq2-JRnSFCIYHtGi2MRkUgdiQm-NB-sK8Ba3YiSZAaUGzhD5xqEiD=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -14548,7 +14653,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-057.mp3"
       },
-      "nicheCode": "H39"
+      "nicheCode": "H39",
+      "avatar": "assets/avatars/travpedia-c443cef954.jpg"
     },
     {
       "id": "RAW-058",
@@ -14569,12 +14675,13 @@
         "views": 27782975,
         "videoCount": 273,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/bRGuSBcOk9h0r9_Utlih802wDE-XvNOzBpjdji8u01_aw9M49R9jufdA44H4FjAzLiRSB4DEtJ8=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/BestTravel2-640af723d6.jpg",
         "topics": [
           "Lifestyle (sociology)",
           "Tourism"
         ],
-        "publishedAt": "2024-12-12T11:45:08.205Z"
+        "publishedAt": "2024-12-12T11:45:08.205Z",
+        "remoteAvatar": "https://yt3.ggpht.com/bRGuSBcOk9h0r9_Utlih802wDE-XvNOzBpjdji8u01_aw9M49R9jufdA44H4FjAzLiRSB4DEtJ8=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Du lịch / Lái xe POV",
       "visionAnalysis": {
@@ -14843,7 +14950,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-058.mp3"
       },
-      "nicheCode": "H39"
+      "nicheCode": "H39",
+      "avatar": "assets/avatars/BestTravel2-640af723d6.jpg"
     },
     {
       "id": "RAW-059",
@@ -14864,11 +14972,12 @@
         "views": 525176,
         "videoCount": 6,
         "country": "CA",
-        "avatar": "https://yt3.ggpht.com/ADFwJlDyVBH27PFAgbgsshKfSXa7EW7hieBNH1UGmdOe31HIg_jzxRSMxgDoPrrPFjQbgl9Row=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/ytAnimistry-08b3052c34.jpg",
         "topics": [
           "Knowledge"
         ],
-        "publishedAt": "2025-03-20T22:54:09.022Z"
+        "publishedAt": "2025-03-20T22:54:09.022Z",
+        "remoteAvatar": "https://yt3.ggpht.com/ADFwJlDyVBH27PFAgbgsshKfSXa7EW7hieBNH1UGmdOe31HIg_jzxRSMxgDoPrrPFjQbgl9Row=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -15110,7 +15219,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-059.mp3"
       },
-      "nicheCode": "H30"
+      "nicheCode": "H30",
+      "avatar": "assets/avatars/ytAnimistry-08b3052c34.jpg"
     },
     {
       "id": "RAW-060",
@@ -15131,14 +15241,15 @@
         "views": 35477569,
         "videoCount": 74,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/4jWxnkGKQ9qmN6ZnNy9XF5vyftde22ybeXXlRiVNRH1BW_fWEpperXCtZd0pTSO5VSIHB18ckWA=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/Jay_Hona-09ad68ae99.jpg",
         "topics": [
           "Lifestyle (sociology)",
           "Film",
           "Knowledge",
           "Entertainment"
         ],
-        "publishedAt": "2023-04-13T10:58:37.216Z"
+        "publishedAt": "2023-04-13T10:58:37.216Z",
+        "remoteAvatar": "https://yt3.ggpht.com/4jWxnkGKQ9qmN6ZnNy9XF5vyftde22ybeXXlRiVNRH1BW_fWEpperXCtZd0pTSO5VSIHB18ckWA=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Khoa học / Trái Đất EN",
       "visionAnalysis": {
@@ -15378,7 +15489,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-060.mp3"
       },
-      "nicheCode": "H11"
+      "nicheCode": "H11",
+      "avatar": "assets/avatars/Jay_Hona-09ad68ae99.jpg"
     },
     {
       "id": "RAW-062",
@@ -15399,14 +15511,15 @@
         "views": 1867977,
         "videoCount": 29,
         "country": "FR",
-        "avatar": "https://yt3.ggpht.com/2mQhtYD-4n4bDXZwI7v9H4H9vsVdLHC6I-qjQifr8g4-4tZO8mx8enbbV9fhXoE9-VRGIHUONB4=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/Theleme-confidential-c4935f7403.jpg",
         "topics": [
           "Knowledge",
           "Technology",
           "Society",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2026-05-15T10:13:01.098Z"
+        "publishedAt": "2026-05-15T10:13:01.098Z",
+        "remoteAvatar": "https://yt3.ggpht.com/2mQhtYD-4n4bDXZwI7v9H4H9vsVdLHC6I-qjQifr8g4-4tZO8mx8enbbV9fhXoE9-VRGIHUONB4=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -15638,7 +15751,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-062.mp3"
       },
-      "nicheCode": "H18"
+      "nicheCode": "H18",
+      "avatar": "assets/avatars/Theleme-confidential-c4935f7403.jpg"
     },
     {
       "id": "RAW-063",
@@ -15659,13 +15773,14 @@
         "views": 1058199,
         "videoCount": 9,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/7mXO-9sawewLV-6aHMkquHLeEsnldvAjt23iMBWVOCY6OOD0CILhHljOzP7McxfG1o7HmAJe5A=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/AnimatedMilitaryy-724ebc0569.jpg",
         "topics": [
           "Military",
           "Society",
           "Politics"
         ],
-        "publishedAt": "2026-04-05T15:10:18.09Z"
+        "publishedAt": "2026-04-05T15:10:18.09Z",
+        "remoteAvatar": "https://yt3.ggpht.com/7mXO-9sawewLV-6aHMkquHLeEsnldvAjt23iMBWVOCY6OOD0CILhHljOzP7McxfG1o7HmAJe5A=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Khoa học / Trái Đất EN",
       "visionAnalysis": {
@@ -15905,7 +16020,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-063.mp3"
       },
-      "nicheCode": "H19"
+      "nicheCode": "H19",
+      "avatar": "assets/avatars/AnimatedMilitaryy-724ebc0569.jpg"
     },
     {
       "id": "RAW-064",
@@ -15926,12 +16042,13 @@
         "views": 1132165,
         "videoCount": 29,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/J77ePQQL24BDg9bpL314j8PvC80zFeiUufjq61WyEAirrzWKTd_fb0uPlcVHcb0acK7dTWG6sYg=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/brandreport1-36ffb20aa4.jpg",
         "topics": [
           "Health",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2026-01-11T16:10:42.222Z"
+        "publishedAt": "2026-01-11T16:10:42.222Z",
+        "remoteAvatar": "https://yt3.ggpht.com/J77ePQQL24BDg9bpL314j8PvC80zFeiUufjq61WyEAirrzWKTd_fb0uPlcVHcb0acK7dTWG6sYg=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -16170,7 +16287,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-064.mp3"
       },
-      "nicheCode": "H04"
+      "nicheCode": "H04",
+      "avatar": "assets/avatars/brandreport1-36ffb20aa4.jpg"
     },
     {
       "id": "RAW-065",
@@ -16191,12 +16309,13 @@
         "views": 78461759,
         "videoCount": 133,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/jok3YRMA4IzluQ5m4xQE20hyEspNAZzXiAyir6oVzKaBo-VoNvxgN9lo_U93LhhkluhPzgilKA=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/PlebMagic-d882f01b04.jpg",
         "topics": [
           "Knowledge",
           "Entertainment"
         ],
-        "publishedAt": "2024-11-09T10:41:07.446Z"
+        "publishedAt": "2024-11-09T10:41:07.446Z",
+        "remoteAvatar": "https://yt3.ggpht.com/jok3YRMA4IzluQ5m4xQE20hyEspNAZzXiAyir6oVzKaBo-VoNvxgN9lo_U93LhhkluhPzgilKA=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -16465,7 +16584,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-065.mp3"
       },
-      "nicheCode": "H30"
+      "nicheCode": "H30",
+      "avatar": "assets/avatars/PlebMagic-d882f01b04.jpg"
     },
     {
       "id": "RAW-066",
@@ -16486,12 +16606,13 @@
         "views": 4687389,
         "videoCount": 132,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/K9CiOV6rEmLwwAv8qkulTLO89yFP2y__Z_TbQNHLuDFwPE214a2sn2RIPgcKOJa159ehM5Dgjhk=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/noema-272-2a20e4d0e7.jpg",
         "topics": [
           "Knowledge",
           "Religion"
         ],
-        "publishedAt": "2025-09-21T08:31:12.9Z"
+        "publishedAt": "2025-09-21T08:31:12.9Z",
+        "remoteAvatar": "https://yt3.ggpht.com/K9CiOV6rEmLwwAv8qkulTLO89yFP2y__Z_TbQNHLuDFwPE214a2sn2RIPgcKOJa159ehM5Dgjhk=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Triết lý / Tâm linh",
       "visionAnalysis": {
@@ -16731,7 +16852,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-066.mp3"
       },
-      "nicheCode": "H20"
+      "nicheCode": "H20",
+      "avatar": "assets/avatars/noema-272-2a20e4d0e7.jpg"
     },
     {
       "id": "RAW-067",
@@ -16752,11 +16874,12 @@
         "views": 892540,
         "videoCount": 65,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/QFZhqHvolEvOi9OucjySb_3mU2tU0SCit2RjuKqKqho2aFmFort1Ru6nbCysWa43NX7f2huUfjY=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/greendudeexplains-87fa0cef9a.jpg",
         "topics": [
           "Knowledge"
         ],
-        "publishedAt": "2024-08-01T16:22:21.57Z"
+        "publishedAt": "2024-08-01T16:22:21.57Z",
+        "remoteAvatar": "https://yt3.ggpht.com/QFZhqHvolEvOi9OucjySb_3mU2tU0SCit2RjuKqKqho2aFmFort1Ru6nbCysWa43NX7f2huUfjY=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Khoa học / Trái Đất EN",
       "visionAnalysis": {
@@ -16995,7 +17118,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-067.mp3"
       },
-      "nicheCode": "H11"
+      "nicheCode": "H11",
+      "avatar": "assets/avatars/greendudeexplains-87fa0cef9a.jpg"
     },
     {
       "id": "RAW-068",
@@ -17016,11 +17140,12 @@
         "views": 14571340,
         "videoCount": 65,
         "country": "CA",
-        "avatar": "https://yt3.ggpht.com/jXaDH04GEGLJEDjbCOZj4c3tMbt3A7K8EnGJWDrGnisjLoSPKEF-v6fc7-jP35o1HapxOPBYAQ=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/ThePhilosophyOfMarketing-20b39a6d00.jpg",
         "topics": [
           "Knowledge"
         ],
-        "publishedAt": "2023-03-09T17:56:20.561Z"
+        "publishedAt": "2023-03-09T17:56:20.561Z",
+        "remoteAvatar": "https://yt3.ggpht.com/jXaDH04GEGLJEDjbCOZj4c3tMbt3A7K8EnGJWDrGnisjLoSPKEF-v6fc7-jP35o1HapxOPBYAQ=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -17280,7 +17405,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-068.mp3"
       },
-      "nicheCode": "H31"
+      "nicheCode": "H31",
+      "avatar": "assets/avatars/ThePhilosophyOfMarketing-20b39a6d00.jpg"
     },
     {
       "id": "RAW-069",
@@ -17301,12 +17427,13 @@
         "views": 2081253,
         "videoCount": 115,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/c6AEEjgH4WeU76psTyfI9B9SvItLCegwyhIVpXnKIPMjL9NZWnjnLCsEoez0MQ0yh2P6H35WQg=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/GodsPerspective10-f40389f242.jpg",
         "topics": [
           "Religion",
           "Society"
         ],
-        "publishedAt": "2026-04-21T09:33:57.869Z"
+        "publishedAt": "2026-04-21T09:33:57.869Z",
+        "remoteAvatar": "https://yt3.ggpht.com/c6AEEjgH4WeU76psTyfI9B9SvItLCegwyhIVpXnKIPMjL9NZWnjnLCsEoez0MQ0yh2P6H35WQg=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -17568,7 +17695,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-069.mp3"
       },
-      "nicheCode": "H01"
+      "nicheCode": "H01",
+      "avatar": "assets/avatars/GodsPerspective10-f40389f242.jpg"
     },
     {
       "id": "RAW-070",
@@ -17589,13 +17717,14 @@
         "views": 532839,
         "videoCount": 28,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/uPhgM1NqSt313VYLpA-je7c5ucWGlFjRB4yltU8wg7fNixDl1kwsfmJl1sCiuL-enNgz5LfnoS4=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/RedoubtWarHistory-a565e47019.jpg",
         "topics": [
           "Knowledge",
           "Military",
           "Society"
         ],
-        "publishedAt": "2026-06-27T16:10:56.171Z"
+        "publishedAt": "2026-06-27T16:10:56.171Z",
+        "remoteAvatar": "https://yt3.ggpht.com/uPhgM1NqSt313VYLpA-je7c5ucWGlFjRB4yltU8wg7fNixDl1kwsfmJl1sCiuL-enNgz5LfnoS4=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -17827,7 +17956,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-070.mp3"
       },
-      "nicheCode": "H19"
+      "nicheCode": "H19",
+      "avatar": "assets/avatars/RedoubtWarHistory-a565e47019.jpg"
     },
     {
       "id": "RAW-075",
@@ -17848,14 +17978,15 @@
         "views": 2044121,
         "videoCount": 32,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/KVpKgh0Y5W1oOQ6rN-IIH6hJsJAPP8PZkeRQDpIXyn-PsfpIuFVOL-HbnrusUYbqZgv6gfYalw=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/The_Regular_Recap-601ab068f0.jpg",
         "topics": [
           "Humour",
           "Television program",
           "Film",
           "Entertainment"
         ],
-        "publishedAt": "2025-06-28T09:54:04.807Z"
+        "publishedAt": "2025-06-28T09:54:04.807Z",
+        "remoteAvatar": "https://yt3.ggpht.com/KVpKgh0Y5W1oOQ6rN-IIH6hJsJAPP8PZkeRQDpIXyn-PsfpIuFVOL-HbnrusUYbqZgv6gfYalw=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -18091,7 +18222,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-075.mp3"
       },
-      "nicheCode": "H37"
+      "nicheCode": "H37",
+      "avatar": "assets/avatars/The_Regular_Recap-601ab068f0.jpg"
     },
     {
       "id": "RAW-076",
@@ -18112,13 +18244,14 @@
         "views": 332396020,
         "videoCount": 117,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/BVML0E3Jw-lKw5l8jRVl28WwvAnx5l6khWQfUPPLMersCseW7uqOOfyiifvRy_FwY_UtQLHKJUE=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/unseentruecrime-68eaea58b3.jpg",
         "topics": [
           "Film",
           "Society",
           "Entertainment"
         ],
-        "publishedAt": "2022-04-27T18:07:59.981Z"
+        "publishedAt": "2022-04-27T18:07:59.981Z",
+        "remoteAvatar": "https://yt3.ggpht.com/BVML0E3Jw-lKw5l8jRVl28WwvAnx5l6khWQfUPPLMersCseW7uqOOfyiifvRy_FwY_UtQLHKJUE=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -18368,7 +18501,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-076.mp3"
       },
-      "nicheCode": "H35"
+      "nicheCode": "H35",
+      "avatar": "assets/avatars/unseentruecrime-68eaea58b3.jpg"
     },
     {
       "id": "RAW-077",
@@ -18389,12 +18523,13 @@
         "views": 3838485428,
         "videoCount": 386,
         "country": "DE",
-        "avatar": "https://yt3.ggpht.com/ytc/AIdro_n1Ribd7LwdP_qKtqWL3ZDfIgv9M1d6g78VwpHGXVR2Ir4=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/kurzgesagt-3dc581a4d5.jpg",
         "topics": [
           "Health",
           "Knowledge"
         ],
-        "publishedAt": "2013-07-09T20:17:20Z"
+        "publishedAt": "2013-07-09T20:17:20Z",
+        "remoteAvatar": "https://yt3.ggpht.com/ytc/AIdro_n1Ribd7LwdP_qKtqWL3ZDfIgv9M1d6g78VwpHGXVR2Ir4=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -18656,7 +18791,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-077.mp3"
       },
-      "nicheCode": "H11"
+      "nicheCode": "H11",
+      "avatar": "assets/avatars/kurzgesagt-3dc581a4d5.jpg"
     },
     {
       "id": "RAW-078",
@@ -18677,14 +18813,15 @@
         "views": 40887771,
         "videoCount": 412,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/mfUVcYMTwpUTKXUrks6bre66cT4CM3QTgkvFkOHySbRwzSA1NmFFdA2Xa1iryjeCS63HjqUm4w=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/oldmoneyluxury-f185ea75b3.jpg",
         "topics": [
           "Entertainment",
           "Knowledge",
           "Society",
           "Film"
         ],
-        "publishedAt": "2023-03-01T09:14:50.059Z"
+        "publishedAt": "2023-03-01T09:14:50.059Z",
+        "remoteAvatar": "https://yt3.ggpht.com/mfUVcYMTwpUTKXUrks6bre66cT4CM3QTgkvFkOHySbRwzSA1NmFFdA2Xa1iryjeCS63HjqUm4w=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -18944,7 +19081,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-078.mp3"
       },
-      "nicheCode": "H31"
+      "nicheCode": "H31",
+      "avatar": "assets/avatars/oldmoneyluxury-f185ea75b3.jpg"
     },
     {
       "id": "RAW-079",
@@ -18965,13 +19103,14 @@
         "views": 25164130,
         "videoCount": 12,
         "country": "NL",
-        "avatar": "https://yt3.ggpht.com/M3Vilmhadeoug1higX8tXlB7X6WtR1ldZu3KN0lNsShdkgALPqRl7T4yimrs0utnJz-zjKVbqA=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/JesseJokes-9623bd579c.jpg",
         "topics": [
           "Video game culture",
           "Film",
           "Entertainment"
         ],
-        "publishedAt": "2023-06-27T15:53:58.916Z"
+        "publishedAt": "2023-06-27T15:53:58.916Z",
+        "remoteAvatar": "https://yt3.ggpht.com/M3Vilmhadeoug1higX8tXlB7X6WtR1ldZu3KN0lNsShdkgALPqRl7T4yimrs0utnJz-zjKVbqA=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Hoạt hình / Giáo dục",
       "visionAnalysis": {
@@ -19229,7 +19368,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-079.mp3"
       },
-      "nicheCode": "H37"
+      "nicheCode": "H37",
+      "avatar": "assets/avatars/JesseJokes-9623bd579c.jpg"
     },
     {
       "id": "RAW-080",
@@ -19250,9 +19390,10 @@
         "views": 440890329,
         "videoCount": 747,
         "country": "AU",
-        "avatar": "https://yt3.ggpht.com/oZpgc4gYfYe04tWJ8KXJ9vmJOelGUkmhQ1pcfB3wKMraDRZZrC6u8MIQ4Wpfx09iejiP9_qksQ=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/BenLionelScott-1bef4e72d0.jpg",
         "topics": [],
-        "publishedAt": "2013-01-30T11:04:06Z"
+        "publishedAt": "2013-01-30T11:04:06Z",
+        "remoteAvatar": "https://yt3.ggpht.com/oZpgc4gYfYe04tWJ8KXJ9vmJOelGUkmhQ1pcfB3wKMraDRZZrC6u8MIQ4Wpfx09iejiP9_qksQ=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Triết lý / Tâm linh",
       "visionAnalysis": {
@@ -19522,7 +19663,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-080.mp3"
       },
-      "nicheCode": "H20"
+      "nicheCode": "H20",
+      "avatar": "assets/avatars/BenLionelScott-1bef4e72d0.jpg"
     },
     {
       "id": "RAW-081",
@@ -19543,14 +19685,15 @@
         "views": 9116355,
         "videoCount": 77,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/H2yZ2nUuHfCU6HEJYUXAcFC01xKWZ0KYNao3OU6oIRCdHaZAoCSDTHb_PU0XHHLS46ZfKNfx=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/unknownplanetdoc-129d730cff.jpg",
         "topics": [
           "Film",
           "Tourism",
           "Lifestyle (sociology)",
           "Entertainment"
         ],
-        "publishedAt": "2009-12-20T22:22:35Z"
+        "publishedAt": "2009-12-20T22:22:35Z",
+        "remoteAvatar": "https://yt3.ggpht.com/H2yZ2nUuHfCU6HEJYUXAcFC01xKWZ0KYNao3OU6oIRCdHaZAoCSDTHb_PU0XHHLS46ZfKNfx=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Khoa học / Trái Đất EN",
       "visionAnalysis": {
@@ -19812,7 +19955,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-081.mp3"
       },
-      "nicheCode": "H28"
+      "nicheCode": "H28",
+      "avatar": "assets/avatars/unknownplanetdoc-129d730cff.jpg"
     },
     {
       "id": "RAW-082",
@@ -19833,12 +19977,13 @@
         "views": 610515,
         "videoCount": 31,
         "country": "CA",
-        "avatar": "https://yt3.ggpht.com/sTfqELoDOA8eAsnUxE9EK2SZOp1N026Eg3F--ZW2n7usO3MwztCD4eKW_09WWhjHAhJS9Nm3-A=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/Carolina_Living-962c4da693.jpg",
         "topics": [
           "Knowledge",
           "Society"
         ],
-        "publishedAt": "2019-01-01T12:21:55Z"
+        "publishedAt": "2019-01-01T12:21:55Z",
+        "remoteAvatar": "https://yt3.ggpht.com/sTfqELoDOA8eAsnUxE9EK2SZOp1N026Eg3F--ZW2n7usO3MwztCD4eKW_09WWhjHAhJS9Nm3-A=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -20100,7 +20245,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-082.mp3"
       },
-      "nicheCode": "H39"
+      "nicheCode": "H39",
+      "avatar": "assets/avatars/Carolina_Living-962c4da693.jpg"
     },
     {
       "id": "RAW-083",
@@ -20121,12 +20267,13 @@
         "views": 955010,
         "videoCount": 102,
         "country": "PT",
-        "avatar": "https://yt3.ggpht.com/nhaK24CGtQaDjPJapUdFDpngJKZO6yIzQKdeBwFxXIZkUtee6JpivwuJ99nmKMqp2uxamvwG=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/tony99studios-60f02bf4d6.jpg",
         "topics": [
           "Society",
           "Knowledge"
         ],
-        "publishedAt": "2026-06-17T12:15:24.657Z"
+        "publishedAt": "2026-06-17T12:15:24.657Z",
+        "remoteAvatar": "https://yt3.ggpht.com/nhaK24CGtQaDjPJapUdFDpngJKZO6yIzQKdeBwFxXIZkUtee6JpivwuJ99nmKMqp2uxamvwG=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -20388,7 +20535,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-083.mp3"
       },
-      "nicheCode": "H31"
+      "nicheCode": "H31",
+      "avatar": "assets/avatars/tony99studios-60f02bf4d6.jpg"
     },
     {
       "id": "RAW-084",
@@ -20409,13 +20557,14 @@
         "views": 10351398,
         "videoCount": 103,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/1gqqcqG-6LhHPRUTyo9dMH1teJ2qMVO6e9LL8z9F7-gJeZZ3ruWHWSq6kfOakJdwrruDxstGew=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/PrometheushistoryOfficial-23412bdd59.jpg",
         "topics": [
           "Entertainment",
           "Society",
           "Knowledge"
         ],
-        "publishedAt": "2025-06-23T08:24:44.743Z"
+        "publishedAt": "2025-06-23T08:24:44.743Z",
+        "remoteAvatar": "https://yt3.ggpht.com/1gqqcqG-6LhHPRUTyo9dMH1teJ2qMVO6e9LL8z9F7-gJeZZ3ruWHWSq6kfOakJdwrruDxstGew=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -20655,7 +20804,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-084.mp3"
       },
-      "nicheCode": "H27"
+      "nicheCode": "H27",
+      "avatar": "assets/avatars/PrometheushistoryOfficial-23412bdd59.jpg"
     },
     {
       "id": "RAW-085",
@@ -20676,12 +20826,13 @@
         "views": 717701,
         "videoCount": 14,
         "country": "JP",
-        "avatar": "https://yt3.ggpht.com/RwiLv7LNKO2JyR8dDJQJZiyd0q1lwutH8t8kws381y1wBaVYxfywXEe6M-jBd7t5qlfnbQUa=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/eigo2ch-f988643567.jpg",
         "topics": [
           "Lifestyle (sociology)",
           "Society"
         ],
-        "publishedAt": "2025-08-11T03:48:21.56Z"
+        "publishedAt": "2025-08-11T03:48:21.56Z",
+        "remoteAvatar": "https://yt3.ggpht.com/RwiLv7LNKO2JyR8dDJQJZiyd0q1lwutH8t8kws381y1wBaVYxfywXEe6M-jBd7t5qlfnbQUa=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -20913,7 +21064,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-085.mp3"
       },
-      "nicheCode": "H36"
+      "nicheCode": "H36",
+      "avatar": "assets/avatars/eigo2ch-f988643567.jpg"
     },
     {
       "id": "RAW-086",
@@ -20934,13 +21086,14 @@
         "views": 508283,
         "videoCount": 55,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/OalR4ioVyGDcy6UmqcFu2rivchyngG0Z507bKZGUnnnHigXAvkMZ-Q6Yr5BsVmDy-lBd0mn4cRs=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/magicalanimationsai-cc96ee5e69.jpg",
         "topics": [
           "Knowledge",
           "Military",
           "Society"
         ],
-        "publishedAt": "2025-07-13T21:29:20.58Z"
+        "publishedAt": "2025-07-13T21:29:20.58Z",
+        "remoteAvatar": "https://yt3.ggpht.com/OalR4ioVyGDcy6UmqcFu2rivchyngG0Z507bKZGUnnnHigXAvkMZ-Q6Yr5BsVmDy-lBd0mn4cRs=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Everyday History EN",
       "visionAnalysis": {
@@ -21172,7 +21325,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-086.mp3"
       },
-      "nicheCode": "H19"
+      "nicheCode": "H19",
+      "avatar": "assets/avatars/magicalanimationsai-cc96ee5e69.jpg"
     },
     {
       "id": "RAW-087",
@@ -21193,13 +21347,14 @@
         "views": 29029028,
         "videoCount": 39,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/5nRMRXOfhkklkRqJ_vic056PYXoyxremaO_tt-nKfnLy5EtuFsdxkccy1QOAW7ko7gwSf9uvwA=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/HypotheticallyHQ-7b958bcf5a.jpg",
         "topics": [
           "Entertainment",
           "Society",
           "Film"
         ],
-        "publishedAt": "2023-10-27T23:44:42.863Z"
+        "publishedAt": "2023-10-27T23:44:42.863Z",
+        "remoteAvatar": "https://yt3.ggpht.com/5nRMRXOfhkklkRqJ_vic056PYXoyxremaO_tt-nKfnLy5EtuFsdxkccy1QOAW7ko7gwSf9uvwA=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Hoạt hình / Giáo dục",
       "visionAnalysis": {
@@ -21469,7 +21624,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-087.mp3"
       },
-      "nicheCode": "H25"
+      "nicheCode": "H25",
+      "avatar": "assets/avatars/HypotheticallyHQ-7b958bcf5a.jpg"
     },
     {
       "id": "RAW-088",
@@ -21490,13 +21646,14 @@
         "views": 112242088,
         "videoCount": 209,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/6QzCV8juFUr8u_VW962F7P1EfumRjhaW-Wiwu63jU6cCX_wPWaNiz92Lw7O1ZFVM9E0grilhz3s=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/NoVillainsAreSAFE-1bebdcb508.jpg",
         "topics": [
           "Television program",
           "Film",
           "Entertainment"
         ],
-        "publishedAt": "2024-10-09T05:32:08.389Z"
+        "publishedAt": "2024-10-09T05:32:08.389Z",
+        "remoteAvatar": "https://yt3.ggpht.com/6QzCV8juFUr8u_VW962F7P1EfumRjhaW-Wiwu63jU6cCX_wPWaNiz92Lw7O1ZFVM9E0grilhz3s=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Hoạt hình / Giáo dục",
       "visionAnalysis": {
@@ -21754,7 +21911,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-088.mp3"
       },
-      "nicheCode": "H23"
+      "nicheCode": "H23",
+      "avatar": "assets/avatars/NoVillainsAreSAFE-1bebdcb508.jpg"
     },
     {
       "id": "RAW-089",
@@ -21775,11 +21933,12 @@
         "views": 4932242,
         "videoCount": 59,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/XyhR1VGoaVrvcxLqyhETz4iOe0nLhoRbQLqGI7lmw8KahAnrcsvur6dMPRkk3bkVqt2IMbgBOZU=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/xronikianomaliy-a02b78ac3d.jpg",
         "topics": [
           "Knowledge"
         ],
-        "publishedAt": "2017-08-03T12:28:38Z"
+        "publishedAt": "2017-08-03T12:28:38Z",
+        "remoteAvatar": "https://yt3.ggpht.com/XyhR1VGoaVrvcxLqyhETz4iOe0nLhoRbQLqGI7lmw8KahAnrcsvur6dMPRkk3bkVqt2IMbgBOZU=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Khoa học / Trái Đất EN",
       "visionAnalysis": {
@@ -22067,7 +22226,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-089.mp3"
       },
-      "nicheCode": "H39"
+      "nicheCode": "H39",
+      "avatar": "assets/avatars/xronikianomaliy-a02b78ac3d.jpg"
     },
     {
       "id": "RAW-091",
@@ -22088,13 +22248,14 @@
         "views": 211318,
         "videoCount": 12,
         "country": "AU",
-        "avatar": "https://yt3.ggpht.com/F_eWtfF9yLX03d6v-fOLxxnqEv8VdaDG972vZOJXkrvFJAxz9bwAOIMBtrLimRu6o7Dt_HS2uA=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/Everydaexplained-6a6bfb27b6.jpg",
         "topics": [
           "Technology",
           "Knowledge",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2025-12-11T10:00:19.796Z"
+        "publishedAt": "2025-12-11T10:00:19.796Z",
+        "remoteAvatar": "https://yt3.ggpht.com/F_eWtfF9yLX03d6v-fOLxxnqEv8VdaDG972vZOJXkrvFJAxz9bwAOIMBtrLimRu6o7Dt_HS2uA=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -22389,7 +22550,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-091.mp3"
       },
-      "nicheCode": "H30"
+      "nicheCode": "H30",
+      "avatar": "assets/avatars/Everydaexplained-6a6bfb27b6.jpg"
     },
     {
       "id": "RAW-092",
@@ -22410,12 +22572,13 @@
         "views": 4135070,
         "videoCount": 111,
         "country": null,
-        "avatar": "https://yt3.ggpht.com/iOz0ZVqWd9H2UFAFXbcSsCX7z8mFIUtlWADs3sZPxsCao3QkEed4f5afnmhCIBvvZXNhLYE9aFk=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/mrbyte-exp-537326061a.jpg",
         "topics": [
           "Technology",
           "Lifestyle (sociology)"
         ],
-        "publishedAt": "2022-12-08T10:27:51.06Z"
+        "publishedAt": "2022-12-08T10:27:51.06Z",
+        "remoteAvatar": "https://yt3.ggpht.com/iOz0ZVqWd9H2UFAFXbcSsCX7z8mFIUtlWADs3sZPxsCao3QkEed4f5afnmhCIBvvZXNhLYE9aFk=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -22677,7 +22840,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-092.mp3"
       },
-      "nicheCode": "H17"
+      "nicheCode": "H17",
+      "avatar": "assets/avatars/mrbyte-exp-537326061a.jpg"
     },
     {
       "id": "RAW-095",
@@ -22698,14 +22862,15 @@
         "views": 1186310,
         "videoCount": 28,
         "country": "US",
-        "avatar": "https://yt3.ggpht.com/jtG8zrDFXS7RqfLTq0Dus0Juohyf4lGo2bItapx__geGWqT6KB4WLboNbjU2_ofBdbmp7KNQ=s240-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/eonatlas-0614b5b2f0.jpg",
         "topics": [
           "Entertainment",
           "Lifestyle (sociology)",
           "Tourism",
           "Film"
         ],
-        "publishedAt": "2026-06-01T10:14:41.839Z"
+        "publishedAt": "2026-06-01T10:14:41.839Z",
+        "remoteAvatar": "https://yt3.ggpht.com/jtG8zrDFXS7RqfLTq0Dus0Juohyf4lGo2bItapx__geGWqT6KB4WLboNbjU2_ofBdbmp7KNQ=s240-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến thức / Giải trí tổng hợp",
       "visionAnalysis": {
@@ -22937,7 +23102,8 @@
         "measuredAt": "2026-09-29",
         "sampleUrl": "assets/voice-samples/RAW-095.mp3"
       },
-      "nicheCode": "H39"
+      "nicheCode": "H39",
+      "avatar": "assets/avatars/eonatlas-0614b5b2f0.jpg"
     },
     {
       "id": "RAW-096",
@@ -22958,7 +23124,7 @@
         "views": 19800000,
         "videoCount": 237,
         "country": "MX",
-        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/ElViejoMexicano-3c2a5e9209.jpg"
       },
       "niche": "Tò mò Địa lý / Thị trấn nguy hiểm & Bỏ hoang",
       "visionAnalysis": {
@@ -23140,7 +23306,8 @@
         ],
         "scannedAt": "2026-09-30 04:50:51"
       },
-      "nicheCode": "H39"
+      "nicheCode": "H39",
+      "avatar": "assets/avatars/ElViejoMexicano-3c2a5e9209.jpg"
     },
     {
       "id": "RAW-097",
@@ -23161,7 +23328,7 @@
         "views": 5790000,
         "videoCount": 28,
         "country": "JP",
-        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/AI_Historia-n5b-e86b9d4092.jpg"
       },
       "niche": "Phim Kịch Lịch Sử Chiến Quốc AI",
       "visionAnalysis": {
@@ -23404,7 +23571,8 @@
         ],
         "scannedAt": "2026-09-30 04:51:10"
       },
-      "nicheCode": "H38"
+      "nicheCode": "H38",
+      "avatar": "assets/avatars/AI_Historia-n5b-e86b9d4092.jpg"
     },
     {
       "id": "RAW-098",
@@ -23425,7 +23593,7 @@
         "views": 3800000,
         "videoCount": 15,
         "country": "JP",
-        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/taninnojinsei-d153afe9b6.jpg"
       },
       "niche": "Manga Đời Thực / Nghề Nghiệp & Xã Hội Nhật Bản",
       "visionAnalysis": {
@@ -23634,7 +23802,8 @@
         ],
         "scannedAt": "2026-09-30 04:51:28"
       },
-      "nicheCode": "H09"
+      "nicheCode": "H09",
+      "avatar": "assets/avatars/taninnojinsei-d153afe9b6.jpg"
     },
     {
       "id": "RAW-099",
@@ -23655,7 +23824,7 @@
         "views": 120000000,
         "videoCount": 481,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/wordsofwisdomstories-6e1586f1c0.jpg"
       },
       "niche": "Triết lý Phật giáo / Câu chuyện truyền cảm hứng & Chữa lành",
       "visionAnalysis": {
@@ -23837,7 +24006,8 @@
         ],
         "scannedAt": "2026-09-30 04:51:39"
       },
-      "nicheCode": "H08"
+      "nicheCode": "H08",
+      "avatar": "assets/avatars/wordsofwisdomstories-6e1586f1c0.jpg"
     },
     {
       "id": "RAW-100",
@@ -23858,7 +24028,7 @@
         "views": 1800000,
         "videoCount": 29,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/HiddenGenius44-e9c99cf17e.jpg"
       },
       "niche": "Lịch Sử Phát Minh & Đằng Sau Các Kỳ Tích Công Nghệ",
       "visionAnalysis": {
@@ -24040,7 +24210,8 @@
         ],
         "scannedAt": "2026-09-30 05:08:58"
       },
-      "nicheCode": "H14"
+      "nicheCode": "H14",
+      "avatar": "assets/avatars/HiddenGenius44-e9c99cf17e.jpg"
     },
     {
       "id": "RAW-101",
@@ -24061,7 +24232,7 @@
         "views": 2500000,
         "videoCount": 70,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/SoloSurvival_91-40e72815da.jpg"
       },
       "niche": "Sinh Tồn Băng Giá & Cải Tạo Nhà Hoang ASMR",
       "visionAnalysis": {
@@ -24242,7 +24413,8 @@
         ],
         "scannedAt": "2026-09-30 05:09:07"
       },
-      "nicheCode": "H24"
+      "nicheCode": "H24",
+      "avatar": "assets/avatars/SoloSurvival_91-40e72815da.jpg"
     },
     {
       "id": "RAW-102",
@@ -24263,7 +24435,8 @@
         "views": 850000,
         "videoCount": 104,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/etQ6T5SsoPM9capOD-HzcZHv6GK-bOuIAaqyBF5EMk1iERUEghOuxKkKljKS4JKOAvdCMjFsJg=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/SurvivaIStory-7f628d521b.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/etQ6T5SsoPM9capOD-HzcZHv6GK-bOuIAaqyBF5EMk1iERUEghOuxKkKljKS4JKOAvdCMjFsJg=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Sinh Tồn & Phục Hồi Sau Thảm Họa Tự Nhiên",
       "visionAnalysis": {
@@ -24469,7 +24642,8 @@
         ],
         "scannedAt": "2026-09-30 05:09:33"
       },
-      "nicheCode": "H24"
+      "nicheCode": "H24",
+      "avatar": "assets/avatars/SurvivaIStory-7f628d521b.jpg"
     },
     {
       "id": "RAW-103",
@@ -24490,7 +24664,7 @@
         "views": 1200000,
         "videoCount": 35,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/Foodcode1-3fcc7813fb.jpg"
       },
       "niche": "Khoa Học Thực Phẩm & Tác Động Cơ Thể (Food Shock)",
       "visionAnalysis": {
@@ -24681,7 +24855,8 @@
         ],
         "scannedAt": "2026-09-30 05:10:02"
       },
-      "nicheCode": "H32"
+      "nicheCode": "H32",
+      "avatar": "assets/avatars/Foodcode1-3fcc7813fb.jpg"
     },
     {
       "id": "RAW-104",
@@ -24702,7 +24877,7 @@
         "views": 1200000,
         "videoCount": 35,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/Foodcode1-3fcc7813fb.jpg"
       },
       "niche": "Khoa Học Thực Phẩm & Sinh Học Con Người",
       "visionAnalysis": {
@@ -24894,7 +25069,8 @@
         ],
         "scannedAt": "2026-09-30 05:11:20"
       },
-      "nicheCode": "H32"
+      "nicheCode": "H32",
+      "avatar": "assets/avatars/Foodcode1-3fcc7813fb.jpg"
     },
     {
       "id": "RAW-105",
@@ -24915,7 +25091,7 @@
         "views": 1200000,
         "videoCount": 35,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/Foodcode1-3fcc7813fb.jpg"
       },
       "niche": "Khoa Học Thực Phẩm & Tác Động Tế Bào",
       "visionAnalysis": {
@@ -25116,7 +25292,8 @@
         ],
         "scannedAt": "2026-09-30 05:11:55"
       },
-      "nicheCode": "H32"
+      "nicheCode": "H32",
+      "avatar": "assets/avatars/Foodcode1-3fcc7813fb.jpg"
     },
     {
       "id": "RAW-106",
@@ -25137,7 +25314,7 @@
         "views": 35000000,
         "videoCount": 42,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/OfficialBeyondTheBlue-a2a40c548d.jpg"
       },
       "niche": "Sinh Vật Biển Sâu & Tiến Hóa Dị Thường",
       "visionAnalysis": {
@@ -25338,7 +25515,8 @@
         ],
         "scannedAt": "2026-09-30 05:12:22"
       },
-      "nicheCode": "H11"
+      "nicheCode": "H11",
+      "avatar": "assets/avatars/OfficialBeyondTheBlue-a2a40c548d.jpg"
     },
     {
       "id": "RAW-107",
@@ -25359,7 +25537,7 @@
         "views": 35000000,
         "videoCount": 42,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/OfficialBeyondTheBlue-a2a40c548d.jpg"
       },
       "niche": "Bí Ẩn Đại Dương & Quái Vật Biển Sâu",
       "visionAnalysis": {
@@ -25560,7 +25738,8 @@
         ],
         "scannedAt": "2026-09-30 05:12:51"
       },
-      "nicheCode": "H11"
+      "nicheCode": "H11",
+      "avatar": "assets/avatars/OfficialBeyondTheBlue-a2a40c548d.jpg"
     },
     {
       "id": "RAW-108",
@@ -25581,7 +25760,7 @@
         "views": 350000000,
         "videoCount": 240,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/ScaryInteresting-79dd8c0b67.jpg"
       },
       "niche": "Dark History / Disturbing Stories / Thảm Họa Sống Sót",
       "visionAnalysis": {
@@ -25764,7 +25943,8 @@
         ],
         "scannedAt": "2026-09-30 05:13:15"
       },
-      "nicheCode": "H35"
+      "nicheCode": "H35",
+      "avatar": "assets/avatars/ScaryInteresting-79dd8c0b67.jpg"
     },
     {
       "id": "RAW-109",
@@ -25785,7 +25965,7 @@
         "views": 350000000,
         "videoCount": 240,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k2LdY=s240-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/ScaryInteresting-79dd8c0b67.jpg"
       },
       "niche": "Dark History / Ngôi Nhà Bí Ẩn / Địa Điểm Kinh Dị",
       "visionAnalysis": {
@@ -25986,7 +26166,8 @@
         ],
         "scannedAt": "2026-09-30 05:13:38"
       },
-      "nicheCode": "H35"
+      "nicheCode": "H35",
+      "avatar": "assets/avatars/ScaryInteresting-79dd8c0b67.jpg"
     },
     {
       "id": "RAW-110",
@@ -26007,14 +26188,15 @@
         "views": 1809600,
         "videoCount": 73,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/c9TWix5WXMV18aUuUEY8EkBUflUeTsnq6rWeeuP3LVPDfb0bLBCZNVd3Rs06SNLApYR97uFKrw=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/wildline_YT-a824c78334.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/c9TWix5WXMV18aUuUEY8EkBUflUeTsnq6rWeeuP3LVPDfb0bLBCZNVd3Rs06SNLApYR97uFKrw=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Tự cung tự cấp / Off-Grid & Nhà sinh thái thông minh",
       "visionAnalysis": {
@@ -26197,7 +26379,8 @@
         ],
         "scannedAt": "2026-09-30 05:13:43"
       },
-      "nicheCode": "H24"
+      "nicheCode": "H24",
+      "avatar": "assets/avatars/wildline_YT-a824c78334.jpg"
     },
     {
       "id": "RAW-111",
@@ -26218,14 +26401,15 @@
         "views": 196080,
         "videoCount": 42,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/t3uyJI2UjRdCjFN3ICnyvsaKihFik859tzMQ3Txwm9WylWd7CU1rOPzfW1TrwyZVldzyHOZlTQ=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/GrainandGravity-0e54e1fd49.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/t3uyJI2UjRdCjFN3ICnyvsaKihFik859tzMQ3Txwm9WylWd7CU1rOPzfW1TrwyZVldzyHOZlTQ=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Năng lượng độc lập / Pin gia đình & Tiết kiệm điện",
       "visionAnalysis": {
@@ -26408,7 +26592,8 @@
         ],
         "scannedAt": "2026-09-30 05:14:10"
       },
-      "nicheCode": "H24"
+      "nicheCode": "H24",
+      "avatar": "assets/avatars/GrainandGravity-0e54e1fd49.jpg"
     },
     {
       "id": "RAW-112",
@@ -26429,14 +26614,15 @@
         "views": 429600,
         "videoCount": 16,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/YXkpwFhMY77sutKbkCX5JQSHo5a69q4eMhtGQDM7iaA09mqdeQ0d1I2QDk9Vq6O1_D3T_CZf=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/dollypartonarchives-1d9c55aac7.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/YXkpwFhMY77sutKbkCX5JQSHo5a69q4eMhtGQDM7iaA09mqdeQ0d1I2QDk9Vq6O1_D3T_CZf=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Huyền thoại âm nhạc / Celebrity Nostalgia & Câu chuyện cảm động",
       "visionAnalysis": {
@@ -26591,7 +26777,8 @@
         ],
         "scannedAt": "2026-09-30 05:14:23"
       },
-      "nicheCode": "H40"
+      "nicheCode": "H40",
+      "avatar": "assets/avatars/dollypartonarchives-1d9c55aac7.jpg"
     },
     {
       "id": "RAW-113",
@@ -26612,14 +26799,15 @@
         "views": 167280,
         "videoCount": 104,
         "country": "FR",
-        "avatar": "https://yt3.googleusercontent.com/BL2s2GUouohpxgJ-aqEOBzmUVSEGugLhlzySt5m530gEvg1AX6APAhuQwmkKwZGEDZldNfxLfQ=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/HouseHuntingWithBaptiste-1522973a0a.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/BL2s2GUouohpxgJ-aqEOBzmUVSEGugLhlzySt5m530gEvg1AX6APAhuQwmkKwZGEDZldNfxLfQ=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Bất động sản Châu Âu giá rẻ / Mua nhà cổ Pháp - Ý - TBN",
       "visionAnalysis": {
@@ -26774,7 +26962,8 @@
         ],
         "scannedAt": "2026-09-30 05:14:40"
       },
-      "nicheCode": "H39"
+      "nicheCode": "H39",
+      "avatar": "assets/avatars/HouseHuntingWithBaptiste-1522973a0a.jpg"
     },
     {
       "id": "RAW-114",
@@ -26795,14 +26984,15 @@
         "views": 226800,
         "videoCount": 4,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/sCc52LQRkSUpoIE-v-TangXaw2lFWVno68bxtDZtLXRT1jZQzMo-b4Mjc3A6M9OlxbLMFs8FTA=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/OverengineeredEN-f5f1dd2e53.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/sCc52LQRkSUpoIE-v-TangXaw2lFWVno68bxtDZtLXRT1jZQzMo-b4Mjc3A6M9OlxbLMFs8FTA=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Siêu công trình & Thảm họa kỹ thuật xây dựng",
       "visionAnalysis": {
@@ -26957,7 +27147,8 @@
         ],
         "scannedAt": "2026-09-30 05:14:58"
       },
-      "nicheCode": "H39"
+      "nicheCode": "H39",
+      "avatar": "assets/avatars/OverengineeredEN-f5f1dd2e53.jpg"
     },
     {
       "id": "RAW-115",
@@ -26978,14 +27169,15 @@
         "views": 75360,
         "videoCount": 5,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/2JwAdxkldWmpSug5nVXwxQ_lMkK3B2Je2uhXv-wR-JzOrToP4IhVyJxH67amH8RMigY7JVr4v7c=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/stayawhilefilms-5fd23ca697.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/2JwAdxkldWmpSug5nVXwxQ_lMkK3B2Je2uhXv-wR-JzOrToP4IhVyJxH67amH8RMigY7JVr4v7c=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kiến trúc nghệ thuật / Tour nhà độc bản phong cách Cinematic",
       "visionAnalysis": {
@@ -27150,7 +27342,8 @@
         ],
         "scannedAt": "2026-09-30 05:15:46"
       },
-      "nicheCode": "H39"
+      "nicheCode": "H39",
+      "avatar": "assets/avatars/stayawhilefilms-5fd23ca697.jpg"
     },
     {
       "id": "RAW-116",
@@ -27171,14 +27364,15 @@
         "views": 147840,
         "videoCount": 24,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/b1Pj5A0fvbeeZgBZ-ShXcXKwglNbdSeOuB6vX8d875zZLSZmLLAMWJopQbn3z_1unoA4HL6mYA=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/MoneyLifePOV-7f242497d0.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/b1Pj5A0fvbeeZgBZ-ShXcXKwglNbdSeOuB6vX8d875zZLSZmLLAMWJopQbn3z_1unoA4HL6mYA=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Hoạt hình 2D POV Tài chính / Thoát khỏi Rat Race & Tiết kiệm",
       "visionAnalysis": {
@@ -27361,7 +27555,8 @@
         ],
         "scannedAt": "2026-09-30 05:16:21"
       },
-      "nicheCode": "H21"
+      "nicheCode": "H21",
+      "avatar": "assets/avatars/MoneyLifePOV-7f242497d0.jpg"
     },
     {
       "id": "RAW-117",
@@ -27382,14 +27577,15 @@
         "views": 1808399,
         "videoCount": 31,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/uOUD1aIAkkdEMJAAnT-9J7GTP77aIFnprLCia2nPKQ8PLLRtmJS9ryaqdaFrs7GDBoZnCCIZOT4=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/TheInvisibleNeighbors-721066121e.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/uOUD1aIAkkdEMJAAnT-9J7GTP77aIFnprLCia2nPKQ8PLLRtmJS9ryaqdaFrs7GDBoZnCCIZOT4=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Homeless Revival / Cải tạo nhà mini & Làm lại cuộc đời",
       "visionAnalysis": {
@@ -27616,7 +27812,8 @@
         ],
         "scannedAt": "2026-09-30 05:16:48"
       },
-      "nicheCode": "H39"
+      "nicheCode": "H39",
+      "avatar": "assets/avatars/TheInvisibleNeighbors-721066121e.jpg"
     },
     {
       "id": "RAW-118",
@@ -27637,14 +27834,15 @@
         "views": 600000,
         "videoCount": 24,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/ETW4n3HSIu4H6ze09E1f936JKg8HWkERzWuj1KYQh0WYon5BTW4MFiPbUwuIb4Mfb2TyYyB5fKM=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/TuckerWes-6ebf392d35.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/ETW4n3HSIu4H6ze09E1f936JKg8HWkERzWuj1KYQh0WYon5BTW4MFiPbUwuIb4Mfb2TyYyB5fKM=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "An ninh gia đình / Mẹo chống trộm cho người cao tuổi",
       "visionAnalysis": {
@@ -27828,7 +28026,8 @@
         ],
         "scannedAt": "2026-09-30 05:17:10"
       },
-      "nicheCode": "H04"
+      "nicheCode": "H04",
+      "avatar": "assets/avatars/TuckerWes-6ebf392d35.jpg"
     },
     {
       "id": "RAW-119",
@@ -27849,14 +28048,15 @@
         "views": 40000,
         "videoCount": 11,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/Mhk6kwbNWfu4z94K6niZHyW7DCvz_BwISatieJ6slJen64cXnVWBGXhLVM7YysDzwL-TSRugLQ=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/Calvinstorieschori-33e6e48212.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/Mhk6kwbNWfu4z94K6niZHyW7DCvz_BwISatieJ6slJen64cXnVWBGXhLVM7YysDzwL-TSRugLQ=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Truyện nhân văn hư cấu AI / Thiếu niên da màu vượt khó",
       "visionAnalysis": {
@@ -28075,7 +28275,8 @@
         ],
         "scannedAt": "2026-09-30 05:18:52"
       },
-      "nicheCode": "H38"
+      "nicheCode": "H38",
+      "avatar": "assets/avatars/Calvinstorieschori-33e6e48212.jpg"
     },
     {
       "id": "RAW-120",
@@ -28096,14 +28297,15 @@
         "views": 259200,
         "videoCount": 37,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/dKTm4vaAmjfNayWfsAYYfrkUK_I93nKbe_0QJv9kju-OHyciBke_6o4ce4VMiIdQmYtPeadXZw=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/Earthcraft-i7c-fa056b5c8f.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/dKTm4vaAmjfNayWfsAYYfrkUK_I93nKbe_0QJv9kju-OHyciBke_6o4ce4VMiIdQmYtPeadXZw=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Sinh tồn cổ đại / Kiến trúc nhà đất & Chống chọi băng giá",
       "visionAnalysis": {
@@ -28313,7 +28515,8 @@
         ],
         "scannedAt": "2026-09-30 05:19:23"
       },
-      "nicheCode": "H24"
+      "nicheCode": "H24",
+      "avatar": "assets/avatars/Earthcraft-i7c-fa056b5c8f.jpg"
     },
     {
       "id": "RAW-121",
@@ -28334,14 +28537,15 @@
         "views": 117840,
         "videoCount": 1,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/XQfFHrgoDvATJARCP7BUG5lLtq_Rky6MWiEXu-KcFDo4-RZL2XqNu0NLmgi-pIO5Xyh0OTjWqw=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/mythrafilms-2316b205b7.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/XQfFHrgoDvATJARCP7BUG5lLtq_Rky6MWiEXu-KcFDo4-RZL2XqNu0NLmgi-pIO5Xyh0OTjWqw=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "AI Fantasy Cinema 4K / Phim điện ảnh viễn tưởng dài tập",
       "visionAnalysis": {
@@ -28476,7 +28680,8 @@
         ],
         "scannedAt": "2026-09-30 05:20:03"
       },
-      "nicheCode": "H38"
+      "nicheCode": "H38",
+      "avatar": "assets/avatars/mythrafilms-2316b205b7.jpg"
     },
     {
       "id": "RAW-122",
@@ -28497,14 +28702,15 @@
         "views": 92160,
         "videoCount": 98,
         "country": "VN",
-        "avatar": "https://yt3.googleusercontent.com/eBllx5nHSDy7LMX_NVmNd_0zk-GV6nudrzyPUza2MthzC6snANGHc52LeIAojTZIjkCCgfp1aBY=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/FactoryRebornvn-8b0d315e4e.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/eBllx5nHSDy7LMX_NVmNd_0zk-GV6nudrzyPUza2MthzC6snANGHc52LeIAojTZIjkCCgfp1aBY=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Nhà máy tái chế công nghiệp 4K / Biến phế liệu thành giá trị",
       "visionAnalysis": {
@@ -28687,7 +28893,8 @@
         ],
         "scannedAt": "2026-09-30 05:20:29"
       },
-      "nicheCode": "H17"
+      "nicheCode": "H17",
+      "avatar": "assets/avatars/FactoryRebornvn-8b0d315e4e.jpg"
     },
     {
       "id": "RAW-123",
@@ -28708,14 +28915,15 @@
         "views": 63840,
         "videoCount": 33,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/XbKU60y4vLR7XOTZ5BDBSe_Vc3fEqCdViX7MeE6mH09zGGNDXiQ8mWug5tYbCz3rv5acPbijZQ=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/AISeeHistory-10cce7fabf.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/XbKU60y4vLR7XOTZ5BDBSe_Vc3fEqCdViX7MeE6mH09zGGNDXiQ8mWug5tYbCz3rv5acPbijZQ=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Lịch sử sinh tồn biên viễn Mỹ / Mountain Men thế kỷ 19",
       "visionAnalysis": {
@@ -28934,7 +29142,8 @@
         ],
         "scannedAt": "2026-09-30 05:20:52"
       },
-      "nicheCode": "H24"
+      "nicheCode": "H24",
+      "avatar": "assets/avatars/AISeeHistory-10cce7fabf.jpg"
     },
     {
       "id": "RAW-124",
@@ -28955,14 +29164,15 @@
         "views": 3024000,
         "videoCount": 7,
         "country": "ES",
-        "avatar": "https://yt3.googleusercontent.com/qmq9cBPM3XI_KlmA4SkPDSTfI6b5fnQN0PkicJyMwM9IxrUlRAxYwDB7-2skMbTzrR5GgDm1nQ=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/RelatosdeEterya-4c2f4131ea.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/qmq9cBPM3XI_KlmA4SkPDSTfI6b5fnQN0PkicJyMwM9IxrUlRAxYwDB7-2skMbTzrR5GgDm1nQ=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "AI Sci-Fi & Thần thoại viễn tưởng tiếng Tây Ban Nha",
       "visionAnalysis": {
@@ -29154,7 +29364,8 @@
         ],
         "scannedAt": "2026-09-30 05:20:59"
       },
-      "nicheCode": "H38"
+      "nicheCode": "H38",
+      "avatar": "assets/avatars/RelatosdeEterya-4c2f4131ea.jpg"
     },
     {
       "id": "RAW-125",
@@ -29175,14 +29386,15 @@
         "views": 1420800,
         "videoCount": 41,
         "country": "KR",
-        "avatar": "https://yt3.googleusercontent.com/tJCd-vhi106OiNL0X2uoyra2OH1ts-4RijpMk_j-181OvfwPBlTiNqXr-UqDP34bi7xHwnM6FmE=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/DeepHorizon-1991-c09db9399e.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/tJCd-vhi106OiNL0X2uoyra2OH1ts-4RijpMk_j-181OvfwPBlTiNqXr-UqDP34bi7xHwnM6FmE=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Lịch sử không có trong sách giáo khoa tiếng Hàn",
       "visionAnalysis": {
@@ -29392,7 +29604,8 @@
         ],
         "scannedAt": "2026-09-30 05:21:10"
       },
-      "nicheCode": "H18"
+      "nicheCode": "H18",
+      "avatar": "assets/avatars/DeepHorizon-1991-c09db9399e.jpg"
     },
     {
       "id": "RAW-126",
@@ -29413,14 +29626,15 @@
         "views": 2224800,
         "videoCount": 58,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/kUXCYql9sTJvxjuDPqYUHHT9XHFEcSmpBOfDhHLYuuH2JVKTzupoFBshh7UuXN_WfajnLOz6Jg=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/UCqZpuhhJC5G4kfvBG7MTAXg-af253e319b.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/kUXCYql9sTJvxjuDPqYUHHT9XHFEcSmpBOfDhHLYuuH2JVKTzupoFBshh7UuXN_WfajnLOz6Jg=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Bí ẩn Trái Đất & Khảo cổ học nền văn minh đã mất",
       "visionAnalysis": {
@@ -29603,7 +29817,8 @@
         ],
         "scannedAt": "2026-09-30 05:22:15"
       },
-      "nicheCode": "H11"
+      "nicheCode": "H11",
+      "avatar": "assets/avatars/UCqZpuhhJC5G4kfvBG7MTAXg-af253e319b.jpg"
     },
     {
       "id": "RAW-127",
@@ -29624,14 +29839,15 @@
         "views": 244800,
         "videoCount": 66,
         "country": "RU",
-        "avatar": "https://yt3.googleusercontent.com/XyhR1VGoaVrvcxLqyhETz4iOe0nLhoRbQLqGI7lmw8KahAnrcsvur6dMPRkk3bkVqt2IMbgBOZU=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/xronikianomaliy-a02b78ac3d.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/XyhR1VGoaVrvcxLqyhETz4iOe0nLhoRbQLqGI7lmw8KahAnrcsvur6dMPRkk3bkVqt2IMbgBOZU=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Hiện tượng bất thường & Kỹ thuật sinh tồn vùng lạnh tiếng Nga",
       "visionAnalysis": {
@@ -29847,7 +30063,8 @@
         ],
         "scannedAt": "2026-09-30 05:22:48"
       },
-      "nicheCode": "H39"
+      "nicheCode": "H39",
+      "avatar": "assets/avatars/xronikianomaliy-a02b78ac3d.jpg"
     },
     {
       "id": "RAW-128",
@@ -29868,14 +30085,15 @@
         "views": 5760000,
         "videoCount": 76,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/9_6bb5DnsrvgXuovpvHnhy3U5N7ryQA2KPR6KAUN4TC6mDt9CooK-2unvpp8JKnojDbMcPOvHg=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/MysteriesoftheUniverse00-f8f0c9058a.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/9_6bb5DnsrvgXuovpvHnhy3U5N7ryQA2KPR6KAUN4TC6mDt9CooK-2unvpp8JKnojDbMcPOvHg=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Tiền sử loài người & Đại công trình cổ đại dài 1 tiếng",
       "visionAnalysis": {
@@ -30085,7 +30303,8 @@
         ],
         "scannedAt": "2026-09-30 05:22:58"
       },
-      "nicheCode": "H33"
+      "nicheCode": "H33",
+      "avatar": "assets/avatars/MysteriesoftheUniverse00-f8f0c9058a.jpg"
     },
     {
       "id": "RAW-129",
@@ -30106,14 +30325,15 @@
         "views": 710400,
         "videoCount": 63,
         "country": "RU",
-        "avatar": "https://yt3.googleusercontent.com/XeIrPyKRxhELZn2Oe5R89N4rScWLeKJF13Toonj-5a7UaDoW5a3rWoeuvU95c2nNe48K6Tu3VIQ=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/Past_Seven-3da3ca00fa.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/XeIrPyKRxhELZn2Oe5R89N4rScWLeKJF13Toonj-5a7UaDoW5a3rWoeuvU95c2nNe48K6Tu3VIQ=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Khảo cổ học chấn động & Cổ vật dưới lòng đất tiếng Nga",
       "visionAnalysis": {
@@ -30350,7 +30570,8 @@
         ],
         "scannedAt": "2026-09-30 05:23:25"
       },
-      "nicheCode": "H27"
+      "nicheCode": "H27",
+      "avatar": "assets/avatars/Past_Seven-3da3ca00fa.jpg"
     },
     {
       "id": "RAW-130",
@@ -30371,14 +30592,15 @@
         "views": 40000,
         "videoCount": 35,
         "country": "KR",
-        "avatar": "https://yt3.googleusercontent.com/scfmXWjnuoZKTUCLV9h4Ib7E8-b7ruBG9LqIoEI6WMUCFglESSZ4rbKCP_SU3TlOP3RmFrzA=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/ch-d63b1874b6.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/scfmXWjnuoZKTUCLV9h4Ib7E8-b7ruBG9LqIoEI6WMUCFglESSZ4rbKCP_SU3TlOP3RmFrzA=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Sinh tồn cực hạn & Kiến trúc giữ nhiệt cổ truyền tiếng Hàn",
       "visionAnalysis": {
@@ -30587,7 +30809,8 @@
         ],
         "scannedAt": "2026-09-30 05:24:39"
       },
-      "nicheCode": "H24"
+      "nicheCode": "H24",
+      "avatar": "assets/avatars/ch-d63b1874b6.jpg"
     },
     {
       "id": "RAW-131",
@@ -30608,14 +30831,15 @@
         "views": 1113600,
         "videoCount": 116,
         "country": "RU",
-        "avatar": "https://yt3.googleusercontent.com/Xn5_OL3kxsyDLEbT5RUcVCjcsvrMLZKenveXbvoFapCZWLA7O9qbbyYeSc63aOyL_BWUSzANTQ=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/ch-d9c04db922.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/Xn5_OL3kxsyDLEbT5RUcVCjcsvrMLZKenveXbvoFapCZWLA7O9qbbyYeSc63aOyL_BWUSzANTQ=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Hồ sơ mật & Địa điểm bí ẩn bị xóa sổ tiếng Nga",
       "visionAnalysis": {
@@ -30815,7 +31039,8 @@
         ],
         "scannedAt": "2026-09-30 05:25:23"
       },
-      "nicheCode": "H27"
+      "nicheCode": "H27",
+      "avatar": "assets/avatars/ch-d9c04db922.jpg"
     },
     {
       "id": "RAW-132",
@@ -30836,14 +31061,15 @@
         "views": 201360,
         "videoCount": 13,
         "country": "ES",
-        "avatar": "https://yt3.googleusercontent.com/db8Uyy5-2s3rjmgMGHYzYQqJqzgz2NzbGLVU_EyXFcUMQ6GOXtIzRuOGzjI8o2bkPkPSWOcVjw=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/DeEntoncesahoyDocumental-8924ee74b9.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/db8Uyy5-2s3rjmgMGHYzYQqJqzgz2NzbGLVU_EyXFcUMQ6GOXtIzRuOGzjI8o2bkPkPSWOcVjw=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Lịch sử nguồn gốc đồ vật & Phát minh thường nhật tiếng Tây Ban Nha",
       "visionAnalysis": {
@@ -31026,7 +31252,8 @@
         ],
         "scannedAt": "2026-09-30 05:26:04"
       },
-      "nicheCode": "H30"
+      "nicheCode": "H30",
+      "avatar": "assets/avatars/DeEntoncesahoyDocumental-8924ee74b9.jpg"
     },
     {
       "id": "RAW-133",
@@ -31047,14 +31274,15 @@
         "views": 180000,
         "videoCount": 19,
         "country": "ES",
-        "avatar": "https://yt3.googleusercontent.com/zZDnd4UfbXd-km6tx3Xliq1qetbQc7Mv3RNZZ5GGrL-SgVg5MRKndj0uqavGxTYaDcp7b-ANtw=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/HistoriaVivaSP-549d6b4216.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/zZDnd4UfbXd-km6tx3Xliq1qetbQc7Mv3RNZZ5GGrL-SgVg5MRKndj0uqavGxTYaDcp7b-ANtw=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Phim tài liệu đế chế lịch sử 1 tiếng tiếng Tây Ban Nha",
       "visionAnalysis": {
@@ -31264,7 +31492,8 @@
         ],
         "scannedAt": "2026-09-30 05:27:05"
       },
-      "nicheCode": "H19"
+      "nicheCode": "H19",
+      "avatar": "assets/avatars/HistoriaVivaSP-549d6b4216.jpg"
     },
     {
       "id": "RAW-134",
@@ -31285,14 +31514,15 @@
         "views": 63360,
         "videoCount": 23,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/ZIJl0LnyXwUMrn4z8T07lwhVzBBjJLOqH6k9ahgzzDfqhbQyyak0Drq5fjdnP0s-kv4xchPKgg=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/weonearth_us-e88a36a9f3.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/ZIJl0LnyXwUMrn4z8T07lwhVzBBjJLOqH6k9ahgzzDfqhbQyyak0Drq5fjdnP0s-kv4xchPKgg=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Tiến hóa loài người tiền sử & Kỷ băng hà Ice Age",
       "visionAnalysis": {
@@ -31529,7 +31759,8 @@
         ],
         "scannedAt": "2026-09-30 05:27:44"
       },
-      "nicheCode": "H27"
+      "nicheCode": "H27",
+      "avatar": "assets/avatars/weonearth_us-e88a36a9f3.jpg"
     },
     {
       "id": "RAW-135",
@@ -31550,14 +31781,15 @@
         "views": 256800,
         "videoCount": 57,
         "country": "KR",
-        "avatar": "https://yt3.googleusercontent.com/9Cu2ThKzBkUeDTCFvE3WqtqvZwthNeNFVfbAsRhg5cwgQFIvahJANRpVSlcJqIzoxLD3WuHE4A=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/ch-76bb98a47c.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/9Cu2ThKzBkUeDTCFvE3WqtqvZwthNeNFVfbAsRhg5cwgQFIvahJANRpVSlcJqIzoxLD3WuHE4A=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Kinh tế học tò mò & Địa chính trị thế giới tiếng Hàn",
       "visionAnalysis": {
@@ -31767,7 +31999,8 @@
         ],
         "scannedAt": "2026-09-30 05:27:51"
       },
-      "nicheCode": "H13"
+      "nicheCode": "H13",
+      "avatar": "assets/avatars/ch-76bb98a47c.jpg"
     },
     {
       "id": "RAW-136",
@@ -31788,14 +32021,15 @@
         "views": 345600,
         "videoCount": 51,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/4VVhIBzFbTT0oV3bpLSHjC5mmKgvMpu_T9XpChLftdzbWRSAboy_IEyw0FWPOnaDiFBeTimU=s900-c-k-c0x00ffffff-no-rj",
+        "avatar": "assets/avatars/TheWealthScrolls_Official-a02c6c36ed.jpg",
         "topics": [
           "Knowledge",
           "Society",
           "Entertainment",
           "Documentary"
         ],
-        "publishedAt": "2026-01-01T00:00:00.000Z"
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "remoteAvatar": "https://yt3.googleusercontent.com/4VVhIBzFbTT0oV3bpLSHjC5mmKgvMpu_T9XpChLftdzbWRSAboy_IEyw0FWPOnaDiFBeTimU=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Tài chính & Quy luật thịnh vượng trong Kinh Thánh",
       "visionAnalysis": {
@@ -32005,7 +32239,8 @@
         ],
         "scannedAt": "2026-09-30 05:28:14"
       },
-      "nicheCode": "H07"
+      "nicheCode": "H07",
+      "avatar": "assets/avatars/TheWealthScrolls_Official-a02c6c36ed.jpg"
     },
     {
       "id": "RAW-137",
@@ -32026,7 +32261,8 @@
         "views": 1478721,
         "videoCount": 28,
         "country": null,
-        "avatar": "https://yt3.googleusercontent.com/OXEKzeHK_ugxVJh0r4N289aW2eSN8YugiEfcCGgN5d_nsCnbDwhxvQE875F9rTEPR9bT7V1v=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/Murph-b5y-a3d99e4648.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/OXEKzeHK_ugxVJh0r4N289aW2eSN8YugiEfcCGgN5d_nsCnbDwhxvQE875F9rTEPR9bT7V1v=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Động vật kỳ lạ / Tại sao không? (Why Not) - hoạt hình 2D",
       "visionAnalysis": {
@@ -32196,7 +32432,8 @@
         ],
         "scannedAt": "2026-09-30 05:41:50"
       },
-      "nicheCode": "H25"
+      "nicheCode": "H25",
+      "avatar": "assets/avatars/Murph-b5y-a3d99e4648.jpg"
     },
     {
       "id": "RAW-138",
@@ -32217,7 +32454,8 @@
         "views": 218400,
         "videoCount": 15,
         "country": null,
-        "avatar": "https://yt3.googleusercontent.com/sJ9AZR0OwprtUC2_m4hVAavLDN1sDAWw4ZsBGBvQLNauVCsjd4L1VWwMFwVutG24qbixycGiFA=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/AnunnakiTalkYT-d64a02ea00.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/sJ9AZR0OwprtUC2_m4hVAavLDN1sDAWw4ZsBGBvQLNauVCsjd4L1VWwMFwVutG24qbixycGiFA=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Người ngoài hành tinh / Sumer cổ đại / Giải mã văn tự",
       "visionAnalysis": {
@@ -32477,7 +32715,8 @@
         ],
         "scannedAt": "2026-09-30 05:42:01"
       },
-      "nicheCode": "H27"
+      "nicheCode": "H27",
+      "avatar": "assets/avatars/AnunnakiTalkYT-d64a02ea00.jpg"
     },
     {
       "id": "RAW-139",
@@ -32498,7 +32737,8 @@
         "views": 329902,
         "videoCount": 35,
         "country": null,
-        "avatar": "https://yt3.googleusercontent.com/v_PweCU1o1aCBtVY8YBb4iBLZLSy74XRL2moZ7TbN9qYTrUgdt5BgSvcgcmEu6yfGMRrcLkp6Q=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/erasedtime1-55e59859ca.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/v_PweCU1o1aCBtVY8YBb4iBLZLSy74XRL2moZ7TbN9qYTrUgdt5BgSvcgcmEu6yfGMRrcLkp6Q=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Lịch sử Mỹ bị chôn giấu / Khai thác mỏ bí ẩn",
       "visionAnalysis": {
@@ -32668,7 +32908,8 @@
         ],
         "scannedAt": "2026-09-30 05:31:10"
       },
-      "nicheCode": "H27"
+      "nicheCode": "H27",
+      "avatar": "assets/avatars/erasedtime1-55e59859ca.jpg"
     },
     {
       "id": "RAW-140",
@@ -32689,7 +32930,8 @@
         "views": 1471612,
         "videoCount": 58,
         "country": null,
-        "avatar": "https://yt3.googleusercontent.com/gUmRYrAi0FpU-H4fqZNbBp0mYoaOleDkVfA1ZYumaTXbIXP2kTuqud7HZr2bFyM1QLIz0y-tHQ=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/TheFirstChamber-3a2fdc26ed.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/gUmRYrAi0FpU-H4fqZNbBp0mYoaOleDkVfA1ZYumaTXbIXP2kTuqud7HZr2bFyM1QLIz0y-tHQ=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Sumer cổ đại / Công nghệ đã mất / AI giải mã văn tự",
       "visionAnalysis": {
@@ -32886,7 +33128,8 @@
         ],
         "scannedAt": "2026-09-30 05:42:07"
       },
-      "nicheCode": "H27"
+      "nicheCode": "H27",
+      "avatar": "assets/avatars/TheFirstChamber-3a2fdc26ed.jpg"
     },
     {
       "id": "RAW-141",
@@ -32907,7 +33150,8 @@
         "views": 3619844,
         "videoCount": 60,
         "country": null,
-        "avatar": "https://yt3.googleusercontent.com/gJrS1PjBVns1Ged5QrpsbJaBZN1vFHL4-nAd3YXIereYgGOWJxv-sDUZCp66JltjuevAxiot8Q=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/TheOriginAtlas1-2c3efa1704.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/gJrS1PjBVns1Ged5QrpsbJaBZN1vFHL4-nAd3YXIereYgGOWJxv-sDUZCp66JltjuevAxiot8Q=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "ADN cổ / Di cư loài người / Gốc tích các dân tộc",
       "visionAnalysis": {
@@ -33113,7 +33357,8 @@
         ],
         "scannedAt": "2026-09-30 05:42:28"
       },
-      "nicheCode": "H27"
+      "nicheCode": "H27",
+      "avatar": "assets/avatars/TheOriginAtlas1-2c3efa1704.jpg"
     },
     {
       "id": "RAW-142",
@@ -33134,7 +33379,8 @@
         "views": 1271266,
         "videoCount": 33,
         "country": null,
-        "avatar": "https://yt3.googleusercontent.com/mLdnl7XC1T_FObyHqK7yk2mLBWPVUYCeUPLuoB-oNIeAlBOyt-I9QXiuu97TOyZQ7n1mnCKGBH4=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/ch-470c78cd63.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/mLdnl7XC1T_FObyHqK7yk2mLBWPVUYCeUPLuoB-oNIeAlBOyt-I9QXiuu97TOyZQ7n1mnCKGBH4=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "AI art Nhật / Thế giới tưởng tượng / Thành phố retro-future",
       "visionAnalysis": {
@@ -33331,7 +33577,8 @@
         ],
         "scannedAt": "2026-09-30 05:42:33"
       },
-      "nicheCode": "H38"
+      "nicheCode": "H38",
+      "avatar": "assets/avatars/ch-470c78cd63.jpg"
     },
     {
       "id": "RAW-143",
@@ -33345,7 +33592,8 @@
         "views": 8799120,
         "videoCount": 646,
         "country": null,
-        "avatar": "https://yt3.googleusercontent.com/b4OAuJqiwj8p-_yB8g5oBlzVoXW0m4wLzAumhMXg2GwtstGBjFBPBRHLEyLq3Hz-hKdEtbcp=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/songkhoekhivegia-5ce62eaca0.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/b4OAuJqiwj8p-_yB8g5oBlzVoXW0m4wLzAumhMXg2GwtstGBjFBPBRHLEyLq3Hz-hKdEtbcp=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Sức khỏe người cao tuổi VN / Mẹo sống khỏe",
       "editorialNiche": "Sức khỏe VN",
@@ -33513,7 +33761,8 @@
         ],
         "scannedAt": "2026-09-30 05:34:43"
       },
-      "nicheCode": "H04"
+      "nicheCode": "H04",
+      "avatar": "assets/avatars/songkhoekhivegia-5ce62eaca0.jpg"
     },
     {
       "id": "RAW-144",
@@ -33527,7 +33776,8 @@
         "views": 8441462,
         "videoCount": 244,
         "country": null,
-        "avatar": "https://yt3.googleusercontent.com/O2aXVBvgH-YrQw-EhxWmqtsX5Yqp3MGzvVbf6alqzat2SatwSXokfqacgwcXddLUsVi21AzhnQ=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/songlausongkhoe360-d99b08b23e.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/O2aXVBvgH-YrQw-EhxWmqtsX5Yqp3MGzvVbf6alqzat2SatwSXokfqacgwcXddLUsVi21AzhnQ=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Sức khỏe trường thọ / Bí quyết sống lâu VN",
       "editorialNiche": "Sức khỏe VN",
@@ -33695,7 +33945,8 @@
         ],
         "scannedAt": "2026-09-30 05:42:38"
       },
-      "nicheCode": "H04"
+      "nicheCode": "H04",
+      "avatar": "assets/avatars/songlausongkhoe360-d99b08b23e.jpg"
     },
     {
       "id": "RAW-145",
@@ -33709,7 +33960,8 @@
         "views": 3060345,
         "videoCount": 254,
         "country": null,
-        "avatar": "https://yt3.googleusercontent.com/OiWaPzH7MpIJdPo4iXxxbsiGqF-IM321FWwvMa5s-w4Mw_CpIpsY0mkurdiqZe0BqABSP3byjO8=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/suckhoedongy99-04f16d6030.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/OiWaPzH7MpIJdPo4iXxxbsiGqF-IM321FWwvMa5s-w4Mw_CpIpsY0mkurdiqZe0BqABSP3byjO8=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Sức khỏe Đông Y / Y học cổ truyền VN",
       "editorialNiche": "Sức khỏe VN",
@@ -33858,7 +34110,8 @@
         ],
         "scannedAt": "2026-09-30 05:36:00"
       },
-      "nicheCode": "H04"
+      "nicheCode": "H04",
+      "avatar": "assets/avatars/suckhoedongy99-04f16d6030.jpg"
     },
     {
       "id": "RAW-146",
@@ -33872,7 +34125,8 @@
         "views": 1084301,
         "videoCount": 44,
         "country": null,
-        "avatar": "https://yt3.googleusercontent.com/er2opKuMQiBod9OUFWaO58oVsRSF-NFOLmGurguTm2JbQ1tm168qaeOv7hHiS-Z8xZu8jEQQVek=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/Songkhoetungngay365-2d49dea1c1.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/er2opKuMQiBod9OUFWaO58oVsRSF-NFOLmGurguTm2JbQ1tm168qaeOv7hHiS-Z8xZu8jEQQVek=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Sức khỏe thường ngày VN / Thói quen sống khỏe",
       "editorialNiche": "Sức khỏe VN",
@@ -34022,7 +34276,8 @@
         ],
         "scannedAt": "2026-09-30 05:42:50"
       },
-      "nicheCode": "H04"
+      "nicheCode": "H04",
+      "avatar": "assets/avatars/Songkhoetungngay365-2d49dea1c1.jpg"
     },
     {
       "id": "RAW-147",
@@ -34036,7 +34291,8 @@
         "views": 401056,
         "videoCount": 5,
         "country": null,
-        "avatar": "https://yt3.googleusercontent.com/3i3y_9EqizLc4asJwG-FBuzcOBjARzH3Cn3UW9Gm7m3IcgfaLWljZ5lUGKj_Dms10ePsGMoA8Q=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/SuGia_SucKhoe-2e6bd7378d.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/3i3y_9EqizLc4asJwG-FBuzcOBjARzH3Cn3UW9Gm7m3IcgfaLWljZ5lUGKj_Dms10ePsGMoA8Q=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Sức khỏe cộng đồng VN / Thông tin y tế",
       "editorialNiche": "Sức khỏe VN",
@@ -34186,7 +34442,8 @@
         ],
         "scannedAt": "2026-09-30 05:37:38"
       },
-      "nicheCode": "H04"
+      "nicheCode": "H04",
+      "avatar": "assets/avatars/SuGia_SucKhoe-2e6bd7378d.jpg"
     },
     {
       "id": "RAW-148",
@@ -34200,7 +34457,8 @@
         "views": 2025560,
         "videoCount": 10,
         "country": null,
-        "avatar": "https://yt3.googleusercontent.com/xKbZeowcGr976-Nv316INFkNOsuTj_4E0MUN3yDCsd8WTMXwPlyQONHBbBC_ecdRXBZlMWgr=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/thuatphongthuy26-ff2ffebdaf.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/xKbZeowcGr976-Nv316INFkNOsuTj_4E0MUN3yDCsd8WTMXwPlyQONHBbBC_ecdRXBZlMWgr=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Phong thủy audio / Tâm linh ứng dụng",
       "editorialNiche": "Phong thủy VN",
@@ -34322,7 +34580,8 @@
         "videoRows": [],
         "scannedAt": "2026-09-30 05:42:53"
       },
-      "nicheCode": "H05"
+      "nicheCode": "H05",
+      "avatar": "assets/avatars/thuatphongthuy26-ff2ffebdaf.jpg"
     },
     {
       "id": "RAW-149",
@@ -34336,7 +34595,8 @@
         "views": 432670,
         "videoCount": 111,
         "country": null,
-        "avatar": "https://yt3.googleusercontent.com/G6tojbt1RTIOI8Xc1AJ5h3rtEK9G4KCELpIPL8PiOgMQUJ_kZ4rnE-f-9voV0jGk3q0FWc9zRQ=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/meophongthuy-m7d-c3e1a954ab.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/G6tojbt1RTIOI8Xc1AJ5h3rtEK9G4KCELpIPL8PiOgMQUJ_kZ4rnE-f-9voV0jGk3q0FWc9zRQ=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Phong thủy ứng dụng / Mẹo nhà cửa",
       "editorialNiche": "Phong thủy VN",
@@ -34504,7 +34764,8 @@
         ],
         "scannedAt": "2026-09-30 05:38:42"
       },
-      "nicheCode": "H05"
+      "nicheCode": "H05",
+      "avatar": "assets/avatars/meophongthuy-m7d-c3e1a954ab.jpg"
     },
     {
       "id": "RAW-150",
@@ -34518,7 +34779,8 @@
         "views": 1539971,
         "videoCount": 48,
         "country": null,
-        "avatar": "https://yt3.googleusercontent.com/yHzIBHYaKpu2gwNWMuMXo0fw0SK4WhuN90nfQtmzjocvUwgrVXSuedN69c_8LPQdMi_Q9m_aIg=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/PHONGTHUYTIEMTANG-a350338a33.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/yHzIBHYaKpu2gwNWMuMXo0fw0SK4WhuN90nfQtmzjocvUwgrVXSuedN69c_8LPQdMi_Q9m_aIg=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Phong thủy toàn diện / Khám phá",
       "editorialNiche": "Phong thủy VN",
@@ -34668,7 +34930,8 @@
         ],
         "scannedAt": "2026-09-30 05:39:04"
       },
-      "nicheCode": "H05"
+      "nicheCode": "H05",
+      "avatar": "assets/avatars/PHONGTHUYTIEMTANG-a350338a33.jpg"
     },
     {
       "id": "RAW-151",
@@ -34682,7 +34945,7 @@
         "views": 22732880,
         "videoCount": 58,
         "country": null,
-        "avatar": "assets/avatars/UCqZpuhhJC5G4kfvBG7MTAXg-af253e319b.jpg"
+        "avatar": "assets/avatars/UCqZpuhhJC5G4kfvBG7MTAXg-6cabd0b8c6.jpg"
       },
       "niche": "Khoa học / Trái Đất / Vũ trụ documentary EN",
       "editorialNiche": "Khoa học / Trái Đất EN (documentary thiên nhiên–vũ trụ)",
@@ -34782,7 +35045,7 @@
         "analyzedAt": "2026-09-16T15:08:03.462418+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/UCqZpuhhJC5G4kfvBG7MTAXg-af253e319b.jpg",
+      "avatar": "assets/avatars/UCqZpuhhJC5G4kfvBG7MTAXg-6cabd0b8c6.jpg",
       "sha256": "d35d7584ba304eae20519c0df29a4829d213d7b5731ea9ddd7d7ac3a066e7342",
       "technical": {
         "dimensions": "1280x720",
@@ -36942,7 +37205,7 @@
         "views": 809808,
         "videoCount": 74,
         "country": "KR",
-        "avatar": "assets/avatars/ch-0d8a97e731.jpg"
+        "avatar": "assets/avatars/1001joseon-0d8a97e731.jpg"
       },
       "niche": "Drama / Stories",
       "editorialNiche": "Drama / 야담 Hàn (tim bo sung 16/09/2026)",
@@ -37037,7 +37300,7 @@
         "analyzedAt": "2026-09-16T15:08:28.782028+00:00",
         "source": "rss_clean"
       },
-      "avatar": "assets/avatars/ch-0d8a97e731.jpg",
+      "avatar": "assets/avatars/1001joseon-0d8a97e731.jpg",
       "sha256": "59b4db198f7714b17f6701babe57c0b98d6cf507ef6012d052888685301d250d",
       "technical": {
         "dimensions": "1280x720",
@@ -37085,7 +37348,8 @@
         "views": 629844,
         "videoCount": 13,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/lpM68gXR1cXa5vuVDXVT0zPep_o6HrCrE9HjyDMolc0d2mTdjdpLp3G70LwIbI5FBqaHRfJO=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/MythoriginStudio-f099595b34.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/lpM68gXR1cXa5vuVDXVT0zPep_o6HrCrE9HjyDMolc0d2mTdjdpLp3G70LwIbI5FBqaHRfJO=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Phim ngắn AI Sci-Fi EN / Dystopian & Colossal Machines",
       "editorialNiche": "Phim ngắn Sci-Fi AI EN / Dystopia 6-10 phút",
@@ -37273,7 +37537,8 @@
         ],
         "scannedAt": "2026-09-30 05:44:47"
       },
-      "nicheCode": "H38"
+      "nicheCode": "H38",
+      "avatar": "assets/avatars/MythoriginStudio-f099595b34.jpg"
     },
     {
       "id": "RAW-167",
@@ -37294,7 +37559,8 @@
         "views": 294694,
         "videoCount": 73,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/kpwcwo-2qg2eHlGk-0V9-rHmkF35n7Jd1A-4PogguGmS6CG9v3dN3pdicrCkUjod85MfFzKOugw=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/BeyondReality4U-05947ed7e1.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/kpwcwo-2qg2eHlGk-0V9-rHmkF35n7Jd1A-4PogguGmS6CG9v3dN3pdicrCkUjod85MfFzKOugw=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Thành phố tương lai 4K EN / Cuộc sống năm 2100-5000",
       "editorialNiche": "Thành phố tương lai 4K EN / Future City Documentary",
@@ -37491,7 +37757,8 @@
         ],
         "scannedAt": "2026-09-30 05:44:53"
       },
-      "nicheCode": "H38"
+      "nicheCode": "H38",
+      "avatar": "assets/avatars/BeyondReality4U-05947ed7e1.jpg"
     },
     {
       "id": "RAW-168",
@@ -37512,7 +37779,8 @@
         "views": 627914,
         "videoCount": 36,
         "country": "US",
-        "avatar": "https://yt3.googleusercontent.com/muZRbz9O1Z_CmNq3abKeebe6abKu9P1VrgY49kBxhAw7j0UUaQKpTKfqvpFoq0kSkcBCHwLyiw=s900-c-k-c0x00ffffff-no-rj"
+        "avatar": "assets/avatars/EveryLifeExplainedofc-66296156e1.jpg",
+        "remoteAvatar": "https://yt3.googleusercontent.com/muZRbz9O1Z_CmNq3abKeebe6abKu9P1VrgY49kBxhAw7j0UUaQKpTKfqvpFoq0kSkcBCHwLyiw=s900-c-k-c0x00ffffff-no-rj"
       },
       "niche": "Cuộc sống trung cổ AI art EN / Medieval Life Explained",
       "editorialNiche": "Lịch sử trung cổ đời thường / Medieval Life AI Art",
@@ -37709,7 +37977,8 @@
         ],
         "scannedAt": "2026-09-30 05:45:01"
       },
-      "nicheCode": "H21"
+      "nicheCode": "H21",
+      "avatar": "assets/avatars/EveryLifeExplainedofc-66296156e1.jpg"
     }
   ],
   "summary": {

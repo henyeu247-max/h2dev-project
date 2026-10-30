@@ -1941,6 +1941,27 @@ button.niche-row:focus-visible,
   vertical-align: baseline;
   flex: none;
 }
+.channel-chip-ban {
+  border-color: rgba(245, 158, 11, 0.45) !important;
+  background-color: rgba(245, 158, 11, 0.08) !important;
+}
+.channel-chip-ban:hover {
+  border-color: rgba(245, 158, 11, 0.8) !important;
+  color: #fbbf24 !important;
+}
+.channel-chip-ban-badge {
+  background-color: #d97706 !important;
+  color: #ffffff !important;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 1px 4px;
+  border-radius: 3px;
+  margin-left: 4px;
+  display: inline-block;
+  vertical-align: baseline;
+  flex: none;
+}
 /* UI-fix 2026-10-09: handle dai bi cat thanh "..." thay vi cat cut; huy hiep DIE va mui ten khong bi day ra ngoai chip. */
 .channel-chip-handle { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .channel-chip-arrow { flex: none; }

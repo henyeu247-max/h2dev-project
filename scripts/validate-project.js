@@ -327,6 +327,9 @@ for (const [index, meta] of array(ngachXanh.ngachMetaKho).entries()) {
     const thiTruong = array(n.thiTruong);
     const banLower = new Set(mauBan.map(h => String(h || '').toLowerCase()));
 
+    if (typeof n.nenLam !== 'boolean') {
+      errors.push(`data-tabs/ngach-xanh.json: ngachXanh[${idx}] (${n.ngach}) nenLam phai la boolean (hien tai: ${typeof n.nenLam})`);
+    }
     if (skus.length === 0) {
       errors.push(`data-tabs/ngach-xanh.json: ngachXanh[${idx}] (${n.ngach}) co skus rong`);
     }

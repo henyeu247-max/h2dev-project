@@ -980,7 +980,7 @@ const server = http.createServer(async (req,res)=>{
     } else {
       urlPath = '/learn.html';
     }
-  } else if (/^\/(?:tatca|video|ngachxanh|tai-lieu|nhac|nguonreup|kenh-mau|rawkenh|chienluoc|sodo)\/?$/i.test(urlPath)) {
+  } else if (/^\/(?:tatca|video|ngach|ngachxanh|tai-lieu|nhac|nguonreup|kenh-mau|rawkenh|chienluoc|sodo)\/?$/i.test(urlPath)) {
     urlPath = '/index.html';
   } else if (/^\/graph\/?$/i.test(urlPath)) {
     urlPath = '/graph.html';

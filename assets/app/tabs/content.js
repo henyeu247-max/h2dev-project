@@ -937,6 +937,8 @@ async function renderNgachXanh() {
       skills: safeArray(detail.skills),
       subNiches120: safeArray(detail.subNiches120),
       kenhMoRong2026: safeArray(detail.kenhMoRong2026),
+      nenLam: detail.nenLam,
+      nenLamNote: detail.nenLamNote || '',
       vids: vidsFor(detail),
       rawDetail: detail
     };
@@ -1019,7 +1021,7 @@ async function renderNgachXanh() {
 
   return `
   ${pageBanner('Nhận định Ngách xanh 2026', 'Bản đồ ' + enrichedNiches.length + ' ngách YouTube, định dạng an toàn (Safe Format), rủi ro chính sách (Policy Flags) và kênh đối thủ đã kiểm chứng 30 ngày.', [
-    { icon: ICONS.niche, label: 'Ưu tiên sản xuất', value: tierCounts.UU_TIEN_SAN_XUAT, sub: 'Top 1-8 ngách sạch, demand thực, RPM cao' },
+    { icon: ICONS.niche, label: 'Ưu tiên sản xuất', value: tierCounts.UU_TIEN_SAN_XUAT, sub: 'Top ngách ưu tiên sản xuất 2026, demand thực, RPM cao' },
     { icon: ICONS.doc, label: 'Watchlist & Test', value: (tierCounts.WATCHLIST + tierCounts.TEST_FORMAT), sub: 'Kiểm soát format & test nhỏ 5-10 video' },
     { icon: ICONS.channel, label: 'Kênh mẫu sạch', value: totalMauSach + ' kênh', sub: 'Tổng kênh mẫu đối thủ gắn với ' + enrichedNiches.length + ' ngách' },
     { icon: ICONS.strategy, label: 'RPM Benchmark', value: rpmMedian != null ? ('$' + rpmMedian.toFixed(2)) : 'N/A', sub: rpmValues.length ? ('Đo thực tế & Benchmark ngành từ ' + rpmValues.length + ' ngách (2026)') : 'Chưa đủ dữ liệu RPM để tính median' }
@@ -1070,7 +1072,7 @@ async function renderNgachXanh() {
 
   <!-- 4 CỬA CHÍNH SÁCH YOUTUBE (COLLAPSIBLE ACCESSIBLE BANNER) -->
   <details class="card p-4 sm:p-5 mb-6 border-amber-900/30 bg-amber-950/10 group">
-<summary class="flex items-center justify-between cursor-pointer font-semibold text-xs text-amber-300 select-none">
+<summary class="flex items-center justify-between cursor-pointer font-semibold text-xs text-amber-300 select-none py-2 min-h-[44px]">
   <div class="flex items-center gap-2">
     <span aria-hidden="true">${ico('shield', 14)}</span>
     <span>4 Cửa ải chính sách kiếm tiền YouTube 2026 (Bấm để xem chi tiết)</span>
@@ -1130,6 +1132,7 @@ ${nxItems.map(n => {
             ${(n.skills && n.skills.length) ? `<span class="badge badge-blue" title="Skills: ${esc(n.skills.join(', '))}">${esc(n.skills[0])}${n.skills.length > 1 ? ' +' + (n.skills.length - 1) : ''}</span>` : ''}
           </div>
           <h3 class="nc-name">${esc(n.name)}</h3>
+          ${n.nenLamNote ? `<div class="mt-1.5 text-xs text-amber-300 bg-amber-950/10 px-2 py-1 rounded border border-amber-900/30 leading-snug"><span class="font-semibold text-amber-200">Khuyến nghị:</span> ${esc(n.nenLamNote)}</div>` : ''}
         </div>
       </div>
     <div class="nx-card-facts mb-3">
@@ -1150,34 +1153,58 @@ ${nxItems.map(n => {
           const h = String(ch || '').replace(/^@/, '').toLowerCase();
           const isDead = deadBanSet.has(h);
           const isBanLive = !isDead && (n.banSet && n.banSet.has(h));
-          const chipClass = isDead ? 'channel-chip-dead' : '';
+          const chipClass = isDead ? 'channel-chip-dead' : (isBanLive ? 'channel-chip-ban' : '');
           const chipTitle = isDead
             ? 'Kênh đối chứng đã dừng hoặc bị YouTube gỡ (404/wipe)'
             : (isBanLive ? 'Kênh đang sống nhưng thuộc nhóm mẫu bẩn / không copy (facecam, clip gốc, YMYL rủi ro hoặc ngủ đông)' : esc(ch));
           const badgeHtml = isDead
             ? '<span class="channel-chip-dead-badge">DIE</span>'
-            : (isBanLive ? '<span class="badge badge-amber ml-1">BẨN</span>' : '');
+            : (isBanLive ? '<span class="channel-chip-ban-badge badge badge-amber ml-1">BẨN</span>' : '');
           return `<a href="https://www.youtube.com/${esc(ch)}" target="_blank" rel="noopener noreferrer" class="channel-chip ${chipClass}" translate="no" title="${chipTitle}"><span class="channel-chip-handle">${esc(ch)}</span>${badgeHtml}<span class="channel-chip-arrow">↗</span></a>`;
         }).join('')}
       </div>
-      ${(n.kenhMoRong2026 && n.kenhMoRong2026.length) ? `<details class="mt-2 text-xs">
-        <summary class="cursor-pointer text-sky-400 hover:text-white font-medium select-none">+${n.kenhMoRong2026.length} kênh mở rộng 2026 (bấm để xem)</summary>
+      ${(n.kenhMoRong2026 && n.kenhMoRong2026.length) ? `<details class="mt-2 text-xs group min-w-0">
+        <summary class="flex items-center justify-between cursor-pointer text-sky-400 hover:text-white font-medium select-none py-2 min-h-[44px]">
+          <span class="flex items-center gap-1.5 min-w-0">
+            <span class="drawer-chevron text-xs font-mono" aria-hidden="true">▸</span>
+            <span class="truncate min-w-0">+${n.kenhMoRong2026.length} kênh mở rộng 2026 (bấm để xem)</span>
+          </span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform text-xs font-mono shrink-0">${ico('chevron-down', 14)}</span>
+        </summary>
         <div class="nc-channels mt-1.5">
-          ${n.kenhMoRong2026.map(ch => `<a href="https://www.youtube.com/${esc(ch)}" target="_blank" rel="noopener noreferrer" class="channel-chip" translate="no" title="Kênh mở rộng 2026: ${esc(ch)}"><span class="channel-chip-handle">${esc(ch)}</span><span class="channel-chip-arrow">↗</span></a>`).join('')}
+          ${n.kenhMoRong2026.map(ch => {
+            const h = String(ch || '').replace(/^@/, '').toLowerCase();
+            const isDead = deadBanSet.has(h);
+            const isBanLive = !isDead && (n.banSet && n.banSet.has(h));
+            const chipClass = isDead ? 'channel-chip-dead' : (isBanLive ? 'channel-chip-ban' : '');
+            const chipTitle = isDead
+              ? 'Kênh đối chứng đã dừng hoặc bị YouTube gỡ (404/wipe)'
+              : (isBanLive ? 'Kênh mở rộng 2026 (mẫu bẩn / không copy): ' + esc(ch) : 'Kênh mở rộng 2026: ' + esc(ch));
+            const badgeHtml = isDead
+              ? '<span class="channel-chip-dead-badge">DIE</span>'
+              : (isBanLive ? '<span class="channel-chip-ban-badge badge badge-amber ml-1">BẨN</span>' : '');
+            return `<a href="https://www.youtube.com/${esc(ch)}" target="_blank" rel="noopener noreferrer" class="channel-chip ${chipClass}" translate="no" title="${chipTitle}"><span class="channel-chip-handle">${esc(ch)}</span>${badgeHtml}<span class="channel-chip-arrow">↗</span></a>`;
+          }).join('')}
         </div>
       </details>` : ''}
     </div>` : ''}
-    ${(n.docs && n.docs.length) ? `<details class="mb-2.5 text-xs">
-      <summary class="cursor-pointer text-gray-300 hover:text-white font-medium select-none">Tài liệu & SOP ngách (${n.docs.length})</summary>
+    ${(n.docs && n.docs.length) ? `<details class="mb-2.5 text-xs group min-w-0">
+      <summary class="flex items-center justify-between cursor-pointer text-gray-300 hover:text-white font-medium select-none py-2 min-h-[44px]">
+        <span class="flex items-center gap-1.5 min-w-0">
+          <span class="drawer-chevron text-xs font-mono" aria-hidden="true">▸</span>
+          <span class="truncate min-w-0">Tài liệu & SOP ngách (${n.docs.length})</span>
+        </span>
+        <span class="text-gray-400 group-open:rotate-180 transition-transform text-xs font-mono shrink-0">${ico('chevron-down', 14)}</span>
+      </summary>
       <div class="mt-1.5 space-y-1">
         ${n.docs.map(docRef => {
           const s = String(docRef || '');
           const mTl = s.match(/^TL-(\d+)\b/i);
           if (mTl) {
             const docNum = parseInt(mTl[1], 10);
-            return `<a href="/tai-lieu?did=DOC_${docNum}&di=${docNum - 1}" class="text-brand-400 hover:text-brand-300 block truncate" title="${esc(s)}">↗ ${esc(s)}</a>`;
+            return `<a href="/tai-lieu?did=DOC_${docNum}&di=${docNum - 1}" class="text-brand-400 hover:text-brand-300 flex items-center min-h-[44px] py-2.5 min-w-0" title="${esc(s)}"><span class="truncate min-w-0">↗ ${esc(s)}</span></a>`;
           }
-          return `<a href="${esc(s)}" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white block truncate" title="${esc(s)}">↗ ${esc(s)}</a>`;
+          return `<a href="${esc(s)}" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white flex items-center min-h-[44px] py-2.5 min-w-0" title="${esc(s)}"><span class="truncate min-w-0">↗ ${esc(s)}</span></a>`;
         }).join('')}
       </div>
     </details>` : ''}

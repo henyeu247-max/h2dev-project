@@ -1303,7 +1303,7 @@
        Bat buoc khoi phuc DU 9 tham so: tab, market, niche, page, rn, rg, rq, watch, free, sub. */
     const URL_TABS = ['tatca', 'lotrinh', 'video', 'ngachxanh', 'tai-lieu', 'nhac', 'nguonreup', 'kenh-mau', 'rawkenh', 'chienluoc', 'sodo'];
     /* Alias URL cu -> tab id moi (BE da 301, day la lop bao hiem cho link noi bo con sot) */
-    const URL_ALIAS = { 'tongquan': 'tatca', 'kichban': 'tai-lieu', 'kenh': 'kenh-mau' };
+    const URL_ALIAS = { 'tongquan': 'tatca', 'kichban': 'tai-lieu', 'kenh': 'kenh-mau', 'ngach': 'ngachxanh' };
     function readStateFromURL(validTabs) {
       const tabs = validTabs || URL_TABS;
       const qp = new URLSearchParams(location.search);

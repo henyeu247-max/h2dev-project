@@ -4,8 +4,8 @@
 - **Mã SKU:** `VIDEO-ab1137` (Bài `#97`)
 - **Tiêu đề gốc:** Khám kênh show thực tế kênh làm nhân bản thị trường từ Hàn sang Nhật sau chỉ 1 video đầu tiên
 - **Chủ đề thực chiến:** Khám Kênh Thực Tế: Nhân Bản Thị Trường Từ Hàn Sang Nhật Ăn Đề Xuất Ngay Video Đầu Tiên
-- **Ngách nội dung:** Nhân Bản Kênh & Chiến Lược Thị Trường
-- **Thị trường mục tiêu:** 🇯🇵 Nhật / 🇰🇷 Hàn (Mã: `JP`)
+- **Ngách nội dung:** Dưỡng Sinh & Mẹo Sức Khỏe Hàn - Nhật
+- **Thị trường mục tiêu:** 🇯🇵 Nhật / 🇰🇷 Hàn (Mã: `JP,KR`)
 - **Thời lượng:** 3:05 (`185s`)
 - **File Video:** [`video/VIDEO-ab1137/VIDEO-ab1137.mp4`](/video/VIDEO-ab1137/VIDEO-ab1137.mp4)
 - **Ảnh đại diện:** [`assets/thumbs/VIDEO-ab1137.png`](/assets/thumbs/VIDEO-ab1137.png)
@@ -15,7 +15,7 @@
 
 ## 2. Kênh Đối Thủ Trong Video & Mô Tả Gốc
 ### Danh sách kênh đối thủ xuất hiện trong bài giảng:
-- *(Video phân tích trực tiếp trên YouTube Studio / tài nguyên nội bộ)*
+- [`@HopeGarden-KR`](https://www.youtube.com/@HopeGarden-KR) — Kênh gốc Hàn Quốc (`희망정원`) mở đầu bài giảng tại `00:02` được học viên nhân bản sang Nhật Bản (`10月に切ってはいけない花木9選`).
 
 ### Nội dung mô tả gốc (description.txt):
 ```text

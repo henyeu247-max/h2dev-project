@@ -1,0 +1,70 @@
+{
+  "key_takeaways": [
+    "Tác giả chia sẻ một cách bám trend để lấy kịch bản mà không bị không view, với ví dụ kênh mới đang làm ngách khác thì chuyển sang ngách ong theo video chia sẻ ngày 15 tháng 8 và lên view ngay.",
+    "Công cụ là một extension cài thêm vào trình duyệt, dùng bản free là đủ, bấm vào mục phổ biến của một kênh bất kỳ sẽ thấy chỉ số VPH của từng video.",
+    "Chỉ số VPH nhảy liên tục theo trend, nên chọn video có chỉ số cao hơn hẳn các video khác, ví dụ video hơn 500 là cao, còn video bên phải hơn 3.000 và hơn 400.000 view từ 6 ngày trước thì đáng bám nhất.",
+    "Cách cũ là lấy video nhiều view mà gần nhất chỉ áp dụng cho video rất gần đây, còn với chỉ số VPH cao thì có thể lấy trong khoảng 1 đến 2 tháng, sau 2 tháng thì không nên.",
+    "Tác giả cảnh báo kênh thị trường Việt đang làm ngon mà chuyển sang chủ đề khác thì bị phân phối khán giả, không bám được trend và view èo uột, nên đã chọn ngách nhỏ thì tập trung làm, và người mới nên bắt đầu với thị trường Việt, Hàn hoặc Nhật vì dễ làm, ít cạnh tranh, còn US thì rất khó."
+  ],
+  "edit_sop": {
+    "primary": "Cách chọn video để bám theo lấy kịch bản bằng extension vidIQ, dựa vào chỉ số VPH",
+    "additional": [
+      "Cài extension vidIQ, dùng bản free cũng đủ",
+      "Vào phần video phổ biến của một kênh bất kỳ và xem chỉ số VPH, chọn video có chỉ số cao so với các video khác",
+      "Chỉ số VPH nhảy liên tục theo trend; ví dụ chọn video hơn 3.000 VPH và hơn 400.000 view trong 6 ngày thay vì video chỉ vài trăm",
+      "Lấy video trong vòng 1 đến 2 tháng gần đây; cách lấy video nhiều view nhất chỉ áp dụng cho video gần nhất",
+      "Làm đúng một ngách nhỏ và cứ bám theo, phần quy trình còn lại làm như các video trước"
+    ]
+  },
+  "avoid_flags": [
+    "Không chuyển ngách liên tục hay làm nhiều ngách, sẽ bị phân phối sai khán giả và view đẹp đẹp",
+    "Không bám theo video sau 2 tháng",
+    "Người mới nên tập làm thị trường Việt, Hàn hoặc Nhật trước, đừng đâm đầu vào US vì rất khó"
+  ],
+  "verified_expert_summary": true,
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mẹo lấy kịch bản bám theo video đang có view, không bao giờ bị không view"
+    },
+    {
+      "time": "01:29",
+      "seconds": 89,
+      "label": "Lý do hay bị không view / view lẹt đẹt: chọn video tùy ý thay vì bám theo video đang lên"
+    },
+    {
+      "time": "02:53",
+      "seconds": 173,
+      "label": "Xem chỉ số phân tích: video có chỉ số cao (ví dụ hơn 500) so với video khác thì lấy"
+    },
+    {
+      "time": "04:15",
+      "seconds": 255,
+      "label": "Lấy video nhiều view nhất gần đây; hoặc trong 1-2 tháng nếu chỉ số cao"
+    },
+    {
+      "time": "05:43",
+      "seconds": 343,
+      "label": "Kênh đang làm ngon nhưng đổi sang chủ đề khác; nên tập trung một ngách nhỏ"
+    }
+  ],
+  "tools_mentioned": [],
+  "sop_steps": [
+    "Cài extension vidIQ, dùng bản free cũng đủ",
+    "Vào phần video phổ biến của một kênh bất kỳ và xem chỉ số VPH, chọn video có chỉ số cao so với các video khác",
+    "Chỉ số VPH nhảy liên tục theo trend; ví dụ chọn video hơn 3.000 VPH và hơn 400.000 view trong 6 ngày thay vì video chỉ vài trăm",
+    "Lấy video trong vòng 1 đến 2 tháng gần đây; cách lấy video nhiều view nhất chỉ áp dụng cho video gần nhất",
+    "Làm đúng một ngách nhỏ và cứ bám theo, phần quy trình còn lại làm như các video trước"
+  ],
+  "sku": "VIDEO-aacc70",
+  "title": "Chia Sẻ Tút (mẹo) Bám Theo Key Đối Thủ Làm Video Không Bao Giờ Bị 0 View",
+  "actual_topic": "Chia Sẻ Tút (mẹo) Bám Theo Key Đối Thủ Làm Video Không Bao Giờ Bị 0 View",
+  "channels_mentioned": [],
+  "visual_audio_checked": true,
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "source_transcript": "video/VIDEO-aacc70/transcript.txt",
+  "market_code": "KR",
+  "target_market": "Hàn Quốc",
+  "niche_primary": "Khám Kênh & Tối Ưu Tăng Trưởng"
+}

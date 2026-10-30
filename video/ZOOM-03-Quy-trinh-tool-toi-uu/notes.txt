@@ -1,0 +1,39 @@
+Tổng quan quy trình
+
+Video 20 phút, mỗi video 2-3 phút. Làm 2 kịch bản mỗi lần. Gõ 10 lần để đạt 15 cảnh trên 1 P. Đã làm 150 cảnh cho video 20 phút. Bỏ qua P2-P5, đi thẳng vào SEO để tiết kiệm thời gian. Thực hiện SEO cho mỗi kênh theo chủ đề. Tạo 3 kênh cùng chủ đề, test kênh nào lên view nhất thì tập trung vào kênh đó (x3 cơ hội). Không đăng cùng một video lên 3 kênh; mỗi kênh đăng video khác nhau. 30 video chia 3 kênh, mỗi kênh 10 video, đăng trong 10 ngày. Sau đó chọn kênh chuyển đổi tốt nhất để tổng lực, bỏ 2 kênh kia. Đối thủ chỉ có khoảng 60 video mỗi kênh; cần xác định nhiều đối thủ, không chỉ một.
+
+Quản lý kịch bản và dự án
+
+Copy thông tin vào bảng, xóa tiếng Anh vì làm tiếng Việt. Dán mô tả và bộ từ khóa. Thiếu tiêu đề, sẽ làm sau. Lưu kịch bản: chỉ lưu prompt. Đổi tên dự án thành "Bí mật lịch sử". Tạo folder cho kênh: "Bí mật lịch sử", bỏ 2 file vào. Tạo các mục: content, logo, thành phẩm, thumbnail. Bật tune. Lập kịch bản hoặc chạy hàng loạt. Chọn thư mục chứa 2 bảng, chạy 1/2. Chọn video 3 đồng nhất hay chỉ chạy ảnh. Chọn giọng đọc: quốc gia Việt Nam, có thể lọc theo giọng điệu, ngôn ngữ, trung niên. Mặc định trước. Chạy V3 để không tốn credit. Chạy 5-8 luồng (khuyến nghị), demo 10 luồng. Ghép video tự động. Cần tài khoản Vio 3: lấy token từ Gemini, dán vào, lưu đồng bộ, bấm chạy. Tool tự động ghép video, chuyển sang kịch bản tiếp theo. Đang chạy 10 luồng cùng lúc để x10 tốc độ. Trong lúc chờ, làm tiêu đề và thumbnail.
+
+Xử lý vi phạm chính sách và ghép video
+
+Video có thể vi phạm chính sách. Có thể sửa, tạo lại, hoặc dùng công cụ rà soát. Không nên dùng rà soát vì mất thời gian; thay vào đó, vào thư mục video nhân bản cảnh khác bù vào cảnh lỗi. 150 cảnh chỉ có 2 cảnh lỗi vài giây, không cần sửa từng tí. Nếu chưa đủ video, tool không ghép. Audio 15/15 nhưng video mới 6/15 thì chưa ghép. Thư mục tự tạo khi nhét kịch bản vào. Có thể bật nhanh bằng cách bấm audio, video, hoặc kết quả. Chờ tool chạy xong, ghép video. Nghỉ 1-2 phút.
+
+Xử lý video sau khi tool chạy xong
+
+Sau khi có 2 video, không đăng ngay vì chưa kiếm được tiền YouTube. Cần vào CapCut cắt, thêm nhạc nền nhẹ, hiệu ứng. SEO thô đã lỗi thời (4-5 năm trước), bỏ ngay. Tool chạy xong xử lý luôn. Lưu thành phẩm vào mục thành phẩm, thumbnail vào mục thumbnail. Thêm phong cách riêng.
+
+Tăng thời lượng xem trung bình
+
+Đặt câu hỏi: video 30 phút, thời lượng xem trung bình 10 phút (1/3). Làm sao gấp đôi thời lượng xem trung bình? Mục đích: tăng RPM, tăng tiền. Không dùng cách spam, A/B test, chạy quảng cáo. Cách đúng: không tăng thời lượng video mà tăng số lượng video. Video 30 phút, thời lượng xem trung bình 10 phút. Ghép thêm video khác vào cuối. Cụ thể: video số 3 ghép video số 1 vào đuôi, thời lượng tăng gấp đôi, video số 1 xuất hiện lần 2. Video số 4 ghép số 2, số 5 ghép số 3, v.v. Một video có thể xuất hiện trên YouTube 3 lần: lần đầu đăng, lần 2 ghép đuôi, lần 3 livestream. Chính sách YouTube cho phép. Không bị lỗi sử dụng lại nội dung nếu làm đúng. Lỗi sử dụng lại nội dung là do dùng lại content cũ, không phải do ghép. Ghép tối đa 2 video mỗi lần. Để thời lượng xem trung bình ổn định, các video nên có thời lượng tương đương (ví dụ 40-45 phút).
+
+Làm tiêu đề và thumbnail
+
+Chatbot không mạnh bằng ChatGPT trong việc làm tiêu đề. Dùng ChatGPT để viết tiêu đề mạnh hơn. Ví dụ: "AI quét. Đội quân đất nung phát hiện kinh ngạc có thể viết lại lịch sử Trung Hoa." Sau khi có tiêu đề, mô tả, bộ từ khóa, còn thiếu thumbnail. Không dùng thumbnail từ chatbot vì không chất lượng. Tự sáng tạo phong cách riêng: chữ vàng trên, chữ dưới, một dòng chữ và một cái đỏ khẩn cấp. Lên Gemini để làm thumbnail. Prompt time. Dựa vào đối thủ để làm thumbnail, nhưng chuyển sang phong cách của mình. Tải thumbnail đối thủ về, lưu vào mục tham khảo. Tạo mục tham khảo để không lẫn với thành phẩm. Copy link. Làm việc khoa học từ đầu giúp kiểm soát nhiều kênh. Lấy thumbnail đối thủ và mô tả video của mình, gửi vào Gemini để tạo prompt thumbnail mới. Copy nội dung bên trên (không copy thumbnail). Dán vào Gemini, để Pro. Gemini có thể bị giới hạn, cần copy kịch bản dài. Chatbot đưa 5 prompt nhưng không đồng nhất. Làm trên Gemini, thử làm đã. Người mới thấy khó. Có chatbot làm thumbnail miễn phí nhưng không mạnh, mất công chỉnh sửa. Dùng ThumbAI mạnh hơn. Dùng Gemini viết prompt, tạo ảnh trên ThumbAI. Copy câu lệnh. Tại sao không tạo ảnh luôn trên Gemini? Vì khi chốt phong cách, khóa mẫu để đồng nhất. Gửi ảnh sau để cùng phong cách, tạo bản sắc riêng. Quy trình: sản xuất video, làm tiêu đề, làm thumbnail theo loạt, không làm từng video một. Làm từ A-Z. Tải về. Video 1-2 phút không lên view ngay. Cần sáng tạo phong cách riêng. Nếu thumbnail chán, yêu cầu làm lại. Có thể vứt thumbnail đối thủ lên bảo nó làm tương tự. Nâng cấp tài khoản Pro nếu muốn. Mua tài khoản V3 Ultra dùng luôn. Gemini Pro có 3 Ultra Pro. Tăng kích thước lên 5T. Giá 200k cho 18 tháng, bảo hành full. Đây là VR3 Pro, không phải VR3 Ultra. Bán rẻ để dễ tiếp cận.
+
+Đăng video và tối ưu
+
+Đã có tiêu đề, bắt đầu đăng. Hai màn hình là lợi thế. Ba màn hình càng tốt. Đã chuẩn bị hết nên bước đăng rất nhàn. Tạo danh sách phát. Mô tả: paste giới thiệu kênh. Tiêu đề: bình thường. Danh sách phát: để tên kênh đối thủ để ăn đề xuất từ danh sách phát. Khi search tên kênh đối thủ, danh sách phát của mình hiện ra. Khi xem đối thủ, cột bên phải hiện danh sách khác của mình. Luôn để tên kênh đối thủ. Không ai dạy điều này. Không thêm video đối thủ vào danh sách phát của mình. Ngôn ngữ: tiếng Việt. Cài đặt: bấm "không dành cho trẻ em" luôn. Không chọn AI. YouTube tự gắn nhãn AI nếu quét ra. Không tích. Từ khóa: dán tiêu đề, từ khóa. Màn hình kết thúc: để theo phong cách. Danh sách phát: Farady. Lưu lại. Không công khai. Sang video 2, copy paste. Chuẩn bị danh sách phát. Lưu.
+
+Seeding và tăng view ban đầu
+
+Sau khi đăng, không view. Phần seeding. Ngày xưa dùng thiết bị, Gmail Mỹ, fake địa chỉ. Giờ chỉ làm một cách: nhân ra 2 tab, xem video. Để chế độ không công khai. Like. Video đầu tiên: comment chào mọi người, ghim lên. Video thứ hai: comment tiêu đề video 1 và link video 1, ghim. Không cần trả lời bình luận. Kênh mới nên rep hết comment. Kênh đã nổi, kiếm tiền rồi thì không cần. Mỗi tab một video. Nhân ra. Tải lên 5 video, bật 5 tab, xem 1 tiếng. Treo máy, giảm âm lượng, thu nhỏ tab, làm việc khác. Sau đó công khai từ từ. Đăng ban đầu chỉ nên tải lên 5 video. Hẹn công khai sau ít nhất 2 giờ. Kênh mới: thời lượng xem trung bình ban đầu cao (do seeding) sẽ giúp đề xuất tốt hơn. Đây là kinh nghiệm, không có tài liệu.
+
+Đặt quảng cáo và tăng thu nhập
+
+Sau khi có kênh, tool, tiêu đề, thumbnail, seeding. Đặt quảng cáo. Ngày trước: đặt 1-2 phút một quảng cáo. View ít vẫn kiếm tiền nhiều. Bạn tôi nhiều view hơn nhưng tiền tôi gấp rưỡi nhờ mẹo này. Cứ 2 phút thêm một quảng cáo. Ngày xưa làm thủ công mất cả buổi. Dùng tiện ích LickLed YouTube. Ngoài đo lường thông số kênh, check bật kiếm tiền, còn có chức năng bật quảng cáo. Video 1 tiếng 11 phút, muốn 2 phút một quảng cáo thì khoảng 35 quảng cáo. Bấm add. Miễn phí. Bản trả phí có thêm thông số. Bản free có check bật kiếm tiền và bật quảng cáo. Giải quyết trong vài phút. Lưu lại. Tiền tăng. YouTube không duyệt hết quảng cáo nhưng duyệt khá nhiều, tiền tăng hơn.
+
+Kết luận và vấn đề khác
+
+Đã gói gọn quy trình sản xuất kênh. Nhân lên các kênh khác. Giải quyết vấn đề Google Adsense, kênh từ chối kiếm tiền, kháng nghị.

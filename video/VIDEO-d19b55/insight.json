@@ -1,0 +1,180 @@
+{
+  "sku": "VIDEO-d19b55",
+  "title": "Quy Trình Sản Xuất Video Sức Khỏe Yoga",
+  "duration_sec": 1284.63,
+  "Step_1_Niche": "3D Character Kids Yoga & Family Fitness (Hoạt hình 3D Tập Yoga & Sức Khỏe theo nhân vật thịnh hành hướng tới khán giả toàn cầu)",
+  "Step_2_Theme": "Sản xuất video hướng dẫn tập Yoga 3D dài 10–30 động tác kết hợp nhân vật hoạt hình đang hot trên Pinterest (Rumi, Elsa, Rapunzel, Spider-Man), đồng nhất trang phục tập yoga bằng Google Flow (Nano Banana 2), xử lý phông nền & đổi màu thảm tập bằng Grok Imagine, và dựng bộ đếm ngược 10 giây kèm hiệu ứng Máy ảnh rung (Khoảng 1, Tốc độ 2) trên CapCut",
+  "Step_3_Tools": [
+    "Pinterest",
+    "Google Flow (Nano Banana 2)",
+    "Grok Imagine",
+    "ChatGPT",
+    "Suno AI",
+    "CapCut",
+    "Picsart"
+  ],
+  "tools_mentioned": [
+    "Pinterest",
+    "Google Flow",
+    "Nano Banana 2",
+    "Grok",
+    "ChatGPT",
+    "Suno AI",
+    "CapCut",
+    "Picsart",
+    "YouTube"
+  ],
+  "Step_4_Prompt": {
+    "description": "Bộ 6 câu lệnh Master Prompt điều khiển Google Flow (Nano Banana 2), Grok Imagine, ChatGPT và Suno AI: (1) Chuẩn hóa nhân vật tham chiếu mặc đồ tập yoga đứng chân đất trên nền trắng; (2) Xóa nhân vật/logo giữ thảm tập; (3) Đổi màu thảm tập sang xanh dương nhạt; (4) Sinh 10–30 prompt tư thế Yoga tiếng Anh có độ dài bằng nhau; (5) Sinh prompt nhạc nền tập Yoga cho Suno AI & câu Hook mở đầu; (6) Xóa chiếc thảm lấy phông nền trống làm Intro & Thumbnail.",
+    "template": "Câu lệnh 1 (Google Flow - Tạo nhân vật tham chiếu 16:9 nền trắng): \"Dựa vào hình ảnh gốc, tạo hình ảnh một cô gái đang đứng thẳng, cô gái mặc bộ quần áo tập yoga, không đi dép, tỉ lệ nhân vật bé hơn tỉ lệ khung hình, xóa nền xung quanh chỉ để nền trắng, không cần bối cảnh, giữ nguyên nét mặt của nhân vật gốc, kích thước hình ảnh 16:9.\"\n\nCâu lệnh 2 & 3 (Grok Imagine - Xóa nhân vật & Đổi màu thảm): \"Xóa cô gái trong hình ảnh, xóa logo góc trái màn hình trên cùng, xóa chữ, giữ lại chiếc thảm và bối cảnh xung quanh\" -> \"Đổi màu chiếc thảm sang màu xanh dương nhạt\"\n\nCâu lệnh 4 (ChatGPT - Tạo 10–30 Prompt tư thế Yoga): \"Dựa theo hình ảnh gốc, hãy tạo cho tôi 10 prompt để tạo hình ảnh trên Google Flow. Thay đổi 10 động tác tập yoga của nhân vật, giữ nguyên nét mặt trang phục của nhân vật gốc cố định cho các prompt, không cần bối cảnh chỉ cần nền trắng cố định cho các prompt, tỉ lệ nhân vật bé hơn tỉ lệ khung hình cố định cho các prompt, các hình ảnh có kích thước 16:9 cố định cho các prompt, 10 prompt viết bằng tiếng Anh có độ dài như nhau, các prompt phải đầy đủ chi tiết như tôi đã yêu cầu.\""
+  },
+  "Step_5_Voice": "Sử dụng tính năng Chuyển văn bản thành giọng nói (Text-to-Speech) có sẵn trên CapCut để đọc câu Hook tiếng Anh mở đầu video ('Ready to stretch, breathe, and feel amazing?...'), kết hợp nhạc nền Instrumental nhẹ nhàng tươi sáng tạo từ Suno AI và hiệu ứng âm thanh đếm ngược 10 giây cho từng động tác.",
+  "Step_6_Edit_Checklist": [
+    "Tìm nhân vật 3D đang hot trên Pinterest (như Rumi, Elsa, Spider-Man), tải ảnh về đưa vào Google Flow (Nano Banana 2, khung 16:9) cùng Câu lệnh 1 để tạo 1 bức ảnh nhân vật tham chiếu mặc đồ tập yoga, đi chân đất trên nền trắng.",
+    "Chụp màn hình bối cảnh phòng tập của kênh đối thủ (@SunnyRainbowYoga / @GalaxyYoga), đưa sang Grok Imagine chạy 3 câu lệnh liên tiếp để: (1) xóa cô gái + logo/chữ giữ lại chiếc thảm, (2) đổi màu thảm sang xanh dương nhạt, và (3) xóa chiếc thảm lấy phông nền trống.",
+    "Đưa ảnh nhân vật tham chiếu vào ChatGPT kèm Câu lệnh 4 để sinh 10–30 prompt tư thế Yoga tiếng Anh (Mountain Pose, Tree Pose, Warrior I/II, Triangle Pose, Downward Dog, Cobra Pose, Seated Forward Bend, Lotus Pose, Dancer Pose), rồi dán lần lượt từng prompt kèm ảnh tham chiếu vào Google Flow để xuất trọn bộ ảnh động tác đồng nhất.",
+    "Dùng ChatGPT sinh prompt nhạc nền tập Yoga cho Suno AI và câu Hook mở đầu; đưa toàn bộ nguyên liệu vào CapCut PC, tách nền tự động các ảnh tư thế đặt lên mặt thảm, gán hiệu ứng 'Máy ảnh rung' (Khoảng = 1, Tốc độ = 2) để ảnh tĩnh có nhịp nhún tự nhiên, tạo 'Clip ghép' bộ số đếm ngược 10 về 1 (1 giây/số, font Anton) kèm nhãn dán đồng hồ rồi nhân bản cho toàn bộ các tư thế.",
+    "Mở Picsart tạo khung thiết kế chuẩn 1920x1080, đặt tấm phông nền trống (đã xóa thảm) ở dưới, tải lên 6 ảnh tư thế yoga đẹp nhất, bấm công cụ 'Gỡ nền' từng ảnh, sắp xếp thành bố cục 6 tư thế cân đối và thêm chữ tiêu đề font Anton để xuất bản Thumbnail."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 3 bước sản xuất video Hoạt Hình 3D Tập Yoga bằng ChatGPT, Google Flow, Grok Imagine, Suno AI & CapCut PC",
+    "additional": [
+      "Dùng ChatGPT sinh danh sách các động tác giãn cơ/yoga kèm mô tả hình ảnh nhân vật (Rumi, Spiderman) và lời thoại hướng dẫn.",
+      "Tạo nhạc nền nhẹ nhàng trên Suno và xuất file giọng đọc tiếng Việt cho câu mở đầu cùng từng động tác.",
+      "Ghép các cảnh tập luyện trên CapCut, gỡ nền nhân vật ghép vào phông phòng tập, chèn chữ tên động tác và xuất video."
+    ]
+  },
+  "Step_7_Monetization": [
+    "Ngách Hoạt Hình 3D Tập Yoga hướng tới khán giả gia đình và trẻ em toàn cầu (Mỹ, Châu Âu) có sức bật lượt xem cực khủng: kênh mẫu @SunnyRainbowYoga đạt 4,6 triệu views và 1,6 triệu views chỉ sau vài tháng; kênh @GalaxyYoga đạt 2,5 triệu views sau 1 tháng với vỏn vẹn 24 video.",
+    "Quy trình sản xuất bằng ảnh tĩnh Google Flow + hiệu ứng rung CapCut giúp tiết kiệm 90% thời gian và chi phí tạo video AI, cho phép mở rộng lên 20–30 động tác (video dài 8–12 phút) để tối ưu doanh thu quảng cáo (RPM ngoại) và giữ chân khán giả tập theo từ đầu đến cuối."
+  ],
+  "avoid_flags": [
+    "Không đưa trực tiếp ảnh chụp màn hình kênh đối thủ có nhân vật nhỏ tuổi hoặc nhân vật nổi tiếng lên Google Flow để xóa nền vì rất dễ bị lỗi từ chối; bắt buộc chuyển sang xử lý trên Grok Imagine.",
+    "Không giữ nguyên màu thảm tập và phông nền y hệt kênh đối thủ; phải dùng câu lệnh đổi màu thảm (sang xanh dương nhạt, trắng, vàng...) để tạo sự khác biệt thẩm mỹ.",
+    "Không đóng khung cứng nhắc chỉ làm đúng 10 động tác hay đúng 10 giây mỗi tư thế như bài mẫu; khi sản xuất thực tế cần mở rộng lên 20–30 hình ảnh tư thế và kéo dài 15–20 giây/động tác để video đạt thời lượng tối ưu.",
+    "Khi nhân bản (copy/paste) các tư thế trong CapCut, tuyệt đối không để mặc định làm nhân vật bị lệch khỏi thảm hoặc lúc to lúc nhỏ mất thẩm mỹ; phải kiểm tra và căn chỉnh lại vị trí/tỷ lệ từng tư thế cho khớp mặt thảm."
+  ],
+  "competitor_channels": [
+    {
+      "name": "Sunny Rainbow Yoga",
+      "url": "https://www.youtube.com/@SunnyRainbowYoga",
+      "handle": "@SunnyRainbowYoga",
+      "subscribers": "55.9K+ subscribers",
+      "notes": "Kênh mẫu số 1 giảng viên mở phân tích đầu bài giảng (00:00 - 00:35): đạt 55,9 N người đăng ký với 70 video; video phổ biến đạt 4,6 triệu lượt xem (4 tháng trước) và 1,6 triệu lượt xem (2 tháng trước)."
+    },
+    {
+      "name": "Galaxy Yoga",
+      "url": "https://www.youtube.com/@GalaxyYoga",
+      "handle": "@GalaxyYoga",
+      "subscribers": "21.9K+ subscribers",
+      "notes": "Kênh mẫu số 2 giảng viên mở trực tiếp (00:18 - 00:40): chỉ với 24 video đã đạt 21,9 N người đăng ký; video 'Kpop Demon Hunters Yoga!' đạt 2,5 triệu lượt xem chỉ sau 1 tháng."
+    },
+    {
+      "name": "Toon Yoga Time",
+      "url": "https://www.youtube.com/@ToonYogaTime",
+      "handle": "@ToonYogaTime",
+      "subscribers": "Verified Competitor",
+      "notes": "Kênh mẫu số 3 xuất hiện trong danh sách kênh cùng ngách Yoga hoạt hình 3D dành cho trẻ em."
+    },
+    {
+      "name": "Move with Jojo for Kids",
+      "url": "https://www.youtube.com/@MovewithJojoforKids",
+      "handle": "@MovewithJojoforKids",
+      "subscribers": "Verified Competitor",
+      "notes": "Kênh mẫu số 4 cùng ngách vận động & tập Yoga 3D theo nhân vật hoạt hình."
+    }
+  ],
+  "channels_mentioned": [
+    "@SunnyRainbowYoga",
+    "@GalaxyYoga",
+    "@ToonYogaTime",
+    "@MovewithJojoforKids"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân tích ngách Yoga hoạt hình 3D (@SunnyRainbowYoga 4.6M view, @GalaxyYoga 2.5M view) & Chọn nhân vật hot trên Pinterest (Rumi)"
+    },
+    {
+      "time": "01:04",
+      "seconds": 64,
+      "label": "Bước 1 - Tạo ảnh nhân vật tham chiếu mặc đồ tập yoga (tỷ lệ 16:9, chân đất, nền trắng) trên Google Flow (Nano Banana 2)"
+    },
+    {
+      "time": "02:13",
+      "seconds": 133,
+      "label": "Bước 2 - Chụp màn hình kênh đối thủ & Dùng Grok Imagine xóa nhân vật/logo, giữ lại phông nền và đổi màu thảm tập sang xanh dương nhạt"
+    },
+    {
+      "time": "04:04",
+      "seconds": 244,
+      "label": "Bước 3 - Dùng ChatGPT sinh 10 prompt tư thế Yoga tiếng Anh (Mountain, Tree, Warrior I/II, Triangle, Downward Dog, Cobra, Seated Forward Bend, Lotus, Dancer)"
+    },
+    {
+      "time": "04:42",
+      "seconds": 282,
+      "label": "Bước 4 - Đưa ảnh nhân vật tham chiếu kèm từng prompt vào Google Flow để render trọn bộ 10 hình ảnh tư thế tập Yoga đồng nhất"
+    },
+    {
+      "time": "06:55",
+      "seconds": 415,
+      "label": "Bước 5 - Tạo prompt Style nhạc nền tập Yoga trên Suno AI, xóa thảm lấy nền trống trên Grok & Viết câu Hook mở đầu bằng ChatGPT"
+    },
+    {
+      "time": "09:10",
+      "seconds": 550,
+      "label": "Bước 6 - Dựng Intro trên CapCut: Chuyển văn bản Hook thành giọng nói AI có sẵn, chỉnh phông chữ Anton & hiệu ứng xuất hiện"
+    },
+    {
+      "time": "10:58",
+      "seconds": 658,
+      "label": "Bước 7 - Dựng bài tập: Xóa nền tự động nhân vật, gán hiệu ứng Máy ảnh rung (Khoảng 1, Tốc độ 2), tạo Clip ghép đếm ngược 10s-1s & nhãn dán đồng hồ"
+    },
+    {
+      "time": "15:14",
+      "seconds": 914,
+      "label": "Bước 8 - Nhân bản nhanh (Copy/Paste) hiệu ứng rung & bộ đếm giây cho toàn bộ 10 tư thế Yoga, căn chỉnh kích thước đứng trên thảm và ghép nhạc Suno AI"
+    },
+    {
+      "time": "17:47",
+      "seconds": 1067,
+      "label": "Bước 9 - Thiết kế Thumbnail chuẩn 1920x1080 trên Picsart: Xếp 6 tư thế Yoga trên phông nền trống, gỡ nền tự động và chèn tiêu đề phông Anton"
+    }
+  ],
+  "course_docs": [
+    {
+      "name": "Bộ Master Prompt & Quy Trình Chuẩn — Bài 16: Video Sức Khỏe Yoga 3D (DGMD-M05)",
+      "title": "Bộ Master Prompt & Quy Trình Chuẩn: Sản Xuất Video Sức Khỏe Yoga 3D (Google Docs & ChatGPT Prompts)",
+      "path": "assets/docs-dgmd/VIDEO-d19b55/master_prompt.md",
+      "file": "assets/docs-dgmd/VIDEO-d19b55/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-d19b55/master_prompt.md",
+      "type": "markdown",
+      "description": "Nguyên văn 6 câu lệnh Master Prompt trên Google Docs của giảng viên (Google Flow Nano Banana 2, Grok Imagine tách nền/đổi màu thảm, ChatGPT 10 tư thế Yoga, Suno AI & Hook Intro).",
+      "link": "https://docs.google.com/document/d/1_2L1jCi7d_5EhLJ0RTwGR9uC8mZ9iKJaILTlVRwUO18/edit"
+    }
+  ],
+  "source_transcript": "video/VIDEO-d19b55/transcript.txt",
+  "verification_status": "GROUNDED_VERIFIED",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "actual_topic": "Quy trình sản xuất video Hoạt Hình 3D Tập Yoga (Kids Yoga / Character Yoga) view ngoại triệu view",
+  "key_takeaways": [
+    "Ngách hướng dẫn bài tập giãn cơ / yoga kết hợp nhân vật 3D quen thuộc (như Rumi, Spiderman) thu hút lượng người xem lớn nhờ hình ảnh trực quan dễ tập theo.",
+    "Sử dụng câu lệnh chuẩn để yêu cầu AI liệt kê chi tiết các động tác yoga/giãn cơ kèm lời dẫn hướng dẫn tập luyện từng bước.",
+    "Tạo nhạc nền thư giãn bằng Suno và dùng giọng đọc AI truyền cảm cho phần lời dẫn mở đầu bằng tiếng Việt ('Chỉ cần 5 phút mỗi ngày...').",
+    "Đưa hình ảnh động tác, giọng đọc và nhạc nền vào CapCut, tách nền nhân vật đặt lên thảm tập và thêm đồng hồ đếm ngược cho từng bài tập."
+  ],
+  "category_group": "chuyen_gia",
+  "niche_primary": "Hoạt Hình 3D Tập Yoga & Sức Khỏe (Kids / Character Yoga)",
+  "niche_id": "dgmd_workflow",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "sop_steps": [
+    "Khi tách nền ảnh chụp màn hình kênh đối thủ có nhân vật nhỏ tuổi hoặc nhân vật hoạt hình nổi tiếng, tuyệt đối không đưa trực tiếp lên Google Flow vì dễ bị bộ lọc từ chối; hãy đưa sang Grok Imagine để xóa nhân vật và đổi màu thảm tập mượt mà.",
+    "Nhờ ép điều kiện 'tỉ lệ nhân vật bé hơn tỉ lệ khung hình, xóa nền xung quanh chỉ để nền trắng' ngay từ Câu lệnh 1 & 4, mọi bức ảnh tư thế Yoga xuất ra từ Google Flow đều nằm trọn trong khung và tách nền tự động trên CapCut sạch 100% không bị mất bàn tay hay bàn chân.",
+    "Thay vì tốn thời gian render video AI cho từng động tác, chỉ cần áp hiệu ứng Video -> Cơ bản -> 'Máy ảnh rung' trên CapCut với thông số Khoảng = 1 và Tốc độ = 2 vào lớp ảnh nhân vật đã tách nền là tạo được chuyển động nhún nhẹ tự nhiên.",
+    "Đóng gói 10 lớp chữ số (từ 10 về 1, mỗi số 1 giây) cùng nhãn dán đồng hồ ('clock') thành một 'Clip ghép' (Compound Clip) duy nhất, nhờ đó khi sang động tác thứ 2, 3... chỉ cần Copy-Paste 1 lần cả cụm hiệu ứng và bộ đếm giây.",
+    "Sau khi Copy-Paste thuộc tính sang các tư thế mới (như tư thế nằm Cobra Pose hay cúi gập người), bắt buộc phải kiểm tra và kéo chỉnh lại vị trí/kích thước từng nhân vật để chân hoặc thân người luôn đặt chuẩn xác ngay giữa mặt thảm tập."
+  ]
+}

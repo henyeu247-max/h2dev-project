@@ -1,0 +1,166 @@
+{
+  "sku": "VIDEO-e0c618",
+  "title": "Chăm Sóc Tương Tác Video Chủ Động Và Cách Đặt Quảng Cáo X2 RPM",
+  "actual_topic": "Hướng dẫn thực chiến chăm sóc tương tác bình luận chủ động (thả tim 10.000 comment/ngày, dùng ChatGPT đi comment trên kênh lớn), công thức nhân bản video viral 30 ngày & bắt trend Celebrity (Elon Musk, Barron Trump) và quy trình dùng bộ đôi extension YouTube Ad Placer + Nexlev (nút Remove Ads) để cài quảng cáo X2 RPM vượt chính sách chặn vị trí đỏ của YouTube.",
+  "category_group": "he_thong",
+  "niche_primary": "Chăm Sóc Tương Tác & Đặt Quảng Cáo Tối Ưu RPM",
+  "niche_id": "tuong_tac_quang_cao_rpm",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "duration_sec": 962.83,
+  "total_segments": 207,
+  "tools_mentioned": [
+    "ChatGPT",
+    "YouTube Ad Placer",
+    "Nexlev",
+    "vidIQ",
+    "1of10",
+    "Grammarly",
+    "YouTube Summary",
+    "ViewStats"
+  ],
+  "referenced_channels": [
+    {
+      "name": "Undercover Tales",
+      "handle": "@UndercoverTales-m1v",
+      "url": "https://www.youtube.com/@UndercoverTales-m1v",
+      "niche": "Undercover Boss & CEO Drama Audio Stories",
+      "market": "US",
+      "status": "LIVE_VERIFIED",
+      "note": "Kênh mẫu được giảng viên mở tab Popular lúc 04:05-07:05 (hiển thị loạt video 1.1M views >100x outlier 'Undercover CEO Goes To Order At His Own Restaurant...', 575K views >100x 'Undercover Boss Buys A Sandwich At His Own Diner...', 456K views 82x 'Undercover Boss Buys A Car At His Own Dealership...') để chứng minh công thức lặp lại bối cảnh nhà hàng/gara mua xe trong 30 ngày liên tiếp."
+    },
+    {
+      "name": "XEM GÌ HÔM NAY",
+      "handle": "UC6e6NeyAx2Fl5xi0ITBaL-A",
+      "url": "https://www.youtube.com/channel/UC6e6NeyAx2Fl5xi0ITBaL-A",
+      "niche": "Demo Monetization & Ad Placement Channel",
+      "market": "VN",
+      "status": "LIVE_VERIFIED",
+      "note": "Kênh YouTube Studio được mở trực tiếp từ 09:50 đến 14:00 (video ID Tvegvj4fMZQ '10 Gia Tộc Vương Giả Nhất Châu Á...', thời lượng 11:22) để thực hành chạy bộ đôi tiện ích YouTube Ad Placer và Nexlev (nút Remove Ads) xóa sạch các vạch quảng cáo báo đỏ."
+    }
+  ],
+  "course_docs": [
+    {
+      "name": "Bài Tập / GODA - LEVEL CHỦ ĐỀ.xlsx - 5. TƯƠNG TÁC CHỦ ĐỘNG-đầu ra.pdf",
+      "path": "assets/docs-huan/Bai_Tap/GODA_-_LEVEL_CHU_DE.xlsx_-_5._TUONG_TAC_CHU_DONG-dau_ra.pdf",
+      "readFile": "assets/docs-huan/Bai_Tap/GODA_-_LEVEL_CHU_DE.xlsx_-_5._TUONG_TAC_CHU_DONG-dau_ra.pdf.md",
+      "type": "pdf",
+      "size": "89 KB",
+      "link": "https://drive.google.com/file/d/1qiA4g__Pk4eUEOXtew189TkoAGd3FEH4/view",
+      "file": "assets/docs-huan/Bai_Tap/GODA_-_LEVEL_CHU_DE.xlsx_-_5._TUONG_TAC_CHU_DONG-dau_ra.pdf"
+    },
+    {
+      "name": "QUY TRÌNH TRIỂN KHAI KÊNH 2025 / GODA - File Upload - Mẫu.docx",
+      "path": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/GODA_-_File_Upload_-_Mau.docx",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/GODA_-_File_Upload_-_Mau.docx.md",
+      "type": "docx",
+      "size": "14.4 KB",
+      "link": "https://drive.google.com/file/d/1WS-GQzOY-5wUNF31JM5p6Ip6tlnzphf5/view",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/GODA_-_File_Upload_-_Mau.docx"
+    },
+    {
+      "name": "SEO 100 ĐIỂM.pdf",
+      "path": "assets/docs-huan/SEO_100_DIEM.pdf",
+      "readFile": "assets/docs-huan/SEO_100_DIEM.pdf.md",
+      "type": "pdf",
+      "size": "1.2 MB",
+      "link": "https://drive.google.com/file/d/15v_9JyWCIUskVsdegZ1jePL-PbnyAo8X/view",
+      "file": "assets/docs-huan/SEO_100_DIEM.pdf"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mục 4 (Chăm sóc, tương tác kênh hiệu quả): Tư duy 'Rao bán hàng tại nơi có nhiều khách hàng' và kỷ luật thả tim 10.000 comment/ngày trên kênh 83.000 USD/tháng"
+    },
+    {
+      "time": "01:35",
+      "seconds": 95,
+      "label": "2 cách đi comment thông minh trên các video nhiều view nhất trong ngách bằng cách dùng ChatGPT viết bình luận theo tình tiết kịch bản và trả lời top comment"
+    },
+    {
+      "time": "03:02",
+      "seconds": 182,
+      "label": "Mục 5 (Phát triển kênh & Bắt trend): Chiến lược khóa chặt 1 bối cảnh trong 30 ngày liên tiếp khi kênh có video đầu tiên cắn đề xuất (Case study kênh 80.000 USD/tháng)"
+    },
+    {
+      "time": "04:06",
+      "seconds": 246,
+      "label": "Phân tích tab Popular của kênh Undercover Tales (@UndercoverTales-m1v): Lặp lại mô-típ mua xe tải/ô tô ở gara và vào chuỗi nhà hàng (McDonald's, Starbucks, KFC, Taco Bell, Five Guys)"
+    },
+    {
+      "time": "06:13",
+      "seconds": 373,
+      "label": "Công thức bắt trend kết hợp người nổi tiếng (Celebrity Story: Elon Musk, Barron Trump) và kiểm chứng từ khóa 'Elon Musk Goes Undercover' (800K views sau 4 tháng)"
+    },
+    {
+      "time": "08:46",
+      "seconds": 526,
+      "label": "Phần Bonus: Chính sách quảng cáo mới của YouTube (từ 12/05/2025) cảnh báo đỏ các vị trí quảng cáo gây cản trở người xem làm rớt RPM"
+    },
+    {
+      "time": "10:54",
+      "seconds": 654,
+      "label": "Thực hành dùng tiện ích YouTube Ad Placer tự động rải quảng cáo (Ad at start, Ad at end, chu kỳ 90 giây/cái cho 10 phút đầu, 2 phút/cái cho 20 phút tiếp theo)"
+    },
+    {
+      "time": "12:10",
+      "seconds": 730,
+      "label": "Bật tiện ích Nexlev YouTube Research và bấm nút 'Remove Ads' tự động xóa sạch toàn bộ vị trí quảng cáo bị báo đỏ chỉ bằng 1 cú nhấp chuột"
+    },
+    {
+      "time": "14:39",
+      "seconds": 879,
+      "label": "Tổng kết của anh Huân: Giải mã nguyên nhân nhiều kênh tụt doanh thu từ 100-1.000 USD/ngày xuống 15-20 USD/ngày do mất quảng cáo giữa video và cách khôi phục X2 RPM"
+    }
+  ],
+  "key_takeaways": [
+    "Kỷ luật tương tác chủ động hàng ngày từ lúc kênh 0 view đến khi đạt 83.000 USD/tháng: Tương tác kênh giống như việc 'rao bán hàng tại nơi có nhiều khách hàng'. Ngay cả khi đang vận hành kênh đạt 83.000 USD/tháng với 10.000 bình luận mỗi ngày, đội ngũ vẫn thả tim 100% không bỏ sót bất kỳ comment nào và sẵn sàng thuê nhân sự chuyên trách chỉ ngồi trả lời bình luận. Để kéo khán giả từ kênh lớn về kênh mới, tuyệt đối không spam câu vô nghĩa ('video hay quá', 'good video') mà áp dụng 2 cách: (1) Lấy một đoạn kịch bản của video nhiều view nhất trong ngách nhờ ChatGPT viết bình luận bàn luận sâu về tình tiết đó, hoặc (2) Trả lời trực tiếp vào các bình luận đang có nhiều lượt phản hồi nhất ở đầu trang.",
+    "Chiến lược khóa chặt bối cảnh 30 ngày khi có 1 video cắn đề xuất: Khi kênh mới có 1 video đầu tiên nổ view (như trường hợp học viên đạt 80.000 USD/tháng), tuyệt đối không đổi sang chủ đề khác mà phải giữ nguyên 100% nhân vật trung tâm (ông trùm Undercover Boss/CEO) và khai thác liên tục cùng một mô-típ bối cảnh trong 30 ngày tiếp theo. Minh chứng trực tiếp trên tab Popular của kênh Undercover Tales (@UndercoverTales-m1v): Kênh lặp đi lặp lại công thức ông chủ vi hành vào nhà hàng/quán ăn (1.1M views, 575K views, 108K views) và đại lý mua xe (456K views, 169K views, 139K views) — người làm chỉ cần xoay vòng qua các chuỗi thương hiệu quen thuộc tại Mỹ như McDonald's, Starbucks, KFC, Taco Bell, Five Guys.",
+    "Công thức bắt trend kết hợp Người nổi tiếng (Celebrity) có kiểm chứng: Để mở rộng tệp khán giả và bắt sóng xu hướng, hãy ghép các nhân vật nổi tiếng đang được quan tâm tại Mỹ (Elon Musk, Barron Trump, Donald Trump) vào khung kịch bản sẵn có (ví dụ: Barron Trump giả danh khách thường vào nghỉ 1 đêm tại khách sạn của bố, hoặc từ khóa 'Elon Musk Goes Undercover' đạt 800.000 views sau 4 tháng và 199.000 views sau 3 tháng). Nguyên tắc bất di bất dịch là phải gõ tìm kiếm từ khóa trên YouTube để xác nhận có dung lượng người xem thật rồi mới làm, không tự ý sáng tạo khi kênh còn nhỏ.",
+    "Mật độ đặt quảng cáo chuẩn tối ưu hiển thị bằng YouTube Ad Placer: Trước chính sách mới của YouTube chặn các điểm đặt quảng cáo gây gián đoạn trải nghiệm người xem (hiển thị vạch đỏ và tam giác cảnh báo vàng trong trình Quản lý vị trí quảng cáo), việc dời tay từng mốc 5 giây cho video dài 1-2 tiếng là bất khả thi. Giải pháp là cài tiện ích YouTube Ad Placer, tích chọn quảng cáo đầu (Ad at start) và cuối video (Ad at end), sau đó rải theo mật độ vàng: 10 phút đầu đặt 90 giây (1 phút 30 giây)/quảng cáo; 20 phút tiếp theo đặt 2 phút/quảng cáo; từ phút 30 trở đi đặt 3-4 phút/quảng cáo.",
+    "Tuyệt chiêu 1-Click 'Remove Ads' của tiện ích Nexlev khôi phục doanh thu tụt từ 1.000 USD xuống 15 USD/ngày: Sau khi dùng YouTube Ad Placer rải dày các mốc quảng cáo và bấm Lưu để hệ thống YouTube chấm điểm vị trí nào bị đỏ, hãy mở lại cửa sổ Vùng quảng cáo và bấm nút màu xanh 'Remove Ads' do tiện ích Nexlev YouTube Research tích hợp sẵn (trong bản ghi âm ASR bị phiên âm nhầm thành 'necklace'). Công cụ sẽ tự động xóa sạch toàn bộ các mốc quảng cáo bị báo đỏ chỉ trong 1 giây, giữ lại 100% các mốc xanh hợp lệ — giúp khôi phục ngay lập tức RPM cho những kênh đang bị tụt doanh thu từ 100-1.000 USD/ngày xuống 15-20 USD/ngày do YouTube âm thầm tắt quảng cáo."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước Chăm sóc Tương tác Chủ động, Nhân bản Video Cắn Đề xuất & Cài Quảng cáo X2 RPM bằng YouTube Ad Placer + Nexlev",
+    "additional": [
+      "Mỗi ngày truy cập các video nhiều view nhất của đối thủ trong bảng Dream 100, lấy 1 đoạn transcript đưa vào ChatGPT tạo bình luận nhận xét sâu về tình tiết câu chuyện hoặc phản hồi vào các top comment, đồng thời thả tim 100% bình luận trên kênh của mình",
+      "Khi kênh có 1 video đầu tiên cắn đề xuất, khóa chặt nhân vật chính (Undercover Boss) và bối cảnh chiến thắng đó trong 30 ngày liên tiếp, chỉ xoay vòng qua các địa điểm/thương hiệu quen thuộc tại Mỹ (gara xe, McDonald's, Starbucks, KFC, Taco Bell, Five Guys) hoặc ghép tên người nổi tiếng (Elon Musk, Barron Trump) sau khi đã search kiểm chứng view",
+      "Khi cài quảng cáo cho video dài trên 10 phút trong YouTube Studio, mở mục Kiếm tiền -> Quản lý vị trí quảng cáo và bật tiện ích YouTube Ad Placer để rải mốc tự động (tích Ad at start, Ad at end, điền Ad Interval = 90 giây rồi bấm Place và nhấn Tiếp tục -> Lưu)",
+      "Sau khi Lưu để hệ thống YouTube hiển thị cảnh báo đỏ tại các vị trí ít có khả năng hiển thị quảng cáo, mở lại Quản lý vị trí quảng cáo và bấm nút 'Remove Ads' màu xanh của tiện ích Nexlev YouTube Research để tự động xóa sạch toàn bộ các mốc bị báo đỏ",
+      "Rà soát lại danh sách các mốc quảng cáo xanh còn lại, xóa bớt nếu mật độ quá dày để giữ chuẩn vàng (mốc 0:00, 0:30, sau đó cách đều 1 phút 30 giây trong 10 phút đầu, 2 phút trong 20 phút tiếp theo, 3-4 phút về sau và giữ 1 mốc cuối cùng) rồi bấm Lưu hoàn tất"
+    ]
+  },
+  "sop_steps": [
+    "Mỗi ngày truy cập các video nhiều view nhất của đối thủ trong bảng Dream 100, lấy 1 đoạn transcript đưa vào ChatGPT tạo bình luận nhận xét sâu về tình tiết câu chuyện hoặc phản hồi vào các top comment, đồng thời thả tim 100% bình luận trên kênh của mình",
+    "Khi kênh có 1 video đầu tiên cắn đề xuất, khóa chặt nhân vật chính (Undercover Boss) và bối cảnh chiến thắng đó trong 30 ngày liên tiếp, chỉ xoay vòng qua các địa điểm/thương hiệu quen thuộc tại Mỹ (gara xe, McDonald's, Starbucks, KFC, Taco Bell, Five Guys) hoặc ghép tên người nổi tiếng (Elon Musk, Barron Trump) sau khi đã search kiểm chứng view",
+    "Khi cài quảng cáo cho video dài trên 10 phút trong YouTube Studio, mở mục Kiếm tiền -> Quản lý vị trí quảng cáo và bật tiện ích YouTube Ad Placer để rải mốc tự động (tích Ad at start, Ad at end, điền Ad Interval = 90 giây rồi bấm Place và nhấn Tiếp tục -> Lưu)",
+    "Sau khi Lưu để hệ thống YouTube hiển thị cảnh báo đỏ tại các vị trí ít có khả năng hiển thị quảng cáo, mở lại Quản lý vị trí quảng cáo và bấm nút 'Remove Ads' màu xanh của tiện ích Nexlev YouTube Research để tự động xóa sạch toàn bộ các mốc bị báo đỏ",
+    "Rà soát lại danh sách các mốc quảng cáo xanh còn lại, xóa bớt nếu mật độ quá dày để giữ chuẩn vàng (mốc 0:00, 0:30, sau đó cách đều 1 phút 30 giây trong 10 phút đầu, 2 phút trong 20 phút tiếp theo, 3-4 phút về sau và giữ 1 mốc cuối cùng) rồi bấm Lưu hoàn tất"
+  ],
+  "avoid_flags": [
+    "Bỏ bê việc thả tim và trả lời bình luận khi kênh đã lớn hoặc đi spam các bình luận sáo rỗng ('video hay quá', 'good video') trên kênh đối thủ",
+    "Vội vàng tự sáng tạo chủ đề mới khi kênh vừa có 1 video chớm lên thay vì bám sát bối cảnh chiến thắng trong 30 ngày và kiểm chứng từ khóa trên thanh tìm kiếm YouTube",
+    "Lạm dụng tiện ích YouTube Ad Placer để giữ nguyên hàng chục mốc quảng cáo dày đặc mỗi 30-40 giây trong video 10 phút khiến YouTube không phân phối hiển thị tối ưu",
+    "Bỏ mặc các video cũ/mới bị dính vạch cảnh báo đỏ theo chính sách quảng cáo mới của YouTube khiến video bị mất sạch quảng cáo giữa giờ và tụt doanh thu từ 100-1.000 USD/ngày xuống còn 15-20 USD/ngày"
+  ],
+  "visual_proof": {
+    "frames_inspected": 9,
+    "cuda_Decoded": true,
+    "key_frames": [
+      "00:45 & 03:00 — Slide '4. CHĂM SÓC, TƯƠNG TÁC KÊNH HIỆU QUẢ' (Rao bán hàng tại nơi có nhiều Khách hàng / Cách tương tác hiệu quả / Tương tác đến bao giờ?) và Slide '5. PHÁT TRIỂN KÊNH & BẮT TREND'",
+      "07:00 — Giao diện tab Popular của kênh mẫu Undercover Tales (@UndercoverTales-m1v) hiển thị loạt video >100x, 82x, 32x, 30x Outlier lặp lại mô-típ ông chủ vi hành tại nhà hàng và đại lý xe",
+      "09:10 — Slide 'BONUS: CÁCH CÀI QUẢNG CÁO VỚI CÁC EXTENSION YOUTUBE AD PLACER, NEXLEV EXTENSION TỐI ƯU DOANH THU'",
+      "10:55 & 12:25 — Giao diện YouTube Studio (video ID Tvegvj4fMZQ) mở popup tiện ích 'YouTube Ad Placer :)' (Interval, Ad Interval secs, Ad at start, Ad at end, Place) và menu tiện ích 'Nexlev YouTube Research' tích hợp nút xanh 'Remove Ads' xóa sạch các vạch quảng cáo báo đỏ",
+      "14:40 — Anh Huân và giảng viên Hoàng trên sân khấu giải thích nguyên nhân các kênh tụt doanh thu từ 100-1.000 USD/ngày xuống 15-20 USD/ngày do chính sách quảng cáo mới và cách khôi phục X2 RPM"
+    ]
+  },
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "channels_mentioned": [
+    "@UndercoverTales-m1v",
+    "UC6e6NeyAx2Fl5xi0ITBaL-A"
+  ],
+  "source_transcript": "video/VIDEO-e0c618/transcript.txt"
+}

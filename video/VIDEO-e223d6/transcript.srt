@@ -1,0 +1,2059 @@
+1
+00:00:05,000 --> 00:00:09,220
+Ok đủ chưa? Đủ rồi chúng ta đến bước dịch nhá!
+
+2
+00:00:10,250 --> 00:00:12,910
+Về kia đây chúng ta sẽ quay lại bảng hướng dẫn
+
+3
+00:00:12,910 --> 00:00:14,730
+Quá trình dịch
+
+4
+00:00:14,730 --> 00:00:18,430
+Khi viết kịch bản tiếng Việt bằng ChatGPT
+
+5
+00:00:18,430 --> 00:00:20,000
+Dịch cũng ở ChatGPT yêu cầu
+
+6
+00:00:20,000 --> 00:00:21,300
+Yêu cầu là phải tab riêng.
+
+7
+00:00:22,400 --> 00:00:27,760
+Mình sẽ gán cho nó là bạn là người dịch content nội dung cho tôi với nội dung.
+
+8
+00:00:28,880 --> 00:00:30,000
+Quay lại ChatGPT để mình gán.
+
+9
+00:00:30,000 --> 00:00:31,920
+Gán cho nó một cái tab riêng đi.
+
+10
+00:00:36,200 --> 00:00:46,360
+Bạn là trợ lý dịch content cho nội dung của tôi là Undercover Boss, Undercover CEO ấy.
+
+11
+00:00:48,400 --> 00:00:49,800
+Mình đưa dữ liệu cho nó, mình cấp dữ liệu cho nó.
+
+12
+00:00:50,160 --> 00:00:53,080
+Cấp càng kỹ thì kết quả mình nhận lại được càng xịn.
+
+13
+00:01:00,000 --> 00:01:03,620
+Ok, Enter, gán cho nó đã, gán xong bấm vào mấy dịch.
+
+14
+00:01:07,100 --> 00:01:14,220
+Vì trên dữ liệu tổng của cái con ChatGPT này á, thì khi Tuấn có thể click vào cái phần profile của ChatGPT á, click vào.
+
+15
+00:01:16,080 --> 00:01:17,020
+Profile bên phải.
+
+16
+00:01:18,380 --> 00:01:20,080
+Bên phải, bên phải, phải, phải.
+
+17
+00:01:20,740 --> 00:01:21,200
+Đấy là trái.
+
+18
+00:01:21,880 --> 00:01:22,120
+Đấy.
+
+19
+00:01:22,740 --> 00:01:23,080
+Cài đặt.
+
+20
+00:01:26,340 --> 00:01:27,320
+Kiểm soát dữ liệu.
+
+21
+00:01:31,100 --> 00:01:32,200
+Số tư liệu không gọi.
+
+22
+00:01:32,380 --> 00:01:32,980
+Chung phần chung thôi.
+
+23
+00:01:33,080 --> 00:01:33,920
+Mình thấy...
+
+24
+00:01:33,920 --> 00:01:35,620
+Để phần đấy lấy cái phần quản lý.
+
+25
+00:01:35,660 --> 00:01:37,720
+Đoạn chat đã lưu trữ, không phải...
+
+26
+00:01:39,880 --> 00:01:41,520
+Dữ liệu nó ở đâu nhỉ?
+
+27
+00:01:42,580 --> 00:01:44,460
+Cá nhân hóa đúng không? Ok, cá nhân hóa đi.
+
+28
+00:01:44,860 --> 00:01:45,810
+Quản lý bộ nhớ đúng rồi, đúng rồi.
+
+29
+00:01:45,810 --> 00:01:56,530
+Chưa lưu à? Chưa update à? Thông thường thì nó sẽ lưu ở đây nhé, F5 lại cái xem nó có lưu cho.
+
+30
+00:02:03,890 --> 00:02:11,870
+Quản lý bộ nhớ xem lưu cho, vẫn chưa lưu. Có thể là đang bị lỗi, không sao, bỏ qua mặt đấy.
+
+31
+00:02:11,870 --> 00:02:18,310
+Thông thường thì chúng ta khi mà lưu dữ liệu ở kia nó sẽ lưu ở đấy là các cái dữ liệu mình đã lưu ở đấy là nó sẽ nạp dữ liệu ở đấy đấy.
+
+32
+00:02:18,750 --> 00:02:25,950
+Chúng ta kiểm tra ở đấy xem nó có lưu chứ nhé. Nó chưa lưu rồi mình phải nạp lại đấy. Bắt buộc đấy, nạp đến khi nào nó lưu thì thôi. Vậy sao nó viết nó theo ý mình được.
+
+33
+00:02:27,570 --> 00:02:28,590
+Ok, gửi nội dung.
+
+34
+00:02:31,230 --> 00:02:33,530
+Không cần cái dữ liệu đâu, không cần, bỏ đi.
+
+35
+00:02:34,490 --> 00:02:36,910
+Có thể nó đang bị lỗi, nó có dữ liệu ở đấy, nó đang ghi rồi mà.
+
+36
+00:02:38,130 --> 00:02:40,590
+Rồi copy content vào đây, dịch cho tôi content này.
+
+37
+00:02:41,870 --> 00:02:46,990
+Có chuột A, xong copy toàn bộ, dịch cho content này, sang tiếng Anh.
+
+38
+00:02:51,350 --> 00:02:58,780
+Đó là một tệp dài
+
+39
+00:02:58,780 --> 00:03:06,220
+và nặng, vì vậy
+
+40
+00:03:06,220 --> 00:03:13,650
+nó sẽ cần thời gian.
+
+41
+00:03:13,650 --> 00:03:16,890
+Chúng ta sẽ dịch các đoạn nhỏ hơn
+
+42
+00:03:16,890 --> 00:03:18,890
+Dịch các đoạn nhỏ hơn
+
+43
+00:03:18,890 --> 00:03:20,450
+Chia ra các chapter vừa nãy
+
+44
+00:03:20,450 --> 00:03:23,470
+Nó đúng theo một cái token của nó
+
+45
+00:03:23,470 --> 00:03:24,490
+Chỉ có thể sử dụng thôi
+
+46
+00:03:24,490 --> 00:03:26,010
+Mình dịch dài quá nó cũng dịch được
+
+47
+00:03:26,010 --> 00:03:30,430
+Theo chapter thôi
+
+48
+00:03:30,430 --> 00:03:33,290
+Cứ đến hết chapter là mình dịch một phát
+
+49
+00:03:33,290 --> 00:03:34,350
+Ok copy bằng dịch đi
+
+50
+00:03:34,350 --> 00:03:35,470
+Nhưng mà đúng chapter nhé
+
+51
+00:03:43,650 --> 00:03:50,470
+Cái dịch này mình cũng nên dịch đoạn ngắn thôi, mục
+
+52
+00:03:50,470 --> 00:03:57,290
+đích là để mình cũng phải kiểm soát lại nữa,
+
+53
+00:03:57,290 --> 00:04:04,110
+chứ không phải dịch cả đoạn dài được, nó sai nghĩa.
+
+54
+00:04:08,670 --> 00:04:10,990
+Đó, nó sẽ dịch cho mình, từng đoạn, từng đoạn như vậy.
+
+55
+00:04:10,990 --> 00:04:11,750
+Như vậy
+
+56
+00:04:13,810 --> 00:04:16,110
+Cái việc của mình sẽ cần phải check lại chính tả
+
+57
+00:04:16,110 --> 00:04:17,130
+Vì đôi khi là
+
+58
+00:04:17,390 --> 00:04:19,950
+Dịch một đoạn dài như thế này chưa chắc nó đúng 100% đâu
+
+59
+00:04:19,950 --> 00:04:22,510
+Vậy nên chúng ta sẽ cần dùng thêm các công cụ khác nữa
+
+60
+00:04:22,510 --> 00:04:24,050
+Các extension khác nữa để mình check
+
+61
+00:04:24,050 --> 00:04:25,590
+Copy content này đi
+
+62
+00:04:27,370 --> 00:04:28,150
+Copy content
+
+63
+00:04:30,190 --> 00:04:30,990
+Rồi quay lại
+
+64
+00:04:30,990 --> 00:04:32,990
+tại phần hướng dẫn
+
+65
+00:04:37,000 --> 00:04:45,090
+nếu ChatGPT dịch không chuẩn xuống dòng nhiều tiếp tục yêu cầu và check chính tả bằng Grammarly thì chúng ta sẽ có cái extension là Grammarly
+
+66
+00:04:45,090 --> 00:04:47,410
+Ở, ấn vào extension đi rồi này.
+
+67
+00:04:52,650 --> 00:04:59,570
+Đó, chúng ta sẽ paste 1 cái content ra cái file bên dưới nào, mình sẽ có bản tính, tiếng Việt bên trên đúng không, và bản tiếng Anh bên dưới.
+
+68
+00:04:59,990 --> 00:05:02,610
+Cái file content đâu, chuyển vào file content, xuống cái dưới cùng.
+
+69
+00:05:04,570 --> 00:05:06,570
+Dưới cùng, và paste bản tiếng Anh vào.
+
+70
+00:05:07,750 --> 00:05:10,610
+Enter, nữa nữa rồi, tiếng Anh, bản tiếng Anh.
+
+71
+00:05:10,610 --> 00:05:19,150
+Các bạn content bên mình cũng đều phải làm content là song ngữ, cả tiếng Việt và tiếng Anh để mình cũng check lại.
+
+72
+00:05:19,850 --> 00:05:23,650
+Chứ thật ra là nếu như mình mà ngồi check content tầm 2 tiếng một tiếng Anh thì check làm sao được?
+
+73
+00:05:24,130 --> 00:05:25,710
+Không check được, chỉ cứ check tiếng Việt thôi.
+
+74
+00:05:26,390 --> 00:05:28,550
+Vì quy trình dịch những em đã có rồi là không sai được.
+
+75
+00:05:30,710 --> 00:05:35,590
+Đó, những cái khoảng mà họ bôi đỏ kia là những cái đoạn mà mình cần sửa lại kìa.
+
+76
+00:05:35,590 --> 00:05:44,670
+Nó liên quan đến ngữ pháp và sau mình đưa vào cái phần sử dụng ElevenLabs, các phần mềm Voice, Audio AI, nó sẽ không bị lỗi.
+
+77
+00:05:44,670 --> 00:05:54,800
+Ấn vào đấy, nó sẽ sửa cho mình các cái lỗi dấu câu này, đó, sửa. Rồi, most important, ấn vào đấy xem có có sửa gì không.
+
+78
+00:05:54,800 --> 00:06:02,500
+Accept, xong. Vậy là xong bằng content. Dịch xong.
+
+79
+00:06:07,800 --> 00:06:13,500
+Ok, mình sẽ dịch ví dụ một đoạn như vậy, anh em sẽ lặp lại lặp lại liên tục cho đến khi hết bài vì content rất dài.
+
+80
+00:06:14,000 --> 00:06:15,380
+Với đây chỉ có thể ví dụ một đoạn thôi.
+
+81
+00:06:17,040 --> 00:06:19,920
+Ok, tiếp theo, quay lại slide sẽ đến phần tiếp theo.
+
+82
+00:06:20,800 --> 00:06:24,600
+Chúng ta đã làm xong phần cách viết content bằng ChatGPT, dịch xong rồi.
+
+83
+00:06:25,000 --> 00:06:34,770
+Thì chúng ta sẽ đến bước là cách làm thumbnail bằng ChatGPT. Cái này là update mới nhất, bên mình vẫn đang test và tối ưu rất là tốt. Bên mình sẽ sử dụng linh hoạt cả
+
+84
+00:06:34,770 --> 00:06:44,730
+Leonardo AI này, vì nó rẻ và nó chất lượng tốt. Hiện tại bên mình đánh giá là cái Midjourney nó là một cái khá đắt. Và thực tế là nó đang update rất chậm so
+
+85
+00:06:44,730 --> 00:06:54,700
+với đội còn lại. Mình không đánh giá cao thằng Midjourney nữa. Bên mình là có 3 tài khoản Midjourney kìa. 3 tài khoản mua gói năm. Mà bây giờ cũng hủy hết rồi. Không dùng nữa.
+
+86
+00:06:54,800 --> 00:06:57,300
+Anh em còn lại còn thời hạn dùng nốt rồi.
+
+87
+00:06:57,300 --> 00:07:00,300
+Đấy thì chúng ta sẽ dùng ChatGPT để làm luôn.
+
+88
+00:07:00,300 --> 00:07:02,800
+Thì chúng ta sẽ tạo một ChatGPT mới.
+
+89
+00:07:02,800 --> 00:07:05,300
+Và ChatGPT để làm thumb luôn.
+
+90
+00:07:05,300 --> 00:07:13,000
+Cái cách đơn giản nhất để làm một cái thumb hay là mình đi sao chép phong cách của đối thủ.
+
+91
+00:07:13,000 --> 00:07:15,540
+Thì chúng ta sẽ thực hiện cái việc là
+
+92
+00:07:15,540 --> 00:07:18,100
+remake lại cái thumbnail của đối thủ thôi.
+
+93
+00:07:18,100 --> 00:07:21,100
+Tìm lại cái bài vừa nãy mình đang làm content.
+
+94
+00:07:21,100 --> 00:07:24,100
+Lấy cái thumb.
+
+95
+00:07:24,100 --> 00:07:25,500
+Ấn vào.
+
+96
+00:07:25,500 --> 00:07:27,800
+vidIQ nó sẽ có cái tính năng này mà anh em mình lưu được.
+
+97
+00:07:27,800 --> 00:07:30,200
+Thumb nhá, lưu hình ảnh thành.
+
+98
+00:07:30,200 --> 00:07:31,200
+Desktop đi.
+
+99
+00:07:31,200 --> 00:07:33,000
+Thumb mẫu.
+
+100
+00:07:33,000 --> 00:07:38,260
+Thumb mẫu
+
+101
+00:07:38,260 --> 00:07:38,900
+Ok
+
+102
+00:07:38,900 --> 00:07:39,840
+Vào ChatGPT
+
+103
+00:07:39,870 --> 00:07:49,440
+Paste cái thumb vào, đưa thumb vào. Không tính ra bình thường nhé, cái này không ra đâu nhé. Không ra đâu, cứ thử xem, cứ thử đi,
+
+104
+00:07:49,440 --> 00:07:59,010
+thử để biết, thử biết nó sẽ không ra. Làm lại thumb này cho tôi, với nhân vật khoảng 40 tuổi, nhân vật chính khoảng 40 tuổi.
+
+105
+00:08:09,870 --> 00:08:14,350
+Xem vẽ được không?
+
+106
+00:08:22,570 --> 00:08:23,890
+Đấy, về tab bình thường đi.
+
+107
+00:08:25,710 --> 00:08:28,050
+Vế không ra đâu, về tab bình thường, paste lại cái thumbnail.
+
+108
+00:08:30,000 --> 00:08:39,150
+Rồi, viết lại, vẽ lại thumbnail này cho tôi với kích thước 1280 x 720.
+
+109
+00:08:43,750 --> 00:08:51,620
+Cái này anh em cần chi tiết đây. Nhân vật chính. Mình muốn người ta như thế nào? Mình
+
+110
+00:08:51,620 --> 00:08:59,500
+mô tả như vậy. Ví dụ như đây mình muốn là nhân vật chính. Nhân vật chính khoảng 40
+
+111
+00:08:59,500 --> 00:09:07,370
+tuổi. Tóc vàng, mặc quần áo, mặc áo hơi rách. Tóc vàng vì sao? Vì bên họ tóc vàng.
+
+112
+00:09:07,370 --> 00:09:13,370
+Mặc áo hơi rách, mặt nghiêm trọng.
+
+113
+00:09:18,050 --> 00:09:27,250
+Rồi chấm, hai nhân vật phía sau đang thỉ thẩm điều gì đó.
+
+114
+00:09:30,810 --> 00:09:31,450
+Bí ẩn.
+
+115
+00:09:32,610 --> 00:09:34,910
+Cái này thì chúng ta cần phải xem nhiều và phân tích nhiều.
+
+116
+00:09:34,910 --> 00:09:41,910
+Rồi ấn Enter, xem nó có ra không. Thông thường nó ra được khoảng 70% đấy. Cái ChatGPT mới là nó ngon.
+
+117
+00:09:41,910 --> 00:09:52,610
+Mỗi tội là render đang hơi lâu, không biết là sắp tới có khắc phục được không. Hiện tại mình thấy là render hơi lâu.
+
+118
+00:09:52,610 --> 00:10:00,610
+Cái ChatGPT mới này thì trên các cộng đồng ở nước ngoài họ đang chia sẻ rất là nhiều.
+
+119
+00:10:00,610 --> 00:10:04,610
+Nên là họ đưa một cái bản gọi là vẽ tay ấy, nguệch ngoạc ra.
+
+120
+00:10:04,610 --> 00:10:07,800
+Và cũng ra những kết quả thực sự là rất là wow.
+
+121
+00:10:07,800 --> 00:10:10,520
+Mình không nghĩ là ChatGPT hoàn thiện nhanh những mức như vậy.
+
+122
+00:10:11,600 --> 00:10:14,260
+Cái việc mà sao chép lại một cái thumb khác thì mình nghĩ nó không quá khó.
+
+123
+00:10:14,680 --> 00:10:20,720
+Nhưng cái việc mà từ một cái bản vẽ tay, bản vẽ nguệch ngoạc thôi mà nó cũng ra được thì đấy là một sự rất là kinh khủng đấy.
+
+124
+00:10:22,820 --> 00:10:24,220
+Nó sẽ mất thời gian đấy, cái này là khá là lâu đấy.
+
+125
+00:10:24,720 --> 00:10:28,080
+Giữ nguyên, đừng có tắt tab, ngắt tác vụ của nó.
+
+126
+00:10:29,700 --> 00:10:31,100
+Đang tạo ảnh có thể mất một lúc.
+
+127
+00:10:31,540 --> 00:10:35,580
+Mình mô tả càng chi tiết bao nhiêu thì nó càng lâu với nhiêu nhưng mà nó ra kết quả đúng ý mình.
+
+128
+00:10:37,400 --> 00:10:39,220
+Đây thấy có cả mũi tên kìa, hay nhỉ.
+
+129
+00:10:42,520 --> 00:10:43,480
+Đấy, tóc vàng rồi kìa.
+
+130
+00:10:44,720 --> 00:10:45,480
+Đấy, tóc vàng rồi.
+
+131
+00:10:46,800 --> 00:10:49,640
+Đó, mặt có vẻ nhìn cũng có vẻ hơi nghiêm trọng rồi.
+
+132
+00:10:49,640 --> 00:10:54,880
+Vũ khí bí mật đấy
+
+133
+00:10:54,880 --> 00:11:00,080
+Nhân nó rồi, nghiêm trọng rồi
+
+134
+00:11:00,080 --> 00:11:03,980
+Đấy, 2 nhân vật đằng sau bắt thấy nó bắt đầu thầm thì rồi
+
+135
+00:11:03,980 --> 00:11:10,480
+Nhìn thì có vẻ hơi giống cái bên trên
+
+136
+00:11:10,480 --> 00:11:12,360
+Nhưng lại không đánh bản quyền được
+
+137
+00:11:15,650 --> 00:11:18,570
+Đó, thi thầm chưa?
+
+138
+00:11:23,050 --> 00:11:23,730
+Siêu nét!
+
+139
+00:11:28,730 --> 00:11:34,990
+Và đây là cái bên GODA mình đang làm mà triển khai, cái này mới ra mắt mình nhớ không nhầm được khoảng 1 tuần gần đây thôi.
+
+140
+00:11:36,090 --> 00:11:43,970
+Tại vì là với 1 cái áp lực là người dẫn đầu, thì bên mình luôn luôn phải đi tìm những thứ mới và update những thứ mới nhất.
+
+141
+00:11:43,970 --> 00:11:53,090
+Ví dụ đợt vừa rồi mình có update thêm những cái về chính sách về quảng cáo ấy, thì tí nữa cũng sẽ có phần đấy hỗ trợ anh em. Đây
+
+142
+00:11:53,090 --> 00:12:02,210
+là một cái cực kỳ dễ, cực kỳ đẹp. Thì vậy nãy giờ chúng ta đã trải qua hết những cái phần là từ làm content này, dịch này, đã
+
+143
+00:12:02,210 --> 00:12:11,330
+giải quyết tất cả mọi vấn đề của anh em rồi. Đến bây giờ là thumbnail. Thế còn phần gì nhỉ? Edit video đúng không? Phần này là phần dễ nhất.
+
+144
+00:12:11,330 --> 00:12:18,650
+Giống như câu chuyện của 2 anh chị làm ra 80.000 đô một tháng với một kênh
+
+145
+00:12:18,650 --> 00:12:25,850
+thì họ dành ra phần lớn thời gian của họ 70-80% thời gian của họ để họ làm content
+
+146
+00:12:25,850 --> 00:12:30,910
+Thumbnail của họ làm bằng ChatGPT nhưng mà nó là bản cũ thì nó hơi xấu
+
+147
+00:12:30,910 --> 00:12:38,610
+Nhưng với cái bản mới như bây giờ thì mình nghĩ là với cái tốc độ như này thì chắc chắn anh chị sẽ còn nhân được nhiều nhiều kênh như thế nữa
+
+148
+00:12:38,610 --> 00:12:41,290
+Con số nó sẽ lên rất là nhiều, rất là khác
+
+149
+00:12:41,290 --> 00:12:45,000
+Cái này mấy mươi anh chị sẽ được update, có thể sau anh em một chút
+
+150
+00:12:45,000 --> 00:12:54,750
+Ok, khi chúng ta đã có 1 cái thumbnail rồi, 1 content rồi, chúng ta cần là gì? Voiceover, là âm thanh, là giọng đọc.
+
+151
+00:12:55,310 --> 00:12:59,950
+Thì chúng ta sẽ sử dụng là ElevenLabs, copy content vừa nãy vào đi.
+
+152
+00:13:02,410 --> 00:13:08,090
+Bản tiếng Anh nhá. Nếu mà có ngắn quá thì mình sẽ cần làm dài hơn 1 chút, chứ không làm ngắn quá.
+
+153
+00:13:09,130 --> 00:13:12,630
+Ờ, mình nghĩ là sẽ cần phải dịch thêm 1 chút nữa, dịch thêm câu chuyện 1 chút nữa.
+
+154
+00:13:12,630 --> 00:13:16,850
+Này nó ngắn quá, mình sẽ làm mẫu khoảng 10 phút nhé, 10 phút.
+
+155
+00:13:21,230 --> 00:13:25,430
+Lấy content phần tiếp theo rồi dịch ra đi, lấy khoảng độ 7 đến 10 phút đi là được.
+
+156
+00:13:41,110 --> 00:13:41,870
+Tiếp tục dịch.
+
+157
+00:13:47,250 --> 00:13:53,450
+Ok, trong quá trình đấu dịch thì mình sẽ copy cái phần đầu tiên mình quăng vào ChatGPT đi.
+
+158
+00:13:53,830 --> 00:13:56,150
+À quăng vào ElevenLabs đi để mình lấy voice.
+
+159
+00:13:58,430 --> 00:13:59,810
+Cái phần content tiếng Anh đó.
+
+160
+00:14:02,710 --> 00:14:04,970
+Rồi khoảng đấy là copy các bạn này.
+
+161
+00:14:05,710 --> 00:14:09,110
+Copy vào nhé nhưng mà đừng quăng cả vào phần ElevenLabs đi Tuấn ơi.
+
+162
+00:14:10,370 --> 00:14:12,710
+Chúng ta sẽ sử dụng phần project trong ElevenLabs nhé.
+
+163
+00:14:13,550 --> 00:14:13,910
+Project.
+
+164
+00:14:13,910 --> 00:14:17,450
+À, ngày trước là Project bây giờ nó đổi thành Studio rồi.
+
+165
+00:14:18,010 --> 00:14:21,350
+Ấn vào Studio tạo một cái bản mới.
+
+166
+00:14:22,310 --> 00:14:23,190
+Dưới là bản test đúng không?
+
+167
+00:14:24,770 --> 00:14:26,350
+Ok, chúng ta sẽ copy vào.
+
+168
+00:14:28,270 --> 00:14:29,770
+Tiếp theo sẽ đợi cái phần kia nó dịch xong.
+
+169
+00:14:29,870 --> 00:14:31,210
+Xăng lấy phần kia đi, đưa vào.
+
+170
+00:14:31,990 --> 00:14:32,330
+Dịch tiếp.
+
+171
+00:14:34,910 --> 00:14:36,350
+Chọn một cái giọng hay hay một chút.
+
+172
+00:14:36,770 --> 00:14:38,610
+Rồi, nó sẽ chia ra một các cái đoạn đấy.
+
+173
+00:14:40,290 --> 00:14:40,570
+Rồi.
+
+174
+00:14:42,090 --> 00:14:43,210
+Đẩy âm thanh lên nhá.
+
+175
+00:14:43,210 --> 00:14:45,270
+Để tí còn nghe, để còn test giọng
+
+176
+00:14:45,270 --> 00:14:47,610
+Rồi copy cái bản mới đi
+
+177
+00:14:47,610 --> 00:14:48,890
+Liên lạc vào
+
+178
+00:14:48,890 --> 00:14:50,690
+Là được
+
+179
+00:14:50,690 --> 00:14:56,470
+Rồi tiếp theo
+
+180
+00:14:56,470 --> 00:14:58,230
+Ớ từ từ cẩn thận mất nha
+
+181
+00:14:58,230 --> 00:14:59,210
+Cẩu thận mất nha
+
+182
+00:14:59,210 --> 00:15:01,690
+Rồi ấn
+
+183
+00:15:01,690 --> 00:15:03,030
+Copy, paste, paste vào
+
+184
+00:15:03,210 --> 00:15:04,570
+Ok, ok, đúng rồi.
+
+185
+00:15:05,670 --> 00:15:07,630
+Rồi, được rồi, mình sẽ thử cái đoạn này nhé.
+
+186
+00:15:08,450 --> 00:15:08,930
+Chọn giọng đi.
+
+187
+00:15:10,410 --> 00:15:11,170
+Đẩy đẩy âm thanh lên.
+
+188
+00:15:14,430 --> 00:15:15,030
+Có không?
+
+189
+00:15:17,710 --> 00:15:18,650
+Chọn một cái giọng như thế.
+
+190
+00:15:23,210 --> 00:15:25,210
+Ở, đang render à.
+
+191
+00:15:25,210 --> 00:15:28,750
+Cái việc mà chọn giọng anh em chọn từ ngoài nhé, chọn một cái giọng hay.
+
+192
+00:15:28,750 --> 00:15:37,550
+A silver Ford F-150 was brought out. It was nearly new, solid engine, great specs, one of the branch's bestsellers.
+
+193
+00:15:37,550 --> 00:15:46,350
+But then Tom slipped. Sticker price is 37 grand, but that includes the Carter's protection package, only available here.
+
+194
+00:15:52,050 --> 00:15:58,730
+Love all, trust a few, do wrong to none. God has given you one face, and you make yourself another.
+
+195
+00:15:58,750 --> 00:16:07,240
+Ok, mình sẽ export toàn bộ cái vài đấy luôn. Ok, rồi, chất lượng âm thanh nên chọn là WAV nhé,
+
+196
+00:16:07,240 --> 00:16:15,730
+thì nó sẽ hay hơn là MP3. Chất lượng tiêu chuẩn đấy, nó sẽ nặng hơn, nhưng mà nó hay hơn.
+
+197
+00:16:15,730 --> 00:16:24,520
+Export, xem có đủ credit không? Rồi nó sẽ ngân thời gian rồi, Export. Trong quá trình đó mình sẽ tạo một project ở trên CapCut
+
+198
+00:16:24,520 --> 00:16:33,310
+để mình làm việc với cái này. Xem cái tốc độ Export nó có lâu không? 7% ờ khá nhanh, đợi một chút cũng được, đợi được.
+
+199
+00:16:35,110 --> 00:16:42,850
+Cái thumb vừa nãy mình tải về chưa? Tải về đi, tải về desktop đi.
+
+200
+00:16:42,850 --> 00:16:51,760
+Cái này là hướng dẫn cơ bản thôi. Thêm một lần nữa khẳng định là những thứ đơn giản như vậy, nó chỉ có video, slide ảnh, cộng
+
+201
+00:16:51,760 --> 00:17:00,670
+với audio và nó cũng có thể ra kết quả 100-200.000 đô một tháng với một nhóm kênh nhé, chứ không phải một kênh, là hoàn toàn khả thi.
+
+202
+00:17:01,670 --> 00:17:12,730
+Vậy nên anh em đôi khi là cũng đi tìm những thứ phức tạp nhiều quá. Đây cũng là lời nhắc nhở cho anh em nội bộ GODA nhé, làm thứ đơn giản thôi, ra tiền, dùng tiền mua thứ phức tạp.
+
+203
+00:17:12,850 --> 00:17:14,550
+Nghĩ nhiều quá.
+
+204
+00:17:16,890 --> 00:17:18,430
+Ok, đã xong rồi đúng không?
+
+205
+00:17:19,070 --> 00:17:21,490
+Cho nó xem cái bản export ấy đi nó tải về đúng không?
+
+206
+00:17:22,000 --> 00:17:22,610
+Cho vào CapCut thôi.
+
+207
+00:17:24,030 --> 00:17:24,650
+Mở CapCut lên.
+
+208
+00:17:31,870 --> 00:17:33,510
+Rồi, tạo project mới thôi.
+
+209
+00:17:34,090 --> 00:17:34,990
+CapCut là dễ dùng nhất rồi.
+
+210
+00:17:35,950 --> 00:17:39,650
+Ngày xưa CapCut này nó có cái phần Auto Caption bằng Free,
+
+211
+00:17:39,650 --> 00:17:40,770
+Free, nhưng bây giờ nó
+
+212
+00:17:40,770 --> 00:17:42,910
+Nó cho mình dùng nghiện rồi
+
+213
+00:17:42,910 --> 00:17:44,130
+Nó bắt mình trả tiền
+
+214
+00:17:44,130 --> 00:17:47,650
+Rồi, lấy audio vào
+
+215
+00:17:47,650 --> 00:17:54,070
+Đó, cho vào
+
+216
+00:17:54,070 --> 00:17:55,970
+Rồi, cho hôm dưới thôi, edit thôi
+
+217
+00:17:55,970 --> 00:17:57,590
+Rồi, kéo cái
+
+218
+00:17:57,590 --> 00:17:59,190
+Kéo cái ảnh kia vào
+
+219
+00:17:59,190 --> 00:18:04,730
+Ok, xong.
+
+220
+00:18:05,830 --> 00:18:07,790
+Rồi, bây giờ kiếm cái hiệu ứng cho ảnh đi.
+
+221
+00:18:08,190 --> 00:18:08,970
+Kiếm cái hiệu ứng ảnh đi.
+
+222
+00:18:10,270 --> 00:18:11,090
+Hiệu ứng nhẹ nhàng thôi.
+
+223
+00:18:13,010 --> 00:18:14,710
+Bây giờ ấn vào cái ảnh đi kìa, cho effect.
+
+224
+00:18:14,970 --> 00:18:15,770
+Kiếm cái effect nào đấy.
+
+225
+00:18:18,680 --> 00:18:19,760
+John sat quiet.
+
+226
+00:18:25,860 --> 00:18:28,640
+John sat quietly in his old Toyota Corolla.
+
+227
+00:18:28,640 --> 00:18:32,340
+Nghe em thấy cái này giống trong chủ đề story không? Gặp nhiều dã man luôn.
+
+228
+00:18:32,340 --> 00:18:37,940
+Vì dạng này người ta có xem hình đâu, toàn nghe ấy mà.
+
+229
+00:18:39,720 --> 00:18:43,000
+Có auto caption chưa? Bật auto caption lên.
+
+230
+00:18:49,000 --> 00:18:50,340
+Đấy, bắt đầu auto caption.
+
+231
+00:18:51,920 --> 00:18:54,720
+Cái này siêu nhanh luôn, còn CapCut này xịn thật.
+
+232
+00:18:55,300 --> 00:18:57,780
+Còn con Premiere bao lâu đời bao lâu thế nhưng mà.
+
+233
+00:18:57,780 --> 00:19:04,180
+Để bây giờ anh em bên GODA bây giờ dùng những cái con, cái con Premiere, Premiere Pro ấy.
+
+234
+00:19:05,860 --> 00:19:10,220
+Vẫn phải Caption chạy bằng cơm. Được cái ảo đẹp hơn thôi chứ còn.
+
+235
+00:19:11,060 --> 00:19:13,620
+Thật ra là không ngon mà con này. Cái auto Caption nó cùi lắm.
+
+236
+00:19:18,360 --> 00:19:20,940
+85, 86, ok. Xong. Ấn chạy thế nào.
+
+237
+00:19:21,740 --> 00:19:24,580
+John sat quietly in his old Toyota Corolla.
+
+238
+00:19:24,580 --> 00:19:28,740
+Cái phong chữ khác cho nó đẹp đẹp hơn tí. Tính mình hơi OCD.
+
+239
+00:19:28,800 --> 00:19:33,960
+Tích
+
+240
+00:19:33,960 --> 00:19:34,300
+Ở
+
+241
+00:19:34,300 --> 00:19:35,140
+Chọn phông đi
+
+242
+00:19:35,140 --> 00:19:37,320
+Chúng cái phông khác
+
+243
+00:19:37,320 --> 00:19:40,150
+Để
+
+244
+00:19:40,150 --> 00:19:46,150
+Thử thử một cái, vài cái xem cái nào nó dày dày ấy. Cái nào dày dày một tí ấy.
+
+245
+00:19:51,150 --> 00:19:58,150
+Đấy, nhìn cái đấy, được ấy. Đấy, ok đấy, có vẻ đứng được ấy. Ok, được rồi, đẩy lên. Đấy, nhìn cho nó dễ nhìn thôi.
+
+246
+00:19:58,150 --> 00:20:02,150
+Còn anh em thì tùy chọn nhé. Đừng để ở giữa, để ở dưới thôi.
+
+247
+00:20:02,150 --> 00:20:08,970
+Ok, rồi cho thêm opacity, stroke các thứ vào, viền đen vào.
+
+248
+00:20:12,450 --> 00:20:14,090
+Shadow vào đấy cho nó nổi lên.
+
+249
+00:20:14,730 --> 00:20:16,950
+Ok, chạy đi, chạy video xem nào.
+
+250
+00:20:18,570 --> 00:20:24,310
+John sat quietly in his old Toyota Corolla, fingers tapping slowly on the steering wheel.
+
+251
+00:20:24,990 --> 00:20:27,250
+In front of him was the lot of John's trucks.
+
+252
+00:20:27,250 --> 00:20:27,490
+Ok, video, chạy video.
+
+253
+00:20:28,870 --> 00:20:29,070
+Xong.
+
+254
+00:20:31,210 --> 00:20:31,790
+Xong rồi?
+
+255
+00:20:32,150 --> 00:20:34,090
+Quy trình chỉ có thế thôi.
+
+256
+00:20:40,870 --> 00:20:44,530
+Ok, chúng ta đã có kết xuất này trong thời gian xuất. Chúng ta đến phần tiếp theo.
+
+257
+00:20:45,590 --> 00:20:49,230
+Chúng ta đã có thumbnail rồi. Chúng ta đã có video rồi.
+
+258
+00:20:50,370 --> 00:20:53,870
+Thì bây giờ việc của chúng ta là viết một cái tiêu đề. Tiêu đề chúng ta đã có sẵn rồi đúng không ạ?
+
+259
+00:20:54,770 --> 00:20:58,210
+Thì bây giờ chúng ta sẽ quay lại phần để chuẩn bị một file để upload video.
+
+260
+00:20:58,210 --> 00:21:01,470
+Với phần này thì quay lại phần tiêu đề
+
+261
+00:21:01,470 --> 00:21:03,830
+Public, xuất nhanh thật, công nhận ông này
+
+262
+00:21:03,830 --> 00:21:09,830
+Ông này, ông CapCut này có một cái là xuất video dài nó hơi hay bị lỗi nên anh em phải check kỹ lại nhé.
+
+263
+00:21:11,010 --> 00:21:12,270
+Video khoảng 2-3 tiếng hay lỗi lắm.
+
+264
+00:21:15,040 --> 00:21:16,880
+John sat quietly in his old.
+
+265
+00:21:18,100 --> 00:21:21,340
+Rồi bây giờ mình sẽ chuẩn bị một cái file.
+
+266
+00:21:23,180 --> 00:21:25,480
+Mở một cái tab đơn giản là file Word đi.
+
+267
+00:21:25,620 --> 00:21:26,220
+File Word khác đi.
+
+268
+00:21:26,900 --> 00:21:28,960
+Một file Word mới để mình làm.
+
+269
+00:21:29,720 --> 00:21:30,120
+Mình táo tặng.
+
+270
+00:21:31,440 --> 00:21:31,680
+Ok.
+
+271
+00:21:32,160 --> 00:21:33,500
+Tiêu đề đâu nhỉ? Lấy tiêu đề sang đi.
+
+272
+00:21:33,500 --> 00:21:35,500
+Trang đi.
+
+273
+00:21:39,500 --> 00:21:42,500
+Trong trường hợp mình có một cái tiêu đề này mình đã chỉnh sửa rồi nhá.
+
+274
+00:21:42,500 --> 00:21:46,500
+Nếu mà mình chỉnh thì nó sẽ mất rất nhiều thời gian vì cái tư duy chỉnh nó sẽ khác nhau.
+
+275
+00:21:46,500 --> 00:21:47,500
+Anh em thì sẽ...
+
+276
+00:21:47,500 --> 00:21:50,500
+Nên thực ra là mỗi cái tiêu đề nó là một cái key.
+
+277
+00:21:50,500 --> 00:21:53,500
+Chỉ công thức là giữ nguyên và thêm.
+
+278
+00:21:53,500 --> 00:21:54,700
+Thêm một yếu tố gì đấy gây sốc.
+
+279
+00:21:55,140 --> 00:21:57,020
+Một từ nào đấy gây sốc thôi là ok.
+
+280
+00:21:57,440 --> 00:21:58,860
+Hoặc là mình có thể đổi bối cảnh đi.
+
+281
+00:21:59,500 --> 00:22:00,160
+Undercover Boss.
+
+282
+00:22:00,940 --> 00:22:02,380
+Đây là biochart.
+
+283
+00:22:02,680 --> 00:22:04,160
+Thì có thể là bio...
+
+284
+00:22:04,220 --> 00:22:09,840
+Luxury Car chẳng hạn, hoặc là Super Car chẳng hạn. Đấy là cái mình thay đổi. Đấy.
+
+285
+00:22:10,420 --> 00:22:12,580
+Thì đây là, ví dụ đây là một cái tiêu đề mình đã chọn xong rồi này.
+
+286
+00:22:13,000 --> 00:22:14,400
+Tiếp theo đến đây ạ. Mô tả.
+
+287
+00:22:15,440 --> 00:22:20,920
+Mô tả thì chúng ta sẽ sử dụng phần intro đầu của video và phần tiêu đề của mình để viết.
+
+288
+00:22:21,240 --> 00:22:24,180
+Thì chúng ta sẽ lại tạo một tab mới của ChatGPT.
+
+289
+00:22:24,980 --> 00:22:26,440
+Tạo tab mới chuyên để viết mô tả.
+
+290
+00:22:27,320 --> 00:22:28,440
+Chúng ta cần phải chuyên biệt nó ra.
+
+291
+00:22:29,860 --> 00:22:30,140
+Rồi.
+
+292
+00:22:31,540 --> 00:22:32,700
+Tạo tab mới. Ừ, tạo đi.
+
+293
+00:22:34,220 --> 00:22:37,220
+Rồi, bạn là...
+
+294
+00:22:38,250 --> 00:22:50,110
+Trợ lý hỗ trợ tôi viết phần mô tả cho các video chủ đề Undercover Boss và Undercover CEO.
+
+295
+00:22:51,030 --> 00:22:52,330
+Cái này chủ đề do anh em nhỉ.
+
+296
+00:22:53,290 --> 00:22:55,810
+Cái này mình đào tạo, nó cũng giống như cái phần đào tạo content thôi.
+
+297
+00:22:56,370 --> 00:22:57,930
+Cũng như vậy, không có gì khác biệt.
+
+298
+00:23:01,090 --> 00:23:02,090
+Ok, Enter rồi được.
+
+299
+00:23:03,070 --> 00:23:05,210
+Và trong quá trình anh em làm nghiên cứu ấy,
+
+300
+00:23:05,390 --> 00:23:08,110
+thì chúng ta sẽ xem rất là nhiều cái dạng mô tả khác nhau.
+
+301
+00:23:08,250 --> 00:23:14,630
+Thì cái việc của mình là thu thập và đào tạo con ChatGPT thì chúng ta sẽ quăng rất là nhiều những cái yếu tố như thế.
+
+302
+00:23:14,810 --> 00:23:15,890
+Nó cập nhật bộ nhớ kìa.
+
+303
+00:23:16,490 --> 00:23:21,010
+Đấy, thì bây giờ mình sẽ đưa một phần intro của mình vào và phần tiêu đề của mình vào.
+
+304
+00:23:22,170 --> 00:23:23,450
+Đây là intro của tôi.
+
+305
+00:23:24,590 --> 00:23:26,190
+À đây là tiêu đề của tôi. Copy đưa vào.
+
+306
+00:23:26,710 --> 00:23:27,590
+Đây là tiêu đề của tôi.
+
+307
+00:23:32,270 --> 00:23:35,370
+Tôi 2 chấm, cái copy của tiêu đề chấm.
+
+308
+00:23:36,490 --> 00:23:37,310
+Đấy, từ từ.
+
+309
+00:23:38,250 --> 00:23:42,750
+Đấy, mình nạp thiếu là nó sẽ viết linh ta linh tinh đấy.
+
+310
+00:23:42,750 --> 00:23:46,750
+Thôi bây giờ, hủy hủy hủy.
+
+311
+00:23:46,750 --> 00:23:50,450
+Và đây là intro của tôi.
+
+312
+00:23:50,450 --> 00:23:57,550
+Đấy copy phần intro ra
+
+313
+00:23:57,550 --> 00:24:00,390
+Copy phần intro quăng cái phần đầu mình vào
+
+314
+00:24:00,390 --> 00:24:03,290
+Tiếng Anh ấy
+
+315
+00:24:03,290 --> 00:24:04,030
+Đúng rồi
+
+316
+00:24:04,030 --> 00:24:06,710
+Intro nó ngắn mà
+
+317
+00:24:06,710 --> 00:24:07,730
+Copy
+
+318
+00:24:07,730 --> 00:24:10,450
+Đấy đúng rồi đấy thôi
+
+319
+00:24:10,450 --> 00:24:14,870
+Bất dồn nét tơ đấy đến phần intro
+
+320
+00:24:14,870 --> 00:24:16,630
+Anh em copy đúng hết phần intro
+
+321
+00:24:16,630 --> 00:24:17,890
+Hết phần giới thiệu đầu
+
+322
+00:24:17,890 --> 00:24:19,190
+Ok
+
+323
+00:24:19,190 --> 00:24:22,210
+Hãy viết cho tôi mô tả
+
+324
+00:24:22,210 --> 00:24:23,890
+Video
+
+325
+00:24:23,890 --> 00:24:25,010
+Chuẩn SEO
+
+326
+00:24:25,010 --> 00:24:26,770
+YouTube
+
+327
+00:24:27,040 --> 00:24:35,520
+Chuẩn SEO, Việt Nam mới học ở là SEO. Enter, gửi đi, nó sẽ viết cho mình.
+
+328
+00:24:40,700 --> 00:24:41,620
+Dưới đây là mô tả.
+
+329
+00:24:44,560 --> 00:24:55,540
+Tuy nhiên, không nên phụ thuộc vào ChatGPT. Chúng ta cần phải xem xét kỹ lại ngôn từ. Phải thật kỹ, chúng ta phải là người điều khiển, sử dụng nó, chứ không phải là người phụ thuộc vào nó.
+
+330
+00:24:57,040 --> 00:25:02,040
+Đó, trong trường hợp này mình thấy là, what happened with CEO?
+
+331
+00:25:02,040 --> 00:25:08,040
+Ok, mình thấy nó cũng tạm tạm được, thì mình có thể sử dụng được. Đây là ví dụ của anh em phải kỹ hơn.
+
+332
+00:25:08,040 --> 00:25:11,040
+Mình càng kỹ tính thì sản phẩm mình càng tốt, khán giả càng yêu quý mình.
+
+333
+00:25:11,040 --> 00:25:21,040
+Copy, đừng copy hết. Đấy, đến đấy thôi. Nó có cái phần gọi là twist, là cú ngoặt đấy. Copy vào.
+
+334
+00:25:21,040 --> 00:25:25,800
+Ví dụ như vậy, mình đưa sang kia là mô tả.
+
+335
+00:25:25,800 --> 00:25:27,800
+Mô tả
+
+336
+00:25:27,800 --> 00:25:35,800
+Đó, trong mô tả thì nó có xem một phần là hashtag thì chúng ta sẽ quay lại bảng nghiên cứu, chúng ta chọn hashtag cho mình.
+
+337
+00:25:35,800 --> 00:25:44,800
+Nếu trong trường hợp mà trong chủ đề không có hashtag, tất cả các kênh đều không dùng cơ, thì mình sẽ phải nghiên cứu kỹ xem là cái hashtag nó phù hợp.
+
+338
+00:25:44,800 --> 00:25:47,800
+Tại vì SEO nó cực kỳ quan trọng với kênh mới.
+
+339
+00:25:47,800 --> 00:25:54,800
+Thì chúng ta sẽ chọn hashtag, tìm hashtag trong cái bảng nghiên cứu cơ, có đấy, bảng nghiên cứu, Dream 100 video ấy.
+
+340
+00:25:55,800 --> 00:26:03,560
+Dream 100 video có không? Hashtag vừa nãy có. À bảng tổng, bằng tổng, đúng rồi,
+
+341
+00:26:03,560 --> 00:26:11,320
+bằng tổng, quay lại bằng tổng. Đấy, chúng ta sẽ lấy 3 cái hashtag này vào,
+
+342
+00:26:11,320 --> 00:26:19,080
+đưa vào. Rồi, đưa sang bên kia, là file upload video. Hashtag. Xong, thế là xong.
+
+343
+00:26:19,080 --> 00:26:27,080
+Dạng này nó không có phần thẻ tag thì thôi mình không dùng. Trong kênh, trong chủ đề không dùng thì mình cũng không dùng.
+
+344
+00:26:27,080 --> 00:26:32,580
+Xong rồi video đã xuất xong, chúng ta sẽ upload video thì mình sẽ upload mẫu lên một kênh luôn.
+
+345
+00:26:32,580 --> 00:26:34,580
+Upload trực tiếp lên kênh đi
+
+346
+00:26:34,580 --> 00:26:36,580
+xem video nó được bao nhiêu phút đã
+
+347
+00:26:36,580 --> 00:26:38,580
+kênh này có thể chưa xác minh
+
+348
+00:26:38,580 --> 00:26:40,580
+nó chưa được upload được video trên 15 phút đâu
+
+349
+00:26:40,580 --> 00:26:42,580
+xem thời lượng đi
+
+350
+00:26:42,580 --> 00:26:44,580
+check lại video lần cuối bật xem đi
+
+351
+00:26:44,580 --> 00:26:47,850
+5 phút 5 phút
+
+352
+00:26:47,850 --> 00:26:49,250
+5 phút, 5, 7, ok, được rồi.
+
+353
+00:26:49,430 --> 00:26:50,710
+Thế nên mình upload trực tiếp lên kênh này luôn.
+
+354
+00:26:53,750 --> 00:26:55,690
+Giá chất lượng 1, 6 hay không?
+
+355
+00:26:55,870 --> 00:26:56,790
+Nãy không chỉnh chất lượng.
+
+356
+00:26:58,110 --> 00:26:58,690
+Ok, rồi được rồi.
+
+357
+00:26:59,730 --> 00:27:01,570
+Sau mình xuất mình sẽ kỹ hơn rồi đấy.
+
+358
+00:27:03,190 --> 00:27:03,770
+Upload lên kênh đi.
+
+359
+00:27:03,770 --> 00:27:08,370
+1, 6, hình như nó là kích thước
+
+360
+00:27:08,370 --> 00:27:12,730
+Upload đây xem được không?
+
+361
+00:27:15,000 --> 00:27:18,070
+Cái này nó có một phần những thói quen của mình từ ngày xưa đến giờ nhé
+
+362
+00:27:18,070 --> 00:27:20,230
+Mà mình đã đào tạo anh em trong nội bộ GODA là
+
+363
+00:27:20,230 --> 00:27:24,770
+Trước khi upload một file thì mình thông thường hay đổi toàn bộ tiêu đề
+
+364
+00:27:24,770 --> 00:27:27,550
+Từ chữ viết hoa thành viết thường hết
+
+365
+00:27:27,550 --> 00:27:28,330
+Sau đó mới upload
+
+366
+00:27:28,330 --> 00:27:29,970
+Thì đấy là cái cách của mình
+
+367
+00:27:29,970 --> 00:27:32,630
+Và YouTube thì nó có rất là nhiều trường phái khác nhau
+
+368
+00:27:32,630 --> 00:27:35,430
+Và nó không có đúng, có sai. Nó chỉ có cách phù hợp thôi.
+
+369
+00:27:35,910 --> 00:27:37,370
+Thế là mình chia sẻ cái cách của mình.
+
+370
+00:27:37,990 --> 00:27:42,970
+Đấy thì mình hay đổi toàn bộ tiêu đề của video sang chữ viết thường.
+
+371
+00:27:43,310 --> 00:27:45,730
+Thì Tuấn đổi cho mình toàn bộ tiêu đề sang viết thường.
+
+372
+00:27:49,690 --> 00:27:52,310
+Đó. Copy cái đấy và đưa dưới viết thành viết thường hết.
+
+373
+00:27:58,150 --> 00:28:00,150
+Lạm dụng ChatGPT
+
+374
+00:28:00,150 --> 00:28:05,150
+Quá phụ thuộc rồi
+
+375
+00:28:05,150 --> 00:28:08,710
+Hôm nay ăn gì?
+
+376
+00:28:10,510 --> 00:28:13,150
+Tôi có nên đưa người yêu đi chơi vào hôm nay không?
+
+377
+00:28:14,830 --> 00:28:16,890
+Mùng 8 tháng 3 tặng quà gì cho vợ?
+
+378
+00:28:19,370 --> 00:28:23,430
+Đó, ok, upload lên. Và cả với thumb cũng vậy nhá, đấy là thói quen của mình.
+
+379
+00:28:23,850 --> 00:28:25,670
+Mình được anh Huân đào tạo về việc đấy.
+
+380
+00:28:25,670 --> 00:28:29,190
+Là cái thói quen từ ngày xưa, từ 2016 anh ấy đã làm.
+
+381
+00:28:29,730 --> 00:28:31,710
+Và mình Shu tuân thủ cái điều đấy và mình thấy nó hiệu quả.
+
+382
+00:28:32,630 --> 00:28:35,870
+Các anh em mới bây giờ làm thì có thể là cũng chả cần.
+
+383
+00:28:36,130 --> 00:28:37,030
+Và anh em thấy vẫn hiệu quả.
+
+384
+00:28:37,550 --> 00:28:38,450
+Thì nó không có đúng có sai.
+
+385
+00:28:39,170 --> 00:28:40,490
+Nó chỉ có cái phù hợp với mình thôi.
+
+386
+00:28:41,350 --> 00:28:44,010
+Ok, upload thì chúng ta sẽ có toàn bộ mọi thứ rồi.
+
+387
+00:28:44,110 --> 00:28:44,810
+Thì upload lên thôi.
+
+388
+00:28:46,650 --> 00:28:47,670
+Tiêu đề thì chỉnh chuẩn.
+
+389
+00:28:50,670 --> 00:28:51,570
+Sao lại x đi?
+
+390
+00:28:51,570 --> 00:28:59,770
+Upload đây đúng không? Mình chỉnh thôi, chỉnh các yếu tố thôi. Lấy tiêu đề chuẩn vào, cho vào đây nhé.
+
+391
+00:28:59,770 --> 00:29:04,970
+Copy vào.
+
+392
+00:29:04,970 --> 00:29:09,770
+OK, mô tả.
+
+393
+00:29:09,770 --> 00:29:22,220
+Các bạn có thể tìm hiểu thêm nhiều video mới nhé.
+
+394
+00:29:22,220 --> 00:29:28,020
+paste vào, rồi hashtag, hashtag thì anh em lưu ý từng cái một nhé, đừng copy cả 3 cái quang vào, nó không nhận đâu.
+
+395
+00:29:31,100 --> 00:29:39,760
+Rồi ấn vào từ từ bình tĩnh rồi, ấn, thấy nó hiện thấy click vào bộ phát, đấy, cái sau cũng nó cũng như vậy thôi, ấn vào,
+
+396
+00:29:39,760 --> 00:29:48,380
+Cho vào, click 1 phát nó mới nhận. Rồi cái tiếp theo. Ok, thừa rồi. Rồi
+
+397
+00:29:48,380 --> 00:29:57,000
+click vào, xong. Rồi chúng ta đến cái tiếp theo là upload thumbnail rồi đẩy thumb lên.
+
+398
+00:29:57,000 --> 00:30:02,640
+Đấy, ai à? Chưa được à?
+
+399
+00:30:04,260 --> 00:30:07,460
+Đây, chuyển kênh khác, chuyển tạm kênh khác để upload để hoàn thiện nút quy trình.
+
+400
+00:30:09,000 --> 00:30:10,000
+Lỗi mình, sorry nha.
+
+401
+00:30:11,740 --> 00:30:15,280
+Về đấy xem, verify chứ, không phải vào tạm kênh, hai kênh kia cũng được mà, kênh nào cũng được.
+
+402
+00:30:17,480 --> 00:30:19,160
+Mình có làm ở đâu? Đấy.
+
+403
+00:30:23,300 --> 00:30:25,800
+Mình có để public đâu mà, cứ upload lên.
+
+404
+00:30:27,000 --> 00:30:29,640
+Tha,
+
+405
+00:30:29,640 --> 00:30:30,640
+Rồi.
+
+406
+00:30:30,640 --> 00:30:39,640
+À, đấy có một cái phần chia sẻ khi mình nhìn thấy cái phần mô tả, có một cái thói quen của mình là mình không có thể để mô tả gọi là mặc định đâu nhá.
+
+407
+00:30:39,640 --> 00:30:44,640
+Và với một niềm tin nào đấy trong mình, mình nghĩ rằng cái việc mặc định đấy nó khiến cái video nó không lên.
+
+408
+00:30:44,640 --> 00:30:47,640
+Cũng giống như kiểu là public video bằng tay ấy.
+
+409
+00:30:47,640 --> 00:30:49,640
+Thì mình được học cái điều đấy từ ngày xưa.
+
+410
+00:30:49,640 --> 00:30:50,840
+Xưa mình cũng duy trì đến bây giờ.
+
+411
+00:30:51,360 --> 00:30:52,440
+Mình không hẹn giờ.
+
+412
+00:30:53,000 --> 00:30:54,100
+Trừ trường hợp bất khả kháng thôi.
+
+413
+00:30:54,540 --> 00:30:55,740
+Thì mình mới hẹn giờ ra còn khởi lại.
+
+414
+00:30:55,820 --> 00:30:56,560
+Không bao giờ hẹn giờ hết.
+
+415
+00:30:57,180 --> 00:30:58,540
+100% video public bằng tay hết.
+
+416
+00:31:03,850 --> 00:31:10,650
+Ok
+
+417
+00:31:10,650 --> 00:31:13,630
+Rồi thumbnail lên
+
+418
+00:31:13,630 --> 00:31:17,490
+Rồi lưu lại
+
+419
+00:31:17,490 --> 00:31:19,370
+Nếu như chưa đổi tên kìa
+
+420
+00:31:19,370 --> 00:31:24,430
+Đổi đi không chịu được đâu, OCD không chịu được đâu
+
+421
+00:31:24,430 --> 00:31:27,570
+Nhìn được ngớ mắt lắm
+
+422
+00:31:31,630 --> 00:31:32,290
+Sao đấy
+
+423
+00:31:32,290 --> 00:31:37,890
+Xem, sai kích thước à? Sai kích thước là lấy Photoshop resize lại.
+
+424
+00:31:37,890 --> 00:31:47,170
+New file, đúng kích thước của mình đấy, 280720
+
+425
+00:31:47,170 --> 00:31:56,440
+mà, kích thước của YouTube, full HD cũng đúng
+
+426
+00:31:56,440 --> 00:31:59,200
+Full HD cũng được, nhưng mình hay để là 1, 2, 8, 0 để HD thôi.
+
+427
+00:32:01,940 --> 00:32:02,860
+1, 2, 8, 0.
+
+428
+00:32:04,320 --> 00:32:05,000
+7, 20.
+
+429
+00:32:06,300 --> 00:32:07,680
+7, 20. Ok.
+
+430
+00:32:08,900 --> 00:32:10,340
+Rồi, lấy cái file vừa nãy vào.
+
+431
+00:32:16,240 --> 00:32:23,860
+Zai không chuẩn lắm, ok, kéo ra, cho nó full đi, bên này.
+
+432
+00:32:26,340 --> 00:32:34,880
+Ok, chỉnh đẩy lên một tí, một tí, ok, được rồi, xong, xuất, xuất video, xuất thumb, đẩy thumb bên kia đi.
+
+433
+00:32:36,000 --> 00:32:39,280
+Rồi, export, PNG, được, ok.
+
+434
+00:32:41,920 --> 00:32:43,000
+Rồi, cho desktop ấy.
+
+435
+00:32:44,400 --> 00:32:45,220
+Nhớ đổi tên nhé.
+
+436
+00:32:46,240 --> 00:32:53,680
+Quá phụ thuộc ChatGPT,
+
+437
+00:32:53,680 --> 00:33:01,120
+nghiện không bỏ được.
+
+438
+00:33:02,600 --> 00:33:03,480
+Rồi, cho lên đây.
+
+439
+00:33:08,600 --> 00:33:10,600
+Ok
+
+440
+00:33:15,000 --> 00:33:20,600
+Ở phần danh sách phát này chúng ta sẽ tạo các danh sách phát nó liên quan đến tên kênh của mình và chủ đề của mình.
+
+441
+00:33:20,600 --> 00:33:22,600
+Ví dụ như ở đây mình sẽ tạo ví dụ một danh sách phát ở đây.
+
+442
+00:33:22,600 --> 00:33:27,600
+Cái này nó liên quan đến phần SEO nhưng là để đủ bước thì mình vẫn hướng dẫn anh em.
+
+443
+00:33:27,600 --> 00:33:36,600
+Chúng ta sẽ chọn playlist tạo một cái mới, danh sách phát mới với tên kênh của mình như ví dụ là GODA Story.
+
+444
+00:33:36,600 --> 00:33:38,840
+Cái này là danh sách phát chính của kênh nhé.
+
+445
+00:33:39,200 --> 00:33:45,000
+Còn về sau khi anh em có rất nhiều topic trong cùng một kênh như vậy thì chúng ta có thể chia ra làm các playlist khác nhau.
+
+446
+00:33:45,160 --> 00:33:50,800
+Ví dụ như là câu chuyện chủ tịch giả vờ và cái kết nhưng mà nó lại bối cảnh nhà hàng chẳng hạn.
+
+447
+00:33:51,200 --> 00:33:58,420
+Thì mình có thể ghi là restaurant story, hoặc là hotel story, hoặc là bank story.
+
+448
+00:33:58,420 --> 00:34:04,260
+Kiểu như vậy thì mình sẽ tìm trong chủ đề của mình các cái từ khóa nó đại diện cho cái dạng nội dung đấy.
+
+449
+00:34:04,640 --> 00:34:05,340
+Thì chúng ta sẽ chọn.
+
+450
+00:34:05,340 --> 00:34:09,100
+Đó, chọn nội dung công khai, ngày xuất bản mới nhất.
+
+451
+00:34:09,700 --> 00:34:15,600
+Cái việc mà mình đưa vào ngày xuất bản mới nhất để về sau là khi mà mỗi một cái video chúng ta để playlist ở màn hình kết thúc ấy,
+
+452
+00:34:16,220 --> 00:34:19,940
+thì khi chúng ta kéo kênh mới hoặc khi chúng ta upload video mới vào playlist này,
+
+453
+00:34:20,400 --> 00:34:25,100
+mặc định tất cả những video cũ nó sẽ hiển thị video mới của mình, nó sẽ kéo view cho video mới.
+
+454
+00:34:25,160 --> 00:34:27,300
+Đó, rồi lưu lại tiếp theo
+
+455
+00:34:27,300 --> 00:34:28,420
+Chọn vào playlist chưa
+
+456
+00:34:28,420 --> 00:34:31,900
+Ừ, không lưu à
+
+457
+00:34:31,900 --> 00:34:41,030
+Có chưa
+
+458
+00:34:41,030 --> 00:34:42,370
+Có chưa? Có playlist chưa?
+
+459
+00:34:45,110 --> 00:34:46,430
+Tạo một playlist đi Tuấn.
+
+460
+00:34:51,210 --> 00:34:52,790
+Vào kênh, vào studio tạo.
+
+461
+00:34:53,130 --> 00:34:54,690
+Nó nhiều playlist quá, nó tràn hông dưới.
+
+462
+00:34:56,190 --> 00:35:05,130
+Hôm, đổi tạm với cái kia, tin 3 phút bí ẩn kia, đổi nữa đi.
+
+463
+00:35:07,410 --> 00:35:07,670
+Đấy.
+
+464
+00:35:09,030 --> 00:35:09,310
+Đó.
+
+465
+00:35:10,190 --> 00:35:12,590
+Rồi, add vào cái SingularStory, đấy là ok mà.
+
+466
+00:35:14,230 --> 00:35:15,730
+Đấy là mình lấy ví dụ mà, đâu rồi?
+
+467
+00:35:17,350 --> 00:35:18,530
+Không có, rồi, cứ lấy mới lấy đi.
+
+468
+00:35:19,190 --> 00:35:20,250
+Được rồi, xong đã, xong đã.
+
+469
+00:35:21,350 --> 00:35:23,070
+Rồi, kéo xuống dưới, chưa xong, kéo xuống dưới.
+
+470
+00:35:23,510 --> 00:35:26,010
+Nội dung của tôi không dành cho trẻ em là thứ nhất này.
+
+471
+00:35:26,190 --> 00:35:35,380
+Thứ hai là nội dung đã bị chỉnh sửa. Cái này anh em làm dạng AI nên tích vào nhé. Không là nó bị Reused đấy. Tích vào có. Rồi kéo trong dưới.
+
+472
+00:35:35,380 --> 00:35:44,560
+Cho phép khai thác rồi. Cái phần này nó cứ mặc định như vậy thôi. Rồi xóa cái khai thác mặc định như thế đi. Với đây nó không có. Tiếp theo
+
+473
+00:35:44,560 --> 00:35:53,750
+kéo trong dưới nữa. Ngôn ngữ phụ đề. Cái này quan trọng này. Ngôn ngữ video thì chúng ta sẽ chọn là ngôn ngữ video của mình. Đó là tiếng Anh và Mỹ.
+
+474
+00:35:53,750 --> 00:35:55,310
+English, United States.
+
+475
+00:35:56,770 --> 00:35:58,510
+Rồi, tiếng Anh Hoa Kỳ, đây là tiếng Việt.
+
+476
+00:35:58,850 --> 00:36:00,850
+Chứng nhận phụ đề, chọn vào chứng nhận phụ đề.
+
+477
+00:36:02,310 --> 00:36:05,450
+Nội dung này chưa bao giờ được phát sóng trên truyền hình ở Hoa Kỳ là ok.
+
+478
+00:36:05,790 --> 00:36:06,230
+Cái bên trên.
+
+479
+00:36:07,490 --> 00:36:09,070
+Đó, rồi kéo hông dưới tiếp.
+
+480
+00:36:10,290 --> 00:36:12,330
+Vị trí video anh em có thể để hoặc không nhá.
+
+481
+00:36:12,990 --> 00:36:18,190
+Nếu như mình muốn target nhanh trực tiếp vào Hoa Kỳ, thì để United States là ok.
+
+482
+00:36:19,870 --> 00:36:21,490
+Danh mục, chúng ta chọn danh mục.
+
+483
+00:36:23,750 --> 00:36:30,470
+Giải trí đúng không? Entertainment đúng không? Hay people, vlog. Check lại bảng.
+
+484
+00:36:33,750 --> 00:36:37,930
+Ok, Entertainment là giải trí. Được rồi. Xong. Upload video.
+
+485
+00:36:42,650 --> 00:36:45,930
+Rồi, tiếp theo. Đây là phần cài kiếm tiền này.
+
+486
+00:36:48,590 --> 00:36:52,130
+À, kênh này đang trong net đúng không? Ok, kênh này lâu lắm không làm rồi.
+
+487
+00:36:52,130 --> 00:36:54,510
+Tiếp theo, rồi kiểm tra, tiếp theo.
+
+488
+00:36:55,670 --> 00:36:56,930
+Mức độ phù hợp kéo xuống cuối cùng.
+
+489
+00:36:57,070 --> 00:37:01,530
+Cái này, có kênh này bán kiếm tiền sẵn thì mình cài này cho anh em xem luôn.
+
+490
+00:37:01,910 --> 00:37:09,510
+Không chứa các nội dung nào ở trên, có nghĩa là mình không chứa các nội dung liên quan đến súng ống này, bạo lực này, mọi thứ này.
+
+491
+00:37:09,510 --> 00:37:11,010
+Thứ này, thì mình làm nội dung sạch
+
+492
+00:37:11,010 --> 00:37:13,950
+Mình xác nhận như vậy để YouTube nó duyệt cho mình xanh tiền
+
+493
+00:37:13,950 --> 00:37:15,610
+Đấy rồi, tiếp theo
+
+494
+00:37:15,610 --> 00:37:18,250
+Gửi thông tin đánh giá kìa
+
+495
+00:37:18,250 --> 00:37:18,950
+Gửi thông tin đánh giá
+
+496
+00:37:18,950 --> 00:37:20,490
+Đó, xong tiếp theo
+
+497
+00:37:20,490 --> 00:37:23,050
+Rồi
+
+498
+00:37:23,210 --> 00:37:23,530
+Tiếp theo.
+
+499
+00:37:25,170 --> 00:37:25,790
+Kiểm tra.
+
+500
+00:37:25,970 --> 00:37:26,250
+Rồi.
+
+501
+00:37:26,610 --> 00:37:27,230
+Chế độ hiển thị.
+
+502
+00:37:27,470 --> 00:37:28,270
+Cứ để không công khai.
+
+503
+00:37:30,570 --> 00:37:31,550
+Không công khai là được.
+
+504
+00:37:32,550 --> 00:37:32,790
+Rồi.
+
+505
+00:37:32,870 --> 00:37:36,530
+Ok.
+
+506
+00:37:36,990 --> 00:37:41,310
+Vậy là đã xong toàn bộ quy trình từ việc mình triển khai một content,
+
+507
+00:37:41,310 --> 00:37:47,550
+ý tưởng, nghiên cứu, triển khai content, xong đến phần mình chỉnh sửa video, xong đến phần mình upload lên kênh.
+
+508
+00:37:48,570 --> 00:37:57,470
+Mình sẽ có một cái phần nữa sau đó, đó là một câu hỏi đặt ra rất nhiều anh em là, khi có video, ăn view rồi thì làm thế nào để phát triển tiếp?
+
+509
+00:37:58,510 --> 00:38:01,670
+Và làm thế nào để bắt trend? Anh em có quan tâm vấn đề này không ạ?
+
+510
+00:38:03,790 --> 00:38:06,150
+Hello? Hello?
+
+511
+00:38:07,970 --> 00:38:10,850
+Ok, anh em quan tâm thì mình sẽ chia sẻ nốt.
+
+512
+00:38:11,310 --> 00:38:12,310
+Còn không thì thôi.
+
+513
+00:38:14,990 --> 00:38:15,550
+Có quan tâm không ạ?
+
+514
+00:38:17,170 --> 00:38:18,730
+Ok, xin mời slide tiếp theo.
+
+515
+00:38:20,550 --> 00:38:23,450
+Cái phần này là phần rất là ngắn nhưng mà phần cực kỳ quan trọng về mặt tư duy.

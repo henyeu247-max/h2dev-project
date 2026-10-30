@@ -1,0 +1,500 @@
+Rồi, em chào tất cả các anh chị nha. Thì video hôm nay em share cho mọi người cái ngách đang cực kỳ là trend ở bên thị trường US này nha.
+Và sẽ hướng dẫn cho mọi người làm hoàn toàn bằng con Claude AI nha.
+Đây, mấy bác xem video đầu tiên của họ là 12 ngày trước và được 4 triệu view. Và những video sau là cũng vậy, rất là cao view luôn.
+Đấy, 11 giờ trước này. Lúc em quay là hôm thứ ba nha mọi người.
+Thì thứ tư em mới có thời gian để bình luận và edit để up cho mấy bác xem được.
+Mấy bác đã xem qua cái video mà em nói về cái chỉ số VPH á, thì mấy bác sẽ thấy được cái chỉ số này rất rất là cao nha, có nghĩa là đang rất rất là trend đấy.
+Ngách này thì nói là về dạng What-If nha mọi người.
+Thì What-If có nghĩa là nếu như... nếu như một cái gì đó đấy. Thì cái dạng này nó cũng là dạng hoạt hình người que thôi mấy bác ạ.
+Mấy bác nhìn là mấy bác cũng biết mà. Nhưng mà đang rất rất là trend nha.
+Thì em sẽ hướng dẫn mọi người dùng con Claude tạo ra những cái hình ảnh video này, và cũng là nhờ nó edit luôn.
+Đấy, không dùng một chút nào là CapCut luôn nha, không đụng tới CapCut luôn nha.
+Ở trong video này thì em hướng dẫn hoàn toàn bằng làm bằng con Claude luôn nha mọi người.
+Thì nói chung mỗi ngách và mỗi cách làm nó rất là đa dạng, nói chung là nhiều cách làm lắm mọi người ạ.
+Nên là em có cái gì thì em hướng dẫn hết cho mấy bác, rồi mấy bác cứ tham khảo rồi mấy bác thích thì chọn làm thôi.
+Đây, đây là thị trường Hoa Kỳ và họ dùng kênh cổ 2022 này.
+Đấy, 14 video và hơn 6 triệu view, thật sự rất là kinh khủng nha.
+Giờ em sẽ dịch cái tiêu đề ra để cho mọi người có thể rõ hơn nữa nha.
+Đây, cái video đầu tiên là nói về: Điều gì sẽ xảy ra nếu thời gian phản xạ của bạn nhanh hơn gấp 10 lần này.
+Video thứ hai là: Điều gì sẽ xảy ra nếu một giây trôi qua mà bạn cảm nhận như 10 giây này.
+Đấy: Điều gì sẽ xảy ra nếu một giây trôi qua cảm giác như cả một đời này.
+Thì nói chung mấy bác như vậy mấy bác có thể thấy cái từ khóa ngách hình dung ra được là đó chính là What-If.
+Là điều gì sẽ xảy ra đấy mọi người. Nếu bạn á.
+Đấy thì cái dạng này á thì nó không đơn thuần là một cái video giải thích khoa học đâu mấy bác ạ,
+mà nó như là một cái phim hoạt hình ngắn có cái cốt truyện nha.
+Đấy, nó có cốt truyện từ đầu đến cuối hết nha mọi người.
+Thì tí nữa vào chi tiết làm thì em sẽ cho mấy bác thấy được nó sẽ ra được những cái chủ đề kịch bản rất là hay nha.
+Đây em sẽ vào một video bất kỳ, em chiếu qua cho mọi người thấy được trước đã.
+Every drop, and found something else.
+Your brain was still speeding up every single day.
+Và cái dạng này á thì nó cũng có một cái rất đặc biệt nữa là nó không đơn thuần chỉ là một người dẫn chuyện, cái giọng của một người đâu nha mấy bác,
+mà nó là gồm rất là nhiều giọng của các nhân vật luôn nha. Đấy, thì tí nữa vào chi tiết em sẽ hướng dẫn mọi người làm hội thoại,
+cái kiểu như là rất là nhiều giọng ở trong một video á, có nghĩa là gọi là hội thoại nha mọi người, chứ không phải là người kể chuyện, người dẫn chuyện không đâu,
+mà có các nhân vật khác nữa nha. Đấy, em sẽ hướng dẫn mọi người chi tiết luôn. Đây như em vừa xem thì nó cũng hiện ra một kênh đối thủ khác này mọi người.
+Đây, em bấm vào cho mấy bác xem luôn. Đấy, mọi người thấy không? What-If này.
+Kênh này cũng hoàn toàn mới luôn, kênh này sau kênh kia luôn mọi người ạ.
+Đấy, 10 ngày trước này.
+Trên 100k view hết này.
+Đấy, view rất rất là cao luôn.
+Thì mọi người có thể tham khảo thêm những cái kênh này nha.
+Hoàn toàn toàn là những cái kênh mới thôi mọi người, bởi vì cái ngách này đang rất rất là trend nha.
+Thì mấy bác cũng có thể đem về nhân bản thị trường nha, cái đó thì tí nữa em nói sau mọi người ạ.
+Rồi, để làm được những cái dạng video như này á thì đương nhiên là sẽ có những cái prompt và skill rồi đúng không?
+Thì ở video này em cũng đã soạn sẵn, train sẵn hết, làm hết cho mọi người rồi.
+Đầu tiên là sẽ có những skill, những cái tool dựng video này, edit video đấy mọi người, và những cái phần âm thanh này.
+Âm thanh này là những cái hiệu ứng âm thanh để khi con Claude nó edit video á thì nó sẽ tự thêm vào.
+Và những âm thanh này á, đây âm thanh nền nữa nha mấy bác, thì những âm thanh này á là không phải em tải về đâu nha,
+mà là em đã train con Claude nó tự cho ra luôn,
+và hoàn toàn là miễn phí và hoàn toàn là không bản quyền nha.
+Đấy, em cho mấy bác nghe qua một số đoạn. Đây đây chính là cái âm thanh hiệu ứng này.
+Đấy, cái file này là nó tổng hợp vào nha mọi người.
+Còn ở trong cái thư mục, còn ở trong thư mục kia thì nó đã tách ra mỗi cái hiệu ứng âm thanh khác nhau ấy.
+Đó, thì nói chung là hoàn toàn là con Claude...
+con Claude nó cho ra hết nha, em đã train hết rồi mọi người, chứ không phải là em tải ở trên mạng hay đâu về đâu nha.
+Đấy, cái hiệu ứng nó rất rất là hay và mình không lo bị bản quyền nữa.
+Và khi con đã có được rồi thì con Claude nó edit cho mình luôn.
+Còn cái file WhatIf-Skills.zip này thì em đã nén hết tất cả các skill và tài nguyên ở trong cái folder... (he packaged them into the zip; "giải nén" = unzip)
+nói chung là cái tài nguyên của cái dạng này cho mọi người rồi. Để em sẽ để dưới mô tả cho mấy bác tải ha.
+Và có cả cái file hướng dẫn dùng nữa, mọi người cứ yên tâm. Rồi, bây giờ để đầu tiên mà làm được á thì mấy bác sẽ add cái folder vào nha.
+Ví dụ như em đã add rồi này, em sẽ hướng dẫn mọi người add lại luôn, kiểu như cái folder cái dự án của mọi người á.
+Đây, mọi người bấm Add folder này.
+Đấy, ví dụ như mấy bác tạo một cái thư mục tên là whatif, và mọi người đã bỏ hết tất cả các cái tài nguyên mà em để ở mô tả á,
+mấy bác tải về giải nén vào trong cái thư mục đó, rồi mọi người add cả cái thư mục vào nha. Rồi sau đó mọi người...
+Đương nhiên mấy bác sẽ tải hai cái skill... hai cái skill viết kịch bản và edit video rồi đúng không?
+Hai skill đó nó nằm trong cái file .zip đấy, mấy bác giải nén ra rồi mấy bác đẩy lên con Claude nha. Cái này thì mọi người đều biết hết rồi.
+Đấy, nên là em không nói lại cái chỗ đẩy lên nữa. Mà bây giờ em sẽ gọi luôn cái skill là script-whatif-en này.
+Đấy, cái này là sẽ viết kịch bản nha. Em sẽ ghi dấu xuyệt ra rồi em enter phát thì nó sẽ tự động đọc qua cái danh sách trên YouTube những cái kênh đối thủ ấy mọi người.
+Đấy, và những cái dạng nào làm rồi thì nó sẽ né ra nha.
+Rồi, đó, bây giờ thì nó sẽ đề xuất những cái dạng mới, những cái chủ đề hoàn toàn là trend và mới khác biệt so với đối thủ luôn nha mọi người. Đấy.
+Và nó cũng sẽ có những cái gợi ý cho mình là nên chọn nên làm những cái chủ đề nào này.
+Đấy, mấy bác thấy không? Rất rất là nhiều cái hay luôn. Cái dạng ngách này thì rất là mới nên là mình không cần phải đi kiểu như đi bám theo đối thủ về kịch bản đâu mọi người ạ.
+Cái này thì mình để cho con Claude nó tự sinh ra luôn, nó đề xuất ra luôn thì sẽ ok hơn nha.
+Còn mình đi học là học cách edit của họ thôi mọi người ạ.
+Đấy: "Mình khuyên bạn nên là chọn chủ đề 1 hoặc 2 này".
+Đấy, nó có lời khuyên hết đấy. Nó bảo chủ đề 1 hoặc 2 là nó sẽ bám theo cái dạng cái khung cùng với cái khung video cao view nhất là 4 triệu view này mọi người thấy không?
+Đấy, là đầu tiên nó sẽ bám theo những cái mà cao view nhất của đối thủ là rất là đúng với cái ý mình rồi đúng không mọi người?
+Đấy, nên là nói chung em train rất là đầy đủ rồi. Giờ thì mình chỉ còn việc là chọn cái chủ đề, ví dụ ghi số 1 rồi mấy bác enter thôi thì nó cũng sẽ ghi ra,
+và tự động lưu hết những cái file, cái output, những cái file kịch bản, những cái hướng dẫn làm prompt này kia vào bên trong cái thư mục...
+tạo một cái thư mục mới có tên dự án là video này luôn nha. Đấy, để bây giờ em làm cho mấy bác sẽ hiểu. Em ví dụ em chọn chủ đề 1 nha.
+Đấy. Đây ví dụ bây giờ em chọn chủ đề 1. Thường thì mấy bác gõ số 1 mấy bác enter thôi nó cũng ra,
+nhưng mà bởi vì em làm hướng dẫn cho mọi người để mọi người hiểu rõ chi tiết á,
+nên là em sẽ ghi cụ thể ra ở dưới này nha. Em sẽ chọn chủ đề 1
+và em dán luôn cái...
+cái tiêu đề vào luôn này. Đó.
+Rồi, thì tiếp theo là chọn cái nhân vật, muốn cái nhân vật chính của mình là mặc áo... mặc áo màu gì á mọi người, mặc áo hoodie nè.
+Thì em sẽ ghi là màu đỏ luôn, cho nó giống đối thủ luôn nha. Còn cái này thì mấy bác nếu làm thì tùy ý mọi người thôi.
+Em làm demo hướng dẫn nên em sẽ chọn màu đỏ cho nó nổi bật nha mọi người.
+Đấy, bây giờ thì chỉ còn việc đợi nó gen ra kịch bản thôi nha. Bây giờ thì nó sẽ đọc qua toàn bộ cái folder của mình,
+bên trong cái thư mục của mình, đọc qua các cái skill, prompt này kia rồi nó sẽ viết cái kịch bản cho mình nha.
+Hiện tại thì em đang dùng cái model Sonnet để viết kịch bản nha mọi người.
+Bởi vì cái model cao nhất của nó là Opus nha mọi người.
+Còn cái Sonnet thì nó sẽ tiết kiệm token hơn nha.
+Anh em nào mà dùng gói Max á thì anh em dùng Opus cũng được.
+Còn anh em nào mà dùng gói Pro á thì mọi người dùng Sonnet thôi nha.
+Đấy, em giải thích qua tí để có nhiều bác thắc mắc không biết nên chọn gói nào á. Thì nói chung mọi người làm bình thường làm không nhiều á thì mấy bác cứ dùng gói Pro cho em là dư sức rồi.
+Rồi, sau khi chờ đợi vài phút thì cuối cùng nó đã viết xong, hoàn thành xong cái phần viết kịch bản và cho ra cái prompt tạo ảnh này kia rồi nha mọi người.
+Thì đương nhiên nó sẽ không có hiện ra những cái file ở trên cái giao diện Claude này, mà lúc nãy mọi người nhớ là em có add cái folder phải không?
+Thì bây giờ nó đã tạo một cái thư mục mới và nó đã lưu hết tất cả những cái tài nguyên tài liệu vào ở trong cái thư mục rồi.
+Nó tự động tạo một cái thư mục tên là ghi về cái chủ đề mà mình làm đấy mọi người,
+vào trong cái thư mục project nha. Đấy, và nó sẽ tạo sẵn ra cho mình những cái thư mục rỗng là voice, ảnh này kia luôn, có hết nha.
+Còn đây là những cái số liệu chính mà khi nó gen ra này. Thì mấy bác cái này mấy bác có thể đọc sơ qua nha.
+Bây giờ thì em sẽ mở cái thư mục lên nha. Đây, đầu tiên thì em sẽ vào cái whatif của em này đúng không?
+Sau đó em sẽ đi vào bên trong cái project này. Đây, cái đầu tiên là cái dự án demo của em làm trước đó thôi. Đây, cái dự án của mình thứ hai này chính là cái chủ đề em vừa làm này.
+Đó, và tất cả những cái đây thì nó đã vừa tự động gen ra cho em đấy. Thì đầu tiên sẽ có một file 01-SCRIPT. Đây là full cái kịch bản của mình nè mọi người ạ.
+Đấy, đây là phần full về kịch bản nha, khoảng tầm 8 phút nha mấy bác. Cái dạng này video trung bình tầm 8 phút thôi.
+Và cái phần thứ hai đó chính là... cái này có nghĩa là mấy bác không cần quan tâm đâu,
+cái này để nó chú thích và để khi nó edit và nó gen nó tự học thôi mọi người. Cái đó thì mấy bác không quan tâm nha.
+Đấy, hai cái trên là mình không quan tâm đâu. Cái quan tâm là cái file thứ ba này, file 02-VOICE kịch bản DGT này mọi người ạ.
+Đấy, cái file này thì mấy bác là chính để dùng để khi đi tạo voice nha, tạo giọng đọc. Đấy, như kênh đối thủ lúc nãy em cũng có nói rồi mọi người có thể tự nghe qua nha.
+Mọi người tự xem video của đối thủ là mấy bác sẽ rõ được, nó có rất là nhiều cái giọng khác nhau của các nhân vật nữa, chứ không phải là chỉ một giọng đâu.
+Và trước giờ em cũng hướng dẫn nhiều cho mọi người là làm một giọng rồi, thì sẵn đây thì em hướng dẫn mọi người cách làm hội thoại luôn.
+Thì ví dụ như #4 này là cái giọng đọc 4 này, #5 là cái giọng đọc người số 5, #6 là giọng đọc nhân vật thứ 6. Đấy, và hiện tại cái kịch bản này là có 6 giọng đọc nha.
+Đấy, nên là nó chú thích cho em là #6. Đấy, em nói qua để cho mấy bác hiểu trước thôi. Và tiếp tục là cái file 02-VOICE-beat-map này,
+thì cái này thì nó cũng chú thích để cho nó tự học thôi, mấy bác không cần quan tâm. Và cái file 03 này, mọi người cũng không cần quan tâm cái shot list đó.
+Cái mọi người quan tâm tiếp theo là cái file 04 này, cái file prompt đây. Cái này là phải cực kỳ là quan tâm và cái này là đặc biệt quan trọng nha mọi người.
+Trong này thì nó sẽ có các cái prompt để mình đi tạo ảnh, tạo nhân vật và tạo video nha.
+Đấy, và em tóm tắt lại là hai cái cần mình chú ý và quan tâm là chỉ hai file này thôi:
+File 02-VOICE-...-DGT để tạo giọng đọc và cái file 04-PROMPTS thôi, còn lại tất cả là chỉ để mọi người tham khảo thôi,
+và để con Claude nó kiểu như nó học cách làm thôi mọi người khi mà mình train thôi. Đấy, em nhắc lại nhắc đi nhắc lại là mấy bác chỉ cần việc quan tâm hai cái file này thôi.
+Thì cái file 02-VOICE kia thì mấy bác để ý để import đi tạo giọng đọc thôi chứ cũng không cần quan tâm gì mấy đâu.
+Cái mình quan tâm là cái file 04-PROMPTS này thôi nha mọi người. Đấy.
+Cái ở dưới là cái hướng dẫn này, đấy thì có hướng dẫn đầy đủ hết để mấy bác có thể nhìn theo mà mấy bác làm cũng được.
+Đây là cây thư mục này, chú thích lưu ở đâu,
+rồi ở dưới là hướng dẫn tạo voice này, tạo giọng đọc, và cách để đi làm ảnh nhân vật và đi làm bối cảnh ảnh này kia video.
+Thì nói chung bây giờ đương nhiên mọi người nhìn vào thì sẽ thấy hơi loạn một tí,
+nhưng mà yên tâm là bây giờ tí nữa sẽ đi vào chi tiết chỗ nào thì em sẽ giải thích rõ chỗ đó để cho mọi người hiểu qua nha. Đấy, nên là mấy bác cứ yên tâm.
+Ví dụ như cái phần nhân vật này thì nó có 8 ảnh nhân vật này. Đấy, thì tí nữa mình sẽ đi tạo cứng 8 cái ảnh nhân vật này trước nha. Tùy mỗi chủ đề mỗi khác nhau nha mấy bác,
+chứ không phải là cái chủ đề video nào nó cũng đủ hết 8 nhân vật như này đâu, có chủ đề thì chỉ 5 hoặc là 6 nhân vật thôi. Đấy, 6 nhân vật chính đấy mọi người.
+Đây, em mở cái file... em sẽ mở cái file hướng dẫn cho mấy bác xem nha. Đây thì cái phần này nó nói là gen 8 ảnh character ở mục A này, và ở dưới là có cái mô tả các nhân vật đầy đủ.
+Và sau đó mình gen xong rồi mình sẽ lưu vào cái thư mục là CHARS này, và đồng thời là lưu trong cái thư mục series nữa.
+Thì nói chung là tí nữa để em lưu cho mấy bác thấy nha.
+Bởi vì mình lưu vào trong đó bởi vì những cái này là nhân vật chính nha.
+Sau những cái tập mà những cái chủ đề sau á, ví dụ như mình làm có cùng nhân vật á thì mình cũng không cần gen lại nữa,
+mà con Claude nó sẽ tự động lấy luôn những cái ảnh cũ nha.
+Còn tiếp theo ở dưới này là có gồm 8 cái ảnh LOC này,
+8 ảnh này có nghĩa là 8 cái khung hình các cái bối cảnh khác nhau nha mọi người.
+Thì bắt buộc mấy bác cũng phải gen ra 8 ảnh này. Và ở dưới này nó có chú thích này: Lưu ý là mọi người nên gen cái ảnh cái LOC-06 và cái LOC-07 cho nó chỉn chu,
+bởi vì hai cái phần này quan trọng nhất là dùng cho nhiều ảnh sau này. Đấy, thì nói chung cụ thể ra sao thì tí nữa em làm mấy bác sẽ rõ nha.
+Đấy, đơn giản vậy thôi. Còn áo hoodie màu đỏ là màu bạn chọn này, vì đối thủ nó cũng màu đỏ nên là bây giờ nó làm cho tô đậm hay tươi hơn này kia thôi.
+Đấy, bởi vì lúc nãy em ghi là màu đỏ đấy mấy bác.
+Tiếp tới ở dưới bước 2 là về ảnh cảnh này. Thì cái phần này là nhiều ảnh nhất nha, gen nhiều ảnh nhất nha mấy bác.
+Như cái chủ đề hiện tại này là cái phần này gồm 74 ảnh nha, thì mình cũng phải gen hết 74 ảnh, từ ảnh I001 đến I074.
+Đấy, ở dưới là prompt dành cho video. Thì ok, những cái này thì đi vào chi tiết em sẽ giải thích rõ hơn,
+chứ bây giờ nói thì mấy bác sẽ hơi khó hiểu đấy.
+Rồi, đầu tiên thì em sẽ đi tạo nhân vật là em sẽ copy cái prompt này nha.
+Em sẽ mở con Google Flow lên. Cái này thì mấy bác biết rồi đúng không?
+Em sẽ chỉnh lại cái hình ảnh này, kích thước khung hình này, và em sẽ chọn là gen ra 4 ảnh nha. Bởi vì gen ra 4 ảnh như vậy để mình có nhiều cái sự lựa chọn hơn, cái nào ok thì mình chọn nha mọi người.
+Tiếp theo là nhân vật thứ hai. Đấy, cái này thì khá đơn giản, mấy bác chỉ cần việc copy cái prompt rồi mọi người qua gen thôi.
+Tiếp tục cái thứ ba là cái Mom này, character Mom là người mẹ mọi người.
+Tiếp tục cái thứ tư này, em copy dán vào thôi, đợi nó gen ra. Đấy.
+Thì đây nó đã gen ra: cái prompt ở đầu tiên, prompt 2, prompt 3, prompt 4.
+Mọi người xem qua các nhân vật người que đồng nhất rất là đẹp và đúng chuẩn phong cách hoạt hình What-If luôn nha.
+Giờ em sẽ tiếp tục copy các prompt nhân vật tiếp theo để gen đầy
+đủ trọn bộ 8 nhân vật này vào thư mục dự án cho mấy bác xem.
+04, 05, 06, 07, 08... đấy.
+Tất cả đủ hết 8 nhân vật nha. Và bây giờ thì em sẽ lựa chọn ra một trong những cái ảnh nét nhất của các prompt này em lưu lại thôi mọi người.
+Đấy. Đó đó là cái phần về nhân vật nha.
+Bây giờ thì em giả bộ em sẽ chọn cái này đi, em sẽ tải về em lưu luôn.
+Đấy, cái nhân vật này mình phải ảnh nét đúng không? Nét rõ chi tiết rồi thì em sẽ tải về thôi.
+Rồi em sẽ copy cái tên nhân vật nha, mọi người lưu ý là đặt đúng tên nha.
+Và mọi người bỏ đúng vào trong cái thư mục nó hướng dẫn nha, như đây hiện tại nó bảo em bỏ trong thư mục này đúng không, thì em sẽ đặt tên và bỏ đúng trong cái thư mục đó.
+Để khi mà mọi người, khi mà nó edit á thì nó sẽ làm được nha mấy bác, nó sẽ làm theo cái format đó.
+Chứ mọi người đừng có lưu ở chỗ khác nha.
+Rồi tiếp theo cái ảnh thứ hai cũng tương tự thôi, mọi người tải về nè.
+Rồi mấy bác lưu tên nhân vật vào, đấy đặt cho đúng nha mọi người.
+Thì đối với hiện tại là em đang dùng cái gói Ultra thì tải về nó không có cái logo, nhưng mà mọi người dùng gói Pro hay là Plus gì cũng được nha.
+Em đã train cái dạng này rồi, khi mà edit á thì mấy bác sẽ bị xóa, bị che cái logo... cái logo Flow với cái logo... nói chung là che đi cái logo ngôi sao ở dưới góc,
+ở góc bên phải ở dưới mọi người, nên là các bác cứ yên tâm là mọi người không cần phải là xóa logo hay gì đâu. Như vậy thì nó sẽ mờ cái ảnh của mọi người đi.
+Mọi người dùng tool xóa thì nó sẽ vỡ cái ảnh của mấy bác. Nên là bác cứ tải về, mọi người làm ở dạng này cứ tải về đi.
+Khi edit thì cái skill edit nó đã che hết rồi, đấy. Em đã train thật sự rất rất là kỹ và giống đối thủ luôn nha.
+Cái khung hình màu đen che á thì nó giống đối thủ luôn. Tí nữa ra thành quả thì em sẽ cho mọi người xem.
+Rồi như vậy thì em đã vừa tải gen xong 8 cái ảnh rồi đúng không?
+Và bây giờ em làm theo hướng dẫn, đồng thời
+sẽ lưu sang một cái thư mục này nữa nè. Em sẽ chọn hết 8 ảnh đúng không?
+Em bấm phím là Ctrl + C hoặc là mọi người bấm sao chép nha. Rồi em sẽ đi ra theo cái thư mục này. Đó, đấy làm đúng theo cái hướng dẫn của nó.
+Em sẽ tạo thêm một cái thư mục là Hear10X này nha mấy bác. Đấy mấy bác thấy không? Nó hướng dẫn nè, nên là mình sẽ làm theo luôn.
+Để bữa sau này mình mà làm những cái tập, những cái video tiếp theo á mà nó có cùng với cái dạng nhân vật á thì nó sẽ dùng những nhân vật này đồng bộ cho cái kênh mình luôn nha.
+Mọi người để ý cái kênh đối thủ á, mọi người thấy không, nhiều video có nhân vật chính
+chỉ là một nhân vật chính đó thôi, nó không có thay đổi về cái ngoại hình nha. Đấy,
+đó là lý do là mình sẽ làm như vậy để cho nó đồng bộ cho cả kênh mình nha mọi người.
+Rồi, tiếp theo thì sẽ gen tiếp những cái hình ảnh LOC nè. Hình ảnh LOC này có nghĩa là những cái bối cảnh khung hình, ví dụ như phòng ngủ nè, phòng khách hay là sân khấu này kia mọi người. Đấy.
+Thì bây giờ tiếp tục em sẽ copy cái prompt,
+em sẽ ra con Flow này em sẽ dán vào làm tiếp ha. Vẫn là setting như này nha mọi người. Đấy.
+Em sẽ chọn 4 ảnh luôn để mình có nhiều sự lựa chọn nha.
+Bởi vì mình gen hình ảnh này nó không có tốn credit nha mấy bác, nên là mấy bác cứ gen thoải mái thôi, đấy.
+8 cái thì em sẽ tua nhanh luôn nha mọi người.
+Thật sự để mà làm ra được cái skill cái prompt hot như này thì em tốn hơn 3 ngày đấy mấy bác ạ, chứ không nhanh được đâu nha.
+Train rất là kỹ, rất là nhiều thứ, test đi test lại nữa.
+Em làm demo nữa chứ không phải là đơn thuần một phát là nó ra được liền đâu mấy bác ạ. Bởi vì cái dạng này thì thật sự rất là khó.
+Đến cả cách edit thì đối thủ thì em không biết là họ dùng AI kết hợp với edit thủ công này kia hay không, kiểu như họ học qua các cái khóa học vẽ 2D, 3D này kia mấy bác, đấy.
+Còn em thì em sẽ dùng con Claude em train nó, em cho làm luôn. Đấy, còn chất lượng như nào thì mấy bác sẽ tự đánh giá nha.
+Còn rồi là mấy bác có thể áp dụng thôi, phụ thuộc vào nhu cầu của mọi người.
+Bởi vì nếu mà mấy bác có kiểu như không có thời gian để edit, làm edit được hay là không biết edit, không có thời gian edit á mọi người, đấy thì bác áp dụng cho con Claude edit thôi.
+Mình muốn làm nhưng mình không biết edit thì mình chấp nhận cho con AI nó edit thôi mọi người, đấy.
+Rồi thì đây là những cái ảnh mà bối cảnh em vừa gen xong nè, bây giờ em cũng sẽ lưu lại.
+Và đương nhiên em cũng sẽ ra copy cái tên nè, ví dụ như ảnh đầu tiên là LOC01 đúng không?
+Thì mấy bác phải nhớ là copy chính xác nha,
+và mình sẽ lưu vào trong cái thư mục LOC luôn nha mọi người,
+và đặt cái tên LOC01.
+Rồi tương tự những ảnh sau cũng là LOC02, LOC03 đấy,
+đến khi nào mà xong thôi.
+Em tua qua cái đoạn lưu này nha,
+và cuối cùng thì em cũng đã lưu xong 8 cái ảnh LOC rồi.
+Và bước tiếp theo thì sẽ quay lại với cái phần prompt của mình,
+và mình sẽ đi tạo tiếp những cái hình ảnh tiếp theo là về phần ảnh cảnh này.
+Cái phần này là tạo và lưu trong cái thư mục img nha.
+Và cái phần này là nhiều ảnh nhất nha mấy bác.
+Như cái chủ đề này á thì nó sẽ gồm 74 ảnh nha.
+Và em quay lại với cái file hướng dẫn nè.
+Đây, ở đây nó cũng có hướng dẫn nè, em sẽ giải thích cho các bác thấy chi tiết.
+Đầu tiên thì nó nói mình dùng Flow nè,
+và bước hai
+về ảnh cảnh là từ I001 tới I074. Mỗi prompt có các cái dòng là REF.
+Cái dòng này có nghĩa là nó sẽ chú thích cho mình là chọn những cái ảnh tham chiếu vào để cho nó gen.
+Thì cụ thể như thế nào thì bây giờ em sẽ làm cho mấy bác thấy nha. Đầu tiên cái ảnh I001, ảnh 01 nha, mọi người sẽ
+thấy những cái dòng này đầu tiên trước đúng không, mọi người không quan tâm nha.
+Đấy, cái khung ảnh thì mọi người không quan tâm và mọi người quan tâm là cái REF phía sau này, cái chú thích này.
+Đây đây đây, cái ngoài cùng nha, còn cái chính giữa này thì mấy bác đừng quan tâm chi.
+Đấy cái mọi người quan tâm là cái REF CH-MOM, LOC-02 này. Đó ví dụ như cái prompt cái ảnh đầu tiên là như vậy nha. Rồi bây giờ em sẽ quay lại với cái phần con Flow này.
+Mọi người bấm vào dấu cộng giúp em nha. Bây giờ thì mấy bác có thể chọn ảnh bên đây cũng được nhưng mà cái này thì nó theo các cái tên của nó theo cái prompt của mình rồi
+nên là mình rất khó, rất khó để lựa chọn đúng không? Rất là bị loạn mà mình không nhớ được những ảnh nào. Thì mấy bác bấm vào dưới này tải lên,
+mình sẽ tải lên tất cả các cái ảnh mà lúc nãy mình đã lưu theo tên đấy mấy bác,
+để mọi người có thể dễ nhìn, mọi người nhìn một phát là biết cái ảnh tên gì luôn, đấy.
+Ví dụ như đây, các ảnh nhân vật đúng không, em sẽ tải lên, nó có đều các cái tên nè: CH-HERO, CH-MOM, CH-NOAH... nói chung là có hết các cái tên rồi, đấy.
+Và tiếp theo là cái phần là ảnh LOC-02 nữa đúng không? Thì em sẽ tải thêm cái thư mục LOC lên.
+Đây, em đợi nó load lên xong rồi đúng không, em sẽ tải tiếp cái thư mục các cái ảnh LOC lên nè. Đây, 8 ảnh thôi. Rồi, đó.
+Bây giờ thì mình đã có đầy đủ hết các cái dữ liệu để mình tham chiếu rồi đúng không? Đợi load một tí nha mọi người.
+Đấy mình đặt cái tên rõ ràng như này thì mình mới dễ nhìn và mình dễ làm được đúng không mọi người?
+Rồi quay lại nè, bây giờ nó REF CH-MOM, LOC-02,
+đó thì bây giờ em sẽ chọn vào cái CH-MOM nè, cái ảnh CH-MOM.
+Rồi, em sẽ Ctrl em di chuột em bấm chuột vào cái LOC-02 này nữa là em sẽ chọn 2 ảnh nha mấy bác.
+Rồi, đấy, em sẽ thêm vào bên trong câu lệnh nha. Đấy mọi người thấy chưa, như này là nó đã tham chiếu xong 2 ảnh nè.
+Quay lại tiếp tục em sẽ copy cái prompt này nữa thôi là xong,
+đấy, copy prompt này nè dán vào.
+Rồi bây giờ thì chỉ công việc gen ra thôi.
+Chỗ này thì em cũng sẽ để 4 ảnh để có nhiều sự lựa chọn hợp lý cho mình thôi. Đơn giản như vậy thôi nha mấy bác.
+Tiếp theo là cái ảnh ví dụ như 02 đúng không? REF CH-HERO nè, LOC-01 đúng không, và cái prompt này.
+Thì em sẽ copy cái prompt này nè, rồi bây giờ thì qua em sẽ chọn với cái nhân vật là HERO, CH-HERO đâu, đây, đúng không? LOC-01 đúng không?
+Tiếp tục Ctrl, giữ Ctrl nè, bấm thêm một cái LOC-01, ảnh LOC-01 này mọi người, đó là mình đã chọn 2 ảnh, dán cái prompt vào.
+Rồi, cứ thế thôi, bây giờ thì em Enter cho nó chạy gen ra. Đó. Và cái prompt đầu tiên, cái ảnh đầu tiên nè mấy bác thấy nó đã gen ra chưa?
+Có nghĩa là nó sẽ kết hợp với cái ảnh nhân cái nhân vật người mẹ và cái bối cảnh là ở cái phòng dưới phòng khách đấy mọi người, đó.
+Nó ra biểu cảm là đang đứng nghe điện thoại nè, mấy bác thấy đỉnh cao chưa? Đấy, đó chính là cái vấn đề về tham chiếu cái chỗ đó nên là mình phải làm thật kỹ và chuẩn xác nha mọi người.
+Đôi khi mình làm sai một cái bối cảnh hoặc là một cái nhân vật á rồi sau đó thì nó sẽ kéo theo sai hết, nên là chỗ này mình làm thật sự là kỹ càng nha, đấy.
+Em giải thích rất là kỹ chỗ này luôn. Đấy, cái ảnh thứ hai cũng vậy nè: nhân vật HERO, nhân vật người con kết hợp với cái phòng ngủ của hắn nè, đấy thì sẽ ra thôi.
+Những cái phòng và những cái ở dưới là lúc nãy là ở trong cái thư mục LOC đấy mọi người, cái bối cảnh đấy. Rồi tiếp theo cái ảnh thứ ba nè nó cũng tương tự nè:
+REF CH-HERO, CH-MOM và LOC-02. À thì cái này là nó sẽ gồm 3 ảnh luôn thì nó gợi ý bao nhiêu thì mình cứ chọn bấy nhiêu thôi mọi người đúng không? Thì bây giờ em quay lại nè, em sẽ chọn vào tải tệp lên,
+em sẽ chọn vào CH-HERO, tiếp tục CH-MOM và LOC-02 đúng không? Đó, quay lại kiểm tra đúng nè, chọn 3 ảnh,
+đấy và em sẽ copy cái prompt này thôi. Đấy rất là đơn giản, mấy bác hiểu được cái quy trình là thật sự rất là đơn giản luôn.
+Rồi bây giờ chuyển việc Enter để cho nó gen ra thôi.
+Tương tự các cái ở dưới cũng vậy nha,
+đấy em giải thích 3 cái đều rất là chi tiết cụ thể rồi,
+rất là dễ hiểu thôi, mấy bác nghe qua là hiểu liền mà.
+Đấy thấy, mọi người thấy nó tạo ra hình rất là rất là đỉnh không?
+Tương tự những cái ảnh sau cũng vậy nha.
+Bây giờ thì em sẽ tua nhanh nha mấy bác.
+Mà ví dụ như đây em đang làm tới cái ảnh chỗ 09 nè, mọi người để ý là cái REF nó gợi ý là không cần đồ họa, không cần nhân vật
+thì có nghĩa là bây giờ mình chỉ công việc copy cái prompt thôi, mình chạy cái prompt thôi nha, mình không cần tải ảnh tham chiếu nào cả nha mọi người, đấy.
+Và đây là toàn bộ những cái mà em
+đã gen ra xong rồi nha mọi người, đấy.
+Em vừa tua qua đấy mấy bác.
+Cái nào mà nó REF nó chú thích là không cần á thì mọi người chỉ cần việc dán prompt và mọi người chạy thôi nha, đấy.
+Tất cả đã xong hết rồi
+thì bây giờ em sẽ tải xuống lưu lại nha, rồi em sẽ bước tiếp theo thì sẽ đi tạo voice, tạo giọng đọc nha mọi người.
+Thì cái chỗ mà tải ảnh này á thì mấy bác cũng lưu ý là mọi người tải ảnh nào thì mọi người nhớ đặt đúng cái tên đó luôn nha,
+đúng với cái tên trong cái file prompt của mình ấy.
+Đây cuối cùng là em cũng tải xong rồi mọi người, mọi người thấy không?
+Phải nói là cái prompt này tạo ra những cái hình ảnh nhân vật và cái bối cảnh rất là chi tiết và rất là đẹp luôn nha mấy bác.
+Rồi, tiếp theo thì mình sẽ đi tạo là video nữa nha mọi người, em quên chứ, chưa tạo video mà đi tạo giọng đọc.
+Sẵn đây thì tiếp là hướng dẫn mọi người tạo video luôn. Ở cái video clip nè,
+ví dụ cái ảnh đầu tiên là C01 này, nó sẽ chú thích là từ ảnh I001 và
+tier là Quality.
+Thì đi vào chi tiết em sẽ giải thích cụ thể cho mọi người nha.
+Từ ảnh 01 này có nghĩa là sao, em sẽ giải thích khi mà làm để cho mấy bác dễ hiểu.
+Đây nè bên này mọi người quay lại cái file hướng dẫn nó cũng có giải thích nè,
+nhưng mà để đi vào cái chi tiết để cho mấy bác dễ hiểu hơn nha, thực chiến cho mọi người hình dung được.
+Rồi bây giờ em sẽ tạo ảnh đầu tiên là với cái I001 này nha, em sẽ copy cái prompt trước nè mọi người.
+Tiếp tục em sẽ quay lại với con Google Flow, bấm vào cái setting và em sẽ chuyển qua video nha,
+bởi vì bây giờ mình dùng video mà, mình làm video mà. Và mọi người nhớ là tích vào cái chọn là khung hình
+và cái chỗ model là Quality nha. Đây, bởi vì lúc nãy nó có bảo mình là chỗ này là model là dùng Quality nè mọi người.
+Và từ ảnh I001 này có nghĩa là mấy bác là cái ảnh bắt đầu nè, mọi người chọn giúp em là ảnh 001 nha.
+Thì lúc nãy là em đã tải về hết rồi đúng không, và những cái tên như này thì đương nhiên mình cũng sẽ tải trong cái thư mục đây, cái thư mục img của mình là 74 ảnh lên đúng không?
+Đấy em sẽ tải lên thôi.
+Giống như cái phần lúc trước ấy mọi người, mình tải lên để mình nhìn cái tên mà mình đã đặt để cho nó rõ chi tiết hơn nha.
+Rồi, đây, đó, đã tải lên đầy đủ hết rồi. Bây giờ thì mình chỉ công việc nhìn vào tham chiếu thôi.
+Ví dụ như đây: ảnh I001 thêm vào câu lệnh nè.
+Mình chỉ là thêm từ ảnh á ở phần bắt đầu thôi nha mấy bác.
+Rồi bước tiếp theo mọi người chỉ cần việc copy cái prompt nè, rồi mọi người đi tạo ảnh thôi.
+Đấy, nó chỉ cần như thế thôi, không cần ảnh kết thúc nha.
+Bên này thì mọi người để 8 giây và set cho cái Quality và chọn 1 ảnh thôi,
+bởi vì cái này nó đốt credit của mọi người rất là căng nha.
+Cái Quality này nó đốt 100 credit trên một video ấy mọi người, đấy nên là các bác làm cân nhắc nha.
+Các cái model khác thì nó sẽ ít hơn, nhưng mà làm gì làm thì những cái video demo đầu tiên á thì mình cũng cần phải chất lượng nha mấy bác, trong cái file hướng dẫn nó cũng có nói rồi ấy.
+Tiếp tục là em đang làm cái video thứ hai nè, em sẽ chọn là cái I002 nha. Đây em sẽ lướt em tìm cái I002.
+Đây, cái ảnh I002 đây đúng không? Thêm vào câu lệnh nè, ảnh bắt đầu nè, chỉ có thế thôi và mình copy cái prompt. Đây,
+đó mấy bác thấy chưa? Và cái title cái gợi ý của cái này nó cũng kêu là Quality đúng không? Thì em sẽ để vẫn để Quality đó thôi, em gen ra. Và đây, video đầu tiên nè mọi người.
+Những cái âm thanh ở trong video á thì mấy bác cũng không cần quan tâm đâu, bởi vì khi nó edit á cái nào không hợp lý là nó sẽ tự động tắt tiếng luôn cho mọi người nha.
+Đó, em train kỹ đến cái chỗ đó luôn rồi nên là mọi người cứ yên tâm, không cần phải lo gì cả.
+Về cái phần video ở cái tập này thì nó có 34, 35 video gì á thì bây giờ em cứ gen thôi mọi người.
+Đấy, tương tự như thế những cái video những cái phần sau nó có những cái chú thích model khác nè, Fast hay là Lite nè thì mấy bác cứ làm theo tương tự thôi.
+Ví dụ như tiếp theo là cái video thứ ba đi,
+nó sẽ chọn là cái ảnh I001 và với cái vẫn là model là Quality đúng không? Vẫn như vậy em chỉ cần việc copy prompt thôi.
+Sẵn đây em hướng dẫn cho mọi người cái mẹo để search nhanh nữa. Ví dụ như ảnh thứ 10 này nó ảnh bắt đầu là I023 đúng không?
+Rồi mọi người bấm bắt đầu nè, mấy bác search ở trên tìm kiếm nè, ghi 23 thì nó ra nó gợi ý nè.
+Đó, rồi mình chọn thôi, cái này là model là Quality, em sẽ dán prompt vào.
+Bởi vì khi mà mọi người tải ảnh lên ở cái phần phần I00 mấy á thì nó rất rất là nhiều ảnh.
+Lúc nãy là cái video này tận 74 ảnh mà đúng không?
+Nên là mình tìm nó hơi lâu, mình lướt nó hơi lâu á thì mấy bác cứ search vào.
+Đây ví dụ như ảnh 25 nè, mọi người search vào như vậy nó ra rất là nhanh nha.
+Đấy, em hướng dẫn chi rất là chi tiết từ cách thủ công đến các cái mẹo có thể làm.
+Thì mọi người phải xem thật kỹ video để mọi người có thể hiểu được cái quy trình nha.
+Về sau đó những cái ngách khác thì tương tự như thế thôi. Ví dụ như những cái ngách người que...
+Tương tự thế thôi. Ví dụ như những ngách người que khác, cứ tương tự thế mọi người làm thôi. Ví dụ như ảnh này 27, em cũng search 27, tìm kiếm 27, nó ra nè.
+Model Fast đúng không? Nè, em đổi qua model Fast thôi. Model này thì nó chỉ tốn 20 credit thôi.
+Cái thằng Quality là cái thằng chất lượng nhất mọi người ạ, nên là nó trừ tận 100 credit trên một video luôn, rất là khét nha.
+Như vậy là vừa rồi em cũng đã hướng dẫn mọi người cách để gen ra cái video như nào rồi ha. Đấy, rất là đơn giản thôi, mấy bác cứ xem thật kỹ video là rõ thôi.
+Vậy là em sẽ tua nhanh nha. Như vậy là em đã gen xong hết nè, ba mươi mấy cái video.
+Đấy, em đã bỏ trong cái thư mục clip luôn, giống như nó hướng dẫn mình đấy mọi người.
+Bây giờ thì đã có được các cái hình ảnh nhân vật, hình ảnh bối cảnh và gồm video này kia rồi.
+Thì bước tiếp theo thì em sẽ đi tạo âm thanh nha.
+Thì cái tạo âm thanh này mọi người có thể là đi tạo trước cũng được, đấy.
+Nói chung là nó không có quan trọng đâu, mình tạo âm thanh trước hay là tạo ảnh trước cũng được nha mọi người.
+Đấy, nó không có liên quan, không có xung đột với nhau đâu mấy bác à.
+Đây, bây giờ em mở lại cái file, đây là cái file full kịch bản của mình thì mình có thể giúp để cho mình có thể đọc lại tham khảo thôi mấy bác.
+Cái quan trọng là mình sẽ dùng cái file 02-DGT này là để đi tạo voice đối thoại nha.
+Và để cho mọi người biết được và nghe được những cái giọng đối thoại chi tiết hơn như nào á thì mọi người phải xem qua những cái video của kênh đối thủ nha, để mọi người rõ nha mọi người. Đấy.
+Rồi, bây giờ thì em sẽ quay lại, em sẽ dùng cái con tool ElevenLabs của em ha. Tool này thì nói chung anh em đã đều biết hết rồi.
+Em không có dùng web, đương nhiên là cái chức năng này trên web cũng có nha. Đấy,
+em dùng cái chức năng nâng cao là hội thoại nha mọi người.
+Em đã import sẵn sáu cái voice của em vào rồi.
+Đây là những cái voice này thì em lấy từ web ElevenLabs thôi. Đấy.
+Thì cái đây là chức năng nâng cao nha, chứ không phải là mặc định nha mọi người.
+Mình phải nâng nâng cấp thêm ở trong cái gói của nó thì mới được nha mấy bác.
+Kể cả mọi người dùng web cũng vậy, mọi người mà dùng cái chức năng hội thoại á thì nó sẽ tốn nhiều tiền hơn nha mấy bác.
+Đấy, em giải thích chi tiết để cho mấy bác hình dung ra được chứ không phải là nó đơn giản là như cái gói nó trừ tiền như gói mặc định đâu nha mọi người.
+Nó sẽ tốn chi phí hơn đấy.
+Đấy, ví dụ như cái #3 này thì cái giọng nhân vật thứ ba, #2 là nhân vật thứ hai thôi.
+Bây giờ em đã import xong rồi, em đã gán cái voice xong rồi đúng không?
+Thì bây giờ em sẽ import cái file kịch bản nè.
+Đó, cái file mà đã chú thích DGT nè mọi người, đấy.
+Bên này thì nó cũng đã có chú thích là voice # mấy nè.
+Ví dụ như #1 là gán với cái voice 1 của mình thôi. Bây giờ em sẽ chạy luôn nha.
+Trước giờ em tạo giọng đọc này kia thì em đều dùng tool của em thôi, bởi vì nếu mà anh em đã làm kiếm ra tiền được
+cái mảng này thì mọi người đều biết là mấy bác phải dùng ở trên web ElevenLabs thì nó đốt rất là nhiều tiền luôn, và thật
+sự gọi là đốt tiền luôn mọi người, nên là mới dùng tool nha. Đấy. Còn đối với cái gói hội thoại này là phải nâng cấp nha mọi người,
+chứ gói mặc định là không có đâu nha. Em nói lại chi tiết để cho mấy bác hiểu chứ,
+lỡ nhiều anh em đang dùng cái tool của em mà mấy bác vào lại không có cái chức năng đó mấy bác hỏi nữa.
+Vì nó phải là chức năng nâng cấp nha, nâng cao đấy. Bên web nó cũng vậy nha mọi người.
+Rồi sau khi mà chờ đợi, em chờ khoảng tầm hơn 160 giây, chính xác là 161 giây, thì khoảng hơn 2 phút gần 3 phút mọi người ạ,
+thì nó đã gen xong hết rồi nha. Vì cái file kịch bản này, file voice này thì sẽ tầm tổng hết lại thì cũng tầm 8 phút đấy mọi người ạ. Đấy.
+Đây, đây là nó đã tạo cho em một cái thư mục voice nè.
+Kể cả cái thư mục, đây, cái thư mục voice nè,
+gồm tất cả các cái file.
+Và trước đó thì Claude nó cũng tạo ra một cái thư mục rỗng là voice nè, để khi mình gen voice xong mình bỏ vào ấy mọi người.
+Nhưng mà bây giờ nó đã tạo ra cho em cái thư mục đó rồi mọi người.
+Để không trong đó cũng được, không cần đem ra trong thư mục voice đâu nha. Mấy bác cứ để vậy như em, hiện tại em để vậy luôn thì tí nữa em cho nó dựng video thì nó cũng sẽ tự hiểu nha mọi người.
+À, còn đây, cái file chấm zip toàn bộ tài nguyên các cái skill này kia thì em để trong cái link Drive ở dưới khung mô tả video nha.
+Mấy bác lướt xuống ở dưới khung video thì mấy bác sẽ thấy thôi. Còn một cái nữa, nếu mọi người chưa biết cài đặt và để cho cái tool,
+cái con Claude nó dựng được video á thì mọi người cần phải cài Python nữa nha. Cái này là một cái môi trường ngôn ngữ lập trình thôi mấy bác ạ.
+Thì ở cuối video của video ở trên YouTube này em đã có hướng dẫn rất là chi tiết rồi, cách để mọi người cài vào rồi.
+Thì mấy bác mà máy mọi người chưa có Python á thì mọi người nhớ quay lại video trên YouTube này của em mọi người xem nha. Em đã có hướng dẫn rất là chi tiết, mọi người làm theo là được nha.
+Rồi, bước cuối cùng là sau khi mình đã có được toàn bộ hết tất cả các tài nguyên: kịch bản,
+giọng đọc, hình ảnh, video này kia thì bây giờ thì sẽ tới cái phần là đi dựng video nha,
+cho con Claude edit video.
+Thì vừa rồi em đã import lại cái folder What-If của em một lần nữa,
+cũng như là bây giờ em sẽ gọi cái skill là dựng video nè,
+đấy, dựng video What-If.
+Thì bây giờ mấy bác chỉ còn việc Enter thôi,
+thì nó cũng sẽ tự hiểu và nó
+làm, nó dựng, nó tự động edit video cho mình nha.
+Nhưng mà đây là vì demo hướng dẫn,
+cho nên em ghi chi tiết cho mọi người hiểu luôn.
+Em sẽ ghi câu lệnh là: Hãy dựng video nè,
+với cái chủ đề đó cho tôi, đấy.
+Chủ đề nào thì lúc nãy mọi người nhớ tạo ra cái thư mục tên gì á,
+hoặc là mọi người chọn cái chủ đề gì rồi á thì mọi người ghi vào,
+hoặc là nói chung mấy bác chỉ cần gọi skill ra rồi
+Enter thôi thì nó cũng sẽ ra nha.
+À cái này,
+ui cái này lúc nãy em tạo hình ảnh mà 74 cái á, 74 cái hình ảnh á mọi người thì em bị sót một cái prompt mất, thế nên là nó báo thiếu luôn nè, mọi người thấy không?
+Đấy, cái này rất là thực chiến luôn nha, cái này em bị mắc sai sai ở chỗ là bị thiếu ảnh nè, nên là nó nhắc luôn. Bây giờ thì em sẽ
+chọn cái là cho nó thay thế ảnh khác đi, đấy.
+Mọi người thấy không? Nó sẽ quét qua tất cả rất là nhanh. Và cái nào mình còn sai sót hay là thiếu thì nó báo nha,
+cái nào đầy đủ thì nó sẽ chú thích luôn. Rất rất là hay nha mọi người.
+Thì em vừa chọn cái phương án là thay thế như vậy để chữa cháy nha mọi người. Thì đây cũng là một cái để mấy bác rút kinh nghiệm nha, mình làm phải
+xem thật kỹ nha. Bởi vì cái phần lúc nãy thật sự rất là lú, rất là nhiều prompt luôn. Thường thì em làm demo thì em làm 1/3
+hoặc là một nửa thôi, mọi người nhớ không?
+Nhưng mà cái này thì em làm chi tiết full cả video luôn cho mấy bác xem luôn.
+Nên là lúc nãy em... đây, cái phần này nè mọi người.
+Em copy rất là nhanh nên là bị sót ấy, chắc là bị sót.
+Nhưng mà không sao, bây giờ thì chữa cháy theo cách là
+nó đã thay tạm một ảnh khác thôi, yêu cầu nó thay thôi.
+Những cái nào mà bị bug á, bị lỗi thì nó đều báo cho mình cả nha.
+Đấy, nói chung là rất là ok, mấy bác cứ yên tâm, không lo bị sai gì đâu.
+Còn bây giờ thì mình chỉ còn việc đợi nó gen ra video thôi nha mọi người. Bây giờ nó sẽ tự động edit gộp tất cả, nói chung là khớp giọng đọc rồi khớp hình ảnh này kia luôn ha.
+Và rồi, cuối cùng thì sau khi chờ đợi hơn 30 - 40 phút thì cuối cùng nó đã gen xong. Và video chất lượng là ở 1080 nha, em đã train cái chất lượng này rồi.
+Và đối với chất lượng cao như này á thì đương nhiên nó sẽ không lưu một lần hết mà nó sẽ tách ra nha mấy bác. Thì nó cũng sẽ có một cái là GHEP.bat nè.
+Thì bây giờ em sẽ vào thư mục output nè. Đây. Thì em chỉ cần việc nháy đúp chuột vào như hướng dẫn của nó thì nó sẽ tự động ghép hết những cái
+video nối kia lại với nhau nha, video cắt kia lại với nhau thành một cái video như này.
+Your mom is whispering on the phone in the kitchen.
+You're upstairs, two rooms away, with the door closed.
+Don't tell Kai, it's a surprise.
+A puppy? Really?
+How did you hear that?
+At lunch, your friend Nora's phone buzzes.
+It's on silent, inside her backpack, under three books.
+And she's sitting across the cafeteria.
+Nora, your bag's buzzing. - Okay, that's not normal. - A normal person can hear a whisper across a room. You?
+Across the street, you hear things from 10 times farther away than anyone else. So what if you could hear 10 times better?
+Here's how it works.
+The Bat.
+Đấy, thì vừa rồi em đã tua qua cho nó nhanh nha mấy bác. Và để em giải thích cái chỗ này một tí.
+Thì video hiện tại thì nó đang có cái phụ đề nè, thì mọi người không muốn có phụ đề thì mọi người yêu cầu không cần phụ đề cũng được, nhưng mà em khuyên là nên để phụ đề như này.
+Thì người xem họ sẽ rõ hơn, chi tiết hơn nha.
+Và phụ đề này nói chung là nó tự làm hết tất cả và chính xác 100% nha mọi người. Đấy.
+Thì đó là về cách con Claude edit video thôi.
+Cho dành cho những bác nào kiểu như không biết cách edit video nè, lười edit hay là không có thời gian làm video,
+thì mình có skill thì mình cho con Claude nó tự động nó làm thôi mọi người.
+Đấy, còn về chất lượng thì mấy bác tự đánh giá nha.
+Thì đối với em thì em thấy cũng tương đối ok.
+Đương nhiên nó sẽ không thể nào mà bằng một người chuyên nghiệp mà học về edit hay là học về thiết kế này kia họ đi edit đâu.
+Thì đương nhiên nó sẽ không bao giờ bằng được mọi người, đấy.
+Chủ yếu là về cách tương đối và nó tiết kiệm rất là nhiều thứ cho mình thôi. Ví dụ như thời gian và công sức, đấy, kiểu vậy.
+Bây giờ thì em cho mọi người xem qua một bản nữa là bản không có phụ đề. Và cái bản này thì em yêu cầu nó là hiện trên cái cửa sổ con Claude này luôn nha, đấy.
+Và đối với cái bản này thì nó cũng sẽ không có cái phụ đề, đấy, để cho mấy bác có thể xem qua hết cái clip để so sánh được cái chất lượng nó như nào nha.
+Và cái bản này là cái chất lượng nó hiện ở trên cái màn hình Claude á thì nó chỉ là 720p thôi nha, nó không có được chất lượng HD 1080 nha mấy bác.
+Rồi ok, thì clip đến đây nó cũng là kết thúc. Em đã hướng dẫn mọi người full về cái quy trình là làm về cái key này và edit tự động bằng cái key này luôn.
+Và tất cả các cái skill em cũng để dưới mô tả, mấy bác nhớ là lướt xuống xem nha.
+Và ngoài ra á thì em cũng nhắc lại về cái chỗ nhân bản thị trường, thì mấy bác mà trước giờ mấy bác đã xem em rất là nhiều và mọi người hiểu được cái tư duy nhân bản thị trường đúng không?
+Thì mọi người cứ đem cái key này, muốn làm thị trường Việt mọi người về nhân bản thị trường Việt cho em. Đấy.
+Như lúc trước có cái key người que mà về cái ngách ngủ, ngách người tiền sử ngủ á, thì cũng có vài bác lấy về nhân bản thị trường lên rất là ngon.
+Đây, đây là một ví dụ một cái kênh của một bác nhân bản thị trường, đấy cũng là key người que từ US về thôi mọi người.
+Mà ngoài ra thì không phải là một cái key ngoài cái ngách này đâu, còn rất là nhiều thứ nữa.
+Mọi người cứ hiểu được cái nhân bản thị trường là mấy bác ok thôi.
+Về cách làm nhân bản thị trường em cũng đã có video hướng dẫn rồi.
+Thì từ cái skill này mọi người cứ đẩy lên con Claude,
+mọi người ví dụ như mọi người muốn nhân bản cái ngách này, cái skill này về thị trường Việt Nam, về tiếng Việt, đúng không?
+Thì mọi người cứ tải hết của em lên xong rồi mọi người ghi là yêu cầu như thế thì nó sẽ ra thôi.
+Đấy, rất là đơn giản thôi.
+Mọi người muốn như nào thì mọi người cứ train con AI như vậy thôi. Đấy.
+Rồi ok, em cảm ơn tất cả mọi người đã xem video đến đây nha.
+Và ngoài ra nó có một cái file hướng dẫn nữa,
+và cái form nó cũng có là cái phần thumb,
+thì cái đây mấy bác tự tham khảo thêm nha.
+Your mom is whispering on the phone in the kitchen. You're upstairs, two rooms away, with the door closed.
+Don't tell Kai, it's a surprise. - A puppy? Really? - How did you hear that?
+At lunch, your friend Nora's phone buzzes. It's on silent, inside her backpack, under three books.
+And she's sitting across the cafeteria. Nora, your bag's buzzing. - Okay, that's not normal.
+A normal person can hear a whisper across a room. You? Across the street, you hear things from 10 times farther away than anyone else.
+So what if you could hear 10 times better?
+Here's how it works.
+Sound is just air, pushing on air, like ripples in a pond.
+Those ripples hit your eardrum and make it shake.
+Three tiny bones pass the shake along.
+The smallest one is about 3 mm long.
+Then comes a snail-shaped tube called the cochlea.
+Inside, thousands of tiny hair cells bend like grass in the wind,
+and turn every push into a signal for your brain.
+Yours bend at almost nothing.
+But here's the weird part.
+Sound spreads out as it travels, so it gets weaker fast.
+Double the distance, and you get a quarter of the sound.
+So to hear 10 times farther, your ears need to be 100 times more sensitive.
+And here's the catch: your ears got 100 times stronger,
+your volume knob did not.
+Dr. Patel, a hearing doctor, puts you in a soundproof booth.
+She plays a tiny beep, and turns it down.
+Quieter, quieter, until the machine hits its lowest setting. - Still hear it. - That's below zero, do it again.
+At home, nothing ever surprises you again. You order a pizza, and you hear the delivery scooter three blocks away.
+You open the door before he even reaches the bell. At school, teachers become easy. Mr. Greer's keys jingle two hallways away.
+You cough once, and 30 phones vanish into 30 pockets. Sound moves about 340 m every second.
+Mr. Greer walks about one. That's a very long warning. Why is everyone always sitting so nicely?
+Hide and seek is over forever, because you can hear heartbeats behind the couch, under the stairs, in the dryer, Nora?
+Really?
+My heart was not that loud.
+140 beats a minute.
+Your uncle's car shop hires you for the summer.
+Mechanics use a stethoscope to hunt for a dying engine part.
+You hear it from the parking lot, front left wheel. 20 bucks an hour just to listen.
+But where it gets really crazy is video games.
+In shooter games, sound is everything.
+Footsteps, reloads, a door creaking open somewhere upstairs.
+Your brain can tell which ear a sound hit first,
+by a gap of about 10 millionths of a second.
+That's how you know where a sound comes from.
+Yours is sharper than anyone's.
+Hear an enemy reload through two walls.
+He's on the stairs.
+Third step, left side.
+Bronze, gold, diamond.
+Number one in the whole country in four months.
+Dude, are you in my house right now?
+The internet gives you a nickname: The Bat.
+Then the internet gives you another one: Cheater. Nobody can know that much, they say, unless he sees through walls.
+No way he heard that. No way.
+So they test you.
+Their computer, their mouse, their keyboard. Two officials stand behind you, watching every move. You win anyway.
+Then you qualify for your first live tournament, on a real stage. And there's one problem: on stage, pro players wear big, sealed headsets.
+Some tournaments even pipe in white noise. Can I turn it down? Three floors... roars... Then back, voice actor...
+And if you'd have taken off that headset, now you can hear me. So what would you do with 10 times better hearing?
+10 times better hearing. Tell us the one sound you'd never want to hear again in the comments.
+Take off the headset? Like and subscribe for part 2.

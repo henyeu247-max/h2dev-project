@@ -1,0 +1,78 @@
+{
+  "sku": "VIDEO-817ae6",
+  "title": "Kênh mới chỉ 7 video đã nổ đủ điều kiện bật kiếm tiền - Update share thêm ngách thị trường Việt và Nhật",
+  "actual_topic": "Kênh mới chỉ 7 video đã nổ đủ điều kiện bật kiếm tiền - Update share thêm ngách thị trường Việt và Nhật",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Tâm Linh & Thu Hút May Mắn",
+  "niche_id": "faceless-general",
+  "target_market": "Nhật Bản / Việt Nam",
+  "market_code": "JP,VN",
+  "key_takeaways": [
+    "Tác giả share ngách phong thủy tâm linh thị trường Việt trên một kênh dùng tên cổ, video đầu tiên cách đây 6 ngày và mới có 7 video.",
+    "Tác giả đánh giá cách edit của kênh này chưa tốt vì dùng HeyGen đọc hết nguyên video, sau này rất dễ bị quét; để an toàn nhất nên ghép chèn thêm video tự nhiên thực tế.",
+    "Tác giả so sánh thumbnail: kênh flop có thumbnail khó nhìn, người xem không hình dung được nội dung nên không click, còn kênh kia dùng hình đại diện một ông thầy sư để người xem tin tưởng hơn; thumbnail quyết định tỷ lệ click vào đề xuất của YouTube.",
+    "Tác giả hướng dẫn tìm kênh đối thủ bằng cách xem, like, đăng ký video của kênh rồi xem nhiều để YouTube tự đề xuất thêm kênh đối thủ, sau đó copy về làm theo.",
+    "Tác giả share thêm ngách tâm linh thị trường Nhật của một kênh mới từ ngày 20 tháng 5 năm 2026: các video đầu chỉ vài chục đến vài trăm view, nên làm kiên trì ít nhất 15 đến 20 video, và 5 ngày gần đây kênh lên view rất cao, có ngày đăng 2 video."
+  ],
+  "edit_sop": {
+    "primary": "Share ngách phong thủy tâm linh thị trường Việt và tâm linh thị trường Nhật, cách tìm kênh đối thủ",
+    "additional": [
+      "Xem video kênh mẫu, kéo mục đề xuất bên phải hoặc trang chủ để YouTube tự gợi ý thêm kênh đối thủ",
+      "Không để HeyGen đọc nguyên cả video, phải chèn ghép vào video thực tế",
+      "Thumbnail phải dễ nhìn, nhìn là hình dung được nội dung để người xem click",
+      "Dùng nhân vật đại diện như thầy sư ngồi nói để người xem tin tưởng hơn",
+      "Tiêu đề tiếng Nhật copy cho Claude hoặc ChatGPT phân tích để biết ngách; kênh mới làm ít nhất 15 đến 20 video"
+    ]
+  },
+  "avoid_flags": [
+    "Không để HeyGen đọc nguyên cả video vì sau này rất dễ bị quét",
+    "Thumbnail khó nhìn, không hình dung được nội dung thì người xem không click và kênh flop",
+    "Kênh mới chưa lên view thì đừng bỏ sớm, làm ít nhất khoảng 15 đến 20 video"
+  ],
+  "tools_mentioned": [],
+  "channels_mentioned": [
+    "@meophongthuy-m7d",
+    "@プレアデス最終通知556"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Tổng quan nội dung bài giảng và mục tiêu thực hành"
+    },
+    {
+      "time": "01:35",
+      "seconds": 95,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "02:23",
+      "seconds": 143,
+      "label": "Tầm quan trọng của thiết kế thumbnail đối với tỷ lệ bấm xem"
+    },
+    {
+      "time": "03:24",
+      "seconds": 204,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "04:10",
+      "seconds": 250,
+      "label": "Thấy show này thì mọi người thấy không Các bạn có thể thấy, bắt đầu 5 ngày gần đây là kênh nó l"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-817ae6/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Xem video kênh mẫu, kéo mục đề xuất bên phải hoặc trang chủ để YouTube tự gợi ý thêm kênh đối thủ",
+    "Không để HeyGen đọc nguyên cả video, phải chèn ghép vào video thực tế",
+    "Thumbnail phải dễ nhìn, nhìn là hình dung được nội dung để người xem click",
+    "Dùng nhân vật đại diện như thầy sư ngồi nói để người xem tin tưởng hơn",
+    "Tiêu đề tiếng Nhật copy cho Claude hoặc ChatGPT phân tích để biết ngách; kênh mới làm ít nhất 15 đến 20 video"
+  ]
+}

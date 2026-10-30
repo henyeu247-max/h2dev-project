@@ -1,0 +1,81 @@
+{
+  "sku": "VIDEO-026112",
+  "title": "SHOW KÊNH ĐỐI THỦ VÀ NGÁCH REUP HOẠT HÌNH + DU LỊCH CỰC TRENDS TỪ TRUNG QUỐC SANG - UPDATE MỚI 08-03-2026",
+  "actual_topic": "SHOW KÊNH ĐỐI THỦ VÀ NGÁCH REUP HOẠT HÌNH + DU LỊCH CỰC TRENDS TỪ TRUNG QUỐC SANG - UPDATE MỚI 08-03-2026",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Reup & Khai Thác Hoạt Hình",
+  "niche_id": "faceless-general",
+  "target_market": "Trung Quốc",
+  "market_code": "CN",
+  "key_takeaways": [
+    "Tác giả chia sẻ thêm các kênh đối thủ làm ngách reup hoạt hình và du lịch từ Trung Quốc sang cho những ai muốn làm thêm view Việt bên cạnh mục tiêu chính là thị trường ngoại.",
+    "Kênh hoạt hình mẫu trên YouTube đã bật kiếm tiền và bật quảng cáo bình thường, xử lý phần phụ đề tiếng Trung phía sau bằng cách che mờ rồi dịch phụ đề tiếng Việt đè lên.",
+    "Cách tìm nguồn trên Douyin: sao chép tiêu đề phim, dịch sang tiếng Trung, gắn thêm từ khóa hoạt hình ở phía trước rồi tìm kiếm, xem và follow để nền tảng tự đề xuất thêm nhiều kênh cùng dạng.",
+    "Cách lọc kênh đối thủ trên YouTube: bấm xem một video cùng ngách để cột đề xuất bên tay phải hiện ra các kênh đối thủ khác (có những kênh mới khoảng 700 sub đang làm hoạt hình tình yêu), chỉ chọn bám theo những kênh có view đang trend.",
+    "Kênh thứ hai là Khám Phá Trung Hoa làm dạng reup khám phá du lịch từ Trung Quốc sang với lượng view rất cao, che chữ Trung Quốc gốc và dịch lại phụ đề, hoàn toàn bật kiếm tiền được."
+  ],
+  "edit_sop": {
+    "primary": "Cách tìm kênh đối thủ reup hoạt hình và du lịch từ Trung Quốc sang",
+    "additional": [
+      "Copy tiêu đề phim, dịch sang tiếng Trung, thêm chữ hoặc hình rồi tìm kiếm để ra nhiều dạng video.",
+      "Xem các video đó hoặc follow thì YouTube sẽ đề xuất thêm nhiều kênh đối thủ khác.",
+      "Bấm vào một video, cột bên phải sẽ đề xuất các kênh đối thủ khác.",
+      "Chỉ chọn những kênh có view đang trend để làm.",
+      "Quy trình và cách edit đầy đủ xem ở video trước của tác giả trên YouTube."
+    ]
+  },
+  "avoid_flags": [
+    "Không bám theo làm những kênh có view èo uột, không trend.",
+    "Khi làm dạng hoạt hình từ Trung Quốc sang cần che mờ phần phụ đề tiếng Trung gốc ở phía sau trước khi chèn phụ đề tiếng Việt đè lên"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "Douyin",
+    "CapCut"
+  ],
+  "channels_mentioned": [
+    "@TRESube156",
+    "@KhámPháTrungHoa-HT"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Tổng quan nội dung bài giảng và mục tiêu thực hành"
+    },
+    {
+      "time": "01:14",
+      "seconds": 74,
+      "label": "Đấy"
+    },
+    {
+      "time": "01:53",
+      "seconds": 113,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "02:41",
+      "seconds": 161,
+      "label": "Đánh giá hiệu quả bật kiếm tiền và tiềm năng doanh thu của ngách"
+    },
+    {
+      "time": "03:28",
+      "seconds": 208,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-026112/transcript.txt",
+  "sop_steps": [
+    "Copy tiêu đề phim, dịch sang tiếng Trung, thêm chữ hoặc hình rồi tìm kiếm để ra nhiều dạng video.",
+    "Xem các video đó hoặc follow thì YouTube sẽ đề xuất thêm nhiều kênh đối thủ khác.",
+    "Bấm vào một video, cột bên phải sẽ đề xuất các kênh đối thủ khác.",
+    "Chỉ chọn những kênh có view đang trend để làm.",
+    "Quy trình và cách edit đầy đủ xem ở video trước của tác giả trên YouTube."
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T06:30:00Z"
+}

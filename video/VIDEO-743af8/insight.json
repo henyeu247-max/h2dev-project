@@ -1,0 +1,104 @@
+{
+  "sku": "VIDEO-743af8",
+  "title": "Tư Duy Tìm từ khóa Trước Khi Sản Xuất Video",
+  "actual_topic": "4 trụ cột tư duy từ khóa quyết định 80% thành công trên YouTube: Bản chất hành vi tìm kiếm (case study Yoga & iPhone 17), cơ chế AI đọc từ khóa để phân phối, 5 vị trí đặt từ khóa (Tiêu đề, Lời nói trong video, Mô tả, Thẻ tag ẩn, từ khóa kênh) & công thức lọc 'từ khóa ngon' (kênh bé @GalaxyYoga 17,1N sub nhưng nổ 1,4M–2,6M view).",
+  "category_group": "chuyen_gia",
+  "niche_primary": "SEO & Thuật Toán YouTube",
+  "niche_id": "keyword_research",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "tools_mentioned": [
+    "YouTube",
+    "Cốc Cốc"
+  ],
+  "channels_mentioned": [
+    "@GalaxyYoga",
+    "@VatVoStudio",
+    "@TonyPhungStudio",
+    "@NgoDucDuy",
+    "@fachannel"
+  ],
+  "course_docs": [
+    {
+      "title": "Tài Liệu Thực Chiến & Checklist: Tư Duy Tìm từ khóa & Bộ Lọc Săn từ khóa Ngon",
+      "file": "assets/docs-dgmd/VIDEO-743af8/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-743af8/master_prompt.md",
+      "link": "assets/docs-dgmd/VIDEO-743af8/master_prompt.md"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Cấu trúc 4 mục quan trọng nhất của Tư duy từ khóa trước khi sản xuất video"
+    },
+    {
+      "time": "00:28",
+      "seconds": 28,
+      "label": "Mục 1 - từ khóa là gì: Demo gõ từ khóa 'yoga' và 14 cụm từ gợi ý nhu cầu người xem trên YouTube"
+    },
+    {
+      "time": "00:56",
+      "seconds": 56,
+      "label": "Phân tích hành vi tìm kiếm thực tế qua ví dụ 'iPhone 17' và 'iPhone 17 so sánh iPhone 16'"
+    },
+    {
+      "time": "01:43",
+      "seconds": 103,
+      "label": "Mục 2 - Sự thật quan trọng: từ khóa giúp YouTube hiểu nội dung và quyết định 80% tỷ lệ thành công"
+    },
+    {
+      "time": "02:36",
+      "seconds": 156,
+      "label": "Mục 3 - từ khóa nằm ở đâu: Tiêu đề, Trong lời nói video, Mô tả, Thẻ tag ẩn và từ khóa kênh"
+    },
+    {
+      "time": "03:02",
+      "seconds": 182,
+      "label": "Mổ xẻ video 'Đánh giá iPhone 17 sau 6 tháng' (@VatVoStudio): Đồng bộ từ khóa ở Tiêu đề, Mô tả và Lời nói"
+    },
+    {
+      "time": "03:25",
+      "seconds": 205,
+      "label": "Mục 4 - Cách nhận biết 'từ khóa ngon': Lọc Video + Tháng này + Mức độ phổ biến tìm kênh bé nhiều view"
+    },
+    {
+      "time": "03:53",
+      "seconds": 233,
+      "label": "Case study thực chiến kênh @GalaxyYoga (17,1N sub, 30 video): Nổ 1,4M – 2,6M view nhờ từ khóa Yoga trẻ em"
+    }
+  ],
+  "key_takeaways": [
+    "từ khóa là cầu nối phản ánh chính xác mong muốn và nhu cầu thực tế mà người xem gõ vào thanh tìm kiếm YouTube (ví dụ: 'yoga cổ vai gáy', 'yoga cho người thoát vị đĩa đệm', 'iPhone 17 so sánh iPhone 16 cái nào tốt hơn').",
+    "Thuật toán YouTube sẽ không thể đẩy đề xuất video nếu nó không hiểu video đang nói về chủ đề gì; chọn đúng và làm đúng từ khóa quyết định tới 80% tỷ lệ thành công của một video.",
+    "từ khóa bắt buộc phải xuất hiện đồng bộ tại 5 vị trí: Tiêu đề video, Lời nói trực tiếp bên trong video, Phần mô tả video, Thẻ tag ẩn của video và từ khóa cài đặt kênh (trong đó bộ 3 Tiêu đề - Lời nói - Mô tả là quan trọng nhất).",
+    "Tiêu chí nhận biết một 'từ khóa ngon' để đào sâu là: từ khóa tạo ra lượng view rất lớn nhưng các kênh đang khai thác nó vẫn còn bé (ít người đăng ký, ít video) mà tỷ lệ view trên từng video lại vọt lên cực kỳ cao.",
+    "Quy trình kiểm chứng từ khóa ngon trực tiếp trên YouTube: Gõ từ khóa gốc (như 'yoga') -> mở Bộ lọc -> chọn Loại 'Video' + Ngày tải lên 'Tháng này' + Sắp xếp theo 'Mức độ phổ biến' để phát hiện các kênh mới nổi như @GalaxyYoga (chỉ 17,1N sub, 30 video nhưng có loạt video đạt 1,4 triệu – 2,6 triệu view)."
+  ],
+  "edit_sop": {
+    "primary": "SOP 5 Bước Tìm Kiếm, Lọc Kiểm Chứng & Đồng Bộ từ khóa Trước Khi Sản Xuất Video",
+    "additional": [
+      "Gõ từ khóa gốc của chủ đề (như yoga, iPhone 17, Monkey, thú cưng, sức khỏe) vào thanh tìm kiếm YouTube trên trình duyệt Cốc Cốc để thu thập danh sách gợi ý nhu cầu thật của khán giả.",
+      "Sử dụng Bộ lọc tìm kiếm của YouTube với 3 tham số: Loại 'Video', Ngày tải lên 'Tháng này' và Sắp xếp theo 'Mức độ phổ biến' để quét các video bùng nổ view mới nhất.",
+      "Kiểm tra tương quan Sub và View của các kênh xuất hiện trong kết quả lọc để chốt 'từ khóa ngon' (ưu tiên từ khóa có kênh bé chỉ vài chục nghìn sub như @GalaxyYoga 17,1N sub nhưng video đạt hàng triệu view).",
+      "Mổ xẻ cấu trúc đặt từ khóa của các video đứng top (như @VatVoStudio, @TonyPhungStudio, @fachannel) để xác định cách kết hợp từ khóa chính và từ khóa phụ (so sánh, đánh giá, hướng dẫn).",
+      "Đồng bộ từ khóa mục tiêu vào đủ 5 vị trí trước khi xuất bản: Tiêu đề video, Lời thuyết minh bên trong video, Phần mô tả, Thẻ tag ẩn và từ khóa kênh."
+    ]
+  },
+  "sop_steps": [
+    "Gõ từ khóa gốc của chủ đề (như yoga, iPhone 17, Monkey, thú cưng, sức khỏe) vào thanh tìm kiếm YouTube trên trình duyệt Cốc Cốc để thu thập danh sách gợi ý nhu cầu thật của khán giả.",
+    "Sử dụng Bộ lọc tìm kiếm của YouTube với 3 tham số: Loại 'Video', Ngày tải lên 'Tháng này' và Sắp xếp theo 'Mức độ phổ biến' để quét các video bùng nổ view mới nhất.",
+    "Kiểm tra tương quan Sub và View của các kênh xuất hiện trong kết quả lọc để chốt 'từ khóa ngon' (ưu tiên từ khóa có kênh bé chỉ vài chục nghìn sub như @GalaxyYoga 17,1N sub nhưng video đạt hàng triệu view).",
+    "Mổ xẻ cấu trúc đặt từ khóa của các video đứng top (như @VatVoStudio, @TonyPhungStudio, @fachannel) để xác định cách kết hợp từ khóa chính và từ khóa phụ (so sánh, đánh giá, hướng dẫn).",
+    "Đồng bộ từ khóa mục tiêu vào đủ 5 vị trí trước khi xuất bản: Tiêu đề video, Lời thuyết minh bên trong video, Phần mô tả, Thẻ tag ẩn và từ khóa kênh."
+  ],
+  "avoid_flags": [
+    "Tuyệt đối không tự nghĩ ra nội dung theo ý thích cá nhân mà bỏ qua bước kiểm tra xem khán giả có đang gõ tìm kiếm từ khóa đó trên YouTube hay không.",
+    "Không bỏ trống hoặc làm lệch pha từ khóa giữa 3 vị trí quan trọng nhất (Tiêu đề có từ khóa nhưng trong lời nói video và mô tả lại không nhắc đến) khiến YouTube không hiểu nội dung để phân phối.",
+    "Tránh lao vào các từ khóa chỉ toàn những kênh khổng lồ triệu sub thống trị mà không có bất kỳ kênh nhỏ ít sub nào đạt được lượng view đột biến trong tháng gần nhất.",
+    "Không đặt tiêu đề chung chung thiếu từ khóa ngách giải quyết đúng vấn đề cụ thể của người xem (như so sánh, đánh giá sau 6 tháng, bài tập theo nhóm tuổi)."
+  ],
+  "source_transcript": "video/VIDEO-743af8/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true
+}

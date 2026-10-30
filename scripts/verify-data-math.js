@@ -328,6 +328,14 @@ assertCheck(
   `Found ${dbTimestamps} timestamps in DB`
 );
 
+const dbTranscripts = db.prepare('SELECT COUNT(*) AS c FROM lesson_transcripts').get().c;
+assertCheck(
+  'M6.6b',
+  'Master DB Lesson Transcripts: exactly 333 unified transcripts in lesson_transcripts table',
+  dbTranscripts === 333,
+  `Found ${dbTranscripts} transcripts in DB`
+);
+
 const dbChannels = db.prepare('SELECT COUNT(*) AS c FROM competitor_channels').get().c;
 assertCheck(
   'M6.7',

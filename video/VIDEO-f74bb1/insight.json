@@ -1,0 +1,81 @@
+{
+  "sku": "VIDEO-f74bb1",
+  "title": "Update ngách cực nhỏ thị trường Hàn Quốc mới nhất",
+  "actual_topic": "Khai thác ngách cực nhỏ Rau củ dưa chuột & Bữa ăn dưỡng lão Hàn Quốc; Kỹ thuật train Claude bám theo 70% kịch bản đối thủ",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Sức Khỏe & Rau Củ Dưa Chuột",
+  "niche_id": "faceless-general",
+  "target_market": "Hàn Quốc",
+  "market_code": "KR",
+  "key_takeaways": [
+    "Tác giả chia sẻ ngách mới ở thị trường Hàn Quốc về rau củ, thuộc chủ đề sức khỏe nhưng đánh vào ngách nhỏ.",
+    "Kênh mẫu lập từ cuối tháng 5, mới hơn 20 video mà có video gần 100k view, rồi 50k, 20k, 11k; một kênh khác 28 video có 50k, 38k, 27k, và kênh lập từ tháng 4 có video hơn 100k view.",
+    "Video về dưa chuột (dưa leo) có view cao nhất, ví dụ video đánh vào người bị tiểu đường.",
+    "Cách edit rất đơn giản: ghép hình ảnh minh họa dưa chuột bằng CapCut, mỗi phân cảnh để ông bác sĩ nói vài giây rồi ghép hình ảnh, video thực tế minh họa để không bị quét, thêm phụ đề và chia chương trong mô tả.",
+    "Có thể nhân bản thị trường: dịch tiêu đề sang tiếng Việt rồi search YouTube xem kênh Việt đã làm chưa, nếu chưa thì lấy kịch bản từ Hàn sang Việt; nhưng chỉ nên tập trung một hai ngách để không bị flop."
+  ],
+  "edit_sop": {
+    "primary": "Chia sẻ ngách rau củ (dưa chuột) thị trường Hàn Quốc, cách edit đơn giản và nhân bản thị trường Hàn sang Việt",
+    "additional": [
+      "Xem mục phổ biến của kênh đối thủ, dịch tiêu đề để thấy ngách nhỏ cao view (dưa chuột/dưa leo), rồi lấy video về xào nấu.",
+      "Edit: ghép hình ảnh minh họa dưa chuột; mỗi phân cảnh để ông bác sĩ nói vài giây rồi ghép hình ảnh video thực tế minh họa vào.",
+      "Làm hình chuyển động trong CapCut bằng cách kéo thẻ cho hình chạy một chút, thêm phụ đề chạy.",
+      "Ghi chia đoạn trong mục mô tả thì video tự phân chương; lấy từ khóa kênh và từ khóa video bỏ vào kênh mình.",
+      "Nhân bản thị trường: dịch tiêu đề Hàn sang tiếng Việt, search YouTube xem bên Việt đã có kênh làm chưa, chưa có thì lấy kịch bản về làm."
+    ]
+  },
+  "avoid_flags": [
+    "Mỗi lần chỉ nên tập trung một hoặc hai ngách, làm quá nhiều ngách dễ loãng, không tập trung được chất lượng video và khó ra kết quả.",
+    "Tránh để hình ảnh bác sĩ đứng nói xuyên suốt cả video mà chỉ nên xuất hiện vài giây ở mỗi phân cảnh rồi ghép hình ảnh và video thực tế minh họa vào"
+  ],
+  "tools_mentioned": [
+    "CapCut",
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@노후건강한끼",
+    "@건강백단",
+    "@장수채소습관"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "02:27",
+      "seconds": 147,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "04:18",
+      "seconds": 258,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "06:18",
+      "seconds": 378,
+      "label": "Chiến lược nhân bản nội dung sang thị trường quốc tế"
+    },
+    {
+      "time": "07:34",
+      "seconds": 454,
+      "label": "Sang Hàn Đấy Còn mà bên Hàn"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-f74bb1/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Xem mục phổ biến của kênh đối thủ, dịch tiêu đề để thấy ngách nhỏ cao view (dưa chuột/dưa leo), rồi lấy video về xào nấu.",
+    "Edit: ghép hình ảnh minh họa dưa chuột; mỗi phân cảnh để ông bác sĩ nói vài giây rồi ghép hình ảnh video thực tế minh họa vào.",
+    "Làm hình chuyển động trong CapCut bằng cách kéo thẻ cho hình chạy một chút, thêm phụ đề chạy.",
+    "Ghi chia đoạn trong mục mô tả thì video tự phân chương; lấy từ khóa kênh và từ khóa video bỏ vào kênh mình.",
+    "Nhân bản thị trường: dịch tiêu đề Hàn sang tiếng Việt, search YouTube xem bên Việt đã có kênh làm chưa, chưa có thì lấy kịch bản về làm."
+  ]
+}

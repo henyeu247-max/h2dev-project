@@ -1,0 +1,143 @@
+{
+  "sku": "VIDEO-c8df1e",
+  "title": "Phân Tích DNA Chi Tiết Video Đang Thành Công",
+  "module_id": "HUAN-M06",
+  "module_name": "Quy Trình Triển Khai Kênh Bán Content View Ngoại (GODA)",
+  "lesson_number": 80,
+  "duration": 1149.96,
+  "duration_str": "19:09",
+  "primary_topic": "Giải phẫu 6 thành tố DNA của video thành công (Bước 2 trong Kế hoạch GODA): Cấu trúc Thumbnail 5 yếu tố, Ma trận Key SEO Tiêu đề, Chép tay kịch bản 30 video đầu + YouTube Summary with ChatGPT (2.200 từ), Nguồn Footage/B-roll (Storyblocks $30/tháng & ChatGPT-4), Giọng đọc (ElevenLabs/Vbee/Fiverr/Upwork) và Nhạc nền (Epidemic Sound $15/tháng)",
+  "summary": "Bài 80 là bài giảng kỹ thuật cốt lõi hướng dẫn Bước 2 (Phân tích nội dung / Giải phẫu DNA video thành công) trong 'GODA - Kế hoạch triển khai kênh.xlsx' do CEO GODA Vũ Việt Hoàng trực tiếp thực hành trên kênh mẫu Healthy Long Life (@healthlonglife). Giảng viên mổ xẻ toàn diện 6 lớp DNA cấu thành một video triệu view: (1) Thumbnail: Phân tích 5 yếu tố thị giác (nhân vật chính bên trái, nền xanh dương tối, khung chữ đỏ-trắng 'I'm 91' / 'I'm 90' kết hợp chữ vàng, không quá 3 màu chữ), áp dụng triết lý Shuhari ('Nghệ thuật đánh cắp ý tưởng') tải toàn bộ thumbnail của 10 kênh đang lên về lưu trữ trên Google Drive làm kho tài sản mật; (2) Tiêu đề: Bóc tách cấu trúc Key SEO cố định trong tiếng Anh (như 'I AVOID 3 FOODS and Don't Get Old! Barbara Taylor Bradford (90) still looks 59!'), giữ nguyên khung từ khóa và chỉ đổi biến số tuổi (90/59 -> 91/58), gom 3–100 tiêu đề ra bảng để bôi đen cụm từ khóa lặp lại và nhân bản chuỗi 10 kênh; (3) Content/Kịch bản: Yêu cầu người mới chép tay nguyên văn 30 video đầu tiên (như kỷ luật của team Water Media) để thấm nhuần cấu trúc câu trước khi dùng tiện ích 'YouTube Summary with ChatGPT & Claude' bóc transcript sang Microsoft Word đo độ dài (2.200 từ cho video 9 phút 23 giây) và thêm ý kiến cá nhân tránh gậy bản quyền; (4) Video nguồn & Ảnh: Cắt đoạn phỏng vấn gốc ngắn theo Fair Use, mua gói Storyblocks chính chủ ($30/tháng ~ 700k VNĐ gắn whitelist cho 1 kênh) và dùng ChatGPT-4 vẽ lại ảnh lấy từ Google; (5) Giọng đọc: Khởi đầu bằng AI (ElevenLabs, Vbee — có kênh Vbee vẫn kiếm $500/ngày), khi có tiền nâng cấp thuê người thật trên Fiverr, Upwork; (6) Nhạc nền: Dùng YouTube Audio Library miễn phí hoặc mua Epidemic Sound ($15/tháng ~ 350k VNĐ) gắn trực tiếp ID kênh.",
+  "tools_mentioned": [
+    "YouTube",
+    "Google Drive",
+    "Google Translate",
+    "YouTube Summary with ChatGPT",
+    "ChatGPT",
+    "Microsoft Word",
+    "Storyblocks",
+    "ElevenLabs",
+    "Vbee",
+    "Fiverr",
+    "Upwork",
+    "YouTube Audio Library",
+    "Epidemic Sound"
+  ],
+  "channels_mentioned": [
+    "@healthlonglife",
+    "@TheDiaryOfACEO"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giải phẫu 5 yếu tố Thumbnail thành công trên kênh Healthy Long Life (nhân vật, nền xanh tối, chữ trắng nền đỏ kết hợp vàng) và nguyên nhân CTR thấp"
+    },
+    {
+      "time": "01:37",
+      "seconds": 97,
+      "label": "Áp dụng nguyên tắc Shuhari & 'Nghệ thuật đánh cắp ý tưởng': Tải toàn bộ Thumbnail của 10 kênh đang lên về máy/Google Drive làm tài sản mật"
+    },
+    {
+      "time": "03:29",
+      "seconds": 209,
+      "label": "Phân tích DNA Tiêu đề tiếng Anh: Bản chất tiêu đề là Key SEO cố định, giữ nguyên khung câu và chỉ thay đổi biến số nhỏ (tuổi 90/59 -> 91/58)"
+    },
+    {
+      "time": "04:49",
+      "seconds": 289,
+      "label": "Thực hành gom 3–100 tiêu đề ra bảng để bôi đen cụm từ khóa SEO chung và chiến lược nhân bản chuỗi 10 kênh khi đã nắm công thức"
+    },
+    {
+      "time": "07:56",
+      "seconds": 476,
+      "label": "Phân tích DNA Content: Kỷ luật chép tay 30 video đầu tiên (như team Water Media) trước khi dùng tiện ích YouTube Summary with ChatGPT"
+    },
+    {
+      "time": "10:29",
+      "seconds": 629,
+      "label": "Đo độ dài kịch bản bằng Microsoft Word (2.200 từ cho video 9 phút 23 giây) và kỹ thuật lồng ghép góc nhìn cá nhân để tránh gậy bản quyền"
+    },
+    {
+      "time": "12:49",
+      "seconds": 769,
+      "label": "Truy vết nguồn Footage phỏng vấn nhân vật trên YouTube: Cắt đoạn ngắn làm minh họa bổ trợ tuân thủ Tứ trụ Fair Use"
+    },
+    {
+      "time": "13:57",
+      "seconds": 837,
+      "label": "Nguồn B-roll & Ảnh: Mua gói Storyblocks chính chủ ($30/tháng gắn whitelist 1 kênh) và dùng ChatGPT-4 vẽ lại ảnh lấy từ Google"
+    },
+    {
+      "time": "15:20",
+      "seconds": 920,
+      "label": "Chọn Giọng đọc (ElevenLabs, Vbee đạt $500/ngày/kênh; nâng cấp lên Fiverr, Upwork) và Nhạc nền sạch bản quyền (YouTube Audio Library, Epidemic Sound $15/tháng)"
+    }
+  ],
+  "key_takeaways": [
+    "Giải phẫu Thumbnail không phải là khen 'đẹp hay xấu' một cách cảm tính mà phải bóc tách thành các thông số kỹ thuật cụ thể: (1) Đối tượng chính (nhân vật già khỏe mạnh đặt bên trái), (2) Màu nền (xanh dương tối tạo độ tương phản), (3) Text nổi bật ('I'm 91', 'I'm 90' chữ trắng trên khung nền đỏ), (4) Text phụ đan xen màu vàng-trắng dễ đọc, và (5) Kỷ luật tối đa không quá 3 màu trên Thumbnail để tránh rối mắt làm tụt CTR.",
+    "Áp dụng triết lý Shuhari (Tu - Phá - Ly): Giai đoạn đầu chưa biết thiết kế thì hãy sao chép 100% bố cục Thumbnail của 10 kênh đang lên nhanh nhất trong ngách, đồng thời tải toàn bộ ảnh Thumbnail của chúng về lưu vào ổ cứng và Google Drive (vì nếu kênh đối thủ chết hoặc ẩn video, kho Thumbnail tỷ view đó chính là tài sản mật vô giá của công ty bạn).",
+    "Đối với người Việt Nam không giỏi tiếng Anh, hãy coi Tiêu đề tiếng Anh là một chuỗi 'Key SEO cố định' thay vì cố tự sáng tác câu chữ mới: Hãy copy 3–100 tiêu đề nhiều view nhất của đối thủ ra bảng, bôi đen những cụm từ lặp đi lặp lại (như 'I AVOID 3 FOODS and Don't Get Old!', 'still looks') để giữ nguyên làm khung SEO, chỉ thay đổi tên nhân vật và biến số tuổi (ví dụ từ 90/59 đổi thành 91/58).",
+    "Quy tắc 'Chép tay 30 kịch bản đầu tiên' trước khi dùng AI: Giống như kỷ luật đào tạo của team Water Media, người mới nên tự nghe và chép tay 30 video thành công nhất của đối thủ để ngấm cấu trúc mở bài (Hook), dẫn dắt và kêu gọi hành động; sau đó mới dùng tiện ích Chrome 'YouTube Summary with ChatGPT' để lấy transcript, đưa vào Microsoft Word đo số lượng từ (trung bình khoảng 2.200 từ tiếng Anh cho một video dài 9 phút 23 giây) rồi viết lại kèm ý kiến cá nhân.",
+    "Kiểm soát an toàn bản quyền tuyệt đối ở khâu Hình ảnh, B-roll và Nhạc nền: (1) Footage phỏng vấn nhân vật lấy trên YouTube chỉ cắt đoạn ngắn vài giây làm minh họa theo Fair Use; (2) Video B-roll minh họa phải mua tài khoản Storyblocks riêng ($30/tháng ~ 700.000 VNĐ, mỗi tài khoản gắn bảo vệ chính chủ cho đúng 1 kênh, không mua chung); (3) Ảnh tĩnh lấy trên Google nên ném vào ChatGPT-4 yêu cầu vẽ lại bức ảnh tương tự để sở hữu bản quyền 100%; (4) Nhạc nền dùng YouTube Audio Library miễn phí hoặc mua Epidemic Sound ($15/tháng ~ 350.000 VNĐ gắn ID kênh).",
+    "Chiến lược nâng cấp Giọng đọc (Voice-Over) theo dòng tiền: Khi mới khởi nghiệp ít vốn, hãy dùng giọng AI chất lượng cao trên ElevenLabs hoặc Vbee (thực tế tại hệ thống vẫn có những kênh dùng giọng AI của Vbee kiếm đều đặn $500/ngày/kênh); khi kênh đã tạo ra lợi nhuận lớn mới lên Fiverr hoặc Upwork thuê diễn viên lồng tiếng người bản xứ."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước giải phẫu DNA nội dung của kênh đối thủ (Thumbnail, Tiêu đề SEO, Kịch bản 2.200 từ, B-roll Storyblocks/ChatGPT-4 và Voice/Music)",
+    "additional": [
+      "Giải phẫu 5 yếu tố Thumbnail và lập kho lưu trữ trên Google Drive: Ghi chép chi tiết bố cục, màu nền, màu khung chữ (tối đa 3 màu) của kênh top đầu ngành (@healthlonglife), đồng thời tải toàn bộ ảnh Thumbnail của 10 kênh đang lên về lưu trữ trên Google Drive theo nguyên tắc Shuhari.",
+      "Lập ma trận 100 Tiêu đề để bóc tách cụm Key SEO cố định: Copy 30–100 tiêu đề nhiều view nhất của đối thủ ra bảng, bôi đậm các cụm từ khóa lặp lại nhiều lần (như 'I Eat TOP 5 FOODS', 'Don't Get Old', 'still looks') để giữ nguyên làm khung tiêu đề chuẩn và chỉ thay đổi biến số nhân vật/độ tuổi.",
+      "Chép tay kịch bản mẫu và đo chuẩn số từ bằng YouTube Summary + Word: Thực hiện chép tay các video mẫu đầu tiên để nắm cấu trúc dẫn chuyện; sau đó dùng tiện ích 'YouTube Summary with ChatGPT' trích xuất transcript đưa vào Microsoft Word để xác định định mức độ dài (khoảng 2.200 từ cho video ~9.5 phút) và viết lại kịch bản mới có lồng ghép nhận định cá nhân.",
+      "Chuẩn hóa nguồn Footage, B-roll (Storyblocks) và Ảnh (ChatGPT-4): Cắt ngắn các đoạn phỏng vấn gốc làm dẫn chứng Fair Use; đăng ký tài khoản Storyblocks ($30/tháng) gắn trực tiếp ID kênh để lấy B-roll không bản quyền; và dùng ChatGPT-4 tái tạo lại các hình ảnh tìm được trên Google.",
+      "Thiết lập quy trình Giọng đọc (ElevenLabs/Vbee) và Nhạc nền (Epidemic Sound): Sử dụng giọng đọc AI từ ElevenLabs hoặc Vbee cho giai đoạn khởi đầu (nâng cấp lên thuê voice thật trên Fiverr/Upwork khi có doanh thu lớn), kết hợp nhạc nền miễn phí từ YouTube Audio Library hoặc gói Epidemic Sound ($15/tháng) đã gắn whitelist kênh."
+    ]
+  },
+  "sop_steps": [
+    "Bước 1 — Giải phẫu 5 yếu tố Thumbnail và lập kho lưu trữ trên Google Drive: Ghi chép chi tiết bố cục, màu nền, màu khung chữ (tối đa 3 màu) của kênh top đầu ngành (@healthlonglife), đồng thời tải toàn bộ ảnh Thumbnail của 10 kênh đang lên về lưu trữ trên Google Drive theo nguyên tắc Shuhari.",
+    "Bước 2 — Lập ma trận 100 Tiêu đề để bóc tách cụm Key SEO cố định: Copy 30–100 tiêu đề nhiều view nhất của đối thủ ra bảng, bôi đậm các cụm từ khóa lặp lại nhiều lần (như 'I Eat TOP 5 FOODS', 'Don't Get Old', 'still looks') để giữ nguyên làm khung tiêu đề chuẩn và chỉ thay đổi biến số nhân vật/độ tuổi.",
+    "Bước 3 — Chép tay kịch bản mẫu và đo chuẩn số từ bằng YouTube Summary + Word: Thực hiện chép tay các video mẫu đầu tiên để nắm cấu trúc dẫn chuyện; sau đó dùng tiện ích 'YouTube Summary with ChatGPT' trích xuất transcript đưa vào Microsoft Word để xác định định mức độ dài (khoảng 2.200 từ cho video ~9.5 phút) và viết lại kịch bản mới có lồng ghép nhận định cá nhân.",
+    "Bước 4 — Chuẩn hóa nguồn Footage, B-roll (Storyblocks) và Ảnh (ChatGPT-4): Cắt ngắn các đoạn phỏng vấn gốc làm dẫn chứng Fair Use; đăng ký tài khoản Storyblocks ($30/tháng) gắn trực tiếp ID kênh để lấy B-roll không bản quyền; và dùng ChatGPT-4 tái tạo lại các hình ảnh tìm được trên Google.",
+    "Bước 5 — Thiết lập quy trình Giọng đọc (ElevenLabs/Vbee) và Nhạc nền (Epidemic Sound): Sử dụng giọng đọc AI từ ElevenLabs hoặc Vbee cho giai đoạn khởi đầu (nâng cấp lên thuê voice thật trên Fiverr/Upwork khi có doanh thu lớn), kết hợp nhạc nền miễn phí từ YouTube Audio Library hoặc gói Epidemic Sound ($15/tháng) đã gắn whitelist kênh."
+  ],
+  "avoid_flags": [
+    "Không nhồi nhét quá 3 màu chữ hoặc tự ý sáng tạo bố cục Thumbnail rối rắm khi mới bắt đầu (nguyên nhân hàng đầu khiến CTR tụt thảm hại).",
+    "Không tự dịch từng từ tiếng Việt sang tiếng Anh (Word-by-Word) để đặt tiêu đề vì sẽ làm mất hoàn toàn các cụm Key SEO bản xứ mà người Mỹ thường tìm kiếm.",
+    "Không dùng chung một tài khoản Storyblocks hoặc Epidemic Sound mua lậu giá rẻ cho nhiều kênh vì không gắn được ID kênh vào danh sách bảo vệ bản quyền (Whitelist), dẫn đến bị đánh bản quyền hàng loạt.",
+    "Không lấy nguyên kịch bản (Transcript) của đối thủ đem tạo giọng đọc mới mà không viết lại hoặc lồng ghép góc nhìn/ý kiến cá nhân (nguy cơ dính gậy bản quyền kịch bản từ chủ kênh gốc)."
+  ],
+  "course_docs": [
+    {
+      "title": "Bảng Kế Hoạch Triển Khai Kênh & Phân Tích Nội Dung (2._GODA_-_Ke_hoach_tren_khai_kenh.xlsx)",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/2._GODA_-_Ke_hoach_tren_khai_kenh.xlsx",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/2._GODA_-_Ke_hoach_tren_khai_kenh.xlsx.md",
+      "link": "https://drive.google.com/file/d/1boD7G9XnyWXJhHkKen29DT1QqFRWAgK_/view"
+    },
+    {
+      "title": "Quy Trình Triển Khai Kênh GODA 2025 (1._GODA_-_QUY_TRINH_TRIEN_KHAI_KENH.pdf)",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/1._GODA_-_QUY_TRINH_TRIEN_KHAI_KENH.pdf",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/1._GODA_-_QUY_TRINH_TRIEN_KHAI_KENH.pdf.md",
+      "link": "https://drive.google.com/file/d/1Oez2iFNDTxAt-oWznLzKXLbj_AaJgtPs/view"
+    },
+    {
+      "title": "Mẫu Bảng Dream 100 Video 3 Tháng Gần Nhất (GODA_-_Dream_100_VIDEO_3_thang_gan_nhat_-_Mau.xlsx)",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/GODA_-_Dream_100_VIDEO_3_thang_gan_nhat_-_Mau.xlsx",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/GODA_-_Dream_100_VIDEO_3_thang_gan_nhat_-_Mau.xlsx.md",
+      "link": "https://drive.google.com/file/d/1j948tE06KYup3xyr9terHxU4498Y0FKE/view"
+    },
+    {
+      "title": "Mẫu Bảng Dream 100 Kênh Đối Thủ (GODA_-_Dream_100_-_Mau.xlsx)",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/GODA_-_Dream_100_-_Mau.xlsx",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/GODA_-_Dream_100_-_Mau.xlsx.md",
+      "link": "https://drive.google.com/file/d/1bH9vm929fYDJj4jhqq63y4Zi-Ucpu9pu/view"
+    }
+  ],
+  "source_transcript": "video/VIDEO-c8df1e/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "actual_topic": "Bài 80 là bài giảng kỹ thuật cốt lõi hướng dẫn Bước 2 (Phân tích nội dung / Giải phẫu DNA video thành công) trong 'GODA - Kế hoạch triển khai kênh.xlsx' do CEO GODA Vũ Việt Hoàng trực tiếp thực hành trên kênh mẫu Healthy Long Life (@healthlonglife). Giảng viên mổ xẻ toàn diện 6 lớp DNA cấu thành một video triệu view: (1) Thumbnail: Phân tích 5 yếu tố thị giác (nhân vật chính bên trái, nền xanh dương tối, khung chữ đỏ-trắng 'I'm 91' / 'I'm 90' kết hợp chữ vàng, không quá 3 màu chữ), áp dụng triết lý Shuhari ('Nghệ thuật đánh cắp ý tưởng') tải toàn bộ thumbnail của 10 kênh đang lên về lưu trữ trên Google Drive làm kho tài sản mật; (2) Tiêu đề: Bóc tách cấu trúc Key SEO cố định trong tiếng Anh (như 'I AVOID 3 FOODS and Don't Get Old! Barbara Taylor Bradford (90) still looks 59!'), giữ nguyên khung từ khóa và chỉ đổi biến số tuổi (90/59 -> 91/58), gom 3–100 tiêu đề ra bảng để bôi đen cụm từ khóa lặp lại và nhân bản chuỗi 10 kênh; (3) Content/Kịch bản: Yêu cầu người mới chép tay nguyên văn 30 video đầu tiên (như kỷ luật của team Water Media) để thấm nhuần cấu trúc câu trước khi dùng tiện ích 'YouTube Summary with ChatGPT & Claude' bóc transcript sang Microsoft Word đo độ dài (2.200 từ cho video 9 phút 23 giây) và thêm ý kiến cá nhân tránh gậy bản quyền; (4) Video nguồn & Ảnh: Cắt đoạn phỏng vấn gốc ngắn theo Fair Use, mua gói Storyblocks chính chủ ($30/tháng ~ 700k VNĐ gắn whitelist cho 1 kênh) và dùng ChatGPT-4 vẽ lại ảnh lấy từ Google; (5) Giọng đọc: Khởi đầu bằng AI (ElevenLabs, Vbee — có kênh Vbee vẫn kiếm $500/ngày), khi có tiền nâng cấp thuê người thật trên Fiverr, Upwork; (6) Nhạc nền: Dùng YouTube Audio Library miễn phí hoặc mua Epidemic Sound ($15/tháng ~ 350k VNĐ) gắn trực tiếp ID kênh.",
+  "category_group": "he_thong",
+  "niche_primary": "Phân tích DNA Video & Nguồn Tài nguyên Sản xuất",
+  "niche_id": "he_thong_youtube",
+  "target_market": "Việt Nam",
+  "market_code": "VN"
+}

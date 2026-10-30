@@ -1,0 +1,78 @@
+{
+  "sku": "VIDEO-134a25",
+  "title": "NGÁCH THỊ TRƯỜNG NHẬT BẢN TRENDS CỰC CAO - RPM 6-8",
+  "actual_topic": "NGÁCH THỊ TRƯỜNG NHẬT BẢN TRENDS CỰC CAO - RPM 6-8",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Triết Lý Sống & Đạo Làm Người",
+  "niche_id": "faceless-general",
+  "target_market": "Nhật Bản",
+  "market_code": "JP",
+  "key_takeaways": [
+    "Tác giả phân tích một kênh triết lý ở thị trường Nhật Bản, mới làm chưa được 2 tháng, đang rất trend và có RPM khoảng 6 đến 7, có khi tầm 8 nếu làm video dài hơn.",
+    "Kênh này lúc đầu test một nhân vật khác rồi chuyển hẳn sang ngách nhân vật đại diện đứng ra nói, đây là ngách nhỏ trong ngách triết lý.",
+    "Lời khuyên là đã đi sâu thì chỉ bám một ngách duy nhất, đừng làm nhiều ngách cùng lúc vì sẽ bị phân tán khán giả và kênh khó phát triển; kênh mới thì test ngách vẫn được.",
+    "Chính sách hiện nay ghét nội dung AI nên không được lặp đi lặp lại một ảnh hoặc vài ảnh, phải chèn nhiều ảnh hoặc nhiều video tự nhiên, video AI cũng được nhưng phải chèn nhiều.",
+    "Với lỗi sử dụng lại nội dung hay trùng lặp nội dung, tác giả hỗ trợ kháng được khoảng 99% nếu còn file gốc để edit, còn kháng bản quyền cũng hỗ trợ, nhưng đều tính phí vì tốn nhiều công sức."
+  ],
+  "edit_sop": {
+    "primary": "Phân tích ngách triết lý nhân vật đại diện thị trường Nhật Bản và cách edit an toàn theo chính sách YouTube",
+    "additional": [
+      "Xem các video gần đây của kênh đối thủ để thấy view cao, RPM khoảng 6 đến 7, có khi 8 nếu video dài hơn",
+      "Xem lịch sử kênh để biết kênh test ngách khác rồi chuyển hẳn sang ngách nhân vật đang trend",
+      "Chỉ bám một ngách duy nhất, đi sâu vào ngách nhỏ là nhân vật đại diện đứng ra nói",
+      "Edit đơn giản, chèn nhiều ảnh hoặc nhiều video tự nhiên hay video AI, không lặp đi lặp lại một ảnh"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng làm nhiều ngách khác nhau cùng lúc vì bị phân phối tập khán giả, kênh khó phát triển",
+    "Đừng để một ảnh hoặc vài ảnh, vài video lặp đi lặp lại cả video vì YouTube đang ghét nội dung AI kiểu này",
+    "Dễ bị dính sử dụng lại nội dung hoặc trùng lặp nội dung nếu không làm an toàn ngay từ đầu"
+  ],
+  "tools_mentioned": [
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@fuetunoijin",
+    "@偉人のコンパス1"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "01:00",
+      "seconds": 60,
+      "label": "Cái ngách của cái bà này nè"
+    },
+    {
+      "time": "02:15",
+      "seconds": 135,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "03:22",
+      "seconds": 202,
+      "label": "Để cho nó không bị phân phối lệch tệp khán giả"
+    },
+    {
+      "time": "04:07",
+      "seconds": 247,
+      "label": "thì như vậy thì nó sẽ, có một ngày Có một ngày, sĩ viết kênh của mọi người ấy, lúc đấy thì mắc công kháng thì…"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-134a25/transcript.txt",
+  "sop_steps": [
+    "Xem các video gần đây của kênh đối thủ để thấy view cao, RPM khoảng 6 đến 7, có khi 8 nếu video dài hơn",
+    "Xem lịch sử kênh để biết kênh test ngách khác rồi chuyển hẳn sang ngách nhân vật đang trend",
+    "Chỉ bám một ngách duy nhất, đi sâu vào ngách nhỏ là nhân vật đại diện đứng ra nói",
+    "Edit đơn giản, chèn nhiều ảnh hoặc nhiều video tự nhiên hay video AI, không lặp đi lặp lại một ảnh"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

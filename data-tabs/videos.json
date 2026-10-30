@@ -128,7 +128,8 @@
     "nicheCodes": [
       "H02",
       "H09"
-    ]
+    ],
+    "niche_primary": "Drama Gia Đình & Xã Hội Nhật Bản"
   },
   {
     "sku": "VIDEO-484f9e",
@@ -137,7 +138,7 @@
     "market": [
       "🇻🇳 Việt"
     ],
-    "niche": "Triết Lý & Phật Pháp Việt Nam",
+    "niche": "Tâm Linh & Lời Phật Dạy View Việt",
     "size": 212852945,
     "free": false,
     "drm": false,
@@ -203,7 +204,7 @@
     "mp4": "video/VIDEO-484f9e/VIDEO-484f9e.mp4",
     "image": "assets/thumbs/VIDEO-484f9e.png",
     "published_at": "2026-08-08",
-    "contentNiche": "Triết Lý & Phật Pháp Việt Nam",
+    "contentNiche": "Tâm Linh & Lời Phật Dạy View Việt",
     "channelResolve": [
       {
         "handle": "@자비의법음-j5h",
@@ -238,7 +239,8 @@
     "nicheCodes": [
       "H02",
       "H12"
-    ]
+    ],
+    "niche_primary": "Tâm Linh & Lời Phật Dạy View Việt"
   },
   {
     "sku": "VIDEO-e24c31",
@@ -248,7 +250,7 @@
       "🌐 Ngoại",
       "🇰🇷 Hàn"
     ],
-    "niche": "Tâm Linh & Thu Hút May Mắn",
+    "niche": "Phong Thủy & Thu Hút Tài Lộc Hàn Quốc",
     "size": 183819452,
     "free": false,
     "drm": false,
@@ -305,7 +307,7 @@
     "mp4": "video/VIDEO-e24c31/VIDEO-e24c31.mp4",
     "image": "assets/thumbs/VIDEO-e24c31.png",
     "published_at": "2026-08-03",
-    "contentNiche": "Tâm Linh & Thu Hút May Mắn",
+    "contentNiche": "Phong Thủy & Thu Hút Tài Lộc Hàn Quốc",
     "tags": [
       "Ngoại",
       "Hàn"
@@ -331,7 +333,8 @@
     "nicheCode": "H10",
     "nicheCodes": [
       "H10"
-    ]
+    ],
+    "niche_primary": "Phong Thủy & Thu Hút Tài Lộc Hàn Quốc"
   },
   {
     "sku": "VIDEO-a7bfd0",
@@ -341,7 +344,7 @@
       "🇰🇷 Hàn",
       "🇻🇳 Việt"
     ],
-    "niche": "Lời Chúa & Tâm Linh Ngoại",
+    "niche": "Khám Kênh & Khắc Phục Lỗi 0 View",
     "size": 178441037,
     "free": false,
     "drm": false,
@@ -407,7 +410,7 @@
     "mp4": "video/VIDEO-a7bfd0/VIDEO-a7bfd0.mp4",
     "image": "assets/thumbs/VIDEO-a7bfd0.png",
     "published_at": "2026-07-29",
-    "contentNiche": "Lời Chúa & Tâm Linh Ngoại",
+    "contentNiche": "Khám Kênh & Khắc Phục Lỗi 0 View",
     "tags": [
       "Hàn",
       "Việt"
@@ -434,7 +437,8 @@
     "nicheCodes": [
       "H10",
       "H16"
-    ]
+    ],
+    "niche_primary": "Khám Kênh & Khắc Phục Lỗi 0 View"
   },
   {
     "sku": "VIDEO-4b3c09",
@@ -443,7 +447,7 @@
     "market": [
       "🇰🇷 Hàn"
     ],
-    "niche": "Ẩm Thực & Mẹo Vặt Hàn Quốc",
+    "niche": "Bán Content Đa Ngách Hàn Quốc",
     "size": 347816031,
     "free": false,
     "drm": false,
@@ -503,7 +507,7 @@
     "mp4": "video/VIDEO-4b3c09/VIDEO-4b3c09.mp4",
     "image": "assets/thumbs/VIDEO-4b3c09.png",
     "published_at": "2026-07-26",
-    "contentNiche": "Ẩm Thực & Mẹo Vặt Hàn Quốc",
+    "contentNiche": "Bán Content Đa Ngách Hàn Quốc",
     "tags": [
       "Hàn"
     ],
@@ -528,7 +532,8 @@
     "nicheCode": "H16",
     "nicheCodes": [
       "H16"
-    ]
+    ],
+    "niche_primary": "Bán Content Đa Ngách Hàn Quốc"
   },
   {
     "sku": "VIDEO-28e1cc",
@@ -538,7 +543,7 @@
       "🇻🇳 Việt",
       "🇨🇳 Trung"
     ],
-    "niche": "Reup Hoạt Hình Bilibili",
+    "niche": "Reup Hoạt Hình Bilibili Lồng Tiếng",
     "size": 357802877,
     "free": false,
     "drm": false,
@@ -594,7 +599,7 @@
     "mp4": "video/VIDEO-28e1cc/VIDEO-28e1cc.mp4",
     "image": "assets/thumbs/VIDEO-28e1cc.png",
     "published_at": "2026-07-22",
-    "contentNiche": "Reup Hoạt Hình Bilibili",
+    "contentNiche": "Reup Hoạt Hình Bilibili Lồng Tiếng",
     "tags": [
       "Việt",
       "Trung"
@@ -621,7 +626,8 @@
     "nicheCodes": [
       "H22",
       "H37"
-    ]
+    ],
+    "niche_primary": "Reup Hoạt Hình Bilibili Lồng Tiếng"
   },
   {
     "sku": "VIDEO-d2cd90",
@@ -630,7 +636,7 @@
     "market": [
       "🇯🇵 Nhật"
     ],
-    "niche": "Triết Lý & Trẻ Hóa Nhật Bản",
+    "niche": "Chữa Lành & Trẻ Hóa Nhật Bản",
     "size": 198973528,
     "free": false,
     "drm": false,
@@ -690,7 +696,7 @@
     "mp4": "video/VIDEO-d2cd90/VIDEO-d2cd90.mp4",
     "image": "assets/thumbs/VIDEO-d2cd90.png",
     "published_at": "2026-07-16",
-    "contentNiche": "Triết Lý & Trẻ Hóa Nhật Bản",
+    "contentNiche": "Chữa Lành & Trẻ Hóa Nhật Bản",
     "tags": [
       "Nhật"
     ],
@@ -716,7 +722,8 @@
     "nicheCodes": [
       "H07",
       "H16"
-    ]
+    ],
+    "niche_primary": "Chữa Lành & Trẻ Hóa Nhật Bản"
   },
   {
     "sku": "VIDEO-9aff6d",
@@ -725,7 +732,7 @@
     "market": [
       "🇯🇵 Nhật"
     ],
-    "niche": "Công Nghệ & Mẹo Vặt Cuộc Sống Nhật",
+    "niche": "Xe Cộ & Trí Tuệ Dân Gian Nhật Bản",
     "size": 205302720,
     "free": false,
     "drm": false,
@@ -786,7 +793,7 @@
     "mp4": "video/VIDEO-9aff6d/VIDEO-9aff6d.mp4",
     "image": "assets/thumbs/VIDEO-9aff6d.png",
     "published_at": "2026-07-12",
-    "contentNiche": "Công Nghệ & Mẹo Vặt Cuộc Sống Nhật",
+    "contentNiche": "Xe Cộ & Trí Tuệ Dân Gian Nhật Bản",
     "tags": [
       "Nhật"
     ],
@@ -811,7 +818,8 @@
     "nicheCode": "H08",
     "nicheCodes": [
       "H08"
-    ]
+    ],
+    "niche_primary": "Xe Cộ & Trí Tuệ Dân Gian Nhật Bản"
   },
   {
     "sku": "VIDEO-e90874",
@@ -820,7 +828,7 @@
     "market": [
       "🌐 Ngoại"
     ],
-    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "niche": "Nhân Bản Thị Trường Đa Quốc Gia",
     "size": 252833711,
     "free": false,
     "drm": false,
@@ -888,7 +896,7 @@
     "mp4": "video/VIDEO-e90874/VIDEO-e90874.mp4",
     "image": "assets/thumbs/VIDEO-e90874.png",
     "published_at": "2026-07-06",
-    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "contentNiche": "Nhân Bản Thị Trường Đa Quốc Gia",
     "tags": [
       "Ngoại"
     ],
@@ -914,7 +922,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Nhân Bản Thị Trường Đa Quốc Gia"
   },
   {
     "sku": "VIDEO-c5837a",
@@ -925,7 +934,7 @@
       "🇰🇷 Hàn",
       "🇻🇳 Việt"
     ],
-    "niche": "Tâm Linh & Triết Lý Saito Hitori",
+    "niche": "Bán Content & Reup Đa Thị Trường",
     "size": 211960392,
     "free": false,
     "drm": false,
@@ -987,7 +996,7 @@
     "mp4": "video/VIDEO-c5837a/VIDEO-c5837a.mp4",
     "image": "assets/thumbs/VIDEO-c5837a.png",
     "published_at": "2026-07-02",
-    "contentNiche": "Tâm Linh & Triết Lý Saito Hitori",
+    "contentNiche": "Bán Content & Reup Đa Thị Trường",
     "tags": [
       "Nhật",
       "Hàn",
@@ -1016,7 +1025,8 @@
       "H07",
       "H16",
       "H22"
-    ]
+    ],
+    "niche_primary": "Bán Content & Reup Đa Thị Trường"
   },
   {
     "sku": "VIDEO-348217",
@@ -1091,7 +1101,8 @@
     "nicheCode": "H16",
     "nicheCodes": [
       "H16"
-    ]
+    ],
+    "niche_primary": "Nhân Bản Thị Trường (Hàn - Nhật)"
   },
   {
     "sku": "VIDEO-f74bb1",
@@ -1165,7 +1176,8 @@
     "nicheCode": "H16",
     "nicheCodes": [
       "H16"
-    ]
+    ],
+    "niche_primary": "Sức Khỏe & Rau Củ Dưa Chuột"
   },
   {
     "sku": "VIDEO-1aaf46",
@@ -1271,7 +1283,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-21956b",
@@ -1347,7 +1360,8 @@
       "H08",
       "H10",
       "H16"
-    ]
+    ],
+    "niche_primary": "Tâm Linh & Thu Hút May Mắn"
   },
   {
     "sku": "VIDEO-e91589",
@@ -1357,7 +1371,7 @@
       "🇯🇵 Nhật",
       "🇻🇳 Việt"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "Động vật hoang dã & Phim tài liệu AI",
     "size": 26354465,
     "free": true,
     "drm": false,
@@ -1399,7 +1413,7 @@
     "mp4": "video/VIDEO-e91589/VIDEO-e91589.mp4",
     "image": "assets/thumbs/VIDEO-e91589.png",
     "published_at": "2026-06-14",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "Động vật hoang dã & Phim tài liệu AI",
     "tags": [
       "Nhật",
       "Việt"
@@ -1418,10 +1432,13 @@
     "resolution": "1080p",
     "width": 3840,
     "height": 2160,
-    "nicheCode": "H29",
+    "nicheCode": "H08",
     "nicheCodes": [
-      "H29"
-    ]
+      "H08",
+      "H03",
+      "H15"
+    ],
+    "niche_primary": "Động vật hoang dã & Phim tài liệu AI"
   },
   {
     "sku": "VIDEO-34c92b",
@@ -1482,7 +1499,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Triết Lý & Phật Pháp"
   },
   {
     "sku": "VIDEO-21824a",
@@ -1491,7 +1509,7 @@
     "market": [
       "🇻🇳 Việt"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "Tôn giáo & Giải nghĩa Kinh Thánh",
     "size": 21668016,
     "free": true,
     "drm": false,
@@ -1535,7 +1553,7 @@
     "mp4": "video/VIDEO-21824a/VIDEO-21824a.mp4",
     "image": "assets/thumbs/VIDEO-21824a.png",
     "published_at": "2026-06-06",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "Tôn giáo & Giải nghĩa Kinh Thánh",
     "tags": [
       "Việt"
     ],
@@ -1556,7 +1574,8 @@
     "nicheCode": "H01",
     "nicheCodes": [
       "H01"
-    ]
+    ],
+    "niche_primary": "Tôn giáo & Giải nghĩa Kinh Thánh"
   },
   {
     "sku": "VIDEO-84a039",
@@ -1631,7 +1650,8 @@
       "H01",
       "H07",
       "H08"
-    ]
+    ],
+    "niche_primary": "Tâm Linh & Thu Hút May Mắn"
   },
   {
     "sku": "VIDEO-817ae6",
@@ -1697,7 +1717,8 @@
       "H05",
       "H07",
       "H40"
-    ]
+    ],
+    "niche_primary": "Tâm Linh & Thu Hút May Mắn"
   },
   {
     "sku": "VIDEO-4425fc",
@@ -1706,7 +1727,7 @@
     "market": [
       "🌐 Ngoại"
     ],
-    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "niche": "Google AdSense & Quản trị dòng tiền",
     "size": 21455922,
     "free": false,
     "drm": false,
@@ -1741,7 +1762,7 @@
     "mp4": "video/VIDEO-4425fc/VIDEO-4425fc.mp4",
     "image": "assets/thumbs/VIDEO-4425fc.png",
     "published_at": "2026-05-30",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "contentNiche": "Google AdSense & Quản trị dòng tiền",
     "tags": [
       "Ngoại"
     ],
@@ -1763,7 +1784,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Google AdSense & Quản trị dòng tiền"
   },
   {
     "sku": "VIDEO-2de9e4",
@@ -1827,7 +1849,8 @@
     "nicheCodes": [
       "H04",
       "H05"
-    ]
+    ],
+    "niche_primary": "Tâm Linh & Thu Hút May Mắn"
   },
   {
     "sku": "VIDEO-2ba0d1",
@@ -1895,16 +1918,18 @@
       "H02",
       "H08",
       "H14"
-    ]
+    ],
+    "niche_primary": "Triết Lý & Phật Pháp"
   },
   {
     "sku": "VIDEO-5d54d0",
     "title": "Thực chiến hướng dẫn train Claude làm prompt bám theo kịch bản đối thủ xào nấu cho bất kỳ chủ đề (ngách) nào muốn - Quy trình chuẩn bán content dành cho ngách bám theo 70% kịch bản đối thủ",
     "index": 23,
     "market": [
-      "🇯🇵 Nhật"
+      "🇻🇳 Việt",
+      "🇨🇳 Trung"
     ],
-    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "niche": "Bán Content Triết Lý Nhật Bản",
     "size": 746399312,
     "free": false,
     "drm": false,
@@ -1944,7 +1969,7 @@
     "mp4": "video/VIDEO-5d54d0/VIDEO-5d54d0.mp4",
     "image": "assets/thumbs/VIDEO-5d54d0.png",
     "published_at": "2026-05-23",
-    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "contentNiche": "Bán Content Triết Lý Nhật Bản",
     "tags": [
       "Nhật"
     ],
@@ -1966,7 +1991,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Bán Content Triết Lý Nhật Bản"
   },
   {
     "sku": "VIDEO-2277b3",
@@ -2025,7 +2051,8 @@
     "nicheCode": "H04",
     "nicheCodes": [
       "H04"
-    ]
+    ],
+    "niche_primary": "Sức Khỏe & Dinh Dưỡng"
   },
   {
     "sku": "VIDEO-f77c31",
@@ -2034,7 +2061,7 @@
     "market": [
       "🇻🇳 Việt"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "Bán content & Triết lý người già",
     "size": 15267371,
     "free": true,
     "drm": false,
@@ -2070,7 +2097,7 @@
     "mp4": "video/VIDEO-f77c31/VIDEO-f77c31.mp4",
     "image": "assets/thumbs/VIDEO-f77c31.png",
     "published_at": "2026-05-19",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "Bán content & Triết lý người già",
     "tags": [
       "Việt"
     ],
@@ -2091,7 +2118,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Bán content & Triết lý người già"
   },
   {
     "sku": "VIDEO-ca0b1a",
@@ -2159,16 +2187,18 @@
     "nicheCode": "H04",
     "nicheCodes": [
       "H04"
-    ]
+    ],
+    "niche_primary": "Sức Khỏe & Dinh Dưỡng"
   },
   {
     "sku": "VIDEO-54c8f7",
     "title": "Full quy trình thực chiến hướng dẫn dùng Claude train prompt bất kỳ chủ đề ngách nào mình muốn và cách đóng gói Skill để dùng làm viết kịch bản, tạo ảnh, tạo thumb... (video dài hơn 1 giờ) - Quy Trình dạng tự tạo làm mới chủ đề, kịch bản, hình ảnh... ",
     "index": 27,
     "market": [
-      "🇯🇵 Nhật"
+      "🇻🇳 Việt",
+      "🌐 Ngoại"
     ],
-    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "niche": "Tối Ưu Mắt Xem Livestream & Quảng Cáo",
     "size": 795942524,
     "free": false,
     "drm": false,
@@ -2202,7 +2232,7 @@
     "mp4": "video/VIDEO-54c8f7/VIDEO-54c8f7.mp4",
     "image": "assets/thumbs/VIDEO-54c8f7.png",
     "published_at": "2026-05-18",
-    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "contentNiche": "Tối Ưu Mắt Xem Livestream & Quảng Cáo",
     "tags": [
       "Nhật"
     ],
@@ -2224,7 +2254,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Tối Ưu Mắt Xem Livestream & Quảng Cáo"
   },
   {
     "sku": "VIDEO-3e943c",
@@ -2233,7 +2264,7 @@
     "market": [
       "🌐 Ngoại"
     ],
-    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "niche": "Kỹ Thuật AI & Hạ Tầng Công Cụ",
     "size": 10530835,
     "free": false,
     "drm": false,
@@ -2277,7 +2308,7 @@
     "mp4": "video/VIDEO-3e943c/VIDEO-3e943c.mp4",
     "image": "assets/thumbs/VIDEO-3e943c.png",
     "published_at": "2026-05-16",
-    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "contentNiche": "Kỹ Thuật AI & Hạ Tầng Công Cụ",
     "tags": [
       "Ngoại"
     ],
@@ -2299,7 +2330,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Kỹ Thuật AI & Hạ Tầng Công Cụ"
   },
   {
     "sku": "VIDEO-469cb5",
@@ -2366,7 +2398,8 @@
     "nicheCode": "H01",
     "nicheCodes": [
       "H01"
-    ]
+    ],
+    "niche_primary": "Lời Chúa & Tâm Linh Ngoại"
   },
   {
     "sku": "VIDEO-7312df",
@@ -2427,7 +2460,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-2235fb",
@@ -2490,7 +2524,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-e9e879",
@@ -2549,7 +2584,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-6283a6",
@@ -2558,7 +2594,7 @@
     "market": [
       "🇻🇳 Việt"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "Công Cụ & Tự Động Hóa Sản Xuất H2DEV",
     "size": 26812421,
     "free": true,
     "drm": false,
@@ -2594,7 +2630,7 @@
     "mp4": "video/VIDEO-6283a6/VIDEO-6283a6.mp4",
     "image": "assets/thumbs/VIDEO-6283a6.png",
     "published_at": "2026-05-11",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "Công Cụ & Tự Động Hóa Sản Xuất H2DEV",
     "tags": [
       "Việt"
     ],
@@ -2615,7 +2651,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Công Cụ & Tự Động Hóa Sản Xuất H2DEV"
   },
   {
     "sku": "VIDEO-46c57e",
@@ -2624,7 +2661,7 @@
     "market": [
       "🌐 Ngoại"
     ],
-    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "niche": "Kháng nghị & Chính sách YouTube",
     "size": 29383580,
     "free": true,
     "drm": false,
@@ -2674,7 +2711,7 @@
     "mp4": "video/VIDEO-46c57e/VIDEO-46c57e.mp4",
     "image": "assets/thumbs/VIDEO-46c57e.png",
     "published_at": "2026-05-08",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "contentNiche": "Kháng nghị & Chính sách YouTube",
     "tags": [
       "Ngoại"
     ],
@@ -2696,7 +2733,8 @@
     "nicheCode": "H01",
     "nicheCodes": [
       "H01"
-    ]
+    ],
+    "niche_primary": "Kháng nghị & Chính sách YouTube"
   },
   {
     "sku": "VIDEO-b1208e",
@@ -2755,7 +2793,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-1acb10",
@@ -2814,7 +2853,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-a1c98f",
@@ -2823,7 +2863,7 @@
     "market": [
       "🌐 Ngoại"
     ],
-    "niche": "Triết Lý Sống & Đạo Làm Người",
+    "niche": "Kháng Bản Quyền & Chính Sách YPP",
     "size": 215886558,
     "free": false,
     "drm": false,
@@ -2851,7 +2891,7 @@
     "mp4": "video/VIDEO-a1c98f/VIDEO-a1c98f.mp4",
     "image": "assets/thumbs/VIDEO-a1c98f.png",
     "published_at": "2026-05-02",
-    "contentNiche": "Triết Lý Sống & Đạo Làm Người",
+    "contentNiche": "Kháng Bản Quyền & Chính Sách YPP",
     "tags": [
       "Ngoại"
     ],
@@ -2873,7 +2913,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Kháng Bản Quyền & Chính Sách YPP"
   },
   {
     "sku": "VIDEO-70f1f1",
@@ -2937,7 +2978,8 @@
     "nicheCodes": [
       "H02",
       "H06"
-    ]
+    ],
+    "niche_primary": "Triết Lý & Phật Pháp"
   },
   {
     "sku": "VIDEO-33f474",
@@ -2997,7 +3039,8 @@
     "nicheCodes": [
       "H07",
       "H40"
-    ]
+    ],
+    "niche_primary": "Khám Kênh & Tối Ưu Tăng Trưởng"
   },
   {
     "sku": "VIDEO-28bb9b",
@@ -3058,16 +3101,18 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-9f9fbc",
     "title": "*BẮT BUỘC PHẢI XEM - DÀNH CHO NGƯỜI MỚI HOÀN TOÀN CHƯA BIẾT GÌ - HƯỚNG DẪN FULL QUY TRÌNH SETUP SETTING KÊNH CHUẨN NGAY TỪ ĐẦU THEO CHÍNH SÁCH MỚI NHẤT 2026 (TẠO KÊNH, SETUP CÀI ĐẶT KÊNH, SEO KÊNH, NGÂM KÊNH, NGÁCH LÀM...)",
     "index": 41,
     "market": [
-      "🇯🇵 Nhật"
+      "🇺🇸 Mỹ",
+      "🌐 Ngoại"
     ],
-    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "niche": "Phật Pháp & Tâm Linh View Ngoại",
     "size": 172556570,
     "free": false,
     "drm": false,
@@ -3113,7 +3158,7 @@
     "mp4": "video/VIDEO-9f9fbc/VIDEO-9f9fbc.mp4",
     "image": "assets/thumbs/VIDEO-9f9fbc.png",
     "published_at": "2026-04-22",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "contentNiche": "Phật Pháp & Tâm Linh View Ngoại",
     "tags": [
       "Nhật"
     ],
@@ -3135,7 +3180,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Phật Pháp & Tâm Linh View Ngoại"
   },
   {
     "sku": "VIDEO-10f129",
@@ -3197,14 +3243,16 @@
     "nicheCode": "H04",
     "nicheCodes": [
       "H04"
-    ]
+    ],
+    "niche_primary": "Sức Khỏe & Dinh Dưỡng"
   },
   {
     "sku": "VIDEO-2553da",
     "title": "SHOW THỰC TẾ KÊNH EM BUILD LÀM TRONG 20 NGÀY KHÔNG CHE VÀ VỪA ĐỦ ĐẾN ĐIỀU KIỆN BẬT KIẾM TIỀN | UPDATE 18-04-2026",
     "index": 43,
     "market": [
-      "🇨🇳 Trung"
+      "🇻🇳 Việt",
+      "🇰🇷 Hàn"
     ],
     "niche": "Bán Content & Phát Triển Kênh",
     "size": 41534496,
@@ -3262,7 +3310,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Bán Content & Phát Triển Kênh"
   },
   {
     "sku": "VIDEO-3fd0d9",
@@ -3330,7 +3379,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-502960",
@@ -3392,7 +3442,8 @@
     "nicheCodes": [
       "H15",
       "H38"
-    ]
+    ],
+    "niche_primary": "Drama Gia Đình & Xã Hội"
   },
   {
     "sku": "VIDEO-9873fb",
@@ -3458,7 +3509,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Khám Kênh Thực Chiến"
   },
   {
     "sku": "VIDEO-10ceec",
@@ -3525,7 +3577,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-e83319",
@@ -3596,7 +3649,8 @@
     "nicheCode": "H09",
     "nicheCodes": [
       "H09"
-    ]
+    ],
+    "niche_primary": "Drama Gia Đình & Xã Hội"
   },
   {
     "sku": "VIDEO-9a6957",
@@ -3605,7 +3659,7 @@
     "market": [
       "🇰🇷 Hàn"
     ],
-    "niche": "Triết Lý Sống & Đạo Làm Người",
+    "niche": "Liên Kết GA & Bật Kiếm Tiền YPP",
     "size": 68581922,
     "free": false,
     "drm": false,
@@ -3633,7 +3687,7 @@
     "mp4": "video/VIDEO-9a6957/VIDEO-9a6957.mp4",
     "image": "assets/thumbs/VIDEO-9a6957.png",
     "published_at": "2026-04-11",
-    "contentNiche": "Triết Lý Sống & Đạo Làm Người",
+    "contentNiche": "Liên Kết GA & Bật Kiếm Tiền YPP",
     "channelResolve": [
       {
         "handle": "@UC-pBHWL4Eb7QwBTF0072Afg",
@@ -3664,7 +3718,8 @@
     "nicheCode": "H13",
     "nicheCodes": [
       "H13"
-    ]
+    ],
+    "niche_primary": "Liên Kết GA & Bật Kiếm Tiền YPP"
   },
   {
     "sku": "VIDEO-ba3904",
@@ -3673,7 +3728,7 @@
     "market": [
       "🇻🇳 Việt"
     ],
-    "niche": "Cộng Đồng & Hỗ Trợ VIP",
+    "niche": "Cộng đồng & Hỗ trợ VIP",
     "size": 31662577,
     "free": false,
     "drm": false,
@@ -3707,7 +3762,7 @@
     "mp4": "video/VIDEO-ba3904/VIDEO-ba3904.mp4",
     "image": "assets/thumbs/VIDEO-ba3904.png",
     "published_at": "2026-04-10",
-    "contentNiche": "Cộng Đồng & Hỗ Trợ VIP",
+    "contentNiche": "Cộng đồng & Hỗ trợ VIP",
     "tags": [
       "Việt"
     ],
@@ -3729,7 +3784,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Cộng đồng & Hỗ trợ VIP"
   },
   {
     "sku": "VIDEO-acd33f",
@@ -3792,7 +3848,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-1a7f58",
@@ -3802,7 +3859,7 @@
       "🇰🇷 Hàn",
       "🇯🇵 Nhật"
     ],
-    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "niche": "Tư Duy Chọn Ngách Xanh & Đọc Chỉ Số",
     "size": 94848406,
     "free": false,
     "drm": false,
@@ -3830,7 +3887,7 @@
     "mp4": "video/VIDEO-1a7f58/VIDEO-1a7f58.mp4",
     "image": "assets/thumbs/VIDEO-1a7f58.png",
     "published_at": "2026-04-08",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "contentNiche": "Tư Duy Chọn Ngách Xanh & Đọc Chỉ Số",
     "tags": [
       "Hàn",
       "Nhật"
@@ -3856,7 +3913,8 @@
     "nicheCode": "H12",
     "nicheCodes": [
       "H12"
-    ]
+    ],
+    "niche_primary": "Tư Duy Chọn Ngách Xanh & Đọc Chỉ Số"
   },
   {
     "sku": "VIDEO-5785a5",
@@ -3925,7 +3983,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-64130d",
@@ -3994,7 +4053,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-5c0b20",
@@ -4005,7 +4065,7 @@
       "🇰🇷 Hàn",
       "🇻🇳 Việt"
     ],
-    "niche": "Drama Gia Đình & Xã Hội",
+    "niche": "Kỹ Thuật Tạo Giọng Đọc AI Tự Nhiên",
     "size": 149689898,
     "free": false,
     "drm": false,
@@ -4033,7 +4093,7 @@
     "mp4": "video/VIDEO-5c0b20/VIDEO-5c0b20.mp4",
     "image": "assets/thumbs/VIDEO-5c0b20.png",
     "published_at": "2026-04-05",
-    "contentNiche": "Drama Gia Đình & Xã Hội",
+    "contentNiche": "Kỹ Thuật Tạo Giọng Đọc AI Tự Nhiên",
     "tags": [
       "Mỹ",
       "Hàn",
@@ -4062,7 +4122,8 @@
     "nicheCode": "H13",
     "nicheCodes": [
       "H13"
-    ]
+    ],
+    "niche_primary": "Kỹ Thuật Tạo Giọng Đọc AI Tự Nhiên"
   },
   {
     "sku": "VIDEO-3f85a1",
@@ -4072,7 +4133,7 @@
       "🇨🇦 Canada",
       "🇯🇵 Nhật"
     ],
-    "niche": "Drama Gia Đình & Xã Hội",
+    "niche": "Luyện Giọng Đọc & Tạo Giọng Kể Chuyện",
     "size": 104172638,
     "free": false,
     "drm": false,
@@ -4100,7 +4161,7 @@
     "mp4": "video/VIDEO-3f85a1/VIDEO-3f85a1.mp4",
     "image": "assets/thumbs/VIDEO-3f85a1.png",
     "published_at": "2026-04-03",
-    "contentNiche": "Drama Gia Đình & Xã Hội",
+    "contentNiche": "Luyện Giọng Đọc & Tạo Giọng Kể Chuyện",
     "tags": [
       "Canada",
       "Nhật"
@@ -4127,7 +4188,8 @@
     "nicheCodes": [
       "H03",
       "H27"
-    ]
+    ],
+    "niche_primary": "Luyện Giọng Đọc & Tạo Giọng Kể Chuyện"
   },
   {
     "sku": "VIDEO-bf7b32",
@@ -4188,7 +4250,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-4a5aac",
@@ -4261,7 +4324,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-a2b317",
@@ -4272,7 +4336,7 @@
       "🇷🇺 Nga",
       "🌐 Ngoại"
     ],
-    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "niche": "Thuế Hoa Kỳ, GA & Nhận Tiền YouTube",
     "size": 88562194,
     "free": false,
     "drm": false,
@@ -4300,7 +4364,7 @@
     "mp4": "video/VIDEO-a2b317/VIDEO-a2b317.mp4",
     "image": "assets/thumbs/VIDEO-a2b317.png",
     "published_at": "2026-03-29",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "contentNiche": "Thuế Hoa Kỳ, GA & Nhận Tiền YouTube",
     "tags": [
       "Mỹ",
       "Nga",
@@ -4326,7 +4390,8 @@
     "nicheCode": "H11",
     "nicheCodes": [
       "H11"
-    ]
+    ],
+    "niche_primary": "Thuế Hoa Kỳ, GA & Nhận Tiền YouTube"
   },
   {
     "sku": "VIDEO-2469ee",
@@ -4388,7 +4453,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-dbd487",
@@ -4448,7 +4514,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-d71802",
@@ -4511,14 +4578,18 @@
     "nicheCode": "H10",
     "nicheCodes": [
       "H10"
-    ]
+    ],
+    "niche_primary": "Triết Lý Sống & Đạo Làm Người"
   },
   {
     "sku": "VIDEO-d20744",
     "title": "NHẬN VÀ TẢI MIỄN PHÍ 6 BỘ TOOL TẠI ĐÂY !",
     "index": 63,
     "market": [
-      "🇨🇳 Trung"
+      "🇯🇵 Nhật",
+      "🇰🇷 Hàn",
+      "🇺🇸 Mỹ",
+      "🇻🇳 Việt"
     ],
     "niche": "Bán Content & Phát Triển Kênh",
     "size": 7897341,
@@ -4613,7 +4684,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Bán Content & Phát Triển Kênh"
   },
   {
     "sku": "VIDEO-33d701",
@@ -4682,7 +4754,8 @@
       "H05",
       "H09",
       "H20"
-    ]
+    ],
+    "niche_primary": "Triết Lý Sống & Đạo Làm Người"
   },
   {
     "sku": "VIDEO-7e00ee",
@@ -4755,7 +4828,8 @@
     "nicheCodes": [
       "H03",
       "H09"
-    ]
+    ],
+    "niche_primary": "Drama Gia Đình & Xã Hội"
   },
   {
     "sku": "VIDEO-ff9be6",
@@ -4764,7 +4838,7 @@
     "market": [
       "🌐 Ngoại"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "Phân tích chỉ số & Đánh giá kênh",
     "size": 60797189,
     "free": false,
     "drm": false,
@@ -4801,7 +4875,7 @@
     "mp4": "video/VIDEO-ff9be6/VIDEO-ff9be6.mp4",
     "image": "assets/thumbs/VIDEO-ff9be6.png",
     "published_at": "2026-03-20",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "Phân tích chỉ số & Đánh giá kênh",
     "tags": [
       "Ngoại"
     ],
@@ -4824,16 +4898,17 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Phân tích chỉ số & Đánh giá kênh"
   },
   {
     "sku": "VIDEO-6ad3fe",
     "title": "FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026",
     "index": 67,
     "market": [
-      "🇨🇳 Trung"
+      "🇻🇳 Việt"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "Chính sách nội dung AI & Xử lý vi phạm",
     "size": 22218451,
     "free": false,
     "drm": false,
@@ -4870,7 +4945,7 @@
     "mp4": "video/VIDEO-6ad3fe/VIDEO-6ad3fe.mp4",
     "image": "assets/thumbs/VIDEO-6ad3fe.png",
     "published_at": "2026-03-20",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "Chính sách nội dung AI & Xử lý vi phạm",
     "tags": [
       "Trung"
     ],
@@ -4893,16 +4968,17 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Chính sách nội dung AI & Xử lý vi phạm"
   },
   {
     "sku": "VIDEO-7f0bb4",
     "title": "NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ KHI BUILD KÊNH - CHUẨN CHÍNH SÁCH MỚI 2026",
     "index": 68,
     "market": [
-      "🇨🇳 Trung"
+      "🇻🇳 Việt"
     ],
-    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "niche": "Nuôi kênh & Xây dựng Trust Score",
     "size": 28246743,
     "free": false,
     "drm": false,
@@ -4939,7 +5015,7 @@
     "mp4": "video/VIDEO-7f0bb4/VIDEO-7f0bb4.mp4",
     "image": "assets/thumbs/VIDEO-7f0bb4.png",
     "published_at": "2026-03-20",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "contentNiche": "Nuôi kênh & Xây dựng Trust Score",
     "tags": [
       "Trung"
     ],
@@ -4962,16 +5038,18 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Nuôi kênh & Xây dựng Trust Score"
   },
   {
     "sku": "VIDEO-7db740",
     "title": "CÁCH SEO CHUẨN TỪ KHOÁ KÊNH - TỪ KHOÁ VIDEO VÀ MÔ TẢ VIDEO MỚI NHẤT CHÍNH SÁCH 2026",
     "index": 69,
     "market": [
-      "🇨🇳 Trung"
+      "🇻🇳 Việt",
+      "🌐 Ngoại"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "SEO Thuật toán & Tối ưu Metadata",
     "size": 5472949,
     "free": false,
     "drm": false,
@@ -5008,7 +5086,7 @@
     "mp4": "video/VIDEO-7db740/VIDEO-7db740.mp4",
     "image": "assets/thumbs/VIDEO-7db740.png",
     "published_at": "2026-03-20",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "SEO Thuật toán & Tối ưu Metadata",
     "tags": [
       "Trung"
     ],
@@ -5031,7 +5109,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "SEO Thuật toán & Tối ưu Metadata"
   },
   {
     "sku": "VIDEO-546afa",
@@ -5096,7 +5175,8 @@
     "nicheCode": "H03",
     "nicheCodes": [
       "H03"
-    ]
+    ],
+    "niche_primary": "Sức Khỏe & Dinh Dưỡng"
   },
   {
     "sku": "VIDEO-d84a78",
@@ -5106,7 +5186,7 @@
       "🇰🇷 Hàn",
       "🇻🇳 Việt"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "Hợp tác phát triển & Phật pháp Hàn Quốc",
     "size": 93872143,
     "free": true,
     "drm": false,
@@ -5160,7 +5240,7 @@
     "mp4": "video/VIDEO-d84a78/VIDEO-d84a78.mp4",
     "image": "assets/thumbs/VIDEO-d84a78.png",
     "published_at": "2026-03-15",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "Hợp tác phát triển & Phật pháp Hàn Quốc",
     "tags": [
       "Hàn",
       "Việt"
@@ -5184,7 +5264,8 @@
     "nicheCode": "H12",
     "nicheCodes": [
       "H12"
-    ]
+    ],
+    "niche_primary": "Hợp tác phát triển & Phật pháp Hàn Quốc"
   },
   {
     "sku": "VIDEO-c1bd51",
@@ -5246,7 +5327,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-026112",
@@ -5309,7 +5391,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-e25d3b",
@@ -5374,7 +5457,8 @@
     "nicheCode": "H16",
     "nicheCodes": [
       "H16"
-    ]
+    ],
+    "niche_primary": "Bán Content & Phát Triển Kênh"
   },
   {
     "sku": "VIDEO-bdfab7",
@@ -5383,7 +5467,7 @@
     "market": [
       "🇰🇷 Hàn"
     ],
-    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "niche": "Sức Khỏe Người Cao Tuổi Hàn Quốc",
     "size": 298966676,
     "free": false,
     "drm": false,
@@ -5445,7 +5529,7 @@
     "mp4": "video/VIDEO-bdfab7/VIDEO-bdfab7.mp4",
     "image": "assets/thumbs/VIDEO-bdfab7.png",
     "published_at": "2026-02-28",
-    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "contentNiche": "Sức Khỏe Người Cao Tuổi Hàn Quốc",
     "tags": [
       "Hàn"
     ],
@@ -5470,7 +5554,8 @@
     "nicheCode": "H16",
     "nicheCodes": [
       "H16"
-    ]
+    ],
+    "niche_primary": "Sức Khỏe Người Cao Tuổi Hàn Quốc"
   },
   {
     "sku": "VIDEO-e95a8f",
@@ -5567,7 +5652,8 @@
     "nicheCode": "H04",
     "nicheCodes": [
       "H04"
-    ]
+    ],
+    "niche_primary": "Triết Lý Sống & Đạo Làm Người"
   },
   {
     "sku": "VIDEO-91bb96",
@@ -5632,7 +5718,8 @@
     "nicheCodes": [
       "H27",
       "H35"
-    ]
+    ],
+    "niche_primary": "Bán Content & Phát Triển Kênh"
   },
   {
     "sku": "VIDEO-8b69c9",
@@ -5642,7 +5729,7 @@
       "🇰🇷 Hàn",
       "🇯🇵 Nhật"
     ],
-    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "niche": "Định Hướng Xây Kênh & Chọn Thị Trường",
     "size": 138151501,
     "free": false,
     "drm": false,
@@ -5670,7 +5757,7 @@
     "mp4": "video/VIDEO-8b69c9/VIDEO-8b69c9.mp4",
     "image": "assets/thumbs/VIDEO-8b69c9.png",
     "published_at": "2026-02-22",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "contentNiche": "Định Hướng Xây Kênh & Chọn Thị Trường",
     "tags": [
       "Hàn",
       "Nhật"
@@ -5699,7 +5786,8 @@
     "nicheCodes": [
       "H15",
       "H23"
-    ]
+    ],
+    "niche_primary": "Định Hướng Xây Kênh & Chọn Thị Trường"
   },
   {
     "sku": "VIDEO-35014d",
@@ -5765,7 +5853,8 @@
     "nicheCodes": [
       "H03",
       "H13"
-    ]
+    ],
+    "niche_primary": "Sức Khỏe & Dinh Dưỡng"
   },
   {
     "sku": "VIDEO-cb907b",
@@ -5851,7 +5940,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Reup & Khai Thác Hoạt Hình"
   },
   {
     "sku": "VIDEO-34f417",
@@ -5921,7 +6011,8 @@
     "nicheCodes": [
       "H09",
       "H34"
-    ]
+    ],
+    "niche_primary": "Bán Content & Phát Triển Kênh"
   },
   {
     "sku": "VIDEO-1b4be3",
@@ -5990,7 +6081,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Drama Gia Đình & Xã Hội"
   },
   {
     "sku": "VIDEO-ec9c50",
@@ -5999,7 +6091,7 @@
     "market": [
       "🌐 Ngoại"
     ],
-    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "niche": "Kháng bản quyền & Khôi phục kênh YPP",
     "size": 18271008,
     "free": true,
     "drm": false,
@@ -6036,7 +6128,7 @@
     "mp4": "video/VIDEO-ec9c50/VIDEO-ec9c50.mp4",
     "image": "assets/thumbs/VIDEO-ec9c50.png",
     "published_at": "2025-12-19",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "contentNiche": "Kháng bản quyền & Khôi phục kênh YPP",
     "tags": [
       "Ngoại"
     ],
@@ -6059,7 +6151,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Kháng bản quyền & Khôi phục kênh YPP"
   },
   {
     "sku": "VIDEO-134a25",
@@ -6122,7 +6215,8 @@
     "nicheCode": "H08",
     "nicheCodes": [
       "H08"
-    ]
+    ],
+    "niche_primary": "Triết Lý Sống & Đạo Làm Người"
   },
   {
     "sku": "VIDEO-5fd052",
@@ -6195,7 +6289,8 @@
     "nicheCode": "H02",
     "nicheCodes": [
       "H02"
-    ]
+    ],
+    "niche_primary": "Drama Gia Đình & Xã Hội"
   },
   {
     "sku": "VIDEO-00136f",
@@ -6204,7 +6299,7 @@
     "market": [
       "🌐 Ngoại"
     ],
-    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "niche": "Quản Trị AdSense & Bật Kiếm Tiền",
     "size": 8660679,
     "free": false,
     "drm": false,
@@ -6249,7 +6344,7 @@
     "mp4": "video/VIDEO-00136f/VIDEO-00136f.mp4",
     "image": "assets/thumbs/VIDEO-00136f.png",
     "published_at": "2025-12-18",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "contentNiche": "Quản Trị AdSense & Bật Kiếm Tiền",
     "tags": [
       "Ngoại"
     ],
@@ -6272,7 +6367,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Quản Trị AdSense & Bật Kiếm Tiền"
   },
   {
     "sku": "VIDEO-9ea5e3",
@@ -6332,7 +6428,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Bán Content & Phát Triển Kênh"
   },
   {
     "sku": "VIDEO-2ed37a",
@@ -6396,16 +6493,18 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Bán Content & Phát Triển Kênh"
   },
   {
     "sku": "VIDEO-54422c",
     "title": "HƯỚNG DẪN TỰ TRAIN PROMPT - TỰ TẠO PROMPT CHO BẤT KỲ CHỦ ĐỀ NÀO MUỐN",
     "index": 89,
     "market": [
-      "🇯🇵 Nhật"
+      "🇻🇳 Việt",
+      "🌐 Ngoại"
     ],
-    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "niche": "Tự Động Hóa Prompt & Clone Voice",
     "size": 870883336,
     "free": false,
     "drm": false,
@@ -6459,7 +6558,7 @@
     "mp4": "video/VIDEO-54422c/VIDEO-54422c.mp4",
     "image": "assets/thumbs/VIDEO-54422c.png",
     "published_at": "2025-12-08",
-    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "contentNiche": "Tự Động Hóa Prompt & Clone Voice",
     "channelResolve": [
       {
         "handle": "@baeksehealth",
@@ -6494,7 +6593,8 @@
     "nicheCode": "H16",
     "nicheCodes": [
       "H16"
-    ]
+    ],
+    "niche_primary": "Tự Động Hóa Prompt & Clone Voice"
   },
   {
     "sku": "VIDEO-af606d",
@@ -6556,7 +6656,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Bán Content & Phát Triển Kênh"
   },
   {
     "sku": "VIDEO-9ef6fe",
@@ -6621,7 +6722,8 @@
     "nicheCodes": [
       "H18",
       "H19"
-    ]
+    ],
+    "niche_primary": "Bán Content & Phát Triển Kênh"
   },
   {
     "sku": "VIDEO-7ae3d6",
@@ -6683,7 +6785,8 @@
     "nicheCode": "H19",
     "nicheCodes": [
       "H19"
-    ]
+    ],
+    "niche_primary": "Khám Kênh & Tối Ưu Tăng Trưởng"
   },
   {
     "sku": "VIDEO-86c1ec",
@@ -6745,16 +6848,21 @@
     "nicheCode": "H16",
     "nicheCodes": [
       "H16"
-    ]
+    ],
+    "niche_primary": "Sức Khỏe & Dinh Dưỡng"
   },
   {
     "sku": "VIDEO-3e5a21",
     "title": "HƯỚNG DẪN ADD QUYỀN QUẢN LÝ KÊNH VÀ MAIL KHÔI PHỤC TRÁNH BỊ GOOGLE QUÉT LỖI SPAM HÀNG LOẠT - DIE KÊNH HÀNG LOẠT",
     "index": 94,
     "market": [
-      "🇰🇷 Hàn"
+      "🇯🇵 Nhật",
+      "🇰🇷 Hàn",
+      "🇺🇸 Mỹ",
+      "🇻🇳 Việt",
+      "🌐 Ngoại"
     ],
-    "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "niche": "Phân quyền kênh & Bảo mật hệ thống chống quét",
     "size": 10170368,
     "free": false,
     "drm": false,
@@ -6791,7 +6899,7 @@
     "mp4": "video/VIDEO-3e5a21/VIDEO-3e5a21.mp4",
     "image": "assets/thumbs/VIDEO-3e5a21.png",
     "published_at": "2025-11-25",
-    "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+    "contentNiche": "Phân quyền kênh & Bảo mật hệ thống chống quét",
     "tags": [
       "Hàn"
     ],
@@ -6814,7 +6922,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Phân quyền kênh & Bảo mật hệ thống chống quét"
   },
   {
     "sku": "VIDEO-ffccd2",
@@ -6888,7 +6997,8 @@
       "H14",
       "H21",
       "H31"
-    ]
+    ],
+    "niche_primary": "Bán Content & Phát Triển Kênh"
   },
   {
     "sku": "VIDEO-de2564",
@@ -6959,7 +7069,8 @@
     "nicheCode": "H09",
     "nicheCodes": [
       "H09"
-    ]
+    ],
+    "niche_primary": "Drama Gia Đình & Xã Hội"
   },
   {
     "sku": "VIDEO-2aa1f7",
@@ -7123,14 +7234,13 @@
     "resolution": "1080p",
     "width": 1920,
     "height": 1080,
-    "nicheCode": "H17",
+    "nicheCode": "H20",
     "nicheCodes": [
-      "H17",
       "H20",
-      "H21",
-      "H26",
-      "H28"
-    ]
+      "H19",
+      "H30"
+    ],
+    "niche_primary": "Triết Lý Sống & Đạo Làm Người"
   },
   {
     "sku": "VIDEO-5fe83a",
@@ -7194,7 +7304,8 @@
     "nicheCode": "H04",
     "nicheCodes": [
       "H04"
-    ]
+    ],
+    "niche_primary": "Sức Khỏe & Dinh Dưỡng"
   },
   {
     "sku": "VIDEO-3ae732",
@@ -7259,7 +7370,8 @@
     "nicheCode": "H04",
     "nicheCodes": [
       "H04"
-    ]
+    ],
+    "niche_primary": "Sức Khỏe & Dinh Dưỡng"
   },
   {
     "sku": "VIDEO-458892",
@@ -7269,7 +7381,7 @@
       "🇺🇸 Mỹ",
       "🌐 Ngoại"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "Lịch Sử Quân Sự & Thế Chiến (WWII)",
     "size": 250509973,
     "free": true,
     "drm": false,
@@ -7340,7 +7452,7 @@
     "mp4": "video/VIDEO-458892/VIDEO-458892.mp4",
     "image": "assets/thumbs/VIDEO-458892.png",
     "published_at": "2025-10-19",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "Lịch Sử Quân Sự & Thế Chiến (WWII)",
     "tags": [
       "Mỹ",
       "Ngoại"
@@ -7363,7 +7475,8 @@
     "nicheCode": "H19",
     "nicheCodes": [
       "H19"
-    ]
+    ],
+    "niche_primary": "Lịch Sử Quân Sự & Thế Chiến (WWII)"
   },
   {
     "sku": "VIDEO-806c0c",
@@ -7430,7 +7543,8 @@
     "nicheCode": "H10",
     "nicheCodes": [
       "H10"
-    ]
+    ],
+    "niche_primary": "Bán Content & Phát Triển Kênh"
   },
   {
     "sku": "VIDEO-83a28e",
@@ -7502,7 +7616,8 @@
     "nicheCodes": [
       "H16",
       "H34"
-    ]
+    ],
+    "niche_primary": "Bán Content & Phát Triển Kênh"
   },
   {
     "sku": "VIDEO-948336",
@@ -7569,15 +7684,15 @@
     "nicheCode": "H19",
     "nicheCodes": [
       "H19"
-    ]
+    ],
+    "niche_primary": "Bán Content & Phát Triển Kênh"
   },
   {
     "sku": "VIDEO-04c2e3",
     "title": "Tool Elevenlab, Clone Minimax, Dịch SRT, Tài Khoản ChatGPT Plus/ CapCut Pro - Giá rẻ",
     "index": 104,
     "market": [
-      "🇻🇳 Việt",
-      "🇨🇳 Trung"
+      "🇰🇷 Hàn"
     ],
     "niche": "Bán Content & Phát Triển Kênh",
     "size": 20353652,
@@ -7637,7 +7752,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Bán Content & Phát Triển Kênh"
   },
   {
     "sku": "VIDEO-ca266f",
@@ -7649,7 +7765,7 @@
       "🇬🇧 Anh",
       "🇰🇷 Hàn"
     ],
-    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "niche": "Kỹ Thuật Edit CapCut & Tối Ưu Giọng Đọc",
     "size": 279631522,
     "free": false,
     "drm": false,
@@ -7683,7 +7799,7 @@
     "mp4": "video/VIDEO-ca266f/VIDEO-ca266f.mp4",
     "image": "assets/thumbs/VIDEO-ca266f.png",
     "published_at": "2025-09-27",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "contentNiche": "Kỹ Thuật Edit CapCut & Tối Ưu Giọng Đọc",
     "tags": [
       "Nhật",
       "Mỹ",
@@ -7720,7 +7836,8 @@
       "H19",
       "H33",
       "H39"
-    ]
+    ],
+    "niche_primary": "Kỹ Thuật Edit CapCut & Tối Ưu Giọng Đọc"
   },
   {
     "sku": "VIDEO-8603a9",
@@ -7800,7 +7917,8 @@
       "H10",
       "H13",
       "H34"
-    ]
+    ],
+    "niche_primary": "Tâm Linh & Thu Hút May Mắn"
   },
   {
     "sku": "VIDEO-aacc70",
@@ -7863,10 +7981,12 @@
     "resolution": "1080p",
     "width": 1920,
     "height": 1080,
-    "nicheCode": "H29",
+    "nicheCode": "H16",
     "nicheCodes": [
-      "H29"
-    ]
+      "H16",
+      "H03"
+    ],
+    "niche_primary": "Khám Kênh & Tối Ưu Tăng Trưởng"
   },
   {
     "sku": "VIDEO-82f8a8",
@@ -7931,18 +8051,22 @@
     "resolution": "1080p",
     "width": 1920,
     "height": 1080,
-    "nicheCode": "H15",
+    "nicheCode": "H09",
     "nicheCodes": [
-      "H15",
-      "H38"
-    ]
+      "H09",
+      "H08",
+      "H30"
+    ],
+    "niche_primary": "Bán Content & Phát Triển Kênh"
   },
   {
     "sku": "VIDEO-9a4ddc",
     "title": "TÚT/ TRICK (mẹo) test bản quyền khi reup - bán content dạng nguồn từ douyin sang youtube",
     "index": 109,
     "market": [
-      "🇯🇵 Nhật"
+      "🇻🇳 Việt",
+      "🇨🇳 Trung",
+      "🌐 Ngoại"
     ],
     "niche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
     "size": 153151032,
@@ -8001,7 +8125,8 @@
     "nicheCode": "H22",
     "nicheCodes": [
       "H22"
-    ]
+    ],
+    "niche_primary": "Kháng Bản Quyền & Xử Lý Lỗi GA"
   },
   {
     "sku": "VIDEO-199f44",
@@ -8010,7 +8135,7 @@
     "market": [
       "🌐 Ngoại"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "Kỹ Thuật Ngâm Kênh & Tương Tác Kênh Đối Thủ",
     "size": 69303503,
     "free": false,
     "drm": false,
@@ -8045,7 +8170,7 @@
     "mp4": "video/VIDEO-199f44/VIDEO-199f44.mp4",
     "image": "assets/thumbs/VIDEO-199f44.png",
     "published_at": "2025-08-22",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "Kỹ Thuật Ngâm Kênh & Tương Tác Kênh Đối Thủ",
     "tags": [
       "Ngoại"
     ],
@@ -8067,7 +8192,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Kỹ Thuật Ngâm Kênh & Tương Tác Kênh Đối Thủ"
   },
   {
     "sku": "VIDEO-027064",
@@ -8077,7 +8203,7 @@
       "🇺🇸 Mỹ",
       "🌐 Ngoại"
     ],
-    "niche": "Drama Gia Đình & Xã Hội",
+    "niche": "Kỹ Thuật Tạo Kênh & Chuyển Đổi Thị Trường Ngoại",
     "size": 283417965,
     "free": false,
     "drm": false,
@@ -8112,7 +8238,7 @@
     "mp4": "video/VIDEO-027064/VIDEO-027064.mp4",
     "image": "assets/thumbs/VIDEO-027064.png",
     "published_at": "2025-08-22",
-    "contentNiche": "Drama Gia Đình & Xã Hội",
+    "contentNiche": "Kỹ Thuật Tạo Kênh & Chuyển Đổi Thị Trường Ngoại",
     "tags": [
       "Mỹ",
       "Ngoại"
@@ -8135,7 +8261,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Kỹ Thuật Tạo Kênh & Chuyển Đổi Thị Trường Ngoại"
   },
   {
     "sku": "VIDEO-ed1be9",
@@ -8144,7 +8271,7 @@
     "market": [
       "🌐 Ngoại"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "Hoạt Hình 2D Người Que (Chill Dude)",
     "size": 769642956,
     "free": false,
     "drm": false,
@@ -8179,7 +8306,7 @@
     "mp4": "video/VIDEO-ed1be9/VIDEO-ed1be9.mp4",
     "image": "assets/thumbs/VIDEO-ed1be9.png",
     "published_at": "2025-08-22",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "Hoạt Hình 2D Người Que (Chill Dude)",
     "tags": [
       "Ngoại"
     ],
@@ -8202,7 +8329,8 @@
     "nicheCodes": [
       "H25",
       "H37"
-    ]
+    ],
+    "niche_primary": "Hoạt Hình 2D Người Que (Chill Dude)"
   },
   {
     "sku": "VIDEO-a348a5",
@@ -8270,7 +8398,8 @@
     "nicheCode": "H20",
     "nicheCodes": [
       "H20"
-    ]
+    ],
+    "niche_primary": "Triết Lý Sống & Đạo Làm Người"
   },
   {
     "sku": "VIDEO-25fddf",
@@ -8370,7 +8499,8 @@
       "H13",
       "H16",
       "H34"
-    ]
+    ],
+    "niche_primary": "Drama Gia Đình & Xã Hội"
   },
   {
     "sku": "VIDEO-943781",
@@ -8436,7 +8566,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Kỹ Thuật Setup Nuôi Kênh & VPS"
   },
   {
     "sku": "VIDEO-f59aa7",
@@ -8445,7 +8576,7 @@
     "market": [
       "🇯🇵 Nhật"
     ],
-    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "niche": "Sức khỏe & Tâm linh người cao tuổi (Nhân bản đa thị trường)",
     "size": 477240113,
     "free": false,
     "drm": true,
@@ -8480,7 +8611,7 @@
     "mp4": "video/VIDEO-f59aa7/VIDEO-f59aa7.mp4",
     "image": "assets/thumbs/VIDEO-f59aa7.png",
     "published_at": "2025-08-21",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "contentNiche": "Sức khỏe & Tâm linh người cao tuổi (Nhân bản đa thị trường)",
     "tags": [
       "Nhật"
     ],
@@ -8501,10 +8632,13 @@
     "resolution": "1080p",
     "width": 1920,
     "height": 1080,
-    "nicheCode": "H30",
+    "nicheCode": "H09",
     "nicheCodes": [
+      "H09",
+      "H03",
       "H30"
-    ]
+    ],
+    "niche_primary": "Sức khỏe & Tâm linh người cao tuổi (Nhân bản đa thị trường)"
   },
   {
     "sku": "VIDEO-b380a1",
@@ -8513,7 +8647,7 @@
     "market": [
       "🇻🇳 Việt"
     ],
-    "niche": "Prompt AI & Nhân Bản Kịch Bản",
+    "niche": "Triết Lý Nhân Sinh View Việt",
     "size": 543600721,
     "free": false,
     "drm": false,
@@ -8548,7 +8682,7 @@
     "mp4": "video/VIDEO-b380a1/VIDEO-b380a1.mp4",
     "image": "assets/thumbs/VIDEO-b380a1.png",
     "published_at": "2025-08-21",
-    "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+    "contentNiche": "Triết Lý Nhân Sinh View Việt",
     "tags": [
       "Việt"
     ],
@@ -8567,10 +8701,13 @@
     "resolution": "1080p",
     "width": 1920,
     "height": 1080,
-    "nicheCode": "H30",
+    "nicheCode": "H18",
     "nicheCodes": [
+      "H18",
+      "H20",
       "H30"
-    ]
+    ],
+    "niche_primary": "Triết Lý Nhân Sinh View Việt"
   },
   {
     "sku": "VIDEO-39ae49",
@@ -8641,10 +8778,14 @@
     "width": 1920,
     "height": 1080,
     "channelsCount": 2,
-    "nicheCode": "H30",
+    "nicheCode": "H03",
     "nicheCodes": [
+      "H03",
+      "H09",
+      "H18",
       "H30"
-    ]
+    ],
+    "niche_primary": "Sức Khỏe & Dinh Dưỡng"
   },
   {
     "sku": "VIDEO-5c3116",
@@ -8654,7 +8795,7 @@
       "🇨🇦 Canada",
       "🌐 Ngoại"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "Tin Tức & Đời Sống Thị Trường Canada",
     "size": 395256693,
     "free": true,
     "drm": false,
@@ -8712,7 +8853,7 @@
     "mp4": "video/VIDEO-5c3116/VIDEO-5c3116.mp4",
     "image": "assets/thumbs/VIDEO-5c3116.png",
     "published_at": "2025-08-21",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "Tin Tức & Đời Sống Thị Trường Canada",
     "tags": [
       "Canada",
       "Ngoại"
@@ -8736,7 +8877,8 @@
     "nicheCodes": [
       "H27",
       "H35"
-    ]
+    ],
+    "niche_primary": "Tin Tức & Đời Sống Thị Trường Canada"
   },
   {
     "sku": "VIDEO-3df94e",
@@ -8746,7 +8888,7 @@
       "🇺🇸 Mỹ",
       "🌐 Ngoại"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "Lịch Sử Đời Sống & Kể Chuyện Ngủ Ngon (US)",
     "size": 381209570,
     "free": true,
     "drm": false,
@@ -8784,7 +8926,7 @@
     "mp4": "video/VIDEO-3df94e/VIDEO-3df94e.mp4",
     "image": "assets/thumbs/VIDEO-3df94e.png",
     "published_at": "2025-08-20",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "Lịch Sử Đời Sống & Kể Chuyện Ngủ Ngon (US)",
     "country": "US",
     "tags": [
       "Mỹ",
@@ -8811,7 +8953,8 @@
       "H27",
       "H30",
       "H38"
-    ]
+    ],
+    "niche_primary": "Lịch Sử Đời Sống & Kể Chuyện Ngủ Ngon (US)"
   },
   {
     "sku": "VIDEO-5cb825",
@@ -8887,7 +9030,8 @@
     "nicheCode": "H20",
     "nicheCodes": [
       "H20"
-    ]
+    ],
+    "niche_primary": "Prompt AI & Nhân Bản Kịch Bản"
   },
   {
     "sku": "VIDEO-891f32",
@@ -8960,7 +9104,8 @@
       "H19",
       "H30",
       "H32"
-    ]
+    ],
+    "niche_primary": "Prompt AI & Nhân Bản Kịch Bản"
   },
   {
     "sku": "VIDEO-61e354",
@@ -8970,7 +9115,7 @@
       "🇺🇸 Mỹ",
       "🌐 Ngoại"
     ],
-    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "niche": "Nghiên Cứu Từ Khóa & Lọc Key View Ngoại",
     "size": 493783566,
     "free": true,
     "drm": false,
@@ -9015,7 +9160,7 @@
     "mp4": "video/VIDEO-61e354/VIDEO-61e354.mp4",
     "image": "assets/thumbs/VIDEO-61e354.png",
     "published_at": "2025-08-20",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "contentNiche": "Nghiên Cứu Từ Khóa & Lọc Key View Ngoại",
     "tags": [
       "Mỹ",
       "Ngoại"
@@ -9037,17 +9182,17 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Nghiên Cứu Từ Khóa & Lọc Key View Ngoại"
   },
   {
     "sku": "VIDEO-bdfa54",
     "title": "Key Sinh Tồn view Việt bán content",
     "index": 124,
     "market": [
-      "🇻🇳 Việt",
-      "🇨🇳 Trung"
+      "🇻🇳 Việt"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "Sinh Tồn Hoang Dã View Việt",
     "size": 748436515,
     "free": true,
     "drm": false,
@@ -9085,7 +9230,7 @@
     "mp4": "video/VIDEO-bdfa54/VIDEO-bdfa54.mp4",
     "image": "assets/thumbs/VIDEO-bdfa54.png",
     "published_at": "2025-08-19",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "Sinh Tồn Hoang Dã View Việt",
     "tags": [
       "Việt",
       "Trung"
@@ -9109,7 +9254,8 @@
     "nicheCodes": [
       "H24",
       "H39"
-    ]
+    ],
+    "niche_primary": "Sinh Tồn Hoang Dã View Việt"
   },
   {
     "sku": "VIDEO-8e0275",
@@ -9118,7 +9264,7 @@
     "market": [
       "🌐 Ngoại"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "Thiết Kế Thumbnail & Edit Key Nonagon",
     "size": 550685521,
     "free": true,
     "drm": false,
@@ -9178,7 +9324,7 @@
     "mp4": "video/VIDEO-8e0275/VIDEO-8e0275.mp4",
     "image": "assets/thumbs/VIDEO-8e0275.png",
     "published_at": "2025-08-19",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "Thiết Kế Thumbnail & Edit Key Nonagon",
     "tags": [
       "Nổi bật",
       "Ngoại"
@@ -9209,7 +9355,8 @@
     "nicheCode": "H25",
     "nicheCodes": [
       "H25"
-    ]
+    ],
+    "niche_primary": "Thiết Kế Thumbnail & Edit Key Nonagon"
   },
   {
     "sku": "VIDEO-b559c8",
@@ -9218,7 +9365,7 @@
     "market": [
       "🌐 Ngoại"
     ],
-    "niche": "Bán Content & Phát Triển Kênh",
+    "niche": "Thiết Kế Thumbnail Người Que (Chill Dude)",
     "size": 172775089,
     "free": false,
     "drm": false,
@@ -9246,7 +9393,7 @@
     "mp4": "video/VIDEO-b559c8/VIDEO-b559c8.mp4",
     "image": "assets/thumbs/VIDEO-b559c8.png",
     "published_at": "2025-08-19",
-    "contentNiche": "Bán Content & Phát Triển Kênh",
+    "contentNiche": "Thiết Kế Thumbnail Người Que (Chill Dude)",
     "tags": [
       "Ngoại"
     ],
@@ -9268,7 +9415,8 @@
     "nicheCode": "H25",
     "nicheCodes": [
       "H25"
-    ]
+    ],
+    "niche_primary": "Thiết Kế Thumbnail Người Que (Chill Dude)"
   },
   {
     "sku": "VIDEO-b96929",
@@ -9337,7 +9485,8 @@
     "nicheCode": "H20",
     "nicheCodes": [
       "H20"
-    ]
+    ],
+    "niche_primary": "Triết Lý Sống & Đạo Làm Người"
   },
   {
     "sku": "VIDEO-44cf22",
@@ -9347,7 +9496,7 @@
       "🇻🇳 Việt",
       "🌐 Ngoại"
     ],
-    "niche": "Sức Khỏe & Dinh Dưỡng",
+    "niche": "Phân Tích Chủ Đề RPM Cao Đa Thị Trường",
     "size": 283903212,
     "free": true,
     "drm": false,
@@ -9378,12 +9527,20 @@
         "size": 14657
       }
     ],
-    "channels": [],
+    "channels": [
+      "@DepthPsychologyHub",
+      "@TríTuệCóẢnhHưởng",
+      "@SoyMenteFuerte",
+      "@MentalDoseEn",
+      "@WiseEldersyt",
+      "@Revenge_with_Jake",
+      "@LifeAdviceForYouyt"
+    ],
     "origin": "https://h2dev.vn/learn/study/share-key-va-giai-thich-ve-chu-de-rpm-cao-o-cac-thi-truong",
     "mp4": "video/VIDEO-44cf22/VIDEO-44cf22.mp4",
     "image": "assets/thumbs/VIDEO-44cf22.png",
     "published_at": "2025-08-19",
-    "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+    "contentNiche": "Phân Tích Chủ Đề RPM Cao Đa Thị Trường",
     "tags": [
       "Quan trọng",
       "Việt",
@@ -9407,7 +9564,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Phân Tích Chủ Đề RPM Cao Đa Thị Trường"
   },
   {
     "sku": "VIDEO-5c438a",
@@ -9417,7 +9575,7 @@
       "🇺🇸 Mỹ",
       "🌐 Ngoại"
     ],
-    "niche": "Khám Kênh & Tối Ưu Tăng Trưởng",
+    "niche": "Tài nguyên kênh & Độ trust thuật toán",
     "size": 85786674,
     "free": true,
     "drm": false,
@@ -9472,7 +9630,7 @@
     "mp4": "video/VIDEO-5c438a/VIDEO-5c438a.mp4",
     "image": "assets/thumbs/VIDEO-5c438a.png",
     "published_at": "2025-08-19",
-    "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng",
+    "contentNiche": "Tài nguyên kênh & Độ trust thuật toán",
     "tags": [
       "Mỹ",
       "Ngoại"
@@ -9494,7 +9652,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Tài nguyên kênh & Độ trust thuật toán"
   },
   {
     "sku": "VIDEO-61ad94",
@@ -9504,7 +9663,7 @@
       "🇯🇵 Nhật",
       "🇰🇷 Hàn"
     ],
-    "niche": "Bán Content Đa Thị Trường Nhật & Hàn",
+    "niche": "Drama Gia Đình & Đời Sống Nhật - Hàn",
     "size": 264776966,
     "free": false,
     "drm": false,
@@ -9567,7 +9726,7 @@
     "mp4": "video/VIDEO-61ad94/VIDEO-61ad94.mp4",
     "image": "assets/thumbs/VIDEO-61ad94.png",
     "published_at": "2026-08-22",
-    "contentNiche": "Bán Content Đa Thị Trường Nhật & Hàn",
+    "contentNiche": "Drama Gia Đình & Đời Sống Nhật - Hàn",
     "channelResolve": [],
     "tags": [
       "Nhật",
@@ -9597,7 +9756,8 @@
       "H10",
       "H16",
       "H34"
-    ]
+    ],
+    "niche_primary": "Drama Gia Đình & Đời Sống Nhật - Hàn"
   },
   {
     "sku": "VIDEO-3a38f9",
@@ -9607,7 +9767,7 @@
       "🇰🇷 Hàn",
       "🇻🇳 Việt"
     ],
-    "niche": "Bán Content Đa Thị Trường Hàn & Việt",
+    "niche": "Triết Lý Đời Sống & Chuyện Nhân Gian",
     "size": 147537949,
     "free": false,
     "drm": false,
@@ -9664,7 +9824,7 @@
     "mp4": "video/VIDEO-3a38f9/VIDEO-3a38f9.mp4",
     "image": "assets/thumbs/VIDEO-3a38f9.png",
     "published_at": "2026-08-27",
-    "contentNiche": "Bán Content Đa Thị Trường Hàn & Việt",
+    "contentNiche": "Triết Lý Đời Sống & Chuyện Nhân Gian",
     "channelResolve": [],
     "tags": [
       "Hàn",
@@ -9691,7 +9851,8 @@
     "nicheCode": "H34",
     "nicheCodes": [
       "H34"
-    ]
+    ],
+    "niche_primary": "Triết Lý Đời Sống & Chuyện Nhân Gian"
   },
   {
     "sku": "VIDEO-73d98a",
@@ -9701,7 +9862,7 @@
       "🇯🇵 Nhật",
       "🇰🇷 Hàn"
     ],
-    "niche": "Bán Content Ngách Cực Nhỏ",
+    "niche": "Drama Cảm Động & Dưỡng Lão",
     "size": 199940701,
     "free": false,
     "drm": false,
@@ -9742,7 +9903,7 @@
     "mp4": "video/VIDEO-73d98a/VIDEO-73d98a.mp4",
     "image": "assets/thumbs/VIDEO-73d98a.png",
     "published_at": "2026-09-06",
-    "contentNiche": "Bán Content Ngách Cực Nhỏ",
+    "contentNiche": "Drama Cảm Động & Dưỡng Lão",
     "channelResolve": [],
     "tags": [
       "Nhật",
@@ -9767,7 +9928,8 @@
       "H03",
       "H09",
       "H34"
-    ]
+    ],
+    "niche_primary": "Drama Cảm Động & Dưỡng Lão"
   },
   {
     "sku": "ZOOM-01-Nen-tang-moi-truong",
@@ -9776,7 +9938,7 @@
     "market": [
       "🇻🇳 Việt"
     ],
-    "niche": "Hệ thống / Quy trình",
+    "niche": "Hạ Tầng Kỹ Thuật: Proxy, Gmail & Ngâm Kênh",
     "size": 368266512,
     "free": true,
     "drm": false,
@@ -9818,7 +9980,7 @@
     "mp4": "video/ZOOM-01-Nen-tang-moi-truong/ZOOM-01-Nen-tang-moi-truong.webm",
     "image": "assets/thumbs/ZOOM-01-Nen-tang-moi-truong.png",
     "published_at": "2026-09-11",
-    "contentNiche": "Hệ thống / Quy trình",
+    "contentNiche": "Hạ Tầng Kỹ Thuật: Proxy, Gmail & Ngâm Kênh",
     "channelResolve": [],
     "transcript": "video/ZOOM-01-Nen-tang-moi-truong/transcript.json",
     "tags": [
@@ -9842,7 +10004,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Hạ Tầng Kỹ Thuật: Proxy, Gmail & Ngâm Kênh"
   },
   {
     "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
@@ -9851,7 +10014,7 @@
     "market": [
       "🇻🇳 Việt"
     ],
-    "niche": "Hệ thống / Quy trình",
+    "niche": "Chiến Lược Tách Kênh & Sản Xuất Hàng Loạt",
     "size": 765159214,
     "free": true,
     "drm": false,
@@ -9893,7 +10056,7 @@
     "mp4": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/ZOOM-02-Chien-luoc-kenh-san-xuat.webm",
     "image": "assets/thumbs/ZOOM-02-Chien-luoc-kenh-san-xuat.png",
     "published_at": "2026-09-11",
-    "contentNiche": "Hệ thống / Quy trình",
+    "contentNiche": "Chiến Lược Tách Kênh & Sản Xuất Hàng Loạt",
     "channelResolve": [],
     "transcript": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/transcript.json",
     "tags": [
@@ -9917,7 +10080,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Chiến Lược Tách Kênh & Sản Xuất Hàng Loạt"
   },
   {
     "sku": "ZOOM-03-Quy-trinh-tool-toi-uu",
@@ -9926,7 +10090,7 @@
     "market": [
       "🇻🇳 Việt"
     ],
-    "niche": "Hệ thống / Quy trình",
+    "niche": "Quy Trình Tool, Tối Ưu AVD, SEO & Seeding",
     "size": 579538558,
     "free": true,
     "drm": false,
@@ -9968,7 +10132,7 @@
     "mp4": "video/ZOOM-03-Quy-trinh-tool-toi-uu/ZOOM-03-Quy-trinh-tool-toi-uu.webm",
     "image": "assets/thumbs/ZOOM-03-Quy-trinh-tool-toi-uu.png",
     "published_at": "2026-09-11",
-    "contentNiche": "Hệ thống / Quy trình",
+    "contentNiche": "Quy Trình Tool, Tối Ưu AVD, SEO & Seeding",
     "channelResolve": [],
     "transcript": "video/ZOOM-03-Quy-trinh-tool-toi-uu/transcript.json",
     "tags": [
@@ -9992,7 +10156,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Quy Trình Tool, Tối Ưu AVD, SEO & Seeding"
   },
   {
     "sku": "ZOOM-04-Adsense-khang-loi",
@@ -10001,7 +10166,7 @@
     "market": [
       "🇻🇳 Việt"
     ],
-    "niche": "Hệ thống / Quy trình",
+    "niche": "Quản Trị Google AdSense & Kháng Nghị YPP",
     "size": 234285876,
     "free": true,
     "drm": false,
@@ -10043,7 +10208,7 @@
     "mp4": "video/ZOOM-04-Adsense-khang-loi/ZOOM-04-Adsense-khang-loi.webm",
     "image": "assets/thumbs/ZOOM-04-Adsense-khang-loi.png",
     "published_at": "2026-09-11",
-    "contentNiche": "Hệ thống / Quy trình",
+    "contentNiche": "Quản Trị Google AdSense & Kháng Nghị YPP",
     "channelResolve": [],
     "transcript": "video/ZOOM-04-Adsense-khang-loi/transcript.json",
     "tags": [
@@ -10067,7 +10232,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Quản Trị Google AdSense & Kháng Nghị YPP"
   },
   {
     "sku": "VIDEO-8bc3ce",
@@ -10076,7 +10242,7 @@
     "market": [
       "🇻🇳 Việt"
     ],
-    "niche": "Xử Lý & Kháng Lỗi Bản Quyền",
+    "niche": "Reup Hoạt Hình View Việt & Kháng Tắt Kiếm Tiền",
     "size": 41240640,
     "free": true,
     "drm": false,
@@ -10124,7 +10290,7 @@
     "mp4": "video/VIDEO-8bc3ce/VIDEO-8bc3ce.mp4",
     "image": "assets/thumbs/VIDEO-8bc3ce.png",
     "published_at": "2026-09-11",
-    "contentNiche": "Xử Lý & Kháng Lỗi Bản Quyền",
+    "contentNiche": "Reup Hoạt Hình View Việt & Kháng Tắt Kiếm Tiền",
     "channelResolve": [],
     "tags": [
       "Nổi bật",
@@ -10150,7 +10316,8 @@
     "nicheCode": "H30",
     "nicheCodes": [
       "H30"
-    ]
+    ],
+    "niche_primary": "Reup Hoạt Hình View Việt & Kháng Tắt Kiếm Tiền"
   },
   {
     "sku": "VIDEO-d56768",
@@ -10231,7 +10398,8 @@
     "nicheCode": "H04",
     "nicheCodes": [
       "H04"
-    ]
+    ],
+    "niche_primary": "Bán Content & Drama Đời Sống"
   },
   {
     "sku": "VIDEO-989053",
@@ -10310,7 +10478,8 @@
       "H01",
       "H05",
       "H16"
-    ]
+    ],
+    "niche_primary": "Phong Thủy & May Mắn Tâm Linh"
   },
   {
     "sku": "VIDEO-0bb86b",
@@ -10389,7 +10558,8 @@
     "nicheCodes": [
       "H13",
       "H34"
-    ]
+    ],
+    "niche_primary": "Triết Lý Sống & Tài Chính Tuổi Già"
   },
   {
     "sku": "VIDEO-0be6c9",
@@ -10398,7 +10568,7 @@
     "market": [
       "🇻🇳 Việt"
     ],
-    "niche": "Tâm Sự Gia Đình & Người Cao Tuổi Việt Nam",
+    "niche": "Nhà Máy Sản Xuất & Cơ Khí Công Nghiệp",
     "size": 135364708,
     "free": false,
     "drm": false,
@@ -10439,7 +10609,7 @@
     "mp4": "video/VIDEO-0be6c9/VIDEO-0be6c9.mp4",
     "image": "assets/thumbs/VIDEO-0be6c9.png",
     "published_at": "2026-09-21",
-    "contentNiche": "Tâm Sự Gia Đình & Người Cao Tuổi Việt Nam",
+    "contentNiche": "Nhà Máy Sản Xuất & Cơ Khí Công Nghiệp",
     "channelResolve": [
       {
         "handle": "@ChuyenNhaXuaNay-s2j",
@@ -10480,7 +10650,8 @@
     "nicheCode": "H04",
     "nicheCodes": [
       "H04"
-    ]
+    ],
+    "niche_primary": "Nhà Máy Sản Xuất & Cơ Khí Công Nghiệp"
   },
   {
     "sku": "VIDEO-a85eac",
@@ -10489,7 +10660,7 @@
     "market": [
       "🇰🇷 Hàn"
     ],
-    "niche": "Dưỡng Sinh Thực Dưỡng & Tâm Sự Người Cao Tuổi Hàn Quốc",
+    "niche": "Sức Khỏe Lão Niên & Rau Củ Bàn Ăn Hàn Quốc",
     "size": 222251223,
     "free": false,
     "drm": false,
@@ -10530,7 +10701,7 @@
     "mp4": "video/VIDEO-a85eac/VIDEO-a85eac.mp4",
     "image": "assets/thumbs/VIDEO-a85eac.png",
     "published_at": "2026-09-29",
-    "contentNiche": "Dưỡng Sinh Thực Dưỡng & Tâm Sự Người Cao Tuổi Hàn Quốc",
+    "contentNiche": "Sức Khỏe Lão Niên & Rau Củ Bàn Ăn Hàn Quốc",
     "channelResolve": [
       {
         "handle": "@사과와당근",
@@ -10581,7 +10752,8 @@
     "nicheCodes": [
       "H16",
       "H32"
-    ]
+    ],
+    "niche_primary": "Sức Khỏe Lão Niên & Rau Củ Bàn Ăn Hàn Quốc"
   },
   {
     "sku": "VIDEO-043d15",
@@ -10590,7 +10762,7 @@
     "market": [
       "🇰🇷 Hàn"
     ],
-    "niche": "Quy Trình AI & Train Prompt Kịch Bản Thực Chiến",
+    "niche": "Mẹo Tương Tác & Tăng Đề Xuất Thuật Toán",
     "size": 303782059,
     "free": false,
     "drm": false,
@@ -10671,7 +10843,7 @@
     "mp4": "video/VIDEO-043d15/VIDEO-043d15.mp4",
     "image": "assets/thumbs/VIDEO-043d15.png",
     "published_at": "2026-10-02",
-    "contentNiche": "Quy Trình AI & Train Prompt Kịch Bản Thực Chiến",
+    "contentNiche": "Mẹo Tương Tác & Tăng Đề Xuất Thuật Toán",
     "channelResolve": [
       {
         "handle": "@사과와당근",
@@ -10722,7 +10894,8 @@
     "nicheCodes": [
       "H16",
       "H32"
-    ]
+    ],
+    "niche_primary": "Mẹo Tương Tác & Tăng Đề Xuất Thuật Toán"
   },
   {
     "sku": "VIDEO-a59a5e",
@@ -10731,7 +10904,7 @@
     "market": [
       "🇰🇷 Hàn"
     ],
-    "niche": "Làm Vườn Mùa Thu & Triết Học Lượng Tử Sinh Học",
+    "niche": "Kiểm Soát Sinh Học & Giải Trí Tổng Hợp",
     "size": 163921379,
     "free": false,
     "drm": false,
@@ -10770,7 +10943,7 @@
     "mp4": "video/VIDEO-a59a5e/VIDEO-a59a5e.mp4",
     "image": "assets/thumbs/VIDEO-a59a5e.png",
     "published_at": "2026-10-08",
-    "contentNiche": "Làm Vườn Mùa Thu & Triết Học Lượng Tử Sinh Học",
+    "contentNiche": "Kiểm Soát Sinh Học & Giải Trí Tổng Hợp",
     "channelResolve": [
       {
         "handle": "@가을원예-gardening",
@@ -10808,10 +10981,14 @@
     "resolution": "1080p",
     "width": 1920,
     "height": 1080,
-    "nicheCode": "H11",
+    "nicheCode": "H16",
     "nicheCodes": [
-      "H11"
-    ]
+      "H16",
+      "H11",
+      "H28",
+      "H30"
+    ],
+    "niche_primary": "Kiểm Soát Sinh Học & Giải Trí Tổng Hợp"
   },
   {
     "sku": "VIDEO-ab1137",
@@ -10821,7 +10998,7 @@
       "🇯🇵 Nhật",
       "🇰🇷 Hàn"
     ],
-    "niche": "Nhân Bản Kênh & Chiến Lược Thị Trường",
+    "niche": "Dưỡng Sinh & Mẹo Sức Khỏe Hàn - Nhật",
     "size": 6895518,
     "free": false,
     "drm": false,
@@ -10854,12 +11031,14 @@
         "size": 3339
       }
     ],
-    "channels": [],
+    "channels": [
+      "@HopeGarden-KR"
+    ],
     "origin": "https://h2dev.vn/learn/study/kham-kenh-show-thuc-te-kenh-lam-nhan-ban-thi-truong-tu-han-sang-nhat-sau-chi-1-video-dau-tien",
     "mp4": "video/VIDEO-ab1137/VIDEO-ab1137.mp4",
     "image": "assets/thumbs/VIDEO-ab1137.png",
     "published_at": "2026-10-11",
-    "contentNiche": "Nhân Bản Kênh & Chiến Lược Thị Trường",
+    "contentNiche": "Dưỡng Sinh & Mẹo Sức Khỏe Hàn - Nhật",
     "docsCount": 3,
     "tags": [
       "Nhật",
@@ -10880,10 +11059,14 @@
     "resolution": "1080p",
     "width": 1920,
     "height": 1080,
-    "nicheCode": "H36",
+    "nicheCode": "H03",
     "nicheCodes": [
-      "H36"
-    ]
+      "H03",
+      "H16",
+      "H09",
+      "H30"
+    ],
+    "niche_primary": "Dưỡng Sinh & Mẹo Sức Khỏe Hàn - Nhật"
   },
   {
     "sku": "VIDEO-0b3f44",
@@ -10956,16 +11139,18 @@
     "nicheCodes": [
       "H16",
       "H34"
-    ]
+    ],
+    "niche_primary": "Bán Content Ngách Cực Nhỏ & Tối Ưu CTR"
   },
   {
     "sku": "VIDEO-e0e9cd",
     "title": "V2 - Thực chiến quy trình A-Z làm ngách đang cực HOT trends = Claude Automation | Update 22-10-2026",
     "index": 147,
     "market": [
+      "🇺🇸 Mỹ",
       "🌐 Ngoại"
     ],
-    "niche": "Tự Động Hóa YouTube & Ngách Giả Định What-If",
+    "niche": "Hoạt Hình 2D Người Que & Giả Định What-If",
     "size": 269880354,
     "free": false,
     "drm": false,
@@ -11012,7 +11197,7 @@
     "mp4": "video/VIDEO-e0e9cd/VIDEO-e0e9cd.mp4",
     "image": "assets/thumbs/VIDEO-e0e9cd.png",
     "published_at": "2026-10-22",
-    "contentNiche": "Tự Động Hóa YouTube & Ngách Giả Định What-If",
+    "contentNiche": "Hoạt Hình 2D Người Que & Giả Định What-If",
     "docsCount": 4,
     "tags": [
       "Trends",
@@ -11036,16 +11221,18 @@
     "nicheCode": "H25",
     "nicheCodes": [
       "H25"
-    ]
+    ],
+    "niche_primary": "Hoạt Hình 2D Người Que & Giả Định What-If"
   },
   {
     "sku": "VIDEO-0c72ab",
     "title": "V1 - Full 50 phút Thực chiến hướng dẫn quy trình A-Z làm ngách \"What-If\" đang cực HOT trends bằng Claude và Edit 100% = Claude code  |  Update 21-10-2026",
     "index": 148,
     "market": [
+      "🇺🇸 Mỹ",
       "🌐 Ngoại"
     ],
-    "niche": "Tự Động Hóa YouTube, Edit Bằng Code & Ngách Giả Định What-If",
+    "niche": "Tự Động Hóa Code 2D & Ngách Giả Định What-If",
     "size": 865260463,
     "free": false,
     "drm": false,
@@ -11090,7 +11277,7 @@
     "mp4": "video/VIDEO-0c72ab/VIDEO-0c72ab.mp4",
     "image": "assets/thumbs/VIDEO-0c72ab.png",
     "published_at": "2026-10-21",
-    "contentNiche": "Tự Động Hóa YouTube, Edit Bằng Code & Ngách Giả Định What-If",
+    "contentNiche": "Tự Động Hóa Code 2D & Ngách Giả Định What-If",
     "docsCount": 4,
     "tags": [
       "Trends",
@@ -11114,6 +11301,7 @@
     "nicheCode": "H25",
     "nicheCodes": [
       "H25"
-    ]
+    ],
+    "niche_primary": "Tự Động Hóa Code 2D & Ngách Giả Định What-If"
   }
 ]

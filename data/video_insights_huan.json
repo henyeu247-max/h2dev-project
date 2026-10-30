@@ -6,8 +6,8 @@
     "category_group": "he_thong",
     "niche_primary": "Thu Nhập Thực Tế & Lộ Trình View Ngoại",
     "niche_id": "he_thong_thu_nhap_view_ngoai",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Zalo"
@@ -121,28 +121,16 @@
     "category_group": "he_thong",
     "niche_primary": "Phương Pháp Bán Content & Luật Fair Use Cho Người Làm 1 Mình",
     "niche_id": "he_thong_ban_content_fair_use",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Fair Use"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web 5 Ngày",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      },
-      {
-        "handle": "@SoiSangBrightSideVietnamese",
-        "name": "Soi Sáng",
-        "url": "https://www.youtube.com/channel/UChQtq0f3T1peK2w4olNyWYw"
-      },
-      {
-        "handle": "@BRIGHTSIDEOFFICIAL",
-        "name": "BRIGHT SIDE",
-        "url": "https://www.youtube.com/@BRIGHTSIDEOFFICIAL"
-      }
+      "@Web5Ngay",
+      "@SoiSangBrightSideVietnamese",
+      "@BRIGHTSIDEOFFICIAL"
     ],
     "course_docs": [
       {
@@ -258,8 +246,8 @@
     "category_group": "he_thong",
     "niche_primary": "Kế Hoạch Tổng Thể 7 Bước & Bộ Công Cụ Triển Khai Kênh 1 Người",
     "niche_id": "he_thong_7_buoc_cong_cu_1_nguoi",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "vidIQ",
       "NexLev",
@@ -273,16 +261,8 @@
       "Excel"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web 5 Ngày",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      },
-      {
-        "handle": "@SoiSangBrightSideVietnamese",
-        "name": "Soi Sáng",
-        "url": "https://www.youtube.com/channel/UChQtq0f3T1peK2w4olNyWYw"
-      }
+      "@Web5Ngay",
+      "@SoiSangBrightSideVietnamese"
     ],
     "course_docs": [
       {
@@ -403,8 +383,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chọn Chủ Đề Ngách & Chiến Lược Dream 100",
     "niche_id": "chon_chu_de_ngach",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "vidIQ",
       "1of10",
@@ -415,61 +395,17 @@
       "Zalo"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web 5 Ngày",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      },
-      {
-        "handle": "@SoiSangBrightSideVietnamese",
-        "name": "Soi Sáng",
-        "url": "https://www.youtube.com/channel/UChQtq0f3T1peK2w4olNyWYw"
-      },
-      {
-        "handle": "@thoitiet.24h",
-        "name": "THỜI TIẾT 24H",
-        "url": "https://www.youtube.com/@thoitiet.24h"
-      },
-      {
-        "handle": "@5MinuteCraftsYouTube",
-        "name": "5-Minute Crafts",
-        "url": "https://www.youtube.com/@5MinuteCraftsYouTube"
-      },
-      {
-        "handle": "@BRIGHTSIDEOFFICIAL",
-        "name": "BRIGHT SIDE",
-        "url": "https://www.youtube.com/@BRIGHTSIDEOFFICIAL"
-      },
-      {
-        "handle": "@BeCreativeDIY",
-        "name": "Be Creative DIY",
-        "url": "https://www.youtube.com/@BeCreativeDIY"
-      },
-      {
-        "handle": "@ForCraftsSake",
-        "name": "For Crafts Sake",
-        "url": "https://www.youtube.com/@ForCraftsSake"
-      },
-      {
-        "handle": "@MyDIYBuilds",
-        "name": "My DIY Builds",
-        "url": "https://www.youtube.com/@MyDIYBuilds"
-      },
-      {
-        "handle": "@Blakwoodz-y3x",
-        "name": "Blakwoodz",
-        "url": "https://www.youtube.com/@Blakwoodz-y3x"
-      },
-      {
-        "handle": "@cornycob",
-        "name": "CornyCob",
-        "url": "https://www.youtube.com/@cornycob"
-      },
-      {
-        "handle": "@Top5s",
-        "name": "Top5s",
-        "url": "https://www.youtube.com/@Top5s"
-      }
+      "@Web5Ngay",
+      "@SoiSangBrightSideVietnamese",
+      "@thoitiet.24h",
+      "@5MinuteCraftsYouTube",
+      "@BRIGHTSIDEOFFICIAL",
+      "@BeCreativeDIY",
+      "@ForCraftsSake",
+      "@MyDIYBuilds",
+      "@Blakwoodz-y3x",
+      "@cornycob",
+      "@Top5s"
     ],
     "course_docs": [
       {
@@ -597,8 +533,8 @@
     "category_group": "content_script",
     "niche_primary": "Quy Trình Lên Kịch Bản Shu-Ha-Ri & 3 Phương Pháp Sáng Tạo Content",
     "niche_id": "content_kich_ban_shu_ha_ri",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "ChatGPT",
       "YouTube",
@@ -607,21 +543,9 @@
       "Excel"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web 5 Ngày",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      },
-      {
-        "handle": "@SoiSangBrightSideVietnamese",
-        "name": "Soi Sáng",
-        "url": "https://www.youtube.com/channel/UChQtq0f3T1peK2w4olNyWYw"
-      },
-      {
-        "handle": "@TruyenDinhSoan",
-        "name": "Truyện Đình Soạn",
-        "url": "https://www.youtube.com/@TruyenDinhSoan"
-      }
+      "@Web5Ngay",
+      "@SoiSangBrightSideVietnamese",
+      "@TruyenDinhSoan"
     ],
     "course_docs": [
       {
@@ -743,8 +667,8 @@
     "category_group": "he_thong",
     "niche_primary": "Kho Tài Nguyên Video, Giọng Đọc AI & Nguồn Thuê Nhân Sự Giá Rẻ",
     "niche_id": "he_thong_kho_tai_nguyen_thue_nhan_su",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "Pexels",
       "Pixabay",
@@ -761,11 +685,7 @@
       "Shazam"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@NoCopyrightSounds",
-        "name": "NoCopyrightSounds (NCS)",
-        "url": "https://www.youtube.com/@NoCopyrightSounds"
-      }
+      "@NoCopyrightSounds"
     ],
     "course_docs": [
       {
@@ -886,8 +806,8 @@
     "category_group": "video_San_xuat",
     "niche_primary": "Tiêu Chí Dựng Video Triệu View & 7 Điều Cấm Kỵ Cho Editor",
     "niche_id": "san_xuat_tieu_chi_video_trieu_view",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "CapCut",
@@ -897,47 +817,14 @@
       "Excel"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@TrumPhimReview",
-        "name": "Trùm Phim Review",
-        "dead": true,
-        "deadNote": "Kênh Review Phim minh họa trong bài học đã ngừng hoạt động trên YouTube"
-      },
-      {
-        "handle": "@xinereview",
-        "name": "XiNe Review",
-        "url": "https://www.youtube.com/@xinereview"
-      },
-      {
-        "handle": "@CuongPhimReview",
-        "name": "Cuồng Phim Review",
-        "url": "https://www.youtube.com/@CuongPhimReview"
-      },
-      {
-        "handle": "@QUEENMOVIES",
-        "name": "QUEEN MOVIES",
-        "url": "https://www.youtube.com/@QUEENMOVIES"
-      },
-      {
-        "handle": "@5MinuteCraftsYouTube",
-        "name": "5-Minute Crafts",
-        "url": "https://www.youtube.com/@5MinuteCraftsYouTube"
-      },
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web 5 Ngày",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      },
-      {
-        "handle": "@BRIGHTSIDEOFFICIAL",
-        "name": "BRIGHT SIDE",
-        "url": "https://www.youtube.com/@BRIGHTSIDEOFFICIAL"
-      },
-      {
-        "handle": "@TruyenDinhSoan",
-        "name": "Truyện Đình Soạn",
-        "url": "https://www.youtube.com/@TruyenDinhSoan"
-      }
+      "@TrumPhimReview",
+      "@xinereview",
+      "@CuongPhimReview",
+      "@QUEENMOVIES",
+      "@5MinuteCraftsYouTube",
+      "@Web5Ngay",
+      "@BRIGHTSIDEOFFICIAL",
+      "@TruyenDinhSoan"
     ],
     "course_docs": [
       {
@@ -1058,8 +945,8 @@
     "category_group": "he_thong",
     "niche_primary": "Quy Trình Nuôi Kênh & Tương Tác Chủ Động Tăng View Đầu",
     "niche_id": "quy_trinh_nuoi_kenh_tuong_tac",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "ChatGPT",
       "YouTube Summary with ChatGPT",
@@ -1069,16 +956,8 @@
       "GPM Login"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@EnglishAnyone",
-        "name": "EnglishAnyone",
-        "url": "https://www.youtube.com/@EnglishAnyone"
-      },
-      {
-        "handle": "@5MinuteCraftsYouTube",
-        "name": "5-Minute Crafts",
-        "url": "https://www.youtube.com/@5MinuteCraftsYouTube"
-      }
+      "@EnglishAnyone",
+      "@5MinuteCraftsYouTube"
     ],
     "course_docs": [
       {
@@ -1194,8 +1073,8 @@
     "category_group": "he_thong",
     "niche_primary": "Quy Trình SEO & Upload Video Chuẩn Thuật Toán Đề Xuất",
     "niche_id": "quy_trinh_up_video_chuan",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "Dream 100",
       "vidIQ",
@@ -1217,16 +1096,8 @@
       "Zalo"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@BibleStories",
-        "name": "Bible Stories",
-        "url": "https://www.youtube.com/@BibleStories"
-      },
-      {
-        "handle": "@wisdom_insights",
-        "name": "Wisdom Insights",
-        "url": "https://www.youtube.com/@wisdom_insights"
-      }
+      "@BibleStories",
+      "@wisdom_insights"
     ],
     "course_docs": [
       {
@@ -1348,8 +1219,8 @@
     "category_group": "he_thong",
     "niche_primary": "Dream 100, Mô Hình Hóa & Tự Động Hóa Hệ Thống Kênh",
     "niche_id": "dream_100_mo_hinh_hoa_kenh",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "ChatGPT",
@@ -1360,31 +1231,11 @@
       "vidIQ"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@ThaiPham",
-        "name": "Thái Phạm",
-        "url": "https://www.youtube.com/@ThaiPham"
-      },
-      {
-        "handle": "@Spiderum",
-        "name": "Spiderum",
-        "url": "https://www.youtube.com/@Spiderum"
-      },
-      {
-        "handle": "@Sunhuyn",
-        "name": "Sunhuyn",
-        "url": "https://www.youtube.com/@Sunhuyn"
-      },
-      {
-        "handle": "@phamthanhlong",
-        "name": "Phạm Thành Long",
-        "url": "https://www.youtube.com/@phamthanhlong"
-      },
-      {
-        "handle": "@SOISANG",
-        "name": "Soi Sáng",
-        "url": "https://www.youtube.com/@SOISANG"
-      }
+      "@ThaiPham",
+      "@Spiderum",
+      "@Sunhuyn",
+      "@phamthanhlong",
+      "@SOISANG"
     ],
     "channels_referenced": [
       {
@@ -1564,8 +1415,8 @@
     "category_group": "ban_quyen",
     "niche_primary": "Luật Bản Quyền Fair Use & Xử Lý Content ID Cho Kênh Bán Content",
     "niche_id": "luat_fair_use_content_id",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "duration_sec": 1019,
     "tools_mentioned": [
       "YouTube",
@@ -1576,26 +1427,10 @@
       "vidIQ"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@YouTubeCreators",
-        "name": "YouTube Creators",
-        "url": "https://www.youtube.com/@YouTubeCreators"
-      },
-      {
-        "handle": "@vidIQ",
-        "name": "vidIQ",
-        "url": "https://www.youtube.com/@vidIQ"
-      },
-      {
-        "handle": "@noahmorris",
-        "name": "Noah Morris",
-        "url": "https://www.youtube.com/@noahmorris"
-      },
-      {
-        "handle": "@LawAndCrime",
-        "name": "Law&Crime Network",
-        "url": "https://www.youtube.com/@LawAndCrime"
-      }
+      "@YouTubeCreators",
+      "@vidIQ",
+      "@noahmorris",
+      "@LawAndCrime"
     ],
     "channels_referenced": [
       {
@@ -1739,8 +1574,8 @@
     "category_group": "he_thong",
     "niche_primary": "Luật Bản Quyền Fair Use & Bán Content",
     "niche_id": "luat_fair_use_ban_content",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "vidIQ",
@@ -1756,11 +1591,7 @@
       "Instagram"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@vidIQ",
-        "name": "vidIQ",
-        "url": "https://www.youtube.com/@vidIQ"
-      }
+      "@vidIQ"
     ],
     "channels_referenced": [
       {
@@ -1896,8 +1727,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chọn Chủ Đề Ra Tiền Ngay (Tin Tức, Câu Chuyện & DIY)",
     "niche_id": "chu_de_ra_tien_ngay_2024_2025",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Google",
@@ -1912,56 +1743,16 @@
       "Pixabay"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web 5 Ngày",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      },
-      {
-        "handle": "@KienThucQuanSu",
-        "name": "CDTeam - Kiến Thức Quân Sự",
-        "url": "https://www.youtube.com/c/Ki%E1%BA%BFnTh%E1%BB%A9cQu%C3%A2nS%E1%BB%B1"
-      },
-      {
-        "handle": "@jhgochannel",
-        "name": "JHGO Channel (Quân Sự Quốc Tế)",
-        "url": "https://www.youtube.com/@jhgochannel"
-      },
-      {
-        "handle": "@giavanghomnay-24h24",
-        "name": "Giá vàng Hôm Nay -24H",
-        "url": "https://www.youtube.com/@giavanghomnay-24h24"
-      },
-      {
-        "handle": "@xosominhngoc",
-        "name": "Xổ Số Minh Ngọc",
-        "url": "https://www.youtube.com/@xosominhngoc"
-      },
-      {
-        "handle": "@tuthan68",
-        "name": "Tu Thân (Trí Tuệ Cổ Nhân & Đi Ngủ)",
-        "url": "https://www.youtube.com/@tuthan68"
-      },
-      {
-        "handle": "@TUYETMATTV",
-        "name": "TUYỆT MẬT TV (Bí Ẩn)",
-        "url": "https://www.youtube.com/@TUYETMATTV"
-      },
-      {
-        "handle": "@trietlytinhhoa",
-        "name": "Triết Lý Tinh Hoa",
-        "url": "https://www.youtube.com/@trietlytinhhoa"
-      },
-      {
-        "handle": "@TheHanoiChamomile",
-        "name": "The Hanoi Chamomile (Study With Me)",
-        "url": "https://www.youtube.com/@TheHanoiChamomile"
-      },
-      {
-        "handle": "@ben8jam",
-        "name": "Ben 8Jam (Study With Me Quốc Tế)",
-        "url": "https://www.youtube.com/@ben8jam"
-      }
+      "@Web5Ngay",
+      "@KienThucQuanSu",
+      "@jhgochannel",
+      "@giavanghomnay-24h24",
+      "@xosominhngoc",
+      "@tuthan68",
+      "@TUYETMATTV",
+      "@trietlytinhhoa",
+      "@TheHanoiChamomile",
+      "@ben8jam"
     ],
     "course_docs": [
       {
@@ -2128,8 +1919,8 @@
     "category_group": "he_thong",
     "niche_primary": "Case Study Doanh Thu Thực Tế & Bàn Đạp Nhóm Chủ Đề Nước Ngoài",
     "niche_id": "show_thuc_te_kenh_hang_ty_dong",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "Storyblocks",
       "Pixabay",
@@ -2140,41 +1931,13 @@
       "CafeBiz"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@kenhsongkhoemoingay",
-        "name": "Sống Khỏe Mỗi Ngày (98.9M view - $145,735)",
-        "url": "https://www.youtube.com/@kenhsongkhoemoingay"
-      },
-      {
-        "handle": "@songannhienbmg",
-        "name": "Sống An Nhiên (50.0M view - $64,006)",
-        "url": "https://www.youtube.com/@songannhienbmg"
-      },
-      {
-        "handle": "@BIQUYETTHANHCONGBMG",
-        "name": "BÍ QUYẾT THÀNH CÔNG (86M view - $155,000)",
-        "url": "https://www.youtube.com/channel/UCc0CniFSF4F6Nk6UU69hjrA"
-      },
-      {
-        "handle": "@xemgihomnayofficial",
-        "name": "XEM GÌ HÔM NAY (1.5 Tỷ view - $282,476)",
-        "url": "https://www.youtube.com/@xemgihomnayofficial"
-      },
-      {
-        "handle": "@Studizzi",
-        "name": "Chất Xám (316K sub)",
-        "url": "https://www.youtube.com/@Studizzi"
-      },
-      {
-        "handle": "@thegioiphang69",
-        "name": "Thế Giới Phẳng (320K sub)",
-        "url": "https://www.youtube.com/@thegioiphang69"
-      },
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web 5 Ngày (Mẫu Video Vẽ Tay)",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      }
+      "@kenhsongkhoemoingay",
+      "@songannhienbmg",
+      "@BIQUYETTHANHCONGBMG",
+      "@xemgihomnayofficial",
+      "@Studizzi",
+      "@thegioiphang69",
+      "@Web5Ngay"
     ],
     "course_docs": [
       {
@@ -2345,112 +2108,21 @@
       "Storyblocks"
     ],
     "channels_mentioned": [
-      {
-        "name": "Philosophies for Life (Triết lý sống & Bài học cổ nhân Global)",
-        "handle": "@PhilosophiesforLife",
-        "url": "https://www.youtube.com/@PhilosophiesforLife",
-        "niche": "Triết lý sống / Life Philosophy (Global)",
-        "status": "live"
-      },
-      {
-        "name": "The Tapestry Of Life (Kênh Zen Stories 54 video đã bật kiếm tiền trên màn hình bài giảng)",
-        "handle": "@TheTapestryOfLifeDIJ",
-        "url": "https://www.youtube.com/@TheTapestryOfLifeDIJ",
-        "niche": "Truyện Thiền & Bài học cuộc sống bằng ảnh AI (40.7K subs)",
-        "status": "dead",
-        "dead": true
-      },
-      {
-        "name": "Stoic Journal (Kênh hình mẫu ngách Chủ nghĩa Khắc kỷ - Stoicism)",
-        "handle": "@RealStoicJournal",
-        "url": "https://www.youtube.com/@RealStoicJournal",
-        "niche": "Triết học Khắc kỷ / Stoicism (Global)",
-        "status": "live"
-      },
-      {
-        "name": "The Stoic Community (Kênh Stoic 309K sub phân tích trực tiếp trên màn hình)",
-        "handle": "@thestoiccommunity",
-        "url": "https://www.youtube.com/@thestoiccommunity",
-        "niche": "Triết học Khắc kỷ / Stoic Strategies (309K subs)",
-        "status": "live"
-      },
-      {
-        "name": "Life Quotes (Kênh hình mẫu ngách Châm ngôn sống - Quotes Video Channel)",
-        "handle": "@lifequotesz",
-        "url": "https://www.youtube.com/@lifequotesz",
-        "niche": "Châm ngôn sống & Danh ngôn cổ nhân (RPM $7-$10)",
-        "status": "live"
-      },
-      {
-        "name": "Quotes Official (Kênh hình mẫu ngách Quotes trong bảng Excel Tab 8)",
-        "handle": "@quotes_official",
-        "url": "https://www.youtube.com/@quotes_official",
-        "niche": "Châm ngôn & Triết lý cuộc sống (Global)",
-        "status": "live"
-      },
-      {
-        "name": "Aperture (Kênh hình mẫu ngách Tổng hợp kiến thức / Facts)",
-        "handle": "@ApertureThinking",
-        "url": "https://www.youtube.com/@ApertureThinking",
-        "niche": "Tổng hợp kiến thức & Triết học khoa học (Facts)",
-        "status": "live"
-      },
-      {
-        "name": "Epic History TV (Kênh hình mẫu ngách Lịch sử thế giới - Epic History)",
-        "handle": "@EpichistoryTv",
-        "url": "https://www.youtube.com/@EpichistoryTv",
-        "niche": "Lịch sử thế giới & Chiến sự cổ đại",
-        "status": "live"
-      },
-      {
-        "name": "AlternateHistoryHub (Kênh hình mẫu ngách Lịch sử giả định trong Tab 8)",
-        "handle": "@AlternateHistoryHub",
-        "url": "https://www.youtube.com/@AlternateHistoryHub",
-        "niche": "Lịch sử thế giới & Phân tích địa chính trị",
-        "status": "live"
-      },
-      {
-        "name": "The Life Guide (Kênh Thần thoại Hy Lạp 971K sub, chỉ 26 video, có video 14M view)",
-        "handle": "@TheLifeGuide",
-        "url": "https://www.youtube.com/@TheLifeGuide",
-        "niche": "Thần thoại Hy Lạp / Best Greek Mythology Documentary",
-        "status": "live"
-      },
-      {
-        "name": "Natural Cures / Chữa bệnh tự nhiên (Kênh Sức khỏe Global 3,51 triệu sub dùng Storyblocks)",
-        "handle": "@NaturalCures",
-        "url": "https://www.youtube.com/@NaturalCures",
-        "niche": "Sức khỏe & Mẹo chữa bệnh tự nhiên (Health & Natural Remedies)",
-        "status": "live"
-      },
-      {
-        "name": "Dream Sparks (Kênh hình mẫu ngách Câu chuyện Phật giáo - Gautam Buddha Motivational Story)",
-        "handle": "@DreamSparks34",
-        "url": "https://www.youtube.com/@DreamSparks34",
-        "niche": "Câu chuyện Phật giáo & Zen Story bằng ảnh AI",
-        "status": "live"
-      },
-      {
-        "name": "Bible Stories Official (Kênh hình mẫu ngách Câu chuyện Kinh Thánh - Story of Jesus)",
-        "handle": "@BibleStories.official",
-        "url": "https://www.youtube.com/@BibleStories.official",
-        "niche": "Câu chuyện Công giáo & Kinh Thánh bằng ảnh AI",
-        "status": "live"
-      },
-      {
-        "name": "Soothing Pod (Kênh hình mẫu ngách Kể chuyện trước khi ngủ - Bedtime Sleep Stories)",
-        "handle": "@SoothingPod",
-        "url": "https://www.youtube.com/@SoothingPod",
-        "niche": "Kể chuyện thư giãn trước khi ngủ (Bedtime Stories)",
-        "status": "live"
-      },
-      {
-        "name": "Great Meditation (Kênh hình mẫu ngách Thiền tập - Guided Meditation)",
-        "handle": "@GreatMeditation",
-        "url": "https://www.youtube.com/@GreatMeditation",
-        "niche": "Hướng dẫn thiền định & Chữa lành tâm thức",
-        "status": "live"
-      }
+      "@PhilosophiesforLife",
+      "@TheTapestryOfLifeDIJ",
+      "@RealStoicJournal",
+      "@thestoiccommunity",
+      "@lifequotesz",
+      "@quotes_official",
+      "@ApertureThinking",
+      "@EpichistoryTv",
+      "@AlternateHistoryHub",
+      "@TheLifeGuide",
+      "@NaturalCures",
+      "@DreamSparks34",
+      "@BibleStories.official",
+      "@SoothingPod",
+      "@GreatMeditation"
     ],
     "course_docs": [
       {
@@ -2603,8 +2275,8 @@
     "category_group": "he_thong",
     "niche_primary": "1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-f72ddb/transcript.txt"
   },
   "VIDEO-ba7795": {
@@ -2880,8 +2552,8 @@
     "category_group": "Tư Duy & Lộ Trình Thực Chiến",
     "niche_primary": "Lộ trình 2 cấp độ (Level 1 & Level 2) cho người mới bắt đầu xây kênh YouTube",
     "niche_id": "N01_ROADMAP_NEWBIE",
-    "target_market": "Việt Nam & Quốc tế (View Ngoại - US/AU/Global)",
-    "market_code": "GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "channels_mentioned": [],
     "key_takeaways": [
       "Lộ trình 2 cấp độ (Level 1 & Level 2) trên bảng tính 'GODA - LEVEL CHỦ ĐỀ (Tab 9. CÁC BƯỚC 1 NGƯỜI MỚI)': Phân tách rõ rệt giai đoạn sinh tồn (Level 1: Tạo ra kênh bật kiếm tiền và chạm mốc $1.000 đầu tiên dưới 152 video) với giai đoạn tăng trưởng (Level 2: Đúc kết, sáng tạo, tối ưu RPM và nhân bản hệ thống).",
@@ -3162,8 +2834,8 @@
     "category_group": "Hệ Sinh Thái & Quyền Lợi Học Viên",
     "niche_primary": "Tổng quan hệ sinh thái quyền lợi, hỗ trợ trọn đời và kho kết quả thực tế YouTube Total Success",
     "niche_id": "N01_YTS_ECOSYSTEM",
-    "target_market": "Việt Nam & Quốc tế (View Ngoại - US/Global)",
-    "market_code": "GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "channels_mentioned": [],
     "key_takeaways": [
       "Mô hình Đào tạo Trọn gói Không Phễu Ẩn (Zero-Upsell / Zero-Downsell Ecosystem): Toàn bộ kiến thức thực chiến ('làm thật, ăn thật') được đặt trọn vẹn trong 1 khóa học duy nhất. Học viên xem lần đầu có thể thấy nhiều thông tin vì không bị cắt nhỏ để bán thêm khóa sau; phương pháp học đúng là vừa thực hành từng bước vừa xem đi xem lại nhiều lần để ngấm sâu.",
@@ -3206,48 +2878,12 @@
       "SKPlayer"
     ],
     "channels_mentioned": [
-      {
-        "name": "Master Phùng Phương (Phong thủy Phùng Gia)",
-        "handle": "@MasterPhungPhuong",
-        "url": "https://www.youtube.com/@MasterPhungPhuong",
-        "topic": "Phong thủy chính phái / Bán vật phẩm phong thủy & dịch vụ tư vấn giá trị cao",
-        "subscribers": "500K+ (kênh chính 334K+ sub tại thời điểm bài giảng, hệ thống đa kênh >500K sub)"
-      },
-      {
-        "name": "Trần Việt Quân",
-        "handle": "@TranVietQuan",
-        "url": "https://www.youtube.com/@TranVietQuan",
-        "topic": "Đạo Phật ứng dụng / Nhân tướng học / Đào tạo Chánh Kiến & Hệ thống trường Tuệ Đức",
-        "subscribers": "365K+ (tăng trưởng từ 2.000 sub lên hàng trăm nghìn sub, 700-1.000 học viên/lớp)"
-      },
-      {
-        "name": "Bí Quyết Thành Công / Sách Tóm Tắt",
-        "handle": "@SachTomTat",
-        "url": "https://www.youtube.com/@SachTomTat",
-        "topic": "Tóm tắt sách tinh gọn / Phát triển bản thân & Đầu tư tài chính",
-        "subscribers": "200K+ (Nút Bạc YouTube, chuyển hóa thành ứng dụng đọc sách tinh gọn)"
-      },
-      {
-        "name": "Hoàng Mạnh Cường Marketing (Topmax)",
-        "handle": "@HoangManhCuongMarketing",
-        "url": "https://www.youtube.com/@HoangManhCuongMarketing",
-        "topic": "Đào tạo kinh doanh online / Thương mại điện tử thực chiến",
-        "subscribers": "100K+ (Nút Bạc YouTube)"
-      },
-      {
-        "name": "Tuệ An",
-        "handle": "@TueAn",
-        "url": "https://www.youtube.com/@TueAn",
-        "topic": "Tư vấn tâm lý / Chữa lành hôn nhân và gia đình",
-        "subscribers": "100K+ (Nút Bạc YouTube)"
-      },
-      {
-        "name": "On Sports",
-        "handle": "@OnSports",
-        "url": "https://www.youtube.com/@OnSports",
-        "topic": "Thể thao / Bóng đá bản quyền",
-        "subscribers": "2M+ (Case study tối ưu tăng gấp 4 lần doanh thu và lượng xem trong thời gian ngắn)"
-      }
+      "@MasterPhungPhuong",
+      "@TranVietQuan",
+      "@SachTomTat",
+      "@HoangManhCuongMarketing",
+      "@TueAn",
+      "@OnSports"
     ],
     "course_docs": [
       {
@@ -3347,8 +2983,8 @@
     "category_group": "he_thong",
     "niche_primary": "Năng lực Thực chiến Hệ thống Đa kênh & Chuyển đổi Thương hiệu Bán hàng",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
   },
@@ -3458,8 +3094,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tiêu chí Chọn Mentor & Hệ thống Chuyển giao Thực chiến",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
   },
@@ -3489,27 +3125,9 @@
       "GODA"
     ],
     "channels_mentioned": [
-      {
-        "name": "NTN Vlogs (Monster NTN - Nguyễn Thành Nam)",
-        "handle": "@MonsterNTN",
-        "url": "https://www.youtube.com/@MonsterNTN",
-        "topic": "Thử thách / Giải trí đời sống (Vlogs)",
-        "subscribers": "10M+ (Kênh cá nhân đạt Nút Kim Cương, thu nhập hàng trăm triệu đồng/tháng từ AdSense)"
-      },
-      {
-        "name": "Thơ Nguyễn",
-        "handle": "@ThoNguyen",
-        "url": "https://www.youtube.com/@ThoNguyen",
-        "topic": "Giải trí thiếu nhi & Đồ chơi",
-        "subscribers": "9M+ (Nộp thuế thu nhập từ YouTube khoảng 2 tỷ đồng/năm, tương đương doanh thu ~30 tỷ đồng/năm)"
-      },
-      {
-        "name": "Master Phùng Phương (Phong thủy Phùng Gia)",
-        "handle": "@MasterPhungPhuong",
-        "url": "https://www.youtube.com/@MasterPhungPhuong",
-        "topic": "Phong thủy chính phái / Kinh doanh vật phẩm & tư vấn phong thủy",
-        "subscribers": "500K+ (Minh chứng kênh vừa có doanh thu AdSense hàng trăm triệu vừa tạo doanh số bán hàng hàng tỷ đồng)"
-      }
+      "@MonsterNTN",
+      "@ThoNguyen",
+      "@MasterPhungPhuong"
     ],
     "course_docs": [
       {
@@ -3609,8 +3227,8 @@
     "category_group": "he_thong",
     "niche_primary": "Cơ chế Kiếm tiền YouTube, Tối ưu RPM Ngoại & Chiến lược Kéo Đề xuất X10",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
   },
@@ -3643,48 +3261,12 @@
       "GODA"
     ],
     "channels_mentioned": [
-      {
-        "name": "Quang Linh Vlogs - Cuộc Sống ở Châu Phi",
-        "handle": "@QuangLinhVlogsCuocSongChauPhi",
-        "url": "https://www.youtube.com/@QuangLinhVlogsCuocSongChauPhi",
-        "topic": "Thiện nguyện & Cuộc sống tại Châu Phi / Kinh doanh thương mại",
-        "subscribers": "4M+ (Case study xây dựng nhân hiệu uy tín rồi hợp tác bán sản phẩm doanh số rất lớn)"
-      },
-      {
-        "name": "MixiGaming (Độ Mixi)",
-        "handle": "@MixiGaming3con",
-        "url": "https://www.youtube.com/@MixiGaming3con",
-        "topic": "Gaming / Livestream giao lưu cộng đồng",
-        "subscribers": "7M+ (Case study nguồn thu Donate hàng trăm triệu đồng/tháng và bán đồ ăn vặt/áo hiệu Bộ Tộc MixiGaming)"
-      },
-      {
-        "name": "Phạm Thành Long",
-        "handle": "@PhamThanhLong",
-        "url": "https://www.youtube.com/@PhamThanhLong",
-        "topic": "Đào tạo kinh doanh & Phát triển bản thân",
-        "subscribers": "1M+ (Case study dùng YouTube thu hút hàng nghìn học viên cho các khóa học kinh doanh)"
-      },
-      {
-        "name": "Kiên Review",
-        "handle": "@KienReview",
-        "url": "https://www.youtube.com/@KienReview",
-        "topic": "Review sản phẩm tiêu dùng / Tiếp thị liên kết (Affiliate)",
-        "subscribers": "1M+ (Case study kiếm hàng trăm triệu đồng/tháng từ Affiliate và booking nhãn hàng)"
-      },
-      {
-        "name": "Trần Việt Quân",
-        "handle": "@TranVietQuan",
-        "url": "https://www.youtube.com/@TranVietQuan",
-        "topic": "Đạo Phật ứng dụng / Nhân tướng học / Đào tạo Chánh Kiến",
-        "subscribers": "365K+ (Case study dùng YouTube tuyển sinh 700–1.000 học viên/lớp và phát triển trường Tuệ Đức)"
-      },
-      {
-        "name": "Ali Abdaal",
-        "handle": "@aliabdaal",
-        "url": "https://www.youtube.com/@aliabdaal",
-        "topic": "Hiệu suất làm việc (Productivity), Học tập & Công nghệ",
-        "subscribers": "5M+ (Case study 1 kênh tạo ra 1,4 triệu USD ~ 33 tỷ VNĐ năm 2020 từ 5 nguồn thu chỉ với 98 video)"
-      }
+      "@QuangLinhVlogsCuocSongChauPhi",
+      "@MixiGaming3con",
+      "@PhamThanhLong",
+      "@KienReview",
+      "@TranVietQuan",
+      "@aliabdaal"
     ],
     "course_docs": [
       {
@@ -3784,8 +3366,8 @@
     "category_group": "he_thong",
     "niche_primary": "5 Nguồn Thu Nhập Gián Tiếp YouTube & Chiến Lược Affiliate Trọn Đời",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
   },
@@ -3815,20 +3397,8 @@
       "GODA"
     ],
     "channels_mentioned": [
-      {
-        "name": "Hoàng Mạnh Cường Marketing (Hoàng Mạnh Cường TOPMAX)",
-        "handle": "@HoangManhCuongMarketing",
-        "url": "https://www.youtube.com/@HoangManhCuongMarketing",
-        "topic": "Đào tạo kinh doanh online & Thương mại điện tử thực chiến",
-        "subscribers": "100K+ (Bùng phát từ 33.094 sub ngày 19/01/2022 lên 51.426 sub sau 1 tuần và vượt 85.000–100.000 sub)"
-      },
-      {
-        "name": "Master Phùng Phương (Phong thủy Phùng Gia)",
-        "handle": "@MasterPhungPhuong",
-        "url": "https://www.youtube.com/@MasterPhungPhuong",
-        "topic": "Phong thủy chính phái / Hệ sinh thái kênh phong thủy chuyển đổi doanh số >1 tỷ đồng/tháng",
-        "subscribers": "500K+ (Hệ sinh thái kênh phong thủy Top 1 thị trường)"
-      }
+      "@HoangManhCuongMarketing",
+      "@MasterPhungPhuong"
     ],
     "course_docs": [
       {
@@ -3933,8 +3503,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư duy & Chiến lược Tăng trưởng Kênh (Điểm Aha Bùng Phát)",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
   },
@@ -3961,13 +3531,7 @@
       "GODA"
     ],
     "channels_mentioned": [
-      {
-        "name": "Ali Abdaal",
-        "handle": "@aliabdaal",
-        "url": "https://www.youtube.com/@aliabdaal",
-        "topic": "Hiệu suất làm việc (Productivity), Học tập & Công nghệ",
-        "subscribers": "5M+ (Minh chứng lộ trình Đúng – Đủ – Đều 2017–2020: đăng 59–98 video/năm, tăng từ 1.600 sub lên 1,78 triệu sub)"
-      }
+      "@aliabdaal"
     ],
     "course_docs": [
       {
@@ -4066,8 +3630,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư duy & Kỷ luật Vận hành Kênh (Đúng - Đủ - Đều)",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
   },
@@ -4201,8 +3765,8 @@
     "category_group": "he_thong",
     "niche_primary": "Nghiên cứu Thị trường Ngách & Định vị Thương hiệu (Vua Ngách)",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
   },
@@ -4228,27 +3792,9 @@
       "GODA"
     ],
     "channels_mentioned": [
-      {
-        "name": "Ali Abdaal",
-        "handle": "@aliabdaal",
-        "url": "https://www.youtube.com/@aliabdaal",
-        "topic": "Hiệu suất làm việc (Productivity), Phương pháp học tập ôn thi & Công nghệ",
-        "subscribers": "5M+ (Bước ngoặt tại video #28–29 chuyển sang ngách How to study for exams đạt 1,2–3 triệu view, thu nhập 1,4 triệu USD năm 2020)"
-      },
-      {
-        "name": "Trần Việt Quân",
-        "handle": "@TranVietQuan",
-        "url": "https://www.youtube.com/@TranVietQuan",
-        "topic": "Nhân tướng học trong đời sống & Ứng dụng Đạo Phật trong đời sống",
-        "subscribers": "365K+ (Từ 2.000 sub & 100 học viên/lớp tăng lên 365.000+ sub & 700–1.000 học viên/lớp sau 5 tháng quy hoạch ngách)"
-      },
-      {
-        "name": "Master Phùng Phương (Phong thủy Phùng Gia)",
-        "handle": "@MasterPhungPhuong",
-        "url": "https://www.youtube.com/@MasterPhungPhuong",
-        "topic": "Phong thủy khoa học chính phái dành cho chủ doanh nghiệp & người có thu nhập cao",
-        "subscribers": "500K+ (Bắt đầu từ con số 0 tháng 01/2021, trở thành hệ thống kênh phong thủy số 1 Việt Nam sau 1 năm)"
-      }
+      "@aliabdaal",
+      "@TranVietQuan",
+      "@MasterPhungPhuong"
     ],
     "course_docs": [
       {
@@ -4357,8 +3903,8 @@
     "category_group": "he_thong",
     "niche_primary": "Phân tích Case Study Đột phá Ngách & Hiệu ứng Hào quang",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
   },
@@ -4369,27 +3915,15 @@
     "category_group": "Xây Kênh & Khởi Tạo Hệ Thống",
     "niche_primary": "Nghiên Cứu Ngách & Mô Hình Hóa Đối Thủ",
     "niche_id": "CHANNEL_MODELING",
-    "target_market": "Global & Vietnam",
-    "market_code": "GLOBAL_VN",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@PhamThanhLong",
-        "name": "Phạm Thành Long",
-        "url": "https://www.youtube.com/@PhamThanhLong"
-      },
-      {
-        "handle": "@PhongThuyTamNguyen",
-        "name": "Thầy Phong Thủy Tam Nguyên",
-        "url": "https://www.youtube.com/@PhongThuyTamNguyen"
-      },
-      {
-        "handle": "@MasterPhungPhuong",
-        "name": "Master Phùng Phương",
-        "url": "https://www.youtube.com/@MasterPhungPhuong"
-      }
+      "@PhamThanhLong",
+      "@PhongThuyTamNguyen",
+      "@MasterPhungPhuong"
     ],
     "course_docs": [
       {
@@ -4505,8 +4039,8 @@
     "category_group": "Xây Kênh & Khởi Tạo Hệ Thống",
     "niche_primary": "Chiến Lược Dream 100 & Nghiên Cứu Đối Thủ",
     "niche_id": "DREAM_100_RESEARCH",
-    "target_market": "Global & Vietnam",
-    "market_code": "GLOBAL_VN",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Google Chrome",
@@ -4519,11 +4053,7 @@
       "Twitch"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@ThaiPham",
-        "name": "Thái Phạm",
-        "url": "https://www.youtube.com/@ThaiPham"
-      }
+      "@ThaiPham"
     ],
     "course_docs": [
       {
@@ -4639,48 +4169,20 @@
     "category_group": "Xây Kênh & Khởi Tạo Hệ Thống",
     "niche_primary": "Tư Duy Tăng Trưởng & Quy Luật Keep Going",
     "niche_id": "KEEP_GOING_152_VIDEOS",
-    "target_market": "Global & Vietnam",
-    "market_code": "GLOBAL_VN",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "YouTube Shorts"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@TranVietQuan",
-        "name": "Trần Việt Quân",
-        "url": "https://www.youtube.com/@TranVietQuan"
-      },
-      {
-        "handle": "@aliabdaal",
-        "name": "Ali Abdaal",
-        "url": "https://www.youtube.com/@aliabdaal"
-      },
-      {
-        "handle": "@MrBeast",
-        "name": "MrBeast",
-        "url": "https://www.youtube.com/@MrBeast"
-      },
-      {
-        "handle": "@PhamThanhLong",
-        "name": "Phạm Thành Long",
-        "url": "https://www.youtube.com/@PhamThanhLong"
-      },
-      {
-        "handle": "@ThoNguyen",
-        "name": "Thơ Nguyễn",
-        "url": "https://www.youtube.com/@ThoNguyen"
-      },
-      {
-        "handle": "@5MinuteCraftsYouTube",
-        "name": "5-Minute Crafts",
-        "url": "https://www.youtube.com/@5MinuteCraftsYouTube"
-      },
-      {
-        "handle": "@BRIGHTSIDEOFFICIAL",
-        "name": "Bright Side",
-        "url": "https://www.youtube.com/@BRIGHTSIDEOFFICIAL"
-      }
+      "@TranVietQuan",
+      "@aliabdaal",
+      "@MrBeast",
+      "@PhamThanhLong",
+      "@ThoNguyen",
+      "@5MinuteCraftsYouTube",
+      "@BRIGHTSIDEOFFICIAL"
     ],
     "course_docs": [
       {
@@ -4796,8 +4298,8 @@
     "category_group": "Xây Kênh & Khởi Tạo Hệ Thống",
     "niche_primary": "Case Study Điểm Bùng Phát & Doanh Thu Thực Tế",
     "niche_id": "KEEP_GOING_CASE_STUDY",
-    "target_market": "Global & Vietnam",
-    "market_code": "GLOBAL_VN",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube Studio",
       "ElevenLabs",
@@ -4913,58 +4415,22 @@
     "category_group": "Xây Kênh & Khởi Tạo Hệ Thống",
     "niche_primary": "Đặt Tên Kênh & Tối Ưu SEO Thương Hiệu",
     "niche_id": "CHANNEL_NAMING_SEO",
-    "target_market": "Global & Vietnam",
-    "market_code": "GLOBAL_VN",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "YouTube Studio"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@PhamThanhLong",
-        "name": "Phạm Thành Long",
-        "url": "https://www.youtube.com/@PhamThanhLong"
-      },
-      {
-        "handle": "@MasterPhungPhuong",
-        "name": "Master Phùng Phương",
-        "url": "https://www.youtube.com/@MasterPhungPhuong"
-      },
-      {
-        "handle": "@Top5LaKy",
-        "name": "Top 5 Lạ Kỳ",
-        "url": "https://www.youtube.com/@Top5LaKy"
-      },
-      {
-        "handle": "@Top10HuyenBi",
-        "name": "Top 10 Huyền Bí",
-        "url": "https://www.youtube.com/@Top10HuyenBi"
-      },
-      {
-        "handle": "@ManhOTo",
-        "name": "Mạnh Ô Tô",
-        "url": "https://www.youtube.com/@ManhOTo"
-      },
-      {
-        "handle": "@MrXuanHoan",
-        "name": "Mr. Xuân Hoàn",
-        "url": "https://www.youtube.com/@MrXuanHoan"
-      },
-      {
-        "handle": "@HoangManhCuongMarketing",
-        "name": "Hoàng Mạnh Cường",
-        "url": "https://www.youtube.com/@HoangManhCuongMarketing"
-      },
-      {
-        "handle": "@DoGoThanhLuan",
-        "name": "Đồ Gỗ Thành Luân",
-        "url": "https://www.youtube.com/@DoGoThanhLuan"
-      },
-      {
-        "handle": "@DoGoKinhBac",
-        "name": "Đồ Gỗ Kinh Bắc",
-        "url": "https://www.youtube.com/@DoGoKinhBac"
-      }
+      "@PhamThanhLong",
+      "@MasterPhungPhuong",
+      "@Top5LaKy",
+      "@Top10HuyenBi",
+      "@ManhOTo",
+      "@MrXuanHoan",
+      "@HoangManhCuongMarketing",
+      "@DoGoThanhLuan",
+      "@DoGoKinhBac"
     ],
     "course_docs": [
       {
@@ -5069,8 +4535,8 @@
     "category_group": "Xây Kênh & Khởi Tạo Hệ Thống",
     "niche_primary": "Cấu Trúc Kênh Thương Hiệu & Tối Ưu YouTube Studio",
     "niche_id": "BRAND_CHANNEL_SETUP",
-    "target_market": "Global & Vietnam",
-    "market_code": "GLOBAL_VN",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "YouTube Studio",
@@ -5080,16 +4546,8 @@
       "Microsoft Excel"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@PhamThanhLong",
-        "name": "Phạm Thành Long",
-        "url": "https://www.youtube.com/@PhamThanhLong"
-      },
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web5Ngay",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      }
+      "@PhamThanhLong",
+      "@Web5Ngay"
     ],
     "course_docs": [
       {
@@ -5200,8 +4658,8 @@
     "category_group": "Sản Xuất Nội Dung & Kịch Bản",
     "niche_primary": "Kho Ý Tưởng & Chiến Lược Content Triệu View",
     "niche_id": "CONTENT_IDEATION_VAULT",
-    "target_market": "Global & Vietnam",
-    "market_code": "GLOBAL_VN",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Facebook",
@@ -5313,52 +4771,20 @@
     "category_group": "Xây Kênh & Khởi Tạo Hệ Thống",
     "niche_primary": "Mô Hình Kênh Faceless & Hệ Thống Hóa Doanh Nghiệp",
     "niche_id": "FACELESS_CHANNEL_MODELS",
-    "target_market": "Global & Vietnam",
-    "market_code": "GLOBAL_VN",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@ManhOTo",
-        "name": "Mạnh Ô Tô",
-        "url": "https://www.youtube.com/@ManhOTo"
-      },
-      {
-        "handle": "@TheGioiDiDong",
-        "name": "Thế Giới Di Động",
-        "url": "https://www.youtube.com/@TheGioiDiDong"
-      },
-      {
-        "handle": "@MediaMartOfficial",
-        "name": "Siêu thị Điện máy MediaMart",
-        "url": "https://www.youtube.com/@MediaMartOfficial"
-      },
-      {
-        "handle": "@VatVoStudio",
-        "name": "Vật Vờ Studio",
-        "url": "https://www.youtube.com/@VatVoStudio"
-      },
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web5Ngay",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      },
-      {
-        "handle": "@YogaLunaThai",
-        "name": "Yoga Luna Thái",
-        "url": "https://www.youtube.com/@YogaLunaThai"
-      },
-      {
-        "handle": "@RyanLongFitness",
-        "name": "Ryan Long Fitness",
-        "url": "https://www.youtube.com/@RyanLongFitness"
-      },
-      {
-        "handle": "@HOABANFOOD",
-        "name": "HOA BAN FOOD",
-        "url": "https://www.youtube.com/@HOABANFOOD"
-      }
+      "@ManhOTo",
+      "@TheGioiDiDong",
+      "@MediaMartOfficial",
+      "@VatVoStudio",
+      "@Web5Ngay",
+      "@YogaLunaThai",
+      "@RyanLongFitness",
+      "@HOABANFOOD"
     ],
     "course_docs": [
       {
@@ -5463,8 +4889,8 @@
     "category_group": "he_thong",
     "niche_primary": "Quy trình 80/20 & Quản trị vận hành kênh YouTube",
     "niche_id": "quy_trinh_80_20_youtube",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "TikTok",
@@ -5479,36 +4905,12 @@
       "Shopee"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@HoangManhCuongMarketing",
-        "name": "Hoàng Mạnh Cường Official",
-        "url": "https://www.youtube.com/@HoangManhCuongMarketing"
-      },
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web5Ngay",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      },
-      {
-        "handle": "@ShopeeUniVietnam",
-        "name": "Shopee Uni Vietnam",
-        "url": "https://www.youtube.com/@ShopeeUniVietnam"
-      },
-      {
-        "handle": "@BigManMarketing",
-        "name": "Big Man Marketing",
-        "url": "https://www.youtube.com/@BigManMarketing"
-      },
-      {
-        "handle": "@ThaiPham",
-        "name": "Thai Pham",
-        "url": "https://www.youtube.com/@ThaiPham"
-      },
-      {
-        "handle": "@PhamThanhLong",
-        "name": "Phạm Thành Long Official",
-        "url": "https://www.youtube.com/@PhamThanhLong"
-      }
+      "@HoangManhCuongMarketing",
+      "@Web5Ngay",
+      "@ShopeeUniVietnam",
+      "@BigManMarketing",
+      "@ThaiPham",
+      "@PhamThanhLong"
     ],
     "course_docs": [
       {
@@ -5625,8 +5027,8 @@
     "category_group": "noi_dung",
     "niche_primary": "Ngòi nổ nội dung (Nhân tố X) & Công thức Video Triệu View",
     "niche_id": "ngoi_no_youtube_video_trieu_view",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "TikTok",
@@ -5636,16 +5038,8 @@
       "vidIQ"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@KinhLupTV",
-        "name": "Kính Lúp TV",
-        "url": "https://www.youtube.com/@KinhLupTV"
-      },
-      {
-        "handle": "@KhongGioiHanNew",
-        "name": "Không Giới Hạn New",
-        "url": "https://www.youtube.com/@KhongGioiHanNew"
-      }
+      "@KinhLupTV",
+      "@KhongGioiHanNew"
     ],
     "course_docs": [
       {
@@ -5771,24 +5165,8 @@
       "Facebook"
     ],
     "channels_mentioned": [
-      {
-        "name": "Kính Lúp TV",
-        "handle": "@KinhLupTV",
-        "url": "https://www.youtube.com/@KinhLupTV",
-        "verified": true,
-        "http_status": 200,
-        "topic": "Kênh khoa học - khám phá thiên nhiên và thế giới động vật kể theo góc nhìn thứ ba của con người thuyết minh khách quan",
-        "metrics": "Góc nhìn con người phân tích tập tính động vật (~127.000 lượt xem trên video cùng chủ đề)"
-      },
-      {
-        "name": "Không Giới Hạn New",
-        "handle": "@KhongGioiHanNew",
-        "url": "https://www.youtube.com/@KhongGioiHanNew",
-        "verified": true,
-        "http_status": 200,
-        "topic": "Kênh thế giới động vật áp dụng góc nhìn ngôi thứ nhất nhập vai trực tiếp vào con thú săn mồi (hổ, báo, sói)",
-        "metrics": "Đổi trục góc nhìn nhập vai thú săn mồi giúp nhân bản hàng loạt kịch bản leo Top Thịnh Hành (~13,4 triệu lượt xem)"
-      }
+      "@KinhLupTV",
+      "@KhongGioiHanNew"
     ],
     "course_docs": [
       {
@@ -5909,8 +5287,8 @@
     "category_group": "he_thong",
     "niche_primary": "Công thức Góc Nhìn Mới (Multi-Angle) & Đón Luồng Đề Xuất Thịnh Hành",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-227162": {
     "sku": "VIDEO-227162",
@@ -5919,8 +5297,8 @@
     "category_group": "he_thong",
     "niche_primary": "Định vị kênh, quản trị mục tiêu OKR & nguyên lý nội dung YouTube",
     "niche_id": "dinh_vi_kenh_okr_nguyen_ly_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "OKR",
@@ -5930,24 +5308,8 @@
       "Facebook"
     ],
     "channels_mentioned": [
-      {
-        "name": "Kính Lúp TV",
-        "handle": "@KinhLupTV",
-        "url": "https://www.youtube.com/@KinhLupTV",
-        "verified": true,
-        "http_status": 200,
-        "topic": "Kênh khoa học - động vật dùng làm mẫu đối chứng khi phân tích ngách và test Nhân tố X từ đối thủ",
-        "metrics": "Kênh lớn có video triệu view để người mới phân tích điểm chung phổ biến và tìm ngách bị bỏ sót"
-      },
-      {
-        "name": "Không Giới Hạn New",
-        "handle": "@KhongGioiHanNew",
-        "url": "https://www.youtube.com/@KhongGioiHanNew",
-        "verified": true,
-        "http_status": 200,
-        "topic": "Kênh thế giới động vật minh họa cho việc tìm ra 'Phát minh' góc nhìn mới (nhập vai thú săn mồi) và nhấn mạnh cực đại Nhân tố X",
-        "metrics": "Đạt 13,4 triệu lượt xem nhờ kết hợp đúng Ngách chủ đề + Bộ từ khóa + Ngòi nổ cực đại (nhất/mạnh nhất)"
-      }
+      "@KinhLupTV",
+      "@KhongGioiHanNew"
     ],
     "course_docs": [
       {
@@ -6079,8 +5441,8 @@
     "category_group": "he_thong",
     "niche_primary": "Phân tích nguồn lưu lượng truy cập (Traffic Sources) trên YouTube",
     "niche_id": "phan_tich_nguon_view_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube Studio",
       "YouTube Analytics",
@@ -6093,42 +5455,10 @@
       "Excel"
     ],
     "channels_mentioned": [
-      {
-        "name": "Bí Quyết Thành Công (BMG)",
-        "handle": "@biquyetthanhcong68",
-        "url": "https://www.youtube.com/@biquyetthanhcong68",
-        "verified": true,
-        "http_status": 200,
-        "topic": "Kênh phát triển bản thân & tư duy tài chính thuộc hệ thống BMG dùng để minh họa khái niệm 'Video đề xuất' và danh sách phát tự động 'Mix - Bí Quyết Thành Công'",
-        "metrics": "556.000 người đăng ký; video 'Kỳ Lạ 10 Cách LÀM GIÀU NHANH NHẤT Ở Nông Thôn 2021 Không Ai Chịu Làm' đạt 1.479.145 lượt xem và 8,7N lượt thích"
-      },
-      {
-        "name": "Hoàng Mạnh Cường Official",
-        "handle": "@HoangManhCuongMarketing",
-        "url": "https://www.youtube.com/@HoangManhCuongMarketing",
-        "verified": true,
-        "http_status": 200,
-        "topic": "Kênh kiến thức kinh doanh & marketing thực chiến minh họa cho chiến lược chạy Quảng cáo YouTube mồi đúng tệp để kích hoạt đề xuất tự nhiên",
-        "metrics": "952.991 lượt hiển thị (CTR 5,3%), 196.780 lượt xem: Quảng cáo YouTube 124.688 view (63,4%), kéo theo Tìm kiếm 31.677 view (CTR 12,7%, AVD 7:56) và Đề xuất 18.399 view (AVD 11:02)"
-      },
-      {
-        "name": "Ngẫm Sự Đời",
-        "handle": "@NgamSuDoi",
-        "url": "https://www.youtube.com/@NgamSuDoi",
-        "verified": true,
-        "http_status": 200,
-        "topic": "Kênh triết lý sống & câu chuyện cuộc đời xuất hiện trong báo cáo 'Các trang của kênh' của kênh Phong Thủy",
-        "metrics": "6.288 lượt hiển thị hình thu nhỏ, CTR 1,4%, 96 lượt xem (2,1%), thời lượng xem trung bình 5:53"
-      },
-      {
-        "name": "Phi Nhung Official",
-        "handle": "@PhiNhungOfficial",
-        "url": "https://www.youtube.com/@PhiNhungOfficial",
-        "verified": true,
-        "http_status": 200,
-        "topic": "Kênh nghệ sĩ xuất hiện trong mục 'Các trang của kênh' giúp phát hiện hành vi giao thoa tệp khán giả và dấu hiệu kênh khác đang test chủ đề mới",
-        "metrics": "16.108 lượt hiển thị hình thu nhỏ, CTR 1,5%, 286 lượt xem (6,4%), thời lượng xem trung bình 2:26"
-      }
+      "@biquyetthanhcong68",
+      "@HoangManhCuongMarketing",
+      "@NgamSuDoi",
+      "@PhiNhungOfficial"
     ],
     "course_docs": [
       {
@@ -6264,48 +5594,12 @@
       "YouTube Community Tab"
     ],
     "channels_mentioned": [
-      {
-        "name": "Bí Quyết Thành Công (BMG)",
-        "handle": "@biquyetthanhcong68",
-        "url": "https://www.youtube.com/@biquyetthanhcong68",
-        "status": "LIVE_200",
-        "Topic": "Kênh chủ lực được mở trực tiếp trong YouTube Studio suốt bài giảng: tổng 80.633.942 lượt hiển thị (Các tính năng duyệt xem 40.866.525, Video đề xuất 32.089.665), nguồn Video đề xuất 9.368.888 lượt hiển thị, và video dẫn kênh 'Muốn Thoát Nghèo Đừng Làm Việc...' đạt 2.286.620 lượt xem, +39,5N sub, doanh thu $4.311,61"
-      },
-      {
-        "name": "Kính Lúp TV",
-        "handle": "@KinhLupTV",
-        "url": "https://www.youtube.com/@KinhLupTV",
-        "status": "LIVE_200",
-        "Topic": "Case study điển hình về việc tìm ra một dạng nội dung phổ biến dẫn kênh rồi lập tức nhân bản hàng loạt video xoay quanh chủ đề đó để bùng nổ đề xuất"
-      },
-      {
-        "name": "Web 5 Ngày",
-        "handle": "@Web5Ngay",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw",
-        "status": "LIVE_200",
-        "Topic": "Kênh phát triển bản thân & tài chính (3,6 Tr người đăng ký) xuất hiện liên tục trong cả cột Video nối đề xuất bên phải ('Cách Có Nhiều Tiền', 'Công thức Quản Lý Tiền Bạc') và mục 'Những kênh khác mà khán giả của bạn xem' của Bí Quyết Thành Công"
-      },
-      {
-        "name": "Hố Xanh Kiến Thức",
-        "handle": "@HoXanhKienThuc",
-        "url": "https://www.youtube.com/@HoXanhKienThuc",
-        "status": "LIVE_200",
-        "Topic": "Kênh kiến thức/lịch sử/tin tức trong hệ thống dùng để đối chiếu tính cách thương hiệu nhất quán: cùng một sự kiện thời sự nhưng triển khai theo giọng văn 'cà khịa' đối lập hoàn toàn với giọng 'tôn vinh/nâng bi' của kênh Nabi Việt Nam"
-      },
-      {
-        "name": "Nha Khoa Lạc Việt Intech",
-        "handle": "@NhaKhoaLacVietIntech",
-        "url": "https://www.youtube.com/@NhaKhoaLacVietIntech",
-        "status": "LIVE_200",
-        "Topic": "Case study ngách chuyên môn Nha khoa / Niềng răng: thấu hiểu sâu tâm lý người muốn niềng răng và lặp đi lặp lại mô-típ nội dung trúng đích giúp ăn đề xuất bền vững"
-      },
-      {
-        "name": "Phạm Thành Long Official",
-        "handle": "@PhamThanhLong",
-        "url": "https://www.youtube.com/@PhamThanhLong",
-        "status": "LIVE_200",
-        "Topic": "Kênh xuất hiện trực tiếp trên bảng chụp luồng 'Video nối đề xuất' bên phải màn hình ('Con Đường Làm Giàu Từ Tay Trắng Của Phạm Thành Long - 2,1 Tr lượt xem') thuộc luồng khán giả mở rộng ngoài kênh"
-      }
+      "@biquyetthanhcong68",
+      "@KinhLupTV",
+      "@Web5Ngay",
+      "@HoXanhKienThuc",
+      "@NhaKhoaLacVietIntech",
+      "@PhamThanhLong"
     ],
     "course_docs": [
       {
@@ -6419,8 +5713,8 @@
     "category_group": "he_thong",
     "niche_primary": "Phân tích luồng khán giả & chiến lược sản xuất video ăn đề xuất",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-f78a7f": {
     "sku": "VIDEO-f78a7f",
@@ -6435,27 +5729,9 @@
       "TikTok Comments"
     ],
     "channels_mentioned": [
-      {
-        "name": "Hoàng Mạnh Cường Official",
-        "handle": "@HoangManhCuongMarketing",
-        "url": "https://www.youtube.com/@HoangManhCuongMarketing",
-        "status": "LIVE_200",
-        "Topic": "Case study điển hình hiển thị trực tiếp 3 bình luận cầu cứu trên màn hình ('E trót nhập lô áo phông 5000 chiếc hót trend bán chậm hàng tồn nhiều' của iamnh04, 'Marketing quán cafe đi anh ơi e hỏi 10 lần rồi' của lyle32_, 'Em bán cơm bình dân mà ít khách toàn phải ngồi đuổi ruồi') để tạo ra chuỗi video triệu view"
-      },
-      {
-        "name": "Bác sĩ bỉm sữa Đoàn Hải Đăng",
-        "handle": "@DoanHaiDang",
-        "url": "https://www.youtube.com/@DoanHaiDang",
-        "status": "LIVE_200",
-        "Topic": "Case study kênh chuyên gia Y khoa / Nhi khoa (19,8N người đăng ký) kết hợp Group Facebook 'Bí quyết chăm con' (15,0K thành viên): biến các câu hỏi của mẹ bỉm sữa thành chuỗi video ăn tìm kiếm ('Bé bị sốt đi sốt lại' 126N views, 'Dùng điều hoà cho trẻ sơ sinh không bao giờ ốm' 75N views, 'Cách tập ti bình cho bé' 53N views)"
-      },
-      {
-        "name": "Nha Khoa Lạc Việt Intech",
-        "handle": "@NhaKhoaLacVietIntech",
-        "url": "https://www.youtube.com/@NhaKhoaLacVietIntech",
-        "status": "LIVE_200",
-        "Topic": "Ví dụ ngách chuyên môn Nha khoa khai thác trực tiếp kho câu hỏi lặp đi lặp lại trong mục bình luận của các kênh đối thủ cùng ngành để sản xuất nội dung giải đáp"
-      }
+      "@HoangManhCuongMarketing",
+      "@DoanHaiDang",
+      "@NhaKhoaLacVietIntech"
     ],
     "course_docs": [
       {
@@ -6564,8 +5840,8 @@
     "category_group": "he_thong",
     "niche_primary": "Sáng tạo nội dung từ câu hỏi khán giả & chiếm lĩnh Top Tìm Kiếm",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-99414d": {
     "sku": "VIDEO-99414d",
@@ -6578,31 +5854,11 @@
       "Sách Thôi Miên Bằng Ngôn Từ - Joe Vitale"
     ],
     "channels_mentioned": [
-      {
-        "name": "Bí Quyết Thành Công (BMG)",
-        "url": "https://www.youtube.com/@biquyetthanhcong68",
-        "description": "Kênh tài chính - kinh doanh minh họa mẫu tiêu đề thêm con số ấn tượng 'PHẠM NHẬT VƯỢNG khiến tổ quốc LỤI TÀN hay GIÀU LÊN khi NẮM TRONG TAY 230 NGHÌN TỶ?' (2,9M views) và tiêu đề bí mật 'Kỳ Lạ 10 Cách LÀM GIÀU NHANH NHẤT Ở Nông Thôn 2021 Không Ai Chịu Làm' (1,2M views)."
-      },
-      {
-        "name": "Kính Lúp TV",
-        "url": "https://www.youtube.com/@KinhLupTV",
-        "description": "Kênh khám phá 1,47 triệu sub minh họa kỹ thuật gắn icon ngọn lửa thương hiệu đầu tiêu đề và đặt con số đứng đầu: '7 Trận Cuộc Gặp Gỡ Kịch Tính Nhất Của Lợn Rừng...' (9,8M views) và '8 Lần Thất Bại Thảm Hại của Cá Sấu...' (12M views)."
-      },
-      {
-        "name": "Góc Nhìn Việt",
-        "url": "https://www.youtube.com/@GocNhinViet",
-        "description": "Kênh sức khỏe - đời sống 1,25 triệu sub minh họa mẫu tiêu đề đánh vào nỗi sợ và sự lo lắng: 'Xin đừng xem nhẹ 9 dấu hiệu này KHI NGỦ có thể Bệnh Nguy Hiểm đang chờ bạn' đạt 1,9 triệu lượt xem."
-      },
-      {
-        "name": "Master Phùng Phương",
-        "url": "https://www.youtube.com/@MasterPhungPhuong",
-        "description": "Kênh phong thủy 575.000 sub minh họa mẫu tiêu đề cảnh báo nỗi sợ và điều cấm kỵ: 'Chớ Dại Đặt ảnh Thờ Theo Kiểu Này Kẻo Đắc Tội Với Thần Linh, Tán Gia Bại Sản' đạt 1,6 triệu lượt xem."
-      },
-      {
-        "name": "Hố Xanh Kiến Thức",
-        "url": "https://www.youtube.com/@HoXanhKienThuc",
-        "description": "Kênh kiến thức khoa học được nhắc trong bài giảng để minh họa xu hướng đặt tiêu đề giải đáp bí ẩn vũ trụ và câu hỏi nghịch lý kích thích trí tò mò."
-      }
+      "Bí Quyết Thành Công (BMG)",
+      "Kính Lúp TV",
+      "Góc Nhìn Việt",
+      "Master Phùng Phương",
+      "Hố Xanh Kiến Thức"
     ],
     "course_docs": [
       {
@@ -6715,8 +5971,8 @@
     "category_group": "he_thong",
     "niche_primary": "Công thức đặt tiêu đề triệu view, tối ưu ngòi nổ & tử huyệt cảm xúc",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-917df2": {
     "sku": "VIDEO-917df2",
@@ -6725,8 +5981,8 @@
     "category_group": "he_thong",
     "niche_primary": "Thiết kế Thumbnail & Tối ưu CTR",
     "niche_id": "thiet_ke_thumbnail_ctr",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "Photoshop",
       "YouTube",
@@ -6734,47 +5990,14 @@
       "Google"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web 5 Ngày",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      },
-      {
-        "handle": "@ThaiPham",
-        "name": "Thai Pham",
-        "url": "https://www.youtube.com/@ThaiPham"
-      },
-      {
-        "handle": "@BaiHocThanhCong",
-        "name": "BÀI HỌC THÀNH CÔNG",
-        "url": "https://www.youtube.com/@BaiHocThanhCong"
-      },
-      {
-        "handle": "@Biquyetthanhcong",
-        "name": "BÍ QUYẾT THÀNH CÔNG",
-        "dead": true,
-        "deadNote": "Kênh BÍ QUYẾT THÀNH CÔNG (511N sub) minh họa trên slide bài học đã ngừng hoạt động hoặc đổi handle trên YouTube"
-      },
-      {
-        "handle": "@GocNhinViet",
-        "name": "Góc Nhìn Việt",
-        "url": "https://www.youtube.com/@GocNhinViet"
-      },
-      {
-        "handle": "@VTV24",
-        "name": "VTV24",
-        "url": "https://www.youtube.com/@VTV24"
-      },
-      {
-        "handle": "@KinhLupTV",
-        "name": "KÍNH LÚP TV",
-        "url": "https://www.youtube.com/@KinhLupTV"
-      },
-      {
-        "handle": "@phamthanhlong",
-        "name": "Phạm Thành Long Official",
-        "url": "https://www.youtube.com/@phamthanhlong"
-      }
+      "@Web5Ngay",
+      "@ThaiPham",
+      "@BaiHocThanhCong",
+      "@Biquyetthanhcong",
+      "@GocNhinViet",
+      "@VTV24",
+      "@KinhLupTV",
+      "@phamthanhlong"
     ],
     "course_docs": [
       {
@@ -6890,8 +6113,8 @@
     "category_group": "he_thong",
     "niche_primary": "Phễu Chuyển Đổi CTR & Giữ Chân Khán Giả",
     "niche_id": "pheu_ctr_va_giu_chan_khan_gia",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "YouTube Shorts",
@@ -7007,8 +6230,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chiến Lược Ngòi Nổ & Nhân Bản Hệ Sinh Thái Kênh Doanh Thu Lớn",
     "niche_id": "ngoi_no_he_sinh_thai_500k",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "TikTok",
@@ -7018,22 +6241,9 @@
       "AirServer"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@KinhLupTV",
-        "name": "Kính Lúp TV",
-        "url": "https://www.youtube.com/@KinhLupTV"
-      },
-      {
-        "handle": "@Biquyetthanhcong",
-        "name": "Bí Quyết Thành Công",
-        "dead": true,
-        "deadNote": "Đã ngừng hoạt động / 404 trên YouTube"
-      },
-      {
-        "handle": "@HoangManhCuongMarketing",
-        "name": "Hoàng Mạnh Cường",
-        "url": "https://www.youtube.com/@HoangManhCuongMarketing"
-      }
+      "@KinhLupTV",
+      "@Biquyetthanhcong",
+      "@HoangManhCuongMarketing"
     ],
     "course_docs": [
       {
@@ -7148,8 +6358,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tìm Ngách & Chiến Lược Kênh Phụ Kéo Kênh Mới",
     "niche_id": "tim_ngach_va_keo_kenh_moi",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "TikTok",
@@ -7158,16 +6368,8 @@
       "AirServer"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web 5 Ngày",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      },
-      {
-        "handle": "@DamVinhHungOfficial",
-        "name": "Đàm Vĩnh Hưng",
-        "url": "https://www.youtube.com/@DamVinhHungOfficial"
-      }
+      "@Web5Ngay",
+      "@DamVinhHungOfficial"
     ],
     "course_docs": [
       {
@@ -7272,8 +6474,8 @@
     "category_group": "he_thong",
     "niche_primary": "Nghiên Cứu từ khóa & SEO YouTube",
     "niche_id": "nghien_cuu_tu_khoa_seo_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "vidIQ",
       "keywordtool.io",
@@ -7284,21 +6486,9 @@
       "TikTok"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@NhakhoaOze.official",
-        "name": "Nha Khoa Oze",
-        "url": "https://www.youtube.com/@NhakhoaOze.official"
-      },
-      {
-        "handle": "@HoangManhCuongMarketing",
-        "name": "Hoàng Mạnh Cường",
-        "url": "https://www.youtube.com/@HoangManhCuongMarketing"
-      },
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web 5 Ngày",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      }
+      "@NhakhoaOze.official",
+      "@HoangManhCuongMarketing",
+      "@Web5Ngay"
     ],
     "course_docs": [
       {
@@ -7408,8 +6598,8 @@
     "category_group": "he_thong",
     "niche_primary": "Nghiên Cứu từ khóa Lý Tưởng & Chiến Lược Nội Dung 6-3-1",
     "niche_id": "tu_khoa_ly_tuong_chien_luoc_6_3_1",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "KeywordTool.io",
@@ -7421,32 +6611,11 @@
       "Gmail"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@BaiHocThanhCong",
-        "name": "BÀI HỌC THÀNH CÔNG",
-        "url": "https://www.youtube.com/@BaiHocThanhCong"
-      },
-      {
-        "handle": "@Biquyetthanhcong",
-        "name": "Sách - Bí Quyết Thành Công",
-        "dead": true,
-        "deadNote": "Đã ngừng hoạt động / 404 trên YouTube"
-      },
-      {
-        "handle": "@phamthanhlong",
-        "name": "Phạm Thành Long Official",
-        "url": "https://www.youtube.com/@phamthanhlong"
-      },
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web 5 Ngày",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      },
-      {
-        "handle": "@HoangManhCuongMarketing",
-        "name": "Hoàng Mạnh Cường",
-        "url": "https://www.youtube.com/@HoangManhCuongMarketing"
-      }
+      "@BaiHocThanhCong",
+      "@Biquyetthanhcong",
+      "@phamthanhlong",
+      "@Web5Ngay",
+      "@HoangManhCuongMarketing"
     ],
     "course_docs": [
       {
@@ -7561,8 +6730,8 @@
     "category_group": "he_thong",
     "niche_primary": "Quy Trình Sản Xuất Video Công Nghiệp & Cài Ngòi Nổ Triệu View",
     "niche_id": "quy_trinh_san_xuat_video_ngoi_no",
-    "target_market": "Việt Nam & Toàn Cầu (US / UK / EU)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Google News",
@@ -7577,62 +6746,17 @@
       "Facebook"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@MasterPhungPhuong",
-        "name": "Master Phùng Phương - Phong Thủy",
-        "url": "https://www.youtube.com/@MasterPhungPhuong"
-      },
-      {
-        "handle": "@Biquyetthanhcong",
-        "name": "Bí Quyết Thành Công",
-        "dead": true,
-        "deadNote": "Đã ngừng hoạt động / 404 trên YouTube"
-      },
-      {
-        "handle": "@Việt_Sử_Toàn_Thư",
-        "name": "Việt Sử Toàn Thư",
-        "url": "https://www.youtube.com/@Vi%E1%BB%87t_S%E1%BB%AD_To%C3%A0n_Th%C6%B0"
-      },
-      {
-        "handle": "@Yogalunathaivn",
-        "name": "Yoga Luna Thái",
-        "url": "https://www.youtube.com/@Yogalunathaivn"
-      },
-      {
-        "handle": "@ManhOto",
-        "name": "Mạnh Ô Tô",
-        "url": "https://www.youtube.com/@ManhOto"
-      },
-      {
-        "handle": "@TheGioiDiDong",
-        "name": "Thế Giới Di Động",
-        "url": "https://www.youtube.com/@TheGioiDiDong"
-      },
-      {
-        "handle": "@VTV24",
-        "name": "VTV24",
-        "url": "https://www.youtube.com/@VTV24"
-      },
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web 5 Ngày",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      },
-      {
-        "handle": "@phamthanhlong",
-        "name": "Phạm Thành Long Official",
-        "url": "https://www.youtube.com/@phamthanhlong"
-      },
-      {
-        "handle": "@TheGioiHuyenBi",
-        "name": "Thế Giới Huyền Bí",
-        "url": "https://www.youtube.com/@TheGioiHuyenBi"
-      },
-      {
-        "handle": "@ThayTranVietQuan",
-        "name": "Trần Việt Quân",
-        "url": "https://www.youtube.com/@ThayTranVietQuan"
-      }
+      "@MasterPhungPhuong",
+      "@Biquyetthanhcong",
+      "@Việt_Sử_Toàn_Thư",
+      "@Yogalunathaivn",
+      "@ManhOto",
+      "@TheGioiDiDong",
+      "@VTV24",
+      "@Web5Ngay",
+      "@phamthanhlong",
+      "@TheGioiHuyenBi",
+      "@ThayTranVietQuan"
     ],
     "course_docs": [
       {
@@ -7753,8 +6877,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chiến Lược Jetlag & Đóng Đinh Motif từ khóa Triệu View",
     "niche_id": "jetlag_motif_tu_khoa_trieu_view",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Photoshop",
@@ -7763,82 +6887,21 @@
       "YouTube Shorts"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Top10HuyenBi",
-        "name": "Top 10 Huyền Bí",
-        "url": "https://www.youtube.com/@Top10HuyenBi"
-      },
-      {
-        "handle": "@FactsVerse",
-        "name": "Facts Verse",
-        "url": "https://www.youtube.com/@FactsVerse"
-      },
-      {
-        "handle": "@TheRichest",
-        "name": "TheRichest",
-        "url": "https://www.youtube.com/@TheRichest"
-      },
-      {
-        "handle": "@KyLaVaBiAn",
-        "name": "Kỳ Lạ Và Bí Ẩn",
-        "url": "https://www.youtube.com/@KyLaVaBiAn"
-      },
-      {
-        "handle": "@ZingMP3",
-        "name": "Zing MP3",
-        "url": "https://www.youtube.com/@ZingMP3"
-      },
-      {
-        "handle": "@BBBG",
-        "name": "BB&BG Entertainment",
-        "url": "https://www.youtube.com/@BBBG"
-      },
-      {
-        "handle": "@Gillette",
-        "name": "Gillette",
-        "url": "https://www.youtube.com/@Gillette"
-      },
-      {
-        "handle": "@BaTanVlog",
-        "name": "Bà Tân Vlog",
-        "url": "https://www.youtube.com/channel/UC1a6kG81k6iR-qA5bM-A-hQ"
-      },
-      {
-        "handle": "@PhuongHuuDuong",
-        "name": "Phương Hữu Dưỡng",
-        "url": "https://www.youtube.com/@PhuongHuuDuong"
-      },
-      {
-        "handle": "@KinhLupTV",
-        "name": "Kính Lúp TV",
-        "url": "https://www.youtube.com/@KinhLupTV"
-      },
-      {
-        "handle": "@Biquyetthanhcong",
-        "name": "Sách Tóm Tắt - Bí Quyết Thành Công",
-        "dead": true,
-        "deadNote": "Đã ngừng hoạt động / 404 trên YouTube"
-      },
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web 5 Ngày",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      },
-      {
-        "handle": "@HoangManhCuongMarketing",
-        "name": "Hoàng Mạnh Cường",
-        "url": "https://www.youtube.com/@HoangManhCuongMarketing"
-      },
-      {
-        "handle": "@thaipham",
-        "name": "Thái Phạm",
-        "url": "https://www.youtube.com/@thaipham"
-      },
-      {
-        "handle": "@phamthanhlong",
-        "name": "Phạm Thành Long Official",
-        "url": "https://www.youtube.com/@phamthanhlong"
-      }
+      "@Top10HuyenBi",
+      "@FactsVerse",
+      "@TheRichest",
+      "@KyLaVaBiAn",
+      "@ZingMP3",
+      "@BBBG",
+      "@Gillette",
+      "@BaTanVlog",
+      "@PhuongHuuDuong",
+      "@KinhLupTV",
+      "@Biquyetthanhcong",
+      "@Web5Ngay",
+      "@HoangManhCuongMarketing",
+      "@thaipham",
+      "@phamthanhlong"
     ],
     "course_docs": [
       {
@@ -7959,8 +7022,8 @@
     "category_group": "he_thong",
     "niche_primary": "SEO & Tối ưu kênh YouTube",
     "niche_id": "he_thong_seo",
-    "target_market": "Đa thị trường (Việt Nam & Global)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube Studio",
       "vidIQ",
@@ -7971,11 +7034,7 @@
       "Twitter"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@longpt",
-        "name": "Phạm Thành Long",
-        "url": "https://www.youtube.com/@longpt"
-      }
+      "@longpt"
     ],
     "course_docs": [
       {
@@ -8097,8 +7156,8 @@
     "category_group": "he_thong",
     "niche_primary": "Nghiên cứu ngách & Ý tưởng (Swiped / Dream 100)",
     "niche_id": "he_thong_swiped_strategy",
-    "target_market": "Đa thị trường (Việt Nam & Global)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "swiped.co",
@@ -8107,21 +7166,9 @@
       "Facebook"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@longpt",
-        "name": "Phạm Thành Long",
-        "url": "https://www.youtube.com/@longpt"
-      },
-      {
-        "handle": "@RussellBrunson",
-        "name": "Russell Brunson",
-        "url": "https://www.youtube.com/@RussellBrunson"
-      },
-      {
-        "handle": "@tranvietquan",
-        "name": "Trần Việt Quân",
-        "url": "https://www.youtube.com/@tranvietquan"
-      }
+      "@longpt",
+      "@RussellBrunson",
+      "@tranvietquan"
     ],
     "course_docs": [
       {
@@ -8237,8 +7284,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư duy & Vận hành Hệ thống YouTube",
     "niche_id": "he_thong_mindset_success_formula",
-    "target_market": "Đa thị trường (Việt Nam & Global)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Photoshop",
@@ -8248,11 +7295,7 @@
       "GODA"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@PhongThuyTamNguyen",
-        "name": "Phong Thủy Tam Nguyên",
-        "url": "https://www.youtube.com/@PhongThuyTamNguyen"
-      }
+      "@PhongThuyTamNguyen"
     ],
     "course_docs": [
       {
@@ -8368,19 +7411,15 @@
     "category_group": "he_thong",
     "niche_primary": "Quản trị & Nhân bản Hệ thống YouTube",
     "niche_id": "he_thong_cashflow_quadrant_dunning_kruger",
-    "target_market": "Đa thị trường (Việt Nam & Global)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Excel",
       "glints.com"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@TheRichDadChannel",
-        "name": "Robert Kiyosaki (The Rich Dad Channel)",
-        "url": "https://www.youtube.com/@TheRichDadChannel"
-      }
+      "@TheRichDadChannel"
     ],
     "course_docs": [
       {
@@ -8491,18 +7530,14 @@
     "category_group": "he_thong",
     "niche_primary": "Phát Triển Sự Nghiệp & Nhân Bản Đội Ngũ",
     "niche_id": "cong_thuc_nhan_vien_len_ceo",
-    "target_market": "Đa thị trường (Việt Nam & Global)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Facebook"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@longpt",
-        "name": "Phạm Thành Long",
-        "url": "https://www.youtube.com/@longpt"
-      }
+      "@longpt"
     ],
     "course_docs": [
       {
@@ -8613,8 +7648,8 @@
     "category_group": "he_thong",
     "niche_primary": "Lộ Trình Xây Kênh Từ Con Số 0",
     "niche_id": "ban_do_nhom_moi_tinh_60_70_trieu",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Google",
@@ -8626,11 +7661,7 @@
       "Facebook"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@longpt",
-        "name": "Phạm Thành Long",
-        "url": "https://www.youtube.com/@longpt"
-      }
+      "@longpt"
     ],
     "course_docs": [
       {
@@ -8746,8 +7777,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chiến Lược Ngoại Hóa & Công Thức RPM 30",
     "niche_id": "ban_do_rpm_30_ngoai_hoa",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Twitter",
@@ -8758,26 +7789,10 @@
       "Amazon"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@KIMPRO828",
-        "name": "KIMPRO",
-        "url": "https://www.youtube.com/@KIMPRO828"
-      },
-      {
-        "handle": "@MrBeast",
-        "name": "MrBeast",
-        "url": "https://www.youtube.com/@MrBeast"
-      },
-      {
-        "handle": "@tranvietquan",
-        "name": "Trần Việt Quân",
-        "url": "https://www.youtube.com/@tranvietquan"
-      },
-      {
-        "handle": "@longpt",
-        "name": "Phạm Thành Long",
-        "url": "https://www.youtube.com/@longpt"
-      }
+      "@KIMPRO828",
+      "@MrBeast",
+      "@tranvietquan",
+      "@longpt"
     ],
     "course_docs": [
       {
@@ -8898,8 +7913,8 @@
     "category_group": "he_thong",
     "niche_primary": "Mô Hình YouTube Faceless & Kỷ Luật Sản Xuất",
     "niche_id": "youtube_faceless_khoa_3",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Facebook",
@@ -8909,11 +7924,7 @@
       "Google Ads"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@MonsterNTN",
-        "name": "NTN Vlogs (Nguyễn Thành Nam)",
-        "url": "https://www.youtube.com/@MonsterNTN"
-      }
+      "@MonsterNTN"
     ],
     "course_docs": [
       {
@@ -9029,19 +8040,15 @@
     "category_group": "he_thong",
     "niche_primary": "Mô Hình Kinh Doanh Vô Hạn & Chiến Lược Nhân Bản YouTube Global",
     "niche_id": "mo_hinh_kinh_doanh_vo_han",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Facebook",
       "Netflix"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@MasterPhungPhuong",
-        "name": "Master Phùng Phương (Phong Thủy Phùng Gia)",
-        "url": "https://www.youtube.com/@MasterPhungPhuong"
-      }
+      "@MasterPhungPhuong"
     ],
     "course_docs": [
       {
@@ -9163,8 +8170,8 @@
     "category_group": "he_thong",
     "niche_primary": "Kiểm Soát Đầu Vào Đầu Ra & Chiến Lược Kênh Faceless RPM Cao",
     "niche_id": "kiem_soat_dau_vao_dau_ra_faceless",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Facebook",
@@ -9172,11 +8179,7 @@
       "Zalo"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Hoangmanhcuongmarketing",
-        "name": "Hoàng Mạnh Cường (Topmax)",
-        "url": "https://www.youtube.com/@Hoangmanhcuongmarketing"
-      }
+      "@Hoangmanhcuongmarketing"
     ],
     "course_docs": [
       {
@@ -9293,8 +8296,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tháp Hành Vi, Tư Duy Chọn Tương Lai & Định Lượng Video Đầu Vào",
     "niche_id": "thap_hanh_vi_chon_tuong_lai",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Zoom",
@@ -9303,11 +8306,7 @@
       "Khan Academy"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@PrinceEa",
-        "name": "Prince Ea (I Just Sued the School System)",
-        "url": "https://www.youtube.com/@PrinceEa"
-      }
+      "@PrinceEa"
     ],
     "course_docs": [
       {
@@ -9429,8 +8428,8 @@
     "category_group": "he_thong",
     "niche_primary": "Thiết Lập Mục Tiêu Thực Tế & Rèn Nội Lực Cá Nhân (Myself)",
     "niche_id": "ket_qua_dat_muc_tieu_thuc_te",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "Fanpage",
       "YouTube",
@@ -9552,8 +8551,8 @@
     "category_group": "he_thong",
     "niche_primary": "Kỹ Năng Tự Học Shuhari & Kích Hoạt Điểm Aha Qua Dream 100",
     "niche_id": "tu_hoc_ky_nang_vua_shuhari_aha",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Facebook",
@@ -9680,8 +8679,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư Duy Hệ Thống & Quy Luật Tăng Trưởng YouTube",
     "niche_id": "tu_duy_he_thong",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Camtasia",
@@ -9689,16 +8688,8 @@
       "Dream 100"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web 5 Ngày",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      },
-      {
-        "handle": "@thaipham",
-        "name": "Thái Phạm",
-        "url": "https://www.youtube.com/@thaipham"
-      }
+      "@Web5Ngay",
+      "@thaipham"
     ],
     "course_docs": [
       {
@@ -9810,8 +8801,8 @@
     "category_group": "he_thong",
     "niche_primary": "Mô Hình Kinh Doanh & Tài Sản Số YouTube",
     "niche_id": "mo_hinh_kinh_doanh_youtube",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube"
     ],
@@ -9915,8 +8906,8 @@
     "category_group": "he_thong",
     "niche_primary": "Phân Tích Dấu Vết Đối Thủ & Nhân Bản Hệ Thống",
     "niche_id": "phan_tich_dau_vet_doi_thu",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube"
     ],
@@ -10020,8 +9011,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
     "niche_id": "NICHE-HETHONG-01",
-    "target_market": "Việt Nam & Global",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube"
     ],
@@ -10129,8 +9120,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
     "niche_id": "NICHE-HETHONG-01",
-    "target_market": "Việt Nam & Global",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Photoshop",
@@ -10230,8 +9221,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
     "niche_id": "NICHE-HETHONG-01",
-    "target_market": "Việt Nam & Global",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube"
     ],
@@ -10334,22 +9325,14 @@
     "category_group": "he_thong",
     "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
     "niche_id": "NICHE-HETHONG-01",
-    "target_market": "Việt Nam & Global",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@TranVietQuan",
-        "name": "Trần Việt Quân",
-        "url": "https://www.youtube.com/@TranVietQuan"
-      },
-      {
-        "handle": "@coachtuean",
-        "name": "Tuệ An",
-        "url": "https://www.youtube.com/@coachtuean"
-      }
+      "@TranVietQuan",
+      "@coachtuean"
     ],
     "course_docs": [
       {
@@ -10448,8 +9431,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
     "niche_id": "NICHE-HETHONG-01",
-    "target_market": "Việt Nam & Global",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [],
     "channels_mentioned": [],
     "course_docs": [
@@ -10544,8 +9527,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
     "niche_id": "NICHE-HETHONG-01",
-    "target_market": "Việt Nam & Global",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube"
     ],
@@ -10642,8 +9625,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
     "niche_id": "NICHE-HETHONG-01",
-    "target_market": "Việt Nam & Global",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube"
     ],
@@ -10735,8 +9718,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chiến lược Bán Content & Phân tích Doanh thu Hệ thống Kênh Faceless",
     "niche_id": "NICHE-HETHONG-01",
-    "target_market": "Việt Nam & Global",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Photoshop",
@@ -10745,61 +9728,17 @@
       "Vbee"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@NoahMorris",
-        "name": "NexLev (Noah Morris)",
-        "url": "https://www.youtube.com/@NoahMorris"
-      },
-      {
-        "handle": "@CourtCasesYT",
-        "name": "Court Cases (47.6K sub, 26 video - $92,832.60 / 5 tháng)",
-        "url": "https://www.youtube.com/@CourtCasesYT"
-      },
-      {
-        "handle": "@InspectZero",
-        "name": "Inspect Zero (3.2M view Lifetime - $29,009.70)",
-        "url": "https://www.youtube.com/channel/UCCNilaZaTM9YQmbEzdfb05w"
-      },
-      {
-        "handle": "@PoliceForce2.0",
-        "name": "Police Force 2.0 (24.8M view - $100,333.74)",
-        "url": "https://www.youtube.com/channel/UC_C3jzqyGps6h6FX-mZIG2Q"
-      },
-      {
-        "handle": "@xemgihomnayofficial",
-        "name": "XEM GÌ HÔM NAY (1.5 Tỷ view, 2.74M sub - $282,386.91)",
-        "url": "https://www.youtube.com/@xemgihomnayofficial"
-      },
-      {
-        "handle": "@kenhsongkhoemoingay",
-        "name": "Sống Khỏe Mỗi Ngày (98.4M view, 446K sub - $145,330.91)",
-        "url": "https://www.youtube.com/@kenhsongkhoemoingay"
-      },
-      {
-        "handle": "@BIQUYETTHANHCONG68",
-        "name": "BÍ QUYẾT THÀNH CÔNG (86.2M view, 603K sub - $155,260.44)",
-        "url": "https://www.youtube.com/@BIQUYETTHANHCONG68"
-      },
-      {
-        "handle": "@songannhienbmg",
-        "name": "Sống An Nhiên (49.7M view, 279K sub - $63,491.60)",
-        "url": "https://www.youtube.com/@songannhienbmg"
-      },
-      {
-        "handle": "@Studizzi",
-        "name": "Chất Xám (318K sub - $21,000+)",
-        "url": "https://www.youtube.com/@Studizzi"
-      },
-      {
-        "handle": "@TheGioiPhang68",
-        "name": "Thế Giới Phẳng (119K sub)",
-        "url": "https://www.youtube.com/@TheGioiPhang68"
-      },
-      {
-        "handle": "@Web5Ngay",
-        "name": "Web 5 Ngày (Hình mẫu Video Vẽ Tay VideoScribe)",
-        "url": "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
-      }
+      "@NoahMorris",
+      "@CourtCasesYT",
+      "@InspectZero",
+      "@PoliceForce2.0",
+      "@xemgihomnayofficial",
+      "@kenhsongkhoemoingay",
+      "@BIQUYETTHANHCONG68",
+      "@songannhienbmg",
+      "@Studizzi",
+      "@TheGioiPhang68",
+      "@Web5Ngay"
     ],
     "course_docs": [
       {
@@ -10912,24 +9851,8 @@
       "vidIQ"
     ],
     "channels_mentioned": [
-      {
-        "name": "BRIGHT SIDE",
-        "handle": "@BRIGHTSIDEOFFICIAL",
-        "url": "https://www.youtube.com/@BRIGHTSIDEOFFICIAL",
-        "subscribers": "44.6M subscribers (trên màn hình bài giảng: 44.6M subs, 11.1B total views)",
-        "niche": "Bán Content / Kiến thức tổng hợp, giải đố & khám phá khoa học thường thức (Faceless)",
-        "role_in_lesson": "Chiếu trực tiếp trên màn hình lớn lúc 05:51–07:05 (video 'If You See a Red Sky, Don't Ignore This Warning Sign') làm dẫn chứng cho mô hình Bán Content vùng xám trắng tích lũy hơn 3.000 video với kỷ luật kiểm soát đầu vào 3 video/ngày",
-        "verified_http": 200
-      },
-      {
-        "name": "5-Minute Crafts",
-        "handle": "@5MinuteCraftsYouTube",
-        "url": "https://www.youtube.com/@5MinuteCraftsYouTube",
-        "subscribers": "80M+ subscribers",
-        "niche": "DIY / Life Hacks & Mẹo vặt đời sống sản xuất công nghiệp",
-        "role_in_lesson": "Phân tích lúc 05:10–06:30 về công ty mẹ sở hữu hơn 2.000 nhân sự khắp thế giới vận hành đồng thời hệ sinh thái kênh 5-Minute Crafts (tự quay Content công nghiệp) và Bright Side (Bán Content), từng kiếm hàng triệu USD/tháng",
-        "verified_http": 200
-      }
+      "@BRIGHTSIDEOFFICIAL",
+      "@5MinuteCraftsYouTube"
     ],
     "key_timestamps": [
       {
@@ -11030,8 +9953,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chiến lược Vùng Xám & Bán Content Lấy Ngắn Nuôi Dài",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-277335": {
     "sku": "VIDEO-277335",
@@ -11051,24 +9974,8 @@
       "Google Sheets"
     ],
     "channels_mentioned": [
-      {
-        "name": "Master Phùng Phương (Phong Thủy Phùng Gia)",
-        "handle": "@MasterPhungPhuong",
-        "url": "https://www.youtube.com/@MasterPhungPhuong",
-        "subscribers": "300K+ subscribers",
-        "niche": "Phong thủy chính phái & Tư vấn ứng dụng đời sống",
-        "role_in_lesson": "Dẫn chứng thực tế lúc 01:51 khi giảng viên mở tài liệu 'BÀI TẬP 1: BIG IDEA KÊNH YOUTUBE' để minh họa cách viết 2–5 dòng mô tả định vị thương hiệu đứng đầu ngành trong phần Giới thiệu (About) của kênh",
-        "verified_http": 200
-      },
-      {
-        "name": "BRIGHT SIDE",
-        "handle": "@BRIGHTSIDEOFFICIAL",
-        "url": "https://www.youtube.com/@BRIGHTSIDEOFFICIAL",
-        "subscribers": "44.6M subscribers",
-        "niche": "Bán Content / Kiến thức tổng hợp & Khám phá khoa học (Faceless)",
-        "role_in_lesson": "Hiển thị trực tiếp trên thanh tab trình duyệt của giảng viên xuyên suốt bài học ('BRIGHT SIDE VÀ 300 VIDEOS') làm chuẩn tham chiếu khi đối chiếu các điều khoản Fair Use",
-        "verified_http": 200
-      }
+      "@MasterPhungPhuong",
+      "@BRIGHTSIDEOFFICIAL"
     ],
     "key_timestamps": [
       {
@@ -11176,8 +10083,8 @@
     "category_group": "he_thong",
     "niche_primary": "Luật Kiếm Tiền YouTube, Kháng Cáo & 4 Trụ Cột Fair Use",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-88cb46": {
     "sku": "VIDEO-88cb46",
@@ -11290,8 +10197,8 @@
     "category_group": "he_thong",
     "niche_primary": "Case Study Học Viên Bật Kiếm Tiền & Tư Duy Làm Đơn Giản",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-684a35": {
     "sku": "VIDEO-684a35",
@@ -11402,8 +10309,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tổng Kết Tư Duy Ngày 1 & Quy Luật Tăng Trưởng Cấp Số Nhân",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-42f5cf": {
     "sku": "VIDEO-42f5cf",
@@ -11425,60 +10332,12 @@
       "VPS"
     ],
     "channels_mentioned": [
-      {
-        "name": "Healthy Long Life",
-        "handle": "@healthlonglife",
-        "url": "https://www.youtube.com/@healthlonglife",
-        "subscribers": "312K subscribers",
-        "niche": "Bán Content Sức khỏe & Trường thọ (Health & Longevity Faceless)",
-        "role_in_lesson": "Case study trọng tâm về ngách Healthy Food / Longevity (dùng giọng đọc AI + thiết kế hình ảnh đơn giản trên Canva đạt hàng triệu view mỗi tháng với RPM dự báo trên NexLev từ $4.7 đến $6.9)",
-        "verified_http": 200
-      },
-      {
-        "name": "Mindvalley",
-        "handle": "@Mindvalley",
-        "url": "https://www.youtube.com/@Mindvalley",
-        "subscribers": "2M+ subscribers",
-        "niche": "Phát triển bản thân, Tâm thức & Sức khỏe tinh thần",
-        "role_in_lesson": "Hiển thị trực tiếp trên giao diện lọc 1of10.com lúc 10:30 & 14:40 (video 'How One Conversation With Bob Proctor Changed My Life Forever', hệ số đột biến 19.4x, 71K views vs 3K avg)",
-        "verified_http": 200
-      },
-      {
-        "name": "BBC Archive",
-        "handle": "@BBCArchive",
-        "url": "https://www.youtube.com/@BBCArchive",
-        "subscribers": "222K+ subscribers",
-        "niche": "Tư liệu lịch sử & Phóng sự xã hội lưu trữ",
-        "role_in_lesson": "Hiển thị trực tiếp trên giao diện lọc 1of10.com lúc 10:30 & 14:40 (video '1961: Should IRISH IMMIGRATION to BRITAIN be Restricted?', hệ số đột biến 10.6x, 96K views vs 9K avg)",
-        "verified_http": 200
-      },
-      {
-        "name": "Success With Sam",
-        "handle": "@SuccessWithSam",
-        "url": "https://www.youtube.com/@SuccessWithSam",
-        "subscribers": "303K+ subscribers",
-        "niche": "Tài chính cá nhân & Kiếm tiền Online (Make Money Online Faceless)",
-        "role_in_lesson": "Hiển thị trực tiếp trên màn hình 1of10.com lúc 14:40 (video 'QUICKEST Way To Make Money Online In 2024 ($50/Day)', hệ số đột biến 88.9x, 103K views vs 1K avg)",
-        "verified_http": 200
-      },
-      {
-        "name": "IGN",
-        "handle": "@IGN",
-        "url": "https://www.youtube.com/@IGN",
-        "subscribers": "17M+ subscribers",
-        "niche": "Tin tức Game & Giải trí đại chúng",
-        "role_in_lesson": "Hiển thị trực tiếp trên màn hình 1of10.com lúc 07:40 (video 'GTA 6: Everything We Know - News, Leaks, and Pre-Trailer Intel', hệ số đột biến 23.2x, 696K views vs 30K avg)",
-        "verified_http": 200
-      },
-      {
-        "name": "5-Minute Crafts",
-        "handle": "@5MinuteCraftsYouTube",
-        "url": "https://www.youtube.com/@5MinuteCraftsYouTube",
-        "subscribers": "80M+ subscribers",
-        "niche": "DIY & Mẹo vặt đời sống",
-        "role_in_lesson": "Ghim cố định trên thanh dấu trang (Bookmarks Bar) trình duyệt tác chiến của CEO GODA Vũ Việt Hoàng xuyên suốt buổi thực hành",
-        "verified_http": 200
-      }
+      "@healthlonglife",
+      "@Mindvalley",
+      "@BBCArchive",
+      "@SuccessWithSam",
+      "@IGN",
+      "@5MinuteCraftsYouTube"
     ],
     "key_timestamps": [
       {
@@ -11591,8 +10450,8 @@
     "category_group": "he_thong",
     "niche_primary": "Nghiên cứu Chủ đề & Dream 100 View Ngoại",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-94be0f": {
     "sku": "VIDEO-94be0f",
@@ -11611,42 +10470,10 @@
       "1of10"
     ],
     "channels_mentioned": [
-      {
-        "name": "Healthy Long Life",
-        "handle": "@healthlonglife",
-        "url": "https://www.youtube.com/@healthlonglife",
-        "subscribers": "312K subscribers (trên màn hình bài giảng: 312K subs, 37 videos, 1.9M views/tháng)",
-        "niche": "Bán Content Sức khỏe & Trường thọ (Health & Longevity Faceless)",
-        "role_in_lesson": "Kênh mẫu trung tâm được mở trực tiếp lúc 02:10, 08:50 và 12:20 (video 'Ernie Hudson (78) still looks 45 | I eat TOP 5 FOODS and Don't Get Old!', 'Carmen Dell'Orefice: I'm 91...') để thực hành lọc Dream 100 video 3 tháng – 1 năm",
-        "verified_http": 200
-      },
-      {
-        "name": "The Diary Of A CEO (DOAC)",
-        "handle": "@TheDiaryOfACEO",
-        "url": "https://www.youtube.com/@TheDiaryOfACEO",
-        "subscribers": "6M+ subscribers",
-        "niche": "Podcast Phỏng vấn Doanh nhân, Sức khỏe & Tâm lý học",
-        "role_in_lesson": "Được Vũ Việt Hoàng gõ tìm kiếm 'doac' trực tiếp trên thanh tìm kiếm YouTube lúc 12:04 (f_740.jpg) để chứng minh kênh Healthy Long Life đã học hỏi và bê nguyên bố cục Thumbnail từ kênh podcast 6 triệu sub này sang ngách sức khỏe",
-        "verified_http": 200
-      },
-      {
-        "name": "Fit Tuber Hindi",
-        "handle": "@FitTuberHindi",
-        "url": "https://www.youtube.com/@FitTuberHindi",
-        "subscribers": "1.5M+ subscribers",
-        "niche": "Sức khỏe & Dinh dưỡng (Kênh KOL lộ mặt)",
-        "role_in_lesson": "Hiển thị trực tiếp trên màn hình kết quả lọc từ khóa 'healthy food' lúc 05:10 (f_310.jpg, video 'Detox Your Liver Naturally | Fit Tuber Hindi') làm ví dụ về dạng kênh KOL lộ mặt cần loại bỏ khi lọc Dream 100 cho kênh Faceless",
-        "verified_http": 200
-      },
-      {
-        "name": "Mindvalley",
-        "handle": "@Mindvalley",
-        "url": "https://www.youtube.com/@Mindvalley",
-        "subscribers": "2M+ subscribers",
-        "niche": "Phát triển bản thân & Sức khỏe tâm thức",
-        "role_in_lesson": "Hiển thị trực tiếp trên giao diện trang xem video lúc 02:10 (f_130.jpg, chương trình Silva Method của Mindvalley)",
-        "verified_http": 200
-      }
+      "@healthlonglife",
+      "@TheDiaryOfACEO",
+      "@FitTuberHindi",
+      "@Mindvalley"
     ],
     "key_timestamps": [
       {
@@ -11754,8 +10581,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chiến lược Dream 100 Video (3 Tháng - 1 Năm)",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-c8df1e": {
     "sku": "VIDEO-c8df1e",
@@ -11783,24 +10610,8 @@
       "Epidemic Sound"
     ],
     "channels_mentioned": [
-      {
-        "name": "Healthy Long Life",
-        "handle": "@healthlonglife",
-        "url": "https://www.youtube.com/@healthlonglife",
-        "subscribers": "312K subscribers (trên màn hình: 312K subs, 37 videos)",
-        "niche": "Bán Content Sức khỏe & Trường thọ (Health & Longevity Faceless)",
-        "role_in_lesson": "Kênh mẫu được mổ xẻ DNA xuyên suốt bài học (từ giải phẫu bộ Thumbnail 'I'm 91 / I'm 90 / I'm 108', công thức tiêu đề biến số tuổi, đến bóc kịch bản 2.200 từ của video 'I AVOID 3 FOODS and Don't Get Old! Barbara Taylor Bradford (90) still looks 59!' đạt 3.7M views)",
-        "verified_http": 200
-      },
-      {
-        "name": "The Diary Of A CEO (DOAC)",
-        "handle": "@TheDiaryOfACEO",
-        "url": "https://www.youtube.com/@TheDiaryOfACEO",
-        "subscribers": "6M+ subscribers",
-        "niche": "Podcast Phỏng vấn Chuyên gia, Doanh nhân & Sức khỏe",
-        "role_in_lesson": "Hiển thị trên thanh tìm kiếm và tab trình duyệt lúc 00:30 (f_30.jpg) làm hình mẫu gốc về bố cục màu sắc và vị trí chữ trên Thumbnail",
-        "verified_http": 200
-      }
+      "@healthlonglife",
+      "@TheDiaryOfACEO"
     ],
     "key_timestamps": [
       {
@@ -11913,8 +10724,8 @@
     "category_group": "he_thong",
     "niche_primary": "Phân tích DNA Video & Nguồn Tài nguyên Sản xuất",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-ed1091": {
     "sku": "VIDEO-ed1091",
@@ -11935,33 +10746,9 @@
       "Google Sheets"
     ],
     "channels_mentioned": [
-      {
-        "name": "Healthy Long Life",
-        "handle": "@healthlonglife",
-        "url": "https://www.youtube.com/@healthlonglife",
-        "subscribers": "312K subscribers (trên Viewstats: 312,000 subs #1,933, 35,888,777 views #337,449)",
-        "niche": "Bán Content Sức khỏe & Trường thọ (Health & Longevity Faceless)",
-        "role_in_lesson": "Kênh mẫu được mở trực tiếp trên trang Viewstats.com (f_105.jpg) và tiện ích Viewstats Chrome Extension (f_240.jpg: +1,996,747 views/28d, +15,000 subs/28d, 2x uploads/month, 495.6K views/video) cũng như kiểm tra mã nguồn Ctrl+U tìm Category 'People & Blogs'",
-        "verified_http": 200
-      },
-      {
-        "name": "MrBeast",
-        "handle": "@MrBeast",
-        "url": "https://www.youtube.com/@MrBeast",
-        "subscribers": "300M+ subscribers",
-        "niche": "Giải trí & Thử thách quy mô lớn (Nhà sáng lập công cụ Viewstats)",
-        "role_in_lesson": "Được Vũ Việt Hoàng nhắc tới lúc 01:35 khi giới thiệu công cụ phân tích kênh miễn phí Viewstats (viewstats.com) do chính MrBeast phát triển để thay thế các tính năng trả phí đắt đỏ của vidIQ",
-        "verified_http": 200
-      },
-      {
-        "name": "The Diary Of A CEO (DOAC)",
-        "handle": "@TheDiaryOfACEO",
-        "url": "https://www.youtube.com/@TheDiaryOfACEO",
-        "subscribers": "6M+ subscribers",
-        "niche": "Podcast Phỏng vấn Doanh nhân & Sức khỏe",
-        "role_in_lesson": "Hiển thị trên thanh tìm kiếm YouTube trong giao diện kiểm tra thông số kỹ thuật lúc 02:40 & 04:00 (f_160.jpg, f_240.jpg)",
-        "verified_http": 200
-      }
+      "@healthlonglife",
+      "@MrBeast",
+      "@TheDiaryOfACEO"
     ],
     "key_timestamps": [
       {
@@ -12063,8 +10850,8 @@
     "category_group": "he_thong",
     "niche_primary": "Phân tích Kỹ thuật Kênh & Tối ưu SEO YouTube",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-573b94": {
     "sku": "VIDEO-573b94",
@@ -12073,8 +10860,8 @@
     "category_group": "he_thong",
     "niche_primary": "Triển khai Ý tưởng Kênh & Kế hoạch 30 Video Đầu tiên",
     "niche_id": "y_tuong_kenh_30_video_dau_tien",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "SEO",
       "vidIQ",
@@ -12084,43 +10871,12 @@
       "YouTube"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@healthlonglife",
-        "name": "Healthy Long Life (312K subs - Kênh mẫu phân tích chính)",
-        "url": "https://www.youtube.com/@healthlonglife"
-      },
-      {
-        "handle": "@Healthy-Long-Life",
-        "name": "HEALTHY LONG LIFE (2.84K subs)",
-        "url": "https://www.youtube.com/@Healthy-Long-Life"
-      },
-      {
-        "handle": "@healthylonglife669",
-        "name": "Healthy Long Life",
-        "url": "https://www.youtube.com/@healthylonglife669"
-      },
-      {
-        "handle": "@Wolfoo",
-        "name": "Wolfoo",
-        "url": "https://www.youtube.com/@Wolfoo"
-      },
-      {
-        "handle": "@PeppaPigOfficial",
-        "name": "Peppa Pig - Official Channel",
-        "url": "https://www.youtube.com/@PeppaPigOfficial"
-      },
-      {
-        "handle": "@drwilliamli",
-        "name": "Dr. William Li",
-        "url": "https://www.youtube.com/@drwilliamli"
-      },
-      {
-        "handle": "@DuocSiNguyenHien",
-        "name": "Dược sĩ Nguyễn Hiền (Kênh sức khỏe GODA)",
-        "url": "https://www.youtube.com/@DuocSiNguyenHien",
-        "dead": true,
-        "deadNote": "Kênh ví dụ nội bộ ngách sức khỏe được giảng viên nhắc tên trong bài giảng (handle hiện trả về HTTP 404 hoặc đã đổi định danh)."
-      }
+      "@healthlonglife",
+      "@Healthy-Long-Life",
+      "@healthylonglife669",
+      "@Wolfoo",
+      "@PeppaPigOfficial",
+      "@drwilliamli"
     ],
     "course_docs": [
       {
@@ -12237,8 +10993,8 @@
     "category_group": "he_thong",
     "niche_primary": "Quy trình sản xuất & Tư duy Shuhari",
     "niche_id": "quy_trinh_shuhari",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube"
     ],
@@ -12342,8 +11098,8 @@
     "category_group": "he_thong",
     "niche_primary": "Nghiên cứu Dream 100, Phân tích Thumbnail & Tiêu đề",
     "niche_id": "nghien_cuu_dream_100_thumbnail_title",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "vidIQ",
@@ -12359,48 +11115,13 @@
       "SEO"
     ],
     "channels_mentioned": [
-      {
-        "name": "Undercover Tales",
-        "handle": "@UndercoverTales-m1v",
-        "url": "https://www.youtube.com/@UndercoverTales-m1v",
-        "niche": "AI Storytelling / Undercover Boss & CEO Drama (15.5K subscribers, ~1.465.000 views/tháng, 79 video/3 tháng, thời lượng trung bình ~40 phút, video 44:21 đạt 574K views & 526 VPH, video 21:49 đạt 1.1M views)"
-      },
-      {
-        "name": "The Kind Hearts",
-        "handle": "@TheKindHearts",
-        "url": "https://www.youtube.com/@TheKindHearts",
-        "niche": "AI Storytelling / Undercover Boss & Heartwarming Tales (Kênh mới lập ~1 tháng đã bật kiếm tiền, 1.28K subscribers, 63 video, 53.000 views/tháng, video 'Undercover Boss Buys a Truck' dài 5:27 đạt 119K views >100x Outlier)"
-      },
-      {
-        "name": "Stories of Light",
-        "handle": "@StoriesofLight9999",
-        "url": "https://www.youtube.com/@StoriesofLight9999",
-        "niche": "AI Storytelling / Life Lessons & Kindness Drama (Kênh Top chủ đề đạt ~2.000.000 views/tháng, 60 video/tháng, thời lượng 24-25 phút, RPM $7-$8 mang về doanh thu ước tính $15.000-$16.000/tháng, lịch đăng 6h sáng & 12h đêm giờ VN)"
-      },
-      {
-        "name": "Living Stories",
-        "handle": "@LivingStoriesago",
-        "url": "https://www.youtube.com/@LivingStoriesago",
-        "niche": "AI Storytelling / Emotional Drama (Kênh mới đạt 1.394.475 views/28 ngày +32%, +9.600 subscribers chỉ với 12 video xuất bản/tháng)"
-      },
-      {
-        "name": "Storytime with Siren",
-        "handle": "@StorytimewithSiren",
-        "url": "https://www.youtube.com/@StorytimewithSiren",
-        "niche": "AI Storytelling / Undercover Boss Drama (5.97K subscribers, các video Undercover Boss đạt 85K views 93x Outlier, 65K views 72x Outlier và 49K views)"
-      },
-      {
-        "name": "Dignity Stories",
-        "handle": "@DignityStories",
-        "url": "https://www.youtube.com/@DignityStories",
-        "niche": "AI Storytelling / Social Justice & Dealership Drama (Video 'A Simple Woman Kicked Out of Car Dealership...' dài 25:58 đạt 1.3M views sau 13 ngày với 1.9K VPH, >100x Outlier)"
-      },
-      {
-        "name": "Sweet Kiss Drama",
-        "handle": "@SweetKissDrama",
-        "url": "https://www.youtube.com/@SweetKissDrama",
-        "niche": "AI Romance & Boss Drama (65K subscribers, video 'Mafia Boss Falls in Love with an Undercover Agent...' dài 23:35 đạt 199K views sau 2 tuần, 19x Outlier)"
-      }
+      "@UndercoverTales-m1v",
+      "@TheKindHearts",
+      "@StoriesofLight9999",
+      "@LivingStoriesago",
+      "@StorytimewithSiren",
+      "@DignityStories",
+      "@SweetKissDrama"
     ],
     "course_docs": [
       {
@@ -12527,8 +11248,8 @@
     "category_group": "he_thong",
     "niche_primary": "Phân tích kỹ thuật, SEO & Lợi thế cạnh tranh kênh",
     "niche_id": "phan_tich_ky_thuat_canh_tranh",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "ChatGPT",
       "YouTube Summary with ChatGPT",
@@ -12546,24 +11267,9 @@
       "SEO"
     ],
     "channels_mentioned": [
-      {
-        "name": "Undercover Tales",
-        "handle": "@UndercoverTales-m1v",
-        "url": "https://www.youtube.com/@UndercoverTales-m1v",
-        "niche": "AI Storytelling / Undercover Boss Drama (Kênh mẫu dùng để bóc tách kịch bản 44:20 ~ 6.000 từ / 40.000 ký tự, kiểm tra 0 Channel Tag, 2 Video Tag cắt từ tiêu đề, điểm SEO vidIQ 66.6/100 và soi mã nguồn Ctrl+U xác thực Category gốc là Entertainment)"
-      },
-      {
-        "name": "Living Stories",
-        "handle": "@LivingStoriesago",
-        "url": "https://www.youtube.com/@LivingStoriesago",
-        "niche": "AI Storytelling / Emotional Drama (Kênh đối chiếu cấu trúc mô tả SEO và bộ 3-4 Hashtag chuẩn: #truelifestories #heartwarmingstories #inspiringstories)"
-      },
-      {
-        "name": "Storytime with Siren",
-        "handle": "@StorytimewithSiren",
-        "url": "https://www.youtube.com/@StorytimewithSiren",
-        "niche": "AI Storytelling / Undercover Boss Drama (Kênh mẫu trích xuất tiêu đề 'Cashier Is the Only One Who Helps Undercover Boss...' đưa vào Bảng kế hoạch nội dung 10-30 video đầu tiên)"
-      }
+      "@UndercoverTales-m1v",
+      "@LivingStoriesago",
+      "@StorytimewithSiren"
     ],
     "course_docs": [
       {
@@ -12684,8 +11390,8 @@
     "category_group": "he_thong",
     "niche_primary": "Huấn luyện ChatGPT & Viết kịch bản dài (Long-form Content)",
     "niche_id": "huan_luyen_chatgpt_content",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "duration_sec": 1697.3,
     "total_segments": 324,
     "tools_mentioned": [
@@ -12834,15 +11540,7 @@
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true,
     "channels_mentioned": [
-      {
-        "name": "Undercover Tales",
-        "handle": "@UndercoverTales-m1v",
-        "url": "https://www.youtube.com/@UndercoverTales-m1v",
-        "niche": "Undercover Boss & CEO Drama Audio Stories",
-        "market": "US",
-        "status": "LIVE_VERIFIED",
-        "note": "Kênh mẫu chủ đề Chủ tịch giả vờ (Undercover Boss / Undercover CEO) đạt 15.5K subscribers, 219 videos; được giảng viên mở trực tiếp lúc 06:00-12:50 để lấy 5-10 transcript nạp huấn luyện ChatGPT và chọn video outlier 30x 'Undercover Boss Buys A Truck At His Own Dealership, Stops Cold When He Hears 2...' (38:53, 169K views) làm mẫu viết lại thành câu chuyện của John (chủ chuỗi John's Trucks)."
-      }
+      "@UndercoverTales-m1v"
     ],
     "source_transcript": "video/VIDEO-bdbb26/transcript.txt"
   },
@@ -12853,8 +11551,8 @@
     "category_group": "he_thong",
     "niche_primary": "Sản xuất hậu kỳ, Thumbnail AI & Quy trình Upload SEO 2025",
     "niche_id": "hoan_thien_video_seo_upload",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "duration_sec": 2321.27,
     "total_segments": 495,
     "tools_mentioned": [
@@ -13022,24 +11720,8 @@
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true,
     "channels_mentioned": [
-      {
-        "name": "Undercover Tales",
-        "handle": "@UndercoverTales-m1v",
-        "url": "https://www.youtube.com/@UndercoverTales-m1v",
-        "niche": "Undercover Boss & CEO Drama Audio Stories",
-        "market": "US",
-        "status": "LIVE_VERIFIED",
-        "note": "Kênh mẫu chủ đề Undercover Boss được giảng viên mở lúc 07:25 để dùng tính năng Download Thumbnail của vidIQ tải ảnh bìa video 'Undercover Boss Buys A Truck At His Own Dealership, Stops Cold When He Hears A Customer Behind Him' (169,577 views, 30x Outlier) về làm mẫu vẽ lại trên ChatGPT 4o."
-      },
-      {
-        "name": "XEM GÌ HÔM NAY",
-        "handle": "UC6e6NeyAx2Fl5xi0ITBaL-A",
-        "url": "https://www.youtube.com/channel/UC6e6NeyAx2Fl5xi0ITBaL-A",
-        "niche": "Demo Upload & SEO Configuration Channel",
-        "market": "VN/US",
-        "status": "LIVE_VERIFIED",
-        "note": "Kênh YouTube Studio được giảng viên mở trực tiếp từ 28:45 đến 37:40 để thực hành trọn bộ quy trình Upload, gắn 3 Hashtag, tạo Playlist 'GODA STORY' xếp theo Ngày xuất bản (mới nhất), khai báo AI, chọn ngôn ngữ English (United States) và bật kiếm tiền xanh."
-      }
+      "@UndercoverTales-m1v",
+      "UC6e6NeyAx2Fl5xi0ITBaL-A"
     ],
     "source_transcript": "video/VIDEO-e223d6/transcript.txt"
   },
@@ -13050,8 +11732,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chăm Sóc Tương Tác & Đặt Quảng Cáo Tối Ưu RPM",
     "niche_id": "tuong_tac_quang_cao_rpm",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "duration_sec": 962.83,
     "total_segments": 207,
     "tools_mentioned": [
@@ -13204,24 +11886,8 @@
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true,
     "channels_mentioned": [
-      {
-        "name": "Undercover Tales",
-        "handle": "@UndercoverTales-m1v",
-        "url": "https://www.youtube.com/@UndercoverTales-m1v",
-        "niche": "Undercover Boss & CEO Drama Audio Stories",
-        "market": "US",
-        "status": "LIVE_VERIFIED",
-        "note": "Kênh mẫu được giảng viên mở tab Popular lúc 04:05-07:05 (hiển thị loạt video 1.1M views >100x outlier 'Undercover CEO Goes To Order At His Own Restaurant...', 575K views >100x 'Undercover Boss Buys A Sandwich At His Own Diner...', 456K views 82x 'Undercover Boss Buys A Car At His Own Dealership...') để chứng minh công thức lặp lại bối cảnh nhà hàng/gara mua xe trong 30 ngày liên tiếp."
-      },
-      {
-        "name": "XEM GÌ HÔM NAY",
-        "handle": "UC6e6NeyAx2Fl5xi0ITBaL-A",
-        "url": "https://www.youtube.com/channel/UC6e6NeyAx2Fl5xi0ITBaL-A",
-        "niche": "Demo Monetization & Ad Placement Channel",
-        "market": "VN",
-        "status": "LIVE_VERIFIED",
-        "note": "Kênh YouTube Studio được mở trực tiếp từ 09:50 đến 14:00 (video ID Tvegvj4fMZQ '10 Gia Tộc Vương Giả Nhất Châu Á...', thời lượng 11:22) để thực hành chạy bộ đôi tiện ích YouTube Ad Placer và Nexlev (nút Remove Ads) xóa sạch các vạch quảng cáo báo đỏ."
-      }
+      "@UndercoverTales-m1v",
+      "UC6e6NeyAx2Fl5xi0ITBaL-A"
     ],
     "source_transcript": "video/VIDEO-e0c618/transcript.txt"
   },
@@ -13232,8 +11898,8 @@
     "category_group": "he_thong",
     "niche_primary": "Toàn Cảnh Chiến Lược Chủ Đề YouTube 3 Năm & Hạ Tầng Google AdSense (GA)",
     "niche_id": "toan_canh_chu_de_youtube_3_nam_va_ha_tang_ga",
-    "target_market": "Việt Nam & Toàn Cầu (US / Âu)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "duration_sec": 2131.83,
     "total_segments": 413,
     "tools_mentioned": [
@@ -13602,8 +12268,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư Duy Hành Động & Xây Dựng Đội Nhóm Đồng Hành",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-8d78b4/transcript.txt",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
@@ -13803,11 +12469,7 @@
       "Thuật toán gợi ý của YouTube và TikTok chính là 'trợ lý nghiên cứu thị trường miễn phí' giỏi nhất: Chỉ cần dùng một tài khoản sạch tương tác liên tục trong 3 ngày với đúng một chủ đề, hệ thống sẽ tự động đẩy lên mặt bàn toàn bộ những video viral nhất và những đối thủ ngầm mà công cụ tra cứu từ khóa thông thường bỏ sót."
     ],
     "channels_mentioned": [
-      {
-        "handle": "@MrBeast",
-        "name": "@MrBeast",
-        "url": "https://www.youtube.com/@MrBeast"
-      }
+      "@MrBeast"
     ],
     "course_docs": [
       {
@@ -13832,8 +12494,8 @@
     "category_group": "he_thong",
     "niche_primary": "Lựa Chọn Chủ Đề Đúng & Nghiên Cứu Sâu Dream 100",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-bf9e91/transcript.txt",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
@@ -13996,11 +12658,7 @@
       "Một công thức từng giúp kiếm bộn tiền cách đây 2 năm (khi nguồn cung video AI còn hiếm và chính sách YouTube chưa siết chặt nội dung sản xuất hàng loạt) chính là cái bẫy tâm lý nguy hiểm nhất khiến những người cũ ngủ quên trên chiến thắng và bị xóa sổ."
     ],
     "channels_mentioned": [
-      {
-        "handle": "@MrBeast",
-        "name": "@MrBeast",
-        "url": "https://www.youtube.com/@MrBeast"
-      }
+      "@MrBeast"
     ],
     "course_docs": [
       {
@@ -14025,8 +12683,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chống Phụ Thuộc AI & Quy Trình Kiểm Duyệt Human Check",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-47dc80/transcript.txt",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
@@ -14220,8 +12878,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư duy Đổi mới & Tránh Bẫy Số Lượng",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-042a01/transcript.txt",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
@@ -14444,16 +13102,8 @@
       "Việc tích chọn khai báo nội dung có yếu tố AI (Altered/Synthetic content) trong YouTube Studio từ 2024–2026 không làm giảm đề xuất của video như lời đồn thất thiệt, trái lại đó là 'tấm giấy thông hành' bảo vệ kênh khỏi án phạt gian lận chính sách khi dùng AI Video."
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Pinkfong",
-        "name": "@Pinkfong",
-        "url": "https://www.youtube.com/@Pinkfong"
-      },
-      {
-        "handle": "@vtv24",
-        "name": "@vtv24",
-        "url": "https://www.youtube.com/@vtv24"
-      }
+      "@Pinkfong",
+      "@vtv24"
     ],
     "course_docs": [
       {
@@ -14478,8 +13128,8 @@
     "category_group": "he_thong",
     "niche_primary": "Lịch sử Tiến hóa Công thức Sản xuất Video (2016–2026)",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-1bb8ec/transcript.txt",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
@@ -14709,8 +13359,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chiến lược Sản xuất Video 2026 & Bảo vệ Kênh",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-b522d6/transcript.txt",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
@@ -14928,8 +13578,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chiến lược Nâng cấp Chất lượng Pro Max & Nhân bản Đa quốc gia",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-f0f469/transcript.txt",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
@@ -15161,11 +13811,7 @@
       "Sai lầm chết người khi bị từ chối AdSense do lỗi 'Đã có tài khoản hiện có' (Duplicate Account): 90% người làm chỉ lấy một cái Gmail khác rồi bấm gửi lại ngay trên cùng trình duyệt và cùng mạng Wi-Fi đó — hệ thống nhận diện vân tay thiết bị (Browser/Device Fingerprint) và IP của Google sẽ lập tức khóa chéo cả tài khoản mới; bắt buộc phải thay mới đồng thời cả cụm: Số điện thoại + Thiết bị/Trình duyệt sạch + Địa chỉ IP."
     ],
     "channels_mentioned": [
-      {
-        "handle": "@DailyStoic",
-        "name": "@DailyStoic",
-        "url": "https://www.youtube.com/@DailyStoic"
-      }
+      "@DailyStoic"
     ],
     "course_docs": [
       {
@@ -15190,8 +13836,8 @@
     "category_group": "he_thong",
     "niche_primary": "SOP Tạo Email Chính Chủ & Đăng Ký Google AdSense",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-f83f59/transcript.txt",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
@@ -15203,8 +13849,8 @@
     "category_group": "he_thong",
     "niche_primary": "Kể Chuyện Bằng Nhân Vật Hoạt Hình (2D Animation)",
     "niche_id": "sop_phim_hoat_hinh_2d_animation",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "vidIQ",
@@ -15223,76 +13869,20 @@
       "Canva"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Zenn0009",
-        "name": "Zenn",
-        "url": "https://www.youtube.com/@Zenn0009"
-      },
-      {
-        "handle": "@ExplainInPaint",
-        "name": "Explain In Paint",
-        "url": "https://www.youtube.com/@ExplainInPaint"
-      },
-      {
-        "handle": "@EverythingProfessor",
-        "name": "EverythingProfessor",
-        "url": "https://www.youtube.com/@EverythingProfessor"
-      },
-      {
-        "handle": "@Sisyphus55",
-        "name": "Sisyphus 55",
-        "url": "https://www.youtube.com/@Sisyphus55"
-      },
-      {
-        "handle": "@ProductivePeter",
-        "name": "Productive Peter",
-        "url": "https://www.youtube.com/@ProductivePeter"
-      },
-      {
-        "handle": "@NickInvests",
-        "name": "Nick Invests",
-        "url": "https://www.youtube.com/@NickInvests"
-      },
-      {
-        "handle": "@AliciaInvests",
-        "name": "Alicia Invests",
-        "url": "https://www.youtube.com/@AliciaInvests"
-      },
-      {
-        "handle": "@SimplePsyche",
-        "name": "SimplePsyche",
-        "url": "https://www.youtube.com/@SimplePsyche"
-      },
-      {
-        "handle": "@UnordinaryMind",
-        "name": "UnordinaryMind",
-        "url": "https://www.youtube.com/@UnordinaryMind"
-      },
-      {
-        "handle": "@JamieSocial",
-        "name": "Jamie Social",
-        "url": "https://www.youtube.com/@JamieSocial"
-      },
-      {
-        "handle": "@3blue1brown",
-        "name": "3Blue1Brown",
-        "url": "https://www.youtube.com/@3blue1brown"
-      },
-      {
-        "handle": "@crashcourse",
-        "name": "CrashCourse",
-        "url": "https://www.youtube.com/@crashcourse"
-      },
-      {
-        "handle": "@VuiVe",
-        "name": "Vui Vẻ",
-        "url": "https://www.youtube.com/@VuiVe"
-      },
-      {
-        "handle": "@MrBeast",
-        "name": "MrBeast",
-        "url": "https://www.youtube.com/@MrBeast"
-      }
+      "@Zenn0009",
+      "@ExplainInPaint",
+      "@EverythingProfessor",
+      "@Sisyphus55",
+      "@ProductivePeter",
+      "@NickInvests",
+      "@AliciaInvests",
+      "@SimplePsyche",
+      "@UnordinaryMind",
+      "@JamieSocial",
+      "@3blue1brown",
+      "@crashcourse",
+      "@VuiVe",
+      "@MrBeast"
     ],
     "course_docs": [
       {
@@ -15498,8 +14088,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tìm Chủ Đề YouTube Faceless & Chiến Lược Jetlag",
     "niche_id": "cach_tim_chu_de_faceless",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Google",
@@ -15513,68 +14103,18 @@
       "Skillshare"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@EnglishSkillsMastery",
-        "name": "English Skills Mastery",
-        "url": "https://www.youtube.com/@EnglishSkillsMastery"
-      },
-      {
-        "handle": "@OverSimplified",
-        "name": "OverSimplified",
-        "url": "https://www.youtube.com/@OverSimplified"
-      },
-      {
-        "handle": "@TopFives",
-        "name": "Top Fives",
-        "url": "https://www.youtube.com/@TopFives"
-      },
-      {
-        "handle": "@QuyetTamManh",
-        "name": "Quyết Tâm Mạnh",
-        "url": "https://www.youtube.com/@QuyetTamManh"
-      },
-      {
-        "handle": "@10xincome",
-        "name": "10X INCOME",
-        "url": "https://www.youtube.com/@10xincome"
-      },
-      {
-        "handle": "@DieuNguyen",
-        "name": "Diệu Nguyễn",
-        "url": "https://www.youtube.com/@DieuNguyen"
-      },
-      {
-        "handle": "@5PhutThuVi",
-        "name": "5 Phút Thú Vị",
-        "url": "https://www.youtube.com/@5PhutThuVi"
-      },
-      {
-        "handle": "@5PhutThuCong",
-        "name": "5 Phút Thủ Công",
-        "url": "https://www.youtube.com/@5PhutThuCong"
-      },
-      {
-        "handle": "@ezsu",
-        "name": "EZ Sử",
-        "url": "https://www.youtube.com/@ezsu"
-      },
-      {
-        "handle": "@MixiGaming3con",
-        "name": "MixiGaming (Độ Mixi)",
-        "url": "https://www.youtube.com/@MixiGaming3con"
-      },
-      {
-        "handle": "@ThaiPham",
-        "name": "Thái Phạm",
-        "url": "https://www.youtube.com/@ThaiPham"
-      },
-      {
-        "handle": "@VietSuToanThu",
-        "name": "Việt Sử Toàn Thư",
-        "url": "https://www.youtube.com/@VietSuToanThu",
-        "dead": true,
-        "deadNote": "Kênh lịch sử cũ của hệ thống GODA được giảng viên nhắc tới tại mốc 22:52 hiện đã ẩn/đổi handle trên YouTube (HTTP 404)."
-      }
+      "@EnglishSkillsMastery",
+      "@OverSimplified",
+      "@TopFives",
+      "@QuyetTamManh",
+      "@10xincome",
+      "@DieuNguyen",
+      "@5PhutThuVi",
+      "@5PhutThuCong",
+      "@ezsu",
+      "@MixiGaming3con",
+      "@ThaiPham",
+      "@VietSuToanThu"
     ],
     "course_docs": [
       {
@@ -15761,8 +14301,8 @@
     "category_group": "ngach_content",
     "niche_primary": "16 Concept Nội Dung Triệu View & Tháp Maslow",
     "niche_id": "16_concept_youtube_trieu_view_bat_bien",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "vidIQ",
@@ -15949,62 +14489,14 @@
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true,
     "channels_mentioned": [
-      {
-        "name": "The Maury Show",
-        "handle": "@MauryShow",
-        "url": "https://www.youtube.com/@MauryShow",
-        "niche": "Show truyền hình xét nghiệm huyết thống (Concept 5: Gia đình / Con cái - Are You The Father, 2.21M subs)",
-        "status": "VERIFIED_HTTP_200"
-      },
-      {
-        "name": "Paternity Court",
-        "handle": "@PaternityCourt",
-        "url": "https://www.youtube.com/@PaternityCourt",
-        "niche": "Tòa án xét nghiệm ADN gia đình (Video 'Mr. Rasmussen, You are not the father' đạt 86M views)",
-        "status": "VERIFIED_HTTP_200"
-      },
-      {
-        "name": "Daily Jesus Devotional",
-        "handle": "@DailyJesusDevotional",
-        "url": "https://www.youtube.com/@DailyJesusDevotional",
-        "niche": "Cầu nguyện & Đức tin Cơ Đốc (Concept 9: Tôn giáo / Prayer, 1.23M subs, tỷ lệ tương tác Like/View 11.1%)",
-        "status": "VERIFIED_HTTP_200"
-      },
-      {
-        "name": "Mr. Nightmare",
-        "handle": "@mrnightmare",
-        "url": "https://www.youtube.com/@mrnightmare",
-        "niche": "Kể chuyện kinh dị có thật (Concept 10: Tâm linh / Ghost Stories, 6.77M subs, 881K views/8 ngày)",
-        "status": "VERIFIED_HTTP_200"
-      },
-      {
-        "name": "Tây Bắc TV",
-        "handle": "@TayBacTV",
-        "url": "https://www.youtube.com/@TayBacTV",
-        "niche": "Ẩm thực, văn hóa vùng cao & câu chuyện ma xó Bản Mòng chuyển đổi bán hàng trăm tỷ đặc sản thịt trâu gác bếp",
-        "status": "VERIFIED_HTTP_200"
-      },
-      {
-        "name": "Xem Gì Hôm Nay",
-        "handle": "@XemGiHomNay",
-        "url": "https://www.youtube.com/@XemGiHomNay",
-        "niche": "Tin tức giải trí & Drama Showbiz (Concept 4: Hóng hớt / Tò mò câu chuyện người nổi tiếng)",
-        "status": "VERIFIED_HTTP_200"
-      },
-      {
-        "name": "Giang Venus",
-        "handle": "@GiangVenus",
-        "url": "https://www.youtube.com/@GiangVenus",
-        "niche": "Tư vấn tình cảm, hôn nhân & Sinh lý phòng the (Concept 2: Tình dục & Gắn kết đôi lứa)",
-        "status": "VERIFIED_HTTP_200"
-      },
-      {
-        "name": "Snoop Dogg",
-        "handle": "@SnoopDogg",
-        "url": "https://www.youtube.com/@SnoopDogg",
-        "niche": "Nhân vật biểu tượng văn hóa Hip-hop Mỹ thường được đưa vào các kênh kể chuyện người da màu & nghị lực vượt khó",
-        "status": "VERIFIED_HTTP_200"
-      }
+      "@MauryShow",
+      "@PaternityCourt",
+      "@DailyJesusDevotional",
+      "@mrnightmare",
+      "@TayBacTV",
+      "@XemGiHomNay",
+      "@GiangVenus",
+      "@SnoopDogg"
     ],
     "source_transcript": "video/VIDEO-2772a7/transcript.txt"
   },
@@ -16015,8 +14507,8 @@
     "category_group": "he_thong",
     "niche_primary": "Quy trình Vận hành Đội ngũ & Biểu mẫu Dream 100",
     "niche_id": "cach_dung_kho_tai_lieu_hieu_qua",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Storyblocks",
@@ -16167,27 +14659,9 @@
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true,
     "channels_mentioned": [
-      {
-        "name": "Thái Phạm",
-        "handle": "@ThaiPham",
-        "url": "https://www.youtube.com/@ThaiPham",
-        "niche": "Tài chính, Chứng khoán & Phát triển bản thân (Kênh mẫu số 1 trong bảng Bài Tập 2 Dream 100 với video 4M views, phong cách Thumbnail vàng-đen-đỏ kinh điển)",
-        "status": "VERIFIED_HTTP_200"
-      },
-      {
-        "name": "VTV24",
-        "handle": "@vtv24",
-        "url": "https://www.youtube.com/@vtv24",
-        "niche": "Mô hình chuẩn phối hợp MC dẫn hiện trường bên ngoài kết hợp giọng đọc Voice thuyết minh nội dung tổng hợp bên trong",
-        "status": "VERIFIED_HTTP_200"
-      },
-      {
-        "name": "5-Minute Crafts",
-        "handle": "@5MinuteCraftsYouTube",
-        "url": "https://www.youtube.com/@5MinuteCraftsYouTube",
-        "niche": "Kênh mẫu Faceless quốc tế lưu trực tiếp trên thanh dấu trang (Bookmark) trình duyệt điều hành hệ thống YTS",
-        "status": "VERIFIED_HTTP_200"
-      }
+      "@ThaiPham",
+      "@vtv24",
+      "@5MinuteCraftsYouTube"
     ],
     "source_transcript": "video/VIDEO-64fb26/transcript.txt"
   },
@@ -16198,8 +14672,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chiến Lược Lên Top 1 Chủ Đề & Tối Ưu View Tính Năng (Browse Features)",
     "niche_id": "top1_chu_de_goda",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "1of10",
@@ -16336,27 +14810,9 @@
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true,
     "channels_mentioned": [
-      {
-        "name": "Hố Xanh Kiến Thức",
-        "handle": "@HoXanhKienThuc",
-        "url": "https://www.youtube.com/@HoXanhKienThuc",
-        "niche": "Phân tích tin tức địa chính trị & kinh tế nóng hổi (719K subs, từng đạt doanh thu Top 1 BMG gần 30.000 USD/tháng tại thị trường Việt Nam với RPM ~0.7 USD)",
-        "status": "VERIFIED_HTTP_200"
-      },
-      {
-        "name": "Ngược Dòng Lịch Sử",
-        "handle": "@NguocDongLichSu",
-        "url": "https://www.youtube.com/@NguocDongLichSu",
-        "niche": "Lịch sử & Quân sự (Case study kênh đầu tiên của Tuấn tại BMG đạt 1 triệu view/48h chỉ trong đúng 1 tuần từ khi lập kênh)",
-        "status": "VERIFIED_HTTP_200"
-      },
-      {
-        "name": "Movieclips",
-        "handle": "@MOVIECLIPS",
-        "url": "https://www.youtube.com/@MOVIECLIPS",
-        "niche": "Trích đoạn phim điện ảnh kịch tính (Minh họa trích đoạn 'Goosebumps - Werewolf in the Supermarket' cấu trúc nhịp căng - chùng theo biểu đồ hình sin)",
-        "status": "VERIFIED_HTTP_200"
-      }
+      "@HoXanhKienThuc",
+      "@NguocDongLichSu",
+      "@MOVIECLIPS"
     ],
     "source_transcript": "video/VIDEO-a8cd5b/transcript.txt"
   },
@@ -16367,8 +14823,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư Duy Top 1 & Nhân Bản Case Study",
     "niche_id": "tu_duy_top_1_nhan_ban",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "GODA",
@@ -16492,20 +14948,8 @@
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true,
     "channels_mentioned": [
-      {
-        "name": "Phạm Thành Long",
-        "handle": "@longpt",
-        "url": "https://www.youtube.com/@longpt",
-        "niche": "Đào tạo kinh doanh & Phát triển bản thân (Người sáng lập cộng đồng Eagle Camp và khóa Internet Power System - nơi giảng viên lặng lẽ leo lên Top 1 mảng YouTube với cột mốc 1 triệu USD lợi nhuận)",
-        "status": "VERIFIED_HTTP_200"
-      },
-      {
-        "name": "Ngược Dòng Lịch Sử",
-        "handle": "@NguocDongLichSu",
-        "url": "https://www.youtube.com/@NguocDongLichSu",
-        "niche": "Minh chứng cho phong cách đánh chiếm Top 1 chủ đề của đội ngũ nòng cốt GODA (Tuấn & Hoàng)",
-        "status": "VERIFIED_HTTP_200"
-      }
+      "@longpt",
+      "@NguocDongLichSu"
     ],
     "source_transcript": "video/VIDEO-16241d/transcript.txt"
   },
@@ -16516,8 +14960,8 @@
     "category_group": "he_thong",
     "niche_primary": "Thuật Toán Đề Xuất & Fair Use",
     "niche_id": "thuat_toan_de_xuat_fair_use",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Google Trends",
@@ -16643,20 +15087,8 @@
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true,
     "channels_mentioned": [
-      {
-        "name": "YouTube Creators",
-        "handle": "@YouTubeCreators",
-        "url": "https://www.youtube.com/@YouTubeCreators",
-        "niche": "Kênh đào tạo chính thức của YouTube giải đáp cơ chế xếp hạng Tìm kiếm & Khám phá (Search & Discovery), biểu tượng tiền vàng, tần suất đăng và thẻ Tags",
-        "status": "VERIFIED_HTTP_200"
-      },
-      {
-        "name": "Healthy Long Life",
-        "handle": "@HealthyLongLife",
-        "url": "https://www.youtube.com/@HealthyLongLife",
-        "niche": "Sức khỏe & Trường thọ (Case study minh họa trực tiếp trên màn hình về lỗi spam link video một chiều trên Tab Cộng Đồng thay vì sử dụng 5 định dạng tương tác)",
-        "status": "VERIFIED_HTTP_200"
-      }
+      "@YouTubeCreators",
+      "@HealthyLongLife"
     ],
     "source_transcript": "video/VIDEO-3bba93/transcript.txt"
   },
@@ -16667,8 +15099,8 @@
     "category_group": "he_thong",
     "niche_primary": "Cảm Xúc Khán Giả & Tháp Nhu Cầu Maslow",
     "niche_id": "cam_xuc_khan_gia_thap_maslow",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Google",
@@ -16677,27 +15109,9 @@
       "Email Marketing"
     ],
     "channels_mentioned": [
-      {
-        "name": "Cô Lanh (@CoLanh)",
-        "handle": "@CoLanh",
-        "url": "https://www.youtube.com/@CoLanh",
-        "niche": "Hàn gắn mối quan hệ gia đình, chữa lành tâm lý & nuôi dạy con (Tầng số 3 Tháp Maslow: Yêu thương / Gia đình ♡)",
-        "status": "VERIFIED_HTTP_200"
-      },
-      {
-        "name": "Top Fives (@TopFives)",
-        "handle": "@TopFives",
-        "url": "https://www.youtube.com/@TopFives",
-        "niche": "Top 5 / Top 10 khám phá bí ẩn & sự thật gây tò mò (Tầng đáy Tháp Maslow: Cảm xúc tò mò & giải trí)",
-        "status": "VERIFIED_HTTP_200"
-      },
-      {
-        "name": "5 Phút Thú Vị (@5PhutThuVi)",
-        "handle": "@5PhutThuVi",
-        "url": "https://www.youtube.com/@5PhutThuVi",
-        "niche": "Khoa học, khám phá & giải đáp sự thật thú vị (Faceless Tò mò / Giải trí đại chúng)",
-        "status": "VERIFIED_HTTP_200"
-      }
+      "@CoLanh",
+      "@TopFives",
+      "@5PhutThuVi"
     ],
     "channels_referenced": [
       {
@@ -16892,22 +15306,8 @@
     ],
     "tools_mentioned": [],
     "channels_mentioned": [
-      {
-        "name": "Nguyễn Văn Huân Official (@huanvn8888)",
-        "url": "https://www.youtube.com/@huanvn8888",
-        "niche": "Đào tạo & Tư duy Kinh doanh YouTube (GODA / Huân Academy)",
-        "Subscribers": "102.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Kênh chia sẻ chính thức của giảng viên Nguyễn Văn Huân, đại diện cho hệ sinh thái đào tạo YouTube Total Success (YTS K1–K4) và cộng đồng thực chiến GODA."
-      },
-      {
-        "name": "BÍ QUYẾT THÀNH CÔNG (@biquyetthanhcong68)",
-        "url": "https://www.youtube.com/@biquyetthanhcong68",
-        "niche": "Phát triển bản thân, Tư duy Thành công & Bài học Kinh doanh",
-        "Subscribers": "608.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Kênh mẫu tiêu biểu của hệ thống GODA phản ánh trực tiếp bốn trụ cột Sức Khỏe - Sự Tập Trung - Tầm Nhìn - Câu Chuyện Thành Công được giảng dạy trong bài."
-      }
+      "Nguyễn Văn Huân Official (@huanvn8888)",
+      "BÍ QUYẾT THÀNH CÔNG (@biquyetthanhcong68)"
     ],
     "course_docs": [
       {
@@ -16954,8 +15354,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư Duy, Quản Trị Cảm Xúc & Cộng Đồng Kỷ Luật Làm YouTube",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-014625/transcript.txt"
   },
   "VIDEO-c289d8": {
@@ -17030,22 +15430,8 @@
     ],
     "tools_mentioned": [],
     "channels_mentioned": [
-      {
-        "name": "5-Minute Crafts (@5MinuteCraftsYouTube)",
-        "url": "https://www.youtube.com/@5MinuteCraftsYouTube",
-        "niche": "DIY, Life Hacks & How-To",
-        "Subscribers": "80.600.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Kênh mẫu được lưu trực tiếp trên thanh Bookmark trình duyệt Chrome của giảng viên Nguyễn Văn Huân (hiển thị tại 02:47 & 03:45) để minh họa phân tích chủ đề trong khóa học."
-      },
-      {
-        "name": "Nguyễn Văn Huân Official (@huanvn8888)",
-        "url": "https://www.youtube.com/@huanvn8888",
-        "niche": "Đào tạo & Hệ thống Kinh doanh YouTube (GODA)",
-        "Subscribers": "102.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Kênh chính thức của tác giả bộ tài liệu Checklist YouTube 1 Trang và quy trình Quản Lý Kênh (QLK) tại GODA."
-      }
+      "5-Minute Crafts (@5MinuteCraftsYouTube)",
+      "Nguyễn Văn Huân Official (@huanvn8888)"
     ],
     "course_docs": [
       {
@@ -17092,8 +15478,8 @@
     "category_group": "he_thong",
     "niche_primary": "Quy Tắc 100 & Checklist Vận Hành Hệ Thống Kênh YouTube 1 Trang",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-c289d8/transcript.txt"
   },
   "VIDEO-e8feca": {
@@ -17168,46 +15554,10 @@
     ],
     "tools_mentioned": [],
     "channels_mentioned": [
-      {
-        "name": "5-Minute Crafts (@5MinuteCraftsYouTube)",
-        "url": "https://www.youtube.com/@5MinuteCraftsYouTube",
-        "niche": "DIY, Crafts & Life Hacks",
-        "Subscribers": "80.600.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Hiển thị trực tiếp trên màn hình LED hội trường tại 07:55 & 08:08 (80,6 Tr người đăng ký • 7 N video). Được giảng viên dùng làm bằng chứng trực quan: dù kênh có 80,6 triệu sub nhưng các video mới đăng chỉ còn vài chục nghìn view vì ngách DIY kiểu cũ đã qua thời kỳ đỉnh cao 5–6 năm trước."
-      },
-      {
-        "name": "BRIGHT SIDE (@BRIGHTSIDEOFFICIAL)",
-        "url": "https://www.youtube.com/@BRIGHTSIDEOFFICIAL",
-        "niche": "Khám phá, Giải đố & Kiến thức thú vị",
-        "Subscribers": "44.000.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Được giảng viên phân tích song song với 5-Minute Crafts tại 07:40–08:30 như một tượng đài từng làm mưa làm gió 5–6 năm trước nhưng hiện tại lượng view video mới đã giảm sâu, cảnh báo học viên không chọn chủ đề từ các video quá cũ."
-      },
-      {
-        "name": "MrBeast (@MrBeast)",
-        "url": "https://www.youtube.com/@MrBeast",
-        "niche": "Entertainment & High-Stakes Challenges",
-        "Subscribers": "300.000.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Được trích dẫn trực tiếp từ bức ảnh thống kê 'so_video_can_de_tao_ra_1tr_sub.jpg' và viết lên bảng Flipchart tại 10:10 ('< 152'): MrBeast phải mất tới 152 video mới đạt được 1 triệu sub đầu tiên."
-      },
-      {
-        "name": "T-Series (@TSeries)",
-        "url": "https://www.youtube.com/@TSeries",
-        "niche": "Music & Film Studio",
-        "Subscribers": "270.000.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Nằm trong bảng thống kê gốc 'so_video_can_de_tao_ra_1tr_sub.jpg' đính kèm trong file Checklist 1 Trang để chứng minh quy luật tích lũy số lượng video khổng lồ của các kênh top đầu thế giới."
-      },
-      {
-        "name": "Pinkfong Baby Shark (@Pinkfong)",
-        "url": "https://www.youtube.com/@Pinkfong",
-        "niche": "Kids Education & Songs",
-        "Subscribers": "75.000.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Nằm trong bảng dữ liệu thống kê số lượng video cần thiết để đạt 1 triệu người đăng ký được giảng viên đối chiếu khi giảng về ngưỡng tích lũy."
-      }
+      "5-Minute Crafts (@5MinuteCraftsYouTube)",
+      "BRIGHT SIDE (@BRIGHTSIDEOFFICIAL)",
+      "MrBeast (@MrBeast)",
+      "T-Series (@TSeries)"
     ],
     "course_docs": [
       {
@@ -17254,8 +15604,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chiến Lược Tăng Trưởng Kênh: Nhiều Hơn, Tốt Hơn & Làm Mới",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-e8feca/transcript.txt"
   },
   "VIDEO-1456c3": {
@@ -17330,22 +15680,8 @@
     ],
     "tools_mentioned": [],
     "channels_mentioned": [
-      {
-        "name": "Nguyễn Văn Huân Official (@huanvn8888)",
-        "url": "https://www.youtube.com/@huanvn8888",
-        "niche": "Đào tạo & Tư duy Hệ thống YouTube (GODA)",
-        "Subscribers": "102.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Kênh chính thức của giảng viên Nguyễn Văn Huân — người đúc kết triết lý 'Viên Xúc Sắc Nhiều Mặt' từ hành trình vượt qua hàng trăm video thất bại năm 2016 để xây dựng đế chế GODA."
-      },
-      {
-        "name": "XEM GÌ HÔM NAY (@xemgihomnayofficial)",
-        "url": "https://www.youtube.com/@xemgihomnayofficial",
-        "niche": "Tổng hợp, Khám phá & Giải trí",
-        "Subscribers": "2.740.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Một trong những 'Mặt Xanh' lớn nhất (2,74 triệu sub, 1,5 tỷ view) trong hệ thống kênh của Nguyễn Văn Huân sau hàng nghìn lần kiên trì đổ xúc xắc sản xuất video."
-      }
+      "Nguyễn Văn Huân Official (@huanvn8888)",
+      "XEM GÌ HÔM NAY (@xemgihomnayofficial)"
     ],
     "course_docs": [
       {
@@ -17392,8 +15728,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư Duy Xác Suất Tích Lũy & Vòng Quay Vô Hạn Trên YouTube",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-1456c3/transcript.txt"
   },
   "VIDEO-ab04c5": {
@@ -17468,22 +15804,8 @@
     ],
     "tools_mentioned": [],
     "channels_mentioned": [
-      {
-        "name": "Nguyễn Văn Huân Official (@huanvn8888)",
-        "url": "https://www.youtube.com/@huanvn8888",
-        "niche": "Đào tạo & Hệ thống Kinh doanh YouTube (GODA / Huân Academy)",
-        "Subscribers": "102.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Kênh chính thức đại diện cho thương hiệu HUAN.VN / GODA xuất hiện trên toàn bộ backdrop và standee của sự kiện Offline YouTube Total Success."
-      },
-      {
-        "name": "XEM GÌ HÔM NAY (@xemgihomnayofficial)",
-        "url": "https://www.youtube.com/@xemgihomnayofficial",
-        "niche": "Tổng hợp, Khám phá & Giải trí",
-        "Subscribers": "2.740.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Minh chứng điển hình cho mô hình hệ thống hóa sản xuất video bằng đội ngũ nhân sự chuyên môn hóa của GODA."
-      }
+      "Nguyễn Văn Huân Official (@huanvn8888)",
+      "XEM GÌ HÔM NAY (@xemgihomnayofficial)"
     ],
     "course_docs": [
       {
@@ -17530,8 +15852,8 @@
     "category_group": "he_thong",
     "niche_primary": "Mô Hình Kinh Doanh Không Giới Hạn & Nhân Bản Đội Ngũ YouTube",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-ab04c5/transcript.txt"
   },
   "VIDEO-1740d9": {
@@ -17606,22 +15928,8 @@
     ],
     "tools_mentioned": [],
     "channels_mentioned": [
-      {
-        "name": "Nguyễn Văn Huân Official (@huanvn8888)",
-        "url": "https://www.youtube.com/@huanvn8888",
-        "niche": "Đào tạo & Hệ thống Kinh doanh YouTube (GODA / Huân Academy)",
-        "Subscribers": "102.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Kênh chính thức của giảng viên Nguyễn Văn Huân, kết nối toàn bộ cộng đồng học viên YouTube Total Success qua các khóa K1, K2, K3, K4."
-      },
-      {
-        "name": "BÍ QUYẾT THÀNH CÔNG (@biquyetthanhcong68)",
-        "url": "https://www.youtube.com/@biquyetthanhcong68",
-        "niche": "Phát triển bản thân & Tư duy Thành công",
-        "Subscribers": "608.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Kênh mẫu tiêu biểu của GODA minh chứng cho thành quả bền vững của kỷ luật Quy Tắc 100."
-      }
+      "Nguyễn Văn Huân Official (@huanvn8888)",
+      "BÍ QUYẾT THÀNH CÔNG (@biquyetthanhcong68)"
     ],
     "course_docs": [
       {
@@ -17668,8 +15976,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tổng Kết Lộ Trình Khóa Học & Thực Thi Quy Tắc 100",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-1740d9/transcript.txt"
   },
   "VIDEO-f8d00f": {
@@ -17744,22 +16052,8 @@
     ],
     "tools_mentioned": [],
     "channels_mentioned": [
-      {
-        "name": "Nguyễn Văn Huân Official (@huanvn8888)",
-        "url": "https://www.youtube.com/@huanvn8888",
-        "niche": "Đào tạo & Hệ thống Kinh doanh YouTube (GODA / Huân Academy)",
-        "Subscribers": "102.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Kênh chính thức của giảng viên Nguyễn Văn Huân — người trực tiếp trải qua hành trình từ thất bại 50 triệu học phí năm 2016 đến khi xây dựng hệ thống GODA hàng trăm triệu view."
-      },
-      {
-        "name": "BÍ QUYẾT THÀNH CÔNG (@biquyetthanhcong68)",
-        "url": "https://www.youtube.com/@biquyetthanhcong68",
-        "niche": "Phát triển bản thân, Tư duy & Sức khỏe tinh thần",
-        "Subscribers": "608.000+ subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Kênh lớn được phát triển từ chính nền tảng kỹ năng tổng hợp kịch bản chuyên sâu, thu âm cuốn hút và tối ưu Tiêu đề/Thumbnail mà Nguyễn Văn Huân đúc kết sau cú ngã năm 2016."
-      }
+      "Nguyễn Văn Huân Official (@huanvn8888)",
+      "BÍ QUYẾT THÀNH CÔNG (@biquyetthanhcong68)"
     ],
     "course_docs": [
       {
@@ -17806,8 +16100,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư Duy Hệ Thống & Lộ Trình Khởi Nghiệp YouTube",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-f8d00f/transcript.txt"
   },
   "VIDEO-6d0657": {
@@ -17882,30 +16176,9 @@
     ],
     "tools_mentioned": [],
     "channels_mentioned": [
-      {
-        "name": "BÍ QUYẾT THÀNH CÔNG (@biquyetthanhcong68)",
-        "url": "https://www.youtube.com/@biquyetthanhcong68",
-        "niche": "Giáo dục, Phát triển bản thân & Tư duy Thành công",
-        "Subscribers": "608.463 subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Hiển thị trực tiếp số liệu toàn thời gian (27/10/2016 – 04/10/2024) trên Slide 11 (00:37) và menu tài khoản trên Slide 25 (18:42): đạt 90.440.960 lượt xem, 8,4 triệu giờ xem, +608,4 nghìn người đăng ký, tổng doanh thu 155.990,98 USD với mức RPM = 1.7 USD (cao gấp 9 lần kênh giải trí thông thường tại Việt Nam)."
-      },
-      {
-        "name": "XEM GÌ HÔM NAY (@xemgihomnayofficial)",
-        "url": "https://www.youtube.com/@xemgihomnayofficial",
-        "niche": "Giải trí tổng hợp & Khám phá",
-        "Subscribers": "2.740.000 subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Hiển thị trực tiếp trong danh sách kênh quản lý trên Slide 25 (18:42) và được Nguyễn Văn Huân phân tích tại 00:05–00:16: sở hữu 2,74 triệu người đăng ký và 1,5 tỷ lượt xem, mang về 282.000 USD (hơn 5 tỷ VNĐ) nhưng do thuộc ngách giải trí Việt Nam nên RPM chỉ đạt 0.188 USD."
-      },
-      {
-        "name": "Nguyễn Văn Huân Official (@huanvn8888)",
-        "url": "https://www.youtube.com/@huanvn8888",
-        "niche": "Đào tạo & Hệ thống Kinh doanh YouTube (GODA / Huân Academy)",
-        "Subscribers": "102.000 subscribers",
-        "Authenticity": "VERIFIED",
-        "Analysis": "Hiển thị trực tiếp trong danh sách kênh quản lý của Nguyễn Văn Huân trên Slide 25 (18:42) với 102.000 người đăng ký."
-      }
+      "BÍ QUYẾT THÀNH CÔNG (@biquyetthanhcong68)",
+      "XEM GÌ HÔM NAY (@xemgihomnayofficial)",
+      "Nguyễn Văn Huân Official (@huanvn8888)"
     ],
     "course_docs": [
       {
@@ -17952,8 +16225,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chiến Lược Chọn Chủ Đề RPM Cao & Mô Hình Bán Content Fair Use",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "source_transcript": "video/VIDEO-6d0657/transcript.txt"
   },
   "VIDEO-0a29cc": {
@@ -17963,8 +16236,8 @@
     "category_group": "he_thong",
     "niche_primary": "Phân Tầng Mục Tiêu Doanh Thu & Kỹ Thuật Tách Ngách Từ Kênh Lớn",
     "niche_id": "phan_tang_doanh_thu_tach_ngach",
-    "target_market": "Việt Nam & Toàn Cầu (US / Quốc Tế)",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "vidIQ",
       "Viewstats",
@@ -17982,73 +16255,19 @@
       "Google"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@Thanhliemgocnhinviet",
-        "name": "Góc Nhìn Việt",
-        "url": "https://www.youtube.com/@Thanhliemgocnhinviet"
-      },
-      {
-        "handle": "@RealStoicJournal",
-        "name": "Stoic Journal",
-        "url": "https://www.youtube.com/@RealStoicJournal"
-      },
-      {
-        "handle": "@vandehomnay",
-        "name": "VẤN ĐỀ HÔM NAY",
-        "url": "https://www.youtube.com/@vandehomnay"
-      },
-      {
-        "handle": "@thoitiet.24h",
-        "name": "THỜI TIẾT 24H",
-        "url": "https://www.youtube.com/@thoitiet.24h"
-      },
-      {
-        "handle": "@EliteStoriesYT",
-        "name": "Elite Stories",
-        "url": "https://www.youtube.com/@EliteStoriesYT"
-      },
-      {
-        "handle": "@toancanh24hchannel",
-        "name": "TOÀN CẢNH 24H",
-        "url": "https://www.youtube.com/@toancanh24hchannel",
-        "dead": true,
-        "deadNote": "Kênh nhà đài mẫu 56M view/tháng đã đổi handle hoặc ngừng hoạt động (HTTP 404)"
-      },
-      {
-        "handle": "@ExploreWithUs",
-        "name": "EXPLORE WITH US",
-        "url": "https://www.youtube.com/@ExploreWithUs"
-      },
-      {
-        "handle": "@xosominhngoc",
-        "name": "Xổ Số Minh Ngọc - XoSoMinhNgoc",
-        "url": "https://www.youtube.com/@xosominhngoc"
-      },
-      {
-        "handle": "@BRIGHTSIDEOFFICIAL",
-        "name": "BRIGHT SIDE",
-        "url": "https://www.youtube.com/@BRIGHTSIDEOFFICIAL"
-      },
-      {
-        "handle": "@TopRewind",
-        "name": "Top Rewind",
-        "url": "https://www.youtube.com/@TopRewind"
-      },
-      {
-        "handle": "@WorldAccordingToBriggs",
-        "name": "World According To Briggs",
-        "url": "https://www.youtube.com/@WorldAccordingToBriggs"
-      },
-      {
-        "handle": "@PhilosophiesforLife",
-        "name": "Philosophies for Life",
-        "url": "https://www.youtube.com/@PhilosophiesforLife"
-      },
-      {
-        "handle": "@TheHanoiChamomile",
-        "name": "The Hanoi Chamomile",
-        "url": "https://www.youtube.com/@TheHanoiChamomile"
-      }
+      "@Thanhliemgocnhinviet",
+      "@RealStoicJournal",
+      "@vandehomnay",
+      "@thoitiet.24h",
+      "@EliteStoriesYT",
+      "@toancanh24hchannel",
+      "@ExploreWithUs",
+      "@xosominhngoc",
+      "@BRIGHTSIDEOFFICIAL",
+      "@TopRewind",
+      "@WorldAccordingToBriggs",
+      "@PhilosophiesforLife",
+      "@TheHanoiChamomile"
     ],
     "course_docs": [
       {
@@ -18170,7 +16389,7 @@
     "category_group": "Tư Duy & Quy Trình Săn Ngách",
     "niche_primary": "Chiến Lược Kênh & Vận Hành (Operations)",
     "niche_id": "OPS",
-    "target_market": "Đa Thị Trường (Global / VN)",
+    "target_market": "Quốc tế (Global)",
     "market_code": "GLOBAL",
     "tools_mentioned": [
       "ChatGPT",
@@ -18181,21 +16400,9 @@
       "Cốc Cốc"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@BRIGHTSIDEOFFICIAL",
-        "name": "BRIGHT SIDE (44,7 Tr sub — Case study comment vào bình luận nổi 3.000-8.000 like & thả số phút tò mò)",
-        "url": "https://www.youtube.com/@BRIGHTSIDEOFFICIAL"
-      },
-      {
-        "handle": "@ExploreWithUs",
-        "name": "EXPLORE WITH US (6,07 Tr sub — 1,4 tỷ view, case study cắt cảnh <10s lách bản quyền kết hợp tương tác)",
-        "url": "https://www.youtube.com/@ExploreWithUs"
-      },
-      {
-        "handle": "@xosominhngoc",
-        "name": "Xổ Số Minh Ngọc - XoSoMinhNgoc (Minh họa tìm từ khóa + bộ lọc 1 giờ qua để click tự nhiên khi nuôi kênh)",
-        "url": "https://www.youtube.com/@xosominhngoc"
-      }
+      "@BRIGHTSIDEOFFICIAL",
+      "@ExploreWithUs",
+      "@xosominhngoc"
     ],
     "course_docs": [
       {
@@ -18305,7 +16512,7 @@
     "category_group": "Tư Duy & Quy Trình Săn Ngách",
     "niche_primary": "Chiến Lược Kênh & Vận Hành (Operations)",
     "niche_id": "OPS",
-    "target_market": "Đa Thị Trường (Global / US / VN)",
+    "target_market": "Quốc tế (Global)",
     "market_code": "GLOBAL",
     "tools_mentioned": [
       "vidIQ",
@@ -18314,21 +16521,9 @@
       "Google Sheets"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@stoicglowup-english",
-        "name": "Stoic Glow Up (41,1 N sub — Case study kênh tiếng Anh điểm SEO vidIQ 87,6/100, tối ưu mô tả, timestamp & thẻ tag #1)",
-        "url": "https://www.youtube.com/@stoicglowup-english"
-      },
-      {
-        "handle": "@glowupestoico",
-        "name": "Glow Up Estoico (Kênh phiên bản tiếng Tây Ban Nha liên kết trong mô tả của hệ thống Stoic Glow Up)",
-        "url": "https://www.youtube.com/@glowupestoico"
-      },
-      {
-        "handle": "@longpt",
-        "name": "Phạm Thành Long (Minh họa tầm quan trọng sống còn của việc SEO từ khóa Tên Kênh khi đạt 50.000-100.000 sub)",
-        "url": "https://www.youtube.com/@longpt"
-      }
+      "@stoicglowup-english",
+      "@glowupestoico",
+      "@longpt"
     ],
     "course_docs": [
       {
@@ -18450,7 +16645,7 @@
     "category_group": "Tư Duy & Quy Trình Săn Ngách",
     "niche_primary": "Chiến Lược Kênh & Vận Hành (Operations)",
     "niche_id": "OPS",
-    "target_market": "Đa Thị Trường (US / Global / VN)",
+    "target_market": "Quốc tế (Global)",
     "market_code": "GLOBAL",
     "tools_mentioned": [
       "NexLev",
@@ -18467,26 +16662,10 @@
       "Google Sheets"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@TotallyOutlaw",
-        "name": "OUTLAW (31,3 N sub — Top 1 Trending trên NexLev, ngách Police Dashcam/Bodycam đạt 6 triệu view/tháng chỉ với 6 video)",
-        "url": "https://www.youtube.com/@TotallyOutlaw"
-      },
-      {
-        "handle": "@Alpoww",
-        "name": "Alpoww (Top 2 Trending trên NexLev — Ngách tổng hợp khoảnh khắc streamer bị động vật tấn công đạt 8 triệu view)",
-        "url": "https://www.youtube.com/@Alpoww"
-      },
-      {
-        "handle": "@SaeedBwp",
-        "name": "Saeed Bwp (Kênh hướng dẫn từng bước cách làm video AI Animal Rescue, AI Cartoon 3D & AI Motivational)",
-        "url": "https://www.youtube.com/@SaeedBwp"
-      },
-      {
-        "handle": "@longpt",
-        "name": "Phạm Thành Long (Tác giả bài viết mẫu 'Gã ăn mày giàu có và cuộc cách mạng cà phê' dùng để huấn luyện ChatGPT đúc kết cấu trúc kể chuyện)",
-        "url": "https://www.youtube.com/@longpt"
-      }
+      "@TotallyOutlaw",
+      "@Alpoww",
+      "@SaeedBwp",
+      "@longpt"
     ],
     "course_docs": [
       {
@@ -18601,8 +16780,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chuyển đổi số & Xây dựng thương hiệu chuyên gia",
     "niche_id": "chuyen_doi_so_chuyen_gia",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "TikTok",
@@ -18612,36 +16791,10 @@
       "Shopee"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@longpt",
-        "name": "Phạm Thành Long (Diễn giả đào tạo kinh doanh & tư duy mô hình hóa người thành công)",
-        "url": "https://www.youtube.com/@longpt"
-      },
-      {
-        "handle": "@TonyRobbinsLive",
-        "name": "Tony Robbins (Tác giả gốc tư duy Mô hình hóa người thành công trong kinh doanh)",
-        "url": "https://www.youtube.com/@TonyRobbinsLive"
-      },
-      {
-        "handle": "@drhieu",
-        "name": "Dr. Hiếu / Bác sĩ Hiếu (Chuyên gia da liễu & sức khỏe — Case study tư vấn định vị chuyên gia tại Eagle Camp)",
-        "url": "https://www.youtube.com/@drhieu"
-      },
-      {
-        "handle": "@MasterPhungPhuong",
-        "name": "Master Phùng Phương / Phong Thủy Phùng Gia (Case study xây dựng kênh chuyên gia phong thủy & chuyển đổi bán hàng thực chiến)",
-        "url": "https://www.youtube.com/@MasterPhungPhuong"
-      },
-      {
-        "handle": "@hoangbatau",
-        "name": "Hoàng Bá Tàu (Case study phủ thương hiệu chuyên gia marketing bằng ngân sách quảng cáo 50–60 tỷ/năm)",
-        "url": "https://www.youtube.com/@hoangbatau"
-      },
-      {
-        "handle": "@Xehay",
-        "name": "Xe Hay / Hùng Lâm (Case study reviewer ô tô xây dựng thương hiệu cá nhân mở rộng bán đa sản phẩm)",
-        "url": "https://www.youtube.com/@Xehay"
-      }
+      "@drhieu",
+      "@MasterPhungPhuong",
+      "@hoangbatau",
+      "@Xehay"
     ],
     "course_docs": [
       {
@@ -18747,8 +16900,8 @@
     "category_group": "he_thong",
     "niche_primary": "Mô hình 1 x mũ n & Chiến lược Đa kênh",
     "niche_id": "mo_hinh_1xn_da_kenh",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "TikTok",
@@ -18758,26 +16911,10 @@
       "Instagram"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@longpt",
-        "name": "Phạm Thành Long (Bài học kiên trì 2 năm chinh phục cột mốc 10.000 sub đầu tiên trên YouTube)",
-        "url": "https://www.youtube.com/@longpt"
-      },
-      {
-        "handle": "@thegioididong",
-        "name": "Thế Giới Di Động (Case study số hóa doanh nghiệp bằng Camera AI đo nụ cười nhân viên & AI dự báo nhập hàng)",
-        "url": "https://www.youtube.com/@thegioididong"
-      },
-      {
-        "handle": "@nike",
-        "name": "Nike (Case study mô hình 1 x mũ n — không sở hữu nhà máy, tập trung ngân sách phủ thương hiệu và KOL)",
-        "url": "https://www.youtube.com/@nike"
-      },
-      {
-        "handle": "@GrabOfficial",
-        "name": "Grab (Case study cải tiến mô hình 1-N và 1 x mũ n bằng nền tảng công nghệ & đòn bẩy truyền thông)",
-        "url": "https://www.youtube.com/@GrabOfficial"
-      }
+      "@longpt",
+      "@thegioididong",
+      "@nike",
+      "@GrabOfficial"
     ],
     "course_docs": [
       {
@@ -18878,8 +17015,8 @@
     "category_group": "he_thong",
     "niche_primary": "Tư duy Xây kênh & Chuyển đổi Thương hiệu",
     "niche_id": "tu_duy_xay_kenh_so_do_internet",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Facebook",
@@ -18888,31 +17025,11 @@
       "Facebook Reels"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@TranVietQuan",
-        "name": "Trần Việt Quân (Case study hệ sinh thái đa kênh YouTube 267N sub, TikTok quantv_gnh, Fanpage 426K follow & Cộng Đồng Sống Tử Tế)",
-        "url": "https://www.youtube.com/@TranVietQuan"
-      },
-      {
-        "handle": "@longpt",
-        "name": "Phạm Thành Long (Case study xây dựng sổ đỏ thương hiệu chuyên gia đa kênh từ con số 0)",
-        "url": "https://www.youtube.com/@longpt"
-      },
-      {
-        "handle": "@ThaiCongTV",
-        "name": "Thái Công TV / Quách Thái Công (Case study dùng YouTube định vị tagline 'Nhà thiết kế triệu đô')",
-        "url": "https://www.youtube.com/@ThaiCongTV"
-      },
-      {
-        "handle": "@MasterPhungPhuong",
-        "name": "Master Phùng Phương (Case study đi lên từ con số 0 thành chuyên gia phong thủy hàng đầu nhờ mô hình 1 x mũ n)",
-        "url": "https://www.youtube.com/@MasterPhungPhuong"
-      },
-      {
-        "handle": "@ManhOto",
-        "name": "Mạnh Ô Tô (Case study thực chiến quay video giới thiệu da ghế và trần xe mộc mạc đạt 2 triệu view kéo cả kênh lên và bán xe hiệu quả)",
-        "url": "https://www.youtube.com/@ManhOto"
-      }
+      "@TranVietQuan",
+      "@longpt",
+      "@ThaiCongTV",
+      "@MasterPhungPhuong",
+      "@ManhOto"
     ],
     "course_docs": [
       {
@@ -19013,8 +17130,8 @@
     "category_group": "he_thong",
     "niche_primary": "Xây dựng kênh YouTube thương hiệu & Chuyển đổi khách hàng",
     "niche_id": "youtube_brand_funnel",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "Facebook",
@@ -19022,16 +17139,8 @@
       "vidIQ"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@HoangManhCuongMarketing",
-        "name": "Hoàng Mạnh Cường Official (Topmax)",
-        "url": "https://www.youtube.com/@HoangManhCuongMarketing"
-      },
-      {
-        "handle": "@longpt",
-        "name": "Phạm Thành Long Official",
-        "url": "https://www.youtube.com/@longpt"
-      }
+      "@HoangManhCuongMarketing",
+      "@longpt"
     ],
     "course_docs": [
       {
@@ -19143,8 +17252,8 @@
     "category_group": "he_thong",
     "niche_primary": "Quản trị mục tiêu OKR & Chiến lược định vị kênh",
     "niche_id": "okr_breakthrough_strategy",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "TikTok",
@@ -19153,16 +17262,8 @@
       "OKR"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@MasterPhungPhuong",
-        "name": "Master Phùng Phương",
-        "url": "https://www.youtube.com/@MasterPhungPhuong"
-      },
-      {
-        "handle": "@HoangManhCuongMarketing",
-        "name": "Hoàng Mạnh Cường Official (Topmax)",
-        "url": "https://www.youtube.com/@HoangManhCuongMarketing"
-      }
+      "@MasterPhungPhuong",
+      "@HoangManhCuongMarketing"
     ],
     "course_docs": [
       {
@@ -19374,8 +17475,8 @@
     "category_group": "he_thong",
     "niche_primary": "Quản trị mục tiêu đột phá & Tăng trưởng doanh số",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-310a37": {
     "sku": "VIDEO-310a37",
@@ -19481,8 +17582,8 @@
     "category_group": "he_thong",
     "niche_primary": "Case Study Thực Chiến & Mở Rộng Đội Nhóm",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-327636": {
     "sku": "VIDEO-327636",
@@ -19587,8 +17688,8 @@
     "category_group": "he_thong",
     "niche_primary": "Case Study Sinh Viên Solo & Quy Luật Keep Going",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-f13206": {
     "sku": "VIDEO-f13206",
@@ -19600,13 +17701,7 @@
       "Zalo"
     ],
     "channels_mentioned": [
-      {
-        "name": "Trần Việt Quân",
-        "handle": "@ThayTranVietQuan",
-        "url": "https://www.youtube.com/@ThayTranVietQuan",
-        "niche": "Giáo dục 3 Gốc, Chánh Kiến, Nhân tướng học & Phát triển bản thân",
-        "role": "Kênh thương hiệu cá nhân thực tế do đội ngũ thầy Huân trực tiếp cố vấn và triển khai từ 2.000 sub lên 350.000 sub trước khi bàn giao"
-      }
+      "@ThayTranVietQuan"
     ],
     "course_docs": [
       {
@@ -19702,8 +17797,8 @@
     "category_group": "he_thong",
     "niche_primary": "Case Study Xây Kênh Chuyên Gia & Nhân Hiệu",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-57e9aa": {
     "sku": "VIDEO-57e9aa",
@@ -19808,8 +17903,8 @@
     "category_group": "he_thong",
     "niche_primary": "Case Study Tăng Trưởng & Kiên Trì Cày Video",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-6657cd": {
     "sku": "VIDEO-6657cd",
@@ -19823,27 +17918,9 @@
       "CapCut"
     ],
     "channels_mentioned": [
-      {
-        "name": "Tư Duy Đúng",
-        "handle": "@TuDuyDung",
-        "url": "https://www.youtube.com/@TuDuyDung",
-        "niche": "Triết lý Sống Khắc Kỷ & Phát triển bản thân tiếng Việt",
-        "role": "Kênh mẫu tiếng Việt (32.500 người đăng ký, video 'Tư Duy Ngược - Có Lợi 90% Để Giải Quyết Vấn Đề Cuộc Sống - Sống Khắc Kỷ' đạt 296.000 lượt xem, dài 44:55) được dùng để phân tích chất giọng đọc và phong cách hình ảnh tượng đá"
-      },
-      {
-        "name": "Web5ngay",
-        "handle": "@Web5ngay",
-        "url": "https://www.youtube.com/c/Web5ngay",
-        "niche": "Phát triển bản thân, Bài học cuộc sống & Chủ nghĩa Khắc Kỷ",
-        "role": "Kênh tham chiếu xuất hiện trong danh sách đề xuất bên phải với video 'Chủ Nghĩa Khắc Kỷ Trong Đời Thực | Trị Kỹ Cảm Xúc' (403.000 lượt xem)"
-      },
-      {
-        "name": "Better Version",
-        "handle": "@BetterVersionvn",
-        "url": "https://www.youtube.com/@BetterVersionvn",
-        "niche": "Tóm tắt sách, Triết lý sống & Phát triển bản thân",
-        "role": "Kênh tham chiếu lớn trong ngách phát triển bản thân xuất hiện ở cột đề xuất bên phải (video 2,2 triệu lượt xem)"
-      }
+      "@TuDuyDung",
+      "@Web5ngay",
+      "@BetterVersionvn"
     ],
     "course_docs": [
       {
@@ -19944,8 +18021,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chủ Nghĩa Khắc Kỷ (Stoic) & Quy Trình AI",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-5c2c51": {
     "sku": "VIDEO-5c2c51",
@@ -19959,13 +18036,7 @@
       "CapCut"
     ],
     "channels_mentioned": [
-      {
-        "name": "Stoic Journal",
-        "handle": "@RealStoicJournal",
-        "url": "https://www.youtube.com/@RealStoicJournal",
-        "niche": "Stoicism & Self-Improvement (Chủ nghĩa Khắc Kỷ tiếng Anh)",
-        "role": "Kênh ngoại mẫu trọng tâm (216.000 người đăng ký, 354 video, video '10 THINGS You SHOULD do every MORNING (Stoic Morning Routine) | Stoicism' đạt 1 triệu lượt xem, dài 35:14) được dùng để lấy ý tưởng kịch bản và chụp màn hình bóc tách prompt ảnh Midjourney"
-      }
+      "@RealStoicJournal"
     ],
     "course_docs": [
       {
@@ -20066,8 +18137,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chủ Nghĩa Khắc Kỷ (Stoic) Thị Trường Ngoại & AI",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-d78c23": {
     "sku": "VIDEO-d78c23",
@@ -20081,20 +18152,8 @@
       "vidIQ"
     ],
     "channels_mentioned": [
-      {
-        "name": "Master Phùng Phương (Phong Thủy Phùng Gia)",
-        "handle": "@MasterPhungPhuong",
-        "url": "https://www.youtube.com/@MasterPhungPhuong",
-        "niche": "Phong thủy chính phái & Tử vi ứng dụng",
-        "role": "Kênh thương hiệu chuyên gia tiêu biểu do thầy Huân đồng hành xây dựng từ giai đoạn 2020–2024 đạt hàng trăm nghìn người đăng ký"
-      },
-      {
-        "name": "Thầy Tam Nguyên",
-        "handle": "@ThayTamNguyen",
-        "url": "https://www.youtube.com/@ThayTamNguyen",
-        "niche": "Phong thủy & Văn hóa phương Đông",
-        "role": "Kênh đối chứng trong ngách phong thủy được nhắc tới khi phân tích làn sóng chuyển dịch từ đọc phòng thu thủ công sang ứng dụng AI giọng đọc"
-      }
+      "@MasterPhungPhuong",
+      "@ThayTamNguyen"
     ],
     "course_docs": [
       {
@@ -20200,8 +18259,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chiến lược Hệ thống & Lịch sử Chính sách YouTube (2015-2025)",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-966059": {
     "sku": "VIDEO-966059",
@@ -20214,31 +18273,9 @@
       "Amazon"
     ],
     "channels_mentioned": [
-      {
-        "name": "Web5ngay",
-        "handle": "@Web5ngay",
-        "url": "https://www.youtube.com/c/Web5ngay",
-        "niche": "Phát triển bản thân & Triết lý sống",
-        "role": "Kênh mẫu được thầy Huân lấy link video '3 Triết Lý Sống Thâm Thúy: THỨC TỈNH ĐỜI NGƯỜI' nạp trực tiếp vào NotebookLM để demo tính năng tạo Bản trình bày (Slide), Bản đồ họa thông tin (Infographic) và Tổng quan bằng âm thanh (Podcast)"
-      },
-      {
-        "name": "Screen Culture",
-        "handle": "@ScreenCultureOfficial",
-        "url": "https://www.youtube.com/@ScreenCultureOfficial",
-        "niche": "Concept Movie Trailers bằng AI",
-        "role": "Case study điển hình về kênh lớn (hơn 1,4 triệu sub, hàng trăm triệu view) bị YouTube chấm dứt hoạt động vào tháng 12/2025 do lạm dụng AI tạo trailer phim giả mạo vi phạm bản quyền Disney/Marvel",
-        "dead": true,
-        "deadNote": "Đã bị YouTube chấm dứt hoạt động tháng 12/2025 trong đợt truy quét các kênh dùng AI tạo trailer phim giả mạo gây hiểu lầm và vi phạm bản quyền điện ảnh"
-      },
-      {
-        "name": "KH Studio",
-        "handle": "@KHStudio",
-        "url": "https://www.youtube.com/@KHStudio",
-        "niche": "AI Concept Trailers",
-        "role": "Case study điển hình cùng với Screen Culture (hơn 2 triệu sub, gần 1 tỷ view tổng) bị YouTube tắt kiếm tiền và xóa kênh vĩnh viễn cuối năm 2025 vì lách luật nhãn 'fan-made' để spam trailer AI giả mạo",
-        "dead": true,
-        "deadNote": "Đã bị YouTube chấm dứt hoạt động tháng 12/2025 cùng đợt với Screen Culture do lạm dụng AI sản xuất trailer phim giả mạo"
-      }
+      "@Web5ngay",
+      "@ScreenCultureOfficial",
+      "@KHStudio"
     ],
     "course_docs": [
       {
@@ -20339,8 +18376,8 @@
     "category_group": "he_thong",
     "niche_primary": "Chiến lược Chống AI Slop, Xây dựng Context & Ứng dụng NotebookLM",
     "niche_id": "he_thong_youtube",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL"
+    "target_market": "Việt Nam",
+    "market_code": "VN"
   },
   "VIDEO-fb7e44": {
     "sku": "VIDEO-fb7e44",
@@ -20349,8 +18386,8 @@
     "category_group": "AI_Content_Production",
     "niche_primary": "Chiến Lược Nội Dung & Chống AI Slop 2026",
     "niche_id": "NICHE-12",
-    "target_market": "Global / US / Việt Nam",
-    "market_code": "GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "ChatGPT 5.2 (OpenAI)",
       "YouTube Studio Analytics",
@@ -20368,31 +18405,11 @@
       "VidIQ"
     ],
     "channels_mentioned": [
-      {
-        "handle": "UCN57zOVep4zvplU5YsObS2w",
-        "name": "Sống Khỏe Mỗi Ngày (Kênh demo trực tiếp YouTube Studio: 100.078.819 views, +450.309 subs, $146.580,14 doanh thu)",
-        "url": "https://www.youtube.com/channel/UCN57zOVep4zvplU5YsObS2w"
-      },
-      {
-        "handle": "@biquyetthanhcong68",
-        "name": "Bí Quyết Thành Công (Kênh minh họa mở trực tiếp trên trình duyệt lúc 15:20)",
-        "url": "https://www.youtube.com/@biquyetthanhcong68"
-      },
-      {
-        "handle": "@PBDPodcast",
-        "name": "PBD Podcast (Kênh hiển thị trên thanh Kênh đăng ký trình duyệt)",
-        "url": "https://www.youtube.com/@PBDPodcast"
-      },
-      {
-        "handle": "@TheDiaryOfACEO",
-        "name": "The Diary Of A CEO (Kênh hiển thị trên thanh Kênh đăng ký trình duyệt)",
-        "url": "https://www.youtube.com/@TheDiaryOfACEO"
-      },
-      {
-        "handle": "@HuanVN",
-        "name": "Nguyễn Văn Huân (Huan.vn - Giảng viên đào tạo)",
-        "url": "https://www.youtube.com/@HuanVN"
-      }
+      "UCN57zOVep4zvplU5YsObS2w",
+      "@biquyetthanhcong68",
+      "@PBDPodcast",
+      "@TheDiaryOfACEO",
+      "@HuanVN"
     ],
     "course_docs": [
       {
@@ -20513,8 +18530,8 @@
     "category_group": "he_thong",
     "niche_primary": "Quản Trị VPS & Bảo Mật Google AdSense",
     "niche_id": "quan_tri_vps_adsense",
-    "target_market": "Việt Nam & Toàn Cầu",
-    "market_code": "VN_GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "VPS",
       "Google AdSense",
@@ -20689,8 +18706,8 @@
     "category_group": "Channel_Care_Infrastructure",
     "niche_primary": "Hạ Tầng VPS, Nuôi Kênh & Bảo Mật Google AdSense (GA)",
     "niche_id": "NICHE-10",
-    "target_market": "Global / US / Việt Nam",
-    "market_code": "GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "VPS",
       "Vietnix",
@@ -20701,11 +18718,7 @@
       "Google AdSense"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@HuanVN",
-        "name": "Nguyễn Văn Huân (Huan.vn - Hệ sinh thái đào tạo YouTube Total Success & Đội ngũ kỹ thuật Hoàng GODA)",
-        "url": "https://www.youtube.com/@HuanVN"
-      }
+      "@HuanVN"
     ],
     "course_docs": [
       {
@@ -20821,19 +18834,15 @@
     "category_group": "Case_Study_Mindset",
     "niche_primary": "Quản Trị Doanh Nghiệp YouTube & Tư Duy Lãnh Đạo",
     "niche_id": "NICHE-11",
-    "target_market": "Global / US / Việt Nam",
-    "market_code": "GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "Hệ thống quản trị doanh nghiệp YouTube (100+ nhân sự)",
       "Ma trận Checklist Nhân Sự & KPI phòng ban",
       "Quy trình đào tạo nội bộ YouTube Total Success"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@HuanVN",
-        "name": "Nguyễn Văn Huân (Huan.vn - Diễn giả đào tạo sự kiện YouTube Total Success K3 Hà Nội)",
-        "url": "https://www.youtube.com/@HuanVN"
-      }
+      "@HuanVN"
     ],
     "course_docs": [
       {
@@ -20948,18 +18957,14 @@
     "category_group": "Case_Study_Mindset",
     "niche_primary": "Phễu Bán Hàng B2B Qua YouTube & Tinh Thần Học Tập Không Giới Hạn Tuổi Tác",
     "niche_id": "NICHE-11",
-    "target_market": "Global / US / Việt Nam",
-    "market_code": "GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "GODA"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@HuanVN",
-        "name": "Nguyễn Văn Huân (Huan.vn - Giảng viên đào tạo sự kiện YouTube Total Success K3 Hà Nội)",
-        "url": "https://www.youtube.com/@HuanVN"
-      }
+      "@HuanVN"
     ],
     "course_docs": [
       {
@@ -21074,24 +19079,13 @@
     "category_group": "Case_Study_Mindset",
     "niche_primary": "Chuyển Dịch Từ Creator/Filmmaker Sang Chủ Hệ Thống Kinh Doanh Vô Hạn",
     "niche_id": "NICHE-11",
-    "target_market": "Global / US / Việt Nam",
-    "market_code": "GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@HuanVN",
-        "name": "Nguyễn Văn Huân (Huan.vn - Giảng viên đào tạo sự kiện YouTube Total Success K3 Hà Nội)",
-        "url": "https://www.youtube.com/@HuanVN"
-      },
-      {
-        "handle": "@MinhTravel",
-        "name": "Minh Travel (KOL >100K followers chia sẻ về quay dựng video tại Việt Nam)",
-        "url": "https://www.youtube.com/@MinhTravel",
-        "dead": true,
-        "deadNote": "Handle @MinhTravel hiện đã đổi URL hoặc chuyển sang đa nền tảng; ghi nhận theo giới thiệu trực tiếp của học viên tại hội trường K3 Hà Nội"
-      }
+      "@HuanVN"
     ],
     "course_docs": [
       {
@@ -21205,18 +19199,14 @@
     "category_group": "Case_Study_Mindset",
     "niche_primary": "Quản Trị Hệ Thống Kênh Nút Vàng/Bạc & Huấn Luyện Đội Nhóm Chủ Động",
     "niche_id": "NICHE-11",
-    "target_market": "Global / US / Việt Nam",
-    "market_code": "GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "GODA"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@HuanVN",
-        "name": "Nguyễn Văn Huân (Huan.vn - Giảng viên đào tạo sự kiện YouTube Total Success K3 Hà Nội)",
-        "url": "https://www.youtube.com/@HuanVN"
-      }
+      "@HuanVN"
     ],
     "course_docs": [
       {
@@ -21330,18 +19320,14 @@
     "category_group": "Case_Study_Mindset",
     "niche_primary": "Mô Hình YouTube Faceless Cho Chuyên Gia / Bác Sĩ Làm Thêm & Cốt Lõi Tư Duy Chiến Lược",
     "niche_id": "NICHE-11",
-    "target_market": "Global / US / Việt Nam",
-    "market_code": "GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "GODA"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@HuanVN",
-        "name": "Nguyễn Văn Huân (Huan.vn - Giảng viên đào tạo sự kiện YouTube Total Success K3 Hà Nội)",
-        "url": "https://www.youtube.com/@HuanVN"
-      }
+      "@HuanVN"
     ],
     "course_docs": [
       {
@@ -21455,24 +19441,16 @@
     "category_group": "Case_Study_Mindset",
     "niche_primary": "Chuyển Hóa Thương Hiệu Cá Nhân Sang Hệ Thống Nhân Bản & Tầm Vóc Quốc Tế",
     "niche_id": "NICHE-11",
-    "target_market": "Global / US / Việt Nam",
-    "market_code": "GLOBAL",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
     "tools_mentioned": [
       "YouTube",
       "GODA",
       "Affiliate World"
     ],
     "channels_mentioned": [
-      {
-        "handle": "@DuongK",
-        "name": "Dương K (Creator / Nhà sản xuất âm nhạc chia sẻ trực tiếp tại hội trường K3 Hà Nội)",
-        "url": "https://www.youtube.com/@DuongK"
-      },
-      {
-        "handle": "@HuanVN",
-        "name": "Nguyễn Văn Huân (Huan.vn - Giảng viên đào tạo sự kiện YouTube Total Success K3 Hà Nội)",
-        "url": "https://www.youtube.com/@HuanVN"
-      }
+      "@DuongK",
+      "@HuanVN"
     ],
     "course_docs": [
       {

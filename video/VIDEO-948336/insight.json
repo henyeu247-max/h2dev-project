@@ -1,0 +1,74 @@
+{
+  "key_takeaways": [
+    "Tác giả giới thiệu một kênh rất mới ở thị trường Hàn Quốc, vừa lập từ tháng 9 cách đây một tháng, mới 12 video mà view rất cao, thuộc dạng lịch sử Hàn Quốc về các hoàng hậu, hoàng đế ngày xưa.",
+    "Khi lập kênh mới thì đặt tên cho đúng, đưa vào mục giáo dục, copy chỉ số, tag, tên kênh của kênh mẫu và dịch lại sang ngôn ngữ gốc rồi dán vào.",
+    "Kênh mẫu đã bật kiếm tiền và không dùng một ảnh duy nhất mà tạo khá nhiều ảnh, ghép thêm video nguồn free hoặc ảnh ghép lại.",
+    "Không nên chỉ dùng một ảnh vì chính sách YouTube vừa update ở tháng 7, dễ dính sử dụng lại nội dung hoặc lặp lại nội dung.",
+    "Chỉ làm một đến hai kênh và tập trung vào chất lượng video, hình ảnh, nội dung, làm sơ sài thì chắc chắn flop; giọng đọc dùng Eleven Lab."
+  ],
+  "edit_sop": {
+    "primary": "Phân tích kênh lịch sử Hàn Quốc mới lập và cách lập kênh, dựng theo kênh mẫu",
+    "additional": [
+      "Lập kênh mới thì đặt tên cho đúng, chọn mục Giáo dục, copy chỉ số, tag, tên kênh của kênh mẫu rồi dịch lại sang ngôn ngữ gốc trước khi dán",
+      "Không dùng một ảnh duy nhất, nên tạo nhiều ảnh ghép lại hoặc ghép thêm video nguồn free",
+      "Tạo giọng đọc lồng tiếng cho video bằng công cụ giọng đọc ElevenLabs",
+      "Chỉ làm 1 đến 2 kênh và tập trung vào chất lượng video, hình ảnh, nội dung"
+    ]
+  },
+  "avoid_flags": [
+    "Không chỉ dùng một ảnh vì chính sách YouTube cập nhật tháng 7, dễ dính sử dụng lại nội dung hoặc lặp lại nội dung",
+    "Không làm nhiều kênh, chỉ làm 1 đến 2 kênh",
+    "Làm sơ sài, chất lượng thấp thì chắc chắn flop vì YouTube không đẩy đề xuất"
+  ],
+  "verified_expert_summary": true,
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Xem kênh mới lập tháng 9 (chỉ một tháng) mà đã view cao"
+    },
+    {
+      "time": "00:52",
+      "seconds": 52,
+      "label": "Ngách chuyện xưa rất ngon, cách làm giống các clip trước"
+    },
+    {
+      "time": "01:43",
+      "seconds": 103,
+      "label": "Phân tích cách edit của một video; kênh đã bật kiếm tiền"
+    },
+    {
+      "time": "02:32",
+      "seconds": 152,
+      "label": "Dùng nguồn video free, ghép nhiều ảnh, không dùng một ảnh vì chính sách YouTube cập nhật tháng 7"
+    },
+    {
+      "time": "03:22",
+      "seconds": 202,
+      "label": "Chỉ làm 1-2 kênh, tập trung chất lượng video, hình ảnh, nội dung"
+    }
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "ElevenLabs",
+    "MiniMax"
+  ],
+  "sop_steps": [
+    "Lập kênh mới thì đặt tên cho đúng, chọn mục Giáo dục, copy chỉ số, tag, tên kênh của kênh mẫu rồi dịch lại sang ngôn ngữ gốc trước khi dán",
+    "Không dùng một ảnh duy nhất, nên tạo nhiều ảnh ghép lại hoặc ghép thêm video nguồn free",
+    "Tạo giọng đọc lồng tiếng cho video bằng công cụ giọng đọc ElevenLabs",
+    "Chỉ làm 1 đến 2 kênh và tập trung vào chất lượng video, hình ảnh, nội dung"
+  ],
+  "sku": "VIDEO-948336",
+  "title": "Share Key (Ngách Nhỏ) Thị Trường Hàn Quốc - Update 11/10/2025",
+  "actual_topic": "Share Key (Ngách Nhỏ) Thị Trường Hàn Quốc - Update 11/10/2025",
+  "channels_mentioned": [
+    "@한국사이야기100"
+  ],
+  "visual_audio_checked": true,
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "source_transcript": "video/VIDEO-948336/transcript.txt",
+  "market_code": "KR",
+  "target_market": "Hàn Quốc",
+  "niche_primary": "Bán Content & Phát Triển Kênh"
+}

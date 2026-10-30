@@ -1,0 +1,636 @@
+1
+00:00:00,000 --> 00:00:06,440
+Đây là video nói về thuật toán đề xuất của YouTube, của chính YouTube.
+
+2
+00:00:08,040 --> 00:00:11,460
+Mình sub tiếng Việt cho anh em.
+
+3
+00:00:13,460 --> 00:00:16,580
+Là nhà sáng tạo, chắc hẳn bạn đã tự hỏi những điều như sau.
+
+4
+00:00:16,920 --> 00:00:19,120
+YouTube chọn video để quảng bá bằng cách nào?
+
+5
+00:00:19,820 --> 00:00:22,720
+Biểu tượng màu vàng có ảnh hưởng đến tiềm năng khám phá của video không?
+
+6
+00:00:23,640 --> 00:00:25,320
+Các thẻ thì quan trọng như thế nào?
+
+7
+00:00:25,320 --> 00:00:34,080
+Trong video này, chúng tôi sẽ giải đáp tất cả những câu hỏi đó và nhiều điều khác về hệ thống tìm kiếm và khám phá của YouTube và nêu một số mẹo về tiềm năng khám phá của video.
+
+8
+00:00:35,220 --> 00:00:38,340
+Đầu tiên, YouTube chọn video để quảng bá bằng cách nào?
+
+9
+00:00:39,000 --> 00:00:49,180
+Dù là trên trang chủ YouTube, phần tìm kiếm hay phần đề xuất, hệ thống đề xuất của YouTube thật ra là tìm video cho người xem, thay vì tìm người xem cho video.
+
+10
+00:00:49,180 --> 00:00:56,320
+Thuật toán không đẩy hoặc quảng bá video, mà tìm video cho từng người dùng mỗi khi họ truy cập YouTube.
+
+11
+00:00:56,840 --> 00:01:03,220
+Mục tiêu của hệ thống tìm kiếm và khám phá là tìm ra cho từng người xem những video phù hợp mà họ nhiều khả năng sẽ thích xem.
+
+12
+00:01:03,300 --> 00:01:06,260
+Vì vậy, nội dung đề xuất cho mỗi người xem đều khác biệt một đôi chút.
+
+13
+00:01:06,260 --> 00:01:11,160
+Các video được xếp hạng dựa trên hàng trăm tín hiệu, chủ yếu thuộc hai loại.
+
+14
+00:01:11,880 --> 00:01:14,260
+Hoạt động cá nhân của người xem và hiệu suất của video.
+
+15
+00:01:15,960 --> 00:01:26,260
+Hoạt động cá nhân của người xem thì dựa trên các tín hiệu về lựa chọn ưu tiên của một người dùng, như những video họ chọn xem, video họ chọn bỏ qua, hay là video họ loại bỏ.
+
+16
+00:01:26,260 --> 00:01:30,867
+Tần suất họ xem một kênh hoặc chủ đề và nhiều tín hiệu khác.
+
+17
+00:01:30,867 --> 00:01:37,387
+Hệ thống của chúng tôi cũng xem xét hiệu suất của video, tức là sức hút của nội dung đối với người xem, khi được giới thiệu cho họ.
+
+18
+00:01:37,387 --> 00:01:44,974
+Ví dụ, người xem chọn video, bỏ qua, hay nhấp vào nút không quan tâm. Nếu họ chọn xem, họ xem bao lâu
+
+19
+00:01:44,974 --> 00:01:52,560
+và xem bao nhiêu phần trong video. Lúc này, thời lượng xem trung bình của video và tỷ lệ phần trăm đã xem trung
+
+20
+00:01:52,560 --> 00:02:00,147
+bình được hệ thống coi là những tín hiệu để xếp hạng video. Và cuối cùng, người xem có thích video hay không?
+
+21
+00:02:00,147 --> 00:02:05,247
+Chúng tôi đo lường mức độ hài lòng bằng nhiều tín hiệu như khảo sát dành cho những người dùng và số lượng thích.
+
+22
+00:02:05,567 --> 00:02:10,547
+Những tín hiệu này giúp hệ thống của chúng tôi thu hẹp nhóm video phù hợp nhất để giới thiệu cho từng người xem.
+
+23
+00:02:11,067 --> 00:02:15,127
+Nhà sáng tạo thường muốn biết thuật toán ưa chuộng loại video nào nhất.
+
+24
+00:02:15,807 --> 00:02:21,207
+Nhưng hệ thống của chúng tôi không có ý kiến về loại video của bạn tạo ra và không ưu tiên dạng thức nào cụ thể.
+
+25
+00:02:21,947 --> 00:02:24,467
+Thay vào đó, thuật toán cố gắng điều chỉnh theo khán giả.
+
+26
+00:02:24,467 --> 00:02:30,987
+Vì vậy, thay vì lo, phải hiểu thuật toán hoặc số liệu phân tích, hãy tập trung tìm hiểu khán giả và nội dung họ thích xem.
+
+27
+00:02:31,000 --> 00:02:38,187
+Tiếp theo, việc thay đổi tiêu đề hoặc hình thu nhỏ có đổi thứ hạng của video trong thuật toán hay không? Có thể. Nhưng đó là do hệ
+
+28
+00:02:38,187 --> 00:02:45,273
+thống của chúng tôi phản hồi khác đi, theo cách người xem tương tác với video của bạn. Chứ không phải do việc thay đổi tiêu đề hoặc hình thu
+
+29
+00:02:45,273 --> 00:02:52,360
+nhỏ video. Khi người xem thấy video của bạn có vẻ khác, cách họ tương tác với video sẽ thay đổi khi chúng tôi giới thiệu video cho họ.
+
+30
+00:02:52,360 --> 00:03:00,273
+Việc đổi tiêu đề và hình thu nhỏ của video có thể là cách hiệu quả để có nhiều lượt xem hơn. Nhưng nếu video của bạn đang hoạt động tốt thì bạn không cần thay
+
+31
+00:03:00,273 --> 00:03:08,187
+đổi. Nếu một video của tôi hoạt động kém thì kênh của tôi có bị ảnh hưởng gì không? Điều quan trọng là cách người xem phản hồi với từng video. Khi video được đề
+
+32
+00:03:08,187 --> 00:03:16,100
+xuất cho họ, hệ thống của chúng tôi phụ thuộc vào nhiều tín hiệu ở cấp video và cấp khán giả để quyết định những video đề xuất phù hợp nhất với khán giả của bạn.
+
+33
+00:03:16,100 --> 00:03:26,400
+Số lượng người xem tổng thể của kênh giảm có thể do mối quan tâm của mọi người thay đổi theo thời gian, hoặc khi người xem ngừng xem hầu hết các video của bạn khi video được giới thiệu.
+
+34
+00:03:27,560 --> 00:03:32,540
+Trạng thái kiếm tiền, những biểu tượng màu vàng có ảnh hưởng đến phần tiềm năng khám phá của video không?
+
+35
+00:03:33,300 --> 00:03:38,600
+Không. Hệ thống tìm kiếm và đề xuất của chúng tôi không biết video nào được kiếm tiền và video nào không.
+
+36
+00:03:39,460 --> 00:03:45,340
+Hệ thống tập trung đề xuất những video mà khán giả thấy hài lòng khi xem, bất kể khi chúng có được kiếm tiền hay là không.
+
+37
+00:03:45,340 --> 00:03:54,760
+Nhưng nếu có nội dung bạo lực không phù hợp cho người xem chưa đến tuổi trưởng thành hoặc các nội dung phản cảm khác, video của bạn có thể bị tắt kiếm tiền vì không phù hợp với tất cả các nhà quảng cáo.
+
+38
+00:03:55,000 --> 00:03:59,660
+Video cũng có thể không được đề xuất cho nhiều người xem vì không phù hợp với tất cả các đối tượng xem.
+
+39
+00:04:00,892 --> 00:04:12,412
+Tôi có cần tải lên video hàng ngày hoặc ít nhất một tuần một lần không? Không. Sau nhiều năm phân tích, chúng tôi nhận ra rằng sự tăng trưởng số lượt xem và các video tải lên không tương quan với khoảng thời gian giữa các lần tải lên.
+
+40
+00:04:12,412 --> 00:04:19,552
+Nhiều nhà sáng tạo đã xây dựng được mối gắn kết đáng tin cậy với khán giả bằng chất lượng thay vì là số lượng.
+
+41
+00:04:20,252 --> 00:04:26,292
+Chúng tôi khuyến khích bạn chăm sóc bản thân để tránh kiệt sức. Điều này rất quan trọng đối với khán giả và sức khỏe của bạn.
+
+42
+00:04:27,492 --> 00:04:30,692
+Có những yếu tố nào khác ảnh hưởng đến lượng người xem video của tôi không?
+
+43
+00:04:31,000 --> 00:04:38,792
+Có 3 yếu tố chính cho biết khán giả của bạn đến từ đâu. Đó là mối quan tâm đến với chủ đề, mức độ cạnh tranh và tính thời vụ.
+
+44
+00:04:38,792 --> 00:04:45,232
+Mối quan tâm đến chủ đề đó là số lượng người trên toàn thế giới quan tâm và xem video về một chủ đề cụ thể.
+
+45
+00:04:45,692 --> 00:04:53,412
+Một số chủ đề có sức hút lớn hơn những chủ đề khác, và sức hút này có thể thay đổi theo thời gian, khi một số chủ đề tăng hoặc giảm độ đột biến.
+
+46
+00:04:55,152 --> 00:05:00,012
+Google Xu hướng là công cụ giúp bạn biết mức độ quan tâm của thế giới thay đổi như thế nào theo thời gian.
+
+47
+00:05:00,572 --> 00:05:06,812
+Bạn thậm chí có thể lọc cụ thể đến mức quan tâm trong hoạt động tìm kiếm trên YouTube. Bạn chỉ cần vào Google Trends.
+
+48
+00:05:08,792 --> 00:05:10,032
+Tiếp theo là mức độ cạnh tranh.
+
+49
+00:05:10,530 --> 00:05:16,550
+Hệ thống của YouTube phải tìm kiếm và xếp hạng tất cả video mà người xem có thể muốn xem nhất.
+
+50
+00:05:17,090 --> 00:05:26,730
+Ngay cả khi video của bạn có hiệu suất và có các chỉ số tốt, bạn vẫn có thể nhận ít được hiển thị hơn nếu video của các kênh hoặc nhà sáng tạo khác hoạt động còn tốt hơn.
+
+51
+00:05:27,750 --> 00:05:29,570
+Sau cùng là tính thời vụ.
+
+52
+00:05:30,110 --> 00:05:33,670
+Lưu lượng truy cập trên YouTube có thể thay đổi vào các thời điểm khác nhau trong năm.
+
+53
+00:05:34,610 --> 00:05:39,430
+Và hãy nghĩ xem khán giả của bạn đang sống ở quốc gia nào, có những gì đang ảnh hưởng trong cuộc sống của họ.
+
+54
+00:05:39,430 --> 00:05:43,650
+và biết rằng sẽ có rất là nhiều biến động về lượng người xem trong các ngày lễ lớn.
+
+55
+00:05:44,310 --> 00:05:46,930
+Câu hỏi cuối cùng, các thẻ quan trọng như thế nào?
+
+56
+00:05:47,410 --> 00:05:49,430
+Thật sự thì, không quan trọng lắm.
+
+57
+00:05:49,730 --> 00:05:52,430
+Thẻ chủ yếu được dùng để sửa các lỗi chính tả phổ biến.
+
+58
+00:05:53,750 --> 00:05:58,590
+Ví dụ, YouTube so với YouTube vs YouTube.
+
+59
+00:06:00,870 --> 00:06:07,330
+Hãy nhớ rằng, hệ thống của YouTube cá nhân hóa nội dung cho từng người xem và đề xuất nội dung dựa trên mối quan tâm của khán giả.
+
+60
+00:06:07,330 --> 00:06:15,830
+Hệ thống cũng chịu ảnh hưởng của các hiệu suất và mức độ tương tác của video, cùng các yếu tố bên ngoài ảnh hưởng đến mối quan tâm của mọi người theo thời gian.
+
+61
+00:06:15,830 --> 00:06:23,530
+Hãy tập trung vào những nội dung mà khán giả của bạn thích. Nếu bạn làm vậy và mọi người thích xem, thì hệ thống đề xuất sẽ điều chỉnh theo.
+
+62
+00:06:38,000 --> 00:06:50,187
+Rồi, ok, ok. Video này có gửi cho anh em rồi, nhưng không biết anh em có xem không? Khóa nào cũng nói rồi. Tìm những thứ chính thống ở trên YouTube họ dạy đây.
+
+63
+00:06:50,867 --> 00:06:55,967
+Họ nói rõ mà, họ là nền tảng, nên họ cũng muốn mình hiểu và làm.
+
+64
+00:06:56,467 --> 00:07:00,547
+Bởi vì sao? Họ có 45% tiền của anh em kiếm được ấy.
+
+65
+00:07:02,527 --> 00:07:10,687
+Thế thì ở đây trong cái video nó nói về video đề xuất của YouTube, tức là nó có rất
+
+66
+00:07:10,687 --> 00:07:18,847
+nhiều video đem video đến cho người dùng, chứ không phải là nhấc người dùng đi tìm video của bạn.
+
+67
+00:07:18,847 --> 00:07:25,760
+Tức là nó hiểu rằng một người có xu hướng xem nhiều nội dung khác nhau. Đây cũng là tư duy
+
+68
+00:07:25,760 --> 00:07:32,674
+trong việc xây dựng mô hình kinh doanh long tail, tức là cái đuôi dài. Chúng ta có một tệp khách hàng
+
+69
+00:07:32,674 --> 00:07:39,587
+và chúng ta bán cho họ nhiều sản phẩm, thay vì việc chúng ta phải đi tìm một khách hàng mới.
+
+70
+00:07:41,450 --> 00:07:46,530
+Mô hình này trong canvas nó cũng có. Mô hình kinh doanh canvas nó cũng có.
+
+71
+00:07:47,910 --> 00:07:57,290
+Nên họ giải thích rằng nếu một video của bạn mặc dù đang được xanh các chỉ số rất tốt so với trong kênh của bạn,
+
+72
+00:07:57,950 --> 00:08:08,510
+nhưng nó không có người xem bởi vì ở một đâu đó có một video nào đấy của đối thủ họ đang quan tâm nhiều hơn.
+
+73
+00:08:08,510 --> 00:08:17,990
+Nó liên quan đến tính thời vụ. Ví dụ tự nhiên mà lại có một cái tin gì đấy hot là mọi người sẽ dồn đổ xô sang cái
+
+74
+00:08:17,990 --> 00:08:27,470
+tin hot đấy. Ví dụ hôm nay mà có trận bóng đá, 7h tối có trận bóng đá, giờ vàng của anh em là 7h tối. Anh em
+
+75
+00:08:27,470 --> 00:08:36,950
+đăng YouTube lên 7h tối mà xem. Làm gì có ai xem? Người ta đi xem bóng đá hết rồi. Sau bóng đá, view nó mới dựng ngược lên.
+
+76
+00:08:36,950 --> 00:08:44,840
+Và họ nói rằng là vì một người này có nhiều sở thích như vậy nên
+
+77
+00:08:44,840 --> 00:08:52,730
+họ sẽ dựa vào các tín hiệu của video đấy để có thể là đề xuất.
+
+78
+00:08:53,000 --> 00:08:55,430
+Và tín hiệu đấy nó dựa trên 2 thứ
+
+79
+00:08:55,430 --> 00:08:58,270
+Một là tương tác ở trong video
+
+80
+00:08:58,270 --> 00:09:00,710
+Hai là hiệu suất của video
+
+81
+00:09:00,710 --> 00:09:06,630
+Tương tác ở trong video tức là hành vi của người dùng với video đấy trên nền tảng YouTube
+
+82
+00:09:06,630 --> 00:09:09,610
+Bao gồm like, share, comment
+
+83
+00:09:09,610 --> 00:09:12,730
+Kích vào cái thanh lên xuống
+
+84
+00:09:12,730 --> 00:09:14,730
+Tua qua, tua lại
+
+85
+00:09:14,730 --> 00:09:17,730
+Chọn 0.5 hay là chọn 1 hay tốc độ 2
+
+86
+00:09:17,730 --> 00:09:21,730
+Chọn video HD hay Full HD cái gì đấy để tương tác với nền tảng
+
+87
+00:09:21,730 --> 00:09:23,730
+Đấy là phần tương tác
+
+88
+00:09:23,730 --> 00:09:25,730
+Nó giúp cho tăng view rất mạnh
+
+89
+00:09:25,730 --> 00:09:28,730
+Bởi vì thế nó là 1 phần 2 rồi
+
+90
+00:09:28,730 --> 00:09:32,730
+Nó là 1 phần 2 cái yếu tố để ảnh hưởng đến lượng view
+
+91
+00:09:32,730 --> 00:09:33,330
+Tương tác.
+
+92
+00:09:33,347 --> 00:09:37,667
+Nên cần phải có những sự tương tác ở trong kênh.
+
+93
+00:09:39,807 --> 00:09:46,167
+Cái tương tác dễ nhất, đơn giản nhất là chăm tab cộng đồng.
+
+94
+00:09:49,167 --> 00:09:54,087
+Họ nói rằng có những nội dung mà không cần đăng lên nhiều.
+
+95
+00:09:55,047 --> 00:09:58,000
+Nhưng cái tính gắn kết với khán giả đã được hình thành.
+
+96
+00:09:58,000 --> 00:10:07,507
+Và tính gắn kết với khán giả này, chúng ta có thể tận dụng được các tính năng. Một là chăm tab cộng đồng. Tab cộng đồng, Hoàng
+
+97
+00:10:07,507 --> 00:10:16,807
+bật một cái tab cộng đồng bất kỳ của một kênh lên đi. Thông thường anh em đều dùng tab cộng đồng kiểu spam, có video up lên.
+
+98
+00:10:16,807 --> 00:10:26,357
+Thì nó sẽ gặp một cái vấn đề lớn. Ví dụ kênh này, kéo lên nữa đi. Kênh này Việt Nam làm trăm phần trăm. Đây
+
+99
+00:10:26,357 --> 00:10:35,907
+là một dạng spam khán giả. Tab cộng đồng này vứt đi. Mình mà nhảy vào kênh, vào chủ đề này, mình sẽ vượt thằng này luôn.
+
+100
+00:10:38,450 --> 00:10:51,650
+Thế này là nhồi vào đầu khán giả rồi, làm gì có mà tương tác, làm gì có mà hai chiều, người ta nhìn qua cái này người ta còn bỏ qua, là nó tính vào trong hệ thống đề xuất là nó bỏ qua video hay không.
+
+101
+00:10:52,570 --> 00:10:56,750
+Rồi, kích vào tab cộng đồng, vào một kênh của tab cộng đồng để anh em xem.
+
+102
+00:10:57,910 --> 00:10:58,550
+Bí quyết thành công đi.
+
+103
+00:10:59,610 --> 00:11:02,210
+Cái này mình bỏ, mình không làm nữa, không chăm tab cộng đồng.
+
+104
+00:11:03,030 --> 00:11:04,950
+Rồi, nhìn này, nó có cái yếu tố, hình ảnh.
+
+105
+00:11:04,950 --> 00:11:10,650
+Hình ảnh, cuộc thăm dò ý kiến, thăm dò ý kiến cá nhân, đố vui và video.
+
+106
+00:11:11,770 --> 00:11:14,110
+Hãy coi đây là một cái fanpage của anh em.
+
+107
+00:11:15,590 --> 00:11:19,950
+Và làm đầy đủ cả 5 cái này để tương tác với khán giả.
+
+108
+00:11:20,530 --> 00:11:22,990
+Nó giúp cho chúng ta tăng phần gắn kết với khán giả.
+
+109
+00:11:25,150 --> 00:11:29,150
+Phần tương tác cực kỳ quan trọng
+
+110
+00:11:29,150 --> 00:11:32,090
+Chăm tab cộng đồng bên mình
+
+111
+00:11:32,090 --> 00:11:35,210
+Cực kỳ chú trọng về chăm tab cộng đồng
+
+112
+00:11:35,450 --> 00:11:42,790
+Và đây là một bí mật để là lên top 1 đấy. Tất cả những kênh top 1 của mình đều chăm tab cộng đồng rất kinh luôn.
+
+113
+00:11:42,790 --> 00:11:48,590
+Có các yếu tố của một con người
+
+114
+00:11:48,590 --> 00:11:50,910
+Khi mà xem video bao gồm
+
+115
+00:11:50,910 --> 00:11:53,650
+Cái mối quan tâm của cái chủ đề đấy
+
+116
+00:11:53,650 --> 00:11:57,050
+Tức là tư duy của chúng ta là chọn thị trường đỏ
+
+117
+00:11:57,050 --> 00:12:00,530
+Là nơi có nhiều view để làm là ok
+
+118
+00:12:00,530 --> 00:12:02,790
+Cái tính cạnh tranh này
+
+119
+00:12:02,790 --> 00:12:12,892
+Tức là nó giải thích tính cạnh tranh là nhiều video cạnh tranh với nhau để tranh giành thời gian xem của một người sử dụng nền tảng.
+
+120
+00:12:12,892 --> 00:12:15,772
+Ví dụ một người về đàn ông có rất nhiều sở thích.
+
+121
+00:12:16,612 --> 00:12:20,912
+Thích xem về gái xinh, thích xem về ô tô, thích xem về nhà đẹp.
+
+122
+00:12:20,912 --> 00:12:30,852
+Nếu bình thường sở thích đang là xem một cái nhà mà hôm đấy tự nhiên lại có trend về gái xinh, rất có thể lượng view sẽ bị tụt.
+
+123
+00:12:31,592 --> 00:12:41,172
+Mặc dù các kênh, các trong kênh của mình chỉ số này đều rất ok, nhưng vì chúng ta đã thua với một thằng đối thủ nào đấy trên thị trường kia mà chúng ta không biết.
+
+124
+00:12:41,172 --> 00:12:49,232
+Và tính thời vụ, tính thời vụ là nó liên quan đến thời gian và theo mùa.
+
+125
+00:12:52,032 --> 00:13:01,612
+Cái video về chữa lành ấy, nó có những video là 8 tiếng liền. Nó chỉ quay cái cảnh củi đốt trong lò.
+
+126
+00:13:03,552 --> 00:13:08,072
+Tiếng nổ lách tách, lách tách của những cái khúc gỗ.
+
+127
+00:13:08,072 --> 00:13:16,932
+Nhưng mà đến mùa hè thì ai xem những cái đấy nữa? Nóng, cảm giác nóng. Thích xem tuyết rơi, thích xem mưa, thích nghe tiếng lộp,
+
+128
+00:13:16,932 --> 00:13:25,792
+bộp, lộp, bộp, lộp, bộp. Thì video về bên kia của mình tự nhiên là nó hết view nhé. Nó tính thời vụ, nó tính theo mùa.
+
+129
+00:13:27,900 --> 00:13:40,040
+Hoặc những cái bệnh mà theo mùa không thế. Thì phải đến cái mùa đấy, đến mùa lạnh thì nó mới cảm cúm nhiều. Thì video về chữa cảm cúm mọi thứ nó lại quay trở lại. Nó có tính theo trend và theo thời vụ như vậy.
+
+130
+00:13:40,040 --> 00:13:43,200
+Nên khi mà chúng ta làm
+
+131
+00:13:43,200 --> 00:13:45,900
+Cuối cùng họ nói rằng là
+
+132
+00:13:45,900 --> 00:13:48,460
+Thay vì tập trung vào nền tảng
+
+133
+00:13:48,460 --> 00:13:52,380
+Thay vì tập trung vào các yếu tố về đề xuất
+
+134
+00:13:52,380 --> 00:13:55,320
+Bạn không cần phải trở thành một chuyên gia trong việc SEO
+
+135
+00:13:55,320 --> 00:13:59,440
+Bạn không cần phải trở thành một chuyên gia để về dữ liệu phân tích
+
+136
+00:13:59,440 --> 00:14:03,080
+Cái thứ duy nhất chúng ta cần tập trung là khán giả
+
+137
+00:14:05,000 --> 00:14:06,920
+Đây là điều quan trọng nhất
+
+138
+00:14:06,920 --> 00:14:19,520
+Nó cũng thể hiện cho việc là chúng ta làm Fair Use. Fair Use là cái trụ cột đầu tiên là chúng ta có biến đổi nhiều hay không so với tác phẩm gốc. Để làm gì? Để chúng ta phục vụ cho khán giả.
+
+139
+00:14:20,740 --> 00:14:34,080
+Cái thứ hai là chúng ta có chọn những cái nội dung đấy mà tránh những cái thằng to ra, tránh những cái thằng bản quyền to ra, tức là những cái thằng nó có công ty đằng sau, pháp lý đằng sau để hỗ trợ.
+
+140
+00:14:34,080 --> 00:14:38,900
+bao gồm các công ty về game show, truyền hình, thể thao, âm nhạc.
+
+141
+00:14:41,520 --> 00:14:46,500
+Thì tránh những cái đấy ra và tránh quyền sở hữu của các network ra. Nó cũng có.
+
+142
+00:14:48,400 --> 00:14:50,400
+Thì mình tập trung vào chọn những nội dung.
+
+143
+00:14:50,620 --> 00:14:52,760
+Một, footage liên quan đến việc chúng ta có thể mua được.
+
+144
+00:14:53,580 --> 00:14:56,120
+Cái thứ hai, chính những nhà sáng tạo ở trên YouTube đấy họ dùng.
+
+145
+00:14:56,420 --> 00:14:57,580
+Mình cũng có thể mua lại được.
+
+146
+00:14:58,439 --> 00:15:01,319
+Nhắn tin cho họ mua lại được cái quyền sử dụng, vẫn được bình thường.
+
+147
+00:15:02,319 --> 00:15:06,459
+Ở các nền tảng khác cũng thế. Nhắn tin xin họ về bản quyền, rất ok.
+
+148
+00:15:07,119 --> 00:15:14,219
+Ngày xưa bên mình làm Fortnite là lấy cái nội dung ở trên cái nền tảng Twitch.tv là cái nền tảng live stream lớn nhất thế giới.
+
+149
+00:15:14,839 --> 00:15:16,819
+Đem về tổng hợp những đoạn hay nhất up lên.
+
+150
+00:15:17,259 --> 00:15:27,299
+Và lúc đó là nhắn tin cho chủ bản quyền, xin là cho mình sử dụng lại, nhưng mình sẽ có thêm thuyết minh và những cái khác nữa. Họ đồng ý mà.
+
+151
+00:15:29,779 --> 00:15:40,179
+Rồi cái trụ cột thứ, thứ ba, đó là việc chúng ta sử dụng ngắn hay là dài, có rơi vào trọng tâm của cái video kia không?
+
+152
+00:15:40,179 --> 00:15:49,339
+Nếu video của họ 2 tiếng mà chỉ có 1 cái đoạn 1 phút đầu tiên hay nhất, không phải 1 phút đầu tiên là 1 phút trong video đấy hay nhất, cái nội dung đấy hay nhất,
+
+153
+00:15:49,339 --> 00:15:58,499
+có thể flash ra toàn bộ cái nội dung đấy chẳng hạn, mà mình lại dùng đúng cái đoạn đấy thì vẫn ăn đòn bình thường, chứ không phải 3 giây, 5 giây hay 10 giây để an toàn.
+
+154
+00:15:58,499 --> 00:16:02,319
+Trụ cột thứ 4
+
+155
+00:16:02,319 --> 00:16:05,939
+Đó là chúng ta có ảnh hưởng đến thị phần của người ta không?
+
+156
+00:16:06,799 --> 00:16:09,219
+Nếu ảnh hưởng đến miếng bánh của người ta, thì chắc chắn
+
+157
+00:16:09,219 --> 00:16:11,539
+Sớm hay muộn thôi, cũng ăn đòn
+
+158
+00:16:11,539 --> 00:16:12,639
+Đấy
+
+159
+00:16:12,639 --> 00:16:15,899
+Đấy là hợp tình hợp lý với Fair Use
+

@@ -1,0 +1,85 @@
+{
+  "sku": "ZOOM-02-Chien-luoc-kenh-san-xuat",
+  "title": "Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt",
+  "actual_topic": "Chiến lược 1 Gmail lập 3 kênh test, quy trình thiết lập kênh chuẩn SEO, tận dụng tài khoản Veo 3 / Gemini Ultra và cấu trúc câu lệnh tạo video chân thực",
+  "category_group": "chien_luoc",
+  "niche_primary": "Chiến Lược Tách Kênh & Sản Xuất Hàng Loạt",
+  "niche_id": "documentary-prompt-craft",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Chiến lược test kênh hiệu quả: 1 Gmail lập 3 kênh đăng nội dung, kênh nào nổ view và đủ điều kiện bật kiếm tiền thì tách quyền sở hữu sang một Gmail riêng và xóa 2 kênh không lên.",
+    "Thiết lập kênh bài bản trong YouTube Studio: tắt thẻ trang chủ khi kênh còn mới, cấu hình từ khóa kênh, xác minh số điện thoại bước 2 và luôn đăng video ở chế độ Không công khai trước khi hẹn giờ/công chiếu.",
+    "Case study kênh lịch sử mới lập tăng từ 5.000 sub lên 35.000 sub chỉ sau vài ngày nhờ tìm đúng key ngoại đang nổi rồi nhân bản về thị trường mục tiêu.",
+    "Tận dụng gói tài khoản Veo 3 Ultra (đi kèm Gemini Ultra) kết hợp mở 4–6 tab chatbot song song và dùng câu lệnh mô tả bối cảnh thước phim tài liệu chân thực để tránh lỗi phi vật lý của AI."
+  ],
+  "edit_sop": {
+    "primary": "Chiến lược tách kênh, lập kênh bám đối thủ và sản xuất hàng loạt kịch bản, video phim tài liệu",
+    "additional": [
+      "Tách kênh: lập nhiều kênh, kênh nào lên và đủ điều kiện bật kiếm tiền thì chuyển quyền chủ sở hữu sang Gmail khác (sau 7 ngày Gmail kia đá chủ cũ ra), kênh không lên thì xóa.",
+      "Lập kênh: thuê số điện thoại qua VOTP (chọn quốc gia Việt Nam, số chỉ dùng cho YouTube); đăng video chế độ không công khai cho hệ thống quét rồi hẹn giờ công chiếu vào giờ vàng, hẹn ít nhất sau 2 tiếng.",
+      "Chọn kênh đối thủ nhỏ mới lên, copy tiêu đề và link khoảng 20 video vào bảng Google Trang tính (copy bảng về, không sửa trên bảng gốc), lấy nội dung đối thủ bằng tiện ích YouTube Summary rồi nhờ chatbot viết lại sang tiếng Việt.",
+      "Chạy nhiều tab Gemini để viết kịch bản; chọn thời lượng, chatbot sẽ mở rộng hoặc rút gọn kịch bản; bị đuối thì cho nghỉ và đổi tài khoản.",
+      "Prompt hình ảnh: phim tài liệu quay tay, ống kính 50mm, ánh sáng hơi mờ, nhờ ChatGPT biến tấu theo chủ đề; không lời thoại, không phụ đề, không logo, không vật thể hiện đại."
+    ]
+  },
+  "avoid_flags": [
+    "Không bấm công khai ngay khi vừa tải lên vì thuật toán chưa quét xong, video mất đà đề xuất.",
+    "Không làm theo sở thích bản thân mà phải làm theo thị trường; dạng phi vật lý hay cổ tích dùng nhân vật nước ngoài cho khán giả Việt khó kiếm tiền.",
+    "Không copy y xì câu lệnh, phải biến tấu theo chủ đề của mình và không chia sẻ ra ngoài.",
+    "Kênh đang chạy ngon thì đừng đổi địa điểm của nó nữa."
+  ],
+  "tools_mentioned": [
+    "Gmail",
+    "YouTube",
+    "ChatGPT",
+    "Gemini",
+    "Claude",
+    "CapCut"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Chiến lược 1 Gmail lập 3 kênh và cách tách kênh khi bật kiếm tiền"
+    },
+    {
+      "time": "03:26",
+      "seconds": 206,
+      "label": "Phân tích thực trạng gần 300 người dùng tool và tư duy tìm key lịch sử"
+    },
+    {
+      "time": "18:46",
+      "seconds": 1126,
+      "label": "Thiết lập thông số kênh trong YouTube Studio và xác minh số điện thoại"
+    },
+    {
+      "time": "39:13",
+      "seconds": 2353,
+      "label": "Cách dùng Gmail riêng để lướt tìm key Hàn/Mỹ và case study kênh đạt 35.000 sub"
+    },
+    {
+      "time": "53:59",
+      "seconds": 3239,
+      "label": "Tận dụng tài khoản Veo 3 / Gemini Ultra và chạy đa tab viết kịch bản"
+    },
+    {
+      "time": "71:35",
+      "seconds": 4295,
+      "label": "Cấu trúc câu lệnh tạo thước phim chân thực và dùng ChatGPT biến tấu bối cảnh"
+    }
+  ],
+  "analysis_method": "expert_grounded_audit",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/ZOOM-02-Chien-luoc-kenh-san-xuat/transcript.txt",
+  "sop_steps": [
+    "Tách kênh: lập nhiều kênh, kênh nào lên và đủ điều kiện bật kiếm tiền thì chuyển quyền chủ sở hữu sang Gmail khác (sau 7 ngày Gmail kia đá chủ cũ ra), kênh không lên thì xóa.",
+    "Lập kênh: thuê số điện thoại qua VOTP (chọn quốc gia Việt Nam, số chỉ dùng cho YouTube); đăng video chế độ không công khai cho hệ thống quét rồi hẹn giờ công chiếu vào giờ vàng, hẹn ít nhất sau 2 tiếng.",
+    "Chọn kênh đối thủ nhỏ mới lên, copy tiêu đề và link khoảng 20 video vào bảng Google Trang tính (copy bảng về, không sửa trên bảng gốc), lấy nội dung đối thủ bằng tiện ích YouTube Summary rồi nhờ chatbot viết lại sang tiếng Việt.",
+    "Chạy nhiều tab Gemini để viết kịch bản; chọn thời lượng, chatbot sẽ mở rộng hoặc rút gọn kịch bản; bị đuối thì cho nghỉ và đổi tài khoản.",
+    "Prompt hình ảnh: phim tài liệu quay tay, ống kính 50mm, ánh sáng hơi mờ, nhờ ChatGPT biến tấu theo chủ đề; không lời thoại, không phụ đề, không logo, không vật thể hiện đại."
+  ]
+}

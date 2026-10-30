@@ -1,0 +1,75 @@
+{
+  "sku": "VIDEO-34c92b",
+  "title": "Update ngách mới và show thực tế thêm kênh nhân bản thị trường",
+  "actual_topic": "Update ngách mới và show thực tế thêm kênh nhân bản thị trường",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Triết Lý & Phật Pháp",
+  "niche_id": "faceless-general",
+  "target_market": "Nhật Bản / Việt Nam",
+  "market_code": "JP,VN",
+  "key_takeaways": [
+    "Tác giả nhắc lại tư duy nhân bản thị trường qua một kênh thị trường Nhật đem từ Việt sang Nhật, video bắt đầu hai ngày trước đã hơn 200k view.",
+    "Kênh sức khỏe vốn được nhân bản từ thị trường US sang Việt, nay tiếp tục nhân bản sang Nhật; sức khỏe là nhu cầu thiết yếu, và Nhật, Hàn có tỷ lệ dân số già cao nên nhu cầu càng cao.",
+    "Kênh của người khác đang làm rồi thì không được nhân bản, nên tìm các kênh đối thủ khác, search xem đã làm sang Nhật hoặc Hàn chưa, chưa thì lấy kịch bản đem nhân bản.",
+    "Một năm trước chỉ thay phụ đề ngôn ngữ, còn bây giờ YouTube siết chặt, dễ bị quét sử dụng lại nội dung, nên phải xào nấu lại kịch bản, tải video về edit lại hoàn toàn khác rồi chạy phụ đề tiếng Nhật.",
+    "Ngách triết lý cổ nhân view Việt đang trend, các kênh có video hai tuần, ba ngày, năm ngày trước view rất cao; nên bám theo từ khóa của video cao view nhất để đặt tiêu đề và hạn chế bị quét AI bằng cách ghép video tự nhiên thay vì hình AI 2D 3D."
+  ],
+  "edit_sop": {
+    "primary": "Tư duy nhân bản thị trường (Việt sang Nhật/Hàn): lấy kịch bản đối thủ, xào nấu, edit lại video và phụ đề",
+    "additional": [
+      "Tìm kênh đối thủ chưa nhân bản sang Nhật hoặc Hàn, search xem đã có ai làm chưa, chưa thì lấy kịch bản đem nhân bản",
+      "Xào nấu lại kịch bản, chuyển sang tiếng Nhật",
+      "Tải video ghép lại, edit video hoàn toàn khác rồi cho chạy phụ đề tiếng Nhật",
+      "Đặt tiêu đề bám theo các từ khóa của những video cao view nhất",
+      "Với ngách triết lý cổ nhân: edit đơn giản bằng cách ghép video tự nhiên vào với nhau"
+    ]
+  },
+  "avoid_flags": [
+    "Không giữ nguyên video chỉ thay phụ đề như cách làm một năm trước, vì YouTube đang siết, dễ bị quét sử dụng lại nội dung",
+    "Không edit bằng AI hay hình 2D 3D, nên hạn chế bị quét AI",
+    "Không nhân bản kênh của người khác đang làm rồi"
+  ],
+  "tools_mentioned": [],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "01:43",
+      "seconds": 103,
+      "label": "Lưu ý không bê nguyên kênh của học viên khác về làm"
+    },
+    {
+      "time": "03:16",
+      "seconds": 196,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "04:32",
+      "seconds": 272,
+      "label": "Phân tích các video nổ view cao nhất của kênh đối thủ"
+    },
+    {
+      "time": "06:13",
+      "seconds": 373,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-34c92b/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Tìm kênh đối thủ chưa nhân bản sang Nhật hoặc Hàn, search xem đã có ai làm chưa, chưa thì lấy kịch bản đem nhân bản",
+    "Xào nấu lại kịch bản, chuyển sang tiếng Nhật",
+    "Tải video ghép lại, edit video hoàn toàn khác rồi cho chạy phụ đề tiếng Nhật",
+    "Đặt tiêu đề bám theo các từ khóa của những video cao view nhất",
+    "Với ngách triết lý cổ nhân: edit đơn giản bằng cách ghép video tự nhiên vào với nhau"
+  ]
+}

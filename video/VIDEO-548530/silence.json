@@ -1,0 +1,38 @@
+{
+  "noise_db": -35,
+  "min_duration": 2.5,
+  "silence_regions": [
+    {
+      "start": 31.06,
+      "duration": 2.58,
+      "end": 33.64
+    },
+    {
+      "start": 279.66,
+      "duration": 3.6,
+      "end": 283.26
+    },
+    {
+      "start": 292.11,
+      "duration": 6.28,
+      "end": 298.39
+    },
+    {
+      "start": 386.17,
+      "duration": 2.56,
+      "end": 388.72
+    },
+    {
+      "start": 390.35,
+      "duration": 5.64,
+      "end": 395.99
+    },
+    {
+      "start": 398.19,
+      "duration": 10.69,
+      "end": 408.88
+    }
+  ],
+  "silence_count": 6,
+  "silence_total_sec": 31.35
+}

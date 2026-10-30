@@ -1,0 +1,110 @@
+{
+  "sku": "VIDEO-36880b",
+  "title": "Cách Tạo 1 Kênh Youtube Chuẩn Chủ Đề Và Danh Mục",
+  "actual_topic": "Quy trình tạo kênh YouTube chuẩn chủ đề và 15 danh mục từ Gmail trắng: Đúc Master Prompt 7 phần trên ChatGPT phân tích ảnh chụp kênh đối thủ (@StorylineEnglishOfficial), lọc 5 tên kênh & 5 ID (@wisdomhistoryenglish), cài đặt danh mục Giáo dục (Education), Quốc gia Hoa Kỳ, phân quyền & xác minh tính năng trong YouTube Studio, thiết kế Avatar 1:1 & Banner 16:9 bằng Google Flow (Nano Banana 2).",
+  "category_group": "chuyen_gia",
+  "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
+  "niche_id": "channel_setup",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "tools_mentioned": [
+    "YouTube Studio",
+    "ChatGPT",
+    "Google Flow",
+    "Grok",
+    "Gmail"
+  ],
+  "channels_mentioned": [
+    "@StorylineEnglishOfficial",
+    "@wisdomhistoryenglish"
+  ],
+  "course_docs": [
+    {
+      "title": "Bộ Tài Liệu Thực Chiến & Master Prompt 7 Phần Tạo Kênh YouTube Chuẩn Chủ Đề (Bài 41)",
+      "file": "assets/docs-dgmd/VIDEO-36880b/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-36880b/master_prompt.md",
+      "link": "https://docs.google.com/document/d/1mPs8nsyc0HhJCicMRKe0JQMH4QA7VkdUC_bA-sRtOhw/edit"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân biệt chiến lược tạo kênh: Video dài tạo nhận diện thương hiệu ngay từ đầu vs Kênh Shorts chuyển đổi"
+    },
+    {
+      "time": "00:40",
+      "seconds": 40,
+      "label": "Chuẩn bị Gmail trắng hoàn toàn mới (có nút Tạo kênh) và bảo mật bằng SĐT/Gmail khôi phục"
+    },
+    {
+      "time": "01:31",
+      "seconds": 91,
+      "label": "Đúc Master Prompt 7 phần trên ChatGPT và gửi lại để AI ghi nhớ quy trình phân tích kênh"
+    },
+    {
+      "time": "02:55",
+      "seconds": 175,
+      "label": "Bấm Alt + Shift + S chụp trang chủ kênh mẫu @StorylineEnglishOfficial (103N sub) dán vào ChatGPT"
+    },
+    {
+      "time": "03:50",
+      "seconds": 230,
+      "label": "Lọc 5 tên kênh & 5 ID kênh đề xuất: Kiểm tra trùng lặp handle và chốt tạo kênh @wisdomhistoryenglish"
+    },
+    {
+      "time": "05:32",
+      "seconds": 332,
+      "label": "Cài đặt YouTube Studio: Chọn Danh mục chính Giáo dục (Education) trong 15 danh mục và Quốc gia Hoa Kỳ"
+    },
+    {
+      "time": "06:54",
+      "seconds": 414,
+      "label": "Mở khóa 3 bậc tính năng: Xác minh số điện thoại (video >15 phút & thumbnail), xác minh khuôn mặt QR & Phân quyền"
+    },
+    {
+      "time": "08:35",
+      "seconds": 515,
+      "label": "Tạo Avatar 1:1 (đồng hồ cổ vàng) và Banner 16:9 bằng Google Flow (Nano Banana 2) từ Prompt tiếng Anh"
+    },
+    {
+      "time": "09:45",
+      "seconds": 585,
+      "label": "Vào mục Tùy chỉnh tải lên Avatar, Banner, dán mô tả kênh tiếng Anh chuẩn SEO và bấm Xuất bản"
+    }
+  ],
+  "key_takeaways": [
+    "Chiến lược định vị kênh theo định dạng: Làm video dài (Long-form) bắt buộc phải tạo bộ nhận diện thương hiệu (Tên kênh, ID, Avatar, Banner, Mô tả) chuẩn chủ đề ngay từ đầu; ngược lại làm kênh Shorts để kéo sub chuyển sang dài thì chưa cần tạo nhận diện sớm.",
+    "Chuẩn bị tài nguyên Gmail sạch & Bảo mật 2 lớp: Sử dụng Gmail trắng hoàn toàn mới (khi bấm vào góc phải phải hiện chữ 'Tạo kênh') và bắt buộc thêm ngay Số điện thoại khôi phục cùng Gmail khôi phục để bảo vệ tài sản kênh.",
+    "Quy trình 'Master Prompt 2 bước' trên ChatGPT: Dùng câu lệnh gốc yêu cầu ChatGPT đóng vai chuyên gia 10 năm đúc ra khung Master Prompt 7 phần, sau đó copy chính khung Master Prompt đó gửi ngược lại cho ChatGPT ghi nhớ trước khi nạp ảnh.",
+    "Bóc tách kênh đối thủ bằng ảnh chụp màn hình (Alt + Shift + S): Chỉ cần chụp màn hình kênh mẫu (@StorylineEnglishOfficial — 103N sub, 60 video), ChatGPT sẽ tự động mổ xẻ tệp khán giả (trình độ A2-B1-B2, 18-45 tuổi), chấm điểm cạnh tranh (6/10) và xuất 5 tên kênh + 5 ID kênh (@wisdomhistoryenglish).",
+    "Cài đặt Danh mục & Quốc gia chuẩn thuật toán trong YouTube Studio: Vào Cài đặt -> Chế độ mặc định cho video tải lên -> Cài đặt nâng cao để chọn đúng 1 trong 15 danh mục (ví dụ Giáo dục / Education giúp CPM cao, đúng người xem), chọn Quốc gia cư trú Hoa Kỳ tại mục Kênh, và hoàn tất xác minh SĐT (Bậc 2 - mở video >15 phút & Thumbnail) cùng xác minh khuôn mặt qua QR (Bậc 3).",
+    "Thiết kế bộ nhận diện thương hiệu bằng Google Flow (Nano Banana 2): Sử dụng trực tiếp 2 câu lệnh Prompt tiếng Anh do ChatGPT sinh ra để tạo Avatar tỷ lệ 1:1 (biểu tượng chiếc đồng hồ quả quýt vàng cổ điển) và Banner tỷ lệ 16:9 trên Google Flow (hoặc ChatGPT/Grok nếu có mặt người nổi tiếng), sau đó gắn kèm đoạn mô tả kênh tiếng Anh chuẩn SEO và bấm Xuất bản."
+  ],
+  "edit_sop": {
+    "primary": "SOP 5 Bước Tạo Kênh YouTube Chuẩn Chủ Đề, Danh Mục & Nhận Diện Thương Hiệu Bằng ChatGPT + Google Flow",
+    "additional": [
+      "Đăng nhập Gmail trắng chưa có kênh YouTube, thiết lập đầy đủ Số điện thoại khôi phục và Gmail khôi phục để khóa bảo mật tài khoản.",
+      "Dán câu lệnh gốc vào ChatGPT để sinh khung Master Prompt 7 phần, sau đó sao chép và gửi ngược lại khung Master Prompt đó để ChatGPT ghi nhớ.",
+      "Mở kênh đối thủ mẫu trong ngách (@StorylineEnglishOfficial), bấm Alt + Shift + S chụp màn hình trang chủ dán vào ChatGPT để lấy 5 tên kênh, 5 ID kênh không trùng lặp (@wisdomhistoryenglish) và xác định danh mục chuẩn.",
+      "Truy cập YouTube Studio -> Cài đặt: Chọn Danh mục chính (Giáo dục / Education) trong 15 danh mục ở phần Chế độ mặc định cho video tải lên, chọn Quốc gia Hoa Kỳ ở phần Kênh, xác minh Số điện thoại (Bậc 2) và Quét mã QR khuôn mặt (Bậc 3).",
+      "Đưa 2 câu lệnh Prompt tiếng Anh vào Google Flow (model Nano Banana 2) để render Avatar kích cỡ 1:1 và Banner kích cỡ 16:9, vào mục Tùy chỉnh tải ảnh lên, dán đoạn Mô tả kênh chuẩn SEO và bấm Xuất bản."
+    ]
+  },
+  "sop_steps": [
+    "Đăng nhập Gmail trắng chưa có kênh YouTube, thiết lập đầy đủ Số điện thoại khôi phục và Gmail khôi phục để khóa bảo mật tài khoản.",
+    "Dán câu lệnh gốc vào ChatGPT để sinh khung Master Prompt 7 phần, sau đó sao chép và gửi ngược lại khung Master Prompt đó để ChatGPT ghi nhớ.",
+    "Mở kênh đối thủ mẫu trong ngách (@StorylineEnglishOfficial), bấm Alt + Shift + S chụp màn hình trang chủ dán vào ChatGPT để lấy 5 tên kênh, 5 ID kênh không trùng lặp (@wisdomhistoryenglish) và xác định danh mục chuẩn.",
+    "Truy cập YouTube Studio -> Cài đặt: Chọn Danh mục chính (Giáo dục / Education) trong 15 danh mục ở phần Chế độ mặc định cho video tải lên, chọn Quốc gia Hoa Kỳ ở phần Kênh, xác minh Số điện thoại (Bậc 2) và Quét mã QR khuôn mặt (Bậc 3).",
+    "Đưa 2 câu lệnh Prompt tiếng Anh vào Google Flow (model Nano Banana 2) để render Avatar kích cỡ 1:1 và Banner kích cỡ 16:9, vào mục Tùy chỉnh tải ảnh lên, dán đoạn Mô tả kênh chuẩn SEO và bấm Xuất bản."
+  ],
+  "avoid_flags": [
+    "Không sử dụng Gmail mua ngoài chợ mà quên đổi Số điện thoại khôi phục và Gmail khôi phục của chính mình dẫn đến mất kênh khi bật kiếm tiền.",
+    "Không chọn các ID kênh (@handle) đã bị trùng lặp khiến YouTube tự động gắn thêm đuôi số ngẫu nhiên thiếu chuyên nghiệp (như @historyenglishhub-s5u).",
+    "Không bỏ trống hoặc chọn sai Danh mục kênh trong 15 danh mục chuẩn của YouTube Studio trước khi đăng tải các video đầu tiên.",
+    "Không phân quyền Quản lý toàn bộ cho nhân sự hoặc đối tác bên ngoài mà chỉ được cấp quyền Chỉnh sửa hoặc Chỉnh sửa có giới hạn (không xem được doanh thu)."
+  ],
+  "source_transcript": "video/VIDEO-36880b/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true
+}

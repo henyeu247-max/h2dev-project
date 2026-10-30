@@ -1,0 +1,70 @@
+{
+  "key_takeaways": [
+    "Trong hơn 1 phút đầu có lời thoại, tác giả nhấn mạnh tư duy edit của key (ngách) người giàu này cực kỳ đơn giản nhưng phải làm bài bản, chỉn chu như kênh đối thủ thì mới bật kiếm tiền và cắn view bền vững.",
+    "Không có key (ngách) nào là nát hoàn toàn: người làm sơ sài, ẩu tả thì đăng lên không bao giờ có view, còn người đầu tư chất lượng đồng đều và kiên trì thì vẫn thắng lớn.",
+    "Tránh tư duy đứng núi này trông núi nọ, làm vài ngày không thấy view đã vội bỏ cuộc chuyển sang ngách khác.",
+    "Theo khung hình thực hành trực quan từ 01:15 đến 58:00 (không có lời thoại): tác giả mở Photopea thiết kế khung thumbnail và sau đó đưa nguyên liệu vào CapCut để dựng hoàn chỉnh."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 3 bước thực chiến: Tư duy làm chỉn chu cho ngách/key người giàu và thực hành trực quan 58 phút thiết kế thumbnail Photopea + dựng CapCut (theo khung hình)",
+    "additional": [
+      "Bước 1 (Theo lời thoại 00:00–01:15): Nghiên cứu kỹ kênh đối thủ trong key người giàu để nắm chuẩn chất lượng hình ảnh và nhịp dựng trước khi bắt tay vào làm.",
+      "Bước 2 (Theo khung hình 01:15–15:00): Thực hành thiết kế bố cục ảnh và cắt ghép lớp nhân vật trực quan trên giao diện phần mềm.",
+      "Bước 3 (Theo khung hình 15:00–58:00): Đưa các lớp hình ảnh và âm thanh vào timeline, căn chỉnh hiệu ứng chuyển cảnh và hoàn thiện video mẫu."
+    ]
+  },
+  "avoid_flags": [
+    "Tránh làm video sơ sài, thiếu trau chuốt khiến kênh không thể bật kiếm tiền và không lên được đề xuất.",
+    "Tránh tâm lý thiếu kiên trì, mới làm được vài ngày đã nản và bỏ dở ngách đang theo đuổi."
+  ],
+  "verified_expert_summary": true,
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu bài hướng dẫn edit và tạo thumbnail cho key người giàu"
+    },
+    {
+      "time": "00:13",
+      "seconds": 13,
+      "label": "Phân tích độ đơn giản và hiệu quả của cách edit kênh mẫu"
+    },
+    {
+      "time": "00:27",
+      "seconds": 27,
+      "label": "Yêu cầu làm chỉn chu để bật kiếm tiền và lên đề xuất"
+    },
+    {
+      "time": "00:49",
+      "seconds": 49,
+      "label": "So sánh người làm tâm huyết với người làm sơ sài trong cùng một key"
+    },
+    {
+      "time": "01:04",
+      "seconds": 64,
+      "label": "Lời khuyên kiên trì theo đuổi ngách trước khi vào phần thực hành màn hình"
+    }
+  ],
+  "tools_mentioned": [
+    "Photoshop",
+    "Photopea",
+    "CapCut"
+  ],
+  "sop_steps": [
+    "Mở Photopea, thiết lập canvas 16:9 và vẽ nền cảnh bằng Brush theo từng layer riêng.",
+    "Dựng nhân vật người que trên các layer tách biệt, dùng Free Transform chỉnh tỉ lệ, thêm Shape và Layer Style.",
+    "Import ảnh AI vào Photopea, ghép với nền vẽ tay bằng Clipping Mask và cân chỉnh màu giữa các layer.",
+    "Qua CapCut Desktop, import ảnh và file giọng đọc, xếp timeline theo phân cảnh, tạo Zoom/Pan và chuyển cảnh cho từng ảnh.",
+    "Thêm phụ đề tự động, chèn nhạc nền và hiệu ứng âm thanh, rà lại đồng bộ hình tiếng rồi xuất video."
+  ],
+  "sku": "VIDEO-ed1be9",
+  "title": "Hướng dẫn edit key _Chill Dude.._chi tiết từ A-Z",
+  "actual_topic": "Tư duy làm chỉn chu cho ngách/key người giàu và thực hành trực quan 58 phút thiết kế thumbnail Photopea + dựng CapCut (theo khung hình)",
+  "channels_mentioned": [],
+  "visual_audio_checked": true,
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "source_transcript": "video/VIDEO-ed1be9/transcript.txt",
+  "market_code": "GLOBAL",
+  "target_market": "Quốc tế (Global)",
+  "niche_primary": "Hoạt Hình 2D Người Que (Chill Dude)"
+}

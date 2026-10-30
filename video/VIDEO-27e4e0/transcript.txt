@@ -1,0 +1,69 @@
+Nhất quán nhân vật luôn, chứ không cần phải phô diễn làm gì, tự động hết.
+Xin chào anh chị em học viên, hôm nay tôi sẽ dạy anh chị em học viên code ra một con tool để tạo ra những hình ảnh để làm story hoặc là làm video để tự động công việc của mình trên ngay Google Flow này.
+Tất nhiên là có rất nhiều bài khác nữa và chúng ta sẽ đi vào luôn trang labs.google này để chúng ta tạo ra tool.
+Ở giao diện labs.google thì anh em nhấn cho tôi tạo dự án mới này.
+Sau khi nhấn tạo dự án mới thì anh em nhấn cho tôi vào công cụ nhé. Dưới phần tất cả nhân vật cảnh công cụ thì anh
+em nhấn vào cho tôi công cụ. Khi mà anh em vào phần công cụ này thì chúng ta sẽ nhấn vào tạo công cụ này, tạo riêng nhé.
+Sau khi đã vào được cái giao diện này thì chúng ta sẽ cần phải có câu lệnh Master Prompt để tạo ra một con tool để tạo ra cái tool để tự động tạo ảnh trên Nano Banana.
+Thì cái Prompt này thì tôi sẽ để ngay ở dưới cái video này để cho anh chị em có thể vào lấy luôn.
+Anh chị em copy tất cả những cái thông tin ở trên cái tài liệu này
+Anh chị copy đầy đủ nhé
+Và anh chị cũng có thể thay
+Anh chị có thể thay tên của anh chị vào cũng được nhé
+Rồi
+Bây giờ là anh em sang Google Flow
+anh em dán vào và nhấn là cho nó chạy thôi
+để cho nó tự động tạo ra tool cho mình nhé
+các dòng code các thứ là nó sẽ tự động hết
+bây giờ AI nó làm chuyên nghiệp rồi
+thì chúng ta chỉ vào để làm video thôi
+con tool này sẽ làm nhất quán nhân vật nhé anh em nhé
+Chúng ta có thể xem được mã code phía bên này. Phía bên này chúng ta có thể xem được mã code.
+Đó, còn tool bây giờ nó đang tạo ra. Thì đoạn này mình sẽ tua nhanh đi. Đoạn này mình sẽ tua nhanh đi để cho anh em biết là chúng ta sẽ tạo ra một tool nhanh như thế nào nhé. Câu lệnh thì tôi để ở dưới.
+Còn cái chi tiết để viết ra câu lệnh này thì trong cái bài tư duy để viết ra Master Prompt thì tôi đã có video rồi.
+Cái này code thì nó chỉ mất tầm 5 đến 10 phút rồi. Nó rất là nhanh.
+Thì đoạn này tôi sẽ tua nhé. Sau khi đợi một lúc thì tool nó đã tạo ra dựa trên cái câu lệnh nó đã có sẵn trong tài liệu này nhé.
+Khi anh em bắt vào thì tất cả các con giao diện nó không giống nhau nhé.
+Giao diện nó không giống nhau nhưng mà chức năng của nó sẽ giống nhau.
+Thì bây giờ chúng ta sẽ sử dụng một hình ảnh tham chiếu.
+Anh em nhấn tải cái hình ảnh tham chiếu lên cho tôi.
+Tôi có một hình ảnh người que (Stickman).
+Và tôi sẽ tải lên, tôi sẽ sử dụng hình ảnh này để tạo cho tất cả các video của tôi.
+Tôi nhấn xác nhận nha.
+Đó. Và anh em nhớ cho tôi là anh em nhấn là nhân vật.
+Chọn vào nhé.
+Nó sẽ có một cái nút tích để xác nhận là anh em có sử dụng nhân vật này làm nhân vật tham chiếu không.
+Và bây giờ là sang ChatGPT để chúng ta viết 10 Prompt.
+100 Prompt, 1000 Prompt cũng được tùy anh em.
+Hãy tạo cho tôi 20 Prompt để sử dụng hình
+ảnh này tạo ra hình ảnh trên Google Flow.
+Sáng tạo 20 Prompt thay đổi cuộc sống
+Hàng ngày của nhân vật này.
+Thay đổi các góc quay cho từng Prompt. Sáng tạo các Prompt chi tiết đầy đủ.
+các Prompt liền mạch, không cần đánh dấu các Prompt.
+Tôi chỉ viết ra Prompt đơn giản thôi, không cần phải viết ra Master Prompt.
+Đây là đang hướng dẫn.
+Ok, sau khi chúng ta đã có 10 Prompt, về Stickman này nhé, à 20 Prompt chứ, về Stickman này, thì anh em nhớ cho tôi
+là anh em nhấn sao chép này, sao chép này, anh em có thể cho 200 Prompt cũng được, nó sẽ auto làm cho anh em.
+Và bây giờ là gì ạ? Anh em dán vào đây. Dán vào anh em. Dán vào anh em nhớ cho tôi là nhấn cập
+nhật danh sách này. Đấy, nó sẽ đánh dấu cho anh em là 20 Prompt. Và gì ạ? Anh em có thể chạy 1 ảnh, 2
+ảnh trên 1 Prompt. Chạy song song là 5 cái Prompt một lúc. Hoặc chạy một lúc là 8 Prompt cũng được. Tùy anh em.
+Và cái tỷ lệ khung hình anh em muốn làm dạng gì, video dài, video ngắn đều được.
+Ok, và chúng ta chỉ cần một cái bước nữa là nhấn bắt đầu chạy.
+Bây giờ nó sẽ tự động chạy cho anh em, tạo ra hình ảnh cho anh em.
+Vấn đề ở đây là vấn đề chúng ta sẽ tự động hóa để làm ra những hình ảnh dạng
+story, người que làm chủ đề quân sự, làm chủ đề cao bồi, làm tất cả các chủ đề liên quan.
+đến AI, tự động hết nhé. Nó chạy xong cái này thì nó sẽ tự động chạy khác cho các bạn.
+Không cần phải suy nghĩ quá nhiều. Tôi chỉ để dạy cho anh em biết là anh em sẽ tự động làm tự động hóa, ngay cả khi anh em không cần biết sử dụng code tool.
+Hãy đặt ra một Master Prompt để nó sẽ tạo sẵn cho anh em.
+anh em nhìn nhớ nhất quán nhân vật luôn chứ không cần phải phô diễn làm gì tự động hết
+auto chúng ta có thể tự động tạo ra mà kể cả tôi dạy anh em cũng có thể tự động tạo ra
+Trong phần sau tôi sẽ hướng dẫn tạo tool để tạo video.
+Ok, chào anh chị em.
+Chắc là tới đây thôi cho anh em nhìn thấy là nó tự động như thế nào rồi thì tôi sẽ có
+rất nhiều video thực chiến hơn để dành cho anh em làm ra những cái tự động hóa như thế nào.
+Ok, chào tất cả anh chị em. Nếu mà anh em muốn dùng cái tài liệu thì ở ngay bên dưới tôi để luôn ở trong cái phần video này.
+Cứ vào lấy mà tạo thay đổi tên của anh em đi được. Đại Gia Mang Dép thì để là Đại Gia Mang Dép cũng được. Anh em muốn để tên của mình cũng được. Không sao cả.
+Đấy nha
+Tự động tạo ra tool nha
+Nó sẽ tự động đánh dấu số thứ tự cho anh em luôn nha

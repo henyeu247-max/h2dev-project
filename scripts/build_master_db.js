@@ -6,6 +6,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const _origEmitWarningBmd = process.emitWarning;
 process.emitWarning = function (w, ...rest) {
   if (String((w && w.message) || w).includes('SQLite is an experimental')) return;
@@ -63,6 +64,7 @@ db.exec(`
   DROP TABLE IF EXISTS documents;
   DROP TABLE IF EXISTS competitor_top_videos;
   DROP TABLE IF EXISTS competitor_channels;
+  DROP TABLE IF EXISTS lesson_transcripts;
   DROP TABLE IF EXISTS lesson_timestamps;
   DROP TABLE IF EXISTS lesson_niches;
   DROP TABLE IF EXISTS sub_niches;
@@ -154,6 +156,17 @@ CREATE TABLE lesson_timestamps (
     seconds INTEGER NOT NULL,
     time_label TEXT NOT NULL,
     title TEXT NOT NULL,
+    FOREIGN KEY (sku) REFERENCES lessons (sku) ON DELETE CASCADE
+) STRICT;
+
+-- 5b. Lesson Transcripts Table (333 Gold Standard Subtitles)
+CREATE TABLE lesson_transcripts (
+    sku TEXT PRIMARY KEY,
+    total_segments INTEGER NOT NULL DEFAULT 0,
+    word_count INTEGER NOT NULL DEFAULT 0,
+    silent_video INTEGER NOT NULL DEFAULT 0,
+    sha256_hash TEXT NOT NULL,
+    segments_json TEXT NOT NULL,
     FOREIGN KEY (sku) REFERENCES lessons (sku) ON DELETE CASCADE
 ) STRICT;
 
@@ -503,9 +516,15 @@ const insertTimestamp = db.prepare(`
   VALUES (?, ?, ?, ?)
 `);
 
+const insertTranscript = db.prepare(`
+  INSERT INTO lesson_transcripts (sku, total_segments, word_count, silent_video, sha256_hash, segments_json)
+  VALUES (?, ?, ?, ?, ?, ?)
+`);
+
 db.exec('BEGIN TRANSACTION;');
 let lessonCount = 0;
 let timestampCount = 0;
+let transcriptCount = 0;
 let lessonNicheLinksCount = 0;
 const lessonTitleBySku = new Map();
 const lessonNicheBySku = new Map();
@@ -517,8 +536,10 @@ for (const v of allCatalogFull) {
   const tab = tabsBySku.get(sku) || {};
 
   // Niche lookup: primary niche code
-  const linkedNicheCodes = skuToNicheCodes.get(sku) || ['H30'];
-  const primaryNicheCode = linkedNicheCodes[0] || 'H30';
+  const rawLinkedCodes = skuToNicheCodes.get(sku) || [];
+  const preferredPrimary = v.nicheCode || tab.nicheCode || rawLinkedCodes[0] || 'H30';
+  const linkedNicheCodes = Array.from(new Set([preferredPrimary, ...rawLinkedCodes]));
+  const primaryNicheCode = preferredPrimary;
 
   const nicheName = v.niche_primary || insight.niche_primary || 'Everyday History EN';
   const resolvedContentNiche = v.contentNiche || v.niche || nicheName;
@@ -599,10 +620,27 @@ for (const v of allCatalogFull) {
     insertTimestamp.run(sku, ts.seconds || 0, ts.time || '00:00', ts.label || ts.title || '');
     timestampCount++;
   }
+
+  // Ingest canonical subtitle transcript from video/<SKU>/transcript.json
+  const trFile = path.join(ROOT, 'video', sku, 'transcript.json');
+  if (fs.existsSync(trFile)) {
+    try {
+      const trRaw = fs.readFileSync(trFile, 'utf8').replace(/\r\n/g, '\n');
+      const trHash = crypto.createHash('sha256').update(trRaw, 'utf8').digest('hex');
+      const trObj = JSON.parse(trRaw);
+      const segs = Array.isArray(trObj) ? trObj : (Array.isArray(trObj.segments) ? trObj.segments : []);
+      const totalSegs = Number(trObj.total_segments) || segs.length;
+      const joinedWords = segs.map(s => (s && s.text) || '').join(' ').trim();
+      const wordCnt = Number(trObj.word_count) || (joinedWords ? joinedWords.split(/\s+/).length : 0);
+      const silentVid = trObj.silent_video ? 1 : 0;
+      insertTranscript.run(sku, totalSegs, wordCnt, silentVid, trHash, JSON.stringify(segs));
+      transcriptCount++;
+    } catch (_) {}
+  }
 }
 
 db.exec('COMMIT;');
-console.log(`Ingested ${lessonCount} Lessons, ${lessonNicheLinksCount} Lesson-Niche Links, and ${timestampCount} Timestamps.`);
+console.log(`Ingested ${lessonCount} Lessons, ${lessonNicheLinksCount} Lesson-Niche Links, ${timestampCount} Timestamps, and ${transcriptCount} Transcripts.`);
 
 console.log('=== [4/8] INGESTING COMPETITOR CHANNELS & DOSSIERS (1,086 Channels) ===');
 const kenhMau = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'kenh-mau.json'), 'utf8'));
@@ -1054,6 +1092,7 @@ const stats = {
   lessons: db.prepare('SELECT COUNT(*) AS c FROM lessons').get().c,
   lessonNiches: db.prepare('SELECT COUNT(*) AS c FROM lesson_niches').get().c,
   timestamps: db.prepare('SELECT COUNT(*) AS c FROM lesson_timestamps').get().c,
+  transcripts: db.prepare('SELECT COUNT(*) AS c FROM lesson_transcripts').get().c,
   channels: db.prepare('SELECT COUNT(*) AS c FROM competitor_channels').get().c,
   topVideos: db.prepare('SELECT COUNT(*) AS c FROM competitor_top_videos').get().c,
   documents: db.prepare('SELECT COUNT(*) AS c FROM documents').get().c,
@@ -1070,6 +1109,7 @@ console.log(' - Total Sub-Niches:', stats.subNiches, '(Expected: >= 170) ->', st
 console.log(' - Total Lessons:', stats.lessons, `(Expected: ${allCatalogFull.length}) ->`, stats.lessons === allCatalogFull.length ? 'PASS' : 'FAIL');
 console.log(' - Total Lesson-Niche Links:', stats.lessonNiches, '(Expected: >= 500) ->', stats.lessonNiches >= 500 ? 'PASS' : 'FAIL');
 console.log(' - Total Lesson Timestamps:', stats.timestamps, `(Expected: 2456) ->`, stats.timestamps === 2456 ? 'PASS' : 'FAIL');
+console.log(' - Total Lesson Transcripts:', stats.transcripts, `(Expected: ${allCatalogFull.length}) ->`, stats.transcripts === allCatalogFull.length ? 'PASS' : 'FAIL');
 console.log(' - Total Competitor Channels:', stats.channels, `(Expected: >= ${C.channels}) ->`, stats.channels >= C.channels ? 'PASS' : 'FAIL');
 console.log(' - Total Competitor Top Videos:', stats.topVideos, '(Expected: 790+) ->', stats.topVideos >= 790 ? 'PASS' : 'FAIL');
 console.log(' - Total Documents:', stats.documents, `(Expected: ${C.documents}) ->`, stats.documents === C.documents ? 'PASS' : 'FAIL');

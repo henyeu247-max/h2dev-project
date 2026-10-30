@@ -1,0 +1,119 @@
+{
+  "sku": "VIDEO-23723f",
+  "title": "Quy Trình Sản Xuất Video Quiz English",
+  "Track": "T2",
+  "module_id": "DGMD-M04",
+  "duration_sec": 2010.22,
+  "Step": "M04.3 — Quy trình sản xuất video Quiz English & Đố vui đa ngôn ngữ hàng loạt",
+  "Validation": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "Action": "Dùng ChatGPT tạo bộ 30 câu hỏi trắc nghiệm 4 đáp án (A/B/C/D, 1 đáp án đúng) kèm đoạn Mở đầu (Hook) bằng tiếng Việt rồi dịch sang tiếng Anh -> Thiết kế trên Picsart (16:9 - 1920x1080) gồm khung câu hỏi + 4 ô đáp án, 2 thanh thời gian Trắng & Vàng giữ nguyên vị trí tọa độ và khung Intro -> Đưa vào CapCut PC ghép giọng TTS 'Nguồn nhỏ ngọt ngào', dùng Mặt nạ Hình chữ nhật + 2 Keyframe làm thanh đếm ngược 7 giây kèm tiếng tích tắc đồng hồ -> Đóng gói Câu hỏi 1 thành Clip ghép (Compound Clip), nhân bản (Sao chép) rồi Hoàn tác clip ghép (Uncompound) để thay chữ siêu tốc cho 30 câu và ghép nhạc nền Suno AI Instrumental.",
+  "summary": "Bài 13 hướng dẫn chi tiết quy trình công nghiệp hóa sản xuất video Quiz English & Đố vui trắc nghiệm đa ngôn ngữ dựa trên hình mẫu kênh đối thủ English Grammar Challenge (@englishgrammarchallenge6953 — 123 N người đăng ký, 875 video, có video đạt 6,2 triệu lượt xem). Quy trình kết hợp ChatGPT (viết 30 câu hỏi 4 đáp án + Hook mở đầu), Picsart (thiết kế bộ phôi khung câu hỏi 16:9 và bộ đôi thanh thời gian Trắng/Vàng trùng khít tọa độ), CapCut PC (tạo giọng đọc TTS 'Nguồn nhỏ ngọt ngào', dùng Mặt nạ Hình chữ nhật + Keyframe làm thanh đếm ngược 7 giây, đóng gói phôi Compound Clip rồi nhân bản/Uncompound để thay chữ hàng loạt) và Suno AI v5.5 (tạo nhạc nền Quiz Safari Bounce không lời).",
+  "key_takeaways": [
+    "Khảo sát kênh đối thủ @englishgrammarchallenge6953 (123 N subscribers, 875 video, video Top 1 'Mixed English Grammar Quiz: CAN YOU SCORE 10/10?' đạt 6,2 triệu views) để nắm cấu trúc giữ chân người xem bằng thử thách tự chấm điểm và bình luận kết quả cuối video.",
+    "Chiến thuật làm nội dung ngoại ngữ cho người không giỏi tiếng Anh: Yêu cầu ChatGPT tạo bộ 30 câu hỏi + 4 đáp án A/B/C/D + Mở đầu (Hook) bằng Tiếng Việt trước để kiểm duyệt đáp án đúng, sau đó mới ra lệnh dịch sang Tiếng Anh hoặc ngôn ngữ mục tiêu.",
+    "Thiết kế bộ phôi 16:9 (1920x1080) trên Picsart gồm 4 tài nguyên: (1) Nền tím kèm khung câu hỏi trắng và 4 ô đáp án viền đen, (2) Thanh thời gian màu Trắng viền đen, (3) Thanh thời gian màu Vàng giữ nguyên tuyệt đối vị trí tọa độ của thanh trắng trước khi xuất PNG, và (4) Khung bảng trắng cho phần Intro.",
+    "Kỹ thuật làm thanh chạy giây đếm ngược 7 giây trên CapCut PC: Đặt thanh thời gian màu Vàng nằm đè lên thanh màu Trắng, chọn lớp màu Vàng -> Mặt nạ (Mask) -> Hình chữ nhật -> đặt 2 Keyframe kéo vệt mặt nạ chạy từ trái sang phải trong 7 giây khớp với hiệu ứng âm thanh 'Đồng hồ' tích tắc.",
+    "Tuyệt chiêu nhân bản công nghiệp trên CapCut PC: Gom toàn bộ các lớp của Câu hỏi số 1 thành 'Clip ghép' (Compound Clip), bấm 'Sao chép' (Duplicate) ra hàng loạt câu tiếp theo rồi bấm 'Hoàn tác clip ghép' (Uncompound) để chỉ việc dán câu hỏi/đáp án mới và dời nhãn dán dấu tích đúng (V) mà không cần dựng lại hiệu ứng."
+  ],
+  "tools_mentioned": [
+    "Google Docs",
+    "ChatGPT",
+    "Picsart",
+    "CapCut",
+    "Suno AI"
+  ],
+  "prompts_shown": [
+    "Prompt 1 (Google Docs -> ChatGPT tạo 30 câu hỏi & Hook mở đầu): '- hãy tạo cho tôi 30 câu hỏi chủ đề về động vật , thay đổi các câu hỏi cho 30 câu liên tục và khác nhau , sáng tạo các câu hỏi tư duy , và mỗi câu có 4 đáp án , trong 4 đáp án đó có 1 đáp án đúng , các câu hỏi và câu trả lời bằng tiếng việt , tạo cho tôi 1 mở đầu cho video về thử thách cho mọi người xem video có hook , mở đầu ngắn gọn chi tiết . - thay đổi chủ đề , có thể thêm nhiều câu hỏi hơn , có thể thay đổi các câu hỏi bằng tiếng anh , và các thứ tiếng khác nhau .'",
+    "Prompt 2 (Google Docs -> ChatGPT tạo Style nhạc nền cho Suno AI): '- dựa vào 30 câu hỏi trên , bạn hãy tạo cho tôi 1 prompt để tạo 1 styles nhạc nền trên suno ai , phù hợp cho 30 câu hỏi trên , prompt styles chi tiết'",
+    "Style Prompt tiếng Anh dán vào Suno AI (Simple -> Instrumental): 'Upbeat, playful, curious quiz show background music, tropical marimba, light pizzicato strings, bouncy synth bass, subtle jungle percussion, lively woodwinds, rhythmic ticking clock feel, smart and adventurous atmosphere, medium-fast tempo (118 BPM), clean modern production, loopable, engaging, cheerful tension, suitable for a 30-question animal trivia challenge video, instrumental only, no vocals.'"
+  ],
+  "channels_mentioned": [
+    "@englishgrammarchallenge6953"
+  ],
+  "CourseDocs": "assets/docs-dgmd/VIDEO-23723f/master_prompt.md",
+  "course_docs": [
+    {
+      "title": "Bộ Prompt Gốc & Tài Liệu Thực Hành Quiz English (Master Prompt)",
+      "path": "assets/docs-dgmd/VIDEO-23723f/master_prompt.md",
+      "type": "prompt",
+      "file": "assets/docs-dgmd/VIDEO-23723f/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-23723f/master_prompt.md",
+      "link": "https://docs.google.com/document/d/1_2L1jCi7d_5EhLJ0RtWGR9uC8mZ9iKJaILTlVRwUO18/edit?tab=t.a7dloz2xu8i2"
+    }
+  ],
+  "Homework": "1. Dùng câu lệnh trong Google Docs yêu cầu ChatGPT tạo 30 câu hỏi trắc nghiệm 4 đáp án (kèm mở đầu có Hook) rồi dịch sang tiếng Anh.\n2. Lên Picsart thiết kế bộ phôi 16:9 (1920x1080): khung câu hỏi + 4 ô đáp án, 2 thanh thời gian Trắng/Vàng trùng khít vị trí, khung Intro và Thumbnail.\n3. Dựng Câu hỏi 1 trên CapCut PC với giọng đọc TTS 'Nguồn nhỏ ngọt ngào', làm thanh đếm ngược 7 giây bằng Mặt nạ Hình chữ nhật + Keyframe, đóng gói thành Clip ghép rồi nhân bản (Sao chép -> Hoàn tác clip ghép) cho các câu tiếp theo và lồng nhạc nền Suno AI Instrumental.",
+  "edit_sop": {
+    "primary": "Quy trình 5 bước thực chiến: Bài 13 hướng dẫn chi tiết quy trình công nghiệp hóa sản xuất video Quiz English & Đố vui trắc nghiệm đa ngôn ngữ dựa trên hình mẫu kênh đ...",
+    "additional": [
+      "Sử dụng câu lệnh chuẩn trong Google Docs yêu cầu ChatGPT tạo 30 câu hỏi trắc nghiệm 4 đáp án (có 1 đáp án đúng) kèm đoạn Mở đầu (Hook) bằng tiếng Việt trước để kiểm duyệt đáp án, sau đó dịch sang tiếng Anh khi sản xuất cho thị trường ngoại.",
+      "Mở Picsart tạo khung 16:9 (1920x1080) thiết kế 4 tài nguyên PNG: Nền câu hỏi kèm 4 ô đáp án bo góc viền đen, Khung bảng trắng cho phần Intro, và 2 bản Thanh thời gian (1 bản màu Trắng, 1 bản đổi sang màu Vàng nhưng giữ nguyên tuyệt đối vị trí tọa độ).",
+      "Đưa nguyên liệu vào CapCut PC dựng phần Mở đầu (Hook Intro) kèm giọng đọc TTS 'Nguồn nhỏ ngọt ngào' rồi khóa lại bằng 'Tạo clip ghép'; tiếp tục dựng khung Câu hỏi số 1 và gom 4 chữ cái định vị 'A) B) C) D)' thành một Clip ghép cố định có gắn hiệu ứng Camera Zoom nhẹ.",
+      "Chồng thanh thời gian màu Vàng lên trên thanh màu Trắng (kéo dài 7 giây), chọn thanh màu Vàng -> Mặt nạ -> Hình chữ nhật và đặt 2 Keyframe ở đầu/cuối để vệt màu vàng chạy lấp đầy từ trái sang phải trong 7 giây khớp với tiếng tích tắc 'Đồng hồ', sau đó gắn nhãn dán dấu tích (V) báo đáp án đúng.",
+      "Bôi đen toàn bộ các tầng của Câu hỏi số 1 -> chuột phải chọn 'Tạo clip ghép' (Compound Clip) -> bấm 'Sao chép' (Duplicate) ra các câu tiếp theo rồi chọn 'Hoàn tác clip ghép' (Uncompound) để thay nhanh văn bản câu hỏi, giọng đọc TTS, 4 phương án và vị trí đáp án đúng (khuyên dùng 2 màn hình: 1 màn ChatGPT, 1 màn CapCut), cuối cùng ghép nhạc nền Suno AI và làm Thumbnail trên Picsart."
+    ]
+  },
+  "avoid_flags": [
+    "Vô tình dịch chuyển vị trí thanh thời gian trên Picsart khi đổi từ màu Trắng sang màu Vàng trước khi tải xuống, khiến hai thanh không chồng khít lên nhau khi làm hiệu ứng Mặt nạ (Mask) chạy giây trên CapCut PC.",
+    "Dựng thủ công từng câu hỏi từ con số 0 thay vì đóng gói Câu hỏi số 1 thành 'Clip ghép' (Compound Clip) rồi 'Sao chép' và 'Hoàn tác clip ghép' (Uncompound), làm mất gấp 10 lần thời gian căn chỉnh.",
+    "Yêu cầu ChatGPT sinh ngay bộ câu hỏi bằng tiếng Anh khi bản thân không thông thạo ngoại ngữ, dẫn đến không kiểm soát được tính chính xác của câu hỏi và dễ gắn nhầm vị trí đáp án đúng A/B/C/D.",
+    "Quên bật chế độ 'Instrumental' (Nhạc không lời) khi tạo nhạc nền trên Suno AI hoặc để âm lượng nhạc nền quá to lấn át giọng đọc câu hỏi TTS và tiếng tích tắc đồng hồ đếm ngược."
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu Bài 13: Quy trình sản xuất video Quiz English & khảo sát kênh đối thủ @englishgrammarchallenge6953 (6,2 triệu views)"
+    },
+    {
+      "time": "00:57",
+      "seconds": 57,
+      "label": "Mở Google Docs lấy câu lệnh chuẩn và thực hành tạo 30 câu hỏi trắc nghiệm kèm Hook mở đầu trên ChatGPT"
+    },
+    {
+      "time": "03:52",
+      "seconds": 232,
+      "label": "Thiết kế bộ phôi 16:9 trên Picsart: Khung câu hỏi, 4 ô đáp án A/B/C/D, bộ đôi thanh thời gian Trắng – Vàng và khung Intro"
+    },
+    {
+      "time": "11:02",
+      "seconds": 662,
+      "label": "Đưa nguyên liệu vào CapCut PC, dựng phần Mở đầu (Hook Intro) và tạo giọng đọc AI 'Nguồn nhỏ ngọt ngào'"
+    },
+    {
+      "time": "14:31",
+      "seconds": 871,
+      "label": "Dựng phôi Câu hỏi số 1: Cố định cụm chữ A) B) C) D), thêm câu hỏi, giọng đọc TTS và 4 phương án trả lời"
+    },
+    {
+      "time": "19:36",
+      "seconds": 1176,
+      "label": "Kỹ thuật dùng Mặt nạ Hình chữ nhật (Rectangle Mask) + 2 Keyframe tạo thanh chạy thời gian 7 giây kèm tiếng tích tắc đồng hồ"
+    },
+    {
+      "time": "24:04",
+      "seconds": 1444,
+      "label": "Đóng gói Câu hỏi 1 thành Clip ghép (Compound Clip), nhân bản (Sao chép) rồi Hoàn tác clip ghép (Uncompound) để thay nội dung Câu 2, 3, 4, 5"
+    },
+    {
+      "time": "31:00",
+      "seconds": 1860,
+      "label": "Dùng ChatGPT viết Style Prompt tạo nhạc nền Quiz trên Suno AI (Instrumental) và thiết kế Thumbnail trên Picsart"
+    }
+  ],
+  "actual_topic": "Bài 13 hướng dẫn chi tiết quy trình công nghiệp hóa sản xuất video Quiz English & Đố vui trắc nghiệm đa ngôn ngữ dựa trên hình mẫu kênh đối thủ English Grammar Challenge (@englishgrammarchallenge6953 — 123 N người đăng ký, 875 video, có video đạt 6,2 triệu lượt xem). Quy trình kết hợp ChatGPT (viết 30 câu hỏi 4 đáp án + Hook mở đầu), Picsart (thiết kế bộ phôi khung câu hỏi 16:9 và bộ đôi thanh thời gian Trắng/Vàng trùng khít tọa độ), CapCut PC (tạo giọng đọc TTS 'Nguồn nhỏ ngọt ngào', dùng Mặt nạ Hình chữ nhật + Keyframe làm thanh đếm ngược 7 giây, đóng gói phôi Compound Clip rồi nhân bản/Uncompound để thay chữ hàng loạt) và Suno AI v5.5 (tạo nhạc nền Quiz Safari Bounce không lời).",
+  "category_group": "chuyen_gia",
+  "niche_primary": "Quiz & Trắc Nghiệm Kiến Thức",
+  "niche_id": "dgmd_workflow",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "sop_steps": [
+    "Sử dụng câu lệnh chuẩn trong Google Docs yêu cầu ChatGPT tạo 30 câu hỏi trắc nghiệm 4 đáp án (có 1 đáp án đúng) kèm đoạn Mở đầu (Hook) bằng tiếng Việt trước để kiểm duyệt đáp án, sau đó dịch sang tiếng Anh khi sản xuất cho thị trường ngoại.",
+    "Mở Picsart tạo khung 16:9 (1920x1080) thiết kế 4 tài nguyên PNG: Nền câu hỏi kèm 4 ô đáp án bo góc viền đen, Khung bảng trắng cho phần Intro, và 2 bản Thanh thời gian (1 bản màu Trắng, 1 bản đổi sang màu Vàng nhưng giữ nguyên tuyệt đối vị trí tọa độ).",
+    "Đưa nguyên liệu vào CapCut PC dựng phần Mở đầu (Hook Intro) kèm giọng đọc TTS 'Nguồn nhỏ ngọt ngào' rồi khóa lại bằng 'Tạo clip ghép'; tiếp tục dựng khung Câu hỏi số 1 và gom 4 chữ cái định vị 'A) B) C) D)' thành một Clip ghép cố định có gắn hiệu ứng Camera Zoom nhẹ.",
+    "Chồng thanh thời gian màu Vàng lên trên thanh màu Trắng (kéo dài 7 giây), chọn thanh màu Vàng -> Mặt nạ -> Hình chữ nhật và đặt 2 Keyframe ở đầu/cuối để vệt màu vàng chạy lấp đầy từ trái sang phải trong 7 giây khớp với tiếng tích tắc 'Đồng hồ', sau đó gắn nhãn dán dấu tích (V) báo đáp án đúng.",
+    "Bôi đen toàn bộ các tầng của Câu hỏi số 1 -> chuột phải chọn 'Tạo clip ghép' (Compound Clip) -> bấm 'Sao chép' (Duplicate) ra các câu tiếp theo rồi chọn 'Hoàn tác clip ghép' (Uncompound) để thay nhanh văn bản câu hỏi, giọng đọc TTS, 4 phương án và vị trí đáp án đúng (khuyên dùng 2 màn hình: 1 màn ChatGPT, 1 màn CapCut), cuối cùng ghép nhạc nền Suno AI và làm Thumbnail trên Picsart."
+  ],
+  "source_transcript": "video/VIDEO-23723f/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED"
+}

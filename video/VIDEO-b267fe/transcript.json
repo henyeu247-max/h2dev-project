@@ -1,0 +1,2834 @@
+{
+  "sku": "VIDEO-b267fe",
+  "duration": 2187.63,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 353,
+  "full_text": "Hello anh em, về phần VPS thì thực ra nó có rất nhiều quan điểm về việc là dùng nên dùng hay không. Một số anh em thì họ vẫn dùng theo cách truyền thống là một trong một cái máy họ có thể login đến cả mấy chục kênh, cả trăm kênh. Có những anh em thì họ chọn là Proxy để cho nó rẻ, nó tối ưu chi phí. Tuy nhiên thì với GODA thì mình luôn hướng đến là xây dựng một cái nền nó vững chắc, nó vẫn chắc từ những cái nhỏ nhất, từ những cái bảo mật rồi là phần kênh, Vậy nên là bên mình cũng làm VPS bản thân mình làm VPS từ 2017 đến bây giờ thì mình cũng kiểm chứng là có những con VPS dùng đến bây giờ 8-9 năm rồi thì nó vẫn còn nguyên nó không bị làm sao cả đến bây giờ vẫn 1 IP và 1 cái con máy đấy 1 con máy ảo đấy nó không bị ảnh hưởng đấy thì mình thấy là nó nó có sự ổn định như thế thì mình cũng yên tâm hơn phần nào so với là là proxy hay là những cái Cái dạng khác. Anh em làm ít thì có thể là không phải quan tâm quá phần này nhưng anh em đã làm đến vài kênh hoặc chục kênh thì cũng sẽ cần phải rất là kỹ ở phần này. Đặc biệt là về phần khi mà nó có chính sách mới từ tháng 7 đến bây giờ, nó có chính sách là quét những kênh liên quan. liên quan thì bất kỳ khi mà anh em dính một cái lỗi nào đó liên quan đến kênh mà nó bị mà phát thôi thì gần như là có thể bị quét bay cả hệ thống luôn thì đấy là một cái phần rất là đáng lưu tâm dưới mấy kênh thì nên chứ nên dùng để nó tách ra Anh em vẫn có lựa chọn riêng của anh em thôi. Nếu mà mình dùng mà nó cảm thấy ổn thì mình vẫn cứ dùng. Không có ai bắt ép cả. Bởi vì nó là cái niềm tin của mỗi người. Bên mình thì cũng làm rất là nhiều. Bây giờ quản lý khoảng 1.000 cái mail. Một cái mail bao gồm mail gốc, mail quản trị, GA các thứ. Dùng rất là nhiều. Có khoảng hơn 100 con VPS rồi. Chấm 2, chấm 3 con này. Anh em cứ để phần hỏi đáp tí nữa mình sẽ đến phần hỏi đáp nhé. Có hỏi để sau nhé, sẽ có phần hỏi đáp riêng. Phần hỏi đáp bao gồm về tất cả các hỏi liên quan đến VPS và bảo mật. Hôm nay sẽ là một cái Zoom dự định là mình tổ chức từ trước đó cơ nhưng mà liên quan đến phần VPS để cung cấp đến anh em thì cái giải pháp mình đã test từ tháng 7 đến bây giờ Họp đồng hơi lâu một chút, đến hôm nay với Chốt được lịch, có tuần rồi Chốt được lịch và hôm nay thì anh em mới ngồi Zoom với nhau, chia sẻ. Đây là những phần mà chính mình đang làm, đang thấy nó hiệu quả và nó đảm bảo an toàn cho hệ thống nên là mình chia sẻ với anh em. Ở cái mảng MMO này thì cũng muốn lưu ý với anh em là nó không có đúng, không có sai. Mỗi anh em sẽ có một góc nhìn và mỗi anh em một quan điểm khác nhau. Vậy là anh em hãy tham khảo cái cách này là cách của GODA nhé. Mình không đại diện tất cả anh em nào hay là trường phái nào cả. Chỉ là cái cách mình làm thôi. Đó đảm bảo an toàn thôi. Anh em nhìn thấy màn hình nhỉ? Anh em nhìn thấy rồi thì gõ phím 1 nhé. Ok ok. Phần này là quản trị bảo mật kênh YouTube theo mô hình của GODA mình đang triển khai bây giờ nhé. Đầu tiên là về phần tư duy quản trị cốt lõi. VPS trong hệ thống của mình thì mình coi nó không chỉ là một cái máy ảo mà nó là một cái tài sản để nó chứa cái email, làm kênh, chứa kênh YouTube. và hiện tại thì mình đang dùng nó để chứa cả tài khoản Google AdSense nữa luôn. Nguyên tắc vàng khi mình sử dụng cái VPS này, máy chủ ảo này thì nó là một hệ sinh thái khép kín. Thì cái mục tiêu của mình khi mình dùng VPS, mình cũng test rất là nhiều, mình test Proxy, test cả GPMLogin, anh em hay bảo cái đấy. Thì bên mình có test hết, mình sử dụng hết. thì GPMLogin mà dùng với sim 4G thì cũng được nhưng thực ra thì nếu như mà dùng nhiều sim như thế thì nó cũng không ổn lắm xây dạng phone farm thì nó cũng không ổn lắm về mặt tối ưu và nó không chủ động lắm nên là mình không thích mình test không ổn lắm Proxy thì nó thiếu sự ổn định nên mình không dùng. Mục tiêu ở đây là tránh liên đới, tránh bị quét hàng loạt, tăng độ tin cậy lâu dài. Đợt vừa qua sau tháng 7 thì anh em thấy là có những hệ thống bay cả một hệ thống luôn. Bên bay cả hệ thống bởi vì là bị quét lan. Thì cái bản chất của cái quét lan là gì? Thì họ sẽ quét một là những cái thông tin mà cái người đó đang đăng ký. Ví dụ như mình đăng ký với cái tên của mình đi, Hoàng đi, với cái số điện thoại đấy và các email đấy. Lại còn chung một IP và chung cái fingerprint là cái nhận diện của mình ấy. Với cái thao tác tay của mình và mọi thứ, lịch sử các thứ ấy. Về sau khi một kênh gặp sự cố bị die chết vì một lý do nào đó thì tất cả các kênh khác đều bị thì nó quá rủi ro khi mà mình dùng chung một cái IP và nhiều kênh như đó thế này cứ là mục tiêu của nó và về dài hạn thì bởi vì là VPS nó rất là mình cảm nhận nó rất là an toàn và nó rất là ổn định Vì vậy nên là về dài hạn với 1 email chỉ để trên 1 con VPS thì nó cũng sẽ tốt hơn rất là nhiều. Tiếp theo đó là phần quản trị bảo mật kênh với VPS. Phần này thì mình cần phải phân loại rõ 2 loại email nhé. 2 loại email. Bên mình thì dùng VPS, nên là mình chia sẻ cho VPS, thì nó có 2 loại email. Đầu tiên nó là email gốc nè. Email gốc là gì? Là email mình dùng để mình nuôi rồi mình tạo kênh trên cái email đó. Tạo kênh nhé, chủ sở hữu chính của kênh ấy. Tạo ra cái kênh đó. Quản trị kênh đó. Và backup. Thì thông thường là email gốc này thì mình chỉ tạo kênh và sau đó mình xác minh 3 dòng rồi setup đủ các thứ. và mình để không nó thôi, mình không dùng đến luôn. Cái email này thỉnh thoảng vào check, đọc email rồi là tương tác một chút thôi chứ cũng gần như là không sử dụng bởi vì là nó là email gốc mà mình để cho nó back up để an toàn thôi. Thì ở cái email gốc này thì mình sẽ login là tối đa là 5 email, 5 email, 5 kênh trên 1 VPS, tối đa chỉ thế thôi. Thì mình cảm thấy nó an toàn, anh em có thể login nhiều hơn nhưng mà với góc nhìn của mình thì nên 5 kênh thôi, 5 kênh, 5 email thôi. Mình không nên tiết kiệm một cách mình login nhiều quá thì thành ra nó lại như bài toán cũ là chục kênh trên 1 IP thì nó cũng bằng nhau. Khi nó gặp rủi ro quá thì nó vẫn lan lên bình thường. có một cái lưu ý ở đây nữa là không dùng email gốc để làm kênh và đặc biệt là không chứa tài khoản Google AdSense anh em có một cái lỗi là là mình dùng email gốc của cái kênh xong mình là dùng làm AdSense luôn thì nó có một cái rủi ro như thế này là khi cái kênh đến lỡ mình làm sai nó gặp vấn đề một thì có thể là mình vứt cả cái AdSense ấy luôn thì mình không dùng cho kênh khác được có những cái lỗi nhẹ nhẹ thì mình vẫn có thể dùng lại Google AdSense ví dụ như lỗi Reuse này mà nhẹ nhàng thì mình vẫn có thể dùng được AdSense này hoặc trong trường hợp là mình bị chết kênh, dạng chết kênh mà dạng lỗi nhẹ, dạng spam các thứ thì thực ra là cái AdSense này anh em vẫn dùng được lại. Không nhất thiết là cứ phải bỏ đi dùng AdSense mới vì cái thông tin mình có nó cũng giới hạn thôi. Mình mượn cũng chỉ được là trong vòng quan hệ là vợ chồng hay là anh em họ hàng mà rất thân thiết thì mới mượn được thôi. Chứ còn ngoài ra thì cũng rất là khó để mượn được thông tin của anh em khác nữa. để họ sẽ lo ngại vấn đề về thông tin cá nhân rồi bảo mật các thứ. Có những lưu ý như này. Về phần email làm kênh, thì mỗi email chỉ có sở hữu 1 kênh duy nhất thôi. Mỗi email chỉ sở hữu 1 kênh duy nhất và chỉ sử dụng trên 1 VPS duy nhất. Thì có nghĩa là gì? Có nghĩa là nếu với 1 kênh của GODA làm thì bên mình sẽ sử dụng 2 VPS, bao gồm 1 VPS gốc. chứa 5 email gốc có kênh ở trong đó và 1 email để làm kênh thì 1 email thì bằng 1 kênh 1 VPS thì cái này nó liên quan đến cô lập rủi ro từng kênh này và bên mình thì bên mình sẽ cấp quyền vào VPS cho anh em quản lý anh em quản lý thì anh em lại sẽ lên chỉ làm việc thôi chứ không dùng cái gì khác vì VPS thực ra nó hơi lag một chút anh em dùng quen thì nó quen thôi chứ còn thực ra nó vẫn lag và mình sẽ quản Quản trị bằng cách như vậy, toàn bộ email làm kênh rồi email gốc là mình cầm hết thông tin hết để bảo mật thông tin. Còn anh em quản lý thì chỉ tập trung làm nghề thôi, có những cái phần mà cấp kênh cái thứ thì mình làm hết. Đó, thì nó rất là tối ưu trong quá trình mà quản trị nhiều kênh. Bây giờ bên mình cũng khá là nhiều kênh rồi thì không thể nào mà cứ cấp quyền cho nhiều anh em xong anh em lại làm việc ở máy ở nhà được thì nó cũng bị vấn đề là anh em bị thì nó cũng bị vấn đề về bảo mật và đồng bộ IP. Bên mình có câu chuyện vui vui là anh em đang nhậu Anh nhậu rồi tự nhiên thấy đến giờ 8-9 giờ thì đồng loạt lôi điện thoại ra Thì lúc đấy là anh em đang đăng bài bài tab cộng đồng hoặc là anh em đang vào public video Có một điểm nữa bên mình là video trừ các video mà vào public vào cái khung giờ mà 1 giờ sáng đến 7 giờ sáng ấy thì bên mình không public bằng tay mà hẹn giờ còn lại thì là bên mình ưu tiên bằng tay hết link bằng tay công khai bằng tay đấy là cái cách bên mình làm thôi. Ở đây thì mình có một cái nguyên tắc bảo mật email này cái phần này là cái kinh nghiệm của mình làm và cũng kiểm nghiệm qua cái đợt vừa rồi là quét lan rất là nhiều bên mình cũng chết nhiều kênh chứ không phải không thì những chủ đề mà nó có rủi ro để có chết kênh chứ không phải không thì mỗi email khôi phục mỗi email chỉ nối một email khôi phục thôi. Mỗi email chỉ nối 1 email khôi phục duy nhất nhé. Và các email được nối theo vòng tròn khép kín. Thì mình thì mình hay nối là 2 đến 3 email trong 1 vòng tròn. 2 đến 3 email trong 1 vòng tròn. Ví dụ như hoàng 1 nối khôi phục với hoàng 2, trong hoàng 2 nối khôi phục với hoàng 3, hoàng 3 nối khôi phục lại với hoàng 1. Thì mình chỉ nối như vậy thôi. tốt nhất là 2 email nối với nhau khoảng 1 nối với 2 email backup lẫn cho nhau thì nó sẽ tốt nhất để tránh rủi ro bị chết lan nhiều ở phần này thì khi mà liên quan đến phần chết lan thì một lý do nữa mình dùng VPS khi mà trong một con VPS có 5 kênh gốc thì nó có một kênh gặp vấn đề Các bạn có thể thì mình sẽ cô lập kênh đó ở lại con VPS đó để về sau mình kháng. Mình sẽ tìm khách mình khám bằng được. Còn 4 kênh còn lại mình sẽ login sang con VPS mới tinh. Đó thì đấy là cái phần mình cô lập, cô lập những cái kênh. Giống như anh em là ở quê thì biết rằng là mình nuôi lợn, nuôi gà, nó có một con mà nó bị bệnh thì mình phải cô lập nó lại. Để mình phải chuyển nó sang một trại mới để mình đảm bảo nó không bị lây lan. Bây giờ để nó lây lan thì bao công sức đổ sông đổ bể hết. Ở phần đây lưu ý không được làm là mình không nối quá 3 email. Một số anh em làm theo kiểu là 1 email khôi phục cho hàng chục kênh, mấy chục kênh liền. Anh em bảo không vấn đề gì cho đến khi gặp vấn đề Thì đến khi mà nó gặp vấn đề rồi thì nó quá là xót xa Có khi cả hệ thống một vài trăm nghìn có thể bay vì những lỗi Lỗi quá đơn giản và lỗi quá lười như vậy thì nó phí lắm Nó phí công sức anh em làm lắm Xây dựng thì lâu chứ mà rụng thì nhanh lắm Mà cái đấy mình có thể làm được thì anh em nên làm. Tiếp đấy thì không được làm mỗi email khôi phục cho nhiều email khác này. Lý do này, khi mà mình để nhiều kênh khôi phục cùng một email thì nó bị vấn đề là nó lan. Thế mà phần này mình không làm thì để cho nó là không bị sập, cả một dây chuyền, cả một hệ thống của mình nó không bị sập tất. Thế đây là lý do thôi. Tiếp theo thì chúng ta đến phần 3 là nuôi email chăm sóc tài khoản Google AdSense. Vừa rồi anh em quan tâm khá nhiều bởi vì anh em bị bị mắc vào phần này rất là nhiều thì lát nữa nó sẽ có một video hướng dẫn anh em chi tiết các bước từ A đến Z tạo tài khoản Google AdSense luôn. Lát nữa sẽ có. Ở phần chuẩn bị email này, trước khi anh em lập tài khoản Google AdSense thì mình sẽ cần phải có email trước. Thì anh em có thể sử dụng email mình đã dùng lâu rồi, nhưng mà mình chưa tạo Google AdSense. Nhưng mà có cái điều phải lưu ý là Thứ là cái phần email này nhé. Nếu như email của anh em đã dùng để tạo tài khoản Google AdSense rồi thì không được dùng thông tin tạo tiếp. Và cái IP nào đã tạo rồi thì không nên tạo tiếp. Vì một IP nếu anh em tạo thêm thì nó hay báo lỗi lắm. Mình là mình test nhiều rồi. Nó bị như thế. Thì với email mới thì anh em phải tạo và nuôi tối thiểu là 14 ngày, tốt nhất là được 1 tháng thì càng tốt. Điều kiện thì email phải chưa từng tạo GA, chưa từng dính vi phạm gì, chưa từng chết mail các thứ này. Để chết cái lỗi spam đơn giản thì có thể nhắn đội hỗ trợ của Huân Academy để anh em gửi cho cái form kháng đơn giản, dạng đấy nó khá là dễ thôi, kháng được. dạng đấy thì không vấn đề gì. Còn dạng vi phạm như anh em bị cấm hẳn chức năng dùng email rồi là Google AI cái thứ đó. Đấy là những dạng vi phạm nặng thì anh em sẽ không được dùng được nữa. Về phần số điện thoại thì mình lưu ý là mình dùng số mới hoàn toàn nhé. Chưa từng tạo ra này. Chưa từng liên kết bất cứ GA nào. Thì có thể là mình có thể mua một số mới. Mua một số mới tin bằng thông tin chính chủ của mình. Còn này thì mình lưu ý là không nóng vội Tài khoản Google AdSense nó là một cái tài sản của mình Nó không phải là công cụ dùng một lần Vì vậy nên là trong quá trình anh em tạo Thật sự kiên nhẫn Bình tĩnh thì tạo Chăm nó nuôi nó đúng thì Khi anh em tạo thì có thể nhanh là một ngày Có thể được duyệt luôn rồi Nếu mình nóng vội, mình vừa tạo ngày hôm nay, 3 hôm sau, 5 hôm sau đã tạo Google AdSense chắc chắn là nó bị đánh là có vấn đề rồi. Chứ chả có ai mà tự nhiên tạo email hôm nay, ngày mai tạo GA mà Google nó duyệt cho vào. Nếu có dễ thì cũng rất là may mắn thôi chứ còn không có chuyện là nó nhanh như thế được. Ngoài ra thì về phần tạo email tạo GA thì anh em cũng có chia sẻ rằng là anh em dùng email cổ rồi là theo dạng là anh em mua ấy. Thế thì với mình thì mình không dùng bởi vì là nó cũng sẽ có rủi ro về nguồn email. Thế nên là mình ưu tiên phương án là mình tự tạo email sau đó mình tự tạo GA thì nó đảm bảo cho mình yên tâm hơn thôi. tính mình nó hơi khó tính, phần này mình kỹ tính phần này. Nguyên tắc về VPS, sử dụng VPS cho Google AdSense bên mình đang dùng thì cái nguyên tắc của mình là 1 VPS chỉ đăng nhập 1 tài khoản Google AdSense duy nhất thôi, 1 VPS chỉ 1 Google AdSense duy nhất. Thì trên đó thì chỉ chứa là 1 email chứa tài khoản Google AdSense và 1 email khôi phục cho cái tài khoản email mà chứa GA lại. Thì trên 1 VPS là tổng là có 2 email thôi. Thì nó back up cho lẫn nhau mà. Còn này tuyệt đối là không login nhiều GA trên cùng 1 VPS, login GA trên nhiều IP khác nhau. Anh em hay bị cái lỗi là mình bật kiếm tiền đúng không? Thế là mình login GA lung tung bèo hết lên. IP nhảy lung tung bèo hết lên. Về sau nó bị vi phạm gì, nó bị quét gì đấy thì nó chết GA là điều đương nhiên rồi. Nhiều anh em là GA chính chủ này nhưng vẫn bị chết bởi vì login nhiều chỗ quá Nó không cố định được, rất là nguy hiểm Mục tiêu của những phần này là tránh Google quét IP, tránh Google khóa nhiều GA cùng một lúc Đang nhiều tài khoản Google AdSense cùng với một IP Được rồi anh em thấy là bên họ kêu rất nhiều việc chết GA Bên mình có bị chết GA ở đợt bão đầu tiên, tháng 6-7, đợt mà quét GA dạng mua Sau đợt đó bên mình làm lại 100% GA đến bây giờ tất cả đều ổn hết và có những con GA tháng trước còn không đủ minpay, chỉ tầm 30-40$, tháng sau có thể nhận được mức khoảng 340.000$ 1 kênh, 1 con GA thì không gặp vấn đề gì nhé. Nó đều ổn hết vì mình tạo chính chủ mà, vì mình yên tâm. Ở phần này thì mình cần phải là nuôi hành vi người dùng này nuôi cái điểm Trust Score dành cho Google họ đánh giá con AI Google đánh giá hành vi của mình dùng ấy nó phải giống người thật mình cần phải làm thường xuyên hàng ngày đó hoặc là anh em một vài ngày làm một lần làm đều đều thì mới email để check email thường xuyên thì cái phần này Thì cái phần email này thì anh em có thể là đăng ký, nhận tin nhắn tự động của một số cái web như là web tin tức này, nước ngoài này. Thì anh em nhận email thường xuyên thì nó là hành vi người dùng. Thì anh em vào mở email đấy, đọc email đấy thì cũng là hành vi người dùng. có một điểm nữa thì là phần xem video trên YouTube thì mình có thể xem 24/24 được tại vì VPS thì nó không tắt mà VPS thì nó cứ mở cả ngày lẫn đêm thôi. Thì anh em có thể cho xem YouTube xem nhạc rồi tin tức các thứ thì tùy anh em không quá là là phải đóng khung là mình phải làm như thế nào chỉ là mình tương tác hàng ngày thôi. Sau đó có thể đọc báo, tìm kiếm thông tin. Hành vi cần tránh là mình tạo email xong mình bỏ không. Chỉ vào VPS khi cần bật kiếm tiền. Thế lỡ anh em không check thường xuyên rồi là nó gặp vấn đề gì đó, email mình không biết nó check email hay bị nào đấy. Hoặc mình không tương tác thường xuyên thì nó không giống người dùng thật. Đấy thì nó sẽ bị ảnh hưởng. Vì vậy, anh em lại chơi cái bài là VPS thấy lười quá không làm, không có tương tác, quay ra là chơi tool vào, xong quay quét, bay cả dàn. VPS vẫn chết bình thường, bởi vì anh em dùng tool. Thế thì cái phần này thực ra nó cũng chả tốn bao nhiêu thời gian đâu, có khi một ngày, 30 giây chứ mấy. 30 giây thì nó đáng bao nhiêu thời gian đâu mà, mà mình phải dùng tool làm gì. Tư duy ở đây là nuôi con người số, không nuôi tài khoản chết. Với mỗi cái IP VPS của mình thì mình rất là quan trọng nó và mình rất là giữ gìn nó. Tại vì mình biết rằng là mình nuôi được một cái IP mà ngon rồi là nó ổn định qua nhiều năm tháng thì tài khoản của mình nó rất là khỏe. Ờ, ở đây, phần quy trình bật kiếm tiền an toàn của mình hiện tại đang làm nhé. thì mình không login GA ở nhiều nơi này nó chỉ có trên một con VPS thôi và khi mình bật kiếm tiền thì mình chỉ có thao tác ở trên cái VPS chứa cái con GA đó thôi chứ còn mình không login GA linh tinh. Về phần quy trình thì mình sẽ có các bước sau đây đầu tiên nhé thì ở cái email gốc ấy thì mình sẽ cấp quyền chủ sở hữu cho cái email chứa tài khoản Google AdSense này sau đó thì mình sẽ bật kiếm tiền trên VPS chứa con GA đấy. Sau khi bật thì mình để yên thôi. Không dùng con VPS chứa GA đi luôn. Chỉ để xem YouTube, không dùng đi tương tác cái thứ gì cả. Không dùng tương tác cái khác. Mình chỉ để vậy thôi. Mình xác định nó là một cái mình giữ cái tài khoản Google AdSense của mình nó được an toàn đây mà. Tổng kết ở đây này nó có những cái điều mà anh em cần nhận ra. em cần nhớ này thì VPS là một cái dạng danh tính số này thì YouTube nó sẽ định danh mỗi một cái người dùng dựa trên IP và lịch sử người dùng đâu chứ nó không thể nắm được các thông tin khác đâu nó chỉ định danh vậy thôi email ở đây nó là cái gốc có mọi thứ của anh em làm đợt vừa rồi thì mình cũng nhận Một số thông tin khá là buồn vì các anh em làm dạng dùng email của tên miền email domain Buồn vì anh em hơi chủ quan về việc dùng email domain. Bản chất mình nhìn thấy nó có vấn đề rồi. Khi mà tất cả email đều có một cái tên miền là A còng gì đó là tên miền domain tên miền công ty thì nó sẽ có rủi ro khi anh em làm sai là anh em sẽ bị quét toàn bộ. Nó rất là nguy hiểm. Ví dụ như đây là hoang@goda.media. Ví dụ như này đi, một email như này thì lỡ mà mình lại tạo rất nhiều cái tên miền, a.goda.media.vn này, một trong các email mình làm kênh này nó gặp vấn đề phát thì có thể là bay tất cả luôn, nó xóa hết. Và email domain mà đã gặp vấn đề rồi là gần như không kháng được. Mình thấy là nó bị như vậy, thì nó rủi ro rất là cao. Vì đôi khi anh em lại còn ham rẻ, còn chơi cái bài là mua nguồn email domain giá rẻ nữa. thì các bên tut trick họ sẽ có cái cách họ bán cho anh em đó. Nếu mình thì mình không ưu tiên như vậy. Mỗi một tài khoản Google AdSense là một tài sản dài hạn vì nó là cái chỗ mình nhận tiền về thì phải thật sự rất là coi trọng. Một một sai lầm nhỏ khi mình bảo mật hệ thống như nó có thể trả giá rất là lớn. Có thể cả một hệ thống bay hết luôn. Đợt vừa qua thì mình cũng gặp nhiều kênh bị chết, nhiều kênh bị kiếm tiền, các cái lỗi. Vì mỗi một đợt thì nó quét một cái lỗi khác nhau. có đợt thì nó quét cái dạng spam này, chết cả kênh này, sau đó nó quét dạng die chết dạng nội dung nguy hiểm có sự tham gia của trẻ vị thành niên này bên mình cũng dính. Sau thì nó die chết những dạng nội dung không trung thực này. Có những kênh làm rất là chỉn chu, rất là kỹ, sáng tạo rất xịn nhưng mà khi vào bão thì nó vẫn có khả năng bị quét nhầm. Nhầm Mà hiện tại thì là toàn bộ phần Kiểm duyệt rồi là Các thứ là Rồi là kháng chứ AI nó kiểm soát hết chứ còn Gần như bây giờ là không gặp được người kiểm duyệt thật nữa Để mình kháng nữa Những cái dạng đấy đã bị quét rồi thì Gần như không kháng được Mà khi mà đã bị quét một kênh rồi thì Em biết là là Nó quá là kinh khủng luôn Nhưng cái kênh khác mà nối cùng GA đấy mà nó gặp vấn đề mà phát là Là mình phải tách ra luôn Chứ không thì nó có thể bay cả vào hệ thống luôn Cái chi phí mà anh em Nghĩ rằng là nó là chi phí khi mà mình dùng nhiều VPS Thì đôi khi nó không phải chi phí nó là khoản đầu tư Với mình mình coi nó là khoản đầu tư để mình đảm bảo cái an toàn hệ thống. Để cho toàn bộ cái hệ thống của mình nó an toàn hơn. Ok, ở đây mình cũng có thấy một vài câu hỏi, tuy nhiên là mình sẽ đi tiếp nhé, tại vì là lát nữa sẽ có phần hỏi đáp riêng, anh em thoải mái. Hôm nay chủ yếu sẽ hỏi đáp vì phần chia sẻ cũng khá là ngắn thôi, chủ yếu anh em hỏi đáp về tất cả những cái thắc mắc của anh em. Tiếp theo thì mình sẽ đến với phần là video hướng dẫn tạo tài khoản Google AdSense và bật kiếm tiền nhé. Nhưng em yên tâm nhé tất cả những tài liệu này sau sẽ có được gửi cho anh em cập nhật trên web Huân Academy đầy đủ nhé anh em yên tâm Ok mình chia sẻ Ok anh em nhìn thêm video chưa anh em nhìn video thì lên phím 1 cho mình Ok. Trong video này, tôi sẽ hướng dẫn bạn toàn bộ quy trình bật kiếm tiền kênh YouTube từ điều kiện cần có, cách tạo tài khoản Google AdSense cho đến xác minh AdSense đúng chuẩn và có thể tóm gọn lại bằng lộ trình bật kiếm tiền với 4 giai đoạn sau: 1. Đạt điều kiện, kiểm tra và đáp ứng các yêu cầu tối thiểu của YouTube. 2. Đăng ký và tạo AdSense, nộp đơn và liên kết với tài khoản Google AdSense 3 Chờ duyệt kênh, giai đoạn xem xét kênh của bạn bởi đội ngũ YouTube 4. Xác minh danh tính, hoàn tất xác minh để nhận thanh toán đầu tiên Vậy thì điều kiện để bật kiếm tiền YouTube là gì? Để bật kiếm tiền YouTube Kênh của bạn cần đáp ứng đồng thời 3 điều kiện. Thứ nhất, kênh có ít nhất 500 người đăng ký. Thứ hai, có 3 video công khai trong 90 ngày và 3.000 giờ xem công khai trong 12 tháng hoặc 3 triệu view Shorts. Thứ ba, kênh tuân thủ chính sách cộng đồng và chính sách kiếm tiền của YouTube. Đây là bước đệm trước khi đủ điều kiện cho kênh bật kiếm tiền đầy đủ cho video dài ở mốc 1.000 người đăng ký và 4.000 giờ xem. Khi đã đủ điều kiện bật kiếm tiền, chúng ta sẽ làm theo các bước sau. Bạn truy cập vào YouTube Studio. Chọn mục kiếm tiền. Tại đây, YouTube sẽ yêu cầu bạn 1. Đồng ý điều khoản chương trình đối tác YouTube. 2. Kết nối hoặc tạo tài khoản Google AdSense. Lưu ý, mỗi người chỉ nên có một tài khoản AdSense duy nhất. Việc tạo nhiều tài khoản có thể khiến bạn bị từ chối hoặc khóa vĩnh viễn. Đầu tiên, hãy đọc và đồng ý các điều khoản chương trình đối tác YouTube. Bước thứ 2. Kết nối với tài khoản GA. Nếu bạn chưa có, hãy chọn vào đây để tạo mới nhé. Chọn tài khoản Gmail để tạo GA. Chọn quốc gia Việt Nam. Đọc và tích đã đọc hết điều khoản. Chọn Setup Account. Tiếp theo, mọi người sẽ điền thông tin cá nhân tại đây. Chọn Individual là tài khoản cá nhân. Điền các thông tin của bạn như họ và tên. địa chỉ, thành phố và mã Postal Code của thành phố đó. Bạn có thể search Google để tra mã Postal Code nhé. Sau đó điền số điện thoại của bản thân và chọn submit. Chúng ta sẽ có vài lưu ý với những thông tin cần điền như sau. Thông tin bạn điền ở bước này sẽ được dùng để xác minh danh tính và nhận thanh toán. Mọi sai sót có thể dẫn đến việc bạn không nhận được tiền. Họ và tên phải trùng khớp 100% với tên trên giấy tờ tùy thân, căn cước công dân, hộ chiếu. Địa chỉ cư trú, địa chỉ thật, chính xác theo giấy tờ để nhận mã pin nếu cần. Số điện thoại, sim đang sử dụng và chính chủ có thể mua số mới. Chính chủ để tạo sẽ tốt hơn. Mã bưu chính, Postal Code, tìm mã bưu chính chính xác của tỉnh thành phố của bạn trên Google. Sau khi đã điền đầy đủ thông tin cá nhân, số điện thoại và submit, chúng ta sẽ xác minh số điện thoại, mã sẽ được gửi về máy trong 1 đến 3 phút. Sau khi hoàn thành, chọn trở về trang YouTube. Tài khoản Google AdSense đang đợi duyệt. Để kiểm tra lại một lần nữa, mọi người có thể truy cập vào Google AdSense. Thời gian tạo tài khoản nhanh thì trong một ngày, cá biệt lâu hơn có thể đến 2 tuần. Các bạn hãy kiểm tra thường xuyên ở phần bật kiếm tiền ở kênh hoặc trên tài khoản Google AdSense nhé. Đây là giao diện trang chủ của Google AdSense sau khi tài khoản đã được phê duyệt. Và bên trong YouTube Studio, bạn cũng có thể thấy trạng thái tài khoản đã được duyệt thành công. Sau khi tài khoản AdSense được duyệt, các bạn sẽ cần đợi duyệt bật kiếm tiền cho kênh. Thời gian đợi thông thường từ 3 đến 7 ngày, kênh bật kiếm tiền thành công sẽ có thông báo như thế này. Các bạn tiếp tục phát triển kênh, khi doanh thu đạt ngưỡng thu nhập nhất định thường là 10 USD, sẽ đến bước tiếp theo là xác minh danh tính cho tài khoản AdSense. Để xác minh danh tính tài khoản Google AdSense, bạn cần đạt ngưỡng thu nhập nhất định thường là 10 USD và cung cấp giấy tờ tùy thân hợp lệ, hộ chiếu. Chứng minh nhân dân, giấy phép lái xe có thông tin khớp với tài khoản, kèm theo ảnh rõ nét. Điều quan trọng là thông tin trên giấy tờ, tên, ngày sinh, địa chỉ phải khớp 100% với thông tin trong AdSense. Có 2 cách để xác minh. Cách 1, xác minh cách mới bằng giấy tờ tùy thân và xác minh khuôn mặt. Cách 2, xác minh bằng giấy tờ tùy thân và mã pin nhận qua đường bưu điện. Ở video này, mình sẽ hướng dẫn các bạn xác minh bằng cách 1, xác minh nhanh và an toàn hơn. Bước 1, các bạn ấn vào xác minh ngay. Xác minh danh tính qua Persona. Chúng ta sẽ được dẫn đến trang xác minh. Bạn bấm vào bắt đầu xác minh ngay. Tiếp theo bạn lựa chọn quốc gia. Bước này bạn có thể xác minh bằng giấy phép lái xe, căn cước công dân hoặc hộ chiếu. Mình chọn xác minh bằng căn cước công dân. Bước tiếp theo mình sẽ thực hiện trên điện thoại di động bằng cách quét mã trên màn hình. Trên điện thoại, bạn tiến hành chụp ảnh giấy tờ Bạn đưa mặt trước giấy tờ vào nằm bên trong 4 góc của khung hình Đảm bảo hình ảnh không lóa, rõ nét rồi thì các bạn bấm vào sử dụng ảnh này và đợi tải lên Hệ thống sẽ kiểm tra giấy tờ tùy thân của bạn Các bạn lưu ý rằng căn cước phải là căn cước công dân bản cũ Có đầy đủ thông tin nơi thường trú ở mặt trước thì mới xác minh được Nếu giấy tờ của bạn hợp lệ rồi thì sẽ hiện ra biểu mẫu này để bạn kiểm tra lại thông tin. Các bạn điền chính xác và đầy đủ thông tin theo giấy tờ và bấm tiếp tục. Bạn cấp quyền cho phép truy cập máy ảnh và tiến hành quét khuôn mặt theo mũi tên chỉ dẫn. Thông báo chúc mừng hiện lên là bạn đã xác minh thành công. Những lưu ý khi xác minh danh tính cần tránh 1. Không sử dụng một thông tin cá nhân để tạo nhiều tài khoản. Có thể vẫn tạo được nhưng sau sẽ bị quét và vô hiệu hóa toàn bộ. 2. Khi xác minh thất bại đến lần thứ 2, hãy nhờ sự trợ giúp từ đội ngũ hỗ trợ để đảm bảo xác minh chính xác. Vì mỗi tài khoản chỉ được phép xác minh 3 lần. 3. Thông tin sử dụng để tạo phải là thông tin thật, không làm giả giấy tờ để lách luật, cố tình sẽ bị vô hiệu hóa tài khoản. Đây là toàn bộ quy trình tạo tài khoản Google AdSense và bật kiếm tiền chính xác nhất, tuân thủ luật của YouTube. Chúc các bạn thực hiện thành công. Nếu cần hỗ trợ, hãy liên hệ qua hotline hoặc Zalo Huân Academy 088 9697 888. Ok, đây là video hướng dẫn. Dành cho video hướng dẫn bật kiếm tiền nhé. Cảm ơn anh em. Thật ra vừa qua anh em cũng hỏi khá nhiều phần này. Tuy nhiên là mình để làm video hướng dẫn nó được chi tiết thì cần thời gian để mình xác minh. Có những cách làm nó, anh em hộ đội, các đội họ có các cái tut, các mẹo người ta làm nhiều thì mình cũng biết. Nhưng mà tuy nhiên là mình muốn chia sẻ với anh em cái cách làm chuẩn nhất. Nhất anh em yên tâm nhé tất cả những video hướng dẫn này là sẽ có cập nhật đầy đủ trên website Huân Academy chi tiết đầy đủ sẽ có thêm cả phần hướng dẫn khai thuế 30% dành cho công dân không ở Hoa Kỳ và phần Add Bank phần đó khá đơn giản nhưng mình vẫn sẽ làm đầy đủ chi tiết để cho mọi người làm theo chuẩn yên tâm nó không bị sai bởi vì những cái phần này anh em bị làm sai một hai lần mà mình không không biết thì nó rất là nguy hiểm có lưu ý là cái phần xác minh danh tính này nó sẽ chỉ xác minh được ba lần thôi vì vậy nếu như mà anh em bị xác minh mà nó bị sai đến lần thứ hai rồi mà nó vẫn gặp vấn đề nó không xác minh được thì nên liên hệ với là cái này để anh em có thể nhận sự hỗ trợ có thể là TeamViewer để hỗ trợ thì anh em hãy tận dụng nguồn lực được hỗ trợ nhé chưa ra ngoài kia dịch vụ thì kiểu gì cũng mất tiền mà cũng chưa biết được như thế nào Ok mình có nhận được một vài câu hỏi ở đây liên quan đến VPS thì mình cũng sẽ chia sẻ một vài số đơn vị mà mình đang sử dụng mình cũng thấy đang ổn Về VPS nước ngoài thì mình cũng test khá là nhiều mình test cả của Google test của cả Amazon Amazon thì mình dùng lâu rồi Test của một vài đơn vị ở bên Pháp, bên Pháp mà nó sẽ, khi mình tạo mình không nhớ tên lắm nhưng mà mình tạo là mình phải, xác minh hộ chiếu nó mới cho mình dùng VPS của nó cơ. Thế thì trong quá trình sử dụng thì mình thấy là Amazon vẫn là top đầu về phần máy chủ ảo. Đợt vừa rồi thì anh em thấy có một cái đợt là nó bị sập mà không dùng Storyblocks rồi CapCut cái thứ ấy. Đó là liên quan đến server của ông Cloudflare, mà gốc của nó là VPS của Amazon gặp vấn đề. Máy chủ của Cloudflare đặt ở Amazon thì nó gặp vấn đề. Tất cả những tập đoàn lớn, công ty lớn về công nghệ thông tin thì họ đều đặt máy chủ ở máy chủ của Amazon hết. thì mình dùng thì mình thấy khá ổn. Trong quá trình đúc kết thì mình thấy là hiện tại thì mình chỉ tin dùng Amazon thôi. Và mình dùng cái gói mà 22$ 1 tháng thì thấy cũng khá là ổn. Về VPS của Việt Nam VPS ở Việt Nam thì mình cũng test khá nhiều đơn vị Tuy nhiên thì đến hiện tại thì mình chỉ có tìm thấy một đơn vị duy nhất mình cảm thấy là tin tưởng được và thời gian vừa qua mình cũng có tạo GA trên đó Mình cũng có đăng nhập rất là nhiều kênh lớn của bên mình lên trên đó Những mail gốc rất là lớn để đăng nhập trên đó để nuôi thì dùng từ tháng 7 đến bây giờ thì mình thấy nó rất là ổn định và mình kiểm tra mình check IP nó thấy ổn IP sạch, khá là sạch thì mình cảm thấy là nó ổn. Hiện tại mình đã đăng ký đại lý thành công với bên đó thì anh em có nhu cầu sử dụng VPS bên này thì có thể là nhắn tin qua Zalo của Huân Academy để nhận được báo giá và đăng ký sử dụng dịch vụ. thì từ đầu tuần tới thì dựa vào số lượng đăng ký thì mình sẽ bắt đầu cung cấp cho anh em và phần này thì mình lưu ý là lưu ý một chút là VPS này thì không rẻ anh em nhé, không rẻ, không rẻ, phần này VPS không rẻ đâu, nhưng mà mình thấy nó yên tâm. Ngoài ra thì có một vài đơn vị khác cung cấp của Việt Nam mà mình thấy cũng ổn và anh em dùng khá là nhiều Tuy nhiên là mình sẽ không đưa ra ý kiến rằng nó tốt hay là không tốt Bởi vì là hiện tại thì mình không dùng Mình không dùng, mình có test rồi Nhưng mà hiện tại mình không dùng, mình chỉ chia sẻ những cái mà mình dùng thôi Thì cái sẽ có một vài đơn vị anh em có thể tìm được Mình sẽ search web cho anh em nhé Em nhìn thấy màn hình của Chrome chưa Nhìn thấy rồi lên phím 1 giúp mình Ok Một vài đơn vị của Việt Nam thì mình thấy nó cũng khá ổn thì anh em có thể test thì mấy đơn vị này nó cũng có gói cấu hình nó cũng khá là ổn. Với kinh nghiệm của mình thì anh em sử dụng gói 2GB RAM. 2GB RAM là cũng ổn ổn rồi, gói trung bình rồi. Mình sẽ check thử nhé. Đây là Low End Việt nhé. Low End Việt. Đây là một đơn vị khá là tốt, anh em có thể test. Mình sẽ check thêm một đơn vị khác nữa. Họ cũng làm khá là lâu rồi, anh em có thể test thêm. Vietnix, Vietnix họ cũng có dịch vụ VPS này. Anh em có thể test thêm. Giá thì nó cũng hợp lý thôi. Ngoài ra thì có một đơn vị khác nữa gần đây mình thấy cũng khá là nổi. Lanit. Lanit. 3 đơn vị này thì mình thấy là họ cũng có lịch sử bề dày, họ triển khai rồi thì anh em có thể là mình sẽ dùng VPS 3 bên này được nhé. Nước ngoài thì ưu tiên dùng Amazon này, ở Việt Nam thì có thể test 3 đơn vị này, họ có thể liên hệ với đội ngũ hỗ trợ của Huân Academy để được báo giá về phần VPS, VPS trung bình, trung bình nhé, khoảng 300.000 một tháng. Ok ạ Anh em hỏi đáp Đến phần hỏi đáp Anh em hỏi đáp nếu có mic thì anh em có thể Raise hand nhé Mình sẽ mở mic nhé",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 9.907,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:09,907",
+      "text": "Hello anh em, về phần VPS thì thực ra nó có rất nhiều quan điểm về việc là dùng nên dùng hay không. Một số anh em thì họ vẫn dùng theo cách truyền thống là"
+    },
+    {
+      "id": 2,
+      "start": 9.907,
+      "end": 19.813,
+      "start_time": "00:00:09,907",
+      "end_time": "00:00:19,813",
+      "text": "một trong một cái máy họ có thể login đến cả mấy chục kênh, cả trăm kênh. Có những anh em thì họ chọn là Proxy để cho nó rẻ, nó tối ưu chi phí."
+    },
+    {
+      "id": 3,
+      "start": 19.813,
+      "end": 29.72,
+      "start_time": "00:00:19,813",
+      "end_time": "00:00:29,720",
+      "text": "Tuy nhiên thì với GODA thì mình luôn hướng đến là xây dựng một cái nền nó vững chắc, nó vẫn chắc từ những cái nhỏ nhất, từ những cái bảo mật rồi là phần kênh,"
+    },
+    {
+      "id": 4,
+      "start": 29.72,
+      "end": 39.713,
+      "start_time": "00:00:29,720",
+      "end_time": "00:00:39,713",
+      "text": "Vậy nên là bên mình cũng làm VPS bản thân mình làm VPS từ 2017 đến bây giờ thì mình cũng kiểm chứng là có những con VPS dùng đến bây giờ 8-9"
+    },
+    {
+      "id": 5,
+      "start": 39.713,
+      "end": 49.707,
+      "start_time": "00:00:39,713",
+      "end_time": "00:00:49,707",
+      "text": "năm rồi thì nó vẫn còn nguyên nó không bị làm sao cả đến bây giờ vẫn 1 IP và 1 cái con máy đấy 1 con máy ảo đấy nó không"
+    },
+    {
+      "id": 6,
+      "start": 49.707,
+      "end": 59.7,
+      "start_time": "00:00:49,707",
+      "end_time": "00:00:59,700",
+      "text": "bị ảnh hưởng đấy thì mình thấy là nó nó có sự ổn định như thế thì mình cũng yên tâm hơn phần nào so với là là proxy hay là những cái"
+    },
+    {
+      "id": 7,
+      "start": 59.7,
+      "end": 71.0,
+      "start_time": "00:00:59,700",
+      "end_time": "00:01:11,000",
+      "text": "Cái dạng khác. Anh em làm ít thì có thể là không phải quan tâm quá phần này nhưng anh em đã làm đến vài kênh hoặc chục kênh thì cũng sẽ cần phải rất là kỹ ở phần này."
+    },
+    {
+      "id": 8,
+      "start": 72.52,
+      "end": 80.26,
+      "start_time": "00:01:12,520",
+      "end_time": "00:01:20,260",
+      "text": "Đặc biệt là về phần khi mà nó có chính sách mới từ tháng 7 đến bây giờ, nó có chính sách là quét những kênh liên quan."
+    },
+    {
+      "id": 9,
+      "start": 80.26,
+      "end": 89.22,
+      "start_time": "00:01:20,260",
+      "end_time": "00:01:29,220",
+      "text": "liên quan thì bất kỳ khi mà anh em dính một cái lỗi nào đó liên quan đến kênh mà nó bị mà phát thôi thì gần như là có thể bị quét bay cả hệ thống luôn"
+    },
+    {
+      "id": 10,
+      "start": 89.22,
+      "end": 92.8,
+      "start_time": "00:01:29,220",
+      "end_time": "00:01:32,800",
+      "text": "thì đấy là một cái phần rất là đáng lưu tâm"
+    },
+    {
+      "id": 11,
+      "start": 92.8,
+      "end": 100.3,
+      "start_time": "00:01:32,800",
+      "end_time": "00:01:40,300",
+      "text": "dưới mấy kênh thì nên chứ nên dùng để nó tách ra"
+    },
+    {
+      "id": 12,
+      "start": 100.642,
+      "end": 110.315,
+      "start_time": "00:01:40,642",
+      "end_time": "00:01:50,315",
+      "text": "Anh em vẫn có lựa chọn riêng của anh em thôi. Nếu mà mình dùng mà nó cảm thấy ổn thì mình vẫn cứ dùng. Không có ai bắt"
+    },
+    {
+      "id": 13,
+      "start": 110.315,
+      "end": 119.989,
+      "start_time": "00:01:50,315",
+      "end_time": "00:01:59,989",
+      "text": "ép cả. Bởi vì nó là cái niềm tin của mỗi người. Bên mình thì cũng làm rất là nhiều. Bây giờ quản lý khoảng 1.000 cái mail. Một"
+    },
+    {
+      "id": 14,
+      "start": 119.989,
+      "end": 129.662,
+      "start_time": "00:01:59,989",
+      "end_time": "00:02:09,662",
+      "text": "cái mail bao gồm mail gốc, mail quản trị, GA các thứ. Dùng rất là nhiều. Có khoảng hơn 100 con VPS rồi. Chấm 2, chấm 3 con này."
+    },
+    {
+      "id": 15,
+      "start": 130.642,
+      "end": 137.642,
+      "start_time": "00:02:10,642",
+      "end_time": "00:02:17,642",
+      "text": "Anh em cứ để phần hỏi đáp tí nữa mình sẽ đến phần hỏi đáp nhé. Có hỏi để sau nhé, sẽ có phần hỏi đáp riêng."
+    },
+    {
+      "id": 16,
+      "start": 137.642,
+      "end": 145.642,
+      "start_time": "00:02:17,642",
+      "end_time": "00:02:25,642",
+      "text": "Phần hỏi đáp bao gồm về tất cả các hỏi liên quan đến VPS và bảo mật."
+    },
+    {
+      "id": 17,
+      "start": 145.642,
+      "end": 152.642,
+      "start_time": "00:02:25,642",
+      "end_time": "00:02:32,642",
+      "text": "Hôm nay sẽ là một cái Zoom dự định là mình tổ chức từ trước đó cơ nhưng mà liên quan đến"
+    },
+    {
+      "id": 18,
+      "start": 152.642,
+      "end": 159.642,
+      "start_time": "00:02:32,642",
+      "end_time": "00:02:39,642",
+      "text": "phần VPS để cung cấp đến anh em thì cái giải pháp mình đã test từ tháng 7 đến bây giờ"
+    },
+    {
+      "id": 19,
+      "start": 159.642,
+      "end": 168.962,
+      "start_time": "00:02:39,642",
+      "end_time": "00:02:48,962",
+      "text": "Họp đồng hơi lâu một chút, đến hôm nay với Chốt được lịch, có tuần rồi Chốt được lịch và hôm nay thì anh em mới ngồi Zoom với nhau, chia sẻ."
+    },
+    {
+      "id": 20,
+      "start": 171.25,
+      "end": 178.91,
+      "start_time": "00:02:51,250",
+      "end_time": "00:02:58,910",
+      "text": "Đây là những phần mà chính mình đang làm, đang thấy nó hiệu quả và nó đảm bảo an toàn cho hệ thống nên là mình chia sẻ với anh em."
+    },
+    {
+      "id": 21,
+      "start": 180.07,
+      "end": 184.47,
+      "start_time": "00:03:00,070",
+      "end_time": "00:03:04,470",
+      "text": "Ở cái mảng MMO này thì cũng muốn lưu ý với anh em là nó không có đúng, không có sai."
+    },
+    {
+      "id": 22,
+      "start": 185.27,
+      "end": 188.11,
+      "start_time": "00:03:05,270",
+      "end_time": "00:03:08,110",
+      "text": "Mỗi anh em sẽ có một góc nhìn và mỗi anh em một quan điểm khác nhau."
+    },
+    {
+      "id": 23,
+      "start": 188.85,
+      "end": 192.53,
+      "start_time": "00:03:08,850",
+      "end_time": "00:03:12,530",
+      "text": "Vậy là anh em hãy tham khảo cái cách này là cách của GODA nhé."
+    },
+    {
+      "id": 24,
+      "start": 192.53,
+      "end": 196.05,
+      "start_time": "00:03:12,530",
+      "end_time": "00:03:16,050",
+      "text": "Mình không đại diện tất cả anh em nào hay là trường phái nào cả."
+    },
+    {
+      "id": 25,
+      "start": 196.31,
+      "end": 197.37,
+      "start_time": "00:03:16,310",
+      "end_time": "00:03:17,370",
+      "text": "Chỉ là cái cách mình làm thôi."
+    },
+    {
+      "id": 26,
+      "start": 197.99,
+      "end": 199.07,
+      "start_time": "00:03:17,990",
+      "end_time": "00:03:19,070",
+      "text": "Đó đảm bảo an toàn thôi."
+    },
+    {
+      "id": 27,
+      "start": 201.25,
+      "end": 213.25,
+      "start_time": "00:03:21,250",
+      "end_time": "00:03:33,250",
+      "text": "Anh em nhìn thấy màn hình nhỉ? Anh em nhìn thấy rồi thì gõ phím 1 nhé. Ok ok. Phần này là quản trị bảo mật kênh YouTube theo mô hình của GODA mình đang triển khai bây giờ nhé."
+    },
+    {
+      "id": 28,
+      "start": 215.0,
+      "end": 227.71,
+      "start_time": "00:03:35,000",
+      "end_time": "00:03:47,710",
+      "text": "Đầu tiên là về phần tư duy quản trị cốt lõi. VPS trong hệ thống của mình thì mình coi nó không chỉ là một cái máy ảo mà nó là một cái tài sản để nó chứa cái email, làm kênh, chứa kênh YouTube."
+    },
+    {
+      "id": 29,
+      "start": 227.71,
+      "end": 232.31,
+      "start_time": "00:03:47,710",
+      "end_time": "00:03:52,310",
+      "text": "và hiện tại thì mình đang dùng nó để chứa cả tài khoản Google AdSense nữa luôn."
+    },
+    {
+      "id": 30,
+      "start": 234.11,
+      "end": 240.63,
+      "start_time": "00:03:54,110",
+      "end_time": "00:04:00,630",
+      "text": "Nguyên tắc vàng khi mình sử dụng cái VPS này, máy chủ ảo này thì nó là một hệ sinh thái khép kín."
+    },
+    {
+      "id": 31,
+      "start": 241.11,
+      "end": 249.65,
+      "start_time": "00:04:01,110",
+      "end_time": "00:04:09,650",
+      "text": "Thì cái mục tiêu của mình khi mình dùng VPS, mình cũng test rất là nhiều, mình test Proxy, test cả GPMLogin, anh em hay bảo cái đấy."
+    },
+    {
+      "id": 32,
+      "start": 249.65,
+      "end": 251.69,
+      "start_time": "00:04:09,650",
+      "end_time": "00:04:11,690",
+      "text": "Thì bên mình có test hết, mình sử dụng hết."
+    },
+    {
+      "id": 33,
+      "start": 251.69,
+      "end": 261.69,
+      "start_time": "00:04:11,690",
+      "end_time": "00:04:21,690",
+      "text": "thì GPMLogin mà dùng với sim 4G thì cũng được nhưng thực ra thì nếu như mà dùng nhiều sim như thế thì nó cũng không ổn lắm"
+    },
+    {
+      "id": 34,
+      "start": 261.69,
+      "end": 271.73,
+      "start_time": "00:04:21,690",
+      "end_time": "00:04:31,730",
+      "text": "xây dạng phone farm thì nó cũng không ổn lắm về mặt tối ưu và nó không chủ động lắm nên là mình không thích mình test không ổn lắm"
+    },
+    {
+      "id": 35,
+      "start": 272.417,
+      "end": 274.077,
+      "start_time": "00:04:32,417",
+      "end_time": "00:04:34,077",
+      "text": "Proxy thì nó thiếu sự ổn định nên mình không dùng."
+    },
+    {
+      "id": 36,
+      "start": 275.037,
+      "end": 278.777,
+      "start_time": "00:04:35,037",
+      "end_time": "00:04:38,777",
+      "text": "Mục tiêu ở đây là tránh liên đới, tránh bị quét hàng loạt, tăng độ tin cậy lâu dài."
+    },
+    {
+      "id": 37,
+      "start": 278.957,
+      "end": 283.357,
+      "start_time": "00:04:38,957",
+      "end_time": "00:04:43,357",
+      "text": "Đợt vừa qua sau tháng 7 thì anh em thấy là có những hệ thống bay cả một hệ thống luôn."
+    },
+    {
+      "id": 38,
+      "start": 283.577,
+      "end": 285.457,
+      "start_time": "00:04:43,577",
+      "end_time": "00:04:45,457",
+      "text": "Bên bay cả hệ thống bởi vì là bị quét lan."
+    },
+    {
+      "id": 39,
+      "start": 285.457,
+      "end": 293.07,
+      "start_time": "00:04:45,457",
+      "end_time": "00:04:53,070",
+      "text": "Thì cái bản chất của cái quét lan là gì? Thì họ sẽ quét một là những cái thông tin mà cái người đó đang đăng ký."
+    },
+    {
+      "id": 40,
+      "start": 293.07,
+      "end": 300.684,
+      "start_time": "00:04:53,070",
+      "end_time": "00:05:00,684",
+      "text": "Ví dụ như mình đăng ký với cái tên của mình đi, Hoàng đi, với cái số điện thoại đấy và các email đấy. Lại còn chung một"
+    },
+    {
+      "id": 41,
+      "start": 300.684,
+      "end": 308.297,
+      "start_time": "00:05:00,684",
+      "end_time": "00:05:08,297",
+      "text": "IP và chung cái fingerprint là cái nhận diện của mình ấy. Với cái thao tác tay của mình và mọi thứ, lịch sử các thứ ấy."
+    },
+    {
+      "id": 42,
+      "start": 308.297,
+      "end": 314.577,
+      "start_time": "00:05:08,297",
+      "end_time": "00:05:14,577",
+      "text": "Về sau khi một kênh gặp sự cố bị die chết vì một lý do nào đó thì tất cả các kênh khác đều bị"
+    },
+    {
+      "id": 43,
+      "start": 314.577,
+      "end": 321.157,
+      "start_time": "00:05:14,577",
+      "end_time": "00:05:21,157",
+      "text": "thì nó quá rủi ro khi mà mình dùng chung một cái IP và nhiều kênh như đó"
+    },
+    {
+      "id": 44,
+      "start": 321.157,
+      "end": 323.597,
+      "start_time": "00:05:21,157",
+      "end_time": "00:05:23,597",
+      "text": "thế này cứ là mục tiêu của nó"
+    },
+    {
+      "id": 45,
+      "start": 323.597,
+      "end": 326.877,
+      "start_time": "00:05:23,597",
+      "end_time": "00:05:26,877",
+      "text": "và về dài hạn thì bởi vì là VPS nó rất là"
+    },
+    {
+      "id": 46,
+      "start": 326.877,
+      "end": 332.277,
+      "start_time": "00:05:26,877",
+      "end_time": "00:05:32,277",
+      "text": "mình cảm nhận nó rất là an toàn và nó rất là ổn định"
+    },
+    {
+      "id": 47,
+      "start": 332.277,
+      "end": 340.757,
+      "start_time": "00:05:32,277",
+      "end_time": "00:05:40,757",
+      "text": "Vì vậy nên là về dài hạn với 1 email chỉ để trên 1 con VPS thì nó cũng sẽ tốt hơn rất là nhiều."
+    },
+    {
+      "id": 48,
+      "start": 342.977,
+      "end": 346.497,
+      "start_time": "00:05:42,977",
+      "end_time": "00:05:46,497",
+      "text": "Tiếp theo đó là phần quản trị bảo mật kênh với VPS."
+    },
+    {
+      "id": 49,
+      "start": 347.997,
+      "end": 352.697,
+      "start_time": "00:05:47,997",
+      "end_time": "00:05:52,697",
+      "text": "Phần này thì mình cần phải phân loại rõ 2 loại email nhé."
+    },
+    {
+      "id": 50,
+      "start": 353.0,
+      "end": 361.13,
+      "start_time": "00:05:53,000",
+      "end_time": "00:06:01,130",
+      "text": "2 loại email. Bên mình thì dùng VPS, nên là mình chia sẻ cho VPS, thì nó có 2 loại email. Đầu tiên nó là email gốc nè."
+    },
+    {
+      "id": 51,
+      "start": 361.51,
+      "end": 368.57,
+      "start_time": "00:06:01,510",
+      "end_time": "00:06:08,570",
+      "text": "Email gốc là gì? Là email mình dùng để mình nuôi rồi mình tạo kênh trên cái email đó. Tạo kênh nhé, chủ sở hữu chính của kênh ấy."
+    },
+    {
+      "id": 52,
+      "start": 369.13,
+      "end": 378.87,
+      "start_time": "00:06:09,130",
+      "end_time": "00:06:18,870",
+      "text": "Tạo ra cái kênh đó. Quản trị kênh đó. Và backup. Thì thông thường là email gốc này thì mình chỉ tạo kênh và sau đó mình xác minh 3 dòng rồi setup đủ các thứ."
+    },
+    {
+      "id": 53,
+      "start": 378.87,
+      "end": 391.75,
+      "start_time": "00:06:18,870",
+      "end_time": "00:06:31,750",
+      "text": "và mình để không nó thôi, mình không dùng đến luôn. Cái email này thỉnh thoảng vào check, đọc email rồi là tương tác một chút thôi chứ cũng gần như là không sử dụng bởi vì là nó là email gốc mà mình để cho nó back up để an toàn thôi."
+    },
+    {
+      "id": 54,
+      "start": 393.45,
+      "end": 401.61,
+      "start_time": "00:06:33,450",
+      "end_time": "00:06:41,610",
+      "text": "Thì ở cái email gốc này thì mình sẽ login là tối đa là 5 email, 5 email, 5 kênh trên 1 VPS, tối đa chỉ thế thôi."
+    },
+    {
+      "id": 55,
+      "start": 401.61,
+      "end": 408.61,
+      "start_time": "00:06:41,610",
+      "end_time": "00:06:48,610",
+      "text": "Thì mình cảm thấy nó an toàn, anh em có thể login nhiều hơn nhưng mà với góc nhìn của mình thì nên 5 kênh thôi, 5 kênh, 5 email thôi."
+    },
+    {
+      "id": 56,
+      "start": 408.61,
+      "end": 415.81,
+      "start_time": "00:06:48,610",
+      "end_time": "00:06:55,810",
+      "text": "Mình không nên tiết kiệm một cách mình login nhiều quá thì thành ra nó lại như bài toán cũ là chục kênh trên 1 IP thì nó cũng bằng nhau."
+    },
+    {
+      "id": 57,
+      "start": 415.81,
+      "end": 417.71,
+      "start_time": "00:06:55,810",
+      "end_time": "00:06:57,710",
+      "text": "Khi nó gặp rủi ro quá thì nó vẫn lan lên bình thường."
+    },
+    {
+      "id": 58,
+      "start": 417.71,
+      "end": 426.05,
+      "start_time": "00:06:57,710",
+      "end_time": "00:07:06,050",
+      "text": "có một cái lưu ý ở đây nữa là không dùng email gốc để làm kênh và đặc biệt là không chứa tài"
+    },
+    {
+      "id": 59,
+      "start": 426.05,
+      "end": 431.63,
+      "start_time": "00:07:06,050",
+      "end_time": "00:07:11,630",
+      "text": "khoản Google AdSense anh em có một cái lỗi là là mình dùng email gốc của cái kênh xong mình là dùng"
+    },
+    {
+      "id": 60,
+      "start": 431.63,
+      "end": 437.71,
+      "start_time": "00:07:11,630",
+      "end_time": "00:07:17,710",
+      "text": "làm AdSense luôn thì nó có một cái rủi ro như thế này là khi cái kênh đến lỡ mình làm sai nó gặp vấn đề một"
+    },
+    {
+      "id": 61,
+      "start": 437.71,
+      "end": 440.53,
+      "start_time": "00:07:17,710",
+      "end_time": "00:07:20,530",
+      "text": "thì có thể là mình vứt cả cái AdSense ấy luôn"
+    },
+    {
+      "id": 62,
+      "start": 440.53,
+      "end": 443.09,
+      "start_time": "00:07:20,530",
+      "end_time": "00:07:23,090",
+      "text": "thì mình không dùng cho kênh khác được"
+    },
+    {
+      "id": 63,
+      "start": 443.09,
+      "end": 446.45,
+      "start_time": "00:07:23,090",
+      "end_time": "00:07:26,450",
+      "text": "có những cái lỗi nhẹ nhẹ thì mình vẫn có thể dùng lại Google AdSense"
+    },
+    {
+      "id": 64,
+      "start": 446.45,
+      "end": 448.33,
+      "start_time": "00:07:26,450",
+      "end_time": "00:07:28,330",
+      "text": "ví dụ như lỗi Reuse này"
+    },
+    {
+      "id": 65,
+      "start": 448.33,
+      "end": 450.512,
+      "start_time": "00:07:28,330",
+      "end_time": "00:07:30,512",
+      "text": "mà nhẹ nhàng thì mình vẫn có thể dùng được AdSense này"
+    },
+    {
+      "id": 66,
+      "start": 450.512,
+      "end": 460.272,
+      "start_time": "00:07:30,512",
+      "end_time": "00:07:40,272",
+      "text": "hoặc trong trường hợp là mình bị chết kênh, dạng chết kênh mà dạng lỗi nhẹ, dạng spam các thứ thì thực ra là cái AdSense này anh em vẫn dùng được lại."
+    },
+    {
+      "id": 67,
+      "start": 460.892,
+      "end": 465.432,
+      "start_time": "00:07:40,892",
+      "end_time": "00:07:45,432",
+      "text": "Không nhất thiết là cứ phải bỏ đi dùng AdSense mới vì cái thông tin mình có nó cũng giới hạn thôi."
+    },
+    {
+      "id": 68,
+      "start": 465.432,
+      "end": 471.552,
+      "start_time": "00:07:45,432",
+      "end_time": "00:07:51,552",
+      "text": "Mình mượn cũng chỉ được là trong vòng quan hệ là vợ chồng hay là anh em họ hàng mà rất thân thiết thì mới mượn được thôi."
+    },
+    {
+      "id": 69,
+      "start": 471.692,
+      "end": 476.332,
+      "start_time": "00:07:51,692",
+      "end_time": "00:07:56,332",
+      "text": "Chứ còn ngoài ra thì cũng rất là khó để mượn được thông tin của anh em khác nữa."
+    },
+    {
+      "id": 70,
+      "start": 476.332,
+      "end": 480.692,
+      "start_time": "00:07:56,332",
+      "end_time": "00:08:00,692",
+      "text": "để họ sẽ lo ngại vấn đề về thông tin cá nhân rồi bảo mật các thứ."
+    },
+    {
+      "id": 71,
+      "start": 482.312,
+      "end": 483.432,
+      "start_time": "00:08:02,312",
+      "end_time": "00:08:03,432",
+      "text": "Có những lưu ý như này."
+    },
+    {
+      "id": 72,
+      "start": 484.512,
+      "end": 489.472,
+      "start_time": "00:08:04,512",
+      "end_time": "00:08:09,472",
+      "text": "Về phần email làm kênh, thì mỗi email chỉ có sở hữu 1 kênh duy nhất thôi."
+    },
+    {
+      "id": 73,
+      "start": 490.472,
+      "end": 494.812,
+      "start_time": "00:08:10,472",
+      "end_time": "00:08:14,812",
+      "text": "Mỗi email chỉ sở hữu 1 kênh duy nhất và chỉ sử dụng trên 1 VPS duy nhất."
+    },
+    {
+      "id": 74,
+      "start": 497.112,
+      "end": 498.412,
+      "start_time": "00:08:17,112",
+      "end_time": "00:08:18,412",
+      "text": "Thì có nghĩa là gì?"
+    },
+    {
+      "id": 75,
+      "start": 498.412,
+      "end": 504.992,
+      "start_time": "00:08:18,412",
+      "end_time": "00:08:24,992",
+      "text": "Có nghĩa là nếu với 1 kênh của GODA làm thì bên mình sẽ sử dụng 2 VPS, bao gồm 1 VPS gốc."
+    },
+    {
+      "id": 76,
+      "start": 506.2,
+      "end": 516.193,
+      "start_time": "00:08:26,200",
+      "end_time": "00:08:36,193",
+      "text": "chứa 5 email gốc có kênh ở trong đó và 1 email để làm kênh thì 1 email thì bằng 1 kênh 1 VPS thì cái này nó liên quan đến cô lập rủi"
+    },
+    {
+      "id": 77,
+      "start": 516.193,
+      "end": 526.187,
+      "start_time": "00:08:36,193",
+      "end_time": "00:08:46,187",
+      "text": "ro từng kênh này và bên mình thì bên mình sẽ cấp quyền vào VPS cho anh em quản lý anh em quản lý thì anh em lại sẽ lên chỉ làm việc thôi"
+    },
+    {
+      "id": 78,
+      "start": 526.187,
+      "end": 536.18,
+      "start_time": "00:08:46,187",
+      "end_time": "00:08:56,180",
+      "text": "chứ không dùng cái gì khác vì VPS thực ra nó hơi lag một chút anh em dùng quen thì nó quen thôi chứ còn thực ra nó vẫn lag và mình sẽ quản"
+    },
+    {
+      "id": 79,
+      "start": 536.18,
+      "end": 542.18,
+      "start_time": "00:08:56,180",
+      "end_time": "00:09:02,180",
+      "text": "Quản trị bằng cách như vậy, toàn bộ email làm kênh rồi email gốc là mình cầm hết thông tin hết để bảo mật thông tin."
+    },
+    {
+      "id": 80,
+      "start": 543.18,
+      "end": 548.18,
+      "start_time": "00:09:03,180",
+      "end_time": "00:09:08,180",
+      "text": "Còn anh em quản lý thì chỉ tập trung làm nghề thôi, có những cái phần mà cấp kênh cái thứ thì mình làm hết."
+    },
+    {
+      "id": 81,
+      "start": 549.18,
+      "end": 556.18,
+      "start_time": "00:09:09,180",
+      "end_time": "00:09:16,180",
+      "text": "Đó, thì nó rất là tối ưu trong quá trình mà quản trị nhiều kênh. Bây giờ bên mình cũng khá là nhiều kênh rồi thì không thể nào"
+    },
+    {
+      "id": 82,
+      "start": 556.18,
+      "end": 563.18,
+      "start_time": "00:09:16,180",
+      "end_time": "00:09:23,180",
+      "text": "mà cứ cấp quyền cho nhiều anh em xong anh em lại làm việc ở máy ở nhà được thì nó cũng bị vấn đề là anh em bị"
+    },
+    {
+      "id": 83,
+      "start": 563.18,
+      "end": 574.82,
+      "start_time": "00:09:23,180",
+      "end_time": "00:09:34,820",
+      "text": "thì nó cũng bị vấn đề về bảo mật và đồng bộ IP."
+    },
+    {
+      "id": 84,
+      "start": 574.82,
+      "end": 578.92,
+      "start_time": "00:09:34,820",
+      "end_time": "00:09:38,920",
+      "text": "Bên mình có câu chuyện vui vui là anh em đang nhậu"
+    },
+    {
+      "id": 85,
+      "start": 578.92,
+      "end": 584.54,
+      "start_time": "00:09:38,920",
+      "end_time": "00:09:44,540",
+      "text": "Anh nhậu rồi tự nhiên thấy đến giờ 8-9 giờ thì đồng loạt lôi điện thoại ra"
+    },
+    {
+      "id": 86,
+      "start": 584.54,
+      "end": 592.72,
+      "start_time": "00:09:44,540",
+      "end_time": "00:09:52,720",
+      "text": "Thì lúc đấy là anh em đang đăng bài bài tab cộng đồng hoặc là anh em đang vào public video"
+    },
+    {
+      "id": 87,
+      "start": 592.72,
+      "end": 594.82,
+      "start_time": "00:09:52,720",
+      "end_time": "00:09:54,820",
+      "text": "Có một điểm nữa bên mình là"
+    },
+    {
+      "id": 88,
+      "start": 594.82,
+      "end": 607.342,
+      "start_time": "00:09:54,820",
+      "end_time": "00:10:07,342",
+      "text": "video trừ các video mà vào public vào cái khung giờ mà 1 giờ sáng đến 7 giờ sáng ấy thì bên mình không public bằng tay mà hẹn giờ còn lại thì là bên mình ưu tiên bằng tay hết"
+    },
+    {
+      "id": 89,
+      "start": 607.342,
+      "end": 616.342,
+      "start_time": "00:10:07,342",
+      "end_time": "00:10:16,342",
+      "text": "link bằng tay công khai bằng tay đấy là cái cách bên mình làm thôi. Ở đây thì mình có một cái nguyên tắc bảo mật email này cái phần này"
+    },
+    {
+      "id": 90,
+      "start": 616.342,
+      "end": 625.342,
+      "start_time": "00:10:16,342",
+      "end_time": "00:10:25,342",
+      "text": "là cái kinh nghiệm của mình làm và cũng kiểm nghiệm qua cái đợt vừa rồi là quét lan rất là nhiều bên mình cũng chết nhiều kênh chứ không phải không"
+    },
+    {
+      "id": 91,
+      "start": 625.342,
+      "end": 634.0,
+      "start_time": "00:10:25,342",
+      "end_time": "00:10:34,000",
+      "text": "thì những chủ đề mà nó có rủi ro để có chết kênh chứ không phải không thì mỗi email khôi phục mỗi email chỉ nối một email khôi phục thôi."
+    },
+    {
+      "id": 92,
+      "start": 634.0,
+      "end": 640.742,
+      "start_time": "00:10:34,000",
+      "end_time": "00:10:40,742",
+      "text": "Mỗi email chỉ nối 1 email khôi phục duy nhất nhé. Và các email được nối theo vòng tròn khép kín."
+    },
+    {
+      "id": 93,
+      "start": 640.742,
+      "end": 644.742,
+      "start_time": "00:10:40,742",
+      "end_time": "00:10:44,742",
+      "text": "Thì mình thì mình hay nối là 2 đến 3 email trong 1 vòng tròn."
+    },
+    {
+      "id": 94,
+      "start": 644.742,
+      "end": 658.342,
+      "start_time": "00:10:44,742",
+      "end_time": "00:10:58,342",
+      "text": "2 đến 3 email trong 1 vòng tròn. Ví dụ như hoàng 1 nối khôi phục với hoàng 2, trong hoàng 2 nối khôi phục với hoàng 3, hoàng 3 nối khôi phục lại với hoàng 1. Thì mình chỉ nối như vậy thôi."
+    },
+    {
+      "id": 95,
+      "start": 658.45,
+      "end": 661.95,
+      "start_time": "00:10:58,450",
+      "end_time": "00:11:01,950",
+      "text": "tốt nhất là 2 email nối với nhau"
+    },
+    {
+      "id": 96,
+      "start": 661.95,
+      "end": 666.45,
+      "start_time": "00:11:01,950",
+      "end_time": "00:11:06,450",
+      "text": "khoảng 1 nối với 2 email backup lẫn cho nhau"
+    },
+    {
+      "id": 97,
+      "start": 666.45,
+      "end": 672.45,
+      "start_time": "00:11:06,450",
+      "end_time": "00:11:12,450",
+      "text": "thì nó sẽ tốt nhất để tránh rủi ro bị chết lan nhiều"
+    },
+    {
+      "id": 98,
+      "start": 672.45,
+      "end": 679.45,
+      "start_time": "00:11:12,450",
+      "end_time": "00:11:19,450",
+      "text": "ở phần này thì khi mà liên quan đến phần chết lan thì một lý do nữa mình dùng VPS"
+    },
+    {
+      "id": 99,
+      "start": 679.45,
+      "end": 684.45,
+      "start_time": "00:11:19,450",
+      "end_time": "00:11:24,450",
+      "text": "khi mà trong một con VPS có 5 kênh gốc thì nó có một kênh gặp vấn đề"
+    },
+    {
+      "id": 100,
+      "start": 684.45,
+      "end": 696.45,
+      "start_time": "00:11:24,450",
+      "end_time": "00:11:36,450",
+      "text": "Các bạn có thể thì mình sẽ cô lập kênh đó ở lại con VPS đó để về sau mình kháng. Mình sẽ tìm khách mình khám bằng được. Còn 4 kênh còn lại mình sẽ login sang con VPS mới tinh."
+    },
+    {
+      "id": 101,
+      "start": 696.45,
+      "end": 708.45,
+      "start_time": "00:11:36,450",
+      "end_time": "00:11:48,450",
+      "text": "Đó thì đấy là cái phần mình cô lập, cô lập những cái kênh. Giống như anh em là ở quê thì biết rằng là mình nuôi lợn, nuôi gà, nó có một con mà nó bị bệnh thì mình phải cô lập nó lại."
+    },
+    {
+      "id": 102,
+      "start": 708.45,
+      "end": 720.45,
+      "start_time": "00:11:48,450",
+      "end_time": "00:12:00,450",
+      "text": "Để mình phải chuyển nó sang một trại mới để mình đảm bảo nó không bị lây lan. Bây giờ để nó lây lan thì bao công sức đổ sông đổ bể hết."
+    },
+    {
+      "id": 103,
+      "start": 720.45,
+      "end": 731.15,
+      "start_time": "00:12:00,450",
+      "end_time": "00:12:11,150",
+      "text": "Ở phần đây lưu ý không được làm là mình không nối quá 3 email. Một số anh em làm theo kiểu là 1 email khôi phục cho hàng chục kênh, mấy chục kênh liền."
+    },
+    {
+      "id": 104,
+      "start": 731.15,
+      "end": 734.99,
+      "start_time": "00:12:11,150",
+      "end_time": "00:12:14,990",
+      "text": "Anh em bảo không vấn đề gì cho đến khi gặp vấn đề"
+    },
+    {
+      "id": 105,
+      "start": 735.25,
+      "end": 738.57,
+      "start_time": "00:12:15,250",
+      "end_time": "00:12:18,570",
+      "text": "Thì đến khi mà nó gặp vấn đề rồi thì nó quá là xót xa"
+    },
+    {
+      "id": 106,
+      "start": 738.83,
+      "end": 742.41,
+      "start_time": "00:12:18,830",
+      "end_time": "00:12:22,410",
+      "text": "Có khi cả hệ thống một vài trăm nghìn có thể bay vì những lỗi"
+    },
+    {
+      "id": 107,
+      "start": 742.93,
+      "end": 746.77,
+      "start_time": "00:12:22,930",
+      "end_time": "00:12:26,770",
+      "text": "Lỗi quá đơn giản và lỗi quá lười như vậy thì nó phí lắm"
+    },
+    {
+      "id": 108,
+      "start": 746.77,
+      "end": 748.05,
+      "start_time": "00:12:26,770",
+      "end_time": "00:12:28,050",
+      "text": "Nó phí công sức anh em làm lắm"
+    },
+    {
+      "id": 109,
+      "start": 748.31,
+      "end": 751.19,
+      "start_time": "00:12:28,310",
+      "end_time": "00:12:31,190",
+      "text": "Xây dựng thì lâu chứ mà rụng thì nhanh lắm"
+    },
+    {
+      "id": 110,
+      "start": 751.817,
+      "end": 754.817,
+      "start_time": "00:12:31,817",
+      "end_time": "00:12:34,817",
+      "text": "Mà cái đấy mình có thể làm được thì anh em nên làm."
+    },
+    {
+      "id": 111,
+      "start": 754.817,
+      "end": 758.817,
+      "start_time": "00:12:34,817",
+      "end_time": "00:12:38,817",
+      "text": "Tiếp đấy thì không được làm mỗi email khôi phục cho nhiều email khác này."
+    },
+    {
+      "id": 112,
+      "start": 758.817,
+      "end": 766.817,
+      "start_time": "00:12:38,817",
+      "end_time": "00:12:46,817",
+      "text": "Lý do này, khi mà mình để nhiều kênh khôi phục cùng một email thì nó bị vấn đề là nó lan."
+    },
+    {
+      "id": 113,
+      "start": 766.817,
+      "end": 772.817,
+      "start_time": "00:12:46,817",
+      "end_time": "00:12:52,817",
+      "text": "Thế mà phần này mình không làm thì để cho nó là không bị sập, cả một dây chuyền, cả một hệ thống của mình nó không bị sập tất."
+    },
+    {
+      "id": 114,
+      "start": 772.817,
+      "end": 774.817,
+      "start_time": "00:12:52,817",
+      "end_time": "00:12:54,817",
+      "text": "Thế đây là lý do thôi."
+    },
+    {
+      "id": 115,
+      "start": 774.817,
+      "end": 780.817,
+      "start_time": "00:12:54,817",
+      "end_time": "00:13:00,817",
+      "text": "Tiếp theo thì chúng ta đến phần 3 là nuôi email chăm sóc tài khoản Google AdSense."
+    },
+    {
+      "id": 116,
+      "start": 780.817,
+      "end": 788.567,
+      "start_time": "00:13:00,817",
+      "end_time": "00:13:08,567",
+      "text": "Vừa rồi anh em quan tâm khá nhiều bởi vì anh em bị bị mắc vào phần này rất là nhiều thì lát nữa"
+    },
+    {
+      "id": 117,
+      "start": 788.567,
+      "end": 796.317,
+      "start_time": "00:13:08,567",
+      "end_time": "00:13:16,317",
+      "text": "nó sẽ có một video hướng dẫn anh em chi tiết các bước từ A đến Z tạo tài khoản Google AdSense luôn."
+    },
+    {
+      "id": 118,
+      "start": 796.317,
+      "end": 804.357,
+      "start_time": "00:13:16,317",
+      "end_time": "00:13:24,357",
+      "text": "Lát nữa sẽ có. Ở phần chuẩn bị email này, trước khi anh em lập tài khoản Google AdSense thì mình sẽ cần phải có email trước."
+    },
+    {
+      "id": 119,
+      "start": 805.357,
+      "end": 815.077,
+      "start_time": "00:13:25,357",
+      "end_time": "00:13:35,077",
+      "text": "Thì anh em có thể sử dụng email mình đã dùng lâu rồi, nhưng mà mình chưa tạo Google AdSense. Nhưng mà có cái điều phải lưu ý là"
+    },
+    {
+      "id": 120,
+      "start": 815.15,
+      "end": 822.15,
+      "start_time": "00:13:35,150",
+      "end_time": "00:13:42,150",
+      "text": "Thứ là cái phần email này nhé. Nếu như email của anh em đã dùng"
+    },
+    {
+      "id": 121,
+      "start": 822.15,
+      "end": 829.15,
+      "start_time": "00:13:42,150",
+      "end_time": "00:13:49,150",
+      "text": "để tạo tài khoản Google AdSense rồi thì không được dùng thông tin tạo tiếp."
+    },
+    {
+      "id": 122,
+      "start": 829.15,
+      "end": 838.0,
+      "start_time": "00:13:49,150",
+      "end_time": "00:13:58,000",
+      "text": "Và cái IP nào đã tạo rồi thì không nên tạo tiếp. Vì một IP nếu anh em tạo thêm thì nó hay báo lỗi lắm. Mình là mình test nhiều rồi. Nó bị như thế."
+    },
+    {
+      "id": 123,
+      "start": 838.0,
+      "end": 845.8,
+      "start_time": "00:13:58,000",
+      "end_time": "00:14:05,800",
+      "text": "Thì với email mới thì anh em phải tạo và nuôi tối thiểu là 14 ngày, tốt nhất là được 1 tháng thì càng"
+    },
+    {
+      "id": 124,
+      "start": 845.8,
+      "end": 853.45,
+      "start_time": "00:14:05,800",
+      "end_time": "00:14:13,450",
+      "text": "tốt. Điều kiện thì email phải chưa từng tạo GA, chưa từng dính vi phạm gì, chưa từng chết mail các thứ này."
+    },
+    {
+      "id": 125,
+      "start": 853.45,
+      "end": 863.53,
+      "start_time": "00:14:13,450",
+      "end_time": "00:14:23,530",
+      "text": "Để chết cái lỗi spam đơn giản thì có thể nhắn đội hỗ trợ của Huân Academy để anh em gửi cho cái form kháng đơn giản, dạng đấy nó khá là dễ thôi, kháng được."
+    },
+    {
+      "id": 126,
+      "start": 863.53,
+      "end": 875.33,
+      "start_time": "00:14:23,530",
+      "end_time": "00:14:35,330",
+      "text": "dạng đấy thì không vấn đề gì. Còn dạng vi phạm như anh em bị cấm hẳn chức năng dùng email rồi là Google AI cái thứ đó. Đấy là những dạng vi phạm nặng thì anh em sẽ không được dùng được nữa."
+    },
+    {
+      "id": 127,
+      "start": 877.03,
+      "end": 883.93,
+      "start_time": "00:14:37,030",
+      "end_time": "00:14:43,930",
+      "text": "Về phần số điện thoại thì mình lưu ý là mình dùng số mới hoàn toàn nhé. Chưa từng tạo ra này. Chưa từng liên kết bất cứ GA nào."
+    },
+    {
+      "id": 128,
+      "start": 884.81,
+      "end": 888.37,
+      "start_time": "00:14:44,810",
+      "end_time": "00:14:48,370",
+      "text": "Thì có thể là mình có thể mua một số mới. Mua một số mới tin bằng thông tin chính chủ của mình."
+    },
+    {
+      "id": 129,
+      "start": 888.37,
+      "end": 891.85,
+      "start_time": "00:14:48,370",
+      "end_time": "00:14:51,850",
+      "text": "Còn này thì mình lưu ý là không nóng vội"
+    },
+    {
+      "id": 130,
+      "start": 891.85,
+      "end": 894.43,
+      "start_time": "00:14:51,850",
+      "end_time": "00:14:54,430",
+      "text": "Tài khoản Google AdSense nó là một cái tài sản của mình"
+    },
+    {
+      "id": 131,
+      "start": 894.43,
+      "end": 897.07,
+      "start_time": "00:14:54,430",
+      "end_time": "00:14:57,070",
+      "text": "Nó không phải là công cụ dùng một lần"
+    },
+    {
+      "id": 132,
+      "start": 897.07,
+      "end": 898.81,
+      "start_time": "00:14:57,070",
+      "end_time": "00:14:58,810",
+      "text": "Vì vậy nên là trong quá trình anh em tạo"
+    },
+    {
+      "id": 133,
+      "start": 898.81,
+      "end": 899.89,
+      "start_time": "00:14:58,810",
+      "end_time": "00:14:59,890",
+      "text": "Thật sự kiên nhẫn"
+    },
+    {
+      "id": 134,
+      "start": 899.89,
+      "end": 902.87,
+      "start_time": "00:14:59,890",
+      "end_time": "00:15:02,870",
+      "text": "Bình tĩnh thì tạo"
+    },
+    {
+      "id": 135,
+      "start": 902.87,
+      "end": 904.47,
+      "start_time": "00:15:02,870",
+      "end_time": "00:15:04,470",
+      "text": "Chăm nó nuôi nó đúng thì"
+    },
+    {
+      "id": 136,
+      "start": 904.47,
+      "end": 906.81,
+      "start_time": "00:15:04,470",
+      "end_time": "00:15:06,810",
+      "text": "Khi anh em tạo thì có thể nhanh là một ngày"
+    },
+    {
+      "id": 137,
+      "start": 906.81,
+      "end": 907.642,
+      "start_time": "00:15:06,810",
+      "end_time": "00:15:07,642",
+      "text": "Có thể được duyệt luôn rồi"
+    },
+    {
+      "id": 138,
+      "start": 907.642,
+      "end": 916.642,
+      "start_time": "00:15:07,642",
+      "end_time": "00:15:16,642",
+      "text": "Nếu mình nóng vội, mình vừa tạo ngày hôm nay, 3 hôm sau, 5 hôm sau đã tạo Google AdSense chắc chắn là nó bị đánh là có vấn đề rồi."
+    },
+    {
+      "id": 139,
+      "start": 916.642,
+      "end": 921.642,
+      "start_time": "00:15:16,642",
+      "end_time": "00:15:21,642",
+      "text": "Chứ chả có ai mà tự nhiên tạo email hôm nay, ngày mai tạo GA mà Google nó duyệt cho vào."
+    },
+    {
+      "id": 140,
+      "start": 921.642,
+      "end": 931.475,
+      "start_time": "00:15:21,642",
+      "end_time": "00:15:31,475",
+      "text": "Nếu có dễ thì cũng rất là may mắn thôi chứ còn không có chuyện là nó nhanh như thế được. Ngoài ra thì về phần tạo email tạo GA thì anh em cũng"
+    },
+    {
+      "id": 141,
+      "start": 931.475,
+      "end": 941.309,
+      "start_time": "00:15:31,475",
+      "end_time": "00:15:41,309",
+      "text": "có chia sẻ rằng là anh em dùng email cổ rồi là theo dạng là anh em mua ấy. Thế thì với mình thì mình không dùng bởi vì là nó cũng sẽ có"
+    },
+    {
+      "id": 142,
+      "start": 941.309,
+      "end": 951.142,
+      "start_time": "00:15:41,309",
+      "end_time": "00:15:51,142",
+      "text": "rủi ro về nguồn email. Thế nên là mình ưu tiên phương án là mình tự tạo email sau đó mình tự tạo GA thì nó đảm bảo cho mình yên tâm hơn thôi."
+    },
+    {
+      "id": 143,
+      "start": 951.142,
+      "end": 955.142,
+      "start_time": "00:15:51,142",
+      "end_time": "00:15:55,142",
+      "text": "tính mình nó hơi khó tính, phần này mình kỹ tính phần này."
+    },
+    {
+      "id": 144,
+      "start": 955.142,
+      "end": 962.0,
+      "start_time": "00:15:55,142",
+      "end_time": "00:16:02,000",
+      "text": "Nguyên tắc về VPS, sử dụng VPS cho Google AdSense bên mình đang dùng thì"
+    },
+    {
+      "id": 145,
+      "start": 962.0,
+      "end": 969.142,
+      "start_time": "00:16:02,000",
+      "end_time": "00:16:09,142",
+      "text": "cái nguyên tắc của mình là 1 VPS chỉ đăng nhập 1 tài khoản Google AdSense duy nhất thôi, 1 VPS chỉ 1 Google AdSense duy nhất."
+    },
+    {
+      "id": 146,
+      "start": 969.142,
+      "end": 978.142,
+      "start_time": "00:16:09,142",
+      "end_time": "00:16:18,142",
+      "text": "Thì trên đó thì chỉ chứa là 1 email chứa tài khoản Google AdSense và 1 email khôi phục cho cái tài khoản email mà chứa GA lại."
+    },
+    {
+      "id": 147,
+      "start": 978.142,
+      "end": 984.1,
+      "start_time": "00:16:18,142",
+      "end_time": "00:16:24,100",
+      "text": "Thì trên 1 VPS là tổng là có 2 email thôi. Thì nó back up cho lẫn nhau mà."
+    },
+    {
+      "id": 148,
+      "start": 984.1,
+      "end": 996.1,
+      "start_time": "00:16:24,100",
+      "end_time": "00:16:36,100",
+      "text": "Còn này tuyệt đối là không login nhiều GA trên cùng 1 VPS, login GA trên nhiều IP khác nhau."
+    },
+    {
+      "id": 149,
+      "start": 996.1,
+      "end": 1002.1,
+      "start_time": "00:16:36,100",
+      "end_time": "00:16:42,100",
+      "text": "Anh em hay bị cái lỗi là mình bật kiếm tiền đúng không? Thế là mình login GA lung tung bèo hết lên."
+    },
+    {
+      "id": 150,
+      "start": 1002.1,
+      "end": 1008.1,
+      "start_time": "00:16:42,100",
+      "end_time": "00:16:48,100",
+      "text": "IP nhảy lung tung bèo hết lên. Về sau nó bị vi phạm gì, nó bị quét gì đấy thì nó chết GA là điều đương nhiên rồi."
+    },
+    {
+      "id": 151,
+      "start": 1008.1,
+      "end": 1013.38,
+      "start_time": "00:16:48,100",
+      "end_time": "00:16:53,380",
+      "text": "Nhiều anh em là GA chính chủ này nhưng vẫn bị chết bởi vì login nhiều chỗ quá"
+    },
+    {
+      "id": 152,
+      "start": 1013.38,
+      "end": 1016.18,
+      "start_time": "00:16:53,380",
+      "end_time": "00:16:56,180",
+      "text": "Nó không cố định được, rất là nguy hiểm"
+    },
+    {
+      "id": 153,
+      "start": 1016.18,
+      "end": 1022.5,
+      "start_time": "00:16:56,180",
+      "end_time": "00:17:02,500",
+      "text": "Mục tiêu của những phần này là tránh Google quét IP, tránh Google khóa nhiều GA cùng một lúc"
+    },
+    {
+      "id": 154,
+      "start": 1022.5,
+      "end": 1025.38,
+      "start_time": "00:17:02,500",
+      "end_time": "00:17:05,380",
+      "text": "Đang nhiều tài khoản Google AdSense cùng với một IP"
+    },
+    {
+      "id": 155,
+      "start": 1025.38,
+      "end": 1029.38,
+      "start_time": "00:17:05,380",
+      "end_time": "00:17:09,380",
+      "text": "Được rồi anh em thấy là bên họ kêu rất nhiều việc chết GA"
+    },
+    {
+      "id": 156,
+      "start": 1029.38,
+      "end": 1036.42,
+      "start_time": "00:17:09,380",
+      "end_time": "00:17:16,420",
+      "text": "Bên mình có bị chết GA ở đợt bão đầu tiên, tháng 6-7, đợt mà quét GA dạng mua"
+    },
+    {
+      "id": 157,
+      "start": 1036.42,
+      "end": 1044.17,
+      "start_time": "00:17:16,420",
+      "end_time": "00:17:24,170",
+      "text": "Sau đợt đó bên mình làm lại 100% GA đến bây giờ tất cả đều ổn hết và có những con GA tháng trước còn không"
+    },
+    {
+      "id": 158,
+      "start": 1044.17,
+      "end": 1051.92,
+      "start_time": "00:17:24,170",
+      "end_time": "00:17:31,920",
+      "text": "đủ minpay, chỉ tầm 30-40$, tháng sau có thể nhận được mức khoảng 340.000$ 1 kênh, 1 con GA thì không gặp vấn đề gì nhé."
+    },
+    {
+      "id": 159,
+      "start": 1051.92,
+      "end": 1056.12,
+      "start_time": "00:17:31,920",
+      "end_time": "00:17:36,120",
+      "text": "Nó đều ổn hết vì mình tạo chính chủ mà, vì mình yên tâm."
+    },
+    {
+      "id": 160,
+      "start": 1056.12,
+      "end": 1059.96,
+      "start_time": "00:17:36,120",
+      "end_time": "00:17:39,960",
+      "text": "Ở phần này thì mình cần phải là nuôi hành vi người dùng này"
+    },
+    {
+      "id": 161,
+      "start": 1059.96,
+      "end": 1063.92,
+      "start_time": "00:17:39,960",
+      "end_time": "00:17:43,920",
+      "text": "nuôi cái điểm Trust Score dành cho Google họ đánh giá"
+    },
+    {
+      "id": 162,
+      "start": 1063.92,
+      "end": 1067.46,
+      "start_time": "00:17:43,920",
+      "end_time": "00:17:47,460",
+      "text": "con AI Google đánh giá hành vi của mình dùng ấy"
+    },
+    {
+      "id": 163,
+      "start": 1067.46,
+      "end": 1068.46,
+      "start_time": "00:17:47,460",
+      "end_time": "00:17:48,460",
+      "text": "nó phải giống người thật"
+    },
+    {
+      "id": 164,
+      "start": 1068.46,
+      "end": 1071.86,
+      "start_time": "00:17:48,460",
+      "end_time": "00:17:51,860",
+      "text": "mình cần phải làm thường xuyên hàng ngày đó"
+    },
+    {
+      "id": 165,
+      "start": 1071.86,
+      "end": 1074.08,
+      "start_time": "00:17:51,860",
+      "end_time": "00:17:54,080",
+      "text": "hoặc là anh em một vài ngày làm một lần"
+    },
+    {
+      "id": 166,
+      "start": 1074.08,
+      "end": 1075.34,
+      "start_time": "00:17:54,080",
+      "end_time": "00:17:55,340",
+      "text": "làm đều đều"
+    },
+    {
+      "id": 167,
+      "start": 1075.34,
+      "end": 1076.12,
+      "start_time": "00:17:55,340",
+      "end_time": "00:17:56,120",
+      "text": "thì mới"
+    },
+    {
+      "id": 168,
+      "start": 1076.12,
+      "end": 1077.44,
+      "start_time": "00:17:56,120",
+      "end_time": "00:17:57,440",
+      "text": "email để check email thường xuyên"
+    },
+    {
+      "id": 169,
+      "start": 1077.44,
+      "end": 1078.182,
+      "start_time": "00:17:57,440",
+      "end_time": "00:17:58,182",
+      "text": "thì cái phần này"
+    },
+    {
+      "id": 170,
+      "start": 1078.182,
+      "end": 1084.702,
+      "start_time": "00:17:58,182",
+      "end_time": "00:18:04,702",
+      "text": "Thì cái phần email này thì anh em có thể là đăng ký, nhận tin nhắn tự động của một số cái web như là web tin tức này, nước ngoài này."
+    },
+    {
+      "id": 171,
+      "start": 1085.322,
+      "end": 1088.162,
+      "start_time": "00:18:05,322",
+      "end_time": "00:18:08,162",
+      "text": "Thì anh em nhận email thường xuyên thì nó là hành vi người dùng."
+    },
+    {
+      "id": 172,
+      "start": 1088.162,
+      "end": 1092.502,
+      "start_time": "00:18:08,162",
+      "end_time": "00:18:12,502",
+      "text": "Thì anh em vào mở email đấy, đọc email đấy thì cũng là hành vi người dùng."
+    },
+    {
+      "id": 173,
+      "start": 1092.502,
+      "end": 1103.502,
+      "start_time": "00:18:12,502",
+      "end_time": "00:18:23,502",
+      "text": "có một điểm nữa thì là phần xem video trên YouTube thì mình có thể xem 24/24 được tại vì VPS thì nó không tắt mà VPS thì nó cứ mở cả ngày lẫn đêm thôi."
+    },
+    {
+      "id": 174,
+      "start": 1103.502,
+      "end": 1113.502,
+      "start_time": "00:18:23,502",
+      "end_time": "00:18:33,502",
+      "text": "Thì anh em có thể cho xem YouTube xem nhạc rồi tin tức các thứ thì tùy anh em không quá là là phải đóng khung là mình phải làm như thế nào chỉ là mình tương tác hàng ngày thôi."
+    },
+    {
+      "id": 175,
+      "start": 1113.502,
+      "end": 1124.502,
+      "start_time": "00:18:33,502",
+      "end_time": "00:18:44,502",
+      "text": "Sau đó có thể đọc báo, tìm kiếm thông tin. Hành vi cần tránh là mình tạo email xong mình bỏ không. Chỉ vào VPS khi cần bật kiếm tiền."
+    },
+    {
+      "id": 176,
+      "start": 1124.502,
+      "end": 1131.502,
+      "start_time": "00:18:44,502",
+      "end_time": "00:18:51,502",
+      "text": "Thế lỡ anh em không check thường xuyên rồi là nó gặp vấn đề gì đó, email mình không biết nó check email hay bị nào đấy."
+    },
+    {
+      "id": 177,
+      "start": 1131.502,
+      "end": 1136.502,
+      "start_time": "00:18:51,502",
+      "end_time": "00:18:56,502",
+      "text": "Hoặc mình không tương tác thường xuyên thì nó không giống người dùng thật. Đấy thì nó sẽ bị ảnh hưởng."
+    },
+    {
+      "id": 178,
+      "start": 1136.502,
+      "end": 1143.502,
+      "start_time": "00:18:56,502",
+      "end_time": "00:19:03,502",
+      "text": "Vì vậy, anh em lại chơi cái bài là VPS thấy lười quá không làm, không có tương tác, quay ra"
+    },
+    {
+      "id": 179,
+      "start": 1143.502,
+      "end": 1150.502,
+      "start_time": "00:19:03,502",
+      "end_time": "00:19:10,502",
+      "text": "là chơi tool vào, xong quay quét, bay cả dàn. VPS vẫn chết bình thường, bởi vì anh em dùng tool."
+    },
+    {
+      "id": 180,
+      "start": 1150.502,
+      "end": 1161.662,
+      "start_time": "00:19:10,502",
+      "end_time": "00:19:21,662",
+      "text": "Thế thì cái phần này thực ra nó cũng chả tốn bao nhiêu thời gian đâu, có khi một ngày, 30 giây chứ mấy. 30 giây thì nó đáng bao nhiêu thời gian đâu mà, mà mình phải dùng tool làm gì."
+    },
+    {
+      "id": 181,
+      "start": 1161.75,
+      "end": 1172.75,
+      "start_time": "00:19:21,750",
+      "end_time": "00:19:32,750",
+      "text": "Tư duy ở đây là nuôi con người số, không nuôi tài khoản chết. Với mỗi cái IP VPS của mình thì mình rất là quan trọng nó và mình rất là giữ gìn nó."
+    },
+    {
+      "id": 182,
+      "start": 1172.75,
+      "end": 1180.75,
+      "start_time": "00:19:32,750",
+      "end_time": "00:19:40,750",
+      "text": "Tại vì mình biết rằng là mình nuôi được một cái IP mà ngon rồi là nó ổn định qua nhiều năm tháng thì tài khoản của mình nó rất là khỏe."
+    },
+    {
+      "id": 183,
+      "start": 1184.75,
+      "end": 1189.75,
+      "start_time": "00:19:44,750",
+      "end_time": "00:19:49,750",
+      "text": "Ờ, ở đây, phần quy trình bật kiếm tiền an toàn của mình hiện tại đang làm nhé."
+    },
+    {
+      "id": 184,
+      "start": 1189.75,
+      "end": 1200.75,
+      "start_time": "00:19:49,750",
+      "end_time": "00:20:00,750",
+      "text": "thì mình không login GA ở nhiều nơi này nó chỉ có trên một con VPS thôi và khi mình bật kiếm tiền thì mình chỉ có thao tác ở trên cái VPS chứa cái con GA đó thôi chứ còn mình không login GA linh tinh."
+    },
+    {
+      "id": 185,
+      "start": 1201.0,
+      "end": 1210.75,
+      "start_time": "00:20:01,000",
+      "end_time": "00:20:10,750",
+      "text": "Về phần quy trình thì mình sẽ có các bước sau đây đầu tiên nhé thì ở cái email gốc ấy thì mình sẽ cấp quyền chủ sở hữu cho cái email chứa tài khoản Google AdSense này"
+    },
+    {
+      "id": 186,
+      "start": 1210.75,
+      "end": 1220.643,
+      "start_time": "00:20:10,750",
+      "end_time": "00:20:20,643",
+      "text": "sau đó thì mình sẽ bật kiếm tiền trên VPS chứa con GA đấy. Sau khi bật thì mình để yên thôi. Không dùng con VPS chứa GA đi luôn. Chỉ"
+    },
+    {
+      "id": 187,
+      "start": 1220.643,
+      "end": 1230.537,
+      "start_time": "00:20:20,643",
+      "end_time": "00:20:30,537",
+      "text": "để xem YouTube, không dùng đi tương tác cái thứ gì cả. Không dùng tương tác cái khác. Mình chỉ để vậy thôi. Mình xác định nó là một cái"
+    },
+    {
+      "id": 188,
+      "start": 1230.537,
+      "end": 1240.43,
+      "start_time": "00:20:30,537",
+      "end_time": "00:20:40,430",
+      "text": "mình giữ cái tài khoản Google AdSense của mình nó được an toàn đây mà. Tổng kết ở đây này nó có những cái điều mà anh em cần nhận ra."
+    },
+    {
+      "id": 189,
+      "start": 1240.43,
+      "end": 1247.93,
+      "start_time": "00:20:40,430",
+      "end_time": "00:20:47,930",
+      "text": "em cần nhớ này thì VPS là một cái dạng danh tính số này thì YouTube nó sẽ định danh mỗi một cái người"
+    },
+    {
+      "id": 190,
+      "start": 1247.93,
+      "end": 1252.73,
+      "start_time": "00:20:47,930",
+      "end_time": "00:20:52,730",
+      "text": "dùng dựa trên IP và lịch sử người dùng đâu chứ nó không thể nắm được các thông tin khác đâu nó chỉ"
+    },
+    {
+      "id": 191,
+      "start": 1252.73,
+      "end": 1260.43,
+      "start_time": "00:20:52,730",
+      "end_time": "00:21:00,430",
+      "text": "định danh vậy thôi email ở đây nó là cái gốc có mọi thứ của anh em làm đợt vừa rồi thì mình cũng nhận"
+    },
+    {
+      "id": 192,
+      "start": 1260.43,
+      "end": 1269.642,
+      "start_time": "00:21:00,430",
+      "end_time": "00:21:09,642",
+      "text": "Một số thông tin khá là buồn vì các anh em làm dạng dùng email của tên miền email domain"
+    },
+    {
+      "id": 193,
+      "start": 1269.642,
+      "end": 1278.709,
+      "start_time": "00:21:09,642",
+      "end_time": "00:21:18,709",
+      "text": "Buồn vì anh em hơi chủ quan về việc dùng email domain. Bản chất mình nhìn thấy nó có vấn đề rồi. Khi mà tất"
+    },
+    {
+      "id": 194,
+      "start": 1278.709,
+      "end": 1287.775,
+      "start_time": "00:21:18,709",
+      "end_time": "00:21:27,775",
+      "text": "cả email đều có một cái tên miền là A còng gì đó là tên miền domain tên miền công ty thì nó sẽ có rủi"
+    },
+    {
+      "id": 195,
+      "start": 1287.775,
+      "end": 1296.842,
+      "start_time": "00:21:27,775",
+      "end_time": "00:21:36,842",
+      "text": "ro khi anh em làm sai là anh em sẽ bị quét toàn bộ. Nó rất là nguy hiểm. Ví dụ như đây là hoang@goda.media."
+    },
+    {
+      "id": 196,
+      "start": 1296.842,
+      "end": 1306.382,
+      "start_time": "00:21:36,842",
+      "end_time": "00:21:46,382",
+      "text": "Ví dụ như này đi, một email như này thì lỡ mà mình lại tạo rất nhiều cái tên miền, a.goda.media.vn này, một trong các email mình làm kênh này nó gặp"
+    },
+    {
+      "id": 197,
+      "start": 1306.382,
+      "end": 1315.922,
+      "start_time": "00:21:46,382",
+      "end_time": "00:21:55,922",
+      "text": "vấn đề phát thì có thể là bay tất cả luôn, nó xóa hết. Và email domain mà đã gặp vấn đề rồi là gần như không kháng được. Mình thấy là"
+    },
+    {
+      "id": 198,
+      "start": 1315.922,
+      "end": 1325.462,
+      "start_time": "00:21:55,922",
+      "end_time": "00:22:05,462",
+      "text": "nó bị như vậy, thì nó rủi ro rất là cao. Vì đôi khi anh em lại còn ham rẻ, còn chơi cái bài là mua nguồn email domain giá rẻ nữa."
+    },
+    {
+      "id": 199,
+      "start": 1325.462,
+      "end": 1332.462,
+      "start_time": "00:22:05,462",
+      "end_time": "00:22:12,462",
+      "text": "thì các bên tut trick họ sẽ có cái cách họ bán cho anh em đó. Nếu mình thì mình không ưu tiên như vậy."
+    },
+    {
+      "id": 200,
+      "start": 1332.5,
+      "end": 1340.367,
+      "start_time": "00:22:12,500",
+      "end_time": "00:22:20,367",
+      "text": "Mỗi một tài khoản Google AdSense là một tài sản dài hạn vì nó là cái chỗ mình nhận tiền về thì phải thật sự rất là coi trọng. Một"
+    },
+    {
+      "id": 201,
+      "start": 1340.367,
+      "end": 1348.233,
+      "start_time": "00:22:20,367",
+      "end_time": "00:22:28,233",
+      "text": "một sai lầm nhỏ khi mình bảo mật hệ thống như nó có thể trả giá rất là lớn. Có thể cả một hệ thống bay hết luôn. Đợt"
+    },
+    {
+      "id": 202,
+      "start": 1348.233,
+      "end": 1356.1,
+      "start_time": "00:22:28,233",
+      "end_time": "00:22:36,100",
+      "text": "vừa qua thì mình cũng gặp nhiều kênh bị chết, nhiều kênh bị kiếm tiền, các cái lỗi. Vì mỗi một đợt thì nó quét một cái lỗi khác nhau."
+    },
+    {
+      "id": 203,
+      "start": 1356.1,
+      "end": 1368.46,
+      "start_time": "00:22:36,100",
+      "end_time": "00:22:48,460",
+      "text": "có đợt thì nó quét cái dạng spam này, chết cả kênh này, sau đó nó quét dạng die chết dạng nội dung nguy hiểm có sự tham gia của trẻ vị thành niên này bên mình cũng dính."
+    },
+    {
+      "id": 204,
+      "start": 1370.04,
+      "end": 1373.6,
+      "start_time": "00:22:50,040",
+      "end_time": "00:22:53,600",
+      "text": "Sau thì nó die chết những dạng nội dung không trung thực này."
+    },
+    {
+      "id": 205,
+      "start": 1374.82,
+      "end": 1381.02,
+      "start_time": "00:22:54,820",
+      "end_time": "00:23:01,020",
+      "text": "Có những kênh làm rất là chỉn chu, rất là kỹ, sáng tạo rất xịn nhưng mà khi vào bão thì nó vẫn có khả năng bị quét nhầm."
+    },
+    {
+      "id": 206,
+      "start": 1381.02,
+      "end": 1381.78,
+      "start_time": "00:23:01,020",
+      "end_time": "00:23:01,780",
+      "text": "Nhầm"
+    },
+    {
+      "id": 207,
+      "start": 1381.78,
+      "end": 1383.84,
+      "start_time": "00:23:01,780",
+      "end_time": "00:23:03,840",
+      "text": "Mà hiện tại thì là toàn bộ phần"
+    },
+    {
+      "id": 208,
+      "start": 1384.1,
+      "end": 1385.12,
+      "start_time": "00:23:04,100",
+      "end_time": "00:23:05,120",
+      "text": "Kiểm duyệt rồi là"
+    },
+    {
+      "id": 209,
+      "start": 1385.38,
+      "end": 1386.14,
+      "start_time": "00:23:05,380",
+      "end_time": "00:23:06,140",
+      "text": "Các thứ là"
+    },
+    {
+      "id": 210,
+      "start": 1387.16,
+      "end": 1387.94,
+      "start_time": "00:23:07,160",
+      "end_time": "00:23:07,940",
+      "text": "Rồi là kháng chứ"
+    },
+    {
+      "id": 211,
+      "start": 1388.18,
+      "end": 1389.98,
+      "start_time": "00:23:08,180",
+      "end_time": "00:23:09,980",
+      "text": "AI nó kiểm soát hết chứ còn"
+    },
+    {
+      "id": 212,
+      "start": 1390.24,
+      "end": 1392.8,
+      "start_time": "00:23:10,240",
+      "end_time": "00:23:12,800",
+      "text": "Gần như bây giờ là không gặp được người kiểm duyệt thật nữa"
+    },
+    {
+      "id": 213,
+      "start": 1393.06,
+      "end": 1394.08,
+      "start_time": "00:23:13,060",
+      "end_time": "00:23:14,080",
+      "text": "Để mình kháng nữa"
+    },
+    {
+      "id": 214,
+      "start": 1394.34,
+      "end": 1396.12,
+      "start_time": "00:23:14,340",
+      "end_time": "00:23:16,120",
+      "text": "Những cái dạng đấy đã bị quét rồi thì"
+    },
+    {
+      "id": 215,
+      "start": 1396.38,
+      "end": 1397.14,
+      "start_time": "00:23:16,380",
+      "end_time": "00:23:17,140",
+      "text": "Gần như không kháng được"
+    },
+    {
+      "id": 216,
+      "start": 1397.4,
+      "end": 1399.7,
+      "start_time": "00:23:17,400",
+      "end_time": "00:23:19,700",
+      "text": "Mà khi mà đã bị quét một kênh rồi thì"
+    },
+    {
+      "id": 217,
+      "start": 1399.96,
+      "end": 1401.02,
+      "start_time": "00:23:19,960",
+      "end_time": "00:23:21,020",
+      "text": "Em biết là là"
+    },
+    {
+      "id": 218,
+      "start": 1401.02,
+      "end": 1403.06,
+      "start_time": "00:23:21,020",
+      "end_time": "00:23:23,060",
+      "text": "Nó quá là kinh khủng luôn"
+    },
+    {
+      "id": 219,
+      "start": 1403.32,
+      "end": 1406.66,
+      "start_time": "00:23:23,320",
+      "end_time": "00:23:26,660",
+      "text": "Nhưng cái kênh khác mà nối cùng GA đấy mà nó gặp vấn đề mà phát là"
+    },
+    {
+      "id": 220,
+      "start": 1407.16,
+      "end": 1408.44,
+      "start_time": "00:23:27,160",
+      "end_time": "00:23:28,440",
+      "text": "Là mình phải tách ra luôn"
+    },
+    {
+      "id": 221,
+      "start": 1408.7,
+      "end": 1410.74,
+      "start_time": "00:23:28,700",
+      "end_time": "00:23:30,740",
+      "text": "Chứ không thì nó có thể bay cả vào hệ thống luôn"
+    },
+    {
+      "id": 222,
+      "start": 1411.0,
+      "end": 1412.8,
+      "start_time": "00:23:31,000",
+      "end_time": "00:23:32,800",
+      "text": "Cái chi phí mà anh em"
+    },
+    {
+      "id": 223,
+      "start": 1413.06,
+      "end": 1415.62,
+      "start_time": "00:23:33,060",
+      "end_time": "00:23:35,620",
+      "text": "Nghĩ rằng là nó là chi phí khi mà mình dùng nhiều VPS"
+    },
+    {
+      "id": 224,
+      "start": 1416.64,
+      "end": 1418.94,
+      "start_time": "00:23:36,640",
+      "end_time": "00:23:38,940",
+      "text": "Thì đôi khi nó không phải chi phí nó là khoản đầu tư"
+    },
+    {
+      "id": 225,
+      "start": 1419.207,
+      "end": 1422.707,
+      "start_time": "00:23:39,207",
+      "end_time": "00:23:42,707",
+      "text": "Với mình mình coi nó là khoản đầu tư để mình đảm bảo cái an toàn hệ thống."
+    },
+    {
+      "id": 226,
+      "start": 1424.227,
+      "end": 1427.547,
+      "start_time": "00:23:44,227",
+      "end_time": "00:23:47,547",
+      "text": "Để cho toàn bộ cái hệ thống của mình nó an toàn hơn."
+    },
+    {
+      "id": 227,
+      "start": 1427.547,
+      "end": 1436.547,
+      "start_time": "00:23:47,547",
+      "end_time": "00:23:56,547",
+      "text": "Ok, ở đây mình cũng có thấy một vài câu hỏi, tuy nhiên là mình sẽ đi tiếp nhé, tại vì là lát nữa sẽ có phần hỏi đáp riêng, anh em thoải mái."
+    },
+    {
+      "id": 228,
+      "start": 1436.627,
+      "end": 1442.967,
+      "start_time": "00:23:56,627",
+      "end_time": "00:24:02,967",
+      "text": "Hôm nay chủ yếu sẽ hỏi đáp vì phần chia sẻ cũng khá là ngắn thôi, chủ yếu anh em hỏi đáp về tất cả những cái thắc mắc của anh em."
+    },
+    {
+      "id": 229,
+      "start": 1445.707,
+      "end": 1451.747,
+      "start_time": "00:24:05,707",
+      "end_time": "00:24:11,747",
+      "text": "Tiếp theo thì mình sẽ đến với phần là video hướng dẫn tạo tài khoản Google AdSense và bật kiếm tiền nhé."
+    },
+    {
+      "id": 230,
+      "start": 1451.747,
+      "end": 1460.147,
+      "start_time": "00:24:11,747",
+      "end_time": "00:24:20,147",
+      "text": "Nhưng em yên tâm nhé tất cả những tài liệu này sau sẽ có được gửi cho anh em cập nhật trên web Huân Academy đầy đủ nhé anh em yên tâm"
+    },
+    {
+      "id": 231,
+      "start": 1460.147,
+      "end": 1464.347,
+      "start_time": "00:24:20,147",
+      "end_time": "00:24:24,347",
+      "text": "Ok mình chia sẻ"
+    },
+    {
+      "id": 232,
+      "start": 1464.347,
+      "end": 1472.847,
+      "start_time": "00:24:24,347",
+      "end_time": "00:24:32,847",
+      "text": "Ok anh em nhìn thêm video chưa anh em nhìn video thì lên phím 1 cho mình"
+    },
+    {
+      "id": 233,
+      "start": 1472.847,
+      "end": 1479.527,
+      "start_time": "00:24:32,847",
+      "end_time": "00:24:39,527",
+      "text": "Ok."
+    },
+    {
+      "id": 234,
+      "start": 1484.0,
+      "end": 1488.08,
+      "start_time": "00:24:44,000",
+      "end_time": "00:24:48,080",
+      "text": "Trong video này, tôi sẽ hướng dẫn bạn toàn bộ quy trình bật kiếm tiền kênh YouTube"
+    },
+    {
+      "id": 235,
+      "start": 1488.08,
+      "end": 1492.24,
+      "start_time": "00:24:48,080",
+      "end_time": "00:24:52,240",
+      "text": "từ điều kiện cần có, cách tạo tài khoản Google AdSense cho đến xác minh AdSense đúng chuẩn"
+    },
+    {
+      "id": 236,
+      "start": 1492.24,
+      "end": 1495.1,
+      "start_time": "00:24:52,240",
+      "end_time": "00:24:55,100",
+      "text": "và có thể tóm gọn lại bằng lộ trình bật kiếm tiền với 4 giai đoạn sau:"
+    },
+    {
+      "id": 237,
+      "start": 1495.1,
+      "end": 1499.1,
+      "start_time": "00:24:55,100",
+      "end_time": "00:24:59,100",
+      "text": "1. Đạt điều kiện, kiểm tra và đáp ứng các yêu cầu tối thiểu của YouTube. 2."
+    },
+    {
+      "id": 238,
+      "start": 1499.227,
+      "end": 1503.047,
+      "start_time": "00:24:59,227",
+      "end_time": "00:25:03,047",
+      "text": "Đăng ký và tạo AdSense, nộp đơn và liên kết với tài khoản Google AdSense 3"
+    },
+    {
+      "id": 239,
+      "start": 1503.047,
+      "end": 1506.027,
+      "start_time": "00:25:03,047",
+      "end_time": "00:25:06,027",
+      "text": "Chờ duyệt kênh, giai đoạn xem xét kênh của bạn bởi đội ngũ YouTube"
+    },
+    {
+      "id": 240,
+      "start": 1506.027,
+      "end": 1509.627,
+      "start_time": "00:25:06,027",
+      "end_time": "00:25:09,627",
+      "text": "4. Xác minh danh tính, hoàn tất xác minh để nhận thanh toán đầu tiên"
+    },
+    {
+      "id": 241,
+      "start": 1509.627,
+      "end": 1511.867,
+      "start_time": "00:25:09,627",
+      "end_time": "00:25:11,867",
+      "text": "Vậy thì điều kiện để bật kiếm tiền YouTube là gì?"
+    },
+    {
+      "id": 242,
+      "start": 1512.167,
+      "end": 1513.0,
+      "start_time": "00:25:12,167",
+      "end_time": "00:25:13,000",
+      "text": "Để bật kiếm tiền YouTube"
+    },
+    {
+      "id": 243,
+      "start": 1513.0,
+      "end": 1521.02,
+      "start_time": "00:25:13,000",
+      "end_time": "00:25:21,020",
+      "text": "Kênh của bạn cần đáp ứng đồng thời 3 điều kiện. Thứ nhất, kênh có ít nhất 500 người đăng ký. Thứ hai, có 3 video công khai trong 90 ngày và 3.000 giờ xem công khai"
+    },
+    {
+      "id": 244,
+      "start": 1521.02,
+      "end": 1529.04,
+      "start_time": "00:25:21,020",
+      "end_time": "00:25:29,040",
+      "text": "trong 12 tháng hoặc 3 triệu view Shorts. Thứ ba, kênh tuân thủ chính sách cộng đồng và chính sách kiếm tiền của YouTube. Đây là bước đệm trước khi đủ điều kiện cho kênh bật kiếm tiền"
+    },
+    {
+      "id": 245,
+      "start": 1529.04,
+      "end": 1537.06,
+      "start_time": "00:25:29,040",
+      "end_time": "00:25:37,060",
+      "text": "đầy đủ cho video dài ở mốc 1.000 người đăng ký và 4.000 giờ xem. Khi đã đủ điều kiện bật kiếm tiền, chúng ta sẽ làm theo các bước sau. Bạn truy cập vào YouTube Studio."
+    },
+    {
+      "id": 246,
+      "start": 1537.06,
+      "end": 1546.26,
+      "start_time": "00:25:37,060",
+      "end_time": "00:25:46,260",
+      "text": "Chọn mục kiếm tiền. Tại đây, YouTube sẽ yêu cầu bạn 1. Đồng ý điều khoản chương trình đối tác YouTube. 2. Kết nối hoặc tạo tài khoản Google AdSense."
+    },
+    {
+      "id": 247,
+      "start": 1547.08,
+      "end": 1552.44,
+      "start_time": "00:25:47,080",
+      "end_time": "00:25:52,440",
+      "text": "Lưu ý, mỗi người chỉ nên có một tài khoản AdSense duy nhất. Việc tạo nhiều tài khoản có thể khiến bạn bị từ chối hoặc khóa vĩnh viễn."
+    },
+    {
+      "id": 248,
+      "start": 1553.3,
+      "end": 1556.16,
+      "start_time": "00:25:53,300",
+      "end_time": "00:25:56,160",
+      "text": "Đầu tiên, hãy đọc và đồng ý các điều khoản chương trình đối tác YouTube."
+    },
+    {
+      "id": 249,
+      "start": 1559.0,
+      "end": 1563.5,
+      "start_time": "00:25:59,000",
+      "end_time": "00:26:03,500",
+      "text": "Bước thứ 2. Kết nối với tài khoản GA. Nếu bạn chưa có, hãy chọn vào đây để tạo mới nhé."
+    },
+    {
+      "id": 250,
+      "start": 1564.44,
+      "end": 1565.6,
+      "start_time": "00:26:04,440",
+      "end_time": "00:26:05,600",
+      "text": "Chọn tài khoản Gmail để tạo GA."
+    },
+    {
+      "id": 251,
+      "start": 1565.6,
+      "end": 1570.34,
+      "start_time": "00:26:05,600",
+      "end_time": "00:26:10,340",
+      "text": "Chọn quốc gia Việt Nam."
+    },
+    {
+      "id": 252,
+      "start": 1571.18,
+      "end": 1572.4,
+      "start_time": "00:26:11,180",
+      "end_time": "00:26:12,400",
+      "text": "Đọc và tích đã đọc hết điều khoản."
+    },
+    {
+      "id": 253,
+      "start": 1575.4,
+      "end": 1576.36,
+      "start_time": "00:26:15,400",
+      "end_time": "00:26:16,360",
+      "text": "Chọn Setup Account."
+    },
+    {
+      "id": 254,
+      "start": 1579.24,
+      "end": 1581.64,
+      "start_time": "00:26:19,240",
+      "end_time": "00:26:21,640",
+      "text": "Tiếp theo, mọi người sẽ điền thông tin cá nhân tại đây."
+    },
+    {
+      "id": 255,
+      "start": 1581.98,
+      "end": 1583.64,
+      "start_time": "00:26:21,980",
+      "end_time": "00:26:23,640",
+      "text": "Chọn Individual là tài khoản cá nhân."
+    },
+    {
+      "id": 256,
+      "start": 1584.0,
+      "end": 1585.54,
+      "start_time": "00:26:24,000",
+      "end_time": "00:26:25,540",
+      "text": "Điền các thông tin của bạn như họ và tên."
+    },
+    {
+      "id": 257,
+      "start": 1585.6,
+      "end": 1588.36,
+      "start_time": "00:26:25,600",
+      "end_time": "00:26:28,360",
+      "text": "địa chỉ, thành phố và mã Postal Code của thành phố đó."
+    },
+    {
+      "id": 258,
+      "start": 1588.82,
+      "end": 1591.02,
+      "start_time": "00:26:28,820",
+      "end_time": "00:26:31,020",
+      "text": "Bạn có thể search Google để tra mã Postal Code nhé."
+    },
+    {
+      "id": 259,
+      "start": 1591.34,
+      "end": 1593.36,
+      "start_time": "00:26:31,340",
+      "end_time": "00:26:33,360",
+      "text": "Sau đó điền số điện thoại của bản thân và chọn submit."
+    },
+    {
+      "id": 260,
+      "start": 1593.372,
+      "end": 1602.452,
+      "start_time": "00:26:33,372",
+      "end_time": "00:26:42,452",
+      "text": "Chúng ta sẽ có vài lưu ý với những thông tin cần điền như sau. Thông tin bạn điền ở bước này sẽ được dùng để xác minh danh tính và nhận thanh toán. Mọi sai sót có thể dẫn đến việc"
+    },
+    {
+      "id": 261,
+      "start": 1602.452,
+      "end": 1611.532,
+      "start_time": "00:26:42,452",
+      "end_time": "00:26:51,532",
+      "text": "bạn không nhận được tiền. Họ và tên phải trùng khớp 100% với tên trên giấy tờ tùy thân, căn cước công dân, hộ chiếu. Địa chỉ cư trú, địa chỉ thật, chính xác theo giấy tờ để nhận mã pin nếu"
+    },
+    {
+      "id": 262,
+      "start": 1611.532,
+      "end": 1620.612,
+      "start_time": "00:26:51,532",
+      "end_time": "00:27:00,612",
+      "text": "cần. Số điện thoại, sim đang sử dụng và chính chủ có thể mua số mới. Chính chủ để tạo sẽ tốt hơn. Mã bưu chính, Postal Code, tìm mã bưu chính chính xác của tỉnh thành phố của bạn trên Google."
+    },
+    {
+      "id": 263,
+      "start": 1620.612,
+      "end": 1628.172,
+      "start_time": "00:27:00,612",
+      "end_time": "00:27:08,172",
+      "text": "Sau khi đã điền đầy đủ thông tin cá nhân, số điện thoại và submit, chúng ta sẽ xác minh số điện thoại, mã sẽ được gửi về máy trong 1 đến 3 phút."
+    },
+    {
+      "id": 264,
+      "start": 1634.312,
+      "end": 1636.432,
+      "start_time": "00:27:14,312",
+      "end_time": "00:27:16,432",
+      "text": "Sau khi hoàn thành, chọn trở về trang YouTube."
+    },
+    {
+      "id": 265,
+      "start": 1641.192,
+      "end": 1646.252,
+      "start_time": "00:27:21,192",
+      "end_time": "00:27:26,252",
+      "text": "Tài khoản Google AdSense đang đợi duyệt. Để kiểm tra lại một lần nữa, mọi người có thể truy cập vào Google AdSense."
+    },
+    {
+      "id": 266,
+      "start": 1646.712,
+      "end": 1649.892,
+      "start_time": "00:27:26,712",
+      "end_time": "00:27:29,892",
+      "text": "Thời gian tạo tài khoản nhanh thì trong một ngày, cá biệt lâu hơn có thể đến 2 tuần."
+    },
+    {
+      "id": 267,
+      "start": 1649.892,
+      "end": 1657.492,
+      "start_time": "00:27:29,892",
+      "end_time": "00:27:37,492",
+      "text": "Các bạn hãy kiểm tra thường xuyên ở phần bật kiếm tiền ở kênh hoặc trên tài khoản Google AdSense nhé. Đây là giao diện trang chủ của Google AdSense sau khi tài khoản đã được phê duyệt."
+    },
+    {
+      "id": 268,
+      "start": 1658.312,
+      "end": 1662.072,
+      "start_time": "00:27:38,312",
+      "end_time": "00:27:42,072",
+      "text": "Và bên trong YouTube Studio, bạn cũng có thể thấy trạng thái tài khoản đã được duyệt thành công."
+    },
+    {
+      "id": 269,
+      "start": 1664.15,
+      "end": 1671.99,
+      "start_time": "00:27:44,150",
+      "end_time": "00:27:51,990",
+      "text": "Sau khi tài khoản AdSense được duyệt, các bạn sẽ cần đợi duyệt bật kiếm tiền cho kênh. Thời gian đợi thông thường từ 3 đến 7 ngày, kênh bật kiếm tiền thành công sẽ có thông báo như thế này."
+    },
+    {
+      "id": 270,
+      "start": 1672.67,
+      "end": 1679.07,
+      "start_time": "00:27:52,670",
+      "end_time": "00:27:59,070",
+      "text": "Các bạn tiếp tục phát triển kênh, khi doanh thu đạt ngưỡng thu nhập nhất định thường là 10 USD, sẽ đến bước tiếp theo là xác minh danh tính cho tài khoản AdSense."
+    },
+    {
+      "id": 271,
+      "start": 1679.43,
+      "end": 1685.93,
+      "start_time": "00:27:59,430",
+      "end_time": "00:28:05,930",
+      "text": "Để xác minh danh tính tài khoản Google AdSense, bạn cần đạt ngưỡng thu nhập nhất định thường là 10 USD và cung cấp giấy tờ tùy thân hợp lệ, hộ chiếu."
+    },
+    {
+      "id": 272,
+      "start": 1685.93,
+      "end": 1695.35,
+      "start_time": "00:28:05,930",
+      "end_time": "00:28:15,350",
+      "text": "Chứng minh nhân dân, giấy phép lái xe có thông tin khớp với tài khoản, kèm theo ảnh rõ nét. Điều quan trọng là thông tin trên giấy tờ, tên, ngày sinh, địa chỉ phải khớp 100% với thông tin trong AdSense."
+    },
+    {
+      "id": 273,
+      "start": 1695.83,
+      "end": 1703.73,
+      "start_time": "00:28:15,830",
+      "end_time": "00:28:23,730",
+      "text": "Có 2 cách để xác minh. Cách 1, xác minh cách mới bằng giấy tờ tùy thân và xác minh khuôn mặt. Cách 2, xác minh bằng giấy tờ tùy thân và mã pin nhận qua đường bưu điện."
+    },
+    {
+      "id": 274,
+      "start": 1704.29,
+      "end": 1708.07,
+      "start_time": "00:28:24,290",
+      "end_time": "00:28:28,070",
+      "text": "Ở video này, mình sẽ hướng dẫn các bạn xác minh bằng cách 1, xác minh nhanh và an toàn hơn."
+    },
+    {
+      "id": 275,
+      "start": 1708.07,
+      "end": 1714.21,
+      "start_time": "00:28:28,070",
+      "end_time": "00:28:34,210",
+      "text": "Bước 1, các bạn ấn vào xác minh ngay. Xác minh danh tính qua Persona. Chúng ta sẽ được dẫn đến trang xác minh."
+    },
+    {
+      "id": 276,
+      "start": 1715.55,
+      "end": 1718.93,
+      "start_time": "00:28:35,550",
+      "end_time": "00:28:38,930",
+      "text": "Bạn bấm vào bắt đầu xác minh ngay. Tiếp theo bạn lựa chọn quốc gia."
+    },
+    {
+      "id": 277,
+      "start": 1722.07,
+      "end": 1727.85,
+      "start_time": "00:28:42,070",
+      "end_time": "00:28:47,850",
+      "text": "Bước này bạn có thể xác minh bằng giấy phép lái xe, căn cước công dân hoặc hộ chiếu. Mình chọn xác minh bằng căn cước công dân."
+    },
+    {
+      "id": 278,
+      "start": 1728.49,
+      "end": 1731.35,
+      "start_time": "00:28:48,490",
+      "end_time": "00:28:51,350",
+      "text": "Bước tiếp theo mình sẽ thực hiện trên điện thoại di động bằng cách quét mã trên màn hình."
+    },
+    {
+      "id": 279,
+      "start": 1731.35,
+      "end": 1735.95,
+      "start_time": "00:28:51,350",
+      "end_time": "00:28:55,950",
+      "text": "Trên điện thoại, bạn tiến hành chụp ảnh giấy tờ"
+    },
+    {
+      "id": 280,
+      "start": 1735.95,
+      "end": 1738.95,
+      "start_time": "00:28:55,950",
+      "end_time": "00:28:58,950",
+      "text": "Bạn đưa mặt trước giấy tờ vào nằm bên trong 4 góc của khung hình"
+    },
+    {
+      "id": 281,
+      "start": 1738.95,
+      "end": 1743.25,
+      "start_time": "00:28:58,950",
+      "end_time": "00:29:03,250",
+      "text": "Đảm bảo hình ảnh không lóa, rõ nét rồi thì các bạn bấm vào sử dụng ảnh này và đợi tải lên"
+    },
+    {
+      "id": 282,
+      "start": 1743.25,
+      "end": 1745.65,
+      "start_time": "00:29:03,250",
+      "end_time": "00:29:05,650",
+      "text": "Hệ thống sẽ kiểm tra giấy tờ tùy thân của bạn"
+    },
+    {
+      "id": 283,
+      "start": 1745.65,
+      "end": 1748.65,
+      "start_time": "00:29:05,650",
+      "end_time": "00:29:08,650",
+      "text": "Các bạn lưu ý rằng căn cước phải là căn cước công dân bản cũ"
+    },
+    {
+      "id": 284,
+      "start": 1748.65,
+      "end": 1751.39,
+      "start_time": "00:29:08,650",
+      "end_time": "00:29:11,390",
+      "text": "Có đầy đủ thông tin nơi thường trú ở mặt trước thì mới xác minh được"
+    },
+    {
+      "id": 285,
+      "start": 1751.532,
+      "end": 1758.412,
+      "start_time": "00:29:11,532",
+      "end_time": "00:29:18,412",
+      "text": "Nếu giấy tờ của bạn hợp lệ rồi thì sẽ hiện ra biểu mẫu này để bạn kiểm tra lại thông tin. Các bạn điền chính xác và đầy đủ thông tin theo giấy tờ và bấm tiếp tục."
+    },
+    {
+      "id": 286,
+      "start": 1758.412,
+      "end": 1762.272,
+      "start_time": "00:29:18,412",
+      "end_time": "00:29:22,272",
+      "text": "Bạn cấp quyền cho phép truy cập máy ảnh và tiến hành quét khuôn mặt theo mũi tên chỉ dẫn."
+    },
+    {
+      "id": 287,
+      "start": 1769.472,
+      "end": 1771.832,
+      "start_time": "00:29:29,472",
+      "end_time": "00:29:31,832",
+      "text": "Thông báo chúc mừng hiện lên là bạn đã xác minh thành công."
+    },
+    {
+      "id": 288,
+      "start": 1772.812,
+      "end": 1774.612,
+      "start_time": "00:29:32,812",
+      "end_time": "00:29:34,612",
+      "text": "Những lưu ý khi xác minh danh tính cần tránh"
+    },
+    {
+      "id": 289,
+      "start": 1774.612,
+      "end": 1780.932,
+      "start_time": "00:29:34,612",
+      "end_time": "00:29:40,932",
+      "text": "1. Không sử dụng một thông tin cá nhân để tạo nhiều tài khoản. Có thể vẫn tạo được nhưng sau sẽ bị quét và vô hiệu hóa toàn bộ."
+    },
+    {
+      "id": 290,
+      "start": 1781.512,
+      "end": 1786.592,
+      "start_time": "00:29:41,512",
+      "end_time": "00:29:46,592",
+      "text": "2. Khi xác minh thất bại đến lần thứ 2, hãy nhờ sự trợ giúp từ đội ngũ hỗ trợ để đảm bảo xác minh chính xác."
+    },
+    {
+      "id": 291,
+      "start": 1786.592,
+      "end": 1788.632,
+      "start_time": "00:29:46,592",
+      "end_time": "00:29:48,632",
+      "text": "Vì mỗi tài khoản chỉ được phép xác minh 3 lần."
+    },
+    {
+      "id": 292,
+      "start": 1789.212,
+      "end": 1794.932,
+      "start_time": "00:29:49,212",
+      "end_time": "00:29:54,932",
+      "text": "3. Thông tin sử dụng để tạo phải là thông tin thật, không làm giả giấy tờ để lách luật, cố tình sẽ bị vô hiệu hóa tài khoản."
+    },
+    {
+      "id": 293,
+      "start": 1795.512,
+      "end": 1800.132,
+      "start_time": "00:29:55,512",
+      "end_time": "00:30:00,132",
+      "text": "Đây là toàn bộ quy trình tạo tài khoản Google AdSense và bật kiếm tiền chính xác nhất, tuân thủ luật của YouTube."
+    },
+    {
+      "id": 294,
+      "start": 1800.692,
+      "end": 1806.912,
+      "start_time": "00:30:00,692",
+      "end_time": "00:30:06,912",
+      "text": "Chúc các bạn thực hiện thành công. Nếu cần hỗ trợ, hãy liên hệ qua hotline hoặc Zalo Huân Academy 088 9697 888."
+    },
+    {
+      "id": 295,
+      "start": 1808.912,
+      "end": 1811.172,
+      "start_time": "00:30:08,912",
+      "end_time": "00:30:11,172",
+      "text": "Ok, đây là video hướng dẫn."
+    },
+    {
+      "id": 296,
+      "start": 1813.212,
+      "end": 1815.672,
+      "start_time": "00:30:13,212",
+      "end_time": "00:30:15,672",
+      "text": "Dành cho video hướng dẫn bật kiếm tiền nhé."
+    },
+    {
+      "id": 297,
+      "start": 1817.4,
+      "end": 1830.52,
+      "start_time": "00:30:17,400",
+      "end_time": "00:30:30,520",
+      "text": "Cảm ơn anh em. Thật ra vừa qua anh em cũng hỏi khá nhiều phần này. Tuy nhiên là mình để làm video hướng dẫn nó được chi tiết thì cần thời gian để mình xác minh."
+    },
+    {
+      "id": 298,
+      "start": 1831.34,
+      "end": 1842.42,
+      "start_time": "00:30:31,340",
+      "end_time": "00:30:42,420",
+      "text": "Có những cách làm nó, anh em hộ đội, các đội họ có các cái tut, các mẹo người ta làm nhiều thì mình cũng biết. Nhưng mà tuy nhiên là mình muốn chia sẻ với anh em cái cách làm chuẩn nhất."
+    },
+    {
+      "id": 299,
+      "start": 1842.42,
+      "end": 1849.78,
+      "start_time": "00:30:42,420",
+      "end_time": "00:30:49,780",
+      "text": "Nhất anh em yên tâm nhé tất cả những video hướng dẫn này là sẽ có cập nhật đầy đủ trên website Huân Academy chi tiết đầy đủ"
+    },
+    {
+      "id": 300,
+      "start": 1849.78,
+      "end": 1853.46,
+      "start_time": "00:30:49,780",
+      "end_time": "00:30:53,460",
+      "text": "sẽ có thêm cả phần hướng dẫn khai thuế 30%"
+    },
+    {
+      "id": 301,
+      "start": 1853.46,
+      "end": 1862.42,
+      "start_time": "00:30:53,460",
+      "end_time": "00:31:02,420",
+      "text": "dành cho công dân không ở Hoa Kỳ và phần Add Bank phần đó khá đơn giản nhưng mình vẫn sẽ làm đầy đủ chi tiết để cho mọi người làm theo chuẩn yên tâm"
+    },
+    {
+      "id": 302,
+      "start": 1862.42,
+      "end": 1870.1,
+      "start_time": "00:31:02,420",
+      "end_time": "00:31:10,100",
+      "text": "nó không bị sai bởi vì những cái phần này anh em bị làm sai một hai lần mà mình không không biết thì nó rất là nguy hiểm"
+    },
+    {
+      "id": 303,
+      "start": 1870.1,
+      "end": 1882.42,
+      "start_time": "00:31:10,100",
+      "end_time": "00:31:22,420",
+      "text": "có lưu ý là cái phần xác minh danh tính này nó sẽ chỉ xác minh được ba lần thôi vì vậy nếu như mà anh em bị xác minh mà nó bị sai đến lần thứ hai rồi mà nó vẫn gặp vấn đề nó không xác minh được thì nên liên hệ với"
+    },
+    {
+      "id": 304,
+      "start": 1882.42,
+      "end": 1890.1,
+      "start_time": "00:31:22,420",
+      "end_time": "00:31:30,100",
+      "text": "là cái này để anh em có thể nhận sự hỗ trợ có thể là TeamViewer để hỗ trợ thì anh em hãy tận dụng nguồn lực"
+    },
+    {
+      "id": 305,
+      "start": 1890.1,
+      "end": 1897.02,
+      "start_time": "00:31:30,100",
+      "end_time": "00:31:37,020",
+      "text": "được hỗ trợ nhé chưa ra ngoài kia dịch vụ thì kiểu gì cũng mất tiền mà cũng chưa biết được như thế nào"
+    },
+    {
+      "id": 306,
+      "start": 1897.02,
+      "end": 1902.42,
+      "start_time": "00:31:37,020",
+      "end_time": "00:31:42,420",
+      "text": "Ok mình có nhận được một vài câu hỏi ở đây liên quan đến"
+    },
+    {
+      "id": 307,
+      "start": 1902.42,
+      "end": 1908.82,
+      "start_time": "00:31:42,420",
+      "end_time": "00:31:48,820",
+      "text": "VPS thì mình cũng sẽ chia sẻ một vài số đơn vị mà mình đang sử dụng mình cũng thấy đang ổn"
+    },
+    {
+      "id": 308,
+      "start": 1910.0,
+      "end": 1915.48,
+      "start_time": "00:31:50,000",
+      "end_time": "00:31:55,480",
+      "text": "Về VPS nước ngoài thì mình cũng test khá là nhiều mình test cả của Google"
+    },
+    {
+      "id": 309,
+      "start": 1915.98,
+      "end": 1919.167,
+      "start_time": "00:31:55,980",
+      "end_time": "00:31:59,167",
+      "text": "test của cả Amazon Amazon thì mình dùng lâu rồi"
+    },
+    {
+      "id": 310,
+      "start": 1919.167,
+      "end": 1930.287,
+      "start_time": "00:31:59,167",
+      "end_time": "00:32:10,287",
+      "text": "Test của một vài đơn vị ở bên Pháp, bên Pháp mà nó sẽ, khi mình tạo mình không nhớ tên lắm nhưng mà mình tạo là mình phải, xác minh hộ chiếu nó mới cho mình dùng VPS của nó cơ."
+    },
+    {
+      "id": 311,
+      "start": 1931.087,
+      "end": 1935.887,
+      "start_time": "00:32:11,087",
+      "end_time": "00:32:15,887",
+      "text": "Thế thì trong quá trình sử dụng thì mình thấy là Amazon vẫn là top đầu về phần máy chủ ảo."
+    },
+    {
+      "id": 312,
+      "start": 1936.927,
+      "end": 1943.167,
+      "start_time": "00:32:16,927",
+      "end_time": "00:32:23,167",
+      "text": "Đợt vừa rồi thì anh em thấy có một cái đợt là nó bị sập mà không dùng Storyblocks rồi CapCut cái thứ ấy."
+    },
+    {
+      "id": 313,
+      "start": 1943.167,
+      "end": 1950.867,
+      "start_time": "00:32:23,167",
+      "end_time": "00:32:30,867",
+      "text": "Đó là liên quan đến server của ông Cloudflare, mà gốc của nó là VPS của"
+    },
+    {
+      "id": 314,
+      "start": 1950.867,
+      "end": 1958.567,
+      "start_time": "00:32:30,867",
+      "end_time": "00:32:38,567",
+      "text": "Amazon gặp vấn đề. Máy chủ của Cloudflare đặt ở Amazon thì nó gặp vấn đề."
+    },
+    {
+      "id": 315,
+      "start": 1958.567,
+      "end": 1968.967,
+      "start_time": "00:32:38,567",
+      "end_time": "00:32:48,967",
+      "text": "Tất cả những tập đoàn lớn, công ty lớn về công nghệ thông tin thì họ đều đặt máy chủ ở máy chủ của Amazon hết."
+    },
+    {
+      "id": 316,
+      "start": 1968.967,
+      "end": 1973.567,
+      "start_time": "00:32:48,967",
+      "end_time": "00:32:53,567",
+      "text": "thì mình dùng thì mình thấy khá ổn. Trong quá trình đúc kết thì mình thấy là"
+    },
+    {
+      "id": 317,
+      "start": 1973.567,
+      "end": 1980.567,
+      "start_time": "00:32:53,567",
+      "end_time": "00:33:00,567",
+      "text": "hiện tại thì mình chỉ tin dùng Amazon thôi. Và mình dùng cái gói mà 22$ 1 tháng"
+    },
+    {
+      "id": 318,
+      "start": 1980.567,
+      "end": 1987.867,
+      "start_time": "00:33:00,567",
+      "end_time": "00:33:07,867",
+      "text": "thì thấy cũng khá là ổn. Về VPS của Việt Nam"
+    },
+    {
+      "id": 319,
+      "start": 1987.9,
+      "end": 1991.4,
+      "start_time": "00:33:07,900",
+      "end_time": "00:33:11,400",
+      "text": "VPS ở Việt Nam thì mình cũng test khá nhiều đơn vị"
+    },
+    {
+      "id": 320,
+      "start": 1991.4,
+      "end": 2000.9,
+      "start_time": "00:33:11,400",
+      "end_time": "00:33:20,900",
+      "text": "Tuy nhiên thì đến hiện tại thì mình chỉ có tìm thấy một đơn vị duy nhất mình cảm thấy là tin tưởng được và thời gian vừa qua mình cũng có tạo GA trên đó"
+    },
+    {
+      "id": 321,
+      "start": 2000.9,
+      "end": 2006.9,
+      "start_time": "00:33:20,900",
+      "end_time": "00:33:26,900",
+      "text": "Mình cũng có đăng nhập rất là nhiều kênh lớn của bên mình lên trên đó"
+    },
+    {
+      "id": 322,
+      "start": 2006.9,
+      "end": 2009.9,
+      "start_time": "00:33:26,900",
+      "end_time": "00:33:29,900",
+      "text": "Những mail gốc rất là lớn để đăng nhập trên đó để nuôi"
+    },
+    {
+      "id": 323,
+      "start": 2009.9,
+      "end": 2017.32,
+      "start_time": "00:33:29,900",
+      "end_time": "00:33:37,320",
+      "text": "thì dùng từ tháng 7 đến bây giờ thì mình thấy nó rất là ổn định và mình kiểm tra mình check IP nó thấy ổn IP sạch,"
+    },
+    {
+      "id": 324,
+      "start": 2017.32,
+      "end": 2024.74,
+      "start_time": "00:33:37,320",
+      "end_time": "00:33:44,740",
+      "text": "khá là sạch thì mình cảm thấy là nó ổn. Hiện tại mình đã đăng ký đại lý thành công với bên đó thì anh em có nhu cầu"
+    },
+    {
+      "id": 325,
+      "start": 2024.74,
+      "end": 2032.16,
+      "start_time": "00:33:44,740",
+      "end_time": "00:33:52,160",
+      "text": "sử dụng VPS bên này thì có thể là nhắn tin qua Zalo của Huân Academy để nhận được báo giá và đăng ký sử dụng dịch vụ."
+    },
+    {
+      "id": 326,
+      "start": 2032.16,
+      "end": 2038.98,
+      "start_time": "00:33:52,160",
+      "end_time": "00:33:58,980",
+      "text": "thì từ đầu tuần tới thì dựa vào số lượng đăng ký thì mình sẽ bắt đầu cung cấp cho anh em và phần này thì mình lưu ý là"
+    },
+    {
+      "id": 327,
+      "start": 2038.98,
+      "end": 2048.48,
+      "start_time": "00:33:58,980",
+      "end_time": "00:34:08,480",
+      "text": "lưu ý một chút là VPS này thì không rẻ anh em nhé, không rẻ, không rẻ, phần này VPS không rẻ đâu, nhưng mà mình thấy nó yên tâm."
+    },
+    {
+      "id": 328,
+      "start": 2049.28,
+      "end": 2054.02,
+      "start_time": "00:34:09,280",
+      "end_time": "00:34:14,020",
+      "text": "Ngoài ra thì có một vài đơn vị khác cung cấp của Việt Nam mà mình thấy cũng ổn và anh em dùng khá là nhiều"
+    },
+    {
+      "id": 329,
+      "start": 2054.02,
+      "end": 2058.86,
+      "start_time": "00:34:14,020",
+      "end_time": "00:34:18,860",
+      "text": "Tuy nhiên là mình sẽ không đưa ra ý kiến rằng nó tốt hay là không tốt"
+    },
+    {
+      "id": 330,
+      "start": 2058.86,
+      "end": 2060.9,
+      "start_time": "00:34:18,860",
+      "end_time": "00:34:20,900",
+      "text": "Bởi vì là hiện tại thì mình không dùng"
+    },
+    {
+      "id": 331,
+      "start": 2060.9,
+      "end": 2062.94,
+      "start_time": "00:34:20,900",
+      "end_time": "00:34:22,940",
+      "text": "Mình không dùng, mình có test rồi"
+    },
+    {
+      "id": 332,
+      "start": 2062.94,
+      "end": 2065.58,
+      "start_time": "00:34:22,940",
+      "end_time": "00:34:25,580",
+      "text": "Nhưng mà hiện tại mình không dùng, mình chỉ chia sẻ những cái mà mình dùng thôi"
+    },
+    {
+      "id": 333,
+      "start": 2065.58,
+      "end": 2068.64,
+      "start_time": "00:34:25,580",
+      "end_time": "00:34:28,640",
+      "text": "Thì cái sẽ có một vài đơn vị anh em có thể tìm được"
+    },
+    {
+      "id": 334,
+      "start": 2068.64,
+      "end": 2070.217,
+      "start_time": "00:34:28,640",
+      "end_time": "00:34:30,217",
+      "text": "Mình sẽ search web cho anh em nhé"
+    },
+    {
+      "id": 335,
+      "start": 2070.217,
+      "end": 2077.217,
+      "start_time": "00:34:30,217",
+      "end_time": "00:34:37,217",
+      "text": "Em nhìn thấy màn hình của Chrome chưa"
+    },
+    {
+      "id": 336,
+      "start": 2077.217,
+      "end": 2081.217,
+      "start_time": "00:34:37,217",
+      "end_time": "00:34:41,217",
+      "text": "Nhìn thấy rồi lên phím 1 giúp mình"
+    },
+    {
+      "id": 337,
+      "start": 2081.217,
+      "end": 2083.217,
+      "start_time": "00:34:41,217",
+      "end_time": "00:34:43,217",
+      "text": "Ok"
+    },
+    {
+      "id": 338,
+      "start": 2083.217,
+      "end": 2088.217,
+      "start_time": "00:34:43,217",
+      "end_time": "00:34:48,217",
+      "text": "Một vài đơn vị của Việt Nam thì mình thấy nó cũng khá ổn"
+    },
+    {
+      "id": 339,
+      "start": 2088.217,
+      "end": 2097.087,
+      "start_time": "00:34:48,217",
+      "end_time": "00:34:57,087",
+      "text": "thì anh em có thể test thì mấy đơn vị này nó cũng có gói cấu hình nó cũng khá là ổn. Với kinh nghiệm của mình thì"
+    },
+    {
+      "id": 340,
+      "start": 2097.087,
+      "end": 2105.957,
+      "start_time": "00:34:57,087",
+      "end_time": "00:35:05,957",
+      "text": "anh em sử dụng gói 2GB RAM. 2GB RAM là cũng ổn ổn rồi, gói trung bình rồi. Mình sẽ check thử nhé. Đây là Low End Việt nhé."
+    },
+    {
+      "id": 341,
+      "start": 2105.957,
+      "end": 2110.957,
+      "start_time": "00:35:05,957",
+      "end_time": "00:35:10,957",
+      "text": "Low End Việt. Đây là một đơn vị khá là tốt, anh em có thể test."
+    },
+    {
+      "id": 342,
+      "start": 2110.957,
+      "end": 2121.957,
+      "start_time": "00:35:10,957",
+      "end_time": "00:35:21,957",
+      "text": "Mình sẽ check thêm một đơn vị khác nữa. Họ cũng làm khá là lâu rồi, anh em có thể test thêm."
+    },
+    {
+      "id": 343,
+      "start": 2121.957,
+      "end": 2132.957,
+      "start_time": "00:35:21,957",
+      "end_time": "00:35:32,957",
+      "text": "Vietnix, Vietnix họ cũng có dịch vụ VPS này. Anh em có thể test thêm. Giá thì nó cũng hợp lý thôi."
+    },
+    {
+      "id": 344,
+      "start": 2132.957,
+      "end": 2140.357,
+      "start_time": "00:35:32,957",
+      "end_time": "00:35:40,357",
+      "text": "Ngoài ra thì có một đơn vị khác nữa gần đây mình thấy cũng khá là nổi. Lanit. Lanit."
+    },
+    {
+      "id": 345,
+      "start": 2140.5,
+      "end": 2149.207,
+      "start_time": "00:35:40,500",
+      "end_time": "00:35:49,207",
+      "text": "3 đơn vị này thì mình thấy là họ cũng có lịch sử bề dày, họ triển khai rồi thì anh em có thể là mình sẽ dùng"
+    },
+    {
+      "id": 346,
+      "start": 2149.207,
+      "end": 2157.913,
+      "start_time": "00:35:49,207",
+      "end_time": "00:35:57,913",
+      "text": "VPS 3 bên này được nhé. Nước ngoài thì ưu tiên dùng Amazon này, ở Việt Nam thì có thể test 3 đơn vị này, họ có"
+    },
+    {
+      "id": 347,
+      "start": 2157.913,
+      "end": 2166.62,
+      "start_time": "00:35:57,913",
+      "end_time": "00:36:06,620",
+      "text": "thể liên hệ với đội ngũ hỗ trợ của Huân Academy để được báo giá về phần VPS, VPS trung bình, trung bình nhé, khoảng 300.000 một tháng."
+    },
+    {
+      "id": 348,
+      "start": 2170.5,
+      "end": 2175.5,
+      "start_time": "00:36:10,500",
+      "end_time": "00:36:15,500",
+      "text": "Ok ạ"
+    },
+    {
+      "id": 349,
+      "start": 2175.5,
+      "end": 2177.92,
+      "start_time": "00:36:15,500",
+      "end_time": "00:36:17,920",
+      "text": "Anh em hỏi đáp"
+    },
+    {
+      "id": 350,
+      "start": 2177.92,
+      "end": 2178.64,
+      "start_time": "00:36:17,920",
+      "end_time": "00:36:18,640",
+      "text": "Đến phần hỏi đáp"
+    },
+    {
+      "id": 351,
+      "start": 2178.64,
+      "end": 2181.32,
+      "start_time": "00:36:18,640",
+      "end_time": "00:36:21,320",
+      "text": "Anh em hỏi đáp nếu có mic thì anh em có thể"
+    },
+    {
+      "id": 352,
+      "start": 2181.32,
+      "end": 2183.86,
+      "start_time": "00:36:21,320",
+      "end_time": "00:36:23,860",
+      "text": "Raise hand nhé"
+    },
+    {
+      "id": 353,
+      "start": 2183.86,
+      "end": 2185.5,
+      "start_time": "00:36:23,860",
+      "end_time": "00:36:25,500",
+      "text": "Mình sẽ mở mic nhé"
+    }
+  ]
+}

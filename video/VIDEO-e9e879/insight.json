@@ -1,0 +1,79 @@
+{
+  "sku": "VIDEO-e9e879",
+  "title": "Thực chiến & Show kênh ngách làm reup mới bật kiếm tiền - Full quy trình thực chiến sản xuất video -> đăng video lên kênh không che ",
+  "actual_topic": "Thực chiến & Show kênh ngách làm reup mới bật kiếm tiền - Full quy trình thực chiến sản xuất video -> đăng video lên kênh không che ",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Reup & Khai Thác Hoạt Hình",
+  "niche_id": "faceless-general",
+  "target_market": "Trung Quốc",
+  "market_code": "CN",
+  "key_takeaways": [
+    "Tác giả show một kênh reup mới bật kiếm tiền đầu tháng 5, quay ngày 11 tháng 5 năm 2026, kiếm hơn 500.000 nhưng view hơi flop, và nói reup chủ yếu là làm thêm.",
+    "Quy trình: xuất phụ đề dịch từ Trung sang Việt trong CapCut (chỉnh tốc độ 0.7 hoặc 0.8 trước khi lấy phụ đề), tạo voice rồi chèn logo, ghép lại.",
+    "Giọng Ngọc Huyền dùng bản miễn phí trong tool dịch của tác giả, chỉ đọc tiếng Việt, file hơn 30 phút tạo rất nhanh; tác giả còn thêm bộ lọc giọng ngọt ngào để kênh có chất riêng.",
+    "Thumbnail có thể làm bằng Canva, tạo ảnh của CapCut hoặc AI, clone phong cách chữ của đối thủ, ảnh gốc lấy từ video rồi cắt màn hình.",
+    "Khi up lên thì bật kiếm tiền để video xử lý, đăng khoảng 7h (có thể 6h hoặc 6h30 giờ Việt Nam), và tác giả sẵn sàng nhượng lại kênh nếu có người mua."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình làm kênh reup từ phim Trung sang Việt, tạo voice, làm thumbnail và đăng video bật kiếm tiền",
+    "additional": [
+      "Xuất phụ đề dịch từ Trung sang Việt, tạo voice, chèn logo; trước khi lấy phụ đề chỉnh tốc độ về 0.7 hoặc 0.8.",
+      "Tạo voice giọng Ngọc Huyền bằng tool miễn phí trong tool dịch, hoặc dùng giọng CapCut; tác giả thêm bộ lọc giọng ngọt ngào trong CapCut.",
+      "Sau khi edit xong gộp lại và tăng tốc độ lên.",
+      "Làm thumbnail bằng Canva, tạo ảnh của CapCut trên máy tính hoặc AI, clone phong cách chữ của đối thủ.",
+      "Đăng video khoảng 7h giờ Việt Nam (6h hoặc 6h30 cũng được), chờ xử lý xong rồi đặt lịch và bật kiếm tiền."
+    ]
+  },
+  "avoid_flags": [
+    "Trước khi tách lấy phụ đề gốc cần nhớ giảm tốc độ video xuống mức chậm vừa phải để quá trình nhận diện và dịch phụ đề không bị lệch nhịp",
+    "Khi đăng tải video lên kênh không nên xuất bản ngay lập tức mà cần bật kiếm tiền và chờ hệ thống xử lý xong xuôi rồi mới lên lịch công chiếu"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "CapCut",
+    "Canva",
+    "Vbee"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Tổng quan nội dung bài giảng và mục tiêu thực hành"
+    },
+    {
+      "time": "01:47",
+      "seconds": 107,
+      "label": "Đánh giá hiệu quả bật kiếm tiền và tiềm năng doanh thu của ngách"
+    },
+    {
+      "time": "03:38",
+      "seconds": 218,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "05:26",
+      "seconds": 326,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "07:40",
+      "seconds": 460,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-e9e879/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Xuất phụ đề dịch từ Trung sang Việt, tạo voice, chèn logo; trước khi lấy phụ đề chỉnh tốc độ về 0.7 hoặc 0.8.",
+    "Tạo voice giọng Ngọc Huyền bằng tool miễn phí trong tool dịch, hoặc dùng giọng CapCut; tác giả thêm bộ lọc giọng ngọt ngào trong CapCut.",
+    "Sau khi edit xong gộp lại và tăng tốc độ lên.",
+    "Làm thumbnail bằng Canva, tạo ảnh của CapCut trên máy tính hoặc AI, clone phong cách chữ của đối thủ.",
+    "Đăng video khoảng 7h giờ Việt Nam (6h hoặc 6h30 cũng được), chờ xử lý xong rồi đặt lịch và bật kiếm tiền."
+  ]
+}

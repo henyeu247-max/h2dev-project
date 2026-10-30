@@ -1,0 +1,108 @@
+{
+  "noise_db": -35,
+  "min_duration": 2.5,
+  "silence_regions": [
+    {
+      "start": 382.99,
+      "duration": 3.24,
+      "end": 386.23
+    },
+    {
+      "start": 435.13,
+      "duration": 6.87,
+      "end": 442.0
+    },
+    {
+      "start": 536.15,
+      "duration": 2.53,
+      "end": 538.68
+    },
+    {
+      "start": 583.17,
+      "duration": 2.99,
+      "end": 586.16
+    },
+    {
+      "start": 677.9,
+      "duration": 2.56,
+      "end": 680.45
+    },
+    {
+      "start": 750.2,
+      "duration": 3.25,
+      "end": 753.45
+    },
+    {
+      "start": 800.28,
+      "duration": 3.04,
+      "end": 803.32
+    },
+    {
+      "start": 945.6,
+      "duration": 2.63,
+      "end": 948.24
+    },
+    {
+      "start": 1265.15,
+      "duration": 2.99,
+      "end": 1268.13
+    },
+    {
+      "start": 1328.63,
+      "duration": 4.98,
+      "end": 1333.62
+    },
+    {
+      "start": 1424.68,
+      "duration": 2.93,
+      "end": 1427.61
+    },
+    {
+      "start": 1548.58,
+      "duration": 2.52,
+      "end": 1551.1
+    },
+    {
+      "start": 1884.34,
+      "duration": 4.72,
+      "end": 1889.06
+    },
+    {
+      "start": 1936.88,
+      "duration": 2.63,
+      "end": 1939.51
+    },
+    {
+      "start": 1978.95,
+      "duration": 2.71,
+      "end": 1981.66
+    },
+    {
+      "start": 1984.1,
+      "duration": 2.77,
+      "end": 1986.87
+    },
+    {
+      "start": 2014.14,
+      "duration": 2.64,
+      "end": 2016.78
+    },
+    {
+      "start": 2134.87,
+      "duration": 2.56,
+      "end": 2137.43
+    },
+    {
+      "start": 2144.41,
+      "duration": 2.99,
+      "end": 2147.4
+    },
+    {
+      "start": 2173.27,
+      "duration": 2.94,
+      "end": 2176.21
+    }
+  ],
+  "silence_count": 20,
+  "silence_total_sec": 64.49
+}

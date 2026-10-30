@@ -1,0 +1,98 @@
+{
+  "sku": "VIDEO-d84a78",
+  "title": "HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN",
+  "actual_topic": "Lộ trình chuẩn 8 Module khóa học H2DEV và chính sách hợp tác làm kênh YouTube ăn chia doanh thu",
+  "category_group": "ban_content",
+  "niche_primary": "Hợp tác phát triển & Phật pháp Hàn Quốc",
+  "niche_id": "kenh-hop-tac-lo-trinh",
+  "target_market": "Hàn Quốc / Việt Nam",
+  "market_code": "KR,VN",
+  "key_takeaways": [
+    "Lộ trình 8 module được sắp xếp theo thứ tự thực chiến: Module 1 là nền tảng tư duy và cài đặt ban đầu bắt buộc phải xem, Module 2 lọc tìm từ khóa, Module 3 hướng dẫn train prompt cho mọi ngách, Module 4 quan trọng nhất và được cập nhật liên tục.",
+    "Các module tiếp theo hoàn thiện dây chuyền sản xuất: Module 5 hướng dẫn quy trình edit cho người mới, Module 6 khắc phục gãy view và các mẹo thực chiến, Module 7 nhân bản thị trường, Module 8 tổng hợp tool và tài khoản giá rẻ.",
+    "Người học cần bấm vào mục Mới cập nhật trên web để theo dõi ngay các video vừa đăng hiển thị ở đầu trang mà không mất công tìm kiếm từng danh mục.",
+    "Tác giả mở đầu bằng việc chia sẻ kênh thị trường Hàn Quốc vừa bật kiếm tiền ngày 11 tháng 3, sau 2 ngày đạt khoảng 2 triệu đồng để chứng minh làm đúng ngách và quy trình edit vẫn bật kiếm tiền bình thường.",
+    "Chính sách hợp tác ăn chia doanh thu ưu tiên thành viên gói Pro VIP (có lớp bảo mật riêng cho mô tả và tài liệu), hiện triển khai kênh view Việt dạng reup bán content đã bật kiếm tiền cuối tháng 2 và sắp tới sẽ mở rộng sang view ngoại."
+  ],
+  "edit_sop": {
+    "primary": "Lộ trình xem video theo 8 module trên web và thông tin hợp tác ăn chia doanh thu kênh YouTube",
+    "additional": [
+      "Bấm trải nghiệm toàn bộ video để xem theo thứ tự; module 1 là nền tảng tư duy và setup ngay từ đầu, bắt buộc xem.",
+      "Module 2 hướng dẫn lọc tìm key, module 3 hướng dẫn train prompt cho bất kỳ ngách nào, module 4 là quan trọng nhất và cập nhật liên tục.",
+      "Module 5 là quy trình edit, module 6 là cách khắc phục gãy view và các mẹo, module 7 là nhóm thị trường, module 8 là tool và tài khoản giá rẻ.",
+      "Bấm mục Mới cập nhật để thấy video vừa đăng nằm trên đầu.",
+      "Hợp tác ăn chia doanh thu hiện chỉ làm kênh view Việt dạng reup bán content, ưu tiên thành viên gói Pro VIP."
+    ]
+  },
+  "avoid_flags": [
+    "Xem sai thứ tự quy trình thì kênh không bao giờ lên top.",
+    "Tác giả chỉ chia sẻ thực chiến, không nói lý thuyết dài dòng."
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "TikTok"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu: hướng dẫn xem video đúng quy trình và phần hợp tác ăn chia doanh thu"
+    },
+    {
+      "time": "00:17",
+      "seconds": 17,
+      "label": "Show kênh Hàn Quốc vừa bật kiếm tiền ngày 11/3 để tạo động lực"
+    },
+    {
+      "time": "01:26",
+      "seconds": 86,
+      "label": "Lộ trình xem: Module 1 nền tảng tư duy và setup ngay từ đầu, bắt buộc với người mới"
+    },
+    {
+      "time": "02:11",
+      "seconds": 131,
+      "label": "Module 4 cực kỳ quan trọng, cập nhật liên tục; tab mới cập nhật hiện video mới đăng"
+    },
+    {
+      "time": "02:32",
+      "seconds": 152,
+      "label": "Module 5 quy trình edit; 6 khắc phục gãy view; nhân bản thị trường; module 8 tool và tài khoản giá rẻ"
+    },
+    {
+      "time": "04:15",
+      "seconds": 255,
+      "label": "Hợp tác ăn chia doanh thu: ưu tiên thành viên Pro VIP"
+    },
+    {
+      "time": "04:36",
+      "seconds": 276,
+      "label": "Ví dụ kênh view Việt (Reup bán content) đang hợp tác, bật kiếm tiền cuối tháng 2"
+    },
+    {
+      "time": "06:06",
+      "seconds": 366,
+      "label": "Demo mô tả video: video free xem được link, video Pro cần nâng cấp mới lấy được"
+    },
+    {
+      "time": "07:14",
+      "seconds": 434,
+      "label": "Sắp mở thêm kèo hợp tác view ngoại; hiện chỉ hợp tác view Việt"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-d84a78/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Bấm trải nghiệm toàn bộ video để xem theo thứ tự; module 1 là nền tảng tư duy và setup ngay từ đầu, bắt buộc xem.",
+    "Module 2 hướng dẫn lọc tìm key, module 3 hướng dẫn train prompt cho bất kỳ ngách nào, module 4 là quan trọng nhất và cập nhật liên tục.",
+    "Module 5 là quy trình edit, module 6 là cách khắc phục gãy view và các mẹo, module 7 là nhóm thị trường, module 8 là tool và tài khoản giá rẻ.",
+    "Bấm mục Mới cập nhật để thấy video vừa đăng nằm trên đầu.",
+    "Hợp tác ăn chia doanh thu hiện chỉ làm kênh view Việt dạng reup bán content, ưu tiên thành viên gói Pro VIP."
+  ],
+  "last_verified_at": "2026-10-09T06:30:00Z"
+}

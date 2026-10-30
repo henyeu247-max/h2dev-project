@@ -1,0 +1,1412 @@
+1
+00:00:00,000 --> 00:00:09,907
+Hello anh em, về phần VPS thì thực ra nó có rất nhiều quan điểm về việc là dùng nên dùng hay không. Một số anh em thì họ vẫn dùng theo cách truyền thống là
+
+2
+00:00:09,907 --> 00:00:19,813
+một trong một cái máy họ có thể login đến cả mấy chục kênh, cả trăm kênh. Có những anh em thì họ chọn là Proxy để cho nó rẻ, nó tối ưu chi phí.
+
+3
+00:00:19,813 --> 00:00:29,720
+Tuy nhiên thì với GODA thì mình luôn hướng đến là xây dựng một cái nền nó vững chắc, nó vẫn chắc từ những cái nhỏ nhất, từ những cái bảo mật rồi là phần kênh,
+
+4
+00:00:29,720 --> 00:00:39,713
+Vậy nên là bên mình cũng làm VPS bản thân mình làm VPS từ 2017 đến bây giờ thì mình cũng kiểm chứng là có những con VPS dùng đến bây giờ 8-9
+
+5
+00:00:39,713 --> 00:00:49,707
+năm rồi thì nó vẫn còn nguyên nó không bị làm sao cả đến bây giờ vẫn 1 IP và 1 cái con máy đấy 1 con máy ảo đấy nó không
+
+6
+00:00:49,707 --> 00:00:59,700
+bị ảnh hưởng đấy thì mình thấy là nó nó có sự ổn định như thế thì mình cũng yên tâm hơn phần nào so với là là proxy hay là những cái
+
+7
+00:00:59,700 --> 00:01:11,000
+Cái dạng khác. Anh em làm ít thì có thể là không phải quan tâm quá phần này nhưng anh em đã làm đến vài kênh hoặc chục kênh thì cũng sẽ cần phải rất là kỹ ở phần này.
+
+8
+00:01:12,520 --> 00:01:20,260
+Đặc biệt là về phần khi mà nó có chính sách mới từ tháng 7 đến bây giờ, nó có chính sách là quét những kênh liên quan.
+
+9
+00:01:20,260 --> 00:01:29,220
+liên quan thì bất kỳ khi mà anh em dính một cái lỗi nào đó liên quan đến kênh mà nó bị mà phát thôi thì gần như là có thể bị quét bay cả hệ thống luôn
+
+10
+00:01:29,220 --> 00:01:32,800
+thì đấy là một cái phần rất là đáng lưu tâm
+
+11
+00:01:32,800 --> 00:01:40,300
+dưới mấy kênh thì nên chứ nên dùng để nó tách ra
+
+12
+00:01:40,642 --> 00:01:50,315
+Anh em vẫn có lựa chọn riêng của anh em thôi. Nếu mà mình dùng mà nó cảm thấy ổn thì mình vẫn cứ dùng. Không có ai bắt
+
+13
+00:01:50,315 --> 00:01:59,989
+ép cả. Bởi vì nó là cái niềm tin của mỗi người. Bên mình thì cũng làm rất là nhiều. Bây giờ quản lý khoảng 1.000 cái mail. Một
+
+14
+00:01:59,989 --> 00:02:09,662
+cái mail bao gồm mail gốc, mail quản trị, GA các thứ. Dùng rất là nhiều. Có khoảng hơn 100 con VPS rồi. Chấm 2, chấm 3 con này.
+
+15
+00:02:10,642 --> 00:02:17,642
+Anh em cứ để phần hỏi đáp tí nữa mình sẽ đến phần hỏi đáp nhé. Có hỏi để sau nhé, sẽ có phần hỏi đáp riêng.
+
+16
+00:02:17,642 --> 00:02:25,642
+Phần hỏi đáp bao gồm về tất cả các hỏi liên quan đến VPS và bảo mật.
+
+17
+00:02:25,642 --> 00:02:32,642
+Hôm nay sẽ là một cái Zoom dự định là mình tổ chức từ trước đó cơ nhưng mà liên quan đến
+
+18
+00:02:32,642 --> 00:02:39,642
+phần VPS để cung cấp đến anh em thì cái giải pháp mình đã test từ tháng 7 đến bây giờ
+
+19
+00:02:39,642 --> 00:02:48,962
+Họp đồng hơi lâu một chút, đến hôm nay với Chốt được lịch, có tuần rồi Chốt được lịch và hôm nay thì anh em mới ngồi Zoom với nhau, chia sẻ.
+
+20
+00:02:51,250 --> 00:02:58,910
+Đây là những phần mà chính mình đang làm, đang thấy nó hiệu quả và nó đảm bảo an toàn cho hệ thống nên là mình chia sẻ với anh em.
+
+21
+00:03:00,070 --> 00:03:04,470
+Ở cái mảng MMO này thì cũng muốn lưu ý với anh em là nó không có đúng, không có sai.
+
+22
+00:03:05,270 --> 00:03:08,110
+Mỗi anh em sẽ có một góc nhìn và mỗi anh em một quan điểm khác nhau.
+
+23
+00:03:08,850 --> 00:03:12,530
+Vậy là anh em hãy tham khảo cái cách này là cách của GODA nhé.
+
+24
+00:03:12,530 --> 00:03:16,050
+Mình không đại diện tất cả anh em nào hay là trường phái nào cả.
+
+25
+00:03:16,310 --> 00:03:17,370
+Chỉ là cái cách mình làm thôi.
+
+26
+00:03:17,990 --> 00:03:19,070
+Đó đảm bảo an toàn thôi.
+
+27
+00:03:21,250 --> 00:03:33,250
+Anh em nhìn thấy màn hình nhỉ? Anh em nhìn thấy rồi thì gõ phím 1 nhé. Ok ok. Phần này là quản trị bảo mật kênh YouTube theo mô hình của GODA mình đang triển khai bây giờ nhé.
+
+28
+00:03:35,000 --> 00:03:47,710
+Đầu tiên là về phần tư duy quản trị cốt lõi. VPS trong hệ thống của mình thì mình coi nó không chỉ là một cái máy ảo mà nó là một cái tài sản để nó chứa cái email, làm kênh, chứa kênh YouTube.
+
+29
+00:03:47,710 --> 00:03:52,310
+và hiện tại thì mình đang dùng nó để chứa cả tài khoản Google AdSense nữa luôn.
+
+30
+00:03:54,110 --> 00:04:00,630
+Nguyên tắc vàng khi mình sử dụng cái VPS này, máy chủ ảo này thì nó là một hệ sinh thái khép kín.
+
+31
+00:04:01,110 --> 00:04:09,650
+Thì cái mục tiêu của mình khi mình dùng VPS, mình cũng test rất là nhiều, mình test Proxy, test cả GPMLogin, anh em hay bảo cái đấy.
+
+32
+00:04:09,650 --> 00:04:11,690
+Thì bên mình có test hết, mình sử dụng hết.
+
+33
+00:04:11,690 --> 00:04:21,690
+thì GPMLogin mà dùng với sim 4G thì cũng được nhưng thực ra thì nếu như mà dùng nhiều sim như thế thì nó cũng không ổn lắm
+
+34
+00:04:21,690 --> 00:04:31,730
+xây dạng phone farm thì nó cũng không ổn lắm về mặt tối ưu và nó không chủ động lắm nên là mình không thích mình test không ổn lắm
+
+35
+00:04:32,417 --> 00:04:34,077
+Proxy thì nó thiếu sự ổn định nên mình không dùng.
+
+36
+00:04:35,037 --> 00:04:38,777
+Mục tiêu ở đây là tránh liên đới, tránh bị quét hàng loạt, tăng độ tin cậy lâu dài.
+
+37
+00:04:38,957 --> 00:04:43,357
+Đợt vừa qua sau tháng 7 thì anh em thấy là có những hệ thống bay cả một hệ thống luôn.
+
+38
+00:04:43,577 --> 00:04:45,457
+Bên bay cả hệ thống bởi vì là bị quét lan.
+
+39
+00:04:45,457 --> 00:04:53,070
+Thì cái bản chất của cái quét lan là gì? Thì họ sẽ quét một là những cái thông tin mà cái người đó đang đăng ký.
+
+40
+00:04:53,070 --> 00:05:00,684
+Ví dụ như mình đăng ký với cái tên của mình đi, Hoàng đi, với cái số điện thoại đấy và các email đấy. Lại còn chung một
+
+41
+00:05:00,684 --> 00:05:08,297
+IP và chung cái fingerprint là cái nhận diện của mình ấy. Với cái thao tác tay của mình và mọi thứ, lịch sử các thứ ấy.
+
+42
+00:05:08,297 --> 00:05:14,577
+Về sau khi một kênh gặp sự cố bị die chết vì một lý do nào đó thì tất cả các kênh khác đều bị
+
+43
+00:05:14,577 --> 00:05:21,157
+thì nó quá rủi ro khi mà mình dùng chung một cái IP và nhiều kênh như đó
+
+44
+00:05:21,157 --> 00:05:23,597
+thế này cứ là mục tiêu của nó
+
+45
+00:05:23,597 --> 00:05:26,877
+và về dài hạn thì bởi vì là VPS nó rất là
+
+46
+00:05:26,877 --> 00:05:32,277
+mình cảm nhận nó rất là an toàn và nó rất là ổn định
+
+47
+00:05:32,277 --> 00:05:40,757
+Vì vậy nên là về dài hạn với 1 email chỉ để trên 1 con VPS thì nó cũng sẽ tốt hơn rất là nhiều.
+
+48
+00:05:42,977 --> 00:05:46,497
+Tiếp theo đó là phần quản trị bảo mật kênh với VPS.
+
+49
+00:05:47,997 --> 00:05:52,697
+Phần này thì mình cần phải phân loại rõ 2 loại email nhé.
+
+50
+00:05:53,000 --> 00:06:01,130
+2 loại email. Bên mình thì dùng VPS, nên là mình chia sẻ cho VPS, thì nó có 2 loại email. Đầu tiên nó là email gốc nè.
+
+51
+00:06:01,510 --> 00:06:08,570
+Email gốc là gì? Là email mình dùng để mình nuôi rồi mình tạo kênh trên cái email đó. Tạo kênh nhé, chủ sở hữu chính của kênh ấy.
+
+52
+00:06:09,130 --> 00:06:18,870
+Tạo ra cái kênh đó. Quản trị kênh đó. Và backup. Thì thông thường là email gốc này thì mình chỉ tạo kênh và sau đó mình xác minh 3 dòng rồi setup đủ các thứ.
+
+53
+00:06:18,870 --> 00:06:31,750
+và mình để không nó thôi, mình không dùng đến luôn. Cái email này thỉnh thoảng vào check, đọc email rồi là tương tác một chút thôi chứ cũng gần như là không sử dụng bởi vì là nó là email gốc mà mình để cho nó back up để an toàn thôi.
+
+54
+00:06:33,450 --> 00:06:41,610
+Thì ở cái email gốc này thì mình sẽ login là tối đa là 5 email, 5 email, 5 kênh trên 1 VPS, tối đa chỉ thế thôi.
+
+55
+00:06:41,610 --> 00:06:48,610
+Thì mình cảm thấy nó an toàn, anh em có thể login nhiều hơn nhưng mà với góc nhìn của mình thì nên 5 kênh thôi, 5 kênh, 5 email thôi.
+
+56
+00:06:48,610 --> 00:06:55,810
+Mình không nên tiết kiệm một cách mình login nhiều quá thì thành ra nó lại như bài toán cũ là chục kênh trên 1 IP thì nó cũng bằng nhau.
+
+57
+00:06:55,810 --> 00:06:57,710
+Khi nó gặp rủi ro quá thì nó vẫn lan lên bình thường.
+
+58
+00:06:57,710 --> 00:07:06,050
+có một cái lưu ý ở đây nữa là không dùng email gốc để làm kênh và đặc biệt là không chứa tài
+
+59
+00:07:06,050 --> 00:07:11,630
+khoản Google AdSense anh em có một cái lỗi là là mình dùng email gốc của cái kênh xong mình là dùng
+
+60
+00:07:11,630 --> 00:07:17,710
+làm AdSense luôn thì nó có một cái rủi ro như thế này là khi cái kênh đến lỡ mình làm sai nó gặp vấn đề một
+
+61
+00:07:17,710 --> 00:07:20,530
+thì có thể là mình vứt cả cái AdSense ấy luôn
+
+62
+00:07:20,530 --> 00:07:23,090
+thì mình không dùng cho kênh khác được
+
+63
+00:07:23,090 --> 00:07:26,450
+có những cái lỗi nhẹ nhẹ thì mình vẫn có thể dùng lại Google AdSense
+
+64
+00:07:26,450 --> 00:07:28,330
+ví dụ như lỗi Reuse này
+
+65
+00:07:28,330 --> 00:07:30,512
+mà nhẹ nhàng thì mình vẫn có thể dùng được AdSense này
+
+66
+00:07:30,512 --> 00:07:40,272
+hoặc trong trường hợp là mình bị chết kênh, dạng chết kênh mà dạng lỗi nhẹ, dạng spam các thứ thì thực ra là cái AdSense này anh em vẫn dùng được lại.
+
+67
+00:07:40,892 --> 00:07:45,432
+Không nhất thiết là cứ phải bỏ đi dùng AdSense mới vì cái thông tin mình có nó cũng giới hạn thôi.
+
+68
+00:07:45,432 --> 00:07:51,552
+Mình mượn cũng chỉ được là trong vòng quan hệ là vợ chồng hay là anh em họ hàng mà rất thân thiết thì mới mượn được thôi.
+
+69
+00:07:51,692 --> 00:07:56,332
+Chứ còn ngoài ra thì cũng rất là khó để mượn được thông tin của anh em khác nữa.
+
+70
+00:07:56,332 --> 00:08:00,692
+để họ sẽ lo ngại vấn đề về thông tin cá nhân rồi bảo mật các thứ.
+
+71
+00:08:02,312 --> 00:08:03,432
+Có những lưu ý như này.
+
+72
+00:08:04,512 --> 00:08:09,472
+Về phần email làm kênh, thì mỗi email chỉ có sở hữu 1 kênh duy nhất thôi.
+
+73
+00:08:10,472 --> 00:08:14,812
+Mỗi email chỉ sở hữu 1 kênh duy nhất và chỉ sử dụng trên 1 VPS duy nhất.
+
+74
+00:08:17,112 --> 00:08:18,412
+Thì có nghĩa là gì?
+
+75
+00:08:18,412 --> 00:08:24,992
+Có nghĩa là nếu với 1 kênh của GODA làm thì bên mình sẽ sử dụng 2 VPS, bao gồm 1 VPS gốc.
+
+76
+00:08:26,200 --> 00:08:36,193
+chứa 5 email gốc có kênh ở trong đó và 1 email để làm kênh thì 1 email thì bằng 1 kênh 1 VPS thì cái này nó liên quan đến cô lập rủi
+
+77
+00:08:36,193 --> 00:08:46,187
+ro từng kênh này và bên mình thì bên mình sẽ cấp quyền vào VPS cho anh em quản lý anh em quản lý thì anh em lại sẽ lên chỉ làm việc thôi
+
+78
+00:08:46,187 --> 00:08:56,180
+chứ không dùng cái gì khác vì VPS thực ra nó hơi lag một chút anh em dùng quen thì nó quen thôi chứ còn thực ra nó vẫn lag và mình sẽ quản
+
+79
+00:08:56,180 --> 00:09:02,180
+Quản trị bằng cách như vậy, toàn bộ email làm kênh rồi email gốc là mình cầm hết thông tin hết để bảo mật thông tin.
+
+80
+00:09:03,180 --> 00:09:08,180
+Còn anh em quản lý thì chỉ tập trung làm nghề thôi, có những cái phần mà cấp kênh cái thứ thì mình làm hết.
+
+81
+00:09:09,180 --> 00:09:16,180
+Đó, thì nó rất là tối ưu trong quá trình mà quản trị nhiều kênh. Bây giờ bên mình cũng khá là nhiều kênh rồi thì không thể nào
+
+82
+00:09:16,180 --> 00:09:23,180
+mà cứ cấp quyền cho nhiều anh em xong anh em lại làm việc ở máy ở nhà được thì nó cũng bị vấn đề là anh em bị
+
+83
+00:09:23,180 --> 00:09:34,820
+thì nó cũng bị vấn đề về bảo mật và đồng bộ IP.
+
+84
+00:09:34,820 --> 00:09:38,920
+Bên mình có câu chuyện vui vui là anh em đang nhậu
+
+85
+00:09:38,920 --> 00:09:44,540
+Anh nhậu rồi tự nhiên thấy đến giờ 8-9 giờ thì đồng loạt lôi điện thoại ra
+
+86
+00:09:44,540 --> 00:09:52,720
+Thì lúc đấy là anh em đang đăng bài bài tab cộng đồng hoặc là anh em đang vào public video
+
+87
+00:09:52,720 --> 00:09:54,820
+Có một điểm nữa bên mình là
+
+88
+00:09:54,820 --> 00:10:07,342
+video trừ các video mà vào public vào cái khung giờ mà 1 giờ sáng đến 7 giờ sáng ấy thì bên mình không public bằng tay mà hẹn giờ còn lại thì là bên mình ưu tiên bằng tay hết
+
+89
+00:10:07,342 --> 00:10:16,342
+link bằng tay công khai bằng tay đấy là cái cách bên mình làm thôi. Ở đây thì mình có một cái nguyên tắc bảo mật email này cái phần này
+
+90
+00:10:16,342 --> 00:10:25,342
+là cái kinh nghiệm của mình làm và cũng kiểm nghiệm qua cái đợt vừa rồi là quét lan rất là nhiều bên mình cũng chết nhiều kênh chứ không phải không
+
+91
+00:10:25,342 --> 00:10:34,000
+thì những chủ đề mà nó có rủi ro để có chết kênh chứ không phải không thì mỗi email khôi phục mỗi email chỉ nối một email khôi phục thôi.
+
+92
+00:10:34,000 --> 00:10:40,742
+Mỗi email chỉ nối 1 email khôi phục duy nhất nhé. Và các email được nối theo vòng tròn khép kín.
+
+93
+00:10:40,742 --> 00:10:44,742
+Thì mình thì mình hay nối là 2 đến 3 email trong 1 vòng tròn.
+
+94
+00:10:44,742 --> 00:10:58,342
+2 đến 3 email trong 1 vòng tròn. Ví dụ như hoàng 1 nối khôi phục với hoàng 2, trong hoàng 2 nối khôi phục với hoàng 3, hoàng 3 nối khôi phục lại với hoàng 1. Thì mình chỉ nối như vậy thôi.
+
+95
+00:10:58,450 --> 00:11:01,950
+tốt nhất là 2 email nối với nhau
+
+96
+00:11:01,950 --> 00:11:06,450
+khoảng 1 nối với 2 email backup lẫn cho nhau
+
+97
+00:11:06,450 --> 00:11:12,450
+thì nó sẽ tốt nhất để tránh rủi ro bị chết lan nhiều
+
+98
+00:11:12,450 --> 00:11:19,450
+ở phần này thì khi mà liên quan đến phần chết lan thì một lý do nữa mình dùng VPS
+
+99
+00:11:19,450 --> 00:11:24,450
+khi mà trong một con VPS có 5 kênh gốc thì nó có một kênh gặp vấn đề
+
+100
+00:11:24,450 --> 00:11:36,450
+Các bạn có thể thì mình sẽ cô lập kênh đó ở lại con VPS đó để về sau mình kháng. Mình sẽ tìm khách mình khám bằng được. Còn 4 kênh còn lại mình sẽ login sang con VPS mới tinh.
+
+101
+00:11:36,450 --> 00:11:48,450
+Đó thì đấy là cái phần mình cô lập, cô lập những cái kênh. Giống như anh em là ở quê thì biết rằng là mình nuôi lợn, nuôi gà, nó có một con mà nó bị bệnh thì mình phải cô lập nó lại.
+
+102
+00:11:48,450 --> 00:12:00,450
+Để mình phải chuyển nó sang một trại mới để mình đảm bảo nó không bị lây lan. Bây giờ để nó lây lan thì bao công sức đổ sông đổ bể hết.
+
+103
+00:12:00,450 --> 00:12:11,150
+Ở phần đây lưu ý không được làm là mình không nối quá 3 email. Một số anh em làm theo kiểu là 1 email khôi phục cho hàng chục kênh, mấy chục kênh liền.
+
+104
+00:12:11,150 --> 00:12:14,990
+Anh em bảo không vấn đề gì cho đến khi gặp vấn đề
+
+105
+00:12:15,250 --> 00:12:18,570
+Thì đến khi mà nó gặp vấn đề rồi thì nó quá là xót xa
+
+106
+00:12:18,830 --> 00:12:22,410
+Có khi cả hệ thống một vài trăm nghìn có thể bay vì những lỗi
+
+107
+00:12:22,930 --> 00:12:26,770
+Lỗi quá đơn giản và lỗi quá lười như vậy thì nó phí lắm
+
+108
+00:12:26,770 --> 00:12:28,050
+Nó phí công sức anh em làm lắm
+
+109
+00:12:28,310 --> 00:12:31,190
+Xây dựng thì lâu chứ mà rụng thì nhanh lắm
+
+110
+00:12:31,817 --> 00:12:34,817
+Mà cái đấy mình có thể làm được thì anh em nên làm.
+
+111
+00:12:34,817 --> 00:12:38,817
+Tiếp đấy thì không được làm mỗi email khôi phục cho nhiều email khác này.
+
+112
+00:12:38,817 --> 00:12:46,817
+Lý do này, khi mà mình để nhiều kênh khôi phục cùng một email thì nó bị vấn đề là nó lan.
+
+113
+00:12:46,817 --> 00:12:52,817
+Thế mà phần này mình không làm thì để cho nó là không bị sập, cả một dây chuyền, cả một hệ thống của mình nó không bị sập tất.
+
+114
+00:12:52,817 --> 00:12:54,817
+Thế đây là lý do thôi.
+
+115
+00:12:54,817 --> 00:13:00,817
+Tiếp theo thì chúng ta đến phần 3 là nuôi email chăm sóc tài khoản Google AdSense.
+
+116
+00:13:00,817 --> 00:13:08,567
+Vừa rồi anh em quan tâm khá nhiều bởi vì anh em bị bị mắc vào phần này rất là nhiều thì lát nữa
+
+117
+00:13:08,567 --> 00:13:16,317
+nó sẽ có một video hướng dẫn anh em chi tiết các bước từ A đến Z tạo tài khoản Google AdSense luôn.
+
+118
+00:13:16,317 --> 00:13:24,357
+Lát nữa sẽ có. Ở phần chuẩn bị email này, trước khi anh em lập tài khoản Google AdSense thì mình sẽ cần phải có email trước.
+
+119
+00:13:25,357 --> 00:13:35,077
+Thì anh em có thể sử dụng email mình đã dùng lâu rồi, nhưng mà mình chưa tạo Google AdSense. Nhưng mà có cái điều phải lưu ý là
+
+120
+00:13:35,150 --> 00:13:42,150
+Thứ là cái phần email này nhé. Nếu như email của anh em đã dùng
+
+121
+00:13:42,150 --> 00:13:49,150
+để tạo tài khoản Google AdSense rồi thì không được dùng thông tin tạo tiếp.
+
+122
+00:13:49,150 --> 00:13:58,000
+Và cái IP nào đã tạo rồi thì không nên tạo tiếp. Vì một IP nếu anh em tạo thêm thì nó hay báo lỗi lắm. Mình là mình test nhiều rồi. Nó bị như thế.
+
+123
+00:13:58,000 --> 00:14:05,800
+Thì với email mới thì anh em phải tạo và nuôi tối thiểu là 14 ngày, tốt nhất là được 1 tháng thì càng
+
+124
+00:14:05,800 --> 00:14:13,450
+tốt. Điều kiện thì email phải chưa từng tạo GA, chưa từng dính vi phạm gì, chưa từng chết mail các thứ này.
+
+125
+00:14:13,450 --> 00:14:23,530
+Để chết cái lỗi spam đơn giản thì có thể nhắn đội hỗ trợ của Huân Academy để anh em gửi cho cái form kháng đơn giản, dạng đấy nó khá là dễ thôi, kháng được.
+
+126
+00:14:23,530 --> 00:14:35,330
+dạng đấy thì không vấn đề gì. Còn dạng vi phạm như anh em bị cấm hẳn chức năng dùng email rồi là Google AI cái thứ đó. Đấy là những dạng vi phạm nặng thì anh em sẽ không được dùng được nữa.
+
+127
+00:14:37,030 --> 00:14:43,930
+Về phần số điện thoại thì mình lưu ý là mình dùng số mới hoàn toàn nhé. Chưa từng tạo ra này. Chưa từng liên kết bất cứ GA nào.
+
+128
+00:14:44,810 --> 00:14:48,370
+Thì có thể là mình có thể mua một số mới. Mua một số mới tin bằng thông tin chính chủ của mình.
+
+129
+00:14:48,370 --> 00:14:51,850
+Còn này thì mình lưu ý là không nóng vội
+
+130
+00:14:51,850 --> 00:14:54,430
+Tài khoản Google AdSense nó là một cái tài sản của mình
+
+131
+00:14:54,430 --> 00:14:57,070
+Nó không phải là công cụ dùng một lần
+
+132
+00:14:57,070 --> 00:14:58,810
+Vì vậy nên là trong quá trình anh em tạo
+
+133
+00:14:58,810 --> 00:14:59,890
+Thật sự kiên nhẫn
+
+134
+00:14:59,890 --> 00:15:02,870
+Bình tĩnh thì tạo
+
+135
+00:15:02,870 --> 00:15:04,470
+Chăm nó nuôi nó đúng thì
+
+136
+00:15:04,470 --> 00:15:06,810
+Khi anh em tạo thì có thể nhanh là một ngày
+
+137
+00:15:06,810 --> 00:15:07,642
+Có thể được duyệt luôn rồi
+
+138
+00:15:07,642 --> 00:15:16,642
+Nếu mình nóng vội, mình vừa tạo ngày hôm nay, 3 hôm sau, 5 hôm sau đã tạo Google AdSense chắc chắn là nó bị đánh là có vấn đề rồi.
+
+139
+00:15:16,642 --> 00:15:21,642
+Chứ chả có ai mà tự nhiên tạo email hôm nay, ngày mai tạo GA mà Google nó duyệt cho vào.
+
+140
+00:15:21,642 --> 00:15:31,475
+Nếu có dễ thì cũng rất là may mắn thôi chứ còn không có chuyện là nó nhanh như thế được. Ngoài ra thì về phần tạo email tạo GA thì anh em cũng
+
+141
+00:15:31,475 --> 00:15:41,309
+có chia sẻ rằng là anh em dùng email cổ rồi là theo dạng là anh em mua ấy. Thế thì với mình thì mình không dùng bởi vì là nó cũng sẽ có
+
+142
+00:15:41,309 --> 00:15:51,142
+rủi ro về nguồn email. Thế nên là mình ưu tiên phương án là mình tự tạo email sau đó mình tự tạo GA thì nó đảm bảo cho mình yên tâm hơn thôi.
+
+143
+00:15:51,142 --> 00:15:55,142
+tính mình nó hơi khó tính, phần này mình kỹ tính phần này.
+
+144
+00:15:55,142 --> 00:16:02,000
+Nguyên tắc về VPS, sử dụng VPS cho Google AdSense bên mình đang dùng thì
+
+145
+00:16:02,000 --> 00:16:09,142
+cái nguyên tắc của mình là 1 VPS chỉ đăng nhập 1 tài khoản Google AdSense duy nhất thôi, 1 VPS chỉ 1 Google AdSense duy nhất.
+
+146
+00:16:09,142 --> 00:16:18,142
+Thì trên đó thì chỉ chứa là 1 email chứa tài khoản Google AdSense và 1 email khôi phục cho cái tài khoản email mà chứa GA lại.
+
+147
+00:16:18,142 --> 00:16:24,100
+Thì trên 1 VPS là tổng là có 2 email thôi. Thì nó back up cho lẫn nhau mà.
+
+148
+00:16:24,100 --> 00:16:36,100
+Còn này tuyệt đối là không login nhiều GA trên cùng 1 VPS, login GA trên nhiều IP khác nhau.
+
+149
+00:16:36,100 --> 00:16:42,100
+Anh em hay bị cái lỗi là mình bật kiếm tiền đúng không? Thế là mình login GA lung tung bèo hết lên.
+
+150
+00:16:42,100 --> 00:16:48,100
+IP nhảy lung tung bèo hết lên. Về sau nó bị vi phạm gì, nó bị quét gì đấy thì nó chết GA là điều đương nhiên rồi.
+
+151
+00:16:48,100 --> 00:16:53,380
+Nhiều anh em là GA chính chủ này nhưng vẫn bị chết bởi vì login nhiều chỗ quá
+
+152
+00:16:53,380 --> 00:16:56,180
+Nó không cố định được, rất là nguy hiểm
+
+153
+00:16:56,180 --> 00:17:02,500
+Mục tiêu của những phần này là tránh Google quét IP, tránh Google khóa nhiều GA cùng một lúc
+
+154
+00:17:02,500 --> 00:17:05,380
+Đang nhiều tài khoản Google AdSense cùng với một IP
+
+155
+00:17:05,380 --> 00:17:09,380
+Được rồi anh em thấy là bên họ kêu rất nhiều việc chết GA
+
+156
+00:17:09,380 --> 00:17:16,420
+Bên mình có bị chết GA ở đợt bão đầu tiên, tháng 6-7, đợt mà quét GA dạng mua
+
+157
+00:17:16,420 --> 00:17:24,170
+Sau đợt đó bên mình làm lại 100% GA đến bây giờ tất cả đều ổn hết và có những con GA tháng trước còn không
+
+158
+00:17:24,170 --> 00:17:31,920
+đủ minpay, chỉ tầm 30-40$, tháng sau có thể nhận được mức khoảng 340.000$ 1 kênh, 1 con GA thì không gặp vấn đề gì nhé.
+
+159
+00:17:31,920 --> 00:17:36,120
+Nó đều ổn hết vì mình tạo chính chủ mà, vì mình yên tâm.
+
+160
+00:17:36,120 --> 00:17:39,960
+Ở phần này thì mình cần phải là nuôi hành vi người dùng này
+
+161
+00:17:39,960 --> 00:17:43,920
+nuôi cái điểm Trust Score dành cho Google họ đánh giá
+
+162
+00:17:43,920 --> 00:17:47,460
+con AI Google đánh giá hành vi của mình dùng ấy
+
+163
+00:17:47,460 --> 00:17:48,460
+nó phải giống người thật
+
+164
+00:17:48,460 --> 00:17:51,860
+mình cần phải làm thường xuyên hàng ngày đó
+
+165
+00:17:51,860 --> 00:17:54,080
+hoặc là anh em một vài ngày làm một lần
+
+166
+00:17:54,080 --> 00:17:55,340
+làm đều đều
+
+167
+00:17:55,340 --> 00:17:56,120
+thì mới
+
+168
+00:17:56,120 --> 00:17:57,440
+email để check email thường xuyên
+
+169
+00:17:57,440 --> 00:17:58,182
+thì cái phần này
+
+170
+00:17:58,182 --> 00:18:04,702
+Thì cái phần email này thì anh em có thể là đăng ký, nhận tin nhắn tự động của một số cái web như là web tin tức này, nước ngoài này.
+
+171
+00:18:05,322 --> 00:18:08,162
+Thì anh em nhận email thường xuyên thì nó là hành vi người dùng.
+
+172
+00:18:08,162 --> 00:18:12,502
+Thì anh em vào mở email đấy, đọc email đấy thì cũng là hành vi người dùng.
+
+173
+00:18:12,502 --> 00:18:23,502
+có một điểm nữa thì là phần xem video trên YouTube thì mình có thể xem 24/24 được tại vì VPS thì nó không tắt mà VPS thì nó cứ mở cả ngày lẫn đêm thôi.
+
+174
+00:18:23,502 --> 00:18:33,502
+Thì anh em có thể cho xem YouTube xem nhạc rồi tin tức các thứ thì tùy anh em không quá là là phải đóng khung là mình phải làm như thế nào chỉ là mình tương tác hàng ngày thôi.
+
+175
+00:18:33,502 --> 00:18:44,502
+Sau đó có thể đọc báo, tìm kiếm thông tin. Hành vi cần tránh là mình tạo email xong mình bỏ không. Chỉ vào VPS khi cần bật kiếm tiền.
+
+176
+00:18:44,502 --> 00:18:51,502
+Thế lỡ anh em không check thường xuyên rồi là nó gặp vấn đề gì đó, email mình không biết nó check email hay bị nào đấy.
+
+177
+00:18:51,502 --> 00:18:56,502
+Hoặc mình không tương tác thường xuyên thì nó không giống người dùng thật. Đấy thì nó sẽ bị ảnh hưởng.
+
+178
+00:18:56,502 --> 00:19:03,502
+Vì vậy, anh em lại chơi cái bài là VPS thấy lười quá không làm, không có tương tác, quay ra
+
+179
+00:19:03,502 --> 00:19:10,502
+là chơi tool vào, xong quay quét, bay cả dàn. VPS vẫn chết bình thường, bởi vì anh em dùng tool.
+
+180
+00:19:10,502 --> 00:19:21,662
+Thế thì cái phần này thực ra nó cũng chả tốn bao nhiêu thời gian đâu, có khi một ngày, 30 giây chứ mấy. 30 giây thì nó đáng bao nhiêu thời gian đâu mà, mà mình phải dùng tool làm gì.
+
+181
+00:19:21,750 --> 00:19:32,750
+Tư duy ở đây là nuôi con người số, không nuôi tài khoản chết. Với mỗi cái IP VPS của mình thì mình rất là quan trọng nó và mình rất là giữ gìn nó.
+
+182
+00:19:32,750 --> 00:19:40,750
+Tại vì mình biết rằng là mình nuôi được một cái IP mà ngon rồi là nó ổn định qua nhiều năm tháng thì tài khoản của mình nó rất là khỏe.
+
+183
+00:19:44,750 --> 00:19:49,750
+Ờ, ở đây, phần quy trình bật kiếm tiền an toàn của mình hiện tại đang làm nhé.
+
+184
+00:19:49,750 --> 00:20:00,750
+thì mình không login GA ở nhiều nơi này nó chỉ có trên một con VPS thôi và khi mình bật kiếm tiền thì mình chỉ có thao tác ở trên cái VPS chứa cái con GA đó thôi chứ còn mình không login GA linh tinh.
+
+185
+00:20:01,000 --> 00:20:10,750
+Về phần quy trình thì mình sẽ có các bước sau đây đầu tiên nhé thì ở cái email gốc ấy thì mình sẽ cấp quyền chủ sở hữu cho cái email chứa tài khoản Google AdSense này
+
+186
+00:20:10,750 --> 00:20:20,643
+sau đó thì mình sẽ bật kiếm tiền trên VPS chứa con GA đấy. Sau khi bật thì mình để yên thôi. Không dùng con VPS chứa GA đi luôn. Chỉ
+
+187
+00:20:20,643 --> 00:20:30,537
+để xem YouTube, không dùng đi tương tác cái thứ gì cả. Không dùng tương tác cái khác. Mình chỉ để vậy thôi. Mình xác định nó là một cái
+
+188
+00:20:30,537 --> 00:20:40,430
+mình giữ cái tài khoản Google AdSense của mình nó được an toàn đây mà. Tổng kết ở đây này nó có những cái điều mà anh em cần nhận ra.
+
+189
+00:20:40,430 --> 00:20:47,930
+em cần nhớ này thì VPS là một cái dạng danh tính số này thì YouTube nó sẽ định danh mỗi một cái người
+
+190
+00:20:47,930 --> 00:20:52,730
+dùng dựa trên IP và lịch sử người dùng đâu chứ nó không thể nắm được các thông tin khác đâu nó chỉ
+
+191
+00:20:52,730 --> 00:21:00,430
+định danh vậy thôi email ở đây nó là cái gốc có mọi thứ của anh em làm đợt vừa rồi thì mình cũng nhận
+
+192
+00:21:00,430 --> 00:21:09,642
+Một số thông tin khá là buồn vì các anh em làm dạng dùng email của tên miền email domain
+
+193
+00:21:09,642 --> 00:21:18,709
+Buồn vì anh em hơi chủ quan về việc dùng email domain. Bản chất mình nhìn thấy nó có vấn đề rồi. Khi mà tất
+
+194
+00:21:18,709 --> 00:21:27,775
+cả email đều có một cái tên miền là A còng gì đó là tên miền domain tên miền công ty thì nó sẽ có rủi
+
+195
+00:21:27,775 --> 00:21:36,842
+ro khi anh em làm sai là anh em sẽ bị quét toàn bộ. Nó rất là nguy hiểm. Ví dụ như đây là hoang@goda.media.
+
+196
+00:21:36,842 --> 00:21:46,382
+Ví dụ như này đi, một email như này thì lỡ mà mình lại tạo rất nhiều cái tên miền, a.goda.media.vn này, một trong các email mình làm kênh này nó gặp
+
+197
+00:21:46,382 --> 00:21:55,922
+vấn đề phát thì có thể là bay tất cả luôn, nó xóa hết. Và email domain mà đã gặp vấn đề rồi là gần như không kháng được. Mình thấy là
+
+198
+00:21:55,922 --> 00:22:05,462
+nó bị như vậy, thì nó rủi ro rất là cao. Vì đôi khi anh em lại còn ham rẻ, còn chơi cái bài là mua nguồn email domain giá rẻ nữa.
+
+199
+00:22:05,462 --> 00:22:12,462
+thì các bên tut trick họ sẽ có cái cách họ bán cho anh em đó. Nếu mình thì mình không ưu tiên như vậy.
+
+200
+00:22:12,500 --> 00:22:20,367
+Mỗi một tài khoản Google AdSense là một tài sản dài hạn vì nó là cái chỗ mình nhận tiền về thì phải thật sự rất là coi trọng. Một
+
+201
+00:22:20,367 --> 00:22:28,233
+một sai lầm nhỏ khi mình bảo mật hệ thống như nó có thể trả giá rất là lớn. Có thể cả một hệ thống bay hết luôn. Đợt
+
+202
+00:22:28,233 --> 00:22:36,100
+vừa qua thì mình cũng gặp nhiều kênh bị chết, nhiều kênh bị kiếm tiền, các cái lỗi. Vì mỗi một đợt thì nó quét một cái lỗi khác nhau.
+
+203
+00:22:36,100 --> 00:22:48,460
+có đợt thì nó quét cái dạng spam này, chết cả kênh này, sau đó nó quét dạng die chết dạng nội dung nguy hiểm có sự tham gia của trẻ vị thành niên này bên mình cũng dính.
+
+204
+00:22:50,040 --> 00:22:53,600
+Sau thì nó die chết những dạng nội dung không trung thực này.
+
+205
+00:22:54,820 --> 00:23:01,020
+Có những kênh làm rất là chỉn chu, rất là kỹ, sáng tạo rất xịn nhưng mà khi vào bão thì nó vẫn có khả năng bị quét nhầm.
+
+206
+00:23:01,020 --> 00:23:01,780
+Nhầm
+
+207
+00:23:01,780 --> 00:23:03,840
+Mà hiện tại thì là toàn bộ phần
+
+208
+00:23:04,100 --> 00:23:05,120
+Kiểm duyệt rồi là
+
+209
+00:23:05,380 --> 00:23:06,140
+Các thứ là
+
+210
+00:23:07,160 --> 00:23:07,940
+Rồi là kháng chứ
+
+211
+00:23:08,180 --> 00:23:09,980
+AI nó kiểm soát hết chứ còn
+
+212
+00:23:10,240 --> 00:23:12,800
+Gần như bây giờ là không gặp được người kiểm duyệt thật nữa
+
+213
+00:23:13,060 --> 00:23:14,080
+Để mình kháng nữa
+
+214
+00:23:14,340 --> 00:23:16,120
+Những cái dạng đấy đã bị quét rồi thì
+
+215
+00:23:16,380 --> 00:23:17,140
+Gần như không kháng được
+
+216
+00:23:17,400 --> 00:23:19,700
+Mà khi mà đã bị quét một kênh rồi thì
+
+217
+00:23:19,960 --> 00:23:21,020
+Em biết là là
+
+218
+00:23:21,020 --> 00:23:23,060
+Nó quá là kinh khủng luôn
+
+219
+00:23:23,320 --> 00:23:26,660
+Nhưng cái kênh khác mà nối cùng GA đấy mà nó gặp vấn đề mà phát là
+
+220
+00:23:27,160 --> 00:23:28,440
+Là mình phải tách ra luôn
+
+221
+00:23:28,700 --> 00:23:30,740
+Chứ không thì nó có thể bay cả vào hệ thống luôn
+
+222
+00:23:31,000 --> 00:23:32,800
+Cái chi phí mà anh em
+
+223
+00:23:33,060 --> 00:23:35,620
+Nghĩ rằng là nó là chi phí khi mà mình dùng nhiều VPS
+
+224
+00:23:36,640 --> 00:23:38,940
+Thì đôi khi nó không phải chi phí nó là khoản đầu tư
+
+225
+00:23:39,207 --> 00:23:42,707
+Với mình mình coi nó là khoản đầu tư để mình đảm bảo cái an toàn hệ thống.
+
+226
+00:23:44,227 --> 00:23:47,547
+Để cho toàn bộ cái hệ thống của mình nó an toàn hơn.
+
+227
+00:23:47,547 --> 00:23:56,547
+Ok, ở đây mình cũng có thấy một vài câu hỏi, tuy nhiên là mình sẽ đi tiếp nhé, tại vì là lát nữa sẽ có phần hỏi đáp riêng, anh em thoải mái.
+
+228
+00:23:56,627 --> 00:24:02,967
+Hôm nay chủ yếu sẽ hỏi đáp vì phần chia sẻ cũng khá là ngắn thôi, chủ yếu anh em hỏi đáp về tất cả những cái thắc mắc của anh em.
+
+229
+00:24:05,707 --> 00:24:11,747
+Tiếp theo thì mình sẽ đến với phần là video hướng dẫn tạo tài khoản Google AdSense và bật kiếm tiền nhé.
+
+230
+00:24:11,747 --> 00:24:20,147
+Nhưng em yên tâm nhé tất cả những tài liệu này sau sẽ có được gửi cho anh em cập nhật trên web Huân Academy đầy đủ nhé anh em yên tâm
+
+231
+00:24:20,147 --> 00:24:24,347
+Ok mình chia sẻ
+
+232
+00:24:24,347 --> 00:24:32,847
+Ok anh em nhìn thêm video chưa anh em nhìn video thì lên phím 1 cho mình
+
+233
+00:24:32,847 --> 00:24:39,527
+Ok.
+
+234
+00:24:44,000 --> 00:24:48,080
+Trong video này, tôi sẽ hướng dẫn bạn toàn bộ quy trình bật kiếm tiền kênh YouTube
+
+235
+00:24:48,080 --> 00:24:52,240
+từ điều kiện cần có, cách tạo tài khoản Google AdSense cho đến xác minh AdSense đúng chuẩn
+
+236
+00:24:52,240 --> 00:24:55,100
+và có thể tóm gọn lại bằng lộ trình bật kiếm tiền với 4 giai đoạn sau:
+
+237
+00:24:55,100 --> 00:24:59,100
+1. Đạt điều kiện, kiểm tra và đáp ứng các yêu cầu tối thiểu của YouTube. 2.
+
+238
+00:24:59,227 --> 00:25:03,047
+Đăng ký và tạo AdSense, nộp đơn và liên kết với tài khoản Google AdSense 3
+
+239
+00:25:03,047 --> 00:25:06,027
+Chờ duyệt kênh, giai đoạn xem xét kênh của bạn bởi đội ngũ YouTube
+
+240
+00:25:06,027 --> 00:25:09,627
+4. Xác minh danh tính, hoàn tất xác minh để nhận thanh toán đầu tiên
+
+241
+00:25:09,627 --> 00:25:11,867
+Vậy thì điều kiện để bật kiếm tiền YouTube là gì?
+
+242
+00:25:12,167 --> 00:25:13,000
+Để bật kiếm tiền YouTube
+
+243
+00:25:13,000 --> 00:25:21,020
+Kênh của bạn cần đáp ứng đồng thời 3 điều kiện. Thứ nhất, kênh có ít nhất 500 người đăng ký. Thứ hai, có 3 video công khai trong 90 ngày và 3.000 giờ xem công khai
+
+244
+00:25:21,020 --> 00:25:29,040
+trong 12 tháng hoặc 3 triệu view Shorts. Thứ ba, kênh tuân thủ chính sách cộng đồng và chính sách kiếm tiền của YouTube. Đây là bước đệm trước khi đủ điều kiện cho kênh bật kiếm tiền
+
+245
+00:25:29,040 --> 00:25:37,060
+đầy đủ cho video dài ở mốc 1.000 người đăng ký và 4.000 giờ xem. Khi đã đủ điều kiện bật kiếm tiền, chúng ta sẽ làm theo các bước sau. Bạn truy cập vào YouTube Studio.
+
+246
+00:25:37,060 --> 00:25:46,260
+Chọn mục kiếm tiền. Tại đây, YouTube sẽ yêu cầu bạn 1. Đồng ý điều khoản chương trình đối tác YouTube. 2. Kết nối hoặc tạo tài khoản Google AdSense.
+
+247
+00:25:47,080 --> 00:25:52,440
+Lưu ý, mỗi người chỉ nên có một tài khoản AdSense duy nhất. Việc tạo nhiều tài khoản có thể khiến bạn bị từ chối hoặc khóa vĩnh viễn.
+
+248
+00:25:53,300 --> 00:25:56,160
+Đầu tiên, hãy đọc và đồng ý các điều khoản chương trình đối tác YouTube.
+
+249
+00:25:59,000 --> 00:26:03,500
+Bước thứ 2. Kết nối với tài khoản GA. Nếu bạn chưa có, hãy chọn vào đây để tạo mới nhé.
+
+250
+00:26:04,440 --> 00:26:05,600
+Chọn tài khoản Gmail để tạo GA.
+
+251
+00:26:05,600 --> 00:26:10,340
+Chọn quốc gia Việt Nam.
+
+252
+00:26:11,180 --> 00:26:12,400
+Đọc và tích đã đọc hết điều khoản.
+
+253
+00:26:15,400 --> 00:26:16,360
+Chọn Setup Account.
+
+254
+00:26:19,240 --> 00:26:21,640
+Tiếp theo, mọi người sẽ điền thông tin cá nhân tại đây.
+
+255
+00:26:21,980 --> 00:26:23,640
+Chọn Individual là tài khoản cá nhân.
+
+256
+00:26:24,000 --> 00:26:25,540
+Điền các thông tin của bạn như họ và tên.
+
+257
+00:26:25,600 --> 00:26:28,360
+địa chỉ, thành phố và mã Postal Code của thành phố đó.
+
+258
+00:26:28,820 --> 00:26:31,020
+Bạn có thể search Google để tra mã Postal Code nhé.
+
+259
+00:26:31,340 --> 00:26:33,360
+Sau đó điền số điện thoại của bản thân và chọn submit.
+
+260
+00:26:33,372 --> 00:26:42,452
+Chúng ta sẽ có vài lưu ý với những thông tin cần điền như sau. Thông tin bạn điền ở bước này sẽ được dùng để xác minh danh tính và nhận thanh toán. Mọi sai sót có thể dẫn đến việc
+
+261
+00:26:42,452 --> 00:26:51,532
+bạn không nhận được tiền. Họ và tên phải trùng khớp 100% với tên trên giấy tờ tùy thân, căn cước công dân, hộ chiếu. Địa chỉ cư trú, địa chỉ thật, chính xác theo giấy tờ để nhận mã pin nếu
+
+262
+00:26:51,532 --> 00:27:00,612
+cần. Số điện thoại, sim đang sử dụng và chính chủ có thể mua số mới. Chính chủ để tạo sẽ tốt hơn. Mã bưu chính, Postal Code, tìm mã bưu chính chính xác của tỉnh thành phố của bạn trên Google.
+
+263
+00:27:00,612 --> 00:27:08,172
+Sau khi đã điền đầy đủ thông tin cá nhân, số điện thoại và submit, chúng ta sẽ xác minh số điện thoại, mã sẽ được gửi về máy trong 1 đến 3 phút.
+
+264
+00:27:14,312 --> 00:27:16,432
+Sau khi hoàn thành, chọn trở về trang YouTube.
+
+265
+00:27:21,192 --> 00:27:26,252
+Tài khoản Google AdSense đang đợi duyệt. Để kiểm tra lại một lần nữa, mọi người có thể truy cập vào Google AdSense.
+
+266
+00:27:26,712 --> 00:27:29,892
+Thời gian tạo tài khoản nhanh thì trong một ngày, cá biệt lâu hơn có thể đến 2 tuần.
+
+267
+00:27:29,892 --> 00:27:37,492
+Các bạn hãy kiểm tra thường xuyên ở phần bật kiếm tiền ở kênh hoặc trên tài khoản Google AdSense nhé. Đây là giao diện trang chủ của Google AdSense sau khi tài khoản đã được phê duyệt.
+
+268
+00:27:38,312 --> 00:27:42,072
+Và bên trong YouTube Studio, bạn cũng có thể thấy trạng thái tài khoản đã được duyệt thành công.
+
+269
+00:27:44,150 --> 00:27:51,990
+Sau khi tài khoản AdSense được duyệt, các bạn sẽ cần đợi duyệt bật kiếm tiền cho kênh. Thời gian đợi thông thường từ 3 đến 7 ngày, kênh bật kiếm tiền thành công sẽ có thông báo như thế này.
+
+270
+00:27:52,670 --> 00:27:59,070
+Các bạn tiếp tục phát triển kênh, khi doanh thu đạt ngưỡng thu nhập nhất định thường là 10 USD, sẽ đến bước tiếp theo là xác minh danh tính cho tài khoản AdSense.
+
+271
+00:27:59,430 --> 00:28:05,930
+Để xác minh danh tính tài khoản Google AdSense, bạn cần đạt ngưỡng thu nhập nhất định thường là 10 USD và cung cấp giấy tờ tùy thân hợp lệ, hộ chiếu.
+
+272
+00:28:05,930 --> 00:28:15,350
+Chứng minh nhân dân, giấy phép lái xe có thông tin khớp với tài khoản, kèm theo ảnh rõ nét. Điều quan trọng là thông tin trên giấy tờ, tên, ngày sinh, địa chỉ phải khớp 100% với thông tin trong AdSense.
+
+273
+00:28:15,830 --> 00:28:23,730
+Có 2 cách để xác minh. Cách 1, xác minh cách mới bằng giấy tờ tùy thân và xác minh khuôn mặt. Cách 2, xác minh bằng giấy tờ tùy thân và mã pin nhận qua đường bưu điện.
+
+274
+00:28:24,290 --> 00:28:28,070
+Ở video này, mình sẽ hướng dẫn các bạn xác minh bằng cách 1, xác minh nhanh và an toàn hơn.
+
+275
+00:28:28,070 --> 00:28:34,210
+Bước 1, các bạn ấn vào xác minh ngay. Xác minh danh tính qua Persona. Chúng ta sẽ được dẫn đến trang xác minh.
+
+276
+00:28:35,550 --> 00:28:38,930
+Bạn bấm vào bắt đầu xác minh ngay. Tiếp theo bạn lựa chọn quốc gia.
+
+277
+00:28:42,070 --> 00:28:47,850
+Bước này bạn có thể xác minh bằng giấy phép lái xe, căn cước công dân hoặc hộ chiếu. Mình chọn xác minh bằng căn cước công dân.
+
+278
+00:28:48,490 --> 00:28:51,350
+Bước tiếp theo mình sẽ thực hiện trên điện thoại di động bằng cách quét mã trên màn hình.
+
+279
+00:28:51,350 --> 00:28:55,950
+Trên điện thoại, bạn tiến hành chụp ảnh giấy tờ
+
+280
+00:28:55,950 --> 00:28:58,950
+Bạn đưa mặt trước giấy tờ vào nằm bên trong 4 góc của khung hình
+
+281
+00:28:58,950 --> 00:29:03,250
+Đảm bảo hình ảnh không lóa, rõ nét rồi thì các bạn bấm vào sử dụng ảnh này và đợi tải lên
+
+282
+00:29:03,250 --> 00:29:05,650
+Hệ thống sẽ kiểm tra giấy tờ tùy thân của bạn
+
+283
+00:29:05,650 --> 00:29:08,650
+Các bạn lưu ý rằng căn cước phải là căn cước công dân bản cũ
+
+284
+00:29:08,650 --> 00:29:11,390
+Có đầy đủ thông tin nơi thường trú ở mặt trước thì mới xác minh được
+
+285
+00:29:11,532 --> 00:29:18,412
+Nếu giấy tờ của bạn hợp lệ rồi thì sẽ hiện ra biểu mẫu này để bạn kiểm tra lại thông tin. Các bạn điền chính xác và đầy đủ thông tin theo giấy tờ và bấm tiếp tục.
+
+286
+00:29:18,412 --> 00:29:22,272
+Bạn cấp quyền cho phép truy cập máy ảnh và tiến hành quét khuôn mặt theo mũi tên chỉ dẫn.
+
+287
+00:29:29,472 --> 00:29:31,832
+Thông báo chúc mừng hiện lên là bạn đã xác minh thành công.
+
+288
+00:29:32,812 --> 00:29:34,612
+Những lưu ý khi xác minh danh tính cần tránh
+
+289
+00:29:34,612 --> 00:29:40,932
+1. Không sử dụng một thông tin cá nhân để tạo nhiều tài khoản. Có thể vẫn tạo được nhưng sau sẽ bị quét và vô hiệu hóa toàn bộ.
+
+290
+00:29:41,512 --> 00:29:46,592
+2. Khi xác minh thất bại đến lần thứ 2, hãy nhờ sự trợ giúp từ đội ngũ hỗ trợ để đảm bảo xác minh chính xác.
+
+291
+00:29:46,592 --> 00:29:48,632
+Vì mỗi tài khoản chỉ được phép xác minh 3 lần.
+
+292
+00:29:49,212 --> 00:29:54,932
+3. Thông tin sử dụng để tạo phải là thông tin thật, không làm giả giấy tờ để lách luật, cố tình sẽ bị vô hiệu hóa tài khoản.
+
+293
+00:29:55,512 --> 00:30:00,132
+Đây là toàn bộ quy trình tạo tài khoản Google AdSense và bật kiếm tiền chính xác nhất, tuân thủ luật của YouTube.
+
+294
+00:30:00,692 --> 00:30:06,912
+Chúc các bạn thực hiện thành công. Nếu cần hỗ trợ, hãy liên hệ qua hotline hoặc Zalo Huân Academy 088 9697 888.
+
+295
+00:30:08,912 --> 00:30:11,172
+Ok, đây là video hướng dẫn.
+
+296
+00:30:13,212 --> 00:30:15,672
+Dành cho video hướng dẫn bật kiếm tiền nhé.
+
+297
+00:30:17,400 --> 00:30:30,520
+Cảm ơn anh em. Thật ra vừa qua anh em cũng hỏi khá nhiều phần này. Tuy nhiên là mình để làm video hướng dẫn nó được chi tiết thì cần thời gian để mình xác minh.
+
+298
+00:30:31,340 --> 00:30:42,420
+Có những cách làm nó, anh em hộ đội, các đội họ có các cái tut, các mẹo người ta làm nhiều thì mình cũng biết. Nhưng mà tuy nhiên là mình muốn chia sẻ với anh em cái cách làm chuẩn nhất.
+
+299
+00:30:42,420 --> 00:30:49,780
+Nhất anh em yên tâm nhé tất cả những video hướng dẫn này là sẽ có cập nhật đầy đủ trên website Huân Academy chi tiết đầy đủ
+
+300
+00:30:49,780 --> 00:30:53,460
+sẽ có thêm cả phần hướng dẫn khai thuế 30%
+
+301
+00:30:53,460 --> 00:31:02,420
+dành cho công dân không ở Hoa Kỳ và phần Add Bank phần đó khá đơn giản nhưng mình vẫn sẽ làm đầy đủ chi tiết để cho mọi người làm theo chuẩn yên tâm
+
+302
+00:31:02,420 --> 00:31:10,100
+nó không bị sai bởi vì những cái phần này anh em bị làm sai một hai lần mà mình không không biết thì nó rất là nguy hiểm
+
+303
+00:31:10,100 --> 00:31:22,420
+có lưu ý là cái phần xác minh danh tính này nó sẽ chỉ xác minh được ba lần thôi vì vậy nếu như mà anh em bị xác minh mà nó bị sai đến lần thứ hai rồi mà nó vẫn gặp vấn đề nó không xác minh được thì nên liên hệ với
+
+304
+00:31:22,420 --> 00:31:30,100
+là cái này để anh em có thể nhận sự hỗ trợ có thể là TeamViewer để hỗ trợ thì anh em hãy tận dụng nguồn lực
+
+305
+00:31:30,100 --> 00:31:37,020
+được hỗ trợ nhé chưa ra ngoài kia dịch vụ thì kiểu gì cũng mất tiền mà cũng chưa biết được như thế nào
+
+306
+00:31:37,020 --> 00:31:42,420
+Ok mình có nhận được một vài câu hỏi ở đây liên quan đến
+
+307
+00:31:42,420 --> 00:31:48,820
+VPS thì mình cũng sẽ chia sẻ một vài số đơn vị mà mình đang sử dụng mình cũng thấy đang ổn
+
+308
+00:31:50,000 --> 00:31:55,480
+Về VPS nước ngoài thì mình cũng test khá là nhiều mình test cả của Google
+
+309
+00:31:55,980 --> 00:31:59,167
+test của cả Amazon Amazon thì mình dùng lâu rồi
+
+310
+00:31:59,167 --> 00:32:10,287
+Test của một vài đơn vị ở bên Pháp, bên Pháp mà nó sẽ, khi mình tạo mình không nhớ tên lắm nhưng mà mình tạo là mình phải, xác minh hộ chiếu nó mới cho mình dùng VPS của nó cơ.
+
+311
+00:32:11,087 --> 00:32:15,887
+Thế thì trong quá trình sử dụng thì mình thấy là Amazon vẫn là top đầu về phần máy chủ ảo.
+
+312
+00:32:16,927 --> 00:32:23,167
+Đợt vừa rồi thì anh em thấy có một cái đợt là nó bị sập mà không dùng Storyblocks rồi CapCut cái thứ ấy.
+
+313
+00:32:23,167 --> 00:32:30,867
+Đó là liên quan đến server của ông Cloudflare, mà gốc của nó là VPS của
+
+314
+00:32:30,867 --> 00:32:38,567
+Amazon gặp vấn đề. Máy chủ của Cloudflare đặt ở Amazon thì nó gặp vấn đề.
+
+315
+00:32:38,567 --> 00:32:48,967
+Tất cả những tập đoàn lớn, công ty lớn về công nghệ thông tin thì họ đều đặt máy chủ ở máy chủ của Amazon hết.
+
+316
+00:32:48,967 --> 00:32:53,567
+thì mình dùng thì mình thấy khá ổn. Trong quá trình đúc kết thì mình thấy là
+
+317
+00:32:53,567 --> 00:33:00,567
+hiện tại thì mình chỉ tin dùng Amazon thôi. Và mình dùng cái gói mà 22$ 1 tháng
+
+318
+00:33:00,567 --> 00:33:07,867
+thì thấy cũng khá là ổn. Về VPS của Việt Nam
+
+319
+00:33:07,900 --> 00:33:11,400
+VPS ở Việt Nam thì mình cũng test khá nhiều đơn vị
+
+320
+00:33:11,400 --> 00:33:20,900
+Tuy nhiên thì đến hiện tại thì mình chỉ có tìm thấy một đơn vị duy nhất mình cảm thấy là tin tưởng được và thời gian vừa qua mình cũng có tạo GA trên đó
+
+321
+00:33:20,900 --> 00:33:26,900
+Mình cũng có đăng nhập rất là nhiều kênh lớn của bên mình lên trên đó
+
+322
+00:33:26,900 --> 00:33:29,900
+Những mail gốc rất là lớn để đăng nhập trên đó để nuôi
+
+323
+00:33:29,900 --> 00:33:37,320
+thì dùng từ tháng 7 đến bây giờ thì mình thấy nó rất là ổn định và mình kiểm tra mình check IP nó thấy ổn IP sạch,
+
+324
+00:33:37,320 --> 00:33:44,740
+khá là sạch thì mình cảm thấy là nó ổn. Hiện tại mình đã đăng ký đại lý thành công với bên đó thì anh em có nhu cầu
+
+325
+00:33:44,740 --> 00:33:52,160
+sử dụng VPS bên này thì có thể là nhắn tin qua Zalo của Huân Academy để nhận được báo giá và đăng ký sử dụng dịch vụ.
+
+326
+00:33:52,160 --> 00:33:58,980
+thì từ đầu tuần tới thì dựa vào số lượng đăng ký thì mình sẽ bắt đầu cung cấp cho anh em và phần này thì mình lưu ý là
+
+327
+00:33:58,980 --> 00:34:08,480
+lưu ý một chút là VPS này thì không rẻ anh em nhé, không rẻ, không rẻ, phần này VPS không rẻ đâu, nhưng mà mình thấy nó yên tâm.
+
+328
+00:34:09,280 --> 00:34:14,020
+Ngoài ra thì có một vài đơn vị khác cung cấp của Việt Nam mà mình thấy cũng ổn và anh em dùng khá là nhiều
+
+329
+00:34:14,020 --> 00:34:18,860
+Tuy nhiên là mình sẽ không đưa ra ý kiến rằng nó tốt hay là không tốt
+
+330
+00:34:18,860 --> 00:34:20,900
+Bởi vì là hiện tại thì mình không dùng
+
+331
+00:34:20,900 --> 00:34:22,940
+Mình không dùng, mình có test rồi
+
+332
+00:34:22,940 --> 00:34:25,580
+Nhưng mà hiện tại mình không dùng, mình chỉ chia sẻ những cái mà mình dùng thôi
+
+333
+00:34:25,580 --> 00:34:28,640
+Thì cái sẽ có một vài đơn vị anh em có thể tìm được
+
+334
+00:34:28,640 --> 00:34:30,217
+Mình sẽ search web cho anh em nhé
+
+335
+00:34:30,217 --> 00:34:37,217
+Em nhìn thấy màn hình của Chrome chưa
+
+336
+00:34:37,217 --> 00:34:41,217
+Nhìn thấy rồi lên phím 1 giúp mình
+
+337
+00:34:41,217 --> 00:34:43,217
+Ok
+
+338
+00:34:43,217 --> 00:34:48,217
+Một vài đơn vị của Việt Nam thì mình thấy nó cũng khá ổn
+
+339
+00:34:48,217 --> 00:34:57,087
+thì anh em có thể test thì mấy đơn vị này nó cũng có gói cấu hình nó cũng khá là ổn. Với kinh nghiệm của mình thì
+
+340
+00:34:57,087 --> 00:35:05,957
+anh em sử dụng gói 2GB RAM. 2GB RAM là cũng ổn ổn rồi, gói trung bình rồi. Mình sẽ check thử nhé. Đây là Low End Việt nhé.
+
+341
+00:35:05,957 --> 00:35:10,957
+Low End Việt. Đây là một đơn vị khá là tốt, anh em có thể test.
+
+342
+00:35:10,957 --> 00:35:21,957
+Mình sẽ check thêm một đơn vị khác nữa. Họ cũng làm khá là lâu rồi, anh em có thể test thêm.
+
+343
+00:35:21,957 --> 00:35:32,957
+Vietnix, Vietnix họ cũng có dịch vụ VPS này. Anh em có thể test thêm. Giá thì nó cũng hợp lý thôi.
+
+344
+00:35:32,957 --> 00:35:40,357
+Ngoài ra thì có một đơn vị khác nữa gần đây mình thấy cũng khá là nổi. Lanit. Lanit.
+
+345
+00:35:40,500 --> 00:35:49,207
+3 đơn vị này thì mình thấy là họ cũng có lịch sử bề dày, họ triển khai rồi thì anh em có thể là mình sẽ dùng
+
+346
+00:35:49,207 --> 00:35:57,913
+VPS 3 bên này được nhé. Nước ngoài thì ưu tiên dùng Amazon này, ở Việt Nam thì có thể test 3 đơn vị này, họ có
+
+347
+00:35:57,913 --> 00:36:06,620
+thể liên hệ với đội ngũ hỗ trợ của Huân Academy để được báo giá về phần VPS, VPS trung bình, trung bình nhé, khoảng 300.000 một tháng.
+
+348
+00:36:10,500 --> 00:36:15,500
+Ok ạ
+
+349
+00:36:15,500 --> 00:36:17,920
+Anh em hỏi đáp
+
+350
+00:36:17,920 --> 00:36:18,640
+Đến phần hỏi đáp
+
+351
+00:36:18,640 --> 00:36:21,320
+Anh em hỏi đáp nếu có mic thì anh em có thể
+
+352
+00:36:21,320 --> 00:36:23,860
+Raise hand nhé
+
+353
+00:36:23,860 --> 00:36:25,500
+Mình sẽ mở mic nhé
+

@@ -1,0 +1,2098 @@
+{
+  "sku": "VIDEO-73c662",
+  "duration": 1343.65,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 261,
+  "full_text": "Chào anh chị em học viên, hôm nay chúng ta sẽ đến với một chủ đề là sức khỏe. Đây là chủ đề về podcast, podcast về sức khỏe nha anh chị em nha. Thì hôm nay chúng ta sẽ sản xuất như thế nào thì anh chị em có thể tham khảo qua những kênh như thế này và chúng ta có thể tìm từ khóa sức khỏe hoặc tim mạch. Toàn bộ video này thì chúng ta sẽ sản xuất được bằng AI nha anh chị em nha. Thì cách làm như thế nào cũng như tìm nguồn như thế nào thì anh chị có thể xem qua những video phổ biến như thế này. Bệnh lý nền về tiểu đường hoặc cao huyết áp. Ok, thì đây là một trong cái video 11 ngày trước 453.000 view này. Cái chủ đề sức khỏe này thì luôn luôn được người lớn hướng đến và quan tâm. Vậy thì hôm nay chúng ta sẽ làm sao để tạo ra được những cái video như thế này. Ở đây tôi đã có cái công cụ cũng như Master Prompt để tạo ra toàn bộ video như thế này. Hôm nay tôi hướng dẫn anh chị để làm sao để sản xuất ra được video. Nhất quán nhân vật cũng nhất quán giọng nói luôn. Ở đây thì tôi sẽ có công cụ như sau, CapCut, ChatGPT và Veo 3. Nguồn video thì tôi có thể lấy từ Pexels và Pixabay nha anh chị em nha. Ở đây là prompt tạo ảnh thì chúng ta sẽ tạo cái ảnh nền trước. Thì chúng ta sẽ đi đến từng bước 1. Thứ nhất là tạo ảnh nền. Ở đây tôi ghi ảnh nền nè. Thì chúng ta có thể lấy luôn từ trong cái video này nha anh chị em nha. Để tôi tắt bớt đi. Đây là video của họ này. Và chúng ta có thể hoàn toàn lấy được cái hình nền này nha. Và chúng ta sẽ làm lại hoàn toàn. hoàn toàn ở đây khi anh chị lấy một cái hình ảnh nền này của họ này chúng ta sẽ làm như sau anh chị nhấn alt nhé chú ta sẽ chụp cái màn hình tỷ lệ khung hình này vào đây nhé anh chị chụp đúng cho tôi cái khung hình này Là đầy đủ của video của họ nhé. Bây giờ chúng ta sẽ đưa vào ChatGPT này. Anh chị dán vào. Bây giờ chúng ta sẽ copy cái prompt ảnh nền. Anh chị em nhớ này. Dán vào đây. Ở trong cái hình này, khi mà anh chị chụp, nó sẽ có những cái chữ như thế này. Xóa bỏ dòng chữ ở phía dưới đi. Và thêm cho tôi là xóa bỏ dòng chữ. Xóa bỏ dòng chữ này: Cảnh báo những cô chú mắc bệnh lý nền. Bệnh lý Thì bây giờ là anh em nhớ cho tôi nha Thứ nhất là xóa bỏ cho tôi 2 chi tiết trong khung hình bên phải và bên trái Giữ nguyên các khung, thay đổi các khung màu sang màu đỏ Nghĩa là cái khung này này Tôi sẽ thay đổi sang gì ạ? Sang màu đỏ nha anh chị em nha Thay đổi dòng chữ podcast tim mạch Podcast tim mạch nha Sang gì ạ? Ví dụ kênh của tôi, tôi sẽ để là podcast sức khỏe chủ động nhé. Thì anh chị em ví dụ như podcast sức khỏe AI đi, podcast sức khỏe dành cho người lớn, thì anh chị em tạo ra một kênh YouTube thì anh em để tên như thế. Ok, chúng ta sẽ nhấn là tạo ảnh. Anh chị em thêm cho tôi cái lúc tạo hình ảnh nhé là được nhé. Thì bây giờ là dựa trên những cái prompt mà tôi đã gửi cho ChatGPT nó sẽ tạo ra cho tôi một cái hình ảnh khung mà nó sẽ thay đổi cho tôi là ví dụ như khung của họ ấy là anh em thấy là để màu xanh dương đúng không? Thì chúng ta sẽ chuyển sang nó là màu đỏ. Đấy thì nó sẽ khác hoàn toàn phong cách của họ luôn rồi. Cái đoạn này tôi sẽ tour nha cái tạo hình ảnh này nó hơi lâu một tí anh em ạ. Đây nha anh em nha. Sau đó thì ChatGPT nó đã tạo ra cho tôi một cái khung như thế này. Anh chị em nhìn thấy không? Khung màu xanh này. Lưu này. Anh em lưu về nhé. Ở đây thì anh em có thể thay đổi viền ở ngoài khung là sang màu đỏ đều được nhé. Ở đây tôi để luôn cái khung này đi. Sau khi đã có một cái hình nền như thế này rồi, hình nền khung ở trong video rồi thì chúng ta sẽ bắt đầu qua gì ạ? Tạo nhân vật nhé. Ở đây thì tôi sẽ gì ạ? Chụp ảnh cái nhân vật bác sĩ này. Đây nhé, tôi là tiến hành chụp ảnh nhân vật bác sĩ này. Anh chị em nhớ cho tôi bước này nhé. Anh chị em dán vào cho tôi ChatGPT này. Sau đó thì chúng ta sẽ copy cái prompt tạo ảnh nhân vật bác sĩ này nhé. Chúng ta sẽ tạo ra một prompt khác chứ chúng ta không tạo ra nhân vật giống như thế này nữa. Tạo prompt nhé. Nhiều lúc mà ChatGPT của anh chị em Mà nó lỗi thì anh chị em hãy ghi là Tạo prompt nhé, chúng ta không tạo hình ảnh Ở cái bước này Chúng ta sẽ chỉ lấy cái hình ảnh gốc của bác sĩ trong cái video này để chúng ta làm gì ạ? Tạo ra một cái hình ảnh khác. Đây nhé. Sau đó thì anh chị em copy cho tôi cái prompt như thế này nhé. Cố định cho tôi là chúng ta tạo ra prompt nhé. Sau đó chúng ta mở cho tôi một cái đoạn chat mới này. Anh chị em dán vào đây. Nhấn tạo hình ảnh nhé. Chúng ta tạo luôn trên ChatGPT nhé. Tại vì hình ảnh ở trên ChatGPT chúng ta tạo ra rất là nét nha anh chị em. Sau khi chúng ta đã có một cái prompt chúng ta đưa vào đã tạo ra một hình ảnh bác sĩ như thế này rồi nha anh em nhé. Anh em nhấn này. Tải về cho tôi này. Sau khi chúng ta đã có một hình ảnh bác sĩ và một hình ảnh nền như thế này, trong video chúng ta sẽ tiếp tục đến với Master Prompt để tạo ra 100 ý tưởng để cho một kênh sức khỏe của anh chị em. Anh chị em copy cho tôi toàn bộ cái Master Prompt này. Ở phần 2 anh chị em nhấn sao chép này. Sau khi sao chép xong thì chúng ta sẽ mở ra một cái đoạn chat mới như thế này. Tất nhiên là mỗi hình ảnh nó sẽ tạo ra khác nhau nhé. Ví dụ như hình ảnh mà bác sĩ chúng ta vừa tạo ra, anh chị em nhớ cho tôi là chúng ta có thể dùng cho toàn bộ kênh của chúng ta nhé. Chúng ta không thay đổi nhân vật nào nữa cả. Và chúng ta cũng không thay đổi nhân vật bác sĩ ở trong cái kênh cố định của chúng ta cả. Đây là một cái Master Prompt thì tôi đã dựa trên cái công thức của video của họ để tôi viết lại lên ý tưởng kịch bản cho 100 podcast rồi. Thì anh chị em có thể áp dụng vào ví dụ như chúng ta nó sẽ ra hoàn toàn cho anh chị em toàn bộ cái ngách chủ đề sức khỏe khác podcast về sức khỏe khác liên tục nha anh chị em nhé. Chứ nó không giống nhau đó anh chị em nhé. Dưới đây là toàn bộ khung để kể để kênh podcast sức khỏe đi theo cùng phong cách bác sĩ trò chuyện với cô chú này. Thì nó sẽ ra cho chúng ta là phần A này, phần B này, phần B là nhóm 1 nhé. Nhóm 1 nó sẽ ra cho anh chị em đầy đủ 100 ý tưởng podcast về sức khỏe. Từng cái 1 đây này, đây nhé. Anh chị em nhớ cho tôi là 1 này. Nó sẽ ra đến 100. Ý tưởng sau là anh chị em chỉ cần copy cho tôi. Cái này anh chị em dán vào luôn cái phần của podcast này luôn nhé. Anh chị em nhé. 4 này. 5 này. Nó sẽ ra cho anh chị 100 Nhóm 2 tiểu đường nhé Nhóm 1 này Anh chị em nhớ cho tôi là nhóm 1 là Tim mạch, huyết áp, đột quỵ Là 10 chủ đề nhé Nhóm 2 là tiểu đường, đường huyết Và biến chứng là 10 chủ đề nhé Phần 3 là mỡ máu và gan nhiễm mỡ nhé Nó sẽ chia ra cho chúng ta là dựa trên Master Prompt sẽ chia cho 10 nhóm Tim mạch, huyết áp, đột quỵ Nhóm 1 là 10 video Nhóm 2 bắt đầu từ 10 Tiểu đường, đường huyết và biến chứng Nhóm 3 là mỡ máu, gan nhiễm mỡ và béo bụng Thì bây giờ là tôi sẽ dừng lại, 29 này, thì tôi sẽ tạm thời, tôi sẽ dừng lại, để nó không viết đến 100 nữa, thì chúng ta sẽ đỡ phần này đi. Đấy là thận, tiểu đêm và phù thận này. Đây là tôi dừng lại nhé. Thì bây giờ là tôi sẽ lấy một phần ở trong cái mục là tim mạch, huyết áp đột quỵ nhé. Anh chị em copy cho tôi. Sau đó anh chị em dán ra đây. Sau đó gửi cho ChatGPT thì bây giờ nó sẽ dựa vào cái tiêu đề hook cũng như đối tượng, người nghe góc cảnh báo, câu chuyện bệnh nhân có thể khai thác này, kiến thức, khoa học cần giải thích này, câu hỏi gợi bình luận này và gợi ý tập tiếp theo. Thì bây giờ là dựa trên một cái tiêu đề podcast ở mục 1 như thế này nó sẽ ra cho anh chị em một kịch bản hoàn chỉnh cho ý tưởng số 1 nhé. Tiêu đề chính này, bác sĩ cảnh báo con số huyết áp đẹp chưa chắc là trái tim đã khỏe. Đấy là tiêu đề nhé, hook mở đầu này, lời chào podcast này, xin kính chào cô chú, các bạn đã lắng nghe podcast sức khỏe chủ động thì chúng ta sẽ có một cái podcast như thế này. Đây là các phần nhé anh chị em nhớ ra rồi nhé. Đây là Hook này. Hook là mở đầu của tất cả video nha anh chị em nha. Sau khi nó đã viết xong cái kịch bản số 1 này, đây nó đã hỏi là anh chị em có muốn viết tiếp kịch bản số 2 không? Thì ở đây chúng ta sẽ ngồi tạo video đã. Thì đây là một cái podcast đầy đủ nha. Tiêu đề chính này, Hook này, lời chào podcast này, vấn đề sức khỏe khiến người nghe phải chú ý này, giải thích vì sao nhiều người đang hiểu sai này. Đó là toàn bộ một cái podcast chi tiết của một cái video của chúng ta nha. Thì ở đây là gì ạ? Chúng ta sẽ bắt đầu lấy từ phần hook này nha anh chị em nha để chúng ta tạo video. Bây giờ chúng ta sẽ đến phần tạo video thì ở đây là giao diện của Veo 3 đấy nha anh chị em nha. Anh chị em nhấn tạo dự án mới này. Sau đó thì anh em nhấn tải cái hình ảnh của bác sĩ lên nha. Chúng ta tải cái hình ảnh của bác sĩ lên trước này. Và bây giờ chúng ta phải nhớ cho tôi những cái bước mà chúng ta sẽ làm gì ạ? Nhất quán giọng nói nhé. Tải hình ảnh bác sĩ lên đầu tiên này. Sau khi tải hình ảnh bác sĩ lên thì chúng ta sẽ nhấn thêm vào câu lệnh nhé. Thì bây giờ là chúng ta sẽ thêm này. Anh em nhấn cho tôi dấu cộng này và nhấn vào giọng nói nhé. thì bây giờ là tôi sẽ sử dụng một giọng nam bất kỳ anh em nhấn vào giọng nói và chúng ta sẽ chọn vào giọng nói và như thế này nhé thì bây giờ là chúng ta sẽ đến với cái phần prompt để tạo video video trên Veo 3 tôi đã để đây nè anh chị em nhớ nhìn cho tôi cái câu thoại đậm nhé mà tôi đã ghi như thế này nhé chúng ta sẽ copy toàn bộ cái prompt này cho tôi copy prompt này nhé sau đó thì anh em dán vào phần này bây giờ là gì ạ chúng ta sẽ dán cái phần câu thoại này câu thoại nhé bắt đầu từ cái hook mở đầu Hook mở đầu 60s, nhiều cô chú sẽ đo huyết áp, chúng ta sẽ copy từng đoạn 1. Video từng đoạn của con Veo 3 chỉ tạo được tầm 8s 1. Nhấn tạo video này, sau đó chúng ta sử dụng lại câu lệnh, nó sẽ có tất cả hình ảnh và giọng nói rồi. Chúng ta chỉ cần copy cho tôi những cái như thế này thôi. Những cái text tiếp theo của cái podcast. Tạo video này. Tiếp theo là con số này. Cái này thì chúng ta làm cũng rất là nhanh nhé, chứ không phải làm lâu đâu. Dán vào đây. Hụt hơi này. Sử dụng lại câu lệnh này. Chúng ta sẽ dán vào đây. Máy đo huyết áp này Tôi sẽ copy đến và trong cái tập podcast ngày hôm nay này Sử dụng lại câu lệnh này Anh chị em nhớ cho tôi là chúng ta sẽ làm chi tiết cho tôi nhé Làm cái sức khỏe này làm cho người lớn xem nên là chúng ta phải làm chi tiết cực kì chi tiết nhé. Dùng lại câu lệnh này. Dán ra đây. Thì bây giờ nó đã ra cho chúng ta một cái video này, hai video này. Cái nào mà không thành công thì anh chị nhớ cho tôi là sử dụng lại câu lệnh này nhé. Nhớ cho tôi là như thế. Nhiều cô chú ở nhà có máy đo huyết áp, sáng ngủ dậy đo một lần, thấy 120 trên 80, chiều đo lại, thấy cũng đẹp. Nhiều cô chú ở nhà có máy đo huyết áp, sáng ngủ dậy đo một lần, thấy một lần. Đây là những cái video mà nó sẽ tạo ra cho chúng ta như thế này. Thế này thì anh chị nhớ là ví dụ như tạo lại này thì anh chị nhớ là đây là cái video podcast của cái phần 2, phần 3, phần 4 nhé. Nhấn. Con số huyết áp đẹp không phải lúc nào cũng có nghĩa là trái tim đang hoàn toàn khỏe. Nếu huyết áp nhìn có vẻ bình thường nhưng cô chú lại thường xuyên chóng mặt. Thế này này. Tôi chỉ lấy một đoạn nha anh chị em. Máy đo huyết áp cho mình một con số. Nhớ cho tôi là anh chị em tạo đầy đủ nhé. Những cái phần này thì chúng ta chỉ tạo mất tầm 10-20 phút thôi. Một ngày chúng ta làm video tầm 2-30 phút đều được nhé. Một ngày chúng ta bỏ ra tầm 2-3 tiếng chúng ta làm 1 video về chủ đề sức khỏe nhé. Tiếp theo là phần gì ạ? Phần chúng ta sẽ tải những video ở Pexels này nha anh chị em nhé. Pexels, Pixabay thì tôi nghĩ là anh chị em hãy tải cho tôi những video liên quan tới ở trên Pexels này nhé. Anh chị em chọn phần video này. Ví dụ như huyết áp này. Những video về sức khỏe này. Nó rất là nhiều nhé. Khi anh chị em nhấn vào một video bất kỳ này, nó sẽ đề xuất ra cho chúng ta rất nhiều video khác liên quan đến huyết áp này. Các bạn nhấn tải xuống, tôi sẽ lấy những video liên quan đến sức khỏe như thế này. Tải xuống này. Đấy anh chị em nhé. Rất nhiều video liên quan đến sức khỏe ở trên cái website này chúng ta lấy. Thì chúng ta sẽ làm, chỉnh sửa làm sao để cho nó phù hợp với chính sách nhé. Anh chị em nhớ cho tôi là anh chị em nhấn vào thì nó sẽ đề xuất ra nhé. Sau đó thì chúng ta sẽ đi vào CapCut nha anh chị em. Đây là giao diện của CapCut này. Đây là trong giao diện edit của CapCut nha anh chị em. Đó chúng ta sẽ thêm này. Thêm các video và những cái hình nền mà. Đấy nhé. Thì bây giờ là gì ạ? Chúng ta sẽ thêm cái hình nền này trước này. Những video này thì đối với cái hình nền của chúng ta như thế này thì anh chị em nhớ cho tôi là khi anh chị em thêm như thế này rồi thì chúng ta sẽ nhấn cho tôi xóa nền nhấn phông xanh chúng ta sẽ không xóa tự động và chúng ta sẽ nhấn xóa phông xanh nhấn vào thì anh em kéo trong đây thì nó sẽ đen 2 cái màu xanh ở giữa đi tiếp theo chúng ta sẽ lấy cái video này xuống đây Nhiều cô chú ở nhà có máy đo huyết áp. Thì tôi sẽ để làm sao để nó cân vào cái chi tiết này. Đấy nhá. Sáng ngủ dậy đo một lần, thấy 120 trên 80. Chiều đo lại, thấy cũng đẹp. Đó. Tách đi này. Con số huyết áp đẹp. Kéo xuống này. con số huyết áp đẹp không phải lúc nào cũng có nghĩa là trái tim anh chị nhớ tôi là chúng ta sẽ thêm như này anh chị copy sang này thì tại vì cái video này đang ở vị trí này đúng không thì chúng ta sẽ kéo một cái video khác xuống này Tim đập bất thường, hụt hơi khi đi bộ, nặng ngực. Tỷ lệ vị trí của nó luôn luôn ở đấy. Nó không di chuyển đi đâu cả. Máy đo huyết áp cho mình một con số, nhưng cơ thể cho mình cả một câu chuyện. Và trong tập podcast hôm nay, chúng ta sẽ cùng nói thật chậm, thật dễ hiểu về chuyện. Vì sao không nên chỉ nhìn một con số huyết áp để kết luận sức khỏe tim mạch của mình? Đó thì bây giờ là tiếp theo là chúng ta sẽ thêm những cái video liên quan đến sức khỏe xuống nhé. Ví dụ như mỗi đoạn thì tôi sẽ để cho nó tua nhanh lên một tí. Đây nhé. Thì khi mà chúng ta thêm như thế này, thêm cái video này vào rồi thì chúng ta kéo làm sao để cho nó vừa ở cái ô này. Nhưng mà tí bây giờ là chúng ta sẽ thêm những video này vào rồi thì chúng ta kéo làm sao để cho nó vừa ở cái ô này. ý là chúng ta sẽ kéo cái hình nền đây Các bạn có thể nhìn thấy hình nền, tỷ lệ sẽ ở dưới hình nền phông xanh của mình nhé. Kéo vào, tỷ lệ video đúng như thế luôn. Chúng ta có thể thêm những hiệu ứng vào đều được. Để không bỏ lỡ những video hấp dẫn Chúng ta sẽ chọn Tiếp theo là chúng ta sẽ chọn văn bản nhé. Chọn phụ đề tự động nhé Anh chị em chọn cho tôi ngôn ngữ nói là tiếng Việt nhé. Anh chị em nhấn tạo ra nhé. Anh chị em nhấn phụ đề ra nhé. Phụ đề tiếng Việt nhé anh chị em. Đấy thì chúng ta sẽ chọn là phông chữ này. Khi mà nó phụ đề ra như thế này rồi nhé. Thì chúng ta sẽ chọn tất cả này. Và bây giờ là anh chị em nhớ cho tôi chọn phông chữ này. Tôi sẽ chọn một phông chữ bất kỳ này, Anton này Chúng ta sẽ làm gì ạ? Chọn cho tôi cái màu chữ, màu đen này Thật chậm, thật dễ hiểu. Nhiều cô chú ở nhà có máy đo huyết áp. Cái nào mà nó thành 2 dòng này nha anh chị em. Anh chị em có thể kéo dài ra tí. Thật chậm Nhìn một con số huyết Nhiều cô chú ở nhà có máy Ok Nhiều cô chú ở nhà Đây là phần sản xuất về video nha anh chị em nha Chúng ta sẽ nghe qua một đoạn về podcast về sức khỏe này Máy đo huyết áp Sáng ngủ dậy đo một lần Thấy 120 trên 80. Chiều đo lại, thấy cũng đẹp. Con số huyết áp đẹp không phải lúc nào cũng có nghĩa là trái tim đang hoàn toàn khỏe. Nếu huyết áp nhìn có vẻ bình thường, nhưng cô chú lại thường xuyên chóng mặt. Đấy là về phần video, giờ chúng ta sẽ tiếp tục đi tạo hình ảnh thumbnail nha anh chị em nha. Bây giờ là chúng ta sẽ sử dụng hình ảnh nhân vật này luôn. Bây giờ là chúng ta sẽ trở lại câu lệnh đấy nhưng mà bây giờ là chúng ta sẽ sử dụng chọn phần hình ảnh nha. Chúng ta sẽ không chọn phần video nữa, chọn cho tôi 16.9 này. Bây giờ là trong cái câu prompt tạo hình ảnh thumbnail này anh chị nhớ cho tôi, copy này. Và bây giờ là gì ạ, chúng ta sẽ dán vào cái con Flow này nha, dán vào đây. Người ta sẽ chọn cho tôi là tầm 2 hình ảnh, 3 hình ảnh. 2 hình ảnh này, 3 hình ảnh đều được, 2 hình ảnh nhé. Ở đây là cái prompt này, anh em khi nhớ cho tôi là tôi đang để là có cảm giác bị đau cổ nhé. Thì anh em có cảm giác bị đau vai này, đau chân, đau tay này, đau gì đều được nhé anh chị em nhé. Thì anh chị em hãy tạo ra cho tôi như thế. Câu cái prompt tạo ảnh sau ấy, thì anh chị em chỉ cần tải cái hình ảnh mà ở cái bối cảnh bệnh viện này về. Thì chúng ta chỉ có thay đổi là nhân vật là cái gì ạ. Nhân vật này đang có biểu hiện gì thôi. Chứ chúng ta không thay đổi bối cảnh nữa để cho tất cả các thumbnail nhất quán là một bối cảnh bệnh viện đều được. Đây là chúng ta đã có một hình ảnh như thế này đúng không? Tôi sẽ tải một hình ảnh này xuống. Thì bây giờ là gì? Anh chị em nhớ cho tôi là chúng ta có thể thêm luôn ở đây là tạo một hình ảnh. Trên thiết bị nhé. Thêm hình ảnh này. Thêm hình ảnh chúng ta vừa tại về. Chỉnh sửa hình ảnh này. Đây nhé, thì cái hình ảnh này thì chúng ta có thể thêm nhé, ví dụ như thêm dòng chữ này, chúng ta có thể lấy trong cái dòng chữ, ý tưởng của podcast của chúng ta nhé, huyết áp này, bác sĩ cảnh báo này, thêm toàn bộ những cái dòng của tiêu đề này như này vào nhé. Anh chị em dám vào đây. Thì bây giờ là trong cái toàn bộ những cái này thì chúng ta sẽ chọn là phông chữ này Anton này Vẫn là cái phông chữ Anton mà tôi hay dùng nha anh chị em Đó Đó thì bây giờ là gì ạ? Anh chị em sẽ lựa chọn cho tôi là thay đổi cái màu chữ này. Bác sĩ cảnh báo này, ví dụ như dòng bác sĩ cảnh báo này thì tôi sẽ để là màu gì ạ? Tôi sẽ để là màu xanh đi. Thì bây giờ là tôi sẽ lựa chọn là viền nhé. Tô viền của các chữ này đi. Tôi sẽ tô viền sang màu trắng này. Để cho nó sáng hơn. Ví dụ tôi sẽ để là một dòng màu xanh, một dòng màu vàng, một dòng màu gì ạ? Màu tím. Màu tím này. Màu dòng cuối cùng thì tôi sẽ để là màu đỏ. thì tôi sẽ chọn tất cả. Hoặc là anh chị để như thế này cũng được nhé. Bác sĩ cảnh báo này. Con số huyết áp chưa chắc đã là trái tim khỏe thì anh chị em nhấn lưu thôi. Thì sau những cái hình ảnh sau thì chúng ta đều làm như thế nhé. Đều làm một prompt chữ thôi. Bây giờ anh chị xuất thì nó sẽ xuất ra cả cái hình thumbnail này nhé. Nhiều cô chú ở nhà có máy đo huyết áp, sáng ngủ dậy. Đấy mở thư mục này. Thì đây là hình ảnh thumbnail này. Hình ảnh thumbnail mà chúng ta vừa tạo ra nhé. Đây là video nhé anh chị em nhé. Đó, đó là video và thumbnail. Đây là toàn bộ những cái quy trình sản xuất video sức khỏe nhé anh chị em. Ok. Chào anh chị em học viên.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 8.16,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:08,160",
+      "text": "Chào anh chị em học viên, hôm nay chúng ta sẽ đến với một chủ đề là sức khỏe. Đây là chủ đề về podcast, podcast về sức khỏe nha anh chị em nha."
+    },
+    {
+      "id": 2,
+      "start": 8.32,
+      "end": 16.04,
+      "start_time": "00:00:08,320",
+      "end_time": "00:00:16,040",
+      "text": "Thì hôm nay chúng ta sẽ sản xuất như thế nào thì anh chị em có thể tham khảo qua những kênh như thế này và chúng ta có thể tìm từ khóa sức khỏe hoặc tim mạch."
+    },
+    {
+      "id": 3,
+      "start": 16.04,
+      "end": 25.26,
+      "start_time": "00:00:16,040",
+      "end_time": "00:00:25,260",
+      "text": "Toàn bộ video này thì chúng ta sẽ sản xuất được bằng AI nha anh chị em nha. Thì cách làm như thế nào cũng như tìm nguồn như thế nào thì anh chị có thể xem qua những video phổ biến như thế này."
+    },
+    {
+      "id": 4,
+      "start": 26.96,
+      "end": 29.0,
+      "start_time": "00:00:26,960",
+      "end_time": "00:00:29,000",
+      "text": "Bệnh lý nền về tiểu đường hoặc cao huyết áp."
+    },
+    {
+      "id": 5,
+      "start": 29.0,
+      "end": 37.28,
+      "start_time": "00:00:29,000",
+      "end_time": "00:00:37,280",
+      "text": "Ok, thì đây là một trong cái video 11 ngày trước 453.000 view này. Cái chủ đề sức khỏe này thì luôn luôn được người lớn hướng đến và quan tâm. Vậy"
+    },
+    {
+      "id": 6,
+      "start": 37.28,
+      "end": 45.56,
+      "start_time": "00:00:37,280",
+      "end_time": "00:00:45,560",
+      "text": "thì hôm nay chúng ta sẽ làm sao để tạo ra được những cái video như thế này. Ở đây tôi đã có cái công cụ cũng như Master Prompt để tạo ra"
+    },
+    {
+      "id": 7,
+      "start": 45.56,
+      "end": 53.84,
+      "start_time": "00:00:45,560",
+      "end_time": "00:00:53,840",
+      "text": "toàn bộ video như thế này. Hôm nay tôi hướng dẫn anh chị để làm sao để sản xuất ra được video. Nhất quán nhân vật cũng nhất quán giọng nói luôn."
+    },
+    {
+      "id": 8,
+      "start": 53.84,
+      "end": 61.94,
+      "start_time": "00:00:53,840",
+      "end_time": "00:01:01,940",
+      "text": "Ở đây thì tôi sẽ có công cụ như sau, CapCut, ChatGPT và Veo 3. Nguồn video thì tôi có thể lấy từ Pexels và Pixabay nha anh chị em nha."
+    },
+    {
+      "id": 9,
+      "start": 62.0,
+      "end": 69.22,
+      "start_time": "00:01:02,000",
+      "end_time": "00:01:09,220",
+      "text": "Ở đây là prompt tạo ảnh thì chúng ta sẽ tạo cái ảnh nền trước. Thì chúng ta sẽ đi đến từng bước 1. Thứ nhất là tạo ảnh nền."
+    },
+    {
+      "id": 10,
+      "start": 69.72,
+      "end": 74.98,
+      "start_time": "00:01:09,720",
+      "end_time": "00:01:14,980",
+      "text": "Ở đây tôi ghi ảnh nền nè. Thì chúng ta có thể lấy luôn từ trong cái video này nha anh chị em nha."
+    },
+    {
+      "id": 11,
+      "start": 74.98,
+      "end": 81.78,
+      "start_time": "00:01:14,980",
+      "end_time": "00:01:21,780",
+      "text": "Để tôi tắt bớt đi. Đây là video của họ này. Và chúng ta có thể hoàn toàn lấy được cái hình nền này nha. Và chúng ta sẽ làm lại hoàn toàn."
+    },
+    {
+      "id": 12,
+      "start": 81.78,
+      "end": 82.54,
+      "start_time": "00:01:21,780",
+      "end_time": "00:01:22,540",
+      "text": "hoàn toàn"
+    },
+    {
+      "id": 13,
+      "start": 82.54,
+      "end": 83.82,
+      "start_time": "00:01:22,540",
+      "end_time": "00:01:23,820",
+      "text": "ở đây khi anh chị"
+    },
+    {
+      "id": 14,
+      "start": 84.08,
+      "end": 85.88,
+      "start_time": "00:01:24,080",
+      "end_time": "00:01:25,880",
+      "text": "lấy một cái hình ảnh nền này của họ này"
+    },
+    {
+      "id": 15,
+      "start": 86.14,
+      "end": 86.9,
+      "start_time": "00:01:26,140",
+      "end_time": "00:01:26,900",
+      "text": "chúng ta sẽ làm như sau"
+    },
+    {
+      "id": 16,
+      "start": 87.16,
+      "end": 88.18,
+      "start_time": "00:01:27,160",
+      "end_time": "00:01:28,180",
+      "text": "anh chị nhấn alt"
+    },
+    {
+      "id": 17,
+      "start": 88.44,
+      "end": 88.94,
+      "start_time": "00:01:28,440",
+      "end_time": "00:01:28,940",
+      "text": "nhé"
+    },
+    {
+      "id": 18,
+      "start": 89.2,
+      "end": 89.98,
+      "start_time": "00:01:29,200",
+      "end_time": "00:01:29,980",
+      "text": "chú ta sẽ chụp cái màn hình"
+    },
+    {
+      "id": 19,
+      "start": 90.22,
+      "end": 91.26,
+      "start_time": "00:01:30,220",
+      "end_time": "00:01:31,260",
+      "text": "tỷ lệ khung hình này vào"
+    },
+    {
+      "id": 20,
+      "start": 91.5,
+      "end": 92.02,
+      "start_time": "00:01:31,500",
+      "end_time": "00:01:32,020",
+      "text": "đây nhé"
+    },
+    {
+      "id": 21,
+      "start": 92.28,
+      "end": 93.3,
+      "start_time": "00:01:32,280",
+      "end_time": "00:01:33,300",
+      "text": "anh chị chụp đúng cho tôi"
+    },
+    {
+      "id": 22,
+      "start": 93.56,
+      "end": 94.58,
+      "start_time": "00:01:33,560",
+      "end_time": "00:01:34,580",
+      "text": "cái khung hình này"
+    },
+    {
+      "id": 23,
+      "start": 94.941,
+      "end": 97.941,
+      "start_time": "00:01:34,941",
+      "end_time": "00:01:37,941",
+      "text": "Là đầy đủ của video của họ nhé."
+    },
+    {
+      "id": 24,
+      "start": 97.941,
+      "end": 99.941,
+      "start_time": "00:01:37,941",
+      "end_time": "00:01:39,941",
+      "text": "Bây giờ chúng ta sẽ đưa vào ChatGPT này."
+    },
+    {
+      "id": 25,
+      "start": 99.941,
+      "end": 101.941,
+      "start_time": "00:01:39,941",
+      "end_time": "00:01:41,941",
+      "text": "Anh chị dán vào."
+    },
+    {
+      "id": 26,
+      "start": 101.941,
+      "end": 104.941,
+      "start_time": "00:01:41,941",
+      "end_time": "00:01:44,941",
+      "text": "Bây giờ chúng ta sẽ copy cái prompt ảnh nền."
+    },
+    {
+      "id": 27,
+      "start": 104.941,
+      "end": 105.941,
+      "start_time": "00:01:44,941",
+      "end_time": "00:01:45,941",
+      "text": "Anh chị em nhớ này."
+    },
+    {
+      "id": 28,
+      "start": 105.941,
+      "end": 106.941,
+      "start_time": "00:01:45,941",
+      "end_time": "00:01:46,941",
+      "text": "Dán vào đây."
+    },
+    {
+      "id": 29,
+      "start": 106.941,
+      "end": 108.941,
+      "start_time": "00:01:46,941",
+      "end_time": "00:01:48,941",
+      "text": "Ở trong cái hình này,"
+    },
+    {
+      "id": 30,
+      "start": 108.941,
+      "end": 110.941,
+      "start_time": "00:01:48,941",
+      "end_time": "00:01:50,941",
+      "text": "khi mà anh chị chụp,"
+    },
+    {
+      "id": 31,
+      "start": 110.941,
+      "end": 112.941,
+      "start_time": "00:01:50,941",
+      "end_time": "00:01:52,941",
+      "text": "nó sẽ có những cái chữ như thế này."
+    },
+    {
+      "id": 32,
+      "start": 112.941,
+      "end": 120.541,
+      "start_time": "00:01:52,941",
+      "end_time": "00:02:00,541",
+      "text": "Xóa bỏ dòng chữ ở phía dưới đi. Và thêm cho tôi là xóa bỏ"
+    },
+    {
+      "id": 33,
+      "start": 120.541,
+      "end": 128.141,
+      "start_time": "00:02:00,541",
+      "end_time": "00:02:08,141",
+      "text": "dòng chữ. Xóa bỏ dòng chữ này: Cảnh báo những cô chú mắc bệnh lý nền."
+    },
+    {
+      "id": 34,
+      "start": 128.141,
+      "end": 136.421,
+      "start_time": "00:02:08,141",
+      "end_time": "00:02:16,421",
+      "text": "Bệnh lý"
+    },
+    {
+      "id": 35,
+      "start": 136.421,
+      "end": 140.141,
+      "start_time": "00:02:16,421",
+      "end_time": "00:02:20,141",
+      "text": "Thì bây giờ là anh em nhớ cho tôi nha"
+    },
+    {
+      "id": 36,
+      "start": 140.141,
+      "end": 144.361,
+      "start_time": "00:02:20,141",
+      "end_time": "00:02:24,361",
+      "text": "Thứ nhất là xóa bỏ cho tôi 2 chi tiết trong khung hình bên phải và bên trái"
+    },
+    {
+      "id": 37,
+      "start": 144.361,
+      "end": 147.661,
+      "start_time": "00:02:24,361",
+      "end_time": "00:02:27,661",
+      "text": "Giữ nguyên các khung, thay đổi các khung màu sang màu đỏ"
+    },
+    {
+      "id": 38,
+      "start": 147.661,
+      "end": 149.021,
+      "start_time": "00:02:27,661",
+      "end_time": "00:02:29,021",
+      "text": "Nghĩa là cái khung này này"
+    },
+    {
+      "id": 39,
+      "start": 149.021,
+      "end": 150.561,
+      "start_time": "00:02:29,021",
+      "end_time": "00:02:30,561",
+      "text": "Tôi sẽ thay đổi sang gì ạ?"
+    },
+    {
+      "id": 40,
+      "start": 150.681,
+      "end": 151.881,
+      "start_time": "00:02:30,681",
+      "end_time": "00:02:31,881",
+      "text": "Sang màu đỏ nha anh chị em nha"
+    },
+    {
+      "id": 41,
+      "start": 151.881,
+      "end": 154.101,
+      "start_time": "00:02:31,881",
+      "end_time": "00:02:34,101",
+      "text": "Thay đổi dòng chữ podcast tim mạch"
+    },
+    {
+      "id": 42,
+      "start": 154.101,
+      "end": 156.341,
+      "start_time": "00:02:34,101",
+      "end_time": "00:02:36,341",
+      "text": "Podcast tim mạch nha"
+    },
+    {
+      "id": 43,
+      "start": 156.341,
+      "end": 157.041,
+      "start_time": "00:02:36,341",
+      "end_time": "00:02:37,041",
+      "text": "Sang gì ạ?"
+    },
+    {
+      "id": 44,
+      "start": 157.041,
+      "end": 162.281,
+      "start_time": "00:02:37,041",
+      "end_time": "00:02:42,281",
+      "text": "Ví dụ kênh của tôi, tôi sẽ để là podcast sức khỏe chủ động nhé."
+    },
+    {
+      "id": 45,
+      "start": 162.641,
+      "end": 172.561,
+      "start_time": "00:02:42,641",
+      "end_time": "00:02:52,561",
+      "text": "Thì anh chị em ví dụ như podcast sức khỏe AI đi, podcast sức khỏe dành cho người lớn, thì anh chị em tạo ra một kênh YouTube thì anh em để tên như thế."
+    },
+    {
+      "id": 46,
+      "start": 172.741,
+      "end": 176.821,
+      "start_time": "00:02:52,741",
+      "end_time": "00:02:56,821",
+      "text": "Ok, chúng ta sẽ nhấn là tạo ảnh. Anh chị em thêm cho tôi cái lúc tạo hình ảnh nhé là được nhé."
+    },
+    {
+      "id": 47,
+      "start": 177.85,
+      "end": 187.363,
+      "start_time": "00:02:57,850",
+      "end_time": "00:03:07,363",
+      "text": "Thì bây giờ là dựa trên những cái prompt mà tôi đã gửi cho ChatGPT nó sẽ tạo ra cho tôi một cái hình ảnh khung mà nó sẽ thay đổi cho tôi là ví dụ như khung của"
+    },
+    {
+      "id": 48,
+      "start": 187.363,
+      "end": 196.877,
+      "start_time": "00:03:07,363",
+      "end_time": "00:03:16,877",
+      "text": "họ ấy là anh em thấy là để màu xanh dương đúng không? Thì chúng ta sẽ chuyển sang nó là màu đỏ. Đấy thì nó sẽ khác hoàn toàn phong cách của họ luôn rồi. Cái đoạn"
+    },
+    {
+      "id": 49,
+      "start": 196.877,
+      "end": 206.39,
+      "start_time": "00:03:16,877",
+      "end_time": "00:03:26,390",
+      "text": "này tôi sẽ tour nha cái tạo hình ảnh này nó hơi lâu một tí anh em ạ. Đây nha anh em nha. Sau đó thì ChatGPT nó đã tạo ra cho tôi một cái khung như thế này."
+    },
+    {
+      "id": 50,
+      "start": 206.39,
+      "end": 209.95,
+      "start_time": "00:03:26,390",
+      "end_time": "00:03:29,950",
+      "text": "Anh chị em nhìn thấy không? Khung màu xanh này."
+    },
+    {
+      "id": 51,
+      "start": 210.73,
+      "end": 211.13,
+      "start_time": "00:03:30,730",
+      "end_time": "00:03:31,130",
+      "text": "Lưu này."
+    },
+    {
+      "id": 52,
+      "start": 213.51,
+      "end": 214.47,
+      "start_time": "00:03:33,510",
+      "end_time": "00:03:34,470",
+      "text": "Anh em lưu về nhé."
+    },
+    {
+      "id": 53,
+      "start": 215.13,
+      "end": 219.53,
+      "start_time": "00:03:35,130",
+      "end_time": "00:03:39,530",
+      "text": "Ở đây thì anh em có thể thay đổi viền ở ngoài khung là sang màu đỏ đều được nhé."
+    },
+    {
+      "id": 54,
+      "start": 219.67,
+      "end": 221.21,
+      "start_time": "00:03:39,670",
+      "end_time": "00:03:41,210",
+      "text": "Ở đây tôi để luôn cái khung này đi."
+    },
+    {
+      "id": 55,
+      "start": 223.59,
+      "end": 229.77,
+      "start_time": "00:03:43,590",
+      "end_time": "00:03:49,770",
+      "text": "Sau khi đã có một cái hình nền như thế này rồi, hình nền khung ở trong video rồi thì chúng ta sẽ bắt đầu qua gì ạ?"
+    },
+    {
+      "id": 56,
+      "start": 230.0,
+      "end": 231.01,
+      "start_time": "00:03:50,000",
+      "end_time": "00:03:51,010",
+      "text": "Tạo nhân vật nhé."
+    },
+    {
+      "id": 57,
+      "start": 231.45,
+      "end": 233.95,
+      "start_time": "00:03:51,450",
+      "end_time": "00:03:53,950",
+      "text": "Ở đây thì tôi sẽ gì ạ? Chụp ảnh cái nhân vật bác sĩ này."
+    },
+    {
+      "id": 58,
+      "start": 233.95,
+      "end": 240.617,
+      "start_time": "00:03:53,950",
+      "end_time": "00:04:00,617",
+      "text": "Đây nhé, tôi là tiến hành chụp ảnh nhân vật bác sĩ này. Anh chị em nhớ cho tôi bước này nhé. Anh chị"
+    },
+    {
+      "id": 59,
+      "start": 240.617,
+      "end": 247.283,
+      "start_time": "00:04:00,617",
+      "end_time": "00:04:07,283",
+      "text": "em dán vào cho tôi ChatGPT này. Sau đó thì chúng ta sẽ copy cái prompt tạo ảnh nhân vật bác sĩ này nhé."
+    },
+    {
+      "id": 60,
+      "start": 247.283,
+      "end": 253.95,
+      "start_time": "00:04:07,283",
+      "end_time": "00:04:13,950",
+      "text": "Chúng ta sẽ tạo ra một prompt khác chứ chúng ta không tạo ra nhân vật giống như thế này nữa. Tạo prompt nhé."
+    },
+    {
+      "id": 61,
+      "start": 253.95,
+      "end": 256.09,
+      "start_time": "00:04:13,950",
+      "end_time": "00:04:16,090",
+      "text": "Nhiều lúc mà ChatGPT của anh chị em"
+    },
+    {
+      "id": 62,
+      "start": 256.09,
+      "end": 258.17,
+      "start_time": "00:04:16,090",
+      "end_time": "00:04:18,170",
+      "text": "Mà nó lỗi thì anh chị em hãy ghi là"
+    },
+    {
+      "id": 63,
+      "start": 258.17,
+      "end": 260.29,
+      "start_time": "00:04:18,170",
+      "end_time": "00:04:20,290",
+      "text": "Tạo prompt nhé, chúng ta không tạo hình ảnh"
+    },
+    {
+      "id": 64,
+      "start": 260.29,
+      "end": 260.93,
+      "start_time": "00:04:20,290",
+      "end_time": "00:04:20,930",
+      "text": "Ở cái bước này"
+    },
+    {
+      "id": 65,
+      "start": 261.426,
+      "end": 267.326,
+      "start_time": "00:04:21,426",
+      "end_time": "00:04:27,326",
+      "text": "Chúng ta sẽ chỉ lấy cái hình ảnh gốc của bác sĩ trong cái video này để chúng ta làm gì ạ?"
+    },
+    {
+      "id": 66,
+      "start": 267.566,
+      "end": 269.526,
+      "start_time": "00:04:27,566",
+      "end_time": "00:04:29,526",
+      "text": "Tạo ra một cái hình ảnh khác."
+    },
+    {
+      "id": 67,
+      "start": 275.646,
+      "end": 278.786,
+      "start_time": "00:04:35,646",
+      "end_time": "00:04:38,786",
+      "text": "Đây nhé. Sau đó thì anh chị em copy cho tôi cái prompt như thế này nhé."
+    },
+    {
+      "id": 68,
+      "start": 278.786,
+      "end": 286.786,
+      "start_time": "00:04:38,786",
+      "end_time": "00:04:46,786",
+      "text": "Cố định cho tôi là chúng ta tạo ra prompt nhé. Sau đó chúng ta mở cho tôi một cái đoạn chat mới này. Anh chị em dán vào đây. Nhấn tạo hình ảnh nhé."
+    },
+    {
+      "id": 69,
+      "start": 290.026,
+      "end": 303.886,
+      "start_time": "00:04:50,026",
+      "end_time": "00:05:03,886",
+      "text": "Chúng ta tạo luôn trên ChatGPT nhé. Tại vì hình ảnh ở trên ChatGPT chúng ta tạo ra rất là nét nha anh chị em. Sau khi chúng ta đã có một cái prompt chúng ta đưa vào đã tạo ra một hình ảnh bác sĩ như thế này rồi nha anh em nhé. Anh em nhấn này. Tải về cho tôi này."
+    },
+    {
+      "id": 70,
+      "start": 304.0,
+      "end": 317.426,
+      "start_time": "00:05:04,000",
+      "end_time": "00:05:17,426",
+      "text": "Sau khi chúng ta đã có một hình ảnh bác sĩ và một hình ảnh nền như thế này, trong video chúng ta sẽ tiếp tục đến với Master Prompt để tạo ra 100 ý tưởng để cho một kênh sức khỏe của anh chị em."
+    },
+    {
+      "id": 71,
+      "start": 317.726,
+      "end": 320.246,
+      "start_time": "00:05:17,726",
+      "end_time": "00:05:20,246",
+      "text": "Anh chị em copy cho tôi toàn bộ cái Master Prompt này."
+    },
+    {
+      "id": 72,
+      "start": 321.686,
+      "end": 324.586,
+      "start_time": "00:05:21,686",
+      "end_time": "00:05:24,586",
+      "text": "Ở phần 2 anh chị em nhấn sao chép này."
+    },
+    {
+      "id": 73,
+      "start": 325.286,
+      "end": 328.846,
+      "start_time": "00:05:25,286",
+      "end_time": "00:05:28,846",
+      "text": "Sau khi sao chép xong thì chúng ta sẽ mở ra một cái đoạn chat mới như thế này."
+    },
+    {
+      "id": 74,
+      "start": 330.65,
+      "end": 339.53,
+      "start_time": "00:05:30,650",
+      "end_time": "00:05:39,530",
+      "text": "Tất nhiên là mỗi hình ảnh nó sẽ tạo ra khác nhau nhé. Ví dụ như hình ảnh mà bác sĩ chúng ta vừa tạo ra, anh chị em nhớ cho tôi là chúng ta có thể dùng"
+    },
+    {
+      "id": 75,
+      "start": 339.53,
+      "end": 348.41,
+      "start_time": "00:05:39,530",
+      "end_time": "00:05:48,410",
+      "text": "cho toàn bộ kênh của chúng ta nhé. Chúng ta không thay đổi nhân vật nào nữa cả. Và chúng ta cũng không thay đổi nhân vật bác sĩ ở trong cái kênh cố định của chúng ta cả."
+    },
+    {
+      "id": 76,
+      "start": 348.41,
+      "end": 356.95,
+      "start_time": "00:05:48,410",
+      "end_time": "00:05:56,950",
+      "text": "Đây là một cái Master Prompt thì tôi đã dựa trên cái công thức của video của họ để tôi viết lại lên ý tưởng kịch bản cho 100 podcast rồi."
+    },
+    {
+      "id": 77,
+      "start": 357.07,
+      "end": 366.31,
+      "start_time": "00:05:57,070",
+      "end_time": "00:06:06,310",
+      "text": "Thì anh chị em có thể áp dụng vào ví dụ như chúng ta nó sẽ ra hoàn toàn cho anh chị em toàn bộ cái ngách chủ đề sức khỏe khác podcast về sức khỏe khác liên tục nha anh chị em nhé."
+    },
+    {
+      "id": 78,
+      "start": 366.43,
+      "end": 368.03,
+      "start_time": "00:06:06,430",
+      "end_time": "00:06:08,030",
+      "text": "Chứ nó không giống nhau đó anh chị em nhé."
+    },
+    {
+      "id": 79,
+      "start": 368.03,
+      "end": 373.91,
+      "start_time": "00:06:08,030",
+      "end_time": "00:06:13,910",
+      "text": "Dưới đây là toàn bộ khung để kể để kênh podcast sức khỏe đi theo cùng phong cách bác sĩ trò chuyện với cô chú này."
+    },
+    {
+      "id": 80,
+      "start": 373.91,
+      "end": 380.87,
+      "start_time": "00:06:13,910",
+      "end_time": "00:06:20,870",
+      "text": "Thì nó sẽ ra cho chúng ta là phần A này, phần B này, phần B là nhóm 1 nhé."
+    },
+    {
+      "id": 81,
+      "start": 381.37,
+      "end": 386.43,
+      "start_time": "00:06:21,370",
+      "end_time": "00:06:26,430",
+      "text": "Nhóm 1 nó sẽ ra cho anh chị em đầy đủ 100 ý tưởng podcast về sức khỏe."
+    },
+    {
+      "id": 82,
+      "start": 386.57,
+      "end": 388.27,
+      "start_time": "00:06:26,570",
+      "end_time": "00:06:28,270",
+      "text": "Từng cái 1 đây này, đây nhé."
+    },
+    {
+      "id": 83,
+      "start": 388.67,
+      "end": 390.73,
+      "start_time": "00:06:28,670",
+      "end_time": "00:06:30,730",
+      "text": "Anh chị em nhớ cho tôi là 1 này."
+    },
+    {
+      "id": 84,
+      "start": 391.35,
+      "end": 392.55,
+      "start_time": "00:06:31,350",
+      "end_time": "00:06:32,550",
+      "text": "Nó sẽ ra đến 100."
+    },
+    {
+      "id": 85,
+      "start": 392.79,
+      "end": 394.79,
+      "start_time": "00:06:32,790",
+      "end_time": "00:06:34,790",
+      "text": "Ý tưởng sau là anh chị em chỉ cần copy cho tôi."
+    },
+    {
+      "id": 86,
+      "start": 394.79,
+      "end": 398.77,
+      "start_time": "00:06:34,790",
+      "end_time": "00:06:38,770",
+      "text": "Cái này anh chị em dán vào luôn cái phần của podcast này luôn nhé."
+    },
+    {
+      "id": 87,
+      "start": 398.83,
+      "end": 399.37,
+      "start_time": "00:06:38,830",
+      "end_time": "00:06:39,370",
+      "text": "Anh chị em nhé."
+    },
+    {
+      "id": 88,
+      "start": 399.47,
+      "end": 399.83,
+      "start_time": "00:06:39,470",
+      "end_time": "00:06:39,830",
+      "text": "4 này."
+    },
+    {
+      "id": 89,
+      "start": 400.63,
+      "end": 401.29,
+      "start_time": "00:06:40,630",
+      "end_time": "00:06:41,290",
+      "text": "5 này."
+    },
+    {
+      "id": 90,
+      "start": 402.85,
+      "end": 404.65,
+      "start_time": "00:06:42,850",
+      "end_time": "00:06:44,650",
+      "text": "Nó sẽ ra cho anh chị 100"
+    },
+    {
+      "id": 91,
+      "start": 404.65,
+      "end": 405.93,
+      "start_time": "00:06:44,650",
+      "end_time": "00:06:45,930",
+      "text": "Nhóm 2 tiểu đường nhé"
+    },
+    {
+      "id": 92,
+      "start": 405.93,
+      "end": 407.33,
+      "start_time": "00:06:45,930",
+      "end_time": "00:06:47,330",
+      "text": "Nhóm 1 này"
+    },
+    {
+      "id": 93,
+      "start": 407.33,
+      "end": 409.67,
+      "start_time": "00:06:47,330",
+      "end_time": "00:06:49,670",
+      "text": "Anh chị em nhớ cho tôi là nhóm 1 là"
+    },
+    {
+      "id": 94,
+      "start": 409.67,
+      "end": 411.33,
+      "start_time": "00:06:49,670",
+      "end_time": "00:06:51,330",
+      "text": "Tim mạch, huyết áp, đột quỵ"
+    },
+    {
+      "id": 95,
+      "start": 411.33,
+      "end": 413.25,
+      "start_time": "00:06:51,330",
+      "end_time": "00:06:53,250",
+      "text": "Là 10 chủ đề nhé"
+    },
+    {
+      "id": 96,
+      "start": 413.25,
+      "end": 415.31,
+      "start_time": "00:06:53,250",
+      "end_time": "00:06:55,310",
+      "text": "Nhóm 2 là tiểu đường, đường huyết"
+    },
+    {
+      "id": 97,
+      "start": 415.31,
+      "end": 417.63,
+      "start_time": "00:06:55,310",
+      "end_time": "00:06:57,630",
+      "text": "Và biến chứng là 10 chủ đề nhé"
+    },
+    {
+      "id": 98,
+      "start": 417.63,
+      "end": 420.03,
+      "start_time": "00:06:57,630",
+      "end_time": "00:07:00,030",
+      "text": "Phần 3 là mỡ máu và gan nhiễm mỡ nhé"
+    },
+    {
+      "id": 99,
+      "start": 420.03,
+      "end": 422.85,
+      "start_time": "00:07:00,030",
+      "end_time": "00:07:02,850",
+      "text": "Nó sẽ chia ra cho chúng ta là dựa trên"
+    },
+    {
+      "id": 100,
+      "start": 422.85,
+      "end": 426.05,
+      "start_time": "00:07:02,850",
+      "end_time": "00:07:06,050",
+      "text": "Master Prompt sẽ chia cho 10 nhóm"
+    },
+    {
+      "id": 101,
+      "start": 426.05,
+      "end": 428.55,
+      "start_time": "00:07:06,050",
+      "end_time": "00:07:08,550",
+      "text": "Tim mạch, huyết áp, đột quỵ"
+    },
+    {
+      "id": 102,
+      "start": 428.55,
+      "end": 430.39,
+      "start_time": "00:07:08,550",
+      "end_time": "00:07:10,390",
+      "text": "Nhóm 1 là 10 video"
+    },
+    {
+      "id": 103,
+      "start": 430.39,
+      "end": 434.05,
+      "start_time": "00:07:10,390",
+      "end_time": "00:07:14,050",
+      "text": "Nhóm 2 bắt đầu từ 10"
+    },
+    {
+      "id": 104,
+      "start": 434.05,
+      "end": 436.05,
+      "start_time": "00:07:14,050",
+      "end_time": "00:07:16,050",
+      "text": "Tiểu đường, đường huyết và biến chứng"
+    },
+    {
+      "id": 105,
+      "start": 436.05,
+      "end": 440.716,
+      "start_time": "00:07:16,050",
+      "end_time": "00:07:20,716",
+      "text": "Nhóm 3 là mỡ máu, gan nhiễm mỡ và béo bụng"
+    },
+    {
+      "id": 106,
+      "start": 440.716,
+      "end": 450.536,
+      "start_time": "00:07:20,716",
+      "end_time": "00:07:30,536",
+      "text": "Thì bây giờ là tôi sẽ dừng lại, 29 này, thì tôi sẽ tạm thời, tôi sẽ dừng lại, để nó không viết đến 100 nữa, thì chúng ta sẽ đỡ phần này đi."
+    },
+    {
+      "id": 107,
+      "start": 451.236,
+      "end": 461.656,
+      "start_time": "00:07:31,236",
+      "end_time": "00:07:41,656",
+      "text": "Đấy là thận, tiểu đêm và phù thận này. Đây là tôi dừng lại nhé. Thì bây giờ là tôi sẽ lấy một phần ở trong cái mục là tim mạch, huyết áp đột quỵ nhé."
+    },
+    {
+      "id": 108,
+      "start": 462.0,
+      "end": 471.396,
+      "start_time": "00:07:42,000",
+      "end_time": "00:07:51,396",
+      "text": "Anh chị em copy cho tôi. Sau đó anh chị em dán ra đây. Sau đó gửi cho ChatGPT thì bây giờ nó sẽ dựa vào cái tiêu đề hook cũng như đối tượng,"
+    },
+    {
+      "id": 109,
+      "start": 471.396,
+      "end": 481.136,
+      "start_time": "00:07:51,396",
+      "end_time": "00:08:01,136",
+      "text": "người nghe góc cảnh báo, câu chuyện bệnh nhân có thể khai thác này, kiến thức, khoa học cần giải thích này, câu hỏi gợi bình luận này và gợi ý tập tiếp theo."
+    },
+    {
+      "id": 110,
+      "start": 481.136,
+      "end": 488.136,
+      "start_time": "00:08:01,136",
+      "end_time": "00:08:08,136",
+      "text": "Thì bây giờ là dựa trên một cái tiêu đề podcast ở mục 1 như thế này nó sẽ ra cho anh chị em một kịch bản hoàn chỉnh cho ý tưởng số 1 nhé."
+    },
+    {
+      "id": 111,
+      "start": 489.316,
+      "end": 494.276,
+      "start_time": "00:08:09,316",
+      "end_time": "00:08:14,276",
+      "text": "Tiêu đề chính này, bác sĩ cảnh báo con số huyết áp đẹp chưa chắc là trái tim đã khỏe."
+    },
+    {
+      "id": 112,
+      "start": 494.436,
+      "end": 505.456,
+      "start_time": "00:08:14,436",
+      "end_time": "00:08:25,456",
+      "text": "Đấy là tiêu đề nhé, hook mở đầu này, lời chào podcast này, xin kính chào cô chú, các bạn đã lắng nghe podcast sức khỏe chủ động thì chúng ta sẽ có một cái podcast như thế này."
+    },
+    {
+      "id": 113,
+      "start": 506.236,
+      "end": 509.136,
+      "start_time": "00:08:26,236",
+      "end_time": "00:08:29,136",
+      "text": "Đây là các phần nhé anh chị em nhớ ra rồi nhé."
+    },
+    {
+      "id": 114,
+      "start": 509.35,
+      "end": 519.117,
+      "start_time": "00:08:29,350",
+      "end_time": "00:08:39,117",
+      "text": "Đây là Hook này. Hook là mở đầu của tất cả video nha anh chị em nha. Sau khi nó đã viết xong cái kịch bản số 1 này, đây nó đã hỏi là anh chị em có"
+    },
+    {
+      "id": 115,
+      "start": 519.117,
+      "end": 528.883,
+      "start_time": "00:08:39,117",
+      "end_time": "00:08:48,883",
+      "text": "muốn viết tiếp kịch bản số 2 không? Thì ở đây chúng ta sẽ ngồi tạo video đã. Thì đây là một cái podcast đầy đủ nha. Tiêu đề chính này, Hook này, lời chào podcast này,"
+    },
+    {
+      "id": 116,
+      "start": 528.883,
+      "end": 538.65,
+      "start_time": "00:08:48,883",
+      "end_time": "00:08:58,650",
+      "text": "vấn đề sức khỏe khiến người nghe phải chú ý này, giải thích vì sao nhiều người đang hiểu sai này. Đó là toàn bộ một cái podcast chi tiết của một cái video của chúng ta nha."
+    },
+    {
+      "id": 117,
+      "start": 538.65,
+      "end": 543.0,
+      "start_time": "00:08:58,650",
+      "end_time": "00:09:03,000",
+      "text": "Thì ở đây là gì ạ? Chúng ta sẽ bắt đầu lấy từ phần hook này nha anh chị em nha để chúng ta tạo video."
+    },
+    {
+      "id": 118,
+      "start": 543.0,
+      "end": 547.97,
+      "start_time": "00:09:03,000",
+      "end_time": "00:09:07,970",
+      "text": "Bây giờ chúng ta sẽ đến phần tạo video thì ở đây là giao diện của Veo 3 đấy nha anh chị em nha."
+    },
+    {
+      "id": 119,
+      "start": 548.13,
+      "end": 553.15,
+      "start_time": "00:09:08,130",
+      "end_time": "00:09:13,150",
+      "text": "Anh chị em nhấn tạo dự án mới này. Sau đó thì anh em nhấn tải cái hình ảnh của bác sĩ lên nha."
+    },
+    {
+      "id": 120,
+      "start": 553.69,
+      "end": 559.05,
+      "start_time": "00:09:13,690",
+      "end_time": "00:09:19,050",
+      "text": "Chúng ta tải cái hình ảnh của bác sĩ lên trước này. Và bây giờ chúng ta phải nhớ cho tôi những cái bước mà chúng ta sẽ làm gì ạ?"
+    },
+    {
+      "id": 121,
+      "start": 559.31,
+      "end": 567.87,
+      "start_time": "00:09:19,310",
+      "end_time": "00:09:27,870",
+      "text": "Nhất quán giọng nói nhé. Tải hình ảnh bác sĩ lên đầu tiên này. Sau khi tải hình ảnh bác sĩ lên thì chúng ta sẽ nhấn thêm vào câu lệnh nhé."
+    },
+    {
+      "id": 122,
+      "start": 567.87,
+      "end": 574.11,
+      "start_time": "00:09:27,870",
+      "end_time": "00:09:34,110",
+      "text": "Thì bây giờ là chúng ta sẽ thêm này. Anh em nhấn cho tôi dấu cộng này và nhấn vào giọng nói nhé."
+    },
+    {
+      "id": 123,
+      "start": 574.11,
+      "end": 582.85,
+      "start_time": "00:09:34,110",
+      "end_time": "00:09:42,850",
+      "text": "thì bây giờ là tôi sẽ sử dụng một giọng nam bất kỳ anh em nhấn vào giọng nói và chúng ta sẽ chọn vào giọng nói"
+    },
+    {
+      "id": 124,
+      "start": 582.85,
+      "end": 594.11,
+      "start_time": "00:09:42,850",
+      "end_time": "00:09:54,110",
+      "text": "và như thế này nhé thì bây giờ là chúng ta sẽ đến với cái phần prompt để tạo video"
+    },
+    {
+      "id": 125,
+      "start": 594.11,
+      "end": 596.11,
+      "start_time": "00:09:54,110",
+      "end_time": "00:09:56,110",
+      "text": "video trên Veo 3 tôi đã để đây nè"
+    },
+    {
+      "id": 126,
+      "start": 596.11,
+      "end": 599.11,
+      "start_time": "00:09:56,110",
+      "end_time": "00:09:59,110",
+      "text": "anh chị em nhớ nhìn cho tôi cái câu thoại đậm nhé"
+    },
+    {
+      "id": 127,
+      "start": 599.11,
+      "end": 601.11,
+      "start_time": "00:09:59,110",
+      "end_time": "00:10:01,110",
+      "text": "mà tôi đã ghi như thế này nhé"
+    },
+    {
+      "id": 128,
+      "start": 601.11,
+      "end": 603.11,
+      "start_time": "00:10:01,110",
+      "end_time": "00:10:03,110",
+      "text": "chúng ta sẽ copy toàn bộ cái prompt này cho tôi"
+    },
+    {
+      "id": 129,
+      "start": 603.11,
+      "end": 605.11,
+      "start_time": "00:10:03,110",
+      "end_time": "00:10:05,110",
+      "text": "copy prompt này nhé"
+    },
+    {
+      "id": 130,
+      "start": 605.11,
+      "end": 607.11,
+      "start_time": "00:10:05,110",
+      "end_time": "00:10:07,110",
+      "text": "sau đó thì anh em dán vào phần này"
+    },
+    {
+      "id": 131,
+      "start": 607.11,
+      "end": 608.11,
+      "start_time": "00:10:07,110",
+      "end_time": "00:10:08,110",
+      "text": "bây giờ là gì ạ"
+    },
+    {
+      "id": 132,
+      "start": 608.11,
+      "end": 610.11,
+      "start_time": "00:10:08,110",
+      "end_time": "00:10:10,110",
+      "text": "chúng ta sẽ dán cái phần câu thoại này"
+    },
+    {
+      "id": 133,
+      "start": 610.11,
+      "end": 612.666,
+      "start_time": "00:10:10,110",
+      "end_time": "00:10:12,666",
+      "text": "câu thoại nhé bắt đầu từ cái hook mở đầu"
+    },
+    {
+      "id": 134,
+      "start": 612.666,
+      "end": 624.406,
+      "start_time": "00:10:12,666",
+      "end_time": "00:10:24,406",
+      "text": "Hook mở đầu 60s, nhiều cô chú sẽ đo huyết áp, chúng ta sẽ copy từng đoạn 1. Video từng đoạn của con Veo 3 chỉ tạo được tầm 8s 1."
+    },
+    {
+      "id": 135,
+      "start": 624.406,
+      "end": 633.166,
+      "start_time": "00:10:24,406",
+      "end_time": "00:10:33,166",
+      "text": "Nhấn tạo video này, sau đó chúng ta sử dụng lại câu lệnh, nó sẽ có tất cả hình ảnh và giọng nói rồi."
+    },
+    {
+      "id": 136,
+      "start": 633.166,
+      "end": 636.326,
+      "start_time": "00:10:33,166",
+      "end_time": "00:10:36,326",
+      "text": "Chúng ta chỉ cần copy cho tôi những cái như thế này thôi."
+    },
+    {
+      "id": 137,
+      "start": 638.106,
+      "end": 640.766,
+      "start_time": "00:10:38,106",
+      "end_time": "00:10:40,766",
+      "text": "Những cái text tiếp theo của cái podcast."
+    },
+    {
+      "id": 138,
+      "start": 642.666,
+      "end": 652.966,
+      "start_time": "00:10:42,666",
+      "end_time": "00:10:52,966",
+      "text": "Tạo video này. Tiếp theo là con số này. Cái này thì chúng ta làm cũng rất là nhanh nhé, chứ không phải làm lâu đâu. Dán vào đây."
+    },
+    {
+      "id": 139,
+      "start": 657.546,
+      "end": 662.226,
+      "start_time": "00:10:57,546",
+      "end_time": "00:11:02,226",
+      "text": "Hụt hơi này. Sử dụng lại câu lệnh này. Chúng ta sẽ dán vào đây."
+    },
+    {
+      "id": 140,
+      "start": 665.95,
+      "end": 672.75,
+      "start_time": "00:11:05,950",
+      "end_time": "00:11:12,750",
+      "text": "Máy đo huyết áp này"
+    },
+    {
+      "id": 141,
+      "start": 672.75,
+      "end": 684.15,
+      "start_time": "00:11:12,750",
+      "end_time": "00:11:24,150",
+      "text": "Tôi sẽ copy đến và trong cái tập podcast ngày hôm nay này"
+    },
+    {
+      "id": 142,
+      "start": 684.15,
+      "end": 687.47,
+      "start_time": "00:11:24,150",
+      "end_time": "00:11:27,470",
+      "text": "Sử dụng lại câu lệnh này"
+    },
+    {
+      "id": 143,
+      "start": 690.99,
+      "end": 694.79,
+      "start_time": "00:11:30,990",
+      "end_time": "00:11:34,790",
+      "text": "Anh chị em nhớ cho tôi là chúng ta sẽ làm chi tiết cho tôi nhé"
+    },
+    {
+      "id": 144,
+      "start": 694.79,
+      "end": 703.79,
+      "start_time": "00:11:34,790",
+      "end_time": "00:11:43,790",
+      "text": "Làm cái sức khỏe này làm cho người lớn xem nên là chúng ta phải làm chi tiết cực kì chi tiết nhé. Dùng lại câu lệnh này."
+    },
+    {
+      "id": 145,
+      "start": 703.79,
+      "end": 713.29,
+      "start_time": "00:11:43,790",
+      "end_time": "00:11:53,290",
+      "text": "Dán ra đây. Thì bây giờ nó đã ra cho chúng ta một cái video này, hai video này. Cái nào mà"
+    },
+    {
+      "id": 146,
+      "start": 713.29,
+      "end": 722.79,
+      "start_time": "00:11:53,290",
+      "end_time": "00:12:02,790",
+      "text": "không thành công thì anh chị nhớ cho tôi là sử dụng lại câu lệnh này nhé. Nhớ cho tôi là như thế."
+    },
+    {
+      "id": 147,
+      "start": 722.79,
+      "end": 732.11,
+      "start_time": "00:12:02,790",
+      "end_time": "00:12:12,110",
+      "text": "Nhiều cô chú ở nhà có máy đo huyết áp, sáng ngủ dậy đo một lần, thấy 120 trên 80, chiều đo lại, thấy cũng đẹp."
+    },
+    {
+      "id": 148,
+      "start": 734.19,
+      "end": 738.79,
+      "start_time": "00:12:14,190",
+      "end_time": "00:12:18,790",
+      "text": "Nhiều cô chú ở nhà có máy đo huyết áp, sáng ngủ dậy đo một lần, thấy một lần."
+    },
+    {
+      "id": 149,
+      "start": 740.93,
+      "end": 744.27,
+      "start_time": "00:12:20,930",
+      "end_time": "00:12:24,270",
+      "text": "Đây là những cái video mà nó sẽ tạo ra cho chúng ta như thế này."
+    },
+    {
+      "id": 150,
+      "start": 744.27,
+      "end": 753.43,
+      "start_time": "00:12:24,270",
+      "end_time": "00:12:33,430",
+      "text": "Thế này thì anh chị nhớ là ví dụ như tạo lại này thì anh chị nhớ là đây là cái video podcast của cái phần 2, phần 3, phần 4 nhé."
+    },
+    {
+      "id": 151,
+      "start": 753.43,
+      "end": 753.95,
+      "start_time": "00:12:33,430",
+      "end_time": "00:12:33,950",
+      "text": "Nhấn."
+    },
+    {
+      "id": 152,
+      "start": 754.49,
+      "end": 758.51,
+      "start_time": "00:12:34,490",
+      "end_time": "00:12:38,510",
+      "text": "Con số huyết áp đẹp không phải lúc nào cũng có nghĩa là trái tim đang hoàn toàn khỏe."
+    },
+    {
+      "id": 153,
+      "start": 758.81,
+      "end": 762.09,
+      "start_time": "00:12:38,810",
+      "end_time": "00:12:42,090",
+      "text": "Nếu huyết áp nhìn có vẻ bình thường nhưng cô chú lại thường xuyên chóng mặt."
+    },
+    {
+      "id": 154,
+      "start": 763.19,
+      "end": 764.21,
+      "start_time": "00:12:43,190",
+      "end_time": "00:12:44,210",
+      "text": "Thế này này."
+    },
+    {
+      "id": 155,
+      "start": 764.836,
+      "end": 766.616,
+      "start_time": "00:12:44,836",
+      "end_time": "00:12:46,616",
+      "text": "Tôi chỉ lấy một đoạn nha anh chị em."
+    },
+    {
+      "id": 156,
+      "start": 769.356,
+      "end": 771.256,
+      "start_time": "00:12:49,356",
+      "end_time": "00:12:51,256",
+      "text": "Máy đo huyết áp cho mình một con số."
+    },
+    {
+      "id": 157,
+      "start": 776.016,
+      "end": 789.656,
+      "start_time": "00:12:56,016",
+      "end_time": "00:13:09,656",
+      "text": "Nhớ cho tôi là anh chị em tạo đầy đủ nhé. Những cái phần này thì chúng ta chỉ tạo mất tầm 10-20 phút thôi. Một ngày chúng ta làm video tầm 2-30 phút đều được nhé. Một ngày chúng ta bỏ ra tầm 2-3 tiếng chúng ta làm 1 video về chủ đề sức khỏe nhé."
+    },
+    {
+      "id": 158,
+      "start": 790.0,
+      "end": 799.109,
+      "start_time": "00:13:10,000",
+      "end_time": "00:13:19,109",
+      "text": "Tiếp theo là phần gì ạ? Phần chúng ta sẽ tải những video ở Pexels này nha anh chị em nhé. Pexels, Pixabay thì tôi nghĩ là anh chị em hãy tải"
+    },
+    {
+      "id": 159,
+      "start": 799.109,
+      "end": 808.563,
+      "start_time": "00:13:19,109",
+      "end_time": "00:13:28,563",
+      "text": "cho tôi những video liên quan tới ở trên Pexels này nhé. Anh chị em chọn phần video này. Ví dụ như huyết áp này. Những video về sức khỏe này. Nó rất"
+    },
+    {
+      "id": 160,
+      "start": 808.563,
+      "end": 818.016,
+      "start_time": "00:13:28,563",
+      "end_time": "00:13:38,016",
+      "text": "là nhiều nhé. Khi anh chị em nhấn vào một video bất kỳ này, nó sẽ đề xuất ra cho chúng ta rất nhiều video khác liên quan đến huyết áp này."
+    },
+    {
+      "id": 161,
+      "start": 818.016,
+      "end": 823.976,
+      "start_time": "00:13:38,016",
+      "end_time": "00:13:43,976",
+      "text": "Các bạn nhấn tải xuống, tôi sẽ lấy những video liên quan đến sức khỏe như thế này."
+    },
+    {
+      "id": 162,
+      "start": 824.556,
+      "end": 825.236,
+      "start_time": "00:13:44,556",
+      "end_time": "00:13:45,236",
+      "text": "Tải xuống này."
+    },
+    {
+      "id": 163,
+      "start": 826.176,
+      "end": 827.056,
+      "start_time": "00:13:46,176",
+      "end_time": "00:13:47,056",
+      "text": "Đấy anh chị em nhé."
+    },
+    {
+      "id": 164,
+      "start": 827.196,
+      "end": 830.856,
+      "start_time": "00:13:47,196",
+      "end_time": "00:13:50,856",
+      "text": "Rất nhiều video liên quan đến sức khỏe ở trên cái website này chúng ta lấy."
+    },
+    {
+      "id": 165,
+      "start": 831.276,
+      "end": 835.676,
+      "start_time": "00:13:51,276",
+      "end_time": "00:13:55,676",
+      "text": "Thì chúng ta sẽ làm, chỉnh sửa làm sao để cho nó phù hợp với chính sách nhé."
+    },
+    {
+      "id": 166,
+      "start": 836.05,
+      "end": 839.39,
+      "start_time": "00:13:56,050",
+      "end_time": "00:13:59,390",
+      "text": "Anh chị em nhớ cho tôi là anh chị em nhấn vào thì nó sẽ đề xuất ra nhé."
+    },
+    {
+      "id": 167,
+      "start": 844.0,
+      "end": 851.85,
+      "start_time": "00:14:04,000",
+      "end_time": "00:14:11,850",
+      "text": "Sau đó thì chúng ta sẽ đi vào CapCut nha anh chị em. Đây là giao diện của CapCut này. Đây là trong giao diện edit của CapCut nha anh chị em."
+    },
+    {
+      "id": 168,
+      "start": 852.03,
+      "end": 855.75,
+      "start_time": "00:14:12,030",
+      "end_time": "00:14:15,750",
+      "text": "Đó chúng ta sẽ thêm này. Thêm các video và những cái hình nền mà."
+    },
+    {
+      "id": 169,
+      "start": 858.25,
+      "end": 862.03,
+      "start_time": "00:14:18,250",
+      "end_time": "00:14:22,030",
+      "text": "Đấy nhé. Thì bây giờ là gì ạ? Chúng ta sẽ thêm cái hình nền này trước này."
+    },
+    {
+      "id": 170,
+      "start": 862.03,
+      "end": 870.03,
+      "start_time": "00:14:22,030",
+      "end_time": "00:14:30,030",
+      "text": "Những video này thì đối với cái hình nền của chúng ta như thế này thì anh chị em nhớ cho tôi là khi anh chị em thêm như thế"
+    },
+    {
+      "id": 171,
+      "start": 870.03,
+      "end": 878.03,
+      "start_time": "00:14:30,030",
+      "end_time": "00:14:38,030",
+      "text": "này rồi thì chúng ta sẽ nhấn cho tôi xóa nền nhấn phông xanh chúng ta sẽ không xóa tự động và chúng ta sẽ nhấn xóa phông xanh"
+    },
+    {
+      "id": 172,
+      "start": 878.03,
+      "end": 886.03,
+      "start_time": "00:14:38,030",
+      "end_time": "00:14:46,030",
+      "text": "nhấn vào thì anh em kéo trong đây thì nó sẽ đen 2 cái màu xanh ở giữa đi tiếp theo chúng ta sẽ lấy cái video này xuống đây"
+    },
+    {
+      "id": 173,
+      "start": 886.03,
+      "end": 888.47,
+      "start_time": "00:14:46,030",
+      "end_time": "00:14:48,470",
+      "text": "Nhiều cô chú ở nhà có máy đo huyết áp."
+    },
+    {
+      "id": 174,
+      "start": 889.55,
+      "end": 892.99,
+      "start_time": "00:14:49,550",
+      "end_time": "00:14:52,990",
+      "text": "Thì tôi sẽ để làm sao để nó cân vào cái chi tiết này."
+    },
+    {
+      "id": 175,
+      "start": 894.17,
+      "end": 894.51,
+      "start_time": "00:14:54,170",
+      "end_time": "00:14:54,510",
+      "text": "Đấy nhá."
+    },
+    {
+      "id": 176,
+      "start": 895.17,
+      "end": 898.11,
+      "start_time": "00:14:55,170",
+      "end_time": "00:14:58,110",
+      "text": "Sáng ngủ dậy đo một lần, thấy 120 trên 80."
+    },
+    {
+      "id": 177,
+      "start": 899.31,
+      "end": 900.87,
+      "start_time": "00:14:59,310",
+      "end_time": "00:15:00,870",
+      "text": "Chiều đo lại, thấy cũng đẹp."
+    },
+    {
+      "id": 178,
+      "start": 901.89,
+      "end": 902.19,
+      "start_time": "00:15:01,890",
+      "end_time": "00:15:02,190",
+      "text": "Đó."
+    },
+    {
+      "id": 179,
+      "start": 903.37,
+      "end": 903.91,
+      "start_time": "00:15:03,370",
+      "end_time": "00:15:03,910",
+      "text": "Tách đi này."
+    },
+    {
+      "id": 180,
+      "start": 905.27,
+      "end": 906.11,
+      "start_time": "00:15:05,270",
+      "end_time": "00:15:06,110",
+      "text": "Con số huyết áp đẹp."
+    },
+    {
+      "id": 181,
+      "start": 908.87,
+      "end": 909.43,
+      "start_time": "00:15:08,870",
+      "end_time": "00:15:09,430",
+      "text": "Kéo xuống này."
+    },
+    {
+      "id": 182,
+      "start": 909.43,
+      "end": 915.69,
+      "start_time": "00:15:09,430",
+      "end_time": "00:15:15,690",
+      "text": "con số huyết áp đẹp không phải lúc nào cũng có nghĩa là trái tim"
+    },
+    {
+      "id": 183,
+      "start": 915.69,
+      "end": 925.59,
+      "start_time": "00:15:15,690",
+      "end_time": "00:15:25,590",
+      "text": "anh chị nhớ tôi là chúng ta sẽ thêm như này anh chị copy sang này thì tại vì cái video này đang ở vị trí này đúng không"
+    },
+    {
+      "id": 184,
+      "start": 925.59,
+      "end": 928.186,
+      "start_time": "00:15:25,590",
+      "end_time": "00:15:28,186",
+      "text": "thì chúng ta sẽ kéo một cái video khác xuống này"
+    },
+    {
+      "id": 185,
+      "start": 928.186,
+      "end": 931.406,
+      "start_time": "00:15:28,186",
+      "end_time": "00:15:31,406",
+      "text": "Tim đập bất thường, hụt hơi khi đi bộ, nặng ngực."
+    },
+    {
+      "id": 186,
+      "start": 931.406,
+      "end": 939.459,
+      "start_time": "00:15:31,406",
+      "end_time": "00:15:39,459",
+      "text": "Tỷ lệ vị trí của nó luôn luôn ở đấy. Nó không di chuyển đi đâu cả. Máy"
+    },
+    {
+      "id": 187,
+      "start": 939.459,
+      "end": 947.513,
+      "start_time": "00:15:39,459",
+      "end_time": "00:15:47,513",
+      "text": "đo huyết áp cho mình một con số, nhưng cơ thể cho mình cả một câu chuyện."
+    },
+    {
+      "id": 188,
+      "start": 947.513,
+      "end": 955.566,
+      "start_time": "00:15:47,513",
+      "end_time": "00:15:55,566",
+      "text": "Và trong tập podcast hôm nay, chúng ta sẽ cùng nói thật chậm, thật dễ hiểu về chuyện."
+    },
+    {
+      "id": 189,
+      "start": 955.566,
+      "end": 961.126,
+      "start_time": "00:15:55,566",
+      "end_time": "00:16:01,126",
+      "text": "Vì sao không nên chỉ nhìn một con số huyết áp để kết luận sức khỏe tim mạch của mình?"
+    },
+    {
+      "id": 190,
+      "start": 961.126,
+      "end": 966.246,
+      "start_time": "00:16:01,126",
+      "end_time": "00:16:06,246",
+      "text": "Đó thì bây giờ là tiếp theo là chúng ta sẽ thêm những cái video liên quan đến sức khỏe xuống nhé."
+    },
+    {
+      "id": 191,
+      "start": 966.246,
+      "end": 970.426,
+      "start_time": "00:16:06,246",
+      "end_time": "00:16:10,426",
+      "text": "Ví dụ như mỗi đoạn thì tôi sẽ để cho nó tua nhanh lên một tí."
+    },
+    {
+      "id": 192,
+      "start": 970.426,
+      "end": 973.006,
+      "start_time": "00:16:10,426",
+      "end_time": "00:16:13,006",
+      "text": "Đây nhé."
+    },
+    {
+      "id": 193,
+      "start": 973.006,
+      "end": 979.886,
+      "start_time": "00:16:13,006",
+      "end_time": "00:16:19,886",
+      "text": "Thì khi mà chúng ta thêm như thế này, thêm cái video này vào rồi thì chúng ta kéo làm sao để cho nó vừa ở cái ô này."
+    },
+    {
+      "id": 194,
+      "start": 979.886,
+      "end": 981.126,
+      "start_time": "00:16:19,886",
+      "end_time": "00:16:21,126",
+      "text": "Nhưng mà tí bây giờ là chúng ta sẽ thêm những video này vào rồi thì chúng ta kéo làm sao để cho nó vừa ở cái ô này."
+    },
+    {
+      "id": 195,
+      "start": 981.126,
+      "end": 985.566,
+      "start_time": "00:16:21,126",
+      "end_time": "00:16:25,566",
+      "text": "ý là chúng ta sẽ kéo cái hình nền đây"
+    },
+    {
+      "id": 196,
+      "start": 985.566,
+      "end": 993.186,
+      "start_time": "00:16:25,566",
+      "end_time": "00:16:33,186",
+      "text": "Các bạn có thể nhìn thấy hình nền, tỷ lệ sẽ ở dưới hình nền phông xanh của mình nhé."
+    },
+    {
+      "id": 197,
+      "start": 995.05,
+      "end": 1004.65,
+      "start_time": "00:16:35,050",
+      "end_time": "00:16:44,650",
+      "text": "Kéo vào, tỷ lệ video đúng như thế luôn."
+    },
+    {
+      "id": 198,
+      "start": 1004.65,
+      "end": 1014.13,
+      "start_time": "00:16:44,650",
+      "end_time": "00:16:54,130",
+      "text": "Chúng ta có thể thêm những hiệu ứng vào đều được."
+    },
+    {
+      "id": 199,
+      "start": 1014.13,
+      "end": 1020.797,
+      "start_time": "00:16:54,130",
+      "end_time": "00:17:00,797",
+      "text": "Để không bỏ"
+    },
+    {
+      "id": 200,
+      "start": 1020.797,
+      "end": 1027.463,
+      "start_time": "00:17:00,797",
+      "end_time": "00:17:07,463",
+      "text": "lỡ những"
+    },
+    {
+      "id": 201,
+      "start": 1027.463,
+      "end": 1034.13,
+      "start_time": "00:17:07,463",
+      "end_time": "00:17:14,130",
+      "text": "video hấp dẫn"
+    },
+    {
+      "id": 202,
+      "start": 1034.13,
+      "end": 1043.11,
+      "start_time": "00:17:14,130",
+      "end_time": "00:17:23,110",
+      "text": "Chúng ta sẽ chọn"
+    },
+    {
+      "id": 203,
+      "start": 1049.5,
+      "end": 1052.09,
+      "start_time": "00:17:29,500",
+      "end_time": "00:17:32,090",
+      "text": "Tiếp theo là chúng ta sẽ chọn văn bản nhé."
+    },
+    {
+      "id": 204,
+      "start": 1052.09,
+      "end": 1053.27,
+      "start_time": "00:17:32,090",
+      "end_time": "00:17:33,270",
+      "text": "Chọn phụ đề tự động nhé"
+    },
+    {
+      "id": 205,
+      "start": 1053.27,
+      "end": 1061.83,
+      "start_time": "00:17:33,270",
+      "end_time": "00:17:41,830",
+      "text": "Anh chị em chọn cho tôi ngôn ngữ nói là tiếng Việt nhé. Anh chị em nhấn tạo ra nhé. Anh chị em nhấn phụ đề ra nhé. Phụ đề tiếng Việt nhé anh chị em."
+    },
+    {
+      "id": 206,
+      "start": 1063.27,
+      "end": 1072.69,
+      "start_time": "00:17:43,270",
+      "end_time": "00:17:52,690",
+      "text": "Đấy thì chúng ta sẽ chọn là phông chữ này. Khi mà nó phụ đề ra như thế này rồi nhé. Thì chúng ta sẽ chọn tất cả này. Và bây giờ là anh chị em nhớ cho tôi chọn phông chữ này."
+    },
+    {
+      "id": 207,
+      "start": 1072.69,
+      "end": 1078.07,
+      "start_time": "00:17:52,690",
+      "end_time": "00:17:58,070",
+      "text": "Tôi sẽ chọn một phông chữ bất kỳ này, Anton này"
+    },
+    {
+      "id": 208,
+      "start": 1078.07,
+      "end": 1087.516,
+      "start_time": "00:17:58,070",
+      "end_time": "00:18:07,516",
+      "text": "Chúng ta sẽ làm gì ạ? Chọn cho tôi cái màu chữ, màu đen này"
+    },
+    {
+      "id": 209,
+      "start": 1087.516,
+      "end": 1091.616,
+      "start_time": "00:18:07,516",
+      "end_time": "00:18:11,616",
+      "text": "Thật chậm, thật dễ hiểu. Nhiều cô chú ở nhà có máy đo huyết áp."
+    },
+    {
+      "id": 210,
+      "start": 1093.776,
+      "end": 1099.616,
+      "start_time": "00:18:13,776",
+      "end_time": "00:18:19,616",
+      "text": "Cái nào mà nó thành 2 dòng này nha anh chị em. Anh chị em có thể kéo dài ra tí."
+    },
+    {
+      "id": 211,
+      "start": 1099.616,
+      "end": 1101.976,
+      "start_time": "00:18:19,616",
+      "end_time": "00:18:21,976",
+      "text": "Thật chậm"
+    },
+    {
+      "id": 212,
+      "start": 1101.976,
+      "end": 1103.976,
+      "start_time": "00:18:21,976",
+      "end_time": "00:18:23,976",
+      "text": "Nhìn một con số huyết"
+    },
+    {
+      "id": 213,
+      "start": 1103.976,
+      "end": 1106.376,
+      "start_time": "00:18:23,976",
+      "end_time": "00:18:26,376",
+      "text": "Nhiều cô chú ở nhà có máy"
+    },
+    {
+      "id": 214,
+      "start": 1106.376,
+      "end": 1107.556,
+      "start_time": "00:18:26,376",
+      "end_time": "00:18:27,556",
+      "text": "Ok"
+    },
+    {
+      "id": 215,
+      "start": 1107.556,
+      "end": 1109.836,
+      "start_time": "00:18:27,556",
+      "end_time": "00:18:29,836",
+      "text": "Nhiều cô chú ở nhà"
+    },
+    {
+      "id": 216,
+      "start": 1109.836,
+      "end": 1112.396,
+      "start_time": "00:18:29,836",
+      "end_time": "00:18:32,396",
+      "text": "Đây là phần sản xuất về video nha anh chị em nha"
+    },
+    {
+      "id": 217,
+      "start": 1112.396,
+      "end": 1115.636,
+      "start_time": "00:18:32,396",
+      "end_time": "00:18:35,636",
+      "text": "Chúng ta sẽ nghe qua một đoạn về podcast về sức khỏe này"
+    },
+    {
+      "id": 218,
+      "start": 1115.636,
+      "end": 1116.556,
+      "start_time": "00:18:35,636",
+      "end_time": "00:18:36,556",
+      "text": "Máy đo huyết áp"
+    },
+    {
+      "id": 219,
+      "start": 1116.556,
+      "end": 1118.156,
+      "start_time": "00:18:36,556",
+      "end_time": "00:18:38,156",
+      "text": "Sáng ngủ dậy đo một lần"
+    },
+    {
+      "id": 220,
+      "start": 1118.156,
+      "end": 1119.616,
+      "start_time": "00:18:38,156",
+      "end_time": "00:18:39,616",
+      "text": "Thấy 120 trên"
+    },
+    {
+      "id": 221,
+      "start": 1119.616,
+      "end": 1129.896,
+      "start_time": "00:18:39,616",
+      "end_time": "00:18:49,896",
+      "text": "80. Chiều đo lại, thấy cũng đẹp. Con số huyết áp đẹp không phải lúc nào cũng có nghĩa là trái tim đang hoàn toàn khỏe. Nếu huyết áp nhìn có vẻ bình thường, nhưng cô chú lại thường xuyên chóng mặt."
+    },
+    {
+      "id": 222,
+      "start": 1130.0,
+      "end": 1135.316,
+      "start_time": "00:18:50,000",
+      "end_time": "00:18:55,316",
+      "text": "Đấy là về phần video, giờ chúng ta sẽ tiếp tục đi tạo hình ảnh thumbnail nha anh chị em nha."
+    },
+    {
+      "id": 223,
+      "start": 1135.696,
+      "end": 1138.616,
+      "start_time": "00:18:55,696",
+      "end_time": "00:18:58,616",
+      "text": "Bây giờ là chúng ta sẽ sử dụng hình ảnh nhân vật này luôn."
+    },
+    {
+      "id": 224,
+      "start": 1139.076,
+      "end": 1145.556,
+      "start_time": "00:18:59,076",
+      "end_time": "00:19:05,556",
+      "text": "Bây giờ là chúng ta sẽ trở lại câu lệnh đấy nhưng mà bây giờ là chúng ta sẽ sử dụng chọn phần hình ảnh nha."
+    },
+    {
+      "id": 225,
+      "start": 1145.776,
+      "end": 1148.956,
+      "start_time": "00:19:05,776",
+      "end_time": "00:19:08,956",
+      "text": "Chúng ta sẽ không chọn phần video nữa, chọn cho tôi 16.9 này."
+    },
+    {
+      "id": 226,
+      "start": 1149.436,
+      "end": 1154.316,
+      "start_time": "00:19:09,436",
+      "end_time": "00:19:14,316",
+      "text": "Bây giờ là trong cái câu prompt tạo hình ảnh thumbnail này anh chị nhớ cho tôi, copy này."
+    },
+    {
+      "id": 227,
+      "start": 1154.576,
+      "end": 1159.096,
+      "start_time": "00:19:14,576",
+      "end_time": "00:19:19,096",
+      "text": "Và bây giờ là gì ạ, chúng ta sẽ dán vào cái con Flow này nha, dán vào đây."
+    },
+    {
+      "id": 228,
+      "start": 1159.916,
+      "end": 1162.576,
+      "start_time": "00:19:19,916",
+      "end_time": "00:19:22,576",
+      "text": "Người ta sẽ chọn cho tôi là tầm 2 hình ảnh, 3 hình ảnh."
+    },
+    {
+      "id": 229,
+      "start": 1162.95,
+      "end": 1166.27,
+      "start_time": "00:19:22,950",
+      "end_time": "00:19:26,270",
+      "text": "2 hình ảnh này, 3 hình ảnh đều được, 2 hình ảnh nhé."
+    },
+    {
+      "id": 230,
+      "start": 1166.45,
+      "end": 1172.71,
+      "start_time": "00:19:26,450",
+      "end_time": "00:19:32,710",
+      "text": "Ở đây là cái prompt này, anh em khi nhớ cho tôi là tôi đang để là có cảm giác bị đau cổ nhé."
+    },
+    {
+      "id": 231,
+      "start": 1172.79,
+      "end": 1178.27,
+      "start_time": "00:19:32,790",
+      "end_time": "00:19:38,270",
+      "text": "Thì anh em có cảm giác bị đau vai này, đau chân, đau tay này, đau gì đều được nhé anh chị em nhé."
+    },
+    {
+      "id": 232,
+      "start": 1179.29,
+      "end": 1181.23,
+      "start_time": "00:19:39,290",
+      "end_time": "00:19:41,230",
+      "text": "Thì anh chị em hãy tạo ra cho tôi như thế."
+    },
+    {
+      "id": 233,
+      "start": 1182.23,
+      "end": 1188.27,
+      "start_time": "00:19:42,230",
+      "end_time": "00:19:48,270",
+      "text": "Câu cái prompt tạo ảnh sau ấy, thì anh chị em chỉ cần tải cái hình ảnh mà ở cái bối cảnh bệnh viện này về."
+    },
+    {
+      "id": 234,
+      "start": 1188.45,
+      "end": 1191.13,
+      "start_time": "00:19:48,450",
+      "end_time": "00:19:51,130",
+      "text": "Thì chúng ta chỉ có thay đổi là nhân vật là cái gì ạ."
+    },
+    {
+      "id": 235,
+      "start": 1191.13,
+      "end": 1198.95,
+      "start_time": "00:19:51,130",
+      "end_time": "00:19:58,950",
+      "text": "Nhân vật này đang có biểu hiện gì thôi. Chứ chúng ta không thay đổi bối cảnh nữa để cho tất cả các thumbnail nhất quán là một bối cảnh bệnh viện đều được."
+    },
+    {
+      "id": 236,
+      "start": 1198.95,
+      "end": 1207.81,
+      "start_time": "00:19:58,950",
+      "end_time": "00:20:07,810",
+      "text": "Đây là chúng ta đã có một hình ảnh như thế này đúng không? Tôi sẽ tải một hình ảnh này xuống."
+    },
+    {
+      "id": 237,
+      "start": 1209.45,
+      "end": 1215.21,
+      "start_time": "00:20:09,450",
+      "end_time": "00:20:15,210",
+      "text": "Thì bây giờ là gì? Anh chị em nhớ cho tôi là chúng ta có thể thêm luôn ở đây là tạo một hình ảnh."
+    },
+    {
+      "id": 238,
+      "start": 1215.99,
+      "end": 1216.71,
+      "start_time": "00:20:15,990",
+      "end_time": "00:20:16,710",
+      "text": "Trên thiết bị nhé."
+    },
+    {
+      "id": 239,
+      "start": 1217.13,
+      "end": 1217.83,
+      "start_time": "00:20:17,130",
+      "end_time": "00:20:17,830",
+      "text": "Thêm hình ảnh này."
+    },
+    {
+      "id": 240,
+      "start": 1218.99,
+      "end": 1220.37,
+      "start_time": "00:20:18,990",
+      "end_time": "00:20:20,370",
+      "text": "Thêm hình ảnh chúng ta vừa tại về."
+    },
+    {
+      "id": 241,
+      "start": 1220.89,
+      "end": 1221.97,
+      "start_time": "00:20:20,890",
+      "end_time": "00:20:21,970",
+      "text": "Chỉnh sửa hình ảnh này."
+    },
+    {
+      "id": 242,
+      "start": 1224.85,
+      "end": 1235.75,
+      "start_time": "00:20:24,850",
+      "end_time": "00:20:35,750",
+      "text": "Đây nhé, thì cái hình ảnh này thì chúng ta có thể thêm nhé, ví dụ như thêm dòng chữ này, chúng ta có thể lấy trong cái dòng chữ, ý tưởng của podcast của chúng ta nhé,"
+    },
+    {
+      "id": 243,
+      "start": 1236.43,
+      "end": 1241.75,
+      "start_time": "00:20:36,430",
+      "end_time": "00:20:41,750",
+      "text": "huyết áp này, bác sĩ cảnh báo này, thêm toàn bộ những cái dòng của tiêu đề này như này vào nhé."
+    },
+    {
+      "id": 244,
+      "start": 1241.75,
+      "end": 1243.59,
+      "start_time": "00:20:41,750",
+      "end_time": "00:20:43,590",
+      "text": "Anh chị em dám vào đây."
+    },
+    {
+      "id": 245,
+      "start": 1243.59,
+      "end": 1251.39,
+      "start_time": "00:20:43,590",
+      "end_time": "00:20:51,390",
+      "text": "Thì bây giờ là trong cái toàn bộ những cái này thì chúng ta sẽ chọn là phông chữ này Anton này"
+    },
+    {
+      "id": 246,
+      "start": 1251.39,
+      "end": 1254.71,
+      "start_time": "00:20:51,390",
+      "end_time": "00:20:54,710",
+      "text": "Vẫn là cái phông chữ Anton mà tôi hay dùng nha anh chị em"
+    },
+    {
+      "id": 247,
+      "start": 1254.71,
+      "end": 1258.671,
+      "start_time": "00:20:54,710",
+      "end_time": "00:20:58,671",
+      "text": "Đó"
+    },
+    {
+      "id": 248,
+      "start": 1258.671,
+      "end": 1270.771,
+      "start_time": "00:20:58,671",
+      "end_time": "00:21:10,771",
+      "text": "Đó thì bây giờ là gì ạ? Anh chị em sẽ lựa chọn cho tôi là thay đổi cái màu chữ này. Bác sĩ cảnh báo này, ví dụ như dòng bác sĩ cảnh báo này thì tôi sẽ để là màu gì ạ? Tôi sẽ để là màu xanh đi."
+    },
+    {
+      "id": 249,
+      "start": 1270.771,
+      "end": 1282.631,
+      "start_time": "00:21:10,771",
+      "end_time": "00:21:22,631",
+      "text": "Thì bây giờ là tôi sẽ lựa chọn là viền nhé. Tô viền của các chữ này đi. Tôi sẽ tô viền sang màu trắng này. Để cho nó sáng hơn."
+    },
+    {
+      "id": 250,
+      "start": 1283.311,
+      "end": 1297.091,
+      "start_time": "00:21:23,311",
+      "end_time": "00:21:37,091",
+      "text": "Ví dụ tôi sẽ để là một dòng màu xanh, một dòng màu vàng, một dòng màu gì ạ? Màu tím. Màu tím này. Màu dòng cuối cùng thì tôi sẽ để là màu đỏ."
+    },
+    {
+      "id": 251,
+      "start": 1297.091,
+      "end": 1306.491,
+      "start_time": "00:21:37,091",
+      "end_time": "00:21:46,491",
+      "text": "thì tôi sẽ chọn tất cả. Hoặc là anh chị để như thế này cũng được nhé. Bác sĩ cảnh báo này. Con số huyết áp chưa chắc đã là trái tim khỏe thì anh chị em nhấn"
+    },
+    {
+      "id": 252,
+      "start": 1306.491,
+      "end": 1315.891,
+      "start_time": "00:21:46,491",
+      "end_time": "00:21:55,891",
+      "text": "lưu thôi. Thì sau những cái hình ảnh sau thì chúng ta đều làm như thế nhé. Đều làm một prompt chữ thôi. Bây giờ anh chị xuất thì nó sẽ xuất ra cả cái hình thumbnail này nhé."
+    },
+    {
+      "id": 253,
+      "start": 1315.891,
+      "end": 1324.111,
+      "start_time": "00:21:55,891",
+      "end_time": "00:22:04,111",
+      "text": "Nhiều cô chú ở nhà có máy đo huyết áp, sáng ngủ dậy."
+    },
+    {
+      "id": 254,
+      "start": 1324.231,
+      "end": 1325.311,
+      "start_time": "00:22:04,231",
+      "end_time": "00:22:05,311",
+      "text": "Đấy mở thư mục này."
+    },
+    {
+      "id": 255,
+      "start": 1326.411,
+      "end": 1328.171,
+      "start_time": "00:22:06,411",
+      "end_time": "00:22:08,171",
+      "text": "Thì đây là hình ảnh thumbnail này."
+    },
+    {
+      "id": 256,
+      "start": 1329.491,
+      "end": 1331.671,
+      "start_time": "00:22:09,491",
+      "end_time": "00:22:11,671",
+      "text": "Hình ảnh thumbnail mà chúng ta vừa tạo ra nhé."
+    },
+    {
+      "id": 257,
+      "start": 1331.991,
+      "end": 1333.311,
+      "start_time": "00:22:11,991",
+      "end_time": "00:22:13,311",
+      "text": "Đây là video nhé anh chị em nhé."
+    },
+    {
+      "id": 258,
+      "start": 1334.311,
+      "end": 1336.411,
+      "start_time": "00:22:14,311",
+      "end_time": "00:22:16,411",
+      "text": "Đó, đó là video và thumbnail."
+    },
+    {
+      "id": 259,
+      "start": 1337.171,
+      "end": 1340.971,
+      "start_time": "00:22:17,171",
+      "end_time": "00:22:20,971",
+      "text": "Đây là toàn bộ những cái quy trình sản xuất video sức khỏe nhé anh chị em."
+    },
+    {
+      "id": 260,
+      "start": 1341.191,
+      "end": 1341.431,
+      "start_time": "00:22:21,191",
+      "end_time": "00:22:21,431",
+      "text": "Ok."
+    },
+    {
+      "id": 261,
+      "start": 1342.231,
+      "end": 1343.171,
+      "start_time": "00:22:22,231",
+      "end_time": "00:22:23,171",
+      "text": "Chào anh chị em học viên."
+    }
+  ]
+}

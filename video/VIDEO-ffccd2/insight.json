@@ -1,0 +1,79 @@
+{
+  "sku": "VIDEO-ffccd2",
+  "title": "NGÁCH NHỎ KEY THỊ TRƯỜNG HÀN QUỐC CỰC TRENDS VÀ CẠNH TRANH THẤP",
+  "actual_topic": "Phân tích ngách tin tức Quân sự, Chính trị & Kinh tế Hàn Quốc: Kịch bản bắt trend, lồng tiếng ElevenLabs/Clone và vẽ người que Photoshop",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Bán Content & Phát Triển Kênh",
+  "niche_id": "faceless-general",
+  "target_market": "Hàn Quốc",
+  "market_code": "KR",
+  "key_takeaways": [
+    "Tác giả chia sẻ một ngách đang rất thịnh hành ở thị trường Hàn Quốc, hầu như các kênh mới làm ngách này đều lên view cao.",
+    "Kênh được phân tích mới đăng 42 video nhưng view rất cao, link kênh được để ở phần mô tả để mọi người tham khảo.",
+    "Nội dung kênh là tin tức quân sự, chính trị và cả kinh tế, minh họa bằng hình ảnh AI rồi lồng tiếng lại, có thể dùng Eleven Labs hoặc nhân bản giọng.",
+    "Một kênh khác làm dạng hình ảnh vẽ tay, hợp với người đã có kỹ năng vẽ hoặc làm bên Photoshop; ai không vẽ được thì có thể tạo hình ảnh hoặc video AI rồi ghép lại.",
+    "Điều quan trọng là chất lượng nội dung và kịch bản, phải đưa ra những tin đang trend, đang hot thì nhiều người mới click vào xem."
+  ],
+  "edit_sop": {
+    "primary": "Phân tích kênh ngách tin tức kinh tế, chính trị, quân sự thị trường Hàn Quốc mới lập, view cao",
+    "additional": [
+      "Kênh dạng tin tức dùng hình ảnh AI hoặc hình người que để minh họa rồi lồng tiếng",
+      "Lồng tiếng bằng ElevenLabs hoặc clone giọng",
+      "Người có kỹ năng vẽ, vẽ trên Photoshop thì làm dạng hình người que rất ổn",
+      "Người không vẽ được thì làm ra các hình ảnh AI hoặc video rồi ghép lại với nhau",
+      "Nội dung kịch bản là quan trọng nhất: phải đưa ra tin đang trend, đang hot để nhiều người click xem"
+    ]
+  },
+  "avoid_flags": [
+    "Nếu không có kỹ năng tự vẽ tay trên phần mềm đồ họa thì tránh mất thời gian vẽ thủ công mà nên tạo hình ảnh hoặc video bằng trí tuệ nhân tạo rồi ghép lại",
+    "Tránh chọn những chủ đề tin tức đã nguội lạnh ít người quan tâm vì dạng kênh này phụ thuộc lớn vào kịch bản bám sát các tin tức đang thịnh hành"
+  ],
+  "tools_mentioned": [
+    "Photoshop",
+    "ElevenLabs"
+  ],
+  "channels_mentioned": [
+    "@당신의경제학"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Chia sẻ ngách tin tức đang cực kỳ trend tại thị trường Hàn Quốc"
+    },
+    {
+      "time": "00:31",
+      "seconds": 31,
+      "label": "Phân tích kênh đối thủ mới lập ngày 17/10, đăng 42 video đạt view rất cao"
+    },
+    {
+      "time": "00:42",
+      "seconds": 42,
+      "label": "Khảo sát mục Phổ biến và dịch tiêu đề sang tiếng Việt để nắm chủ đề"
+    },
+    {
+      "time": "00:52",
+      "seconds": 52,
+      "label": "Cách làm dạng tin tức quân sự, chính trị, kinh tế kết hợp ElevenLabs hoặc clone giọng"
+    },
+    {
+      "time": "01:46",
+      "seconds": 106,
+      "label": "Lựa chọn vẽ người que trên Photoshop hoặc ghép ảnh/video AI và chọn tin đang hot"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-ffccd2/transcript.txt",
+  "sop_steps": [
+    "Kênh dạng tin tức dùng hình ảnh AI hoặc hình người que để minh họa rồi lồng tiếng",
+    "Lồng tiếng bằng ElevenLabs hoặc clone giọng",
+    "Người có kỹ năng vẽ, vẽ trên Photoshop thì làm dạng hình người que rất ổn",
+    "Người không vẽ được thì làm ra các hình ảnh AI hoặc video rồi ghép lại với nhau",
+    "Nội dung kịch bản là quan trọng nhất: phải đưa ra tin đang trend, đang hot để nhiều người click xem"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

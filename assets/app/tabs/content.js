@@ -267,9 +267,19 @@ function videoCard(v) {
     ? `<a href="${vUrl}" class="btn-press flex-1 text-center btn-primary text-xs font-bold py-2.5 min-h-[38px] flex items-center justify-center transition-colors">${resume}</a>`
     : `<a href="${vUrl}" class="btn-press flex-1 text-center btn-primary text-xs font-bold py-2.5 min-h-[38px] flex items-center justify-center transition-colors">Xem bài</a>`;
   const rawNiche = v.contentNiche || v.niche || v.category_name || 'Khác';
-  const shortNiche = rawNiche.length > 34
-    ? (nicheKeyFor(rawNiche) || (rawNiche.slice(0, 32) + '…'))
-    : rawNiche;
+  const shortNiche = (() => {
+    const s = String(rawNiche || '').trim();
+    if (s.length <= 36) return s;
+    const noParen = s.replace(/\s*\([^)]*\)/g, '').trim();
+    if (noParen && noParen.length <= 36) return noParen;
+    const parts = (noParen || s).split(/\s*(?:\/|&|—|-)\s*/).filter(Boolean);
+    if (parts.length >= 2) {
+      const two = parts.slice(0, 2).join(' / ');
+      if (two.length <= 36) return two;
+    }
+    if (parts[0] && parts[0].length <= 36) return parts[0];
+    return (noParen || s).slice(0, 34).trim() + '…';
+  })();
   const metaMid = (isDgmd || isHuan)
     ? (v.module_id ? '<span class="text-gray-600">·</span><span class="text-gray-400 font-mono shrink-0" title="' + esc(v.module_title || v.category_name || v.module_id) + '">' + esc(v.module_id) + '</span>' : '')
     : (v.published_at ? '<span class="text-gray-600">·</span><span class="text-gray-400 font-mono shrink-0">' + esc(v.published_at) + '</span>' : '');

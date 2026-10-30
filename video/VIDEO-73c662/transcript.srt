@@ -1,0 +1,1043 @@
+1
+00:00:00,000 --> 00:00:08,160
+Chào anh chị em học viên, hôm nay chúng ta sẽ đến với một chủ đề là sức khỏe. Đây là chủ đề về podcast, podcast về sức khỏe nha anh chị em nha.
+
+2
+00:00:08,320 --> 00:00:16,040
+Thì hôm nay chúng ta sẽ sản xuất như thế nào thì anh chị em có thể tham khảo qua những kênh như thế này và chúng ta có thể tìm từ khóa sức khỏe hoặc tim mạch.
+
+3
+00:00:16,040 --> 00:00:25,260
+Toàn bộ video này thì chúng ta sẽ sản xuất được bằng AI nha anh chị em nha. Thì cách làm như thế nào cũng như tìm nguồn như thế nào thì anh chị có thể xem qua những video phổ biến như thế này.
+
+4
+00:00:26,960 --> 00:00:29,000
+Bệnh lý nền về tiểu đường hoặc cao huyết áp.
+
+5
+00:00:29,000 --> 00:00:37,280
+Ok, thì đây là một trong cái video 11 ngày trước 453.000 view này. Cái chủ đề sức khỏe này thì luôn luôn được người lớn hướng đến và quan tâm. Vậy
+
+6
+00:00:37,280 --> 00:00:45,560
+thì hôm nay chúng ta sẽ làm sao để tạo ra được những cái video như thế này. Ở đây tôi đã có cái công cụ cũng như Master Prompt để tạo ra
+
+7
+00:00:45,560 --> 00:00:53,840
+toàn bộ video như thế này. Hôm nay tôi hướng dẫn anh chị để làm sao để sản xuất ra được video. Nhất quán nhân vật cũng nhất quán giọng nói luôn.
+
+8
+00:00:53,840 --> 00:01:01,940
+Ở đây thì tôi sẽ có công cụ như sau, CapCut, ChatGPT và Veo 3. Nguồn video thì tôi có thể lấy từ Pexels và Pixabay nha anh chị em nha.
+
+9
+00:01:02,000 --> 00:01:09,220
+Ở đây là prompt tạo ảnh thì chúng ta sẽ tạo cái ảnh nền trước. Thì chúng ta sẽ đi đến từng bước 1. Thứ nhất là tạo ảnh nền.
+
+10
+00:01:09,720 --> 00:01:14,980
+Ở đây tôi ghi ảnh nền nè. Thì chúng ta có thể lấy luôn từ trong cái video này nha anh chị em nha.
+
+11
+00:01:14,980 --> 00:01:21,780
+Để tôi tắt bớt đi. Đây là video của họ này. Và chúng ta có thể hoàn toàn lấy được cái hình nền này nha. Và chúng ta sẽ làm lại hoàn toàn.
+
+12
+00:01:21,780 --> 00:01:22,540
+hoàn toàn
+
+13
+00:01:22,540 --> 00:01:23,820
+ở đây khi anh chị
+
+14
+00:01:24,080 --> 00:01:25,880
+lấy một cái hình ảnh nền này của họ này
+
+15
+00:01:26,140 --> 00:01:26,900
+chúng ta sẽ làm như sau
+
+16
+00:01:27,160 --> 00:01:28,180
+anh chị nhấn alt
+
+17
+00:01:28,440 --> 00:01:28,940
+nhé
+
+18
+00:01:29,200 --> 00:01:29,980
+chú ta sẽ chụp cái màn hình
+
+19
+00:01:30,220 --> 00:01:31,260
+tỷ lệ khung hình này vào
+
+20
+00:01:31,500 --> 00:01:32,020
+đây nhé
+
+21
+00:01:32,280 --> 00:01:33,300
+anh chị chụp đúng cho tôi
+
+22
+00:01:33,560 --> 00:01:34,580
+cái khung hình này
+
+23
+00:01:34,941 --> 00:01:37,941
+Là đầy đủ của video của họ nhé.
+
+24
+00:01:37,941 --> 00:01:39,941
+Bây giờ chúng ta sẽ đưa vào ChatGPT này.
+
+25
+00:01:39,941 --> 00:01:41,941
+Anh chị dán vào.
+
+26
+00:01:41,941 --> 00:01:44,941
+Bây giờ chúng ta sẽ copy cái prompt ảnh nền.
+
+27
+00:01:44,941 --> 00:01:45,941
+Anh chị em nhớ này.
+
+28
+00:01:45,941 --> 00:01:46,941
+Dán vào đây.
+
+29
+00:01:46,941 --> 00:01:48,941
+Ở trong cái hình này,
+
+30
+00:01:48,941 --> 00:01:50,941
+khi mà anh chị chụp,
+
+31
+00:01:50,941 --> 00:01:52,941
+nó sẽ có những cái chữ như thế này.
+
+32
+00:01:52,941 --> 00:02:00,541
+Xóa bỏ dòng chữ ở phía dưới đi. Và thêm cho tôi là xóa bỏ
+
+33
+00:02:00,541 --> 00:02:08,141
+dòng chữ. Xóa bỏ dòng chữ này: Cảnh báo những cô chú mắc bệnh lý nền.
+
+34
+00:02:08,141 --> 00:02:16,421
+Bệnh lý
+
+35
+00:02:16,421 --> 00:02:20,141
+Thì bây giờ là anh em nhớ cho tôi nha
+
+36
+00:02:20,141 --> 00:02:24,361
+Thứ nhất là xóa bỏ cho tôi 2 chi tiết trong khung hình bên phải và bên trái
+
+37
+00:02:24,361 --> 00:02:27,661
+Giữ nguyên các khung, thay đổi các khung màu sang màu đỏ
+
+38
+00:02:27,661 --> 00:02:29,021
+Nghĩa là cái khung này này
+
+39
+00:02:29,021 --> 00:02:30,561
+Tôi sẽ thay đổi sang gì ạ?
+
+40
+00:02:30,681 --> 00:02:31,881
+Sang màu đỏ nha anh chị em nha
+
+41
+00:02:31,881 --> 00:02:34,101
+Thay đổi dòng chữ podcast tim mạch
+
+42
+00:02:34,101 --> 00:02:36,341
+Podcast tim mạch nha
+
+43
+00:02:36,341 --> 00:02:37,041
+Sang gì ạ?
+
+44
+00:02:37,041 --> 00:02:42,281
+Ví dụ kênh của tôi, tôi sẽ để là podcast sức khỏe chủ động nhé.
+
+45
+00:02:42,641 --> 00:02:52,561
+Thì anh chị em ví dụ như podcast sức khỏe AI đi, podcast sức khỏe dành cho người lớn, thì anh chị em tạo ra một kênh YouTube thì anh em để tên như thế.
+
+46
+00:02:52,741 --> 00:02:56,821
+Ok, chúng ta sẽ nhấn là tạo ảnh. Anh chị em thêm cho tôi cái lúc tạo hình ảnh nhé là được nhé.
+
+47
+00:02:57,850 --> 00:03:07,363
+Thì bây giờ là dựa trên những cái prompt mà tôi đã gửi cho ChatGPT nó sẽ tạo ra cho tôi một cái hình ảnh khung mà nó sẽ thay đổi cho tôi là ví dụ như khung của
+
+48
+00:03:07,363 --> 00:03:16,877
+họ ấy là anh em thấy là để màu xanh dương đúng không? Thì chúng ta sẽ chuyển sang nó là màu đỏ. Đấy thì nó sẽ khác hoàn toàn phong cách của họ luôn rồi. Cái đoạn
+
+49
+00:03:16,877 --> 00:03:26,390
+này tôi sẽ tour nha cái tạo hình ảnh này nó hơi lâu một tí anh em ạ. Đây nha anh em nha. Sau đó thì ChatGPT nó đã tạo ra cho tôi một cái khung như thế này.
+
+50
+00:03:26,390 --> 00:03:29,950
+Anh chị em nhìn thấy không? Khung màu xanh này.
+
+51
+00:03:30,730 --> 00:03:31,130
+Lưu này.
+
+52
+00:03:33,510 --> 00:03:34,470
+Anh em lưu về nhé.
+
+53
+00:03:35,130 --> 00:03:39,530
+Ở đây thì anh em có thể thay đổi viền ở ngoài khung là sang màu đỏ đều được nhé.
+
+54
+00:03:39,670 --> 00:03:41,210
+Ở đây tôi để luôn cái khung này đi.
+
+55
+00:03:43,590 --> 00:03:49,770
+Sau khi đã có một cái hình nền như thế này rồi, hình nền khung ở trong video rồi thì chúng ta sẽ bắt đầu qua gì ạ?
+
+56
+00:03:50,000 --> 00:03:51,010
+Tạo nhân vật nhé.
+
+57
+00:03:51,450 --> 00:03:53,950
+Ở đây thì tôi sẽ gì ạ? Chụp ảnh cái nhân vật bác sĩ này.
+
+58
+00:03:53,950 --> 00:04:00,617
+Đây nhé, tôi là tiến hành chụp ảnh nhân vật bác sĩ này. Anh chị em nhớ cho tôi bước này nhé. Anh chị
+
+59
+00:04:00,617 --> 00:04:07,283
+em dán vào cho tôi ChatGPT này. Sau đó thì chúng ta sẽ copy cái prompt tạo ảnh nhân vật bác sĩ này nhé.
+
+60
+00:04:07,283 --> 00:04:13,950
+Chúng ta sẽ tạo ra một prompt khác chứ chúng ta không tạo ra nhân vật giống như thế này nữa. Tạo prompt nhé.
+
+61
+00:04:13,950 --> 00:04:16,090
+Nhiều lúc mà ChatGPT của anh chị em
+
+62
+00:04:16,090 --> 00:04:18,170
+Mà nó lỗi thì anh chị em hãy ghi là
+
+63
+00:04:18,170 --> 00:04:20,290
+Tạo prompt nhé, chúng ta không tạo hình ảnh
+
+64
+00:04:20,290 --> 00:04:20,930
+Ở cái bước này
+
+65
+00:04:21,426 --> 00:04:27,326
+Chúng ta sẽ chỉ lấy cái hình ảnh gốc của bác sĩ trong cái video này để chúng ta làm gì ạ?
+
+66
+00:04:27,566 --> 00:04:29,526
+Tạo ra một cái hình ảnh khác.
+
+67
+00:04:35,646 --> 00:04:38,786
+Đây nhé. Sau đó thì anh chị em copy cho tôi cái prompt như thế này nhé.
+
+68
+00:04:38,786 --> 00:04:46,786
+Cố định cho tôi là chúng ta tạo ra prompt nhé. Sau đó chúng ta mở cho tôi một cái đoạn chat mới này. Anh chị em dán vào đây. Nhấn tạo hình ảnh nhé.
+
+69
+00:04:50,026 --> 00:05:03,886
+Chúng ta tạo luôn trên ChatGPT nhé. Tại vì hình ảnh ở trên ChatGPT chúng ta tạo ra rất là nét nha anh chị em. Sau khi chúng ta đã có một cái prompt chúng ta đưa vào đã tạo ra một hình ảnh bác sĩ như thế này rồi nha anh em nhé. Anh em nhấn này. Tải về cho tôi này.
+
+70
+00:05:04,000 --> 00:05:17,426
+Sau khi chúng ta đã có một hình ảnh bác sĩ và một hình ảnh nền như thế này, trong video chúng ta sẽ tiếp tục đến với Master Prompt để tạo ra 100 ý tưởng để cho một kênh sức khỏe của anh chị em.
+
+71
+00:05:17,726 --> 00:05:20,246
+Anh chị em copy cho tôi toàn bộ cái Master Prompt này.
+
+72
+00:05:21,686 --> 00:05:24,586
+Ở phần 2 anh chị em nhấn sao chép này.
+
+73
+00:05:25,286 --> 00:05:28,846
+Sau khi sao chép xong thì chúng ta sẽ mở ra một cái đoạn chat mới như thế này.
+
+74
+00:05:30,650 --> 00:05:39,530
+Tất nhiên là mỗi hình ảnh nó sẽ tạo ra khác nhau nhé. Ví dụ như hình ảnh mà bác sĩ chúng ta vừa tạo ra, anh chị em nhớ cho tôi là chúng ta có thể dùng
+
+75
+00:05:39,530 --> 00:05:48,410
+cho toàn bộ kênh của chúng ta nhé. Chúng ta không thay đổi nhân vật nào nữa cả. Và chúng ta cũng không thay đổi nhân vật bác sĩ ở trong cái kênh cố định của chúng ta cả.
+
+76
+00:05:48,410 --> 00:05:56,950
+Đây là một cái Master Prompt thì tôi đã dựa trên cái công thức của video của họ để tôi viết lại lên ý tưởng kịch bản cho 100 podcast rồi.
+
+77
+00:05:57,070 --> 00:06:06,310
+Thì anh chị em có thể áp dụng vào ví dụ như chúng ta nó sẽ ra hoàn toàn cho anh chị em toàn bộ cái ngách chủ đề sức khỏe khác podcast về sức khỏe khác liên tục nha anh chị em nhé.
+
+78
+00:06:06,430 --> 00:06:08,030
+Chứ nó không giống nhau đó anh chị em nhé.
+
+79
+00:06:08,030 --> 00:06:13,910
+Dưới đây là toàn bộ khung để kể để kênh podcast sức khỏe đi theo cùng phong cách bác sĩ trò chuyện với cô chú này.
+
+80
+00:06:13,910 --> 00:06:20,870
+Thì nó sẽ ra cho chúng ta là phần A này, phần B này, phần B là nhóm 1 nhé.
+
+81
+00:06:21,370 --> 00:06:26,430
+Nhóm 1 nó sẽ ra cho anh chị em đầy đủ 100 ý tưởng podcast về sức khỏe.
+
+82
+00:06:26,570 --> 00:06:28,270
+Từng cái 1 đây này, đây nhé.
+
+83
+00:06:28,670 --> 00:06:30,730
+Anh chị em nhớ cho tôi là 1 này.
+
+84
+00:06:31,350 --> 00:06:32,550
+Nó sẽ ra đến 100.
+
+85
+00:06:32,790 --> 00:06:34,790
+Ý tưởng sau là anh chị em chỉ cần copy cho tôi.
+
+86
+00:06:34,790 --> 00:06:38,770
+Cái này anh chị em dán vào luôn cái phần của podcast này luôn nhé.
+
+87
+00:06:38,830 --> 00:06:39,370
+Anh chị em nhé.
+
+88
+00:06:39,470 --> 00:06:39,830
+4 này.
+
+89
+00:06:40,630 --> 00:06:41,290
+5 này.
+
+90
+00:06:42,850 --> 00:06:44,650
+Nó sẽ ra cho anh chị 100
+
+91
+00:06:44,650 --> 00:06:45,930
+Nhóm 2 tiểu đường nhé
+
+92
+00:06:45,930 --> 00:06:47,330
+Nhóm 1 này
+
+93
+00:06:47,330 --> 00:06:49,670
+Anh chị em nhớ cho tôi là nhóm 1 là
+
+94
+00:06:49,670 --> 00:06:51,330
+Tim mạch, huyết áp, đột quỵ
+
+95
+00:06:51,330 --> 00:06:53,250
+Là 10 chủ đề nhé
+
+96
+00:06:53,250 --> 00:06:55,310
+Nhóm 2 là tiểu đường, đường huyết
+
+97
+00:06:55,310 --> 00:06:57,630
+Và biến chứng là 10 chủ đề nhé
+
+98
+00:06:57,630 --> 00:07:00,030
+Phần 3 là mỡ máu và gan nhiễm mỡ nhé
+
+99
+00:07:00,030 --> 00:07:02,850
+Nó sẽ chia ra cho chúng ta là dựa trên
+
+100
+00:07:02,850 --> 00:07:06,050
+Master Prompt sẽ chia cho 10 nhóm
+
+101
+00:07:06,050 --> 00:07:08,550
+Tim mạch, huyết áp, đột quỵ
+
+102
+00:07:08,550 --> 00:07:10,390
+Nhóm 1 là 10 video
+
+103
+00:07:10,390 --> 00:07:14,050
+Nhóm 2 bắt đầu từ 10
+
+104
+00:07:14,050 --> 00:07:16,050
+Tiểu đường, đường huyết và biến chứng
+
+105
+00:07:16,050 --> 00:07:20,716
+Nhóm 3 là mỡ máu, gan nhiễm mỡ và béo bụng
+
+106
+00:07:20,716 --> 00:07:30,536
+Thì bây giờ là tôi sẽ dừng lại, 29 này, thì tôi sẽ tạm thời, tôi sẽ dừng lại, để nó không viết đến 100 nữa, thì chúng ta sẽ đỡ phần này đi.
+
+107
+00:07:31,236 --> 00:07:41,656
+Đấy là thận, tiểu đêm và phù thận này. Đây là tôi dừng lại nhé. Thì bây giờ là tôi sẽ lấy một phần ở trong cái mục là tim mạch, huyết áp đột quỵ nhé.
+
+108
+00:07:42,000 --> 00:07:51,396
+Anh chị em copy cho tôi. Sau đó anh chị em dán ra đây. Sau đó gửi cho ChatGPT thì bây giờ nó sẽ dựa vào cái tiêu đề hook cũng như đối tượng,
+
+109
+00:07:51,396 --> 00:08:01,136
+người nghe góc cảnh báo, câu chuyện bệnh nhân có thể khai thác này, kiến thức, khoa học cần giải thích này, câu hỏi gợi bình luận này và gợi ý tập tiếp theo.
+
+110
+00:08:01,136 --> 00:08:08,136
+Thì bây giờ là dựa trên một cái tiêu đề podcast ở mục 1 như thế này nó sẽ ra cho anh chị em một kịch bản hoàn chỉnh cho ý tưởng số 1 nhé.
+
+111
+00:08:09,316 --> 00:08:14,276
+Tiêu đề chính này, bác sĩ cảnh báo con số huyết áp đẹp chưa chắc là trái tim đã khỏe.
+
+112
+00:08:14,436 --> 00:08:25,456
+Đấy là tiêu đề nhé, hook mở đầu này, lời chào podcast này, xin kính chào cô chú, các bạn đã lắng nghe podcast sức khỏe chủ động thì chúng ta sẽ có một cái podcast như thế này.
+
+113
+00:08:26,236 --> 00:08:29,136
+Đây là các phần nhé anh chị em nhớ ra rồi nhé.
+
+114
+00:08:29,350 --> 00:08:39,117
+Đây là Hook này. Hook là mở đầu của tất cả video nha anh chị em nha. Sau khi nó đã viết xong cái kịch bản số 1 này, đây nó đã hỏi là anh chị em có
+
+115
+00:08:39,117 --> 00:08:48,883
+muốn viết tiếp kịch bản số 2 không? Thì ở đây chúng ta sẽ ngồi tạo video đã. Thì đây là một cái podcast đầy đủ nha. Tiêu đề chính này, Hook này, lời chào podcast này,
+
+116
+00:08:48,883 --> 00:08:58,650
+vấn đề sức khỏe khiến người nghe phải chú ý này, giải thích vì sao nhiều người đang hiểu sai này. Đó là toàn bộ một cái podcast chi tiết của một cái video của chúng ta nha.
+
+117
+00:08:58,650 --> 00:09:03,000
+Thì ở đây là gì ạ? Chúng ta sẽ bắt đầu lấy từ phần hook này nha anh chị em nha để chúng ta tạo video.
+
+118
+00:09:03,000 --> 00:09:07,970
+Bây giờ chúng ta sẽ đến phần tạo video thì ở đây là giao diện của Veo 3 đấy nha anh chị em nha.
+
+119
+00:09:08,130 --> 00:09:13,150
+Anh chị em nhấn tạo dự án mới này. Sau đó thì anh em nhấn tải cái hình ảnh của bác sĩ lên nha.
+
+120
+00:09:13,690 --> 00:09:19,050
+Chúng ta tải cái hình ảnh của bác sĩ lên trước này. Và bây giờ chúng ta phải nhớ cho tôi những cái bước mà chúng ta sẽ làm gì ạ?
+
+121
+00:09:19,310 --> 00:09:27,870
+Nhất quán giọng nói nhé. Tải hình ảnh bác sĩ lên đầu tiên này. Sau khi tải hình ảnh bác sĩ lên thì chúng ta sẽ nhấn thêm vào câu lệnh nhé.
+
+122
+00:09:27,870 --> 00:09:34,110
+Thì bây giờ là chúng ta sẽ thêm này. Anh em nhấn cho tôi dấu cộng này và nhấn vào giọng nói nhé.
+
+123
+00:09:34,110 --> 00:09:42,850
+thì bây giờ là tôi sẽ sử dụng một giọng nam bất kỳ anh em nhấn vào giọng nói và chúng ta sẽ chọn vào giọng nói
+
+124
+00:09:42,850 --> 00:09:54,110
+và như thế này nhé thì bây giờ là chúng ta sẽ đến với cái phần prompt để tạo video
+
+125
+00:09:54,110 --> 00:09:56,110
+video trên Veo 3 tôi đã để đây nè
+
+126
+00:09:56,110 --> 00:09:59,110
+anh chị em nhớ nhìn cho tôi cái câu thoại đậm nhé
+
+127
+00:09:59,110 --> 00:10:01,110
+mà tôi đã ghi như thế này nhé
+
+128
+00:10:01,110 --> 00:10:03,110
+chúng ta sẽ copy toàn bộ cái prompt này cho tôi
+
+129
+00:10:03,110 --> 00:10:05,110
+copy prompt này nhé
+
+130
+00:10:05,110 --> 00:10:07,110
+sau đó thì anh em dán vào phần này
+
+131
+00:10:07,110 --> 00:10:08,110
+bây giờ là gì ạ
+
+132
+00:10:08,110 --> 00:10:10,110
+chúng ta sẽ dán cái phần câu thoại này
+
+133
+00:10:10,110 --> 00:10:12,666
+câu thoại nhé bắt đầu từ cái hook mở đầu
+
+134
+00:10:12,666 --> 00:10:24,406
+Hook mở đầu 60s, nhiều cô chú sẽ đo huyết áp, chúng ta sẽ copy từng đoạn 1. Video từng đoạn của con Veo 3 chỉ tạo được tầm 8s 1.
+
+135
+00:10:24,406 --> 00:10:33,166
+Nhấn tạo video này, sau đó chúng ta sử dụng lại câu lệnh, nó sẽ có tất cả hình ảnh và giọng nói rồi.
+
+136
+00:10:33,166 --> 00:10:36,326
+Chúng ta chỉ cần copy cho tôi những cái như thế này thôi.
+
+137
+00:10:38,106 --> 00:10:40,766
+Những cái text tiếp theo của cái podcast.
+
+138
+00:10:42,666 --> 00:10:52,966
+Tạo video này. Tiếp theo là con số này. Cái này thì chúng ta làm cũng rất là nhanh nhé, chứ không phải làm lâu đâu. Dán vào đây.
+
+139
+00:10:57,546 --> 00:11:02,226
+Hụt hơi này. Sử dụng lại câu lệnh này. Chúng ta sẽ dán vào đây.
+
+140
+00:11:05,950 --> 00:11:12,750
+Máy đo huyết áp này
+
+141
+00:11:12,750 --> 00:11:24,150
+Tôi sẽ copy đến và trong cái tập podcast ngày hôm nay này
+
+142
+00:11:24,150 --> 00:11:27,470
+Sử dụng lại câu lệnh này
+
+143
+00:11:30,990 --> 00:11:34,790
+Anh chị em nhớ cho tôi là chúng ta sẽ làm chi tiết cho tôi nhé
+
+144
+00:11:34,790 --> 00:11:43,790
+Làm cái sức khỏe này làm cho người lớn xem nên là chúng ta phải làm chi tiết cực kì chi tiết nhé. Dùng lại câu lệnh này.
+
+145
+00:11:43,790 --> 00:11:53,290
+Dán ra đây. Thì bây giờ nó đã ra cho chúng ta một cái video này, hai video này. Cái nào mà
+
+146
+00:11:53,290 --> 00:12:02,790
+không thành công thì anh chị nhớ cho tôi là sử dụng lại câu lệnh này nhé. Nhớ cho tôi là như thế.
+
+147
+00:12:02,790 --> 00:12:12,110
+Nhiều cô chú ở nhà có máy đo huyết áp, sáng ngủ dậy đo một lần, thấy 120 trên 80, chiều đo lại, thấy cũng đẹp.
+
+148
+00:12:14,190 --> 00:12:18,790
+Nhiều cô chú ở nhà có máy đo huyết áp, sáng ngủ dậy đo một lần, thấy một lần.
+
+149
+00:12:20,930 --> 00:12:24,270
+Đây là những cái video mà nó sẽ tạo ra cho chúng ta như thế này.
+
+150
+00:12:24,270 --> 00:12:33,430
+Thế này thì anh chị nhớ là ví dụ như tạo lại này thì anh chị nhớ là đây là cái video podcast của cái phần 2, phần 3, phần 4 nhé.
+
+151
+00:12:33,430 --> 00:12:33,950
+Nhấn.
+
+152
+00:12:34,490 --> 00:12:38,510
+Con số huyết áp đẹp không phải lúc nào cũng có nghĩa là trái tim đang hoàn toàn khỏe.
+
+153
+00:12:38,810 --> 00:12:42,090
+Nếu huyết áp nhìn có vẻ bình thường nhưng cô chú lại thường xuyên chóng mặt.
+
+154
+00:12:43,190 --> 00:12:44,210
+Thế này này.
+
+155
+00:12:44,836 --> 00:12:46,616
+Tôi chỉ lấy một đoạn nha anh chị em.
+
+156
+00:12:49,356 --> 00:12:51,256
+Máy đo huyết áp cho mình một con số.
+
+157
+00:12:56,016 --> 00:13:09,656
+Nhớ cho tôi là anh chị em tạo đầy đủ nhé. Những cái phần này thì chúng ta chỉ tạo mất tầm 10-20 phút thôi. Một ngày chúng ta làm video tầm 2-30 phút đều được nhé. Một ngày chúng ta bỏ ra tầm 2-3 tiếng chúng ta làm 1 video về chủ đề sức khỏe nhé.
+
+158
+00:13:10,000 --> 00:13:19,109
+Tiếp theo là phần gì ạ? Phần chúng ta sẽ tải những video ở Pexels này nha anh chị em nhé. Pexels, Pixabay thì tôi nghĩ là anh chị em hãy tải
+
+159
+00:13:19,109 --> 00:13:28,563
+cho tôi những video liên quan tới ở trên Pexels này nhé. Anh chị em chọn phần video này. Ví dụ như huyết áp này. Những video về sức khỏe này. Nó rất
+
+160
+00:13:28,563 --> 00:13:38,016
+là nhiều nhé. Khi anh chị em nhấn vào một video bất kỳ này, nó sẽ đề xuất ra cho chúng ta rất nhiều video khác liên quan đến huyết áp này.
+
+161
+00:13:38,016 --> 00:13:43,976
+Các bạn nhấn tải xuống, tôi sẽ lấy những video liên quan đến sức khỏe như thế này.
+
+162
+00:13:44,556 --> 00:13:45,236
+Tải xuống này.
+
+163
+00:13:46,176 --> 00:13:47,056
+Đấy anh chị em nhé.
+
+164
+00:13:47,196 --> 00:13:50,856
+Rất nhiều video liên quan đến sức khỏe ở trên cái website này chúng ta lấy.
+
+165
+00:13:51,276 --> 00:13:55,676
+Thì chúng ta sẽ làm, chỉnh sửa làm sao để cho nó phù hợp với chính sách nhé.
+
+166
+00:13:56,050 --> 00:13:59,390
+Anh chị em nhớ cho tôi là anh chị em nhấn vào thì nó sẽ đề xuất ra nhé.
+
+167
+00:14:04,000 --> 00:14:11,850
+Sau đó thì chúng ta sẽ đi vào CapCut nha anh chị em. Đây là giao diện của CapCut này. Đây là trong giao diện edit của CapCut nha anh chị em.
+
+168
+00:14:12,030 --> 00:14:15,750
+Đó chúng ta sẽ thêm này. Thêm các video và những cái hình nền mà.
+
+169
+00:14:18,250 --> 00:14:22,030
+Đấy nhé. Thì bây giờ là gì ạ? Chúng ta sẽ thêm cái hình nền này trước này.
+
+170
+00:14:22,030 --> 00:14:30,030
+Những video này thì đối với cái hình nền của chúng ta như thế này thì anh chị em nhớ cho tôi là khi anh chị em thêm như thế
+
+171
+00:14:30,030 --> 00:14:38,030
+này rồi thì chúng ta sẽ nhấn cho tôi xóa nền nhấn phông xanh chúng ta sẽ không xóa tự động và chúng ta sẽ nhấn xóa phông xanh
+
+172
+00:14:38,030 --> 00:14:46,030
+nhấn vào thì anh em kéo trong đây thì nó sẽ đen 2 cái màu xanh ở giữa đi tiếp theo chúng ta sẽ lấy cái video này xuống đây
+
+173
+00:14:46,030 --> 00:14:48,470
+Nhiều cô chú ở nhà có máy đo huyết áp.
+
+174
+00:14:49,550 --> 00:14:52,990
+Thì tôi sẽ để làm sao để nó cân vào cái chi tiết này.
+
+175
+00:14:54,170 --> 00:14:54,510
+Đấy nhá.
+
+176
+00:14:55,170 --> 00:14:58,110
+Sáng ngủ dậy đo một lần, thấy 120 trên 80.
+
+177
+00:14:59,310 --> 00:15:00,870
+Chiều đo lại, thấy cũng đẹp.
+
+178
+00:15:01,890 --> 00:15:02,190
+Đó.
+
+179
+00:15:03,370 --> 00:15:03,910
+Tách đi này.
+
+180
+00:15:05,270 --> 00:15:06,110
+Con số huyết áp đẹp.
+
+181
+00:15:08,870 --> 00:15:09,430
+Kéo xuống này.
+
+182
+00:15:09,430 --> 00:15:15,690
+con số huyết áp đẹp không phải lúc nào cũng có nghĩa là trái tim
+
+183
+00:15:15,690 --> 00:15:25,590
+anh chị nhớ tôi là chúng ta sẽ thêm như này anh chị copy sang này thì tại vì cái video này đang ở vị trí này đúng không
+
+184
+00:15:25,590 --> 00:15:28,186
+thì chúng ta sẽ kéo một cái video khác xuống này
+
+185
+00:15:28,186 --> 00:15:31,406
+Tim đập bất thường, hụt hơi khi đi bộ, nặng ngực.
+
+186
+00:15:31,406 --> 00:15:39,459
+Tỷ lệ vị trí của nó luôn luôn ở đấy. Nó không di chuyển đi đâu cả. Máy
+
+187
+00:15:39,459 --> 00:15:47,513
+đo huyết áp cho mình một con số, nhưng cơ thể cho mình cả một câu chuyện.
+
+188
+00:15:47,513 --> 00:15:55,566
+Và trong tập podcast hôm nay, chúng ta sẽ cùng nói thật chậm, thật dễ hiểu về chuyện.
+
+189
+00:15:55,566 --> 00:16:01,126
+Vì sao không nên chỉ nhìn một con số huyết áp để kết luận sức khỏe tim mạch của mình?
+
+190
+00:16:01,126 --> 00:16:06,246
+Đó thì bây giờ là tiếp theo là chúng ta sẽ thêm những cái video liên quan đến sức khỏe xuống nhé.
+
+191
+00:16:06,246 --> 00:16:10,426
+Ví dụ như mỗi đoạn thì tôi sẽ để cho nó tua nhanh lên một tí.
+
+192
+00:16:10,426 --> 00:16:13,006
+Đây nhé.
+
+193
+00:16:13,006 --> 00:16:19,886
+Thì khi mà chúng ta thêm như thế này, thêm cái video này vào rồi thì chúng ta kéo làm sao để cho nó vừa ở cái ô này.
+
+194
+00:16:19,886 --> 00:16:21,126
+Nhưng mà tí bây giờ là chúng ta sẽ thêm những video này vào rồi thì chúng ta kéo làm sao để cho nó vừa ở cái ô này.
+
+195
+00:16:21,126 --> 00:16:25,566
+ý là chúng ta sẽ kéo cái hình nền đây
+
+196
+00:16:25,566 --> 00:16:33,186
+Các bạn có thể nhìn thấy hình nền, tỷ lệ sẽ ở dưới hình nền phông xanh của mình nhé.
+
+197
+00:16:35,050 --> 00:16:44,650
+Kéo vào, tỷ lệ video đúng như thế luôn.
+
+198
+00:16:44,650 --> 00:16:54,130
+Chúng ta có thể thêm những hiệu ứng vào đều được.
+
+199
+00:16:54,130 --> 00:17:00,797
+Để không bỏ
+
+200
+00:17:00,797 --> 00:17:07,463
+lỡ những
+
+201
+00:17:07,463 --> 00:17:14,130
+video hấp dẫn
+
+202
+00:17:14,130 --> 00:17:23,110
+Chúng ta sẽ chọn
+
+203
+00:17:29,500 --> 00:17:32,090
+Tiếp theo là chúng ta sẽ chọn văn bản nhé.
+
+204
+00:17:32,090 --> 00:17:33,270
+Chọn phụ đề tự động nhé
+
+205
+00:17:33,270 --> 00:17:41,830
+Anh chị em chọn cho tôi ngôn ngữ nói là tiếng Việt nhé. Anh chị em nhấn tạo ra nhé. Anh chị em nhấn phụ đề ra nhé. Phụ đề tiếng Việt nhé anh chị em.
+
+206
+00:17:43,270 --> 00:17:52,690
+Đấy thì chúng ta sẽ chọn là phông chữ này. Khi mà nó phụ đề ra như thế này rồi nhé. Thì chúng ta sẽ chọn tất cả này. Và bây giờ là anh chị em nhớ cho tôi chọn phông chữ này.
+
+207
+00:17:52,690 --> 00:17:58,070
+Tôi sẽ chọn một phông chữ bất kỳ này, Anton này
+
+208
+00:17:58,070 --> 00:18:07,516
+Chúng ta sẽ làm gì ạ? Chọn cho tôi cái màu chữ, màu đen này
+
+209
+00:18:07,516 --> 00:18:11,616
+Thật chậm, thật dễ hiểu. Nhiều cô chú ở nhà có máy đo huyết áp.
+
+210
+00:18:13,776 --> 00:18:19,616
+Cái nào mà nó thành 2 dòng này nha anh chị em. Anh chị em có thể kéo dài ra tí.
+
+211
+00:18:19,616 --> 00:18:21,976
+Thật chậm
+
+212
+00:18:21,976 --> 00:18:23,976
+Nhìn một con số huyết
+
+213
+00:18:23,976 --> 00:18:26,376
+Nhiều cô chú ở nhà có máy
+
+214
+00:18:26,376 --> 00:18:27,556
+Ok
+
+215
+00:18:27,556 --> 00:18:29,836
+Nhiều cô chú ở nhà
+
+216
+00:18:29,836 --> 00:18:32,396
+Đây là phần sản xuất về video nha anh chị em nha
+
+217
+00:18:32,396 --> 00:18:35,636
+Chúng ta sẽ nghe qua một đoạn về podcast về sức khỏe này
+
+218
+00:18:35,636 --> 00:18:36,556
+Máy đo huyết áp
+
+219
+00:18:36,556 --> 00:18:38,156
+Sáng ngủ dậy đo một lần
+
+220
+00:18:38,156 --> 00:18:39,616
+Thấy 120 trên
+
+221
+00:18:39,616 --> 00:18:49,896
+80. Chiều đo lại, thấy cũng đẹp. Con số huyết áp đẹp không phải lúc nào cũng có nghĩa là trái tim đang hoàn toàn khỏe. Nếu huyết áp nhìn có vẻ bình thường, nhưng cô chú lại thường xuyên chóng mặt.
+
+222
+00:18:50,000 --> 00:18:55,316
+Đấy là về phần video, giờ chúng ta sẽ tiếp tục đi tạo hình ảnh thumbnail nha anh chị em nha.
+
+223
+00:18:55,696 --> 00:18:58,616
+Bây giờ là chúng ta sẽ sử dụng hình ảnh nhân vật này luôn.
+
+224
+00:18:59,076 --> 00:19:05,556
+Bây giờ là chúng ta sẽ trở lại câu lệnh đấy nhưng mà bây giờ là chúng ta sẽ sử dụng chọn phần hình ảnh nha.
+
+225
+00:19:05,776 --> 00:19:08,956
+Chúng ta sẽ không chọn phần video nữa, chọn cho tôi 16.9 này.
+
+226
+00:19:09,436 --> 00:19:14,316
+Bây giờ là trong cái câu prompt tạo hình ảnh thumbnail này anh chị nhớ cho tôi, copy này.
+
+227
+00:19:14,576 --> 00:19:19,096
+Và bây giờ là gì ạ, chúng ta sẽ dán vào cái con Flow này nha, dán vào đây.
+
+228
+00:19:19,916 --> 00:19:22,576
+Người ta sẽ chọn cho tôi là tầm 2 hình ảnh, 3 hình ảnh.
+
+229
+00:19:22,950 --> 00:19:26,270
+2 hình ảnh này, 3 hình ảnh đều được, 2 hình ảnh nhé.
+
+230
+00:19:26,450 --> 00:19:32,710
+Ở đây là cái prompt này, anh em khi nhớ cho tôi là tôi đang để là có cảm giác bị đau cổ nhé.
+
+231
+00:19:32,790 --> 00:19:38,270
+Thì anh em có cảm giác bị đau vai này, đau chân, đau tay này, đau gì đều được nhé anh chị em nhé.
+
+232
+00:19:39,290 --> 00:19:41,230
+Thì anh chị em hãy tạo ra cho tôi như thế.
+
+233
+00:19:42,230 --> 00:19:48,270
+Câu cái prompt tạo ảnh sau ấy, thì anh chị em chỉ cần tải cái hình ảnh mà ở cái bối cảnh bệnh viện này về.
+
+234
+00:19:48,450 --> 00:19:51,130
+Thì chúng ta chỉ có thay đổi là nhân vật là cái gì ạ.
+
+235
+00:19:51,130 --> 00:19:58,950
+Nhân vật này đang có biểu hiện gì thôi. Chứ chúng ta không thay đổi bối cảnh nữa để cho tất cả các thumbnail nhất quán là một bối cảnh bệnh viện đều được.
+
+236
+00:19:58,950 --> 00:20:07,810
+Đây là chúng ta đã có một hình ảnh như thế này đúng không? Tôi sẽ tải một hình ảnh này xuống.
+
+237
+00:20:09,450 --> 00:20:15,210
+Thì bây giờ là gì? Anh chị em nhớ cho tôi là chúng ta có thể thêm luôn ở đây là tạo một hình ảnh.
+
+238
+00:20:15,990 --> 00:20:16,710
+Trên thiết bị nhé.
+
+239
+00:20:17,130 --> 00:20:17,830
+Thêm hình ảnh này.
+
+240
+00:20:18,990 --> 00:20:20,370
+Thêm hình ảnh chúng ta vừa tại về.
+
+241
+00:20:20,890 --> 00:20:21,970
+Chỉnh sửa hình ảnh này.
+
+242
+00:20:24,850 --> 00:20:35,750
+Đây nhé, thì cái hình ảnh này thì chúng ta có thể thêm nhé, ví dụ như thêm dòng chữ này, chúng ta có thể lấy trong cái dòng chữ, ý tưởng của podcast của chúng ta nhé,
+
+243
+00:20:36,430 --> 00:20:41,750
+huyết áp này, bác sĩ cảnh báo này, thêm toàn bộ những cái dòng của tiêu đề này như này vào nhé.
+
+244
+00:20:41,750 --> 00:20:43,590
+Anh chị em dám vào đây.
+
+245
+00:20:43,590 --> 00:20:51,390
+Thì bây giờ là trong cái toàn bộ những cái này thì chúng ta sẽ chọn là phông chữ này Anton này
+
+246
+00:20:51,390 --> 00:20:54,710
+Vẫn là cái phông chữ Anton mà tôi hay dùng nha anh chị em
+
+247
+00:20:54,710 --> 00:20:58,671
+Đó
+
+248
+00:20:58,671 --> 00:21:10,771
+Đó thì bây giờ là gì ạ? Anh chị em sẽ lựa chọn cho tôi là thay đổi cái màu chữ này. Bác sĩ cảnh báo này, ví dụ như dòng bác sĩ cảnh báo này thì tôi sẽ để là màu gì ạ? Tôi sẽ để là màu xanh đi.
+
+249
+00:21:10,771 --> 00:21:22,631
+Thì bây giờ là tôi sẽ lựa chọn là viền nhé. Tô viền của các chữ này đi. Tôi sẽ tô viền sang màu trắng này. Để cho nó sáng hơn.
+
+250
+00:21:23,311 --> 00:21:37,091
+Ví dụ tôi sẽ để là một dòng màu xanh, một dòng màu vàng, một dòng màu gì ạ? Màu tím. Màu tím này. Màu dòng cuối cùng thì tôi sẽ để là màu đỏ.
+
+251
+00:21:37,091 --> 00:21:46,491
+thì tôi sẽ chọn tất cả. Hoặc là anh chị để như thế này cũng được nhé. Bác sĩ cảnh báo này. Con số huyết áp chưa chắc đã là trái tim khỏe thì anh chị em nhấn
+
+252
+00:21:46,491 --> 00:21:55,891
+lưu thôi. Thì sau những cái hình ảnh sau thì chúng ta đều làm như thế nhé. Đều làm một prompt chữ thôi. Bây giờ anh chị xuất thì nó sẽ xuất ra cả cái hình thumbnail này nhé.
+
+253
+00:21:55,891 --> 00:22:04,111
+Nhiều cô chú ở nhà có máy đo huyết áp, sáng ngủ dậy.
+
+254
+00:22:04,231 --> 00:22:05,311
+Đấy mở thư mục này.
+
+255
+00:22:06,411 --> 00:22:08,171
+Thì đây là hình ảnh thumbnail này.
+
+256
+00:22:09,491 --> 00:22:11,671
+Hình ảnh thumbnail mà chúng ta vừa tạo ra nhé.
+
+257
+00:22:11,991 --> 00:22:13,311
+Đây là video nhé anh chị em nhé.
+
+258
+00:22:14,311 --> 00:22:16,411
+Đó, đó là video và thumbnail.
+
+259
+00:22:17,171 --> 00:22:20,971
+Đây là toàn bộ những cái quy trình sản xuất video sức khỏe nhé anh chị em.
+
+260
+00:22:21,191 --> 00:22:21,431
+Ok.
+
+261
+00:22:22,231 --> 00:22:23,171
+Chào anh chị em học viên.

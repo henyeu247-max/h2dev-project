@@ -1,0 +1,2602 @@
+{
+  "sku": "VIDEO-840a95",
+  "duration": 1469.93,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 324,
+  "full_text": "Ở đây sẽ có phần sản xuất nội dung, nó sẽ bao gồm trong phần đấy luôn, nó có cách viết content bằng ChatGPT, cách làm thumbnail bằng ChatGPT bản mới nhất là bản 4o. Hiện tại bên mình đã test và thấy nó khá ưng, nó so với một cái hình mà mình đưa ý tưởng cho nó làm được khoảng 8 trên 10. Phần còn lại là mình sẽ đưa thêm chữ, mình edit thêm bối cảnh một chút nữa, các bạn design làm thì nó sẽ là ok. Ấn vào cách viết content bằng ChatGPT Ok, đây là một tài liệu hoàn toàn mới Tài liệu hoàn toàn mới nhé Đây là cách đào tạo và viết content với ChatGPT Tài liệu này anh em không cần chụp lại Ngay xong phần chia sẻ của mình, mình sẽ gửi ở nhóm cho anh chị em Sẽ có bản tài liệu full, đầy đủ Video này sẽ được update lên sau Ok, quay lại phần kia Phân tích Phân tích, phân tích Chúng ta sẽ dùng các extension ấn vào phần extension bên phải là YouTube Ấn vào YouTube summary Cái này anh em cần này, cái này trong file tài liệu mình cũng có bảo rồi này. Ấn vào. Đó. Đây là cái YouTube Summary with ChatGPT. Cái này là cái mà nó sẽ lấy được content cho mình. Anh em có nhiều cái khác tối ưu hơn thì cũng có thể chia sẻ với anh em trong cộng đồng nhá. Có rất nhiều AI bây giờ nó phát triển cực kỳ nhanh nên là mình bị giới hạn về một tool nào cả. Nó có rất nhiều cái hay. Rồi bây giờ mình dùng cái này cho nó cơ bản vì mình đã giới thiệu ở trong khóa học rồi. Dùng cái này để vào một video. Copy. Kéo kéo xuống, đấy đúng rồi, lấy cái content của họ. Lấy content của họ, đừng dịch sang tiếng Việt, copy cái content đi. Ok, cho bản Word xem nó bao nhiêu từ. Đây là cái phần phân tích, còn tí mới đến phần kia content. Đấy, mở một cái trang này này, là ra đo số từ đây. New, đo từ. Đấy là phần phân tích nhé. Ok, paste vào. Rồi, tìm xem số từ bao nhiêu từ. 40.000 từ À đâu 6.000 chữ trong từ đúng không Tổng ký tự là 40.000 ký tự Ok Thế mình sẽ ra được đây là số lượng từ Một bài để họ làm được một video Với thời lượng là bao nhiêu phút nhỉ Quay lại xem họ làm bao nhiêu phút 40 mấy phút đúng không 44 phút thì nó cần khoảng độ 6.000 từ Thì mình nốt lại 44 phút Tương đương với 6.000 từ Ok khoảng tương đối thôi không chính xác được Về sau mình làm nó sẽ khác Vì mỗi một cái giọng nó sẽ khác nhau Phần này chưa tích vào hoàn thiện vội Vì nó liên quan đến cách viết tí nữa Thì mình phải làm phần nghiên cứu về content ChatGPT Cách viết nữa thì mình tí nữa quay lại phần này mình tích Video lấy nguồn ở đâu, ảnh lấy ở đâu, cách làm Cái dạng này nó không có video đúng không anh em? Nó chỉ có ảnh AI thôi. Thì mình nốt lại luôn được là ảnh làm bằng AI. Một số video họ có dùng những cái ảnh họ chuyển thể thành video thì nó dùng là ảnh chuyển thể sang video bằng AI luôn. Nốt kỹ vào. Ok, tương đối, tích vào đã thành công, đã xong. Giọng đọc, Voiceover thuê ở nền tảng nào? Cái giọng này thì anh em không thể thuê ở trên Fiverr hay Upwork được Với giọng này thuê Fiverr, Upwork rất là đắt Một cái bài này đợt trước bên mình cũng thử thuê rồi Một bài khoảng 1.000 từ họ sẽ lấy giá ít nhất là khoảng 30-50 đô cơ Không có chuyện rẻ hơn đâu Hoặc tìm người rẻ lắm thì khoảng 10-20 đô thôi Mà mình làm tầm 5-6.000 từ thì được Thì chỉ có voice AI thôi Chọn vào Là AI Voice AI thì anh em sẽ có những các nền tảng sau đây này Mình sẽ đề xuất sử dụng, nó gồm là Play.ht và ElevenLabs. Play.ht thì nó có một cái tính năng là Voice Clone, mình thấy nó cũng được khoảng 7 đến 8 phần so với phần Voice của ElevenLabs. ElevenLabs thì chất lượng nó tốt nhất rồi, nhưng mà giá nó hơi cao. Đây là các cái gói cước của họ. Bên GODA bây giờ đang dùng gói cước 2.100 đô là gói Enterprise, custom riêng cho doanh nghiệp. Nó được khoảng 27 triệu credit 1 tháng và mình có thể renew bất cứ lúc nào. Có 1 cái đặc biệt của thằng ElevenLabs anh em nhé. Đăng ký không dùng hết mà trả được gói theo năm ấy. Mình yêu cầu hoàn tiền họ hoàn tiền 100% luôn. Play.ht cũng là nền tảng cũng khá tốt bên mình cũng vẫn đang sử dụng song song nhé. Đấy đúng rồi. Ấn vào playht.io ấy. I.O. ấy, ở lại chấm ht rồi, chấm ht, chấm ht cơ. Ok, ấn đi, search đi, đó kìa, Voice Clone kìa, đấy đấy đấy, nó bên dưới kìa, bên dưới kìa, không không, ngay bên dưới, kéo xuống, đấy, đúng rồi, nó. Đây nhá, đây là giao diện của nó nhá, cái thằng này voice gốc của Voice gốc của nó thì hơi ít nhưng anh em có thể dùng một cái cách này mình thấy khá hay Đó là lấy giọng bên ElevenLabs Dùng thằng này clone sang Anh em quan tâm đi Voice AI họ không đánh bản quyền được đâu Tìm làm sao được mà đánh bản quyền, biết mình dùng ở đâu mà đánh. Mình không dùng mấy mục thương mại hay quảng cáo hay bán sản phẩm thì không sợ. Làm YouTube thôi không sao. Ok, nốt lại. Nhạc nên sử dụng, lấy ở chủ nguồn nào thì cái này sẽ tùy cho chủ đề anh em sẽ chọn. Dạng chủ đề story này thường họ sẽ dùng nhạc nhẹ. Có thể dùng ở studio của YouTube hoặc là Epidemic Sound đều được. Thì đó là cái phần về nhạc. Chúng ta nốt lại. Ok, tiếp đến phần tiếp theo. Tích vào đã hoàn thành. Tiếp theo là số lượng upload đều của các kênh chủ đề. Thì chúng ta sẽ quay lại bảng Dream 100. Quay lại Dream 100. Xem 1 tháng up bao nhiêu video. Chia ra 1 ngày mấy cái. Cái, nguyên tắc là nếu muốn cạnh tranh trong chủ đề thì chúng ta ít nhất phải làm bằng họ hoặc làm hơn họ. Bây giờ làm còn ít hơn, mà làm còn xấu hơn, làm còn chán hơn thì làm sao mà có lợi thế cạnh tranh ở đây. Đó, chúng ta sẽ lấy con số trung bình. Bây giờ kênh cao nhất là họ up 80 video một tháng đúng không? Trong trường hợp này mình đăng ví dụ rất là ít kênh thôi, thì nó khoảng 80 video một tháng. Thì trung bình bây giờ mình mới thôi, mình đặt mục tiêu 2 video một ngày đi. Thì mình sẽ ghi ở đấy là số lượng video bên kia sang bảng phân tích. Mình ghi ra số lượng video upload trong 1 tháng là 80 cái. Cao là 80, ok. Rồi xuống dòng nữa, trung bình ngày là bao nhiêu cái? Trung bình ngày là cho 2 cái đi. Rồi lấy con số tương đối rồi được rồi. 2 đến 3 cái Ok, tích xong, đã hoàn thành Bước tiếp theo, thời lượng của video trung bình Đấy, chúng ta lại quay lại phần phân tích Đấy, phân tích nó chỉ có thế thôi, quay lên làm đi làm lại Nó rất nhàm chán Nhưng đây là cái cách mình hiểu chủ đề Thời lượng trung bình của họ là từ 20 đến 40 phút Thì nốt lại, 20 đến 40 phút Ok, tiếp theo, thẻ tag kênh, thẻ tag video và Category họ đang dùng là gì? Ok, thì bắt đầu mình vào video thôi Vào kênh trước, vào kênh trước xem nào Vào kênh này, thẻ tag kênh không có không Dùng vidIQ check được nhé Anh em có thể dùng một số những cái nền tảng Họ check ra nhưng mình thấy nó cũng không chính xác lắm Nói chung anh em kết hợp nhiều cách để mình tìm Thì cái phần mà Các cái web check thì mình sẽ search ở trên YouTube Nó có một cái phần là... Search YouTube đi, à search trên Google đi. Nó có một cái phần là check YouTube channel tag với video thì là check YouTube video tag là ok. Đấy. Rồi, ấn enter thì có rất nhiều web check ở đây thì anh em cứ tìm và mình test thôi. Tại vì các cái nền tảng này thực tế là cũng do các nhà phát hành bên thứ 3 thôi, không phải của YouTube. Và họ cũng không, thật sự là không bắt kịp với YouTube đâu. Nên là cái sai số đều đương nhiên. vidIQ nó có cái số lượng người dùng data lớn như vậy mà nó vẫn còn sai. Thì anh em biết là làm sao mà đội này nó theo kịp được. Nên anh em mình hãy dùng đa dạng các nền tảng, đa dạng các công cụ để mình dùng, để mình test. Quay lại các kênh mình xem ở kia phần phân tích vidIQ là mình đang nhìn, đang thấy là không có thẻ tag kênh. Cái đặc biệt của dạng chủ đề story là có rất nhiều kênh họ không có thẻ tag kênh, không có thẻ tag video. Câu hỏi đặt ra của anh em là Thế là SEO kiểu gì Cái dạng này bản chất ấy Với content 1 tiếng nó là dạng SEO Content của mình nó là dạng audio Nó không có ảnh mấy Và cái SEO của mình là SEO mô tả SEO hashtag, SEO tiêu đề Và SEO cái nội dung của mình luôn Kéo xuống xem cái phần thẻ tag của họ có không, họ có dùng không, vẫn phải phân tích đủ. Không có đúng không? Video tag, có kìa, 2 cái kìa, họ dùng 2 cái kìa. Channel tag thì không có, video tag thì có. Đây là cách mình nghiên cứu nhé. Thì mình sẽ nốt lại bên kia, sang bên kia là channel tag thì không có, thẻ tag kênh thì không có. Thẻ tag kênh không. Cái này anh em cần nghiên cứu từ nhiều kênh nhé. Tại vì mình nghiên cứu nhiều kênh thì nếu cho chúng ta họ có dùng thẻ tag thì mình sẽ ra được bộ thẻ tag của riêng mình. Tìm các điểm chung từ các kênh đang phát triển tốt và lấy nó về cái phần mà SEO này anh em có thể bắt chước nhau được. SEO giống nhau và 2 kênh lên bình thường. Không cạnh tranh đâu. Cơ chế đề xuất của YouTube là nó sẽ hiểu nội dung mình là cái gì. Sau đó nó sẽ đề xuất video của mình với khán giả. Đề xuất rất là nhiều video giống nhau. Thì 2 kênh mà SEO cùng giống nhau thì nó có tỷ lệ nó sẽ cùng đề xuất với cùng 1 khán giả. Thì mình làm tốt hơn thì mình sẽ ăn view thôi. Không có. Trong trường hợp đây là nó có 2 cái đúng không? 2 cái. Cứ nốt tạm 2 cái ở đấy. Thẻ tag của họ là mình thấy là họ đang để họ băm mỗi cái tiêu đề đó thôi. Cắt nhỏ tiêu đề Tuấn làm việc với mình đủ lâu và đủ hiểu anh em rồi People & Blogs đây là một cách check nhé, anh em check bằng vidIQ nó cũng ra nhé Đôi khi thỉnh thoảng nó không ra thì anh em dùng một cái mẹo khác mình cũng chia sẻ trong khóa học rồi Mình sẽ chia sẻ lại là ấn vào video Bây giờ mình quay lại cái cách check gọi là truyền thống nhất Nhưng mà là cách check mà chuẩn nhất Không phụ thuộc vào tool nào hết Là Ctrl+U Nó sẽ ra cái bảng này và chúng ta Ctrl+F ấn Category Đúng rồi Enter nó sẽ ở dòng thứ 13 ấn Enter cuối cùng Dòng cuối cùng Thứ 13 Đó Thế có đúng đâu Thôi chưa anh em thấy phụ thuộc vào tool Đôi khi là mình không kiểm soát được hết đâu Mình phải check bằng Ctrl+U Cái này mới là chuẩn này Vì nó là data của YouTube Data chuẩn của video Entertainment Thì đấy quay lại sửa Entertainment Cái này anh em nghiên cứu ở nhiều kênh nhá Nhiều kênh thì ra được cái chuẩn nhá Đấy thì mình cứ nốt Nghiên cứu 1 kênh thì nó có dùng thế này, 10 kênh nó dùng thế này Xong rồi mình sửa lại mình ra được cái category chuẩn của mình Bước tiếp theo Cách SEO, cách SEO quay lại SEO của họ nào Vào video nào, xong họ SEO như thế nào SEO thì nó sẽ bao gồm là tiêu đề đúng không, tiêu đề thì mình đã có từ trước rồi, không thay đổi. Phần mô tả thì nó sẽ có những phần SEO thì đây là họ, thông thường thì phần SEO họ sẽ dùng là, Bên mình sẽ viết dùng cái tiêu đề vào phần intro và đưa vào ChatGPT và viết lại mô tả của video dựa trên cái tiêu đề đấy thành một đoạn văn ngắn. Và không cố tình là lặp lại nhiều quá và bên mình cũng không copy tiêu đề quăng vào mô tả đâu. Cách đây là cách thủ công. Vậy nên là có một cái đặc điểm nhận diện của anh em Việt Nam làm. Anh em cứ đi là sẽ thấy copy tiêu đề quăng vào mô tả enter 3 lần. 100% kênh Việt Nam Kênh này Việt Nam Không sai được Đội nước ngoài không bao giờ SEO cái này Rồi bên dưới cái Copyright disclaimer Cái này là luật sử dụng hợp lý Anh em có quăng cái này vào không tác dụng gì Không phải quăng, mất thời gian Cha làm gì Bị bản quyền nhắn mình, mình gửi cho form kháng Mình từng đánh một kênh hơn triệu sub Phải xin Kênh mình có 5.000 sub rồi, ở đấy nó gần 1 triệu sub, đánh cho mùng 4 Tết, mùng 4 Tết đi đánh gậy mình, bực cơ mình. 3h sáng tuần nhắn tin kênh bị đánh 2 gậy xóa mấy video liền. Kháng trong vòng có 10 mấy tiếng rồi, dưới 10 tiếng kênh về bên kia mail xin lỗi. Xin. Mình khẳng định là mình không phải là một người giỏi, quá giỏi về mặt tut trick, không giỏi về quá giỏi về nền tảng. Nhưng mà khi mình nắm rõ được nội dung mình làm chuẩn thì rất là tự tin về việc là mình có thể kháng được. Và mình cũng có thể là hỗ trợ anh em kháng được. Rất nhiều anh em cũng nhắn tin để hỗ trợ mặt gậy này, cộng với là bản quyền là gậy này, cộng với là phần kháng bật kiếm tiền. Gần đây thì anh em kháng về khá là nhiều, đặc biệt dạng story. Nên là cứ mạnh dạn mà làm, không sợ trùng lặp nội dung đâu. Cái lỗi trùng lặp nội dung là cái lỗi dễ kháng nhất, cực kỳ dễ kháng thôi. Phần SEO ở đây họ có mô tả này, thì cái phần này anh em sẽ cần phải xem rất là kỹ, xem nhiều video để mình ra được cái phần SEO của họ. Thì ở các 2 kênh mình đang xem đây thì phần SEO nó chỉ có mô tả này cộng với là thẻ tag thôi chứ nó không có gì cả. Vì thế phần SEO này rất là dễ. Rồi ok nó tích vào đấy. Mình sẽ ghi bên kia bên cái này nó có thẻ hashtag đúng không? Thế nốt lại hashtag sử dụng. Cái bài nó có hashtag đâu. Vừa thấy có 1 cái bài hashtag mà. Nữa đi Bài khác là Đây này Hashtag sử dụng kia Đây Công tin bên dưới kìa Cái dòng này là dòng auto Ở đó ok Đúng được Anh em chỉ nên Anh em chỉ nên sử dụng khoảng 3 hay 4 cái đấy nhỉ, tối đa 4 cái, vì thực tế nào cũng chỉ nhận có 3 cái lên đầu thôi, đừng dùng nhiều, đừng nhớ bị spam ấy. Rồi, hashtag. Hashtag, thì cái này, hashtag mình cứ xem nhiều kênh để xem cái bộ hashtag chung họ dùng là gì. Ok, rồi xuống dòng nữa thì thẻ tag, à thẻ tag có rồi không không? Hashtag kênh, ok, xong, tích, đã xong. Tích phần trên đã xong đó. Tên kênh là gì? Cái này là ý tưởng triển khai kênh thì chúng ta sẽ phân tích và chúng ta sẽ có tên kênh. Thì cái cách đặt tên kênh thì anh em nên đặt một cái tên nó không trùng với nhiều kênh quá. Để làm sao nó có index nó dễ hơn. Và nói liên quan đến chủ đề, ví dụ như ở đây, ý tưởng triển khai kênh này do anh em thôi. Cái này mình có thể dùng ChatGPT nhé, vào ChatGPT đi. Cái câu lệnh nó đơn giản thôi, mình muốn cái gì thì mình đưa nó, kìa đấy thôi. Tôi muốn triển khai một kênh dạng chủ đề Undercover Boss và Undercover CEO. là topic chính. Hãy gợi ý cho tôi khoảng 100 tên kênh, bạn nghĩ có thể phù hợp. Xoạc? Bên mình tìm ý tưởng toàn là ChatGPT tìm hết chứ. Nghĩ làm sao được? Dừng lại đi, dừng lại đi, bạn nói viết bằng tiếng Anh. Tên tiếng Anh Ok Bây giờ việc của mình là chọn những cái tên nó phù hợp thôi Chưa thấy phù hợp được lắm thì thêm Ấn bên dưới Thêm Tale Tale hoặc Story vào tên, Tale và Story, rồi thêm Tales và Story, hoặc Story vào tên kênh, enter, sau. Xong Đó, rất là nhiều tên kênh mình có thể sử dụng Anh em cứ vậy mà dùng thôi Xong bắt đầu mình search cái tên kênh để xem là cái nào nó chưa trùng Nó chưa nhiều kênh dùng quá Đơn giản, hiệu quả Ok, mình sẽ tích tạo một cái tên kênh. Ví dụ ở đây là, quay về bên kia, GODA Tail đây chẳng hạn. Ví dụ như vậy. GODA Story. Nãy tạo kênh GODA Story này, ghi GODA Story vào đấy. Yêu cầu đặc biệt là có từ khóa chủ đề chính. Ví dụ như story thì cần có story, Tales thì cần có Tales này, cộng với các yếu tố còn lại. Như undercover chẳng hạn cũng là một cái tên khá là hay. Vì nó đánh trực tiếp vào cái key của mình. Thì mình đặt tên giống như vậy thì mình sẽ nhanh lên hơn rất là nhiều. Cái này tích vào triển khai xong. Bắt đầu đến một phần này là phần rất là mới. Ý tưởng 10, 30 video đầu tiên là gì? Cái này là một phần đã có rồi nhưng mà chưa có form. Thì lần này mình bổ sung cái phần form này để cho anh em có thể làm nó dễ hơn. Thì ấn vào cái phần kế hoạch nội dung. Tại sao lại phải 10 đến 30 video? Thì ít nhất là mình chạy với ban đầu mình chạy khoảng 1 đến 2 video 1 ngày thì ít nhất cũng phải chạy được 10 đến 1 tháng chứ, mỗi ngày đến 1 tháng chứ. Kế hoạch nội dung mình phải như thế. Sau đó mình bắt đầu mới đo lường và mình có thay đổi để thay đổi. Chứ đừng ngày nay làm sau ngày mai lại sửa, ngày mai làm ngày kia lại sửa. Thì thế là kênh nó loạn hết lên, nó không có định hướng rõ ràng cụ thể. Kệ nó, mình cứ làm đã, sai thì sai cả thế, về sau thấy cái sai rồi thì sửa cả thế. YouTube nó có tính tích lũy, những video mình làm không hay thì kệ nó vẫn để trên kênh đừng xóa đi, nó không phí gì đâu, nó là cái tích lũy của mình ở đấy đấy. ý tưởng trên 2 kênh thì mình sẽ dựa vào cái bảng Dream 100 các video 3 tháng gần đây nhất. Mình sẽ pick các cái tiêu đề đấy và về mình thay đổi đi một chút là được. Thì bây giờ mình sẽ thử 3 video đi. Vậy anh em sẽ tùy theo số lượng kế hoạch của mình. Ví dụ mình đang khoảng độ 2 video 1 ngày chẳng hạn, mục tiêu là mình như vậy. Thì mình sẽ cần khoảng 10 đến 20 video, 10 đến 20 tiêu đề là ok. Thì nó chạy được 5 đến 10 ngày rồi. Phần Dream 100 3 tháng video gần nhất. Copy vào, đưa vào bảng, Shu thôi, đơn giản, hiệu quả. Link tham khảo. Nội dung là cái link mà sau mình viết content ấy. Thì mình cứ làm việc này, mình đưa vào, ưu tiên những video gần đây nhất, trending nhất, nhiều video nhất, làm đã. Họ làm được 10, mình cố gắng, làm được 1, 2 là thành công rồi. Thế thôi. Vì sau nâng cấp dần, nâng cấp dần lên là ngon. Ok, quay lại phần bảng kế hoạch Mình sẽ xong cái phần này, đây là phần form cơ bản để anh em có thể làm được Rồi, tích vào, đã xong Tiếp theo rất là quan trọng. Mình sẽ cạnh tranh với các kênh lớn đã có lượng video, lượng view lớn trong chủ đề bằng cách nào, đâu là lợi thế cạnh tranh của mình. Đây là câu hỏi mình đặt cho các quản lý, các cấp quản lý, các cấp trưởng phòng, phó phòng và giám đốc chiến lược của bên mình khi mà triển khai một kênh. Anh em nào trả lời câu hỏi này một cách rõ ràng nhất thì kênh đấy đánh nhanh lên. Trả lời không rõ ràng được thì đánh kênh cứ tụt thôi. Đây là câu hỏi rất quan trọng. Thì thông qua những phần phân tích vừa rồi thì mình thấy có một cái điểm chung là video của họ là đang up khoảng độ 2 cái đến 3 cái một ngày nhưng không đều. Bây giờ mình chơi một cái bài là số lượng tôi sẽ cạnh tranh bằng 3 video một ngày. Ghi nào? 3 video một ngày. Tuy nhiên với nguồn lực khác nhau của từng người và chúng ta sẽ đặt mục tiêu khác nhau, đặt sự cạnh tranh khác nhau, GODA có một nguồn lực lớn hơn. Và nếu như cần thiết với những chủ đề mà 12 video một ngày bên mình hoàn toàn sản xuất được thì nó là một bài toán khác. Còn với anh em mình sẽ chọn cái mức độ cạnh tranh phù hợp. Cạnh tranh bằng 3 video một ngày, thời lượng video tôi làm hơn họ 30%, họ làm 40 phút, tôi làm 1 tiếng. Cái level sự cạnh tranh cũng sẽ ở đây. Nếu như GODA tự tin vào bất cứ chủ đề nào cũng có thể lên top 1 là ở đây, vì năng lực sản xuất của GODA rất là mạnh. Tiếp theo, chất lượng video. Tôi sẽ nâng cấp chất lượng video bằng cách nào, làm, làm sao để tạo rào cản ở thị trường. Ở đây nó sẽ có cái phần là các kênh kia họ đang dùng những cái ảnh tương tự nhau, nhưng họ chưa áp dụng cái phần chuyển thể ảnh thành video nhiều. Thì tôi sẽ lấy đó làm cái điểm khác biệt của mình. Tôi sẽ chuyển thể, chuyển thể, ảnh thành video ở một phút đầu giới thiệu video. Ở phần intro của anh em đấy. Tùy anh em viết dài viết ngắn. Nhìn cái bảng kế hoạch đã thấy win rồi. Tích vào. Ok, xong. Kế hoạch triển khai nó sẽ bao gồm tất cả những phần bên kia thì anh em sẽ triển khai và nghiên cứu và xong rồi sẽ phân tích vào đây. Ok, tích vào đã thành công. Xong. Vậy thì đã xong cái bảng kế hoạch triển khai kênh. Cái phần đấy tí nữa quay lại triển khai tiếp. Quay lại slide. Xong phần kế hoạch triển khai kênh Dành cho chúng ta một tràng pháo tay vì đã làm xong điều này Cái bảng kế hoạch triển khai kênh nó rất là nhìn thì nó nhanh đấy thôi nhưng anh em làm có thể mất nửa tháng đấy Ok Rồi, dành cho quy trình này một tràng pháo tay lớn hơn nào",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 11.12,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:11,120",
+      "text": "Ở đây sẽ có phần sản xuất nội dung, nó sẽ bao gồm trong phần đấy luôn, nó có cách viết content bằng ChatGPT, cách làm thumbnail bằng ChatGPT bản mới nhất là bản 4o."
+    },
+    {
+      "id": 2,
+      "start": 12.16,
+      "end": 20.4,
+      "start_time": "00:00:12,160",
+      "end_time": "00:00:20,400",
+      "text": "Hiện tại bên mình đã test và thấy nó khá ưng, nó so với một cái hình mà mình đưa ý tưởng cho nó làm được khoảng 8 trên 10."
+    },
+    {
+      "id": 3,
+      "start": 20.96,
+      "end": 27.88,
+      "start_time": "00:00:20,960",
+      "end_time": "00:00:27,880",
+      "text": "Phần còn lại là mình sẽ đưa thêm chữ, mình edit thêm bối cảnh một chút nữa, các bạn design làm thì nó sẽ là ok."
+    },
+    {
+      "id": 4,
+      "start": 27.88,
+      "end": 31.02,
+      "start_time": "00:00:27,880",
+      "end_time": "00:00:31,020",
+      "text": "Ấn vào cách viết content bằng ChatGPT"
+    },
+    {
+      "id": 5,
+      "start": 31.02,
+      "end": 39.22,
+      "start_time": "00:00:31,020",
+      "end_time": "00:00:39,220",
+      "text": "Ok, đây là một tài liệu hoàn toàn mới"
+    },
+    {
+      "id": 6,
+      "start": 39.22,
+      "end": 41.02,
+      "start_time": "00:00:39,220",
+      "end_time": "00:00:41,020",
+      "text": "Tài liệu hoàn toàn mới nhé"
+    },
+    {
+      "id": 7,
+      "start": 41.02,
+      "end": 45.34,
+      "start_time": "00:00:41,020",
+      "end_time": "00:00:45,340",
+      "text": "Đây là cách đào tạo và viết content với ChatGPT"
+    },
+    {
+      "id": 8,
+      "start": 45.34,
+      "end": 47.64,
+      "start_time": "00:00:45,340",
+      "end_time": "00:00:47,640",
+      "text": "Tài liệu này anh em không cần chụp lại"
+    },
+    {
+      "id": 9,
+      "start": 47.64,
+      "end": 51.28,
+      "start_time": "00:00:47,640",
+      "end_time": "00:00:51,280",
+      "text": "Ngay xong phần chia sẻ của mình, mình sẽ gửi ở nhóm cho anh chị em"
+    },
+    {
+      "id": 10,
+      "start": 51.28,
+      "end": 53.9,
+      "start_time": "00:00:51,280",
+      "end_time": "00:00:53,900",
+      "text": "Sẽ có bản tài liệu full, đầy đủ"
+    },
+    {
+      "id": 11,
+      "start": 53.9,
+      "end": 56.68,
+      "start_time": "00:00:53,900",
+      "end_time": "00:00:56,680",
+      "text": "Video này sẽ được update lên sau"
+    },
+    {
+      "id": 12,
+      "start": 56.68,
+      "end": 59.02,
+      "start_time": "00:00:56,680",
+      "end_time": "00:00:59,020",
+      "text": "Ok, quay lại phần kia"
+    },
+    {
+      "id": 13,
+      "start": 59.02,
+      "end": 60.8,
+      "start_time": "00:00:59,020",
+      "end_time": "00:01:00,800",
+      "text": "Phân tích"
+    },
+    {
+      "id": 14,
+      "start": 60.8,
+      "end": 63.0,
+      "start_time": "00:01:00,800",
+      "end_time": "00:01:03,000",
+      "text": "Phân tích, phân tích"
+    },
+    {
+      "id": 15,
+      "start": 63.0,
+      "end": 69.06,
+      "start_time": "00:01:03,000",
+      "end_time": "00:01:09,060",
+      "text": "Chúng ta sẽ dùng các extension ấn vào phần extension bên phải là YouTube"
+    },
+    {
+      "id": 16,
+      "start": 69.06,
+      "end": 70.72,
+      "start_time": "00:01:09,060",
+      "end_time": "00:01:10,720",
+      "text": "Ấn vào"
+    },
+    {
+      "id": 17,
+      "start": 70.72,
+      "end": 72.8,
+      "start_time": "00:01:10,720",
+      "end_time": "00:01:12,800",
+      "text": "YouTube summary"
+    },
+    {
+      "id": 18,
+      "start": 72.8,
+      "end": 76.72,
+      "start_time": "00:01:12,800",
+      "end_time": "00:01:16,720",
+      "text": "Cái này anh em cần này, cái này trong file tài liệu mình cũng có bảo rồi này."
+    },
+    {
+      "id": 19,
+      "start": 77.5,
+      "end": 77.82,
+      "start_time": "00:01:17,500",
+      "end_time": "00:01:17,820",
+      "text": "Ấn vào."
+    },
+    {
+      "id": 20,
+      "start": 79.18,
+      "end": 79.46,
+      "start_time": "00:01:19,180",
+      "end_time": "00:01:19,460",
+      "text": "Đó."
+    },
+    {
+      "id": 21,
+      "start": 80.18,
+      "end": 82.26,
+      "start_time": "00:01:20,180",
+      "end_time": "00:01:22,260",
+      "text": "Đây là cái YouTube Summary with ChatGPT."
+    },
+    {
+      "id": 22,
+      "start": 82.44,
+      "end": 84.54,
+      "start_time": "00:01:22,440",
+      "end_time": "00:01:24,540",
+      "text": "Cái này là cái mà nó sẽ lấy được content cho mình."
+    },
+    {
+      "id": 23,
+      "start": 84.977,
+      "end": 88.457,
+      "start_time": "00:01:24,977",
+      "end_time": "00:01:28,457",
+      "text": "Anh em có nhiều cái khác tối ưu hơn thì cũng có thể chia sẻ với anh em trong cộng đồng nhá."
+    },
+    {
+      "id": 24,
+      "start": 89.157,
+      "end": 93.657,
+      "start_time": "00:01:29,157",
+      "end_time": "00:01:33,657",
+      "text": "Có rất nhiều AI bây giờ nó phát triển cực kỳ nhanh nên là mình bị giới hạn về một tool nào cả."
+    },
+    {
+      "id": 25,
+      "start": 94.177,
+      "end": 95.017,
+      "start_time": "00:01:34,177",
+      "end_time": "00:01:35,017",
+      "text": "Nó có rất nhiều cái hay."
+    },
+    {
+      "id": 26,
+      "start": 95.997,
+      "end": 98.737,
+      "start_time": "00:01:35,997",
+      "end_time": "00:01:38,737",
+      "text": "Rồi bây giờ mình dùng cái này cho nó cơ bản vì mình đã giới thiệu ở trong khóa học rồi."
+    },
+    {
+      "id": 27,
+      "start": 99.777,
+      "end": 100.837,
+      "start_time": "00:01:39,777",
+      "end_time": "00:01:40,837",
+      "text": "Dùng cái này để vào một video."
+    },
+    {
+      "id": 28,
+      "start": 103.497,
+      "end": 103.777,
+      "start_time": "00:01:43,497",
+      "end_time": "00:01:43,777",
+      "text": "Copy."
+    },
+    {
+      "id": 29,
+      "start": 103.777,
+      "end": 106.337,
+      "start_time": "00:01:43,777",
+      "end_time": "00:01:46,337",
+      "text": "Kéo kéo xuống, đấy đúng rồi, lấy cái content của họ."
+    },
+    {
+      "id": 30,
+      "start": 109.617,
+      "end": 112.097,
+      "start_time": "00:01:49,617",
+      "end_time": "00:01:52,097",
+      "text": "Lấy content của họ, đừng dịch sang tiếng Việt, copy cái content đi."
+    },
+    {
+      "id": 31,
+      "start": 113.277,
+      "end": 115.077,
+      "start_time": "00:01:53,277",
+      "end_time": "00:01:55,077",
+      "text": "Ok, cho bản Word xem nó bao nhiêu từ."
+    },
+    {
+      "id": 32,
+      "start": 116.797,
+      "end": 119.177,
+      "start_time": "00:01:56,797",
+      "end_time": "00:01:59,177",
+      "text": "Đây là cái phần phân tích, còn tí mới đến phần kia content."
+    },
+    {
+      "id": 33,
+      "start": 121.497,
+      "end": 124.177,
+      "start_time": "00:02:01,497",
+      "end_time": "00:02:04,177",
+      "text": "Đấy, mở một cái trang này này, là ra đo số từ đây."
+    },
+    {
+      "id": 34,
+      "start": 125.117,
+      "end": 126.937,
+      "start_time": "00:02:05,117",
+      "end_time": "00:02:06,937",
+      "text": "New, đo từ."
+    },
+    {
+      "id": 35,
+      "start": 127.477,
+      "end": 128.257,
+      "start_time": "00:02:07,477",
+      "end_time": "00:02:08,257",
+      "text": "Đấy là phần phân tích nhé."
+    },
+    {
+      "id": 36,
+      "start": 130.337,
+      "end": 131.297,
+      "start_time": "00:02:10,337",
+      "end_time": "00:02:11,297",
+      "text": "Ok, paste vào."
+    },
+    {
+      "id": 37,
+      "start": 132.117,
+      "end": 133.177,
+      "start_time": "00:02:12,117",
+      "end_time": "00:02:13,177",
+      "text": "Rồi, tìm xem số từ bao nhiêu từ."
+    },
+    {
+      "id": 38,
+      "start": 133.177,
+      "end": 135.537,
+      "start_time": "00:02:13,177",
+      "end_time": "00:02:15,537",
+      "text": "40.000 từ"
+    },
+    {
+      "id": 39,
+      "start": 135.537,
+      "end": 137.817,
+      "start_time": "00:02:15,537",
+      "end_time": "00:02:17,817",
+      "text": "À đâu 6.000 chữ trong từ đúng không"
+    },
+    {
+      "id": 40,
+      "start": 137.817,
+      "end": 139.717,
+      "start_time": "00:02:17,817",
+      "end_time": "00:02:19,717",
+      "text": "Tổng ký tự là 40.000 ký tự"
+    },
+    {
+      "id": 41,
+      "start": 139.717,
+      "end": 141.137,
+      "start_time": "00:02:19,717",
+      "end_time": "00:02:21,137",
+      "text": "Ok"
+    },
+    {
+      "id": 42,
+      "start": 141.137,
+      "end": 143.317,
+      "start_time": "00:02:21,137",
+      "end_time": "00:02:23,317",
+      "text": "Thế mình sẽ ra được đây là số lượng từ"
+    },
+    {
+      "id": 43,
+      "start": 143.317,
+      "end": 145.497,
+      "start_time": "00:02:23,317",
+      "end_time": "00:02:25,497",
+      "text": "Một bài để họ làm được một video"
+    },
+    {
+      "id": 44,
+      "start": 145.497,
+      "end": 146.697,
+      "start_time": "00:02:25,497",
+      "end_time": "00:02:26,697",
+      "text": "Với thời lượng là bao nhiêu phút nhỉ"
+    },
+    {
+      "id": 45,
+      "start": 146.697,
+      "end": 147.977,
+      "start_time": "00:02:26,697",
+      "end_time": "00:02:27,977",
+      "text": "Quay lại xem họ làm bao nhiêu phút"
+    },
+    {
+      "id": 46,
+      "start": 147.977,
+      "end": 148.897,
+      "start_time": "00:02:27,977",
+      "end_time": "00:02:28,897",
+      "text": "40 mấy phút đúng không"
+    },
+    {
+      "id": 47,
+      "start": 148.897,
+      "end": 153.097,
+      "start_time": "00:02:28,897",
+      "end_time": "00:02:33,097",
+      "text": "44 phút thì nó cần khoảng độ 6.000 từ"
+    },
+    {
+      "id": 48,
+      "start": 153.097,
+      "end": 153.717,
+      "start_time": "00:02:33,097",
+      "end_time": "00:02:33,717",
+      "text": "Thì mình nốt lại"
+    },
+    {
+      "id": 49,
+      "start": 153.777,
+      "end": 164.717,
+      "start_time": "00:02:33,777",
+      "end_time": "00:02:44,717",
+      "text": "44 phút"
+    },
+    {
+      "id": 50,
+      "start": 164.717,
+      "end": 165.777,
+      "start_time": "00:02:44,717",
+      "end_time": "00:02:45,777",
+      "text": "Tương đương với"
+    },
+    {
+      "id": 51,
+      "start": 165.777,
+      "end": 167.277,
+      "start_time": "00:02:45,777",
+      "end_time": "00:02:47,277",
+      "text": "6.000 từ"
+    },
+    {
+      "id": 52,
+      "start": 167.277,
+      "end": 169.657,
+      "start_time": "00:02:47,277",
+      "end_time": "00:02:49,657",
+      "text": "Ok khoảng tương đối thôi không chính xác được"
+    },
+    {
+      "id": 53,
+      "start": 169.657,
+      "end": 171.257,
+      "start_time": "00:02:49,657",
+      "end_time": "00:02:51,257",
+      "text": "Về sau mình làm nó sẽ khác"
+    },
+    {
+      "id": 54,
+      "start": 171.257,
+      "end": 172.617,
+      "start_time": "00:02:51,257",
+      "end_time": "00:02:52,617",
+      "text": "Vì mỗi một cái giọng nó sẽ khác nhau"
+    },
+    {
+      "id": 55,
+      "start": 173.377,
+      "end": 176.517,
+      "start_time": "00:02:53,377",
+      "end_time": "00:02:56,517",
+      "text": "Phần này chưa tích vào hoàn thiện vội"
+    },
+    {
+      "id": 56,
+      "start": 176.517,
+      "end": 180.317,
+      "start_time": "00:02:56,517",
+      "end_time": "00:03:00,317",
+      "text": "Vì nó liên quan đến cách viết tí nữa"
+    },
+    {
+      "id": 57,
+      "start": 180.317,
+      "end": 183.317,
+      "start_time": "00:03:00,317",
+      "end_time": "00:03:03,317",
+      "text": "Thì mình phải làm phần nghiên cứu về content ChatGPT"
+    },
+    {
+      "id": 58,
+      "start": 183.317,
+      "end": 185.577,
+      "start_time": "00:03:03,317",
+      "end_time": "00:03:05,577",
+      "text": "Cách viết nữa thì mình tí nữa quay lại phần này mình tích"
+    },
+    {
+      "id": 59,
+      "start": 185.577,
+      "end": 188.697,
+      "start_time": "00:03:05,577",
+      "end_time": "00:03:08,697",
+      "text": "Video lấy nguồn ở đâu, ảnh lấy ở đâu, cách làm"
+    },
+    {
+      "id": 60,
+      "start": 189.2,
+      "end": 195.48,
+      "start_time": "00:03:09,200",
+      "end_time": "00:03:15,480",
+      "text": "Cái dạng này nó không có video đúng không anh em? Nó chỉ có ảnh AI thôi. Thì mình nốt lại luôn được là ảnh làm bằng AI."
+    },
+    {
+      "id": 61,
+      "start": 203.92,
+      "end": 211.76,
+      "start_time": "00:03:23,920",
+      "end_time": "00:03:31,760",
+      "text": "Một số video họ có dùng những cái ảnh họ chuyển thể thành video thì nó dùng là ảnh chuyển thể sang video bằng AI luôn. Nốt kỹ vào."
+    },
+    {
+      "id": 62,
+      "start": 219.2,
+      "end": 225.0,
+      "start_time": "00:03:39,200",
+      "end_time": "00:03:45,000",
+      "text": "Ok, tương đối, tích vào đã thành công, đã xong."
+    },
+    {
+      "id": 63,
+      "start": 225.0,
+      "end": 229.3,
+      "start_time": "00:03:45,000",
+      "end_time": "00:03:49,300",
+      "text": "Giọng đọc, Voiceover thuê ở nền tảng nào?"
+    },
+    {
+      "id": 64,
+      "start": 229.3,
+      "end": 233.4,
+      "start_time": "00:03:49,300",
+      "end_time": "00:03:53,400",
+      "text": "Cái giọng này thì anh em không thể thuê ở trên Fiverr hay Upwork được"
+    },
+    {
+      "id": 65,
+      "start": 233.4,
+      "end": 235.14,
+      "start_time": "00:03:53,400",
+      "end_time": "00:03:55,140",
+      "text": "Với giọng này thuê Fiverr, Upwork rất là đắt"
+    },
+    {
+      "id": 66,
+      "start": 235.14,
+      "end": 237.92,
+      "start_time": "00:03:55,140",
+      "end_time": "00:03:57,920",
+      "text": "Một cái bài này đợt trước bên mình cũng thử thuê rồi"
+    },
+    {
+      "id": 67,
+      "start": 237.92,
+      "end": 243.62,
+      "start_time": "00:03:57,920",
+      "end_time": "00:04:03,620",
+      "text": "Một bài khoảng 1.000 từ họ sẽ lấy giá ít nhất là khoảng 30-50 đô cơ"
+    },
+    {
+      "id": 68,
+      "start": 243.62,
+      "end": 244.6,
+      "start_time": "00:04:03,620",
+      "end_time": "00:04:04,600",
+      "text": "Không có chuyện rẻ hơn đâu"
+    },
+    {
+      "id": 69,
+      "start": 244.6,
+      "end": 247.14,
+      "start_time": "00:04:04,600",
+      "end_time": "00:04:07,140",
+      "text": "Hoặc tìm người rẻ lắm thì khoảng 10-20 đô thôi"
+    },
+    {
+      "id": 70,
+      "start": 247.14,
+      "end": 249.3,
+      "start_time": "00:04:07,140",
+      "end_time": "00:04:09,300",
+      "text": "Mà mình làm tầm 5-6.000 từ thì được"
+    },
+    {
+      "id": 71,
+      "start": 249.3,
+      "end": 251.44,
+      "start_time": "00:04:09,300",
+      "end_time": "00:04:11,440",
+      "text": "Thì chỉ có voice AI thôi"
+    },
+    {
+      "id": 72,
+      "start": 251.44,
+      "end": 253.08,
+      "start_time": "00:04:11,440",
+      "end_time": "00:04:13,080",
+      "text": "Chọn vào"
+    },
+    {
+      "id": 73,
+      "start": 253.08,
+      "end": 254.78,
+      "start_time": "00:04:13,080",
+      "end_time": "00:04:14,780",
+      "text": "Là AI"
+    },
+    {
+      "id": 74,
+      "start": 254.78,
+      "end": 258.207,
+      "start_time": "00:04:14,780",
+      "end_time": "00:04:18,207",
+      "text": "Voice AI thì anh em sẽ có những các nền tảng sau đây này"
+    },
+    {
+      "id": 75,
+      "start": 258.207,
+      "end": 267.647,
+      "start_time": "00:04:18,207",
+      "end_time": "00:04:27,647",
+      "text": "Mình sẽ đề xuất sử dụng, nó gồm là Play.ht và ElevenLabs. Play.ht thì nó có một cái tính năng là Voice Clone, mình thấy nó"
+    },
+    {
+      "id": 76,
+      "start": 267.647,
+      "end": 277.087,
+      "start_time": "00:04:27,647",
+      "end_time": "00:04:37,087",
+      "text": "cũng được khoảng 7 đến 8 phần so với phần Voice của ElevenLabs. ElevenLabs thì chất lượng nó tốt nhất rồi, nhưng mà giá nó hơi cao."
+    },
+    {
+      "id": 77,
+      "start": 277.947,
+      "end": 287.287,
+      "start_time": "00:04:37,947",
+      "end_time": "00:04:47,287",
+      "text": "Đây là các cái gói cước của họ. Bên GODA bây giờ đang dùng gói cước 2.100 đô là gói Enterprise, custom riêng cho doanh nghiệp."
+    },
+    {
+      "id": 78,
+      "start": 288.207,
+      "end": 294.087,
+      "start_time": "00:04:48,207",
+      "end_time": "00:04:54,087",
+      "text": "Nó được khoảng 27 triệu credit 1 tháng và mình có thể renew bất cứ lúc nào."
+    },
+    {
+      "id": 79,
+      "start": 295.707,
+      "end": 298.307,
+      "start_time": "00:04:55,707",
+      "end_time": "00:04:58,307",
+      "text": "Có 1 cái đặc biệt của thằng ElevenLabs anh em nhé."
+    },
+    {
+      "id": 80,
+      "start": 298.827,
+      "end": 301.147,
+      "start_time": "00:04:58,827",
+      "end_time": "00:05:01,147",
+      "text": "Đăng ký không dùng hết mà trả được gói theo năm ấy."
+    },
+    {
+      "id": 81,
+      "start": 301.707,
+      "end": 303.447,
+      "start_time": "00:05:01,707",
+      "end_time": "00:05:03,447",
+      "text": "Mình yêu cầu hoàn tiền họ hoàn tiền 100% luôn."
+    },
+    {
+      "id": 82,
+      "start": 307.187,
+      "end": 311.627,
+      "start_time": "00:05:07,187",
+      "end_time": "00:05:11,627",
+      "text": "Play.ht cũng là nền tảng cũng khá tốt bên mình cũng vẫn đang sử dụng song song nhé."
+    },
+    {
+      "id": 83,
+      "start": 313.987,
+      "end": 314.767,
+      "start_time": "00:05:13,987",
+      "end_time": "00:05:14,767",
+      "text": "Đấy đúng rồi."
+    },
+    {
+      "id": 84,
+      "start": 315.947,
+      "end": 316.927,
+      "start_time": "00:05:15,947",
+      "end_time": "00:05:16,927",
+      "text": "Ấn vào playht.io ấy."
+    },
+    {
+      "id": 85,
+      "start": 316.927,
+      "end": 326.027,
+      "start_time": "00:05:16,927",
+      "end_time": "00:05:26,027",
+      "text": "I.O. ấy, ở lại chấm ht rồi, chấm ht, chấm ht cơ."
+    },
+    {
+      "id": 86,
+      "start": 326.027,
+      "end": 328.827,
+      "start_time": "00:05:26,027",
+      "end_time": "00:05:28,827",
+      "text": "Ok, ấn đi, search đi, đó kìa, Voice Clone kìa,"
+    },
+    {
+      "id": 87,
+      "start": 328.827,
+      "end": 332.227,
+      "start_time": "00:05:28,827",
+      "end_time": "00:05:32,227",
+      "text": "đấy đấy đấy, nó bên dưới kìa, bên dưới kìa, không không,"
+    },
+    {
+      "id": 88,
+      "start": 332.227,
+      "end": 335.127,
+      "start_time": "00:05:32,227",
+      "end_time": "00:05:35,127",
+      "text": "ngay bên dưới, kéo xuống, đấy, đúng rồi, nó."
+    },
+    {
+      "id": 89,
+      "start": 335.127,
+      "end": 337.127,
+      "start_time": "00:05:35,127",
+      "end_time": "00:05:37,127",
+      "text": "Đây nhá, đây là giao diện của nó nhá, cái thằng này voice gốc của"
+    },
+    {
+      "id": 90,
+      "start": 337.127,
+      "end": 341.827,
+      "start_time": "00:05:37,127",
+      "end_time": "00:05:41,827",
+      "text": "Voice gốc của nó thì hơi ít nhưng anh em có thể dùng một cái cách này mình thấy khá hay"
+    },
+    {
+      "id": 91,
+      "start": 341.827,
+      "end": 344.427,
+      "start_time": "00:05:41,827",
+      "end_time": "00:05:44,427",
+      "text": "Đó là lấy giọng bên ElevenLabs"
+    },
+    {
+      "id": 92,
+      "start": 344.427,
+      "end": 345.927,
+      "start_time": "00:05:44,427",
+      "end_time": "00:05:45,927",
+      "text": "Dùng thằng này clone sang"
+    },
+    {
+      "id": 93,
+      "start": 345.927,
+      "end": 348.7,
+      "start_time": "00:05:45,927",
+      "end_time": "00:05:48,700",
+      "text": "Anh em quan tâm đi Voice AI họ không đánh bản quyền được đâu"
+    },
+    {
+      "id": 94,
+      "start": 348.7,
+      "end": 357.9,
+      "start_time": "00:05:48,700",
+      "end_time": "00:05:57,900",
+      "text": "Tìm làm sao được mà đánh bản quyền, biết mình dùng ở đâu mà đánh. Mình không dùng mấy mục thương mại hay quảng cáo hay bán sản phẩm thì không sợ. Làm YouTube thôi không sao."
+    },
+    {
+      "id": 95,
+      "start": 359.0,
+      "end": 367.16,
+      "start_time": "00:05:59,000",
+      "end_time": "00:06:07,160",
+      "text": "Ok, nốt lại. Nhạc nên sử dụng, lấy ở chủ nguồn nào thì cái này sẽ tùy cho chủ đề anh em sẽ chọn."
+    },
+    {
+      "id": 96,
+      "start": 367.16,
+      "end": 375.08,
+      "start_time": "00:06:07,160",
+      "end_time": "00:06:15,080",
+      "text": "Dạng chủ đề story này thường họ sẽ dùng nhạc nhẹ. Có thể dùng ở studio của YouTube hoặc là Epidemic Sound đều được."
+    },
+    {
+      "id": 97,
+      "start": 375.08,
+      "end": 377.32,
+      "start_time": "00:06:15,080",
+      "end_time": "00:06:17,320",
+      "text": "Thì đó là cái phần về nhạc."
+    },
+    {
+      "id": 98,
+      "start": 378.2,
+      "end": 378.74,
+      "start_time": "00:06:18,200",
+      "end_time": "00:06:18,740",
+      "text": "Chúng ta nốt lại."
+    },
+    {
+      "id": 99,
+      "start": 390.16,
+      "end": 391.58,
+      "start_time": "00:06:30,160",
+      "end_time": "00:06:31,580",
+      "text": "Ok, tiếp đến phần tiếp theo."
+    },
+    {
+      "id": 100,
+      "start": 391.94,
+      "end": 392.78,
+      "start_time": "00:06:31,940",
+      "end_time": "00:06:32,780",
+      "text": "Tích vào đã hoàn thành."
+    },
+    {
+      "id": 101,
+      "start": 394.28,
+      "end": 397.1,
+      "start_time": "00:06:34,280",
+      "end_time": "00:06:37,100",
+      "text": "Tiếp theo là số lượng upload đều của các kênh chủ đề."
+    },
+    {
+      "id": 102,
+      "start": 397.22,
+      "end": 398.84,
+      "start_time": "00:06:37,220",
+      "end_time": "00:06:38,840",
+      "text": "Thì chúng ta sẽ quay lại bảng Dream 100."
+    },
+    {
+      "id": 103,
+      "start": 399.94,
+      "end": 400.9,
+      "start_time": "00:06:39,940",
+      "end_time": "00:06:40,900",
+      "text": "Quay lại Dream 100."
+    },
+    {
+      "id": 104,
+      "start": 401.16,
+      "end": 402.32,
+      "start_time": "00:06:41,160",
+      "end_time": "00:06:42,320",
+      "text": "Xem 1 tháng up bao nhiêu video."
+    },
+    {
+      "id": 105,
+      "start": 402.86,
+      "end": 403.8,
+      "start_time": "00:06:42,860",
+      "end_time": "00:06:43,800",
+      "text": "Chia ra 1 ngày mấy cái."
+    },
+    {
+      "id": 106,
+      "start": 403.8,
+      "end": 408.94,
+      "start_time": "00:06:43,800",
+      "end_time": "00:06:48,940",
+      "text": "Cái, nguyên tắc là nếu muốn cạnh tranh trong chủ đề thì chúng ta ít nhất phải làm bằng họ hoặc làm hơn họ."
+    },
+    {
+      "id": 107,
+      "start": 410.52,
+      "end": 416.14,
+      "start_time": "00:06:50,520",
+      "end_time": "00:06:56,140",
+      "text": "Bây giờ làm còn ít hơn, mà làm còn xấu hơn, làm còn chán hơn thì làm sao mà có lợi thế cạnh tranh ở đây."
+    },
+    {
+      "id": 108,
+      "start": 418.902,
+      "end": 424.302,
+      "start_time": "00:06:58,902",
+      "end_time": "00:07:04,302",
+      "text": "Đó, chúng ta sẽ lấy con số trung bình. Bây giờ kênh cao nhất là họ up 80 video một tháng đúng không?"
+    },
+    {
+      "id": 109,
+      "start": 425.902,
+      "end": 433.162,
+      "start_time": "00:07:05,902",
+      "end_time": "00:07:13,162",
+      "text": "Trong trường hợp này mình đăng ví dụ rất là ít kênh thôi, thì nó khoảng 80 video một tháng. Thì trung bình bây giờ mình mới thôi, mình đặt mục tiêu 2 video một ngày đi."
+    },
+    {
+      "id": 110,
+      "start": 433.162,
+      "end": 437.542,
+      "start_time": "00:07:13,162",
+      "end_time": "00:07:17,542",
+      "text": "Thì mình sẽ ghi ở đấy là số lượng video bên kia sang bảng phân tích."
+    },
+    {
+      "id": 111,
+      "start": 439.542,
+      "end": 442.782,
+      "start_time": "00:07:19,542",
+      "end_time": "00:07:22,782",
+      "text": "Mình ghi ra số lượng video upload trong 1 tháng là 80 cái."
+    },
+    {
+      "id": 112,
+      "start": 449.862,
+      "end": 451.342,
+      "start_time": "00:07:29,862",
+      "end_time": "00:07:31,342",
+      "text": "Cao là 80, ok."
+    },
+    {
+      "id": 113,
+      "start": 452.802,
+      "end": 457.442,
+      "start_time": "00:07:32,802",
+      "end_time": "00:07:37,442",
+      "text": "Rồi xuống dòng nữa, trung bình ngày là bao nhiêu cái?"
+    },
+    {
+      "id": 114,
+      "start": 458.762,
+      "end": 460.702,
+      "start_time": "00:07:38,762",
+      "end_time": "00:07:40,702",
+      "text": "Trung bình ngày là cho 2 cái đi."
+    },
+    {
+      "id": 115,
+      "start": 461.802,
+      "end": 463.042,
+      "start_time": "00:07:41,802",
+      "end_time": "00:07:43,042",
+      "text": "Rồi lấy con số tương đối rồi được rồi."
+    },
+    {
+      "id": 116,
+      "start": 463.162,
+      "end": 464.502,
+      "start_time": "00:07:43,162",
+      "end_time": "00:07:44,502",
+      "text": "2 đến 3 cái"
+    },
+    {
+      "id": 117,
+      "start": 464.502,
+      "end": 470.582,
+      "start_time": "00:07:44,502",
+      "end_time": "00:07:50,582",
+      "text": "Ok, tích xong, đã hoàn thành"
+    },
+    {
+      "id": 118,
+      "start": 470.582,
+      "end": 474.622,
+      "start_time": "00:07:50,582",
+      "end_time": "00:07:54,622",
+      "text": "Bước tiếp theo, thời lượng của video trung bình"
+    },
+    {
+      "id": 119,
+      "start": 474.622,
+      "end": 476.222,
+      "start_time": "00:07:54,622",
+      "end_time": "00:07:56,222",
+      "text": "Đấy, chúng ta lại quay lại phần phân tích"
+    },
+    {
+      "id": 120,
+      "start": 476.222,
+      "end": 478.742,
+      "start_time": "00:07:56,222",
+      "end_time": "00:07:58,742",
+      "text": "Đấy, phân tích nó chỉ có thế thôi, quay lên làm đi làm lại"
+    },
+    {
+      "id": 121,
+      "start": 478.742,
+      "end": 480.302,
+      "start_time": "00:07:58,742",
+      "end_time": "00:08:00,302",
+      "text": "Nó rất nhàm chán"
+    },
+    {
+      "id": 122,
+      "start": 480.302,
+      "end": 483.682,
+      "start_time": "00:08:00,302",
+      "end_time": "00:08:03,682",
+      "text": "Nhưng đây là cái cách mình hiểu chủ đề"
+    },
+    {
+      "id": 123,
+      "start": 483.682,
+      "end": 486.862,
+      "start_time": "00:08:03,682",
+      "end_time": "00:08:06,862",
+      "text": "Thời lượng trung bình của họ là từ 20 đến 40 phút"
+    },
+    {
+      "id": 124,
+      "start": 486.862,
+      "end": 489.702,
+      "start_time": "00:08:06,862",
+      "end_time": "00:08:09,702",
+      "text": "Thì nốt lại, 20 đến 40 phút"
+    },
+    {
+      "id": 125,
+      "start": 490.0,
+      "end": 499.142,
+      "start_time": "00:08:10,000",
+      "end_time": "00:08:19,142",
+      "text": "Ok, tiếp theo, thẻ tag kênh, thẻ tag"
+    },
+    {
+      "id": 126,
+      "start": 499.142,
+      "end": 508.582,
+      "start_time": "00:08:19,142",
+      "end_time": "00:08:28,582",
+      "text": "video và Category họ đang dùng là gì?"
+    },
+    {
+      "id": 127,
+      "start": 509.702,
+      "end": 511.742,
+      "start_time": "00:08:29,702",
+      "end_time": "00:08:31,742",
+      "text": "Ok, thì bắt đầu mình vào video thôi"
+    },
+    {
+      "id": 128,
+      "start": 511.742,
+      "end": 514.302,
+      "start_time": "00:08:31,742",
+      "end_time": "00:08:34,302",
+      "text": "Vào kênh trước, vào kênh trước xem nào"
+    },
+    {
+      "id": 129,
+      "start": 514.302,
+      "end": 516.202,
+      "start_time": "00:08:34,302",
+      "end_time": "00:08:36,202",
+      "text": "Vào kênh này, thẻ tag kênh không có không"
+    },
+    {
+      "id": 130,
+      "start": 516.202,
+      "end": 517.782,
+      "start_time": "00:08:36,202",
+      "end_time": "00:08:37,782",
+      "text": "Dùng vidIQ check được nhé"
+    },
+    {
+      "id": 131,
+      "start": 517.782,
+      "end": 520.182,
+      "start_time": "00:08:37,782",
+      "end_time": "00:08:40,182",
+      "text": "Anh em có thể dùng một số những cái nền tảng"
+    },
+    {
+      "id": 132,
+      "start": 520.182,
+      "end": 523.822,
+      "start_time": "00:08:40,182",
+      "end_time": "00:08:43,822",
+      "text": "Họ check ra nhưng mình thấy nó cũng không chính xác lắm"
+    },
+    {
+      "id": 133,
+      "start": 523.822,
+      "end": 525.902,
+      "start_time": "00:08:43,822",
+      "end_time": "00:08:45,902",
+      "text": "Nói chung anh em kết hợp nhiều cách để mình tìm"
+    },
+    {
+      "id": 134,
+      "start": 525.902,
+      "end": 527.222,
+      "start_time": "00:08:45,902",
+      "end_time": "00:08:47,222",
+      "text": "Thì cái phần mà"
+    },
+    {
+      "id": 135,
+      "start": 527.222,
+      "end": 529.702,
+      "start_time": "00:08:47,222",
+      "end_time": "00:08:49,702",
+      "text": "Các cái web check thì mình sẽ search ở trên YouTube"
+    },
+    {
+      "id": 136,
+      "start": 529.702,
+      "end": 530.75,
+      "start_time": "00:08:49,702",
+      "end_time": "00:08:50,750",
+      "text": "Nó có một cái phần là..."
+    },
+    {
+      "id": 137,
+      "start": 530.75,
+      "end": 537.92,
+      "start_time": "00:08:50,750",
+      "end_time": "00:08:57,920",
+      "text": "Search YouTube đi, à search trên Google đi. Nó có một cái phần là"
+    },
+    {
+      "id": 138,
+      "start": 537.92,
+      "end": 545.09,
+      "start_time": "00:08:57,920",
+      "end_time": "00:09:05,090",
+      "text": "check YouTube channel tag với video thì là check YouTube video tag là ok. Đấy."
+    },
+    {
+      "id": 139,
+      "start": 546.57,
+      "end": 551.51,
+      "start_time": "00:09:06,570",
+      "end_time": "00:09:11,510",
+      "text": "Rồi, ấn enter thì có rất nhiều web check ở đây thì anh em cứ tìm và mình test thôi."
+    },
+    {
+      "id": 140,
+      "start": 551.79,
+      "end": 556.51,
+      "start_time": "00:09:11,790",
+      "end_time": "00:09:16,510",
+      "text": "Tại vì các cái nền tảng này thực tế là cũng do các nhà phát hành bên thứ 3 thôi, không phải của YouTube."
+    },
+    {
+      "id": 141,
+      "start": 556.51,
+      "end": 559.89,
+      "start_time": "00:09:16,510",
+      "end_time": "00:09:19,890",
+      "text": "Và họ cũng không, thật sự là không bắt kịp với YouTube đâu."
+    },
+    {
+      "id": 142,
+      "start": 560.43,
+      "end": 562.61,
+      "start_time": "00:09:20,430",
+      "end_time": "00:09:22,610",
+      "text": "Nên là cái sai số đều đương nhiên."
+    },
+    {
+      "id": 143,
+      "start": 563.03,
+      "end": 567.11,
+      "start_time": "00:09:23,030",
+      "end_time": "00:09:27,110",
+      "text": "vidIQ nó có cái số lượng người dùng data lớn như vậy mà nó vẫn còn sai."
+    },
+    {
+      "id": 144,
+      "start": 567.21,
+      "end": 569.61,
+      "start_time": "00:09:27,210",
+      "end_time": "00:09:29,610",
+      "text": "Thì anh em biết là làm sao mà đội này nó theo kịp được."
+    },
+    {
+      "id": 145,
+      "start": 570.07,
+      "end": 574.45,
+      "start_time": "00:09:30,070",
+      "end_time": "00:09:34,450",
+      "text": "Nên anh em mình hãy dùng đa dạng các nền tảng, đa dạng các công cụ để mình dùng, để mình test."
+    },
+    {
+      "id": 146,
+      "start": 575.49,
+      "end": 580.77,
+      "start_time": "00:09:35,490",
+      "end_time": "00:09:40,770",
+      "text": "Quay lại các kênh mình xem ở kia phần phân tích vidIQ là mình đang nhìn, đang thấy là không có thẻ tag kênh."
+    },
+    {
+      "id": 147,
+      "start": 582.03,
+      "end": 585.99,
+      "start_time": "00:09:42,030",
+      "end_time": "00:09:45,990",
+      "text": "Cái đặc biệt của dạng chủ đề story là có rất nhiều kênh họ không có thẻ tag kênh, không có thẻ tag video."
+    },
+    {
+      "id": 148,
+      "start": 585.99,
+      "end": 589.99,
+      "start_time": "00:09:45,990",
+      "end_time": "00:09:49,990",
+      "text": "Câu hỏi đặt ra của anh em là"
+    },
+    {
+      "id": 149,
+      "start": 589.99,
+      "end": 590.95,
+      "start_time": "00:09:49,990",
+      "end_time": "00:09:50,950",
+      "text": "Thế là SEO kiểu gì"
+    },
+    {
+      "id": 150,
+      "start": 590.95,
+      "end": 593.07,
+      "start_time": "00:09:50,950",
+      "end_time": "00:09:53,070",
+      "text": "Cái dạng này bản chất ấy"
+    },
+    {
+      "id": 151,
+      "start": 593.07,
+      "end": 595.91,
+      "start_time": "00:09:53,070",
+      "end_time": "00:09:55,910",
+      "text": "Với content 1 tiếng nó là dạng SEO"
+    },
+    {
+      "id": 152,
+      "start": 595.91,
+      "end": 598.63,
+      "start_time": "00:09:55,910",
+      "end_time": "00:09:58,630",
+      "text": "Content của mình nó là dạng audio"
+    },
+    {
+      "id": 153,
+      "start": 598.63,
+      "end": 599.93,
+      "start_time": "00:09:58,630",
+      "end_time": "00:09:59,930",
+      "text": "Nó không có ảnh mấy"
+    },
+    {
+      "id": 154,
+      "start": 599.93,
+      "end": 602.27,
+      "start_time": "00:09:59,930",
+      "end_time": "00:10:02,270",
+      "text": "Và cái SEO của mình là SEO mô tả"
+    },
+    {
+      "id": 155,
+      "start": 602.27,
+      "end": 603.87,
+      "start_time": "00:10:02,270",
+      "end_time": "00:10:03,870",
+      "text": "SEO hashtag, SEO tiêu đề"
+    },
+    {
+      "id": 156,
+      "start": 603.87,
+      "end": 605.19,
+      "start_time": "00:10:03,870",
+      "end_time": "00:10:05,190",
+      "text": "Và SEO cái nội dung của mình luôn"
+    },
+    {
+      "id": 157,
+      "start": 605.207,
+      "end": 613.394,
+      "start_time": "00:10:05,207",
+      "end_time": "00:10:13,394",
+      "text": "Kéo xuống xem cái phần thẻ tag của họ có không, họ có dùng không, vẫn phải phân tích đủ. Không có đúng không? Video"
+    },
+    {
+      "id": 158,
+      "start": 613.394,
+      "end": 621.58,
+      "start_time": "00:10:13,394",
+      "end_time": "00:10:21,580",
+      "text": "tag, có kìa, 2 cái kìa, họ dùng 2 cái kìa. Channel tag thì không có, video tag thì có. Đây là cách mình"
+    },
+    {
+      "id": 159,
+      "start": 621.58,
+      "end": 629.767,
+      "start_time": "00:10:21,580",
+      "end_time": "00:10:29,767",
+      "text": "nghiên cứu nhé. Thì mình sẽ nốt lại bên kia, sang bên kia là channel tag thì không có, thẻ tag kênh thì không có."
+    },
+    {
+      "id": 160,
+      "start": 629.767,
+      "end": 637.187,
+      "start_time": "00:10:29,767",
+      "end_time": "00:10:37,187",
+      "text": "Thẻ tag kênh không. Cái này anh em cần nghiên cứu từ nhiều kênh nhé. Tại vì mình nghiên cứu nhiều kênh thì nếu cho chúng ta họ"
+    },
+    {
+      "id": 161,
+      "start": 637.187,
+      "end": 644.607,
+      "start_time": "00:10:37,187",
+      "end_time": "00:10:44,607",
+      "text": "có dùng thẻ tag thì mình sẽ ra được bộ thẻ tag của riêng mình. Tìm các điểm chung từ các kênh đang phát triển tốt và lấy"
+    },
+    {
+      "id": 162,
+      "start": 644.607,
+      "end": 652.027,
+      "start_time": "00:10:44,607",
+      "end_time": "00:10:52,027",
+      "text": "nó về cái phần mà SEO này anh em có thể bắt chước nhau được. SEO giống nhau và 2 kênh lên bình thường. Không cạnh tranh đâu."
+    },
+    {
+      "id": 163,
+      "start": 652.027,
+      "end": 660.427,
+      "start_time": "00:10:52,027",
+      "end_time": "00:11:00,427",
+      "text": "Cơ chế đề xuất của YouTube là nó sẽ hiểu nội dung mình là cái gì. Sau đó nó sẽ đề xuất video của mình với khán giả. Đề xuất rất là nhiều video giống nhau."
+    },
+    {
+      "id": 164,
+      "start": 660.767,
+      "end": 667.347,
+      "start_time": "00:11:00,767",
+      "end_time": "00:11:07,347",
+      "text": "Thì 2 kênh mà SEO cùng giống nhau thì nó có tỷ lệ nó sẽ cùng đề xuất với cùng 1 khán giả. Thì mình làm tốt hơn thì mình sẽ ăn view thôi."
+    },
+    {
+      "id": 165,
+      "start": 670.007,
+      "end": 681.087,
+      "start_time": "00:11:10,007",
+      "end_time": "00:11:21,087",
+      "text": "Không có. Trong trường hợp đây là nó có 2 cái đúng không? 2 cái. Cứ nốt tạm 2 cái ở đấy. Thẻ tag của họ là mình thấy là họ đang để họ băm mỗi cái tiêu đề đó thôi."
+    },
+    {
+      "id": 166,
+      "start": 685.15,
+      "end": 687.15,
+      "start_time": "00:11:25,150",
+      "end_time": "00:11:27,150",
+      "text": "Cắt nhỏ tiêu đề"
+    },
+    {
+      "id": 167,
+      "start": 689.15,
+      "end": 692.15,
+      "start_time": "00:11:29,150",
+      "end_time": "00:11:32,150",
+      "text": "Tuấn làm việc với mình đủ lâu và đủ hiểu anh em rồi"
+    },
+    {
+      "id": 168,
+      "start": 695.0,
+      "end": 699.15,
+      "start_time": "00:11:35,000",
+      "end_time": "00:11:39,150",
+      "text": "People & Blogs đây là một cách check nhé, anh em check bằng vidIQ nó cũng ra nhé"
+    },
+    {
+      "id": 169,
+      "start": 699.15,
+      "end": 703.15,
+      "start_time": "00:11:39,150",
+      "end_time": "00:11:43,150",
+      "text": "Đôi khi thỉnh thoảng nó không ra thì anh em dùng một cái mẹo khác mình cũng chia sẻ trong khóa học rồi"
+    },
+    {
+      "id": 170,
+      "start": 703.15,
+      "end": 706.15,
+      "start_time": "00:11:43,150",
+      "end_time": "00:11:46,150",
+      "text": "Mình sẽ chia sẻ lại là ấn vào video"
+    },
+    {
+      "id": 171,
+      "start": 706.15,
+      "end": 709.15,
+      "start_time": "00:11:46,150",
+      "end_time": "00:11:49,150",
+      "text": "Bây giờ mình quay lại cái cách check gọi là truyền thống nhất"
+    },
+    {
+      "id": 172,
+      "start": 709.15,
+      "end": 711.15,
+      "start_time": "00:11:49,150",
+      "end_time": "00:11:51,150",
+      "text": "Nhưng mà là cách check mà chuẩn nhất"
+    },
+    {
+      "id": 173,
+      "start": 711.15,
+      "end": 713.15,
+      "start_time": "00:11:51,150",
+      "end_time": "00:11:53,150",
+      "text": "Không phụ thuộc vào tool nào hết"
+    },
+    {
+      "id": 174,
+      "start": 713.15,
+      "end": 715.03,
+      "start_time": "00:11:53,150",
+      "end_time": "00:11:55,030",
+      "text": "Là Ctrl+U"
+    },
+    {
+      "id": 175,
+      "start": 715.03,
+      "end": 723.77,
+      "start_time": "00:11:55,030",
+      "end_time": "00:12:03,770",
+      "text": "Nó sẽ ra cái bảng này và chúng ta Ctrl+F ấn Category"
+    },
+    {
+      "id": 176,
+      "start": 723.77,
+      "end": 728.85,
+      "start_time": "00:12:03,770",
+      "end_time": "00:12:08,850",
+      "text": "Đúng rồi"
+    },
+    {
+      "id": 177,
+      "start": 728.85,
+      "end": 732.15,
+      "start_time": "00:12:08,850",
+      "end_time": "00:12:12,150",
+      "text": "Enter nó sẽ ở dòng thứ 13 ấn Enter cuối cùng"
+    },
+    {
+      "id": 178,
+      "start": 732.15,
+      "end": 732.75,
+      "start_time": "00:12:12,150",
+      "end_time": "00:12:12,750",
+      "text": "Dòng cuối cùng"
+    },
+    {
+      "id": 179,
+      "start": 732.75,
+      "end": 733.81,
+      "start_time": "00:12:12,750",
+      "end_time": "00:12:13,810",
+      "text": "Thứ 13"
+    },
+    {
+      "id": 180,
+      "start": 733.81,
+      "end": 737.53,
+      "start_time": "00:12:13,810",
+      "end_time": "00:12:17,530",
+      "text": "Đó"
+    },
+    {
+      "id": 181,
+      "start": 737.53,
+      "end": 739.23,
+      "start_time": "00:12:17,530",
+      "end_time": "00:12:19,230",
+      "text": "Thế có đúng đâu"
+    },
+    {
+      "id": 182,
+      "start": 739.23,
+      "end": 742.75,
+      "start_time": "00:12:19,230",
+      "end_time": "00:12:22,750",
+      "text": "Thôi chưa anh em thấy phụ thuộc vào tool"
+    },
+    {
+      "id": 183,
+      "start": 742.75,
+      "end": 744.77,
+      "start_time": "00:12:22,750",
+      "end_time": "00:12:24,770",
+      "text": "Đôi khi là mình không kiểm soát được hết đâu"
+    },
+    {
+      "id": 184,
+      "start": 744.77,
+      "end": 745.89,
+      "start_time": "00:12:24,770",
+      "end_time": "00:12:25,890",
+      "text": "Mình phải check bằng Ctrl+U"
+    },
+    {
+      "id": 185,
+      "start": 745.89,
+      "end": 746.81,
+      "start_time": "00:12:25,890",
+      "end_time": "00:12:26,810",
+      "text": "Cái này mới là chuẩn này"
+    },
+    {
+      "id": 186,
+      "start": 746.81,
+      "end": 748.05,
+      "start_time": "00:12:26,810",
+      "end_time": "00:12:28,050",
+      "text": "Vì nó là data của YouTube"
+    },
+    {
+      "id": 187,
+      "start": 748.05,
+      "end": 750.39,
+      "start_time": "00:12:28,050",
+      "end_time": "00:12:30,390",
+      "text": "Data chuẩn của video"
+    },
+    {
+      "id": 188,
+      "start": 750.39,
+      "end": 751.25,
+      "start_time": "00:12:30,390",
+      "end_time": "00:12:31,250",
+      "text": "Entertainment"
+    },
+    {
+      "id": 189,
+      "start": 751.25,
+      "end": 753.09,
+      "start_time": "00:12:31,250",
+      "end_time": "00:12:33,090",
+      "text": "Thì đấy quay lại sửa"
+    },
+    {
+      "id": 190,
+      "start": 753.09,
+      "end": 753.71,
+      "start_time": "00:12:33,090",
+      "end_time": "00:12:33,710",
+      "text": "Entertainment"
+    },
+    {
+      "id": 191,
+      "start": 753.71,
+      "end": 755.87,
+      "start_time": "00:12:33,710",
+      "end_time": "00:12:35,870",
+      "text": "Cái này anh em nghiên cứu ở nhiều kênh nhá"
+    },
+    {
+      "id": 192,
+      "start": 755.87,
+      "end": 758.17,
+      "start_time": "00:12:35,870",
+      "end_time": "00:12:38,170",
+      "text": "Nhiều kênh thì ra được cái chuẩn nhá"
+    },
+    {
+      "id": 193,
+      "start": 758.17,
+      "end": 759.05,
+      "start_time": "00:12:38,170",
+      "end_time": "00:12:39,050",
+      "text": "Đấy thì mình cứ nốt"
+    },
+    {
+      "id": 194,
+      "start": 759.23,
+      "end": 762.31,
+      "start_time": "00:12:39,230",
+      "end_time": "00:12:42,310",
+      "text": "Nghiên cứu 1 kênh thì nó có dùng thế này, 10 kênh nó dùng thế này"
+    },
+    {
+      "id": 195,
+      "start": 762.31,
+      "end": 765.89,
+      "start_time": "00:12:42,310",
+      "end_time": "00:12:45,890",
+      "text": "Xong rồi mình sửa lại mình ra được cái category chuẩn của mình"
+    },
+    {
+      "id": 196,
+      "start": 765.89,
+      "end": 766.89,
+      "start_time": "00:12:45,890",
+      "end_time": "00:12:46,890",
+      "text": "Bước tiếp theo"
+    },
+    {
+      "id": 197,
+      "start": 768.89,
+      "end": 771.17,
+      "start_time": "00:12:48,890",
+      "end_time": "00:12:51,170",
+      "text": "Cách SEO, cách SEO quay lại SEO của họ nào"
+    },
+    {
+      "id": 198,
+      "start": 771.17,
+      "end": 773.932,
+      "start_time": "00:12:51,170",
+      "end_time": "00:12:53,932",
+      "text": "Vào video nào, xong họ SEO như thế nào"
+    },
+    {
+      "id": 199,
+      "start": 774.0,
+      "end": 778.512,
+      "start_time": "00:12:54,000",
+      "end_time": "00:12:58,512",
+      "text": "SEO thì nó sẽ bao gồm là tiêu đề đúng không, tiêu đề thì mình đã có từ trước rồi, không thay đổi."
+    },
+    {
+      "id": 200,
+      "start": 779.052,
+      "end": 784.492,
+      "start_time": "00:12:59,052",
+      "end_time": "00:13:04,492",
+      "text": "Phần mô tả thì nó sẽ có những phần SEO thì đây là họ, thông thường thì phần SEO họ sẽ dùng là,"
+    },
+    {
+      "id": 201,
+      "start": 784.492,
+      "end": 794.832,
+      "start_time": "00:13:04,492",
+      "end_time": "00:13:14,832",
+      "text": "Bên mình sẽ viết dùng cái tiêu đề vào phần intro và đưa vào ChatGPT và viết lại mô tả của video dựa trên cái tiêu đề đấy thành một đoạn văn ngắn."
+    },
+    {
+      "id": 202,
+      "start": 796.092,
+      "end": 800.832,
+      "start_time": "00:13:16,092",
+      "end_time": "00:13:20,832",
+      "text": "Và không cố tình là lặp lại nhiều quá và bên mình cũng không copy tiêu đề quăng vào mô tả đâu."
+    },
+    {
+      "id": 203,
+      "start": 801.752,
+      "end": 802.532,
+      "start_time": "00:13:21,752",
+      "end_time": "00:13:22,532",
+      "text": "Cách đây là cách thủ công."
+    },
+    {
+      "id": 204,
+      "start": 803.092,
+      "end": 805.752,
+      "start_time": "00:13:23,092",
+      "end_time": "00:13:25,752",
+      "text": "Vậy nên là có một cái đặc điểm nhận diện của anh em Việt Nam làm."
+    },
+    {
+      "id": 205,
+      "start": 806.432,
+      "end": 811.632,
+      "start_time": "00:13:26,432",
+      "end_time": "00:13:31,632",
+      "text": "Anh em cứ đi là sẽ thấy copy tiêu đề quăng vào mô tả enter 3 lần."
+    },
+    {
+      "id": 206,
+      "start": 811.632,
+      "end": 814.412,
+      "start_time": "00:13:31,632",
+      "end_time": "00:13:34,412",
+      "text": "100% kênh Việt Nam"
+    },
+    {
+      "id": 207,
+      "start": 814.412,
+      "end": 817.512,
+      "start_time": "00:13:34,412",
+      "end_time": "00:13:37,512",
+      "text": "Kênh này Việt Nam"
+    },
+    {
+      "id": 208,
+      "start": 817.512,
+      "end": 818.832,
+      "start_time": "00:13:37,512",
+      "end_time": "00:13:38,832",
+      "text": "Không sai được"
+    },
+    {
+      "id": 209,
+      "start": 818.832,
+      "end": 820.392,
+      "start_time": "00:13:38,832",
+      "end_time": "00:13:40,392",
+      "text": "Đội nước ngoài không bao giờ SEO cái này"
+    },
+    {
+      "id": 210,
+      "start": 820.392,
+      "end": 823.152,
+      "start_time": "00:13:40,392",
+      "end_time": "00:13:43,152",
+      "text": "Rồi bên dưới cái"
+    },
+    {
+      "id": 211,
+      "start": 823.152,
+      "end": 825.192,
+      "start_time": "00:13:43,152",
+      "end_time": "00:13:45,192",
+      "text": "Copyright disclaimer"
+    },
+    {
+      "id": 212,
+      "start": 825.192,
+      "end": 827.132,
+      "start_time": "00:13:45,192",
+      "end_time": "00:13:47,132",
+      "text": "Cái này là luật sử dụng hợp lý"
+    },
+    {
+      "id": 213,
+      "start": 827.132,
+      "end": 829.752,
+      "start_time": "00:13:47,132",
+      "end_time": "00:13:49,752",
+      "text": "Anh em có quăng cái này vào không tác dụng gì"
+    },
+    {
+      "id": 214,
+      "start": 829.752,
+      "end": 831.352,
+      "start_time": "00:13:49,752",
+      "end_time": "00:13:51,352",
+      "text": "Không phải quăng, mất thời gian"
+    },
+    {
+      "id": 215,
+      "start": 831.352,
+      "end": 832.892,
+      "start_time": "00:13:51,352",
+      "end_time": "00:13:52,892",
+      "text": "Cha làm gì"
+    },
+    {
+      "id": 216,
+      "start": 832.892,
+      "end": 836.232,
+      "start_time": "00:13:52,892",
+      "end_time": "00:13:56,232",
+      "text": "Bị bản quyền nhắn mình, mình gửi cho form kháng"
+    },
+    {
+      "id": 217,
+      "start": 836.232,
+      "end": 840.572,
+      "start_time": "00:13:56,232",
+      "end_time": "00:14:00,572",
+      "text": "Mình từng đánh một kênh hơn triệu sub"
+    },
+    {
+      "id": 218,
+      "start": 840.572,
+      "end": 841.532,
+      "start_time": "00:14:00,572",
+      "end_time": "00:14:01,532",
+      "text": "Phải xin"
+    },
+    {
+      "id": 219,
+      "start": 841.532,
+      "end": 850.0,
+      "start_time": "00:14:01,532",
+      "end_time": "00:14:10,000",
+      "text": "Kênh mình có 5.000 sub rồi, ở đấy nó gần 1 triệu sub, đánh cho mùng 4 Tết, mùng 4 Tết đi đánh gậy mình, bực cơ mình."
+    },
+    {
+      "id": 220,
+      "start": 850.0,
+      "end": 861.9,
+      "start_time": "00:14:10,000",
+      "end_time": "00:14:21,900",
+      "text": "3h sáng tuần nhắn tin kênh bị đánh 2 gậy xóa mấy video liền. Kháng trong vòng có 10 mấy tiếng rồi, dưới 10 tiếng kênh về bên kia mail xin lỗi. Xin."
+    },
+    {
+      "id": 221,
+      "start": 863.86,
+      "end": 874.86,
+      "start_time": "00:14:23,860",
+      "end_time": "00:14:34,860",
+      "text": "Mình khẳng định là mình không phải là một người giỏi, quá giỏi về mặt tut trick, không giỏi về quá giỏi về nền tảng. Nhưng mà khi mình nắm rõ được nội dung mình làm chuẩn thì rất là tự tin về việc là mình có thể kháng được."
+    },
+    {
+      "id": 222,
+      "start": 874.86,
+      "end": 877.44,
+      "start_time": "00:14:34,860",
+      "end_time": "00:14:37,440",
+      "text": "Và mình cũng có thể là hỗ trợ anh em kháng được."
+    },
+    {
+      "id": 223,
+      "start": 877.84,
+      "end": 885.08,
+      "start_time": "00:14:37,840",
+      "end_time": "00:14:45,080",
+      "text": "Rất nhiều anh em cũng nhắn tin để hỗ trợ mặt gậy này, cộng với là bản quyền là gậy này, cộng với là phần kháng bật kiếm tiền."
+    },
+    {
+      "id": 224,
+      "start": 885.08,
+      "end": 888.06,
+      "start_time": "00:14:45,080",
+      "end_time": "00:14:48,060",
+      "text": "Gần đây thì anh em kháng về khá là nhiều, đặc biệt dạng story."
+    },
+    {
+      "id": 225,
+      "start": 888.62,
+      "end": 890.5,
+      "start_time": "00:14:48,620",
+      "end_time": "00:14:50,500",
+      "text": "Nên là cứ mạnh dạn mà làm, không sợ trùng lặp nội dung đâu."
+    },
+    {
+      "id": 226,
+      "start": 891.06,
+      "end": 894.18,
+      "start_time": "00:14:51,060",
+      "end_time": "00:14:54,180",
+      "text": "Cái lỗi trùng lặp nội dung là cái lỗi dễ kháng nhất, cực kỳ dễ kháng thôi."
+    },
+    {
+      "id": 227,
+      "start": 895.94,
+      "end": 902.12,
+      "start_time": "00:14:55,940",
+      "end_time": "00:15:02,120",
+      "text": "Phần SEO ở đây họ có mô tả này, thì cái phần này anh em sẽ cần phải xem rất là kỹ, xem nhiều video để mình ra được cái phần SEO của họ."
+    },
+    {
+      "id": 228,
+      "start": 902.12,
+      "end": 910.16,
+      "start_time": "00:15:02,120",
+      "end_time": "00:15:10,160",
+      "text": "Thì ở các 2 kênh mình đang xem đây thì phần SEO nó chỉ có mô tả này cộng với là thẻ tag thôi chứ nó không có gì cả."
+    },
+    {
+      "id": 229,
+      "start": 910.16,
+      "end": 917.08,
+      "start_time": "00:15:10,160",
+      "end_time": "00:15:17,080",
+      "text": "Vì thế phần SEO này rất là dễ. Rồi ok nó tích vào đấy. Mình sẽ ghi bên kia bên cái này nó có thẻ hashtag đúng không?"
+    },
+    {
+      "id": 230,
+      "start": 917.86,
+      "end": 927.2,
+      "start_time": "00:15:17,860",
+      "end_time": "00:15:27,200",
+      "text": "Thế nốt lại hashtag sử dụng. Cái bài nó có hashtag đâu. Vừa thấy có 1 cái bài hashtag mà."
+    },
+    {
+      "id": 231,
+      "start": 927.2,
+      "end": 931.92,
+      "start_time": "00:15:27,200",
+      "end_time": "00:15:31,920",
+      "text": "Nữa đi"
+    },
+    {
+      "id": 232,
+      "start": 931.92,
+      "end": 933.3,
+      "start_time": "00:15:31,920",
+      "end_time": "00:15:33,300",
+      "text": "Bài khác là"
+    },
+    {
+      "id": 233,
+      "start": 933.3,
+      "end": 933.86,
+      "start_time": "00:15:33,300",
+      "end_time": "00:15:33,860",
+      "text": "Đây này"
+    },
+    {
+      "id": 234,
+      "start": 933.86,
+      "end": 935.3,
+      "start_time": "00:15:33,860",
+      "end_time": "00:15:35,300",
+      "text": "Hashtag sử dụng kia"
+    },
+    {
+      "id": 235,
+      "start": 935.3,
+      "end": 938.04,
+      "start_time": "00:15:35,300",
+      "end_time": "00:15:38,040",
+      "text": "Đây"
+    },
+    {
+      "id": 236,
+      "start": 938.04,
+      "end": 939.4,
+      "start_time": "00:15:38,040",
+      "end_time": "00:15:39,400",
+      "text": "Công tin bên dưới kìa"
+    },
+    {
+      "id": 237,
+      "start": 939.4,
+      "end": 940.5,
+      "start_time": "00:15:39,400",
+      "end_time": "00:15:40,500",
+      "text": "Cái dòng này là dòng auto"
+    },
+    {
+      "id": 238,
+      "start": 940.5,
+      "end": 941.36,
+      "start_time": "00:15:40,500",
+      "end_time": "00:15:41,360",
+      "text": "Ở đó ok"
+    },
+    {
+      "id": 239,
+      "start": 941.36,
+      "end": 941.94,
+      "start_time": "00:15:41,360",
+      "end_time": "00:15:41,940",
+      "text": "Đúng được"
+    },
+    {
+      "id": 240,
+      "start": 941.94,
+      "end": 943.077,
+      "start_time": "00:15:41,940",
+      "end_time": "00:15:43,077",
+      "text": "Anh em chỉ nên"
+    },
+    {
+      "id": 241,
+      "start": 943.077,
+      "end": 949.657,
+      "start_time": "00:15:43,077",
+      "end_time": "00:15:49,657",
+      "text": "Anh em chỉ nên sử dụng khoảng 3 hay 4 cái đấy nhỉ, tối đa 4 cái, vì thực tế nào cũng chỉ nhận có 3 cái lên đầu thôi, đừng dùng nhiều, đừng nhớ bị spam ấy."
+    },
+    {
+      "id": 242,
+      "start": 953.237,
+      "end": 954.037,
+      "start_time": "00:15:53,237",
+      "end_time": "00:15:54,037",
+      "text": "Rồi, hashtag."
+    },
+    {
+      "id": 243,
+      "start": 954.037,
+      "end": 962.157,
+      "start_time": "00:15:54,037",
+      "end_time": "00:16:02,157",
+      "text": "Hashtag, thì cái này, hashtag mình cứ xem nhiều kênh để xem cái bộ hashtag chung họ dùng là gì."
+    },
+    {
+      "id": 244,
+      "start": 963.557,
+      "end": 972.037,
+      "start_time": "00:16:03,557",
+      "end_time": "00:16:12,037",
+      "text": "Ok, rồi xuống dòng nữa thì thẻ tag, à thẻ tag có rồi không không? Hashtag kênh, ok, xong, tích, đã xong."
+    },
+    {
+      "id": 245,
+      "start": 976.157,
+      "end": 977.257,
+      "start_time": "00:16:16,157",
+      "end_time": "00:16:17,257",
+      "text": "Tích phần trên đã xong đó."
+    },
+    {
+      "id": 246,
+      "start": 979.0,
+      "end": 983.937,
+      "start_time": "00:16:19,000",
+      "end_time": "00:16:23,937",
+      "text": "Tên kênh là gì? Cái này là ý tưởng triển khai kênh thì chúng ta sẽ phân tích và chúng ta sẽ có tên kênh."
+    },
+    {
+      "id": 247,
+      "start": 984.037,
+      "end": 989.397,
+      "start_time": "00:16:24,037",
+      "end_time": "00:16:29,397",
+      "text": "Thì cái cách đặt tên kênh thì anh em nên đặt một cái tên nó không trùng với nhiều kênh quá."
+    },
+    {
+      "id": 248,
+      "start": 989.917,
+      "end": 991.317,
+      "start_time": "00:16:29,917",
+      "end_time": "00:16:31,317",
+      "text": "Để làm sao nó có index nó dễ hơn."
+    },
+    {
+      "id": 249,
+      "start": 992.517,
+      "end": 997.377,
+      "start_time": "00:16:32,517",
+      "end_time": "00:16:37,377",
+      "text": "Và nói liên quan đến chủ đề, ví dụ như ở đây, ý tưởng triển khai kênh này do anh em thôi."
+    },
+    {
+      "id": 250,
+      "start": 997.557,
+      "end": 999.597,
+      "start_time": "00:16:37,557",
+      "end_time": "00:16:39,597",
+      "text": "Cái này mình có thể dùng ChatGPT nhé, vào ChatGPT đi."
+    },
+    {
+      "id": 251,
+      "start": 1002.397,
+      "end": 1005.757,
+      "start_time": "00:16:42,397",
+      "end_time": "00:16:45,757",
+      "text": "Cái câu lệnh nó đơn giản thôi, mình muốn cái gì thì mình đưa nó, kìa đấy thôi."
+    },
+    {
+      "id": 252,
+      "start": 1005.757,
+      "end": 1013.897,
+      "start_time": "00:16:45,757",
+      "end_time": "00:16:53,897",
+      "text": "Tôi muốn triển khai một kênh dạng chủ đề Undercover Boss và Undercover CEO."
+    },
+    {
+      "id": 253,
+      "start": 1014.037,
+      "end": 1015.557,
+      "start_time": "00:16:54,037",
+      "end_time": "00:16:55,557",
+      "text": "là topic chính."
+    },
+    {
+      "id": 254,
+      "start": 1022.2,
+      "end": 1028.44,
+      "start_time": "00:17:02,200",
+      "end_time": "00:17:08,440",
+      "text": "Hãy gợi ý cho tôi khoảng 100 tên kênh, bạn nghĩ có thể phù hợp."
+    },
+    {
+      "id": 255,
+      "start": 1029.22,
+      "end": 1029.44,
+      "start_time": "00:17:09,220",
+      "end_time": "00:17:09,440",
+      "text": "Xoạc?"
+    },
+    {
+      "id": 256,
+      "start": 1031.36,
+      "end": 1034.3,
+      "start_time": "00:17:11,360",
+      "end_time": "00:17:14,300",
+      "text": "Bên mình tìm ý tưởng toàn là ChatGPT tìm hết chứ."
+    },
+    {
+      "id": 257,
+      "start": 1035.88,
+      "end": 1036.56,
+      "start_time": "00:17:15,880",
+      "end_time": "00:17:16,560",
+      "text": "Nghĩ làm sao được?"
+    },
+    {
+      "id": 258,
+      "start": 1047.7,
+      "end": 1049.56,
+      "start_time": "00:17:27,700",
+      "end_time": "00:17:29,560",
+      "text": "Dừng lại đi, dừng lại đi, bạn nói viết bằng tiếng Anh."
+    },
+    {
+      "id": 259,
+      "start": 1049.56,
+      "end": 1052.5,
+      "start_time": "00:17:29,560",
+      "end_time": "00:17:32,500",
+      "text": "Tên tiếng Anh"
+    },
+    {
+      "id": 260,
+      "start": 1052.5,
+      "end": 1062.5,
+      "start_time": "00:17:32,500",
+      "end_time": "00:17:42,500",
+      "text": "Ok"
+    },
+    {
+      "id": 261,
+      "start": 1062.5,
+      "end": 1071.84,
+      "start_time": "00:17:42,500",
+      "end_time": "00:17:51,840",
+      "text": "Bây giờ việc của mình là chọn những cái tên nó phù hợp thôi"
+    },
+    {
+      "id": 262,
+      "start": 1071.84,
+      "end": 1076.5,
+      "start_time": "00:17:51,840",
+      "end_time": "00:17:56,500",
+      "text": "Chưa thấy phù hợp được lắm thì thêm"
+    },
+    {
+      "id": 263,
+      "start": 1076.5,
+      "end": 1077.54,
+      "start_time": "00:17:56,500",
+      "end_time": "00:17:57,540",
+      "text": "Ấn bên dưới"
+    },
+    {
+      "id": 264,
+      "start": 1077.54,
+      "end": 1079.18,
+      "start_time": "00:17:57,540",
+      "end_time": "00:17:59,180",
+      "text": "Thêm Tale"
+    },
+    {
+      "id": 265,
+      "start": 1079.18,
+      "end": 1087.75,
+      "start_time": "00:17:59,180",
+      "end_time": "00:18:07,750",
+      "text": "Tale hoặc Story vào tên, Tale và Story, rồi thêm"
+    },
+    {
+      "id": 266,
+      "start": 1087.75,
+      "end": 1096.32,
+      "start_time": "00:18:07,750",
+      "end_time": "00:18:16,320",
+      "text": "Tales và Story, hoặc Story vào tên kênh, enter, sau."
+    },
+    {
+      "id": 267,
+      "start": 1096.32,
+      "end": 1097.32,
+      "start_time": "00:18:16,320",
+      "end_time": "00:18:17,320",
+      "text": "Xong"
+    },
+    {
+      "id": 268,
+      "start": 1107.32,
+      "end": 1109.82,
+      "start_time": "00:18:27,320",
+      "end_time": "00:18:29,820",
+      "text": "Đó, rất là nhiều tên kênh mình có thể sử dụng"
+    },
+    {
+      "id": 269,
+      "start": 1109.82,
+      "end": 1111.32,
+      "start_time": "00:18:29,820",
+      "end_time": "00:18:31,320",
+      "text": "Anh em cứ vậy mà dùng thôi"
+    },
+    {
+      "id": 270,
+      "start": 1111.32,
+      "end": 1114.82,
+      "start_time": "00:18:31,320",
+      "end_time": "00:18:34,820",
+      "text": "Xong bắt đầu mình search cái tên kênh để xem là cái nào nó chưa trùng"
+    },
+    {
+      "id": 271,
+      "start": 1114.82,
+      "end": 1116.32,
+      "start_time": "00:18:34,820",
+      "end_time": "00:18:36,320",
+      "text": "Nó chưa nhiều kênh dùng quá"
+    },
+    {
+      "id": 272,
+      "start": 1116.32,
+      "end": 1117.517,
+      "start_time": "00:18:36,320",
+      "end_time": "00:18:37,517",
+      "text": "Đơn giản, hiệu quả"
+    },
+    {
+      "id": 273,
+      "start": 1117.517,
+      "end": 1125.517,
+      "start_time": "00:18:37,517",
+      "end_time": "00:18:45,517",
+      "text": "Ok, mình sẽ tích tạo một cái tên kênh. Ví dụ ở đây là, quay về bên kia, GODA Tail đây chẳng hạn. Ví dụ như vậy."
+    },
+    {
+      "id": 274,
+      "start": 1127.517,
+      "end": 1131.517,
+      "start_time": "00:18:47,517",
+      "end_time": "00:18:51,517",
+      "text": "GODA Story. Nãy tạo kênh GODA Story này, ghi GODA Story vào đấy."
+    },
+    {
+      "id": 275,
+      "start": 1131.517,
+      "end": 1139.447,
+      "start_time": "00:18:51,517",
+      "end_time": "00:18:59,447",
+      "text": "Yêu cầu đặc biệt là có từ khóa chủ đề chính. Ví dụ như story thì cần có story, Tales thì cần có Tales này, cộng với các yếu tố còn lại. Như undercover chẳng"
+    },
+    {
+      "id": 276,
+      "start": 1139.447,
+      "end": 1147.377,
+      "start_time": "00:18:59,447",
+      "end_time": "00:19:07,377",
+      "text": "hạn cũng là một cái tên khá là hay. Vì nó đánh trực tiếp vào cái key của mình. Thì mình đặt tên giống như vậy thì mình sẽ nhanh lên hơn rất là nhiều."
+    },
+    {
+      "id": 277,
+      "start": 1148.0,
+      "end": 1158.157,
+      "start_time": "00:19:08,000",
+      "end_time": "00:19:18,157",
+      "text": "Cái này tích vào triển khai xong. Bắt đầu đến một phần này là phần rất là mới. Ý tưởng 10, 30 video đầu tiên là gì? Cái này là một phần đã có rồi nhưng mà chưa có form."
+    },
+    {
+      "id": 278,
+      "start": 1158.157,
+      "end": 1167.857,
+      "start_time": "00:19:18,157",
+      "end_time": "00:19:27,857",
+      "text": "Thì lần này mình bổ sung cái phần form này để cho anh em có thể làm nó dễ hơn. Thì ấn vào cái phần kế hoạch nội dung. Tại sao lại phải 10 đến 30 video? Thì ít nhất là mình chạy với"
+    },
+    {
+      "id": 279,
+      "start": 1167.857,
+      "end": 1177.557,
+      "start_time": "00:19:27,857",
+      "end_time": "00:19:37,557",
+      "text": "ban đầu mình chạy khoảng 1 đến 2 video 1 ngày thì ít nhất cũng phải chạy được 10 đến 1 tháng chứ, mỗi ngày đến 1 tháng chứ. Kế hoạch nội dung mình phải như thế. Sau đó mình bắt đầu mới"
+    },
+    {
+      "id": 280,
+      "start": 1177.557,
+      "end": 1187.257,
+      "start_time": "00:19:37,557",
+      "end_time": "00:19:47,257",
+      "text": "đo lường và mình có thay đổi để thay đổi. Chứ đừng ngày nay làm sau ngày mai lại sửa, ngày mai làm ngày kia lại sửa. Thì thế là kênh nó loạn hết lên, nó không có định hướng rõ ràng cụ thể."
+    },
+    {
+      "id": 281,
+      "start": 1187.257,
+      "end": 1192.897,
+      "start_time": "00:19:47,257",
+      "end_time": "00:19:52,897",
+      "text": "Kệ nó, mình cứ làm đã, sai thì sai cả thế, về sau thấy cái sai rồi thì sửa cả thế."
+    },
+    {
+      "id": 282,
+      "start": 1193.657,
+      "end": 1201.757,
+      "start_time": "00:19:53,657",
+      "end_time": "00:20:01,757",
+      "text": "YouTube nó có tính tích lũy, những video mình làm không hay thì kệ nó vẫn để trên kênh đừng xóa đi, nó không phí gì đâu, nó là cái tích lũy của mình ở đấy đấy."
+    },
+    {
+      "id": 283,
+      "start": 1202.8,
+      "end": 1207.6,
+      "start_time": "00:20:02,800",
+      "end_time": "00:20:07,600",
+      "text": "ý tưởng trên 2 kênh thì mình sẽ dựa vào cái bảng Dream 100 các video 3 tháng gần đây nhất."
+    },
+    {
+      "id": 284,
+      "start": 1208.48,
+      "end": 1212.4,
+      "start_time": "00:20:08,480",
+      "end_time": "00:20:12,400",
+      "text": "Mình sẽ pick các cái tiêu đề đấy và về mình thay đổi đi một chút là được."
+    },
+    {
+      "id": 285,
+      "start": 1213.06,
+      "end": 1214.6,
+      "start_time": "00:20:13,060",
+      "end_time": "00:20:14,600",
+      "text": "Thì bây giờ mình sẽ thử 3 video đi."
+    },
+    {
+      "id": 286,
+      "start": 1215.42,
+      "end": 1217.84,
+      "start_time": "00:20:15,420",
+      "end_time": "00:20:17,840",
+      "text": "Vậy anh em sẽ tùy theo số lượng kế hoạch của mình."
+    },
+    {
+      "id": 287,
+      "start": 1218.26,
+      "end": 1221.06,
+      "start_time": "00:20:18,260",
+      "end_time": "00:20:21,060",
+      "text": "Ví dụ mình đang khoảng độ 2 video 1 ngày chẳng hạn, mục tiêu là mình như vậy."
+    },
+    {
+      "id": 288,
+      "start": 1221.54,
+      "end": 1226.64,
+      "start_time": "00:20:21,540",
+      "end_time": "00:20:26,640",
+      "text": "Thì mình sẽ cần khoảng 10 đến 20 video, 10 đến 20 tiêu đề là ok."
+    },
+    {
+      "id": 289,
+      "start": 1227.14,
+      "end": 1228.44,
+      "start_time": "00:20:27,140",
+      "end_time": "00:20:28,440",
+      "text": "Thì nó chạy được 5 đến 10 ngày rồi."
+    },
+    {
+      "id": 290,
+      "start": 1230.3,
+      "end": 1232.18,
+      "start_time": "00:20:30,300",
+      "end_time": "00:20:32,180",
+      "text": "Phần Dream 100 3 tháng video gần nhất."
+    },
+    {
+      "id": 291,
+      "start": 1232.8,
+      "end": 1242.06,
+      "start_time": "00:20:32,800",
+      "end_time": "00:20:42,060",
+      "text": "Copy vào, đưa vào bảng, Shu thôi, đơn giản, hiệu quả."
+    },
+    {
+      "id": 292,
+      "start": 1244.44,
+      "end": 1247.78,
+      "start_time": "00:20:44,440",
+      "end_time": "00:20:47,780",
+      "text": "Link tham khảo. Nội dung là cái link mà sau mình viết content ấy."
+    },
+    {
+      "id": 293,
+      "start": 1248.18,
+      "end": 1253.72,
+      "start_time": "00:20:48,180",
+      "end_time": "00:20:53,720",
+      "text": "Thì mình cứ làm việc này, mình đưa vào, ưu tiên những video gần đây nhất, trending nhất, nhiều video nhất, làm đã."
+    },
+    {
+      "id": 294,
+      "start": 1255.04,
+      "end": 1259.04,
+      "start_time": "00:20:55,040",
+      "end_time": "00:20:59,040",
+      "text": "Họ làm được 10, mình cố gắng, làm được 1, 2 là thành công rồi. Thế thôi."
+    },
+    {
+      "id": 295,
+      "start": 1259.72,
+      "end": 1261.38,
+      "start_time": "00:20:59,720",
+      "end_time": "00:21:01,380",
+      "text": "Vì sau nâng cấp dần, nâng cấp dần lên là ngon."
+    },
+    {
+      "id": 296,
+      "start": 1261.38,
+      "end": 1263.42,
+      "start_time": "00:21:01,380",
+      "end_time": "00:21:03,420",
+      "text": "Ok, quay lại phần bảng kế hoạch"
+    },
+    {
+      "id": 297,
+      "start": 1263.42,
+      "end": 1268.06,
+      "start_time": "00:21:03,420",
+      "end_time": "00:21:08,060",
+      "text": "Mình sẽ xong cái phần này, đây là phần form cơ bản để anh em có thể làm được"
+    },
+    {
+      "id": 298,
+      "start": 1268.06,
+      "end": 1270.14,
+      "start_time": "00:21:08,060",
+      "end_time": "00:21:10,140",
+      "text": "Rồi, tích vào, đã xong"
+    },
+    {
+      "id": 299,
+      "start": 1271.88,
+      "end": 1273.0,
+      "start_time": "00:21:11,880",
+      "end_time": "00:21:13,000",
+      "text": "Tiếp theo rất là quan trọng."
+    },
+    {
+      "id": 300,
+      "start": 1273.0,
+      "end": 1280.98,
+      "start_time": "00:21:13,000",
+      "end_time": "00:21:20,980",
+      "text": "Mình sẽ cạnh tranh với các kênh lớn đã có lượng video, lượng view lớn trong chủ đề bằng cách nào, đâu là lợi thế cạnh tranh của mình."
+    },
+    {
+      "id": 301,
+      "start": 1281.4,
+      "end": 1289.54,
+      "start_time": "00:21:21,400",
+      "end_time": "00:21:29,540",
+      "text": "Đây là câu hỏi mình đặt cho các quản lý, các cấp quản lý, các cấp trưởng phòng, phó phòng và giám đốc chiến lược của bên mình khi mà triển khai một kênh."
+    },
+    {
+      "id": 302,
+      "start": 1290.827,
+      "end": 1299.447,
+      "start_time": "00:21:30,827",
+      "end_time": "00:21:39,447",
+      "text": "Anh em nào trả lời câu hỏi này một cách rõ ràng nhất thì kênh đấy đánh nhanh lên. Trả lời không rõ ràng được thì đánh kênh cứ tụt thôi. Đây là câu hỏi rất quan trọng."
+    },
+    {
+      "id": 303,
+      "start": 1299.447,
+      "end": 1307.607,
+      "start_time": "00:21:39,447",
+      "end_time": "00:21:47,607",
+      "text": "Thì thông qua những phần phân tích vừa rồi thì mình thấy có một cái điểm chung là video của họ là đang up khoảng độ 2 cái đến 3 cái một ngày nhưng không đều."
+    },
+    {
+      "id": 304,
+      "start": 1308.307,
+      "end": 1313.367,
+      "start_time": "00:21:48,307",
+      "end_time": "00:21:53,367",
+      "text": "Bây giờ mình chơi một cái bài là số lượng tôi sẽ cạnh tranh bằng 3 video một ngày."
+    },
+    {
+      "id": 305,
+      "start": 1313.727,
+      "end": 1315.267,
+      "start_time": "00:21:53,727",
+      "end_time": "00:21:55,267",
+      "text": "Ghi nào? 3 video một ngày."
+    },
+    {
+      "id": 306,
+      "start": 1319.707,
+      "end": 1328.227,
+      "start_time": "00:21:59,707",
+      "end_time": "00:22:08,227",
+      "text": "Tuy nhiên với nguồn lực khác nhau của từng người và chúng ta sẽ đặt mục tiêu khác nhau, đặt sự cạnh tranh khác nhau, GODA có một nguồn lực lớn hơn."
+    },
+    {
+      "id": 307,
+      "start": 1328.227,
+      "end": 1334.727,
+      "start_time": "00:22:08,227",
+      "end_time": "00:22:14,727",
+      "text": "Và nếu như cần thiết với những chủ đề mà 12 video một ngày bên mình hoàn toàn sản xuất được thì nó là một bài toán khác."
+    },
+    {
+      "id": 308,
+      "start": 1334.727,
+      "end": 1345.727,
+      "start_time": "00:22:14,727",
+      "end_time": "00:22:25,727",
+      "text": "Còn với anh em mình sẽ chọn cái mức độ cạnh tranh phù hợp. Cạnh tranh bằng 3 video một ngày, thời lượng video tôi làm hơn họ 30%, họ làm 40 phút, tôi làm 1 tiếng."
+    },
+    {
+      "id": 309,
+      "start": 1345.727,
+      "end": 1357.5,
+      "start_time": "00:22:25,727",
+      "end_time": "00:22:37,500",
+      "text": "Cái level sự cạnh tranh cũng sẽ ở đây. Nếu như GODA tự tin vào bất cứ chủ đề nào cũng có thể lên top 1 là ở đây, vì năng lực sản xuất của GODA rất là mạnh."
+    },
+    {
+      "id": 310,
+      "start": 1357.5,
+      "end": 1367.48,
+      "start_time": "00:22:37,500",
+      "end_time": "00:22:47,480",
+      "text": "Tiếp theo, chất lượng video. Tôi sẽ nâng cấp chất lượng video bằng cách nào, làm, làm sao để tạo rào cản ở thị trường."
+    },
+    {
+      "id": 311,
+      "start": 1368.98,
+      "end": 1378.62,
+      "start_time": "00:22:48,980",
+      "end_time": "00:22:58,620",
+      "text": "Ở đây nó sẽ có cái phần là các kênh kia họ đang dùng những cái ảnh tương tự nhau, nhưng họ chưa áp dụng cái phần chuyển thể ảnh thành video nhiều."
+    },
+    {
+      "id": 312,
+      "start": 1378.62,
+      "end": 1387.48,
+      "start_time": "00:22:58,620",
+      "end_time": "00:23:07,480",
+      "text": "Thì tôi sẽ lấy đó làm cái điểm khác biệt của mình. Tôi sẽ chuyển thể, chuyển thể, ảnh thành video"
+    },
+    {
+      "id": 313,
+      "start": 1387.48,
+      "end": 1396.34,
+      "start_time": "00:23:07,480",
+      "end_time": "00:23:16,340",
+      "text": "ở một phút đầu giới thiệu video. Ở phần intro của anh em đấy. Tùy anh em viết dài viết ngắn."
+    },
+    {
+      "id": 314,
+      "start": 1396.34,
+      "end": 1402.78,
+      "start_time": "00:23:16,340",
+      "end_time": "00:23:22,780",
+      "text": "Nhìn cái bảng kế hoạch đã thấy win rồi."
+    },
+    {
+      "id": 315,
+      "start": 1404.14,
+      "end": 1405.36,
+      "start_time": "00:23:24,140",
+      "end_time": "00:23:25,360",
+      "text": "Tích vào. Ok, xong."
+    },
+    {
+      "id": 316,
+      "start": 1406.54,
+      "end": 1412.92,
+      "start_time": "00:23:26,540",
+      "end_time": "00:23:32,920",
+      "text": "Kế hoạch triển khai nó sẽ bao gồm tất cả những phần bên kia thì anh em sẽ triển khai và nghiên cứu và xong rồi sẽ phân tích vào đây."
+    },
+    {
+      "id": 317,
+      "start": 1413.5,
+      "end": 1415.42,
+      "start_time": "00:23:33,500",
+      "end_time": "00:23:35,420",
+      "text": "Ok, tích vào đã thành công. Xong."
+    },
+    {
+      "id": 318,
+      "start": 1417.02,
+      "end": 1421.04,
+      "start_time": "00:23:37,020",
+      "end_time": "00:23:41,040",
+      "text": "Vậy thì đã xong cái bảng kế hoạch triển khai kênh. Cái phần đấy tí nữa quay lại triển khai tiếp."
+    },
+    {
+      "id": 319,
+      "start": 1422.44,
+      "end": 1422.96,
+      "start_time": "00:23:42,440",
+      "end_time": "00:23:42,960",
+      "text": "Quay lại slide."
+    },
+    {
+      "id": 320,
+      "start": 1426.34,
+      "end": 1431.72,
+      "start_time": "00:23:46,340",
+      "end_time": "00:23:51,720",
+      "text": "Xong phần kế hoạch triển khai kênh"
+    },
+    {
+      "id": 321,
+      "start": 1431.72,
+      "end": 1435.64,
+      "start_time": "00:23:51,720",
+      "end_time": "00:23:55,640",
+      "text": "Dành cho chúng ta một tràng pháo tay vì đã làm xong điều này"
+    },
+    {
+      "id": 322,
+      "start": 1443.58,
+      "end": 1448.24,
+      "start_time": "00:24:03,580",
+      "end_time": "00:24:08,240",
+      "text": "Cái bảng kế hoạch triển khai kênh nó rất là nhìn thì nó nhanh đấy thôi nhưng anh em làm có thể mất nửa tháng đấy"
+    },
+    {
+      "id": 323,
+      "start": 1448.24,
+      "end": 1451.76,
+      "start_time": "00:24:08,240",
+      "end_time": "00:24:11,760",
+      "text": "Ok"
+    },
+    {
+      "id": 324,
+      "start": 1451.76,
+      "end": 1459.5,
+      "start_time": "00:24:11,760",
+      "end_time": "00:24:19,500",
+      "text": "Rồi, dành cho quy trình này một tràng pháo tay lớn hơn nào"
+    }
+  ]
+}

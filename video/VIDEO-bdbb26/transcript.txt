@@ -1,0 +1,333 @@
+Ok, quay trở lại với nội dung chính của chúng ta.
+Trước giờ nghỉ thì chúng ta đã có phần phân tích kỹ thuật.
+Thì đây sẽ đến phần triển khai chi tiết về cách viết content bằng ChatGPT, cách làm thumbnail bằng ChatGPT bản mới nhất, và cách edit video CapCut đơn giản.
+Đầu tiên chúng ta sẽ đến phần là cách viết content bằng ChatGPT.
+Đây là file tài liệu mới nhất về cách đào tạo và viết content với ChatGPT.
+Cái phần này nó sẽ có 2 phần. Phần 1 là đào tạo và phần 2 là phần viết.
+Đầu tiên chúng ta đến với phần tư duy trước.
+Phần đào tạo ChatGPT thì chúng ta cần trả lời những câu hỏi sau.
+Bạn muốn nội dung của mình mang phong cách gì?
+Hài hước.
+Bí ẩn, châm biếm, nghiêm túc, hay là phá án, v.v. Ai là đối tượng khán giả của bạn? Bạn muốn hướng đến cái tệp khán giả nào?
+Ví dụ, tệp khán giả thích những câu chuyện trinh thám
+Tệp khán giả thích những câu chuyện hài hước
+Tệp khán giả thích những câu chuyện về tình cảm gia đình
+Tệp khán giả thích những câu chuyện về câu chuyện cảm động về động vật
+Thế đó, chúng ta cần phải trả lời đến câu hỏi này
+Và mục tiêu cuối cùng của bạn là gì?
+Giúp khán giả giải quyết được vấn đề gì trong cuộc sống của họ.
+Cái này là một phần trong kinh doanh.
+Chúng ta càng giải quyết được nhiều vấn đề cho xã hội,
+thì tự nhiên tiền nó chỉ là kết quả thôi.
+Ví dụ như ở đây là giúp khán giả phát triển bản thân, giúp khán giả có niềm tin trong cuộc sống, giúp khán giả giải trí, thư giãn sau những giờ làm việc, học tập vất vả.
+Tiếp theo chúng ta sẽ đến phần cung cấp bài mẫu hoặc nội dung định hướng kênh cho ChatGPT.
+Ở phần này chúng ta sẽ thực hiện việc nạp nội dung cho ChatGPT bằng cách là đưa 10 đến 20 bài content của các kênh trong chủ đề của mình.
+Đang có lượt xem tốt nhất gần đây vào ChatGPT với câu lệnh như sau.
+Ghi nhớ bài content sau đây là mẫu để triển khai các bài viết sau với cùng văn phong, cấu trúc và cách tiếp cận.
+Cái văn phong cực kỳ quan trọng với dạng chủ đề câu chuyện này, như ông ví dụ ở đây, và hầu hết các dạng còn lại là như vậy hết.
+Vì chúng ta thực tế nói chuyện với nhau chủ yếu là bằng câu chuyện.
+Mọi thứ đều là câu chuyện hết.
+Bây giờ sẽ thực hành trực tiếp luôn, chúng ta sẽ lấy khoảng 5 đến 10 bài content trong chủ đề vào các kênh top đi Tuấn.
+Kênh Undercover Boss nhỉ? Undercover Tales á.
+Tales, ok. Vào video phổ biến nhất.
+Ấn vào nội dung, lấy content.
+Copy content của họ lại.
+Content.
+Kéo xuống.
+Chúng ta dùng cái YouTube Summary, copy content.
+Và đưa vào ChatGPT với câu lệnh.
+Hãy ghi nhớ nội dung này.
+Copy bên kia ở đi cho nó đúng quy trình.
+Copy cái câu lệnh trước đi.
+Câu lệnh, câu lệnh.
+Đến dấu 2 chấm luôn.
+Ok, đưa bài content vào.
+Xóa cái...
+Đấy, đúng rồi, đúng rồi.
+Ok, rồi transcript rồi ok, enter vào
+Thế này nó cũng ok rồi, anh em đưa vào
+Ok, chúng ta thì có cái
+tiếng Việt là ngôn ngữ mình thông hiểu hơn, mình ok hơn nhưng mà chúng ta
+Nhưng mà chúng ta mới ưu tiên làm việc với những cái nền tảng AI này bằng tiếng Anh.
+Vì nó là ngôn ngữ mà nó được đào tạo ra để làm, được đào tạo để hiểu nhất.
+Thì mình ưu tiên mình viết làm việc bằng tiếng Anh thì cho nó sẽ hiệu quả hơn.
+Nó sẽ đưa ra chính xác cái điều mình muốn hơn.
+Làm lại với các video tiếp theo.
+Đấy, nó gợi ý cho mình là có muốn đưa ra một ý tưởng mới hay không.
+Làm video tiếp theo mình sẽ làm mẫu khoảng 5 video thôi.
+Để cái việc này làm gì?
+Cái việc này để nó ghi nhớ cái dữ liệu về sau nó viết bài content cho mình nó hay.
+Cái việc mình nạp càng dữ liệu cho nó càng tốt thì nó lại càng đưa cho mình những cái kết quả nó hay hơn, nó chính xác hơn.
+Ok, nạp liên tục vào. Nạp, nhớ phải có câu lệnh nhé.
+Mỗi lần nạp, mỗi bài nạp là phải có câu lệnh.
+Copy câu lệnh rồi.
+Ok.
+Enter tiếp.
+Đã ghi nhớ. Đấy là một cái dòng ấy. Nó đã ghi nhớ đấy. Mỗi lần như thế nó phải có xác nhận là đã ghi nhớ anh em nhé.
+Ok, tiếp theo là 5 video đi. 5 video mình nghĩ là nó cũng ra là kết quả tương đối rồi đấy. Anh em nạp càng nhiều hơn
+tốt nhé. Với đặc biệt là content này là mỗi kênh một tài khoản ChatGPT riêng. Đừng dùng chung. Bên mình mỗi content một tài khoản ChatGPT riêng hết.
+Ok, lặp lại, liên tục, liên
+tục, liên tục như vậy
+Về sau chúng ta mà nạp được những cái tài khoản ChatGPT mà nạp dữ liệu nó ngon đấy
+Đưa mỗi ý tưởng, mỗi tiêu đề vào viết cho mình cả một bài luôn
+Và về sau mình thêm mỗi cái quan điểm cá nhân mới là xong
+Về sau có những cái tài khoản mà mình nghĩ rằng sau những cái dạng tài khoản ChatGPT này mà được đào tạo ngon
+Viết xịn
+Cũng là một cái tài sản của mình đấy
+Ok, sau khi đã xong thì chúng ta...
+Từ từ, kéo lên tí.
+Ok, đứng lại, đứng lại.
+Video từ kênh khác mà bạn muốn học theo phong cách viết hoặc dàn bài mà bạn thấy hiệu quả. Đây là quá trình mình nạp dữ liệu này.
+Cái phần ví dụ rất là quan trọng kìa. Tôi thích nội dung này vì kênh đó đạt được lượt xem cao,
+khán giả xem lâu. Tôi muốn video của tôi có phong cách tương tự nhưng thêm một yếu tố nào đó.
+Thì đây chính là đoạn mình đưa cho nó cái yêu cầu của mình về quan điểm cá nhân.
+Thì cái này nó sẽ dựa theo sự sáng tạo về viết content của mỗi anh em là khác nhau.
+Vậy nên là chúng ta cứ linh hoạt phần này.
+Định hình cấu trúc một bài content chuẩn là
+nếu bạn có một công thức viết content hiệu quả hãy chia sẻ với ChatGPT để tối ưu nó.
+Ví dụ như phần mở bài cách thu hút khán giả ngay từ đầu tiên,
+thân bài cách kể chuyện, bố cục, văn phong, nhấn mạnh.
+Kết bài là kêu gọi hành động như thế nào.
+Để lại dư âm ra sao?
+Thông thường thì cái tỷ lệ giữ chân của cái dạng story đến cuối video nó chỉ 10% hay là cao rồi.
+Nhưng nếu chúng ta mà có khoảng 100.000 view mà giữ chân được 10% là 10.000.
+Mà 10.000 này chúng ta có thể chuyển đổi dần ra các cái dạng video khác và thu hút họ click vào video khác thì có phải video mới của mình up ra là có thể có 10.000 view ngay không?
+Thì chỉ cần như thế là quá kinh khủng rồi.
+Ví dụ tôi muốn mở đầu video bằng một câu hỏi gây tò mò, sau đó kể chuyện
+theo dòng thời gian, cuối cùng kết luận bằng góc nhìn chuyên gia và một câu kết gây sốc.
+Đặc biệt với cái ví dụ này thì các dạng câu chuyện mà làm về câu chuyện về người nổi tiếng cực kỳ tốt với dạng này thì chúng ta hãy linh hoạt sử dụng theo từng câu chuyện khác nhau.
+Đưa feedback cho ChatGPT cực kỳ quan trọng.
+Như anh em bảo là ChatGPT nó viết chán lắm, Grok nó viết chán lắm, rồi nền tảng A, nền tảng B, nền tảng C nó viết chán lắm.
+Nó chán là do mình, nó chưa hợp ý mình thì mình phải feedback chứ.
+Giống như nhân sự làm việc mình cũng vậy thôi. Anh em làm chưa hay thì phải phân tích cho anh em là làm chưa hay ở đâu.
+Và cái gì cần phải tối ưu, cái gì cần phải làm tốt để anh em tiếp tục phát huy chứ.
+Lặp lại và tối ưu liên tục.
+Mỗi lần tôi viết bài hãy tiếp tục tinh chỉnh.
+Mỗi lần tôi viết bài hãy tiếp tục tinh chỉnh đến khi ChatGPT hoàn thành, hiểu được phong cách bạn muốn.
+Các bạn muốn càng nhiều vòng lặp, ChatGPT sẽ càng nắm bắt văn phong của bạn tốt hơn.
+Bên mình có những cái tài khoản anh em viết về dạng triết lý mà đến bây giờ thực sự là có những cái đề bài anh em đưa là mình đưa
+anh em là thử thách anh em một vài lần thôi là đưa mỗi tiêu đề chả có video ví dụ gì cả và anh em vẫn viết ra bài hoàn chỉnh.
+Thì chứng tỏ một điều là con ChatGPT bên mình làm anh em là training cũng khá là tốt rồi. Anh em viết quá nhiều trên đấy dạng nội dung ấy rồi. Thì là làm rất là tốt rồi.
+Phần viết content, gán cho ChatGPT một vai trò cụ thể, phần này mình sẽ đi vào trực tiếp là thực hành luôn.
+Gán cho ChatGPT một vai trò cụ thể, ví dụ bạn là chuyên gia viết content, viết câu chuyện về...
+Ví dụ ở đây là dạng câu chuyện của mình là gì?
+Là Undercover Boss đúng không? Undercover CEO đúng không?
+Thì mình sẽ vào gán vai cho con ChatGPT luôn, vào cái phần mà mình vừa đào tạo đó ấy.
+Để tốt nhất thì anh em nên dịch cái này, cái từ câu lệnh này sang tiếng Anh nhé.
+Đây để mình ví dụ, mình sẽ để tiếng Việt luôn, anh em dễ đọc.
+Câu chuyện về dạng nội dung.
+Chủ tịch giả vờ và cái kết.
+Với các từ khóa Undercover Boss, Undercover CEO là từ khóa chính,
+là từ khóa chính, nhân vật chính, phải nhân vật chính.
+Ok, rồi bỏ ra đằng sau đi, đây là câu lệnh, rồi Enter.
+Mình gán cho nó một vai trò cụ thể để nó biết được cái nhiệm vụ của nó là gì.
+Mình hoàn toàn hiểu định hướng các cái câu chuyện phong cách chủ tịch giả vờ và cái kết.
+Mình sẽ là người đồng hành cùng bạn để xây dựng nhân vật CEO giả dạng một người bình thường.
+Sau đó để thâm nhập hệ thống, vạch trần hành vi xấu.
+Đây là kết quả của việc mình nạp dữ liệu một cách chuẩn chỉ và nó sẽ ra được những cái dạng như này.
+Nó còn đề xuất cho mình các dạng nội dung mà.
+Ok, quay lại về phần đào tạo để đến bước tiếp theo.
+Cái bảng, bảng content.
+Cách đào tạo ChatGPT, đúng không?
+Đúng rồi.
+Hãy phân tích toàn bộ câu chuyện phía sau
+và chia thành phần nội dung chính của câu chuyện trả lời bằng tiếng Việt.
+Đây sẽ đến phần mình viết content này.
+Bây giờ mình chọn một cái bài ấy đi.
+Với kênh Undercover Tales đi.
+Rồi, ok.
+Rồi copy đấy, không lấy một cái bài content bên kia.
+Bài này 1 tháng trước 169.000 view, ok hay quá.
+Bài trend, lấy luôn.
+Mình sẽ lấy ý tưởng của họ về và viết lại nhá.
+Nhưng không được là lấy y nguyên về và copy lại đâu, đánh bản quyền đấy.
+Lại tại sao mình phải phân tích một tiếng Việt? Vì mình cũng sẽ cần phải hiểu câu lệnh mình dùng tiếng Anh, nhưng mà mình cần viết content là mình phải viết được tiếng Việt, chứ không thì mình không hiểu được đâu.
+Rồi, Enter.
+Nó sẽ phân tích, dựa vào câu lệnh này, nó sẽ phân tích cho mình các bố cục.
+Đó, bao gồm là giới thiệu là gì, nếu mà chính là gì, tình huống ban đầu, phản hồi hành động.
+Rồi, cứ để nó phân tích, mình sẽ sang phần tiếp theo, bên cách đào tạo ChatGPT đến phần tiếp theo.
+Đây là một câu lệnh tiếp theo, giữ nguyên nội dung chính.
+Đâu rồi?
+Giữ nguyên nội dung chính của câu chuyện trên thay đổi một số chi tiết sau.
+Mình muốn thay đổi điều gì?
+Dạng được câu chuyện này mình sẽ cần thay đổi.
+Thứ nhất là về nhân vật, tên nhân vật này, độ tuổi nhân vật này, cộng với đó là bối cảnh thay đổi một chút.
+Là ok.
+Tên nhân vật thay đổi thành Steve chẳng hạn,
+S, hoặc John đi, John đi, John cho dễ.
+John, ok. Tên nhân vật là độ tuổi. Chủ tịch thì nó cũng phải tầm 40 thì nghe nó hợp lý hơn. 40 tuổi.
+Ok, bối cảnh, bối cảnh, xem lại bối cảnh của cái bài cũ là gì?
+Giờ nhân vật chính là Jason Carter, đây nó vẫn thích là cái chủ chuỗi đại lý xe tải, à bây giờ mình sẽ, chủ chuỗi xe tải, zone gì đấy, John's Truck.
+Đổi bối cảnh, đổi tên các cái phần đấy đi.
+Đấy
+Chủ
+À bỏ trước bối cảnh đi
+Mình đang giới thiệu nhân vật
+Chủ chuỗi
+Chuỗi
+Sửa xe
+Đây, John
+John's Truck
+Đấy, đúng không?
+Đúng không?
+John's Truck phải có chữ S, phẩy S đằng sau chữ John ấy.
+Đúng ngữ pháp.
+Ok.
+Đó, còn phần còn lại nếu mà anh em muốn thay đổi những yếu tố về mặt nội dung như thế nào thì do tùy chỉnh của mình.
+Cái dạng câu chuyện này về bản chất nó là những câu chuyện không có thật và không ảnh hưởng, không làm hại đến ai.
+Nên là chúng ta chọn, chúng ta hoàn toàn có thể sáng tạo theo hướng của mình.
+Tuy nhiên mới đầu thì chúng ta nên làm những cái việc là mình đi Shu đã. Không nên thay đổi quá nhiều, mình chỉ nên thay đổi những yếu tố cần thiết thôi. Để mình hiểu nội dung đã. Ok, Enter để nó ra các nội dung của mình chưa.
+Ok, dựa vào các tiếp theo đến phần quay lại cái phần mà đào tạo và viết content với ChatGPT ấy, nó sẽ có cái câu lệnh tiếp theo.
+Đấy, bây giờ là cái phần quan trọng này, hãy thêm vào đầy đủ những yếu tố tình tiết trên, vào thành phân tích, phần phân tích trên sau cho, và các phần còn lại.
+Thì cái này là cái phần mà mình sẽ phân tích và mình thêm các yếu tố thể ra.
+Ở bước này nó sẽ có 2 trường hợp thể ra.
+Nếu ChatGPT đưa ra đúng ý, dàn ý mà mình mong muốn rồi thì có thể bắt đầu viết bài.
+Nếu ChatGPT chưa đưa ra dàn ý yêu cầu mình mong muốn thì nhập prompt để ChatGPT viết lại yêu cầu thật kỹ, chỉnh sửa chi tiết đến khi đúng ý.
+Bây giờ mình sẽ quay lại cái dàn ý kia xem mình nó thấy nó ưng ý chưa.
+Về cơ bản câu chuyện, kéo lên trên đầu từ phần mục 1 đấy.
+Giới thiệu, nghi ngờ và hành động nhân vật chính là John, chủ chuỗi gara sửa xe và buôn bán xe tải cũ.
+Ok, khoảng 40 tuổi, dù doanh thu vẫn ổn, John thấy nhiều khách hàng phàn nàn việc thu phí ẩn, ép giá khi sửa chữa và mua bán xe.
+Hành động là gì?
+John quyết định là làm khách hàng
+Tên giả thành Mike Thompson
+Để điều tra chính cửa hàng của mình
+Ok, mình thấy nó có dàn ý khá ok rồi
+Ok rồi, kéo xuống dưới tiếp để xem các phần còn lại xem nào.
+Cao trào khách hàng bị lừa ngay trước mặt.
+Một khách hàng khác Mark Henderson bị thông báo phải trả thêm khoảng 3.000 phí ẩn, dù đã được báo giá trước đó là 32.000 đô.
+Ok, quay lại bản triển khai mình thấy dàn ý khá ổn rồi.
+Thì mình có thể đến bước tiếp theo.
+Hãy bắt đầu viết phần 1.
+Đó, copy, cả dòng đấy luôn.
+Tại sao phải yêu cầu nó viết từng phần một? Để mình còn kiểm soát xem nó hay chưa? Nếu nó hay rồi mình mới yêu cầu viết phần tiếp theo để nó đỡ mất thời gian mình. Mình sửa cả một cái bài dài cả tiếng liền.
+Ok, Enter.
+Center
+John ngồi lặng trong chiếc Toyota Corolla cũ kỹ
+Đôi tay gõ nhịp chậm rãi lên vô lăng
+Trước mặt anh là bãi xe của John's Truck
+Cơ sở đầu tiên và quan trọng nhất
+Ok
+Khá ổn
+Để nó viết xong đi
+Cái này sẽ cần thời gian
+Ok
+Ok, kéo xếp, viết hết chưa?
+Ok, hãy tiếp tục với những phần còn lại sang copy câu lệnh tiếp. Hãy tiếp tục với những phần còn lại để nó viết nốt content cho mình. Thế nó khá ổn rồi.
+Ok, ở Enter để cho nó viết những phần còn lại nhé.
+Đấy, bây giờ ChatGPT nó có một phần khác là hay như thế này.
+Là khi mình đã cho nó những cái phần đoạn cụ thể rồi thì phần còn lại nó viết nó rất là kỹ, từng phần từng phần một.
+Ok, quay lại phần tư liệu.
+Nếu đoạn văn qua ngắn hoặc viết sai nội dung, phải yêu cầu viết lại đảm bảo dung lượng và chất lượng của nội dung.
+Cái này là mình feedback cho con ChatGPT để nó hiểu đấy.
+Lưu ý viết intro và outro cuối cùng.
+Đấy, cũng phải đánh giá lại.
+Ok, về cơ bản mình đã có một cái phần content rồi.
+Thì chúng ta sẽ cần tùy chỉnh theo chính cái nội dung của anh em.
+Thì cái đấy là cái kỹ năng bắt buộc phải luyện.
+Content là vua mà.
+Content is king. Bạn buộc chúng ta phải luyện thôi. Nhớ anh em hỏi là làm nào viết content hay. Chỉ có cách viết nhiều thôi, không có cách nào khác. Viết nhiều, xem nhiều.
+Chăm hay không bằng tay quen mà.
+Tổng kết lại quá trình viết kịch bản, thì chúng ta cần các cái lưu ý sau đây.
+Đầu tiên là gắn cho ChatGPT một vai trò cụ thể.
+Thứ hai là hãy phân tích toàn bộ câu chuyện mẫu.
+Thứ ba là thay đổi một số chi tiết.
+Thứ tư là thêm tình tiết hấp dẫn hơn.
+Thêm các cao trào đấy, để cho hấp dẫn hơn.
+Chúng ta mới đầu có thể là người sao chép, nhưng về sau hãy thành người cải tiến.
+Đấy là cách mà Trung Quốc lên mình nghĩ là top 1 thế giới với quan điểm của mình copy và cải tiến.
+Kết hợp tính, tình tiết thêm và dàn ý mẫu, viết lần lượt các phần, viết outro và intro cuối cùng và đánh giá lại đưa feedback cho nó.
+Chúng ta đã có một kịch bản content bằng tiếng Việt rồi.
+Thì việc của mình bây giờ là phải dịch nó sang tiếng Anh.
+Đây cũng là một phần anh em cũng khá ngại vì ngôn ngữ của mình không phải tiếng Anh là ngôn ngữ chính.
+Chúng ta là biết tiếng Việt, mình giỏi tiếng Việt.
+Vì phần này là mình sẽ dùng các công cụ như sau.
+Một là mình sẽ dùng ChatGPT để dịch luôn.
+Lưu ý muốn dịch, không.
+Viết hết chưa?
+Ok, ok, phần 2 đúng không?
+Cứ cho nó viết tiếp.
+Đó.
+Đấy, mình yêu cầu một lúc nó mới viết được hết, vì nó dài mà.
+Thế bây giờ quá trình dịch
+Mình trong thời gian đợi nó viết
+Thì mình sẽ hướng dẫn em luôn quá trình dịch
+Cái việc quá trình dịch này mình sẽ cần một cái tab
+ChatGPT riêng, không dùng một cái cũ nhá
+Mình sẽ cần nạp dữ liệu lại cho nó từ đầu luôn
+Để nó dịch cho mình ok
+Mở theo một cái tab
+Mở thêm một tab mới, cái này viết xong chưa?
+Ok, kéo kéo xuống lại, đừng ngắt tác vụ nó, dùng ChatGPT đừng ngắt tác vụ nó đang làm nốt.
+Ok, phần 4 cuộc đối đầu, cho nó viết đủ đi.
+Cho viết hết đi.
+Tổng nó có 7 phần đó.
+Kéo lên trên nó phải có 7 phần đó.
+Cái này xong anh em phải check lại nhé.
+Đây là mình hướng dẫn.
+Vậy nên nếu mà ngồi check lại thì nó sẽ mất rất nhiều thời gian.
+Ok, tiếp theo cho nó viết bằng hết thì thôi đến tận phần 9
+Đây là cách mình viết một nội dung dài khoảng 3 tiếng
+Tại vì ChatGPT nó có một cái giới hạn là giới hạn về token
+Mỗi một lần anh em viết nó không được dài đâu
+Bây giờ mà mình cứ copy mà paste cả một cái bài vào chắc chắn nó viết sai rồi, viết lặp rồi
+Đây mình sẽ kiểm soát bằng cách là mình viết từng phần thôi.
+Sau đó mình kiểm soát nếu như mà ổn rồi thì mình cho nó viết tiếp.
+Chưa ổn, bắt feedback cho nó là bắt nó viết lại.
+Rồi tiếp tục với các phần tiếp theo.
+Vẫn lưu ý cái gì quan trọng là nhắc lại 3 lần.
+Là đừng ngắt tác vụ của cái con ChatGPT.
+Ngắt nó đi đang mạch nó viết rồi sao nó biết nó sai đấy.
+Mỗi một đoạn dài như thế này mà!
+Đấy! Cách viết content bằng ChatGPT dài đấy!
+Tất nhiên có những con khác nó viết khá là hay nhưng mà...
+Nó có một cái nhược điểm là nó không nạp vào dữ liệu giống như con ChatGPT này, nó chưa nạp được.
+Nên là mình vẫn đang ưu tiên hướng dẫn anh em bằng ChatGPT hơn.
+Ví dụ con Grok thì nó đang viết bài quảng cáo rất là tốt.
+Mình có trong cái tài khoản ChatGPT mình có đào tạo một cái con là chuyên viết status.
+Vì sao kiểu mình không nghĩ được ý tưởng viết ấy.
+Là phải đào tạo nó để nó viết cho mình, đưa ý tưởng cho nó và viết.
+Đôi khi chỉ paste cái ảnh của mình vào, tôi bí ý tưởng viết status này quá gợi ý cho tôi một cái. Thế là gợi ý được. Rất là hay.
+Kết thúc câu chuyện nhưng bắt đầu một chuẩn mực mới.
+Ok
+Nếu bạn muốn
+Mình chuyển thể câu chuyện này
+Thành video script, slide thuyết trình
+Hoặc phiên bản rút gọn
+Để viral trên mạng xã hội
+Dạng CEO cải trang, lật mặt quản lý tham nhũng
+Mình có thể giúp bạn
+Thì cái này
+Thì cái này mình có thể yêu cầu nó thành một cái file Word để mình có thể sử dụng luôn nhưng mà mình không ưu tiên được đấy.
+Tại vì sao? Có một cái việc là chúng ta khi mà copy paste cũng là một hành động mà chúng ta xem lại nội dung đấy.
+Xem lại một lần nữa, check lại một lần nữa.
+Ok, bây giờ chúng ta sẽ mở một cái bài Word. Mình sẽ tạo một cái file mới ở trên desktop đi. Tạo một file mới trên desktop.
+Anh em có muốn có cái bài content này không? Để tham khảo thôi. Ok, thế tạo một file online đi.
+Vào cái bảng, tạo ở đây đâu nhỉ? Tạo ở đâu? Cứ tạo một file mới đi, tạo một file Word mới.
+Các Doc mới, ok, new, document, ok. Mình sẽ ghi
+là content mẫu, content mẫu, GODA Story, tên kênh ấy.
+Ok, copy từng phần content vào, xem kỹ lại nó có chưa. Cái phần chưa viết intro và
+outro đúng không? Kéo lên lại đi Tuấn, mình xem lại xem nó có viết intro, outro chưa.
+Chưa chưa?
+Check lại tại vì khi nó viết phần intro, intro của dạng story nó không rõ ràng đâu.
+Nó chỉ là kể lại câu chuyện thôi.
+Thế nên là mình cần check lại.
+John ngồi lặng trong chiếc Toyota Corolla cũ kỹ, đôi tay gõ nhịp chậm rãi trên vô lăng.
+Đây là một cách vào vấn đề trực tiếp vào dạng story anh em.
+Làm dạng này, chúng ta không nên kể câu chuyện nó quá dài dòng
+vào thẳng cái vấn đề luôn
+Thế hay rồi
+Ok, copy lại toàn bộ tờ đoạn cuối đi
+Đó, đừng copy các chapter để mình tí mình còn dịch.
+Dài chứ làm thoải mái, làm 10 tiếng content còn được.
+Giờ mình có thử thách bạn hàng đang ngồi kia làm content, quên có video 20 phút làm lên 2-3 tiếng được không?
+Lúc đầu làm cũng thấy khó lắm, sau làm thời gian theo quy trình như thế này và bạn ấy tối ưu thêm nữa thì,
+Bạn làm được.
+Content là cũng 2 tiếng, trung bình.
+Một ngày làm 2 bài.
+Rồi copy hết, đưa vào.
+Sau khi xong content thì chúng ta sẽ đến cái bước dịch.
+Đúng chưa? Có kỹ chuẩn.
+Anh em phải check kĩ lại content nhé. Những cái phần đề mục kia phải xóa đi kìa. Nó
+là phần đề mục của ChatGPT, nó đưa theo cái form mình đưa cho nó thôi. Cứ đưa cái đấy
+vào câu chuyện đang đọc dài tự nhiên lại và đó là di sản bằng tiếng Anh ấy thôi.
+Nhớ anh em bị lỗi thế nhưng mà video vẫn lên, nói chuyện bình thường nhé, không có nghĩa là mình làm đúng đâu, mình làm sai mà video vẫn lên, nó là bình thường, nó là may mắn.

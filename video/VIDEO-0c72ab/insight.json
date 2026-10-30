@@ -1,0 +1,77 @@
+{
+  "sku": "VIDEO-0c72ab",
+  "title": "V1 - Full 50 phút Thực chiến hướng dẫn quy trình A-Z làm ngách \"What-If\" đang cực HOT trends bằng Claude và Edit 100% = Claude code  |  Update 21-10-2026",
+  "actual_topic": "V1 Full 50 Phút Thực Chiến Hướng Dẫn Quy Trình A-Z Làm Ngách Trends What-If Biên Tập 100% Bằng Claude Code",
+  "category_group": "ai_automation",
+  "niche_primary": "Tự Động Hóa Code 2D & Ngách Giả Định What-If",
+  "niche_id": "what-if-claude-code",
+  "target_market": "Hoa Kỳ (US) / Quốc tế (Global)",
+  "market_code": "US,GLOBAL",
+  "key_takeaways": [
+    "Phân tích kênh đối thủ làm hoạt hình lịch sử/tâm lý: kênh đầu tiên mới 14 video đã đạt hơn 6 triệu tổng view (video đầu nổ 4 triệu view); kênh thứ hai mới lập 10 ngày các bài đều vượt 100k view.",
+    "Quy trình V1 được đóng gói thành 5 Skill chạy ngay trong Claude Desktop (Sonnet tiết kiệm token cho gói Pro, hoặc Opus cho gói Max): từ tạo cốt truyện, viết kịch bản phân cảnh, xuất prompt ảnh/video đến dựng MP4 tự động.",
+    "Tạo hình ảnh và chuyển động trên Google Flow: chạy ảnh nhân vật và ảnh bối cảnh (từ I001 đến I074) để khóa đồng bộ nhân vật, sau đó tạo video clip 8 giây theo đúng chế độ gợi ý trong file (Quality 100 credit cho cảnh mở đầu/quan trọng, Fast 20 credit hoặc Lite cho cảnh thường).",
+    "Tạo hội thoại đa nhân vật bằng tool ElevenLabs riêng (import 6 giọng đọc ứng với từng nhân vật) và chạy lệnh ghép tự động (GHEP.bat) để xuất video hoàn chỉnh kèm nhạc nền."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 4 bước thực chiến: V1 Full 50 Phút Thực Chiến Hướng Dẫn Quy Trình A-Z Làm Ngách Trends What-If Biên Tập 100% Bằng Claude Code",
+    "additional": [
+      "Giải nén bộ 5 Skill vào dự án Claude Desktop, chọn model phù hợp (Sonnet để tiết kiệm token hoặc Opus trên gói Max) và chạy Skill 1–3 để sinh kịch bản kèm bảng prompt ảnh/video.",
+      "Đưa danh sách prompt ảnh nhân vật và bối cảnh (I001–I074) vào Google Flow để tạo bộ ảnh gốc đồng bộ ngoại hình nhân vật.",
+      "Chuyển sang tạo các video clip 8 giây trên Flow theo đúng chế độ được đánh dấu trong bảng prompt (Quality 100 credit hoặc Fast 20 credit).",
+      "Dùng công cụ ElevenLabs chế độ hội thoại với 6 giọng nhân vật để xuất các file thoại, ghép nhạc nền có sẵn và chạy Skill dựng video + file GHEP.bat để render MP4."
+    ]
+  },
+  "avoid_flags": [
+    "Không bỏ qua bước tạo và kiểm tra ảnh tham chiếu nhân vật gốc trước khi sinh hàng loạt cảnh hành động trên Flow.",
+    "Không dùng model ngốn quá nhiều token trên tài khoản Claude gói Pro khiến bị giới hạn lượt chat giữa chừng khi đang viết kịch bản dài."
+  ],
+  "tools_mentioned": [
+    "Claude",
+    "Google Flow",
+    "ElevenLabs",
+    "Python"
+  ],
+  "channels_mentioned": [
+    "@thewhatiftales",
+    "@IFOLOGYFILMS"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân tích 2 kênh đối thủ ngách hoạt hình 3D nổ hàng triệu view"
+    },
+    {
+      "time": "05:06",
+      "seconds": 306,
+      "label": "Cấu trúc bộ 5 Skill tự động hóa và cách chọn model Sonnet/Opus trong Claude"
+    },
+    {
+      "time": "15:10",
+      "seconds": 910,
+      "label": "Chạy tạo bộ ảnh nhân vật và ảnh cảnh (I001–I074) đồng bộ trên Flow"
+    },
+    {
+      "time": "27:52",
+      "seconds": 1672,
+      "label": "Tạo các clip chuyển động 8 giây trên Flow theo chế độ Quality và Fast"
+    },
+    {
+      "time": "38:14",
+      "seconds": 2294,
+      "label": "Chạy Skill dựng video tự động và file GHEP.bat để xuất thành phẩm"
+    }
+  ],
+  "analysis_method": "agv_3.8_multimodal_7layer_verified",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-0c72ab/transcript.txt",
+  "sop_steps": [
+    "Sử dụng bộ WhatIf-Skills.zip để chuẩn hóa prompt hình ảnh",
+    "Tạo chuỗi hình ảnh nhất quán nhân vật và bối cảnh",
+    "Điều khiển Claude Code để ghép timeline, audio và hiệu ứng chuyển cảnh"
+  ]
+}

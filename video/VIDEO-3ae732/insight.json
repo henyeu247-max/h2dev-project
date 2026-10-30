@@ -1,0 +1,78 @@
+{
+  "sku": "VIDEO-3ae732",
+  "title": "UPDATE 04/11/2025 - NHÂN BẢN THỊ TRƯỜNG TỪ KÊNH ĐỐI THỦ HOA KỲ SANG VIỆT NAM",
+  "actual_topic": "UPDATE 04/11/2025 - NHÂN BẢN THỊ TRƯỜNG TỪ KÊNH ĐỐI THỦ HOA KỲ SANG VIỆT NAM",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Sức Khỏe & Dinh Dưỡng",
+  "niche_id": "faceless-general",
+  "target_market": "Hoa Kỳ (US) / Việt Nam",
+  "market_code": "US,VN",
+  "key_takeaways": [
+    "Chiến lược nhân bản thị trường: Lấy các kịch bản sức khỏe thành công của các kênh đối thủ Hoa Kỳ (US) và Việt hóa sáng tạo cho khán giả Việt Nam.",
+    "Hai kênh đối thủ mẫu (@songlausongkhoe360 và @healthlonglife) minh chứng cho hiệu quả của việc chuyển hóa kiến thức dinh dưỡng phương Tây về nội địa.",
+    "Ưu điểm vượt trội: Học viên tận dụng được kho nghiên cứu khoa học và cấu trúc kịch bản đã được kiểm chứng hàng triệu view của Mỹ.",
+    "Quy trình chuyển hóa: Không dịch thô từng chữ mà thay thế các loại thực phẩm phương Tây bằng các món ăn, gia vị quen thuộc tại chợ Việt Nam.",
+    "Tối ưu hóa hình ảnh: Thay thế người mẫu Tây bằng các hình ảnh người châu Á lớn tuổi gần gũi, ấm áp."
+  ],
+  "edit_sop": {
+    "primary": "Nhân bản thị trường: lấy kịch bản kênh sức khỏe Mỹ dịch sang tiếng Việt làm cho thị trường Việt Nam",
+    "additional": [
+      "Xem tổng quan kênh đối thủ ở thị trường US, xem tiêu đề video nhiều view",
+      "Lấy kịch bản từ kênh tiếng Anh, dịch sang tiếng Việt rồi làm ở thị trường Việt Nam",
+      "Có thể tổng hợp nội dung từ nhiều kênh nước ngoài rồi lấy về làm content",
+      "Chọn ngách đang trend, đào sâu vào ngách đó và thêm sáng tạo theo nhu cầu người xem"
+    ]
+  },
+  "avoid_flags": [
+    "Đang làm ngách này rồi chuyển sang ngách khác thì view giảm rõ rệt, đây là sai lầm nhiều anh em mắc phải",
+    "Tránh tự nghĩ kịch bản từ đầu khi chưa có kinh nghiệm mà nên lấy nội dung đã thành công từ kênh nước ngoài về Việt hóa theo nhu cầu người xem"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "Google Dịch"
+  ],
+  "channels_mentioned": [
+    "@songlausongkhoe360",
+    "@healthlonglife"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "00:48",
+      "seconds": 48,
+      "label": "Đánh giá hiệu quả bật kiếm tiền và tiềm năng doanh thu của ngách"
+    },
+    {
+      "time": "01:19",
+      "seconds": 79,
+      "label": "Phân tích kênh đối thủ tại thị trường US"
+    },
+    {
+      "time": "02:01",
+      "seconds": 121,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "02:29",
+      "seconds": 149,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-3ae732/transcript.txt",
+  "sop_steps": [
+    "Xem tổng quan kênh đối thủ ở thị trường US, xem tiêu đề video nhiều view",
+    "Lấy kịch bản từ kênh tiếng Anh, dịch sang tiếng Việt rồi làm ở thị trường Việt Nam",
+    "Có thể tổng hợp nội dung từ nhiều kênh nước ngoài rồi lấy về làm content",
+    "Chọn ngách đang trend, đào sâu vào ngách đó và thêm sáng tạo theo nhu cầu người xem"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

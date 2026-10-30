@@ -1,0 +1,128 @@
+{
+  "sku": "VIDEO-7ff327",
+  "title": "HỎI ĐÁP VỀ VPS VÀ NUÔI KÊNH NUÔI GA ZOOM 4-1-2026",
+  "actual_topic": "Thực chiến hạ tầng VPS & chống chết liên đới (Zoom 04/01/2026 cùng Hoàng GODA): Mô hình phân tầng 3 lớp VPS Gốc - VPS Làm Kênh - VPS GA, cơ chế cô lập IP/Device Fingerprint và quy trình phân quyền Brand Account an toàn",
+  "category_group": "Channel_Care_Infrastructure",
+  "niche_primary": "Hạ Tầng VPS, Nuôi Kênh & Bảo Mật Google AdSense (GA)",
+  "niche_id": "NICHE-10",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "tools_mentioned": [
+    "VPS",
+    "Vietnix",
+    "LowEndViet",
+    "Adobe Photoshop",
+    "Google Drive",
+    "YouTube",
+    "Google AdSense"
+  ],
+  "channels_mentioned": [
+    "@HuanVN"
+  ],
+  "course_docs": [
+    {
+      "title": "Hướng dẫn khởi tạo & sử dụng VPS Amazon (AWS) nuôi kênh",
+      "file": "assets/docs-huan/Huong_Dan_VPS_Amazon.txt",
+      "readFile": "assets/docs-huan/Huong_Dan_VPS_Amazon.txt",
+      "link": "https://drive.google.com/file/d/1Mw3lPdRjUgNIZnFIH_Un86O71sO3rAarq8OGOT3SVGc/view"
+    },
+    {
+      "title": "Bảo mật kênh phải làm (Quy tắc cách ly Email gốc, 2FA và phân quyền quản trị)",
+      "file": "assets/docs-huan/BAO_MAT_KENH_PHAI_LAM.docx",
+      "readFile": "assets/docs-huan/BAO_MAT_KENH_PHAI_LAM.docx.md",
+      "link": "https://drive.google.com/file/d/1-X5OWkzdKe6zT07p-GBgTTmUz5ZtQH7q/view"
+    },
+    {
+      "title": "Quy trình tạo và chăm sóc kênh chuẩn (SOP ngâm Gmail & khởi tạo Brand Account)",
+      "file": "assets/docs-huan/Quy_trinh_tao_va_cham_soc_kenh.pdf",
+      "readFile": "assets/docs-huan/Quy_trinh_tao_va_cham_soc_kenh.pdf.md",
+      "link": "https://drive.google.com/file/d/1FyIkEvGmnG-EFRG7XYqKHikpl8nW6b1Q/view"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Khai mạc buổi Zoom 04/01/2026: Nguyên nhân Google quét chết kênh/GA hàng loạt theo chuỗi liên đới từ giữa năm 2024"
+    },
+    {
+      "time": "05:57",
+      "seconds": 357,
+      "label": "Phân biệt rạch ròi Email Gốc (nắm quyền Chủ sở hữu tối cao) và Email Làm Kênh (nhận quyền Quản lý để thao tác hàng ngày)"
+    },
+    {
+      "time": "11:31",
+      "seconds": 691,
+      "label": "Giải thích cơ chế Google ghi nhận dấu vết thiết bị (Device Fingerprint: MAC, CPU, GPU, OS, Cookie) và vì sao đổi mạng Wi-Fi vẫn chết chùm"
+    },
+    {
+      "time": "17:20",
+      "seconds": 1040,
+      "label": "Quy tắc vàng cách ly Google AdSense (GA): Không dùng mail chứa GA để vận hành kênh có rủi ro và xử lý trùng thông tin CCCD/ngân hàng"
+    },
+    {
+      "time": "25:24",
+      "seconds": 1524,
+      "label": "Định mức an toàn trên máy tính cá nhân cho người mới: Tối đa dưới 5 kênh sạch và tuyệt đối đăng xuất khỏi ứng dụng YouTube điện thoại"
+    },
+    {
+      "time": "30:45",
+      "seconds": 1845,
+      "label": "Hoàng GODA vẽ trực tiếp trên Photoshop sơ đồ 3 tầng: VPS GỐC (5 Email/VPS) -> VPS LÀM KÊNH (1 Email Quản trị/VPS) -> VPS GA (2 Email/VPS)"
+    },
+    {
+      "time": "41:55",
+      "seconds": 2515,
+      "label": "Chiến lược đá quyền chủ sở hữu khi kênh đạt ngưỡng Bật kiếm tiền (BKT): Chuyển kênh sang mail sạch trên VPS riêng trước khi nối GA"
+    },
+    {
+      "time": "50:35",
+      "seconds": 3035,
+      "label": "Tư vấn cấu hình VPS tối ưu chi phí (2GB–4GB RAM, 2 Cores, ~140.000đ–200.000đ/tháng tại Vietnix/LowEndViet) và cách chọn vị trí IP theo nơi tạo mail"
+    },
+    {
+      "time": "60:44",
+      "seconds": 3644,
+      "label": "Quy trình ngâm Gmail cổ / Gmail mới trên VPS tối thiểu 7–14 ngày để làm sạch lịch sử thiết bị cũ trước khi tạo kênh hoặc nhận quyền"
+    },
+    {
+      "time": "102:38",
+      "seconds": 6158,
+      "label": "Mẹo chuyển file video từ máy trạm lên VPS siêu tốc (qua Google Drive hoặc tải lên YouTube Unlisted bằng kênh nháp rồi tải xuống trên VPS)"
+    }
+  ],
+  "key_takeaways": [
+    "Google không chỉ quét địa chỉ IP mà thu thập toàn diện Device Fingerprint (địa chỉ MAC, thông số phần cứng CPU/GPU, hệ điều hành, trình duyệt, lịch sử đăng nhập). Chỉ cần 1 kênh hoặc 1 tài khoản GA bị phạt chính sách trên máy tính/điện thoại từng đăng nhập chung, toàn bộ hệ thống kênh liên quan sẽ bị quét chết liên đới.",
+    "Mô hình phân tầng 3 lớp VPS chuẩn GODA giúp triệt tiêu rủi ro chết chùm: (1) VPS GỐC chứa tối đa 5 Email gốc (chỉ dùng để tạo kênh phụ Brand Account và cấp quyền, gần như không bật lên), (2) VPS LÀM KÊNH chứa 1 Email quản trị nhận quyền Quản lý từ 5 kênh để nhân sự đăng video hàng ngày, và (3) VPS GA chứa tối đa 2 tài khoản AdSense độc lập.",
+    "Tuyệt đối đăng xuất toàn bộ email kênh chính và email GA khỏi điện thoại di động. Ứng dụng YouTube/Gmail trên smartphone đồng bộ danh bạ, vị trí GPS, Wi-Fi và Device ID cực mạnh, là nguyên nhân hàng đầu làm lộ chuỗi liên kết giữa các kênh.",
+    "Đối với người mới làm dưới 5 kênh hoàn toàn sạch (100% nguyên bản, không reup, không lách bản quyền), có thể vận hành trực tiếp trên 1 máy tính cá nhân cố định; nhưng ngay khi mở rộng quy mô hoặc thuê nhân sự ngoài, bắt buộc phải tách môi trường bằng VPS.",
+    "Khi mua Gmail cổ hoặc đưa một email từng đăng nhập ở thiết bị khác lên VPS mới, phải ngâm (nuôi) trên VPS đó tối thiểu 7–14 ngày (thậm chí vài tuần) và xóa sạch thiết bị cũ trong phần Bảo mật Google trước khi tạo kênh hoặc nhận chuyển nhượng quyền chủ sở hữu.",
+    "Cấu hình VPS nuôi kênh và đăng video chỉ cần mức cơ bản (2 Cores CPU, 2GB–4GB RAM, chi phí khoảng 140.000đ–200.000đ/tháng tại các nhà cung cấp uy tín như Vietnix, LowEndViet). Toàn bộ khâu dựng và xuất file nặng thực hiện ở máy tính cá nhân, sau đó đẩy file lên VPS qua Google Drive để đăng."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước thiết lập hạ tầng 3 tầng VPS (Gốc - Làm Kênh - GA) và phân quyền Brand Account chống chết liên đới:",
+    "additional": [
+      "Khởi tạo và ngâm Email trên từng nhóm VPS độc lập: Thuê VPS Windows sạch (2–4GB RAM), đăng nhập Gmail theo đúng vùng IP lúc tạo mail, gỡ bỏ toàn bộ phiên đăng nhập thiết bị cũ và ngâm tĩnh 7–14 ngày.",
+      "Thiết lập cụm VPS GỐC (Tối đa 5 Email/VPS): Trên mỗi Email gốc, tạo 1 Kênh Phụ (Brand Account), thiết lập thông tin kênh cơ bản rồi thêm Email ở VPS Làm Kênh vào vai trò Người quản lý (Manager).",
+      "Vận hành hàng ngày trên VPS LÀM KÊNH (1 Email Quản trị/VPS): Nhân sự chỉ truy cập VPS Làm Kênh để tải video lên, tối ưu tiêu đề, mô tả, thumbnail và xem thống kê của 5 kênh mà không bao giờ chạm vào VPS Gốc.",
+      "Cách ly tuyệt đối VPS GA (Tối đa 2 Email GA/VPS): Tạo và xác minh Google AdSense (PIN, thuế, tài khoản ngân hàng) trên VPS GA riêng biệt; tuyệt đối không dùng Email GA để quản lý trực tiếp các kênh đang thử nghiệm.",
+      "Thực hiện quy trình 'Đá kênh' khi đủ điều kiện Bật kiếm tiền (BKT): Khi một kênh phát triển tốt và chuẩn bị nối GA (hoặc vừa BKT), chuyển quyền Chủ sở hữu chính (Primary Owner) của Brand Account đó sang một Email sạch trên VPS riêng để tách hoàn toàn khỏi cụm kênh đang test."
+    ]
+  },
+  "sop_steps": [
+    "Khởi tạo và ngâm Email trên từng nhóm VPS độc lập: Thuê VPS Windows sạch (2–4GB RAM), đăng nhập Gmail theo đúng vùng IP lúc tạo mail, gỡ bỏ toàn bộ phiên đăng nhập thiết bị cũ và ngâm tĩnh 7–14 ngày.",
+    "Thiết lập cụm VPS GỐC (Tối đa 5 Email/VPS): Trên mỗi Email gốc, tạo 1 Kênh Phụ (Brand Account), thiết lập thông tin kênh cơ bản rồi thêm Email ở VPS Làm Kênh vào vai trò Người quản lý (Manager).",
+    "Vận hành hàng ngày trên VPS LÀM KÊNH (1 Email Quản trị/VPS): Nhân sự chỉ truy cập VPS Làm Kênh để tải video lên, tối ưu tiêu đề, mô tả, thumbnail và xem thống kê của 5 kênh mà không bao giờ chạm vào VPS Gốc.",
+    "Cách ly tuyệt đối VPS GA (Tối đa 2 Email GA/VPS): Tạo và xác minh Google AdSense (PIN, thuế, tài khoản ngân hàng) trên VPS GA riêng biệt; tuyệt đối không dùng Email GA để quản lý trực tiếp các kênh đang thử nghiệm.",
+    "Thực hiện quy trình 'Đá kênh' khi đủ điều kiện Bật kiếm tiền (BKT): Khi một kênh phát triển tốt và chuẩn bị nối GA (hoặc vừa BKT), chuyển quyền Chủ sở hữu chính (Primary Owner) của Brand Account đó sang một Email sạch trên VPS riêng để tách hoàn toàn khỏi cụm kênh đang test."
+  ],
+  "avoid_flags": [
+    "Đăng nhập chung hàng loạt Gmail kênh và Gmail chứa Google AdSense (GA) trên cùng một điện thoại di động hoặc một trình duyệt máy tính cá nhân, dẫn đến chết chùm toàn bộ hệ thống khi 1 kênh vi phạm.",
+    "Mua Gmail cổ về rồi lập tức tạo kênh, đổ quyền chủ sở hữu hoặc nối GA ngay trong ngày mà không qua bước ngâm 7–14 ngày trên IP VPS mới để xóa vết thiết bị cũ.",
+    "Cấp thẳng quyền trên Kênh Chính (Personal Channel gắn liền với Gmail gốc) thay vì tạo Kênh Phụ (Brand Account), khiến khi cần tách kênh hoặc bàn giao cho nhân sự bắt buộc phải đưa luôn mật khẩu Gmail gốc.",
+    "Tắt nguồn (Shutdown) VPS Windows khi thoát phiên làm việc thay vì chỉ đóng cửa sổ Remote Desktop (Disconnect), hoặc thuê VPS giá rẻ trôi nổi dùng lại dải IP blacklist từng bị spam."
+  ],
+  "source_transcript": "video/VIDEO-7ff327/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true
+}

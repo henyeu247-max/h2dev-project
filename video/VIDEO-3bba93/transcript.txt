@@ -1,0 +1,159 @@
+Đây là video nói về thuật toán đề xuất của YouTube, của chính YouTube.
+Mình sub tiếng Việt cho anh em.
+Là nhà sáng tạo, chắc hẳn bạn đã tự hỏi những điều như sau.
+YouTube chọn video để quảng bá bằng cách nào?
+Biểu tượng màu vàng có ảnh hưởng đến tiềm năng khám phá của video không?
+Các thẻ thì quan trọng như thế nào?
+Trong video này, chúng tôi sẽ giải đáp tất cả những câu hỏi đó và nhiều điều khác về hệ thống tìm kiếm và khám phá của YouTube và nêu một số mẹo về tiềm năng khám phá của video.
+Đầu tiên, YouTube chọn video để quảng bá bằng cách nào?
+Dù là trên trang chủ YouTube, phần tìm kiếm hay phần đề xuất, hệ thống đề xuất của YouTube thật ra là tìm video cho người xem, thay vì tìm người xem cho video.
+Thuật toán không đẩy hoặc quảng bá video, mà tìm video cho từng người dùng mỗi khi họ truy cập YouTube.
+Mục tiêu của hệ thống tìm kiếm và khám phá là tìm ra cho từng người xem những video phù hợp mà họ nhiều khả năng sẽ thích xem.
+Vì vậy, nội dung đề xuất cho mỗi người xem đều khác biệt một đôi chút.
+Các video được xếp hạng dựa trên hàng trăm tín hiệu, chủ yếu thuộc hai loại.
+Hoạt động cá nhân của người xem và hiệu suất của video.
+Hoạt động cá nhân của người xem thì dựa trên các tín hiệu về lựa chọn ưu tiên của một người dùng, như những video họ chọn xem, video họ chọn bỏ qua, hay là video họ loại bỏ.
+Tần suất họ xem một kênh hoặc chủ đề và nhiều tín hiệu khác.
+Hệ thống của chúng tôi cũng xem xét hiệu suất của video, tức là sức hút của nội dung đối với người xem, khi được giới thiệu cho họ.
+Ví dụ, người xem chọn video, bỏ qua, hay nhấp vào nút không quan tâm. Nếu họ chọn xem, họ xem bao lâu
+và xem bao nhiêu phần trong video. Lúc này, thời lượng xem trung bình của video và tỷ lệ phần trăm đã xem trung
+bình được hệ thống coi là những tín hiệu để xếp hạng video. Và cuối cùng, người xem có thích video hay không?
+Chúng tôi đo lường mức độ hài lòng bằng nhiều tín hiệu như khảo sát dành cho những người dùng và số lượng thích.
+Những tín hiệu này giúp hệ thống của chúng tôi thu hẹp nhóm video phù hợp nhất để giới thiệu cho từng người xem.
+Nhà sáng tạo thường muốn biết thuật toán ưa chuộng loại video nào nhất.
+Nhưng hệ thống của chúng tôi không có ý kiến về loại video của bạn tạo ra và không ưu tiên dạng thức nào cụ thể.
+Thay vào đó, thuật toán cố gắng điều chỉnh theo khán giả.
+Vì vậy, thay vì lo, phải hiểu thuật toán hoặc số liệu phân tích, hãy tập trung tìm hiểu khán giả và nội dung họ thích xem.
+Tiếp theo, việc thay đổi tiêu đề hoặc hình thu nhỏ có đổi thứ hạng của video trong thuật toán hay không? Có thể. Nhưng đó là do hệ
+thống của chúng tôi phản hồi khác đi, theo cách người xem tương tác với video của bạn. Chứ không phải do việc thay đổi tiêu đề hoặc hình thu
+nhỏ video. Khi người xem thấy video của bạn có vẻ khác, cách họ tương tác với video sẽ thay đổi khi chúng tôi giới thiệu video cho họ.
+Việc đổi tiêu đề và hình thu nhỏ của video có thể là cách hiệu quả để có nhiều lượt xem hơn. Nhưng nếu video của bạn đang hoạt động tốt thì bạn không cần thay
+đổi. Nếu một video của tôi hoạt động kém thì kênh của tôi có bị ảnh hưởng gì không? Điều quan trọng là cách người xem phản hồi với từng video. Khi video được đề
+xuất cho họ, hệ thống của chúng tôi phụ thuộc vào nhiều tín hiệu ở cấp video và cấp khán giả để quyết định những video đề xuất phù hợp nhất với khán giả của bạn.
+Số lượng người xem tổng thể của kênh giảm có thể do mối quan tâm của mọi người thay đổi theo thời gian, hoặc khi người xem ngừng xem hầu hết các video của bạn khi video được giới thiệu.
+Trạng thái kiếm tiền, những biểu tượng màu vàng có ảnh hưởng đến phần tiềm năng khám phá của video không?
+Không. Hệ thống tìm kiếm và đề xuất của chúng tôi không biết video nào được kiếm tiền và video nào không.
+Hệ thống tập trung đề xuất những video mà khán giả thấy hài lòng khi xem, bất kể khi chúng có được kiếm tiền hay là không.
+Nhưng nếu có nội dung bạo lực không phù hợp cho người xem chưa đến tuổi trưởng thành hoặc các nội dung phản cảm khác, video của bạn có thể bị tắt kiếm tiền vì không phù hợp với tất cả các nhà quảng cáo.
+Video cũng có thể không được đề xuất cho nhiều người xem vì không phù hợp với tất cả các đối tượng xem.
+Tôi có cần tải lên video hàng ngày hoặc ít nhất một tuần một lần không? Không. Sau nhiều năm phân tích, chúng tôi nhận ra rằng sự tăng trưởng số lượt xem và các video tải lên không tương quan với khoảng thời gian giữa các lần tải lên.
+Nhiều nhà sáng tạo đã xây dựng được mối gắn kết đáng tin cậy với khán giả bằng chất lượng thay vì là số lượng.
+Chúng tôi khuyến khích bạn chăm sóc bản thân để tránh kiệt sức. Điều này rất quan trọng đối với khán giả và sức khỏe của bạn.
+Có những yếu tố nào khác ảnh hưởng đến lượng người xem video của tôi không?
+Có 3 yếu tố chính cho biết khán giả của bạn đến từ đâu. Đó là mối quan tâm đến với chủ đề, mức độ cạnh tranh và tính thời vụ.
+Mối quan tâm đến chủ đề đó là số lượng người trên toàn thế giới quan tâm và xem video về một chủ đề cụ thể.
+Một số chủ đề có sức hút lớn hơn những chủ đề khác, và sức hút này có thể thay đổi theo thời gian, khi một số chủ đề tăng hoặc giảm độ đột biến.
+Google Xu hướng là công cụ giúp bạn biết mức độ quan tâm của thế giới thay đổi như thế nào theo thời gian.
+Bạn thậm chí có thể lọc cụ thể đến mức quan tâm trong hoạt động tìm kiếm trên YouTube. Bạn chỉ cần vào Google Trends.
+Tiếp theo là mức độ cạnh tranh.
+Hệ thống của YouTube phải tìm kiếm và xếp hạng tất cả video mà người xem có thể muốn xem nhất.
+Ngay cả khi video của bạn có hiệu suất và có các chỉ số tốt, bạn vẫn có thể nhận ít được hiển thị hơn nếu video của các kênh hoặc nhà sáng tạo khác hoạt động còn tốt hơn.
+Sau cùng là tính thời vụ.
+Lưu lượng truy cập trên YouTube có thể thay đổi vào các thời điểm khác nhau trong năm.
+Và hãy nghĩ xem khán giả của bạn đang sống ở quốc gia nào, có những gì đang ảnh hưởng trong cuộc sống của họ.
+và biết rằng sẽ có rất là nhiều biến động về lượng người xem trong các ngày lễ lớn.
+Câu hỏi cuối cùng, các thẻ quan trọng như thế nào?
+Thật sự thì, không quan trọng lắm.
+Thẻ chủ yếu được dùng để sửa các lỗi chính tả phổ biến.
+Ví dụ, YouTube so với YouTube vs YouTube.
+Hãy nhớ rằng, hệ thống của YouTube cá nhân hóa nội dung cho từng người xem và đề xuất nội dung dựa trên mối quan tâm của khán giả.
+Hệ thống cũng chịu ảnh hưởng của các hiệu suất và mức độ tương tác của video, cùng các yếu tố bên ngoài ảnh hưởng đến mối quan tâm của mọi người theo thời gian.
+Hãy tập trung vào những nội dung mà khán giả của bạn thích. Nếu bạn làm vậy và mọi người thích xem, thì hệ thống đề xuất sẽ điều chỉnh theo.
+Rồi, ok, ok. Video này có gửi cho anh em rồi, nhưng không biết anh em có xem không? Khóa nào cũng nói rồi. Tìm những thứ chính thống ở trên YouTube họ dạy đây.
+Họ nói rõ mà, họ là nền tảng, nên họ cũng muốn mình hiểu và làm.
+Bởi vì sao? Họ có 45% tiền của anh em kiếm được ấy.
+Thế thì ở đây trong cái video nó nói về video đề xuất của YouTube, tức là nó có rất
+nhiều video đem video đến cho người dùng, chứ không phải là nhấc người dùng đi tìm video của bạn.
+Tức là nó hiểu rằng một người có xu hướng xem nhiều nội dung khác nhau. Đây cũng là tư duy
+trong việc xây dựng mô hình kinh doanh long tail, tức là cái đuôi dài. Chúng ta có một tệp khách hàng
+và chúng ta bán cho họ nhiều sản phẩm, thay vì việc chúng ta phải đi tìm một khách hàng mới.
+Mô hình này trong canvas nó cũng có. Mô hình kinh doanh canvas nó cũng có.
+Nên họ giải thích rằng nếu một video của bạn mặc dù đang được xanh các chỉ số rất tốt so với trong kênh của bạn,
+nhưng nó không có người xem bởi vì ở một đâu đó có một video nào đấy của đối thủ họ đang quan tâm nhiều hơn.
+Nó liên quan đến tính thời vụ. Ví dụ tự nhiên mà lại có một cái tin gì đấy hot là mọi người sẽ dồn đổ xô sang cái
+tin hot đấy. Ví dụ hôm nay mà có trận bóng đá, 7h tối có trận bóng đá, giờ vàng của anh em là 7h tối. Anh em
+đăng YouTube lên 7h tối mà xem. Làm gì có ai xem? Người ta đi xem bóng đá hết rồi. Sau bóng đá, view nó mới dựng ngược lên.
+Và họ nói rằng là vì một người này có nhiều sở thích như vậy nên
+họ sẽ dựa vào các tín hiệu của video đấy để có thể là đề xuất.
+Và tín hiệu đấy nó dựa trên 2 thứ
+Một là tương tác ở trong video
+Hai là hiệu suất của video
+Tương tác ở trong video tức là hành vi của người dùng với video đấy trên nền tảng YouTube
+Bao gồm like, share, comment
+Kích vào cái thanh lên xuống
+Tua qua, tua lại
+Chọn 0.5 hay là chọn 1 hay tốc độ 2
+Chọn video HD hay Full HD cái gì đấy để tương tác với nền tảng
+Đấy là phần tương tác
+Nó giúp cho tăng view rất mạnh
+Bởi vì thế nó là 1 phần 2 rồi
+Nó là 1 phần 2 cái yếu tố để ảnh hưởng đến lượng view
+Tương tác.
+Nên cần phải có những sự tương tác ở trong kênh.
+Cái tương tác dễ nhất, đơn giản nhất là chăm tab cộng đồng.
+Họ nói rằng có những nội dung mà không cần đăng lên nhiều.
+Nhưng cái tính gắn kết với khán giả đã được hình thành.
+Và tính gắn kết với khán giả này, chúng ta có thể tận dụng được các tính năng. Một là chăm tab cộng đồng. Tab cộng đồng, Hoàng
+bật một cái tab cộng đồng bất kỳ của một kênh lên đi. Thông thường anh em đều dùng tab cộng đồng kiểu spam, có video up lên.
+Thì nó sẽ gặp một cái vấn đề lớn. Ví dụ kênh này, kéo lên nữa đi. Kênh này Việt Nam làm trăm phần trăm. Đây
+là một dạng spam khán giả. Tab cộng đồng này vứt đi. Mình mà nhảy vào kênh, vào chủ đề này, mình sẽ vượt thằng này luôn.
+Thế này là nhồi vào đầu khán giả rồi, làm gì có mà tương tác, làm gì có mà hai chiều, người ta nhìn qua cái này người ta còn bỏ qua, là nó tính vào trong hệ thống đề xuất là nó bỏ qua video hay không.
+Rồi, kích vào tab cộng đồng, vào một kênh của tab cộng đồng để anh em xem.
+Bí quyết thành công đi.
+Cái này mình bỏ, mình không làm nữa, không chăm tab cộng đồng.
+Rồi, nhìn này, nó có cái yếu tố, hình ảnh.
+Hình ảnh, cuộc thăm dò ý kiến, thăm dò ý kiến cá nhân, đố vui và video.
+Hãy coi đây là một cái fanpage của anh em.
+Và làm đầy đủ cả 5 cái này để tương tác với khán giả.
+Nó giúp cho chúng ta tăng phần gắn kết với khán giả.
+Phần tương tác cực kỳ quan trọng
+Chăm tab cộng đồng bên mình
+Cực kỳ chú trọng về chăm tab cộng đồng
+Và đây là một bí mật để là lên top 1 đấy. Tất cả những kênh top 1 của mình đều chăm tab cộng đồng rất kinh luôn.
+Có các yếu tố của một con người
+Khi mà xem video bao gồm
+Cái mối quan tâm của cái chủ đề đấy
+Tức là tư duy của chúng ta là chọn thị trường đỏ
+Là nơi có nhiều view để làm là ok
+Cái tính cạnh tranh này
+Tức là nó giải thích tính cạnh tranh là nhiều video cạnh tranh với nhau để tranh giành thời gian xem của một người sử dụng nền tảng.
+Ví dụ một người về đàn ông có rất nhiều sở thích.
+Thích xem về gái xinh, thích xem về ô tô, thích xem về nhà đẹp.
+Nếu bình thường sở thích đang là xem một cái nhà mà hôm đấy tự nhiên lại có trend về gái xinh, rất có thể lượng view sẽ bị tụt.
+Mặc dù các kênh, các trong kênh của mình chỉ số này đều rất ok, nhưng vì chúng ta đã thua với một thằng đối thủ nào đấy trên thị trường kia mà chúng ta không biết.
+Và tính thời vụ, tính thời vụ là nó liên quan đến thời gian và theo mùa.
+Cái video về chữa lành ấy, nó có những video là 8 tiếng liền. Nó chỉ quay cái cảnh củi đốt trong lò.
+Tiếng nổ lách tách, lách tách của những cái khúc gỗ.
+Nhưng mà đến mùa hè thì ai xem những cái đấy nữa? Nóng, cảm giác nóng. Thích xem tuyết rơi, thích xem mưa, thích nghe tiếng lộp,
+bộp, lộp, bộp, lộp, bộp. Thì video về bên kia của mình tự nhiên là nó hết view nhé. Nó tính thời vụ, nó tính theo mùa.
+Hoặc những cái bệnh mà theo mùa không thế. Thì phải đến cái mùa đấy, đến mùa lạnh thì nó mới cảm cúm nhiều. Thì video về chữa cảm cúm mọi thứ nó lại quay trở lại. Nó có tính theo trend và theo thời vụ như vậy.
+Nên khi mà chúng ta làm
+Cuối cùng họ nói rằng là
+Thay vì tập trung vào nền tảng
+Thay vì tập trung vào các yếu tố về đề xuất
+Bạn không cần phải trở thành một chuyên gia trong việc SEO
+Bạn không cần phải trở thành một chuyên gia để về dữ liệu phân tích
+Cái thứ duy nhất chúng ta cần tập trung là khán giả
+Đây là điều quan trọng nhất
+Nó cũng thể hiện cho việc là chúng ta làm Fair Use. Fair Use là cái trụ cột đầu tiên là chúng ta có biến đổi nhiều hay không so với tác phẩm gốc. Để làm gì? Để chúng ta phục vụ cho khán giả.
+Cái thứ hai là chúng ta có chọn những cái nội dung đấy mà tránh những cái thằng to ra, tránh những cái thằng bản quyền to ra, tức là những cái thằng nó có công ty đằng sau, pháp lý đằng sau để hỗ trợ.
+bao gồm các công ty về game show, truyền hình, thể thao, âm nhạc.
+Thì tránh những cái đấy ra và tránh quyền sở hữu của các network ra. Nó cũng có.
+Thì mình tập trung vào chọn những nội dung.
+Một, footage liên quan đến việc chúng ta có thể mua được.
+Cái thứ hai, chính những nhà sáng tạo ở trên YouTube đấy họ dùng.
+Mình cũng có thể mua lại được.
+Nhắn tin cho họ mua lại được cái quyền sử dụng, vẫn được bình thường.
+Ở các nền tảng khác cũng thế. Nhắn tin xin họ về bản quyền, rất ok.
+Ngày xưa bên mình làm Fortnite là lấy cái nội dung ở trên cái nền tảng Twitch.tv là cái nền tảng live stream lớn nhất thế giới.
+Đem về tổng hợp những đoạn hay nhất up lên.
+Và lúc đó là nhắn tin cho chủ bản quyền, xin là cho mình sử dụng lại, nhưng mình sẽ có thêm thuyết minh và những cái khác nữa. Họ đồng ý mà.
+Rồi cái trụ cột thứ, thứ ba, đó là việc chúng ta sử dụng ngắn hay là dài, có rơi vào trọng tâm của cái video kia không?
+Nếu video của họ 2 tiếng mà chỉ có 1 cái đoạn 1 phút đầu tiên hay nhất, không phải 1 phút đầu tiên là 1 phút trong video đấy hay nhất, cái nội dung đấy hay nhất,
+có thể flash ra toàn bộ cái nội dung đấy chẳng hạn, mà mình lại dùng đúng cái đoạn đấy thì vẫn ăn đòn bình thường, chứ không phải 3 giây, 5 giây hay 10 giây để an toàn.
+Trụ cột thứ 4
+Đó là chúng ta có ảnh hưởng đến thị phần của người ta không?
+Nếu ảnh hưởng đến miếng bánh của người ta, thì chắc chắn
+Sớm hay muộn thôi, cũng ăn đòn
+Đấy
+Đấy là hợp tình hợp lý với Fair Use

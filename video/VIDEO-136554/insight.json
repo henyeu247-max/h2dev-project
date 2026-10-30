@@ -1,0 +1,104 @@
+{
+  "sku": "VIDEO-136554",
+  "title": "Khai Thác Google Trends Để Tìm Chủ Đề Viral",
+  "actual_topic": "Phân loại 3 nhóm từ khóa (Đang Trend, Ngắn hạn, Dài hạn) và thực chiến Google Trends (United States, 5 năm qua, Tìm kiếm trên YouTube): Bắt sóng nhân vật tóc tím 'Rumi' (MV Golden 1,4 tỷ view, lai ghép Rumi unboxing/2D/AI), nhận diện bẫy trend ngắn hạn ('US and Iran'), và khai thác từ khóa dài hạn bất tử ('Jesus', 'Animal', 'Cat', 'Monkey' AI/2D/quay thật).",
+  "category_group": "chuyen_gia",
+  "niche_primary": "SEO & Thuật Toán YouTube",
+  "niche_id": "google_trends_viral",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "tools_mentioned": [
+    "Google Trends",
+    "YouTube",
+    "Cốc Cốc"
+  ],
+  "channels_mentioned": [
+    "@SonyPicturesAnimation",
+    "@7clouds",
+    "@NetflixKContent",
+    "@BabyMonkeyAnimal"
+  ],
+  "course_docs": [
+    {
+      "title": "Tài Liệu Thực Chiến & Checklist: Săn từ khóa Đang Trend & Dài Hạn Trên Google Trends",
+      "file": "assets/docs-dgmd/VIDEO-136554/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-136554/master_prompt.md",
+      "link": "assets/docs-dgmd/VIDEO-136554/master_prompt.md"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Phân loại 3 nhóm từ khóa cốt lõi (Đang Trend, Ngắn hạn, Dài hạn) quyết định 80% thành công"
+    },
+    {
+      "time": "00:28",
+      "seconds": 28,
+      "label": "Thiết lập Google Trends chuẩn: Chọn quốc gia United States, khung 5 năm qua và lọc Tìm kiếm trên YouTube"
+    },
+    {
+      "time": "01:04",
+      "seconds": 64,
+      "label": "Nhóm 1 - từ khóa Đang Trend: Phân tích biểu đồ nhân vật 'Rumi' bùng nổ từ tháng 6/2025 tại Mỹ"
+    },
+    {
+      "time": "01:40",
+      "seconds": 100,
+      "label": "Đối chứng trên YouTube: Ca khúc 'Golden' (@SonyPicturesAnimation 1,4 tỷ view) & trào lưu làm Rumi bằng 2D/AI"
+    },
+    {
+      "time": "02:41",
+      "seconds": 161,
+      "label": "Kỹ thuật lai ghép nhân vật Trend vào ngách: Kết hợp 'Rumi unboxing' cắt hình mẫu làm video kéo view cao"
+    },
+    {
+      "time": "03:05",
+      "seconds": 185,
+      "label": "Nhóm 2 - từ khóa Ngắn hạn: Biểu đồ 'US and Iran' vọt lên ngắn ngủi lúc xung đột rồi sụt giảm mất view"
+    },
+    {
+      "time": "04:16",
+      "seconds": 256,
+      "label": "Nhóm 3 - từ khóa Dài hạn: Biểu đồ từ khóa 'Jesus' (Chúa Giê-xu) giữ nhịp tìm kiếm bền vững suốt 5 năm"
+    },
+    {
+      "time": "05:19",
+      "seconds": 319,
+      "label": "từ khóa Dài hạn ngách Động vật ('Animal', 'Cat', 'Monkey'): Khai thác đa định dạng từ quay thật đến AI & 2D"
+    }
+  ],
+  "key_takeaways": [
+    "Hệ thống từ khóa (Keyword) được chia làm 3 nhóm rõ rệt với chiến lược khai thác khác nhau: từ khóa đang trend (bùng nổ mạnh, kéo view nhanh), từ khóa ngắn hạn (chỉ sống vài ngày theo sự kiện thời sự rồi tắt hẳn) và từ khóa dài hạn (tồn tại bền vững nhiều năm tới cả thập kỷ).",
+    "Khi tra cứu trên Google Trends cho thị trường ngoại, bắt buộc phải thiết lập đúng 3 thông số: Quốc gia 'United States', Khung thời gian '5 năm qua' và chuyển nguồn dữ liệu sang 'Tìm kiếm trên YouTube' để đọc đúng lịch sử và biên độ sóng của từ khóa.",
+    "Case study từ khóa Đang Trend 'Rumi': Bắt nguồn từ nhân vật tóc tím Rumi trong bài hát 'Golden' (KPop Demon Hunters - kênh @SonyPicturesAnimation đạt 1,4 tỷ view), từ khóa 'rumi' vọt lên từ tháng 6/2025; các kênh vệ tinh lập tức ăn theo bằng cách hạ bậc kỹ thuật (không làm được 3D thì làm 2D, làm AI, quay thực tế) hoặc ghép vào ngách sẵn có như 'rumi unboxing'.",
+    "Cảnh báo bẫy từ khóa Ngắn hạn qua biểu đồ 'US and Iran': Các chủ đề xung đột địa chính trị hoặc tin tức thời sự (Iran – Mỹ, Donald Trump) chỉ tạo đỉnh nhọn trong chớp nhoáng rồi chìm xuống đáy; nếu không chớp thời cơ ngay lúc vừa bùng nổ mà đợi biểu đồ đi xuống mới làm thì sẽ hoàn toàn không có view.",
+    "Xây dựng đế chế bền vững với từ khóa Dài hạn ('Jesus', 'Animal', 'Cat', 'Monkey'): Những chủ đề như Chúa Giê-xu ('jesus') hay Động vật ('cat', 'monkey' như kênh @BabyMonkeyAnimal 124 triệu view hoặc các kênh làm Monkey AI nông trại, 2D ca nhạc) luôn giữ mức tìm kiếm cao suốt 5 năm và không bao giờ chết."
+  ],
+  "edit_sop": {
+    "primary": "SOP 5 Bước Thẩm Định Chu Kỳ Google Trends & Chuyển Hóa từ khóa Thành Video Viral",
+    "additional": [
+      "Truy cập Google Trends trên trình duyệt Cốc Cốc, thiết lập bộ lọc Quốc gia 'United States', Thời gian '5 năm qua' và Nguồn dữ liệu 'Tìm kiếm trên YouTube'.",
+      "Nhập từ khóa mục tiêu để phân loại đồ thị: Chọn làm ngay từ khóa đang trend (đang giữ đỉnh cao như 'rumi') hoặc từ khóa dài hạn (đi ngang bền vững 5 năm như 'jesus', 'cat', 'monkey') và loại bỏ các từ khóa ngắn hạn đã qua đỉnh sóng (như 'US and Iran').",
+      "Kiểm chứng chéo trên thanh tìm kiếm YouTube bằng Bộ lọc 'Loại: Video' + 'Ngày tải lên: Tuần này' + 'Sắp xếp theo: Mức độ phổ biến' để đo tốc độ hút view thực tế trong 7 ngày gần nhất.",
+      "Lai ghép nhân vật hoặc từ khóa đang trend vào ngách nội dung của kênh (ví dụ ghép nhân vật 'Rumi' với 'unboxing', 'makeup', 'karaoke').",
+      "Lựa chọn định dạng sản xuất phù hợp với nguồn lực theo quy tắc chuyển đổi: Không làm được 3D thì làm hoạt hình 2D, không làm được 2D thì dùng công cụ AI tạo video/kể chuyện (Story) hoặc cắt hình mẫu quay thật."
+    ]
+  },
+  "sop_steps": [
+    "Truy cập Google Trends trên trình duyệt Cốc Cốc, thiết lập bộ lọc Quốc gia 'United States', Thời gian '5 năm qua' và Nguồn dữ liệu 'Tìm kiếm trên YouTube'.",
+    "Nhập từ khóa mục tiêu để phân loại đồ thị: Chọn làm ngay từ khóa đang trend (đang giữ đỉnh cao như 'rumi') hoặc từ khóa dài hạn (đi ngang bền vững 5 năm như 'jesus', 'cat', 'monkey') và loại bỏ các từ khóa ngắn hạn đã qua đỉnh sóng (như 'US and Iran').",
+    "Kiểm chứng chéo trên thanh tìm kiếm YouTube bằng Bộ lọc 'Loại: Video' + 'Ngày tải lên: Tuần này' + 'Sắp xếp theo: Mức độ phổ biến' để đo tốc độ hút view thực tế trong 7 ngày gần nhất.",
+    "Lai ghép nhân vật hoặc từ khóa đang trend vào ngách nội dung của kênh (ví dụ ghép nhân vật 'Rumi' với 'unboxing', 'makeup', 'karaoke').",
+    "Lựa chọn định dạng sản xuất phù hợp với nguồn lực theo quy tắc chuyển đổi: Không làm được 3D thì làm hoạt hình 2D, không làm được 2D thì dùng công cụ AI tạo video/kể chuyện (Story) hoặc cắt hình mẫu quay thật."
+  ],
+  "avoid_flags": [
+    "Tuyệt đối không sản xuất các chủ đề thuộc nhóm từ khóa ngắn hạn (như tin tức xung đột Mỹ - Iran) khi biểu đồ Google Trends đã cắm đầu đi xuống vì lượng tìm kiếm đã cạn kiệt.",
+    "Không quên chuyển bộ lọc Google Trends sang 'Tìm kiếm trên YouTube' và khung '5 năm qua', dẫn đến đánh giá sai chu kỳ sống thật của từ khóa trên nền tảng video.",
+    "Không bỏ cuộc vì rào cản kỹ thuật 3D của video gốc (như MV 3D 1,4 tỷ view của Sony Pictures Animation) mà phải linh hoạt chuyển sang làm 2D, AI hoặc cắt giấy quay Unboxing.",
+    "Không làm nội dung tách rời xu hướng khi nhân vật trend đang bùng nổ, hãy chủ động kết hợp từ khóa nhân vật đó vào định dạng video sở trường của kênh."
+  ],
+  "source_transcript": "video/VIDEO-136554/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true
+}

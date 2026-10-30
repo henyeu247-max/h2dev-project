@@ -1,0 +1,157 @@
+{
+  "sku": "VIDEO-c0353f",
+  "title": "Quy Trình Sản Xuất Video Audio View Việt",
+  "duration": "20:14",
+  "module": "DGMD-M08",
+  "actual_topic": "Bài 29 hướng dẫn toàn diện quy trình sản xuất dòng video Truyện Audio Tuổi Già & Tâm Lý Gia Đình View Việt dài 60–115 phút, nhắm trực tiếp vào tệp khán giả trung niên và người cao tuổi tại Việt Nam có tỷ lệ giữ chân cực cao. Giảng viên phân tích 2 kênh mẫu đang tăng trưởng mạnh chỉ với 24–49 video (Lắng Nghe Tuổi Già @HayLangNgheTuoiGia và Chuyện Đời Tuổi Già @chuyendoixechieu888), giải thích lợi thế làm View Việt không bị khấu trừ thuế Hoa Kỳ cao và cách gắn 3 thẻ hashtag chuẩn (#truyentuoigia #doctruyendemkhuya #truyenaudiogiadinh). Học viên được thực hành trọn bộ 5 công cụ: nạp Master Prompt 6 trang vào ChatGPT để sinh 100 ý tưởng không trùng lặp và triển khai truyện dài 41.000–60.000+ ký tự ('Người giữ cầu và chiếc đèn tín hiệu sáng ngày anh mất'), tải 5 video cánh đồng lúa miễn phí trên Pexels, lấy phông nền xanh lá cây và ảnh cụ già trên Pinterest đưa vào ChatGPT vẽ lại ảnh nhân vật AI tách nền, tạo giọng đọc 'Ngạn Kể Chuyện' trên Vbee Studio, dựng trên CapCut PC (tỷ lệ 16:9, tính năng Thay thế clip giữ nguyên vị trí khung cảnh quê, Phụ đề tự động font Anton đóng khung đen bo góc 28%, xuất 1080p) và thiết kế Thumbnail 1920x1080 chữ to trên Picsart.",
+  "summary": "Bài 29 hướng dẫn toàn diện quy trình sản xuất dòng video Truyện Audio Tuổi Già & Tâm Lý Gia Đình View Việt dài 60–115 phút, nhắm trực tiếp vào tệp khán giả trung niên và người cao tuổi tại Việt Nam có tỷ lệ giữ chân cực cao. Giảng viên phân tích 2 kênh mẫu đang tăng trưởng mạnh chỉ với 24–49 video (Lắng Nghe Tuổi Già @HayLangNgheTuoiGia và Chuyện Đời Tuổi Già @chuyendoixechieu888), giải thích lợi thế làm View Việt không bị khấu trừ thuế Hoa Kỳ cao và cách gắn 3 thẻ hashtag chuẩn (#truyentuoigia #doctruyendemkhuya #truyenaudiogiadinh). Học viên được thực hành trọn bộ 5 công cụ: nạp Master Prompt 6 trang vào ChatGPT để sinh 100 ý tưởng không trùng lặp và triển khai truyện dài 41.000–60.000+ ký tự ('Người giữ cầu và chiếc đèn tín hiệu sáng ngày anh mất'), tải 5 video cánh đồng lúa miễn phí trên Pexels, lấy phông nền xanh lá cây và ảnh cụ già trên Pinterest đưa vào ChatGPT vẽ lại ảnh nhân vật AI tách nền, tạo giọng đọc 'Ngạn Kể Chuyện' trên Vbee Studio, dựng trên CapCut PC (tỷ lệ 16:9, tính năng Thay thế clip giữ nguyên vị trí khung cảnh quê, Phụ đề tự động font Anton đóng khung đen bo góc 28%, xuất 1080p) và thiết kế Thumbnail 1920x1080 chữ to trên Picsart.",
+  "Core_Value": "Xây dựng kênh Truyện Audio Tuổi Già View Việt thời lượng dài (60–90 phút/video) với tỷ lệ giữ chân người nghe cực cao, tránh hoàn toàn rủi ro tắt kiếm tiền do trùng lặp nội dung nhờ Hệ thống Master Prompt 2 Giai Đoạn (100 ý tưởng chia 10 nhóm x 6 chương chi tiết) và kỹ thuật dựng CapCut 'Thay thế clip' giúp sản xuất hàng loạt mà không cần tự đi quay ngoại cảnh.",
+  "Key_Action": "Sao chép toàn bộ 6 trang Master Prompt trong tài liệu Google Docs dán vào ChatGPT để lấy 100 ý tưởng câu chuyện gia đình tuổi già, chọn 1 ý tưởng để ChatGPT viết truyện dài 40.000–60.000 ký tự, tải 5 video cánh đồng lúa trên Pexels và phông nền xanh lá cây trên Pinterest, dùng ChatGPT vẽ lại ảnh cụ ông Việt Nam đã tách nền, chuyển văn bản sang giọng đọc 'Ngạn Kể Chuyện' trên Vbee Studio, ghép hoàn chỉnh trên CapCut PC (dùng Thay thế clip cho các video cảnh quê + Phụ đề tự động Anton nền đen bo góc) và làm Thumbnail 1920x1080 chữ to trên Picsart.",
+  "category_group": "chuyen_gia",
+  "niche_primary": "Truyện Audio Tâm Sự Tuổi Già & Gia Đình",
+  "niche_id": "dgmd_workflow",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "tools_mentioned": [
+    "ChatGPT",
+    "Vbee",
+    "Pexels",
+    "Pinterest",
+    "CapCut",
+    "Picsart"
+  ],
+  "tools_used": [
+    "ChatGPT",
+    "Vbee",
+    "Pexels",
+    "Pinterest",
+    "CapCut",
+    "Picsart"
+  ],
+  "channels_mentioned": [
+    "@HayLangNgheTuoiGia",
+    "@chuyendoixechieu888"
+  ],
+  "competitor_channels": [
+    {
+      "name": "Lắng Nghe Tuổi Già",
+      "url": "https://www.youtube.com/@HayLangNgheTuoiGia",
+      "handle": "@HayLangNgheTuoiGia",
+      "description": "Kênh truyện ngắn audio dành cho khán giả lớn tuổi ở Việt Nam (5 N người đăng ký, chỉ mới đăng 24 video). Được giảng viên mở trực tiếp từ 00:01 đến 01:17 để phân tích video mẫu '75 Tuổi, Tôi Quyết Định Không Về Nhà Con Nữa Dù Bị Gọi Hàng Chục Cuộc' (dài 1 giờ 33 phút, đạt 43,6 N lượt xem sau 11 ngày) cùng bộ 3 thẻ hashtag #truyentuoigia #doctruyendemkhuya #truyenaudiogiadinh."
+    },
+    {
+      "name": "Chuyện Đời Tuổi Già",
+      "url": "https://www.youtube.com/@chuyendoixechieu888",
+      "handle": "@chuyendoixechieu888",
+      "description": "Kênh chia sẻ những câu chuyện cảm động về tuổi già, tình cảm gia đình và đạo hiếu (3,7 N người đăng ký, 49 video). Xuất hiện trực tiếp trên màn hình ở 00:08–00:11 với loạt video dài trên 1 tiếng đạt lượng view bùng nổ: 222 N lượt xem ('TUỔI GIÀ GIỮ TIỀN PHÒNG THÂN'), 81 N lượt xem ('VẠCH TRẦN DÂU ÁC') và 70 N lượt xem chỉ sau 2–3 tuần."
+    }
+  ],
+  "niche_Potential": {
+    "RPM": "$0.45 – $1.30 (View Việt Nam không bị khấu trừ thuế Hoa Kỳ 30% trên doanh thu ngoại; thời lượng video dài 60–115 phút giúp chèn dày quảng cáo và tối ưu doanh thu trên mỗi người nghe)",
+    "production_Difficulty": "Thấp (Đã có sẵn Master Prompt 6 trang sinh 100 ý tưởng khác biệt hoàn toàn, nguồn video cảnh đồng quê miễn phí trên Pexels và mẹo Thay thế clip trên CapCut)",
+    "monetization_Risk": "Thấp (Kịch bản tâm lý gia đình Việt Nam nguyên bản 100%, nhân vật cụ già được tái tạo mới bằng AI không trùng ảnh gốc, có khai báo nhãn Nội dung tạo bằng AI rõ ràng)",
+    "verdict": "Mỏ vàng bền vững cho thị trường View Việt: khán giả trung niên và người lớn tuổi có lòng trung thành rất cao, thường nghe trọn vẹn cả tiếng đồng hồ và dễ dàng giúp kênh mới cán mốc bật kiếm tiền chỉ sau 20–50 video."
+  },
+  "course_docs": [
+    {
+      "name": "Master Prompt & SOP Sản Xuất Video Audio View Việt — Tuổi Già & Gia Đình (Bản chuẩn hóa)",
+      "path": "assets/docs-dgmd/VIDEO-c0353f/master_prompt.md",
+      "type": "prompt",
+      "source_url": "https://docs.google.com/document/d/1Bmm410m57ozXZb129Iy4_o0EZJERITBc-JTh7g1cXx8/edit?usp=sharing",
+      "file": "assets/docs-dgmd/VIDEO-c0353f/master_prompt.md"
+    },
+    {
+      "name": "Tài liệu gốc từ Google Docs (Master Prompt 6 trang — 100 câu chuyện 60 phút)",
+      "path": "assets/docs-dgmd/VIDEO-c0353f/doc_1.txt",
+      "type": "doc",
+      "source_url": "https://docs.google.com/document/d/1Bmm410m57ozXZb129Iy4_o0EZJERITBc-JTh7g1cXx8/edit?usp=sharing",
+      "file": "assets/docs-dgmd/VIDEO-c0353f/doc_1.txt"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Khảo sát 2 kênh Truyện Audio Tuổi Già View Việt (@HayLangNgheTuoiGia, @chuyendoixechieu888)"
+    },
+    {
+      "time": "00:33",
+      "seconds": 33,
+      "label": "Giải phẫu bố cục video đối thủ (Ảnh cụ già AI, video cảnh quê, logo, hiệu ứng Like/Sub và 3 thẻ hashtag bắt buộc)"
+    },
+    {
+      "time": "01:48",
+      "seconds": 108,
+      "label": "Giới thiệu bộ 5 công cụ sản xuất (ChatGPT, Vbee, Pexels, Pinterest, Picsart) và cách lấy Master Prompt 6 trang"
+    },
+    {
+      "time": "02:49",
+      "seconds": 169,
+      "label": "Bước 1: Chạy Master Prompt Giai đoạn 1 trên ChatGPT để tạo 100 ý tưởng câu chuyện gia đình tuổi già không trùng lặp"
+    },
+    {
+      "time": "04:43",
+      "seconds": 283,
+      "label": "Bước 2: Kích hoạt Master Prompt Giai đoạn 2 viết truyện dài 1 tiếng (Ý tưởng #100: Người giữ cầu và chiếc đèn tín hiệu)"
+    },
+    {
+      "time": "05:34",
+      "seconds": 334,
+      "label": "Bước 3: Lên Pexels tìm và tải miễn phí 5 video cảnh cánh đồng lúa, làng quê Việt Nam thay cho việc đi quay thực tế"
+    },
+    {
+      "time": "07:09",
+      "seconds": 429,
+      "label": "Bước 4: Tải phông nền xanh lá cây trên Pinterest và dùng ChatGPT tạo lại ảnh cụ già Việt Nam sắc nét đã tách nền"
+    },
+    {
+      "time": "09:44",
+      "seconds": 584,
+      "label": "Bước 5: Chuyển văn bản thành giọng đọc truyền cảm trên Vbee Studio (Ngạn Kể Chuyện / Thiện Tâm)"
+    },
+    {
+      "time": "10:55",
+      "seconds": 655,
+      "label": "Bước 6: Dựng CapCut PC (16:9, xoay ngang phông xanh, ghép ông cụ AI, nối video cánh đồng bằng Thay thế clip, Phụ đề tự động Anton)"
+    },
+    {
+      "time": "15:54",
+      "seconds": 954,
+      "label": "Bước 7: Xuất video 1080p, bật nhãn Nội dung tạo bằng AI và thiết kế Thumbnail 1920x1080 chữ to nổi bật trên Picsart"
+    }
+  ],
+  "key_takeaways": [
+    "Xây dựng kênh Truyện Audio Tuổi Già View Việt thời lượng dài (60–90 phút/video) với tỷ lệ giữ chân người nghe cực cao, tránh hoàn toàn rủi ro tắt kiếm tiền do trùng lặp nội dung nhờ Hệ thống Master Prompt 2 Giai Đoạn (100 ý tưởng chia 10 nhóm x 6 chương chi tiết) và kỹ thuật dựng CapCut 'Thay thế clip' giúp sản xuất hàng loạt mà không cần tự đi quay ngoại cảnh.",
+    "Sao chép toàn bộ 6 trang Master Prompt trong tài liệu Google Docs dán vào ChatGPT để lấy 100 ý tưởng câu chuyện gia đình tuổi già, chọn 1 ý tưởng để ChatGPT viết truyện dài 40.000–60.000 ký tự, tải 5 video cánh đồng lúa trên Pexels và phông nền xanh lá cây trên Pinterest, dùng ChatGPT vẽ lại ảnh cụ ông Việt Nam đã tách nền, chuyển văn bản sang giọng đọc 'Ngạn Kể Chuyện' trên Vbee Studio, ghép hoàn chỉnh trên CapCut PC (dùng Thay thế clip cho các video cảnh quê + Phụ đề tự động Anton nền đen bo góc) và làm Thumbnail 1920x1080 chữ to trên Picsart.",
+    "Nạp toàn bộ 6 trang Master Prompt vào ChatGPT để sinh danh sách 100 ý tưởng câu chuyện tâm lý gia đình – tuổi già Việt Nam hoàn toàn khác biệt, sau đó dán 1 ý tưởng cụ thể vào ô chat để ChatGPT triển khai thành bản truyện dài 1 giờ (40.000–60.000+ ký tự).",
+    "Vào kho video miễn phí Pexels tìm từ khóa 'cánh đồng lúa' / 'cảnh quê' và tải xuống 5 video cảnh đồng quê Việt Nam thanh bình để làm hình ảnh minh họa mà không cần tự đi quay.",
+    "Lên Pinterest tìm từ khóa 'phông nền xanh lá cây' tải 1 ảnh nền dịu mắt và tìm 'người già Việt Nam' lấy 1 ảnh mẫu, sau đó dán ảnh cụ già vào cửa sổ ChatGPT thứ hai với câu lệnh tạo lại hình ảnh sắc nét, xóa bỏ phông nền xung quanh.",
+    "Truy cập Vbee Studio (studio.vbee.vn), chọn giọng đọc 'Ngạn Kể Chuyện' trong Thư viện giọng cộng đồng để chuyển văn bản truyện thành file audio .mp3, rồi đưa vào CapCut PC dựng khung 16:9 (xoay ngang nền xanh, đặt cụ ông AI bên trái, nhân bản và 'Thay thế clip' 5 video cánh đồng bên phải, gắn sticker Like/Sub và bật Phụ đề tự động font Anton có khung nền bo góc). Xuất file ở chuẩn 1080p."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước thực chiến: Bài 29 hướng dẫn toàn diện quy trình sản xuất dòng video Truyện Audio Tuổi Già & Tâm Lý Gia Đình View Việt dài 60–115 phút, nhắm trực tiế...",
+    "additional": [
+      "Mở đường link Google Docs trong phần mô tả bài học, sao chép toàn bộ 6 trang Master Prompt dán vào ChatGPT để hệ thống lập tức xuất ra 100 ý tưởng câu chuyện gia đình tuổi già không trùng lặp.",
+      "Sao chép toàn bộ nội dung 1 ý tưởng trong danh sách 100 ý tưởng (ví dụ Ý tưởng #100) dán lại vào ChatGPT để kích hoạt Giai đoạn 2 viết thành câu chuyện hoàn chỉnh dài 40.000–60.000+ ký tự.",
+      "Truy cập Pexels (pexels.com) tìm từ khóa 'cánh đồng lúa', 'cảnh quê' tải về 5 video miễn phí; đồng thời lên Pinterest tải 1 'phông nền xanh lá cây' và 1 ảnh 'người già Việt Nam' rồi đưa ảnh cụ già sang cửa sổ ChatGPT mới yêu cầu vẽ lại sắc nét, không cần phông nền xung quanh.",
+      "Đưa văn bản truyện sang Vbee Studio (studio.vbee.vn), chọn giọng 'Ngạn Kể Chuyện' (hoặc 'Thiện Tâm') để xuất file âm thanh .mp3, sau đó đưa toàn bộ nguyên liệu vào CapCut PC dựng khung 16:9 (dùng 'Thay thế clip' nối các video cánh đồng, thêm nhãn dán Like/Share/Subscribe và tạo Phụ đề tự động font Anton nền đen bo góc). Xuất video ở độ phân giải 1080p.",
+      "Mở Picsart chọn Blank Canvas đổi cỡ về 1920x1080, ghép phông nền xanh lá cây + ảnh cụ ông AI + dòng chữ in hoa thật to bằng font Anton Regular (ví dụ: 'CÂU CHUYỆN MỚI NHẤT - TRẢ LẠI DANH DỰ CHO NGƯỜI BỊ OAN') có viền tương phản mạnh; khi đăng lên YouTube gắn 3 thẻ #truyentuoigia #doctruyendemkhuya #truyenaudiogiadinh và bật khai báo 'Nội dung tạo bằng AI'."
+    ]
+  },
+  "sop_steps": [
+    "Nạp toàn bộ 6 trang Master Prompt vào ChatGPT để sinh danh sách 100 ý tưởng câu chuyện tâm lý gia đình – tuổi già Việt Nam hoàn toàn khác biệt, sau đó dán 1 ý tưởng cụ thể vào ô chat để ChatGPT triển khai thành bản truyện dài 1 giờ (40.000–60.000+ ký tự).",
+    "Vào kho video miễn phí Pexels tìm từ khóa 'cánh đồng lúa' / 'cảnh quê' và tải xuống 5 video cảnh đồng quê Việt Nam thanh bình để làm hình ảnh minh họa mà không cần tự đi quay.",
+    "Lên Pinterest tìm từ khóa 'phông nền xanh lá cây' tải 1 ảnh nền dịu mắt và tìm 'người già Việt Nam' lấy 1 ảnh mẫu, sau đó dán ảnh cụ già vào cửa sổ ChatGPT thứ hai với câu lệnh tạo lại hình ảnh sắc nét, xóa bỏ phông nền xung quanh.",
+    "Truy cập Vbee Studio (studio.vbee.vn), chọn giọng đọc 'Ngạn Kể Chuyện' trong Thư viện giọng cộng đồng để chuyển văn bản truyện thành file audio .mp3, rồi đưa vào CapCut PC dựng khung 16:9 (xoay ngang nền xanh, đặt cụ ông AI bên trái, nhân bản và 'Thay thế clip' 5 video cánh đồng bên phải, gắn sticker Like/Sub và bật Phụ đề tự động font Anton có khung nền bo góc). Xuất file ở chuẩn 1080p.",
+    "Thiết kế Thumbnail kích thước 1920x1080 trên Picsart với ảnh cụ ông AI và cụm tiêu đề rút gọn chữ in hoa cỡ cực lớn (font Anton Regular, có viền nổi bật); khi đăng video gắn đúng 3 hashtag (#truyentuoigia #doctruyendemkhuya #truyenaudiogiadinh), bật tích chọn 'Nội dung tạo bằng AI' và kiên trì đo lường tối thiểu từ 3 đến 10 video trên kênh."
+  ],
+  "avoid_flags": [
+    "Tuyệt đối không viết 10 video có cốt truyện và mô-típ na ná nhau (trùng lặp xung đột và cách giải quyết), vì thuật toán YouTube hiện tại quét nội dung lặp lại rất gắt và dễ dẫn đến tắt kiếm tiền.",
+    "Không sử dụng trực tiếp bức ảnh cụ già tải nguyên gốc từ Pinterest lên video và Thumbnail; hãy đưa qua ChatGPT vẽ lại một nhân vật AI mới sắc nét, tách sẵn nền để tránh trùng lặp bản quyền hình ảnh với các kênh khác.",
+    "Không cần xuất file video Audio ở độ phân giải 2K hay 4K gây nặng máy và tốn thời gian render vô ích — với dòng video kể chuyện 1 tiếng chỉ cần xuất chuẩn 1080p (hoặc 720p) là tối ưu nhất.",
+    "Không quên bật mục khai báo 'Nội dung tạo bằng AI' (Altered or synthetic content) trong YouTube Studio khi đăng tải và không bỏ cuộc sớm khi mới đăng 1–2 bài; bắt buộc phải test và đo lường tối thiểu từ 3 đến 10 video trên một kênh."
+  ],
+  "source_transcript": "video/VIDEO-c0353f/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true
+}

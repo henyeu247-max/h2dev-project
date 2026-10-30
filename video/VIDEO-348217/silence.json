@@ -1,0 +1,22 @@
+{
+  "engine": "cuda_gpu",
+  "gpu_device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "stft_speech_band": true,
+  "gpu_chunk_bounds": [
+    0.0,
+    184.1,
+    341.65,
+    392.77
+  ],
+  "noise_db": -35,
+  "min_duration": 2.5,
+  "silence_regions": [
+    {
+      "start": 376.6,
+      "duration": 16.15,
+      "end": 392.75
+    }
+  ],
+  "silence_count": 1,
+  "silence_total_sec": 16.15
+}

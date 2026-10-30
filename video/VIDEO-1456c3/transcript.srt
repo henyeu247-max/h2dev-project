@@ -1,0 +1,368 @@
+1
+00:00:00,000 --> 00:00:12,620
+Tiếp theo, anh em dở lấy đằng sau. Viên xúc xắc có nhiều mặt. Đây là lời hứa cuối cùng của mình với anh em trong chương trình này.
+
+2
+00:00:17,000 --> 00:00:19,960
+Viên xúc xắc có nhiều mặt. Anh em đọc tài liệu ở bên cạnh này.
+
+3
+00:00:19,960 --> 00:00:22,560
+Hãy tưởng tượng
+
+4
+00:00:22,560 --> 00:00:26,800
+Bạn và một người bạn
+
+5
+00:00:26,800 --> 00:00:29,680
+Tức là hai người đang chơi xúc xắc với nhau
+
+6
+00:00:29,680 --> 00:00:33,680
+Mỗi người chỉ có một viên xúc xắc duy nhất
+
+7
+00:00:33,680 --> 00:00:35,920
+Một viên có 20 mặt
+
+8
+00:00:36,000 --> 00:00:38,040
+Và một viên có 200 mặt
+
+9
+00:00:38,040 --> 00:00:42,940
+Trên mỗi viên xúc xắc chỉ có duy nhất một màu xanh lá
+
+10
+00:00:42,940 --> 00:00:45,980
+Còn lại các mặt thì đều có màu đỏ
+
+11
+00:00:45,980 --> 00:00:52,980
+Ok, mình sẽ vẽ ở đây cho nó đẹp.
+
+12
+00:00:54,680 --> 00:00:57,500
+Đây, tôi chỉ có một màu xanh lá ở đây thôi.
+
+13
+00:01:00,300 --> 00:01:02,960
+Còn lại là tôi có màu đỏ.
+
+14
+00:01:04,780 --> 00:01:04,960
+Đấy.
+
+15
+00:01:07,000 --> 00:01:08,980
+Mục tiêu của trò chơi này rất đơn giản.
+
+16
+00:01:09,760 --> 00:01:12,940
+Đổ xúc xắc ra mặt xanh nhiều lần nhất có thể.
+
+17
+00:01:13,120 --> 00:01:14,020
+Luật chơi như sau.
+
+18
+00:01:14,020 --> 00:01:20,940
+Bạn không thể nhìn thấy được viên xúc xắc của bạn có bao nhiêu mặt, không biết là 20 hay 200.
+
+19
+00:01:20,940 --> 00:01:25,820
+Bạn chỉ có thể nhìn thấy khi bạn đổ ra mặt xanh hay mặt đỏ
+
+20
+00:01:25,820 --> 00:01:27,860
+Nếu bạn đổ ra mặt xanh
+
+21
+00:01:27,860 --> 00:01:31,700
+Một trong số các mặt đỏ sẽ chuyển sang màu xanh
+
+22
+00:01:31,700 --> 00:01:35,320
+Và bạn được tung xúc xắc lại
+
+23
+00:01:35,320 --> 00:01:38,100
+Anh em hiểu đoạn này chưa?
+
+24
+00:01:39,320 --> 00:01:40,460
+Tức là nó chỉ có một mặt xanh thôi
+
+25
+00:01:40,940 --> 00:01:43,740
+Nếu anh em quay vứt này mà nó ra màu đỏ thì quay lại
+
+26
+00:01:43,740 --> 00:01:45,320
+Còn nếu anh em ra màu xanh
+
+27
+00:01:45,320 --> 00:01:49,300
+Thì cái mặt đỏ là một mặt đỏ sẽ được chuyển sang thành màu xanh
+
+28
+00:01:49,300 --> 00:01:51,891
+Một mặt đỏ sẽ được chuyển sang màu xanh
+
+29
+00:01:51,891 --> 00:01:55,231
+Nếu bạn đổ ra màu đỏ không có gì xảy ra và bạn lại tung lại.
+
+30
+00:01:56,151 --> 00:01:58,631
+Trò chơi kết thúc khi bạn ngừng tung xúc xắc.
+
+31
+00:01:59,331 --> 00:02:01,771
+Và nếu bạn ngừng tung xúc xắc thì bạn thua.
+
+32
+00:02:02,000 --> 00:02:03,231
+Đấy là với hai người bạn.
+
+33
+00:02:05,171 --> 00:02:06,031
+Bạn làm gì?
+
+34
+00:02:06,531 --> 00:02:10,231
+Ở đây họ nói rằng bạn tung xúc xắc khi bạn đổ ra màu đỏ.
+
+35
+00:02:11,051 --> 00:02:13,131
+Bạn nhặt lên và tung lại.
+
+36
+00:02:14,131 --> 00:02:20,251
+Khi những người khác đổ ra màu xanh thì bạn nhặt viên xúc xắc của mình lên và tung lại.
+
+37
+00:02:20,251 --> 00:02:26,251
+Tức là không quan trọng là thằng khác tung thế nào. Chỉ quan trọng là mình tung thế nào thôi.
+
+38
+00:02:27,751 --> 00:02:37,851
+Khi bạn đổ ra màu xanh, bạn nhặt xúc xắc lên và tung lại. Bạn liên tục tự nhủ với mình. Càng tung nhiều lần, tôi càng có thêm nhiều mặt xanh.
+
+39
+00:02:37,851 --> 00:02:50,351
+Ban đầu thi thoảng bạn mới đổ ra mặt xanh, bởi vì tỷ lệ có thể là 1 trên 6, nhưng nếu mà viên xúc xắc có 200 mặt có thể là 1 trên 199.
+
+40
+00:02:53,750 --> 00:03:06,710
+Nhưng khi càng ngày có càng nhiều mặt đỏ mà chuyển sang màu xanh, thì tần suất mặt xanh xuất hiện càng ngày càng nhiều. Anh em đi đến đoạn này đã hiểu hết chưa?
+
+41
+00:03:08,710 --> 00:03:18,070
+Đến một lúc nào đó bạn tung xúc xắc đủ nhiều, màu xanh sẽ xuất hiện như một quy luật chứ không còn là ngoại lệ nữa.
+
+42
+00:03:19,510 --> 00:03:23,650
+Khi màu xanh nó quá nhiều rồi thì cái xác suất ra màu xanh nó lại nhiều hơn.
+
+43
+00:03:23,750 --> 00:03:31,570
+Còn khi bạn của bạn thì làm gì? Anh ấy tung xúc xắc một vài lần và ra màu đỏ. Anh ấy nhìn thấy rằng
+
+44
+00:03:31,570 --> 00:03:39,390
+bạn ra màu xanh và anh ấy phàn nàn rằng chắc chắn là bạn đang cầm viên xúc xắc có ít mặt hơn anh ấy.
+
+45
+00:03:41,000 --> 00:03:53,430
+Vì mình không biết được là mình đang cầm xúc xắc 20 hay 200 mà. Anh ấy tung xúc xắc một vài lần và đều ra màu đỏ. Anh ấy nhìn thấy bạn ra màu xanh và anh ấy chắc chắn rằng bạn đang cầm viên xúc xắc.
+
+46
+00:03:53,430 --> 00:03:54,970
+Xúc xắc ít mặt hơn
+
+47
+00:03:54,970 --> 00:03:57,950
+Anh ấy lý luận rằng chỉ có cách đó
+
+48
+00:03:57,950 --> 00:03:59,830
+Thì bạn mới có thể tung ra
+
+49
+00:03:59,830 --> 00:04:01,450
+Mặt xanh trước anh ấy
+
+50
+00:04:01,450 --> 00:04:02,910
+Và cho dù thế nào
+
+51
+00:04:02,910 --> 00:04:05,610
+Bạn cũng cứ tung xúc xắc rất nhiều lần
+
+52
+00:04:05,610 --> 00:04:06,810
+Thì mới ra được
+
+53
+00:04:06,810 --> 00:04:09,000
+Vậy thật ra là bạn
+
+54
+00:04:09,000 --> 00:04:11,070
+Đang cầm viên xúc xắc nào
+
+55
+00:04:13,430 --> 00:04:17,430
+Dù sao anh ấy vẫn đổ thêm một vài lần nữa với tâm trạng đầy thất vọng
+
+56
+00:04:17,430 --> 00:04:20,681
+Và cuối cùng anh ấy ra được một mặt xanh
+
+57
+00:04:20,681 --> 00:04:24,741
+Nhưng ngay sau đó anh ấy phàn nàn về việc này mất quá lâu để đổ ra được mặt xanh.
+
+58
+00:04:25,381 --> 00:04:30,721
+Thay vì tập trung chơi anh ấy lại càng dành nhiều thời gian hơn để nhìn bạn và phàn nàn.
+
+59
+00:04:30,721 --> 00:04:38,921
+Trong khi đó bạn đã bắt đầu xây dựng được chuỗi màu xanh của riêng mình. Thật là quá là dễ dàng cho anh. Anh ấy
+
+60
+00:04:38,921 --> 00:04:47,121
+cau có. Anh ấy lúc nào cũng ra được mặt xanh. Trò này thật là gian lận. Vậy thì chơi để làm cái gì nữa? Bỏ cuộc.
+
+61
+00:04:47,121 --> 00:04:54,201
+Vậy thì xúc xắc 20 mặt hay là xúc xắc 200 mặt có phải là bất khả thi không?
+
+62
+00:04:55,821 --> 00:05:05,961
+Nếu bạn thực sự tham gia trò chơi này, bạn sẽ nhận ra khi bạn tung đủ số lần, việc bạn cầm viên xúc xắc nào, 20 hay 200 không còn quan trọng nữa.
+
+63
+00:05:08,041 --> 00:05:15,281
+Viên xúc xắc có ít mặt hơn có thể ra màu xanh sớm hơn. Viên xúc xắc có nhiều mặt hơn có thể ra màu xanh muộn hơn.
+
+64
+00:05:15,281 --> 00:05:25,861
+Nhưng chỉ cần viên xúc xắc một mặt màu xanh, chỉ cần có duy nhất một mặt màu xanh thôi, thì luôn luôn có cơ hội để bạn đổ ra màu xanh tiếp theo.
+
+65
+00:05:27,300 --> 00:05:28,940
+Trong những lần xúc xắc tiếp theo.
+
+66
+00:05:30,000 --> 00:05:35,260
+Mọi viên xúc xắc đều được xây dựng chuỗi màu xanh khi mà chúng ta tung đủ số lần.
+
+67
+00:05:37,140 --> 00:05:46,920
+Tất cả chúng ta đều có viên xúc xắc nhiều mặt và nếu chỉ nhìn người khác chơi, bạn sẽ không biết được họ đã tung xúc xắc lần thứ 100 hay lần thứ 100 nghìn.
+
+68
+00:05:48,720 --> 00:05:55,880
+Bạn không biết lúc mới bắt đầu những người khác đã chơi giỏi đến mức nào, bạn chỉ thấy được hiện tại họ giỏi đến mức nào.
+
+69
+00:05:57,300 --> 00:06:02,220
+Nhưng nếu bạn hiểu trò chơi bạn cũng sẽ biết rằng điều đó không quan trọng.
+
+70
+00:06:03,760 --> 00:06:07,840
+Một số người bắt đầu chơi sớm và một số người thì bắt đầu muộn.
+
+71
+00:06:09,440 --> 00:06:15,440
+Và những người còn lại chỉ ngồi đó phàn nàn về việc những người khác thật là may mắn.
+
+72
+00:06:16,600 --> 00:06:19,020
+Tôi đoán rằng họ may mắn hơn bởi vì họ chơi.
+
+73
+00:06:19,640 --> 00:06:25,080
+Và khi họ tung xúc xắc ra màu đỏ họ đã không bỏ cuộc, họ tung lại một lần nữa.
+
+74
+00:06:25,080 --> 00:06:29,940
+Việc bạn học làm video YouTube cũng tương tự như trò chơi xúc xắc nhiều mặt.
+
+75
+00:06:31,280 --> 00:06:35,480
+Bạn không biết nó có hiệu quả hay không cho đến khi bạn thử nghiệm.
+
+76
+00:06:35,480 --> 00:06:40,650
+Khi bạn bắt đầu làm video, dù nó không hoàn hảo
+
+77
+00:06:41,000 --> 00:06:42,650
+Dù cả tuần bạn mới được một cái
+
+78
+00:06:42,650 --> 00:06:43,490
+Nhưng
+
+79
+00:06:43,490 --> 00:06:45,830
+Chỉ cần bạn up video lên
+
+80
+00:06:45,830 --> 00:06:51,000
+Chắc chắn bạn sẽ gặp màu đỏ vào những lần đầu.
+
+81
+00:06:51,000 --> 00:06:53,180
+Đầu tiên không vấn đề gì hết
+
+82
+00:06:53,180 --> 00:06:55,560
+Nhưng nếu bạn cố gắng đủ nhiều
+
+83
+00:06:55,680 --> 00:06:57,700
+Bạn sẽ đổ ra màu xanh
+
+84
+00:06:57,700 --> 00:07:05,693
+Và khi video nào đó có hiệu quả, hãy nhớ tới công thức của vòng quay vô hạn. Chúng
+
+85
+00:07:05,693 --> 00:07:13,687
+ta tìm lấy một điểm hiệu quả và nhân bản nó ra rất nhiều lần. Bạn có cơ
+
+86
+00:07:13,687 --> 00:07:21,680
+hội tốt hơn để làm nó hiệu quả một lần nữa. Càng làm nhiều, mọi thứ càng dễ dàng.
+
+87
+00:07:21,680 --> 00:07:28,840
+Bạn bắt đầu hiểu được trò chơi, không quan trọng có bao nhiêu người tham gia hay viên xúc xắc của bạn có bao nhiêu mặt.
+
+88
+00:07:29,360 --> 00:07:32,400
+Bạn bắt đầu nhận ra chỉ có 2 yếu tố đảm bảo.
+
+89
+00:07:33,780 --> 00:07:38,920
+Một, càng tung xúc xắc được nhiều lần, bạn càng đạt kết quả tốt hơn.
+
+90
+00:07:39,800 --> 00:07:42,080
+Hai, nếu bạn bỏ cuộc, bạn thua.
+
+91
+00:07:43,240 --> 00:07:46,160
+Vì vậy, đây là lời hứa cuối cùng của tôi dành cho bạn.
+
+92
+00:07:46,940 --> 00:07:50,740
+Bạn không thể thua nếu bạn không bỏ cuộc.
+

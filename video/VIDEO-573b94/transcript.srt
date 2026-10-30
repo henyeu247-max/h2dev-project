@@ -1,0 +1,620 @@
+1
+00:00:00,000 --> 00:00:09,513
+Xong, chuyển đến mục tiếp theo. Tên kênh. Tên kênh này nó có 2 luồng ý kiến trái chiều. Một bên thì người ta sẽ bảo là tên kênh này phải độc lạ
+
+2
+00:00:09,513 --> 00:00:19,027
+cơ. Thì nó dễ tìm. Tuy nhiên về hướng của bên mình thì luôn luôn tên kênh độc lạ cũng tốt. Yêu cầu là phải có từ khóa lý tưởng của chủ đề. Ví
+
+3
+00:00:19,027 --> 00:00:28,540
+dụ như đây, kênh này nó làm rất là tốt rồi. Nó đúng thôi, nó chả có gì cả. Thực tế là đôi khi họ có thể là họ không nhận ra thôi.
+
+4
+00:00:28,540 --> 00:00:31,080
+Nhưng mà đây chính là họ bắt chước kênh khác rồi.
+
+5
+00:00:31,860 --> 00:00:34,580
+Mình làm healthy food, thì phải có từ healthy chứ.
+
+6
+00:00:35,880 --> 00:00:36,880
+Sức khỏe này phải có từ đấy chứ.
+
+7
+00:00:37,580 --> 00:00:39,660
+Trong cái thêm bên trước, hoặc đằng sau như thế nào.
+
+8
+00:00:40,580 --> 00:00:46,220
+Ví dụ như kênh Dược sĩ Nguyễn Hiền kia, bên mình triển khai, kênh sức khỏe đấy,
+
+9
+00:00:46,600 --> 00:00:49,340
+đằng sau nó là sức khỏe thú vị à?
+
+10
+00:00:50,040 --> 00:00:50,520
+Check lại đi.
+
+11
+00:00:52,480 --> 00:00:53,420
+Đây, check kênh trước.
+
+12
+00:00:53,880 --> 00:00:57,580
+Một số kênh đó, họ cứ để cái tên key đấy thôi.
+
+13
+00:00:59,000 --> 00:01:10,700
+Nó phải có từ khóa lý tưởng, tiếp theo là những cái tiếp theo thế nào? Đấy là do mình. Thêm một yếu tố nào đấy cho nó khác biệt. Mục đích phải thêm là vì để dễ tìm tên kênh, không bị lẫn.
+
+14
+00:01:10,700 --> 00:01:18,640
+Còn việc anh chị em mà chọn những cái từ khóa nó quá lớn ấy, để mình chọn vào làm cái tên kênh ấy, thì nó sẽ mất thời gian index rất là lâu.
+
+15
+00:01:19,200 --> 00:01:21,960
+Mình tìm nó toàn ra video, 1 triệu view thôi, không ra kênh.
+
+16
+00:01:24,040 --> 00:01:26,660
+Ok, ví dụ những trường hợp này phải có từ healthy.
+
+17
+00:01:27,660 --> 00:01:27,940
+Cho vào.
+
+18
+00:01:32,340 --> 00:01:32,620
+Copy.
+
+19
+00:01:35,200 --> 00:01:36,120
+Copy, copy.
+
+20
+00:01:40,816 --> 00:01:42,456
+Healthy. Healthy đã ok rồi.
+
+21
+00:01:43,456 --> 00:01:44,136
+Copy vào.
+
+22
+00:01:45,796 --> 00:01:46,956
+Ghi rõ phải có từ healthy.
+
+23
+00:01:51,536 --> 00:01:53,936
+Xong phần này, đã ra được ý tưởng về tên kênh.
+
+24
+00:01:54,000 --> 00:01:59,976
+Tiếp theo là ý tưởng 10 đến 30 video đầu tiên là gì? Cái mục đích tại sao lại phải có phần này?
+
+25
+00:02:02,056 --> 00:02:10,096
+Bởi vì mình xác định mình đã làm một cái kênh là dự án đánh phải ít nhất 1 tháng, 3 tháng, 5 tháng, 1 tháng, 3 tháng, 6 tháng.
+
+26
+00:02:10,656 --> 00:02:14,936
+Chứ không ai đánh dự án đánh 10 video vứt đấy mà đợi mong nó lên được. Không có chuyện đấy được.
+
+27
+00:02:15,696 --> 00:02:23,856
+Và số lượng video hôm qua tượng trưng tối thiểu là 152 video. Nó mới lên được cái mức là bật kiếm tiền.
+
+28
+00:02:23,936 --> 00:02:24,616
+Nghìn sub.
+
+29
+00:02:27,976 --> 00:02:30,936
+Vậy nên tối thiểu là 10 đến 30 video.
+
+30
+00:02:33,276 --> 00:02:37,556
+Không nên làm ít quá. 10 cái thì cũng hơi ít. Nhưng mà mức trung bình anh em có thể làm 20 cái.
+
+31
+00:02:38,016 --> 00:02:41,016
+Sau đó theo dõi thị trường các kênh trong chủ đề họ đang làm về cái gì?
+
+32
+00:02:41,856 --> 00:02:43,616
+Follow trước, sáng tạo sau.
+
+33
+00:02:46,256 --> 00:02:51,056
+Trong chủ đề này kéo về kia thì mình sẽ phân tích là các cái nội dung gần đây họ làm về cái gì?
+
+34
+00:02:51,476 --> 00:02:53,876
+Đây copy cái tiêu đề, copy cái link của họ vào.
+
+35
+00:02:54,000 --> 00:03:04,536
+Phân tích kỹ tiêu đề họ có cái gì, thumbnail họ có cái gì. Luôn luôn bắt đầu từ thumbnail xong tiêu đề, bắt đầu đến cái phần content bên trong.
+
+36
+00:03:04,536 --> 00:03:10,536
+Gần gần đây thôi nhá.
+
+37
+00:03:10,536 --> 00:03:14,536
+Mà nó nhiều view đấy.
+
+38
+00:03:14,536 --> 00:03:16,536
+Đấy copy vào.
+
+39
+00:03:16,536 --> 00:03:18,536
+Đó một loạt ra.
+
+40
+00:03:18,536 --> 00:03:20,536
+Có cả link bên cạnh luôn.
+
+41
+00:03:20,536 --> 00:03:24,536
+Làm bảng sheet có cả link bên cạnh luôn.
+
+42
+00:03:24,536 --> 00:03:28,696
+Phân tích nó phải rõ ràng, không về sau lại đi ngồi tìm, không ra cái đâu.
+
+43
+00:03:33,696 --> 00:03:34,800
+Rồi, anh về sau, paste cái link này vào.
+
+44
+00:03:34,800 --> 00:03:35,740
+Vào cái link kia thôi.
+
+45
+00:03:41,620 --> 00:03:42,820
+Ok, lấy 3 cái.
+
+46
+00:03:58,040 --> 00:04:01,920
+Anh em làm, cố gắng, tối thiểu là 20 cái nhé.
+
+47
+00:04:03,360 --> 00:04:04,380
+Cố gắng, tối thiểu là 20 cái.
+
+48
+00:04:06,920 --> 00:04:08,580
+Bắt đầu mình cần như thế đã.
+
+49
+00:04:08,980 --> 00:04:09,920
+Còn về sau làm thêm sau.
+
+50
+00:04:13,380 --> 00:04:14,120
+Đấy, điểm chung.
+
+51
+00:04:15,000 --> 00:04:18,000
+Tôi ăn 3 loại trái cây, tôi ăn 5 loại trái cây.
+
+52
+00:04:19,260 --> 00:04:22,560
+Phân tích nhiều video xem khán giả họ đang quan tâm điều gì.
+
+53
+00:04:23,100 --> 00:04:24,080
+Nếu như gần đây người ta quan tâm là...
+
+54
+00:04:24,080 --> 00:04:27,280
+Quan tâm là tôi ăn 3 loại trái cây, 5 loại trái cây.
+
+55
+00:04:27,580 --> 00:04:30,560
+Khán giả quan tâm là ăn loại trái cây này khỏe hay là yếu.
+
+56
+00:04:31,680 --> 00:04:37,080
+Thì mình lập một cái list 20 video đánh trực tiếp vào những nội dung khán giả đã quan tâm đó.
+
+57
+00:04:37,900 --> 00:04:39,120
+Khán giả quan tâm là khán giả nhiều view thôi.
+
+58
+00:04:39,260 --> 00:04:40,380
+Video nhiều view là mình làm thôi.
+
+59
+00:04:41,480 --> 00:04:41,720
+Thế thôi.
+
+60
+00:04:42,621 --> 00:04:42,881
+Ok.
+
+61
+00:04:46,221 --> 00:04:46,981
+Đấy, key đấy.
+
+62
+00:04:47,601 --> 00:04:48,441
+Bôi đen vào.
+
+63
+00:04:50,000 --> 00:04:54,381
+Mình sẽ cạnh tranh với kênh lớn đã có trong chủ đề bằng cái gì?
+
+64
+00:04:55,041 --> 00:04:56,521
+Đâu là lợi thế cạnh tranh của mình?
+
+65
+00:04:56,521 --> 00:05:03,528
+Thế anh em thì ở Việt Nam mình lợi thế cạnh tranh là gì?
+
+66
+00:05:03,528 --> 00:05:10,534
+Đúng rồi, số lượng. Vô địch với số lượng luôn. Tiêu biểu anh em
+
+67
+00:05:10,534 --> 00:05:17,541
+biết kênh Wolfoo, con chó Wolfoo. Rồi rồi rồi đánh bản quyền, hơi điên.
+
+68
+00:05:17,541 --> 00:05:24,848
+Bên, bên, Peppa Pig à? Peppa Pig, 1 tuần nó ra được 2 cái, Wolfoo ngày đánh 2 đến
+
+69
+00:05:24,848 --> 00:05:32,154
+3 cái. Đỡ làm sao được? Không đỡ được. Ví dụ ở kênh kia, up 1 tuần được
+
+70
+00:05:32,154 --> 00:05:39,461
+2 cái, 1 tháng mới được có 8 cái, 1 năm được 90 cái đi, cho hẳn 100 đi.
+
+71
+00:05:39,461 --> 00:05:42,441
+100 đi, up 5 năm được 500 cái.
+
+72
+00:05:43,081 --> 00:05:50,381
+Đây Việt Nam mình 1 năm, 1 ngày 2 cái là 1 năm được 600 cái.
+
+73
+00:05:51,081 --> 00:05:54,281
+Đánh 1 năm mà người ta đánh 5 năm.
+
+74
+00:05:55,361 --> 00:05:56,101
+Vô địch chứ.
+
+75
+00:05:56,921 --> 00:05:59,381
+Thế đấy chính là lợi thế cạnh tranh mà anh em mình phải tìm đến nhá.
+
+76
+00:05:59,661 --> 00:06:00,681
+Bắt buộc đấy
+
+77
+00:06:00,681 --> 00:06:02,821
+Kênh đã mới đã nhỏ
+
+78
+00:06:02,821 --> 00:06:03,981
+Mình up ít lên làm sao được
+
+79
+00:06:07,450 --> 00:06:10,830
+Số lượng video nhiều hơn đối thủ ghi vào.
+
+80
+00:06:19,270 --> 00:06:26,390
+Mới đầu chúng ta có thể tìm cách là để cho nội dung của mình nó ít nhất là bằng đối thủ trước.
+
+81
+00:06:28,390 --> 00:06:33,230
+Hơn thì hơi khó. Mới đầu anh em mới làm chưa kinh nghiệm không hơn được đâu. Không tìm cách hơn được đâu.
+
+82
+00:06:33,230 --> 00:06:41,770
+Nhưng bắt buộc là phải ngang đối thủ. Mình làm hay như nó, mà làm nhiều hơn nó, chắc chắn mình thắng, không thua được.
+
+83
+00:06:43,000 --> 00:06:48,810
+Hồi đầu bắt đầu cái kênh đầu tiên ở bên GODA là mình có nhìn thấy một cái kênh khoảng 15-16 triệu view.
+
+84
+00:06:50,490 --> 00:06:54,350
+Anh Huân hỏi mình câu là kênh này vượt không em? Lên top được không?
+
+85
+00:06:55,230 --> 00:07:01,230
+Và đúng khoảng độ tháng 3 năm sau thì kênh mình vượt kênh đấy, được 15 triệu view một tháng.
+
+86
+00:07:03,230 --> 00:07:11,823
+Thì mình xác định được cái điểm lợi thế cạnh tranh của mình ấy. Họ up 1 tuần được 2 đến 3 cái, mình up 1 tuần đều 7 cái thì đỡ làm sao được?
+
+87
+00:07:11,823 --> 00:07:20,417
+Không đỡ được. Về sau kênh ấy họ sợ đến cái mức là họ phải thuê nhiều người hơn để up đều hằng ngày. Nhưng đến khi họ nhận ra là số lượng của họ
+
+88
+00:07:20,417 --> 00:07:29,010
+không đủ, đã quá muộn rồi. Bên mình lên top rồi. Không lấy lại được top nữa. Và khi họ bắt đầu up đều được 7 ngày 1 cái thì chi phí họ tăng lên.
+
+89
+00:07:30,370 --> 00:07:31,530
+Tuy nhiên mất đề xuất.
+
+90
+00:07:32,450 --> 00:07:35,130
+Và chi phí làm của đối nước ngoài anh em yên tâm đắt lắm.
+
+91
+00:07:36,190 --> 00:07:37,750
+Việt Nam mình vô địch về lợi thế cạnh tranh đó.
+
+92
+00:07:46,471 --> 00:07:55,291
+Độ dài video yêu cầu cao hơn đối thủ ít nhất 20%, không nên dài quá, 20-30% là tối đa.
+
+93
+00:07:55,291 --> 00:07:59,291
+cao hơn đối thủ 20-30%.
+
+94
+00:08:00,431 --> 00:08:08,271
+Chất lượng video phải nốt ra, bắt buộc phải ngang bằng đối thủ.
+
+95
+00:08:21,000 --> 00:08:23,271
+Đã xong 4 bước để triển khai cho kênh.
+
+96
+00:08:23,691 --> 00:08:24,271
+Cuối cùng là gì?
+
+97
+00:08:24,271 --> 00:08:30,991
+Phần 4 này là phần để cho bên quản lý kênh bên mình gửi ý tưởng triển khai trực tiếp cho mình.
+
+98
+00:08:31,871 --> 00:08:34,851
+Nhưng với anh em thì anh em gửi cho ai? Anh em gửi cho chính bản thân anh em.
+
+99
+00:08:35,531 --> 00:08:40,771
+Ngồi review lại, kế hoạch triển khai sẽ bao gồm lý do chọn chủ đề là mục 1, kéo lên trên.
+
+100
+00:08:42,151 --> 00:08:43,291
+Nó đạt về yêu cầu hay không?
+
+101
+00:08:45,291 --> 00:08:48,191
+RPM tốt này, kênh dễ làm, view ổn.
+
+102
+00:08:49,051 --> 00:08:50,251
+Một yếu tố tích vào.
+
+103
+00:08:53,231 --> 00:08:53,591
+Ngon.
+
+104
+00:08:54,271 --> 00:09:03,531
+Lý do chọn chủ đề.
+
+105
+00:09:05,700 --> 00:09:14,467
+2. Ok là xong. Không cần phải cái đấy. Mình duyệt từng mục 1. Lý do chọn chủ đề
+
+106
+00:09:14,467 --> 00:09:23,233
+copy để thấy bên cạnh. Đấy đúng rồi. Đạt yêu cầu. Đạt yêu cầu mục tiêu. Phân tích nội
+
+107
+00:09:23,233 --> 00:09:32,000
+dung kéo lên trên. Mình đã phân tích đủ chưa? Chắc chắn đến bước này là phải đủ rồi.
+
+108
+00:09:32,000 --> 00:09:39,640
+Đã nắm rõ nội dung, ghi rõ vào. Đã nắm rõ cách làm nội dung. Với anh em tự
+
+109
+00:09:39,640 --> 00:09:47,280
+làm thì việc này là mình ok, mình xong rồi, biết cách làm rồi. Còn với anh em mà
+
+110
+00:09:47,280 --> 00:09:54,920
+có đội ngũ thì đưa cái cách làm nội dung này cho nhân viên xem, học để còn làm.
+
+111
+00:09:54,920 --> 00:09:57,700
+Phân tích kỹ thuật kéo lên
+
+112
+00:09:57,700 --> 00:10:05,200
+Đã nắm rõ thumbnail, tiêu đề, cách SEO
+
+113
+00:10:17,480 --> 00:10:19,580
+Phần cuối cùng, ý tưởng triển khai kênh
+
+114
+00:10:19,580 --> 00:10:24,080
+Kênh đã nắm rõ lợi thế cạnh tranh.
+
+115
+00:10:24,080 --> 00:10:35,481
+Cảm ơn.
+
+116
+00:10:35,481 --> 00:10:37,401
+Tất cả các mục đã được hoàn thiện.
+
+117
+00:10:39,000 --> 00:10:40,461
+Cuối cùng là chuẩn bị nguồn lực.
+
+118
+00:10:43,521 --> 00:10:44,281
+Chuẩn bị nguồn lực.
+
+119
+00:10:44,821 --> 00:10:47,581
+Với anh em tự làm, thì sau khi xác định tất cả những cái này,
+
+120
+00:10:48,361 --> 00:10:52,021
+thì sẽ tự phân chia thời gian, công việc cho từng đầu mục một nhỏ.
+
+121
+00:10:52,341 --> 00:11:01,214
+Ví dụ, làm content dự định hết khoảng bao lâu. Cái đấy không dự định được trước khi làm nhá. Mình đã nắm được tất cả mục bên trên rồi, bắt
+
+122
+00:11:01,214 --> 00:11:10,088
+tay làm luôn. Làm càng nhanh càng tốt, sai nhanh, sửa nhanh. Với đầu mình còn làm hết khoảng 3 tiếng 1 content. Thì trung bình 1 người làm hết
+
+123
+00:11:10,088 --> 00:11:18,961
+3 tiếng 1 content về sau để tối ưu được ít nhất 50%. Tại vì mình mới là mình chưa biết mà. Thì về sau mình sẽ ghi rõ nguồn lực.
+
+124
+00:11:18,961 --> 00:11:21,161
+Xuống 1 dòng nữa
+
+125
+00:11:21,161 --> 00:11:25,021
+Ở trong cái ô luôn
+
+126
+00:11:25,021 --> 00:11:27,541
+Thời gian làm, nội dung
+
+127
+00:11:27,541 --> 00:11:33,481
+Rồi, mục đầu tiên là content
+
+128
+00:11:33,481 --> 00:11:40,741
+Ví dụ thực tế với dạng này, chắc làm content dạng này không đến 2 tiếng
+
+129
+00:11:40,741 --> 00:11:42,221
+Rồi, nhanh lắm
+
+130
+00:11:42,221 --> 00:11:45,061
+Mới đầu mình lấy của họ luôn đi, để sửa lại
+
+131
+00:11:45,061 --> 00:11:48,001
+Trung bình 2 tiếng đi
+
+132
+00:11:48,950 --> 00:11:52,090
+Rồi, edit, cái dạng này có mỗi content mà edit thôi.
+
+133
+00:11:53,710 --> 00:11:56,090
+Trong cái phần edit thì cần lấy cái gì? Lấy audio.
+
+134
+00:11:57,290 --> 00:11:58,210
+Audio khoảng bao nhiêu?
+
+135
+00:11:59,290 --> 00:12:00,570
+Chắc lâu thì 30 phút.
+
+136
+00:12:01,710 --> 00:12:04,170
+Về voice, anh em lưu ý nhỉ, nó sẽ bị lỗi.
+
+137
+00:12:05,250 --> 00:12:06,830
+Còn thuê người thì nó sẽ cần thời gian để thuê.
+
+138
+00:12:08,830 --> 00:12:09,430
+30 phút.
+
+139
+00:12:11,190 --> 00:12:12,110
+Edit, hoàn thiện.
+
+140
+00:12:12,990 --> 00:12:16,250
+Khoảng độ 4 tiếng đi. Cho lúc lâu anh em làm mới đầu lâu 4 tiếng.
+
+141
+00:12:16,250 --> 00:12:24,170
+Ngày xưa mình làm hết khoảng 8 tiếng được một video highlight game Liên Minh huyền thoại. Ngày xưa mình gà làm lâu.
+
+142
+00:12:27,510 --> 00:12:30,150
+Ok, thế đã xong chưa? Xong hết rồi không?
+
+143
+00:12:30,150 --> 00:12:32,150
+Xong hết rồi đó.
+
+144
+00:12:39,650 --> 00:12:44,150
+Từng phần nhỏ rất khó, rất mất thời gian.
+
+145
+00:12:44,150 --> 00:12:48,150
+Nhưng khi ráp lại một bức tranh lớn thì có dễ không ạ?
+
+146
+00:12:48,150 --> 00:12:50,350
+Về tổng quan thì nó là khó.
+
+147
+00:12:50,350 --> 00:12:51,570
+Nó là khó hay chưa quen?
+
+148
+00:12:54,070 --> 00:12:55,590
+Ok. Cảm ơn mọi người.
+
+149
+00:13:00,650 --> 00:13:03,690
+Rồi, dành cho Hoàng một tràng pháo tay thật lớn.
+
+150
+00:13:06,130 --> 00:13:10,350
+Bây giờ chúng ta sẽ nghỉ giải lao khoảng 30 phút.
+
+151
+00:13:11,470 --> 00:13:14,430
+Sau đó thì ở dưới có teabreak, đợi anh em ở dưới này rồi.
+
+152
+00:13:14,710 --> 00:13:18,330
+Anh em đi vệ sinh teabreak, trao đổi về quy trình.
+
+153
+00:13:18,890 --> 00:13:21,970
+Sau đó thì chúng ta quay trở lại đây để đặt câu hỏi.
+
+154
+00:13:22,610 --> 00:13:22,770
+Ok?
+
+155
+00:13:24,070 --> 00:13:24,930
+Rồi, xin mời mọi người.
+

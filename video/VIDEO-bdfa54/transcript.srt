@@ -1,0 +1,1851 @@
+1
+00:00:00,000 --> 00:00:04,060
+Rồi ok em xin chào tất cả mọi người đã quay trở lại với kênh H2Dev của em nha
+
+2
+00:00:04,060 --> 00:00:08,840
+Thì hôm bữa giờ trước giờ thì em toàn là hướng dẫn cho anh em cách làm view ngoại
+
+3
+00:00:08,840 --> 00:00:11,400
+Về share cho anh em những cái key view ngoại đúng không?
+
+4
+00:00:11,680 --> 00:00:14,880
+Thì hôm nay em sẽ đổi gió một tí đó là share key view Việt
+
+5
+00:00:14,880 --> 00:00:19,420
+Về hướng dẫn mọi người cách làm bán content cái key view việt này luôn nha mọi người
+
+6
+00:00:19,420 --> 00:00:23,420
+Đấy cái key này anh em làm thì em đảm bảo là sẽ lên view nha mọi người
+
+7
+00:00:23,420 --> 00:00:26,760
+Đấy, đây là cái kênh về cái key này.
+
+8
+00:00:26,760 --> 00:00:28,660
+Là về dạng sinh tồn nha mọi người
+
+9
+00:00:28,660 --> 00:00:31,380
+Đây thuộc dạng là không phải Reup nha anh em
+
+10
+00:00:31,380 --> 00:00:33,360
+Nó gọi là bán content đấy mọi người
+
+11
+00:00:33,360 --> 00:00:36,240
+Đấy, anh em nào mà có đọc được cái chính sách của YouTube
+
+12
+00:00:36,240 --> 00:00:37,140
+Cái luật Fair Use ấy
+
+13
+00:00:37,140 --> 00:00:39,720
+Thì nó sẽ gọi là bán content nha mọi người
+
+14
+00:00:39,720 --> 00:00:42,360
+Đấy, cái này là hoàn toàn là không bị bản quyền
+
+15
+00:00:42,360 --> 00:00:43,680
+Nên em yên tâm luôn nha
+
+16
+00:00:43,680 --> 00:00:46,280
+Tí nữa thì em sẽ show luôn cái kênh
+
+17
+00:00:46,280 --> 00:00:48,740
+Một cái kênh mà em đã làm về cái chủ đề này rồi
+
+18
+00:00:48,740 --> 00:00:49,960
+Cho mọi người xem nha
+
+19
+00:00:49,960 --> 00:00:52,160
+Đấy, mọi người có thấy view của nó kinh khủng khiếp chưa
+
+20
+00:00:52,160 --> 00:00:54,260
+Một ngày trước mà hơn 200.000 view
+
+21
+00:00:54,260 --> 00:00:57,700
+4 ngày trước mà hơn 900.000 view luôn nha anh em
+
+22
+00:00:57,700 --> 00:01:02,020
+Đấy, mọi người cứ xem về kênh này thì mọi người thấy view nó khủng khiếp cỡ nào
+
+23
+00:01:02,020 --> 00:01:04,140
+Cần gì đâu mà mình làm view ngoại đúng không?
+
+24
+00:01:04,720 --> 00:01:07,500
+Anh em mà người mới á, thì cứ nên tập làm view Việt trước
+
+25
+00:01:07,500 --> 00:01:10,500
+Tuy view Việt, RPM của nó thấp, thì thấp thật đấy mọi người
+
+26
+00:01:10,500 --> 00:01:15,080
+Nhưng mà đúng key á, thì nếu mà view nó cao á, thì cũng rất là nhiều tiền nha anh em
+
+27
+00:01:15,080 --> 00:01:21,480
+Đấy, rất là ổn nha, để mình duy trì cái kinh phí cũng như là mình có cái động lực mình làm
+
+28
+00:01:21,480 --> 00:01:25,200
+Đấy, chứ anh em cứ nhảy vào làm view ngoại mà nhiều khi anh em không biết cách làm
+
+29
+00:01:25,200 --> 00:01:27,660
+Làm không đúng key hay là không đúng cách á
+
+30
+00:01:27,660 --> 00:01:29,840
+Thì nói chung anh em tốn tiền tài nguyên
+
+31
+00:01:29,840 --> 00:01:32,500
+Hoặc là sau này tốn thời gian anh em bị nản
+
+32
+00:01:32,500 --> 00:01:33,720
+Hoặc là anh em bị chán
+
+33
+00:01:33,720 --> 00:01:34,900
+Xem rồi anh em bỏ luôn
+
+34
+00:01:34,900 --> 00:01:36,040
+Đấy đúng không mọi người
+
+35
+00:01:36,040 --> 00:01:39,600
+Nên là mình phải tư duy cách nào mà dễ dàng trước
+
+36
+00:01:39,600 --> 00:01:41,120
+Để cho mình làm nha anh em
+
+37
+00:01:41,120 --> 00:01:44,940
+Rồi bây giờ thì em sẽ nói qua về cái dạng chủ đề này
+
+38
+00:01:44,940 --> 00:01:46,980
+Nó gọi là sinh tồn nơi hoang dã
+
+39
+00:01:46,980 --> 00:01:50,000
+Hoặc là kiểu như là nói chung là dạng sinh tồn nè mọi người
+
+40
+00:01:50,000 --> 00:01:53,240
+Đấy chắc hẳn là nhiều anh em sẽ xem được những cái video này rồi
+
+41
+00:01:53,240 --> 00:01:55,520
+Hoặc là thấy những cái kênh này luôn rồi
+
+42
+00:01:55,520 --> 00:01:57,500
+Bởi vì nó đề xuất rất là mạnh nha mọi người
+
+43
+00:01:57,500 --> 00:02:01,540
+Đấy, nhưng mà anh em không biết cái nguồn lấy và cũng không biết cách làm á
+
+44
+00:02:01,540 --> 00:02:04,920
+Vậy thì hôm nay em sẽ hướng dẫn cho mọi người cách làm luôn nha
+
+45
+00:02:05,000 --> 00:02:09,100
+Thì trước khi hướng dẫn á, thì em cái gì cũng vậy, em người thật, việc thật
+
+46
+00:02:09,100 --> 00:02:12,300
+Thì em sẽ show luôn cho anh em thấy được một cái kênh
+
+47
+00:02:12,300 --> 00:02:15,260
+Mà những tháng trước á, thì em cũng đã có làm rồi nha mọi người
+
+48
+00:02:15,260 --> 00:02:18,400
+Đấy, mọi người có thấy không? Đây là kênh vài tháng trước nè
+
+49
+00:02:18,400 --> 00:02:20,740
+Em có làm về cái key dạng này rồi nha
+
+50
+00:02:20,740 --> 00:02:25,060
+Kênh này em làm á, nghiêng về cái ngách á, kiểu như là sinh tồn nơi hoang dã
+
+51
+00:02:25,060 --> 00:02:27,500
+Kiểu như trong tuyết, hay là dưới lòng đất
+
+52
+00:02:27,500 --> 00:02:29,420
+Hay là xây nhà để tránh bão tuyết
+
+53
+00:02:29,420 --> 00:02:30,320
+Các kiểu ấy mọi người
+
+54
+00:02:30,320 --> 00:02:33,060
+Đấy, mỗi ngách là mỗi khác nhau nha mọi người
+
+55
+00:02:33,060 --> 00:02:36,020
+Đấy, nên là anh em có xem được video hướng dẫn mà
+
+56
+00:02:36,020 --> 00:02:37,900
+Kiểu như tìm lọc key của em thì anh em sẽ
+
+57
+00:02:37,900 --> 00:02:40,120
+Hiểu được cái ngách nhỏ trong ngách nha mọi người
+
+58
+00:02:40,120 --> 00:02:43,100
+Rồi, đây, đó, em show luôn mọi người là
+
+59
+00:02:43,100 --> 00:02:45,020
+Cái kênh này là hoàn toàn kiếm được tiền
+
+60
+00:02:45,020 --> 00:02:48,000
+Vào video này, view Việt là cũng kiếm được tiền nha anh em
+
+61
+00:02:48,000 --> 00:02:50,180
+Đấy, chứ không phải là, đây
+
+62
+00:02:50,180 --> 00:02:53,840
+Đấy, 300.000 view thì được tầm hơn 4 triệu nha mọi người
+
+63
+00:02:53,840 --> 00:02:55,600
+Đấy cũng rất là ổn nha anh em
+
+64
+00:02:55,600 --> 00:02:57,160
+Chứ mình đừng có chê view Việt
+
+65
+00:02:57,160 --> 00:02:59,060
+Nói chung anh em người mới thì đừng có chê nha
+
+66
+00:02:59,060 --> 00:03:01,680
+Đấy anh em làm nhắc là quan trọng á
+
+67
+00:03:01,680 --> 00:03:03,680
+Thì anh em người mới mà làm á
+
+68
+00:03:03,680 --> 00:03:06,640
+Thì anh em nghĩ tới là việc kiếm view đầu tiên nha mọi người
+
+69
+00:03:06,640 --> 00:03:09,140
+Chứ anh em đừng có nghĩ là kiếm tiền trước nha
+
+70
+00:03:09,140 --> 00:03:12,040
+Đấy như vậy thì nó sẽ dễ dàng giúp anh em làm được
+
+71
+00:03:12,040 --> 00:03:14,040
+Chứ anh em cứ nghĩ kiếm tiền trước
+
+72
+00:03:14,040 --> 00:03:17,080
+Thì nó sẽ bị ảo và nó bị lõ nha mọi người
+
+73
+00:03:17,080 --> 00:03:18,660
+Và em sẽ show thêm
+
+74
+00:03:19,000 --> 00:03:22,000
+Show em một cái vài cái video của kênh này nha
+
+75
+00:03:22,000 --> 00:03:26,220
+Đây, cái nền kênh này thì có một cái video gần 2 triệu view luôn nè mọi người
+
+76
+00:03:26,220 --> 00:03:28,340
+Đây, em sẽ bấm vô cho mọi người xem luôn nha
+
+77
+00:03:28,340 --> 00:03:30,960
+Quê hương chìm trong tuyết trắng và giá lạnh
+
+78
+00:03:30,960 --> 00:03:33,280
+Người đàn ông lại thoải mái tận hưởng trong nơi trú ẩn
+
+79
+00:03:33,280 --> 00:03:34,900
+Anh ta thử rán trứng và xông hơi
+
+80
+00:03:34,900 --> 00:03:36,420
+Đón mùa đông trong thời tiết cực lạnh
+
+81
+00:03:36,420 --> 00:03:38,800
+Cọn nhẹ mang về chạy và sử dụng ngay
+
+82
+00:03:38,800 --> 00:03:39,480
+Dung điệp
+
+83
+00:03:39,480 --> 00:03:44,880
+Đó, anh xếp gỗ nguyên khối lên từng lớp
+
+84
+00:03:44,880 --> 00:03:46,500
+Nhờ kinh nghiệm từ lần xây dựng trước
+
+85
+00:03:46,500 --> 00:03:47,980
+Tốc độ làm việc của anh nhanh hơn
+
+86
+00:03:47,980 --> 00:03:49,920
+Đấy, em show về xe cho mọi người xem
+
+87
+00:03:49,920 --> 00:03:51,560
+Thực tế nó là như vậy luôn nha anh em
+
+88
+00:03:51,560 --> 00:03:55,080
+Đấy và cái video này thì gần được 10 củ nè mọi người
+
+89
+00:03:55,080 --> 00:03:56,320
+Gần được 10 triệu ấy
+
+90
+00:03:56,320 --> 00:04:00,000
+Nói chung là RPM của view Việt mình thì nó khá là thấp
+
+91
+00:04:00,000 --> 00:04:05,520
+Với những cái dạng như này thì nó cũng không có được nhà quảng cáo ưa chuộng lắm anh em ơi
+
+92
+00:04:05,520 --> 00:04:07,760
+Nên là RPM nó hơi thấp nha
+
+93
+00:04:07,760 --> 00:04:13,140
+Và đối với kênh này thì mọi người sẽ thấy là em đang để tất cả cái video ở chế độ riêng tư
+
+94
+00:04:13,140 --> 00:04:16,560
+Bởi vì em vừa chuyển sang cái thị trường nhật rồi anh em ơi
+
+95
+00:04:16,560 --> 00:04:18,660
+Đấy em đang làm cái key Nhật rồi
+
+96
+00:04:18,660 --> 00:04:21,500
+Nên là em không có để làm view Việt nữa nha
+
+97
+00:04:21,500 --> 00:04:24,740
+Sợ một số anh em sẽ thắc mắc nên là em sẽ nói luôn nha
+
+98
+00:04:24,740 --> 00:04:28,780
+Đây, đây cũng là một cái kênh tương tự về cái chủ đề này nè mọi người
+
+99
+00:04:28,780 --> 00:04:29,820
+Thấy anh em thấy view không?
+
+100
+00:04:30,740 --> 00:04:33,140
+Ở cái dạng sinh tồn này nó rất là nhiều ngách nha anh em
+
+101
+00:04:33,140 --> 00:04:35,900
+Nói chung là em sẽ hướng dẫn mọi người cách làm
+
+102
+00:04:35,900 --> 00:04:38,940
+Nhưng mà cái tư duy thì anh em cứ thế mà làm tương tự
+
+103
+00:04:38,940 --> 00:04:40,440
+Nhiều ngách khác nha mọi người
+
+104
+00:04:40,440 --> 00:04:41,520
+Nó rất là nhiều ngách
+
+105
+00:04:41,520 --> 00:04:44,340
+Đấy, anh em có thể re-up về làm bán content
+
+106
+00:04:44,340 --> 00:04:45,220
+Rất là hay luôn nha
+
+107
+00:04:45,220 --> 00:04:47,760
+Rồi, bây giờ thì em sẽ vào hướng dẫn luôn nha anh em ơi
+
+108
+00:04:48,000 --> 00:04:53,120
+Trước tiên thì anh em truy cập vào cái Doin là cái tiktok của thằng Trung Quốc nha mọi người
+
+109
+00:04:53,120 --> 00:04:56,320
+Đấy, cái này thì anh em không cần đăng nhập tài khoản đâu
+
+110
+00:04:56,320 --> 00:04:58,260
+Anh em bấm dấu x nè, mọi người tắt đi
+
+111
+00:04:58,260 --> 00:05:00,660
+Rồi em sẽ tắt cái ngừng video này nha
+
+112
+00:05:00,660 --> 00:05:05,200
+Rồi, bây giờ thì em sẽ hướng dẫn cho anh em cách để tìm những cái nguồn video đấy đúng không?
+
+113
+00:05:05,600 --> 00:05:08,640
+Rồi, mọi người trước tiên thì mọi người sẽ vô cái trang dịch nha
+
+114
+00:05:08,640 --> 00:05:12,380
+Mọi người sẽ nhập là sinh tồn nơi hoang dã nha
+
+115
+00:05:12,380 --> 00:05:23,720
+Ví dụ là mấy key về sinh tồn thì anh em cứ nhập như vầy. Về ngay chỗ dịch sang tiếng thì anh em chỉnh là tiếng Trung nha mọi người. Giản thể hay phồn thể cũng được nha mọi người.
+
+116
+00:05:24,140 --> 00:05:25,520
+Rồi, anh em chọn copy nè.
+
+117
+00:05:25,980 --> 00:05:29,680
+Sau khi copy thì anh em quay lại cái trang Douyin, TikTok của thằng Trung Quốc á.
+
+118
+00:05:29,760 --> 00:05:30,680
+Thì mọi người dán nó vào.
+
+119
+00:05:31,140 --> 00:05:31,880
+Vậy anh em tìm kiếm.
+
+120
+00:05:32,060 --> 00:05:34,020
+Đấy, thì nó sẽ ra hàng loạt nha mọi người.
+
+121
+00:05:34,420 --> 00:05:37,640
+Rất rất là nhiều kênh và rất là nhiều view luôn nha mọi người.
+
+122
+00:05:38,000 --> 00:05:39,000
+Rất là nhiều tim luôn nha.
+
+123
+00:05:39,000 --> 00:05:41,360
+Đây chính là những cái kênh
+
+124
+00:05:41,360 --> 00:05:43,080
+Những cái video mà bên Trung Quốc á
+
+125
+00:05:43,080 --> 00:05:44,420
+Các pháp sư Trung Quốc á
+
+126
+00:05:44,420 --> 00:05:46,000
+Thì họ đã re-up lại
+
+127
+00:05:46,000 --> 00:05:47,900
+Vì họ đã cắt ghép các kiểu
+
+128
+00:05:47,900 --> 00:05:49,920
+Vì họ đã review lại nha mọi người
+
+129
+00:05:49,920 --> 00:05:51,720
+Em sẽ cho mọi người nghe qua nha
+
+130
+00:05:51,720 --> 00:05:57,800
+Đấy, sơ qua tổng thể là như vậy nha mọi người
+
+131
+00:05:57,800 --> 00:05:59,740
+Cái những cái video này á
+
+132
+00:05:59,740 --> 00:06:01,020
+possibly "Thì gốc là của người nước ngoài"
+
+133
+00:06:01,020 --> 00:06:03,080
+Nhưng mà những cái pháp sư Trung Quốc á
+
+134
+00:06:03,080 --> 00:06:03,980
+Họ đã lấy về
+
+135
+00:06:03,980 --> 00:06:06,020
+Họ re-up và cắt ghép các kiểu
+
+136
+00:06:06,020 --> 00:06:07,320
+Để làm bán content rồi
+
+137
+00:06:07,320 --> 00:06:09,680
+Đấy, và họ cũng đã bình luận lại review
+
+138
+00:06:09,680 --> 00:06:11,940
+Và để rồi những anh em ở Việt Nam mình á
+
+139
+00:06:11,940 --> 00:06:14,000
+Để làm một điều rất là hay nha anh em
+
+140
+00:06:14,000 --> 00:06:16,540
+Đấy, chỉ là cần việc tải video đó về
+
+141
+00:06:16,540 --> 00:06:19,240
+Và làm lại Vietsub được thôi nha mọi người
+
+142
+00:06:19,240 --> 00:06:25,660
+Đấy, không biết em nói ra thì khá đụng chạm đến một vài anh em đang làm về cái key này không
+
+143
+00:06:25,660 --> 00:06:28,560
+Nhưng mà thành thật thì em rất là xin lỗi nha
+
+144
+00:06:28,560 --> 00:06:30,960
+Đấy, em thì chia sẻ cho mọi người thôi
+
+145
+00:06:30,960 --> 00:06:33,140
+Đấy, anh em ai làm được thì làm thôi nha
+
+146
+00:06:33,140 --> 00:06:37,580
+Đấy chứ không phải là đạp đổ chén cơm của anh em hay gì đâu nha
+
+147
+00:06:37,580 --> 00:06:42,000
+Thật sự mà nói thì không có ai và không bao giờ ai chia sẻ như em đâu nha mọi người
+
+148
+00:06:42,000 --> 00:06:45,440
+Về những cái key này, những cái cách làm như này á
+
+149
+00:06:45,440 --> 00:06:48,200
+Thì họ để họ làm hay cả đội ngũ bên họ làm
+
+150
+00:06:48,200 --> 00:06:51,000
+Chứ họ không bao giờ mà chia sẻ ra đâu nha mọi người
+
+151
+00:06:51,000 --> 00:06:56,240
+Đấy nhưng mà đối với em thì trước giờ anh em theo dõi kênh em thì anh em cũng biết rồi đúng không
+
+152
+00:06:56,240 --> 00:06:59,520
+Thì nói chung em có gì thì em chia sẻ cho anh em hết
+
+153
+00:06:59,520 --> 00:07:05,620
+Rồi ok bây giờ thì em sẽ tiếp tục là hướng dẫn mọi người cách để tải video này về nha
+
+154
+00:07:05,620 --> 00:07:09,580
+Ngay ở trên cái thanh URL cái thanh link á mọi người sao chép nha
+
+155
+00:07:09,580 --> 00:07:14,680
+Hoặc là mọi người ngay chỗ này nè lúc chia sẻ nè mọi người bấm và sao chép cái link này cũng được nha
+
+156
+00:07:14,680 --> 00:07:18,100
+Đấy anh em sau khi mà sao chép xong cái link video này rồi á
+
+157
+00:07:18,100 --> 00:07:21,980
+Thì mọi người vô con web này mọi người tải video này về nha
+
+158
+00:07:21,980 --> 00:07:25,380
+Những cái link này thì em sẽ để dưới phần mô tả cho anh em
+
+159
+00:07:25,380 --> 00:07:29,120
+Về những cái nguồn link của kênh
+
+160
+00:07:29,120 --> 00:07:31,540
+Cũng những cái nguồn mà sinh tồn bên Trung Quốc này
+
+161
+00:07:31,540 --> 00:07:34,040
+Em cũng sẽ để ở dưới mô tả cho anh em luôn
+
+162
+00:07:34,040 --> 00:07:36,280
+Đấy khỏi cần anh em dịch
+
+163
+00:07:36,280 --> 00:07:38,220
+Rồi khỏi cần anh em tìm cũng được
+
+164
+00:07:38,220 --> 00:07:41,880
+Đấy để em tìm ra rồi em sẽ bỏ dưới phần mô tả cho anh em luôn nha
+
+165
+00:07:41,880 --> 00:07:44,060
+Rồi sau khi mà tải xong rồi á
+
+166
+00:07:44,060 --> 00:07:47,780
+Thì em sẽ quay lại cho anh em xem một vài video nữa nha
+
+167
+00:07:47,780 --> 00:07:49,500
+Đấy nó rất là nhiều luôn nha mọi người
+
+168
+00:07:49,500 --> 00:07:50,700
+Rất là đủ dạng luôn nè
+
+169
+00:07:50,700 --> 00:07:53,140
+Đấy có cái dạng mà những cái kênh em làm nè
+
+170
+00:07:53,140 --> 00:07:57,720
+Đây, cái dạng sinh tồn nơi trời tuyết này nè mọi người.
+
+171
+00:07:57,960 --> 00:08:01,040
+Đấy, những cái dạng này thì kênh lúc trước em có làm nè.
+
+172
+00:08:02,640 --> 00:08:06,900
+Anh em dùng Douyin thì anh em cũng không cần đăng nhập đâu.
+
+173
+00:08:06,980 --> 00:08:08,600
+Anh em cần xác minh là được rồi.
+
+174
+00:08:09,460 --> 00:08:13,040
+Đấy, như cái kênh này thì mọi người vào, mọi người tải về, re-up lại.
+
+175
+00:08:13,280 --> 00:08:14,220
+Rất là ngon luôn nha.
+
+176
+00:08:14,820 --> 00:08:16,320
+Hoàn toàn là không bản quyền nha anh em.
+
+177
+00:08:16,320 --> 00:08:19,160
+Đấy, anh em cứ thấy kênh em vừa show đấy, không bị bản quyền đâu.
+
+178
+00:08:19,560 --> 00:08:20,920
+Rồi, nói với em một tí vậy thôi.
+
+179
+00:08:20,920 --> 00:08:22,460
+Còn những cái kênh này á
+
+180
+00:08:22,460 --> 00:08:24,080
+Thì những cái nguồn này á
+
+181
+00:08:24,080 --> 00:08:26,360
+Thì em sẽ để dưới phần mô tả cho anh em luôn
+
+182
+00:08:26,360 --> 00:08:28,920
+Khỏi cần anh em phải tìm tòi nữa nha
+
+183
+00:08:28,920 --> 00:08:32,520
+Rồi bây giờ thì sẽ quay lại cái bước hướng dẫn tiếp theo nha anh em
+
+184
+00:08:32,520 --> 00:08:35,000
+Sau khi mà đã tải xong video này về rồi á
+
+185
+00:08:35,000 --> 00:08:36,960
+Thì mọi người vào CapCut cho em nha
+
+186
+00:08:36,960 --> 00:08:40,240
+Đấy anh em sẽ kéo cái video lúc nãy anh em tải về xuống nha
+
+187
+00:08:40,240 --> 00:08:45,800
+Tiếp theo là mọi người nhớ là chỉnh cái khung hình về 16.9 nha mọi người
+
+188
+00:08:45,800 --> 00:08:48,160
+Đấy cái tỷ lệ ngang đấy anh em
+
+189
+00:08:48,160 --> 00:08:50,080
+Bởi vì này là làm video hướng dẫn
+
+190
+00:08:50,080 --> 00:08:52,600
+Thì em sẽ cắt bớt ra nha mọi người
+
+191
+00:08:52,600 --> 00:08:52,900
+Đây
+
+192
+00:08:52,900 --> 00:08:55,080
+Cắt tầm bao nhiêu này nha
+
+193
+00:08:55,080 --> 00:08:57,380
+Đấy để cho làm cho nó không bị chậm
+
+194
+00:08:57,380 --> 00:08:58,360
+Không bị lag đấy anh em
+
+195
+00:08:58,360 --> 00:09:00,300
+Đấy để cho nó làm nhanh nha
+
+196
+00:09:00,300 --> 00:09:02,060
+Để cho render nhanh nha mọi người
+
+197
+00:09:02,060 --> 00:09:04,180
+Tiếp tục mọi người bấm vào cái video này
+
+198
+00:09:04,180 --> 00:09:07,060
+Rồi mọi người tên cái tỷ lệ khung hình này lên nha mọi người
+
+199
+00:09:07,060 --> 00:09:10,280
+Tăng cái kích thước cái khung hình video này á
+
+200
+00:09:10,280 --> 00:09:13,120
+Mọi người lên tầm 10 hoặc là 15 cũng được nha
+
+201
+00:09:13,120 --> 00:09:14,820
+110 hoặc là 115 á
+
+202
+00:09:14,820 --> 00:09:18,160
+Để cho nó kéo sao cho nó mất cái chữ Trung Quốc kia đi nha anh em
+
+203
+00:09:18,160 --> 00:09:20,400
+Rồi sau khi mà đã xong rồi á
+
+204
+00:09:20,400 --> 00:09:21,880
+Thì tiếp tục em sẽ
+
+205
+00:09:21,880 --> 00:09:24,320
+Lấy cái SRT
+
+206
+00:09:24,320 --> 00:09:26,000
+Cái phụ đề của cái
+
+207
+00:09:26,000 --> 00:09:27,540
+Tiếng Trung Quốc này nha
+
+208
+00:09:27,540 --> 00:09:30,240
+Nhưng á mà có một điều lưu ý là em sẽ
+
+209
+00:09:30,240 --> 00:09:31,420
+Chỉ cho anh em một cái mẹo này
+
+210
+00:09:31,420 --> 00:09:34,280
+Nếu mà bây giờ á anh em muốn xuất ra SRT
+
+211
+00:09:34,280 --> 00:09:36,000
+Luôn á thì chắc chắn lúc
+
+212
+00:09:36,000 --> 00:09:38,100
+Sau anh em làm cái file âm thanh á
+
+213
+00:09:38,100 --> 00:09:40,120
+Thì nó sẽ bị chèn tiếng
+
+214
+00:09:40,120 --> 00:09:41,460
+Đè tiếng lên nhau nha anh em
+
+215
+00:09:41,460 --> 00:09:43,440
+Kiểu như đè âm thanh giọng nói lên á
+
+216
+00:09:43,440 --> 00:09:44,720
+Như vậy là không được
+
+217
+00:09:44,720 --> 00:09:46,540
+Nên là em chỉ anh em một cái mẹo
+
+218
+00:09:46,540 --> 00:09:48,700
+Là anh em vào cái chỗ tốc độ nè
+
+219
+00:09:48,700 --> 00:09:51,180
+Mọi người sẽ điều chỉnh nó về là 0.7
+
+220
+00:09:51,180 --> 00:09:52,380
+Hoặc là 0.6 nè
+
+221
+00:09:52,380 --> 00:09:53,320
+Tùy anh em thôi
+
+222
+00:09:53,320 --> 00:09:55,840
+Đấy bây giờ em test là tầm 0.7 nha anh em
+
+223
+00:09:55,840 --> 00:09:59,280
+Rồi sau khi mà chỉnh xong cái tốc độ về 0.7 rồi á
+
+224
+00:09:59,280 --> 00:10:00,640
+Thì tí nữa em sẽ làm
+
+225
+00:10:00,640 --> 00:10:02,720
+Thì anh em sẽ biết được nha
+
+226
+00:10:02,720 --> 00:10:03,900
+Sẽ rõ được chỗ này nha
+
+227
+00:10:03,900 --> 00:10:07,260
+Rồi bây giờ thì mình sẽ xuất cái phụ đề của nó ra nha anh em
+
+228
+00:10:07,260 --> 00:10:09,300
+Giờ thì bấm vào cái chú thích nè
+
+229
+00:10:09,300 --> 00:10:11,960
+Anh em chọn là tiếng Trung nha
+
+230
+00:10:11,960 --> 00:10:15,140
+Đấy để mình xuất cái file phụ đề SRT của nó ra nha
+
+231
+00:10:17,000 --> 00:10:24,340
+Rồi sau khi mà đã lấy được cái phụ đề ra rồi thì bây giờ mình sẽ xuất cái file SRT này về nha anh em.
+
+232
+00:10:25,000 --> 00:10:33,120
+Tiếp theo, sau khi mà xuất rồi thì mọi người vào phần Notepad này, mở cái file SRT mọi người vừa lưu về nha.
+
+233
+00:10:33,120 --> 00:10:40,110
+Đấy, như này nha mọi người. Rồi, bây giờ thì anh em chỉ cần việc copy hết cái đoạn SRT này.
+
+234
+00:10:40,110 --> 00:10:41,450
+Anh em qua con ChatGPT
+
+235
+00:10:41,450 --> 00:10:43,570
+Anh em yêu cầu nó dịch nha mọi người
+
+236
+00:10:43,570 --> 00:10:46,930
+Đấy, anh em nên dùng là con ChatGPT 4o
+
+237
+00:10:46,930 --> 00:10:48,630
+Cái bản Plus đó anh em
+
+238
+00:10:48,630 --> 00:10:51,210
+Hoặc là những cái key API
+
+239
+00:10:51,210 --> 00:10:55,030
+Nói chung là những cái con AI mà nó dịch tốt nha anh em
+
+240
+00:10:55,030 --> 00:10:56,310
+Dịch chuẩn nha
+
+241
+00:10:56,310 --> 00:10:58,490
+Đấy, chứ nhiều con nó dịch rất là ngáo
+
+242
+00:10:58,490 --> 00:11:00,310
+Nó dịch không chuẩn đâu mọi người
+
+243
+00:11:00,310 --> 00:11:02,030
+Đấy, về con ChatGPT này
+
+244
+00:11:02,030 --> 00:11:03,450
+Nó cũng chỉ là tương đối thôi
+
+245
+00:11:03,450 --> 00:11:05,410
+Đấy, anh em có những cái tool
+
+246
+00:11:05,410 --> 00:11:07,770
+Hoặc là những cái API
+
+247
+00:11:07,770 --> 00:11:09,030
+Mà dịch ngon hơn
+
+248
+00:11:09,030 --> 00:11:10,470
+Thì anh em có thể dùng nha
+
+249
+00:11:10,470 --> 00:11:12,570
+Chứ như ví dụ mà mọi người đem lên
+
+250
+00:11:12,570 --> 00:11:13,810
+Cái thằng Google dịch á
+
+251
+00:11:13,810 --> 00:11:15,470
+Anh em dịch ra rất là ngố luôn nha
+
+252
+00:11:15,470 --> 00:11:17,210
+Nó không có ý nghĩa gì cả đâu
+
+253
+00:11:17,210 --> 00:11:19,530
+Thì người xem sẽ xem rất là khó chịu
+
+254
+00:11:19,530 --> 00:11:20,790
+Và sẽ thoát ra
+
+255
+00:11:20,790 --> 00:11:22,590
+Nói chung là không giữ chân được người xem
+
+256
+00:11:22,590 --> 00:11:25,650
+Thì kênh mình nó sẽ không được đề xuất đâu nha anh em ơi
+
+257
+00:11:25,650 --> 00:11:28,470
+Rồi, bây giờ thì anh em ghi câu lệnh như này nha
+
+258
+00:11:28,490 --> 00:11:30,970
+Đấy kiểu ghi đơn giản như này thôi mọi người
+
+259
+00:11:30,970 --> 00:11:33,110
+Sau khi mà xong rồi thì anh em chỉ còn việc
+
+260
+00:11:33,110 --> 00:11:37,110
+Dán cái quyên cái đoạn SRT lúc nãy vào
+
+261
+00:11:37,110 --> 00:11:38,170
+Rồi anh em bấm chạy nha
+
+262
+00:11:38,170 --> 00:11:40,010
+Đấy anh em nên là
+
+263
+00:11:40,010 --> 00:11:42,350
+Cái này vì em làm hướng dẫn nên em copy hết thôi
+
+264
+00:11:42,350 --> 00:11:46,510
+Nên anh em mà làm thì anh em copy tầm 50 hoặc là 60 thôi nha
+
+265
+00:11:46,510 --> 00:11:48,750
+Kiểu như 50 hoặc 60 đoạn trước
+
+266
+00:11:48,750 --> 00:11:50,910
+Rồi sau khi xong rồi thì anh em
+
+267
+00:11:50,910 --> 00:11:54,810
+Sẽ copy những cái đoạn sau để anh em chạy dịch tiếp nha
+
+268
+00:11:54,810 --> 00:11:57,030
+Bởi vì dịch nguyên một đoạn mà dài
+
+269
+00:11:57,030 --> 00:12:02,030
+Thì hầu như tất cả các con AI nó không thể làm được cùng lúc đâu nha anh em
+
+270
+00:12:02,030 --> 00:12:03,990
+Vậy nó sẽ làm bị sai đấy
+
+271
+00:12:03,990 --> 00:12:08,170
+Ngay chỗ này thì nó để ra một cái file srt này mọi người
+
+272
+00:12:08,170 --> 00:12:10,590
+Vậy cái này nó để chia ra 7 đoạn nha
+
+273
+00:12:10,590 --> 00:12:12,450
+Cái này là cái đoạn đầu tiên nè
+
+274
+00:12:12,450 --> 00:12:13,750
+Đây em sẽ cho anh em xem luôn
+
+275
+00:12:13,750 --> 00:12:17,970
+Nhưng mà nó xuất ra như này thì nó không được tối ưu về thời gian lắm anh em ơi
+
+276
+00:12:17,970 --> 00:12:19,170
+Tốc độ nó khá là chậm
+
+277
+00:12:19,170 --> 00:12:22,550
+Nên là em sẽ yêu cầu nó là ghi ra luôn nha
+
+278
+00:12:22,550 --> 00:12:24,730
+Để cho mình sao chép về cho nhanh nha mọi người
+
+279
+00:12:24,730 --> 00:12:27,190
+Đây bây giờ em sẽ yêu cầu nó nha mọi người
+
+280
+00:12:27,190 --> 00:12:30,850
+Mình sẽ yêu cầu nó là mình sẽ không muốn tạo thành một file srt
+
+281
+00:12:30,850 --> 00:12:32,950
+Mà mình muốn nó dịch ra ngay ở đây luôn
+
+282
+00:12:32,950 --> 00:12:36,770
+Đấy để cho mình copy tất cả về cho nó nhanh nha mọi người
+
+283
+00:12:36,770 --> 00:12:41,810
+Đấy chứ như mà chia từng đoạn như kia thì chờ nó tạo nữa rất lâu nha anh em
+
+284
+00:12:41,810 --> 00:12:46,110
+Nói chung cách nào mình tối ưu được thời gian thì mình cứ làm thôi nha mọi người
+
+285
+00:12:46,110 --> 00:12:50,510
+Rồi sau khi mà yêu cầu xong thì nó đã tạo ra như này
+
+286
+00:12:50,510 --> 00:12:53,590
+Đấy anh em có nhớ là ghi cái srt nha
+
+287
+00:12:53,590 --> 00:12:59,090
+Phụ đề srt nó sẽ có cái thông số ở dưới cái con số 1 số 2 nè
+
+288
+00:12:59,090 --> 00:13:02,030
+Đấy thì nó sẽ là file srt nha mọi người
+
+289
+00:13:02,030 --> 00:13:06,530
+Chứ nhiều khi nếu em yêu cầu mà nó không tạo ra được cái mấy cái timeline á
+
+290
+00:13:06,530 --> 00:13:09,750
+Thì nó sẽ là không đúng cái định dạng srt nha anh em
+
+291
+00:13:09,750 --> 00:13:13,170
+Thì anh em import vào làm các kiểu thì nó bị sai nha
+
+292
+00:13:13,170 --> 00:13:16,170
+Rồi bây giờ thì ngay sau khi mà có được rồi á
+
+293
+00:13:16,170 --> 00:13:19,490
+Thì đây ví dụ nó chỉ tạo được 50 dòng thôi
+
+294
+00:13:19,490 --> 00:13:21,910
+Thì anh em tiếp tục để cho nó tạo tiếp theo nha
+
+295
+00:13:21,910 --> 00:13:25,030
+Rồi bây giờ em sẽ ví dụ nêm 10 cái đầu tiên thôi nha mọi người
+
+296
+00:13:25,030 --> 00:13:29,970
+Đấy vì làm hướng dẫn anh em thì hướng dẫn một đoạn tí thôi nha
+
+297
+00:13:29,970 --> 00:13:32,130
+Đấy để tiết kiệm thời gian nha mọi người
+
+298
+00:13:32,130 --> 00:13:35,690
+Rồi bây giờ thì em sẽ copy cái SRT này
+
+299
+00:13:35,690 --> 00:13:38,210
+Em sẽ tạo một cái new, một cái file mới
+
+300
+00:13:38,210 --> 00:13:39,530
+Em sẽ paste nó vào
+
+301
+00:13:39,530 --> 00:13:41,430
+Rồi bây giờ em sẽ lưu lại nha
+
+302
+00:13:41,430 --> 00:13:43,510
+Trước khi lưu thì anh em có thể kiểm tra nè
+
+303
+00:13:43,510 --> 00:13:47,730
+Nó dịch ra như nào, anh em có thể chỉnh sửa thêm hay là sao đấy
+
+304
+00:13:47,730 --> 00:13:50,830
+Nói chung thì anh em cứ chọn sao cho nó ok
+
+305
+00:13:51,000 --> 00:13:55,870
+Rồi sau khi mà đã lưu xong rồi thì mọi người vào cái con Vbee để làm giọng nói nha
+
+306
+00:13:55,870 --> 00:14:01,390
+đa số là dùng Vbee nha.
+
+307
+00:14:01,390 --> 00:14:05,690
+Đấy và bây giờ mọi người lưu ý chút em là sau khi mà import cái file lên rồi á
+
+308
+00:14:05,690 --> 00:14:09,510
+Thì em chỉnh về cái tốc độ là 0.7 nha tầm đấy nha mọi người
+
+309
+00:14:09,510 --> 00:14:15,150
+Bởi vì lúc nãy mình đã chỉnh tốc độ của cái video về là 0.6 0.7 rồi
+
+310
+00:14:15,150 --> 00:14:18,090
+Thì anh em phải chỉnh cái âm thanh này nó chậm lại nha
+
+311
+00:14:18,090 --> 00:14:20,730
+Để một tí nữa mình edit nó sẽ khớp nha
+
+312
+00:14:20,730 --> 00:14:24,930
+Tí nữa em làm thì anh em chỉ để ý về anh em sẽ biết rõ hơn nha
+
+313
+00:14:24,930 --> 00:14:27,430
+Đây là cái phần tiếp theo nè
+
+314
+00:14:27,430 --> 00:14:29,570
+Nó chỉ tạo tiếp tới phần 100
+
+315
+00:14:30,000 --> 00:14:32,390
+Vậy anh em chỉ bấm tiếp tục để nó tạo hết nha
+
+316
+00:14:32,390 --> 00:14:34,710
+Anh em lưu ý anh em làm phải làm hết nha mọi người
+
+317
+00:14:34,710 --> 00:14:37,490
+Vì làm hướng dẫn anh em chỉ làm một đoạn nhỏ thôi
+
+318
+00:14:37,490 --> 00:14:40,450
+Sau khi mà xong rồi thì anh em chỉ việc tải về thôi
+
+319
+00:14:40,450 --> 00:14:43,930
+Sau khi đã tải xong file âm thanh thì mọi người quay lại CapCut
+
+320
+00:14:43,930 --> 00:14:47,330
+Mọi người import cái file kịch bản vừa rồi nha
+
+321
+00:14:47,330 --> 00:14:50,330
+Cái file mà SRT dịch sang tiếng Việt vào nha
+
+322
+00:14:50,330 --> 00:14:56,430
+Đây, mọi người xem thử nó có khớp với cái kịch bản SRT cái phụ đề của cái tiếng Trung không nha
+
+323
+00:14:56,430 --> 00:14:58,630
+Đấy, để tránh sai sót nha anh em
+
+324
+00:14:58,630 --> 00:15:00,710
+Anh em cứ kiểm tra cho nó kỹ lưỡng nha
+
+325
+00:15:00,710 --> 00:15:06,310
+Đấy, như vậy nếu mà anh em cảm thấy ok rồi thì anh em có thể xóa cái đoạn phụ đề tiếng Trung đi
+
+326
+00:15:06,310 --> 00:15:12,690
+Rồi, sau khi mà xong rồi thì anh em add kế tiếp cái phần file âm thanh vào nha
+
+327
+00:15:12,690 --> 00:15:19,000
+Rồi, việc tiếp theo bây giờ á
+
+328
+00:15:19,000 --> 00:15:21,350
+Thì nó đang còn là âm thanh gốc
+
+329
+00:15:21,350 --> 00:15:22,430
+Là âm thanh tiếng Trung
+
+330
+00:15:22,430 --> 00:15:25,170
+Và vừa add cái âm thanh Việt của mình vào nữa
+
+331
+00:15:25,170 --> 00:15:26,830
+Nên là nó rất là bị loạn nha
+
+332
+00:15:26,830 --> 00:15:29,270
+Anh em sẽ tách cái âm thanh đi
+
+333
+00:15:29,270 --> 00:15:31,050
+Nhưng mà anh em không tách hoàn toàn nha
+
+334
+00:15:31,050 --> 00:15:32,930
+Anh em tách cái giọng đọc ra nha
+
+335
+00:15:32,930 --> 00:15:34,370
+Để mình giữ lại âm thanh gốc
+
+336
+00:15:34,370 --> 00:15:36,030
+Kiểu như là cái âm thanh nền đấy anh em
+
+337
+00:15:36,030 --> 00:15:38,110
+Của cái bọn pháp sư Trung Hoa nó làm rồi
+
+338
+00:15:38,110 --> 00:15:40,050
+Rất là hay, cũng không bị bản quyền
+
+339
+00:15:40,050 --> 00:15:42,010
+Nhạc của nó cũng không bị bản quyền luôn nha
+
+340
+00:15:42,010 --> 00:15:43,490
+nên mọi người không phải lo
+
+341
+00:15:43,490 --> 00:15:44,270
+đấy
+
+342
+00:15:44,270 --> 00:15:45,070
+em làm rồi
+
+343
+00:15:45,070 --> 00:15:45,710
+nên là em biết
+
+344
+00:15:45,710 --> 00:15:46,750
+bây giờ thì
+
+345
+00:15:46,750 --> 00:15:58,370
+Bây giờ thì anh em chỉ cần việc tắt cái giọng đọc ra trước ạ. Rồi sau khi mà đã tắt xong rồi thì mọi người có thể xóa cái file âm thanh gốc đi nha. Cái file mà mình vừa tắt ra đấy. Bây giờ em sẽ để anh em nghe lại nha.
+
+346
+00:16:00,130 --> 00:16:02,130
+Đây chắc chắn là một trong những khoảnh khắc
+
+347
+00:16:02,130 --> 00:16:03,950
+huy hoàng hiếm hoi của Đức sống sót.
+
+348
+00:16:04,750 --> 00:16:07,550
+Rồi, bây giờ thì em sẽ giảm âm thanh gốc nè,
+
+349
+00:16:07,970 --> 00:16:09,070
+âm thanh nhạc ấy mọi người,
+
+350
+00:16:09,310 --> 00:16:10,990
+âm thanh còn lại á, âm thanh nền ấy,
+
+351
+00:16:11,490 --> 00:16:13,670
+về tầm trừ 10 nha anh em.
+
+352
+00:16:14,330 --> 00:16:15,150
+Đấy, âm 10 nha.
+
+353
+00:16:15,150 --> 00:16:21,110
+Rồi, mình sẽ tăng cái âm thanh giọng đọc mà mình dịch sang tiếng Việt á ("âm thanh gốc" here is the Vietnamese voice, not the original) mọi người
+
+354
+00:16:21,110 --> 00:16:24,210
+Giọng đọc tiếng Việt lên tầm là 15 chấm nha anh em
+
+355
+00:16:24,210 --> 00:16:30,490
+Đấy, làm như vậy thì nó sẽ hợp lý, nó không bị áp âm thanh gốc lên cái âm thanh giọng nói nha mọi người
+
+356
+00:16:30,490 --> 00:16:32,830
+Rồi, bây giờ em sẽ cắt cái phần đuôi đi
+
+357
+00:16:32,830 --> 00:16:36,550
+Bởi vì nói chung cái đây là làm hướng dẫn, làm phần đầu một tí thôi nha anh em
+
+358
+00:16:36,550 --> 00:16:40,090
+Đấy, cắt cái phần kia đi để cho anh em, để nó không bị dài quá
+
+359
+00:16:40,090 --> 00:16:43,770
+Rồi bây giờ mà sau khi đã có được cái âm thanh rồi
+
+360
+00:16:43,770 --> 00:16:45,670
+Và kiểm tra các kiểu trong rồi á
+
+361
+00:16:45,670 --> 00:16:47,990
+Thì cái phụ đề này mọi người có thể xóa đi
+
+362
+00:16:47,990 --> 00:16:49,690
+Hoặc là anh em có thể để lại cũng được
+
+363
+00:16:49,690 --> 00:16:51,830
+Theo em thì anh em nên để lại nha
+
+364
+00:16:51,830 --> 00:16:53,850
+Để cho người xem có thể thấy được
+
+365
+00:16:53,850 --> 00:16:55,870
+Mình Vietsub như thế nào nha mọi người
+
+366
+00:16:55,870 --> 00:16:58,310
+Kiểu như là mình review
+
+367
+00:16:58,310 --> 00:16:59,890
+Nhưng mà có cái Vietsub nữa
+
+368
+00:16:59,890 --> 00:17:02,970
+Để cho mọi người khán giả dễ nhìn nha
+
+369
+00:17:02,970 --> 00:17:04,530
+Đấy anh em có thể tùy chỉnh nha
+
+370
+00:17:04,530 --> 00:17:07,090
+Còn cái này thì em làm đơn giản show nha thôi
+
+371
+00:17:07,090 --> 00:17:09,730
+Rồi tất cả đã ok rồi nha mọi người
+
+372
+00:17:09,730 --> 00:17:17,570
+Bây giờ thì mình chỉ việc edit thêm một tí logo về các cái nhãn của mình vào nữa nha mọi người
+
+373
+00:17:17,570 --> 00:17:20,270
+Đấy anh em phải chèn những cái logo của mình vào nha
+
+374
+00:17:20,270 --> 00:17:25,030
+Mình làm bán content á thì mình cắt ghép và mình chèn mình thêm các kiểu vào á
+
+375
+00:17:25,030 --> 00:17:27,130
+Càng nhiều á thì là càng tốt nha anh em
+
+376
+00:17:27,130 --> 00:17:30,610
+Đấy để sau này mà nếu mà video của mọi người á
+
+377
+00:17:30,610 --> 00:17:36,310
+Có bị sử dụng lại nội dung á thì anh em kháng là 99 hay là 100% là về nha mọi người
+
+378
+00:17:36,310 --> 00:17:38,570
+Cái dạng mà bị sử dụng lại nội dung á
+
+379
+00:17:38,570 --> 00:17:40,290
+Thì anh em mà làm bán content á
+
+380
+00:17:40,290 --> 00:17:41,470
+Thì chắc chắn á
+
+381
+00:17:41,470 --> 00:17:42,410
+Rồi sau này á
+
+382
+00:17:42,410 --> 00:17:44,990
+Trước sau gì anh em cũng sẽ bị một lần trong đời nha anh em
+
+383
+00:17:44,990 --> 00:17:45,630
+Đấy
+
+384
+00:17:45,630 --> 00:17:48,910
+Nhưng mà cái dạng này nói chung là nó rất là dễ kháng nha mọi người
+
+385
+00:17:48,910 --> 00:17:51,270
+Kháng thì tỷ lệ về nói chung là 100%
+
+386
+00:17:51,270 --> 00:17:52,330
+Nên anh em yên tâm đi
+
+387
+00:17:52,330 --> 00:17:56,070
+Nói chung cái dạng này là YouTube nó cho phép mình rồi anh em ạ
+
+388
+00:17:56,070 --> 00:17:57,250
+Không phải lo nha
+
+389
+00:17:57,250 --> 00:17:58,150
+Rồi đấy
+
+390
+00:17:58,150 --> 00:17:59,650
+Sau khi mà chèn logo các thứ
+
+391
+00:17:59,650 --> 00:18:01,310
+Thì anh em có thể chèn cái chữ
+
+392
+00:18:01,310 --> 00:18:03,450
+Cái logo kênh của mình vào nữa nha mọi người
+
+393
+00:18:03,450 --> 00:18:04,290
+Đấy
+
+394
+00:18:04,290 --> 00:18:08,370
+Về cái này thì anh em edit để cho nó chạy xung quanh cái video của mình nha
+
+395
+00:18:08,370 --> 00:18:10,000
+Để cho đối thủ khác
+
+396
+00:18:10,000 --> 00:18:13,230
+Hoặc là những cái người khác không re-upload video của mình
+
+397
+00:18:13,230 --> 00:18:16,650
+Và để cho sau này mình dễ kháng nữa nha mọi người
+
+398
+00:18:16,650 --> 00:18:19,370
+Nếu anh em làm bán content thì phải cẩn thận như vậy
+
+399
+00:18:19,370 --> 00:18:21,730
+Mình phải chuẩn bị trước sau hết nha anh em
+
+400
+00:18:21,730 --> 00:18:24,250
+Thật sự mà nói những anh em mới làm YouTube
+
+401
+00:18:24,250 --> 00:18:25,110
+Mới tập làm
+
+402
+00:18:25,110 --> 00:18:28,550
+Hoặc là những anh em làm vài tháng nay rồi mà không lên được á
+
+403
+00:18:28,550 --> 00:18:31,130
+Thì sau khi mà xem được video này
+
+404
+00:18:31,130 --> 00:18:32,590
+Phải nói là rất là giá trị
+
+405
+00:18:32,590 --> 00:18:35,010
+Rất là ngon dành cho anh em nha anh em ơi
+
+406
+00:18:35,010 --> 00:18:36,310
+Rất là có ích cho mọi người đấy
+
+407
+00:18:36,310 --> 00:18:38,930
+Anh em phải hiểu ý em là anh em
+
+408
+00:18:38,930 --> 00:18:41,070
+Phải làm như nào rồi đúng không
+
+409
+00:18:41,070 --> 00:18:43,730
+Đấy về rất rất là nhiều ngách khác nhau
+
+410
+00:18:43,730 --> 00:18:45,250
+Mọi người không phải là
+
+411
+00:18:45,250 --> 00:18:46,650
+Cần làm ngách này đâu
+
+412
+00:18:46,650 --> 00:18:48,150
+Còn rất là nhiều ngách khác nhau
+
+413
+00:18:48,150 --> 00:18:50,790
+Đấy anh em có thể tự chọn một cái ngách riêng cho mình
+
+414
+00:18:50,790 --> 00:18:52,810
+Để cho không bị cạnh tranh này kia
+
+415
+00:18:52,810 --> 00:18:54,790
+Đấy mọi người có thể tư duy là như vậy
+
+416
+00:18:54,790 --> 00:18:58,430
+Rồi anh em có thể edit thêm một vài cái thông báo
+
+417
+00:18:58,430 --> 00:19:01,270
+Như là đăng ký kênh này kia vào nha
+
+418
+00:19:01,270 --> 00:19:03,790
+Để cho cái kênh mình nó được sinh động hơn
+
+419
+00:19:03,790 --> 00:19:06,850
+Cũng như là kiểu như nó lách được bản quyền nha mọi người
+
+420
+00:19:06,850 --> 00:19:08,970
+Đấy mình làm bán content thì nói chung là nè
+
+421
+00:19:08,970 --> 00:19:11,590
+Cứ edit càng nhiều là càng tốt nha mọi người
+
+422
+00:19:11,590 --> 00:19:14,730
+Rồi cái chỗ này thì hơi quan trọng một tí nè
+
+423
+00:19:14,730 --> 00:19:16,590
+Sau khi mà đã xem hoàn chỉnh rồi á
+
+424
+00:19:16,590 --> 00:19:20,010
+Thì anh em sẽ chọn hết tất cả các cái mà
+
+425
+00:19:20,010 --> 00:19:21,770
+Nãy giờ mọi người thêm vào nè
+
+426
+00:19:21,770 --> 00:19:24,050
+Mọi người sẽ gộp nó lại thành một cái
+
+427
+00:19:24,050 --> 00:19:26,230
+Dự án nha
+
+428
+00:19:26,230 --> 00:19:28,170
+Đấy một cái dự án nhỏ như này
+
+429
+00:19:28,170 --> 00:19:29,590
+Rồi anh em vào cái tốc độ nè
+
+430
+00:19:29,590 --> 00:19:31,350
+Lúc nãy á, mọi người có nhớ là
+
+431
+00:19:31,350 --> 00:19:32,990
+Mọi người giảm nó về 0.7 không
+
+432
+00:19:32,990 --> 00:19:36,230
+Thì bây giờ anh em sẽ tăng ngược lại là thêm ba nấc nữa
+
+433
+00:19:36,230 --> 00:19:37,790
+Là sẽ lên 1.0
+
+434
+00:19:37,790 --> 00:19:39,930
+Là bây giờ nó sẽ trở về cái
+
+435
+00:19:39,930 --> 00:19:41,530
+Tốc độ như cũ này
+
+436
+00:19:41,530 --> 00:19:42,350
+1.0 nha (0.7 + 0.3 = 1.0) mọi người
+
+437
+00:19:42,350 --> 00:19:44,550
+Bây giờ video mình nó sẽ đúng cái giọng đọc
+
+438
+00:19:44,550 --> 00:19:46,190
+Và đúng cái thời lượng hơn nha
+
+439
+00:19:46,190 --> 00:19:48,650
+Đây chắc chắn là một trong những khoảnh khắc
+
+440
+00:19:48,650 --> 00:19:50,670
+Huy hoàng hiếm hoi của Đức sống sót trên đảo hoang
+
+441
+00:19:50,670 --> 00:19:52,110
+Đến mức tuyệt vọng mà đi treo cổ
+
+442
+00:19:52,110 --> 00:19:54,190
+Không những gây tiếng vang lớn trong giới sinh tồn
+
+443
+00:19:54,190 --> 00:19:57,070
+Nhờ hành động này mà còn được tặng cả một căn nhà đầy thịt vừa ăn đùi.
+
+444
+00:19:57,290 --> 00:20:01,630
+Đấy, mọi người mới nghe qua thì nó vẫn có cái kiểu như là chèn giọng lên đúng không?
+
+445
+00:20:02,050 --> 00:20:11,250
+Đấy, nên là anh em phải chỉnh nó về tốc độ nó chậm nhất có thể để anh em có thể lấy cái kịch bản lúc sau để mọi người căn chỉnh nó không bị đè giọng lên nha.
+
+446
+00:20:11,690 --> 00:20:15,510
+Đấy, lúc nãy em chỉnh 0.7 thì mọi người có thể chỉnh về 0.86.
+
+447
+00:20:16,050 --> 00:20:17,710
+Nói chung là cũng tùy video thôi anh em ơi.
+
+448
+00:20:17,710 --> 00:20:24,150
+Có cái video nó đọc nhiều thì nó sẽ tỷ lệ nó sẽ chèn giọng lên nhau là nó cao nha mọi người.
+
+449
+00:20:24,190 --> 00:20:26,370
+Nói chung anh em có thể tự điều chỉnh cái đó
+
+450
+00:20:26,370 --> 00:20:30,150
+Cái đó thì em sẽ chỉ đó là cái mẹo nha mọi người
+
+451
+00:20:30,150 --> 00:20:34,910
+Rồi bây giờ thì chỉ cái việc xong rồi thì anh em chỉ việc xuất video ra thôi
+
+452
+00:20:34,910 --> 00:20:35,770
+Đấy
+
+453
+00:20:35,770 --> 00:20:41,070
+Rồi anh em mà xem đến đây rồi mà thấy video này có giá trị cho mọi người á
+
+454
+00:20:41,070 --> 00:20:42,950
+Về video hướng dẫn này hay á
+
+455
+00:20:42,950 --> 00:20:47,330
+Đừng quên cho em 1 lượt đăng ký kênh và 1 like video nha.
+
+456
+00:20:47,330 --> 00:20:48,150
+Đấy
+
+457
+00:20:48,150 --> 00:20:52,150
+Những cái cách làm về những cái key này và những cái nguồn lấy này á
+
+458
+00:20:52,150 --> 00:20:55,790
+Thì thật sự mà nói thì không có ai chia sẻ cho mọi người đâu nha
+
+459
+00:20:55,790 --> 00:20:57,710
+Thật sự mà như vậy luôn
+
+460
+00:20:57,710 --> 00:21:00,750
+Rồi bây giờ thì em xin chào tạm biệt mọi người
+
+461
+00:21:00,750 --> 00:21:03,390
+Hẹn mọi người ở clip hướng dẫn tiếp theo nha
+
+462
+00:21:03,390 --> 00:21:05,290
+Cảm ơn mọi người đã xem video đến đây
+
+463
+00:21:05,290 --> 00:21:08,290
+Và em chúc mọi người làm thành công nha mọi người

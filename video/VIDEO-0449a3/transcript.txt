@@ -1,0 +1,391 @@
+Thuật toán đề xuất của video
+Cái này là cái mà ai cũng hỏi này
+Mình nhắc lại nó có cái đề xuất về trang chủ của người đăng ký
+Thì nó bao gồm 2 phần
+là các cái tính năng duyệt xem vào video đề xuất
+ở đây là có những cái
+nốt rõ rồi
+anh em đọc và
+tìm hiểu
+Trang chủ là trang màn hình chính, bao gồm cả người xem đăng nhập và đăng xuất. Tức là người ta không cần phải đăng nhập vào một người dùng mới cứng,
+không có Gmail. Vào mà xem một cái kênh nào đấy nhiều, sau này nó vẫn xuất hiện trên trang chủ của họ bình thường. Họ chả cần đăng ký. Cái đấy
+là cái hay. Cũng không cần phải bắt, phải vào đăng ký tài khoản mới xem được giống như ở Facebook đúng không? Facebook phải đăng ký tài khoản mới vào được.
+Tiếp theo là nguồn cấp dữ liệu kênh đăng ký.
+Như vừa nãy mình nói nó có thể từ bất kỳ cái nguồn lưu lượng truy cập nào nhưng không chỉ riêng những cái nguồn này.
+Nó có thể từ kênh của mình, có thể từ kênh của người khác.
+Và cái dạng thứ 2 là dạng đề xuất là đề xuất trực tiếp từ video.
+Cái dạng đầu tiên nó làm ở cái là chúng ta cần phải có video nhiều rồi.
+Chúng ta đề xuất rồi, chúng ta có người đăng ký rồi.
+Những cái này là những cái mà người ta đã xem video của mình rồi
+Còn cái thứ 2 là cái dạng trực tiếp nó đề xuất video của mình
+Mình xem video này đề xuất video kia
+Hoặc xem nó là cả một cái luồng từ video A đến B đến C đến D
+Thì nó có 2 cái dạng đề xuất
+Nó là như vậy
+Thì hôm nay chúng ta sẽ nói sâu hơn về cái luồng đề xuất của video và của khán giả.
+Cái thực chất khi mà mình nói, anh em mình nói, nhìn cái lượng view, lượng sub á, nó thể hiện cho cái gì?
+Nó cũng thể hiện cho sự quan tâm của khán giả.
+Nó cũng thể hiện cho việc là cái nội dung của mình nó đúng đối tượng hay không.
+Và cái phần này, chúng ta có các cái thông số về việc là thời gian xem á,
+Thì chính là cái mà cái khán giả của mình ở lại trên kênh nó như thế nào. Thì chính là cái mà chúng ta cần phải tối ưu những cái như vậy.
+Thì tổng hợp lại chúng ta có 2 phần như vậy. Và tiếp theo chúng ta cần phải có được cái hiểu được cái phần video
+đề xuất. Thứ 2 là video được đề xuất. Thứ 3 là video nối đề xuất. Tức là đây là video của mình nè, đang xem.
+Thế vậy là video mình đang xem này, video nào nó đang đề xuất video của mình? Và từ video đang xem này thì đang đề xuất tiếp video này?
+Tức là nó cả một cái luồng khán giả nhé. Tức là người ta có thể xem kênh 1, xong người ta xem kênh 2, xong người ta xem kênh 3, kênh 4, kênh 5, kênh 6, kênh 7. Vì là một người anh em để ý.
+Một người thì họ không có, không phải là chỉ có một sở thích duy nhất, mà một người có nhiều sở thích và có thể xem được nhiều nội dung đa dạng khác nhau.
+Nên là khi mà mình xem bất kỳ một cái video nào thì mình cũng có thể phân tích được ngược lại cái video nào đang đề xuất video đó và video đó đề xuất cái video nào tiếp theo.
+Thì đấy là cái phần giúp cho mình thấu hiểu hơn được cái hành vi của khách hàng.
+Mở rộng được cái tệp ra ngoài những video này họ đang xem, họ còn muốn xem những cái nào nữa.
+Để mình tìm cách mình mở rộng, mình phục vụ cái tệp khán giả của mình.
+Khi mà phân tích một video đó thì cần biết thứ nhất video nào đang đề xuất video của mình.
+Cái thứ hai là video đang được đề xuất nó như thế nào, tại sao nó lại được đề xuất.
+Cái thứ 3 là video đang được đề xuất đấy, nó tiếp tục đề xuất video nào.
+Anh em hiểu cái luồng khán giả nó là như vậy, cái luồng hành vi của họ là như vậy, cái luồng mà họ đang làm ở trên Internet nó là như vậy.
+Thế mình nói là Internet luôn luôn để lại dấu vết, nó là như thế.
+như thế
+khi mà
+mình phải hiểu được những cái
+nội dung như vậy
+thì đến lúc mình có làm video hay mình phân tích video
+hay mình có thử sai hay mình có làm sản xuất
+thì nó nhanh thành công hơn
+cho việc mình làm mò
+và đặc biệt là khi mà mình làm những cái kênh mà mình
+không biết đến ngôn ngữ nhiều nữa
+mình không hiểu được ngôn ngữ
+và mình không hiểu được hết những cái ý
+của cái ngôn ngữ mà họ muốn nói
+nhưng mà khi mà dựa vào những cái video
+những cái video và những cái thông số
+được phân tích này, làm được hết
+Đầu tiên chúng ta sẽ nói với nhau về trong cái kênh của mình một cái video nó đang được đề xuất
+bởi video nào thì chúng ta click vào cái phần lưu lượng truy cập và nó có cái phần là video đề xuất.
+Kích ở đây, nó là toàn bộ những cái dấu vết vì việc những cái video nào đang đề xuất video mình, bao gồm video trong kênh của mình và video ở ngoài.
+Ví dụ ở đây mình, đấy, ví dụ một video nó đề xuất nhé, còn video của mình là video được đề xuất, thế là đây là video của mình.
+Nhưng mà làm sao để mình biết được những cái video nào, đây đằng trước này này, nó đang đề xuất video của mình ở bên phải này, mà người ta xem.
+Thì đơn giản đấy, chỉ cần chúng ta cần kích vào cái phần video đề xuất này là nó có toàn bộ các thông số đấy.
+Đây là những cái thông số chính để chúng ta có thể tìm hiểu.
+Kích vào đấy, ví dụ kích vào bí quyết thành công chẳng hạn.
+Thì cái video mà đang đề xuất video của mình nhiều nhất là nghèo cỡ mấy cũng phải hiểu 4 cái này.
+Thì nó là video trong kênh của mình.
+Nhưng nó sẽ có những cái video nó khác nữa.
+ở ngoài kênh của mình, nó vẫn đề xuất bình thường.
+Sau đó thì, đây là những cái video này của mình nhé.
+Mình cần chụp lại toàn bộ những cái thumbnail tiêu đề này.
+Kích nhẹ vào cái video này cái là nó cũng hiện lên cái phần ở bên trên thumbnail tiêu đề mình chụp rồi.
+Ví dụ như mình đây, mình chụp lại toàn bộ những cái video nó đang đề xuất cái video của mình nhận ạ.
+Ở đây nó đang có những cái phần video trong kênh của mình đề xuất video Ngẫm Plus hay là video tài chính 24h. Đây là những cái kênh
+khác nó đề xuất. Tư duy làm giàu nó đề xuất. Đấy là những cái kênh khác họ đang đề xuất video của mình. Mình cứ nốt hết lại.
+Thì đây là cái phần mà giúp cho mình hiểu được video đằng trước, đằng trước đấy nhé. Họ xem những cái này, một trong số những cái này. Sau đó họ được đề xuất
+bên phải của mình, là video của mình. Thì đấy là một cái hành vi là họ cũng đang quan tâm đến cái nội dung kiểu tương tự như thế. Thì đấy là một phần.
+Sau đấy thì mình có phân tích ở đây là chủ đề xuyên suốt là làm giàu Bí quyết thành công này.
+Những cái nội dung giống nhau chẳng hạn là thumbnail thì có người góc 1 phần 3 này, doanh nhân nổi tiếng này.
+Thì đấy là cái nội dung mà mình vừa phân tích là những cái điểm chung.
+Thế vậy là mình cần phải tìm xem những cái mô típ lập lại giống nhau mà khán giả đang xem, đang thích xem.
+Nó là như thế nào?
+Vẫn là những công thức rất đơn giản như vậy thôi.
+Sau đó tiếp tục mình làm.
+Và cái này nó có nhược điểm.
+Tại sao mình chưa chia sẻ cái này ngay cho anh em?
+Và cái này, cái module này nó mới có.
+Sau rất dài thời gian rồi.
+Bởi vì là kênh nó phải có lượng view sub nhất định thì nó mới có dữ liệu để nghiên cứu được.
+Cái thứ 2 là cái lượng truy cập theo thời gian nó khác nhau nên có thể theo cái trending nhiều khi phân tích video nó bị lệch so với cái nhóm chủ đề đang xuyên suốt.
+Ví dụ phân tích vào cái thời mà đang Covid chẳng hạn thì cái nội dung người ta đang quan tâm rất rất nhiều đến Covid thì cứ nói Covid là người ta xem.
+Lúc đấy nó là trend thị trường.
+Nếu mà mình dùng cái đấy để mình phân tích mà mình không tỉnh táo thì mình cứ đi theo follow những cái như vậy thì nó cũng sẽ, cái kết quả nó sẽ bị lệch.
+Cái thứ 3 là có thể là tham anh em làm có thể là vì có được những cái thông số như
+vậy nên anh em đang làm bất chấp cái ban đầu để tham view nên làm nhiều chủ đề nó bị loãng kênh.
+Khi mà mình phân tích view nó sẽ khó hơn về sau.
+Đặt ra câu hỏi là
+Ở đây ai cũng muốn đề xuất?
+Thì đề xuất thì làm nè
+Thì vẫn quay trở lại
+Cái thứ nhất là nghiên cứu chủ đề
+Để hiểu được mô típ khán giả muốn xem.
+Chủ đề ở đây có thể hiểu là một là cái chủ đề lớn của khán giả muốn xem là cái nội dung kênh mình muốn làm.
+Cái thứ hai là chủ đề ngách, là những cái ngách video, những cái nội dung nào mà mình có thể làm.
+Cái quan trọng là giữ được cái từ khóa là khán giả muốn xem.
+Quan trọng, cực kỳ quan trọng.
+Insight, Insight khách hàng.
+Còn sau đó thì về kỹ thuật thì đơn giản là sản xuất các video theo chủ đề, học tập các mô típ về thumbnail, tiêu đề, content để nhắm tới mục tiêu cuối cùng là phục vụ đối tượng khán giả muốn xem.
+Từ đầu đến giờ mình nhấn rất là mạnh vào việc là khán giả nhé, nhắm đến người dùng nhé, nhắm đến một tệp khán giả, một tệp người dùng.
+Mình không nói nhiều về các kỹ thuật, cái này nó liên quan đến insight khách hàng.
+Rồi tiếp theo nữa là ở chính một cái video đề xuất hay là gọi là video dẫn kênh. Có những video nào, dạng nào đang kéo cả kênh của mình lên. Vì
+thường cái kênh của các bạn lên nó sẽ có những cái bộ video khoảng độ 5-7 video là nhiều view nhất và lúc nào nó cũng được đề xuất nó kéo cái
+kênh của mình lên. Không video này dẫn kênh thì video kia dẫn kênh. Thế vậy thì top 5 video mà đang dẫn kênh của mình thì phân tích nó như thế nào.
+Là mình đang nói về video được đề xuất.
+Ví dụ, video này là video dẫn kênh của kênh Bí quyết thành công.
+2 triệu view, nó được khoảng 4.300 đô, tức là RPM 2 đô đấy.
+Từ 1 video đấy nhé, đây là 1 video đấy.
+Nó cứ đem lại tiền cho mình đều, đều, đều từ ngày này tháng khác, ngày này tháng khác.
+Nó ít view thôi nhưng mà nó vẫn cứ có tiền.
+Khi mà một cái video này để mình phân tích cái video nó đang đề xuất và video dẫn kênh thì cũng lại phân tích giống hết như lúc trước thôi.
+Mình lại phân tích về tiêu đề của nó đang như thế nào, từ khóa nào, thumbnail nào, dạng nào, kiểu như thế nào.
+Và trong cái phần tiếp cận này nó sẽ có được hết những cái thông số phân tích của một cái kênh để mình có thể tìm.
+Đây, người xem nào đang đến từ video này? Lượt hiển thị hình thu nhỏ bao nhiêu này? Tỷ lệ nhấp và tỷ lệ xem như thế nào?
+Tiếp theo nữa là các cụm từ tìm kiếm nào của video này? Cách làm giàu này? Kinh doanh gì để giàu này? Học cách làm giàu này? Bí quyết thành công này? Tư duy làm giàu này?
+Thì sau này những cái từ khóa và những cái nội dung kiểu như thế này á, mình có thể cho vào một video khác và mình cũng xem những từ khóa như thế này.
+Và nội dung nó tương tự như thế này
+Thì cũng có khả năng là được ăn đề xuất từ chính kênh
+Cái này là từ chính kênh của mình.
+Nó cũng có cái phần là nội dung giúp người xem tìm thấy video này.
+Mình cũng lại xem video nào đang đề xuất video này.
+Mình cũng lại phân tích y hệt như là cái cách vừa nãy là mình phân tích cả kênh.
+Bây giờ mình phân tích một video là video dẫn kênh.
+Đây chính là bí mật của việc mình làm chưa từng thất bại.
+Một cái kênh YouTube mà từ 100.000 lên 1 triệu.
+Tức là
+Ở năm 2017 mình có một cái bài viết
+Anh em nào làm lên đến 100.000 trên 48h
+Nhắn tin trực tiếp cho mình
+Thì mình sẽ hỗ trợ anh em lên 1 triệu trên 48h trong khoảng 2 đến 4 tuần.
+Thì đây chính là bí mật này
+Anh em rất là khó khăn trong việc là 3 tháng đầu tiên, 4 tháng đầu tiên, 5 tháng đầu tiên để mình tìm ra, test ra cái video dẫn kênh này.
+Tức là bản chất của mình hiểu, mình tìm được ra đúng cái video, cái nội dung mà khán giả muốn xem.
+Sau đó phân tích thật kỹ video này.
+Từ video này, sản xuất các nội dung content có nội dung tương tự.
+tương tự hoặc những cái nội dung liên quan đến những cụm từ mà khách hàng tìm kiếm hoặc sản xuất những cái nó liên quan cùng tiêu đề cùng thumbnail.
+Anh em nhớ cái ví dụ hôm trước về việc kênh của Kính Lúp TV ấy.
+Khi mà họ đã tìm được ra một cái nội dung phổ biến thì họ bắt đầu tiếp tục nhân những cái nội dung đấy ra.
+Và với kênh của mình, ngày xưa mình làm là lúc nào mình cũng nhấn mạnh một video mà đã dẫn kênh rồi.
+Mình sẽ phải nhân lên cả tháng đấy. Chỉ làm những nội dung xoáy quanh những cái chủ đề và những cái nội dung như vậy.
+Để mình có thể phục vụ khán giả. Và đấy chính là cách mà lên từ 100.000 đến 1 triệu.
+Khi mà mình có một video, nó dẫn kênh rồi. Nó có thể kéo một kênh của mình lên 100.000 trên 48 giờ.
+Sau đó mình tìm cách mình sản xuất các nội dung tương tự.
+Chúng ta đừng để ý nhiều những cái kỹ thuật là tìm những cái cụm từ đấy như cái nào hay nội dung nào giúp mình tìm kiếm view này.
+Mà chúng ta để ý đến việc là mình đặt mình ở khán giả.
+Cái tâm lý của cái khán giả đấy, cái nhóm khán giả đấy thích xem những cái kiểu gì.
+Là cái ngách của mình đang chọn, đang tìm.
+Mình phải là cái người hiểu cái kênh của mình nhất.
+Mình phải là cái người hiểu cái tệp khách hàng của mình nhất.
+Thì khi mà cái tệp khách hàng đấy mình cứ ném cho cái nội dung này là họ sẽ xem. Khi mà anh em làm nhiều rồi
+Anh em sẽ có được cái cảm giác như vậy, cứ ném ra đúng cái tiêu đề đấy, đúng cái thumbnail đấy, đúng cái kiểu nội dung như vậy là sẽ lên, là sẽ xem.
+Nha khoa Lạc Việt, Niềng Răng thì họ cũng đã làm được cái đấy rồi, cứ làm cái kiểu như vậy, cứ Niềng Răng như vậy là xem, là xem.
+Thì đương nhiên là họ cũng chọn ngách và cái từ khóa đấy cũng là một trong số những cái ở trong ngành rồi.
+Nhưng mà họ đã hiểu được cái mô típ là khán giả muốn gì, muốn xem gì về Niềng Răng.
+Thì là họ cứ nhấn vào đấy, họ làm nhai đi nhai lại, nhai đi nhai lại, vẫn rất nhiều view. Và ngày xưa mình có trêu anh em rằng là tại sao mà
+xem cái kênh của tôi anh em lại thấy nó nhàm chán và thậm chí nếu anh em ở ngoài anh em lại còn thấy là nó chắc là chẳng có view đâu.
+Nhưng mà thực chất khi mà mình làm như vậy, nó nhiều view kinh khủng thôi.
+Và những cái mô típ lập đi lập lại như vậy, nếu mà chúng ta kèm được thêm cái bài tập tuần 1,
+là cái mà mình phân tích được cái mô típ kênh này, phân tích được tính cách kênh này,
+phân tích được các cái giọng điệu ở trong kênh này, hay là những cái gọi là hình ảnh mình muốn xây dựng đó.
+Thì đấy là cái để mình giúp mình phổ biến nhanh nhất về cái tính cách của kênh, về cái xây dựng thương hiệu của kênh.
+kênh
+nên là chúng ta phải có
+được những cái đấy
+tức là chúng ta đã có sự chuẩn bị
+những cái như vậy từ cái tuần 1 rồi
+thì đến khi mà đến cái tuần như thế này
+là chúng ta có được video bùng nổ rồi
+là người ta đã bắt đầu thấy
+cái đặc điểm của cái kênh đấy rồi
+Và cái cách để mà đi vào đầu người ta, NLP nó có 3 cách thì cách giật tít câu view là sốc đấy.
+Cũng là một cách mà cái cách thức lập đi lập lại những cái điều đơn giản.
+Nó cũng tạo thành thương hiệu.
+Nhiều cái mình làm nó nhất quán đến mức nó buồn cười nữa.
+Chả hiểu sao nhưng mà nó thành những cái đơn giản.
+Ví dụ mình vào Circle K, mình mua một cái cốc cà phê, thì thôi mình mua cái size XL, size to nhất ở đấy, size 30.000 để làm sao uống từ sáng đến chiều được ạ.
+Thế mình vô tình như vậy, thế là lần nào mình vào mình cũng một thằng đầu trọc mà áo màu đen và mua cái cốc cà phê size XL.
+Thế mình khá bất ngờ thì gần đây là mình vào quán cái là hôm đấy mình đích trong đầu là mình làm một buổi sáng, buổi chiều mình về có việc rồi.
+Mà cái thằng em nó bảo anh lại đặt XL phải không? Đấy anh thanh toán đi nè em đặt xong cho anh rồi.
+Nghe thật nói những cái lập đi lập lại.
+Rất đơn giản để khẳng định cái hình ảnh thương hiệu cá nhân.
+Thì trong kênh như vậy có những cái việc là nó sẽ tạo ra những cái góc nhìn khác.
+Ví dụ bên mình có 2 cái kênh.
+Nói về lịch sử, nói về những tin tức, ví dụ kênh Nabi Việt Nam là kênh bên mình.
+Thì cái kênh bên đấy nếu mà nói, cùng là phân tích một cái vấn đề về chính trị, về văn hóa, cái kênh đấy sẽ tôn vinh Việt Nam, ví dụ so sánh Việt Nam với Trung Quốc.
+Thì trong cái giọng văn của nó, trong cái content của nó là Nabi là Nâng Bi, Nâng Bi Việt Nam, kiểu kiểu như vậy.
+Thì những cái người mà yêu Việt Nam hay yêu nước, lúc nào người ta cũng xem và người ta cảm thấy thích ở cái kênh đấy, ở giọng đấy.
+Nhưng mà sẽ có một kênh ở kênh Hố Xanh Kiến Thức, cũng cái nội dung như vậy, ý hề như vậy, những content như vậy.
+Nhưng mà nó giọng ở content kiểu cà khịa.
+Thì mọi người xem mình sẽ thấy là cái nội dung nhé, cùng là một cái content, cùng là một cái nội dung.
+Nhưng mà một bên thì nói về góc nhìn là cà khịa, một bên thì nói về tốt, nâng bi.
+Thì đấy là cái trong cái tuần trước của mình có nói, một nội dung nhưng nhìn ở nhiều góc cạnh và nhiều vấn đề.
+Thì nó ra được những cái khác nhau. Và mình làm, anh em là nhất quán, thì cái kênh Nabi kia thì auto là như vậy.
+Nội dung content phải như vậy và mình hiểu được cái điều đấy thì mình hiểu cái khán giả của mình thích như vậy.
+Thì mình đưa yêu cầu cho các bạn content làm là nó cũng sẽ như vậy.
+thì nó nhất quán
+cái kênh như vậy
+thì đến
+tại vì mình hiểu
+khán giả
+mình làm được nhất quán
+thì đây là cái
+cách thức để có thể
+ích lên
+tổng
+Tổng hợp lại đơn giản là chúng ta phải mò mẫm từ ban đầu.
+Test rất nhiều, thử ngách, tìm ngách, cho khi tìm đúng.
+Và tìm đúng được rồi.
+Thì bắt đầu kênh sẽ lên 30.000, 50.000, 100.000.
+Thì bắt đầu nhân cái top những cái kênh dẫn đầu ra.
+có khi chỉ cần 1 đến 3 video dẫn đầu thôi, hoặc là video dẫn kênh.
+Nghiên cứu thật mạnh, xoáy sâu rồi đấy, tìm các góc, các cái mảng, các cái góc nhìn liên quan đến cái nhóm này, để chúng ta có thể làm và chúng ta phát triển là có kết quả thôi.
+Cứ lên đến 100.000, lên 1 triệu, cực kỳ nhanh.
+Ví dụ bắt đầu anh thấy có dấu hiệu nhé, có 1 video lên khoảng 7-8.000 view rồi, mà mới có 1-200 sub thôi.
+Tiếp tục đào sâu video đấy, xoáy sâu vào, vào trong số liệu phân tích, phạm vi tiếp cận này.
+Phân tích cái kênh ra, tìm kiếm làm những cái nội dung xoáy quanh đấy, vẫn SEO thêm những cái từ khóa như vậy.
+Tìm những cái nội dung đã giúp cho video của mình họ xem, sản xuất kiểu tương tự.
+Là lên, nhanh lên.
+Cái quan trọng là ban đầu là mình chưa test ở cái đoạn đấy thôi.
+Cái cách này mình làm nhé, chưa từng thất bại nhé.
+Tiếp theo nữa là
+Khi mà
+Mình phân tích các yếu tố, tiêu đề, nội dung content, từ khóa tìm kiếm các video đề xuất, những dạng như vừa nãy mình nói.
+Cuối cùng thì những điểm chung của nó là gì? Thì mình lại phân tích ra, nốt lại nhé. Điểm chung của nó là gì để làm sao?
+Mục tiêu của mình cuối cùng vẫn là để phục vụ nhóm khán giả của mình. Đấy mới là cái quan trọng.
+Tiêu đề từ khóa nội dung content hay là các cái video đề xuất của mình. Quay đi quẩn lại, nó là phục vụ cái nhóm khán giả mà mình đang săn, đang tìm.
+Kể cả là cái nội dung ở trong cái khóa học mình nói là anh em mình cần phải có một cái gọi là từ khóa lý tưởng.
+Từ khóa lý tưởng là gì? Từ khóa lý tưởng thực chất ở trong khóa này mình mới nói nó sâu sắc về việc là thực chất đấy là từ khóa mà khán giả.
+Đang quen. Mình tạo ra thói quen cho một cái nhóm khán giả về cái từ khóa đấy.
+Thì họ nhìn thấy cái thói quen như vậy thì họ xem thôi.
+Một yếu tố về tâm lý.
+Rồi chúng ta có được 2 cái dạng là thứ nhất là mình đang xem một video, mình hiểu được video đằng trước, tất cả những video đằng trước nó đang đề xuất video của mình.
+Cái thứ 2 là bản thân cái video đấy của mình nó đang như thế nào
+Thì 2 cái phần đấy là 2 cái phần mà chung quy lại vẫn là thấu hiểu của khách hàng
+Rồi chúng ta đến phần tiếp theo là cái video nối tiếp cái video được đề xuất đấy
+Thì nó như thế nào
+Thì cái này thì nó rất là đơn giản rồi anh em
+em có thể thấy là
+Từ 1 cái video của mình
+Đây là video
+Đề xuất video của mình
+Sau đến video được đề xuất
+Thì ở bên phải này này
+Góc phải màn hình của mình
+Nó sẽ có những video mà nó đề xuất tiếp
+Thì những cái này là những cái mà anh em nên dùng cái tab ẩn danh nhé
+Tab ẩn danh của Google Chrome đây
+Ở trên này mình hãy nói ẩn danh này
+Để làm sao nó không lưu lại cái cookie người dùng ấy
+Thì nó đưa ra những cái đề xuất này nó chuẩn hơn so với một người mà mình hay xem các kênh rồi thì nó không đúng nữa.
+Thì cũng đơn giản là mình lại chụp lại toàn bộ những cái phần này, chụp lại toàn bộ cái phần bên phải này.
+Đưa vào Word, Excel gì đấy, chụp.
+Thì nó ra được những cái dạng như này.
+Đây là những cái dạng mà nội dung bên phải mà mình đang được đề xuất đấy.
+Nó là nối cái đề xuất của mình
+Cứ chụp lại toàn bộ
+Anh em chụp lại toàn bộ
+Làm Word, Excel thành một cái bản để phân tích
+Làm thật tốt vào
+Bản để phân tích
+Sau đấy mình có giảng giải cho đội ngũ của mình
+Hay là giảng giải cho đội content
+Hay là các đội kia kìa
+Thì họ sẽ hiểu được cái tư
+Để họ có thể làm được nó đơn giản hơn.
+Và khi mà mình tìm thấy được những cái nội dung như này, nó có các cái luồng khán giả khác nhau.
+Ví dụ đây là cái luồng ở trong kênh của mình, là màu đỏ này, mình làm này, màu đỏ này.
+Thì tức là cái nội dung là từ video trước đến video sau, đến video sau nữa là nội dung là nó đề xuất nội dung ở ngoài,
+xong đến các nội dung của mình, rồi lại đến tiếp các nội dung của mình.
+Thì nó là một luồng khán giả.
+Tiếp theo nó có những luồng khác ở ngoài kênh của mình.
+Nó đề xuất cả những kênh ở ngoài này.
+Tiền đạo, Web 5 Ngày, Đọc sách cùng Thùy Yên, các kiểu để mình biết có thêm góc nhìn về cái luồng như vậy.
+Vẫn một câu hỏi đặt ra là phân tích luồng đề xuất trong kênh thì muốn đề xuất thì làm nào.
+Thì cũng lại như vừa nãy thôi.
+Vẫn là phân tích cái từ khóa, à vẫn là phân tích giống như video dẫn kênh á, vẫn tìm các cái chung cái chủ đề đề xuất của mình.
+Từ khóa này, chủ đề này, sự lập đi lập lại nhiều nhất, chung nhất của các video.
+Và mình đào sâu ở đấy.
+Đào sâu ở đó.
+Đấy là đề xuất của trong kênh
+Tức là cái luồng tiếp theo
+Là nó các nội dung của mình
+Còn cái dạng tiếp theo nữa là
+Đề xuất
+Chúng ta có thể mở rộng cái luồng đề xuất của mình
+Là
+Phân tích nhóm video đề xuất bên phải, mở rộng tệp khán giả ra các video ngoài kênh của mình.
+Xem chủ đề nào có thể khai thác thêm mà vẫn đúng tệp khán giả.
+Thì mình có thể làm. Như ở đây, ở đây chẳng hạn thì có rất nhiều cái đề xuất đằng sau này. Mình phải chọn để xem là cái chủ đề nào. Một
+đó nó gần giống chủ đề của mình. Hai là cái nội dung mà khán giả họ cũng quan tâm như thế này nhưng cũng lại phải xem xem với lại cái
+kênh của mình. Cũng là đọc sách này, cũng là làm những cái dạng như thế này. Như ví dụ đầu tư chứng khoán chẳng hạn thì cái này bên mình không làm.
+mình sẽ không chọn kể cả nó có nhiều view
+đó thì như ở đây mình đưa ra là những view này
+phân tích nhóm ở bên phải mở rộng tệp khán giả ngoài những cái luồng của mình
+thì nó có thêm những cái luồng khác ở ngoài nữa
+xong bắt đầu tìm chủ đề nào có thể khai thác thêm mà vẫn đúng tệp khán giả
+nhớ nhé xem chủ đề nào có thể khai thác thêm mà vẫn đúng tệp khán giả
+quay trở lại là vẫn phục vụ khán giả của mình thôi
+Bí quyết thành công là có thêm chủ đề tiền bạc, ngoài ra có cách đầu tư tiền, cách kiếm tiền, cách tạo ra tiền, tìm thêm những chủ đề khác như vậy.
+Thì nó mở rộng, nó thêm được những cái khác về tư duy, về sống khôn ngoan, về cách nói chuyện nó rất là rất là nhiều.
+để mình chọn, để mình test.
+Ngoài ra nữa thì khi mà vào trong kênh mình xem đối tượng người xem và trong số liệu phân tích này,
+nó có cái phần đối tượng người xem, đây cũng là phần mình cần phải khai thác trong kênh của mình.
+Những kênh khác mà khán giả của bạn cũng xem.
+Ngẫm Plus, Mắt Thần, Góc Nhìn Đa Chiều, Web 5 Ngày.
+Những video khác mà khán giả của bạn cũng xem.
+Anh em có để ý nhé, kênh Bí quyết thành công, kênh này nói làm giàu, cách thức tư duy để phát triển.
+Người ta vẫn xem vợ hoa hồng tuổi lái xe riêng, người ta vẫn xem phim, vẫn xem gái xinh hảo hán, người ta vẫn xem kênh bóng đá, người ta vẫn xem tin tức.
+Một người có rất nhiều cái có thể làm mà, có thể xem mà.
+Đây là cái bí mật về việc là
+Anh em làm YouTube kiếm tiền
+Họ nhân kênh
+Và họ phát triển kênh
+Không phải 1 kênh nữa mà 20 kênh, 30 kênh như thế nào
+Cũng là bên mình đang làm
+Nó chính là phân tích từ chính kênh của mình
+Xem những cái kênh khác
+Sau đó xem những cái video nội dung khán giả đã xem
+Các bạn có thể tìm ra một kênh bóng đá
+Nó cũng như thế này thôi.
+Là mình tìm cái nội dung kênh của mình.
+Thì vô tình mình thấy rằng, à, ở đây nó có những cái dạng như thế này, người ta cũng thích xem bóng đá, cái nội dung kênh xem bóng đá.
+Và mình nghiên cứu cái dạng mô típ video bóng đá như thế nào?
+Xem bên mình có đủ năng lực để sản xuất không? Đủ khả năng làm không? Sau đó thì bên mình cho làm những cái nội dung
+kiểu tương tự như này hoặc chất lượng tốt hơn. Sau đó thì mình dùng cái kênh Bí quyết thành công này, kéo nhẹ cái video này.
+Ở trong cái tab cộng đồng, giới thiệu sang tab cộng đồng
+Và giới thiệu trong các cái nội dung video mà nó có kiểu tương tự về
+Ví dụ Công Vinh Thủy Tiên chẳng hạn
+Những cái người mà thành công từ bóng đá
+Hoặc là những cái tin tức hoặc là cách kiếm tiền của Quang Hải chẳng hạn
+Khi mà bán thương hiệu
+Hoặc là Quang Hải ra nước ngoài thì là tốt hay xấu so với việc ở Việt Nam chẳng hạn
+Ví dụ ở đây là những cái nội dung mà bí quyết thành công có thể kéo sang được
+Thì đây chính là cách mình tạo tìm được ra một cái chủ đề mới, một cái kênh mới. Và khi mà kéo sang phát này là bắt đầu nó có view luôn. Vì là cái kênh
+này nó to và nó đã có những nội dung, những người đã thích xem những cái dạng chủ đề này rồi. Nên mình kéo sang phát là video đầu tiên cái là có kết quả luôn.
+Nên là những cái kênh sau nhân lên nó rất nhanh anh em ạ. Nó không khó như cái kênh ban đầu đâu. Nên là bên mình mới có mấy chục kênh nó là như thế chứ. Bình
+thường anh em tự làm một kênh thì nó phải mất 3-6 tháng thì nó mới lên được. Nhưng mà khi mà đã có kênh và có hệ thống kênh rồi thì bọn mình đẩy nó nhanh lắm.
+Đấy là một cái keyword, nhưng mà quay trở lại là cái nguyên lý của nó là gì? Nguyên lý của nó là một cái nhóm khán giả họ có thể xem rất nhiều nội dung.
+Thế vậy là mình chọn cái nội dung nào để có thể sáng tạo cái content của mình thì mình có thể dựa vào cái đối tượng người xem này và đưa ra những cái phân tích của YouTube.
+Họ đưa ra những cái nội dung như vậy.
+Những cái mà họ đã đưa ra và máy nó tìm chứ không phải mình nhé.
+Nhiều lúc máy nó tìm nó còn tốt hơn người rất là nhiều.
+Nên là mình cứ tin vào những cái thông số mà họ đưa ra như thế này.
+Mình nghiên cứu thì nó ok.
+Tuy nhiên Google trong cái trải nghiệm của mình nó chỉ có một cái là chúng ta không nên tin vào việc gợi ý của Google.
+Nó là cái quảng cáo.
+Anh em mà dựa theo tối ưu, theo những cái mà Google nó quảng cáo thì tốn tiền kinh khủng luôn.
+Riêng quảng cáo thì chúng ta cần phải làm nó khác.
+Mình trong khoảng 3 tháng gần đây, mình nghiên cứu rất kỹ về quảng cáo Google
+Về từ việc nuôi content, nuôi tài khoản, cách thức làm, cách thức nhân
+Rất kỹ về quảng cáo Google rồi
+Nhưng mà nó lại không dùng để chọn
+Trong cái mảng YouTube nó dùng ở một vài mảng khác.
+Tuy nhiên là nó vẫn đủ kiến thức để anh em có thể làm chiến đấu về việc là chúng ta đến lúc mà chúng ta cần phải đốt tiền.
+Chúng ta làm như thế nào?
+Sẽ có cái giai đoạn về việc là chúng ta test và chúng ta chạy quảng cáo.
+Và bây giờ cái tài khoản Google nó rất là khó.
+Thật sự khó vì anh em chạy quảng cáo anh em sẽ biết nó chết tài khoản liên tục.
+Thế làm nào để chạy được cái này thì mình cũng có cách và mình cũng xử lý được rồi.
+Nó rất ok. Đến cái phần quảng cáo mình sẽ share lại cho anh em những cái phần này. Ngoài ra nữa nếu mà trong anh em
+nào đang làm đến Affiliate ấy, anh em muốn quan tâm đến quảng cáo Google thì mình cũng có thể chia sẻ thêm về quảng cáo Google.
+Nhưng anh em ở Eagle, anh em triệu phú ở Eagle mà từ Affiliate ấy toàn bộ cũng bắt đầu từ quảng cáo Google hết.
+Có một cái lưu ý khi mà mở rộng đề xuất là cái này mình luôn luôn nói nè, sản xuất video cơ bản là phục vụ một nhóm khán giả của mình, của kênh của mình.
+Nên khi mở rộng cần có sự liên kết giữa các video để mở rộng đúng hướng, không sa vào trending và bị lệch hướng khán giả.
+Không tham mở rộng view mà nó không cùng với tệp khán giả.
+Mục đích cuối cùng nó vẫn là phục vụ khán giả của mình. Nó quan trọng vô cùng luôn.
+Và để tìm được đúng cái đối tượng khán giả của mình thì chúng ta cần phải có tìm được cái một cái nhóm nhỏ trước.
+Một cái nhóm nhỏ chấp nhận video của mình trước. Tức là cái ngách.
+Vì ban đầu là mình chưa làm rộng, chưa làm lớn và chưa phủ thị trường được.
+Mà YouTube bản chất ban đầu anh em hiểu là khi chúng ta mới làm view ít, sub ít thì cái độ reach của nó cũng sẽ ít.
+Nên là mình cần phải trân trọng những cái view, cái reach ban đầu của mình.
+Thì mình cần phải tìm được đúng ngách, nó là như thế.
+Khi mà mình tìm được đúng ngách rồi thì chúng ta có quyền để mở rộng ngách.
+Thì chúng ta mở rộng có rất nhiều cách rồi.
+Đấy là cái mà chúng ta có thể làm.
+Ok.
+Thì cái nội dung chính của chúng ta là biết được video nào là video đề xuất video của mình.
+Cái thứ 2 là video dẫn kênh là video nào.
+Cái thứ 3 là video nối đề xuất là video nào.

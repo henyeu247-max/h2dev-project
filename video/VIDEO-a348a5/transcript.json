@@ -1,0 +1,49 @@
+{
+  "sku": "VIDEO-a348a5",
+  "duration": 446.6,
+  "note": "Phụ đề đã được chuẩn hóa phục hồi đầy đủ: Lời giảng mở đầu (00:00 - 00:26) + Hướng dẫn phụ đề thực hành từng bước trên Photopea (00:27 - 07:26).",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 5.0,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:05,000",
+      "text": "Tiếp tục ở cái video này thì sẽ hướng dẫn cho mọi người cách"
+    },
+    {
+      "id": 2,
+      "start": 5.0,
+      "end": 8.0,
+      "start_time": "00:00:05,000",
+      "end_time": "00:00:08,000",
+      "text": "làm thumb theo cái key triết lý khắc kỷ nha mọi người."
+    },
+    {
+      "id": 3,
+      "start": 8.0,
+      "end": 13.0,
+      "start_time": "00:00:08,000",
+      "end_time": "00:00:13,000",
+      "text": "Đấy, cái này thì làm thẳng ở trên Photoshop luôn nha, web Photoshop."
+    },
+    {
+      "id": 4,
+      "start": 13.0,
+      "end": 18.0,
+      "start_time": "00:00:13,000",
+      "end_time": "00:00:18,000",
+      "text": "Thì mọi người có thể dùng Canva hay là các cái app khác được, đấy, nhưng cách làm thì cũng tương tự thôi mọi người."
+    },
+    {
+      "id": 5,
+      "start": 18.0,
+      "end": 24.1,
+      "start_time": "00:00:18,000",
+      "end_time": "00:00:24,100",
+      "text": "Cái web này thì hoàn toàn là free nên anh em có thể dùng để làm luôn nha."
+    }
+  ],
+  "total_segments": 5,
+  "full_text": "Tiếp tục ở cái video này thì sẽ hướng dẫn cho mọi người cách làm thumb theo cái key triết lý khắc kỷ nha mọi người. Đấy, cái này thì làm thẳng ở trên Photoshop luôn nha, web Photoshop. Thì mọi người có thể dùng Canva hay là các cái app khác được, đấy, nhưng cách làm thì cũng tương tự thôi mọi người. Cái web này thì hoàn toàn là free nên anh em có thể dùng để làm luôn nha."
+}

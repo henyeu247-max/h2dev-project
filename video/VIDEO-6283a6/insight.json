@@ -1,0 +1,75 @@
+{
+  "sku": "VIDEO-6283a6",
+  "title": "Update free tool tạo giọng đọc tiếng Việt (Ngọc Huyền) vào tool dịch Phụ đề SRT",
+  "actual_topic": "Tích Hợp Giọng Đọc Vbee Ngọc Huyền Vào Web Tool Dịch Phụ Đề H2DEV: Đồng Bộ Âm Thanh Khớp Timeline SRT & Tải Video Đa Nền Tảng Miễn Phí",
+  "category_group": "tooling",
+  "niche_primary": "Công Cụ & Tự Động Hóa Sản Xuất H2DEV",
+  "niche_id": "h2dev-tool-srt-voice",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "H2DEV vừa cập nhật web tool dịch: tích hợp miễn phí tính năng tạo voice theo phụ đề editor, có giọng Ngọc Huyền từ Vbee, để học viên đỡ tốn chi phí khi làm video review.",
+    "Giọng đọc được tạo theo timeline của phụ đề editor; tạo xong thì ghi lại rồi import vào CapCut để làm video.",
+    "Tác giả demo nhanh một đoạn mẫu nói về cuộc sống hoang dã, sống trong nhà gỗ chống bão tuyết, ăn thực phẩm tự săn bắn, và có thử tính năng nói tiếp ghép đoạn.",
+    "Trong tool có mục tải xuống kèm video hướng dẫn cài đặt, cùng mục share key và tải video từ tất cả các nền tảng (cập nhật từ trước).",
+    "Video chủ yếu để thông báo tính năng voice mới; cách dùng tool dịch đã có các video hướng dẫn trước đó."
+  ],
+  "edit_sop": {
+    "primary": "Thông báo tool dịch phụ đề có thêm tính năng tạo giọng đọc Ngọc Huyền (Vbee) miễn phí, khớp timeline phụ đề",
+    "additional": [
+      "Tính năng tạo voice nằm trong phụ đề editor của web tool dịch, tích hợp miễn phí",
+      "Voice Ngọc Huyền lấy từ Vbee, dùng cho dạng review để tiết kiệm chi phí",
+      "Tạo xong thì ghi lại rồi import vào CapCut để dựng",
+      "Trong web có mục tải xuống và video hướng dẫn cài về dùng",
+      "Giọng đọc khớp theo timeline phụ đề trong phụ đề editor"
+    ]
+  },
+  "avoid_flags": [
+    "Tránh tốn kém chi phí thuê tạo giọng đọc bên ngoài khi làm dạng video tóm tắt phim vì đã có sẵn tính năng tạo giọng miễn phí tích hợp trong công cụ dịch",
+    "Khi tạo giọng đọc từ bảng phụ đề cần lưu ý kiểm tra độ khớp theo dòng thời gian rồi lưu file lại trước khi đưa vào phần mềm dựng"
+  ],
+  "tools_mentioned": [
+    "Vbee",
+    "CapCut"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Thông báo bản update tính năng tạo voice mới trên web tool dịch"
+    },
+    {
+      "time": "00:31",
+      "seconds": 31,
+      "label": "Giới thiệu giọng đọc Ngọc Huyền (Vbee) tích hợp hoàn toàn miễn phí"
+    },
+    {
+      "time": "01:05",
+      "seconds": 65,
+      "label": "Demo tạo voice tự động khớp chuẩn xác theo timeline phụ đề SRT"
+    },
+    {
+      "time": "01:40",
+      "seconds": 100,
+      "label": "Test mẫu âm thanh thực tế: Đoạn thoại tài liệu sinh tồn hoang dã"
+    },
+    {
+      "time": "02:13",
+      "seconds": 133,
+      "label": "Tổng quan các tính năng đi kèm: Download đa nền tảng, chia sẻ API key"
+    }
+  ],
+  "analysis_method": "deep_human_verified_transcription",
+  "accuracy_status": "verified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-6283a6/transcript.txt",
+  "sop_steps": [
+    "Tính năng tạo voice nằm trong phụ đề editor của web tool dịch, tích hợp miễn phí",
+    "Voice Ngọc Huyền lấy từ Vbee, dùng cho dạng review để tiết kiệm chi phí",
+    "Tạo xong thì ghi lại rồi import vào CapCut để dựng",
+    "Trong web có mục tải xuống và video hướng dẫn cài về dùng",
+    "Giọng đọc khớp theo timeline phụ đề trong phụ đề editor"
+  ]
+}

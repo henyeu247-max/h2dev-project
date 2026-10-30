@@ -1,0 +1,162 @@
+{
+  "sku": "VIDEO-06a48f",
+  "duration": 151.07,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 19,
+  "full_text": "Xin chào toàn bộ anh chị em học viên. Tại sao tôi lại đóng gói tất cả những video liên quan đến YouTube và tất cả các nền tảng khác, ví dụ như Facebook, TikTok. Tôi đã nghĩ đến một khóa dạy thực chiến cho anh chị em trong suốt thời gian qua và rất nhiều chủ đề khác nữa liên tục sẽ được cập nhật trên website daigiamangdep.academy này. Cái lý do vì sao tôi lại mở ra cái trang web này tôi sẽ gửi đến tất cả những anh chị em học viên cũ cũng như học viên mới, tất cả mục tài liệu cách sản xuất, đa nền tảng và tất cả các nguồn tiền các anh chị có thể kiếm được từ view, từ affiliate và từ xây dựng kênh tài sản số của mình. Các mục mà tôi đã nốt ra sẽ là quy trình đóng gói từ A đến Z, nghĩa là anh chị em sẽ biết cách sản xuất video thực chiến và cách nhất quán nhân vật như thế nào. Đối với video AI thì chúng ta sẽ sản xuất như nào. Đối với chủ đề nào hot thì tôi sẽ liên tục cập nhật theo hàng tháng và tất cả các quy trình từ A đến Z cho các bạn biết là các bạn sẽ được sản xuất tất cả những video. Ví dụ như chủ đề sức khỏe về yoga thì anh chị em sẽ sản xuất như nào, chủ đề về nhạc thì anh chị em sẽ sản xuất như nào và anh chị em sẽ sản xuất như nào. Anh sẽ biết nhất quán như nào đối với cái nhạc Chầu Văn, đối với tất cả các dòng nhạc, ví dụ dòng nhạc dành cho đối tượng trẻ em, dòng nhạc đối tượng dành cho người lớn và những cái video không phải. Và tất cả các chủ đề như tôi nói rồi anh chị có thể biết cách sản xuất, ví dụ như chủ đề tiếng Anh là anh chị sẽ làm như thế nào, tạo hình ảnh như nào, câu lệnh chúng ta tạo, tạo video như nào và khâu cuối cùng chúng ta edit như nào và chúng ta sẽ tạo ảnh thumbnail như thế nào và tất cả những cái tư duy hay cũng những kiến thức thì tôi sẽ update hoàn toàn mới theo các chính sách của nền tảng và nếu anh chị là người mới anh chị cũng có thể bắt đầu chỉ cần một cái laptop hoặc cái máy tính là anh chị có thể làm Các bạn có thể làm được những video AI, kể cả những video không liên quan đến AI. Anh chị ấy kéo xuống những video đến cuối mà chúng tôi liên tục update nên là anh chị có biết là những chủ đề liên tục thay đổi. Đây là video tôi quay vào mùa World Cup và chúng ta sẽ biết là chủ đề liên quan đến sự kiện thì chúng ta sẽ làm như thế nào và mấy chủ đề gì để làm. Ví dụ như những video liên quan đến nhạc World Cup và chủ đề tin tức về World Cup. Vì tất cả những cái này tôi sẽ liên tục cập nhật cho anh chị em hàng tuần cũng như hàng tháng và các ngách sẽ liên tục cập nhật mới. Tại sao tôi lại nói là anh chị phải liên tục cập nhật đến những kiến thức và có những cái chủ đề mà anh chị em biết là nó sẽ tồn tại cho 1-2 tháng. Vì vậy những cái kiến thức mà tôi sẽ cập nhật update liên tục trên cái website daigiamangdep.academy này sẽ dành cho tất cả những anh chị em học viên thực chiến và đóng gói quy trình.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 8.08,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:08,080",
+      "text": "Xin chào toàn bộ anh chị em học viên. Tại sao tôi lại đóng gói tất cả những video liên quan đến YouTube và tất cả các nền tảng khác, ví dụ như Facebook, TikTok."
+    },
+    {
+      "id": 2,
+      "start": 8.3,
+      "end": 17.0,
+      "start_time": "00:00:08,300",
+      "end_time": "00:00:17,000",
+      "text": "Tôi đã nghĩ đến một khóa dạy thực chiến cho anh chị em trong suốt thời gian qua và rất nhiều chủ đề khác nữa liên tục sẽ được cập nhật trên website daigiamangdep.academy này."
+    },
+    {
+      "id": 3,
+      "start": 17.0,
+      "end": 25.57,
+      "start_time": "00:00:17,000",
+      "end_time": "00:00:25,570",
+      "text": "Cái lý do vì sao tôi lại mở ra cái trang web này tôi sẽ gửi đến tất cả những anh chị em học viên cũ cũng như học viên mới, tất cả mục"
+    },
+    {
+      "id": 4,
+      "start": 25.57,
+      "end": 33.68,
+      "start_time": "00:00:25,570",
+      "end_time": "00:00:33,680",
+      "text": "tài liệu cách sản xuất, đa nền tảng và tất cả các nguồn tiền các anh chị có thể kiếm được từ view, từ affiliate và từ xây dựng kênh tài sản số của mình."
+    },
+    {
+      "id": 5,
+      "start": 34.0,
+      "end": 43.0,
+      "start_time": "00:00:34,000",
+      "end_time": "00:00:43,000",
+      "text": "Các mục mà tôi đã nốt ra sẽ là quy trình đóng gói từ A đến Z, nghĩa là anh chị em sẽ biết cách sản xuất video thực chiến và cách nhất quán nhân vật như thế nào."
+    },
+    {
+      "id": 6,
+      "start": 43.0,
+      "end": 50.087,
+      "start_time": "00:00:43,000",
+      "end_time": "00:00:50,087",
+      "text": "Đối với video AI thì chúng ta sẽ sản xuất như nào. Đối với chủ đề nào hot thì tôi sẽ liên tục cập nhật theo hàng tháng và tất cả"
+    },
+    {
+      "id": 7,
+      "start": 50.087,
+      "end": 56.753,
+      "start_time": "00:00:50,087",
+      "end_time": "00:00:56,753",
+      "text": "các quy trình từ A đến Z cho các bạn biết là các bạn sẽ được sản xuất tất cả những video. Ví dụ như chủ đề sức khỏe về yoga"
+    },
+    {
+      "id": 8,
+      "start": 56.753,
+      "end": 63.0,
+      "start_time": "00:00:56,753",
+      "end_time": "00:01:03,000",
+      "text": "thì anh chị em sẽ sản xuất như nào, chủ đề về nhạc thì anh chị em sẽ sản xuất như nào và anh chị em sẽ sản xuất như nào."
+    },
+    {
+      "id": 9,
+      "start": 63.0,
+      "end": 74.0,
+      "start_time": "00:01:03,000",
+      "end_time": "00:01:14,000",
+      "text": "Anh sẽ biết nhất quán như nào đối với cái nhạc Chầu Văn, đối với tất cả các dòng nhạc, ví dụ dòng nhạc dành cho đối tượng trẻ em, dòng nhạc đối tượng dành cho người lớn và những cái video không phải."
+    },
+    {
+      "id": 10,
+      "start": 74.0,
+      "end": 83.42,
+      "start_time": "00:01:14,000",
+      "end_time": "00:01:23,420",
+      "text": "Và tất cả các chủ đề như tôi nói rồi anh chị có thể biết cách sản xuất, ví dụ như chủ đề tiếng Anh là anh chị sẽ làm như thế nào, tạo hình ảnh như nào, câu lệnh chúng ta tạo,"
+    },
+    {
+      "id": 11,
+      "start": 83.42,
+      "end": 88.96,
+      "start_time": "00:01:23,420",
+      "end_time": "00:01:28,960",
+      "text": "tạo video như nào và khâu cuối cùng chúng ta edit như nào và chúng ta sẽ tạo ảnh thumbnail như thế nào"
+    },
+    {
+      "id": 12,
+      "start": 89.0,
+      "end": 95.24,
+      "start_time": "00:01:29,000",
+      "end_time": "00:01:35,240",
+      "text": "và tất cả những cái tư duy hay cũng những kiến thức thì tôi sẽ update hoàn toàn mới theo các chính sách của nền tảng"
+    },
+    {
+      "id": 13,
+      "start": 95.24,
+      "end": 100.528,
+      "start_time": "00:01:35,240",
+      "end_time": "00:01:40,528",
+      "text": "và nếu anh chị là người mới anh chị cũng có thể bắt đầu chỉ cần một cái laptop hoặc cái máy tính là anh chị có thể làm"
+    },
+    {
+      "id": 14,
+      "start": 101.0,
+      "end": 108.455,
+      "start_time": "00:01:41,000",
+      "end_time": "00:01:48,455",
+      "text": "Các bạn có thể làm được những video AI, kể cả những video không liên quan đến AI. Anh chị ấy kéo xuống những video đến cuối mà chúng tôi liên tục update nên"
+    },
+    {
+      "id": 15,
+      "start": 108.455,
+      "end": 116.381,
+      "start_time": "00:01:48,455",
+      "end_time": "00:01:56,381",
+      "text": "là anh chị có biết là những chủ đề liên tục thay đổi. Đây là video tôi quay vào mùa World Cup và chúng ta sẽ biết là chủ đề liên quan đến sự kiện"
+    },
+    {
+      "id": 16,
+      "start": 116.381,
+      "end": 124.308,
+      "start_time": "00:01:56,381",
+      "end_time": "00:02:04,308",
+      "text": "thì chúng ta sẽ làm như thế nào và mấy chủ đề gì để làm. Ví dụ như những video liên quan đến nhạc World Cup và chủ đề tin tức về World Cup."
+    },
+    {
+      "id": 17,
+      "start": 124.308,
+      "end": 131.608,
+      "start_time": "00:02:04,308",
+      "end_time": "00:02:11,608",
+      "text": "Vì tất cả những cái này tôi sẽ liên tục cập nhật cho anh chị em hàng tuần cũng như hàng tháng và các ngách sẽ liên tục cập nhật mới."
+    },
+    {
+      "id": 18,
+      "start": 132.0,
+      "end": 139.348,
+      "start_time": "00:02:12,000",
+      "end_time": "00:02:19,348",
+      "text": "Tại sao tôi lại nói là anh chị phải liên tục cập nhật đến những kiến thức và có những cái chủ đề mà anh chị em biết là nó sẽ tồn tại cho 1-2 tháng."
+    },
+    {
+      "id": 19,
+      "start": 139.608,
+      "end": 150.908,
+      "start_time": "00:02:19,608",
+      "end_time": "00:02:30,908",
+      "text": "Vì vậy những cái kiến thức mà tôi sẽ cập nhật update liên tục trên cái website daigiamangdep.academy này sẽ dành cho tất cả những anh chị em học viên thực chiến và đóng gói quy trình."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "sku": "VIDEO-2de9e4",
+  "title": "Update 3 ngách nhỏ bán content thị trường Việt - view quá kinh khủng sau khi chuyển đúng chủ đề(ngách)",
+  "actual_topic": "Update 3 ngách nhỏ bán content thị trường Việt - view quá kinh khủng sau khi chuyển đúng chủ đề(ngách)",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Tâm Linh & Thu Hút May Mắn",
+  "niche_id": "faceless-general",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Video chia sẻ thêm các ngách nhỏ trong ngách sức khỏe thị trường Việt và nhắc xem lại video hướng dẫn bán content view Việt sức khỏe trước đó; tác giả nói ngách sức khỏe rất nhiều ngách khác nhau.",
+    "Một kênh trước làm về thực phẩm (trứng gà, trứng vịt, bác sĩ cảnh báo) chỉ có vài trăm view, nhưng từ khoảng 2 tuần gần đây chuyển sang ngách chỉ nói về các loại rêu thì nổ view rất mạnh.",
+    "Tác giả nhấn mạnh làm đúng ngách thì chắc chắn nổ cao, còn ngách người ta không xem thì làm bao lâu cũng không lên; kênh rêu chưa đủ lượt đăng ký để bật kiếm tiền nhưng dự kiến nửa ngày đến một ngày nữa là đủ.",
+    "Ngách thứ hai là một kênh kiến thức sức khỏe lập từ tháng 4, tầm một tháng trước làm nổ rất cao; ngách thứ ba là tâm linh, phong thủy, may mắn của một kênh mới nhưng view cũng rất cao, edit bằng cách chèn ghép video tự nhiên.",
+    "Về edit, nên search hình ảnh và video minh họa đúng với kịch bản (các loại rêu, các loại thuốc, bài học) rồi ghép cho khớp để giữ chân người xem lâu, và làm tỉ mỉ, chất lượng nhất có thể để YouTube đề xuất mạnh."
+  ],
+  "edit_sop": {
+    "primary": "Chọn đúng ngách thị trường Việt, edit hình ảnh video minh họa khớp kịch bản",
+    "additional": [
+      "Search hình ảnh, video minh họa đúng với nội dung kịch bản (các loại rêu, các loại thuốc, bài học) rồi ghép vào cho khớp",
+      "Làm tỉ mỉ, chất lượng để giữ chân người xem lâu hơn và được YouTube đề xuất",
+      "Kênh tâm linh phong thủy edit bằng cách chèn ghép video tự nhiên"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng cứ làm đều ở ngách người ta không xem, không khen thì khó nổ cao; phải chọn đúng ngách",
+    "Tránh ghép hình ảnh và video minh họa lệch với nội dung kịch bản làm giảm thời gian giữ chân người xem"
+  ],
+  "tools_mentioned": [],
+  "channels_mentioned": [
+    "@ThựcPhẩmSứcKhoẻ-u8y",
+    "@kienthucthanhoc9",
+    "@PHONGTHUYTIEMTANG"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu và kênh chuyển sang ngách các loại rêu nổ view mạnh"
+    },
+    {
+      "time": "01:08",
+      "seconds": 68,
+      "label": "Làm đúng ngách người xem quan tâm thì chắc chắn nổ view cao"
+    },
+    {
+      "time": "02:22",
+      "seconds": 142,
+      "label": "Ngách kiến thức sức khỏe và kênh tâm linh phong thủy mới"
+    },
+    {
+      "time": "02:59",
+      "seconds": 179,
+      "label": "Cách search hình ảnh và video minh họa khớp kịch bản"
+    },
+    {
+      "time": "03:18",
+      "seconds": 198,
+      "label": "Làm tỉ mỉ chất lượng để giữ chân người xem và được đề xuất"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-2de9e4/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Search hình ảnh, video minh họa đúng với nội dung kịch bản (các loại rêu, các loại thuốc, bài học) rồi ghép vào cho khớp",
+    "Làm tỉ mỉ, chất lượng để giữ chân người xem lâu hơn và được YouTube đề xuất",
+    "Kênh tâm linh phong thủy edit bằng cách chèn ghép video tự nhiên"
+  ]
+}

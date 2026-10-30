@@ -1,0 +1,76 @@
+{
+  "sku": "VIDEO-e90874",
+  "title": "Tặng Prompt Master Tự Nhân Bản Sang Mọi Thị Trường (bất kỳ mong muốn) | Hướng Dẫn Thực Chiến",
+  "actual_topic": "Chuyển giao Prompt Master nhân bản kịch bản xuyên quốc gia & Kỹ thuật bản địa hóa văn phong tự động (Nhật - Hàn - Việt - Mỹ)",
+  "category_group": "ky_thuat",
+  "niche_primary": "Nhân Bản Thị Trường Đa Quốc Gia",
+  "niche_id": "cross-market-replication",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "key_takeaways": [
+    "Tác giả tặng form prompt nhân bản thị trường dùng được cho mọi cặp thị trường (Nhật về Việt Nam, Việt Nam sang Hoa Kỳ, Hoa Kỳ sang Hàn), rồi share thêm kênh đối thủ ngách sức khỏe: một kênh Việt Nam mới 9 video nhưng tổng hơn 2 triệu view, làm bằng AI (HeyGen, ảnh tạo bằng ChatGPT), đã bật kiếm tiền.",
+    "Về cách edit kênh đó chỉ ghép hình AI, tác giả khuyên nên ghép thêm video, hình ảnh tự nhiên và hạn chế hình AI để tránh bị quét; ông nhận xét YouTube gần đây đã nhẹ tay hơn, không quét kênh như các tháng trước.",
+    "Kênh thị trường Nhật làm từ 3 tuần trước, vài video đầu lẹt đẹt rồi từ video thứ 3 bắt đầu nổ view, ngách là huyết áp; một kênh sức khỏe khác làm 5 tháng trước chỉ vài video mỗi tháng, một tháng gần đây mới nổ view cao.",
+    "Prompt master này không dịch cứng mà chuyển theo ngôn ngữ, văn hóa, nhân vật, bối cảnh, cách xưng hô và giọng điệu của thị trường đích; cách làm là dán dữ liệu kênh đối thủ, chụp khoảng 2 ảnh tiêu đề mục phổ biến, kèm kịch bản của 2 video cao view nhất để AI phân tích, và nếu thiếu kịch bản thì nó sẽ nhắc.",
+    "Sang giai đoạn 2, AI hỏi cấu hình theo số: thị trường đích, khán giả (ví dụ 55 tuổi), giọng điệu theo miền Nam hay Bắc (tác giả chọn từ chung như dưa chuột), tên kênh và câu chào, tiêu đề viral và prompt ảnh kèm theo, và viết số bằng số hay bằng chữ (tránh để ElevenLabs đọc sai số tiếng Nhật); sau đó dán kịch bản gốc vào prompt master, mở chat mới, kịch bản được viết theo từng phần và bấm tiếp tục cho tới khi báo hoàn thành."
+  ],
+  "edit_sop": {
+    "primary": "Dùng form prompt master để nhân bản kịch bản kênh đối thủ sang thị trường khác bằng Claude",
+    "additional": [
+      "Copy toàn bộ thông tin kênh đối thủ dán vào form prompt (đang để trong Notepad), chụp khoảng 2 ảnh mục phổ biến (mỗi ảnh khoảng 6 video), mở chat mới trong Claude và chạy",
+      "Claude phân tích rồi báo thiếu kịch bản; gửi kịch bản của 2 video cao view nhất (hoặc mỗi kênh đối thủ 1 video), nên bỏ chung ảnh và kịch bản chạy một lần để đỡ tốn token",
+      "Giai đoạn 2 trả lời các câu cấu hình theo số: thị trường đích, khán giả đích (tuổi), giọng điệu vùng miền, tên kênh và câu chào, tiêu đề viral/thumbnail/form prompt ảnh, và cách ghi số (giữ số hay ghi thành chữ)",
+      "Bấm enter để tạo form prompt master, dán kịch bản gốc vào, mở chat mới và chạy; kịch bản được viết theo từng phần, bấm tiếp tục tới khi báo hoàn thành",
+      "Form prompt nhân bản dịch theo ngôn ngữ, văn hóa, nhân vật, bối cảnh, cách xưng hô, giọng điệu của thị trường đích chứ không dịch cứng; form prompt để ở phần mô tả"
+    ]
+  },
+  "avoid_flags": [
+    "Hạn chế ghép hình ảnh AI, nên ghép hình ảnh video tự nhiên để tránh bị quét",
+    "Với thị trường Nhật, ghi số thành chữ vì ElevenLabs đọc số tiếng Nhật dễ sai"
+  ],
+  "tools_mentioned": [
+    "ChatGPT",
+    "Notepad"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu sức mạnh của việc nhân bản chủ đề từ thị trường này sang thị trường khác"
+    },
+    {
+      "time": "03:15",
+      "seconds": 195,
+      "label": "Hướng dẫn lấy transcript sạch không lỗi bằng youtube-transcript.io"
+    },
+    {
+      "time": "06:40",
+      "seconds": 400,
+      "label": "Phân tích cấu trúc 2 giai đoạn của file Prompt Master nhân bản thị trường"
+    },
+    {
+      "time": "11:20",
+      "seconds": 680,
+      "label": "Demo thực chiến nạp transcript Nhật và nhân bản ra kịch bản Việt/Hàn"
+    },
+    {
+      "time": "15:31",
+      "seconds": 931,
+      "label": "Lưu ý quan trọng về bản địa hóa văn phong và xuất kịch bản sạch lời thoại"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-e90874/transcript.txt",
+  "sop_steps": [
+    "Copy toàn bộ thông tin kênh đối thủ dán vào form prompt (đang để trong Notepad), chụp khoảng 2 ảnh mục phổ biến (mỗi ảnh khoảng 6 video), mở chat mới trong Claude và chạy",
+    "Claude phân tích rồi báo thiếu kịch bản; gửi kịch bản của 2 video cao view nhất (hoặc mỗi kênh đối thủ 1 video), nên bỏ chung ảnh và kịch bản chạy một lần để đỡ tốn token",
+    "Giai đoạn 2 trả lời các câu cấu hình theo số: thị trường đích, khán giả đích (tuổi), giọng điệu vùng miền, tên kênh và câu chào, tiêu đề viral/thumbnail/form prompt ảnh, và cách ghi số (giữ số hay ghi thành chữ)",
+    "Bấm enter để tạo form prompt master, dán kịch bản gốc vào, mở chat mới và chạy; kịch bản được viết theo từng phần, bấm tiếp tục tới khi báo hoàn thành",
+    "Form prompt nhân bản dịch theo ngôn ngữ, văn hóa, nhân vật, bối cảnh, cách xưng hô, giọng điệu của thị trường đích chứ không dịch cứng; form prompt để ở phần mô tả"
+  ]
+}

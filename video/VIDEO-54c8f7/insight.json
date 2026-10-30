@@ -1,0 +1,79 @@
+{
+  "sku": "VIDEO-54c8f7",
+  "title": "Full quy trình thực chiến hướng dẫn dùng Claude train prompt bất kỳ chủ đề ngách nào mình muốn và cách đóng gói Skill để dùng làm viết kịch bản, tạo ảnh, tạo thumb... (video dài hơn 1 giờ) - Quy Trình dạng tự tạo làm mới chủ đề, kịch bản, hình ảnh... ",
+  "actual_topic": "Quy trình toàn diện huấn luyện Claude AI tạo Prompt Master đa ngách & Đóng gói Custom Skill sản xuất Kịch bản - Ảnh - Thumbnail khép kín",
+  "category_group": "ky_thuat",
+  "niche_primary": "Tối Ưu Mắt Xem Livestream & Quảng Cáo",
+  "niche_id": "prompt-engineering",
+  "target_market": "Việt Nam / Quốc tế (Global)",
+  "market_code": "VN,GLOBAL",
+  "key_takeaways": [
+    "Video dài hơn một tiếng hướng dẫn tự train Claude cho bất kỳ chủ đề nào rồi đóng gói thành skill; nếu nhu cầu ít thì gói 20 đô với model Sonnet 4.6 là đủ, còn tác giả dùng gói Max 100 đô với Opus 4.7 vì mạnh hơn nhưng tốn token hơn và gói thấp có thể bị khóa chat khoảng 2 tiếng.",
+    "Ví dụ làm trên ngách tâm lý học thị trường Nhật Bản (kênh đối thủ mới 16 video): copy dữ liệu 2 đến 3 kênh đối thủ (nên khoảng 3 kênh) kèm tiêu đề và link vào Claude, gửi kịch bản của video viral nhất để nó phân tích nhiều lớp, nhịp điệu, giọng và CTR rồi viết Prompt Master.",
+    "Form kịch bản gồm 4 giai đoạn (topic, dàn ý, viết đầy đủ, hoàn thiện) có yêu cầu viết như người thật chứ không viết kiểu AI, viết từng phần chứ không viết một lèo, xuất ra bản trơn không chú thích để đem đi tạo giọng đọc ngay; train đi train lại nhiều lần và hỏi thêm nếu thiếu thì Claude tự bổ sung, ví dụ thiếu đầu vào là chủ đề và độ dài.",
+    "Khi đóng gói skill thì đặt tên rõ ràng và đồng bộ theo thị trường, tải file về, đổi đuôi thành .zip rồi upload ở mục tạo skill, sau đó gõ dấu gạch chéo để gọi; mỗi skill (kịch bản, hình ảnh, thumbnail) nên chạy ở một chat mới riêng, và với ngách triết lý hay sức khỏe chỉ cần skill kịch bản vì ảnh và video lấy nguồn tự nhiên.",
+    "Với hình ảnh và thumbnail, tác giả chụp nhiều cảnh từ video đối thủ để Claude học phong cách, tạo nhân vật thương hiệu riêng khác đối thủ rồi test bằng Flow của Google (tài khoản Ultra không giới hạn tạo ảnh); skill hình ảnh hỏi cấu hình như số ảnh (ví dụ 80 ảnh) và việc chèn chữ, còn chữ trên thumbnail thị trường Nhật hay Hàn thì làm ảnh trơn rồi tự clone phông chữ đối thủ."
+  ],
+  "edit_sop": {
+    "primary": "Train Claude tạo form prompt kịch bản, ảnh, thumbnail cho ngách tâm lý học Nhật Bản rồi đóng gói thành skill",
+    "additional": [
+      "Copy dữ liệu (tiêu đề kèm link) 2 đến 3 kênh đối thủ ở mục phổ biến, dán vào Claude kèm câu lệnh nhờ phân tích; gửi thêm kịch bản video viral nhất để phân tích sâu, rồi yêu cầu tạo form prompt kịch bản gồm các giai đoạn chủ đề, dàn ý, viết đầy đủ, ra voice script trơn tru không chú thích.",
+      "Test form prompt, thiếu gì (ví dụ đầu vào là độ dài video) thì yêu cầu Claude fix, rồi bảo đóng gói thành skill; file skill đổi đuôi thành .zip rồi upload ở mục Skills của Claude.",
+      "Chụp nhiều cảnh ảnh trong video đối thủ gửi cho Claude phân tích phong cách, tạo form prompt ảnh xuyên suốt kịch bản và nhân vật thương hiệu; test trên Google Flow rồi đóng gói skill ảnh. Thumbnail làm tương tự với khoảng 4 đến 5 ảnh thumb mẫu.",
+      "Dùng skill: gõ dấu sẹt để gọi skill, mỗi skill một chat mới; trả lời chủ đề, thời lượng (ví dụ 25 phút), duyệt dàn ý rồi cho viết từng phần, sau đó xóa chú thích để lấy kịch bản đem tạo giọng đọc.",
+      "Skill ảnh: dán tiêu đề cùng kịch bản, chọn cấu hình (ví dụ 80 ảnh, tự cân bằng, có hoặc không chèn chữ), cho viết trọn bộ prompt vào một file rồi copy đi tạo ảnh."
+    ]
+  },
+  "avoid_flags": [
+    "Không để AI viết kiểu máy móc, phải yêu cầu viết như con người.",
+    "Kịch bản giật tít câu view, lặp đi lặp lại, không mang giá trị cho người xem sẽ bị quét.",
+    "Mỗi skill dùng một chat mới riêng, đừng làm chung một chat; đặt tên skill rõ ràng để khỏi chọn nhầm.",
+    "Không bắt AI viết kịch bản một lèo mà nên viết từng phần; không làm giống nhân vật thương hiệu của đối thủ."
+  ],
+  "tools_mentioned": [
+    "Claude",
+    "Sonnet 4.6",
+    "Google Dịch"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Tổng quan quy trình tự train Claude cho mọi chủ đề và đóng gói Skill"
+    },
+    {
+      "time": "15:10",
+      "seconds": 910,
+      "label": "Hướng dẫn phân tích transcript kịch bản mẫu và bóc tách dàn ý"
+    },
+    {
+      "time": "27:58",
+      "seconds": 1678,
+      "label": "Kỹ thuật xây dựng Prompt Master tạo hình ảnh nhân vật đồng nhất"
+    },
+    {
+      "time": "41:10",
+      "seconds": 2470,
+      "label": "Hướng dẫn đóng gói toàn bộ quy trình thành Skill gọi lệnh 1 click"
+    },
+    {
+      "time": "53:26",
+      "seconds": 3206,
+      "label": "Tối ưu âm thanh, kịch bản trơn tru để chuyển sang phần mềm lồng tiếng"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-54c8f7/transcript.txt",
+  "sop_steps": [
+    "Copy dữ liệu (tiêu đề kèm link) 2 đến 3 kênh đối thủ ở mục phổ biến, dán vào Claude kèm câu lệnh nhờ phân tích; gửi thêm kịch bản video viral nhất để phân tích sâu, rồi yêu cầu tạo form prompt kịch bản gồm các giai đoạn chủ đề, dàn ý, viết đầy đủ, ra voice script trơn tru không chú thích.",
+    "Test form prompt, thiếu gì (ví dụ đầu vào là độ dài video) thì yêu cầu Claude fix, rồi bảo đóng gói thành skill; file skill đổi đuôi thành .zip rồi upload ở mục Skills của Claude.",
+    "Chụp nhiều cảnh ảnh trong video đối thủ gửi cho Claude phân tích phong cách, tạo form prompt ảnh xuyên suốt kịch bản và nhân vật thương hiệu; test trên Google Flow rồi đóng gói skill ảnh. Thumbnail làm tương tự với khoảng 4 đến 5 ảnh thumb mẫu.",
+    "Dùng skill: gõ dấu sẹt để gọi skill, mỗi skill một chat mới; trả lời chủ đề, thời lượng (ví dụ 25 phút), duyệt dàn ý rồi cho viết từng phần, sau đó xóa chú thích để lấy kịch bản đem tạo giọng đọc.",
+    "Skill ảnh: dán tiêu đề cùng kịch bản, chọn cấu hình (ví dụ 80 ảnh, tự cân bằng, có hoặc không chèn chữ), cho viết trọn bộ prompt vào một file rồi copy đi tạo ảnh."
+  ]
+}

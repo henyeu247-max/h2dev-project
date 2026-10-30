@@ -1,0 +1,73 @@
+{
+  "sku": "VIDEO-d20744",
+  "title": "NHẬN VÀ TẢI MIỄN PHÍ 6 BỘ TOOL TẠI ĐÂY !",
+  "actual_topic": "NHẬN VÀ TẢI MIỄN PHÍ 6 BỘ TOOL TẠI ĐÂY !",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Bán Content & Phát Triển Kênh",
+  "niche_id": "faceless-general",
+  "target_market": "Nhật Bản / Hàn Quốc / Hoa Kỳ (US) / Việt Nam",
+  "market_code": "JP,KR,US,VN",
+  "key_takeaways": [
+    "Tác giả chia sẻ miễn phí bộ 6 tool gồm tool cắt ghép clip, tool quay màn hình và các tool tải video từ nền tảng khác ở chất lượng Full HD.",
+    "Dùng web tải thông thường thường chỉ tải được âm thanh hoặc video bị đứt; các tool này (ví dụ tool Bilibili) tải được đầy đủ.",
+    "Khi tải có thể chọn đường dẫn lưu file và chọn chất lượng cao nhất, tuỳ theo video gốc.",
+    "Toàn bộ link tải nằm ở phần mô tả dưới video; bấm tải về rồi giải nén bằng WinRAR là dùng được.",
+    "Tool ghép clip chạy rất nhanh và tool quay màn hình có thể dùng thử ngay sau khi giải nén."
+  ],
+  "edit_sop": {
+    "primary": "Dùng bộ 6 tool miễn phí tải video Full HD, quay màn hình, ghép clip",
+    "additional": [
+      "Tool tải video từ các nền tảng khác (ví dụ tool Bilibili) tải đầy đủ, trong khi nhiều web tải không được hoặc chỉ ra âm thanh",
+      "Chọn đường dẫn video rồi chọn chất lượng cao nhất",
+      "Link tải các tool để ở phần mô tả, bấm vào tải về rồi giải nén bằng WinRAR"
+    ]
+  },
+  "avoid_flags": [
+    "Không dùng các trang web tải trực tuyến thông thường cho Bilibili vì rất nhiều web không tải được, chỉ tải ra âm thanh hoặc tải giữa chừng bị đứt.",
+    "Khi chọn chất lượng tải về cần lưu ý tùy thuộc vào độ phân giải thực tế của video gốc trên nền tảng nguồn."
+  ],
+  "tools_mentioned": [
+    "Bilibili",
+    "WinRAR"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "00:19",
+      "seconds": 19,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "00:32",
+      "seconds": 32,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "00:40",
+      "seconds": 40,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "00:48",
+      "seconds": 48,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-d20744/transcript.txt",
+  "sop_steps": [
+    "Tool tải video từ các nền tảng khác (ví dụ tool Bilibili) tải đầy đủ, trong khi nhiều web tải không được hoặc chỉ ra âm thanh",
+    "Chọn đường dẫn video rồi chọn chất lượng cao nhất",
+    "Link tải các tool để ở phần mô tả, bấm vào tải về rồi giải nén bằng WinRAR"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T06:30:00Z"
+}

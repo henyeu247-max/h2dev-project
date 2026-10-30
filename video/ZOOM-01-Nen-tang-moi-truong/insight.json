@@ -1,0 +1,79 @@
+{
+  "sku": "ZOOM-01-Nen-tang-moi-truong",
+  "title": "Zoom 01 — Nền tảng & Môi trường: Proxy, Gmail, Tạo kênh, Ngâm kênh",
+  "actual_topic": "Tư duy nền tảng làm YouTube AI bền vững, quy trình tạo kênh ngâm 2–3 ngày, cách dùng Proxy (GPM/MKT) và bảo mật Gmail 2FA",
+  "category_group": "chien_luoc",
+  "niche_primary": "Hạ Tầng Kỹ Thuật: Proxy, Gmail & Ngâm Kênh",
+  "niche_id": "faceless-infrastructure",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Tool chỉ là công cụ hỗ trợ tăng năng suất; yếu tố quyết định thắng bại là tư duy chọn ngách/key ít cạnh tranh, nhân bản sang quốc gia khác và giữ chân khán giả.",
+    "Quy trình chuẩn khi lập kênh mới: tạo kênh và thiết lập thông tin trước, để kênh ngâm khoảng 2–3 ngày rồi trong thời gian chờ đó mới đi sản xuất video để đăng lên.",
+    "Về Proxy và trình duyệt nuôi kênh: người mới làm 2–3 kênh chưa bắt buộc phải mua proxy; khi làm hệ thống nhiều kênh thì dùng GPM hoặc MKT gắn proxy (IPv4 hoặc IPv6) để tách biệt địa chỉ IP.",
+    "Bảo mật Gmail khi đi mua: tuyệt đối không đổi mật khẩu ngay lúc mới đăng nhập (dễ dính xác minh/disable); hãy thêm mail khôi phục, bật 2FA qua Google Authenticator và nuôi trên máy khoảng 7 ngày rồi mới đổi mật khẩu."
+  ],
+  "edit_sop": {
+    "primary": "Nền tảng và môi trường làm kênh: proxy, Gmail, tạo kênh rồi ngâm kênh trong lúc sản xuất video",
+    "additional": [
+      "Thứ tự làm: chuẩn bị và bảo mật mail, chọn ngách, tạo kênh rồi ngâm 2 đến 3 ngày, trong lúc đó đi sản xuất video để tối ưu thời gian",
+      "Proxy: tác giả hay mua quốc gia Singapore hoặc Mỹ, IPv4 khoảng 64.000 một tháng; IPv6 chỉ 6.000 nhưng làm kênh vẫn lên, tùy điều kiện chọn",
+      "Gmail mua về: không đổi mật khẩu ngay, chỉ thêm số điện thoại, mail khôi phục, mã dự phòng, sau 7 ngày mới đổi mật khẩu",
+      "Bảo mật Gmail bằng xác minh hai bước, lấy mã qua app Google Authenticator trên điện thoại",
+      "Gmail mới lập: điền đủ thông tin, để nghỉ, dùng như người dùng thật (search Google, xem YouTube, Google Maps) rồi mới lập kênh"
+    ]
+  },
+  "avoid_flags": [
+    "Mới mua Gmail về mà vội đổi mật khẩu hoặc thông tin thì dễ bị dính spam, phải chờ ít nhất 7 ngày",
+    "Không dùng tiện ích VPN fake IP trong Chrome, nên dùng hẳn một trình duyệt riêng cho proxy",
+    "Lập kênh xong không đăng video ngay mà phải ngâm kênh, đăng ngay dễ bị coi là spam",
+    "Không bê nguyên quy trình hay kênh của tác giả về làm, hãy biến thành quy trình riêng và tìm ngách ít người làm"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "Gmail",
+    "Google Authenticator",
+    "GPM",
+    "MKT"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Tổng quan thị trường YouTube AI và vai trò thực sự của công cụ (Tool)"
+    },
+    {
+      "time": "19:12",
+      "seconds": 1152,
+      "label": "Lộ trình tạo kênh, ngâm kênh 2–3 ngày và xử lý lỗi 0 view từ gốc"
+    },
+    {
+      "time": "26:14",
+      "seconds": 1574,
+      "label": "Chiến lược tìm key ngoại và nhân bản chéo sang quốc gia ít cạnh tranh"
+    },
+    {
+      "time": "33:28",
+      "seconds": 2008,
+      "label": "Hướng dẫn sử dụng trình duyệt GPM/MKT và khi nào cần gắn Proxy"
+    },
+    {
+      "time": "43:25",
+      "seconds": 2605,
+      "label": "Quy tắc bảo mật Gmail mua ngoài với Google Authenticator và cách tách kênh"
+    }
+  ],
+  "analysis_method": "expert_grounded_audit",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/ZOOM-01-Nen-tang-moi-truong/transcript.txt",
+  "sop_steps": [
+    "Thứ tự làm: chuẩn bị và bảo mật mail, chọn ngách, tạo kênh rồi ngâm 2 đến 3 ngày, trong lúc đó đi sản xuất video để tối ưu thời gian",
+    "Proxy: tác giả hay mua quốc gia Singapore hoặc Mỹ, IPv4 khoảng 64.000 một tháng; IPv6 chỉ 6.000 nhưng làm kênh vẫn lên, tùy điều kiện chọn",
+    "Gmail mua về: không đổi mật khẩu ngay, chỉ thêm số điện thoại, mail khôi phục, mã dự phòng, sau 7 ngày mới đổi mật khẩu",
+    "Bảo mật Gmail bằng xác minh hai bước, lấy mã qua app Google Authenticator trên điện thoại",
+    "Gmail mới lập: điền đủ thông tin, để nghỉ, dùng như người dùng thật (search Google, xem YouTube, Google Maps) rồi mới lập kênh"
+  ]
+}

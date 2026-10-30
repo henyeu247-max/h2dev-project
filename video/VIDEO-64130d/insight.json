@@ -1,0 +1,78 @@
+{
+  "sku": "VIDEO-64130d",
+  "title": "TOOL DỊCH PHỤ ĐỀ SRT VIP - HƯỚNG DẪN DÙNG TOOL DỊCH PHỤ ĐỀ SRT CHUYÊN VIETSUB LÀM REUP/ BÁN CONTENT",
+  "actual_topic": "Hướng dẫn sử dụng Web Tool dịch phụ đề SRT VIP H2DEV tích hợp DeepSeek AI đa tác vụ chạy nền",
+  "category_group": "cong_cu_tool",
+  "niche_primary": "Reup & Khai Thác Hoạt Hình",
+  "niche_id": "tool-sub-vietsub",
+  "target_market": "Việt Nam / Trung Quốc",
+  "market_code": "VN,CN",
+  "key_takeaways": [
+    "Tool dịch phụ đề SRT bản VIP mới được đưa lên web, dùng trực tiếp trên mọi hệ điều hành kể cả macOS và điện thoại, khác bản cũ phải tải về cài trên desktop và không cài được trên macOS.",
+    "Có hai gói là gói tháng và gói vĩnh viễn; gói tháng có 500.000 credit, tương đương khoảng 40 đến 50 giờ dịch, tức khoảng 45 video dài 1 tiếng.",
+    "Người dùng không phải tự mua key API vì tác giả cấp sẵn tài khoản và nạp credit trực tiếp khi hết; chất lượng dịch vẫn dùng DeepSeek như tool cũ.",
+    "Khi dịch, tạo mới rồi chọn file và chọn ngôn ngữ ở phần thiết lập dịch (nhiều ngôn ngữ hơn bản cũ chỉ có Trung sang Việt), có thể chạy nhiều file cùng lúc và tắt tab hay thoát web thì server vẫn dịch tiếp; tác giả nhắc phải chọn đúng chiều dịch vì file thứ hai bị dịch Trung sang Trung do quên chọn.",
+    "Gói tháng sẽ reset credit về 0 khi hết một tháng dù còn dư, còn gói vĩnh viễn chỉ hết khi dùng hết credit; giá gói cũ là 550.000 một tháng và gói vĩnh viễn 2 triệu rưỡi, và tác giả đang phát triển thêm tool voice và tool render video."
+  ],
+  "edit_sop": {
+    "primary": "Hướng dẫn dùng web tool dịch phụ đề SRT bản VIP dùng DeepSeek, chạy được trên mọi hệ điều hành",
+    "additional": [
+      "Đăng nhập tool bằng key tài khoản do tác giả cấp, vào dashboard, chọn tool dịch rồi bấm tạo mới",
+      "Chọn file cần dịch, ở phần thiết lập dịch thuật chọn đúng cặp ngôn ngữ (ví dụ Trung sang Việt) rồi bấm bắt đầu dịch",
+      "Theo dõi tiến độ phần trăm trong danh sách, bấm biểu tượng con mắt để xem trực tiếp quá trình dịch",
+      "Có thể thêm file mới để chạy nhiều file cùng lúc, thậm chí tắt tab thoát web, quay lại thì tool vẫn xử lý",
+      "Khi hoàn thành bấm tải về, mở file bằng Notepad++ để đọc và kiểm tra lại"
+    ]
+  },
+  "avoid_flags": [
+    "Nhớ chọn đúng ngôn ngữ nguồn và đích, chọn nhầm thì nó dịch Trung sang Trung",
+    "Credit của gói tháng reset về 0 khi hết tháng dù còn dư, muốn dùng tiếp phải liên hệ gia hạn"
+  ],
+  "tools_mentioned": [
+    "DeepSeek",
+    "Zalo",
+    "CapCut",
+    "ElevenLabs",
+    "Notepad++"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu phiên bản Web Tool dịch phụ đề SRT VIP hỗ trợ MacOS/Windows"
+    },
+    {
+      "time": "00:51",
+      "seconds": 51,
+      "label": "Phân tích 2 gói tài khoản: Gói tháng 500k credit và Gói vĩnh viễn 1.8M credit"
+    },
+    {
+      "time": "02:12",
+      "seconds": 132,
+      "label": "Hướng dẫn đăng nhập, tải file lên và thiết lập ngôn ngữ dịch thuật"
+    },
+    {
+      "time": "03:34",
+      "seconds": 214,
+      "label": "Demo tính năng chạy ngầm tắt tab không mất tiến độ và xem preview thời gian thực"
+    },
+    {
+      "time": "05:55",
+      "seconds": 355,
+      "label": "Tải file SRT về máy và mẹo kiểm tra phụ đề bằng Notepad++"
+    }
+  ],
+  "analysis_method": "human_expert_review",
+  "accuracy_status": "verified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-64130d/transcript.txt",
+  "sop_steps": [
+    "Đăng nhập tool bằng key tài khoản do tác giả cấp, vào dashboard, chọn tool dịch rồi bấm tạo mới",
+    "Chọn file cần dịch, ở phần thiết lập dịch thuật chọn đúng cặp ngôn ngữ (ví dụ Trung sang Việt) rồi bấm bắt đầu dịch",
+    "Theo dõi tiến độ phần trăm trong danh sách, bấm biểu tượng con mắt để xem trực tiếp quá trình dịch",
+    "Có thể thêm file mới để chạy nhiều file cùng lúc, thậm chí tắt tab thoát web, quay lại thì tool vẫn xử lý",
+    "Khi hoàn thành bấm tải về, mở file bằng Notepad++ để đọc và kiểm tra lại"
+  ]
+}

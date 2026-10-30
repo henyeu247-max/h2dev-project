@@ -1,0 +1,76 @@
+{
+  "sku": "VIDEO-e95a8f",
+  "title": "SHARE NGÁCH NHỎ BÁN CONTENT THỊ TRƯỜNG VIEW VIỆT - CLONE THEO KÊNH ĐỐI THỦ",
+  "actual_topic": "SHARE NGÁCH NHỎ BÁN CONTENT THỊ TRƯỜNG VIEW VIỆT - CLONE THEO KÊNH ĐỐI THỦ",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Triết Lý Sống & Đạo Làm Người",
+  "niche_id": "faceless-general",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Tác giả chia sẻ ngách bán content thị trường Việt Nam thông qua kênh đối thủ mới lập từ tháng 1 (khoảng 1 tháng trước), đăng video từ 4 tuần trước với lịch ra video đều đặn về chủ đề triết lý và tâm lý người già.",
+    "Về kịch bản, bắt buộc phải lấy nội dung của đối thủ về xào nấu lại khoảng 70% đến 80%, tuyệt đối không để AI tự viết mới hoàn toàn vì AI tự viết sẽ rất xàm, thiếu cuốn hút và dễ bị quét.",
+    "Kênh đối thủ không dùng hình ảnh hay video AI mà ghép hoàn toàn từ các cảnh quay tự nhiên lấy trên những trang miễn phí như Pexels, Pixabay, Vecteezy, Coverr, Freepik và luôn bật khai báo nhãn ở phần mô tả.",
+    "Người làm có thể tự quay video cảnh đi chợ hoặc sinh hoạt đời thường rồi ghép vào bài để biến sản phẩm thành sự kết hợp giữa content gốc và bán content kịch bản, giúp kênh an toàn trước các đợt quét.",
+    "Giọng đọc cho thị trường Việt Nam nên sử dụng phương pháp clone giọng, kết hợp biên tập chỉn chu, mang lại giá trị thực cho người xem và tránh giật tít câu view vì chính sách đang siết chặt."
+  ],
+  "edit_sop": {
+    "primary": "Clone ngách triết lý cho người già: xào lại kịch bản, ghép video nguồn miễn phí",
+    "additional": [
+      "Kịch bản lấy về rồi xào nấu lại, lấy khoảng 70 đến 80% rồi chỉnh lại, không để AI tự quyết",
+      "Video hình ảnh lấy từ các nguồn miễn phí, hoặc tự quay khi đi chợ, đi đâu đó rồi ghép vào",
+      "Kênh mẫu không dùng hình ảnh hay video AI, toàn hình ảnh tổng hợp từ video tự nhiên",
+      "Ở phần mô tả luôn khai nhãn và dùng giọng đọc clone cho thị trường Việt"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng làm kiểu câu view hay giật tít vì nay sẽ bị quét do chính sách đang siết rất mạnh.",
+    "Đừng để AI tự quyết kịch bản vì sẽ viết rất xàm, không hay và còn bị quét."
+  ],
+  "tools_mentioned": [
+    "Pixabay"
+  ],
+  "channels_mentioned": [
+    "@TuổiGiàRadio_VN"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "00:50",
+      "seconds": 50,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "01:35",
+      "seconds": 95,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "02:22",
+      "seconds": 142,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "03:00",
+      "seconds": 180,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-e95a8f/transcript.txt",
+  "sop_steps": [
+    "Kịch bản lấy về rồi xào nấu lại, lấy khoảng 70 đến 80% rồi chỉnh lại, không để AI tự quyết",
+    "Video hình ảnh lấy từ các nguồn miễn phí, hoặc tự quay khi đi chợ, đi đâu đó rồi ghép vào",
+    "Kênh mẫu không dùng hình ảnh hay video AI, toàn hình ảnh tổng hợp từ video tự nhiên",
+    "Ở phần mô tả luôn khai nhãn và dùng giọng đọc clone cho thị trường Việt"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T06:30:00Z"
+}

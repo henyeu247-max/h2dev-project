@@ -1,0 +1,86 @@
+{
+  "sku": "VIDEO-21956b",
+  "title": "Update ngách nhân bản thị trường Hàn, Nhật và Việt",
+  "actual_topic": "Share ngách Sức khỏe (key sức khỏe) thị trường Hàn Quốc & Nhật Bản; chiến lược nhân bản nội dung/kịch bản sang Việt – Nhật",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Tâm Linh & Thu Hút May Mắn",
+  "niche_id": "faceless-general",
+  "target_market": "Hàn Quốc / Nhật Bản / Việt Nam",
+  "market_code": "KR,JP,VN",
+  "key_takeaways": [
+    "Tư duy một kịch bản - Đa thị trường: Một kịch bản về triết lý tuổi già hoặc sức khỏe có thể dịch và sản xuất cho cả 3 thị trường VN, JP, KR.",
+    "Case study kênh @KapitalKompass-US & @LamNgo-qz3bw: Mô hình làm video tài chính/đời sống phân tích từ tệp khán giả ngoại sang Việt.",
+    "Sự tương đồng văn hóa Á Đông: Khán giả người già tại Nhật, Hàn và Việt Nam có chung nỗi lo về cô đơn, tài chính dưỡng già và sức khỏe.",
+    "Bản địa hóa hình ảnh và âm thanh: Thay đổi trang phục, bối cảnh nhà cửa và nhạc cụ dân tộc tương ứng với từng quốc gia khi nhân bản.",
+    "Tối ưu hóa doanh thu RPM chênh lệch: Cùng một lượng công sức nhưng thị trường Nhật và Hàn mang lại doanh thu cao gấp 5-10 lần thị trường Việt."
+  ],
+  "edit_sop": {
+    "primary": "Lấy kịch bản kênh sức khỏe Hàn Quốc, Nhật Bản rồi nhân bản sang thị trường Nhật hoặc Việt",
+    "additional": [
+      "Xem các kênh sức khỏe Hàn, Nhật đang cao view, lấy content và kịch bản đem sang thị trường Nhật hoặc Việt làm.",
+      "Kênh mẫu edit đơn giản là đọc kịch bản trên video hay game, nhưng tác giả khuyên phải chèn thêm hình ảnh, video minh họa.",
+      "Ghép nhiều video minh họa vào để giữ chân người xem và đỡ bị YouTube quét hơn.",
+      "Các kênh tham khảo để ở link mô tả, dịch tiêu đề ra để tham khảo."
+    ]
+  },
+  "avoid_flags": [
+    "Không nên chỉ cho video hay game chạy liên tục, chỉ ghép một chút ở đầu là chưa đủ.",
+    "Đừng phô mô bé nhiều thứ, hãy tập trung làm một ngách trước."
+  ],
+  "tools_mentioned": [],
+  "channels_mentioned": [
+    "@KapitalKompass-US",
+    "@LamNgo-qz3bw",
+    "@長生きの秘訣22",
+    "@노후의삶-s1s",
+    "@songkhoekhivegia",
+    "@Jinseioiyasukotoba",
+    "@Songkhoetungngay365",
+    "@늦기전에알아야할것"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:01",
+      "seconds": 1,
+      "label": "Giới thiệu kênh sức khỏe thị trường Hàn Quốc"
+    },
+    {
+      "time": "01:47",
+      "seconds": 107,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "03:25",
+      "seconds": 205,
+      "label": "Mọi người lập thêm những cái kênh khác nữa Thì có rất là nhiều nha Thì nên em có thể tham khảo"
+    },
+    {
+      "time": "04:23",
+      "seconds": 263,
+      "label": "Đánh giá hiệu quả bật kiếm tiền và tiềm năng doanh thu của ngách"
+    },
+    {
+      "time": "06:24",
+      "seconds": 384,
+      "label": "Kinh nghiệm tối ưu đề xuất và tránh các lỗi vi phạm thường gặp"
+    },
+    {
+      "time": "07:55",
+      "seconds": 475,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-21956b/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Xem các kênh sức khỏe Hàn, Nhật đang cao view, lấy content và kịch bản đem sang thị trường Nhật hoặc Việt làm.",
+    "Kênh mẫu edit đơn giản là đọc kịch bản trên video hay game, nhưng tác giả khuyên phải chèn thêm hình ảnh, video minh họa.",
+    "Ghép nhiều video minh họa vào để giữ chân người xem và đỡ bị YouTube quét hơn.",
+    "Các kênh tham khảo để ở link mô tả, dịch tiêu đề ra để tham khảo."
+  ]
+}

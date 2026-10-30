@@ -1,0 +1,138 @@
+{
+  "sku": "VIDEO-4868d7",
+  "duration": 80.71,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 16,
+  "full_text": "Tư duy số 8 Tư duy này rất quan trọng Nếu có thể thì hãy thành công theo cách đơn giản Đơn giản hóa Mới làm hãy đơn giản hóa Anh em nào đã Đã biết đến mình với tên Huân Đơn Giản Anh em Ờ, tên này cũng tạo ra thương hiệu phết đấy. Tức là, nó có một câu, mình ám ảnh từ 2015, 2016, lâu lắm rồi, trước cả cái thời làm YouTube cơ. Là nếu có thể, hãy thành công theo cách đơn giản. Họ nói là nếu có thể, hãy thành công theo cách đơn giản. Đơn giản hóa vấn đề, bóc tách vấn đề, xử lý vấn đề. Đơn giản, hiệu quả, dễ làm, dễ nhân bản. Nếu các bạn mới, hãy chọn thứ gì đấy đơn giản mà làm. Đơn giản vẫn ra tiền bình thường. Tư duy là dùng thứ đơn giản, kiếm ra tiền, dùng tiền trung gian để mua thứ phức tạp. Đừng tập trung, đừng phi vào thứ phức tạp ngay từ đầu, rồi bế tắc.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 4.02,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:04,020",
+      "text": "Tư duy số 8"
+    },
+    {
+      "id": 2,
+      "start": 4.02,
+      "end": 8.0,
+      "start_time": "00:00:04,020",
+      "end_time": "00:00:08,000",
+      "text": "Tư duy này rất quan trọng"
+    },
+    {
+      "id": 3,
+      "start": 8.0,
+      "end": 13.72,
+      "start_time": "00:00:08,000",
+      "end_time": "00:00:13,720",
+      "text": "Nếu có thể thì hãy thành công theo cách đơn giản"
+    },
+    {
+      "id": 4,
+      "start": 13.72,
+      "end": 15.62,
+      "start_time": "00:00:13,720",
+      "end_time": "00:00:15,620",
+      "text": "Đơn giản hóa"
+    },
+    {
+      "id": 5,
+      "start": 15.62,
+      "end": 20.0,
+      "start_time": "00:00:15,620",
+      "end_time": "00:00:20,000",
+      "text": "Mới làm hãy đơn giản hóa"
+    },
+    {
+      "id": 6,
+      "start": 21.0,
+      "end": 24.84,
+      "start_time": "00:00:21,000",
+      "end_time": "00:00:24,840",
+      "text": "Anh em nào đã"
+    },
+    {
+      "id": 7,
+      "start": 24.84,
+      "end": 27.54,
+      "start_time": "00:00:24,840",
+      "end_time": "00:00:27,540",
+      "text": "Đã biết đến mình với tên Huân Đơn Giản"
+    },
+    {
+      "id": 8,
+      "start": 27.54,
+      "end": 27.84,
+      "start_time": "00:00:27,540",
+      "end_time": "00:00:27,840",
+      "text": "Anh em"
+    },
+    {
+      "id": 9,
+      "start": 27.84,
+      "end": 32.3,
+      "start_time": "00:00:27,840",
+      "end_time": "00:00:32,300",
+      "text": "Ờ, tên này cũng tạo ra thương hiệu phết đấy."
+    },
+    {
+      "id": 10,
+      "start": 34.0,
+      "end": 42.26,
+      "start_time": "00:00:34,000",
+      "end_time": "00:00:42,260",
+      "text": "Tức là, nó có một câu, mình ám ảnh từ 2015, 2016, lâu lắm rồi, trước cả cái thời làm YouTube cơ."
+    },
+    {
+      "id": 11,
+      "start": 43.04,
+      "end": 45.64,
+      "start_time": "00:00:43,040",
+      "end_time": "00:00:45,640",
+      "text": "Là nếu có thể, hãy thành công theo cách đơn giản."
+    },
+    {
+      "id": 12,
+      "start": 47.28,
+      "end": 49.86,
+      "start_time": "00:00:47,280",
+      "end_time": "00:00:49,860",
+      "text": "Họ nói là nếu có thể, hãy thành công theo cách đơn giản."
+    },
+    {
+      "id": 13,
+      "start": 51.0,
+      "end": 55.0,
+      "start_time": "00:00:51,000",
+      "end_time": "00:00:55,000",
+      "text": "Đơn giản hóa vấn đề, bóc tách vấn đề, xử lý vấn đề."
+    },
+    {
+      "id": 14,
+      "start": 55.0,
+      "end": 62.92,
+      "start_time": "00:00:55,000",
+      "end_time": "00:01:02,920",
+      "text": "Đơn giản, hiệu quả, dễ làm, dễ nhân bản. Nếu các bạn mới, hãy chọn thứ gì đấy đơn giản mà làm."
+    },
+    {
+      "id": 15,
+      "start": 66.0,
+      "end": 74.16,
+      "start_time": "00:01:06,000",
+      "end_time": "00:01:14,160",
+      "text": "Đơn giản vẫn ra tiền bình thường. Tư duy là dùng thứ đơn giản, kiếm ra tiền, dùng tiền trung gian để mua thứ phức tạp."
+    },
+    {
+      "id": 16,
+      "start": 75.38,
+      "end": 78.92,
+      "start_time": "00:01:15,380",
+      "end_time": "00:01:18,920",
+      "text": "Đừng tập trung, đừng phi vào thứ phức tạp ngay từ đầu, rồi bế tắc."
+    }
+  ]
+}

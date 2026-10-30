@@ -1,0 +1,146 @@
+Ok, chào các em yêu của thầy. Hôm nay tao sẽ dạy chúng mày code tool và nhất quán nhân vật như thế nào để cho nó hiệu quả. Và chúng mày hoàn toàn là người mới đúng không? Chúng
+mày có thể áp dụng cách này để tạo 1 ngày 100 hình ảnh, 1 ngày 1.000 hình ảnh cũng được, 1 ngày 1.000 video cũng được. Và cái độ nhất quán của nó cứ gọi là mẹ mày
+ngon luôn. Các em hiểu không? Vấn đề ở đây là chúng mày sẽ tự động code được tool. Chứ đéo cần phải chúng mày phải đi học giỏi. Mẹ mày phải biết code, phải biết thế này thế nọ.
+Phải biết code những cái chuyên nghiệp. Bây giờ AI nó làm hết cho chúng mày rồi. Việc chúng mày hãy dựa theo cách làm mà tao dạy để chúng mày áp dụng vào, chúng mày
+tạo ra tool. Và đầu tiên, ở trong đây thì chúng mày cần cho tao một cái con Google Flow. Là con Google Flow này thì chúng mày mua thì nó chỉ có 3 mấy, 5
+mấy ca thôi. Nâng cấp lên Google Flow là được. Chứ đéo cần phải pro. Nếu mà pro là chúng mày tạo video thì chúng mày có thể dùng cái tài khoản Veo 3 Ultra ấy.
+Và một công cụ nữa là không thể thiếu là ChatGPT
+Nghĩa là chúng mày bắt buộc phải có cái con ChatGPT để chúng mày làm gì ạ
+Tạo ra cái yêu cầu để chúng mày tạo ra tool hiểu chưa
+Thì ở đây tao là có 2 cái Master Prompt để code tool như này
+Thì đầu tiên tao sẽ giải thích cho chúng mày cái câu prompt để tạo Master Prompt
+Hãy tạo cho tôi một Master Prompt
+Nhưng đầu tiên bạn hãy đóng vai thành một chuyên gia code tool
+Nghĩa là chúng mày phải giao nhiệm vụ cho nó
+Là gì ạ? Mày phải trở thành một chuyên gia code tool cho tao
+Hãy tạo cho tôi một Master Prompt
+Để gửi trực tiếp vào Google Flow
+Nghĩa là chúng mày phải giao nhiệm vụ cho nó
+phải áp dụng tư duy để yêu cầu ChatGPT tạo ra một cái Master Prompt để gửi cho cái con Google Flow để tạo ra một tool tự động tạo ảnh
+ở đây tao dạy chúng mày code ra tool tự động tạo ảnh thì chúng mày phải tư duy là code ra tool tự động tạo video
+Thì chúng mày thay đổi cho tao cái hình ảnh sang cái video nào được. Hiểu chưa?
+Trong tool có nút thêm hình ảnh tham chiếu để có thể thêm nhiều hình ảnh ghi nhớ.
+Nghĩa là ví dụ như là nếu chúng mày học được cái Master Prompt để yêu cầu nó, ví dụ như 5 nhân vật trong một cái câu chuyện hay là trong một bộ phim, nó sẽ nhất quán. Hiểu chưa?
+Có các kích thước tạo ảnh 16.9, 4.3, 1.1, 3.4 và 9.16. Nghĩa là trong cái con Google Flow này này, khi chúng mày tạo ảnh từng một ảnh một đúng không?
+Thì chúng mày nhìn thấy nó có một cái tác nhân như này, hình ảnh. Đúng không? Thì nó sẽ có các kích cỡ 16.9, 4.3, 1.1, 3.4 và 9.16. Và tiếp theo
+là gì ạ? Có thể lựa chọn số ảnh cho từng prompt. Ví dụ như 1 ảnh, 2 ảnh, 3 ảnh, 4 ảnh. Thì nó sẽ chọn là nó tạo 4 ảnh
+trên 1 prompt. Đấy, chúng mày phải tư duy cái câu prompt này cho tao. Tool sẽ tự động gửi ảnh tham chiếu nhân vật nếu có hình ảnh tham chiếu nhân vật.
+Đây là câu yêu cầu là nếu chúng mày làm nhân vật tham chiếu để cho nó xuyên suốt một video của chúng mày đúng không? Thì chúng mày hãy áp dụng cái câu này vào. Hiểu chưa?
+Yêu cầu tạo 5 prompt 1 lúc, nghĩa là nó sẽ tạo cho chúng mày 5 cái hình ảnh 1 lúc, thì nó sẽ là tự động và tạo liên tục, tốc độ tạo ảnh nhanh.
+Tool có tên là Đại Gia Mang Dép, cái câu này thì chúng mày có thể thay là Tool có tên là Thằng Đéo Là cũng được, tên là gì cũng được.
+Hiểu chưa? Tool có nút yêu cầu tải về file và thư mục để mình lựa chọn, thư mục bất kỳ, nghĩa là nó sẽ tự động tải về thư mục cho chúng mày, chúng mày không cần phải đi mẹ mà nằm thủ công nữa.
+Hiểu chưa? Khi tải ảnh về có tool tự động, nhớ từng ảnh 1 để đánh dấu. Khi vào file, tool sẽ tự động tải ảnh đó về. Tool có giao diện đẹp, giao
+diện bắt mắt, yêu cầu cho tôi một Master Prompt chi tiết để gửi cho Google Flow. Chúng mày copy nguyên cái câu này cho tao. Đây này. Đấy. Chúng mày nhấn sao chép.
+Tao sẽ để cái này trong phần mô tả. Ở cái video này thì nó sẽ có phần mô tả ở góc 4 giờ chiều ấy. Chúng mày cứ nhìn kim đồng hồ này.
+Đấy thì góc 4h chiều
+Thì nó sẽ có phần mô tả
+Đấy chúng mày vào cái file tài liệu này chúng mày cóp
+Sau đó thì chúng mày dán luôn cho tao lên con ChatGPT nhé
+Không cần thiết là chúng mày phải call
+Chúng mày chỉ cần đặt ra cái yêu cầu là
+Con Google Flow này nó có các thông số như nào
+và nó có tác nhân như nào để tạo ra tool
+hiểu chưa
+đấy
+nó sẽ đóng gói cho chúng mày một Master Prompt hoàn chỉnh
+gồm giao diện luồng xử lý tạo ảnh tham chiếu
+thì tao sẽ dạy code tool trước
+sau đó là tao sẽ dạy cho chúng mày là nhất quán nhân vật như thế nào
+để cho hiệu quả
+nó code rất là nhanh nhé
+thật ra là cái video này
+Nói thật chúng mày là chúng mày không cần không bao giờ tìm thấy những cái video này ở trên mạng đâu
+Hiểu chưa
+Chỉ có thầy giáo đại gia mang dép của các em thôi
+Hiểu không
+Đấy
+Bây giờ nó ra cho chúng mày một cái Master Prompt như thế này
+Chúng mày thường thấy ở trên mạng nó chia sẻ những cái prompt rất là dài đúng không
+Nhưng mà đéo phải đâu? Nó phải yêu cầu gì ạ? Yêu cầu ChatGPT mày viết ra cho tao một kịch bản, một Master Prompt để tạo ra một con chatbot học thuộc ghi nhớ.
+Đấy, thì bây giờ là chúng mày đã nhìn thấy này. Nó sẽ tạo ra một cái file như này cho mày. Chúng mày chỉ cần dán cái câu lệnh kia vào là nó sẽ tạo ra cho chúng mày như thế này đúng không?
+Nó sẽ tạo ra cho chúng mày hệ thống xử lý hoặc là tất cả những gì dựa vào cái trí thông minh của nó đã đóng vai thành
+một người chuyên gia code tool. Yêu cầu tại sao? Xương rồng thì đơm lá đơm hoa, nước cao nguyên đông đầy sỏi đá là ngày đại gia
+mang dép trở về nhà. Đây là một cái cách mà chúng mày áp dụng vào để tạo ra những cái tool trên tất cả những cái con AI.
+Nếu có thumbnail nó cho chúng mày tạo những công cụ để chúng mày tạo ảnh hàng loạt, tạo video hàng loạt. Đó, hiểu chưa? Đấy, nó sẽ ra cho chúng mày một cái Master Prompt dài như
+thế này. Chúng mày nghĩ là có những cái Master Prompt dài như thế này, bọn nó ngồi bọn nó viết ra, chẳng thằng nào rảnh luôn mà ngồi một ngày mà ngồi viết như thế này.
+Viết nhưng mà chúng mày không hiểu được, kể cả không bao giờ chúng mày viết được. Nếu mà chúng mày là người mới, chúng mày bảo viết tất cả hai mấy tiêu chí như này, đéo gì quá
+cái chuyện đấy. Nói chung là nó sẽ ra cho chúng mày một Master Prompt. Thì tất cả những cái gì mà yêu cầu trong cái câu lệnh thì tao đã ghi hết rồi. Thì bây giờ nha, nó
+sẽ cho chúng mày như này, đúng không? Thì nó sẽ dài như này, một Master Prompt dài như này. Thì chúng mày chỉ cần copy cho tao này, nhấn sao chép này. Đấy nha, nhấn sao chép xong.
+Thì bây giờ sang cho ta con Google Flow, đây là giao diện của nó.
+Thì trong đó nó có một cái phần là phần công cụ này, phải nhìn vào cái con chuột nha.
+Mẹ mày tao thao tác đến đâu thì con chuột nó di chuyển đến đấy.
+Không phải là tao di chuyển phía bên trái mà mày nhìn phía bên phải đéo được đâu.
+Đấy nhấn vào công cụ này.
+Bây giờ là chúng mày là nhấn vào cho tao là tạo mới này.
+Đấy có nút dấu cộng đấy.
+Chúng mày dán toàn bộ câu Master Prompt vào đây.
+Dán vào, thì nó sẽ gì ạ? Thì chúng ta sẽ gửi nguồn cho con Google Flow này, code
+tool, nó gọi là chúng mày phải có một cái tư duy là, à, ChatGPT, để tạo ra một câu
+Master Prompt yêu cầu dựa vào trí thông minh của người code tool mà mình đã giao nhiệm vụ.
+Trước khi nó viết ra Master Prompt thì nó phải là trở thành một chuyên gia code tool. Ngoài ra là tao sẽ áp ra cho chúng mày tầm 20 bài về code tool để chúng mày áp dụng vào sản xuất video.
+Đây là code tool này nó còn đơn giản. code tool đéo là nó cũng đơn giản. Nhưng mà chúng mày phải hiểu được kể cả chúng mày là người mới hay người cũ.
+Chúng bạn đều có thể làm được áp dụng vào để tạo ảnh làm affiliate, áp dụng vào tạo ảnh để sản xuất những video về chim, về cò, về rừng, về núi.
+Khi mà chúng mày có một list prompt không thể nào chúng mày ngồi chúng mày nhập từng prompt một vào. Đéo có chuyện đó xảy ra. Đấy. Thì chúng mày nó sẽ có một cái tool như này nhé. Trong các
+tool nó sẽ có một cái chế độ giống nhau. Lúc nào mà nó có lỗi thì chúng mày nhấn vào nó tự fix cho chúng mày luôn. Thì nó sẽ ra tool như thế này cho chúng mày. Hiểu chưa?
+Đây là một trong những cái cách mà nó sẽ ra cho chúng mày cái tool một cái này. Cái tool đại gia mang dép thì cái tên này nhé. Và đây này. Đây là thông số tỷ lệ khung hình này.
+Đấy chúng mày có thể lựa chọn giống như cái Master Prompt đã yêu cầu. Hiểu chưa? Khóa định dạng đồng nhất nhân vật này, hệ thống này, nhập file này, tiến trình này, tham chiếu này, thư viện này. Thì nó sẽ ra cho
+chúng mày một con tool nó kiểu giống như thế này. Ý là các chức năng nó sẽ giống nhau nhưng mà giao diện nó sẽ không giống nhau. Hiểu chưa? Giao diện mỗi thằng nó sẽ khác nhau. Tại vì câu prompt, câu
+Master Prompt của nó ra không bao giờ hoàn chỉnh cả. Kể cả chúng mày tạo Video AI nó cũng thế. Và bây giờ là khi mà chúng ta đã fix xong như thế này nha. Thì bây giờ chúng ta sẽ làm gì ạ?
+Tạo ra nhân vật tham chiếu để chúng mày nhất quán nhân vật 100 hình ảnh, 1.000 hình ảnh cũng được. Ví dụ, đây là Pinterest, chúng mày hay thấy những cái Stickman đúng không?
+Stickman như này, kể cả người thật nhé, chúng mày có thể áp dụng cách này vào. Ví dụ như tao sẽ tải bất kỳ một
+hình ảnh nào mà Stickman hơi dễ, bây giờ là tao phải cho là người thật. Ví dụ như Rumi đi, nhân vật mà cô
+gái tao bảo luôn luôn hết trẻ. Chúng mày ghi nhớ cho tao nhân vật này nhé, tải cái hình ảnh này về. Tải về nhé.
+Sau khi tải về xong, chúng mày nhớ cho tao là vào cho tao cái ChatGPT và chúng mày thêm hình ảnh lên.
+Thêm hình ảnh Rumi này. Và bây giờ là đến với câu prompt tham chiếu. Cái này thì tao chỉ tư duy cho chúng mày những cái câu mà để chúng mày tạo ảnh nhất quán thôi.
+Chứ không thể nào bảo là ui dợ anh ơi viết ra một cái câu chuyện xong rồi ngồi tạo ra cho em Master Prompt để phù hợp những cái hình ảnh vào trong câu chuyện đó đúng không?
+Đúng không? Làm được nhưng mà tư duy của chúng mày, Master Prompt của chúng mày và thực chiến như thế nào?
+Thì ví dụ như câu prompt này tao sẽ như sau.
+Yêu cầu tạo cho tôi một Master Prompt để tạo cho tôi 100 prompt khi dùng hình ảnh này tạo lên Google Flow làm nhân vật tham chiếu.
+Thay đổi cử chỉ hành động cho từng prompt, sáng tạo các bối cảnh cùng phong cách.
+Các nhân vật tạo hình ảnh kích thước 16.9, nghĩa là chúng mày có thể tạo ảnh 9.16, 1.1, các thứ đều được.
+Sáng tạo cho tôi một Master Prompt, trả 100 prompt chi tiết, không cần đánh dấu prompt.
+Thì chúng mày copy câu này cho tao. Chúng mày dán cùng cái hình ảnh này. Thì bây giờ nó sẽ tạo ra cho chúng mày 1 Master Prompt, rồi tạo gì ạ? 100 cái prompt.
+Không cần đánh dấu prompt nha, thì chúng ta sẽ có 1 cái list prompt. Khi đang chờ nó viết ra prompt như này, thì chúng ta sẽ vào cái Tool.
+Thì nó sẽ có 1 cái hình ảnh là tham chiếu nhé. Thêm ảnh tham chiếu vào này. Chúng mày tải lên. Tải cái nhân vật này lên làm
+ảnh tham chiếu để tí nữa nó sẽ tự động auto tạo ảnh. Chúng mày tư duy không? Nghĩa là bắt buộc chúng mày phải có 1 nhân vật.
+Đấy, đây nhé. Chúng mày có thể xóa này được nhé. Nhưng hãy nhớ cho tao là phải có ảnh tham chiếu. Các tool nó đều giống nhau nhé.
+Đây, nó sẽ ra cho chúng mày một Master Prompt như thế này, hiểu chưa? Nó sẽ có là tư thế này, biểu cảm này,
+có bối cảnh này, nghĩa là câu prompt của tao yêu cầu rất ngắn, nhưng mà nó sẽ viết ra cho tao một cái
+Master Prompt như thế này, thì chúng mày hiểu là cái tư duy của chúng mày luôn luôn phải đặt vấn đề về Master Prompt.
+Nó phải có cái gì dài đó
+100
+prompt cho tôi
+Đấy
+Thì chúng mày chỉ cần gửi cho nó là tạo 100 prompt cho tôi
+Thì bây giờ nó sẽ tạo cho chúng mày 100 prompt
+Khi mà có cái master như này
+Thì chúng mày sẽ yêu cầu
+Thì các prompt nó sẽ không bao giờ bị gì ạ
+Bị ngắn
+Mẹ mày nhiều thằng tạo ra video AI, mẹ mày cái thì ngắn quá, cái thì dài quá. Đéo biết đâu mà lần em hiểu không? Đấy là một trong
+những cái tư duy để các em làm gì ạ? Nhất quán nhân vật, kể cả chúng mày nhất quán cái đéo gì cũng được. Miễn là có những cái hình
+ảnh mà nó sẽ vi phạm chính sách, ví dụ như người nổi tiếng hay là những nhân vật hở hang, thì nó sẽ bị vi phạm chứ, đúng không?
+Thì chúng mày làm bằng cách gì hả?
+Cách là chúng mày sẽ tạo ra những cái nhân vật mà chúng mày có thể ghép vào.
+Ví dụ như thế giới động vật làm sao để nhất quán được bối cảnh.
+Nó quá đơn giản.
+Khi chúng mày hiểu được, tư duy được là ok.
+Thì chúng ta sẽ đợi.
+nó tạo ra 100 prompt rồi tôi nói tiếp cái đoạn này tôi sẽ tua nhé đây đợi một lúc thì nó sẽ ra cho chúng
+mày 100 prompt nhân vật như thế này chúng mày phải nhìn nhé tất cả 100 prompt 1000 prompt nó đều có một
+cái chế độ dài như nhau này chứ không phải cái prompt của chúng mày mẹ mày ngắn ngủ như này thì làm làm
+cái đéo gì đúng không
+đấy thì chúng mày copy cho tao
+100 cái prompt này nha
+nhấn sao chép này
+Đấy nhá, đấy là 100 prompt nhá. Thì bây giờ là ở trên cái tool của chúng mày, chúng mày dán vào đây, dán vào và phân tích này. Đấy, thì nó sẽ
+ra cho chúng mày là 100 prompt như này đúng không? Thì bây giờ là chúng mày chỉ nhấn cho tao là bắt đầu tạo. Thì bây giờ là gì ạ? Nó sẽ tự
+động auto cho chúng mày. Auto cho chúng mày. Thì bây giờ là gì ạ? Nó sẽ lấy từng 5 cái prompt 1 nhá. Đây ạ, đang chạy 1 lúc 5 prompt nhá.
+Chúng mày có thể nhìn thấy ở đây. Đấy, bây giờ nha, chúng mày nhìn cho tao là nó sẽ chạy một lúc tầm 5 prompt như
+này. Nghĩa là chúng mày có thể là nó chạy xong 5 prompt, nó sẽ chạy 5 prompt tiếp và chúng mày không cần phải ngồi,
+chúng mày ngồi, quy trình làm gì cả. Hiểu chưa? Thì nó sẽ ra cho chúng mày nhân vật như thế này. Chúng mày nhìn thấy chưa?
+5 prompt tiếp theo thì nó sẽ tự động tải về luôn thư mục cho chúng mày không phải chúng mày phải ngồi tải nữa thì
+đây là một trong những cái nhất quán nhân vật chúng mày áp dụng cái tư duy vào để tạo ra những cái hình ảnh.
+Phong cách thực tế như thế nào nó tự động tải về cho chúng mày như thế này này.
+Nói chung là cái này là chúng mày có thể auto bằng tất cả các công cụ ví dụ như Stickman các thứ đều được áp dụng vào cái
+tư duy này để tạo ra được những cái câu chuyện story của mình. Đây là một quy trình tạo tool thực tế. Chào các em yêu của thầy.

@@ -1,0 +1,655 @@
+1
+00:00:00,000 --> 00:00:07,100
+Em chào mọi người, video này em giới thiệu về hướng dẫn mọi người về con tool dịch phụ đề SRT này mới update phiên bản VIP nhất nha mọi người.
+
+2
+00:00:07,320 --> 00:00:17,800
+Thì như mọi người cũng đã biết, trước đó thì cũng có phiên bản cũ là phải tải về cài trên máy, cài trên desktop ấy mọi người, thì nó không có được tiện lắm bởi vì phải cài file về về giải nén các thứ nữa.
+
+3
+00:00:17,940 --> 00:00:21,980
+Nếu mà bác nào dùng máy hệ điều hành macOS thì không thể cài tool được.
+
+4
+00:00:22,140 --> 00:00:27,760
+Đấy nên là em đã cải thiện về update phiên bản VIP nhất lên web luôn nha mọi người, cho mọi người dùng thẳng trực tiếp trên web luôn nha.
+
+5
+00:00:27,760 --> 00:00:31,320
+Về bất cứ mọi người dùng hệ điều hành máy nào thì vẫn dùng được nha mọi người.
+
+6
+00:00:31,800 --> 00:00:35,520
+Thì hiện tại là có 2 gói nha mọi người, 1 gói tháng và gói vĩnh viễn nha.
+
+7
+00:00:35,820 --> 00:00:42,120
+Gói tháng này thì mọi người sẽ được 500.000 credit nha mọi người, tương đương với là tầm 40 đến 50 giờ dịch đấy.
+
+8
+00:00:42,500 --> 00:00:50,300
+Thì ví dụ 1, em sẽ ví dụ nha, mọi người dịch làm 1 video dài 1 tiếng đi, thì mọi người có thể làm tầm 45 video như vậy thì nó mới hết được nha.
+
+9
+00:00:51,000 --> 00:00:52,620
+Nên là gói tháng là mọi người dùng thoải mái luôn ấy.
+
+10
+00:00:52,620 --> 00:00:55,780
+Về nó có thể dùng trực tiếp trên kẻ là các hệ điều hành luôn
+
+11
+00:00:55,780 --> 00:00:58,340
+Về cá để cho mọi người dùng trên điện thoại được luôn nha
+
+12
+00:00:58,340 --> 00:01:00,340
+Nói chung là nó là một phiên bản web nè mọi người
+
+13
+00:01:00,340 --> 00:01:03,880
+Về cái này mọi người cũng không cần phải tự đi mua key API nữa nha
+
+14
+00:01:03,880 --> 00:01:07,820
+Bởi vì tài khoản thì em sẽ xét và cấp sẵn cho mọi người là cá sẵn luôn nha mọi người
+
+15
+00:01:07,820 --> 00:01:12,700
+Đó, về nói chung về chất lượng và tối ưu các thứ thì nó cũng như là con tool trước đó thôi
+
+16
+00:01:12,700 --> 00:01:14,200
+Về còn hơn thế nữa nha mọi người
+
+17
+00:01:14,200 --> 00:01:17,200
+Bởi vì dùng cùng là một con DeepSeek dịch thôi
+
+18
+00:01:17,200 --> 00:01:19,480
+Đó thì nó rất là mượt và rất là chuẩn nha
+
+19
+00:01:19,480 --> 00:01:21,300
+Về bên phải này là gói vĩnh viễn nha
+
+20
+00:01:22,620 --> 00:01:28,800
+nào mà thích làm lâu dài luôn thì đầu tiên thì sẽ tặng cho mọi người là 1 triệu 8 credit nha mọi
+
+21
+00:01:28,800 --> 00:01:33,780
+người thì cái gói này thì anh em dịch thoải mái luôn đó thì sau khi mà nếu mà hết credit thì mọi
+
+22
+00:01:33,780 --> 00:01:38,280
+người có thể liên hệ em em chỉ nạp trực tiếp cho mọi người luôn chứ không phải là mọi người tự đi
+
+23
+00:01:38,280 --> 00:01:43,380
+mua nữa nha đây mọi người có thể liên hệ qua Zalo của em nè hoặc là các kênh khác nhưng mà ưu tiên
+
+24
+00:01:43,380 --> 00:01:55,810
+Ưu tiên là quay cái yellow này nha, em sẽ rep về hỗ trợ mọi người nhanh nhất. Rồi, sau khi giới thiệu sơ để cho mọi người hiểu ra được thì bây giờ em sẽ login vào hướng dẫn mọi người làm trên này nha. Sau khi mà mọi người đã chọn gói và mua trực tiếp với em rồi á, thì mọi người sẽ được
+
+25
+00:01:55,810 --> 00:01:57,920
+thì mọi người sẽ được em cấp một cái key tài khoản
+
+26
+00:01:57,920 --> 00:01:59,770
+như này nha. Rồi, thì mọi người sẽ
+
+27
+00:01:59,770 --> 00:02:01,480
+login vào tool thôi. Đó,
+
+28
+00:02:01,750 --> 00:02:03,980
+thì mọi người có thể liên hệ em ngay chỗ này cũng được nè.
+
+29
+00:02:04,060 --> 00:02:05,590
+Bấm vào liên hệ admin á. Rồi,
+
+30
+00:02:05,690 --> 00:02:07,610
+đây là một trang dashboard, cái trang mà
+
+31
+00:02:07,610 --> 00:02:09,890
+để cho mọi người có thể dịch, mọi người làm nè.
+
+32
+00:02:10,280 --> 00:02:12,000
+Thì ngồi ra cái tool dịch này á
+
+33
+00:02:12,000 --> 00:02:15,650
+Thì em đang phát triển thêm cái tool voice về tool render video nữa nha mọi người
+
+34
+00:02:15,650 --> 00:02:19,090
+Tool void này thì gồm kẻ CapCut về ElevenLabs này kia luôn nha
+
+35
+00:02:19,090 --> 00:02:20,150
+Khé là xịn luôn ấy
+
+36
+00:02:20,150 --> 00:02:22,430
+Nhưng mà vẫn đang trong thời gian phát triển nha mọi người
+
+37
+00:02:22,430 --> 00:02:25,120
+Sau khi mọi người login vào về chọn tool dịch rồi á
+
+38
+00:02:25,120 --> 00:02:26,750
+Thì mọi người bấm vào tạo mới nè
+
+39
+00:02:26,750 --> 00:02:30,310
+Đấy thì dưới này thì mọi người có thể chọn file nè
+
+40
+00:02:30,310 --> 00:02:31,760
+Chọn file để dịch nha
+
+41
+00:02:31,760 --> 00:02:33,970
+Đấy ví dụ em chọn file này nha
+
+42
+00:02:33,970 --> 00:02:36,120
+File này thì tầm hơn 30 phút nha mọi người
+
+43
+00:02:36,120 --> 00:02:38,210
+Đó thì chọn như này rồi
+
+44
+00:02:38,210 --> 00:02:40,370
+Bên ngay bên tay phải mọi người nè
+
+45
+00:02:40,370 --> 00:02:41,560
+Có chỗ thiết lập dịch thực
+
+46
+00:02:41,560 --> 00:02:43,490
+Thì có rất là nhiều ngôn ngữ luôn nha
+
+47
+00:02:43,490 --> 00:02:46,990
+Cái cũ á, phiên bản cũ thì chỉ có Trung sang Việt Nam thôi
+
+48
+00:02:46,990 --> 00:02:50,280
+Thì phiên bản mới này em update thêm rất là nhiều ngôn ngữ khác nữa
+
+49
+00:02:50,280 --> 00:02:53,080
+Thì nếu mọi người làm thị trường nào mà chưa có
+
+50
+00:02:53,080 --> 00:02:54,990
+Thì có thể liên hệ em, em sẽ thêm cho
+
+51
+00:02:54,990 --> 00:02:58,940
+Còn hiện tại thì em đang ưu tiên để những cái mà hay dùng nhiều nhất vào nha mọi người
+
+52
+00:02:58,940 --> 00:03:01,650
+Đó, thì bây giờ em sẽ dịch từ Trung sang Việt Nam nè
+
+53
+00:03:01,650 --> 00:03:05,120
+Mọi người có thể dịch sang Nhật Bản, Tiếng Anh, Hàn Quốc này kia rất là nhiều nha
+
+54
+00:03:05,120 --> 00:03:07,030
+Tiếp theo thì mọi người lúc xuống dưới nè
+
+55
+00:03:07,030 --> 00:03:08,670
+Thì mọi người bấm bắt đầu dịch nha
+
+56
+00:03:08,670 --> 00:03:13,860
+Đó, thì nó sẽ, mọi người chờ tầm vài giây thì nó sẽ xử lý kiểu như khởi động đó mọi người.
+
+57
+00:03:14,330 --> 00:03:18,990
+Thì ngay chỗ này thì nó sẽ lại ra hiện trực tiếp cho mọi người thấy luôn.
+
+58
+00:03:19,080 --> 00:03:20,120
+Đây, đó, mọi người thấy chưa?
+
+59
+00:03:20,500 --> 00:03:22,000
+Nó đang trực tiếp dịch cho mọi người luôn nè.
+
+60
+00:03:22,670 --> 00:03:25,710
+Đấy, về cái thanh này nó sẽ chạy nha, để mọi người theo dõi.
+
+61
+00:03:26,060 --> 00:03:28,210
+Thì ngoài ra, mọi người thoát ra chỗ danh sách nè.
+
+62
+00:03:28,560 --> 00:03:30,260
+Đó, thì mọi người theo dõi chỗ này được luôn nha.
+
+63
+00:03:30,530 --> 00:03:32,120
+Đang xử lý ra hiện số phần trăm luôn.
+
+64
+00:03:32,120 --> 00:03:34,000
+Về chỗ này thì có con mắt nè, mọi người bấm vào.
+
+65
+00:03:34,000 --> 00:03:47,310
+Thì mọi người có thể xem trực tiếp nó dịch nha mọi người, có thể theo dõi quy trình gen ra. Thực thi chuẩn chỉ 100% không thiếu hay sai sót gì nha V r m ng ti t c th l
+
+66
+00:03:47,310 --> 00:03:49,590
+tải thêm một cái file mới lên nữa
+
+67
+00:03:49,590 --> 00:03:50,950
+để cho nó làm tiếp nha.
+
+68
+00:03:51,290 --> 00:03:52,810
+Đấy, mọi người thấy không? Rất là tiện lợi
+
+69
+00:03:52,810 --> 00:03:54,210
+về hơn những cái tool cũ không.
+
+70
+00:03:54,630 --> 00:03:56,350
+Đấy, thì mọi người...
+
+71
+00:03:56,350 --> 00:03:58,630
+Đây, em sẽ bấm vào chọn một file mới nè.
+
+72
+00:03:58,770 --> 00:04:00,270
+File này thì dài hơn một tiếng nha.
+
+73
+00:04:00,630 --> 00:04:01,770
+Đó, thì mọi người thấy chưa?
+
+74
+00:04:01,910 --> 00:04:03,250
+Bây giờ em sẽ bấm bắt đầu dịch nè.
+
+75
+00:04:03,250 --> 00:04:06,910
+Thì nó sẽ tiếp tục làm công việc là file thứ 2 nữa
+
+76
+00:04:06,910 --> 00:04:09,890
+Kiểu như là có thể chạy nhiều file cùng lúc được luôn ấy mọi người
+
+77
+00:04:09,890 --> 00:04:11,350
+Bây giờ có một cái cực kỳ hay nữa
+
+78
+00:04:11,350 --> 00:04:13,010
+Thì trong quyết định chạy thì mọi người có thể
+
+79
+00:04:13,010 --> 00:04:13,950
+Tắt cái tab đi
+
+80
+00:04:13,950 --> 00:04:15,150
+Đây em tắt hoàn toàn luôn
+
+81
+00:04:15,150 --> 00:04:16,870
+Thoát khỏi web luôn nha mọi người
+
+82
+00:04:16,870 --> 00:04:18,710
+Đấy thì bây giờ em login lại nè
+
+83
+00:04:18,710 --> 00:04:19,590
+Đây bấm bắt đầu dịch
+
+84
+00:04:19,590 --> 00:04:20,730
+Vào lại cho mọi người xem
+
+85
+00:04:20,730 --> 00:04:22,030
+Thì nó vẫn là xử lý nha
+
+86
+00:04:22,030 --> 00:04:24,010
+Đấy thì mọi người thấy không? Rất là hay
+
+87
+00:04:24,010 --> 00:04:25,950
+Thì mọi người có thể quất cái file lên
+
+88
+00:04:25,950 --> 00:04:27,390
+Để cho nó dịch rồi mọi người tắt đi
+
+89
+00:04:27,390 --> 00:04:28,650
+Rồi mọi người làm công việc khác
+
+90
+00:04:28,650 --> 00:04:29,370
+Hay là đi đâu đó
+
+91
+00:04:29,370 --> 00:04:30,970
+Rồi mọi người quay lại
+
+92
+00:04:30,970 --> 00:04:33,630
+thì nó vẫn xử lý và hoàn thành cho mọi người nha
+
+93
+00:04:33,630 --> 00:04:35,530
+chứ không phải là như cái tool trên desktop
+
+94
+00:04:35,530 --> 00:04:37,830
+thì mọi người chỉ được import một file
+
+95
+00:04:37,830 --> 00:04:39,810
+và mọi người chỉ chờ nó chạy xong rồi
+
+96
+00:04:39,810 --> 00:04:41,050
+thì mới làm tiếp được
+
+97
+00:04:41,050 --> 00:04:43,150
+hoặc là trong quá trình làm mọi người test đi
+
+98
+00:04:43,150 --> 00:04:44,370
+thì nó sẽ không được nha
+
+99
+00:04:44,370 --> 00:04:46,410
+đó nên là em update phiên bản web này
+
+100
+00:04:46,410 --> 00:04:49,690
+thì cực kỳ là viết về tiện lời ở chỗ đó nha mọi người
+
+101
+00:04:49,690 --> 00:04:53,030
+cái gói em đang test cho mọi người là cái gói là vĩnh viễn nha mọi người
+
+102
+00:04:53,030 --> 00:04:55,390
+thì nếu mà mọi người dùng hết credit á
+
+103
+00:04:55,390 --> 00:04:57,250
+thì mọi người bấm vào thanh toán nạp tiền
+
+104
+00:04:57,250 --> 00:04:58,810
+rồi mọi người liên hệ với em
+
+105
+00:04:58,810 --> 00:05:00,290
+thì em sẽ nạp cho mọi người nha
+
+106
+00:05:00,290 --> 00:05:01,390
+nạp trực tiếp cho mọi người luôn
+
+107
+00:05:01,390 --> 00:05:03,630
+chứ anh em không cần phải là tự mua
+
+108
+00:05:03,630 --> 00:05:06,670
+API các thứ như cái tool cũ đâu nha
+
+109
+00:05:06,670 --> 00:05:07,990
+rất là tốn thời gian
+
+110
+00:05:07,990 --> 00:05:10,050
+và nhiều anh em không có thẻ Visa
+
+111
+00:05:10,050 --> 00:05:10,790
+cũng không mua được
+
+112
+00:05:10,790 --> 00:05:13,830
+nên là lần này thì em hỗ trợ từ A đến Z luôn cho anh em
+
+113
+00:05:13,830 --> 00:05:16,210
+để cho anh em có thể dùng ok nhất
+
+114
+00:05:16,210 --> 00:05:17,230
+và tiện nhất nha
+
+115
+00:05:17,230 --> 00:05:18,990
+cái file 2 này thì mọi người thấy không
+
+116
+00:05:18,990 --> 00:05:20,570
+nó đang dịch từ trung sang trung nè
+
+117
+00:05:20,570 --> 00:05:22,570
+bởi vì lúc nãy em quên chọn mất mọi người
+
+118
+00:05:22,570 --> 00:05:25,710
+cái file thứ 2 là lúc nãy em quên chọn là từ trung sang Việt
+
+119
+00:05:25,710 --> 00:05:37,130
+em là từ Việt sang Trung nên nó dịch từ Trung sang Trung luôn. Nên là mọi người ngay chỗ mục thiết lập dịch thuật nhớ chọn chuẩn nha mọi người
+
+120
+00:05:37,250 --> 00:05:38,810
+Đây nè mọi người. Đó, thì mọi người
+
+121
+00:05:38,810 --> 00:05:40,250
+bấm Trung Quốc sang Việt Nam nha.
+
+122
+00:05:40,480 --> 00:05:41,620
+Đấy, anh em lưu ý nhớ chỗ này.
+
+123
+00:05:41,840 --> 00:05:44,310
+Ok, sau khi mà một file nó đã gen xong rồi á,
+
+124
+00:05:44,440 --> 00:05:46,480
+thì nó sẽ hiện ra hoàn thành như này nha mọi người.
+
+125
+00:05:46,600 --> 00:05:47,960
+Thì mọi người có thể bấm tải về nè.
+
+126
+00:05:48,380 --> 00:05:50,000
+Rồi, em sẽ vào xem cho mọi người nha.
+
+127
+00:05:50,000 --> 00:05:53,070
+Đây em sẽ mở ở trên Notepad++ nha
+
+128
+00:05:53,070 --> 00:05:55,000
+Mọi người có thể dùng con này rất là tốt nha
+
+129
+00:05:55,000 --> 00:05:59,380
+Em hay dùng con Notepad++ này chứ không dùng con Notepad thường nha mọi người
+
+130
+00:05:59,380 --> 00:06:02,600
+Đó thì đây mọi người mở file lên rồi mọi người đọc và kiểm tra lại thôi
+
+131
+00:06:02,600 --> 00:06:05,690
+Rồi ok nói chung cách dùng thì nó cũng đơn giản như vậy thôi mọi người ạ
+
+132
+00:06:05,690 --> 00:06:09,770
+Vì mọi người có nhu cầu muốn dùng thì mọi người tham khảo các gói ở đây nha
+
+133
+00:06:09,770 --> 00:06:13,510
+Thì giá thì em cũng đang xét về tối ưu rất là rẻ hỗ trợ cho anh em luôn rồi đấy
+
+134
+00:06:13,510 --> 00:06:18,900
+Bởi vì mọi người biết cái tool cũ trên desktop thì giá là đắt hơn này nha
+
+135
+00:06:18,900 --> 00:06:20,360
+Thì anh em để dùng rồi
+
+136
+00:06:20,360 --> 00:06:21,330
+Hoặc là anh em liên hệ em
+
+137
+00:06:21,330 --> 00:06:21,860
+Em gửi rồi
+
+138
+00:06:21,860 --> 00:06:22,810
+Gửi thông tin rồi á
+
+139
+00:06:22,810 --> 00:06:24,060
+Thì mọi người cũng biết là
+
+140
+00:06:24,060 --> 00:06:25,000
+Giá gói cũ á
+
+141
+00:06:25,000 --> 00:06:27,040
+Thì 550.000 trên 1 tháng
+
+142
+00:06:27,040 --> 00:06:28,740
+Còn gói bình viễn là 2 triệu rưỡi
+
+143
+00:06:28,740 --> 00:06:29,710
+Còn hiện tại trên này
+
+144
+00:06:29,710 --> 00:06:31,900
+Thì em đang để rất là tối ưu luôn cho mọi người á
+
+145
+00:06:31,900 --> 00:06:33,600
+Cái này thì mọi người không cần phải
+
+146
+00:06:33,600 --> 00:06:35,940
+Tự bỏ tiền ra mua thêm cái API nữa nha
+
+147
+00:06:35,940 --> 00:06:36,570
+Vậy đây
+
+148
+00:06:36,570 --> 00:06:37,940
+Đây là ví dụ là tài khoản
+
+149
+00:06:37,940 --> 00:06:39,510
+Set tháng này mọi người
+
+150
+00:06:39,510 --> 00:06:40,740
+Thì ở dưới này thì
+
+151
+00:06:40,740 --> 00:06:42,420
+Ở dưới góc dưới trái á
+
+152
+00:06:42,420 --> 00:06:43,680
+Thì em cao để là hiện
+
+153
+00:06:43,680 --> 00:06:46,060
+Đúng 1 tháng là sẽ reset nha
+
+154
+00:06:46,060 --> 00:06:49,250
+Thì đúng một tháng thì nó sẽ reset credit của mọi người về 0 nha
+
+155
+00:06:49,250 --> 00:06:54,120
+Cho dù mọi người là dùng vẫn còn credit thì nó vẫn reset về 0 nha mọi người
+
+156
+00:06:54,120 --> 00:06:57,210
+Cái này thì cơ chế nó giống như Tool 11 Lab của em ấy
+
+157
+00:06:57,210 --> 00:07:02,000
+Thì nói chung cứ đúng tới ngày hết hạn thì nó sẽ reset ra credit về 0 nha mọi người
+
+158
+00:07:02,000 --> 00:07:05,480
+Thì mọi người muốn dùng tiếp thì mọi người liên hệ em em gia hạn thôi
+
+159
+00:07:05,480 --> 00:07:10,960
+Còn gói vĩnh viễn thì mọi người sẽ được login vĩnh viễn và không bị trừ credit theo tháng hay là như nào kìa nha
+
+160
+00:07:10,960 --> 00:07:13,280
+Khi nào mà mọi người dùng hết thì nó mới hết thôi
+
+161
+00:07:13,280 --> 00:07:15,440
+Thì khi mà hết rồi thì mọi người liên hệ em
+
+162
+00:07:15,440 --> 00:07:17,150
+Em hỗ trợ em nạp cho mọi người
+
+163
+00:07:17,150 --> 00:07:19,130
+Chứ không cần phải là tự mua nha
+
+164
+00:07:19,130 --> 00:07:21,560
+Thì nói chung nó khác biệt ở những chỗ đó nha mọi người

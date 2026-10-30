@@ -1,0 +1,80 @@
+{
+  "sku": "VIDEO-e91589",
+  "title": "16 triệu/ 1 ngày - Doanh thu kênh thị trường Nhật, làm nhân bản thị trường",
+  "actual_topic": "Chiến Lược Nhân Bản Thị Trường Nhật Bản: RPM Khủng 108k-113k (~4-5$), 1 Video Đạt 33 Triệu VNĐ Sau 300k View & Công Thức Tối Ưu Thời Lượng",
+  "category_group": "chien_luoc",
+  "niche_primary": "Động vật hoang dã & Phim tài liệu AI",
+  "niche_id": "market-replication-japan",
+  "target_market": "Nhật Bản / Việt Nam",
+  "market_code": "JP,VN",
+  "key_takeaways": [
+    "Đây là kênh của một thành viên gói Pro, mới bật kiếm tiền, làm thị trường Nhật Bản theo hướng nhân bản thị trường từ Việt sang Nhật như đã hướng dẫn trong các video Pro; tác giả quay chiều 14/6 khi YouTube chưa cập nhật doanh thu từ ngày 12.",
+    "Trước đây doanh thu kênh lẹt đẹt, chỉ hơn 1 triệu đồng, nhưng nhờ nhân bản đúng ngách mà view nổ, có một ngày hơn 16 triệu đồng.",
+    "RPM của kênh bên Nhật là 108.000 đồng trên 1.000 lượt xem, tương đương trung bình khoảng 4 đô.",
+    "Một video hơn 300k view (ngày 11 mới hơn 200k) đang có doanh thu hơn 33 triệu đồng, chưa cập nhật ngày 12 và 13, RPM riêng của video là 113.000 đồng.",
+    "Thời gian xem trung bình của dạng chủ đề này chỉ khoảng 6 đến 7 phút; nếu làm video dài khoảng 1 giờ, giữ chân trên 10 hoặc 20 phút thì RPM sẽ gấp đôi, và nhân bản thị trường áp dụng được giữa mọi thị trường như Hàn sang Nhật, Nhật sang Hàn, Hàn sang US, US sang Nhật."
+  ],
+  "edit_sop": {
+    "primary": "Nhân bản thị trường từ Việt sang Nhật, ví dụ kênh thực tế của hội viên gói Pro",
+    "additional": [
+      "Làm theo hướng nhân bản thị trường và đúng ngách thì kênh nổ view, có ngày hơn 16 triệu",
+      "Làm chủ đề thời lượng dài, giữ chân trên 10 phút hoặc 20 phút thì RPM sẽ cao hơn nhiều",
+      "Có thể nhân bản giữa mọi thị trường như Hàn sang Nhật, Nhật sang Hàn, Hàn sang US, US sang Nhật"
+    ]
+  },
+  "avoid_flags": [
+    "Tránh làm các video có thời lượng quá ngắn khiến thời gian xem trung bình thấp làm giảm doanh thu trên mỗi nghìn lượt xem tại thị trường Nhật Bản",
+    "Không nên bó hẹp ở một thị trường nội địa có doanh thu thấp mà cần chủ động nhân bản những ngách đã thành công sang các thị trường ngoại có giá trị cao"
+  ],
+  "tools_mentioned": [],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Kênh học viên Pro thị trường Nhật mới bật kiếm tiền, nhân bản thị trường từ Việt sang Nhật"
+    },
+    {
+      "time": "00:20",
+      "seconds": 20,
+      "label": "Quay chiều 14/6; YouTube chưa cập nhật doanh thu từ ngày 12"
+    },
+    {
+      "time": "00:42",
+      "seconds": 42,
+      "label": "Trước đó chỉ hơn 1 triệu mỗi ngày; nhân bản đúng ngách thì nổ view, một ngày hơn 16 triệu"
+    },
+    {
+      "time": "00:53",
+      "seconds": 53,
+      "label": "RPM thị trường Nhật khoảng 108.000đ (~4 đô) trên 1.000 lượt xem"
+    },
+    {
+      "time": "01:12",
+      "seconds": 72,
+      "label": "Một video thực tế: hơn 300k view, hơn 33 triệu chưa cập nhật hết, RPM 113.000đ"
+    },
+    {
+      "time": "02:08",
+      "seconds": 128,
+      "label": "Video dài khoảng 1 giờ giữ chân trên 10-20 phút thì RPM còn cao hơn nữa"
+    },
+    {
+      "time": "03:09",
+      "seconds": 189,
+      "label": "Nhân bản thị trường làm được mọi cặp thị trường (Hàn, Nhật, US...)"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-e91589/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Làm theo hướng nhân bản thị trường và đúng ngách thì kênh nổ view, có ngày hơn 16 triệu",
+    "Làm chủ đề thời lượng dài, giữ chân trên 10 phút hoặc 20 phút thì RPM sẽ cao hơn nhiều",
+    "Có thể nhân bản giữa mọi thị trường như Hàn sang Nhật, Nhật sang Hàn, Hàn sang US, US sang Nhật"
+  ]
+}

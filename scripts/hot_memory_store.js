@@ -55,6 +55,7 @@ let _h2devBySkuLower = new Map();
 let _videoRecordBySkuLower = new Map(); // { track, video }
 let _insightsBySkuLower = new Map();
 let _singleInsightCache = new Map(); // skuLower -> { stamp, data }
+let _singleTranscriptCache = new Map(); // skuLower -> { stamp, data }
 let _modulesByTrack = { h2dev: [], huan: [], dgmd: [] };
 let _routeByTrack = { h2dev: [], huan: [], dgmd: [] };
 
@@ -334,6 +335,7 @@ function reloadHotStore() {
   }
   _insightsBySkuLower = nextInsightsMap;
   _singleInsightCache.clear();
+  _singleTranscriptCache.clear();
 
   // 4. Build Kenh Handle Set & Dead Channels List
   const kenhRaw = normalizeArray(readJsonSafe('data-tabs/kenh-mau.json', []));
@@ -661,6 +663,7 @@ function getOverviewSummary() {
 function getInsightForSku(resolvedSku) {
   if (!resolvedSku) return null;
   const skuKey = String(resolvedSku).trim().toLowerCase();
+  const ramIns = _insightsBySkuLower.get(skuKey) || null;
   const relPath = `video/${resolvedSku}/insight.json`;
   const curStamp = getFileStamp(relPath);
   if (curStamp !== '0:0') {
@@ -668,7 +671,7 @@ function getInsightForSku(resolvedSku) {
     if (cached && cached.stamp === curStamp) {
       _singleInsightCache.delete(skuKey);
       _singleInsightCache.set(skuKey, cached);
-      return cached.data;
+      return ramIns ? Object.assign({}, cached.data, ramIns) : cached.data;
     }
     const diskIns = readJsonSafe(relPath, null, false);
     if (diskIns) {
@@ -678,10 +681,36 @@ function getInsightForSku(resolvedSku) {
         _singleInsightCache.delete(oldestKey);
       }
       _singleInsightCache.set(skuKey, { stamp: curStamp, data: diskIns });
-      return diskIns;
+      return ramIns ? Object.assign({}, diskIns, ramIns) : diskIns;
     }
   }
-  return _insightsBySkuLower.get(skuKey) || null;
+  return ramIns;
+}
+
+function getTranscriptForSku(resolvedSku) {
+  if (!resolvedSku) return null;
+  const skuKey = String(resolvedSku).trim().toLowerCase();
+  const relPath = `video/${resolvedSku}/transcript.json`;
+  const curStamp = getFileStamp(relPath);
+  if (curStamp !== '0:0') {
+    const cached = _singleTranscriptCache.get(skuKey);
+    if (cached && cached.stamp === curStamp) {
+      _singleTranscriptCache.delete(skuKey);
+      _singleTranscriptCache.set(skuKey, cached);
+      return cached.data;
+    }
+    const diskTr = readJsonSafe(relPath, null, false);
+    if (diskTr) {
+      while (_singleTranscriptCache.size >= MAX_SINGLE_INSIGHT_CACHE) {
+        const oldestKey = _singleTranscriptCache.keys().next().value;
+        if (oldestKey === undefined) break;
+        _singleTranscriptCache.delete(oldestKey);
+      }
+      _singleTranscriptCache.set(skuKey, { stamp: curStamp, data: diskTr });
+      return diskTr;
+    }
+  }
+  return null;
 }
 
 function getPlayerBootstrap(sku) {
@@ -719,6 +748,7 @@ function getPlayerBootstrap(sku) {
   }
 
   const insight = getInsightForSku(resolvedSku);
+  const transcript = getTranscriptForSku(resolvedSku);
 
   // Merge video.docs with any additional docs in tai-lieu-full.json for this SKU
   const videoDocs = Array.isArray(video.docs) ? video.docs : [];
@@ -770,6 +800,7 @@ function getPlayerBootstrap(sku) {
     prevVideo: prevEntry ? prevEntry.item : null,
     nextVideo: nextEntry ? nextEntry.item : null,
     insight,
+    transcript,
     docs: mergedDocs,
     reup,
     deadChannels: relevantDeadChannels

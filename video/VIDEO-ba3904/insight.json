@@ -1,0 +1,77 @@
+{
+  "sku": "VIDEO-ba3904",
+  "title": "Hướng dẫn tham gia cộng đồng VIP riêng tư – Giao lưu, trao đổi và hỗ trợ YouTube H2Dev",
+  "actual_topic": "Hướng Dẫn Tham Gia & Quy Định Group Facebook VIP H2DEV Pro",
+  "category_group": "cong_dong",
+  "niche_primary": "Cộng đồng & Hỗ trợ VIP",
+  "niche_id": "onboarding-vip",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Video hướng dẫn tham gia group Facebook cộng đồng giao lưu hỗ trợ làm YouTube do tác giả mới tạo, bấm vào link trong phần mô tả video rồi bấm tham gia nhóm, cả trên máy tính lẫn điện thoại.",
+    "Bắt buộc trả lời câu hỏi tham gia bằng cách vào web, bấm vào email của mình, sao chép mã khách hàng (mã học viên) rồi dán vào, sau đó đồng ý các quy tắc của nhóm để tác giả duyệt.",
+    "Tác giả lập group Facebook vì chat Zalo bị trôi tin nhắn, còn đăng bài trên group thì mọi người xem lại và tìm lại được, đồng thời các thành viên cũng trao đổi với nhau, trong đó có nhiều người đã làm lâu chứ không phải người mới.",
+    "Group để riêng tư, chỉ dành cho học viên đã mua gói, và tác giả cảnh báo nhóm dễ bị scam nên cấm đăng bán các tài khoản dùng chung hay sản phẩm giá rẻ, ai vi phạm sẽ bị kick vĩnh viễn.",
+    "Những ngày đầu tác giả duyệt thành viên hơi chậm vì phải kiểm tra mã học viên và còn bận làm kênh, nên sẽ đợi đông đủ rồi duyệt một lần."
+  ],
+  "edit_sop": {
+    "primary": "Hướng dẫn tham gia group Facebook riêng tư giao lưu hỗ trợ làm YouTube và các quy định của group",
+    "additional": [
+      "Bấm link trong phần mô tả video để chuyển sang group Facebook, rồi bấm tham gia nhóm",
+      "Bắt buộc trả lời câu hỏi tham gia: sao chép mã học viên (lấy từ email trên web) rồi dán vào ô trả lời",
+      "Đồng ý các quy tắc của group rồi chờ tác giả duyệt, những ngày đầu duyệt hơi lâu",
+      "Trên điện thoại cũng làm tương tự: bấm link trong mô tả, chuyển qua Facebook và bấm tham gia"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng đen, đừng nhận bán sản phẩm giá rẻ như tài khoản ChatGPT, vi phạm sẽ bị kick khỏi nhóm",
+    "Ai đăng tài khoản để bán, lừa đảo sẽ bị kick vĩnh viễn",
+    "Giao lưu mua bán tài khoản dùng chung với nhau thì phải cực kỳ cẩn thận vì dễ bị scam"
+  ],
+  "tools_mentioned": [
+    "Facebook",
+    "ChatGPT",
+    "Zalo"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu Group Facebook VIP hỗ trợ học viên"
+    },
+    {
+      "time": "00:35",
+      "seconds": 35,
+      "label": "Hướng dẫn lấy Mã khách hàng trên web để duyệt vào nhóm"
+    },
+    {
+      "time": "01:46",
+      "seconds": 106,
+      "label": "Cảnh báo phòng tránh lừa đảo, scam & Nội quy nhóm"
+    },
+    {
+      "time": "02:49",
+      "seconds": 169,
+      "label": "Lợi ích giao lưu, hỏi đáp và cập nhật thuật toán"
+    },
+    {
+      "time": "04:01",
+      "seconds": 241,
+      "label": "Tổng kết và lưu ý quan trọng khi tham gia"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-ba3904/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Bấm link trong phần mô tả video để chuyển sang group Facebook, rồi bấm tham gia nhóm",
+    "Bắt buộc trả lời câu hỏi tham gia: sao chép mã học viên (lấy từ email trên web) rồi dán vào ô trả lời",
+    "Đồng ý các quy tắc của group rồi chờ tác giả duyệt, những ngày đầu duyệt hơi lâu",
+    "Trên điện thoại cũng làm tương tự: bấm link trong mô tả, chuyển qua Facebook và bấm tham gia"
+  ]
+}

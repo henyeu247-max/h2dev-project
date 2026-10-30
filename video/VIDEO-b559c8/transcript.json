@@ -1,0 +1,49 @@
+{
+  "sku": "VIDEO-b559c8",
+  "duration": 1461.733333,
+  "language": "Vietnamese",
+  "full_text": "Rồi, tiếp tới là cái video này sẽ hướng dẫn cho mọi người cách làm ra cái thumbnail của cái key người que đấy nha. Cái prompt này thì em cũng đã có chia sẻ ở trên kênh YouTube của em rồi. Có gì em sẽ để lại ở trong cái file trong cái thư mục này cho mọi người luôn nha. Đấy, bây giờ thì mọi người cứ làm theo hướng dẫn là được nha.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 5.0,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:05,000",
+      "text": "Rồi, tiếp tới là cái video này sẽ hướng dẫn cho mọi người cách"
+    },
+    {
+      "id": 2,
+      "start": 5.0,
+      "end": 9.0,
+      "start_time": "00:00:05,000",
+      "end_time": "00:00:09,000",
+      "text": "làm ra cái thumbnail của cái key người que đấy nha."
+    },
+    {
+      "id": 3,
+      "start": 9.0,
+      "end": 14.0,
+      "start_time": "00:00:09,000",
+      "end_time": "00:00:14,000",
+      "text": "Cái prompt này thì em cũng đã có chia sẻ ở trên kênh YouTube của em rồi."
+    },
+    {
+      "id": 4,
+      "start": 14.0,
+      "end": 19.0,
+      "start_time": "00:00:14,000",
+      "end_time": "00:00:19,000",
+      "text": "Có gì em sẽ để lại ở trong cái file trong cái thư mục này cho mọi người luôn nha."
+    },
+    {
+      "id": 5,
+      "start": 19.0,
+      "end": 22.5,
+      "start_time": "00:00:19,000",
+      "end_time": "00:00:22,500",
+      "text": "Đấy, bây giờ thì mọi người cứ làm theo hướng dẫn là được nha."
+    }
+  ],
+  "total_segments": 5
+}

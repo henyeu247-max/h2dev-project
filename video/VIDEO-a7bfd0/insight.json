@@ -1,0 +1,80 @@
+{
+  "sku": "VIDEO-a7bfd0",
+  "title": "Update ngách mới và khám kênh + giải thích một số lỗi tránh bị 0 view, lẹt đẹt, không lên được",
+  "actual_topic": "Phân tích ngách Tôn giáo Hàn Quốc (@은밀한응답), Thói quen ăn rau sống thọ (@장수채소습관) & Giải pháp trị dứt điểm lỗi kênh 0 view, lẹt đẹt",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Khám Kênh & Khắc Phục Lỗi 0 View",
+  "niche_id": "channel-audit-fix",
+  "target_market": "Hàn Quốc / Việt Nam",
+  "market_code": "KR,VN",
+  "key_takeaways": [
+    "Tác giả mở đầu bằng một kênh tâm linh về Chúa ở thị trường Hàn Quốc (@은밀한응답) mới khoảng 4 video, video đầu một tháng trước hơn bảy trăm view, đang bật kiếm tiền, mỗi video dài trung bình 30 đến 40 phút (ví dụ 39 phút).",
+    "Về kênh bị quét, tác giả cho rằng YouTube hiện nhẹ hơn lúc trước, và nguyên nhân chính là Gmail của kênh mua về bị ảnh hưởng, hoặc nội dung kịch bản giật tít, câu view, không đúng sự thật.",
+    "Tác giả bảo làm cho sạch, đọc lại và dịch lại kịch bản, đồng thời phải làm thực tế thì mới rút ra được kinh nghiệm chứ đừng FOMO từ ngách này sang ngách khác.",
+    "Kênh sức khỏe của một người trong nhóm mới có 9 video, video đầu 8 ngày trước nổ view; tác giả nói thường phải 10 đến 15 video kênh mới bắt đầu phát, và ví dụ một kênh có video chỉ 2 view, 4 view, 12 view nhưng sau đó có video 19k view và 17k view với tiêu đề về bài tập một phút mỗi ngày cải thiện trí nhớ.",
+    "Sai lầm là làm tạp nhiều ngách khác nhau, đúng ra phải bám vào video đã nổ view và làm theo nhu cầu của khán giả chứ không theo sở thích của mình, vì không thì YouTube không đánh giá được kênh làm về gì."
+  ],
+  "edit_sop": {
+    "primary": "Chọn đúng ngách nhỏ và bám video cao view; giải thích lỗi khiến kênh lẹt đẹp hoặc bị quét",
+    "additional": [
+      "Edit đơn giản: ghép nhân vật, video tự nhiên và hình minh họa, thêm phụ đề; quan trọng nhất là kịch bản",
+      "Có video nổ view thì bám theo từ khóa, ngách của video đó và làm thật nhiều video",
+      "Đặt tiêu đề có yếu tố cảnh báo gây FOMO để người xem bấm",
+      "Kênh mới thường cần 10 đến 15 video mới bắt đầu lên, làm từ từ",
+      "Làm theo nhu cầu của khán giả kênh, không theo sở thích của mình"
+    ]
+  },
+  "avoid_flags": [
+    "Không giật tít câu view sai sự thật vì sẽ bị quét",
+    "Kênh mua về mà lọc vào máy thì Gmail có thể bị ảnh hưởng và bị quét hàng loạt",
+    "Không làm tạp nhiều ngách, YouTube sẽ không phân bổ được khán giả",
+    "Không FOMO nhảy từ ngách này sang ngách khác"
+  ],
+  "tools_mentioned": [
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@은밀한응답",
+    "@장수채소습관"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân tích kênh tôn giáo Hàn Quốc @은밀한응답 và nguồn thu hội viên"
+    },
+    {
+      "time": "02:29",
+      "seconds": 149,
+      "label": "Khám phá ngách ăn rau trường thọ @장수채소습관"
+    },
+    {
+      "time": "04:50",
+      "seconds": 290,
+      "label": "Khám kênh thực tế của học viên VIP Pro ngách sức khỏe 9 video"
+    },
+    {
+      "time": "07:15",
+      "seconds": 435,
+      "label": "Chỉ ra các lỗi chí mạng khiến kênh bị lẹt đẹt và cách khắc phục"
+    },
+    {
+      "time": "09:30",
+      "seconds": 570,
+      "label": "Tầm quan trọng của thumbnail tương phản cao trên giao diện mobile"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-a7bfd0/transcript.txt",
+  "sop_steps": [
+    "Edit đơn giản: ghép nhân vật, video tự nhiên và hình minh họa, thêm phụ đề; quan trọng nhất là kịch bản",
+    "Có video nổ view thì bám theo từ khóa, ngách của video đó và làm thật nhiều video",
+    "Đặt tiêu đề có yếu tố cảnh báo gây FOMO để người xem bấm",
+    "Kênh mới thường cần 10 đến 15 video mới bắt đầu lên, làm từ từ",
+    "Làm theo nhu cầu của khán giả kênh, không theo sở thích của mình"
+  ]
+}

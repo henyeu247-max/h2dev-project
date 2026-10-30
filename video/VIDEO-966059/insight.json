@@ -1,0 +1,117 @@
+{
+  "sku": "VIDEO-966059",
+  "title": "từ khóaA 2025",
+  "Summary": "Phân tích chuyên sâu Báo cáo Minh bạch YouTube Quý 3/2025 (chấm dứt 7,46 triệu kênh — gấp 3,5 lần Quý 2, trong đó 93% do Spam/Lừa đảo tài chính tại Đông Nam Á và lạm dụng AI tạo trailer phim giả mạo khiến các kênh lớn như Screen Culture, KH Studio bị xóa sổ), hướng dẫn thực hành công cụ Google NotebookLM (Deep Research 42 nguồn tài liệu, xuất Infographic, Mindmap, Slide trình chiếu không lỗi font tiếng Việt và Podcast đối thoại 2 người), giải bài toán hạ tầng IP sạch (bỏ GPM Login + proxy rẻ tiền sang dùng VPS Amazon/VPS sạch) và giải mã 2 từ khóa sống còn của năm 2025: 'Slop' (AI Slop — nội dung rác sản xuất hàng loạt) và 'Context' (Content is King, Context is God — bối cảnh quyết định giá trị nội dung).",
+  "tools_mentioned": [
+    "NotebookLM",
+    "ChatGPT",
+    "GPM Login",
+    "Amazon"
+  ],
+  "channels_mentioned": [
+    "@Web5ngay",
+    "@ScreenCultureOfficial",
+    "@KHStudio"
+  ],
+  "course_docs": [
+    {
+      "title": "1. GODA — Quy Trình Triển Khai Kênh YouTube Chuẩn 2025",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/1._GODA_-_QUY_TRINH_TRIEN_KHAI_KENH.pdf",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/1._GODA_-_QUY_TRINH_TRIEN_KHAI_KENH.pdf.md",
+      "link": "https://drive.google.com/file/d/1Oez2iFNDTxAt-oWznLzKXLbj_AaJgtPs/view"
+    },
+    {
+      "title": "SEO YouTube Checklist — Bảng Kiểm Tối Ưu Hóa Kênh & Video Toàn Diện",
+      "file": "assets/docs-huan/SEO_Youtube_Checklist_.xlsx",
+      "readFile": "assets/docs-huan/SEO_Youtube_Checklist_.xlsx.md",
+      "link": "https://drive.google.com/file/d/1KbRWbYoNXTNduMPsTuN42CyEfl0QQWfP/view"
+    },
+    {
+      "title": "Content Mẫu GODA Story — Khung Kịch Bản Có Context & Chiều Sâu 2025",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/Content_Mau_GODA_Story.docx",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/Content_Mau_GODA_Story.docx.md",
+      "link": "https://drive.google.com/file/d/1Oez2iFNDTxAt-oWznLzKXLbj_AaJgtPs/view"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:56",
+      "label": "Báo cáo minh bạch YouTube Quý 3/2025: Hơn 7 triệu kênh bị chấm dứt (tăng 3,5 lần so với Quý 2) và chiến dịch truy quét tâm điểm tại khu vực Đông Nam Á",
+      "seconds": 56
+    },
+    {
+      "time": "03:50",
+      "label": "Hướng dẫn sử dụng công cụ NotebookLM của Google để Deep Research hàng trăm nguồn tài liệu, tạo bản đồ tư duy, slide minh họa và tổng quan âm thanh/video",
+      "seconds": 230
+    },
+    {
+      "time": "20:44",
+      "label": "Thực hành tính năng Audio Overview (Podcast đối thoại 2 người) và Video/Slide minh họa không lỗi font tiếng Việt trên NotebookLM từ 42 nguồn dữ liệu",
+      "seconds": 1244
+    },
+    {
+      "time": "36:37",
+      "label": "Phân tích chiến dịch YouTube & Disney xóa sổ các kênh trailer phim AI giả mạo (Screen Culture, KH Studio với hơn 2 triệu sub và 1 tỷ view) và lỗi thao túng tương tác",
+      "seconds": 2197
+    },
+    {
+      "time": "41:52",
+      "label": "Bài toán hạ tầng IP vùng quét Đông Nam Á: Lý do loại bỏ GPM Login kèm proxy rẻ tiền và chuyển sang dùng VPS Amazon hoặc VPS sạch cấu hình sẵn",
+      "seconds": 2512
+    },
+    {
+      "time": "46:55",
+      "label": "từ khóa số 1 của năm 2025 — 'Slop' (AI Slop / Content Slop): Định nghĩa nội dung rác sản xuất hàng loạt bằng AI và làn sóng dùng AI diệt AI của YouTube",
+      "seconds": 2815
+    },
+    {
+      "time": "51:20",
+      "label": "3 trụ cột tạo tín hiệu chất lượng chống Slop (Giá trị gốc, Biên tập thật, Tính nhất quán) và quy trình 6 bước sản xuất bằng AI lấy Human Insight làm gốc",
+      "seconds": 3080
+    },
+    {
+      "time": "55:20",
+      "label": "10 dấu hiệu cảnh báo sớm kênh đang trượt sang Slop và từ khóa số 2 của năm 2025 — 'Context' (Content is King, Context is God: Bối cảnh quyết định nội dung)",
+      "seconds": 3320
+    }
+  ],
+  "key_takeaways": [
+    "Số liệu chấn động từ Báo cáo Minh bạch YouTube năm 2025: Quý 1 và Quý 2 xóa hàng triệu kênh, sang Quý 3 vọt lên hơn 7 triệu kênh bị chấm dứt (gấp 3,5 lần Quý 2), trong đó 93% do Spam/Lừa đảo tài chính tại Đông Nam Á cùng hàng trăm nghìn kênh vi phạm an toàn trẻ em, khiêu dâm và xóa sổ cả những kênh AI lớn như Screen Culture, KH Studio",
+    "Google NotebookLM là siêu công cụ nghiên cứu & sản xuất nội dung miễn phí mạnh nhất hiện nay: cho phép nạp tới 300 nguồn (hoặc tự động Deep Research 42+ nguồn web/YouTube) để xuất ra Bản đồ tư duy (Mindmap), Bảng dữ liệu, Bản đồ họa thông tin (Infographic), Bản trình bày (Slide PDF không lỗi font tiếng Việt) và Podcast đối thoại 2 người (Audio Overview)",
+    "Đông Nam Á nằm trong vùng tâm chấn quét gian lận của Google năm 2025: tuyệt đối ngừng quản lý dàn kênh bằng GPM Login kèm proxy rẻ tiền (vốn bị dùng chung với các mạng lưới spam), phải chuyển sang dùng VPS sạch (như VPS Amazon 1 kênh/1 máy ảo độc lập)",
+    "từ khóa của năm 2025 do từ điển Merriam-Webster bình chọn là 'Slop' (AI Slop — nội dung rác phẩm chất thấp do AI đẻ hàng loạt): muốn vượt qua bộ lọc dùng AI diệt AI của YouTube, kênh phải hội tụ 3 tín hiệu chất lượng gồm Giá trị gốc (Original Value), Biên tập thật (Human Editing) và Tính nhất quán (Consistency)",
+    "từ khóa chiến lược thứ hai là 'Context' (Bối cảnh — Content is King, Context is God): cùng một chủ đề nhưng video Slop chỉ nói chung chung cho tất cả mọi người, còn video có Context luôn xác định rõ đối tượng cụ thể, hoàn cảnh cụ thể, dữ liệu kiểm chứng và giúp người xem ra quyết định hành động"
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước ứng dụng NotebookLM và khung chuyển hóa Slop sang Context để sản xuất nội dung YouTube chất lượng cao chuẩn 2025",
+    "additional": [
+      "Chuẩn hóa hạ tầng đăng tải an toàn trước khi vận hành: loại bỏ trình duyệt anti-detect kèm proxy giá rẻ tại vùng Đông Nam Á, chuyển toàn bộ kênh quan trọng sang VPS sạch độc lập (như VPS Amazon)",
+      "Sử dụng tính năng Deep Research trên Google NotebookLM (hoặc nạp link video mẫu từ các kênh uy tín như Web5ngay) để tổng hợp 40+ nguồn tài liệu xác thực, trích xuất Bảng dữ liệu và Bản đồ tư duy",
+      "Khai thác bộ công cụ Studio của NotebookLM để tạo Infographic, bộ Slide trình chiếu tiếng Việt chuẩn phông chữ và file Audio Overview (Podcast đối thoại 2 người) làm nguồn học liệu hoặc nguyên liệu B-roll giá trị cao",
+      "Áp dụng quy trình 6 bước sản xuất AI chống Slop: (1) Con người chọn Insight & luận điểm gốc -> (2) AI hỗ trợ nghiên cứu & mở rộng cấu trúc -> (3) Con người biên tập lại câu chữ -> (4) Tạo voice/visual có nhịp điệu riêng -> (5) Dựng hậu kỳ có dấu ấn biên tập -> (6) Kiểm định bằng 10 câu hỏi cảnh báo Slop",
+      "Chuyển hóa mọi ý tưởng chung chung thành nội dung có Context (Before -> After): gắn rõ bối cảnh đối tượng mục tiêu, tình huống thực tế, số liệu dẫn chứng và hướng dẫn ra quyết định cụ thể"
+    ]
+  },
+  "sop_steps": [
+    "Chuẩn hóa hạ tầng đăng tải an toàn trước khi vận hành: loại bỏ trình duyệt anti-detect kèm proxy giá rẻ tại vùng Đông Nam Á, chuyển toàn bộ kênh quan trọng sang VPS sạch độc lập (như VPS Amazon)",
+    "Sử dụng tính năng Deep Research trên Google NotebookLM (hoặc nạp link video mẫu từ các kênh uy tín như Web5ngay) để tổng hợp 40+ nguồn tài liệu xác thực, trích xuất Bảng dữ liệu và Bản đồ tư duy",
+    "Khai thác bộ công cụ Studio của NotebookLM để tạo Infographic, bộ Slide trình chiếu tiếng Việt chuẩn phông chữ và file Audio Overview (Podcast đối thoại 2 người) làm nguồn học liệu hoặc nguyên liệu B-roll giá trị cao",
+    "Áp dụng quy trình 6 bước sản xuất AI chống Slop: (1) Con người chọn Insight & luận điểm gốc -> (2) AI hỗ trợ nghiên cứu & mở rộng cấu trúc -> (3) Con người biên tập lại câu chữ -> (4) Tạo voice/visual có nhịp điệu riêng -> (5) Dựng hậu kỳ có dấu ấn biên tập -> (6) Kiểm định bằng 10 câu hỏi cảnh báo Slop",
+    "Chuyển hóa mọi ý tưởng chung chung thành nội dung có Context (Before -> After): gắn rõ bối cảnh đối tượng mục tiêu, tình huống thực tế, số liệu dẫn chứng và hướng dẫn giúp người xem ra quyết định cụ thể"
+  ],
+  "avoid_flags": [
+    "Sử dụng GPM Login kèm proxy giá rẻ dùng chung tại khu vực Đông Nam Á khiến kênh sạch bị vạ lây và chết chùm theo các mạng lưới spam",
+    "Sản xuất nội dung kiểu AI Slop: giao trắng từ ý tưởng, kịch bản đến hình ảnh cho AI mà không có bất kỳ sự biên tập hay góc nhìn thực tế nào của con người",
+    "Làm giả trailer phim điện ảnh bằng AI (như Screen Culture, KH Studio) hoặc mua bán tương tác ảo, sub4sub vi phạm chính sách chống lừa dối",
+    "Đặt tiêu đề và viết kịch bản chung chung không có Context (ví dụ 'Cách làm YouTube kiếm tiền hiệu quả 2025') khiến video rơi vào nhóm rác thông tin"
+  ],
+  "source_transcript": "video/VIDEO-966059/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "actual_topic": "Giải mã hai từ khóa cốt lõi của YouTube năm 2025 là 'Slop' (AI Slop - nội dung AI sản xuất hàng loạt kém chất lượng khiến 7 triệu kênh bị xóa trong Quý 3/2025) và 'Context' (Content is King, Context is God), kèm hướng dẫn thực hành công cụ NotebookLM và quy trình 6 bước chống Slop.",
+  "category_group": "he_thong",
+  "niche_primary": "Chiến lược Chống AI Slop, Xây dựng Context & Ứng dụng NotebookLM",
+  "niche_id": "he_thong_youtube",
+  "target_market": "Việt Nam",
+  "market_code": "VN"
+}

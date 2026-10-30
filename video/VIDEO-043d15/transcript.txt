@@ -1,0 +1,305 @@
+Em chào tất cả mấy bác nha. Thì như video hôm trước update ngách nhỏ thị trường Hàn ngày 29 tháng 9 nè thì em có nói là em
+sẽ làm thêm một video riêng để hướng dẫn lại train form của cái ngách riêng cái ngách nhỏ này luôn. Thì hôm nay em sẽ làm cho mọi người.
+Và thật ra thì tất cả mấy bác cũng đều tự làm được hết rồi bởi vì em đã có hướng dẫn hết ở trong mục Module hướng dẫn quy trình dùng Claude nè.
+Và cái mục Module 3 này là em đã hướng dẫn train form hết rồi, thì mấy bác có thể xem chỗ đó rồi làm những cái ngách khác nữa nha.
+Cái này thì trước giờ em có nói rất là nhiều lần rồi.
+Mục Module 3 này thì lúc trước em hướng dẫn dùng con ChatGPT á, còn cái mục hướng dẫn quy trình dùng Claude này thì là em hướng dẫn trên con Claude.
+Đấy, con Claude AI á mọi người.
+Đấy bởi vì nay nó là theo em nha.
+Đối với em là nay con Claude AI là xịn và ngon nhất rồi mọi người ạ.
+Em ít có dùng ChatGPT nữa.
+ChatGPT thì em dùng để tạo ảnh thôi.
+Quay lại vấn đề chính thì ok 2 kênh đối thủ này hôm trước em cũng có show cho mọi người thấy rồi đúng không?
+Thì em cũng có lọc thêm một kênh nữa.
+Đây, kênh này thì tí nữa em nói sau nha mọi người.
+Nó cũng cùng là cái ngách thực phẩm luôn á.
+Rồi ok bây giờ đối với kênh đầu tiên thì bấm vào mục Phổ biến nè. Vẫn như quy trình trước giờ em hướng dẫn thôi, mọi người copy toàn bộ cái thông tin của kênh này nha.
+Đấy như em là bôi đen tất cả, rồi dán vào con Claude AI. Quay lại tiếp tục em copy dán tiếp cái kênh thứ 2 nha.
+Đấy mấy bác lọc ra bao nhiêu kênh đối thủ thì mấy bác dán vào. Thì em khuyên là nên tầm là 2 đến 3 kênh nha, 3 kênh là ok nhất để cho nó có dữ liệu thông tin để nó phân tích và nó học nha mọi người.
+Rồi tiếp theo là kênh thứ 3 này.
+Thì kênh này á thì em thấy cái key á thì nó ok nó giống rồi, nhưng mà đi sâu vào trong cái ngách nhỏ thì là nó khác nha mọi người.
+Bởi vì 2 kênh đầu này á, 2 kênh mà hôm bữa trước em share cho mọi người rồi á thì nó nói về chủ yếu là dạng táo, cà rốt nè.
+Còn đối với riêng kênh này á thì nó lại đi riêng sang một cái hướng khác, gọi là...
+Mấy bác đọc tiêu đề những video cao view của nó thì mấy bác thấy là cái dạng kiểu như là hành tây hoặc là đậu xanh này kia nè mọi người.
+Đấy thì mấy bác có thể tham khảo thêm kênh này nha.
+Nó cũng riêng về một cái ngách riêng nhỏ khác nữa chứ không giống 2 kênh kia đâu.
+Thì đương nhiên là nói về cái key chung thì nó là key sức khỏe thực phẩm thôi, nhưng mà đi sâu vào là một cái ngách làm về những cái loại thực phẩm khác nha,
+về những cái món ăn khác. Đấy thì em phân tích như vậy. Rồi riêng kênh này thì em không train và em để ở đây, và em sẽ để mô tả thêm cho mọi người có thể tham khảo nha.
+Em chỉ cho con Claude nó học 2 cái kênh đầu tiên này thôi. Đấy bởi vì nó cùng một cái dạng, cùng một hướng luôn.
+Sau khi mà đã copy 2 cái dữ liệu của kênh đối thủ rồi, tiếp theo thì em nhập một cái câu lệnh như này:
+"Đây là kênh đối thủ và tôi đang có định hướng sắp tới sẽ làm về chủ đề ngách này. Trước tiên
+bạn hãy phân tích và học thật kỹ 2 kênh này. Phân tích làm về chủ đề ngách gì, từ khóa chính,
+từ khóa phụ và từ khóa ngách, tiêu đề như nào đấy, rồi viết kịch bản các kiểu, và nếu cần tôi cung cấp thêm
+kịch bản cao view nhất của các kênh đối thủ để học thêm thì bạn hãy nói, tôi sẽ cung cấp. Đấy, đầu tiên thì em sẽ cho nó phân tích và viết như vậy để cho nó học trước nha mọi người.
+Đấy, sau đó thì em sẽ tiếp tục...
+cung cấp thêm các kịch bản của những kịch bản cao view nhất của các kênh đối thủ để nó phân tích, bóc tách ra và nó làm tiếp nha mọi người.
+Đầu tiên đại loại là như thế thôi nha mọi người.
+Đấy để cho mình train nó từ từ từ từ để cho nó học qua và nó bóc tách dần dần nha.
+Chứ không thể nào mà train một lúc cùng lúc một lần ra liền được đâu nha.
+Mấy cái đoạn chờ nó generate ra như này thì em sẽ tua nhanh nha để tiết kiệm thời gian của mình nha mọi người.
+Sau một thời gian chờ đợi thì cuối cùng đã xong.
+Thì nó đã phân tích xong toàn bộ này, nó ra cho em rất là nhiều thứ nè.
+Đầu tiên thì nó sẽ quy chung lại 2 kênh này là làm về gì.
+Đó, thì nó phân tích ra rất là kỹ, nói chung mấy bác train thì mấy bác có thể đọc qua nha.
+Còn đây là em sẽ lướt nhanh qua thôi.
+Quan trọng là để cho mọi người hiểu được cái quy trình, cái quá trình làm như nào thôi.
+Đây, rất có thể 2 kênh cùng một ngách nè.
+Đương nhiên là cùng trường phái rồi,
+bởi vì nó chung một ngách nhỏ mà.
+Đấy nó nói về những cái từ khóa nè.
+Rồi tiếp tục ở dưới thứ 2 là ngách chính xác.
+Là không phải ngách sức khỏe chung chung,
+đấy, mà là điểm hợp của 3 trục.
+Có nghĩa là ngách sức khỏe là một cái ngách chung rất là lớn rồi.
+Đây là đi sâu vào một cái ngách nhỏ, cực kỳ nhỏ nha mọi người.
+Đấy kiểu là như vậy.
+Đấy, đây là những cái từ khóa nè:
+táo, cà rốt, mấy bác thấy không?
+Khoai tây nè.
+Đấy những từ khóa mà train
+ở trong những video của kênh này nè.
+Đấy nó phân tích ra rất rất là kỹ.
+Thì mọi người khi mà train á
+thì mọi người nhớ đọc để nắm được nha.
+Đấy đại loại là như thế thôi, và cái thứ 3 là các cái từ khóa này kia thôi.
+À nếu mà mấy bác dùng con Claude AI để làm này á thì em khuyên mọi người là nên nâng cấp gói Pro để làm nha.
+Để cho nó viết ngon và nói chung là nó thông minh, nó viết nó hỗ trợ mình. Chứ mấy bác mà dùng cái free á thì em nói thật
+là không có được gì đâu mọi người ạ. Em thì hiện tại đang dùng gói Max trước giờ rồi bởi vì em làm
+rất rất là nhiều thứ, rất nhiều kênh, nên là nhu cầu dùng rất là nhiều. Còn mấy bác mà dùng để làm
+sơ sơ, làm ít, làm một vài kênh, làm vài ba kênh thôi á thì chỉ cần gói Pro thôi là đủ rồi nha,
+dư sức nha. Tại cái này em thấy có một số bác người mới á thì cũng hơi thắc mắc nên là sẵn đây em nói luôn nha.
+Tiếp tục sau khi mà mình đã đọc qua hết được
+những cái phân tích của nó vừa cho ra rồi á,
+thì bước tiếp là nó yêu cầu mình là nếu được thì hãy cung cấp cho nó mô tả và thẻ tag của 2 kênh đối thủ này.
+Và tiếp theo là cung cấp với 4 cái kịch bản nó đưa ra này mọi người.
+Đấy 2 cái kịch bản cao view nhất của cả 2 kênh và những cái về cái 3, số 4 này.
+Thì mình nói chung mình cứ làm theo nó thôi.
+Em sẽ dùng cái web này để lấy kịch bản và cung cấp cho nó nha.
+Rồi đối với kênh đầu tiên thì em sẽ copy video cao view nhất này.
+Web này thì mấy bác là biết hết rồi đúng không?
+Em cũng sẽ để lại mô tả cho mọi người nha.
+Web này thì lấy kịch bản free thôi mọi người, không có gì hết.
+Và em sẽ tua nhanh cái đoạn này nha. Em sẽ lấy 4 cái kịch bản theo hướng dẫn yêu cầu của con Claude thôi.
+Em thì dùng cái Notepad hay là cái Notepad++ để lưu cái kịch bản thôi mọi người.
+Rồi ok thì em sẽ lấy hết đầy đủ 4 cái kịch bản của 4 cái video như nó yêu cầu nha.
+Và em sẽ cắt bỏ nhanh những cái đoạn lấy này cho video mình nó nhanh nha mấy bác.
+Cái này thì chỉ việc sao chép rồi qua web mình lấy thôi, không có gì hết.
+Rồi ok sau khi mà em đã lấy xong hết 4 cái kịch bản đó về rồi thì bước tiếp theo thì em sẽ tải lên thôi, đẩy 4 cái file đó lên.
+Rồi và tiếp tục là làm theo yêu cầu nó là lấy những cái thẻ tag của kênh cũng như là mô tả và thẻ tag video của 2 kênh đối thủ luôn nha.
+Kênh đầu tiên thì em sẽ copy cái thẻ tag video trước nè.
+Thẻ tag kênh chứ, đây là các cái thẻ tag kênh nha mọi người,
+em nói nhầm.
+Rồi tiếp theo thì em sẽ bấm vào video nè.
+Em copy full toàn bộ cái mô tả của kênh đối thủ luôn nha.
+Đấy thì nói chung em cho AI nó học tất cả các thứ luôn. Mình muốn mà chất lượng và chỉn chu, viết tốt nhất á thì mình phải cho nó học nhiều nhất của các kênh đối thủ nha mấy bác.
+Rồi em chú thích là mô tả video nè, rồi em dán vào.
+Tiếp theo là từ khóa thẻ video, thẻ tag video ấy.
+Ở trên này thì nó cũng có cái thẻ tag channel nè, thì mấy bác có thể vào đây lấy luôn.
+Còn lúc nãy thì em ở ngoài em đã copy trước rồi.
+Đây là cái thẻ từ khóa video thôi.
+Rồi xong kênh 1 nha. Bắt đầu kênh thứ 2 thì em chú thích là kênh 2.
+Mình ghi như vậy thôi là nó tự hiểu thôi mấy bác ạ.
+Qua kênh thứ 2 thì em cũng bấm vào video cao view nhất.
+Rồi kéo xuống em lấy cái thẻ tag kênh trước nha.
+Tiếp theo thì em chú thích là mô tả nè.
+Ghi mô tả thôi là cũng được rồi.
+Cái mô tả kênh này nó cũng khá giống với kênh đầu luôn á.
+Nói chung làm bán content mà, mình cứ ăn theo, học theo thôi mấy bác ạ.
+Rồi tiếp theo cái cuối cùng là em sẽ copy cái thẻ tag video nha.
+Rồi dán vào như này.
+Ok bây giờ thì em sẽ cho nó chạy luôn, không cần ghi thêm gì nữa nha.
+Chạy như này thì nó sẽ tự hiểu và nó sẽ generate ra cho em thôi.
+Và bây giờ đoạn này em sẽ tiếp tục em sẽ tua em bỏ qua cho nó nhanh nha.
+Sau khi chờ đợi tầm vài phút thì cuối cùng nó đã generate xong hết rồi.
+Đây là nó ra những cái thông số kỹ thuật mà nó đo được cả 2 kênh đối thủ nè.
+Mấy bác nói chung lúc mà mấy bác train qua thì mấy bác chắc chắn phải đọc qua để mình hiểu được cái ngách mình làm nó như nào nha.
+Ví dụ như hiện tại nó ra của em nó ra 2 cái trường phái nè.
+Kiểu A thì nó là dẫn dắt nỗi sợ, cái kiểu dạng kịch bản nó làm ấy.
+Còn kiểu B là câu đố, nguyên tắc và nhân vật.
+Mấy bác có thể đọc qua hết toàn bộ như này. Phần 4 là các cái SEO đi kèm là về mô tả, thẻ tag các thứ này.
+Thì cái này là khi mình gọi cái skill mình viết kịch bản thì nó ra kịch bản rồi nó sẽ kèm theo cái này cho mình để mình để trong video luôn nha.
+Cái này em train rất rất là cụ thể vào luôn.
+Để cho mình không phải làm thêm bước nào nữa. Tiết kiệm thời gian, khi mình viết kịch bản á thì nó sẽ ra đầy đủ luôn á mọi người.
+Cuối cùng là cái phần 5 thì nó khuyên mình nên làm gì và không nên làm gì thôi.
+Và cuối cùng thì nó sẽ sẵn sàng đóng gói toàn bộ thành skill kịch bản cho mình nè.
+Thì cái này hiện tại em chưa có cái tên kênh cũng như là cái brand keyword, cái này có nghĩa là từ khóa thương hiệu cho kênh của mình thôi.
+Và nó hỏi mình là dùng Voice là ElevenLabs hay là Clone, Minimax này, rất là cụ thể luôn, mấy bác thấy không?
+Thì bây giờ em sẽ trả lời cho nó nha.
+Nếu mà mấy bác đã có sẵn tên kênh và ý tưởng của tên kênh, từ khóa thương hiệu kênh của mấy bác rồi thì mấy bác cứ nhập vào thôi là ok.
+Còn hiện tại ví dụ như em chưa biết gì và chưa có cái gì cả thì em sẽ yêu cầu nó nha.
+Bây giờ còn một vấn đề nữa thì em phải train thêm cho nó mới được.
+Có nghĩa là khi mà viết kịch bản á thì chủ đề ở đâu ra và mình có bám theo đối thủ được không, kiểu vậy nha.
+Thì em sẽ yêu cầu train thêm để cho nó hiểu nha.
+"Trước khi tôi chốt nè, thì cho tôi hỏi
+output ra có gợi ý tiêu đề, chủ đề để viết kịch bản không, hay là tôi phải nhập một chủ đề bất kỳ nào đó,
+hoặc là lấy bám theo của đối thủ?"
+Có nghĩa là cái bám này gọi là bán content đúng cái mà 70% lúc trước em có hướng dẫn mọi người á,
+là lấy kịch bản của đối thủ cộng với cái tiêu đề của đối thủ bỏ vào thôi để cho nó viết ra kịch bản mới á mọi người.
+Rồi và kết hợp cả 2 lại vào trong một cái form đó luôn, trong một form chung luôn, để khi mình gọi skill ra thì mình muốn như nào thì nó vẫn phục vụ cho mình được hết nha.
+Thì bản chất là đầu tiên thì nó cũng đã hiểu được cái này rồi mấy bác ạ, nhưng mà mình phải train thêm như này để cho nó thêm vào trong cái form mình cứng luôn, cái skill mình á.
+Để khi mình gọi ra mình làm, sau này mình làm rất là nhiều thứ, thì mình không cần phải ghi lại nữa. Nhiều khi mà bác không train kỹ á,
+thì sau này nó viết được những cái đầu, nhưng mà sau này mấy bác làm rất rất là nhiều ngách hay là nhiều thứ khác nhau.
+Sau nó sẽ loạn và nó không, kiểu nó không còn mặc định, nó không hiểu cái cũ nữa ấy, nên là sẽ không viết được chuẩn và hay đâu nha. Cho nên là mình phải train kỹ cái lúc đầu nha mọi người, cho nó vào cứng luôn.
+Giờ nó trả lời em nè: "Tôi sẽ thiết kế skill nhận 3 chế độ cho mình luôn nè." Đấy chế độ 1 thì nó sẽ tự động gợi ý cái chủ đề cho mình nha.
+Thì ví dụ mấy bác để trống á, mấy bác chỉ cần bấm một dấu xẹt gọi skill ra, hoặc là mọi người ghi là gợi ý đề tài thì nó sẽ tự động là cho 10 cái chủ đề ngẫu nhiên nha.
+10 cái chủ đề đó thì nó sẽ phân tích thật kỹ và nó cho 10 cái chủ đề trend nha, chứ không phải là chủ đề tào lao đâu nha mấy bác.
+Đấy còn mà mình muốn bao nhiêu, ví dụ như 20 hay 30 nhiều hơn thì mình cứ nhập số vào.
+Ví dụ như ghi gợi ý 20 chủ đề đề tài á thì nó sẽ ra 20 cái thôi. Rất là đơn giản như vậy, tí nữa em làm cụ thể chi tiết cho mấy bác hiểu nha.
+Cái chế độ 2 thì là bạn nhập chủ đề vào. Thì mọi người đã có sẵn một chủ đề muốn làm rồi đúng không, thì mọi người chỉ cần gọi skill ra và ghi cái từ khóa đó vào thôi.
+Bấm Enter thì nó sẽ tự động viết thôi.
+Cuối cùng là chế độ 3 này thì là mấy bác lấy kịch bản của đối thủ á, mấy bác muốn kiểu bám theo video cao view nhất.
+Em ví dụ như video này đúng không, thì mấy bác sao chép lấy kịch bản nè, xong rồi tải kịch bản lên cộng với cái tiêu đề của đối thủ dán vào.
+Đó rồi mấy bác bấm Enter thì nó sẽ chạy ra thôi, đơn giản.
+Đấy cái chế độ thứ 3 thì đúng theo kiểu bán content lúc trước mà em nói mọi người lấy 70% á.
+Chứ bây giờ mà như con Claude hay con ChatGPT mấy bác bảo nó vào không không cứ bảo nó lấy 70% thì chắc chắn nó sẽ không lấy nha,
+và nó sẽ trả lời là bị vi phạm này kia.
+Nói chung là do những cái model AI này thì được update lên bảo vệ bản quyền này kia ấy mấy bác, nói chung là nó hạn chế lại thôi.
+bảo vệ bản quyền này kia ấy mấy bác, nói chung là nó hạn chế lại thôi.
+Vấn đề về luật YouTube thì rất là bình thường, cái này là YouTube được cho phép nha, không có vấn đề gì cả mấy bác ạ.
+Nhưng mà những con AI này thì được người ta train rồi, người ta hạn chế để bảo vệ bản quyền, nói chung là nhiều thứ, chứ không phải là ấy,
+nên là mặc định nó bị hạn chế như vậy. Nên là mình ghi cứng thì nó sẽ không ra được. Nên là train theo cách của em như này là nó sẽ ok được.
+Nói chung bây giờ con Claude nó viết rất là ok hết rồi mấy bác ạ, nó viết kiểu gì cũng được cả.
+Ý là chất lượng em nói là chất lượng kịch bản ấy nha.
+Nhưng mà trước khi để nó viết được ngon thì mấy bác phải cho nó học những kênh đối thủ kỹ nha.
+Đấy, như những gì em cung cấp cho nó đấy.
+Rồi, giờ quay lại với vấn đề chốt nha mọi người.
+Chốt lúc nãy á, thì em ví dụ như giờ em chưa có tên kênh hay chưa có biết gì hết.
+Thì em sẽ ghi là: Bạn hãy gợi ý cho tôi là tên kênh đi, brand keyword luôn đi, đấy tôi chưa biết như nào cả.
+Và thời lượng thì em sẽ ghi theo chọn theo cái đề xuất của nó nha, bởi vì nó phân tích hai kênh đối thủ rồi, mình làm theo hai kênh đối thủ luôn.
+Rồi còn cái giọng đọc á thì em sẽ chọn là con ElevenLabs nha mấy bác.
+Bởi vì cái clone á thì mọi người muốn clone giống theo cái giọng đối thủ thì mấy bác cứ clone theo thôi, đây nè.
+Em sẽ cho mấy bác nghe qua kênh đối thủ này.
+Đấy, mấy bác muốn clone thì mấy bác sao chép tải về rồi clone.
+Thì cái clone này em hướng dẫn rất là nhiều rồi, mấy bác nếu mà muốn clone làm giống giọng đối thủ nha.
+Hoặc là cái giọng nào đó mấy bác thích bên Hàn thì mấy bác cứ clone thôi, bình thường.
+Còn đây em hướng dẫn nhanh thì em sẽ dùng ElevenLabs.
+Và cái thị trường Hàn này thì em cũng hay dùng ElevenLabs lắm, cái Nhật thì em mới clone thôi.
+Còn Hàn này thì em dùng ElevenLabs là chủ yếu nha.
+Cái này thì cũng tùy key, tùy chủ đề, tùy nhu cầu mỗi người.
+Nếu mà làm các cái ngách triết lý người nổi tiếng thì cái đó chắc chắn là phải clone mới ok nha.
+Còn về sức khỏe hay là về cái dạng sức khỏe này á thì cho nó cái giọng đọc tốt,
+giọng đọc hay là được rồi mọi người ạ. Quan trọng nhất là cái phần kịch bản của mình thôi.
+Sau khi mà em đã chạy cái câu lệnh đó rồi á thì nó đã tự động viết cho em, nó tự động gen ra cái skill luôn nè.
+Bây giờ thì nếu mà em muốn lưu thì em chỉ cần việc bấm lưu thôi. Nhưng mà trước khi lưu á thì em sẽ đọc lại nha.
+Bởi vì ở đây nó chỉ mới ra cái bản đầu tiên thôi, nó đề xuất nè.
+Bởi vì lúc nãy em yêu cầu nó là gợi ý các cái tên kênh ấy mọi người, nên là bây giờ nó đề xuất ra năm cái tên kênh và năm cái từ khóa thương hiệu cho kênh nè.
+Thì nó đã viết ra theo cái phương án một, số một đầu tiên, viết để cho em tham khảo trước.
+Và nếu như em muốn thay đổi chọn cái số khác á thì em chỉ cần việc nhập số vào thôi, thì nó sẽ viết lại cho em thôi và em lưu thôi.
+Nhưng bây giờ mặc định thì em chọn một thôi nha mọi người, đấy để cho nó nhanh, bởi vì nó đã ra rồi mà.
+Bây giờ em chỉ cần việc bấm cái nút lưu thôi thì nó sẽ tự động lưu cái skill này vào skill con Claude AI của em luôn nha.
+Không cần phải là tải hay gì cả.
+Và ở dưới này thì nó hướng dẫn cách dùng thôi mọi người, cái này thì mấy bác đều rõ hết rồi.
+Giờ em bấm lưu skill nè, thì nó sẽ tự động lưu skill lên.
+Và ví dụ như mấy bác không muốn tự động lưu như này mà mấy bác muốn cho nó ra file zip và tải về, mình muốn tự tải lên thì cũng được.
+Ghi câu lệnh như em nè, thì em yêu cầu như này để cho nó ra file zip để em up lên cái mô tả cho mọi người tham khảo cái em gen, em train hôm nay luôn.
+Để cho anh em có thể tham khảo, mấy bác có thể lấy làm luôn cũng được, không thì mấy bác xem em xong rồi mấy bác tự thực hành,
+tự thực chiến lại nha. Em vẫn ưu tiên là em khuyên mọi người là nên phải tự làm, tự thực chiến thì mới dễ dàng được nha.
+Để sau này mọi người còn làm rất là nhiều thứ nữa chứ không phải làm một cách này đâu. Mấy bác làm lên một kênh rồi thì mấy bác nhân bản làm thêm những kênh khác, những ngách khác nữa.
+Ở cả ba thị trường Việt, Nhật và Hàn.
+Ba cái thị trường em luôn luôn khuyên mọi người và
+nói chung là update hướng dẫn mọi người liên tục ấy.
+Rất là nhiều anh em ở trong web của em
+đa số anh em làm bây giờ hiện tại là làm hai kênh rồi đấy.
+Chứ còn một kênh bật kiếm tiền thì quá bình thường đối với anh em rồi.
+Thật sự là như vậy luôn.
+Mấy bác lướt group thì thấy rất là nhiều anh em bật kiếm tiền mà.
+Rồi ví dụ như nó ra như này thì bác tải về,
+rồi tải lên con Claude thôi.
+Cách tải thì em đã hướng dẫn rất nhiều rồi, nói chung là mọi người biết hết rồi nên là em không hướng dẫn lại nữa nha.
+Mấy cái này quá đơn giản rồi.
+Tiếp tục là em sẽ làm mẫu thêm cái chỗ đoạn gọi skill và viết kịch bản nha.
+Thì mấy bác gọi skill ra xong rồi mấy bác ghi là gợi ý đề tài,
+hoặc là mọi người để trống luôn, chỉ cần gọi skill thôi.
+Thì lúc này nó sẽ tự động mặc định là ra 10 cái chủ đề đề tài gợi ý cho mình nha.
+Còn nếu mấy bác muốn nhiều hơn, ví dụ như 20 hay là 30,
+thì mấy bác ghi ra thì nó sẽ ra đúng 20 cái đó. Ví dụ như em là em ghi 20 nè, bây giờ thì nó sẽ đọc qua cái skill, sau đó thì nó sẽ viết luôn.
+Đấy, bây giờ thì nó sẽ viết đủ 20 cái chủ đề, cái tiêu đề cho mình chọn thôi mọi người ạ.
+Cái này là em đang để viết kịch bản mới thì em đã tạo một cái new chat mới rồi nha, em không có viết chung ở một cái lúc nãy trên đâu.
+Kể cả mà mấy bác đã viết xong, ví dụ như đây là video đầu tiên của em đi, và sang video thứ hai thì mấy bác cũng nên tạo một cái new chat mới, viết tiếp mới nha, chứ đừng có viết chung một cái nha.
+Thường mấy bác lầm tưởng là tưởng đâu mấy bác cứ viết chung là nó sẽ ngon, nhưng mà thật ra là nó sẽ không ngon đâu nha, mình sẽ tách ra.
+Những đoạn chat mới để mình làm mỗi kịch bản mới nha mọi người.
+Rồi thì bây giờ nó đã gen ra cho em 20 cái chủ đề khác nhau nè.
+Và nó phân chia luôn cái nào nhóm nào luôn, ví dụ như nhóm A là nhóm đường huyết, mạch máu nè,
+nhóm mẹo thực hành, rồi nhóm minh oan tin đồn, đấy dạng kiểu drama này kia nữa nha.
+Rất rất là nhiều thứ thì mấy bác có thể chọn thôi, bám theo đối thủ hoặc là mọi người bám theo đối thủ mọi người làm.
+Lúc nãy mà viết kịch bản á, lúc nãy gọi skill á,
+thì em gọi ví dụ mấy bác muốn bám theo một video cao view của đối thủ đi thì mấy bác cứ gọi skill rồi dán cái kịch bản vào cộng với tiêu đề của video đó vào thôi rồi cho nó chạy thì nó sẽ viết ra kịch bản luôn.
+Còn bây giờ thì em yêu cầu gợi ý thì nó sẽ gợi ý thôi mọi người.
+Giờ em giả sử em chọn cái chủ đề thứ hai, em ghi số 2 thôi, bấm enter một phát nè.
+Bây giờ thì nó sẽ gen ra kịch bản cho em thôi. Đây là em tua nhanh nha, chứ để chờ nó viết kịch bản thì cũng khá là lâu á, bởi vì nó phân tích rất rất là lâu nha mọi người.
+Đấy, cuối cùng thì em tua nhanh ra thì nó đã viết xong và nó có tóm tắt lại bao nhiêu ký tự, bao nhiêu từ, các kiểu này, và bấm vào cái file này thì đầu tiên là phần kịch bản nha.
+Đây, kịch bản xuống dưới này. Rồi dưới này là những cái tóm tắt ở phần trên đấy mọi người, cái tóm tắt của kịch bản nó đã viết có những cái gì á.
+Rồi tiếp theo là ở dưới là tiêu đề nè và text trong thumb.
+Text trong thumb này có nghĩa là đây nè, cái text ở cái thumb này mọi người, cái chữ trong thumb á.
+Thì mấy bác mà muốn làm theo kiểu như cái phong cách màu chữ giống đối thủ thì mấy bác xem cái video clone thumb của em nha, em đã có hướng dẫn rồi đấy.
+là được, đấy.
+Rồi ở dưới là có mô tả rồi từ khóa các thứ thôi.
+Đấy, cái này thì ra hết rồi.
+Đấy nếu mấy bác mà không hiểu thì mấy bác đem qua dịch thôi, em cũng đâu hiểu đâu.
+Ví dụ như em đem cái kia em dịch nè,
+đây là danh sách những cái xác minh nè,
+xác minh lại trong kịch bản của mình,
+viết có đúng hay không
+và có đúng sự thật này kia không á.
+Đấy, cái đó là vấn đề chất lượng để giữ chân người xem nha mọi người.
+Rồi cái này thì là ra được hơn 9.000 từ và độ dài thì ước lượng là tầm 28 phút nè,
+28 phút 9 nè. Thì cái đó đương nhiên là ước lượng thôi nha, chứ không phải là chính xác là 28 phút đâu nha mấy bác.
+Mình phải cho AI đọc và tùy theo cái tốc độ điều chỉnh ở trong cái voice nữa nha,
+chứ không phải là mấy bác thấy vậy mấy bác gen ra thấy lúc dài lúc ngắn thì mấy bác lại thắc mắc nữa.
+현미밥, 사골 국물... 이 세 가지가 여러분의 콩팥 필터를 망가뜨릴 수 있습니다.
+Vừa rồi thì em nghe lại cái giọng của kênh đối thủ này. Nếu mà mọi người muốn clone á,
+thì như em nói rồi, thì mọi người clone bình thường thôi
+Còn bây giờ thì em sẽ dùng cái giọng ElevenLabs cho nó nhanh nha.
+Cũng như là đa số ngách sức khỏe ở bên Hàn thì em dùng ElevenLabs cả mọi người ạ.
+Rồi em bấm vào Voices nè, vào web ElevenLabs nha, vào bộ lọc.
+Thì đây là làm thị trường Hàn Quốc đúng không, thì đương nhiên là chọn quốc gia là Hàn Quốc rồi.
+Và cái chỗ này mấy bác không hiểu thì dịch ra thôi, em cũng không hiểu đâu.
+Em chọn giọng tiêu chuẩn nè.
+Cái này tùy mọi người nha, rồi những cái chỗ này thì em sẽ chọn là giáo dục nha, mục giáo dục, bởi vì cái dạng này là sức khỏe, hướng dẫn giáo dục này kia thì nó sẽ vào cái dạng giáo dục nha.
+Đấy rồi mình sẽ nghe qua tất cả các voice.
+우주의 가장... 관계에서 불행을... 새로운 기술을 사용할...
+모든 기회는 위기를 내포하고 모든 위기는 기회를 내포한다.
+Đó thì mấy bác cứ nghe qua hết tất cả các voice trên này xem cái nào hợp rồi mấy bác lấy thôi, có rất rất là nhiều voice nha. Thì ví dụ như em sẽ thấy cái này hợp đi, cái vừa rồi nè, cái thứ 4 này nha.
+Đấy thì em sẽ lấy cái này em làm luôn.
+Rồi thì em sẽ copy Voice ID, bấm vào dấu ba chấm, copy Voice ID nè.
+Em sẽ vào tool của em em làm thôi mọi người.
+Cái tool này thì chắc em không cần giới thiệu quá nhiều nữa ha.
+Chắc nhiều bác dùng của em chắc cũng gần hai năm luôn rồi đấy.
+À cái ElevenLabs này thì nó cũng vừa update cái model v4 thì ở bên tool nó cũng có nha.
+Nói chung là cái tool á là API từ web ra mọi người ạ.
+Cái web như thế nào thì tool nó như thế thôi. Tool thì dùng để tiết kiệm chi phí và tốc độ, nói chung là tiết kiệm tài nguyên và thời gian để mình gen ra thôi chứ không có gì hết.
+Mình dùng web thì tốn rất là nhiều tiền tài nguyên nha.
+Mấy bác dùng voice nào thì mình sẽ set theo cái thông số voice đó ở trên web cho nó chuẩn nha.
+Em thấy cái chỗ này có một số bác dùng tool thì hơi bị nhầm ấy, nên là ra nhiều lúc cái giọng nó bị sai á nên mấy bác không biết fix như thế nào.
+Thì đây nè, mấy bác bấm vào Use Voice rồi đúng không, thì ngay chỗ model của mỗi voice thì nó có gợi ý một cái model tương thích.
+Ví dụ như cái voice này nó có model là Eleven Multilingual v2 nè,
+thì bên tool thì em cũng sẽ chọn đúng theo cái model đó luôn nha.
+Như tiếng Việt thì nó ưu tiên model v3,
+nhưng mà mình chọn model v2 thì nó sẽ đọc sai,
+và nhiều lúc nó sẽ đọc ra tiếng Thái Lan luôn.
+Nên là nhiều bác bị nhầm chỗ đó nha, nên là mình phải set chuẩn theo cái web nha.
+Cái này là API từ web nó sang, mình phải giống 100% cả, mình phải set theo.
+Tiếp tục là các cái thông số ở dưới này: tốc độ, sự độ ổn định và âm thanh này kia, thì mình cũng phải set theo các thông số này nha.
+Ví dụ như tốc độ bên này là 0.96 nè, em cũng set theo luôn.
+Và set xong rồi á thì ở bên tool thì nhớ tích vào cái ô vuông là Change Voice Settings thì nó mới nhận được cái thông số đó nha.
+Mấy bác mà set mà không tích vào á thì nó sẽ không nhận được đâu nha.
+Đó, về phần cơ bản dùng tool này đơn giản như vậy thôi mấy bác, không có gì cả.
+Xong rồi em sẽ bấm Start cho nó chạy để nó làm nó gen ra thôi.
+Thì em hướng dẫn lại một số bác đang dùng tool của em để cho rõ hơn thôi,
+chứ còn những anh em dùng lâu rồi thì mấy bác biết hết rồi, không cần phải nói nhiều nữa.
+Sau khi gen xong rồi thì em sẽ gộp lại, em bấm Join Voice, em sẽ nghe qua thử nha.
+매일 아침 찜기에 쪄서 드시는 그 고구마... 요즘 유튜브를 켜면 이런 영상이 자꾸 뜨지요? 고구마가 콩팥을 망가뜨린다...
+Đó, như vậy là đã xong về phần viết kịch bản và tạo giọng đọc rồi nha mọi người.
+Video này thì em có thời gian rảnh nên em hướng dẫn lại cái quy trình train prompt về cái ngách nhỏ sức khỏe thị trường Hàn như này để mấy bác có thể tham khảo thêm.
+Còn về cách edit thì cái này quá đơn giản rồi, mấy bác cứ search theo những cái từ khóa.
+Đây, cái kênh này em đang xem có quảng cáo luôn, đang bật kiếm tiền nè.
+Kênh này cũng hơn 1k sub rồi mọi người ạ, chắc chắn là bật kiếm tiền luôn.
+Thì mấy bác search cái từ khóa, ví dụ như mấy bác làm về chủ đề táo hay là cà rốt,
+thì search từ khóa lấy những hình ảnh, video tự nhiên về cái sản phẩm đó, rồi mấy bác edit vào thôi, rất đơn giản.
+Đây nè, mọi người có thể xem lại video này, em cũng có hướng dẫn cách edit lấy những video tự nhiên ấy.
+Và ở dưới mô tả thì em có để cái link nè, đây cái link này, thì mấy bác có thể vào lấy những cái nguồn tự nhiên miễn phí này.
+Thì thôi để em copy tất cả cái link này em để ở mô tả video này luôn cũng được.
+Còn về phần edit video thì em bỏ qua em không làm mẫu nữa nha, bởi vì cái này em hướng dẫn rất rất là nhiều video rồi.
+Và nó còn rất đơn giản cả mọi người, không có gì hết, mấy bác tự làm nha. Cái quan trọng và khó nhất là có được cái ngách để làm.
+Và tiếp đó là làm sao để có được kịch bản tốt, chất lượng thôi. Còn lại mọi thứ khác thì đơn giản thôi mọi người.
+Rồi ok, em cảm ơn tất cả mọi người đã xem video đến đây nha.

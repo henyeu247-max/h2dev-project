@@ -1,0 +1,77 @@
+{
+  "sku": "VIDEO-348217",
+  "title": "Update thêm 2 ngách mới nhất cực trend thị trường Hàn và Nhật",
+  "actual_topic": "2 Ngách đột phá Bài thuốc bàn ăn Hàn Quốc & Năng lượng lời nói kim vận Nhật Bản; Case study kênh Việt nổ 265K view sau 5 video",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Nhân Bản Thị Trường (Hàn - Nhật)",
+  "niche_id": "faceless-general",
+  "target_market": "Hàn Quốc / Nhật Bản",
+  "market_code": "KR,JP",
+  "key_takeaways": [
+    "Một học viên nhân bản thị trường từ US sang Việt Nam: lấy kịch bản đem về dịch và viết lại, làm lại hình ảnh video chứ không lấy của người ta; kênh đã bật kiếm tiền.",
+    "Cách nhân bản: lấy kịch bản của một video bất kỳ rồi nhờ AI dịch theo ngôn ngữ, giọng điệu và văn hoá kể chuyện của nước đích, không dịch cứng; làm Nhật hoặc Hàn chỉ cần thay tên quốc gia trong form prompt.",
+    "Ngách sức khỏe được nhân bản từ thị trường Việt sang Nhật rồi sang Hàn; có kênh Hàn lập giữa tháng 6, mười mấy video, đã bật kiếm tiền, tiêu đề đi sâu vào thực phẩm và rau củ.",
+    "Một kênh thị trường Nhật mới (video cũ nhất 11 ngày trước), view nổ rồi lên đều, chủ đề may mắn và tâm linh, giống ngách một nhân vật khác tác giả đã share.",
+    "Cách làm: copy tiêu đề, tìm kiếm, lấy kịch bản về dịch và viết lại cho hay hơn theo ngôn ngữ và giọng điệu của thị trường đó."
+  ],
+  "edit_sop": {
+    "primary": "Nhân bản thị trường: lấy kịch bản kênh nước khác, nhờ AI dịch theo giọng và văn hóa nước mình làm",
+    "additional": [
+      "Lấy kịch bản của video bất kỳ muốn làm rồi yêu cầu AI dịch ra",
+      "Yêu cầu AI dịch theo ngôn ngữ, giọng điệu, văn hóa kể chuyện của nước đích, không dịch cứng",
+      "Làm thị trường Nhật hoặc Hàn thì chỉ thay tên quốc gia vào form prompt",
+      "Hình ảnh video phải tự làm lại, chỉ đem kịch bản về",
+      "Ngách Nhật: lấy kịch bản về, thay nhân vật vào, xào lại một chút rồi cho nhân vật đó đọc"
+    ]
+  },
+  "avoid_flags": [
+    "Không dịch cứng kịch bản vì sẽ không hay",
+    "Không lấy hình ảnh, video của người ta, chỉ đem kịch bản về"
+  ],
+  "tools_mentioned": [],
+  "channels_mentioned": [
+    "@식탁보약·백세비결",
+    "@金運と言葉の力"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Đây là một kênh nhân bản thị trường từ US sang Việt Nam nha mấy bác Thì cái ký cái ngách này th"
+    },
+    {
+      "time": "01:28",
+      "seconds": 88,
+      "label": "em có làm 2-3 cái video luôn ấy chứ không phải 1 cái đâu thì mấy bác nếu chưa xem"
+    },
+    {
+      "time": "02:59",
+      "seconds": 179,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "04:09",
+      "seconds": 249,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "05:18",
+      "seconds": 318,
+      "label": "Kiểu như cũng là người nổi tiếng Bên Nhật đấy mấy bác Thì em thấy nó đang rất là trend nha"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-348217/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Lấy kịch bản của video bất kỳ muốn làm rồi yêu cầu AI dịch ra",
+    "Yêu cầu AI dịch theo ngôn ngữ, giọng điệu, văn hóa kể chuyện của nước đích, không dịch cứng",
+    "Làm thị trường Nhật hoặc Hàn thì chỉ thay tên quốc gia vào form prompt",
+    "Hình ảnh video phải tự làm lại, chỉ đem kịch bản về",
+    "Ngách Nhật: lấy kịch bản về, thay nhân vật vào, xào lại một chút rồi cho nhân vật đó đọc"
+  ]
+}

@@ -1,0 +1,930 @@
+{
+  "sku": "VIDEO-ab68db",
+  "duration": 803.17,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 115,
+  "full_text": "Chào anh chị em học viên, hôm nay chúng ta sẽ đến với cái bài nhạc không lời. Để làm ra những cái bài nhạc không lời này thì anh chị có thể nhìn thấy ở trên màn hình thì có những video đến 1 tiếng. Những cái video như thế này thì nó chỉ cần tầm 10-20.000 view là anh chị đủ giờ xem rồi. Vì bản chất nó là video dài. Thì cái thời lượng người ta bật lặp đi lặp lại người ta nghe, người ta cảm nhận thì nó rất là cao. Và cái tỷ lệ giữ chân hầu như là người ta nghe để ngủ, nghe để thư giãn. Anh chị hãy nghe những dòng nhạc mà nhạc quán cà phê thì cái nhạc không lời nó như thế. Để sản xuất được những video này thì anh chị đi theo từng bước. Là bước đầu tiên chúng ta là bước tạo hình ảnh. Bước thứ 2 là chúng ta sẽ tạo ra cái video để chúng ta đưa lên CapCut để chúng ta làm làm sao để cho nó phù hợp dài 1 tiếng. Bước thứ 3 là bước tạo nhạc phù hợp. Thì bắt đầu chúng ta sẽ đi vào quy trình như sau. Để làm được những dòng nhạc như thế này thì anh chị phải dùng các công cụ như sau. ChatGPT, Suno AI, Grok, Flow. Anh chị có thể tạo hình ảnh trên ChatGPT cũng được, tạo hình ảnh trên Grok cũng được, tạo hình ảnh trên Flow cũng được. Anh chị muốn tạo như thế nào cũng được. cũng được cái quan trọng là chúng ta sẽ tạo như thế nào và làm như thế nào để cho nó hiệu quả thì anh chị nhấn vào một video bất kỳ mở đường link kết này đây là một cái video dài một tiếng thì để tạo được những hình ảnh này thì anh chị nhấn chụp ảnh cái hình ảnh này cho em Alt + Z (chụp màn hình Cốc Cốc) chụp cái màn hình nhé Sau đó thì chúng ta đưa lên con ChatGPT. Bây giờ chúng ta đi đến với câu lệnh để cho ChatGPT hiểu và vất ra cho chúng ta một câu prompt để chúng ta tạo ra một hình ảnh khác. Câu lệnh thứ nhất là câu prompt để tạo hình ảnh. Anh chị copy câu prompt tạo hình ảnh này. Anh chị chụp hình ảnh lại và ghi ra. Và chúng ta ghi ra bên ChatGPT luôn. Anh chị dán vào ChatGPT. Nhấn Enter. Bây giờ dựa trên cái hình ảnh gốc, ChatGPT sẽ cho anh chị một cái hình ảnh nhạc cổ Trung Hoa. dưới là cái prompt nhé trên là nó phân tích hình ảnh gốc dưới là prompt tạo hình ảnh trên Flow này anh chị copy cái câu prompt này cho em đấy nhé chúng ta nhấn sao chép câu prompt này và bây giờ bên phần Flow anh chị nhấn tạo dự án và chúng ta dán cái câu lệnh vừa giờ chúng ta được ChatGPT cho anh chị chọn cái kích thước là 16.9 chương 7 9.16 hay 3.1 4:3, 1:1 đó Chúng ta nhấn tạo hình ảnh. Anh chị lấy 1 trong 2 hình ảnh. Em sẽ nhấn tải hình ảnh này xuống. Tải xuống nhé. Mọi người để 1K cũng được. Và anh chị mở 1 cái tab ChatGPT mới và tải hình ảnh vừa giờ chúng ta tải xuống đây. Sau đó thì chúng ta đến với cái Prompt thứ 2 là câu lệnh để tạo ra Master Prompt. Nói cho anh chị hiểu là Master Prompt là nó sẽ tạo ra một prompt chi tiết để sau anh chị tạo ra những cái hình ảnh như thế này thì nó sẽ trả cho anh chị prompt. Nghĩa là khi mà có bất kỳ hình ảnh nào liên quan đến cái nhạc cổ Trung Hoa là anh chị vất lên là nó tự động tạo ra prompt. Bây giờ anh chị copy từ cái câu lệnh này nhé. Anh chị trả lại kết quả cho nó. Bây giờ là vất cái hình ảnh vừa giờ chúng ta đưa lên. Và anh chị gửi lên là được. Bây giờ là nó đã nêu lại cái toàn bộ những thứ mà anh chị đã đưa cho nó để tạo ra Master Prompt Và bây giờ là vất hình ảnh nhạc cổ Trung Hoa lên Cái tab này anh chị nên ghi nhớ cho em Chỉ cần chúng ta vất cái hình ảnh nhạc cổ Trung Hoa lên là nó sẽ tạo ra cái prompt này Prompt 10 giây nhé anh chị nhấn Sao chép prompt 10s bây giờ chúng ta lên Grok và tải cái hình ảnh vừa giờ chúng ta đưa lên và anh chị dán vào chọn 720 và chúng ta chọn 10s nó đang tạo video cho anh chị nhé Trong khi chờ đợi Grok tạo video thì anh chị hãy tạo cho em một cái ChatGPT mới. Và anh chị thêm này, thêm cái ảnh, vẫn thêm cái ảnh ấy lên nhé. Và bây giờ là câu lệnh, câu lệnh thứ 3 để tạo ra Master Prompt làm nhạc. Anh chị hãy copy hoặc viết ra giống như cái câu lệnh mà em đang ghi ở trên màn hình nhé. Anh chị dán vào, nhấn tải lên. Bây giờ nó cũng sẽ cho anh chị 1 cái Master Prompt để tạo ra cái nhạc nhé. Sau anh chị gửi cái hình ảnh lên là nó sẽ tạo ra cho anh chị 1 prompt để tạo nhạc trên Suno AI luôn. Đấy là nó tạo ra cho anh chị 1 câu lệnh ghi nhớ này. Anh chị nhấn Sao chép câu lệnh ghi nhớ mà cái Master Prompt nhạc nó tạo ra, gửi lại cho nó. Bây giờ anh chị tải lại cái hình ảnh lên để chúng ta yêu cầu nó tạo ra một from để tạo nhạc trên Suno AI. Cũng giống như cái bước mà chúng ta tạo hình ảnh ra video nhé. Chúng ta đã có một cái Suno AI Style Prompt này. Anh chị nhấn Sao chép. Nhấn sao chép này. Trong phần Suno AI, anh chị nhấn tạo lên, chọn đơn giản nhé. Chúng ta không cần trình độ cao đâu. Nhấn cho em đơn giản và dán cái prompt vừa giờ vào. Anh chị nhấn vào nhạc cụ nhé. Sau đó là nhấn tạo bài hát này. Trong khi chờ đợi cái Suno AI tạo nhạc cho chúng ta thì chúng ta sang cho em cái phần Grok này. Anh chị nhìn cái video đây. Video nó sẽ giữ nguyên khung mình như thế này là được nhé anh chị nhé. để tí nữa chúng ta là lấy video 10 giây này chúng ta tạo ra video một tiếng nhé rồi chúng ta tải cái gốc này về cho em tải video này về sau khi Suno AI tạo cho anh chị em xong cái nhạc thì anh chị em tải về Sau khi vào trong cái phần CapCut, anh chị tải cho em 2 cái file, 1 file video vừa tạo trên Grok và cái nhạc này. Sau khi thêm nhạc vào xong thì anh chị nhấn Sao chép 2 bản đi. Tắt âm thanh nhé anh chị nhé. Tắt âm thanh của video đi. Và anh chị nhìn nhé. Nếu mà như thế này thì chúng ta sẽ không làm được cái video 1 tiếng. Anh chị nhớ cho em là trong cái video thứ 2 thì anh chị bật cho em cái đảo ngược này nhé. Nhấn vào đảo ngược này. Đảo ngược nha anh chị nha, không phải phản chiếu nha, chúng ta chọn đảo ngược này. Thì anh chị sẽ nhìn thấy là cái hình ảnh nó rất là liền nha. Chúng ta sẽ xem qua này. Nó sẽ liền lại. Thì sau khi có rồi thì chúng ta sẽ sao chép lên. Anh chị copy cho em. Copy 2 cái nha, chứ không phải copy 1 cái nữa nha. Mà chúng ta sẽ copy 2 cái nha. Đấy, thì anh chị nhìn thấy là chúng ta đã tạo ra được cái video như thế này. Thì đối với cái đoạn nhạc nó có cái hay như thế này. Cái nhạc nhé, anh chị copy cái link nhạc này để cho nó phù hợp luôn. Ở trong cái nhạc em vừa copy cái nhạc ra thì chúng ta sẽ lựa chọn cái gì ạ? Ở phần này nhé, anh chị ra. Anh chị kéo cho em cái âm này cho nó bé xuống. Xong cái âm này thì nó sẽ cao lên. Để làm sao cho em 2 cái này nó phù hợp nhé. Anh chị thẩm qua cái nhạc của mình nhé. nhạc của mình đó và tiếp tục nha chúng ta sẽ Chúng ta sẽ ăn lấy cái này luôn Đã Anh chị kéo xuống cho em tầm 10. Cái này chúng ta xem là 8 đúng không? anh chị nhìn thấy ở cái kéo âm thanh kia thì chúng ta để 8.0 giây nhé thì cái này anh chị em kéo cho em tầm 8 nhé 9 này, hoặc không thì anh chị để cho em ở trên cái mờ dần này 8.0 Chúng ta sẽ copy cái nhạc thứ 2 này nhé Nếu mà để cho cái đoạn nó làm sao để cho nó hiệu quả, mình biết cái đoạn trước đoạn sau ấy, để cho nó ok hơn ấy, thì anh chị cắt cho em cái đoạn này Ctrl B nhé, anh chị nhấn vào cái nhạc này, kéo đến cái thanh trắng ở đâu thì vị trí nó ở đó. Đây, anh chị cắt cho em cái đoạn này. Và nhấn Sao chép cái đoạn này cho em nhé. Nhấn Sao chép này. Thì gì ạ? Thì chúng ta cứ kéo đến cái cuối cùng của cái video này nhé. Thì chúng ta biết là cái đoạn kia chúng ta dừng ở đâu thì đoạn này chúng ta sẽ dừng ở đây. Đấy, bây giờ thì chúng ta sẽ có 2 cái này như thế này rồi. Nhấn tạo clip tiếp cho em. Và cứ thế là anh chị copy cái nhạc nhẹ ra cho em. Copy này. Xóa cái này đi. Cứ nhớ cho em là cái bé này ở đâu thì bắt đầu cái đoạn nhạc nó ở đó nhé. Dán đây cho em. nhớ là mọi người phải có cái gu thẩm nhạc đã thì khi mà có như này rồi thì anh chị nhớ cho em là anh chị nhấn lên nhân các video này lên nhấn cho em video lên copy nhấn lên Chúng ta làm thủ công hết nhé. Làm những cái dòng nhạc này anh chị lên cho em là thủ công. Nhớ cho em là cái video đầu tiên là hai cái đoạn đầu thì anh chị nhớ là đoạn đầu hay đoạn sau thì anh chị phải nhớ cái đoạn này. Cắt này. video này để tầm 25 phút thôi anh chỉ có thể đếm tiếng được và trong cái này nữa thì chúng ta sẽ thêm những cái hiệu ứng anh chị tìm cho em là lấp lánh đây nha trong cái phần hiệu ứng anh chị chọn cho em cái lấp lánh này anh chị dán cho em cái phát sáng này đi cho cường độ nó nhẹ bộ lọc nó nhẹ rồi xoay nó sẽ có những cái phát sáng ở trong mà nó sẽ không tính là lặp đi lặp lại và mây anh chị em nhé Anh chị làm sao cho em là tìm những cái hiệu ứng băng tuyết mây này Ví dụ em chọn cái này đi không khí này, cực sáng này, khoảng tốc độ này, bộ lọc cho bé Cảm ơn. Chị ăn cho em vài cái hiệu ứng mà làm sao để chúng ta thẩm được cái màu sắc nhé. Đó, đây là một cái video về nhạc cổ Trung Hoa nhé anh chị em nhé. Và anh chị có thể nếu mà làm xong anh chị chọn tất cả anh chị nhấn cho em tạo clip ghép thì nó đã ra một cái file video như thế này. Rất là dài 25 phút. Thì làm cực kỳ nhanh nhé. Và tiếp theo đến chúng ta đến cái phần là tạo thumbnail nhé anh chị em. Tiếp theo câu prompt tạo ảnh thumbnail nhé anh chị nhé. Anh chị copy cho em cái câu prompt này. Hoặc là anh chị viết ra nhé. Viết đúng cái câu prompt này cho em. Thì ở dưới cái prompt mà tạo ra nhạc ấy, thì anh chị vào cho em cái đấy, update cái hình ảnh và gốc của chúng ta lên. Video như thế nào thì thumbnail chúng ta làm như thế nhé, chúng ta không làm kiểu như là làm cho nó có hay là nội dung trong video như thế này, anh chị làm cái hình ảnh thumbnail khác thì không được nhé. Sau khi đợi một lúc thì ChatGPT đã cho chúng ta ra một cái hình ảnh thumbnail nhé, anh chị có thể nhìn thấy cái hình ảnh thumbnail này. hoặc là anh chị có thể thêm những cái tư duy để viết cái thumbnail nó khác hơn. Điều được đó là do mình sáng tạo hoặc là có điểm nhấn hay không là tùy theo cái mắt của anh chị thẩm mỹ được cái hình ảnh thumbnail này.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 8.58,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:08,580",
+      "text": "Chào anh chị em học viên, hôm nay chúng ta sẽ đến với cái bài nhạc không lời. Để làm ra những cái bài nhạc không lời này thì anh chị có thể nhìn thấy ở trên màn"
+    },
+    {
+      "id": 2,
+      "start": 8.58,
+      "end": 17.54,
+      "start_time": "00:00:08,580",
+      "end_time": "00:00:17,540",
+      "text": "hình thì có những video đến 1 tiếng. Những cái video như thế này thì nó chỉ cần tầm 10-20.000 view là anh chị đủ giờ xem rồi. Vì bản chất nó là video dài. Thì cái thời"
+    },
+    {
+      "id": 3,
+      "start": 17.54,
+      "end": 26.02,
+      "start_time": "00:00:17,540",
+      "end_time": "00:00:26,020",
+      "text": "lượng người ta bật lặp đi lặp lại người ta nghe, người ta cảm nhận thì nó rất là cao. Và cái tỷ lệ giữ chân hầu như là người ta nghe để ngủ, nghe để thư giãn."
+    },
+    {
+      "id": 4,
+      "start": 26.02,
+      "end": 35.76,
+      "start_time": "00:00:26,020",
+      "end_time": "00:00:35,760",
+      "text": "Anh chị hãy nghe những dòng nhạc mà nhạc quán cà phê thì cái nhạc không lời nó như thế. Để sản xuất được những video này thì anh chị đi theo từng bước. Là bước đầu tiên chúng"
+    },
+    {
+      "id": 5,
+      "start": 35.76,
+      "end": 44.6,
+      "start_time": "00:00:35,760",
+      "end_time": "00:00:44,600",
+      "text": "ta là bước tạo hình ảnh. Bước thứ 2 là chúng ta sẽ tạo ra cái video để chúng ta đưa lên CapCut để chúng ta làm làm sao để cho nó phù hợp dài 1 tiếng. Bước thứ"
+    },
+    {
+      "id": 6,
+      "start": 44.6,
+      "end": 53.56,
+      "start_time": "00:00:44,600",
+      "end_time": "00:00:53,560",
+      "text": "3 là bước tạo nhạc phù hợp. Thì bắt đầu chúng ta sẽ đi vào quy trình như sau. Để làm được những dòng nhạc như thế này thì anh chị phải dùng các công cụ như sau."
+    },
+    {
+      "id": 7,
+      "start": 54.0,
+      "end": 65.12,
+      "start_time": "00:00:54,000",
+      "end_time": "00:01:05,120",
+      "text": "ChatGPT, Suno AI, Grok, Flow. Anh chị có thể tạo hình ảnh trên ChatGPT cũng được, tạo hình ảnh trên Grok cũng được, tạo hình ảnh trên Flow cũng được. Anh chị muốn tạo như thế nào cũng được."
+    },
+    {
+      "id": 8,
+      "start": 65.12,
+      "end": 70.1,
+      "start_time": "00:01:05,120",
+      "end_time": "00:01:10,100",
+      "text": "cũng được cái quan trọng là chúng ta sẽ tạo như thế nào và làm như thế nào để cho nó hiệu quả thì anh chị"
+    },
+    {
+      "id": 9,
+      "start": 70.1,
+      "end": 76.94,
+      "start_time": "00:01:10,100",
+      "end_time": "00:01:16,940",
+      "text": "nhấn vào một video bất kỳ mở đường link kết này đây là một cái video dài một tiếng thì để tạo được"
+    },
+    {
+      "id": 10,
+      "start": 76.94,
+      "end": 84.391,
+      "start_time": "00:01:16,940",
+      "end_time": "00:01:24,391",
+      "text": "những hình ảnh này thì anh chị nhấn chụp ảnh cái hình ảnh này cho em Alt + Z (chụp màn hình Cốc Cốc) chụp cái màn hình nhé"
+    },
+    {
+      "id": 11,
+      "start": 84.391,
+      "end": 92.991,
+      "start_time": "00:01:24,391",
+      "end_time": "00:01:32,991",
+      "text": "Sau đó thì chúng ta đưa lên con ChatGPT. Bây giờ chúng ta đi đến với câu lệnh để cho"
+    },
+    {
+      "id": 12,
+      "start": 92.991,
+      "end": 101.591,
+      "start_time": "00:01:32,991",
+      "end_time": "00:01:41,591",
+      "text": "ChatGPT hiểu và vất ra cho chúng ta một câu prompt để chúng ta tạo ra một hình ảnh khác."
+    },
+    {
+      "id": 13,
+      "start": 102.0,
+      "end": 109.331,
+      "start_time": "00:01:42,000",
+      "end_time": "00:01:49,331",
+      "text": "Câu lệnh thứ nhất là câu prompt để tạo hình ảnh. Anh chị copy câu prompt tạo hình ảnh này. Anh chị chụp hình ảnh lại và ghi ra."
+    },
+    {
+      "id": 14,
+      "start": 109.651,
+      "end": 115.991,
+      "start_time": "00:01:49,651",
+      "end_time": "00:01:55,991",
+      "text": "Và chúng ta ghi ra bên ChatGPT luôn. Anh chị dán vào ChatGPT. Nhấn Enter."
+    },
+    {
+      "id": 15,
+      "start": 117.751,
+      "end": 124.99,
+      "start_time": "00:01:57,751",
+      "end_time": "00:02:04,990",
+      "text": "Bây giờ dựa trên cái hình ảnh gốc, ChatGPT sẽ cho anh chị một cái hình ảnh nhạc cổ Trung Hoa."
+    },
+    {
+      "id": 16,
+      "start": 124.99,
+      "end": 132.64,
+      "start_time": "00:02:04,990",
+      "end_time": "00:02:12,640",
+      "text": "dưới là cái prompt nhé trên là nó phân tích hình ảnh gốc dưới là prompt tạo hình ảnh trên"
+    },
+    {
+      "id": 17,
+      "start": 132.64,
+      "end": 140.29,
+      "start_time": "00:02:12,640",
+      "end_time": "00:02:20,290",
+      "text": "Flow này anh chị copy cái câu prompt này cho em đấy nhé chúng ta nhấn sao chép câu prompt"
+    },
+    {
+      "id": 18,
+      "start": 140.29,
+      "end": 147.641,
+      "start_time": "00:02:20,290",
+      "end_time": "00:02:27,641",
+      "text": "này và bây giờ bên phần Flow anh chị nhấn tạo dự án và chúng ta dán cái câu lệnh"
+    },
+    {
+      "id": 19,
+      "start": 147.641,
+      "end": 154.991,
+      "start_time": "00:02:27,641",
+      "end_time": "00:02:34,991",
+      "text": "vừa giờ chúng ta được ChatGPT cho anh chị chọn cái kích thước là 16.9 chương 7 9.16 hay 3.1"
+    },
+    {
+      "id": 20,
+      "start": 154.991,
+      "end": 156.591,
+      "start_time": "00:02:34,991",
+      "end_time": "00:02:36,591",
+      "text": "4:3, 1:1 đó"
+    },
+    {
+      "id": 21,
+      "start": 157.95,
+      "end": 169.0,
+      "start_time": "00:02:37,950",
+      "end_time": "00:02:49,000",
+      "text": "Chúng ta nhấn tạo hình ảnh. Anh chị lấy 1 trong 2 hình ảnh. Em sẽ nhấn tải hình ảnh này xuống. Tải xuống nhé. Mọi người để 1K cũng được. Và anh chị mở"
+    },
+    {
+      "id": 22,
+      "start": 169.0,
+      "end": 180.0,
+      "start_time": "00:02:49,000",
+      "end_time": "00:03:00,000",
+      "text": "1 cái tab ChatGPT mới và tải hình ảnh vừa giờ chúng ta tải xuống đây. Sau đó thì chúng ta đến với cái Prompt thứ 2 là câu lệnh để tạo ra Master Prompt."
+    },
+    {
+      "id": 23,
+      "start": 180.0,
+      "end": 190.87,
+      "start_time": "00:03:00,000",
+      "end_time": "00:03:10,870",
+      "text": "Nói cho anh chị hiểu là Master Prompt là nó sẽ tạo ra một prompt chi tiết để sau anh chị tạo ra những cái hình ảnh như thế này thì nó sẽ trả cho anh chị prompt."
+    },
+    {
+      "id": 24,
+      "start": 191.59,
+      "end": 198.65,
+      "start_time": "00:03:11,590",
+      "end_time": "00:03:18,650",
+      "text": "Nghĩa là khi mà có bất kỳ hình ảnh nào liên quan đến cái nhạc cổ Trung Hoa là anh chị vất lên là nó tự động tạo ra prompt."
+    },
+    {
+      "id": 25,
+      "start": 198.65,
+      "end": 205.01,
+      "start_time": "00:03:18,650",
+      "end_time": "00:03:25,010",
+      "text": "Bây giờ anh chị copy từ cái câu lệnh này nhé. Anh chị trả lại kết quả cho nó."
+    },
+    {
+      "id": 26,
+      "start": 210.13,
+      "end": 212.85,
+      "start_time": "00:03:30,130",
+      "end_time": "00:03:32,850",
+      "text": "Bây giờ là vất cái hình ảnh vừa giờ chúng ta đưa lên."
+    },
+    {
+      "id": 27,
+      "start": 218.29,
+      "end": 219.59,
+      "start_time": "00:03:38,290",
+      "end_time": "00:03:39,590",
+      "text": "Và anh chị gửi lên là được."
+    },
+    {
+      "id": 28,
+      "start": 219.59,
+      "end": 228.55,
+      "start_time": "00:03:39,590",
+      "end_time": "00:03:48,550",
+      "text": "Bây giờ là nó đã nêu lại cái toàn bộ những thứ mà anh chị đã đưa cho nó để tạo ra Master Prompt"
+    },
+    {
+      "id": 29,
+      "start": 228.55,
+      "end": 231.75,
+      "start_time": "00:03:48,550",
+      "end_time": "00:03:51,750",
+      "text": "Và bây giờ là vất hình ảnh nhạc cổ Trung Hoa lên"
+    },
+    {
+      "id": 30,
+      "start": 231.75,
+      "end": 234.23,
+      "start_time": "00:03:51,750",
+      "end_time": "00:03:54,230",
+      "text": "Cái tab này anh chị nên ghi nhớ cho em"
+    },
+    {
+      "id": 31,
+      "start": 234.23,
+      "end": 238.23,
+      "start_time": "00:03:54,230",
+      "end_time": "00:03:58,230",
+      "text": "Chỉ cần chúng ta vất cái hình ảnh nhạc cổ Trung Hoa lên là nó sẽ tạo ra cái prompt này"
+    },
+    {
+      "id": 32,
+      "start": 238.23,
+      "end": 239.53,
+      "start_time": "00:03:58,230",
+      "end_time": "00:03:59,530",
+      "text": "Prompt 10 giây nhé"
+    },
+    {
+      "id": 33,
+      "start": 239.59,
+      "end": 241.47,
+      "start_time": "00:03:59,590",
+      "end_time": "00:04:01,470",
+      "text": "anh chị nhấn Sao chép prompt 10s"
+    },
+    {
+      "id": 34,
+      "start": 241.47,
+      "end": 242.95,
+      "start_time": "00:04:01,470",
+      "end_time": "00:04:02,950",
+      "text": "bây giờ chúng ta lên Grok"
+    },
+    {
+      "id": 35,
+      "start": 242.95,
+      "end": 245.15,
+      "start_time": "00:04:02,950",
+      "end_time": "00:04:05,150",
+      "text": "và tải cái hình ảnh vừa giờ chúng ta đưa lên"
+    },
+    {
+      "id": 36,
+      "start": 246.15,
+      "end": 247.15,
+      "start_time": "00:04:06,150",
+      "end_time": "00:04:07,150",
+      "text": "và anh chị dán vào"
+    },
+    {
+      "id": 37,
+      "start": 248.35,
+      "end": 251.15,
+      "start_time": "00:04:08,350",
+      "end_time": "00:04:11,150",
+      "text": "chọn 720 và chúng ta chọn 10s"
+    },
+    {
+      "id": 38,
+      "start": 252.95,
+      "end": 254.466,
+      "start_time": "00:04:12,950",
+      "end_time": "00:04:14,466",
+      "text": "nó đang tạo video cho anh chị nhé"
+    },
+    {
+      "id": 39,
+      "start": 254.466,
+      "end": 260.226,
+      "start_time": "00:04:14,466",
+      "end_time": "00:04:20,226",
+      "text": "Trong khi chờ đợi Grok tạo video thì anh chị hãy tạo cho em một cái ChatGPT mới."
+    },
+    {
+      "id": 40,
+      "start": 261.266,
+      "end": 264.806,
+      "start_time": "00:04:21,266",
+      "end_time": "00:04:24,806",
+      "text": "Và anh chị thêm này, thêm cái ảnh, vẫn thêm cái ảnh ấy lên nhé."
+    },
+    {
+      "id": 41,
+      "start": 265.0,
+      "end": 269.786,
+      "start_time": "00:04:25,000",
+      "end_time": "00:04:29,786",
+      "text": "Và bây giờ là câu lệnh, câu lệnh thứ 3 để tạo ra Master Prompt làm nhạc."
+    },
+    {
+      "id": 42,
+      "start": 270.106,
+      "end": 275.646,
+      "start_time": "00:04:30,106",
+      "end_time": "00:04:35,646",
+      "text": "Anh chị hãy copy hoặc viết ra giống như cái câu lệnh mà em đang ghi ở trên màn hình nhé."
+    },
+    {
+      "id": 43,
+      "start": 276.386,
+      "end": 279.106,
+      "start_time": "00:04:36,386",
+      "end_time": "00:04:39,106",
+      "text": "Anh chị dán vào, nhấn tải lên."
+    },
+    {
+      "id": 44,
+      "start": 279.106,
+      "end": 286.166,
+      "start_time": "00:04:39,106",
+      "end_time": "00:04:46,166",
+      "text": "Bây giờ nó cũng sẽ cho anh chị 1 cái Master Prompt để tạo ra cái nhạc nhé. Sau anh chị gửi"
+    },
+    {
+      "id": 45,
+      "start": 286.166,
+      "end": 293.226,
+      "start_time": "00:04:46,166",
+      "end_time": "00:04:53,226",
+      "text": "cái hình ảnh lên là nó sẽ tạo ra cho anh chị 1 prompt để tạo nhạc trên Suno AI luôn."
+    },
+    {
+      "id": 46,
+      "start": 293.786,
+      "end": 296.306,
+      "start_time": "00:04:53,786",
+      "end_time": "00:04:56,306",
+      "text": "Đấy là nó tạo ra cho anh chị 1 câu lệnh ghi nhớ này."
+    },
+    {
+      "id": 47,
+      "start": 301.566,
+      "end": 308.306,
+      "start_time": "00:05:01,566",
+      "end_time": "00:05:08,306",
+      "text": "Anh chị nhấn Sao chép câu lệnh ghi nhớ mà cái Master Prompt nhạc nó tạo ra, gửi lại cho nó."
+    },
+    {
+      "id": 48,
+      "start": 308.75,
+      "end": 321.95,
+      "start_time": "00:05:08,750",
+      "end_time": "00:05:21,950",
+      "text": "Bây giờ anh chị tải lại cái hình ảnh lên để chúng ta yêu cầu nó tạo ra một from để tạo nhạc trên Suno AI."
+    },
+    {
+      "id": 49,
+      "start": 323.95,
+      "end": 327.95,
+      "start_time": "00:05:23,950",
+      "end_time": "00:05:27,950",
+      "text": "Cũng giống như cái bước mà chúng ta tạo hình ảnh ra video nhé."
+    },
+    {
+      "id": 50,
+      "start": 329.83,
+      "end": 333.15,
+      "start_time": "00:05:29,830",
+      "end_time": "00:05:33,150",
+      "text": "Chúng ta đã có một cái Suno AI Style Prompt này."
+    },
+    {
+      "id": 51,
+      "start": 334.25,
+      "end": 335.41,
+      "start_time": "00:05:34,250",
+      "end_time": "00:05:35,410",
+      "text": "Anh chị nhấn Sao chép."
+    },
+    {
+      "id": 52,
+      "start": 338.75,
+      "end": 348.12,
+      "start_time": "00:05:38,750",
+      "end_time": "00:05:48,120",
+      "text": "Nhấn sao chép này. Trong phần Suno AI, anh chị nhấn tạo lên, chọn đơn giản nhé. Chúng ta không cần trình độ cao đâu. Nhấn"
+    },
+    {
+      "id": 53,
+      "start": 348.12,
+      "end": 357.49,
+      "start_time": "00:05:48,120",
+      "end_time": "00:05:57,490",
+      "text": "cho em đơn giản và dán cái prompt vừa giờ vào. Anh chị nhấn vào nhạc cụ nhé. Sau đó là nhấn tạo bài hát này."
+    },
+    {
+      "id": 54,
+      "start": 357.49,
+      "end": 369.69,
+      "start_time": "00:05:57,490",
+      "end_time": "00:06:09,690",
+      "text": "Trong khi chờ đợi cái Suno AI tạo nhạc cho chúng ta thì chúng ta sang cho em cái phần Grok này."
+    },
+    {
+      "id": 55,
+      "start": 369.69,
+      "end": 378.79,
+      "start_time": "00:06:09,690",
+      "end_time": "00:06:18,790",
+      "text": "Anh chị nhìn cái video đây. Video nó sẽ giữ nguyên khung mình như thế này là được nhé anh chị nhé."
+    },
+    {
+      "id": 56,
+      "start": 378.79,
+      "end": 384.79,
+      "start_time": "00:06:18,790",
+      "end_time": "00:06:24,790",
+      "text": "để tí nữa chúng ta là lấy video 10 giây này chúng ta tạo ra video một tiếng nhé"
+    },
+    {
+      "id": 57,
+      "start": 384.79,
+      "end": 389.19,
+      "start_time": "00:06:24,790",
+      "end_time": "00:06:29,190",
+      "text": "rồi chúng ta tải cái gốc này về cho em tải video này về"
+    },
+    {
+      "id": 58,
+      "start": 389.19,
+      "end": 396.79,
+      "start_time": "00:06:29,190",
+      "end_time": "00:06:36,790",
+      "text": "sau khi Suno AI tạo cho anh chị em xong cái nhạc thì anh chị em tải về"
+    },
+    {
+      "id": 59,
+      "start": 405.0,
+      "end": 412.84,
+      "start_time": "00:06:45,000",
+      "end_time": "00:06:52,840",
+      "text": "Sau khi vào trong cái phần CapCut, anh chị tải cho em 2 cái file, 1 file video vừa tạo trên Grok và cái nhạc này."
+    },
+    {
+      "id": 60,
+      "start": 412.84,
+      "end": 425.6,
+      "start_time": "00:06:52,840",
+      "end_time": "00:07:05,600",
+      "text": "Sau khi thêm nhạc vào xong thì anh chị nhấn Sao chép 2 bản đi. Tắt âm thanh nhé anh chị nhé. Tắt âm thanh của video đi. Và anh chị nhìn nhé. Nếu mà như thế này"
+    },
+    {
+      "id": 61,
+      "start": 425.6,
+      "end": 438.681,
+      "start_time": "00:07:05,600",
+      "end_time": "00:07:18,681",
+      "text": "thì chúng ta sẽ không làm được cái video 1 tiếng. Anh chị nhớ cho em là trong cái video thứ 2 thì anh chị bật cho em cái đảo ngược này nhé. Nhấn vào đảo ngược này."
+    },
+    {
+      "id": 62,
+      "start": 438.681,
+      "end": 443.621,
+      "start_time": "00:07:18,681",
+      "end_time": "00:07:23,621",
+      "text": "Đảo ngược nha anh chị nha, không phải phản chiếu nha, chúng ta chọn đảo ngược này."
+    },
+    {
+      "id": 63,
+      "start": 445.421,
+      "end": 449.081,
+      "start_time": "00:07:25,421",
+      "end_time": "00:07:29,081",
+      "text": "Thì anh chị sẽ nhìn thấy là cái hình ảnh nó rất là liền nha."
+    },
+    {
+      "id": 64,
+      "start": 450.941,
+      "end": 452.581,
+      "start_time": "00:07:30,941",
+      "end_time": "00:07:32,581",
+      "text": "Chúng ta sẽ xem qua này."
+    },
+    {
+      "id": 65,
+      "start": 455.581,
+      "end": 456.701,
+      "start_time": "00:07:35,581",
+      "end_time": "00:07:36,701",
+      "text": "Nó sẽ liền lại."
+    },
+    {
+      "id": 66,
+      "start": 457.241,
+      "end": 460.601,
+      "start_time": "00:07:37,241",
+      "end_time": "00:07:40,601",
+      "text": "Thì sau khi có rồi thì chúng ta sẽ sao chép lên."
+    },
+    {
+      "id": 67,
+      "start": 461.281,
+      "end": 462.381,
+      "start_time": "00:07:41,281",
+      "end_time": "00:07:42,381",
+      "text": "Anh chị copy cho em."
+    },
+    {
+      "id": 68,
+      "start": 463.101,
+      "end": 465.421,
+      "start_time": "00:07:43,101",
+      "end_time": "00:07:45,421",
+      "text": "Copy 2 cái nha, chứ không phải copy 1 cái nữa nha."
+    },
+    {
+      "id": 69,
+      "start": 466.081,
+      "end": 467.581,
+      "start_time": "00:07:46,081",
+      "end_time": "00:07:47,581",
+      "text": "Mà chúng ta sẽ copy 2 cái nha."
+    },
+    {
+      "id": 70,
+      "start": 470.9,
+      "end": 478.67,
+      "start_time": "00:07:50,900",
+      "end_time": "00:07:58,670",
+      "text": "Đấy, thì anh chị nhìn thấy là chúng ta đã tạo ra được cái video như thế này."
+    },
+    {
+      "id": 71,
+      "start": 478.67,
+      "end": 486.44,
+      "start_time": "00:07:58,670",
+      "end_time": "00:08:06,440",
+      "text": "Thì đối với cái đoạn nhạc nó có cái hay như thế này. Cái nhạc nhé, anh chị copy"
+    },
+    {
+      "id": 72,
+      "start": 486.44,
+      "end": 493.66,
+      "start_time": "00:08:06,440",
+      "end_time": "00:08:13,660",
+      "text": "cái link nhạc này để cho nó phù hợp luôn. Ở trong cái nhạc em vừa copy cái"
+    },
+    {
+      "id": 73,
+      "start": 493.66,
+      "end": 500.88,
+      "start_time": "00:08:13,660",
+      "end_time": "00:08:20,880",
+      "text": "nhạc ra thì chúng ta sẽ lựa chọn cái gì ạ? Ở phần này nhé, anh chị ra."
+    },
+    {
+      "id": 74,
+      "start": 501.0,
+      "end": 512.5,
+      "start_time": "00:08:21,000",
+      "end_time": "00:08:32,500",
+      "text": "Anh chị kéo cho em cái âm này cho nó bé xuống. Xong cái âm này thì nó sẽ cao lên. Để làm sao cho em 2 cái này nó phù hợp nhé. Anh chị thẩm qua cái nhạc của mình nhé."
+    },
+    {
+      "id": 75,
+      "start": 512.5,
+      "end": 515.32,
+      "start_time": "00:08:32,500",
+      "end_time": "00:08:35,320",
+      "text": "nhạc của mình"
+    },
+    {
+      "id": 76,
+      "start": 522.0,
+      "end": 523.5,
+      "start_time": "00:08:42,000",
+      "end_time": "00:08:43,500",
+      "text": "đó"
+    },
+    {
+      "id": 77,
+      "start": 523.5,
+      "end": 531.22,
+      "start_time": "00:08:43,500",
+      "end_time": "00:08:51,220",
+      "text": "và tiếp tục nha chúng ta sẽ"
+    },
+    {
+      "id": 78,
+      "start": 531.22,
+      "end": 533.0,
+      "start_time": "00:08:51,220",
+      "end_time": "00:08:53,000",
+      "text": "Chúng ta sẽ ăn lấy cái này luôn"
+    },
+    {
+      "id": 79,
+      "start": 533.0,
+      "end": 534.04,
+      "start_time": "00:08:53,000",
+      "end_time": "00:08:54,040",
+      "text": "Đã"
+    },
+    {
+      "id": 80,
+      "start": 534.04,
+      "end": 536.0,
+      "start_time": "00:08:54,040",
+      "end_time": "00:08:56,000",
+      "text": "Anh chị kéo xuống cho em tầm 10."
+    },
+    {
+      "id": 81,
+      "start": 536.68,
+      "end": 538.5,
+      "start_time": "00:08:56,680",
+      "end_time": "00:08:58,500",
+      "text": "Cái này chúng ta xem là 8 đúng không?"
+    },
+    {
+      "id": 82,
+      "start": 538.5,
+      "end": 543.5,
+      "start_time": "00:08:58,500",
+      "end_time": "00:09:03,500",
+      "text": "anh chị nhìn thấy ở cái kéo âm thanh kia thì chúng ta để 8.0 giây nhé"
+    },
+    {
+      "id": 83,
+      "start": 543.5,
+      "end": 546.5,
+      "start_time": "00:09:03,500",
+      "end_time": "00:09:06,500",
+      "text": "thì cái này anh chị em kéo cho em tầm 8 nhé"
+    },
+    {
+      "id": 84,
+      "start": 546.5,
+      "end": 550.5,
+      "start_time": "00:09:06,500",
+      "end_time": "00:09:10,500",
+      "text": "9 này, hoặc không thì anh chị để cho em ở trên cái mờ dần này"
+    },
+    {
+      "id": 85,
+      "start": 550.5,
+      "end": 553.066,
+      "start_time": "00:09:10,500",
+      "end_time": "00:09:13,066",
+      "text": "8.0"
+    },
+    {
+      "id": 86,
+      "start": 553.066,
+      "end": 559.066,
+      "start_time": "00:09:13,066",
+      "end_time": "00:09:19,066",
+      "text": "Chúng ta sẽ copy cái nhạc thứ 2 này nhé"
+    },
+    {
+      "id": 87,
+      "start": 559.066,
+      "end": 570.326,
+      "start_time": "00:09:19,066",
+      "end_time": "00:09:30,326",
+      "text": "Nếu mà để cho cái đoạn nó làm sao để cho nó hiệu quả, mình biết cái đoạn trước đoạn sau ấy, để cho nó ok hơn ấy, thì anh chị cắt cho em cái đoạn này"
+    },
+    {
+      "id": 88,
+      "start": 570.33,
+      "end": 583.89,
+      "start_time": "00:09:30,330",
+      "end_time": "00:09:43,890",
+      "text": "Ctrl B nhé, anh chị nhấn vào cái nhạc này, kéo đến cái thanh trắng ở đâu thì vị trí nó ở đó. Đây, anh chị cắt cho em cái đoạn này. Và nhấn Sao chép cái đoạn này cho em nhé. Nhấn Sao chép này. Thì gì ạ? Thì chúng ta cứ"
+    },
+    {
+      "id": 89,
+      "start": 583.89,
+      "end": 597.706,
+      "start_time": "00:09:43,890",
+      "end_time": "00:09:57,706",
+      "text": "kéo đến cái cuối cùng của cái video này nhé. Thì chúng ta biết là cái đoạn kia chúng ta dừng ở đâu thì đoạn này chúng ta sẽ dừng ở đây. Đấy, bây giờ thì chúng ta sẽ có 2 cái này như thế này rồi. Nhấn tạo clip tiếp cho em."
+    },
+    {
+      "id": 90,
+      "start": 600.326,
+      "end": 603.886,
+      "start_time": "00:10:00,326",
+      "end_time": "00:10:03,886",
+      "text": "Và cứ thế là anh chị copy cái nhạc nhẹ ra cho em."
+    },
+    {
+      "id": 91,
+      "start": 606.086,
+      "end": 606.926,
+      "start_time": "00:10:06,086",
+      "end_time": "00:10:06,926",
+      "text": "Copy này."
+    },
+    {
+      "id": 92,
+      "start": 609.406,
+      "end": 610.326,
+      "start_time": "00:10:09,406",
+      "end_time": "00:10:10,326",
+      "text": "Xóa cái này đi."
+    },
+    {
+      "id": 93,
+      "start": 615.726,
+      "end": 620.686,
+      "start_time": "00:10:15,726",
+      "end_time": "00:10:20,686",
+      "text": "Cứ nhớ cho em là cái bé này ở đâu thì bắt đầu cái đoạn nhạc nó ở đó nhé."
+    },
+    {
+      "id": 94,
+      "start": 622.286,
+      "end": 623.166,
+      "start_time": "00:10:22,286",
+      "end_time": "00:10:23,166",
+      "text": "Dán đây cho em."
+    },
+    {
+      "id": 95,
+      "start": 625.2,
+      "end": 637.2,
+      "start_time": "00:10:25,200",
+      "end_time": "00:10:37,200",
+      "text": "nhớ là mọi người phải có cái gu thẩm nhạc đã thì khi mà có như này rồi thì anh chị nhớ cho em là anh chị nhấn lên nhân các video này lên"
+    },
+    {
+      "id": 96,
+      "start": 637.2,
+      "end": 645.2,
+      "start_time": "00:10:37,200",
+      "end_time": "00:10:45,200",
+      "text": "nhấn cho em video lên copy nhấn lên"
+    },
+    {
+      "id": 97,
+      "start": 645.2,
+      "end": 655.13,
+      "start_time": "00:10:45,200",
+      "end_time": "00:10:55,130",
+      "text": "Chúng ta làm thủ công hết nhé. Làm những cái dòng nhạc này anh chị lên cho em là thủ công. Nhớ cho em là cái video"
+    },
+    {
+      "id": 98,
+      "start": 655.13,
+      "end": 665.06,
+      "start_time": "00:10:55,130",
+      "end_time": "00:11:05,060",
+      "text": "đầu tiên là hai cái đoạn đầu thì anh chị nhớ là đoạn đầu hay đoạn sau thì anh chị phải nhớ cái đoạn này. Cắt này."
+    },
+    {
+      "id": 99,
+      "start": 665.06,
+      "end": 673.06,
+      "start_time": "00:11:05,060",
+      "end_time": "00:11:13,060",
+      "text": "video này để tầm 25 phút thôi anh chỉ có thể đếm tiếng được và trong cái này nữa thì chúng ta sẽ thêm những cái hiệu ứng"
+    },
+    {
+      "id": 100,
+      "start": 673.06,
+      "end": 677.06,
+      "start_time": "00:11:13,060",
+      "end_time": "00:11:17,060",
+      "text": "anh chị tìm cho em là lấp lánh"
+    },
+    {
+      "id": 101,
+      "start": 677.06,
+      "end": 685.06,
+      "start_time": "00:11:17,060",
+      "end_time": "00:11:25,060",
+      "text": "đây nha trong cái phần hiệu ứng anh chị chọn cho em cái lấp lánh này"
+    },
+    {
+      "id": 102,
+      "start": 685.06,
+      "end": 693.06,
+      "start_time": "00:11:25,060",
+      "end_time": "00:11:33,060",
+      "text": "anh chị dán cho em cái phát sáng này đi cho cường độ nó nhẹ"
+    },
+    {
+      "id": 103,
+      "start": 693.06,
+      "end": 703.26,
+      "start_time": "00:11:33,060",
+      "end_time": "00:11:43,260",
+      "text": "bộ lọc nó nhẹ rồi xoay nó sẽ có những cái phát sáng ở trong mà nó sẽ không tính là lặp đi lặp lại và mây anh chị em nhé"
+    },
+    {
+      "id": 104,
+      "start": 703.26,
+      "end": 713.26,
+      "start_time": "00:11:43,260",
+      "end_time": "00:11:53,260",
+      "text": "Anh chị làm sao cho em là tìm những cái hiệu ứng băng tuyết mây này"
+    },
+    {
+      "id": 105,
+      "start": 713.26,
+      "end": 716.26,
+      "start_time": "00:11:53,260",
+      "end_time": "00:11:56,260",
+      "text": "Ví dụ em chọn cái này đi"
+    },
+    {
+      "id": 106,
+      "start": 716.26,
+      "end": 723.26,
+      "start_time": "00:11:56,260",
+      "end_time": "00:12:03,260",
+      "text": "không khí này, cực sáng này, khoảng tốc độ này, bộ lọc cho bé"
+    },
+    {
+      "id": 107,
+      "start": 723.26,
+      "end": 724.21,
+      "start_time": "00:12:03,260",
+      "end_time": "00:12:04,210",
+      "text": "Cảm ơn."
+    },
+    {
+      "id": 108,
+      "start": 724.21,
+      "end": 732.93,
+      "start_time": "00:12:04,210",
+      "end_time": "00:12:12,930",
+      "text": "Chị ăn cho em vài cái hiệu ứng mà làm sao để chúng ta thẩm được cái màu sắc nhé. Đó, đây là một cái video về nhạc cổ Trung Hoa nhé anh chị em nhé."
+    },
+    {
+      "id": 109,
+      "start": 733.0,
+      "end": 745.91,
+      "start_time": "00:12:13,000",
+      "end_time": "00:12:25,910",
+      "text": "Và anh chị có thể nếu mà làm xong anh chị chọn tất cả anh chị nhấn cho em tạo clip ghép thì nó đã ra một cái file video như thế này. Rất là dài 25 phút. Thì làm cực kỳ nhanh nhé. Và tiếp theo đến"
+    },
+    {
+      "id": 110,
+      "start": 745.91,
+      "end": 753.1,
+      "start_time": "00:12:25,910",
+      "end_time": "00:12:33,100",
+      "text": "chúng ta đến cái phần là tạo thumbnail nhé anh chị em. Tiếp theo câu prompt tạo ảnh thumbnail nhé anh chị nhé. Anh"
+    },
+    {
+      "id": 111,
+      "start": 753.1,
+      "end": 760.29,
+      "start_time": "00:12:33,100",
+      "end_time": "00:12:40,290",
+      "text": "chị copy cho em cái câu prompt này. Hoặc là anh chị viết ra nhé. Viết đúng cái câu prompt này cho em."
+    },
+    {
+      "id": 112,
+      "start": 760.29,
+      "end": 770.81,
+      "start_time": "00:12:40,290",
+      "end_time": "00:12:50,810",
+      "text": "Thì ở dưới cái prompt mà tạo ra nhạc ấy, thì anh chị vào cho em cái đấy, update cái hình ảnh và gốc của chúng ta lên."
+    },
+    {
+      "id": 113,
+      "start": 771.37,
+      "end": 782.81,
+      "start_time": "00:12:51,370",
+      "end_time": "00:13:02,810",
+      "text": "Video như thế nào thì thumbnail chúng ta làm như thế nhé, chúng ta không làm kiểu như là làm cho nó có hay là nội dung trong video như thế này, anh chị làm cái hình ảnh thumbnail khác thì không được nhé."
+    },
+    {
+      "id": 114,
+      "start": 782.87,
+      "end": 789.27,
+      "start_time": "00:13:02,870",
+      "end_time": "00:13:09,270",
+      "text": "Sau khi đợi một lúc thì ChatGPT đã cho chúng ta ra một cái hình ảnh thumbnail nhé, anh chị có thể nhìn thấy cái hình ảnh thumbnail này."
+    },
+    {
+      "id": 115,
+      "start": 789.27,
+      "end": 802.67,
+      "start_time": "00:13:09,270",
+      "end_time": "00:13:22,670",
+      "text": "hoặc là anh chị có thể thêm những cái tư duy để viết cái thumbnail nó khác hơn. Điều được đó là do mình sáng tạo hoặc là có điểm nhấn hay không là tùy theo cái mắt của anh chị thẩm mỹ được cái hình ảnh thumbnail này."
+    }
+  ]
+}

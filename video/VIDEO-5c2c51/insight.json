@@ -1,0 +1,116 @@
+{
+  "sku": "VIDEO-5c2c51",
+  "title": "Chi tiết cách tôi làm Video YouTube bằng công cụ AI Đơn Giản đang tạo ra 15.000$ đô la mỗi tháng",
+  "Summary": "Quy trình thực chiến từ A–Z tạo video AI chủ đề Chủ nghĩa Khắc Kỷ (Stoicism) tiếng Anh cho thị trường quốc tế (mang lại doanh thu 15.000 USD/tháng): (A) Phân tích kênh mẫu ngoại Stoic Journal (@RealStoicJournal, 216.000 sub, video '10 THINGS You SHOULD do every MORNING' đạt 1 triệu view, dài 35:14) và dùng ChatGPT viết kịch bản tiếng Anh dài ~5.000 từ cho thời lượng 35–40 phút; (B) Đưa toàn bộ file Word kịch bản vào tính năng Studio/Projects (Audiobook) của ElevenLabs chọn giọng đọc nam trầm 'Brian' để xuất audio liền mạch và dùng 2 cách sao chép phong cách ảnh tượng đá đối thủ (nhờ ChatGPT mô tả ảnh hoặc dùng lệnh /describe + /imagine trên Discord Midjourney); (C) Dựng thành phẩm 1080p 30fps trên CapCut PC với phụ đề tiếng Anh tự động font Montserrat cỡ 9, cắt ảnh tối đa 12 giây/ảnh, thêm hiệu ứng Zoom cận + Nhiễu 2 + Nhiễu đen + Lắc qua lại và nhạc nền -15 đến -20 dB.",
+  "tools_mentioned": [
+    "ChatGPT",
+    "ElevenLabs",
+    "Midjourney",
+    "Discord",
+    "CapCut"
+  ],
+  "channels_mentioned": [
+    "@RealStoicJournal"
+  ],
+  "course_docs": [
+    {
+      "title": "Quy Trình Làm Video Triết Lý — Hướng Dẫn Từng Bước (ChatGPT + Vbee/ElevenLabs + Midjourney + CapCut)",
+      "file": "assets/docs-huan/Quy_trinh_lam_video_triet_ly.pdf",
+      "readFile": "assets/docs-huan/Quy_trinh_lam_video_triet_ly.pdf.md",
+      "link": "https://drive.google.com/file/d/1H5qzM3fJAtCczdIQ9F7kTyxgZov5a_Aw/view"
+    },
+    {
+      "title": "Quy Trình Triển Khai Kênh Triết Lý Nghe Để Ngủ (Offline K6)",
+      "file": "assets/docs-huan/OFFLINE_K6_-_QUY_TRINH_TRIEN_KHAI_KENH_CHU_DE_NGHE_DE_DI_NGU/QUY_TRINH_TRIEN_KHAI_KENH_TRIET_LY_NGHE_DE_NGU.pdf",
+      "readFile": "assets/docs-huan/OFFLINE_K6_-_QUY_TRINH_TRIEN_KHAI_KENH_CHU_DE_NGHE_DE_DI_NGU/QUY_TRINH_TRIEN_KHAI_KENH_TRIET_LY_NGHE_DE_NGU.pdf.md",
+      "link": "https://drive.google.com/file/d/1dAmtWOF7CUvnkEHMD8MDKGAfjfmqdKD3/view"
+    },
+    {
+      "title": "Bộ Các Câu Prompt Mẫu Làm Kênh Triết Lý (Kịch Bản, Tạo Ảnh & Nhạc Nền)",
+      "file": "assets/docs-huan/OFFLINE_K6_-_QUY_TRINH_TRIEN_KHAI_KENH_CHU_DE_NGHE_DE_DI_NGU/PROJECT_VA_SAN_PHAM/CAC_CAU_PROMPT.txt",
+      "readFile": "assets/docs-huan/OFFLINE_K6_-_QUY_TRINH_TRIEN_KHAI_KENH_CHU_DE_NGHE_DE_DI_NGU/PROJECT_VA_SAN_PHAM/CAC_CAU_PROMPT.txt",
+      "link": "https://drive.google.com/file/d/1Zbm73pEXkE4X7bEtzBQMv3IYaDK5NJrWvTmQ0_-clmA/view"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "label": "Giới thiệu quy trình làm video Chủ nghĩa Khắc Kỷ (Stoic) tiếng Anh cho thị trường nước ngoài",
+      "seconds": 0
+    },
+    {
+      "time": "00:42",
+      "label": "Phân tích kênh ngoại mẫu (216.000 người đăng ký, video 1 triệu view: 10 điều bạn nên làm vào buổi sáng)",
+      "seconds": 42
+    },
+    {
+      "time": "02:01",
+      "label": "Sử dụng ChatGPT viết kịch bản tiếng Anh và bí quyết 5.000 từ tiếng Anh cho video dài 40 phút",
+      "seconds": 121
+    },
+    {
+      "time": "04:14",
+      "label": "Tạo giọng đọc tiếng Anh truyền cảm bằng tính năng Audiobook trên ElevenLabs (giọng đọc Brian)",
+      "seconds": 254
+    },
+    {
+      "time": "06:49",
+      "label": "Cách 1 lấy prompt ảnh từ kênh đối thủ: Chụp màn hình và dùng ChatGPT mô tả thành câu lệnh Midjourney",
+      "seconds": 409
+    },
+    {
+      "time": "08:26",
+      "label": "Cách 2 lấy prompt ảnh: Dùng lệnh /describe và /imagine với Bot Midjourney trên Discord (chọn U1-U4, V1-V4)",
+      "seconds": 506
+    },
+    {
+      "time": "10:58",
+      "label": "Đưa nguyên liệu vào CapCut Pro, tạo phụ đề tự động ngôn ngữ tự động phát hiện và chọn phông chữ Montserrat",
+      "seconds": 658
+    },
+    {
+      "time": "16:51",
+      "label": "Sắp xếp ảnh minh họa (không quá 12 giây/ảnh), thêm hiệu ứng zoom cận, chuyển cảnh Kết hợp và nhạc nền trừ 15 đến 20 dB",
+      "seconds": 1011
+    }
+  ],
+  "key_takeaways": [
+    "Định mức độ dài kịch bản tiếng Anh chuẩn xác: 5.000 từ tiếng Anh tương đương khoảng 35–40 phút giọng đọc (bằng thời lượng video 1 triệu view của kênh mẫu Stoic Journal)",
+    "Sử dụng mục Studio / Projects (Audiobook) trên ElevenLabs cho phép tải thẳng file Word (.docx) kịch bản dài lên để xuất toàn bộ giọng đọc 'Brian' trong 1 lần thay vì cắt dán lẻ từng đoạn nhỏ ở mục Text to Speech",
+    "Hai kỹ thuật bóc tách chính xác 100% phong cách ảnh của đối thủ: (Cách 1) Chụp ảnh màn hình đối thủ gửi vào ChatGPT yêu cầu viết prompt Midjourney tiếng Anh chi tiết; (Cách 2) Dùng lệnh /describe của Midjourney Bot trên Discord để trích xuất 4 prompt chuẩn kèm tham số --ar 16:9",
+    "Quy tắc thao tác trên Discord Midjourney: Các nút U1–U4 dùng để tách và nâng cấp độ phân giải bức ảnh ưng ý (Upscale), còn V1–V4 dùng để tạo thêm 4 biến thể mới dựa trên bố cục bức ảnh đó (Variation)",
+    "Dựng video ngoại trên CapCut PC tuân thủ chuẩn công nghiệp: Phụ đề tự động font Montserrat cỡ 9 ở vị trí trung tâm hoặc 1/3 dưới, mỗi ảnh kéo dài tối đa 12 giây kèm keyframe Zoom cận cảnh + bộ 3 hiệu ứng (Nhiễu 2, Nhiễu đen, Lắc qua lại) và nhạc nền -15 đến -20 dB"
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước sản xuất video Chủ nghĩa Khắc Kỷ tiếng Anh (Stoicism) kiếm tiền view ngoại bằng ChatGPT, ElevenLabs, Midjourney và CapCut",
+    "additional": [
+      "Chọn chủ đề đã đạt triệu view trên kênh ngoại mẫu (như Stoic Journal - 216K sub) và dùng chuỗi câu lệnh ChatGPT triển khai từng phần dàn ý cho đến khi đủ khoảng 5.000 từ tiếng Anh (~35–40 phút)",
+      "Lưu kịch bản thành file Word (.docx), tải trực tiếp lên tính năng Studio (Audiobook) của ElevenLabs, chọn giọng đọc nam trầm 'Brian' và nhấn Export để xuất file MP3 liền mạch",
+      "Chụp màn hình bức ảnh tượng đá đẹp nhất của kênh đối thủ, đưa vào ChatGPT hoặc lệnh /describe trên Discord Midjourney để lấy câu lệnh tiếng Anh rồi dùng /imagine (tỷ lệ --ar 16:9) tạo bộ ảnh và bấm U1–U4 để tải ảnh nét",
+      "Mở CapCut PC (30fps, Rec. 709 SDR), nhập file âm thanh và bộ ảnh, chạy Phụ đề tự động (Tự động phát hiện ngôn ngữ), chọn font chữ Montserrat cỡ 9 kèm hiệu ứng chữ Rõ dần",
+      "Cắt ghép các bức ảnh khớp ý từng câu thoại (tối đa 12 giây/ảnh), tạo chuyển động Zoom cận cảnh, phủ lớp hiệu ứng Nhiễu 2 + Nhiễu đen + Lắc qua lại, chèn chuyển cảnh Kết hợp và nhạc nền từ -15 đến -20 dB"
+    ]
+  },
+  "sop_steps": [
+    "Chọn chủ đề đã đạt triệu view trên kênh ngoại mẫu (như Stoic Journal - 216K sub) và dùng chuỗi câu lệnh ChatGPT triển khai từng phần dàn ý cho đến khi đủ khoảng 5.000 từ tiếng Anh (~35–40 phút)",
+    "Lưu kịch bản thành file Word (.docx), tải trực tiếp lên tính năng Studio (Audiobook) của ElevenLabs, chọn giọng đọc nam trầm 'Brian' và nhấn Export để xuất file MP3 liền mạch",
+    "Chụp màn hình bức ảnh tượng đá đẹp nhất của kênh đối thủ, đưa vào ChatGPT hoặc lệnh /describe trên Discord Midjourney để lấy câu lệnh tiếng Anh rồi dùng /imagine (tỷ lệ --ar 16:9) tạo bộ ảnh và bấm U1–U4 để tải ảnh nét",
+    "Mở CapCut PC (30fps, Rec. 709 SDR), nhập file âm thanh và bộ ảnh, chạy Phụ đề tự động (Tự động phát hiện ngôn ngữ), chọn font chữ Montserrat cỡ 9 kèm hiệu ứng chữ Rõ dần",
+    "Cắt ghép các bức ảnh khớp ý từng câu thoại (tối đa 12 giây/ảnh), tạo chuyển động Zoom cận cảnh, phủ lớp hiệu ứng Nhiễu 2 + Nhiễu đen + Lắc qua lại, chèn chuyển cảnh Kết hợp và nhạc nền từ -15 đến -20 dB"
+  ],
+  "avoid_flags": [
+    "Dán kịch bản dài 5.000 từ vào mục Text to Speech thường của ElevenLabs gây giới hạn ký tự thay vì dùng mục Studio / Audiobook",
+    "Tự nghĩ câu lệnh tạo ảnh bằng vốn từ tiếng Anh hạn chế thay vì dùng ChatGPT hoặc lệnh /describe để bóc tách prompt từ ảnh mẫu triệu view của đối thủ",
+    "Quên thêm tham số tỷ lệ khung hình ngang (--ar 16:9) khi gõ lệnh /imagine trên Discord khiến Midjourney xuất ra ảnh vuông 1:1",
+    "Để một bức ảnh tĩnh đứng yên quá 12 giây trên màn hình mà không có hiệu ứng Zoom hoặc hiệu ứng hạt nhiễu chuyển động"
+  ],
+  "source_transcript": "video/VIDEO-5c2c51/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "actual_topic": "Hướng dẫn chi tiết quy trình sản xuất video Chủ nghĩa Khắc Kỷ (Stoic) ngôn ngữ tiếng Anh cho thị trường nước ngoài bằng bộ công cụ ChatGPT, ElevenLabs, Midjourney, Discord và CapCut.",
+  "category_group": "he_thong",
+  "niche_primary": "Chủ Nghĩa Khắc Kỷ (Stoic) Thị Trường Ngoại & AI",
+  "niche_id": "he_thong_youtube",
+  "target_market": "Việt Nam",
+  "market_code": "VN"
+}

@@ -1,0 +1,258 @@
+{
+  "sku": "VIDEO-f83f59",
+  "title": "9. SOP QUY TRÌNH TẠO EMAIL va ADSENSE",
+  "duration_sec": 1835.43,
+  "duration_label": "30:35",
+  "Summary": "Bài giảng kỹ thuật chuyên sâu trình bày toàn bộ tài liệu '3. SOP - TẠO EMAIL & TÀI KHOẢN GOOGLE ADSENSE YOUTUBE 2026.pdf' (12 trang) của hệ thống GODA, hướng dẫn từng bước quy trình chuẩn hóa từ khâu chuẩn bị hạ tầng, tạo và ngâm nuôi Gmail cho đến khi đăng ký, xác minh danh tính, nhận mã PIN ở ngưỡng 10 USD và xử lý lỗi trùng lặp Google AdSense. Chuyên gia kỹ thuật làm rõ lý do vì sao tuyệt đối không dùng dịch vụ thuê SIM OTP trên mạng mà phải dùng SIM vật lý chính chủ (ưu tiên SIM trả sau của nhà mạng Vinaphone hoặc Viettel có hợp đồng cam kết từ 18 tháng trở lên), kết hợp môi trường thiết bị sạch (1 thiết bị / 1 IP / 1 thông tin cá nhân chỉ gắn với 1 tài khoản AdSense duy nhất). Đặc biệt, SOP cung cấp lịch trình chăm sóc email 14 ngày cực kỳ chi tiết (Ngày 1–3 thiết lập & gửi thư nội bộ; Ngày 4–7 đăng ký nhận bản tin Newsletter từ các trang báo lớn uy tín của Mỹ/quốc tế như CNN, US News, Reuters, The Guardian, Google News và kênh Daily Stoic; Ngày 8–14 duy trì tương tác tự nhiên) để xây dựng độ tin cậy (Trust) tuyệt đối với thuật toán Google.",
+  "KeyTakeaways": [
+    "Nguyên tắc hạ tầng SIM đăng ký (Mục II.2): Tuyệt đối cấm sử dụng SIM rác hoặc dịch vụ thuê mã OTP trên web (vì khi Google bắt xác minh lại sẽ mất trắng kênh và tiền); bắt buộc dùng SIM chính chủ, tốt nhất là SIM trả sau của Vinaphone hoặc Viettel gói 18 tháng trở lên để giữ số ổn định lâu dài.",
+    "Nguyên tắc cách ly môi trường (Mục II.3 & X): Mỗi tài khoản Google AdSense phải được tạo và vận hành trên một thiết bị độc lập (máy tính/điện thoại sạch chưa từng đăng nhập tài khoản vi phạm hoặc VPS/Proxy tĩnh sạch riêng biệt) và một đường truyền mạng (IP) cố định.",
+    "Quy trình chăm sóc và ngâm nuôi Email trước khi đăng ký AdSense (Mục III): Tối thiểu phải nuôi 14 ngày liên tục trước khi bấm đăng ký AdSense (với email dùng để tạo kênh YouTube thì lý tưởng nhất là ngâm nuôi 3–6 tháng) theo lịch 3 giai đoạn: Ngày 1–3 thiết lập bảo mật 2FA và gửi email qua lại; Ngày 4–7 đăng ký nhận Newsletter từ CNN, US News, Reuters, The Guardian, Google News, Daily Stoic; Ngày 8–14 đọc thư tự nhiên 5–10 phút/ngày, tuyệt đối không dùng tool auto chạy 24/7.",
+    "Điều kiện và quy trình đăng ký AdSense cho YouTube (Mục V, VI, VII): Chỉ đăng ký khi kênh đã đạt mốc bật kiếm tiền trong YouTube Studio (tối thiểu 500 người đăng ký, 3 video tải lên công khai trong 90 ngày gần nhất và 3.000 giờ xem hợp lệ hoặc 3 triệu lượt xem Shorts), người đứng tên đủ 18 tuổi có CCCD/Hộ chiếu thật để sẵn sàng xác minh danh tính và nhận thư mã PIN khi doanh thu đạt ngưỡng 10 USD.",
+    "Cách xử lý triệt để lỗi từ chối AdSense do 'Tài khoản trùng lặp' (Mục IX): Khi một đơn đăng ký bị từ chối vì lỗi trùng lặp, tuyệt đối không bấm gửi lại ngay trên cùng môi trường cũ mà bắt buộc phải thay đổi đồng thời cả Số điện thoại đăng ký/xác minh lẫn Thiết bị và địa chỉ IP/môi trường mạng mới hoàn toàn."
+  ],
+  "ActionItems": [
+    "Ra trực tiếp điểm giao dịch của nhà mạng Vinaphone hoặc Viettel để đăng ký SIM chính chủ (ưu tiên gói trả sau cam kết 18 tháng) chuyên phục vụ việc tạo Gmail gốc và tài khoản Google AdSense.",
+    "Thực hiện đúng lịch trình 14 ngày nuôi Gmail theo SOP: Trong giai đoạn Ngày 4–7, truy cập các trang báo lớn (CNN, US News, Reuters, The Guardian, Google News) và trang/kênh Daily Stoic để đăng ký nhận bản tin Newsletter hàng ngày về hộp thư nhằm tạo lịch sử nhận thư uy tín.",
+    "Chuẩn bị bộ hồ sơ định danh cá nhân (CCCD/Hộ chiếu còn hạn, tài khoản ngân hàng chính chủ trùng tên 100%, địa chỉ nhận thư bưu điện rõ ràng) trước khi gửi đơn đăng ký AdSense từ trong giao diện YouTube Studio.",
+    "Khi doanh thu trên AdSense chạm ngưỡng 10 USD, theo dõi sát thông báo yêu cầu xác minh danh tính (Identity Verification) và xác minh địa chỉ (mã PIN 6 số gửi qua bưu điện trong 2–4 tuần) để hoàn tất kích hoạt thanh toán.",
+    "Lưu trữ toàn bộ thông tin tài khoản (Email, mật khẩu, mã dự phòng 2FA, số điện thoại SIM, IP/VPS, thông tin CCCD người đứng tên) vào bảng quản lý bảo mật riêng biệt, đảm bảo quy tắc 1 người - 1 thiết bị - 1 IP - 1 AdSense."
+  ],
+  "Timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu tài liệu SOP Quy trình tạo Email và tài khoản Google AdSense YouTube 2026 của GODA"
+    },
+    {
+      "time": "01:19",
+      "seconds": 79,
+      "label": "Mục II.1 & II.2: Chuẩn bị thiết bị sạch và yêu cầu bắt buộc về SIM chính chủ (tuyệt đối không thuê OTP web)"
+    },
+    {
+      "time": "02:55",
+      "seconds": 175,
+      "label": "Kinh nghiệm thực chiến chọn SIM trả sau của Vinaphone / Viettel hợp đồng 18 tháng để bảo vệ tài khoản lâu dài"
+    },
+    {
+      "time": "03:57",
+      "seconds": 237,
+      "label": "Mục II.3: Quy trình các bước tạo Gmail mới chuẩn xác, khai báo thông tin thật và bật xác minh 2 bước (2FA)"
+    },
+    {
+      "time": "05:49",
+      "seconds": 349,
+      "label": "Mục III: Quy trình chăm sóc email tối thiểu 14 ngày (Giai đoạn Ngày 1–3, Ngày 4–7 và Ngày 8–14)"
+    },
+    {
+      "time": "10:16",
+      "seconds": 616,
+      "label": "Mẹo tăng Trust cực mạnh ở Ngày 4–7: Đăng ký Newsletter từ CNN, US News, Reuters, The Guardian, Daily Stoic"
+    },
+    {
+      "time": "12:03",
+      "seconds": 723,
+      "label": "Mục V: Điều kiện trước khi đăng ký AdSense (500 sub, 3.000 giờ xem / 3M view Shorts, đủ 18 tuổi) và thao tác tạo"
+    },
+    {
+      "time": "15:18",
+      "seconds": 918,
+      "label": "Mục VI & VII: Chăm sóc tài khoản trong thời gian chờ duyệt (1–7 ngày) và xác minh danh tính / mã PIN ở mốc 10 USD"
+    },
+    {
+      "time": "24:48",
+      "seconds": 1488,
+      "label": "Mục IX: Quy trình xử lý lỗi bị từ chối trùng lặp AdSense — Bắt buộc đổi đồng thời cả Số điện thoại lẫn Thiết bị/IP"
+    },
+    {
+      "time": "27:08",
+      "seconds": 1628,
+      "label": "Mục X: Tổng kết 10 Nguyên tắc bắt buộc cần tuân thủ để vận hành hệ thống Email & Google AdSense an toàn tuyệt đối"
+    }
+  ],
+  "ToolsMentioned": [
+    "Google AdSense",
+    "Gmail",
+    "YouTube Studio",
+    "VPS",
+    "Proxy",
+    "Google News"
+  ],
+  "ChannelsMentioned": [
+    "@DailyStoic (Daily Stoic)"
+  ],
+  "DetailedVisualAnalysis": [
+    {
+      "timestamp": "01:25",
+      "slide_title": "3. SOP - TẠO EMAIL & TÀI KHOẢN GOOGLE ADSENSE YOUTUBE 2026.pdf (Trang 2/12: Mục I. Mục tiêu & II. Tạo email)",
+      "visual_elements": "Màn hình chia sẻ trực tiếp tài liệu PDF nội bộ của GODA (trang 2/12) trình bày rõ Mục I (Mục tiêu chuẩn hóa quy trình tạo và chăm sóc email/AdSense hạn chế rủi ro vô hiệu hóa hoặc từ chối do trùng lặp) và Mục II (Tạo email: 1. Chuẩn bị thiết bị sạch/VPS và đường truyền mạng ổn định; 2. Yêu cầu về SIM đăng ký: Ưu tiên sử dụng SIM chính chủ, SIM vật lý hoạt động ổn định lâu dài, tuyệt đối không dùng SIM thuê OTP trên mạng).",
+      "CoreTakeaway": "Nền móng an toàn của cả gia tài YouTube bắt đầu từ một chiếc SIM vật lý chính chủ (Vinaphone/Viettel trả sau 18 tháng) và một môi trường thiết bị chưa từng dính vết đen."
+    },
+    {
+      "timestamp": "05:55",
+      "slide_title": "Trang 3/12 — Mục III. Quy trình chăm sóc email trước khi đăng ký AdSense (Lịch trình 14 ngày)",
+      "visual_elements": "Tài liệu SOP trang 3/12 quy định: '1. Thời gian chăm sóc email: Tối thiểu 14 ngày trước khi sử dụng để đăng ký AdSense'; '3. Hoạt động chăm sóc email hằng ngày' chia làm 3 mốc: (a) 'Giai đoạn 1: Ngày 1 - Ngày 3 (Thiết lập & kiểm tra)' — kiểm tra cài đặt, gửi và nhận thử tối thiểu 1 email nội bộ; (b) 'Giai đoạn 2: Ngày 4 - Ngày 7 (Tạo lịch sử sử dụng tự nhiên)' — đăng ký nhận bản tin từ CNN, US News, Reuters, The Guardian, Google News và kênh/trang Daily Stoic; (c) 'Giai đoạn 3: Ngày 8 - Ngày 14 (Duy trì hoạt động ổn định)' — mở hộp thư đọc tin tức, không dùng tool tự động chạy liên tục 24/7.",
+      "CoreTakeaway": "Nuôi Gmail nhận bản tin từ các hãng thông tấn lớn quốc tế (CNN, Reuters, The Guardian) và Daily Stoic suốt 14 ngày giúp tài khoản có lịch sử hoạt động y hệt một người dùng trí thức thật sự trước mắt thuật toán Google."
+    },
+    {
+      "timestamp": "12:10",
+      "slide_title": "Trang 5/12 — Mục V. Quy trình đăng ký tài khoản Google AdSense dành cho YouTube",
+      "visual_elements": "Tài liệu SOP trang 5/12 liệt kê chi tiết '1. Điều kiện trước khi đăng ký': Kênh YouTube đã đạt điều kiện tham gia Chương trình Đối tác YouTube (tối thiểu 500 người đăng ký, 3 video tải lên công khai hợp lệ trong 90 ngày gần nhất, và 3.000 giờ xem công khai hợp lệ trong 12 tháng hoặc 3 triệu lượt xem Shorts công khai hợp lệ trong 90 ngày); Chủ sở hữu tài khoản đủ 18 tuổi trở lên; Không sử dụng thông tin cá nhân giả mạo hoặc mượn thông tin không có khả năng xác minh.",
+      "CoreTakeaway": "Mọi thao tác khởi tạo liên kết AdSense bắt buộc phải xuất phát từ Bước 2 trong mục Kiếm tiền của YouTube Studio khi kênh đã đủ điều kiện và dùng thông tin pháp nhân thật 100%."
+    },
+    {
+      "timestamp": "15:25",
+      "slide_title": "Trang 7/12 — Mục VI. Chăm sóc tài khoản sau khi gửi đơn & Mục VII. Quy trình xác minh Google AdSense",
+      "visual_elements": "Tài liệu SOP trang 7/12 hướng dẫn: Mục VI (Thời gian xét duyệt thông thường từ 1–7 ngày làm việc, một số trường hợp cần 2–4 tuần; trong thời gian chờ duyệt phải duy trì đăng nhập trên cùng thiết bị/IP cố định, không thay đổi thông tin liên tục) và Mục VII (Quy trình xác minh danh tính CCCD/Hộ chiếu và xác minh địa chỉ nhận mã PIN bưu điện khi doanh thu đạt ngưỡng xác minh 10 USD).",
+      "CoreTakeaway": "Trong giai đoạn chờ duyệt và chờ chạm ngưỡng 10 USD để xác minh danh tính/mã PIN, sự ổn định tuyệt đối của IP và thiết bị đăng nhập là yếu tố quyết định giúp tài khoản không bị gắn cờ bất thường."
+    },
+    {
+      "timestamp": "27:20",
+      "slide_title": "Trang 11/12 — Xử lý lỗi từ chối trùng lặp & Mục X. 10 Nguyên tắc bắt buộc cần tuân thủ",
+      "visual_elements": "Tài liệu SOP trang 11/12 chỉ rõ: Khi bị từ chối đăng ký AdSense và cần tạo lại, bắt buộc phải thay đổi đồng thời cả (1) Số điện thoại đăng ký/xác minh và (2) Thiết bị hoặc địa chỉ IP/môi trường mạng. Phía dưới là Mục X liệt kê 10 nguyên tắc bắt buộc cần tuân thủ xuyên suốt vòng đời tài khoản.",
+      "CoreTakeaway": "Nếu đã dính lỗi trùng lặp AdSense mà chỉ đổi Gmail nhưng giữ nguyên máy tính/IP cũ hoặc số điện thoại cũ thì 100% đơn đăng ký mới sẽ tiếp tục bị hệ thống quét đánh trượt."
+    }
+  ],
+  "HiddenInsights": [
+    "Lý do chuyên gia GODA khuyên chọn SIM trả sau của Vinaphone hoặc Viettel có cam kết 18 tháng thay vì SIM trả trước thông thường: Khi quản lý hàng chục kênh YouTube lớn, rủi ro quên nạp tiền phát sinh cước làm nhà mạng thu hồi số SIM trả trước là rất cao; dùng SIM trả sau hợp đồng 18 tháng giúp khóa chặt quyền sở hữu số điện thoại định danh suốt gần 2 năm mà chi phí duy trì cực thấp.",
+    "Vì sao phải đăng ký nhận Newsletter từ các báo lớn như CNN, Reuters, The Guardian, US News và Daily Stoic ở Ngày 4–7? Bởi vì các hệ thống gửi thư của những tổ chức báo chí hàng đầu thế giới này có điểm uy tín tên miền (Domain Reputation) cao nhất hành tinh trên máy chủ Gmail; việc hộp thư mới của bạn đều đặn nhận và mở đọc email từ các nguồn hạng A này tạo ra tín hiệu hành vi 'người dùng thật chất lượng cao' mạnh hơn bất kỳ phần mềm nuôi mail nào.",
+    "Sai lầm chết người khi bị từ chối AdSense do lỗi 'Đã có tài khoản hiện có' (Duplicate Account): 90% người làm chỉ lấy một cái Gmail khác rồi bấm gửi lại ngay trên cùng trình duyệt và cùng mạng Wi-Fi đó — hệ thống nhận diện vân tay thiết bị (Browser/Device Fingerprint) và IP của Google sẽ lập tức khóa chéo cả tài khoản mới; bắt buộc phải thay mới đồng thời cả cụm: Số điện thoại + Thiết bị/Trình duyệt sạch + Địa chỉ IP."
+  ],
+  "ActionPlaybook": [
+    {
+      "step": "Bước 1: Chuẩn bị bộ 3 Hạ tầng Sạch (SIM trả sau 18 tháng + Thiết bị/VPS sạch + IP riêng)",
+      "detail": "Đăng ký SIM chính chủ Vinaphone/Viettel (ưu tiên trả sau 18 tháng), chuẩn bị một thiết bị hoặc VPS/Proxy tĩnh sạch chưa từng đăng nhập bất kỳ tài khoản Google/AdSense nào bị phạt trước đó."
+    },
+    {
+      "step": "Bước 2: Tạo Gmail và thực thi nghiêm ngặt Lịch trình Nuôi 14 Ngày",
+      "detail": "Ngày 1–3: Cập nhật ảnh đại diện, bật 2FA, gửi/nhận email nội bộ; Ngày 4–7: Đăng ký nhận bản tin từ CNN, US News, Reuters, The Guardian, Google News, Daily Stoic; Ngày 8–14: Mở đọc thư tự nhiên 5–10 phút mỗi ngày (với mail tạo kênh YouTube nên ngâm từ 3–6 tháng)."
+    },
+    {
+      "step": "Bước 3: Đăng ký Google AdSense trực tiếp từ YouTube Studio khi đủ điều kiện",
+      "detail": "Khi kênh đạt mốc bật kiếm tiền (500 sub + 3.000 giờ xem hoặc 3M view Shorts / hoặc mốc 1.000 sub + 4.000 giờ xem), vào mục Kiếm tiền trong YouTube Studio để khởi tạo liên kết AdSense với thông tin CCCD/Hộ chiếu thật của người đủ 18 tuổi."
+    },
+    {
+      "step": "Bước 4: Xác minh Danh tính & Mã PIN ở mốc 10 USD và Xử lý Sự cố Chuẩn SOP",
+      "detail": "Giữ nguyên IP/thiết bị trong suốt thời gian chờ duyệt; khi doanh thu đạt 10 USD thì tải ảnh giấy tờ tùy thân sắc nét để xác minh danh tính và nhận thư mã PIN bưu điện; nếu chẳng may bị từ chối trùng lặp, phải thay mới đồng thời cả Số điện thoại lẫn Thiết bị và IP trước khi làm lại."
+    }
+  ],
+  "actual_topic": "SOP chuẩn hóa quy trình tạo và chăm sóc email tối thiểu 14 ngày bằng SIM chính chủ trả sau, thiết lập bảo mật, đăng ký tài khoản Google AdSense và cách khắc phục lỗi từ chối AdSense.",
+  "key_takeaways": [
+    "Nguyên tắc hạ tầng SIM đăng ký (Mục II.2): Tuyệt đối cấm sử dụng SIM rác hoặc dịch vụ thuê mã OTP trên web (vì khi Google bắt xác minh lại sẽ mất trắng kênh và tiền); bắt buộc dùng SIM chính chủ, tốt nhất là SIM trả sau của Vinaphone hoặc Viettel gói 18 tháng trở lên để giữ số ổn định lâu dài.",
+    "Nguyên tắc cách ly môi trường (Mục II.3 & X): Mỗi tài khoản Google AdSense phải được tạo và vận hành trên một thiết bị độc lập (máy tính/điện thoại sạch chưa từng đăng nhập tài khoản vi phạm hoặc VPS/Proxy tĩnh sạch riêng biệt) và một đường truyền mạng (IP) cố định.",
+    "Quy trình chăm sóc và ngâm nuôi Email trước khi đăng ký AdSense (Mục III): Tối thiểu phải nuôi 14 ngày liên tục trước khi bấm đăng ký AdSense (với email dùng để tạo kênh YouTube thì lý tưởng nhất là ngâm nuôi 3–6 tháng) theo lịch 3 giai đoạn: Ngày 1–3 thiết lập bảo mật 2FA và gửi email qua lại; Ngày 4–7 đăng ký nhận Newsletter từ CNN, US News, Reuters, The Guardian, Google News, Daily Stoic; Ngày 8–14 đọc thư tự nhiên 5–10 phút/ngày, tuyệt đối không dùng tool auto chạy 24/7.",
+    "Điều kiện và quy trình đăng ký AdSense cho YouTube (Mục V, VI, VII): Chỉ đăng ký khi kênh đã đạt mốc bật kiếm tiền trong YouTube Studio (tối thiểu 500 người đăng ký, 3 video tải lên công khai trong 90 ngày gần nhất và 3.000 giờ xem hợp lệ hoặc 3 triệu lượt xem Shorts), người đứng tên đủ 18 tuổi có CCCD/Hộ chiếu thật để sẵn sàng xác minh danh tính và nhận thư mã PIN khi doanh thu đạt ngưỡng 10 USD.",
+    "Cách xử lý triệt để lỗi từ chối AdSense do 'Tài khoản trùng lặp' (Mục IX): Khi một đơn đăng ký bị từ chối vì lỗi trùng lặp, tuyệt đối không bấm gửi lại ngay trên cùng môi trường cũ mà bắt buộc phải thay đổi đồng thời cả Số điện thoại đăng ký/xác minh lẫn Thiết bị và địa chỉ IP/môi trường mạng mới hoàn toàn."
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu tài liệu SOP Quy trình tạo Email và tài khoản Google AdSense YouTube 2026 của GODA"
+    },
+    {
+      "time": "01:20",
+      "seconds": 80,
+      "label": "Mục II.1 & II.2: Chuẩn bị thiết bị sạch và yêu cầu bắt buộc về SIM chính chủ (tuyệt đối không thuê OTP web)"
+    },
+    {
+      "time": "02:55",
+      "seconds": 175,
+      "label": "Kinh nghiệm thực chiến chọn SIM trả sau của Vinaphone / Viettel hợp đồng 18 tháng để bảo vệ tài khoản lâu dài"
+    },
+    {
+      "time": "03:57",
+      "seconds": 237,
+      "label": "Mục II.3: Quy trình các bước tạo Gmail mới chuẩn xác, khai báo thông tin thật và bật xác minh 2 bước (2FA)"
+    },
+    {
+      "time": "05:50",
+      "seconds": 350,
+      "label": "Mục III: Quy trình chăm sóc email tối thiểu 14 ngày (Giai đoạn Ngày 1–3, Ngày 4–7 và Ngày 8–14)"
+    },
+    {
+      "time": "10:16",
+      "seconds": 616,
+      "label": "Mẹo tăng Trust cực mạnh ở Ngày 4–7: Đăng ký Newsletter từ CNN, US News, Reuters, The Guardian, Daily Stoic"
+    },
+    {
+      "time": "12:04",
+      "seconds": 724,
+      "label": "Mục V: Điều kiện trước khi đăng ký AdSense (500 sub, 3.000 giờ xem / 3M view Shorts, đủ 18 tuổi) và thao tác tạo"
+    },
+    {
+      "time": "15:18",
+      "seconds": 918,
+      "label": "Mục VI & VII: Chăm sóc tài khoản trong thời gian chờ duyệt (1–7 ngày) và xác minh danh tính / mã PIN ở mốc 10 USD"
+    },
+    {
+      "time": "24:49",
+      "seconds": 1489,
+      "label": "Mục IX: Quy trình xử lý lỗi bị từ chối trùng lặp AdSense — Bắt buộc đổi đồng thời cả Số điện thoại lẫn Thiết bị/IP"
+    },
+    {
+      "time": "27:09",
+      "seconds": 1629,
+      "label": "Mục X: Tổng kết 10 Nguyên tắc bắt buộc cần tuân thủ để vận hành hệ thống Email & Google AdSense an toàn tuyệt đối"
+    }
+  ],
+  "tools_mentioned": [
+    "Google AdSense",
+    "Gmail",
+    "YouTube Studio",
+    "VPS",
+    "Proxy",
+    "Google News"
+  ],
+  "edit_sop": {
+    "primary": "Quy trình thực thi chuẩn bài học: 9. SOP QUY TRÌNH TẠO EMAIL va ADSENSE",
+    "additional": [
+      "Chuẩn bị bộ 3 Hạ tầng Sạch (SIM trả sau 18 tháng + Thiết bị/VPS sạch + IP riêng): Đăng ký SIM chính chủ Vinaphone/Viettel (ưu tiên trả sau 18 tháng), chuẩn bị một thiết bị hoặc VPS/Proxy tĩnh sạch chưa từng đăng nhập bất kỳ tài khoản Google/AdSense nào bị phạt trước đó.",
+      "Tạo Gmail và thực thi nghiêm ngặt Lịch trình Nuôi 14 Ngày: Ngày 1–3: Cập nhật ảnh đại diện, bật 2FA, gửi/nhận email nội bộ; Ngày 4–7: Đăng ký nhận bản tin từ CNN, US News, Reuters, The Guardian, Google News, Daily Stoic; Ngày 8–14: Mở đọc thư tự nhiên 5–10 phút mỗi ngày (với mail tạo kênh YouTube nên ngâm từ 3–6 tháng).",
+      "Đăng ký Google AdSense trực tiếp từ YouTube Studio khi đủ điều kiện: Khi kênh đạt mốc bật kiếm tiền (500 sub + 3.000 giờ xem hoặc 3M view Shorts / hoặc mốc 1.000 sub + 4.000 giờ xem), vào mục Kiếm tiền trong YouTube Studio để khởi tạo liên kết AdSense với thông tin CCCD/Hộ chiếu thật của người đủ 18 tuổi.",
+      "Xác minh Danh tính & Mã PIN ở mốc 10 USD và Xử lý Sự cố Chuẩn SOP: Giữ nguyên IP/thiết bị trong suốt thời gian chờ duyệt; khi doanh thu đạt 10 USD thì tải ảnh giấy tờ tùy thân sắc nét để xác minh danh tính và nhận thư mã PIN bưu điện; nếu chẳng may bị từ chối trùng lặp, phải thay mới đồng thời cả Số điện thoại lẫn Thiết bị và IP trước khi làm lại."
+    ]
+  },
+  "sop_steps": [
+    "Chuẩn bị bộ 3 Hạ tầng Sạch (SIM trả sau 18 tháng + Thiết bị/VPS sạch + IP riêng): Đăng ký SIM chính chủ Vinaphone/Viettel (ưu tiên trả sau 18 tháng), chuẩn bị một thiết bị hoặc VPS/Proxy tĩnh sạch chưa từng đăng nhập bất kỳ tài khoản Google/AdSense nào bị phạt trước đó.",
+    "Tạo Gmail và thực thi nghiêm ngặt Lịch trình Nuôi 14 Ngày: Ngày 1–3: Cập nhật ảnh đại diện, bật 2FA, gửi/nhận email nội bộ; Ngày 4–7: Đăng ký nhận bản tin từ CNN, US News, Reuters, The Guardian, Google News, Daily Stoic; Ngày 8–14: Mở đọc thư tự nhiên 5–10 phút mỗi ngày (với mail tạo kênh YouTube nên ngâm từ 3–6 tháng).",
+    "Đăng ký Google AdSense trực tiếp từ YouTube Studio khi đủ điều kiện: Khi kênh đạt mốc bật kiếm tiền (500 sub + 3.000 giờ xem hoặc 3M view Shorts / hoặc mốc 1.000 sub + 4.000 giờ xem), vào mục Kiếm tiền trong YouTube Studio để khởi tạo liên kết AdSense với thông tin CCCD/Hộ chiếu thật của người đủ 18 tuổi.",
+    "Xác minh Danh tính & Mã PIN ở mốc 10 USD và Xử lý Sự cố Chuẩn SOP: Giữ nguyên IP/thiết bị trong suốt thời gian chờ duyệt; khi doanh thu đạt 10 USD thì tải ảnh giấy tờ tùy thân sắc nét để xác minh danh tính và nhận thư mã PIN bưu điện; nếu chẳng may bị từ chối trùng lặp, phải thay mới đồng thời cả Số điện thoại lẫn Thiết bị và IP trước khi làm lại."
+  ],
+  "avoid_flags": [
+    "Lý do chuyên gia GODA khuyên chọn SIM trả sau của Vinaphone hoặc Viettel có cam kết 18 tháng thay vì SIM trả trước thông thường: Khi quản lý hàng chục kênh YouTube lớn, rủi ro quên nạp tiền phát sinh cước làm nhà mạng thu hồi số SIM trả trước là rất cao; dùng SIM trả sau hợp đồng 18 tháng giúp khóa chặt quyền sở hữu số điện thoại định danh suốt gần 2 năm mà chi phí duy trì cực thấp.",
+    "Vì sao phải đăng ký nhận Newsletter từ các báo lớn như CNN, Reuters, The Guardian, US News và Daily Stoic ở Ngày 4–7? Bởi vì các hệ thống gửi thư của những tổ chức báo chí hàng đầu thế giới này có điểm uy tín tên miền (Domain Reputation) cao nhất hành tinh trên máy chủ Gmail; việc hộp thư mới của bạn đều đặn nhận và mở đọc email từ các nguồn hạng A này tạo ra tín hiệu hành vi 'người dùng thật chất lượng cao' mạnh hơn bất kỳ phần mềm nuôi mail nào.",
+    "Sai lầm chết người khi bị từ chối AdSense do lỗi 'Đã có tài khoản hiện có' (Duplicate Account): 90% người làm chỉ lấy một cái Gmail khác rồi bấm gửi lại ngay trên cùng trình duyệt và cùng mạng Wi-Fi đó — hệ thống nhận diện vân tay thiết bị (Browser/Device Fingerprint) và IP của Google sẽ lập tức khóa chéo cả tài khoản mới; bắt buộc phải thay mới đồng thời cả cụm: Số điện thoại + Thiết bị/Trình duyệt sạch + Địa chỉ IP."
+  ],
+  "channels_mentioned": [
+    "@DailyStoic"
+  ],
+  "course_docs": [
+    {
+      "title": "Tài Liệu Gốc: 1. GODA - QUY TRÌNH TRIỂN KHAI KÊNH VIEW NGOẠI 2025.pdf",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/1._GODA_-_QUY_TRINH_TRIEN_KHAI_KENH.pdf",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/1._GODA_-_QUY_TRINH_TRIEN_KHAI_KENH.pdf.md",
+      "link": "https://drive.google.com/file/d/1Oez2iFNDTxAt-oWznLzKXLbj_AaJgtPs/view"
+    },
+    {
+      "title": "Checklist Gốc: CHECKLIST YOUTUBE 1 TRANG.docx (Quy Tắc 100 Video)",
+      "file": "assets/docs-huan/CHECKLIST_YOUTUBE_1_TRANG.docx",
+      "readFile": "assets/docs-huan/CHECKLIST_YOUTUBE_1_TRANG.docx.md",
+      "link": "https://drive.google.com/file/d/1YEfmxATH9KB9vsH_hkMpW9QaxvGRUYG1/view"
+    },
+    {
+      "title": "Sách Điện Tử Gốc: 7 Bước Thành Công Với YouTube - Bí Mật Kiếm Tiền YouTube",
+      "file": "assets/docs-huan/7_buoc_thanh_cong_voi_Youtube_-_BI_MAT_KIEM_TIEN_YOUTUBE_.pdf",
+      "readFile": "assets/docs-huan/7_buoc_thanh_cong_voi_Youtube_-_BI_MAT_KIEM_TIEN_YOUTUBE_.pdf.md",
+      "link": "https://drive.google.com/file/d/1DjL8FIY0VknSZcn9W1m2WYltKXmTDh27/view"
+    }
+  ],
+  "category_group": "he_thong",
+  "niche_primary": "SOP Tạo Email Chính Chủ & Đăng Ký Google AdSense",
+  "niche_id": "he_thong_youtube",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "source_transcript": "video/VIDEO-f83f59/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true
+}

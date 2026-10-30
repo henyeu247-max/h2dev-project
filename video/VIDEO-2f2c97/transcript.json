@@ -1,0 +1,434 @@
+{
+  "sku": "VIDEO-2f2c97",
+  "duration": 180.5,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 53,
+  "full_text": "Và chiến lược cuối cùng muốn chia sẻ anh em Mơ lớn Mơ giấc mơ lớn nhưng thực tế trong từng bước đi Tư duy cuối cùng Mơ lớn Thực tế trong từng bước đi Cái này được hiểu một cách đơn giản như thế này Hãy đặt ra một giấc mơ Có thể là nút bạc, nút vàng. Có thể là hàng triệu đô la. Có thể là tự do. Có thể là rất nhiều thứ khác nữa. Nhưng đấy là một tương lai xa. Và chúng ta cũng chưa kiểm soát được. Nên chúng ta chỉ kiểm soát được ngày hôm nay thôi. Chúng ta không kiểm soát được ngày mai luôn. Không kiểm soát được quá khứ và không kiểm soát được tương lai, chỉ kiểm soát được ngày hôm nay thôi. Nên cần phải có giấc mơ lớn để dẫn đường, nhưng cần phải thực tế trong từng bước đi, tức là từng công việc hàng ngày này. Và nếu rằng, nếu bạn đang phấn đấu nỗ lực mà vẫn chưa có kết quả, không vấn đề gì hết. Chúng ta đang đợi phép toán Không phải là tỷ lệ thuận Mà là cấp số nhân Đến một ngày nào đó Sau một đêm thôi Cái YouTube của các bạn được ăn đề xuất Nó vọt lên Các bạn lấy lại tất cả những thứ gì các bạn đã mất Đã đầu tư Ngoài ra nhắc anh em thêm Nên tin ở cấp độ trải nghiệm Có thể mọi thứ bạn thấy Kết quả thực tế đang xảy ra như thế Nhưng chưa chắc nó đã là thế Nên tránh việc là follow và thần tượng Quá mức bất kỳ ai Hãy chọn cách chủ động Chủ động học Để thấy rằng chúng ta thiếu cái gì thì chúng ta học cái đấy Đừng có thấy ai hay cái gì cũng học hết Mình chọn lọc học để phục vụ cho cái mục tiêu của mình Nó rõ ràng ra như thế Và cuối cùng rằng là Mình muốn nhắn gửi là Tất cả những điều này Chốt lại là Bạn là người tự quyết định được Chính cái cuộc sống của mình và chính những cái kết quả của mình Nó là cuộc chơi của đầu vào đầu ra Kiểm soát đầu vào tức là kiểm soát chính tự mình làm Tự mình kiểm soát Ok Đã hết 10 tư duy Xin cảm ơn",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.42,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:03,420",
+      "text": "Và chiến lược cuối cùng muốn chia sẻ anh em"
+    },
+    {
+      "id": 2,
+      "start": 3.42,
+      "end": 6.5,
+      "start_time": "00:00:03,420",
+      "end_time": "00:00:06,500",
+      "text": "Mơ lớn"
+    },
+    {
+      "id": 3,
+      "start": 6.5,
+      "end": 12.08,
+      "start_time": "00:00:06,500",
+      "end_time": "00:00:12,080",
+      "text": "Mơ giấc mơ lớn nhưng thực tế trong từng bước đi"
+    },
+    {
+      "id": 4,
+      "start": 12.08,
+      "end": 14.42,
+      "start_time": "00:00:12,080",
+      "end_time": "00:00:14,420",
+      "text": "Tư duy cuối cùng"
+    },
+    {
+      "id": 5,
+      "start": 14.42,
+      "end": 16.68,
+      "start_time": "00:00:14,420",
+      "end_time": "00:00:16,680",
+      "text": "Mơ lớn"
+    },
+    {
+      "id": 6,
+      "start": 16.68,
+      "end": 19.12,
+      "start_time": "00:00:16,680",
+      "end_time": "00:00:19,120",
+      "text": "Thực tế trong từng bước đi"
+    },
+    {
+      "id": 7,
+      "start": 19.12,
+      "end": 24.0,
+      "start_time": "00:00:19,120",
+      "end_time": "00:00:24,000",
+      "text": "Cái này được hiểu một cách đơn giản như thế này"
+    },
+    {
+      "id": 8,
+      "start": 27.0,
+      "end": 29.06,
+      "start_time": "00:00:27,000",
+      "end_time": "00:00:29,060",
+      "text": "Hãy đặt ra một giấc mơ"
+    },
+    {
+      "id": 9,
+      "start": 29.06,
+      "end": 33.36,
+      "start_time": "00:00:29,060",
+      "end_time": "00:00:33,360",
+      "text": "Có thể là nút bạc, nút vàng."
+    },
+    {
+      "id": 10,
+      "start": 36.64,
+      "end": 38.44,
+      "start_time": "00:00:36,640",
+      "end_time": "00:00:38,440",
+      "text": "Có thể là hàng triệu đô la."
+    },
+    {
+      "id": 11,
+      "start": 39.58,
+      "end": 40.96,
+      "start_time": "00:00:39,580",
+      "end_time": "00:00:40,960",
+      "text": "Có thể là tự do."
+    },
+    {
+      "id": 12,
+      "start": 41.52,
+      "end": 43.18,
+      "start_time": "00:00:41,520",
+      "end_time": "00:00:43,180",
+      "text": "Có thể là rất nhiều thứ khác nữa."
+    },
+    {
+      "id": 13,
+      "start": 44.56,
+      "end": 46.1,
+      "start_time": "00:00:44,560",
+      "end_time": "00:00:46,100",
+      "text": "Nhưng đấy là một tương lai xa."
+    },
+    {
+      "id": 14,
+      "start": 49.26,
+      "end": 51.0,
+      "start_time": "00:00:49,260",
+      "end_time": "00:00:51,000",
+      "text": "Và chúng ta cũng chưa kiểm soát được."
+    },
+    {
+      "id": 15,
+      "start": 52.0,
+      "end": 55.32,
+      "start_time": "00:00:52,000",
+      "end_time": "00:00:55,320",
+      "text": "Nên chúng ta chỉ kiểm soát được ngày hôm nay thôi."
+    },
+    {
+      "id": 16,
+      "start": 56.12,
+      "end": 57.62,
+      "start_time": "00:00:56,120",
+      "end_time": "00:00:57,620",
+      "text": "Chúng ta không kiểm soát được ngày mai luôn."
+    },
+    {
+      "id": 17,
+      "start": 59.06,
+      "end": 65.66,
+      "start_time": "00:00:59,060",
+      "end_time": "00:01:05,660",
+      "text": "Không kiểm soát được quá khứ và không kiểm soát được tương lai, chỉ kiểm soát được ngày hôm nay thôi."
+    },
+    {
+      "id": 18,
+      "start": 67.6,
+      "end": 76.88,
+      "start_time": "00:01:07,600",
+      "end_time": "00:01:16,880",
+      "text": "Nên cần phải có giấc mơ lớn để dẫn đường, nhưng cần phải thực tế trong từng bước đi, tức là từng công việc hàng ngày này."
+    },
+    {
+      "id": 19,
+      "start": 77.84,
+      "end": 83.82,
+      "start_time": "00:01:17,840",
+      "end_time": "00:01:23,820",
+      "text": "Và nếu rằng, nếu bạn đang phấn đấu nỗ lực mà vẫn chưa có kết quả, không vấn đề gì hết."
+    },
+    {
+      "id": 20,
+      "start": 84.0,
+      "end": 86.46,
+      "start_time": "00:01:24,000",
+      "end_time": "00:01:26,460",
+      "text": "Chúng ta đang đợi phép toán"
+    },
+    {
+      "id": 21,
+      "start": 86.46,
+      "end": 89.24,
+      "start_time": "00:01:26,460",
+      "end_time": "00:01:29,240",
+      "text": "Không phải là tỷ lệ thuận"
+    },
+    {
+      "id": 22,
+      "start": 89.24,
+      "end": 90.64,
+      "start_time": "00:01:29,240",
+      "end_time": "00:01:30,640",
+      "text": "Mà là cấp số nhân"
+    },
+    {
+      "id": 23,
+      "start": 90.64,
+      "end": 92.58,
+      "start_time": "00:01:30,640",
+      "end_time": "00:01:32,580",
+      "text": "Đến một ngày nào đó"
+    },
+    {
+      "id": 24,
+      "start": 92.58,
+      "end": 95.1,
+      "start_time": "00:01:32,580",
+      "end_time": "00:01:35,100",
+      "text": "Sau một đêm thôi"
+    },
+    {
+      "id": 25,
+      "start": 95.1,
+      "end": 98.36,
+      "start_time": "00:01:35,100",
+      "end_time": "00:01:38,360",
+      "text": "Cái YouTube của các bạn được ăn đề xuất"
+    },
+    {
+      "id": 26,
+      "start": 98.36,
+      "end": 99.22,
+      "start_time": "00:01:38,360",
+      "end_time": "00:01:39,220",
+      "text": "Nó vọt lên"
+    },
+    {
+      "id": 27,
+      "start": 99.22,
+      "end": 102.08,
+      "start_time": "00:01:39,220",
+      "end_time": "00:01:42,080",
+      "text": "Các bạn lấy lại tất cả những thứ gì các bạn đã mất"
+    },
+    {
+      "id": 28,
+      "start": 102.08,
+      "end": 103.474,
+      "start_time": "00:01:42,080",
+      "end_time": "00:01:43,474",
+      "text": "Đã đầu tư"
+    },
+    {
+      "id": 29,
+      "start": 103.474,
+      "end": 107.0,
+      "start_time": "00:01:43,474",
+      "end_time": "00:01:47,000",
+      "text": "Ngoài ra nhắc anh em thêm"
+    },
+    {
+      "id": 30,
+      "start": 107.0,
+      "end": 112.474,
+      "start_time": "00:01:47,000",
+      "end_time": "00:01:52,474",
+      "text": "Nên tin ở cấp độ trải nghiệm"
+    },
+    {
+      "id": 31,
+      "start": 112.474,
+      "end": 115.374,
+      "start_time": "00:01:52,474",
+      "end_time": "00:01:55,374",
+      "text": "Có thể mọi thứ bạn thấy"
+    },
+    {
+      "id": 32,
+      "start": 115.374,
+      "end": 119.234,
+      "start_time": "00:01:55,374",
+      "end_time": "00:01:59,234",
+      "text": "Kết quả thực tế đang xảy ra như thế"
+    },
+    {
+      "id": 33,
+      "start": 119.234,
+      "end": 121.534,
+      "start_time": "00:01:59,234",
+      "end_time": "00:02:01,534",
+      "text": "Nhưng chưa chắc nó đã là thế"
+    },
+    {
+      "id": 34,
+      "start": 121.534,
+      "end": 126.734,
+      "start_time": "00:02:01,534",
+      "end_time": "00:02:06,734",
+      "text": "Nên tránh việc là follow và thần tượng"
+    },
+    {
+      "id": 35,
+      "start": 126.734,
+      "end": 129.254,
+      "start_time": "00:02:06,734",
+      "end_time": "00:02:09,254",
+      "text": "Quá mức bất kỳ ai"
+    },
+    {
+      "id": 36,
+      "start": 129.254,
+      "end": 132.914,
+      "start_time": "00:02:09,254",
+      "end_time": "00:02:12,914",
+      "text": "Hãy chọn cách chủ động"
+    },
+    {
+      "id": 37,
+      "start": 132.914,
+      "end": 134.414,
+      "start_time": "00:02:12,914",
+      "end_time": "00:02:14,414",
+      "text": "Chủ động học"
+    },
+    {
+      "id": 38,
+      "start": 134.414,
+      "end": 137.534,
+      "start_time": "00:02:14,414",
+      "end_time": "00:02:17,534",
+      "text": "Để thấy rằng chúng ta thiếu cái gì thì chúng ta học cái đấy"
+    },
+    {
+      "id": 39,
+      "start": 137.534,
+      "end": 139.714,
+      "start_time": "00:02:17,534",
+      "end_time": "00:02:19,714",
+      "text": "Đừng có thấy ai hay cái gì cũng học hết"
+    },
+    {
+      "id": 40,
+      "start": 139.714,
+      "end": 144.514,
+      "start_time": "00:02:19,714",
+      "end_time": "00:02:24,514",
+      "text": "Mình chọn lọc học để phục vụ cho cái mục tiêu của mình"
+    },
+    {
+      "id": 41,
+      "start": 144.514,
+      "end": 146.474,
+      "start_time": "00:02:24,514",
+      "end_time": "00:02:26,474",
+      "text": "Nó rõ ràng ra như thế"
+    },
+    {
+      "id": 42,
+      "start": 146.474,
+      "end": 149.134,
+      "start_time": "00:02:26,474",
+      "end_time": "00:02:29,134",
+      "text": "Và cuối cùng rằng là"
+    },
+    {
+      "id": 43,
+      "start": 149.134,
+      "end": 150.514,
+      "start_time": "00:02:29,134",
+      "end_time": "00:02:30,514",
+      "text": "Mình muốn nhắn gửi là"
+    },
+    {
+      "id": 44,
+      "start": 150.514,
+      "end": 152.934,
+      "start_time": "00:02:30,514",
+      "end_time": "00:02:32,934",
+      "text": "Tất cả những điều này"
+    },
+    {
+      "id": 45,
+      "start": 152.934,
+      "end": 155.0,
+      "start_time": "00:02:32,934",
+      "end_time": "00:02:35,000",
+      "text": "Chốt lại là"
+    },
+    {
+      "id": 46,
+      "start": 155.0,
+      "end": 157.554,
+      "start_time": "00:02:35,000",
+      "end_time": "00:02:37,554",
+      "text": "Bạn là người tự quyết định được"
+    },
+    {
+      "id": 47,
+      "start": 157.554,
+      "end": 160.754,
+      "start_time": "00:02:37,554",
+      "end_time": "00:02:40,754",
+      "text": "Chính cái cuộc sống của mình và chính những cái kết quả của mình"
+    },
+    {
+      "id": 48,
+      "start": 160.754,
+      "end": 164.154,
+      "start_time": "00:02:40,754",
+      "end_time": "00:02:44,154",
+      "text": "Nó là cuộc chơi của đầu vào đầu ra"
+    },
+    {
+      "id": 49,
+      "start": 164.154,
+      "end": 169.754,
+      "start_time": "00:02:44,154",
+      "end_time": "00:02:49,754",
+      "text": "Kiểm soát đầu vào tức là kiểm soát chính tự mình làm"
+    },
+    {
+      "id": 50,
+      "start": 169.754,
+      "end": 171.094,
+      "start_time": "00:02:49,754",
+      "end_time": "00:02:51,094",
+      "text": "Tự mình kiểm soát"
+    },
+    {
+      "id": 51,
+      "start": 171.094,
+      "end": 172.874,
+      "start_time": "00:02:51,094",
+      "end_time": "00:02:52,874",
+      "text": "Ok"
+    },
+    {
+      "id": 52,
+      "start": 172.874,
+      "end": 175.394,
+      "start_time": "00:02:52,874",
+      "end_time": "00:02:55,394",
+      "text": "Đã hết 10 tư duy"
+    },
+    {
+      "id": 53,
+      "start": 175.394,
+      "end": 176.754,
+      "start_time": "00:02:55,394",
+      "end_time": "00:02:56,754",
+      "text": "Xin cảm ơn"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "sku": "VIDEO-38145b",
+  "title": "Hướng dẫn kháng kênh youtube bị xóa",
+  "actual_topic": "Quy trình thực chiến dùng ChatGPT soạn đơn kháng nghị tiếng Việt (683/800 ký tự) lấy lại kênh YouTube bị quét lỗi lách quy định (Circumvention Policy) sau hơn 10 giờ",
+  "category_group": "ha_tang",
+  "niche_primary": "Quản Trị AdSense & Kháng Kênh",
+  "niche_id": "channel_recovery",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "tools_mentioned": [
+    "ChatGPT",
+    "Gmail",
+    "YouTube",
+    "Cốc Cốc"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu phương pháp kháng kênh YouTube bị hệ thống quét nhầm của Đại Gia Mang Dép"
+    },
+    {
+      "time": "00:10",
+      "seconds": 10,
+      "label": "Soi email kênh Tin Tức Lăm Làng bị gỡ ngày 28/09 do lỗi Chính sách đối với hành vi lách quy định"
+    },
+    {
+      "time": "00:20",
+      "seconds": 20,
+      "label": "Quy tắc thời điểm vàng: Tuyệt đối không kháng ngay, chờ tối thiểu 1 đến 4 ngày để đạt tỷ lệ về cao nhất"
+    },
+    {
+      "time": "00:29",
+      "seconds": 29,
+      "label": "Sao chép toàn bộ nội dung thư thông báo xóa kênh của YouTube trong Gmail dán vào ChatGPT"
+    },
+    {
+      "time": "00:41",
+      "seconds": 41,
+      "label": "Nhập câu lệnh Prompt yêu cầu ChatGPT viết mẫu kháng kênh ngắn gọn dễ hiểu dưới 800 ký tự"
+    },
+    {
+      "time": "00:51",
+      "seconds": 51,
+      "label": "Sao chép văn bản kháng nghị từ ChatGPT và mở trang kháng nghị trong YouTube Studio"
+    },
+    {
+      "time": "01:00",
+      "seconds": 60,
+      "label": "Thao tác bấm Tiếp theo -> Bắt đầu kháng nghị -> Dán văn bản 683/800 ký tự và nhấn Gửi"
+    },
+    {
+      "time": "01:10",
+      "seconds": 70,
+      "label": "Kết quả thực tế: YouTube gửi email xác nhận kháng nghị thành công và khôi phục kênh sau hơn 10 tiếng"
+    }
+  ],
+  "key_takeaways": [
+    "Quy tắc thời điểm vàng quyết định tỷ lệ về kênh: Khi kênh vừa bị bot YouTube quét xóa, tuyệt đối không bấm kháng nghị ngay lập tức mà phải chờ ít nhất 1 ngày (24 giờ) đến 4 ngày rồi mới gửi đơn.",
+    "Không cần viết đơn dài dòng hay cầu kỳ bằng ngoại ngữ: Chỉ cần sao chép nguyên văn nội dung email thông báo xóa kênh của YouTube trong Gmail (ví dụ lỗi 'Chính sách đối với hành vi lách quy định') dán thẳng vào ChatGPT.",
+    "Sử dụng câu lệnh đơn giản nhưng cực kỳ hiệu quả: 'dựa vào gmail này , bạn hãy cho tôi xin 1 mẫu kháng kênh youtube , ngắn gọn dễ hiểu' để ChatGPT sinh ra bức thư giải trình lịch sự, yêu cầu nhân viên YouTube xem xét thủ công.",
+    "Khung nhập kháng nghị trực tiếp tại studio.youtube.com/channel-appeal giới hạn tối đa 800 ký tự; mẫu văn bản của ChatGPT dài khoảng 683/800 ký tự vừa khít tiêu chuẩn và giúp lấy lại kênh chỉ sau hơn 10 giờ."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước dùng ChatGPT kháng nghị khôi phục kênh YouTube bị quét xóa trong YouTube Studio",
+    "additional": [
+      "Kiểm tra email thông báo gỡ kênh từ no-reply@youtube.com và để kênh nghỉ tối thiểu 24 giờ trước khi thao tác.",
+      "Sao chép toàn bộ đoạn văn bản thông báo lý do xóa kênh của YouTube trong Gmail đưa vào ChatGPT.",
+      "Gõ nối tiếp câu lệnh yêu cầu ChatGPT viết mẫu đơn kháng kênh YouTube ngắn gọn, dễ hiểu dưới 800 ký tự.",
+      "Truy cập luồng kháng nghị tại studio.youtube.com/channel-appeal, bấm Tiếp theo và chọn Bắt đầu kháng nghị.",
+      "Chọn email liên hệ, dán văn bản kháng nghị 683/800 ký tự vào ô giải trình và bấm Gửi để chờ mail khôi phục kênh."
+    ]
+  },
+  "sop_steps": [
+    "Bước 1: Khi nhận được email thông báo kênh bị gỡ bỏ khỏi YouTube, bình tĩnh chờ tối thiểu 1 ngày (24–96 giờ) mới bắt đầu làm đơn kháng nghị.",
+    "Bước 2: Mở email thông báo xóa kênh trong Gmail, bôi đen và sao chép toàn bộ nội dung thông báo lỗi (ví dụ: vi phạm Chính sách đối với hành vi lách quy định).",
+    "Bước 3: Dán nội dung email vào ChatGPT kèm câu lệnh: 'dựa vào gmail này , bạn hãy cho tôi xin 1 mẫu kháng kênh youtube , ngắn gọn dễ hiểu' và sao chép văn bản ChatGPT trả về.",
+    "Bước 4: Nhấn vào nút Bắt đầu kiểm tra trong email hoặc vào thẳng YouTube Studio -> Tiếp theo -> Bắt đầu kháng nghị.",
+    "Bước 5: Chọn địa chỉ email nhận phản hồi, dán văn bản kháng nghị (tối đa 800 ký tự) vào ô trình bày lý do nhầm lẫn và nhấn Gửi."
+  ],
+  "avoid_flags": [
+    "Tuyệt đối không bấm gửi kháng nghị ngay lập tức vào đúng thời điểm bot YouTube vừa quét xóa kênh.",
+    "Không viết văn bản giải trình vượt quá giới hạn 800 ký tự của biểu mẫu kháng nghị trong YouTube Studio.",
+    "Không sử dụng lời lẽ trách móc, thái độ tiêu cực hoặc đổ lỗi gay gắt cho hệ thống kiểm duyệt của YouTube.",
+    "Không nộp chồng chéo nhiều đơn kháng nghị liên tiếp khi đơn đầu tiên đang trong thời gian chờ xét duyệt (10–48 giờ)."
+  ],
+  "analysis_method": "visual_frames_and_audio_verified",
+  "source_transcript": "video/VIDEO-38145b/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "last_verified_at": "2026-10-24T13:20:00Z",
+  "course_docs": [
+    {
+      "title": "Master Prompt & Mẫu Văn Kháng Kênh YouTube Bị Xóa (Tiếng Việt 683/800 Ký Tự + Tiếng Anh)",
+      "file": "assets/docs-dgmd/VIDEO-38145b/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-38145b/master_prompt.md",
+      "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-38145b/master_prompt.md"
+    },
+    {
+      "title": "Mẫu Đơn Kháng Nghị Khôi Phục Kênh YouTube Bị Xóa Nhầm (ChatGPT Appeal TXT)",
+      "file": "assets/docs-dgmd/VIDEO-38145b/master_prompt.txt",
+      "readFile": "assets/docs-dgmd/VIDEO-38145b/master_prompt.txt",
+      "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-38145b/master_prompt.txt"
+    }
+  ]
+}

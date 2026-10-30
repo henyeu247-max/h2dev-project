@@ -1,0 +1,154 @@
+{
+  "sku": "VIDEO-247cf8",
+  "duration": 113.92,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 18,
+  "full_text": "nó có một cái này em thấy rất là hay em muốn chia sẻ lại cho mọi người tức là chọn đúng thầy thì rất là quan trọng và có những cái keyword có những câu hỏi để mình làm nhé bất kỳ một cái lĩnh vực nào chứ không phải là nguyên cái YouTube này có những câu hỏi, có 7 câu hỏi cái thứ nhất là bản thân của cái người mà mình hỏi ấy Đôi khi mentor nó không nhất thiết là phải là một người thầy, đôi khi nó chỉ là một người bạn hoặc là một người có kết quả thôi. Thì cái người mà mình hỏi, mình xem là bản thân họ đã có cái kết quả mà mình mong muốn chưa? Cái thứ hai là có thể có rất là nhiều cái mô hình nó đã triển khai ở thế giới rồi nhưng mà nó có triển khai thực tế ở Việt Nam chưa? Cái thứ ba là khách hàng của họ có đạt được kết quả không? Tức là những cái người mà họ làm được rồi này, họ đưa về Việt Nam họ tự làm được rồi. Nhưng cái người khách hàng của họ mua cái sản phẩm của họ có đạt được kết quả hay không? Họ có sẵn sàng minh bạch về con số của chính họ hay không? Show ra được không? Họ có hệ thống chuyển giao từng bước một cho mình không? Hay là họ chỉ nói lý thuyết tư duy? Hay là họ sẽ chuyển giao toàn bộ công cụ, phần mềm, hệ thống cho mình? Tiếp theo thứ bảy là họ có đồng hành và cầm tay chỉ việc cho mình đến khi mà mình đạt mục tiêu không? Câu thứ 7 là câu cũng rất là nhiều người khó để đạt được những cái này. Thì cái này là những câu hỏi em tổng hợp và em cũng học và đúc kết được. Khi mà mình có được những câu hỏi như thế này, mình dễ dàng để mình tìm được một người để mình hỏi hoặc là mình tìm cách để mình chơi thân. Nó dễ hơn.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 7.35,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:07,350",
+      "text": "nó có một cái này em thấy rất là hay em muốn"
+    },
+    {
+      "id": 2,
+      "start": 7.35,
+      "end": 14.7,
+      "start_time": "00:00:07,350",
+      "end_time": "00:00:14,700",
+      "text": "chia sẻ lại cho mọi người tức là chọn đúng thầy thì"
+    },
+    {
+      "id": 3,
+      "start": 14.7,
+      "end": 20.0,
+      "start_time": "00:00:14,700",
+      "end_time": "00:00:20,000",
+      "text": "rất là quan trọng và có những cái keyword có những câu hỏi để mình làm nhé bất kỳ một cái lĩnh vực nào"
+    },
+    {
+      "id": 4,
+      "start": 20.0,
+      "end": 23.0,
+      "start_time": "00:00:20,000",
+      "end_time": "00:00:23,000",
+      "text": "chứ không phải là nguyên cái YouTube này"
+    },
+    {
+      "id": 5,
+      "start": 23.0,
+      "end": 25.44,
+      "start_time": "00:00:23,000",
+      "end_time": "00:00:25,440",
+      "text": "có những câu hỏi, có 7 câu hỏi"
+    },
+    {
+      "id": 6,
+      "start": 25.44,
+      "end": 28.2,
+      "start_time": "00:00:25,440",
+      "end_time": "00:00:28,200",
+      "text": "cái thứ nhất là bản thân"
+    },
+    {
+      "id": 7,
+      "start": 28.2,
+      "end": 30.0,
+      "start_time": "00:00:28,200",
+      "end_time": "00:00:30,000",
+      "text": "của cái người mà mình hỏi ấy"
+    },
+    {
+      "id": 8,
+      "start": 30.0,
+      "end": 34.94,
+      "start_time": "00:00:30,000",
+      "end_time": "00:00:34,940",
+      "text": "Đôi khi mentor nó không nhất thiết là phải là một người thầy, đôi khi nó chỉ là một người bạn hoặc là một người có kết quả thôi."
+    },
+    {
+      "id": 9,
+      "start": 35.62,
+      "end": 42.24,
+      "start_time": "00:00:35,620",
+      "end_time": "00:00:42,240",
+      "text": "Thì cái người mà mình hỏi, mình xem là bản thân họ đã có cái kết quả mà mình mong muốn chưa?"
+    },
+    {
+      "id": 10,
+      "start": 43.0,
+      "end": 50.2,
+      "start_time": "00:00:43,000",
+      "end_time": "00:00:50,200",
+      "text": "Cái thứ hai là có thể có rất là nhiều cái mô hình nó đã triển khai ở thế giới rồi nhưng mà nó có triển khai thực tế ở Việt Nam chưa?"
+    },
+    {
+      "id": 11,
+      "start": 51.0,
+      "end": 53.84,
+      "start_time": "00:00:51,000",
+      "end_time": "00:00:53,840",
+      "text": "Cái thứ ba là khách hàng của họ có đạt được kết quả không?"
+    },
+    {
+      "id": 12,
+      "start": 54.56,
+      "end": 58.0,
+      "start_time": "00:00:54,560",
+      "end_time": "00:00:58,000",
+      "text": "Tức là những cái người mà họ làm được rồi này, họ đưa về Việt Nam họ tự làm được rồi."
+    },
+    {
+      "id": 13,
+      "start": 58.0,
+      "end": 67.9,
+      "start_time": "00:00:58,000",
+      "end_time": "00:01:07,900",
+      "text": "Nhưng cái người khách hàng của họ mua cái sản phẩm của họ có đạt được kết quả hay không? Họ có sẵn sàng minh bạch về con số của chính họ hay không? Show ra được không?"
+    },
+    {
+      "id": 14,
+      "start": 67.9,
+      "end": 77.42,
+      "start_time": "00:01:07,900",
+      "end_time": "00:01:17,420",
+      "text": "Họ có hệ thống chuyển giao từng bước một cho mình không? Hay là họ chỉ nói lý thuyết tư duy? Hay là họ sẽ chuyển giao toàn bộ công cụ, phần mềm, hệ thống cho mình?"
+    },
+    {
+      "id": 15,
+      "start": 80.0,
+      "end": 83.54,
+      "start_time": "00:01:20,000",
+      "end_time": "00:01:23,540",
+      "text": "Tiếp theo thứ bảy là họ có đồng hành và cầm tay chỉ việc cho mình đến khi mà mình đạt mục tiêu không?"
+    },
+    {
+      "id": 16,
+      "start": 83.54,
+      "end": 90.973,
+      "start_time": "00:01:23,540",
+      "end_time": "00:01:30,973",
+      "text": "Câu thứ 7 là câu cũng rất là nhiều người khó để đạt được những cái này. Thì cái này là những câu"
+    },
+    {
+      "id": 17,
+      "start": 90.973,
+      "end": 98.407,
+      "start_time": "00:01:30,973",
+      "end_time": "00:01:38,407",
+      "text": "hỏi em tổng hợp và em cũng học và đúc kết được. Khi mà mình có được những câu hỏi như thế này, mình"
+    },
+    {
+      "id": 18,
+      "start": 98.407,
+      "end": 105.84,
+      "start_time": "00:01:38,407",
+      "end_time": "00:01:45,840",
+      "text": "dễ dàng để mình tìm được một người để mình hỏi hoặc là mình tìm cách để mình chơi thân. Nó dễ hơn."
+    }
+  ]
+}

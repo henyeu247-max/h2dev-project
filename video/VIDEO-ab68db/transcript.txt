@@ -1,0 +1,115 @@
+Chào anh chị em học viên, hôm nay chúng ta sẽ đến với cái bài nhạc không lời. Để làm ra những cái bài nhạc không lời này thì anh chị có thể nhìn thấy ở trên màn
+hình thì có những video đến 1 tiếng. Những cái video như thế này thì nó chỉ cần tầm 10-20.000 view là anh chị đủ giờ xem rồi. Vì bản chất nó là video dài. Thì cái thời
+lượng người ta bật lặp đi lặp lại người ta nghe, người ta cảm nhận thì nó rất là cao. Và cái tỷ lệ giữ chân hầu như là người ta nghe để ngủ, nghe để thư giãn.
+Anh chị hãy nghe những dòng nhạc mà nhạc quán cà phê thì cái nhạc không lời nó như thế. Để sản xuất được những video này thì anh chị đi theo từng bước. Là bước đầu tiên chúng
+ta là bước tạo hình ảnh. Bước thứ 2 là chúng ta sẽ tạo ra cái video để chúng ta đưa lên CapCut để chúng ta làm làm sao để cho nó phù hợp dài 1 tiếng. Bước thứ
+3 là bước tạo nhạc phù hợp. Thì bắt đầu chúng ta sẽ đi vào quy trình như sau. Để làm được những dòng nhạc như thế này thì anh chị phải dùng các công cụ như sau.
+ChatGPT, Suno AI, Grok, Flow. Anh chị có thể tạo hình ảnh trên ChatGPT cũng được, tạo hình ảnh trên Grok cũng được, tạo hình ảnh trên Flow cũng được. Anh chị muốn tạo như thế nào cũng được.
+cũng được cái quan trọng là chúng ta sẽ tạo như thế nào và làm như thế nào để cho nó hiệu quả thì anh chị
+nhấn vào một video bất kỳ mở đường link kết này đây là một cái video dài một tiếng thì để tạo được
+những hình ảnh này thì anh chị nhấn chụp ảnh cái hình ảnh này cho em Alt + Z (chụp màn hình Cốc Cốc) chụp cái màn hình nhé
+Sau đó thì chúng ta đưa lên con ChatGPT. Bây giờ chúng ta đi đến với câu lệnh để cho
+ChatGPT hiểu và vất ra cho chúng ta một câu prompt để chúng ta tạo ra một hình ảnh khác.
+Câu lệnh thứ nhất là câu prompt để tạo hình ảnh. Anh chị copy câu prompt tạo hình ảnh này. Anh chị chụp hình ảnh lại và ghi ra.
+Và chúng ta ghi ra bên ChatGPT luôn. Anh chị dán vào ChatGPT. Nhấn Enter.
+Bây giờ dựa trên cái hình ảnh gốc, ChatGPT sẽ cho anh chị một cái hình ảnh nhạc cổ Trung Hoa.
+dưới là cái prompt nhé trên là nó phân tích hình ảnh gốc dưới là prompt tạo hình ảnh trên
+Flow này anh chị copy cái câu prompt này cho em đấy nhé chúng ta nhấn sao chép câu prompt
+này và bây giờ bên phần Flow anh chị nhấn tạo dự án và chúng ta dán cái câu lệnh
+vừa giờ chúng ta được ChatGPT cho anh chị chọn cái kích thước là 16.9 chương 7 9.16 hay 3.1
+4:3, 1:1 đó
+Chúng ta nhấn tạo hình ảnh. Anh chị lấy 1 trong 2 hình ảnh. Em sẽ nhấn tải hình ảnh này xuống. Tải xuống nhé. Mọi người để 1K cũng được. Và anh chị mở
+1 cái tab ChatGPT mới và tải hình ảnh vừa giờ chúng ta tải xuống đây. Sau đó thì chúng ta đến với cái Prompt thứ 2 là câu lệnh để tạo ra Master Prompt.
+Nói cho anh chị hiểu là Master Prompt là nó sẽ tạo ra một prompt chi tiết để sau anh chị tạo ra những cái hình ảnh như thế này thì nó sẽ trả cho anh chị prompt.
+Nghĩa là khi mà có bất kỳ hình ảnh nào liên quan đến cái nhạc cổ Trung Hoa là anh chị vất lên là nó tự động tạo ra prompt.
+Bây giờ anh chị copy từ cái câu lệnh này nhé. Anh chị trả lại kết quả cho nó.
+Bây giờ là vất cái hình ảnh vừa giờ chúng ta đưa lên.
+Và anh chị gửi lên là được.
+Bây giờ là nó đã nêu lại cái toàn bộ những thứ mà anh chị đã đưa cho nó để tạo ra Master Prompt
+Và bây giờ là vất hình ảnh nhạc cổ Trung Hoa lên
+Cái tab này anh chị nên ghi nhớ cho em
+Chỉ cần chúng ta vất cái hình ảnh nhạc cổ Trung Hoa lên là nó sẽ tạo ra cái prompt này
+Prompt 10 giây nhé
+anh chị nhấn Sao chép prompt 10s
+bây giờ chúng ta lên Grok
+và tải cái hình ảnh vừa giờ chúng ta đưa lên
+và anh chị dán vào
+chọn 720 và chúng ta chọn 10s
+nó đang tạo video cho anh chị nhé
+Trong khi chờ đợi Grok tạo video thì anh chị hãy tạo cho em một cái ChatGPT mới.
+Và anh chị thêm này, thêm cái ảnh, vẫn thêm cái ảnh ấy lên nhé.
+Và bây giờ là câu lệnh, câu lệnh thứ 3 để tạo ra Master Prompt làm nhạc.
+Anh chị hãy copy hoặc viết ra giống như cái câu lệnh mà em đang ghi ở trên màn hình nhé.
+Anh chị dán vào, nhấn tải lên.
+Bây giờ nó cũng sẽ cho anh chị 1 cái Master Prompt để tạo ra cái nhạc nhé. Sau anh chị gửi
+cái hình ảnh lên là nó sẽ tạo ra cho anh chị 1 prompt để tạo nhạc trên Suno AI luôn.
+Đấy là nó tạo ra cho anh chị 1 câu lệnh ghi nhớ này.
+Anh chị nhấn Sao chép câu lệnh ghi nhớ mà cái Master Prompt nhạc nó tạo ra, gửi lại cho nó.
+Bây giờ anh chị tải lại cái hình ảnh lên để chúng ta yêu cầu nó tạo ra một from để tạo nhạc trên Suno AI.
+Cũng giống như cái bước mà chúng ta tạo hình ảnh ra video nhé.
+Chúng ta đã có một cái Suno AI Style Prompt này.
+Anh chị nhấn Sao chép.
+Nhấn sao chép này. Trong phần Suno AI, anh chị nhấn tạo lên, chọn đơn giản nhé. Chúng ta không cần trình độ cao đâu. Nhấn
+cho em đơn giản và dán cái prompt vừa giờ vào. Anh chị nhấn vào nhạc cụ nhé. Sau đó là nhấn tạo bài hát này.
+Trong khi chờ đợi cái Suno AI tạo nhạc cho chúng ta thì chúng ta sang cho em cái phần Grok này.
+Anh chị nhìn cái video đây. Video nó sẽ giữ nguyên khung mình như thế này là được nhé anh chị nhé.
+để tí nữa chúng ta là lấy video 10 giây này chúng ta tạo ra video một tiếng nhé
+rồi chúng ta tải cái gốc này về cho em tải video này về
+sau khi Suno AI tạo cho anh chị em xong cái nhạc thì anh chị em tải về
+Sau khi vào trong cái phần CapCut, anh chị tải cho em 2 cái file, 1 file video vừa tạo trên Grok và cái nhạc này.
+Sau khi thêm nhạc vào xong thì anh chị nhấn Sao chép 2 bản đi. Tắt âm thanh nhé anh chị nhé. Tắt âm thanh của video đi. Và anh chị nhìn nhé. Nếu mà như thế này
+thì chúng ta sẽ không làm được cái video 1 tiếng. Anh chị nhớ cho em là trong cái video thứ 2 thì anh chị bật cho em cái đảo ngược này nhé. Nhấn vào đảo ngược này.
+Đảo ngược nha anh chị nha, không phải phản chiếu nha, chúng ta chọn đảo ngược này.
+Thì anh chị sẽ nhìn thấy là cái hình ảnh nó rất là liền nha.
+Chúng ta sẽ xem qua này.
+Nó sẽ liền lại.
+Thì sau khi có rồi thì chúng ta sẽ sao chép lên.
+Anh chị copy cho em.
+Copy 2 cái nha, chứ không phải copy 1 cái nữa nha.
+Mà chúng ta sẽ copy 2 cái nha.
+Đấy, thì anh chị nhìn thấy là chúng ta đã tạo ra được cái video như thế này.
+Thì đối với cái đoạn nhạc nó có cái hay như thế này. Cái nhạc nhé, anh chị copy
+cái link nhạc này để cho nó phù hợp luôn. Ở trong cái nhạc em vừa copy cái
+nhạc ra thì chúng ta sẽ lựa chọn cái gì ạ? Ở phần này nhé, anh chị ra.
+Anh chị kéo cho em cái âm này cho nó bé xuống. Xong cái âm này thì nó sẽ cao lên. Để làm sao cho em 2 cái này nó phù hợp nhé. Anh chị thẩm qua cái nhạc của mình nhé.
+nhạc của mình
+đó
+và tiếp tục nha chúng ta sẽ
+Chúng ta sẽ ăn lấy cái này luôn
+Đã
+Anh chị kéo xuống cho em tầm 10.
+Cái này chúng ta xem là 8 đúng không?
+anh chị nhìn thấy ở cái kéo âm thanh kia thì chúng ta để 8.0 giây nhé
+thì cái này anh chị em kéo cho em tầm 8 nhé
+9 này, hoặc không thì anh chị để cho em ở trên cái mờ dần này
+8.0
+Chúng ta sẽ copy cái nhạc thứ 2 này nhé
+Nếu mà để cho cái đoạn nó làm sao để cho nó hiệu quả, mình biết cái đoạn trước đoạn sau ấy, để cho nó ok hơn ấy, thì anh chị cắt cho em cái đoạn này
+Ctrl B nhé, anh chị nhấn vào cái nhạc này, kéo đến cái thanh trắng ở đâu thì vị trí nó ở đó. Đây, anh chị cắt cho em cái đoạn này. Và nhấn Sao chép cái đoạn này cho em nhé. Nhấn Sao chép này. Thì gì ạ? Thì chúng ta cứ
+kéo đến cái cuối cùng của cái video này nhé. Thì chúng ta biết là cái đoạn kia chúng ta dừng ở đâu thì đoạn này chúng ta sẽ dừng ở đây. Đấy, bây giờ thì chúng ta sẽ có 2 cái này như thế này rồi. Nhấn tạo clip tiếp cho em.
+Và cứ thế là anh chị copy cái nhạc nhẹ ra cho em.
+Copy này.
+Xóa cái này đi.
+Cứ nhớ cho em là cái bé này ở đâu thì bắt đầu cái đoạn nhạc nó ở đó nhé.
+Dán đây cho em.
+nhớ là mọi người phải có cái gu thẩm nhạc đã thì khi mà có như này rồi thì anh chị nhớ cho em là anh chị nhấn lên nhân các video này lên
+nhấn cho em video lên copy nhấn lên
+Chúng ta làm thủ công hết nhé. Làm những cái dòng nhạc này anh chị lên cho em là thủ công. Nhớ cho em là cái video
+đầu tiên là hai cái đoạn đầu thì anh chị nhớ là đoạn đầu hay đoạn sau thì anh chị phải nhớ cái đoạn này. Cắt này.
+video này để tầm 25 phút thôi anh chỉ có thể đếm tiếng được và trong cái này nữa thì chúng ta sẽ thêm những cái hiệu ứng
+anh chị tìm cho em là lấp lánh
+đây nha trong cái phần hiệu ứng anh chị chọn cho em cái lấp lánh này
+anh chị dán cho em cái phát sáng này đi cho cường độ nó nhẹ
+bộ lọc nó nhẹ rồi xoay nó sẽ có những cái phát sáng ở trong mà nó sẽ không tính là lặp đi lặp lại và mây anh chị em nhé
+Anh chị làm sao cho em là tìm những cái hiệu ứng băng tuyết mây này
+Ví dụ em chọn cái này đi
+không khí này, cực sáng này, khoảng tốc độ này, bộ lọc cho bé
+Cảm ơn.
+Chị ăn cho em vài cái hiệu ứng mà làm sao để chúng ta thẩm được cái màu sắc nhé. Đó, đây là một cái video về nhạc cổ Trung Hoa nhé anh chị em nhé.
+Và anh chị có thể nếu mà làm xong anh chị chọn tất cả anh chị nhấn cho em tạo clip ghép thì nó đã ra một cái file video như thế này. Rất là dài 25 phút. Thì làm cực kỳ nhanh nhé. Và tiếp theo đến
+chúng ta đến cái phần là tạo thumbnail nhé anh chị em. Tiếp theo câu prompt tạo ảnh thumbnail nhé anh chị nhé. Anh
+chị copy cho em cái câu prompt này. Hoặc là anh chị viết ra nhé. Viết đúng cái câu prompt này cho em.
+Thì ở dưới cái prompt mà tạo ra nhạc ấy, thì anh chị vào cho em cái đấy, update cái hình ảnh và gốc của chúng ta lên.
+Video như thế nào thì thumbnail chúng ta làm như thế nhé, chúng ta không làm kiểu như là làm cho nó có hay là nội dung trong video như thế này, anh chị làm cái hình ảnh thumbnail khác thì không được nhé.
+Sau khi đợi một lúc thì ChatGPT đã cho chúng ta ra một cái hình ảnh thumbnail nhé, anh chị có thể nhìn thấy cái hình ảnh thumbnail này.
+hoặc là anh chị có thể thêm những cái tư duy để viết cái thumbnail nó khác hơn. Điều được đó là do mình sáng tạo hoặc là có điểm nhấn hay không là tùy theo cái mắt của anh chị thẩm mỹ được cái hình ảnh thumbnail này.

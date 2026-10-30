@@ -1,0 +1,648 @@
+1
+00:00:00,000 --> 00:00:12,000
+chúng ta sẽ đến với bí mật 0.1 phần trăm nhóm tiên phong có sự ảnh hưởng tới hàng triệu người trên
+
+2
+00:00:12,000 --> 00:00:20,000
+Internet với mô hình 1 x mũ n, 1 x mũ n, bí mật về việc sở hữu sổ đỏ trên
+
+3
+00:00:20,000 --> 00:00:30,000
+Cái này đó là một cái phần nó gọi là định danh trên Internet.
+
+4
+00:00:30,000 --> 00:00:40,880
+Khi mình làm các mô hình, 3 mô hình kinh doanh này, có mô hình 1-1, mô hình tiếp cận, 1 mình với lại khách hàng, chuyên gia, coach, kiến trúc sư, phong thủy.
+
+5
+00:00:41,360 --> 00:00:52,880
+Đến bây giờ thì nó điển hình hơn là mô hình này có thể là tiếp cận 1-N, tiếp cận được nhiều người một lúc mở những quán hàng ăn tạp hóa hoặc là sự sáng tạo của bên Grab, cải tiến của bên Grab.
+
+6
+00:00:53,000 --> 00:01:01,600
+Chia sẻ, ví dụ giúp mình cho việc là thay vì coach từng anh em 1, thì mình đưa ra mô hình coach 1 với 1 group này.
+
+7
+00:01:02,080 --> 00:01:05,540
+Thực chất cái bí mật là cái group này nó còn hiệu quả hơn là coach 1-1.
+
+8
+00:01:06,100 --> 00:01:09,680
+Bởi vì sao? Bởi vì là con người mà sống kiểu gì chả có cộng đồng.
+
+9
+00:01:09,700 --> 00:01:11,540
+và cái niềm tin
+
+10
+00:01:11,540 --> 00:01:12,120
+để dẫn dắt
+
+11
+00:01:12,120 --> 00:01:12,680
+mình á
+
+12
+00:01:12,680 --> 00:01:13,780
+nó còn quan trọng hơn
+
+13
+00:01:13,780 --> 00:01:14,500
+cả cái
+
+14
+00:01:14,500 --> 00:01:16,080
+cái việc là mình làm như thế nào
+
+15
+00:01:16,080 --> 00:01:17,340
+cái niềm tin đôi khi
+
+16
+00:01:17,340 --> 00:01:18,460
+nó có cái niềm tin thôi
+
+17
+00:01:18,460 --> 00:01:19,720
+nó giúp cho mình đi
+
+18
+00:01:19,720 --> 00:01:21,060
+đi nhanh và đi xa hơn
+
+19
+00:01:21,060 --> 00:01:21,480
+rất là nhiều
+
+20
+00:01:21,480 --> 00:01:22,920
+thì ở đây mình đồng đội
+
+21
+00:01:22,920 --> 00:01:23,960
+thì chắc chắn sẽ có người
+
+22
+00:01:23,960 --> 00:01:25,080
+nhanh người chậm
+
+23
+00:01:25,080 --> 00:01:25,900
+và người
+
+24
+00:01:25,900 --> 00:01:28,020
+có tìm được long mạch ngay
+
+25
+00:01:28,020 --> 00:01:29,060
+và có người chưa tìm được
+
+26
+00:01:29,380 --> 00:01:33,780
+Nhưng chính những anh em có kết quả rồi thì sẽ hỗ trợ những anh em chưa có kết quả về mà niềm tin trước.
+
+27
+00:01:34,680 --> 00:01:36,900
+Thì đấy là một cái mà nó rất là tuyệt vời.
+
+28
+00:01:37,020 --> 00:01:37,660
+Group coaching.
+
+29
+00:01:38,200 --> 00:01:40,682
+Và ngày xưa ấy, cái lần mà em suýt nữa thì bỏ cuộc ấy.
+
+30
+00:01:40,682 --> 00:01:46,462
+Vì vấn đề là mình không hiểu tại sao mình làm rất là chăm chỉ rồi mọi thứ rồi 6 tháng rồi không có kết quả.
+
+31
+00:01:48,142 --> 00:01:53,382
+Cho lúc mà chuẩn bị bỏ cuộc thì đi ăn ở nhà thằng bạn thì thằng ấy cũng làm YouTube với mình, cùng học với mình.
+
+32
+00:01:53,942 --> 00:01:56,022
+Thì lúc ấy nó đã kiếm được mấy nghìn đô một tháng rồi.
+
+33
+00:01:56,862 --> 00:01:57,462
+Thế nó show ra.
+
+34
+00:01:58,502 --> 00:02:00,102
+Nó show ra xong nó bảo là cứ làm đi.
+
+35
+00:02:01,082 --> 00:02:02,362
+Thế nó nói mỗi câu cứ làm đi.
+
+36
+00:02:02,922 --> 00:02:05,182
+Thế mình cứ làm đi, cứ làm đi.
+
+37
+00:02:05,462 --> 00:02:09,842
+Xong rồi dần dần dần dần làm thì mình đứng ra khỏi cái cách mình đang làm.
+
+38
+00:02:09,842 --> 00:02:13,182
+để mình nhìn lại thì mình thấy có nhiều cái mình làm nó chưa đúng lắm.
+
+39
+00:02:13,362 --> 00:02:14,902
+Mình cứ cày vào thôi nhưng mà nó chưa đúng lắm.
+
+40
+00:02:15,662 --> 00:02:19,502
+Thì mình thoát ra khỏi công việc mình đang làm xong mình review lại thì mình lại thấy nó kết quả.
+
+41
+00:02:20,662 --> 00:02:22,342
+Thì cái niềm tin nó rất là quan trọng.
+
+42
+00:02:24,582 --> 00:02:27,502
+Mình cũng đang triển khai đúng cái cách thức ngày xưa
+
+43
+00:02:27,502 --> 00:02:33,202
+khi mà mình cũng may mắn được những người thầy hỗ trợ về việc phát triển về YouTube,
+
+44
+00:02:33,202 --> 00:02:36,622
+nhất là MMO. MMO cái niềm tin này vô cùng quan trọng.
+
+45
+00:02:36,850 --> 00:02:46,450
+MMO, kể cả những cái mảng khác về MMO, phải có niềm tin. Bởi vì cái cách thức làm nha, anh em thấy là nó không có gì bí mật cả. Vẫn là chỉ là làm
+
+46
+00:02:46,450 --> 00:02:56,000
+video, SEO, up, hết. Nó chỉ có thế đâu. Cái niềm tin mới là cái để giúp anh em mình phát triển đi nhanh hơn. Nên cái group coach, nó là một cái sáng kiến tốt.
+
+47
+00:02:56,000 --> 00:03:05,700
+Tiếp theo ngoài mô hình 1-N thì người ta đang đi đến mô hình 1 x mũ n, tức là một mình mình, đưa ra một phương pháp, một kiến
+
+48
+00:03:05,700 --> 00:03:15,350
+thức và sau đó đưa những cái đấy tiếp cận đến hàng triệu người và nó đào tạo thị trường thông qua những đòn bẩy internet và truyền thông.
+
+49
+00:03:15,350 --> 00:03:23,777
+Thì đây là những cái mô hình nó đang chạy rồi. Thì vậy là mình chọn cái nào thôi. Cái quan trọng là mình lựa chọn. Mình lựa chọn mô
+
+50
+00:03:23,777 --> 00:03:32,203
+hình nào cũng được. Cốt là nó phù hợp với mình. Thì đến bây giờ là mọi người đang đi theo mô hình 1 x mũ n. Mọi doanh nghiệp
+
+51
+00:03:32,203 --> 00:03:40,630
+lớn, những doanh nghiệp truyền thông, họ đều có ngân sách cực kỳ lớn cho KOL, cực kỳ lớn cho quảng cáo, cực kỳ lớn cho việc phủ thương hiệu.
+
+52
+00:03:40,630 --> 00:03:50,570
+Nike, Grab, họ làm gì có cái nhà máy nào đâu, họ chỉ có xây thương hiệu thôi và phủ, đấy là nhiệm vụ của họ.
+
+53
+00:03:50,570 --> 00:03:59,560
+Những vấn đề của mô hình 1-1 thì anh em cũng đều biết rồi. Mất nhiều công sức giúp được ít người. Chi phí càng lớn thì càng
+
+54
+00:03:59,560 --> 00:04:08,550
+gặp vấn đề phụ thuộc vào địa điểm. Bán được hàng hóa thì phải hy sinh thời gian. Thiếu data, càng mở rộng càng mất tự do.
+
+55
+00:04:09,272 --> 00:04:22,672
+Đấy cũng chính là cái lý do mà em rất là thích những cái mô hình nó liên quan đến Internet, để làm sao mình còn phải thoát ra được. Và đây cũng là một cái đau đáu của em khi mà chia sẻ cho mọi người về vấn đề là nếu mà mình cứ làm,
+
+56
+00:04:22,672 --> 00:04:28,212
+Nhưng nếu cái công việc này của mình làm sau này mình bị dính mắc vào nó thì sao?
+
+57
+00:04:30,252 --> 00:04:41,552
+Thì đấy là những cái cũng rất là đau đáo về cái đấy nên là cũng mong muốn vừa làm và vừa chia sẻ và mình tìm được cách thức để mình có thể tối ưu và mình thoát ra khỏi cái hệ thống.
+
+58
+00:04:42,052 --> 00:04:50,592
+Thì lúc đấy mình mới thực sự là gọi là kinh doanh nó thành công được, bắt buộc nó phải có thời gian, bắt buộc nó phải có thời gian dành cho gia đình.
+
+59
+00:04:50,592 --> 00:04:54,432
+Hiện tại em chưa làm được điều đấy nên em cũng chưa dám chia sẻ.
+
+60
+00:04:54,432 --> 00:05:03,292
+Đây là những cái mà em đang hướng tới và em cũng đang có những cái cách thức để có thể đạt được những cái điều đấy và đang làm rồi.
+
+61
+00:05:03,932 --> 00:05:10,592
+Khi mà làm có kết quả thì chắc chắn là mình sẽ chơi nhau nó không phải là nguyên qua 8 tuần và không phải cứ lên trăm nghìn sub là xong.
+
+62
+00:05:10,592 --> 00:05:15,532
+Anh em nào mà còn chơi với em thì em còn chơi với anh em
+
+63
+00:05:15,532 --> 00:05:18,912
+Còn share lại những cái mà may mắn em biết
+
+64
+00:05:18,912 --> 00:05:21,112
+Và em sẽ học từ anh chị rất là nhiều
+
+65
+00:05:21,112 --> 00:05:22,700
+Ở đây toàn là...
+
+66
+00:05:22,700 --> 00:05:30,860
+Toàn người mà mình thấy thích và mong muốn làm việc không phải là nguyên 8 tuần mà muốn làm việc nó dài.
+
+67
+00:05:32,860 --> 00:05:37,880
+Và có một câu hỏi, tất cả mọi người đều hỏi là ư thế thì tiếp cận nó như thế nào?
+
+68
+00:05:38,300 --> 00:05:40,000
+1-1 hay 1-N thì tiếp cận như thế nào?
+
+69
+00:05:40,000 --> 00:05:46,620
+Thì cái câu trả lời chắc mọi người biết được luôn rồi thì chúng ta cần phải số hóa doanh nghiệp, sử dụng đòn bẩy internet và xuất hiện trên các mạng xã hội.
+
+70
+00:05:47,320 --> 00:05:50,400
+Cái xuất hiện các mạng xã hội này chính là cái anh em mình đang làm.
+
+71
+00:05:50,400 --> 00:05:59,340
+Còn cái số hóa doanh nghiệp, nó có 2 ý nhé, số hóa doanh nghiệp và sử dụng đòn bẩy internet, thì là một vài cái doanh nghiệp lõi họ đang làm.
+
+72
+00:06:00,280 --> 00:06:05,060
+Anh em có thể nghe cái câu chuyện là Thế Giới Di Động, họ cạnh tranh bằng gì?
+
+73
+00:06:06,240 --> 00:06:15,080
+Họ cạnh tranh bằng công nghệ, họ cạnh tranh bằng số hóa doanh nghiệp, chứ họ không cạnh tranh bằng những cái việc là giảm giá hay là gì đâu, thậm chí giá họ còn đắt hơn.
+
+74
+00:06:15,080 --> 00:06:17,080
+Họ tối ưu hệ thống.
+
+75
+00:06:17,080 --> 00:06:25,080
+Camera của Thế Giới Di Động vào anh chị có thể thấy được là nó có thể đo được là mặt mình cười như thế nào.
+
+76
+00:06:25,080 --> 00:06:28,080
+Nhân viên tiếp xúc với khách hàng có cười không.
+
+77
+00:06:28,080 --> 00:06:33,080
+Nhân viên sẽ được đánh giá qua việc là khách hàng vào có làm khách hàng hài lòng không.
+
+78
+00:06:33,080 --> 00:06:35,080
+Thậm chí làm khách hàng hài lòng không.
+
+79
+00:06:35,080 --> 00:06:40,460
+một cái khu vực ABC nào đấy cái lượng khách hàng vào hay đến lui đến cái điểm gì
+
+80
+00:06:40,460 --> 00:06:46,600
+nó cũng có tính toán và phân tích hết và sau đó những cái điểm đấy những cái sản phẩm đấy nó còn được đem ra ngoài
+
+81
+00:06:46,600 --> 00:06:49,960
+để khách hàng dễ tiếp cận hơn
+
+82
+00:06:49,960 --> 00:06:55,120
+Thậm chí đến bây giờ mọi người có thể thấy rằng là họ tối ưu thêm cả cái phần nhập hàng
+
+83
+00:06:56,337 --> 00:06:58,177
+AI dự báo được cái quá trình nhập hàng.
+
+84
+00:07:01,057 --> 00:07:08,097
+Nó khủng khiếp đến như vậy. Họ cạnh tranh nhau bằng số hóa doanh nghiệp, bằng đòn bẩy, bằng Internet.
+
+85
+00:07:08,097 --> 00:07:15,187
+Hay là những câu chuyện sát sườn giống như là bên anh Lê Đắc Lâm cũng đẩy, em
+
+86
+00:07:15,187 --> 00:07:22,277
+của anh Lê Đắc Lâm cũng đẩy cái hệ thống F99 về hoa quả anh em biết đấy.
+
+87
+00:07:22,637 --> 00:07:27,977
+Thì lõi của họ sau này họ đều hướng tới là công nghệ, cạnh tranh nhau về công nghệ.
+
+88
+00:07:31,000 --> 00:07:34,617
+Đây là cái ví dụ mà tại sao mà lại bảo là sổ đỏ.
+
+89
+00:07:34,617 --> 00:07:44,370
+Thời ông bà các cụ ngày xưa thì lên khai hoang thì cắm cọc ở đâu thì thí đất của mình ở đấy. Sau làm chứng nhận thì nó được sổ đỏ và công nhận là
+
+90
+00:07:44,370 --> 00:07:54,124
+tài sản. Còn nhiều đất thì gọi là địa chủ. Người giàu ở Việt Nam thì đa số là đất. Anh Thành Tiến có câu nổi tiếng trong giới. Tại sao em đưa câu này vào vì
+
+91
+00:07:54,124 --> 00:08:03,877
+nó liên quan đến anh Khôi cũng có cái hệ thống về bất động sản và đào tạo bất động sản lớn ở Việt Nam, có top ở Việt Nam về bất động sản dòng tiền.
+
+92
+00:08:11,700 --> 00:08:24,020
+Thế thì cái thời kỳ internet này thì mình không cần đi khai hoang giống như các cụ để chiếm đất nhưng mà mình cần tạo ra các cái sổ đỏ trên internet.
+
+93
+00:08:24,940 --> 00:08:36,920
+Đây là cái logic mà mình đưa ra. Đơn giản là muốn tạo sổ đỏ thì mình tạo thương hiệu thôi. Tạo thương hiệu bằng việc là xây đa kênh. Xây đa kênh bằng xây video. Video bây giờ thì có video ngắn.
+
+94
+00:08:36,920 --> 00:08:46,600
+Thế từ video ngắn thì nó có các cái nền tảng YouTube, TikTok, Reels. Anh em có thể thấy rằng là giống như anh Tùng đã
+
+95
+00:08:46,600 --> 00:08:56,280
+chia sẻ, YouTube, cái chính sách của nó, cái policy của nó, nó thiên về bảo vệ người dùng, nhưng mà là về trẻ em.
+
+96
+00:08:56,580 --> 00:09:02,440
+Thế nếu mà người làm về trẻ em thì cần phải hạn chế và tránh cái phần liên quan trẻ em là cái chính sách cực kỳ gắt của nó.
+
+97
+00:09:02,440 --> 00:09:12,960
+Còn bên TikTok thì nó rất rất nhiều cái nội dung cần tránh bởi vì cái nội dung của nó liên quan đến trẻ em nhiều quá nên cái policy của nó cực kỳ gắt.
+
+98
+00:09:12,960 --> 00:09:19,100
+và quan trọng nữa là mình đều phải đọc policy đọc cái luật của nó
+
+99
+00:09:19,100 --> 00:09:23,460
+tuy nhiên là giống như anh em làm mình vẫn phải trải nghiệm
+
+100
+00:09:23,460 --> 00:09:26,780
+anh em cứ bảo là có cái này lách được cái kia lách được
+
+101
+00:09:26,780 --> 00:09:30,120
+ông cứ làm đi cho lúc ông làm ông mới biết được có lách được hay không
+
+102
+00:09:30,120 --> 00:09:32,960
+cứ phải làm đi đã rồi test rồi sau dần dần
+
+103
+00:09:32,960 --> 00:09:38,602
+mình sẽ hiểu được nền tảng và mình chơi trên sân của nó thì mình phải hiểu được luật của nó
+
+104
+00:09:38,602 --> 00:09:39,542
+My rule, my rule.
+
+105
+00:09:41,000 --> 00:09:45,302
+Tiếp theo nữa là cái ưu nhược điểm của việc xây dựng cái hình ảnh chuyên gia này.
+
+106
+00:09:46,522 --> 00:09:52,562
+Thì ở đây thì những cái nền tảng này á, video Short là cái mà anh em mình đang hướng tới.
+
+107
+00:09:53,142 --> 00:09:59,882
+Có nền tảng là TikTok, YouTube, Facebook Reels này. Ưu điểm của nó phủ nhanh, nhiều view, dễ viral, dễ làm idol và bắt đầu rất dễ.
+
+108
+00:10:00,582 --> 00:10:07,202
+Đây là cái anh em mình đang làm. Và đây đa số anh em đã làm thì kiểu gì cũng có một vài nghìn view, một vài chục nghìn view.
+
+109
+00:10:08,562 --> 00:10:14,542
+Chúc mừng chị Linh là đã có được hơn 1.000 view rồi. Cái view này là view khó khăn thực sự luôn.
+
+110
+00:10:14,982 --> 00:10:20,802
+Cái view đầu tiên, 1.000 view, à mọi quên, 1.000 sub đầu tiên trên YouTube. Khó khăn thực sự luôn đấy.
+
+111
+00:10:20,802 --> 00:10:26,802
+Ngày xưa thầy Quân để có được 1.000 view đấy là thầy làm mất khoảng 14 tháng.
+
+112
+00:10:28,022 --> 00:10:34,462
+Thầy Long thì mất khoảng 2 năm để làm được 10.000 sub.
+
+113
+00:10:36,082 --> 00:10:39,222
+Thì cái mà 1.000 sub đầu tiên nó khó, rất là khó.
+
+114
+00:10:39,602 --> 00:10:41,262
+Chúc mừng chị đã qua cái level đầu tiên.
+
+115
+00:10:41,642 --> 00:10:44,302
+Nhưng mà ngược lại là cái video Short này, cái...
+
+116
+00:10:44,550 --> 00:10:50,550
+Cái kênh gọi là ờ thì nó cũng không lên còn chưa phát triển nhanh thì nó cũng khoảng 20k rồi.
+
+117
+00:10:50,550 --> 00:10:58,550
+20k follow, ngày xưa thì kiếm được 20k follow nghe vẻ khó, giờ thì nó nhanh.
+
+118
+00:10:58,550 --> 00:11:11,550
+Nhược điểm của nó là nó ít bền, lượng follow thì nó ít có tác dụng với lại video mới, thời gian ngắn, ít đọng lại cái hình ảnh chuyên gia và cái tương tác của nó kém so với việc là để xây dựng cái hình ảnh chuyên gia.
+
+119
+00:11:11,550 --> 00:11:18,230
+Mình hiểu cái ưu nhược điểm của nó thôi. Mọi người ở đây thì đều hiểu, em muốn nhắc lại. Còn cái video long là video dài.
+
+120
+00:11:19,050 --> 00:11:23,990
+Thì nó có YouTube và Facebook Watch. Facebook Watch cũng là một cái khủng khiếp nhé.
+
+121
+00:11:24,870 --> 00:11:33,410
+Nên là anh em không được bỏ qua nó. Nó khẳng định cái chuyên gia bằng những cái nền tảng tích lũy video, càng về sau càng giá trị.
+
+122
+00:11:34,030 --> 00:11:37,710
+Video tạo trung thành, vừa tìm kiếm trên mạng xã hội và có tương tác tốt.
+
+123
+00:11:37,710 --> 00:11:44,810
+Nhưng điểm nó khó với content, nó khó vì kỹ thuật, nó lâu phổ biến, nó làm lâu kết quả và anh em dễ bỏ cuộc.
+
+124
+00:11:45,750 --> 00:11:52,030
+Thì đây là cái mà đa số mọi người sẽ bỏ cuộc khi mà dưới 1.000 sub.
+
+125
+00:11:53,030 --> 00:11:57,710
+Trong cái phần Keep Going, em cũng nói rõ rồi, dưới 1.000 là người ta bỏ cuộc hết.
+
+126
+00:11:58,310 --> 00:11:59,590
+Đến như thời bọn em học
+
+127
+00:11:59,590 --> 00:12:01,130
+khoảng hơn 200 thằng.
+
+128
+00:12:02,070 --> 00:12:03,650
+Thì bây giờ còn khoảng 30 thằng là còn lại.
+
+129
+00:12:04,010 --> 00:12:04,930
+Đó được khoảng 10%.
+
+130
+00:12:04,930 --> 00:12:06,610
+Tiếp theo nữa là cái
+
+131
+00:12:06,610 --> 00:12:07,450
+mình có thể sử dụng
+
+132
+00:12:07,450 --> 00:12:08,450
+text cộng với lại
+
+133
+00:12:08,450 --> 00:12:10,262
+website.
+
+134
+00:12:10,262 --> 00:12:13,102
+Website, Google, báo chí, truyền thông, truyền hình, Instagram.
+
+135
+00:12:13,822 --> 00:12:20,282
+Không thể bỏ qua được nha, Instagram nếu mà làm với những cái mảng trang sức, những cái liên quan hình ảnh.
+
+136
+00:12:20,922 --> 00:12:21,882
+Nền tảng khủng khiếp luôn đấy.
+
+137
+00:12:23,202 --> 00:12:24,742
+Tăng uy tín, dễ chi tiền sử dụng.
+
+138
+00:12:25,842 --> 00:12:26,902
+Nó khó này.
+
+139
+00:12:27,802 --> 00:12:29,962
+Nó khó là nó SEO, SEO mất thời gian.
+
+140
+00:12:30,042 --> 00:12:37,342
+Khó làm, ông lớn thì ôm thị trường, ít đơn vị làm nó chuẩn. Đa số anh em mình làm
+
+141
+00:12:37,342 --> 00:12:44,642
+SEO web, mình toàn SEO theo kỹ thuật, theo Google, chứ có theo cảm xúc người dùng đâu. Nhưng mà
+
+142
+00:12:44,642 --> 00:12:51,942
+nếu mà không SEO như vậy thì mình không lên được. Thì đấy là những cái video, video và video.
+
+143
+00:12:52,000 --> 00:13:03,342
+Nhiệm vụ chính là nền tảng này, TikTok, Facebook, YouTube, Google.
+
+144
+00:13:03,342 --> 00:13:10,042
+Thì cái thằng nào nhé, anh em nhớ nhé, cái thằng nào thì nó hãy làm nhiệm vụ của nó.
+
+145
+00:13:11,522 --> 00:13:18,202
+Nên là mình đừng hy vọng nhiều về việc là nó làm thêm những cái nhiệm vụ khác một cách xuất sắc.
+
+146
+00:13:18,202 --> 00:13:22,762
+TikTok, nhiệm vụ chính của nó là lan tỏa và tiếp cận khách hàng lạnh.
+
+147
+00:13:23,622 --> 00:13:25,382
+Thì đến bây giờ nó có thêm phần shop rồi.
+
+148
+00:13:25,500 --> 00:13:38,820
+thì nó có hỗ trợ thêm phần bán hàng thì mình triển khai cái phần shop đấy. Và Facebook thì nó tập trung vào xây dựng cộng đồng, tương tác 2 chiều, Google thì những cái nhiệm vụ của nó SEO từ khóa, content, seeding.
+
+149
+00:13:39,540 --> 00:13:46,660
+YouTube thì xây dựng hình ảnh chuyên gia. Nên là anh em mình cứ hiểu rõ rằng là cái nền tảng nào sử dụng mục đích chính là gì.
+
+150
+00:13:47,660 --> 00:13:53,880
+Thì cái nhiệm vụ chính của nó, mình cần phải tập trung vào nó. Và khi mà mình đạt được kết quả của nó rồi là mình ok.
+
+151
+00:13:53,880 --> 00:14:02,880
+YouTube nó có thể bán hàng được chứ vẫn bán. Nhưng nó không thể bán scale và không thể mở rộng mạnh bằng Facebook khi mà mình làm được.
+
+152
+00:14:02,880 --> 00:14:10,880
+Em test những cái này thì với những cái mảng bọn em làm, những cái free traffic thường là nó sẽ đem lại.
+
+153
+00:14:10,880 --> 00:14:20,580
+Nếu cả live stream tuần buổi, nó đưa lại ở khoảng 3 đến 5 tỷ một tháng free traffic là nó đang chưa lên được nữa.
+
+154
+00:14:20,580 --> 00:14:29,506
+Nhưng khi mà mình áp dụng vào quảng cáo chạy lại những phần khách hàng của mình và chạy phủ thì mình lại ngược lại khi mà mình chạy quảng
+
+155
+00:14:29,506 --> 00:14:38,432
+cáo như vậy là mình lại coi những cái thằng YouTube, TikTok, Google này nó chính là cái điểm để mình gọi là xác nhận uy tín với khách hàng.
+
+156
+00:14:38,432 --> 00:14:42,992
+Đôi khi có những khách hàng hàng lạnh họ chưa xem YouTube, chưa xem YouTube, chưa xem Google, họ vẫn mua.
+
+157
+00:14:43,632 --> 00:14:49,592
+Bởi vì là họ thấy là à ông này 4-500.000 follow mặc định trong đầu họ nghĩ rằng có cái gì nó uy tín rồi.
+
+158
+00:14:49,832 --> 00:14:51,432
+Thì cũng là một cái khá là hay.
+
+159
+00:14:51,432 --> 00:15:02,432
+Thì bán hàng, nếu mà thêm Facebook, thêm quả quảng cáo vào nữa thì có những tháng tổng vào bọn em cũng khoảng được 17-18 tỷ đấy. Nhưng mà phải thêm quảng cáo.
+
+160
+00:15:03,632 --> 00:15:11,042
+Đó thì để mình làm. Thấy rằng là mỗi một cái sứ mệnh của cái nền tảng nó sinh ra thì hãy để nó làm đúng cái nhiệm vụ
+
+161
+00:15:11,042 --> 00:15:18,452
+của nó. Mình đừng bắt nó làm ôm đồm tất tần tật. Và đừng có kỳ vọng mọi thứ nó quá nhiều về một cái nền tảng duy nhất.
+
+162
+00:15:18,452 --> 00:15:20,872
+Thế nên anh em mình phải ngồi đây mình làm đa kênh
+

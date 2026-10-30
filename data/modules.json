@@ -61,7 +61,7 @@
           "tags": [
             "Việt"
           ],
-          "contentNiche": "Cộng Đồng & Hỗ Trợ VIP",
+          "contentNiche": "Cộng đồng & Hỗ trợ VIP",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 267,
@@ -194,7 +194,7 @@
             "Nhật",
             "Việt"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "Động vật hoang dã & Phim tài liệu AI",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 210,
@@ -260,7 +260,7 @@
           "tags": [
             "Việt"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "Tôn giáo & Giải nghĩa Kinh Thánh",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 182,
@@ -317,7 +317,7 @@
           "tags": [
             "Việt"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "Bán content & Triết lý người già",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 128,
@@ -389,7 +389,7 @@
           "tags": [
             "Ngoại"
           ],
-          "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+          "contentNiche": "Kháng nghị & Chính sách YouTube",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 176,
@@ -448,7 +448,7 @@
           "tags": [
             "Ngoại"
           ],
-          "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+          "contentNiche": "Kháng bản quyền & Khôi phục kênh YPP",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 102,
@@ -505,7 +505,7 @@
           "tags": [
             "Ngoại"
           ],
-          "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+          "contentNiche": "Google AdSense & Quản trị dòng tiền",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 551,
@@ -578,7 +578,7 @@
             "Doanh thu",
             "Việt"
           ],
-          "contentNiche": "Xử Lý & Kháng Lỗi Bản Quyền",
+          "contentNiche": "Reup Hoạt Hình View Việt & Kháng Tắt Kiếm Tiền",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 113,
@@ -667,7 +667,7 @@
             "Hàn",
             "Việt"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "Hợp tác phát triển & Phật pháp Hàn Quốc",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 474,
@@ -746,7 +746,7 @@
             "Mỹ",
             "Ngoại"
           ],
-          "contentNiche": "Khám Kênh & Tối Ưu Tăng Trưởng",
+          "contentNiche": "Tài nguyên kênh & Độ trust thuật toán",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 861,
@@ -810,12 +810,13 @@
             }
           ],
           "market": [
-            "🇯🇵 Nhật"
+            "🇺🇸 Mỹ",
+            "🌐 Ngoại"
           ],
           "tags": [
             "Nhật"
           ],
-          "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+          "contentNiche": "Phật Pháp & Tâm Linh View Ngoại",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 1203,
@@ -869,12 +870,13 @@
             }
           ],
           "market": [
-            "🇨🇳 Trung"
+            "🇻🇳 Việt",
+            "🌐 Ngoại"
           ],
           "tags": [
             "Trung"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "SEO Thuật toán & Tối ưu Metadata",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 201,
@@ -928,12 +930,12 @@
             }
           ],
           "market": [
-            "🇨🇳 Trung"
+            "🇻🇳 Việt"
           ],
           "tags": [
             "Trung"
           ],
-          "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+          "contentNiche": "Nuôi kênh & Xây dựng Trust Score",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 254,
@@ -992,7 +994,7 @@
           "tags": [
             "Ngoại"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "Phân tích chỉ số & Đánh giá kênh",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 332,
@@ -1046,12 +1048,12 @@
             }
           ],
           "market": [
-            "🇨🇳 Trung"
+            "🇻🇳 Việt"
           ],
           "tags": [
             "Trung"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "Chính sách nội dung AI & Xử lý vi phạm",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 268,
@@ -1110,7 +1112,7 @@
             "Mỹ",
             "Ngoại"
           ],
-          "contentNiche": "Drama Gia Đình & Xã Hội",
+          "contentNiche": "Kỹ Thuật Tạo Kênh & Chuyển Đổi Thị Trường Ngoại",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 1053,
@@ -1224,7 +1226,7 @@
           "tags": [
             "Ngoại"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "Kỹ Thuật Ngâm Kênh & Tương Tác Kênh Đối Thủ",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 145,
@@ -1278,12 +1280,16 @@
             }
           ],
           "market": [
-            "🇰🇷 Hàn"
+            "🇯🇵 Nhật",
+            "🇰🇷 Hàn",
+            "🇺🇸 Mỹ",
+            "🇻🇳 Việt",
+            "🌐 Ngoại"
           ],
           "tags": [
             "Hàn"
           ],
-          "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+          "contentNiche": "Phân quyền kênh & Bảo mật hệ thống chống quét",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 143,
@@ -1350,7 +1356,7 @@
           "tags": [
             "Ngoại"
           ],
-          "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+          "contentNiche": "Quản Trị AdSense & Bật Kiếm Tiền",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 279,
@@ -1428,7 +1434,7 @@
             "Mỹ",
             "Ngoại"
           ],
-          "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+          "contentNiche": "Nghiên Cứu Từ Khóa & Lọc Key View Ngoại",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 1359,
@@ -1505,7 +1511,7 @@
           "tags": [
             "Ngoại"
           ],
-          "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+          "contentNiche": "Kỹ Thuật AI & Hạ Tầng Công Cụ",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 282,
@@ -1557,12 +1563,13 @@
           ],
           "desc": "v&igrave; video qu&aacute; d&agrave;i n&ecirc;n n&oacute; đang c&ograve;n xử l&yacute; chất lượng HD, mấy b&aacute;c đợi t&iacute; xong l&agrave; video n&eacute;t lại nh&eacute; ạ!    \n     t&agrave;i",
           "market": [
-            "🇯🇵 Nhật"
+            "🇻🇳 Việt",
+            "🌐 Ngoại"
           ],
           "tags": [
             "Nhật"
           ],
-          "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+          "contentNiche": "Tối Ưu Mắt Xem Livestream & Quảng Cáo",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 4354,
@@ -1620,12 +1627,13 @@
           ],
           "desc": "skill prompt của ng&aacute;ch trong video    \n    c&aacute;c c&acirc;u l&ecirc;nh em train trong video:    \n  đ&acirc;y l&agrave; 2 k&ecirc;nh đối thủ v&agrave; t&ocirc;i đang định hướng sắp tới sẽ l&",
           "market": [
-            "🇯🇵 Nhật"
+            "🇻🇳 Việt",
+            "🇨🇳 Trung"
           ],
           "tags": [
             "Nhật"
           ],
-          "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+          "contentNiche": "Bán Content Triết Lý Nhật Bản",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 3659,
@@ -1716,7 +1724,7 @@
           "tags": [
             "Ngoại"
           ],
-          "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+          "contentNiche": "Nhân Bản Thị Trường Đa Quốc Gia",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 1114,
@@ -1813,7 +1821,7 @@
           "tags": [
             "Hàn"
           ],
-          "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+          "contentNiche": "Sức Khỏe Người Cao Tuổi Hàn Quốc",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 1507,
@@ -1888,12 +1896,13 @@
           ],
           "desc": "link k&ecirc;nh 1  \n  link k&ecirc;nh 2  \n  c&acirc;u lệnh train",
           "market": [
-            "🇯🇵 Nhật"
+            "🇻🇳 Việt",
+            "🌐 Ngoại"
           ],
           "tags": [
             "Nhật"
           ],
-          "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+          "contentNiche": "Tự Động Hóa Prompt & Clone Voice",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 1901,
@@ -1951,7 +1960,7 @@
           "tags": [
             "Việt"
           ],
-          "contentNiche": "Prompt AI & Nhân Bản Kịch Bản",
+          "contentNiche": "Triết Lý Nhân Sinh View Việt",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 1990,
@@ -2041,7 +2050,7 @@
           "access": "pro",
           "seq": "01",
           "badge": "NỔI BẬT",
-          "contentNiche": "Bán Content Đa Thị Trường Hàn & Việt",
+          "contentNiche": "Triết Lý Đời Sống & Chuyện Nhân Gian",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 671,
@@ -2130,7 +2139,7 @@
             "Nhật",
             "Hàn"
           ],
-          "contentNiche": "Bán Content Đa Thị Trường Nhật & Hàn",
+          "contentNiche": "Drama Gia Đình & Đời Sống Nhật - Hàn",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 630,
@@ -2307,7 +2316,7 @@
           "tags": [
             "Việt"
           ],
-          "contentNiche": "Triết Lý & Phật Pháp Việt Nam",
+          "contentNiche": "Tâm Linh & Lời Phật Dạy View Việt",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 581,
@@ -2388,7 +2397,7 @@
             "Ngoại",
             "Hàn"
           ],
-          "contentNiche": "Tâm Linh & Thu Hút May Mắn",
+          "contentNiche": "Phong Thủy & Thu Hút Tài Lộc Hàn Quốc",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 610,
@@ -2478,7 +2487,7 @@
             "Hàn",
             "Việt"
           ],
-          "contentNiche": "Lời Chúa & Tâm Linh Ngoại",
+          "contentNiche": "Khám Kênh & Khắc Phục Lỗi 0 View",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 628,
@@ -2560,7 +2569,7 @@
           "tags": [
             "Hàn"
           ],
-          "contentNiche": "Ẩm Thực & Mẹo Vặt Hàn Quốc",
+          "contentNiche": "Bán Content Đa Ngách Hàn Quốc",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 982,
@@ -2640,7 +2649,7 @@
             "Việt",
             "Trung"
           ],
-          "contentNiche": "Reup Hoạt Hình Bilibili",
+          "contentNiche": "Reup Hoạt Hình Bilibili Lồng Tiếng",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 1217,
@@ -2722,7 +2731,7 @@
           "tags": [
             "Nhật"
           ],
-          "contentNiche": "Triết Lý & Trẻ Hóa Nhật Bản",
+          "contentNiche": "Chữa Lành & Trẻ Hóa Nhật Bản",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 606,
@@ -2805,7 +2814,7 @@
           "tags": [
             "Nhật"
           ],
-          "contentNiche": "Công Nghệ & Mẹo Vặt Cuộc Sống Nhật",
+          "contentNiche": "Xe Cộ & Trí Tuệ Dân Gian Nhật Bản",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 731,
@@ -2893,7 +2902,7 @@
             "Hàn",
             "Việt"
           ],
-          "contentNiche": "Tâm Linh & Triết Lý Saito Hitori",
+          "contentNiche": "Bán Content & Reup Đa Thị Trường",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 610,
@@ -4151,7 +4160,8 @@
           ],
           "desc": "forms th&ocirc;ng tin muốn mua k&ecirc;nh &nbsp;     (Lưu &yacute;: b&aacute;c n&agrave;o thật sự c&oacute; thiện ch&iacute; v&agrave; nhu cần muốn mua về để l&agrave;m lu&ocirc;n th&igrave; mới điền ",
           "market": [
-            "🇨🇳 Trung"
+            "🇻🇳 Việt",
+            "🇰🇷 Hàn"
           ],
           "tags": [
             "Trung"
@@ -4433,7 +4443,7 @@
           "tags": [
             "Hàn"
           ],
-          "contentNiche": "Triết Lý Sống & Đạo Làm Người",
+          "contentNiche": "Liên Kết GA & Bật Kiếm Tiền YPP",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 225,
@@ -4544,7 +4554,7 @@
             "Hàn",
             "Nhật"
           ],
-          "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+          "contentNiche": "Tư Duy Chọn Ngách Xanh & Đọc Chỉ Số",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 303,
@@ -4665,7 +4675,7 @@
             "Hàn",
             "Việt"
           ],
-          "contentNiche": "Drama Gia Đình & Xã Hội",
+          "contentNiche": "Kỹ Thuật Tạo Giọng Đọc AI Tự Nhiên",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 340,
@@ -4721,7 +4731,7 @@
             "Canada",
             "Nhật"
           ],
-          "contentNiche": "Drama Gia Đình & Xã Hội",
+          "contentNiche": "Luyện Giọng Đọc & Tạo Giọng Kể Chuyện",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 304,
@@ -4896,7 +4906,7 @@
             "Nga",
             "Ngoại"
           ],
-          "contentNiche": "Kháng Bản Quyền & Xử Lý Lỗi GA",
+          "contentNiche": "Thuế Hoa Kỳ, GA & Nhận Tiền YouTube",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 428,
@@ -5584,7 +5594,7 @@
             "Hàn",
             "Nhật"
           ],
-          "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+          "contentNiche": "Định Hướng Xây Kênh & Chọn Thị Trường",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 438,
@@ -6619,7 +6629,7 @@
             "Mỹ",
             "Ngoại"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "Lịch Sử Quân Sự & Thế Chiến (WWII)",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 1028,
@@ -6758,7 +6768,7 @@
             "Canada",
             "Ngoại"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "Tin Tức & Đời Sống Thị Trường Canada",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 1034,
@@ -6950,7 +6960,7 @@
             "Mỹ",
             "Anh"
           ],
-          "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+          "contentNiche": "Kỹ Thuật Edit CapCut & Tối Ưu Giọng Đọc",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 391,
@@ -7289,7 +7299,7 @@
             "Việt",
             "Ngoại"
           ],
-          "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+          "contentNiche": "Phân Tích Chủ Đề RPM Cao Đa Thị Trường",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 714,
@@ -7467,7 +7477,7 @@
             "Mỹ",
             "Ngoại"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "Lịch Sử Đời Sống & Kể Chuyện Ngủ Ngon (US)",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 1215,
@@ -7519,14 +7529,13 @@
             }
           ],
           "market": [
-            "🇻🇳 Việt",
-            "🇨🇳 Trung"
+            "🇻🇳 Việt"
           ],
           "tags": [
             "Việt",
             "Trung"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "Sinh Tồn Hoang Dã View Việt",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 1270,
@@ -7590,7 +7599,7 @@
           "access": "pro",
           "seq": "89",
           "badge": "NỔI BẬT",
-          "contentNiche": "Bán Content Ngách Cực Nhỏ",
+          "contentNiche": "Drama Cảm Động & Dưỡng Lão",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 559,
@@ -7854,7 +7863,7 @@
             "Bán content",
             "Outlier"
           ],
-          "contentNiche": "Tâm Sự Gia Đình & Người Cao Tuổi Việt Nam",
+          "contentNiche": "Nhà Máy Sản Xuất & Cơ Khí Công Nghiệp",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 362,
@@ -7921,7 +7930,7 @@
             "Dưỡng sinh",
             "Bán content"
           ],
-          "contentNiche": "Dưỡng Sinh Thực Dưỡng & Tâm Sự Người Cao Tuổi Hàn Quốc",
+          "contentNiche": "Sức Khỏe Lão Niên & Rau Củ Bàn Ăn Hàn Quốc",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 606,
@@ -8029,7 +8038,7 @@
             "Claude AI",
             "ElevenLabs"
           ],
-          "contentNiche": "Quy Trình AI & Train Prompt Kịch Bản Thực Chiến",
+          "contentNiche": "Mẹo Tương Tác & Tăng Đề Xuất Thuật Toán",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 1678,
@@ -8095,7 +8104,7 @@
             "Outlier",
             "Mới nhất"
           ],
-          "contentNiche": "Làm Vườn Mùa Thu & Triết Học Lượng Tử Sinh Học",
+          "contentNiche": "Kiểm Soát Sinh Học & Giải Trí Tổng Hợp",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 465,
@@ -8161,7 +8170,7 @@
             "Case study",
             "Mới nhất"
           ],
-          "contentNiche": "Nhân Bản Kênh & Chiến Lược Thị Trường",
+          "contentNiche": "Dưỡng Sinh & Mẹo Sức Khỏe Hàn - Nhật",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 185,
@@ -8291,6 +8300,7 @@
           ],
           "desc": "Phiên bản 2 nâng cấp toàn diện quy trình tự động hóa sản xuất video ngách \"What-If\" đang cực hot trend bằng Claude Automation và Plugin H2 2D Studio (h2-2d-studio.plugin). Rút ngắn 80% thời gian sản xuất và phân tích 4 kênh đối thủ triệu view.",
           "market": [
+            "🇺🇸 Mỹ",
             "🌐 Ngoại"
           ],
           "tags": [
@@ -8301,7 +8311,7 @@
             "Plugin",
             "Mới nhất"
           ],
-          "contentNiche": "Tự Động Hóa YouTube & Ngách Giả Định What-If",
+          "contentNiche": "Hoạt Hình 2D Người Que & Giả Định What-If",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 1536,
@@ -8360,6 +8370,7 @@
           ],
           "desc": "Bản hướng dẫn thô cứng full 50 phút thực chiến từ A-Z cách xây dựng ngách \"What-If\" đang cực hot trend trên YouTube toàn cầu bằng Claude AI, biên tập dựng video 100% trực tiếp bằng Claude Code kèm bộ kỹ năng WhatIf-Skills.zip.",
           "market": [
+            "🇺🇸 Mỹ",
             "🌐 Ngoại"
           ],
           "tags": [
@@ -8370,7 +8381,7 @@
             "Edit 100%",
             "Mới nhất"
           ],
-          "contentNiche": "Tự Động Hóa YouTube, Edit Bằng Code & Ngách Giả Định What-If",
+          "contentNiche": "Tự Động Hóa Code 2D & Ngách Giả Định What-If",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 3003,
@@ -8431,7 +8442,7 @@
           "tags": [
             "Ngoại"
           ],
-          "contentNiche": "Triết Lý Sống & Đạo Làm Người",
+          "contentNiche": "Kháng Bản Quyền & Chính Sách YPP",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 901,
@@ -8481,7 +8492,7 @@
           "tags": [
             "Ngoại"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "Thiết Kế Thumbnail Người Que (Chill Dude)",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 1462,
@@ -8538,7 +8549,7 @@
           "tags": [
             "Ngoại"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "Hoạt Hình 2D Người Que (Chill Dude)",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 3538,
@@ -8740,7 +8751,7 @@
             "Nổi bật",
             "Ngoại"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "Thiết Kế Thumbnail & Edit Key Nonagon",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 5294,
@@ -8969,7 +8980,9 @@
             }
           ],
           "market": [
-            "🇯🇵 Nhật"
+            "🇻🇳 Việt",
+            "🇨🇳 Trung",
+            "🌐 Ngoại"
           ],
           "tags": [
             "Nhật"
@@ -9042,7 +9055,7 @@
           "tags": [
             "Nhật"
           ],
-          "contentNiche": "Sức Khỏe & Dinh Dưỡng",
+          "contentNiche": "Sức khỏe & Tâm linh người cao tuổi (Nhân bản đa thị trường)",
           "is_free": false,
           "is_pro": true,
           "duration_sec": 2588,
@@ -9110,7 +9123,7 @@
           "tags": [
             "Việt"
           ],
-          "contentNiche": "Bán Content & Phát Triển Kênh",
+          "contentNiche": "Công Cụ & Tự Động Hóa Sản Xuất H2DEV",
           "is_free": true,
           "is_pro": false,
           "duration_sec": 173,
@@ -9257,7 +9270,10 @@
           ],
           "desc": "TẢI TOOL MIỄN PH&Iacute;:    \n      TOOL TẢI YOUTUBE         TOOL TẢI TIKTOK         TOOL TẢI BILIBILI         TOOL TẢI FACEBOOK         TOOL QUAY M&Agrave;N H&Igrave;NH         TOOL CẮT GH&Eacute;P V",
           "market": [
-            "🇨🇳 Trung"
+            "🇯🇵 Nhật",
+            "🇰🇷 Hàn",
+            "🇺🇸 Mỹ",
+            "🇻🇳 Việt"
           ],
           "tags": [
             "Trung"
@@ -9314,8 +9330,7 @@
           ],
           "desc": "T&agrave;i khoản ChatGPT v&agrave; CapCutPro em đ&atilde; hết từ cuối th&aacute;ng 12/2025,   hiện tại chỉ c&ograve;n một số tool voice elevenlab, clone minimax v&agrave; dịch..    \n    TOOL V&Agrave;",
           "market": [
-            "🇻🇳 Việt",
-            "🇨🇳 Trung"
+            "🇰🇷 Hàn"
           ],
           "tags": [
             "Việt",
@@ -9398,7 +9413,7 @@
           "tags": [
             "Việt"
           ],
-          "contentNiche": "Hệ thống / Quy trình",
+          "contentNiche": "Hạ Tầng Kỹ Thuật: Proxy, Gmail & Ngâm Kênh",
           "duration_sec": 3182,
           "size_mb": 351.2,
           "resolution": "1080p",
@@ -9463,7 +9478,7 @@
           "tags": [
             "Việt"
           ],
-          "contentNiche": "Hệ thống / Quy trình",
+          "contentNiche": "Chiến Lược Tách Kênh & Sản Xuất Hàng Loạt",
           "duration_sec": 4893,
           "size_mb": 729.7,
           "resolution": "1080p",
@@ -9528,7 +9543,7 @@
           "tags": [
             "Việt"
           ],
-          "contentNiche": "Hệ thống / Quy trình",
+          "contentNiche": "Quy Trình Tool, Tối Ưu AVD, SEO & Seeding",
           "duration_sec": 4462,
           "size_mb": 552.7,
           "resolution": "1080p",
@@ -9593,7 +9608,7 @@
           "tags": [
             "Việt"
           ],
-          "contentNiche": "Hệ thống / Quy trình",
+          "contentNiche": "Quản Trị Google AdSense & Kháng Nghị YPP",
           "duration_sec": 2234,
           "size_mb": 223.4,
           "resolution": "1080p",

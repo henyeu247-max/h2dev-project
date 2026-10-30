@@ -1,0 +1,81 @@
+{
+  "sku": "VIDEO-0b3f44",
+  "title": "Share 2 ngách nhỏ bán content view ngoại mới | Update 13-10-2026",
+  "actual_topic": "Share 2 Ngách Nhỏ Bán Content View Ngoại: Triết Lý Giáo Sư & Thói Quen Ăn Uống Sức Khỏe Tim Phổi",
+  "category_group": "ban_content",
+  "niche_primary": "Bán Content Ngách Cực Nhỏ & Tối Ưu CTR",
+  "niche_id": "kr-small-niche-ctr",
+  "target_market": "Hàn Quốc",
+  "market_code": "KR",
+  "key_takeaways": [
+    "📌 Ngách 1 (@sangong7449) — Triết lý cuộc sống gắn với giáo sư Lee O-young (이어령): Sử dụng phôi kênh cổ 2017, mới đăng 11 video nhưng video đăng 7 ngày trước đã nổ hơn 300.000 lượt xem nhờ mượn hình tượng và lời khuyên của vị giáo sư nổi tiếng Hàn Quốc.",
+    "📌 Bắt lỗi biên tập chí mạng của đối thủ: Kênh @sangong7449 chỉ để duy nhất 1 tấm ảnh nền tĩnh chạy suốt video, rất dễ bị YouTube quét lỗi Reused Content; học viên làm sau bắt buộc phải ghép nhiều cảnh B-roll chuyển động đa dạng.",
+    "📌 Quy tắc sống còn khi làm Thumbnail nhân vật có thật: Phải cắt ghép khuôn mặt thật của nhân vật đó vào ảnh thu nhỏ; tuyệt đối không để AI tự vẽ mặt giả tạo vì khán giả Hàn Quốc nhận ra ngay và không nhấp chuột (làm sập CTR).",
+    "📌 Ngách 2 (@건강채소이야기18) — Chuyển hướng từ rau củ sang thói quen ăn uống & mô hình Tim/Phổi: Ban đầu kênh làm về rau củ view thấp, nhưng khi đổi sang chủ đề thói quen ăn uống kèm Thumbnail bác sĩ cầm mô hình giải phẫu trái tim và lá phổi thì view bùng nổ mạnh.",
+    "📌 Cách nhân bản bằng Claude AI: Copy ID của cả 2 kênh (@sangong7449 và @건강채소이야기18) nạp vào Claude theo quy trình train form để AI phân tích cấu trúc tiêu đề, từ khóa ngách và viết kịch bản mới."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình khai thác 2 ngách nhỏ Hàn Quốc (@sangong7449 & @건강채소이야기18) với B-roll động chống quét và Thumbnail trực quan tối ưu CTR.",
+    "additional": [
+      "Vào mục Phổ biến (Popular) của kênh đối thủ, dịch tiêu đề sang tiếng Việt để nắm đúng từ khóa ngách (lời khuyên giáo sư Lee O-young hoặc thói quen ăn uống hại tim/phổi).",
+      "Khi làm ngách nhân vật nổi tiếng (@sangong7449), tải ảnh chân dung thật của nhân vật để cắt ghép làm Thumbnail, không dùng ảnh mặt người do AI tự vẽ.",
+      "Khi làm ngách sức khỏe (@건강채소이야기18), thiết kế Thumbnail có hình ảnh bác sĩ cầm trực tiếp mô hình giải phẫu trái tim và lá phổi thay vì ảnh triệu chứng đau đầu, nhức chân chung chung.",
+      "Trong khâu dựng video, ghép nhiều đoạn video B-roll minh họa thay đổi liên tục, tuyệt đối không để 1 ảnh nền tĩnh kéo dài suốt video."
+    ]
+  },
+  "avoid_flags": [
+    "Không để 1 tấm ảnh nền tĩnh chạy xuyên suốt video như kênh đối thủ vì rất dễ bị quét lỗi nội dung lặp lại (Reused Content).",
+    "Không dùng ảnh AI tự sinh khuôn mặt giả cho nhân vật nổi tiếng có thật khiến người xem bản xứ bỏ qua và làm sập tỷ lệ nhấp chuột (CTR).",
+    "Tránh làm các chủ đề và thumbnail triệu chứng mông lung (đau đầu, nhức chân) không có điểm nhấn thị giác như mô hình trái tim, lá phổi."
+  ],
+  "tools_mentioned": [
+    "Claude"
+  ],
+  "channels_mentioned": [
+    "@sangong7449",
+    "@건강채소이야기18"
+  ],
+  "key_timestamps": [
+    {
+      "seconds": 0,
+      "time": "00:00",
+      "label": "Mở đầu: Giới thiệu ngách nhỏ Hàn Quốc trên phôi kênh cổ 2017 mới đăng 11 video"
+    },
+    {
+      "seconds": 23,
+      "time": "00:23",
+      "label": "Phân tích Ngách 1 (@sangong7449): Lời khuyên triết lý gắn với giáo sư nổi tiếng Hàn Quốc"
+    },
+    {
+      "seconds": 45,
+      "time": "00:45",
+      "label": "Sức bật đề xuất: Video đạt hơn 300.000 view sau 7 ngày chỉ với 11 video trên kênh"
+    },
+    {
+      "seconds": 90,
+      "time": "01:30",
+      "label": "Cảnh báo lỗi edit: Không để 1 ảnh nền tĩnh kéo dài dễ bị quét, phải ghép nhiều cảnh"
+    },
+    {
+      "seconds": 118,
+      "time": "01:58",
+      "label": "Tối ưu Thumbnail nhân vật: Ghép mặt nhân vật thật, tuyệt đối không để AI tự vẽ mặt giả"
+    },
+    {
+      "seconds": 242,
+      "time": "04:02",
+      "label": "Phân tích Ngách 2 (@건강채소이야기18): Thumbnail bác sĩ cầm mô hình trái tim và lá phổi nổ view cao"
+    }
+  ],
+  "analysis_method": "agv_3.8_multimodal_7layer_verified",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-0b3f44/transcript.txt",
+  "sop_steps": [
+    "Cắt ghép đa dạng cảnh b-roll, tránh tuyệt đối để 1 ảnh tĩnh xuyên suốt video",
+    "Ghép mặt nhân vật có thật vào thumbnail để tạo độ uy tín cao cho người xem",
+    "Thumbnail ngách sức khỏe sử dụng hình ảnh bác sĩ cầm mô hình 3D trực quan"
+  ]
+}

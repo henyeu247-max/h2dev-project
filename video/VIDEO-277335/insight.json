@@ -1,0 +1,130 @@
+{
+  "sku": "VIDEO-277335",
+  "title": "Hiểu Luật Kiếm Tiền Của Youtube",
+  "module_id": "HUAN-M05",
+  "module_name": "Bán Content & Luật Kiếm Tiền YouTube",
+  "lesson_number": 75,
+  "duration": 841.5,
+  "duration_str": "14:01",
+  "primary_topic": "Giải phẫu 4 bộ luật cốt lõi của YouTube (Chính sách kiếm tiền YPP, Nội dung phù hợp quảng cáo, Nguyên tắc cộng đồng/Tương tác ảo, và 4 trụ cột Đạo luật Fair Use) kèm chiến thuật xử lý gậy bản quyền và rút tiền kênh chết",
+  "summary": "Bài 75 là cẩm nang pháp lý thực chiến quan trọng nhất trong Module Bán Content, nơi Nguyễn Văn Huân mở trực tiếp file Excel 'LUẬT CỦA YOUTUBE BẮT BUỘC NGHIÊN CỨU KỸ' và 4 trang văn bản chính thức của Google Support trên màn hình lớn. Giảng viên bóc tách chi tiết 5 hạng mục nhân viên YouTube kiểm tra thủ công khi duyệt kiếm tiền hoặc xét kháng cáo (Chủ đề chính, Video nhiều view nhất, Video mới nhất, Thời gian xem nhiều nhất, Siêu dữ liệu & Phần Giới thiệu kênh gắn với Bài tập 1 Big Idea), cách dọn dẹp video cũ trước khi bật kiếm tiền/kháng kênh (giữ nguyên 100% video dẫn kênh còn view, lọc sạch tiêu đề/thumbnail/tag của video hết view), mẹo lách bối cảnh 18+ (bikini bãi biển vs trong nhà) và nguyên tắc kháng cáo 100% bằng tiếng Anh để đội ngũ quốc tế xét duyệt công tâm. Đặc biệt, bài học tiết lộ ranh giới giữa 'In tiền' (dùng hàng nghìn email buff like/share/comment cho kênh xám đen) và 'Kiếm tiền' bền vững, cách xử lý tống tiền bản quyền ($800–$2,500/tháng), đàm phán chia sẻ 20% doanh thu (case BMC 2018–2019), dịch vụ tổng rút tiền kênh chết sau ngày 12 hàng tháng và cách vận dụng 2 yếu tố đầu của Đạo luật Fair Use.",
+  "tools_mentioned": [
+    "YouTube",
+    "Google AdSense",
+    "Google Drive",
+    "Google Docs",
+    "Google Sheets"
+  ],
+  "channels_mentioned": [
+    "@MasterPhungPhuong",
+    "@BRIGHTSIDEOFFICIAL"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở kho tài liệu Bán Content và bảng Excel 'LUẬT CỦA YOUTUBE BẮT BUỘC NGHIÊN CỨU KỸ' (Tứ trụ Fair Use)"
+    },
+    {
+      "time": "00:54",
+      "seconds": 54,
+      "label": "Phân tích 5 yếu tố nhân viên YouTube kiểm tra khi đánh giá kênh: Chủ đề chính, Video nhiều view nhất, Video mới nhất, Thời gian xem, Siêu dữ liệu"
+    },
+    {
+      "time": "01:52",
+      "seconds": 112,
+      "label": "Chiếu trực tiếp 'BÀI TẬP 1: BIG IDEA KÊNH YOUTUBE' (case Phong Thủy Phùng Gia): Viết 2–5 dòng định vị vào phần Giới thiệu kênh"
+    },
+    {
+      "time": "02:39",
+      "seconds": 159,
+      "label": "Chiến thuật dọn kênh trước khi bật kiếm tiền hoặc kháng cáo: Giữ nguyên 100% video dẫn kênh còn view, lọc sạch siêu dữ liệu video hết view"
+    },
+    {
+      "time": "03:15",
+      "seconds": 195,
+      "label": "Nguyên tắc nội dung phù hợp nhà quảng cáo (bối cảnh bikini bãi biển vs trong nhà, súng đạn) và bí quyết kháng cáo 100% bằng tiếng Anh"
+    },
+    {
+      "time": "05:18",
+      "seconds": 318,
+      "label": "Chính sách tương tác ảo: Phân biệt lối chơi 'In tiền' (nuôi vài nghìn email buff like/share/comment cho kênh xám đen) và 'Kiếm tiền' bền vững"
+    },
+    {
+      "time": "07:22",
+      "seconds": 442,
+      "label": "Thực chiến xử lý gậy bản quyền: Đối phó kẻ tống tiền ($800–$2,500/tháng), đàm phán chia 20% doanh thu (case BMC 2018–2019) và dịch vụ tổng rút tiền kênh chết"
+    },
+    {
+      "time": "10:54",
+      "seconds": 654,
+      "label": "Giải phẫu 4 trụ cột Đạo luật Sử dụng Hợp lý (Fair Use): Khai thác tối đa yếu tố 1 (Bình luận/Giáo dục) & 2 (Minh họa), tránh yếu tố 3 & 4"
+    }
+  ],
+  "key_takeaways": [
+    "Khi xét duyệt bật kiếm tiền (YPP) hoặc xử lý kháng cáo, nhân viên YouTube không thể xem hết hàng trăm video mà chỉ tập trung kiểm tra 6 điểm cốt lõi: (1) Chủ đề chính, (2) Các video nhiều lượt xem nhất, (3) Các video mới nhất, (4) Video đóng góp nhiều thời gian xem nhất, (5) Siêu dữ liệu (Tiêu đề, Thumbnail, Mô tả), và (6) Phần 'Giới thiệu' (About) của kênh.",
+    "Tuyệt đối không được xóa các video nhiều view nhất đang dẫn traffic cho toàn kênh khi chuẩn bị bật kiếm tiền hoặc kháng cáo (vì xóa video dẫn kênh là tự sát về đề xuất); chỉ được xóa hoặc làm sạch Tiêu đề, Thumbnail, Mô tả của những video đã hết view nhưng có yếu tố nhạy cảm.",
+    "Bối cảnh (Context) quyết định việc video có bị vàng tiền/vi phạm nguyên tắc quảng cáo hay không (ví dụ: mặc bikini ở bãi biển là hợp lệ nhưng mặc bikini trong phòng kín lại bị đánh 18+). Khi kháng cáo bất kỳ lỗi nào, bắt buộc phải viết đơn hoặc làm video kháng cáo 100% bằng tiếng Anh để được đội ngũ xét duyệt quốc tế xử lý công tâm, tránh sự cảm tính khắt khe của đội duyệt khu vực.",
+    "Phải phân biệt rõ 2 trường phái: 'In tiền' (dùng cho kênh xám đen/Reup bằng cách nuôi hàng nghìn Gmail cùng IP quốc gia để đồng loạt buff like, share, comment đẩy đề xuất cực gắt trong thời gian ngắn) và 'Kiếm tiền' (xây kênh xám trắng/Content phát triển tự nhiên, tuyệt đối không dùng tương tác ảo).",
+    "Khi gặp gậy bản quyền trên kênh lớn: (1) Nếu bị kẻ xấu đòi tiền chuộc vô lý ($800–$2,500/tháng), không thỏa hiệp vì chúng sẽ vắt kiệt đến khi kênh hết tiền; (2) Nếu dùng nhạc/tư liệu của đơn vị bản quyền thật (như BMC), chủ động đàm phán chia sẻ doanh thu (ví dụ 80/20); (3) Nếu kênh chết trước kỳ thanh toán, sử dụng dịch vụ tổng để cứu kênh sống lại đúng ngày 11–12 hàng tháng nhằm kịp tổng kết sang Google AdSense và rút tiền ngày 22.",
+    "Để được bảo vệ bởi 4 trụ cột Fair Use của Mỹ, video Bán Content chỉ nên xoáy sâu vào Yếu tố 1 (thêm lời bình luận, phê bình, nghiên cứu, giảng dạy để tạo mục đích sử dụng mới) và Yếu tố 2 (dùng đoạn cắt ngắn làm ví dụ minh họa bổ trợ cho lập luận), đồng thời tránh dùng đoạn cốt lõi nhất (Trụ cột 3) hoặc cạnh tranh cướp trực tiếp khán giả của tác phẩm gốc (Trụ cột 4)."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước chuẩn hóa pháp lý kênh Bán Content, kiểm toán 6 hạng mục xét duyệt YPP và vận dụng Tứ trụ Fair Use chống gậy bản quyền",
+    "additional": [
+      "Hoàn thiện phần Giới thiệu kênh (About) từ Bài tập 1 Big Idea: Trả lời 8 câu hỏi định vị thương hiệu và cập nhật đoạn mô tả tổng quát 2–5 dòng vào phần Giới thiệu kênh để chứng minh tính nguyên gốc với nhân viên xét duyệt YouTube.",
+      "Kiểm toán và làm sạch kênh trước khi bật kiếm tiền hoặc gửi kháng cáo: Giữ nguyên 100% các video nhiều view nhất đang kéo đề xuất cho kênh; rà soát các video mới nhất và các video đã hết view để sửa lại Tiêu đề, Thumbnail, Mô tả, Thẻ tag cho đúng chuẩn chính sách.",
+      "Thiết kế kịch bản và dựng video bám sát Yếu tố 1 & 2 của Fair Use: Luôn chèn lời bình luận, phân tích hoặc giá trị giáo dục lên đầu và xuyên suốt video; chỉ cắt các đoạn footage ngắn làm ví dụ minh họa cho lời nói thay vì phát liền mạch đoạn cao trào của video gốc.",
+      "Kiểm soát bối cảnh quảng cáo và kháng cáo bằng tiếng Anh: Loại bỏ các hình ảnh/ngôn từ vi phạm nguyên tắc nhà quảng cáo (bạo lực, 18+ sai bối cảnh); nếu bị quét nhầm hoặc tắt kiếm tiền, lập tức quay video/viết đơn kháng cáo 100% bằng tiếng Anh.",
+      "Thực thi quy trình ứng phó khủng hoảng bản quyền theo 3 cấp độ: Chủ động đàm phán chia sẻ doanh thu nếu dùng tư liệu của chủ sở hữu thật; từ chối thỏa hiệp với tống tiền bản quyền bẩn; và kích hoạt dịch vụ tổng trước ngày 12 hàng tháng để rút toàn bộ doanh thu về Google AdSense nếu kênh có nguy cơ sập."
+    ]
+  },
+  "sop_steps": [
+    "Bước 1 — Hoàn thiện phần Giới thiệu kênh (About) từ Bài tập 1 Big Idea: Trả lời 8 câu hỏi định vị thương hiệu và cập nhật đoạn mô tả tổng quát 2–5 dòng vào phần Giới thiệu kênh để chứng minh tính nguyên gốc với nhân viên xét duyệt YouTube.",
+    "Bước 2 — Kiểm toán và làm sạch kênh trước khi bật kiếm tiền hoặc gửi kháng cáo: Giữ nguyên 100% các video nhiều view nhất đang kéo đề xuất cho kênh; rà soát các video mới nhất và các video đã hết view để sửa lại Tiêu đề, Thumbnail, Mô tả, Thẻ tag cho đúng chuẩn chính sách.",
+    "Bước 3 — Thiết kế kịch bản và dựng video bám sát Yếu tố 1 & 2 của Fair Use: Luôn chèn lời bình luận, phân tích hoặc giá trị giáo dục lên đầu và xuyên suốt video; chỉ cắt các đoạn footage ngắn làm ví dụ minh họa cho lời nói thay vì phát liền mạch đoạn cao trào của video gốc.",
+    "Bước 4 — Kiểm soát bối cảnh quảng cáo và kháng cáo bằng tiếng Anh: Loại bỏ các hình ảnh/ngôn từ vi phạm nguyên tắc nhà quảng cáo (bạo lực, 18+ sai bối cảnh); nếu bị quét nhầm hoặc tắt kiếm tiền, lập tức quay video/viết đơn kháng cáo 100% bằng tiếng Anh.",
+    "Bước 5 — Thực thi quy trình ứng phó khủng hoảng bản quyền theo 3 cấp độ: Chủ động đàm phán chia sẻ doanh thu nếu dùng tư liệu của chủ sở hữu thật; từ chối thỏa hiệp với tống tiền bản quyền bẩn; và kích hoạt dịch vụ tổng trước ngày 12 hàng tháng để rút toàn bộ doanh thu về Google AdSense nếu kênh có nguy cơ sập."
+  ],
+  "avoid_flags": [
+    "Tuyệt đối không xóa các video nhiều view nhất đang dẫn đề xuất cho kênh khi thấy kênh chuẩn bị xét duyệt kiếm tiền hoặc khi bị tắt kiếm tiền (xóa video trụ cột sẽ làm sập toàn bộ traffic và mất khả năng kháng cáo).",
+    "Không gửi đơn hoặc video kháng cáo bằng tiếng Việt vì dễ gặp sự xét duyệt cảm tính, khắt khe; bắt buộc sử dụng tiếng Anh 100% trong mọi thủ tục kháng cáo với YouTube.",
+    "Không áp dụng thủ thuật buff like/share/comment bằng dàn Gmail ảo ('In tiền') lên các kênh Bán Content xám trắng hoặc kênh Content chính thống vì sẽ vi phạm chính sách tương tác ảo của YouTube.",
+    "Không chuyển tiền chuộc hàng tháng ($800–$2,500/tháng) cho các đối tượng cắm gậy bản quyền tống tiền vô căn cứ vì chúng sẽ liên tục tăng giá cho tới khi vắt kiệt doanh thu của kênh."
+  ],
+  "course_docs": [
+    {
+      "title": "Luật Của YouTube Bắt Buộc Nghiên Cứu Kỹ (Fair Use & Chính Sách YPP)",
+      "file": "assets/docs-huan/LUAT_CUA_YOUTUBE_BAT_BUOC_NGHIEN_CUU_KY.xlsx",
+      "readFile": "assets/docs-huan/LUAT_CUA_YOUTUBE_BAT_BUOC_NGHIEN_CUU_KY.xlsx.md",
+      "link": "https://drive.google.com/file/d/1AXPSMM8PLdGFefpN1iEStSMA3RB5AzCZG8x8_G8SJAo/view"
+    },
+    {
+      "title": "Bài Tập 1: Big Idea Cho Kênh YouTube (8 Câu Hỏi Định Vị & Mô Tả Kênh)",
+      "file": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx",
+      "readFile": "assets/docs-huan/BAI_TAP_1-_BIG_IDEA_KENH_YOUTUBE.docx.md",
+      "link": "https://docs.google.com/document/d/1YKFEWNWJq0JoWKPnLwS622d87-Vuoh6XwceDy7z1Q/edit"
+    },
+    {
+      "title": "Danh Sách Ngách & Kênh Mẫu Bán Content (BAN_CONTENT.xlsx)",
+      "file": "assets/docs-huan/BAN_CONTENT.xlsx",
+      "readFile": "assets/docs-huan/BAN_CONTENT.xlsx.md",
+      "link": "https://drive.google.com/file/d/1oUGEaUAMrAxDXvgyI56jHYq5sWFiF-p4rPDe6jXNLw8/view"
+    },
+    {
+      "title": "Checklist YouTube 1 Trang — Tổng Quan Quy Trình Làm Kênh",
+      "file": "assets/docs-huan/CHECKLIST_YOUTUBE_1_TRANG.docx",
+      "readFile": "assets/docs-huan/CHECKLIST_YOUTUBE_1_TRANG.docx.md",
+      "link": "https://drive.google.com/file/d/1YEfmxATH9KB9vsH_hkMpW9QaxvGRUYG1/view"
+    }
+  ],
+  "source_transcript": "video/VIDEO-277335/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "actual_topic": "Bài 75 là cẩm nang pháp lý thực chiến quan trọng nhất trong Module Bán Content, nơi Nguyễn Văn Huân mở trực tiếp file Excel 'LUẬT CỦA YOUTUBE BẮT BUỘC NGHIÊN CỨU KỸ' và 4 trang văn bản chính thức của Google Support trên màn hình lớn. Giảng viên bóc tách chi tiết 5 hạng mục nhân viên YouTube kiểm tra thủ công khi duyệt kiếm tiền hoặc xét kháng cáo (Chủ đề chính, Video nhiều view nhất, Video mới nhất, Thời gian xem nhiều nhất, Siêu dữ liệu & Phần Giới thiệu kênh gắn với Bài tập 1 Big Idea), cách dọn dẹp video cũ trước khi bật kiếm tiền/kháng kênh (giữ nguyên 100% video dẫn kênh còn view, lọc sạch tiêu đề/thumbnail/tag của video hết view), mẹo lách bối cảnh 18+ (bikini bãi biển vs trong nhà) và nguyên tắc kháng cáo 100% bằng tiếng Anh để đội ngũ quốc tế xét duyệt công tâm. Đặc biệt, bài học tiết lộ ranh giới giữa 'In tiền' (dùng hàng nghìn email buff like/share/comment cho kênh xám đen) và 'Kiếm tiền' bền vững, cách xử lý tống tiền bản quyền ($800–$2,500/tháng), đàm phán chia sẻ 20% doanh thu (case BMC 2018–2019), dịch vụ tổng rút tiền kênh chết sau ngày 12 hàng tháng và cách vận dụng 2 yếu tố đầu của Đạo luật Fair Use.",
+  "category_group": "he_thong",
+  "niche_primary": "Luật Kiếm Tiền YouTube, Kháng Cáo & 4 Trụ Cột Fair Use",
+  "niche_id": "he_thong_youtube",
+  "target_market": "Việt Nam",
+  "market_code": "VN"
+}

@@ -1,0 +1,568 @@
+1
+00:00:00,000 --> 00:00:06,000
+Thì khi người ta có một chủ đề ngon thì ta làm gì? Quay về cái bảng kế hoạch triển khai một kênh.
+
+2
+00:00:07,000 --> 00:00:14,120
+Quay ngang sheet 1. Điền các phân tích đã thực hiện. Lý do chọn chủ đề
+
+3
+00:00:14,120 --> 00:00:21,240
+là gì? Lý do chọn chủ đề này là gì? Đầu tiên là dễ làm.
+
+4
+00:00:21,240 --> 00:00:32,840
+Tại sao dễ làm? Mình chủ đề này nó audio thì cần mỗi AI thôi. Nó có cần cái gì đâu. Không cái gì phức tạp cả.
+
+5
+00:00:34,540 --> 00:00:39,080
+Ghi rõ ra AI. Hình ảnh dễ thiết kế.
+
+6
+00:00:46,040 --> 00:00:49,400
+Tiếp theo là gì nữa? Edit dễ, nhanh.
+
+7
+00:00:51,240 --> 00:01:00,230
+Đúng, cái này đặc biệt quan trọng, có thể làm cá nhân. Có chủ đề anh em nhắn lên nhóm mà thật sự không biết trả lời như
+
+8
+00:01:00,230 --> 00:01:09,220
+thế nào, vì cảm giác nó khó quá. Nên là những cái chủ đề mà anh em định làm ấy, thì anh em nên nhắn cá nhân.
+
+9
+00:01:09,220 --> 00:01:15,400
+Cá nhân, anh em cứ mạnh dạn nhở, thoải mái, chưa biết làm cái gì thì nhắn một vài chủ đề ở đây.
+
+10
+00:01:16,540 --> 00:01:20,980
+Nhắn cho mình một cái Dream 100, rồi khả năng, năng lực triển khai.
+
+11
+00:01:21,120 --> 00:01:29,220
+Ví dụ như, bạn ơi, mình có mỗi mình, không có khả năng đầu tư máy móc quá nhiều, máy nó chỉ có ngần này.
+
+12
+00:01:29,220 --> 00:01:33,440
+Mà bây giờ muốn triển khai các chủ đề đây thì cái nào nó phù hợp?
+
+13
+00:01:34,420 --> 00:01:34,960
+Anh em nhắn qua.
+
+14
+00:01:34,987 --> 00:01:41,247
+Hoặc là em ơi anh thấy chủ đề này nó cũng ok. Nhưng mà bây giờ anh không biết cách làm như nào. Nhắn qua.
+
+15
+00:01:42,147 --> 00:01:52,987
+Sắp tới GODA sẽ có một người hỗ trợ riêng. Hỗ trợ cho tất cả anh chị em về các thắc mắc về cách edit video, cách làm thumbnail. Đầy đủ nhá.
+
+16
+00:01:54,327 --> 00:01:57,087
+Khi đó anh em có bất cứ thắc mắc về kỹ thuật thì nhắn cho bạn đó.
+
+17
+00:01:57,467 --> 00:02:04,847
+Sắp tới sau khi xử lý tất cả, media xử lý xong toàn bộ sẽ có cái phần đó để anh em triển khai.
+
+18
+00:02:05,000 --> 00:02:14,425
+Lý do chọn chủ đề có thể làm cá nhân. Ngoài ra là gì nhỉ? Lý do tiên quyết của
+
+19
+00:02:14,425 --> 00:02:23,862
+anh em nghĩ là chọn một chủ đề là gì? Tiền. Đáng nhẽ cái đấy ghi đầu tiên. Không
+
+20
+00:02:23,862 --> 00:02:33,300
+có tiền để làm làm gì. Cho cái đấy xuống dưới, ghi lên trên. Ghi lên dòng trên. RPM tốt.
+
+21
+00:02:33,300 --> 00:02:37,000
+Ở mức từ 2 đến 5.
+
+22
+00:02:41,520 --> 00:02:47,740
+Lượt view các kênh top chủ đề. Ví dụ như kênh này. Đây là một cái triển khai nhanh.
+
+23
+00:02:49,000 --> 00:02:51,360
+Như kênh này là bao nhiêu view? Một tháng? 1.9 triệu nữa.
+
+24
+00:02:52,580 --> 00:02:57,440
+Ví dụ trong trường hợp kênh này là kênh top là 1.9 triệu, thì ghi rõ ra là kênh top 1.9 triệu.
+
+25
+00:02:59,080 --> 00:03:03,140
+Ok, enter một cái. Kênh top 1.9 triệu. View.
+
+26
+00:03:03,300 --> 00:03:06,360
+Và anh em đừng làm một kênh nhé.
+
+27
+00:03:08,000 --> 00:03:12,140
+Đã điều tra, điều tra ngóc ngách, làm Dream 100 là làm đủ 100 kênh luôn.
+
+28
+00:03:12,680 --> 00:03:15,460
+Có chủ đề nó lên 300 kênh luôn, bên mình vẫn triển khai bình thường.
+
+29
+00:03:17,000 --> 00:03:22,200
+Đã làm mà phải kỹ, vì cái này là cái bước đầu tiên là quan trọng nhất để mình có thể triển khai một kênh.
+
+30
+00:03:22,660 --> 00:03:23,320
+Đừng có lười cái này.
+
+31
+00:03:24,460 --> 00:03:25,600
+Đặc biệt cái này không được nhân sự.
+
+32
+00:03:26,120 --> 00:03:27,260
+Ông nào làm tướng, ông ấy phải làm.
+
+33
+00:03:27,260 --> 00:03:36,220
+Câu chuyện là có, ở đây cũng có anh em là làm như thế đấy. Cái việc của tướng lại đưa cho quân làm.
+
+34
+00:03:38,000 --> 00:03:41,920
+Tiếp theo, Dream 100 phân tích về chủ đề trong một năm qua.
+
+35
+00:03:42,380 --> 00:03:43,160
+Cái này cực kỳ quan trọng.
+
+36
+00:03:44,540 --> 00:03:45,620
+Mục đích của cái này là gì?
+
+37
+00:03:46,070 --> 00:03:51,470
+Để nắm được thị trường trong một năm qua, các nhà sáng tạo đang làm cái gì?
+
+38
+00:03:51,990 --> 00:03:54,290
+Và người xem, quan tâm cái gì?
+
+39
+00:03:55,920 --> 00:03:59,520
+Thì cái cách để làm Dream 100 trong 1 năm qua là kéo vào YouTube.
+
+40
+00:03:59,520 --> 00:04:01,520
+Mình đã có cái key đấy rồi.
+
+41
+00:04:01,520 --> 00:04:08,932
+Thì mình lọc view trong 1 năm kéo về YouTube.
+
+42
+00:04:08,932 --> 00:04:18,332
+Search cái key. Healthy food. Ok. Check view 1 năm qua.
+
+43
+00:04:20,092 --> 00:04:31,112
+Có những chủ đề cái thời lượng video nó không nằm ở, nó chỉ không giới hạn ở cái mức cả 20 phút, nó có thể lên đến 3, 40 phút.
+
+44
+00:04:31,612 --> 00:04:35,312
+Nên khi mà anh em nghiên cứu cái này cũng phải check cả trên 20 phút nữa nha.
+
+45
+00:04:36,132 --> 00:04:39,712
+Mình lọc cái 4 đến 20 phút mục đích là để tránh Shorts đó thôi.
+
+46
+00:04:40,572 --> 00:04:44,852
+Cái Shorts thì cái thói quen người dùng nó sẽ khác hơn một chút.
+
+47
+00:04:45,572 --> 00:04:48,192
+Đó, lấy các video về, quăng vào link đấy.
+
+48
+00:04:50,092 --> 00:04:52,772
+Lấy vài kênh, quăng vào đấy.
+
+49
+00:04:56,852 --> 00:04:58,832
+Lấy cả link kênh, cả link video anh em nhé.
+
+50
+00:04:59,412 --> 00:04:59,712
+Đầy đủ.
+
+51
+00:05:05,312 --> 00:05:05,712
+Đó.
+
+52
+00:05:06,352 --> 00:05:07,712
+7 tháng trước 3 triệu rưỡi view kìa.
+
+53
+00:05:08,452 --> 00:05:09,872
+10 tháng 2 triệu 7.
+
+54
+00:05:16,850 --> 00:05:27,590
+Kênh này nó hơi đặc thù một tí, kênh đấy thì nó là KOL rồi, có người xuất hiện rồi. Mình chỉ tìm cái kênh không có người thôi. Giờ một năm kìa.
+
+55
+00:05:32,670 --> 00:05:41,150
+Ok, lấy thêm kênh nữa. Cái này ấn video xem có phải là bác sĩ thật không? Hay là người ta chỉ lấy một cái bác sĩ người ta cho vào thumb thôi?
+
+56
+00:05:46,850 --> 00:05:53,130
+Ờ, bác sĩ rồi, bỏ qua.
+
+57
+00:05:55,350 --> 00:05:57,030
+Ok, đấy là 2 kênh.
+
+58
+00:05:57,810 --> 00:05:58,510
+Tiếp tục quay lại bảng.
+
+59
+00:06:00,000 --> 00:06:03,930
+Dream 100 các video có lượng view tốt nhất trong 3 tháng vừa qua.
+
+60
+00:06:05,510 --> 00:06:08,850
+Cái mục đích của cái này nó quan trọng hơn cái Dream 100 trong 1 năm.
+
+61
+00:06:08,850 --> 00:06:09,810
+Nó nằm ở chỗ.
+
+62
+00:06:10,710 --> 00:06:15,510
+Chúng ta xác định được rõ hơn cái khán giả đang quan tâm chủ đề gì.
+
+63
+00:06:16,850 --> 00:06:27,790
+Cái này là cái key chính tại sao mình đánh một kênh trong vòng 10 ngày nổ và tháng đó kênh đó lên 20k đô.
+
+64
+00:06:29,330 --> 00:06:32,410
+RPM kênh đấy khoảng thời điểm đấy lên 17.
+
+65
+00:06:33,170 --> 00:06:37,010
+Đến bây giờ mình triển khai cái hệ thống đấy, RPM lên khoảng 18.
+
+66
+00:06:37,530 --> 00:06:38,290
+18 nhỉ?
+
+67
+00:06:39,570 --> 00:06:41,370
+18, 18 đến 20.
+
+68
+00:06:42,390 --> 00:06:45,470
+Bật mí là thời lượng video trung bình khoảng 30.
+
+69
+00:06:46,750 --> 00:06:49,032
+Đang chuẩn bị triển khai video khoảng 8 tiếng.
+
+70
+00:06:49,032 --> 00:06:57,372
+Thì sắp tới sẽ có những kết quả rồi, nhưng mà ở đâu đó khoảng 30, 40, 50. Khi có kết quả sẽ bắt đầu share cho anh em.
+
+71
+00:06:58,252 --> 00:07:05,512
+Cái mục đích của việc share không phải flex. Bên mình không cần flex. Bên mình không tập trung để flex để bán khóa học nhé.
+
+72
+00:07:07,112 --> 00:07:12,952
+Mục đích toàn bộ khóa học này ban đầu là để chia sẻ kiến thức và đào tạo cho đội ngũ của chính GODA.
+
+73
+00:07:12,952 --> 00:07:22,892
+Sắp tới có kết quả sẽ share. Và K2 vừa rồi cũng có share cách làm một cái chủ đề mà nó có khả năng RPM lên được khoảng đó.
+
+74
+00:07:25,672 --> 00:07:29,812
+Dream 100 các video có lượng view tốt nhất trong 3 tháng vừa qua. Tìm đi.
+
+75
+00:07:31,252 --> 00:07:37,732
+Mình vẫn để search là 1 năm bình thường và mình kéo xuống mình tìm những video nó có thời gian upload nó khoảng 3 tháng thôi.
+
+76
+00:07:37,732 --> 00:07:50,832
+Cái việc này nó mất rất nhiều thời gian và rất nhiều anh em bỏ cuộc ở đây. Tại vì cảm giác nó vất quá, cảm giác kiểu là mãi nó chả ra tiền. Nhưng mà nếu làm xong được cái bảng này ấy,
+
+77
+00:07:50,832 --> 00:07:52,832
+Có khi đánh kênh một tháng, hai tháng lên rồi.
+
+78
+00:07:52,832 --> 00:07:56,832
+Cái đó không khẳng định, tại vì năng lực của mỗi người triển khai là khác nhau.
+
+79
+00:07:56,832 --> 00:08:02,832
+Không để so sánh cái tốc độ triển khai của anh em trong GODA với một người mới tinh bên ngoài được.
+
+80
+00:08:02,832 --> 00:08:08,832
+Tại vì cái kinh nghiệm, trải nghiệm của anh em trong GODA nó là 4 năm, 5 năm, 6 năm, 7 năm, như mình là 7 năm.
+
+81
+00:08:08,832 --> 00:08:09,960
+Nó không giống nhau được.
+
+82
+00:08:09,960 --> 00:08:12,540
+Vậy anh em đừng đưa cái thước đo so sánh là
+
+83
+00:08:12,540 --> 00:08:16,520
+Ôi ông kia ông làm kênh 1 tháng, thế mình làm 1 kênh 1 tháng mà mãi không lên
+
+84
+00:08:16,520 --> 00:08:18,900
+Thôi nghỉ đi, chắc nó lừa đấy
+
+85
+00:08:18,900 --> 00:08:24,000
+Đừng, mỗi người có 1 cái năng lực sản xuất, có 1 cái điều kiện khác nhau
+
+86
+00:08:24,000 --> 00:08:29,240
+Tìm 1 vài video trong vòng 3 tháng gần đây
+
+87
+00:08:29,240 --> 00:08:34,040
+Cái này kéo mất rất nhiều thời gian luôn
+
+88
+00:08:34,040 --> 00:08:38,460
+Tháng này thì ok rồi, tháng này thì nó dễ
+
+89
+00:08:38,460 --> 00:08:40,760
+Nhưng cái khó là cái 3 tháng ấy.
+
+90
+00:08:43,340 --> 00:08:46,240
+Kéo đi cho anh em thấy thực tế là anh em GODA làm khó như thế nào.
+
+91
+00:08:50,100 --> 00:08:52,140
+Khó mà không được lười kêu, làm phải làm đủ.
+
+92
+00:09:00,800 --> 00:09:01,760
+Không có lựa chọn 3 tháng.
+
+93
+00:09:02,620 --> 00:09:03,440
+Ở trên YouTube thì không có lựa chọn 3 tháng.
+
+94
+00:09:03,440 --> 00:09:05,500
+3 tháng. Thế nó mới khó.
+
+95
+00:09:08,680 --> 00:09:11,100
+Cái trong 1 tháng nó ngắn quá, bất kỳ chủ đề nào cũng vậy thôi.
+
+96
+00:09:11,180 --> 00:09:13,740
+Trong 1 tháng nó chỉ có khoảng độ vài trăm video thôi.
+
+97
+00:09:14,120 --> 00:09:15,460
+Mà thực tế thì nó cũng không đo hết.
+
+98
+00:09:15,900 --> 00:09:21,620
+Bây giờ cái đề xuất của YouTube nó trong vòng là 15 ngày, 2 tuần, 14-15 ngày nó mới đề xuất cơ.
+
+99
+00:09:23,440 --> 00:09:24,220
+Up cái đề xuất luôn.
+
+100
+00:09:25,380 --> 00:09:26,400
+Nên tại sao chọn 3 tháng?
+
+101
+00:09:26,500 --> 00:09:28,740
+Vì có những video bây giờ up không có view, 3 tháng nữa có view.
+
+102
+00:09:29,880 --> 00:09:30,940
+Thì đấy là video thành công chứ.
+
+103
+00:09:31,480 --> 00:09:32,820
+Đâu thể khẳng định là bây giờ không có view,
+
+104
+00:09:32,920 --> 00:09:35,242
+Về sau nó có view là video không thành công đâu.
+
+105
+00:09:35,242 --> 00:09:43,602
+Mục đích cuối cùng mình là kiếm view mà. Đấy, cứ kéo thôi, khó lắm anh em ạ. Và anh em hay bỏ cuộc đoạn này lắm.
+
+106
+00:09:43,602 --> 00:09:51,962
+Nhưng cái đoạn này nó là cái key chính đấy. Mình để mình nắm chủ đề, nắm thị trường. Anh em làm kinh doanh thì là R&D,
+
+107
+00:09:51,962 --> 00:10:00,322
+tìm nhu cầu khách hàng. Cái này cũng thế thôi. Bản chất nó khác nhau đâu. Rằng tìm nhu cầu khách hàng để mình đánh đúng thôi.
+
+108
+00:10:00,322 --> 00:10:02,822
+11 tháng
+
+109
+00:10:02,822 --> 00:10:04,602
+Kéo xuống tiếp xem nào
+
+110
+00:10:04,602 --> 00:10:08,142
+Còn lâu, kìa 2 tháng kìa
+
+111
+00:10:08,142 --> 00:10:09,542
+2 tháng nhưng mà tiếng Ấn Độ
+
+112
+00:10:09,542 --> 00:10:12,482
+Kéo tiếp, tìm mình khi nào ra tiếng Anh thì thôi
+
+113
+00:10:12,482 --> 00:10:13,942
+Mình không làm Ấn Độ
+
+114
+00:10:13,942 --> 00:10:16,702
+Anh em làm Ấn Độ cũng được nhé
+
+115
+00:10:16,702 --> 00:10:20,062
+Nhưng mà mới đầu anh em làm thị trường Ấn Độ vẫn ngon nhé
+
+116
+00:10:20,062 --> 00:10:22,282
+Rồi RPM nó có thể thấp thấp một chút
+
+117
+00:10:22,282 --> 00:10:24,382
+Nhưng mà miễn là nó lên là được
+
+118
+00:10:24,382 --> 00:10:26,422
+Cái quan trọng nhất của mình là niềm tin
+
+119
+00:10:26,422 --> 00:10:29,000
+Có niềm tin là đánh được hết
+
+120
+00:10:29,000 --> 00:10:39,157
+Ngày xưa niềm tin của mình đó là hỏi Huân bảo làm đi, hết. Khó không anh em? Làm lại lâu không? Làm lại mất 1 tuần đấy. Ít nhất 1 tuần bây giờ mình làm
+
+121
+00:10:39,157 --> 00:10:48,963
+nhanh mất 1 tuần. Làm lâu là mất 2 tuần. Và cái này phải update đều nhá. Với sau là càng hàng ngày mình phải làm liên tục hoặc 2-3 hôm làm 1 lần. Để làm
+
+122
+00:10:48,963 --> 00:10:58,770
+gì? Để nắm thị trường. Chứ cái này mà để tầm 2 tuần bắt đầu mới làm 1 lần ấy. Nó nhiều quá làm không làm lại được đâu. Update đều hằng ngày thì nó ít.
+
+123
+00:10:58,770 --> 00:11:02,170
+Nó update mà cứ 2-3 tuần mới làm 1 lần thì nó khó.
+
+124
+00:11:08,170 --> 00:11:13,450
+Đấy, video này, hoặc là vào kênh, anh em có thể vào kênh, check ra, nhưng mà check ở kia nó sẽ chuẩn hơn nha.
+
+125
+00:11:14,650 --> 00:11:20,050
+Mình sẽ có cái lưu lượng từ trên rồi, 2 tháng kia, 1 số video kia, 2 tháng kia, 12 ngày kia.
+
+126
+00:11:20,930 --> 00:11:26,130
+Đấy, đưa vào cái bảng đấy, đưa vào cái bảng, 1 tháng kia.
+
+127
+00:11:47,630 --> 00:11:56,019
+Ok, mình liên tục lặp lại lặp lại Dream 100 nó không dừng lại ở 100 Dream 100 nó
+
+128
+00:11:56,019 --> 00:12:04,000
+có thể là 200, 300, 500, 1000 và cái đấy chính là tài sản tích lũy của mình đấy.
+
+129
+00:12:04,000 --> 00:12:10,707
+Có những cái thumbnail mình nhìn phát mình biết nguồn gốc là họ bắt chước ở đâu luôn. Mình làm cái này nó quá nhiều rồi.
+
+130
+00:12:11,587 --> 00:12:18,387
+Ở nơi cái kênh vừa nãy, kênh mình lấy Dream 100, đấy. Nhìn cái thumb này mình biết làm mà lấy đâu luôn. Search kênh DOAC.
+
+131
+00:12:18,587 --> 00:12:21,127
+D-O-A-C
+
+132
+00:12:21,127 --> 00:12:24,927
+Kênh này là kênh podcast, rất nổi tiếng trên thế giới
+
+133
+00:12:24,927 --> 00:12:29,087
+Với lượt sub là 6 triệu sub
+
+134
+00:12:29,087 --> 00:12:31,367
+Em nhìn cái thumb nó quen không?
+
+135
+00:12:33,587 --> 00:12:38,247
+Có một cái lưu ý là thumbnail ở chủ đề này phổ biến
+
+136
+00:12:38,247 --> 00:12:40,687
+Có thể phổ biến ở chủ đề khác
+
+137
+00:12:42,387 --> 00:12:45,307
+Họ bê nguyên cái form này luôn sang kênh sức khỏe luôn
+
+138
+00:12:45,307 --> 00:12:46,907
+Và vẫn lên, vẫn ngon
+
+139
+00:12:46,907 --> 00:12:56,387
+Ok, xong, đã xong phần Dream 100 và Dream 100 của 1 năm và 3 tháng. Tích vào đã thực hiện. Xong, OK. Ghi chú. Có
+
+140
+00:12:56,387 --> 00:13:05,867
+cái gì phần này phải ghi chú đây không? Đầu tiên là dễ rồi đúng không? Ghi chú là để cho anh em ghi ra các
+
+141
+00:13:05,867 --> 00:13:15,347
+vấn đề. Ví dụ như khi phân tích thì đôi khi nó không phải là RPM nó tốt nhưng cách sản xuất nó khó chẳng hạn.
+
+142
+00:13:15,347 --> 00:13:17,807
+thì mình phải ghi vào.
+

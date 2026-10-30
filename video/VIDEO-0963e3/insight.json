@@ -1,0 +1,149 @@
+{
+  "sku": "VIDEO-0963e3",
+  "title": "Quy Trình Sản Xuất Video Nhận Biết English",
+  "duration_sec": 1518.3,
+  "Step_1_Niche": "Kids English Vocabulary & Educational Animal Recognition (Nhận biết từ vựng Tiếng Anh cho bé qua hiệu ứng bàn tay vẽ & video động vật thực tế)",
+  "Step_2_Theme": "Sản xuất video giáo dục nhận biết từ vựng tiếng Anh (động vật, hoa quả, phương tiện, côn trùng) theo công thức kết hợp hiệu ứng bàn tay cầm bút vẽ dần con vật + chữ cái tiếng Anh (5 giây) nối tiếp bằng thước phim con vật hoạt động thực tế ngoài tự nhiên (6 giây)",
+  "Step_3_Tools": [
+    "ChatGPT",
+    "Google Flow (Nano Banana 2)",
+    "Grok Imagine",
+    "Pinterest",
+    "CapCut",
+    "Picsart"
+  ],
+  "tools_mentioned": [
+    "ChatGPT",
+    "Google Flow",
+    "Nano Banana",
+    "Grok",
+    "Pinterest",
+    "CapCut",
+    "Picsart"
+  ],
+  "Step_4_Prompt": {
+    "description": "Bộ 3 câu lệnh Master Prompt tiếng Việt điều khiển ChatGPT sinh đồng bộ: (1) 10 prompt ảnh tĩnh con vật tách biệt trên nền trắng tỷ lệ 1:1 cho Google Flow; (2) 10 prompt video 6s tỷ lệ 16:9 mô tả con vật hoạt động thực tế kèm âm thanh môi trường cho Grok Imagine; (3) Kịch bản Intro Hook tiếng Anh kêu gọi Like & Subscribe.",
+    "template": "Câu lệnh 1 (Ảnh 1:1 nền trắng): \"- hãy tạo cho tôi 10 prompt để tạo 10 hình ảnh về động vật , thay đổi 10 con vật cho từng prompt , hình ảnh các con vật sắc nét cố định cho 10 prompt , hình ảnh kích thước 1.1 cố định cho các prompt , không cần phông nền cố định cho các prompt , không có bối cảnh chỉ có nền trắng cố định cho các prompt , tỉ lệ con vật bé hơn tỉ lệ khung hình cố định cho các prompt , phong cách thực tế cố định cho các prompt , 10 prompt chi tiết đầy đủ có độ dài như nhau , các prompt phải đầy đủ chi tiết như tôi đã yêu cầu\"\n\nCâu lệnh 2 (Video 6s Grok 16:9): \"- dựa vào 10 prompt để tạo 10 hình ảnh về động vật trên , bạn hãy tạo cho tôi 10 prompt để tạo 10 video , dựa vào 10 prompt tạo 10 con vật trên , sáng tạo cho tôi các con vật đang hoạt động hàng ngày cố định cho các prompt , prompt tạo video 6 giây trên grok cố định cho các prompt , các bối cảnh phù hợp cho các video , các video có kích thước 16.9 cố định cho các prompt , âm thanh của từng video chân thực cố định cho các prompt , 10 prompt chi tiết đầy đủ có độ dài như nhau , các prompt phải đầy đủ chi tiết như tôi đã yêu cầu\"\n\nCâu lệnh 3 (Intro Hook): \"- dựa vào 10 prompt trên tạo hình ảnh và video , bạn hãy tạo cho tôi 1 phần mở đầu để cho các bé nhận biết từ tiếng anh về các con vật , mở đầu gây hook và xin mọi người nhấn like và đăng ký kênh , thu hút người xem đến cuối video , mở đầu ngắn gọn chi tiết\""
+  },
+  "Step_5_Voice": "Sử dụng trực tiếp tính năng Chuyển văn bản thành giọng nói (Text-to-Speech) trên CapCut: chọn ngôn ngữ Tiếng Anh -> giọng nữ 'Người thương ấm áp' (Cozy Darling) cho cả phần lời chào Intro Hook đầu video và phần đọc phát âm tên từng con vật (LION, TIGER, ELEPHANT, GIRAFFE) lặp lại 2 lần.",
+  "Step_6_Edit_Checklist": [
+    "Tạo đoạn mở đầu (Intro Hook) trên CapCut tỷ lệ 16:9: dán câu chào tiếng Anh của ChatGPT, chuyển thành giọng nói AI (Cozy Darling), chèn video nút Like & Subscribe tải từ Pinterest (Xóa nền -> Phông xanh) rồi gộp thành một Clip ghép (Compound Clip) cố định.",
+    "Dựng hiệu ứng 'Bàn tay vẽ con vật' (5 giây): đặt ảnh con vật 1:1 nền trắng (Sư tử) lên nền xanh dương -> Xóa nền tự động -> vào Mặt nạ (Mask) chọn 'Cuộn phim' xoay chéo, đặt keyframe mở dần mặt nạ từ góc trên xuống góc dưới trong 5 giây; đặt ảnh bàn tay cầm bút ở lớp trên, chia 5 mốc thước kẻ (mỗi mốc 1 giây) và đánh keyframe Vị trí zíc-zắc so le theo đường mở của mặt nạ.",
+    "Dựng hiệu ứng 'Bàn tay viết chữ từ vựng' (5 giây): gõ chữ tên con vật (ví dụ 'LION'), nhân đôi thành 2 lớp văn bản giống hệt nhau rồi chuột phải chọn 'Tạo clip ghép' để mở khóa tính năng Mặt nạ cho chữ -> áp Mặt nạ 'Hình chữ nhật' kéo keyframe mở từ trái sang phải trong 5 giây kết hợp bàn tay cầm bút di chuyển so le đè lên chữ.",
+    "Chuyển văn bản từ vựng ('LION') thành giọng đọc tiếng Anh phát âm 2 lần liên tiếp, sau đó ghép nối tiếp đoạn video 6 giây con vật hoạt động thực tế kèm âm thanh tự nhiên tải từ Grok Imagine vào ngay phía sau.",
+    "Gom toàn bộ cụm (Vẽ con vật 5s + Viết chữ & Đọc tên 5s + Video thực tế 6s) thành một 'Clip ghép' làm Phôi đầu chuẩn, sau đó Sao chép (Copy-Paste) ra các phân đoạn tiếp theo, nhấn 'Hoàn tác clip ghép' (Ungroup) và chỉ việc kéo thả ảnh/chữ/video của con vật mới (Tiger, Elephant, Giraffe) đè vào phôi để sản xuất hàng loạt."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước thực chiến: Quy trình sản xuất video Nhận Biết Tiếng Anh cho trẻ em & người mới bắt đầu",
+    "additional": [
+      "Khi tạo ảnh con vật trên Google Flow (Nano Banana 2), bắt buộc ép điều kiện 'nền trắng tinh, không bối cảnh, tỉ lệ con vật nhỏ hơn khung hình (khoảng 60%)' để khi đưa vào CapCut nhấn Xóa nền tự động sẽ tách sạch tuyệt đối trong 1 cú nhấp chuột.",
+      "Văn bản thông thường trên CapCut không có tab Mặt nạ (Mask); bắt buộc phải nhân đôi lớp chữ (ví dụ 2 lớp chữ LION) rồi nhấn chuột phải chọn 'Tạo clip ghép' (Compound Clip) thì mới xuất hiện công cụ Mặt nạ Hình chữ nhật để làm hiệu ứng viết chữ.",
+      "Sử dụng thước kẻ (Ruler) trên timeline CapCut cắm mốc mỗi 1 giây (5 mốc cho đoạn 5 giây) để làm điểm tựa kéo keyframe Vị trí của bàn tay cầm bút lên xuống so le đều đặn, tạo cảm giác nét vẽ tay thật.",
+      "Kiểm tra hướng xuất hiện của Mặt nạ con vật để bấm 'Đảo ngược / Phản chiếu' (Flip/Mirror) chiều bàn tay cầm bút cho thuận chiều ngòi bút chạm đúng vào vùng hình ảnh đang hiện ra.",
+      "Sau khi hoàn thiện chỉnh chu con vật số 1 (Phôi đầu), hãy bôi đen toàn bộ cụm và đóng gói thành Clip ghép trước khi nhân bản sang con vật số 2, số 3, số 4 rồi mới 'Hoàn tác clip ghép' để thay ruột cực nhanh mà không bị lệch keyframe."
+    ]
+  },
+  "Step_7_Monetization": [
+    "Ngách giáo dục nhận biết từ vựng tiếng Anh cho trẻ em (Animals, Fruits, Vehicles, Insects) có khả năng tiếp cận khán giả toàn cầu (Ấn Độ, Mỹ, Châu Âu, Đông Nam Á) và đạt lượng view tích lũy khổng lồ (video mẫu trên kênh @StudyClasses_sa đạt 12 triệu views với thời lượng 10 phút).",
+    "Nhờ kỹ thuật đóng gói 'Phôi đầu' (Compound Clip Template) trên CapCut, sau khi dựng xong con vật đầu tiên trong 10 phút, người làm chỉ mất 1–2 phút để thay thế nguyên liệu cho mỗi con vật tiếp theo, dễ dàng kéo dài thời lượng video lên 8–10–20 phút (20 đến 50 con vật) để tối ưu doanh thu quảng cáo dài hạn."
+  ],
+  "avoid_flags": [
+    "Không tạo ảnh tĩnh con vật có phông nền rừng cây phức tạp ở Bước 1 vì tính năng Xóa nền tự động của CapCut sẽ cắt phạm vào lông/viền con vật; bắt buộc dùng ảnh 1:1 nền trắng tinh khiết cho hiệu ứng bàn tay vẽ.",
+    "Không đánh keyframe bàn tay cầm bút chạy theo một đường thẳng duy nhất từ đầu đến cuối vì nhìn sẽ đơ như ảnh trượt; phải chia 5 mốc 1 giây và kéo vị trí lên xuống so le (zíc-zắc) mới ra hiệu ứng tô vẽ.",
+    "Không để hướng bàn tay cầm bút ngược chiều với chiều mở của Mặt nạ Cuộn phim (ví dụ hình hiện từ trái sang phải nhưng ngòi bút lại quay sang trái); phải dùng nút Phản chiếu (Mirror) để ngòi bút luôn đi sát mép mặt nạ.",
+    "Không dựng lại từ đầu các bước mặt nạ và keyframe cho từng con vật thứ 2, 3, 4... vì rất tốn thời gian và thiếu đồng bộ; bắt buộc copy từ Phôi đầu rồi Hoàn tác clip ghép để thay thế nguyên liệu."
+  ],
+  "competitor_channels": [
+    {
+      "name": "Saba study Classes",
+      "url": "https://www.youtube.com/@StudyClasses_sa",
+      "handle": "@StudyClasses_sa",
+      "subscribers": "341K+ subscribers",
+      "notes": "Kênh mẫu được giảng viên mở trực tiếp đầu bài giảng (00:00 - 00:32) với video 'Insects Name in Hindi and English with Pictures' đạt 12 triệu lượt xem sau 1 năm, thời lượng 10 phút 46 giây."
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân tích kênh mẫu @StudyClasses_sa (video 10 phút đạt 12 triệu views) & Tổng quan ngách nhận biết từ vựng Tiếng Anh"
+    },
+    {
+      "time": "00:40",
+      "seconds": 40,
+      "label": "Câu lệnh số 1: Tạo 10 Prompt hình ảnh con vật 1:1 trên nền trắng bằng ChatGPT & Render trên Google Flow (Nano Banana 2)"
+    },
+    {
+      "time": "02:31",
+      "seconds": 151,
+      "label": "Câu lệnh số 2: Tạo 10 Prompt video con vật hoạt động hàng ngày & Render video 6 giây (16:9) kèm âm thanh trên Grok Imagine"
+    },
+    {
+      "time": "04:17",
+      "seconds": 257,
+      "label": "Tìm kiếm nguyên liệu 'bàn tay cầm bút' và video nút 'Like Subscribe phông xanh' trên Pinterest"
+    },
+    {
+      "time": "05:50",
+      "seconds": 350,
+      "label": "Câu lệnh số 3: Tạo lời dẫn Intro Hook, chuyển văn bản thành giọng nói tiếng Anh (Cozy Darling) & Xóa phông xanh trên CapCut"
+    },
+    {
+      "time": "09:14",
+      "seconds": 554,
+      "label": "Dựng Phôi đầu phần 1 (5s): Xóa nền con sư tử, đánh Keyframe Mặt nạ Cuộn phim & Bàn tay cầm bút vẽ so le theo thước kẻ 1 giây"
+    },
+    {
+      "time": "12:37",
+      "seconds": 757,
+      "label": "Dựng Phôi đầu phần 2 (5s): Nhân đôi chữ 'LION' thành Clip ghép để mở Mặt nạ Hình chữ nhật, đánh Keyframe tay viết chữ & Giọng đọc từ vựng"
+    },
+    {
+      "time": "17:01",
+      "seconds": 1021,
+      "label": "Đóng gói Phôi đầu thành Clip ghép & Kỹ thuật nhân bản, hoàn tác thay thế nguyên liệu siêu tốc cho Tiger, Elephant, Giraffe"
+    },
+    {
+      "time": "22:33",
+      "seconds": 1353,
+      "label": "Thiết kế ảnh bìa Thumbnail chuẩn 1920x1080 quy tụ 8–50 con vật tách nền bắt mắt trên Picsart"
+    }
+  ],
+  "course_docs": [
+    {
+      "name": "Master Prompt & Quy Trình Chuẩn — Bài 17: Video Nhận Biết Tiếng Anh (DGMD-M05)",
+      "path": "assets/docs-dgmd/VIDEO-0963e3/master_prompt.md",
+      "type": "markdown",
+      "description": "Nguyên văn 3 câu lệnh Master Prompt tiếng Việt trên Google Docs của giảng viên, mẫu prompt ảnh 1:1 (Google Flow) & video 6s (Grok Imagine) cùng thông số dựng Phôi đầu trên CapCut.",
+      "file": "assets/docs-dgmd/VIDEO-0963e3/master_prompt.md"
+    }
+  ],
+  "verification_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "actual_topic": "Quy trình sản xuất video Nhận Biết Tiếng Anh cho trẻ em & người mới bắt đầu",
+  "key_takeaways": [
+    "Ngách giáo dục nhận biết từ vựng tiếng Anh cho trẻ em (Animals, Fruits, Vehicles, Insects) có khả năng tiếp cận khán giả toàn cầu (Ấn Độ, Mỹ, Châu Âu, Đông Nam Á) và đạt lượng view tích lũy khổng lồ (video mẫu trên kênh @StudyClasses_sa đạt 12 triệu views với thời lượng 10 phút).",
+    "Nhờ kỹ thuật đóng gói 'Phôi đầu' (Compound Clip Template) trên CapCut, sau khi dựng xong con vật đầu tiên trong 10 phút, người làm chỉ mất 1–2 phút để thay thế nguyên liệu cho mỗi con vật tiếp theo, dễ dàng kéo dài thời lượng video lên 8–10–20 phút (20 đến 50 con vật) để tối ưu doanh thu quảng cáo dài hạn.",
+    "Tạo đoạn mở đầu (Intro Hook) trên CapCut tỷ lệ 16:9: dán câu chào tiếng Anh của ChatGPT, chuyển thành giọng nói AI (Cozy Darling), chèn video nút Like & Subscribe tải từ Pinterest (Xóa nền -> Phông xanh) rồi gộp thành một Clip ghép (Compound Clip) cố định.",
+    "Dựng hiệu ứng 'Bàn tay vẽ con vật' (5 giây): đặt ảnh con vật 1:1 nền trắng (Sư tử) lên nền xanh dương -> Xóa nền tự động -> vào Mặt nạ (Mask) chọn 'Cuộn phim' xoay chéo, đặt keyframe mở dần mặt nạ từ góc trên xuống góc dưới trong 5 giây; đặt ảnh bàn tay cầm bút ở lớp trên, chia 5 mốc thước kẻ (mỗi mốc 1 giây) và đánh keyframe Vị trí zíc-zắc so le theo đường mở của mặt nạ.",
+    "Dựng hiệu ứng 'Bàn tay viết chữ từ vựng' (5 giây): gõ chữ tên con vật (ví dụ 'LION'), nhân đôi thành 2 lớp văn bản giống hệt nhau rồi chuột phải chọn 'Tạo clip ghép' để mở khóa tính năng Mặt nạ cho chữ -> áp Mặt nạ 'Hình chữ nhật' kéo keyframe mở từ trái sang phải trong 5 giây kết hợp bàn tay cầm bút di chuyển so le đè lên chữ.",
+    "Chuyển văn bản từ vựng ('LION') thành giọng đọc tiếng Anh phát âm 2 lần liên tiếp, sau đó ghép nối tiếp đoạn video 6 giây con vật hoạt động thực tế kèm âm thanh tự nhiên tải từ Grok Imagine vào ngay phía sau."
+  ],
+  "channels_mentioned": [
+    "@StudyClasses_sa"
+  ],
+  "category_group": "chuyen_gia",
+  "niche_primary": "Học Tiếng Anh Thụ Động",
+  "niche_id": "dgmd_workflow",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "sop_steps": [
+    "Khi tạo ảnh con vật trên Google Flow (Nano Banana 2), bắt buộc ép điều kiện 'nền trắng tinh, không bối cảnh, tỉ lệ con vật nhỏ hơn khung hình (khoảng 60%)' để khi đưa vào CapCut nhấn Xóa nền tự động sẽ tách sạch tuyệt đối trong 1 cú nhấp chuột.",
+    "Văn bản thông thường trên CapCut không có tab Mặt nạ (Mask); bắt buộc phải nhân đôi lớp chữ (ví dụ 2 lớp chữ LION) rồi nhấn chuột phải chọn 'Tạo clip ghép' (Compound Clip) thì mới xuất hiện công cụ Mặt nạ Hình chữ nhật để làm hiệu ứng viết chữ.",
+    "Sử dụng thước kẻ (Ruler) trên timeline CapCut cắm mốc mỗi 1 giây (5 mốc cho đoạn 5 giây) để làm điểm tựa kéo keyframe Vị trí của bàn tay cầm bút lên xuống so le đều đặn, tạo cảm giác nét vẽ tay thật.",
+    "Kiểm tra hướng xuất hiện của Mặt nạ con vật để bấm 'Đảo ngược / Phản chiếu' (Flip/Mirror) chiều bàn tay cầm bút cho thuận chiều ngòi bút chạm đúng vào vùng hình ảnh đang hiện ra.",
+    "Sau khi hoàn thiện chỉnh chu con vật số 1 (Phôi đầu), hãy bôi đen toàn bộ cụm và đóng gói thành Clip ghép trước khi nhân bản sang con vật số 2, số 3, số 4 rồi mới 'Hoàn tác clip ghép' để thay ruột cực nhanh mà không bị lệch keyframe."
+  ],
+  "source_transcript": "video/VIDEO-0963e3/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED"
+}

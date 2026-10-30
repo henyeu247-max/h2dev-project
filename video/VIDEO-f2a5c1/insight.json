@@ -1,0 +1,130 @@
+{
+  "sku": "VIDEO-f2a5c1",
+  "title": "Quy Trình Xây Kênh 100.000 Subscribe ",
+  "actual_topic": "Quy trình xây kênh Shorts đạt Nút Bạc (100.000 Subscribe) và kiếm 57 triệu/tháng (Kênh mẫu School Baby Channel 287,4 triệu VNĐ, 1 video 9,2M view kéo +56,7N sub; Thành Hiếu Mang Dép 1,16M sub): Chọn 3 nhóm từ khóa lớn (Tôn giáo Jesus #jesus 25M video, Game Minecraft, Nhạc Kpop Rumi #rumi / Skibidi Toilet / Sprunki) -> Bình thẩm Fair Use trên CapCut PC (Giọng Cô gái hoạt ngôn & Thanh niên tự tin 1.2x-1.3x, Dừng hình + Nút Like/Sub + Nhãn dán red circle/red arrow + Đếm ngược 3-2-1 + Bộ lọc 4K + Nhạc nền mức 24).",
+  "category_group": "chuyen_gia",
+  "niche_primary": "Chiến Lược Xây Kênh 100K Sub & Bình Thẩm Shorts Fair Use",
+  "niche_id": "youtube_growth",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "tools_mentioned": [
+    "YouTube",
+    "Google Trends",
+    "CapCut",
+    "Canva",
+    "Picsart",
+    "Google Drive",
+    "Cốc Cốc",
+    "Google Dịch",
+    "Douyin",
+    "TikTok"
+  ],
+  "channels_mentioned": [
+    "@SchoolBabyChannel",
+    "@thanhhieumangdep",
+    "@TheJokersHome-j5b",
+    "@SonyPicturesAnimation",
+    "@raj_jaiswal_shorts8080",
+    "@QuangTalks",
+    "@MariHoNgoc"
+  ],
+  "course_docs": [
+    {
+      "title": "Bộ Kịch Bản Bình Thẩm Fair Use, Công Thức Kéo 100.000 Subscribe & Thông Số Kỹ Thuật CapCut PC",
+      "file": "assets/docs-dgmd/VIDEO-f2a5c1/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-f2a5c1/master_prompt.md",
+      "link": "https://drive.google.com/drive/folders/1hxxvKtgxXM_6Sie1xMXpN3c2xnhT4tNM?usp=sharing"
+    },
+    {
+      "title": "Drive Tài Nguyên Hình Ảnh Nút Like/Sub & Nhạc Nền Xây Kênh 100K Sub",
+      "file": "assets/docs-dgmd/VIDEO-f2a5c1/google_drive_assets.txt",
+      "readFile": "assets/docs-dgmd/VIDEO-f2a5c1/google_drive_assets.txt",
+      "link": "https://drive.google.com/drive/folders/1hxxvKtgxXM_6Sie1xMXpN3c2xnhT4tNM?usp=sharing"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Show video Shorts 19 giây trên kênh School Baby Channel đạt 9.199.709 view & kéo +56.700 Subscribe (nửa Nút Bạc)"
+    },
+    {
+      "time": "00:54",
+      "seconds": 54,
+      "label": "Chứng minh doanh thu thực tế từ trang Shorts: Tổng 287.469.150 ₫, riêng tháng 11 đạt 57.124.378 ₫ & tháng 12 đạt 41.476.809 ₫"
+    },
+    {
+      "time": "01:52",
+      "seconds": 112,
+      "label": "Bảng công thức 3 nhóm từ khóa sống còn: Tôn giáo (Jesus), Game (Minecraft, Liên Quân, FIFA, PUBG) & Nhạc/Nhân vật Trend (Rumi)"
+    },
+    {
+      "time": "03:18",
+      "seconds": 198,
+      "label": "Kiểm chứng xu hướng 5 năm tại Hoa Kỳ trên Google Trends & Chu kỳ nhân vật Trend: Skibidi Toilet -> Sprunki -> Kpop Rumi ('Golden' 1,5 tỷ view)"
+    },
+    {
+      "time": "05:13",
+      "seconds": 313,
+      "label": "Phân tích kênh mẫu @TheJokersHome-j5b (Rumi KING - 1,55M sub) đạt 142M, 68M, 50M view nhờ kết hợp nhân vật Rumi với quay thực tế & AI"
+    },
+    {
+      "time": "10:03",
+      "seconds": 603,
+      "label": "Quét nguồn video từ Hashtag #jesus (25 triệu video) & #rumi (628N video), show kênh @thanhhieumangdep (1,16M sub) và tải video bằng Cốc Cốc"
+    },
+    {
+      "time": "12:12",
+      "seconds": 732,
+      "label": "Kỹ thuật Bình thẩm Fair Use trên CapCut PC: Tắt tiếng gốc, phân vai giọng đọc 'Cô gái hoạt ngôn' & 'Thanh niên tự tin' (tốc độ 1.2x, đổi cao độ)"
+    },
+    {
+      "time": "15:59",
+      "seconds": 959,
+      "label": "Tuyệt chiêu Dừng hình (Freeze Frame) kéo 3 chỉ số (Like + Sub + Bình luận số 8): Chèn ảnh nút Like/Sub bị khóa, nhãn dán 'red circle' & 'red arrow'"
+    },
+    {
+      "time": "20:08",
+      "seconds": 1208,
+      "label": "Tạo hiệu ứng đếm ngược 3-2-1 khớp âm thanh '3 second countdown' (1.2x) và đóng gói thành 'Clip ghép' (Compound Clip) để tái sử dụng"
+    },
+    {
+      "time": "25:03",
+      "seconds": 1503,
+      "label": "Hoàn thiện kháng bản quyền: Phụ đề tự động, phủ Bộ lọc 4K, chèn nhạc nền mức âm lượng 24, bấm phím O kết xuất và dịch tiêu đề đăng kênh"
+    }
+  ],
+  "key_takeaways": [
+    "Hiệu suất kéo Nút Bạc và doanh thu thực chứng từ YouTube Shorts: Chỉ với 1 video Shorts dài 19 giây sản xuất trong 10 phút trên kênh School Baby Channel đã mang về 9.199.709 lượt xem và +56.700 người đăng ký (hơn nửa chiếc Nút Bạc), góp phần tạo ra tổng doanh thu 287.469.150 ₫ (đỉnh điểm tháng 11 đạt 57.124.378 ₫ và tháng 12 đạt 41.476.809 ₫ hoàn toàn từ trang Shorts).",
+    "Quy tắc chọn 3 nhóm từ khóa có nhu cầu tìm kiếm khổng lồ: Người mới chưa có tên tuổi tuyệt đối không làm nội dung cá nhân không ai quan tâm; phải bám vào 3 trụ cột đã kiểm chứng trên Google Trends Hoa Kỳ (5 năm qua) gồm Tôn giáo (Jesus), Game (Minecraft, Liên Quân, FIFA, PUBG, Liên Minh Huyền Thoại) và Nhân vật/Nhạc theo chu kỳ Trend (từ Skibidi Toilet -> Sprunki -> nhân vật Rumi của Kpop Demon Hunters với bản hit 'Golden' 1,5 tỷ view, kênh mẫu @TheJokersHome-j5b đạt 1,55M sub và 142M view/video).",
+    "Phương pháp đào kho nguồn video vô tận bằng Hashtag (#): Thay vì chỉ tìm từ khóa thông thường, hãy gõ trực tiếp hashtag như #jesus (25 triệu video • 1,7 triệu kênh) hoặc #rumi (628.000 video • 133.000 kênh) rồi bấm sang tab Shorts (kết hợp Douyin/TikTok) để lấy nguồn video gốc về bình thẩm lại như cách kênh @thanhhieumangdep (1,16 triệu sub) đã triển khai.",
+    "Kỹ thuật Bình thẩm (Commentary) đúng luật Fair Use trên CapCut PC: Tắt 100% âm thanh gốc của video tải về (ví dụ từ kênh @raj_jaiswal_shorts8080), tự sáng tác cốt truyện đối đáp giữa các nhân vật và chuyển văn bản thành giọng nói bằng 2 giọng tách biệt ('Cô gái hoạt ngôn' cho phe phản diện và 'Thanh niên tự tin' cho Chúa Giê-xu), chỉnh tốc độ lên 1.2x kèm bật 'Thay đổi cao độ âm thanh' (lưu ý viết 'Giê-xu' có gạch nối để AI không đọc lỗi).",
+    "Công thức 'Dừng hình + Kéo 3 chỉ số + Clip ghép 3-2-1' và 3 lớp bảo vệ bản quyền: Tại khoảnh khắc cao trào nhất, bấm 'Dừng hình (Freeze Frame)', chèn ảnh nút Like/Đăng ký bị khóa kết hợp nhãn dán 'red circle' + 'red arrow' (nhân đôi, phản chiếu) và lồng giọng Thanh niên tự tin tốc độ 1.3x đọc câu mồi: 'Khoan đã! Để biết chuyện gì may mắn sắp xảy ra, bạn hãy nhấn like và đăng ký nhé, mà hình như 2 nút đó đã bị khóa, bạn nào nhấn được hãy bình luận số 8' kèm đếm ngược 3-2-1 (đóng gói thành Clip ghép để dùng lại); cuối cùng tạo Phụ đề tự động, phủ Bộ lọc 4K toàn video, chèn nhạc nền ở mức âm lượng 24 và nhấn phím O để xuất đúng thời lượng."
+  ],
+  "edit_sop": {
+    "primary": "SOP 5 Bước Sản Xuất Video Shorts Bình Thẩm Fair Use Kéo 100.000 Subscribe (Nút Bạc) Trên CapCut PC",
+    "additional": [
+      "Tra cứu từ khóa trên Google Trends và tìm nguồn video qua Hashtag: Kiểm tra độ bền từ khóa tại Hoa Kỳ (5 năm qua, mục Tìm kiếm trên YouTube), sau đó gõ #jesus (25M video) hoặc #rumi (628K video) trên YouTube -> chọn tab Shorts, tìm video có tình huống kịch tính và tải về bằng trình duyệt Cốc Cốc.",
+      "Thiết lập dự án CapCut PC và lồng tiếng phân vai bình thẩm Fair Use: Đưa video vào CapCut (chuyển bố cục giao diện Dọc), tắt toàn bộ âm thanh gốc, viết lời thoại đối đáp mới cho các nhân vật và chuyển thành giọng nói AI (dùng giọng 'Cô gái hoạt ngôn' cho nhân vật phụ và 'Thanh niên tự tin' cho nhân vật chính, chỉnh tốc độ 1.2x + bật Thay đổi cao độ âm thanh).",
+      "Chèn điểm Dừng hình (Freeze Frame) và thiết kế cụm Kéo Like/Sub/Comment: Chọn khoảnh khắc cao trào bấm 'Dừng hình', đưa ảnh nút Like/Đăng ký (từ Google Drive khóa học) vào, tìm nhãn dán 'red circle' và 'red arrow' (copy 2 mũi tên, bấm Phản chiếu) chỉ thẳng vào nút, rồi thêm câu thoại kêu gọi nhấn Like, Đăng ký và Bình luận số 8 (giọng Thanh niên tự tin, tốc độ 1.3x).",
+      "Tạo bộ đếm ngược 3-2-1 và đóng gói thành Clip ghép (Compound Clip): Thêm chữ 3, 2, 1 (font Penting, nền đen) khớp với hiệu ứng âm thanh '3 second countdown' (tốc độ 1.2x), sau đó bôi đen toàn bộ cụm đồ họa + âm thanh kêu gọi bấm chuột phải chọn 'Tạo clip ghép' để tái sử dụng tức thì cho các video tiếp theo.",
+      "Phủ 3 lớp kháng bản quyền, xuất file bằng phím tắt O và đăng tải: Viết câu thoại kết thúc có hậu, bật Phụ đề tự động (chọn tất cả áp mẫu chữ đơn giản), phủ lớp Bộ lọc '4K' suốt chiều dài video, chèn nhạc nền Drive hạ âm lượng xuống mức 24, đặt con trỏ ở cuối hình bấm phím O để khóa vùng xuất, rồi dùng Google Dịch dịch tiêu đề gốc sang tiếng Việt kèm hashtag #jesus và xuất bản công khai (chọn Không dành cho trẻ em)."
+    ]
+  },
+  "sop_steps": [
+    "Tra cứu từ khóa trên Google Trends và tìm nguồn video qua Hashtag: Kiểm tra độ bền từ khóa tại Hoa Kỳ (5 năm qua, mục Tìm kiếm trên YouTube), sau đó gõ #jesus (25M video) hoặc #rumi (628K video) trên YouTube -> chọn tab Shorts, tìm video có tình huống kịch tính và tải về bằng trình duyệt Cốc Cốc.",
+    "Thiết lập dự án CapCut PC và lồng tiếng phân vai bình thẩm Fair Use: Đưa video vào CapCut (chuyển bố cục giao diện Dọc), tắt toàn bộ âm thanh gốc, viết lời thoại đối đáp mới cho các nhân vật và chuyển thành giọng nói AI (dùng giọng 'Cô gái hoạt ngôn' cho nhân vật phụ và 'Thanh niên tự tin' cho nhân vật chính, chỉnh tốc độ 1.2x + bật Thay đổi cao độ âm thanh).",
+    "Chèn điểm Dừng hình (Freeze Frame) và thiết kế cụm Kéo Like/Sub/Comment: Chọn khoảnh khắc cao trào bấm 'Dừng hình', đưa ảnh nút Like/Đăng ký (từ Google Drive khóa học) vào, tìm nhãn dán 'red circle' và 'red arrow' (copy 2 mũi tên, bấm Phản chiếu) chỉ thẳng vào nút, rồi thêm câu thoại kêu gọi nhấn Like, Đăng ký và Bình luận số 8 (giọng Thanh niên tự tin, tốc độ 1.3x).",
+    "Tạo bộ đếm ngược 3-2-1 và đóng gói thành Clip ghép (Compound Clip): Thêm chữ 3, 2, 1 (font Penting, nền đen) khớp với hiệu ứng âm thanh '3 second countdown' (tốc độ 1.2x), sau đó bôi đen toàn bộ cụm đồ họa + âm thanh kêu gọi bấm chuột phải chọn 'Tạo clip ghép' để tái sử dụng tức thì cho các video tiếp theo.",
+    "Phủ 3 lớp kháng bản quyền, xuất file bằng phím tắt O và đăng tải: Viết câu thoại kết thúc có hậu, bật Phụ đề tự động (chọn tất cả áp mẫu chữ đơn giản), phủ lớp Bộ lọc '4K' suốt chiều dài video, chèn nhạc nền Drive hạ âm lượng xuống mức 24, đặt con trỏ ở cuối hình bấm phím O để khóa vùng xuất, rồi dùng Google Dịch dịch tiêu đề gốc sang tiếng Việt kèm hashtag #jesus và xuất bản công khai (chọn Không dành cho trẻ em)."
+  ],
+  "avoid_flags": [
+    "Không tự ý làm những chủ đề cá nhân rời rạc không ai tìm kiếm khi kênh chưa có tên tuổi; bắt buộc phải bám vào các từ khóa có lưu lượng khổng lồ như Jesus, Minecraft hoặc nhân vật đang trend như Rumi.",
+    "Không dùng chung 1 giọng đọc AI cho tất cả các nhân vật trong video và không viết nguyên chữ tiếng Anh 'Jesus' khiến AI tiếng Việt đọc sai (phải viết rõ là 'Giê-xu').",
+    "Không gõ tìm nhãn dán mũi tên bằng tiếng Việt trong CapCut (dễ không ra kết quả chuẩn) mà phải gõ đúng từ khóa tiếng Anh 'red arrow' và 'red circle'.",
+    "Không để nhạc nền quá to lấn át giọng bình thẩm (phải hạ xuống mức 24) và không quên nhấn phím O ở cuối đoạn hình ảnh, nếu không CapCut sẽ xuất thừa cả đoạn nhạc trống phía sau."
+  ],
+  "source_transcript": "video/VIDEO-f2a5c1/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true
+}

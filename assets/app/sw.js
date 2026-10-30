@@ -5,9 +5,9 @@
    sw-register.js do lai dang ky '/assets/app/sw.js' voi scope '/' — hop le nho
    header Service-Worker-Allowed: '/' ma server.js phuc vu cho file nay.
    /sw.js (root) chuyen thanh legacy. SHELL + CACHE giu nguyen ban batchd. */
-/* 2026-10-30: bump ten cache -> SW moi install + activate xoa cache cu (uifix94, shell & data v9). */
-const SHELL_CACHE = 'h2dev-shell-v9';
-const DATA_CACHE = 'h2dev-data-v9';
+/* 2026-10-30: bump ten cache -> SW moi install + activate xoa cache cu (uifix95, shell & data v10). */
+const SHELL_CACHE = 'h2dev-shell-v10';
+const DATA_CACHE = 'h2dev-data-v10';
 const SHELL = [
   '/',
   '/index.html',
@@ -86,12 +86,6 @@ self.addEventListener('fetch', (e) => {
   });
   e.waitUntil(network.then(() => {}).catch(() => {}));
   e.respondWith(
-    caches.match(e.request).then((hit) => {
-      const net = network
-      /* NANG CAP 2026-09-30: offline + URL co ?v= moi (chua tung tai) -> truoc day tra ve undefined (do: offline /video
-         20/20 CSS+JS loi). SHELL duoc precache KHONG kem ?v o dung phien ban cache nay -> dung ignoreSearch lam du phong. */
-      .catch(() => hit || caches.match(e.request, { ignoreSearch: true }));
-      return hit || net;
-    })
+    network.catch(() => caches.match(e.request).then((hit) => hit || caches.match(e.request, { ignoreSearch: true })))
   );
 });

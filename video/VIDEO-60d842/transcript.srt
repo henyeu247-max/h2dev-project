@@ -1,0 +1,648 @@
+1
+00:00:00,000 --> 00:00:07,140
+Và lộ trình của chúng ta khi mà anh em có để ý rằng cuộc chơi
+
+2
+00:00:07,140 --> 00:00:14,280
+ở trên các nền tảng là chỉ cuộc chơi đầu vào và đầu ra không?
+
+3
+00:00:15,640 --> 00:00:25,660
+Tức là chúng ta cung cấp đầu vào và khách hàng đón nhận ở đầu ra. Và chúng ta không kiểm soát được nền tảng, chúng ta cũng không kiểm soát được khách hàng.
+
+4
+00:00:26,520 --> 00:00:29,520
+Chúng ta chỉ kiểm soát được một thứ duy nhất thôi, đó là đầu vào.
+
+5
+00:00:30,000 --> 00:00:34,960
+YouTube
+
+6
+00:00:34,960 --> 00:00:41,440
+Các bạn sẽ có những thứ này để có thể tập trung và làm
+
+7
+00:00:41,440 --> 00:00:47,020
+Cứ từng bước một nhá, anh em yên tâm, cứ từng bước từng bước một
+
+8
+00:00:47,020 --> 00:00:49,760
+Đến chiều ngày mai anh em sẽ thấy được mọi thứ logic với nhau
+
+9
+00:00:49,760 --> 00:00:52,340
+Và sau đây đến lúc anh em xem lại khóa học online á
+
+10
+00:00:52,340 --> 00:00:57,920
+Thì toàn bộ khóa học online cộng offline nó ra một cái bản đồ và logic giống nhau
+
+11
+00:00:57,920 --> 00:01:04,880
+Đầu tiên, chúng ta cần phải có đầu vào là chính là bạn.
+
+12
+00:01:11,520 --> 00:01:14,400
+Tiếp theo, chúng ta có một nền tảng nào đấy?
+
+13
+00:01:14,400 --> 00:01:21,940
+Ở đây chúng ta dùng là YouTube.
+
+14
+00:01:25,380 --> 00:01:30,200
+Tiếp theo là chúng ta tiếp cận đến một cái nhóm người dùng.
+
+15
+00:01:34,151 --> 00:01:35,391
+Rất là nhiều khách hàng ở đây.
+
+16
+00:01:36,871 --> 00:01:40,491
+Bản chất anh em làm cái công thức thì nó cũng chỉ có đơn giản như thế này thôi.
+
+17
+00:01:41,000 --> 00:01:47,371
+Ví dụ anh em chạy ads, thì nền tảng nó là Facebook Ads, YouTube Ads.
+
+18
+00:01:48,491 --> 00:01:50,231
+Khách hàng và mình.
+
+19
+00:01:51,491 --> 00:01:53,351
+Thế chúng ta cần phải quan tâm 3 cái yếu tố này.
+
+20
+00:01:53,631 --> 00:01:57,351
+Nhưng 2 yếu tố này là 2 yếu tố chúng ta chỉ có thể cố gắng hiểu được thôi.
+
+21
+00:01:57,811 --> 00:01:59,651
+Nhưng chúng ta không kiểm soát được.
+
+22
+00:02:01,771 --> 00:02:05,231
+Nên chúng ta chỉ có thể kiểm soát được 1 thứ duy nhất thôi.
+
+23
+00:02:05,891 --> 00:02:06,851
+Đó là bạn.
+
+24
+00:02:08,011 --> 00:02:12,411
+Nên trong tuyên bố miễn trừ trách nhiệm mới nói rằng là mình sẽ chia sẻ toàn bộ tất cả những cái này.
+
+25
+00:02:12,411 --> 00:02:21,531
+Nhưng cái kết quả nó sẽ đến từ chính bạn vì bạn mới là người kiểm, kiểm định lại, làm lại và có kết quả là ở đây.
+
+26
+00:02:23,151 --> 00:02:29,651
+Học có hay đến mấy thì học, kết quả có ra như thế nhưng mà anh em không làm thì thua luôn.
+
+27
+00:02:31,951 --> 00:02:38,191
+Nên là ở đây chúng ta cần phải hiểu thêm nữa là bạn thì chúng ta sẽ có cái gì?
+
+28
+00:02:38,191 --> 00:02:41,271
+Chúng ta sẽ có 2 phần
+
+29
+00:02:41,271 --> 00:02:46,950
+Một là bên trong và bên ngoài nó giống như cái máy tính ấy
+
+30
+00:02:47,000 --> 00:02:55,463
+Phần cứng và phần mềm. Phần cứng là bên ngoài thì anh em luyện tập thể dục thể thao rồi làm mọi thứ cho nó khỏe lên thì cái đấy mình không tính nhá. Cái
+
+31
+00:02:55,463 --> 00:03:03,977
+đấy thì thôi khuyến khích anh em chơi một môn thể thao nào đấy. Vì là chúng ta làm việc với máy tính rất là nhiều. Cố gắng chơi một môn thể thao nào đấy
+
+32
+00:03:03,977 --> 00:03:12,490
+hoặc đi ra ngoài nhiều hơn. Chỉ như thế thôi. Đi ra ngoài nhiều hơn để anh em khỏe hơn. Ít nhất là chúng ta có được vitamin D tiếp xúc với lại mặt trời.
+
+33
+00:03:12,490 --> 00:03:19,270
+Đấy, một là bên ngoài.
+
+34
+00:03:21,090 --> 00:03:25,170
+Thì bên ngoài thì chúng ta ra ngoài.
+
+35
+00:03:27,470 --> 00:03:28,870
+Không ru rú ở nhà mãi nữa.
+
+36
+00:03:29,610 --> 00:03:30,610
+Đi giao lưu nhiều lên.
+
+37
+00:03:31,510 --> 00:03:32,310
+Đi chơi nhiều lên.
+
+38
+00:03:32,510 --> 00:03:33,650
+Các ông kiếm được tiền nhiều làm gì?
+
+39
+00:03:33,910 --> 00:03:34,630
+Đi chơi nhiều lên.
+
+40
+00:03:34,970 --> 00:03:37,030
+Ra ngoài Hà Nội này chính là một cái hình thức đi chơi đấy.
+
+41
+00:03:37,510 --> 00:03:41,130
+Xong rồi còn mấy anh chị còn tranh thủ là lên cả Sapa, xong rồi đi luôn cả Fansipan đấy.
+
+42
+00:03:41,130 --> 00:03:44,630
+Thế nếu mà không có lớp học này thì đến lúc là bao giờ anh em mới đi ở Fansipan?
+
+43
+00:03:45,630 --> 00:03:48,810
+Bao giờ mới lên Sapa mà ăn ở trên đấy xong lại gặp Giàng A Sinh?
+
+44
+00:03:50,130 --> 00:03:51,090
+Đấy cũng một cái cơ hội.
+
+45
+00:03:51,790 --> 00:03:52,870
+Tiếp theo là cái ở bên trong.
+
+46
+00:03:54,410 --> 00:03:55,830
+Bên trong này anh em cần phải có
+
+47
+00:03:55,830 --> 00:04:09,530
+Có tất cả các yếu tố về nền tảng, kiến thức, kỹ năng, chiến lược, tư duy.
+
+48
+00:04:11,470 --> 00:04:12,950
+Bạn cần phải có những thứ này.
+
+49
+00:04:15,830 --> 00:04:20,370
+Đây là một bức tranh tổng quan cho 2 ngày tới của chúng ta
+
+50
+00:04:21,356 --> 00:04:27,396
+Tiếp theo, chúng ta cố gắng hiểu nền tảng, tức là chúng ta cố gắng sản xuất ra video.
+
+51
+00:04:27,396 --> 00:04:30,396
+Anh em làm video ở đây này
+
+52
+00:04:30,396 --> 00:04:34,256
+Và anh em cần phải hiểu nền tảng
+
+53
+00:04:34,256 --> 00:04:37,256
+Và làm sao để có được video
+
+54
+00:04:37,256 --> 00:04:41,316
+Thì chiều nay chúng ta sẽ nói sâu hơn về làm sao để có được video
+
+55
+00:04:41,316 --> 00:04:43,856
+Sáng nay chúng ta sẽ nói về
+
+56
+00:04:43,856 --> 00:04:45,056
+Bạn
+
+57
+00:04:45,056 --> 00:04:47,016
+Chiều nói về làm sao có video
+
+58
+00:04:47,016 --> 00:04:49,296
+Ngày mai nói về làm sao để hiểu được khách hàng
+
+59
+00:04:49,296 --> 00:04:52,256
+Khách hàng ở đây chúng ta
+
+60
+00:04:52,256 --> 00:04:54,816
+Chỉ có thể cố gắng hiểu
+
+61
+00:04:55,000 --> 00:05:04,576
+Nhưng mà ở đây là gọi là xác suất thôi. Tức là đoán hiểu thôi. Dựa trên dữ liệu đã có rồi. Chứ mình không thể hiểu được 100%. Và có những
+
+62
+00:05:04,576 --> 00:05:14,336
+thứ khi chúng ta hiểu khách hàng và chúng ta làm một cái chủ đề ấy. Các bạn hiểu khách hàng rồi, hiểu thị trường rồi. Không dạy được cho người
+
+63
+00:05:14,336 --> 00:05:24,096
+khác luôn. Chỉ có bạn mới hiểu được rồi. Bạn cảm nhận được cứ cái video đấy thì nó lên view. Cứ cái chủ đề đấy làm như thế thì có view.
+
+64
+00:05:24,816 --> 00:05:27,996
+Nó sẽ có những cái cảm giác như vậy khi mà các bạn làm kênh.
+
+65
+00:05:29,050 --> 00:05:37,050
+Cố gắng hiểu thị trường và chúng ta làm sao có thể được xác suất cao.
+
+66
+00:05:39,290 --> 00:05:45,450
+Thế thì đấy là cái lộ trình trong 2 ngày của chúng ta ở đây.
+
+67
+00:05:48,390 --> 00:05:52,730
+Thế thì chia sẻ với anh em từ sáng đến giờ có một vài cái keyword nốt lại.
+
+68
+00:05:53,310 --> 00:05:56,510
+Cái thứ nhất là cái câu chuyện của mình.
+
+69
+00:05:56,510 --> 00:06:07,030
+Nhiều lần mình kể câu chuyện, nhưng mình không nhấn mạnh và không nốt lại cho anh em để anh em thấy đâu là cái thứ để giúp cho chúng ta có kết quả.
+
+70
+00:06:08,370 --> 00:06:17,570
+Thì cái câu chuyện thứ nhất là có nhóm bạn, có nhóm bạn, nó động viên mình, nó chửi mình.
+
+71
+00:06:18,190 --> 00:06:21,000
+Nhưng mà nhớ là chọn thì phải chọn cái thằng nó làm được.
+
+72
+00:06:21,000 --> 00:06:30,490
+Đúng cái thằng nó cũng đéo làm, thì nó bảo mẹ thôi, đéo làm được đâu. Anh em mình thôi làm gì, là thôi luôn đấy.
+
+73
+00:06:30,490 --> 00:06:39,710
+Nhớ là chọn, là chọn đúng cái ông mà làm được nhé. Cái thứ 2 nữa là số lượng video. Nó là cuộc chơi đầu vào
+
+74
+00:06:39,710 --> 00:06:48,930
+và đầu ra. Chúng ta chỉ có thể kiểm soát được đầu vào thôi. Tăng số lượng video của anh em lên. Thử sai nhiều lên.
+
+75
+00:06:48,930 --> 00:06:51,510
+Đừng làm 1 video 1 ngày nữa.
+
+76
+00:06:52,230 --> 00:06:53,630
+2, 3, 4, 5
+
+77
+00:06:53,630 --> 00:07:00,190
+Năm đến bây giờ thằng YouTube Shorts của mình mà các bạn ở dưới nhân sự các bạn vẫn đang đẩy 10 cái một ngày.
+
+78
+00:07:00,710 --> 00:07:01,070
+Không sao đâu.
+
+79
+00:07:01,970 --> 00:07:02,810
+Anh em tăng số lượng đi.
+
+80
+00:07:04,390 --> 00:07:07,310
+Trong 2 ngày sẽ nói thêm cả cái phần là tăng đến bao giờ.
+
+81
+00:07:08,050 --> 00:07:09,210
+Tăng số lượng thì tăng đến bao giờ.
+
+82
+00:07:11,000 --> 00:07:11,970
+Nó sẽ có chiến lược để tăng.
+
+83
+00:07:11,971 --> 00:07:21,391
+Nên anh em nào mà mới làm có 1, 2, 3, 4, 5 hoặc là 20 video xong là nhắn hỏi là bao giờ
+
+84
+00:07:21,391 --> 00:07:30,811
+thì kiếm được tiền? Là câu đấy là mình rất giận đấy nhỉ? Một là anh em hỏi em còn chưa học xong khóa online.
+
+85
+00:07:30,811 --> 00:07:35,771
+Cái thứ 2 là làm khoảng 20 video đã bắt đầu sốt ruột rồi.
+
+86
+00:07:38,031 --> 00:07:44,011
+Bây giờ học 4 năm đại học, 3 năm cao đẳng, 4 năm đại học, 6 năm đấy học Y.
+
+87
+00:07:46,511 --> 00:07:49,231
+Mà ra chắc được vài chục triệu một tháng là cùng chứ mấy.
+
+88
+00:07:50,551 --> 00:07:56,531
+Mà bây giờ đang có một công việc, có khả năng tạo ra hàng trăm triệu một tháng, ông cứ sốt ruột chứ nhỉ.
+
+89
+00:07:56,531 --> 00:08:04,651
+Xác định luôn đi là bây giờ coi như 1 năm đi, thằng YouTube nó cho mình 1 năm để mình được bật kiếm tiền. Thì 1 năm mình bật kiếm tiền vẫn là thành công mà.
+
+90
+00:08:07,011 --> 00:08:13,931
+Và khi mà các bạn đã biết cách làm thì nó không chỉ dừng lại 1 đâu. Chẳng có ông nào ở đây mà biết cách làm 1 xong rồi dừng lại 1 kìa.
+
+91
+00:08:16,391 --> 00:08:23,631
+Trừ khi anh em chọn theo cái dạng là nhân hiệu, tức là bản thân bạn làm chính là một cái kênh đấy thì nhân lên nó khó.
+
+92
+00:08:23,631 --> 00:08:28,011
+Nhưng vẫn có cách nhân mà, nhìn Hoàng Mạnh Cường, Topmax, bạn ấy nhân vãi đái không?
+
+93
+00:08:30,900 --> 00:08:37,600
+Chẳng ông nào dừng lại một kênh hết, làm là sẽ làm được nhiều kênh. Và mình có thể nhân được số lượng lên mà.
+
+94
+00:08:40,200 --> 00:08:43,240
+Nhấn mạnh, nhấn mạnh là số lượng, số lượng.
+
+95
+00:08:44,920 --> 00:08:53,680
+Thế sau đấy thì chúng ta thấy rằng là cái lựa chọn là anh em đã lựa chọn là vô hạn, nhân vô hạn, nhân vô hạn bằng vô hạn rồi.
+
+96
+00:08:54,120 --> 00:08:55,040
+Tự tin mà làm.
+
+97
+00:08:56,880 --> 00:09:00,740
+Thì đấy là những cái key mà buổi sáng nay muốn chia sẻ với anh em.
+
+98
+00:09:01,000 --> 00:09:14,700
+Có thêm một cái thứ nữa, ngay từ ban đầu, đó là Faceless. Cái từ khóa ra tiền cho anh em ấy. Chiều nay sẽ nói sâu hơn về Faceless, để anh em thấy được nó ra tiền như thế nào.
+
+99
+00:09:14,700 --> 00:09:22,960
+Kênh YouTube làm đơn giản lắm nó ra, tức là cái vòng đời kênh nó ra hàng tỷ đồng, 2 tỷ đồng, 3 tỷ đồng.
+
+100
+00:09:24,020 --> 00:09:25,500
+Có những kênh YouTube lên đến 10 tỷ.
+
+101
+00:09:27,000 --> 00:09:28,760
+Một kênh không xuất hiện mặt.
+
+102
+00:09:29,940 --> 00:09:31,980
+Em bảo làm bình thường làm cái gì ra được 10 tỷ.
+
+103
+00:09:35,980 --> 00:09:36,900
+Sẽ chia sẻ hết.
+
+104
+00:09:37,840 --> 00:09:39,580
+Khóa 3 này là cái khóa rất là đặc biệt.
+
+105
+00:09:39,580 --> 00:09:41,580
+Đặc biệt
+
+106
+00:09:41,580 --> 00:09:45,580
+Bởi vì rất lâu nữa chúng ta mới có một khóa nữa
+
+107
+00:09:45,580 --> 00:09:47,580
+Thôi cũng làm cái khóa này
+
+108
+00:09:47,580 --> 00:09:49,580
+Là sâu
+
+109
+00:09:49,580 --> 00:09:53,580
+Và sau sẽ có thêm những cái phần hỗ trợ thêm cho anh em
+
+110
+00:09:53,580 --> 00:09:55,580
+Ví dụ
+
+111
+00:09:55,580 --> 00:09:57,580
+Gợi mở đây nhá
+
+112
+00:09:57,580 --> 00:09:59,580
+Ví dụ
+
+113
+00:09:59,580 --> 00:10:03,620
+Làm Faceless, sau anh em sẽ cần phải phân tích cái video này nó làm như thế nào?
+
+114
+00:10:04,080 --> 00:10:05,860
+Cách làm ra một cái video này như thế nào?
+
+115
+00:10:06,000 --> 00:10:19,296
+Thì bên GODA cũng sẽ hỗ trợ anh em. Anh em chỉ cần nhắn một cái kênh hình mẫu. Anh em muốn làm một kênh như thế này, thì dùng những công cụ nào, làm cái gì, là sẽ hỗ trợ anh em luôn.
+
+116
+00:10:20,796 --> 00:10:27,906
+Nếu cái nào khó, yên tâm, bên mình có super hero về cái mảng này rồi, không xạo đâu. Là phân tích được hết, là làm cái này như
+
+117
+00:10:27,906 --> 00:10:35,016
+thế nào, bằng cái phần mềm gì, rồi mình làm một video tương tự như thế nào, hoặc là có thể chất lượng tốt hơn thì như thế nào.
+
+118
+00:10:35,016 --> 00:10:38,736
+Thì sao sẽ hỗ trợ luôn cả anh em những cái phần đấy. Anh em chỉ cần đặt câu hỏi thôi.
+
+119
+00:10:41,956 --> 00:10:46,336
+Và Faceless là một từ khóa cần đào sâu từ nay về sau.
+
+120
+00:10:48,000 --> 00:10:56,356
+Bao gồm cả Facebook, YouTube, Website, đặc biệt nữa là X.
+
+121
+00:10:57,476 --> 00:10:59,196
+X là nền tảng Twitter ngày xưa.
+
+122
+00:11:01,716 --> 00:11:02,100
+X.
+
+123
+00:11:02,100 --> 00:11:03,720
+Follow cái từ khóa đấy.
+
+124
+00:11:05,040 --> 00:11:07,020
+Rất nhiều người chia sẻ về Faceless.
+
+125
+00:11:07,360 --> 00:11:09,940
+Rất nhiều người chia sẻ cả số tiền họ kiếm được luôn.
+
+126
+00:11:10,740 --> 00:11:11,500
+Rất nhiều người...
+
+127
+00:11:11,500 --> 00:11:14,900
+Anh em ở đây ai đã nhìn thấy cái ảnh RPM 50 anh em giơ tay.
+
+128
+00:11:16,180 --> 00:11:16,900
+RPM 50.
+
+129
+00:11:18,260 --> 00:11:18,980
+Chia sẻ trong nhóm á.
+
+130
+00:11:19,180 --> 00:11:20,720
+Trong nhóm, trong nhóm Zalo của mình á.
+
+131
+00:11:22,100 --> 00:11:23,080
+Đấy anh gửi cho xem nhá.
+
+132
+00:11:23,700 --> 00:11:24,460
+RPM 50.
+
+133
+00:11:25,280 --> 00:11:26,100
+Cần gì nhiều view đâu.
+
+134
+00:11:26,320 --> 00:11:26,980
+Triệu view là đủ.
+
+135
+00:11:30,620 --> 00:11:31,980
+Nhưng mà...
+
+136
+00:11:31,980 --> 00:11:45,380
+Ở đây thì nhiều anh em làm được cái dạng RPM và 20, 30, 40 rồi ở trong hội trường. Bên mình cũng đang làm khoảng 20, 18 đến 20. Bây giờ, cuối năm này chắc lên khoảng 30.
+
+137
+00:11:45,380 --> 00:11:46,140
+30
+
+138
+00:11:47,680 --> 00:11:49,220
+Thì đấy là cái
+
+139
+00:11:49,740 --> 00:11:52,300
+Những cái từ khóa nốt lại cho anh em trong buổi sáng này
+
+140
+00:11:53,320 --> 00:11:54,080
+Thì
+
+141
+00:11:54,340 --> 00:11:55,880
+Đến bây giờ là 10 giờ
+
+142
+00:11:56,640 --> 00:11:58,440
+Chúng ta sẽ có 30 phút
+
+143
+00:11:58,700 --> 00:11:59,460
+Để time break
+
+144
+00:12:01,000 --> 00:12:01,500
+Nghiên cứu
+
+145
+00:12:02,020 --> 00:12:02,540
+Và
+
+146
+00:12:02,780 --> 00:12:03,560
+Trao đổi với nhau
+
+147
+00:12:04,060 --> 00:12:05,340
+Cộng với lại networking
+
+148
+00:12:05,340 --> 00:12:08,200
+Gọi là networking mình không thích cái từ này lắm
+
+149
+00:12:08,200 --> 00:12:10,020
+Anh em trao đổi kết nối với nhau
+
+150
+00:12:10,020 --> 00:12:10,980
+Tìm hiểu đi
+
+151
+00:12:10,980 --> 00:12:12,700
+Ở đây có những anh em đã có kinh nghiệm làm
+
+152
+00:12:12,700 --> 00:12:13,560
+Nút kim cương đấy
+
+153
+00:12:13,560 --> 00:12:14,420
+Anh em tìm hiểu đi
+
+154
+00:12:14,420 --> 00:12:16,100
+Anh em nút vàng nút bạc
+
+155
+00:12:16,100 --> 00:12:17,272
+Mình nhìn trong hội trường đầy luôn
+
+156
+00:12:17,272 --> 00:12:25,579
+YouTube tôi tôi đang xét khóa 3 này chắc có khoảng hơn 100 triệu sub ở đây. Hơn 100 triệu sub trên YouTube
+
+157
+00:12:25,579 --> 00:12:33,885
+ở đây. Và đa số anh em làm gì có biết mặt của chủ kênh đâu. Tức là chúng ta ở đây đều
+
+158
+00:12:33,885 --> 00:12:42,192
+là Faceless và xu hướng Faceless. Nên mình mới chọn cái từ khóa Faceless để làm từ khóa key chính cho khóa 3.
+
+159
+00:12:42,192 --> 00:12:51,092
+Và nhắc thêm một lần nữa là anh em có 30 phút để time break ở dưới cuối hội trường.
+
+160
+00:12:51,432 --> 00:13:00,412
+Nhà vệ sinh thì có ở bên góc cuối và ở góc cuối đi ra đi sang bên phải đi xuống cuối cùng cũng có thêm cái nhà vệ sinh khác nữa nhé.
+
+161
+00:13:00,412 --> 00:13:03,192
+Để tránh tắc nhà vệ sinh. Chúng ta có 2 khu nhà vệ sinh.
+
+162
+00:13:04,392 --> 00:13:08,452
+Rồi ok, cho chúng ta một tràng pháo tay và đến phần kết nối.
+

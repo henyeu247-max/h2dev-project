@@ -1,0 +1,76 @@
+{
+  "sku": "VIDEO-9ef6fe",
+  "title": "NGÁCH THỊ TRƯỜNG US (HOA KỲ) CỰC TRENDS - CẠNH TRANH THẤP",
+  "actual_topic": "Phân tích ngách thị trường US từ khóa Gián điệp Liên Xô (video 30-40 phút) & Kỹ thuật dịch từ khóa nhân bản thị trường",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Bán Content & Phát Triển Kênh",
+  "niche_id": "faceless-general",
+  "target_market": "Hoa Kỳ (US) / Quốc tế (Global)",
+  "market_code": "US,GLOBAL",
+  "key_takeaways": [
+    "Ngách thị trường Hoa Kỳ (US): kênh đối thủ mới có 21 video, vừa lập ngày 17 tháng 10 nhưng view và thời lượng xem rất cao; video trung bình 30-40 phút, có video hơn 40 phút.",
+    "Từ khoá ngách là \"gián điệp Liên Xô\": dịch sang tiếng Anh rồi tìm trên YouTube để ra thêm các kênh đối thủ khác.",
+    "Một kênh đối thủ khác cùng dạng, ít video và lập ngày 15/11/2020, cũng có view cao.",
+    "Thumbnail của kênh thứ hai làm sơ sài, kém hấp dẫn hơn kênh đầu nên tỷ lệ click và view thấp hơn; cần làm thumbnail đẹp, thu hút.",
+    "Cách nhân bản thị trường: lấy từ khoá ngách dịch sang tiếng Anh hoặc thị trường khác (Hàn, Nhật...) rồi tìm xem ngách đó có hot ở đó không; phải tự tìm và lọc mới biết."
+  ],
+  "edit_sop": {
+    "primary": "Tìm ngách thị trường US từ khóa gián điệp Liên Xô và nhân bản thị trường",
+    "additional": [
+      "Mở phân tích kênh đối thủ: kênh mới lập, view cao, video trung bình 30-40 phút",
+      "Dịch từ khóa ngách (gián điệp Liên Xô) sang tiếng Anh rồi search trên YouTube để ra thêm kênh đối thủ",
+      "So sánh thumbnail giữa các kênh, thumbnail làm sơ sài thì view thấp",
+      "Thử thêm từ khóa ở các thị trường khác như Hàn Quốc, Nhật Bản để xem ngách có hot không"
+    ]
+  },
+  "avoid_flags": [
+    "Thumbnail làm sơ sài, không thu hút thì người xem không click và view thấp",
+    "Tránh chỉ làm rập khuôn ở một thị trường duy nhất mà nên dịch từ khóa ngách sang các ngôn ngữ khác để kiểm tra và nhân bản sang thị trường ít cạnh tranh"
+  ],
+  "tools_mentioned": [
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@thecoldwartales"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu kênh ngách mới tại thị trường Hoa Kỳ lập ngày 17/10, video dài 30-40 phút"
+    },
+    {
+      "time": "00:53",
+      "seconds": 53,
+      "label": "Giải mã từ khóa ngách gián điệp Liên Xô và cách dịch sang tiếng Anh tìm đối thủ"
+    },
+    {
+      "time": "01:25",
+      "seconds": 85,
+      "label": "Phân tích kênh đối thủ thứ hai mới lập ngày 15/11 đã lên hơn 700 sub"
+    },
+    {
+      "time": "01:59",
+      "seconds": 119,
+      "label": "So sánh chất lượng Thumbnail giữa hai kênh: Tránh làm sơ sài gây tụt tỷ lệ click"
+    },
+    {
+      "time": "02:37",
+      "seconds": 157,
+      "label": "Phương pháp dịch từ khóa ngách để nhân bản sang thị trường Hàn Quốc, Nhật Bản"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-9ef6fe/transcript.txt",
+  "sop_steps": [
+    "Mở phân tích kênh đối thủ: kênh mới lập, view cao, video trung bình 30-40 phút",
+    "Dịch từ khóa ngách (gián điệp Liên Xô) sang tiếng Anh rồi search trên YouTube để ra thêm kênh đối thủ",
+    "So sánh thumbnail giữa các kênh, thumbnail làm sơ sài thì view thấp",
+    "Thử thêm từ khóa ở các thị trường khác như Hàn Quốc, Nhật Bản để xem ngách có hot không"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

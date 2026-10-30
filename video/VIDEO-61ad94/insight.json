@@ -1,0 +1,94 @@
+{
+  "sku": "VIDEO-61ad94",
+  "title": "Update ngách bán content Nhật, Hàn..",
+  "actual_topic": "Cập nhật 3 kênh Hàn Quốc ngách drama gia đình & tài chính người cao tuổi: cảnh báo lỗi ghép full ảnh AI và cách lồng cảnh quay hồ cá/bàn phím để né quét",
+  "category_group": "ban_content",
+  "niche_primary": "Drama Gia Đình & Đời Sống Nhật - Hàn",
+  "niche_id": "family-drama-jp-kr",
+  "target_market": "Nhật Bản / Hàn Quốc",
+  "market_code": "JP,KR",
+  "key_takeaways": [
+    "Kênh Hàn Quốc thứ nhất làm ngách drama gia đình lập cuối tháng 7: thời gian đầu view lẹt đẹt nên chủ kênh tạm nghỉ, nhưng 4 ngày gần đây quay lại đăng thì view bật tăng mạnh và đã bật kiếm tiền.",
+    "Điểm mấu chốt giúp kênh sống khỏe là không ghép full ảnh AI tĩnh: chủ kênh tự quay các cảnh thực tế như hồ cá, gõ bàn phím rồi lồng ảnh nhỏ ở góc để tránh bị YouTube quét lỗi nội dung không trung thực.",
+    "Tư duy nhân bản hai chiều Nhật ↔ Hàn: lấy kịch bản drama gia đình từ kênh Nhật đem sang Hàn Quốc xào nấu lại bằng quy trình Claude AI (hoặc ngược lại) vì cả hai nước đều có tỷ lệ dân số già cao.",
+    "Kênh Hàn Quốc thứ hai (hơn 9k sub, làm drama tiền bạc) vẫn ghép full ảnh AI nhưng rủi ro bị quét về sau rất lớn; kênh thứ ba đi sâu vào ngách nhỏ tài chính/tiền bạc gắn với hình ảnh nhân vật nổi tiếng Hàn Quốc."
+  ],
+  "edit_sop": {
+    "primary": "Chia sẻ ngách drama, tiền bạc cho người già thị trường Hàn, Nhật và cách edit ghép video tự nhiên để tránh bị quét",
+    "additional": [
+      "Lấy kênh Nhật dịch sang Hàn để nhân bản thị trường, hoặc ngược lại",
+      "Xem video của kênh đối thủ thì YouTube đề xuất thêm các kênh đối thủ khác để lái theo",
+      "Edit bằng cách ghép video tự nhiên, hoặc quay video bàn phím rồi ghép vào",
+      "Nhờ học sinh, sinh viên quay video content rồi gửi lại, hoặc mua tranh vẽ để quay",
+      "Ngách story, triết lý, sức khỏe thì ghép kịch bản và giọng đọc vào, giọng dùng ElevenLabs và clone giọng người nổi tiếng"
+    ]
+  },
+  "avoid_flags": [
+    "Tránh làm video ghép 100% hình ảnh AI tĩnh từ đầu đến cuối vì rất dễ bị YouTube quét tắt kiếm tiền hoặc gắn lỗi nội dung không trung thực sau một thời gian.",
+    "Tránh bỏ cuộc quá sớm khi mới đăng vài video đầu chưa nổ view; cần giữ lịch đăng đều và kết hợp cảnh quay thực tế (hồ cá, bàn phím hoặc thuê quay)."
+  ],
+  "tools_mentioned": [
+    "Claude",
+    "ElevenLabs"
+  ],
+  "channels_mentioned": [
+    "@feelrelaxedtv",
+    "@JaebeolNunmul16",
+    "@시어머니와며느리",
+    "@마음을안아주는이야",
+    "@新しい私の毎日",
+    "@부를부르는말씀",
+    "@시니어살림노트",
+    "@노을빛사연-l2m"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu kênh Hàn Quốc mới lập cuối tháng 7 làm ngách drama gia đình"
+    },
+    {
+      "time": "01:05",
+      "seconds": 65,
+      "label": "Cảnh báo rủi ro bị quét lỗi không trung thực khi ghép full ảnh AI"
+    },
+    {
+      "time": "01:47",
+      "seconds": 107,
+      "label": "Kỹ thuật tự quay video hồ cá và bàn phím ghép vào để lách quét AI"
+    },
+    {
+      "time": "02:53",
+      "seconds": 173,
+      "label": "Cách nhân bản chéo kịch bản drama gia đình giữa hai thị trường Nhật và Hàn"
+    },
+    {
+      "time": "04:14",
+      "seconds": 254,
+      "label": "Phân tích kênh Hàn thứ hai (9k sub) làm chủ đề drama tiền bạc người già"
+    },
+    {
+      "time": "07:04",
+      "seconds": 424,
+      "label": "Kênh Hàn thứ ba đi ngách nhỏ tài chính gắn với nhân vật nổi tiếng"
+    },
+    {
+      "time": "09:15",
+      "seconds": 555,
+      "label": "Kinh nghiệm thuê quay video thực tế và clone giọng trên ElevenLabs"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-61ad94/transcript.txt",
+  "sop_steps": [
+    "Lấy kênh Nhật dịch sang Hàn để nhân bản thị trường, hoặc ngược lại",
+    "Xem video của kênh đối thủ thì YouTube đề xuất thêm các kênh đối thủ khác để lái theo",
+    "Edit bằng cách ghép video tự nhiên, hoặc quay video bàn phím rồi ghép vào",
+    "Nhờ học sinh, sinh viên quay video content rồi gửi lại, hoặc mua tranh vẽ để quay",
+    "Ngách story, triết lý, sức khỏe thì ghép kịch bản và giọng đọc vào, giọng dùng ElevenLabs và clone giọng người nổi tiếng"
+  ]
+}

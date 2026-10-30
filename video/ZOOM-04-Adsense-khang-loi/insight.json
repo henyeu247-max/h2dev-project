@@ -1,0 +1,89 @@
+{
+  "sku": "ZOOM-04-Adsense-khang-loi",
+  "title": "Zoom 04 — Google AdSense & Kháng lỗi: Bảo vệ kênh",
+  "actual_topic": "Bảo Vệ Hạ Tầng Dòng Tiền: Chu Kỳ Thanh Toán Google AdSense (\"Gà\"), Kỹ Thuật Nối Gà An Toàn, Quy Chuẩn Đóng Thuế & Chiến Lược Kháng Lỗi YouTube YPP",
+  "category_group": "chien_luoc",
+  "niche_primary": "Quản Trị Google AdSense & Kháng Nghị YPP",
+  "niche_id": "adsense-revenue-defense",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Cơ chế thanh toán của Google AdSense (gà): doanh thu YouTube tổng kết vào ngày 10 hàng tháng và chuyển về tài khoản ngân hàng Việt Nam (Vietinbank, Techcombank, Vietcombank...) vào khoảng ngày 22–23 hàng tháng với phí rất thấp.",
+    "Thời điểm tạo và nối AdSense: đa số người làm đợi kênh đủ điều kiện bật kiếm tiền rồi mới tạo/nối ở Bước 2 trong YouTube Studio; khi nối nên dùng tab ẩn danh hoặc mạng 4G để tránh liên đới IP.",
+    "Quản lý rủi ro tài khoản AdSense: mỗi căn cước công dân chuẩn chỉ lập 1 AdSense chính chủ; không nên gom quá nhiều kênh lớn vào chung một gà mua ngoài mà nên tách riêng khi kênh đã có doanh thu tốt.",
+    "Triết lý làm YouTube bền vững: tuân thủ nguyên tắc Đúng – Đủ – Đều (đăng cố định khung giờ, đúng tuyến nội dung cho một tệp khán giả) và tỉnh táo trước các khóa học đắt tiền."
+  ],
+  "edit_sop": {
+    "primary": "Zoom về Google AdSense (gà), thanh toán, thuế, kháng lỗi và kỷ luật đăng video đúng đủ đều",
+    "additional": [
+      "AdSense chuyển tiền vào ngày mùng 10 hàng tháng, khoảng ngày 22 23 tiền mới về tài khoản ngân hàng thì mới an toàn, trước đó chỉ là tiền trên màn hình",
+      "Khi nối gà vào kênh nên bật tab ẩn danh hoặc đổi sang 4G để bước 2 chuyển từ chữ bắt đầu sang đang xử lý",
+      "Thông tin đăng ký gà (tên, giới tính, ngày sinh) phải đúng với căn cước và đồng nhất với thẻ ngân hàng thì tỷ lệ duyệt cao hơn",
+      "Tác giả thường nối khoảng 3 kênh chung một gà, kênh doanh thu cao thì một kênh một gà để kênh khác bị lỗi không liên quan",
+      "Rút tiền về Techcombank, Vietcombank, Vietinbank, phí khoảng 50.000 đến 80.000"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng đi mua khóa học mấy chục đến hàng trăm triệu, tác giả chưa từng bỏ tiền học khóa nào, toàn kinh nghiệm thực chiến",
+    "Đừng đăng dồn khi sản xuất được nhiều video, phải kìm cảm xúc, đăng đúng tuyến nội dung, đủ số video mỗi ngày và đều, cùng một khung giờ",
+    "Đừng đặt kỳ vọng kiếm tiền vội, YouTube là hành trình dài",
+    "Đang có công việc thì không được bỏ việc để làm YouTube"
+  ],
+  "tools_mentioned": [
+    "Google AdSense",
+    "Gemini Ultra",
+    "Telegram",
+    "Zalo",
+    "Zoom"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Chu trình dòng tiền từ YouTube về Google AdSense (Gà) và ngân hàng nội địa"
+    },
+    {
+      "time": "01:45",
+      "seconds": 105,
+      "label": "Kỹ thuật nối AdSense vào kênh ở Bước 2 bằng tab ẩn danh hoặc mạng 4G"
+    },
+    {
+      "time": "04:02",
+      "seconds": 242,
+      "label": "Giải thích cách khấu trừ thuế nước ngoài và thuế tại Việt Nam"
+    },
+    {
+      "time": "05:45",
+      "seconds": 345,
+      "label": "So sánh việc tạo AdSense trước hay đợi khi kênh đủ điều kiện bật kiếm tiền"
+    },
+    {
+      "time": "09:01",
+      "seconds": 541,
+      "label": "Chiến lược tách mỗi kênh lớn ra một tài khoản AdSense riêng để bảo toàn tiền"
+    },
+    {
+      "time": "14:09",
+      "seconds": 849,
+      "label": "Phân tích các lỗi quét sử dụng lại nội dung và nội dung lặp lại trên kênh AI"
+    },
+    {
+      "time": "26:44",
+      "seconds": 1604,
+      "label": "Nguyên tắc Đúng – Đủ – Đều và lời khuyên thực tế khi đầu tư làm YouTube"
+    }
+  ],
+  "analysis_method": "expert_grounded_audit",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/ZOOM-04-Adsense-khang-loi/transcript.txt",
+  "sop_steps": [
+    "AdSense chuyển tiền vào ngày mùng 10 hàng tháng, khoảng ngày 22 23 tiền mới về tài khoản ngân hàng thì mới an toàn, trước đó chỉ là tiền trên màn hình",
+    "Khi nối gà vào kênh nên bật tab ẩn danh hoặc đổi sang 4G để bước 2 chuyển từ chữ bắt đầu sang đang xử lý",
+    "Thông tin đăng ký gà (tên, giới tính, ngày sinh) phải đúng với căn cước và đồng nhất với thẻ ngân hàng thì tỷ lệ duyệt cao hơn",
+    "Tác giả thường nối khoảng 3 kênh chung một gà, kênh doanh thu cao thì một kênh một gà để kênh khác bị lỗi không liên quan",
+    "Rút tiền về Techcombank, Vietcombank, Vietinbank, phí khoảng 50.000 đến 80.000"
+  ]
+}

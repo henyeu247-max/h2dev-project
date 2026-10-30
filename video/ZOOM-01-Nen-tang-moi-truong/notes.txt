@@ -1,0 +1,60 @@
+Kinh nghiệm và bối cảnh
+
+Người chia sẻ có 7 năm làm YouTube, từng kiếm 200-500 triệu/tháng nhưng cũng từng mất hết. Thời kỳ hoàng kim của view Việt đã qua, hiện tại YouTube quét gắt gao, đặc biệt với nội dung AI. Tuy nhiên, cần thích nghi và cập nhật xu hướng mới. Buổi Zoom này dành cho người mới, đi từ những bước cơ bản nhất như proxy, Gmail, chọn ngách, sản xuất video. Tool chỉ là công cụ, kiến thức YouTube mới là sức mạnh. Mục tiêu: xây dựng hệ thống kênh bền vững, tránh lỗi và tối ưu thời gian.
+
+Tổng quan thị trường YouTube và các lỗi thường gặp
+
+Thị trường YouTube hiện rất loạn do AI xuất hiện. Các lỗi phổ biến: không trung thực (nay đổi thành "không thỏa mãn và gây khó chịu"), sử dụng nội dung, mánh khóe, lừa đảo, spam, câu kéo tuổi vị thành niên. Tỷ lệ kháng lỗi thành công chỉ 20-30%. Nhiều công ty phá sản, cắt giảm nhân sự. Người chia sẻ cũng từng mắc nhiều lỗi và có kinh nghiệm kháng lỗi. Chiến lược hiện tại: làm video AI, nhân bản nhiều kênh, nhưng phải chấp nhận tỷ lệ bị quét. Quan trọng là chuẩn bị thiết bị sạch, địa chỉ sạch, email sạch, thông tin sạch.
+
+Chiến lược làm nội dung AI và nhân bản kênh
+
+Chọn AI vì dễ làm, không cần lộ mặt, dễ nhân bản. Tuy nhiên phải spam (không reup) và tuân thủ quy trình. Khó nhất là làm ra kênh đầu tiên, sau đó nhân bản rất nhanh. Có thể nhân bản sang quốc gia khác nếu key phù hợp. Chiến lược: tìm đối thủ mạnh ở quốc gia khác, không đánh trực tiếp mà lách sang quốc gia khác để giảm cạnh tranh. Ví dụ: key khảo cổ học của Mỹ có thể làm cho Hàn Quốc. Cần xác định tư tưởng: làm AI phải chấp nhận spam, không reup. Tập trung vào view ngoại để RPM cao, có thể đổi giọng đọc sang tiếng Việt để dễ kiểm tra.
+
+Proxy: Tại sao cần dùng và cách chọn
+
+Proxy giúp fake địa chỉ IP sang quốc gia khác, tách kênh khỏi hệ thống mạng nhà bạn, tránh blacklist IP, giảm tình trạng không view và lỗi kênh liên quan. Người chia sẻ từng kỳ thị proxy nhưng sau khi bị dính lỗi đã thay đổi quan điểm. Khuyến nghị dùng proxy nếu làm nhiều kênh (trên 2-3 kênh). Các loại proxy: GPM, MKT, hoặc bất kỳ. Nên dùng trình duyệt riêng như MKT thay vì VPN/extension. Mua proxy tại MKT: nạp tiền, chọn Datacenter 2, quốc gia Singapore hoặc Mỹ. IPv4 giá 64k/tháng, IPv6 giá 6k/tháng (chỉ dành cho Facebook/Gmail, không khuyến nghị cho YouTube nhưng vẫn hoạt động). Tốc độ tải lên chấp nhận được. Hướng dẫn: tải MKT, mua proxy, gắn vào trình duyệt, mở Chrome riêng để lập kênh. Có thể mở nhiều tab để tải video cùng lúc.
+
+Quản lý Gmail: Chọn, bảo mật và độ trust
+
+Ưu tiên Gmail của người thân, có độ trust cao, dễ lên kênh. Nếu không có, có thể tạo mới hoặc mua. Khi mua Gmail, không đổi mật khẩu ngay, chỉ thêm số điện thoại, email khôi phục, sau 7 ngày mới đổi. Bảo mật: bật xác minh 2 bước, dùng Google Authenticator để lấy mã 2FA. Không dùng một email khôi phục cho tất cả các mail để tránh lỗi liên quan. Gmail mới nên để nghỉ 1-2 ngày, tương tác như người dùng thực (search Google, xem YouTube, check Maps, đăng ký dịch vụ) trước khi lập kênh. Mua Gmail: giá khoảng 60k-200k, nên mua 1-2 cái kiểm tra chất lượng trước. Số lượng kênh trên một Gmail: 3-4 kênh, nhưng nếu có kênh lên thì tách ra để độc lập. Hiện tại người chia sẻ dùng 1 Gmail cho 1 kênh.
+
+Quy trình tạo kênh và ngâm kênh
+
+Quy trình: chuẩn bị proxy và Gmail -> lập kênh -> ngâm 2-3 ngày (follow, xem video vài kênh để thành người dùng thực) -> sản xuất video -> đăng. Không cần tương tác comment nhiều như các bài cũ. Tối ưu thời gian: trong lúc ngâm kênh thì sản xuất video. Khi kênh đủ điều kiện bật kiếm tiền, có thể setup Google AdSense. Không cần bật kiếm tiền trước. Chính sách YouTube thay đổi (4000 giờ lên 8000 giờ) không ảnh hưởng nhiều với video dài.
+
+Hỏi đáp và lưu ý
+
+
+
+
+
+Nhân bản kênh sang quốc gia khác: có thể, nếu key phù hợp và quốc gia đó quan tâm. Nên thử 1-2 kênh cùng quốc gia và 2-3 kênh khác quốc gia.
+
+
+
+Bảo mật Gmail không kỹ: có thể mất tiền, mất kênh, không kháng được lỗi.
+
+
+
+Gmail mới: sau khi tạo, setup thông tin, nghỉ 1-2 ngày, tương tác như người dùng thực rồi mới lập kênh.
+
+
+
+Mua Gmail: nên mua 1-2 cái kiểm tra chất lượng trước khi mua số lượng lớn.
+
+
+
+Sử dụng một mail khôi phục cho tất cả các mail: không nên, dễ dính lỗi liên quan.
+
+
+
+Số kênh trên một Gmail: 3-4 kênh, nhưng nếu có kênh lên thì tách ra.
+
+
+
+Không dùng IPv6 cho YouTube nếu có điều kiện, nên dùng IPv4.
+
+
+
+Tốc độ tải video qua proxy chấp nhận được, có thể mở nhiều tab để tải cùng lúc.
+

@@ -1,0 +1,81 @@
+{
+  "sku": "VIDEO-546afa",
+  "title": "CHỈ MỚI 5 VIDEO KIẾM HƠN 600k VIEW VÀ 3k SUB VỚI NGÁCH NHỎ THỊ TRƯỜNG NHẬT VÀ SHARE THÊM 1 NGÁCH NHỎ Ở THỊ TRƯỜNG VIỆT",
+  "actual_topic": "CHỈ MỚI 5 VIDEO KIẾM HƠN 600k VIEW VÀ 3k SUB VỚI NGÁCH NHỎ THỊ TRƯỜNG NHẬT VÀ SHARE THÊM 1 NGÁCH NHỎ Ở THỊ TRƯỜNG VIỆT",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Sức Khỏe & Dinh Dưỡng",
+  "niche_id": "faceless-general",
+  "target_market": "Nhật Bản / Việt Nam",
+  "market_code": "JP,VN",
+  "key_takeaways": [
+    "Share 2 ngách nhỏ: kênh sức khỏe thị trường Nhật chỉ mới 5 video, lập năm 2026 bằng mail mới, chỉ số VPH rất cao; tiêu đề thuộc ngách nhỏ trong sức khỏe, người cao tuổi và các vấn đề trong cuộc sống (đạt hơn 600k view, 3k sub theo tiêu đề video).",
+    "Sức khỏe ở thị trường Nhật không bao giờ hết view vì có rất nhiều ngách nhỏ khác nhau; VPH cao nghĩa là nên bám theo vì khó bị không view (cách xem VPH đã nói ở video mẹo không view).",
+    "Quan trọng nhất là kịch bản: không giật tít, câu view sai sự thật vì bot AI của YouTube quét tự động và đôi khi quét nhầm cả kênh làm chuẩn; quét toàn cầu nên hên xui.",
+    "Ngách thứ hai là view Việt về triết lý, cổ nhân trí tuệ: kênh mới khoảng 30 video, kịch bản khá hiếm vì phải chọn lọc nên ra video ít; cách làm là lồng ghép video tự nhiên từ nguồn miễn phí với hình AI và hiệu ứng.",
+    "Dạng này người xem cần kịch bản hay và giọng đọc hay hơn là hình ảnh; dùng giọng AI, có thể clone giọng theo kênh đối thủ hoặc các kênh bóng đá, chính trị, quân sự đang dùng AI tốt."
+  ],
+  "edit_sop": {
+    "primary": "Phân tích 2 ngách nhỏ: sức khỏe thị trường Nhật (kênh mới 5 video) và triết lý cổ nhân thị trường Việt",
+    "additional": [
+      "Nhìn chỉ số view và VPH của kênh, VPH cao thì chủ đề có nhu cầu lớn nên bám theo",
+      "Dịch tiêu đề video ra để hiểu ngách nhỏ trong mảng sức khỏe và người cao tuổi",
+      "Kênh Việt ghép video tự nhiên từ nguồn free như Pexels/Pixabay với hình ảnh AI cho sinh động, thêm hiệu ứng",
+      "Dạng này người xem cần kịch bản và giọng đọc hay hơn là hình ảnh, giọng đọc dùng clone",
+      "Tham khảo đường link hai kênh mẫu được đặt ở phần mô tả dưới video"
+    ]
+  },
+  "avoid_flags": [
+    "Kịch bản đừng giật tít, câu view, nói không đúng sự thật vì dễ bị bot AI quét",
+    "Bot AI quét toàn cầu nên có khi quét nhầm cả kênh làm chỉn chu"
+  ],
+  "tools_mentioned": [
+    "Pixabay",
+    "YouTube",
+    "Minimax"
+  ],
+  "channels_mentioned": [
+    "@漫画で学ぶシニアの健康CH-n8i",
+    "@tritueconhanradio"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "01:28",
+      "seconds": 88,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "02:13",
+      "seconds": 133,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "03:01",
+      "seconds": 181,
+      "label": "Phương pháp tìm kiếm từ khóa và đào sâu vào các ngách nhỏ"
+    },
+    {
+      "time": "04:02",
+      "seconds": 242,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-546afa/transcript.txt",
+  "sop_steps": [
+    "Nhìn chỉ số view và VPH của kênh, VPH cao thì chủ đề có nhu cầu lớn nên bám theo",
+    "Dịch tiêu đề video ra để hiểu ngách nhỏ trong mảng sức khỏe và người cao tuổi",
+    "Kênh Việt ghép video tự nhiên từ nguồn free như Pexels/Pixabay với hình ảnh AI cho sinh động, thêm hiệu ứng",
+    "Dạng này người xem cần kịch bản và giọng đọc hay hơn là hình ảnh, giọng đọc dùng clone",
+    "Tham khảo đường link hai kênh mẫu được đặt ở phần mô tả dưới video"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T06:30:00Z"
+}

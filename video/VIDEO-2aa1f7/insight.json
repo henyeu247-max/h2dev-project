@@ -1,0 +1,99 @@
+{
+  "sku": "VIDEO-2aa1f7",
+  "title": "SHARE NGÁCH MỚI TRIẾT LÝ THỊ TRƯỜNG US (HOA KỲ) ĐANG CỰC TRENDS VÀ HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z - UPDATE 04/11/2025",
+  "actual_topic": "Quy Trình Sản Xuất Video Triết Lý Động Lực Thị Trường US (Hoa Kỳ): Phong Cách Tranh Sơn Dầu AI, Kịch Bản 5.000 Từ & Chiến Thuật Lách Thị Trường Cạnh Tranh",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Triết Lý Sống & Đạo Làm Người",
+  "niche_id": "faceless-general",
+  "target_market": "Hoa Kỳ (US) / Quốc tế (Global)",
+  "market_code": "US,GLOBAL",
+  "key_takeaways": [
+    "Bộ 6 tài liệu độc quyền từ A-Z về ngách Triết lý sống cho người cao tuổi thị trường Hoa Kỳ (US) - một trong những ngách có lợi nhuận cao nhất hệ thống.",
+    "Cấu trúc kịch bản 4 Hồi hoàn chỉnh: Khủng hoảng tuổi già -> Chiêm nghiệm nhân sinh -> Bài học đối nhân xử thế -> Lời khuyên bình yên.",
+    "Bản Prompt Master Midjourney/Whisk độc quyền giúp tạo đồng bộ hàng chục bức ảnh phong cách tranh sơn dầu cổ điển cho toàn bộ video.",
+    "Công thức đặt tiêu đề gây tò mò cho khán giả Bắc Mỹ: Đặt câu hỏi triết lý chạm vào nỗi sợ cô đơn, sự phản bội hoặc bài học về sự buông bỏ.",
+    "Học viên được cung cấp trọn gói từ kịch bản mẫu, prompt ảnh, bộ từ khóa SEO đến template thumbnail để sản xuất hàng loạt ngay."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình làm video ngách triết lý động lực sống thị trường US từ A-Z: kịch bản, giọng, ảnh sơn dầu AI, video thiên nhiên, edit",
+    "additional": [
+      "Prompt chia ba phần: chủ đề (ra 10 hoặc 20 tiêu đề), kịch bản, tạo ảnh; dán chủ đề đã chọn vào chỗ topic của prompt kịch bản",
+      "Kênh đối thủ dài 15 đến 30 phút nên đặt kịch bản 2500 đến 5000 từ, yêu cầu viết mỗi phần từ 800 từ trở lên, gõ continue để viết tiếp đến khi hết",
+      "Tạo giọng bằng ElevenLabs, nghe thử và chọn giọng hợp ngách triết lý, hoặc clone giọng đối thủ",
+      "Dán kịch bản vào prompt ảnh để ra số prompt mong muốn, tạo ảnh sơn dầu tỷ lệ 16:9 trên Dreamina bằng model cao nhất",
+      "Tìm video thiên nhiên free theo từ khóa tiếng Anh rồi edit: ghép ảnh và video, thêm hiệu ứng phim, bộ lọc, chuyển cảnh, phụ đề tự động tiếng Anh"
+    ]
+  },
+  "avoid_flags": [
+    "AI không viết được nhiều một lần, phải chia kịch bản thành từng phần",
+    "Kiểu chữ phụ đề càng đơn giản càng tốt, đừng làm màu mè vì khán giả không thích"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "ChatGPT",
+    "Notepad++",
+    "ElevenLabs",
+    "Pixabay",
+    "Google Dịch",
+    "CapCut"
+  ],
+  "channels_mentioned": [
+    "@alanwattsdailywisdom"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Show doanh thu thực tế Studio điện thoại: Kênh US & Kênh Nhật Bản"
+    },
+    {
+      "time": "02:21",
+      "seconds": 141,
+      "label": "Phân tích xu hướng (Trend) và tiềm năng ngách triết lý động lực thị trường Mỹ"
+    },
+    {
+      "time": "04:16",
+      "seconds": 256,
+      "label": "Hướng dẫn prompt 3 phần: Tạo 10-20 chủ đề và chia nhỏ kịch bản 2.500-5.000 từ"
+    },
+    {
+      "time": "07:28",
+      "seconds": 448,
+      "label": "Chọn giọng đọc ElevenLabs truyền cảm phù hợp phong cách triết lý chiêm nghiệm"
+    },
+    {
+      "time": "10:17",
+      "seconds": 617,
+      "label": "Sử dụng Dreamina AI tạo ảnh tranh sơn dầu tỷ lệ 16:9 chất lượng cao"
+    },
+    {
+      "time": "13:00",
+      "seconds": 780,
+      "label": "Tìm kiếm và tải video thiên nhiên miễn phí trên Pixabay & Vecteezy"
+    },
+    {
+      "time": "15:41",
+      "seconds": 941,
+      "label": "Kỹ thuật dựng CapCut: Hiệu ứng khung phim, bộ lọc màu và phụ đề tiếng Anh"
+    },
+    {
+      "time": "17:39",
+      "seconds": 1059,
+      "label": "Demo thành phẩm video hoàn chỉnh và lưu ý vận hành kênh"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-2aa1f7/transcript.txt",
+  "sop_steps": [
+    "Prompt chia ba phần: chủ đề (ra 10 hoặc 20 tiêu đề), kịch bản, tạo ảnh; dán chủ đề đã chọn vào chỗ topic của prompt kịch bản",
+    "Kênh đối thủ dài 15 đến 30 phút nên đặt kịch bản 2500 đến 5000 từ, yêu cầu viết mỗi phần từ 800 từ trở lên, gõ continue để viết tiếp đến khi hết",
+    "Tạo giọng bằng ElevenLabs, nghe thử và chọn giọng hợp ngách triết lý, hoặc clone giọng đối thủ",
+    "Dán kịch bản vào prompt ảnh để ra số prompt mong muốn, tạo ảnh sơn dầu tỷ lệ 16:9 trên Dreamina bằng model cao nhất",
+    "Tìm video thiên nhiên free theo từ khóa tiếng Anh rồi edit: ghép ảnh và video, thêm hiệu ứng phim, bộ lọc, chuyển cảnh, phụ đề tự động tiếng Anh"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

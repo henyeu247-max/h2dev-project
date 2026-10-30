@@ -1,0 +1,78 @@
+{
+  "sku": "VIDEO-e24c31",
+  "title": "Update ngách mới cực trends bán content view ngoại, show kênh mới hoàn toàn 5 video",
+  "actual_topic": "Khám phá Ngách Phong thủy & Luật hấp dẫn Hàn Quốc (@복이오는길) nổ view chỉ sau 5 video đầu tiên",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Phong Thủy & Thu Hút Tài Lộc Hàn Quốc",
+  "niche_id": "kr-fengshui-wealth",
+  "target_market": "Quốc tế (Global) / Hàn Quốc",
+  "market_code": "GLOBAL,KR",
+  "key_takeaways": [
+    "Tác giả show một kênh Hàn Quốc mới chỉ 5 video, nói về tâm linh may mắn với nhân vật hòa thượng đại diện, và các video gần đây đạt 18k và 14k view, có ngày đăng 2 video.",
+    "Kênh thứ hai là cùng một nhân vật, lập ngày 21 tháng 7 năm 2026, mới 14 video nhưng đã có video 85k và hơn 100k view; ID hai kênh trong mô tả là @복이오는길 và @mokamoka-e9f.",
+    "Tiêu đề bám mốc thời gian kiểu \"để giàu có vào tháng 8 năm 2026, hãy đặt một thứ gì đó\", đánh vào tâm lý may mắn, và tác giả khuyên đầu tháng 9 cứ làm tương tự; thị trường Nhật cũng chuộng và có nhiều kênh làm.",
+    "Cái quan trọng là đúng từ khóa tên nhân vật (copy tên gốc, không cần hiểu nghĩa) còn kịch bản thì lấy từ các kênh tâm linh may mắn khác rồi xào nấu; kênh này đăng cách đây 4 phút lúc 5h19 chiều ngày 3 tháng 8, nên nên đăng sau 30 phút đến 1 tiếng.",
+    "Cách edit đơn giản: tìm ảnh nhân vật trên Google bằng từ khóa tên, xóa nền, ghép video tự nhiên với nhau và chạy phụ đề; lưu ý hai kênh đối thủ chưa tích chọn là có dùng AI và mô tả chưa tối ưu."
+  ],
+  "edit_sop": {
+    "primary": "Ngách tâm linh may mắn Hàn Quốc về một nhân vật hòa thượng: bám tiêu đề kênh đối thủ và edit đơn giản",
+    "additional": [
+      "Copy từ khóa tên nhân vật của kênh đối thủ, không cần quan tâm nghĩa",
+      "Tìm ảnh nhân vật trên Google hình ảnh, chọn ảnh giống, lưu về rồi xóa phông nền rồi ghép vào",
+      "Ghép video tự nhiên vào nhau rồi chạy phụ đề",
+      "Đăng sau kênh gốc khoảng 30 phút đến 1 tiếng, ví dụ kênh gốc đăng 5h15 chiều thì đăng 5h30 hoặc 6h",
+      "Bám kiểu tiêu đề đánh vào may mắn, giàu có theo tháng; đầu tháng sau làm tương tự"
+    ]
+  },
+  "avoid_flags": [
+    "Khi đăng video nhớ tích chọn có dùng AI; kênh đối thủ chưa tích là chưa đúng",
+    "Nên điền mô tả video thay vì để trống"
+  ],
+  "tools_mentioned": [
+    "Google"
+  ],
+  "channels_mentioned": [
+    "@복이오는길",
+    "@mokamoka-e9f"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu kênh mới @복이오는길 chỉ 5 video đã nổ view vượt bậc"
+    },
+    {
+      "time": "02:21",
+      "seconds": 141,
+      "label": "Phân tích cấu trúc tiêu đề phong thủy theo mốc thời gian cụ thể"
+    },
+    {
+      "time": "04:42",
+      "seconds": 282,
+      "label": "Khám phá kênh thứ 2 @mokamoka-e9f và xu hướng mẹo vặt tài vận"
+    },
+    {
+      "time": "06:50",
+      "seconds": 410,
+      "label": "Cách dựng video phong thủy tối giản bằng slide ảnh nghệ thuật"
+    },
+    {
+      "time": "07:44",
+      "seconds": 464,
+      "label": "Tiềm năng nhân bản ngách phong thủy sang thị trường Việt Nam và châu Á"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-e24c31/transcript.txt",
+  "sop_steps": [
+    "Copy từ khóa tên nhân vật của kênh đối thủ, không cần quan tâm nghĩa",
+    "Tìm ảnh nhân vật trên Google hình ảnh, chọn ảnh giống, lưu về rồi xóa phông nền rồi ghép vào",
+    "Ghép video tự nhiên vào nhau rồi chạy phụ đề",
+    "Đăng sau kênh gốc khoảng 30 phút đến 1 tiếng, ví dụ kênh gốc đăng 5h15 chiều thì đăng 5h30 hoặc 6h",
+    "Bám kiểu tiêu đề đánh vào may mắn, giàu có theo tháng; đầu tháng sau làm tương tự"
+  ]
+}

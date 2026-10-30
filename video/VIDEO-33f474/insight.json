@@ -1,0 +1,76 @@
+{
+  "sku": "VIDEO-33f474",
+  "title": "CHỈ MỚI 5 VIDEO - KÊNH MỚI LẬP 14/04/2026 NỔ VIEW QUÁ KHIẾP VỚI NGÁCH TÂM LINH, LUẬT HẤP DẪN THỊ TRƯỜNG NHẬT BẢN ",
+  "actual_topic": "CHỈ MỚI 5 VIDEO - KÊNH MỚI LẬP 14/04/2026 NỔ VIEW QUÁ KHIẾP VỚI NGÁCH TÂM LINH, LUẬT HẤP DẪN THỊ TRƯỜNG NHẬT BẢN ",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Khám Kênh & Tối Ưu Tăng Trưởng",
+  "niche_id": "faceless-general",
+  "target_market": "Nhật Bản",
+  "market_code": "JP",
+  "key_takeaways": [
+    "Kênh đầu tiên ở thị trường Nhật lập ngày 14 tháng 4, mới có 5 video nhưng video đầu tiên đăng 13 ngày trước đã nổ view rất cao, nội dung thuộc dạng tâm linh, luật hấp dẫn.",
+    "Về cách dựng, hơn 3 phút đầu chỉ cho AI đọc và nhép miệng, những đoạn sau ghép thêm nhiều video thiên nhiên làm nền.",
+    "Tác giả nhắc lại việc để từ khóa video thì chỉ nên để ít, không cần nhiều.",
+    "Kênh thứ hai làm đúng một nhân vật, lập chừng hai tháng, có video nổ view cách đây 8 ngày, và kịch bản nào đánh vào tâm lý người xem thì nổ view; nên lấy các video cao view nhất để học theo cách đặt tiêu đề gây tò mò.",
+    "Kênh thứ ba đang làm hai nhân vật khác nhau và vẫn đang kiếm tiền; tác giả khuyên chỉ tập trung vào đúng một nhân vật, lấy kịch bản từ các kênh này để làm, chọn nhân vật nổi tiếng nhưng ít cạnh tranh."
+  ],
+  "edit_sop": {
+    "primary": "Share ngách tâm linh, luật hấp dẫn, triết lý thị trường Nhật từ kênh mới và cách làm, giữ một ngách một nhân vật",
+    "additional": [
+      "Dịch tiêu đề video tiếng Nhật ra để hiểu chủ đề và học cách đặt tiêu đề đánh vào tâm lý người xem",
+      "Hơn 3 phút đầu kênh mẫu cho AI nhép miệng đọc, các đoạn sau ghép thêm nhiều video tự nhiên làm nền",
+      "từ khóa video chỉ để vài từ, không cần nhiều",
+      "Thiếu kịch bản thì lấy kịch bản từ các kênh đang kiếm tiền rồi làm theo",
+      "Chọn nhân vật nổi tiếng ít cạnh tranh để dễ lên đề xuất"
+    ]
+  },
+  "avoid_flags": [
+    "Nên tập trung đúng một ngách, làm xuyên suốt, đừng làm nhiều",
+    "Không nên nhồi nhét quá nhiều từ khóa vào phần thẻ từ khóa video và tránh chọn nhân vật đã có quá nhiều kênh cạnh tranh"
+  ],
+  "tools_mentioned": [
+    "YouTube"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "01:04",
+      "seconds": 64,
+      "label": "Thì em kêu mọi người thì làm 3 phút đầu"
+    },
+    {
+      "time": "02:41",
+      "seconds": 161,
+      "label": "Cái câu từ khóa đầu tiên Để vào tiêu đề để cho nó kiểu đánh vào tâm lý người xem ấy mọi người để cho dở click …"
+    },
+    {
+      "time": "03:50",
+      "seconds": 230,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "04:48",
+      "seconds": 288,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-33f474/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Dịch tiêu đề video tiếng Nhật ra để hiểu chủ đề và học cách đặt tiêu đề đánh vào tâm lý người xem",
+    "Hơn 3 phút đầu kênh mẫu cho AI nhép miệng đọc, các đoạn sau ghép thêm nhiều video tự nhiên làm nền",
+    "từ khóa video chỉ để vài từ, không cần nhiều",
+    "Thiếu kịch bản thì lấy kịch bản từ các kênh đang kiếm tiền rồi làm theo",
+    "Chọn nhân vật nổi tiếng ít cạnh tranh để dễ lên đề xuất"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "sku": "VIDEO-5d54d0",
+  "title": "Thực chiến hướng dẫn train Claude làm prompt bám theo kịch bản đối thủ xào nấu cho bất kỳ chủ đề (ngách) nào muốn - Quy trình chuẩn bán content dành cho ngách bám theo 70% kịch bản đối thủ",
+  "actual_topic": "Quy trình Bán Content chuẩn 70/30: Huấn luyện Claude xào nấu kịch bản đối thủ & Kỹ thuật tạo sóng âm Audio Waveform 4K né quét AI",
+  "category_group": "ban_content",
+  "niche_primary": "Bán Content Triết Lý Nhật Bản",
+  "niche_id": "ban-content-jp",
+  "target_market": "Việt Nam / Trung Quốc",
+  "market_code": "VN,CN",
+  "key_takeaways": [
+    "Hướng dẫn dùng Claude làm bán content kiểu 70/30: lấy khoảng 70% cấu trúc của kịch bản đối thủ cho AI học, 30% còn lại để AI tự sáng tạo viết thêm; ví dụ ngách triết lý Nhật, kênh mới lập 5/5 (11 ngày trước), chỉ 1-2 video nổ là đủ lượt đăng ký và kiếm tiền.",
+    "Cách nạp dữ liệu: copy data của 2-3 kênh đối thủ (khoảng một nửa số video đã quét) dán vào Claude cùng câu lệnh phân tích kỹ; tác giả dùng model Opus 4.7 (đôi khi Sonnet 4.6); chọn video cao view theo chỉ số VPH, ví dụ video 1,3 triệu view cách 3 tuần, chỉ cần một video để cho AI học.",
+    "Nhân vật nổi tiếng: trong kịch bản đối thủ không dám đặt tên nhân vật vì dễ bị coi là không trung thực, nên chọn phương án ẩn danh (ban đầu để chưa quyết định); chọn viết template kịch bản master trước và chia thành 2 lần gửi lệnh, không gửi một lần vì dễ sai.",
+    "Đóng gói thành skill để lần sau chỉ cần dán kịch bản đối thủ vào; tiêu đề tạo ra dựa trên tiêu đề gốc chứ không copy nguyên, theo kiểu tạo tiêu đề tương tự.",
+    "Edit: kênh đối thủ ghép nhiều video tự nhiên, cắt khoảng 5-6 giây rồi chuyển cảnh, kèm thanh sóng âm thanh chạy trên video; phụ đề lấy bằng CapCut chỉ tương đối, không chính xác 100% nên khi làm thị trường Nhật có thể bị khán giả comment sai."
+  ],
+  "edit_sop": {
+    "primary": "Train Claude bám theo kịch bản đối thủ (70% kịch bản gốc, 30% sáng tạo) cho ngách triết lý, rồi edit, tạo voice và tiêu đề",
+    "additional": [
+      "Copy dữ liệu 2 đến 3 kênh đối thủ cho Claude phân tích kỹ trước, sau đó chọn video cao view nhất của kênh để cho nó học kịch bản.",
+      "Yêu cầu Claude viết một form prompt master dùng 70% kịch bản gốc cộng phần sáng tạo, output là kịch bản sạch không chú thích, rồi đóng gói thành skill và upload lên Claude.",
+      "Mỗi video mới: mở chat mới, dán kịch bản đối thủ, gọi skill; chép kịch bản về tạo giọng đọc bằng ElevenLabs hoặc clone giọng.",
+      "Edit trong CapCut: ghép nhiều video tự nhiên cắt 5 đến 6 giây rồi chuyển cảnh, thêm ảnh nhân vật xóa nền, tên nhân vật bên dưới; lấy phụ đề bằng trích xuất ở bản chọn tiếng Nhật, không trích từ chuột phải vào âm thanh vì sẽ ngắt sai nhịp.",
+      "Tạo tiêu đề bằng form prompt riêng bám tiêu đề đối thủ, giữ từ khóa ngách ở đầu tiêu đề, rồi đưa nhiều bản vào tính năng thử nghiệm tiêu đề của YouTube."
+    ]
+  },
+  "avoid_flags": [
+    "Không dán yêu cầu vào một lần, phải chia thành 2 lần nếu không Claude dễ làm sai.",
+    "Không dùng tên nhân vật nổi tiếng trong kịch bản vì dễ dính lỗi không trung thực, nên chọn phương án ẩn danh.",
+    "Kênh mới nên ghép nhiều video tự nhiên để hạn chế bị quét lỗi không trung thực, không chỉ ghép ảnh nền đen với ảnh nhân vật như kênh lớn.",
+    "Đừng nhảy qua lại giữa các ngách, chọn một ngách và kiên trì làm."
+  ],
+  "tools_mentioned": [
+    "Claude",
+    "Google Dịch",
+    "YouTube"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu kênh mẫu bán content triết lý Nhật Bản 11 ngày nổ view"
+    },
+    {
+      "time": "10:44",
+      "seconds": 644,
+      "label": "Hướng dẫn cấu trúc prompt xào nấu 70% kịch bản đối thủ + 30% sáng tạo"
+    },
+    {
+      "time": "22:04",
+      "seconds": 1324,
+      "label": "Kỹ thuật đóng gói Skill Claude tái sử dụng và tạo tiêu đề giật tít chuẩn Nhật"
+    },
+    {
+      "time": "32:51",
+      "seconds": 1971,
+      "label": "Demo quy trình ghép video phông xanh sóng âm (Audio Waveform) trên nền tĩnh"
+    },
+    {
+      "time": "42:41",
+      "seconds": 2561,
+      "label": "Hướng dẫn xử lý phụ đề và xuất bản video hoàn thiện chống quét Reused Content"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-5d54d0/transcript.txt",
+  "sop_steps": [
+    "Copy dữ liệu 2 đến 3 kênh đối thủ cho Claude phân tích kỹ trước, sau đó chọn video cao view nhất của kênh để cho nó học kịch bản.",
+    "Yêu cầu Claude viết một form prompt master dùng 70% kịch bản gốc cộng phần sáng tạo, output là kịch bản sạch không chú thích, rồi đóng gói thành skill và upload lên Claude.",
+    "Mỗi video mới: mở chat mới, dán kịch bản đối thủ, gọi skill; chép kịch bản về tạo giọng đọc bằng ElevenLabs hoặc clone giọng.",
+    "Edit trong CapCut: ghép nhiều video tự nhiên cắt 5 đến 6 giây rồi chuyển cảnh, thêm ảnh nhân vật xóa nền, tên nhân vật bên dưới; lấy phụ đề bằng trích xuất ở bản chọn tiếng Nhật, không trích từ chuột phải vào âm thanh vì sẽ ngắt sai nhịp.",
+    "Tạo tiêu đề bằng form prompt riêng bám tiêu đề đối thủ, giữ từ khóa ngách ở đầu tiêu đề, rồi đưa nhiều bản vào tính năng thử nghiệm tiêu đề của YouTube."
+  ]
+}

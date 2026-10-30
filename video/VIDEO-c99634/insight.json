@@ -1,0 +1,101 @@
+{
+  "sku": "VIDEO-c99634",
+  "title": "Tư Duy 5 - Sử Dụng Đòn Bẩy Ai Công Nghệ",
+  "actual_topic": "Tư duy số 5: Sử dụng đòn bẩy AI và công nghệ ở cấp độ ứng dụng, quy tắc 20 giờ đạt mức trung bình ngành và phân biệt bản chất việc Khó (6 tháng - 1 năm) với việc Chưa Quen (< 20 giờ)",
+  "category_group": "he_thong",
+  "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
+  "niche_id": "NICHE-HETHONG-01",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "tools_mentioned": [
+    "YouTube",
+    "Photoshop",
+    "Canva",
+    "CapCut"
+  ],
+  "channels_mentioned": [],
+  "course_docs": [
+    {
+      "title": "Quy Trình Đào Tạo & Sử Dụng Đòn Bẩy AI ChatGPT (2025)",
+      "file": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/Cach_dao_tao_ChatGPT.docx",
+      "readFile": "assets/docs-huan/QUY_TRINH_TRIEN_KHAI_KENH_2025/Cach_dao_tao_ChatGPT.docx.md",
+      "link": "https://drive.google.com/file/d/1TDdvSSYLzWPWI7EZBqAWOPWXAp1Os8ru/view"
+    },
+    {
+      "title": "Checklist YouTube 1 Trang (Tối Ưu Quy Trình Sản Xuất)",
+      "file": "assets/docs-huan/CHECKLIST_YOUTUBE_1_TRANG.docx",
+      "readFile": "assets/docs-huan/CHECKLIST_YOUTUBE_1_TRANG.docx.md",
+      "link": "https://drive.google.com/file/d/1YEfmxATH9KB9vsH_hkMpW9QaxvGRUYG1/view"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Khởi động Tư duy số 5: Tận dụng đòn bẩy AI và công nghệ trong kỷ nguyên sản xuất nội dung số"
+    },
+    {
+      "time": "00:51",
+      "seconds": 51,
+      "label": "Quy tắc 20 giờ trên bảng Flipchart (20h / TB): Chỉ cần 20 giờ tập trung để đạt mức trung bình của một kỹ năng mới"
+    },
+    {
+      "time": "01:28",
+      "seconds": 88,
+      "label": "Chiến lược chia nhỏ 20 giờ luyện tập: 1 giờ/ngày trong 20 ngày hoặc 2 giờ/ngày trong 10 ngày"
+    },
+    {
+      "time": "02:00",
+      "seconds": 120,
+      "label": "Ví dụ thực tế học Photoshop làm thumbnail: Không cần thành chuyên gia thiết kế, chỉ học đúng thao tác cắt ghép phục vụ YouTube"
+    },
+    {
+      "time": "03:01",
+      "seconds": 181,
+      "label": "Bảng đối chiếu Flipchart: Phân biệt việc KHÓ (ĐVTG: 6 tháng - 1 năm) và việc CHƯA QUEN (< 20h, đơn vị Ngày - Tuần)"
+    },
+    {
+      "time": "04:26",
+      "seconds": 266,
+      "label": "Thực chứng học phần mềm biên tập video CapCut trong 1 - 3 giờ qua video hướng dẫn 30 - 40 phút trên YouTube"
+    },
+    {
+      "time": "05:12",
+      "seconds": 312,
+      "label": "Nguyên tắc cốt lõi: Làm chủ AI và công nghệ ở cấp độ ứng dụng tạo kết quả, không sa đà nghiên cứu hàn lâm"
+    }
+  ],
+  "key_takeaways": [
+    "Quy tắc 20 giờ (20h / TB): Để nắm bắt một công cụ hoặc kỹ năng mới ở mức trung bình đủ dùng cho công việc làm YouTube, một người bình thường chỉ cần đầu tư khoảng 20 giờ học và thực hành nghiêm túc.",
+    "Phân biệt rạch ròi giữa 'Khó' và 'Chưa Quen': Việc 'Khó' có đơn vị đo thời gian từ 6 tháng đến 1 năm (hoặc nhiều năm); còn các công cụ làm YouTube chỉ là việc 'Chưa Quen' có đơn vị tính bằng Ngày hoặc Tuần (dưới 20 giờ).",
+    "Học công cụ theo tư duy ứng dụng thực chiến: Khi dùng Photoshop hay Canva để làm thumbnail, không cần học toàn bộ tính năng của một Designer chuyên nghiệp mà chỉ cần học đúng các thao tác tách nền, chèn chữ, phối màu tạo CTR cao.",
+    "Làm chủ phần mềm dựng video CapCut chỉ trong 1 đến 3 giờ: Chỉ cần xem một video hướng dẫn tổng hợp dài 30 - 40 phút trên YouTube và thực hành cắt ghép ngay trên dự án thật là đã có thể tự sản xuất video hoàn chỉnh.",
+    "Định vị bản thân là người ứng dụng AI & Công nghệ để nhân bản hiệu suất: Không cần hiểu cấu trúc lập trình phức tạp bên dưới AI, chỉ cần biết cách ra lệnh và kết hợp công cụ để rút ngắn thời gian sản xuất video."
+  ],
+  "edit_sop": {
+    "primary": "SOP 5 Bước Chinh Phục Mọi Công Cụ AI & Phần Mềm Sản Xuất YouTube Trong Dưới 20 Giờ",
+    "additional": [
+      "Xác định chính xác tác vụ thực tế cần giải quyết trong quy trình làm YouTube (ví dụ: cắt ghép video bằng CapCut, thiết kế ảnh thu nhỏ bằng Canva/Photoshop, viết kịch bản bằng AI) thay vì học dàn trải cả phần mềm.",
+      "Tái định khung tâm lý từ 'việc này khó quá' sang 'việc này mình chỉ chưa quen', ấn định ngân sách thời gian chinh phục tối đa là 20 giờ (chia thành 2 giờ/ngày trong 10 ngày hoặc 1 giờ/ngày trong 20 ngày).",
+      "Tìm kiếm 1 đến 2 video hướng dẫn cô đọng (thời lượng 30 - 40 phút) trên YouTube tập trung đúng vào các tính năng phục vụ sản xuất video và thumbnail.",
+      "Thực hành trực tiếp ngay trên nguyên liệu kênh thật trong 1 đến 3 giờ đầu tiên (vừa xem vừa bấm thao tác theo) để vượt qua rào cản tâm lý ngại công nghệ.",
+      "Đóng gói các thao tác lặp đi lặp lại thành biểu mẫu (template Canva/Photoshop, preset CapCut, prompt AI) để tái sử dụng liên tục và bàn giao cho nhân sự vận hành."
+    ]
+  },
+  "sop_steps": [
+    "Xác định chính xác tác vụ thực tế cần giải quyết trong quy trình làm YouTube (ví dụ: cắt ghép video bằng CapCut, thiết kế ảnh thu nhỏ bằng Canva/Photoshop, viết kịch bản bằng AI) thay vì học dàn trải cả phần mềm.",
+    "Tái định khung tâm lý từ 'việc này khó quá' sang 'việc này mình chỉ chưa quen', ấn định ngân sách thời gian chinh phục tối đa là 20 giờ (chia thành 2 giờ/ngày trong 10 ngày hoặc 1 giờ/ngày trong 20 ngày).",
+    "Tìm kiếm 1 đến 2 video hướng dẫn cô đọng (thời lượng 30 - 40 phút) trên YouTube tập trung đúng vào các tính năng phục vụ sản xuất video và thumbnail.",
+    "Thực hành trực tiếp ngay trên nguyên liệu kênh thật trong 1 đến 3 giờ đầu tiên (vừa xem vừa bấm thao tác theo) để vượt qua rào cản tâm lý ngại công nghệ.",
+    "Đóng gói các thao tác lặp đi lặp lại thành biểu mẫu (template Canva/Photoshop, preset CapCut, prompt AI) để tái sử dụng liên tục và bàn giao cho nhân sự vận hành."
+  ],
+  "avoid_flags": [
+    "Tránh tự gắn mác 'mù công nghệ' hoặc đánh đồng việc 'chưa từng làm' (< 20 giờ) với việc 'quá khó' (6 tháng - 1 năm) dẫn đến trì hoãn không dám bắt đầu.",
+    "Tránh sa đà học toàn bộ tính năng hàn lâm của Photoshop hay phần mềm dựng phim như một kỹ sư/designer chuyên nghiệp trong khi chỉ cần vài thao tác cốt lõi để làm YouTube.",
+    "Tránh xem video hướng dẫn thụ động hàng chục giờ mà không mở phần mềm CapCut, Canva hoặc công cụ AI lên thao tác trực tiếp.",
+    "Tránh tâm lý cầu toàn đợi đến khi thành thạo 100% công nghệ mới bắt đầu xuất bản video đầu tiên lên kênh."
+  ],
+  "source_transcript": "video/VIDEO-c99634/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true
+}

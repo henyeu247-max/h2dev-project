@@ -1,0 +1,123 @@
+{
+  "sku": "VIDEO-9607ea",
+  "title": "Kênh chính, Kênh phụ khác nhau như thế nào Ưu, nhược điểm",
+  "actual_topic": "Hướng dẫn thực hành toàn diện 37 phút từ A–Z: Phân biệt Kênh chính (Gmail gốc) và Kênh phụ (Kênh thương hiệu / Brand Account), quy trình tạo và tối ưu 100% cài đặt YouTube Studio (Bố cục, Thương hiệu, Link rút gọn ?sub_confirmation=1, Xác minh SĐT 3 bậc, Chế độ tải lên mặc định theo Module và Phân quyền quản trị an toàn).",
+  "category_group": "Xây Kênh & Khởi Tạo Hệ Thống",
+  "niche_primary": "Cấu Trúc Kênh Thương Hiệu & Tối Ưu YouTube Studio",
+  "niche_id": "BRAND_CHANNEL_SETUP",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "tools_mentioned": [
+    "YouTube",
+    "YouTube Studio",
+    "Gmail",
+    "Cốc Cốc",
+    "Microsoft Word",
+    "Microsoft Excel"
+  ],
+  "channels_mentioned": [
+    "@PhamThanhLong",
+    "@Web5Ngay"
+  ],
+  "course_docs": [
+    {
+      "title": "Quy Trình Tạo Và Chăm Sóc Kênh YouTube Chuẩn Hóa (PDF)",
+      "file": "assets/docs-huan/Quy_trinh_tao_va_cham_soc_kenh.pdf",
+      "readFile": "assets/docs-huan/Quy_trinh_tao_va_cham_soc_kenh.pdf.md",
+      "link": "https://drive.google.com/file/d/1FyIkEvGmnG-EFRG7XYqKHikpl8nW6b1Q/view"
+    },
+    {
+      "title": "Bảo Mật Kênh YouTube (Phải Làm) — Hướng dẫn chống mất kênh & phân quyền",
+      "file": "assets/docs-huan/BAO_MAT_KENH_PHAI_LAM.docx",
+      "readFile": "assets/docs-huan/BAO_MAT_KENH_PHAI_LAM.docx.md",
+      "link": "https://drive.google.com/file/d/1-X5OWkzdKe6zT07p-GBgTTmUz5ZtQH7q/view"
+    },
+    {
+      "title": "Checklist YouTube 1 Trang — Quy trình tối ưu & đăng tải video chuẩn hóa",
+      "file": "assets/docs-huan/CHECKLIST_YOUTUBE_1_TRANG.docx",
+      "readFile": "assets/docs-huan/CHECKLIST_YOUTUBE_1_TRANG.docx.md",
+      "link": "https://drive.google.com/file/d/1YEfmxATH9KB9vsH_hkMpW9QaxvGRUYG1/view"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân biệt Kênh chính (tạo mặc định khi lập Gmail) và Kênh phụ (kênh thương hiệu / Brand Account)"
+    },
+    {
+      "time": "01:42",
+      "seconds": 102,
+      "label": "Ưu điểm vượt trội của Kênh phụ: Tách biệt rủi ro chính sách khỏi Gmail gốc, dễ dàng phân quyền cho nhân sự và chuyển nhượng mua bán kênh"
+    },
+    {
+      "time": "08:29",
+      "seconds": 509,
+      "label": "Thực hành tạo Kênh phụ mới trong Cài đặt YouTube, lưu ý bắt buộc dùng SĐT chính chủ/người thân (cấm dùng SIM rác) và tổng quan YouTube Studio"
+    },
+    {
+      "time": "10:34",
+      "seconds": 634,
+      "label": "Tùy chỉnh Bố cục trang chủ kênh: Video giới thiệu người mới, video nổi bật cho người đã đăng ký và sắp xếp Danh sách phát"
+    },
+    {
+      "time": "13:05",
+      "seconds": 785,
+      "label": "Tùy chỉnh Xây dựng thương hiệu: Tải lên Ảnh đại diện (800x800px), Ảnh bìa Banner (2048x1152px) và Hình mờ thực hiệu (Watermark nút Đăng ký)"
+    },
+    {
+      "time": "15:58",
+      "seconds": 958,
+      "label": "Tối ưu Thông tin cơ bản: Viết mô tả kênh chuẩn SEO và gắn link kêu gọi đăng ký tự động với hậu tố ?sub_confirmation=1"
+    },
+    {
+      "time": "20:56",
+      "seconds": 1256,
+      "label": "Thiết lập Cài đặt kênh: Chọn đơn vị tiền tệ USD, Quốc gia cư trú, từ khóa kênh và xác minh mở khóa đủ 3 bậc tính năng"
+    },
+    {
+      "time": "24:42",
+      "seconds": 1482,
+      "label": "Cài đặt Chế độ mặc định cho video tải lên: Thiết lập khung mô tả cố định theo từng Module (CTA, danh sách phát, mạng xã hội) và thẻ từ khóa mặc định"
+    },
+    {
+      "time": "31:00",
+      "seconds": 1860,
+      "label": "Phân quyền quản trị kênh an toàn cho đội ngũ (Người quản lý / Người chỉnh sửa) và quy trình chuẩn bị sẵn bộ nguyên liệu trên Microsoft Word / Excel"
+    }
+  ],
+  "key_takeaways": [
+    "Mỗi tài khoản Gmail khi tạo ra sẽ mặc định có 1 Kênh Chính gắn chặt với Gmail đó; các kênh tạo thêm bên dưới gọi là Kênh Phụ (Kênh Thương Hiệu / Brand Account). Nguyên tắc vàng của dân chuyên nghiệp là LUÔN LÀM VIỆC TRÊN KÊNH PHỤ, tuyệt đối không phát triển nội dung trên Kênh Chính.",
+    "3 lý do sống còn phải dùng Kênh Phụ (Kênh Thương Hiệu): (1) Bảo vệ an toàn cho Gmail gốc — nếu kênh phụ chẳng may bị quét chết do lỗi chính sách, Gmail gốc vẫn sống nguyên vẹn; (2) Cho phép thêm/bớt nhiều Gmail khác nhau làm Người quản lý (Manager) hoặc Người chỉnh sửa (Editor) mà không lộ mật khẩu Gmail gốc; (3) Có thể chuyển quyền Chủ sở hữu chính sang một Gmail khác khi cần mua bán, chuyển nhượng kênh.",
+    "Cảnh báo đỏ về Số điện thoại xác minh kênh (`frame_02.jpg`): Bắt buộc dùng SĐT chính chủ hoặc của bố mẹ/vợ chồng/người thân quản lý được lâu dài. Tuyệt đối KHÔNG dùng SIM rác hoặc đi mượn SĐT người ngoài vì khi kênh bật kiếm tiền hoặc đăng nhập thiết bị lạ, Google sẽ yêu cầu mã OTP về đúng số đó.",
+    "Kỹ thuật gắn Link Đăng Ký Tự Động (`?sub_confirmation=1`): Lấy đường link trang chủ kênh ghép thêm hậu tố `?sub_confirmation=1` ở cuối rồi đưa vào phần Mô tả kênh và Đường liên kết trên Banner; khi khán giả bấm vào link này trên máy tính, một hộp thoại 'Xác nhận đăng ký kênh' sẽ bật lên ngay lập tức giúp tăng tỷ lệ chuyển đổi Sub.",
+    "Tối ưu hóa 'Chế độ mặc định cho video tải lên' (Upload Defaults): Soạn sẵn phần khung mô tả cố định gồm lời kêu gọi đăng ký, danh sách các video hay nhất trên kênh, thông tin liên hệ/nhóm Zalo/Facebook và bộ thẻ Tag gốc của kênh để tiết kiệm 80% thời gian mỗi lần đăng video mới.",
+    "Trước khi ngồi vào thao tác trên YouTube Studio, hãy chuẩn bị sẵn toàn bộ nguyên liệu (Tên kênh, Mô tả kênh chuẩn SEO, Bộ từ khóa kênh có dấu/không dấu, Link mạng xã hội) trên một file Microsoft Word hoặc Microsoft Excel để chỉ việc copy-paste đồng bộ, chính xác."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước khởi tạo Kênh Phụ (Kênh Thương Hiệu), tối ưu toàn diện YouTube Studio và phân quyền vận hành an toàn:",
+    "additional": [
+      "Chuẩn bị Hồ sơ Nguyên liệu trên Word/Excel & Tạo Kênh Thương Hiệu: Soạn sẵn Tên kênh, Mô tả kênh (lặp tên kênh 3–5 lần), Bộ từ khóa kênh trên file Word; sau đó vào `youtube.com/account` → 'Tạo kênh mới' để sinh Kênh Phụ (Brand Account) tách biệt khỏi Kênh Chính.",
+      "Tối ưu 3 Thẻ Tùy Chỉnh Kênh (Customization): Trong YouTube Studio → Tùy chỉnh, thiết lập (a) Bố cục trang chủ với Trailer & Danh sách phát; (b) Xây dựng thương hiệu gồm Avatar 800x800px, Banner 2048x1152px và Hình mờ nút Đăng ký hiển thị trong 'Toàn bộ video'; (c) Thông tin cơ bản kèm link rút gọn có đuôi `?sub_confirmation=1`.",
+      "Cấu hình Cài Đặt Kênh & Mở Khóa 3 Bậc Tính Năng: Vào Cài đặt → Chung (chọn USD) → Kênh: chọn Quốc gia cư trú, dán bộ từ khóa kênh (có dấu & không dấu), tắt hiển thị quảng cáo dựa trên sở thích nếu cần và dùng SĐT chính chủ + khuôn mặt xác minh mở khóa đủ 3 bậc điều kiện sử dụng tính năng.",
+      "Thiết lập Khung Tải Lên Mặc Định (Upload Defaults): Vào Cài đặt → Chế độ mặc định cho video tải lên, cài đặt Chế độ hiển thị là 'Không công khai' (Unlisted) hoặc 'Riêng tư' (Private), chọn Danh mục video chuẩn xác và điền sẵn khung Mô tả cố định theo từng Module kèm Thẻ Tag thương hiệu.",
+      "Thiết lập Phân Quyền Đội Ngũ An Toàn (Permissions): Vào Cài đặt → Quyền, cấp quyền cho nhân sự theo đúng chức trách (Người chỉnh sửa / Editor cho nhân viên chỉ đăng bài và tối ưu video; tuyệt đối không cấp quyền Chủ sở hữu / Owner cho người ngoài)."
+    ]
+  },
+  "sop_steps": [
+    "Chuẩn bị Hồ sơ Nguyên liệu trên Word/Excel & Tạo Kênh Thương Hiệu: Soạn sẵn Tên kênh, Mô tả kênh (lặp tên kênh 3–5 lần), Bộ từ khóa kênh trên file Word; sau đó vào `youtube.com/account` → 'Tạo kênh mới' để sinh Kênh Phụ (Brand Account) tách biệt khỏi Kênh Chính.",
+    "Tối ưu 3 Thẻ Tùy Chỉnh Kênh (Customization): Trong YouTube Studio → Tùy chỉnh, thiết lập (a) Bố cục trang chủ với Trailer & Danh sách phát; (b) Xây dựng thương hiệu gồm Avatar 800x800px, Banner 2048x1152px và Hình mờ nút Đăng ký hiển thị trong 'Toàn bộ video'; (c) Thông tin cơ bản kèm link rút gọn có đuôi `?sub_confirmation=1`.",
+    "Cấu hình Cài Đặt Kênh & Mở Khóa 3 Bậc Tính Năng: Vào Cài đặt → Chung (chọn USD) → Kênh: chọn Quốc gia cư trú, dán bộ từ khóa kênh (có dấu & không dấu), tắt hiển thị quảng cáo dựa trên sở thích nếu cần và dùng SĐT chính chủ + khuôn mặt xác minh mở khóa đủ 3 bậc điều kiện sử dụng tính năng.",
+    "Thiết lập Khung Tải Lên Mặc Định (Upload Defaults): Vào Cài đặt → Chế độ mặc định cho video tải lên, cài đặt Chế độ hiển thị là 'Không công khai' (Unlisted) hoặc 'Riêng tư' (Private), chọn Danh mục video chuẩn xác và điền sẵn khung Mô tả cố định theo từng Module kèm Thẻ Tag thương hiệu.",
+    "Thiết lập Phân Quyền Đội Ngũ An Toàn (Permissions): Vào Cài đặt → Quyền, cấp quyền cho nhân sự theo đúng chức trách (Người chỉnh sửa / Editor cho nhân viên chỉ đăng bài và tối ưu video; tuyệt đối không cấp quyền Chủ sở hữu / Owner cho người ngoài)."
+  ],
+  "avoid_flags": [
+    "Xây kênh trực tiếp trên Kênh Chính của Gmail gốc: Khiến bạn không thể chuyển nhượng kênh cho người khác nếu không giao luôn cả hộp thư Gmail cá nhân, và không thể phân quyền quản lý linh hoạt như Kênh Thương Hiệu.",
+    "Sử dụng SIM rác dùng 1 lần hoặc mượn số điện thoại của người không thân thiết để xác minh kênh: Khi SIM bị nhà mạng thu hồi, bạn sẽ mất hoàn toàn quyền truy cập kênh khi Google hỏi xác minh bảo mật.",
+    "Để Chế độ hiển thị mặc định khi tải video lên là 'Công khai' (Public): Khiến video vừa tải lên chưa kịp kiểm tra bản quyền nhạc hay tối ưu Thumbnail/End Screen đã bị xuất bản ngay ra ngoài.",
+    "Giao thẳng mật khẩu Gmail gốc hoặc cấp quyền 'Chủ sở hữu' (Owner) cho nhân viên/cộng tác viên biên tập video, dẫn đến nguy cơ bị chiếm đoạt kênh hoặc xóa kênh."
+  ],
+  "source_transcript": "video/VIDEO-9607ea/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true
+}

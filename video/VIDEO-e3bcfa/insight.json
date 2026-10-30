@@ -1,0 +1,105 @@
+{
+  "sku": "VIDEO-e3bcfa",
+  "title": "Cách Dùng Hashtag Đúng Để YouTube Hiểu Nội Dung Video",
+  "actual_topic": "Bản chất và công thức sử dụng thẻ Hashtag (#) chuẩn thuật toán YouTube 2026: Phân tích dung lượng thẻ thực tế (#funny 475M video/39M kênh, #asmr 37M video/3.3M kênh vs #asmrfunny 3K video), 2 sai lầm làm sập đề xuất (Spam 20–30 thẻ & Gắn thẻ lệch chủ đề #monkey/#bongda), quy tắc cấm chèn # vào tiêu đề video dài và công thức 3–5 thẻ ở phần mô tả.",
+  "category_group": "chuyen_gia",
+  "niche_primary": "SEO & Thuật Toán YouTube",
+  "niche_id": "hashtag_seo",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "tools_mentioned": [
+    "YouTube",
+    "Cốc Cốc"
+  ],
+  "channels_mentioned": [
+    "@CrazyFrog",
+    "@HongyuASMR",
+    "@Xenopaw",
+    "@JojosASMR",
+    "@YabaiFunny",
+    "@ansari_anam"
+  ],
+  "course_docs": [
+    {
+      "title": "Tài Liệu Thực Chiến & Checklist: Công Thức Dùng 3–5 Hashtag Chuẩn SEO YouTube 2026",
+      "file": "assets/docs-dgmd/VIDEO-e3bcfa/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-e3bcfa/master_prompt.md",
+      "link": "assets/docs-dgmd/VIDEO-e3bcfa/master_prompt.md"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Cấu trúc 5 phần cốt lõi về Thẻ Hashtag (#) và vai trò hỗ trợ phân loại trên YouTube"
+    },
+    {
+      "time": "00:48",
+      "seconds": 48,
+      "label": "Mục 2 - Sự thật quan trọng: Demo tìm thẻ #funny (475 Tr video • 39 Tr kênh) giúp cố định phân loại giải trí"
+    },
+    {
+      "time": "01:35",
+      "seconds": 95,
+      "label": "Phân tích thẻ #asmr (37 Tr video • 3,3 Tr kênh): Cách YouTube đối chiếu ngữ cảnh và gom tệp khán giả"
+    },
+    {
+      "time": "02:09",
+      "seconds": 129,
+      "label": "Mục 3 - 2 Sai lầm nguy hiểm từ 2026: Spam 20–30 thẻ trên 1 video và gắn thẻ lệch chủ đề (#bongda / #monkey)"
+    },
+    {
+      "time": "03:13",
+      "seconds": 193,
+      "label": "Mục 4 - Công thức chuẩn: Tuyệt đối không chèn Hashtag vào tiêu đề video dài (chỉ dùng cho Shorts)"
+    },
+    {
+      "time": "03:55",
+      "seconds": 235,
+      "label": "Ví dụ thực chiến viết mô tả kèm 3–5 thẻ chuẩn cho ngách Khỉ AI thu hoạch chuối và Bóng đá (Ronaldo, Messi)"
+    },
+    {
+      "time": "04:32",
+      "seconds": 272,
+      "label": "Mục 5 - Tư duy đúng: Tiêu đề = từ khóa chính, Mô tả = Lặp lại từ khóa + 3–5 Hashtag, Giữ chân quyết định tiền"
+    },
+    {
+      "time": "05:30",
+      "seconds": 330,
+      "label": "Kiểm chứng độ phủ Hashtag: Tránh thẻ tự chế #asmr123 (0 video) hoặc thẻ quá hẹp #asmrfunny (3.000 video)"
+    }
+  ],
+  "key_takeaways": [
+    "Hashtag (từ khóa có dấu #) chỉ đóng vai trò hỗ trợ phụ (ảnh hưởng nhẹ đến tìm kiếm phụ, gợi ý nội dung và phân loại tệp khán giả), còn yếu tố quyết định trực tiếp lượng view và doanh thu là từ khóa chính trên tiêu đề và Tỷ lệ giữ chân người xem.",
+    "Tra cứu trực tiếp trên thanh tìm kiếm YouTube cho thấy sự chênh lệch khổng lồ về dung lượng: Thẻ chuẩn như #funny có tới 475 triệu video (39 triệu kênh) và #asmr có 37 triệu video (3,3 triệu kênh), trong khi thẻ ghép hẹp #asmrfunny chỉ có 3.000 video (997 kênh) và thẻ tự chế #asmr123 hoàn toàn không có ai tìm kiếm.",
+    "Từ năm 2026, thuật toán YouTube siết chặt 2 sai lầm nguy hiểm: (1) Spam 20–30 thẻ hashtag trên một video sẽ bị đánh dấu spam và giảm đề xuất; (2) Gắn thẻ không liên quan (làm video khỉ nhưng gắn #bongda, hoặc làm bóng đá nhưng gắn #monkey) khiến AI không phân loại được nội dung.",
+    "Quy tắc phân tách định dạng: Đối với Video dài, tuyệt đối không bao giờ chèn thẻ hashtag vào thanh Tiêu đề (chỉ đặt ở phần Mô tả); đối với video YouTube Shorts thì vẫn được phép chèn hashtag trực tiếp trên tiêu đề.",
+    "Công thức chuẩn SEO: Tiêu đề chứa từ khóa chính hút click -> Mô tả viết 1–2 dòng mở rộng từ khóa liên quan (ví dụ: 'khỉ AI thu hoạch chuối, hoạt hình, hài hước, video nông trại, động vật dễ thương') -> Cuối mô tả chỉ gắn đúng 3 đến 5 thẻ hashtag phổ biến và khớp 100% nội dung."
+  ],
+  "edit_sop": {
+    "primary": "SOP 5 Bước Kiểm Tra Dung Lượng & Thiết Lập Bộ 3–5 Hashtag Chuẩn Thuật Toán YouTube",
+    "additional": [
+      "Xác định từ khóa chính của video để đặt vào thanh Tiêu đề (đối với video dài tuyệt đối để tiêu đề sạch, không gắn bất kỳ ký tự # nào).",
+      "Mở thanh tìm kiếm YouTube trên trình duyệt Cốc Cốc, gõ thử các thẻ dự kiến (như #funny, #asmr) để kiểm tra số lượng triệu video và triệu kênh đang sử dụng.",
+      "Loại bỏ hoàn toàn các thẻ tự chế có đuôi số vô nghĩa (như #asmr123) hoặc các thẻ ghép quá hẹp có ít người dùng (như #asmrfunny chỉ có 3.000 video).",
+      "Viết 1–2 dòng đầu tiên trong phần Mô tả lặp lại tự nhiên cụm từ khóa mở rộng của chủ đề (ví dụ: khỉ AI thu hoạch chuối, hoạt hình, hài hước, video nông trại).",
+      "Chèn từ 3 đến tối đa 5 thẻ hashtag có dung lượng lớn và liên quan trực tiếp đến nhân vật/bối cảnh trong video (như #bongda, #ronaldo, #messi) vào cuối khung mô tả."
+    ]
+  },
+  "sop_steps": [
+    "Xác định từ khóa chính của video để đặt vào thanh Tiêu đề (đối với video dài tuyệt đối để tiêu đề sạch, không gắn bất kỳ ký tự # nào).",
+    "Mở thanh tìm kiếm YouTube trên trình duyệt Cốc Cốc, gõ thử các thẻ dự kiến (như #funny, #asmr) để kiểm tra số lượng triệu video và triệu kênh đang sử dụng.",
+    "Loại bỏ hoàn toàn các thẻ tự chế có đuôi số vô nghĩa (như #asmr123) hoặc các thẻ ghép quá hẹp có ít người dùng (như #asmrfunny chỉ có 3.000 video).",
+    "Viết 1–2 dòng đầu tiên trong phần Mô tả lặp lại tự nhiên cụm từ khóa mở rộng của chủ đề (ví dụ: khỉ AI thu hoạch chuối, hoạt hình, hài hước, video nông trại).",
+    "Chèn từ 3 đến tối đa 5 thẻ hashtag có dung lượng lớn và liên quan trực tiếp đến nhân vật/bối cảnh trong video (như #bongda, #ronaldo, #messi) vào cuối khung mô tả."
+  ],
+  "avoid_flags": [
+    "Tuyệt đối không spam 20–30 thẻ hashtag trên một video vì thuật toán YouTube từ 2026 sẽ quy vào hành vi spam và bóp giảm đề xuất.",
+    "Không gắn các thẻ hashtag lệch pha với nội dung thực tế của video (như video khỉ gắn thẻ bóng đá hoặc ngược lại) làm rối loạn bộ phân loại AI.",
+    "Không chèn thẻ hashtag vào thanh Tiêu đề của video dài (chỉ video Shorts mới được phép dùng hashtag trên tiêu đề).",
+    "Không tự nghĩ ra các thẻ hashtag kỳ dị kèm số (như #asmr123) không có người tìm kiếm hoặc lầm tưởng chỉ cần gắn hashtag là video tự khắc viral."
+  ],
+  "source_transcript": "video/VIDEO-e3bcfa/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true
+}

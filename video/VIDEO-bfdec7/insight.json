@@ -1,0 +1,179 @@
+{
+  "sku": "VIDEO-bfdec7",
+  "title": "Quy Trình Sản Xuất Video Biến Đổi Nhân Vật View Nhật",
+  "module_id": "DGMD-M06",
+  "lesson_number": 20,
+  "duration_sec": 1553.2,
+  "duration_seconds": 1553,
+  "Step_1_Niche": "Japanese Anime Characters in Real Life / AI Live-Action Transformation (Biến đổi nhân vật hoạt hình Nhật Bản sang phiên bản đời thực / Giáp Robot săn View Nhật)",
+  "Step_2_Theme": "Sản xuất dòng video dài (16:9) so sánh Trước & Sau khi biến đổi các nhân vật hoạt hình huyền thoại của Nhật Bản (Doraemon, Chiikawa, Shin-chan, Pokémon, Demon Slayer, Conan, Dragon Ball...) từ ảnh 2D gốc trên Pinterest sang phiên bản người thật / Robot cơ khí tỷ lệ 1:1 bằng ChatGPT Master Prompt + Grok Imagine, dựng chia đôi màn hình kèm tên nhân vật song ngữ Anh - Nhật trên CapCut",
+  "Step_3_Tools": [
+    "Google Dịch (Google Translate)",
+    "ChatGPT",
+    "Pinterest",
+    "Grok Imagine (xAI)",
+    "Suno AI",
+    "CapCut PC",
+    "Picsart Web Editor"
+  ],
+  "tools_mentioned": [
+    "Google Dịch",
+    "ChatGPT",
+    "Pinterest",
+    "Grok",
+    "Suno AI",
+    "CapCut",
+    "Picsart",
+    "YouTube"
+  ],
+  "Step_4_Prompt": {
+    "description": "Hệ thống câu lệnh trên 2 luồng ChatGPT: (1) Xin 10 bộ Anime Nhật Bản, liệt kê 20 nhân vật trong Doraemon, xuất bảng tên nhân vật song ngữ 2 cột Tiếng Anh - Tiếng Nhật (Doraemon | ドラえもん) và sinh prompt nhạc nền không lời cho Suno AI; (2) Thiết lập 'Con tạo Master Prompt Grok' tự động sinh prompt tiếng Anh biến đổi ảnh 2D nhân vật sang phiên bản thực tế hoặc khoác giáp Robot cơ khí ở tỷ lệ 1:1.",
+    "template": "1. Khai thác chủ đề & Bảng tên nhân vật song ngữ Anh - Nhật (Tab ChatGPT #1):\n- \"cho tôi xin tên 10 bộ phim hoạt hình của Nhật Bản\"\n- \"cho tôi xin các tên nhân vật trong doraemon\"\n- \"viết cho tôi các tên nhân vật doraemon , 1 bên là tiếng anh , 1 bên là tiếng nhật\"\n\n2. Thiết lập 'Con tạo Master Prompt' & Biến tấu Giáp Robot (Tab ChatGPT #2 - kèm ảnh 2D gốc):\n- \"hãy tạo cho tôi 1 master prompt , khi tôi gửi hình ảnh bất kỳ lên đây , bạn hãy tạo cho tôi 1 prompt chi tiết , để sử dụng hình ảnh đó trên grok tạo lại hình ảnh khác , bám sát toàn bộ hình ảnh gốc , biến đổi nhân vật sang phiên bản thực tế , yêu cầu prompt chi tiết đầy đủ ngắn gọn để tôi gửi ảnh đưa lên grok tạo video\"\n- Biến tấu khác biệt: \"các nhân vật sau , khi tôi gửi lên , tạo 1 prompt biến đổi các nhân vật đó sang phiên bản thực tế , trang bị quần áo như robot\"\n\n3. Tạo nhạc nền không lời trên Suno AI (Chế độ Simple + bật Instrumental):\n- Lệnh ChatGPT: \"dựa theo những hình ảnh trên , bạn hãy tạo cho tôi 1 prompt để tạo nhạc nền không lời trên suno , ngắn gọn\"\n- Prompt Suno AI: \"Cute Japanese anime instrumental, playful, cheerful, warm, light piano, ukulele, soft bells, gentle strings, whimsical adventure, nostalgic childhood mood, no vocals\""
+  },
+  "Step_5_Voice": "Không sử dụng giọng đọc thuyết minh (No Voiceover); sử dụng 100% nhạc nền không lời (Instrumental) mang âm hưởng hoạt hình tuổi thơ Nhật Bản vui tươi, ấm áp được tạo từ Suno AI (chế độ Simple + bật nút Instrumental với prompt do ChatGPT viết) kết hợp hiệu ứng âm thanh chuyển cảnh trên CapCut.",
+  "Step_6_Edit_Checklist": [
+    "Mở Google Dịch chuyển từ khóa 'Doraemon phiên bản thực tế' sang tiếng Nhật ('現実世界のドラえもん'), dán lên thanh tìm kiếm YouTube để khảo sát công thức tiêu đề và Thumbnail của các kênh đang viral tại Nhật.",
+    "Trên Tab ChatGPT #1, chạy chuỗi 3 câu lệnh để lấy danh sách 10 bộ phim hoạt hình Nhật Bản, danh sách 20 nhân vật trong Doraemon và xuất bảng đối chiếu 2 cột (Tiếng Anh | Tiếng Nhật Kanji/Kana) để chuẩn bị dán vào CapCut.",
+    "Lên Pinterest tìm tên tiếng Anh của từng nhân vật (Doraemon, Nobita Nobi, Shizuka Minamoto, Takeshi Gouda, Suneo Honekawa, Dorami), tải ảnh 2D gốc về máy đồng thời Copy ảnh dán sang Tab ChatGPT #2 ('Tạo master prompt Grok') để lấy đoạn prompt tiếng Anh biến đổi nhân vật sang thực tế / mặc giáp Robot.",
+    "Truy cập grok.com/imagine, chọn chế độ Image, tải ảnh 2D gốc của nhân vật lên, dán prompt tiếng Anh từ ChatGPT và BẮT BUỘC chọn tỷ lệ khung hình 1:1 (Vuông) trước khi tạo và tải ảnh AI về máy.",
+    "Mở CapCut PC (khung 16:9), đặt ảnh nền kẻ ô tối ('grid Background' tải từ Pinterest, xoay ngang 90 độ phóng kín màn hình); kéo ảnh 2D gốc vào Track 1 (cắt tỷ lệ 1:1, thu phóng 86%, đặt bên trái X=-934, dài 6 giây) và đặt ảnh AI biến đổi ở Track 2 phía trên (xuất hiện trễ 1–2 giây, đặt bên phải X=934, thu phóng 86%), gắn hiệu ứng động Vào (1–2s) và Mờ dần Ra (1s) rồi Copy-Paste nhân bản cho toàn bộ các nhân vật tiếp theo.",
+    "Thêm lớp Văn bản phía trên mỗi phân đoạn 6 giây, dán tên Tiếng Anh ở dòng 1 và Tiếng Nhật ở dòng 2 (font BebasNeue, cỡ 15, hiệu ứng Vào 2s / Ra 1s), chèn nhãn dán Like/Subscribe cách quãng 4–5 nhân vật, ghép nhạc nền không lời từ Suno AI, xuất video ở chuẩn 720p hoặc 1080p (không xuất 2K) và dùng Picsart (1920x1080) ghép ảnh Doraemon 2D + ảnh Doraemon thực tế + mũi tên đỏ làm Thumbnail."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước thực chiến: Quy trình sản xuất video Biến Đổi Nhân Vật Hoạt Hình sang Phiên Bản Thực Tế / Robot săn View Nhật",
+    "additional": [
+      "Khi tạo ảnh trên Grok Imagine (mục Image), bắt buộc phải khóa tỷ lệ khung hình là 1:1 (Vuông) — tuyệt đối không để 9:16 — để khi đặt 2 bức ảnh cạnh nhau trên khung ngang 16:9 của CapCut, hai khung ảnh bằng nhau tăm tắp.",
+      "Với những bức ảnh 2D gốc tải từ Pinterest chưa phải hình vuông, ngay khi đưa bức ảnh đầu tiên (Doraemon) vào CapCut hãy dùng công cụ Cắt (Crop) khóa về tỷ lệ 1:1; nhờ đó khi Copy-Paste hai track ảnh ra toàn timeline và kéo ảnh nhân vật mới đè vào, mọi bức ảnh sau đều tự động giữ nguyên khung 1:1.",
+      "Đừng chỉ làm phiên bản người thật đơn thuần giống hệt đối thủ: hãy ra lệnh cho ChatGPT biến tấu nhân vật khoác giáp Robot cơ khí, giáp Samurai, giáp vàng hoặc cài cắm 1 nhân vật nam biến thành nữ (như Nobita phiên bản con gái) để kích thích khán giả Nhật tranh luận sôi nổi dưới phần bình luận.",
+      "Khi ghi tên nhân vật lên video, bắt buộc phải có dòng chữ tiếng Nhật chuẩn (Kanji/Kana lấy từ bảng ChatGPT); tuyệt đối không viết phiên âm tiếng Việt (như 'Si-zu-ka' hay 'Chai-en') vì người xem Nhật Bản sẽ không hiểu.",
+      "Khi xuất bản video trên CapCut PC, chỉ chọn độ phân giải 720p hoặc 1080p (tuyệt đối không xuất 2K/4K gây nặng file vô ích vì đây là video trình chiếu hình ảnh), và hoàn toàn có thể tận dụng kênh Shorts Việt sẵn có chuyển sang đăng video dài View Nhật, kiên trì chờ 5–20 ngày để thuật toán đẩy đề xuất."
+    ]
+  },
+  "Step_7_Monetization": [
+    "Thị trường Nhật Bản (View Nhật) có mức doanh thu quảng cáo (RPM) cao và đặc biệt nổi tiếng với hành vi xem trung thành: khi video xoay quanh các biểu tượng văn hóa đại chúng Nhật Bản (Doraemon, Shin-chan, Pokémon, Conan, Dragon Ball...), luồng view đề xuất cắn rất sâu và duy trì ổn định trong nhiều tháng.",
+    "Nhờ tự động hóa khâu viết prompt bằng 'Con tạo Master Prompt' trên ChatGPT và kỹ thuật nhân bản (Copy-Paste) 2 track ảnh trên CapCut, người làm có thể sản xuất nhanh chuỗi 10 video chuẩn form từ 10 bộ Anime khác nhau, tận dụng ngay kênh Shorts Việt chuyển đổi sang View Nhật để rút ngắn thời gian bật kiếm tiền và đón luồng đề xuất sau 5–20 ngày."
+  ],
+  "avoid_flags": [
+    "Không chọn tỷ lệ 9:16 hay 16:9 khi tạo ảnh nhân vật trên Grok Imagine; bắt buộc phải chọn tỷ lệ 1:1 thì khi ghép đôi Trái/Phải vào khung 16:9 trên CapCut hai bức ảnh mới cân xứng.",
+    "Không ngồi gõ tay từng câu lệnh tiếng Anh cho mỗi nhân vật; phải thiết lập một tab ChatGPT làm 'Con tạo Master Prompt' để chỉ cần dán ảnh 2D vào là tự động nhận prompt.",
+    "Không gõ tên nhân vật bằng phiên âm tiếng Việt (như 'Si-zu-ka', 'Chai-en', 'Xê-kô') lên màn hình video View Nhật; bắt buộc phải copy bảng song ngữ Tiếng Anh + Tiếng Nhật từ ChatGPT.",
+    "Không xuất video ở độ phân giải 2K hoặc 4K cho dạng nội dung ghép ảnh tĩnh biến đổi vì làm file quá nặng và lãng phí thời gian render; chỉ xuất ở chuẩn 720p hoặc 1080p.",
+    "Không nóng vội bỏ cuộc hoặc spam 10 video cẩu thả trong 1 ngày ('dục tốc bất đạt'); cần làm kỹ từng video và kiên nhẫn chờ 5–10 ngày (hoặc đến 20 ngày) để thuật toán YouTube Nhật Bản phân phối đề xuất."
+  ],
+  "competitor_channels": [
+    {
+      "name": "AnimeAI",
+      "url": "https://www.youtube.com/@AnimeAI1616",
+      "handle": "@AnimeAI1616",
+      "subscribers": "Verified Competitor (123K+ views/video)",
+      "notes": "Kênh mẫu số 1 hiển thị đầu tiên trên màn hình kết quả tìm kiếm từ khóa '現実世界のドラえもん' (00:00 – 00:35) với video 'what if doremon character in real life (もしドラえもんのキャラクターが現実世界にいたら) | AI live action' đạt hơn 123.000 lượt xem."
+    },
+    {
+      "name": "Anime real",
+      "url": "https://www.youtube.com/@Animereal-y8o",
+      "handle": "@Animereal-y8o",
+      "subscribers": "Verified Competitor (111K+ views in 6 days)",
+      "notes": "Kênh mẫu số 2 hiển thị ngay bên dưới trong kết quả tìm kiếm (00:10 – 00:35) với video '【ドラえもん】AIで実写化したら、未来の世界がザワついた件 | Doraemon Live Action Looks TOO REAL' đạt hơn 111.000 lượt xem chỉ sau 6 ngày đăng tải."
+    },
+    {
+      "name": "PAI CHANNEL",
+      "url": "https://www.youtube.com/@pai0212",
+      "handle": "@pai0212",
+      "subscribers": "Verified Competitor (202K+ views in 3 weeks)",
+      "notes": "Kênh mẫu số 3 xuất hiện khi giảng viên cuộn kết quả tìm kiếm '現実世界のドラえもん' (00:25 – 00:40) với video '【Doraemon】ドラえもんのキャラクターをAIで実写化 | Doraemon Characters in Real Life AI Generated' đạt hơn 202.000 lượt xem sau 3 tuần. (Ghi chú đối soát HTTP chuẩn Gate 5: Kênh thứ tư được mở trực tiếp ở 00:45–01:02 là 'AI Boost' với handle cũ @aiboost-y5n đạt 1,4 triệu view hiện trả về HTTP 404 nên đã được loại khỏi mảng URL trực tiếp)."
+    }
+  ],
+  "channels_mentioned": [
+    "@AnimeAI1616",
+    "@Animereal-y8o",
+    "@pai0212"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Khảo sát ngách Biến Đổi Nhân Vật View Nhật ('現実世界のドラえもん') & Phân tích các kênh mẫu viral (@AnimeAI1616, @Animereal-y8o, @pai0212)"
+    },
+    {
+      "time": "01:04",
+      "seconds": 64,
+      "label": "Tổng quan hệ sinh thái 7 công cụ: Google Dịch, ChatGPT, Pinterest, Suno AI, Grok Imagine, CapCut & Picsart"
+    },
+    {
+      "time": "01:31",
+      "seconds": 91,
+      "label": "Dùng ChatGPT xin 10 bộ Anime Nhật Bản & Xuất bảng tên nhân vật Doraemon song ngữ Anh - Nhật (Doraemon | ドラえもん)"
+    },
+    {
+      "time": "03:54",
+      "seconds": 234,
+      "label": "Tải ảnh nhân vật 2D gốc trên Pinterest & Thiết lập 'Con tạo Master Prompt' tự động trên ChatGPT"
+    },
+    {
+      "time": "07:10",
+      "seconds": 430,
+      "label": "Thực hành đưa ảnh gốc + Prompt lên Grok Imagine (mục Image) tạo ảnh thực tế tỷ lệ bắt buộc 1:1"
+    },
+    {
+      "time": "08:11",
+      "seconds": 491,
+      "label": "Tư duy biến tấu trang phục Giáp Robot / Samurai / Giả gái gây tranh luận & Tạo hàng loạt nhân vật (Nobita, Shizuka, Chaien, Xêkô)"
+    },
+    {
+      "time": "13:06",
+      "seconds": 786,
+      "label": "Đưa nền 'grid Background' vào CapCut 16:9, căn bố cục Trái/Phải tỷ lệ 1:1 (6s/nhân vật) & Kỹ thuật Copy-Paste nhân bản timeline"
+    },
+    {
+      "time": "17:59",
+      "seconds": 1079,
+      "label": "Chèn chữ tên nhân vật song ngữ Anh - Nhật (Font BebasNeue, cỡ 15) & Gắn nhãn dán Like/Subscribe cách quãng 4–5 nhân vật"
+    },
+    {
+      "time": "21:16",
+      "seconds": 1276,
+      "label": "Dùng ChatGPT viết prompt tạo nhạc nền không lời trên Suno AI (Instrumental) & Xuất bản video chuẩn 720p/1080p"
+    },
+    {
+      "time": "23:26",
+      "seconds": 1406,
+      "label": "Thiết kế Thumbnail 1920x1080 trên Picsart ghép ảnh Doraemon 2D + ảnh Doraemon thực tế kèm nhãn dán mũi tên đỏ"
+    }
+  ],
+  "course_docs": [
+    {
+      "name": "Bộ Master Prompt & Quy Trình Chuẩn — Bài 20: Video Biến Đổi Nhân Vật View Nhật (DGMD-M06)",
+      "title": "Bộ Master Prompt & Quy Trình Chuẩn — Bài 20: Video Biến Đổi Nhân Vật View Nhật (DGMD-M06)",
+      "path": "assets/docs-dgmd/VIDEO-bfdec7/master_prompt.md",
+      "file": "assets/docs-dgmd/VIDEO-bfdec7/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-bfdec7/master_prompt.md",
+      "type": "markdown",
+      "description": "Tổng hợp từ khóa tiếng Nhật ('現実世界のドラえもん'), chuỗi 3 câu lệnh ChatGPT kèm bảng tên 12 nhân vật Doraemon song ngữ Anh - Nhật, câu lệnh 'Con tạo Master Prompt' cho Grok Imagine (Thực tế & Giáp Robot tỷ lệ 1:1) và prompt nhạc nền không lời Suno AI."
+    }
+  ],
+  "source_transcript": "video/VIDEO-bfdec7/transcript.txt",
+  "verification_status": "GROUNDED_VERIFIED",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "actual_topic": "Quy trình sản xuất video Biến Đổi Nhân Vật Hoạt Hình sang Phiên Bản Thực Tế / Robot săn View Nhật",
+  "key_takeaways": [
+    "Thị trường Nhật Bản (View Nhật) có mức doanh thu quảng cáo (RPM) cao và đặc biệt nổi tiếng với hành vi xem trung thành: khi video xoay quanh các biểu tượng văn hóa đại chúng Nhật Bản (Doraemon, Shin-chan, Pokémon, Conan, Dragon Ball...), luồng view đề xuất cắn rất sâu và duy trì ổn định trong nhiều tháng.",
+    "Nhờ tự động hóa khâu viết prompt bằng 'Con tạo Master Prompt' trên ChatGPT và kỹ thuật nhân bản (Copy-Paste) 2 track ảnh trên CapCut, người làm có thể sản xuất nhanh chuỗi 10 video chuẩn form từ 10 bộ Anime khác nhau, tận dụng ngay kênh Shorts Việt chuyển đổi sang View Nhật để rút ngắn thời gian bật kiếm tiền và đón luồng đề xuất sau 5–20 ngày.",
+    "Mở Google Dịch chuyển từ khóa 'Doraemon phiên bản thực tế' sang tiếng Nhật ('現実世界のドラえもん'), dán lên thanh tìm kiếm YouTube để khảo sát công thức tiêu đề và Thumbnail của các kênh đang viral tại Nhật.",
+    "Trên Tab ChatGPT #1, chạy chuỗi 3 câu lệnh để lấy danh sách 10 bộ phim hoạt hình Nhật Bản, danh sách 20 nhân vật trong Doraemon và xuất bảng đối chiếu 2 cột (Tiếng Anh | Tiếng Nhật Kanji/Kana) để chuẩn bị dán vào CapCut.",
+    "Lên Pinterest tìm tên tiếng Anh của từng nhân vật (Doraemon, Nobita Nobi, Shizuka Minamoto, Takeshi Gouda, Suneo Honekawa, Dorami), tải ảnh 2D gốc về máy đồng thời Copy ảnh dán sang Tab ChatGPT #2 ('Tạo master prompt Grok') để lấy đoạn prompt tiếng Anh biến đổi nhân vật sang thực tế / mặc giáp Robot.",
+    "Truy cập grok.com/imagine, chọn chế độ Image, tải ảnh 2D gốc của nhân vật lên, dán prompt tiếng Anh từ ChatGPT và BẮT BUỘC chọn tỷ lệ khung hình 1:1 (Vuông) trước khi tạo và tải ảnh AI về máy."
+  ],
+  "category_group": "chuyen_gia",
+  "niche_primary": "Biến Đổi Visual & Anime",
+  "niche_id": "dgmd_workflow",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "sop_steps": [
+    "Khi tạo ảnh trên Grok Imagine (mục Image), bắt buộc phải khóa tỷ lệ khung hình là 1:1 (Vuông) — tuyệt đối không để 9:16 — để khi đặt 2 bức ảnh cạnh nhau trên khung ngang 16:9 của CapCut, hai khung ảnh bằng nhau tăm tắp.",
+    "Với những bức ảnh 2D gốc tải từ Pinterest chưa phải hình vuông, ngay khi đưa bức ảnh đầu tiên (Doraemon) vào CapCut hãy dùng công cụ Cắt (Crop) khóa về tỷ lệ 1:1; nhờ đó khi Copy-Paste hai track ảnh ra toàn timeline và kéo ảnh nhân vật mới đè vào, mọi bức ảnh sau đều tự động giữ nguyên khung 1:1.",
+    "Đừng chỉ làm phiên bản người thật đơn thuần giống hệt đối thủ: hãy ra lệnh cho ChatGPT biến tấu nhân vật khoác giáp Robot cơ khí, giáp Samurai, giáp vàng hoặc cài cắm 1 nhân vật nam biến thành nữ (như Nobita phiên bản con gái) để kích thích khán giả Nhật tranh luận sôi nổi dưới phần bình luận.",
+    "Khi ghi tên nhân vật lên video, bắt buộc phải có dòng chữ tiếng Nhật chuẩn (Kanji/Kana lấy từ bảng ChatGPT); tuyệt đối không viết phiên âm tiếng Việt (như 'Si-zu-ka' hay 'Chai-en') vì người xem Nhật Bản sẽ không hiểu.",
+    "Khi xuất bản video trên CapCut PC, chỉ chọn độ phân giải 720p hoặc 1080p (tuyệt đối không xuất 2K/4K gây nặng file vô ích vì đây là video trình chiếu hình ảnh), và hoàn toàn có thể tận dụng kênh Shorts Việt sẵn có chuyển sang đăng video dài View Nhật, kiên trì chờ 5–20 ngày để thuật toán đẩy đề xuất."
+  ]
+}

@@ -1,0 +1,2226 @@
+{
+  "sku": "VIDEO-e0e9cd",
+  "duration": 1535.733333,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo+forensic-verified",
+  "total_segments": 277,
+  "full_text": "Rồi em chào tất cả mọi người nha. Thì mấy bác đã xem qua được cái video bản đầu tiên này rồi đúng không? Thì đây là cái cách làm thủ công, cái cách làm thô. Thì bắt buộc mọi người cũng phải nên xem qua trước khi mà mọi người xem cái video này nha. Video này chính là em sẽ hướng dẫn mọi người làm cùng với cái ngách này luôn, nhưng mà là về cái phiên bản thứ 2, về cách làm khác nha mọi người. Đấy, nó tự động hóa hơn nhưng mà mọi người phải xem qua cái video kia trước nha. Đầu tiên, để làm được bản V2 này, mấy bác tải file plugin này (`h2-2d-studio.plugin`) em có để ở dưới khung video mô tả nha mọi người. Mấy bác tải về trước nha. Rồi, sau đó mọi người vào con Claude nha anh em. Mọi người chuyển về chế độ Cowork nha. Ví dụ như hiện tại là Chat, em chuyển về chế độ Cowork nè. Rồi, mọi người bấm ở dưới này, mọi người bấm Add cái folder của mọi người vào. Ví dụ như em tạo một cái thư mục mới luôn đi, `whatifV2` đi. Mấy bác tạo 1 cái dự án nha. Dự án là 1 cái folder, 1 cái thư mục của mọi người. Đây. Rồi em sẽ click vào, em chọn nè. Em sẽ import đó, em chấp nhận nè. Rồi, sau khi mình đã add cái folder vào rồi á, thì bây giờ em sẽ vào Settings nè. Mọi người xem cái mũi tên em hướng dẫn. Mấy bác chọn xuống ở dưới cuối cùng là phần Plugins. Mọi người bấm ở trên góc phải là `+ Add`, bấm Upload a plugin lên, mọi người bấm vào. Bây giờ mấy bác bấm vào dòng mũi tên, mình sẽ đi tải file plugin (`h2-2d-studio.plugin`) lúc nãy mà mấy bác tải từ Drive em về. Như này đã xong, thì mấy bác bấm nút Upload. Mình lưu lại nha mọi người, thì bây giờ hiện tại nó đã lên rồi. Ví dụ như cái chỗ dấu mũi tên này là tắt, cái dấu công tắc này là tắt, thì mấy bác nhớ bật lên cho nó xanh nha. Thì hiện tại mọi người thấy ở bên tab `Skills · 2` này đã có 2 skill là kịch bản (`kich-ban-whatif`) và làm video (`lam-video-2d`). Như vậy là đã Upload thành công rồi nha mọi người. Rồi, bây giờ mình sẽ quay lại với phần `+ New` chat của mình. Kiểm tra lại đã add thư mục (`whatifV2`) rồi đúng không? Bây giờ thì em sẽ gọi cái skill ra. Em bấm dấu xuyệt (`/`). Mọi người nhìn ở dưới cuối cùng nha. Nó sẽ có 2 cái skill ở trong cái phần plugin `H2 2d studio` của mình. Bây giờ thì em sẽ viết kịch bản đúng không? Đầu tiên là mình sẽ viết kịch bản, mà chọn chủ đề trước chứ. Em sẽ gọi cái skill kịch bản What If (`/kich-ban-whatif`) ra. Ví dụ như mấy bác để không thì mọi người bấm Enter thì nó sẽ chạy gợi ý ra cho mọi người những cái chủ đề. Còn không thì ví dụ mọi người muốn bám theo cái chủ đề của đối thủ như này đúng không, thì anh em copy bỏ vào thì nó sẽ xào nấu lại và làm hay hơn thôi. Nhưng mà em đang hướng dẫn mọi người là tự sáng tạo nội dung content mới luôn. Thế thì bây giờ mọi người để như này, mọi người chỉ cần việc bấm Enter thì nó sẽ tự động chạy và lọc ra các chủ đề mới nha. Đúng đấy, hiện tại thì bây giờ nó đang mở một cái tab trình duyệt lên và nó sẽ kiểm tra với cái kênh đối thủ (`@IfverseTales`) này của em này. Và nó sẽ lọc ra, nó sẽ loại bỏ những cái chủ đề mà đối thủ làm rồi thì nó không có viết lại nữa nha mọi người. Đấy, nó tránh bị trùng với cái chủ đề mà đối thủ đã làm rồi. Rồi. Sau khi chờ đợi một tí thì cuối cùng nó cũng đã lọc ra và bây giờ em sẽ tắt cái tab trình duyệt kia đi nha. Giờ thì nó sẽ thông báo cho mình là đã đọc hết kênh đối thủ nè: họ có 7 video nè, chủ yếu là về ngách phản xạ, IQ 500 và cảm nhận thời gian. Nói chung là cái này nó phân tích thôi. Rồi nó sẽ lưu lại những cái danh sách (`DOI-THU-IFVERSE.txt`). Đây, nó sẽ tạo ra cho em một cái file trong cái folder (`D:\\whatifV2\\DOI-THU-IFVERSE.txt`) của mình nè. Cái danh sách này là các cái chủ đề mà đối thủ đã làm rồi. Đến lúc mà mình làm video tiếp theo thì nó sẽ lọc lại thôi. Ở dưới là nó sẽ gợi ý cho em 10 chủ đề. Bây giờ nó sẽ khuyến nghị cho em chọn số 1 hoặc số 2. Còn mình có thể chọn số nào, chọn chủ đề nào bất kỳ mình muốn cũng được, chứ không cần phải số 1. Nhưng mà bây giờ thì em sẽ làm theo khuyến nghị của nó luôn: em sẽ chọn số 1 và Enter luôn. Mấy bác chỉ cần ghi số 1 và Enter phát là nó sẽ tự động, nó sẽ viết luôn, nó tự hiểu nha. Mình không cần phải ghi dài dòng đâu mọi người ạ. Đối với phiên bản hướng dẫn V2 này thì thật sự rất là nhàn cho mọi người và mọi người chỉ cần việc phụ thuộc vào chờ đợi con Claude này nó gen thôi. Mấy bác lưu ý là phải xem qua bản hướng dẫn phần làm thô, làm thủ công video hôm trước cho em nha. Mọi người phải xem trước video đó để mọi người hiểu được quy trình. Bởi vì sau này có những cái ngách em chia sẻ cho mọi người và hướng dẫn mọi người làm thì nó có kết hợp cả 2 thứ 2 bên nữa nha. Chứ không phải là nó chỉ phụ thuộc vào cái tự động không như này đâu nha mọi người. Nên là đó là vấn đề em chia ra, em hướng dẫn cho mọi người từ cái cơ bản đơn giản nhất cho đến những cái cao hơn nha. Rồi, khi chờ đợi xong một tí, cuối cùng nó đã gen xong hết toàn bộ kịch bản. Đây là cái về chủ đề là: \"What If You Never Needed to Sleep?\" (Điều gì xảy ra nếu bạn không bao giờ ngủ?) nè. Đây là cái Part 1, có nghĩa là Part 1 này á, mấy bác hình dung là ví dụ mình làm cái chủ đề này đúng không? Những video sau, mấy bác muốn làm thêm một cái tập nữa, một cái Part 2, một cái phần của chủ đề này nữa, đối với video sau, mọi người tiếp tục gọi cái Part 2 thôi. Còn video này nó để là Part 1 như vậy. Còn mọi người không làm nữa thì mọi người không cần quan tâm. Rồi ở dưới thì nó phân tích ra nhịp câu (`20 dấu \"...\", 20 câu hỏi, câu trung bình 4,4 từ`), kịch bản này kia thôi. Mọi người có thể đọc qua. Rồi nó sẽ gợi ý cho em là bước tiếp theo cần phải làm gì nè. Bước tiếp theo là import file (`02-VOICE-never-sleep-DGT.txt`) vào tạo voice nè, xong rồi xuất cái MP3 vào, rồi cuối cùng gọi cái skill dựng video (`/lam-video-2d`) làm video lên thôi. Đấy, nó chỉ đơn giản như vậy thôi. Mấy bác đã xem video trước thì mấy bác biết là mình cần phải làm hình ảnh video này kia nó rất là lâu đúng không? Xong rồi đến voice. Còn bây giờ thì cái này chỉ cần voice thôi nha. Rồi em cho mọi người xem qua kịch bản full của nó trước. Đây, ví dụ đây là kịch bản full (`01-SCRIPT-never-sleep.txt`) của nó nha. Đấy, video này thì hơn 6 phút, tầm gần 7 phút mọi người ạ. Còn tiếp tục cái mình quan tâm là cái file này nha, file DGT (`02-VOICE-never-sleep-DGT.txt`) này. Mấy bác bấm vào xem, thì đây nó cũng đã có chú thích là `#1` (thăng 1), `#2` (thăng 2), thăng tới `#6` (thăng 6). Có nghĩa là sẽ gồm 6 giọng, 6 voice nha. Đấy, chỗ này thì nó cũng giống như cái video trước thôi mọi người ạ. Bởi vì cái ngách này thì là cần 6 voice bởi vì 6 nhân vật, hội thoại khác nhau ha. Rồi, em sẽ mở cái tool ElevenLabs (`Dinh Media Auto TTS Subtitles`) của em lên và vẫn như cái hôm trước thôi. Và em đã import sẵn là 6 cái ID voice, 6 cái giọng vào rồi. Và mỗi giọng nó sẽ tương ứng với những cái chỉ số mà em đã đặt nè. `#3` (thăng 3) là ví dụ như là cái giọng số 3 bên này thôi. Đấy. Và tới 6, thì cái này em không giải thích thêm nữa nha. Cái video trước em đã nói khá là chi tiết rồi. Bây giờ thì em sẽ vào, import cái file kịch bản đó vào. Đây, cái file DGT (`02-VOICE-never-sleep-DGT.txt`) này, nó có chú thích nè. Chắc là em sẽ tua nhanh qua cái chỗ tạo giọng đọc này ha. Nếu mà ví dụ như mấy bác mà dùng những cái công cụ khác, những cái tool khác, những cái lồng giọng đọc khác á, miễn sao mọi người ra được những cái voice hội thoại, hoặc là mọi người cho nó một file dài cũng được, miễn sao mà nó có hội thoại đúng với cái ngách, đúng với cái nhu cầu mọi người muốn thôi. Thì import vào thì con Claude nó cũng tự động làm thôi nha. Nó sẽ tự hiểu chứ không cần phải là tool ElevenLabs đâu. Đây nè, mọi người có thể quay lại cái kênh đối thủ này mấy bác xem lại, nghe lại, nó sẽ có rất là nhiều cái giọng ở trong đó đấy. Lúc train thì em đã train rất là kỹ rồi nên là con Claude nó đã báo rất là chính xác nha mọi người. Nên là mình muốn làm giống theo họ thì phải chấp nhận là làm theo kiểu hội thoại giống họ luôn ha. Rồi, sau khi mà đã gen xong voice rồi thì em sẽ vào kiểm tra lại ha. Nó sẽ tự sinh ra một thư mục `voice` này. Trong này nó gồm tất cả các đoạn đã chia ra (`1.mp3`, `2.mp3`...) nha mọi người. Mấy bác có thể nghe lại nha, còn em thì chắc chắn là sẽ được rồi nên là em không cần nghe lại. Mọi người kiểu nghe lại để kiểm tra thử có ok không á. Còn đối với em thì dùng tool này chắc chắn nó sẽ ok rồi mọi người ạ. Thì mọi người có thể thoát ra và mọi người có thể edit lại, chỉnh lại cái tên thư mục thành tên là `voice` cũng được. Còn không thì mọi người để vậy nó cũng tự hiểu. Hôm nay em làm hướng dẫn thì em sẽ hướng dẫn đầy đủ cho mọi người luôn. Thì mấy bác chỉnh lại tên thư mục `voice` này, để khi mà cái con Claude nó đọc cái skill của mình thì nó sẽ dễ hiểu hơn ha. Rồi thì ok, sau khi mà đã có được rồi, bây giờ mình sẽ đi vào dựng, gọi skill làm video (`/lam-video-2d`) nè. Mình làm thôi mọi người, chứ không cần phải cung cấp thêm gì nữa nha. Bây giờ đối với cái chỗ này, em sẽ ghi một câu lệnh là: `dựng video cho project của tôi`. Project thì đây, em sẽ quay lại với cái đường dẫn của mình nè. Đường dẫn của project nè (`projects\\01-never-sleep`), copy cái tên dự án của mình nè mọi người. Mấy bác copy dài như vậy cho nó chuẩn nha. Em dán lại nè. Rồi, xong rồi em sẽ ghi thêm một câu nữa là: `voice trong thư mục voice`. Có nghĩa là cái âm thanh của tôi đang để ở trong cái thư mục `voice`. Đấy, như vậy để cho nó hiểu ha. Thường thì mấy bác có thể chạy luôn cũng được, nó cũng sẽ tự động hiểu thôi. Nhưng mà để như này, để tiết kiệm thời gian nó đọc lại thì mình ghi ra như này luôn cho nó nhanh nha mọi người. Đấy, rồi, như này thì mấy bác chỉ cần việc Enter chạy. Nó chạy, và khi chạy, nó sẽ hỏi mình những câu hỏi như này: là kích thước khung hình mình muốn, là ví dụ như em đang dùng làm YouTube đúng không, là `16:9 · 1080p (Recommended)`, đương nhiên em sẽ chọn `16:9` rồi; và cái thứ 2 là cái nhạc nền và cái hiệu ứng âm thanh (`SFX`), thì đương nhiên em sẽ chọn là `Tự tạo nhạc + SFX (Recommended)` nè, cái khuyến nghị đầu tiên recommend của nó nè, nó khuyến nghị gửi cho mình thì mình cũng chọn theo cái đề xuất của nó luôn nha. Xong rồi mình chỉ cần việc đợi nó gen thôi nha mọi người. Thì cái cách làm phiên bản 2 này á, thì em cũng giải thích luôn cho mấy bác để rõ chi tiết về nó có ưu điểm và nhược điểm như thế nào nhé. Về ưu điểm, như mấy bác cũng đã thấy là đối với bản này, mọi người không cần tốn quá nhiều thời gian cũng như là tiền tài nguyên đầu tư vào công cụ tạo ảnh như Flow, mọi người phải mất thời gian tốn tiền credit đi tạo ảnh, tạo video, rất rất là tốn thời gian luôn. Rất là mất công đúng không? Cái này thì mọi người chỉ cần việc tạo voice thôi, tạo giọng đọc thôi, và sau đó mọi người gọi skill nó chạy. Đó là về cái ưu điểm của nó. Còn về cái nhược điểm thì cái này nó sẽ chạy phụ thuộc vào cái cấu hình máy của mấy bác. Ví dụ như máy mọi người cấu hình cao mạnh thì nó sẽ chạy nhanh. Còn mọi người máy yếu thì đương nhiên mọi người sẽ đợi nó chạy lâu nha, chạy khá là lâu luôn ấy đối với hiện tại. Em đang dùng máy PC của em, nó chạy tốt hơn, nhanh hơn máy MacBook của em nha mọi người. Đấy, những cái ưu nhược điểm em nói để cho mấy bác rõ được. Thì nói chung là lâu thì mấy bác cũng phải đợi thôi, tầm 1–2 tiếng nha mọi người. Đối với video tầm 7 phút thì khoảng thời gian đối với máy em nha, hiện tại em đang test hôm bữa giờ thì đối với máy em video tầm 7 phút thì đợi tầm hơn 1 tiếng 40–50 phút nha mọi người: 1 giờ 50 phút, gần 2 tiếng nha mọi người. Đấy, đó là em nói chi tiết rõ để mấy bác có thể nắm được. Nói chung cái việc này đã nhàn mà, mình đợi nó gen thôi. Trong lúc mà đợi thì mấy bác làm việc khác thôi. Có gì đâu đúng không? Còn một cái nữa đặc biệt là cái này nó không có tốn nhiều token của mọi người như mọi người nghĩ đâu nha. Nhiều bác cứ nghĩ là nó sẽ đốt token của mọi người rất là nhiều đúng không? Nhưng mà không. Cái này nó chỉ tốn là tốn nhiều thời gian của mọi người đợi thôi. Chứ còn về cái token thì nó không có tốn bao nhiêu cả. Để tí nữa, xong cái demo hướng dẫn này á, thì em sẽ mở cái phiên làm việc vừa rồi cho mấy bác xem thử nó đốt bao nhiêu token nha, và nó chiếm bao nhiêu phần trăm nha. Đấy, chút em cho mọi người thấy cái thực tế luôn. Thật sự nó đốt rất là ít, nó không có nhiều như mấy bác nghĩ đâu. Và khi chạy, khi đợi nó gen, thì mọi người nhớ để ý nha: nó sẽ chạy đến cái đoạn và nó sẽ có một cái gợi ý, nó hỏi cho mình là nó sẽ cho một cái ảnh demo (`Style never sleep.JPG`) ở bên phải này, và có một câu hỏi là mình muốn chọn kiểu như style phong cách cái màu nền nào mọi người, màu cho cái video của mình đó. Thì ở trên này nó có recommend là màu đêm xanh nè, đêm xanh đèn vàng ấm (`Dusk (Recommended)`) nè. Thì em sẽ chọn với cái recommend, cái khuyến nghị của nó luôn nha. Còn lại mọi người nếu muốn màu khác (`Midnight`, `Golden`, `Storybook`) thì mấy bác có thể chọn những câu ở dưới thôi. Mọi người tích vào, rồi tiếp tục nó sẽ gen tiếp, mình đợi tiếp ha. Cái ảnh bên phải là nó gợi ý nó hiện ra để cho mình thấy được, so sánh giữa 4 cái màu nó đề xuất nha mọi người. Thì vừa rồi em chọn cái màu đầu tiên là `Dusk` gì đây nè, là cái màu nền đêm xanh và cái đèn vàng ha. Tiếp tục chạy một lúc nữa thì nó sẽ cho ra một cái demo 30 giây (`Preview never sleep 30s.MP4`), và nó sẽ hỏi mình là bạn xem cái bản demo 30 giây này xem thử thấy ổn không, ok chưa, và có cần chỉnh gì không thì nó sẽ chỉnh, còn không thì nó sẽ làm tiếp. Rồi, bây giờ thì em sẽ cùng với mấy bác để xem cái demo 30 giây này thử như nào nha. Most people sleep about eight hours a night. That's one-third of your life. Around 26 years... with your eyes closed. Some rare people, with a lucky gene, feel fine on six. The world record for staying awake? 264 hours. Set in 1964. Eleven days. You? Zero hours of sleep. Not one minute. Ever. So what if you never needed to sleep? Amazing. And awful. Usually both at once. Your name is Theo. You're sixteen. Tonight... Đấy, như mấy bác vừa xem với em xem thì thật sự thấy nó rất là đẳng cấp và rất là VIP đúng không? Rất là xịn so với cái bản hướng dẫn hôm trước, cái bản V1 hôm trước mình làm thủ công đúng không mọi người? Đấy, thì đó là cái vấn đề là chất lượng và phụ thuộc vào mỗi cách làm khác nhau ấy mọi người. Đấy, bởi vậy nói chung á, cái này nó còn tùy thuộc vào mỗi ngách khác nhau nữa chứ không phải ngách nào cũng áp dụng theo cái kiểu tự động hóa không như này đâu nha mọi người. Đó là lý do tại sao em nói mấy bác cứ xem cái bản kia trước. Hôm sau em sẽ có vài ngách có kết hợp cả 2 lại với nhau, thì lúc đó em hướng dẫn mọi người thì mọi người sẽ hiểu hơn và hình dung ra được rất là dễ dàng thôi. Ok nha mọi người. Thì bây giờ em sẽ bấm chọn là `Ổn, xuất tiếp (Recommended)`: cái demo đã ổn rồi, bạn hãy làm tiếp đi nha. Cái này thì mình không cần sửa gì nữa. Đến cái chỗ mà sau khi mà trả lời cái phần demo 30 giây này xong rồi, thì mấy bác chỉ cần việc chờ đợi một lúc nữa thôi thì nó sẽ gen ra xong nha. Lúc này thì mình không cần trả lời, không còn câu hỏi gì nữa đâu mọi người ạ. Đến khi mà xong thì nó sẽ xuất cho mình một cái file luôn. Đấy. Rồi ok, bây giờ thì em sẽ tua nhanh qua cái đoạn này nha để tiết kiệm thời gian mọi người ạ. Rồi, sau khi chờ đợi gần 2 tiếng đồng hồ, chính xác là 1 giờ 50 mấy phút luôn đấy mọi người, thì cuối cùng nó đã tạo ra cho em này. Nó đã dựng xong, có thông báo video chất lượng là 1080p, độ dài là 6 phút 11 giây. Nói chung, lúc đầu nó ước lượng gần 7 phút thì cũng đúng thôi mọi người, tùy vào kịch bản nha. Còn lúc mà mình làm voice, mình bỏ vào rồi nó edit này kia nữa, nó sẽ rút gọn lại, hoặc là nó có phình to ra thì nói chung cái đó là đương nhiên nó sẽ xảy ra rồi, nhưng mà không biết cái tỷ lệ như nào thôi. Cái đó thì nói chung mình không cần quan tâm lắm đâu mọi người. Rồi, ở dưới thì nó báo cáo cho mình là nó đã làm như thế nào thôi. Về cái phần cuối ở dưới này nó thông báo cho mình là: \"Bộ dựng có hai lỗi nhỏ, mình đã sửa...\". Nói chung có lỗi nào thì mọi người cứ yên tâm, nó fix rồi nó báo cho mình thôi. Ví dụ như hiện tại là cái vừa rồi thì nó có 2 lỗi là lông mày (\"giận\" và \"lo lắng\") với cái gì đó, và cái chữ text \"Dr.\" ấy mọi người, bị sao lệch gì đó thì nó cũng đã fix cho em rồi, và nó cũng sửa lại trong cái plugin gốc rồi, thì em cũng sẽ cập nhật cái mới nhất và cái chuẩn nhất cho mọi người lên Drive thôi. Mấy bác yên tâm ha. Bây giờ thì em sẽ tải cái video chất lượng 1080p (`never-sleep-final.mp4`) này về, và em sẽ mở cho mọi người xem cùng demo với em nha. Đây, đây là cái video bản demo 30 giây của em lúc nãy nè, và cái ảnh phân tích (`Style never sleep.JPG`) nè, rồi cuối cùng là cái video full vừa rồi nó vừa xuất ra nè. Thì bây giờ mấy bác cùng với em xem hết cái demo này. Mọi người nhớ xem cái phần cuối, em sẽ show cho mấy bác thấy được cái độ tốn token của nó là bao nhiêu nha. Còn nếu mọi người không xem hết demo thì mọi người có thể tua qua thôi. Demo này thì nó dài tầm 6 phút, thì em sẽ giữ nguyên 6 phút em không cắt để cho mọi người thấy được cái chất lượng nó như nào thôi. Đấy, rồi ok, bây giờ thì em sẽ mở lên xem nhé. Most people sleep about eight hours a night. That's one-third of your life. Around 26 years... with your eyes closed. Some rare people, with a lucky gene, feel fine on six. The world record for staying awake? 264 hours. Set in 1964. Eleven days. You? Zero hours of sleep. Not one minute. Ever. So what if you never needed to sleep? Amazing. And awful. Usually both at once. Your name is Theo. You're sixteen. Tonight, like every night, the house goes dark at ten. Mom yawns. Your little sister Mia yawns. You... don't. Good night, Theo. Night, Mia. She means it. You just nod. Because for you, there's no night. There's just... more day. Here's how it works. When you're awake, a chemical called adenosine builds up in your brain. The more it piles up, the sleepier you feel. Coffee works by blocking it. Your adenosine? It never piles up. Not once. So coffee is useless. It's just hot bean water. And here's the rule. You never need to sleep. But you also can't. Not even if you try. Not even if you want to. People kept awake too long start having microsleeps. Tiny naps, a few seconds long, that they don't even notice. You? Never. Not one. Plus: eight extra hours. Every single day. You learned guitar in a month. Spanish in three. Your homework is done by midnight. Your sister's homework too. Did you do my math? It's 2 a.m. What else would I do? Minus: at 2 a.m., everyone you love is unconscious. The fridge hums. The clock ticks. You've counted the ceiling tiles: 412. Twice. Plus: your brain stays clean. Normally, sleep is when the brain flushes out its waste. Scientists watched it happen in mice in 2013, fluid rushing through, like a night shift of tiny janitors. Your janitors? They work days too. While you're still using the room. Minus: you have never dreamed. Not once. Every morning, Mia tells you hers. I was a dolphin! Dolphins sleep with half their brain! Did you dream? I watched the microwave clock. Again? That half-brain thing is real, by the way. Dolphins really do it. You can't even do that. Plus: you see the world nobody sees. The baker at four, the street sweeper at five, and every night at exactly three, your neighbor Sam's porch light blinks. Three times. Sam is eighty-one. He doesn't sleep much either. Three blinks means all good. You blink your desk lamp back. Every night. For six years. Minus: hiding it. When you were eight, Mom took you to a sleep lab. Dr. Lee stayed up with you for three nights. He drank nine coffees. You drank milk. Fascinating. Could I keep him... for a year? Absolutely not. So you hide. At sleepovers, you lie still with your eyes closed for seven hours. Seven hours is very long. Your friend Jake snores like a leaf blower. You know exactly when. You keep a chart. And your family hides it with you. Mom leaves soup in the fridge, with a note, for your 3 a.m. Mia leaves her door open, so the house feels less empty. Mom never tells anyone. Ever. Then, one evening, Dr. Lee calls. Theo. I have something new. One tablet. It might let you sleep. Just once. Eight hours. Would I... dream? Maybe. That night, you hold the tablet. Tiny. White. Your first dream. Maybe you'd fly. Maybe you'd be a dolphin. It's 2:59. You lift the glass of water. And out of habit, you look out the window. Three o'clock. Sam's porch light doesn't blink. You wait. 3:01. Nothing. His kitchen light is on. And through the window, Sam is on the phone. Shaking. The dream... or the neighbor? You put the tablet down. Somebody has to stay awake. You knock on Sam's door. He opens it, phone still at his ear. Theo? It's the police. Ava's in jail. My granddaughter. They need bail. A voice on the speaker. Calm. Cold. Sir, $5,000 in gift cards. And don't call her parents. It only makes things worse. Gift cards. At 3 a.m. Here's the truth: real police never ask for gift cards. Real banks never do either. If someone tells you to keep it from your family, hang up. Then call your family, on the number you already know. Ava's number is on Sam's fridge. You call. It rings. Once. Twice. Hello... Theo? It's three in the morning! Ava. Are you in jail? What? I'm in bed! Sam hears it. He stares at his phone. And he hangs up. Hello? Sir? Sir? Click. The next day, police traced the number. The caller called himself Officer Black. He had called 11 homes on your street that night, every one of them at 3 a.m. Sam brings over a plate of cookies. Ava calls him every night now, at 9, not 3. That evening, Mia hands you a drawing: a boy with a guitar, floating in the sea, next to a dolphin. That's my dream from last night. You were in it. So now, you have one too. You never took the tablet. Dr. Lee asks you why. Somebody has to stay awake. 3 a.m. Sam's porch light blinks. 1, 2, 3. All good. You blink back. But one thing keeps you up. Not that you sleep anyway. The man on the phone called every night at 3. He never yawned. He never slowed down. Who calls at 3 a.m. every night and never sounds tired? Someone else out there... doesn't sleep either. So what would you do with eight extra hours every night? Tell us what you'd do at 3 a.m. in the comments. And if you'd have put the tablet down too, hit like and subscribe for Part 2. Rồi, mọi người thấy không, phần cuối này nó có để là mình kêu gọi đăng ký, comment và có thể ra Part 2 là cái phần 2 á mọi người. Đó là lý do tại sao lúc nãy viết kịch bản nó ghi là nó chú thích là Part 1 (phần 1) á mọi người. Đấy, rồi. Thì mấy bác xem video demo mọi người thấy nó làm rất là đỉnh không? Rất là giống kênh đối thủ luôn đúng không? Thì ở đây, ở phần cuối là có cái thumb (`Never sleep thumbnail.PNG`) nữa nè, nó tạo ra cho em một cái thumb luôn. Mọi người thấy ok không? Còn nếu mấy bác muốn làm ảnh thumb khác hay không thích thì mọi người cứ yêu cầu nó làm lại thôi, không có gì hết á, nhưng mà em thấy khá là hợp lý rồi đó, rất là xịn luôn nha. Cuối cùng thì bây giờ em sẽ mở cái Settings -> Usage lên để cho mọi người xem nè. Đây, cái phiên vừa rồi (`Current session`) thì gói Max 100$ ha, chỉ tốn `1% used` thôi. Cái ở dưới này (`This week: 11% used`) là cả tuần nha mọi người. Còn ở dưới này thì model `Fable` (`0% used`) em không có dùng. Lúc nãy giờ em dùng model là `Opus 5.5` nha. Và cái phiên làm việc lúc vừa rồi thì chỉ tốn 1% token thôi. Mấy bác thấy kinh không? Rất rất là ít luôn. Còn cái chính giữa là cái trong tuần (`This week`) nha. Lúc mà em làm video này thì là tối thứ Tư nha mọi người, thì trước đó em làm rất là nhiều việc nên là nó trừ 11% đó, mấy bác đừng có quan tâm. Mấy bác quan tâm là cái phiên làm việc đầu tiên (`Current session`) kia nè, nó chỉ tốn, nó đốt cho em có 1% thôi. Và cái này là đối với em đang dùng gói Max là 100$/tháng nha mọi người. Còn mấy bác dùng gói Pro thì mấy bác có thể tự test xem. Nhưng mà em chắc chắn đảm bảo rằng nó không có đốt nhiều. Mấy bác thấy không, nó chỉ đốt 1% như thế là rất là ít rồi. Em làm rất là nhiều thứ trước giờ rồi, em so sánh được và em thấy được cái 1% này là rất rất là ít nha, chứ không có nhiều như mọi người nghĩ đâu. Thường thì đầu vào mấy bác thấy ra được video rất là xịn như thế, mọi người cứ nghĩ là nó gen ra sẽ tốn nhiều token đúng không? Nhưng mà em thấy rất là bình thường nha. Cái quan trọng em nhắc lại là cái này nó sẽ gen video rất là lâu và tùy thuộc vào cái cấu hình máy của mọi người nữa nha. Rồi ok, em cảm ơn tất cả mọi người đã xem video đến đây. Thì cái video này là về cái ngách What If mà em đã làm 2 phiên bản. Phiên bản 1 là cách làm thô thủ công mà mấy bác nên xem qua để biết được quy trình. Và cái này là phiên bản tự động, tự động hóa luôn nha mọi người. Sau này có những cái ngách mới thì em sẽ tiếp tục chia sẻ hướng dẫn mọi người sau nha. Rồi, em cảm ơn tất cả mọi người đã xem video đến đây.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 5.96,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:05,960",
+      "text": "Rồi em chào tất cả mọi người nha. Thì mấy bác đã xem qua được cái video bản đầu tiên này rồi đúng không?"
+    },
+    {
+      "id": 2,
+      "start": 5.96,
+      "end": 15.14,
+      "start_time": "00:00:05,960",
+      "end_time": "00:00:15,140",
+      "text": "Thì đây là cái cách làm thủ công, cái cách làm thô. Thì bắt buộc mọi người cũng phải nên xem qua trước khi mà mọi người xem cái video này nha."
+    },
+    {
+      "id": 3,
+      "start": 15.14,
+      "end": 24.1,
+      "start_time": "00:00:15,140",
+      "end_time": "00:00:24,100",
+      "text": "Video này chính là em sẽ hướng dẫn mọi người làm cùng với cái ngách này luôn, nhưng mà là về cái phiên bản thứ 2, về cách làm khác nha mọi người."
+    },
+    {
+      "id": 4,
+      "start": 24.1,
+      "end": 28.56,
+      "start_time": "00:00:24,100",
+      "end_time": "00:00:28,560",
+      "text": "Đấy, nó tự động hóa hơn nhưng mà mọi người phải xem qua cái video kia trước nha."
+    },
+    {
+      "id": 5,
+      "start": 28.56,
+      "end": 37.48,
+      "start_time": "00:00:28,560",
+      "end_time": "00:00:37,480",
+      "text": "Đầu tiên, để làm được bản V2 này, mấy bác tải file plugin này (`h2-2d-studio.plugin`) em có để ở dưới khung video mô tả nha mọi người."
+    },
+    {
+      "id": 6,
+      "start": 37.48,
+      "end": 39.48,
+      "start_time": "00:00:37,480",
+      "end_time": "00:00:39,480",
+      "text": "Mấy bác tải về trước nha."
+    },
+    {
+      "id": 7,
+      "start": 39.48,
+      "end": 42.68,
+      "start_time": "00:00:39,480",
+      "end_time": "00:00:42,680",
+      "text": "Rồi, sau đó mọi người vào con Claude nha anh em."
+    },
+    {
+      "id": 8,
+      "start": 42.68,
+      "end": 48.02,
+      "start_time": "00:00:42,680",
+      "end_time": "00:00:48,020",
+      "text": "Mọi người chuyển về chế độ Cowork nha. Ví dụ như hiện tại là Chat, em chuyển về chế độ Cowork nè."
+    },
+    {
+      "id": 9,
+      "start": 48.02,
+      "end": 51.94,
+      "start_time": "00:00:48,020",
+      "end_time": "00:00:51,940",
+      "text": "Rồi, mọi người bấm ở dưới này, mọi người bấm Add cái folder của mọi người vào."
+    },
+    {
+      "id": 10,
+      "start": 51.94,
+      "end": 56.48,
+      "start_time": "00:00:51,940",
+      "end_time": "00:00:56,480",
+      "text": "Ví dụ như em tạo một cái thư mục mới luôn đi, `whatifV2` đi."
+    },
+    {
+      "id": 11,
+      "start": 56.48,
+      "end": 63.16,
+      "start_time": "00:00:56,480",
+      "end_time": "00:01:03,160",
+      "text": "Mấy bác tạo 1 cái dự án nha. Dự án là 1 cái folder, 1 cái thư mục của mọi người. Đây."
+    },
+    {
+      "id": 12,
+      "start": 63.16,
+      "end": 69.84,
+      "start_time": "00:01:03,160",
+      "end_time": "00:01:09,840",
+      "text": "Rồi em sẽ click vào, em chọn nè. Em sẽ import đó, em chấp nhận nè. Rồi, sau khi mình đã add"
+    },
+    {
+      "id": 13,
+      "start": 69.84,
+      "end": 76.52,
+      "start_time": "00:01:09,840",
+      "end_time": "00:01:16,520",
+      "text": "cái folder vào rồi á, thì bây giờ em sẽ vào Settings nè. Mọi người xem cái mũi tên em hướng dẫn."
+    },
+    {
+      "id": 14,
+      "start": 76.52,
+      "end": 81.0,
+      "start_time": "00:01:16,520",
+      "end_time": "00:01:21,000",
+      "text": "Mấy bác chọn xuống ở dưới cuối cùng là phần Plugins."
+    },
+    {
+      "id": 15,
+      "start": 81.0,
+      "end": 88.0,
+      "start_time": "00:01:21,000",
+      "end_time": "00:01:28,000",
+      "text": "Mọi người bấm ở trên góc phải là `+ Add`, bấm Upload a plugin lên, mọi người bấm vào."
+    },
+    {
+      "id": 16,
+      "start": 88.0,
+      "end": 96.0,
+      "start_time": "00:01:28,000",
+      "end_time": "00:01:36,000",
+      "text": "Bây giờ mấy bác bấm vào dòng mũi tên, mình sẽ đi tải file plugin (`h2-2d-studio.plugin`) lúc nãy mà mấy bác tải từ Drive em về."
+    },
+    {
+      "id": 17,
+      "start": 96.0,
+      "end": 101.66,
+      "start_time": "00:01:36,000",
+      "end_time": "00:01:41,660",
+      "text": "Như này đã xong, thì mấy bác bấm nút Upload."
+    },
+    {
+      "id": 18,
+      "start": 101.66,
+      "end": 106.0,
+      "start_time": "00:01:41,660",
+      "end_time": "00:01:46,000",
+      "text": "Mình lưu lại nha mọi người, thì bây giờ hiện tại nó đã lên rồi."
+    },
+    {
+      "id": 19,
+      "start": 106.0,
+      "end": 111.62,
+      "start_time": "00:01:46,000",
+      "end_time": "00:01:51,620",
+      "text": "Ví dụ như cái chỗ dấu mũi tên này là tắt, cái dấu công tắc này là tắt, thì mấy bác nhớ bật lên cho nó xanh nha."
+    },
+    {
+      "id": 20,
+      "start": 111.62,
+      "end": 117.08,
+      "start_time": "00:01:51,620",
+      "end_time": "00:01:57,080",
+      "text": "Thì hiện tại mọi người thấy ở bên tab `Skills · 2` này đã có 2 skill là kịch bản (`kich-ban-whatif`) và làm video (`lam-video-2d`)."
+    },
+    {
+      "id": 21,
+      "start": 117.08,
+      "end": 120.48,
+      "start_time": "00:01:57,080",
+      "end_time": "00:02:00,480",
+      "text": "Như vậy là đã Upload thành công rồi nha mọi người."
+    },
+    {
+      "id": 22,
+      "start": 120.48,
+      "end": 124.48,
+      "start_time": "00:02:00,480",
+      "end_time": "00:02:04,480",
+      "text": "Rồi, bây giờ mình sẽ quay lại với phần `+ New` chat của mình."
+    },
+    {
+      "id": 23,
+      "start": 124.48,
+      "end": 127.48,
+      "start_time": "00:02:04,480",
+      "end_time": "00:02:07,480",
+      "text": "Kiểm tra lại đã add thư mục (`whatifV2`) rồi đúng không?"
+    },
+    {
+      "id": 24,
+      "start": 127.48,
+      "end": 129.48,
+      "start_time": "00:02:07,480",
+      "end_time": "00:02:09,480",
+      "text": "Bây giờ thì em sẽ gọi cái skill ra."
+    },
+    {
+      "id": 25,
+      "start": 129.48,
+      "end": 132.48,
+      "start_time": "00:02:09,480",
+      "end_time": "00:02:12,480",
+      "text": "Em bấm dấu xuyệt (`/`). Mọi người nhìn ở dưới cuối cùng nha."
+    },
+    {
+      "id": 26,
+      "start": 132.48,
+      "end": 136.48,
+      "start_time": "00:02:12,480",
+      "end_time": "00:02:16,480",
+      "text": "Nó sẽ có 2 cái skill ở trong cái phần plugin `H2 2d studio` của mình."
+    },
+    {
+      "id": 27,
+      "start": 136.48,
+      "end": 138.48,
+      "start_time": "00:02:16,480",
+      "end_time": "00:02:18,480",
+      "text": "Bây giờ thì em sẽ viết kịch bản đúng không?"
+    },
+    {
+      "id": 28,
+      "start": 138.48,
+      "end": 141.48,
+      "start_time": "00:02:18,480",
+      "end_time": "00:02:21,480",
+      "text": "Đầu tiên là mình sẽ viết kịch bản, mà chọn chủ đề trước chứ."
+    },
+    {
+      "id": 29,
+      "start": 141.48,
+      "end": 147.193,
+      "start_time": "00:02:21,480",
+      "end_time": "00:02:27,193",
+      "text": "Em sẽ gọi cái skill kịch bản What If (`/kich-ban-whatif`) ra. Ví dụ như mấy bác để không thì mọi người bấm Enter thì nó"
+    },
+    {
+      "id": 30,
+      "start": 147.193,
+      "end": 152.907,
+      "start_time": "00:02:27,193",
+      "end_time": "00:02:32,907",
+      "text": "sẽ chạy gợi ý ra cho mọi người những cái chủ đề. Còn không thì ví dụ mọi người muốn bám theo cái chủ"
+    },
+    {
+      "id": 31,
+      "start": 152.907,
+      "end": 158.62,
+      "start_time": "00:02:32,907",
+      "end_time": "00:02:38,620",
+      "text": "đề của đối thủ như này đúng không, thì anh em copy bỏ vào thì nó sẽ xào nấu lại và làm hay hơn thôi."
+    },
+    {
+      "id": 32,
+      "start": 158.668,
+      "end": 170.208,
+      "start_time": "00:02:38,668",
+      "end_time": "00:02:50,208",
+      "text": "Nhưng mà em đang hướng dẫn mọi người là tự sáng tạo nội dung content mới luôn. Thế thì bây giờ mọi người để như này, mọi người chỉ cần việc bấm Enter thì nó sẽ tự động chạy và lọc ra các chủ đề mới nha."
+    },
+    {
+      "id": 33,
+      "start": 170.208,
+      "end": 176.888,
+      "start_time": "00:02:50,208",
+      "end_time": "00:02:56,888",
+      "text": "Đúng đấy, hiện tại thì bây giờ nó đang mở một cái tab trình duyệt lên và nó sẽ kiểm tra với cái kênh đối thủ (`@IfverseTales`) này của em này."
+    },
+    {
+      "id": 34,
+      "start": 177.308,
+      "end": 183.808,
+      "start_time": "00:02:57,308",
+      "end_time": "00:03:03,808",
+      "text": "Và nó sẽ lọc ra, nó sẽ loại bỏ những cái chủ đề mà đối thủ làm rồi thì nó không có viết lại nữa nha mọi người."
+    },
+    {
+      "id": 35,
+      "start": 184.188,
+      "end": 188.528,
+      "start_time": "00:03:04,188",
+      "end_time": "00:03:08,528",
+      "text": "Đấy, nó tránh bị trùng với cái chủ đề mà đối thủ đã làm rồi."
+    },
+    {
+      "id": 36,
+      "start": 188.528,
+      "end": 190.128,
+      "start_time": "00:03:08,528",
+      "end_time": "00:03:10,128",
+      "text": "Rồi."
+    },
+    {
+      "id": 37,
+      "start": 190.208,
+      "end": 195.288,
+      "start_time": "00:03:10,208",
+      "end_time": "00:03:15,288",
+      "text": "Sau khi chờ đợi một tí thì cuối cùng nó cũng đã lọc ra và bây giờ em sẽ tắt cái tab trình duyệt kia đi nha."
+    },
+    {
+      "id": 38,
+      "start": 195.728,
+      "end": 202.328,
+      "start_time": "00:03:15,728",
+      "end_time": "00:03:22,328",
+      "text": "Giờ thì nó sẽ thông báo cho mình là đã đọc hết kênh đối thủ nè: họ có 7 video nè, chủ yếu là về ngách phản xạ, IQ 500 và cảm nhận thời gian."
+    },
+    {
+      "id": 39,
+      "start": 202.468,
+      "end": 203.668,
+      "start_time": "00:03:22,468",
+      "end_time": "00:03:23,668",
+      "text": "Nói chung là cái này nó phân tích thôi."
+    },
+    {
+      "id": 40,
+      "start": 204.0,
+      "end": 206.548,
+      "start_time": "00:03:24,000",
+      "end_time": "00:03:26,548",
+      "text": "Rồi nó sẽ lưu lại những cái danh sách (`DOI-THU-IFVERSE.txt`)."
+    },
+    {
+      "id": 41,
+      "start": 206.988,
+      "end": 210.488,
+      "start_time": "00:03:26,988",
+      "end_time": "00:03:30,488",
+      "text": "Đây, nó sẽ tạo ra cho em một cái file trong cái folder (`D:\\whatifV2\\DOI-THU-IFVERSE.txt`) của mình nè."
+    },
+    {
+      "id": 42,
+      "start": 210.908,
+      "end": 213.828,
+      "start_time": "00:03:30,908",
+      "end_time": "00:03:33,828",
+      "text": "Cái danh sách này là các cái chủ đề mà đối thủ đã làm rồi."
+    },
+    {
+      "id": 43,
+      "start": 214.328,
+      "end": 217.508,
+      "start_time": "00:03:34,328",
+      "end_time": "00:03:37,508",
+      "text": "Đến lúc mà mình làm video tiếp theo thì nó sẽ lọc lại thôi."
+    },
+    {
+      "id": 44,
+      "start": 217.508,
+      "end": 221.68,
+      "start_time": "00:03:37,508",
+      "end_time": "00:03:41,680",
+      "text": "Ở dưới là nó sẽ gợi ý cho em 10 chủ đề."
+    },
+    {
+      "id": 45,
+      "start": 221.68,
+      "end": 226.72,
+      "start_time": "00:03:41,680",
+      "end_time": "00:03:46,720",
+      "text": "Bây giờ nó sẽ khuyến nghị cho em chọn số 1 hoặc số 2."
+    },
+    {
+      "id": 46,
+      "start": 226.72,
+      "end": 233.12,
+      "start_time": "00:03:46,720",
+      "end_time": "00:03:53,120",
+      "text": "Còn mình có thể chọn số nào, chọn chủ đề nào bất kỳ mình muốn cũng được, chứ không cần phải số 1."
+    },
+    {
+      "id": 47,
+      "start": 233.12,
+      "end": 237.508,
+      "start_time": "00:03:53,120",
+      "end_time": "00:03:57,508",
+      "text": "Nhưng mà bây giờ thì em sẽ làm theo khuyến nghị của nó luôn: em sẽ chọn số 1 và Enter luôn."
+    },
+    {
+      "id": 48,
+      "start": 237.508,
+      "end": 243.508,
+      "start_time": "00:03:57,508",
+      "end_time": "00:04:03,508",
+      "text": "Mấy bác chỉ cần ghi số 1 và Enter phát là nó sẽ tự động, nó sẽ viết luôn, nó tự hiểu nha."
+    },
+    {
+      "id": 49,
+      "start": 243.508,
+      "end": 245.508,
+      "start_time": "00:04:03,508",
+      "end_time": "00:04:05,508",
+      "text": "Mình không cần phải ghi dài dòng đâu mọi người ạ."
+    },
+    {
+      "id": 50,
+      "start": 245.508,
+      "end": 256.508,
+      "start_time": "00:04:05,508",
+      "end_time": "00:04:16,508",
+      "text": "Đối với phiên bản hướng dẫn V2 này thì thật sự rất là nhàn cho mọi người và mọi người chỉ cần việc phụ thuộc vào chờ đợi con Claude này nó gen thôi."
+    },
+    {
+      "id": 51,
+      "start": 256.508,
+      "end": 268.508,
+      "start_time": "00:04:16,508",
+      "end_time": "00:04:28,508",
+      "text": "Mấy bác lưu ý là phải xem qua bản hướng dẫn phần làm thô, làm thủ công video hôm trước cho em nha."
+    },
+    {
+      "id": 52,
+      "start": 268.508,
+      "end": 271.708,
+      "start_time": "00:04:28,508",
+      "end_time": "00:04:31,708",
+      "text": "Mọi người phải xem trước video đó để mọi người hiểu được quy trình."
+    },
+    {
+      "id": 53,
+      "start": 271.708,
+      "end": 279.708,
+      "start_time": "00:04:31,708",
+      "end_time": "00:04:39,708",
+      "text": "Bởi vì sau này có những cái ngách em chia sẻ cho mọi người và hướng dẫn mọi người làm thì nó có kết hợp cả 2 thứ 2 bên nữa nha."
+    },
+    {
+      "id": 54,
+      "start": 279.708,
+      "end": 283.308,
+      "start_time": "00:04:39,708",
+      "end_time": "00:04:43,308",
+      "text": "Chứ không phải là nó chỉ phụ thuộc vào cái tự động không như này đâu nha mọi người."
+    },
+    {
+      "id": 55,
+      "start": 283.308,
+      "end": 291.308,
+      "start_time": "00:04:43,308",
+      "end_time": "00:04:51,308",
+      "text": "Nên là đó là vấn đề em chia ra, em hướng dẫn cho mọi người từ cái cơ bản đơn giản nhất cho đến những cái cao hơn nha."
+    },
+    {
+      "id": 56,
+      "start": 291.308,
+      "end": 296.548,
+      "start_time": "00:04:51,308",
+      "end_time": "00:04:56,548",
+      "text": "Rồi, khi chờ đợi xong một tí, cuối cùng nó đã gen xong hết toàn bộ kịch bản."
+    },
+    {
+      "id": 57,
+      "start": 296.548,
+      "end": 302.108,
+      "start_time": "00:04:56,548",
+      "end_time": "00:05:02,108",
+      "text": "Đây là cái về chủ đề là: \"What If You Never Needed to Sleep?\" (Điều gì xảy ra nếu bạn không bao giờ ngủ?) nè."
+    },
+    {
+      "id": 58,
+      "start": 302.108,
+      "end": 305.468,
+      "start_time": "00:05:02,108",
+      "end_time": "00:05:05,468",
+      "text": "Đây là cái Part 1, có nghĩa là Part 1 này á,"
+    },
+    {
+      "id": 59,
+      "start": 305.468,
+      "end": 308.016,
+      "start_time": "00:05:05,468",
+      "end_time": "00:05:08,016",
+      "text": "mấy bác hình dung là ví dụ mình làm cái chủ đề này đúng không?"
+    },
+    {
+      "id": 60,
+      "start": 308.016,
+      "end": 314.016,
+      "start_time": "00:05:08,016",
+      "end_time": "00:05:14,016",
+      "text": "Những video sau, mấy bác muốn làm thêm một cái tập nữa, một cái Part 2, một cái phần của chủ đề này nữa,"
+    },
+    {
+      "id": 61,
+      "start": 314.016,
+      "end": 318.016,
+      "start_time": "00:05:14,016",
+      "end_time": "00:05:18,016",
+      "text": "đối với video sau, mọi người tiếp tục gọi cái Part 2 thôi."
+    },
+    {
+      "id": 62,
+      "start": 318.016,
+      "end": 320.016,
+      "start_time": "00:05:18,016",
+      "end_time": "00:05:20,016",
+      "text": "Còn video này nó để là Part 1 như vậy."
+    },
+    {
+      "id": 63,
+      "start": 320.016,
+      "end": 323.016,
+      "start_time": "00:05:20,016",
+      "end_time": "00:05:23,016",
+      "text": "Còn mọi người không làm nữa thì mọi người không cần quan tâm."
+    },
+    {
+      "id": 64,
+      "start": 323.016,
+      "end": 329.016,
+      "start_time": "00:05:23,016",
+      "end_time": "00:05:29,016",
+      "text": "Rồi ở dưới thì nó phân tích ra nhịp câu (`20 dấu \"...\", 20 câu hỏi, câu trung bình 4,4 từ`), kịch bản này kia thôi."
+    },
+    {
+      "id": 65,
+      "start": 329.016,
+      "end": 330.016,
+      "start_time": "00:05:29,016",
+      "end_time": "00:05:30,016",
+      "text": "Mọi người có thể đọc qua."
+    },
+    {
+      "id": 66,
+      "start": 330.016,
+      "end": 334.016,
+      "start_time": "00:05:30,016",
+      "end_time": "00:05:34,016",
+      "text": "Rồi nó sẽ gợi ý cho em là bước tiếp theo cần phải làm gì nè."
+    },
+    {
+      "id": 67,
+      "start": 334.016,
+      "end": 344.016,
+      "start_time": "00:05:34,016",
+      "end_time": "00:05:44,016",
+      "text": "Bước tiếp theo là import file (`02-VOICE-never-sleep-DGT.txt`) vào tạo voice nè, xong rồi xuất cái MP3 vào, rồi cuối cùng gọi cái skill dựng video (`/lam-video-2d`) làm video lên thôi."
+    },
+    {
+      "id": 68,
+      "start": 344.016,
+      "end": 346.016,
+      "start_time": "00:05:44,016",
+      "end_time": "00:05:46,016",
+      "text": "Đấy, nó chỉ đơn giản như vậy thôi."
+    },
+    {
+      "id": 69,
+      "start": 346.016,
+      "end": 356.556,
+      "start_time": "00:05:46,016",
+      "end_time": "00:05:56,556",
+      "text": "Mấy bác đã xem video trước thì mấy bác biết là mình cần phải làm hình ảnh video này kia nó rất là lâu đúng không? Xong rồi đến voice. Còn bây giờ thì cái này chỉ cần voice thôi nha."
+    },
+    {
+      "id": 70,
+      "start": 356.936,
+      "end": 359.656,
+      "start_time": "00:05:56,936",
+      "end_time": "00:05:59,656",
+      "text": "Rồi em cho mọi người xem qua kịch bản full của nó trước."
+    },
+    {
+      "id": 71,
+      "start": 360.796,
+      "end": 363.616,
+      "start_time": "00:06:00,796",
+      "end_time": "00:06:03,616",
+      "text": "Đây, ví dụ đây là kịch bản full (`01-SCRIPT-never-sleep.txt`) của nó nha."
+    },
+    {
+      "id": 72,
+      "start": 364.716,
+      "end": 369.016,
+      "start_time": "00:06:04,716",
+      "end_time": "00:06:09,016",
+      "text": "Đấy, video này thì hơn 6 phút, tầm gần 7 phút mọi người ạ."
+    },
+    {
+      "id": 73,
+      "start": 369.576,
+      "end": 372.936,
+      "start_time": "00:06:09,576",
+      "end_time": "00:06:12,936",
+      "text": "Còn tiếp tục cái mình quan tâm là cái file này nha, file DGT (`02-VOICE-never-sleep-DGT.txt`) này."
+    },
+    {
+      "id": 74,
+      "start": 372.936,
+      "end": 382.836,
+      "start_time": "00:06:12,936",
+      "end_time": "00:06:22,836",
+      "text": "Mấy bác bấm vào xem, thì đây nó cũng đã có chú thích là `#1` (thăng 1), `#2` (thăng 2), thăng tới `#6` (thăng 6). Có nghĩa là sẽ gồm 6 giọng, 6 voice nha."
+    },
+    {
+      "id": 75,
+      "start": 382.836,
+      "end": 392.0,
+      "start_time": "00:06:22,836",
+      "end_time": "00:06:32,000",
+      "text": "Đấy, chỗ này thì nó cũng giống như cái video trước thôi mọi người ạ. Bởi vì cái ngách này thì là cần 6 voice bởi vì 6 nhân vật, hội thoại khác nhau ha."
+    },
+    {
+      "id": 76,
+      "start": 392.0,
+      "end": 401.036,
+      "start_time": "00:06:32,000",
+      "end_time": "00:06:41,036",
+      "text": "Rồi, em sẽ mở cái tool ElevenLabs (`Dinh Media Auto TTS Subtitles`) của em lên và vẫn như cái hôm trước thôi. Và em đã import sẵn là 6 cái ID voice, 6 cái giọng vào rồi."
+    },
+    {
+      "id": 77,
+      "start": 401.036,
+      "end": 405.036,
+      "start_time": "00:06:41,036",
+      "end_time": "00:06:45,036",
+      "text": "Và mỗi giọng nó sẽ tương ứng với những cái chỉ số mà em đã đặt nè."
+    },
+    {
+      "id": 78,
+      "start": 405.036,
+      "end": 408.036,
+      "start_time": "00:06:45,036",
+      "end_time": "00:06:48,036",
+      "text": "`#3` (thăng 3) là ví dụ như là cái giọng số 3 bên này thôi."
+    },
+    {
+      "id": 79,
+      "start": 408.036,
+      "end": 409.036,
+      "start_time": "00:06:48,036",
+      "end_time": "00:06:49,036",
+      "text": "Đấy."
+    },
+    {
+      "id": 80,
+      "start": 409.036,
+      "end": 412.036,
+      "start_time": "00:06:49,036",
+      "end_time": "00:06:52,036",
+      "text": "Và tới 6, thì cái này em không giải thích thêm nữa nha."
+    },
+    {
+      "id": 81,
+      "start": 412.036,
+      "end": 415.036,
+      "start_time": "00:06:52,036",
+      "end_time": "00:06:55,036",
+      "text": "Cái video trước em đã nói khá là chi tiết rồi."
+    },
+    {
+      "id": 82,
+      "start": 415.036,
+      "end": 420.036,
+      "start_time": "00:06:55,036",
+      "end_time": "00:07:00,036",
+      "text": "Bây giờ thì em sẽ vào, import cái file kịch bản đó vào."
+    },
+    {
+      "id": 83,
+      "start": 420.036,
+      "end": 423.036,
+      "start_time": "00:07:00,036",
+      "end_time": "00:07:03,036",
+      "text": "Đây, cái file DGT (`02-VOICE-never-sleep-DGT.txt`) này, nó có chú thích nè."
+    },
+    {
+      "id": 84,
+      "start": 423.036,
+      "end": 426.036,
+      "start_time": "00:07:03,036",
+      "end_time": "00:07:06,036",
+      "text": "Chắc là em sẽ tua nhanh qua cái chỗ tạo giọng đọc này ha."
+    },
+    {
+      "id": 85,
+      "start": 426.036,
+      "end": 435.036,
+      "start_time": "00:07:06,036",
+      "end_time": "00:07:15,036",
+      "text": "Nếu mà ví dụ như mấy bác mà dùng những cái công cụ khác, những cái tool khác, những cái lồng giọng đọc khác á, miễn sao mọi người ra được những cái voice hội thoại,"
+    },
+    {
+      "id": 86,
+      "start": 435.036,
+      "end": 443.036,
+      "start_time": "00:07:15,036",
+      "end_time": "00:07:23,036",
+      "text": "hoặc là mọi người cho nó một file dài cũng được, miễn sao mà nó có hội thoại đúng với cái ngách, đúng với cái nhu cầu mọi người muốn thôi."
+    },
+    {
+      "id": 87,
+      "start": 443.036,
+      "end": 450.276,
+      "start_time": "00:07:23,036",
+      "end_time": "00:07:30,276",
+      "text": "Thì import vào thì con Claude nó cũng tự động làm thôi nha. Nó sẽ tự hiểu chứ không cần phải là tool ElevenLabs đâu."
+    },
+    {
+      "id": 88,
+      "start": 450.276,
+      "end": 457.024,
+      "start_time": "00:07:30,276",
+      "end_time": "00:07:37,024",
+      "text": "Đây nè, mọi người có thể quay lại cái kênh đối thủ này mấy bác xem lại, nghe lại, nó sẽ có rất là nhiều cái giọng ở trong đó đấy."
+    },
+    {
+      "id": 89,
+      "start": 457.024,
+      "end": 463.08,
+      "start_time": "00:07:37,024",
+      "end_time": "00:07:43,080",
+      "text": "Lúc train thì em đã train rất là kỹ rồi nên là con Claude nó đã báo rất là chính xác nha mọi người."
+    },
+    {
+      "id": 90,
+      "start": 463.08,
+      "end": 469.024,
+      "start_time": "00:07:43,080",
+      "end_time": "00:07:49,024",
+      "text": "Nên là mình muốn làm giống theo họ thì phải chấp nhận là làm theo kiểu hội thoại giống họ luôn ha."
+    },
+    {
+      "id": 91,
+      "start": 469.024,
+      "end": 473.424,
+      "start_time": "00:07:49,024",
+      "end_time": "00:07:53,424",
+      "text": "Rồi, sau khi mà đã gen xong voice rồi thì em sẽ vào kiểm tra lại ha."
+    },
+    {
+      "id": 92,
+      "start": 473.424,
+      "end": 476.064,
+      "start_time": "00:07:53,424",
+      "end_time": "00:07:56,064",
+      "text": "Nó sẽ tự sinh ra một thư mục `voice` này."
+    },
+    {
+      "id": 93,
+      "start": 476.064,
+      "end": 481.184,
+      "start_time": "00:07:56,064",
+      "end_time": "00:08:01,184",
+      "text": "Trong này nó gồm tất cả các đoạn đã chia ra (`1.mp3`, `2.mp3`...) nha mọi người."
+    },
+    {
+      "id": 94,
+      "start": 481.184,
+      "end": 487.424,
+      "start_time": "00:08:01,184",
+      "end_time": "00:08:07,424",
+      "text": "Mấy bác có thể nghe lại nha, còn em thì chắc chắn là sẽ được rồi nên là em không cần nghe lại."
+    },
+    {
+      "id": 95,
+      "start": 487.424,
+      "end": 490.624,
+      "start_time": "00:08:07,424",
+      "end_time": "00:08:10,624",
+      "text": "Mọi người kiểu nghe lại để kiểm tra thử có ok không á."
+    },
+    {
+      "id": 96,
+      "start": 490.624,
+      "end": 494.384,
+      "start_time": "00:08:10,624",
+      "end_time": "00:08:14,384",
+      "text": "Còn đối với em thì dùng tool này chắc chắn nó sẽ ok rồi mọi người ạ."
+    },
+    {
+      "id": 97,
+      "start": 494.384,
+      "end": 503.584,
+      "start_time": "00:08:14,384",
+      "end_time": "00:08:23,584",
+      "text": "Thì mọi người có thể thoát ra và mọi người có thể edit lại, chỉnh lại cái tên thư mục thành tên là `voice` cũng được. Còn không thì mọi người để vậy nó cũng tự hiểu."
+    },
+    {
+      "id": 98,
+      "start": 503.584,
+      "end": 514.384,
+      "start_time": "00:08:23,584",
+      "end_time": "00:08:34,384",
+      "text": "Hôm nay em làm hướng dẫn thì em sẽ hướng dẫn đầy đủ cho mọi người luôn. Thì mấy bác chỉnh lại tên thư mục `voice` này, để khi mà cái con Claude nó đọc cái skill của mình thì nó sẽ dễ hiểu hơn ha."
+    },
+    {
+      "id": 99,
+      "start": 514.384,
+      "end": 520.944,
+      "start_time": "00:08:34,384",
+      "end_time": "00:08:40,944",
+      "text": "Rồi thì ok, sau khi mà đã có được rồi, bây giờ mình sẽ đi vào dựng, gọi skill làm video (`/lam-video-2d`) nè."
+    },
+    {
+      "id": 100,
+      "start": 520.944,
+      "end": 524.744,
+      "start_time": "00:08:40,944",
+      "end_time": "00:08:44,744",
+      "text": "Mình làm thôi mọi người, chứ không cần phải cung cấp thêm gì nữa nha."
+    },
+    {
+      "id": 101,
+      "start": 524.744,
+      "end": 532.744,
+      "start_time": "00:08:44,744",
+      "end_time": "00:08:52,744",
+      "text": "Bây giờ đối với cái chỗ này, em sẽ ghi một câu lệnh là: `dựng video cho project của tôi`."
+    },
+    {
+      "id": 102,
+      "start": 532.744,
+      "end": 537.784,
+      "start_time": "00:08:52,744",
+      "end_time": "00:08:57,784",
+      "text": "Project thì đây, em sẽ quay lại với cái đường dẫn của mình nè."
+    },
+    {
+      "id": 103,
+      "start": 537.784,
+      "end": 540.944,
+      "start_time": "00:08:57,784",
+      "end_time": "00:09:00,944",
+      "text": "Đường dẫn của project nè (`projects\\01-never-sleep`), copy cái tên dự án của mình nè mọi người."
+    },
+    {
+      "id": 104,
+      "start": 540.944,
+      "end": 544.144,
+      "start_time": "00:09:00,944",
+      "end_time": "00:09:04,144",
+      "text": "Mấy bác copy dài như vậy cho nó chuẩn nha."
+    },
+    {
+      "id": 105,
+      "start": 544.384,
+      "end": 556.384,
+      "start_time": "00:09:04,384",
+      "end_time": "00:09:16,384",
+      "text": "Em dán lại nè. Rồi, xong rồi em sẽ ghi thêm một câu nữa là: `voice trong thư mục voice`. Có nghĩa là cái âm thanh của tôi đang để ở trong cái thư mục `voice`. Đấy, như vậy để cho nó hiểu ha."
+    },
+    {
+      "id": 106,
+      "start": 556.384,
+      "end": 568.384,
+      "start_time": "00:09:16,384",
+      "end_time": "00:09:28,384",
+      "text": "Thường thì mấy bác có thể chạy luôn cũng được, nó cũng sẽ tự động hiểu thôi. Nhưng mà để như này, để tiết kiệm thời gian nó đọc lại thì mình ghi ra như này luôn cho nó nhanh nha mọi người. Đấy, rồi, như này thì mấy bác chỉ cần việc Enter chạy."
+    },
+    {
+      "id": 107,
+      "start": 568.384,
+      "end": 575.051,
+      "start_time": "00:09:28,384",
+      "end_time": "00:09:35,051",
+      "text": "Nó chạy, và khi chạy, nó sẽ hỏi mình những câu hỏi như này: là kích thước khung hình mình muốn, là ví dụ như em đang"
+    },
+    {
+      "id": 108,
+      "start": 575.051,
+      "end": 581.717,
+      "start_time": "00:09:35,051",
+      "end_time": "00:09:41,717",
+      "text": "dùng làm YouTube đúng không, là `16:9 · 1080p (Recommended)`, đương nhiên em sẽ chọn `16:9` rồi; và cái thứ 2 là cái nhạc nền và cái hiệu ứng âm thanh (`SFX`),"
+    },
+    {
+      "id": 109,
+      "start": 581.717,
+      "end": 591.3,
+      "start_time": "00:09:41,717",
+      "end_time": "00:09:51,300",
+      "text": "thì đương nhiên em sẽ chọn là `Tự tạo nhạc + SFX (Recommended)` nè, cái khuyến nghị đầu tiên recommend của nó nè, nó khuyến nghị gửi cho mình thì mình cũng chọn theo cái đề xuất của nó luôn nha."
+    },
+    {
+      "id": 110,
+      "start": 591.3,
+      "end": 600.0,
+      "start_time": "00:09:51,300",
+      "end_time": "00:10:00,000",
+      "text": "Xong rồi mình chỉ cần việc đợi nó gen thôi nha mọi người. Thì cái cách làm phiên bản 2 này á, thì em cũng giải thích luôn cho mấy bác để rõ chi tiết"
+    },
+    {
+      "id": 111,
+      "start": 600.0,
+      "end": 603.0,
+      "start_time": "00:10:00,000",
+      "end_time": "00:10:03,000",
+      "text": "về nó có ưu điểm và nhược điểm như thế nào nhé."
+    },
+    {
+      "id": 112,
+      "start": 603.0,
+      "end": 606.4,
+      "start_time": "00:10:03,000",
+      "end_time": "00:10:06,400",
+      "text": "Về ưu điểm, như mấy bác cũng đã thấy là"
+    },
+    {
+      "id": 113,
+      "start": 606.4,
+      "end": 612.06,
+      "start_time": "00:10:06,400",
+      "end_time": "00:10:12,060",
+      "text": "đối với bản này, mọi người không cần tốn quá nhiều thời gian cũng như là tiền tài nguyên"
+    },
+    {
+      "id": 114,
+      "start": 612.06,
+      "end": 615.8,
+      "start_time": "00:10:12,060",
+      "end_time": "00:10:15,800",
+      "text": "đầu tư vào công cụ tạo ảnh như Flow,"
+    },
+    {
+      "id": 115,
+      "start": 615.8,
+      "end": 618.86,
+      "start_time": "00:10:15,800",
+      "end_time": "00:10:18,860",
+      "text": "mọi người phải mất thời gian tốn tiền credit"
+    },
+    {
+      "id": 116,
+      "start": 618.86,
+      "end": 621.76,
+      "start_time": "00:10:18,860",
+      "end_time": "00:10:21,760",
+      "text": "đi tạo ảnh, tạo video, rất rất là tốn thời gian luôn."
+    },
+    {
+      "id": 117,
+      "start": 621.76,
+      "end": 624.56,
+      "start_time": "00:10:21,760",
+      "end_time": "00:10:24,560",
+      "text": "Rất là mất công đúng không?"
+    },
+    {
+      "id": 118,
+      "start": 624.56,
+      "end": 628.46,
+      "start_time": "00:10:24,560",
+      "end_time": "00:10:28,460",
+      "text": "Cái này thì mọi người chỉ cần việc tạo voice thôi, tạo giọng đọc thôi,"
+    },
+    {
+      "id": 119,
+      "start": 628.46,
+      "end": 635.14,
+      "start_time": "00:10:28,460",
+      "end_time": "00:10:35,140",
+      "text": "và sau đó mọi người gọi skill nó chạy. Đó là về cái ưu điểm của nó. Còn về cái nhược điểm thì cái này"
+    },
+    {
+      "id": 120,
+      "start": 635.14,
+      "end": 641.82,
+      "start_time": "00:10:35,140",
+      "end_time": "00:10:41,820",
+      "text": "nó sẽ chạy phụ thuộc vào cái cấu hình máy của mấy bác. Ví dụ như máy mọi người cấu hình cao mạnh thì nó sẽ chạy"
+    },
+    {
+      "id": 121,
+      "start": 641.82,
+      "end": 648.46,
+      "start_time": "00:10:41,820",
+      "end_time": "00:10:48,460",
+      "text": "nhanh. Còn mọi người máy yếu thì đương nhiên mọi người sẽ đợi nó chạy lâu nha, chạy khá là lâu luôn ấy đối với hiện tại."
+    },
+    {
+      "id": 122,
+      "start": 648.46,
+      "end": 654.6,
+      "start_time": "00:10:48,460",
+      "end_time": "00:10:54,600",
+      "text": "Em đang dùng máy PC của em, nó chạy tốt hơn, nhanh hơn máy MacBook của em nha mọi người."
+    },
+    {
+      "id": 123,
+      "start": 654.6,
+      "end": 658.46,
+      "start_time": "00:10:54,600",
+      "end_time": "00:10:58,460",
+      "text": "Đấy, những cái ưu nhược điểm em nói để cho mấy bác rõ được."
+    },
+    {
+      "id": 124,
+      "start": 658.46,
+      "end": 670.82,
+      "start_time": "00:10:58,460",
+      "end_time": "00:11:10,820",
+      "text": "Thì nói chung là lâu thì mấy bác cũng phải đợi thôi, tầm 1–2 tiếng nha mọi người. Đối với video tầm 7 phút thì khoảng thời gian đối với máy em nha,"
+    },
+    {
+      "id": 125,
+      "start": 670.82,
+      "end": 682.46,
+      "start_time": "00:11:10,820",
+      "end_time": "00:11:22,460",
+      "text": "hiện tại em đang test hôm bữa giờ thì đối với máy em video tầm 7 phút thì đợi tầm hơn 1 tiếng 40–50 phút nha mọi người: 1 giờ 50 phút, gần 2 tiếng nha mọi người."
+    },
+    {
+      "id": 126,
+      "start": 682.46,
+      "end": 686.72,
+      "start_time": "00:11:22,460",
+      "end_time": "00:11:26,720",
+      "text": "Đấy, đó là em nói chi tiết rõ để mấy bác có thể nắm được."
+    },
+    {
+      "id": 127,
+      "start": 686.72,
+      "end": 690.52,
+      "start_time": "00:11:26,720",
+      "end_time": "00:11:30,520",
+      "text": "Nói chung cái việc này đã nhàn mà, mình đợi nó gen thôi."
+    },
+    {
+      "id": 128,
+      "start": 690.52,
+      "end": 693.26,
+      "start_time": "00:11:30,520",
+      "end_time": "00:11:33,260",
+      "text": "Trong lúc mà đợi thì mấy bác làm việc khác thôi."
+    },
+    {
+      "id": 129,
+      "start": 693.26,
+      "end": 694.26,
+      "start_time": "00:11:33,260",
+      "end_time": "00:11:34,260",
+      "text": "Có gì đâu đúng không?"
+    },
+    {
+      "id": 130,
+      "start": 694.26,
+      "end": 699.6,
+      "start_time": "00:11:34,260",
+      "end_time": "00:11:39,600",
+      "text": "Còn một cái nữa đặc biệt là cái này nó không có tốn nhiều token của mọi người như mọi người nghĩ đâu nha."
+    },
+    {
+      "id": 131,
+      "start": 699.6,
+      "end": 703.02,
+      "start_time": "00:11:39,600",
+      "end_time": "00:11:43,020",
+      "text": "Nhiều bác cứ nghĩ là nó sẽ đốt token của mọi người rất là nhiều đúng không?"
+    },
+    {
+      "id": 132,
+      "start": 703.02,
+      "end": 703.62,
+      "start_time": "00:11:43,020",
+      "end_time": "00:11:43,620",
+      "text": "Nhưng mà không."
+    },
+    {
+      "id": 133,
+      "start": 703.62,
+      "end": 707.46,
+      "start_time": "00:11:43,620",
+      "end_time": "00:11:47,460",
+      "text": "Cái này nó chỉ tốn là tốn nhiều thời gian của mọi người đợi thôi."
+    },
+    {
+      "id": 134,
+      "start": 707.46,
+      "end": 711.56,
+      "start_time": "00:11:47,460",
+      "end_time": "00:11:51,560",
+      "text": "Chứ còn về cái token thì nó không có tốn bao nhiêu cả."
+    },
+    {
+      "id": 135,
+      "start": 711.56,
+      "end": 721.12,
+      "start_time": "00:11:51,560",
+      "end_time": "00:12:01,120",
+      "text": "Để tí nữa, xong cái demo hướng dẫn này á, thì em sẽ mở cái phiên làm việc vừa rồi cho mấy bác xem thử nó đốt bao nhiêu token nha, và nó chiếm bao nhiêu phần trăm nha."
+    },
+    {
+      "id": 136,
+      "start": 721.12,
+      "end": 727.76,
+      "start_time": "00:12:01,120",
+      "end_time": "00:12:07,760",
+      "text": "Đấy, chút em cho mọi người thấy cái thực tế luôn. Thật sự nó đốt rất là ít, nó không có nhiều như mấy bác nghĩ đâu."
+    },
+    {
+      "id": 137,
+      "start": 727.76,
+      "end": 738.3,
+      "start_time": "00:12:07,760",
+      "end_time": "00:12:18,300",
+      "text": "Và khi chạy, khi đợi nó gen, thì mọi người nhớ để ý nha: nó sẽ chạy đến cái đoạn và nó sẽ có một cái gợi ý, nó hỏi cho mình là nó sẽ cho một cái ảnh demo (`Style never sleep.JPG`) ở bên phải này,"
+    },
+    {
+      "id": 138,
+      "start": 738.3,
+      "end": 746.28,
+      "start_time": "00:12:18,300",
+      "end_time": "00:12:26,280",
+      "text": "và có một câu hỏi là mình muốn chọn kiểu như style phong cách cái màu nền nào mọi người, màu cho cái video của mình đó."
+    },
+    {
+      "id": 139,
+      "start": 746.62,
+      "end": 751.28,
+      "start_time": "00:12:26,620",
+      "end_time": "00:12:31,280",
+      "text": "Thì ở trên này nó có recommend là màu đêm xanh nè, đêm xanh đèn vàng ấm (`Dusk (Recommended)`) nè."
+    },
+    {
+      "id": 140,
+      "start": 751.56,
+      "end": 755.008,
+      "start_time": "00:12:31,560",
+      "end_time": "00:12:35,008",
+      "text": "Thì em sẽ chọn với cái recommend, cái khuyến nghị của nó luôn nha."
+    },
+    {
+      "id": 141,
+      "start": 755.008,
+      "end": 760.008,
+      "start_time": "00:12:35,008",
+      "end_time": "00:12:40,008",
+      "text": "Còn lại mọi người nếu muốn màu khác (`Midnight`, `Golden`, `Storybook`) thì mấy bác có thể chọn những câu ở dưới thôi."
+    },
+    {
+      "id": 142,
+      "start": 760.008,
+      "end": 764.008,
+      "start_time": "00:12:40,008",
+      "end_time": "00:12:44,008",
+      "text": "Mọi người tích vào, rồi tiếp tục nó sẽ gen tiếp, mình đợi tiếp ha."
+    },
+    {
+      "id": 143,
+      "start": 764.008,
+      "end": 769.008,
+      "start_time": "00:12:44,008",
+      "end_time": "00:12:49,008",
+      "text": "Cái ảnh bên phải là nó gợi ý nó hiện ra để cho mình thấy được,"
+    },
+    {
+      "id": 144,
+      "start": 769.008,
+      "end": 772.008,
+      "start_time": "00:12:49,008",
+      "end_time": "00:12:52,008",
+      "text": "so sánh giữa 4 cái màu nó đề xuất nha mọi người."
+    },
+    {
+      "id": 145,
+      "start": 772.008,
+      "end": 778.76,
+      "start_time": "00:12:52,008",
+      "end_time": "00:12:58,760",
+      "text": "Thì vừa rồi em chọn cái màu đầu tiên là `Dusk` gì đây nè, là cái màu nền đêm xanh và cái đèn vàng ha."
+    },
+    {
+      "id": 146,
+      "start": 778.76,
+      "end": 783.12,
+      "start_time": "00:12:58,760",
+      "end_time": "00:13:03,120",
+      "text": "Tiếp tục chạy một lúc nữa thì nó sẽ cho ra một cái demo 30 giây (`Preview never sleep 30s.MP4`),"
+    },
+    {
+      "id": 147,
+      "start": 783.12,
+      "end": 793.008,
+      "start_time": "00:13:03,120",
+      "end_time": "00:13:13,008",
+      "text": "và nó sẽ hỏi mình là bạn xem cái bản demo 30 giây này xem thử thấy ổn không, ok chưa, và có cần chỉnh gì không thì nó sẽ chỉnh, còn không thì nó sẽ làm tiếp."
+    },
+    {
+      "id": 148,
+      "start": 793.008,
+      "end": 797.98,
+      "start_time": "00:13:13,008",
+      "end_time": "00:13:17,980",
+      "text": "Rồi, bây giờ thì em sẽ cùng với mấy bác để xem cái demo 30 giây này thử như nào nha."
+    },
+    {
+      "id": 149,
+      "start": 798.0,
+      "end": 805.76,
+      "start_time": "00:13:18,000",
+      "end_time": "00:13:25,760",
+      "text": "Most people sleep about eight hours a night. That's one-third of your life. Around 26 years... with your eyes closed."
+    },
+    {
+      "id": 150,
+      "start": 805.76,
+      "end": 816.08,
+      "start_time": "00:13:25,760",
+      "end_time": "00:13:36,080",
+      "text": "Some rare people, with a lucky gene, feel fine on six. The world record for staying awake? 264 hours. Set in 1964. Eleven days."
+    },
+    {
+      "id": 151,
+      "start": 816.08,
+      "end": 821.38,
+      "start_time": "00:13:36,080",
+      "end_time": "00:13:41,380",
+      "text": "You? Zero hours of sleep. Not one minute. Ever. So what if you never needed to sleep?"
+    },
+    {
+      "id": 152,
+      "start": 821.74,
+      "end": 827.8,
+      "start_time": "00:13:41,740",
+      "end_time": "00:13:47,800",
+      "text": "Amazing. And awful. Usually both at once. Your name is Theo. You're sixteen. Tonight..."
+    },
+    {
+      "id": 153,
+      "start": 828.0,
+      "end": 832.82,
+      "start_time": "00:13:48,000",
+      "end_time": "00:13:52,820",
+      "text": "Đấy, như mấy bác vừa xem với em xem thì thật sự thấy nó rất là đẳng cấp và rất là VIP đúng không?"
+    },
+    {
+      "id": 154,
+      "start": 833.26,
+      "end": 838.38,
+      "start_time": "00:13:53,260",
+      "end_time": "00:13:58,380",
+      "text": "Rất là xịn so với cái bản hướng dẫn hôm trước, cái bản V1 hôm trước mình làm thủ công đúng không mọi người?"
+    },
+    {
+      "id": 155,
+      "start": 838.86,
+      "end": 845.1,
+      "start_time": "00:13:58,860",
+      "end_time": "00:14:05,100",
+      "text": "Đấy, thì đó là cái vấn đề là chất lượng và phụ thuộc vào mỗi cách làm khác nhau ấy mọi người."
+    },
+    {
+      "id": 156,
+      "start": 845.52,
+      "end": 854.96,
+      "start_time": "00:14:05,520",
+      "end_time": "00:14:14,960",
+      "text": "Đấy, bởi vậy nói chung á, cái này nó còn tùy thuộc vào mỗi ngách khác nhau nữa chứ không phải ngách nào cũng áp dụng theo cái kiểu tự động hóa không như này đâu nha mọi người."
+    },
+    {
+      "id": 157,
+      "start": 854.96,
+      "end": 868.0,
+      "start_time": "00:14:14,960",
+      "end_time": "00:14:28,000",
+      "text": "Đó là lý do tại sao em nói mấy bác cứ xem cái bản kia trước. Hôm sau em sẽ có vài ngách có kết hợp cả 2 lại với nhau, thì lúc đó em hướng dẫn mọi người thì mọi người sẽ hiểu hơn và hình dung ra được rất là dễ dàng thôi."
+    },
+    {
+      "id": 158,
+      "start": 868.0,
+      "end": 876.0,
+      "start_time": "00:14:28,000",
+      "end_time": "00:14:36,000",
+      "text": "Ok nha mọi người. Thì bây giờ em sẽ bấm chọn là `Ổn, xuất tiếp (Recommended)`: cái demo đã ổn rồi, bạn hãy làm tiếp đi nha."
+    },
+    {
+      "id": 159,
+      "start": 876.0,
+      "end": 883.52,
+      "start_time": "00:14:36,000",
+      "end_time": "00:14:43,520",
+      "text": "Cái này thì mình không cần sửa gì nữa. Đến cái chỗ mà sau khi mà trả lời cái phần demo 30 giây này xong rồi, thì mấy bác chỉ cần việc"
+    },
+    {
+      "id": 160,
+      "start": 883.52,
+      "end": 891.0,
+      "start_time": "00:14:43,520",
+      "end_time": "00:14:51,000",
+      "text": "chờ đợi một lúc nữa thôi thì nó sẽ gen ra xong nha. Lúc này thì mình không cần trả lời, không còn câu hỏi gì nữa đâu mọi người ạ."
+    },
+    {
+      "id": 161,
+      "start": 891.0,
+      "end": 895.008,
+      "start_time": "00:14:51,000",
+      "end_time": "00:14:55,008",
+      "text": "Đến khi mà xong thì nó sẽ xuất cho mình một cái file luôn."
+    },
+    {
+      "id": 162,
+      "start": 895.008,
+      "end": 902.52,
+      "start_time": "00:14:55,008",
+      "end_time": "00:15:02,520",
+      "text": "Đấy. Rồi ok, bây giờ thì em sẽ tua nhanh qua cái đoạn này nha để tiết kiệm thời gian mọi người ạ."
+    },
+    {
+      "id": 163,
+      "start": 904.848,
+      "end": 910.928,
+      "start_time": "00:15:04,848",
+      "end_time": "00:15:10,928",
+      "text": "Rồi, sau khi chờ đợi gần 2 tiếng đồng hồ, chính xác là 1 giờ 50 mấy phút luôn đấy mọi người,"
+    },
+    {
+      "id": 164,
+      "start": 911.308,
+      "end": 913.116,
+      "start_time": "00:15:11,308",
+      "end_time": "00:15:13,116",
+      "text": "thì cuối cùng nó đã tạo ra cho em này."
+    },
+    {
+      "id": 165,
+      "start": 913.116,
+      "end": 921.316,
+      "start_time": "00:15:13,116",
+      "end_time": "00:15:21,316",
+      "text": "Nó đã dựng xong, có thông báo video chất lượng là 1080p, độ dài là 6 phút 11 giây."
+    },
+    {
+      "id": 166,
+      "start": 921.316,
+      "end": 928.1,
+      "start_time": "00:15:21,316",
+      "end_time": "00:15:28,100",
+      "text": "Nói chung, lúc đầu nó ước lượng gần 7 phút thì cũng đúng thôi mọi người, tùy vào kịch bản nha."
+    },
+    {
+      "id": 167,
+      "start": 928.52,
+      "end": 935.0,
+      "start_time": "00:15:28,520",
+      "end_time": "00:15:35,000",
+      "text": "Còn lúc mà mình làm voice, mình bỏ vào rồi nó edit này kia nữa, nó sẽ rút gọn lại, hoặc là nó có"
+    },
+    {
+      "id": 168,
+      "start": 935.0,
+      "end": 942.1,
+      "start_time": "00:15:35,000",
+      "end_time": "00:15:42,100",
+      "text": "phình to ra thì nói chung cái đó là đương nhiên nó sẽ xảy ra rồi, nhưng mà không biết cái tỷ lệ như nào thôi."
+    },
+    {
+      "id": 169,
+      "start": 942.56,
+      "end": 948.0,
+      "start_time": "00:15:42,560",
+      "end_time": "00:15:48,000",
+      "text": "Cái đó thì nói chung mình không cần quan tâm lắm đâu mọi người. Rồi, ở dưới thì nó báo cáo cho mình là nó đã làm như"
+    },
+    {
+      "id": 170,
+      "start": 948.0,
+      "end": 954.8,
+      "start_time": "00:15:48,000",
+      "end_time": "00:15:54,800",
+      "text": "thế nào thôi. Về cái phần cuối ở dưới này nó thông báo cho mình là: \"Bộ dựng có hai lỗi nhỏ, mình đã sửa...\"."
+    },
+    {
+      "id": 171,
+      "start": 954.8,
+      "end": 958.5,
+      "start_time": "00:15:54,800",
+      "end_time": "00:15:58,500",
+      "text": "Nói chung có lỗi nào thì mọi người cứ yên tâm, nó fix rồi nó báo cho mình thôi."
+    },
+    {
+      "id": 172,
+      "start": 958.5,
+      "end": 964.5,
+      "start_time": "00:15:58,500",
+      "end_time": "00:16:04,500",
+      "text": "Ví dụ như hiện tại là cái vừa rồi thì nó có 2 lỗi là lông mày (\"giận\" và \"lo lắng\") với cái gì đó,"
+    },
+    {
+      "id": 173,
+      "start": 964.5,
+      "end": 970.0,
+      "start_time": "00:16:04,500",
+      "end_time": "00:16:10,000",
+      "text": "và cái chữ text \"Dr.\" ấy mọi người, bị sao lệch gì đó thì nó cũng đã fix cho em rồi,"
+    },
+    {
+      "id": 174,
+      "start": 970.0,
+      "end": 976.18,
+      "start_time": "00:16:10,000",
+      "end_time": "00:16:16,180",
+      "text": "và nó cũng sửa lại trong cái plugin gốc rồi, thì em cũng sẽ cập nhật cái mới nhất và cái chuẩn nhất cho mọi người lên Drive thôi."
+    },
+    {
+      "id": 175,
+      "start": 976.18,
+      "end": 977.3,
+      "start_time": "00:16:16,180",
+      "end_time": "00:16:17,300",
+      "text": "Mấy bác yên tâm ha."
+    },
+    {
+      "id": 176,
+      "start": 977.3,
+      "end": 981.1,
+      "start_time": "00:16:17,300",
+      "end_time": "00:16:21,100",
+      "text": "Bây giờ thì em sẽ tải cái video chất lượng 1080p (`never-sleep-final.mp4`) này về,"
+    },
+    {
+      "id": 177,
+      "start": 981.1,
+      "end": 984.0,
+      "start_time": "00:16:21,100",
+      "end_time": "00:16:24,000",
+      "text": "và em sẽ mở cho mọi người xem cùng demo với em nha."
+    },
+    {
+      "id": 178,
+      "start": 984.0,
+      "end": 988.9,
+      "start_time": "00:16:24,000",
+      "end_time": "00:16:28,900",
+      "text": "Đây, đây là cái video bản demo 30 giây của em lúc nãy nè, và cái ảnh phân tích (`Style never sleep.JPG`) nè,"
+    },
+    {
+      "id": 179,
+      "start": 988.9,
+      "end": 993.04,
+      "start_time": "00:16:28,900",
+      "end_time": "00:16:33,040",
+      "text": "rồi cuối cùng là cái video full vừa rồi nó vừa xuất ra nè."
+    },
+    {
+      "id": 180,
+      "start": 993.04,
+      "end": 1003.56,
+      "start_time": "00:16:33,040",
+      "end_time": "00:16:43,560",
+      "text": "Thì bây giờ mấy bác cùng với em xem hết cái demo này. Mọi người nhớ xem cái phần cuối, em sẽ show cho mấy bác thấy được cái độ tốn token của nó là bao nhiêu nha."
+    },
+    {
+      "id": 181,
+      "start": 1003.56,
+      "end": 1007.88,
+      "start_time": "00:16:43,560",
+      "end_time": "00:16:47,880",
+      "text": "Còn nếu mọi người không xem hết demo thì mọi người có thể tua qua thôi."
+    },
+    {
+      "id": 182,
+      "start": 1007.88,
+      "end": 1014.76,
+      "start_time": "00:16:47,880",
+      "end_time": "00:16:54,760",
+      "text": "Demo này thì nó dài tầm 6 phút, thì em sẽ giữ nguyên 6 phút em không cắt để cho mọi người thấy được cái chất lượng nó như nào thôi."
+    },
+    {
+      "id": 183,
+      "start": 1014.76,
+      "end": 1018.0,
+      "start_time": "00:16:54,760",
+      "end_time": "00:16:58,000",
+      "text": "Đấy, rồi ok, bây giờ thì em sẽ mở lên xem nhé."
+    },
+    {
+      "id": 184,
+      "start": 1018.0,
+      "end": 1022.28,
+      "start_time": "00:16:58,000",
+      "end_time": "00:17:02,280",
+      "text": "Most people sleep about eight hours a night. That's one-third of your life."
+    },
+    {
+      "id": 185,
+      "start": 1022.64,
+      "end": 1030.18,
+      "start_time": "00:17:02,640",
+      "end_time": "00:17:10,180",
+      "text": "Around 26 years... with your eyes closed."
+    },
+    {
+      "id": 186,
+      "start": 1030.7,
+      "end": 1033.62,
+      "start_time": "00:17:10,700",
+      "end_time": "00:17:13,620",
+      "text": "Some rare people, with a lucky gene, feel fine on six."
+    },
+    {
+      "id": 187,
+      "start": 1034.1,
+      "end": 1040.48,
+      "start_time": "00:17:14,100",
+      "end_time": "00:17:20,480",
+      "text": "The world record for staying awake? 264 hours. Set in 1964. Eleven days."
+    },
+    {
+      "id": 188,
+      "start": 1040.48,
+      "end": 1047.483,
+      "start_time": "00:17:20,480",
+      "end_time": "00:17:27,483",
+      "text": "You? Zero hours of sleep. Not one minute. Ever. So what if you never needed to sleep?"
+    },
+    {
+      "id": 189,
+      "start": 1047.483,
+      "end": 1053.649,
+      "start_time": "00:17:27,483",
+      "end_time": "00:17:33,649",
+      "text": "Amazing. And awful. Usually both at once. Your name is Theo. You're sixteen. Tonight, like every"
+    },
+    {
+      "id": 190,
+      "start": 1053.649,
+      "end": 1059.816,
+      "start_time": "00:17:33,649",
+      "end_time": "00:17:39,816",
+      "text": "night, the house goes dark at ten. Mom yawns. Your little sister Mia yawns. You... don't."
+    },
+    {
+      "id": 191,
+      "start": 1060.076,
+      "end": 1060.796,
+      "start_time": "00:17:40,076",
+      "end_time": "00:17:40,796",
+      "text": "Good night, Theo."
+    },
+    {
+      "id": 192,
+      "start": 1061.316,
+      "end": 1061.996,
+      "start_time": "00:17:41,316",
+      "end_time": "00:17:41,996",
+      "text": "Night, Mia."
+    },
+    {
+      "id": 193,
+      "start": 1062.356,
+      "end": 1063.016,
+      "start_time": "00:17:42,356",
+      "end_time": "00:17:43,016",
+      "text": "She means it."
+    },
+    {
+      "id": 194,
+      "start": 1063.076,
+      "end": 1063.796,
+      "start_time": "00:17:43,076",
+      "end_time": "00:17:43,796",
+      "text": "You just nod."
+    },
+    {
+      "id": 195,
+      "start": 1064.196,
+      "end": 1065.856,
+      "start_time": "00:17:44,196",
+      "end_time": "00:17:45,856",
+      "text": "Because for you, there's no night."
+    },
+    {
+      "id": 196,
+      "start": 1066.016,
+      "end": 1067.616,
+      "start_time": "00:17:46,016",
+      "end_time": "00:17:47,616",
+      "text": "There's just... more day."
+    },
+    {
+      "id": 197,
+      "start": 1068.056,
+      "end": 1068.876,
+      "start_time": "00:17:48,056",
+      "end_time": "00:17:48,876",
+      "text": "Here's how it works."
+    },
+    {
+      "id": 198,
+      "start": 1069.336,
+      "end": 1073.076,
+      "start_time": "00:17:49,336",
+      "end_time": "00:17:53,076",
+      "text": "When you're awake, a chemical called adenosine builds up in your brain."
+    },
+    {
+      "id": 199,
+      "start": 1073.076,
+      "end": 1076.22,
+      "start_time": "00:17:53,076",
+      "end_time": "00:17:56,220",
+      "text": "The more it piles up, the sleepier you feel."
+    },
+    {
+      "id": 200,
+      "start": 1076.22,
+      "end": 1078.6,
+      "start_time": "00:17:56,220",
+      "end_time": "00:17:58,600",
+      "text": "Coffee works by blocking it."
+    },
+    {
+      "id": 201,
+      "start": 1078.6,
+      "end": 1083.2,
+      "start_time": "00:17:58,600",
+      "end_time": "00:18:03,200",
+      "text": "Your adenosine? It never piles up. Not once. So coffee is useless."
+    },
+    {
+      "id": 202,
+      "start": 1083.2,
+      "end": 1085.0,
+      "start_time": "00:18:03,200",
+      "end_time": "00:18:05,000",
+      "text": "It's just hot bean water."
+    },
+    {
+      "id": 203,
+      "start": 1085.0,
+      "end": 1089.12,
+      "start_time": "00:18:05,000",
+      "end_time": "00:18:09,120",
+      "text": "And here's the rule. You never need to sleep. But you also can't."
+    },
+    {
+      "id": 204,
+      "start": 1089.12,
+      "end": 1092.12,
+      "start_time": "00:18:09,120",
+      "end_time": "00:18:12,120",
+      "text": "Not even if you try. Not even if you want to."
+    },
+    {
+      "id": 205,
+      "start": 1092.12,
+      "end": 1099.0,
+      "start_time": "00:18:12,120",
+      "end_time": "00:18:19,000",
+      "text": "People kept awake too long start having microsleeps. Tiny naps, a few seconds long, that they don't even notice."
+    },
+    {
+      "id": 206,
+      "start": 1099.0,
+      "end": 1101.14,
+      "start_time": "00:18:19,000",
+      "end_time": "00:18:21,140",
+      "text": "You? Never. Not one."
+    },
+    {
+      "id": 207,
+      "start": 1101.14,
+      "end": 1104.86,
+      "start_time": "00:18:21,140",
+      "end_time": "00:18:24,860",
+      "text": "Plus: eight extra hours. Every single day."
+    },
+    {
+      "id": 208,
+      "start": 1104.86,
+      "end": 1112.024,
+      "start_time": "00:18:24,860",
+      "end_time": "00:18:32,024",
+      "text": "You learned guitar in a month. Spanish in three. Your homework is done by midnight. Your sister's homework too."
+    },
+    {
+      "id": 209,
+      "start": 1112.024,
+      "end": 1113.32,
+      "start_time": "00:18:32,024",
+      "end_time": "00:18:33,320",
+      "text": "Did you do my math?"
+    },
+    {
+      "id": 210,
+      "start": 1113.64,
+      "end": 1115.56,
+      "start_time": "00:18:33,640",
+      "end_time": "00:18:35,560",
+      "text": "It's 2 a.m. What else would I do?"
+    },
+    {
+      "id": 211,
+      "start": 1115.56,
+      "end": 1125.0,
+      "start_time": "00:18:35,560",
+      "end_time": "00:18:45,000",
+      "text": "Minus: at 2 a.m., everyone you love is unconscious. The fridge hums. The clock ticks."
+    },
+    {
+      "id": 212,
+      "start": 1125.0,
+      "end": 1134.26,
+      "start_time": "00:18:45,000",
+      "end_time": "00:18:54,260",
+      "text": "You've counted the ceiling tiles: 412. Twice. Plus: your brain stays clean. Normally, sleep is when the brain flushes out its waste."
+    },
+    {
+      "id": 213,
+      "start": 1134.26,
+      "end": 1141.32,
+      "start_time": "00:18:54,260",
+      "end_time": "00:19:01,320",
+      "text": "Scientists watched it happen in mice in 2013, fluid rushing through, like a night shift of tiny janitors."
+    },
+    {
+      "id": 214,
+      "start": 1141.32,
+      "end": 1146.0,
+      "start_time": "00:19:01,320",
+      "end_time": "00:19:06,000",
+      "text": "Your janitors? They work days too. While you're still using the room."
+    },
+    {
+      "id": 215,
+      "start": 1146.0,
+      "end": 1149.92,
+      "start_time": "00:19:06,000",
+      "end_time": "00:19:09,920",
+      "text": "Minus: you have never dreamed. Not once."
+    },
+    {
+      "id": 216,
+      "start": 1149.92,
+      "end": 1152.404,
+      "start_time": "00:19:09,920",
+      "end_time": "00:19:12,404",
+      "text": "Every morning, Mia tells you hers."
+    },
+    {
+      "id": 217,
+      "start": 1152.744,
+      "end": 1157.364,
+      "start_time": "00:19:12,744",
+      "end_time": "00:19:17,364",
+      "text": "I was a dolphin! Dolphins sleep with half their brain! Did you dream?"
+    },
+    {
+      "id": 218,
+      "start": 1157.864,
+      "end": 1159.164,
+      "start_time": "00:19:17,864",
+      "end_time": "00:19:19,164",
+      "text": "I watched the microwave clock."
+    },
+    {
+      "id": 219,
+      "start": 1159.464,
+      "end": 1159.784,
+      "start_time": "00:19:19,464",
+      "end_time": "00:19:19,784",
+      "text": "Again?"
+    },
+    {
+      "id": 220,
+      "start": 1160.2,
+      "end": 1165.22,
+      "start_time": "00:19:20,200",
+      "end_time": "00:19:25,220",
+      "text": "That half-brain thing is real, by the way. Dolphins really do it. You can't even do that."
+    },
+    {
+      "id": 221,
+      "start": 1165.58,
+      "end": 1176.92,
+      "start_time": "00:19:25,580",
+      "end_time": "00:19:36,920",
+      "text": "Plus: you see the world nobody sees. The baker at four, the street sweeper at five, and every night at exactly three, your neighbor Sam's porch light blinks."
+    },
+    {
+      "id": 222,
+      "start": 1176.92,
+      "end": 1188.0,
+      "start_time": "00:19:36,920",
+      "end_time": "00:19:48,000",
+      "text": "Three times. Sam is eighty-one. He doesn't sleep much either. Three blinks means all good. You blink your desk lamp back. Every night. For six years."
+    },
+    {
+      "id": 223,
+      "start": 1188.0,
+      "end": 1198.0,
+      "start_time": "00:19:48,000",
+      "end_time": "00:19:58,000",
+      "text": "Minus: hiding it. When you were eight, Mom took you to a sleep lab. Dr. Lee stayed up with you for three nights. He drank nine coffees. You drank milk."
+    },
+    {
+      "id": 224,
+      "start": 1198.0,
+      "end": 1202.0,
+      "start_time": "00:19:58,000",
+      "end_time": "00:20:02,000",
+      "text": "Fascinating. Could I keep him... for a year?"
+    },
+    {
+      "id": 225,
+      "start": 1202.0,
+      "end": 1206.72,
+      "start_time": "00:20:02,000",
+      "end_time": "00:20:06,720",
+      "text": "Absolutely not. So you hide. At sleepovers, you"
+    },
+    {
+      "id": 226,
+      "start": 1206.72,
+      "end": 1213.36,
+      "start_time": "00:20:06,720",
+      "end_time": "00:20:13,360",
+      "text": "lie still with your eyes closed for seven hours. Seven hours is very long."
+    },
+    {
+      "id": 227,
+      "start": 1213.36,
+      "end": 1220.9,
+      "start_time": "00:20:13,360",
+      "end_time": "00:20:20,900",
+      "text": "Your friend Jake snores like a leaf blower. You know exactly when. You keep a chart. And your family hides it with you."
+    },
+    {
+      "id": 228,
+      "start": 1220.9,
+      "end": 1225.46,
+      "start_time": "00:20:20,900",
+      "end_time": "00:20:25,460",
+      "text": "Mom leaves soup in the fridge, with a note, for your 3 a.m."
+    },
+    {
+      "id": 229,
+      "start": 1225.46,
+      "end": 1229.16,
+      "start_time": "00:20:25,460",
+      "end_time": "00:20:29,160",
+      "text": "Mia leaves her door open, so the house feels less empty."
+    },
+    {
+      "id": 230,
+      "start": 1229.16,
+      "end": 1231.52,
+      "start_time": "00:20:29,160",
+      "end_time": "00:20:31,520",
+      "text": "Mom never tells anyone. Ever."
+    },
+    {
+      "id": 231,
+      "start": 1231.52,
+      "end": 1236.54,
+      "start_time": "00:20:31,520",
+      "end_time": "00:20:36,540",
+      "text": "Then, one evening, Dr. Lee calls. Theo. I have something new."
+    },
+    {
+      "id": 232,
+      "start": 1236.54,
+      "end": 1242.76,
+      "start_time": "00:20:36,540",
+      "end_time": "00:20:42,760",
+      "text": "One tablet. It might let you sleep. Just once. Eight hours."
+    },
+    {
+      "id": 233,
+      "start": 1242.76,
+      "end": 1245.04,
+      "start_time": "00:20:42,760",
+      "end_time": "00:20:45,040",
+      "text": "Would I... dream? Maybe."
+    },
+    {
+      "id": 234,
+      "start": 1245.04,
+      "end": 1253.36,
+      "start_time": "00:20:45,040",
+      "end_time": "00:20:53,360",
+      "text": "That night, you hold the tablet. Tiny. White. Your first dream. Maybe you'd fly. Maybe you'd be a dolphin."
+    },
+    {
+      "id": 235,
+      "start": 1253.36,
+      "end": 1259.08,
+      "start_time": "00:20:53,360",
+      "end_time": "00:20:59,080",
+      "text": "It's 2:59. You lift the glass of water. And out of habit, you look out the window."
+    },
+    {
+      "id": 236,
+      "start": 1259.2,
+      "end": 1265.873,
+      "start_time": "00:20:59,200",
+      "end_time": "00:21:05,873",
+      "text": "Three o'clock. Sam's porch light doesn't blink. You wait. 3:01. Nothing. His kitchen light is on. And through"
+    },
+    {
+      "id": 237,
+      "start": 1265.873,
+      "end": 1272.547,
+      "start_time": "00:21:05,873",
+      "end_time": "00:21:12,547",
+      "text": "the window, Sam is on the phone. Shaking. The dream... or the neighbor? You put the tablet down."
+    },
+    {
+      "id": 238,
+      "start": 1272.547,
+      "end": 1279.2,
+      "start_time": "00:21:12,547",
+      "end_time": "00:21:19,200",
+      "text": "Somebody has to stay awake. You knock on Sam's door. He opens it, phone still at his ear."
+    },
+    {
+      "id": 239,
+      "start": 1279.2,
+      "end": 1286.56,
+      "start_time": "00:21:19,200",
+      "end_time": "00:21:26,560",
+      "text": "Theo? It's the police. Ava's in jail. My granddaughter. They need bail."
+    },
+    {
+      "id": 240,
+      "start": 1286.56,
+      "end": 1298.48,
+      "start_time": "00:21:26,560",
+      "end_time": "00:21:38,480",
+      "text": "A voice on the speaker. Calm. Cold. Sir, $5,000 in gift cards. And don't call her parents. It only makes things worse."
+    },
+    {
+      "id": 241,
+      "start": 1298.48,
+      "end": 1308.893,
+      "start_time": "00:21:38,480",
+      "end_time": "00:21:48,893",
+      "text": "Gift cards. At 3 a.m. Here's the truth: real police never ask for gift cards. Real banks never do either."
+    },
+    {
+      "id": 242,
+      "start": 1308.893,
+      "end": 1317.05,
+      "start_time": "00:21:48,893",
+      "end_time": "00:21:57,050",
+      "text": "If someone tells you to keep it from your family, hang up. Then call your family, on the number you already know. Ava's number is on Sam's fridge. You call. It rings. Once. Twice."
+    },
+    {
+      "id": 243,
+      "start": 1317.45,
+      "end": 1322.57,
+      "start_time": "00:21:57,450",
+      "end_time": "00:22:02,570",
+      "text": "Hello... Theo? It's three in the morning! Ava. Are you in jail? What? I'm in bed!"
+    },
+    {
+      "id": 244,
+      "start": 1323.11,
+      "end": 1328.07,
+      "start_time": "00:22:03,110",
+      "end_time": "00:22:08,070",
+      "text": "Sam hears it. He stares at his phone. And he hangs up. Hello? Sir? Sir?"
+    },
+    {
+      "id": 245,
+      "start": 1328.07,
+      "end": 1338.793,
+      "start_time": "00:22:08,070",
+      "end_time": "00:22:18,793",
+      "text": "Click. The next day, police traced the number. The caller called himself Officer Black. He had called 11 homes on your street that night, every one of them at 3 a.m."
+    },
+    {
+      "id": 246,
+      "start": 1338.893,
+      "end": 1344.393,
+      "start_time": "00:22:18,893",
+      "end_time": "00:22:24,393",
+      "text": "Sam brings over a plate of cookies. Ava calls him every night now, at 9, not 3."
+    },
+    {
+      "id": 247,
+      "start": 1344.393,
+      "end": 1351.25,
+      "start_time": "00:22:24,393",
+      "end_time": "00:22:31,250",
+      "text": "That evening, Mia hands you a drawing: a boy with a guitar, floating in the sea, next to a dolphin."
+    },
+    {
+      "id": 248,
+      "start": 1351.25,
+      "end": 1356.29,
+      "start_time": "00:22:31,250",
+      "end_time": "00:22:36,290",
+      "text": "That's my dream from last night. You were in it. So now, you have one too."
+    },
+    {
+      "id": 249,
+      "start": 1356.29,
+      "end": 1360.893,
+      "start_time": "00:22:36,290",
+      "end_time": "00:22:40,893",
+      "text": "You never took the tablet. Dr. Lee asks you why. Somebody has to stay awake."
+    },
+    {
+      "id": 250,
+      "start": 1360.893,
+      "end": 1367.566,
+      "start_time": "00:22:40,893",
+      "end_time": "00:22:47,566",
+      "text": "3 a.m. Sam's porch light blinks. 1, 2, 3. All good. You blink back. But one thing keeps you"
+    },
+    {
+      "id": 251,
+      "start": 1367.566,
+      "end": 1374.24,
+      "start_time": "00:22:47,566",
+      "end_time": "00:22:54,240",
+      "text": "up. Not that you sleep anyway. The man on the phone called every night at 3. He never yawned."
+    },
+    {
+      "id": 252,
+      "start": 1374.24,
+      "end": 1380.893,
+      "start_time": "00:22:54,240",
+      "end_time": "00:23:00,893",
+      "text": "He never slowed down. Who calls at 3 a.m. every night and never sounds tired? Someone else out there..."
+    },
+    {
+      "id": 253,
+      "start": 1380.893,
+      "end": 1382.613,
+      "start_time": "00:23:00,893",
+      "end_time": "00:23:02,613",
+      "text": "doesn't sleep either."
+    },
+    {
+      "id": 254,
+      "start": 1382.973,
+      "end": 1385.353,
+      "start_time": "00:23:02,973",
+      "end_time": "00:23:05,353",
+      "text": "So what would you do with eight extra hours every night?"
+    },
+    {
+      "id": 255,
+      "start": 1385.653,
+      "end": 1387.813,
+      "start_time": "00:23:05,653",
+      "end_time": "00:23:07,813",
+      "text": "Tell us what you'd do at 3 a.m. in the comments."
+    },
+    {
+      "id": 256,
+      "start": 1387.813,
+      "end": 1392.765,
+      "start_time": "00:23:07,813",
+      "end_time": "00:23:12,765",
+      "text": "And if you'd have put the tablet down too, hit like and subscribe for Part 2."
+    },
+    {
+      "id": 257,
+      "start": 1392.785,
+      "end": 1401.0,
+      "start_time": "00:23:12,785",
+      "end_time": "00:23:21,000",
+      "text": "Rồi, mọi người thấy không, phần cuối này nó có để là mình kêu gọi đăng ký, comment và có thể ra Part 2 là cái phần 2 á mọi người."
+    },
+    {
+      "id": 258,
+      "start": 1401.0,
+      "end": 1408.126,
+      "start_time": "00:23:21,000",
+      "end_time": "00:23:28,126",
+      "text": "Đó là lý do tại sao lúc nãy viết kịch bản nó ghi là nó chú thích là Part 1 (phần 1) á mọi người. Đấy, rồi."
+    },
+    {
+      "id": 259,
+      "start": 1408.126,
+      "end": 1420.126,
+      "start_time": "00:23:28,126",
+      "end_time": "00:23:40,126",
+      "text": "Thì mấy bác xem video demo mọi người thấy nó làm rất là đỉnh không? Rất là giống kênh đối thủ luôn đúng không? Thì ở đây, ở phần cuối là có cái thumb (`Never sleep thumbnail.PNG`) nữa nè, nó tạo ra cho em một cái thumb luôn. Mọi người thấy ok không?"
+    },
+    {
+      "id": 260,
+      "start": 1420.126,
+      "end": 1430.126,
+      "start_time": "00:23:40,126",
+      "end_time": "00:23:50,126",
+      "text": "Còn nếu mấy bác muốn làm ảnh thumb khác hay không thích thì mọi người cứ yêu cầu nó làm lại thôi, không có gì hết á, nhưng mà em thấy khá là hợp lý rồi đó, rất là xịn luôn nha."
+    },
+    {
+      "id": 261,
+      "start": 1430.126,
+      "end": 1436.126,
+      "start_time": "00:23:50,126",
+      "end_time": "00:23:56,126",
+      "text": "Cuối cùng thì bây giờ em sẽ mở cái Settings -> Usage lên để cho mọi người xem nè."
+    },
+    {
+      "id": 262,
+      "start": 1436.126,
+      "end": 1442.806,
+      "start_time": "00:23:56,126",
+      "end_time": "00:24:02,806",
+      "text": "Đây, cái phiên vừa rồi (`Current session`) thì gói Max 100$ ha, chỉ tốn `1% used` thôi. Cái ở dưới này (`This week: 11% used`) là cả tuần nha mọi người."
+    },
+    {
+      "id": 263,
+      "start": 1442.806,
+      "end": 1449.486,
+      "start_time": "00:24:02,806",
+      "end_time": "00:24:09,486",
+      "text": "Còn ở dưới này thì model `Fable` (`0% used`) em không có dùng. Lúc nãy giờ em dùng model là `Opus 5.5` nha. Và cái phiên làm việc lúc vừa rồi thì"
+    },
+    {
+      "id": 264,
+      "start": 1449.486,
+      "end": 1455.44,
+      "start_time": "00:24:09,486",
+      "end_time": "00:24:15,440",
+      "text": "chỉ tốn 1% token thôi. Mấy bác thấy kinh không? Rất rất là ít luôn."
+    },
+    {
+      "id": 265,
+      "start": 1455.44,
+      "end": 1461.68,
+      "start_time": "00:24:15,440",
+      "end_time": "00:24:21,680",
+      "text": "Còn cái chính giữa là cái trong tuần (`This week`) nha. Lúc mà em làm video này thì là tối thứ Tư nha mọi người,"
+    },
+    {
+      "id": 266,
+      "start": 1461.68,
+      "end": 1465.76,
+      "start_time": "00:24:21,680",
+      "end_time": "00:24:25,760",
+      "text": "thì trước đó em làm rất là nhiều việc nên là nó trừ 11% đó, mấy bác đừng có quan tâm."
+    },
+    {
+      "id": 267,
+      "start": 1465.76,
+      "end": 1470.678,
+      "start_time": "00:24:25,760",
+      "end_time": "00:24:30,678",
+      "text": "Mấy bác quan tâm là cái phiên làm việc đầu tiên (`Current session`) kia nè, nó chỉ tốn, nó đốt cho em có 1% thôi."
+    },
+    {
+      "id": 268,
+      "start": 1470.678,
+      "end": 1477.678,
+      "start_time": "00:24:30,678",
+      "end_time": "00:24:37,678",
+      "text": "Và cái này là đối với em đang dùng gói Max là 100$/tháng nha mọi người. Còn mấy bác dùng gói Pro thì mấy bác có thể tự test xem."
+    },
+    {
+      "id": 269,
+      "start": 1477.678,
+      "end": 1483.678,
+      "start_time": "00:24:37,678",
+      "end_time": "00:24:43,678",
+      "text": "Nhưng mà em chắc chắn đảm bảo rằng nó không có đốt nhiều. Mấy bác thấy không, nó chỉ đốt 1% như thế là rất là ít rồi."
+    },
+    {
+      "id": 270,
+      "start": 1483.678,
+      "end": 1491.678,
+      "start_time": "00:24:43,678",
+      "end_time": "00:24:51,678",
+      "text": "Em làm rất là nhiều thứ trước giờ rồi, em so sánh được và em thấy được cái 1% này là rất rất là ít nha, chứ không có nhiều như mọi người nghĩ đâu."
+    },
+    {
+      "id": 271,
+      "start": 1491.678,
+      "end": 1498.678,
+      "start_time": "00:24:51,678",
+      "end_time": "00:24:58,678",
+      "text": "Thường thì đầu vào mấy bác thấy ra được video rất là xịn như thế, mọi người cứ nghĩ là nó gen ra sẽ tốn nhiều token đúng không?"
+    },
+    {
+      "id": 272,
+      "start": 1498.678,
+      "end": 1508.918,
+      "start_time": "00:24:58,678",
+      "end_time": "00:25:08,918",
+      "text": "Nhưng mà em thấy rất là bình thường nha. Cái quan trọng em nhắc lại là cái này nó sẽ gen video rất là lâu và tùy thuộc vào cái cấu hình máy của mọi người nữa nha."
+    },
+    {
+      "id": 273,
+      "start": 1509.398,
+      "end": 1518.078,
+      "start_time": "00:25:09,398",
+      "end_time": "00:25:18,078",
+      "text": "Rồi ok, em cảm ơn tất cả mọi người đã xem video đến đây. Thì cái video này là về cái ngách What If mà em đã làm 2 phiên bản."
+    },
+    {
+      "id": 274,
+      "start": 1518.078,
+      "end": 1523.11,
+      "start_time": "00:25:18,078",
+      "end_time": "00:25:23,110",
+      "text": "Phiên bản 1 là cách làm thô thủ công mà mấy bác nên xem qua để biết được quy trình."
+    },
+    {
+      "id": 275,
+      "start": 1523.11,
+      "end": 1526.99,
+      "start_time": "00:25:23,110",
+      "end_time": "00:25:26,990",
+      "text": "Và cái này là phiên bản tự động, tự động hóa luôn nha mọi người."
+    },
+    {
+      "id": 276,
+      "start": 1526.99,
+      "end": 1531.678,
+      "start_time": "00:25:26,990",
+      "end_time": "00:25:31,678",
+      "text": "Sau này có những cái ngách mới thì em sẽ tiếp tục chia sẻ hướng dẫn mọi người sau nha."
+    },
+    {
+      "id": 277,
+      "start": 1531.678,
+      "end": 1534.678,
+      "start_time": "00:25:31,678",
+      "end_time": "00:25:34,678",
+      "text": "Rồi, em cảm ơn tất cả mọi người đã xem video đến đây."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "sku": "VIDEO-a1c98f",
+  "title": "HƯỚNG DẪN QUY TRÌNH LÀM THUMB - CLONE THUMB THEO GIỐNG 100% ĐỐI THỦ TỪ FONT CHỮ PHONG CÁCH ĐỐI THỦ - MẢNH GHÉP CUỐI CÙNG CỰC KỲ QUAN TRỌNG KHI LÀM VIDEO ",
+  "actual_topic": "Hướng dẫn quy trình clone thumbnail giống đối thủ 100% từ phông chữ đến màu chữ bằng Canva, ChatGPT và công cụ tạo ảnh AI",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Kháng Bản Quyền & Chính Sách YPP",
+  "niche_id": "faceless-general",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "key_takeaways": [
+    "Tác giả hướng dẫn quy trình clone thumbnail giống đối thủ về phông chữ, màu chữ và bố cục, xem đây là mảnh ghép cuối cùng của quy trình làm bán content cho các ngách sức khỏe, triết lý và reup.",
+    "Chuẩn bị ảnh nền demo trước bằng cách dịch tên nhân vật trên thumbnail đối thủ, tìm ảnh trên Google, tải về rồi đưa vào Canva xóa nền và ghép lên nền màu đen theo đúng góc đặt nhân vật của đối thủ.",
+    "Tải ảnh thumbnail gốc của đối thủ về máy cho nét, đưa vào ChatGPT kèm form prompt để dịch tiêu đề và tạo ra 3 phiên bản chữ có tỷ lệ click cao hơn với bố cục chuẩn 3 dòng chữ.",
+    "Đưa ảnh thumbnail mẫu của đối thủ và ảnh nền Canva của mình vào tool tạo ảnh AI, thay thế nội dung 3 dòng chữ cùng ghi chú màu sắc và màu viền (trắng, vàng, đỏ) vào form prompt, chọn chất lượng 2K và chờ 1 đến 2 phút.",
+    "Nếu câu chữ dòng đầu quá dài khiến AI tự xuống thành 4 dòng thì chọn lại phiên bản câu ngắn hơn để giữ đúng bố cục 3 dòng sắc nét giống đối thủ 100%."
+  ],
+  "edit_sop": {
+    "primary": "Clone thumbnail giống đối thủ về phông chữ, màu chữ, bố cục bằng AI tạo ảnh",
+    "additional": [
+      "Lấy tên nhân vật trên thumbnail đối thủ, search ảnh Google, tải ảnh, xóa nền rồi đặt lên nền đen trong Canva làm thumbnail mẫu",
+      "Tải thumbnail đối thủ về cho nét, đưa vào ChatGPT cùng form prompt để dịch tiêu đề và cho 3 phiên bản tỷ lệ click cao hơn",
+      "Mỗi thumbnail khoảng 3 dòng chữ, dòng đầu màu trắng rồi vàng rồi đỏ, bám theo đối thủ",
+      "Đưa thumbnail đối thủ và ảnh mẫu của mình vào tool tạo ảnh, thay chữ, màu, viền trong form prompt rồi tạo ảnh, chất lượng 2K là đủ",
+      "Chờ 1 đến 2 phút, tải về so sánh với đối thủ; dòng chữ quá dài bị xuống dòng thì chọn bản ngắn hơn"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng làm quá nhiều dòng chữ trên thumbnail, khoảng 3 dòng",
+    "Không cần 4K, 2K là đủ vì 4K tốn thêm credit"
+  ],
+  "tools_mentioned": [
+    "Google"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu quy trình clone thumbnail giống đối thủ 100% về phông chữ và màu sắc"
+    },
+    {
+      "time": "03:03",
+      "seconds": 183,
+      "label": "Tìm ảnh nhân vật trên Google, xóa nền và ghép lên nền đen trong Canva làm ảnh mẫu"
+    },
+    {
+      "time": "07:12",
+      "seconds": 432,
+      "label": "Dùng ChatGPT tạo 3 phiên bản tiêu đề 3 dòng và thay màu chữ trắng, vàng, đỏ vào prompt"
+    },
+    {
+      "time": "09:53",
+      "seconds": 593,
+      "label": "Kiểm tra ảnh xuất lần đầu bị xuống 4 dòng và kinh nghiệm chọn câu ngắn gọn vừa khung"
+    },
+    {
+      "time": "12:47",
+      "seconds": 767,
+      "label": "Xuất thành phẩm chất lượng 2K giống đối thủ 100% về phông chữ, màu sắc và viền chữ"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-a1c98f/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-24",
+  "sop_steps": [
+    "Lấy tên nhân vật trên thumbnail đối thủ, search ảnh Google, tải ảnh, xóa nền rồi đặt lên nền đen trong Canva làm thumbnail mẫu",
+    "Tải thumbnail đối thủ về cho nét, đưa vào ChatGPT cùng form prompt để dịch tiêu đề và cho 3 phiên bản tỷ lệ click cao hơn",
+    "Mỗi thumbnail khoảng 3 dòng chữ, dòng đầu màu trắng rồi vàng rồi đỏ, bám theo đối thủ",
+    "Đưa thumbnail đối thủ và ảnh mẫu của mình vào tool tạo ảnh, thay chữ, màu, viền trong form prompt rồi tạo ảnh, chất lượng 2K là đủ",
+    "Chờ 1 đến 2 phút, tải về so sánh với đối thủ; dòng chữ quá dài bị xuống dòng thì chọn bản ngắn hơn"
+  ]
+}

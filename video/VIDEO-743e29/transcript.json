@@ -1,0 +1,482 @@
+{
+  "sku": "VIDEO-743e29",
+  "duration": 241.67,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 59,
+  "full_text": "Tư duy thứ 7 Tư duy này là gây tranh cãi này Sau cái khóa học này là anh em không được nhắc cái này nữa nha Cái này chỉ dành nguyên cho cộng đồng mình thôi Đem ra ngoài là tranh cãi chết luôn Tư duy thứ 7 Chọn Thị trường Đỏ nhớ nha, nhớ là đỏ nha Chọn thị trường đỏ Rất là nhiều anh em đi học hay là đọc sách có hẳn cuốn Đại Dương Xanh, bí mật Đại Dương Xanh Nhưng lời khuyên góc nhìn là nên là chọn thị trường đỏ Cái câu chuyện về chọn thị trường đỏ tức là chúng ta hãy chọn những nơi nó có sẵn nhu cầu Có sẵn nhóm khách hàng rồi. Và chúng ta bắt đầu tìm sản phẩm dịch vụ để cung cấp cho cái nhóm đấy. Chứ chúng ta không giáo dục thị trường. Chúng ta không tạo ra thị trường. Bởi chúng ta chưa đủ lớn để có thể giáo dục thị trường. Nên với nguồn lực nhỏ. Một vài triệu đô la mà đi đầu tư cũng không phải là giáo dục được thị trường đâu nhé. Huawei hàng năm nó bỏ ra 22 tỷ đô la chỉ để R&D. Huawei 22 tỷ đô la chỉ để R&D Nhưng anh em biết nó R&D Lại không phải là Thằng R&D 100% đâu Mà nó focus đối thủ để nó R&D Nó cải tiến Đấy Chúng ta không có đủ sức để tạo ra thị trường, thì chúng ta cần phải follow theo thị trường, và nên chọn là thị trường đỏ. Thị trường đỏ tức là thị trường có nhiều view, vì chúng ta làm nhiều view, nhiều sub, nên phải chọn nơi có nhiều view. Nên tiêu điểm chọn của chúng ta, trong vòng 3 tháng, cần phải có video, nếu mà ở nước ngoài, 3 tháng nên có video triệu view. Còn nếu với những chủ đề khó và rất khó, đều khoảng 500.000 view. Trong khoảng 3 tháng gần nhất nhỉ. Còn đương nhiên trong 1 năm đến 3 năm phải có video nhiều triệu view. Nhưng ngách mà mình chọn. Những cái video vài năm nó phải tầm 6-70 triệu view. Để tương lai mình còn mở được ra những cái đấy nhỉ. Ở Trung Quốc nó cũng có thêm một câu chuyện nữa là Khi mà định giá IPO Thì có một cái phần nhỏ Nó là công ty bạn follow là ai Tức là đối thủ chính của bạn là ai trên thị trường Mà R&D sản phẩm theo đối thủ đó Để được định giá Nên là hãy tìm đối thủ xứng tầm Cái này nó có xung đột với cá lớn trong ao nhỏ không? Không. Cá lớn trong ao nhỏ tức là chúng ta chọn một ngách, sau đó chúng ta trở thành vua cái ngách đấy, chọn một từ khóa, sau đó chọn từ khóa dài và phủ toàn bộ video bằng từ khóa dài của mình, SEO từ khóa dài của mình lên top. Nó không hề xung đột với lại chọn thị trường đỏ nhé. Bởi vì khi mà anh em làm chiếm được top rồi, chiếm được từ khóa dài rồi, chúng ta cần phải chiếm lại cái từ khóa ngắn. Trong khóa học có cái phần, ví dụ của kênh thầy Trần Việt Quân, kênh của Tuệ An. Kênh của thầy Trần Việt Quân đầu tiên là chiếm về ngách nhân tướng học trong đời sống. Sau đấy thì mới bắt đầu dần lên. Và cuối cùng là Nói về Nói về kinh doanh Ứng dụng đạo Phật trong kinh doanh Chọn phải có cái thứ để mở Nếu mà không mở được Thì sau này anh em kênh cứ bé mãi",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 1.16,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:01,160",
+      "text": "Tư duy thứ 7"
+    },
+    {
+      "id": 2,
+      "start": 1.16,
+      "end": 3.54,
+      "start_time": "00:00:01,160",
+      "end_time": "00:00:03,540",
+      "text": "Tư duy này là gây tranh cãi này"
+    },
+    {
+      "id": 3,
+      "start": 3.54,
+      "end": 8.32,
+      "start_time": "00:00:03,540",
+      "end_time": "00:00:08,320",
+      "text": "Sau cái khóa học này là anh em không được nhắc cái này nữa nha"
+    },
+    {
+      "id": 4,
+      "start": 8.32,
+      "end": 10.74,
+      "start_time": "00:00:08,320",
+      "end_time": "00:00:10,740",
+      "text": "Cái này chỉ dành nguyên cho cộng đồng mình thôi"
+    },
+    {
+      "id": 5,
+      "start": 10.74,
+      "end": 13.14,
+      "start_time": "00:00:10,740",
+      "end_time": "00:00:13,140",
+      "text": "Đem ra ngoài là tranh cãi chết luôn"
+    },
+    {
+      "id": 6,
+      "start": 13.14,
+      "end": 15.96,
+      "start_time": "00:00:13,140",
+      "end_time": "00:00:15,960",
+      "text": "Tư duy thứ 7"
+    },
+    {
+      "id": 7,
+      "start": 15.96,
+      "end": 18.18,
+      "start_time": "00:00:15,960",
+      "end_time": "00:00:18,180",
+      "text": "Chọn"
+    },
+    {
+      "id": 8,
+      "start": 18.18,
+      "end": 22.62,
+      "start_time": "00:00:18,180",
+      "end_time": "00:00:22,620",
+      "text": "Thị trường"
+    },
+    {
+      "id": 9,
+      "start": 22.62,
+      "end": 26.12,
+      "start_time": "00:00:22,620",
+      "end_time": "00:00:26,120",
+      "text": "Đỏ nhớ nha, nhớ là đỏ nha"
+    },
+    {
+      "id": 10,
+      "start": 26.12,
+      "end": 30.0,
+      "start_time": "00:00:26,120",
+      "end_time": "00:00:30,000",
+      "text": "Chọn thị trường đỏ"
+    },
+    {
+      "id": 11,
+      "start": 30.0,
+      "end": 37.9,
+      "start_time": "00:00:30,000",
+      "end_time": "00:00:37,900",
+      "text": "Rất là nhiều anh em đi học hay là đọc sách có hẳn cuốn Đại Dương Xanh, bí mật Đại Dương Xanh"
+    },
+    {
+      "id": 12,
+      "start": 37.9,
+      "end": 47.0,
+      "start_time": "00:00:37,900",
+      "end_time": "00:00:47,000",
+      "text": "Nhưng lời khuyên góc nhìn là nên là chọn thị trường đỏ"
+    },
+    {
+      "id": 13,
+      "start": 47.0,
+      "end": 53.16,
+      "start_time": "00:00:47,000",
+      "end_time": "00:00:53,160",
+      "text": "Cái câu chuyện về chọn thị trường đỏ tức là chúng ta hãy chọn những nơi nó có sẵn nhu cầu"
+    },
+    {
+      "id": 14,
+      "start": 53.16,
+      "end": 55.94,
+      "start_time": "00:00:53,160",
+      "end_time": "00:00:55,940",
+      "text": "Có sẵn nhóm khách hàng rồi."
+    },
+    {
+      "id": 15,
+      "start": 57.88,
+      "end": 61.28,
+      "start_time": "00:00:57,880",
+      "end_time": "00:01:01,280",
+      "text": "Và chúng ta bắt đầu tìm sản phẩm dịch vụ để cung cấp cho cái nhóm đấy."
+    },
+    {
+      "id": 16,
+      "start": 61.86,
+      "end": 63.58,
+      "start_time": "00:01:01,860",
+      "end_time": "00:01:03,580",
+      "text": "Chứ chúng ta không giáo dục thị trường."
+    },
+    {
+      "id": 17,
+      "start": 64.18,
+      "end": 65.44,
+      "start_time": "00:01:04,180",
+      "end_time": "00:01:05,440",
+      "text": "Chúng ta không tạo ra thị trường."
+    },
+    {
+      "id": 18,
+      "start": 66.18,
+      "end": 68.64,
+      "start_time": "00:01:06,180",
+      "end_time": "00:01:08,640",
+      "text": "Bởi chúng ta chưa đủ lớn để có thể giáo dục thị trường."
+    },
+    {
+      "id": 19,
+      "start": 69.7,
+      "end": 71.04,
+      "start_time": "00:01:09,700",
+      "end_time": "00:01:11,040",
+      "text": "Nên với nguồn lực nhỏ."
+    },
+    {
+      "id": 20,
+      "start": 73.12,
+      "end": 77.0,
+      "start_time": "00:01:13,120",
+      "end_time": "00:01:17,000",
+      "text": "Một vài triệu đô la mà đi đầu tư cũng không phải là giáo dục được thị trường đâu nhé."
+    },
+    {
+      "id": 21,
+      "start": 77.0,
+      "end": 83.24,
+      "start_time": "00:01:17,000",
+      "end_time": "00:01:23,240",
+      "text": "Huawei hàng năm nó bỏ ra 22 tỷ đô la chỉ để R&D."
+    },
+    {
+      "id": 22,
+      "start": 83.26,
+      "end": 85.44,
+      "start_time": "00:01:23,260",
+      "end_time": "00:01:25,440",
+      "text": "Huawei"
+    },
+    {
+      "id": 23,
+      "start": 85.44,
+      "end": 88.24,
+      "start_time": "00:01:25,440",
+      "end_time": "00:01:28,240",
+      "text": "22 tỷ đô la chỉ để"
+    },
+    {
+      "id": 24,
+      "start": 88.24,
+      "end": 89.36,
+      "start_time": "00:01:28,240",
+      "end_time": "00:01:29,360",
+      "text": "R&D"
+    },
+    {
+      "id": 25,
+      "start": 89.36,
+      "end": 91.2,
+      "start_time": "00:01:29,360",
+      "end_time": "00:01:31,200",
+      "text": "Nhưng anh em biết nó R&D"
+    },
+    {
+      "id": 26,
+      "start": 91.2,
+      "end": 92.82,
+      "start_time": "00:01:31,200",
+      "end_time": "00:01:32,820",
+      "text": "Lại không phải là"
+    },
+    {
+      "id": 27,
+      "start": 92.87,
+      "end": 93.21,
+      "start_time": "00:01:32,870",
+      "end_time": "00:01:33,210",
+      "text": "Thằng"
+    },
+    {
+      "id": 28,
+      "start": 93.21,
+      "end": 95.29,
+      "start_time": "00:01:33,210",
+      "end_time": "00:01:35,290",
+      "text": "R&D 100% đâu"
+    },
+    {
+      "id": 29,
+      "start": 95.29,
+      "end": 98.45,
+      "start_time": "00:01:35,290",
+      "end_time": "00:01:38,450",
+      "text": "Mà nó focus đối thủ để nó R&D"
+    },
+    {
+      "id": 30,
+      "start": 98.45,
+      "end": 99.47,
+      "start_time": "00:01:38,450",
+      "end_time": "00:01:39,470",
+      "text": "Nó cải tiến"
+    },
+    {
+      "id": 31,
+      "start": 99.47,
+      "end": 101.33,
+      "start_time": "00:01:39,470",
+      "end_time": "00:01:41,330",
+      "text": "Đấy"
+    },
+    {
+      "id": 32,
+      "start": 102.496,
+      "end": 108.256,
+      "start_time": "00:01:42,496",
+      "end_time": "00:01:48,256",
+      "text": "Chúng ta không có đủ sức để tạo ra thị trường, thì chúng ta cần phải follow theo thị trường, và nên chọn là thị trường đỏ."
+    },
+    {
+      "id": 33,
+      "start": 108.256,
+      "end": 116.176,
+      "start_time": "00:01:48,256",
+      "end_time": "00:01:56,176",
+      "text": "Thị trường đỏ tức là thị trường có nhiều view, vì chúng ta làm nhiều view, nhiều sub, nên phải chọn nơi có nhiều view."
+    },
+    {
+      "id": 34,
+      "start": 117.0,
+      "end": 127.856,
+      "start_time": "00:01:57,000",
+      "end_time": "00:02:07,856",
+      "text": "Nên tiêu điểm chọn của chúng ta, trong vòng 3 tháng, cần phải có video, nếu mà ở nước ngoài, 3 tháng nên có video triệu view."
+    },
+    {
+      "id": 35,
+      "start": 127.856,
+      "end": 136.816,
+      "start_time": "00:02:07,856",
+      "end_time": "00:02:16,816",
+      "text": "Còn nếu với những chủ đề khó và rất khó, đều khoảng 500.000 view. Trong khoảng 3 tháng gần nhất nhỉ."
+    },
+    {
+      "id": 36,
+      "start": 136.816,
+      "end": 145.776,
+      "start_time": "00:02:16,816",
+      "end_time": "00:02:25,776",
+      "text": "Còn đương nhiên trong 1 năm đến 3 năm phải có video nhiều triệu view. Nhưng ngách mà mình chọn. Những cái"
+    },
+    {
+      "id": 37,
+      "start": 145.776,
+      "end": 154.736,
+      "start_time": "00:02:25,776",
+      "end_time": "00:02:34,736",
+      "text": "video vài năm nó phải tầm 6-70 triệu view. Để tương lai mình còn mở được ra những cái đấy nhỉ."
+    },
+    {
+      "id": 38,
+      "start": 155.0,
+      "end": 159.096,
+      "start_time": "00:02:35,000",
+      "end_time": "00:02:39,096",
+      "text": "Ở Trung Quốc nó cũng có thêm một câu chuyện nữa là"
+    },
+    {
+      "id": 39,
+      "start": 159.096,
+      "end": 162.116,
+      "start_time": "00:02:39,096",
+      "end_time": "00:02:42,116",
+      "text": "Khi mà định giá IPO"
+    },
+    {
+      "id": 40,
+      "start": 162.116,
+      "end": 164.456,
+      "start_time": "00:02:42,116",
+      "end_time": "00:02:44,456",
+      "text": "Thì có một cái phần nhỏ"
+    },
+    {
+      "id": 41,
+      "start": 164.456,
+      "end": 166.656,
+      "start_time": "00:02:44,456",
+      "end_time": "00:02:46,656",
+      "text": "Nó là công ty bạn follow là ai"
+    },
+    {
+      "id": 42,
+      "start": 166.656,
+      "end": 170.936,
+      "start_time": "00:02:46,656",
+      "end_time": "00:02:50,936",
+      "text": "Tức là đối thủ chính của bạn là ai trên thị trường"
+    },
+    {
+      "id": 43,
+      "start": 170.936,
+      "end": 173.116,
+      "start_time": "00:02:50,936",
+      "end_time": "00:02:53,116",
+      "text": "Mà R&D sản phẩm theo đối thủ đó"
+    },
+    {
+      "id": 44,
+      "start": 173.116,
+      "end": 175.216,
+      "start_time": "00:02:53,116",
+      "end_time": "00:02:55,216",
+      "text": "Để được định giá"
+    },
+    {
+      "id": 45,
+      "start": 175.216,
+      "end": 180.0,
+      "start_time": "00:02:55,216",
+      "end_time": "00:03:00,000",
+      "text": "Nên là hãy tìm đối thủ xứng tầm"
+    },
+    {
+      "id": 46,
+      "start": 180.0,
+      "end": 184.98,
+      "start_time": "00:03:00,000",
+      "end_time": "00:03:04,980",
+      "text": "Cái này nó có xung đột với cá lớn trong ao nhỏ không? Không."
+    },
+    {
+      "id": 47,
+      "start": 186.38,
+      "end": 199.04,
+      "start_time": "00:03:06,380",
+      "end_time": "00:03:19,040",
+      "text": "Cá lớn trong ao nhỏ tức là chúng ta chọn một ngách, sau đó chúng ta trở thành vua cái ngách đấy, chọn một từ khóa, sau đó chọn từ khóa dài và phủ toàn bộ video bằng từ khóa dài của mình, SEO từ khóa dài của mình lên top."
+    },
+    {
+      "id": 48,
+      "start": 199.04,
+      "end": 203.46,
+      "start_time": "00:03:19,040",
+      "end_time": "00:03:23,460",
+      "text": "Nó không hề xung đột với lại chọn thị trường đỏ nhé."
+    },
+    {
+      "id": 49,
+      "start": 204.28,
+      "end": 210.26,
+      "start_time": "00:03:24,280",
+      "end_time": "00:03:30,260",
+      "text": "Bởi vì khi mà anh em làm chiếm được top rồi, chiếm được từ khóa dài rồi, chúng ta cần phải chiếm lại cái từ khóa ngắn."
+    },
+    {
+      "id": 50,
+      "start": 211.0,
+      "end": 215.32,
+      "start_time": "00:03:31,000",
+      "end_time": "00:03:35,320",
+      "text": "Trong khóa học có cái phần, ví dụ của kênh thầy Trần Việt Quân, kênh của Tuệ An."
+    },
+    {
+      "id": 51,
+      "start": 216.74,
+      "end": 222.44,
+      "start_time": "00:03:36,740",
+      "end_time": "00:03:42,440",
+      "text": "Kênh của thầy Trần Việt Quân đầu tiên là chiếm về ngách nhân tướng học trong đời sống."
+    },
+    {
+      "id": 52,
+      "start": 223.72,
+      "end": 225.36,
+      "start_time": "00:03:43,720",
+      "end_time": "00:03:45,360",
+      "text": "Sau đấy thì mới bắt đầu dần lên."
+    },
+    {
+      "id": 53,
+      "start": 225.36,
+      "end": 227.32,
+      "start_time": "00:03:45,360",
+      "end_time": "00:03:47,320",
+      "text": "Và cuối cùng là"
+    },
+    {
+      "id": 54,
+      "start": 227.32,
+      "end": 229.32,
+      "start_time": "00:03:47,320",
+      "end_time": "00:03:49,320",
+      "text": "Nói về"
+    },
+    {
+      "id": 55,
+      "start": 229.32,
+      "end": 230.38,
+      "start_time": "00:03:49,320",
+      "end_time": "00:03:50,380",
+      "text": "Nói về kinh doanh"
+    },
+    {
+      "id": 56,
+      "start": 230.38,
+      "end": 232.28,
+      "start_time": "00:03:50,380",
+      "end_time": "00:03:52,280",
+      "text": "Ứng dụng đạo Phật trong kinh doanh"
+    },
+    {
+      "id": 57,
+      "start": 232.28,
+      "end": 235.52,
+      "start_time": "00:03:52,280",
+      "end_time": "00:03:55,520",
+      "text": "Chọn phải có cái thứ để mở"
+    },
+    {
+      "id": 58,
+      "start": 235.52,
+      "end": 237.1,
+      "start_time": "00:03:55,520",
+      "end_time": "00:03:57,100",
+      "text": "Nếu mà không mở được"
+    },
+    {
+      "id": 59,
+      "start": 237.1,
+      "end": 239.06,
+      "start_time": "00:03:57,100",
+      "end_time": "00:03:59,060",
+      "text": "Thì sau này anh em kênh cứ bé mãi"
+    }
+  ]
+}

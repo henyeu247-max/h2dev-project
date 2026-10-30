@@ -1,0 +1,77 @@
+{
+  "sku": "VIDEO-73d98a",
+  "title": "Update key (ngách cực nhỏ) mới nhất 06-09-2026",
+  "actual_topic": "Chiến lược bóc tách ngách cực nhỏ (Micro-niche): Drama cảm động nhân văn & Sức khỏe dưỡng lão Nhật-Hàn",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Drama Cảm Động & Dưỡng Lão",
+  "niche_id": "drama-cam-dong-duong-lao",
+  "target_market": "Nhật Bản / Hàn Quốc",
+  "market_code": "JP,KR",
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu kênh Nhật Bản làm ngách drama người già nổ view mạnh"
+    },
+    {
+      "time": "01:17",
+      "seconds": 77,
+      "label": "Phân tích cách ghép video tự nhiên và bộ thẻ tag của kênh mẫu"
+    },
+    {
+      "time": "02:22",
+      "seconds": 142,
+      "label": "Khảo sát kênh Hàn Quốc cùng ngách drama gia đình để nhân bản chéo"
+    },
+    {
+      "time": "03:51",
+      "seconds": 231,
+      "label": "Kỹ thuật tự quay cảnh gõ bàn phím/hồ cá để tránh lỗi sử dụng lại nội dung"
+    },
+    {
+      "time": "06:46",
+      "seconds": 406,
+      "label": "Cách dùng từ khóa tìm kiếm trên YouTube để tự đào thêm ngách nhỏ mới"
+    }
+  ],
+  "key_takeaways": [
+    "Tác giả phân tích một kênh thị trường Nhật Bản lập từ tháng 5, video cũ nhất 2 tháng trước, view rất cao, theo hướng câu chuyện cảm động như ngày ly hôn hay chị gái bỏ nhà ra đi; đây là dạng drama nhẹ nhàng hơn các ngách drama trước.",
+    "Kênh edit đơn giản là ghép video tự nhiên rồi chạy phụ đề, còn kênh Hàn Quốc cùng dạng thì ghép video tự quay bàn tay ngồi bấm bàn phím, nên không lo bị lỗi sử dụng lại nội dung và rất bền, làm từ 4 tháng trước.",
+    "Cả hai kênh Nhật và Hàn đều có thể đem nhân bản sang Việt Nam, và nếu đi theo hướng nhân bản thì không bao giờ thiếu kịch bản để sản xuất.",
+    "Một kênh dành cho người già có video hai ngày trước hơn 400.000 view và hơn 500.000 view, nhưng edit full bằng hình ảnh AI; tác giả đánh giá cách này không tốt, dễ dính lỗi liên quan đến AI, bị tắt kiếm tiền hoặc xóa kênh, nên ghép video nguồn tự nhiên hoặc tự quay.",
+    "Với kênh sức khỏe Nhật Bản, lấy các video cao view nhất để rút từ khóa như luyện tập trí não, phục hồi trí nhớ rồi search trên YouTube sẽ ra nhiều kênh và ngách nhỏ khác; không có công thức chính xác 100%, phải làm và xem nhiều thì tự nhạy ngách."
+  ],
+  "edit_sop": {
+    "primary": "Phân tích kênh ngách drama Nhật, Hàn và ngách sức khỏe Nhật; cách tìm ngách qua từ khóa và nhân bản về Việt Nam",
+    "additional": [
+      "Edit đơn giản: ghép video tự nhiên vào rồi cho chạy phụ đề.",
+      "Kênh Hàn quay tay ngồi bấm bàn phím để ghép vào video, tự quay nên không lo lỗi sử dụng lại nội dung.",
+      "Tìm ngách: lấy hai video cao view nhất của kênh đối thủ, rút từ khóa tiếng Nhật rồi search trên YouTube để ra nhiều kênh và video khác.",
+      "Nhân bản kênh Nhật hoặc Hàn sang thị trường Việt Nam để không thiếu kịch bản."
+    ]
+  },
+  "avoid_flags": [
+    "Không nên dựng full bằng hình ảnh AI như một kênh mẫu, rất dễ dính lỗi liên quan AI, bị tắt kiếm tiền hoặc xóa kênh.",
+    "Nên ghép video nguồn tự nhiên hoặc tự quay thay vì làm hình ảnh AI."
+  ],
+  "tools_mentioned": [
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@涙のひと駅",
+    "@사연만남1짱",
+    "@simbot2",
+    "@元気な老後-t5d"
+  ],
+  "analysis_method": "deep_visual_audio_inspection",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-73d98a/transcript.txt",
+  "sop_steps": [
+    "Edit đơn giản: ghép video tự nhiên vào rồi cho chạy phụ đề.",
+    "Kênh Hàn quay tay ngồi bấm bàn phím để ghép vào video, tự quay nên không lo lỗi sử dụng lại nội dung.",
+    "Tìm ngách: lấy hai video cao view nhất của kênh đối thủ, rút từ khóa tiếng Nhật rồi search trên YouTube để ra nhiều kênh và video khác.",
+    "Nhân bản kênh Nhật hoặc Hàn sang thị trường Việt Nam để không thiếu kịch bản."
+  ]
+}

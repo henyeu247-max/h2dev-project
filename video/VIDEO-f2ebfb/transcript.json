@@ -1,0 +1,1034 @@
+{
+  "sku": "VIDEO-f2ebfb",
+  "duration": 796,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 128,
+  "full_text": "Chào tất cả các học viên, hôm nay chúng ta sẽ đến với cái bài học liên quan đến chủ đề nhạc chầu văn. Để sản xuất ra những video nhạc chầu văn như thế này thì đầu tiên tôi vẫn bảo anh chị là sản xuất những video ngắn trước. Người mới thì tôi yêu cầu focus về view, người pro thì chúng ta sẽ focus về video dài để tăng tỷ lệ RPM khi kênh anh chị bật kiếm tiền. Chầu văn này thì chúng ta sẽ đi vào bước đầu tiên là bước đặt câu lệnh để viết ra bài hát và style cho bài hát để tạo lại nhạc trên Suno AI. Đầu tiên anh chị hãy lên chụp cho tôi ở cái hình ảnh. Ví dụ như anh chị em đang xem ở trên cái video của tôi thì anh chị có thể chụp ảnh luôn. Ở trong phần tài liệu này tôi đã để một câu lệnh đây gọi là một câu lệnh yêu cầu. Nghĩa là tôi sẽ yêu cầu ChatGPT sẽ viết ra cho tôi một câu lệnh để trả ngược lại cho ChatGPT. thì ghi nhớ để sử dụng form này anh chị nhấn Alt + Shift + S chụp lại màn hình cho tôi nếu mà anh chị ngồi anh chị không biết được thì anh chị hãy chụp ảnh sau đó đưa lên ChatGPT thì anh chị viết ra cho tôi câu lệnh trong hình thì bây giờ là ChatGPT sẽ cho anh chị em một câu lệnh viết ra câu lệnh ở trong cái hình ảnh này và anh chị dán lại nhấn Enter Bây giờ ChatGPT sẽ tạo cho anh chị em 1 câu lệnh nhé, anh chị em nhé. Thì khi có 1 cái câu lệnh như thế này, anh chị em làm gì ạ? Anh chị em nhấn sao chép nó, và mình có thể dán luôn ở dưới này nha. Sau khi dán trở lại câu lệnh cho ChatGPT thì anh chị đã nhìn thấy ở trên màn hình là ChatGPT đã lưu lại. Từ bây giờ bạn chỉ cần gửi lyrics bài hát, nó sẽ tự động trả kết quả cho các bạn theo format nhạc chầu văn này. Anh chị em trở ra trong YouTube, ở đây chúng ta sẽ lấy lyrics bài hát, những bài hát hay như kiểu là Cô Đôi Thượng Ngàn, những cái bài liên quan đến chầu văn. Nếu mà nhà anh chị ở bên Phật Pháp thì cực kỳ dễ và mọi người cùng thẩm nhạc. Thì tôi sẽ nhấn vào một cái bài hát nó tầm 897.000 view này. Bây giờ là anh chị kéo xuống nhé. Thường thì ở trong cái mô tả của video người ta sẽ để lyrics bài hát đây. Nếu mà không có thì anh chị hãy kéo hẳn xuống. Kéo hẳn xuống như này nhé. Anh chị sẽ nhìn thấy cái bảng chép lời này. Thì anh chị nhấn hiện bảng chép lời. Thì góc bên phải của anh chị nó sẽ có cái bảng chép lời này. Anh chị copy toàn bộ cái lyrics bài hát này. Chúng ta không viết ra được lyrics bài hát thì chúng ta sẽ copy và sao chép và làm ra một bài hát mới hoàn toàn. Anh chị nhấn sao chép. Trở sang ChatGPT phần ChatGPT đã ghi nhớ nha anh chị em nha. Anh chị dán vào đây. Bây giờ dựa vào cái câu lệnh mà chúng ta đã gửi cho ChatGPT lưu và lyrics bài hát này. ChatGPT sẽ đưa ra cho anh chị một cái bài hát hoàn toàn mới. Anh chị sẽ copy từ cái phần đầu này. Nó sẽ có bao gồm là lyrics bài hát nhé. Bắt đầu từ cái đoạn lyrics bài hát chầu văn mới này. Style để tạo nhạc trên Suno. Anh chị bắt đầu copy từ cái đoạn mở đầu này. Lyrics chầu văn mới nhé. Anh chị kéo xuống. Rồi copy đến cái đoạn kết này nhé. Nhấn sao chép. Trong phần Suno thì anh chị nhấn tạo nhạc và chọn chế độ nâng cao. Anh chị dán lời bài hát vào đây. Là cái lyrics bài hát nha anh chị em nhé. Tiếp theo copy câu prompt để tạo style nhạc nền của bài hát đó. Anh chị nhấn dán và nhấn tạo nha. Thì trong lúc chờ đợi của cái Suno đang tạo nhạc như thế này thì chúng ta sẽ ra bắt đầu tạo video. Thì để đến cuối cái video này anh chị sẽ xem một đoạn nó hoàn chỉnh như thế nào nhé. Bắt đầu thì chúng ta sẽ đến với phần tạo video. Để tạo được những nhân vật này nhất quán 100% thì anh chị sẽ làm gì ạ? Anh chị sẽ lên cho em là Pinterest và anh chị tìm cho em Chầu Văn. Như anh chị em đang nhìn thấy trên màn hình đây, có rất nhiều hình ảnh cô gái liên quan đến Chầu Văn, thì anh chị có thể lấy bất kỳ một hình ảnh nào đó nha. Nhưng mà anh chị phải thẩm được cái trang phục, mình muốn trang phục bài hát này nó là màu gì? Có rất nhiều trang phục liên quan đến nhạc Chầu Văn, thì anh chị nhấn sao chép cái hình ảnh này. Anh chị nhấn sao chép nha. Anh chị mở thêm một cái tab ChatGPT nữa. Anh chị dán cái hình ảnh vào đây. Cái hình ảnh mà chúng ta vừa lấy bên Pinterest nha. Anh chị dán vào. Và bây giờ chúng ta sẽ nhập một câu lệnh như sau. Anh chị đã lấy hình ảnh ở bên Pinterest và đưa vào ChatGPT thì anh chị nhập câu lệnh tạo hình ảnh tham chiếu này. Tại sao phải tạo hình ảnh tham chiếu thì anh chị cứ copy cho tôi câu lệnh là tạo hình ảnh tham chiếu với kết hợp hình ảnh này. Anh chị nhìn tới đây và lựa chọn các thông số ở trong ChatGPT để tạo ra một hình ảnh. Tôi đã tạo một hình ảnh nhân vật tham chiếu để làm ra video chầu văn này. Thì anh chị nhấn tạo hình ảnh này xuống. Sau khi đã có hình ảnh này, anh chị trở sang cái ChatGPT mà lúc nãy chúng ta đã viết lyrics bài hát và style bài hát. Và anh chị thêm hình ảnh lên. Anh chị thêm hình ảnh lên, bây giờ chúng ta sẽ đến với câu lệnh. Đối với câu lệnh tạo ảnh và tạo video dựa trên lyrics bài hát này thì chúng ta sẽ viết như sau. Dựa trên bài hát lyrics mà bạn đã tạo lại, hãy tạo cho tôi 30 prompt. Khi tôi tải hình ảnh này lên Grok, Prompt sẽ tạo ra một hình ảnh nhân vật này liên quan đến một đoạn trong bài hát nhé chị em nhé. Chia đều cho 30 prompt, sáng tạo các góc quay liên quan đến nhạc chầu văn, yêu cầu prompt tạo ảnh chi tiết, góc quay liên tục thay đổi, sáng tạo nhân vật cầm các đồ vật liên quan đến biểu diễn chầu văn. Sau đó dưới mỗi prompt tạo hình ảnh, bạn hãy tạo cho tôi một prompt để tạo ra video. Bắt buộc phải có câu này anh chị em nhé. Yêu cầu prompt chi tiết để tạo dựa vào hình ảnh có sẵn, để tạo ra video nhân vật đang biểu diễn dựa trên hình ảnh, sáng tạo các góc quay liên tục cho tôi, biểu diễn chi tiết cho tôi, sáng tạo đầy đủ 30 prompt chi tiết tạo ảnh và 30 prompt chi tiết để tạo video. Các câu prompt phải đầy đủ, ký tự hay từ như nhau. Bám sát và tạo luôn prompt cho tôi. Tất cả các prompt tạo ảnh và prompt tạo video đều là kích thước 16:9. Yêu cầu ghi nhớ. Sau khi có câu prompt này, tôi sẽ sao chép cùng với hình ảnh trong cái mục mà lyrics bài hát luôn chúng ta đã tạo và chúng ta nhấn Enter. Bây giờ ChatGPT sẽ cho anh chị 1 prompt để tạo hình ảnh và dưới 1 prompt đấy là prompt tạo video. Anh chị có thể nhìn thấy trên màn hình đây. Nó sẽ tạo cho anh chị đầy đủ 30 prompt Anh chị nhấn tiếp tục Tiếp tục từ prompt thứ 6 đến prompt thứ 10 Anh chị có thể nhìn thấy prompt thứ 6, prompt thứ 7 đến prompt thứ 10 Và chúng ta cùng bắt đầu đi tạo hình ảnh. Thì anh chị hãy nhấn sao chép ở bên mục hình ảnh nhé. Chúng ta sẽ lên Grok. Trong phần này anh chị chọn Image. Tải hình ảnh tham chiếu của chúng ta lên. Bây giờ chúng ta chọn một hình ảnh nha anh chị em nhé. Anh chị sẽ dán cái câu prompt vào đây. Đây là câu prompt tạo hình ảnh. Anh chị dán vào. Và nhớ là chọn tỷ lệ khung hình. Ở đây chúng ta sẽ làm video dài. Thì anh chị sẽ chọn là 16:9. Màn hình rộng. Anh chị nhấn Enter. Tiếp theo, đến cảnh thứ 2, chúng ta cũng dán luôn câu lệnh vào và chọn tỷ lệ là 16:9. Câu lệnh thứ 3, dán vào, anh chị nhớ là vẫn phải trở về cái hình ảnh gốc để chúng ta tạo ra hình ảnh nhân vật. Chúng ta vẫn phải trở về cái hình ảnh gốc là hình ảnh tham chiếu này để cho nó nhất quán nhân vật cho tất cả các hình ảnh sau của anh chị. Đây là prompt thứ 3 và prompt thứ 4, anh chị dán vào. Trong lúc nó đang tạo ảnh ảnh thì chúng ta sẽ copy từng prompt để tạo video. Đây là prompt tạo video nha anh chị em nha. Anh chị dán vào. Anh chị nhớ đây là cảnh thứ đầu tiên anh chị chọn sang phần video mà được nha. Và anh chị dán vào đây. 720 thì anh chị lên mỗi cảnh, anh chị có thể làm 10 giây nhưng mà theo tôi thì anh chị nên làm tầm 6 giây 1 nhé. Anh chị nhấn tạo video là, sau đó thì anh chị copy cái prompt video nhé. Prompt tạo ảnh sẽ là prompt tạo ảnh và prompt tạo video sẽ là prompt tạo video. Chứ không thể nào là prompt tạo ảnh đưa lên tạo video được. Prompt tạo video nhé. Prompt thứ 3 này Các anh chị nhớ là tất cả các bối cảnh Mình phải nhớ là hình ảnh tạo ở prompt nào Thì chúng ta sẽ tạo video ở prompt đấy Đây là cảnh đầu tiên mà Grok đã tạo video ra cho tôi Và chúng ta sẽ nhấn tải về ấy nhé Cứ lần lượt như thế là anh chị sẽ tải tất cả các video liên quan đến chầu văn về Câu lệnh thứ 4 là anh chị chọn phần video, dán vào. Và trong lúc đang chờ đợi nó tạo video thì anh chị có thể tạo hình ảnh. hình ảnh vẫn cứ tiếp tục chúng ta tạo hình ảnh cho đến khi chúng ta làm ra một video hoàn chỉnh nhấn tạo câu lệnh thứ 6 là vẫn trở về hình ảnh tham chiếu dán vào và dưới đây là có phần là phần video anh chỉ nhấn video Quá đơn giản. để cho thời gian nó không lâu và tôi sẽ chỉ lấy 6 prompt này để cho anh chị hiểu là chúng ta đã tạo được cái độ nhất quán rất là cao là anh chị tải tất cả các video này cho thôi. Bây giờ trong phần Suno, anh chị download cái bài hát mà chúng ta vừa tạo ra. Nhấn tải xuống, anh chị chọn âm thanh WAV là chuyên nghiệp nha. Nhấn tải xuống. Trong phần CapCut, anh chị nhấn nhập các video lên. Ở đây tôi đã tạo ra 6 video và 1 bài hát. Tôi nhấn tải thư mục lên và anh chị có thể thấy các video anh chị đã thêm vào này. Sau đó mọi người hãy tắt cho tôi toàn bộ âm lượng của những cái video này. Chọn âm thanh kéo hết. Và chúng ta cùng thêm cái nhạc vào. Vì tôi chỉ có tạo 6 cảnh nên là tôi sẽ sao chép để chúng ta sẽ nghe một đoạn video nha. Anh chị bắt đầu nghe một đoạn về video nhạc chầu văn này. Chúng ta cùng nghe anh nhá. Khói hương lan giữa đêm thiêng Tiếng chuông vọng xuống cửa miền Hàn Sơn Mây đưa bóng nguyệt chập chờn Cô Bơ Thoải Phủ giáng trần Mái đền nghi ngút khói, quyện trời mây Tiếng đàn nguyệt vọng Như anh chị vừa thấy Đây là một đoạn nhạc chầu văn Và phần tiếp theo Chúng ta đi phần tạo hình ảnh thumbnail Thì dựa trên hình ảnh có sẵn Mà chúng ta đã tạo ra rồi nha anh chị em nha Anh chị nhấn sao chép và chúng ta cùng trở sang cái bên ChatGPT mà vừa tạo hình ảnh và tạo video này. Có lyrics bài hát nha. Anh chị em hãy nhập một câu lệnh như sau. Đây là câu lệnh để tạo hình ảnh thumbnail. Khi chúng ta đã tạo hình ảnh lên cái ChatGPT rồi, anh chị nhấn sao chép rồi, sao chép nha, và anh chị dán vào, vẫn chọn mục tạo hình ảnh, tạo hình ảnh 16:9 nha, anh chị nhấn tạo. Và nó sẽ dựa trên cái lyrics bài hát này, nó sẽ tạo ra cho chúng ta hình ảnh thumbnail, và chúng ta cùng xem hình ảnh thumbnail như thế nào nha. Sau khi mà ChatGPT cho anh chị em là tạo ra một hình ảnh thumbnail thì anh chị có thể nhìn thấy hình ảnh thumbnail này. Tỷ lệ điểm nhấn của nó rất là cao và anh chị nhấn tải xuống. Thì anh chị có thể thấy là chúng ta đã hoàn thành một video nhạc chầu văn và anh chị hãy lựa chọn cách đăng bằng đăng bằng máy tính nhé.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 5.74,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:05,740",
+      "text": "Chào tất cả các học viên, hôm nay chúng ta sẽ đến với cái bài học liên quan đến chủ đề nhạc chầu văn."
+    },
+    {
+      "id": 2,
+      "start": 5.9,
+      "end": 11.54,
+      "start_time": "00:00:05,900",
+      "end_time": "00:00:11,540",
+      "text": "Để sản xuất ra những video nhạc chầu văn như thế này thì đầu tiên tôi vẫn bảo anh chị là sản xuất những video ngắn trước."
+    },
+    {
+      "id": 3,
+      "start": 11.96,
+      "end": 20.8,
+      "start_time": "00:00:11,960",
+      "end_time": "00:00:20,800",
+      "text": "Người mới thì tôi yêu cầu focus về view, người pro thì chúng ta sẽ focus về video dài để tăng tỷ lệ RPM khi kênh anh chị bật kiếm tiền."
+    },
+    {
+      "id": 4,
+      "start": 20.8,
+      "end": 30.2,
+      "start_time": "00:00:20,800",
+      "end_time": "00:00:30,200",
+      "text": "Chầu văn này thì chúng ta sẽ đi vào bước đầu tiên là bước đặt câu lệnh để viết ra bài hát và style cho bài hát để tạo lại nhạc trên Suno AI."
+    },
+    {
+      "id": 5,
+      "start": 30.56,
+      "end": 39.0,
+      "start_time": "00:00:30,560",
+      "end_time": "00:00:39,000",
+      "text": "Đầu tiên anh chị hãy lên chụp cho tôi ở cái hình ảnh. Ví dụ như anh chị em đang xem ở trên cái video của tôi thì anh chị có thể chụp ảnh luôn."
+    },
+    {
+      "id": 6,
+      "start": 39.0,
+      "end": 51.56,
+      "start_time": "00:00:39,000",
+      "end_time": "00:00:51,560",
+      "text": "Ở trong phần tài liệu này tôi đã để một câu lệnh đây gọi là một câu lệnh yêu cầu. Nghĩa là tôi sẽ yêu cầu ChatGPT sẽ viết ra cho tôi một câu lệnh để trả ngược lại cho ChatGPT."
+    },
+    {
+      "id": 7,
+      "start": 51.56,
+      "end": 57.96,
+      "start_time": "00:00:51,560",
+      "end_time": "00:00:57,960",
+      "text": "thì ghi nhớ để sử dụng form này anh chị nhấn Alt + Shift + S chụp lại màn hình cho tôi"
+    },
+    {
+      "id": 8,
+      "start": 57.96,
+      "end": 62.26,
+      "start_time": "00:00:57,960",
+      "end_time": "00:01:02,260",
+      "text": "nếu mà anh chị ngồi anh chị không biết được thì anh chị hãy chụp ảnh"
+    },
+    {
+      "id": 9,
+      "start": 62.26,
+      "end": 71.56,
+      "start_time": "00:01:02,260",
+      "end_time": "00:01:11,560",
+      "text": "sau đó đưa lên ChatGPT thì anh chị viết ra cho tôi câu lệnh trong hình"
+    },
+    {
+      "id": 10,
+      "start": 71.56,
+      "end": 82.031,
+      "start_time": "00:01:11,560",
+      "end_time": "00:01:22,031",
+      "text": "thì bây giờ là ChatGPT sẽ cho anh chị em một câu lệnh viết ra câu lệnh ở trong cái hình ảnh này và anh chị dán lại nhấn Enter"
+    },
+    {
+      "id": 11,
+      "start": 82.031,
+      "end": 85.911,
+      "start_time": "00:01:22,031",
+      "end_time": "00:01:25,911",
+      "text": "Bây giờ ChatGPT sẽ tạo cho anh chị em 1 câu lệnh nhé, anh chị em nhé."
+    },
+    {
+      "id": 12,
+      "start": 86.091,
+      "end": 92.531,
+      "start_time": "00:01:26,091",
+      "end_time": "00:01:32,531",
+      "text": "Thì khi có 1 cái câu lệnh như thế này, anh chị em làm gì ạ? Anh chị em nhấn sao chép nó, và mình có thể dán luôn ở dưới này nha."
+    },
+    {
+      "id": 13,
+      "start": 92.851,
+      "end": 99.811,
+      "start_time": "00:01:32,851",
+      "end_time": "00:01:39,811",
+      "text": "Sau khi dán trở lại câu lệnh cho ChatGPT thì anh chị đã nhìn thấy ở trên màn hình là ChatGPT đã lưu lại."
+    },
+    {
+      "id": 14,
+      "start": 99.811,
+      "end": 106.511,
+      "start_time": "00:01:39,811",
+      "end_time": "00:01:46,511",
+      "text": "Từ bây giờ bạn chỉ cần gửi lyrics bài hát, nó sẽ tự động trả kết quả cho các bạn theo format nhạc chầu văn này."
+    },
+    {
+      "id": 15,
+      "start": 107.0,
+      "end": 116.011,
+      "start_time": "00:01:47,000",
+      "end_time": "00:01:56,011",
+      "text": "Anh chị em trở ra trong YouTube, ở đây chúng ta sẽ lấy lyrics bài hát, những bài hát hay như kiểu là Cô Đôi Thượng Ngàn, những cái bài liên quan đến chầu văn."
+    },
+    {
+      "id": 16,
+      "start": 116.231,
+      "end": 120.391,
+      "start_time": "00:01:56,231",
+      "end_time": "00:02:00,391",
+      "text": "Nếu mà nhà anh chị ở bên Phật Pháp thì cực kỳ dễ và mọi người cùng thẩm nhạc."
+    },
+    {
+      "id": 17,
+      "start": 120.531,
+      "end": 124.671,
+      "start_time": "00:02:00,531",
+      "end_time": "00:02:04,671",
+      "text": "Thì tôi sẽ nhấn vào một cái bài hát nó tầm 897.000 view này."
+    },
+    {
+      "id": 18,
+      "start": 125.371,
+      "end": 127.11,
+      "start_time": "00:02:05,371",
+      "end_time": "00:02:07,110",
+      "text": "Bây giờ là anh chị kéo xuống nhé."
+    },
+    {
+      "id": 19,
+      "start": 127.11,
+      "end": 135.83,
+      "start_time": "00:02:07,110",
+      "end_time": "00:02:15,830",
+      "text": "Thường thì ở trong cái mô tả của video người ta sẽ để lyrics bài hát đây. Nếu mà không có thì anh chị hãy kéo hẳn xuống. Kéo hẳn xuống như này nhé. Anh chị"
+    },
+    {
+      "id": 20,
+      "start": 135.83,
+      "end": 144.55,
+      "start_time": "00:02:15,830",
+      "end_time": "00:02:24,550",
+      "text": "sẽ nhìn thấy cái bảng chép lời này. Thì anh chị nhấn hiện bảng chép lời. Thì góc bên phải của anh chị nó sẽ có cái bảng chép lời này. Anh chị copy toàn bộ"
+    },
+    {
+      "id": 21,
+      "start": 144.55,
+      "end": 153.0,
+      "start_time": "00:02:24,550",
+      "end_time": "00:02:33,000",
+      "text": "cái lyrics bài hát này. Chúng ta không viết ra được lyrics bài hát thì chúng ta sẽ copy và sao chép và làm ra một bài hát mới hoàn toàn. Anh chị nhấn sao chép."
+    },
+    {
+      "id": 22,
+      "start": 153.0,
+      "end": 159.05,
+      "start_time": "00:02:33,000",
+      "end_time": "00:02:39,050",
+      "text": "Trở sang ChatGPT phần ChatGPT đã ghi nhớ nha anh chị em nha. Anh chị dán vào đây."
+    },
+    {
+      "id": 23,
+      "start": 159.85,
+      "end": 164.35,
+      "start_time": "00:02:39,850",
+      "end_time": "00:02:44,350",
+      "text": "Bây giờ dựa vào cái câu lệnh mà chúng ta đã gửi cho ChatGPT lưu và lyrics bài hát này."
+    },
+    {
+      "id": 24,
+      "start": 164.57,
+      "end": 168.41,
+      "start_time": "00:02:44,570",
+      "end_time": "00:02:48,410",
+      "text": "ChatGPT sẽ đưa ra cho anh chị một cái bài hát hoàn toàn mới."
+    },
+    {
+      "id": 25,
+      "start": 168.41,
+      "end": 174.47,
+      "start_time": "00:02:48,410",
+      "end_time": "00:02:54,470",
+      "text": "Anh chị sẽ copy từ cái phần đầu này. Nó sẽ có bao gồm là lyrics bài hát nhé."
+    },
+    {
+      "id": 26,
+      "start": 174.59,
+      "end": 177.19,
+      "start_time": "00:02:54,590",
+      "end_time": "00:02:57,190",
+      "text": "Bắt đầu từ cái đoạn lyrics bài hát chầu văn mới này."
+    },
+    {
+      "id": 27,
+      "start": 177.59,
+      "end": 182.73,
+      "start_time": "00:02:57,590",
+      "end_time": "00:03:02,730",
+      "text": "Style để tạo nhạc trên Suno. Anh chị bắt đầu copy từ cái đoạn mở đầu này."
+    },
+    {
+      "id": 28,
+      "start": 183.35,
+      "end": 189.21,
+      "start_time": "00:03:03,350",
+      "end_time": "00:03:09,210",
+      "text": "Lyrics chầu văn mới nhé. Anh chị kéo xuống. Rồi copy đến cái đoạn kết này nhé. Nhấn sao chép."
+    },
+    {
+      "id": 29,
+      "start": 189.87,
+      "end": 197.81,
+      "start_time": "00:03:09,870",
+      "end_time": "00:03:17,810",
+      "text": "Trong phần Suno thì anh chị nhấn tạo nhạc và chọn chế độ nâng cao. Anh chị dán lời bài hát vào đây. Là cái lyrics bài hát nha anh chị em nhé."
+    },
+    {
+      "id": 30,
+      "start": 197.81,
+      "end": 206.31,
+      "start_time": "00:03:17,810",
+      "end_time": "00:03:26,310",
+      "text": "Tiếp theo copy câu prompt để tạo style nhạc nền của bài hát đó. Anh chị nhấn dán và nhấn tạo nha."
+    },
+    {
+      "id": 31,
+      "start": 206.31,
+      "end": 213.01,
+      "start_time": "00:03:26,310",
+      "end_time": "00:03:33,010",
+      "text": "Thì trong lúc chờ đợi của cái Suno đang tạo nhạc như thế này thì chúng ta sẽ ra bắt đầu tạo video."
+    },
+    {
+      "id": 32,
+      "start": 213.37,
+      "end": 217.27,
+      "start_time": "00:03:33,370",
+      "end_time": "00:03:37,270",
+      "text": "Thì để đến cuối cái video này anh chị sẽ xem một đoạn nó hoàn chỉnh như thế nào nhé."
+    },
+    {
+      "id": 33,
+      "start": 217.67,
+      "end": 220.13,
+      "start_time": "00:03:37,670",
+      "end_time": "00:03:40,130",
+      "text": "Bắt đầu thì chúng ta sẽ đến với phần tạo video."
+    },
+    {
+      "id": 34,
+      "start": 220.67,
+      "end": 225.17,
+      "start_time": "00:03:40,670",
+      "end_time": "00:03:45,170",
+      "text": "Để tạo được những nhân vật này nhất quán 100% thì anh chị sẽ làm gì ạ?"
+    },
+    {
+      "id": 35,
+      "start": 226.0,
+      "end": 229.81,
+      "start_time": "00:03:46,000",
+      "end_time": "00:03:49,810",
+      "text": "Anh chị sẽ lên cho em là Pinterest và anh chị tìm cho em Chầu Văn."
+    },
+    {
+      "id": 36,
+      "start": 229.81,
+      "end": 241.091,
+      "start_time": "00:03:49,810",
+      "end_time": "00:04:01,091",
+      "text": "Như anh chị em đang nhìn thấy trên màn hình đây, có rất nhiều hình ảnh cô gái liên quan đến Chầu Văn, thì anh chị có thể lấy bất kỳ một hình ảnh nào đó nha."
+    },
+    {
+      "id": 37,
+      "start": 241.091,
+      "end": 246.591,
+      "start_time": "00:04:01,091",
+      "end_time": "00:04:06,591",
+      "text": "Nhưng mà anh chị phải thẩm được cái trang phục, mình muốn trang phục bài hát này nó là màu gì?"
+    },
+    {
+      "id": 38,
+      "start": 246.591,
+      "end": 251.771,
+      "start_time": "00:04:06,591",
+      "end_time": "00:04:11,771",
+      "text": "Có rất nhiều trang phục liên quan đến nhạc Chầu Văn, thì anh chị nhấn sao chép cái hình ảnh này."
+    },
+    {
+      "id": 39,
+      "start": 252.031,
+      "end": 257.131,
+      "start_time": "00:04:12,031",
+      "end_time": "00:04:17,131",
+      "text": "Anh chị nhấn sao chép nha. Anh chị mở thêm một cái tab ChatGPT nữa. Anh chị dán cái hình ảnh vào đây."
+    },
+    {
+      "id": 40,
+      "start": 257.371,
+      "end": 260.671,
+      "start_time": "00:04:17,371",
+      "end_time": "00:04:20,671",
+      "text": "Cái hình ảnh mà chúng ta vừa lấy bên Pinterest nha. Anh chị dán vào."
+    },
+    {
+      "id": 41,
+      "start": 260.991,
+      "end": 269.551,
+      "start_time": "00:04:20,991",
+      "end_time": "00:04:29,551",
+      "text": "Và bây giờ chúng ta sẽ nhập một câu lệnh như sau. Anh chị đã lấy hình ảnh ở bên Pinterest và đưa vào ChatGPT thì anh chị nhập câu lệnh tạo hình ảnh tham chiếu này."
+    },
+    {
+      "id": 42,
+      "start": 269.771,
+      "end": 276.091,
+      "start_time": "00:04:29,771",
+      "end_time": "00:04:36,091",
+      "text": "Tại sao phải tạo hình ảnh tham chiếu thì anh chị cứ copy cho tôi câu lệnh là tạo hình ảnh tham chiếu với kết hợp hình ảnh này."
+    },
+    {
+      "id": 43,
+      "start": 276.091,
+      "end": 280.731,
+      "start_time": "00:04:36,091",
+      "end_time": "00:04:40,731",
+      "text": "Anh chị nhìn tới đây và lựa chọn các thông số ở trong ChatGPT để tạo ra một hình ảnh."
+    },
+    {
+      "id": 44,
+      "start": 280.991,
+      "end": 286.191,
+      "start_time": "00:04:40,991",
+      "end_time": "00:04:46,191",
+      "text": "Tôi đã tạo một hình ảnh nhân vật tham chiếu để làm ra video chầu văn này."
+    },
+    {
+      "id": 45,
+      "start": 286.291,
+      "end": 288.271,
+      "start_time": "00:04:46,291",
+      "end_time": "00:04:48,271",
+      "text": "Thì anh chị nhấn tạo hình ảnh này xuống."
+    },
+    {
+      "id": 46,
+      "start": 290.991,
+      "end": 298.991,
+      "start_time": "00:04:50,991",
+      "end_time": "00:04:58,991",
+      "text": "Sau khi đã có hình ảnh này, anh chị trở sang cái ChatGPT mà lúc nãy chúng ta đã viết lyrics bài hát và style bài hát."
+    },
+    {
+      "id": 47,
+      "start": 298.991,
+      "end": 300.991,
+      "start_time": "00:04:58,991",
+      "end_time": "00:05:00,991",
+      "text": "Và anh chị thêm hình ảnh lên."
+    },
+    {
+      "id": 48,
+      "start": 300.991,
+      "end": 305.991,
+      "start_time": "00:05:00,991",
+      "end_time": "00:05:05,991",
+      "text": "Anh chị thêm hình ảnh lên, bây giờ chúng ta sẽ đến với câu lệnh."
+    },
+    {
+      "id": 49,
+      "start": 306.0,
+      "end": 310.991,
+      "start_time": "00:05:06,000",
+      "end_time": "00:05:10,991",
+      "text": "Đối với câu lệnh tạo ảnh và tạo video dựa trên lyrics bài hát này thì chúng ta sẽ viết như sau."
+    },
+    {
+      "id": 50,
+      "start": 310.991,
+      "end": 315.991,
+      "start_time": "00:05:10,991",
+      "end_time": "00:05:15,991",
+      "text": "Dựa trên bài hát lyrics mà bạn đã tạo lại, hãy tạo cho tôi 30 prompt."
+    },
+    {
+      "id": 51,
+      "start": 315.991,
+      "end": 318.6,
+      "start_time": "00:05:15,991",
+      "end_time": "00:05:18,600",
+      "text": "Khi tôi tải hình ảnh này lên Grok,"
+    },
+    {
+      "id": 52,
+      "start": 318.6,
+      "end": 324.18,
+      "start_time": "00:05:18,600",
+      "end_time": "00:05:24,180",
+      "text": "Prompt sẽ tạo ra một hình ảnh nhân vật này liên quan đến một đoạn trong bài hát nhé chị em nhé."
+    },
+    {
+      "id": 53,
+      "start": 324.34,
+      "end": 331.39,
+      "start_time": "00:05:24,340",
+      "end_time": "00:05:31,390",
+      "text": "Chia đều cho 30 prompt, sáng tạo các góc quay liên quan đến nhạc chầu văn, yêu cầu prompt tạo ảnh chi"
+    },
+    {
+      "id": 54,
+      "start": 331.39,
+      "end": 338.44,
+      "start_time": "00:05:31,390",
+      "end_time": "00:05:38,440",
+      "text": "tiết, góc quay liên tục thay đổi, sáng tạo nhân vật cầm các đồ vật liên quan đến biểu diễn chầu văn."
+    },
+    {
+      "id": 55,
+      "start": 338.44,
+      "end": 344.36,
+      "start_time": "00:05:38,440",
+      "end_time": "00:05:44,360",
+      "text": "Sau đó dưới mỗi prompt tạo hình ảnh, bạn hãy tạo cho tôi một prompt để tạo ra video."
+    },
+    {
+      "id": 56,
+      "start": 344.6,
+      "end": 346.32,
+      "start_time": "00:05:44,600",
+      "end_time": "00:05:46,320",
+      "text": "Bắt buộc phải có câu này anh chị em nhé."
+    },
+    {
+      "id": 57,
+      "start": 346.32,
+      "end": 356.02,
+      "start_time": "00:05:46,320",
+      "end_time": "00:05:56,020",
+      "text": "Yêu cầu prompt chi tiết để tạo dựa vào hình ảnh có sẵn, để tạo ra video nhân vật đang biểu diễn dựa trên hình ảnh, sáng tạo các góc"
+    },
+    {
+      "id": 58,
+      "start": 356.02,
+      "end": 365.4,
+      "start_time": "00:05:56,020",
+      "end_time": "00:06:05,400",
+      "text": "quay liên tục cho tôi, biểu diễn chi tiết cho tôi, sáng tạo đầy đủ 30 prompt chi tiết tạo ảnh và 30 prompt chi tiết để tạo video."
+    },
+    {
+      "id": 59,
+      "start": 365.4,
+      "end": 376.45,
+      "start_time": "00:06:05,400",
+      "end_time": "00:06:16,450",
+      "text": "Các câu prompt phải đầy đủ, ký tự hay từ như nhau. Bám sát và tạo luôn prompt cho tôi. Tất cả các prompt tạo ảnh và prompt tạo video đều là kích thước 16:9."
+    },
+    {
+      "id": 60,
+      "start": 376.45,
+      "end": 387.5,
+      "start_time": "00:06:16,450",
+      "end_time": "00:06:27,500",
+      "text": "Yêu cầu ghi nhớ. Sau khi có câu prompt này, tôi sẽ sao chép cùng với hình ảnh trong cái mục mà lyrics bài hát luôn chúng ta đã tạo và chúng ta nhấn Enter."
+    },
+    {
+      "id": 61,
+      "start": 387.5,
+      "end": 396.68,
+      "start_time": "00:06:27,500",
+      "end_time": "00:06:36,680",
+      "text": "Bây giờ ChatGPT sẽ cho anh chị 1 prompt để tạo hình ảnh và dưới 1 prompt đấy là prompt tạo video. Anh chị có thể nhìn thấy trên màn hình đây."
+    },
+    {
+      "id": 62,
+      "start": 396.68,
+      "end": 399.88,
+      "start_time": "00:06:36,680",
+      "end_time": "00:06:39,880",
+      "text": "Nó sẽ tạo cho anh chị đầy đủ 30 prompt"
+    },
+    {
+      "id": 63,
+      "start": 399.88,
+      "end": 401.18,
+      "start_time": "00:06:39,880",
+      "end_time": "00:06:41,180",
+      "text": "Anh chị nhấn tiếp tục"
+    },
+    {
+      "id": 64,
+      "start": 401.18,
+      "end": 408.68,
+      "start_time": "00:06:41,180",
+      "end_time": "00:06:48,680",
+      "text": "Tiếp tục từ prompt thứ 6 đến prompt thứ 10"
+    },
+    {
+      "id": 65,
+      "start": 408.68,
+      "end": 412.696,
+      "start_time": "00:06:48,680",
+      "end_time": "00:06:52,696",
+      "text": "Anh chị có thể nhìn thấy prompt thứ 6, prompt thứ 7 đến prompt thứ 10"
+    },
+    {
+      "id": 66,
+      "start": 413.0,
+      "end": 425.616,
+      "start_time": "00:06:53,000",
+      "end_time": "00:07:05,616",
+      "text": "Và chúng ta cùng bắt đầu đi tạo hình ảnh. Thì anh chị hãy nhấn sao chép ở bên mục hình ảnh nhé. Chúng ta sẽ lên Grok. Trong phần này anh chị chọn Image. Tải hình ảnh tham chiếu của chúng ta lên."
+    },
+    {
+      "id": 67,
+      "start": 425.62,
+      "end": 435.76,
+      "start_time": "00:07:05,620",
+      "end_time": "00:07:15,760",
+      "text": "Bây giờ chúng ta chọn một hình ảnh nha anh chị em nhé. Anh chị sẽ dán cái câu prompt vào đây. Đây là câu prompt tạo hình ảnh. Anh chị dán"
+    },
+    {
+      "id": 68,
+      "start": 435.76,
+      "end": 445.596,
+      "start_time": "00:07:15,760",
+      "end_time": "00:07:25,596",
+      "text": "vào. Và nhớ là chọn tỷ lệ khung hình. Ở đây chúng ta sẽ làm video dài. Thì anh chị sẽ chọn là 16:9. Màn hình rộng. Anh chị nhấn Enter."
+    },
+    {
+      "id": 69,
+      "start": 445.596,
+      "end": 453.396,
+      "start_time": "00:07:25,596",
+      "end_time": "00:07:33,396",
+      "text": "Tiếp theo, đến cảnh thứ 2, chúng ta cũng dán luôn câu lệnh vào và chọn tỷ lệ là 16:9."
+    },
+    {
+      "id": 70,
+      "start": 453.856,
+      "end": 462.356,
+      "start_time": "00:07:33,856",
+      "end_time": "00:07:42,356",
+      "text": "Câu lệnh thứ 3, dán vào, anh chị nhớ là vẫn phải trở về cái hình ảnh gốc để chúng ta tạo ra hình ảnh nhân vật."
+    },
+    {
+      "id": 71,
+      "start": 462.756,
+      "end": 469.936,
+      "start_time": "00:07:42,756",
+      "end_time": "00:07:49,936",
+      "text": "Chúng ta vẫn phải trở về cái hình ảnh gốc là hình ảnh tham chiếu này để cho nó nhất quán nhân vật cho tất cả các hình ảnh sau của anh chị."
+    },
+    {
+      "id": 72,
+      "start": 469.936,
+      "end": 473.936,
+      "start_time": "00:07:49,936",
+      "end_time": "00:07:53,936",
+      "text": "Đây là prompt thứ 3 và prompt thứ 4, anh chị dán vào."
+    },
+    {
+      "id": 73,
+      "start": 474.0,
+      "end": 483.05,
+      "start_time": "00:07:54,000",
+      "end_time": "00:08:03,050",
+      "text": "Trong lúc nó đang tạo ảnh ảnh thì chúng ta sẽ copy từng prompt để tạo video. Đây là prompt tạo video nha anh chị em nha. Anh"
+    },
+    {
+      "id": 74,
+      "start": 483.05,
+      "end": 491.84,
+      "start_time": "00:08:03,050",
+      "end_time": "00:08:11,840",
+      "text": "chị dán vào. Anh chị nhớ đây là cảnh thứ đầu tiên anh chị chọn sang phần video mà được nha. Và anh chị dán vào đây."
+    },
+    {
+      "id": 75,
+      "start": 492.4,
+      "end": 501.06,
+      "start_time": "00:08:12,400",
+      "end_time": "00:08:21,060",
+      "text": "720 thì anh chị lên mỗi cảnh, anh chị có thể làm 10 giây nhưng mà theo tôi thì anh chị nên làm tầm 6 giây 1 nhé."
+    },
+    {
+      "id": 76,
+      "start": 501.8,
+      "end": 507.74,
+      "start_time": "00:08:21,800",
+      "end_time": "00:08:27,740",
+      "text": "Anh chị nhấn tạo video là, sau đó thì anh chị copy cái prompt video nhé."
+    },
+    {
+      "id": 77,
+      "start": 508.56,
+      "end": 512.86,
+      "start_time": "00:08:28,560",
+      "end_time": "00:08:32,860",
+      "text": "Prompt tạo ảnh sẽ là prompt tạo ảnh và prompt tạo video sẽ là prompt tạo video."
+    },
+    {
+      "id": 78,
+      "start": 513.12,
+      "end": 516.88,
+      "start_time": "00:08:33,120",
+      "end_time": "00:08:36,880",
+      "text": "Chứ không thể nào là prompt tạo ảnh đưa lên tạo video được."
+    },
+    {
+      "id": 79,
+      "start": 517.66,
+      "end": 519.06,
+      "start_time": "00:08:37,660",
+      "end_time": "00:08:39,060",
+      "text": "Prompt tạo video nhé."
+    },
+    {
+      "id": 80,
+      "start": 519.06,
+      "end": 522.28,
+      "start_time": "00:08:39,060",
+      "end_time": "00:08:42,280",
+      "text": "Prompt thứ 3 này"
+    },
+    {
+      "id": 81,
+      "start": 522.28,
+      "end": 527.22,
+      "start_time": "00:08:42,280",
+      "end_time": "00:08:47,220",
+      "text": "Các anh chị nhớ là tất cả các bối cảnh"
+    },
+    {
+      "id": 82,
+      "start": 527.22,
+      "end": 530.34,
+      "start_time": "00:08:47,220",
+      "end_time": "00:08:50,340",
+      "text": "Mình phải nhớ là hình ảnh tạo ở prompt nào"
+    },
+    {
+      "id": 83,
+      "start": 530.34,
+      "end": 533.28,
+      "start_time": "00:08:50,340",
+      "end_time": "00:08:53,280",
+      "text": "Thì chúng ta sẽ tạo video ở prompt đấy"
+    },
+    {
+      "id": 84,
+      "start": 533.28,
+      "end": 537.2,
+      "start_time": "00:08:53,280",
+      "end_time": "00:08:57,200",
+      "text": "Đây là cảnh đầu tiên mà Grok đã tạo video ra cho tôi"
+    },
+    {
+      "id": 85,
+      "start": 537.2,
+      "end": 539.22,
+      "start_time": "00:08:57,200",
+      "end_time": "00:08:59,220",
+      "text": "Và chúng ta sẽ nhấn tải về ấy nhé"
+    },
+    {
+      "id": 86,
+      "start": 539.22,
+      "end": 545.76,
+      "start_time": "00:08:59,220",
+      "end_time": "00:09:05,760",
+      "text": "Cứ lần lượt như thế là anh chị sẽ tải tất cả các video liên quan đến chầu văn về"
+    },
+    {
+      "id": 87,
+      "start": 545.76,
+      "end": 556.86,
+      "start_time": "00:09:05,760",
+      "end_time": "00:09:16,860",
+      "text": "Câu lệnh thứ 4 là anh chị chọn phần video, dán vào. Và trong lúc đang chờ đợi nó tạo video thì anh chị có thể tạo hình ảnh."
+    },
+    {
+      "id": 88,
+      "start": 556.86,
+      "end": 562.26,
+      "start_time": "00:09:16,860",
+      "end_time": "00:09:22,260",
+      "text": "hình ảnh vẫn cứ tiếp tục chúng ta tạo hình ảnh cho đến khi chúng ta làm ra một video hoàn chỉnh"
+    },
+    {
+      "id": 89,
+      "start": 562.26,
+      "end": 573.1,
+      "start_time": "00:09:22,260",
+      "end_time": "00:09:33,100",
+      "text": "nhấn tạo câu lệnh thứ 6 là vẫn trở về hình ảnh tham chiếu dán vào và dưới đây là có phần là phần video anh"
+    },
+    {
+      "id": 90,
+      "start": 573.1,
+      "end": 576.86,
+      "start_time": "00:09:33,100",
+      "end_time": "00:09:36,860",
+      "text": "chỉ nhấn video"
+    },
+    {
+      "id": 91,
+      "start": 576.86,
+      "end": 578.606,
+      "start_time": "00:09:36,860",
+      "end_time": "00:09:38,606",
+      "text": "Quá đơn giản."
+    },
+    {
+      "id": 92,
+      "start": 578.606,
+      "end": 585.736,
+      "start_time": "00:09:38,606",
+      "end_time": "00:09:45,736",
+      "text": "để cho thời gian nó không lâu và tôi sẽ chỉ lấy 6 prompt này để"
+    },
+    {
+      "id": 93,
+      "start": 585.736,
+      "end": 592.866,
+      "start_time": "00:09:45,736",
+      "end_time": "00:09:52,866",
+      "text": "cho anh chị hiểu là chúng ta đã tạo được cái độ nhất quán rất là cao"
+    },
+    {
+      "id": 94,
+      "start": 592.866,
+      "end": 595.306,
+      "start_time": "00:09:52,866",
+      "end_time": "00:09:55,306",
+      "text": "là anh chị tải tất cả các video này cho thôi."
+    },
+    {
+      "id": 95,
+      "start": 597.0,
+      "end": 602.186,
+      "start_time": "00:09:57,000",
+      "end_time": "00:10:02,186",
+      "text": "Bây giờ trong phần Suno, anh chị download cái bài hát mà chúng ta vừa tạo ra."
+    },
+    {
+      "id": 96,
+      "start": 602.906,
+      "end": 607.366,
+      "start_time": "00:10:02,906",
+      "end_time": "00:10:07,366",
+      "text": "Nhấn tải xuống, anh chị chọn âm thanh WAV là chuyên nghiệp nha."
+    },
+    {
+      "id": 97,
+      "start": 608.226,
+      "end": 608.906,
+      "start_time": "00:10:08,226",
+      "end_time": "00:10:08,906",
+      "text": "Nhấn tải xuống."
+    },
+    {
+      "id": 98,
+      "start": 610.126,
+      "end": 613.126,
+      "start_time": "00:10:10,126",
+      "end_time": "00:10:13,126",
+      "text": "Trong phần CapCut, anh chị nhấn nhập các video lên."
+    },
+    {
+      "id": 99,
+      "start": 615.946,
+      "end": 619.426,
+      "start_time": "00:10:15,946",
+      "end_time": "00:10:19,426",
+      "text": "Ở đây tôi đã tạo ra 6 video và 1 bài hát."
+    },
+    {
+      "id": 100,
+      "start": 619.426,
+      "end": 625.686,
+      "start_time": "00:10:19,426",
+      "end_time": "00:10:25,686",
+      "text": "Tôi nhấn tải thư mục lên và anh chị có thể thấy các video anh chị đã thêm vào này."
+    },
+    {
+      "id": 101,
+      "start": 627.786,
+      "end": 632.686,
+      "start_time": "00:10:27,786",
+      "end_time": "00:10:32,686",
+      "text": "Sau đó mọi người hãy tắt cho tôi toàn bộ âm lượng của những cái video này."
+    },
+    {
+      "id": 102,
+      "start": 633.686,
+      "end": 634.966,
+      "start_time": "00:10:33,686",
+      "end_time": "00:10:34,966",
+      "text": "Chọn âm thanh kéo hết."
+    },
+    {
+      "id": 103,
+      "start": 636.066,
+      "end": 637.986,
+      "start_time": "00:10:36,066",
+      "end_time": "00:10:37,986",
+      "text": "Và chúng ta cùng thêm cái nhạc vào."
+    },
+    {
+      "id": 104,
+      "start": 639.266,
+      "end": 646.186,
+      "start_time": "00:10:39,266",
+      "end_time": "00:10:46,186",
+      "text": "Vì tôi chỉ có tạo 6 cảnh nên là tôi sẽ sao chép để chúng ta sẽ nghe một đoạn video nha."
+    },
+    {
+      "id": 105,
+      "start": 646.186,
+      "end": 650.946,
+      "start_time": "00:10:46,186",
+      "end_time": "00:10:50,946",
+      "text": "Anh chị bắt đầu nghe một đoạn về video nhạc chầu văn này."
+    },
+    {
+      "id": 106,
+      "start": 651.3,
+      "end": 652.6,
+      "start_time": "00:10:51,300",
+      "end_time": "00:10:52,600",
+      "text": "Chúng ta cùng nghe anh nhá."
+    },
+    {
+      "id": 107,
+      "start": 674.1,
+      "end": 679.3,
+      "start_time": "00:11:14,100",
+      "end_time": "00:11:19,300",
+      "text": "Khói hương lan giữa đêm thiêng"
+    },
+    {
+      "id": 108,
+      "start": 679.3,
+      "end": 685.82,
+      "start_time": "00:11:19,300",
+      "end_time": "00:11:25,820",
+      "text": "Tiếng chuông vọng xuống cửa miền Hàn Sơn"
+    },
+    {
+      "id": 109,
+      "start": 685.82,
+      "end": 691.72,
+      "start_time": "00:11:25,820",
+      "end_time": "00:11:31,720",
+      "text": "Mây đưa bóng nguyệt chập chờn"
+    },
+    {
+      "id": 110,
+      "start": 691.72,
+      "end": 696.14,
+      "start_time": "00:11:31,720",
+      "end_time": "00:11:36,140",
+      "text": "Cô Bơ Thoải Phủ giáng trần"
+    },
+    {
+      "id": 111,
+      "start": 703.95,
+      "end": 710.59,
+      "start_time": "00:11:43,950",
+      "end_time": "00:11:50,590",
+      "text": "Mái đền nghi ngút khói, quyện trời mây"
+    },
+    {
+      "id": 112,
+      "start": 711.3,
+      "end": 714.74,
+      "start_time": "00:11:51,300",
+      "end_time": "00:11:54,740",
+      "text": "Tiếng đàn nguyệt vọng"
+    },
+    {
+      "id": 113,
+      "start": 714.74,
+      "end": 716.98,
+      "start_time": "00:11:54,740",
+      "end_time": "00:11:56,980",
+      "text": "Như anh chị vừa thấy"
+    },
+    {
+      "id": 114,
+      "start": 716.98,
+      "end": 718.96,
+      "start_time": "00:11:56,980",
+      "end_time": "00:11:58,960",
+      "text": "Đây là một đoạn nhạc chầu văn"
+    },
+    {
+      "id": 115,
+      "start": 718.96,
+      "end": 720.76,
+      "start_time": "00:11:58,960",
+      "end_time": "00:12:00,760",
+      "text": "Và phần tiếp theo"
+    },
+    {
+      "id": 116,
+      "start": 721.0,
+      "end": 723.6,
+      "start_time": "00:12:01,000",
+      "end_time": "00:12:03,600",
+      "text": "Chúng ta đi phần tạo hình ảnh thumbnail"
+    },
+    {
+      "id": 117,
+      "start": 723.6,
+      "end": 726.58,
+      "start_time": "00:12:03,600",
+      "end_time": "00:12:06,580",
+      "text": "Thì dựa trên hình ảnh có sẵn"
+    },
+    {
+      "id": 118,
+      "start": 726.58,
+      "end": 730.416,
+      "start_time": "00:12:06,580",
+      "end_time": "00:12:10,416",
+      "text": "Mà chúng ta đã tạo ra rồi nha anh chị em nha"
+    },
+    {
+      "id": 119,
+      "start": 730.416,
+      "end": 739.116,
+      "start_time": "00:12:10,416",
+      "end_time": "00:12:19,116",
+      "text": "Anh chị nhấn sao chép và chúng ta cùng trở sang cái bên ChatGPT mà vừa tạo hình ảnh và tạo video này."
+    },
+    {
+      "id": 120,
+      "start": 739.476,
+      "end": 740.496,
+      "start_time": "00:12:19,476",
+      "end_time": "00:12:20,496",
+      "text": "Có lyrics bài hát nha."
+    },
+    {
+      "id": 121,
+      "start": 741.296,
+      "end": 743.896,
+      "start_time": "00:12:21,296",
+      "end_time": "00:12:23,896",
+      "text": "Anh chị em hãy nhập một câu lệnh như sau."
+    },
+    {
+      "id": 122,
+      "start": 744.836,
+      "end": 747.216,
+      "start_time": "00:12:24,836",
+      "end_time": "00:12:27,216",
+      "text": "Đây là câu lệnh để tạo hình ảnh thumbnail."
+    },
+    {
+      "id": 123,
+      "start": 747.22,
+      "end": 756.01,
+      "start_time": "00:12:27,220",
+      "end_time": "00:12:36,010",
+      "text": "Khi chúng ta đã tạo hình ảnh lên cái ChatGPT rồi, anh chị nhấn sao chép rồi, sao chép nha,"
+    },
+    {
+      "id": 124,
+      "start": 756.01,
+      "end": 764.8,
+      "start_time": "00:12:36,010",
+      "end_time": "00:12:44,800",
+      "text": "và anh chị dán vào, vẫn chọn mục tạo hình ảnh, tạo hình ảnh 16:9 nha, anh chị nhấn tạo."
+    },
+    {
+      "id": 125,
+      "start": 765.616,
+      "end": 773.556,
+      "start_time": "00:12:45,616",
+      "end_time": "00:12:53,556",
+      "text": "Và nó sẽ dựa trên cái lyrics bài hát này, nó sẽ tạo ra cho chúng ta hình ảnh thumbnail, và chúng ta cùng xem hình ảnh thumbnail như thế nào nha."
+    },
+    {
+      "id": 126,
+      "start": 773.556,
+      "end": 782.316,
+      "start_time": "00:12:53,556",
+      "end_time": "00:13:02,316",
+      "text": "Sau khi mà ChatGPT cho anh chị em là tạo ra một hình ảnh thumbnail thì anh chị có thể nhìn thấy hình ảnh thumbnail này."
+    },
+    {
+      "id": 127,
+      "start": 782.916,
+      "end": 787.356,
+      "start_time": "00:13:02,916",
+      "end_time": "00:13:07,356",
+      "text": "Tỷ lệ điểm nhấn của nó rất là cao và anh chị nhấn tải xuống."
+    },
+    {
+      "id": 128,
+      "start": 788.516,
+      "end": 795.856,
+      "start_time": "00:13:08,516",
+      "end_time": "00:13:15,856",
+      "text": "Thì anh chị có thể thấy là chúng ta đã hoàn thành một video nhạc chầu văn và anh chị hãy lựa chọn cách đăng bằng đăng bằng máy tính nhé."
+    }
+  ]
+}

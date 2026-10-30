@@ -1,0 +1,247 @@
+Chào anh chị em học viên, hôm nay chúng ta đến với một chủ đề là bán content. Bán content kết hợp với nhân vật nổi tiếng trên nền tảng YouTube. Nếu mà các bạn chưa tìm hiểu thì anh
+em có thể tìm hiểu đến nhân vật Adam Rose, một nhân vật khá là nổi tiếng trên nền tảng YouTube. Nhân vật này có những video phổ biến rất là nhiều view, kể cả video dài, video ngắn.
+Anh này thường hay sử dụng những video có sẵn và giao tác video mình là một đầu bếp hoặc là một kỹ sư hoặc công an.
+Đại loại là như thế. Nhưng để chúng ta sẽ lấy sử dụng nhân vật này để làm cho kênh YouTube của chúng ta thì chúng ta sẽ kết hợp như thế nào.
+Để cho nó hoàn chỉnh thì ở đây tôi đã có một cái tài liệu. Tài liệu này thì tôi sẽ ghi ở trong phần mô tả.
+Ở đây chúng ta sẽ có 2 kênh YouTube làm dạng bán content để anh em tham khảo.
+Ví dụ như kênh này 533 video nhé. Cũ nhất là 1 năm trước nhưng mà bắt đầu sản xuất video về nhân vật này là 1 năm trước và có những
+cái video viral lên tới 2 triệu view. Đối với video dài 1 tiếng mà 2 triệu view như thế này thì cái lượt RPM cực cao nha anh chị em nhé.
+Ở đây chúng ta có thể tìm được rất nhiều nguồn
+22h trước vẫn đăng
+Ở đây tôi để 1-2 kênh tham khảo
+và những kênh video như thế này
+chúng ta chỉ cần 1 kênh thôi
+Anh chị có thể làm 5-10 kênh
+20-30 kênh đều được nhé
+Anh chị làm song song
+thì cái tỷ lệ mà nó tắt kiếm tiền dạng này
+thì đương nhiên rồi
+nhưng mà RPM cực kỳ cao
+ví dụ như
+có những kênh chúng ta chỉ cần ăn trong vòng tầm 3-4 tháng 5 tháng
+là ok nhanh chị em nhé
+và những nguồn này sản xuất cực kỳ dễ
+ở đây tôi sẽ có những công cụ sản xuất video như sau
+Picsart thì chúng ta để tạo thumbnail, CapCut để edit video, Gemini thì chúng ta để phân tích và tự động tải ra cho chúng ta.
+Và tôi cần một cái nhạc nền nữa là nhạc nền Suno AI. Đợt này làm bán content thì khó hơn đợt trước nhiều.
+Nên là anh chị em nếu mà làm thì anh chị em sẽ sản xuất như thế nào.
+Đến vấn đề tìm nguồn thì chúng ta sẽ tìm nguồn ở trên Douyin, TikTok, YouTube và Facebook cũng được nhé. Anh chị em lấy nguồn ở đâu cũng được. Nhưng mà lựa chọn nguồn như thế nào để cho
+nó hiệu quả? Thì đối với cánh đàn ông mà thường thì sẽ là gái xinh. Nhưng mà gái xinh sẽ kết hợp với gì ạ? Gái xinh sẽ kết hợp với võ thuật xây dựng hoặc nội trợ và
+rất nhiều cái khác. Ví dụ như anh em hay xem cô giáo nóng bỏng. Đấy. Thì anh em có thể là lấy những cái nguồn đấy để anh em để tạo ra những cái video bán content.
+Ở đây thì tôi đã chuẩn bị 1 cái Master Prompt có sẵn. Cái này thì tôi đã yêu cầu con Gemini ghi nhớ và phân tích rồi. Thì chúng ta sẽ làm như nào? Chúng ta sẽ đi từng bước như sau.
+Đầu tiên, chúng ta sẽ phải đi tìm nguồn trước. Anh chị em hãy nhớ cho tôi là anh chị em tìm. Ở đây tôi sẽ sử dụng là cái tiếng Việt chuyển sang tiếng Trung hoặc anh em chọn tiếng Việt chuyển
+sang tiếng Anh. Nếu mà anh em tìm ở trên nền tảng YouTube hoặc là TikTok của Việt Nam để tìm ra những cái nguồn như thế. Ở đây tôi sẽ tìm ví dụ như gái xinh. Kết hợp với gì ạ?
+Kết hợp với xây dựng
+Và tôi sẽ lựa chọn tiếng Trung phồn thể nhé
+Phồn thể này
+Tiếng Trung phồn thể nhé, tôi copy tiếng Trung phồn thể này là gái xinh xây dựng và tôi dịch từ tiếng Việt sang tiếng Trung nhé, anh chị em nhớ cho tôi nhé.
+Và tôi sẽ lựa chọn Douyin nhé anh em nhé, Douyin, Douyin thì nó là nền tảng của Trung Quốc thì chúng ta phải dịch từ Trung Quốc.
+Còn TikTok ở Việt Nam thì anh em có thể tìm từ tiếng Anh, nó cũng ra được những cái video nước ngoài nhé anh em nhé.
+Ở đây thì tôi sẽ dán cái từ gái xinh xây dựng này, anh em có thể xem được những cái nguồn như thế này.
+Nó rất nhiều nguồn nếu mà chưa hiểu ý lắm thì anh em có thể tìm cho tôi là cô gái xây dựng.
+Cô gái xây dựng thì nó sẽ chi tiết hơn. Gái xinh nhiều lúc nó kiểu là nhà xinh.
+Ok, anh chị em có thể nhìn thấy ở đây rất nhiều nguồn.
+Đấy, những cái nguồn như này tôi bảo nha.
+Nếu mà các ông là người đàn ông thì các ông có xem những video như này không?
+Có chứ, tôi cũng có. Không những là các ông.
+Đây rất là nhiều nguồn nha.
+Anh em hãy bắt đầu tìm cho tôi và tải về. Ở đây ví dụ như là tôi nhấn vào bất kỳ một cái video này nhé. Vẫn như là cách thức tải ở các nền tảng thôi. Đây tôi nhấn vào video này. Tôi nhấn sao chép này.
+Biết kênh này nó có nhiều không gì. Anh em đăng nhập hộ tôi vào Cốc Cốc nhé. Thì ở đây là anh em copy cho tôi cái video này.
+Sau đó thì anh em tải về
+Đấy nha
+Anh em x cái này ra này
+Là đăng nhập vào Cốc Cốc thì anh em dán những link vào
+Thì nó sẽ ra
+Đó tải xuống này
+Nó sẽ đề xuất ra rất nhiều video liên quan đến gái xinh như thế này
+Tôi nhấn vào video tiếp
+Đó
+Tải xuống
+Ở đây
+Ở đây thì anh em nhấn trực tiếp vào kênh nhé. Nhấn vào kênh của họ xem là có nhiều video không.
+Ồ, 100.000 follow à. Ủa, nhiều đấy. Ủa, những nguồn này thì anh em làm thoải mái. Chúng ta sẽ lấy tầm...
+Bình thường thì tôi sẽ làm video tầm trên 8 phút nha anh em nhé. Thì anh em lấy bao giờ cho đủ số cạnh 8 phút thôi. Còn lại ví dụ như tôi sẽ lấy một số cái video trên này.
+Anh em nhớ ví dụ như nếu mà anh em làm chi tiết để cái nguồn này anh em nêu lại thì anh em sẽ nhấn like vào nhé. Để sau mình biết là mình đã lấy video này rồi. Để tránh
+trường hợp trên một kênh anh em làm đi lấy đi lấy lại lấy rất nhiều lần. Ví dụ như anh em lấy cái video này rồi đúng không? Thì anh em nhớ cho tôi là anh em nhấn like vào.
+Anh em đăng nhập vào tài khoản Douyin thì chúng ta có thể tự động tải ở trên nền tảng Việt Nam. Anh em tự động tải được. Tải xuống.
+Giờ sẽ trở về cái Douyin, giao diện của Douyin. Sồi ôi như thế này có phải thương không? Như thế này mà tôi bảo các ông là nếu mà là tôi là tôi sẽ đi vào luôn này.
+Bê gạch cho em luôn này. Nhớ cho tôi là đăng nhập vào Cốc Cốc này thì chúng ta có thể tải được video về nhé.
+Còn không đăng nhập vào Cốc Cốc thì không được nha. Nguồn nó nhiều lắm không rồi. Tôi chỉ lấy vài video để demo cho các ông cách làm nha. Chứ không thể nào tôi ngồi tôi làm nhiều được. Nếu mà làm nhiều
+thì nó cũng được thôi. Nhưng mà anh em nó bị dễ chán thì chúng ta sẽ làm vài video thôi. Còn lại nếu mà anh em muốn làm chi tiết hơn thì anh em nên lấy cho tôi tất cả là video trên.
+Trên 8 phút nhé, lấy tất cả các video cộng lại là trên 8 phút. Và ở đây thì chúng ta sẽ tải thêm cái video về nhân vật Adam Rose này nhé.
+Anh em nhấn hộ tôi phần Shorts này, phần Shorts nhé, đúng cái kênh của Adam Rose này nhé. Anh em nhấn phổ biến này, chúng ta sẽ lấy những cái video về nhân vật này.
+Kênh chính của họ cũng làm như thế này. Chúng ta tải một video của YouTube của anh chàng này về thôi, Adam Rose.
+Sự dụng nha, Suno với Gemini, sử dụng như thế nào để cho nó hiệu quả thì chúng ta sẽ sử dụng xong, sau khi chúng ta ghép video xong, đã tải xong như thế này
+rồi thì bước tiếp theo chúng ta sẽ vào CapCut nè, anh chị em nhớ cho tôi là anh em vào CapCut nha, đấy giao diện của CapCut anh em nhấn vào tạo dự án nha.
+Luôn luôn nhớ cho tôi là thanh trắng ở đâu thì vị trí ở đấy, câu nói mà tôi đã liên tục nói với anh em, ở đây là tôi đã lấy rất nhiều nguồn như thế này, 17 giây, 13 giây có này.
+Tôi sẽ tắt nhạc đi.
+Ở đây tôi đang lấy 1, 2, 3, 4, 5, tầm 5 đến 5 đoạn nhé.
+nhé thì anh em nhớ cho tôi là 5 đoạn 1 phút là anh em lấy tầm tất cả video cộng lại tầm 8 phút 10 phút là ok nhé
+thì đối với cái này thì chúng ta không để tỷ lệ khung hình như thế này thì ở đây thì anh em chọn cho tôi tỷ lệ là 16:9 nhé
+Đó. Anh em nhớ cho tôi là khi anh em thêm video rồi thì anh em mới chọn được ở đây.
+Sau khi đã chọn như thế rồi thì anh em chọn tất cả video này. Đấy. Chọn nhé. Chọn tất cả này.
+Anh em nhớ cho tôi là phần video này, cơ bản này. Sau đó tỷ lệ anh em để cho tôi là 174 nhé. Ok. Anh em nhớ chưa? Tất cả các video nó sẽ trở sang là 174. Nếu mà anh em kéo tay thì
+thường nó video này được, video kia không được đâu. Sau khi đã để kích cỡ 174 rồi thì chúng ta sẽ chọn
+tất cả video này. Anh em sẽ chọn cho tôi phần nền nhé. Đây, kéo phần video cơ bản kéo thẳng xuống nhé.
+Đó, anh em chọn nền này, chọn mờ nhé. Đó, anh em chọn mờ như thế này là được nhé.
+Thì chúng ta sẽ có một cái video như này. Tiếp theo thì chúng ta sẽ thêm những cái cảnh của nhân vật Adam Rose kia.
+Đây, tôi sẽ cắt nhé. Để, đến cái đoạn này, cắt này. Đó.
+Cắt nhé. Cái này thì anh em làm chi tiết cho tôi thì nhé. Cắt này. Tôi chỉ lấy nhân
+vật này thôi nhé. Chứ tôi không lấy cái đoạn trong video của họ. Tôi chỉ lấy mấy video, mấy đoạn
+của Adam Rose này thôi. Và bây giờ là chúng ta sẽ tách cái âm thanh của Adam Rose này đi nhé. Tôi sẽ để ví dụ như tầm 2-3 đoạn đi thì tôi sẽ để kéo vào 1-2 lần.
+hoặc là anh em làm chi tiết hơn mỗi đoạn thì anh em thêm một lần cũng được. Đó, như thế này nhé.
+Chọn tất cả này. Vẫn chọn mờ nhé. Cái Adam Rose tôi vừa cho vào nên nó chưa mờ như thế đâu.
+Cái Adam Rose này anh em cũng có thể là cho lên 174 nhé. Nhưng mà tôi nghĩ là anh em để luôn như thế này cho tôi.
+Không cần phải là cho lên 174 đâu, tại vì nó nhìn thấy cả trực diện của nhân vật này luôn.
+Thì bây giờ tiếp theo đến cái phần nhạc bản quyền nhé. Anh em ghi nhớ cho tôi nè. Anh em nghe thấy không? Nó không
+có nhạc nền. Nó chỉ có tiếng xúc cát thôi. Thì cái này thì chúng ta làm gì ạ? Chúng ta không tách nhạc nền nhé.
+cái này cái này rất nhiều ông không biết làm này công làm có view nhưng mà nó sẽ rất dễ tắt kiếm
+Có gì ạ? Có nhạc nền nha anh em nha.
+Tắt đi nha.
+Đi nè.
+Đấy, tắt đi nè.
+Tắt hết đi nha. Nếu mà nó mà có cái, những cái như này thì chúng ta tắt đi.
+Âm thanh tắt này.
+Các ông chủ động tách cho tôi và copy cái Adam Rose này lên. Các ông có thể chèn qua những đoạn như thế
+cũng được. Và tiếp theo thì chúng ta nhớ cho tôi là đoạn này nhé. Anh em nhấn OR này. OR là tôi
+sẽ xuất đến tầm này nhé. OR nhé. Nhớ cho tôi OR này. OR đến cái đoạn cuối này. Thanh trắng ở đâu vị
+trí đấy thì tôi kéo hẳn đến cuối cùng đúng không? Tôi nhấn OR thì nó sẽ bôi đen cái đoạn sau này.
+Và nó sẽ giữ trắng toàn bộ cái đoạn này không? Sau đó nó xuất ra nhé. Anh em xuất cho tôi. Tụi như là bán content. Cái này chưa xong nhé. Cái này anh em nhớ cho tôi là chưa xong nhé. Đó. Và bây
+giờ chúng ta trở ra Gemini nhé. Trước khi trở ra Gemini thì anh chị em nhớ cho tôi là anh chị em copy toàn bộ cái Master Prompt này nhé. Cái Master Prompt thì anh em xem cho tôi trong cái bài Master Prompt nhé.
+Cái này tôi sẽ đặt dựa theo cái ý tưởng để sản xuất video bán content để chúng ta làm ra.
+Đấy anh em copy toàn bộ từ cái Master Prompt đến cuối cùng nhé.
+Sau đó thì anh em vào cho tôi là cái Gemini này.
+Google Gemini thì anh em tải video lên thì nó phân tích nó sẽ dễ hơn con ChatGPT nhé. ChatGPT nhiều lúc ngố lắm.
+Anh em gửi này. Anh em gửi cái Master Prompt này cho Gemini ghi nhớ trước. Sau đó thì gì ạ? Chúng ta sẽ tải video lên.
+Đây. Tải video bán content lên. Đây là một trong những cái bước mà anh chị tải video tầm 8 phút, 10 phút lên nó phân tích cho anh chị.
+Những cái câu mà hay luôn
+Làm ra tiếng Anh, tiếng Việt luôn
+Cho chúng ta không cần phải ngồi, chúng ta ngồi suy nghĩ
+Anh em suy nghĩ đoạn này chúng ta nên viết gì đúng không?
+Phụ đề là gì?
+Một là chúng ta sẽ viết phụ đề
+Hai chúng ta sẽ chèn luôn
+Chèn trực tiếp vào video luôn
+Có quyền được bình phẩm
+Thì nó sẽ sử dụng trong cái luật là Fair Use của YouTube
+Sau khi gửi là video 1 phút 2 giây lên nhá
+Thì anh em nhìn này
+Nó sẽ ra cho anh em như thế này
+Thì ở đây nhé, anh em ghi nhớ cho tôi nè. Đây nó sẽ ra những cảnh trên text này. Ví dụ như từ 00 đến 03 giây đúng
+không? Thì chúng ta nên chèn cái text bằng tiếng Anh gì? Và ý nghĩa của cái text bằng tiếng Anh đối với người không biết tiếng Anh nhé.
+Khi bạn lên đồ đi tiệc nhưng vũ trụ đưa đẩy đi phụ hồ. Đó, các bạn thấy không? Đấy nhé, copy cho tôi toàn bộ cái này. Một là chúng ta sẽ phụ đề khi đăng tải. Hai là chúng ta sẽ làm theo luôn như thế này cho tôi.
+0 0 đến 03
+0 0
+thêm văn bản
+0 0 đến 03
+tầm 3 giây
+dán vào
+kéo cỡ chữ
+em có thể chia đôi đoạn rồi
+Anh em có thể chọn một cái phông chữ nhé, nhìn cho nó
+rõ tí. Tôi sẽ chọn một cái chữ nhìn nó thực tế hơn.
+Cái này làm cho người lớn xem nên chúng ta để những cái chữ mà phông chữ là nó dễ hiểu. Anh chị em nhé,
+ví dụ như tôi sẽ để phông chữ này và tôi sẽ để một cái màu ví dụ như màu vàng màu trắng được.
+Thần thiết lắm vì anh em chọn bóng bóng như này rồi.
+M này.
+Hoặc là anh em tắt đi này.
+Chọn phông chữ này.
+Sau đó thì anh em kéo xuống dưới anh em chọn phông nền nhé.
+Tôi sẽ để là độ mờ của phông nền này tầm bằng này thôi.
+Để cho người ta dễ đọc.
+00 đến 03 này.
+3 giây nhé.
+Giờ phút đến giây này.
+00 đến 03.
+Nghĩa là 3 giây nhé.
+03 đến 06 này.
+03, 06
+Anh em cứ làm như thế này cho tôi nhé.
+0.6
+Cuối cùng là gì ạ? Một ngày đi làm hết sức bình thường. Anh
+em có thể chèn theo đúng số giây cho tôi cũng được nhé.
+Còn anh em sẽ làm như thế này cho tôi. Ok. Ở đây sau khi chúng ta đã có cái toàn bộ video thôi như thế này nhé.
+thì chúng ta sẽ đi tạo nhạc Suno
+ở đây có cái prompt về để tạo nhạc nền Suno
+anh em copy đây
+copy Suno AI này
+copy rồi
+sau đó vào cho tôi Suno AI
+thì đầu tiên là cái phần đơn giản
+anh em dán vào cho tôi cho này
+đơn giản
+chúng ta đợi nó tạo nhạc nền nhanh em nhé đoạn này thì tôi sẽ tua cho nhanh sau khi nó đã tạo ra thì
+chúng ta sẽ tải cái nhạc này về nhé anh em nhấn download cho tôi
+Thường thì con Suno nó sẽ tạo ra cho anh chị em 2 bản nhé. Chúng ta có thể dùng cho cái
+video này và đoạn sau. Ví dụ như video anh chị 8 phút thì anh chị làm nhân lên, tải xuống nhé.
+Tải xuống, chỗ ra thêm cho tôi nhạc nền. Chúng ta nhấn cho tôi
+là chuẩn hóa âm lượng nhé. Chuẩn hóa cho nhạc nó vừa phải video.
+video bây giờ anh chị có thể thêm những cái hình ảnh của anh chị hình ảnh kênh ví dụ như tôi sẽ thêm
+một cái hình ảnh bất kỳ và đây ví dụ như tôi sẽ lấy một cái hình ảnh của nhân vật này luôn Adam
+Tôi nhấn Tải về.
+New in ảnh này.
+Download này.
+Bây giờ tôi sẽ thêm hình ảnh nhân vật này vào. Nếu mà anh chị muốn làm hình ảnh của anh chị dạng hình tròn thì anh chị chọn ra mặt nạ. Thêm mặt nạ và thêm hình tròn.
+Kéo dài. Làm sao anh chị thêm cho tôi vài cái chi tiết nó có cái yếu tố mà mình edit nhé. Và tiếp theo ví dụ như là anh chị thêm với tôi những cái hiệu ứng ở trong cái phần
+âm thanh này nó sẽ có những cái hiệu ứng âm thanh này. Nhấn hiệu ứng này. Ví dụ như những tiếng hiệu ứng này. Tôi sẽ tìm những tràng cười này. Tôi tìm những cái hiệu ứng âm thanh này.
+Mình anh em được thêm cho tôi những cái hiệu ứng khác
+Ví dụ như mỗi đoạn anh em thêm cho tôi một ít
+Hoặc là anh chị em có thể lấy trực tiếp ở trên cái trang này nha
+Đây là một cái trang hiệu ứng âm thanh rất là nhiều. Anh chị em có thể tải ở đây về nhé.
+Ừ rồi
+Ừ
+Trời ơi
+Cú tôi
+Nói chung là nó rất nhiều
+Những cái
+Hiệu ứng âm thanh ở trên cái website này
+Anh em có thể tìm
+Những cái trò đùa chính trị
+Âm nhạc phim trẻ ảnh chó chơi đều được nhé
+anh chị em có thể thêm những cái bộ lọc vào
+tự nhiên là tôi sẽ lấy
+một cái bộ lọc là 4K đi
+Thêm cho tôi cho nó khác đi.
+Thêm cho tôi những cái bộ lọc vào.
+Và bây giờ là chúng ta sẽ thêm những cái phần chuyển cảnh để cho nó tự nhiên hơn thì anh em nhấn cho tôi phần chuyển tiếp.
+Ví dụ như tôi sẽ lựa chọn một cái phần chuyển tiếp như là M đi, trượt góc.
+Đó, trượt góc.
+Tôi muốn cho tất cả thì anh em nhấn tất cả được nhé.
+Còn là anh em có thể thêm bằng tay.
+Đó là đoạn nào mà anh em thấy không hợp ý.
+Anh em có thể thêm như này.
+Đó, thêm 1 giờ. Đó là 1 cái video về phần video nha anh em nhé. Sau đó thì anh em xuất ra.
+Xuất này. Và bây giờ là chúng ta sẽ đến cái phần là phần thumbnail nha. Đối với phần thumbnail thì như lúc nãy tôi nói anh em là ví dụ như 1 cái kênh như thế này đi.
+Thumbnail nó cực kỳ cơ bản. Thì chúng ta sẽ lấy 2 cái hình ở trong cái video và chúng ta sẽ tạo ra luôn.
+Trường hợp thì chúng ta sẽ tạo trên Picsart nhé. Đây là trang của Picsart.
+Anh em là quen thì chúng ta có thể sử dụng Canva nhé. Thì trong phần Picsart này thì anh em nhấn cho tôi bắt đầu thiết kế mới này. Nhấn thiết kế.
+Ở đây thì lúc nãy tôi đã tải cái hình Adam Rose này ở trên cái gì ạ? Ở trên cái Pinterest rồi nha anh em nhé. Tôi sẽ lấy luôn
+hình ảnh đấy. Và tôi sẽ được chọn tỷ lệ là 1920x1080 nhé. Nhớ cho tôi là tất cả những cái hình thumbnail là phải để kích cỡ 1920x1080 nhé.
+Tiếp theo là tôi sẽ lấy một trong số hai cái hình. Ví dụ như tôi sẽ tải
+cái hình này. Tôi cho video này vào đây. Nhớ này đi. Và tôi sẽ thêm một
+hình này vào đây. Tôi sẽ cho hai cái này to ra một tí. Để tí tôi chụp
+ảnh thêm một cái hình ảnh Adam Rose vào đây cho hai video đè đến nhau nhé.
+nó có nhân vật người nổi tiếng rồi chúng ta sẽ đứng trên vai người khổng lồ luôn anh em kéo đúng
+cái tỷ lệ này ví dụ như tôi sẽ cho to ra tôi chụp cho nó rõ rồi rồi chụp bằng này
+Ok và bây giờ tôi sẽ dán vào đây
+Chụp màn hình lại nhé
+Anh em có thể tùy cơ ứng biến để tạo ra những hình ảnh thumbnail cho chúng ta nhé
+Chúng ta có thể thêm lựa chọn của mình
+Tải lên
+Tải cái ảnh Adam Rose này
+Có những cái ảnh thumbnail này nó cực kỳ đơn giản. Tại vì nó có ảnh nhân vật người nổi tiếng rồi.
+chúng ta có thể thêm những cái nhãn dán, ví dụ như vòng tròn đỏ này, vòng tròn đỏ, trong
+này rất là nhiều, chúng ta muốn khoanh vùng như thế nào, khoanh vùng để cái thumbnail của chúng
+ta nổi bật như thế nào đó, tụi tôi khoanh cái này đi, và mũi tên đỏ, mũi tên đỏ, ở phần sticker đấy, rất nhiều cái mũi tên đỏ, các thứ cho anh em, để áp dụng,
+Để sản xuất vào cái thumbnail của chúng ta. Chúng ta sẽ cho một cái điểm nhấn vào.
+Còn phần tiêu đề thì anh em nên viết ví dụ như là một trong khoảnh khắc hài hước của cô gái xây dựng chuyển sang tiếng Anh hoặc bảo ChatGPT viết cho. Sau đó thì trong cái tiêu đề đấy có nhân vật này nhé. Là được nhanh nhé.
+Đối với phần Adam Rose thì anh em nên nhớ cho tôi là anh em có thể tìm nhé. Tìm ở trên các nền tảng
+Ví dụ như đây là giao diện của YouTube, đây là cái từ khóa Adam Rose, tôi sẽ tìm bằng cách là mở hồ sơ khách nhé, anh em tìm cho tôi là YouTube, nói chung là chúng
+ta sẽ tham khảo được những cái nguồn như thế, đây là cái cách mà tôi luôn tìm, Adam Rose, anh em tìm bộ lọc, video, ví dụ như là tháng này đi, tuần này đi, mức độ phổ
+biến, nói chung là rất nhiều người làm nhé, anh em cứ kết hợp vào cái ảnh thumbnail về gái xinh, anh em nhìn học 6 ngày trước này, 4 ngày trước là 5 ngày trước là
+5 ngày trước này, 5 ngày trước này, 7 ngày trước này.
+Hầu như là tất cả những cái nguồn liên quan đến Adam Rose thì anh em tổng hợp vào làm bán content rất là nhiều.
+Cái nguồn này tôi nói thật với anh em là để sản xuất ra toàn bộ cái quy trình tôi đã làm từ lúc nãy đến giờ ấy.
+Cái anh em biết là sản xuất cái nguồn này rất là nhiều.
+Ok, chào tạm biệt.
+Anh chị em học viên

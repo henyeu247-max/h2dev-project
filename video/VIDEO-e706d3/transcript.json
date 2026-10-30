@@ -1,0 +1,258 @@
+{
+  "sku": "VIDEO-e706d3",
+  "duration": 211.7,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 31,
+  "full_text": "Ok, xin chào tất cả anh em. Hôm nay sẽ nói về anh em về cách tạo tài khoản Google AdSense. Nếu mà anh em không được duyệt bước 2 thì cái này là nguyên nhân để lỗi rất nhiều cái GA phía sau. Nếu anh em tạo thường 3 tháng gần đây nha anh em nha, cái tỷ lệ mà duyệt 1 con GA New nó rất là khó. Nên là tại sao nó đắt như thế? Tại sao có những con GA New bây giờ nó giá tầm 1 triệu 1, 1 triệu 2 một con? Ngày xưa nó chỉ có 20.000 đến 100.000 thôi. GA New nhé. Một con GA mới cái ngày trước ấy, nó rẻ như thế, bây giờ cực kỳ đắt. Thì nếu mà anh em bị tạo mà cái tài khoản này nó chưa duyệt nhé, thì anh em nhớ cho mình nhé. Ở trên cái thiết bị này thì anh em nhớ cho mình là trong cái tài khoản này, anh em đóng cái tài khoản này đi nhé. Anh em nhấn cho mình vào cài đặt này, thông tin tài khoản này. Anh em đóng thì anh em sẽ tạo con GA bằng thẻ ẩn danh nhé. Ở trong cái phần thông tin tài khoản này nó sẽ có cái phần là đóng tài khoản. Anh em nhớ lưu ý nhé. Anh em đóng cho mình. Ok. Đóng các tài khoản này. này thế này thì anh em nhớ là anh em phải đóng đi nhé và nếu mà anh em muốn tạo con GA mới thì một là anh em đăng nhập trên thiết bị khác hoặc là anh em nhớ cho mình anh em mở hồ sơ khách cho mình này anh em đăng nhập vào cho mình AdSense này đấy mà em nhấn vào Google anh em nhớ cho mình là nếu mà anh em đăng ký một con GA mới thì anh em nhớ cho mình là anh em phải làm các bước sau đây thì anh em cần một cái gì ạ? cần một Căn cước công dân mới cộng gì ạ? cần một số Số điện thoại mới cần 1 Gmail mới chưa đăng kí tài khoản AdSense bao giờ. Đấy thì anh em nhớ cho mình là anh em ghi nhớ cho mình nhé. Cần 1 Căn cước công dân. Căn cước này thì anh em có thể mượn người nhà, bạn bè, anh em. Số điện thoại thì bình thường thì ở trên 1 cái số điện thoại anh em hay dùng để nhận mã PIN. mã PIN đúng không thì anh em nhớ là anh em mượn luôn số của cái người mà sử dụng Căn cước công dân này và một cái nữa là cần một Gmail mới nha chưa đăng ký tài khoản AdSense bao giờ thì cái này thì nó phù hợp hơn là anh em add cái số điện thoại mới này vào cái Gmail này Anh em hình dung không? Ý là add số điện thoại mới vào cái Gmail này. Là cái Gmail chưa đăng ký nhé. Thường thì cái Gmail mới đăng nhập ở trên một cái thiết bị thì anh em nhớ cho mình là anh em cần ghi nhớ là đăng nhập 12 đến 48 giờ nhé. Tài khoản AdSense, Cái này thì nếu mà anh em đăng nhập được ở trên tab ẩn danh mà anh em để luôn máy được 12 đến 18 giờ thì ok hoặc là anh em có thể sử dụng những cái thiết bị khác để anh em đăng ký cái tài khoản AdSense nhé AdSense (con GA) nhé, dạo này GA bước 2 nó hơi bị khó nên là chúng ta vẫn nhớ cho tôi là anh em phải sử dụng những cái bước này để anh em tạo con GA mới nhé. Ok, chào các bạn nhé.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 6.727,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:06,727",
+      "text": "Ok, xin chào tất cả anh em. Hôm nay sẽ nói về anh em về cách tạo tài khoản Google AdSense. Nếu mà"
+    },
+    {
+      "id": 2,
+      "start": 6.727,
+      "end": 13.453,
+      "start_time": "00:00:06,727",
+      "end_time": "00:00:13,453",
+      "text": "anh em không được duyệt bước 2 thì cái này là nguyên nhân để lỗi rất nhiều cái GA phía sau. Nếu anh em"
+    },
+    {
+      "id": 3,
+      "start": 13.453,
+      "end": 20.0,
+      "start_time": "00:00:13,453",
+      "end_time": "00:00:20,000",
+      "text": "tạo thường 3 tháng gần đây nha anh em nha, cái tỷ lệ mà duyệt 1 con GA New nó rất là khó."
+    },
+    {
+      "id": 4,
+      "start": 20.0,
+      "end": 30.12,
+      "start_time": "00:00:20,000",
+      "end_time": "00:00:30,120",
+      "text": "Nên là tại sao nó đắt như thế? Tại sao có những con GA New bây giờ nó giá tầm 1 triệu 1, 1 triệu 2 một con? Ngày xưa nó chỉ có 20.000 đến 100.000 thôi."
+    },
+    {
+      "id": 5,
+      "start": 30.42,
+      "end": 35.02,
+      "start_time": "00:00:30,420",
+      "end_time": "00:00:35,020",
+      "text": "GA New nhé. Một con GA mới cái ngày trước ấy, nó rẻ như thế, bây giờ cực kỳ đắt."
+    },
+    {
+      "id": 6,
+      "start": 35.2,
+      "end": 40.0,
+      "start_time": "00:00:35,200",
+      "end_time": "00:00:40,000",
+      "text": "Thì nếu mà anh em bị tạo mà cái tài khoản này nó chưa duyệt nhé, thì anh em nhớ cho mình nhé."
+    },
+    {
+      "id": 7,
+      "start": 40.0,
+      "end": 45.48,
+      "start_time": "00:00:40,000",
+      "end_time": "00:00:45,480",
+      "text": "Ở trên cái thiết bị này thì anh em nhớ cho mình là trong cái tài khoản này, anh em đóng cái tài khoản này đi nhé."
+    },
+    {
+      "id": 8,
+      "start": 45.48,
+      "end": 52.98,
+      "start_time": "00:00:45,480",
+      "end_time": "00:00:52,980",
+      "text": "Anh em nhấn cho mình vào cài đặt này, thông tin tài khoản này. Anh em đóng thì anh em sẽ tạo con GA bằng thẻ ẩn danh nhé."
+    },
+    {
+      "id": 9,
+      "start": 53.62,
+      "end": 62.1,
+      "start_time": "00:00:53,620",
+      "end_time": "00:01:02,100",
+      "text": "Ở trong cái phần thông tin tài khoản này nó sẽ có cái phần là đóng tài khoản. Anh em nhớ lưu ý nhé. Anh em đóng cho mình. Ok. Đóng các tài khoản này."
+    },
+    {
+      "id": 10,
+      "start": 62.1,
+      "end": 70.62,
+      "start_time": "00:01:02,100",
+      "end_time": "00:01:10,620",
+      "text": "này thế này thì anh em nhớ là anh em phải đóng đi nhé và nếu mà anh em muốn tạo con GA mới thì"
+    },
+    {
+      "id": 11,
+      "start": 71.0,
+      "end": 75.48,
+      "start_time": "00:01:11,000",
+      "end_time": "00:01:15,480",
+      "text": "một là anh em đăng nhập trên thiết bị khác hoặc là anh em nhớ cho mình anh em mở hồ sơ khách cho"
+    },
+    {
+      "id": 12,
+      "start": 75.48,
+      "end": 82.0,
+      "start_time": "00:01:15,480",
+      "end_time": "00:01:22,000",
+      "text": "mình này anh em đăng nhập vào cho mình AdSense này đấy mà em nhấn vào Google"
+    },
+    {
+      "id": 13,
+      "start": 82.0,
+      "end": 90.3,
+      "start_time": "00:01:22,000",
+      "end_time": "00:01:30,300",
+      "text": "anh em nhớ cho mình là nếu mà anh em đăng ký một con GA mới thì anh em nhớ cho mình là anh em phải làm các bước sau đây"
+    },
+    {
+      "id": 14,
+      "start": 90.3,
+      "end": 92.6,
+      "start_time": "00:01:30,300",
+      "end_time": "00:01:32,600",
+      "text": "thì anh em cần một cái gì ạ?"
+    },
+    {
+      "id": 15,
+      "start": 92.6,
+      "end": 96.1,
+      "start_time": "00:01:32,600",
+      "end_time": "00:01:36,100",
+      "text": "cần một Căn cước công dân mới"
+    },
+    {
+      "id": 16,
+      "start": 96.1,
+      "end": 98.1,
+      "start_time": "00:01:36,100",
+      "end_time": "00:01:38,100",
+      "text": "cộng gì ạ?"
+    },
+    {
+      "id": 17,
+      "start": 98.1,
+      "end": 100.141,
+      "start_time": "00:01:38,100",
+      "end_time": "00:01:40,141",
+      "text": "cần một số"
+    },
+    {
+      "id": 18,
+      "start": 100.141,
+      "end": 109.291,
+      "start_time": "00:01:40,141",
+      "end_time": "00:01:49,291",
+      "text": "Số điện thoại mới cần 1 Gmail mới chưa đăng kí tài khoản AdSense bao giờ."
+    },
+    {
+      "id": 19,
+      "start": 109.291,
+      "end": 118.441,
+      "start_time": "00:01:49,291",
+      "end_time": "00:01:58,441",
+      "text": "Đấy thì anh em nhớ cho mình là anh em ghi nhớ cho mình nhé."
+    },
+    {
+      "id": 20,
+      "start": 118.441,
+      "end": 129.821,
+      "start_time": "00:01:58,441",
+      "end_time": "00:02:09,821",
+      "text": "Cần 1 Căn cước công dân. Căn cước này thì anh em có thể mượn người nhà, bạn bè, anh em. Số điện thoại thì bình thường thì ở trên 1 cái số điện thoại anh em hay dùng để nhận mã PIN."
+    },
+    {
+      "id": 21,
+      "start": 129.821,
+      "end": 135.701,
+      "start_time": "00:02:09,821",
+      "end_time": "00:02:15,701",
+      "text": "mã PIN đúng không thì anh em nhớ là anh em mượn luôn số của cái người mà sử dụng Căn cước công dân này"
+    },
+    {
+      "id": 22,
+      "start": 136.0,
+      "end": 145.501,
+      "start_time": "00:02:16,000",
+      "end_time": "00:02:25,501",
+      "text": "và một cái nữa là cần một Gmail mới nha chưa đăng ký tài khoản AdSense bao giờ thì cái này thì nó phù hợp hơn là anh em"
+    },
+    {
+      "id": 23,
+      "start": 145.501,
+      "end": 148.981,
+      "start_time": "00:02:25,501",
+      "end_time": "00:02:28,981",
+      "text": "add cái số điện thoại mới này vào cái Gmail này"
+    },
+    {
+      "id": 24,
+      "start": 150.0,
+      "end": 157.917,
+      "start_time": "00:02:30,000",
+      "end_time": "00:02:37,917",
+      "text": "Anh em hình dung không? Ý là add số điện thoại mới vào cái Gmail này. Là cái"
+    },
+    {
+      "id": 25,
+      "start": 157.917,
+      "end": 165.583,
+      "start_time": "00:02:37,917",
+      "end_time": "00:02:45,583",
+      "text": "Gmail chưa đăng ký nhé. Thường thì cái Gmail mới đăng nhập ở trên một cái thiết bị thì"
+    },
+    {
+      "id": 26,
+      "start": 165.583,
+      "end": 173.25,
+      "start_time": "00:02:45,583",
+      "end_time": "00:02:53,250",
+      "text": "anh em nhớ cho mình là anh em cần ghi nhớ là đăng nhập 12 đến 48 giờ nhé."
+    },
+    {
+      "id": 27,
+      "start": 173.25,
+      "end": 180.943,
+      "start_time": "00:02:53,250",
+      "end_time": "00:03:00,943",
+      "text": "Tài khoản AdSense, Cái này thì nếu mà anh em đăng nhập được ở trên tab ẩn danh"
+    },
+    {
+      "id": 28,
+      "start": 180.943,
+      "end": 188.637,
+      "start_time": "00:03:00,943",
+      "end_time": "00:03:08,637",
+      "text": "mà anh em để luôn máy được 12 đến 18 giờ thì ok hoặc là anh em có"
+    },
+    {
+      "id": 29,
+      "start": 188.637,
+      "end": 196.33,
+      "start_time": "00:03:08,637",
+      "end_time": "00:03:16,330",
+      "text": "thể sử dụng những cái thiết bị khác để anh em đăng ký cái tài khoản AdSense nhé"
+    },
+    {
+      "id": 30,
+      "start": 196.33,
+      "end": 203.79,
+      "start_time": "00:03:16,330",
+      "end_time": "00:03:23,790",
+      "text": "AdSense (con GA) nhé, dạo này GA bước 2 nó hơi bị khó nên là chúng ta vẫn nhớ cho tôi là"
+    },
+    {
+      "id": 31,
+      "start": 203.79,
+      "end": 211.25,
+      "start_time": "00:03:23,790",
+      "end_time": "00:03:31,250",
+      "text": "anh em phải sử dụng những cái bước này để anh em tạo con GA mới nhé. Ok, chào các bạn nhé."
+    }
+  ]
+}

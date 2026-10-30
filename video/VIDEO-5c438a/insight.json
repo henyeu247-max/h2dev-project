@@ -1,0 +1,81 @@
+{
+  "sku": "VIDEO-5c438a",
+  "title": "Giải thích và hướng dẫn đưa ra cách chọn mail, chọn kênh - Tút chọn để làm chắc chắn có độ trust, cắn view",
+  "actual_topic": "Phân biệt Gmail cổ vs Kênh cổ, quy trình ngâm tương tác kênh 5–7 ngày và công thức tính chính xác giờ đăng video của đối thủ",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Tài nguyên kênh & Độ trust thuật toán",
+  "niche_id": "faceless-general",
+  "target_market": "Hoa Kỳ (US) / Quốc tế (Global)",
+  "market_code": "US,GLOBAL",
+  "key_takeaways": [
+    "Phân biệt rõ Gmail cổ và Kênh cổ: Gmail cổ (lập từ 2008–2010 hoặc 2017 trở về trước, mua trên Tạp hóa MMO) có độ trust cao nên khi tạo kênh mới không cần ngâm quá lâu.",
+    "Nếu dùng Gmail mới lập thì không được tạo kênh ngay: phải gắn số điện thoại, dùng mail đó đăng ký các dịch vụ (như iCloud...) và ngâm vài ngày trước khi tạo kênh YouTube.",
+    "Kênh cổ (kênh tạo từ các năm trước đã có lịch sử) có lợi thế dễ cắn view và đề xuất nhanh hơn kênh mới, nhưng sau khi bật kiếm tiền vẫn cần làm nội dung chuẩn để tránh bị quét.",
+    "Quy trình ngâm và tương tác kênh (5–7 ngày): mỗi ngày vào tìm kiếm từ khóa cùng ngách, xem video đối thủ, bấm like/comment tự nhiên để thuật toán YouTube nhận diện đúng tệp khán giả.",
+    "Công thức tính giờ đăng của đối thủ: lấy (24 trừ đi số giờ hiển thị 'X giờ trước' trên video đối thủ) rồi cộng với giờ hiện tại của mình (ví dụ: hiện tại 15h, đối thủ đăng 19 giờ trước -> 24 - 19 = 5; 15h + 5h = 20h tối), sau đó hẹn giờ đăng trước đối thủ 1 tiếng (19h)."
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân biệt sự khác nhau giữa Gmail cổ và Kênh YouTube cổ"
+    },
+    {
+      "time": "01:52",
+      "seconds": 112,
+      "label": "Cách xử lý Gmail mới lập: ngâm mail và đăng ký dịch vụ trước khi tạo kênh"
+    },
+    {
+      "time": "04:13",
+      "seconds": 253,
+      "label": "Ưu nhược điểm của kênh cổ so với kênh mới lập"
+    },
+    {
+      "time": "07:02",
+      "seconds": 422,
+      "label": "Lịch đăng video đều đặn 2–3 ngày/bài cho kênh mới"
+    },
+    {
+      "time": "09:06",
+      "seconds": 546,
+      "label": "Quy trình ngâm tương tác kênh 5–7 ngày đúng tệp khán giả"
+    },
+    {
+      "time": "10:54",
+      "seconds": 654,
+      "label": "Công thức tính giờ đăng của đối thủ và mẹo đăng sớm hơn 1 tiếng"
+    }
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 3 bước thực chiến: Phân biệt Gmail cổ vs Kênh cổ, quy trình ngâm tương tác kênh 5–7 ngày và công thức tính chính xác giờ đăng video của đối thủ",
+    "additional": [
+      "Chuẩn bị Gmail cổ (từ Tạp hóa MMO) hoặc ngâm Gmail mới bằng cách đăng ký các dịch vụ bên thứ ba trước khi lập kênh.",
+      "Sau khi tạo kênh và tối ưu thông tin cơ bản, dành 5–7 ngày đi tương tác (search từ khóa, xem và bình luận trên các kênh lớn cùng ngách).",
+      "Xác định giờ đăng cố định của đối thủ bằng công thức (24 - số giờ trước) + giờ hiện tại, rồi lên lịch đăng video của mình sớm hơn đối thủ 1 giờ."
+    ]
+  },
+  "avoid_flags": [
+    "Không dùng email mới tạo mà không ngâm vì dễ bị dính spam, không lên view",
+    "Kênh mới không đăng liên tục mỗi ngày vì thuật toán hiểu là spam và không cho view"
+  ],
+  "tools_mentioned": [
+    "Gmail",
+    "YouTube",
+    "TikTok"
+  ],
+  "channels_mentioned": [],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-5c438a/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Gmail cổ (năm 2017 trở về trước) mua ở Tạp hóa MMO, chỉ cần ngâm khoảng 24 giờ; Gmail mới phải ngâm vài ngày và đăng ký dịch vụ như ChatGPT, iCloud để Google hiểu là người dùng thật",
+    "Kênh cổ dễ có độ tin cậy, lượt hiển thị và lên view nhanh nhưng dễ gãy view khi bật kiếm tiền; kênh mới được thuật toán ưu tiên đẩy nhưng video đầu thường ít view; tác giả ưu tiên kênh cổ",
+    "Kênh mới tạo xong ngâm tương tác 5 đến 7 ngày rồi mới đăng, 5 đến 7 video đầu cách 2 đến 3 ngày đăng một video, sau đó mới 1 ngày 1 video",
+    "Xem kênh đối thủ đăng cách đây bao nhiêu giờ rồi quy đổi sang giờ Việt Nam bằng cách cộng thêm 5 giờ",
+    "Đăng trước đối thủ 30 phút đến 1 tiếng, tốt nhất 1 tiếng; sau này xem số liệu phân tích kênh để chọn giờ đông nhất"
+  ]
+}

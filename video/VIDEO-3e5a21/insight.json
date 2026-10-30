@@ -1,0 +1,86 @@
+{
+  "sku": "VIDEO-3e5a21",
+  "title": "HƯỚNG DẪN ADD QUYỀN QUẢN LÝ KÊNH VÀ MAIL KHÔI PHỤC TRÁNH BỊ GOOGLE QUÉT LỖI SPAM HÀNG LOẠT",
+  "actual_topic": "HƯỚNG DẪN ADD QUYỀN QUẢN LÝ KÊNH VÀ MAIL KHÔI PHỤC TRÁNH BỊ GOOGLE QUÉT LỖI SPAM HÀNG LOẠT - DIE KÊNH HÀNG LOẠT",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Phân quyền kênh & Bảo mật hệ thống chống quét",
+  "niche_id": "faceless-general",
+  "target_market": "Nhật Bản / Hàn Quốc / Hoa Kỳ (US) / Việt Nam / Quốc tế (Global)",
+  "market_code": "JP,KR,US,VN,GLOBAL",
+  "key_takeaways": [
+    "Video hướng dẫn gán quyền cho kênh và quản lý Gmail sao cho hợp lý, để không bị Google đánh spam hay quét khiến cả loạt kênh bị die kéo theo, dành cho người làm nhiều kênh từ khoảng 3 kênh trở lên.",
+    "Mail khôi phục chỉ nên dùng cho đúng một kênh, vì sai lầm phổ biến là gán một mail khôi phục cho rất nhiều mail khác nhau, khi bị quét thì mail đó die kéo theo hàng loạt mail khác và kênh cũng die theo.",
+    "Với quyền kênh, vào mục Quyền rồi mời một email khác và chọn quyền quản lý.",
+    "Làm vậy để nếu mail của kênh gốc bị die thì vẫn còn một mail quản lý khác truy cập được vào kênh, trường hợp đó chỉ die mail chứ không die kênh.",
+    "Người làm 1-2 kênh thì không cần nhưng tác giả vẫn khuyên nên làm, và đặc biệt chỉ nối một tài khoản Google AdSense vào một kênh, vì nối nhiều kênh vào cùng một tài khoản thì một kênh dính spam sẽ kéo theo các kênh còn lại."
+  ],
+  "edit_sop": {
+    "primary": "Cách gán quyền quản lý kênh và quản lý mail khôi phục để tránh bị Google quét spam, die kênh hàng loạt",
+    "additional": [
+      "Mỗi kênh chỉ để một mail khôi phục riêng, không gán một mail khôi phục cho nhiều mail khác nhau.",
+      "Vào mục quyền, mời một email khác vào kênh và chọn quyền quản lý.",
+      "Có thêm một người quản lý khác thì nếu mail kênh gốc bị die hay bị khóa vẫn còn quyền truy cập vào kênh.",
+      "Mỗi một tài khoản Google SN chỉ được liên kết duy nhất vào một kênh riêng."
+    ]
+  },
+  "avoid_flags": [
+    "Không gán một mail khôi phục cho nhiều mail khác nhau, vì khi bị quét thì kéo theo các mail khác die luôn.",
+    "Không nối một Google SN vào nhiều kênh, vì một kênh bị lỗi spam sẽ kéo theo các kênh cùng tài khoản đó."
+  ],
+  "tools_mentioned": [
+    "Gmail",
+    "Google"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: add quyền quản lý kênh và quản lý Gmail để không bị quét spam hàng loạt"
+    },
+    {
+      "time": "00:19",
+      "seconds": 19,
+      "label": "Làm từ 3 kênh trở lên: vào cài đặt quản lý Gmail và mail khôi phục"
+    },
+    {
+      "time": "00:35",
+      "seconds": 35,
+      "label": "Mỗi mail khôi phục chỉ liên kết cho đúng một kênh"
+    },
+    {
+      "time": "00:41",
+      "seconds": 41,
+      "label": "Sai lầm gánh một mail khôi phục cho nhiều kênh: mail bị quét kéo chết cả loạt kênh"
+    },
+    {
+      "time": "01:01",
+      "seconds": 61,
+      "label": "Gán quyền quản lý kênh: vào mục Quyền, mời một email khác"
+    },
+    {
+      "time": "01:18",
+      "seconds": 78,
+      "label": "Lợi ích: kênh gốc bị khóa vẫn còn mail khác truy cập được kênh (chết mail, không chết kênh)"
+    },
+    {
+      "time": "02:01",
+      "seconds": 121,
+      "label": "Chỉ nên nối một Google SN cho mỗi kênh, tránh lỗi spam lây sang kênh khác"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-3e5a21/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Mỗi kênh chỉ để một mail khôi phục riêng, không gán một mail khôi phục cho nhiều mail khác nhau.",
+    "Vào mục quyền, mời một email khác vào kênh và chọn quyền quản lý.",
+    "Có thêm một người quản lý khác thì nếu mail kênh gốc bị die hay bị khóa vẫn còn quyền truy cập vào kênh.",
+    "Mỗi một tài khoản Google SN chỉ được liên kết duy nhất vào một kênh riêng."
+  ],
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

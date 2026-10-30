@@ -1,0 +1,85 @@
+{
+  "sku": "VIDEO-6ad3fe",
+  "title": "FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026",
+  "actual_topic": "FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Chính sách nội dung AI & Xử lý vi phạm",
+  "niche_id": "faceless-general",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Nguyên nhân bị quét lỗi nội dung không trung thực năm 2026 đến 90% từ phần kịch bản, vì vậy người làm phải tập trung cải thiện chất lượng kịch bản thay vì chỉ chỉnh sửa hình ảnh.",
+    "Về mặt hình ảnh, không nên chỉ dùng một ảnh duy nhất như một số kênh đối thủ mà cần dùng hình ảnh tự nhiên hoặc cắt ghép càng nhiều ảnh và video lại với nhau càng tốt.",
+    "Khi sử dụng AI để viết kịch bản, bắt buộc phải yêu cầu AI thêm yếu tố con người vào lời thoại, thể hiện đúng như một người thật đang chia sẻ và mang lại giá trị giáo dục cho người xem.",
+    "Việc quét lỗi do bot AI của nền tảng thực hiện hàng loạt nên có yếu tố hên xui, đặc biệt quét gắt sau đợt cuối năm xuất hiện nhiều tool sản xuất video dây chuyền không có kịch bản.",
+    "Lỗi nội dung không trung thực rất khó kháng (tỷ lệ về chỉ khoảng 6-4 chứ không cao 90-100% như lỗi sử dụng lại nội dung), nên nếu bị thì tự tham khảo làm lại chứ không nên thuê người ngoài kháng hộ."
+  ],
+  "edit_sop": {
+    "primary": "Giảm lỗi nội dung không trung thực 2026: chỉnh kịch bản, thêm yếu tố con người khi nhờ AI viết",
+    "additional": [
+      "Dùng hình ảnh tự nhiên hoặc ghép nhiều ảnh lại với nhau, càng nhiều càng tốt, không chỉ một ảnh như kênh đối thủ.",
+      "Cải thiện kịch bản vì lỗi nội dung không trung thực chủ yếu đến từ kịch bản.",
+      "Khi nhờ AI viết kịch bản, yêu cầu thêm yếu tố con người, thể hiện như một người thật, mang giá trị giáo dục.",
+      "Xem lại video trước nói về edit hình ảnh video và khai báo khi đăng video."
+    ]
+  },
+  "avoid_flags": [
+    "Kịch bản không được giật tít câu view.",
+    "Đặc biệt cẩn thận với kênh làm dạng tin tức chính trị.",
+    "Không phụ thuộc vào AI quá khi viết kịch bản.",
+    "Bị lỗi thì tự tham khảo và tự làm cách khác, đừng đưa cho người khác xử lý hộ."
+  ],
+  "tools_mentioned": [],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Lỗi nội dung không trung thực 2026: quay lại kênh đang xử lý"
+    },
+    {
+      "time": "00:17",
+      "seconds": 17,
+      "label": "Kênh edit theo kiểu đối thủ; nên dùng hình ảnh tự nhiên, nhiều ảnh ghép lại"
+    },
+    {
+      "time": "00:38",
+      "seconds": 38,
+      "label": "Nguyên nhân lỗi: 90% đến từ kịch bản, cần cải thiện kịch bản"
+    },
+    {
+      "time": "01:15",
+      "seconds": 75,
+      "label": "Khi nhờ AI viết kịch bản, yêu cầu thêm yếu tố con người và giá trị giáo dục"
+    },
+    {
+      "time": "01:59",
+      "seconds": 119,
+      "label": "Quét hên xui, quét nhầm hàng loạt do bot AI; chỉ có thể hạn chế tối đa"
+    },
+    {
+      "time": "03:28",
+      "seconds": 208,
+      "label": "Cuối năm nhiều tool sản xuất video hàng loạt không có kịch bản nên bị quét gắt"
+    },
+    {
+      "time": "04:00",
+      "seconds": 240,
+      "label": "Lỗi này khó kháng, tỷ lệ về thấp hơn nhiều so với lỗi sử dụng lại"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-6ad3fe/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Dùng hình ảnh tự nhiên hoặc ghép nhiều ảnh lại với nhau, càng nhiều càng tốt, không chỉ một ảnh như kênh đối thủ.",
+    "Cải thiện kịch bản vì lỗi nội dung không trung thực chủ yếu đến từ kịch bản.",
+    "Khi nhờ AI viết kịch bản, yêu cầu thêm yếu tố con người, thể hiện như một người thật, mang giá trị giáo dục.",
+    "Xem lại video trước nói về edit hình ảnh video và khai báo khi đăng video."
+  ],
+  "last_verified_at": "2026-10-09T06:30:00Z"
+}

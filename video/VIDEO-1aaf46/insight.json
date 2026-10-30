@@ -1,0 +1,78 @@
+{
+  "sku": "VIDEO-1aaf46",
+  "title": "Show kênh thực chiến REUP và share thêm các ngách REUP cực trends",
+  "actual_topic": "Chiến lược khai thác 6 kho hoạt hình Bilibili chuyên biệt & Bộ quy tắc reup lách bản quyền video ngắn/dài an toàn",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Reup & Khai Thác Hoạt Hình",
+  "niche_id": "faceless-general",
+  "target_market": "Trung Quốc",
+  "market_code": "CN",
+  "key_takeaways": [
+    "Kênh reup hình Trung Quốc đầu tiên vừa bật kiếm tiền ngày 6 với view tạm ổn, tác giả nói reup tập lên tập không nên không có gì chắc chắn, chỉ để kiếm thêm và phải chấp nhận rủi ro bị quét tắt kiếm tiền hoặc lỗi sử dụng lại nội dung, những lỗi này có thể kháng được.",
+    "Kênh test đăng nhiều ngách nhỏ có video đầu ngày 20 tháng 5, ba ngày sau mới nổ dần và đầu tháng 6 nổ mạnh, được thêm 200 sub, còn các ngách đăng sau thì không lên; làm reup một ngày có thể ra chục video.",
+    "Kênh ngách kiếm hiệp thời xưa có view cực cao, video cũ nhất từ 2 tháng trước và đã làm 125 video, sau khi bật kiếm tiền thì bám theo phần phim nhiều view và đăng nhiều lên, nguồn lấy từ Bilibili bằng cách tìm theo tiêu đề hoặc hình ảnh.",
+    "Một kênh khác mới làm từ tháng 4 đăng xen kẽ dạng hiện đại, thời xưa và tu tiên, có video đạt 267k view.",
+    "Tác giả khuyên nạp tiền gói tháng Bilibili cho những kênh có video trả phí vì ít bị cạnh tranh, khác với đa số người lấy video miễn phí bị trùng, và dùng Cốc Cốc để có nút tải full HD trực tiếp."
+  ],
+  "edit_sop": {
+    "primary": "Reup video hình Trung Quốc từ Bilibili, đầu tư kênh trả phí để ít cạnh tranh",
+    "additional": [
+      "Reup từ Bilibili sang YouTube; cách tìm video đã hướng dẫn ở các video trước.",
+      "Dùng trình duyệt Cốc Cốc, có nút tải xuống trực tiếp full HD.",
+      "Nạp tiền Bilibili trên app điện thoại (đăng ký bằng số điện thoại), rồi đăng nhập trên Cốc Cốc máy tính để tải.",
+      "Xem một video thì cột bên phải đề xuất nhiều tập, nhiều kênh khác để lấy về test.",
+      "Sau khi bật kiếm tiền, bám theo phần phim nhiều view và đăng nhiều lên."
+    ]
+  },
+  "avoid_flags": [
+    "Reup thì chấp nhận rủi ro bị quét tắt kiếm tiền hoặc lỗi sử dụng lại nội dung.",
+    "Không phải tập nào cũng lên, cùng một ngách có tập lên có tập không.",
+    "Nhiều người lấy video miễn phí nên dễ trùng, cạnh tranh cao; nên đầu tư vào kênh có video phải trả phí."
+  ],
+  "tools_mentioned": [
+    "Bilibili",
+    "Cốc Cốc"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "01:53",
+      "seconds": 113,
+      "label": "Phân tích các video nổ view cao nhất của kênh đối thủ"
+    },
+    {
+      "time": "03:55",
+      "seconds": 235,
+      "label": "Đánh giá hiệu quả bật kiếm tiền và tiềm năng doanh thu của ngách"
+    },
+    {
+      "time": "06:12",
+      "seconds": 372,
+      "label": "Đấy Bây giờ tính đang nạp chỗ này Anh em có thể nạp bằng trên điện thoại"
+    },
+    {
+      "time": "07:29",
+      "seconds": 449,
+      "label": "Kiểu vậy mọi người, chứ còn kiếm tiền thì chắc chắn vẫn bật bình thường"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-1aaf46/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Reup từ Bilibili sang YouTube; cách tìm video đã hướng dẫn ở các video trước.",
+    "Dùng trình duyệt Cốc Cốc, có nút tải xuống trực tiếp full HD.",
+    "Nạp tiền Bilibili trên app điện thoại (đăng ký bằng số điện thoại), rồi đăng nhập trên Cốc Cốc máy tính để tải.",
+    "Xem một video thì cột bên phải đề xuất nhiều tập, nhiều kênh khác để lấy về test.",
+    "Sau khi bật kiếm tiền, bám theo phần phim nhiều view và đăng nhiều lên."
+  ]
+}

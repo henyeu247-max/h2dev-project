@@ -1,0 +1,911 @@
+1
+00:00:00,000 --> 00:00:06,860
+Chào anh chị em học viên. Hôm nay chúng ta đến với chủ đề nhận biết tiếng Anh
+
+2
+00:00:06,860 --> 00:00:13,720
+từ các con vật, từ các loại hoa quả, từ các chiếc xe, từ các loài chim, loài
+
+3
+00:00:13,720 --> 00:00:20,580
+côn trùng, bò sát và tất cả các cách để sản xuất ra những video như thế này.
+
+4
+00:00:20,580 --> 00:00:28,800
+Đầu tiên anh chị em chúng ta sẽ xem video bất kỳ. Video này 1 năm trước có 12 triệu view và video này có thời lượng 10 phút.
+
+5
+00:00:28,980 --> 00:00:32,560
+Vậy để sản xuất ra những video như thế này thì chúng ta sẽ làm như nào?
+
+6
+00:00:32,700 --> 00:00:40,000
+Đầu tiên thì anh em phải chuẩn bị cho tôi là ChatGPT, Flow và Grok. Ngoài ra thì chúng ta sẽ tìm ảnh trên Pinterest.
+
+7
+00:00:40,000 --> 00:00:47,340
+Đầu tiên về câu lệnh tạo hình ảnh. Anh chị em hãy đọc kỹ và viết ra cho tôi. Chụp ảnh nha.
+
+8
+00:00:47,340 --> 00:00:54,480
+Tôi sẽ copy câu lệnh hình ảnh này, nhấn Sao chép, sau đó đưa sang ChatGPT và dán vào.
+
+9
+00:00:56,660 --> 00:01:02,700
+Bây giờ là gì ạ? ChatGPT sẽ cho tôi 10 prompt để tạo ra 10 hình ảnh.
+
+10
+00:01:03,240 --> 00:01:09,000
+10 hình ảnh, anh chỉ có thể thêm là 20 hình ảnh, 30 hình ảnh, 40 hình ảnh cũng được.
+
+11
+00:01:09,860 --> 00:01:13,920
+Và chúng ta sẽ vào cái tạo dự án ở trên Flow này.
+
+12
+00:01:13,920 --> 00:01:25,680
+ở đây tôi sẽ lựa chọn cái Nano Banana để tạo ảnh tôi sẽ chọn là hình ảnh 1.1 nhanh
+
+13
+00:01:25,680 --> 00:01:33,920
+anh chị em nhé kích thước là 1.1 chúng ta sẽ tạo copy tiếp này nhấn tạo này
+
+14
+00:01:33,920 --> 00:01:43,120
+copy và nhấn tạo ảnh trước sau đó chúng ta tạo video sau
+
+15
+00:01:43,120 --> 00:01:46,691
+muốn này
+
+16
+00:01:46,691 --> 00:01:54,858
+Sau khi Flow tạo xong thì anh chị em nhấn tải về, tải
+
+17
+00:01:54,858 --> 00:02:03,024
+xuống, tải xuống, tải xuống, tải xuống, tải xuống, tải xuống, và
+
+18
+00:02:03,024 --> 00:02:11,191
+tiếp theo từ câu thứ 5, rồi tạo hết, 6 này, 7 này,
+
+19
+00:02:11,191 --> 00:02:17,951
+Tải hình xuống này, tải hình xuống này, tải xuống nhé.
+
+20
+00:02:17,951 --> 00:02:24,711
+Anh chị nhớ cho tôi là anh chị làm những
+
+21
+00:02:24,711 --> 00:02:31,000
+cái hình ảnh như thế này, chỉ cần nền trắng nhé.
+
+22
+00:02:31,000 --> 00:02:41,304
+Tiếp theo thì dùng câu lệnh tạo ra video. Anh chị dán luôn câu lệnh tạo video ở dưới phần này.
+
+23
+00:02:41,304 --> 00:02:51,138
+Bây giờ là ChatGPT sẽ cho anh chị 10 cái prompt để tạo ra 10 video 6s. Anh chị có thể ghi
+
+24
+00:02:51,138 --> 00:03:00,971
+ở câu prompt này cho tôi là 10s nhé. Anh chị có thể ghi là 20 prompt, 30 prompt đều được.
+
+25
+00:03:01,471 --> 00:03:04,350
+Sau đó thì anh chị copy từ Prompt 1 này.
+
+26
+00:03:04,350 --> 00:03:11,350
+Sang Grok, dán vào, tiếp theo, sang Grok, dán vào, anh
+
+27
+00:03:11,350 --> 00:03:18,350
+chị nhớ cái prompt tạo video này chúng ta tạo
+
+28
+00:03:18,350 --> 00:03:25,350
+video 6 giây và kích thước cố định là 16.9 nhé.
+
+29
+00:03:25,350 --> 00:03:34,570
+Tải xuống này, Sư Tử này, Voi này, đã
+
+30
+00:03:34,570 --> 00:03:43,790
+xong này, Hươu cao cổ này, đã xong
+
+31
+00:03:43,790 --> 00:03:53,010
+này, Bốn này, Ngựa vằn này, Tải xuống này,
+
+32
+00:03:55,350 --> 00:04:00,270
+6 nè
+
+33
+00:04:00,270 --> 00:04:04,350
+7 nè
+
+34
+00:04:04,350 --> 00:04:08,350
+8 nè
+
+35
+00:04:08,350 --> 00:04:17,000
+Sau đó anh chị em tải xuống nhé
+
+36
+00:04:17,000 --> 00:04:23,957
+sau khi đã có các video
+
+37
+00:04:23,957 --> 00:04:30,623
+như thế này thì chúng ta
+
+38
+00:04:30,623 --> 00:04:37,290
+sẽ đi tìm ảnh trên Pinterest
+
+39
+00:04:37,290 --> 00:04:39,291
+Cái này là tôi biết thử ác nhé.
+
+40
+00:04:39,291 --> 00:04:49,291
+và anh chị tìm cho tôi là bàn tay cầm bút anh chị chọn một cái bất kỳ nhé
+
+41
+00:04:49,291 --> 00:04:59,024
+cái là cũng được nhé nhưng mà cái nào mà nó có thẩm mỹ bàn tay cầm lên trên
+
+42
+00:04:59,024 --> 00:05:08,758
+này chúng ta sẽ sử dụng keyframe để tạo ra video nhé
+
+43
+00:05:08,758 --> 00:05:18,491
+sau đó thì chúng ta tìm thêm cho tôi một cái là
+
+44
+00:05:18,491 --> 00:05:26,491
+Like, Subscribe, Phông xanh, Video nhé.
+
+45
+00:05:26,491 --> 00:05:32,491
+Anh chỉ nhấn phần video này nhé. Like, Subscribe, Phông xanh, Video.
+
+46
+00:05:32,491 --> 00:05:43,491
+Anh chỉ nhấn tải xuống cho tôi.
+
+47
+00:05:43,491 --> 00:05:50,000
+Sau khi đã có tất cả chúng ta sẽ đi vào Edit Video
+
+48
+00:05:50,000 --> 00:05:55,400
+Bạn đầu tiên thì anh chị vào cho tôi là CapCut nhé
+
+49
+00:05:55,400 --> 00:06:04,020
+Tiếp theo, anh chị nhấn, tải lên, em vào, và bây giờ là gì ạ? Chúng ta sẽ
+
+50
+00:06:04,020 --> 00:06:12,640
+dán cái này xuống, và chọn cho tôi cái tỷ lệ, tỷ lệ ở đây là anh chị nhớ
+
+51
+00:06:12,640 --> 00:06:21,260
+cho tôi là tỷ lệ là 16.9 nhé, và nhấn vào đây, đảo ngược này, thêm lên này,
+
+52
+00:06:21,260 --> 00:06:27,460
+Copy cái câu lệnh mở đầu này cho tôi.
+
+53
+00:06:29,120 --> 00:06:29,860
+Dán vào.
+
+54
+00:06:30,280 --> 00:06:31,500
+Với 10 câu hỏi.
+
+55
+00:06:34,480 --> 00:06:36,820
+Dựa vào 10 prompt trên để tạo hình ảnh.
+
+56
+00:06:37,540 --> 00:06:42,700
+Bạn hãy tặng cho tôi một phần mở đầu cho các bé nhận biết tiếng Anh về các con vật.
+
+57
+00:06:43,180 --> 00:06:44,020
+Mở đầu gây hook.
+
+58
+00:06:44,780 --> 00:06:48,280
+Và xin mọi người nhấn like, đăng ký kênh, thu hút người xem đến cuối video.
+
+59
+00:06:49,080 --> 00:06:50,320
+Mở đầu ngắn gọn chi tiết.
+
+60
+00:06:51,260 --> 00:06:54,260
+Tôi sẽ copy những câu như này
+
+61
+00:06:54,260 --> 00:07:00,260
+Hoặc là anh chỉ copy câu dài như này thôi
+
+62
+00:07:00,260 --> 00:07:02,260
+Văn bản này
+
+63
+00:07:02,260 --> 00:07:06,960
+Tôi nhấn văn bản, nhấn thêm văn bản, dán vào này
+
+64
+00:07:06,960 --> 00:07:08,960
+Tôi chọn màu đen đi
+
+65
+00:07:08,960 --> 00:07:10,960
+Tôi chuyển đổi văn bản thành giọng nói
+
+66
+00:07:10,960 --> 00:07:12,960
+Nhấn vào văn bản
+
+67
+00:07:12,960 --> 00:07:14,960
+Nhấn vào chuyển đổi văn bản thành giọng nói
+
+68
+00:07:14,960 --> 00:07:16,960
+Tôi chọn được tiếng Anh này
+
+69
+00:07:16,960 --> 00:07:18,960
+Tôi tìm một giọng bất kỳ
+
+70
+00:07:18,960 --> 00:07:20,960
+Tôi sẽ chọn được giọng nữ đi
+
+71
+00:07:24,960 --> 00:07:27,000
+Hello kids! Today is the show
+
+72
+00:07:31,591 --> 00:07:32,991
+Tôi nhấn tạo này.
+
+73
+00:07:37,991 --> 00:07:46,531
+Thì bây giờ là gì ạ? Tôi đã có một cái đoạn mở đầu như này. Và tôi sẽ
+
+74
+00:07:46,531 --> 00:07:55,071
+sắp xếp chữ đầm sao để cho nhìn cho nó bắt mắt. Tôi sẽ chọn văn bản, chọn
+
+75
+00:07:55,071 --> 00:08:03,611
+phông chữ. Chọn phông chữ bất kỳ nhé mà anh chị em muốn. Và cỡ chữ cho nhỏ lại.
+
+76
+00:08:03,611 --> 00:08:14,531
+Và bây giờ là hiệu ứng nhé. Hiệu ứng thì tôi sẽ cho làm sao để cho nó nhìn đẹp một tí. Hiệu ứng màu chữ này.
+
+77
+00:08:19,911 --> 00:08:22,591
+Và bây giờ là cho vào nhé. Hiệu ứng động.
+
+78
+00:08:26,591 --> 00:08:30,471
+Hello kids. Today we're going... Hello kids.
+
+79
+00:08:30,550 --> 00:08:40,490
+Today we're going to meet 10 amazing animals and learn their English names together. Can you guess them all? Don't forget to like and subscribe.
+
+80
+00:08:40,490 --> 00:08:48,360
+Like, Subscribe, tôi thêm luôn vào đầu luôn. Chọn xóa nền, chọn phông xanh. Đây nha, cái này
+
+81
+00:08:48,360 --> 00:08:56,230
+chúng ta sẽ xóa phông xanh nha. Đấy anh chỉ kéo sang là được nha. Kéo bé xuống này.
+
+82
+00:08:58,070 --> 00:09:03,570
+Don't forget to like and subscribe and let's start our animal adventure now.
+
+83
+00:09:03,570 --> 00:09:13,210
+Ờ, chúng ta cắt đoạn này đi, tạo clip ghép cái đoạn này đi, cho chúng ta đỡ động vào cái đoạn này, đoạn mở đầu đi.
+
+84
+00:09:14,000 --> 00:09:19,690
+Bây giờ đến phần thiết kế video, tôi sẽ tải cái nền xanh dương mà tôi cho vào.
+
+85
+00:09:20,250 --> 00:09:26,410
+Sau khi tôi thay đổi cái nền xanh này cho anh chị nhìn thấy cho nó dễ, thì anh chị kêu cho tôi cái hình ảnh.
+
+86
+00:09:27,370 --> 00:09:31,490
+Vào, thì anh chị nhấn cho tôi xóa nền nhé, xóa tự động này.
+
+87
+00:09:31,490 --> 00:09:39,490
+Ở đây nếu mà tôi làm mối cảnh tôi làm tầm 5 giây cũng được 15 giây cũng được tùy anh em anh em muốn độ lâu đủ bền giống nhau.
+
+88
+00:09:39,490 --> 00:09:41,490
+Hình ảnh này là hình ảnh 5 giây này.
+
+89
+00:09:41,490 --> 00:09:46,490
+Sau khi xóa nền xong thì anh chị nhấn vào cái hình ảnh con sư tử đấy.
+
+90
+00:09:46,490 --> 00:09:49,490
+Và chúng ta sẽ nhấn vào cho tôi là cái mặt nạ ấy.
+
+91
+00:09:49,490 --> 00:09:51,190
+Và anh chị nhấn thêm mặt nạ.
+
+92
+00:09:51,190 --> 00:09:54,270
+Nhấn thêm mặt nạ, nhấn nút cuộn phim này
+
+93
+00:09:55,030 --> 00:09:58,610
+Và làm sao kéo xoay tròn cho tôi như thế này
+
+94
+00:10:03,730 --> 00:10:07,310
+Sau khi đã làm cho nó cắt như thế này rồi nhé
+
+95
+00:10:07,830 --> 00:10:09,466
+Thì anh chị kéo cái thanh trắng ở đỉnh cuối nhé
+
+96
+00:10:09,466 --> 00:10:13,466
+Nhớ cho tôi là thanh trắng ở đâu thì vị trí trên màn hình của anh chị ở đấy.
+
+97
+00:10:13,466 --> 00:10:19,466
+Và bây giờ là gì ạ? Anh chị giữ cho tôi một cái keyframe dưới mặt nạ nhé.
+
+98
+00:10:19,466 --> 00:10:26,466
+Đó là 1 cái keyframe, bắt đầu kéo đến đầu, thì tôi sẽ kéo cái thanh này luôn nhé, đến
+
+99
+00:10:26,466 --> 00:10:33,466
+trên đầu này, cho nó mờ đi, thì nó sẽ có 1 cái tỷ lệ xuất hiện như này, đó.
+
+100
+00:10:37,206 --> 00:10:44,346
+Tiếp theo, là cái về bàn tay này, anh chị nhớ cho tôi là anh chị đảo được nó sang.
+
+101
+00:10:44,346 --> 00:10:51,646
+Đây, ví dụ sư tử nó xuất hiện từ phía bên kia thì anh chị phải làm sao anh chị đảo ngược cái tay này.
+
+102
+00:10:52,246 --> 00:10:55,146
+Nếu mà anh chị cho cái tay như bên này thì nó lại không đẹp.
+
+103
+00:10:55,506 --> 00:10:57,926
+Nếu mà anh cho như này thì nó lại không đẹp.
+
+104
+00:10:58,646 --> 00:11:00,506
+Chúng ta đảo ngược nó lại cho tôi.
+
+105
+00:11:05,026 --> 00:11:06,106
+Cho nó to được kì.
+
+106
+00:11:07,926 --> 00:11:11,406
+Bây giờ là chúng ta sẽ chia đều cái này ra.
+
+107
+00:11:11,406 --> 00:11:20,546
+Cái này chúng ta sẽ làm 5 giây, mỗi lần 1 giây nhé. Anh chỉ kéo rồi đến 1 giây, làm 1 cái thước kẻ.
+
+108
+00:11:26,350 --> 00:11:33,350
+Bây giờ chúng ta sẽ làm gì ạ? Cái này chỉ là cái thước kẻ thôi nên anh chị có thể cho nó bé lại.
+
+109
+00:11:33,350 --> 00:11:42,350
+Như này nhé. Thì chúng ta sẽ nhấn vào cơ bản này. Hình ảnh đang ở như này đúng không? Chúng ta nhấn vào cơ bản này.
+
+110
+00:11:42,350 --> 00:11:48,350
+Giữ keyframe biến đổi này. Cứ 1 giây thì chúng ta kéo xuống 1 lần này.
+
+111
+00:11:48,350 --> 00:11:54,350
+Bây giờ làm sao để cho nó so le nhé
+
+112
+00:11:54,350 --> 00:12:01,350
+để cho cái tay nó có hiệu ứng so le
+
+113
+00:12:01,350 --> 00:12:07,350
+văn bản
+
+114
+00:12:07,350 --> 00:12:17,243
+Ở cuối thế này thì chúng ta sẽ làm cho bàn tay ra. Thì chúng ta
+
+115
+00:12:17,243 --> 00:12:27,137
+sẽ có một cái hiệu ứng như thế này. Đó là cái hiệu ứng về
+
+116
+00:12:27,137 --> 00:12:37,000
+anh ấy. Tiếp theo là gì ạ? Tiếp theo anh chị kéo cái con sư tử
+
+117
+00:12:37,000 --> 00:12:40,970
+sau đó chữ này văn bản
+
+118
+00:12:40,970 --> 00:12:43,530
+tôi sẽ thêm một cái văn bản
+
+119
+00:12:43,530 --> 00:12:44,530
+còn đỉnh đi
+
+120
+00:12:44,530 --> 00:12:46,530
+đây là
+
+121
+00:12:46,530 --> 00:12:48,530
+Lion
+
+122
+00:12:48,530 --> 00:12:53,530
+sư tử đấy
+
+123
+00:12:53,530 --> 00:12:57,030
+đây là
+
+124
+00:12:57,030 --> 00:12:58,790
+Tôi sẽ chọn phương chữ bất kỳ
+
+125
+00:12:58,790 --> 00:13:08,816
+Tôi sẽ làm như là
+
+126
+00:13:08,816 --> 00:13:11,816
+Tôi sẽ để cái này tầm 5 giây
+
+127
+00:13:11,816 --> 00:13:20,403
+5 cái thước kẻ này là 5 giây nhé, 1 cái là 1 giây. Và bây
+
+128
+00:13:20,403 --> 00:13:28,989
+giờ là cái Lion này này, anh chị nhớ cho tôi nhé, anh chị copy
+
+129
+00:13:28,989 --> 00:13:37,576
+lên 2 cái. Và anh chị nhấn cho tôi là anh chị nhấn tạo clip ghép.
+
+130
+00:13:37,576 --> 00:13:48,896
+clip ghép thì anh chị mới nhấn được cái mặt nạ nhé. Nếu mà anh chị không tạo để hoàn tác clip ghép, anh chị nhấn vào đây thì nó sẽ không có cái mặt nạ giống như cái hình ảnh kia.
+
+131
+00:13:49,676 --> 00:13:59,516
+Đấy anh chị chọn 2 cái này. Nhấn tạo clip ghép này. Đó. Bây giờ là gì ạ? Bây giờ chúng ta lại nhấn cho tôi cái phần là phần video.
+
+132
+00:14:01,516 --> 00:14:06,496
+Nhấn vào cái mà vừa làm clip ghép này anh chị nhé. Anh chị nhấn vào mặt nạ.
+
+133
+00:14:07,576 --> 00:14:09,576
+và nhấn cho tôi thêm nhé
+
+134
+00:14:09,576 --> 00:14:10,576
+đây ạ
+
+135
+00:14:10,576 --> 00:14:13,576
+thêm cho tôi hình mặt nạ hình chữ nhật nhé
+
+136
+00:14:13,576 --> 00:14:15,576
+thêm như này
+
+137
+00:14:15,576 --> 00:14:18,576
+đó kéo đến như này
+
+138
+00:14:18,576 --> 00:14:21,576
+thì ở cuối video thì ở đầu này
+
+139
+00:14:21,576 --> 00:14:23,250
+thì ở cuối cái
+
+140
+00:14:23,250 --> 00:14:37,030
+Văn bản 5s này, Lion này nhé. Anh chị nhớ cho tôi là giữ keyframe ở cuối này. Ở phần mặt nạ dưới nó keyframe nhé. Và anh chị sẽ làm cho tôi từ đầu nhé.
+
+141
+00:14:38,030 --> 00:14:41,550
+Kéo bao nhiêu này. Ta sẽ có một cái hiệu chạy ra như này.
+
+142
+00:14:41,550 --> 00:14:54,350
+Và bây giờ là gì ạ? Thêm cho tôi cái bàn tay này, anh chị kéo dài. Và bây giờ là chúng ta sẽ cắt ở cái đoạn này, cắt đi này.
+
+143
+00:14:54,350 --> 00:15:03,550
+Ctrl B hoặc là cắt ở đây, anh chị em nhé. Tách này. Bàn tay này thì anh chị giữ nguyên tỷ lệ và cho sang như này.
+
+144
+00:15:03,550 --> 00:15:08,750
+Đảo ngược nó sang, phản chiếu, và 1 giây.
+
+145
+00:15:20,130 --> 00:15:24,610
+Mình sẽ để cái tay đè lên cái chữ này nhé.
+
+146
+00:15:24,610 --> 00:15:27,310
+Nó sẽ có cái hiệu đúng là cái tay đè lên chữ nhé.
+
+147
+00:15:27,310 --> 00:15:38,830
+bây giờ là nhấn bật cơ bản giữ keyframe tiếp theo cháu đến cuối
+
+148
+00:15:38,830 --> 00:15:47,310
+kéo về thước kẻ ra nó đi đâu thì anh chị em di chuyển đấy
+
+149
+00:15:47,310 --> 00:15:49,070
+làm so le để cho nó hiệu ứng
+
+150
+00:15:49,070 --> 00:15:53,091
+đó
+
+151
+00:15:53,091 --> 00:16:03,351
+Đó.
+
+152
+00:16:07,191 --> 00:16:11,191
+Lion này
+
+153
+00:16:11,191 --> 00:16:16,311
+Cái anh chị muốn
+
+154
+00:16:16,311 --> 00:16:18,371
+viết ra
+
+155
+00:16:18,371 --> 00:16:22,391
+và chuyển đổi văn bản thành giọng nói
+
+156
+00:16:22,391 --> 00:16:25,011
+ví dụ giọng đầu tiên là Lion
+
+157
+00:16:25,011 --> 00:16:31,931
+anh chị có thể làm nhanh hơn
+
+158
+00:16:31,931 --> 00:16:32,991
+Lion
+
+159
+00:16:32,991 --> 00:16:37,251
+Để cái văn bản này đi cuối video này
+
+160
+00:16:37,251 --> 00:16:38,251
+Lion
+
+161
+00:16:38,251 --> 00:16:39,391
+Đó
+
+162
+00:16:39,391 --> 00:16:42,611
+Thì chúng ta sẽ có gì ạ?
+
+163
+00:16:46,771 --> 00:16:47,371
+Lion
+
+164
+00:16:47,371 --> 00:16:51,771
+Và
+
+165
+00:16:51,771 --> 00:16:55,191
+Sau đó thì anh chị em
+
+166
+00:16:55,191 --> 00:16:57,931
+tải cho tôi cái video này sau
+
+167
+00:17:01,000 --> 00:17:10,720
+Bây giờ là xong một cái rồi đúng không? Thì chúng ta sẽ copy cho tôi
+
+168
+00:17:10,720 --> 00:17:20,340
+cái này. Tạo clip ghép này. Đây là một cái đoạn phôi đầu nhé.
+
+169
+00:17:20,340 --> 00:17:29,353
+Tiếp theo này, anh chị nhấn Sao chép ra, hoàn tác cho tôi. Bây giờ là gì ạ? Anh chị nhớ cho tôi là anh chị,
+
+170
+00:17:29,353 --> 00:17:38,367
+bây giờ chị cần thay cho tôi. Thứ nhất, thay con sư tử này. Thay này, thay con sư tử. Đấy, thấy chưa? Và bây
+
+171
+00:17:38,367 --> 00:17:47,380
+giờ trong cái Lion này thì anh chị thay tên cho tôi. Chúng ta chỉ cần nhấn vào chúng ta thay tên đổi họ đi là được.
+
+172
+00:17:50,340 --> 00:17:56,340
+Văn bản
+
+173
+00:17:56,340 --> 00:17:59,140
+Trở ra
+
+174
+00:17:59,140 --> 00:18:04,940
+Thêm văn bản
+
+175
+00:18:04,940 --> 00:18:08,940
+Đọc ra cái từ đấy
+
+176
+00:18:08,940 --> 00:18:16,140
+Tiger
+
+177
+00:18:16,140 --> 00:18:19,340
+Tiger.
+
+178
+00:18:31,000 --> 00:18:35,340
+Tiger này.
+
+179
+00:18:35,340 --> 00:18:39,340
+con sư tử này thì anh chị em kéo video của ạ
+
+180
+00:18:40,641 --> 00:18:42,641
+Kéo vào như này
+
+181
+00:18:42,641 --> 00:18:45,641
+Cho to lên
+
+182
+00:18:45,641 --> 00:18:51,641
+Tiger này
+
+183
+00:18:51,641 --> 00:18:55,641
+Tạo xuống clip ghép này.
+
+184
+00:18:55,641 --> 00:19:01,641
+Copy sang.
+
+185
+00:19:01,641 --> 00:19:05,641
+Kéo xuống này.
+
+186
+00:19:05,641 --> 00:19:07,641
+Đây, chị nhấn hoàn tác.
+
+187
+00:19:07,641 --> 00:19:11,641
+Tiếp theo là con gì ạ? Con voi nhé.
+
+188
+00:19:11,641 --> 00:19:17,641
+Voi kéo vào sư tử này. Ờ, kéo vào hổ này nhé.
+
+189
+00:19:17,641 --> 00:19:22,641
+Đó là nó có cái video luôn, để anh chị làm cực kì nhanh video này.
+
+190
+00:19:22,641 --> 00:19:26,641
+Trở ra cho rồi.
+
+191
+00:19:26,641 --> 00:19:29,641
+Copy nhé.
+
+192
+00:19:29,641 --> 00:19:35,641
+Nhấn 2 lần vào cái văn bản mà đã ghép nhé.
+
+193
+00:19:35,641 --> 00:19:41,641
+Chọn 2 cái.
+
+194
+00:19:41,641 --> 00:19:45,641
+Kéo xuyên xô đồng biến lại.
+
+195
+00:19:45,641 --> 00:19:47,021
+Tiger
+
+196
+00:19:47,021 --> 00:19:50,881
+Bye
+
+197
+00:20:00,150 --> 00:20:04,150
+Anh chị muốn làm nhanh như nào cũng được, muốn làm chậm cũng được.
+
+198
+00:20:04,150 --> 00:20:14,150
+Kéo cái vi ra con voi mà.
+
+199
+00:20:20,150 --> 00:20:22,150
+Tạo clip ghép này.
+
+200
+00:20:22,150 --> 00:20:33,790
+Chỉ cần phôi đầu của anh chị mà nó ok thôi thì tất cả các phôi sau thì chúng ta đều làm được như thế. Hoàn tác. Hươu cao cổ.
+
+201
+00:20:33,790 --> 00:20:37,650
+Hello kids.
+
+202
+00:20:41,650 --> 00:20:42,210
+Đó.
+
+203
+00:20:43,950 --> 00:20:45,490
+Nhấn theo hươu cao cổ này.
+
+204
+00:20:47,710 --> 00:20:49,750
+Vẫn nhấn vào cho tôi 2 lần này.
+
+205
+00:20:50,070 --> 00:20:50,430
+Tán vào.
+
+206
+00:20:52,150 --> 00:20:59,310
+Dán vào dưới, chọn 2 cái, kéo vào cho nó bằng cái tỷ lệ.
+
+207
+00:21:37,776 --> 00:21:47,156
+Đó anh chị nhấn tạo clip ghép. Chúng ta cứ làm như thế
+
+208
+00:21:47,156 --> 00:21:56,536
+đến khi nào hit video nhé. Thì chúng ta sẽ có một cái
+
+209
+00:21:56,536 --> 00:22:05,916
+video như thế này. Tôi làm 4 đoạn cho anh chị nhanh rồi.
+
+210
+00:22:05,916 --> 00:22:19,116
+Dùng như Lion thì chúng ta làm như nào? Chúng ta có thể để cái tay này nó nhanh hơn nhé. Chỉ cần để cho trẻ con nó làm sao nó hiểu được đây là con gì, con gì.
+
+211
+00:22:19,116 --> 00:22:32,796
+Thì video được xong rồi cho tôi. Đây là Voi. Chúng ta kết hợp AI cộng thiết kế nha anh chị em nhé. Và chúng ta sẽ tạo ra được cái video hoàn chỉnh như thế này.
+
+212
+00:22:33,000 --> 00:22:43,516
+Anh chị có thể làm video trên 8 phút, 10 phút, 20 phút cũng được nhé. Tiếp theo thì anh chị em đến phần tạo ảnh thumbnail.
+
+213
+00:22:44,476 --> 00:22:56,650
+Ở trên Picsart này anh chị nhấn bắt đầu một thiết kế mới nhé. Tạo mới từ cung vẽ trống này. Và bây giờ là gì ạ? Chúng ta vẫn tìm cho tôi là 19...
+
+214
+00:22:56,650 --> 00:23:07,850
+1920 x 1080 nhé. Ví dụ nền trắng này chúng ta giữ nguyên cũng được. Và cái này thì chúng ta sẽ tạo lên cho tôi là ví dụ như là 6 đến 8 con vật.
+
+215
+00:23:07,850 --> 00:23:08,850
+8 con vật.
+
+216
+00:23:10,450 --> 00:23:10,970
+Ok.
+
+217
+00:23:14,510 --> 00:23:15,550
+Gỡ nền này.
+
+218
+00:23:18,010 --> 00:23:19,050
+Cũng gỡ cũng được.
+
+219
+00:23:20,390 --> 00:23:23,330
+Tôi sẽ trang trí làm sao đủ cho 8 con vật này.
+
+220
+00:23:26,650 --> 00:23:33,810
+Cách nhận biết các con vật animal.
+
+221
+00:24:17,440 --> 00:24:24,200
+Như anh chị sẽ để là 50
+
+222
+00:24:24,200 --> 00:24:30,960
+động vật bằng tiếng Anh. Cách
+
+223
+00:24:30,960 --> 00:24:37,720
+nhận biết làm là như thế nào?
+
+224
+00:24:37,720 --> 00:24:46,720
+nhận biết 50 động vật bằng tiếng Anh. Đây anh chị có
+
+225
+00:24:46,720 --> 00:24:55,720
+thể thêm vào nhận biết 50 con động vật bằng tiếng Anh.
+
+226
+00:24:55,720 --> 00:25:03,920
+Thì thiết kế ra những hình này cho em. Ví dụ như cái nào mà nó mờ đen quá thì chỉ có thể là diễn.
+
+227
+00:25:04,480 --> 00:25:15,360
+Tách nền nó ra. Và đấy là cái chủ đề về nhận biết động vật bằng tiếng Anh, nhận biết các loại xe, các loại cổ, các loại chiết kế.
+
+228
+00:25:16,020 --> 00:25:18,120
+Cái gì nào đều hiệu quả nhé.

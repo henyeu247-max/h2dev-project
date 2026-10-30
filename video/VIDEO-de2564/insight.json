@@ -1,0 +1,77 @@
+{
+  "sku": "VIDEO-de2564",
+  "title": "NGÁCH NHỎ STORIES THỊ TRƯỜNG NHẬT BẢN",
+  "actual_topic": "Phân tích kênh ngách Stories Gia đình Nhật Bản (con trai, con dâu, mẹ chồng) chuyển chủ đề lên trên 10k view & Ghép nhiều ảnh chống quét",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Drama Gia Đình & Xã Hội",
+  "niche_id": "faceless-general",
+  "target_market": "Nhật Bản",
+  "market_code": "JP",
+  "key_takeaways": [
+    "Tác giả share một ngách thị trường Nhật Bản: kênh đã hơn 100 video nhưng view gần đây trung bình trên 10k vì kênh vừa chuyển chủ đề sau khi trước đó làm sai ngách.",
+    "Kênh chuyển sang ngách gia đình (chuyện con trai, con dâu, mẹ chồng) với kịch bản giật gân nên view lên đều.",
+    "Có thể bấm chuột phải để dịch tiêu đề và nội dung sang tiếng Việt cho dễ hiểu; phần tạo kịch bản và lấy kịch bản đối thủ tác giả đã hướng dẫn, bài này chỉ còn share key.",
+    "Kênh gốc chỉ dùng một ảnh cho cả video; tác giả khuyên tạo nhiều ảnh hoặc ghép thêm video miễn phí vì YouTube gần đây xử lý chặt kiểu một ảnh.",
+    "Video một ảnh dễ bị quét lỗi sử dụng lại/trùng lặp nội dung và tắt kiếm tiền; kháng nghị thường về được (khoảng 90%) nhưng mất nhiều thời gian và công sức nên cần làm kỹ ngay từ đầu."
+  ],
+  "edit_sop": {
+    "primary": "Phân tích một kênh ngách Stories thị trường Nhật Bản đang lên view sau khi chuyển chủ đề",
+    "additional": [
+      "Kênh có hơn 100 video, các video cũ làm ngách khác nên view thấp, vài video gần đây chuyển sang ngách gia đình (con trai, con dâu, mẹ chồng) thì view lên đều, thường trên 10k",
+      "Bấm chuột phải dịch trang để hiểu nội dung tiêu đề và video",
+      "Nên tạo nhiều ảnh, nhiều nhân vật thay vì chỉ một ảnh, và ghép thêm video free từ các nguồn như Pexels/Pixabay",
+      "Phần tạo kịch bản và lấy kịch bản đối thủ đã hướng dẫn ở video trước, còn lại là share key kênh"
+    ]
+  },
+  "avoid_flags": [
+    "Đừng chỉ dùng một ảnh duy nhất trong video vì bị quét trùng lặp, tái sử dụng nội dung thì có thể bị tích kiếm tiền",
+    "Đừng đứng núi này trông núi nọ, cứ làm một hướng"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "Google Dịch"
+  ],
+  "channels_mentioned": [
+    "@あの年の空"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu kênh mẫu Nhật Bản hơn 100 video vừa chuyển chủ đề đạt trên 10k view"
+    },
+    {
+      "time": "00:48",
+      "seconds": 48,
+      "label": "Đối chiếu loạt video cũ làm sai ngách với loạt video mới trong 1 tháng gần đây"
+    },
+    {
+      "time": "01:22",
+      "seconds": 82,
+      "label": "Dịch tiêu đề sang tiếng Việt: Ngách chuyện gia đình con trai, con dâu, mẹ chồng"
+    },
+    {
+      "time": "02:07",
+      "seconds": 127,
+      "label": "Phân tích cách dựng video của đối thủ và lời khuyên kiên trì bám đuổi một hướng"
+    },
+    {
+      "time": "02:58",
+      "seconds": 178,
+      "label": "Cảnh báo lỗi trùng lặp nội dung khi để 1 ảnh tĩnh và cách ghép nhiều ảnh + video free"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-de2564/transcript.txt",
+  "sop_steps": [
+    "Kênh có hơn 100 video, các video cũ làm ngách khác nên view thấp, vài video gần đây chuyển sang ngách gia đình (con trai, con dâu, mẹ chồng) thì view lên đều, thường trên 10k",
+    "Bấm chuột phải dịch trang để hiểu nội dung tiêu đề và video",
+    "Nên tạo nhiều ảnh, nhiều nhân vật thay vì chỉ một ảnh, và ghép thêm video free từ các nguồn như Pexels/Pixabay",
+    "Phần tạo kịch bản và lấy kịch bản đối thủ đã hướng dẫn ở video trước, còn lại là share key kênh"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T07:00:00Z"
+}

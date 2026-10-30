@@ -1,0 +1,1986 @@
+{
+  "sku": "VIDEO-a152a6",
+  "duration": 1437.08,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 247,
+  "full_text": "Chào anh chị em học viên, hôm nay chúng ta đến với một chủ đề là bán content. Bán content kết hợp với nhân vật nổi tiếng trên nền tảng YouTube. Nếu mà các bạn chưa tìm hiểu thì anh em có thể tìm hiểu đến nhân vật Adam Rose, một nhân vật khá là nổi tiếng trên nền tảng YouTube. Nhân vật này có những video phổ biến rất là nhiều view, kể cả video dài, video ngắn. Anh này thường hay sử dụng những video có sẵn và giao tác video mình là một đầu bếp hoặc là một kỹ sư hoặc công an. Đại loại là như thế. Nhưng để chúng ta sẽ lấy sử dụng nhân vật này để làm cho kênh YouTube của chúng ta thì chúng ta sẽ kết hợp như thế nào. Để cho nó hoàn chỉnh thì ở đây tôi đã có một cái tài liệu. Tài liệu này thì tôi sẽ ghi ở trong phần mô tả. Ở đây chúng ta sẽ có 2 kênh YouTube làm dạng bán content để anh em tham khảo. Ví dụ như kênh này 533 video nhé. Cũ nhất là 1 năm trước nhưng mà bắt đầu sản xuất video về nhân vật này là 1 năm trước và có những cái video viral lên tới 2 triệu view. Đối với video dài 1 tiếng mà 2 triệu view như thế này thì cái lượt RPM cực cao nha anh chị em nhé. Ở đây chúng ta có thể tìm được rất nhiều nguồn 22h trước vẫn đăng Ở đây tôi để 1-2 kênh tham khảo và những kênh video như thế này chúng ta chỉ cần 1 kênh thôi Anh chị có thể làm 5-10 kênh 20-30 kênh đều được nhé Anh chị làm song song thì cái tỷ lệ mà nó tắt kiếm tiền dạng này thì đương nhiên rồi nhưng mà RPM cực kỳ cao ví dụ như có những kênh chúng ta chỉ cần ăn trong vòng tầm 3-4 tháng 5 tháng là ok nhanh chị em nhé và những nguồn này sản xuất cực kỳ dễ ở đây tôi sẽ có những công cụ sản xuất video như sau Picsart thì chúng ta để tạo thumbnail, CapCut để edit video, Gemini thì chúng ta để phân tích và tự động tải ra cho chúng ta. Và tôi cần một cái nhạc nền nữa là nhạc nền Suno AI. Đợt này làm bán content thì khó hơn đợt trước nhiều. Nên là anh chị em nếu mà làm thì anh chị em sẽ sản xuất như thế nào. Đến vấn đề tìm nguồn thì chúng ta sẽ tìm nguồn ở trên Douyin, TikTok, YouTube và Facebook cũng được nhé. Anh chị em lấy nguồn ở đâu cũng được. Nhưng mà lựa chọn nguồn như thế nào để cho nó hiệu quả? Thì đối với cánh đàn ông mà thường thì sẽ là gái xinh. Nhưng mà gái xinh sẽ kết hợp với gì ạ? Gái xinh sẽ kết hợp với võ thuật xây dựng hoặc nội trợ và rất nhiều cái khác. Ví dụ như anh em hay xem cô giáo nóng bỏng. Đấy. Thì anh em có thể là lấy những cái nguồn đấy để anh em để tạo ra những cái video bán content. Ở đây thì tôi đã chuẩn bị 1 cái Master Prompt có sẵn. Cái này thì tôi đã yêu cầu con Gemini ghi nhớ và phân tích rồi. Thì chúng ta sẽ làm như nào? Chúng ta sẽ đi từng bước như sau. Đầu tiên, chúng ta sẽ phải đi tìm nguồn trước. Anh chị em hãy nhớ cho tôi là anh chị em tìm. Ở đây tôi sẽ sử dụng là cái tiếng Việt chuyển sang tiếng Trung hoặc anh em chọn tiếng Việt chuyển sang tiếng Anh. Nếu mà anh em tìm ở trên nền tảng YouTube hoặc là TikTok của Việt Nam để tìm ra những cái nguồn như thế. Ở đây tôi sẽ tìm ví dụ như gái xinh. Kết hợp với gì ạ? Kết hợp với xây dựng Và tôi sẽ lựa chọn tiếng Trung phồn thể nhé Phồn thể này Tiếng Trung phồn thể nhé, tôi copy tiếng Trung phồn thể này là gái xinh xây dựng và tôi dịch từ tiếng Việt sang tiếng Trung nhé, anh chị em nhớ cho tôi nhé. Và tôi sẽ lựa chọn Douyin nhé anh em nhé, Douyin, Douyin thì nó là nền tảng của Trung Quốc thì chúng ta phải dịch từ Trung Quốc. Còn TikTok ở Việt Nam thì anh em có thể tìm từ tiếng Anh, nó cũng ra được những cái video nước ngoài nhé anh em nhé. Ở đây thì tôi sẽ dán cái từ gái xinh xây dựng này, anh em có thể xem được những cái nguồn như thế này. Nó rất nhiều nguồn nếu mà chưa hiểu ý lắm thì anh em có thể tìm cho tôi là cô gái xây dựng. Cô gái xây dựng thì nó sẽ chi tiết hơn. Gái xinh nhiều lúc nó kiểu là nhà xinh. Ok, anh chị em có thể nhìn thấy ở đây rất nhiều nguồn. Đấy, những cái nguồn như này tôi bảo nha. Nếu mà các ông là người đàn ông thì các ông có xem những video như này không? Có chứ, tôi cũng có. Không những là các ông. Đây rất là nhiều nguồn nha. Anh em hãy bắt đầu tìm cho tôi và tải về. Ở đây ví dụ như là tôi nhấn vào bất kỳ một cái video này nhé. Vẫn như là cách thức tải ở các nền tảng thôi. Đây tôi nhấn vào video này. Tôi nhấn sao chép này. Biết kênh này nó có nhiều không gì. Anh em đăng nhập hộ tôi vào Cốc Cốc nhé. Thì ở đây là anh em copy cho tôi cái video này. Sau đó thì anh em tải về Đấy nha Anh em x cái này ra này Là đăng nhập vào Cốc Cốc thì anh em dán những link vào Thì nó sẽ ra Đó tải xuống này Nó sẽ đề xuất ra rất nhiều video liên quan đến gái xinh như thế này Tôi nhấn vào video tiếp Đó Tải xuống Ở đây Ở đây thì anh em nhấn trực tiếp vào kênh nhé. Nhấn vào kênh của họ xem là có nhiều video không. Ồ, 100.000 follow à. Ủa, nhiều đấy. Ủa, những nguồn này thì anh em làm thoải mái. Chúng ta sẽ lấy tầm... Bình thường thì tôi sẽ làm video tầm trên 8 phút nha anh em nhé. Thì anh em lấy bao giờ cho đủ số cạnh 8 phút thôi. Còn lại ví dụ như tôi sẽ lấy một số cái video trên này. Anh em nhớ ví dụ như nếu mà anh em làm chi tiết để cái nguồn này anh em nêu lại thì anh em sẽ nhấn like vào nhé. Để sau mình biết là mình đã lấy video này rồi. Để tránh trường hợp trên một kênh anh em làm đi lấy đi lấy lại lấy rất nhiều lần. Ví dụ như anh em lấy cái video này rồi đúng không? Thì anh em nhớ cho tôi là anh em nhấn like vào. Anh em đăng nhập vào tài khoản Douyin thì chúng ta có thể tự động tải ở trên nền tảng Việt Nam. Anh em tự động tải được. Tải xuống. Giờ sẽ trở về cái Douyin, giao diện của Douyin. Sồi ôi như thế này có phải thương không? Như thế này mà tôi bảo các ông là nếu mà là tôi là tôi sẽ đi vào luôn này. Bê gạch cho em luôn này. Nhớ cho tôi là đăng nhập vào Cốc Cốc này thì chúng ta có thể tải được video về nhé. Còn không đăng nhập vào Cốc Cốc thì không được nha. Nguồn nó nhiều lắm không rồi. Tôi chỉ lấy vài video để demo cho các ông cách làm nha. Chứ không thể nào tôi ngồi tôi làm nhiều được. Nếu mà làm nhiều thì nó cũng được thôi. Nhưng mà anh em nó bị dễ chán thì chúng ta sẽ làm vài video thôi. Còn lại nếu mà anh em muốn làm chi tiết hơn thì anh em nên lấy cho tôi tất cả là video trên. Trên 8 phút nhé, lấy tất cả các video cộng lại là trên 8 phút. Và ở đây thì chúng ta sẽ tải thêm cái video về nhân vật Adam Rose này nhé. Anh em nhấn hộ tôi phần Shorts này, phần Shorts nhé, đúng cái kênh của Adam Rose này nhé. Anh em nhấn phổ biến này, chúng ta sẽ lấy những cái video về nhân vật này. Kênh chính của họ cũng làm như thế này. Chúng ta tải một video của YouTube của anh chàng này về thôi, Adam Rose. Sự dụng nha, Suno với Gemini, sử dụng như thế nào để cho nó hiệu quả thì chúng ta sẽ sử dụng xong, sau khi chúng ta ghép video xong, đã tải xong như thế này rồi thì bước tiếp theo chúng ta sẽ vào CapCut nè, anh chị em nhớ cho tôi là anh em vào CapCut nha, đấy giao diện của CapCut anh em nhấn vào tạo dự án nha. Luôn luôn nhớ cho tôi là thanh trắng ở đâu thì vị trí ở đấy, câu nói mà tôi đã liên tục nói với anh em, ở đây là tôi đã lấy rất nhiều nguồn như thế này, 17 giây, 13 giây có này. Tôi sẽ tắt nhạc đi. Ở đây tôi đang lấy 1, 2, 3, 4, 5, tầm 5 đến 5 đoạn nhé. nhé thì anh em nhớ cho tôi là 5 đoạn 1 phút là anh em lấy tầm tất cả video cộng lại tầm 8 phút 10 phút là ok nhé thì đối với cái này thì chúng ta không để tỷ lệ khung hình như thế này thì ở đây thì anh em chọn cho tôi tỷ lệ là 16:9 nhé Đó. Anh em nhớ cho tôi là khi anh em thêm video rồi thì anh em mới chọn được ở đây. Sau khi đã chọn như thế rồi thì anh em chọn tất cả video này. Đấy. Chọn nhé. Chọn tất cả này. Anh em nhớ cho tôi là phần video này, cơ bản này. Sau đó tỷ lệ anh em để cho tôi là 174 nhé. Ok. Anh em nhớ chưa? Tất cả các video nó sẽ trở sang là 174. Nếu mà anh em kéo tay thì thường nó video này được, video kia không được đâu. Sau khi đã để kích cỡ 174 rồi thì chúng ta sẽ chọn tất cả video này. Anh em sẽ chọn cho tôi phần nền nhé. Đây, kéo phần video cơ bản kéo thẳng xuống nhé. Đó, anh em chọn nền này, chọn mờ nhé. Đó, anh em chọn mờ như thế này là được nhé. Thì chúng ta sẽ có một cái video như này. Tiếp theo thì chúng ta sẽ thêm những cái cảnh của nhân vật Adam Rose kia. Đây, tôi sẽ cắt nhé. Để, đến cái đoạn này, cắt này. Đó. Cắt nhé. Cái này thì anh em làm chi tiết cho tôi thì nhé. Cắt này. Tôi chỉ lấy nhân vật này thôi nhé. Chứ tôi không lấy cái đoạn trong video của họ. Tôi chỉ lấy mấy video, mấy đoạn của Adam Rose này thôi. Và bây giờ là chúng ta sẽ tách cái âm thanh của Adam Rose này đi nhé. Tôi sẽ để ví dụ như tầm 2-3 đoạn đi thì tôi sẽ để kéo vào 1-2 lần. hoặc là anh em làm chi tiết hơn mỗi đoạn thì anh em thêm một lần cũng được. Đó, như thế này nhé. Chọn tất cả này. Vẫn chọn mờ nhé. Cái Adam Rose tôi vừa cho vào nên nó chưa mờ như thế đâu. Cái Adam Rose này anh em cũng có thể là cho lên 174 nhé. Nhưng mà tôi nghĩ là anh em để luôn như thế này cho tôi. Không cần phải là cho lên 174 đâu, tại vì nó nhìn thấy cả trực diện của nhân vật này luôn. Thì bây giờ tiếp theo đến cái phần nhạc bản quyền nhé. Anh em ghi nhớ cho tôi nè. Anh em nghe thấy không? Nó không có nhạc nền. Nó chỉ có tiếng xúc cát thôi. Thì cái này thì chúng ta làm gì ạ? Chúng ta không tách nhạc nền nhé. cái này cái này rất nhiều ông không biết làm này công làm có view nhưng mà nó sẽ rất dễ tắt kiếm Có gì ạ? Có nhạc nền nha anh em nha. Tắt đi nha. Đi nè. Đấy, tắt đi nè. Tắt hết đi nha. Nếu mà nó mà có cái, những cái như này thì chúng ta tắt đi. Âm thanh tắt này. Các ông chủ động tách cho tôi và copy cái Adam Rose này lên. Các ông có thể chèn qua những đoạn như thế cũng được. Và tiếp theo thì chúng ta nhớ cho tôi là đoạn này nhé. Anh em nhấn OR này. OR là tôi sẽ xuất đến tầm này nhé. OR nhé. Nhớ cho tôi OR này. OR đến cái đoạn cuối này. Thanh trắng ở đâu vị trí đấy thì tôi kéo hẳn đến cuối cùng đúng không? Tôi nhấn OR thì nó sẽ bôi đen cái đoạn sau này. Và nó sẽ giữ trắng toàn bộ cái đoạn này không? Sau đó nó xuất ra nhé. Anh em xuất cho tôi. Tụi như là bán content. Cái này chưa xong nhé. Cái này anh em nhớ cho tôi là chưa xong nhé. Đó. Và bây giờ chúng ta trở ra Gemini nhé. Trước khi trở ra Gemini thì anh chị em nhớ cho tôi là anh chị em copy toàn bộ cái Master Prompt này nhé. Cái Master Prompt thì anh em xem cho tôi trong cái bài Master Prompt nhé. Cái này tôi sẽ đặt dựa theo cái ý tưởng để sản xuất video bán content để chúng ta làm ra. Đấy anh em copy toàn bộ từ cái Master Prompt đến cuối cùng nhé. Sau đó thì anh em vào cho tôi là cái Gemini này. Google Gemini thì anh em tải video lên thì nó phân tích nó sẽ dễ hơn con ChatGPT nhé. ChatGPT nhiều lúc ngố lắm. Anh em gửi này. Anh em gửi cái Master Prompt này cho Gemini ghi nhớ trước. Sau đó thì gì ạ? Chúng ta sẽ tải video lên. Đây. Tải video bán content lên. Đây là một trong những cái bước mà anh chị tải video tầm 8 phút, 10 phút lên nó phân tích cho anh chị. Những cái câu mà hay luôn Làm ra tiếng Anh, tiếng Việt luôn Cho chúng ta không cần phải ngồi, chúng ta ngồi suy nghĩ Anh em suy nghĩ đoạn này chúng ta nên viết gì đúng không? Phụ đề là gì? Một là chúng ta sẽ viết phụ đề Hai chúng ta sẽ chèn luôn Chèn trực tiếp vào video luôn Có quyền được bình phẩm Thì nó sẽ sử dụng trong cái luật là Fair Use của YouTube Sau khi gửi là video 1 phút 2 giây lên nhá Thì anh em nhìn này Nó sẽ ra cho anh em như thế này Thì ở đây nhé, anh em ghi nhớ cho tôi nè. Đây nó sẽ ra những cảnh trên text này. Ví dụ như từ 00 đến 03 giây đúng không? Thì chúng ta nên chèn cái text bằng tiếng Anh gì? Và ý nghĩa của cái text bằng tiếng Anh đối với người không biết tiếng Anh nhé. Khi bạn lên đồ đi tiệc nhưng vũ trụ đưa đẩy đi phụ hồ. Đó, các bạn thấy không? Đấy nhé, copy cho tôi toàn bộ cái này. Một là chúng ta sẽ phụ đề khi đăng tải. Hai là chúng ta sẽ làm theo luôn như thế này cho tôi. 0 0 đến 03 0 0 thêm văn bản 0 0 đến 03 tầm 3 giây dán vào kéo cỡ chữ em có thể chia đôi đoạn rồi Anh em có thể chọn một cái phông chữ nhé, nhìn cho nó rõ tí. Tôi sẽ chọn một cái chữ nhìn nó thực tế hơn. Cái này làm cho người lớn xem nên chúng ta để những cái chữ mà phông chữ là nó dễ hiểu. Anh chị em nhé, ví dụ như tôi sẽ để phông chữ này và tôi sẽ để một cái màu ví dụ như màu vàng màu trắng được. Thần thiết lắm vì anh em chọn bóng bóng như này rồi. M này. Hoặc là anh em tắt đi này. Chọn phông chữ này. Sau đó thì anh em kéo xuống dưới anh em chọn phông nền nhé. Tôi sẽ để là độ mờ của phông nền này tầm bằng này thôi. Để cho người ta dễ đọc. 00 đến 03 này. 3 giây nhé. Giờ phút đến giây này. 00 đến 03. Nghĩa là 3 giây nhé. 03 đến 06 này. 03, 06 Anh em cứ làm như thế này cho tôi nhé. 0.6 Cuối cùng là gì ạ? Một ngày đi làm hết sức bình thường. Anh em có thể chèn theo đúng số giây cho tôi cũng được nhé. Còn anh em sẽ làm như thế này cho tôi. Ok. Ở đây sau khi chúng ta đã có cái toàn bộ video thôi như thế này nhé. thì chúng ta sẽ đi tạo nhạc Suno ở đây có cái prompt về để tạo nhạc nền Suno anh em copy đây copy Suno AI này copy rồi sau đó vào cho tôi Suno AI thì đầu tiên là cái phần đơn giản anh em dán vào cho tôi cho này đơn giản chúng ta đợi nó tạo nhạc nền nhanh em nhé đoạn này thì tôi sẽ tua cho nhanh sau khi nó đã tạo ra thì chúng ta sẽ tải cái nhạc này về nhé anh em nhấn download cho tôi Thường thì con Suno nó sẽ tạo ra cho anh chị em 2 bản nhé. Chúng ta có thể dùng cho cái video này và đoạn sau. Ví dụ như video anh chị 8 phút thì anh chị làm nhân lên, tải xuống nhé. Tải xuống, chỗ ra thêm cho tôi nhạc nền. Chúng ta nhấn cho tôi là chuẩn hóa âm lượng nhé. Chuẩn hóa cho nhạc nó vừa phải video. video bây giờ anh chị có thể thêm những cái hình ảnh của anh chị hình ảnh kênh ví dụ như tôi sẽ thêm một cái hình ảnh bất kỳ và đây ví dụ như tôi sẽ lấy một cái hình ảnh của nhân vật này luôn Adam Tôi nhấn Tải về. New in ảnh này. Download này. Bây giờ tôi sẽ thêm hình ảnh nhân vật này vào. Nếu mà anh chị muốn làm hình ảnh của anh chị dạng hình tròn thì anh chị chọn ra mặt nạ. Thêm mặt nạ và thêm hình tròn. Kéo dài. Làm sao anh chị thêm cho tôi vài cái chi tiết nó có cái yếu tố mà mình edit nhé. Và tiếp theo ví dụ như là anh chị thêm với tôi những cái hiệu ứng ở trong cái phần âm thanh này nó sẽ có những cái hiệu ứng âm thanh này. Nhấn hiệu ứng này. Ví dụ như những tiếng hiệu ứng này. Tôi sẽ tìm những tràng cười này. Tôi tìm những cái hiệu ứng âm thanh này. Mình anh em được thêm cho tôi những cái hiệu ứng khác Ví dụ như mỗi đoạn anh em thêm cho tôi một ít Hoặc là anh chị em có thể lấy trực tiếp ở trên cái trang này nha Đây là một cái trang hiệu ứng âm thanh rất là nhiều. Anh chị em có thể tải ở đây về nhé. Ừ rồi Ừ Trời ơi Cú tôi Nói chung là nó rất nhiều Những cái Hiệu ứng âm thanh ở trên cái website này Anh em có thể tìm Những cái trò đùa chính trị Âm nhạc phim trẻ ảnh chó chơi đều được nhé anh chị em có thể thêm những cái bộ lọc vào tự nhiên là tôi sẽ lấy một cái bộ lọc là 4K đi Thêm cho tôi cho nó khác đi. Thêm cho tôi những cái bộ lọc vào. Và bây giờ là chúng ta sẽ thêm những cái phần chuyển cảnh để cho nó tự nhiên hơn thì anh em nhấn cho tôi phần chuyển tiếp. Ví dụ như tôi sẽ lựa chọn một cái phần chuyển tiếp như là M đi, trượt góc. Đó, trượt góc. Tôi muốn cho tất cả thì anh em nhấn tất cả được nhé. Còn là anh em có thể thêm bằng tay. Đó là đoạn nào mà anh em thấy không hợp ý. Anh em có thể thêm như này. Đó, thêm 1 giờ. Đó là 1 cái video về phần video nha anh em nhé. Sau đó thì anh em xuất ra. Xuất này. Và bây giờ là chúng ta sẽ đến cái phần là phần thumbnail nha. Đối với phần thumbnail thì như lúc nãy tôi nói anh em là ví dụ như 1 cái kênh như thế này đi. Thumbnail nó cực kỳ cơ bản. Thì chúng ta sẽ lấy 2 cái hình ở trong cái video và chúng ta sẽ tạo ra luôn. Trường hợp thì chúng ta sẽ tạo trên Picsart nhé. Đây là trang của Picsart. Anh em là quen thì chúng ta có thể sử dụng Canva nhé. Thì trong phần Picsart này thì anh em nhấn cho tôi bắt đầu thiết kế mới này. Nhấn thiết kế. Ở đây thì lúc nãy tôi đã tải cái hình Adam Rose này ở trên cái gì ạ? Ở trên cái Pinterest rồi nha anh em nhé. Tôi sẽ lấy luôn hình ảnh đấy. Và tôi sẽ được chọn tỷ lệ là 1920x1080 nhé. Nhớ cho tôi là tất cả những cái hình thumbnail là phải để kích cỡ 1920x1080 nhé. Tiếp theo là tôi sẽ lấy một trong số hai cái hình. Ví dụ như tôi sẽ tải cái hình này. Tôi cho video này vào đây. Nhớ này đi. Và tôi sẽ thêm một hình này vào đây. Tôi sẽ cho hai cái này to ra một tí. Để tí tôi chụp ảnh thêm một cái hình ảnh Adam Rose vào đây cho hai video đè đến nhau nhé. nó có nhân vật người nổi tiếng rồi chúng ta sẽ đứng trên vai người khổng lồ luôn anh em kéo đúng cái tỷ lệ này ví dụ như tôi sẽ cho to ra tôi chụp cho nó rõ rồi rồi chụp bằng này Ok và bây giờ tôi sẽ dán vào đây Chụp màn hình lại nhé Anh em có thể tùy cơ ứng biến để tạo ra những hình ảnh thumbnail cho chúng ta nhé Chúng ta có thể thêm lựa chọn của mình Tải lên Tải cái ảnh Adam Rose này Có những cái ảnh thumbnail này nó cực kỳ đơn giản. Tại vì nó có ảnh nhân vật người nổi tiếng rồi. chúng ta có thể thêm những cái nhãn dán, ví dụ như vòng tròn đỏ này, vòng tròn đỏ, trong này rất là nhiều, chúng ta muốn khoanh vùng như thế nào, khoanh vùng để cái thumbnail của chúng ta nổi bật như thế nào đó, tụi tôi khoanh cái này đi, và mũi tên đỏ, mũi tên đỏ, ở phần sticker đấy, rất nhiều cái mũi tên đỏ, các thứ cho anh em, để áp dụng, Để sản xuất vào cái thumbnail của chúng ta. Chúng ta sẽ cho một cái điểm nhấn vào. Còn phần tiêu đề thì anh em nên viết ví dụ như là một trong khoảnh khắc hài hước của cô gái xây dựng chuyển sang tiếng Anh hoặc bảo ChatGPT viết cho. Sau đó thì trong cái tiêu đề đấy có nhân vật này nhé. Là được nhanh nhé. Đối với phần Adam Rose thì anh em nên nhớ cho tôi là anh em có thể tìm nhé. Tìm ở trên các nền tảng Ví dụ như đây là giao diện của YouTube, đây là cái từ khóa Adam Rose, tôi sẽ tìm bằng cách là mở hồ sơ khách nhé, anh em tìm cho tôi là YouTube, nói chung là chúng ta sẽ tham khảo được những cái nguồn như thế, đây là cái cách mà tôi luôn tìm, Adam Rose, anh em tìm bộ lọc, video, ví dụ như là tháng này đi, tuần này đi, mức độ phổ biến, nói chung là rất nhiều người làm nhé, anh em cứ kết hợp vào cái ảnh thumbnail về gái xinh, anh em nhìn học 6 ngày trước này, 4 ngày trước là 5 ngày trước là 5 ngày trước này, 5 ngày trước này, 7 ngày trước này. Hầu như là tất cả những cái nguồn liên quan đến Adam Rose thì anh em tổng hợp vào làm bán content rất là nhiều. Cái nguồn này tôi nói thật với anh em là để sản xuất ra toàn bộ cái quy trình tôi đã làm từ lúc nãy đến giờ ấy. Cái anh em biết là sản xuất cái nguồn này rất là nhiều. Ok, chào tạm biệt. Anh chị em học viên",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 11.07,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:11,070",
+      "text": "Chào anh chị em học viên, hôm nay chúng ta đến với một chủ đề là bán content. Bán content kết hợp với nhân vật nổi tiếng trên nền tảng YouTube. Nếu mà các bạn chưa tìm hiểu thì anh"
+    },
+    {
+      "id": 2,
+      "start": 11.07,
+      "end": 22.14,
+      "start_time": "00:00:11,070",
+      "end_time": "00:00:22,140",
+      "text": "em có thể tìm hiểu đến nhân vật Adam Rose, một nhân vật khá là nổi tiếng trên nền tảng YouTube. Nhân vật này có những video phổ biến rất là nhiều view, kể cả video dài, video ngắn."
+    },
+    {
+      "id": 3,
+      "start": 22.14,
+      "end": 31.2,
+      "start_time": "00:00:22,140",
+      "end_time": "00:00:31,200",
+      "text": "Anh này thường hay sử dụng những video có sẵn và giao tác video mình là một đầu bếp hoặc là một kỹ sư hoặc công an."
+    },
+    {
+      "id": 4,
+      "start": 31.5,
+      "end": 39.26,
+      "start_time": "00:00:31,500",
+      "end_time": "00:00:39,260",
+      "text": "Đại loại là như thế. Nhưng để chúng ta sẽ lấy sử dụng nhân vật này để làm cho kênh YouTube của chúng ta thì chúng ta sẽ kết hợp như thế nào."
+    },
+    {
+      "id": 5,
+      "start": 39.4,
+      "end": 44.42,
+      "start_time": "00:00:39,400",
+      "end_time": "00:00:44,420",
+      "text": "Để cho nó hoàn chỉnh thì ở đây tôi đã có một cái tài liệu. Tài liệu này thì tôi sẽ ghi ở trong phần mô tả."
+    },
+    {
+      "id": 6,
+      "start": 44.42,
+      "end": 48.64,
+      "start_time": "00:00:44,420",
+      "end_time": "00:00:48,640",
+      "text": "Ở đây chúng ta sẽ có 2 kênh YouTube làm dạng bán content để anh em tham khảo."
+    },
+    {
+      "id": 7,
+      "start": 48.64,
+      "end": 56.7,
+      "start_time": "00:00:48,640",
+      "end_time": "00:00:56,700",
+      "text": "Ví dụ như kênh này 533 video nhé. Cũ nhất là 1 năm trước nhưng mà bắt đầu sản xuất video về nhân vật này là 1 năm trước và có những"
+    },
+    {
+      "id": 8,
+      "start": 56.7,
+      "end": 65.06,
+      "start_time": "00:00:56,700",
+      "end_time": "00:01:05,060",
+      "text": "cái video viral lên tới 2 triệu view. Đối với video dài 1 tiếng mà 2 triệu view như thế này thì cái lượt RPM cực cao nha anh chị em nhé."
+    },
+    {
+      "id": 9,
+      "start": 65.06,
+      "end": 67.82,
+      "start_time": "00:01:05,060",
+      "end_time": "00:01:07,820",
+      "text": "Ở đây chúng ta có thể tìm được rất nhiều nguồn"
+    },
+    {
+      "id": 10,
+      "start": 67.82,
+      "end": 69.22,
+      "start_time": "00:01:07,820",
+      "end_time": "00:01:09,220",
+      "text": "22h trước vẫn đăng"
+    },
+    {
+      "id": 11,
+      "start": 69.22,
+      "end": 71.42,
+      "start_time": "00:01:09,220",
+      "end_time": "00:01:11,420",
+      "text": "Ở đây tôi để 1-2 kênh tham khảo"
+    },
+    {
+      "id": 12,
+      "start": 71.42,
+      "end": 73.1,
+      "start_time": "00:01:11,420",
+      "end_time": "00:01:13,100",
+      "text": "và những kênh video như thế này"
+    },
+    {
+      "id": 13,
+      "start": 73.1,
+      "end": 74.36,
+      "start_time": "00:01:13,100",
+      "end_time": "00:01:14,360",
+      "text": "chúng ta chỉ cần 1 kênh thôi"
+    },
+    {
+      "id": 14,
+      "start": 74.36,
+      "end": 75.96,
+      "start_time": "00:01:14,360",
+      "end_time": "00:01:15,960",
+      "text": "Anh chị có thể làm 5-10 kênh"
+    },
+    {
+      "id": 15,
+      "start": 75.96,
+      "end": 77.5,
+      "start_time": "00:01:15,960",
+      "end_time": "00:01:17,500",
+      "text": "20-30 kênh đều được nhé"
+    },
+    {
+      "id": 16,
+      "start": 77.5,
+      "end": 78.92,
+      "start_time": "00:01:17,500",
+      "end_time": "00:01:18,920",
+      "text": "Anh chị làm song song"
+    },
+    {
+      "id": 17,
+      "start": 78.92,
+      "end": 81.86,
+      "start_time": "00:01:18,920",
+      "end_time": "00:01:21,860",
+      "text": "thì cái tỷ lệ mà nó tắt kiếm tiền dạng này"
+    },
+    {
+      "id": 18,
+      "start": 81.86,
+      "end": 82.8,
+      "start_time": "00:01:21,860",
+      "end_time": "00:01:22,800",
+      "text": "thì đương nhiên rồi"
+    },
+    {
+      "id": 19,
+      "start": 82.8,
+      "end": 84.5,
+      "start_time": "00:01:22,800",
+      "end_time": "00:01:24,500",
+      "text": "nhưng mà RPM cực kỳ cao"
+    },
+    {
+      "id": 20,
+      "start": 84.5,
+      "end": 85.06,
+      "start_time": "00:01:24,500",
+      "end_time": "00:01:25,060",
+      "text": "ví dụ như"
+    },
+    {
+      "id": 21,
+      "start": 85.06,
+      "end": 89.42,
+      "start_time": "00:01:25,060",
+      "end_time": "00:01:29,420",
+      "text": "có những kênh chúng ta chỉ cần ăn trong vòng tầm 3-4 tháng 5 tháng"
+    },
+    {
+      "id": 22,
+      "start": 89.42,
+      "end": 90.94,
+      "start_time": "00:01:29,420",
+      "end_time": "00:01:30,940",
+      "text": "là ok nhanh chị em nhé"
+    },
+    {
+      "id": 23,
+      "start": 90.94,
+      "end": 92.86,
+      "start_time": "00:01:30,940",
+      "end_time": "00:01:32,860",
+      "text": "và những nguồn này sản xuất cực kỳ dễ"
+    },
+    {
+      "id": 24,
+      "start": 92.86,
+      "end": 96.281,
+      "start_time": "00:01:32,860",
+      "end_time": "00:01:36,281",
+      "text": "ở đây tôi sẽ có những công cụ sản xuất video như sau"
+    },
+    {
+      "id": 25,
+      "start": 96.281,
+      "end": 103.381,
+      "start_time": "00:01:36,281",
+      "end_time": "00:01:43,381",
+      "text": "Picsart thì chúng ta để tạo thumbnail, CapCut để edit video, Gemini thì chúng ta để phân tích và tự động tải ra cho chúng ta."
+    },
+    {
+      "id": 26,
+      "start": 103.581,
+      "end": 109.121,
+      "start_time": "00:01:43,581",
+      "end_time": "00:01:49,121",
+      "text": "Và tôi cần một cái nhạc nền nữa là nhạc nền Suno AI. Đợt này làm bán content thì khó hơn đợt trước nhiều."
+    },
+    {
+      "id": 27,
+      "start": 109.281,
+      "end": 112.58,
+      "start_time": "00:01:49,281",
+      "end_time": "00:01:52,580",
+      "text": "Nên là anh chị em nếu mà làm thì anh chị em sẽ sản xuất như thế nào."
+    },
+    {
+      "id": 28,
+      "start": 112.58,
+      "end": 123.22,
+      "start_time": "00:01:52,580",
+      "end_time": "00:02:03,220",
+      "text": "Đến vấn đề tìm nguồn thì chúng ta sẽ tìm nguồn ở trên Douyin, TikTok, YouTube và Facebook cũng được nhé. Anh chị em lấy nguồn ở đâu cũng được. Nhưng mà lựa chọn nguồn như thế nào để cho"
+    },
+    {
+      "id": 29,
+      "start": 123.22,
+      "end": 132.65,
+      "start_time": "00:02:03,220",
+      "end_time": "00:02:12,650",
+      "text": "nó hiệu quả? Thì đối với cánh đàn ông mà thường thì sẽ là gái xinh. Nhưng mà gái xinh sẽ kết hợp với gì ạ? Gái xinh sẽ kết hợp với võ thuật xây dựng hoặc nội trợ và"
+    },
+    {
+      "id": 30,
+      "start": 132.65,
+      "end": 141.96,
+      "start_time": "00:02:12,650",
+      "end_time": "00:02:21,960",
+      "text": "rất nhiều cái khác. Ví dụ như anh em hay xem cô giáo nóng bỏng. Đấy. Thì anh em có thể là lấy những cái nguồn đấy để anh em để tạo ra những cái video bán content."
+    },
+    {
+      "id": 31,
+      "start": 142.0,
+      "end": 151.9,
+      "start_time": "00:02:22,000",
+      "end_time": "00:02:31,900",
+      "text": "Ở đây thì tôi đã chuẩn bị 1 cái Master Prompt có sẵn. Cái này thì tôi đã yêu cầu con Gemini ghi nhớ và phân tích rồi. Thì chúng ta sẽ làm như nào? Chúng ta sẽ đi từng bước như sau."
+    },
+    {
+      "id": 32,
+      "start": 151.9,
+      "end": 162.33,
+      "start_time": "00:02:31,900",
+      "end_time": "00:02:42,330",
+      "text": "Đầu tiên, chúng ta sẽ phải đi tìm nguồn trước. Anh chị em hãy nhớ cho tôi là anh chị em tìm. Ở đây tôi sẽ sử dụng là cái tiếng Việt chuyển sang tiếng Trung hoặc anh em chọn tiếng Việt chuyển"
+    },
+    {
+      "id": 33,
+      "start": 162.33,
+      "end": 171.941,
+      "start_time": "00:02:42,330",
+      "end_time": "00:02:51,941",
+      "text": "sang tiếng Anh. Nếu mà anh em tìm ở trên nền tảng YouTube hoặc là TikTok của Việt Nam để tìm ra những cái nguồn như thế. Ở đây tôi sẽ tìm ví dụ như gái xinh. Kết hợp với gì ạ?"
+    },
+    {
+      "id": 34,
+      "start": 171.961,
+      "end": 173.641,
+      "start_time": "00:02:51,961",
+      "end_time": "00:02:53,641",
+      "text": "Kết hợp với xây dựng"
+    },
+    {
+      "id": 35,
+      "start": 173.641,
+      "end": 178.101,
+      "start_time": "00:02:53,641",
+      "end_time": "00:02:58,101",
+      "text": "Và tôi sẽ lựa chọn tiếng Trung phồn thể nhé"
+    },
+    {
+      "id": 36,
+      "start": 178.101,
+      "end": 179.341,
+      "start_time": "00:02:58,101",
+      "end_time": "00:02:59,341",
+      "text": "Phồn thể này"
+    },
+    {
+      "id": 37,
+      "start": 179.45,
+      "end": 186.55,
+      "start_time": "00:02:59,450",
+      "end_time": "00:03:06,550",
+      "text": "Tiếng Trung phồn thể nhé, tôi copy tiếng Trung phồn thể này là gái xinh xây dựng và tôi dịch từ tiếng Việt sang tiếng Trung nhé, anh chị em nhớ cho tôi nhé."
+    },
+    {
+      "id": 38,
+      "start": 186.65,
+      "end": 193.21,
+      "start_time": "00:03:06,650",
+      "end_time": "00:03:13,210",
+      "text": "Và tôi sẽ lựa chọn Douyin nhé anh em nhé, Douyin, Douyin thì nó là nền tảng của Trung Quốc thì chúng ta phải dịch từ Trung Quốc."
+    },
+    {
+      "id": 39,
+      "start": 193.21,
+      "end": 198.91,
+      "start_time": "00:03:13,210",
+      "end_time": "00:03:18,910",
+      "text": "Còn TikTok ở Việt Nam thì anh em có thể tìm từ tiếng Anh, nó cũng ra được những cái video nước ngoài nhé anh em nhé."
+    },
+    {
+      "id": 40,
+      "start": 199.03,
+      "end": 204.93,
+      "start_time": "00:03:19,030",
+      "end_time": "00:03:24,930",
+      "text": "Ở đây thì tôi sẽ dán cái từ gái xinh xây dựng này, anh em có thể xem được những cái nguồn như thế này."
+    },
+    {
+      "id": 41,
+      "start": 204.93,
+      "end": 210.93,
+      "start_time": "00:03:24,930",
+      "end_time": "00:03:30,930",
+      "text": "Nó rất nhiều nguồn nếu mà chưa hiểu ý lắm thì anh em có thể tìm cho tôi là cô gái xây dựng."
+    },
+    {
+      "id": 42,
+      "start": 211.93,
+      "end": 216.93,
+      "start_time": "00:03:31,930",
+      "end_time": "00:03:36,930",
+      "text": "Cô gái xây dựng thì nó sẽ chi tiết hơn. Gái xinh nhiều lúc nó kiểu là nhà xinh."
+    },
+    {
+      "id": 43,
+      "start": 216.93,
+      "end": 219.93,
+      "start_time": "00:03:36,930",
+      "end_time": "00:03:39,930",
+      "text": "Ok, anh chị em có thể nhìn thấy ở đây rất nhiều nguồn."
+    },
+    {
+      "id": 44,
+      "start": 219.93,
+      "end": 223.93,
+      "start_time": "00:03:39,930",
+      "end_time": "00:03:43,930",
+      "text": "Đấy, những cái nguồn như này tôi bảo nha."
+    },
+    {
+      "id": 45,
+      "start": 223.93,
+      "end": 227.93,
+      "start_time": "00:03:43,930",
+      "end_time": "00:03:47,930",
+      "text": "Nếu mà các ông là người đàn ông thì các ông có xem những video như này không?"
+    },
+    {
+      "id": 46,
+      "start": 227.93,
+      "end": 230.93,
+      "start_time": "00:03:47,930",
+      "end_time": "00:03:50,930",
+      "text": "Có chứ, tôi cũng có. Không những là các ông."
+    },
+    {
+      "id": 47,
+      "start": 230.93,
+      "end": 231.93,
+      "start_time": "00:03:50,930",
+      "end_time": "00:03:51,930",
+      "text": "Đây rất là nhiều nguồn nha."
+    },
+    {
+      "id": 48,
+      "start": 231.93,
+      "end": 245.49,
+      "start_time": "00:03:51,930",
+      "end_time": "00:04:05,490",
+      "text": "Anh em hãy bắt đầu tìm cho tôi và tải về. Ở đây ví dụ như là tôi nhấn vào bất kỳ một cái video này nhé. Vẫn như là cách thức tải ở các nền tảng thôi. Đây tôi nhấn vào video này. Tôi nhấn sao chép này."
+    },
+    {
+      "id": 49,
+      "start": 246.49,
+      "end": 253.47,
+      "start_time": "00:04:06,490",
+      "end_time": "00:04:13,470",
+      "text": "Biết kênh này nó có nhiều không gì. Anh em đăng nhập hộ tôi vào Cốc Cốc nhé. Thì ở đây là anh em copy cho tôi cái video này."
+    },
+    {
+      "id": 50,
+      "start": 253.47,
+      "end": 259.39,
+      "start_time": "00:04:13,470",
+      "end_time": "00:04:19,390",
+      "text": "Sau đó thì anh em tải về"
+    },
+    {
+      "id": 51,
+      "start": 259.39,
+      "end": 261.47,
+      "start_time": "00:04:19,390",
+      "end_time": "00:04:21,470",
+      "text": "Đấy nha"
+    },
+    {
+      "id": 52,
+      "start": 261.47,
+      "end": 262.59,
+      "start_time": "00:04:21,470",
+      "end_time": "00:04:22,590",
+      "text": "Anh em x cái này ra này"
+    },
+    {
+      "id": 53,
+      "start": 262.59,
+      "end": 265.75,
+      "start_time": "00:04:22,590",
+      "end_time": "00:04:25,750",
+      "text": "Là đăng nhập vào Cốc Cốc thì anh em dán những link vào"
+    },
+    {
+      "id": 54,
+      "start": 265.75,
+      "end": 266.69,
+      "start_time": "00:04:25,750",
+      "end_time": "00:04:26,690",
+      "text": "Thì nó sẽ ra"
+    },
+    {
+      "id": 55,
+      "start": 266.69,
+      "end": 268.67,
+      "start_time": "00:04:26,690",
+      "end_time": "00:04:28,670",
+      "text": "Đó tải xuống này"
+    },
+    {
+      "id": 56,
+      "start": 268.67,
+      "end": 272.27,
+      "start_time": "00:04:28,670",
+      "end_time": "00:04:32,270",
+      "text": "Nó sẽ đề xuất ra rất nhiều video liên quan đến gái xinh như thế này"
+    },
+    {
+      "id": 57,
+      "start": 273.47,
+      "end": 275.47,
+      "start_time": "00:04:33,470",
+      "end_time": "00:04:35,470",
+      "text": "Tôi nhấn vào video tiếp"
+    },
+    {
+      "id": 58,
+      "start": 275.47,
+      "end": 276.47,
+      "start_time": "00:04:35,470",
+      "end_time": "00:04:36,470",
+      "text": "Đó"
+    },
+    {
+      "id": 59,
+      "start": 276.47,
+      "end": 276.99,
+      "start_time": "00:04:36,470",
+      "end_time": "00:04:36,990",
+      "text": "Tải xuống"
+    },
+    {
+      "id": 60,
+      "start": 276.99,
+      "end": 278.561,
+      "start_time": "00:04:36,990",
+      "end_time": "00:04:38,561",
+      "text": "Ở đây"
+    },
+    {
+      "id": 61,
+      "start": 278.561,
+      "end": 284.181,
+      "start_time": "00:04:38,561",
+      "end_time": "00:04:44,181",
+      "text": "Ở đây thì anh em nhấn trực tiếp vào kênh nhé. Nhấn vào kênh của họ xem là có nhiều video không."
+    },
+    {
+      "id": 62,
+      "start": 285.181,
+      "end": 294.34,
+      "start_time": "00:04:45,181",
+      "end_time": "00:04:54,340",
+      "text": "Ồ, 100.000 follow à. Ủa, nhiều đấy. Ủa, những nguồn này thì anh em làm thoải mái. Chúng ta sẽ lấy tầm..."
+    },
+    {
+      "id": 63,
+      "start": 294.34,
+      "end": 303.11,
+      "start_time": "00:04:54,340",
+      "end_time": "00:05:03,110",
+      "text": "Bình thường thì tôi sẽ làm video tầm trên 8 phút nha anh em nhé. Thì anh em lấy bao giờ cho đủ số cạnh 8 phút thôi. Còn lại ví dụ như tôi sẽ lấy một số cái video trên này."
+    },
+    {
+      "id": 64,
+      "start": 303.11,
+      "end": 311.73,
+      "start_time": "00:05:03,110",
+      "end_time": "00:05:11,730",
+      "text": "Anh em nhớ ví dụ như nếu mà anh em làm chi tiết để cái nguồn này anh em nêu lại thì anh em sẽ nhấn like vào nhé. Để sau mình biết là mình đã lấy video này rồi. Để tránh"
+    },
+    {
+      "id": 65,
+      "start": 311.73,
+      "end": 320.501,
+      "start_time": "00:05:11,730",
+      "end_time": "00:05:20,501",
+      "text": "trường hợp trên một kênh anh em làm đi lấy đi lấy lại lấy rất nhiều lần. Ví dụ như anh em lấy cái video này rồi đúng không? Thì anh em nhớ cho tôi là anh em nhấn like vào."
+    },
+    {
+      "id": 66,
+      "start": 320.501,
+      "end": 328.241,
+      "start_time": "00:05:20,501",
+      "end_time": "00:05:28,241",
+      "text": "Anh em đăng nhập vào tài khoản Douyin thì chúng ta có thể tự động tải ở trên nền tảng Việt Nam. Anh em tự động tải được. Tải xuống."
+    },
+    {
+      "id": 67,
+      "start": 328.241,
+      "end": 340.041,
+      "start_time": "00:05:28,241",
+      "end_time": "00:05:40,041",
+      "text": "Giờ sẽ trở về cái Douyin, giao diện của Douyin. Sồi ôi như thế này có phải thương không? Như thế này mà tôi bảo các ông là nếu mà là tôi là tôi sẽ đi vào luôn này."
+    },
+    {
+      "id": 68,
+      "start": 340.041,
+      "end": 345.42,
+      "start_time": "00:05:40,041",
+      "end_time": "00:05:45,420",
+      "text": "Bê gạch cho em luôn này. Nhớ cho tôi là đăng nhập vào Cốc Cốc này thì chúng ta có thể tải được video về nhé."
+    },
+    {
+      "id": 69,
+      "start": 345.42,
+      "end": 355.36,
+      "start_time": "00:05:45,420",
+      "end_time": "00:05:55,360",
+      "text": "Còn không đăng nhập vào Cốc Cốc thì không được nha. Nguồn nó nhiều lắm không rồi. Tôi chỉ lấy vài video để demo cho các ông cách làm nha. Chứ không thể nào tôi ngồi tôi làm nhiều được. Nếu mà làm nhiều"
+    },
+    {
+      "id": 70,
+      "start": 355.36,
+      "end": 364.101,
+      "start_time": "00:05:55,360",
+      "end_time": "00:06:04,101",
+      "text": "thì nó cũng được thôi. Nhưng mà anh em nó bị dễ chán thì chúng ta sẽ làm vài video thôi. Còn lại nếu mà anh em muốn làm chi tiết hơn thì anh em nên lấy cho tôi tất cả là video trên."
+    },
+    {
+      "id": 71,
+      "start": 364.4,
+      "end": 372.6,
+      "start_time": "00:06:04,400",
+      "end_time": "00:06:12,600",
+      "text": "Trên 8 phút nhé, lấy tất cả các video cộng lại là trên 8 phút. Và ở đây thì chúng ta sẽ tải thêm cái video về nhân vật Adam Rose này nhé."
+    },
+    {
+      "id": 72,
+      "start": 372.8,
+      "end": 381.18,
+      "start_time": "00:06:12,800",
+      "end_time": "00:06:21,180",
+      "text": "Anh em nhấn hộ tôi phần Shorts này, phần Shorts nhé, đúng cái kênh của Adam Rose này nhé. Anh em nhấn phổ biến này, chúng ta sẽ lấy những cái video về nhân vật này."
+    },
+    {
+      "id": 73,
+      "start": 383.56,
+      "end": 391.02,
+      "start_time": "00:06:23,560",
+      "end_time": "00:06:31,020",
+      "text": "Kênh chính của họ cũng làm như thế này. Chúng ta tải một video của YouTube của anh chàng này về thôi, Adam Rose."
+    },
+    {
+      "id": 74,
+      "start": 391.02,
+      "end": 398.41,
+      "start_time": "00:06:31,020",
+      "end_time": "00:06:38,410",
+      "text": "Sự dụng nha, Suno với Gemini, sử dụng như thế nào để cho nó hiệu quả thì chúng ta sẽ sử dụng xong, sau khi chúng ta ghép video xong, đã tải xong như thế này"
+    },
+    {
+      "id": 75,
+      "start": 398.41,
+      "end": 405.62,
+      "start_time": "00:06:38,410",
+      "end_time": "00:06:45,620",
+      "text": "rồi thì bước tiếp theo chúng ta sẽ vào CapCut nè, anh chị em nhớ cho tôi là anh em vào CapCut nha, đấy giao diện của CapCut anh em nhấn vào tạo dự án nha."
+    },
+    {
+      "id": 76,
+      "start": 407.0,
+      "end": 418.74,
+      "start_time": "00:06:47,000",
+      "end_time": "00:06:58,740",
+      "text": "Luôn luôn nhớ cho tôi là thanh trắng ở đâu thì vị trí ở đấy, câu nói mà tôi đã liên tục nói với anh em, ở đây là tôi đã lấy rất nhiều nguồn như thế này, 17 giây, 13 giây có này."
+    },
+    {
+      "id": 77,
+      "start": 421.02,
+      "end": 427.26,
+      "start_time": "00:07:01,020",
+      "end_time": "00:07:07,260",
+      "text": "Tôi sẽ tắt nhạc đi."
+    },
+    {
+      "id": 78,
+      "start": 427.26,
+      "end": 436.2,
+      "start_time": "00:07:07,260",
+      "end_time": "00:07:16,200",
+      "text": "Ở đây tôi đang lấy 1, 2, 3, 4, 5, tầm 5 đến 5 đoạn nhé."
+    },
+    {
+      "id": 79,
+      "start": 436.2,
+      "end": 444.9,
+      "start_time": "00:07:16,200",
+      "end_time": "00:07:24,900",
+      "text": "nhé thì anh em nhớ cho tôi là 5 đoạn 1 phút là anh em lấy tầm tất cả video cộng lại tầm 8 phút 10 phút là ok nhé"
+    },
+    {
+      "id": 80,
+      "start": 444.9,
+      "end": 452.62,
+      "start_time": "00:07:24,900",
+      "end_time": "00:07:32,620",
+      "text": "thì đối với cái này thì chúng ta không để tỷ lệ khung hình như thế này thì ở đây thì anh em chọn cho tôi tỷ lệ là 16:9 nhé"
+    },
+    {
+      "id": 81,
+      "start": 452.781,
+      "end": 456.841,
+      "start_time": "00:07:32,781",
+      "end_time": "00:07:36,841",
+      "text": "Đó. Anh em nhớ cho tôi là khi anh em thêm video rồi thì anh em mới chọn được ở đây."
+    },
+    {
+      "id": 82,
+      "start": 456.841,
+      "end": 463.2,
+      "start_time": "00:07:36,841",
+      "end_time": "00:07:43,200",
+      "text": "Sau khi đã chọn như thế rồi thì anh em chọn tất cả video này. Đấy. Chọn nhé. Chọn tất cả này."
+    },
+    {
+      "id": 83,
+      "start": 463.2,
+      "end": 476.35,
+      "start_time": "00:07:43,200",
+      "end_time": "00:07:56,350",
+      "text": "Anh em nhớ cho tôi là phần video này, cơ bản này. Sau đó tỷ lệ anh em để cho tôi là 174 nhé. Ok. Anh em nhớ chưa? Tất cả các video nó sẽ trở sang là 174. Nếu mà anh em kéo tay thì"
+    },
+    {
+      "id": 84,
+      "start": 476.35,
+      "end": 483.875,
+      "start_time": "00:07:56,350",
+      "end_time": "00:08:03,875",
+      "text": "thường nó video này được, video kia không được đâu. Sau khi đã để kích cỡ 174 rồi thì chúng ta sẽ chọn"
+    },
+    {
+      "id": 85,
+      "start": 483.875,
+      "end": 491.401,
+      "start_time": "00:08:03,875",
+      "end_time": "00:08:11,401",
+      "text": "tất cả video này. Anh em sẽ chọn cho tôi phần nền nhé. Đây, kéo phần video cơ bản kéo thẳng xuống nhé."
+    },
+    {
+      "id": 86,
+      "start": 491.401,
+      "end": 498.121,
+      "start_time": "00:08:11,401",
+      "end_time": "00:08:18,121",
+      "text": "Đó, anh em chọn nền này, chọn mờ nhé. Đó, anh em chọn mờ như thế này là được nhé."
+    },
+    {
+      "id": 87,
+      "start": 502.181,
+      "end": 508.881,
+      "start_time": "00:08:22,181",
+      "end_time": "00:08:28,881",
+      "text": "Thì chúng ta sẽ có một cái video như này. Tiếp theo thì chúng ta sẽ thêm những cái cảnh của nhân vật Adam Rose kia."
+    },
+    {
+      "id": 88,
+      "start": 509.761,
+      "end": 514.581,
+      "start_time": "00:08:29,761",
+      "end_time": "00:08:34,581",
+      "text": "Đây, tôi sẽ cắt nhé. Để, đến cái đoạn này, cắt này. Đó."
+    },
+    {
+      "id": 89,
+      "start": 518.85,
+      "end": 526.45,
+      "start_time": "00:08:38,850",
+      "end_time": "00:08:46,450",
+      "text": "Cắt nhé. Cái này thì anh em làm chi tiết cho tôi thì nhé. Cắt này. Tôi chỉ lấy nhân"
+    },
+    {
+      "id": 90,
+      "start": 526.45,
+      "end": 534.05,
+      "start_time": "00:08:46,450",
+      "end_time": "00:08:54,050",
+      "text": "vật này thôi nhé. Chứ tôi không lấy cái đoạn trong video của họ. Tôi chỉ lấy mấy video, mấy đoạn"
+    },
+    {
+      "id": 91,
+      "start": 534.05,
+      "end": 547.57,
+      "start_time": "00:08:54,050",
+      "end_time": "00:09:07,570",
+      "text": "của Adam Rose này thôi. Và bây giờ là chúng ta sẽ tách cái âm thanh của Adam Rose này đi nhé. Tôi sẽ để ví dụ như tầm 2-3 đoạn đi thì tôi sẽ để kéo vào 1-2 lần."
+    },
+    {
+      "id": 92,
+      "start": 547.57,
+      "end": 553.77,
+      "start_time": "00:09:07,570",
+      "end_time": "00:09:13,770",
+      "text": "hoặc là anh em làm chi tiết hơn mỗi đoạn thì anh em thêm một lần cũng được. Đó, như thế này nhé."
+    },
+    {
+      "id": 93,
+      "start": 557.39,
+      "end": 564.01,
+      "start_time": "00:09:17,390",
+      "end_time": "00:09:24,010",
+      "text": "Chọn tất cả này. Vẫn chọn mờ nhé. Cái Adam Rose tôi vừa cho vào nên nó chưa mờ như thế đâu."
+    },
+    {
+      "id": 94,
+      "start": 564.33,
+      "end": 570.67,
+      "start_time": "00:09:24,330",
+      "end_time": "00:09:30,670",
+      "text": "Cái Adam Rose này anh em cũng có thể là cho lên 174 nhé. Nhưng mà tôi nghĩ là anh em để luôn như thế này cho tôi."
+    },
+    {
+      "id": 95,
+      "start": 571.01,
+      "end": 575.31,
+      "start_time": "00:09:31,010",
+      "end_time": "00:09:35,310",
+      "text": "Không cần phải là cho lên 174 đâu, tại vì nó nhìn thấy cả trực diện của nhân vật này luôn."
+    },
+    {
+      "id": 96,
+      "start": 575.31,
+      "end": 583.75,
+      "start_time": "00:09:35,310",
+      "end_time": "00:09:43,750",
+      "text": "Thì bây giờ tiếp theo đến cái phần nhạc bản quyền nhé. Anh em ghi nhớ cho tôi nè. Anh em nghe thấy không? Nó không"
+    },
+    {
+      "id": 97,
+      "start": 583.75,
+      "end": 592.19,
+      "start_time": "00:09:43,750",
+      "end_time": "00:09:52,190",
+      "text": "có nhạc nền. Nó chỉ có tiếng xúc cát thôi. Thì cái này thì chúng ta làm gì ạ? Chúng ta không tách nhạc nền nhé."
+    },
+    {
+      "id": 98,
+      "start": 592.19,
+      "end": 602.27,
+      "start_time": "00:09:52,190",
+      "end_time": "00:10:02,270",
+      "text": "cái này cái này rất nhiều ông không biết làm này công làm có view nhưng mà nó sẽ rất dễ tắt kiếm"
+    },
+    {
+      "id": 99,
+      "start": 612.19,
+      "end": 613.73,
+      "start_time": "00:10:12,190",
+      "end_time": "00:10:13,730",
+      "text": "Có gì ạ? Có nhạc nền nha anh em nha."
+    },
+    {
+      "id": 100,
+      "start": 614.27,
+      "end": 614.73,
+      "start_time": "00:10:14,270",
+      "end_time": "00:10:14,730",
+      "text": "Tắt đi nha."
+    },
+    {
+      "id": 101,
+      "start": 617.166,
+      "end": 618.166,
+      "start_time": "00:10:17,166",
+      "end_time": "00:10:18,166",
+      "text": "Đi nè."
+    },
+    {
+      "id": 102,
+      "start": 620.166,
+      "end": 622.166,
+      "start_time": "00:10:20,166",
+      "end_time": "00:10:22,166",
+      "text": "Đấy, tắt đi nè."
+    },
+    {
+      "id": 103,
+      "start": 625.166,
+      "end": 630.166,
+      "start_time": "00:10:25,166",
+      "end_time": "00:10:30,166",
+      "text": "Tắt hết đi nha. Nếu mà nó mà có cái, những cái như này thì chúng ta tắt đi."
+    },
+    {
+      "id": 104,
+      "start": 630.166,
+      "end": 632.166,
+      "start_time": "00:10:30,166",
+      "end_time": "00:10:32,166",
+      "text": "Âm thanh tắt này."
+    },
+    {
+      "id": 105,
+      "start": 636.17,
+      "end": 643.39,
+      "start_time": "00:10:36,170",
+      "end_time": "00:10:43,390",
+      "text": "Các ông chủ động tách cho tôi và copy cái Adam Rose này lên. Các ông có thể chèn qua những đoạn như thế"
+    },
+    {
+      "id": 106,
+      "start": 643.39,
+      "end": 650.61,
+      "start_time": "00:10:43,390",
+      "end_time": "00:10:50,610",
+      "text": "cũng được. Và tiếp theo thì chúng ta nhớ cho tôi là đoạn này nhé. Anh em nhấn OR này. OR là tôi"
+    },
+    {
+      "id": 107,
+      "start": 650.61,
+      "end": 657.758,
+      "start_time": "00:10:50,610",
+      "end_time": "00:10:57,758",
+      "text": "sẽ xuất đến tầm này nhé. OR nhé. Nhớ cho tôi OR này. OR đến cái đoạn cuối này. Thanh trắng ở đâu vị"
+    },
+    {
+      "id": 108,
+      "start": 657.758,
+      "end": 664.906,
+      "start_time": "00:10:57,758",
+      "end_time": "00:11:04,906",
+      "text": "trí đấy thì tôi kéo hẳn đến cuối cùng đúng không? Tôi nhấn OR thì nó sẽ bôi đen cái đoạn sau này."
+    },
+    {
+      "id": 109,
+      "start": 664.91,
+      "end": 677.18,
+      "start_time": "00:11:04,910",
+      "end_time": "00:11:17,180",
+      "text": "Và nó sẽ giữ trắng toàn bộ cái đoạn này không? Sau đó nó xuất ra nhé. Anh em xuất cho tôi. Tụi như là bán content. Cái này chưa xong nhé. Cái này anh em nhớ cho tôi là chưa xong nhé. Đó. Và bây"
+    },
+    {
+      "id": 110,
+      "start": 677.18,
+      "end": 690.526,
+      "start_time": "00:11:17,180",
+      "end_time": "00:11:30,526",
+      "text": "giờ chúng ta trở ra Gemini nhé. Trước khi trở ra Gemini thì anh chị em nhớ cho tôi là anh chị em copy toàn bộ cái Master Prompt này nhé. Cái Master Prompt thì anh em xem cho tôi trong cái bài Master Prompt nhé."
+    },
+    {
+      "id": 111,
+      "start": 690.526,
+      "end": 696.666,
+      "start_time": "00:11:30,526",
+      "end_time": "00:11:36,666",
+      "text": "Cái này tôi sẽ đặt dựa theo cái ý tưởng để sản xuất video bán content để chúng ta làm ra."
+    },
+    {
+      "id": 112,
+      "start": 697.006,
+      "end": 700.0,
+      "start_time": "00:11:37,006",
+      "end_time": "00:11:40,000",
+      "text": "Đấy anh em copy toàn bộ từ cái Master Prompt đến cuối cùng nhé."
+    },
+    {
+      "id": 113,
+      "start": 700.0,
+      "end": 703.006,
+      "start_time": "00:11:40,000",
+      "end_time": "00:11:43,006",
+      "text": "Sau đó thì anh em vào cho tôi là cái Gemini này."
+    },
+    {
+      "id": 114,
+      "start": 703.45,
+      "end": 710.41,
+      "start_time": "00:11:43,450",
+      "end_time": "00:11:50,410",
+      "text": "Google Gemini thì anh em tải video lên thì nó phân tích nó sẽ dễ hơn con ChatGPT nhé. ChatGPT nhiều lúc ngố lắm."
+    },
+    {
+      "id": 115,
+      "start": 711.09,
+      "end": 717.57,
+      "start_time": "00:11:51,090",
+      "end_time": "00:11:57,570",
+      "text": "Anh em gửi này. Anh em gửi cái Master Prompt này cho Gemini ghi nhớ trước. Sau đó thì gì ạ? Chúng ta sẽ tải video lên."
+    },
+    {
+      "id": 116,
+      "start": 718.63,
+      "end": 727.95,
+      "start_time": "00:11:58,630",
+      "end_time": "00:12:07,950",
+      "text": "Đây. Tải video bán content lên. Đây là một trong những cái bước mà anh chị tải video tầm 8 phút, 10 phút lên nó phân tích cho anh chị."
+    },
+    {
+      "id": 117,
+      "start": 727.95,
+      "end": 730.47,
+      "start_time": "00:12:07,950",
+      "end_time": "00:12:10,470",
+      "text": "Những cái câu mà hay luôn"
+    },
+    {
+      "id": 118,
+      "start": 730.47,
+      "end": 733.03,
+      "start_time": "00:12:10,470",
+      "end_time": "00:12:13,030",
+      "text": "Làm ra tiếng Anh, tiếng Việt luôn"
+    },
+    {
+      "id": 119,
+      "start": 733.03,
+      "end": 735.71,
+      "start_time": "00:12:13,030",
+      "end_time": "00:12:15,710",
+      "text": "Cho chúng ta không cần phải ngồi, chúng ta ngồi suy nghĩ"
+    },
+    {
+      "id": 120,
+      "start": 735.71,
+      "end": 738.37,
+      "start_time": "00:12:15,710",
+      "end_time": "00:12:18,370",
+      "text": "Anh em suy nghĩ đoạn này chúng ta nên viết gì đúng không?"
+    },
+    {
+      "id": 121,
+      "start": 738.83,
+      "end": 739.73,
+      "start_time": "00:12:18,830",
+      "end_time": "00:12:19,730",
+      "text": "Phụ đề là gì?"
+    },
+    {
+      "id": 122,
+      "start": 740.41,
+      "end": 741.87,
+      "start_time": "00:12:20,410",
+      "end_time": "00:12:21,870",
+      "text": "Một là chúng ta sẽ viết phụ đề"
+    },
+    {
+      "id": 123,
+      "start": 741.87,
+      "end": 743.19,
+      "start_time": "00:12:21,870",
+      "end_time": "00:12:23,190",
+      "text": "Hai chúng ta sẽ chèn luôn"
+    },
+    {
+      "id": 124,
+      "start": 743.19,
+      "end": 745.11,
+      "start_time": "00:12:23,190",
+      "end_time": "00:12:25,110",
+      "text": "Chèn trực tiếp vào video luôn"
+    },
+    {
+      "id": 125,
+      "start": 745.11,
+      "end": 746.91,
+      "start_time": "00:12:25,110",
+      "end_time": "00:12:26,910",
+      "text": "Có quyền được bình phẩm"
+    },
+    {
+      "id": 126,
+      "start": 746.91,
+      "end": 749.89,
+      "start_time": "00:12:26,910",
+      "end_time": "00:12:29,890",
+      "text": "Thì nó sẽ sử dụng trong cái luật là Fair Use của YouTube"
+    },
+    {
+      "id": 127,
+      "start": 749.89,
+      "end": 753.87,
+      "start_time": "00:12:29,890",
+      "end_time": "00:12:33,870",
+      "text": "Sau khi gửi là video 1 phút 2 giây lên nhá"
+    },
+    {
+      "id": 128,
+      "start": 753.87,
+      "end": 754.65,
+      "start_time": "00:12:33,870",
+      "end_time": "00:12:34,650",
+      "text": "Thì anh em nhìn này"
+    },
+    {
+      "id": 129,
+      "start": 754.65,
+      "end": 757.93,
+      "start_time": "00:12:34,650",
+      "end_time": "00:12:37,930",
+      "text": "Nó sẽ ra cho anh em như thế này"
+    },
+    {
+      "id": 130,
+      "start": 757.95,
+      "end": 764.8,
+      "start_time": "00:12:37,950",
+      "end_time": "00:12:44,800",
+      "text": "Thì ở đây nhé, anh em ghi nhớ cho tôi nè. Đây nó sẽ ra những cảnh trên text này. Ví dụ như từ 00 đến 03 giây đúng"
+    },
+    {
+      "id": 131,
+      "start": 764.8,
+      "end": 772.99,
+      "start_time": "00:12:44,800",
+      "end_time": "00:12:52,990",
+      "text": "không? Thì chúng ta nên chèn cái text bằng tiếng Anh gì? Và ý nghĩa của cái text bằng tiếng Anh đối với người không biết tiếng Anh nhé."
+    },
+    {
+      "id": 132,
+      "start": 773.55,
+      "end": 785.71,
+      "start_time": "00:12:53,550",
+      "end_time": "00:13:05,710",
+      "text": "Khi bạn lên đồ đi tiệc nhưng vũ trụ đưa đẩy đi phụ hồ. Đó, các bạn thấy không? Đấy nhé, copy cho tôi toàn bộ cái này. Một là chúng ta sẽ phụ đề khi đăng tải. Hai là chúng ta sẽ làm theo luôn như thế này cho tôi."
+    },
+    {
+      "id": 133,
+      "start": 786.0,
+      "end": 788.71,
+      "start_time": "00:13:06,000",
+      "end_time": "00:13:08,710",
+      "text": "0 0 đến 03"
+    },
+    {
+      "id": 134,
+      "start": 788.71,
+      "end": 789.71,
+      "start_time": "00:13:08,710",
+      "end_time": "00:13:09,710",
+      "text": "0 0"
+    },
+    {
+      "id": 135,
+      "start": 789.71,
+      "end": 791.71,
+      "start_time": "00:13:09,710",
+      "end_time": "00:13:11,710",
+      "text": "thêm văn bản"
+    },
+    {
+      "id": 136,
+      "start": 791.71,
+      "end": 793.71,
+      "start_time": "00:13:11,710",
+      "end_time": "00:13:13,710",
+      "text": "0 0 đến 03"
+    },
+    {
+      "id": 137,
+      "start": 793.71,
+      "end": 795.71,
+      "start_time": "00:13:13,710",
+      "end_time": "00:13:15,710",
+      "text": "tầm 3 giây"
+    },
+    {
+      "id": 138,
+      "start": 795.71,
+      "end": 801.71,
+      "start_time": "00:13:15,710",
+      "end_time": "00:13:21,710",
+      "text": "dán vào"
+    },
+    {
+      "id": 139,
+      "start": 801.71,
+      "end": 805.91,
+      "start_time": "00:13:21,710",
+      "end_time": "00:13:25,910",
+      "text": "kéo cỡ chữ"
+    },
+    {
+      "id": 140,
+      "start": 805.91,
+      "end": 812.526,
+      "start_time": "00:13:25,910",
+      "end_time": "00:13:32,526",
+      "text": "em có thể chia đôi đoạn rồi"
+    },
+    {
+      "id": 141,
+      "start": 812.526,
+      "end": 820.226,
+      "start_time": "00:13:32,526",
+      "end_time": "00:13:40,226",
+      "text": "Anh em có thể chọn một cái phông chữ nhé, nhìn cho nó"
+    },
+    {
+      "id": 142,
+      "start": 820.226,
+      "end": 827.926,
+      "start_time": "00:13:40,226",
+      "end_time": "00:13:47,926",
+      "text": "rõ tí. Tôi sẽ chọn một cái chữ nhìn nó thực tế hơn."
+    },
+    {
+      "id": 143,
+      "start": 827.926,
+      "end": 834.526,
+      "start_time": "00:13:47,926",
+      "end_time": "00:13:54,526",
+      "text": "Cái này làm cho người lớn xem nên chúng ta để những cái chữ mà phông chữ là nó dễ hiểu. Anh chị em nhé,"
+    },
+    {
+      "id": 144,
+      "start": 834.526,
+      "end": 840.846,
+      "start_time": "00:13:54,526",
+      "end_time": "00:14:00,846",
+      "text": "ví dụ như tôi sẽ để phông chữ này và tôi sẽ để một cái màu ví dụ như màu vàng màu trắng được."
+    },
+    {
+      "id": 145,
+      "start": 842.526,
+      "end": 845.326,
+      "start_time": "00:14:02,526",
+      "end_time": "00:14:05,326",
+      "text": "Thần thiết lắm vì anh em chọn bóng bóng như này rồi."
+    },
+    {
+      "id": 146,
+      "start": 846.206,
+      "end": 846.646,
+      "start_time": "00:14:06,206",
+      "end_time": "00:14:06,646",
+      "text": "M này."
+    },
+    {
+      "id": 147,
+      "start": 847.266,
+      "end": 848.306,
+      "start_time": "00:14:07,266",
+      "end_time": "00:14:08,306",
+      "text": "Hoặc là anh em tắt đi này."
+    },
+    {
+      "id": 148,
+      "start": 848.566,
+      "end": 849.766,
+      "start_time": "00:14:08,566",
+      "end_time": "00:14:09,766",
+      "text": "Chọn phông chữ này."
+    },
+    {
+      "id": 149,
+      "start": 850.306,
+      "end": 852.826,
+      "start_time": "00:14:10,306",
+      "end_time": "00:14:12,826",
+      "text": "Sau đó thì anh em kéo xuống dưới anh em chọn phông nền nhé."
+    },
+    {
+      "id": 150,
+      "start": 853.566,
+      "end": 856.866,
+      "start_time": "00:14:13,566",
+      "end_time": "00:14:16,866",
+      "text": "Tôi sẽ để là độ mờ của phông nền này tầm bằng này thôi."
+    },
+    {
+      "id": 151,
+      "start": 857.866,
+      "end": 858.966,
+      "start_time": "00:14:17,866",
+      "end_time": "00:14:18,966",
+      "text": "Để cho người ta dễ đọc."
+    },
+    {
+      "id": 152,
+      "start": 859.126,
+      "end": 860.286,
+      "start_time": "00:14:19,126",
+      "end_time": "00:14:20,286",
+      "text": "00 đến 03 này."
+    },
+    {
+      "id": 153,
+      "start": 861.026,
+      "end": 861.666,
+      "start_time": "00:14:21,026",
+      "end_time": "00:14:21,666",
+      "text": "3 giây nhé."
+    },
+    {
+      "id": 154,
+      "start": 862.186,
+      "end": 863.406,
+      "start_time": "00:14:22,186",
+      "end_time": "00:14:23,406",
+      "text": "Giờ phút đến giây này."
+    },
+    {
+      "id": 155,
+      "start": 865.506,
+      "end": 866.786,
+      "start_time": "00:14:25,506",
+      "end_time": "00:14:26,786",
+      "text": "00 đến 03."
+    },
+    {
+      "id": 156,
+      "start": 867.166,
+      "end": 868.146,
+      "start_time": "00:14:27,166",
+      "end_time": "00:14:28,146",
+      "text": "Nghĩa là 3 giây nhé."
+    },
+    {
+      "id": 157,
+      "start": 870.166,
+      "end": 871.726,
+      "start_time": "00:14:30,166",
+      "end_time": "00:14:31,726",
+      "text": "03 đến 06 này."
+    },
+    {
+      "id": 158,
+      "start": 872.526,
+      "end": 877.226,
+      "start_time": "00:14:32,526",
+      "end_time": "00:14:37,226",
+      "text": "03, 06"
+    },
+    {
+      "id": 159,
+      "start": 877.226,
+      "end": 882.166,
+      "start_time": "00:14:37,226",
+      "end_time": "00:14:42,166",
+      "text": "Anh em cứ làm như thế này cho tôi nhé."
+    },
+    {
+      "id": 160,
+      "start": 882.166,
+      "end": 882.866,
+      "start_time": "00:14:42,166",
+      "end_time": "00:14:42,866",
+      "text": "0.6"
+    },
+    {
+      "id": 161,
+      "start": 914.05,
+      "end": 922.17,
+      "start_time": "00:15:14,050",
+      "end_time": "00:15:22,170",
+      "text": "Cuối cùng là gì ạ? Một ngày đi làm hết sức bình thường. Anh"
+    },
+    {
+      "id": 162,
+      "start": 922.17,
+      "end": 930.29,
+      "start_time": "00:15:22,170",
+      "end_time": "00:15:30,290",
+      "text": "em có thể chèn theo đúng số giây cho tôi cũng được nhé."
+    },
+    {
+      "id": 163,
+      "start": 931.11,
+      "end": 938.0,
+      "start_time": "00:15:31,110",
+      "end_time": "00:15:38,000",
+      "text": "Còn anh em sẽ làm như thế này cho tôi. Ok. Ở đây sau khi chúng ta đã có cái toàn bộ video thôi như thế này nhé."
+    },
+    {
+      "id": 164,
+      "start": 938.0,
+      "end": 940.07,
+      "start_time": "00:15:38,000",
+      "end_time": "00:15:40,070",
+      "text": "thì chúng ta sẽ đi tạo nhạc Suno"
+    },
+    {
+      "id": 165,
+      "start": 940.07,
+      "end": 944.07,
+      "start_time": "00:15:40,070",
+      "end_time": "00:15:44,070",
+      "text": "ở đây có cái prompt về để tạo nhạc nền Suno"
+    },
+    {
+      "id": 166,
+      "start": 944.07,
+      "end": 946.07,
+      "start_time": "00:15:44,070",
+      "end_time": "00:15:46,070",
+      "text": "anh em copy đây"
+    },
+    {
+      "id": 167,
+      "start": 946.07,
+      "end": 948.07,
+      "start_time": "00:15:46,070",
+      "end_time": "00:15:48,070",
+      "text": "copy Suno AI này"
+    },
+    {
+      "id": 168,
+      "start": 948.07,
+      "end": 950.07,
+      "start_time": "00:15:48,070",
+      "end_time": "00:15:50,070",
+      "text": "copy rồi"
+    },
+    {
+      "id": 169,
+      "start": 950.07,
+      "end": 952.07,
+      "start_time": "00:15:50,070",
+      "end_time": "00:15:52,070",
+      "text": "sau đó vào cho tôi Suno AI"
+    },
+    {
+      "id": 170,
+      "start": 952.07,
+      "end": 954.07,
+      "start_time": "00:15:52,070",
+      "end_time": "00:15:54,070",
+      "text": "thì đầu tiên là cái phần đơn giản"
+    },
+    {
+      "id": 171,
+      "start": 954.07,
+      "end": 956.07,
+      "start_time": "00:15:54,070",
+      "end_time": "00:15:56,070",
+      "text": "anh em dán vào cho tôi cho này"
+    },
+    {
+      "id": 172,
+      "start": 956.07,
+      "end": 958.07,
+      "start_time": "00:15:56,070",
+      "end_time": "00:15:58,070",
+      "text": "đơn giản"
+    },
+    {
+      "id": 173,
+      "start": 958.07,
+      "end": 966.75,
+      "start_time": "00:15:58,070",
+      "end_time": "00:16:06,750",
+      "text": "chúng ta đợi nó tạo nhạc nền nhanh em nhé đoạn này thì tôi sẽ tua cho nhanh sau khi nó đã tạo ra thì"
+    },
+    {
+      "id": 174,
+      "start": 966.75,
+      "end": 970.091,
+      "start_time": "00:16:06,750",
+      "end_time": "00:16:10,091",
+      "text": "chúng ta sẽ tải cái nhạc này về nhé anh em nhấn download cho tôi"
+    },
+    {
+      "id": 175,
+      "start": 970.091,
+      "end": 977.091,
+      "start_time": "00:16:10,091",
+      "end_time": "00:16:17,091",
+      "text": "Thường thì con Suno nó sẽ tạo ra cho anh chị em 2 bản nhé. Chúng ta có thể dùng cho cái"
+    },
+    {
+      "id": 176,
+      "start": 977.091,
+      "end": 984.091,
+      "start_time": "00:16:17,091",
+      "end_time": "00:16:24,091",
+      "text": "video này và đoạn sau. Ví dụ như video anh chị 8 phút thì anh chị làm nhân lên, tải xuống nhé."
+    },
+    {
+      "id": 177,
+      "start": 984.091,
+      "end": 993.921,
+      "start_time": "00:16:24,091",
+      "end_time": "00:16:33,921",
+      "text": "Tải xuống, chỗ ra thêm cho tôi nhạc nền. Chúng ta nhấn cho tôi"
+    },
+    {
+      "id": 178,
+      "start": 993.921,
+      "end": 1003.751,
+      "start_time": "00:16:33,921",
+      "end_time": "00:16:43,751",
+      "text": "là chuẩn hóa âm lượng nhé. Chuẩn hóa cho nhạc nó vừa phải video."
+    },
+    {
+      "id": 179,
+      "start": 1003.751,
+      "end": 1017.611,
+      "start_time": "00:16:43,751",
+      "end_time": "00:16:57,611",
+      "text": "video bây giờ anh chị có thể thêm những cái hình ảnh của anh chị hình ảnh kênh ví dụ như tôi sẽ thêm"
+    },
+    {
+      "id": 180,
+      "start": 1017.611,
+      "end": 1022.891,
+      "start_time": "00:16:57,611",
+      "end_time": "00:17:02,891",
+      "text": "một cái hình ảnh bất kỳ và đây ví dụ như tôi sẽ lấy một cái hình ảnh của nhân vật này luôn Adam"
+    },
+    {
+      "id": 181,
+      "start": 1023.751,
+      "end": 1025.111,
+      "start_time": "00:17:03,751",
+      "end_time": "00:17:05,111",
+      "text": "Tôi nhấn Tải về."
+    },
+    {
+      "id": 182,
+      "start": 1030.571,
+      "end": 1031.531,
+      "start_time": "00:17:10,571",
+      "end_time": "00:17:11,531",
+      "text": "New in ảnh này."
+    },
+    {
+      "id": 183,
+      "start": 1032.851,
+      "end": 1033.431,
+      "start_time": "00:17:12,851",
+      "end_time": "00:17:13,431",
+      "text": "Download này."
+    },
+    {
+      "id": 184,
+      "start": 1034.051,
+      "end": 1045.551,
+      "start_time": "00:17:14,051",
+      "end_time": "00:17:25,551",
+      "text": "Bây giờ tôi sẽ thêm hình ảnh nhân vật này vào. Nếu mà anh chị muốn làm hình ảnh của anh chị dạng hình tròn thì anh chị chọn ra mặt nạ. Thêm mặt nạ và thêm hình tròn."
+    },
+    {
+      "id": 185,
+      "start": 1046.1,
+      "end": 1059.0,
+      "start_time": "00:17:26,100",
+      "end_time": "00:17:39,000",
+      "text": "Kéo dài. Làm sao anh chị thêm cho tôi vài cái chi tiết nó có cái yếu tố mà mình edit nhé. Và tiếp theo ví dụ như là anh chị thêm với tôi những cái hiệu ứng ở trong cái phần"
+    },
+    {
+      "id": 186,
+      "start": 1059.0,
+      "end": 1072.6,
+      "start_time": "00:17:39,000",
+      "end_time": "00:17:52,600",
+      "text": "âm thanh này nó sẽ có những cái hiệu ứng âm thanh này. Nhấn hiệu ứng này. Ví dụ như những tiếng hiệu ứng này. Tôi sẽ tìm những tràng cười này. Tôi tìm những cái hiệu ứng âm thanh này."
+    },
+    {
+      "id": 187,
+      "start": 1092.6,
+      "end": 1094.9,
+      "start_time": "00:18:12,600",
+      "end_time": "00:18:14,900",
+      "text": "Mình anh em được thêm cho tôi những cái hiệu ứng khác"
+    },
+    {
+      "id": 188,
+      "start": 1094.9,
+      "end": 1102.22,
+      "start_time": "00:18:14,900",
+      "end_time": "00:18:22,220",
+      "text": "Ví dụ như mỗi đoạn anh em thêm cho tôi một ít"
+    },
+    {
+      "id": 189,
+      "start": 1102.22,
+      "end": 1106.1,
+      "start_time": "00:18:22,220",
+      "end_time": "00:18:26,100",
+      "text": "Hoặc là anh chị em có thể lấy trực tiếp ở trên cái trang này nha"
+    },
+    {
+      "id": 190,
+      "start": 1106.1,
+      "end": 1114.8,
+      "start_time": "00:18:26,100",
+      "end_time": "00:18:34,800",
+      "text": "Đây là một cái trang hiệu ứng âm thanh rất là nhiều. Anh chị em có thể tải ở đây về nhé."
+    },
+    {
+      "id": 191,
+      "start": 1114.8,
+      "end": 1116.8,
+      "start_time": "00:18:34,800",
+      "end_time": "00:18:36,800",
+      "text": "Ừ rồi"
+    },
+    {
+      "id": 192,
+      "start": 1116.8,
+      "end": 1118.8,
+      "start_time": "00:18:36,800",
+      "end_time": "00:18:38,800",
+      "text": "Ừ"
+    },
+    {
+      "id": 193,
+      "start": 1118.8,
+      "end": 1120.8,
+      "start_time": "00:18:38,800",
+      "end_time": "00:18:40,800",
+      "text": "Trời ơi"
+    },
+    {
+      "id": 194,
+      "start": 1120.8,
+      "end": 1122.8,
+      "start_time": "00:18:40,800",
+      "end_time": "00:18:42,800",
+      "text": "Cú tôi"
+    },
+    {
+      "id": 195,
+      "start": 1122.8,
+      "end": 1124.8,
+      "start_time": "00:18:42,800",
+      "end_time": "00:18:44,800",
+      "text": "Nói chung là nó rất nhiều"
+    },
+    {
+      "id": 196,
+      "start": 1124.8,
+      "end": 1126.8,
+      "start_time": "00:18:44,800",
+      "end_time": "00:18:46,800",
+      "text": "Những cái"
+    },
+    {
+      "id": 197,
+      "start": 1126.8,
+      "end": 1128.8,
+      "start_time": "00:18:46,800",
+      "end_time": "00:18:48,800",
+      "text": "Hiệu ứng âm thanh ở trên cái website này"
+    },
+    {
+      "id": 198,
+      "start": 1128.8,
+      "end": 1130.8,
+      "start_time": "00:18:48,800",
+      "end_time": "00:18:50,800",
+      "text": "Anh em có thể tìm"
+    },
+    {
+      "id": 199,
+      "start": 1130.8,
+      "end": 1132.8,
+      "start_time": "00:18:50,800",
+      "end_time": "00:18:52,800",
+      "text": "Những cái trò đùa chính trị"
+    },
+    {
+      "id": 200,
+      "start": 1132.8,
+      "end": 1134.8,
+      "start_time": "00:18:52,800",
+      "end_time": "00:18:54,800",
+      "text": "Âm nhạc phim trẻ ảnh chó chơi đều được nhé"
+    },
+    {
+      "id": 201,
+      "start": 1134.8,
+      "end": 1138.8,
+      "start_time": "00:18:54,800",
+      "end_time": "00:18:58,800",
+      "text": "anh chị em có thể thêm những cái bộ lọc vào"
+    },
+    {
+      "id": 202,
+      "start": 1138.8,
+      "end": 1140.86,
+      "start_time": "00:18:58,800",
+      "end_time": "00:19:00,860",
+      "text": "tự nhiên là tôi sẽ lấy"
+    },
+    {
+      "id": 203,
+      "start": 1140.86,
+      "end": 1143.192,
+      "start_time": "00:19:00,860",
+      "end_time": "00:19:03,192",
+      "text": "một cái bộ lọc là 4K đi"
+    },
+    {
+      "id": 204,
+      "start": 1143.192,
+      "end": 1145.392,
+      "start_time": "00:19:03,192",
+      "end_time": "00:19:05,392",
+      "text": "Thêm cho tôi cho nó khác đi."
+    },
+    {
+      "id": 205,
+      "start": 1145.392,
+      "end": 1153.592,
+      "start_time": "00:19:05,392",
+      "end_time": "00:19:13,592",
+      "text": "Thêm cho tôi những cái bộ lọc vào."
+    },
+    {
+      "id": 206,
+      "start": 1153.592,
+      "end": 1158.992,
+      "start_time": "00:19:13,592",
+      "end_time": "00:19:18,992",
+      "text": "Và bây giờ là chúng ta sẽ thêm những cái phần chuyển cảnh để cho nó tự nhiên hơn thì anh em nhấn cho tôi phần chuyển tiếp."
+    },
+    {
+      "id": 207,
+      "start": 1159.552,
+      "end": 1163.872,
+      "start_time": "00:19:19,552",
+      "end_time": "00:19:23,872",
+      "text": "Ví dụ như tôi sẽ lựa chọn một cái phần chuyển tiếp như là M đi, trượt góc."
+    },
+    {
+      "id": 208,
+      "start": 1165.692,
+      "end": 1166.972,
+      "start_time": "00:19:25,692",
+      "end_time": "00:19:26,972",
+      "text": "Đó, trượt góc."
+    },
+    {
+      "id": 209,
+      "start": 1169.512,
+      "end": 1172.552,
+      "start_time": "00:19:29,512",
+      "end_time": "00:19:32,552",
+      "text": "Tôi muốn cho tất cả thì anh em nhấn tất cả được nhé."
+    },
+    {
+      "id": 210,
+      "start": 1175.932,
+      "end": 1178.372,
+      "start_time": "00:19:35,932",
+      "end_time": "00:19:38,372",
+      "text": "Còn là anh em có thể thêm bằng tay."
+    },
+    {
+      "id": 211,
+      "start": 1178.832,
+      "end": 1181.012,
+      "start_time": "00:19:38,832",
+      "end_time": "00:19:41,012",
+      "text": "Đó là đoạn nào mà anh em thấy không hợp ý."
+    },
+    {
+      "id": 212,
+      "start": 1181.292,
+      "end": 1182.192,
+      "start_time": "00:19:41,292",
+      "end_time": "00:19:42,192",
+      "text": "Anh em có thể thêm như này."
+    },
+    {
+      "id": 213,
+      "start": 1183.592,
+      "end": 1190.792,
+      "start_time": "00:19:43,592",
+      "end_time": "00:19:50,792",
+      "text": "Đó, thêm 1 giờ. Đó là 1 cái video về phần video nha anh em nhé. Sau đó thì anh em xuất ra."
+    },
+    {
+      "id": 214,
+      "start": 1191.0,
+      "end": 1202.672,
+      "start_time": "00:19:51,000",
+      "end_time": "00:20:02,672",
+      "text": "Xuất này. Và bây giờ là chúng ta sẽ đến cái phần là phần thumbnail nha. Đối với phần thumbnail thì như lúc nãy tôi nói anh em là ví dụ như 1 cái kênh như thế này đi."
+    },
+    {
+      "id": 215,
+      "start": 1202.832,
+      "end": 1208.692,
+      "start_time": "00:20:02,832",
+      "end_time": "00:20:08,692",
+      "text": "Thumbnail nó cực kỳ cơ bản. Thì chúng ta sẽ lấy 2 cái hình ở trong cái video và chúng ta sẽ tạo ra luôn."
+    },
+    {
+      "id": 216,
+      "start": 1208.692,
+      "end": 1214.652,
+      "start_time": "00:20:08,692",
+      "end_time": "00:20:14,652",
+      "text": "Trường hợp thì chúng ta sẽ tạo trên Picsart nhé. Đây là trang của Picsart."
+    },
+    {
+      "id": 217,
+      "start": 1215.05,
+      "end": 1223.35,
+      "start_time": "00:20:15,050",
+      "end_time": "00:20:23,350",
+      "text": "Anh em là quen thì chúng ta có thể sử dụng Canva nhé. Thì trong phần Picsart này thì anh em nhấn cho tôi bắt đầu thiết kế mới này. Nhấn thiết kế."
+    },
+    {
+      "id": 218,
+      "start": 1225.17,
+      "end": 1234.39,
+      "start_time": "00:20:25,170",
+      "end_time": "00:20:34,390",
+      "text": "Ở đây thì lúc nãy tôi đã tải cái hình Adam Rose này ở trên cái gì ạ? Ở trên cái Pinterest rồi nha anh em nhé. Tôi sẽ lấy luôn"
+    },
+    {
+      "id": 219,
+      "start": 1234.39,
+      "end": 1244.57,
+      "start_time": "00:20:34,390",
+      "end_time": "00:20:44,570",
+      "text": "hình ảnh đấy. Và tôi sẽ được chọn tỷ lệ là 1920x1080 nhé. Nhớ cho tôi là tất cả những cái hình thumbnail là phải để kích cỡ 1920x1080 nhé."
+    },
+    {
+      "id": 220,
+      "start": 1245.05,
+      "end": 1252.25,
+      "start_time": "00:20:45,050",
+      "end_time": "00:20:52,250",
+      "text": "Tiếp theo là tôi sẽ lấy một trong số hai cái hình. Ví dụ như tôi sẽ tải"
+    },
+    {
+      "id": 221,
+      "start": 1252.25,
+      "end": 1259.45,
+      "start_time": "00:20:52,250",
+      "end_time": "00:20:59,450",
+      "text": "cái hình này. Tôi cho video này vào đây. Nhớ này đi. Và tôi sẽ thêm một"
+    },
+    {
+      "id": 222,
+      "start": 1259.45,
+      "end": 1266.7,
+      "start_time": "00:20:59,450",
+      "end_time": "00:21:06,700",
+      "text": "hình này vào đây. Tôi sẽ cho hai cái này to ra một tí. Để tí tôi chụp"
+    },
+    {
+      "id": 223,
+      "start": 1266.7,
+      "end": 1273.95,
+      "start_time": "00:21:06,700",
+      "end_time": "00:21:13,950",
+      "text": "ảnh thêm một cái hình ảnh Adam Rose vào đây cho hai video đè đến nhau nhé."
+    },
+    {
+      "id": 224,
+      "start": 1273.95,
+      "end": 1286.49,
+      "start_time": "00:21:13,950",
+      "end_time": "00:21:26,490",
+      "text": "nó có nhân vật người nổi tiếng rồi chúng ta sẽ đứng trên vai người khổng lồ luôn anh em kéo đúng"
+    },
+    {
+      "id": 225,
+      "start": 1286.49,
+      "end": 1293.95,
+      "start_time": "00:21:26,490",
+      "end_time": "00:21:33,950",
+      "text": "cái tỷ lệ này ví dụ như tôi sẽ cho to ra tôi chụp cho nó rõ rồi rồi chụp bằng này"
+    },
+    {
+      "id": 226,
+      "start": 1293.95,
+      "end": 1297.27,
+      "start_time": "00:21:33,950",
+      "end_time": "00:21:37,270",
+      "text": "Ok và bây giờ tôi sẽ dán vào đây"
+    },
+    {
+      "id": 227,
+      "start": 1297.27,
+      "end": 1299.01,
+      "start_time": "00:21:37,270",
+      "end_time": "00:21:39,010",
+      "text": "Chụp màn hình lại nhé"
+    },
+    {
+      "id": 228,
+      "start": 1299.01,
+      "end": 1304.39,
+      "start_time": "00:21:39,010",
+      "end_time": "00:21:44,390",
+      "text": "Anh em có thể tùy cơ ứng biến để tạo ra những hình ảnh thumbnail cho chúng ta nhé"
+    },
+    {
+      "id": 229,
+      "start": 1304.39,
+      "end": 1308.23,
+      "start_time": "00:21:44,390",
+      "end_time": "00:21:48,230",
+      "text": "Chúng ta có thể thêm lựa chọn của mình"
+    },
+    {
+      "id": 230,
+      "start": 1308.23,
+      "end": 1309.43,
+      "start_time": "00:21:48,230",
+      "end_time": "00:21:49,430",
+      "text": "Tải lên"
+    },
+    {
+      "id": 231,
+      "start": 1309.43,
+      "end": 1313.95,
+      "start_time": "00:21:49,430",
+      "end_time": "00:21:53,950",
+      "text": "Tải cái ảnh Adam Rose này"
+    },
+    {
+      "id": 232,
+      "start": 1317.811,
+      "end": 1323.29,
+      "start_time": "00:21:57,811",
+      "end_time": "00:22:03,290",
+      "text": "Có những cái ảnh thumbnail này nó cực kỳ đơn giản. Tại vì nó có ảnh nhân vật người nổi tiếng rồi."
+    },
+    {
+      "id": 233,
+      "start": 1323.29,
+      "end": 1331.295,
+      "start_time": "00:22:03,290",
+      "end_time": "00:22:11,295",
+      "text": "chúng ta có thể thêm những cái nhãn dán, ví dụ như vòng tròn đỏ này, vòng tròn đỏ, trong"
+    },
+    {
+      "id": 234,
+      "start": 1331.295,
+      "end": 1339.3,
+      "start_time": "00:22:11,295",
+      "end_time": "00:22:19,300",
+      "text": "này rất là nhiều, chúng ta muốn khoanh vùng như thế nào, khoanh vùng để cái thumbnail của chúng"
+    },
+    {
+      "id": 235,
+      "start": 1339.3,
+      "end": 1353.051,
+      "start_time": "00:22:19,300",
+      "end_time": "00:22:33,051",
+      "text": "ta nổi bật như thế nào đó, tụi tôi khoanh cái này đi, và mũi tên đỏ, mũi tên đỏ, ở phần sticker đấy, rất nhiều cái mũi tên đỏ, các thứ cho anh em, để áp dụng,"
+    },
+    {
+      "id": 236,
+      "start": 1353.291,
+      "end": 1358.171,
+      "start_time": "00:22:33,291",
+      "end_time": "00:22:38,171",
+      "text": "Để sản xuất vào cái thumbnail của chúng ta. Chúng ta sẽ cho một cái điểm nhấn vào."
+    },
+    {
+      "id": 237,
+      "start": 1364.651,
+      "end": 1377.791,
+      "start_time": "00:22:44,651",
+      "end_time": "00:22:57,791",
+      "text": "Còn phần tiêu đề thì anh em nên viết ví dụ như là một trong khoảnh khắc hài hước của cô gái xây dựng chuyển sang tiếng Anh hoặc bảo ChatGPT viết cho. Sau đó thì trong cái tiêu đề đấy có nhân vật này nhé. Là được nhanh nhé."
+    },
+    {
+      "id": 238,
+      "start": 1377.791,
+      "end": 1386.131,
+      "start_time": "00:22:57,791",
+      "end_time": "00:23:06,131",
+      "text": "Đối với phần Adam Rose thì anh em nên nhớ cho tôi là anh em có thể tìm nhé. Tìm ở trên các nền tảng"
+    },
+    {
+      "id": 239,
+      "start": 1386.3,
+      "end": 1396.29,
+      "start_time": "00:23:06,300",
+      "end_time": "00:23:16,290",
+      "text": "Ví dụ như đây là giao diện của YouTube, đây là cái từ khóa Adam Rose, tôi sẽ tìm bằng cách là mở hồ sơ khách nhé, anh em tìm cho tôi là YouTube, nói chung là chúng"
+    },
+    {
+      "id": 240,
+      "start": 1396.29,
+      "end": 1406.16,
+      "start_time": "00:23:16,290",
+      "end_time": "00:23:26,160",
+      "text": "ta sẽ tham khảo được những cái nguồn như thế, đây là cái cách mà tôi luôn tìm, Adam Rose, anh em tìm bộ lọc, video, ví dụ như là tháng này đi, tuần này đi, mức độ phổ"
+    },
+    {
+      "id": 241,
+      "start": 1406.16,
+      "end": 1415.98,
+      "start_time": "00:23:26,160",
+      "end_time": "00:23:35,980",
+      "text": "biến, nói chung là rất nhiều người làm nhé, anh em cứ kết hợp vào cái ảnh thumbnail về gái xinh, anh em nhìn học 6 ngày trước này, 4 ngày trước là 5 ngày trước là"
+    },
+    {
+      "id": 242,
+      "start": 1415.98,
+      "end": 1418.44,
+      "start_time": "00:23:35,980",
+      "end_time": "00:23:38,440",
+      "text": "5 ngày trước này, 5 ngày trước này, 7 ngày trước này."
+    },
+    {
+      "id": 243,
+      "start": 1418.56,
+      "end": 1425.2,
+      "start_time": "00:23:38,560",
+      "end_time": "00:23:45,200",
+      "text": "Hầu như là tất cả những cái nguồn liên quan đến Adam Rose thì anh em tổng hợp vào làm bán content rất là nhiều."
+    },
+    {
+      "id": 244,
+      "start": 1425.2,
+      "end": 1432.42,
+      "start_time": "00:23:45,200",
+      "end_time": "00:23:52,420",
+      "text": "Cái nguồn này tôi nói thật với anh em là để sản xuất ra toàn bộ cái quy trình tôi đã làm từ lúc nãy đến giờ ấy."
+    },
+    {
+      "id": 245,
+      "start": 1432.5,
+      "end": 1435.08,
+      "start_time": "00:23:52,500",
+      "end_time": "00:23:55,080",
+      "text": "Cái anh em biết là sản xuất cái nguồn này rất là nhiều."
+    },
+    {
+      "id": 246,
+      "start": 1435.28,
+      "end": 1435.98,
+      "start_time": "00:23:55,280",
+      "end_time": "00:23:55,980",
+      "text": "Ok, chào tạm biệt."
+    },
+    {
+      "id": 247,
+      "start": 1435.98,
+      "end": 1436.74,
+      "start_time": "00:23:55,980",
+      "end_time": "00:23:56,740",
+      "text": "Anh chị em học viên"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "sku": "VIDEO-d71802",
+  "title": "SHOW KÊNH TRIẾT LÝ HÀN CỦA THÀNH VIÊN PRO VỪA BUILD 1 TUẦN VÀ SHARE THÊM NGÁCH THỊ TRƯỜNG HÀN KHÔNG BAO GIỜ HẾT TREDNS",
+  "actual_topic": "SHOW KÊNH TRIẾT LÝ HÀN CỦA THÀNH VIÊN PRO VỪA BUILD 1 TUẦN VÀ SHARE THÊM NGÁCH THỊ TRƯỜNG HÀN KHÔNG BAO GIỜ HẾT TREDNS",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Triết Lý Sống & Đạo Làm Người",
+  "niche_id": "faceless-general",
+  "target_market": "Hàn Quốc",
+  "market_code": "KR",
+  "key_takeaways": [
+    "Tác giả giới thiệu một kênh tin tức chính trị thị trường Hàn có view cao, và nói dạng này chỉ hợp với người đã có kinh nghiệm hoặc có đội nhóm, người mới tập làm thì khó làm được.",
+    "Dạng tin tức chính trị cần cập nhật thời gian nhanh, đồng thời phải có công cụ để dựng video; phần đọc kịch bản thì cứ xào nấu từ bài báo Hàn hoặc bài báo Việt Nam.",
+    "Tác giả show lại kênh triết lý Hàn của một bạn trong khóa học của mình, bạn này vừa gửi và đồng ý cho chia sẻ, dạng này làm đến bây giờ vẫn còn rất ổn.",
+    "Tác giả nhắc những ngách triết lý hoặc sức khỏe bên Nhật và Hàn không bao giờ hết trend.",
+    "Lời khuyên lặp lại là đừng FOMO ngách, chỉ tập trung một hoặc hai ngách đầu tiên và làm sản xuất cho chỉnh chu, vì ngách nào cũng ngon như nhau."
+  ],
+  "edit_sop": {
+    "primary": "Giới thiệu ngách tin tức Hàn và kênh triết lý Hàn của học viên, kèm lời khuyên tập trung một hai ngách",
+    "additional": [
+      "Ngách tin tức chính trị cần cập nhật nhanh; phần đọc kịch bản thì xào nấu từ bài báo Hàn hoặc bài báo Việt Nam",
+      "Kênh triết lý do học viên khóa Pro gửi, tác giả cho biết dạng này làm đến bây giờ vẫn rất ổn",
+      "Chỉ tập trung làm một hai ngách đầu tiên, đừng thấy ngách khác ngon hơn lại làm theo"
+    ]
+  },
+  "avoid_flags": [
+    "Người mới chưa làm bao giờ thì không làm được dạng tin tức chính trị",
+    "Triết lý hoặc sức khỏe bên Nhật và Hàn không bao giờ hot trend, đừng FOMO",
+    "Đừng thấy ngách khác ngon hơn lại bỏ ngách đang làm"
+  ],
+  "tools_mentioned": [
+    "YouTube"
+  ],
+  "channels_mentioned": [
+    "@올바른마음100",
+    "@경제빠월"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Khảo sát kênh mẫu quốc tế và tiềm năng của ngách"
+    },
+    {
+      "time": "00:39",
+      "seconds": 39,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "01:14",
+      "seconds": 74,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "01:34",
+      "seconds": 94,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "01:49",
+      "seconds": 109,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-d71802/transcript.txt",
+  "sop_steps": [
+    "Ngách tin tức chính trị cần cập nhật nhanh; phần đọc kịch bản thì xào nấu từ bài báo Hàn hoặc bài báo Việt Nam",
+    "Kênh triết lý do học viên khóa Pro gửi, tác giả cho biết dạng này làm đến bây giờ vẫn rất ổn",
+    "Chỉ tập trung làm một hai ngách đầu tiên, đừng thấy ngách khác ngon hơn lại làm theo"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T06:30:00Z"
+}

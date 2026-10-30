@@ -1,0 +1,218 @@
+{
+  "sku": "VIDEO-fd940d",
+  "duration": 96.83,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 26,
+  "full_text": "Chiến lược số 9 Cái này cả xây doanh nghiệp và cả làm YouTube Chiến lược thoát Cần phải nghĩ ra Để làm sao chúng ta có thể thoát khỏi hệ thống Hãy dùng tư duy Xây Để bán Với tư duy xây để bán Tức là tư duy không phụ thuộc vào bất kỳ một cá nhân nào cả Không phụ thuộc vào nền tảng nào cả Không phụ thuộc vào nhân sự nào cả, và thậm chí không phụ thuộc vào chúng ta. Nên là build để bán, xây để bán, cần phải có chiến lược thoát ngay từ đầu. Dù các bạn không thoát nhé, các bạn rất là yêu thích công việc đấy, các bạn không thoát cũng được, không vấn đề gì cả. Nhưng cần phải có chiến lược ngay từ đầu để có thể làm được những cái điều này. Chiến lược thoát bao gồm là chúng ta sử dụng các đòn bẩy Đòn bẩy con người Đòn bẩy về thời gian Đòn bẩy về tiền bạc Đòn bẩy về công nghệ Ngày xưa có thể đọc tiếng Anh rất nhiều Bây giờ có thể sử dụng AI rồi Ngày xưa có thể sử dụng MC Bây giờ có thể sử dụng MC ảo rồi MC AI của bạn có thể đặt riêng, làm MC AI riêng cho anh em được, có option luôn, làm luôn. Clone giọng, có giọng riêng cho anh em được luôn, giọng của anh em luôn cũng được, để làm, để phát triển.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 1.52,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:01,520",
+      "text": "Chiến lược số 9"
+    },
+    {
+      "id": 2,
+      "start": 1.52,
+      "end": 5.48,
+      "start_time": "00:00:01,520",
+      "end_time": "00:00:05,480",
+      "text": "Cái này cả xây doanh nghiệp và cả làm YouTube"
+    },
+    {
+      "id": 3,
+      "start": 5.48,
+      "end": 8.64,
+      "start_time": "00:00:05,480",
+      "end_time": "00:00:08,640",
+      "text": "Chiến lược thoát"
+    },
+    {
+      "id": 4,
+      "start": 8.64,
+      "end": 10.8,
+      "start_time": "00:00:08,640",
+      "end_time": "00:00:10,800",
+      "text": "Cần phải nghĩ ra"
+    },
+    {
+      "id": 5,
+      "start": 10.8,
+      "end": 15.0,
+      "start_time": "00:00:10,800",
+      "end_time": "00:00:15,000",
+      "text": "Để làm sao chúng ta có thể thoát khỏi hệ thống"
+    },
+    {
+      "id": 6,
+      "start": 15.0,
+      "end": 17.7,
+      "start_time": "00:00:15,000",
+      "end_time": "00:00:17,700",
+      "text": "Hãy dùng tư duy"
+    },
+    {
+      "id": 7,
+      "start": 17.7,
+      "end": 18.9,
+      "start_time": "00:00:17,700",
+      "end_time": "00:00:18,900",
+      "text": "Xây"
+    },
+    {
+      "id": 8,
+      "start": 18.9,
+      "end": 20.58,
+      "start_time": "00:00:18,900",
+      "end_time": "00:00:20,580",
+      "text": "Để bán"
+    },
+    {
+      "id": 9,
+      "start": 20.58,
+      "end": 23.62,
+      "start_time": "00:00:20,580",
+      "end_time": "00:00:23,620",
+      "text": "Với tư duy xây để bán"
+    },
+    {
+      "id": 10,
+      "start": 24.0,
+      "end": 26.62,
+      "start_time": "00:00:24,000",
+      "end_time": "00:00:26,620",
+      "text": "Tức là tư duy không phụ thuộc vào bất kỳ một cá nhân nào cả"
+    },
+    {
+      "id": 11,
+      "start": 26.62,
+      "end": 29.36,
+      "start_time": "00:00:26,620",
+      "end_time": "00:00:29,360",
+      "text": "Không phụ thuộc vào nền tảng nào cả"
+    },
+    {
+      "id": 12,
+      "start": 29.36,
+      "end": 34.62,
+      "start_time": "00:00:29,360",
+      "end_time": "00:00:34,620",
+      "text": "Không phụ thuộc vào nhân sự nào cả, và thậm chí không phụ thuộc vào chúng ta."
+    },
+    {
+      "id": 13,
+      "start": 35.9,
+      "end": 42.38,
+      "start_time": "00:00:35,900",
+      "end_time": "00:00:42,380",
+      "text": "Nên là build để bán, xây để bán, cần phải có chiến lược thoát ngay từ đầu."
+    },
+    {
+      "id": 14,
+      "start": 43.0,
+      "end": 48.22,
+      "start_time": "00:00:43,000",
+      "end_time": "00:00:48,220",
+      "text": "Dù các bạn không thoát nhé, các bạn rất là yêu thích công việc đấy, các bạn không thoát cũng được, không vấn đề gì cả."
+    },
+    {
+      "id": 15,
+      "start": 49.08,
+      "end": 54.0,
+      "start_time": "00:00:49,080",
+      "end_time": "00:00:54,000",
+      "text": "Nhưng cần phải có chiến lược ngay từ đầu để có thể làm được những cái điều này."
+    },
+    {
+      "id": 16,
+      "start": 54.0,
+      "end": 58.36,
+      "start_time": "00:00:54,000",
+      "end_time": "00:00:58,360",
+      "text": "Chiến lược thoát bao gồm là chúng ta sử dụng các đòn bẩy"
+    },
+    {
+      "id": 17,
+      "start": 58.36,
+      "end": 60.36,
+      "start_time": "00:00:58,360",
+      "end_time": "00:01:00,360",
+      "text": "Đòn bẩy con người"
+    },
+    {
+      "id": 18,
+      "start": 60.36,
+      "end": 63.76,
+      "start_time": "00:01:00,360",
+      "end_time": "00:01:03,760",
+      "text": "Đòn bẩy về thời gian"
+    },
+    {
+      "id": 19,
+      "start": 63.76,
+      "end": 65.56,
+      "start_time": "00:01:03,760",
+      "end_time": "00:01:05,560",
+      "text": "Đòn bẩy về tiền bạc"
+    },
+    {
+      "id": 20,
+      "start": 65.56,
+      "end": 67.16,
+      "start_time": "00:01:05,560",
+      "end_time": "00:01:07,160",
+      "text": "Đòn bẩy về công nghệ"
+    },
+    {
+      "id": 21,
+      "start": 67.16,
+      "end": 72.0,
+      "start_time": "00:01:07,160",
+      "end_time": "00:01:12,000",
+      "text": "Ngày xưa có thể đọc tiếng Anh rất nhiều"
+    },
+    {
+      "id": 22,
+      "start": 72.0,
+      "end": 76.34,
+      "start_time": "00:01:12,000",
+      "end_time": "00:01:16,340",
+      "text": "Bây giờ có thể sử dụng AI rồi"
+    },
+    {
+      "id": 23,
+      "start": 76.34,
+      "end": 79.28,
+      "start_time": "00:01:16,340",
+      "end_time": "00:01:19,280",
+      "text": "Ngày xưa có thể sử dụng MC"
+    },
+    {
+      "id": 24,
+      "start": 79.28,
+      "end": 82.02,
+      "start_time": "00:01:19,280",
+      "end_time": "00:01:22,020",
+      "text": "Bây giờ có thể sử dụng MC ảo rồi"
+    },
+    {
+      "id": 25,
+      "start": 82.02,
+      "end": 88.74,
+      "start_time": "00:01:22,020",
+      "end_time": "00:01:28,740",
+      "text": "MC AI của bạn có thể đặt riêng, làm MC AI riêng cho anh em được, có option luôn, làm luôn."
+    },
+    {
+      "id": 26,
+      "start": 90.0,
+      "end": 95.04,
+      "start_time": "00:01:30,000",
+      "end_time": "00:01:35,040",
+      "text": "Clone giọng, có giọng riêng cho anh em được luôn, giọng của anh em luôn cũng được, để làm, để phát triển."
+    }
+  ]
+}

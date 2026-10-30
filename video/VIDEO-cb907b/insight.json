@@ -1,0 +1,86 @@
+{
+  "sku": "VIDEO-cb907b",
+  "title": "SHOW KÊNH THỰC CHIẾN VÀ FULL QUY TRÌNH HƯỚNG DẪN REUP NGÁCH VIEW VIỆT RPM 2$ KHÔNG BAO GIỜ HẾT TRENDS - UPDATE 12-01-2026",
+  "actual_topic": "SHOW KÊNH THỰC CHIẾN VÀ FULL QUY TRÌNH HƯỚNG DẪN REUP NGÁCH VIEW VIỆT RPM 2$ KHÔNG BAO GIỜ HẾT TRENDS - UPDATE 12-01-2026",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Reup & Khai Thác Hoạt Hình",
+  "niche_id": "faceless-general",
+  "target_market": "Việt Nam / Trung Quốc",
+  "market_code": "VN,CN",
+  "key_takeaways": [
+    "Tác giả show thực tế một kênh view Việt dạng reup bán content, mới bật kiếm tiền, làm hơn 10 video và kiếm gần 10 triệu, chỉ bằng một phần mười hoặc một phần năm so với kênh view ngoại; RPM hiện hơn 2 đô, trong khi gần một năm trước chỉ khoảng 0.8, 0.9.",
+    "Ưu điểm của dạng này là làm rất nhanh, một ngày có thể làm 10 video; nhược điểm là hay bị bản quyền và thỉnh thoảng có đợt quét sử dụng lại nội dung, nhưng kháng được khoảng 95 đến 99%.",
+    "Trước khi làm phải test bản quyền bằng cách tạo một kênh trống, upload video ở chế độ riêng tư lên Studio; nếu loại nội dung bị bản quyền là âm thanh thì làm được 100%, còn là hình ảnh hay video thì xóa và tải video khác.",
+    "Khi edit thì chỉnh khung hình 16.9, chỉnh tốc độ về 0.5 để giọng đọc không chồng lên nhau, trích xuất phụ đề từ văn bản rồi dịch từ tiếng Trung sang tiếng Việt, xóa hoàn toàn âm thanh gốc và tạo giọng đọc bằng VB; nên làm video trên một tiếng để RPM cao và xuất chất lượng 4k.",
+    "Để lách bản quyền và tạo bản quyền riêng cho kênh, thêm logo và chữ chạy xung quanh video cách 10 phút, thêm nhạc nền không lời tải ở thư viện Studio với âm lượng giảm xuống 15; khi tải lên phải tích có ở mục nội dung AI, tải lên riêng tư và chỉ bật kiếm tiền sau khi video xử lý xong."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình reup ngách view Việt: tải video, test bản quyền, edit CapCut, dịch phụ đề, tạo giọng đọc, làm thumbnail và đăng",
+    "additional": [
+      "Test bản quyền trước: tạo kênh phụ, tải video lên riêng tư vào Studio; nếu loại nội dung bị bản quyền là âm thanh thì làm được, nếu là hình ảnh hoặc video thì bỏ video đó",
+      "Trong CapCut chỉnh khung hình 16:9, cắt phần thừa, đặt tốc độ 0.5 để giọng đọc không bị chồng lên nhau, tạo phụ đề từ mục văn bản rồi xuất file phụ đề",
+      "Dịch phụ đề Trung sang Việt bằng tool dịch, import lại, xóa phụ đề tiếng Trung và tách bỏ hoàn toàn âm thanh gốc để không dính bản quyền âm thanh",
+      "Tạo giọng đọc bằng VB (chọn giọng review, tốc độ 0.5), import lại, gộp thành dự án con rồi tăng tốc lên 1.7 cho giọng nhanh và khớp",
+      "Thêm logo, tên kênh chạy quanh màn hình (khoảng 10 phút, cách 1 phút đổi vị trí), thêm nhạc nền free trong thư viện Studio hạ âm lượng khoảng 15, xuất 4K",
+      "Thumbnail: lấy ảnh gốc qua F12, đưa vào Gemini kèm câu lệnh để tạo ảnh ngang 16:9, rồi chèn chữ và nền vàng"
+    ]
+  },
+  "avoid_flags": [
+    "Không edit xong mới đăng rồi mới biết bị bản quyền, phải test bản quyền trước",
+    "Không cắt video sau khi đã xuất file phụ đề vì import vào sẽ bị lệch khớp",
+    "Khi dính AI hoặc chỉnh sửa thì tích chọn có ở mục khai báo AI, nếu không YouTube quét nhầm là lỗi không trung thực",
+    "Không bật kiếm tiền khi mới tải lên, để xử lý xong rồi mới bật"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "Douyin",
+    "CapCut",
+    "Vbee",
+    "Canva"
+  ],
+  "channels_mentioned": [
+    "@ReviewDuMuc"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Chào mọi người và show một kênh ở thị trường Việt để phân tích"
+    },
+    {
+      "time": "06:06",
+      "seconds": 366,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "12:29",
+      "seconds": 749,
+      "label": "Quy trình tạo giọng đọc AI và tối ưu âm thanh cho video"
+    },
+    {
+      "time": "18:40",
+      "seconds": 1120,
+      "label": "Nghe qua đoạn âm thanh mẫu vừa tạo xong"
+    },
+    {
+      "time": "25:44",
+      "seconds": 1544,
+      "label": "Chờ hệ thống gen ra hình ảnh hoàn chỉnh"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-cb907b/transcript.txt",
+  "sop_steps": [
+    "Test bản quyền trước: tạo kênh phụ, tải video lên riêng tư vào Studio; nếu loại nội dung bị bản quyền là âm thanh thì làm được, nếu là hình ảnh hoặc video thì bỏ video đó",
+    "Trong CapCut chỉnh khung hình 16:9, cắt phần thừa, đặt tốc độ 0.5 để giọng đọc không bị chồng lên nhau, tạo phụ đề từ mục văn bản rồi xuất file phụ đề",
+    "Dịch phụ đề Trung sang Việt bằng tool dịch, import lại, xóa phụ đề tiếng Trung và tách bỏ hoàn toàn âm thanh gốc để không dính bản quyền âm thanh",
+    "Tạo giọng đọc bằng VB (chọn giọng review, tốc độ 0.5), import lại, gộp thành dự án con rồi tăng tốc lên 1.7 cho giọng nhanh và khớp",
+    "Thêm logo, tên kênh chạy quanh màn hình (khoảng 10 phút, cách 1 phút đổi vị trí), thêm nhạc nền free trong thư viện Studio hạ âm lượng khoảng 15, xuất 4K",
+    "Thumbnail: lấy ảnh gốc qua F12, đưa vào Gemini kèm câu lệnh để tạo ảnh ngang 16:9, rồi chèn chữ và nền vàng"
+  ],
+  "verified_expert_summary": true,
+  "last_verified_at": "2026-10-09T06:30:00Z"
+}

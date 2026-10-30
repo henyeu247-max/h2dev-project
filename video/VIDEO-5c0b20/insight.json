@@ -1,0 +1,82 @@
+{
+  "sku": "VIDEO-5c0b20",
+  "title": "THỰC CHIẾN SHARE  NGÁCH THỊ TRƯỜNG US (HOA KỲ) KÊNH ĐANG BẬT KIẾM TIỀN VÀ THÊM 2 NGÁCH THỊ TRƯỜNG HÀN VÀ VIỆT + NHÂN BẢN THỊ TRƯỜNG",
+  "actual_topic": "THỰC CHIẾN SHARE  NGÁCH THỊ TRƯỜNG US (HOA KỲ) KÊNH ĐANG BẬT KIẾM TIỀN VÀ THÊM 2 NGÁCH THỊ TRƯỜNG HÀN VÀ VIỆT + NHÂN BẢN THỊ TRƯỜNG",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Kỹ Thuật Tạo Giọng Đọc AI Tự Nhiên",
+  "niche_id": "faceless-general",
+  "target_market": "Hoa Kỳ (US) / Hàn Quốc / Việt Nam",
+  "market_code": "US,KR,VN",
+  "key_takeaways": [
+    "Tác giả giới thiệu một kênh ở thị trường Hoa Kỳ chỉ làm từ khoảng 4 tuần, chưa đầy một tháng mà view rất cao và đều, đang bật kiếm tiền và dùng một kênh cũ.",
+    "Cách edit là ghép nhiều video tự nhiên với nhau, thêm hình nhân vật, có khai báo nhãn dán dùng AI; từ khóa chỉ đặt ở kênh, còn video thì không đặt từ khóa.",
+    "YouTube cho phép dùng AI nhưng phải mang giá trị cho người xem; lỗi không trung thực chủ yếu bị quét do nội dung kịch bản giật tít, câu view, còn hình ảnh AI bị quét với tỷ lệ rất thấp.",
+    "Các dạng không có giọng đọc hoặc vô tri, không mang giá trị, như giải cứu động vật hay nhà máy sản xuất, chắc chắn sẽ bị quét; dạng triết lý, sức khỏe thì tối ưu lại form prompt để kịch bản không giật tít.",
+    "Tác giả còn chia sẻ kênh kinh tế chính trị về Iran và Mỹ view rất cao, và nhắc áp dụng tư duy nhân bản thị trường: lấy kịch bản từ Mỹ, Nhật, Hàn về dịch rồi chế lại, edit kết hợp nhiều video chứ không chỉ một ảnh."
+  ],
+  "edit_sop": {
+    "primary": "Share ngách thị trường Hoa Kỳ đang bật kiếm tiền và tư duy nhân bản thị trường từ kịch bản US, Nhật, Hàn",
+    "additional": [
+      "Edit bằng cách ghép nhiều video tự nhiên với nhau",
+      "Khai báo nhãn dán có dùng AI khi đăng video",
+      "Dùng từ khóa kênh, không để từ khóa video",
+      "Nhân bản thị trường: lấy kịch bản bên US, Nhật, Hàn về dịch rồi chế lại kịch bản",
+      "Tối ưu kịch bản theo form prompt đã hướng dẫn"
+    ]
+  },
+  "avoid_flags": [
+    "Kịch bản giật tít, câu view sẽ bị YouTube quét là nội dung không trung thực",
+    "Dạng không có giọng đọc hoặc vô tri, không mang giá trị sẽ bị quét",
+    "Chỉ edit một ảnh là sai, phải edit kết hợp nhiều video lại với nhau"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "Vbee"
+  ],
+  "channels_mentioned": [
+    "@Dadstruerevenge",
+    "@똑똑해지는경제학-m2y",
+    "@방구석워런버핏",
+    "@AnNhienChuyenDoiBinhDi"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "01:16",
+      "seconds": 76,
+      "label": "Phân tích dữ liệu kênh mẫu và cách chọn chủ đề ngách"
+    },
+    {
+      "time": "02:45",
+      "seconds": 165,
+      "label": "Phân tích các video nổ view cao nhất của kênh đối thủ"
+    },
+    {
+      "time": "03:46",
+      "seconds": 226,
+      "label": "Quy trình tạo giọng đọc AI và tối ưu âm thanh cho video"
+    },
+    {
+      "time": "04:50",
+      "seconds": 290,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-5c0b20/transcript.txt",
+  "verified_expert_summary": true,
+  "sop_steps": [
+    "Edit bằng cách ghép nhiều video tự nhiên với nhau",
+    "Khai báo nhãn dán có dùng AI khi đăng video",
+    "Dùng từ khóa kênh, không để từ khóa video",
+    "Nhân bản thị trường: lấy kịch bản bên US, Nhật, Hàn về dịch rồi chế lại kịch bản",
+    "Tối ưu kịch bản theo form prompt đã hướng dẫn"
+  ]
+}

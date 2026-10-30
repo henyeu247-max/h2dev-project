@@ -1,0 +1,570 @@
+{
+  "sku": "VIDEO-ad6a82",
+  "duration": 362.18,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 70,
+  "full_text": "Chào anh chị em học viên. Hôm nay chúng ta đến với một cái bài đó là bài các câu Prompt về các góc quay khi anh em làm video AI. Thì ở đây tại sao chúng ta phải có cái bài này? Thì rất nhiều anh em làm một cái video AI thì anh em luôn luôn để một cái góc là góc toàn thân như thế này, gọi là góc ngang toàn thân. Thì anh em chỉ để một góc này thôi thì cái video của anh chị rất sẽ là nhàm chán. Tại sao tôi lại nói như thế? Tại vì nếu mà anh em làm video AI như thế này thì có phải người ta không bao giờ người ta chú ý đến cái video của anh em quá nhiều. Ví dụ anh em làm 10 cảnh mà nó chỉ có một cái góc toàn thân như thế này thì nó rất là nhàm chán. Anh em phải có thêm những cái góc như là góc gần mặt này, trung cảnh này, toàn cảnh này. Và ở đây tôi đã liệt kê ra những cái góc quay mà anh em phải ghi nhớ. Bây giờ anh em phải lưu lại tất cả những cái góc quay này để sau khi mà anh em đặt những cái câu Prompt ấy thì nó sẽ hoàn chỉnh hơn. Anh em phải ghi nhớ cho tôi những cái chi tiết như thế này để sau này mình đặt cái câu Prompt thì mình sẽ phải tư duy ra. Cái đoạn này thì mình cần câu Prompt như thế nào, cái đoạn này thì anh em cần cái góc quay như thế nào cho phù hợp. Và tất cả những cái góc quay này vào cuối video này tôi sẽ hướng dẫn anh chị em tạo ra được những cái hình ảnh về góc quay để anh chị đặt câu Prompt để cho nó đúng vào cái video AI của anh chị sáng tạo nội dung ra. Đầu tiên là góc ngang toàn thân, anh chị có thể nhìn thấy đây là cái hình đầu tiên. tiếp theo là góc cận mặt và góc trung cảnh rồi đến góc toàn cảnh là cái cảnh thứ tư tiếp đến là góc thấp toàn thân ý là góc nó sẽ ở dưới camera hướng thẳng trên mặt của anh em góc thấp cận mặt góc thấp trung cảnh này góc thấp toàn cảnh này góc qua vai nhé góc này là góc anh chị em hãy xem những bộ phim góc qua vai nhân vật khác góc nhìn từ trên cao này góc rộng này góc 3/4 này Góc nghiêng và góc nghiêng khung. Đó là những góc cơ bản nhất của anh em để làm được những video AI. Thì ở đây tôi sẽ test cho anh chị em một vài chi tiết. Ở đây thì hôm nay tôi sẽ hướng dẫn anh chị em để khi mà anh chị em tạo ảnh hoặc sau đó anh em tạo video thì anh em phải bắt buộc có hình ảnh trước. Thì ở đây tôi đã chuẩn bị sẵn một hình ảnh Donald Trump để anh em có thể nhìn thấy trên cái màn hình đây. Tôi đã chuẩn bị sẵn một hình ảnh Donald Trump như thế này. Và bây giờ thì tôi sẽ sử dụng cái phần image trong Grok này để tạo ra một hình ảnh khác và sử dụng một cái góc quay. Ở đây tôi sẽ sử dụng một cái góc là góc trung cảnh. Thì đối với cái con Grok này hoặc cái con Flow ấy thì anh em khi mà anh em tạo ảnh thì anh em có thể sử dụng hai con này. Hiện tại nó đang là ok nhất. Thì tôi sẽ viết một câu Prompt như sau. Hãy tạo cho tôi hình ảnh nhân vật này đang đứng tại một khu quân sự góc nhìn trung cảnh. Hình ảnh sắc nét Thì tôi sẽ sử dụng hình ảnh là 16:9 và tôi sẽ tạo một cái hình ảnh. Từ cái hình ảnh chính này thì anh em sẽ có một cái hình ảnh về Donald Trump khác và góc trung cảnh. Đấy, anh chị em có thể nhìn thấy. Đây là cái góc bằng góc trung cảnh nhé. Mà tôi đã viết ở trong cái câu Prompt này. Anh chị em hãy nhìn thấy đây. Hãy tạo cho tôi một hình ảnh. Nhân vật này đang đứng tại một khu quân sự góc nhìn trung cảnh. Hình ảnh sắc nét, thì anh em có thể thấy là nó đã tạo ra cho anh chị em một cái hình ảnh như thế này rồi. Thì dùng hình ảnh này thì chúng ta sẽ đặt ra, đặt ra cái gì ạ? Đặt ra được những cái câu Prompt để tạo ra những cái video. Thì bắt buộc phải có những cái góc như thế này. Ở đây khi anh em đã tạo ra một cái hình ảnh như thế này rồi, thì bây giờ chúng ta sẽ test một cái góc quay khác. Tôi sẽ viết một câu lệnh khác đi. Hãy tạo cho tôi một hình ảnh góc nhìn qua vai nhân vật này, bối cảnh khu quân sự, hình ảnh sắc nét. Thì tôi nhấn Enter. Thì bây giờ là dựa trên cái góc nhìn qua vai này, anh chị em hãy nhìn đây. Thì đây, nó sẽ tạo ra cho anh chị em một cái hình ảnh là góc qua vai của nhân vật Donald Trump này. Và khu kia là khu quân sự. Đó là cái tư duy để anh chị em đặt cái câu lệnh. Và cũng tiếp tục như thế, ví dụ như được góc nhìn từ trên cao. Thì tôi sẽ tạo một cái hình ảnh như sau. Hãy tạo cho tôi 1 hình ảnh góc nhìn từ trên cao bối cảnh khu vực khu quân sự hình ảnh sắc nét Đây là cái góc nhìn từ trên cao nha anh chị em nha. Ví dụ như là ở trong cái hình này nếu mà nó to quá như thế này đúng không thì anh chị em sửa luôn ở trong cái hình ảnh này đi. Đấy tạo lại hình ảnh cho tôi nhân vật bé hơn còn là giữ nguyên chi tiết. Thì nếu mà cái hình ảnh nhân vật to quá thì chúng ta sẽ điều hướng cái câu Prompt của chúng ta để cho nhân vật bé đi. Đấy là những cái cách mà tư duy mà anh chị em đặt ra những cái câu Prompt để tạo ra những cái góc quay nó khác nhau. Đây là những cái bài tốt nhất để cho anh chị em nhớ là bất kỳ khi làm video AI anh em phải nhớ là phải có góc quay trong cái gì ạ? Trong yếu tố tạo ra Prompt để tạo hình ảnh hoặc Prompt để tạo ra video. Phải tạo hình ảnh trước rồi chúng ta sẽ đến cái tạo video sau. Ok, xin chào mọi người.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 7.9,
+      "start_time": "00:00:00,000",
+      "end_time": "00:00:07,900",
+      "text": "Chào anh chị em học viên. Hôm nay chúng ta đến với một cái bài đó là bài các câu Prompt về các góc quay khi anh em làm video AI."
+    },
+    {
+      "id": 2,
+      "start": 8.14,
+      "end": 18.58,
+      "start_time": "00:00:08,140",
+      "end_time": "00:00:18,580",
+      "text": "Thì ở đây tại sao chúng ta phải có cái bài này? Thì rất nhiều anh em làm một cái video AI thì anh em luôn luôn để một cái góc là góc toàn thân như thế này, gọi là góc ngang toàn thân."
+    },
+    {
+      "id": 3,
+      "start": 18.78,
+      "end": 22.78,
+      "start_time": "00:00:18,780",
+      "end_time": "00:00:22,780",
+      "text": "Thì anh em chỉ để một góc này thôi thì cái video của anh chị rất sẽ là nhàm chán."
+    },
+    {
+      "id": 4,
+      "start": 22.78,
+      "end": 30.333,
+      "start_time": "00:00:22,780",
+      "end_time": "00:00:30,333",
+      "text": "Tại sao tôi lại nói như thế? Tại vì nếu mà anh em làm video AI như thế này thì có phải người ta không bao giờ người ta chú ý đến cái video"
+    },
+    {
+      "id": 5,
+      "start": 30.333,
+      "end": 37.887,
+      "start_time": "00:00:30,333",
+      "end_time": "00:00:37,887",
+      "text": "của anh em quá nhiều. Ví dụ anh em làm 10 cảnh mà nó chỉ có một cái góc toàn thân như thế này thì nó rất là nhàm chán. Anh em phải có"
+    },
+    {
+      "id": 6,
+      "start": 37.887,
+      "end": 45.44,
+      "start_time": "00:00:37,887",
+      "end_time": "00:00:45,440",
+      "text": "thêm những cái góc như là góc gần mặt này, trung cảnh này, toàn cảnh này. Và ở đây tôi đã liệt kê ra những cái góc quay mà anh em phải ghi nhớ."
+    },
+    {
+      "id": 7,
+      "start": 45.44,
+      "end": 52.74,
+      "start_time": "00:00:45,440",
+      "end_time": "00:00:52,740",
+      "text": "Bây giờ anh em phải lưu lại tất cả những cái góc quay này để sau khi mà anh em đặt những cái câu Prompt ấy thì nó sẽ hoàn chỉnh hơn."
+    },
+    {
+      "id": 8,
+      "start": 52.74,
+      "end": 58.4,
+      "start_time": "00:00:52,740",
+      "end_time": "00:00:58,400",
+      "text": "Anh em phải ghi nhớ cho tôi những cái chi tiết như thế này để sau này mình đặt cái câu Prompt thì mình sẽ phải tư duy ra."
+    },
+    {
+      "id": 9,
+      "start": 58.54,
+      "end": 63.8,
+      "start_time": "00:00:58,540",
+      "end_time": "00:01:03,800",
+      "text": "Cái đoạn này thì mình cần câu Prompt như thế nào, cái đoạn này thì anh em cần cái góc quay như thế nào cho phù hợp."
+    },
+    {
+      "id": 10,
+      "start": 63.9,
+      "end": 71.9,
+      "start_time": "00:01:03,900",
+      "end_time": "00:01:11,900",
+      "text": "Và tất cả những cái góc quay này vào cuối video này tôi sẽ hướng dẫn anh chị em tạo ra được những cái hình ảnh về góc quay để anh chị đặt câu Prompt"
+    },
+    {
+      "id": 11,
+      "start": 72.0,
+      "end": 80.7,
+      "start_time": "00:01:12,000",
+      "end_time": "00:01:20,700",
+      "text": "để cho nó đúng vào cái video AI của anh chị sáng tạo nội dung ra. Đầu tiên là góc ngang toàn thân, anh chị có thể nhìn thấy đây là cái hình đầu tiên."
+    },
+    {
+      "id": 12,
+      "start": 80.7,
+      "end": 87.0,
+      "start_time": "00:01:20,700",
+      "end_time": "00:01:27,000",
+      "text": "tiếp theo là góc cận mặt và góc trung cảnh rồi đến góc toàn cảnh là cái cảnh thứ tư"
+    },
+    {
+      "id": 13,
+      "start": 87.0,
+      "end": 100.46,
+      "start_time": "00:01:27,000",
+      "end_time": "00:01:40,460",
+      "text": "tiếp đến là góc thấp toàn thân ý là góc nó sẽ ở dưới camera hướng thẳng trên mặt của anh em góc thấp cận mặt"
+    },
+    {
+      "id": 14,
+      "start": 100.7,
+      "end": 102.0,
+      "start_time": "00:01:40,700",
+      "end_time": "00:01:42,000",
+      "text": "góc thấp trung cảnh này"
+    },
+    {
+      "id": 15,
+      "start": 102.0,
+      "end": 104.0,
+      "start_time": "00:01:42,000",
+      "end_time": "00:01:44,000",
+      "text": "góc thấp toàn cảnh này"
+    },
+    {
+      "id": 16,
+      "start": 104.0,
+      "end": 105.3,
+      "start_time": "00:01:44,000",
+      "end_time": "00:01:45,300",
+      "text": "góc qua vai nhé"
+    },
+    {
+      "id": 17,
+      "start": 105.3,
+      "end": 107.5,
+      "start_time": "00:01:45,300",
+      "end_time": "00:01:47,500",
+      "text": "góc này là góc anh chị em hãy xem"
+    },
+    {
+      "id": 18,
+      "start": 107.5,
+      "end": 109.1,
+      "start_time": "00:01:47,500",
+      "end_time": "00:01:49,100",
+      "text": "những bộ phim góc qua vai"
+    },
+    {
+      "id": 19,
+      "start": 109.1,
+      "end": 110.34,
+      "start_time": "00:01:49,100",
+      "end_time": "00:01:50,340",
+      "text": "nhân vật khác"
+    },
+    {
+      "id": 20,
+      "start": 110.34,
+      "end": 112.32,
+      "start_time": "00:01:50,340",
+      "end_time": "00:01:52,320",
+      "text": "góc nhìn từ trên cao này"
+    },
+    {
+      "id": 21,
+      "start": 112.32,
+      "end": 113.38,
+      "start_time": "00:01:52,320",
+      "end_time": "00:01:53,380",
+      "text": "góc rộng này"
+    },
+    {
+      "id": 22,
+      "start": 113.38,
+      "end": 115.267,
+      "start_time": "00:01:53,380",
+      "end_time": "00:01:55,267",
+      "text": "góc 3/4 này"
+    },
+    {
+      "id": 23,
+      "start": 115.267,
+      "end": 122.767,
+      "start_time": "00:01:55,267",
+      "end_time": "00:02:02,767",
+      "text": "Góc nghiêng và góc nghiêng khung. Đó là những góc cơ bản nhất của anh em để làm được những video AI."
+    },
+    {
+      "id": 24,
+      "start": 122.967,
+      "end": 125.927,
+      "start_time": "00:02:02,967",
+      "end_time": "00:02:05,927",
+      "text": "Thì ở đây tôi sẽ test cho anh chị em một vài chi tiết."
+    },
+    {
+      "id": 25,
+      "start": 126.307,
+      "end": 135.187,
+      "start_time": "00:02:06,307",
+      "end_time": "00:02:15,187",
+      "text": "Ở đây thì hôm nay tôi sẽ hướng dẫn anh chị em để khi mà anh chị em tạo ảnh hoặc sau đó anh em tạo video thì anh em phải bắt buộc có hình ảnh trước."
+    },
+    {
+      "id": 26,
+      "start": 136.0,
+      "end": 141.267,
+      "start_time": "00:02:16,000",
+      "end_time": "00:02:21,267",
+      "text": "Thì ở đây tôi đã chuẩn bị sẵn một hình ảnh Donald Trump để anh em có thể nhìn thấy trên cái màn hình đây."
+    },
+    {
+      "id": 27,
+      "start": 142.027,
+      "end": 144.387,
+      "start_time": "00:02:22,027",
+      "end_time": "00:02:24,387",
+      "text": "Tôi đã chuẩn bị sẵn một hình ảnh Donald Trump như thế này."
+    },
+    {
+      "id": 28,
+      "start": 144.387,
+      "end": 155.387,
+      "start_time": "00:02:24,387",
+      "end_time": "00:02:35,387",
+      "text": "Và bây giờ thì tôi sẽ sử dụng cái phần image trong Grok này để tạo ra một hình ảnh khác và sử dụng một cái góc quay. Ở đây tôi sẽ sử dụng một cái góc là góc trung cảnh."
+    },
+    {
+      "id": 29,
+      "start": 155.387,
+      "end": 165.0,
+      "start_time": "00:02:35,387",
+      "end_time": "00:02:45,000",
+      "text": "Thì đối với cái con Grok này hoặc cái con Flow ấy thì anh em khi mà anh em tạo ảnh thì anh em có thể sử dụng hai con này. Hiện tại nó đang là ok nhất."
+    },
+    {
+      "id": 30,
+      "start": 165.0,
+      "end": 178.507,
+      "start_time": "00:02:45,000",
+      "end_time": "00:02:58,507",
+      "text": "Thì tôi sẽ viết một câu Prompt như sau. Hãy tạo cho tôi hình ảnh nhân vật này đang đứng tại một khu quân sự góc nhìn trung cảnh."
+    },
+    {
+      "id": 31,
+      "start": 180.5,
+      "end": 182.5,
+      "start_time": "00:03:00,500",
+      "end_time": "00:03:02,500",
+      "text": "Hình ảnh sắc nét"
+    },
+    {
+      "id": 32,
+      "start": 182.5,
+      "end": 189.02,
+      "start_time": "00:03:02,500",
+      "end_time": "00:03:09,020",
+      "text": "Thì tôi sẽ sử dụng hình ảnh là 16:9 và tôi sẽ tạo một cái hình ảnh."
+    },
+    {
+      "id": 33,
+      "start": 189.56,
+      "end": 196.86,
+      "start_time": "00:03:09,560",
+      "end_time": "00:03:16,860",
+      "text": "Từ cái hình ảnh chính này thì anh em sẽ có một cái hình ảnh về Donald Trump khác và góc trung cảnh."
+    },
+    {
+      "id": 34,
+      "start": 197.32,
+      "end": 198.9,
+      "start_time": "00:03:17,320",
+      "end_time": "00:03:18,900",
+      "text": "Đấy, anh chị em có thể nhìn thấy."
+    },
+    {
+      "id": 35,
+      "start": 199.46,
+      "end": 201.26,
+      "start_time": "00:03:19,460",
+      "end_time": "00:03:21,260",
+      "text": "Đây là cái góc bằng góc trung cảnh nhé."
+    },
+    {
+      "id": 36,
+      "start": 201.8,
+      "end": 203.76,
+      "start_time": "00:03:21,800",
+      "end_time": "00:03:23,760",
+      "text": "Mà tôi đã viết ở trong cái câu Prompt này."
+    },
+    {
+      "id": 37,
+      "start": 203.96,
+      "end": 204.98,
+      "start_time": "00:03:23,960",
+      "end_time": "00:03:24,980",
+      "text": "Anh chị em hãy nhìn thấy đây."
+    },
+    {
+      "id": 38,
+      "start": 205.56,
+      "end": 206.72,
+      "start_time": "00:03:25,560",
+      "end_time": "00:03:26,720",
+      "text": "Hãy tạo cho tôi một hình ảnh."
+    },
+    {
+      "id": 39,
+      "start": 206.72,
+      "end": 211.18,
+      "start_time": "00:03:26,720",
+      "end_time": "00:03:31,180",
+      "text": "Nhân vật này đang đứng tại một khu quân sự góc nhìn trung cảnh."
+    },
+    {
+      "id": 40,
+      "start": 212.68,
+      "end": 218.78,
+      "start_time": "00:03:32,680",
+      "end_time": "00:03:38,780",
+      "text": "Hình ảnh sắc nét, thì anh em có thể thấy là nó đã tạo ra cho anh chị em một cái hình ảnh như thế này rồi."
+    },
+    {
+      "id": 41,
+      "start": 219.16,
+      "end": 222.88,
+      "start_time": "00:03:39,160",
+      "end_time": "00:03:42,880",
+      "text": "Thì dùng hình ảnh này thì chúng ta sẽ đặt ra, đặt ra cái gì ạ?"
+    },
+    {
+      "id": 42,
+      "start": 223.32,
+      "end": 226.1,
+      "start_time": "00:03:43,320",
+      "end_time": "00:03:46,100",
+      "text": "Đặt ra được những cái câu Prompt để tạo ra những cái video."
+    },
+    {
+      "id": 43,
+      "start": 226.46,
+      "end": 228.16,
+      "start_time": "00:03:46,460",
+      "end_time": "00:03:48,160",
+      "text": "Thì bắt buộc phải có những cái góc như thế này."
+    },
+    {
+      "id": 44,
+      "start": 228.46,
+      "end": 231.68,
+      "start_time": "00:03:48,460",
+      "end_time": "00:03:51,680",
+      "text": "Ở đây khi anh em đã tạo ra một cái hình ảnh như thế này rồi,"
+    },
+    {
+      "id": 45,
+      "start": 231.68,
+      "end": 233.98,
+      "start_time": "00:03:51,680",
+      "end_time": "00:03:53,980",
+      "text": "thì bây giờ chúng ta sẽ test một cái góc quay khác."
+    },
+    {
+      "id": 46,
+      "start": 234.18,
+      "end": 235.66,
+      "start_time": "00:03:54,180",
+      "end_time": "00:03:55,660",
+      "text": "Tôi sẽ viết một câu lệnh khác đi."
+    },
+    {
+      "id": 47,
+      "start": 236.0,
+      "end": 242.96,
+      "start_time": "00:03:56,000",
+      "end_time": "00:04:02,960",
+      "text": "Hãy tạo cho tôi một hình ảnh góc nhìn qua vai nhân"
+    },
+    {
+      "id": 48,
+      "start": 242.96,
+      "end": 250.26,
+      "start_time": "00:04:02,960",
+      "end_time": "00:04:10,260",
+      "text": "vật này, bối cảnh khu quân sự, hình ảnh sắc nét."
+    },
+    {
+      "id": 49,
+      "start": 252.04,
+      "end": 253.3,
+      "start_time": "00:04:12,040",
+      "end_time": "00:04:13,300",
+      "text": "Thì tôi nhấn Enter."
+    },
+    {
+      "id": 50,
+      "start": 253.9,
+      "end": 258.62,
+      "start_time": "00:04:13,900",
+      "end_time": "00:04:18,620",
+      "text": "Thì bây giờ là dựa trên cái góc nhìn qua vai này, anh chị em hãy nhìn đây."
+    },
+    {
+      "id": 51,
+      "start": 258.62,
+      "end": 263.82,
+      "start_time": "00:04:18,620",
+      "end_time": "00:04:23,820",
+      "text": "Thì đây, nó sẽ tạo ra cho anh chị em một cái hình ảnh là góc qua vai của nhân vật Donald Trump này."
+    },
+    {
+      "id": 52,
+      "start": 264.38,
+      "end": 265.66,
+      "start_time": "00:04:24,380",
+      "end_time": "00:04:25,660",
+      "text": "Và khu kia là khu quân sự."
+    },
+    {
+      "id": 53,
+      "start": 266.26,
+      "end": 269.38,
+      "start_time": "00:04:26,260",
+      "end_time": "00:04:29,380",
+      "text": "Đó là cái tư duy để anh chị em đặt cái câu lệnh."
+    },
+    {
+      "id": 54,
+      "start": 270.0,
+      "end": 273.28,
+      "start_time": "00:04:30,000",
+      "end_time": "00:04:33,280",
+      "text": "Và cũng tiếp tục như thế, ví dụ như được góc nhìn từ trên cao."
+    },
+    {
+      "id": 55,
+      "start": 274.0,
+      "end": 275.62,
+      "start_time": "00:04:34,000",
+      "end_time": "00:04:35,620",
+      "text": "Thì tôi sẽ tạo một cái hình ảnh như sau."
+    },
+    {
+      "id": 56,
+      "start": 276.9,
+      "end": 278.12,
+      "start_time": "00:04:36,900",
+      "end_time": "00:04:38,120",
+      "text": "Hãy tạo cho tôi 1 hình ảnh"
+    },
+    {
+      "id": 57,
+      "start": 278.12,
+      "end": 280.5,
+      "start_time": "00:04:38,120",
+      "end_time": "00:04:40,500",
+      "text": "góc nhìn từ"
+    },
+    {
+      "id": 58,
+      "start": 288.62,
+      "end": 290.62,
+      "start_time": "00:04:48,620",
+      "end_time": "00:04:50,620",
+      "text": "trên cao"
+    },
+    {
+      "id": 59,
+      "start": 290.62,
+      "end": 294.38,
+      "start_time": "00:04:50,620",
+      "end_time": "00:04:54,380",
+      "text": "bối cảnh"
+    },
+    {
+      "id": 60,
+      "start": 294.38,
+      "end": 294.98,
+      "start_time": "00:04:54,380",
+      "end_time": "00:04:54,980",
+      "text": "khu vực"
+    },
+    {
+      "id": 61,
+      "start": 294.98,
+      "end": 297.24,
+      "start_time": "00:04:54,980",
+      "end_time": "00:04:57,240",
+      "text": "khu quân sự"
+    },
+    {
+      "id": 62,
+      "start": 298.62,
+      "end": 301.398,
+      "start_time": "00:04:58,620",
+      "end_time": "00:05:01,398",
+      "text": "hình ảnh sắc nét"
+    },
+    {
+      "id": 63,
+      "start": 301.398,
+      "end": 312.398,
+      "start_time": "00:05:01,398",
+      "end_time": "00:05:12,398",
+      "text": "Đây là cái góc nhìn từ trên cao nha anh chị em nha. Ví dụ như là ở trong cái hình này nếu mà nó to quá như thế này đúng không thì anh chị em sửa luôn ở trong cái hình ảnh này đi."
+    },
+    {
+      "id": 64,
+      "start": 312.398,
+      "end": 324.398,
+      "start_time": "00:05:12,398",
+      "end_time": "00:05:24,398",
+      "text": "Đấy tạo lại hình ảnh cho tôi nhân vật bé hơn còn là giữ nguyên chi tiết."
+    },
+    {
+      "id": 65,
+      "start": 324.398,
+      "end": 330.998,
+      "start_time": "00:05:24,398",
+      "end_time": "00:05:30,998",
+      "text": "Thì nếu mà cái hình ảnh nhân vật to quá thì chúng ta sẽ điều hướng cái câu Prompt của chúng ta để cho nhân vật bé đi."
+    },
+    {
+      "id": 66,
+      "start": 331.398,
+      "end": 337.358,
+      "start_time": "00:05:31,398",
+      "end_time": "00:05:37,358",
+      "text": "Đấy là những cái cách mà tư duy mà anh chị em đặt ra những cái câu Prompt để tạo ra những cái góc quay nó khác nhau."
+    },
+    {
+      "id": 67,
+      "start": 338.0,
+      "end": 349.618,
+      "start_time": "00:05:38,000",
+      "end_time": "00:05:49,618",
+      "text": "Đây là những cái bài tốt nhất để cho anh chị em nhớ là bất kỳ khi làm video AI anh em phải nhớ là phải có góc quay trong cái gì ạ?"
+    },
+    {
+      "id": 68,
+      "start": 351.458,
+      "end": 355.998,
+      "start_time": "00:05:51,458",
+      "end_time": "00:05:55,998",
+      "text": "Trong yếu tố tạo ra Prompt để tạo hình ảnh hoặc Prompt để tạo ra video."
+    },
+    {
+      "id": 69,
+      "start": 356.498,
+      "end": 360.078,
+      "start_time": "00:05:56,498",
+      "end_time": "00:06:00,078",
+      "text": "Phải tạo hình ảnh trước rồi chúng ta sẽ đến cái tạo video sau."
+    },
+    {
+      "id": 70,
+      "start": 360.078,
+      "end": 361.538,
+      "start_time": "00:06:00,078",
+      "end_time": "00:06:01,538",
+      "text": "Ok, xin chào mọi người."
+    }
+  ]
+}

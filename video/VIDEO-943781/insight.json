@@ -1,0 +1,70 @@
+{
+  "key_takeaways": [
+    "Tác giả hướng dẫn cách nuôi nhiều email, nhiều kênh trên cùng một máy, cùng thiết bị, cùng địa chỉ IP, để tránh bị dính spam hàng loạt.",
+    "Mỗi Gmail hoặc mỗi kênh đăng nhập trên một trình duyệt khác nhau, ví dụ Cốc Cốc và hai bản trình duyệt của Microsoft cho ra ba kênh.",
+    "Muốn thêm kênh thì dùng trình duyệt Chrome và chia profile, mỗi profile đăng nhập một kênh, đa số là mail cổ và kênh cổ mua về, tạo profile mới rồi đăng nhập riêng.",
+    "Đăng nhập nhiều kênh dồn vào một trình duyệt rất rủi ro, bị hiểu là spam và ảnh hưởng hàng loạt kênh chứ không chỉ một kênh.",
+    "IP và thiết bị không liên quan, chỉ dính khi dùng tool chạy hàng loạt hoặc tool nuôi tài khoản, lúc đó chung IP hay chung wifi sẽ vào danh sách đen; tác giả làm hơn 2 năm và nuôi hoàn toàn tự nhiên, không dùng cách fake."
+  ],
+  "edit_sop": {
+    "primary": "Cách nuôi nhiều Gmail và nhiều kênh trên cùng một máy bằng trình duyệt và profile riêng",
+    "additional": [
+      "Mỗi trình duyệt chỉ đăng nhập một Gmail hoặc một kênh, ví dụ Cốc Cốc, một bản Edge và một bản Edge khác là ba kênh",
+      "Muốn thêm kênh thì dùng Chrome và chia profile, mỗi profile một kênh",
+      "Mua Gmail cổ hoặc kênh cổ về thì tạo profile mới, đăng nhập vào rồi để riêng profile đó",
+      "Có thể ghim profile ra thanh tác vụ cho tiện"
+    ]
+  },
+  "avoid_flags": [
+    "Đăng nhập nhiều Gmail vào cùng một trình duyệt rất rủi ro, dễ bị hiểu là spam và ảnh hưởng hàng loạt kênh",
+    "Dùng tool chạy hàng loạt hoặc tool nuôi tài khoản thì IP, wifi dùng chung dễ vào danh sách đen"
+  ],
+  "verified_expert_summary": true,
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Nuôi nhiều email/kênh trên cùng một máy, thiết bị, địa chỉ IP và profile"
+    },
+    {
+      "time": "00:48",
+      "seconds": 48,
+      "label": "Mỗi Gmail/kênh đăng nhập trên một trình duyệt riêng (Cốc Cốc, Edge...)"
+    },
+    {
+      "time": "01:28",
+      "seconds": 88,
+      "label": "Chia profile: mỗi profile một kênh; mail cổ, kênh cổ mua về để lóc vào"
+    },
+    {
+      "time": "02:11",
+      "seconds": 131,
+      "label": "Cho nhiều kênh vào một trình duyệt rất rủi ro: bị hiểu là spam, ảnh hưởng hàng loạt kênh"
+    },
+    {
+      "time": "02:54",
+      "seconds": 174,
+      "label": "Cùng một máy/IP thì không ảnh hưởng nếu không dùng tool; chia theo profile"
+    }
+  ],
+  "tools_mentioned": [
+    "Gmail",
+    "Cốc Cốc"
+  ],
+  "sop_steps": [
+    "Mỗi trình duyệt chỉ đăng nhập một Gmail hoặc một kênh, ví dụ Cốc Cốc, một bản Edge và một bản Edge khác là ba kênh",
+    "Muốn thêm kênh thì dùng Chrome và chia profile, mỗi profile một kênh",
+    "Mua Gmail cổ hoặc kênh cổ về thì tạo profile mới, đăng nhập vào rồi để riêng profile đó",
+    "Có thể ghim profile ra thanh tác vụ cho tiện"
+  ],
+  "sku": "VIDEO-943781",
+  "title": "Mẹo, tips phân chia nuôi các mail + kênh trên cùng 1 thiết bị mà không bao giờ bị dính spam (mà không cần phải fake vpn hay nuôi trên proxy)",
+  "actual_topic": "Mẹo, tips phân chia nuôi các mail + kênh trên cùng 1 thiết bị mà không bao giờ bị dính spam (mà không cần phải fake vpn hay nuôi trên proxy)",
+  "channels_mentioned": [],
+  "visual_audio_checked": true,
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "source_transcript": "video/VIDEO-943781/transcript.txt",
+  "market_code": "GLOBAL",
+  "target_market": "Quốc tế (Global)",
+  "niche_primary": "Kỹ Thuật Setup Nuôi Kênh & VPS"
+}

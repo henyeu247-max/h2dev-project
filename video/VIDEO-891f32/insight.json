@@ -1,0 +1,77 @@
+{
+  "sku": "VIDEO-891f32",
+  "title": "Share Key Và Hướng Dẫn Làm Youtube View Ngoại Và Prompt Tạo Kịch Bản Dài Hơn 2 Tiếng Trên ChatGPT",
+  "actual_topic": "Chiến Thuật Video Dài Trên 2 Tiếng Đạt RPM Kỷ Lục 1: Quy Trình Prompt ChatGPT Viết Kịch Bản Trường Thiên & Phân Tích Kênh Lịch Sử 2.2 Triệu View",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Prompt AI & Nhân Bản Kịch Bản",
+  "niche_id": "faceless-general",
+  "target_market": "Hoa Kỳ (US) / Quốc tế (Global)",
+  "market_code": "US,GLOBAL",
+  "key_takeaways": [
+    "Tác giả show kênh của mình bật kiếm tiền từ khoảng ngày 13-14 tháng 2, làm toàn video dài 1-2 tiếng nên có video RPM 21 và doanh thu cao.",
+    "Kênh đối thủ lịch sử, tên dịch ra là lịch sử buồn ngủ cho giấc ngủ, chỉ có 4 video nhưng một video 2,2 triệu view sau 2 tuần và một video 1 triệu view sau 12 ngày; kênh dùng kênh cổ, video trên 2 tiếng, tiêu đề lặp lại và thumbnail thu hút, ban đầu CTR rất thấp nhưng sau khi đổi tiêu đề và thumbnail thì lên rất mạnh.",
+    "Về kịch bản, copy chủ đề vào ChatGPT (hoặc DeepSeek, Gemini) để tạo 20 chủ đề, chọn một chủ đề rồi yêu cầu viết 15-16.000 từ, chia thành 15 phần, mỗi phần khoảng 1.000 đến 1.100 từ vì AI không viết được dài một lần, rồi gõ tiếp tục bằng tiếng Anh để nó viết từng phần.",
+    "Về giọng đọc, copy từng phần kịch bản vào Notepad, dùng AI voice lọc tiếng Anh giọng Mỹ, giọng nam trẻ rồi copy ID giọng, chạy qua tool của tác giả thay vì web vì dùng web đốt rất nhiều tiền, sau đó ghép các file thành một file tổng.",
+    "Về ảnh, dùng prompt nhờ ChatGPT tạo 10 prompt ảnh cho mỗi phần (15 phần ra 150 ảnh, có thể đổi 10 thành 15 hoặc 20), tạo ảnh rồi dựng bằng CapCut, không cần dùng AI tạo video như Runway, ghép khoảng 10 ảnh cho một phần giọng, mỗi ảnh để 6 đến 10 giây."
+  ],
+  "edit_sop": {
+    "primary": "Làm video lịch sử dài trên 2 tiếng: prompt ChatGPT viết kịch bản, AI voice tạo voice, tạo ảnh rồi ghép trên CapCut",
+    "additional": [
+      "Prompt kịch bản yêu cầu 15 đến 16.000 từ, chia 15 lần, mỗi lần khoảng 1.000 đến 1.100 từ, gõ tiếp tục bằng tiếng Anh để nó viết phần sau",
+      "Dùng prompt tạo chủ đề (thay X bằng 20), chọn một chủ đề rồi thay vào chỗ topic trong prompt kịch bản; có thể dùng ChatGPT, DeepSeek hoặc AI khác",
+      "Voice: vào AI voice lọc tiếng Anh Mỹ giọng nam trẻ, copy ID giọng, import file kịch bản vào tool, chạy khoảng 3 phút rồi gộp thành một file tổng",
+      "Ảnh: dùng prompt tạo ảnh cho ChatGPT, mỗi phần ra 10 prompt (15 phần thành 150 ảnh), tạo ảnh bằng Kie.ai rồi lưu về",
+      "Edit trên CapCut: ghép khoảng 10 ảnh cho mỗi phần theo âm thanh, mỗi ảnh 6 đến 10 giây, chỉnh màu sơ rồi xuất video, không cần AI tạo video"
+    ]
+  },
+  "avoid_flags": [
+    "ChatGPT hay các AI khác không bao giờ tạo được nhiều ký tự một lúc nên phải chia kịch bản thành nhiều phần",
+    "Tránh chạy tạo giọng đọc số lượng lớn trực tiếp trên trang web gốc gây tốn kém nhiều chi phí và không cần dùng công cụ tạo video chuyển động phức tạp"
+  ],
+  "tools_mentioned": [
+    "ChatGPT",
+    "CapCut"
+  ],
+  "channels_mentioned": [
+    "@SleeplessHistorian"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Show bằng chứng doanh thu RPM kỷ lục 1 của kênh làm video trên 1-2 tiếng"
+    },
+    {
+      "time": "02:31",
+      "seconds": 151,
+      "label": "Phân tích kênh lịch sử mới đăng 4 video hút 2.2 triệu view trong 2 tuần"
+    },
+    {
+      "time": "05:10",
+      "seconds": 310,
+      "label": "Hướng dẫn bộ prompt ChatGPT lập cấu trúc kịch bản trường thiên trên 2 tiếng"
+    },
+    {
+      "time": "08:22",
+      "seconds": 502,
+      "label": "Kỹ thuật chạy lệnh tiếp tục từng chương và ghép nối file kịch bản trên Notepad++"
+    },
+    {
+      "time": "11:13",
+      "seconds": 673,
+      "label": "Tạo giọng đọc AI voice hàng loạt và quản lý tài nguyên dựng CapCut"
+    }
+  ],
+  "analysis_method": "local_transcript_heuristic",
+  "accuracy_status": "unverified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": true,
+  "source_transcript": "video/VIDEO-891f32/transcript.txt",
+  "sop_steps": [
+    "Prompt kịch bản yêu cầu 15 đến 16.000 từ, chia 15 lần, mỗi lần khoảng 1.000 đến 1.100 từ, gõ tiếp tục bằng tiếng Anh để nó viết phần sau",
+    "Dùng prompt tạo chủ đề (thay X bằng 20), chọn một chủ đề rồi thay vào chỗ topic trong prompt kịch bản; có thể dùng ChatGPT, DeepSeek hoặc AI khác",
+    "Voice: vào AI voice lọc tiếng Anh Mỹ giọng nam trẻ, copy ID giọng, import file kịch bản vào tool, chạy khoảng 3 phút rồi gộp thành một file tổng",
+    "Ảnh: dùng prompt tạo ảnh cho ChatGPT, mỗi phần ra 10 prompt (15 phần thành 150 ảnh), tạo ảnh bằng Kie.ai rồi lưu về",
+    "Edit trên CapCut: ghép khoảng 10 ảnh cho mỗi phần theo âm thanh, mỗi ảnh 6 đến 10 giây, chỉnh màu sơ rồi xuất video, không cần AI tạo video"
+  ]
+}

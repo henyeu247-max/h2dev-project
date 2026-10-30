@@ -1,0 +1,76 @@
+{
+  "sku": "VIDEO-1acb10",
+  "title": "SHARE NGÁCH REUP HOẠT HÌNH TRUNG QUỐC RẤT TRENDS FULL BỘ MỚI NHẤT",
+  "actual_topic": "SHARE NGÁCH REUP HOẠT HÌNH TRUNG QUỐC RẤT TRENDS FULL BỘ MỚI NHẤT",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Reup & Khai Thác Hoạt Hình",
+  "niche_id": "faceless-general",
+  "target_market": "Trung Quốc",
+  "market_code": "CN",
+  "key_takeaways": [
+    "Tác giả chia sẻ thêm ngách reup, mở đầu bằng một kênh truyện tu tiên mới có 16 video nhưng view rất cao, dùng kênh từ tháng 1, đang bật kiếm tiền và có cả hội viên.",
+    "Mỗi video của kênh này dài trung bình khoảng 2 đến 5 tiếng, mỗi tập làm full luôn, hoàn toàn là reup từ Bilibili.",
+    "Để tìm ra nguồn gốc thì copy tiêu đề hoặc chụp màn hình các hình ảnh rồi search Google; nếu một cách không ra thì thử nhiều kiểu tìm kiếm khác nhau cho tới khi ra.",
+    "Kênh thứ hai trước làm truyện thời trung cổ về hoàng hậu, nương nương nên view lẹt đẹp, rồi chuyển sang truyện 2D đam mỹ là chủ đề nhiều người quan tâm và view khởi sắc ngay, nên cứ bám theo hướng đó.",
+    "Kênh thứ ba có hơn 200 video, trước làm chủ đề IT, mới chuyển sang reup được 6-7 video đã nổ view dù không chỉnh sửa thumbnail; video sau tác giả sẽ share thêm ngách bán content view Việt và quy trình làm đầy đủ."
+  ],
+  "edit_sop": {
+    "primary": "Chia sẻ các ngách reup: hoạt hình tu tiên Trung Quốc, truyện 2D Âu Mỹ và kênh đổi chủ đề sang reup",
+    "additional": [
+      "Kênh tu tiên reup từ Bilibili, mỗi tập dài khoảng 4 đến 5 tiếng",
+      "Tìm nguồn gốc bằng cách copy tiêu đề hoặc chụp màn hình hình ảnh rồi search Google",
+      "Nếu search chưa ra thì search nhiều kiểu khác nhau",
+      "Kênh đang làm truyện 2D Âu Mỹ thì nên bám theo dạng đó"
+    ]
+  },
+  "avoid_flags": [
+    "Khi tìm nguồn gốc video mà chỉ thử một cách tìm kiếm duy nhất không ra kết quả thì không nên bỏ cuộc ngay mà phải tìm nhiều kiểu khác nhau",
+    "Tránh cố bám mãi vào chủ đề truyện thời trung cổ có lượt xem lẹt đẹt mà cần chuyển sang chủ đề nhiều người quan tâm hơn"
+  ],
+  "tools_mentioned": [
+    "YouTube",
+    "Bilibili",
+    "Google"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu: Giới thiệu chủ đề bài học và định hướng triển khai"
+    },
+    {
+      "time": "00:47",
+      "seconds": 47,
+      "label": "Đấy."
+    },
+    {
+      "time": "01:50",
+      "seconds": 110,
+      "label": "Hướng dẫn quy trình khai thác nguồn nguyên liệu và kịch bản"
+    },
+    {
+      "time": "02:48",
+      "seconds": 168,
+      "label": "Triển khai các bước thực hành công cụ và tối ưu chất lượng"
+    },
+    {
+      "time": "03:43",
+      "seconds": 223,
+      "label": "Tổng kết các lưu ý quan trọng và kinh nghiệm vận hành kênh"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-1acb10/transcript.txt",
+  "verified_expert_summary": true,
+  "last_verified": "2026-10-09",
+  "sop_steps": [
+    "Kênh tu tiên reup từ Bilibili, mỗi tập dài khoảng 4 đến 5 tiếng",
+    "Tìm nguồn gốc bằng cách copy tiêu đề hoặc chụp màn hình hình ảnh rồi search Google",
+    "Nếu search chưa ra thì search nhiều kiểu khác nhau",
+    "Kênh đang làm truyện 2D Âu Mỹ thì nên bám theo dạng đó"
+  ]
+}

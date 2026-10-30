@@ -27,7 +27,7 @@
     "module_title": "BẠN SẼ HỌC ĐƯỢC GÌ TRONG DGMD ACADEMY",
     "position": 1,
     "contentNiche": "Phát Triển Kênh & Chiến Lược Chủ Đề Đa Nền Tảng",
-    "niche": "BẠN SẼ HỌC ĐƯỢC GÌ TRONG DGMD ACADEMY",
+    "niche": "Phát Triển Kênh & Chiến Lược Chủ Đề Đa Nền Tảng",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -83,7 +83,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-9c557d",
@@ -113,7 +119,7 @@
     "module_title": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "position": 1,
     "contentNiche": "Tâm Linh & Video AI Phật Pháp (Facebook Reels / Shorts)",
-    "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche": "Tâm Linh & Video AI Phật Pháp (Facebook Reels / Shorts)",
     "market": [
       "🇻🇳 Việt Nam",
       "📘 Facebook",
@@ -191,7 +197,17 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H02",
+    "nicheCodes": [
+      "H02",
+      "H05",
+      "H08",
+      "H10",
+      "H12"
+    ]
   },
   {
     "sku": "VIDEO-f2a5c1",
@@ -221,7 +237,7 @@
     "module_title": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "position": 2,
     "contentNiche": "Chiến Lược Xây Kênh 100K Sub & Bình Thẩm Shorts Fair Use",
-    "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche": "Chiến Lược Xây Kênh 100K Sub & Bình Thẩm Shorts Fair Use",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại",
@@ -270,41 +286,13 @@
     ],
     "docsCount": 4,
     "channels": [
-      {
-        "handle": "@SchoolBabyChannel",
-        "name": "School Baby Channel",
-        "url": "https://www.youtube.com/channel/UCUrlBFOepGstteAWaXc91xA"
-      },
-      {
-        "handle": "@thanhhieumangdep",
-        "name": "Thành Hiếu Mang Dép",
-        "url": "https://www.youtube.com/@thanhhieumangdep"
-      },
-      {
-        "handle": "@TheJokersHome-j5b",
-        "name": "Rumi KING",
-        "url": "https://www.youtube.com/@TheJokersHome-j5b"
-      },
-      {
-        "handle": "@SonyPicturesAnimation",
-        "name": "Sony Pictures Animation",
-        "url": "https://www.youtube.com/@SonyPicturesAnimation"
-      },
-      {
-        "handle": "@raj_jaiswal_shorts8080",
-        "name": "raj jaiswal shorts 8080",
-        "url": "https://www.youtube.com/@raj_jaiswal_shorts8080"
-      },
-      {
-        "handle": "@QuangTalks",
-        "name": "Quang Talks",
-        "url": "https://www.youtube.com/@QuangTalks"
-      },
-      {
-        "handle": "@MariHoNgoc",
-        "name": "Mari Hồ Ngọc",
-        "url": "https://www.youtube.com/channel/UCxk--0Ei8TjnKQX-rdnWMeg"
-      }
+      "@SchoolBabyChannel",
+      "@thanhhieumangdep",
+      "@TheJokersHome-j5b",
+      "@SonyPicturesAnimation",
+      "@raj_jaiswal_shorts8080",
+      "@QuangTalks",
+      "@MariHoNgoc"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-xay-kenh-100000-subscribe",
     "desc": "<p><span style=\"color: rgb(241, 196, 15);\"><strong>H&igrave;nh ảnh v&agrave; &acirc;m thanh ở đ&acirc;y :</strong></span> https://drive.google.com/drive/folders/1hxxvKtgxXM_6Sie1xMXpN3c2xnhT4tNM?usp=sharing</p>",
@@ -327,7 +315,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-d124e8",
@@ -357,7 +351,7 @@
     "module_title": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "position": 3,
     "contentNiche": "Âm Nhạc Bản Quyền Mở",
-    "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche": "Âm Nhạc Bản Quyền Mở",
     "market": [
       "🇻🇳 Việt Nam",
       "📘 Facebook"
@@ -396,13 +390,7 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "name": "m u s i c i s l i f e",
-        "handle": "@musicislife.genzzz",
-        "url": "https://www.youtube.com/@musicislife.genzzz",
-        "niche": "Kênh YouTube Shorts nhạc Cover Việt Nam (50K sub, 262 video) sử dụng phôi nền giấy nhăn trắng xám + khung video ca sĩ bo tròn góc bên trái + toàn bộ lời bài hát bên phải, đạt 1,3 – 2,8 triệu view/video",
-        "status": "verified_200"
-      }
+      "@musicislife.genzzz"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-xay-kenh-nhac-cover-nguon-free",
     "desc": "",
@@ -421,7 +409,14 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H40",
+    "nicheCodes": [
+      "H40",
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-e706d3",
@@ -451,7 +446,7 @@
     "module_title": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "position": 4,
     "contentNiche": "Quản Trị AdSense & Hạ Tầng Kênh",
-    "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche": "Quản Trị AdSense & Hạ Tầng Kênh",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại",
@@ -506,7 +501,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-f97cd2",
@@ -536,7 +537,7 @@
     "module_title": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "position": 5,
     "contentNiche": "Phát Triển Kênh & Kỹ Thuật YouTube",
-    "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại",
@@ -576,26 +577,10 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@Popa-Pipo",
-        "name": "PoPa PiPo",
-        "url": "https://www.youtube.com/@Popa-Pipo"
-      },
-      {
-        "handle": "@tuoicuaxechieu",
-        "name": "Tuổi Xế Chiều",
-        "url": "https://www.youtube.com/channel/UCZOCat45XQoN9vUiYC2QD2A"
-      },
-      {
-        "handle": "@TinLiveStream",
-        "name": "Tin Live Stream",
-        "url": "https://www.youtube.com/channel/UC--BRdCMIHK_XcMS4SRH4wg"
-      },
-      {
-        "handle": "@HieuMangDep",
-        "name": "Hiếu Mang Dép",
-        "url": "https://www.youtube.com/channel/UCs9II6amKbHIPJYPKLEI_pA"
-      }
+      "@Popa-Pipo",
+      "@tuoicuaxechieu",
+      "@TinLiveStream",
+      "@HieuMangDep"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-1000-nguoi-dang-ky-nhanh-nhat",
     "desc": "",
@@ -613,7 +598,15 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04",
+      "H09",
+      "H34"
+    ]
   },
   {
     "sku": "VIDEO-a18f2a",
@@ -643,7 +636,7 @@
     "module_title": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "position": 6,
     "contentNiche": "So Sánh & Đố Vui Visual",
-    "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche": "So Sánh & Đố Vui Visual",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại",
@@ -718,7 +711,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-38145b",
@@ -748,7 +747,7 @@
     "module_title": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "position": 7,
     "contentNiche": "Quản Trị AdSense & Kháng Kênh",
-    "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche": "Quản Trị AdSense & Kháng Kênh",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại",
@@ -812,7 +811,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-d4f7e6",
@@ -842,7 +847,7 @@
     "module_title": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
     "position": 1,
     "contentNiche": "Tâm Linh & Tôn Giáo Toàn Cầu",
-    "niche": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
+    "niche": "Tâm Linh & Tôn Giáo Toàn Cầu",
     "market": [
       "🌍 View Ngoại",
       "📱 Shorts / Reels"
@@ -881,17 +886,7 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "name": "Jesus Quiz",
-        "handle": "@JesusLovesEvery-1",
-        "url": "https://www.youtube.com/@JesusLovesEvery-1",
-        "subscribers": "2.1M",
-        "views": "838,046,091",
-        "videos": 544,
-        "country": "US",
-        "joined": "2024-08-26",
-        "description": "Kênh mẫu ngách Jesus Shorts thị trường Hoa Kỳ đạt 2,1 triệu người đăng ký và hơn 838 triệu lượt xem chỉ với 544 video ngắn (nhiều video đạt 101M - 105M views)."
-      }
+      "@JesusLovesEvery-1"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-jesus-shorts",
     "desc": "",
@@ -911,7 +906,16 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01",
+      "H06",
+      "H07",
+      "H20"
+    ]
   },
   {
     "sku": "VIDEO-dd1345",
@@ -941,7 +945,7 @@
     "module_title": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
     "position": 2,
     "contentNiche": "Bán Content & Reup Hợp Pháp",
-    "niche": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
+    "niche": "Bán Content & Reup Hợp Pháp",
     "market": [
       "🇻🇳 Việt Nam",
       "📱 Shorts / Reels"
@@ -1002,24 +1006,8 @@
     ],
     "docsCount": 5,
     "channels": [
-      {
-        "name": "Triệu Que Củi",
-        "handle": "@TrieuNe05",
-        "url": "https://www.youtube.com/@TrieuNe05",
-        "subscribers": "363K",
-        "views": "391,000,000",
-        "videos": 283,
-        "description": "Kênh mẫu số 1 làm YouTube Shorts review hài hước từ nguồn video Douyin đạt 363 nghìn người đăng ký và tổng 391 triệu lượt xem chỉ với 283 video."
-      },
-      {
-        "name": "Đảo Chiều",
-        "handle": "@daochieu037",
-        "url": "https://www.youtube.com/@daochieu037",
-        "subscribers": "1.17M",
-        "views": "300,000,000+",
-        "videos": 1200,
-        "description": "Kênh mẫu số 2 khai thác video ngắn Douyin/quốc tế thuyết minh tiếng Việt đạt 1,17 triệu người đăng ký với loạt Shorts 15M - 33M views."
-      }
+      "@TrieuNe05",
+      "@daochieu037"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-doyin",
     "desc": "<p>Master prompt : https://docs.google.com/document/d/18dHhOEGI6z51gTz7YrYtyWj-lAdA0C9dkErk29D34ok/edit?usp=sharing</p>",
@@ -1041,7 +1029,14 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22",
+      "H23"
+    ]
   },
   {
     "sku": "VIDEO-53a547",
@@ -1071,7 +1066,7 @@
     "module_title": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
     "position": 3,
     "contentNiche": "Thể Thao & Câu Đố Bóng Đá Tương Tác (Sports Quiz Shorts)",
-    "niche": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
+    "niche": "Thể Thao & Câu Đố Bóng Đá Tương Tác (Sports Quiz Shorts)",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại",
@@ -1111,13 +1106,7 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@Goat_Faceoff",
-        "name": "Goat Faceoff",
-        "url": "https://www.youtube.com/@Goat_Faceoff",
-        "dead": true,
-        "deadNote": "Kênh mẫu Shorts bóng đá (@Goat_Faceoff - youtube.com/shorts/F5Ja-6UP560 'Ronaldo, Messi or Neymar - GUESS THE PLAYER!') được giảng viên mở ở đầu bài học hiện đã ngừng hoạt động hoặc đổi handle trên YouTube"
-      }
+      "@Goat_Faceoff"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-the-thao-shorts",
     "desc": "",
@@ -1132,7 +1121,15 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H28",
+    "nicheCodes": [
+      "H28",
+      "H27",
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-ab68db",
@@ -1162,7 +1159,7 @@
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 1",
     "position": 1,
     "contentNiche": "Âm Nhạc Thư Giãn & Cổ Phong Trung Hoa (Ancient Chinese Instrumental)",
-    "niche": "VIEW NGOẠI 1",
+    "niche": "Âm Nhạc Thư Giãn & Cổ Phong Trung Hoa (Ancient Chinese Instrumental)",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -1202,11 +1199,7 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@shenharmony2798",
-        "name": "Shen Harmony",
-        "url": "https://www.youtube.com/@shenharmony2798"
-      }
+      "@shenharmony2798"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-nhac-co-trung-hoa",
     "desc": "",
@@ -1227,7 +1220,14 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H40",
+    "nicheCodes": [
+      "H40",
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-23723f",
@@ -1257,7 +1257,7 @@
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 1",
     "position": 2,
     "contentNiche": "Quiz & Trắc Nghiệm Kiến Thức",
-    "niche": "VIEW NGOẠI 1",
+    "niche": "Quiz & Trắc Nghiệm Kiến Thức",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -1296,13 +1296,7 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "name": "English Grammar Challenge",
-        "handle": "@englishgrammarchallenge6953",
-        "url": "https://www.youtube.com/@englishgrammarchallenge6953",
-        "subscribers": "123 N người đăng ký (875 video)",
-        "note": "Kênh đối thủ mẫu làm ngách English Grammar Quiz xuất hiện trực tiếp trên màn hình (00:09 – 00:56), sở hữu video 'Mixed English Grammar Quiz: CAN YOU SCORE 10/10?' đạt 6,2 triệu lượt xem."
-      }
+      "@englishgrammarchallenge6953"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-quiz-english",
     "desc": "",
@@ -1320,7 +1314,14 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H36",
+    "nicheCodes": [
+      "H36",
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-a152a6",
@@ -1350,7 +1351,7 @@
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 1",
     "position": 3,
     "contentNiche": "Bán Content & Reup Hợp Pháp",
-    "niche": "VIEW NGOẠI 1",
+    "niche": "Bán Content & Reup Hợp Pháp",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -1408,27 +1409,9 @@
     ],
     "docsCount": 5,
     "channels": [
-      {
-        "name": "Adam Rose",
-        "handle": "@realadamrose",
-        "url": "https://www.youtube.com/@realadamrose",
-        "subscribers": "6,26 Tr người đăng ký (1,6 N video)",
-        "note": "Kênh chính chủ của diễn viên hài Adam Rose được giảng viên mở trực tiếp trên màn hình (00:15 & 06:12) để lấy các đoạn video Shorts đóng vai kỹ sư công trường đội mũ vàng ('i seriously have to find a new job...' — 257 triệu views) làm nhân vật phản ứng (Reaction)."
-      },
-      {
-        "name": "Smart Pocket",
-        "handle": "@Smartpocket-r9b",
-        "url": "https://www.youtube.com/@Smartpocket-r9b",
-        "subscribers": "533 video",
-        "note": "Kênh tham khảo làm dạng Bán Content kết hợp nhân vật Adam Rose được đính kèm trong tài liệu Google Docs và mở trên thanh tab trình duyệt của giảng viên, có video dài 1 tiếng đạt tới 2 triệu lượt xem."
-      },
-      {
-        "name": "Adam-RoseFans1",
-        "handle": "@Adam-RoseFans1",
-        "url": "https://www.youtube.com/@Adam-RoseFans1",
-        "dead": true,
-        "deadNote": "Kênh tham khảo thứ 2 trong tài liệu Google Docs của giảng viên hiện đã ngừng hoạt động hoặc bị xóa trên YouTube (HTTP 404 khi kiểm tra trực tiếp)."
-      }
+      "@realadamrose",
+      "@Smartpocket-r9b",
+      "@Adam-RoseFans1"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-ban-content",
     "desc": "<p><span style=\"color: rgb(0, 0, 0);\"><strong>Tài liệu hướng dẫn : </strong>https://docs.google.com/document/d/17fkHWAzYnl-TIx7C8GyHIcJIldewQKtlmSTbogtXvJ8/edit?usp=sharing</span></p>",
@@ -1451,7 +1434,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-96b420",
@@ -1481,7 +1470,7 @@
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 2",
     "position": 1,
     "contentNiche": "Học Tiếng Anh Thụ Động",
-    "niche": "VIEW NGOẠI 2",
+    "niche": "Học Tiếng Anh Thụ Động",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -1529,13 +1518,7 @@
     ],
     "docsCount": 4,
     "channels": [
-      {
-        "name": "ChitChat English",
-        "handle": "@ChitChat0",
-        "url": "https://www.youtube.com/@ChitChat0",
-        "subscribers": "Kênh mẫu Hội thoại Tiếng Anh (7,6 Tr views video Top 1)",
-        "note": "Kênh đối thủ mẫu được giảng viên mở trực tiếp trên màn hình ở đầu bài giảng (00:05 – 00:35) với loạt video triệu views: 'Start Speaking English Today, Easy Conversation For Beginners!' (7,6 Tr lượt xem), 'Essential Conversations for Beginners' (3,1 Tr lượt xem)."
-      }
+      "@ChitChat0"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-hoi-thoai-tieng-anh",
     "desc": "",
@@ -1552,7 +1535,14 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H36",
+    "nicheCodes": [
+      "H36",
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-d19b55",
@@ -1582,7 +1572,7 @@
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 2",
     "position": 2,
     "contentNiche": "Hoạt Hình 3D Tập Yoga & Sức Khỏe (Kids / Character Yoga)",
-    "niche": "VIEW NGOẠI 2",
+    "niche": "Hoạt Hình 3D Tập Yoga & Sức Khỏe (Kids / Character Yoga)",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -1622,26 +1612,10 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@SunnyRainbowYoga",
-        "name": "Sunny Rainbow Yoga",
-        "url": "https://www.youtube.com/@SunnyRainbowYoga"
-      },
-      {
-        "handle": "@GalaxyYoga",
-        "name": "Galaxy Yoga",
-        "url": "https://www.youtube.com/@GalaxyYoga"
-      },
-      {
-        "handle": "@ToonYogaTime",
-        "name": "Toon Yoga Time",
-        "url": "https://www.youtube.com/@ToonYogaTime"
-      },
-      {
-        "handle": "@MovewithJojoforKids",
-        "name": "Move with Jojo for Kids",
-        "url": "https://www.youtube.com/@MovewithJojoforKids"
-      }
+      "@SunnyRainbowYoga",
+      "@GalaxyYoga",
+      "@ToonYogaTime",
+      "@MovewithJojoforKids"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-suc-khoe-yoga",
     "desc": "",
@@ -1663,7 +1637,15 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ]
   },
   {
     "sku": "VIDEO-0963e3",
@@ -1693,7 +1675,7 @@
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 2",
     "position": 3,
     "contentNiche": "Học Tiếng Anh Thụ Động",
-    "niche": "VIEW NGOẠI 2",
+    "niche": "Học Tiếng Anh Thụ Động",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -1732,11 +1714,7 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@StudyClasses_sa",
-        "name": "Saba study Classes",
-        "url": "https://www.youtube.com/@StudyClasses_sa"
-      }
+      "@StudyClasses_sa"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-nhan-biet-english",
     "desc": "",
@@ -1756,7 +1734,14 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H36",
+    "nicheCodes": [
+      "H36",
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-54dd2a",
@@ -1786,7 +1771,7 @@
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 3",
     "position": 1,
     "contentNiche": "Bảng Xếp Hạng & Top Trend",
-    "niche": "VIEW NGOẠI 3",
+    "niche": "Bảng Xếp Hạng & Top Trend",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại",
@@ -1827,31 +1812,11 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@Oogway_Ranks",
-        "name": "Oogway Ranks",
-        "url": "https://www.youtube.com/@Oogway_Ranks"
-      },
-      {
-        "handle": "@Ladrank",
-        "name": "LADRANKS",
-        "url": "https://www.youtube.com/@Ladrank"
-      },
-      {
-        "handle": "@PhucAnhHoang-i3e",
-        "name": "Phuc Anh Hoang",
-        "url": "https://www.youtube.com/@PhucAnhHoang-i3e"
-      },
-      {
-        "handle": "@BasileKhaber",
-        "name": "Basile Khaber",
-        "url": "https://www.youtube.com/@BasileKhaber"
-      },
-      {
-        "handle": "@OmerfarukKocatas-j4c",
-        "name": "Omerfaruk Kocatas",
-        "url": "https://www.youtube.com/@OmerfarukKocatas-j4c"
-      }
+      "@Oogway_Ranks",
+      "@Ladrank",
+      "@PhucAnhHoang-i3e",
+      "@BasileKhaber",
+      "@OmerfarukKocatas-j4c"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-xep-hang-shorts",
     "desc": "",
@@ -1874,7 +1839,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-73c662",
@@ -1904,7 +1875,7 @@
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 3",
     "position": 2,
     "contentNiche": "Sức Khỏe & Đời Sống",
-    "niche": "VIEW NGOẠI 3",
+    "niche": "Sức Khỏe & Đời Sống",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -1953,16 +1924,8 @@
     ],
     "docsCount": 4,
     "channels": [
-      {
-        "handle": "@BsMinhTâm60",
-        "name": "BS. Minh Tâm 60+",
-        "url": "https://www.youtube.com/@BsMinhT%C3%A2m60"
-      },
-      {
-        "handle": "@PodcastTimMạch",
-        "name": "Podcast Tim Mạch",
-        "url": "https://www.youtube.com/@PodcastTimM%E1%BA%A1ch"
-      }
+      "@BsMinhTâm60",
+      "@PodcastTimMạch"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-podcast-suc-khoe",
     "desc": "<p><span style=\"color: rgb(224, 62, 45);\"><strong>Master prompt :</strong></span> https://docs.google.com/document/d/1zbyKlWjmIK4bj9B_xyMcZX04yh7JWCLxyVcCRohaolY/edit?usp=sharing</p>",
@@ -1982,7 +1945,15 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ]
   },
   {
     "sku": "VIDEO-bfdec7",
@@ -2012,7 +1983,7 @@
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 3",
     "position": 3,
     "contentNiche": "Biến Đổi Visual & Anime",
-    "niche": "VIEW NGOẠI 3",
+    "niche": "Biến Đổi Visual & Anime",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2051,21 +2022,9 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@AnimeAI1616",
-        "name": "AnimeAI",
-        "url": "https://www.youtube.com/@AnimeAI1616"
-      },
-      {
-        "handle": "@Animereal-y8o",
-        "name": "Anime real",
-        "url": "https://www.youtube.com/@Animereal-y8o"
-      },
-      {
-        "handle": "@pai0212",
-        "name": "PAI CHANNEL",
-        "url": "https://www.youtube.com/@pai0212"
-      }
+      "@AnimeAI1616",
+      "@Animereal-y8o",
+      "@pai0212"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-bien-doi-nhan-vat-view-nhat",
     "desc": "",
@@ -2086,7 +2045,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-77e80c",
@@ -2116,7 +2081,7 @@
     "module_title": "COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1",
     "position": 1,
     "contentNiche": "Học Tiếng Anh Thụ Động",
-    "niche": "SẢN XUẤT FACEBOOK 1",
+    "niche": "Học Tiếng Anh Thụ Động",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại",
@@ -2177,7 +2142,14 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H36",
+    "nicheCodes": [
+      "H36",
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-5a4861",
@@ -2207,7 +2179,7 @@
     "module_title": "COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1",
     "position": 2,
     "contentNiche": "Phát Triển Kênh & Kỹ Thuật YouTube",
-    "niche": "SẢN XUẤT FACEBOOK 1",
+    "niche": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại",
@@ -2265,7 +2237,15 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01",
+      "H07",
+      "H20"
+    ]
   },
   {
     "sku": "VIDEO-ca7ecf",
@@ -2295,7 +2275,7 @@
     "module_title": "COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1",
     "position": 3,
     "contentNiche": "Phật Pháp & Tâm Linh",
-    "niche": "SẢN XUẤT FACEBOOK 1",
+    "niche": "Phật Pháp & Tâm Linh",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại",
@@ -2355,7 +2335,16 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H02",
+    "nicheCodes": [
+      "H02",
+      "H05",
+      "H08",
+      "H12"
+    ]
   },
   {
     "sku": "VIDEO-f2ebfb",
@@ -2385,7 +2374,7 @@
     "module_title": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "position": 1,
     "contentNiche": "Âm Nhạc Truyền Thống & Tâm Linh (Nhạc Chầu Văn AI)",
-    "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche": "Âm Nhạc Truyền Thống & Tâm Linh (Nhạc Chầu Văn AI)",
     "market": [
       "🇻🇳 Việt Nam"
     ],
@@ -2424,11 +2413,7 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@PhatGiaoLangSen",
-        "name": "Phật Giáo Làng Sen",
-        "url": "https://www.youtube.com/@PhatGiaoLangSen"
-      }
+      "@PhatGiaoLangSen"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-nhac-chau-van",
     "desc": "",
@@ -2447,7 +2432,14 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H40",
+    "nicheCodes": [
+      "H40",
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-043b07",
@@ -2477,7 +2469,7 @@
     "module_title": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "position": 2,
     "contentNiche": "Âm Nhạc Dân Gian & Đời Sống (Nhạc Xẩm AI)",
-    "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche": "Âm Nhạc Dân Gian & Đời Sống (Nhạc Xẩm AI)",
     "market": [
       "🇻🇳 Việt Nam"
     ],
@@ -2516,11 +2508,7 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@XamDoiofficial",
-        "name": "Xẩm-Đời",
-        "url": "https://www.youtube.com/@XamDoiofficial"
-      }
+      "@XamDoiofficial"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-nhac-xam",
     "desc": "",
@@ -2540,7 +2528,14 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H40",
+    "nicheCodes": [
+      "H40",
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-2b7592",
@@ -2570,7 +2565,7 @@
     "module_title": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "position": 3,
     "contentNiche": "Review Phim & Hoạt Hình Câu Cá (Douyin Vietsub)",
-    "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche": "Review Phim & Hoạt Hình Câu Cá (Douyin Vietsub)",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2609,23 +2604,9 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@redevietsub",
-        "name": "Rede Vietsub",
-        "url": "https://www.youtube.com/@redevietsub"
-      },
-      {
-        "handle": "@caucavancanchinhchu",
-        "name": "Vũ Trụ Câu Cá Vạn Cân",
-        "url": "https://www.youtube.com/@caucavancanchinhchu"
-      },
-      {
-        "handle": "@cameosub",
-        "name": "Cá Mèo Sub",
-        "url": "https://www.youtube.com/@cameosub",
-        "dead": true,
-        "deadNote": "Kênh xuất hiện trực tiếp trên màn hình bài giảng ở mốc 00:45 (Cá Mèo Sub - @cameosub • 1,47 N người đăng ký • 29 video, các tập Câu Cá Vạn Cân P3 đạt 74N–94N view sau 6 ngày), hiện đã đóng hoặc đổi handle trên YouTube."
-      }
+      "@redevietsub",
+      "@caucavancanchinhchu",
+      "@cameosub"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-review-phim",
     "desc": "",
@@ -2645,7 +2626,14 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22",
+      "H23"
+    ]
   },
   {
     "sku": "VIDEO-3b377d",
@@ -2675,7 +2663,7 @@
     "module_title": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "position": 4,
     "contentNiche": "Tâm Linh & Lời Phật Dạy (Video Dài 60–120 Phút)",
-    "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche": "Tâm Linh & Lời Phật Dạy (Video Dài 60–120 Phút)",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2723,16 +2711,8 @@
     ],
     "docsCount": 4,
     "channels": [
-      {
-        "handle": "@PhậtPhápLinhỨng-v7z",
-        "name": "Phật Pháp Linh Ứng",
-        "url": "https://www.youtube.com/@Ph%E1%BA%ADtPh%C3%A1pLinh%E1%BB%A8ng-v7z"
-      },
-      {
-        "handle": "@loiphatdaymoinhat",
-        "name": "Lời Phật Dạy",
-        "url": "https://www.youtube.com/@loiphatdaymoinhat"
-      }
+      "@PhậtPhápLinhỨng-v7z",
+      "@loiphatdaymoinhat"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-loi-phat-day",
     "desc": "<p><span style=\"color: rgb(224, 62, 45);\"><strong>Master prompt </strong></span>: https://docs.google.com/document/d/1oET2aujhYDfCpmQUTFFQv-Knxy_hH6zkI1FnD3Z2y38/edit?usp=sharing</p>",
@@ -2756,7 +2736,14 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H02",
+    "nicheCodes": [
+      "H02",
+      "H12"
+    ]
   },
   {
     "sku": "VIDEO-11a507",
@@ -2786,7 +2773,7 @@
     "module_title": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "position": 5,
     "contentNiche": "Truyện Audio Drama Tâm Lý & Ngôn Tình (Video Dài 16–60 Phút)",
-    "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche": "Truyện Audio Drama Tâm Lý & Ngôn Tình (Video Dài 16–60 Phút)",
     "market": [
       "🇻🇳 Việt Nam"
     ],
@@ -2833,21 +2820,9 @@
     ],
     "docsCount": 4,
     "channels": [
-      {
-        "handle": "@MeoCungAudio",
-        "name": "Mèo Cưng Audio",
-        "url": "https://www.youtube.com/@MeoCungAudio"
-      },
-      {
-        "handle": "@KhoBáuTrọngSinh",
-        "name": "Kho Báu Trọng Sinh",
-        "url": "https://www.youtube.com/@KhoB%C3%A1uTr%E1%BB%8DngSinh"
-      },
-      {
-        "handle": "@nhalamaudio",
-        "name": "Nhã Lam Audio",
-        "url": "https://www.youtube.com/@nhalamaudio"
-      }
+      "@MeoCungAudio",
+      "@KhoBáuTrọngSinh",
+      "@nhalamaudio"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-audio",
     "desc": "<p><span style=\"color: rgb(230, 126, 35);\"><strong>Master Prompt : </strong></span>https://docs.google.com/document/d/1mYzqa4d5-UT1g0cU9DhGriNc6L6mMKxw0DA5e-c_KBI/edit?usp=sharing</p>",
@@ -2869,7 +2844,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-c0353f",
@@ -2899,7 +2880,7 @@
     "module_title": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "position": 6,
     "contentNiche": "Truyện Audio Tâm Sự Tuổi Già & Gia Đình",
-    "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche": "Truyện Audio Tâm Sự Tuổi Già & Gia Đình",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2947,16 +2928,8 @@
     ],
     "docsCount": 4,
     "channels": [
-      {
-        "handle": "@HayLangNgheTuoiGia",
-        "name": "Lắng Nghe Tuổi Già",
-        "url": "https://www.youtube.com/@HayLangNgheTuoiGia"
-      },
-      {
-        "handle": "@chuyendoixechieu888",
-        "name": "Chuyện Đời Tuổi Già",
-        "url": "https://www.youtube.com/@chuyendoixechieu888"
-      }
+      "@HayLangNgheTuoiGia",
+      "@chuyendoixechieu888"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-audio-view-viet",
     "desc": "<p>Master prompt : https://docs.google.com/document/d/1Bmm410m57ozXZb129Iy4_o0EZJERITBc-JTh7g1cXx8/edit?usp=sharing</p>",
@@ -2975,7 +2948,16 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04",
+      "H09",
+      "H15",
+      "H34"
+    ]
   },
   {
     "sku": "VIDEO-af2c29",
@@ -3005,7 +2987,7 @@
     "module_title": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "position": 1,
     "contentNiche": "Âm Thanh Động Vật & Trẻ Em",
-    "niche": "YOUTUBE VIEW VIỆT & VIEW NGOẠI",
+    "niche": "Âm Thanh Động Vật & Trẻ Em",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -3045,21 +3027,9 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@animalfarmsounds86",
-        "name": "Animal Farm Sounds",
-        "url": "https://www.youtube.com/@animalfarmsounds86"
-      },
-      {
-        "handle": "@BlueBearKids",
-        "name": "Blue Bear Kids",
-        "url": "https://www.youtube.com/@BlueBearKids"
-      },
-      {
-        "handle": "@QuizBlitz",
-        "name": "Quiz Blitz",
-        "url": "https://www.youtube.com/@QuizBlitz"
-      }
+      "@animalfarmsounds86",
+      "@BlueBearKids",
+      "@QuizBlitz"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-am-thanh-dong-vat",
     "desc": "",
@@ -3079,7 +3049,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H29",
+    "nicheCodes": [
+      "H29"
+    ]
   },
   {
     "sku": "VIDEO-d8c6a8",
@@ -3109,7 +3085,7 @@
     "module_title": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "position": 2,
     "contentNiche": "Trò Chơi Tương Tác & Thử Thách Bắt Nhịp (Say The Word On Beat)",
-    "niche": "YOUTUBE VIEW VIỆT & VIEW NGOẠI",
+    "niche": "Trò Chơi Tương Tác & Thử Thách Bắt Nhịp (Say The Word On Beat)",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -3149,11 +3125,7 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@WibloDares",
-        "name": "Wiblo Dares",
-        "url": "https://www.youtube.com/@WibloDares"
-      }
+      "@WibloDares"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-bat-nhip-doc-theo-chu",
     "desc": "",
@@ -3171,7 +3143,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-10991e",
@@ -3201,7 +3179,7 @@
     "module_title": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "position": 3,
     "contentNiche": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (PC)",
-    "niche": "YOUTUBE VIEW VIỆT & VIEW NGOẠI",
+    "niche": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (PC)",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -3241,11 +3219,7 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@HieuMangDep",
-        "name": "Hiếu Mang Dép",
-        "url": "https://www.youtube.com/channel/UCs9II6amKbHIPJYPKLEI_pA"
-      }
+      "@HieuMangDep"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-co-san-tren-nen-tang-tiktok-bang-may-tinh",
     "desc": "",
@@ -3269,7 +3243,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-0056a9",
@@ -3299,7 +3279,7 @@
     "module_title": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "position": 4,
     "contentNiche": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (Mobile)",
-    "niche": "YOUTUBE VIEW VIỆT & VIEW NGOẠI",
+    "niche": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (Mobile)",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -3339,11 +3319,7 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@HieuMangDep",
-        "name": "Hiếu Mang Dép",
-        "url": "https://www.youtube.com/channel/UCs9II6amKbHIPJYPKLEI_pA"
-      }
+      "@HieuMangDep"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-video-co-san-tren-nen-tang-tiktok-bang-dien-thoai",
     "desc": "",
@@ -3361,7 +3337,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-5779d8",
@@ -3391,7 +3373,7 @@
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "position": 1,
     "contentNiche": "Tự Động Hóa & Lập Trình Tool Livestream Đa Luồng",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "Tự Động Hóa & Lập Trình Tool Livestream Đa Luồng",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -3448,11 +3430,7 @@
     ],
     "docsCount": 5,
     "channels": [
-      {
-        "handle": "@LofiGirl",
-        "name": "Lofi Girl",
-        "url": "https://www.youtube.com/@LofiGirl"
-      }
+      "@LofiGirl"
     ],
     "origin": "https://daigiamangdep.com/learn/study/quy-trinh-san-xuat-tool-phat-truc-tiep-da-luong",
     "desc": "<p>Prompt tham khảo : https://docs.google.com/document/d/1qXFPjEK1m6i0uloz_0wbsH1TqJaK9lebxDQy7d2ZTxY/edit?usp=sharing</p>",
@@ -3470,7 +3448,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-17e135",
@@ -3500,7 +3484,7 @@
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "position": 2,
     "contentNiche": "Tooling & Tự Động Hóa YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "Tooling & Tự Động Hóa YouTube",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -3575,7 +3559,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-743af8",
@@ -3605,7 +3595,7 @@
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "position": 3,
     "contentNiche": "SEO & Thuật Toán YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "SEO & Thuật Toán YouTube",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -3645,31 +3635,11 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@GalaxyYoga",
-        "name": "Galaxy Yoga",
-        "url": "https://www.youtube.com/@GalaxyYoga"
-      },
-      {
-        "handle": "@VatVoStudio",
-        "name": "Vật Vờ Studio",
-        "url": "https://www.youtube.com/@VatVoStudio"
-      },
-      {
-        "handle": "@TonyPhungStudio",
-        "name": "Tony Phùng Studio",
-        "url": "https://www.youtube.com/@TonyPhungStudio"
-      },
-      {
-        "handle": "@NgoDucDuy",
-        "name": "Ngô Đức Duy",
-        "url": "https://www.youtube.com/@NgoDucDuy"
-      },
-      {
-        "handle": "@fachannel",
-        "name": "F.A CHANNEL",
-        "url": "https://www.youtube.com/@fachannel"
-      }
+      "@GalaxyYoga",
+      "@VatVoStudio",
+      "@TonyPhungStudio",
+      "@NgoDucDuy",
+      "@fachannel"
     ],
     "origin": "https://daigiamangdep.com/learn/study/nhan-biet-tu-khoa-ngon",
     "desc": "",
@@ -3684,7 +3654,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-e3bcfa",
@@ -3714,7 +3690,7 @@
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "position": 4,
     "contentNiche": "SEO & Thuật Toán YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "SEO & Thuật Toán YouTube",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -3754,36 +3730,12 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@CrazyFrog",
-        "name": "Crazy Frog",
-        "url": "https://www.youtube.com/@CrazyFrog"
-      },
-      {
-        "handle": "@HongyuASMR",
-        "name": "Hongyu ASMR 홍유",
-        "url": "https://www.youtube.com/@HongyuASMR"
-      },
-      {
-        "handle": "@Xenopaw",
-        "name": "Xenopaw",
-        "url": "https://www.youtube.com/@Xenopaw"
-      },
-      {
-        "handle": "@JojosASMR",
-        "name": "Jojo's ASMR",
-        "url": "https://www.youtube.com/@JojosASMR"
-      },
-      {
-        "handle": "@YabaiFunny",
-        "name": "YabaiFunny",
-        "url": "https://www.youtube.com/@YabaiFunny"
-      },
-      {
-        "handle": "@ansari_anam",
-        "name": "ASMR123",
-        "url": "https://www.youtube.com/@ansari_anam"
-      }
+      "@CrazyFrog",
+      "@HongyuASMR",
+      "@Xenopaw",
+      "@JojosASMR",
+      "@YabaiFunny",
+      "@ansari_anam"
     ],
     "origin": "https://daigiamangdep.com/learn/study/hastag-va-su-that-quan-trong",
     "desc": "",
@@ -3798,7 +3750,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-136554",
@@ -3828,7 +3786,7 @@
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "position": 5,
     "contentNiche": "SEO & Thuật Toán YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "SEO & Thuật Toán YouTube",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -3869,26 +3827,10 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@SonyPicturesAnimation",
-        "name": "Sony Pictures Animation",
-        "url": "https://www.youtube.com/@SonyPicturesAnimation"
-      },
-      {
-        "handle": "@7clouds",
-        "name": "7clouds",
-        "url": "https://www.youtube.com/@7clouds"
-      },
-      {
-        "handle": "@NetflixKContent",
-        "name": "Netflix K-Content",
-        "url": "https://www.youtube.com/@NetflixKContent"
-      },
-      {
-        "handle": "@BabyMonkeyAnimal",
-        "name": "Baby Monkey Animal",
-        "url": "https://www.youtube.com/@BabyMonkeyAnimal"
-      }
+      "@SonyPicturesAnimation",
+      "@7clouds",
+      "@NetflixKContent",
+      "@BabyMonkeyAnimal"
     ],
     "origin": "https://daigiamangdep.com/learn/study/tim-tu-khoa-bang-google-trends",
     "desc": "",
@@ -3904,7 +3846,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-52b908",
@@ -3934,7 +3882,7 @@
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "position": 6,
     "contentNiche": "SEO & Thuật Toán YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "SEO & Thuật Toán YouTube",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -3975,22 +3923,8 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "name": "Linh Giới Hát Văn (Kênh demo thao tác cài đặt Danh mục mặc định trong YouTube Studio)",
-        "handle": "@LinhGioiHatVan",
-        "url": "https://www.youtube.com/channel/UCBPGUH6eET9nTlbF72YmI7g",
-        "niche": "Văn hóa Hát Văn / Kênh Demo YouTube Studio",
-        "Subscribers": "Kênh demo thực chiến",
-        "avatar_url": ""
-      },
-      {
-        "name": "MrBeast (Ví dụ chiến dịch tình nguyện trồng cây & làm sạch môi trường trong Danh mục Tổ chức phi lợi nhuận)",
-        "handle": "@MrBeast",
-        "url": "https://www.youtube.com/@MrBeast",
-        "niche": "Entertainment / Nonprofits & Activism",
-        "Subscribers": "300M+",
-        "avatar_url": ""
-      }
+      "@LinhGioiHatVan",
+      "@MrBeast"
     ],
     "origin": "https://daigiamangdep.com/learn/study/15-danh-muc-trong-youtube-studio",
     "desc": "",
@@ -4008,7 +3942,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-d22348",
@@ -4038,7 +3978,7 @@
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "position": 7,
     "contentNiche": "Quản Trị AdSense & Hạ Tầng Kênh",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "Quản Trị AdSense & Hạ Tầng Kênh",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -4080,14 +4020,7 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "name": "Hòa Minzy (Ví dụ ca khúc Bắc Bling bị chặn quốc gia/báo bản quyền ngay lập tức nếu lấy 5-10 giây nhạc đưa vào video)",
-        "handle": "@HoaMinzyOfficial",
-        "url": "https://www.youtube.com/@HoaMinzyOfficial",
-        "niche": "Music / V-Pop (Case Study Bản Quyền Content ID)",
-        "Subscribers": "3M+",
-        "avatar_url": ""
-      }
+      "@HoaMinzyOfficial"
     ],
     "origin": "https://daigiamangdep.com/learn/study/10-loi-thuong-xuyen-dan-den-kenh-bi-tat-kiem-tien",
     "desc": "",
@@ -4110,7 +4043,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-36880b",
@@ -4140,7 +4079,7 @@
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "position": 8,
     "contentNiche": "Phát Triển Kênh & Kỹ Thuật YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -4179,16 +4118,8 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@StorylineEnglishOfficial",
-        "name": "Storyline English",
-        "url": "https://www.youtube.com/@StorylineEnglishOfficial"
-      },
-      {
-        "handle": "@wisdomhistoryenglish",
-        "name": "Wisdom History English",
-        "url": "https://www.youtube.com/@wisdomhistoryenglish"
-      }
+      "@StorylineEnglishOfficial",
+      "@wisdomhistoryenglish"
     ],
     "origin": "https://daigiamangdep.com/learn/study/cach-tao-1-kenh-youtube-chuan-chu-de-va-danh-muc",
     "desc": "",
@@ -4206,7 +4137,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-4483df",
@@ -4236,7 +4173,7 @@
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "position": 9,
     "contentNiche": "SEO & Thuật Toán YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "SEO & Thuật Toán YouTube",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -4276,11 +4213,7 @@
     ],
     "docsCount": 3,
     "channels": [
-      {
-        "handle": "@ChillBuồnStudio",
-        "name": "Chill Buồn Studio",
-        "url": "https://www.youtube.com/channel/UCpV0ce2xtGTY-2R0K0Ncr4g"
-      }
+      "@ChillBuồnStudio"
     ],
     "origin": "https://daigiamangdep.com/learn/study/dang-tai-video-nen-youtube-may-tinh",
     "desc": "",
@@ -4295,7 +4228,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-ad6a82",
@@ -4325,7 +4264,7 @@
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "position": 10,
     "contentNiche": "Prompt Engineering & Visual AI",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "Prompt Engineering & Visual AI",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -4387,7 +4326,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-fc62eb",
@@ -4417,7 +4362,7 @@
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "position": 11,
     "contentNiche": "Prompt Engineering & Visual AI",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "Prompt Engineering & Visual AI",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -4488,7 +4433,13 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   },
   {
     "sku": "VIDEO-27e4e0",
@@ -4518,7 +4469,7 @@
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "position": 12,
     "contentNiche": "Tooling & Tự Động Hóa YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "Tooling & Tự Động Hóa YouTube",
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -4599,6 +4550,12 @@
     "local": true,
     "drm": false,
     "isDgmd": true,
-    "platform": "daigiamangdep.com"
+    "platform": "daigiamangdep.com",
+    "market_code": "GLOBAL",
+    "target_market": "Quốc tế (Global)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ]
   }
 ]

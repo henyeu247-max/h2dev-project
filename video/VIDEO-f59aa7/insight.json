@@ -1,0 +1,89 @@
+{
+  "key_takeaways": [
+    "So sánh thực tế các thị trường: kênh mẫu ở Hoa Kỳ cạnh tranh gắt (video đầu chỉ 1-2 view, video cao nhất ~2.2k view) nhưng RPM trung bình đạt 8–10 USD, trong khi Nhật Bản (RPM 5–7 USD) và Hàn Quốc (RPM 4–6 USD) dễ cắn view hơn và không bị khấu trừ thuế Hoa Kỳ như view Mỹ.",
+    "Tư duy nhân bản thị trường: lấy các chủ đề đã nổ view ở Nhật/Hàn hoặc Việt Nam (như chữ số cuối năm sinh nói về kiếp trước, 5 vị trí ngứa cảnh báo ung thư, thói quen người già) rồi dịch nguyên kịch bản sang thị trường đích mà không cần tự nghĩ mới.",
+    "Quy trình tạo voice và avatar: dùng Vbee cho thị trường Việt hoặc ElevenLabs cho thị trường ngoại, sau đó đưa file âm thanh vào HeyGen để tạo nhân vật AI nhép môi khớp khẩu hình trước khi ghép trên CapCut.",
+    "Kỹ thuật dựng CapCut: tách nền nhân vật HeyGen đặt ở góc khung hình, chèn cảnh quay minh họa (B-roll), hiệu ứng âm thanh chuyển cảnh và phụ đề cỡ lớn dễ đọc cho khán giả lớn tuổi."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 3 bước thực chiến: VIP_ Tư duy nhân bản thị trường và hướng dẫn từ A-Z cách làm edit và thumb",
+    "additional": [
+      "Dùng prompt dịch kịch bản từ kênh đối thủ sang ngôn ngữ thị trường mục tiêu trên ChatGPT và lưu qua Notepad.",
+      "Tạo file âm thanh giọng đọc bằng Vbee (view Việt) hoặc ElevenLabs (view ngoại), sau đó tải lên HeyGen để render nhân vật AI nói khớp khẩu hình.",
+      "Đưa video nhân vật HeyGen và các cảnh minh họa vào CapCut, xóa nền nhân vật, thêm phụ đề to rõ và thiết kế thumbnail bám sát bố cục kênh đối thủ."
+    ]
+  },
+  "avoid_flags": [
+    "Không để avatar chỉ lặp một đoạn ngắn như đối thủ vì khán giả không thích",
+    "Không lao vào cùng một ngách vì cạnh tranh cao, nên chọn ngách nhỏ khác",
+    "Làm mờ ảnh nền thumbnail quá nhiều thì nhìn đau mắt, chữ chói khó nhìn thì ít click"
+  ],
+  "verified_expert_summary": true,
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Hướng dẫn làm kênh nhân bản ở các thị trường (giọng hơi khàn vì ốm)"
+    },
+    {
+      "time": "05:25",
+      "seconds": 325,
+      "label": "Ví dụ kênh lập 13/5, sau 13 ngày đã có video 200.000 view ở thị trường Việt"
+    },
+    {
+      "time": "10:52",
+      "seconds": 652,
+      "label": "Mỗi người chọn một ngách nhỏ khác nhau để giảm cạnh tranh, tăng tỷ lệ thành công"
+    },
+    {
+      "time": "16:07",
+      "seconds": 967,
+      "label": "Tải nhiều video nguồn về ghép cho đủ thời lượng khớp với giọng đọc 8-10 phút"
+    },
+    {
+      "time": "21:36",
+      "seconds": 1296,
+      "label": "Tạo avatar: chọn Custom photo avatar, tải ảnh đã xóa nền lên"
+    },
+    {
+      "time": "27:05",
+      "seconds": 1625,
+      "label": "Làm phần giới thiệu: copy đoạn lời thoại đã chuẩn bị vào để chạy"
+    },
+    {
+      "time": "32:22",
+      "seconds": 1942,
+      "label": "Chỉnh phông chữ to, rõ vì người xem lớn tuổi thích chữ lớn"
+    },
+    {
+      "time": "37:46",
+      "seconds": 2266,
+      "label": "Chọn phông chữ, màu trắng, viền đen giống đối thủ"
+    }
+  ],
+  "tools_mentioned": [
+    "ChatGPT",
+    "Notepad",
+    "Google Dịch",
+    "ElevenLabs",
+    "Vbee",
+    "HeyGen"
+  ],
+  "sop_steps": [
+    "Lấy kịch bản video đối thủ bằng web free, dịch bằng ChatGPT theo prompt dịch tự nhiên và đổi tên nhân vật sang tên Việt, lưu vào Notepad",
+    "Tải video thiên nhiên free không bản quyền từ Pexels, Pixabay, Videvo, Coverr, Vecteezy, tải nhiều video để ghép đủ độ dài voice",
+    "Tạo voice tiếng Việt tốc độ 0.75; làm thị trường nước ngoài thì dùng ElevenLabs; tạo một ảnh nhân vật dùng xuyên suốt kênh",
+    "Xóa nền ảnh nhân vật, đưa vào công cụ tạo avatar chọn Custom photo avatar, khung dọc, upload audio để nhép miệng, tải về 1080p",
+    "Edit: ghép video nền, chèn avatar xóa nền, thêm hiệu ứng âm thanh, trích xuất phụ đề tiếng Việt chữ to in đậm nền mờ khoảng 50, xuất 4K (máy yếu xuất 1080p)"
+  ],
+  "sku": "VIDEO-f59aa7",
+  "title": "VIP_ Tư duy nhân bản thị trường và hướng dẫn từ A-Z cách làm edit và thumb",
+  "actual_topic": "VIP_ Tư duy nhân bản thị trường và hướng dẫn từ A-Z cách làm edit và thumb",
+  "channels_mentioned": [],
+  "visual_audio_checked": true,
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "source_transcript": "video/VIDEO-f59aa7/transcript.txt",
+  "niche_primary": "Sức khỏe & Tâm linh người cao tuổi (Nhân bản đa thị trường)",
+  "market_code": "JP",
+  "target_market": "Nhật Bản"
+}

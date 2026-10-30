@@ -1,0 +1,459 @@
+1
+00:00:00,000 --> 00:00:08,580
+Chào anh chị em học viên, hôm nay chúng ta sẽ đến với cái bài nhạc không lời. Để làm ra những cái bài nhạc không lời này thì anh chị có thể nhìn thấy ở trên màn
+
+2
+00:00:08,580 --> 00:00:17,540
+hình thì có những video đến 1 tiếng. Những cái video như thế này thì nó chỉ cần tầm 10-20.000 view là anh chị đủ giờ xem rồi. Vì bản chất nó là video dài. Thì cái thời
+
+3
+00:00:17,540 --> 00:00:26,020
+lượng người ta bật lặp đi lặp lại người ta nghe, người ta cảm nhận thì nó rất là cao. Và cái tỷ lệ giữ chân hầu như là người ta nghe để ngủ, nghe để thư giãn.
+
+4
+00:00:26,020 --> 00:00:35,760
+Anh chị hãy nghe những dòng nhạc mà nhạc quán cà phê thì cái nhạc không lời nó như thế. Để sản xuất được những video này thì anh chị đi theo từng bước. Là bước đầu tiên chúng
+
+5
+00:00:35,760 --> 00:00:44,600
+ta là bước tạo hình ảnh. Bước thứ 2 là chúng ta sẽ tạo ra cái video để chúng ta đưa lên CapCut để chúng ta làm làm sao để cho nó phù hợp dài 1 tiếng. Bước thứ
+
+6
+00:00:44,600 --> 00:00:53,560
+3 là bước tạo nhạc phù hợp. Thì bắt đầu chúng ta sẽ đi vào quy trình như sau. Để làm được những dòng nhạc như thế này thì anh chị phải dùng các công cụ như sau.
+
+7
+00:00:54,000 --> 00:01:05,120
+ChatGPT, Suno AI, Grok, Flow. Anh chị có thể tạo hình ảnh trên ChatGPT cũng được, tạo hình ảnh trên Grok cũng được, tạo hình ảnh trên Flow cũng được. Anh chị muốn tạo như thế nào cũng được.
+
+8
+00:01:05,120 --> 00:01:10,100
+cũng được cái quan trọng là chúng ta sẽ tạo như thế nào và làm như thế nào để cho nó hiệu quả thì anh chị
+
+9
+00:01:10,100 --> 00:01:16,940
+nhấn vào một video bất kỳ mở đường link kết này đây là một cái video dài một tiếng thì để tạo được
+
+10
+00:01:16,940 --> 00:01:24,391
+những hình ảnh này thì anh chị nhấn chụp ảnh cái hình ảnh này cho em Alt + Z (chụp màn hình Cốc Cốc) chụp cái màn hình nhé
+
+11
+00:01:24,391 --> 00:01:32,991
+Sau đó thì chúng ta đưa lên con ChatGPT. Bây giờ chúng ta đi đến với câu lệnh để cho
+
+12
+00:01:32,991 --> 00:01:41,591
+ChatGPT hiểu và vất ra cho chúng ta một câu prompt để chúng ta tạo ra một hình ảnh khác.
+
+13
+00:01:42,000 --> 00:01:49,331
+Câu lệnh thứ nhất là câu prompt để tạo hình ảnh. Anh chị copy câu prompt tạo hình ảnh này. Anh chị chụp hình ảnh lại và ghi ra.
+
+14
+00:01:49,651 --> 00:01:55,991
+Và chúng ta ghi ra bên ChatGPT luôn. Anh chị dán vào ChatGPT. Nhấn Enter.
+
+15
+00:01:57,751 --> 00:02:04,990
+Bây giờ dựa trên cái hình ảnh gốc, ChatGPT sẽ cho anh chị một cái hình ảnh nhạc cổ Trung Hoa.
+
+16
+00:02:04,990 --> 00:02:12,640
+dưới là cái prompt nhé trên là nó phân tích hình ảnh gốc dưới là prompt tạo hình ảnh trên
+
+17
+00:02:12,640 --> 00:02:20,290
+Flow này anh chị copy cái câu prompt này cho em đấy nhé chúng ta nhấn sao chép câu prompt
+
+18
+00:02:20,290 --> 00:02:27,641
+này và bây giờ bên phần Flow anh chị nhấn tạo dự án và chúng ta dán cái câu lệnh
+
+19
+00:02:27,641 --> 00:02:34,991
+vừa giờ chúng ta được ChatGPT cho anh chị chọn cái kích thước là 16.9 chương 7 9.16 hay 3.1
+
+20
+00:02:34,991 --> 00:02:36,591
+4:3, 1:1 đó
+
+21
+00:02:37,950 --> 00:02:49,000
+Chúng ta nhấn tạo hình ảnh. Anh chị lấy 1 trong 2 hình ảnh. Em sẽ nhấn tải hình ảnh này xuống. Tải xuống nhé. Mọi người để 1K cũng được. Và anh chị mở
+
+22
+00:02:49,000 --> 00:03:00,000
+1 cái tab ChatGPT mới và tải hình ảnh vừa giờ chúng ta tải xuống đây. Sau đó thì chúng ta đến với cái Prompt thứ 2 là câu lệnh để tạo ra Master Prompt.
+
+23
+00:03:00,000 --> 00:03:10,870
+Nói cho anh chị hiểu là Master Prompt là nó sẽ tạo ra một prompt chi tiết để sau anh chị tạo ra những cái hình ảnh như thế này thì nó sẽ trả cho anh chị prompt.
+
+24
+00:03:11,590 --> 00:03:18,650
+Nghĩa là khi mà có bất kỳ hình ảnh nào liên quan đến cái nhạc cổ Trung Hoa là anh chị vất lên là nó tự động tạo ra prompt.
+
+25
+00:03:18,650 --> 00:03:25,010
+Bây giờ anh chị copy từ cái câu lệnh này nhé. Anh chị trả lại kết quả cho nó.
+
+26
+00:03:30,130 --> 00:03:32,850
+Bây giờ là vất cái hình ảnh vừa giờ chúng ta đưa lên.
+
+27
+00:03:38,290 --> 00:03:39,590
+Và anh chị gửi lên là được.
+
+28
+00:03:39,590 --> 00:03:48,550
+Bây giờ là nó đã nêu lại cái toàn bộ những thứ mà anh chị đã đưa cho nó để tạo ra Master Prompt
+
+29
+00:03:48,550 --> 00:03:51,750
+Và bây giờ là vất hình ảnh nhạc cổ Trung Hoa lên
+
+30
+00:03:51,750 --> 00:03:54,230
+Cái tab này anh chị nên ghi nhớ cho em
+
+31
+00:03:54,230 --> 00:03:58,230
+Chỉ cần chúng ta vất cái hình ảnh nhạc cổ Trung Hoa lên là nó sẽ tạo ra cái prompt này
+
+32
+00:03:58,230 --> 00:03:59,530
+Prompt 10 giây nhé
+
+33
+00:03:59,590 --> 00:04:01,470
+anh chị nhấn Sao chép prompt 10s
+
+34
+00:04:01,470 --> 00:04:02,950
+bây giờ chúng ta lên Grok
+
+35
+00:04:02,950 --> 00:04:05,150
+và tải cái hình ảnh vừa giờ chúng ta đưa lên
+
+36
+00:04:06,150 --> 00:04:07,150
+và anh chị dán vào
+
+37
+00:04:08,350 --> 00:04:11,150
+chọn 720 và chúng ta chọn 10s
+
+38
+00:04:12,950 --> 00:04:14,466
+nó đang tạo video cho anh chị nhé
+
+39
+00:04:14,466 --> 00:04:20,226
+Trong khi chờ đợi Grok tạo video thì anh chị hãy tạo cho em một cái ChatGPT mới.
+
+40
+00:04:21,266 --> 00:04:24,806
+Và anh chị thêm này, thêm cái ảnh, vẫn thêm cái ảnh ấy lên nhé.
+
+41
+00:04:25,000 --> 00:04:29,786
+Và bây giờ là câu lệnh, câu lệnh thứ 3 để tạo ra Master Prompt làm nhạc.
+
+42
+00:04:30,106 --> 00:04:35,646
+Anh chị hãy copy hoặc viết ra giống như cái câu lệnh mà em đang ghi ở trên màn hình nhé.
+
+43
+00:04:36,386 --> 00:04:39,106
+Anh chị dán vào, nhấn tải lên.
+
+44
+00:04:39,106 --> 00:04:46,166
+Bây giờ nó cũng sẽ cho anh chị 1 cái Master Prompt để tạo ra cái nhạc nhé. Sau anh chị gửi
+
+45
+00:04:46,166 --> 00:04:53,226
+cái hình ảnh lên là nó sẽ tạo ra cho anh chị 1 prompt để tạo nhạc trên Suno AI luôn.
+
+46
+00:04:53,786 --> 00:04:56,306
+Đấy là nó tạo ra cho anh chị 1 câu lệnh ghi nhớ này.
+
+47
+00:05:01,566 --> 00:05:08,306
+Anh chị nhấn Sao chép câu lệnh ghi nhớ mà cái Master Prompt nhạc nó tạo ra, gửi lại cho nó.
+
+48
+00:05:08,750 --> 00:05:21,950
+Bây giờ anh chị tải lại cái hình ảnh lên để chúng ta yêu cầu nó tạo ra một from để tạo nhạc trên Suno AI.
+
+49
+00:05:23,950 --> 00:05:27,950
+Cũng giống như cái bước mà chúng ta tạo hình ảnh ra video nhé.
+
+50
+00:05:29,830 --> 00:05:33,150
+Chúng ta đã có một cái Suno AI Style Prompt này.
+
+51
+00:05:34,250 --> 00:05:35,410
+Anh chị nhấn Sao chép.
+
+52
+00:05:38,750 --> 00:05:48,120
+Nhấn sao chép này. Trong phần Suno AI, anh chị nhấn tạo lên, chọn đơn giản nhé. Chúng ta không cần trình độ cao đâu. Nhấn
+
+53
+00:05:48,120 --> 00:05:57,490
+cho em đơn giản và dán cái prompt vừa giờ vào. Anh chị nhấn vào nhạc cụ nhé. Sau đó là nhấn tạo bài hát này.
+
+54
+00:05:57,490 --> 00:06:09,690
+Trong khi chờ đợi cái Suno AI tạo nhạc cho chúng ta thì chúng ta sang cho em cái phần Grok này.
+
+55
+00:06:09,690 --> 00:06:18,790
+Anh chị nhìn cái video đây. Video nó sẽ giữ nguyên khung mình như thế này là được nhé anh chị nhé.
+
+56
+00:06:18,790 --> 00:06:24,790
+để tí nữa chúng ta là lấy video 10 giây này chúng ta tạo ra video một tiếng nhé
+
+57
+00:06:24,790 --> 00:06:29,190
+rồi chúng ta tải cái gốc này về cho em tải video này về
+
+58
+00:06:29,190 --> 00:06:36,790
+sau khi Suno AI tạo cho anh chị em xong cái nhạc thì anh chị em tải về
+
+59
+00:06:45,000 --> 00:06:52,840
+Sau khi vào trong cái phần CapCut, anh chị tải cho em 2 cái file, 1 file video vừa tạo trên Grok và cái nhạc này.
+
+60
+00:06:52,840 --> 00:07:05,600
+Sau khi thêm nhạc vào xong thì anh chị nhấn Sao chép 2 bản đi. Tắt âm thanh nhé anh chị nhé. Tắt âm thanh của video đi. Và anh chị nhìn nhé. Nếu mà như thế này
+
+61
+00:07:05,600 --> 00:07:18,681
+thì chúng ta sẽ không làm được cái video 1 tiếng. Anh chị nhớ cho em là trong cái video thứ 2 thì anh chị bật cho em cái đảo ngược này nhé. Nhấn vào đảo ngược này.
+
+62
+00:07:18,681 --> 00:07:23,621
+Đảo ngược nha anh chị nha, không phải phản chiếu nha, chúng ta chọn đảo ngược này.
+
+63
+00:07:25,421 --> 00:07:29,081
+Thì anh chị sẽ nhìn thấy là cái hình ảnh nó rất là liền nha.
+
+64
+00:07:30,941 --> 00:07:32,581
+Chúng ta sẽ xem qua này.
+
+65
+00:07:35,581 --> 00:07:36,701
+Nó sẽ liền lại.
+
+66
+00:07:37,241 --> 00:07:40,601
+Thì sau khi có rồi thì chúng ta sẽ sao chép lên.
+
+67
+00:07:41,281 --> 00:07:42,381
+Anh chị copy cho em.
+
+68
+00:07:43,101 --> 00:07:45,421
+Copy 2 cái nha, chứ không phải copy 1 cái nữa nha.
+
+69
+00:07:46,081 --> 00:07:47,581
+Mà chúng ta sẽ copy 2 cái nha.
+
+70
+00:07:50,900 --> 00:07:58,670
+Đấy, thì anh chị nhìn thấy là chúng ta đã tạo ra được cái video như thế này.
+
+71
+00:07:58,670 --> 00:08:06,440
+Thì đối với cái đoạn nhạc nó có cái hay như thế này. Cái nhạc nhé, anh chị copy
+
+72
+00:08:06,440 --> 00:08:13,660
+cái link nhạc này để cho nó phù hợp luôn. Ở trong cái nhạc em vừa copy cái
+
+73
+00:08:13,660 --> 00:08:20,880
+nhạc ra thì chúng ta sẽ lựa chọn cái gì ạ? Ở phần này nhé, anh chị ra.
+
+74
+00:08:21,000 --> 00:08:32,500
+Anh chị kéo cho em cái âm này cho nó bé xuống. Xong cái âm này thì nó sẽ cao lên. Để làm sao cho em 2 cái này nó phù hợp nhé. Anh chị thẩm qua cái nhạc của mình nhé.
+
+75
+00:08:32,500 --> 00:08:35,320
+nhạc của mình
+
+76
+00:08:42,000 --> 00:08:43,500
+đó
+
+77
+00:08:43,500 --> 00:08:51,220
+và tiếp tục nha chúng ta sẽ
+
+78
+00:08:51,220 --> 00:08:53,000
+Chúng ta sẽ ăn lấy cái này luôn
+
+79
+00:08:53,000 --> 00:08:54,040
+Đã
+
+80
+00:08:54,040 --> 00:08:56,000
+Anh chị kéo xuống cho em tầm 10.
+
+81
+00:08:56,680 --> 00:08:58,500
+Cái này chúng ta xem là 8 đúng không?
+
+82
+00:08:58,500 --> 00:09:03,500
+anh chị nhìn thấy ở cái kéo âm thanh kia thì chúng ta để 8.0 giây nhé
+
+83
+00:09:03,500 --> 00:09:06,500
+thì cái này anh chị em kéo cho em tầm 8 nhé
+
+84
+00:09:06,500 --> 00:09:10,500
+9 này, hoặc không thì anh chị để cho em ở trên cái mờ dần này
+
+85
+00:09:10,500 --> 00:09:13,066
+8.0
+
+86
+00:09:13,066 --> 00:09:19,066
+Chúng ta sẽ copy cái nhạc thứ 2 này nhé
+
+87
+00:09:19,066 --> 00:09:30,326
+Nếu mà để cho cái đoạn nó làm sao để cho nó hiệu quả, mình biết cái đoạn trước đoạn sau ấy, để cho nó ok hơn ấy, thì anh chị cắt cho em cái đoạn này
+
+88
+00:09:30,330 --> 00:09:43,890
+Ctrl B nhé, anh chị nhấn vào cái nhạc này, kéo đến cái thanh trắng ở đâu thì vị trí nó ở đó. Đây, anh chị cắt cho em cái đoạn này. Và nhấn Sao chép cái đoạn này cho em nhé. Nhấn Sao chép này. Thì gì ạ? Thì chúng ta cứ
+
+89
+00:09:43,890 --> 00:09:57,706
+kéo đến cái cuối cùng của cái video này nhé. Thì chúng ta biết là cái đoạn kia chúng ta dừng ở đâu thì đoạn này chúng ta sẽ dừng ở đây. Đấy, bây giờ thì chúng ta sẽ có 2 cái này như thế này rồi. Nhấn tạo clip tiếp cho em.
+
+90
+00:10:00,326 --> 00:10:03,886
+Và cứ thế là anh chị copy cái nhạc nhẹ ra cho em.
+
+91
+00:10:06,086 --> 00:10:06,926
+Copy này.
+
+92
+00:10:09,406 --> 00:10:10,326
+Xóa cái này đi.
+
+93
+00:10:15,726 --> 00:10:20,686
+Cứ nhớ cho em là cái bé này ở đâu thì bắt đầu cái đoạn nhạc nó ở đó nhé.
+
+94
+00:10:22,286 --> 00:10:23,166
+Dán đây cho em.
+
+95
+00:10:25,200 --> 00:10:37,200
+nhớ là mọi người phải có cái gu thẩm nhạc đã thì khi mà có như này rồi thì anh chị nhớ cho em là anh chị nhấn lên nhân các video này lên
+
+96
+00:10:37,200 --> 00:10:45,200
+nhấn cho em video lên copy nhấn lên
+
+97
+00:10:45,200 --> 00:10:55,130
+Chúng ta làm thủ công hết nhé. Làm những cái dòng nhạc này anh chị lên cho em là thủ công. Nhớ cho em là cái video
+
+98
+00:10:55,130 --> 00:11:05,060
+đầu tiên là hai cái đoạn đầu thì anh chị nhớ là đoạn đầu hay đoạn sau thì anh chị phải nhớ cái đoạn này. Cắt này.
+
+99
+00:11:05,060 --> 00:11:13,060
+video này để tầm 25 phút thôi anh chỉ có thể đếm tiếng được và trong cái này nữa thì chúng ta sẽ thêm những cái hiệu ứng
+
+100
+00:11:13,060 --> 00:11:17,060
+anh chị tìm cho em là lấp lánh
+
+101
+00:11:17,060 --> 00:11:25,060
+đây nha trong cái phần hiệu ứng anh chị chọn cho em cái lấp lánh này
+
+102
+00:11:25,060 --> 00:11:33,060
+anh chị dán cho em cái phát sáng này đi cho cường độ nó nhẹ
+
+103
+00:11:33,060 --> 00:11:43,260
+bộ lọc nó nhẹ rồi xoay nó sẽ có những cái phát sáng ở trong mà nó sẽ không tính là lặp đi lặp lại và mây anh chị em nhé
+
+104
+00:11:43,260 --> 00:11:53,260
+Anh chị làm sao cho em là tìm những cái hiệu ứng băng tuyết mây này
+
+105
+00:11:53,260 --> 00:11:56,260
+Ví dụ em chọn cái này đi
+
+106
+00:11:56,260 --> 00:12:03,260
+không khí này, cực sáng này, khoảng tốc độ này, bộ lọc cho bé
+
+107
+00:12:03,260 --> 00:12:04,210
+Cảm ơn.
+
+108
+00:12:04,210 --> 00:12:12,930
+Chị ăn cho em vài cái hiệu ứng mà làm sao để chúng ta thẩm được cái màu sắc nhé. Đó, đây là một cái video về nhạc cổ Trung Hoa nhé anh chị em nhé.
+
+109
+00:12:13,000 --> 00:12:25,910
+Và anh chị có thể nếu mà làm xong anh chị chọn tất cả anh chị nhấn cho em tạo clip ghép thì nó đã ra một cái file video như thế này. Rất là dài 25 phút. Thì làm cực kỳ nhanh nhé. Và tiếp theo đến
+
+110
+00:12:25,910 --> 00:12:33,100
+chúng ta đến cái phần là tạo thumbnail nhé anh chị em. Tiếp theo câu prompt tạo ảnh thumbnail nhé anh chị nhé. Anh
+
+111
+00:12:33,100 --> 00:12:40,290
+chị copy cho em cái câu prompt này. Hoặc là anh chị viết ra nhé. Viết đúng cái câu prompt này cho em.
+
+112
+00:12:40,290 --> 00:12:50,810
+Thì ở dưới cái prompt mà tạo ra nhạc ấy, thì anh chị vào cho em cái đấy, update cái hình ảnh và gốc của chúng ta lên.
+
+113
+00:12:51,370 --> 00:13:02,810
+Video như thế nào thì thumbnail chúng ta làm như thế nhé, chúng ta không làm kiểu như là làm cho nó có hay là nội dung trong video như thế này, anh chị làm cái hình ảnh thumbnail khác thì không được nhé.
+
+114
+00:13:02,870 --> 00:13:09,270
+Sau khi đợi một lúc thì ChatGPT đã cho chúng ta ra một cái hình ảnh thumbnail nhé, anh chị có thể nhìn thấy cái hình ảnh thumbnail này.
+
+115
+00:13:09,270 --> 00:13:22,670
+hoặc là anh chị có thể thêm những cái tư duy để viết cái thumbnail nó khác hơn. Điều được đó là do mình sáng tạo hoặc là có điểm nhấn hay không là tùy theo cái mắt của anh chị thẩm mỹ được cái hình ảnh thumbnail này.

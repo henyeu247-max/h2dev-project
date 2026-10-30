@@ -1,0 +1,91 @@
+{
+  "sku": "VIDEO-bdfa54",
+  "title": "Key Sinh Tồn view Việt bán content",
+  "actual_topic": "Case study kênh bình luận sinh tồn view Việt (1 video ~2M view kiếm gần 10 triệu đồng) và quy trình lấy nguồn Douyin, dịch SRT bằng ChatGPT, đọc Vbee và lách bản quyền trên CapCut",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Sinh Tồn Hoang Dã View Việt",
+  "niche_id": "faceless-general",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Ngách bình luận/review sinh tồn nơi hoang dã, bão tuyết ở thị trường Việt Nam rất dễ làm cho người mới: kênh cũ của tác giả chỉ đăng vài video đã có bài đạt khoảng 2 triệu view, mang về gần 10 triệu đồng (10 củ).",
+    "Quy trình tìm nguồn gốc: dịch từ khóa sinh tồn sang tiếng Trung (giản thể hoặc phồn thể) để tìm trên Douyin các video gốc nhiều tim, tải bản không logo về máy.",
+    "Cách dịch phụ đề khớp thời gian: đưa video gốc vào CapCut tạo phụ đề tiếng Trung tự động, xuất file SRT mở bằng Notepad rồi đưa vào ChatGPT 4o dịch từng đoạn giữ nguyên mốc thời gian để không bị lệch nhịp.",
+    "Kỹ thuật lách bản quyền và tránh lỗi sử dụng lại nội dung: giảm tốc độ hoặc tách/hạ âm thanh giọng gốc ở những đoạn có tiếng động, đè giọng đọc Vbee lên, chèn logo kênh và cuối cùng gộp (Compound Clip) tăng tốc độ lên lại 1.0x."
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu ngách làm bình luận sinh tồn view Việt theo luật Fair Use"
+    },
+    {
+      "time": "02:05",
+      "seconds": 125,
+      "label": "Show doanh thu kênh cũ: video ~2M view mang về gần 10 triệu đồng"
+    },
+    {
+      "time": "04:48",
+      "seconds": 288,
+      "label": "Cách dịch từ khóa tiếng Trung để tìm nguồn video sinh tồn trên Douyin"
+    },
+    {
+      "time": "08:35",
+      "seconds": 515,
+      "label": "Đưa video vào CapCut, phóng khung hình che chữ Trung và xuất file SRT"
+    },
+    {
+      "time": "10:25",
+      "seconds": 625,
+      "label": "Mở file SRT bằng Notepad và dùng ChatGPT 4o dịch khớp mốc thời gian"
+    },
+    {
+      "time": "13:51",
+      "seconds": 831,
+      "label": "Tạo giọng đọc tiếng Việt bằng Vbee và nhập lại vào CapCut"
+    },
+    {
+      "time": "15:19",
+      "seconds": 919,
+      "label": "Kỹ thuật tách/hạ âm thanh gốc và gộp clip chỉnh tốc độ để lách bản quyền"
+    }
+  ],
+  "edit_sop": {
+    "primary": "Bán content ngách sinh tồn view Việt: tìm video Douyin, tải về, dịch phụ đề Trung sang Việt, làm giọng và edit trong CapCut",
+    "additional": [
+      "Dịch từ khóa sinh tồn nơi hoang dã sang tiếng Trung, dán vào Douyin (không cần đăng nhập) để tìm video, rồi sao chép link và dùng web tải video về",
+      "Đưa video vào CapCut, chỉnh khung hình 16:9, phóng to khoảng 110 hoặc 115 để mất chữ Trung, giảm tốc độ video về 0.7 hoặc 0.6 để lời đọc không bị chèn nhau",
+      "Lấy phụ đề tiếng Trung ra file srt, mở bằng Notepad, dán vào ChatGPT dịch sang tiếng Việt, mỗi lần khoảng 50 hoặc 60 đoạn và yêu cầu giữ đúng định dạng srt có timeline",
+      "Dùng VB tạo giọng đọc, chỉnh tốc độ giọng 0.7, tải về và kiểm tra lại có khớp phụ đề; tắt giọng gốc, hạ âm thanh nền khoảng âm 10, giọng Việt khoảng 15",
+      "Gom các lớp thành một dự án rồi chỉnh tốc độ trở lại 1.0 (có thể chỉnh quanh 0.86 tùy video); chèn logo kênh, chữ chạy quanh video, thông báo đăng ký kênh rồi xuất video"
+    ]
+  },
+  "avoid_flags": [
+    "Không dùng Google Dịch vì dịch ngố, người xem khó chịu và thoát ra, kênh không được đề xuất",
+    "Không chê view Việt; người mới nên nghĩ tới kiếm view trước, đừng nghĩ kiếm tiền trước",
+    "Làm bán content nên edit và chèn thật nhiều logo, nhãn, thông báo để dễ kháng khi bị báo sử dụng lại nội dung"
+  ],
+  "tools_mentioned": [
+    "Douyin",
+    "CapCut",
+    "Notepad",
+    "ChatGPT",
+    "Google Dịch",
+    "Vbee"
+  ],
+  "channels_mentioned": [
+    "@SinhTonRV"
+  ],
+  "analysis_method": "human_verified_deep_audit",
+  "accuracy_status": "verified",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-bdfa54/transcript.txt",
+  "sop_steps": [
+    "Dịch từ khóa sinh tồn nơi hoang dã sang tiếng Trung, dán vào Douyin (không cần đăng nhập) để tìm video, rồi sao chép link và dùng web tải video về",
+    "Đưa video vào CapCut, chỉnh khung hình 16:9, phóng to khoảng 110 hoặc 115 để mất chữ Trung, giảm tốc độ video về 0.7 hoặc 0.6 để lời đọc không bị chèn nhau",
+    "Lấy phụ đề tiếng Trung ra file srt, mở bằng Notepad, dán vào ChatGPT dịch sang tiếng Việt, mỗi lần khoảng 50 hoặc 60 đoạn và yêu cầu giữ đúng định dạng srt có timeline",
+    "Dùng VB tạo giọng đọc, chỉnh tốc độ giọng 0.7, tải về và kiểm tra lại có khớp phụ đề; tắt giọng gốc, hạ âm thanh nền khoảng âm 10, giọng Việt khoảng 15",
+    "Gom các lớp thành một dự án rồi chỉnh tốc độ trở lại 1.0 (có thể chỉnh quanh 0.86 tùy video); chèn logo kênh, chữ chạy quanh video, thông báo đăng ký kênh rồi xuất video"
+  ]
+}

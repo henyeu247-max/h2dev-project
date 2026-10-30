@@ -1,0 +1,129 @@
+{
+  "sku": "VIDEO-ffea40",
+  "title": "Quy luật Keep Going & Con Số 152 Video Trước Điểm Bùng Phát",
+  "actual_topic": "Giải mã quy luật tăng trưởng lãi kép 'Keep Going' trên YouTube, định lượng chính xác 4 cột mốc số lượng video trung bình cần sản xuất (152 → 418 → 1.171 → 3.873 video theo thống kê Part-Time YouTuber Academy của Ali Abdaal) và đối chứng thực tế từ các kênh triệu sub trong và ngoài nước.",
+  "category_group": "Xây Kênh & Khởi Tạo Hệ Thống",
+  "niche_primary": "Tư Duy Tăng Trưởng & Quy Luật Keep Going",
+  "niche_id": "KEEP_GOING_152_VIDEOS",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "tools_mentioned": [
+    "YouTube",
+    "YouTube Shorts"
+  ],
+  "channels_mentioned": [
+    "@TranVietQuan",
+    "@aliabdaal",
+    "@MrBeast",
+    "@PhamThanhLong",
+    "@ThoNguyen",
+    "@5MinuteCraftsYouTube",
+    "@BRIGHTSIDEOFFICIAL"
+  ],
+  "course_docs": [
+    {
+      "title": "Infographic: Số lượng video trung bình cần sản xuất để đạt 1 Triệu Subscribers (Ali Abdaal — Part-Time YouTuber Academy)",
+      "file": "assets/docs-huan/so_video_can_de_tao_ra_1tr_sub.jpg",
+      "readFile": "docs/VIDEO-ffea40/README.md",
+      "link": "https://drive.google.com/file/d/1TlBoB3kk7YIM9MaMOG2iae52-2kiys_A/view"
+    },
+    {
+      "title": "Checklist YouTube 1 Trang — Quy trình tối ưu & đăng tải video chuẩn hóa",
+      "file": "assets/docs-huan/CHECKLIST_YOUTUBE_1_TRANG.docx",
+      "readFile": "assets/docs-huan/CHECKLIST_YOUTUBE_1_TRANG.docx.md",
+      "link": "https://drive.google.com/file/d/1YEfmxATH9KB9vsH_hkMpW9QaxvGRUYG1/view"
+    },
+    {
+      "title": "7 Bước Thành Công Với YouTube — Bí Mật Kiếm Tiền YouTube",
+      "file": "assets/docs-huan/7_buoc_thanh_cong_voi_Youtube_-_BI_MAT_KIEM_TIEN_YOUTUBE_.pdf",
+      "readFile": "assets/docs-huan/7_buoc_thanh_cong_voi_Youtube_-_BI_MAT_KIEM_TIEN_YOUTUBE_.pdf.md",
+      "link": "https://drive.google.com/file/d/1DjL8FIY0VknSZcn9W1m2WYltKXmTDh27/view"
+    }
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giai đoạn 0 đến 1.000 Subscribers: Thung lũng khắc nghiệt nhất khiến 90% người làm YouTube bỏ cuộc"
+    },
+    {
+      "time": "00:30",
+      "seconds": 30,
+      "label": "Thực tế phũ phàng trong các lớp học: Cứ 200 người bắt đầu thì chỉ còn 10–20 người kiên trì làm đúng quy trình đến khi hái quả ngọt"
+    },
+    {
+      "time": "00:58",
+      "seconds": 58,
+      "label": "Biểu đồ đường cong bùng phát (Sub vs Time): Tăng trưởng đi ngang ở 0–1.000 sub rồi bứt phá dựng đứng 1K → 5K → 20K → 100K sub"
+    },
+    {
+      "time": "01:24",
+      "seconds": 84,
+      "label": "Case study kênh thầy Trần Việt Quân: Tăng tốc thần tốc từ 2.000 sub (tháng 3) lên 100.000 sub (tháng 8) nhờ hiệu ứng lãi kép của thuật toán"
+    },
+    {
+      "time": "01:44",
+      "seconds": 104,
+      "label": "Giải thích cơ chế tại sao càng nhiều video kênh càng dễ nổ: Khán giả xem 1 video hay sẽ cày tiếp chuỗi video cũ và bấm Đăng ký hàng loạt"
+    },
+    {
+      "time": "02:40",
+      "seconds": 160,
+      "label": "Số liệu nghiên cứu tại Part-Time YouTuber Academy (Ali Abdaal >5M sub): 152 video (1K–10K sub) và 418 video (10K–100K sub) kèm câu nói của MrBeast (500 video)"
+    },
+    {
+      "time": "03:28",
+      "seconds": 208,
+      "label": "Cột mốc 100K–1M sub (1.171 video) và trên 1M sub (3.873 video): Lộ trình 6 tháng với nhịp độ sản xuất 1 video/ngày"
+    },
+    {
+      "time": "04:09",
+      "seconds": 249,
+      "label": "Chiến thuật bứt phá bằng YouTube Shorts và cách quay video xác minh khuôn mặt để mở khóa giới hạn đăng quá 10 Shorts/ngày"
+    },
+    {
+      "time": "04:35",
+      "seconds": 275,
+      "label": "Đối chứng số lượng video thực tế của các kênh lớn: Phạm Thành Long (2.400 video), Trần Việt Quân (1.900 video), Thơ Nguyễn (1.600 video)"
+    },
+    {
+      "time": "05:19",
+      "seconds": 319,
+      "label": "Đối chứng các siêu kênh công nghiệp: 5-Minute Crafts (6.800 video), Bright Side (7.000 video), Việt Sử Toàn Thư (3.000 video) và cam kết hoàn thành 152 video đầu tiên"
+    }
+  ],
+  "key_takeaways": [
+    "Giai đoạn từ 0 đến 1.000 người đăng ký đầu tiên là giai đoạn khó khăn nhất của mọi kênh YouTube: 90% người mới bỏ cuộc ở chặng này vì đăng vài chục video đầu chưa thấy view nổ ngay.",
+    "Tăng trưởng trên YouTube không đi theo đường thẳng tuyến tính mà đi theo đường cong hàm mũ (Exponential Curve): khi vượt qua ngưỡng 1.000 sub và tích lũy đủ kho video, tốc độ tăng từ 1.000 lên 10.000 và 100.000 sub diễn ra cực nhanh (như kênh Trần Việt Quân tăng từ 2.000 sub tháng 3 lên 100.000 sub vào tháng 8).",
+    "Theo thống kê quy mô lớn được công bố tại Part-Time YouTuber Academy của Ali Abdaal (trình chiếu trực tiếp qua ảnh `so_video_can_de_tao_ra_1tr_sub.jpg`), số lượng video trung bình cần xuất bản cho từng nấc thang là: 1K–10K sub cần 152 video; 10K–100K sub cần 418 video; 100K–1M sub cần 1.171 video; và đạt trên 1M sub cần trung bình 3.873 video.",
+    "Huyền thoại YouTube thế giới MrBeast (sinh năm 1998) từng khẳng định: nếu bạn chưa làm đủ 500 video thì bạn vẫn chưa thực sự hiểu cách làm YouTube; con số 418–500 video chính là ngưỡng rèn luyện tay nghề để chạm tới Nút Bạc 100.000 sub.",
+    "Với kênh YouTube Shorts, bạn có thể đẩy tốc độ sản xuất lên mức tối đa ('max ping' hàng chục video mỗi ngày); nếu bị YouTube chặn giới hạn 10 video/ngày đối với kênh mới, chỉ cần hoàn tất bước xác minh tính năng nâng cao bằng video quay khuôn mặt thật là có thể đăng không giới hạn.",
+    "Mọi kênh triệu sub tại Việt Nam và thế giới đều là những cỗ máy sản xuất bền bỉ: Phạm Thành Long (2.400 video), Trần Việt Quân (1.900 video), Thơ Nguyễn (1.600 video), Việt Sử Toàn Thư (3.000 video), 5-Minute Crafts (6.800 video), Bright Side (7.000 video)."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 5 bước áp dụng Quy luật Keep Going để vượt qua 'thung lũng chết' 0–1.000 sub và cán mốc 152 video đầu tiên:",
+    "additional": [
+      "Thiết lập Cam kết Định lượng 152 Video: Thay vì kỳ vọng 5–10 video đầu tiên phải triệu view ngay, hãy ký cam kết kỷ luật hoàn thành tối thiểu 152 video chuẩn chỉnh trong vòng 3–6 tháng đầu tiên.",
+      "Chia nhỏ Lịch Sản Xuất Hàng Ngày (1 Video/Ngày): Duy trì nhịp độ xuất bản đều đặn 1 video dài/ngày (tương đương 180 video sau 6 tháng) để liên tục nạp dữ liệu cho thuật toán YouTube phân phối.",
+      "Mở khóa Giới hạn Đăng tải (Advanced Features Verification): Thực hiện xác minh khuôn mặt chủ sở hữu trên YouTube Studio để gỡ bỏ trần giới hạn 10 video/ngày khi triển khai chiến dịch phủ YouTube Shorts.",
+      "Tối ưu Liên kết Nội bộ (Session Watch Time): Khi kênh đã tích lũy được 50–150 video, gắn chặt Màn hình kết thúc (End Screen), Thẻ đề xuất (Cards) và Danh sách phát (Playlist) để mỗi video mới nổ view sẽ kéo toàn bộ kho video cũ cùng tăng trưởng.",
+      "Cải tiến 1% sau mỗi mốc 30 Video: Cứ mỗi 30 video đã đăng, rà soát lại tỷ lệ nhấp (CTR) và thời lượng xem trung bình (AVD) để nâng cấp tiêu đề, Thumbnail và nhịp điệu kịch bản cho tới khi chạm mốc 418 video (Nút Bạc 100K sub)."
+    ]
+  },
+  "sop_steps": [
+    "Thiết lập Cam kết Định lượng 152 Video: Thay vì kỳ vọng 5–10 video đầu tiên phải triệu view ngay, hãy ký cam kết kỷ luật hoàn thành tối thiểu 152 video chuẩn chỉnh trong vòng 3–6 tháng đầu tiên.",
+    "Chia nhỏ Lịch Sản Xuất Hàng Ngày (1 Video/Ngày): Duy trì nhịp độ xuất bản đều đặn 1 video dài/ngày (tương đương 180 video sau 6 tháng) để liên tục nạp dữ liệu cho thuật toán YouTube phân phối.",
+    "Mở khóa Giới hạn Đăng tải (Advanced Features Verification): Thực hiện xác minh khuôn mặt chủ sở hữu trên YouTube Studio để gỡ bỏ trần giới hạn 10 video/ngày khi triển khai chiến dịch phủ YouTube Shorts.",
+    "Tối ưu Liên kết Nội bộ (Session Watch Time): Khi kênh đã tích lũy được 50–150 video, gắn chặt Màn hình kết thúc (End Screen), Thẻ đề xuất (Cards) và Danh sách phát (Playlist) để mỗi video mới nổ view sẽ kéo toàn bộ kho video cũ cùng tăng trưởng.",
+    "Cải tiến 1% sau mỗi mốc 30 Video: Cứ mỗi 30 video đã đăng, rà soát lại tỷ lệ nhấp (CTR) và thời lượng xem trung bình (AVD) để nâng cấp tiêu đề, Thumbnail và nhịp điệu kịch bản cho tới khi chạm mốc 418 video (Nút Bạc 100K sub)."
+  ],
+  "avoid_flags": [
+    "Mang tâm lý ăn xổi: mới đăng được 10–20 video thấy lẹt đẹt vài chục lượt xem đã vội kết luận 'ngách này không ăn thua' rồi bỏ kênh.",
+    "Nhìn vào hào quang hiện tại của các kênh triệu sub (như Phạm Thành Long, Thơ Nguyễn, Bright Side) mà quên mất họ đã tích lũy từ 1.600 đến 7.000 video trên kênh.",
+    "Sản xuất đủ 152 video nhưng làm theo kiểu đối phó, rác nội dung, không tối ưu tiêu đề/Thumbnail và không rút kinh nghiệm qua từng video.",
+    "Bị kẹt ở giới hạn đăng 10 video/ngày khi làm hệ thống YouTube Shorts vì quên bước xác minh tính năng nâng cao bằng nhận diện khuôn mặt."
+  ],
+  "source_transcript": "video/VIDEO-ffea40/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true
+}

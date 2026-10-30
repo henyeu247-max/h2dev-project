@@ -1,0 +1,1564 @@
+1
+00:00:00,000 --> 00:00:10,220
+Thuật toán đề xuất của video
+
+2
+00:00:10,220 --> 00:00:12,740
+Cái này là cái mà ai cũng hỏi này
+
+3
+00:00:12,740 --> 00:00:17,500
+Mình nhắc lại nó có cái đề xuất về trang chủ của người đăng ký
+
+4
+00:00:17,500 --> 00:00:20,000
+Thì nó bao gồm 2 phần
+
+5
+00:00:20,000 --> 00:00:22,080
+là các cái tính năng duyệt xem vào video đề xuất
+
+6
+00:00:22,080 --> 00:00:24,660
+ở đây là có những cái
+
+7
+00:00:24,660 --> 00:00:25,940
+nốt rõ rồi
+
+8
+00:00:25,940 --> 00:00:27,820
+anh em đọc và
+
+9
+00:00:27,820 --> 00:00:28,760
+tìm hiểu
+
+10
+00:00:30,000 --> 00:00:38,387
+Trang chủ là trang màn hình chính, bao gồm cả người xem đăng nhập và đăng xuất. Tức là người ta không cần phải đăng nhập vào một người dùng mới cứng,
+
+11
+00:00:38,387 --> 00:00:46,773
+không có Gmail. Vào mà xem một cái kênh nào đấy nhiều, sau này nó vẫn xuất hiện trên trang chủ của họ bình thường. Họ chả cần đăng ký. Cái đấy
+
+12
+00:00:46,773 --> 00:00:55,160
+là cái hay. Cũng không cần phải bắt, phải vào đăng ký tài khoản mới xem được giống như ở Facebook đúng không? Facebook phải đăng ký tài khoản mới vào được.
+
+13
+00:00:55,160 --> 00:00:58,420
+Tiếp theo là nguồn cấp dữ liệu kênh đăng ký.
+
+14
+00:00:58,640 --> 00:01:05,240
+Như vừa nãy mình nói nó có thể từ bất kỳ cái nguồn lưu lượng truy cập nào nhưng không chỉ riêng những cái nguồn này.
+
+15
+00:01:05,800 --> 00:01:08,200
+Nó có thể từ kênh của mình, có thể từ kênh của người khác.
+
+16
+00:01:11,420 --> 00:01:16,360
+Và cái dạng thứ 2 là dạng đề xuất là đề xuất trực tiếp từ video.
+
+17
+00:01:17,420 --> 00:01:22,700
+Cái dạng đầu tiên nó làm ở cái là chúng ta cần phải có video nhiều rồi.
+
+18
+00:01:23,000 --> 00:01:24,400
+Chúng ta đề xuất rồi, chúng ta có người đăng ký rồi.
+
+19
+00:01:24,400 --> 00:01:28,300
+Những cái này là những cái mà người ta đã xem video của mình rồi
+
+20
+00:01:28,300 --> 00:01:32,820
+Còn cái thứ 2 là cái dạng trực tiếp nó đề xuất video của mình
+
+21
+00:01:32,820 --> 00:01:34,940
+Mình xem video này đề xuất video kia
+
+22
+00:01:35,000 --> 00:01:39,320
+Hoặc xem nó là cả một cái luồng từ video A đến B đến C đến D
+
+23
+00:01:39,320 --> 00:01:42,440
+Thì nó có 2 cái dạng đề xuất
+
+24
+00:01:42,440 --> 00:01:43,696
+Nó là như vậy
+
+25
+00:01:43,696 --> 00:01:51,136
+Thì hôm nay chúng ta sẽ nói sâu hơn về cái luồng đề xuất của video và của khán giả.
+
+26
+00:01:51,676 --> 00:01:57,456
+Cái thực chất khi mà mình nói, anh em mình nói, nhìn cái lượng view, lượng sub á, nó thể hiện cho cái gì?
+
+27
+00:01:57,936 --> 00:01:59,796
+Nó cũng thể hiện cho sự quan tâm của khán giả.
+
+28
+00:02:00,716 --> 00:02:04,176
+Nó cũng thể hiện cho việc là cái nội dung của mình nó đúng đối tượng hay không.
+
+29
+00:02:04,736 --> 00:02:09,656
+Và cái phần này, chúng ta có các cái thông số về việc là thời gian xem á,
+
+30
+00:02:09,656 --> 00:02:19,556
+Thì chính là cái mà cái khán giả của mình ở lại trên kênh nó như thế nào. Thì chính là cái mà chúng ta cần phải tối ưu những cái như vậy.
+
+31
+00:02:21,000 --> 00:02:29,676
+Thì tổng hợp lại chúng ta có 2 phần như vậy. Và tiếp theo chúng ta cần phải có được cái hiểu được cái phần video
+
+32
+00:02:29,676 --> 00:02:37,976
+đề xuất. Thứ 2 là video được đề xuất. Thứ 3 là video nối đề xuất. Tức là đây là video của mình nè, đang xem.
+
+33
+00:02:37,976 --> 00:02:47,516
+Thế vậy là video mình đang xem này, video nào nó đang đề xuất video của mình? Và từ video đang xem này thì đang đề xuất tiếp video này?
+
+34
+00:02:49,976 --> 00:03:00,000
+Tức là nó cả một cái luồng khán giả nhé. Tức là người ta có thể xem kênh 1, xong người ta xem kênh 2, xong người ta xem kênh 3, kênh 4, kênh 5, kênh 6, kênh 7. Vì là một người anh em để ý.
+
+35
+00:03:00,000 --> 00:03:12,420
+Một người thì họ không có, không phải là chỉ có một sở thích duy nhất, mà một người có nhiều sở thích và có thể xem được nhiều nội dung đa dạng khác nhau.
+
+36
+00:03:13,740 --> 00:03:25,100
+Nên là khi mà mình xem bất kỳ một cái video nào thì mình cũng có thể phân tích được ngược lại cái video nào đang đề xuất video đó và video đó đề xuất cái video nào tiếp theo.
+
+37
+00:03:25,100 --> 00:03:30,580
+Thì đấy là cái phần giúp cho mình thấu hiểu hơn được cái hành vi của khách hàng.
+
+38
+00:03:31,340 --> 00:03:36,340
+Mở rộng được cái tệp ra ngoài những video này họ đang xem, họ còn muốn xem những cái nào nữa.
+
+39
+00:03:37,060 --> 00:03:40,320
+Để mình tìm cách mình mở rộng, mình phục vụ cái tệp khán giả của mình.
+
+40
+00:03:43,100 --> 00:03:47,660
+Khi mà phân tích một video đó thì cần biết thứ nhất video nào đang đề xuất video của mình.
+
+41
+00:03:48,300 --> 00:03:51,820
+Cái thứ hai là video đang được đề xuất nó như thế nào, tại sao nó lại được đề xuất.
+
+42
+00:03:51,820 --> 00:03:58,020
+Cái thứ 3 là video đang được đề xuất đấy, nó tiếp tục đề xuất video nào.
+
+43
+00:03:59,440 --> 00:04:09,280
+Anh em hiểu cái luồng khán giả nó là như vậy, cái luồng hành vi của họ là như vậy, cái luồng mà họ đang làm ở trên Internet nó là như vậy.
+
+44
+00:04:09,760 --> 00:04:12,900
+Thế mình nói là Internet luôn luôn để lại dấu vết, nó là như thế.
+
+45
+00:04:12,900 --> 00:04:14,700
+như thế
+
+46
+00:04:14,700 --> 00:04:16,220
+khi mà
+
+47
+00:04:16,220 --> 00:04:18,280
+mình phải hiểu được những cái
+
+48
+00:04:18,280 --> 00:04:19,300
+nội dung như vậy
+
+49
+00:04:19,300 --> 00:04:22,620
+thì đến lúc mình có làm video hay mình phân tích video
+
+50
+00:04:22,620 --> 00:04:25,440
+hay mình có thử sai hay mình có làm sản xuất
+
+51
+00:04:25,440 --> 00:04:27,500
+thì nó nhanh thành công hơn
+
+52
+00:04:27,500 --> 00:04:30,060
+cho việc mình làm mò
+
+53
+00:04:30,060 --> 00:04:32,900
+và đặc biệt là khi mà mình làm những cái kênh mà mình
+
+54
+00:04:32,900 --> 00:04:34,720
+không biết đến ngôn ngữ nhiều nữa
+
+55
+00:04:34,720 --> 00:04:37,200
+mình không hiểu được ngôn ngữ
+
+56
+00:04:37,200 --> 00:04:39,180
+và mình không hiểu được hết những cái ý
+
+57
+00:04:39,180 --> 00:04:40,740
+của cái ngôn ngữ mà họ muốn nói
+
+58
+00:04:40,740 --> 00:04:43,480
+nhưng mà khi mà dựa vào những cái video
+
+59
+00:04:43,480 --> 00:04:45,100
+những cái video và những cái thông số
+
+60
+00:04:45,100 --> 00:04:46,716
+được phân tích này, làm được hết
+
+61
+00:04:47,000 --> 00:04:55,296
+Đầu tiên chúng ta sẽ nói với nhau về trong cái kênh của mình một cái video nó đang được đề xuất
+
+62
+00:04:55,296 --> 00:05:03,876
+bởi video nào thì chúng ta click vào cái phần lưu lượng truy cập và nó có cái phần là video đề xuất.
+
+63
+00:05:03,876 --> 00:05:12,796
+Kích ở đây, nó là toàn bộ những cái dấu vết vì việc những cái video nào đang đề xuất video mình, bao gồm video trong kênh của mình và video ở ngoài.
+
+64
+00:05:14,716 --> 00:05:22,996
+Ví dụ ở đây mình, đấy, ví dụ một video nó đề xuất nhé, còn video của mình là video được đề xuất, thế là đây là video của mình.
+
+65
+00:05:24,456 --> 00:05:31,596
+Nhưng mà làm sao để mình biết được những cái video nào, đây đằng trước này này, nó đang đề xuất video của mình ở bên phải này, mà người ta xem.
+
+66
+00:05:31,596 --> 00:05:38,496
+Thì đơn giản đấy, chỉ cần chúng ta cần kích vào cái phần video đề xuất này là nó có toàn bộ các thông số đấy.
+
+67
+00:05:40,576 --> 00:05:44,436
+Đây là những cái thông số chính để chúng ta có thể tìm hiểu.
+
+68
+00:05:44,876 --> 00:05:47,456
+Kích vào đấy, ví dụ kích vào bí quyết thành công chẳng hạn.
+
+69
+00:05:47,796 --> 00:05:55,536
+Thì cái video mà đang đề xuất video của mình nhiều nhất là nghèo cỡ mấy cũng phải hiểu 4 cái này.
+
+70
+00:05:55,536 --> 00:05:57,396
+Thì nó là video trong kênh của mình.
+
+71
+00:05:58,096 --> 00:06:00,000
+Nhưng nó sẽ có những cái video nó khác nữa.
+
+72
+00:06:00,000 --> 00:06:01,800
+ở ngoài kênh của mình, nó vẫn đề xuất bình thường.
+
+73
+00:06:03,460 --> 00:06:06,540
+Sau đó thì, đây là những cái video này của mình nhé.
+
+74
+00:06:08,460 --> 00:06:11,740
+Mình cần chụp lại toàn bộ những cái thumbnail tiêu đề này.
+
+75
+00:06:12,820 --> 00:06:17,820
+Kích nhẹ vào cái video này cái là nó cũng hiện lên cái phần ở bên trên thumbnail tiêu đề mình chụp rồi.
+
+76
+00:06:20,940 --> 00:06:28,380
+Ví dụ như mình đây, mình chụp lại toàn bộ những cái video nó đang đề xuất cái video của mình nhận ạ.
+
+77
+00:06:30,000 --> 00:06:39,700
+Ở đây nó đang có những cái phần video trong kênh của mình đề xuất video Ngẫm Plus hay là video tài chính 24h. Đây là những cái kênh
+
+78
+00:06:39,700 --> 00:06:49,400
+khác nó đề xuất. Tư duy làm giàu nó đề xuất. Đấy là những cái kênh khác họ đang đề xuất video của mình. Mình cứ nốt hết lại.
+
+79
+00:06:49,400 --> 00:06:59,080
+Thì đây là cái phần mà giúp cho mình hiểu được video đằng trước, đằng trước đấy nhé. Họ xem những cái này, một trong số những cái này. Sau đó họ được đề xuất
+
+80
+00:06:59,080 --> 00:07:08,760
+bên phải của mình, là video của mình. Thì đấy là một cái hành vi là họ cũng đang quan tâm đến cái nội dung kiểu tương tự như thế. Thì đấy là một phần.
+
+81
+00:07:08,760 --> 00:07:14,800
+Sau đấy thì mình có phân tích ở đây là chủ đề xuyên suốt là làm giàu Bí quyết thành công này.
+
+82
+00:07:15,180 --> 00:07:21,620
+Những cái nội dung giống nhau chẳng hạn là thumbnail thì có người góc 1 phần 3 này, doanh nhân nổi tiếng này.
+
+83
+00:07:21,620 --> 00:07:31,420
+Thì đấy là cái nội dung mà mình vừa phân tích là những cái điểm chung.
+
+84
+00:07:31,960 --> 00:07:39,496
+Thế vậy là mình cần phải tìm xem những cái mô típ lập lại giống nhau mà khán giả đang xem, đang thích xem.
+
+85
+00:07:39,496 --> 00:07:40,176
+Nó là như thế nào?
+
+86
+00:07:41,576 --> 00:07:43,896
+Vẫn là những công thức rất đơn giản như vậy thôi.
+
+87
+00:07:45,096 --> 00:07:46,716
+Sau đó tiếp tục mình làm.
+
+88
+00:07:47,056 --> 00:07:48,176
+Và cái này nó có nhược điểm.
+
+89
+00:07:48,596 --> 00:07:50,276
+Tại sao mình chưa chia sẻ cái này ngay cho anh em?
+
+90
+00:07:51,056 --> 00:07:52,976
+Và cái này, cái module này nó mới có.
+
+91
+00:07:53,396 --> 00:07:54,816
+Sau rất dài thời gian rồi.
+
+92
+00:07:55,016 --> 00:07:59,196
+Bởi vì là kênh nó phải có lượng view sub nhất định thì nó mới có dữ liệu để nghiên cứu được.
+
+93
+00:08:00,216 --> 00:08:08,636
+Cái thứ 2 là cái lượng truy cập theo thời gian nó khác nhau nên có thể theo cái trending nhiều khi phân tích video nó bị lệch so với cái nhóm chủ đề đang xuyên suốt.
+
+94
+00:08:09,076 --> 00:08:15,656
+Ví dụ phân tích vào cái thời mà đang Covid chẳng hạn thì cái nội dung người ta đang quan tâm rất rất nhiều đến Covid thì cứ nói Covid là người ta xem.
+
+95
+00:08:16,316 --> 00:08:17,596
+Lúc đấy nó là trend thị trường.
+
+96
+00:08:17,596 --> 00:08:27,596
+Nếu mà mình dùng cái đấy để mình phân tích mà mình không tỉnh táo thì mình cứ đi theo follow những cái như vậy thì nó cũng sẽ, cái kết quả nó sẽ bị lệch.
+
+97
+00:08:27,976 --> 00:08:35,886
+Cái thứ 3 là có thể là tham anh em làm có thể là vì có được những cái thông số như
+
+98
+00:08:35,886 --> 00:08:43,796
+vậy nên anh em đang làm bất chấp cái ban đầu để tham view nên làm nhiều chủ đề nó bị loãng kênh.
+
+99
+00:08:43,796 --> 00:08:47,116
+Khi mà mình phân tích view nó sẽ khó hơn về sau.
+
+100
+00:08:48,636 --> 00:08:49,816
+Đặt ra câu hỏi là
+
+101
+00:08:49,816 --> 00:08:51,916
+Ở đây ai cũng muốn đề xuất?
+
+102
+00:08:52,556 --> 00:08:53,536
+Thì đề xuất thì làm nè
+
+103
+00:08:53,536 --> 00:08:56,096
+Thì vẫn quay trở lại
+
+104
+00:08:56,096 --> 00:08:59,516
+Cái thứ nhất là nghiên cứu chủ đề
+
+105
+00:09:00,000 --> 00:09:02,500
+Để hiểu được mô típ khán giả muốn xem.
+
+106
+00:09:05,100 --> 00:09:11,600
+Chủ đề ở đây có thể hiểu là một là cái chủ đề lớn của khán giả muốn xem là cái nội dung kênh mình muốn làm.
+
+107
+00:09:12,100 --> 00:09:19,440
+Cái thứ hai là chủ đề ngách, là những cái ngách video, những cái nội dung nào mà mình có thể làm.
+
+108
+00:09:19,880 --> 00:09:23,760
+Cái quan trọng là giữ được cái từ khóa là khán giả muốn xem.
+
+109
+00:09:24,280 --> 00:09:25,320
+Quan trọng, cực kỳ quan trọng.
+
+110
+00:09:26,620 --> 00:09:28,180
+Insight, Insight khách hàng.
+
+111
+00:09:30,000 --> 00:09:40,320
+Còn sau đó thì về kỹ thuật thì đơn giản là sản xuất các video theo chủ đề, học tập các mô típ về thumbnail, tiêu đề, content để nhắm tới mục tiêu cuối cùng là phục vụ đối tượng khán giả muốn xem.
+
+112
+00:09:41,540 --> 00:09:50,460
+Từ đầu đến giờ mình nhấn rất là mạnh vào việc là khán giả nhé, nhắm đến người dùng nhé, nhắm đến một tệp khán giả, một tệp người dùng.
+
+113
+00:09:51,860 --> 00:09:56,420
+Mình không nói nhiều về các kỹ thuật, cái này nó liên quan đến insight khách hàng.
+
+114
+00:09:56,420 --> 00:10:05,933
+Rồi tiếp theo nữa là ở chính một cái video đề xuất hay là gọi là video dẫn kênh. Có những video nào, dạng nào đang kéo cả kênh của mình lên. Vì
+
+115
+00:10:05,933 --> 00:10:15,447
+thường cái kênh của các bạn lên nó sẽ có những cái bộ video khoảng độ 5-7 video là nhiều view nhất và lúc nào nó cũng được đề xuất nó kéo cái
+
+116
+00:10:15,447 --> 00:10:24,960
+kênh của mình lên. Không video này dẫn kênh thì video kia dẫn kênh. Thế vậy thì top 5 video mà đang dẫn kênh của mình thì phân tích nó như thế nào.
+
+117
+00:10:28,040 --> 00:10:30,380
+Là mình đang nói về video được đề xuất.
+
+118
+00:10:32,280 --> 00:10:35,140
+Ví dụ, video này là video dẫn kênh của kênh Bí quyết thành công.
+
+119
+00:10:37,000 --> 00:10:43,056
+2 triệu view, nó được khoảng 4.300 đô, tức là RPM 2 đô đấy.
+
+120
+00:10:44,396 --> 00:10:46,296
+Từ 1 video đấy nhé, đây là 1 video đấy.
+
+121
+00:10:48,616 --> 00:10:52,416
+Nó cứ đem lại tiền cho mình đều, đều, đều từ ngày này tháng khác, ngày này tháng khác.
+
+122
+00:10:52,656 --> 00:10:54,556
+Nó ít view thôi nhưng mà nó vẫn cứ có tiền.
+
+123
+00:10:55,016 --> 00:11:07,516
+Khi mà một cái video này để mình phân tích cái video nó đang đề xuất và video dẫn kênh thì cũng lại phân tích giống hết như lúc trước thôi.
+
+124
+00:11:07,516 --> 00:11:15,556
+Mình lại phân tích về tiêu đề của nó đang như thế nào, từ khóa nào, thumbnail nào, dạng nào, kiểu như thế nào.
+
+125
+00:11:17,216 --> 00:11:23,516
+Và trong cái phần tiếp cận này nó sẽ có được hết những cái thông số phân tích của một cái kênh để mình có thể tìm.
+
+126
+00:11:23,516 --> 00:11:32,656
+Đây, người xem nào đang đến từ video này? Lượt hiển thị hình thu nhỏ bao nhiêu này? Tỷ lệ nhấp và tỷ lệ xem như thế nào?
+
+127
+00:11:35,956 --> 00:11:45,076
+Tiếp theo nữa là các cụm từ tìm kiếm nào của video này? Cách làm giàu này? Kinh doanh gì để giàu này? Học cách làm giàu này? Bí quyết thành công này? Tư duy làm giàu này?
+
+128
+00:11:46,756 --> 00:11:53,336
+Thì sau này những cái từ khóa và những cái nội dung kiểu như thế này á, mình có thể cho vào một video khác và mình cũng xem những từ khóa như thế này.
+
+129
+00:11:53,516 --> 00:11:55,796
+Và nội dung nó tương tự như thế này
+
+130
+00:11:55,796 --> 00:12:00,000
+Thì cũng có khả năng là được ăn đề xuất từ chính kênh
+
+131
+00:12:00,000 --> 00:12:03,740
+Cái này là từ chính kênh của mình.
+
+132
+00:12:05,760 --> 00:12:09,140
+Nó cũng có cái phần là nội dung giúp người xem tìm thấy video này.
+
+133
+00:12:10,160 --> 00:12:12,400
+Mình cũng lại xem video nào đang đề xuất video này.
+
+134
+00:12:12,640 --> 00:12:15,820
+Mình cũng lại phân tích y hệt như là cái cách vừa nãy là mình phân tích cả kênh.
+
+135
+00:12:16,080 --> 00:12:19,120
+Bây giờ mình phân tích một video là video dẫn kênh.
+
+136
+00:12:21,540 --> 00:12:28,940
+Đây chính là bí mật của việc mình làm chưa từng thất bại.
+
+137
+00:12:30,000 --> 00:12:33,780
+Một cái kênh YouTube mà từ 100.000 lên 1 triệu.
+
+138
+00:12:35,640 --> 00:12:36,400
+Tức là
+
+139
+00:12:36,400 --> 00:12:40,180
+Ở năm 2017 mình có một cái bài viết
+
+140
+00:12:40,180 --> 00:12:44,580
+Anh em nào làm lên đến 100.000 trên 48h
+
+141
+00:12:44,580 --> 00:12:46,660
+Nhắn tin trực tiếp cho mình
+
+142
+00:12:47,000 --> 00:12:51,060
+Thì mình sẽ hỗ trợ anh em lên 1 triệu trên 48h trong khoảng 2 đến 4 tuần.
+
+143
+00:12:52,860 --> 00:12:54,740
+Thì đây chính là bí mật này
+
+144
+00:12:54,740 --> 00:13:02,660
+Anh em rất là khó khăn trong việc là 3 tháng đầu tiên, 4 tháng đầu tiên, 5 tháng đầu tiên để mình tìm ra, test ra cái video dẫn kênh này.
+
+145
+00:13:04,680 --> 00:13:12,980
+Tức là bản chất của mình hiểu, mình tìm được ra đúng cái video, cái nội dung mà khán giả muốn xem.
+
+146
+00:13:14,120 --> 00:13:16,780
+Sau đó phân tích thật kỹ video này.
+
+147
+00:13:17,960 --> 00:13:22,160
+Từ video này, sản xuất các nội dung content có nội dung tương tự.
+
+148
+00:13:22,160 --> 00:13:33,000
+tương tự hoặc những cái nội dung liên quan đến những cụm từ mà khách hàng tìm kiếm hoặc sản xuất những cái nó liên quan cùng tiêu đề cùng thumbnail.
+
+149
+00:13:35,576 --> 00:13:39,876
+Anh em nhớ cái ví dụ hôm trước về việc kênh của Kính Lúp TV ấy.
+
+150
+00:13:40,916 --> 00:13:46,176
+Khi mà họ đã tìm được ra một cái nội dung phổ biến thì họ bắt đầu tiếp tục nhân những cái nội dung đấy ra.
+
+151
+00:13:47,096 --> 00:13:53,796
+Và với kênh của mình, ngày xưa mình làm là lúc nào mình cũng nhấn mạnh một video mà đã dẫn kênh rồi.
+
+152
+00:13:53,796 --> 00:14:01,836
+Mình sẽ phải nhân lên cả tháng đấy. Chỉ làm những nội dung xoáy quanh những cái chủ đề và những cái nội dung như vậy.
+
+153
+00:14:05,296 --> 00:14:12,116
+Để mình có thể phục vụ khán giả. Và đấy chính là cách mà lên từ 100.000 đến 1 triệu.
+
+154
+00:14:14,216 --> 00:14:20,496
+Khi mà mình có một video, nó dẫn kênh rồi. Nó có thể kéo một kênh của mình lên 100.000 trên 48 giờ.
+
+155
+00:14:21,276 --> 00:14:23,376
+Sau đó mình tìm cách mình sản xuất các nội dung tương tự.
+
+156
+00:14:23,796 --> 00:14:32,256
+Chúng ta đừng để ý nhiều những cái kỹ thuật là tìm những cái cụm từ đấy như cái nào hay nội dung nào giúp mình tìm kiếm view này.
+
+157
+00:14:32,676 --> 00:14:37,116
+Mà chúng ta để ý đến việc là mình đặt mình ở khán giả.
+
+158
+00:14:37,776 --> 00:14:41,356
+Cái tâm lý của cái khán giả đấy, cái nhóm khán giả đấy thích xem những cái kiểu gì.
+
+159
+00:14:43,916 --> 00:14:45,696
+Là cái ngách của mình đang chọn, đang tìm.
+
+160
+00:14:46,036 --> 00:14:47,976
+Mình phải là cái người hiểu cái kênh của mình nhất.
+
+161
+00:14:48,236 --> 00:14:50,836
+Mình phải là cái người hiểu cái tệp khách hàng của mình nhất.
+
+162
+00:14:50,836 --> 00:15:00,000
+Thì khi mà cái tệp khách hàng đấy mình cứ ném cho cái nội dung này là họ sẽ xem. Khi mà anh em làm nhiều rồi
+
+163
+00:15:00,000 --> 00:15:06,040
+Anh em sẽ có được cái cảm giác như vậy, cứ ném ra đúng cái tiêu đề đấy, đúng cái thumbnail đấy, đúng cái kiểu nội dung như vậy là sẽ lên, là sẽ xem.
+
+164
+00:15:08,500 --> 00:15:16,520
+Nha khoa Lạc Việt, Niềng Răng thì họ cũng đã làm được cái đấy rồi, cứ làm cái kiểu như vậy, cứ Niềng Răng như vậy là xem, là xem.
+
+165
+00:15:17,100 --> 00:15:20,860
+Thì đương nhiên là họ cũng chọn ngách và cái từ khóa đấy cũng là một trong số những cái ở trong ngành rồi.
+
+166
+00:15:21,640 --> 00:15:26,760
+Nhưng mà họ đã hiểu được cái mô típ là khán giả muốn gì, muốn xem gì về Niềng Răng.
+
+167
+00:15:26,760 --> 00:15:35,340
+Thì là họ cứ nhấn vào đấy, họ làm nhai đi nhai lại, nhai đi nhai lại, vẫn rất nhiều view. Và ngày xưa mình có trêu anh em rằng là tại sao mà
+
+168
+00:15:35,340 --> 00:15:43,920
+xem cái kênh của tôi anh em lại thấy nó nhàm chán và thậm chí nếu anh em ở ngoài anh em lại còn thấy là nó chắc là chẳng có view đâu.
+
+169
+00:15:43,920 --> 00:15:48,380
+Nhưng mà thực chất khi mà mình làm như vậy, nó nhiều view kinh khủng thôi.
+
+170
+00:15:49,540 --> 00:15:56,400
+Và những cái mô típ lập đi lập lại như vậy, nếu mà chúng ta kèm được thêm cái bài tập tuần 1,
+
+171
+00:15:57,300 --> 00:16:03,540
+là cái mà mình phân tích được cái mô típ kênh này, phân tích được tính cách kênh này,
+
+172
+00:16:04,060 --> 00:16:11,140
+phân tích được các cái giọng điệu ở trong kênh này, hay là những cái gọi là hình ảnh mình muốn xây dựng đó.
+
+173
+00:16:11,140 --> 00:16:21,140
+Thì đấy là cái để mình giúp mình phổ biến nhanh nhất về cái tính cách của kênh, về cái xây dựng thương hiệu của kênh.
+
+174
+00:16:21,140 --> 00:16:21,820
+kênh
+
+175
+00:16:21,820 --> 00:16:25,080
+nên là chúng ta phải có
+
+176
+00:16:25,080 --> 00:16:25,820
+được những cái đấy
+
+177
+00:16:25,820 --> 00:16:29,360
+tức là chúng ta đã có sự chuẩn bị
+
+178
+00:16:29,360 --> 00:16:30,900
+những cái như vậy từ cái tuần 1 rồi
+
+179
+00:16:30,900 --> 00:16:32,900
+thì đến khi mà đến cái tuần như thế này
+
+180
+00:16:32,900 --> 00:16:34,720
+là chúng ta có được video bùng nổ rồi
+
+181
+00:16:34,720 --> 00:16:37,060
+là người ta đã bắt đầu thấy
+
+182
+00:16:37,060 --> 00:16:39,756
+cái đặc điểm của cái kênh đấy rồi
+
+183
+00:16:39,756 --> 00:16:49,016
+Và cái cách để mà đi vào đầu người ta, NLP nó có 3 cách thì cách giật tít câu view là sốc đấy.
+
+184
+00:16:49,276 --> 00:16:52,756
+Cũng là một cách mà cái cách thức lập đi lập lại những cái điều đơn giản.
+
+185
+00:16:53,996 --> 00:16:54,876
+Nó cũng tạo thành thương hiệu.
+
+186
+00:16:58,136 --> 00:17:01,796
+Nhiều cái mình làm nó nhất quán đến mức nó buồn cười nữa.
+
+187
+00:17:02,196 --> 00:17:04,956
+Chả hiểu sao nhưng mà nó thành những cái đơn giản.
+
+188
+00:17:04,956 --> 00:17:15,956
+Ví dụ mình vào Circle K, mình mua một cái cốc cà phê, thì thôi mình mua cái size XL, size to nhất ở đấy, size 30.000 để làm sao uống từ sáng đến chiều được ạ.
+
+189
+00:17:15,956 --> 00:17:24,956
+Thế mình vô tình như vậy, thế là lần nào mình vào mình cũng một thằng đầu trọc mà áo màu đen và mua cái cốc cà phê size XL.
+
+190
+00:17:24,956 --> 00:17:32,956
+Thế mình khá bất ngờ thì gần đây là mình vào quán cái là hôm đấy mình đích trong đầu là mình làm một buổi sáng, buổi chiều mình về có việc rồi.
+
+191
+00:17:32,956 --> 00:17:40,576
+Mà cái thằng em nó bảo anh lại đặt XL phải không? Đấy anh thanh toán đi nè em đặt xong cho anh rồi.
+
+192
+00:17:41,036 --> 00:17:43,656
+Nghe thật nói những cái lập đi lập lại.
+
+193
+00:17:44,716 --> 00:17:47,036
+Rất đơn giản để khẳng định cái hình ảnh thương hiệu cá nhân.
+
+194
+00:17:47,896 --> 00:17:55,896
+Thì trong kênh như vậy có những cái việc là nó sẽ tạo ra những cái góc nhìn khác.
+
+195
+00:17:56,636 --> 00:17:59,996
+Ví dụ bên mình có 2 cái kênh.
+
+196
+00:18:00,000 --> 00:18:07,560
+Nói về lịch sử, nói về những tin tức, ví dụ kênh Nabi Việt Nam là kênh bên mình.
+
+197
+00:18:09,040 --> 00:18:19,800
+Thì cái kênh bên đấy nếu mà nói, cùng là phân tích một cái vấn đề về chính trị, về văn hóa, cái kênh đấy sẽ tôn vinh Việt Nam, ví dụ so sánh Việt Nam với Trung Quốc.
+
+198
+00:18:19,800 --> 00:18:28,360
+Thì trong cái giọng văn của nó, trong cái content của nó là Nabi là Nâng Bi, Nâng Bi Việt Nam, kiểu kiểu như vậy.
+
+199
+00:18:29,300 --> 00:18:36,360
+Thì những cái người mà yêu Việt Nam hay yêu nước, lúc nào người ta cũng xem và người ta cảm thấy thích ở cái kênh đấy, ở giọng đấy.
+
+200
+00:18:37,140 --> 00:18:42,640
+Nhưng mà sẽ có một kênh ở kênh Hố Xanh Kiến Thức, cũng cái nội dung như vậy, ý hề như vậy, những content như vậy.
+
+201
+00:18:42,700 --> 00:18:44,820
+Nhưng mà nó giọng ở content kiểu cà khịa.
+
+202
+00:18:44,820 --> 00:18:52,100
+Thì mọi người xem mình sẽ thấy là cái nội dung nhé, cùng là một cái content, cùng là một cái nội dung.
+
+203
+00:18:52,580 --> 00:18:58,300
+Nhưng mà một bên thì nói về góc nhìn là cà khịa, một bên thì nói về tốt, nâng bi.
+
+204
+00:18:58,840 --> 00:19:06,060
+Thì đấy là cái trong cái tuần trước của mình có nói, một nội dung nhưng nhìn ở nhiều góc cạnh và nhiều vấn đề.
+
+205
+00:19:06,280 --> 00:19:13,620
+Thì nó ra được những cái khác nhau. Và mình làm, anh em là nhất quán, thì cái kênh Nabi kia thì auto là như vậy.
+
+206
+00:19:14,820 --> 00:19:19,220
+Nội dung content phải như vậy và mình hiểu được cái điều đấy thì mình hiểu cái khán giả của mình thích như vậy.
+
+207
+00:19:19,640 --> 00:19:23,380
+Thì mình đưa yêu cầu cho các bạn content làm là nó cũng sẽ như vậy.
+
+208
+00:19:23,400 --> 00:19:25,880
+thì nó nhất quán
+
+209
+00:19:25,880 --> 00:19:26,740
+cái kênh như vậy
+
+210
+00:19:26,740 --> 00:19:27,240
+thì đến
+
+211
+00:19:27,240 --> 00:19:29,080
+tại vì mình hiểu
+
+212
+00:19:29,080 --> 00:19:29,640
+khán giả
+
+213
+00:19:29,640 --> 00:19:30,540
+mình làm được nhất quán
+
+214
+00:19:30,540 --> 00:19:32,300
+thì đây là cái
+
+215
+00:19:32,300 --> 00:19:33,500
+cách thức để có thể
+
+216
+00:19:33,500 --> 00:19:34,740
+ích lên
+
+217
+00:19:34,740 --> 00:19:37,296
+tổng
+
+218
+00:19:37,296 --> 00:19:39,856
+Tổng hợp lại đơn giản là chúng ta phải mò mẫm từ ban đầu.
+
+219
+00:19:40,616 --> 00:19:44,396
+Test rất nhiều, thử ngách, tìm ngách, cho khi tìm đúng.
+
+220
+00:19:45,176 --> 00:19:45,956
+Và tìm đúng được rồi.
+
+221
+00:19:47,136 --> 00:19:49,796
+Thì bắt đầu kênh sẽ lên 30.000, 50.000, 100.000.
+
+222
+00:19:50,476 --> 00:19:54,456
+Thì bắt đầu nhân cái top những cái kênh dẫn đầu ra.
+
+223
+00:19:54,456 --> 00:19:58,376
+có khi chỉ cần 1 đến 3 video dẫn đầu thôi, hoặc là video dẫn kênh.
+
+224
+00:19:59,616 --> 00:20:09,596
+Nghiên cứu thật mạnh, xoáy sâu rồi đấy, tìm các góc, các cái mảng, các cái góc nhìn liên quan đến cái nhóm này, để chúng ta có thể làm và chúng ta phát triển là có kết quả thôi.
+
+225
+00:20:10,796 --> 00:20:12,536
+Cứ lên đến 100.000, lên 1 triệu, cực kỳ nhanh.
+
+226
+00:20:13,876 --> 00:20:20,976
+Ví dụ bắt đầu anh thấy có dấu hiệu nhé, có 1 video lên khoảng 7-8.000 view rồi, mà mới có 1-200 sub thôi.
+
+227
+00:20:20,976 --> 00:20:26,676
+Tiếp tục đào sâu video đấy, xoáy sâu vào, vào trong số liệu phân tích, phạm vi tiếp cận này.
+
+228
+00:20:27,956 --> 00:20:32,916
+Phân tích cái kênh ra, tìm kiếm làm những cái nội dung xoáy quanh đấy, vẫn SEO thêm những cái từ khóa như vậy.
+
+229
+00:20:34,496 --> 00:20:39,756
+Tìm những cái nội dung đã giúp cho video của mình họ xem, sản xuất kiểu tương tự.
+
+230
+00:20:41,236 --> 00:20:42,976
+Là lên, nhanh lên.
+
+231
+00:20:44,536 --> 00:20:47,296
+Cái quan trọng là ban đầu là mình chưa test ở cái đoạn đấy thôi.
+
+232
+00:20:49,156 --> 00:20:50,956
+Cái cách này mình làm nhé, chưa từng thất bại nhé.
+
+233
+00:20:50,976 --> 00:20:57,756
+Tiếp theo nữa là
+
+234
+00:20:57,756 --> 00:21:00,000
+Khi mà
+
+235
+00:21:00,000 --> 00:21:10,140
+Mình phân tích các yếu tố, tiêu đề, nội dung content, từ khóa tìm kiếm các video đề xuất, những dạng như vừa nãy mình nói.
+
+236
+00:21:10,960 --> 00:21:17,320
+Cuối cùng thì những điểm chung của nó là gì? Thì mình lại phân tích ra, nốt lại nhé. Điểm chung của nó là gì để làm sao?
+
+237
+00:21:18,340 --> 00:21:23,900
+Mục tiêu của mình cuối cùng vẫn là để phục vụ nhóm khán giả của mình. Đấy mới là cái quan trọng.
+
+238
+00:21:23,900 --> 00:21:34,760
+Tiêu đề từ khóa nội dung content hay là các cái video đề xuất của mình. Quay đi quẩn lại, nó là phục vụ cái nhóm khán giả mà mình đang săn, đang tìm.
+
+239
+00:21:38,320 --> 00:21:43,580
+Kể cả là cái nội dung ở trong cái khóa học mình nói là anh em mình cần phải có một cái gọi là từ khóa lý tưởng.
+
+240
+00:21:44,800 --> 00:21:53,760
+Từ khóa lý tưởng là gì? Từ khóa lý tưởng thực chất ở trong khóa này mình mới nói nó sâu sắc về việc là thực chất đấy là từ khóa mà khán giả.
+
+241
+00:21:53,900 --> 00:22:00,820
+Đang quen. Mình tạo ra thói quen cho một cái nhóm khán giả về cái từ khóa đấy.
+
+242
+00:22:03,800 --> 00:22:06,360
+Thì họ nhìn thấy cái thói quen như vậy thì họ xem thôi.
+
+243
+00:22:08,540 --> 00:22:09,820
+Một yếu tố về tâm lý.
+
+244
+00:22:14,900 --> 00:22:23,140
+Rồi chúng ta có được 2 cái dạng là thứ nhất là mình đang xem một video, mình hiểu được video đằng trước, tất cả những video đằng trước nó đang đề xuất video của mình.
+
+245
+00:22:23,140 --> 00:22:28,260
+Cái thứ 2 là bản thân cái video đấy của mình nó đang như thế nào
+
+246
+00:22:28,260 --> 00:22:34,040
+Thì 2 cái phần đấy là 2 cái phần mà chung quy lại vẫn là thấu hiểu của khách hàng
+
+247
+00:22:34,040 --> 00:22:39,260
+Rồi chúng ta đến phần tiếp theo là cái video nối tiếp cái video được đề xuất đấy
+
+248
+00:22:39,260 --> 00:22:40,700
+Thì nó như thế nào
+
+249
+00:22:40,700 --> 00:22:43,140
+Thì cái này thì nó rất là đơn giản rồi anh em
+
+250
+00:22:43,140 --> 00:22:44,016
+em có thể thấy là
+
+251
+00:22:44,016 --> 00:22:48,216
+Từ 1 cái video của mình
+
+252
+00:22:48,216 --> 00:22:49,636
+Đây là video
+
+253
+00:22:49,636 --> 00:22:52,076
+Đề xuất video của mình
+
+254
+00:22:52,076 --> 00:22:55,136
+Sau đến video được đề xuất
+
+255
+00:22:55,136 --> 00:22:56,536
+Thì ở bên phải này này
+
+256
+00:22:56,536 --> 00:22:57,656
+Góc phải màn hình của mình
+
+257
+00:22:57,656 --> 00:23:00,436
+Nó sẽ có những video mà nó đề xuất tiếp
+
+258
+00:23:00,436 --> 00:23:04,616
+Thì những cái này là những cái mà anh em nên dùng cái tab ẩn danh nhé
+
+259
+00:23:05,000 --> 00:23:07,856
+Tab ẩn danh của Google Chrome đây
+
+260
+00:23:07,856 --> 00:23:10,136
+Ở trên này mình hãy nói ẩn danh này
+
+261
+00:23:10,136 --> 00:23:13,376
+Để làm sao nó không lưu lại cái cookie người dùng ấy
+
+262
+00:23:14,016 --> 00:23:20,756
+Thì nó đưa ra những cái đề xuất này nó chuẩn hơn so với một người mà mình hay xem các kênh rồi thì nó không đúng nữa.
+
+263
+00:23:21,936 --> 00:23:26,036
+Thì cũng đơn giản là mình lại chụp lại toàn bộ những cái phần này, chụp lại toàn bộ cái phần bên phải này.
+
+264
+00:23:27,436 --> 00:23:29,196
+Đưa vào Word, Excel gì đấy, chụp.
+
+265
+00:23:33,476 --> 00:23:34,956
+Thì nó ra được những cái dạng như này.
+
+266
+00:23:37,596 --> 00:23:41,956
+Đây là những cái dạng mà nội dung bên phải mà mình đang được đề xuất đấy.
+
+267
+00:23:41,956 --> 00:23:44,496
+Nó là nối cái đề xuất của mình
+
+268
+00:23:44,496 --> 00:23:46,196
+Cứ chụp lại toàn bộ
+
+269
+00:23:46,196 --> 00:23:47,136
+Anh em chụp lại toàn bộ
+
+270
+00:23:47,136 --> 00:23:49,916
+Làm Word, Excel thành một cái bản để phân tích
+
+271
+00:23:49,916 --> 00:23:52,656
+Làm thật tốt vào
+
+272
+00:23:52,656 --> 00:23:53,796
+Bản để phân tích
+
+273
+00:23:53,796 --> 00:23:55,996
+Sau đấy mình có giảng giải cho đội ngũ của mình
+
+274
+00:23:55,996 --> 00:23:57,356
+Hay là giảng giải cho đội content
+
+275
+00:23:57,356 --> 00:23:58,456
+Hay là các đội kia kìa
+
+276
+00:23:58,456 --> 00:24:00,000
+Thì họ sẽ hiểu được cái tư
+
+277
+00:24:00,000 --> 00:24:03,620
+Để họ có thể làm được nó đơn giản hơn.
+
+278
+00:24:05,060 --> 00:24:10,460
+Và khi mà mình tìm thấy được những cái nội dung như này, nó có các cái luồng khán giả khác nhau.
+
+279
+00:24:11,620 --> 00:24:15,120
+Ví dụ đây là cái luồng ở trong kênh của mình, là màu đỏ này, mình làm này, màu đỏ này.
+
+280
+00:24:16,160 --> 00:24:24,920
+Thì tức là cái nội dung là từ video trước đến video sau, đến video sau nữa là nội dung là nó đề xuất nội dung ở ngoài,
+
+281
+00:24:24,920 --> 00:24:28,580
+xong đến các nội dung của mình, rồi lại đến tiếp các nội dung của mình.
+
+282
+00:24:28,580 --> 00:24:30,280
+Thì nó là một luồng khán giả.
+
+283
+00:24:31,540 --> 00:24:35,540
+Tiếp theo nó có những luồng khác ở ngoài kênh của mình.
+
+284
+00:24:35,760 --> 00:24:37,080
+Nó đề xuất cả những kênh ở ngoài này.
+
+285
+00:24:38,100 --> 00:24:46,740
+Tiền đạo, Web 5 Ngày, Đọc sách cùng Thùy Yên, các kiểu để mình biết có thêm góc nhìn về cái luồng như vậy.
+
+286
+00:24:48,080 --> 00:24:53,060
+Vẫn một câu hỏi đặt ra là phân tích luồng đề xuất trong kênh thì muốn đề xuất thì làm nào.
+
+287
+00:24:53,640 --> 00:24:54,580
+Thì cũng lại như vừa nãy thôi.
+
+288
+00:24:54,580 --> 00:25:02,340
+Vẫn là phân tích cái từ khóa, à vẫn là phân tích giống như video dẫn kênh á, vẫn tìm các cái chung cái chủ đề đề xuất của mình.
+
+289
+00:25:02,940 --> 00:25:07,220
+Từ khóa này, chủ đề này, sự lập đi lập lại nhiều nhất, chung nhất của các video.
+
+290
+00:25:08,580 --> 00:25:09,480
+Và mình đào sâu ở đấy.
+
+291
+00:25:14,120 --> 00:25:14,640
+Đào sâu ở đó.
+
+292
+00:25:14,640 --> 00:25:21,180
+Đấy là đề xuất của trong kênh
+
+293
+00:25:21,180 --> 00:25:23,220
+Tức là cái luồng tiếp theo
+
+294
+00:25:23,220 --> 00:25:24,840
+Là nó các nội dung của mình
+
+295
+00:25:24,840 --> 00:25:27,360
+Còn cái dạng tiếp theo nữa là
+
+296
+00:25:27,360 --> 00:25:28,980
+Đề xuất
+
+297
+00:25:28,980 --> 00:25:32,100
+Chúng ta có thể mở rộng cái luồng đề xuất của mình
+
+298
+00:25:32,100 --> 00:25:34,020
+Là
+
+299
+00:25:34,640 --> 00:25:39,560
+Phân tích nhóm video đề xuất bên phải, mở rộng tệp khán giả ra các video ngoài kênh của mình.
+
+300
+00:25:40,760 --> 00:25:44,876
+Xem chủ đề nào có thể khai thác thêm mà vẫn đúng tệp khán giả.
+
+301
+00:25:44,876 --> 00:25:54,576
+Thì mình có thể làm. Như ở đây, ở đây chẳng hạn thì có rất nhiều cái đề xuất đằng sau này. Mình phải chọn để xem là cái chủ đề nào. Một
+
+302
+00:25:54,576 --> 00:26:04,276
+đó nó gần giống chủ đề của mình. Hai là cái nội dung mà khán giả họ cũng quan tâm như thế này nhưng cũng lại phải xem xem với lại cái
+
+303
+00:26:04,276 --> 00:26:13,976
+kênh của mình. Cũng là đọc sách này, cũng là làm những cái dạng như thế này. Như ví dụ đầu tư chứng khoán chẳng hạn thì cái này bên mình không làm.
+
+304
+00:26:13,976 --> 00:26:16,736
+mình sẽ không chọn kể cả nó có nhiều view
+
+305
+00:26:16,736 --> 00:26:23,816
+đó thì như ở đây mình đưa ra là những view này
+
+306
+00:26:23,816 --> 00:26:28,196
+phân tích nhóm ở bên phải mở rộng tệp khán giả ngoài những cái luồng của mình
+
+307
+00:26:28,196 --> 00:26:29,956
+thì nó có thêm những cái luồng khác ở ngoài nữa
+
+308
+00:26:29,956 --> 00:26:35,216
+xong bắt đầu tìm chủ đề nào có thể khai thác thêm mà vẫn đúng tệp khán giả
+
+309
+00:26:35,216 --> 00:26:39,796
+nhớ nhé xem chủ đề nào có thể khai thác thêm mà vẫn đúng tệp khán giả
+
+310
+00:26:39,796 --> 00:26:42,656
+quay trở lại là vẫn phục vụ khán giả của mình thôi
+
+311
+00:26:43,976 --> 00:26:51,936
+Bí quyết thành công là có thêm chủ đề tiền bạc, ngoài ra có cách đầu tư tiền, cách kiếm tiền, cách tạo ra tiền, tìm thêm những chủ đề khác như vậy.
+
+312
+00:26:52,716 --> 00:26:59,156
+Thì nó mở rộng, nó thêm được những cái khác về tư duy, về sống khôn ngoan, về cách nói chuyện nó rất là rất là nhiều.
+
+313
+00:27:00,000 --> 00:27:01,460
+để mình chọn, để mình test.
+
+314
+00:27:06,000 --> 00:27:10,740
+Ngoài ra nữa thì khi mà vào trong kênh mình xem đối tượng người xem và trong số liệu phân tích này,
+
+315
+00:27:11,920 --> 00:27:16,140
+nó có cái phần đối tượng người xem, đây cũng là phần mình cần phải khai thác trong kênh của mình.
+
+316
+00:27:17,220 --> 00:27:19,620
+Những kênh khác mà khán giả của bạn cũng xem.
+
+317
+00:27:22,160 --> 00:27:25,600
+Ngẫm Plus, Mắt Thần, Góc Nhìn Đa Chiều, Web 5 Ngày.
+
+318
+00:27:25,600 --> 00:27:30,180
+Những video khác mà khán giả của bạn cũng xem.
+
+319
+00:27:32,400 --> 00:27:38,740
+Anh em có để ý nhé, kênh Bí quyết thành công, kênh này nói làm giàu, cách thức tư duy để phát triển.
+
+320
+00:27:39,180 --> 00:27:48,100
+Người ta vẫn xem vợ hoa hồng tuổi lái xe riêng, người ta vẫn xem phim, vẫn xem gái xinh hảo hán, người ta vẫn xem kênh bóng đá, người ta vẫn xem tin tức.
+
+321
+00:27:49,780 --> 00:27:53,400
+Một người có rất nhiều cái có thể làm mà, có thể xem mà.
+
+322
+00:27:55,600 --> 00:27:58,640
+Đây là cái bí mật về việc là
+
+323
+00:27:58,640 --> 00:28:03,880
+Anh em làm YouTube kiếm tiền
+
+324
+00:28:03,880 --> 00:28:06,160
+Họ nhân kênh
+
+325
+00:28:06,160 --> 00:28:07,740
+Và họ phát triển kênh
+
+326
+00:28:07,740 --> 00:28:11,240
+Không phải 1 kênh nữa mà 20 kênh, 30 kênh như thế nào
+
+327
+00:28:11,240 --> 00:28:12,960
+Cũng là bên mình đang làm
+
+328
+00:28:12,960 --> 00:28:16,400
+Nó chính là phân tích từ chính kênh của mình
+
+329
+00:28:16,400 --> 00:28:20,340
+Xem những cái kênh khác
+
+330
+00:28:21,280 --> 00:28:23,640
+Sau đó xem những cái video nội dung khán giả đã xem
+
+331
+00:28:23,640 --> 00:28:33,620
+Các bạn có thể tìm ra một kênh bóng đá
+
+332
+00:28:37,216 --> 00:28:37,936
+Nó cũng như thế này thôi.
+
+333
+00:28:40,416 --> 00:28:42,556
+Là mình tìm cái nội dung kênh của mình.
+
+334
+00:28:44,396 --> 00:28:49,816
+Thì vô tình mình thấy rằng, à, ở đây nó có những cái dạng như thế này, người ta cũng thích xem bóng đá, cái nội dung kênh xem bóng đá.
+
+335
+00:28:51,156 --> 00:28:54,516
+Và mình nghiên cứu cái dạng mô típ video bóng đá như thế nào?
+
+336
+00:28:55,016 --> 00:29:02,166
+Xem bên mình có đủ năng lực để sản xuất không? Đủ khả năng làm không? Sau đó thì bên mình cho làm những cái nội dung
+
+337
+00:29:02,166 --> 00:29:09,316
+kiểu tương tự như này hoặc chất lượng tốt hơn. Sau đó thì mình dùng cái kênh Bí quyết thành công này, kéo nhẹ cái video này.
+
+338
+00:29:09,316 --> 00:29:12,556
+Ở trong cái tab cộng đồng, giới thiệu sang tab cộng đồng
+
+339
+00:29:12,556 --> 00:29:19,176
+Và giới thiệu trong các cái nội dung video mà nó có kiểu tương tự về
+
+340
+00:29:19,176 --> 00:29:21,056
+Ví dụ Công Vinh Thủy Tiên chẳng hạn
+
+341
+00:29:21,056 --> 00:29:23,716
+Những cái người mà thành công từ bóng đá
+
+342
+00:29:23,716 --> 00:29:27,296
+Hoặc là những cái tin tức hoặc là cách kiếm tiền của Quang Hải chẳng hạn
+
+343
+00:29:27,296 --> 00:29:28,356
+Khi mà bán thương hiệu
+
+344
+00:29:28,356 --> 00:29:34,596
+Hoặc là Quang Hải ra nước ngoài thì là tốt hay xấu so với việc ở Việt Nam chẳng hạn
+
+345
+00:29:34,596 --> 00:29:38,516
+Ví dụ ở đây là những cái nội dung mà bí quyết thành công có thể kéo sang được
+
+346
+00:29:39,316 --> 00:29:48,876
+Thì đây chính là cách mình tạo tìm được ra một cái chủ đề mới, một cái kênh mới. Và khi mà kéo sang phát này là bắt đầu nó có view luôn. Vì là cái kênh
+
+347
+00:29:48,876 --> 00:29:58,436
+này nó to và nó đã có những nội dung, những người đã thích xem những cái dạng chủ đề này rồi. Nên mình kéo sang phát là video đầu tiên cái là có kết quả luôn.
+
+348
+00:30:00,000 --> 00:30:09,420
+Nên là những cái kênh sau nhân lên nó rất nhanh anh em ạ. Nó không khó như cái kênh ban đầu đâu. Nên là bên mình mới có mấy chục kênh nó là như thế chứ. Bình
+
+349
+00:30:09,420 --> 00:30:18,840
+thường anh em tự làm một kênh thì nó phải mất 3-6 tháng thì nó mới lên được. Nhưng mà khi mà đã có kênh và có hệ thống kênh rồi thì bọn mình đẩy nó nhanh lắm.
+
+350
+00:30:18,840 --> 00:30:32,000
+Đấy là một cái keyword, nhưng mà quay trở lại là cái nguyên lý của nó là gì? Nguyên lý của nó là một cái nhóm khán giả họ có thể xem rất nhiều nội dung.
+
+351
+00:30:33,320 --> 00:30:42,040
+Thế vậy là mình chọn cái nội dung nào để có thể sáng tạo cái content của mình thì mình có thể dựa vào cái đối tượng người xem này và đưa ra những cái phân tích của YouTube.
+
+352
+00:30:42,040 --> 00:30:44,580
+Họ đưa ra những cái nội dung như vậy.
+
+353
+00:30:45,720 --> 00:30:49,400
+Những cái mà họ đã đưa ra và máy nó tìm chứ không phải mình nhé.
+
+354
+00:30:50,160 --> 00:30:52,600
+Nhiều lúc máy nó tìm nó còn tốt hơn người rất là nhiều.
+
+355
+00:30:53,400 --> 00:30:57,400
+Nên là mình cứ tin vào những cái thông số mà họ đưa ra như thế này.
+
+356
+00:30:57,960 --> 00:30:59,740
+Mình nghiên cứu thì nó ok.
+
+357
+00:31:02,220 --> 00:31:07,800
+Tuy nhiên Google trong cái trải nghiệm của mình nó chỉ có một cái là chúng ta không nên tin vào việc gợi ý của Google.
+
+358
+00:31:08,060 --> 00:31:08,840
+Nó là cái quảng cáo.
+
+359
+00:31:08,840 --> 00:31:13,900
+Anh em mà dựa theo tối ưu, theo những cái mà Google nó quảng cáo thì tốn tiền kinh khủng luôn.
+
+360
+00:31:15,760 --> 00:31:18,780
+Riêng quảng cáo thì chúng ta cần phải làm nó khác.
+
+361
+00:31:18,780 --> 00:31:25,180
+Mình trong khoảng 3 tháng gần đây, mình nghiên cứu rất kỹ về quảng cáo Google
+
+362
+00:31:25,180 --> 00:31:32,720
+Về từ việc nuôi content, nuôi tài khoản, cách thức làm, cách thức nhân
+
+363
+00:31:32,720 --> 00:31:35,960
+Rất kỹ về quảng cáo Google rồi
+
+364
+00:31:35,960 --> 00:31:38,780
+Nhưng mà nó lại không dùng để chọn
+
+365
+00:31:38,780 --> 00:31:41,356
+Trong cái mảng YouTube nó dùng ở một vài mảng khác.
+
+366
+00:31:41,356 --> 00:31:51,776
+Tuy nhiên là nó vẫn đủ kiến thức để anh em có thể làm chiến đấu về việc là chúng ta đến lúc mà chúng ta cần phải đốt tiền.
+
+367
+00:31:52,196 --> 00:31:53,196
+Chúng ta làm như thế nào?
+
+368
+00:31:53,956 --> 00:31:58,156
+Sẽ có cái giai đoạn về việc là chúng ta test và chúng ta chạy quảng cáo.
+
+369
+00:31:58,776 --> 00:32:01,876
+Và bây giờ cái tài khoản Google nó rất là khó.
+
+370
+00:32:02,396 --> 00:32:05,136
+Thật sự khó vì anh em chạy quảng cáo anh em sẽ biết nó chết tài khoản liên tục.
+
+371
+00:32:06,236 --> 00:32:10,376
+Thế làm nào để chạy được cái này thì mình cũng có cách và mình cũng xử lý được rồi.
+
+372
+00:32:11,356 --> 00:32:19,736
+Nó rất ok. Đến cái phần quảng cáo mình sẽ share lại cho anh em những cái phần này. Ngoài ra nữa nếu mà trong anh em
+
+373
+00:32:19,736 --> 00:32:28,116
+nào đang làm đến Affiliate ấy, anh em muốn quan tâm đến quảng cáo Google thì mình cũng có thể chia sẻ thêm về quảng cáo Google.
+
+374
+00:32:29,176 --> 00:32:36,996
+Nhưng anh em ở Eagle, anh em triệu phú ở Eagle mà từ Affiliate ấy toàn bộ cũng bắt đầu từ quảng cáo Google hết.
+
+375
+00:32:36,996 --> 00:32:48,296
+Có một cái lưu ý khi mà mở rộng đề xuất là cái này mình luôn luôn nói nè, sản xuất video cơ bản là phục vụ một nhóm khán giả của mình, của kênh của mình.
+
+376
+00:32:49,000 --> 00:32:56,356
+Nên khi mở rộng cần có sự liên kết giữa các video để mở rộng đúng hướng, không sa vào trending và bị lệch hướng khán giả.
+
+377
+00:32:57,216 --> 00:33:00,000
+Không tham mở rộng view mà nó không cùng với tệp khán giả.
+
+378
+00:33:00,000 --> 00:33:09,960
+Mục đích cuối cùng nó vẫn là phục vụ khán giả của mình. Nó quan trọng vô cùng luôn.
+
+379
+00:33:13,440 --> 00:33:20,580
+Và để tìm được đúng cái đối tượng khán giả của mình thì chúng ta cần phải có tìm được cái một cái nhóm nhỏ trước.
+
+380
+00:33:21,420 --> 00:33:24,400
+Một cái nhóm nhỏ chấp nhận video của mình trước. Tức là cái ngách.
+
+381
+00:33:24,400 --> 00:33:30,200
+Vì ban đầu là mình chưa làm rộng, chưa làm lớn và chưa phủ thị trường được.
+
+382
+00:33:30,940 --> 00:33:39,300
+Mà YouTube bản chất ban đầu anh em hiểu là khi chúng ta mới làm view ít, sub ít thì cái độ reach của nó cũng sẽ ít.
+
+383
+00:33:40,260 --> 00:33:45,380
+Nên là mình cần phải trân trọng những cái view, cái reach ban đầu của mình.
+
+384
+00:33:45,940 --> 00:33:48,140
+Thì mình cần phải tìm được đúng ngách, nó là như thế.
+
+385
+00:33:49,140 --> 00:33:51,940
+Khi mà mình tìm được đúng ngách rồi thì chúng ta có quyền để mở rộng ngách.
+
+386
+00:33:51,940 --> 00:33:54,720
+Thì chúng ta mở rộng có rất nhiều cách rồi.
+
+387
+00:33:56,120 --> 00:33:58,660
+Đấy là cái mà chúng ta có thể làm.
+
+388
+00:34:00,080 --> 00:34:00,400
+Ok.
+
+389
+00:34:01,540 --> 00:34:05,840
+Thì cái nội dung chính của chúng ta là biết được video nào là video đề xuất video của mình.
+
+390
+00:34:06,500 --> 00:34:08,760
+Cái thứ 2 là video dẫn kênh là video nào.
+
+391
+00:34:09,220 --> 00:34:11,000
+Cái thứ 3 là video nối đề xuất là video nào.
+

@@ -1,0 +1,129 @@
+{
+  "sku": "VIDEO-dd1345",
+  "title": "Quy Trình Sản Xuất Video Doyin",
+  "actual_topic": "Quy trình khai thác video Douyin triệu view bằng Google Dịch + Master Prompt 10 bước trên Google Gemini (tải trực tiếp file MP4 phân tích theo timeline) & hậu kỳ CapCut Pro (voice Cô gái hoạt ngôn 1.2x + Filter 4K)",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Bán Content & Reup Hợp Pháp",
+  "niche_id": "douyin_reup",
+  "target_market": "Quốc tế (Global)",
+  "market_code": "GLOBAL",
+  "tools_mentioned": [
+    "Gemini",
+    "Douyin",
+    "Google Dịch",
+    "Snaptik",
+    "CapCut",
+    "Google Docs",
+    "YouTube",
+    "TikTok",
+    "Facebook"
+  ],
+  "channels_mentioned": [
+    "@TrieuNe05",
+    "@daochieu037"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân tích 2 kênh mẫu làm Shorts từ nguồn Douyin: Triệu Que Củi (@TrieuNe05 - 391M views) và Đảo Chiều (@daochieu037 - 1,17M sub)"
+    },
+    {
+      "time": "00:28",
+      "seconds": 28,
+      "label": "Giới thiệu bộ 3 công cụ cốt lõi (Gemini, Douyin, CapCut Pro) và tài liệu Master Prompt phân tích video ngắn"
+    },
+    {
+      "time": "00:59",
+      "seconds": 59,
+      "label": "Sao chép toàn bộ Master Prompt 10 bước gửi lên Google Gemini để thiết lập trợ lý phân tích và viết kịch bản"
+    },
+    {
+      "time": "01:11",
+      "seconds": 71,
+      "label": "Dùng Google Dịch chuyển từ khóa chủ đề (động vật hài hước, ăn uống, giải trí, gia đình) sang tiếng Trung"
+    },
+    {
+      "time": "01:32",
+      "seconds": 92,
+      "label": "Dán từ khóa tiếng Trung tìm video trên Douyin (mèo béo đốt pháo úp chậu cùng chó Poodle) và tải video không logo"
+    },
+    {
+      "time": "02:35",
+      "seconds": 155,
+      "label": "Tải trực tiếp file video 15 giây lên Google Gemini để tự động phân tích và nhận 3 kịch bản review chia theo timeline"
+    },
+    {
+      "time": "03:08",
+      "seconds": 188,
+      "label": "Đưa video vào CapCut PC, tạo giọng đọc Tiếng Việt Cô gái hoạt ngôn, tăng tốc độ 1.2x và bật Thay đổi âm thanh độ cao"
+    },
+    {
+      "time": "05:09",
+      "seconds": 309,
+      "label": "Tạo Phụ đề tự động tiếng Việt, chọn mẫu chữ nổi bật và căn vị trí tránh che mất quả pháo trong khung hình"
+    },
+    {
+      "time": "06:04",
+      "seconds": 364,
+      "label": "Thêm bộ lọc màu 4K phủ toàn bộ timeline và xuất file MP4 hoàn chỉnh đăng lên kênh YouTube Shorts"
+    }
+  ],
+  "key_takeaways": [
+    "Hai kênh mẫu thực tế trên màn hình là Triệu Que Củi (@TrieuNe05 — 363N sub, 283 video, 391 triệu lượt xem) và Đảo Chiều (@daochieu037 — 1,17M sub, 1,2N video) chứng minh mỏ vàng nội dung Douyin khi được thuyết minh bình luận hài hước bằng tiếng Việt có khả năng kéo hàng trăm triệu view cực nhanh.",
+    "Điểm đột phá của quy trình là sử dụng khả năng nhìn trực tiếp file video (Multimodal Video Understanding) của Google Gemini: Sau khi nạp Master Prompt 10 bước, học viên tải thẳng file .mp4 tải từ Douyin lên Gemini để AI tự xem từng giây và viết 3 phiên bản kịch bản (Hài hước, Cà khịa, Kể chuyện) khớp chính xác thời lượng theo công thức 2.5 - 3 từ/giây.",
+    "Cách khai thác kho video Douyin vô tận: Đăng ký tài khoản Douyin bằng số điện thoại Việt Nam, dùng Google Dịch chuyển các từ khóa ngách (động vật hài hước, ăn uống, giải trí, gia đình) sang tiếng Trung rồi dán vào thanh tìm kiếm Douyin và tải video không logo qua công cụ tải video Douyin (Snaptik Douyin).",
+    "Công thức hậu kỳ tốc độ cao trên CapCut Pro: Tách kịch bản theo từng mốc 4 giây (0-4s, 4-8s, 8-12s), dùng tính năng Chuyển văn bản thành lời nói giọng 'Cô gái hoạt ngôn', đẩy tốc độ đọc lên 1.2x kèm bật 'Thay đổi âm thanh độ cao', chạy Phụ đề tự động tiếng Việt và phủ lớp Bộ lọc '4K' lên toàn bộ video."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình sản xuất Shorts review hài hước từ nguồn Douyin bằng Google Gemini + CapCut Pro",
+    "additional": [
+      "Sao chép toàn bộ Master Prompt 10 bước gửi vào Google Gemini để AI ghi nhớ vai trò chuyên gia phân tích video ngắn.",
+      "Dùng Google Dịch dịch từ khóa chủ đề sang tiếng Trung để tìm video triệu tim trên Douyin và tải file MP4 không dính logo.",
+      "Tải trực tiếp tệp video MP4 vừa tải lên Google Gemini để nhận 3 phiên bản kịch bản review chia sẵn theo từng mốc giây (0-4s, 4-8s, 8-12s).",
+      "Đưa video vào CapCut PC, dán từng câu thoại tạo giọng đọc Tiếng Việt 'Cô gái hoạt ngôn', chỉnh tốc độ 1.2x và bật Thay đổi âm thanh độ cao.",
+      "Chạy Phụ đề tự động tiếng Việt chọn mẫu chữ bắt mắt, kéo vị trí chữ tránh che điểm nhấn hành động và áp Bộ lọc '4K' toàn video trước khi xuất file."
+    ]
+  },
+  "sop_steps": [
+    "Bước 1: Sao chép toàn bộ nội dung tài liệu Master Prompt (AI Chuyên gia phân tích video ngắn & viết kịch bản review hài hước) gửi vào Google Gemini.",
+    "Bước 2: Mở Google Dịch chuyển từ khóa chủ đề (ví dụ: 'động vật hài hước') sang tiếng Trung, dán vào thanh tìm kiếm của Douyin, chọn video viral và sao chép liên kết tải về không logo qua trang tải video Douyin.",
+    "Bước 3: Quay lại Google Gemini, nhấn dấu cộng tải trực tiếp tệp video .mp4 (ví dụ dài 15 giây) lên để Gemini phân tích diễn biến và xuất ra 3 kịch bản thuyết minh khớp thời lượng (khoảng 38-45 từ cho video 15 giây).",
+    "Bước 4: Mở CapCut PC tạo dự án mới, nhập video vào timeline, lần lượt copy từng câu thoại ở các mốc 0-4s, 4-8s, 8-12s vào mục Văn bản -> Chuyển văn bản thành lời nói -> chọn giọng 'Cô gái hoạt ngôn'.",
+    "Bước 5: Chọn các đoạn âm thanh giọng đọc vừa tạo, tăng tốc độ lên 1.2x và bật tính năng 'Thay đổi âm thanh độ cao' để giọng đọc cuốn hút, khớp khít từng khung hình.",
+    "Bước 6: Vào Văn bản -> Phụ đề tự động (Tiếng Việt) để tạo chữ chạy, áp dụng Mẫu văn bản nổi bật, căn chỉnh vị trí chữ không che chủ thể chính, thêm Bộ lọc '4K' phủ kín timeline và nhấn Xuất video."
+  ],
+  "avoid_flags": [
+    "Không dùng video còn nguyên logo/ID tài khoản Douyin gốc; bắt buộc phải tải qua công cụ xóa watermark trước khi đưa vào CapCut.",
+    "Không viết kịch bản ước lượng cảm tính quá dài hoặc quá ngắn gây lệch hình; phải để Gemini tính toán theo chuẩn 2.5 - 3 từ/giây khớp đúng từng mốc timeline.",
+    "Không để nguyên tốc độ giọng đọc AI 1.0x mặc định hơi chậm; luôn tăng tốc độ voice 'Cô gái hoạt ngôn' lên 1.2x và bật Thay đổi âm thanh độ cao.",
+    "Không đặt phụ đề tự động nằm đè lên chi tiết gây cười hoặc vật thể chính ở giữa màn hình (như quả pháo hay biểu cảm của thú cưng)."
+  ],
+  "analysis_method": "visual_frames_and_audio_verified",
+  "source_transcript": "video/VIDEO-dd1345/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "last_verified_at": "2026-10-24T13:24:00Z",
+  "course_docs": [
+    {
+      "title": "Master Prompt AI Chuyên Gia Phân Tích Video Ngắn Douyin & Viết Kịch Bản Review Hài Hước (Markdown)",
+      "file": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.md",
+      "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-dd1345/master_prompt.md"
+    },
+    {
+      "title": "Tài Liệu Gốc Master Prompt Video Douyin (Google Docs TXT)",
+      "file": "assets/docs-dgmd/VIDEO-dd1345/doc_1.txt",
+      "readFile": "assets/docs-dgmd/VIDEO-dd1345/doc_1.txt",
+      "link": "https://docs.google.com/document/d/18dHhOEGI6z51gTz7YrYtyWj-lAdA0C9dkErk29D34ok/edit?usp=sharing"
+    },
+    {
+      "title": "Bản Sao Master Prompt Video Douyin (TXT)",
+      "file": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.txt",
+      "readFile": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.txt",
+      "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-dd1345/master_prompt.txt"
+    }
+  ]
+}

@@ -1,0 +1,471 @@
+1
+00:00:00,000 --> 00:00:10,440
+Chào anh chị em học viên, hôm nay chúng ta đến với một cái bài tạo kênh, một trong những cái phần mà rất nhiều anh em không biết tạo kênh làm như thế nào để cho chuẩn nhất đối với YouTube.
+
+2
+00:00:10,820 --> 00:00:18,180
+Khi anh em sản xuất video dài luôn thì anh em hãy tạo những cái kênh nó có tên tuổi đầy đủ như thế này.
+
+3
+00:00:18,180 --> 00:00:24,800
+Còn khi làm kênh short để chuyển đổi qua kênh dài thì tôi khuyên anh em mà chúng ta không nên tạo kênh nhận diện luôn ngay từ đầu.
+
+4
+00:00:24,800 --> 00:00:31,600
+Đối với sản xuất video dài thì chúng ta sẽ tạo luôn một cái kênh để nhận diện dựa trên cái chủ đề mà chúng ta sẽ làm.
+
+5
+00:00:31,600 --> 00:00:39,100
+Ở đây thì tôi đã đăng nhập một cái mail chưa có kênh. Đây nhé. Phải có cái nút tạo kênh như thế này nhé. Là cái mail hoàn toàn mới nhé.
+
+6
+00:00:40,000 --> 00:00:51,180
+Và cái nguồn mail này anh em có thể đi mua. Mua của những anh em trên các nền tảng, hội nhóm hoặc là trên các web.
+
+7
+00:00:51,180 --> 00:00:58,707
+thì mua cái này thì anh em hãy bảo mật bằng số điện thoại của mình. Bảo mật thì anh em có thể lên YouTube có vô số cách để cho cái
+
+8
+00:00:58,707 --> 00:01:06,233
+số điện thoại của anh em vào, số điện thoại khôi phục và Gmail khôi phục để vào để bảo mật cho cái Gmail của anh em. Và bây giờ chúng
+
+9
+00:01:06,233 --> 00:01:13,760
+ta đi tiến hành để tạo kênh, để tạo một kênh YouTube thì anh em hãy tư duy cho tôi như thế này. Ở đây tôi đã có một cái tài liệu.
+
+10
+00:01:13,760 --> 00:01:22,100
+Tài liệu này anh em hãy đọc kỹ toàn bộ những gì mà nó xuất hiện trên những cái mà tôi ghi ra như thế này.
+
+11
+00:01:22,700 --> 00:01:24,260
+Tôi sẽ tạo ra một Master Prompt.
+
+12
+00:01:25,160 --> 00:01:29,660
+Cái bài Master Prompt là cái bài anh em hãy lên xem.
+
+13
+00:01:31,000 --> 00:01:33,760
+Câu lệnh để tạo ra Master Prompt để tạo ra kênh.
+
+14
+00:01:33,760 --> 00:01:35,400
+Thì ở đây tôi sẽ copy câu lệnh này.
+
+15
+00:01:35,860 --> 00:01:36,500
+Đây là câu lệnh.
+
+16
+00:01:38,440 --> 00:01:42,760
+Và tôi sẽ sử dụng các công cụ để tạo kênh như sau.
+
+17
+00:01:43,240 --> 00:01:44,971
+Tôi dùng ChatGPT để đặt câu lệnh.
+
+18
+00:01:44,971 --> 00:01:56,471
+Bây giờ nó sẽ trả ra cho anh chị 1 cái Master Prompt để anh chị gửi lại ở ChatGPT ghi nhớ để nó phân tích ra tất cả những tên kênh.
+
+19
+00:01:57,811 --> 00:02:06,131
+Đây là chúng ta đã có 1 cái Master Prompt rồi. Sau khi đã có 1 Master Prompt như thế này rồi thì
+
+20
+00:02:06,131 --> 00:02:14,451
+cái quan trọng ở đây là gì ạ? Anh chị nhấn copy, sao chép. Sao chép này, anh chị dán lại, nhấn Enter.
+
+21
+00:02:14,971 --> 00:02:22,564
+Bây giờ nó sẽ lưu lại cái gì ạ? Cái câu Master Prompt của anh chị đã yêu cầu. Bây giờ nó
+
+22
+00:02:22,564 --> 00:02:30,158
+sẽ lưu lại. Và khi ChatGPT nó đã ghi nhớ như thế này rồi thì chúng ta sẽ tìm một kênh YouTube
+
+23
+00:02:30,158 --> 00:02:37,751
+bất kỳ. Ở đây tôi đã tìm sẵn rồi. Ví dụ tôi sẽ làm một kênh story mà anh chị tìm thấy.
+
+24
+00:02:37,751 --> 00:02:45,551
+Ví dụ anh chị định hình một chủ đề trong những cái danh mục mà tôi dạy ở phần video dài đúng không?
+
+25
+00:02:45,991 --> 00:02:47,351
+Thì anh chị tìm đúng kênh đấy.
+
+26
+00:02:48,351 --> 00:02:54,011
+Tìm đúng một chủ đề anh chị có thể cover để sản xuất thì chúng ta sẽ làm như sau.
+
+27
+00:02:55,000 --> 00:03:00,550
+Anh chị nhấn Alt + Shift + S để chụp 1 đoạn màn hình vào.
+
+28
+00:03:00,550 --> 00:03:02,550
+Tôi chụp bằng này thôi.
+
+29
+00:03:02,550 --> 00:03:11,550
+Và bây giờ là gì ạ? Tôi sẽ dán lại vào phần mà ChatGPT đã ghi nhớ.
+
+30
+00:03:11,550 --> 00:03:13,550
+Nhấn Enter.
+
+31
+00:03:13,550 --> 00:03:23,550
+Bây giờ, nhiệm vụ của ChatGPT sẽ phân tích chủ đề này, đối tượng, độ tuổi, quốc gia, nỗi đau người xem này.
+
+32
+00:03:23,550 --> 00:03:26,230
+Nỗi đau người xem, nội dung, video.
+
+33
+00:03:30,230 --> 00:03:32,170
+Nó sẽ phân tích ra cho anh chị em.
+
+34
+00:03:33,490 --> 00:03:36,030
+Kết luận, vì sao hấp dẫn, mức độ cạnh tranh.
+
+35
+00:03:37,030 --> 00:03:40,290
+Sau đó thì anh chị kéo xuống cái phần tên kênh nhé.
+
+36
+00:03:41,810 --> 00:03:45,670
+Dưới đây là sẽ có phần tên kênh cho anh chị em luôn, đầy đủ nhé.
+
+37
+00:03:47,050 --> 00:03:47,830
+Phần tên kênh này.
+
+38
+00:03:48,610 --> 00:03:50,000
+Thì chúng ta sẽ dùng một tên kênh.
+
+39
+00:03:50,000 --> 00:03:57,550
+5 tên kênh đề xuất. Ở trong cái câu lệnh tôi đã đặt ra một cái vấn đề là tạo
+
+40
+00:03:57,550 --> 00:04:04,650
+cho tôi 5 tên kênh, 5 ID kênh, bám sát các chủ đề mà tôi bắt đầu sản xuất.
+
+41
+00:04:04,650 --> 00:04:08,650
+Ok, tách Story
+
+42
+00:04:08,650 --> 00:04:14,650
+và tôi sẽ nhấn tạo kênh
+
+43
+00:04:14,650 --> 00:04:20,650
+và chúng ta cùng xem
+
+44
+00:04:20,650 --> 00:04:24,650
+ID có chung với ID người khác
+
+45
+00:04:24,650 --> 00:04:29,890
+ID đã chung rồi
+
+46
+00:04:29,890 --> 00:04:31,710
+chúng ta sẽ tìm một kênh khác
+
+47
+00:04:31,710 --> 00:04:35,666
+copy một link kênh bất kỳ
+
+48
+00:04:35,666 --> 00:04:48,026
+Ok, link kênh. Cái kênh thứ 5 ID được nhé, thì tôi sẽ nhấn tạo kênh.
+
+49
+00:04:54,946 --> 00:04:58,566
+Sau khi đã tạo kênh xong thì kênh chúng ta trắng hoàn toàn như thế này nhé.
+
+50
+00:04:58,566 --> 00:05:05,606
+Đó, danh mục kênh này, danh mục chính, danh mục phụ và danh mục tối ưu nhất.
+
+51
+00:05:06,826 --> 00:05:12,666
+Thì đây, đây là một trong những danh mục về giáo dục.
+
+52
+00:05:13,386 --> 00:05:15,226
+Ok, anh chị em nhớ cho tôi.
+
+53
+00:05:15,866 --> 00:05:22,046
+Cái phần danh mục này là cái phần ở trong bài 15 chủ đề danh mục mà tôi đã ghi.
+
+54
+00:05:22,046 --> 00:05:30,366
+Thì bây giờ anh em lại trở sang cho tôi, anh em nhấn vào YouTube Studio nhé, đây, phần này.
+
+55
+00:05:32,000 --> 00:05:40,906
+Bây giờ trong cái phần cài đặt nhé, cài đặt, anh em nhấn vào cài đặt, anh em nhấn vào cho tôi phần chế độ mặc định cho video nhé.
+
+56
+00:05:41,150 --> 00:05:49,710
+Cái này là cái anh em nên nhớ trước khi mà sản xuất nội dung ở trên nền tảng YouTube thì anh em phải
+
+57
+00:05:49,710 --> 00:05:58,270
+chọn danh mục trước xác định rõ mục, rõ cái danh mục của anh chị. Anh chị phải nhớ cho tôi 15 danh mục.
+
+58
+00:05:58,270 --> 00:06:03,070
+Thì tôi sẽ chọn là danh mục
+
+59
+00:06:03,070 --> 00:06:05,150
+Thì cái danh mục kênh của tôi
+
+60
+00:06:05,150 --> 00:06:06,890
+Danh mục chính của tôi là giáo dục
+
+61
+00:06:06,890 --> 00:06:08,970
+Thì tôi sẽ chọn là giáo dục
+
+62
+00:06:08,970 --> 00:06:11,030
+Anh em ghi nhớ
+
+63
+00:06:11,030 --> 00:06:14,090
+Ok lại nhấn tắt cái này
+
+64
+00:06:14,090 --> 00:06:17,230
+Và quốc gia
+
+65
+00:06:17,230 --> 00:06:19,770
+Quốc gia thì cực kỳ dễ
+
+66
+00:06:19,770 --> 00:06:23,310
+Quốc gia thì tôi sẽ chọn là Mỹ
+
+67
+00:06:23,310 --> 00:06:25,190
+Hoa Kỳ đây
+
+68
+00:06:25,190 --> 00:06:28,110
+Đó, đừng
+
+69
+00:06:28,110 --> 00:06:31,690
+Và tôi đã để quốc gia Hoa Kỳ
+
+70
+00:06:31,690 --> 00:06:33,850
+Và cái từ khóa
+
+71
+00:06:33,850 --> 00:06:38,030
+Từ khóa này là khi nào mà anh em xác định rõ
+
+72
+00:06:38,030 --> 00:06:39,350
+Chủ đề của anh em làm
+
+73
+00:06:39,350 --> 00:06:42,190
+Thì anh em hãy xin thêm những từ khóa
+
+74
+00:06:42,190 --> 00:06:45,790
+Nhưng mà thường thì những cái từ khóa nó phải liên quan đến video
+
+75
+00:06:45,790 --> 00:06:49,990
+Thì anh em chỉ nhớ cho tôi là để mặc định ở chế độ video là được
+
+76
+00:06:49,990 --> 00:06:54,000
+Mà cái này thì anh em chỉ cần về từ khóa ở tiêu đề thôi
+
+77
+00:06:54,000 --> 00:06:54,830
+Là ok
+
+78
+00:06:54,830 --> 00:07:04,800
+Ok tiếp theo là điều kiện sử dụng tính năng nâng cao trong cái mục điều kiện sử dụng tính năng nâng cao này thì cái mục bước 2 là
+
+79
+00:07:04,800 --> 00:07:14,770
+chúng ta xác minh số điện thoại nó không ảnh hưởng gì cho kênh là anh em xác minh hay không ví dụ như làm video dài trên 15 phút
+
+80
+00:07:14,830 --> 00:07:19,310
+Và anh em sử dụng hình thumbnail thì anh em hãy xác minh số điện thoại.
+
+81
+00:07:20,361 --> 00:07:31,161
+Còn lại những kênh short thì chúng ta không cần. Short thì mới đầu thì chúng ta chưa cần. Khi nào mà đủ cái điều kiện bật kiếm tiền thì chúng ta phải xác minh.
+
+82
+00:07:31,161 --> 00:07:37,801
+Tại vì làm short thì chúng ta không cần phải dùng hình thumbnail như cái video dài.
+
+83
+00:07:38,881 --> 00:07:48,361
+Còn video dài thì chúng ta sẽ mở tính năng nâng cao là video dài 15 phút, trên 15 phút và hình thu nhỏ.
+
+84
+00:07:49,001 --> 00:07:53,901
+Còn ở đây là cái phần tính năng nâng cao thì cái này thì anh em xác minh khuôn mặt.
+
+85
+00:07:54,381 --> 00:08:00,201
+Và xác minh khuôn mặt thì anh em gửi gmail thì nó sẽ làm cho anh em mã QR để xác minh khuôn mặt.
+
+86
+00:08:00,201 --> 00:08:05,621
+mà anh em xác minh giống như cái điện thoại ngân hàng. Cái này thì trên YouTube hướng dẫn rất là nhiều.
+
+87
+00:08:06,181 --> 00:08:13,311
+Tiếp theo trong phần quyền thì cái này thì anh em xem ở trên nền tảng anh em biết rồi. Anh em thêm một email bất
+
+88
+00:08:13,311 --> 00:08:20,441
+kỳ thì anh em thêm những cái quyền mà quản lý, chỉnh sửa, chỉnh sửa có giới hạn là không xem được doanh thu đúng không?
+
+89
+00:08:20,441 --> 00:08:27,481
+Đây là những quyền mà chúng ta có thể áp cho nhân sự nhà chúng ta và nhân viên
+
+90
+00:08:27,481 --> 00:08:34,521
+nhà chúng ta, lead hoặc những người mà chúng ta làm cho chúng ta, đối tác của chúng ta.
+
+91
+00:08:35,000 --> 00:08:42,813
+Sau đó khi đã xong như thế này rồi thì chúng ta bắt đầu tạo ảnh thumbnail. Ở dưới đây thì
+
+92
+00:08:42,813 --> 00:08:50,927
+nó sẽ cho 2 anh chị là 1 Prompt để tạo ra Avatar. Tôi sẽ dùng con Google Flow nhé.
+
+93
+00:08:50,927 --> 00:08:59,040
+Tôi nhấn tạo dự án. Tôi sẽ nhấn hình ảnh 1:1 và tôi sẽ tạo ra 2 hình ảnh 1 lần.
+
+94
+00:08:59,040 --> 00:09:06,493
+Ảnh bìa cũng thế nhé. Tôi lại sử dụng là 16:9. Ảnh đại diện
+
+95
+00:09:06,493 --> 00:09:13,947
+thì anh em để kích cỡ là 1:1, còn ảnh bìa thì chúng
+
+96
+00:09:13,947 --> 00:09:21,400
+ta để là 16:9. Ở trên con Google Flow này tạo rất là đẹp.
+
+97
+00:09:21,400 --> 00:09:29,600
+Nếu mà tạo hình ảnh người nổi tiếng thì chúng ta tạo luôn trên ChatGPT cũng được và tạo luôn trên Grok cũng được.
+
+98
+00:09:30,560 --> 00:09:37,660
+Đây là hình ảnh của chiếc đồng hồ.
+
+99
+00:09:38,780 --> 00:09:41,240
+Và đây là hình ảnh thumbnail.
+
+100
+00:09:45,000 --> 00:09:48,260
+Thì tôi sẽ đến vào phần tùy chỉnh nhé.
+
+101
+00:09:48,260 --> 00:09:51,260
+Tùy chỉnh đây, tôi sẽ nhấn tải lên
+
+102
+00:09:51,260 --> 00:09:53,260
+Hình ảnh đồng hồ
+
+103
+00:09:59,222 --> 00:10:01,702
+Và bây giờ là thông tin mô tả.
+
+104
+00:10:02,162 --> 00:10:07,542
+Nghĩa là giới thiệu sơ qua với kênh thì anh em có thể lấy ở phần này nhé.
+
+105
+00:10:09,142 --> 00:10:09,562
+Mô tả.
+
+106
+00:10:19,022 --> 00:10:20,702
+Ok, anh em nhấn xuất bản đã được.
+
+107
+00:10:22,082 --> 00:10:25,422
+Sau khi cập nhập xong thì chúng ta đã thấy là một kênh YouTube.
+
+108
+00:10:26,342 --> 00:10:27,322
+Một là hình thumbnail.
+
+109
+00:10:28,162 --> 00:10:30,622
+Hai là hình ảnh đại diện.
+
+110
+00:10:31,662 --> 00:10:33,082
+Và chúng ta có thể xem đây.
+
+111
+00:10:33,682 --> 00:10:35,882
+Đã tham gia ngày 23.6.2026.
+
+112
+00:10:37,782 --> 00:10:39,762
+Đó, kênh mô tả đây.
+
+113
+00:10:40,462 --> 00:10:42,682
+Mô tả của kênh và lúc nãy chúng ta đã thêm.
+
+114
+00:10:43,482 --> 00:10:45,802
+Và vị trí của chúng ta là Hoa Kỳ.
+
+115
+00:10:46,662 --> 00:10:48,422
+Ok, đây là phần tạo kênh.
+
+116
+00:10:49,022 --> 00:10:56,982
+Anh em làm tất cả những gì thì anh em phải ghi nhớ cho tôi là câu lệnh. Câu lệnh để tạo ra
+
+117
+00:10:56,982 --> 00:11:04,942
+Master Prompt. Sau đó dùng Master Prompt vất lại cho ChatGPT ghi nhớ. Chúng ta sẽ tạo ra một kênh hoàn toàn mới. Chụp
+
+118
+00:11:04,942 --> 00:11:12,902
+màn hình kênh của đối thủ mà chúng ta có thể cover, chúng ta có thể làm được. Ok, chào anh chị em.

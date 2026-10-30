@@ -1,0 +1,83 @@
+{
+  "sku": "VIDEO-acd33f",
+  "title": "NGUỒN MỚI REUP \"CÂU CÁ VẠN CÂN\" MỚI NHẤT - VIEW QUÁ KINH KHỦNG - SHOW 2 KÊNH MỚI ĐANG LÀM THẬT SỰ KHIẾP SỢ VÌ VIEW",
+  "actual_topic": "NGUỒN MỚI REUP \"CÂU CÁ VẠN CÂN\" MỚI NHẤT - VIEW QUÁ KINH KHỦNG - SHOW 2 KÊNH MỚI ĐANG LÀM THẬT SỰ KHIẾP SỢ VÌ VIEW",
+  "category_group": "ngach_xanh",
+  "niche_primary": "Reup & Khai Thác Hoạt Hình",
+  "niche_id": "faceless-general",
+  "target_market": "Trung Quốc",
+  "market_code": "CN",
+  "key_takeaways": [
+    "Tác giả quay lúc 8 giờ kém tối ngày 9 tháng 4, cho xem hai kênh mới lập view rất lớn, một kênh hơn 50 nghìn view hiển thị và xem ở Studio thì khoảng 70 đến 100 nghìn view.",
+    "Nguồn cũ trên Bilibili bị xóa tài khoản nên nhiều anh em không làm được, tác giả tìm ra nguồn mới.",
+    "Kênh Bilibili chỉ mới lên video đầu tiên nên là kênh re-up, nguồn chính nằm trực tiếp trên YouTube; nguồn gốc ở bên TikTok, Douyin chỉ cập nhật mới tập 4, và chỉ cần sao chép link rồi tải video YouTube về.",
+    "Ngách là series ra tập mới mỗi ngày nên luôn có người xem và người chờ, nên luôn có view; một kênh 6 video và 400 sub chưa đủ điều kiện kiếm tiền, kênh kia thì đã có.",
+    "Quy trình re-up là làm mờ phụ đề chữ Trung, chèn logo và tên kênh của mình để sau này nếu bị báo sử dụng lại nội dung thì vẫn về, và re-up rất dễ, làm nhanh."
+  ],
+  "edit_sop": {
+    "primary": "Nguồn mới reup câu cá vạn cân: lấy tập mới từ kênh YouTube nguồn chính và edit nhẹ",
+    "additional": [
+      "Nguồn Bilibili cũ bị xóa tài khoản nên tác giả tìm nguồn mới là kênh trên YouTube, tải về trực tiếp",
+      "Kênh Bilibili tìm thấy chỉ là kênh reup, link vẫn để ở phần mô tả để tham khảo",
+      "Series ra tập mới mỗi ngày nên luôn có người chờ xem",
+      "Edit thêm: làm mờ phụ đề chữ Trung, chèn logo và tên kênh của mình",
+      "Quy trình reup còn lại giống các video trước"
+    ]
+  },
+  "avoid_flags": [
+    "Tránh lấy nhầm kênh đăng lại trên nền tảng khác làm nguồn gốc khi tài khoản nguồn cũ đã bị xóa mà phải kiểm tra kỹ lịch sử đăng tập mới",
+    "Khi biên tập video lấy từ nguồn về không được để nguyên phụ đề tiếng Trung gốc mà phải làm mờ đi và chèn thêm tên kênh cùng biểu tượng riêng"
+  ],
+  "tools_mentioned": [
+    "Bilibili",
+    "TikTok",
+    "Douyin",
+    "YouTube",
+    "Google"
+  ],
+  "channels_mentioned": [
+    "@ChuXinDiaoYu01",
+    "@mimymedia",
+    "@kyzoravietsub"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Show 2 kênh mới lập ngách Câu Cá Vạn Cân nổ hơn 50k–100k view"
+    },
+    {
+      "time": "00:44",
+      "seconds": 44,
+      "label": "Kiểm tra nguồn Bilibili cũ bị xóa tài khoản và tìm nguồn thay thế"
+    },
+    {
+      "time": "01:20",
+      "seconds": 80,
+      "label": "Mở nguồn gốc chính thức trên YouTube cập nhật tập mới nhanh hơn Douyin"
+    },
+    {
+      "time": "02:14",
+      "seconds": 134,
+      "label": "Phân tích lợi thế series ra tập mới mỗi ngày luôn có khán giả chờ xem"
+    },
+    {
+      "time": "02:40",
+      "seconds": 160,
+      "label": "Quy trình làm mờ phụ đề chữ Trung và chèn logo tên kênh để kháng bản quyền"
+    }
+  ],
+  "analysis_method": "verified_expert_summary",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-acd33f/transcript.txt",
+  "verified_expert_summary": true,
+  "sop_steps": [
+    "Nguồn Bilibili cũ bị xóa tài khoản nên tác giả tìm nguồn mới là kênh trên YouTube, tải về trực tiếp",
+    "Kênh Bilibili tìm thấy chỉ là kênh reup, link vẫn để ở phần mô tả để tham khảo",
+    "Series ra tập mới mỗi ngày nên luôn có người chờ xem",
+    "Edit thêm: làm mờ phụ đề chữ Trung, chèn logo và tên kênh của mình",
+    "Quy trình reup còn lại giống các video trước"
+  ]
+}

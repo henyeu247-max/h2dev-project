@@ -1,0 +1,139 @@
+{
+  "sku": "VIDEO-3bba93",
+  "title": "Thuật Toán Đề Xuất Youtube",
+  "actual_topic": "Giải mã cơ chế hoạt động thực chất của thuật toán tìm kiếm và đề xuất YouTube từ tài liệu chính thức của YouTube Creators (tìm video cho từng người xem dựa trên Hoạt động cá nhân + Hiệu suất video, 3 biến số Mối quan tâm chủ đề - Cạnh tranh - Tính thời vụ), chiến lược chăm sóc Tab Cộng Đồng đủ 5 định dạng và 4 trụ cột thực thi Fair Use an toàn.",
+  "category_group": "he_thong",
+  "niche_primary": "Thuật Toán Đề Xuất & Fair Use",
+  "niche_id": "thuat_toan_de_xuat_fair_use",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "tools_mentioned": [
+    "YouTube",
+    "Google Trends",
+    "Google Xu hướng",
+    "SEO",
+    "Fair Use",
+    "Twitch.tv"
+  ],
+  "channels_referenced": [
+    {
+      "name": "YouTube Creators",
+      "handle": "@YouTubeCreators",
+      "url": "https://www.youtube.com/@YouTubeCreators",
+      "niche": "Kênh đào tạo chính thức của YouTube giải đáp cơ chế xếp hạng Tìm kiếm & Khám phá (Search & Discovery), biểu tượng tiền vàng, tần suất đăng và thẻ Tags",
+      "status": "VERIFIED_HTTP_200"
+    },
+    {
+      "name": "Healthy Long Life",
+      "handle": "@HealthyLongLife",
+      "url": "https://www.youtube.com/@HealthyLongLife",
+      "niche": "Sức khỏe & Trường thọ (Case study minh họa trực tiếp trên màn hình về lỗi spam link video một chiều trên Tab Cộng Đồng thay vì sử dụng 5 định dạng tương tác)",
+      "status": "VERIFIED_HTTP_200"
+    }
+  ],
+  "Analytics": {
+    "verdict": "GREEN",
+    "summary": "Hiểu đúng bản chất thuật toán YouTube ('Tìm video cho từng người xem chứ không tìm người xem cho video', chia sẻ 45% doanh thu với nền tảng) kết hợp vận hành Tab Cộng Đồng 5 định dạng (chiếm 50% trọng số tín hiệu tương tác) và tuân thủ 4 trụ cột Fair Use giúp hệ thống kênh phát triển bền vững mà không sợ gãy đề xuất hay sập bản quyền."
+  },
+  "key_timestamps": [
+    {
+      "time": "00:39",
+      "seconds": 39,
+      "label": "Bản chất hệ thống đề xuất YouTube: Tìm video phù hợp cho từng người xem dựa trên hoạt động cá nhân và hiệu suất video"
+    },
+    {
+      "time": "02:31",
+      "seconds": 151,
+      "label": "Tác động của việc đổi tiêu đề/hình thu nhỏ, video hoạt động kém và trạng thái bật kiếm tiền (biểu tượng màu vàng)"
+    },
+    {
+      "time": "04:31",
+      "seconds": 271,
+      "label": "3 yếu tố ngoại cảnh quyết định lượng người xem: Mối quan tâm chủ đề (tra cứu qua Google Trends), mức độ cạnh tranh và tính thời vụ"
+    },
+    {
+      "time": "06:38",
+      "seconds": 398,
+      "label": "Phân tích mô hình kinh doanh cái đuôi dài (Long Tail) & Business Model Canvas từ góc nhìn chia sẻ 45% doanh thu của nền tảng"
+    },
+    {
+      "time": "08:53",
+      "seconds": 533,
+      "label": "Tối ưu 2 nhóm tín hiệu đề xuất: Tương tác người dùng trên player (like, share, comment, tua, đổi tốc độ/độ phân giải) và hiệu suất"
+    },
+    {
+      "time": "09:58",
+      "seconds": 598,
+      "label": "Bí quyết lên Top 1 bằng chăm sóc Tab Cộng Đồng đủ 5 định dạng (hình ảnh, thăm dò ý kiến, đố vui, video) thay vì spam link (@HealthyLongLife)"
+    },
+    {
+      "time": "14:05",
+      "seconds": 845,
+      "label": "4 trụ cột Fair Use thực chiến: Biến đổi giá trị cho khán giả, tránh ông lớn bản quyền (mua/xin phép từ Twitch.tv), tránh cắt đoạn cốt lõi và không giành thị phần gốc"
+    }
+  ],
+  "key_takeaways": [
+    "Thuật toán tìm video cho người xem chứ không đẩy video tìm người: Theo video chính thức của YouTube Creators (@YouTubeCreators), hệ thống xếp hạng dựa trên hàng trăm tín hiệu thuộc 2 nhóm chính là Hoạt động lịch sử của người xem (chọn xem, bỏ qua, tần suất xem) và Hiệu suất thực tế của video (thời lượng xem trung bình, tỷ lệ phần trăm đã xem, lượt thích và khảo sát).",
+    "Hiểu đúng về biểu tượng tiền vàng, tần suất đăng và thẻ tag: Trạng thái kiếm tiền (màu vàng) không làm giảm đề xuất vì hệ thống đề xuất không phân biệt trạng thái kiếm tiền (trừ khi nội dung bạo lực/phản cảm không phù hợp mọi đối tượng); tần suất đăng dày không tương quan với tăng trưởng bằng chất lượng gắn kết; thẻ (tags) chỉ dùng để bắt lỗi chính tả.",
+    "Ba biến số thị trường ngoài kênh làm biến động lượt xem: Mối quan tâm toàn cầu (kiểm tra trên Google Trends lọc tìm kiếm YouTube), mức độ cạnh tranh giành thời gian xem của khán giả (ví dụ giờ vàng 7h tối trùng trận bóng đá hoặc trend mới), và tính thời vụ theo mùa (video củi đốt trong lò 8 tiếng nổ lách tách mùa đông vs tiếng mưa lộp bộp mùa hè).",
+    "Tương tác chiếm 1/2 trọng số thúc đẩy đề xuất: Mọi thao tác của khán giả trên trình phát (like, share, comment, tua qua lại, chỉnh tốc độ 0.5x-1x-2x, chọn chất lượng HD/Full HD) đều được tính là tín hiệu tương tác tích cực.",
+    "Vũ khí bí mật từ Tab Cộng Đồng (Community Tab): Minh họa trực tiếp trên kênh Healthy Long Life (@HealthyLongLife/community), tuyệt đối không dùng Tab Cộng Đồng để spam link video một chiều khiến khán giả lướt bỏ qua; tất cả kênh Top 1 của hệ thống đều vận hành Tab Cộng Đồng như một fanpage với đủ 5 định dạng (Hình ảnh, Thăm dò ý kiến chữ, Thăm dò ý kiến ảnh, Đố vui, Video).",
+    "Bốn trụ cột sống còn khi làm nội dung Fair Use: (1) Biến đổi mạnh so với tác phẩm gốc để phục vụ khán giả; (2) Tránh đụng vào các công ty giải trí/thể thao/âm nhạc/network lớn có đội ngũ pháp lý mà ưu tiên mua footage hoặc nhắn tin xin phép creator (như lấy highlight Fortnite trên Twitch.tv có thêm thuyết minh); (3) Không trích xuất đúng đoạn cao trào cốt lõi tóm tắt toàn bộ video (dù chỉ 3-10 giây vẫn bị đánh); (4) Không xâm phạm trực tiếp vào miếng bánh thị phần của chủ sở hữu."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình tối ưu tín hiệu đề xuất tự nhiên, vận hành Tab Cộng Đồng và kiểm soát bản quyền Fair Use 4 trụ cột",
+    "additional": [
+      "Sử dụng công cụ Google Trends (lọc theo tìm kiếm YouTube) để đánh giá dung lượng quan tâm của chủ đề, mức độ cạnh tranh và chu kỳ thời vụ trước khi sản xuất",
+      "Tối ưu tiêu đề và hình thu nhỏ (thumbnail) khi video có tỷ lệ nhấp thấp để thay đổi phản ứng tương tác của người xem, nhưng giữ nguyên nếu video đang tăng trưởng tốt",
+      "Chăm sóc Tab Cộng Đồng đều đặn như một fanpage độc lập bằng cách phối hợp đủ 5 hình thức: bài đăng hình ảnh, thăm dò ý kiến văn bản, thăm dò ý kiến hình ảnh, câu đố vui và chia sẻ video",
+      "Chủ động tạo nguồn footage sạch khi làm bán tự động/tổng hợp bằng cách mua bản quyền hoặc nhắn tin trực tiếp xin phép các streamer/creator (như trên Twitch.tv) kèm cam kết biên tập thêm thuyết minh mới",
+      "Rà soát nghiêm ngặt 4 trụ cột Fair Use trước khi xuất bản: mức độ biến đổi nội dung, quy mô pháp lý của chủ bản quyền, tỷ trọng đoạn trích (tránh lấy phần tinh túy nhất của video gốc) và mức độ ảnh hưởng tới thị phần gốc"
+    ]
+  },
+  "sop_steps": [
+    "Sử dụng công cụ Google Trends (lọc theo tìm kiếm YouTube) để đánh giá dung lượng quan tâm của chủ đề, mức độ cạnh tranh và chu kỳ thời vụ trước khi sản xuất",
+    "Tối ưu tiêu đề và hình thu nhỏ (thumbnail) khi video có tỷ lệ nhấp thấp để thay đổi phản ứng tương tác của người xem, nhưng giữ nguyên nếu video đang tăng trưởng tốt",
+    "Chăm sóc Tab Cộng Đồng đều đặn như một fanpage độc lập bằng cách phối hợp đủ 5 hình thức: bài đăng hình ảnh, thăm dò ý kiến văn bản, thăm dò ý kiến hình ảnh, câu đố vui và chia sẻ video",
+    "Chủ động tạo nguồn footage sạch khi làm bán tự động/tổng hợp bằng cách mua bản quyền hoặc nhắn tin trực tiếp xin phép các streamer/creator (như trên Twitch.tv) kèm cam kết biên tập thêm thuyết minh mới",
+    "Rà soát nghiêm ngặt 4 trụ cột Fair Use trước khi xuất bản: mức độ biến đổi nội dung, quy mô pháp lý của chủ bản quyền, tỷ trọng đoạn trích (tránh lấy phần tinh túy nhất của video gốc) và mức độ ảnh hưởng tới thị phần gốc"
+  ],
+  "avoid_flags": [
+    "Biến Tab Cộng Đồng thành nơi spam link video liên tục (như lỗi trên @HealthyLongLife/community): Khán giả lướt qua không tương tác sẽ tạo tín hiệu bỏ qua tiêu cực cho hệ thống đề xuất",
+    "Lầm tưởng quy tắc 'cắt dưới 3 giây, 5 giây hay 10 giây là an toàn bản quyền': Nếu lấy trúng đoạn 1 phút đắt giá nhất tóm tắt toàn bộ video 2 tiếng hoặc giành mất thị phần của chủ gốc thì vẫn bị đánh bản quyền",
+    "Lấy nguyên liệu từ các tập đoàn bản quyền lớn có đội ngũ pháp lý và network bảo vệ nghiêm ngặt như chương trình truyền hình, game show, giải đấu thể thao và hãng âm nhạc",
+    "Hoảng loạn sửa toàn bộ kênh khi lượng view sụt giảm cục bộ vào các khung giờ có sự kiện lớn (như bóng đá 7h tối) hoặc khi đổi mùa (hè sang đông), mà cần đối chiếu tính thời vụ và xu hướng thị trường"
+  ],
+  "course_docs": [
+    {
+      "title": "Tài Liệu Chuẩn Hóa SEO YouTube 100 Điểm",
+      "file": "assets/docs-huan/SEO_100_DIEM.pdf",
+      "readFile": "assets/docs-huan/SEO_100_DIEM.pdf.md",
+      "link": "https://drive.google.com/file/d/15v_9JyWCIUskVsdegZ1jePL-PbnyAo8X/view"
+    },
+    {
+      "title": "Checklist SEO YouTube Toàn Diện",
+      "file": "assets/docs-huan/SEO_Youtube_Checklist_.xlsx",
+      "readFile": "assets/docs-huan/SEO_Youtube_Checklist_.xlsx.md",
+      "link": "https://drive.google.com/file/d/1KbRWbYoNXTNduMPsTuN42CyEfl0QQWfP/view"
+    },
+    {
+      "title": "Quy Trình Làm Việc Siêu Chi Tiết (Chuẩn Hóa Tương Tác & Chăm Sóc Kênh)",
+      "file": "assets/docs-huan/Quy_trinh_lam_viec_SIEU_CHI_TIET.pdf",
+      "readFile": "assets/docs-huan/Quy_trinh_lam_viec_SIEU_CHI_TIET.pdf.md",
+      "link": "https://drive.google.com/file/d/16esGLNpghBWcWgIPlb1UH6YfgDEGw6YJ/view"
+    },
+    {
+      "title": "Checklist YouTube 1 Trang",
+      "file": "assets/docs-huan/CHECKLIST_YOUTUBE_1_TRANG.docx",
+      "readFile": "assets/docs-huan/CHECKLIST_YOUTUBE_1_TRANG.docx.md",
+      "link": "https://drive.google.com/file/d/1YEfmxATH9KB9vsH_hkMpW9QaxvGRUYG1/view"
+    }
+  ],
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "channels_mentioned": [
+    "@YouTubeCreators",
+    "@HealthyLongLife"
+  ],
+  "source_transcript": "video/VIDEO-3bba93/transcript.txt"
+}

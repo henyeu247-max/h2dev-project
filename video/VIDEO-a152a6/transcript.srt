@@ -1,0 +1,987 @@
+1
+00:00:00,000 --> 00:00:11,070
+Chào anh chị em học viên, hôm nay chúng ta đến với một chủ đề là bán content. Bán content kết hợp với nhân vật nổi tiếng trên nền tảng YouTube. Nếu mà các bạn chưa tìm hiểu thì anh
+
+2
+00:00:11,070 --> 00:00:22,140
+em có thể tìm hiểu đến nhân vật Adam Rose, một nhân vật khá là nổi tiếng trên nền tảng YouTube. Nhân vật này có những video phổ biến rất là nhiều view, kể cả video dài, video ngắn.
+
+3
+00:00:22,140 --> 00:00:31,200
+Anh này thường hay sử dụng những video có sẵn và giao tác video mình là một đầu bếp hoặc là một kỹ sư hoặc công an.
+
+4
+00:00:31,500 --> 00:00:39,260
+Đại loại là như thế. Nhưng để chúng ta sẽ lấy sử dụng nhân vật này để làm cho kênh YouTube của chúng ta thì chúng ta sẽ kết hợp như thế nào.
+
+5
+00:00:39,400 --> 00:00:44,420
+Để cho nó hoàn chỉnh thì ở đây tôi đã có một cái tài liệu. Tài liệu này thì tôi sẽ ghi ở trong phần mô tả.
+
+6
+00:00:44,420 --> 00:00:48,640
+Ở đây chúng ta sẽ có 2 kênh YouTube làm dạng bán content để anh em tham khảo.
+
+7
+00:00:48,640 --> 00:00:56,700
+Ví dụ như kênh này 533 video nhé. Cũ nhất là 1 năm trước nhưng mà bắt đầu sản xuất video về nhân vật này là 1 năm trước và có những
+
+8
+00:00:56,700 --> 00:01:05,060
+cái video viral lên tới 2 triệu view. Đối với video dài 1 tiếng mà 2 triệu view như thế này thì cái lượt RPM cực cao nha anh chị em nhé.
+
+9
+00:01:05,060 --> 00:01:07,820
+Ở đây chúng ta có thể tìm được rất nhiều nguồn
+
+10
+00:01:07,820 --> 00:01:09,220
+22h trước vẫn đăng
+
+11
+00:01:09,220 --> 00:01:11,420
+Ở đây tôi để 1-2 kênh tham khảo
+
+12
+00:01:11,420 --> 00:01:13,100
+và những kênh video như thế này
+
+13
+00:01:13,100 --> 00:01:14,360
+chúng ta chỉ cần 1 kênh thôi
+
+14
+00:01:14,360 --> 00:01:15,960
+Anh chị có thể làm 5-10 kênh
+
+15
+00:01:15,960 --> 00:01:17,500
+20-30 kênh đều được nhé
+
+16
+00:01:17,500 --> 00:01:18,920
+Anh chị làm song song
+
+17
+00:01:18,920 --> 00:01:21,860
+thì cái tỷ lệ mà nó tắt kiếm tiền dạng này
+
+18
+00:01:21,860 --> 00:01:22,800
+thì đương nhiên rồi
+
+19
+00:01:22,800 --> 00:01:24,500
+nhưng mà RPM cực kỳ cao
+
+20
+00:01:24,500 --> 00:01:25,060
+ví dụ như
+
+21
+00:01:25,060 --> 00:01:29,420
+có những kênh chúng ta chỉ cần ăn trong vòng tầm 3-4 tháng 5 tháng
+
+22
+00:01:29,420 --> 00:01:30,940
+là ok nhanh chị em nhé
+
+23
+00:01:30,940 --> 00:01:32,860
+và những nguồn này sản xuất cực kỳ dễ
+
+24
+00:01:32,860 --> 00:01:36,281
+ở đây tôi sẽ có những công cụ sản xuất video như sau
+
+25
+00:01:36,281 --> 00:01:43,381
+Picsart thì chúng ta để tạo thumbnail, CapCut để edit video, Gemini thì chúng ta để phân tích và tự động tải ra cho chúng ta.
+
+26
+00:01:43,581 --> 00:01:49,121
+Và tôi cần một cái nhạc nền nữa là nhạc nền Suno AI. Đợt này làm bán content thì khó hơn đợt trước nhiều.
+
+27
+00:01:49,281 --> 00:01:52,580
+Nên là anh chị em nếu mà làm thì anh chị em sẽ sản xuất như thế nào.
+
+28
+00:01:52,580 --> 00:02:03,220
+Đến vấn đề tìm nguồn thì chúng ta sẽ tìm nguồn ở trên Douyin, TikTok, YouTube và Facebook cũng được nhé. Anh chị em lấy nguồn ở đâu cũng được. Nhưng mà lựa chọn nguồn như thế nào để cho
+
+29
+00:02:03,220 --> 00:02:12,650
+nó hiệu quả? Thì đối với cánh đàn ông mà thường thì sẽ là gái xinh. Nhưng mà gái xinh sẽ kết hợp với gì ạ? Gái xinh sẽ kết hợp với võ thuật xây dựng hoặc nội trợ và
+
+30
+00:02:12,650 --> 00:02:21,960
+rất nhiều cái khác. Ví dụ như anh em hay xem cô giáo nóng bỏng. Đấy. Thì anh em có thể là lấy những cái nguồn đấy để anh em để tạo ra những cái video bán content.
+
+31
+00:02:22,000 --> 00:02:31,900
+Ở đây thì tôi đã chuẩn bị 1 cái Master Prompt có sẵn. Cái này thì tôi đã yêu cầu con Gemini ghi nhớ và phân tích rồi. Thì chúng ta sẽ làm như nào? Chúng ta sẽ đi từng bước như sau.
+
+32
+00:02:31,900 --> 00:02:42,330
+Đầu tiên, chúng ta sẽ phải đi tìm nguồn trước. Anh chị em hãy nhớ cho tôi là anh chị em tìm. Ở đây tôi sẽ sử dụng là cái tiếng Việt chuyển sang tiếng Trung hoặc anh em chọn tiếng Việt chuyển
+
+33
+00:02:42,330 --> 00:02:51,941
+sang tiếng Anh. Nếu mà anh em tìm ở trên nền tảng YouTube hoặc là TikTok của Việt Nam để tìm ra những cái nguồn như thế. Ở đây tôi sẽ tìm ví dụ như gái xinh. Kết hợp với gì ạ?
+
+34
+00:02:51,961 --> 00:02:53,641
+Kết hợp với xây dựng
+
+35
+00:02:53,641 --> 00:02:58,101
+Và tôi sẽ lựa chọn tiếng Trung phồn thể nhé
+
+36
+00:02:58,101 --> 00:02:59,341
+Phồn thể này
+
+37
+00:02:59,450 --> 00:03:06,550
+Tiếng Trung phồn thể nhé, tôi copy tiếng Trung phồn thể này là gái xinh xây dựng và tôi dịch từ tiếng Việt sang tiếng Trung nhé, anh chị em nhớ cho tôi nhé.
+
+38
+00:03:06,650 --> 00:03:13,210
+Và tôi sẽ lựa chọn Douyin nhé anh em nhé, Douyin, Douyin thì nó là nền tảng của Trung Quốc thì chúng ta phải dịch từ Trung Quốc.
+
+39
+00:03:13,210 --> 00:03:18,910
+Còn TikTok ở Việt Nam thì anh em có thể tìm từ tiếng Anh, nó cũng ra được những cái video nước ngoài nhé anh em nhé.
+
+40
+00:03:19,030 --> 00:03:24,930
+Ở đây thì tôi sẽ dán cái từ gái xinh xây dựng này, anh em có thể xem được những cái nguồn như thế này.
+
+41
+00:03:24,930 --> 00:03:30,930
+Nó rất nhiều nguồn nếu mà chưa hiểu ý lắm thì anh em có thể tìm cho tôi là cô gái xây dựng.
+
+42
+00:03:31,930 --> 00:03:36,930
+Cô gái xây dựng thì nó sẽ chi tiết hơn. Gái xinh nhiều lúc nó kiểu là nhà xinh.
+
+43
+00:03:36,930 --> 00:03:39,930
+Ok, anh chị em có thể nhìn thấy ở đây rất nhiều nguồn.
+
+44
+00:03:39,930 --> 00:03:43,930
+Đấy, những cái nguồn như này tôi bảo nha.
+
+45
+00:03:43,930 --> 00:03:47,930
+Nếu mà các ông là người đàn ông thì các ông có xem những video như này không?
+
+46
+00:03:47,930 --> 00:03:50,930
+Có chứ, tôi cũng có. Không những là các ông.
+
+47
+00:03:50,930 --> 00:03:51,930
+Đây rất là nhiều nguồn nha.
+
+48
+00:03:51,930 --> 00:04:05,490
+Anh em hãy bắt đầu tìm cho tôi và tải về. Ở đây ví dụ như là tôi nhấn vào bất kỳ một cái video này nhé. Vẫn như là cách thức tải ở các nền tảng thôi. Đây tôi nhấn vào video này. Tôi nhấn sao chép này.
+
+49
+00:04:06,490 --> 00:04:13,470
+Biết kênh này nó có nhiều không gì. Anh em đăng nhập hộ tôi vào Cốc Cốc nhé. Thì ở đây là anh em copy cho tôi cái video này.
+
+50
+00:04:13,470 --> 00:04:19,390
+Sau đó thì anh em tải về
+
+51
+00:04:19,390 --> 00:04:21,470
+Đấy nha
+
+52
+00:04:21,470 --> 00:04:22,590
+Anh em x cái này ra này
+
+53
+00:04:22,590 --> 00:04:25,750
+Là đăng nhập vào Cốc Cốc thì anh em dán những link vào
+
+54
+00:04:25,750 --> 00:04:26,690
+Thì nó sẽ ra
+
+55
+00:04:26,690 --> 00:04:28,670
+Đó tải xuống này
+
+56
+00:04:28,670 --> 00:04:32,270
+Nó sẽ đề xuất ra rất nhiều video liên quan đến gái xinh như thế này
+
+57
+00:04:33,470 --> 00:04:35,470
+Tôi nhấn vào video tiếp
+
+58
+00:04:35,470 --> 00:04:36,470
+Đó
+
+59
+00:04:36,470 --> 00:04:36,990
+Tải xuống
+
+60
+00:04:36,990 --> 00:04:38,561
+Ở đây
+
+61
+00:04:38,561 --> 00:04:44,181
+Ở đây thì anh em nhấn trực tiếp vào kênh nhé. Nhấn vào kênh của họ xem là có nhiều video không.
+
+62
+00:04:45,181 --> 00:04:54,340
+Ồ, 100.000 follow à. Ủa, nhiều đấy. Ủa, những nguồn này thì anh em làm thoải mái. Chúng ta sẽ lấy tầm...
+
+63
+00:04:54,340 --> 00:05:03,110
+Bình thường thì tôi sẽ làm video tầm trên 8 phút nha anh em nhé. Thì anh em lấy bao giờ cho đủ số cạnh 8 phút thôi. Còn lại ví dụ như tôi sẽ lấy một số cái video trên này.
+
+64
+00:05:03,110 --> 00:05:11,730
+Anh em nhớ ví dụ như nếu mà anh em làm chi tiết để cái nguồn này anh em nêu lại thì anh em sẽ nhấn like vào nhé. Để sau mình biết là mình đã lấy video này rồi. Để tránh
+
+65
+00:05:11,730 --> 00:05:20,501
+trường hợp trên một kênh anh em làm đi lấy đi lấy lại lấy rất nhiều lần. Ví dụ như anh em lấy cái video này rồi đúng không? Thì anh em nhớ cho tôi là anh em nhấn like vào.
+
+66
+00:05:20,501 --> 00:05:28,241
+Anh em đăng nhập vào tài khoản Douyin thì chúng ta có thể tự động tải ở trên nền tảng Việt Nam. Anh em tự động tải được. Tải xuống.
+
+67
+00:05:28,241 --> 00:05:40,041
+Giờ sẽ trở về cái Douyin, giao diện của Douyin. Sồi ôi như thế này có phải thương không? Như thế này mà tôi bảo các ông là nếu mà là tôi là tôi sẽ đi vào luôn này.
+
+68
+00:05:40,041 --> 00:05:45,420
+Bê gạch cho em luôn này. Nhớ cho tôi là đăng nhập vào Cốc Cốc này thì chúng ta có thể tải được video về nhé.
+
+69
+00:05:45,420 --> 00:05:55,360
+Còn không đăng nhập vào Cốc Cốc thì không được nha. Nguồn nó nhiều lắm không rồi. Tôi chỉ lấy vài video để demo cho các ông cách làm nha. Chứ không thể nào tôi ngồi tôi làm nhiều được. Nếu mà làm nhiều
+
+70
+00:05:55,360 --> 00:06:04,101
+thì nó cũng được thôi. Nhưng mà anh em nó bị dễ chán thì chúng ta sẽ làm vài video thôi. Còn lại nếu mà anh em muốn làm chi tiết hơn thì anh em nên lấy cho tôi tất cả là video trên.
+
+71
+00:06:04,400 --> 00:06:12,600
+Trên 8 phút nhé, lấy tất cả các video cộng lại là trên 8 phút. Và ở đây thì chúng ta sẽ tải thêm cái video về nhân vật Adam Rose này nhé.
+
+72
+00:06:12,800 --> 00:06:21,180
+Anh em nhấn hộ tôi phần Shorts này, phần Shorts nhé, đúng cái kênh của Adam Rose này nhé. Anh em nhấn phổ biến này, chúng ta sẽ lấy những cái video về nhân vật này.
+
+73
+00:06:23,560 --> 00:06:31,020
+Kênh chính của họ cũng làm như thế này. Chúng ta tải một video của YouTube của anh chàng này về thôi, Adam Rose.
+
+74
+00:06:31,020 --> 00:06:38,410
+Sự dụng nha, Suno với Gemini, sử dụng như thế nào để cho nó hiệu quả thì chúng ta sẽ sử dụng xong, sau khi chúng ta ghép video xong, đã tải xong như thế này
+
+75
+00:06:38,410 --> 00:06:45,620
+rồi thì bước tiếp theo chúng ta sẽ vào CapCut nè, anh chị em nhớ cho tôi là anh em vào CapCut nha, đấy giao diện của CapCut anh em nhấn vào tạo dự án nha.
+
+76
+00:06:47,000 --> 00:06:58,740
+Luôn luôn nhớ cho tôi là thanh trắng ở đâu thì vị trí ở đấy, câu nói mà tôi đã liên tục nói với anh em, ở đây là tôi đã lấy rất nhiều nguồn như thế này, 17 giây, 13 giây có này.
+
+77
+00:07:01,020 --> 00:07:07,260
+Tôi sẽ tắt nhạc đi.
+
+78
+00:07:07,260 --> 00:07:16,200
+Ở đây tôi đang lấy 1, 2, 3, 4, 5, tầm 5 đến 5 đoạn nhé.
+
+79
+00:07:16,200 --> 00:07:24,900
+nhé thì anh em nhớ cho tôi là 5 đoạn 1 phút là anh em lấy tầm tất cả video cộng lại tầm 8 phút 10 phút là ok nhé
+
+80
+00:07:24,900 --> 00:07:32,620
+thì đối với cái này thì chúng ta không để tỷ lệ khung hình như thế này thì ở đây thì anh em chọn cho tôi tỷ lệ là 16:9 nhé
+
+81
+00:07:32,781 --> 00:07:36,841
+Đó. Anh em nhớ cho tôi là khi anh em thêm video rồi thì anh em mới chọn được ở đây.
+
+82
+00:07:36,841 --> 00:07:43,200
+Sau khi đã chọn như thế rồi thì anh em chọn tất cả video này. Đấy. Chọn nhé. Chọn tất cả này.
+
+83
+00:07:43,200 --> 00:07:56,350
+Anh em nhớ cho tôi là phần video này, cơ bản này. Sau đó tỷ lệ anh em để cho tôi là 174 nhé. Ok. Anh em nhớ chưa? Tất cả các video nó sẽ trở sang là 174. Nếu mà anh em kéo tay thì
+
+84
+00:07:56,350 --> 00:08:03,875
+thường nó video này được, video kia không được đâu. Sau khi đã để kích cỡ 174 rồi thì chúng ta sẽ chọn
+
+85
+00:08:03,875 --> 00:08:11,401
+tất cả video này. Anh em sẽ chọn cho tôi phần nền nhé. Đây, kéo phần video cơ bản kéo thẳng xuống nhé.
+
+86
+00:08:11,401 --> 00:08:18,121
+Đó, anh em chọn nền này, chọn mờ nhé. Đó, anh em chọn mờ như thế này là được nhé.
+
+87
+00:08:22,181 --> 00:08:28,881
+Thì chúng ta sẽ có một cái video như này. Tiếp theo thì chúng ta sẽ thêm những cái cảnh của nhân vật Adam Rose kia.
+
+88
+00:08:29,761 --> 00:08:34,581
+Đây, tôi sẽ cắt nhé. Để, đến cái đoạn này, cắt này. Đó.
+
+89
+00:08:38,850 --> 00:08:46,450
+Cắt nhé. Cái này thì anh em làm chi tiết cho tôi thì nhé. Cắt này. Tôi chỉ lấy nhân
+
+90
+00:08:46,450 --> 00:08:54,050
+vật này thôi nhé. Chứ tôi không lấy cái đoạn trong video của họ. Tôi chỉ lấy mấy video, mấy đoạn
+
+91
+00:08:54,050 --> 00:09:07,570
+của Adam Rose này thôi. Và bây giờ là chúng ta sẽ tách cái âm thanh của Adam Rose này đi nhé. Tôi sẽ để ví dụ như tầm 2-3 đoạn đi thì tôi sẽ để kéo vào 1-2 lần.
+
+92
+00:09:07,570 --> 00:09:13,770
+hoặc là anh em làm chi tiết hơn mỗi đoạn thì anh em thêm một lần cũng được. Đó, như thế này nhé.
+
+93
+00:09:17,390 --> 00:09:24,010
+Chọn tất cả này. Vẫn chọn mờ nhé. Cái Adam Rose tôi vừa cho vào nên nó chưa mờ như thế đâu.
+
+94
+00:09:24,330 --> 00:09:30,670
+Cái Adam Rose này anh em cũng có thể là cho lên 174 nhé. Nhưng mà tôi nghĩ là anh em để luôn như thế này cho tôi.
+
+95
+00:09:31,010 --> 00:09:35,310
+Không cần phải là cho lên 174 đâu, tại vì nó nhìn thấy cả trực diện của nhân vật này luôn.
+
+96
+00:09:35,310 --> 00:09:43,750
+Thì bây giờ tiếp theo đến cái phần nhạc bản quyền nhé. Anh em ghi nhớ cho tôi nè. Anh em nghe thấy không? Nó không
+
+97
+00:09:43,750 --> 00:09:52,190
+có nhạc nền. Nó chỉ có tiếng xúc cát thôi. Thì cái này thì chúng ta làm gì ạ? Chúng ta không tách nhạc nền nhé.
+
+98
+00:09:52,190 --> 00:10:02,270
+cái này cái này rất nhiều ông không biết làm này công làm có view nhưng mà nó sẽ rất dễ tắt kiếm
+
+99
+00:10:12,190 --> 00:10:13,730
+Có gì ạ? Có nhạc nền nha anh em nha.
+
+100
+00:10:14,270 --> 00:10:14,730
+Tắt đi nha.
+
+101
+00:10:17,166 --> 00:10:18,166
+Đi nè.
+
+102
+00:10:20,166 --> 00:10:22,166
+Đấy, tắt đi nè.
+
+103
+00:10:25,166 --> 00:10:30,166
+Tắt hết đi nha. Nếu mà nó mà có cái, những cái như này thì chúng ta tắt đi.
+
+104
+00:10:30,166 --> 00:10:32,166
+Âm thanh tắt này.
+
+105
+00:10:36,170 --> 00:10:43,390
+Các ông chủ động tách cho tôi và copy cái Adam Rose này lên. Các ông có thể chèn qua những đoạn như thế
+
+106
+00:10:43,390 --> 00:10:50,610
+cũng được. Và tiếp theo thì chúng ta nhớ cho tôi là đoạn này nhé. Anh em nhấn OR này. OR là tôi
+
+107
+00:10:50,610 --> 00:10:57,758
+sẽ xuất đến tầm này nhé. OR nhé. Nhớ cho tôi OR này. OR đến cái đoạn cuối này. Thanh trắng ở đâu vị
+
+108
+00:10:57,758 --> 00:11:04,906
+trí đấy thì tôi kéo hẳn đến cuối cùng đúng không? Tôi nhấn OR thì nó sẽ bôi đen cái đoạn sau này.
+
+109
+00:11:04,910 --> 00:11:17,180
+Và nó sẽ giữ trắng toàn bộ cái đoạn này không? Sau đó nó xuất ra nhé. Anh em xuất cho tôi. Tụi như là bán content. Cái này chưa xong nhé. Cái này anh em nhớ cho tôi là chưa xong nhé. Đó. Và bây
+
+110
+00:11:17,180 --> 00:11:30,526
+giờ chúng ta trở ra Gemini nhé. Trước khi trở ra Gemini thì anh chị em nhớ cho tôi là anh chị em copy toàn bộ cái Master Prompt này nhé. Cái Master Prompt thì anh em xem cho tôi trong cái bài Master Prompt nhé.
+
+111
+00:11:30,526 --> 00:11:36,666
+Cái này tôi sẽ đặt dựa theo cái ý tưởng để sản xuất video bán content để chúng ta làm ra.
+
+112
+00:11:37,006 --> 00:11:40,000
+Đấy anh em copy toàn bộ từ cái Master Prompt đến cuối cùng nhé.
+
+113
+00:11:40,000 --> 00:11:43,006
+Sau đó thì anh em vào cho tôi là cái Gemini này.
+
+114
+00:11:43,450 --> 00:11:50,410
+Google Gemini thì anh em tải video lên thì nó phân tích nó sẽ dễ hơn con ChatGPT nhé. ChatGPT nhiều lúc ngố lắm.
+
+115
+00:11:51,090 --> 00:11:57,570
+Anh em gửi này. Anh em gửi cái Master Prompt này cho Gemini ghi nhớ trước. Sau đó thì gì ạ? Chúng ta sẽ tải video lên.
+
+116
+00:11:58,630 --> 00:12:07,950
+Đây. Tải video bán content lên. Đây là một trong những cái bước mà anh chị tải video tầm 8 phút, 10 phút lên nó phân tích cho anh chị.
+
+117
+00:12:07,950 --> 00:12:10,470
+Những cái câu mà hay luôn
+
+118
+00:12:10,470 --> 00:12:13,030
+Làm ra tiếng Anh, tiếng Việt luôn
+
+119
+00:12:13,030 --> 00:12:15,710
+Cho chúng ta không cần phải ngồi, chúng ta ngồi suy nghĩ
+
+120
+00:12:15,710 --> 00:12:18,370
+Anh em suy nghĩ đoạn này chúng ta nên viết gì đúng không?
+
+121
+00:12:18,830 --> 00:12:19,730
+Phụ đề là gì?
+
+122
+00:12:20,410 --> 00:12:21,870
+Một là chúng ta sẽ viết phụ đề
+
+123
+00:12:21,870 --> 00:12:23,190
+Hai chúng ta sẽ chèn luôn
+
+124
+00:12:23,190 --> 00:12:25,110
+Chèn trực tiếp vào video luôn
+
+125
+00:12:25,110 --> 00:12:26,910
+Có quyền được bình phẩm
+
+126
+00:12:26,910 --> 00:12:29,890
+Thì nó sẽ sử dụng trong cái luật là Fair Use của YouTube
+
+127
+00:12:29,890 --> 00:12:33,870
+Sau khi gửi là video 1 phút 2 giây lên nhá
+
+128
+00:12:33,870 --> 00:12:34,650
+Thì anh em nhìn này
+
+129
+00:12:34,650 --> 00:12:37,930
+Nó sẽ ra cho anh em như thế này
+
+130
+00:12:37,950 --> 00:12:44,800
+Thì ở đây nhé, anh em ghi nhớ cho tôi nè. Đây nó sẽ ra những cảnh trên text này. Ví dụ như từ 00 đến 03 giây đúng
+
+131
+00:12:44,800 --> 00:12:52,990
+không? Thì chúng ta nên chèn cái text bằng tiếng Anh gì? Và ý nghĩa của cái text bằng tiếng Anh đối với người không biết tiếng Anh nhé.
+
+132
+00:12:53,550 --> 00:13:05,710
+Khi bạn lên đồ đi tiệc nhưng vũ trụ đưa đẩy đi phụ hồ. Đó, các bạn thấy không? Đấy nhé, copy cho tôi toàn bộ cái này. Một là chúng ta sẽ phụ đề khi đăng tải. Hai là chúng ta sẽ làm theo luôn như thế này cho tôi.
+
+133
+00:13:06,000 --> 00:13:08,710
+0 0 đến 03
+
+134
+00:13:08,710 --> 00:13:09,710
+0 0
+
+135
+00:13:09,710 --> 00:13:11,710
+thêm văn bản
+
+136
+00:13:11,710 --> 00:13:13,710
+0 0 đến 03
+
+137
+00:13:13,710 --> 00:13:15,710
+tầm 3 giây
+
+138
+00:13:15,710 --> 00:13:21,710
+dán vào
+
+139
+00:13:21,710 --> 00:13:25,910
+kéo cỡ chữ
+
+140
+00:13:25,910 --> 00:13:32,526
+em có thể chia đôi đoạn rồi
+
+141
+00:13:32,526 --> 00:13:40,226
+Anh em có thể chọn một cái phông chữ nhé, nhìn cho nó
+
+142
+00:13:40,226 --> 00:13:47,926
+rõ tí. Tôi sẽ chọn một cái chữ nhìn nó thực tế hơn.
+
+143
+00:13:47,926 --> 00:13:54,526
+Cái này làm cho người lớn xem nên chúng ta để những cái chữ mà phông chữ là nó dễ hiểu. Anh chị em nhé,
+
+144
+00:13:54,526 --> 00:14:00,846
+ví dụ như tôi sẽ để phông chữ này và tôi sẽ để một cái màu ví dụ như màu vàng màu trắng được.
+
+145
+00:14:02,526 --> 00:14:05,326
+Thần thiết lắm vì anh em chọn bóng bóng như này rồi.
+
+146
+00:14:06,206 --> 00:14:06,646
+M này.
+
+147
+00:14:07,266 --> 00:14:08,306
+Hoặc là anh em tắt đi này.
+
+148
+00:14:08,566 --> 00:14:09,766
+Chọn phông chữ này.
+
+149
+00:14:10,306 --> 00:14:12,826
+Sau đó thì anh em kéo xuống dưới anh em chọn phông nền nhé.
+
+150
+00:14:13,566 --> 00:14:16,866
+Tôi sẽ để là độ mờ của phông nền này tầm bằng này thôi.
+
+151
+00:14:17,866 --> 00:14:18,966
+Để cho người ta dễ đọc.
+
+152
+00:14:19,126 --> 00:14:20,286
+00 đến 03 này.
+
+153
+00:14:21,026 --> 00:14:21,666
+3 giây nhé.
+
+154
+00:14:22,186 --> 00:14:23,406
+Giờ phút đến giây này.
+
+155
+00:14:25,506 --> 00:14:26,786
+00 đến 03.
+
+156
+00:14:27,166 --> 00:14:28,146
+Nghĩa là 3 giây nhé.
+
+157
+00:14:30,166 --> 00:14:31,726
+03 đến 06 này.
+
+158
+00:14:32,526 --> 00:14:37,226
+03, 06
+
+159
+00:14:37,226 --> 00:14:42,166
+Anh em cứ làm như thế này cho tôi nhé.
+
+160
+00:14:42,166 --> 00:14:42,866
+0.6
+
+161
+00:15:14,050 --> 00:15:22,170
+Cuối cùng là gì ạ? Một ngày đi làm hết sức bình thường. Anh
+
+162
+00:15:22,170 --> 00:15:30,290
+em có thể chèn theo đúng số giây cho tôi cũng được nhé.
+
+163
+00:15:31,110 --> 00:15:38,000
+Còn anh em sẽ làm như thế này cho tôi. Ok. Ở đây sau khi chúng ta đã có cái toàn bộ video thôi như thế này nhé.
+
+164
+00:15:38,000 --> 00:15:40,070
+thì chúng ta sẽ đi tạo nhạc Suno
+
+165
+00:15:40,070 --> 00:15:44,070
+ở đây có cái prompt về để tạo nhạc nền Suno
+
+166
+00:15:44,070 --> 00:15:46,070
+anh em copy đây
+
+167
+00:15:46,070 --> 00:15:48,070
+copy Suno AI này
+
+168
+00:15:48,070 --> 00:15:50,070
+copy rồi
+
+169
+00:15:50,070 --> 00:15:52,070
+sau đó vào cho tôi Suno AI
+
+170
+00:15:52,070 --> 00:15:54,070
+thì đầu tiên là cái phần đơn giản
+
+171
+00:15:54,070 --> 00:15:56,070
+anh em dán vào cho tôi cho này
+
+172
+00:15:56,070 --> 00:15:58,070
+đơn giản
+
+173
+00:15:58,070 --> 00:16:06,750
+chúng ta đợi nó tạo nhạc nền nhanh em nhé đoạn này thì tôi sẽ tua cho nhanh sau khi nó đã tạo ra thì
+
+174
+00:16:06,750 --> 00:16:10,091
+chúng ta sẽ tải cái nhạc này về nhé anh em nhấn download cho tôi
+
+175
+00:16:10,091 --> 00:16:17,091
+Thường thì con Suno nó sẽ tạo ra cho anh chị em 2 bản nhé. Chúng ta có thể dùng cho cái
+
+176
+00:16:17,091 --> 00:16:24,091
+video này và đoạn sau. Ví dụ như video anh chị 8 phút thì anh chị làm nhân lên, tải xuống nhé.
+
+177
+00:16:24,091 --> 00:16:33,921
+Tải xuống, chỗ ra thêm cho tôi nhạc nền. Chúng ta nhấn cho tôi
+
+178
+00:16:33,921 --> 00:16:43,751
+là chuẩn hóa âm lượng nhé. Chuẩn hóa cho nhạc nó vừa phải video.
+
+179
+00:16:43,751 --> 00:16:57,611
+video bây giờ anh chị có thể thêm những cái hình ảnh của anh chị hình ảnh kênh ví dụ như tôi sẽ thêm
+
+180
+00:16:57,611 --> 00:17:02,891
+một cái hình ảnh bất kỳ và đây ví dụ như tôi sẽ lấy một cái hình ảnh của nhân vật này luôn Adam
+
+181
+00:17:03,751 --> 00:17:05,111
+Tôi nhấn Tải về.
+
+182
+00:17:10,571 --> 00:17:11,531
+New in ảnh này.
+
+183
+00:17:12,851 --> 00:17:13,431
+Download này.
+
+184
+00:17:14,051 --> 00:17:25,551
+Bây giờ tôi sẽ thêm hình ảnh nhân vật này vào. Nếu mà anh chị muốn làm hình ảnh của anh chị dạng hình tròn thì anh chị chọn ra mặt nạ. Thêm mặt nạ và thêm hình tròn.
+
+185
+00:17:26,100 --> 00:17:39,000
+Kéo dài. Làm sao anh chị thêm cho tôi vài cái chi tiết nó có cái yếu tố mà mình edit nhé. Và tiếp theo ví dụ như là anh chị thêm với tôi những cái hiệu ứng ở trong cái phần
+
+186
+00:17:39,000 --> 00:17:52,600
+âm thanh này nó sẽ có những cái hiệu ứng âm thanh này. Nhấn hiệu ứng này. Ví dụ như những tiếng hiệu ứng này. Tôi sẽ tìm những tràng cười này. Tôi tìm những cái hiệu ứng âm thanh này.
+
+187
+00:18:12,600 --> 00:18:14,900
+Mình anh em được thêm cho tôi những cái hiệu ứng khác
+
+188
+00:18:14,900 --> 00:18:22,220
+Ví dụ như mỗi đoạn anh em thêm cho tôi một ít
+
+189
+00:18:22,220 --> 00:18:26,100
+Hoặc là anh chị em có thể lấy trực tiếp ở trên cái trang này nha
+
+190
+00:18:26,100 --> 00:18:34,800
+Đây là một cái trang hiệu ứng âm thanh rất là nhiều. Anh chị em có thể tải ở đây về nhé.
+
+191
+00:18:34,800 --> 00:18:36,800
+Ừ rồi
+
+192
+00:18:36,800 --> 00:18:38,800
+Ừ
+
+193
+00:18:38,800 --> 00:18:40,800
+Trời ơi
+
+194
+00:18:40,800 --> 00:18:42,800
+Cú tôi
+
+195
+00:18:42,800 --> 00:18:44,800
+Nói chung là nó rất nhiều
+
+196
+00:18:44,800 --> 00:18:46,800
+Những cái
+
+197
+00:18:46,800 --> 00:18:48,800
+Hiệu ứng âm thanh ở trên cái website này
+
+198
+00:18:48,800 --> 00:18:50,800
+Anh em có thể tìm
+
+199
+00:18:50,800 --> 00:18:52,800
+Những cái trò đùa chính trị
+
+200
+00:18:52,800 --> 00:18:54,800
+Âm nhạc phim trẻ ảnh chó chơi đều được nhé
+
+201
+00:18:54,800 --> 00:18:58,800
+anh chị em có thể thêm những cái bộ lọc vào
+
+202
+00:18:58,800 --> 00:19:00,860
+tự nhiên là tôi sẽ lấy
+
+203
+00:19:00,860 --> 00:19:03,192
+một cái bộ lọc là 4K đi
+
+204
+00:19:03,192 --> 00:19:05,392
+Thêm cho tôi cho nó khác đi.
+
+205
+00:19:05,392 --> 00:19:13,592
+Thêm cho tôi những cái bộ lọc vào.
+
+206
+00:19:13,592 --> 00:19:18,992
+Và bây giờ là chúng ta sẽ thêm những cái phần chuyển cảnh để cho nó tự nhiên hơn thì anh em nhấn cho tôi phần chuyển tiếp.
+
+207
+00:19:19,552 --> 00:19:23,872
+Ví dụ như tôi sẽ lựa chọn một cái phần chuyển tiếp như là M đi, trượt góc.
+
+208
+00:19:25,692 --> 00:19:26,972
+Đó, trượt góc.
+
+209
+00:19:29,512 --> 00:19:32,552
+Tôi muốn cho tất cả thì anh em nhấn tất cả được nhé.
+
+210
+00:19:35,932 --> 00:19:38,372
+Còn là anh em có thể thêm bằng tay.
+
+211
+00:19:38,832 --> 00:19:41,012
+Đó là đoạn nào mà anh em thấy không hợp ý.
+
+212
+00:19:41,292 --> 00:19:42,192
+Anh em có thể thêm như này.
+
+213
+00:19:43,592 --> 00:19:50,792
+Đó, thêm 1 giờ. Đó là 1 cái video về phần video nha anh em nhé. Sau đó thì anh em xuất ra.
+
+214
+00:19:51,000 --> 00:20:02,672
+Xuất này. Và bây giờ là chúng ta sẽ đến cái phần là phần thumbnail nha. Đối với phần thumbnail thì như lúc nãy tôi nói anh em là ví dụ như 1 cái kênh như thế này đi.
+
+215
+00:20:02,832 --> 00:20:08,692
+Thumbnail nó cực kỳ cơ bản. Thì chúng ta sẽ lấy 2 cái hình ở trong cái video và chúng ta sẽ tạo ra luôn.
+
+216
+00:20:08,692 --> 00:20:14,652
+Trường hợp thì chúng ta sẽ tạo trên Picsart nhé. Đây là trang của Picsart.
+
+217
+00:20:15,050 --> 00:20:23,350
+Anh em là quen thì chúng ta có thể sử dụng Canva nhé. Thì trong phần Picsart này thì anh em nhấn cho tôi bắt đầu thiết kế mới này. Nhấn thiết kế.
+
+218
+00:20:25,170 --> 00:20:34,390
+Ở đây thì lúc nãy tôi đã tải cái hình Adam Rose này ở trên cái gì ạ? Ở trên cái Pinterest rồi nha anh em nhé. Tôi sẽ lấy luôn
+
+219
+00:20:34,390 --> 00:20:44,570
+hình ảnh đấy. Và tôi sẽ được chọn tỷ lệ là 1920x1080 nhé. Nhớ cho tôi là tất cả những cái hình thumbnail là phải để kích cỡ 1920x1080 nhé.
+
+220
+00:20:45,050 --> 00:20:52,250
+Tiếp theo là tôi sẽ lấy một trong số hai cái hình. Ví dụ như tôi sẽ tải
+
+221
+00:20:52,250 --> 00:20:59,450
+cái hình này. Tôi cho video này vào đây. Nhớ này đi. Và tôi sẽ thêm một
+
+222
+00:20:59,450 --> 00:21:06,700
+hình này vào đây. Tôi sẽ cho hai cái này to ra một tí. Để tí tôi chụp
+
+223
+00:21:06,700 --> 00:21:13,950
+ảnh thêm một cái hình ảnh Adam Rose vào đây cho hai video đè đến nhau nhé.
+
+224
+00:21:13,950 --> 00:21:26,490
+nó có nhân vật người nổi tiếng rồi chúng ta sẽ đứng trên vai người khổng lồ luôn anh em kéo đúng
+
+225
+00:21:26,490 --> 00:21:33,950
+cái tỷ lệ này ví dụ như tôi sẽ cho to ra tôi chụp cho nó rõ rồi rồi chụp bằng này
+
+226
+00:21:33,950 --> 00:21:37,270
+Ok và bây giờ tôi sẽ dán vào đây
+
+227
+00:21:37,270 --> 00:21:39,010
+Chụp màn hình lại nhé
+
+228
+00:21:39,010 --> 00:21:44,390
+Anh em có thể tùy cơ ứng biến để tạo ra những hình ảnh thumbnail cho chúng ta nhé
+
+229
+00:21:44,390 --> 00:21:48,230
+Chúng ta có thể thêm lựa chọn của mình
+
+230
+00:21:48,230 --> 00:21:49,430
+Tải lên
+
+231
+00:21:49,430 --> 00:21:53,950
+Tải cái ảnh Adam Rose này
+
+232
+00:21:57,811 --> 00:22:03,290
+Có những cái ảnh thumbnail này nó cực kỳ đơn giản. Tại vì nó có ảnh nhân vật người nổi tiếng rồi.
+
+233
+00:22:03,290 --> 00:22:11,295
+chúng ta có thể thêm những cái nhãn dán, ví dụ như vòng tròn đỏ này, vòng tròn đỏ, trong
+
+234
+00:22:11,295 --> 00:22:19,300
+này rất là nhiều, chúng ta muốn khoanh vùng như thế nào, khoanh vùng để cái thumbnail của chúng
+
+235
+00:22:19,300 --> 00:22:33,051
+ta nổi bật như thế nào đó, tụi tôi khoanh cái này đi, và mũi tên đỏ, mũi tên đỏ, ở phần sticker đấy, rất nhiều cái mũi tên đỏ, các thứ cho anh em, để áp dụng,
+
+236
+00:22:33,291 --> 00:22:38,171
+Để sản xuất vào cái thumbnail của chúng ta. Chúng ta sẽ cho một cái điểm nhấn vào.
+
+237
+00:22:44,651 --> 00:22:57,791
+Còn phần tiêu đề thì anh em nên viết ví dụ như là một trong khoảnh khắc hài hước của cô gái xây dựng chuyển sang tiếng Anh hoặc bảo ChatGPT viết cho. Sau đó thì trong cái tiêu đề đấy có nhân vật này nhé. Là được nhanh nhé.
+
+238
+00:22:57,791 --> 00:23:06,131
+Đối với phần Adam Rose thì anh em nên nhớ cho tôi là anh em có thể tìm nhé. Tìm ở trên các nền tảng
+
+239
+00:23:06,300 --> 00:23:16,290
+Ví dụ như đây là giao diện của YouTube, đây là cái từ khóa Adam Rose, tôi sẽ tìm bằng cách là mở hồ sơ khách nhé, anh em tìm cho tôi là YouTube, nói chung là chúng
+
+240
+00:23:16,290 --> 00:23:26,160
+ta sẽ tham khảo được những cái nguồn như thế, đây là cái cách mà tôi luôn tìm, Adam Rose, anh em tìm bộ lọc, video, ví dụ như là tháng này đi, tuần này đi, mức độ phổ
+
+241
+00:23:26,160 --> 00:23:35,980
+biến, nói chung là rất nhiều người làm nhé, anh em cứ kết hợp vào cái ảnh thumbnail về gái xinh, anh em nhìn học 6 ngày trước này, 4 ngày trước là 5 ngày trước là
+
+242
+00:23:35,980 --> 00:23:38,440
+5 ngày trước này, 5 ngày trước này, 7 ngày trước này.
+
+243
+00:23:38,560 --> 00:23:45,200
+Hầu như là tất cả những cái nguồn liên quan đến Adam Rose thì anh em tổng hợp vào làm bán content rất là nhiều.
+
+244
+00:23:45,200 --> 00:23:52,420
+Cái nguồn này tôi nói thật với anh em là để sản xuất ra toàn bộ cái quy trình tôi đã làm từ lúc nãy đến giờ ấy.
+
+245
+00:23:52,500 --> 00:23:55,080
+Cái anh em biết là sản xuất cái nguồn này rất là nhiều.
+
+246
+00:23:55,280 --> 00:23:55,980
+Ok, chào tạm biệt.
+
+247
+00:23:55,980 --> 00:23:56,740
+Anh chị em học viên

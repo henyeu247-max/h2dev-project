@@ -1,16 +1,16 @@
 {
   "schema": "h2dev.nexus-graph.v2",
-  "generatedAt": "2026-10-29T14:45:36.689Z",
-  "buildTimeMs": 2687,
+  "generatedAt": "2026-10-30T00:07:28.337Z",
+  "buildTimeMs": 3595,
   "stats": {
-    "totalNodes": 4147,
-    "totalEdges": 8292,
+    "totalNodes": 4148,
+    "totalEdges": 8293,
     "knowledgeNodes": 2793,
-    "infraNodes": 1354,
+    "infraNodes": 1355,
     "projects": 17,
     "domains": 88,
     "directories": 316,
-    "files": 932,
+    "files": 933,
     "tracks": 3,
     "modules": 35,
     "videos": 333,
@@ -62962,8 +62962,8 @@
         "relToProject": "graph.html",
         "ext": ".html",
         "sizeBytes": 25464,
-        "mtimeMs": 1793259923881,
-        "updatedAt": "2026-10-29T07:45:23.880Z",
+        "mtimeMs": 1793317743961,
+        "updatedAt": "2026-10-29T23:49:03.961Z",
         "role": "Web Application View / Entrypoint",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fgraph.html"
       }
@@ -63066,8 +63066,8 @@
         "relToProject": "index.html",
         "ext": ".html",
         "sizeBytes": 15134,
-        "mtimeMs": 1793258428469,
-        "updatedAt": "2026-10-29T07:20:28.469Z",
+        "mtimeMs": 1793318502537,
+        "updatedAt": "2026-10-30T00:01:42.537Z",
         "role": "Web Application View / Entrypoint",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Findex.html"
       }
@@ -63118,8 +63118,8 @@
         "relToProject": "learn.html",
         "ext": ".html",
         "sizeBytes": 8043,
-        "mtimeMs": 1793258436353,
-        "updatedAt": "2026-10-29T07:20:36.352Z",
+        "mtimeMs": 1793310251328,
+        "updatedAt": "2026-10-29T21:44:11.328Z",
         "role": "Web Application View / Entrypoint",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Flearn.html"
       }
@@ -63222,8 +63222,8 @@
         "relToProject": "player.html",
         "ext": ".html",
         "sizeBytes": 21792,
-        "mtimeMs": 1793258432150,
-        "updatedAt": "2026-10-29T07:20:32.149Z",
+        "mtimeMs": 1793310251325,
+        "updatedAt": "2026-10-29T21:44:11.325Z",
         "role": "Web Application View / Entrypoint",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fplayer.html"
       }
@@ -63247,9 +63247,9 @@
         "relPath": "H2DEV-Project/server.js",
         "relToProject": "server.js",
         "ext": ".js",
-        "sizeBytes": 53933,
-        "mtimeMs": 1793265545608,
-        "updatedAt": "2026-10-29T09:19:05.607Z",
+        "sizeBytes": 53939,
+        "mtimeMs": 1793314575153,
+        "updatedAt": "2026-10-29T22:56:15.152Z",
         "role": "HTTP & API Gateway Server",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fserver.js"
       }
@@ -63423,8 +63423,8 @@
         "relToProject": "assets/app/graph-main.js",
         "ext": ".js",
         "sizeBytes": 64883,
-        "mtimeMs": 1793259923883,
-        "updatedAt": "2026-10-29T07:45:23.882Z",
+        "mtimeMs": 1793317743961,
+        "updatedAt": "2026-10-29T23:49:03.961Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fassets%2Fapp%2Fgraph-main.js"
       }
@@ -63500,9 +63500,9 @@
         "relPath": "H2DEV-Project/assets/app/main.js",
         "relToProject": "assets/app/main.js",
         "ext": ".js",
-        "sizeBytes": 230322,
-        "mtimeMs": 1793211838263,
-        "updatedAt": "2026-10-28T18:23:58.263Z",
+        "sizeBytes": 230911,
+        "mtimeMs": 1793314592897,
+        "updatedAt": "2026-10-29T22:56:32.896Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fassets%2Fapp%2Fmain.js"
       }
@@ -63675,9 +63675,9 @@
         "relPath": "H2DEV-Project/assets/app/sw.js",
         "relToProject": "assets/app/sw.js",
         "ext": ".js",
-        "sizeBytes": 4357,
-        "mtimeMs": 1793259923883,
-        "updatedAt": "2026-10-29T07:45:23.882Z",
+        "sizeBytes": 4329,
+        "mtimeMs": 1793318467063,
+        "updatedAt": "2026-10-30T00:01:07.062Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fassets%2Fapp%2Fsw.js"
       }
@@ -63720,9 +63720,9 @@
         "relPath": "H2DEV-Project/assets/app/tabs/content.js",
         "relToProject": "assets/app/tabs/content.js",
         "ext": ".js",
-        "sizeBytes": 228697,
-        "mtimeMs": 1793211820851,
-        "updatedAt": "2026-10-28T18:23:40.850Z",
+        "sizeBytes": 232708,
+        "mtimeMs": 1793318433308,
+        "updatedAt": "2026-10-30T00:00:33.308Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fassets%2Fapp%2Ftabs%2Fcontent.js"
       }
@@ -64419,9 +64419,9 @@
         "relPath": "H2DEV-Project/data-tabs/ngach-xanh.json",
         "relToProject": "data-tabs/ngach-xanh.json",
         "ext": ".json",
-        "sizeBytes": 314088,
-        "mtimeMs": 1793261038020,
-        "updatedAt": "2026-10-29T08:03:58.019Z",
+        "sizeBytes": 314307,
+        "mtimeMs": 1793318156430,
+        "updatedAt": "2026-10-29T23:55:56.429Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata-tabs%2Fngach-xanh.json"
       }
@@ -64795,8 +64795,8 @@
         "relToProject": "data/h2dev_knowledge_graph.db",
         "ext": ".db",
         "sizeBytes": 18046976,
-        "mtimeMs": 1793284911125,
-        "updatedAt": "2026-10-29T14:41:51.124Z",
+        "mtimeMs": 1793318826368,
+        "updatedAt": "2026-10-30T00:07:06.367Z",
         "role": "Project Resource File",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fh2dev_knowledge_graph.db"
       }
@@ -64821,8 +64821,8 @@
         "relToProject": "data/h2dev_master.db",
         "ext": ".db",
         "sizeBytes": 12455936,
-        "mtimeMs": 1793284908744,
-        "updatedAt": "2026-10-29T14:41:48.743Z",
+        "mtimeMs": 1793318627933,
+        "updatedAt": "2026-10-30T00:03:47.933Z",
         "role": "Project Resource File",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fh2dev_master.db"
       }
@@ -64872,9 +64872,9 @@
         "relPath": "H2DEV-Project/data/knowledge_graph.json",
         "relToProject": "data/knowledge_graph.json",
         "ext": ".json",
-        "sizeBytes": 4678093,
-        "mtimeMs": 1793272681738,
-        "updatedAt": "2026-10-29T11:18:01.737Z",
+        "sizeBytes": 4534566,
+        "mtimeMs": 1793318822495,
+        "updatedAt": "2026-10-30T00:07:02.495Z",
         "role": "Structured Data / SSoT Projection",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fdata%2Fknowledge_graph.json"
       }
@@ -65688,7 +65688,7 @@
       "track": "infra",
       "sku": "",
       "path": "H2DEV-Project/scripts",
-      "degree": 151,
+      "degree": 152,
       "meta": {
         "projectId": "project:h2dev-project",
         "domainId": "domain:h2dev-project/scripts",
@@ -65954,6 +65954,32 @@
         "updatedAt": "2026-09-15T18:23:44.117Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Faudit-raw-124-e2e.js"
+      }
+    },
+    {
+      "id": "file:H2DEV-Project/scripts/audit-ui.js",
+      "type": "file",
+      "layer": "infra",
+      "level": 4,
+      "parentId": "dir:H2DEV-Project/scripts",
+      "projectId": "project:h2dev-project",
+      "label": "audit-ui.js",
+      "track": "infra",
+      "sku": "",
+      "path": "H2DEV-Project/scripts/audit-ui.js",
+      "degree": 1,
+      "meta": {
+        "projectId": "project:h2dev-project",
+        "projectName": "Hệ Thống Lõi 97yo-dev (Master Hub & 3 Nhánh Đào Tạo — 333 Video)",
+        "domainId": "domain:h2dev-project/scripts",
+        "relPath": "H2DEV-Project/scripts/audit-ui.js",
+        "relToProject": "scripts/audit-ui.js",
+        "ext": ".js",
+        "sizeBytes": 10032,
+        "mtimeMs": 1793318804621,
+        "updatedAt": "2026-10-30T00:06:44.620Z",
+        "role": "Application Module / Execution Script",
+        "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Faudit-ui.js"
       }
     },
     {
@@ -66852,9 +66878,9 @@
         "relPath": "H2DEV-Project/scripts/deploy/README.md",
         "relToProject": "scripts/deploy/README.md",
         "ext": ".md",
-        "sizeBytes": 1671,
-        "mtimeMs": 1789583479979,
-        "updatedAt": "2026-09-16T18:31:19.979Z",
+        "sizeBytes": 1803,
+        "mtimeMs": 1793307745293,
+        "updatedAt": "2026-10-29T21:02:25.293Z",
         "role": "Technical Documentation / SOP Guide",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Fdeploy%2FREADME.md"
       }
@@ -67632,9 +67658,9 @@
         "relPath": "H2DEV-Project/scripts/gate-shell.js",
         "relToProject": "scripts/gate-shell.js",
         "ext": ".js",
-        "sizeBytes": 17846,
-        "mtimeMs": 1792933162460,
-        "updatedAt": "2026-10-25T12:59:22.460Z",
+        "sizeBytes": 21247,
+        "mtimeMs": 1793290354101,
+        "updatedAt": "2026-10-29T16:12:34.101Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Fgate-shell.js"
       }
@@ -68405,9 +68431,9 @@
         "relPath": "H2DEV-Project/scripts/playwright-g2-acceptance.js",
         "relToProject": "scripts/playwright-g2-acceptance.js",
         "ext": ".js",
-        "sizeBytes": 16440,
-        "mtimeMs": 1793177417956,
-        "updatedAt": "2026-10-28T08:50:17.955Z",
+        "sizeBytes": 18865,
+        "mtimeMs": 1793290354101,
+        "updatedAt": "2026-10-29T16:12:34.101Z",
         "role": "Application Module / Execution Script",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Fplaywright-g2-acceptance.js"
       }
@@ -69393,9 +69419,9 @@
         "relPath": "H2DEV-Project/scripts/validate-project.js",
         "relToProject": "scripts/validate-project.js",
         "ext": ".js",
-        "sizeBytes": 50766,
-        "mtimeMs": 1793265606867,
-        "updatedAt": "2026-10-29T09:20:06.866Z",
+        "sizeBytes": 50947,
+        "mtimeMs": 1793317911531,
+        "updatedAt": "2026-10-29T23:51:51.530Z",
         "role": "Project-Wide Gate Validator",
         "targetUrl": "/sodo?snode=file%3AH2DEV-Project%2Fscripts%2Fvalidate-project.js"
       }
@@ -133767,6 +133793,12 @@
     {
       "source": "dir:H2DEV-Project/scripts",
       "target": "file:H2DEV-Project/scripts/audit-raw-124-e2e.js",
+      "relation": "CONTAINS_FILE",
+      "weight": 1.2
+    },
+    {
+      "source": "dir:H2DEV-Project/scripts",
+      "target": "file:H2DEV-Project/scripts/audit-ui.js",
       "relation": "CONTAINS_FILE",
       "weight": 1.2
     },

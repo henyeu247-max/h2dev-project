@@ -1,0 +1,106 @@
+diff --git "a/C:\\Users\\SaxukeB\\.agents\\sync\\verify_independent.py.bak-skill-integration-20261023-200209" "b/C:\\Users\\SaxukeB\\.agents\\sync\\verify_independent.py"
+index 62b9e36..733d90b 100644
+--- "a/C:\\Users\\SaxukeB\\.agents\\sync\\verify_independent.py.bak-skill-integration-20261023-200209"
++++ "b/C:\\Users\\SaxukeB\\.agents\\sync\\verify_independent.py"
+@@ -1,7 +1,7 @@
+ """verify_independent.py — kiểm ĐỘC LẬP (không import agents_sync): tự dựng lại từng target từ nguồn
+ và so BYTE với file trên đĩa. Thứ tự tier mặc định cố ý hardcode ở đây để không phụ thuộc engine.
+ Exit 0 = mọi file khớp byte."""
+-import os, json, hashlib, sys
++import os, json, hashlib, sys, re
+ 
+ if hasattr(sys.stdout, "reconfigure"):
+     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+@@ -17,6 +17,14 @@ def ex(p):
+     return os.path.normpath(os.path.expanduser(os.path.expandvars(p)))
+ 
+ 
++def is_link(p):
++    try:
++        st = os.lstat(p)
++        return os.path.islink(p) or (hasattr(st, "st_file_attributes") and bool(st.st_file_attributes & 1024))
++    except OSError:
++        return False
++
++
+ def h8(b):
+     return hashlib.sha256(b).hexdigest()[:8]
+ 
+@@ -42,15 +50,25 @@ def fits(t, data):
+     return True
+ 
+ 
++def _strip_atk_bytes(body):
++    import re
++    text = body.decode("utf-8")
++    text = re.sub(r"\n## (?:0\.\d+\s+)?POSTURE LOCK[\s\S]*?(?=\n## PART 0:|\n## 0\. )", "\n", text)
++    text = re.sub(r"\n- \*\*Adversarial Security Analysis \(ATK Inversion\):\*\*[^\n]*", "", text)
++    text = re.sub(r"\n- \*\*Phân tích An ninh Đối kháng \(Adversarial Security Analysis / ATK Inversion\):\*\*[^\n]*", "", text)
++    return text.encode("utf-8")
++
++
+ def pick(t):
+     pref = t.get("prefix", "").encode()
+     order = [t["force_variant"]] if t.get("force_variant") else t.get("tier_order", ORDER)
+     for n in order:
+-        if n in VAR and fits(t, pref + VAR[n][1]):
+-            return n, pref + VAR[n][1], VAR[n][0]
++        if n in VAR:
++            body = _strip_atk_bytes(VAR[n][1]) if t.get("strip_atk") else VAR[n][1]
++            if fits(t, pref + body):
++                return n, pref + body, VAR[n][0]
+     return None, None, None
+ 
+-
+ def chunks(body, pref, maxc, maxb, tag):
+     ls = body.decode("utf-8").split("\n")
+     inf, cuts = False, []
+@@ -136,11 +154,45 @@ if sk:
+     src = ex(sk["source"])
+     names = sorted(n for n in os.listdir(src) if os.path.isdir(os.path.join(src, n)))
+     ref = {n: th(os.path.join(src, n)) for n in names}
++    name_pat = re.compile(r"^[a-z0-9][a-z0-9-]*$")
+     for t in sk["targets"]:
++        ALLOWED_KEYS = {"id", "dir", "evidence", "create", "exclude_names", "target_only_names", "preserve_names"}
++        bad_keys = set(t.keys()) - ALLOWED_KEYS
++        if bad_keys:
++            sys.exit("FAIL: unknown key in skill target %s: %s" % (t.get("id"), ",".join(sorted(bad_keys))))
++        excluded = set(t.get("exclude_names", []))
++        unknown = excluded - set(names)
++        if unknown:
++            sys.exit("FAIL: unknown skill exclusion for %s: %s" % (t["id"], ",".join(sorted(unknown))))
+         d = ex(t["dir"])
+-        good = sum(1 for n in names if ref[n] is not None and th(os.path.join(d, n)) == ref[n])
++        target_only = set(t.get("target_only_names", []) + t.get("preserve_names", []))
++        # Validate format
++        for n in target_only:
++            if not name_pat.match(n):
++                sys.exit("FAIL: invalid target_only skill name in %s: %s" % (t["id"], n))
++        # Disjoint checks
++        collision = target_only & set(names)
++        if collision:
++            sys.exit("FAIL: target_only collides with source in %s: %s" % (t["id"], ",".join(sorted(collision))))
++        ex_collision = target_only & excluded
++        if ex_collision:
++            sys.exit("FAIL: target_only collides with exclude in %s: %s" % (t["id"], ",".join(sorted(ex_collision))))
++        # Real directory and SKILL.md check
++        missing_to = []
++        for n in target_only:
++            p = os.path.join(d, n)
++            if not os.path.isdir(p) or is_link(p) or not os.path.isfile(os.path.join(p, "SKILL.md")):
++                missing_to.append(n)
++        if missing_to:
++            sys.exit("FAIL: target_only skill missing or invalid in %s: %s" % (t["id"], ",".join(sorted(missing_to))))
++        target_names = [n for n in names if n not in excluded]
++        good = sum(1 for n in target_names if ref[n] is not None and th(os.path.join(d, n)) == ref[n])
++        left = [n for n in excluded if os.path.lexists(os.path.join(d, n))]
+         sk_ok += good
+-        sk_total += len(names)
+-        print("  %s skills:%-14s %d/%d  %s" % ("OK " if good == len(names) else "BAD", t["id"], good, len(names), d.replace(H, "~")))
++        sk_total += len(target_names)
++        print("  %s skills:%-14s %d/%d%s  %s" % ("OK " if good == len(target_names) and not left else "BAD", t["id"], good, len(target_names),
++              (" exclude_left=" + ",".join(left)) if left else "", d.replace(H, "~")))
++        if left:
++            sk_total += len(left)
+     print("SKILLS: %d/%d ban sao khop" % (sk_ok, sk_total))
+ sys.exit(0 if ok == total and sk_ok == sk_total else 1)

@@ -1,0 +1,193 @@
+diff --git "a/C:\\Users\\SaxukeB\\.agents\\sync\\agents_sync.py.bak-skill-integration-20261023-200209" "b/C:\\Users\\SaxukeB\\.agents\\sync\\agents_sync.py"
+index 44ac124..aab5f7a 100644
+--- "a/C:\\Users\\SaxukeB\\.agents\\sync\\agents_sync.py.bak-skill-integration-20261023-200209"
++++ "b/C:\\Users\\SaxukeB\\.agents\\sync\\agents_sync.py"
+@@ -62,8 +62,6 @@ def _stamped(path):
+         sys.exit("%s must contain exactly one {{STAMP}}" % path)
+     st = h8(raw)
+     return raw, st, raw.replace(STAMP_TOKEN, st.encode())
+-
+-
+ def load():
+     with open(MANIFEST, "r", encoding="utf-8") as f:
+         m = json.load(f)
+@@ -104,6 +102,14 @@ def cap_problem(t, data):
+     return ""
+ 
+ 
++def _strip_atk_bytes(body):
++    text = body.decode("utf-8")
++    text = re.sub(r"\n## (?:0\.\d+\s+)?POSTURE LOCK[\s\S]*?(?=\n## PART 0:|\n## 0\. )", "\n", text)
++    text = re.sub(r"\n- \*\*Adversarial Security Analysis \(ATK Inversion\):\*\*[^\n]*", "", text)
++    text = re.sub(r"\n- \*\*Phân tích An ninh Đối kháng \(Adversarial Security Analysis / ATK Inversion\):\*\*[^\n]*", "", text)
++    return text.encode("utf-8")
++
++
+ def pick(t, variants, default_order):
+     """(variant, bytes, stamp_or_reason)."""
+     prefix = t.get("prefix", "").encode("utf-8")
+@@ -114,6 +120,8 @@ def pick(t, variants, default_order):
+             why.append("%s: khong co" % name)
+             continue
+         stamp, body = variants[name]
++        if t.get("strip_atk"):
++            body = _strip_atk_bytes(body)
+         data = prefix + body
+         p = cap_problem(t, data)
+         if not p:
+@@ -121,7 +129,6 @@ def pick(t, variants, default_order):
+         why.append("%s: %s" % (name, p))
+     return None, None, " | ".join(why)
+ 
+-
+ def split_body(body, prefix, maxc, maxb, tag=""):
+     """Cắt tại heading ## / ### ngoài fenced code; gắn dòng đánh dấu chunk i/n."""
+     MARK_RESERVE = 90
+@@ -246,15 +253,79 @@ def remove_skill_dir(p, tag, yes):
+             shutil.rmtree(p, onerror=_on_rm_error)
+ 
+ 
++def validate_target_skills_config(names, target, target_dir):
++    ALLOWED_KEYS = {"id", "dir", "evidence", "create", "exclude_names", "target_only_names", "preserve_names"}
++    bad_keys = set(target.keys()) - ALLOWED_KEYS
++    if bad_keys:
++        sys.exit("UNKNOWN key in skill target %s: %s" % (target.get("id"), ",".join(sorted(bad_keys))))
++    name_pat = re.compile(r"^[a-z0-9][a-z0-9-]*$")
++    excluded = set(target.get("exclude_names", []))
++    unknown = excluded - set(names)
++    if unknown:
++        sys.exit("UNKNOWN skill exclusion for %s: %s" % (target["id"], ",".join(sorted(unknown))))
++    target_only = set(target.get("target_only_names", []) + target.get("preserve_names", []))
++    for n in target_only:
++        if not name_pat.match(n):
++            sys.exit("INVALID target_only skill name in %s: %s" % (target["id"], n))
++    collision = target_only & set(names)
++    if collision:
++        sys.exit("COLLISION: target_only skill exists in source for %s: %s" % (target["id"], ",".join(sorted(collision))))
++    ex_collision = target_only & excluded
++    if ex_collision:
++        sys.exit("COLLISION: target_only skill also in exclude_names for %s: %s" % (target["id"], ",".join(sorted(ex_collision))))
++    for n in target_only:
++        p = os.path.join(target_dir, n)
++        if not os.path.isdir(p) or is_link(p) or not os.path.isfile(os.path.join(p, "SKILL.md")):
++            sys.exit("MISSING target_only skill in %s: %s (must be real dir with SKILL.md)" % (target["id"], n))
++
++def target_skill_names(names, target):
++    excluded = set(target.get("exclude_names", []))
++    unknown = excluded - set(names)
++    if unknown:
++        sys.exit("UNKNOWN skill exclusion for %s: %s" % (target["id"], ",".join(sorted(unknown))))
++    return [name for name in names if name not in excluded]
++
++
+ def skills_apply(m, yes):
++    src_cfg = m.get("skills", {}).get("source")
++    if src_cfg:
++        src_dir = ex(src_cfg)
++        if not os.path.isdir(src_dir):
++            sys.exit("MISSING skill source: %s (skill sync aborted before writes)" % src_dir)
++        source_names = sorted(n for n in os.listdir(src_dir) if os.path.isdir(os.path.join(src_dir, n)))
++        for target_config in m.get("skills", {}).get("targets", []):
++            validate_target_skills_config(source_names, target_config, ex(target_config["dir"]))
++        orca_skills_dir = os.path.join(ROOT, "skills")
++        if os.path.isdir(orca_skills_dir):
++            for n in sorted(os.listdir(orca_skills_dir)):
++                cand_dir = os.path.join(orca_skills_dir, n)
++                cand_md = os.path.join(cand_dir, "SKILL.md")
++                dst_md = os.path.join(src_dir, n, "SKILL.md")
++                if os.path.isfile(cand_md) and not is_link(cand_dir) and os.path.isdir(os.path.join(src_dir, n)):
++                    cb = rb(cand_md)
++                    db = rb(dst_md)
++                    if cb and cb != db and b"---" in cb[:16]:
++                        print("absorb   orca-skill     %s (~/.agents/skills -> source/skills)" % n)
++                        if yes:
++                            if db is not None:
++                                shutil.copy2(dst_md, backup_path(dst_md, "orca-absorb"))
++                            atomic_write(dst_md, cb)
++                print("retire   orca-canonical %s -> backup" % n)
++                remove_skill_dir(cand_dir, "orca-canonical", yes)
++            if yes and os.path.isdir(orca_skills_dir) and not os.listdir(orca_skills_dir):
++                os.rmdir(orca_skills_dir)
+     src, names, targets, retire_dirs, retire_names = skills_conf(m)
+     if src is None:
+         return
+     print("\n== SKILLS (%d skill tu %s) ==" % (len(names), src))
+     state = json.load(open(SKILL_STATE, encoding="utf-8")) if os.path.isfile(SKILL_STATE) else {}
+     srch = {n: tree_hash(os.path.join(src, n)) for n in names}
++    # Validate ALL target configs upfront before any mutation
++    for t in targets:
++        validate_target_skills_config(names, t, ex(t["dir"]))
+     new_state = {}
+     for t in targets:
++        target_names = target_skill_names(names, t)
+         d = ex(t["dir"])
+         if not os.path.isdir(d):
+             if not t.get("create"):
+@@ -263,7 +334,7 @@ def skills_apply(m, yes):
+             if yes:
+                 os.makedirs(d, exist_ok=True)
+         n_ok = n_w = 0
+-        for n in names:
++        for n in target_names:
+             p = os.path.join(d, n)
+             if tree_hash(p) == srch[n]:
+                 n_ok += 1
+@@ -275,13 +346,19 @@ def skills_apply(m, yes):
+                 shutil.copytree(os.path.join(src, n), p, ignore=shutil.ignore_patterns(*SKIP_NAMES))
+                 if tree_hash(p) != srch[n]:
+                     sys.exit("VERIFY FAIL skill %s -> %s" % (n, p))
+-        gone = (set(state.get(t["id"], [])) - set(names)) | set(retire_names)
++        target_only = set(t.get("target_only_names", []) + t.get("preserve_names", []))
++        missing_to = [n for n in target_only if not os.path.lexists(os.path.join(d, n))]
++        if missing_to:
++            sys.exit("UNKNOWN target_only skill for %s: %s" % (t["id"], ",".join(sorted(missing_to))))
++        gone = ((set(state.get(t["id"], [])) - set(target_names)) |
++                (set(names) - set(target_names)) |
++                set(retire_names)) - target_only
+         for n in sorted(gone):
+             p = os.path.join(d, n)
+             if os.path.lexists(p):
+                 print("retire   skills:%-14s %s -> backup" % (t["id"], n))
+                 remove_skill_dir(p, t["id"], yes)
+-        new_state[t["id"]] = names
++        new_state[t["id"]] = target_names
+         print("skills:%-14s ok=%d ghi=%d  %s" % (t["id"], n_ok, n_w, d))
+     for rd in retire_dirs:
+         d = ex(rd["dir"])
+@@ -302,12 +379,16 @@ def skills_verify(m):
+     print("\n== SKILLS (%d) ==" % len(names))
+     srch = {n: tree_hash(os.path.join(src, n)) for n in names}
+     for t in targets:
++        target_names = target_skill_names(names, t)
+         d = ex(t["dir"])
+-        miss = [n for n in names if tree_hash(os.path.join(d, n)) != srch[n]]
++        miss = [n for n in target_names if tree_hash(os.path.join(d, n)) != srch[n]]
+         left = [n for n in retire_names if os.path.lexists(os.path.join(d, n))]
+-        bad += len(miss) + len(left)
+-        print("%-8s skills:%-14s %d/%d khop%s%s  %s" % ("OK" if not (miss or left) else "STALE", t["id"], len(names) - len(miss),
+-              len(names), (" lech=" + ",".join(miss[:6])) if miss else "", (" con_retire=" + ",".join(left)) if left else "", d))
++        excluded_left = [n for n in t.get("exclude_names", []) if os.path.lexists(os.path.join(d, n))]
++        target_only = set(t.get("target_only_names", []) + t.get("preserve_names", []))
++        missing_to = [n for n in target_only if not os.path.lexists(os.path.join(d, n))]
++        bad += len(miss) + len(left) + len(excluded_left) + len(missing_to)
++        print("%-8s skills:%-14s %d/%d khop%s%s%s  %s" % ("OK" if not (miss or left or excluded_left) else "STALE", t["id"], len(target_names) - len(miss),
++              len(target_names), (" lech=" + ",".join(miss[:6])) if miss else "", (" con_retire=" + ",".join(left)) if left else "", (" con_exclude=" + ",".join(excluded_left)) if excluded_left else "", d))
+     for rd in retire_dirs:
+         d = ex(rd["dir"])
+         left = [n for n in set(names) | set(retire_names) if os.path.lexists(os.path.join(d, n))]
+@@ -355,6 +436,15 @@ def cmd_apply(yes):
+         print("\nAPPLY TU CHOI: nguon con chi tiet co dinh (xem lint o tren).")
+         return 1
+     m, variants = load()
++    # Preflight validate ALL skill targets BEFORE any mutation (rules, retire, or skills)
++    sk = m.get("skills")
++    if sk and sk.get("source"):
++        src = ex(sk["source"])
++        if not os.path.isdir(src):
++            sys.exit("MISSING skill source: %s (apply aborted before writes)" % src)
++        names = sorted(n for n in os.listdir(src) if os.path.isdir(os.path.join(src, n)))
++        for t in sk.get("targets", []):
++            validate_target_skills_config(names, t, ex(t["dir"]))
+     order = m.get("_tier_order", DEFAULT_TIER_ORDER)
+     print("[%s] backup dir: %s" % ("APPLY" if yes else "DRY-RUN", os.path.join(BACKUPS, RUN_ID)))
+     for t in m["targets"]:

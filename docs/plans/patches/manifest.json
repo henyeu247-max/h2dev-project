@@ -1,0 +1,452 @@
+{
+  "_comment": "Danh sach dia chi giao file luat chung. Moi target = duong dan ma TOOL THAT SU DOC. Day la cau hinh cua cong cu dong bo, KHONG phai luat, agent khong nap file nay.",
+  "sources": {
+    "master": "~/.agents/source/master.md",
+    "workflow": "~/.agents/source/workflow.md",
+    "capped": "~/.agents/source/capped.md",
+    "lite": "~/.agents/source/master-lite.md"
+  },
+  "_tier_order": [
+    "master",
+    "capped",
+    "lite"
+  ],
+  "_variant_rule": "full = master + workflow. Target nhan bien the dau tien vua tran (cap_chars/cap_bytes) theo tier_order cua target (mac dinh _tier_order). force_variant = dung dung bien the do.",
+  "_backup_keep": 5,
+  "targets": [
+    {
+      "id": "omp",
+      "path": "~/.omp/agent/AGENTS.md",
+      "strip_atk": true,
+      "evidence": "omp dist: provider 'Load AGENTS.md from .omp/ directories' priority 100",
+      "tier_order": [
+        "master",
+        "capped",
+        "lite"
+      ]
+    },
+    {
+      "id": "pi",
+      "path": "~/.pi/agent/AGENTS.md",
+      "create": true,
+      "strip_atk": true,
+      "evidence": "Pi 1.0.4 docs/configuration.md: <agent-dir>/AGENTS.md = user instructions; cai lai 2026-10-06",
+      "tier_order": [
+        "master",
+        "capped",
+        "lite"
+      ]
+    },
+    {
+      "id": "agents",
+      "path": "~/.agents/AGENTS.md",
+      "evidence": "VS Code GitHub Copilot (Code/User/settings.json codeGeneration.instructions), Cline, Kimi, Factory doc ~/.agents/AGENTS.md",
+      "tier_order": [
+        "master",
+        "capped",
+        "lite"
+      ]
+    },
+    {
+      "id": "copilot",
+      "path": "~/.copilot/copilot-instructions.md",
+      "create": true,
+      "evidence": "copilot-runtime binary Home copilot-instructions.md: ~/.copilot/copilot-instructions.md",
+      "tier_order": [
+        "master",
+        "capped",
+        "lite"
+      ]
+    },
+    {
+      "id": "cursor",
+      "path": "~/.cursor/rules/universal.mdc",
+      "tier_order": [
+        "master",
+        "capped",
+        "lite"
+      ],
+      "create": true,
+      "prefix": "---\nalwaysApply: true\n---\n",
+      "evidence": "Cursor docs: user-level ~/.cursor/rules; .mdc + alwaysApply. Changelog 2.1 includes home-folder rules. Do not write project AGENTS.md."
+    },
+    {
+      "id": "hermes",
+      "path": "D:/Hermes/AGENTS.md",
+      "evidence": "Hermes runtime is configured with HERMES_HOME=D:/Hermes on this PC; boss man chose its global AGENTS.md as centrally managed.",
+      "tier_order": [
+        "master",
+        "capped",
+        "lite"
+      ]
+    },
+    {
+      "id": "codex",
+      "path": "~/.codex/AGENTS.md",
+      "strip_atk": true,
+      "cap_bytes": 131072,
+      "evidence": "codex core/agents_md.rs; project_doc_max_bytes=131072 trong ~/.codex/config.toml",
+      "tier_order": [
+        "master",
+        "capped",
+        "lite"
+      ]
+    },
+    {
+      "id": "opencode",
+      "path": "~/.config/opencode/AGENTS.md",
+      "evidence": "opencode binary: XDG config/opencode/AGENTS.md",
+      "tier_order": [
+        "master",
+        "capped",
+        "lite"
+      ]
+    },
+    {
+      "id": "claude",
+      "path": "~/.claude/CLAUDE.md",
+      "strip_atk": true,
+      "tier_order": [
+        "master",
+        "capped",
+        "lite"
+      ],
+      "evidence": "Claude Code docs memory: user instructions ~/.claude/CLAUDE.md; workflow chi tiet nap theo nhu cau (skill workflow-11-phase)"
+    },
+    {
+      "id": "workbuddy",
+      "path": "~/.workbuddy/rules/universal.md",
+      "tier_order": [
+        "master",
+        "capped",
+        "lite"
+      ],
+      "cap_chars": 40000,
+      "create": true,
+      "prefix": "---\nalwaysApply: true\n---\n",
+      "evidence": "WorkBuddy validator content.length > 40000 -> tu choi"
+    },
+    {
+      "id": "workbuddy-workflow",
+      "path": "~/.workbuddy/rules/workflow-{n}.md",
+      "force_variant": "workflow",
+      "split_max_chars": 40000,
+      "create": true,
+      "prefix": "---\nalwaysApply: true\n---\n",
+      "evidence": "rules dir recursive, tran per-file 40000"
+    },
+    {
+      "id": "antigravity",
+      "path": "~/.gemini/config/AGENTS.md",
+      "strip_atk": true,
+      "tier_order": [
+        "master",
+        "capped",
+        "lite"
+      ],
+      "cap_bytes": 24000,
+      "evidence": "language_server: global root ~/.gemini/config/, 24000 bytes/file"
+    },
+    {
+      "id": "antigravity-workflow",
+      "path": "~/.gemini/config/rules/workflow-{n}.md",
+      "force_variant": "workflow",
+      "split_max_bytes": 24000,
+      "create": true,
+      "evidence": "language_server: rules/*.md, 24000 bytes/file"
+    }
+  ],
+  "retire": [
+    {
+      "path": "~/.config/mimocode/AGENTS.md",
+      "reason": "MiMo Code da go khoi PC (2026-10-10, boss man)"
+    },
+    {
+      "path": "~/.knowledge.md",
+      "reason": "Codebuff/Freebuff khong nhan luat chung (2026-10-10, boss man)"
+    },
+    {
+      "path": "~/.dsh/AGENTS.md",
+      "reason": "DSH khong con ung dung chu (khong binary, khong app)"
+    },
+    {
+      "path": "~/.codeium/windsurf/memories/global_rules.md",
+      "reason": "Windsurf da go khoi PC (khong app, khong registry; du lieu cu tu 2026-09-18)"
+    },
+    {
+      "path": "D:/Orca IDE/AGENTS.md",
+      "reason": "Orca IDE da go khoi PC"
+    },
+    {
+      "path": "~/.minimax/AGENTS.md",
+      "reason": "MiniMax da go khoi PC"
+    },
+    {
+      "path": "~/.codebuddy/rules/universal.md",
+      "reason": "CodeBuddy da go khoi PC"
+    },
+    {
+      "path": "~/.codebuddy/rules/workflow-1.md",
+      "reason": "CodeBuddy da go khoi PC"
+    },
+    {
+      "path": "~/.codebuddy/rules/workflow-2.md",
+      "reason": "CodeBuddy da go khoi PC"
+    },
+    {
+      "path": "~/.workbuddy-ai/rules/universal.md",
+      "reason": "WorkBuddyAI ban cu da go khoi PC; app chinh la WorkBuddy (~/.workbuddy)"
+    },
+    {
+      "path": "~/.workbuddy-ai/rules/workflow-1.md",
+      "reason": "WorkBuddyAI ban cu da go khoi PC"
+    },
+    {
+      "path": "~/.workbuddy-ai/rules/workflow-2.md",
+      "reason": "WorkBuddyAI ban cu da go khoi PC"
+    },
+    {
+      "path": "~/.agents/rules/workflow-1.md",
+      "reason": "omp nhan master+workflow trong ~/.omp/agent/AGENTS.md (bien the full); bo thu muc rules cua ~/.agents"
+    },
+    {
+      "path": "~/.agents/rules/workflow-2.md",
+      "reason": "nhu tren"
+    },
+    {
+      "path": "~/.agents/rules/workflow-3.md",
+      "reason": "nhu tren"
+    },
+    {
+      "path": "~/.agents/rules/scars-generic.md",
+      "reason": "noi dung pho quat da gop vao master.md PART 4; ban cu chua ten tool"
+    },
+    {
+      "path": "~/.kiro/steering/universal-operating-directive.md",
+      "reason": "tool da go"
+    },
+    {
+      "path": "~/.kiro/steering/00-UNIVERSAL-DIRECTIVE.md",
+      "reason": "tool da go"
+    },
+    {
+      "path": "~/Documents/Cline/Rules/00-UNIVERSAL-DIRECTIVE.md",
+      "reason": "ban cu; Cline doc ~/.agents/AGENTS.md"
+    },
+    {
+      "path": "~/Documents/Cline/Rules/universal-operating-directive.md",
+      "reason": "ban cu; Cline nap chong"
+    },
+    {
+      "path": "~/.cline/rules/universal-master-directive.md",
+      "reason": "trung ~/.agents/AGENTS.md"
+    },
+    {
+      "path": "~/.grok/CLAUDE.md",
+      "reason": "Grok doc ca 2 ten file; trung"
+    },
+    {
+      "path": "~/.kimi-code/AGENTS.md",
+      "reason": "Kimi doc ~/.agents/AGENTS.md"
+    },
+    {
+      "path": "~/.factory/AGENTS.md",
+      "reason": "Factory doc ~/.agents/"
+    },
+    {
+      "path": "~/.zcode/AGENTS.md",
+      "reason": "ZCode khong doc file user-level"
+    },
+    {
+      "path": "~/AGENTS.md",
+      "reason": "ban cu; tool di nguoc cay thu muc trong home se nap nham"
+    },
+    {
+      "path": "~/.cline/data/workspaces/chat/AGENTS.md",
+      "reason": "ban cu"
+    },
+    {
+      "path": "~/.trae/user_rules.md",
+      "reason": "Trae da go khoi PC"
+    },
+    {
+      "path": "%APPDATA%/devin/AGENTS.md",
+      "reason": "Devin da go khoi PC"
+    },
+    {
+      "path": "~/.gemini/GEMINI.md",
+      "reason": "Gemini CLI da go khoi PC (2026-10-14, boss man)"
+    },
+    {
+      "path": "~/.claude/rules/workflow.md",
+      "reason": "Bo nap moi phien (37k token); Claude doc workflow qua skill workflow-11-phase / source khi can (2026-10-16, boss man)"
+    }
+  ],
+  "inert": [
+    "~/.omp/agent/CLAUDE.md",
+    "~/.omp/AGENTS.md",
+    "~/.agents/CLAUDE.md",
+    "~/.claude/AGENTS.md",
+    "~/.codex/CLAUDE.md",
+    "~/.opencode/AGENTS.md",
+    "~/.opencode/CLAUDE.md",
+    "~/.trae/AGENTS.md",
+    "~/.trae/CLAUDE.md",
+    "~/.zcode/CLAUDE.md",
+    "~/.devin/AGENTS.md",
+    "~/.devin/CLAUDE.md",
+    "~/.hermes/AGENTS.md",
+    "~/.orca/AGENTS.md",
+    "~/.codebuddy/AGENTS.md",
+    "~/.codebuddy/CLAUDE.md",
+    "~/.codebuddy/CODEBUDDY.md",
+    "~/.workbuddy/AGENTS.md",
+    "~/.workbuddy/CLAUDE.md",
+    "~/.workbuddy/WORKBUDDY.md",
+    "~/.workbuddy-ai/AGENTS.md",
+    "~/.workbuddy-ai/CLAUDE.md",
+    "~/.workbuddy-ai/WORKBUDDY.md",
+    "~/.gemini/antigravity/AGENTS.md",
+    "~/.gemini/antigravity/CLAUDE.md"
+  ],
+  "no_global_file": [
+    "ZCode: chi doc file du an"
+  ],
+  "skills": {
+    "_comment": "Nguon skill chung duy nhat. Engine chep (khong link) ra thu muc skill cua tung tool; chi quan ly skill co trong nguon.",
+    "source": "~/.agents/source/skills",
+    "targets": [
+      {
+        "id": "claude",
+        "dir": "~/.claude/skills",
+        "evidence": "Claude docs skills: ~/.claude/skills; OpenCode doc thu muc nay (docs + kiem thu)"
+      },
+      {
+        "id": "codex",
+        "dir": "~/.codex/skills",
+        "exclude_names": [
+          "brainstorming",
+          "diagnosing-superpowers",
+          "dispatching-parallel-agents",
+          "executing-plans",
+          "finishing-a-development-branch",
+          "receiving-code-review",
+          "requesting-code-review",
+          "subagent-driven-development",
+          "systematic-debugging",
+          "test-driven-development",
+          "using-git-worktrees",
+          "using-superpowers",
+          "verification-before-completion",
+          "writing-plans",
+          "writing-skills"
+        ],
+        "evidence": "Codex CLI native plugin superpowers@superpowers-dev v7.0.1 owns these 15 names; excludes 4 ATK skills to prevent OpenAI Daybreak cyber_policy blocks; sync owns the remaining shared skills."
+      },
+      {
+        "id": "omp",
+        "dir": "~/.omp/agent/skills",
+        "evidence": "omp -p kiem thu 2026-10-02: KHONG thay skill o ~/.claude/skills cap user -> can ban rieng"
+      },
+      {
+        "id": "pi",
+        "dir": "~/.pi/agent/skills",
+        "create": true,
+        "evidence": "Pi 1.0.4 docs/skills.md: global skills ~/.pi/agent/skills; cai lai 2026-10-06"
+      },
+      {
+        "id": "workbuddy",
+        "dir": "~/.workbuddy/skills",
+        "evidence": "thu muc skill cua app tren dia"
+      },
+      {
+        "id": "antigravity",
+        "dir": "~/.gemini/config/skills",
+        "evidence": "global customization root ~/.gemini/config/"
+      },
+      {
+        "id": "hermes",
+        "dir": "D:/Hermes/skills",
+        "create": true,
+        "evidence": "Hermes docs /docs/user-guide/features/skills: HERMES_HOME/skills is the primary skills directory; HERMES_HOME is D:/Hermes on this PC"
+      },
+      {
+        "id": "zcode",
+        "dir": "~/.zcode/skills",
+        "evidence": "thu muc skill cua app tren dia; 2026-11-01: ATK-core frame hand-maintained tren ZCode (skills + agents) — sync cam dong ten atk-* de khong ghi de (lenh boss 01/11/2026).",
+        "target_only_names": [
+          "atk-core",
+          "atk-corpus"
+        ]
+      },
+      {
+        "id": "opencode",
+        "dir": "~/.config/opencode/skills",
+        "create": true,
+        "evidence": "OpenCode ConfigSkillPlugin scans <config_dir>/skills (~/.config/opencode/skills) for full 102 skills when ~/.claude/skills excludes 4 ATK skills"
+      }
+    ],
+    "retire_dirs": [
+      {
+        "id": "opencode-legacy",
+        "dir": "~/.opencode/skills",
+        "reason": "OpenCode doc ~/.claude/skills (docs) -> ban rieng la trung"
+      },
+      {
+        "id": "codebuddy-retired",
+        "dir": "~/.codebuddy/skills",
+        "reason": "CodeBuddy da go khoi PC"
+      },
+      {
+        "id": "workbuddyai-retired",
+        "dir": "~/.workbuddy-ai/skills",
+        "reason": "WorkBuddyAI da go khoi PC"
+      },
+      {
+        "id": "minimax-retired",
+        "dir": "~/.minimax/skills",
+        "reason": "MiniMax da go khoi PC"
+      },
+      {
+        "id": "devin-retired",
+        "dir": "%APPDATA%/devin/skills",
+        "reason": "Devin da go khoi PC"
+      },
+      {
+        "id": "cline-retired",
+        "dir": "~/.cline/skills",
+        "reason": "Cline da go khoi PC"
+      },
+      {
+        "id": "trae-retired",
+        "dir": "~/.trae/skills",
+        "reason": "Trae reads ~/.claude/skills directly when chat.useClaudeSkills=true; keep no duplicate tree."
+      }
+    ],
+    "indirect_consumers": [
+      {
+        "id": "grok",
+        "source_dir": "~/.agents/source/skills",
+        "setting": "compat.claude.skills=true & skills.paths=[\"~/.agents/source/skills\"]",
+        "evidence": "Grok inspect confirms all 102 shared skills active (98 via compat.claude.skills + 4 ATK skills via skills.paths) with 0 disabled."
+      },
+      {
+        "id": "trae",
+        "source_dir": "~/.claude/skills",
+        "setting": "chat.useClaudeSkills=true",
+        "evidence": "Trae native Claude skill locator scans user and workspace .claude/skills when enabled."
+      }
+    ],
+    "retire_names": [
+      "video-script-dissect",
+      "autopilot",
+      "canvas",
+      "paseo",
+      "paseo-advisor",
+      "paseo-committee",
+      "paseo-handoff",
+      "paseo-help",
+      "paseo-plugin"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+diff --git "a/C:\\Users\\SaxukeB\\.agents\\backups\\20261102-015915\\skills\\antigravity\\h2dev-project-audit\\SKILL.md" "b/C:\\Users\\SaxukeB\\.agents\\source\\skills\\h2dev-project-audit\\SKILL.md"
+index b87bcd3..c34e1a0 100644
+--- "a/C:\\Users\\SaxukeB\\.agents\\backups\\20261102-015915\\skills\\antigravity\\h2dev-project-audit\\SKILL.md"
++++ "b/C:\\Users\\SaxukeB\\.agents\\source\\skills\\h2dev-project-audit\\SKILL.md"
+@@ -55,8 +55,8 @@ node scripts/find-404.js
+ - `AGENTS.md` nguồn MCP phải là `.agents/mcp_config.json`. `<YTB_ROOT>/.mcp.json` = legacy, không tồn tại.
+ - `kenh-mau.json`: trường `ngay_do` có trên phần lớn kênh (xem `channelsWithNgayDo` trong manifest); kênh thiếu ngày đo là tồn đọng đã biết, không phải lỗi mới.
+ 
+-### 7. Kiến trúc 3 Track (333 Video SKUs) & 3 CSDL SQLite
+-Dự án vận hành 3 nhánh bài giảng độc lập (**333 SKU** tổng cộng = **148 H2DEV** + **140 Huân Academy** + **45 DGMD**) và 3 CSDL SQLite WAL:
++### 7. Kiến trúc 3 Track & 3 CSDL SQLite
++Dự án vận hành 3 nhánh bài giảng độc lập (H2DEV + Huân Academy + DGMD; số lượng SKU lấy động từ `data/counts-manifest.json` và đối chiếu qua `node scripts/sync-counts.js --check`) và 3 CSDL SQLite WAL:
+ - `data/h2dev_master.db`: 10 bảng nghiệp vụ + `search_fts` FTS5 (kiểm tra `PRAGMA integrity_check; PRAGMA foreign_key_check;` và đối chiếu số dòng với `node scripts/sync-counts.js --check`).
+ - `data/h2dev_knowledge_graph.db`: Đồ thị 2 tầng khớp 1:1 với `data/knowledge_graph.json`.
+ - `data/intelligence.db`: Dữ liệu kênh breakout/outlier.
+@@ -68,13 +68,13 @@ py -3 scripts/check-grounding-md.py --live
+ node scripts/check-ui-classes.js
+ node scripts/verify_sku_az.js <SKU>
+ ```
+-Kỳ vọng: `TOTAL ungrounded: 0 in 333 videos`, `0` cảnh báo class CSS, và `ALL 10 GATES PASS` cho từng SKU kiểm mẫu.
++Kỳ vọng: `TOTAL ungrounded: 0` trên toàn bộ video theo `counts-manifest.json` (`totalSystemVideos`), `0` cảnh báo class CSS, và `ALL 10 GATES PASS` cho từng SKU kiểm mẫu.
+ 
+ ## Lỗi đã biết / bẫy
+ 
+ | Bẫy | Thực tế |
+ |---|---|
+-| Server "đã setup auto-start" | `H2DEV-Server-AutoStart` có nhưng **`H2DEV-Watchdog` chưa đăng ký** → server chết không ai dựng. Verify: `grep -c WATCHDOG h2dev-tray.log`. |
++| Trạng thái Watchdog & AutoStart | Cả 4 tasks (`H2DEV-Auto-Ingest-Watcher`, `H2DEV-Server-AutoStart`, `H2DEV-Video-Faststart-Guard`, `H2DEV-Watchdog`) đã đăng ký State `Ready`. Verify: `Get-ScheduledTask -TaskName "*H2DEV*"`. |
+ | Đăng ký scheduled task | `Register-ScheduledTask` từ sandbox trả OK nhưng task **không tồn tại**. Cần PowerShell quyền Admin chạy `install-h2dev-watchdog.ps1`. |
+ 
+ ## Mẹo môi trường

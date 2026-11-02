@@ -6,7 +6,7 @@ module_id: "HUAN-M07"
 module_title: "7. CẬP NHẬT K7"
 seq: "07"
 niche: "Chiến lược Sản xuất Video 2026 & Bảo vệ Kênh"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "05:52"
 published_at: "2026-09-01"
 toolsCount: 4
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-b522d6&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M07|HUAN-M07 — 7. CẬP NHẬT K7]] (Bài `#07`)  
 > - **Ngách nội dung (Niche):** [[niches/chien-luoc-san-xuat-video-2026-bao-ve-kenh|Chiến lược Sản xuất Video 2026 & Bảo vệ Kênh]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `05:52` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `05:52` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-b522d6&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-b522d6/README.md)
 
 ---

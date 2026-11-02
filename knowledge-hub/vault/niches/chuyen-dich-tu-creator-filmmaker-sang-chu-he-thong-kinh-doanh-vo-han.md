@@ -14,6 +14,5 @@ tracks: ["huan"]
 ## 1. Các Video Bài Giảng Thuộc Ngách (1)
 - [[videos/VIDEO-8d13ec|VIDEO-8d13ec — Minh Travel - Kol Hơn 100K Người Theo Dõi Chia Sẻ Về Quay Dựng Video Nổi Tiếng Ở VN]] (`HUAN` · `02:01`)
 
-## 2. Kênh Đối Thủ / Kênh Mẫu Liên Quan (2)
+## 2. Kênh Đối Thủ / Kênh Mẫu Liên Quan (1)
 - [[channels/HuanVN|@HuanVN]]
-- [[channels/MinhTravel|@MinhTravel]]

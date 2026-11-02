@@ -1,12 +1,12 @@
 ---
 handle: "@JesusLovesEvery-1"
-name: "Jesus Quiz"
+name: "@JesusLovesEvery-1"
 url: "https://www.youtube.com/@JesusLovesEvery-1"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @JesusLovesEvery-1 (Jesus Quiz)
+# Kênh Đối Thủ / Kênh Mẫu: @JesusLovesEvery-1 (@JesusLovesEvery-1)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@JesusLovesEvery-1](https://www.youtube.com/@JesusLovesEvery-1)

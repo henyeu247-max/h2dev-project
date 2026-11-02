@@ -1,12 +1,12 @@
 ---
 handle: "@SweetKissDrama"
-name: "Sweet Kiss Drama"
+name: "@SweetKissDrama"
 url: "https://www.youtube.com/@SweetKissDrama"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @SweetKissDrama (Sweet Kiss Drama)
+# Kênh Đối Thủ / Kênh Mẫu: @SweetKissDrama (@SweetKissDrama)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@SweetKissDrama](https://www.youtube.com/@SweetKissDrama)

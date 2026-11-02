@@ -1,12 +1,12 @@
 ---
 handle: "@ProductivePeter"
-name: "Productive Peter"
+name: "@ProductivePeter"
 url: "https://www.youtube.com/@ProductivePeter"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ProductivePeter (Productive Peter)
+# Kênh Đối Thủ / Kênh Mẫu: @ProductivePeter (@ProductivePeter)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ProductivePeter](https://www.youtube.com/@ProductivePeter)

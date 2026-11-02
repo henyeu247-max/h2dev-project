@@ -1,12 +1,12 @@
 ---
 handle: "@kenhsongkhoemoingay"
-name: "Sống Khỏe Mỗi Ngày (98.9M view - $145,735)"
+name: "@kenhsongkhoemoingay"
 url: "https://www.youtube.com/@kenhsongkhoemoingay"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @kenhsongkhoemoingay (Sống Khỏe Mỗi Ngày (98.9M view - $145,735))
+# Kênh Đối Thủ / Kênh Mẫu: @kenhsongkhoemoingay (@kenhsongkhoemoingay)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@kenhsongkhoemoingay](https://www.youtube.com/@kenhsongkhoemoingay)

@@ -1,12 +1,12 @@
 ---
 handle: "@NgoDucDuy"
-name: "Ngô Đức Duy"
+name: "@NgoDucDuy"
 url: "https://www.youtube.com/@NgoDucDuy"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @NgoDucDuy (Ngô Đức Duy)
+# Kênh Đối Thủ / Kênh Mẫu: @NgoDucDuy (@NgoDucDuy)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@NgoDucDuy](https://www.youtube.com/@NgoDucDuy)

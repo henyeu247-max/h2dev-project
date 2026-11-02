@@ -6,7 +6,7 @@ module_id: "HUAN-M13"
 module_title: "CẢM NHẬN THỰC TẾ CỦA KHÓA OFFLINE"
 seq: "05"
 niche: "Mô Hình YouTube Faceless Cho Chuyên Gia / Bác Sĩ Làm Thêm & Cốt Lõi Tư Duy Chiến Lược"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "01:03"
 published_at: "2026-09-01"
 toolsCount: 2
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-6f7610&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M13|HUAN-M13 — CẢM NHẬN THỰC TẾ CỦA KHÓA OFFLINE]] (Bài `#05`)  
 > - **Ngách nội dung (Niche):** [[niches/mo-hinh-youtube-faceless-cho-chuyen-gia-bac-si-lam-them-cot-loi-tu-duy-chien-luoc|Mô Hình YouTube Faceless Cho Chuyên Gia / Bác Sĩ Làm Thêm & Cốt Lõi Tư Duy Chiến Lược]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `01:03` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `01:03` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-6f7610&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-6f7610/README.md)
 
 ---
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-6f7610&track=huan"
 - Bài thơ ứng khẩu của Bác sĩ Thuận đã tóm gọn chính xác công thức thành công của khóa học: Nắm vững Tư duy Chiến lược + Chọn mô hình Faceless + Về nhà bắt tay vào làm ngay = Hướng tới cột mốc Triệu view, Triệu sub, Triệu đô.
 - Tuyên ngôn cốt lõi của giảng viên Nguyễn Văn Huân: Hai thứ quan trọng nhất mà ông tập trung truyền đạt là TƯ DUY (Mindset) và CHIẾN LƯỢC (Strategy) — đúng như dòng chữ in trên phông nền chính của sự kiện (`MINDSET AND STRATEGY`).
 - Tư duy và Chiến lược tại Huân Academy không phải lý thuyết suông trên giấy, mà được đúc kết từ chính việc người đứng đầu đã trực tiếp tự tay làm kênh từ A đến Z và đẩy kênh lên thành công thực tế trước khi đóng gói thành quy trình.
+- Học được nhận được giá trị thì em có mấy câu thơ như thế này.
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình 5 bước triển khai kênh YouTube Faceless bán thời gian (Side-Hustle) dành cho Bác sĩ / Chuyên gia đang làm việc nhà nước:

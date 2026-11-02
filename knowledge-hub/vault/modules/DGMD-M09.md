@@ -7,7 +7,7 @@ lesson_count: 4
 
 # Module DGMD-M09 — COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI
 
-- **Thuộc Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]
 - **Tổng số bài giảng:** `4` video
 - **Mô tả:** Quy trình Âm Thanh Động Vật, Bắt Nhịp Đọc Theo Chữ và Tái Sử Dụng Nguồn Video TikTok.
 

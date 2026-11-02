@@ -6,7 +6,7 @@ module_id: "HUAN-M01"
 module_title: "1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z"
 seq: "07"
 niche: "Tiêu Chí Dựng Video Triệu View & 7 Điều Cấm Kỵ Cho Editor"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "13:00"
 published_at: "2026-09-01"
 toolsCount: 6
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-931b63&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M01|HUAN-M01 — 1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z]] (Bài `#07`)  
 > - **Ngách nội dung (Niche):** [[niches/tieu-chi-dung-video-trieu-view-7-dieu-cam-ky-cho-editor|Tiêu Chí Dựng Video Triệu View & 7 Điều Cấm Kỵ Cho Editor]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `13:00` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `13:00` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-931b63&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-931b63/README.md)
 
 ---
@@ -57,7 +57,7 @@ player_url: "/player.html?sku=VIDEO-931b63&track=huan"
 - [[tools/excel|Excel]]
 
 ## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)
-- [[channels/TrumPhimReview|@TrumPhimReview]] *(DIE)*
+- [[channels/TrumPhimReview|@TrumPhimReview]]
 - [[channels/xinereview|@xinereview]]
 - [[channels/CuongPhimReview|@CuongPhimReview]]
 - [[channels/QUEENMOVIES|@QUEENMOVIES]]

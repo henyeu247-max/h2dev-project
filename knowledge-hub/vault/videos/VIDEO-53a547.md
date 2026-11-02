@@ -6,7 +6,7 @@ module_id: "DGMD-M03"
 module_title: "QUY TRÌNH SẢN XUẤT VIDEO NGẮN"
 seq: "03"
 niche: "Thể Thao & Câu Đố Bóng Đá Tương Tác (Sports Quiz Shorts)"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại", "📱 Shorts / Reels"]
+markets: ["🌍 View Ngoại", "📱 Shorts / Reels"]
 duration: "37:43"
 published_at: "2026-10-12"
 toolsCount: 2
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-53a547&track=dgmd"
 # VIDEO-53a547 — Quy Trình Sản Xuất Video Thể Thao Shorts
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M03|DGMD-M03 — QUY TRÌNH SẢN XUẤT VIDEO NGẮN]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/the-thao-cau-do-bong-da-tuong-tac-sports-quiz-shorts|Thể Thao & Câu Đố Bóng Đá Tương Tác (Sports Quiz Shorts)]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại · 📱 Shorts / Reels | **Thời lượng:** `37:43` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại · 📱 Shorts / Reels | **Thời lượng:** `37:43` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-53a547&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-53a547/README.md)
 
 ---
@@ -54,7 +54,7 @@ player_url: "/player.html?sku=VIDEO-53a547&track=dgmd"
 - [[tools/capcut|CapCut]]
 
 ## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)
-- [[channels/Goat_Faceoff|@Goat_Faceoff]] *(DIE)*
+- [[channels/Goat_Faceoff|@Goat_Faceoff]]
 
 ## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)
 - **Hồ sơ phân tích & SOP thực chiến: Quy Trình Sản Xuất Video Thể Thao Shorts (README.md):** `docs/VIDEO-53a547/README.md`

@@ -1,12 +1,12 @@
 ---
 handle: "@Popa-Pipo"
-name: "PoPa PiPo"
+name: "@Popa-Pipo"
 url: "https://www.youtube.com/@Popa-Pipo"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Popa-Pipo (PoPa PiPo)
+# Kênh Đối Thủ / Kênh Mẫu: @Popa-Pipo (@Popa-Pipo)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Popa-Pipo](https://www.youtube.com/@Popa-Pipo)

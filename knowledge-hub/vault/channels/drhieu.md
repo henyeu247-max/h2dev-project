@@ -1,12 +1,12 @@
 ---
 handle: "@drhieu"
-name: "Dr. Hiếu / Bác sĩ Hiếu (Chuyên gia da liễu & sức khỏe — Case study tư vấn định vị chuyên gia tại Eagle Camp)"
+name: "@drhieu"
 url: "https://www.youtube.com/@drhieu"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @drhieu (Dr. Hiếu / Bác sĩ Hiếu (Chuyên gia da liễu & sức khỏe — Case study tư vấn định vị chuyên gia tại Eagle Camp))
+# Kênh Đối Thủ / Kênh Mẫu: @drhieu (@drhieu)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@drhieu](https://www.youtube.com/@drhieu)

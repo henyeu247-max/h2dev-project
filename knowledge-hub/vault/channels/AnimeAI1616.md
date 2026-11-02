@@ -1,12 +1,12 @@
 ---
 handle: "@AnimeAI1616"
-name: "AnimeAI"
+name: "@AnimeAI1616"
 url: "https://www.youtube.com/@AnimeAI1616"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @AnimeAI1616 (AnimeAI)
+# Kênh Đối Thủ / Kênh Mẫu: @AnimeAI1616 (@AnimeAI1616)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@AnimeAI1616](https://www.youtube.com/@AnimeAI1616)

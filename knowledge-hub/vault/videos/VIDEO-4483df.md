@@ -6,7 +6,7 @@ module_id: "DGMD-M10"
 module_title: "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE"
 seq: "09"
 niche: "SEO & Thuật Toán YouTube"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
+markets: ["🌍 View Ngoại"]
 duration: "07:22"
 published_at: "2026-10-12"
 toolsCount: 2
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-4483df&track=dgmd"
 # VIDEO-4483df — Quy Trình Đăng Video Chuẩn SEO Trên Máy Tính
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M10|DGMD-M10 — TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE]] (Bài `#09`)  
 > - **Ngách nội dung (Niche):** [[niches/seo-thuat-toan-youtube|SEO & Thuật Toán YouTube]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `07:22` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại | **Thời lượng:** `07:22` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-4483df&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-4483df/README.md)
 
 ---

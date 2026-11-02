@@ -6,11 +6,11 @@ module_id: "HUAN-M06"
 module_title: "6. QUY TRÌNH ĐANG TẠO RA >1.000.000$ YOUTUBE"
 seq: "05"
 niche: "Triển khai Ý tưởng Kênh & Kế hoạch 30 Video Đầu tiên"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "13:26"
 published_at: "2026-09-01"
 toolsCount: 6
-channelsCount: 7
+channelsCount: 6
 docsCount: 6
 player_url: "/player.html?sku=VIDEO-573b94&track=huan"
 ---
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-573b94&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M06|HUAN-M06 — 6. QUY TRÌNH ĐANG TẠO RA >1.000.000$ YOUTUBE]] (Bài `#05`)  
 > - **Ngách nội dung (Niche):** [[niches/trien-khai-y-tuong-kenh-ke-hoach-30-video-dau-tien|Triển khai Ý tưởng Kênh & Kế hoạch 30 Video Đầu tiên]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `13:26` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `13:26` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-573b94&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-573b94/README.md)
 
 ---
@@ -64,7 +64,6 @@ player_url: "/player.html?sku=VIDEO-573b94&track=huan"
 - [[channels/Wolfoo|@Wolfoo]]
 - [[channels/PeppaPigOfficial|@PeppaPigOfficial]]
 - [[channels/drwilliamli|@drwilliamli]]
-- [[channels/DuocSiNguyenHien|@DuocSiNguyenHien]] *(DIE)*
 
 ## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)
 - **Hồ sơ phân tích & SOP thực chiến: Ý Tưởng Kênh - Triển Khai 30 Video Đầu Tiên Ngay Lập Tức (README.md):** `docs/VIDEO-573b94/README.md`

@@ -1,15 +1,15 @@
 ---
 handle: "@Pinkfong Baby Shark (@Pinkfong)"
-name: "Pinkfong Baby Shark (@Pinkfong)"
-url: "https://www.youtube.com/@Pinkfong"
+name: "@Pinkfong Baby Shark (@Pinkfong)"
+url: "https://www.youtube.com/@Pinkfong%20Baby%20Shark%20(%40Pinkfong)"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Pinkfong Baby Shark (@Pinkfong) (Pinkfong Baby Shark (@Pinkfong))
+# Kênh Đối Thủ / Kênh Mẫu: @Pinkfong Baby Shark (@Pinkfong) (@Pinkfong Baby Shark (@Pinkfong))
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/@Pinkfong](https://www.youtube.com/@Pinkfong)
+- **URL YouTube:** [https://www.youtube.com/@Pinkfong%20Baby%20Shark%20(%40Pinkfong)](https://www.youtube.com/@Pinkfong%20Baby%20Shark%20(%40Pinkfong))
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

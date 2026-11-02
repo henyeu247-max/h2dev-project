@@ -1,12 +1,12 @@
 ---
 handle: "@MyDIYBuilds"
-name: "My DIY Builds"
+name: "@MyDIYBuilds"
 url: "https://www.youtube.com/@MyDIYBuilds"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @MyDIYBuilds (My DIY Builds)
+# Kênh Đối Thủ / Kênh Mẫu: @MyDIYBuilds (@MyDIYBuilds)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@MyDIYBuilds](https://www.youtube.com/@MyDIYBuilds)

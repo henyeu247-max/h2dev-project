@@ -1,12 +1,12 @@
 ---
 handle: "@ThayTranVietQuan"
-name: "Trần Việt Quân"
+name: "@ThayTranVietQuan"
 url: "https://www.youtube.com/@ThayTranVietQuan"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ThayTranVietQuan (Trần Việt Quân)
+# Kênh Đối Thủ / Kênh Mẫu: @ThayTranVietQuan (@ThayTranVietQuan)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ThayTranVietQuan](https://www.youtube.com/@ThayTranVietQuan)

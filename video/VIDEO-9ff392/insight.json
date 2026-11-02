@@ -1,0 +1,95 @@
+{
+  "sku": "VIDEO-9ff392",
+  "title": "Thực chiến share ngách lịch sử Việt Nam hướng dẫn làm + kèm Skill ( Claude tự động edit video ) |  Update 25-10-2026",
+  "actual_topic": "Thực Chiến Ngách Lịch Sử Bản Đồ Việt Nam & Tự Động Hóa Dựng Video Bằng Claude Plugin H2 Bản Đồ Sử Studio",
+  "summary": "Hướng dẫn khai thác ngách lịch sử quân sự và địa chính trị Việt Nam qua hoạt họa bản đồ, tích hợp h2-bandosu-studio.plugin giúp Claude tự động viết kịch bản và dựng video hoàn chỉnh.",
+  "category_group": "ai_automation",
+  "niche_primary": "Lịch Sử Quân Sự & Hoạt Họa Bản Đồ Việt Nam",
+  "niche_id": "vn-history-map-claude-automation",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Khai thác ngách lịch sử và địa lý quân sự Việt Nam bằng định dạng hoạt họa bản đồ trực quan với sự hỗ trợ toàn diện từ h2-bandosu-studio.plugin trên Claude.",
+    "Lệnh /kich-ban-bandosu tự động xây dựng kịch bản phân tích chiều sâu lịch sử (như chủ quyền đảo Phú Quốc, đường ranh giới năm 1939 và ba lần kháng chiến chống quân Mông Nguyên).",
+    "Lệnh /lam-video-bandosu tự động hóa hoàn toàn khâu vẽ bản đồ, diễn hoạt đường hành quân, hiệu ứng mũi tên chiến thuật, lồng ghép âm thanh và xuất video chất lượng cao.",
+    "Tận dụng trực tiếp Claude để tư vấn cấu hình danh mục cài đặt kênh YouTube, bộ từ khóa tìm kiếm và chiến lược đăng tải tối ưu cho tệp khán giả yêu lịch sử Việt Nam.",
+    "Em chào tất cả mọi người nha. Hôm nay em tiếp tục là chia sẻ cho mọi người một siêu phẩm nữa ha."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình sản xuất tự động video hoạt họa bản đồ lịch sử Việt Nam bằng Claude và h2-bandosu-studio.plugin.",
+    "additional": [
+      "Nạp tệp h2-bandosu-studio.plugin vào Claude Desktop và thiết lập thư mục lưu trữ dự án lịch sử Việt Nam.",
+      "Kích hoạt lệnh /kich-ban-bandosu để chọn đề tài lịch sử trọng điểm và sinh kịch bản chia theo từng trường đoạn bản đồ chiến thuật.",
+      "Chuẩn bị tệp thu âm lời bình từ bản kịch bản đã duyệt và đặt vào thư mục dự án theo đúng quy ước của bộ công cụ.",
+      "Chạy lệnh /lam-video-bandosu để Claude tự động vẽ sa bàn bản đồ, chạy hiệu ứng mũi tên hành quân, ghép âm thanh và xuất bản video kèm cấu hình đăng tải YouTube."
+    ]
+  },
+  "sop_steps": [
+    "Nạp tệp h2-bandosu-studio.plugin vào Claude Desktop và thiết lập thư mục lưu trữ dự án lịch sử Việt Nam.",
+    "Kích hoạt lệnh /kich-ban-bandosu để chọn đề tài lịch sử trọng điểm và sinh kịch bản chia theo từng trường đoạn bản đồ chiến thuật.",
+    "Chuẩn bị tệp thu âm lời bình từ bản kịch bản đã duyệt và đặt vào thư mục dự án theo đúng quy ước của bộ công cụ.",
+    "Chạy lệnh /lam-video-bandosu để Claude tự động vẽ sa bàn bản đồ, chạy hiệu ứng mũi tên hành quân, ghép âm thanh và xuất bản video kèm cấu hình đăng tải YouTube."
+  ],
+  "avoid_flags": [
+    "Trình bày sự kiện lịch sử rời rạc thiếu trục bản đồ địa lý khiến người xem khó hình dung diễn biến chiến dịch và hướng tiến quân.",
+    "Chọn sai danh mục cài đặt nội dung trên YouTube thay vì hỏi trực tiếp Claude để thiết lập phân loại giáo dục lịch sử chuẩn xác."
+  ],
+  "tools_mentioned": [
+    "Claude",
+    "YouTube"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Mở đầu bản xem trước video mẫu ngách lịch sử bản đồ Việt Nam và giới thiệu bộ plugin tự động hóa"
+    },
+    {
+      "time": "01:06",
+      "seconds": 66,
+      "label": "Trích đoạn demo giải mã lịch sử đường ranh giới biển đảo và đảo Phú Quốc bằng hoạt họa bản đồ"
+    },
+    {
+      "time": "04:09",
+      "seconds": 249,
+      "label": "Hướng dẫn cài đặt h2-bandosu-studio.plugin vào Claude và gọi lệnh /kich-ban-bandosu"
+    },
+    {
+      "time": "07:06",
+      "seconds": 426,
+      "label": "Tối ưu danh mục cài đặt kênh YouTube và cách hỏi Claude cấu hình thông số đăng tải chuẩn"
+    },
+    {
+      "time": "10:11",
+      "seconds": 611,
+      "label": "Phân tích kịch bản đại chiến chống quân Mông Nguyên và cách chia trường đoạn bản đồ chiến thuật"
+    },
+    {
+      "time": "16:18",
+      "seconds": 978,
+      "label": "Gọi lệnh /lam-video-bandosu để tự động dựng chuyển động mũi tên hành quân, âm thanh và xuất video"
+    }
+  ],
+  "course_docs": [
+    {
+      "title": "Plugin Tự Động Hóa H2 Bản Đồ Sử Studio (h2-bandosu-studio.plugin)",
+      "name": "Plugin Tự Động Hóa H2 Bản Đồ Sử Studio (h2-bandosu-studio.plugin)",
+      "file": "assets/docs/VIDEO-9ff392/h2-bandosu-studio.plugin",
+      "link": "assets/docs/VIDEO-9ff392/h2-bandosu-studio.plugin"
+    },
+    {
+      "title": "Mô tả bài giảng & Tài nguyên gốc (description.txt)",
+      "name": "Mô tả bài giảng & Tài nguyên gốc (description.txt)",
+      "file": "assets/docs/VIDEO-9ff392/description.txt",
+      "readFile": "assets/docs/VIDEO-9ff392/description.txt",
+      "link": "assets/docs/VIDEO-9ff392/description.txt"
+    }
+  ],
+  "analysis_method": "agv_3.8_multimodal_7layer_verified",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-9ff392/transcript.txt"
+}

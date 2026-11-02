@@ -1,0 +1,92 @@
+{
+  "sku": "VIDEO-0419c4",
+  "title": "Quy Trình Sản Xuất Video MAMA CAT ASMR",
+  "actual_topic": "Quy trình sản xuất phim hoạt hình 3D Mama Cat Christmas ASMR bằng Master Prompt V3.0 trên ChatGPT, tạo ảnh tham chiếu nhân vật và render video 6 giây trên Google Flow, ghép âm thanh Pixabay/Suno trên CapCut",
+  "category_group": "chuyen_gia",
+  "niche_primary": "QUY TRÌNH HOẠT HÌNH AI NGOẠI",
+  "target_market": "Việt Nam & Toàn Cầu",
+  "market_code": "VN_GLOBAL",
+  "tools_mentioned": [
+    "ChatGPT",
+    "YouTube",
+    "CapCut",
+    "Pixabay"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân tích từ khóa ngách Mama Cat ASMR kết hợp xu hướng Giáng sinh trên YouTube"
+    },
+    {
+      "time": "05:39",
+      "seconds": 339,
+      "label": "Khởi tạo 100 câu chuyện độc lập từ Master Prompt V3.0 chống lặp lại trên ChatGPT"
+    },
+    {
+      "time": "07:08",
+      "seconds": 428,
+      "label": "Tạo 3 ảnh tham chiếu nhân vật mèo và 2 bối cảnh cố định trên Google Flow"
+    },
+    {
+      "time": "08:47",
+      "seconds": 527,
+      "label": "Thiết lập tạo video 16:9 thời lượng 6 giây theo đúng mã nhân vật và bối cảnh"
+    },
+    {
+      "time": "14:02",
+      "seconds": 842,
+      "label": "Tìm kiếm và tải hiệu ứng âm thanh tiếng mèo kêu ASMR trên kho Pixabay"
+    },
+    {
+      "time": "15:15",
+      "seconds": 915,
+      "label": "Tạo nhạc nền Giáng sinh bằng Suno AI và hoàn thiện âm lượng trên CapCut"
+    }
+  ],
+  "key_takeaways": [
+    "Khai thác ngách Mama Cat ASMR kết hợp chủ đề Giáng sinh (Christmas) với cấu trúc mỗi tập gốc dài 3 đến 5 phút, sau đó tổng hợp ghép thành video dài 21 phút đến 1 tiếng để tối ưu thời lượng xem.",
+    "Sử dụng Master Prompt V3.0 trên ChatGPT để khởi tạo 100 kịch bản phim hoạt hình 3D khác nhau hoàn toàn, tích hợp sẵn câu lệnh chống hành vi lặp đi lặp lại giúp giảm rủi ro tắt kiếm tiền YouTube.",
+    "Khóa đồng nhất ngoại hình 3 nhân vật (mèo mẹ Mama Cat, mèo anh, mèo em) và 2 bối cảnh (phòng khách, căn bếp) bằng cách tạo ảnh tham chiếu trên Google Flow trước khi sinh video.",
+    "Khi tạo từng phân cảnh trên Google Flow, chọn đúng mã ảnh tham chiếu nhân vật kết hợp bối cảnh (ví dụ nhân vật 1-2 và bối cảnh 2), thiết lập chế độ Video khung hình 16:9, thời lượng 6 giây và tải về bản 720p.",
+    "Đưa toàn bộ phân cảnh vào CapCut sắp xếp theo thứ tự thời gian, chèn hiệu ứng tiếng mèo kêu và tiếng làm bánh từ kho Pixabay hoặc Myinstants, kết hợp nhạc nền Giáng sinh tạo từ Suno AI đã giảm nhỏ âm lượng."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình 4 bước sản xuất phim hoạt hình 3D Mama Cat ASMR từ Master Prompt V3.0 đến hoàn thiện trên CapCut",
+    "additional": [
+      "Sao chép toàn bộ hơn 10 trang Master Prompt V3.0 dán vào ChatGPT và yêu cầu sản xuất bộ phim đầu tiên gồm 2 phần A và B kèm bộ từ khóa SEO YouTube và câu lệnh tạo thumbnail.",
+      "Dán lần lượt 3 câu lệnh tạo ảnh nhân vật (mèo mẹ, mèo anh, mèo em) và 2 câu lệnh bối cảnh vào Google Flow để sinh bộ ảnh tham chiếu gốc giúp khóa ngoại hình xuyên suốt tập phim.",
+      "Tạo từng cảnh video 6 giây tỉ lệ 16:9 trên Google Flow bằng cách ghép đúng mã ảnh tham chiếu nhân vật với ảnh bối cảnh phòng khách hoặc căn bếp theo chỉ dẫn của từng phân cảnh rồi tải về độ phân giải 720p.",
+      "Nhập các đoạn video đã tải vào CapCut, bổ sung hiệu ứng âm thanh ASMR từ Pixabay.com và nhạc nền Giáng sinh tạo trên Suno AI (chế độ Style), hạ nhỏ âm lượng nhạc nền và tạo ảnh thumbnail bằng ChatGPT."
+    ]
+  },
+  "sop_steps": [
+    "Sao chép toàn bộ hơn 10 trang Master Prompt V3.0 dán vào ChatGPT và yêu cầu sản xuất bộ phim đầu tiên gồm 2 phần A và B kèm bộ từ khóa SEO YouTube và câu lệnh tạo thumbnail.",
+    "Dán lần lượt 3 câu lệnh tạo ảnh nhân vật (mèo mẹ, mèo anh, mèo em) và 2 câu lệnh bối cảnh vào Google Flow để sinh bộ ảnh tham chiếu gốc giúp khóa ngoại hình xuyên suốt tập phim.",
+    "Tạo từng cảnh video 6 giây tỉ lệ 16:9 trên Google Flow bằng cách ghép đúng mã ảnh tham chiếu nhân vật với ảnh bối cảnh phòng khách hoặc căn bếp theo chỉ dẫn của từng phân cảnh rồi tải về độ phân giải 720p.",
+    "Nhập các đoạn video đã tải vào CapCut, bổ sung hiệu ứng âm thanh ASMR từ Pixabay.com và nhạc nền Giáng sinh tạo trên Suno AI (chế độ Style), hạ nhỏ âm lượng nhạc nền và tạo ảnh thumbnail bằng ChatGPT."
+  ],
+  "avoid_flags": [
+    "Không sản xuất hàng loạt video có cốt truyện và hành động lặp đi lặp lại; bắt buộc dùng câu lệnh biến thiên 100 kịch bản độc lập trong Master Prompt để tránh bị YouTube quét lỗi nội dung trùng lặp.",
+    "Không chọn nhầm mã số ảnh tham chiếu nhân vật và bối cảnh trên Google Flow (phải ghi chú rõ mã nhân vật 1, 2, 3 và bối cảnh phòng khách, căn bếp) để tránh râu ông nọ cắm cằm bà kia giữa các cảnh.",
+    "Không để nhạc nền Suno AI quá to lấn át tiếng động ASMR; sau khi chuẩn hóa âm lượng trên CapCut phải kéo nhỏ nhạc nền xuống để giữ chất lượng âm thanh chữa lành."
+  ],
+  "source_transcript": "video/VIDEO-0419c4/transcript.txt",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "course_docs": [
+    {
+      "title": "Tài Liệu Thực Chiến & Master Prompt: Quy Trình Sản Xuất Video  MAMA CAT ASMR  (master_prompt.md)",
+      "file": "assets/docs-dgmd/VIDEO-0419c4/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-0419c4/master_prompt.md",
+      "link": "assets/docs-dgmd/VIDEO-0419c4/master_prompt.md"
+    },
+    {
+      "title": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Video  MAMA CAT ASMR  (doc_1.txt)",
+      "file": "assets/docs-dgmd/VIDEO-0419c4/doc_1.txt",
+      "readFile": "assets/docs-dgmd/VIDEO-0419c4/doc_1.txt",
+      "link": "assets/docs-dgmd/VIDEO-0419c4/doc_1.txt"
+    }
+  ]
+}

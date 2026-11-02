@@ -1,12 +1,12 @@
 ---
 handle: "@TheLifeGuide"
-name: "The Life Guide (Kênh Thần thoại Hy Lạp 971K sub, chỉ 26 video, có video 14M view)"
+name: "@TheLifeGuide"
 url: "https://www.youtube.com/@TheLifeGuide"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TheLifeGuide (The Life Guide (Kênh Thần thoại Hy Lạp 971K sub, chỉ 26 video, có video 14M view))
+# Kênh Đối Thủ / Kênh Mẫu: @TheLifeGuide (@TheLifeGuide)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TheLifeGuide](https://www.youtube.com/@TheLifeGuide)

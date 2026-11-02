@@ -1,12 +1,12 @@
 ---
 handle: "@TheDiaryOfACEO"
-name: "The Diary Of A CEO (DOAC)"
+name: "@TheDiaryOfACEO"
 url: "https://www.youtube.com/@TheDiaryOfACEO"
 status: "LIVE_HTTP_200"
 videos_count: 4
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TheDiaryOfACEO (The Diary Of A CEO (DOAC))
+# Kênh Đối Thủ / Kênh Mẫu: @TheDiaryOfACEO (@TheDiaryOfACEO)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TheDiaryOfACEO](https://www.youtube.com/@TheDiaryOfACEO)

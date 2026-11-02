@@ -1,12 +1,12 @@
 ---
 handle: "@CourtCasesYT"
-name: "Court Cases (47.6K sub, 26 video - $92,832.60 / 5 tháng)"
+name: "@CourtCasesYT"
 url: "https://www.youtube.com/@CourtCasesYT"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @CourtCasesYT (Court Cases (47.6K sub, 26 video - $92,832.60 / 5 tháng))
+# Kênh Đối Thủ / Kênh Mẫu: @CourtCasesYT (@CourtCasesYT)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@CourtCasesYT](https://www.youtube.com/@CourtCasesYT)

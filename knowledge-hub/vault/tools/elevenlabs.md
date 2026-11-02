@@ -1,17 +1,17 @@
 ---
 tool_slug: "elevenlabs"
 tool_name: "ElevenLabs"
-videos_count: 42
+videos_count: 43
 tracks: ["h2dev", "huan", "dgmd"]
 ---
 
 # Công Cụ Thực Chiến: ElevenLabs
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **Số bài giảng sử dụng công cụ này:** `42` video
+- **Số bài giảng sử dụng công cụ này:** `43` video
 - **Tracks:** `H2DEV`, `HUAN`, `DGMD`
 
-## Danh Sách Bài Giảng Ứng Dụng ElevenLabs (42)
+## Danh Sách Bài Giảng Ứng Dụng ElevenLabs (43)
 - [[videos/VIDEO-3a38f9|VIDEO-3a38f9 — Quá kinh khủng với 2 kênh mới hoàn toàn làm đúng ngách không bao giờ thiếu view - Share kênh Thị trường Hàn và Việt]] (`H2DEV`)
 - [[videos/VIDEO-61ad94|VIDEO-61ad94 — Update ngách bán content Nhật, Hàn..]] (`H2DEV`)
 - [[videos/VIDEO-ca0b1a|VIDEO-ca0b1a — Show kênh thực chiến không che - hướng dẫn quy trình làm bán content nhân bản thị trường US sang Việt]] (`H2DEV`)
@@ -33,6 +33,7 @@ tracks: ["h2dev", "huan", "dgmd"]
 - [[videos/VIDEO-a59a5e|VIDEO-a59a5e — Update share 2 ngách mới kênh mới hoàn toàn | Mới nhất 08-10-2026]] (`H2DEV`)
 - [[videos/VIDEO-e0e9cd|VIDEO-e0e9cd — V2 - Thực chiến quy trình A-Z làm ngách đang cực HOT trends = Claude Automation | Update 22-10-2026]] (`H2DEV`)
 - [[videos/VIDEO-0c72ab|VIDEO-0c72ab — V1 - Full 50 phút Thực chiến hướng dẫn quy trình A-Z làm ngách "What-If" đang cực HOT trends bằng Claude và Edit 100% = Claude code  |  Update 21-10-2026]] (`H2DEV`)
+- [[videos/VIDEO-448a91|VIDEO-448a91 — Thực chiến share ngách view ngoại Thị trường Nhật Bản - Tặng kèm skill edit video  |  Update 27-10-2026]] (`H2DEV`)
 - [[videos/VIDEO-f59aa7|VIDEO-f59aa7 — VIP_ Tư duy nhân bản thị trường và hướng dẫn từ A-Z cách làm edit và thumb]] (`H2DEV`)
 - [[videos/VIDEO-64130d|VIDEO-64130d — TOOL DỊCH PHỤ ĐỀ SRT VIP - HƯỚNG DẪN DÙNG TOOL DỊCH PHỤ ĐỀ SRT CHUYÊN VIETSUB LÀM REUP/ BÁN CONTENT]] (`H2DEV`)
 - [[videos/VIDEO-04c2e3|VIDEO-04c2e3 — Tool Elevenlab, Clone Minimax, Dịch SRT, Tài Khoản ChatGPT Plus/ CapCut Pro - Giá rẻ]] (`H2DEV`)

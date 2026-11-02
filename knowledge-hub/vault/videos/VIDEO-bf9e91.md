@@ -6,7 +6,7 @@ module_id: "HUAN-M07"
 module_title: "7. CẬP NHẬT K7"
 seq: "03"
 niche: "Lựa Chọn Chủ Đề Đúng & Nghiên Cứu Sâu Dream 100"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "11:11"
 published_at: "2026-09-01"
 toolsCount: 4
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-bf9e91&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M07|HUAN-M07 — 7. CẬP NHẬT K7]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/lua-chon-chu-de-dung-nghien-cuu-sau-dream-100|Lựa Chọn Chủ Đề Đúng & Nghiên Cứu Sâu Dream 100]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `11:11` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `11:11` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-bf9e91&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-bf9e91/README.md)
 
 ---

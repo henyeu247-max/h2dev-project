@@ -6,7 +6,7 @@ module_id: "HUAN-M07"
 module_title: "7. CẬP NHẬT K7"
 seq: "09"
 niche: "SOP Tạo Email Chính Chủ & Đăng Ký Google AdSense"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "30:35"
 published_at: "2026-09-01"
 toolsCount: 6
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-f83f59&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M07|HUAN-M07 — 7. CẬP NHẬT K7]] (Bài `#09`)  
 > - **Ngách nội dung (Niche):** [[niches/sop-tao-email-chinh-chu-dang-ky-google-adsense|SOP Tạo Email Chính Chủ & Đăng Ký Google AdSense]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `30:35` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `30:35` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-f83f59&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-f83f59/README.md)
 
 ---

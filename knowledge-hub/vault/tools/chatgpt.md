@@ -1,17 +1,17 @@
 ---
 tool_slug: "chatgpt"
 tool_name: "ChatGPT"
-videos_count: 83
+videos_count: 87
 tracks: ["h2dev", "huan", "dgmd"]
 ---
 
 # Công Cụ Thực Chiến: ChatGPT
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **Số bài giảng sử dụng công cụ này:** `83` video
+- **Số bài giảng sử dụng công cụ này:** `87` video
 - **Tracks:** `H2DEV`, `HUAN`, `DGMD`
 
-## Danh Sách Bài Giảng Ứng Dụng ChatGPT (83)
+## Danh Sách Bài Giảng Ứng Dụng ChatGPT (87)
 - [[videos/VIDEO-ba3904|VIDEO-ba3904 — Hướng dẫn tham gia cộng đồng VIP riêng tư – Giao lưu, trao đổi và hỗ trợ YouTube H2Dev]] (`H2DEV`)
 - [[videos/VIDEO-61e354|VIDEO-61e354 — Hướng Dẫn Tư Duy Tìm, Lọc Key Youtube View Ngoại, Xác Định Được Key Trends, Key Ngon]] (`H2DEV`)
 - [[videos/VIDEO-e90874|VIDEO-e90874 — Tặng Prompt Master Tự Nhân Bản Sang Mọi Thị Trường (bất kỳ mong muốn) | Hướng Dẫn Thực Chiến]] (`H2DEV`)
@@ -29,6 +29,7 @@ tracks: ["h2dev", "huan", "dgmd"]
 - [[videos/VIDEO-bdfa54|VIDEO-bdfa54 — Key Sinh Tồn view Việt bán content]] (`H2DEV`)
 - [[videos/VIDEO-0bb86b|VIDEO-0bb86b — Chỉ 1 video đầu duy nhất nổ gần 200K View - Share ngách mới cực nhỏ thị trường Hàn và Nhật]] (`H2DEV`)
 - [[videos/VIDEO-043d15|VIDEO-043d15 — *Thực chiến Hướng dẫn train prompt và làm kịch bản ngách nhỏ key sức khỏe thị trường Hàn Quốc | Update 02-10-2026]] (`H2DEV`)
+- [[videos/VIDEO-bfabb6|VIDEO-bfabb6 — Hướng dẫn làm Tự động hóa ngách người que view Việt bằng Claude KHÔNG ĐỤNG tới Capcut, 100% edit giống đối thủ  |  Update 23-10-2026 ]] (`H2DEV`)
 - [[videos/VIDEO-f59aa7|VIDEO-f59aa7 — VIP_ Tư duy nhân bản thị trường và hướng dẫn từ A-Z cách làm edit và thumb]] (`H2DEV`)
 - [[videos/ZOOM-02-Chien-luoc-kenh-san-xuat|ZOOM-02-Chien-luoc-kenh-san-xuat — Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt]] (`H2DEV`)
 - [[videos/ZOOM-03-Quy-trinh-tool-toi-uu|ZOOM-03-Quy-trinh-tool-toi-uu — Zoom 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Quảng cáo]] (`H2DEV`)
@@ -85,6 +86,7 @@ tracks: ["h2dev", "huan", "dgmd"]
 - [[videos/VIDEO-3b377d|VIDEO-3b377d — Quy Trình Sản Xuất Video Lời Phật Dạy]] (`DGMD`)
 - [[videos/VIDEO-11a507|VIDEO-11a507 — Quy Trình Sản Xuất Video AUDIO]] (`DGMD`)
 - [[videos/VIDEO-c0353f|VIDEO-c0353f — Quy Trình Sản Xuất Video Audio View Việt]] (`DGMD`)
+- [[videos/VIDEO-e02e02|VIDEO-e02e02 — Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay]] (`DGMD`)
 - [[videos/VIDEO-af2c29|VIDEO-af2c29 — Quy Trình Sản Xuất Video Âm Thanh Động Vật ]] (`DGMD`)
 - [[videos/VIDEO-10991e|VIDEO-10991e — Quy Trình Sản Xuất Video Có Sẵn Trên Nền Tảng Tiktok Bằng Máy Tính]] (`DGMD`)
 - [[videos/VIDEO-0056a9|VIDEO-0056a9 — Quy Trình Sản Xuất Video Có Sẵn Trên Nền Tảng Tiktok Bằng Điện Thoại]] (`DGMD`)
@@ -95,3 +97,5 @@ tracks: ["h2dev", "huan", "dgmd"]
 - [[videos/VIDEO-ad6a82|VIDEO-ad6a82 — Các Góc Quay Khi Đặt Câu Prompt ]] (`DGMD`)
 - [[videos/VIDEO-fc62eb|VIDEO-fc62eb — Hãy Tạo Ra Master Prompt Trước Khi Sản Xuất Video]] (`DGMD`)
 - [[videos/VIDEO-27e4e0|VIDEO-27e4e0 — Quy Trình Tạo Ra Tool Tự Động Nhất Quán Nhân Vật]] (`DGMD`)
+- [[videos/VIDEO-7112d8|VIDEO-7112d8 — Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast]] (`DGMD`)
+- [[videos/VIDEO-0419c4|VIDEO-0419c4 — Quy Trình Sản Xuất Video  MAMA CAT ASMR ]] (`DGMD`)

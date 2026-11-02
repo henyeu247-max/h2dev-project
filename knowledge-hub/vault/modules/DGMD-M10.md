@@ -7,7 +7,7 @@ lesson_count: 12
 
 # Module DGMD-M10 — TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE
 
-- **Thuộc Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]
 - **Tổng số bài giảng:** `12` video
 - **Mô tả:** Tư duy nền tảng, tối ưu hóa SEO YouTube Studio, Master Prompt và công cụ tự động hóa nhân vật.
 

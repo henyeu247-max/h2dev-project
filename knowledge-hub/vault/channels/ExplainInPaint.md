@@ -1,12 +1,12 @@
 ---
 handle: "@ExplainInPaint"
-name: "Explain In Paint"
+name: "@ExplainInPaint"
 url: "https://www.youtube.com/@ExplainInPaint"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ExplainInPaint (Explain In Paint)
+# Kênh Đối Thủ / Kênh Mẫu: @ExplainInPaint (@ExplainInPaint)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ExplainInPaint](https://www.youtube.com/@ExplainInPaint)

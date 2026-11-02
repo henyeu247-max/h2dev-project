@@ -1,12 +1,12 @@
 ---
 handle: "@aliabdaal"
-name: "Ali Abdaal"
+name: "@aliabdaal"
 url: "https://www.youtube.com/@aliabdaal"
 status: "LIVE_HTTP_200"
 videos_count: 4
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @aliabdaal (Ali Abdaal)
+# Kênh Đối Thủ / Kênh Mẫu: @aliabdaal (@aliabdaal)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@aliabdaal](https://www.youtube.com/@aliabdaal)

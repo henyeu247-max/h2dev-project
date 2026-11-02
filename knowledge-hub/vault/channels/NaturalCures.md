@@ -1,12 +1,12 @@
 ---
 handle: "@NaturalCures"
-name: "Natural Cures / Chữa bệnh tự nhiên (Kênh Sức khỏe Global 3,51 triệu sub dùng Storyblocks)"
+name: "@NaturalCures"
 url: "https://www.youtube.com/@NaturalCures"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @NaturalCures (Natural Cures / Chữa bệnh tự nhiên (Kênh Sức khỏe Global 3,51 triệu sub dùng Storyblocks))
+# Kênh Đối Thủ / Kênh Mẫu: @NaturalCures (@NaturalCures)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@NaturalCures](https://www.youtube.com/@NaturalCures)

@@ -1,12 +1,12 @@
 ---
 handle: "@SachTomTat"
-name: "Bí Quyết Thành Công / Sách Tóm Tắt"
+name: "@SachTomTat"
 url: "https://www.youtube.com/@SachTomTat"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @SachTomTat (Bí Quyết Thành Công / Sách Tóm Tắt)
+# Kênh Đối Thủ / Kênh Mẫu: @SachTomTat (@SachTomTat)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@SachTomTat](https://www.youtube.com/@SachTomTat)

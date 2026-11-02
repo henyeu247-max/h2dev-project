@@ -1,12 +1,12 @@
 ---
 handle: "@PrinceEa"
-name: "Prince Ea (I Just Sued the School System)"
+name: "@PrinceEa"
 url: "https://www.youtube.com/@PrinceEa"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @PrinceEa (Prince Ea (I Just Sued the School System))
+# Kênh Đối Thủ / Kênh Mẫu: @PrinceEa (@PrinceEa)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@PrinceEa](https://www.youtube.com/@PrinceEa)

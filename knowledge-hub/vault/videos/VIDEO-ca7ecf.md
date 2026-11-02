@@ -6,7 +6,7 @@ module_id: "DGMD-M07"
 module_title: "COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1"
 seq: "03"
 niche: "Phật Pháp & Tâm Linh"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại", "📘 Facebook", "📱 Shorts / Reels"]
+markets: ["🌍 View Ngoại", "📘 Facebook"]
 duration: "17:38"
 published_at: "2026-10-12"
 toolsCount: 8
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-ca7ecf&track=dgmd"
 # VIDEO-ca7ecf — Update Quy Trình Sản Xuất Video Phật Pháp 2
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M07|DGMD-M07 — COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/phat-phap-tam-linh|Phật Pháp & Tâm Linh]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại · 📘 Facebook · 📱 Shorts / Reels | **Thời lượng:** `17:38` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại · 📘 Facebook | **Thời lượng:** `17:38` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-ca7ecf&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-ca7ecf/README.md)
 
 ---

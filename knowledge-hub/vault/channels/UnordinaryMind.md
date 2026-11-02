@@ -1,12 +1,12 @@
 ---
 handle: "@UnordinaryMind"
-name: "UnordinaryMind"
+name: "@UnordinaryMind"
 url: "https://www.youtube.com/@UnordinaryMind"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @UnordinaryMind (UnordinaryMind)
+# Kênh Đối Thủ / Kênh Mẫu: @UnordinaryMind (@UnordinaryMind)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@UnordinaryMind](https://www.youtube.com/@UnordinaryMind)

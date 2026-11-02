@@ -73,7 +73,8 @@
     "Hai kênh mẫu thực tế trên màn hình là Triệu Que Củi (@TrieuNe05 — 363N sub, 283 video, 391 triệu lượt xem) và Đảo Chiều (@daochieu037 — 1,17M sub, 1,2N video) chứng minh mỏ vàng nội dung Douyin khi được thuyết minh bình luận hài hước bằng tiếng Việt có khả năng kéo hàng trăm triệu view cực nhanh.",
     "Điểm đột phá của quy trình là sử dụng khả năng nhìn trực tiếp file video (Multimodal Video Understanding) của Google Gemini: Sau khi nạp Master Prompt 10 bước, học viên tải thẳng file .mp4 tải từ Douyin lên Gemini để AI tự xem từng giây và viết 3 phiên bản kịch bản (Hài hước, Cà khịa, Kể chuyện) khớp chính xác thời lượng theo công thức 2.5 - 3 từ/giây.",
     "Cách khai thác kho video Douyin vô tận: Đăng ký tài khoản Douyin bằng số điện thoại Việt Nam, dùng Google Dịch chuyển các từ khóa ngách (động vật hài hước, ăn uống, giải trí, gia đình) sang tiếng Trung rồi dán vào thanh tìm kiếm Douyin và tải video không logo qua công cụ tải video Douyin (Snaptik Douyin).",
-    "Công thức hậu kỳ tốc độ cao trên CapCut Pro: Tách kịch bản theo từng mốc 4 giây (0-4s, 4-8s, 8-12s), dùng tính năng Chuyển văn bản thành lời nói giọng 'Cô gái hoạt ngôn', đẩy tốc độ đọc lên 1.2x kèm bật 'Thay đổi âm thanh độ cao', chạy Phụ đề tự động tiếng Việt và phủ lớp Bộ lọc '4K' lên toàn bộ video."
+    "Công thức hậu kỳ tốc độ cao trên CapCut Pro: Tách kịch bản theo từng mốc 4 giây (0-4s, 4-8s, 8-12s), dùng tính năng Chuyển văn bản thành lời nói giọng 'Cô gái hoạt ngôn', đẩy tốc độ đọc lên 1.2x kèm bật 'Thay đổi âm thanh độ cao', chạy Phụ đề tự động tiếng Việt và phủ lớp Bộ lọc '4K' lên toàn bộ video.",
+    "Chào anh chị em học viên, hôm nay chúng ta đến với cái bài sản xuất video short trên nền tảng YouTube. Anh em có thể nhìn thấy 2 kênh YouTube này, tôi đang lấy 2 kênh để"
   ],
   "edit_sop": {
     "primary": "Quy trình sản xuất Shorts review hài hước từ nguồn Douyin bằng Google Gemini + CapCut Pro",
@@ -111,7 +112,7 @@
       "title": "Master Prompt AI Chuyên Gia Phân Tích Video Ngắn Douyin & Viết Kịch Bản Review Hài Hước (Markdown)",
       "file": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.md",
       "readFile": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.md",
-      "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-dd1345/master_prompt.md"
+      "link": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.md"
     },
     {
       "title": "Tài Liệu Gốc Master Prompt Video Douyin (Google Docs TXT)",
@@ -123,7 +124,7 @@
       "title": "Bản Sao Master Prompt Video Douyin (TXT)",
       "file": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.txt",
       "readFile": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.txt",
-      "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-dd1345/master_prompt.txt"
+      "link": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.txt"
     }
   ]
 }

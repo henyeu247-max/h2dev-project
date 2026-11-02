@@ -1,12 +1,12 @@
 ---
 handle: "@ben8jam"
-name: "Ben 8Jam (Study With Me Quốc Tế)"
+name: "@ben8jam"
 url: "https://www.youtube.com/@ben8jam"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ben8jam (Ben 8Jam (Study With Me Quốc Tế))
+# Kênh Đối Thủ / Kênh Mẫu: @ben8jam (@ben8jam)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ben8jam](https://www.youtube.com/@ben8jam)

@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-10991e&track=dgmd"
 # VIDEO-10991e — Quy Trình Sản Xuất Video Có Sẵn Trên Nền Tảng Tiktok Bằng Máy Tính
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M09|DGMD-M09 — COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/khai-thac-video-trend-tiktok-bat-kiem-tien-nhanh-pc|Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (PC)]]  
 > - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `15:52` | **Ngày đăng:** `2026-10-12`  

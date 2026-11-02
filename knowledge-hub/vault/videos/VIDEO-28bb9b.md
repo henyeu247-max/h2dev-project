@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-28bb9b&track=h2dev"
 # VIDEO-28bb9b — SHARE NGÁCH REUP CỰC TRENDS VÀ 3 NGÁCH BÁN CONTENT VIEW VIỆT - CLONE THEO ĐỐI THỦ
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#31`)  
 > - **Ngách nội dung (Niche):** [[niches/reup-khai-thac-hoat-hinh|Reup & Khai Thác Hoạt Hình]]  
 > - **Thị trường:** 🇻🇳 Việt · 🇨🇳 Trung | **Thời lượng:** `3:38` | **Ngày đăng:** `2026-04-23`  

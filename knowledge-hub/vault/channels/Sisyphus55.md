@@ -1,12 +1,12 @@
 ---
 handle: "@Sisyphus55"
-name: "Sisyphus 55"
+name: "@Sisyphus55"
 url: "https://www.youtube.com/@Sisyphus55"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Sisyphus55 (Sisyphus 55)
+# Kênh Đối Thủ / Kênh Mẫu: @Sisyphus55 (@Sisyphus55)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Sisyphus55](https://www.youtube.com/@Sisyphus55)

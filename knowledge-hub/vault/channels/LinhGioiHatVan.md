@@ -1,15 +1,15 @@
 ---
 handle: "@LinhGioiHatVan"
-name: "Linh Giới Hát Văn (Kênh demo thao tác cài đặt Danh mục mặc định trong YouTube Studio)"
-url: "https://www.youtube.com/channel/UCBPGUH6eET9nTlbF72YmI7g"
+name: "@LinhGioiHatVan"
+url: "https://www.youtube.com/@LinhGioiHatVan"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @LinhGioiHatVan (Linh Giới Hát Văn (Kênh demo thao tác cài đặt Danh mục mặc định trong YouTube Studio))
+# Kênh Đối Thủ / Kênh Mẫu: @LinhGioiHatVan (@LinhGioiHatVan)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/channel/UCBPGUH6eET9nTlbF72YmI7g](https://www.youtube.com/channel/UCBPGUH6eET9nTlbF72YmI7g)
+- **URL YouTube:** [https://www.youtube.com/@LinhGioiHatVan](https://www.youtube.com/@LinhGioiHatVan)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

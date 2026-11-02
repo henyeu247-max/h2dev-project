@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-2b7592&track=dgmd"
 # VIDEO-2b7592 — Quy Trình Sản Xuất Video Review Phim
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M08|DGMD-M08 — BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/review-phim-hoat-hinh-cau-ca-douyin-vietsub|Review Phim & Hoạt Hình Câu Cá (Douyin Vietsub)]]  
 > - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `14:05` | **Ngày đăng:** `2026-10-12`  
@@ -61,7 +61,7 @@ player_url: "/player.html?sku=VIDEO-2b7592&track=dgmd"
 ## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)
 - [[channels/redevietsub|@redevietsub]]
 - [[channels/caucavancanchinhchu|@caucavancanchinhchu]]
-- [[channels/cameosub|@cameosub]] *(DIE)*
+- [[channels/cameosub|@cameosub]]
 
 ## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)
 - **Hồ sơ phân tích & SOP thực chiến: Quy Trình Sản Xuất Video Review Phim (README.md):** `docs/VIDEO-2b7592/README.md`

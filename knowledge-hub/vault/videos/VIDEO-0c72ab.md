@@ -5,8 +5,8 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "100"
-niche: "Tự Động Hóa YouTube, Edit Bằng Code & Ngách Giả Định What-If"
-markets: ["🌐 Ngoại"]
+niche: "Tự Động Hóa Code 2D & Ngách Giả Định What-If"
+markets: ["🇺🇸 Mỹ", "🌐 Ngoại"]
 duration: "50:03"
 published_at: "2026-10-21"
 toolsCount: 4
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-0c72ab&track=h2dev"
 # VIDEO-0c72ab — V1 - Full 50 phút Thực chiến hướng dẫn quy trình A-Z làm ngách "What-If" đang cực HOT trends bằng Claude và Edit 100% = Claude code  |  Update 21-10-2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#100`)  
-> - **Ngách nội dung (Niche):** [[niches/tu-dong-hoa-youtube-edit-bang-code-ngach-gia-dinh-what-if|Tự Động Hóa YouTube, Edit Bằng Code & Ngách Giả Định What-If]]  
-> - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `50:03` | **Ngày đăng:** `2026-10-21`  
+> - **Ngách nội dung (Niche):** [[niches/tu-dong-hoa-code-2d-ngach-gia-dinh-what-if|Tự Động Hóa Code 2D & Ngách Giả Định What-If]]  
+> - **Thị trường:** 🇺🇸 Mỹ · 🌐 Ngoại | **Thời lượng:** `50:03` | **Ngày đăng:** `2026-10-21`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-0c72ab&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-0c72ab/README.md)
 
 ---
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-0c72ab&track=h2dev"
 - Quy trình V1 được đóng gói thành 5 Skill chạy ngay trong Claude Desktop (Sonnet tiết kiệm token cho gói Pro, hoặc Opus cho gói Max): từ tạo cốt truyện, viết kịch bản phân cảnh, xuất prompt ảnh/video đến dựng MP4 tự động.
 - Tạo hình ảnh và chuyển động trên Google Flow: chạy ảnh nhân vật và ảnh bối cảnh (từ I001 đến I074) để khóa đồng bộ nhân vật, sau đó tạo video clip 8 giây theo đúng chế độ gợi ý trong file (Quality 100 credit cho cảnh mở đầu/quan trọng, Fast 20 credit hoặc Lite cho cảnh thường).
 - Tạo hội thoại đa nhân vật bằng tool ElevenLabs riêng (import 6 giọng đọc ứng với từng nhân vật) và chạy lệnh ghép tự động (GHEP.bat) để xuất video hoàn chỉnh kèm nhạc nền.
+- Rồi, em chào tất cả các anh chị nha. Thì video hôm nay em share cho mọi người cái ngách đang cực kỳ là trend ở bên thị trường US này nha.
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình 4 bước thực chiến: V1 Full 50 Phút Thực Chiến Hướng Dẫn Quy Trình A-Z Làm Ngách Trends What-If Biên Tập 100% Bằng Claude Code

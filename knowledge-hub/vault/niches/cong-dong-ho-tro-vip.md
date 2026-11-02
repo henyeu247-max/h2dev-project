@@ -1,11 +1,11 @@
 ---
 niche_slug: "cong-dong-ho-tro-vip"
-niche_name: "Cộng Đồng & Hỗ Trợ VIP"
+niche_name: "Cộng đồng & Hỗ trợ VIP"
 videos_count: 1
 tracks: ["h2dev"]
 ---
 
-# Ngách Nội Dung: Cộng Đồng & Hỗ Trợ VIP
+# Ngách Nội Dung: Cộng đồng & Hỗ trợ VIP
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **Tổng số bài giảng thuộc ngách:** `1` video

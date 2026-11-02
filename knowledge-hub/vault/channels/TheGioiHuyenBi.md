@@ -1,12 +1,12 @@
 ---
 handle: "@TheGioiHuyenBi"
-name: "Thế Giới Huyền Bí"
+name: "@TheGioiHuyenBi"
 url: "https://www.youtube.com/@TheGioiHuyenBi"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TheGioiHuyenBi (Thế Giới Huyền Bí)
+# Kênh Đối Thủ / Kênh Mẫu: @TheGioiHuyenBi (@TheGioiHuyenBi)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TheGioiHuyenBi](https://www.youtube.com/@TheGioiHuyenBi)

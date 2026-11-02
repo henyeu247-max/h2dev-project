@@ -1,12 +1,12 @@
 ---
 handle: "@shenharmony2798"
-name: "Shen Harmony"
+name: "@shenharmony2798"
 url: "https://www.youtube.com/@shenharmony2798"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @shenharmony2798 (Shen Harmony)
+# Kênh Đối Thủ / Kênh Mẫu: @shenharmony2798 (@shenharmony2798)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@shenharmony2798](https://www.youtube.com/@shenharmony2798)

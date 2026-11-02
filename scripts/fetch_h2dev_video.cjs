@@ -158,7 +158,7 @@ function decryptAll(keyPath, segFiles) {
   // 5 ghep + remux
   const lf = WORK + '/concat_dec.txt';
   fs.writeFileSync(lf, dec.map(p => "file '" + p.replace(/\\/g, '/') + "'").join('\n'), 'utf8');
-  const args = ['-hide_banner', '-y', '-f', 'concat', '-safe', '0', '-i', lf, '-c', 'copy', '-bsf:a', 'aac_adtstoasc', OUT];
+  const args = ['-hide_banner', '-y', '-f', 'concat', '-safe', '0', '-i', lf, '-c', 'copy', '-bsf:a', 'aac_adtstoasc', '-movflags', '+faststart', OUT];
   console.log('[6] ghep + remux -> ' + OUT);
   const t0 = Date.now();
   const res = spawnSync(FFMPEG, args, { encoding: 'utf8', timeout: 3600000 });

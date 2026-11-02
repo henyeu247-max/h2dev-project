@@ -1,0 +1,2794 @@
+{
+  "sku": "VIDEO-bfabb6",
+  "duration": 1906.63,
+  "language": "vi",
+  "model": "whisper-large-v3-turbo",
+  "total_segments": 348,
+  "full_text": "Em chào tất cả anh chị nha, hôm nay em lại tiếp tục lên video hướng dẫn mọi người làm nha. Thì cái ngách vẽ, cái kênh vẽ vời về thị trường Việt này thì hôm trước em có nói mọi người nè, thì kênh này đang bật kiếm tiền, đang hoàn toàn bật kiếm tiền, thì mấy bác có thấy cái chức năng hỏi viên thì mọi người cũng biết mà đúng không? Về cái chỗ này nó cũng có gợi ế số tiền tháng này, tầm 500 đô, thì chắc chắn là cái chỗ này nó tính là không bao giờ chính xác được, kiểu như tương đối thôi mấy bác ạ. Nhưng mà nói chung cái thị trường Việt thì mọi người biết rồi. Rồi bộ mờ nó rất là thấp, về mỗi những cái dạng này cũng vậy. Nhưng mà em chứng minh cho mấy bác thấy được rằng là những cái kênh, những cái ngách người que, hoặc hình người que như này thì làm rất là bình thường chứ không phải là như nhiều anh em thấy là cứ bảo take kiếm tiền, mọi người sợ, mọi người không làm. Nói chung cái vấn đề mình làm YouTube, những icon mình view lần đầu thì mình mong cho nó có view thôi mọi người hả? Chứ mọi người đừng có tính tới việc kiếm được bao nhiêu tiền hay là kiếm tiền, cách kiếm tiền mọi bác. Mình phải làm mới biết được, vẻ làm mới có kinh nghiệm được nha. Chứ còn mọi bác hay không? Rất là nhiều icon đang bật kiếm tiền và đang kiếm bình thường. Chứ mọi bác cứ nghe người này nói, người kia nói. Nhưng mà mọi bác đã chưa làm, chưa thử thì sao mọi người biết được đúng không? Thì đây em tổng quan về kênh này như vậy. Thì kênh này làm từ 3 tháng trước nè. Lúc này nó làm là nó đang hót cái ngách này, ngách tiền sử này nó đang hót ở bên thị trường US nè mọi người. Mọi người lúc trước em cũng có share trên kênh YouTube em cách đây khá là lâu rồi cũng có cái ngách này nè Nhưng mà ở thiền trường US thì kênh này nó cũng nhân bản về nó làm nè Về đây là cũng một kênh nước ngoài em cho một người thêm tâm khảo thêm Hai tuần trước gần 4 triệu view nè Cũng khá là kinh nha Đấy Nhìn cái thông này nó cũng biết nó nói về cái thời tiền sử nha. Thì em cho mọi người thêm tham khảo về kênh này thôi, chứ còn video chính hôm nay là em hướng dẫn mọi người làm thủy trường Việt, Về giống như cái kênh vẽ vời này luôn nha. Về cái thumb cũng giống luôn. Đấy, làm real easy luôn. Về trước khi làm thì đương nhiên sẽ có cái phần plugin này, sẽ gồm tất cả các cái skill trong này. Thì em có để ở dưới khung video mô tả. Với bác tải về nha. Mọi người làm thì mọi người tải về. Xong rồi thì em sẽ vào cái con Claude nè. Và em sẽ up em tải cái file bộ plugin đó vào lên nha. Rồi em sẽ vào setting. Bấm vào Add và tải lên thôi. Thì cái này bác phải xem video trước, cái video mà bảng WorldHide, cái kia WhatExComware em có up lên rồi á, thì bác sẽ hiểu thôi. Rồi mọi người chọn model là Output 5.5, và cái chỗ này không chắc, thì mọi người chọn là Cowork nha. Và cái chỗ này có nhiều phiên bản, có nhiều máy của máy bác tải về, nó không có cái chỗ này, thì máy bác mặc định là cứ đỡ bại về làm thôi. Đấy, tùy theo cái bảng nha. Có nhiều bảng thì nó up sẵn rồi mọi người. tiếp tục thì em sẽ add cái folder vào ví dụ như em chưa có folder đúng không em sẽ tạo một cái folder mới nè em đặt tên là ví dụ như tiền sử h2 đi đấy Em tạo 1 folder mới hoàn toàn luôn, rõng luôn nha. Em sẽ import vào. Em chấp nhận nè. Cho phép nè. Rồi, bây giờ thì em sẽ gọi cái skill là viết kịch bản ra. Cái skill này thì là nó nèm trong cái brewing ngách tiền sở em vừa upload nè mọi người. Bây giờ thì em tải lên thôi. Rồi, bây giờ em sẽ enter. Chấp nhận nè. Và bây giờ em chỉ cần việc ngồi đợi đặt về skill và tạo ra các chủ đề thôi mọi người ạ. Cái quy trình làm cái này thì cũng rất là nhanh thôi và rất là giống với cái video hôm trước luôn, video bản vô 2 mấy bác. Trong khi chạy thì nó sẽ mở lên một cái trình duyệt và nó sẽ đặt về kênh đối thủ này. Nó sẽ lấy tất cả các cái chủ đề, tiêu đề của đối thủ, nó phân tích. Vì nó lập chọn lập về những cái nào trend không trend. Vì nó loại bỏ những cái mà trùng, vậy nó sẽ trao ra mình những cái chủ đề viral nhắc nha mấy bác. Chờ một tí thì nó để trao ra mình cất quẽ nè, em sẽ tắt cái trình duyệt đây nha. Em sẽ đặt quẽ là kênh vĩa để phân tích về hôm 1 trên video cơ thủ, vậy nó sẽ trao 1 cái file ở trong thư mục của mình là file đối thủ này, Đối thủ này, có nghĩa là file trong này á, nó sẽ gồm tất cả các cái chủ đề mà đối thủ đã làm rồi. Thì sau này bác là nhận làm những cái video sau á, mọi người gọi secure và nó cũng có sẵn dữ liệu luôn rồi, nó không cần phải tốt thời gian đọc nữa nha. Lọc nữa mọi người ạ. Về đây là một số cái chủ đề tiêu đề mà nó gửi cho mình nè, gửi cho em nè. Mình có thể đọc về đúng với cái ngách thị trường Việt Nam luôn nha. Đúng là con người Việt Nam luôn nè. Về những cái bi sao này có nghĩa là nó khiến người mình nên làm. Còn những cái 2 sao này thì ưu tiên không ưu tiên nha. Đấy, nên là bây giờ em sẽ chọn một cái và em sẽ gõ lại cái skill và em sẽ chạy nha mọi người. Rất là đơn giản thôi nha. Bây giờ thì giả sử như em sẽ chọn cái chủ đề thứ nhất này đây, chủ đề 1 này là Vì sao nhân tộc nào cũng có trưởng người khổng lồ nè. Rồi, em sẽ copy cái tiêu đề này nha. Về xuống dưới em sẽ gọi skill ra và em sẽ dán cái chủ đề vào. Thì thực tế là bác bác chỉ cần dán cái chủ đề thôi cũng được, không cần gọi skill đâu. Bởi vì ở trên mình đã gọi rồi nó tự hiểu nha. Đây là làm hướng dẫn demo nên là em làm chi tiết cho mọi người rõ luôn. Về bây giờ thì em sẽ đợi nó gen ra những cái file kịch bản, file tạo voice, tạo hình ảnh nha. Đối với cái dạng ngách này thì chắc chắn là chỉ có một dạng thôi. Đây em trai bác nghe qua kênh đối thủ chứ không phải là cái dạng hội thoại như cái ngách hôm trước em chia sẻ đâu. Hơn nhiều, vì nó trả lời luôn câu hỏi người Việt đầu tiên đến từ đâu. Theo một cách mà mình cá là ít ai nghĩ tới, bạn thử hình dung một nồi nước dùng phở nhé. Nồi nào ngon thì chẳng bao giờ nấu trong 10 phút. Người ta thả xương vào từ tối hôm trước ninh lửa lưu diu suốt đêm. Gần sáng mới cho thêm hành nướng, gừng nướng, quế với hồi. Cứ mỗi lượt lại thêm một thứ mà chẳng thứ nào bị vớt ra đổ đi. Nên tới 7 giờ sáng, bát nước dùng bạn húp là vị của tất cả các lượt ấy cộng lại. Bạn không thể múc một buỗng lên rồi chỉ mỗi đợt mang theo một thứ, thả vào nồi rồi ở lại luôn. Đợt thì mang theo hòn đá cuội, đợt mang hạt lúa, đợt lại mang con thuyền. Còn đợt cuội là hòn đá cuội trước. Nhưng rồi các vị bác bộ, đá dùng làm bàn mài. Người bác nghe qua cái giọng đật rất là hay. Và cái giọng này chắc chắn là họ dùng clone giọng nha. Họ dùng clone ấy, chứ không phải dọn từ các cái web như Vobi hay E-Lab đâu. Cái dọn này thì chắc chắn là em nghĩ là sẽ clone. Tới nữa em sẽ làm giống 100% như cái kênh này luôn cho bác tham khảo ha. Nói chung clone này kia thì clone dọn thì bác cũng biết hết rồi. Còn bây giờ thì chủ yếu là cái quy tình cho con clone nó edit thôi mọi người ạ. Một bộ phim này đã tạo ra cho em những file tài nghiêng cần thiết rồi. Bây giờ em sẽ sớt lại cho bác. Nó thông báo là mình để làm xong mạch định. Video này khoảng 22 phút. Mật độ ảnh AI vừa. Void tách đoạn bài. bằng dấu gạch thẳng thì chỗ dấu gạch thẳng như nào tí nữa đi vào chi tiết em sẽ nói chi tiết cho mọi người rõ rõ nha còn ở dưới này thì nó phân tích quen lại thôi đây nó tự sinh cho em một cái bộ đồ sách và trong bộ đồ sách đó có cái bộ đồ có một cái thư 101 tên chủ đề này nè Vì sau này mọi người ví dụ làm những tập tiếp theo thì nó sẽ tạo ra ví dụ thư mục 0203 thôi để đặt tên theo đúng với chủ đề mọi người làm. Bây giờ thì em sẽ xem thử qua cái file kịch bản nha. Đây là file full kịch bản của video này. File này để mình đọc tham khảo ra thôi mấy bác ạ. Tiếp theo cái file này là để mình đi tạo dòng đọc, tạo voice ha. Bây giờ thì em cũng sẽ mở xem luôn. Về ở mọi người đời nè, cái file này mình đi tạo dòng đặc là em đã tiên sẵn cho nó ở mỗi cuối câu, mỗi cuối dòng á, thì có một cái dấu ký tự gạch thẳng nè, thì tí nữa để đi tạo voice thì em sẽ giải thích chi tiết hơn rồi đó nha. Tiếp theo là một cái file 04, cái file này là file cũng quan trọng là để đi tạo ảnh nha mọi người. Đây là một cái file gồm tắt các cái forum mà tạo ảnh cần thiết nhất. Đấy. Bởi vì đây là cái ngách rất là cần thiết cho vừa tạo AI và vừa đỡ cho con Claude này nó code, nó vỉa nha, vừa kết hợp nó code, nó vẽ và vừa mình cung cấp hình ảnh AI thêm cho nó edit nữa nha mấy bác. Chứ không phải là cái ngách này nó tự động edit hết đâu, đó là lý do tại sao mà cái video, cái ngách hôm trước em làm ra 2 bản về em trao mấy bác. Cái bản đầu tiên là cách làm thù công kiểu như đúng cây chay luôn á, để mọi người hiểu được cái quy tình nó như nào. Về đối với cái app, cái ngách video hôm nay nè, thì em sẽ áp dụng kết hợp kẻ hai đó lại với nhau. Thì bác sẽ thấy được video nó rất là chất lượng. Chứ không phải ngách nào mình cũng đi làm tự động như thế thì nhiều cái chỗ đoạn, nhiều ngách, nhiều nhân vật, nhiều cảnh á, nó đâu tự vỉ được đâu mọi người. Nên là mình phải kết hợp với ảnh AI mình tạo ra nữa nha. Nó trao mình cái from rồi mình đi tạo ảnh AI mình lưu về. Nó kết hợp lại với nhau thôi. Nhưng mà chắc chắn là những cái from này thì rất là dễ làm và đơn giản thôi. Mình chỉ công việc đi copy cái from đó, mình bỏ lên con flow để nó gen ra ảnh thôi hả bác ạ? nhé! Quan trọng là mình phải có dữ liệu thêm để cho nó edit, chuẩn chỉ và chất lượng nhất. Chắc lượng nhất, em hướng đến mọi người phải làm như vậy, chứ không phải là mình cứ đưa hết chai ai nó tự động, ghen tự động làm. Thì như vậy, re nhiều cái ngách nó không có re gì kìa, video rất là không có chắc lượng vào, không giống đối thủ đâu mọi người. Đó là lý do tại sao em hướng dẫn em nói rất rất là nhiều thứ như vậy. Mấy bác thông cảm nha, em nói hơi nhiều, nói lại cho mấy bác phải rõ. rồi ok bây giờ thì bước tiếp theo thì nó hướng dẫn em là nó kêu em là đi tạo void và đi tạo hình ảnh nè và có cái cái from thâm nữa nha. Nói chung tới phần nào thì em nói phần đó thôi. Và bây giờ thì mình có thể đi tạo giọng đọc trước hay là tạo ảnh trước vẫn được thì em sẽ đi tạo giọng đọc trước luôn nha. Cái nào trước cũng được không quan trọng đâu mấy bác ạ. Thì cái video này, cái giãn ngách này tầm khoảng trung bình là 22 phút. Đây, em trai bác sĩ em cơ đối thủ này, toàn là trên 20 phút thôi, và trung bình là khoảng tầm 22-23 phút. Thì đối với cái kịch bản vừa rồi nó trai ra cũng vậy, nên là hiện tại em đang quay cái video demo cho mọi người thôi. Nên là bây giờ em làm hết 22 phút thì không biết tới khi nào mà xong luôn. Nên là bây giờ em sẽ yêu cầu nó nè, tạo lại cho em thêm một cái project demo. Đúng với chủ đề này luôn nha mọi người, nhưng mà chỉ tầm là 2 đến 3 phút thôi, để em làm demo cho bác thấy được thôi. Chứ bây giờ mà em làm hết 22 phút như ngay kịch bản luôn thì thực sự không có thời gian đâu mọi người. Đấy, đợi nó ghi in real video rất rất là lâu. Máy bác thấy cái video hôm trước em ghen cả xấu 7 phút mà phải chờ hơn gần 2 tiếng đồng hồ luôn. Đấy. Đó là mọi người nhờ AI nó edict á thì mọi người cũng chịu khó là đợi thời gian nó ghen thôi nha. Mình làm việc khác thôi mọi người. Bây giờ thì nó đã tạo ra cho em nè. Cái bản này là bản demo em làm để cho bác xem. Chứ không phải là nó tóm tắt đâu nha. Cái bản này vẫn rất là chất lượng. Nói chung là để làm tới là mái bác sĩ thấy được thôi. Đây, bây giờ thì nó để xin để cho em một cái thư mục demo. Bây giờ trong này nó cũng gồm là bảng nè, đỡ đi tạo vô nè, nó rút vọn lại nè. Tiếp theo cái file này là cái file hướng dẫn, cái thư mục, cái file này hướng dẫn để mình ghen thôi, chứ không có quan trọng đâu. Hai cái file quan trọng là cái file âm thanh để im bọt vào tạm thanh nè. Với cái file 04 là Chrome tạo hình ảnh. Thì tới nữa tới cái đó em sẽ nói sau. Quan trọng hai cái file đó thôi nha bác. Thì bây giờ thì em sẽ đi tạo giọng đặc nha. Và như lúc nãy em nói em sẽ làm giống như cái giọng đặc của con đối thủ này luôn. Em sẽ dùng clone nha mọi người. Thì em sẽ nghe lại cho bác nghe lại nha. Bạn đang xếp hàng chờ lấy máu xét nghiệm. Căn phòng hơi lạnh, thoang thoảng mùi cồn sát trùng. Người xếp ngay trước bạn vừa được gọi tên đã ngồi xuống ghế. Cái kênh này thì hãnh cũng dùng, hãnh cũng clone lại những cái kênh của người khác thôi. Người khác làm ngách khác thôi mấy bác ạ. Rồi em sẽ mở cái tool clone của em lên. Thì hiện tại là em để clone xong rồi. bây giờ thì em sẽ vào và em sẽ import kịch bản lên những cái tool và Elevn Lab này thì mọi người đều biết hết rồi nên em không có giới thiệu nhiều nha Bây giờ em sẽ giải thích lại luôn, ở cái chỗ này ở cuối mỗi dòng, mỗi câu nó có một cái dấu ký tự gạch đứng nè. Thì có nghĩa là em làm như vậy để cho nó tự tách ra mỗi dòng một ô khi mà gain. Khi gain xong rồi thì là mỗi dòng này nó tạo ra một file âm thanh riêng. Nó tách ra mọi người để cho con con lót đẹp về nó edit dở cho hàng hơn. Đó là lý do tại sao em đang dùng chức năng là Auto Sublip ở trên Contour em nè. Em đặt ở trong cái ô đó là cái tự dấu thẳng, dấu thẳng đứng. Vậy em tích vào ô EltoSupply, và trong cái file kịch bản thì ở mỗi cuối dòng em muốn tách nó ra, thì em sẽ đặt vào cái dấu ký tự dấu gạch thẳng đó ở cuối dòng thôi. Đơn giản vậy thôi, phải bác hiểu chứ đúng không? Em giải thích hơi dài dòng nhưng mà chắc chắn là mọi người nhìn là mọi người sẽ hiểu thôi. Bây giờ thì em sẽ gen ra nha. Để như vậy thì nó sẽ tạo ra nhiều cái nó sẽ tắt ra mỗi dòng một cái file mắt thanh riêng. Edit, edit, edit nó sẽ dở dàng hơn mọi người ạ. Đối với mấy bác này dùng một cái file gọp lại một file dài thì mọi người bỏ vào con clip nó edit vẫn được nha. Cái này thì em trend rồi nhưng mà để mà dở dàng ok cho nó chuẩn nhất thì nên tắt ra, nên tắt ra như em này sẽ ok hơn nha mọi người. Chưa vậy thì em để ghi nè xong rồi, em sẽ cho mọi người nghe về một đoạn của một cái file 01 ha. Khoảng 2.600 năm trước, ở thành T, G, A, miền Nam Hy Lạp, có một người đàn ông tên là Ly Khát bước vào sân nhà một bác thợ rèn. Ly Khát là người thành Sparta. Cái chắc giọng và giọng đẹp thì rất giống đối thủ mình còn lo cái này không bàn tới nữa. Nhưng có vấn đề là... Thôi thật, cái chỗ thu mục này em sẽ đặt là thu mục void nha, cho nó gọn lại. Có vấn đề là những cái từ khóa tiếng Anh á. Thì nó hơi đẹp và bị chạm do là em có cái dấu gạch nữa. Thì cái này thì mình có thể tự chỉnh nó đẹp. Trong kịch bản nha, tí nãy em nói sau nha mấy bác Rồi tiếp theo sau khi tạo void rồi thì em sẽ mở cái file 04 Cái from của mình lên Cái đây là cái file from để mình đi tạo hình ảnh nha Đối với cái file from này thì cũng cực kỳ là đơn giản thôi mấy bác ạ Nó có chú thích là E001, E002 Vân vân vân vân vân như cái file demon này thì nó gồm 10 be ảnh tới E0 10 be này phải bắt nhìn ở dưới nè đó thì về nó kèm theo 2 cái form để tạo thêm nữa thì em sẽ tạo hết 14 gồm 15 cái ảnh này hơn nha. để cho con Coloss nó làm ra demo cho mình. thì đối với những cái video mà full đó thì mọi người cắp bao nhiêu ảnh thì nó gửi bao nhiêu ảnh thì mọi người cứ tạo Bán nhiều ảnh thì cho nó thôi. Để cho nó làm rea được mình chất lượng nhất nha các bác. Bây giờ thì em chỉ cần việc copy from, em quen lên thôi. Em chọn cái model là Nano Banana Pro nha. Em chọn 4 ảnh luôn để nó rea 4 ảnh rồi mình có thể lựa chọn những cái nào hợp nhất. Các bác thấy không? Nó tạo rea phim cách nhong vật và phim cách ảnh rất là giống đối thủ luôn. Những cái này là chi tiết, những cái hình ảnh này là bởi vì con Claude nó không tự nào mà vỉ ra, nó tự làm được. Nên là để tối ưu cái video mình chắc lượng và hay nhất, em để trên nó là vừa code và vừa mình tạo ảnh như này để cung cấp cho nó làm nha mọi người. Đấy, như vậy thì nó mới là real video chắc lượng. Chứ đừng cả để nó, cái nào nó không làm được thì thôi chứ đừng cả ép nó làm đấy. Giống như mình cũng vậy mới bác ạ. Mình không biết làm cái gì thì mình phải tối ưu hay là nói chung mình sao đái mình hẹp hỏi. Chứ mình không có làm bậy nha. Các bạn có thể nhìn thấy nhé, kiểu 7 Rồi em sẽ tour qua đoạn tạo 10 bé ảnh này nhé Đến với đoạn 2 cái ảnh thumb cuối cùng này Thì các bạn thấy không, ảnh thumb rất rất là chất lượng, rất là đúng với phong cách của đối thủ luôn Em Trên thật sự rất là kinh luôn Đây, mọi người thấy không, đối thủ thì sẽ đối thủ thì em cố tình á, mấy bác thấy đối thủ nó hơi bị nhạt nhạt đúng không, em cố tình đẩy cho nó đậm hơn khác đối thủ tí, còn mọi người đem về, mọi người muốn biến như nào, thì mọi người cứ biến dạng theo phong cách của mọi người muốn á, thì mọi người cứ quen cái skill lên, mọi người yêu cầu con chat nó thay đổi thôi, có gì đâu, còn ở trên là phong cách nè, Những nhân vật nè Rồi, cái quan trọng là 10 bia ảnh này với cái ảnh thumb kia thì em sẽ tải về lưu lại ha. Ví dụ như em chọn ảnh này đi, trong 4 ảnh em thấy ảnh này chắc lượng đúng không? Em đặt thư mục ảnh để ảnh. Đặt xong rồi em bấm vào lưu. Lưu chung đo vào thư mục ảnh cho đỡ bị loạn. Cũng như là con Claude đọc, nó sẽ dở dàng làm hơn nha mọi người. Em sẽ tải về về em quay lại với file from này, đặt tên theo đúng với tên đó nha. Tên from này 01 thì em tải về em cũng đặt tên là 01, em đưa vào thư mục ảnh. Tương tự những ảnh show của bác cũng làm vậy ha Em sẽ bỏ tour nhanh về cái đoạn này Cuối cùng thì đến với cái chỗ ảnh thumb này thì cũng vậy thôi Ảnh thâm này ở trong cái file from nó chú thích như nào thì em sẽ lưu như vậy. Đây cái file đầu tiên ảnh thumb này là T01 nè. Em cũng sẽ copy cái T01 này, em quên lưu tên lại thôi. lên, em sẽ chọn cái ảnh thứ 2 này, thấy khá gần và nét, những cái ảnh kia nó hơi bí, thấy ảnh rất là chất lượng. Em lưu vào. Rồi, đối với cái ảnh cuối cùng ở trên này, nó là phong cách, hình ảnh, nhân vật mình chọn thôi, thì bác có thể lưu hay không lưu cũng được. Cái này thì mình kiểu mình muốn sau này những video sau mình đồng bộ như cái nhân vật ảnh thông mình như nào thì mình lưu về. Ví dụ em chọn ảnh này đi, bây giờ cái nhân vật này đúng không? Bác bác cũng thấy nó tương tự như đối thủ không? Đấy, em lưu về, em sẽ đặt cái tên là T00 nha. Ok, như vậy thì bây giờ em đã có đài đấu hết các cái tài nghiêng và bây giờ em sẽ đi nhờ con CloudNetix cho em nè. Các em có ảnh và có void rồi thì bây giờ em sẽ gọi cái skill và dựng làm video lên và em sẽ import lại với cái thư mục dự án của em nha, dự án là demo. Mấy bác nhớ lúc nãy em có xin chuyển về làm demo không? Chứ không thể làm full hết được á. Thì bây giờ em ghi thêm câu lệnh là hãy dựng. video cho tôi thôi. Về với cái project này, em read lại cái thứ 1, em copy cho nó chấn nha. copy riêng cái đường dẫn của project, cái dự án nè. Đấy. Rồi, bây giờ thì chỉ việc enter về nó sẽ đọc file về nó làm thôi mấy bác ạ. Tất cả những gì bây giờ là có trong cái skill này hết rồi. Bây giờ thì mình chỉ việc enter này em chấp nhận, cho phép. Đấy. Rồi, bây giờ chỉ công việc đợi nó gen ra video thôi ha. Lúc này nó tạo ảnh thumb về test, kiểu như tạo test trên ảnh thumb trước này. Nó cho ra ảnh thumb trước. Ảnh thâm này lúc nãy mình tạo trên Google Flow, xong rồi em lưu về. Bây giờ nó ghi test thâm vào, test là cái xương ID này mọi người. Thật ra cái này nếu mà bác muốn tự làm thì bác có thể dùng ảnh cho mọi người lên canh web mọi người chỉnh chữ vào, chỉnh test vào, còn không thì mọi người dùng chat gpt cũng được. Còn mọi người muốn clark tự động tạo luôn thì trong skill em cũng đã có rồi thì nó chỉ tự động ra như này thôi. Bác thấy hợp lý là mọi người chọn. Chọn, em quay lại con đối thủ thử, nhìn cái test của đối thủ như thế nào. Đây, cái test đối thủ cũng vậy, khéo đơn giản thôi. Test này thì thật sự rất đơn giản. Cái chữ tết này nó hơi đậm một tí. Nói chung là mọi người tùy theo phong cách mọi người muốn thôi. Mọi người yêu cầu khác, đậm nhạc hay phong cách khác thì mọi người cứ yêu cầu nó sẽ tạo lại thôi. Còn không nữa thì bác thấy không hợp lý nữa thì bác có thể ra ChatGPT làm tự làm. Các bạn có thể nhận được video này, để nhận được video này, để nhận được video này. Chờ một tí nữa, cuối cùng đã ghi cho em xem video demo. Về nó có cái báo cáo này thì em sẽ đặt qua ha. Mình đã lên xe hông hình cho 49 cảnh về sức ở chế độ ở chất lượng là 1080 nè. Về tốc độ sức là tốc độ game video này còn 30 phút. Đúng tầm 30 phút thôi. Em cho tầm 30 phút đấy. Còn ở dưới thì nói chung là nó có những cái phân tích về báo cáo này. Mình có thể đặt qua ha. Ví dụ như nó nói, bác bác thấy chỗ nào không hợp lý là muốn sửa thì mọi người cứ yêu cầu nó thì nó sẽ sửa lại. Còn bây giờ thì em sẽ tải video về nè, em sẽ mở lên cái thư mục, em sẽ tra bác xem về cái demo BeFoot này nha. Đây em đi vào cái thư mục demo của em về cái phần output. Đây là video, em mở lên. Khoảng 2.600 năm trước, ở thành T, G, A, miền nam Hy Lạp, có một người đàn ông tên là Ly Khát bước vào sân nhà một bác thợ rèn. Ly Khát là người thành Sparta, và ông đang đi tìm một thứ mà cả thành của ông đã tìm suốt nhiều năm chơi. Bác thợ rèn kể cho ông nghe một chuyện lạ. Hồi trước, bác đào giếng ngay giữa cái sân này, đào xuống được một quãng. Nếu đúng được một quãng thì lưỡi quốc chạm phải một cái quan tài. Cái quan tài ấy dài hơn 3 mét, tức là dài hơn cả chiếc giường đôi nhà bạn ghép đối tiếp với một chiếc chiếu nữa. Bác không tin có người nào to đến thế nên mở nắp ra xem. Bên trong là một bộ xương và bộ xương dài đúng bằng cái quan tài. Bác thợ rèn sợ quá, lấp đất lại coi như chưa thấy gì. Nhưng ly khát thì nghe xong là hiểu ngay. Ông thuê lại cái sân. Đảo bộ xương lên, mang về Iqpacta và tuyên bố rằng đây chính là xương của O, Red Iqtet, một người anh hùng thời xa xưa. Người Spactati như vậy, họ trôn cướp bộ xương long trọng và tin rằng từ đó thanh của họ sẽ thắng trận. Câu chuyện này không phải mình bịa ra, nó được ông He, Rowe, Dodd, nhà viết sử nghe. Nhà viết sử người Hy Lạp ghi lại trong bộ sử nổi tiếng của ông và cái chi tiết làm mình để ý nhất. Em xin phép bèo cái chỗ này một tí nha. Như bác thấy, ngay cái đoạn đầu hoặc là cái đoạn vừa rồi, cái từ tiếng Anh nó đẹp bị chậm, bởi vì cái từ tiếng Anh, cái tên nước ngoài thì em đang đỡ là nó... Chuyện này không phải mình bịa ra, nó được ông Hê, Râu. Đó, em đang đỡ là nó có cái dấu gạch ngang như này nè Thì mẹ định là những con AI á Nó đẹp tiếng Việt mà Nó đẹp có dấu gạch này Nó sẽ nhanh cách ra bởi cái khoảng ủy á Còn mình muốn đẹp nhanh liền mặt á Thì bác nhớ là xóa những cái dấu gạch đó đi Đó là đối với những tên riêng tiếng Anh thôi mọi người. Vì mấy bác có thể tự tì chẩn trong kịch bản của mình. Mọi người yêu cầu con cầu lót nó tạo lại. Đốt, nhà viết sử người Hy Lạp ghi lại trong bộ sử nổi tiếng của ông. Và cái chi tiết làm mình để ý nhất không phải là người anh hùng mà là cái phản ứng rất tự nhiên của cả hai người đàn ông kia. Thấy một bộ xương dài hơn 3 mét, không ai nghĩ đó là xương con vật. Ai cũng nghĩ ngay, đây là một con người, một con người khổng lồ. Và bạn biết không, chuyện người khổng lồ đâu chỉ có ở Hy Lạc. Người Bắc Âu kể về một gã khổng lồ tên Ymia, chết đi thì thịt hóa thành đất, xương hóa thành núi. Người Trung Hoa kể về bàn cổ, người đã tách trời khỏi đất. Người Ireland có phim Macbun, gã khổng lồ xây một con đường đá bắt qua biển. Các dân tộc bản địa ở châu Mỹ có những câu chuyện về sinh vật khổng lồ thời xa xưa. Và ngay ở nước mình, có thần trụ trời đắp cột trống trời, có thanh gióng vươn vai thành người cao lớn. Những dân tộc này sống cách nhau hàng vạn cây số, phần lớn họ chưa từng gặp nhau, không đọc sách của nhau, không nghe chuyện của nhau, vậy mà dân tộc nào cũng kể về người khổng lồ. Vì sao vậy? Có 2 cách giải thích bà mình hay nghe nhất. Cách thứ nhất nói rằng, ngày xưa con người to lớn thật, sau này mới nhỏ dần đi. Cách thứ 2 nói rằng, các câu chuyện chỉ là truyền tay nhau, dân tộc này nghe của dân tộc kia rồi kể lại. Cả 2 cách đều nghe có vẻ hợp lý, nhưng như bạn sẽ thấy, cả 2 đều không đứng vững. Câu trả lời thật thì lạ hơn nhiều, nó nằm dưới lòng đất, trong một hiệu thuốc ở Hồng Kông, trên một bờ biển đầy cột đá, trong bộ xương của một chàng trai cao nhất lịch sử. Và một phần câu trả lời nằm ngay gần nhà mình, trong một hang đá vôi ở Lạng Sơn và một ngôi đền bên bờ sông Hồng. Nhưng trước khi đi tìm câu trả lời, mình muốn bạn nhìn vào bàn tay của chính bạn. Hồi nhỏ, chắc nhiều bạn đã thấy bà hoặc mẹ đo vải bằng gang tay. Xoe bàn tay ra, ngón cái một đầu, ngón út một đầu, đặt lên mép vải, rồi đếm. Một gang, hai gang, ba gang. Muốn đo cái gì dài hơn thì dùng sải tay, rang hai tay ra hết cỡ. Muốn đo đường thì đến bước chân. Ông bà mình gọi chiều cao của nước lụt là ngập đến đầu gối, ngập đến thắt lưng. Người Hy Lạp cũng vậy, họ đo bằng khủyểu tay, người Anh đo bằng bàn chân, đến giờ vẫn còn gọi một đơn vị đo là phút, nghĩa gốc là bàn chân. Từ thỏa xa xưa, cây thước đầu tiên của loài người không làm bằng gỗ hay sắt, nó chính là cơ thể của mình. của mình. Và đây là ý chính của cả video này. Khi con người gặp một thứ quá lớn, lớn hơn mọi thứ họ từng biết, họ vẫn đưa cây thước quen thuộc ấy ra để đo. Họ áp găng tay của mình vào một khúc xương, một tảng đá, một ngọn núi. Và khi cây thước ấy không đủ dài, trong đầu họ hiện ra một con người, chỉ có điều là to hơn rất nhiều lần. Người khổng lồ chính là Thật sự là khi xem phát video demo này bác thấy rất đỉnh không? Các gồm cái âm thanh và những cái hiệu ứng này kia nó đã nhớ Những âm thanh nhặt nền này kia nó ghép vào hết đó mấy bác. Rất là đỉnh cao luôn. Vì là nó có một vấn đề chỉ là cái chỗ mà cái giọng đọc AI nó đọc cái chỗ tên riêng á. Bởi vì em đi cái hiện tại là cái kịch bản nó re là những cái tên nước ngoài thì nó có dấu gạch. Nên mấy bác có thể là yêu cầu con Claude nó làm lại file kịch bản nha. Hiệt là mấy bác tự chỉnh tay cũng được. Một số cái từ nước ngoài nó chỉ một số tên thôi. Nhiều kịch bản cũng không có đâu mấy bác ạ. Thì ok, quay video này thì em muốn chia sẻ với mọi người về quy trình và cũng như chia sẻ với bác cái skill để tự động làm về cái ngách này. Cái ngách này thật ra thì cũng khá là lâu rồi và cũng nhiều bác biết đấy. Nhưng mà nhiều bác biết cái ngách này nhau như vậy chứ nhiều bác không biết làm. Thì hôm nay em sẵn, em trên cái skill em chia sẻ cho mọi người có thể tham khảo luôn và mọi người có thể dùng. hoặc từ skill này, mấy bác làm những cái ngách khác, thì mọi người cứ rồi cứ up lên, up với skill lên, xong mọi người bảo con cloud nó học về phân tích, nó chuyển đổi sang ghi ngách đối thủ khác. Nhưng mà mấy bác phải luôn nhớ là mấy bác muốn làm ghi ngách khác, thì mấy bác phải cho con cloud nó thông tin, ví dụ như link kênh, tải video của đối thủ về, nói chung là toàn bộ những cái dữ liệu của kênh đối thủ, mấy bác cho nó học. rồi nó phân tích bóc tắt ra rồi nó mới hẹp theo được ha còn cái cách trên đó thì em đã hướng dẫn rất nhiều video rồi mọi người nhớ xem ha đa số là Khoảng 2600 năm trước, ở thành T, G, A, miền nam Hy Lạp, có một người đàn ông tên là Ly Khát bước vào sân nhà một bác thợ rèn. Ly Khát là người thành Sparta, và ông đang đi tìm một thứ mà cả thành của ông đã tìm suốt nhiều năm chơi. Bác thợ rèn kể cho ông nghe một chuyện lạ. Hồi trước, bác đào giếng ngay giữa cái sân này, đào xuống được một quãng thì lưỡi quốc chạm phải một cái quan tài. Cái quan tài ấy dài hơn 3 mét, tức là dài hơn cả chiếc giường đôi nhà bạn ghép đối tiếp với một chiếc chiếu nữa. Bác không tin có người nào to đến thế, nên mở nắp ra xem. Bên trong là một bộ xương, và bộ xương dài đúng bằng cái quan tài. Bác thợ rèn sợ quá, lấp đất lại, coi như chưa thấy gì, nhưng ly khác thì nghe xong là hiểu ngay. Ngay, ông thuê lại cái sân, đảo bộ xương lên, mang về Ixpacta và tuyên bố rằng đây chính là xương của O, Red Ictet, một người anh hùng thời xa xưa. Người Spactati như vậy, họ trôn cất bộ xương long trọng và tin rằng từ đó thanh của họ sẽ thắng trận. Câu chuyện này không phải mình bịa ra, nó được ông He, Rowe, Dodd, nhà viết sử người Hy Lạp. ghi lại trong bộ sử nổi tiếng của ông và cái chi tiết làm mình để ý nhất không phải là người anh hùng mà là cái phản ứng rất tự nhiên của cả hai người đàn ông kia. Thấy một bộ xương dài hơn 3 mét, không ai nghĩ đó là xương con vật. Ai cũng nghĩ ngay, đây là một con người, một con người khổng lồ. Và bạn biết không, chuyện người khổng lồ đâu chỉ có ở Hy Lạc. Người Bắc Âu kể về một gã khổng lồ tên Ymia, chết đi thì thịt hóa thành đất, xương hóa thành núi. Người Trung Hoa kể về bàn cổ, người đã tách trời khỏi đất. Người Ireland có phim MacGun, gã khổng lồ xây một con đường đá bắc qua biển. Các dân tộc bản địa ở châu Mỹ có những câu chuyện về sinh vật khổng lồ thời xa xưa. Và ngay ở nước mình, có thần trụ trời đắp cột trống trời, có thanh gióng vươn vai thành người cao lớn. Những dân tộc này sống cách nhau hàng vạn cây số, phần lớn họ chưa từng gặp nhau, không đọc sách của nhau, không nghe chuyện của nhau, vậy mà dân tộc nào cũng kể về người khổng lồ. Vì sao vậy? Có 2 cách giải thích bà mình hay nghe nhất. Cách thứ nhất nói rằng, ngày xưa con người to lớn thật, sau này mới nhỏ dần đi. Cách thứ hai nói rằng, các câu chuyện chỉ là truyền tai nhau, dân tộc này nghe của dân tộc kia rồi kể lại. Cả hai cách đều nghe có vẻ hợp lý, nhưng như bạn sẽ thấy, cả hai đều không đứng vững. Câu trả lời thật thì lạ hơn nhiều, nó nằm dưới lòng đất, trong một hiệu thuốc ở Hồng Kông, trên một bờ biển đầy cột đá, trong bộ xương của một chàng trai cao nhất lịch sử. Và một phần câu trả lời nằm ngay gần nhà mình, trong một hang đá vôi ở Lạng Sơn và một ngôi đền bên bờ sông Hồng. Nhưng trước khi đi tìm câu trả lời, mình muốn bạn nhìn vào bàn tay của chính bạn. Hồi nhỏ, chắc nhiều bạn đã thấy bà hoặc mẹ đo vải bằng găng tay. Xoe bàn tay ra, ngón cái một đầu, ngón út một đầu, đặt lên mép vải, rồi đếm. Một găng, hai găng, ba găng. Muốn đo cái gì dài hơn thì dùng sải tay, rang hai tay ra hết cỡ. Muốn đo đường thì đến mức chân. Ông bà mình gọi chiều cao của nước lụt là ngập đến đầu gối, ngập đến thắt lưng. Người Hy Lạp cũng vậy, họ đo bằng khủyểu tay. Người Anh đo bằng bàn chân. Đến giờ vẫn còn gọi một đơn vị đo là food, nghĩa gốc là bàn chân. Từ thỏa xa xưa, cây thước đầu tiên của loài người không làm bằng gỗ hay sắt, nó chính là cơ thể của mình. Và đây là ý chính của cả video này. Khi con người gặp một thứ quá lớn, lớn hơn mọi thứ họ từng biết, họ vẫn đưa cây thước quen thuộc ấy ra để đo. Họ áp găng tay của mình vào một khúc xương, một tảng đá, một ngọn núi. Và khi cây thước ấy không đủ dài, trong đầu họ hiện ra một con người, chỉ có điều là to hơn rất nhiều lần. Người khổng lồ chính là thứ hiện ra khi ta đo cái quá lớn bằng cây thước găng tay.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 4.36,
+      "start_time": "00:00",
+      "end_time": "00:00:04,360",
+      "text": "Em chào tất cả anh chị nha, hôm nay em lại tiếp tục lên video hướng dẫn mọi người làm nha."
+    },
+    {
+      "id": 2,
+      "start": 4.74,
+      "end": 9.22,
+      "start_time": "00:00:04,740",
+      "end_time": "00:00:09,220",
+      "text": "Thì cái ngách vẽ, cái kênh vẽ vời về thị trường Việt này thì hôm trước em có nói mọi người nè,"
+    },
+    {
+      "id": 3,
+      "start": 9.68,
+      "end": 15.9,
+      "start_time": "00:00:09,680",
+      "end_time": "00:00:15,900",
+      "text": "thì kênh này đang bật kiếm tiền, đang hoàn toàn bật kiếm tiền, thì mấy bác có thấy cái chức năng hỏi viên thì mọi người cũng biết mà đúng không?"
+    },
+    {
+      "id": 4,
+      "start": 16.26,
+      "end": 24.02,
+      "start_time": "00:00:16,260",
+      "end_time": "00:00:24,020",
+      "text": "Về cái chỗ này nó cũng có gợi ế số tiền tháng này, tầm 500 đô, thì chắc chắn là cái chỗ này nó tính là không bao giờ chính xác được, kiểu như tương đối thôi mấy bác ạ."
+    },
+    {
+      "id": 5,
+      "start": 24.02,
+      "end": 34.38,
+      "start_time": "00:00:24,020",
+      "end_time": "00:00:34,380",
+      "text": "Nhưng mà nói chung cái thị trường Việt thì mọi người biết rồi. Rồi bộ mờ nó rất là thấp, về mỗi những cái dạng này cũng vậy. Nhưng mà em chứng minh cho mấy bác thấy được rằng là những"
+    },
+    {
+      "id": 6,
+      "start": 34.38,
+      "end": 44.74,
+      "start_time": "00:00:34,380",
+      "end_time": "00:00:44,740",
+      "text": "cái kênh, những cái ngách người que, hoặc hình người que như này thì làm rất là bình thường chứ không phải là như nhiều anh em thấy là cứ bảo take kiếm tiền, mọi người sợ, mọi người không làm."
+    },
+    {
+      "id": 7,
+      "start": 44.74,
+      "end": 57.63,
+      "start_time": "00:00:44,740",
+      "end_time": "00:00:57,630",
+      "text": "Nói chung cái vấn đề mình làm YouTube, những icon mình view lần đầu thì mình mong cho nó có view thôi mọi người hả? Chứ mọi người đừng có tính tới việc kiếm được bao nhiêu tiền hay là kiếm tiền, cách kiếm tiền mọi bác. Mình phải làm mới biết được, vẻ"
+    },
+    {
+      "id": 8,
+      "start": 57.63,
+      "end": 70.52,
+      "start_time": "00:00:57,630",
+      "end_time": "00:01:10,520",
+      "text": "làm mới có kinh nghiệm được nha. Chứ còn mọi bác hay không? Rất là nhiều icon đang bật kiếm tiền và đang kiếm bình thường. Chứ mọi bác cứ nghe người này nói, người kia nói. Nhưng mà mọi bác đã chưa làm, chưa thử thì sao mọi người biết được đúng không?"
+    },
+    {
+      "id": 9,
+      "start": 70.52,
+      "end": 74.08,
+      "start_time": "00:01:10,520",
+      "end_time": "00:01:14,080",
+      "text": "Thì đây em tổng quan về kênh này như vậy."
+    },
+    {
+      "id": 10,
+      "start": 74.56,
+      "end": 76.32,
+      "start_time": "00:01:14,560",
+      "end_time": "00:01:16,320",
+      "text": "Thì kênh này làm từ 3 tháng trước nè."
+    },
+    {
+      "id": 11,
+      "start": 76.6,
+      "end": 82.88,
+      "start_time": "00:01:16,600",
+      "end_time": "00:01:22,880",
+      "text": "Lúc này nó làm là nó đang hót cái ngách này, ngách tiền sử này nó đang hót ở bên thị trường US nè mọi người."
+    },
+    {
+      "id": 12,
+      "start": 82.88,
+      "end": 89.68,
+      "start_time": "00:01:22,880",
+      "end_time": "00:01:29,680",
+      "text": "Mọi người lúc trước em cũng có share trên kênh YouTube em cách đây khá là lâu rồi cũng có cái ngách này nè"
+    },
+    {
+      "id": 13,
+      "start": 89.68,
+      "end": 93.62,
+      "start_time": "00:01:29,680",
+      "end_time": "00:01:33,620",
+      "text": "Nhưng mà ở thiền trường US thì kênh này nó cũng nhân bản về nó làm nè"
+    },
+    {
+      "id": 14,
+      "start": 93.62,
+      "end": 97.68,
+      "start_time": "00:01:33,620",
+      "end_time": "00:01:37,680",
+      "text": "Về đây là cũng một kênh nước ngoài em cho một người thêm tâm khảo thêm"
+    },
+    {
+      "id": 15,
+      "start": 97.68,
+      "end": 100.18,
+      "start_time": "00:01:37,680",
+      "end_time": "00:01:40,180",
+      "text": "Hai tuần trước gần 4 triệu view nè"
+    },
+    {
+      "id": 16,
+      "start": 100.18,
+      "end": 102.0,
+      "start_time": "00:01:40,180",
+      "end_time": "00:01:42,000",
+      "text": "Cũng khá là kinh nha"
+    },
+    {
+      "id": 17,
+      "start": 102.0,
+      "end": 102.616,
+      "start_time": "00:01:42,000",
+      "end_time": "00:01:42,616",
+      "text": "Đấy"
+    },
+    {
+      "id": 18,
+      "start": 102.616,
+      "end": 105.816,
+      "start_time": "00:01:42,616",
+      "end_time": "00:01:45,816",
+      "text": "Nhìn cái thông này nó cũng biết nó nói về cái thời tiền sử nha."
+    },
+    {
+      "id": 19,
+      "start": 106.776,
+      "end": 113.216,
+      "start_time": "00:01:46,776",
+      "end_time": "00:01:53,216",
+      "text": "Thì em cho mọi người thêm tham khảo về kênh này thôi, chứ còn video chính hôm nay là em hướng dẫn mọi người làm thủy trường Việt,"
+    },
+    {
+      "id": 20,
+      "start": 114.0,
+      "end": 122.476,
+      "start_time": "01:54",
+      "end_time": "00:02:02,476",
+      "text": "Về giống như cái kênh vẽ vời này luôn nha. Về cái thumb cũng giống luôn. Đấy, làm real easy luôn. Về trước khi làm thì đương nhiên sẽ có cái phần"
+    },
+    {
+      "id": 21,
+      "start": 122.476,
+      "end": 131.736,
+      "start_time": "00:02:02,476",
+      "end_time": "00:02:11,736",
+      "text": "plugin này, sẽ gồm tất cả các cái skill trong này. Thì em có để ở dưới khung video mô tả. Với bác tải về nha. Mọi người làm thì mọi"
+    },
+    {
+      "id": 22,
+      "start": 131.736,
+      "end": 140.996,
+      "start_time": "00:02:11,736",
+      "end_time": "00:02:20,996",
+      "text": "người tải về. Xong rồi thì em sẽ vào cái con Claude nè. Và em sẽ up em tải cái file bộ plugin đó vào lên nha. Rồi em sẽ vào setting."
+    },
+    {
+      "id": 23,
+      "start": 143.216,
+      "end": 152.056,
+      "start_time": "00:02:23,216",
+      "end_time": "00:02:32,056",
+      "text": "Bấm vào Add và tải lên thôi. Thì cái này bác phải xem video trước, cái video mà bảng WorldHide, cái kia WhatExComware em có up lên rồi"
+    },
+    {
+      "id": 24,
+      "start": 152.056,
+      "end": 160.896,
+      "start_time": "00:02:32,056",
+      "end_time": "00:02:40,896",
+      "text": "á, thì bác sẽ hiểu thôi. Rồi mọi người chọn model là Output 5.5, và cái chỗ này không chắc, thì mọi người chọn là Cowork nha."
+    },
+    {
+      "id": 25,
+      "start": 160.996,
+      "end": 172.436,
+      "start_time": "00:02:40,996",
+      "end_time": "00:02:52,436",
+      "text": "Và cái chỗ này có nhiều phiên bản, có nhiều máy của máy bác tải về, nó không có cái chỗ này, thì máy bác mặc định là cứ đỡ bại về làm thôi. Đấy, tùy theo cái bảng nha. Có nhiều bảng thì nó up sẵn rồi mọi người."
+    },
+    {
+      "id": 26,
+      "start": 172.436,
+      "end": 182.696,
+      "start_time": "00:02:52,436",
+      "end_time": "00:03:02,696",
+      "text": "tiếp tục thì em sẽ add cái folder vào ví dụ như em chưa có folder đúng không em sẽ tạo một cái folder mới nè em đặt tên là ví dụ như tiền sử h2 đi đấy"
+    },
+    {
+      "id": 27,
+      "start": 182.8,
+      "end": 194.59,
+      "start_time": "00:03:02,800",
+      "end_time": "00:03:14,590",
+      "text": "Em tạo 1 folder mới hoàn toàn luôn, rõng luôn nha. Em sẽ import vào. Em chấp nhận nè. Cho phép nè. Rồi, bây giờ thì em sẽ gọi cái skill là viết kịch bản ra."
+    },
+    {
+      "id": 28,
+      "start": 194.59,
+      "end": 206.38,
+      "start_time": "00:03:14,590",
+      "end_time": "00:03:26,380",
+      "text": "Cái skill này thì là nó nèm trong cái brewing ngách tiền sở em vừa upload nè mọi người. Bây giờ thì em tải lên thôi. Rồi, bây giờ em sẽ enter. Chấp nhận nè."
+    },
+    {
+      "id": 29,
+      "start": 206.38,
+      "end": 212.62,
+      "start_time": "00:03:26,380",
+      "end_time": "00:03:32,620",
+      "text": "Và bây giờ em chỉ cần việc ngồi đợi đặt về skill và tạo ra các chủ đề thôi mọi người ạ."
+    },
+    {
+      "id": 30,
+      "start": 213.22,
+      "end": 220.8,
+      "start_time": "00:03:33,220",
+      "end_time": "00:03:40,800",
+      "text": "Cái quy trình làm cái này thì cũng rất là nhanh thôi và rất là giống với cái video hôm trước luôn, video bản vô 2 mấy bác."
+    },
+    {
+      "id": 31,
+      "start": 221.32,
+      "end": 225.16,
+      "start_time": "00:03:41,320",
+      "end_time": "00:03:45,160",
+      "text": "Trong khi chạy thì nó sẽ mở lên một cái trình duyệt và nó sẽ đặt về kênh đối thủ này."
+    },
+    {
+      "id": 32,
+      "start": 225.16,
+      "end": 229.02,
+      "start_time": "00:03:45,160",
+      "end_time": "00:03:49,020",
+      "text": "Nó sẽ lấy tất cả các cái chủ đề, tiêu đề của đối thủ, nó phân tích."
+    },
+    {
+      "id": 33,
+      "start": 229.46,
+      "end": 232.3,
+      "start_time": "00:03:49,460",
+      "end_time": "00:03:52,300",
+      "text": "Vì nó lập chọn lập về những cái nào trend không trend."
+    },
+    {
+      "id": 34,
+      "start": 232.3,
+      "end": 237.82,
+      "start_time": "00:03:52,300",
+      "end_time": "00:03:57,820",
+      "text": "Vì nó loại bỏ những cái mà trùng, vậy nó sẽ trao ra mình những cái chủ đề viral nhắc nha mấy bác."
+    },
+    {
+      "id": 35,
+      "start": 239.06,
+      "end": 242.9,
+      "start_time": "00:03:59,060",
+      "end_time": "00:04:02,900",
+      "text": "Chờ một tí thì nó để trao ra mình cất quẽ nè, em sẽ tắt cái trình duyệt đây nha."
+    },
+    {
+      "id": 36,
+      "start": 243.34,
+      "end": 247.2,
+      "start_time": "00:04:03,340",
+      "end_time": "00:04:07,200",
+      "text": "Em sẽ đặt quẽ là kênh vĩa để phân tích về hôm 1 trên video cơ thủ,"
+    },
+    {
+      "id": 37,
+      "start": 247.38,
+      "end": 250.98,
+      "start_time": "00:04:07,380",
+      "end_time": "00:04:10,980",
+      "text": "vậy nó sẽ trao 1 cái file ở trong thư mục của mình là file đối thủ này,"
+    },
+    {
+      "id": 38,
+      "start": 250.98,
+      "end": 255.78,
+      "start_time": "00:04:10,980",
+      "end_time": "00:04:15,780",
+      "text": "Đối thủ này, có nghĩa là file trong này á, nó sẽ gồm tất cả các cái chủ đề mà đối thủ đã làm rồi."
+    },
+    {
+      "id": 39,
+      "start": 256.16,
+      "end": 263.26,
+      "start_time": "00:04:16,160",
+      "end_time": "00:04:23,260",
+      "text": "Thì sau này bác là nhận làm những cái video sau á, mọi người gọi secure và nó cũng có sẵn dữ liệu luôn rồi, nó không cần phải tốt thời gian đọc nữa nha."
+    },
+    {
+      "id": 40,
+      "start": 263.696,
+      "end": 264.576,
+      "start_time": "00:04:23,696",
+      "end_time": "00:04:24,576",
+      "text": "Lọc nữa mọi người ạ."
+    },
+    {
+      "id": 41,
+      "start": 265.076,
+      "end": 269.276,
+      "start_time": "00:04:25,076",
+      "end_time": "00:04:29,276",
+      "text": "Về đây là một số cái chủ đề tiêu đề mà nó gửi cho mình nè, gửi cho em nè."
+    },
+    {
+      "id": 42,
+      "start": 269.756,
+      "end": 274.016,
+      "start_time": "00:04:29,756",
+      "end_time": "00:04:34,016",
+      "text": "Mình có thể đọc về đúng với cái ngách thị trường Việt Nam luôn nha."
+    },
+    {
+      "id": 43,
+      "start": 274.196,
+      "end": 275.536,
+      "start_time": "00:04:34,196",
+      "end_time": "00:04:35,536",
+      "text": "Đúng là con người Việt Nam luôn nè."
+    },
+    {
+      "id": 44,
+      "start": 275.936,
+      "end": 278.576,
+      "start_time": "00:04:35,936",
+      "end_time": "00:04:38,576",
+      "text": "Về những cái bi sao này có nghĩa là nó khiến người mình nên làm."
+    },
+    {
+      "id": 45,
+      "start": 278.576,
+      "end": 281.916,
+      "start_time": "00:04:38,576",
+      "end_time": "00:04:41,916",
+      "text": "Còn những cái 2 sao này thì ưu tiên không ưu tiên nha."
+    },
+    {
+      "id": 46,
+      "start": 281.916,
+      "end": 288.416,
+      "start_time": "00:04:41,916",
+      "end_time": "00:04:48,416",
+      "text": "Đấy, nên là bây giờ em sẽ chọn một cái và em sẽ gõ lại cái skill và em sẽ chạy nha mọi người."
+    },
+    {
+      "id": 47,
+      "start": 289.076,
+      "end": 290.136,
+      "start_time": "00:04:49,076",
+      "end_time": "00:04:50,136",
+      "text": "Rất là đơn giản thôi nha."
+    },
+    {
+      "id": 48,
+      "start": 290.316,
+      "end": 295.496,
+      "start_time": "00:04:50,316",
+      "end_time": "00:04:55,496",
+      "text": "Bây giờ thì giả sử như em sẽ chọn cái chủ đề thứ nhất này đây, chủ đề 1 này là"
+    },
+    {
+      "id": 49,
+      "start": 295.496,
+      "end": 298.536,
+      "start_time": "00:04:55,496",
+      "end_time": "00:04:58,536",
+      "text": "Vì sao nhân tộc nào cũng có trưởng người khổng lồ nè."
+    },
+    {
+      "id": 50,
+      "start": 298.696,
+      "end": 300.516,
+      "start_time": "00:04:58,696",
+      "end_time": "00:05:00,516",
+      "text": "Rồi, em sẽ copy cái tiêu đề này nha."
+    },
+    {
+      "id": 51,
+      "start": 301.236,
+      "end": 305.176,
+      "start_time": "00:05:01,236",
+      "end_time": "00:05:05,176",
+      "text": "Về xuống dưới em sẽ gọi skill ra và em sẽ dán cái chủ đề vào."
+    },
+    {
+      "id": 52,
+      "start": 305.596,
+      "end": 309.816,
+      "start_time": "00:05:05,596",
+      "end_time": "00:05:09,816",
+      "text": "Thì thực tế là bác bác chỉ cần dán cái chủ đề thôi cũng được, không cần gọi skill đâu."
+    },
+    {
+      "id": 53,
+      "start": 309.816,
+      "end": 316.576,
+      "start_time": "00:05:09,816",
+      "end_time": "00:05:16,576",
+      "text": "Bởi vì ở trên mình đã gọi rồi nó tự hiểu nha. Đây là làm hướng dẫn demo nên là em làm chi tiết cho mọi người rõ luôn."
+    },
+    {
+      "id": 54,
+      "start": 317.216,
+      "end": 322.296,
+      "start_time": "00:05:17,216",
+      "end_time": "00:05:22,296",
+      "text": "Về bây giờ thì em sẽ đợi nó gen ra những cái file kịch bản, file tạo voice, tạo hình ảnh nha."
+    },
+    {
+      "id": 55,
+      "start": 322.956,
+      "end": 326.276,
+      "start_time": "00:05:22,956",
+      "end_time": "00:05:26,276",
+      "text": "Đối với cái dạng ngách này thì chắc chắn là chỉ có một dạng thôi."
+    },
+    {
+      "id": 56,
+      "start": 326.276,
+      "end": 332.156,
+      "start_time": "00:05:26,276",
+      "end_time": "00:05:32,156",
+      "text": "Đây em trai bác nghe qua kênh đối thủ chứ không phải là cái dạng hội thoại như cái ngách hôm trước em chia sẻ đâu."
+    },
+    {
+      "id": 57,
+      "start": 332.8,
+      "end": 335.88,
+      "start_time": "00:05:32,800",
+      "end_time": "00:05:35,880",
+      "text": "Hơn nhiều, vì nó trả lời luôn câu hỏi người Việt đầu tiên đến từ đâu."
+    },
+    {
+      "id": 58,
+      "start": 336.28,
+      "end": 340.34,
+      "start_time": "00:05:36,280",
+      "end_time": "00:05:40,340",
+      "text": "Theo một cách mà mình cá là ít ai nghĩ tới, bạn thử hình dung một nồi nước dùng phở nhé."
+    },
+    {
+      "id": 59,
+      "start": 340.76,
+      "end": 342.44,
+      "start_time": "00:05:40,760",
+      "end_time": "00:05:42,440",
+      "text": "Nồi nào ngon thì chẳng bao giờ nấu trong 10 phút."
+    },
+    {
+      "id": 60,
+      "start": 342.92,
+      "end": 345.52,
+      "start_time": "00:05:42,920",
+      "end_time": "00:05:45,520",
+      "text": "Người ta thả xương vào từ tối hôm trước ninh lửa lưu diu suốt đêm."
+    },
+    {
+      "id": 61,
+      "start": 345.92,
+      "end": 348.38,
+      "start_time": "00:05:45,920",
+      "end_time": "00:05:48,380",
+      "text": "Gần sáng mới cho thêm hành nướng, gừng nướng, quế với hồi."
+    },
+    {
+      "id": 62,
+      "start": 348.84,
+      "end": 351.8,
+      "start_time": "00:05:48,840",
+      "end_time": "00:05:51,800",
+      "text": "Cứ mỗi lượt lại thêm một thứ mà chẳng thứ nào bị vớt ra đổ đi."
+    },
+    {
+      "id": 63,
+      "start": 352.22,
+      "end": 355.98,
+      "start_time": "00:05:52,220",
+      "end_time": "00:05:55,980",
+      "text": "Nên tới 7 giờ sáng, bát nước dùng bạn húp là vị của tất cả các lượt ấy cộng lại."
+    },
+    {
+      "id": 64,
+      "start": 355.98,
+      "end": 365.52,
+      "start_time": "00:05:55,980",
+      "end_time": "00:06:05,520",
+      "text": "Bạn không thể múc một buỗng lên rồi chỉ mỗi đợt mang theo một thứ, thả vào nồi rồi ở lại luôn. Đợt thì mang theo hòn đá cuội, đợt mang hạt lúa, đợt lại mang con thuyền. Còn đợt"
+    },
+    {
+      "id": 65,
+      "start": 365.52,
+      "end": 375.06,
+      "start_time": "00:06:05,520",
+      "end_time": "00:06:15,060",
+      "text": "cuội là hòn đá cuội trước. Nhưng rồi các vị bác bộ, đá dùng làm bàn mài. Người bác nghe qua cái giọng đật rất là hay. Và cái giọng này chắc chắn là họ dùng clone giọng nha."
+    },
+    {
+      "id": 66,
+      "start": 375.06,
+      "end": 383.92,
+      "start_time": "00:06:15,060",
+      "end_time": "00:06:23,920",
+      "text": "Họ dùng clone ấy, chứ không phải dọn từ các cái web như Vobi hay E-Lab đâu. Cái dọn này thì chắc chắn là em nghĩ là sẽ clone."
+    },
+    {
+      "id": 67,
+      "start": 384.32,
+      "end": 391.92,
+      "start_time": "00:06:24,320",
+      "end_time": "00:06:31,920",
+      "text": "Tới nữa em sẽ làm giống 100% như cái kênh này luôn cho bác tham khảo ha. Nói chung clone này kia thì clone dọn thì bác cũng biết hết rồi."
+    },
+    {
+      "id": 68,
+      "start": 392.46,
+      "end": 396.38,
+      "start_time": "00:06:32,460",
+      "end_time": "00:06:36,380",
+      "text": "Còn bây giờ thì chủ yếu là cái quy tình cho con clone nó edit thôi mọi người ạ."
+    },
+    {
+      "id": 69,
+      "start": 396.38,
+      "end": 404.64,
+      "start_time": "00:06:36,380",
+      "end_time": "00:06:44,640",
+      "text": "Một bộ phim này đã tạo ra cho em những file tài nghiêng cần thiết rồi."
+    },
+    {
+      "id": 70,
+      "start": 404.64,
+      "end": 407.08,
+      "start_time": "00:06:44,640",
+      "end_time": "00:06:47,080",
+      "text": "Bây giờ em sẽ sớt lại cho bác."
+    },
+    {
+      "id": 71,
+      "start": 407.22,
+      "end": 410.6,
+      "start_time": "00:06:47,220",
+      "end_time": "00:06:50,600",
+      "text": "Nó thông báo là mình để làm xong mạch định."
+    },
+    {
+      "id": 72,
+      "start": 411.1,
+      "end": 412.74,
+      "start_time": "00:06:51,100",
+      "end_time": "00:06:52,740",
+      "text": "Video này khoảng 22 phút."
+    },
+    {
+      "id": 73,
+      "start": 413.26,
+      "end": 414.68,
+      "start_time": "00:06:53,260",
+      "end_time": "00:06:54,680",
+      "text": "Mật độ ảnh AI vừa."
+    },
+    {
+      "id": 74,
+      "start": 414.98,
+      "end": 416.38,
+      "start_time": "00:06:54,980",
+      "end_time": "00:06:56,380",
+      "text": "Void tách đoạn bài."
+    },
+    {
+      "id": 75,
+      "start": 416.38,
+      "end": 418.18,
+      "start_time": "00:06:56,380",
+      "end_time": "00:06:58,180",
+      "text": "bằng dấu gạch thẳng"
+    },
+    {
+      "id": 76,
+      "start": 418.18,
+      "end": 419.82,
+      "start_time": "00:06:58,180",
+      "end_time": "00:06:59,820",
+      "text": "thì chỗ dấu gạch thẳng như nào"
+    },
+    {
+      "id": 77,
+      "start": 420.0,
+      "end": 421.82,
+      "start_time": "07:00",
+      "end_time": "00:07:01,820",
+      "text": "tí nữa đi vào chi tiết em sẽ"
+    },
+    {
+      "id": 78,
+      "start": 421.82,
+      "end": 423.88,
+      "start_time": "00:07:01,820",
+      "end_time": "00:07:03,880",
+      "text": "nói chi tiết cho mọi người rõ rõ nha"
+    },
+    {
+      "id": 79,
+      "start": 423.88,
+      "end": 425.38,
+      "start_time": "00:07:03,880",
+      "end_time": "00:07:05,380",
+      "text": "còn ở dưới này thì nó phân tích"
+    },
+    {
+      "id": 80,
+      "start": 425.38,
+      "end": 426.38,
+      "start_time": "00:07:05,380",
+      "end_time": "00:07:06,380",
+      "text": "quen lại thôi"
+    },
+    {
+      "id": 81,
+      "start": 426.38,
+      "end": 428.78,
+      "start_time": "00:07:06,380",
+      "end_time": "00:07:08,780",
+      "text": "đây nó tự sinh cho em một cái bộ đồ sách"
+    },
+    {
+      "id": 82,
+      "start": 428.78,
+      "end": 430.88,
+      "start_time": "00:07:08,780",
+      "end_time": "00:07:10,880",
+      "text": "và trong bộ đồ sách đó có cái bộ đồ"
+    },
+    {
+      "id": 83,
+      "start": 430.88,
+      "end": 432.14,
+      "start_time": "00:07:10,880",
+      "end_time": "00:07:12,140",
+      "text": "có một cái thư 101"
+    },
+    {
+      "id": 84,
+      "start": 432.14,
+      "end": 432.881,
+      "start_time": "00:07:12,140",
+      "end_time": "00:07:12,881",
+      "text": "tên chủ đề này nè"
+    },
+    {
+      "id": 85,
+      "start": 432.881,
+      "end": 441.121,
+      "start_time": "00:07:12,881",
+      "end_time": "00:07:21,121",
+      "text": "Vì sau này mọi người ví dụ làm những tập tiếp theo thì nó sẽ tạo ra ví dụ thư mục 0203 thôi để đặt tên theo đúng với chủ đề mọi người làm."
+    },
+    {
+      "id": 86,
+      "start": 441.741,
+      "end": 448.401,
+      "start_time": "00:07:21,741",
+      "end_time": "00:07:28,401",
+      "text": "Bây giờ thì em sẽ xem thử qua cái file kịch bản nha. Đây là file full kịch bản của video này."
+    },
+    {
+      "id": 87,
+      "start": 449.081,
+      "end": 451.621,
+      "start_time": "00:07:29,081",
+      "end_time": "00:07:31,621",
+      "text": "File này để mình đọc tham khảo ra thôi mấy bác ạ."
+    },
+    {
+      "id": 88,
+      "start": 451.981,
+      "end": 455.501,
+      "start_time": "00:07:31,981",
+      "end_time": "00:07:35,501",
+      "text": "Tiếp theo cái file này là để mình đi tạo dòng đọc, tạo voice ha."
+    },
+    {
+      "id": 89,
+      "start": 456.181,
+      "end": 458.621,
+      "start_time": "00:07:36,181",
+      "end_time": "00:07:38,621",
+      "text": "Bây giờ thì em cũng sẽ mở xem luôn."
+    },
+    {
+      "id": 90,
+      "start": 458.621,
+      "end": 466.741,
+      "start_time": "00:07:38,621",
+      "end_time": "00:07:46,741",
+      "text": "Về ở mọi người đời nè, cái file này mình đi tạo dòng đặc là em đã tiên sẵn cho nó ở mỗi cuối câu, mỗi cuối dòng"
+    },
+    {
+      "id": 91,
+      "start": 466.741,
+      "end": 474.861,
+      "start_time": "00:07:46,741",
+      "end_time": "00:07:54,861",
+      "text": "á, thì có một cái dấu ký tự gạch thẳng nè, thì tí nữa để đi tạo voice thì em sẽ giải thích chi tiết hơn rồi đó nha."
+    },
+    {
+      "id": 92,
+      "start": 475.441,
+      "end": 480.781,
+      "start_time": "00:07:55,441",
+      "end_time": "00:08:00,781",
+      "text": "Tiếp theo là một cái file 04, cái file này là file cũng quan trọng là để đi tạo ảnh nha mọi người."
+    },
+    {
+      "id": 93,
+      "start": 480.781,
+      "end": 484.961,
+      "start_time": "00:08:00,781",
+      "end_time": "00:08:04,961",
+      "text": "Đây là một cái file gồm tắt các cái forum mà tạo ảnh cần thiết nhất."
+    },
+    {
+      "id": 94,
+      "start": 485.381,
+      "end": 485.65,
+      "start_time": "00:08:05,381",
+      "end_time": "00:08:05,650",
+      "text": "Đấy."
+    },
+    {
+      "id": 95,
+      "start": 485.65,
+      "end": 492.91,
+      "start_time": "00:08:05,650",
+      "end_time": "00:08:12,910",
+      "text": "Bởi vì đây là cái ngách rất là cần thiết cho vừa tạo AI và vừa đỡ cho con Claude này nó code, nó"
+    },
+    {
+      "id": 96,
+      "start": 492.91,
+      "end": 500.17,
+      "start_time": "00:08:12,910",
+      "end_time": "00:08:20,170",
+      "text": "vỉa nha, vừa kết hợp nó code, nó vẽ và vừa mình cung cấp hình ảnh AI thêm cho nó edit nữa nha mấy bác."
+    },
+    {
+      "id": 97,
+      "start": 500.45,
+      "end": 509.31,
+      "start_time": "00:08:20,450",
+      "end_time": "00:08:29,310",
+      "text": "Chứ không phải là cái ngách này nó tự động edit hết đâu, đó là lý do tại sao mà cái video, cái ngách hôm trước em làm ra 2 bản về em trao mấy bác."
+    },
+    {
+      "id": 98,
+      "start": 509.31,
+      "end": 514.83,
+      "start_time": "00:08:29,310",
+      "end_time": "00:08:34,830",
+      "text": "Cái bản đầu tiên là cách làm thù công kiểu như đúng cây chay luôn á, để mọi người hiểu được cái quy tình nó như nào."
+    },
+    {
+      "id": 99,
+      "start": 515.21,
+      "end": 520.91,
+      "start_time": "00:08:35,210",
+      "end_time": "00:08:40,910",
+      "text": "Về đối với cái app, cái ngách video hôm nay nè, thì em sẽ áp dụng kết hợp kẻ hai đó lại với nhau."
+    },
+    {
+      "id": 100,
+      "start": 521.33,
+      "end": 523.89,
+      "start_time": "00:08:41,330",
+      "end_time": "00:08:43,890",
+      "text": "Thì bác sẽ thấy được video nó rất là chất lượng."
+    },
+    {
+      "id": 101,
+      "start": 524.33,
+      "end": 531.55,
+      "start_time": "00:08:44,330",
+      "end_time": "00:08:51,550",
+      "text": "Chứ không phải ngách nào mình cũng đi làm tự động như thế thì nhiều cái chỗ đoạn, nhiều ngách, nhiều nhân vật, nhiều cảnh á,"
+    },
+    {
+      "id": 102,
+      "start": 531.93,
+      "end": 533.89,
+      "start_time": "00:08:51,930",
+      "end_time": "00:08:53,890",
+      "text": "nó đâu tự vỉ được đâu mọi người."
+    },
+    {
+      "id": 103,
+      "start": 533.89,
+      "end": 537.99,
+      "start_time": "00:08:53,890",
+      "end_time": "00:08:57,990",
+      "text": "Nên là mình phải kết hợp với ảnh AI mình tạo ra nữa nha."
+    },
+    {
+      "id": 104,
+      "start": 537.99,
+      "end": 545.04,
+      "start_time": "00:08:57,990",
+      "end_time": "00:09:05,040",
+      "text": "Nó trao mình cái from rồi mình đi tạo ảnh AI mình lưu về. Nó kết hợp lại với nhau thôi. Nhưng mà chắc chắn là những cái from này thì"
+    },
+    {
+      "id": 105,
+      "start": 545.04,
+      "end": 552.09,
+      "start_time": "00:09:05,040",
+      "end_time": "00:09:12,090",
+      "text": "rất là dễ làm và đơn giản thôi. Mình chỉ công việc đi copy cái from đó, mình bỏ lên con flow để nó gen ra ảnh thôi hả bác ạ?"
+    },
+    {
+      "id": 106,
+      "start": 552.09,
+      "end": 556.45,
+      "start_time": "00:09:12,090",
+      "end_time": "00:09:16,450",
+      "text": "nhé! Quan trọng là mình phải có dữ liệu thêm để cho nó edit, chuẩn chỉ và chất lượng nhất."
+    },
+    {
+      "id": 107,
+      "start": 556.45,
+      "end": 564.07,
+      "start_time": "00:09:16,450",
+      "end_time": "00:09:24,070",
+      "text": "Chắc lượng nhất, em hướng đến mọi người phải làm như vậy, chứ không phải là mình cứ đưa hết chai ai nó tự động, ghen tự động làm."
+    },
+    {
+      "id": 108,
+      "start": 564.49,
+      "end": 570.47,
+      "start_time": "00:09:24,490",
+      "end_time": "00:09:30,470",
+      "text": "Thì như vậy, re nhiều cái ngách nó không có re gì kìa, video rất là không có chắc lượng vào, không giống đối thủ đâu mọi người."
+    },
+    {
+      "id": 109,
+      "start": 571.59,
+      "end": 576.45,
+      "start_time": "00:09:31,590",
+      "end_time": "00:09:36,450",
+      "text": "Đó là lý do tại sao em hướng dẫn em nói rất rất là nhiều thứ như vậy."
+    },
+    {
+      "id": 110,
+      "start": 576.45,
+      "end": 580.841,
+      "start_time": "00:09:36,450",
+      "end_time": "00:09:40,841",
+      "text": "Mấy bác thông cảm nha, em nói hơi nhiều, nói lại cho mấy bác phải rõ."
+    },
+    {
+      "id": 111,
+      "start": 580.841,
+      "end": 591.841,
+      "start_time": "00:09:40,841",
+      "end_time": "00:09:51,841",
+      "text": "rồi ok bây giờ thì bước tiếp theo thì nó hướng dẫn em là nó kêu em là đi tạo void và đi tạo hình ảnh nè và có cái cái from thâm nữa nha. Nói chung tới phần nào thì em nói phần"
+    },
+    {
+      "id": 112,
+      "start": 591.841,
+      "end": 602.841,
+      "start_time": "00:09:51,841",
+      "end_time": "00:10:02,841",
+      "text": "đó thôi. Và bây giờ thì mình có thể đi tạo giọng đọc trước hay là tạo ảnh trước vẫn được thì em sẽ đi tạo giọng đọc trước luôn nha. Cái nào trước cũng được không quan trọng đâu mấy bác ạ."
+    },
+    {
+      "id": 113,
+      "start": 602.841,
+      "end": 614.001,
+      "start_time": "00:10:02,841",
+      "end_time": "00:10:14,001",
+      "text": "Thì cái video này, cái giãn ngách này tầm khoảng trung bình là 22 phút. Đây, em trai bác sĩ em cơ đối thủ này, toàn là trên 20 phút thôi, và trung bình là khoảng tầm 22-23 phút."
+    },
+    {
+      "id": 114,
+      "start": 614.421,
+      "end": 620.321,
+      "start_time": "00:10:14,421",
+      "end_time": "00:10:20,321",
+      "text": "Thì đối với cái kịch bản vừa rồi nó trai ra cũng vậy, nên là hiện tại em đang quay cái video demo cho mọi người thôi."
+    },
+    {
+      "id": 115,
+      "start": 620.781,
+      "end": 624.521,
+      "start_time": "00:10:20,781",
+      "end_time": "00:10:24,521",
+      "text": "Nên là bây giờ em làm hết 22 phút thì không biết tới khi nào mà xong luôn."
+    },
+    {
+      "id": 116,
+      "start": 624.781,
+      "end": 630.521,
+      "start_time": "00:10:24,781",
+      "end_time": "00:10:30,521",
+      "text": "Nên là bây giờ em sẽ yêu cầu nó nè, tạo lại cho em thêm một cái project demo."
+    },
+    {
+      "id": 117,
+      "start": 630.521,
+      "end": 637.381,
+      "start_time": "00:10:30,521",
+      "end_time": "00:10:37,381",
+      "text": "Đúng với chủ đề này luôn nha mọi người, nhưng mà chỉ tầm là 2 đến 3 phút thôi, để em làm demo cho bác thấy được thôi."
+    },
+    {
+      "id": 118,
+      "start": 637.821,
+      "end": 642.761,
+      "start_time": "00:10:37,821",
+      "end_time": "00:10:42,761",
+      "text": "Chứ bây giờ mà em làm hết 22 phút như ngay kịch bản luôn thì thực sự không có thời gian đâu mọi người."
+    },
+    {
+      "id": 119,
+      "start": 643.201,
+      "end": 645.601,
+      "start_time": "00:10:43,201",
+      "end_time": "00:10:45,601",
+      "text": "Đấy, đợi nó ghi in real video rất rất là lâu."
+    },
+    {
+      "id": 120,
+      "start": 646.0,
+      "end": 652.22,
+      "start_time": "00:10:46,000",
+      "end_time": "00:10:52,220",
+      "text": "Máy bác thấy cái video hôm trước em ghen cả xấu 7 phút mà phải chờ hơn gần 2 tiếng đồng hồ luôn. Đấy."
+    },
+    {
+      "id": 121,
+      "start": 653.1,
+      "end": 660.2,
+      "start_time": "00:10:53,100",
+      "end_time": "00:11:00,200",
+      "text": "Đó là mọi người nhờ AI nó edict á thì mọi người cũng chịu khó là đợi thời gian nó ghen thôi nha. Mình làm việc khác thôi mọi người."
+    },
+    {
+      "id": 122,
+      "start": 660.92,
+      "end": 670.4,
+      "start_time": "00:11:00,920",
+      "end_time": "00:11:10,400",
+      "text": "Bây giờ thì nó đã tạo ra cho em nè. Cái bản này là bản demo em làm để cho bác xem. Chứ không phải là nó tóm tắt đâu nha. Cái bản này vẫn rất là chất lượng."
+    },
+    {
+      "id": 123,
+      "start": 670.4,
+      "end": 684.02,
+      "start_time": "00:11:10,400",
+      "end_time": "00:11:24,020",
+      "text": "Nói chung là để làm tới là mái bác sĩ thấy được thôi. Đây, bây giờ thì nó để xin để cho em một cái thư mục demo. Bây giờ trong này nó cũng gồm là bảng nè, đỡ đi tạo vô nè, nó rút vọn lại nè."
+    },
+    {
+      "id": 124,
+      "start": 684.96,
+      "end": 693.12,
+      "start_time": "00:11:24,960",
+      "end_time": "00:11:33,120",
+      "text": "Tiếp theo cái file này là cái file hướng dẫn, cái thư mục, cái file này hướng dẫn để mình ghen thôi, chứ không có quan trọng đâu."
+    },
+    {
+      "id": 125,
+      "start": 693.12,
+      "end": 704.92,
+      "start_time": "00:11:33,120",
+      "end_time": "00:11:44,920",
+      "text": "Hai cái file quan trọng là cái file âm thanh để im bọt vào tạm thanh nè. Với cái file 04 là Chrome tạo hình ảnh. Thì tới nữa tới cái đó em sẽ nói sau. Quan trọng hai cái file đó thôi nha bác. Thì"
+    },
+    {
+      "id": 126,
+      "start": 704.92,
+      "end": 716.72,
+      "start_time": "00:11:44,920",
+      "end_time": "00:11:56,720",
+      "text": "bây giờ thì em sẽ đi tạo giọng đặc nha. Và như lúc nãy em nói em sẽ làm giống như cái giọng đặc của con đối thủ này luôn. Em sẽ dùng clone nha mọi người. Thì em sẽ nghe lại cho bác nghe lại nha."
+    },
+    {
+      "id": 127,
+      "start": 716.72,
+      "end": 723.88,
+      "start_time": "00:11:56,720",
+      "end_time": "00:12:03,880",
+      "text": "Bạn đang xếp hàng chờ lấy máu xét nghiệm. Căn phòng hơi lạnh, thoang thoảng mùi cồn sát trùng. Người xếp ngay trước bạn vừa được gọi tên đã ngồi xuống ghế."
+    },
+    {
+      "id": 128,
+      "start": 724.0,
+      "end": 730.04,
+      "start_time": "12:04",
+      "end_time": "00:12:10,040",
+      "text": "Cái kênh này thì hãnh cũng dùng, hãnh cũng clone lại những cái kênh của người khác thôi."
+    },
+    {
+      "id": 129,
+      "start": 730.04,
+      "end": 732.08,
+      "start_time": "00:12:10,040",
+      "end_time": "00:12:12,080",
+      "text": "Người khác làm ngách khác thôi mấy bác ạ."
+    },
+    {
+      "id": 130,
+      "start": 732.08,
+      "end": 736.72,
+      "start_time": "00:12:12,080",
+      "end_time": "00:12:16,720",
+      "text": "Rồi em sẽ mở cái tool clone của em lên. Thì hiện tại là em để clone xong rồi."
+    },
+    {
+      "id": 131,
+      "start": 736.72,
+      "end": 739.66,
+      "start_time": "00:12:16,720",
+      "end_time": "00:12:19,660",
+      "text": "bây giờ thì em sẽ"
+    },
+    {
+      "id": 132,
+      "start": 739.66,
+      "end": 742.66,
+      "start_time": "00:12:19,660",
+      "end_time": "00:12:22,660",
+      "text": "vào và em sẽ import kịch bản lên"
+    },
+    {
+      "id": 133,
+      "start": 742.66,
+      "end": 744.66,
+      "start_time": "00:12:22,660",
+      "end_time": "00:12:24,660",
+      "text": "những cái tool"
+    },
+    {
+      "id": 134,
+      "start": 744.66,
+      "end": 747.66,
+      "start_time": "00:12:24,660",
+      "end_time": "00:12:27,660",
+      "text": "và Elevn Lab này thì mọi người đều biết hết rồi"
+    },
+    {
+      "id": 135,
+      "start": 747.66,
+      "end": 749.441,
+      "start_time": "00:12:27,660",
+      "end_time": "00:12:29,441",
+      "text": "nên em không có giới thiệu nhiều nha"
+    },
+    {
+      "id": 136,
+      "start": 749.441,
+      "end": 757.301,
+      "start_time": "00:12:29,441",
+      "end_time": "00:12:37,301",
+      "text": "Bây giờ em sẽ giải thích lại luôn, ở cái chỗ này ở cuối mỗi dòng, mỗi câu nó có một cái dấu ký tự gạch đứng nè."
+    },
+    {
+      "id": 137,
+      "start": 757.721,
+      "end": 763.361,
+      "start_time": "00:12:37,721",
+      "end_time": "00:12:43,361",
+      "text": "Thì có nghĩa là em làm như vậy để cho nó tự tách ra mỗi dòng một ô khi mà gain."
+    },
+    {
+      "id": 138,
+      "start": 763.681,
+      "end": 767.821,
+      "start_time": "00:12:43,681",
+      "end_time": "00:12:47,821",
+      "text": "Khi gain xong rồi thì là mỗi dòng này nó tạo ra một file âm thanh riêng."
+    },
+    {
+      "id": 139,
+      "start": 768.161,
+      "end": 772.861,
+      "start_time": "00:12:48,161",
+      "end_time": "00:12:52,861",
+      "text": "Nó tách ra mọi người để cho con con lót đẹp về nó edit dở cho hàng hơn."
+    },
+    {
+      "id": 140,
+      "start": 773.141,
+      "end": 778.721,
+      "start_time": "00:12:53,141",
+      "end_time": "00:12:58,721",
+      "text": "Đó là lý do tại sao em đang dùng chức năng là Auto Sublip ở trên Contour em nè."
+    },
+    {
+      "id": 141,
+      "start": 778.721,
+      "end": 784.201,
+      "start_time": "00:12:58,721",
+      "end_time": "00:13:04,201",
+      "text": "Em đặt ở trong cái ô đó là cái tự dấu thẳng, dấu thẳng đứng."
+    },
+    {
+      "id": 142,
+      "start": 784.821,
+      "end": 795.341,
+      "start_time": "00:13:04,821",
+      "end_time": "00:13:15,341",
+      "text": "Vậy em tích vào ô EltoSupply, và trong cái file kịch bản thì ở mỗi cuối dòng em muốn tách nó ra, thì em sẽ đặt vào cái dấu ký tự dấu gạch thẳng đó ở cuối dòng thôi."
+    },
+    {
+      "id": 143,
+      "start": 796.021,
+      "end": 797.801,
+      "start_time": "00:13:16,021",
+      "end_time": "00:13:17,801",
+      "text": "Đơn giản vậy thôi, phải bác hiểu chứ đúng không?"
+    },
+    {
+      "id": 144,
+      "start": 798.521,
+      "end": 802.241,
+      "start_time": "00:13:18,521",
+      "end_time": "00:13:22,241",
+      "text": "Em giải thích hơi dài dòng nhưng mà chắc chắn là mọi người nhìn là mọi người sẽ hiểu thôi."
+    },
+    {
+      "id": 145,
+      "start": 802.85,
+      "end": 811.85,
+      "start_time": "00:13:22,850",
+      "end_time": "00:13:31,850",
+      "text": "Bây giờ thì em sẽ gen ra nha. Để như vậy thì nó sẽ tạo ra nhiều cái nó sẽ tắt ra mỗi dòng một cái file mắt thanh riêng."
+    },
+    {
+      "id": 146,
+      "start": 811.85,
+      "end": 823.35,
+      "start_time": "00:13:31,850",
+      "end_time": "00:13:43,350",
+      "text": "Edit, edit, edit nó sẽ dở dàng hơn mọi người ạ. Đối với mấy bác này dùng một cái file gọp lại một file dài thì mọi người bỏ vào con clip nó edit vẫn được nha."
+    },
+    {
+      "id": 147,
+      "start": 823.35,
+      "end": 831.99,
+      "start_time": "00:13:43,350",
+      "end_time": "00:13:51,990",
+      "text": "Cái này thì em trend rồi nhưng mà để mà dở dàng ok cho nó chuẩn nhất thì nên tắt ra, nên tắt ra như em này sẽ ok hơn nha mọi người."
+    },
+    {
+      "id": 148,
+      "start": 832.85,
+      "end": 838.81,
+      "start_time": "00:13:52,850",
+      "end_time": "00:13:58,810",
+      "text": "Chưa vậy thì em để ghi nè xong rồi, em sẽ cho mọi người nghe về một đoạn của một cái file 01 ha."
+    },
+    {
+      "id": 149,
+      "start": 841.29,
+      "end": 850.69,
+      "start_time": "00:14:01,290",
+      "end_time": "00:14:10,690",
+      "text": "Khoảng 2.600 năm trước, ở thành T, G, A, miền Nam Hy Lạp, có một người đàn ông tên là Ly Khát bước vào sân nhà một bác thợ rèn. Ly Khát là người thành Sparta."
+    },
+    {
+      "id": 150,
+      "start": 850.69,
+      "end": 857.43,
+      "start_time": "00:14:10,690",
+      "end_time": "00:14:17,430",
+      "text": "Cái chắc giọng và giọng đẹp thì rất giống đối thủ mình còn lo cái này không bàn tới nữa."
+    },
+    {
+      "id": 151,
+      "start": 857.85,
+      "end": 859.45,
+      "start_time": "00:14:17,850",
+      "end_time": "00:14:19,450",
+      "text": "Nhưng có vấn đề là..."
+    },
+    {
+      "id": 152,
+      "start": 859.45,
+      "end": 862.75,
+      "start_time": "00:14:19,450",
+      "end_time": "00:14:22,750",
+      "text": "Thôi thật, cái chỗ thu mục này em sẽ đặt là thu mục void nha, cho nó gọn lại."
+    },
+    {
+      "id": 153,
+      "start": 863.17,
+      "end": 865.29,
+      "start_time": "00:14:23,170",
+      "end_time": "00:14:25,290",
+      "text": "Có vấn đề là những cái từ khóa tiếng Anh á."
+    },
+    {
+      "id": 154,
+      "start": 865.65,
+      "end": 868.45,
+      "start_time": "00:14:25,650",
+      "end_time": "00:14:28,450",
+      "text": "Thì nó hơi đẹp và bị chạm do là em có cái dấu gạch nữa."
+    },
+    {
+      "id": 155,
+      "start": 868.87,
+      "end": 870.69,
+      "start_time": "00:14:28,870",
+      "end_time": "00:14:30,690",
+      "text": "Thì cái này thì mình có thể tự chỉnh nó đẹp."
+    },
+    {
+      "id": 156,
+      "start": 870.69,
+      "end": 872.99,
+      "start_time": "00:14:30,690",
+      "end_time": "00:14:32,990",
+      "text": "Trong kịch bản nha, tí nãy em nói sau nha mấy bác"
+    },
+    {
+      "id": 157,
+      "start": 873.25,
+      "end": 876.83,
+      "start_time": "00:14:33,250",
+      "end_time": "00:14:36,830",
+      "text": "Rồi tiếp theo sau khi tạo void rồi thì em sẽ mở cái file 04"
+    },
+    {
+      "id": 158,
+      "start": 877.09,
+      "end": 878.11,
+      "start_time": "00:14:37,090",
+      "end_time": "00:14:38,110",
+      "text": "Cái from của mình lên"
+    },
+    {
+      "id": 159,
+      "start": 878.37,
+      "end": 881.19,
+      "start_time": "00:14:38,370",
+      "end_time": "00:14:41,190",
+      "text": "Cái đây là cái file from để mình đi tạo hình ảnh nha"
+    },
+    {
+      "id": 160,
+      "start": 881.95,
+      "end": 885.79,
+      "start_time": "00:14:41,950",
+      "end_time": "00:14:45,790",
+      "text": "Đối với cái file from này thì cũng cực kỳ là đơn giản thôi mấy bác ạ"
+    },
+    {
+      "id": 161,
+      "start": 886.05,
+      "end": 889.63,
+      "start_time": "00:14:46,050",
+      "end_time": "00:14:49,630",
+      "text": "Nó có chú thích là E001, E002"
+    },
+    {
+      "id": 162,
+      "start": 889.89,
+      "end": 890.69,
+      "start_time": "00:14:49,890",
+      "end_time": "00:14:50,690",
+      "text": "Vân vân vân vân vân"
+    },
+    {
+      "id": 163,
+      "start": 890.69,
+      "end": 893.63,
+      "start_time": "00:14:50,690",
+      "end_time": "00:14:53,630",
+      "text": "như cái file demon này thì nó gồm 10 be ảnh"
+    },
+    {
+      "id": 164,
+      "start": 893.63,
+      "end": 896.616,
+      "start_time": "00:14:53,630",
+      "end_time": "00:14:56,616",
+      "text": "tới E0 10 be này phải bắt nhìn ở dưới nè"
+    },
+    {
+      "id": 165,
+      "start": 896.616,
+      "end": 905.916,
+      "start_time": "00:14:56,616",
+      "end_time": "00:15:05,916",
+      "text": "đó thì về nó kèm theo 2 cái form để tạo thêm nữa thì em sẽ tạo hết 14 gồm 15 cái ảnh này hơn nha."
+    },
+    {
+      "id": 166,
+      "start": 905.916,
+      "end": 908.716,
+      "start_time": "00:15:05,916",
+      "end_time": "00:15:08,716",
+      "text": "để cho con Coloss nó làm ra demo cho mình."
+    },
+    {
+      "id": 167,
+      "start": 908.716,
+      "end": 915.316,
+      "start_time": "00:15:08,716",
+      "end_time": "00:15:15,316",
+      "text": "thì đối với những cái video mà full đó thì mọi người cắp bao nhiêu ảnh thì nó gửi bao nhiêu ảnh thì mọi người cứ tạo"
+    },
+    {
+      "id": 168,
+      "start": 915.316,
+      "end": 919.216,
+      "start_time": "00:15:15,316",
+      "end_time": "00:15:19,216",
+      "text": "Bán nhiều ảnh thì cho nó thôi. Để cho nó làm rea được mình chất lượng nhất nha các bác."
+    },
+    {
+      "id": 169,
+      "start": 919.836,
+      "end": 922.896,
+      "start_time": "00:15:19,836",
+      "end_time": "00:15:22,896",
+      "text": "Bây giờ thì em chỉ cần việc copy from, em quen lên thôi."
+    },
+    {
+      "id": 170,
+      "start": 923.396,
+      "end": 926.696,
+      "start_time": "00:15:23,396",
+      "end_time": "00:15:26,696",
+      "text": "Em chọn cái model là Nano Banana Pro nha."
+    },
+    {
+      "id": 171,
+      "start": 927.596,
+      "end": 933.016,
+      "start_time": "00:15:27,596",
+      "end_time": "00:15:33,016",
+      "text": "Em chọn 4 ảnh luôn để nó rea 4 ảnh rồi mình có thể lựa chọn những cái nào hợp nhất."
+    },
+    {
+      "id": 172,
+      "start": 936.096,
+      "end": 941.416,
+      "start_time": "00:15:36,096",
+      "end_time": "00:15:41,416",
+      "text": "Các bác thấy không? Nó tạo rea phim cách nhong vật và phim cách ảnh rất là giống đối thủ luôn."
+    },
+    {
+      "id": 173,
+      "start": 941.416,
+      "end": 949.796,
+      "start_time": "00:15:41,416",
+      "end_time": "00:15:49,796",
+      "text": "Những cái này là chi tiết, những cái hình ảnh này là bởi vì con Claude nó không tự nào mà vỉ ra, nó tự làm được."
+    },
+    {
+      "id": 174,
+      "start": 950.196,
+      "end": 960.236,
+      "start_time": "00:15:50,196",
+      "end_time": "00:16:00,236",
+      "text": "Nên là để tối ưu cái video mình chắc lượng và hay nhất, em để trên nó là vừa code và vừa mình tạo ảnh như này để cung cấp cho nó làm nha mọi người."
+    },
+    {
+      "id": 175,
+      "start": 960.616,
+      "end": 963.436,
+      "start_time": "00:16:00,616",
+      "end_time": "00:16:03,436",
+      "text": "Đấy, như vậy thì nó mới là real video chắc lượng."
+    },
+    {
+      "id": 176,
+      "start": 963.636,
+      "end": 968.596,
+      "start_time": "00:16:03,636",
+      "end_time": "00:16:08,596",
+      "text": "Chứ đừng cả để nó, cái nào nó không làm được thì thôi chứ đừng cả ép nó làm đấy."
+    },
+    {
+      "id": 177,
+      "start": 968.596,
+      "end": 978.396,
+      "start_time": "00:16:08,596",
+      "end_time": "00:16:18,396",
+      "text": "Giống như mình cũng vậy mới bác ạ. Mình không biết làm cái gì thì mình phải tối ưu hay là nói chung mình sao đái mình hẹp hỏi. Chứ mình không có làm bậy nha."
+    },
+    {
+      "id": 178,
+      "start": 978.396,
+      "end": 981.396,
+      "start_time": "00:16:18,396",
+      "end_time": "00:16:21,396",
+      "text": "Các bạn có thể nhìn thấy nhé, kiểu 7"
+    },
+    {
+      "id": 179,
+      "start": 981.396,
+      "end": 985.396,
+      "start_time": "00:16:21,396",
+      "end_time": "00:16:25,396",
+      "text": "Rồi em sẽ tour qua đoạn tạo 10 bé ảnh này nhé"
+    },
+    {
+      "id": 180,
+      "start": 985.396,
+      "end": 989.396,
+      "start_time": "00:16:25,396",
+      "end_time": "00:16:29,396",
+      "text": "Đến với đoạn 2 cái ảnh thumb cuối cùng này"
+    },
+    {
+      "id": 181,
+      "start": 989.396,
+      "end": 994.396,
+      "start_time": "00:16:29,396",
+      "end_time": "00:16:34,396",
+      "text": "Thì các bạn thấy không, ảnh thumb rất rất là chất lượng, rất là đúng với phong cách của đối thủ luôn"
+    },
+    {
+      "id": 182,
+      "start": 994.396,
+      "end": 996.396,
+      "start_time": "00:16:34,396",
+      "end_time": "00:16:36,396",
+      "text": "Em Trên thật sự rất là kinh luôn"
+    },
+    {
+      "id": 183,
+      "start": 996.396,
+      "end": 998.396,
+      "start_time": "00:16:36,396",
+      "end_time": "00:16:38,396",
+      "text": "Đây, mọi người thấy không, đối thủ thì sẽ đối thủ"
+    },
+    {
+      "id": 184,
+      "start": 998.396,
+      "end": 999.396,
+      "start_time": "00:16:38,396",
+      "end_time": "00:16:39,396",
+      "text": "thì em cố tình á,"
+    },
+    {
+      "id": 185,
+      "start": 999.476,
+      "end": 1001.716,
+      "start_time": "00:16:39,476",
+      "end_time": "00:16:41,716",
+      "text": "mấy bác thấy đối thủ nó hơi bị nhạt nhạt đúng không,"
+    },
+    {
+      "id": 186,
+      "start": 1002.076,
+      "end": 1004.956,
+      "start_time": "00:16:42,076",
+      "end_time": "00:16:44,956",
+      "text": "em cố tình đẩy cho nó đậm hơn khác đối thủ tí,"
+    },
+    {
+      "id": 187,
+      "start": 1005.516,
+      "end": 1006.276,
+      "start_time": "00:16:45,516",
+      "end_time": "00:16:46,276",
+      "text": "còn mọi người đem về,"
+    },
+    {
+      "id": 188,
+      "start": 1006.376,
+      "end": 1007.616,
+      "start_time": "00:16:46,376",
+      "end_time": "00:16:47,616",
+      "text": "mọi người muốn biến như nào,"
+    },
+    {
+      "id": 189,
+      "start": 1007.716,
+      "end": 1011.476,
+      "start_time": "00:16:47,716",
+      "end_time": "00:16:51,476",
+      "text": "thì mọi người cứ biến dạng theo phong cách của mọi người muốn á,"
+    },
+    {
+      "id": 190,
+      "start": 1011.536,
+      "end": 1013.376,
+      "start_time": "00:16:51,536",
+      "end_time": "00:16:53,376",
+      "text": "thì mọi người cứ quen cái skill lên,"
+    },
+    {
+      "id": 191,
+      "start": 1013.496,
+      "end": 1015.876,
+      "start_time": "00:16:53,496",
+      "end_time": "00:16:55,876",
+      "text": "mọi người yêu cầu con chat nó thay đổi thôi,"
+    },
+    {
+      "id": 192,
+      "start": 1016.076,
+      "end": 1016.596,
+      "start_time": "00:16:56,076",
+      "end_time": "00:16:56,596",
+      "text": "có gì đâu,"
+    },
+    {
+      "id": 193,
+      "start": 1017.036,
+      "end": 1018.396,
+      "start_time": "00:16:57,036",
+      "end_time": "00:16:58,396",
+      "text": "còn ở trên là phong cách nè,"
+    },
+    {
+      "id": 194,
+      "start": 1018.396,
+      "end": 1019.276,
+      "start_time": "00:16:58,396",
+      "end_time": "00:16:59,276",
+      "text": "Những nhân vật nè"
+    },
+    {
+      "id": 195,
+      "start": 1019.35,
+      "end": 1029.35,
+      "start_time": "00:16:59,350",
+      "end_time": "00:17:09,350",
+      "text": "Rồi, cái quan trọng là 10 bia ảnh này với cái ảnh thumb kia thì em sẽ tải về lưu lại ha. Ví dụ như em chọn ảnh này đi, trong 4 ảnh em thấy ảnh này chắc lượng đúng không?"
+    },
+    {
+      "id": 196,
+      "start": 1029.35,
+      "end": 1038.35,
+      "start_time": "00:17:09,350",
+      "end_time": "00:17:18,350",
+      "text": "Em đặt thư mục ảnh để ảnh. Đặt xong rồi em bấm vào lưu. Lưu chung đo vào thư mục"
+    },
+    {
+      "id": 197,
+      "start": 1038.35,
+      "end": 1047.35,
+      "start_time": "00:17:18,350",
+      "end_time": "00:17:27,350",
+      "text": "ảnh cho đỡ bị loạn. Cũng như là con Claude đọc, nó sẽ dở dàng làm hơn nha mọi người."
+    },
+    {
+      "id": 198,
+      "start": 1048.0,
+      "end": 1055.09,
+      "start_time": "17:28",
+      "end_time": "00:17:35,090",
+      "text": "Em sẽ tải về về em quay lại với file from này, đặt tên theo đúng với tên đó nha."
+    },
+    {
+      "id": 199,
+      "start": 1055.09,
+      "end": 1061.59,
+      "start_time": "00:17:35,090",
+      "end_time": "00:17:41,590",
+      "text": "Tên from này 01 thì em tải về em cũng đặt tên là 01, em đưa vào thư mục ảnh."
+    },
+    {
+      "id": 200,
+      "start": 1061.59,
+      "end": 1065.95,
+      "start_time": "00:17:41,590",
+      "end_time": "00:17:45,950",
+      "text": "Tương tự những ảnh show của bác cũng làm vậy ha"
+    },
+    {
+      "id": 201,
+      "start": 1065.95,
+      "end": 1068.51,
+      "start_time": "00:17:45,950",
+      "end_time": "00:17:48,510",
+      "text": "Em sẽ bỏ tour nhanh về cái đoạn này"
+    },
+    {
+      "id": 202,
+      "start": 1068.51,
+      "end": 1073.836,
+      "start_time": "00:17:48,510",
+      "end_time": "00:17:53,836",
+      "text": "Cuối cùng thì đến với cái chỗ ảnh thumb này thì cũng vậy thôi"
+    },
+    {
+      "id": 203,
+      "start": 1073.836,
+      "end": 1078.416,
+      "start_time": "00:17:53,836",
+      "end_time": "00:17:58,416",
+      "text": "Ảnh thâm này ở trong cái file from nó chú thích như nào thì em sẽ lưu như vậy."
+    },
+    {
+      "id": 204,
+      "start": 1078.976,
+      "end": 1082.336,
+      "start_time": "00:17:58,976",
+      "end_time": "00:18:02,336",
+      "text": "Đây cái file đầu tiên ảnh thumb này là T01 nè."
+    },
+    {
+      "id": 205,
+      "start": 1082.816,
+      "end": 1087.636,
+      "start_time": "00:18:02,816",
+      "end_time": "00:18:07,636",
+      "text": "Em cũng sẽ copy cái T01 này, em quên lưu tên lại thôi."
+    },
+    {
+      "id": 206,
+      "start": 1087.636,
+      "end": 1100.416,
+      "start_time": "00:18:07,636",
+      "end_time": "00:18:20,416",
+      "text": "lên, em sẽ chọn cái ảnh thứ 2 này, thấy khá gần và nét, những cái ảnh kia nó hơi bí, thấy ảnh rất là chất lượng."
+    },
+    {
+      "id": 207,
+      "start": 1100.416,
+      "end": 1101.916,
+      "start_time": "00:18:20,416",
+      "end_time": "00:18:21,916",
+      "text": "Em lưu vào."
+    },
+    {
+      "id": 208,
+      "start": 1101.916,
+      "end": 1113.576,
+      "start_time": "00:18:21,916",
+      "end_time": "00:18:33,576",
+      "text": "Rồi, đối với cái ảnh cuối cùng ở trên này, nó là phong cách, hình ảnh, nhân vật mình chọn thôi, thì bác có thể lưu hay không lưu cũng được."
+    },
+    {
+      "id": 209,
+      "start": 1113.576,
+      "end": 1123.576,
+      "start_time": "00:18:33,576",
+      "end_time": "00:18:43,576",
+      "text": "Cái này thì mình kiểu mình muốn sau này những video sau mình đồng bộ như cái nhân vật ảnh thông mình như nào thì mình lưu về. Ví dụ em chọn ảnh này đi, bây giờ cái nhân vật này đúng không?"
+    },
+    {
+      "id": 210,
+      "start": 1123.576,
+      "end": 1129.576,
+      "start_time": "00:18:43,576",
+      "end_time": "00:18:49,576",
+      "text": "Bác bác cũng thấy nó tương tự như đối thủ không? Đấy, em lưu về, em sẽ đặt cái tên là T00 nha."
+    },
+    {
+      "id": 211,
+      "start": 1129.576,
+      "end": 1137.576,
+      "start_time": "00:18:49,576",
+      "end_time": "00:18:57,576",
+      "text": "Ok, như vậy thì bây giờ em đã có đài đấu hết các cái tài nghiêng và bây giờ em sẽ đi nhờ con CloudNetix cho em nè."
+    },
+    {
+      "id": 212,
+      "start": 1137.576,
+      "end": 1149.476,
+      "start_time": "00:18:57,576",
+      "end_time": "00:19:09,476",
+      "text": "Các em có ảnh và có void rồi thì bây giờ em sẽ gọi cái skill và dựng làm video lên và em sẽ import lại với cái thư mục dự án của em nha, dự án là demo."
+    },
+    {
+      "id": 213,
+      "start": 1150.316,
+      "end": 1155.356,
+      "start_time": "00:19:10,316",
+      "end_time": "00:19:15,356",
+      "text": "Mấy bác nhớ lúc nãy em có xin chuyển về làm demo không? Chứ không thể làm full hết được á."
+    },
+    {
+      "id": 214,
+      "start": 1155.356,
+      "end": 1157.596,
+      "start_time": "00:19:15,356",
+      "end_time": "00:19:17,596",
+      "text": "Thì bây giờ em ghi thêm câu lệnh là hãy dựng."
+    },
+    {
+      "id": 215,
+      "start": 1157.85,
+      "end": 1159.85,
+      "start_time": "00:19:17,850",
+      "end_time": "00:19:19,850",
+      "text": "video cho tôi thôi."
+    },
+    {
+      "id": 216,
+      "start": 1159.85,
+      "end": 1164.85,
+      "start_time": "00:19:19,850",
+      "end_time": "00:19:24,850",
+      "text": "Về với cái project này, em read lại cái thứ 1, em copy cho nó chấn nha."
+    },
+    {
+      "id": 217,
+      "start": 1164.85,
+      "end": 1169.85,
+      "start_time": "00:19:24,850",
+      "end_time": "00:19:29,850",
+      "text": "copy riêng cái đường dẫn của project, cái dự án nè."
+    },
+    {
+      "id": 218,
+      "start": 1169.85,
+      "end": 1170.85,
+      "start_time": "00:19:29,850",
+      "end_time": "00:19:30,850",
+      "text": "Đấy."
+    },
+    {
+      "id": 219,
+      "start": 1170.85,
+      "end": 1175.85,
+      "start_time": "00:19:30,850",
+      "end_time": "00:19:35,850",
+      "text": "Rồi, bây giờ thì chỉ việc enter về nó sẽ đọc file về nó làm thôi mấy bác ạ."
+    },
+    {
+      "id": 220,
+      "start": 1175.85,
+      "end": 1179.85,
+      "start_time": "00:19:35,850",
+      "end_time": "00:19:39,850",
+      "text": "Tất cả những gì bây giờ là có trong cái skill này hết rồi."
+    },
+    {
+      "id": 221,
+      "start": 1179.85,
+      "end": 1183.85,
+      "start_time": "00:19:39,850",
+      "end_time": "00:19:43,850",
+      "text": "Bây giờ thì mình chỉ việc enter này em chấp nhận, cho phép."
+    },
+    {
+      "id": 222,
+      "start": 1183.85,
+      "end": 1184.85,
+      "start_time": "00:19:43,850",
+      "end_time": "00:19:44,850",
+      "text": "Đấy."
+    },
+    {
+      "id": 223,
+      "start": 1184.85,
+      "end": 1187.85,
+      "start_time": "00:19:44,850",
+      "end_time": "00:19:47,850",
+      "text": "Rồi, bây giờ chỉ công việc đợi nó gen ra video thôi ha."
+    },
+    {
+      "id": 224,
+      "start": 1195.85,
+      "end": 1202.85,
+      "start_time": "00:19:55,850",
+      "end_time": "00:20:02,850",
+      "text": "Lúc này nó tạo ảnh thumb về test, kiểu như tạo test trên ảnh thumb trước này."
+    },
+    {
+      "id": 225,
+      "start": 1202.85,
+      "end": 1204.85,
+      "start_time": "00:20:02,850",
+      "end_time": "00:20:04,850",
+      "text": "Nó cho ra ảnh thumb trước."
+    },
+    {
+      "id": 226,
+      "start": 1204.85,
+      "end": 1210.85,
+      "start_time": "00:20:04,850",
+      "end_time": "00:20:10,850",
+      "text": "Ảnh thâm này lúc nãy mình tạo trên Google Flow, xong rồi em lưu về."
+    },
+    {
+      "id": 227,
+      "start": 1210.85,
+      "end": 1215.85,
+      "start_time": "00:20:10,850",
+      "end_time": "00:20:15,850",
+      "text": "Bây giờ nó ghi test thâm vào, test là cái xương ID này mọi người."
+    },
+    {
+      "id": 228,
+      "start": 1215.85,
+      "end": 1228.65,
+      "start_time": "00:20:15,850",
+      "end_time": "00:20:28,650",
+      "text": "Thật ra cái này nếu mà bác muốn tự làm thì bác có thể dùng ảnh cho mọi người lên canh web mọi người chỉnh chữ vào, chỉnh test vào, còn không thì mọi người dùng chat gpt cũng được."
+    },
+    {
+      "id": 229,
+      "start": 1229.23,
+      "end": 1236.07,
+      "start_time": "00:20:29,230",
+      "end_time": "00:20:36,070",
+      "text": "Còn mọi người muốn clark tự động tạo luôn thì trong skill em cũng đã có rồi thì nó chỉ tự động ra như này thôi."
+    },
+    {
+      "id": 230,
+      "start": 1236.53,
+      "end": 1237.67,
+      "start_time": "00:20:36,530",
+      "end_time": "00:20:37,670",
+      "text": "Bác thấy hợp lý là mọi người chọn."
+    },
+    {
+      "id": 231,
+      "start": 1237.67,
+      "end": 1242.67,
+      "start_time": "00:20:37,670",
+      "end_time": "00:20:42,670",
+      "text": "Chọn, em quay lại con đối thủ thử, nhìn cái test của đối thủ như thế nào."
+    },
+    {
+      "id": 232,
+      "start": 1242.67,
+      "end": 1246.41,
+      "start_time": "00:20:42,670",
+      "end_time": "00:20:46,410",
+      "text": "Đây, cái test đối thủ cũng vậy, khéo đơn giản thôi."
+    },
+    {
+      "id": 233,
+      "start": 1246.41,
+      "end": 1248.866,
+      "start_time": "00:20:46,410",
+      "end_time": "00:20:48,866",
+      "text": "Test này thì thật sự rất đơn giản."
+    },
+    {
+      "id": 234,
+      "start": 1248.866,
+      "end": 1254.866,
+      "start_time": "00:20:48,866",
+      "end_time": "00:20:54,866",
+      "text": "Cái chữ tết này nó hơi đậm một tí. Nói chung là mọi người tùy theo phong cách mọi người muốn thôi."
+    },
+    {
+      "id": 235,
+      "start": 1254.866,
+      "end": 1260.866,
+      "start_time": "00:20:54,866",
+      "end_time": "00:21:00,866",
+      "text": "Mọi người yêu cầu khác, đậm nhạc hay phong cách khác thì mọi người cứ yêu cầu nó sẽ tạo lại thôi."
+    },
+    {
+      "id": 236,
+      "start": 1260.866,
+      "end": 1267.866,
+      "start_time": "00:21:00,866",
+      "end_time": "00:21:07,866",
+      "text": "Còn không nữa thì bác thấy không hợp lý nữa thì bác có thể ra ChatGPT làm tự làm."
+    },
+    {
+      "id": 237,
+      "start": 1267.866,
+      "end": 1275.866,
+      "start_time": "00:21:07,866",
+      "end_time": "00:21:15,866",
+      "text": "Các bạn có thể nhận được video này, để nhận được video này, để nhận được video này."
+    },
+    {
+      "id": 238,
+      "start": 1275.866,
+      "end": 1282.866,
+      "start_time": "00:21:15,866",
+      "end_time": "00:21:22,866",
+      "text": "Chờ một tí nữa, cuối cùng đã ghi cho em xem video demo."
+    },
+    {
+      "id": 239,
+      "start": 1282.866,
+      "end": 1295.106,
+      "start_time": "00:21:22,866",
+      "end_time": "00:21:35,106",
+      "text": "Về nó có cái báo cáo này thì em sẽ đặt qua ha. Mình đã lên xe hông hình cho 49 cảnh về sức ở chế độ ở chất lượng là 1080 nè."
+    },
+    {
+      "id": 240,
+      "start": 1295.106,
+      "end": 1302.966,
+      "start_time": "00:21:35,106",
+      "end_time": "00:21:42,966",
+      "text": "Về tốc độ sức là tốc độ game video này còn 30 phút. Đúng tầm 30 phút thôi. Em cho tầm 30 phút đấy."
+    },
+    {
+      "id": 241,
+      "start": 1304.006,
+      "end": 1308.006,
+      "start_time": "00:21:44,006",
+      "end_time": "00:21:48,006",
+      "text": "Còn ở dưới thì nói chung là nó có những cái phân tích về báo cáo này. Mình có thể đặt qua ha."
+    },
+    {
+      "id": 242,
+      "start": 1308.006,
+      "end": 1318.716,
+      "start_time": "00:21:48,006",
+      "end_time": "00:21:58,716",
+      "text": "Ví dụ như nó nói, bác bác thấy chỗ nào không hợp lý là muốn sửa thì mọi người cứ yêu cầu nó thì nó sẽ sửa lại. Còn bây giờ thì em sẽ tải video"
+    },
+    {
+      "id": 243,
+      "start": 1318.716,
+      "end": 1329.426,
+      "start_time": "00:21:58,716",
+      "end_time": "00:22:09,426",
+      "text": "về nè, em sẽ mở lên cái thư mục, em sẽ tra bác xem về cái demo BeFoot này nha. Đây em đi vào cái thư mục demo của em về cái phần output."
+    },
+    {
+      "id": 244,
+      "start": 1329.85,
+      "end": 1331.07,
+      "start_time": "00:22:09,850",
+      "end_time": "00:22:11,070",
+      "text": "Đây là video, em mở lên."
+    },
+    {
+      "id": 245,
+      "start": 1331.07,
+      "end": 1340.82,
+      "start_time": "00:22:11,070",
+      "end_time": "00:22:20,820",
+      "text": "Khoảng 2.600 năm trước, ở thành T, G, A, miền nam Hy Lạp, có một người đàn ông tên là Ly Khát bước vào sân nhà một bác thợ rèn. Ly Khát là người thành Sparta, và ông đang đi"
+    },
+    {
+      "id": 246,
+      "start": 1340.82,
+      "end": 1350.57,
+      "start_time": "00:22:20,820",
+      "end_time": "00:22:30,570",
+      "text": "tìm một thứ mà cả thành của ông đã tìm suốt nhiều năm chơi. Bác thợ rèn kể cho ông nghe một chuyện lạ. Hồi trước, bác đào giếng ngay giữa cái sân này, đào xuống được một quãng."
+    },
+    {
+      "id": 247,
+      "start": 1350.57,
+      "end": 1352.95,
+      "start_time": "00:22:30,570",
+      "end_time": "00:22:32,950",
+      "text": "Nếu đúng được một quãng thì lưỡi quốc chạm phải một cái quan tài."
+    },
+    {
+      "id": 248,
+      "start": 1353.43,
+      "end": 1358.67,
+      "start_time": "00:22:33,430",
+      "end_time": "00:22:38,670",
+      "text": "Cái quan tài ấy dài hơn 3 mét, tức là dài hơn cả chiếc giường đôi nhà bạn ghép đối tiếp với một chiếc chiếu nữa."
+    },
+    {
+      "id": 249,
+      "start": 1359.13,
+      "end": 1361.97,
+      "start_time": "00:22:39,130",
+      "end_time": "00:22:41,970",
+      "text": "Bác không tin có người nào to đến thế nên mở nắp ra xem."
+    },
+    {
+      "id": 250,
+      "start": 1362.49,
+      "end": 1365.67,
+      "start_time": "00:22:42,490",
+      "end_time": "00:22:45,670",
+      "text": "Bên trong là một bộ xương và bộ xương dài đúng bằng cái quan tài."
+    },
+    {
+      "id": 251,
+      "start": 1366.17,
+      "end": 1369.19,
+      "start_time": "00:22:46,170",
+      "end_time": "00:22:49,190",
+      "text": "Bác thợ rèn sợ quá, lấp đất lại coi như chưa thấy gì."
+    },
+    {
+      "id": 252,
+      "start": 1369.51,
+      "end": 1371.19,
+      "start_time": "00:22:49,510",
+      "end_time": "00:22:51,190",
+      "text": "Nhưng ly khát thì nghe xong là hiểu ngay."
+    },
+    {
+      "id": 253,
+      "start": 1371.47,
+      "end": 1372.53,
+      "start_time": "00:22:51,470",
+      "end_time": "00:22:52,530",
+      "text": "Ông thuê lại cái sân."
+    },
+    {
+      "id": 254,
+      "start": 1372.57,
+      "end": 1379.71,
+      "start_time": "00:22:52,570",
+      "end_time": "00:22:59,710",
+      "text": "Đảo bộ xương lên, mang về Iqpacta và tuyên bố rằng đây chính là xương của O, Red Iqtet, một người anh hùng thời xa xưa."
+    },
+    {
+      "id": 255,
+      "start": 1380.21,
+      "end": 1385.33,
+      "start_time": "00:23:00,210",
+      "end_time": "00:23:05,330",
+      "text": "Người Spactati như vậy, họ trôn cướp bộ xương long trọng và tin rằng từ đó thanh của họ sẽ thắng trận."
+    },
+    {
+      "id": 256,
+      "start": 1385.75,
+      "end": 1389.85,
+      "start_time": "00:23:05,750",
+      "end_time": "00:23:09,850",
+      "text": "Câu chuyện này không phải mình bịa ra, nó được ông He, Rowe, Dodd, nhà viết sử nghe."
+    },
+    {
+      "id": 257,
+      "start": 1389.85,
+      "end": 1394.95,
+      "start_time": "00:23:09,850",
+      "end_time": "00:23:14,950",
+      "text": "Nhà viết sử người Hy Lạp ghi lại trong bộ sử nổi tiếng của ông và cái chi tiết làm mình để ý nhất."
+    },
+    {
+      "id": 258,
+      "start": 1394.95,
+      "end": 1398.95,
+      "start_time": "00:23:14,950",
+      "end_time": "00:23:18,950",
+      "text": "Em xin phép bèo cái chỗ này một tí nha."
+    },
+    {
+      "id": 259,
+      "start": 1398.95,
+      "end": 1403.95,
+      "start_time": "00:23:18,950",
+      "end_time": "00:23:23,950",
+      "text": "Như bác thấy, ngay cái đoạn đầu hoặc là cái đoạn vừa rồi,"
+    },
+    {
+      "id": 260,
+      "start": 1403.95,
+      "end": 1409.95,
+      "start_time": "00:23:23,950",
+      "end_time": "00:23:29,950",
+      "text": "cái từ tiếng Anh nó đẹp bị chậm,"
+    },
+    {
+      "id": 261,
+      "start": 1409.95,
+      "end": 1414.95,
+      "start_time": "00:23:29,950",
+      "end_time": "00:23:34,950",
+      "text": "bởi vì cái từ tiếng Anh, cái tên nước ngoài thì em đang đỡ là nó..."
+    },
+    {
+      "id": 262,
+      "start": 1414.95,
+      "end": 1417.51,
+      "start_time": "00:23:34,950",
+      "end_time": "00:23:37,510",
+      "text": "Chuyện này không phải mình bịa ra, nó được ông Hê, Râu."
+    },
+    {
+      "id": 263,
+      "start": 1417.51,
+      "end": 1421.85,
+      "start_time": "00:23:37,510",
+      "end_time": "00:23:41,850",
+      "text": "Đó, em đang đỡ là nó có cái dấu gạch ngang như này nè"
+    },
+    {
+      "id": 264,
+      "start": 1421.85,
+      "end": 1423.89,
+      "start_time": "00:23:41,850",
+      "end_time": "00:23:43,890",
+      "text": "Thì mẹ định là những con AI á"
+    },
+    {
+      "id": 265,
+      "start": 1423.89,
+      "end": 1425.57,
+      "start_time": "00:23:43,890",
+      "end_time": "00:23:45,570",
+      "text": "Nó đẹp tiếng Việt mà"
+    },
+    {
+      "id": 266,
+      "start": 1425.57,
+      "end": 1426.85,
+      "start_time": "00:23:45,570",
+      "end_time": "00:23:46,850",
+      "text": "Nó đẹp có dấu gạch này"
+    },
+    {
+      "id": 267,
+      "start": 1426.85,
+      "end": 1429.47,
+      "start_time": "00:23:46,850",
+      "end_time": "00:23:49,470",
+      "text": "Nó sẽ nhanh cách ra bởi cái khoảng ủy á"
+    },
+    {
+      "id": 268,
+      "start": 1429.47,
+      "end": 1431.53,
+      "start_time": "00:23:49,470",
+      "end_time": "00:23:51,530",
+      "text": "Còn mình muốn đẹp nhanh liền mặt á"
+    },
+    {
+      "id": 269,
+      "start": 1431.53,
+      "end": 1433.441,
+      "start_time": "00:23:51,530",
+      "end_time": "00:23:53,441",
+      "text": "Thì bác nhớ là xóa những cái dấu gạch đó đi"
+    },
+    {
+      "id": 270,
+      "start": 1433.441,
+      "end": 1442.601,
+      "start_time": "00:23:53,441",
+      "end_time": "00:24:02,601",
+      "text": "Đó là đối với những tên riêng tiếng Anh thôi mọi người. Vì mấy bác có thể tự tì chẩn trong kịch bản của mình. Mọi người yêu cầu con cầu lót nó tạo lại."
+    },
+    {
+      "id": 271,
+      "start": 1442.601,
+      "end": 1452.301,
+      "start_time": "00:24:02,601",
+      "end_time": "00:24:12,301",
+      "text": "Đốt, nhà viết sử người Hy Lạp ghi lại trong bộ sử nổi tiếng của ông. Và cái chi tiết làm mình để ý nhất không phải là người anh hùng mà là cái phản ứng rất tự nhiên của cả hai người đàn ông kia."
+    },
+    {
+      "id": 272,
+      "start": 1452.781,
+      "end": 1459.641,
+      "start_time": "00:24:12,781",
+      "end_time": "00:24:19,641",
+      "text": "Thấy một bộ xương dài hơn 3 mét, không ai nghĩ đó là xương con vật. Ai cũng nghĩ ngay, đây là một con người, một con người khổng lồ."
+    },
+    {
+      "id": 273,
+      "start": 1459.641,
+      "end": 1468.761,
+      "start_time": "00:24:19,641",
+      "end_time": "00:24:28,761",
+      "text": "Và bạn biết không, chuyện người khổng lồ đâu chỉ có ở Hy Lạc. Người Bắc Âu kể về một gã khổng lồ tên Ymia, chết đi thì thịt hóa thành đất, xương hóa thành núi."
+    },
+    {
+      "id": 274,
+      "start": 1468.761,
+      "end": 1477.88,
+      "start_time": "00:24:28,761",
+      "end_time": "00:24:37,880",
+      "text": "Người Trung Hoa kể về bàn cổ, người đã tách trời khỏi đất. Người Ireland có phim Macbun, gã khổng lồ xây một con đường đá bắt qua biển. Các dân tộc bản địa ở"
+    },
+    {
+      "id": 275,
+      "start": 1477.88,
+      "end": 1487.0,
+      "start_time": "00:24:37,880",
+      "end_time": "00:24:47,000",
+      "text": "châu Mỹ có những câu chuyện về sinh vật khổng lồ thời xa xưa. Và ngay ở nước mình, có thần trụ trời đắp cột trống trời, có thanh gióng vươn vai thành người cao lớn."
+    },
+    {
+      "id": 276,
+      "start": 1487.0,
+      "end": 1500.47,
+      "start_time": "00:24:47,000",
+      "end_time": "00:25:00,470",
+      "text": "Những dân tộc này sống cách nhau hàng vạn cây số, phần lớn họ chưa từng gặp nhau, không đọc sách của nhau, không nghe chuyện của nhau, vậy mà dân tộc nào cũng kể về người khổng lồ. Vì sao vậy? Có 2 cách giải thích bà mình hay nghe nhất. Cách thứ nhất nói rằng,"
+    },
+    {
+      "id": 277,
+      "start": 1500.47,
+      "end": 1513.94,
+      "start_time": "00:25:00,470",
+      "end_time": "00:25:13,940",
+      "text": "ngày xưa con người to lớn thật, sau này mới nhỏ dần đi. Cách thứ 2 nói rằng, các câu chuyện chỉ là truyền tay nhau, dân tộc này nghe của dân tộc kia rồi kể lại. Cả 2 cách đều nghe có vẻ hợp lý, nhưng như bạn sẽ thấy, cả 2 đều không đứng vững."
+    },
+    {
+      "id": 278,
+      "start": 1513.94,
+      "end": 1521.23,
+      "start_time": "00:25:13,940",
+      "end_time": "00:25:21,230",
+      "text": "Câu trả lời thật thì lạ hơn nhiều, nó nằm dưới lòng đất, trong một hiệu thuốc ở Hồng Kông, trên một bờ biển đầy cột đá, trong bộ xương của một"
+    },
+    {
+      "id": 279,
+      "start": 1521.23,
+      "end": 1528.52,
+      "start_time": "00:25:21,230",
+      "end_time": "00:25:28,520",
+      "text": "chàng trai cao nhất lịch sử. Và một phần câu trả lời nằm ngay gần nhà mình, trong một hang đá vôi ở Lạng Sơn và một ngôi đền bên bờ sông Hồng."
+    },
+    {
+      "id": 280,
+      "start": 1528.52,
+      "end": 1541.47,
+      "start_time": "00:25:28,520",
+      "end_time": "00:25:41,470",
+      "text": "Nhưng trước khi đi tìm câu trả lời, mình muốn bạn nhìn vào bàn tay của chính bạn. Hồi nhỏ, chắc nhiều bạn đã thấy bà hoặc mẹ đo vải bằng gang tay. Xoe bàn tay ra, ngón cái một đầu, ngón út một đầu, đặt lên mép vải,"
+    },
+    {
+      "id": 281,
+      "start": 1541.47,
+      "end": 1554.42,
+      "start_time": "00:25:41,470",
+      "end_time": "00:25:54,420",
+      "text": "rồi đếm. Một gang, hai gang, ba gang. Muốn đo cái gì dài hơn thì dùng sải tay, rang hai tay ra hết cỡ. Muốn đo đường thì đến bước chân. Ông bà mình gọi chiều cao của nước lụt là ngập đến đầu gối, ngập đến thắt lưng."
+    },
+    {
+      "id": 282,
+      "start": 1554.42,
+      "end": 1562.36,
+      "start_time": "00:25:54,420",
+      "end_time": "00:26:02,360",
+      "text": "Người Hy Lạp cũng vậy, họ đo bằng khủyểu tay, người Anh đo bằng bàn chân, đến giờ vẫn còn gọi một đơn vị đo là phút, nghĩa gốc là bàn chân."
+    },
+    {
+      "id": 283,
+      "start": 1562.36,
+      "end": 1567.74,
+      "start_time": "00:26:02,360",
+      "end_time": "00:26:07,740",
+      "text": "Từ thỏa xa xưa, cây thước đầu tiên của loài người không làm bằng gỗ hay sắt, nó chính là cơ thể của mình."
+    },
+    {
+      "id": 284,
+      "start": 1567.74,
+      "end": 1570.3,
+      "start_time": "00:26:07,740",
+      "end_time": "00:26:10,300",
+      "text": "của mình. Và đây là ý chính của cả video này."
+    },
+    {
+      "id": 285,
+      "start": 1570.68,
+      "end": 1572.22,
+      "start_time": "00:26:10,680",
+      "end_time": "00:26:12,220",
+      "text": "Khi con người gặp một thứ quá lớn,"
+    },
+    {
+      "id": 286,
+      "start": 1572.52,
+      "end": 1573.74,
+      "start_time": "00:26:12,520",
+      "end_time": "00:26:13,740",
+      "text": "lớn hơn mọi thứ họ từng biết,"
+    },
+    {
+      "id": 287,
+      "start": 1574.06,
+      "end": 1576.16,
+      "start_time": "00:26:14,060",
+      "end_time": "00:26:16,160",
+      "text": "họ vẫn đưa cây thước quen thuộc ấy ra để đo."
+    },
+    {
+      "id": 288,
+      "start": 1576.58,
+      "end": 1578.46,
+      "start_time": "00:26:16,580",
+      "end_time": "00:26:18,460",
+      "text": "Họ áp găng tay của mình vào một khúc xương,"
+    },
+    {
+      "id": 289,
+      "start": 1578.84,
+      "end": 1579.58,
+      "start_time": "00:26:18,840",
+      "end_time": "00:26:19,580",
+      "text": "một tảng đá,"
+    },
+    {
+      "id": 290,
+      "start": 1580.0,
+      "end": 1582.08,
+      "start_time": "00:26:20,000",
+      "end_time": "00:26:22,080",
+      "text": "một ngọn núi. Và khi cây thước ấy"
+    },
+    {
+      "id": 291,
+      "start": 1582.08,
+      "end": 1583.84,
+      "start_time": "00:26:22,080",
+      "end_time": "00:26:23,840",
+      "text": "không đủ dài, trong đầu họ hiện ra"
+    },
+    {
+      "id": 292,
+      "start": 1583.84,
+      "end": 1585.8,
+      "start_time": "00:26:23,840",
+      "end_time": "00:26:25,800",
+      "text": "một con người, chỉ có điều là to hơn"
+    },
+    {
+      "id": 293,
+      "start": 1585.8,
+      "end": 1587.68,
+      "start_time": "00:26:25,800",
+      "end_time": "00:26:27,680",
+      "text": "rất nhiều lần. Người khổng lồ chính là"
+    },
+    {
+      "id": 294,
+      "start": 1587.94,
+      "end": 1595.94,
+      "start_time": "00:26:27,940",
+      "end_time": "00:26:35,940",
+      "text": "Thật sự là khi xem phát video demo này bác thấy rất đỉnh không?"
+    },
+    {
+      "id": 295,
+      "start": 1595.94,
+      "end": 1599.741,
+      "start_time": "00:26:35,940",
+      "end_time": "00:26:39,741",
+      "text": "Các gồm cái âm thanh và những cái hiệu ứng này kia nó đã nhớ"
+    },
+    {
+      "id": 296,
+      "start": 1599.741,
+      "end": 1603.921,
+      "start_time": "00:26:39,741",
+      "end_time": "00:26:43,921",
+      "text": "Những âm thanh nhặt nền này kia nó ghép vào hết đó mấy bác. Rất là đỉnh cao luôn."
+    },
+    {
+      "id": 297,
+      "start": 1604.401,
+      "end": 1610.061,
+      "start_time": "00:26:44,401",
+      "end_time": "00:26:50,061",
+      "text": "Vì là nó có một vấn đề chỉ là cái chỗ mà cái giọng đọc AI nó đọc cái chỗ tên riêng á."
+    },
+    {
+      "id": 298,
+      "start": 1610.061,
+      "end": 1617.061,
+      "start_time": "00:26:50,061",
+      "end_time": "00:26:57,061",
+      "text": "Bởi vì em đi cái hiện tại là cái kịch bản nó re là những cái tên nước ngoài thì nó có dấu gạch."
+    },
+    {
+      "id": 299,
+      "start": 1617.301,
+      "end": 1621.901,
+      "start_time": "00:26:57,301",
+      "end_time": "00:27:01,901",
+      "text": "Nên mấy bác có thể là yêu cầu con Claude nó làm lại file kịch bản nha."
+    },
+    {
+      "id": 300,
+      "start": 1622.461,
+      "end": 1627.741,
+      "start_time": "00:27:02,461",
+      "end_time": "00:27:07,741",
+      "text": "Hiệt là mấy bác tự chỉnh tay cũng được. Một số cái từ nước ngoài nó chỉ một số tên thôi."
+    },
+    {
+      "id": 301,
+      "start": 1627.741,
+      "end": 1631.521,
+      "start_time": "00:27:07,741",
+      "end_time": "00:27:11,521",
+      "text": "Nhiều kịch bản cũng không có đâu mấy bác ạ."
+    },
+    {
+      "id": 302,
+      "start": 1632.321,
+      "end": 1641.521,
+      "start_time": "00:27:12,321",
+      "end_time": "00:27:21,521",
+      "text": "Thì ok, quay video này thì em muốn chia sẻ với mọi người về quy trình và cũng như chia sẻ với bác cái skill để tự động làm về cái ngách này."
+    },
+    {
+      "id": 303,
+      "start": 1641.941,
+      "end": 1645.801,
+      "start_time": "00:27:21,941",
+      "end_time": "00:27:25,801",
+      "text": "Cái ngách này thật ra thì cũng khá là lâu rồi và cũng nhiều bác biết đấy."
+    },
+    {
+      "id": 304,
+      "start": 1645.981,
+      "end": 1651.161,
+      "start_time": "00:27:25,981",
+      "end_time": "00:27:31,161",
+      "text": "Nhưng mà nhiều bác biết cái ngách này nhau như vậy chứ nhiều bác không biết làm."
+    },
+    {
+      "id": 305,
+      "start": 1651.541,
+      "end": 1657.521,
+      "start_time": "00:27:31,541",
+      "end_time": "00:27:37,521",
+      "text": "Thì hôm nay em sẵn, em trên cái skill em chia sẻ cho mọi người có thể tham khảo luôn và mọi người có thể dùng."
+    },
+    {
+      "id": 306,
+      "start": 1657.741,
+      "end": 1661.981,
+      "start_time": "00:27:37,741",
+      "end_time": "00:27:41,981",
+      "text": "hoặc từ skill này, mấy bác làm những cái ngách khác, thì mọi người cứ"
+    },
+    {
+      "id": 307,
+      "start": 1661.981,
+      "end": 1664.201,
+      "start_time": "00:27:41,981",
+      "end_time": "00:27:44,201",
+      "text": "rồi cứ up lên, up với skill lên,"
+    },
+    {
+      "id": 308,
+      "start": 1664.301,
+      "end": 1667.561,
+      "start_time": "00:27:44,301",
+      "end_time": "00:27:47,561",
+      "text": "xong mọi người bảo con cloud nó học về phân tích,"
+    },
+    {
+      "id": 309,
+      "start": 1667.661,
+      "end": 1669.461,
+      "start_time": "00:27:47,661",
+      "end_time": "00:27:49,461",
+      "text": "nó chuyển đổi sang ghi ngách đối thủ khác."
+    },
+    {
+      "id": 310,
+      "start": 1669.841,
+      "end": 1673.041,
+      "start_time": "00:27:49,841",
+      "end_time": "00:27:53,041",
+      "text": "Nhưng mà mấy bác phải luôn nhớ là mấy bác muốn làm ghi ngách khác,"
+    },
+    {
+      "id": 311,
+      "start": 1673.181,
+      "end": 1676.201,
+      "start_time": "00:27:53,181",
+      "end_time": "00:27:56,201",
+      "text": "thì mấy bác phải cho con cloud nó thông tin,"
+    },
+    {
+      "id": 312,
+      "start": 1676.201,
+      "end": 1679.261,
+      "start_time": "00:27:56,201",
+      "end_time": "00:27:59,261",
+      "text": "ví dụ như link kênh, tải video của đối thủ về,"
+    },
+    {
+      "id": 313,
+      "start": 1680.0,
+      "end": 1682.621,
+      "start_time": "28:00",
+      "end_time": "00:28:02,621",
+      "text": "nói chung là toàn bộ những cái dữ liệu của kênh đối thủ,"
+    },
+    {
+      "id": 314,
+      "start": 1682.721,
+      "end": 1683.641,
+      "start_time": "00:28:02,721",
+      "end_time": "00:28:03,641",
+      "text": "mấy bác cho nó học."
+    },
+    {
+      "id": 315,
+      "start": 1683.981,
+      "end": 1685.901,
+      "start_time": "00:28:03,981",
+      "end_time": "00:28:05,901",
+      "text": "rồi nó phân tích bóc tắt ra rồi nó mới"
+    },
+    {
+      "id": 316,
+      "start": 1685.901,
+      "end": 1687.421,
+      "start_time": "00:28:05,901",
+      "end_time": "00:28:07,421",
+      "text": "hẹp theo được ha"
+    },
+    {
+      "id": 317,
+      "start": 1687.421,
+      "end": 1690.461,
+      "start_time": "00:28:07,421",
+      "end_time": "00:28:10,461",
+      "text": "còn cái cách trên đó thì em đã hướng dẫn rất nhiều video rồi"
+    },
+    {
+      "id": 318,
+      "start": 1690.461,
+      "end": 1691.661,
+      "start_time": "00:28:10,461",
+      "end_time": "00:28:11,661",
+      "text": "mọi người nhớ xem ha"
+    },
+    {
+      "id": 319,
+      "start": 1691.661,
+      "end": 1692.45,
+      "start_time": "00:28:11,661",
+      "end_time": "00:28:12,450",
+      "text": "đa số là"
+    },
+    {
+      "id": 320,
+      "start": 1692.45,
+      "end": 1702.39,
+      "start_time": "00:28:12,450",
+      "end_time": "00:28:22,390",
+      "text": "Khoảng 2600 năm trước, ở thành T, G, A, miền nam Hy Lạp, có một người đàn ông tên là Ly Khát bước vào sân nhà một"
+    },
+    {
+      "id": 321,
+      "start": 1702.39,
+      "end": 1712.33,
+      "start_time": "00:28:22,390",
+      "end_time": "00:28:32,330",
+      "text": "bác thợ rèn. Ly Khát là người thành Sparta, và ông đang đi tìm một thứ mà cả thành của ông đã tìm suốt nhiều năm chơi."
+    },
+    {
+      "id": 322,
+      "start": 1712.33,
+      "end": 1725.33,
+      "start_time": "00:28:32,330",
+      "end_time": "00:28:45,330",
+      "text": "Bác thợ rèn kể cho ông nghe một chuyện lạ. Hồi trước, bác đào giếng ngay giữa cái sân này, đào xuống được một quãng thì lưỡi quốc chạm phải một cái quan tài. Cái quan tài ấy dài hơn 3 mét, tức là dài hơn cả chiếc giường đôi nhà bạn ghép đối tiếp với"
+    },
+    {
+      "id": 323,
+      "start": 1725.33,
+      "end": 1738.33,
+      "start_time": "00:28:45,330",
+      "end_time": "00:28:58,330",
+      "text": "một chiếc chiếu nữa. Bác không tin có người nào to đến thế, nên mở nắp ra xem. Bên trong là một bộ xương, và bộ xương dài đúng bằng cái quan tài. Bác thợ rèn sợ quá, lấp đất lại, coi như chưa thấy gì, nhưng ly khác thì nghe xong là hiểu ngay."
+    },
+    {
+      "id": 324,
+      "start": 1738.33,
+      "end": 1747.15,
+      "start_time": "00:28:58,330",
+      "end_time": "00:29:07,150",
+      "text": "Ngay, ông thuê lại cái sân, đảo bộ xương lên, mang về Ixpacta và tuyên bố rằng đây chính là xương của O, Red Ictet, một người anh hùng thời xa xưa."
+    },
+    {
+      "id": 325,
+      "start": 1747.67,
+      "end": 1752.75,
+      "start_time": "00:29:07,670",
+      "end_time": "00:29:12,750",
+      "text": "Người Spactati như vậy, họ trôn cất bộ xương long trọng và tin rằng từ đó thanh của họ sẽ thắng trận."
+    },
+    {
+      "id": 326,
+      "start": 1753.19,
+      "end": 1758.33,
+      "start_time": "00:29:13,190",
+      "end_time": "00:29:18,330",
+      "text": "Câu chuyện này không phải mình bịa ra, nó được ông He, Rowe, Dodd, nhà viết sử người Hy Lạp."
+    },
+    {
+      "id": 327,
+      "start": 1758.33,
+      "end": 1760.23,
+      "start_time": "00:29:18,330",
+      "end_time": "00:29:20,230",
+      "text": "ghi lại trong bộ sử nổi tiếng của ông"
+    },
+    {
+      "id": 328,
+      "start": 1760.23,
+      "end": 1762.31,
+      "start_time": "00:29:20,230",
+      "end_time": "00:29:22,310",
+      "text": "và cái chi tiết làm mình để ý nhất"
+    },
+    {
+      "id": 329,
+      "start": 1762.31,
+      "end": 1763.61,
+      "start_time": "00:29:22,310",
+      "end_time": "00:29:23,610",
+      "text": "không phải là người anh hùng"
+    },
+    {
+      "id": 330,
+      "start": 1763.61,
+      "end": 1766.37,
+      "start_time": "00:29:23,610",
+      "end_time": "00:29:26,370",
+      "text": "mà là cái phản ứng rất tự nhiên của cả hai người đàn ông kia."
+    },
+    {
+      "id": 331,
+      "start": 1766.386,
+      "end": 1776.039,
+      "start_time": "00:29:26,386",
+      "end_time": "00:29:36,039",
+      "text": "Thấy một bộ xương dài hơn 3 mét, không ai nghĩ đó là xương con vật. Ai cũng nghĩ ngay, đây là một con người, một con người khổng lồ. Và bạn biết không, chuyện người khổng lồ"
+    },
+    {
+      "id": 332,
+      "start": 1776.039,
+      "end": 1785.693,
+      "start_time": "00:29:36,039",
+      "end_time": "00:29:45,693",
+      "text": "đâu chỉ có ở Hy Lạc. Người Bắc Âu kể về một gã khổng lồ tên Ymia, chết đi thì thịt hóa thành đất, xương hóa thành núi. Người Trung Hoa kể về bàn cổ, người đã tách trời"
+    },
+    {
+      "id": 333,
+      "start": 1785.693,
+      "end": 1795.346,
+      "start_time": "00:29:45,693",
+      "end_time": "00:29:55,346",
+      "text": "khỏi đất. Người Ireland có phim MacGun, gã khổng lồ xây một con đường đá bắc qua biển. Các dân tộc bản địa ở châu Mỹ có những câu chuyện về sinh vật khổng lồ thời xa xưa."
+    },
+    {
+      "id": 334,
+      "start": 1795.346,
+      "end": 1800.886,
+      "start_time": "00:29:55,346",
+      "end_time": "00:30:00,886",
+      "text": "Và ngay ở nước mình, có thần trụ trời đắp cột trống trời, có thanh gióng vươn vai thành người cao lớn."
+    },
+    {
+      "id": 335,
+      "start": 1801.326,
+      "end": 1809.946,
+      "start_time": "00:30:01,326",
+      "end_time": "00:30:09,946",
+      "text": "Những dân tộc này sống cách nhau hàng vạn cây số, phần lớn họ chưa từng gặp nhau, không đọc sách của nhau, không nghe chuyện của nhau, vậy mà dân tộc nào cũng kể về người khổng lồ."
+    },
+    {
+      "id": 336,
+      "start": 1810.426,
+      "end": 1813.186,
+      "start_time": "00:30:10,426",
+      "end_time": "00:30:13,186",
+      "text": "Vì sao vậy? Có 2 cách giải thích bà mình hay nghe nhất."
+    },
+    {
+      "id": 337,
+      "start": 1813.626,
+      "end": 1817.526,
+      "start_time": "00:30:13,626",
+      "end_time": "00:30:17,526",
+      "text": "Cách thứ nhất nói rằng, ngày xưa con người to lớn thật, sau này mới nhỏ dần đi."
+    },
+    {
+      "id": 338,
+      "start": 1817.746,
+      "end": 1823.286,
+      "start_time": "00:30:17,746",
+      "end_time": "00:30:23,286",
+      "text": "Cách thứ hai nói rằng, các câu chuyện chỉ là truyền tai nhau, dân tộc này nghe của dân tộc kia rồi kể lại."
+    },
+    {
+      "id": 339,
+      "start": 1823.286,
+      "end": 1828.026,
+      "start_time": "00:30:23,286",
+      "end_time": "00:30:28,026",
+      "text": "Cả hai cách đều nghe có vẻ hợp lý, nhưng như bạn sẽ thấy, cả hai đều không đứng vững."
+    },
+    {
+      "id": 340,
+      "start": 1828.486,
+      "end": 1836.686,
+      "start_time": "00:30:28,486",
+      "end_time": "00:30:36,686",
+      "text": "Câu trả lời thật thì lạ hơn nhiều, nó nằm dưới lòng đất, trong một hiệu thuốc ở Hồng Kông, trên một bờ biển đầy cột đá, trong bộ xương của một chàng trai cao nhất lịch sử."
+    },
+    {
+      "id": 341,
+      "start": 1837.166,
+      "end": 1842.586,
+      "start_time": "00:30:37,166",
+      "end_time": "00:30:42,586",
+      "text": "Và một phần câu trả lời nằm ngay gần nhà mình, trong một hang đá vôi ở Lạng Sơn và một ngôi đền bên bờ sông Hồng."
+    },
+    {
+      "id": 342,
+      "start": 1842.85,
+      "end": 1852.81,
+      "start_time": "00:30:42,850",
+      "end_time": "00:30:52,810",
+      "text": "Nhưng trước khi đi tìm câu trả lời, mình muốn bạn nhìn vào bàn tay của chính bạn. Hồi nhỏ, chắc nhiều bạn đã thấy bà hoặc mẹ đo vải bằng găng tay. Xoe bàn tay ra, ngón"
+    },
+    {
+      "id": 343,
+      "start": 1852.81,
+      "end": 1862.77,
+      "start_time": "00:30:52,810",
+      "end_time": "00:31:02,770",
+      "text": "cái một đầu, ngón út một đầu, đặt lên mép vải, rồi đếm. Một găng, hai găng, ba găng. Muốn đo cái gì dài hơn thì dùng sải tay, rang hai tay ra hết cỡ. Muốn đo đường"
+    },
+    {
+      "id": 344,
+      "start": 1862.77,
+      "end": 1872.73,
+      "start_time": "00:31:02,770",
+      "end_time": "00:31:12,730",
+      "text": "thì đến mức chân. Ông bà mình gọi chiều cao của nước lụt là ngập đến đầu gối, ngập đến thắt lưng. Người Hy Lạp cũng vậy, họ đo bằng khủyểu tay. Người Anh đo bằng bàn chân."
+    },
+    {
+      "id": 345,
+      "start": 1872.85,
+      "end": 1882.05,
+      "start_time": "00:31:12,850",
+      "end_time": "00:31:22,050",
+      "text": "Đến giờ vẫn còn gọi một đơn vị đo là food, nghĩa gốc là bàn chân. Từ thỏa xa xưa, cây thước đầu tiên của loài người không làm bằng gỗ hay sắt, nó chính là cơ thể của"
+    },
+    {
+      "id": 346,
+      "start": 1882.05,
+      "end": 1891.25,
+      "start_time": "00:31:22,050",
+      "end_time": "00:31:31,250",
+      "text": "mình. Và đây là ý chính của cả video này. Khi con người gặp một thứ quá lớn, lớn hơn mọi thứ họ từng biết, họ vẫn đưa cây thước quen thuộc ấy ra để đo. Họ áp"
+    },
+    {
+      "id": 347,
+      "start": 1891.25,
+      "end": 1900.45,
+      "start_time": "00:31:31,250",
+      "end_time": "00:31:40,450",
+      "text": "găng tay của mình vào một khúc xương, một tảng đá, một ngọn núi. Và khi cây thước ấy không đủ dài, trong đầu họ hiện ra một con người, chỉ có điều là to hơn rất nhiều lần."
+    },
+    {
+      "id": 348,
+      "start": 1900.45,
+      "end": 1904.85,
+      "start_time": "00:31:40,450",
+      "end_time": "00:31:44,850",
+      "text": "Người khổng lồ chính là thứ hiện ra khi ta đo cái quá lớn bằng cây thước găng tay."
+    }
+  ]
+}

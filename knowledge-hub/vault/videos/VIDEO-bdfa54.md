@@ -5,8 +5,8 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "88"
-niche: "Bán Content & Phát Triển Kênh"
-markets: ["🇻🇳 Việt", "🇨🇳 Trung"]
+niche: "Sinh Tồn Hoang Dã View Việt"
+markets: ["🇻🇳 Việt"]
 duration: "21:10"
 published_at: "2025-08-19"
 toolsCount: 6
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-bdfa54&track=h2dev"
 # VIDEO-bdfa54 — Key Sinh Tồn view Việt bán content
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#88`)  
-> - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇨🇳 Trung | **Thời lượng:** `21:10` | **Ngày đăng:** `2025-08-19`  
+> - **Ngách nội dung (Niche):** [[niches/sinh-ton-hoang-da-view-viet|Sinh Tồn Hoang Dã View Việt]]  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `21:10` | **Ngày đăng:** `2025-08-19`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-bdfa54&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-bdfa54/README.md)
 
 ---
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-bdfa54&track=h2dev"
 - Quy trình tìm nguồn gốc: dịch từ khóa sinh tồn sang tiếng Trung (giản thể hoặc phồn thể) để tìm trên Douyin các video gốc nhiều tim, tải bản không logo về máy.
 - Cách dịch phụ đề khớp thời gian: đưa video gốc vào CapCut tạo phụ đề tiếng Trung tự động, xuất file SRT mở bằng Notepad rồi đưa vào ChatGPT 4o dịch từng đoạn giữ nguyên mốc thời gian để không bị lệch nhịp.
 - Kỹ thuật lách bản quyền và tránh lỗi sử dụng lại nội dung: giảm tốc độ hoặc tách/hạ âm thanh giọng gốc ở những đoạn có tiếng động, đè giọng đọc Vbee lên, chèn logo kênh và cuối cùng gộp (Compound Clip) tăng tốc độ lên lại 1.0x.
+- Rồi ok em xin chào tất cả mọi người đã quay trở lại với kênh H2Dev của em nha
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Bán content ngách sinh tồn view Việt: tìm video Douyin, tải về, dịch phụ đề Trung sang Việt, làm giọng và edit trong CapCut

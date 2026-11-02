@@ -66,8 +66,6 @@ function getRawCorpus(sku) {
 }
 
 async function main() {
-  console.log('>>> BUILDING H2DEV MAIN TRACK 7-LAYER GOLD STANDARD DATA (148 VIDEOS) <<<');
-
   const modulesPath = path.join(ROOT, 'data', 'modules.json');
   const catalogPath = path.join(ROOT, 'data', 'catalog.json');
   const catalogFullPath = path.join(ROOT, 'data', 'catalog_full.json');
@@ -79,6 +77,8 @@ async function main() {
   const catalogFullList = JSON.parse(fs.readFileSync(catalogFullPath, 'utf8'));
   const videosTabList = JSON.parse(fs.readFileSync(videosTabPath, 'utf8'));
   const existingInsights = JSON.parse(fs.readFileSync(insightsPath, 'utf8'));
+
+  console.log(`>>> BUILDING H2DEV MAIN TRACK 7-LAYER GOLD STANDARD DATA (${catalogList.length} VIDEOS) <<<`);
 
   const catBySku = new Map(catalogList.map(x => [x.sku, x]));
   const cfBySku = new Map(catalogFullList.map(x => [x.sku, x]));
@@ -397,13 +397,16 @@ async function main() {
       ? vtItem.market
       : (Array.isArray(catItem.market) && catItem.market.length ? catItem.market : ['🇻🇳 Việt Nam']);
     const publishedAt = vtItem.published_at || catItem.published_at || cfItem.published_at || '2026-08-01';
+    const ingestedAt = vtItem.ingested_at || catItem.ingested_at || cfItem.ingested_at || '';
     const seqStr = modMeta.seq || vtItem.seq || catItem.seq || '01';
 
     catItem.seq = seqStr;
+    catItem.module_id = modMeta.module_id;
     catItem.contentNiche = contentNiche;
     catItem.niche = vtItem.niche || contentNiche;
     catItem.market = markets;
     catItem.published_at = publishedAt;
+    if (ingestedAt) catItem.ingested_at = ingestedAt;
     catItem.docs = docs;
     catItem.docsCount = docs.length;
     catItem.channels = groundedChannels;
@@ -411,10 +414,12 @@ async function main() {
 
     if (cfBySku.has(sku)) {
       cfItem.seq = seqStr;
+      cfItem.module_id = modMeta.module_id;
       cfItem.contentNiche = contentNiche;
       cfItem.niche = vtItem.niche || contentNiche;
       cfItem.market = markets;
       cfItem.published_at = publishedAt;
+      if (ingestedAt) cfItem.ingested_at = ingestedAt;
       cfItem.docs = docs;
       cfItem.docsCount = docs.length;
       cfItem.channels = groundedChannels;
@@ -423,10 +428,12 @@ async function main() {
 
     if (vtBySku.has(sku)) {
       vtItem.seq = seqStr;
+      vtItem.module_id = modMeta.module_id;
       vtItem.contentNiche = contentNiche;
       vtItem.niche = vtItem.niche || contentNiche;
       vtItem.market = markets;
       vtItem.published_at = publishedAt;
+      if (ingestedAt) vtItem.ingested_at = ingestedAt;
       vtItem.docs = docs;
       vtItem.docsCount = docs.length;
       vtItem.channels = groundedChannels;
@@ -445,6 +452,9 @@ async function main() {
       it.contentNiche = catItem.contentNiche || vtItem.contentNiche || mod.title;
       it.market = catItem.market || vtItem.market || ['🇻🇳 Việt Nam'];
       it.published_at = catItem.published_at || it.published_at || '2026-08-01';
+      if (catItem.ingested_at || vtItem.ingested_at || it.ingested_at) {
+        it.ingested_at = catItem.ingested_at || vtItem.ingested_at || it.ingested_at;
+      }
       it.docs = catItem.docs || it.docs || [];
       it.docsCount = it.docs.length;
       it.channels = catItem.channels || [];
@@ -458,7 +468,91 @@ async function main() {
   fs.writeFileSync(path.join(ROOT, 'data', 'videos.json'), JSON.stringify(videosTabList, null, 2), 'utf8');
   fs.writeFileSync(insightsPath, JSON.stringify(existingInsights, null, 2), 'utf8');
 
-  console.log(`✅ H2DEV MAIN TRACK SYNCED: ${catalogList.length} videos across modules.json, catalog.json, catalog_full.json, data-tabs/videos.json, video_insights.json, and video/<SKU>/insight.json`);
+  // 8. Auto-sync data-tabs/chien-luoc.json -> matrix144 (items, totalVideos, totalWords, clusterCounts)
+  const chienLuocPath = path.join(ROOT, 'data-tabs', 'chien-luoc.json');
+  if (fs.existsSync(chienLuocPath)) {
+    const clData = JSON.parse(fs.readFileSync(chienLuocPath, 'utf8'));
+    if (clData && clData.matrix144 && Array.isArray(clData.matrix144.clusters)) {
+      const m144 = clData.matrix144;
+      const clusters = m144.clusters;
+      const clusterById = new Map(clusters.map(c => [c.id, c]));
+      const existingItems = Array.isArray(m144.items) ? m144.items : [];
+      const itemBySkuLower = new Map(existingItems.map(it => [String(it.sku || '').toLowerCase(), it]));
+
+      const inferClusterId = (vid, insObj) => {
+        const hay = `${vid.title || ''} ${vid.niche || ''} ${vid.contentNiche || ''} ${(insObj && insObj.actual_topic) || ''}`.toLowerCase();
+        if (/nhân vật đồng nhất|tạo câu chuyện bằng ai|âm nhạc giai điệu|suno|prompt|midjourney|flux|5p|kling|veo/i.test(hay)) {
+          return 'prompt-ai-dao-dien-visual';
+        }
+        let bestId = 'ban-content-nhan-ban';
+        let bestScore = 0;
+        for (const c of clusters) {
+          let score = 0;
+          for (const kw of (c.keywords || [])) {
+            if (hay.includes(String(kw).toLowerCase())) score++;
+          }
+          if (score > bestScore) {
+            bestScore = score;
+            bestId = c.id;
+          }
+        }
+        return bestId;
+      };
+
+      for (const vid of videosTabList) {
+        const sku = vid.sku;
+        const keyLower = String(sku || '').toLowerCase();
+        if (itemBySkuLower.has(keyLower)) continue;
+
+        const insObj = existingInsights[sku] || {};
+        const tjPath = path.join(ROOT, 'video', sku, 'transcript.json');
+        const trObj = fs.existsSync(tjPath) ? JSON.parse(fs.readFileSync(tjPath, 'utf8')) : {};
+        const segs = Array.isArray(trObj.segments) ? trObj.segments : [];
+        const fullText = segs.map(s => String(s.text || '').trim()).filter(Boolean).join(' ');
+        const wordCount = fullText ? fullText.split(/\s+/).filter(Boolean).length : 0;
+        const sample = segs.slice(0, 3).map(s => String(s.text || '').trim()).filter(Boolean).join(' | ').slice(0, 260);
+
+        const cId = inferClusterId(vid, insObj);
+        const cMeta = clusterById.get(cId) || clusters[0];
+        const es = (insObj && insObj.edit_sop) || {};
+        const addArr = Array.isArray(es.additional) ? es.additional : [];
+        const sopStr = `primary: ${es.primary || ''} | additional: [${addArr.map(s => `'${String(s).replace(/'/g, "\\'")}'`).join(', ')}]`.slice(0, 300);
+
+        const newItem = {
+          sku,
+          title: vid.title || insObj.title || sku,
+          duration: vid.duration || '10:00',
+          clusterId: cMeta.id,
+          clusterName: cMeta.name,
+          transcriptSample: sample,
+          transcriptWords: wordCount,
+          sopSummary: sopStr,
+          avoidFlags: Array.isArray(insObj.avoid_flags) ? insObj.avoid_flags.slice(0, 3) : [],
+          takeaways: [],
+          attachedCount: Array.isArray(vid.docs) ? vid.docs.length : (vid.docsCount || 2)
+        };
+        existingItems.push(newItem);
+        itemBySkuLower.set(keyLower, newItem);
+      }
+
+      const validSkusLower = new Set(videosTabList.map(v => String(v.sku || '').toLowerCase()));
+      const syncedItems = existingItems.filter(it => validSkusLower.has(String(it.sku || '').toLowerCase()));
+      const clusterCounts = {};
+      for (const c of clusters) clusterCounts[c.id] = 0;
+      let totalWords = 0;
+      for (const it of syncedItems) {
+        totalWords += Number(it.transcriptWords || 0);
+        clusterCounts[it.clusterId] = (clusterCounts[it.clusterId] || 0) + 1;
+      }
+      m144.items = syncedItems;
+      m144.totalVideos = syncedItems.length;
+      m144.totalWords = totalWords;
+      m144.clusterCounts = clusterCounts;
+      fs.writeFileSync(chienLuocPath, JSON.stringify(clData, null, 2) + '\n', 'utf8');
+    }
+  }
+
+  console.log(`✅ H2DEV MAIN TRACK SYNCED: ${catalogList.length} videos across modules.json, catalog.json, catalog_full.json, data-tabs/videos.json, data-tabs/chien-luoc.json (matrix144), video_insights.json, and video/<SKU>/insight.json`);
 }
 
 main().catch(err => {

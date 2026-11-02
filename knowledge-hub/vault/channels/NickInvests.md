@@ -1,12 +1,12 @@
 ---
 handle: "@NickInvests"
-name: "Nick Invests"
+name: "@NickInvests"
 url: "https://www.youtube.com/@NickInvests"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @NickInvests (Nick Invests)
+# Kênh Đối Thủ / Kênh Mẫu: @NickInvests (@NickInvests)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@NickInvests](https://www.youtube.com/@NickInvests)

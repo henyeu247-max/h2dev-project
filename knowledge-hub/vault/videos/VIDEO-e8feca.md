@@ -6,11 +6,11 @@ module_id: "HUAN-M08"
 module_title: "8. LỜI HỨA CUỐI CÙNG - BẠN SẼ KHÔNG THỂ THUA NẾU"
 seq: "10"
 niche: "Chiến Lược Tăng Trưởng Kênh: Nhiều Hơn, Tốt Hơn & Làm Mới"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "13:59"
 published_at: "2026-09-01"
 toolsCount: 0
-channelsCount: 5
+channelsCount: 4
 docsCount: 5
 player_url: "/player.html?sku=VIDEO-e8feca&track=huan"
 ---
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-e8feca&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M08|HUAN-M08 — 8. LỜI HỨA CUỐI CÙNG - BẠN SẼ KHÔNG THỂ THUA NẾU]] (Bài `#10`)  
 > - **Ngách nội dung (Niche):** [[niches/chien-luoc-tang-truong-kenh-nhieu-hon-tot-hon-lam-moi|Chiến Lược Tăng Trưởng Kênh: Nhiều Hơn, Tốt Hơn & Làm Mới]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `13:59` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `13:59` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-e8feca&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-e8feca/README.md)
 
 ---
@@ -57,7 +57,6 @@ player_url: "/player.html?sku=VIDEO-e8feca&track=huan"
 - [[channels/BRIGHT_SIDE_(@BRIGHTSIDEOFFICIAL)|@BRIGHT SIDE (@BRIGHTSIDEOFFICIAL)]]
 - [[channels/MrBeast_(@MrBeast)|@MrBeast (@MrBeast)]]
 - [[channels/T-Series_(@TSeries)|@T-Series (@TSeries)]]
-- [[channels/Pinkfong_Baby_Shark_(@Pinkfong)|@Pinkfong Baby Shark (@Pinkfong)]]
 
 ## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)
 - **Hồ sơ phân tích & SOP thực chiến: Làm Mãi Không Có Kết Quả Thì LÀM GÌ Tiếp Theo? (README.md):** `docs/VIDEO-e8feca/README.md`

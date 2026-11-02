@@ -1,12 +1,12 @@
 ---
 handle: "@WorldAccordingToBriggs"
-name: "World According To Briggs"
+name: "@WorldAccordingToBriggs"
 url: "https://www.youtube.com/@WorldAccordingToBriggs"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @WorldAccordingToBriggs (World According To Briggs)
+# Kênh Đối Thủ / Kênh Mẫu: @WorldAccordingToBriggs (@WorldAccordingToBriggs)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@WorldAccordingToBriggs](https://www.youtube.com/@WorldAccordingToBriggs)

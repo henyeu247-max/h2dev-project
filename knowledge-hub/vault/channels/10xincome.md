@@ -1,12 +1,12 @@
 ---
 handle: "@10xincome"
-name: "10X INCOME"
+name: "@10xincome"
 url: "https://www.youtube.com/@10xincome"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @10xincome (10X INCOME)
+# Kênh Đối Thủ / Kênh Mẫu: @10xincome (@10xincome)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@10xincome](https://www.youtube.com/@10xincome)

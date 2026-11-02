@@ -1,12 +1,12 @@
 ---
 handle: "@KhongGioiHanNew"
-name: "Không Giới Hạn New"
+name: "@KhongGioiHanNew"
 url: "https://www.youtube.com/@KhongGioiHanNew"
 status: "LIVE_HTTP_200"
 videos_count: 3
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @KhongGioiHanNew (Không Giới Hạn New)
+# Kênh Đối Thủ / Kênh Mẫu: @KhongGioiHanNew (@KhongGioiHanNew)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@KhongGioiHanNew](https://www.youtube.com/@KhongGioiHanNew)

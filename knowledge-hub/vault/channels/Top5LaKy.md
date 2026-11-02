@@ -1,12 +1,12 @@
 ---
 handle: "@Top5LaKy"
-name: "Top 5 Lạ Kỳ"
+name: "@Top5LaKy"
 url: "https://www.youtube.com/@Top5LaKy"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Top5LaKy (Top 5 Lạ Kỳ)
+# Kênh Đối Thủ / Kênh Mẫu: @Top5LaKy (@Top5LaKy)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Top5LaKy](https://www.youtube.com/@Top5LaKy)

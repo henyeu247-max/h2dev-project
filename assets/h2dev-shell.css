@@ -528,7 +528,7 @@ html { scrollbar-gutter: stable; }
    Lưu ý WCAG 2.5.8: các ::after có thể chồng nhẹ nhau ở cụm nút inline —
    được phép theo mục spacing (inline exception), vẫn đạt AA 24px và gần AAA 44px.
    ========================================================================== */
-#freset, #freset-empty { min-height: 44px; }
+#freset, #freset-empty, #freset-nx, #freset-nx-empty { min-height: 44px; }
 .btn-open-raw-deep { min-height: 44px; }
 /* #btnPrev/#btnNext: quy tac chinh nam o player.css (.player-controls specificity thang ID-only o day) */
 

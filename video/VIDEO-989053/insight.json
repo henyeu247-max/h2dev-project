@@ -35,33 +35,33 @@
   ],
   "key_timestamps": [
     {
-      "seconds": 0,
       "time": "00:00",
+      "seconds": 0,
       "label": "Phân tích Kênh 1 US (@thehealthcode-12): Mới lập tháng 8, 7 video đạt 41,9K sub ngách phong thủy may mắn"
     },
     {
-      "seconds": 87,
       "time": "01:27",
+      "seconds": 87,
       "label": "Đối chiếu Kênh 2 lớn (@Faith_Spotlight, 98,4K sub): Lý do chủ đề tiền bạc nổ 788K view còn chủ đề Chúa bị flop"
     },
     {
-      "seconds": 185,
       "time": "03:05",
+      "seconds": 185,
       "label": "Chiến thuật mượn nhân vật Hàn Quốc (Dr. David Yonggi Cho) đánh tệp khán giả Mỹ và châu Âu"
     },
     {
-      "seconds": 265,
       "time": "04:25",
+      "seconds": 265,
       "label": "Tư duy nhân bản: Bám chặt ngách phong thủy tài lộc của kênh đầu và nhân bản sang Hàn, Việt"
     },
     {
-      "seconds": 341,
       "time": "05:41",
+      "seconds": 341,
       "label": "Phân tích Kênh 3 Hàn Quốc (@노년기건강길잡이): Mới 9 video nổ 189K view ngách sức khỏe cụ già 103–105 tuổi"
     },
     {
-      "seconds": 422,
       "time": "07:02",
+      "seconds": 422,
       "label": "Soi cách dựng thực tế (footage thiên nhiên + sóng âm + phụ đề) và cảnh báo tránh làm video Auto-AI"
     }
   ],
@@ -71,9 +71,9 @@
   "claims_require_external_verification": false,
   "source_transcript": "video/VIDEO-989053/transcript.txt",
   "sop_steps": [
-    "Mượn nhân vật nổi tiếng rồi làm các ngách khác nhau, không cần bám kênh đối thủ",
-    "Có thể nhân bản sang thị trường Việt hoặc Hàn",
-    "Edit theo quy trình đã hướng dẫn: ghép video thiên nhiên làm nền, thêm nhân vật và sóng âm",
-    "Làm đúng ngách nhỏ thì sẽ lên view dù video đầu chỉ vài chục view"
+    "Mượn hình tượng nhân vật có uy tín (như Dr. David Yonggi Cho) nhưng định hướng kịch bản xoay quanh chủ đề phong thủy nhà cửa, màu sắc thu hút tài lộc và sự may mắn thay vì tôn giáo thuần túy.",
+    "Có thể dùng một nhân vật nổi tiếng để nhân bản sang nhiều ngách trend khác nhau hoặc đem mô hình này từ thị trường US về Việt Nam và Hàn Quốc.",
+    "Với ngách sức khỏe Hàn Quốc (@노년기건강길잡이), đặt tiêu đề và chữ trên thumbnail gắn chặt với con số đại thọ trên 100 tuổi (103세, 105세) kết hợp 3 món ăn/thói quen giúp hết đau nhức chân.",
+    "Dựng video bằng cách ghép footage thiên nhiên chuyển động, chèn khung nhân vật, sóng âm nhạc và phụ đề rõ ràng; tránh dùng video auto-AI toàn bộ."
   ]
 }

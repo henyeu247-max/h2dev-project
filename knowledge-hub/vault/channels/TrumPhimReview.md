@@ -1,16 +1,16 @@
 ---
 handle: "@TrumPhimReview"
-name: "Trùm Phim Review"
+name: "@TrumPhimReview"
 url: "https://www.youtube.com/@TrumPhimReview"
-status: "DEAD"
+status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TrumPhimReview (Trùm Phim Review)
+# Kênh Đối Thủ / Kênh Mẫu: @TrumPhimReview (@TrumPhimReview)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TrumPhimReview](https://www.youtube.com/@TrumPhimReview)
-- **Trạng thái kiểm định:** `DEAD (Đã dừng / Gỡ)`
+- **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`
 

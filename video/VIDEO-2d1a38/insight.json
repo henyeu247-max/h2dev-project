@@ -1,0 +1,96 @@
+{
+  "sku": "VIDEO-2d1a38",
+  "title": "Hướng dẫn Thực chiến ngách mới Thị trường Hoa Kỳ (US) + Tặng kèm Skill edit video tự động 100% giống đối thủ  |  Update 29-10-2026",
+  "actual_topic": "Thực Chiến Ngách Lịch Sử Quân Sự Bản Đồ Địa Hình 3D Hoa Kỳ (@TerrainWalk) & Tự Động Dựng Bằng H2 Terrain Studio",
+  "summary": "Hướng dẫn khai thác ngách lịch sử quân sự phân tích độ cao địa hình 3D tại thị trường Hoa Kỳ theo mẫu kênh @TerrainWalk, sử dụng h2-terrain-studio.plugin trên Claude để tự động tải dữ liệu địa hình vệ tinh và dựng sa bàn 3D.",
+  "category_group": "view_ngoai",
+  "niche_primary": "Lịch Sử Quân Sự & Bản Đồ Địa Hình 3D (US)",
+  "niche_id": "us-3d-terrain-military-history",
+  "target_market": "Hoa Kỳ (US)",
+  "market_code": "US",
+  "key_takeaways": [
+    "Giải mã thành công của kênh @TerrainWalk tại thị trường Hoa Kỳ: Phân tích các trận đánh lịch sử dựa trên độ cao địa hình 3D giúp thu hút khán giả Mỹ có doanh thu quảng cáo rất cao.",
+    "Cài đặt h2-terrain-studio.plugin vào Claude và gọi lệnh /kich-ban-terrain để tự động quét kênh @TerrainWalk, lọc bỏ các trận đánh đã làm và xuất kịch bản tiếng Anh chuẩn xác.",
+    "Tự động hóa kỹ thuật dựng bản đồ 3D phức tạp qua lệnh /lam-video-terrain: Tự động tải dữ liệu độ cao vệ tinh, dựng mô hình địa hình 3D, vẽ lát cắt độ cao và khối quân đội di chuyển.",
+    "Tốc độ xử lý vượt trội trên máy tính có card đồ họa rời: Chỉ mất vài phút để hoàn thiện các phân cảnh sa bàn 3D và cho phép chạy song song nhiều dự án cùng lúc.",
+    "Em chào tất cả mọi người nha. Tiếp tục hôm nay thì em sẽ hướng dẫn mọi người làm thêm một cái ngách mới ở thị trường U.S nữa nha."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình sản xuất tự động video lịch sử quân sự bản đồ địa hình 3D thị trường Hoa Kỳ theo mẫu @TerrainWalk bằng Claude và h2-terrain-studio.plugin.",
+    "additional": [
+      "Cài đặt tệp h2-terrain-studio.plugin vào Claude Desktop và chuẩn bị thư mục làm việc cho dự án lịch sử quân sự Hoa Kỳ.",
+      "Gọi lệnh /kich-ban-terrain để hệ thống quét danh sách video của @TerrainWalk, chọn trận đánh mới (như trận Isandlwana 1879) và xuất kịch bản kèm tọa độ địa lý.",
+      "Khởi tạo tệp âm thanh thuyết minh tiếng Anh từ bản thảo kịch bản và đặt vào thư mục dự án theo đúng hướng dẫn.",
+      "Chạy lệnh /lam-video-terrain để bộ công cụ tự động tải dữ liệu địa hình vệ tinh, kết xuất chuyển động camera 3D, biểu đồ độ cao và xuất bản video MP4 1080p."
+    ]
+  },
+  "sop_steps": [
+    "Cài đặt tệp h2-terrain-studio.plugin vào Claude Desktop và chuẩn bị thư mục làm việc cho dự án lịch sử quân sự Hoa Kỳ.",
+    "Gọi lệnh /kich-ban-terrain để hệ thống quét danh sách video của @TerrainWalk, chọn trận đánh mới (như trận Isandlwana 1879) và xuất kịch bản kèm tọa độ địa lý.",
+    "Khởi tạo tệp âm thanh thuyết minh tiếng Anh từ bản thảo kịch bản và đặt vào thư mục dự án theo đúng hướng dẫn.",
+    "Chạy lệnh /lam-video-terrain để bộ công cụ tự động tải dữ liệu địa hình vệ tinh, kết xuất chuyển động camera 3D, biểu đồ độ cao và xuất bản video MP4 1080p."
+  ],
+  "avoid_flags": [
+    "Làm trùng lặp các trận đánh mà kênh đối thủ @TerrainWalk vừa đăng tải thay vì để lệnh /kich-ban-terrain tự động quét và loại trừ.",
+    "Dựng bản đồ phẳng 2D thiếu thông số độ cao địa hình (như cao độ sườn đồi, thung lũng và tầm bắn pháo binh) làm mất đi bản sắc cốt lõi của ngách."
+  ],
+  "tools_mentioned": [
+    "Claude"
+  ],
+  "channels_mentioned": [
+    "@TerrainWalk"
+  ],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Phân tích kênh đối thủ @TerrainWalk tại thị trường Hoa Kỳ với định dạng bản đồ địa hình 3D quân sự"
+    },
+    {
+      "time": "02:06",
+      "seconds": 126,
+      "label": "So sánh hiệu năng xử lý đồ họa trên PC có card rời và cài đặt h2-terrain-studio.plugin vào Claude"
+    },
+    {
+      "time": "07:46",
+      "seconds": 466,
+      "label": "Gọi lệnh /kich-ban-terrain: Quét kênh mẫu @TerrainWalk, lọc trùng chủ đề và viết kịch bản trận đánh"
+    },
+    {
+      "time": "13:26",
+      "seconds": 806,
+      "label": "Kiểm chứng tốc độ tự động hóa: Chưa đầy 3 phút để hoàn tất khâu xử lý dữ liệu và dựng cảnh"
+    },
+    {
+      "time": "19:30",
+      "seconds": 1170,
+      "label": "Vận hành song song nhiều dự án với lệnh /lam-video-terrain tự động tải vệ tinh DEM và vẽ 3D"
+    },
+    {
+      "time": "25:25",
+      "seconds": 1525,
+      "label": "Xem thành phẩm trận Isandlwana 1879 với hiệu ứng camera bay 3D, sa bàn chiến thuật và thuyết minh"
+    }
+  ],
+  "course_docs": [
+    {
+      "title": "Plugin Tự Động Hóa H2 Terrain Studio (h2-terrain-studio.plugin)",
+      "name": "Plugin Tự Động Hóa H2 Terrain Studio (h2-terrain-studio.plugin)",
+      "file": "assets/docs/VIDEO-2d1a38/h2-terrain-studio.plugin",
+      "link": "assets/docs/VIDEO-2d1a38/h2-terrain-studio.plugin"
+    },
+    {
+      "title": "Mô tả bài giảng & Tài nguyên gốc (description.txt)",
+      "name": "Mô tả bài giảng & Tài nguyên gốc (description.txt)",
+      "file": "assets/docs/VIDEO-2d1a38/description.txt",
+      "readFile": "assets/docs/VIDEO-2d1a38/description.txt",
+      "link": "assets/docs/VIDEO-2d1a38/description.txt"
+    }
+  ],
+  "analysis_method": "agv_3.8_multimodal_7layer_verified",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-2d1a38/transcript.txt"
+}

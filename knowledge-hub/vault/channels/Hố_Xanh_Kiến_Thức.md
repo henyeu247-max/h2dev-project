@@ -1,15 +1,15 @@
 ---
 handle: "@Hố Xanh Kiến Thức"
-name: "Hố Xanh Kiến Thức"
-url: "https://www.youtube.com/@HoXanhKienThuc"
+name: "@Hố Xanh Kiến Thức"
+url: "https://www.youtube.com/@H%E1%BB%91%20Xanh%20Ki%E1%BA%BFn%20Th%E1%BB%A9c"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Hố Xanh Kiến Thức (Hố Xanh Kiến Thức)
+# Kênh Đối Thủ / Kênh Mẫu: @Hố Xanh Kiến Thức (@Hố Xanh Kiến Thức)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/@HoXanhKienThuc](https://www.youtube.com/@HoXanhKienThuc)
+- **URL YouTube:** [https://www.youtube.com/@H%E1%BB%91%20Xanh%20Ki%E1%BA%BFn%20Th%E1%BB%A9c](https://www.youtube.com/@H%E1%BB%91%20Xanh%20Ki%E1%BA%BFn%20Th%E1%BB%A9c)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

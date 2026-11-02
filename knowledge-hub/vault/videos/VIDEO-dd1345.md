@@ -6,7 +6,7 @@ module_id: "DGMD-M03"
 module_title: "QUY TRÌNH SẢN XUẤT VIDEO NGẮN"
 seq: "02"
 niche: "Bán Content & Reup Hợp Pháp"
-markets: ["🇻🇳 Việt Nam", "📱 Shorts / Reels"]
+markets: ["🌍 View Ngoại", "📱 Shorts / Reels"]
 duration: "07:01"
 published_at: "2026-10-12"
 toolsCount: 9
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-dd1345&track=dgmd"
 # VIDEO-dd1345 — Quy Trình Sản Xuất Video Doyin
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M03|DGMD-M03 — QUY TRÌNH SẢN XUẤT VIDEO NGẮN]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/ban-content-reup-hop-phap|Bán Content & Reup Hợp Pháp]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 📱 Shorts / Reels | **Thời lượng:** `07:01` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại · 📱 Shorts / Reels | **Thời lượng:** `07:01` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-dd1345&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-dd1345/README.md)
 
 ---
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-dd1345&track=dgmd"
 - Điểm đột phá của quy trình là sử dụng khả năng nhìn trực tiếp file video (Multimodal Video Understanding) của Google Gemini: Sau khi nạp Master Prompt 10 bước, học viên tải thẳng file .mp4 tải từ Douyin lên Gemini để AI tự xem từng giây và viết 3 phiên bản kịch bản (Hài hước, Cà khịa, Kể chuyện) khớp chính xác thời lượng theo công thức 2.5 - 3 từ/giây.
 - Cách khai thác kho video Douyin vô tận: Đăng ký tài khoản Douyin bằng số điện thoại Việt Nam, dùng Google Dịch chuyển các từ khóa ngách (động vật hài hước, ăn uống, giải trí, gia đình) sang tiếng Trung rồi dán vào thanh tìm kiếm Douyin và tải video không logo qua công cụ tải video Douyin (Snaptik Douyin).
 - Công thức hậu kỳ tốc độ cao trên CapCut Pro: Tách kịch bản theo từng mốc 4 giây (0-4s, 4-8s, 8-12s), dùng tính năng Chuyển văn bản thành lời nói giọng 'Cô gái hoạt ngôn', đẩy tốc độ đọc lên 1.2x kèm bật 'Thay đổi âm thanh độ cao', chạy Phụ đề tự động tiếng Việt và phủ lớp Bộ lọc '4K' lên toàn bộ video.
+- Chào anh chị em học viên, hôm nay chúng ta đến với cái bài sản xuất video short trên nền tảng YouTube. Anh em có thể nhìn thấy 2 kênh YouTube này, tôi đang lấy 2 kênh để
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình sản xuất Shorts review hài hước từ nguồn Douyin bằng Google Gemini + CapCut Pro

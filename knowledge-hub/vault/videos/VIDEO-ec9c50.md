@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M01"
 module_title: "Xử lý & Kháng lỗi kênh YouTube"
 seq: "05"
-niche: "Kháng Bản Quyền & Xử Lý Lỗi GA"
+niche: "Kháng bản quyền & Khôi phục kênh YPP"
 markets: ["🌐 Ngoại"]
 duration: "1:42"
 published_at: "2025-12-19"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-ec9c50&track=h2dev"
 # VIDEO-ec9c50 — KHÁNG SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG - GẬY BẢN QUYỀN (99% VỀ BỜ) MỚI NHẤT 2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M01|H2DEV-M01 — Xử lý & Kháng lỗi kênh YouTube]] (Bài `#05`)  
-> - **Ngách nội dung (Niche):** [[niches/khang-ban-quyen-xu-ly-loi-ga|Kháng Bản Quyền & Xử Lý Lỗi GA]]  
+> - **Ngách nội dung (Niche):** [[niches/khang-ban-quyen-khoi-phuc-kenh-ypp|Kháng bản quyền & Khôi phục kênh YPP]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `1:42` | **Ngày đăng:** `2025-12-19`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-ec9c50&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-ec9c50/README.md)
 

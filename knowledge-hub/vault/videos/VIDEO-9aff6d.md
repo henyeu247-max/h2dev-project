@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "10"
-niche: "Công Nghệ & Mẹo Vặt Cuộc Sống Nhật"
+niche: "Xe Cộ & Trí Tuệ Dân Gian Nhật Bản"
 markets: ["🇯🇵 Nhật"]
 duration: "12:11"
 published_at: "2026-07-12"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-9aff6d&track=h2dev"
 # VIDEO-9aff6d — 4 video nổ hơn 300k view - Update 2 ngách mới cực kỳ trends và hướng dẫn edit tạo khung cho ngách nhỏ...
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#10`)  
-> - **Ngách nội dung (Niche):** [[niches/cong-nghe-meo-vat-cuoc-song-nhat|Công Nghệ & Mẹo Vặt Cuộc Sống Nhật]]  
+> - **Ngách nội dung (Niche):** [[niches/xe-co-tri-tue-dan-gian-nhat-ban|Xe Cộ & Trí Tuệ Dân Gian Nhật Bản]]  
 > - **Thị trường:** 🇯🇵 Nhật | **Thời lượng:** `12:11` | **Ngày đăng:** `2026-07-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-9aff6d&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-9aff6d/README.md)
 

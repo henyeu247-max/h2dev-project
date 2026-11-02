@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M07"
 module_title: "Module 5 — Edit video & Thumbnail chuẩn A-Z"
 seq: "06"
-niche: "Bán Content & Phát Triển Kênh"
+niche: "Thiết Kế Thumbnail & Edit Key Nonagon"
 markets: ["🌐 Ngoại"]
 duration: "1:28:14"
 published_at: "2025-08-19"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-8e0275&track=h2dev"
 # VIDEO-8e0275 — Hướng dẫn tạo edit + thumb key Nonagon
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M07|H2DEV-M07 — Module 5 — Edit video & Thumbnail chuẩn A-Z]] (Bài `#06`)  
-> - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
+> - **Ngách nội dung (Niche):** [[niches/thiet-ke-thumbnail-edit-key-nonagon|Thiết Kế Thumbnail & Edit Key Nonagon]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `1:28:14` | **Ngày đăng:** `2025-08-19`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-8e0275&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-8e0275/README.md)
 
@@ -32,12 +32,13 @@ player_url: "/player.html?sku=VIDEO-8e0275&track=h2dev"
 - Giai đoạn 2 trên CapCut PC (09:00 – 20:00): Nhập 8 icon nhân vật PNG lên nền trắng, sắp xếp bố cục vòng tròn đối xứng và gắn nhãn tên nhân vật bằng phông chữ Fira Sans Black (cỡ 15, căn giữa).
 - Giai đoạn 3 trên CapCut PC (20:00 – 45:00): Đưa file âm thanh thuyết minh (Narration 1.mp3) vào trục thời gian, cắt chia từng phân đoạn so sánh cặp đấu và đồng bộ chuyển động khung nhân vật theo nhịp đọc.
 - Giai đoạn 4 trên CapCut PC (45:00 – 88:14): Dựng thanh đo chỉ số sức mạnh/trí tuệ (Ability Comparison Bars), căn chỉnh keyframe chuyển cảnh mượt mà và rà soát toàn bộ timeline trước khi xuất file.
+- Hoàn thiện trên CapCut PC: Kiểm tra đồng bộ âm thanh hiệu ứng SFX, căn chỉnh phụ đề và xuất bản video hoàn chỉnh chất lượng Full HD.
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình 3 bước thực chiến: Thực hành trực quan 88 phút (không lời thoại)
-1. Bước 1 (Photopea 00:00–09:00): Tạo canvas vuông trên Photopea, đưa khung vector Nonagon vào làm lớp mask, lần lượt đưa ảnh 8 nhân vật vào dùng Clipping Mask căn chỉnh góc mặt và xuất PNG trong suốt.
-2. Bước 2 (CapCut 09:00–20:00): Mở CapCut PC, tạo nền trắng, xếp 8 icon Nonagon thành sơ đồ đối xứng và thêm các lớp Text (Fira Sans Black) ghi rõ tên từng nhân vật dưới mỗi khung.
-3. Bước 3 (CapCut 20:00–88:14): Nhập track Narration 1.mp3, dựng hiệu ứng zoom/di chuyển keyframe cho từng cặp nhân vật đối đầu, chèn thanh điểm số so sánh và xuất video Full HD.
+1. (Photopea 00:00–09:00): Tạo canvas vuông trên Photopea, đưa khung vector Nonagon vào làm lớp mask, lần lượt đưa ảnh 8 nhân vật vào dùng Clipping Mask căn chỉnh góc mặt và xuất PNG trong suốt.
+2. (CapCut 09:00–20:00): Mở CapCut PC, tạo nền trắng, xếp 8 icon Nonagon thành sơ đồ đối xứng và thêm các lớp Text (Fira Sans Black) ghi rõ tên từng nhân vật dưới mỗi khung.
+3. (CapCut 20:00–88:14): Nhập track Narration 1.mp3, dựng hiệu ứng zoom/di chuyển keyframe cho từng cặp nhân vật đối đầu, chèn thanh điểm số so sánh và xuất video Full HD.
 
 ## 3. Cảnh Báo Rủi Ro & Lỗi Cần Tránh (`Avoid Flags`)
 - ⚠️ Không xuất chung cả 8 nhân vật thành 1 ảnh tĩnh duy nhất trên Photopea; phải xuất rời từng icon PNG nền trong suốt để vào CapCut tạo chuyển động độc lập cho từng nhân vật.

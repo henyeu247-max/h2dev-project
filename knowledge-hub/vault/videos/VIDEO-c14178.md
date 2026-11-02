@@ -6,7 +6,7 @@ module_id: "HUAN-M02"
 module_title: "2. TẠO KÊNH, CHĂM SÓC KÊNH - BƯỚC ĐẦU THẤU HIỂU YOUTUBE"
 seq: "08"
 niche: "Phân tích Case Study Đột phá Ngách & Hiệu ứng Hào quang"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "12:20"
 published_at: "2026-09-01"
 toolsCount: 3
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-c14178&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M02|HUAN-M02 — 2. TẠO KÊNH, CHĂM SÓC KÊNH - BƯỚC ĐẦU THẤU HIỂU YOUTUBE]] (Bài `#08`)  
 > - **Ngách nội dung (Niche):** [[niches/phan-tich-case-study-dot-pha-ngach-hieu-ung-hao-quang|Phân tích Case Study Đột phá Ngách & Hiệu ứng Hào quang]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `12:20` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `12:20` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-c14178&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-c14178/README.md)
 
 ---

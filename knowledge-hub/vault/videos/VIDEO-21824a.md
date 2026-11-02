@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M01"
 module_title: "Xử lý & Kháng lỗi kênh YouTube"
 seq: "02"
-niche: "Bán Content & Phát Triển Kênh"
+niche: "Tôn giáo & Giải nghĩa Kinh Thánh"
 markets: ["🇻🇳 Việt"]
 duration: "3:02"
 published_at: "2026-06-06"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-21824a&track=h2dev"
 # VIDEO-21824a — Bật kiếm tiền kênh học viên Pro
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M01|H2DEV-M01 — Xử lý & Kháng lỗi kênh YouTube]] (Bài `#02`)  
-> - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
+> - **Ngách nội dung (Niche):** [[niches/ton-giao-giai-nghia-kinh-thanh|Tôn giáo & Giải nghĩa Kinh Thánh]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `3:02` | **Ngày đăng:** `2026-06-06`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-21824a&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-21824a/README.md)
 

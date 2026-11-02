@@ -6,7 +6,7 @@ module_id: "HUAN-M12"
 module_title: "SUPPORT KỸ THUẬT "
 seq: "01"
 niche: "Chủ Nghĩa Khắc Kỷ (Stoic) & Quy Trình AI"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "25:05"
 published_at: "2026-09-01"
 toolsCount: 5
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-6657cd&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M12|HUAN-M12 — SUPPORT KỸ THUẬT ]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/chu-nghia-khac-ky-stoic-quy-trinh-ai|Chủ Nghĩa Khắc Kỷ (Stoic) & Quy Trình AI]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `25:05` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `25:05` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-6657cd&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-6657cd/README.md)
 
 ---

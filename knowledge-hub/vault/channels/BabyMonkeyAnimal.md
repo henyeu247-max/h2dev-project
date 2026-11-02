@@ -1,12 +1,12 @@
 ---
 handle: "@BabyMonkeyAnimal"
-name: "Baby Monkey Animal"
+name: "@BabyMonkeyAnimal"
 url: "https://www.youtube.com/@BabyMonkeyAnimal"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @BabyMonkeyAnimal (Baby Monkey Animal)
+# Kênh Đối Thủ / Kênh Mẫu: @BabyMonkeyAnimal (@BabyMonkeyAnimal)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@BabyMonkeyAnimal](https://www.youtube.com/@BabyMonkeyAnimal)

@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M07"
 module_title: "Module 5 — Edit video & Thumbnail chuẩn A-Z"
 seq: "02"
-niche: "Bán Content & Phát Triển Kênh"
+niche: "Thiết Kế Thumbnail Người Que (Chill Dude)"
 markets: ["🌐 Ngoại"]
 duration: "24:22"
 published_at: "2025-08-19"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-b559c8&track=h2dev"
 # VIDEO-b559c8 — Hướng dẫn làm thumb ngách nhỏ trong key người que - Chill Dude - chi tiết
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M07|H2DEV-M07 — Module 5 — Edit video & Thumbnail chuẩn A-Z]] (Bài `#02`)  
-> - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
+> - **Ngách nội dung (Niche):** [[niches/thiet-ke-thumbnail-nguoi-que-chill-dude|Thiết Kế Thumbnail Người Que (Chill Dude)]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `24:22` | **Ngày đăng:** `2025-08-19`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-b559c8&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-b559c8/README.md)
 

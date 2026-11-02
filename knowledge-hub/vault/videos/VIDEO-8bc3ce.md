@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M01"
 module_title: "Xử lý & Kháng lỗi kênh YouTube"
 seq: "07"
-niche: "Xử Lý & Kháng Lỗi Bản Quyền"
+niche: "Reup Hoạt Hình View Việt & Kháng Tắt Kiếm Tiền"
 markets: ["🇻🇳 Việt"]
 duration: "1:53"
 published_at: "2026-09-11"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-8bc3ce&track=h2dev"
 # VIDEO-8bc3ce — Cứu kênh làm Reup dash(doanh thu) hơn 1k7 $ - Reup view Việt
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M01|H2DEV-M01 — Xử lý & Kháng lỗi kênh YouTube]] (Bài `#07`)  
-> - **Ngách nội dung (Niche):** [[niches/xu-ly-khang-loi-ban-quyen|Xử Lý & Kháng Lỗi Bản Quyền]]  
+> - **Ngách nội dung (Niche):** [[niches/reup-hoat-hinh-view-viet-khang-tat-kiem-tien|Reup Hoạt Hình View Việt & Kháng Tắt Kiếm Tiền]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `1:53` | **Ngày đăng:** `2026-09-11`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-8bc3ce&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-8bc3ce/README.md)
 
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-8bc3ce&track=h2dev"
 - Kênh từng bị YouTube quét tắt kiếm tiền do lỗi sử dụng lại nội dung / trùng lặp nội dung nhưng đã được hướng dẫn quay video kháng cáo thành công và bật kiếm tiền trở lại.
 - Dù làm view Việt, nhờ lượng view lớn nên kênh vẫn đạt doanh thu hơn 1.700 USD (1k7 đô), chứng minh làm reup có biến tấu vẫn kiếm tiền bình thường.
 - Khi gặp lỗi sử dụng lại nội dung hoặc trùng lặp nội dung, cần nắm rõ quy trình quay video chứng minh quá trình biên tập để kháng về thành công.
+- Đây là một kênh làm về reup của một anh ở trong gói Pro của mình thì em đã vừa hỗ trợ kháng về rồi nha mọi người.
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Kháng nghị lỗi sử dụng lại nội dung / trùng lặp nội dung để bật kiếm tiền cho kênh reup

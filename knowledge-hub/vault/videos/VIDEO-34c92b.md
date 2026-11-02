@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-34c92b&track=h2dev"
 # VIDEO-34c92b — Update ngách mới và show thực tế thêm kênh nhân bản thị trường
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#16`)  
 > - **Ngách nội dung (Niche):** [[niches/triet-ly-phat-phap|Triết Lý & Phật Pháp]]  
 > - **Thị trường:** 🇯🇵 Nhật · 🇻🇳 Việt | **Thời lượng:** `10:12` | **Ngày đăng:** `2026-06-10`  

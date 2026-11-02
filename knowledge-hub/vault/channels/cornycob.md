@@ -1,12 +1,12 @@
 ---
 handle: "@cornycob"
-name: "CornyCob"
+name: "@cornycob"
 url: "https://www.youtube.com/@cornycob"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @cornycob (CornyCob)
+# Kênh Đối Thủ / Kênh Mẫu: @cornycob (@cornycob)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@cornycob](https://www.youtube.com/@cornycob)

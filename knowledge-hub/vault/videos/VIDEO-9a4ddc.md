@@ -6,7 +6,7 @@ module_id: "H2DEV-M08"
 module_title: "Module 6 — Mẹo & Thủ thuật khác phục lỗi gãy view và chống die kênh (TÚT - TRICK)"
 seq: "04"
 niche: "Kháng Bản Quyền & Xử Lý Lỗi GA"
-markets: ["🇯🇵 Nhật"]
+markets: ["🇻🇳 Việt", "🇨🇳 Trung", "🌐 Ngoại"]
 duration: "10:46"
 published_at: "2025-08-22"
 toolsCount: 2
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-9a4ddc&track=h2dev"
 # VIDEO-9a4ddc — TÚT/ TRICK (mẹo) test bản quyền khi reup - bán content dạng nguồn từ douyin sang youtube
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M08|H2DEV-M08 — Module 6 — Mẹo & Thủ thuật khác phục lỗi gãy view và chống die kênh (TÚT - TRICK)]] (Bài `#04`)  
 > - **Ngách nội dung (Niche):** [[niches/khang-ban-quyen-xu-ly-loi-ga|Kháng Bản Quyền & Xử Lý Lỗi GA]]  
-> - **Thị trường:** 🇯🇵 Nhật | **Thời lượng:** `10:46` | **Ngày đăng:** `2025-08-22`  
+> - **Thị trường:** 🇻🇳 Việt · 🇨🇳 Trung · 🌐 Ngoại | **Thời lượng:** `10:46` | **Ngày đăng:** `2025-08-22`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-9a4ddc&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-9a4ddc/README.md)
 
 ---

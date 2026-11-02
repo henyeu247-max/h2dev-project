@@ -5,8 +5,8 @@ track: "h2dev"
 module_id: "H2DEV-M02"
 module_title: "Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)"
 seq: "11"
-niche: "Kháng Bản Quyền & Xử Lý Lỗi GA"
-markets: ["🇰🇷 Hàn"]
+niche: "Phân quyền kênh & Bảo mật hệ thống chống quét"
+markets: ["🇯🇵 Nhật", "🇰🇷 Hàn", "🇺🇸 Mỹ", "🇻🇳 Việt", "🌐 Ngoại"]
 duration: "2:23"
 published_at: "2025-11-25"
 toolsCount: 2
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-3e5a21&track=h2dev"
 # VIDEO-3e5a21 — HƯỚNG DẪN ADD QUYỀN QUẢN LÝ KÊNH VÀ MAIL KHÔI PHỤC TRÁNH BỊ GOOGLE QUÉT LỖI SPAM HÀNG LOẠT - DIE KÊNH HÀNG LOẠT
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M02|H2DEV-M02 — Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)]] (Bài `#11`)  
-> - **Ngách nội dung (Niche):** [[niches/khang-ban-quyen-xu-ly-loi-ga|Kháng Bản Quyền & Xử Lý Lỗi GA]]  
-> - **Thị trường:** 🇰🇷 Hàn | **Thời lượng:** `2:23` | **Ngày đăng:** `2025-11-25`  
+> - **Ngách nội dung (Niche):** [[niches/phan-quyen-kenh-bao-mat-he-thong-chong-quet|Phân quyền kênh & Bảo mật hệ thống chống quét]]  
+> - **Thị trường:** 🇯🇵 Nhật · 🇰🇷 Hàn · 🇺🇸 Mỹ · 🇻🇳 Việt · 🌐 Ngoại | **Thời lượng:** `2:23` | **Ngày đăng:** `2025-11-25`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-3e5a21&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-3e5a21/README.md)
 
 ---

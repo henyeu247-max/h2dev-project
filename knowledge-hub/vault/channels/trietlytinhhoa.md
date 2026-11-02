@@ -1,12 +1,12 @@
 ---
 handle: "@trietlytinhhoa"
-name: "Triết Lý Tinh Hoa"
+name: "@trietlytinhhoa"
 url: "https://www.youtube.com/@trietlytinhhoa"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @trietlytinhhoa (Triết Lý Tinh Hoa)
+# Kênh Đối Thủ / Kênh Mẫu: @trietlytinhhoa (@trietlytinhhoa)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@trietlytinhhoa](https://www.youtube.com/@trietlytinhhoa)

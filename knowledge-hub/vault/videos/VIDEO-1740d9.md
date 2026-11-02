@@ -6,7 +6,7 @@ module_id: "HUAN-M08"
 module_title: "8. LỜI HỨA CUỐI CÙNG - BẠN SẼ KHÔNG THỂ THUA NẾU"
 seq: "13"
 niche: "Tổng Kết Lộ Trình Khóa Học & Thực Thi Quy Tắc 100"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "12:13"
 published_at: "2026-09-01"
 toolsCount: 0
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-1740d9&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M08|HUAN-M08 — 8. LỜI HỨA CUỐI CÙNG - BẠN SẼ KHÔNG THỂ THUA NẾU]] (Bài `#13`)  
 > - **Ngách nội dung (Niche):** [[niches/tong-ket-lo-trinh-khoa-hoc-thuc-thi-quy-tac-100|Tổng Kết Lộ Trình Khóa Học & Thực Thi Quy Tắc 100]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `12:13` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `12:13` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-1740d9&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-1740d9/README.md)
 
 ---

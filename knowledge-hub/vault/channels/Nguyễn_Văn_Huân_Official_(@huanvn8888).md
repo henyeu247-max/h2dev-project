@@ -1,15 +1,15 @@
 ---
 handle: "@Nguyễn Văn Huân Official (@huanvn8888)"
-name: "Nguyễn Văn Huân Official (@huanvn8888)"
-url: "https://www.youtube.com/@huanvn8888"
+name: "@Nguyễn Văn Huân Official (@huanvn8888)"
+url: "https://www.youtube.com/@Nguy%E1%BB%85n%20V%C4%83n%20Hu%C3%A2n%20Official%20(%40huanvn8888)"
 status: "LIVE_HTTP_200"
 videos_count: 7
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Nguyễn Văn Huân Official (@huanvn8888) (Nguyễn Văn Huân Official (@huanvn8888))
+# Kênh Đối Thủ / Kênh Mẫu: @Nguyễn Văn Huân Official (@huanvn8888) (@Nguyễn Văn Huân Official (@huanvn8888))
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/@huanvn8888](https://www.youtube.com/@huanvn8888)
+- **URL YouTube:** [https://www.youtube.com/@Nguy%E1%BB%85n%20V%C4%83n%20Hu%C3%A2n%20Official%20(%40huanvn8888)](https://www.youtube.com/@Nguy%E1%BB%85n%20V%C4%83n%20Hu%C3%A2n%20Official%20(%40huanvn8888))
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

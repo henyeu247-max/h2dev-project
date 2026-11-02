@@ -1,12 +1,12 @@
 ---
 handle: "@JojosASMR"
-name: "Jojo's ASMR"
+name: "@JojosASMR"
 url: "https://www.youtube.com/@JojosASMR"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @JojosASMR (Jojo's ASMR)
+# Kênh Đối Thủ / Kênh Mẫu: @JojosASMR (@JojosASMR)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@JojosASMR](https://www.youtube.com/@JojosASMR)

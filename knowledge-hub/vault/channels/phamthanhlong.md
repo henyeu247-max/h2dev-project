@@ -1,12 +1,12 @@
 ---
 handle: "@phamthanhlong"
-name: "Phạm Thành Long"
+name: "@phamthanhlong"
 url: "https://www.youtube.com/@phamthanhlong"
 status: "LIVE_HTTP_200"
 videos_count: 12
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @phamthanhlong (Phạm Thành Long)
+# Kênh Đối Thủ / Kênh Mẫu: @phamthanhlong (@phamthanhlong)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@phamthanhlong](https://www.youtube.com/@phamthanhlong)

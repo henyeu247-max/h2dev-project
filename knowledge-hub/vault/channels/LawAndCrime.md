@@ -1,12 +1,12 @@
 ---
 handle: "@LawAndCrime"
-name: "Law&Crime Network"
+name: "@LawAndCrime"
 url: "https://www.youtube.com/@LawAndCrime"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @LawAndCrime (Law&Crime Network)
+# Kênh Đối Thủ / Kênh Mẫu: @LawAndCrime (@LawAndCrime)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@LawAndCrime](https://www.youtube.com/@LawAndCrime)

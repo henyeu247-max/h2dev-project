@@ -22,38 +22,38 @@
   "source_transcript": "video/VIDEO-a59a5e/transcript.txt",
   "key_timestamps": [
     {
-      "seconds": 0,
       "time": "00:00",
+      "seconds": 0,
       "label": "Giới thiệu Ngách 1 (@HopeGarden-KR): Kênh làm vườn Hàn Quốc mới 8 video nổ hơn 226K view"
     },
     {
-      "seconds": 43,
       "time": "00:43",
+      "seconds": 43,
       "label": "Phân tích cấu trúc tiêu đề thời vụ: '11 loài hoa lâu năm phải cắt tỉa trước cuối tháng 9'"
     },
     {
-      "seconds": 95,
       "time": "01:35",
+      "seconds": 95,
       "label": "Mổ xẻ cách edit kênh làm vườn: Giọng AI ElevenLabs + kết hợp ảnh AI với video tự nhiên"
     },
     {
-      "seconds": 189,
       "time": "03:09",
+      "seconds": 189,
       "label": "Hướng dẫn nạp kênh mẫu vào Claude để train form chủ đề và kịch bản làm vườn"
     },
     {
-      "seconds": 226,
       "time": "03:46",
+      "seconds": 226,
       "label": "Giới thiệu Ngách 2 (@FeynmanThought): Kênh cổ 2018 mới đăng 6 video nổ 86K view sau 5 ngày"
     },
     {
-      "seconds": 292,
       "time": "04:52",
+      "seconds": 292,
       "label": "Cách dịch tiêu đề sang tiếng Anh để tìm kênh gốc Hoa Kỳ lấy kịch bản nhân bản sang Hàn"
     },
     {
-      "seconds": 358,
       "time": "05:58",
+      "seconds": 358,
       "label": "Thủ thuật dựng tránh bản quyền: Làm mờ nhân vật thuyết trình và ghép nền thiên hà, vũ trụ"
     }
   ],
@@ -78,10 +78,9 @@
     "Không giữ nguyên video gốc của nhân vật nổi tiếng nước ngoài mà phải làm mờ nhẹ và cắt ghép trên nền vũ trụ/thiên hà để tránh gậy bản quyền hình ảnh."
   ],
   "sop_steps": [
-    "Đọc hết tiêu đề video của kênh để hình dung ra ngách",
-    "Xem video cụ thể để biết cách edit; dùng hình ảnh video AI ghép vào minh họa kịch bản, kèm hình ảnh tự nhiên",
-    "Muốn làm ngách thì cho Claude học kênh mẫu, nó phân tích rồi tạo form, chủ đề, tiêu đề",
-    "Kênh thứ hai: giọng đọc AI, nhân vật làm mờ để tránh bản quyền, cắt từng đoạn rồi lặp lại video nền",
-    "Video nền: search từ khóa dịch sang tiếng Anh trên web video tự nhiên free rồi ghép vào"
+    "Với ngách làm vườn (@HopeGarden-KR): Đọc toàn bộ tiêu đề kênh mẫu để nắm công thức thời vụ (tháng 9, tháng 10), nạp kênh vào Claude để AI phân tích và tạo form chủ đề, kịch bản.",
+    "Kết hợp hình ảnh/video AI minh họa sát từng câu thoại với các đoạn footage cây cối thật ngoài đời, tuyệt đối không làm full AI 100%.",
+    "Với ngách Richard Feynman (@FeynmanThought): Dịch tiêu đề sang tiếng Anh tìm kênh đối thủ gốc bên Hoa Kỳ để lấy nguồn kịch bản bán content sang tiếng Hàn.",
+    "Khi dựng video nhân vật thuyết trình: Dùng giọng đọc AI (ElevenLabs), làm mờ nhẹ khung hình nhân vật gốc để né bản quyền, cắt thành đoạn ngắn lặp lại và ghép trên nền video vũ trụ, thiên hà miễn phí."
   ]
 }

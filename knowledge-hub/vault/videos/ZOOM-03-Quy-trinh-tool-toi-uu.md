@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M11"
 module_title: "Zoom — Quy trình xây kênh từ A–Z (2026-09)"
 seq: "03"
-niche: "Hệ thống / Quy trình"
+niche: "Quy Trình Tool, Tối Ưu AVD, SEO & Seeding"
 markets: ["🇻🇳 Việt"]
 duration: "1:14:22"
 published_at: "2026-09-11"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=ZOOM-03-Quy-trinh-tool-toi-uu&track=h2dev"
 # ZOOM-03-Quy-trinh-tool-toi-uu — Zoom 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Quảng cáo
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M11|H2DEV-M11 — Zoom — Quy trình xây kênh từ A–Z (2026-09)]] (Bài `#03`)  
-> - **Ngách nội dung (Niche):** [[niches/he-thong-quy-trinh|Hệ thống / Quy trình]]  
+> - **Ngách nội dung (Niche):** [[niches/quy-trinh-tool-toi-uu-avd-seo-seeding|Quy Trình Tool, Tối Ưu AVD, SEO & Seeding]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `1:14:22` | **Ngày đăng:** `2026-09-11`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=ZOOM-03-Quy-trinh-tool-toi-uu&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/ZOOM-03-Quy-trinh-tool-toi-uu/README.md)
 
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=ZOOM-03-Quy-trinh-tool-toi-uu&track=h2dev"
 - Mẹo nối đuôi video (ghép thêm đoạn video đã nổ view vào phần cuối video mới trong khoảng 30% thời lượng) để kéo thời lượng xem trung bình và tăng doanh thu RPM.
 - Thiết kế thumbnail nhất quán bằng Gemini và Flow, lưu trữ khoa học theo từng thư mục kịch bản để tránh nhầm lẫn khi sản xuất số lượng lớn.
 - Kỹ thuật seeding kéo đề xuất sau khi đăng (mở 3–4 tab xem qua danh sách phát, tự bình luận và ghim comment) kết hợp cài tiện ích tự động đặt quảng cáo mỗi 2 phút cho video dài.
+- làm hai cái video mỗi cái bây giờ còn tầm 23 phút thôi nhé cho nó tiết kiệm thời gian còn
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình sản xuất hàng loạt kênh: tool tạo video, ghép đuôi tăng thời lượng xem, tiêu đề, thumbnail, danh sách phát, quảng cáo

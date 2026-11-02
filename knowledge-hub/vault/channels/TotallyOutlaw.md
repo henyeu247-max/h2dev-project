@@ -1,12 +1,12 @@
 ---
 handle: "@TotallyOutlaw"
-name: "OUTLAW (31,3 N sub — Top 1 Trending trên NexLev, ngách Police Dashcam/Bodycam đạt 6 triệu view/tháng chỉ với 6 video)"
+name: "@TotallyOutlaw"
 url: "https://www.youtube.com/@TotallyOutlaw"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TotallyOutlaw (OUTLAW (31,3 N sub — Top 1 Trending trên NexLev, ngách Police Dashcam/Bodycam đạt 6 triệu view/tháng chỉ với 6 video))
+# Kênh Đối Thủ / Kênh Mẫu: @TotallyOutlaw (@TotallyOutlaw)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TotallyOutlaw](https://www.youtube.com/@TotallyOutlaw)

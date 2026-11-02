@@ -1,12 +1,12 @@
 ---
 handle: "@DoGoThanhLuan"
-name: "Đồ Gỗ Thành Luân"
+name: "@DoGoThanhLuan"
 url: "https://www.youtube.com/@DoGoThanhLuan"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @DoGoThanhLuan (Đồ Gỗ Thành Luân)
+# Kênh Đối Thủ / Kênh Mẫu: @DoGoThanhLuan (@DoGoThanhLuan)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@DoGoThanhLuan](https://www.youtube.com/@DoGoThanhLuan)

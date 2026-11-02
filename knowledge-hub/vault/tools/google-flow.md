@@ -1,18 +1,19 @@
 ---
 tool_slug: "google-flow"
 tool_name: "Google Flow"
-videos_count: 11
+videos_count: 13
 tracks: ["h2dev", "dgmd"]
 ---
 
 # Công Cụ Thực Chiến: Google Flow
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **Số bài giảng sử dụng công cụ này:** `11` video
+- **Số bài giảng sử dụng công cụ này:** `13` video
 - **Tracks:** `H2DEV`, `DGMD`
 
-## Danh Sách Bài Giảng Ứng Dụng Google Flow (11)
+## Danh Sách Bài Giảng Ứng Dụng Google Flow (13)
 - [[videos/VIDEO-0c72ab|VIDEO-0c72ab — V1 - Full 50 phút Thực chiến hướng dẫn quy trình A-Z làm ngách "What-If" đang cực HOT trends bằng Claude và Edit 100% = Claude code  |  Update 21-10-2026]] (`H2DEV`)
+- [[videos/VIDEO-bfabb6|VIDEO-bfabb6 — Hướng dẫn làm Tự động hóa ngách người que view Việt bằng Claude KHÔNG ĐỤNG tới Capcut, 100% edit giống đối thủ  |  Update 23-10-2026 ]] (`H2DEV`)
 - [[videos/VIDEO-d19b55|VIDEO-d19b55 — Quy Trình Sản Xuất Video Sức Khỏe Yoga]] (`DGMD`)
 - [[videos/VIDEO-0963e3|VIDEO-0963e3 — Quy Trình Sản Xuất Video Nhận Biết English]] (`DGMD`)
 - [[videos/VIDEO-73c662|VIDEO-73c662 — Quy Trình Sản Xuất Video PODCAST Sức Khỏe]] (`DGMD`)
@@ -23,3 +24,4 @@ tracks: ["h2dev", "dgmd"]
 - [[videos/VIDEO-ad6a82|VIDEO-ad6a82 — Các Góc Quay Khi Đặt Câu Prompt ]] (`DGMD`)
 - [[videos/VIDEO-fc62eb|VIDEO-fc62eb — Hãy Tạo Ra Master Prompt Trước Khi Sản Xuất Video]] (`DGMD`)
 - [[videos/VIDEO-27e4e0|VIDEO-27e4e0 — Quy Trình Tạo Ra Tool Tự Động Nhất Quán Nhân Vật]] (`DGMD`)
+- [[videos/VIDEO-434f80|VIDEO-434f80 — Quy Trình Sản Xuất Video PHIM AI VIỆT ]] (`DGMD`)

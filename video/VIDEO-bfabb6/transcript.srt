@@ -1,0 +1,1391 @@
+1
+00:00:00,000 --> 00:00:04,360
+Em chào tất cả anh chị nha, hôm nay em lại tiếp tục lên video hướng dẫn mọi người làm nha.
+
+2
+00:00:04,740 --> 00:00:09,220
+Thì cái ngách vẽ, cái kênh vẽ vời về thị trường Việt này thì hôm trước em có nói mọi người nè,
+
+3
+00:00:09,680 --> 00:00:15,900
+thì kênh này đang bật kiếm tiền, đang hoàn toàn bật kiếm tiền, thì mấy bác có thấy cái chức năng hỏi viên thì mọi người cũng biết mà đúng không?
+
+4
+00:00:16,260 --> 00:00:24,020
+Về cái chỗ này nó cũng có gợi ế số tiền tháng này, tầm 500 đô, thì chắc chắn là cái chỗ này nó tính là không bao giờ chính xác được, kiểu như tương đối thôi mấy bác ạ.
+
+5
+00:00:24,020 --> 00:00:34,380
+Nhưng mà nói chung cái thị trường Việt thì mọi người biết rồi. Rồi bộ mờ nó rất là thấp, về mỗi những cái dạng này cũng vậy. Nhưng mà em chứng minh cho mấy bác thấy được rằng là những
+
+6
+00:00:34,380 --> 00:00:44,740
+cái kênh, những cái ngách người que, hoặc hình người que như này thì làm rất là bình thường chứ không phải là như nhiều anh em thấy là cứ bảo take kiếm tiền, mọi người sợ, mọi người không làm.
+
+7
+00:00:44,740 --> 00:00:57,630
+Nói chung cái vấn đề mình làm YouTube, những icon mình view lần đầu thì mình mong cho nó có view thôi mọi người hả? Chứ mọi người đừng có tính tới việc kiếm được bao nhiêu tiền hay là kiếm tiền, cách kiếm tiền mọi bác. Mình phải làm mới biết được, vẻ
+
+8
+00:00:57,630 --> 00:01:10,520
+làm mới có kinh nghiệm được nha. Chứ còn mọi bác hay không? Rất là nhiều icon đang bật kiếm tiền và đang kiếm bình thường. Chứ mọi bác cứ nghe người này nói, người kia nói. Nhưng mà mọi bác đã chưa làm, chưa thử thì sao mọi người biết được đúng không?
+
+9
+00:01:10,520 --> 00:01:14,080
+Thì đây em tổng quan về kênh này như vậy.
+
+10
+00:01:14,560 --> 00:01:16,320
+Thì kênh này làm từ 3 tháng trước nè.
+
+11
+00:01:16,600 --> 00:01:22,880
+Lúc này nó làm là nó đang hót cái ngách này, ngách tiền sử này nó đang hót ở bên thị trường US nè mọi người.
+
+12
+00:01:22,880 --> 00:01:29,680
+Mọi người lúc trước em cũng có share trên kênh YouTube em cách đây khá là lâu rồi cũng có cái ngách này nè
+
+13
+00:01:29,680 --> 00:01:33,620
+Nhưng mà ở thiền trường US thì kênh này nó cũng nhân bản về nó làm nè
+
+14
+00:01:33,620 --> 00:01:37,680
+Về đây là cũng một kênh nước ngoài em cho một người thêm tâm khảo thêm
+
+15
+00:01:37,680 --> 00:01:40,180
+Hai tuần trước gần 4 triệu view nè
+
+16
+00:01:40,180 --> 00:01:42,000
+Cũng khá là kinh nha
+
+17
+00:01:42,000 --> 00:01:42,616
+Đấy
+
+18
+00:01:42,616 --> 00:01:45,816
+Nhìn cái thông này nó cũng biết nó nói về cái thời tiền sử nha.
+
+19
+00:01:46,776 --> 00:01:53,216
+Thì em cho mọi người thêm tham khảo về kênh này thôi, chứ còn video chính hôm nay là em hướng dẫn mọi người làm thủy trường Việt,
+
+20
+00:01:54,000 --> 00:02:02,476
+Về giống như cái kênh vẽ vời này luôn nha. Về cái thumb cũng giống luôn. Đấy, làm real easy luôn. Về trước khi làm thì đương nhiên sẽ có cái phần
+
+21
+00:02:02,476 --> 00:02:11,736
+plugin này, sẽ gồm tất cả các cái skill trong này. Thì em có để ở dưới khung video mô tả. Với bác tải về nha. Mọi người làm thì mọi
+
+22
+00:02:11,736 --> 00:02:20,996
+người tải về. Xong rồi thì em sẽ vào cái con Claude nè. Và em sẽ up em tải cái file bộ plugin đó vào lên nha. Rồi em sẽ vào setting.
+
+23
+00:02:23,216 --> 00:02:32,056
+Bấm vào Add và tải lên thôi. Thì cái này bác phải xem video trước, cái video mà bảng WorldHide, cái kia WhatExComware em có up lên rồi
+
+24
+00:02:32,056 --> 00:02:40,896
+á, thì bác sẽ hiểu thôi. Rồi mọi người chọn model là Output 5.5, và cái chỗ này không chắc, thì mọi người chọn là Cowork nha.
+
+25
+00:02:40,996 --> 00:02:52,436
+Và cái chỗ này có nhiều phiên bản, có nhiều máy của máy bác tải về, nó không có cái chỗ này, thì máy bác mặc định là cứ đỡ bại về làm thôi. Đấy, tùy theo cái bảng nha. Có nhiều bảng thì nó up sẵn rồi mọi người.
+
+26
+00:02:52,436 --> 00:03:02,696
+tiếp tục thì em sẽ add cái folder vào ví dụ như em chưa có folder đúng không em sẽ tạo một cái folder mới nè em đặt tên là ví dụ như tiền sử h2 đi đấy
+
+27
+00:03:02,800 --> 00:03:14,590
+Em tạo 1 folder mới hoàn toàn luôn, rõng luôn nha. Em sẽ import vào. Em chấp nhận nè. Cho phép nè. Rồi, bây giờ thì em sẽ gọi cái skill là viết kịch bản ra.
+
+28
+00:03:14,590 --> 00:03:26,380
+Cái skill này thì là nó nèm trong cái brewing ngách tiền sở em vừa upload nè mọi người. Bây giờ thì em tải lên thôi. Rồi, bây giờ em sẽ enter. Chấp nhận nè.
+
+29
+00:03:26,380 --> 00:03:32,620
+Và bây giờ em chỉ cần việc ngồi đợi đặt về skill và tạo ra các chủ đề thôi mọi người ạ.
+
+30
+00:03:33,220 --> 00:03:40,800
+Cái quy trình làm cái này thì cũng rất là nhanh thôi và rất là giống với cái video hôm trước luôn, video bản vô 2 mấy bác.
+
+31
+00:03:41,320 --> 00:03:45,160
+Trong khi chạy thì nó sẽ mở lên một cái trình duyệt và nó sẽ đặt về kênh đối thủ này.
+
+32
+00:03:45,160 --> 00:03:49,020
+Nó sẽ lấy tất cả các cái chủ đề, tiêu đề của đối thủ, nó phân tích.
+
+33
+00:03:49,460 --> 00:03:52,300
+Vì nó lập chọn lập về những cái nào trend không trend.
+
+34
+00:03:52,300 --> 00:03:57,820
+Vì nó loại bỏ những cái mà trùng, vậy nó sẽ trao ra mình những cái chủ đề viral nhắc nha mấy bác.
+
+35
+00:03:59,060 --> 00:04:02,900
+Chờ một tí thì nó để trao ra mình cất quẽ nè, em sẽ tắt cái trình duyệt đây nha.
+
+36
+00:04:03,340 --> 00:04:07,200
+Em sẽ đặt quẽ là kênh vĩa để phân tích về hôm 1 trên video cơ thủ,
+
+37
+00:04:07,380 --> 00:04:10,980
+vậy nó sẽ trao 1 cái file ở trong thư mục của mình là file đối thủ này,
+
+38
+00:04:10,980 --> 00:04:15,780
+Đối thủ này, có nghĩa là file trong này á, nó sẽ gồm tất cả các cái chủ đề mà đối thủ đã làm rồi.
+
+39
+00:04:16,160 --> 00:04:23,260
+Thì sau này bác là nhận làm những cái video sau á, mọi người gọi secure và nó cũng có sẵn dữ liệu luôn rồi, nó không cần phải tốt thời gian đọc nữa nha.
+
+40
+00:04:23,696 --> 00:04:24,576
+Lọc nữa mọi người ạ.
+
+41
+00:04:25,076 --> 00:04:29,276
+Về đây là một số cái chủ đề tiêu đề mà nó gửi cho mình nè, gửi cho em nè.
+
+42
+00:04:29,756 --> 00:04:34,016
+Mình có thể đọc về đúng với cái ngách thị trường Việt Nam luôn nha.
+
+43
+00:04:34,196 --> 00:04:35,536
+Đúng là con người Việt Nam luôn nè.
+
+44
+00:04:35,936 --> 00:04:38,576
+Về những cái bi sao này có nghĩa là nó khiến người mình nên làm.
+
+45
+00:04:38,576 --> 00:04:41,916
+Còn những cái 2 sao này thì ưu tiên không ưu tiên nha.
+
+46
+00:04:41,916 --> 00:04:48,416
+Đấy, nên là bây giờ em sẽ chọn một cái và em sẽ gõ lại cái skill và em sẽ chạy nha mọi người.
+
+47
+00:04:49,076 --> 00:04:50,136
+Rất là đơn giản thôi nha.
+
+48
+00:04:50,316 --> 00:04:55,496
+Bây giờ thì giả sử như em sẽ chọn cái chủ đề thứ nhất này đây, chủ đề 1 này là
+
+49
+00:04:55,496 --> 00:04:58,536
+Vì sao nhân tộc nào cũng có trưởng người khổng lồ nè.
+
+50
+00:04:58,696 --> 00:05:00,516
+Rồi, em sẽ copy cái tiêu đề này nha.
+
+51
+00:05:01,236 --> 00:05:05,176
+Về xuống dưới em sẽ gọi skill ra và em sẽ dán cái chủ đề vào.
+
+52
+00:05:05,596 --> 00:05:09,816
+Thì thực tế là bác bác chỉ cần dán cái chủ đề thôi cũng được, không cần gọi skill đâu.
+
+53
+00:05:09,816 --> 00:05:16,576
+Bởi vì ở trên mình đã gọi rồi nó tự hiểu nha. Đây là làm hướng dẫn demo nên là em làm chi tiết cho mọi người rõ luôn.
+
+54
+00:05:17,216 --> 00:05:22,296
+Về bây giờ thì em sẽ đợi nó gen ra những cái file kịch bản, file tạo voice, tạo hình ảnh nha.
+
+55
+00:05:22,956 --> 00:05:26,276
+Đối với cái dạng ngách này thì chắc chắn là chỉ có một dạng thôi.
+
+56
+00:05:26,276 --> 00:05:32,156
+Đây em trai bác nghe qua kênh đối thủ chứ không phải là cái dạng hội thoại như cái ngách hôm trước em chia sẻ đâu.
+
+57
+00:05:32,800 --> 00:05:35,880
+Hơn nhiều, vì nó trả lời luôn câu hỏi người Việt đầu tiên đến từ đâu.
+
+58
+00:05:36,280 --> 00:05:40,340
+Theo một cách mà mình cá là ít ai nghĩ tới, bạn thử hình dung một nồi nước dùng phở nhé.
+
+59
+00:05:40,760 --> 00:05:42,440
+Nồi nào ngon thì chẳng bao giờ nấu trong 10 phút.
+
+60
+00:05:42,920 --> 00:05:45,520
+Người ta thả xương vào từ tối hôm trước ninh lửa lưu diu suốt đêm.
+
+61
+00:05:45,920 --> 00:05:48,380
+Gần sáng mới cho thêm hành nướng, gừng nướng, quế với hồi.
+
+62
+00:05:48,840 --> 00:05:51,800
+Cứ mỗi lượt lại thêm một thứ mà chẳng thứ nào bị vớt ra đổ đi.
+
+63
+00:05:52,220 --> 00:05:55,980
+Nên tới 7 giờ sáng, bát nước dùng bạn húp là vị của tất cả các lượt ấy cộng lại.
+
+64
+00:05:55,980 --> 00:06:05,520
+Bạn không thể múc một buỗng lên rồi chỉ mỗi đợt mang theo một thứ, thả vào nồi rồi ở lại luôn. Đợt thì mang theo hòn đá cuội, đợt mang hạt lúa, đợt lại mang con thuyền. Còn đợt
+
+65
+00:06:05,520 --> 00:06:15,060
+cuội là hòn đá cuội trước. Nhưng rồi các vị bác bộ, đá dùng làm bàn mài. Người bác nghe qua cái giọng đật rất là hay. Và cái giọng này chắc chắn là họ dùng clone giọng nha.
+
+66
+00:06:15,060 --> 00:06:23,920
+Họ dùng clone ấy, chứ không phải dọn từ các cái web như Vobi hay E-Lab đâu. Cái dọn này thì chắc chắn là em nghĩ là sẽ clone.
+
+67
+00:06:24,320 --> 00:06:31,920
+Tới nữa em sẽ làm giống 100% như cái kênh này luôn cho bác tham khảo ha. Nói chung clone này kia thì clone dọn thì bác cũng biết hết rồi.
+
+68
+00:06:32,460 --> 00:06:36,380
+Còn bây giờ thì chủ yếu là cái quy tình cho con clone nó edit thôi mọi người ạ.
+
+69
+00:06:36,380 --> 00:06:44,640
+Một bộ phim này đã tạo ra cho em những file tài nghiêng cần thiết rồi.
+
+70
+00:06:44,640 --> 00:06:47,080
+Bây giờ em sẽ sớt lại cho bác.
+
+71
+00:06:47,220 --> 00:06:50,600
+Nó thông báo là mình để làm xong mạch định.
+
+72
+00:06:51,100 --> 00:06:52,740
+Video này khoảng 22 phút.
+
+73
+00:06:53,260 --> 00:06:54,680
+Mật độ ảnh AI vừa.
+
+74
+00:06:54,980 --> 00:06:56,380
+Void tách đoạn bài.
+
+75
+00:06:56,380 --> 00:06:58,180
+bằng dấu gạch thẳng
+
+76
+00:06:58,180 --> 00:06:59,820
+thì chỗ dấu gạch thẳng như nào
+
+77
+00:07:00,000 --> 00:07:01,820
+tí nữa đi vào chi tiết em sẽ
+
+78
+00:07:01,820 --> 00:07:03,880
+nói chi tiết cho mọi người rõ rõ nha
+
+79
+00:07:03,880 --> 00:07:05,380
+còn ở dưới này thì nó phân tích
+
+80
+00:07:05,380 --> 00:07:06,380
+quen lại thôi
+
+81
+00:07:06,380 --> 00:07:08,780
+đây nó tự sinh cho em một cái bộ đồ sách
+
+82
+00:07:08,780 --> 00:07:10,880
+và trong bộ đồ sách đó có cái bộ đồ
+
+83
+00:07:10,880 --> 00:07:12,140
+có một cái thư 101
+
+84
+00:07:12,140 --> 00:07:12,881
+tên chủ đề này nè
+
+85
+00:07:12,881 --> 00:07:21,121
+Vì sau này mọi người ví dụ làm những tập tiếp theo thì nó sẽ tạo ra ví dụ thư mục 0203 thôi để đặt tên theo đúng với chủ đề mọi người làm.
+
+86
+00:07:21,741 --> 00:07:28,401
+Bây giờ thì em sẽ xem thử qua cái file kịch bản nha. Đây là file full kịch bản của video này.
+
+87
+00:07:29,081 --> 00:07:31,621
+File này để mình đọc tham khảo ra thôi mấy bác ạ.
+
+88
+00:07:31,981 --> 00:07:35,501
+Tiếp theo cái file này là để mình đi tạo dòng đọc, tạo voice ha.
+
+89
+00:07:36,181 --> 00:07:38,621
+Bây giờ thì em cũng sẽ mở xem luôn.
+
+90
+00:07:38,621 --> 00:07:46,741
+Về ở mọi người đời nè, cái file này mình đi tạo dòng đặc là em đã tiên sẵn cho nó ở mỗi cuối câu, mỗi cuối dòng
+
+91
+00:07:46,741 --> 00:07:54,861
+á, thì có một cái dấu ký tự gạch thẳng nè, thì tí nữa để đi tạo voice thì em sẽ giải thích chi tiết hơn rồi đó nha.
+
+92
+00:07:55,441 --> 00:08:00,781
+Tiếp theo là một cái file 04, cái file này là file cũng quan trọng là để đi tạo ảnh nha mọi người.
+
+93
+00:08:00,781 --> 00:08:04,961
+Đây là một cái file gồm tắt các cái forum mà tạo ảnh cần thiết nhất.
+
+94
+00:08:05,381 --> 00:08:05,650
+Đấy.
+
+95
+00:08:05,650 --> 00:08:12,910
+Bởi vì đây là cái ngách rất là cần thiết cho vừa tạo AI và vừa đỡ cho con Claude này nó code, nó
+
+96
+00:08:12,910 --> 00:08:20,170
+vỉa nha, vừa kết hợp nó code, nó vẽ và vừa mình cung cấp hình ảnh AI thêm cho nó edit nữa nha mấy bác.
+
+97
+00:08:20,450 --> 00:08:29,310
+Chứ không phải là cái ngách này nó tự động edit hết đâu, đó là lý do tại sao mà cái video, cái ngách hôm trước em làm ra 2 bản về em trao mấy bác.
+
+98
+00:08:29,310 --> 00:08:34,830
+Cái bản đầu tiên là cách làm thù công kiểu như đúng cây chay luôn á, để mọi người hiểu được cái quy tình nó như nào.
+
+99
+00:08:35,210 --> 00:08:40,910
+Về đối với cái app, cái ngách video hôm nay nè, thì em sẽ áp dụng kết hợp kẻ hai đó lại với nhau.
+
+100
+00:08:41,330 --> 00:08:43,890
+Thì bác sẽ thấy được video nó rất là chất lượng.
+
+101
+00:08:44,330 --> 00:08:51,550
+Chứ không phải ngách nào mình cũng đi làm tự động như thế thì nhiều cái chỗ đoạn, nhiều ngách, nhiều nhân vật, nhiều cảnh á,
+
+102
+00:08:51,930 --> 00:08:53,890
+nó đâu tự vỉ được đâu mọi người.
+
+103
+00:08:53,890 --> 00:08:57,990
+Nên là mình phải kết hợp với ảnh AI mình tạo ra nữa nha.
+
+104
+00:08:57,990 --> 00:09:05,040
+Nó trao mình cái from rồi mình đi tạo ảnh AI mình lưu về. Nó kết hợp lại với nhau thôi. Nhưng mà chắc chắn là những cái from này thì
+
+105
+00:09:05,040 --> 00:09:12,090
+rất là dễ làm và đơn giản thôi. Mình chỉ công việc đi copy cái from đó, mình bỏ lên con flow để nó gen ra ảnh thôi hả bác ạ?
+
+106
+00:09:12,090 --> 00:09:16,450
+nhé! Quan trọng là mình phải có dữ liệu thêm để cho nó edit, chuẩn chỉ và chất lượng nhất.
+
+107
+00:09:16,450 --> 00:09:24,070
+Chắc lượng nhất, em hướng đến mọi người phải làm như vậy, chứ không phải là mình cứ đưa hết chai ai nó tự động, ghen tự động làm.
+
+108
+00:09:24,490 --> 00:09:30,470
+Thì như vậy, re nhiều cái ngách nó không có re gì kìa, video rất là không có chắc lượng vào, không giống đối thủ đâu mọi người.
+
+109
+00:09:31,590 --> 00:09:36,450
+Đó là lý do tại sao em hướng dẫn em nói rất rất là nhiều thứ như vậy.
+
+110
+00:09:36,450 --> 00:09:40,841
+Mấy bác thông cảm nha, em nói hơi nhiều, nói lại cho mấy bác phải rõ.
+
+111
+00:09:40,841 --> 00:09:51,841
+rồi ok bây giờ thì bước tiếp theo thì nó hướng dẫn em là nó kêu em là đi tạo void và đi tạo hình ảnh nè và có cái cái from thâm nữa nha. Nói chung tới phần nào thì em nói phần
+
+112
+00:09:51,841 --> 00:10:02,841
+đó thôi. Và bây giờ thì mình có thể đi tạo giọng đọc trước hay là tạo ảnh trước vẫn được thì em sẽ đi tạo giọng đọc trước luôn nha. Cái nào trước cũng được không quan trọng đâu mấy bác ạ.
+
+113
+00:10:02,841 --> 00:10:14,001
+Thì cái video này, cái giãn ngách này tầm khoảng trung bình là 22 phút. Đây, em trai bác sĩ em cơ đối thủ này, toàn là trên 20 phút thôi, và trung bình là khoảng tầm 22-23 phút.
+
+114
+00:10:14,421 --> 00:10:20,321
+Thì đối với cái kịch bản vừa rồi nó trai ra cũng vậy, nên là hiện tại em đang quay cái video demo cho mọi người thôi.
+
+115
+00:10:20,781 --> 00:10:24,521
+Nên là bây giờ em làm hết 22 phút thì không biết tới khi nào mà xong luôn.
+
+116
+00:10:24,781 --> 00:10:30,521
+Nên là bây giờ em sẽ yêu cầu nó nè, tạo lại cho em thêm một cái project demo.
+
+117
+00:10:30,521 --> 00:10:37,381
+Đúng với chủ đề này luôn nha mọi người, nhưng mà chỉ tầm là 2 đến 3 phút thôi, để em làm demo cho bác thấy được thôi.
+
+118
+00:10:37,821 --> 00:10:42,761
+Chứ bây giờ mà em làm hết 22 phút như ngay kịch bản luôn thì thực sự không có thời gian đâu mọi người.
+
+119
+00:10:43,201 --> 00:10:45,601
+Đấy, đợi nó ghi in real video rất rất là lâu.
+
+120
+00:10:46,000 --> 00:10:52,220
+Máy bác thấy cái video hôm trước em ghen cả xấu 7 phút mà phải chờ hơn gần 2 tiếng đồng hồ luôn. Đấy.
+
+121
+00:10:53,100 --> 00:11:00,200
+Đó là mọi người nhờ AI nó edict á thì mọi người cũng chịu khó là đợi thời gian nó ghen thôi nha. Mình làm việc khác thôi mọi người.
+
+122
+00:11:00,920 --> 00:11:10,400
+Bây giờ thì nó đã tạo ra cho em nè. Cái bản này là bản demo em làm để cho bác xem. Chứ không phải là nó tóm tắt đâu nha. Cái bản này vẫn rất là chất lượng.
+
+123
+00:11:10,400 --> 00:11:24,020
+Nói chung là để làm tới là mái bác sĩ thấy được thôi. Đây, bây giờ thì nó để xin để cho em một cái thư mục demo. Bây giờ trong này nó cũng gồm là bảng nè, đỡ đi tạo vô nè, nó rút vọn lại nè.
+
+124
+00:11:24,960 --> 00:11:33,120
+Tiếp theo cái file này là cái file hướng dẫn, cái thư mục, cái file này hướng dẫn để mình ghen thôi, chứ không có quan trọng đâu.
+
+125
+00:11:33,120 --> 00:11:44,920
+Hai cái file quan trọng là cái file âm thanh để im bọt vào tạm thanh nè. Với cái file 04 là Chrome tạo hình ảnh. Thì tới nữa tới cái đó em sẽ nói sau. Quan trọng hai cái file đó thôi nha bác. Thì
+
+126
+00:11:44,920 --> 00:11:56,720
+bây giờ thì em sẽ đi tạo giọng đặc nha. Và như lúc nãy em nói em sẽ làm giống như cái giọng đặc của con đối thủ này luôn. Em sẽ dùng clone nha mọi người. Thì em sẽ nghe lại cho bác nghe lại nha.
+
+127
+00:11:56,720 --> 00:12:03,880
+Bạn đang xếp hàng chờ lấy máu xét nghiệm. Căn phòng hơi lạnh, thoang thoảng mùi cồn sát trùng. Người xếp ngay trước bạn vừa được gọi tên đã ngồi xuống ghế.
+
+128
+00:12:04,000 --> 00:12:10,040
+Cái kênh này thì hãnh cũng dùng, hãnh cũng clone lại những cái kênh của người khác thôi.
+
+129
+00:12:10,040 --> 00:12:12,080
+Người khác làm ngách khác thôi mấy bác ạ.
+
+130
+00:12:12,080 --> 00:12:16,720
+Rồi em sẽ mở cái tool clone của em lên. Thì hiện tại là em để clone xong rồi.
+
+131
+00:12:16,720 --> 00:12:19,660
+bây giờ thì em sẽ
+
+132
+00:12:19,660 --> 00:12:22,660
+vào và em sẽ import kịch bản lên
+
+133
+00:12:22,660 --> 00:12:24,660
+những cái tool
+
+134
+00:12:24,660 --> 00:12:27,660
+và Elevn Lab này thì mọi người đều biết hết rồi
+
+135
+00:12:27,660 --> 00:12:29,441
+nên em không có giới thiệu nhiều nha
+
+136
+00:12:29,441 --> 00:12:37,301
+Bây giờ em sẽ giải thích lại luôn, ở cái chỗ này ở cuối mỗi dòng, mỗi câu nó có một cái dấu ký tự gạch đứng nè.
+
+137
+00:12:37,721 --> 00:12:43,361
+Thì có nghĩa là em làm như vậy để cho nó tự tách ra mỗi dòng một ô khi mà gain.
+
+138
+00:12:43,681 --> 00:12:47,821
+Khi gain xong rồi thì là mỗi dòng này nó tạo ra một file âm thanh riêng.
+
+139
+00:12:48,161 --> 00:12:52,861
+Nó tách ra mọi người để cho con con lót đẹp về nó edit dở cho hàng hơn.
+
+140
+00:12:53,141 --> 00:12:58,721
+Đó là lý do tại sao em đang dùng chức năng là Auto Sublip ở trên Contour em nè.
+
+141
+00:12:58,721 --> 00:13:04,201
+Em đặt ở trong cái ô đó là cái tự dấu thẳng, dấu thẳng đứng.
+
+142
+00:13:04,821 --> 00:13:15,341
+Vậy em tích vào ô EltoSupply, và trong cái file kịch bản thì ở mỗi cuối dòng em muốn tách nó ra, thì em sẽ đặt vào cái dấu ký tự dấu gạch thẳng đó ở cuối dòng thôi.
+
+143
+00:13:16,021 --> 00:13:17,801
+Đơn giản vậy thôi, phải bác hiểu chứ đúng không?
+
+144
+00:13:18,521 --> 00:13:22,241
+Em giải thích hơi dài dòng nhưng mà chắc chắn là mọi người nhìn là mọi người sẽ hiểu thôi.
+
+145
+00:13:22,850 --> 00:13:31,850
+Bây giờ thì em sẽ gen ra nha. Để như vậy thì nó sẽ tạo ra nhiều cái nó sẽ tắt ra mỗi dòng một cái file mắt thanh riêng.
+
+146
+00:13:31,850 --> 00:13:43,350
+Edit, edit, edit nó sẽ dở dàng hơn mọi người ạ. Đối với mấy bác này dùng một cái file gọp lại một file dài thì mọi người bỏ vào con clip nó edit vẫn được nha.
+
+147
+00:13:43,350 --> 00:13:51,990
+Cái này thì em trend rồi nhưng mà để mà dở dàng ok cho nó chuẩn nhất thì nên tắt ra, nên tắt ra như em này sẽ ok hơn nha mọi người.
+
+148
+00:13:52,850 --> 00:13:58,810
+Chưa vậy thì em để ghi nè xong rồi, em sẽ cho mọi người nghe về một đoạn của một cái file 01 ha.
+
+149
+00:14:01,290 --> 00:14:10,690
+Khoảng 2.600 năm trước, ở thành T, G, A, miền Nam Hy Lạp, có một người đàn ông tên là Ly Khát bước vào sân nhà một bác thợ rèn. Ly Khát là người thành Sparta.
+
+150
+00:14:10,690 --> 00:14:17,430
+Cái chắc giọng và giọng đẹp thì rất giống đối thủ mình còn lo cái này không bàn tới nữa.
+
+151
+00:14:17,850 --> 00:14:19,450
+Nhưng có vấn đề là...
+
+152
+00:14:19,450 --> 00:14:22,750
+Thôi thật, cái chỗ thu mục này em sẽ đặt là thu mục void nha, cho nó gọn lại.
+
+153
+00:14:23,170 --> 00:14:25,290
+Có vấn đề là những cái từ khóa tiếng Anh á.
+
+154
+00:14:25,650 --> 00:14:28,450
+Thì nó hơi đẹp và bị chạm do là em có cái dấu gạch nữa.
+
+155
+00:14:28,870 --> 00:14:30,690
+Thì cái này thì mình có thể tự chỉnh nó đẹp.
+
+156
+00:14:30,690 --> 00:14:32,990
+Trong kịch bản nha, tí nãy em nói sau nha mấy bác
+
+157
+00:14:33,250 --> 00:14:36,830
+Rồi tiếp theo sau khi tạo void rồi thì em sẽ mở cái file 04
+
+158
+00:14:37,090 --> 00:14:38,110
+Cái from của mình lên
+
+159
+00:14:38,370 --> 00:14:41,190
+Cái đây là cái file from để mình đi tạo hình ảnh nha
+
+160
+00:14:41,950 --> 00:14:45,790
+Đối với cái file from này thì cũng cực kỳ là đơn giản thôi mấy bác ạ
+
+161
+00:14:46,050 --> 00:14:49,630
+Nó có chú thích là E001, E002
+
+162
+00:14:49,890 --> 00:14:50,690
+Vân vân vân vân vân
+
+163
+00:14:50,690 --> 00:14:53,630
+như cái file demon này thì nó gồm 10 be ảnh
+
+164
+00:14:53,630 --> 00:14:56,616
+tới E0 10 be này phải bắt nhìn ở dưới nè
+
+165
+00:14:56,616 --> 00:15:05,916
+đó thì về nó kèm theo 2 cái form để tạo thêm nữa thì em sẽ tạo hết 14 gồm 15 cái ảnh này hơn nha.
+
+166
+00:15:05,916 --> 00:15:08,716
+để cho con Coloss nó làm ra demo cho mình.
+
+167
+00:15:08,716 --> 00:15:15,316
+thì đối với những cái video mà full đó thì mọi người cắp bao nhiêu ảnh thì nó gửi bao nhiêu ảnh thì mọi người cứ tạo
+
+168
+00:15:15,316 --> 00:15:19,216
+Bán nhiều ảnh thì cho nó thôi. Để cho nó làm rea được mình chất lượng nhất nha các bác.
+
+169
+00:15:19,836 --> 00:15:22,896
+Bây giờ thì em chỉ cần việc copy from, em quen lên thôi.
+
+170
+00:15:23,396 --> 00:15:26,696
+Em chọn cái model là Nano Banana Pro nha.
+
+171
+00:15:27,596 --> 00:15:33,016
+Em chọn 4 ảnh luôn để nó rea 4 ảnh rồi mình có thể lựa chọn những cái nào hợp nhất.
+
+172
+00:15:36,096 --> 00:15:41,416
+Các bác thấy không? Nó tạo rea phim cách nhong vật và phim cách ảnh rất là giống đối thủ luôn.
+
+173
+00:15:41,416 --> 00:15:49,796
+Những cái này là chi tiết, những cái hình ảnh này là bởi vì con Claude nó không tự nào mà vỉ ra, nó tự làm được.
+
+174
+00:15:50,196 --> 00:16:00,236
+Nên là để tối ưu cái video mình chắc lượng và hay nhất, em để trên nó là vừa code và vừa mình tạo ảnh như này để cung cấp cho nó làm nha mọi người.
+
+175
+00:16:00,616 --> 00:16:03,436
+Đấy, như vậy thì nó mới là real video chắc lượng.
+
+176
+00:16:03,636 --> 00:16:08,596
+Chứ đừng cả để nó, cái nào nó không làm được thì thôi chứ đừng cả ép nó làm đấy.
+
+177
+00:16:08,596 --> 00:16:18,396
+Giống như mình cũng vậy mới bác ạ. Mình không biết làm cái gì thì mình phải tối ưu hay là nói chung mình sao đái mình hẹp hỏi. Chứ mình không có làm bậy nha.
+
+178
+00:16:18,396 --> 00:16:21,396
+Các bạn có thể nhìn thấy nhé, kiểu 7
+
+179
+00:16:21,396 --> 00:16:25,396
+Rồi em sẽ tour qua đoạn tạo 10 bé ảnh này nhé
+
+180
+00:16:25,396 --> 00:16:29,396
+Đến với đoạn 2 cái ảnh thumb cuối cùng này
+
+181
+00:16:29,396 --> 00:16:34,396
+Thì các bạn thấy không, ảnh thumb rất rất là chất lượng, rất là đúng với phong cách của đối thủ luôn
+
+182
+00:16:34,396 --> 00:16:36,396
+Em Trên thật sự rất là kinh luôn
+
+183
+00:16:36,396 --> 00:16:38,396
+Đây, mọi người thấy không, đối thủ thì sẽ đối thủ
+
+184
+00:16:38,396 --> 00:16:39,396
+thì em cố tình á,
+
+185
+00:16:39,476 --> 00:16:41,716
+mấy bác thấy đối thủ nó hơi bị nhạt nhạt đúng không,
+
+186
+00:16:42,076 --> 00:16:44,956
+em cố tình đẩy cho nó đậm hơn khác đối thủ tí,
+
+187
+00:16:45,516 --> 00:16:46,276
+còn mọi người đem về,
+
+188
+00:16:46,376 --> 00:16:47,616
+mọi người muốn biến như nào,
+
+189
+00:16:47,716 --> 00:16:51,476
+thì mọi người cứ biến dạng theo phong cách của mọi người muốn á,
+
+190
+00:16:51,536 --> 00:16:53,376
+thì mọi người cứ quen cái skill lên,
+
+191
+00:16:53,496 --> 00:16:55,876
+mọi người yêu cầu con chat nó thay đổi thôi,
+
+192
+00:16:56,076 --> 00:16:56,596
+có gì đâu,
+
+193
+00:16:57,036 --> 00:16:58,396
+còn ở trên là phong cách nè,
+
+194
+00:16:58,396 --> 00:16:59,276
+Những nhân vật nè
+
+195
+00:16:59,350 --> 00:17:09,350
+Rồi, cái quan trọng là 10 bia ảnh này với cái ảnh thumb kia thì em sẽ tải về lưu lại ha. Ví dụ như em chọn ảnh này đi, trong 4 ảnh em thấy ảnh này chắc lượng đúng không?
+
+196
+00:17:09,350 --> 00:17:18,350
+Em đặt thư mục ảnh để ảnh. Đặt xong rồi em bấm vào lưu. Lưu chung đo vào thư mục
+
+197
+00:17:18,350 --> 00:17:27,350
+ảnh cho đỡ bị loạn. Cũng như là con Claude đọc, nó sẽ dở dàng làm hơn nha mọi người.
+
+198
+00:17:28,000 --> 00:17:35,090
+Em sẽ tải về về em quay lại với file from này, đặt tên theo đúng với tên đó nha.
+
+199
+00:17:35,090 --> 00:17:41,590
+Tên from này 01 thì em tải về em cũng đặt tên là 01, em đưa vào thư mục ảnh.
+
+200
+00:17:41,590 --> 00:17:45,950
+Tương tự những ảnh show của bác cũng làm vậy ha
+
+201
+00:17:45,950 --> 00:17:48,510
+Em sẽ bỏ tour nhanh về cái đoạn này
+
+202
+00:17:48,510 --> 00:17:53,836
+Cuối cùng thì đến với cái chỗ ảnh thumb này thì cũng vậy thôi
+
+203
+00:17:53,836 --> 00:17:58,416
+Ảnh thâm này ở trong cái file from nó chú thích như nào thì em sẽ lưu như vậy.
+
+204
+00:17:58,976 --> 00:18:02,336
+Đây cái file đầu tiên ảnh thumb này là T01 nè.
+
+205
+00:18:02,816 --> 00:18:07,636
+Em cũng sẽ copy cái T01 này, em quên lưu tên lại thôi.
+
+206
+00:18:07,636 --> 00:18:20,416
+lên, em sẽ chọn cái ảnh thứ 2 này, thấy khá gần và nét, những cái ảnh kia nó hơi bí, thấy ảnh rất là chất lượng.
+
+207
+00:18:20,416 --> 00:18:21,916
+Em lưu vào.
+
+208
+00:18:21,916 --> 00:18:33,576
+Rồi, đối với cái ảnh cuối cùng ở trên này, nó là phong cách, hình ảnh, nhân vật mình chọn thôi, thì bác có thể lưu hay không lưu cũng được.
+
+209
+00:18:33,576 --> 00:18:43,576
+Cái này thì mình kiểu mình muốn sau này những video sau mình đồng bộ như cái nhân vật ảnh thông mình như nào thì mình lưu về. Ví dụ em chọn ảnh này đi, bây giờ cái nhân vật này đúng không?
+
+210
+00:18:43,576 --> 00:18:49,576
+Bác bác cũng thấy nó tương tự như đối thủ không? Đấy, em lưu về, em sẽ đặt cái tên là T00 nha.
+
+211
+00:18:49,576 --> 00:18:57,576
+Ok, như vậy thì bây giờ em đã có đài đấu hết các cái tài nghiêng và bây giờ em sẽ đi nhờ con CloudNetix cho em nè.
+
+212
+00:18:57,576 --> 00:19:09,476
+Các em có ảnh và có void rồi thì bây giờ em sẽ gọi cái skill và dựng làm video lên và em sẽ import lại với cái thư mục dự án của em nha, dự án là demo.
+
+213
+00:19:10,316 --> 00:19:15,356
+Mấy bác nhớ lúc nãy em có xin chuyển về làm demo không? Chứ không thể làm full hết được á.
+
+214
+00:19:15,356 --> 00:19:17,596
+Thì bây giờ em ghi thêm câu lệnh là hãy dựng.
+
+215
+00:19:17,850 --> 00:19:19,850
+video cho tôi thôi.
+
+216
+00:19:19,850 --> 00:19:24,850
+Về với cái project này, em read lại cái thứ 1, em copy cho nó chấn nha.
+
+217
+00:19:24,850 --> 00:19:29,850
+copy riêng cái đường dẫn của project, cái dự án nè.
+
+218
+00:19:29,850 --> 00:19:30,850
+Đấy.
+
+219
+00:19:30,850 --> 00:19:35,850
+Rồi, bây giờ thì chỉ việc enter về nó sẽ đọc file về nó làm thôi mấy bác ạ.
+
+220
+00:19:35,850 --> 00:19:39,850
+Tất cả những gì bây giờ là có trong cái skill này hết rồi.
+
+221
+00:19:39,850 --> 00:19:43,850
+Bây giờ thì mình chỉ việc enter này em chấp nhận, cho phép.
+
+222
+00:19:43,850 --> 00:19:44,850
+Đấy.
+
+223
+00:19:44,850 --> 00:19:47,850
+Rồi, bây giờ chỉ công việc đợi nó gen ra video thôi ha.
+
+224
+00:19:55,850 --> 00:20:02,850
+Lúc này nó tạo ảnh thumb về test, kiểu như tạo test trên ảnh thumb trước này.
+
+225
+00:20:02,850 --> 00:20:04,850
+Nó cho ra ảnh thumb trước.
+
+226
+00:20:04,850 --> 00:20:10,850
+Ảnh thâm này lúc nãy mình tạo trên Google Flow, xong rồi em lưu về.
+
+227
+00:20:10,850 --> 00:20:15,850
+Bây giờ nó ghi test thâm vào, test là cái xương ID này mọi người.
+
+228
+00:20:15,850 --> 00:20:28,650
+Thật ra cái này nếu mà bác muốn tự làm thì bác có thể dùng ảnh cho mọi người lên canh web mọi người chỉnh chữ vào, chỉnh test vào, còn không thì mọi người dùng chat gpt cũng được.
+
+229
+00:20:29,230 --> 00:20:36,070
+Còn mọi người muốn clark tự động tạo luôn thì trong skill em cũng đã có rồi thì nó chỉ tự động ra như này thôi.
+
+230
+00:20:36,530 --> 00:20:37,670
+Bác thấy hợp lý là mọi người chọn.
+
+231
+00:20:37,670 --> 00:20:42,670
+Chọn, em quay lại con đối thủ thử, nhìn cái test của đối thủ như thế nào.
+
+232
+00:20:42,670 --> 00:20:46,410
+Đây, cái test đối thủ cũng vậy, khéo đơn giản thôi.
+
+233
+00:20:46,410 --> 00:20:48,866
+Test này thì thật sự rất đơn giản.
+
+234
+00:20:48,866 --> 00:20:54,866
+Cái chữ tết này nó hơi đậm một tí. Nói chung là mọi người tùy theo phong cách mọi người muốn thôi.
+
+235
+00:20:54,866 --> 00:21:00,866
+Mọi người yêu cầu khác, đậm nhạc hay phong cách khác thì mọi người cứ yêu cầu nó sẽ tạo lại thôi.
+
+236
+00:21:00,866 --> 00:21:07,866
+Còn không nữa thì bác thấy không hợp lý nữa thì bác có thể ra ChatGPT làm tự làm.
+
+237
+00:21:07,866 --> 00:21:15,866
+Các bạn có thể nhận được video này, để nhận được video này, để nhận được video này.
+
+238
+00:21:15,866 --> 00:21:22,866
+Chờ một tí nữa, cuối cùng đã ghi cho em xem video demo.
+
+239
+00:21:22,866 --> 00:21:35,106
+Về nó có cái báo cáo này thì em sẽ đặt qua ha. Mình đã lên xe hông hình cho 49 cảnh về sức ở chế độ ở chất lượng là 1080 nè.
+
+240
+00:21:35,106 --> 00:21:42,966
+Về tốc độ sức là tốc độ game video này còn 30 phút. Đúng tầm 30 phút thôi. Em cho tầm 30 phút đấy.
+
+241
+00:21:44,006 --> 00:21:48,006
+Còn ở dưới thì nói chung là nó có những cái phân tích về báo cáo này. Mình có thể đặt qua ha.
+
+242
+00:21:48,006 --> 00:21:58,716
+Ví dụ như nó nói, bác bác thấy chỗ nào không hợp lý là muốn sửa thì mọi người cứ yêu cầu nó thì nó sẽ sửa lại. Còn bây giờ thì em sẽ tải video
+
+243
+00:21:58,716 --> 00:22:09,426
+về nè, em sẽ mở lên cái thư mục, em sẽ tra bác xem về cái demo BeFoot này nha. Đây em đi vào cái thư mục demo của em về cái phần output.
+
+244
+00:22:09,850 --> 00:22:11,070
+Đây là video, em mở lên.
+
+245
+00:22:11,070 --> 00:22:20,820
+Khoảng 2.600 năm trước, ở thành T, G, A, miền nam Hy Lạp, có một người đàn ông tên là Ly Khát bước vào sân nhà một bác thợ rèn. Ly Khát là người thành Sparta, và ông đang đi
+
+246
+00:22:20,820 --> 00:22:30,570
+tìm một thứ mà cả thành của ông đã tìm suốt nhiều năm chơi. Bác thợ rèn kể cho ông nghe một chuyện lạ. Hồi trước, bác đào giếng ngay giữa cái sân này, đào xuống được một quãng.
+
+247
+00:22:30,570 --> 00:22:32,950
+Nếu đúng được một quãng thì lưỡi quốc chạm phải một cái quan tài.
+
+248
+00:22:33,430 --> 00:22:38,670
+Cái quan tài ấy dài hơn 3 mét, tức là dài hơn cả chiếc giường đôi nhà bạn ghép đối tiếp với một chiếc chiếu nữa.
+
+249
+00:22:39,130 --> 00:22:41,970
+Bác không tin có người nào to đến thế nên mở nắp ra xem.
+
+250
+00:22:42,490 --> 00:22:45,670
+Bên trong là một bộ xương và bộ xương dài đúng bằng cái quan tài.
+
+251
+00:22:46,170 --> 00:22:49,190
+Bác thợ rèn sợ quá, lấp đất lại coi như chưa thấy gì.
+
+252
+00:22:49,510 --> 00:22:51,190
+Nhưng ly khát thì nghe xong là hiểu ngay.
+
+253
+00:22:51,470 --> 00:22:52,530
+Ông thuê lại cái sân.
+
+254
+00:22:52,570 --> 00:22:59,710
+Đảo bộ xương lên, mang về Iqpacta và tuyên bố rằng đây chính là xương của O, Red Iqtet, một người anh hùng thời xa xưa.
+
+255
+00:23:00,210 --> 00:23:05,330
+Người Spactati như vậy, họ trôn cướp bộ xương long trọng và tin rằng từ đó thanh của họ sẽ thắng trận.
+
+256
+00:23:05,750 --> 00:23:09,850
+Câu chuyện này không phải mình bịa ra, nó được ông He, Rowe, Dodd, nhà viết sử nghe.
+
+257
+00:23:09,850 --> 00:23:14,950
+Nhà viết sử người Hy Lạp ghi lại trong bộ sử nổi tiếng của ông và cái chi tiết làm mình để ý nhất.
+
+258
+00:23:14,950 --> 00:23:18,950
+Em xin phép bèo cái chỗ này một tí nha.
+
+259
+00:23:18,950 --> 00:23:23,950
+Như bác thấy, ngay cái đoạn đầu hoặc là cái đoạn vừa rồi,
+
+260
+00:23:23,950 --> 00:23:29,950
+cái từ tiếng Anh nó đẹp bị chậm,
+
+261
+00:23:29,950 --> 00:23:34,950
+bởi vì cái từ tiếng Anh, cái tên nước ngoài thì em đang đỡ là nó...
+
+262
+00:23:34,950 --> 00:23:37,510
+Chuyện này không phải mình bịa ra, nó được ông Hê, Râu.
+
+263
+00:23:37,510 --> 00:23:41,850
+Đó, em đang đỡ là nó có cái dấu gạch ngang như này nè
+
+264
+00:23:41,850 --> 00:23:43,890
+Thì mẹ định là những con AI á
+
+265
+00:23:43,890 --> 00:23:45,570
+Nó đẹp tiếng Việt mà
+
+266
+00:23:45,570 --> 00:23:46,850
+Nó đẹp có dấu gạch này
+
+267
+00:23:46,850 --> 00:23:49,470
+Nó sẽ nhanh cách ra bởi cái khoảng ủy á
+
+268
+00:23:49,470 --> 00:23:51,530
+Còn mình muốn đẹp nhanh liền mặt á
+
+269
+00:23:51,530 --> 00:23:53,441
+Thì bác nhớ là xóa những cái dấu gạch đó đi
+
+270
+00:23:53,441 --> 00:24:02,601
+Đó là đối với những tên riêng tiếng Anh thôi mọi người. Vì mấy bác có thể tự tì chẩn trong kịch bản của mình. Mọi người yêu cầu con cầu lót nó tạo lại.
+
+271
+00:24:02,601 --> 00:24:12,301
+Đốt, nhà viết sử người Hy Lạp ghi lại trong bộ sử nổi tiếng của ông. Và cái chi tiết làm mình để ý nhất không phải là người anh hùng mà là cái phản ứng rất tự nhiên của cả hai người đàn ông kia.
+
+272
+00:24:12,781 --> 00:24:19,641
+Thấy một bộ xương dài hơn 3 mét, không ai nghĩ đó là xương con vật. Ai cũng nghĩ ngay, đây là một con người, một con người khổng lồ.
+
+273
+00:24:19,641 --> 00:24:28,761
+Và bạn biết không, chuyện người khổng lồ đâu chỉ có ở Hy Lạc. Người Bắc Âu kể về một gã khổng lồ tên Ymia, chết đi thì thịt hóa thành đất, xương hóa thành núi.
+
+274
+00:24:28,761 --> 00:24:37,880
+Người Trung Hoa kể về bàn cổ, người đã tách trời khỏi đất. Người Ireland có phim Macbun, gã khổng lồ xây một con đường đá bắt qua biển. Các dân tộc bản địa ở
+
+275
+00:24:37,880 --> 00:24:47,000
+châu Mỹ có những câu chuyện về sinh vật khổng lồ thời xa xưa. Và ngay ở nước mình, có thần trụ trời đắp cột trống trời, có thanh gióng vươn vai thành người cao lớn.
+
+276
+00:24:47,000 --> 00:25:00,470
+Những dân tộc này sống cách nhau hàng vạn cây số, phần lớn họ chưa từng gặp nhau, không đọc sách của nhau, không nghe chuyện của nhau, vậy mà dân tộc nào cũng kể về người khổng lồ. Vì sao vậy? Có 2 cách giải thích bà mình hay nghe nhất. Cách thứ nhất nói rằng,
+
+277
+00:25:00,470 --> 00:25:13,940
+ngày xưa con người to lớn thật, sau này mới nhỏ dần đi. Cách thứ 2 nói rằng, các câu chuyện chỉ là truyền tay nhau, dân tộc này nghe của dân tộc kia rồi kể lại. Cả 2 cách đều nghe có vẻ hợp lý, nhưng như bạn sẽ thấy, cả 2 đều không đứng vững.
+
+278
+00:25:13,940 --> 00:25:21,230
+Câu trả lời thật thì lạ hơn nhiều, nó nằm dưới lòng đất, trong một hiệu thuốc ở Hồng Kông, trên một bờ biển đầy cột đá, trong bộ xương của một
+
+279
+00:25:21,230 --> 00:25:28,520
+chàng trai cao nhất lịch sử. Và một phần câu trả lời nằm ngay gần nhà mình, trong một hang đá vôi ở Lạng Sơn và một ngôi đền bên bờ sông Hồng.
+
+280
+00:25:28,520 --> 00:25:41,470
+Nhưng trước khi đi tìm câu trả lời, mình muốn bạn nhìn vào bàn tay của chính bạn. Hồi nhỏ, chắc nhiều bạn đã thấy bà hoặc mẹ đo vải bằng gang tay. Xoe bàn tay ra, ngón cái một đầu, ngón út một đầu, đặt lên mép vải,
+
+281
+00:25:41,470 --> 00:25:54,420
+rồi đếm. Một gang, hai gang, ba gang. Muốn đo cái gì dài hơn thì dùng sải tay, rang hai tay ra hết cỡ. Muốn đo đường thì đến bước chân. Ông bà mình gọi chiều cao của nước lụt là ngập đến đầu gối, ngập đến thắt lưng.
+
+282
+00:25:54,420 --> 00:26:02,360
+Người Hy Lạp cũng vậy, họ đo bằng khủyểu tay, người Anh đo bằng bàn chân, đến giờ vẫn còn gọi một đơn vị đo là phút, nghĩa gốc là bàn chân.
+
+283
+00:26:02,360 --> 00:26:07,740
+Từ thỏa xa xưa, cây thước đầu tiên của loài người không làm bằng gỗ hay sắt, nó chính là cơ thể của mình.
+
+284
+00:26:07,740 --> 00:26:10,300
+của mình. Và đây là ý chính của cả video này.
+
+285
+00:26:10,680 --> 00:26:12,220
+Khi con người gặp một thứ quá lớn,
+
+286
+00:26:12,520 --> 00:26:13,740
+lớn hơn mọi thứ họ từng biết,
+
+287
+00:26:14,060 --> 00:26:16,160
+họ vẫn đưa cây thước quen thuộc ấy ra để đo.
+
+288
+00:26:16,580 --> 00:26:18,460
+Họ áp găng tay của mình vào một khúc xương,
+
+289
+00:26:18,840 --> 00:26:19,580
+một tảng đá,
+
+290
+00:26:20,000 --> 00:26:22,080
+một ngọn núi. Và khi cây thước ấy
+
+291
+00:26:22,080 --> 00:26:23,840
+không đủ dài, trong đầu họ hiện ra
+
+292
+00:26:23,840 --> 00:26:25,800
+một con người, chỉ có điều là to hơn
+
+293
+00:26:25,800 --> 00:26:27,680
+rất nhiều lần. Người khổng lồ chính là
+
+294
+00:26:27,940 --> 00:26:35,940
+Thật sự là khi xem phát video demo này bác thấy rất đỉnh không?
+
+295
+00:26:35,940 --> 00:26:39,741
+Các gồm cái âm thanh và những cái hiệu ứng này kia nó đã nhớ
+
+296
+00:26:39,741 --> 00:26:43,921
+Những âm thanh nhặt nền này kia nó ghép vào hết đó mấy bác. Rất là đỉnh cao luôn.
+
+297
+00:26:44,401 --> 00:26:50,061
+Vì là nó có một vấn đề chỉ là cái chỗ mà cái giọng đọc AI nó đọc cái chỗ tên riêng á.
+
+298
+00:26:50,061 --> 00:26:57,061
+Bởi vì em đi cái hiện tại là cái kịch bản nó re là những cái tên nước ngoài thì nó có dấu gạch.
+
+299
+00:26:57,301 --> 00:27:01,901
+Nên mấy bác có thể là yêu cầu con Claude nó làm lại file kịch bản nha.
+
+300
+00:27:02,461 --> 00:27:07,741
+Hiệt là mấy bác tự chỉnh tay cũng được. Một số cái từ nước ngoài nó chỉ một số tên thôi.
+
+301
+00:27:07,741 --> 00:27:11,521
+Nhiều kịch bản cũng không có đâu mấy bác ạ.
+
+302
+00:27:12,321 --> 00:27:21,521
+Thì ok, quay video này thì em muốn chia sẻ với mọi người về quy trình và cũng như chia sẻ với bác cái skill để tự động làm về cái ngách này.
+
+303
+00:27:21,941 --> 00:27:25,801
+Cái ngách này thật ra thì cũng khá là lâu rồi và cũng nhiều bác biết đấy.
+
+304
+00:27:25,981 --> 00:27:31,161
+Nhưng mà nhiều bác biết cái ngách này nhau như vậy chứ nhiều bác không biết làm.
+
+305
+00:27:31,541 --> 00:27:37,521
+Thì hôm nay em sẵn, em trên cái skill em chia sẻ cho mọi người có thể tham khảo luôn và mọi người có thể dùng.
+
+306
+00:27:37,741 --> 00:27:41,981
+hoặc từ skill này, mấy bác làm những cái ngách khác, thì mọi người cứ
+
+307
+00:27:41,981 --> 00:27:44,201
+rồi cứ up lên, up với skill lên,
+
+308
+00:27:44,301 --> 00:27:47,561
+xong mọi người bảo con cloud nó học về phân tích,
+
+309
+00:27:47,661 --> 00:27:49,461
+nó chuyển đổi sang ghi ngách đối thủ khác.
+
+310
+00:27:49,841 --> 00:27:53,041
+Nhưng mà mấy bác phải luôn nhớ là mấy bác muốn làm ghi ngách khác,
+
+311
+00:27:53,181 --> 00:27:56,201
+thì mấy bác phải cho con cloud nó thông tin,
+
+312
+00:27:56,201 --> 00:27:59,261
+ví dụ như link kênh, tải video của đối thủ về,
+
+313
+00:28:00,000 --> 00:28:02,621
+nói chung là toàn bộ những cái dữ liệu của kênh đối thủ,
+
+314
+00:28:02,721 --> 00:28:03,641
+mấy bác cho nó học.
+
+315
+00:28:03,981 --> 00:28:05,901
+rồi nó phân tích bóc tắt ra rồi nó mới
+
+316
+00:28:05,901 --> 00:28:07,421
+hẹp theo được ha
+
+317
+00:28:07,421 --> 00:28:10,461
+còn cái cách trên đó thì em đã hướng dẫn rất nhiều video rồi
+
+318
+00:28:10,461 --> 00:28:11,661
+mọi người nhớ xem ha
+
+319
+00:28:11,661 --> 00:28:12,450
+đa số là
+
+320
+00:28:12,450 --> 00:28:22,390
+Khoảng 2600 năm trước, ở thành T, G, A, miền nam Hy Lạp, có một người đàn ông tên là Ly Khát bước vào sân nhà một
+
+321
+00:28:22,390 --> 00:28:32,330
+bác thợ rèn. Ly Khát là người thành Sparta, và ông đang đi tìm một thứ mà cả thành của ông đã tìm suốt nhiều năm chơi.
+
+322
+00:28:32,330 --> 00:28:45,330
+Bác thợ rèn kể cho ông nghe một chuyện lạ. Hồi trước, bác đào giếng ngay giữa cái sân này, đào xuống được một quãng thì lưỡi quốc chạm phải một cái quan tài. Cái quan tài ấy dài hơn 3 mét, tức là dài hơn cả chiếc giường đôi nhà bạn ghép đối tiếp với
+
+323
+00:28:45,330 --> 00:28:58,330
+một chiếc chiếu nữa. Bác không tin có người nào to đến thế, nên mở nắp ra xem. Bên trong là một bộ xương, và bộ xương dài đúng bằng cái quan tài. Bác thợ rèn sợ quá, lấp đất lại, coi như chưa thấy gì, nhưng ly khác thì nghe xong là hiểu ngay.
+
+324
+00:28:58,330 --> 00:29:07,150
+Ngay, ông thuê lại cái sân, đảo bộ xương lên, mang về Ixpacta và tuyên bố rằng đây chính là xương của O, Red Ictet, một người anh hùng thời xa xưa.
+
+325
+00:29:07,670 --> 00:29:12,750
+Người Spactati như vậy, họ trôn cất bộ xương long trọng và tin rằng từ đó thanh của họ sẽ thắng trận.
+
+326
+00:29:13,190 --> 00:29:18,330
+Câu chuyện này không phải mình bịa ra, nó được ông He, Rowe, Dodd, nhà viết sử người Hy Lạp.
+
+327
+00:29:18,330 --> 00:29:20,230
+ghi lại trong bộ sử nổi tiếng của ông
+
+328
+00:29:20,230 --> 00:29:22,310
+và cái chi tiết làm mình để ý nhất
+
+329
+00:29:22,310 --> 00:29:23,610
+không phải là người anh hùng
+
+330
+00:29:23,610 --> 00:29:26,370
+mà là cái phản ứng rất tự nhiên của cả hai người đàn ông kia.
+
+331
+00:29:26,386 --> 00:29:36,039
+Thấy một bộ xương dài hơn 3 mét, không ai nghĩ đó là xương con vật. Ai cũng nghĩ ngay, đây là một con người, một con người khổng lồ. Và bạn biết không, chuyện người khổng lồ
+
+332
+00:29:36,039 --> 00:29:45,693
+đâu chỉ có ở Hy Lạc. Người Bắc Âu kể về một gã khổng lồ tên Ymia, chết đi thì thịt hóa thành đất, xương hóa thành núi. Người Trung Hoa kể về bàn cổ, người đã tách trời
+
+333
+00:29:45,693 --> 00:29:55,346
+khỏi đất. Người Ireland có phim MacGun, gã khổng lồ xây một con đường đá bắc qua biển. Các dân tộc bản địa ở châu Mỹ có những câu chuyện về sinh vật khổng lồ thời xa xưa.
+
+334
+00:29:55,346 --> 00:30:00,886
+Và ngay ở nước mình, có thần trụ trời đắp cột trống trời, có thanh gióng vươn vai thành người cao lớn.
+
+335
+00:30:01,326 --> 00:30:09,946
+Những dân tộc này sống cách nhau hàng vạn cây số, phần lớn họ chưa từng gặp nhau, không đọc sách của nhau, không nghe chuyện của nhau, vậy mà dân tộc nào cũng kể về người khổng lồ.
+
+336
+00:30:10,426 --> 00:30:13,186
+Vì sao vậy? Có 2 cách giải thích bà mình hay nghe nhất.
+
+337
+00:30:13,626 --> 00:30:17,526
+Cách thứ nhất nói rằng, ngày xưa con người to lớn thật, sau này mới nhỏ dần đi.
+
+338
+00:30:17,746 --> 00:30:23,286
+Cách thứ hai nói rằng, các câu chuyện chỉ là truyền tai nhau, dân tộc này nghe của dân tộc kia rồi kể lại.
+
+339
+00:30:23,286 --> 00:30:28,026
+Cả hai cách đều nghe có vẻ hợp lý, nhưng như bạn sẽ thấy, cả hai đều không đứng vững.
+
+340
+00:30:28,486 --> 00:30:36,686
+Câu trả lời thật thì lạ hơn nhiều, nó nằm dưới lòng đất, trong một hiệu thuốc ở Hồng Kông, trên một bờ biển đầy cột đá, trong bộ xương của một chàng trai cao nhất lịch sử.
+
+341
+00:30:37,166 --> 00:30:42,586
+Và một phần câu trả lời nằm ngay gần nhà mình, trong một hang đá vôi ở Lạng Sơn và một ngôi đền bên bờ sông Hồng.
+
+342
+00:30:42,850 --> 00:30:52,810
+Nhưng trước khi đi tìm câu trả lời, mình muốn bạn nhìn vào bàn tay của chính bạn. Hồi nhỏ, chắc nhiều bạn đã thấy bà hoặc mẹ đo vải bằng găng tay. Xoe bàn tay ra, ngón
+
+343
+00:30:52,810 --> 00:31:02,770
+cái một đầu, ngón út một đầu, đặt lên mép vải, rồi đếm. Một găng, hai găng, ba găng. Muốn đo cái gì dài hơn thì dùng sải tay, rang hai tay ra hết cỡ. Muốn đo đường
+
+344
+00:31:02,770 --> 00:31:12,730
+thì đến mức chân. Ông bà mình gọi chiều cao của nước lụt là ngập đến đầu gối, ngập đến thắt lưng. Người Hy Lạp cũng vậy, họ đo bằng khủyểu tay. Người Anh đo bằng bàn chân.
+
+345
+00:31:12,850 --> 00:31:22,050
+Đến giờ vẫn còn gọi một đơn vị đo là food, nghĩa gốc là bàn chân. Từ thỏa xa xưa, cây thước đầu tiên của loài người không làm bằng gỗ hay sắt, nó chính là cơ thể của
+
+346
+00:31:22,050 --> 00:31:31,250
+mình. Và đây là ý chính của cả video này. Khi con người gặp một thứ quá lớn, lớn hơn mọi thứ họ từng biết, họ vẫn đưa cây thước quen thuộc ấy ra để đo. Họ áp
+
+347
+00:31:31,250 --> 00:31:40,450
+găng tay của mình vào một khúc xương, một tảng đá, một ngọn núi. Và khi cây thước ấy không đủ dài, trong đầu họ hiện ra một con người, chỉ có điều là to hơn rất nhiều lần.
+
+348
+00:31:40,450 --> 00:31:44,850
+Người khổng lồ chính là thứ hiện ra khi ta đo cái quá lớn bằng cây thước găng tay.

@@ -1,0 +1,98 @@
+{
+  "sku": "VIDEO-bfabb6",
+  "title": "Hướng dẫn làm Tự động hóa ngách người que view Việt bằng Claude KHÔNG ĐỤNG tới Capcut, 100% edit giống đối thủ  |  Update 23-10-2026 ",
+  "actual_topic": "Tự Động Hóa Ngách Người Que Lịch Sử Tiền Sử View Việt Bằng Claude & Plugin H2 Tiền Sử Studio Không Cần CapCut",
+  "summary": "Hướng dẫn thực chiến tự động hóa 100% quy trình làm video hoạt hình người que chủ đề lịch sử và tiền sử tại thị trường Việt Nam bằng Claude kết hợp bộ công cụ h2-tiensu-studio-v1.0.6.plugin mà không cần dùng CapCut.",
+  "category_group": "ai_automation",
+  "niche_primary": "Hoạt Hình 2D Người Que & Lịch Sử Tiền Sử View Việt",
+  "niche_id": "stickman-tiensu-claude-automation",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Tự động hóa trọn gói ngách người que lịch sử và tiền sử tại thị trường Việt Nam bằng h2-tiensu-studio-v1.0.6.plugin trên Claude Desktop mà không cần chỉnh sửa thủ công trên CapCut.",
+    "Cơ chế quét dữ liệu kênh đối thủ thông minh: Khi gọi lệnh /kich-ban-tiensu, hệ thống phân tích toàn bộ dữ liệu kênh mẫu để đề xuất chủ đề mới và biên soạn kịch bản 4 hồi chuẩn nhịp kể chuyện.",
+    "Đồng bộ tạo hình nhân vật que (Stickman) trên giấy da cừu cổ điển kết hợp Google Flow (mô hình Nano Banana) để giữ vững phong cách mỹ thuật giống hệt các kênh lớn đang thịnh hành.",
+    "Tự động dựng video hoàn chỉnh qua lệnh /lam-video-tiensu: Ghép giọng đọc theo đúng tên tệp âm thanh, tạo hiệu ứng vẽ nét, chuyển động camera, nhạc nền và xuất bản MP4 1080p kèm ảnh thu nhỏ.",
+    "Em chào tất cả anh chị nha, hôm nay em lại tiếp tục lên video hướng dẫn mọi người làm nha."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình tự động hóa A-Z sản xuất video người que lịch sử tiền sử view Việt bằng Claude và h2-tiensu-studio-v1.0.6.plugin không dùng CapCut.",
+    "additional": [
+      "Cài đặt tệp h2-tiensu-studio-v1.0.6.plugin vào Claude Desktop và khởi tạo thư mục dự án làm việc trên máy tính.",
+      "Gọi lệnh /kich-ban-tiensu để Claude phân tích dữ liệu kênh đối thủ, lên danh sách ý tưởng và viết kịch bản chi tiết kèm bảng phân cảnh.",
+      "Sử dụng câu lệnh hình ảnh từ kịch bản để tạo bộ minh họa người que trên nền giấy cổ và lưu đúng tên định danh vào thư mục dự án.",
+      "Tạo tệp âm thanh giọng đọc từ bản thảo lời bình, đặt tên khớp chuẩn cấu trúc dự án rồi chạy lệnh /lam-video-tiensu để xuất video MP4 1080p và ảnh thu nhỏ."
+    ]
+  },
+  "sop_steps": [
+    "Cài đặt tệp h2-tiensu-studio-v1.0.6.plugin vào Claude Desktop và khởi tạo thư mục dự án làm việc trên máy tính.",
+    "Gọi lệnh /kich-ban-tiensu để Claude phân tích dữ liệu kênh đối thủ, lên danh sách ý tưởng và viết kịch bản chi tiết kèm bảng phân cảnh.",
+    "Sử dụng câu lệnh hình ảnh từ kịch bản để tạo bộ minh họa người que trên nền giấy cổ và lưu đúng tên định danh vào thư mục dự án.",
+    "Tạo tệp âm thanh giọng đọc từ bản thảo lời bình, đặt tên khớp chuẩn cấu trúc dự án rồi chạy lệnh /lam-video-tiensu để xuất video MP4 1080p và ảnh thu nhỏ."
+  ],
+  "avoid_flags": [
+    "Đặt sai tên tệp âm thanh hoặc tệp hình ảnh so với mã định danh trong bảng phân cảnh khiến lệnh /lam-video-tiensu không nhận diện được tài nguyên.",
+    "Can thiệp cắt ghép thủ công rời rạc thay vì để bộ công cụ tự động đồng bộ chuyển động, hiệu ứng âm thanh và bố cục ảnh thu nhỏ theo chuẩn kênh mẫu."
+  ],
+  "tools_mentioned": [
+    "Claude",
+    "YouTube",
+    "Google Flow",
+    "Nano Banana",
+    "ChatGPT"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "label": "Giới thiệu quy trình tự động hóa ngách người que view Việt bằng Claude và phân tích kênh đối thủ"
+    },
+    {
+      "time": "01:54",
+      "seconds": 114,
+      "label": "Phân tích phong cách hình vẽ nhân vật, bố cục ảnh thu nhỏ và nhịp độ biên tập của kênh mẫu"
+    },
+    {
+      "time": "07:00",
+      "seconds": 420,
+      "label": "Cài đặt h2-tiensu-studio-v1.0.6.plugin vào Claude Desktop và kích hoạt lệnh /kich-ban-tiensu"
+    },
+    {
+      "time": "12:04",
+      "seconds": 724,
+      "label": "Cơ chế quét dữ liệu kênh đối thủ để lên danh sách chủ đề mới và xuất kịch bản 4 hồi"
+    },
+    {
+      "time": "17:28",
+      "seconds": 1048,
+      "label": "Tạo giọng đọc chuẩn từ file voice script và tải file âm thanh về đúng thư mục dự án"
+    },
+    {
+      "time": "28:00",
+      "seconds": 1680,
+      "label": "Chạy lệnh /lam-video-tiensu để Claude tự động vẽ cảnh 2D, ghép chuyển động và xuất MP4 1080p"
+    }
+  ],
+  "course_docs": [
+    {
+      "title": "Plugin Tự Động Hóa H2 Tiền Sử Studio (h2-tiensu-studio-v1.0.6.plugin)",
+      "name": "Plugin Tự Động Hóa H2 Tiền Sử Studio (h2-tiensu-studio-v1.0.6.plugin)",
+      "file": "assets/docs/VIDEO-bfabb6/h2-tiensu-studio-v1.0.6.plugin",
+      "link": "assets/docs/VIDEO-bfabb6/h2-tiensu-studio-v1.0.6.plugin"
+    },
+    {
+      "title": "Mô tả bài giảng & Tài nguyên gốc (description.txt)",
+      "name": "Mô tả bài giảng & Tài nguyên gốc (description.txt)",
+      "file": "assets/docs/VIDEO-bfabb6/description.txt",
+      "readFile": "assets/docs/VIDEO-bfabb6/description.txt",
+      "link": "assets/docs/VIDEO-bfabb6/description.txt"
+    }
+  ],
+  "analysis_method": "agv_3.8_multimodal_7layer_verified",
+  "accuracy_status": "verified_expert_summary",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-bfabb6/transcript.txt"
+}

@@ -1,12 +1,12 @@
 ---
 handle: "@StorylineEnglishOfficial"
-name: "Storyline English"
+name: "@StorylineEnglishOfficial"
 url: "https://www.youtube.com/@StorylineEnglishOfficial"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @StorylineEnglishOfficial (Storyline English)
+# Kênh Đối Thủ / Kênh Mẫu: @StorylineEnglishOfficial (@StorylineEnglishOfficial)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@StorylineEnglishOfficial](https://www.youtube.com/@StorylineEnglishOfficial)

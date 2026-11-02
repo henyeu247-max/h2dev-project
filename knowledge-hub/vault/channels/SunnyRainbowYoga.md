@@ -1,12 +1,12 @@
 ---
 handle: "@SunnyRainbowYoga"
-name: "Sunny Rainbow Yoga"
+name: "@SunnyRainbowYoga"
 url: "https://www.youtube.com/@SunnyRainbowYoga"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @SunnyRainbowYoga (Sunny Rainbow Yoga)
+# Kênh Đối Thủ / Kênh Mẫu: @SunnyRainbowYoga (@SunnyRainbowYoga)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@SunnyRainbowYoga](https://www.youtube.com/@SunnyRainbowYoga)

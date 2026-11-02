@@ -1,12 +1,12 @@
 ---
 handle: "@musicislife.genzzz"
-name: "m u s i c i s l i f e"
+name: "@musicislife.genzzz"
 url: "https://www.youtube.com/@musicislife.genzzz"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @musicislife.genzzz (m u s i c i s l i f e)
+# Kênh Đối Thủ / Kênh Mẫu: @musicislife.genzzz (@musicislife.genzzz)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@musicislife.genzzz](https://www.youtube.com/@musicislife.genzzz)

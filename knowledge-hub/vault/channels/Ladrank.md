@@ -1,12 +1,12 @@
 ---
 handle: "@Ladrank"
-name: "LADRANKS"
+name: "@Ladrank"
 url: "https://www.youtube.com/@Ladrank"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Ladrank (LADRANKS)
+# Kênh Đối Thủ / Kênh Mẫu: @Ladrank (@Ladrank)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Ladrank](https://www.youtube.com/@Ladrank)

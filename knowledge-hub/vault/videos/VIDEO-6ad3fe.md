@@ -5,8 +5,8 @@ track: "h2dev"
 module_id: "H2DEV-M02"
 module_title: "Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)"
 seq: "07"
-niche: "Bán Content & Phát Triển Kênh"
-markets: ["🇨🇳 Trung"]
+niche: "Chính sách nội dung AI & Xử lý vi phạm"
+markets: ["🇻🇳 Việt"]
 duration: "4:28"
 published_at: "2026-03-20"
 toolsCount: 0
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-6ad3fe&track=h2dev"
 # VIDEO-6ad3fe — FIX LỖI NỘI DUNG KHÔNG TRUNG THỰC - CHÍNH SÁCH MỚI NHẤT 2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M02|H2DEV-M02 — Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)]] (Bài `#07`)  
-> - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
-> - **Thị trường:** 🇨🇳 Trung | **Thời lượng:** `4:28` | **Ngày đăng:** `2026-03-20`  
+> - **Ngách nội dung (Niche):** [[niches/chinh-sach-noi-dung-ai-xu-ly-vi-pham|Chính sách nội dung AI & Xử lý vi phạm]]  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `4:28` | **Ngày đăng:** `2026-03-20`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-6ad3fe&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-6ad3fe/README.md)
 
 ---

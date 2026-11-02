@@ -1,17 +1,17 @@
 ---
 tool_slug: "facebook"
 tool_name: "Facebook"
-videos_count: 44
+videos_count: 47
 tracks: ["h2dev", "huan", "dgmd"]
 ---
 
 # Công Cụ Thực Chiến: Facebook
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **Số bài giảng sử dụng công cụ này:** `44` video
+- **Số bài giảng sử dụng công cụ này:** `47` video
 - **Tracks:** `H2DEV`, `HUAN`, `DGMD`
 
-## Danh Sách Bài Giảng Ứng Dụng Facebook (44)
+## Danh Sách Bài Giảng Ứng Dụng Facebook (47)
 - [[videos/VIDEO-ba3904|VIDEO-ba3904 — Hướng dẫn tham gia cộng đồng VIP riêng tư – Giao lưu, trao đổi và hỗ trợ YouTube H2Dev]] (`H2DEV`)
 - [[videos/VIDEO-826ad0|VIDEO-826ad0 — Tạo Kịch Bản Content Triệu View Và Các Cấm Kỵ Dành Cho Content]] (`HUAN`)
 - [[videos/VIDEO-f8a932|VIDEO-f8a932 — Cách Thức Tạo Ra Tiền Với DREAM 100 và MÔ HÌNH HÓA Kênh Thành Công]] (`HUAN`)
@@ -53,6 +53,9 @@ tracks: ["h2dev", "huan", "dgmd"]
 - [[videos/VIDEO-54dd2a|VIDEO-54dd2a — Quy Trình Sản Xuất Video Xếp Hạng Shorts]] (`DGMD`)
 - [[videos/VIDEO-77e80c|VIDEO-77e80c — Quy Trình Sản Xuất Video Reels Tiếng Anh]] (`DGMD`)
 - [[videos/VIDEO-5a4861|VIDEO-5a4861 — Quy Trình Sản Xuất Page Triệu View]] (`DGMD`)
+- [[videos/VIDEO-e02e02|VIDEO-e02e02 — Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay]] (`DGMD`)
 - [[videos/VIDEO-5779d8|VIDEO-5779d8 — Quy Trình Sản Xuất Tool Phát Trực Tiếp Đa Luồng]] (`DGMD`)
 - [[videos/VIDEO-52b908|VIDEO-52b908 — Hiểu Rõ 15 Danh Mục Quan Trọng Trong YouTube Studio]] (`DGMD`)
 - [[videos/VIDEO-d22348|VIDEO-d22348 — 10 Sai Lầm Khiến YouTube Từ Chối Hoặc Tắt Kiếm Tiền]] (`DGMD`)
+- [[videos/VIDEO-fa13f3|VIDEO-fa13f3 — Quy Trình Gắn Sản Phảm Affiliate ]] (`DGMD`)
+- [[videos/VIDEO-7112d8|VIDEO-7112d8 — Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast]] (`DGMD`)

@@ -1,12 +1,12 @@
 ---
 handle: "@IGN"
-name: "IGN"
+name: "@IGN"
 url: "https://www.youtube.com/@IGN"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @IGN (IGN)
+# Kênh Đối Thủ / Kênh Mẫu: @IGN (@IGN)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@IGN](https://www.youtube.com/@IGN)

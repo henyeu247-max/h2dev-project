@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M11"
 module_title: "Zoom — Quy trình xây kênh từ A–Z (2026-09)"
 seq: "02"
-niche: "Hệ thống / Quy trình"
+niche: "Chiến Lược Tách Kênh & Sản Xuất Hàng Loạt"
 markets: ["🇻🇳 Việt"]
 duration: "1:21:33"
 published_at: "2026-09-11"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=ZOOM-02-Chien-luoc-kenh-san-xuat&track=h2dev"
 # ZOOM-02-Chien-luoc-kenh-san-xuat — Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M11|H2DEV-M11 — Zoom — Quy trình xây kênh từ A–Z (2026-09)]] (Bài `#02`)  
-> - **Ngách nội dung (Niche):** [[niches/he-thong-quy-trinh|Hệ thống / Quy trình]]  
+> - **Ngách nội dung (Niche):** [[niches/chien-luoc-tach-kenh-san-xuat-hang-loat|Chiến Lược Tách Kênh & Sản Xuất Hàng Loạt]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `1:21:33` | **Ngày đăng:** `2026-09-11`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=ZOOM-02-Chien-luoc-kenh-san-xuat&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/ZOOM-02-Chien-luoc-kenh-san-xuat/README.md)
 
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=ZOOM-02-Chien-luoc-kenh-san-xuat&track=h2dev"
 - Thiết lập kênh bài bản trong YouTube Studio: tắt thẻ trang chủ khi kênh còn mới, cấu hình từ khóa kênh, xác minh số điện thoại bước 2 và luôn đăng video ở chế độ Không công khai trước khi hẹn giờ/công chiếu.
 - Case study kênh lịch sử mới lập tăng từ 5.000 sub lên 35.000 sub chỉ sau vài ngày nhờ tìm đúng key ngoại đang nổi rồi nhân bản về thị trường mục tiêu.
 - Tận dụng gói tài khoản Veo 3 Ultra (đi kèm Gemini Ultra) kết hợp mở 4–6 tab chatbot song song và dùng câu lệnh mô tả bối cảnh thước phim tài liệu chân thực để tránh lỗi phi vật lý của AI.
+- kênh này kênh khác nó vẫn không lên dù chất lượng video như thế nào
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Chiến lược tách kênh, lập kênh bám đối thủ và sản xuất hàng loạt kịch bản, video phim tài liệu

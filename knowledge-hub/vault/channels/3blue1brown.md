@@ -1,12 +1,12 @@
 ---
 handle: "@3blue1brown"
-name: "3Blue1Brown"
+name: "@3blue1brown"
 url: "https://www.youtube.com/@3blue1brown"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @3blue1brown (3Blue1Brown)
+# Kênh Đối Thủ / Kênh Mẫu: @3blue1brown (@3blue1brown)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@3blue1brown](https://www.youtube.com/@3blue1brown)

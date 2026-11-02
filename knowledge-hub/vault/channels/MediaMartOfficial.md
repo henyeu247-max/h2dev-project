@@ -1,12 +1,12 @@
 ---
 handle: "@MediaMartOfficial"
-name: "Siêu thị Điện máy MediaMart"
+name: "@MediaMartOfficial"
 url: "https://www.youtube.com/@MediaMartOfficial"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @MediaMartOfficial (Siêu thị Điện máy MediaMart)
+# Kênh Đối Thủ / Kênh Mẫu: @MediaMartOfficial (@MediaMartOfficial)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@MediaMartOfficial](https://www.youtube.com/@MediaMartOfficial)

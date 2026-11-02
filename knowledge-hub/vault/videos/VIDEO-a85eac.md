@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "94"
-niche: "Dưỡng Sinh Thực Dưỡng & Tâm Sự Người Cao Tuổi Hàn Quốc"
+niche: "Sức Khỏe Lão Niên & Rau Củ Bàn Ăn Hàn Quốc"
 markets: ["🇰🇷 Hàn"]
 duration: "10:06"
 published_at: "2026-09-29"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-a85eac&track=h2dev"
 # VIDEO-a85eac — Khám kênh và Update share ngách nhỏ thị trường Hàn mới nhất 29-09-2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#94`)  
-> - **Ngách nội dung (Niche):** [[niches/duong-sinh-thuc-duong-tam-su-nguoi-cao-tuoi-han-quoc|Dưỡng Sinh Thực Dưỡng & Tâm Sự Người Cao Tuổi Hàn Quốc]]  
+> - **Ngách nội dung (Niche):** [[niches/suc-khoe-lao-nien-rau-cu-ban-an-han-quoc|Sức Khỏe Lão Niên & Rau Củ Bàn Ăn Hàn Quốc]]  
 > - **Thị trường:** 🇰🇷 Hàn | **Thời lượng:** `10:06` | **Ngày đăng:** `2026-09-29`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-a85eac&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-a85eac/README.md)
 

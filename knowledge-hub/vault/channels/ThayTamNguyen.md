@@ -1,12 +1,12 @@
 ---
 handle: "@ThayTamNguyen"
-name: "Thầy Tam Nguyên"
+name: "@ThayTamNguyen"
 url: "https://www.youtube.com/@ThayTamNguyen"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ThayTamNguyen (Thầy Tam Nguyên)
+# Kênh Đối Thủ / Kênh Mẫu: @ThayTamNguyen (@ThayTamNguyen)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ThayTamNguyen](https://www.youtube.com/@ThayTamNguyen)

@@ -1,12 +1,12 @@
 ---
 handle: "@AliciaInvests"
-name: "Alicia Invests"
+name: "@AliciaInvests"
 url: "https://www.youtube.com/@AliciaInvests"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @AliciaInvests (Alicia Invests)
+# Kênh Đối Thủ / Kênh Mẫu: @AliciaInvests (@AliciaInvests)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@AliciaInvests](https://www.youtube.com/@AliciaInvests)

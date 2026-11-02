@@ -1,12 +1,12 @@
 ---
 handle: "@JamieSocial"
-name: "Jamie Social"
+name: "@JamieSocial"
 url: "https://www.youtube.com/@JamieSocial"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @JamieSocial (Jamie Social)
+# Kênh Đối Thủ / Kênh Mẫu: @JamieSocial (@JamieSocial)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@JamieSocial](https://www.youtube.com/@JamieSocial)

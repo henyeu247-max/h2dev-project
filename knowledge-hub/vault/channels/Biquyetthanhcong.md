@@ -1,16 +1,16 @@
 ---
 handle: "@Biquyetthanhcong"
-name: "BÍ QUYẾT THÀNH CÔNG"
+name: "@Biquyetthanhcong"
 url: "https://www.youtube.com/@Biquyetthanhcong"
-status: "DEAD"
+status: "LIVE_HTTP_200"
 videos_count: 5
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Biquyetthanhcong (BÍ QUYẾT THÀNH CÔNG)
+# Kênh Đối Thủ / Kênh Mẫu: @Biquyetthanhcong (@Biquyetthanhcong)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Biquyetthanhcong](https://www.youtube.com/@Biquyetthanhcong)
-- **Trạng thái kiểm định:** `DEAD (Đã dừng / Gỡ)`
+- **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`
 

@@ -1,12 +1,12 @@
 ---
 handle: "@loiphatdaymoinhat"
-name: "Lời Phật Dạy"
+name: "@loiphatdaymoinhat"
 url: "https://www.youtube.com/@loiphatdaymoinhat"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @loiphatdaymoinhat (Lời Phật Dạy)
+# Kênh Đối Thủ / Kênh Mẫu: @loiphatdaymoinhat (@loiphatdaymoinhat)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@loiphatdaymoinhat](https://www.youtube.com/@loiphatdaymoinhat)

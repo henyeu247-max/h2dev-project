@@ -1,15 +1,15 @@
 ---
 handle: "@XEM GÌ HÔM NAY (@xemgihomnayofficial)"
-name: "XEM GÌ HÔM NAY (@xemgihomnayofficial)"
-url: "https://www.youtube.com/@xemgihomnayofficial"
+name: "@XEM GÌ HÔM NAY (@xemgihomnayofficial)"
+url: "https://www.youtube.com/@XEM%20G%C3%8C%20H%C3%94M%20NAY%20(%40xemgihomnayofficial)"
 status: "LIVE_HTTP_200"
 videos_count: 3
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @XEM GÌ HÔM NAY (@xemgihomnayofficial) (XEM GÌ HÔM NAY (@xemgihomnayofficial))
+# Kênh Đối Thủ / Kênh Mẫu: @XEM GÌ HÔM NAY (@xemgihomnayofficial) (@XEM GÌ HÔM NAY (@xemgihomnayofficial))
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/@xemgihomnayofficial](https://www.youtube.com/@xemgihomnayofficial)
+- **URL YouTube:** [https://www.youtube.com/@XEM%20G%C3%8C%20H%C3%94M%20NAY%20(%40xemgihomnayofficial)](https://www.youtube.com/@XEM%20G%C3%8C%20H%C3%94M%20NAY%20(%40xemgihomnayofficial))
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

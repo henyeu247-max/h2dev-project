@@ -1,0 +1,1247 @@
+1
+00:00:00,000 --> 00:00:07,800
+Em chào tất cả mọi người nha. Tiếp tục hôm nay thì em sẽ hướng dẫn mọi người làm thêm một cái ngách mới ở thị trường U.S nữa nha.
+
+2
+00:00:08,160 --> 00:00:14,760
+Thì cái dạng này là cực kỳ ở trên nha. Mấy bác có thể nhìn thấy kênh này. Hiện tại là đang nêm video. Mọi người thấy view rất là cao nha.
+
+3
+00:00:15,360 --> 00:00:20,180
+Thì cái dạng này họ vẽ bằng 2D, BAD nha mấy bác. Đây, em chào mọi người xem kênh này.
+
+4
+00:00:20,740 --> 00:00:27,420
+Thì mọi người thấy kênh này họ 8 video đúng không? Thì thật ra là họ gần thêm BAD video short nữa nè.
+
+5
+00:00:27,420 --> 00:00:36,120
+video short thì nó rất là lẹt lẹt nha. Mấy bác đã làm video dài, xác định làm dài rồi thì mọi người đừng có đăng short nha. Đừng có làm short.
+
+6
+00:00:36,560 --> 00:00:50,460
+Em dịch ra cái tiêu đề mọi người có thể đọc nè. Dạng này thì kiểu như nó nói về, nó vĩ về dạng 2D, BD, làm về giải thích thế nào, si tăng đánh bại các cái si tăng này kia mọi người.
+
+7
+00:00:50,460 --> 00:01:00,860
+Mấy bác có thể đặt tiêu đề của nó nha. Còn em để trên hết rồi. Mọi người gọi skill kết bản này thì nó sẽ gửi cho mọi người rất là nhiều chủ đề để mọi người làm.
+
+8
+00:01:01,520 --> 00:01:08,480
+Trong này thì nó có đủ các loại là địa hình, rồi các loại bối cảnh như quân cờ, xe tanh, pháo đồ này kia vậy mọi người.
+
+9
+00:01:08,480 --> 00:01:18,816
+Một bài mọi người. Đấy. Về âm thanh nó cũng có những cái tiếng súng này kia thì em để trên cá sánh hết tất cả cho mấy bác luôn.
+
+10
+00:01:18,816 --> 00:01:27,651
+h d 3 miles behind Utah Beach 4 German guns are shelling the main road off the sand About 60 men defend them and their machine guns cover every yard of open ground
+
+11
+00:01:30,911 --> 00:01:44,251
+Đó, vừa rồi thì em cho mọi người xem qua cái demo của kênh đối thủ này. Nói là kiểu dạng như vậy đấy mọi người. Đấy, những hình ảnh này dẫn lên là bằng 2D, 3D thôi. Đấy, rất là chi tiết nha.
+
+12
+00:01:44,251 --> 00:01:54,761
+Thì ở trong video này thì có cái đặc biệt nữa là cái dạng này thì đương nhiên là sẽ bằng con clon sẽ làm tự động thôi. Mấy bác chỉ cần việc cấp dòng đọc thôi nha. Chứ không
+
+13
+00:01:54,761 --> 00:02:05,271
+cần phải là cấp hình ảnh thêm nữa đâu. Về cái dòng đọc ở cái dạng này thì em chỉ làm clon theo đúng giống với cái dòng của đối thủ này luôn nha. Tí nữa em sẽ làm.
+
+14
+00:02:06,000 --> 00:02:17,771
+Cái này là mấy bác nào kiểu mọi người dùng PC thì có card đồ họa riêng thì mọi người chỉ cần 3 phút, chưa tới 3 phút là xem 1 video 8 đến 10 phút rồi nha.
+
+15
+00:02:18,191 --> 00:02:20,951
+Thì chút là ti tiết như nào thì em sẽ nói rõ hơn.
+
+16
+00:02:21,331 --> 00:02:27,731
+Còn mọi người không có card đồ họa của cái máy thì nó chạy bằng cloud không thì chắc chắn là sẽ lâu hơn nha mọi người.
+
+17
+00:02:28,231 --> 00:02:29,351
+Thì em giải thích quê.
+
+18
+00:02:29,351 --> 00:02:36,391
+Em làm thêm 1 cái phiên bản là chạy bằng card đồ họa nữa dành cho những bác nào có mấy cấu hình cao, PC có card đồ họa riêng ấy.
+
+19
+00:02:36,731 --> 00:02:39,191
+Thì mọi người sẽ làm rất là nhanh xem video nha.
+
+20
+00:02:39,550 --> 00:02:43,710
+Ok, bây giờ thì em vào quy trình luôn nha mấy bác.
+
+21
+00:02:44,330 --> 00:02:47,910
+Đầu tiên thì đương nhiên sẽ có cái File Blowing Skill này đúng không?
+
+22
+00:02:48,030 --> 00:02:50,670
+Thì em để trên thật sự rất là tốn công luôn.
+
+23
+00:02:50,890 --> 00:02:52,310
+2, 3 ngày trời mới xong nha.
+
+24
+00:02:52,730 --> 00:02:58,470
+Rồi, bây giờ sẽ vào con Cloth thì mọi người ban đều thì add cái folder vào cái thư mục.
+
+25
+00:02:58,790 --> 00:03:03,150
+Chọn Oboot 5.5 này, Model này, xong mọi người gọi skill lên thôi.
+
+26
+00:03:03,470 --> 00:03:05,730
+Lúc này là mấy bác để tải cái File Blowing lên rồi ha.
+
+27
+00:03:06,450 --> 00:03:09,130
+Chỗ những cái đoạn như này thì mấy bác đều biết hết rồi đúng không?
+
+28
+00:03:09,130 --> 00:03:12,210
+Bởi vì mọi người đã xem những video hướng dẫn trước em rất là kỹ rồi.
+
+29
+00:03:12,790 --> 00:03:15,550
+Ngoài về cái quy trình thì nó cũng chỉ có nhiêu đá thôi mọi người.
+
+30
+00:03:15,710 --> 00:03:19,730
+Nên là những cái bước này thì quét quen về mọi người đã làm được hết rồi đúng không?
+
+31
+00:03:20,170 --> 00:03:24,350
+Chủ yếu là do cái chủ yếu là mọi ngách thì nó có mọi cái skill khác nhau thôi.
+
+32
+00:03:24,810 --> 00:03:28,290
+Thì bây giờ em sẽ gọi cái skill kịch bản vì em sẽ cho nó chạy nha.
+
+33
+00:03:28,290 --> 00:03:36,390
+Nó sẽ đặt qua cái kênh đối thủ và nó sẽ gợi ý về cho em những cái chủ đề mới về hay hơn nữa nha mọi người.
+
+34
+00:03:36,830 --> 00:03:38,470
+Tránh bị trùng lẹp về kênh đối thủ nha.
+
+35
+00:03:38,470 --> 00:03:50,330
+Thì cái dạng này á, những cái dạng hôm bữa em share cho bác edit bằng Cloth này á, thì hoàn toàn là làm bằng, kiểu như là làm về dạng là content luôn, sáng tạo luôn nha mọi người, chứ không phải là bán content nữa đâu.
+
+36
+00:03:50,330 --> 00:03:58,630
+Bán content có nghĩa là giống như những cái lúc trước kia MCA ở thị trường nhặt hàng ấy, mọi người xào nấu kịch bản đối thủ này kia.
+
+37
+00:03:58,630 --> 00:04:05,030
+Thì nó gọi là bán content thôi. Còn bây giờ thì mình đang theo hướng là kiểu làm content luôn ấy mọi người ạ.
+
+38
+00:04:05,030 --> 00:04:10,330
+Bởi vì mình làm ra cái chủ đề hoàn toàn mới về cái kịch bản cũng hoàn toàn mới mà.
+
+39
+00:04:10,330 --> 00:04:13,090
+Bây giờ hiện tại thì nó đang đọc kênh đối thủ nha
+
+40
+00:04:13,090 --> 00:04:16,270
+Nói chung ngách nào thì em cũng trend đều như vậy kìa mọi người
+
+41
+00:04:16,466 --> 00:04:25,976
+Ok, chờ đợi một tí thì cuối cùng nó cũng đã lật về nó chạy xong cho em nè. Nó báo cáo cho em là đã quét về kênh đối thủ nè. Vì vậy nó
+
+42
+00:04:25,976 --> 00:04:35,486
+sẽ lưu danh sách vào cái file .txtr trong thư mục. Về đối thủ đang có những gì thì nó phân tích ra hết nè. Những video triệu view chủ đề nào như nào nè.
+
+43
+00:04:35,486 --> 00:04:46,886
+Xong hồi dưới thì nó sẽ đợi sức cho em những cái chủ đề mới về chủ đề sẽ những cái nào nên làm trước thì nó sẽ gắn be sao nè. Nó ưu tiên cho em.
+
+44
+00:04:48,446 --> 00:04:51,746
+Thì bác có thể xem where nha. Những cái này thì nó phân tích của nó thôi.
+
+45
+00:04:53,486 --> 00:05:02,226
+Giờ làm demo thì giả sử em sẽ chọn chủ đề 1 đầu tiên luôn nha. Em sẽ ghi số 1 thôi. Enter một phát thì bây giờ chỉ cần việc đợi nó chạy thôi mọi người ạ.
+
+46
+00:05:02,226 --> 00:05:13,786
+Đối với cái ngách này thì em để trên rất kỹ rồi, thì tí nữa mọi người chỉ thấy, quay được cái demo của em là hình ảnh video rất là chất lượng nha, có khi còn hay hơn kẻ rối thủ luôn á.
+
+47
+00:05:14,446 --> 00:05:20,366
+Đó là cái vấn đề em trên thật sự rất là lâu, 2,3 ngày mới xong được những cái chủ đề mà muốn làm nha mọi người.
+
+48
+00:05:21,026 --> 00:05:28,726
+Chứ không phải là khi mà trên cái Security Edit này không đơn giản như mà làm bán content đâu mọi người, không đơn giản là cái sao nó không kịch bản đâu.
+
+49
+00:05:28,950 --> 00:05:38,370
+Cái này rất khó nha. Bởi vì nó tốn thời gian trên và trên đi trên lại rất nhiều test, demo nữa nha mọi người chứ không phải là 2 ba lần là rea liền
+
+50
+00:05:38,370 --> 00:05:47,790
+đâu. Với lại nó sẽ tốn token rất nhiều nữa. Em dùng gói map mà nó tốn rất nhiều thứ, rất nhiều luôn. Đôi khi em làm trên 1 phiên nó hết luôn. Xong
+
+51
+00:05:47,790 --> 00:05:57,210
+rồi em phải đợi tới thời gian nó reset token xong rồi em mới làm tiếp được. Đó là đối với em hiện tại em đang dùng gói map 1 kem do trên 1 tháng.
+
+52
+00:05:57,210 --> 00:06:06,830
+Nó đốt rất là cao nha. Còn khi mà đẻ Re-Skill rồi mình chạy thì nó sẽ tối ưu. Đấy, nó không có đốt nhiều nữa nha mọi người. Đó là cái vấn đề em đẻ tối ưu hết rồi. Nên là
+
+53
+00:06:06,830 --> 00:06:16,450
+vác lưu cái chỗ đó. Chứ không phải là Re-Dream được cái skill đơn giản đâu. Nên là thật sự cái này em không hướng dẫn cụ thể mọi người được. Đấy, nên là mọi người hiểu cho em chỗ đó nha.
+
+54
+00:06:16,450 --> 00:06:25,060
+Với lại là em chưa nói là tùy theo từng ngách khác nhau nữa. Mỗi ngách thì nó có mỗi phim cách, hình ảnh, nhân vật này kia
+
+55
+00:06:25,060 --> 00:06:33,670
+khác nhau nữa, bối cảnh khác nhau nữa. Rất rất là nhiều thứ luôn. Không phải ngách nào nằm giống như ngách nào thì quét đơn giản rồi.
+
+56
+00:06:33,670 --> 00:06:42,850
+Rồi em vừa tour về cái đoạn nó gen ra kịch bản nè, thì như vậy là nó đã ghen xong rồi nó đã tạo cho em 4 file, 4 file như thường ở trong thư mục nè.
+
+57
+00:06:42,850 --> 00:06:49,510
+Nó tự sinh ra cái thứ 1 thì mọi người cũng đều biết rồi ha. Đầu tiên file 01 thì là full kịch bản của nó thôi.
+
+58
+00:06:49,510 --> 00:07:02,850
+File 02 thì là cái file này để mình đi ghen âm thanh nè. Thì cái ngách này thì chỉ cần 1 giọng đặc thôi. Nên là em dùng cái chế độ là cuối câu á. Cuối dòng thì tách ra nha mọi người. Tách ra nó có cái tự đặc biệt giấu thành ngay.
+
+59
+00:07:02,850 --> 00:07:03,390
+Đứng kia nè
+
+60
+00:07:03,390 --> 00:07:03,831
+Cái này
+
+61
+00:07:03,831 --> 00:07:07,891
+Cái này thì ở những video trước em có nói kỹ rồi, bác có thể xem lại kỹ cái chỗ đó nha.
+
+62
+00:07:08,571 --> 00:07:15,051
+Cái này thì áp dụng cho em làm tool thôi mọi người, em dùng tool minimax clone của em với tool eliminate lab thôi.
+
+63
+00:07:15,051 --> 00:07:24,451
+Và cái file 04 Bách Kiệt này thì nó sẽ gồm tất cả những cái gợi ý tiêu đề về mô tả cũng như là cái thị từ khóa cho mọi người khi làm video luôn.
+
+64
+00:07:24,731 --> 00:07:26,911
+Đấy, khi đem video luôn. Có đầy đủ kẻ nha.
+
+65
+00:07:27,551 --> 00:07:32,571
+Rồi bước tiếp theo thì bây giờ em sẽ đi lấy cái file này, em đi tạo dọn đọc thôi mọi người.
+
+66
+00:07:34,511 --> 00:07:40,151
+Rồi thì như lúc nãy em nói thì video này thì em sẽ làm clone giống theo cái dọng của đối thủ luôn nha.
+
+67
+00:07:40,151 --> 00:07:45,731
+Bây giờ em sẽ mở lại cho mọi người nghi lại một đoạn nữa cho các bác nghi được cái giọng đối thủ.
+
+68
+00:07:46,000 --> 00:07:50,180
+September 19, 1944.
+
+69
+00:07:51,120 --> 00:07:53,580
+Farmland in Lorraine, in eastern France,
+
+70
+00:07:53,960 --> 00:07:57,271
+under a fog so thick you can't see across the coast.
+
+71
+00:07:57,271 --> 00:08:01,851
+Đấy, cái giọng đối thủ này khá là hay và rất là phù hợp với cái ngách này luôn. Nó kiểu như trầm ấy.
+
+72
+00:08:02,411 --> 00:08:06,871
+Nên là em clone theo luôn. Hiện tại thì em đã dùng tuôn clone vì em đã clone rồi nha.
+
+73
+00:08:06,871 --> 00:08:13,871
+Cái clone này thì em tour nhanh ve nha mọi người, chứ em bỏ ve thôi, em import vào cái file này, em tra chạy nha.
+
+74
+00:08:13,871 --> 00:08:17,871
+Bởi vì clone này thì em hướng dẫn rất là nhiều rồi, nói chung mọi người đều biết cả.
+
+75
+00:08:17,871 --> 00:08:24,871
+Vấn đề là em quay cho mọi người thấy được cái quy trình tạo ra được cái âm thanh là như nào thôi, để mấy bác rõ.
+
+76
+00:08:25,600 --> 00:08:32,200
+khi mà đã tạo xong cái giọng đọc rồi á thì bây giờ đã có đầy đủ tài nghiêng là giọng đọc nè
+
+77
+00:08:32,200 --> 00:08:42,200
+chỉ cần vậy thôi ngách này chỉ cần vậy thôi bây giờ thì em chỉ quay lại con Claude về gọi cái skill dẫn video lên thôi mọi người
+
+78
+00:08:42,200 --> 00:08:50,000
+thì lúc này bác có thể add lại cái folder nha cái thư mục của mọi người á thì bình thường thì mọi người chỉ cần add lúc đầu thôi là được rồi
+
+79
+00:08:50,000 --> 00:08:58,300
+Còn em hiện tại thì làm demo phương chẳng nên em làm thêm 1 lần nữa cho nó kỹ để mấy bác thấy được. Nếu mọi người có quên thì mọi người làm đúng nha.
+
+80
+00:08:58,840 --> 00:09:05,760
+Rồi em gọi skill ra và em yêu cầu là hãy dẫn video thôi. Đúng với cái đường dẫn thư 1 của mình nha.
+
+81
+00:09:06,100 --> 00:09:09,920
+Rồi bây giờ là đến đây cái chỗ lưu ý quan trọng nè. Lúc nãy em có nói mọi người á.
+
+82
+00:09:10,340 --> 00:09:16,040
+Thì bây giờ nó sẽ hiện ra 1 câu hỏi là mấy dẫn là mấy cloud không có cạt đồ họa nên dẫn chậm.
+
+83
+00:09:16,040 --> 00:09:24,840
+video tổng, ước tính video demo của em rea khoảng 10 phút. Bạn sẽ xuất ở chế độ phân giải nào.
+
+84
+00:09:25,520 --> 00:09:32,560
+Nếu mà em chọn là 720p, chất lượng 720p, thì nó sẽ nhanh gấp đôi là khoảng 2 tiếng là sẽ rea được 1 video.
+
+85
+00:09:32,560 --> 00:09:35,180
+Đó là đối với chạy cloud nha mọi người.
+
+86
+00:09:35,540 --> 00:09:38,540
+Đó, và nếu như mọi người muốn chất lượng là 1080p
+
+87
+00:09:38,540 --> 00:09:40,360
+thì nó sẽ rất là nét hơn.
+
+88
+00:09:40,480 --> 00:09:42,080
+Vì nó chung là đúng với chất lượng của mình luôn.
+
+89
+00:09:42,540 --> 00:09:45,680
+Nhưng mà nó sẽ tốn gấp đau thời gian là 4 tiếng.
+
+90
+00:09:46,060 --> 00:09:48,140
+Đó, đó là cái vấn đề là chạy cloud.
+
+91
+00:09:48,360 --> 00:09:51,540
+Nó chạy trên cloud là chạy bằng con cloud này thôi nha mọi người.
+
+92
+00:09:51,960 --> 00:09:52,560
+Đấy, còn hiện tại là chạy cloud này thôi.
+
+93
+00:09:52,560 --> 00:09:54,580
+tại là mấy em là em đang dùng PC
+
+94
+00:09:54,580 --> 00:09:56,480
+bây giờ có card đồ họa rời
+
+95
+00:09:56,480 --> 00:09:57,700
+là rời tới X
+
+96
+00:09:57,700 --> 00:09:59,520
+nêm 060 nha bác
+
+97
+00:09:59,520 --> 00:10:00,800
+nêm 060 nha
+
+98
+00:10:00,800 --> 00:10:02,380
+đó là mấy đối với mấy của em
+
+99
+00:10:02,380 --> 00:10:03,780
+nên là em đã cá rồi
+
+100
+00:10:03,780 --> 00:10:05,220
+thì em sẽ yêu cầu ngược lại
+
+101
+00:10:05,220 --> 00:10:07,420
+em sẽ chọn lựa chọn khác ở dưới này
+
+102
+00:10:07,420 --> 00:10:08,220
+em nhập vào á
+
+103
+00:10:08,220 --> 00:10:08,831
+mọi người thấy không
+
+104
+00:10:08,831 --> 00:10:18,831
+Yên nhập là hãy dựng full cho tôi là chất lượng là 1080p nè, nhưng mấy tôi hiện tại là có card đồ họa chứ không phải không có, nên là bạn hãy chết lại chỗ này.
+
+105
+00:10:19,311 --> 00:10:26,411
+Vậy là yêu cầu đó là em chạy bằng card đồ họa nha mấy bác. Đó là đối với những bác nào mà giống em, cả mấy
+
+106
+00:10:26,411 --> 00:10:33,511
+PC giống em thì mọi người cứ yêu cầu như vậy, thì nó sẽ chuyển hướng cho mọi người là chạy cái bằng card đồ họa nha.
+
+107
+00:10:33,511 --> 00:10:40,931
+Còn mọi người mà máy không có các đồ họa như máy nem dùng, máy mat hay là máy laptop yếu á, thì mọi người cứ chọn chấp nhận, chọn
+
+108
+00:10:40,931 --> 00:10:48,351
+cái tí lợ thôi. Nếu mà mọi người chọn chất lượng cao như 1080 á, thì nó sẽ tốn thời gian rất là lâu để mà gain xong nha.
+
+109
+00:10:48,731 --> 00:10:53,951
+Nói cái này thì em giải thích cụ thể chỗ đó để mọi người hiểu qua trước. Rồi tí nữa thì em sẽ giải thích thêm nữa nha.
+
+110
+00:10:53,951 --> 00:11:05,891
+Tiếp tục thì nó hỏi em một câu nữa là chọn tiêu đề nào thì em chọn cái tiêu đề đời sức thôi. Chọn cái số 1 cái đầu tiên thôi. Recommend cái khiến nghị của nó thôi mọi người. Cái chỗ tiêu đề thì bác cứ chọn theo cái khiến nghị của nó nha.
+
+111
+00:11:06,550 --> 00:11:17,610
+Rồi thì bây giờ sau khi nó chạy một hồi thì tiếp tục nó lại hỏi em là mình đã gửi hai ảnh tổng hộp có nghĩa là những cái ảnh phân tích của trước đó nó phân tích với cộng với
+
+112
+00:11:17,610 --> 00:11:28,670
+BMW Y-Domo của cái video này để cho em xem qua thử nếu mà ok thì em diệt cho nó chạy tiếp còn nếu mà không ok thì em sẽ cần sửa chỗ nào thì em yêu cầu nó sửa thôi.
+
+113
+00:11:28,670 --> 00:11:33,250
+Thì bây giờ thì em với mọi người cùng xem qua cái demo BMW Y-Domo này trước đã nha.
+
+114
+00:11:36,550 --> 00:11:49,660
+A river crossing on the border of Zululand. About 150 British soldiers, many of them sick, guard two thatched buildings. At half past four in the afternoon, three to four thousand Zulu warriors come around the hill behind them. The
+
+115
+00:11:49,660 --> 00:12:02,770
+fight goes on through the night. By morning, the Zulus are gone, and the post is still standing. Its new walls were made of grain sacks and biscuit boxes. Let's look at the ground and find out how they were.
+
+116
+00:12:02,770 --> 00:12:16,190
+Đó, thì em đã vừa xem cái demo thì nó trông thấy ok, rất là ok rồi. Thì chỉ là BMUJAY đầu tiên thôi mè. Bây giờ thì em sẽ tiếp tục yêu cầu đó nè. Để cho nó không bị hữu nhầm á, thì tiếp tục. Đối với em là
+
+117
+00:12:16,190 --> 00:12:29,610
+em chạy bằng card độ họa, nên là em không có chọn tích vào kia. Mà em yêu cầu ở dưới, em bấm ở dưới mọi người thấy em nhập không. Em sẽ bảo nó là dựng full 1080 luôn. Đấy, có nghĩa là diệt rồi. Chừng hãy dựng full 1080.
+
+118
+00:12:29,610 --> 00:12:33,970
+Nhưng mấy tôi là có card đồ họa nè chứ không phải chạy trên cloud không
+
+119
+00:12:33,970 --> 00:12:35,550
+Nên bạn hãy check chỗ này
+
+120
+00:12:35,550 --> 00:12:39,370
+Em nghĩ nói tiếp tục lại nói kỹ lại một phần nữa để cho nó hiểu nha mọi người
+
+121
+00:12:39,370 --> 00:12:42,390
+Mấy tôi có card đồ họa nên sẽ lên nhanh hơn chứ
+
+122
+00:12:42,551 --> 00:12:44,471
+Ví dụ em hỏi thêm một câu như vậy nữa.
+
+123
+00:12:45,111 --> 00:12:50,231
+Mấy bác phải trên AI nha, mình dùng AI chứ đừng để AI nó dùng mình mọi người ạ.
+
+124
+00:12:50,751 --> 00:12:55,751
+Nói chung là thật sự mọi người cần gì thì mấy bác cứ yêu cầu nó là nó sẽ re hết.
+
+125
+00:12:56,231 --> 00:12:57,931
+Đây là em đang thực chiến cho mọi người thái luôn.
+
+126
+00:12:57,931 --> 00:13:08,391
+Còn những mấy bác nào như lúc nãy em nói mọi người không có mấy cạt đồ họ riêng thì mọi người chấp nhận sẽ ghen lâu nha.
+
+127
+00:13:08,531 --> 00:13:11,291
+Mọi người chọn theo những cái cách kia thôi.
+
+128
+00:13:12,011 --> 00:13:19,991
+Còn đây là hiện tại đó với lựa chọn là chọn cho những anh em nào mà có mấy tốt mấy mạnh về cạt đồ họ riêng như em nè.
+
+129
+00:13:20,051 --> 00:13:21,831
+Thì mọi người sẽ chọn như vậy.
+
+130
+00:13:21,991 --> 00:13:24,311
+Tí nữa sẽ gen ra video rất là nhanh luôn.
+
+131
+00:13:24,451 --> 00:13:25,991
+Mấy bác thấy rất là bất ngờ luôn nha.
+
+132
+00:13:26,000 --> 00:13:29,171
+Tạm 3 phút, chưa được 3 phút là xong video luôn mọi người ạ.
+
+133
+00:13:30,031 --> 00:13:36,811
+Rồi, khi em đã chọn cái lựa chọn đó rồi á, thì bây giờ nó sẽ hiện ra cho em là video chưa dẫn xong nè.
+
+134
+00:13:36,951 --> 00:13:44,391
+Nhưng mà nó đã chuẩn bị xong đầy đủ các cái dữ liệu để mình để cho em dẫn cái bản 1080p bằng cạt đồ họa nha.
+
+135
+00:13:44,851 --> 00:13:47,351
+Đấy, chỉ cần 1 cú bấm click ở trong file nè.
+
+136
+00:13:47,791 --> 00:13:51,491
+Đó, cái này là nó đã chuẩn bị sẵn cho em file ở trong cái dự án của mình rồi nha.
+
+137
+00:13:51,491 --> 00:13:58,545
+Nếu mà mấy vác nào mà dùng cloud thì hiện tại nó vẫn đang ghim, nó đang ghim là tạo cho mọi người thôi, mọi người chỉ
+
+138
+00:13:58,545 --> 00:14:05,600
+cần đợi thôi. Còn đối với em là dùng cạt đồ họa nên là bây giờ nó hướng dẫn em là mở cái thư mục lên nè.
+
+139
+00:14:05,600 --> 00:14:15,610
+Sau đó bấm chuột vào file lạ dụng video, đuôi là .bát nè mọi người. Bây giờ thì em chỉ công việc làm theo hướng dẫn của nó thôi. Ban đầu thì nó sẽ cài nó siết nè,
+
+140
+00:14:15,610 --> 00:14:25,620
+nói chung là một số môi trường về tài nghiêng để cho nó edit thôi mọi người ạ. Đây là lần đầu thôi, chứ những lần sau thì nó không cần cài lại những cái này nha.
+
+141
+00:14:25,620 --> 00:14:31,300
+Nó chỉ cần những video sau thì nó sẽ ghen luôn cho em, nó sẽ ghép luôn.
+
+142
+00:14:31,780 --> 00:14:36,600
+Còn hiện tại làm lần đầu, cả lần đầu thì nó sẽ tải về lần đầu nha mọi người.
+
+143
+00:14:37,400 --> 00:14:43,140
+Còn ở dưới này thì nó phân tích về một số chỗ làm ở trong video thôi, chứ không có gì lưới đâu mọi người ạ.
+
+144
+00:14:43,240 --> 00:14:44,800
+Chỗ nào lưới thì mới nói nha.
+
+145
+00:14:45,240 --> 00:14:47,380
+Đây, cái đây là cái file dẫn nè.
+
+146
+00:14:47,440 --> 00:14:52,680
+Đấy, file dẫn để em bái về những cái hình ảnh tổng hợp, cái nghĩa là những ảnh nó để vẽ ra, để nó edit video.
+
+147
+00:14:52,680 --> 00:14:55,840
+Đây là ảnh thumb nè, mọi người thấy không? Chari là ảnh thumb luôn.
+
+148
+00:14:56,360 --> 00:14:58,480
+Rồi bây giờ thì em quay lại với cái thư mục dự án nè.
+
+149
+00:14:58,760 --> 00:15:03,160
+Bây giờ mọi người đã thấy nó tạo cho em một cái file là dựng video, do là chấm bát không?
+
+150
+00:15:03,300 --> 00:15:05,280
+Bây giờ em làm thì cũng dẫn đó, em click vào nha.
+
+151
+00:15:05,920 --> 00:15:09,860
+Đấy, bây giờ thì em chỉ đợi đó, mọi người thấy nó đang cài đặt NOSGS nè.
+
+152
+00:15:10,500 --> 00:15:13,020
+Cài đặt một số cái môi trường và tài nghiêng để nó edit thôi.
+
+153
+00:15:15,440 --> 00:15:16,680
+Đấy, em chỉ đợi một tí nữa.
+
+154
+00:15:16,680 --> 00:15:21,680
+Đây là đối với hiện tại em đang làm mình cạt đồ họa nha mọi người
+
+155
+00:15:21,680 --> 00:15:23,680
+Em nhắc đi nhắc lại để mấy bác rõ luôn
+
+156
+00:15:23,680 --> 00:15:26,680
+Chứ nhiều khi mấy bác cứ xem tua tua mọi người không hiểu
+
+157
+00:15:26,680 --> 00:15:28,301
+Rồi
+
+158
+00:15:28,301 --> 00:15:37,941
+Rồi như vậy thì chờ đợi tầm vài phút thôi. Tầm 2 đến 3 phút thì nó chỉ cài xong cái này. Nó đang tới được cái bước 4 rồi mọi người ạ.
+
+159
+00:15:47,041 --> 00:15:55,001
+Rồi ok nha, hiện tại thì nó đã cài xem cho em về cái môi trường là nó chỉ ít về một số cái kia, cái mà như lúc nãy nó đã thông báo rồi hả?
+
+160
+00:15:55,441 --> 00:16:04,381
+Thì bây giờ tiếp tục, thì hiện tại là em bấm, em trả lời nó không được nữa nè, nó không chạy nữa nè, đã chưa quay được cái bước nêm nè.
+
+161
+00:16:04,701 --> 00:16:09,221
+Thì nếu mà gặp trường hợp như em nè, thì bây giờ em sẽ thực chứng cho mọi người luôn là em sẽ hỏi nó thôi.
+
+162
+00:16:09,641 --> 00:16:13,221
+Đấy chứ không có vấn đề gì cả. Bây giờ thì em sẽ cắt cái màn hình lại nha.
+
+163
+00:16:13,221 --> 00:16:26,101
+Vì em quay lại với con Claude và em hỏi là hiện tại như thế này là xong chưa hay là vẫn đợi thì em sẽ đợi nó trả lời như thế nào. Nếu mà vẫn đợi thì em sẽ đợi tiếp thôi. Còn không thì em sẽ bảo cho nó tạo cho cái file để em chạy cho nó nhanh nha.
+
+164
+00:16:26,481 --> 00:16:37,501
+Đây mọi người thấy không? Bây giờ nó kêu là chưa xong đâu nè. Đương nhiên là chưa xong nè. Đấy bây giờ theo ảnh thì máy đang ở bước 4 và 6 nè. Nó vừa tải trong trình dược vẽ thôi về một số cái gói nhỏ.
+
+165
+00:16:38,450 --> 00:16:45,130
+Tiếp tục ở dưới là nó sẽ thông báo là thứ tự bước cắt bước tiếp theo là nó sẽ hiện ra cửa sổ là nem xẹt xéo có nghĩa là bước nem nè.
+
+166
+00:16:45,410 --> 00:16:49,030
+Nó sẽ dẫn hình video, dẫn video cho em là chất lượng 1080.
+
+167
+00:16:51,530 --> 00:16:56,330
+Tiếp tục là bước cuối cùng là bước xéo là ghép tiếng và chạy vài giây nè.
+
+168
+00:16:56,430 --> 00:16:59,750
+Đấy, và khi nào nó hiện chữ xong thì tắt kẻ là đã xong rồi.
+
+169
+00:17:00,270 --> 00:17:07,730
+Rồi ở dưới cuối cùng thì nó nói em là nếu xe khoảng 5 phút nữa mà màn hình như hiện tại, nó vẫn đang đứng và nó không chạy.
+
+170
+00:17:07,730 --> 00:17:19,850
+Thì em sẽ bấm Enter, xem thử cửa sổ nó có mở hay không. Nếu mà cửa sổ mở ra tiếng độ thì em sẽ chụp hình cho nó, em cho nó xem thử nó báo thời gian là render bao lâu nha mọi người.
+
+171
+00:17:20,350 --> 00:17:28,190
+Thì hiện tại là em chờ rồi, em vẫn chưa thấy gì. Thì bây giờ em ví dụ thực chế nha bác luôn, kiểu như em chờ nó chưa rare, em để bấm Enter nó cũng không rare luôn nha.
+
+172
+00:17:28,350 --> 00:17:37,470
+Thì bây giờ tiếp tục em sẽ báo nó là tôi Enter rồi và tôi chờ nó cũng không rare. Để cho anh đã làm cho em tiếp, để cho anh nói hướng dẫn cho em làm tiếp nha mọi người.
+
+173
+00:17:37,730 --> 00:17:47,430
+Đây nè, em đã vừa nhập là tôi đợi năm phút rồi nhưng vẫn chưa chạy gì, và nó cứ đứng im, tôi bấm Enter nó cũng đứng im, thì bây giờ thì sẽ xử lý như thế nào nha.
+
+174
+00:17:47,930 --> 00:17:54,190
+Đương nhiên em biết chắc chắn là bây giờ nó sẽ tạo cho em một cái file để em bấm tiếp bước tiếp theo thôi, bởi vì cái bước này là dẫn hình thôi mấy bác ạ, chứ không có gì cả.
+
+175
+00:17:54,190 --> 00:18:02,290
+Nhưng mà em thực hiện cho mọi người là những trường hợp mọi người không chạy thì bác cứ yêu cầu nó sẽ ra.
+
+176
+00:18:02,290 --> 00:18:09,330
+Đây nè, máy bị treo ở bước cài trình vẽ, file để tải xong 100% nhưng mà bước đó nó không chạy tiếp bước sau nè.
+
+177
+00:18:09,330 --> 00:18:14,190
+Thì bây giờ nó sẽ lội bãi, nó kêu em là tắt trình vẽ.
+
+178
+00:18:14,190 --> 00:18:21,750
+Cửa sổ sẽ tạo cho em một file thêm là tiếp tục video nè, chấm pass nè
+
+179
+00:18:21,750 --> 00:18:25,161
+Em chỉ cần việc click vào đó thôi là nó sẽ chạy tiếp
+
+180
+00:18:25,161 --> 00:18:31,601
+Cái bước thứ 5 nha. Mọi người chỉ cần việc nghe em tóm tích giải thích như vậy là mọi người hiểu nha. Đó đơn giản vậy thôi mấy bác ạ.
+
+181
+00:18:32,241 --> 00:18:42,531
+Thì bây giờ em sẽ quay lại với cái dự án của em. Hiện tại nó đã tạo cho em một cái file là tiếp tục này. Em sẽ tích cái cửa sổ cũ đây. Đây, mọi người thấy không? Nó tạo
+
+182
+00:18:42,531 --> 00:18:52,821
+cho em một cái file là tiếp tục dựng hình .bass nè. Em click vào thì nó sẽ hiện 2 cái cửa sổ lên. Hiện tại 2 cái cửa sổ này nó đang chạy cái bước 5 nha. Đây mấy bác xem nè.
+
+183
+00:18:52,821 --> 00:19:03,221
+Bây giờ thì em làm theo ứng dẫn của nó thôi, nó bảo em chụp màn hình lại, em gửi nó để xem nó báo tiếng độ thử cái card đồ hộ của em là chạy bao nhiêu phút ấy mọi người, chạy bao nhiêu phút là xong video á.
+
+184
+00:19:03,761 --> 00:19:09,221
+Thì như hiện tại bác thấy là hiện tại đang chạy luôn nha, em vừa cho nó chạy vì em vừa hỏi con Claude luôn.
+
+185
+00:19:09,761 --> 00:19:16,761
+Thì đây là hiện tại nó đang tính tón về nó đang đập cái trong máy của em luôn nha, đang đập trong cái phần dự án của em luôn ấy mọi người.
+
+186
+00:19:16,861 --> 00:19:18,401
+Đấy để cho nó tính rea xem.
+
+187
+00:19:18,401 --> 00:19:29,801
+hình, hiện tại em vẫn để xong xong luôn nha, em không tua nha, cái đoạn ghen này em chỉ không tua, bởi vì cái phần ghen này em biết nó chỉ rất là nhanh, em đang chạy bàn cặt đồ họ nè, rất là nhanh thôi.
+
+188
+00:19:30,000 --> 00:19:38,241
+Bên phần này thì nó đang chạy cùng lúc với cái dự án của em luôn
+
+189
+00:19:38,241 --> 00:19:43,241
+Em nghĩ nó sẽ ra cách quẹ cùng với cái khi mà đã làm xong video luôn đó mọi người ạ
+
+190
+00:19:43,241 --> 00:19:46,801
+Ở cái cạp độ hội hiện tại đang chạy thì mọi người thấy không?
+
+191
+00:19:46,801 --> 00:19:49,801
+Toàn là 90 máy, 8 máy, trung bình là 70 máy
+
+192
+00:19:49,801 --> 00:19:52,601
+Máy tái máy khung trên 1 giây này mọi người
+
+193
+00:19:52,601 --> 00:19:55,481
+Mọi người đã báo cho em còn lại là khoảng tầm 2 phút nữa
+
+194
+00:19:55,481 --> 00:19:57,481
+Một phút nữa là sẽ xong nè mọi người
+
+195
+00:19:57,481 --> 00:20:00,441
+Nếu mà mọi người chạy bằng Cloud không
+
+196
+00:20:00,441 --> 00:20:01,600
+Thì thật sự rất là lâu
+
+197
+00:20:01,600 --> 00:20:09,450
+nó chỉ có chạy được tầm be đến nem khung trên dây thôi. Thật sự rất rất là lâu. Nên đó là lý do mà ở
+
+198
+00:20:09,450 --> 00:20:17,300
+những cái lúc trước em hướng dẫn mọi người bằng cách chạy Cloud thì nó sẽ tốn rất là nhiều thời gian của máy bác.
+
+199
+00:20:18,580 --> 00:20:25,980
+Tốn thật sự rất rất là lâu luôn. Nếu mà video 10 phút như này chạy bằng Cloud không thì mất vài tiếng mọi người chứ không phải nhanh đâu nha.
+
+200
+00:20:25,980 --> 00:20:38,060
+Bây giờ thì em vẫn đang treo và em không tua nha. Cái đoạn cuối này thì em không tua để cho bác thấy được tốc độ của khi mà dùng card đồ họ thì sẽ gen ra video tầm bao nhiêu phút nha.
+
+201
+00:20:38,060 --> 00:20:47,240
+Nói chung là gần xong luôn rồi mọi người ạ
+
+202
+00:20:47,240 --> 00:20:48,860
+Còn tầm 1 phút nữa thôi
+
+203
+00:20:48,860 --> 00:20:50,580
+Mà bác thấy nó báo nó hiện đang
+
+204
+00:20:50,580 --> 00:20:52,920
+Đang dường ở 2 cửa sổ của em đang chạy không
+
+205
+00:20:58,060 --> 00:21:06,070
+Cái chỗ này bên con cò lót này thì nó đang chạy song song cùng với
+
+206
+00:21:06,070 --> 00:21:14,080
+cái kết quả ở bên cái dự án em đang chạy luôn á mọi người.
+
+207
+00:21:14,280 --> 00:21:16,200
+Nên khi nào mà xong thì chỗ này nó đang chạy song song cùng với cái kết quả ở bên cái dự án em đang chạy luôn á mọi người.
+
+208
+00:21:19,931 --> 00:21:26,611
+Báo để em biết được là khoảng bao nhiêu tốc độ, khoảng bao nhiêu video, tầm bao nhiêu phút để làm ra được với mọi người.
+
+209
+00:21:37,531 --> 00:21:40,371
+Hiện tại là đang hơn 2 phút máy, gần 3 phút rồi nha.
+
+210
+00:21:45,191 --> 00:21:56,561
+Em nhắc lại là cái này là em đang dùng card đồ hội để em chạy nha. Còn mọi người mà dùng cloud thì vẫn làm như cách trước giờ thôi hả bác? Lúc
+
+211
+00:21:56,561 --> 00:22:07,931
+kia thì mọi người chọn cái tí lợ chọn cái chất lượng rồi mọi người chờ đợi nó again thôi nha. Lúc đó thì mọi người chỉ cần việc treo máy và đợi thôi.
+
+212
+00:23:07,631 --> 00:23:09,931
+với cái thời lượng là 2.8 phút này
+
+213
+00:23:09,931 --> 00:23:11,211
+chưa đến 3 phút luôn
+
+214
+00:23:11,211 --> 00:23:12,751
+đã xong được video rồi nha
+
+215
+00:23:12,751 --> 00:23:13,511
+đấy
+
+216
+00:23:13,511 --> 00:23:15,311
+thì cho mấy bác thấy được cái thực tế
+
+217
+00:23:15,311 --> 00:23:16,851
+bạn chạy bằng gạt đồ họa như vậy
+
+218
+00:23:16,851 --> 00:23:17,871
+bên chỗ này thì
+
+219
+00:23:17,871 --> 00:23:19,791
+nó đang tính toán kết cách vẽ không tới
+
+220
+00:23:19,791 --> 00:23:20,071
+đây
+
+221
+00:23:20,071 --> 00:23:21,191
+nó ra luôn nè mọi người
+
+222
+00:23:21,191 --> 00:23:22,731
+đấy video đã dẫn xong
+
+223
+00:23:22,731 --> 00:23:24,611
+mấy bạn chạy bằng gạt đồ họa RTX
+
+224
+00:23:24,611 --> 00:23:26,071
+5060 nè
+
+225
+00:23:26,071 --> 00:23:26,751
+đấy
+
+226
+00:23:26,751 --> 00:23:27,631
+ở khoảng là
+
+227
+00:23:27,631 --> 00:23:31,451
+trung bình là 75 đến 94 khung trên dây nè
+
+228
+00:23:31,451 --> 00:23:32,591
+rất là nhanh
+
+229
+00:23:32,591 --> 00:23:35,051
+nên là video chưa tới 1 bè phút nè
+
+230
+00:23:35,891 --> 00:23:38,991
+Nó phân tích hết rất là rõ luôn, em giải thích để cho bác thấy luôn.
+
+231
+00:23:39,531 --> 00:23:44,771
+Về cái file video thì lúc nãy mọi người nhớ là em có chọn cái tiêu đề không?
+
+232
+00:23:44,991 --> 00:23:54,091
+Thì bây giờ cái video đó nó cũng đã đặt cái tiêu đề cho em là như này luôn rồi, chấm với cái đuôi là chấm M4 nè, nèm trong cái thư mục của em nè.
+
+233
+00:23:55,391 --> 00:24:03,011
+Bây giờ thì tí nữa em sẽ mở ra cho bác xem thôi. Vậy cái độ dài của nó thì khoảng, độ dài của video thực tế này là 8 phút 46 giây.
+
+234
+00:24:03,511 --> 00:24:07,311
+Đấy ban đều thì là nó ước lượng 10 phút thì nói chung cái đó là chỉ là ước lượng thôi mọi người ạ.
+
+235
+00:24:07,731 --> 00:24:17,671
+Còn khi mà để vào edit làm rồi thì nó sẽ tùy thuộc vào cái tốc độ void cũng như là tốc độ giọng đạp đó mọi người cũng như là edit video thôi.
+
+236
+00:24:18,311 --> 00:24:24,871
+Ở dưới thì nó ra báo cho em là cái chỗ lỗi 404 thì nói chung không ảnh hưởng không liên quan thì cái này thì mình biết rồi ha.
+
+237
+00:24:24,871 --> 00:24:33,914
+Nói chung cái đó là báo cáo là cho em thôi. Hiện tại là
+
+238
+00:24:33,914 --> 00:24:42,957
+nó chung là đã chạy xong hết rồi hả bác. Bây giờ thì em
+
+239
+00:24:42,957 --> 00:24:52,000
+sẽ mở cái file tổng của cái demo cho mọi người xem nha.
+
+240
+00:24:52,000 --> 00:25:02,260
+By morning, the Zulus are gone, and the post is still standing. Its new walls were made of grain sacks and biscuit boxes. Let's look at the ground and find out how they held.
+
+241
+00:25:02,780 --> 00:25:12,580
+The post is called Rourke's Drift, a supply depot and field hospital for Lord Chelmsford's army. Around noon, the station commander rides off to hurry up reinforcements.
+
+242
+00:25:12,580 --> 00:25:24,120
+He leaves a lieutenant of the Royal Engineers in charge. His name is John Chard. He has never been in a battle. With him is Lieutenant Gonville Bromhead and B Company of the 24th Foot.
+
+243
+00:25:25,000 --> 00:25:35,490
+In the middle of the afternoon, two riders come in from the east. The main camp at Izandwana, about 10 km away, has been overrun. A Zulu force is on
+
+244
+00:25:35,490 --> 00:25:46,860
+its way. Chard has no orders for this. He has about 110 fit British soldiers, a company of local African troops, more than 30 patients, two oxwagons, and very little time.
+
+245
+00:25:46,860 --> 00:25:59,894
+This is the real ground with the heights stretched so you can read them The post sits on a gentle shelf above the Buffalo
+
+246
+00:25:59,894 --> 00:26:12,928
+River Two buildings 35 yards apart In the west the hospital A long house of soft mud brick with a thatched roof and 11
+
+247
+00:26:12,928 --> 00:26:25,962
+small rooms In the east the storehouse Until the army came it was the missionary church Behind them to the south rises a hill
+
+248
+00:26:25,962 --> 00:26:38,996
+the British call the Oscarberg The Zulus call it Xi Its lower slope is full of rocks and caves H subscribe cho k G
+
+249
+00:26:39,016 --> 00:26:51,706
+Play it out. Ox wagons move at walking pace. The patients cannot march. The Zulu regiments coming toward them have marched about 30 kilometers since 8 that morning. A man on foot is still faster than
+
+250
+00:26:51,706 --> 00:27:04,396
+an ox. Somewhere on that road, in open grass, 4,000 men catch 150. That had already happened once that day. At Isandlwana, the British had no wall, and most of the camp died in the open.
+
+251
+00:27:04,396 --> 00:27:12,216
+The acting commissary, James Dalton, says it out loud. Private Henry Hook gave his words years later.
+
+252
+00:27:12,696 --> 00:27:21,036
+If we left the drift, every man was certain to be killed. So they stay. Staying is only half a plan. The other half is how much ground to hold.
+
+253
+00:27:21,036 --> 00:27:31,296
+The British Army's field handbook of the time is Garnet Wolseley's Soldier's Pocketbook. The 1874 edition, under defensive posts, gives the arithmetic.
+
+254
+00:27:31,296 --> 00:27:35,636
+YauTube, it assumes the garrison is sufficient for the extent to be defended.
+
+255
+00:27:36,000 --> 00:27:45,660
+In other words, about one file to every running yard of hedge, wall, and so on. A file is two men. Then a quarter more, held back as
+
+256
+00:27:45,660 --> 00:27:55,320
+a reserve. The same page asks for a central building as a citadel, where all the wounded are carried, and it says this. Boxes, barrels, and bags
+
+257
+00:27:55,320 --> 00:28:04,980
+filled with earth make good parapets. Now, count. About 110 fit men is 55 files. Keep a quarter back, and you can man under 50 yards of wall.
+
+258
+00:28:04,980 --> 00:28:14,667
+The two buildings alone stand 35 yards apart. A wall around both of them and the kraal run several times longer than that. So the plan has two parts.
+
+259
+00:28:14,667 --> 00:28:24,353
+Build the outer wall now as long as it has to be. And before the enemy arrives, build a second, shorter wall inside it so the line can shrink
+
+260
+00:28:24,353 --> 00:28:34,040
+when the men run short. Hold only the wall you can fill and have the next one ready behind it. Mark that sentence. The whole night turns on it.
+
+261
+00:28:34,040 --> 00:28:45,216
+The storehouse holds bags of maize called mealy and boxes of hard biscuit Hook remembered the mealy bags as good big heavy things weighing about 200 pounds each In about an hour and a half
+
+262
+00:28:45,216 --> 00:28:56,393
+the men drag them into a wall about four feet high It runs from the far corner of the hospital along the rocky ledge on the north side to the stone crawl On the south
+
+263
+00:28:56,393 --> 00:29:07,570
+it closes the gap back to the store The men knock loopholes through both buildings Then Chard adds the second wall a line of biscuit boxes straight across the middle of the yard from the storehouse
+
+264
+00:29:07,570 --> 00:29:18,746
+to the north wall If the hospital end falls the men can step back behind it At about 4 there is firing behind the hill A troop of African horsemen posted out there rides away
+
+265
+00:29:18,746 --> 00:29:29,676
+Then the company of the natal native contingent climbs over the wall and runs, its captain with it. In a few minutes, the garrison drops from about 400 to about 150. The
+
+266
+00:29:29,676 --> 00:29:40,606
+wall is just as long, the men are not. At half past four, the first Zulus come around the shoulder of Xi'an, about 600 of them running straight at the south wall.
+
+267
+00:29:40,606 --> 00:29:45,666
+Chard wrote that they rushed on in spite of their heavy loss to within 50 yards of the wall.
+
+268
+00:29:46,086 --> 00:29:50,206
+Then they swing around the hospital, into the bush on the north side.
+
+269
+00:29:50,606 --> 00:29:54,526
+Riflemen climb into the caves of Xi'an and fire down into the yard.
+
+270
+00:29:55,046 --> 00:29:58,166
+From here on, every wall is under attack at once.
+
+271
+00:29:58,666 --> 00:30:00,386
+The north wall takes the worst of it.
+
+272
+00:30:00,806 --> 00:30:03,246
+Spear against bayonet across the mealy bags.
+
+273
+00:30:03,366 --> 00:30:07,246
+The men there are spread thin, as the arithmetic said.
+
+274
+00:30:07,746 --> 00:30:09,886
+Around 6, Chard reads it the same way.
+
+275
+00:30:09,886 --> 00:30:12,746
+He wrote later that our line of defense was too extended.
+
+276
+00:30:13,286 --> 00:30:15,426
+He pulls everyone back behind the biscuit boxes.
+
+277
+00:30:15,906 --> 00:30:17,326
+The second wall is already there.
+
+278
+00:30:17,500 --> 00:30:25,360
+This is the rule doing its work. The men stand closer together, and the open yard becomes ground the Zulus must cross under fire.
+
+279
+00:30:25,820 --> 00:30:32,640
+But the hospital is now outside the line. Patients are still inside. The Zulus set fire to the thatch.
+
+280
+00:30:33,160 --> 00:30:37,820
+Hook said the rooms were so small that you could hardly swing a bayonet in them.
+
+281
+00:30:38,240 --> 00:30:45,400
+Hook and Private John Williams hack through the mudbrick partitions, dragging the patients room to room, then out a window and across the yard.
+
+282
+00:30:45,400 --> 00:30:55,247
+The breaching takes about 50 minutes. Of 11 patients, 9 reach the line alive. Around 10, the men give up the outer half of the kraal. The line shrinks again.
+
+283
+00:30:55,247 --> 00:31:05,093
+In the yard, two big heaps of mealy bags become a hollow redoubt about 9 feet high. Chard wrote that it gave a second line of fire all around.
+
+284
+00:31:05,093 --> 00:31:14,940
+Wolseley's Citadel, made of grain sacks. The burning hospital lights the yard for the riflemen. The attacks slow after midnight. The firing ends a little after 4 in the morning.
+
+285
+00:31:15,400 --> 00:31:25,968
+Now the count The closest study of the roll puts the garrison at 154 men 17 are killed or die of wounds 15 are wounded Of about 20
+
+286
+00:31:25,968 --> 00:31:36,535
+rounds in reserve roughly 900 are left Chard called it about a box and a half The Zulu count is harder The next day the British buried 351
+
+287
+00:31:36,535 --> 00:31:47,103
+bodies near the post Other estimates run to 500 600 and higher More bodies were found later and many wounded Zulus were killed after the fight The
+
+288
+00:31:47,103 --> 00:31:57,671
+counts differ and that last fact belongs in the record too 11 Victoria Crosses were awarded still the most for a single action So why did it hold
+
+289
+00:31:57,671 --> 00:32:01,951
+The Zulus were brave, and they outnumbered the garrison more than 20 to 1.
+
+290
+00:32:02,431 --> 00:32:08,571
+1. The wall made the attack stop. The Zulu weapon was the stabbing spear, and it needs contact.
+
+291
+00:32:09,091 --> 00:32:14,971
+A four-foot wall of grain sacks turns a charge into a crowd, standing still in front of rifles.
+
+292
+00:32:15,511 --> 00:32:24,431
+2. The line got shorter, three times. The biscuit boxes, then the crowl, then the redoubt. Each step back put fewer men closer together.
+
+293
+00:32:24,431 --> 00:32:28,191
+The garrison never tried to hold more wall than it had rifles for.
+
+294
+00:32:28,691 --> 00:32:35,451
+3. Firepower at close range. Each soldier carried a Martini Henry breech loader, and the store was full of ammunition.
+
+295
+00:32:36,051 --> 00:32:39,811
+The few Zulus with guns on the hill had poor powder and poor aim.
+
+296
+00:32:40,371 --> 00:32:47,791
+4. The attackers were exhausted and off their orders. This was the Zulu reserve from Isend-Lawana, after a 30-kilometer march.
+
+297
+00:32:47,791 --> 00:32:54,731
+King Chechueyo had not wanted the frontier crossed. Most of the warriors had not eaten or rested since the day before.
+
+298
+00:32:55,050 --> 00:33:05,510
+Go back to the wagons on the road to help Makar. Same men, same rifles, no wall. That was Eisendwana. Hold only the wall you can fill and have the next one ready behind it. If
+
+299
+00:33:05,510 --> 00:33:15,970
+you have seen the 1964 film Zulu, this is the fight it was made from. The real walls were smaller. Subscribe for the next battle and tell us below which ground we should walk next.
+
+300
+00:33:15,970 --> 00:33:25,050
+Rồi, như vậy thì em đã vừa hướng dẫn thực chế nhà mắt xong về cũng như là tặng mọi người cái skill làm về cái ngách ở
+
+301
+00:33:25,050 --> 00:33:29,190
+Cái ngách bên thị trường của WS này, ngách cực kỳ là trend này nha.
+
+302
+00:33:29,630 --> 00:33:36,730
+Thì mấy bác cũng đã thấy là nếu mà game bằng card đồ họa, thì mọi người sẽ mất thời gian rất là rất là ít.
+
+303
+00:33:37,570 --> 00:33:40,570
+Mọi người chỉ cần việc chạy quy trình kịch bản, tạo void.
+
+304
+00:33:41,070 --> 00:33:47,350
+Rồi khi mà dẫn video thì nó mất tầm đâu đó 3 phút thôi, là nó chỉ trong 1 video tầm 8 đến 9 phút nha mọi người.
+
+305
+00:33:47,350 --> 00:33:57,050
+Nhưng mà đối với mấy máy bác nào chỉ chạy cloud không á, kiểu như không có card đồ họa riêng á mọi người, thì máy bác phải chấp nhận một điều là mọi người đợi lâu nha.
+
+306
+00:33:57,050 --> 00:34:04,200
+Chứ cái này là hết cách rồi mấy bác ạ. Cái này thì em đã cố gắng hết sức để làm riêng một phương án để
+
+307
+00:34:04,200 --> 00:34:11,350
+cho bác nào như em thì hiện tại em đang dùng PC, các card đồ họa riêng thì chỉ tiết kiệm thời gian hơn thôi.
+
+308
+00:34:11,690 --> 00:34:16,850
+Chứ em đã tôi ưa hết sức có thể rồi mọi người ạ. Còn lại thì bác phải chấp nhận chờ đợi nha.
+
+309
+00:34:17,050 --> 00:34:17,355
+Rồi.
+
+310
+00:34:17,355 --> 00:34:19,915
+Rồi ok em cảm ơn tất cả mọi người để xem đi bên đây.
+
+311
+00:34:19,915 --> 00:34:25,155
+Thì tất cả cái Plugin Skills thì em sẽ để dưới mô tả mà bác có thể tham khảo.
+
+312
+00:34:25,255 --> 00:34:29,855
+Vậy em cũng sẽ kèm theo cái kênh đối thủ này để mọi người xem tham khảo thêm nha.

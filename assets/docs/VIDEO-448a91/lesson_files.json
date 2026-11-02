@@ -1,0 +1,32 @@
+{
+  "id": 12809,
+  "sku": "VIDEO-448a91",
+  "upstream_sku": "VIDEO-448a91",
+  "name": "Thực chiến share ngách view ngoại Thị trường Nhật Bản - Tặng kèm skill edit video  |  Update 27-10-2026",
+  "url_key": "thuc-chien-share-ngach-view-ngoai-thi-truong-nhat-ban-tang-kem-skill-edit-video-update-27-10-2026",
+  "published_at": "2026-10-27",
+  "time": "1473",
+  "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1793096696-update-video-pro-27-10-2026&protected=False&version=v2&token=gAAAAABq4Hv_pmUAzU05Z4u0UZN6pKFleHDwxUv2M5R2vVdUmCpkJ4Ts2wcWum6acHcIH4mAiujZ5EawrHXXGIX17e2zS457g5sZ89QS_PZq5pNp8UDDl70%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
+  "protected": false,
+  "bai_h_c_free": false,
+  "lesson_files": null,
+  "attachments": null,
+  "video_subtitle": null,
+  "image": {
+    "url": "https://saas-api.mona.academy/media/catalog/product/T/h/Th_Tr_ng_Nh_t_B_n_V_YouTube_AI.png.png",
+    "label": "Thị Trường Nhật Bản Và YouTube AI.png"
+  },
+  "thumbnail": {
+    "url": "https://saas-api.mona.academy/media/catalog/product/T/h/Th_Tr_ng_Nh_t_B_n_V_YouTube_AI.png.png",
+    "label": "Thị Trường Nhật Bản Và YouTube AI.png"
+  },
+  "tags": null,
+  "gdrive_files": [
+    {
+      "file_id": "149b11RPcizq_Sx-FQVfiLztrbvEB58SE",
+      "filename": "h2-kodai-studio.plugin",
+      "bytes": 164833
+    }
+  ],
+  "gdoc_files": []
+}

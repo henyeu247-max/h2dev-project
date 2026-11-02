@@ -15,6 +15,8 @@
     "logrotate": "node scripts/logrotate.js",
     "logrotate:force": "node scripts/logrotate.js --force",
     "guard": "node scripts/guard-no-inline-onclick.js",
+    "ingest:check": "node scripts/auto_ingest_pipeline.js --check",
+    "ingest:auto": "node scripts/auto_ingest_pipeline.js --run",
     "build:css": "tailwindcss -i ./css/input.css -o ./assets/tailwind.css --minify"
   },
   "keywords": [],

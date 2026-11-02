@@ -1,12 +1,12 @@
 ---
 handle: "@5MinuteCraftsYouTube"
-name: "5-Minute Crafts"
+name: "@5MinuteCraftsYouTube"
 url: "https://www.youtube.com/@5MinuteCraftsYouTube"
 status: "LIVE_HTTP_200"
 videos_count: 7
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @5MinuteCraftsYouTube (5-Minute Crafts)
+# Kênh Đối Thủ / Kênh Mẫu: @5MinuteCraftsYouTube (@5MinuteCraftsYouTube)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@5MinuteCraftsYouTube](https://www.youtube.com/@5MinuteCraftsYouTube)

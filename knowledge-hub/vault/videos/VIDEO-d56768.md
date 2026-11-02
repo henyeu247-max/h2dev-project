@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-d56768&track=h2dev"
 # VIDEO-d56768 — Share ngách bán content view Việt mới nhất 09-09-2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#90`)  
 > - **Ngách nội dung (Niche):** [[niches/ban-content-drama-doi-song|Bán Content & Drama Đời Sống]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `7:17` | **Ngày đăng:** `2026-09-09`  

@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "05"
-niche: "Tâm Linh & Thu Hút May Mắn"
+niche: "Phong Thủy & Thu Hút Tài Lộc Hàn Quốc"
 markets: ["🌐 Ngoại", "🇰🇷 Hàn"]
 duration: "10:10"
 published_at: "2026-08-03"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-e24c31&track=h2dev"
 # VIDEO-e24c31 — Update ngách mới cực trends bán content view ngoại, show kênh mới hoàn toàn 5 video
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#05`)  
-> - **Ngách nội dung (Niche):** [[niches/tam-linh-thu-hut-may-man|Tâm Linh & Thu Hút May Mắn]]  
+> - **Ngách nội dung (Niche):** [[niches/phong-thuy-thu-hut-tai-loc-han-quoc|Phong Thủy & Thu Hút Tài Lộc Hàn Quốc]]  
 > - **Thị trường:** 🌐 Ngoại · 🇰🇷 Hàn | **Thời lượng:** `10:10` | **Ngày đăng:** `2026-08-03`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-e24c31&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-e24c31/README.md)
 

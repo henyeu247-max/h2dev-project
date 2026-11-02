@@ -1,12 +1,12 @@
 ---
 handle: "@CuongPhimReview"
-name: "Cuồng Phim Review"
+name: "@CuongPhimReview"
 url: "https://www.youtube.com/@CuongPhimReview"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @CuongPhimReview (Cuồng Phim Review)
+# Kênh Đối Thủ / Kênh Mẫu: @CuongPhimReview (@CuongPhimReview)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@CuongPhimReview](https://www.youtube.com/@CuongPhimReview)

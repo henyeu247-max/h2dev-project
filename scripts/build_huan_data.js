@@ -178,6 +178,17 @@ async function main() {
           ins.key_takeaways = ins.KeyTakeaways;
           mutated = true;
         }
+        if (!Array.isArray(ins.key_takeaways) || ins.key_takeaways.length < 5) {
+          const synthesized = [...(Array.isArray(ins.key_takeaways) ? ins.key_takeaways : [])];
+          if (Array.isArray(ins.KeyTakeaways)) synthesized.push(...ins.KeyTakeaways);
+          if (Array.isArray(ins.sop_steps)) synthesized.push(...ins.sop_steps);
+          if (Array.isArray(ins.edit_sop?.additional)) synthesized.push(...ins.edit_sop.additional);
+          const uniq = [...new Set(synthesized.filter(Boolean))];
+          if (uniq.length >= 5) {
+            ins.key_takeaways = uniq.slice(0, 6);
+            mutated = true;
+          }
+        }
         if ((!Array.isArray(ins.key_timestamps) || !ins.key_timestamps.length) && Array.isArray(ins.Timestamps)) {
           ins.key_timestamps = ins.Timestamps;
           mutated = true;
@@ -422,6 +433,8 @@ async function main() {
       };
       videoInsightsHuan[sku] = normalizedInsight;
 
+      const ingestedAt = prevCatItem.ingested_at || p.ingested_at || '';
+
       const catalogItem = {
         sku,
         title: lessonTitle,
@@ -431,7 +444,7 @@ async function main() {
         resolution: '1080p',
         width: 1920,
         height: 1080,
-        badge: isFree ? 'MIỄN PHÍ' : 'PRO',
+        badge: prevCatItem.badge || p.badge || (isFree ? 'MIỄN PHÍ' : 'PRO'),
         size_mb: sizeMb,
         duration_sec: durSec,
         duration: durStr,
@@ -443,6 +456,7 @@ async function main() {
         index: globalIndex,
         seq: seqStr,
         published_at: publishedAt,
+        ...(ingestedAt ? { ingested_at: ingestedAt } : {}),
         actual_topic: normalizedInsight.actual_topic,
         category_id: String(prevMod.category_id || ''),
         category_name: prevMod.title,
@@ -488,7 +502,8 @@ async function main() {
         niche: contentNiche,
         market: markets,
         published_at: publishedAt,
-        badge: isFree ? 'MIỄN PHÍ' : 'PRO',
+        ...(ingestedAt ? { ingested_at: ingestedAt } : {}),
+        badge: catalogItem.badge,
         free: isFree,
         is_free: isFree,
         drm: false,

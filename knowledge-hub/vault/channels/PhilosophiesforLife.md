@@ -1,12 +1,12 @@
 ---
 handle: "@PhilosophiesforLife"
-name: "Philosophies for Life (Triết lý sống & Bài học cổ nhân Global)"
+name: "@PhilosophiesforLife"
 url: "https://www.youtube.com/@PhilosophiesforLife"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @PhilosophiesforLife (Philosophies for Life (Triết lý sống & Bài học cổ nhân Global))
+# Kênh Đối Thủ / Kênh Mẫu: @PhilosophiesforLife (@PhilosophiesforLife)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@PhilosophiesforLife](https://www.youtube.com/@PhilosophiesforLife)

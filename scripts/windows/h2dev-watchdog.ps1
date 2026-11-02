@@ -10,12 +10,32 @@ $ErrorActionPreference = "Continue"
 # root, not in <project>\scripts.
 $root   = Split-Path -Parent (Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path))
 $port   = 8899
-$log    = Join-Path $root "h2dev-tray.log"
-$lanLog = Join-Path $root "server-lan.log"
-$lanErr = Join-Path $root "server-lan.err.log"
+$logDir = Join-Path $root "logs"
+$log    = Join-Path $logDir "h2dev-tray.log"
+$lanLog = Join-Path $logDir "server-lan.log"
+$lanErr = Join-Path $logDir "server-lan.err.log"
+
+# Single-instance mutex to prevent overlapping recovery runs
+try {
+  $wdMutex = New-Object System.Threading.Mutex($false, "Global\H2DevWatchdogMutex")
+  if (-not $wdMutex.WaitOne(0, $false)) { exit 0 }
+} catch { }
+
+function Rotate-LogIfLarge([string]$path, [long]$maxBytes = 1048576) {
+  try {
+    if (Test-Path -LiteralPath $path) {
+      $item = Get-Item -LiteralPath $path -ErrorAction SilentlyContinue
+      if ($item -and $item.Length -gt $maxBytes) {
+        Move-Item -LiteralPath $path -Destination ($path + ".1") -Force -ErrorAction SilentlyContinue
+      }
+    }
+  } catch { }
+}
 
 function Write-Diag($msg) {
   try {
+    if (-not (Test-Path -LiteralPath $logDir)) { New-Item -ItemType Directory -Force -Path $logDir | Out-Null }
+    Rotate-LogIfLarge -path $log
     Add-Content -Path $log -Value ("[{0}] [WATCHDOG] {1}" -f (Get-Date -Format "yyyy-MM-dd HH:mm:ss"), $msg)
   } catch { }
 }
@@ -30,6 +50,16 @@ function Get-ServerPids {
 
 function Test-Port {
   param([int]$Port)
+  try {
+    $req = [System.Net.HttpWebRequest]::Create("http://127.0.0.1:$Port/health")
+    $req.Method = "GET"
+    $req.Timeout = 1500
+    $req.Proxy = $null
+    $resp = $req.GetResponse()
+    $code = [int]$resp.StatusCode
+    $resp.Close()
+    if ($code -ge 200 -and $code -lt 400) { return $true }
+  } catch { }
   try {
     $conn = @(Get-NetTCPConnection -LocalPort $Port -State Listen -ErrorAction SilentlyContinue |
       Where-Object { $_.OwningProcess -and $_.OwningProcess -ne 0 })
@@ -49,6 +79,10 @@ function Start-Server {
 
   $env:HOST = "0.0.0.0"
   $env:PORT = "$port"
+
+  if (-not (Test-Path -LiteralPath $logDir)) { New-Item -ItemType Directory -Force -Path $logDir | Out-Null }
+  Rotate-LogIfLarge -path $lanLog
+  Rotate-LogIfLarge -path $lanErr
 
   # CreateNoWindow + start /b so node detaches without console flash.
   try {

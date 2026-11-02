@@ -1,17 +1,17 @@
 ---
 tool_slug: "claude"
 tool_name: "Claude"
-videos_count: 16
+videos_count: 20
 tracks: ["h2dev", "huan", "dgmd"]
 ---
 
 # Công Cụ Thực Chiến: Claude
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **Số bài giảng sử dụng công cụ này:** `16` video
+- **Số bài giảng sử dụng công cụ này:** `20` video
 - **Tracks:** `H2DEV`, `HUAN`, `DGMD`
 
-## Danh Sách Bài Giảng Ứng Dụng Claude (16)
+## Danh Sách Bài Giảng Ứng Dụng Claude (20)
 - [[videos/VIDEO-3e943c|VIDEO-3e943c — Nên dùng bản web hay app? và giải thích nên dùng gói nào của Claude AI]] (`H2DEV`)
 - [[videos/VIDEO-54c8f7|VIDEO-54c8f7 — Full quy trình thực chiến hướng dẫn dùng Claude train prompt bất kỳ chủ đề ngách nào mình muốn và cách đóng gói Skill để dùng làm viết kịch bản, tạo ảnh, tạo thumb... (video dài hơn 1 giờ) - Quy Trình dạng tự tạo làm mới chủ đề, kịch bản, hình ảnh... ]] (`H2DEV`)
 - [[videos/VIDEO-5d54d0|VIDEO-5d54d0 — Thực chiến hướng dẫn train Claude làm prompt bám theo kịch bản đối thủ xào nấu cho bất kỳ chủ đề (ngách) nào muốn - Quy trình chuẩn bán content dành cho ngách bám theo 70% kịch bản đối thủ]] (`H2DEV`)
@@ -25,6 +25,10 @@ tracks: ["h2dev", "huan", "dgmd"]
 - [[videos/VIDEO-0b3f44|VIDEO-0b3f44 — Share 2 ngách nhỏ bán content view ngoại mới | Update 13-10-2026]] (`H2DEV`)
 - [[videos/VIDEO-e0e9cd|VIDEO-e0e9cd — V2 - Thực chiến quy trình A-Z làm ngách đang cực HOT trends = Claude Automation | Update 22-10-2026]] (`H2DEV`)
 - [[videos/VIDEO-0c72ab|VIDEO-0c72ab — V1 - Full 50 phút Thực chiến hướng dẫn quy trình A-Z làm ngách "What-If" đang cực HOT trends bằng Claude và Edit 100% = Claude code  |  Update 21-10-2026]] (`H2DEV`)
+- [[videos/VIDEO-bfabb6|VIDEO-bfabb6 — Hướng dẫn làm Tự động hóa ngách người que view Việt bằng Claude KHÔNG ĐỤNG tới Capcut, 100% edit giống đối thủ  |  Update 23-10-2026 ]] (`H2DEV`)
+- [[videos/VIDEO-9ff392|VIDEO-9ff392 — Thực chiến share ngách lịch sử Việt Nam hướng dẫn làm + kèm Skill ( Claude tự động edit video ) |  Update 25-10-2026]] (`H2DEV`)
+- [[videos/VIDEO-448a91|VIDEO-448a91 — Thực chiến share ngách view ngoại Thị trường Nhật Bản - Tặng kèm skill edit video  |  Update 27-10-2026]] (`H2DEV`)
+- [[videos/VIDEO-2d1a38|VIDEO-2d1a38 — Hướng dẫn Thực chiến ngách mới Thị trường Hoa Kỳ (US) + Tặng kèm Skill edit video tự động 100% giống đối thủ  |  Update 29-10-2026]] (`H2DEV`)
 - [[videos/ZOOM-02-Chien-luoc-kenh-san-xuat|ZOOM-02-Chien-luoc-kenh-san-xuat — Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt]] (`H2DEV`)
 - [[videos/VIDEO-a9a03e|VIDEO-a9a03e — 10. SOP PHIM HOẠT HÌNH]] (`HUAN`)
 - [[videos/VIDEO-5779d8|VIDEO-5779d8 — Quy Trình Sản Xuất Tool Phát Trực Tiếp Đa Luồng]] (`DGMD`)

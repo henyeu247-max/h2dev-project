@@ -1,12 +1,12 @@
 ---
 handle: "@TonyRobbinsLive"
-name: "Tony Robbins (Tác giả gốc tư duy Mô hình hóa người thành công trong kinh doanh)"
+name: "@TonyRobbinsLive"
 url: "https://www.youtube.com/@TonyRobbinsLive"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TonyRobbinsLive (Tony Robbins (Tác giả gốc tư duy Mô hình hóa người thành công trong kinh doanh))
+# Kênh Đối Thủ / Kênh Mẫu: @TonyRobbinsLive (@TonyRobbinsLive)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TonyRobbinsLive](https://www.youtube.com/@TonyRobbinsLive)

@@ -6,7 +6,7 @@ module_id: "DGMD-M06"
 module_title: "COMBO 3 QUY TRÌNH VIEW NGOẠI 3"
 seq: "01"
 niche: "Bảng Xếp Hạng & Top Trend"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại", "📱 Shorts / Reels"]
+markets: ["🌍 View Ngoại", "📱 Shorts / Reels"]
 duration: "20:20"
 published_at: "2026-10-12"
 toolsCount: 10
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-54dd2a&track=dgmd"
 # VIDEO-54dd2a — Quy Trình Sản Xuất Video Xếp Hạng Shorts
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M06|DGMD-M06 — COMBO 3 QUY TRÌNH VIEW NGOẠI 3]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/bang-xep-hang-top-trend|Bảng Xếp Hạng & Top Trend]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại · 📱 Shorts / Reels | **Thời lượng:** `20:20` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại · 📱 Shorts / Reels | **Thời lượng:** `20:20` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-54dd2a&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-54dd2a/README.md)
 
 ---
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-54dd2a&track=dgmd"
 - Dùng AI để tổng hợp danh sách xếp hạng, thông số so sánh và tạo các khung hình minh họa đồng bộ theo tỷ lệ khung hình chuẩn.
 - Khi dựng trên CapCut, sắp xếp thứ tự đếm ngược rõ ràng, kết hợp hiệu ứng chuyển cảnh mượt mà và xuất file ở tốc độ khung hình 60fps.
 - Có thể mở rộng mô hình kênh xếp hạng ra thị trường quốc tế để đạt doanh thu khoảng 2.000 – 3.000 USD/tháng khi kênh lên đề xuất.
+- Chào anh chị em học viên, hôm nay chúng ta đến với chủ đề view ngoại, video ngắn và chủ đề ở đây là chủ đề xếp hạng.
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình 3 bước sản xuất video Bảng Xếp Hạng Shorts (Ranking 9:16) bằng Douyin & CapCut PC

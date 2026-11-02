@@ -6,7 +6,7 @@ module_id: "DGMD-M10"
 module_title: "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE"
 seq: "12"
 niche: "Tooling & Tự Động Hóa YouTube"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
+markets: ["🌍 View Ngoại"]
 duration: "07:27"
 published_at: "2026-10-12"
 toolsCount: 4
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-27e4e0&track=dgmd"
 # VIDEO-27e4e0 — Quy Trình Tạo Ra Tool Tự Động Nhất Quán Nhân Vật
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M10|DGMD-M10 — TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE]] (Bài `#12`)  
 > - **Ngách nội dung (Niche):** [[niches/tooling-tu-dong-hoa-youtube|Tooling & Tự Động Hóa YouTube]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `07:27` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại | **Thời lượng:** `07:27` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-27e4e0&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-27e4e0/README.md)
 
 ---

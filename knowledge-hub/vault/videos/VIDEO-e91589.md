@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M01"
 module_title: "Xử lý & Kháng lỗi kênh YouTube"
 seq: "01"
-niche: "Bán Content & Phát Triển Kênh"
+niche: "Động vật hoang dã & Phim tài liệu AI"
 markets: ["🇯🇵 Nhật", "🇻🇳 Việt"]
 duration: "3:30"
 published_at: "2026-06-14"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-e91589&track=h2dev"
 # VIDEO-e91589 — 16 triệu/ 1 ngày - Doanh thu kênh thị trường Nhật, làm nhân bản thị trường
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M01|H2DEV-M01 — Xử lý & Kháng lỗi kênh YouTube]] (Bài `#01`)  
-> - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
+> - **Ngách nội dung (Niche):** [[niches/dong-vat-hoang-da-phim-tai-lieu-ai|Động vật hoang dã & Phim tài liệu AI]]  
 > - **Thị trường:** 🇯🇵 Nhật · 🇻🇳 Việt | **Thời lượng:** `3:30` | **Ngày đăng:** `2026-06-14`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-e91589&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-e91589/README.md)
 

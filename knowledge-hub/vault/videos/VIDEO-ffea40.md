@@ -6,7 +6,7 @@ module_id: "HUAN-M02"
 module_title: "2. TẠO KÊNH, CHĂM SÓC KÊNH - BƯỚC ĐẦU THẤU HIỂU YOUTUBE"
 seq: "11"
 niche: "Tư Duy Tăng Trưởng & Quy Luật Keep Going"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "06:15"
 published_at: "2026-09-01"
 toolsCount: 2
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-ffea40&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M02|HUAN-M02 — 2. TẠO KÊNH, CHĂM SÓC KÊNH - BƯỚC ĐẦU THẤU HIỂU YOUTUBE]] (Bài `#11`)  
 > - **Ngách nội dung (Niche):** [[niches/tu-duy-tang-truong-quy-luat-keep-going|Tư Duy Tăng Trưởng & Quy Luật Keep Going]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `06:15` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `06:15` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-ffea40&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-ffea40/README.md)
 
 ---

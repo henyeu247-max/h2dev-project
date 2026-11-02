@@ -1,12 +1,12 @@
 ---
 handle: "@animalfarmsounds86"
-name: "Animal Farm Sounds"
+name: "@animalfarmsounds86"
 url: "https://www.youtube.com/@animalfarmsounds86"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @animalfarmsounds86 (Animal Farm Sounds)
+# Kênh Đối Thủ / Kênh Mẫu: @animalfarmsounds86 (@animalfarmsounds86)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@animalfarmsounds86](https://www.youtube.com/@animalfarmsounds86)

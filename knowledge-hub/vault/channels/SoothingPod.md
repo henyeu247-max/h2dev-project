@@ -1,12 +1,12 @@
 ---
 handle: "@SoothingPod"
-name: "Soothing Pod (Kênh hình mẫu ngách Kể chuyện trước khi ngủ - Bedtime Sleep Stories)"
+name: "@SoothingPod"
 url: "https://www.youtube.com/@SoothingPod"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @SoothingPod (Soothing Pod (Kênh hình mẫu ngách Kể chuyện trước khi ngủ - Bedtime Sleep Stories))
+# Kênh Đối Thủ / Kênh Mẫu: @SoothingPod (@SoothingPod)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@SoothingPod](https://www.youtube.com/@SoothingPod)

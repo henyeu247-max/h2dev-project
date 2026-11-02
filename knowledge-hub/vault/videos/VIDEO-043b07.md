@@ -6,7 +6,7 @@ module_id: "DGMD-M08"
 module_title: "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1"
 seq: "02"
 niche: "Âm Nhạc Dân Gian & Đời Sống (Nhạc Xẩm AI)"
-markets: ["🇻🇳 Việt Nam"]
+markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
 duration: "09:04"
 published_at: "2026-10-12"
 toolsCount: 7
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-043b07&track=dgmd"
 # VIDEO-043b07 — Quy Trình Sản Xuất Video Nhạc Xẩm
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M08|DGMD-M08 — BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/am-nhac-dan-gian-doi-song-nhac-xam-ai|Âm Nhạc Dân Gian & Đời Sống (Nhạc Xẩm AI)]]  
-> - **Thị trường:** 🇻🇳 Việt Nam | **Thời lượng:** `09:04` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `09:04` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-043b07&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-043b07/README.md)
 
 ---

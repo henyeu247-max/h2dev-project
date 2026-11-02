@@ -17,13 +17,27 @@ $ErrorActionPreference = "Continue"
 $script:root    = Split-Path -Parent (Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path))
 $script:nodeExe = "node"
 $script:port    = 8899
-$script:log     = Join-Path $script:root "server-lan.log"
-$script:err     = Join-Path $script:root "server-lan.err.log"
-$script:diag    = Join-Path $script:root "h2dev-tray.log"
+$script:logDir  = Join-Path $script:root "logs"
+$script:log     = Join-Path $script:logDir "server-lan.log"
+$script:err     = Join-Path $script:logDir "server-lan.err.log"
+$script:diag    = Join-Path $script:logDir "h2dev-tray.log"
 $script:proc    = $null
+
+function Rotate-LogIfLarge([string]$path, [long]$maxBytes = 1048576) {
+  try {
+    if (Test-Path -LiteralPath $path) {
+      $item = Get-Item -LiteralPath $path -ErrorAction SilentlyContinue
+      if ($item -and $item.Length -gt $maxBytes) {
+        Move-Item -LiteralPath $path -Destination ($path + ".1") -Force -ErrorAction SilentlyContinue
+      }
+    }
+  } catch { }
+}
 
 function Write-Diag($msg) {
   try {
+    if (-not (Test-Path -LiteralPath $script:logDir)) { New-Item -ItemType Directory -Force -Path $script:logDir | Out-Null }
+    Rotate-LogIfLarge -path $script:diag
     Add-Content -Path $script:diag -Value ("[{0}] {1}" -f (Get-Date -Format "yyyy-MM-dd HH:mm:ss"), $msg)
   } catch { }
 }
@@ -57,6 +71,9 @@ function Start-Server {
   }
   Start-Sleep -Milliseconds 500
   try {
+    if (-not (Test-Path -LiteralPath $script:logDir)) { New-Item -ItemType Directory -Force -Path $script:logDir | Out-Null }
+    Rotate-LogIfLarge -path $script:log
+    Rotate-LogIfLarge -path $script:err
     $env:HOST = "0.0.0.0"
     $env:PORT = "$($script:port)"
     $script:proc = Start-Process -FilePath $script:nodeExe `

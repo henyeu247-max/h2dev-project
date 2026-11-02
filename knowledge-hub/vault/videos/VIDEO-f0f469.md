@@ -6,7 +6,7 @@ module_id: "HUAN-M07"
 module_title: "7. CẬP NHẬT K7"
 seq: "08"
 niche: "Chiến lược Nâng cấp Chất lượng Pro Max & Nhân bản Đa quốc gia"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "14:23"
 published_at: "2026-09-01"
 toolsCount: 3
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-f0f469&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M07|HUAN-M07 — 7. CẬP NHẬT K7]] (Bài `#08`)  
 > - **Ngách nội dung (Niche):** [[niches/chien-luoc-nang-cap-chat-luong-pro-max-nhan-ban-da-quoc-gia|Chiến lược Nâng cấp Chất lượng Pro Max & Nhân bản Đa quốc gia]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `14:23` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `14:23` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-f0f469&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-f0f469/README.md)
 
 ---

@@ -6,11 +6,11 @@ module_id: "HUAN-M10"
 module_title: "DÀNH RIÊNG CHO AE LÀM THƯƠNG HIỆU"
 seq: "01"
 niche: "Chuyển đổi số & Xây dựng thương hiệu chuyên gia"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "29:41"
 published_at: "2026-09-01"
 toolsCount: 6
-channelsCount: 6
+channelsCount: 4
 docsCount: 5
 player_url: "/player.html?sku=VIDEO-84853e&track=huan"
 ---
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-84853e&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M10|HUAN-M10 — DÀNH RIÊNG CHO AE LÀM THƯƠNG HIỆU]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/chuyen-doi-so-xay-dung-thuong-hieu-chuyen-gia|Chuyển đổi số & Xây dựng thương hiệu chuyên gia]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `29:41` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `29:41` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-84853e&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-84853e/README.md)
 
 ---
@@ -58,8 +58,6 @@ player_url: "/player.html?sku=VIDEO-84853e&track=huan"
 - [[tools/shopee|Shopee]]
 
 ## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)
-- [[channels/longpt|@longpt]]
-- [[channels/TonyRobbinsLive|@TonyRobbinsLive]]
 - [[channels/drhieu|@drhieu]]
 - [[channels/MasterPhungPhuong|@MasterPhungPhuong]]
 - [[channels/hoangbatau|@hoangbatau]]

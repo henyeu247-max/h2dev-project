@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-ffccd2&track=h2dev"
 # VIDEO-ffccd2 — NGÁCH NHỎ KEY THỊ TRƯỜNG HÀN QUỐC CỰC TRENDS VÀ CẠNH TRANH THẤP
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#70`)  
 > - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
 > - **Thị trường:** 🇰🇷 Hàn | **Thời lượng:** `2:25` | **Ngày đăng:** `2025-11-24`  

@@ -6,7 +6,7 @@ module_id: "DGMD-M02"
 module_title: "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN"
 seq: "07"
 niche: "Quản Trị AdSense & Kháng Kênh"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại", "📘 Facebook"]
+markets: ["🌍 View Ngoại", "📘 Facebook"]
 duration: "01:24"
 published_at: "2026-10-12"
 toolsCount: 4
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-38145b&track=dgmd"
 # VIDEO-38145b — Hướng dẫn kháng kênh youtube bị xóa
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M02|DGMD-M02 — BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN]] (Bài `#07`)  
 > - **Ngách nội dung (Niche):** [[niches/quan-tri-adsense-khang-kenh|Quản Trị AdSense & Kháng Kênh]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại · 📘 Facebook | **Thời lượng:** `01:24` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại · 📘 Facebook | **Thời lượng:** `01:24` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-38145b&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-38145b/README.md)
 
 ---
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-38145b&track=dgmd"
 - Không cần viết đơn dài dòng hay cầu kỳ bằng ngoại ngữ: Chỉ cần sao chép nguyên văn nội dung email thông báo xóa kênh của YouTube trong Gmail (ví dụ lỗi 'Chính sách đối với hành vi lách quy định') dán thẳng vào ChatGPT.
 - Sử dụng câu lệnh đơn giản nhưng cực kỳ hiệu quả: 'dựa vào gmail này , bạn hãy cho tôi xin 1 mẫu kháng kênh youtube , ngắn gọn dễ hiểu' để ChatGPT sinh ra bức thư giải trình lịch sự, yêu cầu nhân viên YouTube xem xét thủ công.
 - Khung nhập kháng nghị trực tiếp tại studio.youtube.com/channel-appeal giới hạn tối đa 800 ký tự; mẫu văn bản của ChatGPT dài khoảng 683/800 ký tự vừa khít tiêu chuẩn và giúp lấy lại kênh chỉ sau hơn 10 giờ.
+- Hôm nay, mình sẽ hướng dẫn anh em kháng kênh YouTube bị die. Do YouTube quét, nhưng YouTube không biết đây là kênh của thầy giáo mang dép.
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình 5 bước dùng ChatGPT kháng nghị khôi phục kênh YouTube bị quét xóa trong YouTube Studio

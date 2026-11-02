@@ -1,12 +1,12 @@
 ---
 handle: "@coachtuean"
-name: "Tuệ An"
+name: "@coachtuean"
 url: "https://www.youtube.com/@coachtuean"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @coachtuean (Tuệ An)
+# Kênh Đối Thủ / Kênh Mẫu: @coachtuean (@coachtuean)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@coachtuean](https://www.youtube.com/@coachtuean)

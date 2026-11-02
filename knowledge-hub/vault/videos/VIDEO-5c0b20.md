@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "42"
-niche: "Drama Gia Đình & Xã Hội"
+niche: "Kỹ Thuật Tạo Giọng Đọc AI Tự Nhiên"
 markets: ["🇺🇸 Mỹ", "🇰🇷 Hàn", "🇻🇳 Việt"]
 duration: "5:40"
 published_at: "2026-04-05"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-5c0b20&track=h2dev"
 # VIDEO-5c0b20 — THỰC CHIẾN SHARE  NGÁCH THỊ TRƯỜNG US (HOA KỲ) KÊNH ĐANG BẬT KIẾM TIỀN VÀ THÊM 2 NGÁCH THỊ TRƯỜNG HÀN VÀ VIỆT + NHÂN BẢN THỊ TRƯỜNG
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#42`)  
-> - **Ngách nội dung (Niche):** [[niches/drama-gia-dinh-xa-hoi|Drama Gia Đình & Xã Hội]]  
+> - **Ngách nội dung (Niche):** [[niches/ky-thuat-tao-giong-doc-ai-tu-nhien|Kỹ Thuật Tạo Giọng Đọc AI Tự Nhiên]]  
 > - **Thị trường:** 🇺🇸 Mỹ · 🇰🇷 Hàn · 🇻🇳 Việt | **Thời lượng:** `5:40` | **Ngày đăng:** `2026-04-05`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-5c0b20&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-5c0b20/README.md)
 

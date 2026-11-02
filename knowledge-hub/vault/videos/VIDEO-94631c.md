@@ -6,7 +6,7 @@ module_id: "HUAN-M08"
 module_title: "8. LỜI HỨA CUỐI CÙNG - BẠN SẼ KHÔNG THỂ THUA NẾU"
 seq: "01"
 niche: "Tìm Chủ Đề YouTube Faceless & Chiến Lược Jetlag"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "27:54"
 published_at: "2026-09-01"
 toolsCount: 10
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-94631c&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M08|HUAN-M08 — 8. LỜI HỨA CUỐI CÙNG - BẠN SẼ KHÔNG THỂ THUA NẾU]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/tim-chu-de-youtube-faceless-chien-luoc-jetlag|Tìm Chủ Đề YouTube Faceless & Chiến Lược Jetlag]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `27:54` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `27:54` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-94631c&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-94631c/README.md)
 
 ---
@@ -73,7 +73,7 @@ player_url: "/player.html?sku=VIDEO-94631c&track=huan"
 - [[channels/ezsu|@ezsu]]
 - [[channels/MixiGaming3con|@MixiGaming3con]]
 - [[channels/ThaiPham|@ThaiPham]]
-- [[channels/VietSuToanThu|@VietSuToanThu]] *(DIE)*
+- [[channels/VietSuToanThu|@VietSuToanThu]]
 
 ## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)
 - **Hồ sơ phân tích & SOP thực chiến: Ví Dụ Mở Rộng Cách Tìm Chủ Đề Faceless (README.md):** `docs/VIDEO-94631c/README.md`

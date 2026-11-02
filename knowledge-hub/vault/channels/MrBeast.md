@@ -1,12 +1,12 @@
 ---
 handle: "@MrBeast"
-name: "MrBeast"
+name: "@MrBeast"
 url: "https://www.youtube.com/@MrBeast"
 status: "LIVE_HTTP_200"
 videos_count: 7
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @MrBeast (MrBeast)
+# Kênh Đối Thủ / Kênh Mẫu: @MrBeast (@MrBeast)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@MrBeast](https://www.youtube.com/@MrBeast)

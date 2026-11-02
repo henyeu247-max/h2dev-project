@@ -6,7 +6,7 @@ module_id: "HUAN-M07"
 module_title: "7. CẬP NHẬT K7"
 seq: "10"
 niche: "Kể Chuyện Bằng Nhân Vật Hoạt Hình (2D Animation)"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "01:25:08"
 published_at: "2026-09-01"
 toolsCount: 15
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-a9a03e&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M07|HUAN-M07 — 7. CẬP NHẬT K7]] (Bài `#10`)  
 > - **Ngách nội dung (Niche):** [[niches/ke-chuyen-bang-nhan-vat-hoat-hinh-2d-animation|Kể Chuyện Bằng Nhân Vật Hoạt Hình (2D Animation)]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `01:25:08` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `01:25:08` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-a9a03e&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-a9a03e/README.md)
 
 ---

@@ -6,7 +6,7 @@ module_id: "HUAN-M02"
 module_title: "2. TẠO KÊNH, CHĂM SÓC KÊNH - BƯỚC ĐẦU THẤU HIỂU YOUTUBE"
 seq: "02"
 niche: "Tiêu chí Chọn Mentor & Hệ thống Chuyển giao Thực chiến"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "01:54"
 published_at: "2026-09-01"
 toolsCount: 2
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-247cf8&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M02|HUAN-M02 — 2. TẠO KÊNH, CHĂM SÓC KÊNH - BƯỚC ĐẦU THẤU HIỂU YOUTUBE]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/tieu-chi-chon-mentor-he-thong-chuyen-giao-thuc-chien|Tiêu chí Chọn Mentor & Hệ thống Chuyển giao Thực chiến]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `01:54` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `01:54` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-247cf8&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-247cf8/README.md)
 
 ---
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-247cf8&track=huan"
 - 4 câu hỏi đầu tiên kiểm tra năng lực thực chất và sự minh bạch: (1) Bản thân họ đã đạt được kết quả bạn muốn chưa? (2) Họ có triển khai thực tế tại Việt Nam không? (3) Khách hàng/học viên của họ có đạt kết quả thật không? (4) Họ có sẵn sàng minh bạch về các con số thực tế của chính họ không?
 - 3 câu hỏi tiếp theo kiểm tra khả năng chuyển giao và cam kết đồng hành: (5) Họ có hệ thống chuyển giao tuần tự từng bước cho người bắt đầu từ con số 0 không? (6) Họ chỉ nói về lý thuyết, tư duy hay chuyển giao toàn bộ công cụ, phần mềm, hệ thống? (7) Họ có đồng hành, cầm tay chỉ việc cho đến khi bạn đạt mục tiêu không?
 - Nguyên tắc ra quyết định: chỉ nên theo học và hợp tác khi người dẫn đường đáp ứng tối thiểu 5/7 tiêu chí (tốt nhất là đủ cả 7/7 tiêu chí) để đảm bảo tỷ lệ thành công cao nhất.
+- rất là quan trọng và có những cái keyword có những câu hỏi để mình làm nhé bất kỳ một cái lĩnh vực nào
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình 5 bước thực chiến: Bài giảng đúc kết bộ 7 câu hỏi kiểm chứng thực tế giúp học viên tự đánh giá và lựa chọn đúng người dẫn đường (Mentor) trong bất kỳ lĩnh v...

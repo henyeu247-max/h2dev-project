@@ -1,12 +1,12 @@
 ---
 handle: "@TayBacTV"
-name: "Tây Bắc TV"
+name: "@TayBacTV"
 url: "https://www.youtube.com/@TayBacTV"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TayBacTV (Tây Bắc TV)
+# Kênh Đối Thủ / Kênh Mẫu: @TayBacTV (@TayBacTV)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TayBacTV](https://www.youtube.com/@TayBacTV)

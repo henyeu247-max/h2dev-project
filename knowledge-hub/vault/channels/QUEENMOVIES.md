@@ -1,12 +1,12 @@
 ---
 handle: "@QUEENMOVIES"
-name: "QUEEN MOVIES"
+name: "@QUEENMOVIES"
 url: "https://www.youtube.com/@QUEENMOVIES"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @QUEENMOVIES (QUEEN MOVIES)
+# Kênh Đối Thủ / Kênh Mẫu: @QUEENMOVIES (@QUEENMOVIES)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@QUEENMOVIES](https://www.youtube.com/@QUEENMOVIES)

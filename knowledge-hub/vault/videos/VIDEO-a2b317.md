@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "46"
-niche: "Kháng Bản Quyền & Xử Lý Lỗi GA"
+niche: "Thuế Hoa Kỳ, GA & Nhận Tiền YouTube"
 markets: ["🇺🇸 Mỹ", "🇷🇺 Nga", "🌐 Ngoại"]
 duration: "7:08"
 published_at: "2026-03-29"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-a2b317&track=h2dev"
 # VIDEO-a2b317 — CHỈ MỚI 4 VIDEO NGÁCH US (HOA KỲ) NÀY ĐÃ NỔ HƠN GẦN 3 TRIỆU VIEW VÀ ĐANG BẬT KIẾM TIỀN + SHARE THÊM 3 NGÁCH THỊ TRƯỜNG US + NGA VÀ GIẢI THÍCH CHỌN NGÁCH/ THỊ TRƯỜNG LÀM ĐỂ DỄ LÊN NHẤT
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#46`)  
-> - **Ngách nội dung (Niche):** [[niches/khang-ban-quyen-xu-ly-loi-ga|Kháng Bản Quyền & Xử Lý Lỗi GA]]  
+> - **Ngách nội dung (Niche):** [[niches/thue-hoa-ky-ga-nhan-tien-youtube|Thuế Hoa Kỳ, GA & Nhận Tiền YouTube]]  
 > - **Thị trường:** 🇺🇸 Mỹ · 🇷🇺 Nga · 🌐 Ngoại | **Thời lượng:** `7:08` | **Ngày đăng:** `2026-03-29`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-a2b317&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-a2b317/README.md)
 

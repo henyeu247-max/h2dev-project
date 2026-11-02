@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-2de9e4&track=h2dev"
 # VIDEO-2de9e4 — Update 3 ngách nhỏ bán content thị trường Việt - view quá kinh khủng sau khi chuyển đúng chủ đề(ngách)
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#19`)  
 > - **Ngách nội dung (Niche):** [[niches/tam-linh-thu-hut-may-man|Tâm Linh & Thu Hút May Mắn]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `5:03` | **Ngày đăng:** `2026-05-28`  

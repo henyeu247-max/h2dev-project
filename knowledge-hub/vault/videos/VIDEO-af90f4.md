@@ -6,7 +6,7 @@ module_id: "HUAN-M03"
 module_title: "3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY"
 seq: "17"
 niche: "Quy Trình Sản Xuất Video Công Nghiệp & Cài Ngòi Nổ Triệu View"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "30:06"
 published_at: "2026-09-01"
 toolsCount: 11
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-af90f4&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M03|HUAN-M03 — 3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY]] (Bài `#17`)  
 > - **Ngách nội dung (Niche):** [[niches/quy-trinh-san-xuat-video-cong-nghiep-cai-ngoi-no-trieu-view|Quy Trình Sản Xuất Video Công Nghiệp & Cài Ngòi Nổ Triệu View]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `30:06` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `30:06` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-af90f4&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-af90f4/README.md)
 
 ---
@@ -63,7 +63,7 @@ player_url: "/player.html?sku=VIDEO-af90f4&track=huan"
 
 ## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)
 - [[channels/MasterPhungPhuong|@MasterPhungPhuong]]
-- [[channels/Biquyetthanhcong|@Biquyetthanhcong]] *(DIE)*
+- [[channels/Biquyetthanhcong|@Biquyetthanhcong]]
 - [[channels/Việt_Sử_Toàn_Thư|@Việt_Sử_Toàn_Thư]]
 - [[channels/Yogalunathaivn|@Yogalunathaivn]]
 - [[channels/ManhOto|@ManhOto]]

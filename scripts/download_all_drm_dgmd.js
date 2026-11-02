@@ -60,7 +60,7 @@ function syncSkuMetadata(sku, sizeBytes, sizeMb) {
     }
 
     // Rebuild videos_dgmd.json
-    execSync('node scripts/build_videos_dgmd.js', { cwd: ROOT, stdio: 'ignore' });
+    execSync('node scripts/build_dgmd_data.js', { cwd: ROOT, stdio: 'ignore' });
   } catch (err) {
     console.warn('Lỗi đồng bộ metadata:', err.message);
   }
@@ -323,7 +323,7 @@ async function run() {
       }
 
       console.log(`\n>>> TOÀN BỘ DANH SÁCH ĐÃ ĐƯỢC XỬ LÝ XONG!`);
-      execSync('node scripts/build_videos_dgmd.js', { cwd: ROOT, stdio: 'inherit' });
+      execSync('node scripts/build_dgmd_data.js', { cwd: ROOT, stdio: 'inherit' });
       execSync('node scripts/sync-counts.js', { cwd: ROOT, stdio: 'inherit' });
     }
   } finally {

@@ -6,7 +6,7 @@ module_id: "DGMD-M02"
 module_title: "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN"
 seq: "01"
 niche: "Tâm Linh & Video AI Phật Pháp (Facebook Reels / Shorts)"
-markets: ["🇻🇳 Việt Nam", "📘 Facebook", "📱 Shorts / Reels"]
+markets: ["🌍 View Ngoại", "📘 Facebook", "📱 Shorts / Reels"]
 duration: "14:41"
 published_at: "2026-10-12"
 toolsCount: 7
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-9c557d&track=dgmd"
 # VIDEO-9c557d — Quy Trình Sản Xuất Video Reels Phật Pháp
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M02|DGMD-M02 — BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/tam-linh-video-ai-phat-phap-facebook-reels-shorts|Tâm Linh & Video AI Phật Pháp (Facebook Reels / Shorts)]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 📘 Facebook · 📱 Shorts / Reels | **Thời lượng:** `14:41` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại · 📘 Facebook · 📱 Shorts / Reels | **Thời lượng:** `14:41` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-9c557d&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-9c557d/README.md)
 
 ---

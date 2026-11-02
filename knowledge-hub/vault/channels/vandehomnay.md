@@ -1,12 +1,12 @@
 ---
 handle: "@vandehomnay"
-name: "VẤN ĐỀ HÔM NAY"
+name: "@vandehomnay"
 url: "https://www.youtube.com/@vandehomnay"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @vandehomnay (VẤN ĐỀ HÔM NAY)
+# Kênh Đối Thủ / Kênh Mẫu: @vandehomnay (@vandehomnay)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@vandehomnay](https://www.youtube.com/@vandehomnay)

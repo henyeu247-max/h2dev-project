@@ -1,12 +1,12 @@
 ---
 handle: "@TruyenDinhSoan"
-name: "Truyện Đình Soạn"
+name: "@TruyenDinhSoan"
 url: "https://www.youtube.com/@TruyenDinhSoan"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TruyenDinhSoan (Truyện Đình Soạn)
+# Kênh Đối Thủ / Kênh Mẫu: @TruyenDinhSoan (@TruyenDinhSoan)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TruyenDinhSoan](https://www.youtube.com/@TruyenDinhSoan)

@@ -5,8 +5,8 @@ track: "h2dev"
 module_id: "H2DEV-M02"
 module_title: "Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)"
 seq: "03"
-niche: "Kháng Bản Quyền & Xử Lý Lỗi GA"
-markets: ["🇯🇵 Nhật"]
+niche: "Phật Pháp & Tâm Linh View Ngoại"
+markets: ["🇺🇸 Mỹ", "🌐 Ngoại"]
 duration: "20:03"
 published_at: "2026-04-22"
 toolsCount: 1
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-9f9fbc&track=h2dev"
 # VIDEO-9f9fbc — *BẮT BUỘC PHẢI XEM - DÀNH CHO NGƯỜI MỚI HOÀN TOÀN CHƯA BIẾT GÌ - HƯỚNG DẪN FULL QUY TRÌNH SETUP SETTING KÊNH CHUẨN NGAY TỪ ĐẦU THEO CHÍNH SÁCH MỚI NHẤT 2026 (TẠO KÊNH, SETUP CÀI ĐẶT KÊNH, SEO KÊNH, NGÂM KÊNH, NGÁCH LÀM...)
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M02|H2DEV-M02 — Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)]] (Bài `#03`)  
-> - **Ngách nội dung (Niche):** [[niches/khang-ban-quyen-xu-ly-loi-ga|Kháng Bản Quyền & Xử Lý Lỗi GA]]  
-> - **Thị trường:** 🇯🇵 Nhật | **Thời lượng:** `20:03` | **Ngày đăng:** `2026-04-22`  
+> - **Ngách nội dung (Niche):** [[niches/phat-phap-tam-linh-view-ngoai|Phật Pháp & Tâm Linh View Ngoại]]  
+> - **Thị trường:** 🇺🇸 Mỹ · 🌐 Ngoại | **Thời lượng:** `20:03` | **Ngày đăng:** `2026-04-22`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-9f9fbc&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-9f9fbc/README.md)
 
 ---

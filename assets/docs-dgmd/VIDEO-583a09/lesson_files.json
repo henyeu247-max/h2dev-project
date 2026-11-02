@@ -1,0 +1,26 @@
+{
+  "id": 569,
+  "sku": "VIDEO-583a09",
+  "upstream_sku": "VIDEO-583a09",
+  "name": "Khắc phục tình trạng 0 view để tạo kênh mới ",
+  "url_key": "khac-phuc-tinh-trang-0-view-de-tao-kenh-moi",
+  "published_at": "2026-10-28",
+  "time": "167",
+  "video_link": "https://video.mona-cloud.com/api/video/?user=42838816&video=1793156673-khac-phuc-tinh-trang-khong-view-cach-1&protected=False&version=v2&token=gAAAAABq4WZDQNpxWUIgfmmCoPV40tMR-BCNayiayqBzjEqVnvmY9qzjhTt9eY26_JOtUFAnA7D34ByarfVtHs16R3M5vXnOFvYQo2M0JKtZ4b0DItIBRCQ%3D",
+  "protected": false,
+  "bai_h_c_free": true,
+  "lesson_files": null,
+  "attachments": null,
+  "video_subtitle": null,
+  "image": {
+    "url": "https://api.daigiamangdep.com/media/catalog/product/e/7/e752f39b-e92c-47cf-a4f5-c8fd2a6e6d4a.png.png",
+    "label": "e752f39b-e92c-47cf-a4f5-c8fd2a6e6d4a.png"
+  },
+  "thumbnail": {
+    "url": "https://api.daigiamangdep.com/media/catalog/product/e/7/e752f39b-e92c-47cf-a4f5-c8fd2a6e6d4a.png.png",
+    "label": "e752f39b-e92c-47cf-a4f5-c8fd2a6e6d4a.png"
+  },
+  "tags": null,
+  "gdrive_files": [],
+  "gdoc_files": []
+}

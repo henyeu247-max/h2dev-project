@@ -6,7 +6,7 @@ module_id: "HUAN-M06"
 module_title: "6. QUY TRÌNH ĐANG TẠO RA >1.000.000$ YOUTUBE"
 seq: "08"
 niche: "Phân tích kỹ thuật, SEO & Lợi thế cạnh tranh kênh"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "24:30"
 published_at: "2026-09-01"
 toolsCount: 14
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-840a95&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M06|HUAN-M06 — 6. QUY TRÌNH ĐANG TẠO RA >1.000.000$ YOUTUBE]] (Bài `#08`)  
 > - **Ngách nội dung (Niche):** [[niches/phan-tich-ky-thuat-seo-loi-the-canh-tranh-kenh|Phân tích kỹ thuật, SEO & Lợi thế cạnh tranh kênh]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `24:30` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `24:30` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-840a95&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-840a95/README.md)
 
 ---

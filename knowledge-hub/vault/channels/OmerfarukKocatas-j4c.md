@@ -1,12 +1,12 @@
 ---
 handle: "@OmerfarukKocatas-j4c"
-name: "Omerfaruk Kocatas"
+name: "@OmerfarukKocatas-j4c"
 url: "https://www.youtube.com/@OmerfarukKocatas-j4c"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @OmerfarukKocatas-j4c (Omerfaruk Kocatas)
+# Kênh Đối Thủ / Kênh Mẫu: @OmerfarukKocatas-j4c (@OmerfarukKocatas-j4c)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@OmerfarukKocatas-j4c](https://www.youtube.com/@OmerfarukKocatas-j4c)

@@ -6,7 +6,7 @@ module_id: "DGMD-M02"
 module_title: "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN"
 seq: "06"
 niche: "So Sánh & Đố Vui Visual"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại", "📘 Facebook"]
+markets: ["🌍 View Ngoại", "📘 Facebook"]
 duration: "20:59"
 published_at: "2026-10-12"
 toolsCount: 6
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-a18f2a&track=dgmd"
 # VIDEO-a18f2a — Quy Trình Sản Xuất Video Sự Khác Nhau Là Gì ?
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M02|DGMD-M02 — BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN]] (Bài `#06`)  
 > - **Ngách nội dung (Niche):** [[niches/so-sanh-do-vui-visual|So Sánh & Đố Vui Visual]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại · 📘 Facebook | **Thời lượng:** `20:59` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại · 📘 Facebook | **Thời lượng:** `20:59` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-a18f2a&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-a18f2a/README.md)
 
 ---

@@ -1,12 +1,12 @@
 ---
 handle: "@KinhLupTV"
-name: "Kính Lúp TV"
+name: "@KinhLupTV"
 url: "https://www.youtube.com/@KinhLupTV"
 status: "LIVE_HTTP_200"
 videos_count: 7
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @KinhLupTV (Kính Lúp TV)
+# Kênh Đối Thủ / Kênh Mẫu: @KinhLupTV (@KinhLupTV)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@KinhLupTV](https://www.youtube.com/@KinhLupTV)

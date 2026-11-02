@@ -1,12 +1,12 @@
 ---
 handle: "@caucavancanchinhchu"
-name: "Vũ Trụ Câu Cá Vạn Cân"
+name: "@caucavancanchinhchu"
 url: "https://www.youtube.com/@caucavancanchinhchu"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @caucavancanchinhchu (Vũ Trụ Câu Cá Vạn Cân)
+# Kênh Đối Thủ / Kênh Mẫu: @caucavancanchinhchu (@caucavancanchinhchu)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@caucavancanchinhchu](https://www.youtube.com/@caucavancanchinhchu)

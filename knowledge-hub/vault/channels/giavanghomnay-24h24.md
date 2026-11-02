@@ -1,12 +1,12 @@
 ---
 handle: "@giavanghomnay-24h24"
-name: "Giá vàng Hôm Nay -24H"
+name: "@giavanghomnay-24h24"
 url: "https://www.youtube.com/@giavanghomnay-24h24"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @giavanghomnay-24h24 (Giá vàng Hôm Nay -24H)
+# Kênh Đối Thủ / Kênh Mẫu: @giavanghomnay-24h24 (@giavanghomnay-24h24)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@giavanghomnay-24h24](https://www.youtube.com/@giavanghomnay-24h24)

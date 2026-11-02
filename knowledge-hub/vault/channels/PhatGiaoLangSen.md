@@ -1,12 +1,12 @@
 ---
 handle: "@PhatGiaoLangSen"
-name: "Phật Giáo Làng Sen"
+name: "@PhatGiaoLangSen"
 url: "https://www.youtube.com/@PhatGiaoLangSen"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @PhatGiaoLangSen (Phật Giáo Làng Sen)
+# Kênh Đối Thủ / Kênh Mẫu: @PhatGiaoLangSen (@PhatGiaoLangSen)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@PhatGiaoLangSen](https://www.youtube.com/@PhatGiaoLangSen)

@@ -37,33 +37,33 @@
   ],
   "key_timestamps": [
     {
-      "seconds": 0,
       "time": "00:00",
+      "seconds": 0,
       "label": "Mở đầu: Giới thiệu ngách nhỏ Hàn Quốc trên phôi kênh cổ 2017 mới đăng 11 video"
     },
     {
-      "seconds": 23,
       "time": "00:23",
+      "seconds": 23,
       "label": "Phân tích Ngách 1 (@sangong7449): Lời khuyên triết lý gắn với giáo sư nổi tiếng Hàn Quốc"
     },
     {
-      "seconds": 45,
       "time": "00:45",
+      "seconds": 45,
       "label": "Sức bật đề xuất: Video đạt hơn 300.000 view sau 7 ngày chỉ với 11 video trên kênh"
     },
     {
-      "seconds": 90,
       "time": "01:30",
+      "seconds": 90,
       "label": "Cảnh báo lỗi edit: Không để 1 ảnh nền tĩnh kéo dài dễ bị quét, phải ghép nhiều cảnh"
     },
     {
-      "seconds": 118,
       "time": "01:58",
+      "seconds": 118,
       "label": "Tối ưu Thumbnail nhân vật: Ghép mặt nhân vật thật, tuyệt đối không để AI tự vẽ mặt giả"
     },
     {
-      "seconds": 242,
       "time": "04:02",
+      "seconds": 242,
       "label": "Phân tích Ngách 2 (@건강채소이야기18): Thumbnail bác sĩ cầm mô hình trái tim và lá phổi nổ view cao"
     }
   ],
@@ -74,8 +74,9 @@
   "claims_require_external_verification": false,
   "source_transcript": "video/VIDEO-0b3f44/transcript.txt",
   "sop_steps": [
-    "Cắt ghép đa dạng cảnh b-roll, tránh tuyệt đối để 1 ảnh tĩnh xuyên suốt video",
-    "Ghép mặt nhân vật có thật vào thumbnail để tạo độ uy tín cao cho người xem",
-    "Thumbnail ngách sức khỏe sử dụng hình ảnh bác sĩ cầm mô hình 3D trực quan"
+    "Vào mục Phổ biến (Popular) của kênh đối thủ, dịch tiêu đề sang tiếng Việt để nắm đúng từ khóa ngách (lời khuyên giáo sư Lee O-young hoặc thói quen ăn uống hại tim/phổi).",
+    "Khi làm ngách nhân vật nổi tiếng (@sangong7449), tải ảnh chân dung thật của nhân vật để cắt ghép làm Thumbnail, không dùng ảnh mặt người do AI tự vẽ.",
+    "Khi làm ngách sức khỏe (@건강채소이야기18), thiết kế Thumbnail có hình ảnh bác sĩ cầm trực tiếp mô hình giải phẫu trái tim và lá phổi thay vì ảnh triệu chứng đau đầu, nhức chân chung chung.",
+    "Trong khâu dựng video, ghép nhiều đoạn video B-roll minh họa thay đổi liên tục, tuyệt đối không để 1 ảnh nền tĩnh kéo dài suốt video."
   ]
 }

@@ -6,7 +6,7 @@ module_id: "DGMD-M07"
 module_title: "COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1"
 seq: "01"
 niche: "Học Tiếng Anh Thụ Động"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại", "📘 Facebook", "📱 Shorts / Reels"]
+markets: ["🌍 View Ngoại", "📘 Facebook", "📱 Shorts / Reels"]
 duration: "14:58"
 published_at: "2026-10-12"
 toolsCount: 8
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-77e80c&track=dgmd"
 # VIDEO-77e80c — Quy Trình Sản Xuất Video Reels Tiếng Anh
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M07|DGMD-M07 — COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/hoc-tieng-anh-thu-dong|Học Tiếng Anh Thụ Động]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại · 📘 Facebook · 📱 Shorts / Reels | **Thời lượng:** `14:58` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại · 📘 Facebook · 📱 Shorts / Reels | **Thời lượng:** `14:58` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-77e80c&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-77e80c/README.md)
 
 ---

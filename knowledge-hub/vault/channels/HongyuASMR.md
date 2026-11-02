@@ -1,12 +1,12 @@
 ---
 handle: "@HongyuASMR"
-name: "Hongyu ASMR 홍유"
+name: "@HongyuASMR"
 url: "https://www.youtube.com/@HongyuASMR"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @HongyuASMR (Hongyu ASMR 홍유)
+# Kênh Đối Thủ / Kênh Mẫu: @HongyuASMR (@HongyuASMR)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@HongyuASMR](https://www.youtube.com/@HongyuASMR)

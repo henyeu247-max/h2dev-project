@@ -6,7 +6,7 @@ module_id: "HUAN-M12"
 module_title: "SUPPORT KỸ THUẬT "
 seq: "06"
 niche: "Quản Trị VPS & Bảo Mật Google AdSense"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "36:28"
 published_at: "2026-09-01"
 toolsCount: 9
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-b267fe&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M12|HUAN-M12 — SUPPORT KỸ THUẬT ]] (Bài `#06`)  
 > - **Ngách nội dung (Niche):** [[niches/quan-tri-vps-bao-mat-google-adsense|Quản Trị VPS & Bảo Mật Google AdSense]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `36:28` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `36:28` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-b267fe&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-b267fe/README.md)
 
 ---

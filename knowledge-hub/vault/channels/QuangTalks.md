@@ -1,12 +1,12 @@
 ---
 handle: "@QuangTalks"
-name: "Quang Talks"
+name: "@QuangTalks"
 url: "https://www.youtube.com/@QuangTalks"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @QuangTalks (Quang Talks)
+# Kênh Đối Thủ / Kênh Mẫu: @QuangTalks (@QuangTalks)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@QuangTalks](https://www.youtube.com/@QuangTalks)

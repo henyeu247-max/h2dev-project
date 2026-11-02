@@ -1,12 +1,12 @@
 ---
 handle: "@PodcastTimMạch"
-name: "Podcast Tim Mạch"
+name: "@PodcastTimMạch"
 url: "https://www.youtube.com/@PodcastTimM%E1%BA%A1ch"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @PodcastTimMạch (Podcast Tim Mạch)
+# Kênh Đối Thủ / Kênh Mẫu: @PodcastTimMạch (@PodcastTimMạch)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@PodcastTimM%E1%BA%A1ch](https://www.youtube.com/@PodcastTimM%E1%BA%A1ch)

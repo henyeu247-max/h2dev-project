@@ -1,12 +1,12 @@
 ---
 handle: "@XemGiHomNay"
-name: "Xem Gì Hôm Nay"
+name: "@XemGiHomNay"
 url: "https://www.youtube.com/@XemGiHomNay"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @XemGiHomNay (Xem Gì Hôm Nay)
+# Kênh Đối Thủ / Kênh Mẫu: @XemGiHomNay (@XemGiHomNay)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@XemGiHomNay](https://www.youtube.com/@XemGiHomNay)

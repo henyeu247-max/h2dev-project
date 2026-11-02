@@ -2,13 +2,13 @@
 module_id: "DGMD-M08"
 title: "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1"
 track: "dgmd"
-lesson_count: 6
+lesson_count: 7
 ---
 
 # Module DGMD-M08 — BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1
 
-- **Thuộc Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]
-- **Tổng số bài giảng:** `6` video
+- **Thuộc Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]
+- **Tổng số bài giảng:** `7` video
 - **Mô tả:** Bộ 6 quy trình YouTube nội địa: Nhạc Chầu Văn, Xẩm, Review Phim, Lời Phật Dạy và Audio.
 
 ## Danh Sách Bài Học Trong Module
@@ -18,3 +18,4 @@ lesson_count: 6
 - `#04` [[videos/VIDEO-3b377d|VIDEO-3b377d — Quy Trình Sản Xuất Video Lời Phật Dạy]] (`22:23` · Tâm Linh & Lời Phật Dạy (Video Dài 60–120 Phút))
 - `#05` [[videos/VIDEO-11a507|VIDEO-11a507 — Quy Trình Sản Xuất Video AUDIO]] (`19:28` · Truyện Audio Drama Tâm Lý & Ngôn Tình (Video Dài 16–60 Phút))
 - `#06` [[videos/VIDEO-c0353f|VIDEO-c0353f — Quy Trình Sản Xuất Video Audio View Việt]] (`20:14` · Truyện Audio Tâm Sự Tuổi Già & Gia Đình)
+- `#07` [[videos/VIDEO-e02e02|VIDEO-e02e02 — Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay]] (`14:40` · Hoạt Hình 2D Vẽ Tay Làng Quê Việt Nam & Truyện Gia Đình)

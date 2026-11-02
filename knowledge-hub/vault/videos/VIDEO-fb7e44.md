@@ -6,7 +6,7 @@ module_id: "HUAN-M12"
 module_title: "SUPPORT KỸ THUẬT "
 seq: "05"
 niche: "Chiến Lược Nội Dung & Chống AI Slop 2026"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "01:26:14"
 published_at: "2026-09-01"
 toolsCount: 14
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-fb7e44&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M12|HUAN-M12 — SUPPORT KỸ THUẬT ]] (Bài `#05`)  
 > - **Ngách nội dung (Niche):** [[niches/chien-luoc-noi-dung-chong-ai-slop-2026|Chiến Lược Nội Dung & Chống AI Slop 2026]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `01:26:14` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `01:26:14` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-fb7e44&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-fb7e44/README.md)
 
 ---

@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "08"
-niche: "Reup Hoạt Hình Bilibili"
+niche: "Reup Hoạt Hình Bilibili Lồng Tiếng"
 markets: ["🇻🇳 Việt", "🇨🇳 Trung"]
 duration: "20:17"
 published_at: "2026-07-22"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-28e1cc&track=h2dev"
 # VIDEO-28e1cc — Show kênh mới vừa bật kiếm tiền Và Hướng dẫn thực chiến full quy trình làm Reup ngách nhỏ hoạt hình từ bilibili
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#08`)  
-> - **Ngách nội dung (Niche):** [[niches/reup-hoat-hinh-bilibili|Reup Hoạt Hình Bilibili]]  
+> - **Ngách nội dung (Niche):** [[niches/reup-hoat-hinh-bilibili-long-tieng|Reup Hoạt Hình Bilibili Lồng Tiếng]]  
 > - **Thị trường:** 🇻🇳 Việt · 🇨🇳 Trung | **Thời lượng:** `20:17` | **Ngày đăng:** `2026-07-22`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-28e1cc&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-28e1cc/README.md)
 

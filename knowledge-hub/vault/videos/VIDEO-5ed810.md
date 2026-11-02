@@ -6,7 +6,7 @@ module_id: "HUAN-M04"
 module_title: "4. BẢN ĐỒ TỪ 0 TỚI 500 TRĂM TRIỆU MỖI THÁNG"
 seq: "05"
 niche: "Lộ Trình Xây Kênh Từ Con Số 0"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "39:44"
 published_at: "2026-09-01"
 toolsCount: 8
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-5ed810&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M04|HUAN-M04 — 4. BẢN ĐỒ TỪ 0 TỚI 500 TRĂM TRIỆU MỖI THÁNG]] (Bài `#05`)  
 > - **Ngách nội dung (Niche):** [[niches/lo-trinh-xay-kenh-tu-con-so-0|Lộ Trình Xây Kênh Từ Con Số 0]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `39:44` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `39:44` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-5ed810&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-5ed810/README.md)
 
 ---

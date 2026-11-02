@@ -1,12 +1,12 @@
 ---
 handle: "@WibloDares"
-name: "Wiblo Dares"
+name: "@WibloDares"
 url: "https://www.youtube.com/@WibloDares"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @WibloDares (Wiblo Dares)
+# Kênh Đối Thủ / Kênh Mẫu: @WibloDares (@WibloDares)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@WibloDares](https://www.youtube.com/@WibloDares)

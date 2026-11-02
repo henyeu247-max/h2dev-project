@@ -41,33 +41,33 @@
   ],
   "key_timestamps": [
     {
-      "seconds": 0,
       "time": "00:00",
+      "seconds": 0,
       "label": "Giới thiệu quy trình What-If V2 tự động hóa và cài đặt h2-2d-studio.plugin vào Claude"
     },
     {
-      "seconds": 204,
       "time": "03:24",
+      "seconds": 204,
       "label": "Gọi lệnh /kich-ban-whatif: Tự động quét kênh đối thủ, lọc trùng và gợi ý 10 chủ đề mới"
     },
     {
-      "seconds": 392,
       "time": "06:32",
+      "seconds": 392,
       "label": "Tạo voice hội thoại 6 nhân vật (#1..#6) từ file 02-VOICE-DGT.txt bằng ElevenLabs"
     },
     {
-      "seconds": 603,
       "time": "10:03",
+      "seconds": 603,
       "label": "Phân tích ưu nhược điểm bản V2: Không tốn credit tạo ảnh rời, so sánh tốc độ render PC và Mac"
     },
     {
-      "seconds": 868,
       "time": "14:28",
+      "seconds": 868,
       "label": "Gọi lệnh /lam-video-2d: Chọn bảng màu Dusk, duyệt bản Preview 30s.MP4 và xuất Full HD 1080p"
     },
     {
-      "seconds": 1202,
       "time": "20:02",
+      "seconds": 1202,
       "label": "Xem thành phẩm video hoàn chỉnh kèm Thumbnail và kiểm tra mức tiêu thụ chỉ 1% token"
     }
   ],
@@ -78,9 +78,10 @@
   "claims_require_external_verification": false,
   "source_transcript": "video/VIDEO-e0e9cd/transcript.txt",
   "sop_steps": [
-    "Kích hoạt plugin h2-2d-studio.plugin trong môi trường Claude",
-    "Tham khảo các mẫu concept thành công từ 4 kênh đối thủ lớn",
-    "Tự động sinh kịch bản và mã hóa hình ảnh theo từng cảnh",
-    "Ghép nhạc nền và hiệu ứng âm thanh SFX đồng bộ"
+    "Cài đặt tệp h2-2d-studio.plugin vào Claude Desktop (mục Plugins trong chế độ Cowork) và chọn thư mục làm việc của dự án.",
+    "Gọi lệnh /kich-ban-whatif để Claude tự động quét kênh đối thủ trên trình duyệt, lọc trùng chủ đề đã đăng và chọn 1 trong 10 ý tưởng mới để sinh kịch bản Part 1.",
+    "Nạp tệp hội thoại phân vai 02-VOICE-...-DGT.txt vào công cụ ElevenLabs gắn 6 ID giọng đọc (#1 đến #6, model Multilingual v2) để xuất thư mục voice.",
+    "Gọi lệnh /lam-video-2d kèm đường dẫn thư mục, chọn tỷ lệ 16:9 và chế độ tự sinh nhạc nền + SFX.",
+    "Chọn bảng màu nền (Dusk, Midnight, Golden hoặc Storybook), duyệt thử bản Preview 30s.MP4 rồi xác nhận để plugin tự động render video Full HD 1080p và ảnh Thumbnail."
   ]
 }

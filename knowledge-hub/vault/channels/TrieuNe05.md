@@ -1,12 +1,12 @@
 ---
 handle: "@TrieuNe05"
-name: "Triệu Que Củi"
+name: "@TrieuNe05"
 url: "https://www.youtube.com/@TrieuNe05"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TrieuNe05 (Triệu Que Củi)
+# Kênh Đối Thủ / Kênh Mẫu: @TrieuNe05 (@TrieuNe05)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TrieuNe05](https://www.youtube.com/@TrieuNe05)

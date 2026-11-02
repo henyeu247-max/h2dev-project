@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "02"
-niche: "Bán Content Đa Thị Trường Nhật & Hàn"
+niche: "Drama Gia Đình & Đời Sống Nhật - Hàn"
 markets: ["🇯🇵 Nhật", "🇰🇷 Hàn"]
 duration: "10:30"
 published_at: "2026-08-22"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-61ad94&track=h2dev"
 # VIDEO-61ad94 — Update ngách bán content Nhật, Hàn..
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#02`)  
-> - **Ngách nội dung (Niche):** [[niches/ban-content-da-thi-truong-nhat-han|Bán Content Đa Thị Trường Nhật & Hàn]]  
+> - **Ngách nội dung (Niche):** [[niches/drama-gia-dinh-doi-song-nhat---han|Drama Gia Đình & Đời Sống Nhật - Hàn]]  
 > - **Thị trường:** 🇯🇵 Nhật · 🇰🇷 Hàn | **Thời lượng:** `10:30` | **Ngày đăng:** `2026-08-22`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-61ad94&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-61ad94/README.md)
 
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-61ad94&track=h2dev"
 - Điểm mấu chốt giúp kênh sống khỏe là không ghép full ảnh AI tĩnh: chủ kênh tự quay các cảnh thực tế như hồ cá, gõ bàn phím rồi lồng ảnh nhỏ ở góc để tránh bị YouTube quét lỗi nội dung không trung thực.
 - Tư duy nhân bản hai chiều Nhật ↔ Hàn: lấy kịch bản drama gia đình từ kênh Nhật đem sang Hàn Quốc xào nấu lại bằng quy trình Claude AI (hoặc ngược lại) vì cả hai nước đều có tỷ lệ dân số già cao.
 - Kênh Hàn Quốc thứ hai (hơn 9k sub, làm drama tiền bạc) vẫn ghép full ảnh AI nhưng rủi ro bị quét về sau rất lớn; kênh thứ ba đi sâu vào ngách nhỏ tài chính/tiền bạc gắn với hình ảnh nhân vật nổi tiếng Hàn Quốc.
+- Em chào tất cả mọi người nha Thì cái ngách kênh này hôm trước em có lên video share cho mọi người
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Chia sẻ ngách drama, tiền bạc cho người già thị trường Hàn, Nhật và cách edit ghép video tự nhiên để tránh bị quét

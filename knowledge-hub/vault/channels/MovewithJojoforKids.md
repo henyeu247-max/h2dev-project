@@ -1,12 +1,12 @@
 ---
 handle: "@MovewithJojoforKids"
-name: "Move with Jojo for Kids"
+name: "@MovewithJojoforKids"
 url: "https://www.youtube.com/@MovewithJojoforKids"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @MovewithJojoforKids (Move with Jojo for Kids)
+# Kênh Đối Thủ / Kênh Mẫu: @MovewithJojoforKids (@MovewithJojoforKids)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@MovewithJojoforKids](https://www.youtube.com/@MovewithJojoforKids)

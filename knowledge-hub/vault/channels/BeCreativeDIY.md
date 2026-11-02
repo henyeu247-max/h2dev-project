@@ -1,12 +1,12 @@
 ---
 handle: "@BeCreativeDIY"
-name: "Be Creative DIY"
+name: "@BeCreativeDIY"
 url: "https://www.youtube.com/@BeCreativeDIY"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @BeCreativeDIY (Be Creative DIY)
+# Kênh Đối Thủ / Kênh Mẫu: @BeCreativeDIY (@BeCreativeDIY)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@BeCreativeDIY](https://www.youtube.com/@BeCreativeDIY)

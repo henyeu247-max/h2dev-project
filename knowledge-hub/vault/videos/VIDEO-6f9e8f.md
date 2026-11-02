@@ -6,7 +6,7 @@ module_id: "HUAN-M07"
 module_title: "7. CẬP NHẬT K7"
 seq: "01"
 niche: "Toàn Cảnh Chiến Lược Chủ Đề YouTube 3 Năm & Hạ Tầng Google AdSense (GA)"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "35:32"
 published_at: "2026-09-01"
 toolsCount: 11
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-6f9e8f&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M07|HUAN-M07 — 7. CẬP NHẬT K7]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/toan-canh-chien-luoc-chu-de-youtube-3-nam-ha-tang-google-adsense-ga|Toàn Cảnh Chiến Lược Chủ Đề YouTube 3 Năm & Hạ Tầng Google AdSense (GA)]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `35:32` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `35:32` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-6f9e8f&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-6f9e8f/README.md)
 
 ---

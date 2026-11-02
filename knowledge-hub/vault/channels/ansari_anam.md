@@ -1,12 +1,12 @@
 ---
 handle: "@ansari_anam"
-name: "ASMR123"
+name: "@ansari_anam"
 url: "https://www.youtube.com/@ansari_anam"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ansari_anam (ASMR123)
+# Kênh Đối Thủ / Kênh Mẫu: @ansari_anam (@ansari_anam)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ansari_anam](https://www.youtube.com/@ansari_anam)

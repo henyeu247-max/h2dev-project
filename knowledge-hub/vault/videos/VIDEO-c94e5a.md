@@ -6,7 +6,7 @@ module_id: "HUAN-M03"
 module_title: "3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY"
 seq: "16"
 niche: "Nghiên Cứu từ khóa Lý Tưởng & Chiến Lược Nội Dung 6-3-1"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "11:32"
 published_at: "2026-09-01"
 toolsCount: 8
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-c94e5a&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M03|HUAN-M03 — 3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY]] (Bài `#16`)  
 > - **Ngách nội dung (Niche):** [[niches/nghien-cuu-tu-khoa-ly-tuong-chien-luoc-noi-dung-6-3-1|Nghiên Cứu từ khóa Lý Tưởng & Chiến Lược Nội Dung 6-3-1]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `11:32` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `11:32` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-c94e5a&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-c94e5a/README.md)
 
 ---
@@ -60,7 +60,7 @@ player_url: "/player.html?sku=VIDEO-c94e5a&track=huan"
 
 ## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)
 - [[channels/BaiHocThanhCong|@BaiHocThanhCong]]
-- [[channels/Biquyetthanhcong|@Biquyetthanhcong]] *(DIE)*
+- [[channels/Biquyetthanhcong|@Biquyetthanhcong]]
 - [[channels/phamthanhlong|@phamthanhlong]]
 - [[channels/Web5Ngay|@Web5Ngay]]
 - [[channels/HoangManhCuongMarketing|@HoangManhCuongMarketing]]

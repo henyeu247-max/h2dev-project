@@ -6,7 +6,7 @@ module_id: "DGMD-M10"
 module_title: "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE"
 seq: "08"
 niche: "Phát Triển Kênh & Kỹ Thuật YouTube"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
+markets: ["🌍 View Ngoại"]
 duration: "11:13"
 published_at: "2026-10-12"
 toolsCount: 5
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-36880b&track=dgmd"
 # VIDEO-36880b — Cách Tạo 1 Kênh Youtube Chuẩn Chủ Đề Và Danh Mục
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M10|DGMD-M10 — TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE]] (Bài `#08`)  
 > - **Ngách nội dung (Niche):** [[niches/phat-trien-kenh-ky-thuat-youtube|Phát Triển Kênh & Kỹ Thuật YouTube]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `11:13` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại | **Thời lượng:** `11:13` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-36880b&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-36880b/README.md)
 
 ---

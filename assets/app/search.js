@@ -100,6 +100,10 @@
       return { href: "/chienluoc?sub=policy", label: "Mở Checklist Trước Khi Đăng ↗", rawId: "" };
     }
     if (et === "niche") {
+      var nCodeMatch = String(id || "").match(/^(?:niche:)?(H\d{2})\b/i);
+      if (nCodeMatch) {
+        return { href: "/ngachxanh?q=" + encodeURIComponent(nCodeMatch[1].toUpperCase()), label: "Mở đúng Ngách Xanh (" + nCodeMatch[1].toUpperCase() + ") ↗", rawId: "" };
+      }
       var nName = String(r.niche_name || r.title || "").replace(/^\[[^\]]+\]\s*/, "").trim();
       return { href: "/ngachxanh" + (nName ? ("?niche=" + encodeURIComponent(nName)) : ""), label: "Mở đúng Ngách Xanh ↗", rawId: "" };
     }

@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-2aa1f7&track=h2dev"
 # VIDEO-2aa1f7 — SHARE NGÁCH MỚI TRIẾT LÝ THỊ TRƯỜNG US (HOA KỲ) ĐANG CỰC TRENDS VÀ HƯỚNG DẪN FULL QUY TRÌNH LÀM TỪ A-Z - UPDATE 04/11/2025
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#66`)  
 > - **Ngách nội dung (Niche):** [[niches/triet-ly-song-dao-lam-nguoi|Triết Lý Sống & Đạo Làm Người]]  
 > - **Thị trường:** 🇺🇸 Mỹ · 🌐 Ngoại | **Thời lượng:** `18:03` | **Ngày đăng:** `2025-11-04`  

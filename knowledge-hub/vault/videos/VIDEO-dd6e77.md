@@ -6,7 +6,7 @@ module_id: "HUAN-M02"
 module_title: "2. TẠO KÊNH, CHĂM SÓC KÊNH - BƯỚC ĐẦU THẤU HIỂU YOUTUBE"
 seq: "01"
 niche: "Năng lực Thực chiến Hệ thống Đa kênh & Chuyển đổi Thương hiệu Bán hàng"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "20:21"
 published_at: "2026-09-01"
 toolsCount: 7
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-dd6e77&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M02|HUAN-M02 — 2. TẠO KÊNH, CHĂM SÓC KÊNH - BƯỚC ĐẦU THẤU HIỂU YOUTUBE]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/nang-luc-thuc-chien-he-thong-da-kenh-chuyen-doi-thuong-hieu-ban-hang|Năng lực Thực chiến Hệ thống Đa kênh & Chuyển đổi Thương hiệu Bán hàng]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `20:21` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `20:21` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-dd6e77&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-dd6e77/README.md)
 
 ---

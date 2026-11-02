@@ -1,12 +1,12 @@
 ---
 handle: "@BaiHocThanhCong"
-name: "BÀI HỌC THÀNH CÔNG"
+name: "@BaiHocThanhCong"
 url: "https://www.youtube.com/@BaiHocThanhCong"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @BaiHocThanhCong (BÀI HỌC THÀNH CÔNG)
+# Kênh Đối Thủ / Kênh Mẫu: @BaiHocThanhCong (@BaiHocThanhCong)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@BaiHocThanhCong](https://www.youtube.com/@BaiHocThanhCong)

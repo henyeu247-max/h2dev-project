@@ -147,7 +147,7 @@ function highlightQuery(text, query) {
 }
 
 
-function statCard(icon, label, value, sub, tabTarget, live) {
+function statCard(icon, label, value, sub, tabTarget, live, extraAttrs) {
   /* icon: CHI cho phep 2 dang NOI BO duoc render tho; moi gia tri khac PHAI escape.
    * PHASE 3 (2026-09-23) — P3.6a: mo rong nhan dien them <span class="h2-icon">.
    *   LY DO: truoc day chi nhan `<svg` -> khi gop he icon sang ico('name') (span
@@ -177,22 +177,25 @@ function statCard(icon, label, value, sub, tabTarget, live) {
   else if (isIcoName && H2I && typeof H2I.ico === 'function') glyph = H2I.ico(icon, 16);
   else glyph = icon ? `<span class="stat-glyph">${esc(icon)}</span>` : '';
   const fullTitle = sub ? `${safeLabel} — ${esc(sub)}` : safeLabel;
-  const clickAttr = tabTarget ? ` data-open-tab="${esc(tabTarget)}" role="button" tabindex="0" title="Mở tab ${fullTitle}" data-kpi-card="1"` : (sub ? ` title="${fullTitle}"` : '');
-  return `<div class="bento-card${tabTarget ? ' cursor-pointer hover:border-brand/40 transition-colors' : ''}"${clickAttr}>
+  const isClickable = Boolean(tabTarget || extraAttrs);
+  const clickAttr = tabTarget
+    ? ` data-open-tab="${esc(tabTarget)}" role="button" tabindex="0" title="Mở tab ${fullTitle}" data-kpi-card="1"${extraAttrs ? ' ' + extraAttrs : ''}`
+    : (extraAttrs ? ` role="button" tabindex="0" title="${fullTitle}" data-kpi-card="1" ${extraAttrs}` : (sub ? ` title="${fullTitle}"` : ''));
+  return `<div class="bento-card${isClickable ? ' cursor-pointer hover:border-brand/40 transition-colors' : ''}"${clickAttr}>
 <div class="stat-icon">${glyph}</div>
 <div class="stat-body">
   <div class="stat-value"${live ? ' aria-live="polite"': ''}>${esc(value)}</div>
   <div class="stat-label">${safeLabel}</div>
   ${sub ? `<div class="stat-sub" title="${esc(sub)}">${esc(sub)}</div>` : ''}
 </div>
-${tabTarget ? `<span class="stat-arrow text-gray-500 text-xs font-mono">→</span>` : ''}
+${isClickable ? `<span class="stat-arrow text-gray-500 text-xs font-mono">→</span>` : ''}
   </div>`;
 }
 function pageBanner(title, sub, stats) {
   /* UI-13 (2026-09-28): (1) tham so title truoc day bi BO QUA hoan toan — gio render
      h1.page-h1; (2) khong con CUT stat thu 5 tren mobile (mat thong tin) — card cuoi
      le se span full row qua CSS .bento-grid > .bento-card:nth-child(odd):last-child. */
-  const cards = (stats || []).map(s => statCard(s.icon, s.label, s.value, s.sub || '', s.tab || '', !!s.live)).join('');
+  const cards = (stats || []).map(s => statCard(s.icon, s.label, s.value, s.sub || '', s.tab || '', !!s.live, s.extraAttrs || '')).join('');
   return `
   ${/* FIX 2026-09-30: topbar da co <h1 id="page-title"> -> render h1 o day tao 2 h1/trang (sai cau truc
        heading cho trinh doc man hinh). Tieu de khoi noi dung la h2; giu class .page-h1 nen hinh thuc khong doi. */ ''}

@@ -7,7 +7,7 @@ lesson_count: 4
 
 # Module H2DEV-M08 — Module 6 — Mẹo & Thủ thuật khác phục lỗi gãy view và chống die kênh (TÚT - TRICK)
 
-- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]
 - **Tổng số bài giảng:** `4` video
 - **Mô tả:** Tút mẹo khắc phục gãy view, bám theo key đối thủ không bị 0 view, edit tránh quét AI.
 

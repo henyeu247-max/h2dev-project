@@ -6,7 +6,7 @@ module_id: "HUAN-M06"
 module_title: "6. QUY TRÌNH ĐANG TẠO RA >1.000.000$ YOUTUBE"
 seq: "07"
 niche: "Nghiên cứu Dream 100, Phân tích Thumbnail & Tiêu đề"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "44:16"
 published_at: "2026-09-01"
 toolsCount: 12
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-ac2223&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M06|HUAN-M06 — 6. QUY TRÌNH ĐANG TẠO RA >1.000.000$ YOUTUBE]] (Bài `#07`)  
 > - **Ngách nội dung (Niche):** [[niches/nghien-cuu-dream-100-phan-tich-thumbnail-tieu-de|Nghiên cứu Dream 100, Phân tích Thumbnail & Tiêu đề]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `44:16` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `44:16` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-ac2223&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-ac2223/README.md)
 
 ---

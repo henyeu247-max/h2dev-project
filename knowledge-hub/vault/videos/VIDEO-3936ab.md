@@ -6,7 +6,7 @@ module_id: "HUAN-M01"
 module_title: "1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z"
 seq: "13"
 niche: "Chọn Chủ Đề Ra Tiền Ngay (Tin Tức, Câu Chuyện & DIY)"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "30:31"
 published_at: "2026-09-01"
 toolsCount: 11
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-3936ab&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M01|HUAN-M01 — 1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z]] (Bài `#13`)  
 > - **Ngách nội dung (Niche):** [[niches/chon-chu-de-ra-tien-ngay-tin-tuc-cau-chuyen-diy|Chọn Chủ Đề Ra Tiền Ngay (Tin Tức, Câu Chuyện & DIY)]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `30:31` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `30:31` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-3936ab&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-3936ab/README.md)
 
 ---

@@ -6,7 +6,7 @@ module_id: "HUAN-M09"
 module_title: "9. CHỦ ĐỀ RA TIỀN NGAY 100$-1000$-5000$-10.000$-50.000$ MỖI THÁNG"
 seq: "01"
 niche: "Tư Duy Hệ Thống & Lộ Trình Khởi Nghiệp YouTube"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "27:49"
 published_at: "2026-09-01"
 toolsCount: 0
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-f8d00f&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M09|HUAN-M09 — 9. CHỦ ĐỀ RA TIỀN NGAY 100$-1000$-5000$-10.000$-50.000$ MỖI THÁNG]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/tu-duy-he-thong-lo-trinh-khoi-nghiep-youtube|Tư Duy Hệ Thống & Lộ Trình Khởi Nghiệp YouTube]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `27:49` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `27:49` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-f8d00f&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-f8d00f/README.md)
 
 ---

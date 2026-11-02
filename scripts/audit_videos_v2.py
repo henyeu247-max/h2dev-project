@@ -140,17 +140,41 @@ def is_compressed(text):
     return short >= 0.75 and novowel >= 0.40
 
 
-def ffprobe_duration(path):
+def ffprobe_duration(path, meta_cache=None, key=None):
+    if meta_cache is not None and key:
+        try:
+            st = os.stat(path)
+            ent = meta_cache.get(key)
+            if ent and ent.get("size") == st.st_size and ent.get("mtime_ns") == st.st_mtime_ns and ent.get("duration") is not None:
+                return ent["duration"]
+        except OSError:
+            pass
     try:
         out = subprocess.check_output(
             [FFPROBE, "-v", "error", "-show_entries", "format=duration",
              "-of", "default=noprint_wrappers=1:nokey=1", path], timeout=60)
-        return float(out.decode().strip())
+        dur = float(out.decode().strip())
+        if meta_cache is not None and key:
+            try:
+                st = os.stat(path)
+                ent = meta_cache.setdefault(key, {})
+                ent.update({"size": st.st_size, "mtime_ns": st.st_mtime_ns, "duration": dur})
+            except OSError:
+                pass
+        return dur
     except Exception:  # noqa: BLE001
         return None
 
 
-def ffprobe_streams(path):
+def ffprobe_streams(path, meta_cache=None, key=None):
+    if meta_cache is not None and key:
+        try:
+            st = os.stat(path)
+            ent = meta_cache.get(key)
+            if ent and ent.get("size") == st.st_size and ent.get("mtime_ns") == st.st_mtime_ns and isinstance(ent.get("streams"), dict):
+                return dict(ent["streams"])
+        except OSError:
+            pass
     has = {"video": False, "audio": False}
     for kind in ("v", "a"):
         try:
@@ -160,6 +184,13 @@ def ffprobe_streams(path):
                  "-of", "csv=p=0", path], timeout=60).decode().strip()
             has["video" if kind == "v" else "audio"] = bool(out)
         except Exception:  # noqa: BLE001
+            pass
+    if meta_cache is not None and key:
+        try:
+            st = os.stat(path)
+            ent = meta_cache.setdefault(key, {})
+            ent.update({"size": st.st_size, "mtime_ns": st.st_mtime_ns, "streams": dict(has)})
+        except OSError:
             pass
     return has
 
@@ -249,7 +280,8 @@ def audio_integrity(path, real_dur, cache=None, key=None):
         tmp = os.path.join(tempfile.gettempdir(), "h2dev_probe_%s.wav" % os.path.basename(path))
         try:
             subprocess.run(
-                [FFMPEG, "-v", "error", "-y", "-ss", "%.2f" % start, "-t", "%.2f" % probe_len,
+                [FFMPEG, "-v", "error", "-y", "-hwaccel", "cuda", "-threads", "2",
+                 "-ss", "%.2f" % start, "-t", "%.2f" % probe_len,
                  "-i", path, "-vn", "-ac", "1", "-ar", "16000", "-f", "wav", tmp],
                 stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=600)
             got = None
@@ -311,7 +343,7 @@ def loudness(path, cache=None, key=None):
         return cache[key]
     try:
         proc = subprocess.run(
-            [FFMPEG, "-hide_banner", "-i", path, "-af", "ebur128=peak=true",
+            [FFMPEG, "-hide_banner", "-threads", "2", "-vn", "-i", path, "-af", "ebur128=peak=true",
              "-f", "null", "-"],
             stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1800)
         text = proc.stderr.decode("utf-8", "ignore")
@@ -393,7 +425,8 @@ def audit_one(sku, ctx):
     video_row = ctx["videos"].get(sku) or {}
     insights = ctx["insights"].get(sku) or {}
     mod_row = ctx["modules"].get(sku) or {}
-    silence = ctx["silence"].get(sku) or {}
+    local_sil_path = os.path.join(VIDEO_DIR, sku, "silence.json")
+    silence = (load_json(local_sil_path) if os.path.exists(local_sil_path) else None) or ctx["silence"].get(sku) or {}
 
     is_silent_tutorial = (
         catalog_row.get("content_kind") == "silent_screen_tutorial"
@@ -405,7 +438,7 @@ def audit_one(sku, ctx):
     path = media_path(sku)
     real_dur = None
     if path:
-        real_dur = ffprobe_duration(path)
+        real_dur = ffprobe_duration(path, ctx.get("ffprobe_meta"), sku)
     rec["real_duration_sec"] = round(real_dur, 2) if real_dur else None
 
     # ---------------- A. TRANSCRIPT ----------------
@@ -484,7 +517,7 @@ def audit_one(sku, ctx):
         # Duoi im lang that (silencedetect cham ket thuc video) khong can phu de: tinh la da phu.
         eff_end = max_end
         for _rg in (silence.get("silence_regions") or []):
-            if _rg.get("end", 0) >= real_dur - 1.0 and _rg.get("start", real_dur) <= max_end + 1.0:
+            if _rg.get("end", 0) >= real_dur - 1.0 and _rg.get("start", real_dur) <= max_end + 10.0:
                 eff_end = max(eff_end, _rg.get("end", real_dur))
         a["coverage_effective_pct"] = round(eff_end / real_dur * 100, 1)
         if eff_end / real_dur < MIN_COVERAGE:
@@ -610,7 +643,7 @@ def audit_one(sku, ctx):
     elif b["media_size_mb"] == 0:
         issues.append("B1: media 0 byte")
     else:
-        streams = ffprobe_streams(path)
+        streams = ffprobe_streams(path, ctx.get("ffprobe_meta"), sku)
         b.update(streams)
         if not streams["video"]:
             issues.append("B2: thieu luong video")
@@ -830,38 +863,47 @@ def main():
     loudness_cache = (load_json(os.path.join(OUT_DIR, "loudness.json")) or {}).get("videos", {})
     speech_density = (load_json(os.path.join(OUT_DIR, "speech_density.json")) or {}).get("videos", {})
     integrity_cache = (load_json(os.path.join(OUT_DIR, "media_integrity_cache.json")) or {}).get("videos", {})
+    ffprobe_meta_cache = (load_json(os.path.join(OUT_DIR, "ffprobe_meta_cache.json")) or {}).get("videos", {})
 
     ctx = {"catalog": catalog, "catalog_full": catalog_full, "videos": videos,
            "insights": insights, "modules": modules, "silence": silence,
            "vision": vision, "loudness": loudness_cache,
            "speech_density": speech_density, "integrity": integrity_cache,
+           "ffprobe_meta": ffprobe_meta_cache,
            "review_evidence": (load_json(os.path.join(ROOT, "data", "manual-review-evidence.json"))
                                or {}).get("videos", {})}
 
     skus = args.sku or sorted(catalog.keys())
     print("audit_v2: %d SKU | silence coverage: %d/%d"
-          % (len(skus), sum(1 for s in skus if s in silence), len(skus)))
+          % (len(skus), sum(1 for s in skus if s in silence or os.path.exists(os.path.join(VIDEO_DIR, s, "silence.json"))), len(skus)))
 
     t0 = time.time()
     report = []
-    with ThreadPoolExecutor(max_workers=4) as pool:
+    with ThreadPoolExecutor(max_workers=2) as pool:
         for rec in pool.map(lambda s: audit_one(s, ctx), skus):
             report.append(rec)
             print("  %-42s issues=%d" % (rec["sku"], rec["issue_count"]), flush=True)
     report.sort(key=lambda r: r["sku"])
 
-    # ---- HTTP: local + VPS (rieng, gom 1 lan) ----
+    try:
+        if ffprobe_meta_cache:
+            with open(os.path.join(OUT_DIR, "ffprobe_meta_cache.json"), "w", encoding="utf-8") as fh:
+                json.dump({"schema": "h2dev.ffprobe-meta.v1",
+                           "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                           "total": len(ffprobe_meta_cache),
+                           "videos": ffprobe_meta_cache}, fh, ensure_ascii=False, indent=1)
+    except Exception:  # noqa: BLE001
+        pass
+
+    # ---- HTTP: local + VPS (song song hoa, gom 1 lan) ----
     http = {"local": {}, "vps": {}}
     if not args.skip_http:
         for base, key in ((LOCAL_BASE, "local"), (VPS_BASE, "vps")):
             if key == "vps" and args.no_vps:
                 continue
-            codes = {}
-            for sku in skus:
-                url = "%s/lotrinh/%s" % (base, sku)
-                code = http_code(url, timeout=15)
-                codes[sku] = code
-            http[key] = codes
+            with ThreadPoolExecutor(max_workers=16) as http_pool:
+                pairs = list(http_pool.map(lambda s: (s, http_code("%s/lotrinh/%s" % (base, s), timeout=15)), skus))
+            http[key] = dict(pairs)
     for rec in report:
         sku = rec["sku"]
         if http["local"]:

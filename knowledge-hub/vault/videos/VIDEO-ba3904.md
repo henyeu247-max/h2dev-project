@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M00"
 module_title: "Bắt đầu tại đây — Cộng đồng & Hỗ trợ"
 seq: "01"
-niche: "Cộng Đồng & Hỗ Trợ VIP"
+niche: "Cộng đồng & Hỗ trợ VIP"
 markets: ["🇻🇳 Việt"]
 duration: "4:27"
 published_at: "2026-04-10"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-ba3904&track=h2dev"
 # VIDEO-ba3904 — Hướng dẫn tham gia cộng đồng VIP riêng tư – Giao lưu, trao đổi và hỗ trợ YouTube H2Dev
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M00|H2DEV-M00 — Bắt đầu tại đây — Cộng đồng & Hỗ trợ]] (Bài `#01`)  
-> - **Ngách nội dung (Niche):** [[niches/cong-dong-ho-tro-vip|Cộng Đồng & Hỗ Trợ VIP]]  
+> - **Ngách nội dung (Niche):** [[niches/cong-dong-ho-tro-vip|Cộng đồng & Hỗ trợ VIP]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `4:27` | **Ngày đăng:** `2026-04-10`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-ba3904&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-ba3904/README.md)
 

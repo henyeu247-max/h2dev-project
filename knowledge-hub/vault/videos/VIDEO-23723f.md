@@ -6,7 +6,7 @@ module_id: "DGMD-M04"
 module_title: "COMBO 3 QUY TRÌNH VIEW NGOẠI 1"
 seq: "02"
 niche: "Quiz & Trắc Nghiệm Kiến Thức"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
+markets: ["🌍 View Ngoại"]
 duration: "35:06"
 published_at: "2026-10-12"
 toolsCount: 5
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-23723f&track=dgmd"
 # VIDEO-23723f — Quy Trình Sản Xuất Video Quiz English 
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M04|DGMD-M04 — COMBO 3 QUY TRÌNH VIEW NGOẠI 1]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/quiz-trac-nghiem-kien-thuc|Quiz & Trắc Nghiệm Kiến Thức]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `35:06` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại | **Thời lượng:** `35:06` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-23723f&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-23723f/README.md)
 
 ---

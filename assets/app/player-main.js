@@ -516,22 +516,11 @@ window.addEventListener('keydown', (e)=>{
     ].filter(Boolean).join('');
     const pv = document.getElementById('pv');
     const pvIframe = document.getElementById('pvIframe');
-    let localAvailable = false;
-    let isWebm = false;
-    let local = '';
-    const declared = (v.mp4 && /(^|\/)video\//.test(v.mp4)) ? v.mp4 : '';
-    const defaultLocal = declared || `video/${resolvedSku}/${resolvedSku}.mp4`;
-    const candidates = declared ? [declared] : [`video/${resolvedSku}/${resolvedSku}.mp4`, `video/${resolvedSku}/${resolvedSku}.webm`];
-    for (const cand of candidates) {
-      try {
-        const headRes = await fetch(cand, { method: 'HEAD', cache: 'no-store' });
-        if (headRes.ok) {
-          local = cand;
-          break;
-        }
-      } catch(e) {}
-    }
-    localAvailable = Boolean(local);
+    const declared = (v.mp4 && /(^|\/)video\//.test(v.mp4)) ? ('/' + v.mp4.replace(/^\//, '')) : '';
+    const defaultExt = /^ZOOM-/i.test(resolvedSku) ? 'webm' : 'mp4';
+    const local = declared || `/video/${encodeURIComponent(resolvedSku)}/${encodeURIComponent(resolvedSku)}.${defaultExt}`;
+    const localAvailable = Boolean(local);
+    let isWebm = /\.webm(\?|$)/i.test(local);
 
     if (localAvailable) {
       if (pvIframe) {
@@ -543,6 +532,7 @@ window.addEventListener('keydown', (e)=>{
         const playbackSource = local;
         isWebm = /\.webm(\?|$)/i.test(playbackSource);
         pv.poster = (v && (v.image || v.thumb)) ? ('/' + (v.image || v.thumb).replace(/^\//, '')) : '';
+        pv.preload = 'auto';
         pv.src = playbackSource;
         const initialSeek = parseFloat(params.get('t'));
         if (Number.isFinite(initialSeek) && initialSeek > 0) {
@@ -994,6 +984,7 @@ window.addEventListener('keydown', (e)=>{
     /* auto-save progress every 3s while playing + realtime transcript sync */
     let lastSave=0;
     pv.addEventListener('timeupdate',()=>{
+      if (pv.seeking) return;
       const d=pv.duration, t=pv.currentTime;
       if(!Number.isFinite(t)) return;
 

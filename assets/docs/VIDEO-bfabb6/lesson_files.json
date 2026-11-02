@@ -1,0 +1,32 @@
+{
+  "id": 12800,
+  "sku": "VIDEO-bfabb6",
+  "upstream_sku": "VIDEO-bfabb6",
+  "name": "Hướng dẫn làm Tự động hóa ngách người que view Việt bằng Claude KHÔNG ĐỤNG tới Capcut, 100% edit giống đối thủ  |  Update 23-10-2026 ",
+  "url_key": "huong-dan-lam-tu-dong-hoa-ngach-nguoi-que-view-viet-bang-claude-khong-dung-toi-capcut-100-edit-giong-doi-thu-update-23-10-2026",
+  "published_at": "2026-10-23",
+  "time": "1906",
+  "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1792716417-update-video-pro-23-10-2026&protected=False&version=v2&token=gAAAAABq2q6LVyyQEZdgK0XqNzGGq5C6kNH2moqKmoJACYlwfjrIWS1U9iMkqMLZtXRUEqjVI8PCY8S4PoxeHdX-hTz73hr7XkO__nJFCFYPmeY9UlW7z_s%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
+  "protected": false,
+  "bai_h_c_free": false,
+  "lesson_files": null,
+  "attachments": null,
+  "video_subtitle": null,
+  "image": {
+    "url": "https://saas-api.mona.academy/media/catalog/product/C/l/Claude_Automation__D_ng_Video_Si_u_T_c.png.png",
+    "label": "Claude Automation_! Dựng Video Siêu Tốc.png"
+  },
+  "thumbnail": {
+    "url": "https://saas-api.mona.academy/media/catalog/product/C/l/Claude_Automation__D_ng_Video_Si_u_T_c.png.png",
+    "label": "Claude Automation_! Dựng Video Siêu Tốc.png"
+  },
+  "tags": null,
+  "gdrive_files": [
+    {
+      "file_id": "1jWQQ653tUdh08bu5Q8DieWi-uNnnwRuZ",
+      "filename": "h2-tiensu-studio-v1.0.6.plugin",
+      "bytes": 181892
+    }
+  ],
+  "gdoc_files": []
+}

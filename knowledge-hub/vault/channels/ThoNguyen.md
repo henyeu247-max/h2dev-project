@@ -1,12 +1,12 @@
 ---
 handle: "@ThoNguyen"
-name: "Thơ Nguyễn"
+name: "@ThoNguyen"
 url: "https://www.youtube.com/@ThoNguyen"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ThoNguyen (Thơ Nguyễn)
+# Kênh Đối Thủ / Kênh Mẫu: @ThoNguyen (@ThoNguyen)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ThoNguyen](https://www.youtube.com/@ThoNguyen)

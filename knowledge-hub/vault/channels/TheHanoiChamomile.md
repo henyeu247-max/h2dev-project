@@ -1,12 +1,12 @@
 ---
 handle: "@TheHanoiChamomile"
-name: "The Hanoi Chamomile (Study With Me)"
+name: "@TheHanoiChamomile"
 url: "https://www.youtube.com/@TheHanoiChamomile"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TheHanoiChamomile (The Hanoi Chamomile (Study With Me))
+# Kênh Đối Thủ / Kênh Mẫu: @TheHanoiChamomile (@TheHanoiChamomile)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TheHanoiChamomile](https://www.youtube.com/@TheHanoiChamomile)

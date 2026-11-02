@@ -1,12 +1,12 @@
 ---
 handle: "@BBBG"
-name: "BB&BG Entertainment"
+name: "@BBBG"
 url: "https://www.youtube.com/@BBBG"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @BBBG (BB&BG Entertainment)
+# Kênh Đối Thủ / Kênh Mẫu: @BBBG (@BBBG)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@BBBG](https://www.youtube.com/@BBBG)

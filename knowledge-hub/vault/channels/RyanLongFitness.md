@@ -1,12 +1,12 @@
 ---
 handle: "@RyanLongFitness"
-name: "Ryan Long Fitness"
+name: "@RyanLongFitness"
 url: "https://www.youtube.com/@RyanLongFitness"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @RyanLongFitness (Ryan Long Fitness)
+# Kênh Đối Thủ / Kênh Mẫu: @RyanLongFitness (@RyanLongFitness)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@RyanLongFitness](https://www.youtube.com/@RyanLongFitness)

@@ -1,12 +1,12 @@
 ---
 handle: "@KIMPRO828"
-name: "KIMPRO"
+name: "@KIMPRO828"
 url: "https://www.youtube.com/@KIMPRO828"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @KIMPRO828 (KIMPRO)
+# Kênh Đối Thủ / Kênh Mẫu: @KIMPRO828 (@KIMPRO828)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@KIMPRO828](https://www.youtube.com/@KIMPRO828)

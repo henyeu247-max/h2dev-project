@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-acd33f&track=h2dev"
 # VIDEO-acd33f — NGUỒN MỚI REUP "CÂU CÁ VẠN CÂN" MỚI NHẤT - VIEW QUÁ KINH KHỦNG - SHOW 2 KÊNH MỚI ĐANG LÀM THẬT SỰ KHIẾP SỢ VÌ VIEW
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#39`)  
 > - **Ngách nội dung (Niche):** [[niches/reup-khai-thac-hoat-hinh|Reup & Khai Thác Hoạt Hình]]  
 > - **Thị trường:** 🇨🇳 Trung | **Thời lượng:** `3:28` | **Ngày đăng:** `2026-04-09`  

@@ -7,7 +7,7 @@ lesson_count: 1
 
 # Module DGMD-M01 — BẠN SẼ HỌC ĐƯỢC GÌ TRONG DGMD ACADEMY
 
-- **Thuộc Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]
 - **Tổng số bài giảng:** `1` video
 - **Mô tả:** Tổng quan chương trình học, quyền lợi thành viên và định hướng phát triển trong DGMD Academy.
 

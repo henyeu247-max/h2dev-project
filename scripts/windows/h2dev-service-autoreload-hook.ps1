@@ -44,6 +44,12 @@ function Write-HookLog([string]$m) {
   try {
     $dir = Split-Path $logFile
     if (-not (Test-Path $dir)) { New-Item -ItemType Directory -Force -Path $dir | Out-Null }
+    if (Test-Path -LiteralPath $logFile) {
+      $item = Get-Item -LiteralPath $logFile -ErrorAction SilentlyContinue
+      if ($item -and $item.Length -gt 1048576) {
+        Move-Item -LiteralPath $logFile -Destination ($logFile + '.1') -Force -ErrorAction SilentlyContinue
+      }
+    }
     Add-Content -Path $logFile -Value ('[' + (Get-Date -Format 'yyyy-MM-dd HH:mm:ss') + '] ' + $m) -Encoding utf8
   } catch { }
 }

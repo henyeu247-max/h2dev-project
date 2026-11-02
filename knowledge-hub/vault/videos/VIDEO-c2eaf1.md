@@ -6,7 +6,7 @@ module_id: "HUAN-M13"
 module_title: "CẢM NHẬN THỰC TẾ CỦA KHÓA OFFLINE"
 seq: "02"
 niche: "Phễu Bán Hàng B2B Qua YouTube & Tinh Thần Học Tập Không Giới Hạn Tuổi Tác"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "02:40"
 published_at: "2026-09-01"
 toolsCount: 2
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-c2eaf1&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M13|HUAN-M13 — CẢM NHẬN THỰC TẾ CỦA KHÓA OFFLINE]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/pheu-ban-hang-b2b-qua-youtube-tinh-than-hoc-tap-khong-gioi-han-tuoi-tac|Phễu Bán Hàng B2B Qua YouTube & Tinh Thần Học Tập Không Giới Hạn Tuổi Tác]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `02:40` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `02:40` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-c2eaf1&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-c2eaf1/README.md)
 
 ---

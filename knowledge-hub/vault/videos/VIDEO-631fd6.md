@@ -6,7 +6,7 @@ module_id: "HUAN-M03"
 module_title: "3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY"
 seq: "02"
 niche: "Mô Hình Kênh Faceless & Hệ Thống Hóa Doanh Nghiệp"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "19:09"
 published_at: "2026-09-01"
 toolsCount: 1
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-631fd6&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M03|HUAN-M03 — 3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/mo-hinh-kenh-faceless-he-thong-hoa-doanh-nghiep|Mô Hình Kênh Faceless & Hệ Thống Hóa Doanh Nghiệp]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `19:09` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `19:09` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-631fd6&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-631fd6/README.md)
 
 ---

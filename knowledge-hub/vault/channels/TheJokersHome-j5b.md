@@ -1,12 +1,12 @@
 ---
 handle: "@TheJokersHome-j5b"
-name: "Rumi KING"
+name: "@TheJokersHome-j5b"
 url: "https://www.youtube.com/@TheJokersHome-j5b"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TheJokersHome-j5b (Rumi KING)
+# Kênh Đối Thủ / Kênh Mẫu: @TheJokersHome-j5b (@TheJokersHome-j5b)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TheJokersHome-j5b](https://www.youtube.com/@TheJokersHome-j5b)

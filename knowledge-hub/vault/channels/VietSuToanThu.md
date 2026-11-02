@@ -1,16 +1,16 @@
 ---
 handle: "@VietSuToanThu"
-name: "Việt Sử Toàn Thư"
+name: "@VietSuToanThu"
 url: "https://www.youtube.com/@VietSuToanThu"
-status: "DEAD"
+status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @VietSuToanThu (Việt Sử Toàn Thư)
+# Kênh Đối Thủ / Kênh Mẫu: @VietSuToanThu (@VietSuToanThu)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@VietSuToanThu](https://www.youtube.com/@VietSuToanThu)
-- **Trạng thái kiểm định:** `DEAD (Đã dừng / Gỡ)`
+- **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`
 

@@ -1,12 +1,12 @@
 ---
 handle: "@glowupestoico"
-name: "Glow Up Estoico (Kênh phiên bản tiếng Tây Ban Nha liên kết trong mô tả của hệ thống Stoic Glow Up)"
+name: "@glowupestoico"
 url: "https://www.youtube.com/@glowupestoico"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @glowupestoico (Glow Up Estoico (Kênh phiên bản tiếng Tây Ban Nha liên kết trong mô tả của hệ thống Stoic Glow Up))
+# Kênh Đối Thủ / Kênh Mẫu: @glowupestoico (@glowupestoico)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@glowupestoico](https://www.youtube.com/@glowupestoico)

@@ -6,7 +6,7 @@ module_id: "HUAN-M01"
 module_title: "1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z"
 seq: "03"
 niche: "Kế Hoạch Tổng Thể 7 Bước & Bộ Công Cụ Triển Khai Kênh 1 Người"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "04:56"
 published_at: "2026-09-01"
 toolsCount: 10
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-2d88bc&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M01|HUAN-M01 — 1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/ke-hoach-tong-the-7-buoc-bo-cong-cu-trien-khai-kenh-1-nguoi|Kế Hoạch Tổng Thể 7 Bước & Bộ Công Cụ Triển Khai Kênh 1 Người]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `04:56` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `04:56` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-2d88bc&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-2d88bc/README.md)
 
 ---

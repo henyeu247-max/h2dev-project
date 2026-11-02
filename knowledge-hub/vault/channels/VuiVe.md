@@ -1,12 +1,12 @@
 ---
 handle: "@VuiVe"
-name: "Vui Vẻ"
+name: "@VuiVe"
 url: "https://www.youtube.com/@VuiVe"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @VuiVe (Vui Vẻ)
+# Kênh Đối Thủ / Kênh Mẫu: @VuiVe (@VuiVe)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@VuiVe](https://www.youtube.com/@VuiVe)

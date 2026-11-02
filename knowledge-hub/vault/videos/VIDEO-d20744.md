@@ -6,7 +6,7 @@ module_id: "H2DEV-M10"
 module_title: "Module 8 — Công cụ & Tài nguyên hỗ trợ"
 seq: "03"
 niche: "Bán Content & Phát Triển Kênh"
-markets: ["🇨🇳 Trung"]
+markets: ["🇯🇵 Nhật", "🇰🇷 Hàn", "🇺🇸 Mỹ", "🇻🇳 Việt"]
 duration: "1:05"
 published_at: "2026-03-28"
 toolsCount: 2
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-d20744&track=h2dev"
 # VIDEO-d20744 — NHẬN VÀ TẢI MIỄN PHÍ 6 BỘ TOOL TẠI ĐÂY !
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M10|H2DEV-M10 — Module 8 — Công cụ & Tài nguyên hỗ trợ]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
-> - **Thị trường:** 🇨🇳 Trung | **Thời lượng:** `1:05` | **Ngày đăng:** `2026-03-28`  
+> - **Thị trường:** 🇯🇵 Nhật · 🇰🇷 Hàn · 🇺🇸 Mỹ · 🇻🇳 Việt | **Thời lượng:** `1:05` | **Ngày đăng:** `2026-03-28`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-d20744&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-d20744/README.md)
 
 ---

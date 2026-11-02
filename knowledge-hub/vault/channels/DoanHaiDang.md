@@ -1,12 +1,12 @@
 ---
 handle: "@DoanHaiDang"
-name: "Bác sĩ bỉm sữa Đoàn Hải Đăng"
+name: "@DoanHaiDang"
 url: "https://www.youtube.com/@DoanHaiDang"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @DoanHaiDang (Bác sĩ bỉm sữa Đoàn Hải Đăng)
+# Kênh Đối Thủ / Kênh Mẫu: @DoanHaiDang (@DoanHaiDang)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@DoanHaiDang](https://www.youtube.com/@DoanHaiDang)

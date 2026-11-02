@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M07"
 module_title: "Module 5 — Edit video & Thumbnail chuẩn A-Z"
 seq: "01"
-niche: "Triết Lý Sống & Đạo Làm Người"
+niche: "Kháng Bản Quyền & Chính Sách YPP"
 markets: ["🌐 Ngoại"]
 duration: "15:01"
 published_at: "2026-05-02"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-a1c98f&track=h2dev"
 # VIDEO-a1c98f — HƯỚNG DẪN QUY TRÌNH LÀM THUMB - CLONE THUMB THEO GIỐNG 100% ĐỐI THỦ TỪ FONT CHỮ PHONG CÁCH ĐỐI THỦ - MẢNH GHÉP CUỐI CÙNG CỰC KỲ QUAN TRỌNG KHI LÀM VIDEO 
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M07|H2DEV-M07 — Module 5 — Edit video & Thumbnail chuẩn A-Z]] (Bài `#01`)  
-> - **Ngách nội dung (Niche):** [[niches/triet-ly-song-dao-lam-nguoi|Triết Lý Sống & Đạo Làm Người]]  
+> - **Ngách nội dung (Niche):** [[niches/khang-ban-quyen-chinh-sach-ypp|Kháng Bản Quyền & Chính Sách YPP]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `15:01` | **Ngày đăng:** `2026-05-02`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-a1c98f&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-a1c98f/README.md)
 

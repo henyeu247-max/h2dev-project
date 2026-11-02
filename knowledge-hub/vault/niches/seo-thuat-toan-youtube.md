@@ -18,7 +18,7 @@ tracks: ["dgmd"]
 - [[videos/VIDEO-52b908|VIDEO-52b908 — Hiểu Rõ 15 Danh Mục Quan Trọng Trong YouTube Studio]] (`DGMD` · `16:51`)
 - [[videos/VIDEO-4483df|VIDEO-4483df — Quy Trình Đăng Video Chuẩn SEO Trên Máy Tính]] (`DGMD` · `07:22`)
 
-## 2. Kênh Đối Thủ / Kênh Mẫu Liên Quan (18)
+## 2. Kênh Đối Thủ / Kênh Mẫu Liên Quan (17)
 - [[channels/GalaxyYoga|@GalaxyYoga]]
 - [[channels/VatVoStudio|@VatVoStudio]]
 - [[channels/TonyPhungStudio|@TonyPhungStudio]]
@@ -34,6 +34,5 @@ tracks: ["dgmd"]
 - [[channels/7clouds|@7clouds]]
 - [[channels/NetflixKContent|@NetflixKContent]]
 - [[channels/BabyMonkeyAnimal|@BabyMonkeyAnimal]]
-- [[channels/LinhGioiHatVan|@LinhGioiHatVan]]
 - [[channels/MrBeast|@MrBeast]]
 - [[channels/ChillBuồnStudio|@ChillBuồnStudio]]

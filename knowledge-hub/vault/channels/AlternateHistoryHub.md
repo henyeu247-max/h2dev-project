@@ -1,12 +1,12 @@
 ---
 handle: "@AlternateHistoryHub"
-name: "AlternateHistoryHub (Kênh hình mẫu ngách Lịch sử giả định trong Tab 8)"
+name: "@AlternateHistoryHub"
 url: "https://www.youtube.com/@AlternateHistoryHub"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @AlternateHistoryHub (AlternateHistoryHub (Kênh hình mẫu ngách Lịch sử giả định trong Tab 8))
+# Kênh Đối Thủ / Kênh Mẫu: @AlternateHistoryHub (@AlternateHistoryHub)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@AlternateHistoryHub](https://www.youtube.com/@AlternateHistoryHub)

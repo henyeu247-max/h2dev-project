@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "79"
-niche: "Sức Khỏe & Dinh Dưỡng"
+niche: "Kỹ Thuật Edit CapCut & Tối Ưu Giọng Đọc"
 markets: ["🇯🇵 Nhật", "🇺🇸 Mỹ", "🇬🇧 Anh", "🇰🇷 Hàn"]
 duration: "6:31"
 published_at: "2025-09-27"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-ca266f&track=h2dev"
 # VIDEO-ca266f — Update Share Key MỚI 27-09-2025 (Ngách Nhỏ Thị Trường Nhật Bản, Hoa Kỳ, Anh, Hàn Quốc)
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#79`)  
-> - **Ngách nội dung (Niche):** [[niches/suc-khoe-dinh-duong|Sức Khỏe & Dinh Dưỡng]]  
+> - **Ngách nội dung (Niche):** [[niches/ky-thuat-edit-capcut-toi-uu-giong-doc|Kỹ Thuật Edit CapCut & Tối Ưu Giọng Đọc]]  
 > - **Thị trường:** 🇯🇵 Nhật · 🇺🇸 Mỹ · 🇬🇧 Anh · 🇰🇷 Hàn | **Thời lượng:** `6:31` | **Ngày đăng:** `2025-09-27`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-ca266f&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-ca266f/README.md)
 

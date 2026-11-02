@@ -11,7 +11,8 @@
     "Quy trình chạy tool sản xuất video Veo 3 đa luồng (khuyên chạy 5–8 luồng) kết hợp công cụ rà soát prompt tự động để lọc bỏ các câu lệnh vi phạm chính sách trước khi ghép.",
     "Mẹo nối đuôi video (ghép thêm đoạn video đã nổ view vào phần cuối video mới trong khoảng 30% thời lượng) để kéo thời lượng xem trung bình và tăng doanh thu RPM.",
     "Thiết kế thumbnail nhất quán bằng Gemini và Flow, lưu trữ khoa học theo từng thư mục kịch bản để tránh nhầm lẫn khi sản xuất số lượng lớn.",
-    "Kỹ thuật seeding kéo đề xuất sau khi đăng (mở 3–4 tab xem qua danh sách phát, tự bình luận và ghim comment) kết hợp cài tiện ích tự động đặt quảng cáo mỗi 2 phút cho video dài."
+    "Kỹ thuật seeding kéo đề xuất sau khi đăng (mở 3–4 tab xem qua danh sách phát, tự bình luận và ghim comment) kết hợp cài tiện ích tự động đặt quảng cáo mỗi 2 phút cho video dài.",
+    "làm hai cái video mỗi cái bây giờ còn tầm 23 phút thôi nhé cho nó tiết kiệm thời gian còn"
   ],
   "edit_sop": {
     "primary": "Quy trình sản xuất hàng loạt kênh: tool tạo video, ghép đuôi tăng thời lượng xem, tiêu đề, thumbnail, danh sách phát, quảng cáo",

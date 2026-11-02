@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-28",
-  "note": "Quy trình xây kênh YouTube Faceless A–Z (Đề cương & SOP 24 bước thực chiến toàn diện trên hệ thống 97yo-dev). Tổng hợp và đối soát từ 333 video bài học toàn hệ thống (148 H2DEV [144 video + 4 Zoom] · 140 Huân Academy · 45 DGMD), 580 tài liệu SOP catalog (+1.409 tài liệu đính kèm 3 nhánh), 40 Ngách trụ cột × 120 Vi Ngách (Micro-Niches), 1.076 kênh mẫu (987 live · 89 dead) và 19 H2DEV Specialized Agent Skills.",
+  "note": "Quy trình xây kênh YouTube Faceless A–Z (Đề cương & SOP 24 bước thực chiến toàn diện trên hệ thống 97yo-dev). Tổng hợp và đối soát từ 346 video bài học toàn hệ thống (153 H2DEV [149 video + 4 Zoom] · 140 Huân Academy · 53 DGMD), 597 tài liệu SOP catalog (+1.409 tài liệu đính kèm 3 nhánh), 40 Ngách trụ cột × 120 Vi Ngách (Micro-Niches), 1.076 kênh mẫu (987 live · 89 dead) và 19 H2DEV Specialized Agent Skills.",
   "nguyenTacCotLoi": [
     "NGÁCH KHÔNG QUYẾT ĐỊNH XANH/ĐỎ — CÁCH LÀM QUYẾT ĐỊNH. Phải có giá trị gốc nhìn thấy được, câu chuyện có nguồn sử học/khoa học/bảo tàng xác thực, triệt tiêu 100% bẫy sao chép máy móc.",
     "HAI CỬA ĐỘC LẬP CỦA YOUTUBE: Inauthentic Content (tự làm nội dung công nghiệp lặp lại, slide ảnh tĩnh) và Reused Content (lấy clip người khác không biên tập). Faceless/AI hoàn toàn hợp lệ nếu áp dụng kỹ thuật hậu kỳ đa lớp (Multi-layer Compositing) và đóng góp giá trị sáng tạo riêng.",
@@ -738,7 +738,7 @@
     "[11. Kỷ Luật Upload Unlisted >= 2 Giờ & Lưu Project] Kênh đã bật đủ 3 Dòng Xanh, chọn 'Not Made for Kids', tải lên ở chế độ Không công khai (Unlisted) ít nhất 2 giờ để hệ thống Checks duyệt xanh tiền hoàn tất trước giờ vàng, và đã lưu trữ file project CapCut/Premiere gốc để sẵn sàng quay Video Appeal OBS nếu cần (VIDEO-46c57e, VIDEO-7f0bb4)?",
     "[12. Cách Ly VPS/GA & Lá Chắn Human Footprint] Thực hiện đăng bài trên đúng Work VPS của kênh (cách ly với Root VPS và GA VPS), giữ nhịp đăng <= 1 video / 2 ngày, không trộn Shorts vào kênh Video Dài, và duy trì lịch đăng 1 video hậu trường Unlisted mỗi 2–3 tuần (VIDEO-b522d6, VIDEO-f83f59, VIDEO-1a7f58)?"
   ],
-  "nguonDuLieu": "Hệ thống 97yo-dev: 333 bài học (148 H2DEV [144 video bài giảng + 4 buổi Zoom] + 140 Huân Academy + 45 DGMD) + 580 tài liệu SOP catalog + 40 Ngách trụ cột × 120 Vi Ngách + 1.076 kênh mẫu (987 live · 89 dead) + 156 hồ sơ raw kênh (149 kênh độc nhất) + 52 nguồn tư liệu gốc & 19 H2DEV Specialized Skills.",
+  "nguonDuLieu": "Hệ thống 97yo-dev: 346 bài học (153 H2DEV [149 video bài giảng + 4 buổi Zoom] + 140 Huân Academy + 53 DGMD) + 597 tài liệu SOP catalog + 40 Ngách trụ cột × 120 Vi Ngách + 1.076 kênh mẫu (987 live · 89 dead) + 156 hồ sơ raw kênh (149 kênh độc nhất) + 52 nguồn tư liệu gốc & 19 H2DEV Specialized Skills.",
   "nguonChinhSach": [
     "https://support.google.com/youtube/answer/72851",
     "https://support.google.com/youtube/answer/1311392",
@@ -862,10 +862,10 @@
     }
   ],
   "cachNoiTab": [
-    "Tab Video = Nguồn bài học 333 SKU toàn hệ thống 97yo-dev (148 H2DEV [144 video + 4 Zoom] · 140 Huân Academy · 45 DGMD) đã gắn mã ngách H01..H40.",
+    "Tab Video = Nguồn bài học 346 SKU toàn hệ thống 97yo-dev (153 H2DEV [149 video + 4 Zoom] · 140 Huân Academy · 53 DGMD) đã gắn mã ngách H01..H40.",
     "Tab Ngách xanh = Ma trận 40 Ngách trụ cột (H01..H40) × 120 Vi Ngách (001..120), đối soát số liệu vidIQ, RPM và 19 H2DEV Specialized Skills.",
-    "Tab Kịch bản = Thư viện 580 tài liệu SOP catalog (+1.409 tài liệu thực chiến đính kèm 3 nhánh), 50 Master Prompts viết kịch bản đa hồi và Bản đồ 120 Vi Ngách.",
-    "Tab Kênh mẫu = Kho 1.082 kênh đối thủ thực tế (993 kênh sống tăng trưởng + 89 case study DIE 404/rỗng để né bẫy).",
+    "Tab Kịch bản = Thư viện 597 tài liệu SOP catalog (+1.409 tài liệu thực chiến đính kèm 3 nhánh), 50 Master Prompts viết kịch bản đa hồi và Bản đồ 120 Vi Ngách.",
+    "Tab Kênh mẫu = Kho 1.076 kênh đối thủ thực tế (987 kênh sống tăng trưởng + 89 case study DIE 404/rỗng để né bẫy).",
     "Tab Chiến lược = Quy trình xây kênh A–Z chuẩn hóa 24 bước SOP Chiến Lược Vàng 97yo-dev thực chiến (gồm 16 bước nền tảng + 8 chiến thuật vận hành 2026)."
   ],
   "taiSanNoiBo": [
@@ -912,8 +912,8 @@
     }
   ],
   "matrix144": {
-    "totalVideos": 148,
-    "totalWords": 347868,
+    "totalVideos": 153,
+    "totalWords": 373559,
     "clusters": [
       {
         "id": "ban-content-nhan-ban",
@@ -1071,12 +1071,12 @@
     ],
     "clusterCounts": {
       "ban-content-nhan-ban": 86,
-      "hoat-hinh-douyin-bilibili": 4,
+      "hoat-hinh-douyin-bilibili": 5,
       "suc-khoe-duong-sinh-senior": 13,
       "drama-sukatto-doi-song": 9,
       "prompt-ai-dao-dien-visual": 10,
       "khang-ban-quyen-adsense": 15,
-      "triet-ly-lich-su-phat-phap": 7,
+      "triet-ly-lich-su-phat-phap": 11,
       "setup-moi-truong-nuoi-kenh": 4
     },
     "items": [
@@ -2817,7 +2817,7 @@
       {
         "sku": "VIDEO-948336",
         "title": "Share Key (Ngách Nhỏ) Thị Trường Hàn Quốc - Update 11/10/2025",
-        "duration": "4:18",
+        "duration": "4:48",
         "clusterId": "prompt-ai-dao-dien-visual",
         "clusterName": "Prompt AI, Đạo Diễn 5P & Kỹ Thuật Visual Khóa Nhân Vật",
         "transcriptSample": "Ừ rồi Ok em xin chào tất cả mọi người nha thì hôm nay em sẽ tiếp tục và lên cái video về xe cây | mới cho mọi người nha Thì ở cái video này thì em sẽ xem một cây rất là mới cho anh em luôn cái kênh | này thì mọi người thấy không Nó vừa lập ở tháng 9 này cách đây là chỉ có một tháng thôi nha Nhưng",
@@ -3595,6 +3595,86 @@
         ],
         "takeaways": [],
         "attachedCount": 4
+      },
+      {
+        "sku": "VIDEO-bfabb6",
+        "title": "Hướng dẫn làm Tự động hóa ngách người que view Việt bằng Claude KHÔNG ĐỤNG tới Capcut, 100% edit giống đối thủ  |  Update 23-10-2026 ",
+        "duration": "31:47",
+        "clusterId": "hoat-hinh-douyin-bilibili",
+        "clusterName": "Hoạt Hình Reup & Khai Thác Bilibili/Douyin",
+        "transcriptSample": "Em chào tất cả anh chị nha, hôm nay em lại tiếp tục lên video hướng dẫn mọi người làm nha. | Thì cái ngách vẽ, cái kênh vẽ vời về thị trường Việt này thì hôm trước em có nói mọi người nè, | thì kênh này đang bật kiếm tiền, đang hoàn toàn bật kiếm tiền, thì mấy",
+        "transcriptWords": 6979,
+        "sopSummary": "primary: Quy trình tự động hóa A-Z sản xuất video người que lịch sử tiền sử view Việt bằng Claude và h2-tiensu-studio-v1.0.6.plugin không dùng CapCut. | additional: ['Cài đặt tệp h2-tiensu-studio-v1.0.6.plugin vào Claude Desktop và khởi tạo thư mục dự án làm việc trên máy tính.', 'Gọi lệnh /kich-ban",
+        "avoidFlags": [
+          "Đặt sai tên tệp âm thanh hoặc tệp hình ảnh so với mã định danh trong bảng phân cảnh khiến lệnh /lam-video-tiensu không nhận diện được tài nguyên.",
+          "Can thiệp cắt ghép thủ công rời rạc thay vì để bộ công cụ tự động đồng bộ chuyển động, hiệu ứng âm thanh và bố cục ảnh thu nhỏ theo chuẩn kênh mẫu."
+        ],
+        "takeaways": [],
+        "attachedCount": 5
+      },
+      {
+        "sku": "VIDEO-9ff392",
+        "title": "Thực chiến share ngách lịch sử Việt Nam hướng dẫn làm + kèm Skill ( Claude tự động edit video ) |  Update 25-10-2026",
+        "duration": "18:32",
+        "clusterId": "triet-ly-lich-su-phat-phap",
+        "clusterName": "Triết Lý Sống, Tâm Linh & Lịch Sử Thường Ngày",
+        "transcriptSample": "Em chào tất cả mọi người nha. Hôm nay em tiếp tục là chia sẻ cho mọi người một siêu phẩm nữa ha. | Thì đây là về cái ngách ở thị trường Việt. Về cái ngách này đang cực kỳ là trend và nói chung là nhiều người quan tâm. | Về rất là hay nha. Thì nói chung là nếu ",
+        "transcriptWords": 4415,
+        "sopSummary": "primary: Quy trình sản xuất tự động video hoạt họa bản đồ lịch sử Việt Nam bằng Claude và h2-bandosu-studio.plugin. | additional: ['Nạp tệp h2-bandosu-studio.plugin vào Claude Desktop và thiết lập thư mục lưu trữ dự án lịch sử Việt Nam.', 'Kích hoạt lệnh /kich-ban-bandosu để chọn đề tài lịch sử trọn",
+        "avoidFlags": [
+          "Trình bày sự kiện lịch sử rời rạc thiếu trục bản đồ địa lý khiến người xem khó hình dung diễn biến chiến dịch và hướng tiến quân.",
+          "Chọn sai danh mục cài đặt nội dung trên YouTube thay vì hỏi trực tiếp Claude để thiết lập phân loại giáo dục lịch sử chuẩn xác."
+        ],
+        "takeaways": [],
+        "attachedCount": 5
+      },
+      {
+        "sku": "VIDEO-57d8ef",
+        "title": "Demo ngách lịch sử Việt - Claude tự động làm kịch bản, edit video.. A-Z",
+        "duration": "10:52",
+        "clusterId": "triet-ly-lich-su-phat-phap",
+        "clusterName": "Triết Lý Sống, Tâm Linh & Lịch Sử Thường Ngày",
+        "transcriptSample": "Tiếp tục hôm nay thì em chia sẻ cho mấy bác một cái ngách mới ở thị trường Việt Nam ha. Thì ngách này làm về dạng bản đồ lịch sử Việt Nam nha mọi người. Thì kênh này hiện tại đang | chỉ mới là 8 video dài thôi. Mà kênh này mọi người thấy view đang rất là cao. ",
+        "transcriptWords": 2545,
+        "sopSummary": "primary: Cấu trúc chuẩn của một video thành phẩm ngách lịch sử bản đồ Việt Nam được dựng tự động từ kịch bản đến hình ảnh. | additional: ['Mở đầu bằng một nghịch lý địa lý hoặc câu hỏi lịch sử trực diện trên bản đồ để giữ chân khán giả ngay trong 60 giây đầu tiên.', 'Chia diễn biến lịch sử thành các",
+        "avoidFlags": [
+          "Liệt kê khô khan các mốc ngày tháng mà không gắn liền với sự dịch chuyển không gian trên bản đồ và bài toán hậu cần quân lương.",
+          "Bỏ qua việc đối chiếu bài học thực hành chi tiết tại VIDEO-9ff392 khi muốn tự tay vận hành bộ công cụ tạo ra video tương tự."
+        ],
+        "takeaways": [],
+        "attachedCount": 4
+      },
+      {
+        "sku": "VIDEO-448a91",
+        "title": "Thực chiến share ngách view ngoại Thị trường Nhật Bản - Tặng kèm skill edit video  |  Update 27-10-2026",
+        "duration": "24:33",
+        "clusterId": "triet-ly-lich-su-phat-phap",
+        "clusterName": "Triết Lý Sống, Tâm Linh & Lịch Sử Thường Ngày",
+        "transcriptSample": "Tiếp tục thì đây cũng là một cái dạng người que nhưng mà làm ở thị trường Nhật nha mấy bác. | Thì em cho mọi người xem qua kênh này. Kênh này thì họ dùng kênh 2025 nè, thị trường Nhật Bản nha. | Thì hôm nay em chỉ share cho mấy bác và cũng như là tặng cho mọi ",
+        "transcriptWords": 4912,
+        "sopSummary": "primary: Quy trình sản xuất tự động video kể chuyện cổ đại thị trường Nhật Bản theo mẫu kênh @kodaikaranotayori bằng Claude và h2-kodai-studio.plugin. | additional: ['Cài đặt tệp h2-kodai-studio.plugin vào Claude Desktop và khảo sát phong cách hình ảnh, tiêu đề của kênh đối thủ @kodaikaranotayori.',",
+        "avoidFlags": [
+          "Bỏ qua bước chạy câu lệnh T00 tạo ảnh tham chiếu nhân vật khiến ngoại hình nhân vật tiền sử bị biến đổi giữa các phân cảnh.",
+          "Đặt nhầm thư mục chứa ảnh ra bên ngoài thư mục dự án chính khiến lệnh /lam-video-kodai không tìm thấy nguồn ảnh khi đóng gói video."
+        ],
+        "takeaways": [],
+        "attachedCount": 5
+      },
+      {
+        "sku": "VIDEO-2d1a38",
+        "title": "Hướng dẫn Thực chiến ngách mới Thị trường Hoa Kỳ (US) + Tặng kèm Skill edit video tự động 100% giống đối thủ  |  Update 29-10-2026",
+        "duration": "35:21",
+        "clusterId": "triet-ly-lich-su-phat-phap",
+        "clusterName": "Triết Lý Sống, Tâm Linh & Lịch Sử Thường Ngày",
+        "transcriptSample": "Em chào tất cả mọi người nha. Tiếp tục hôm nay thì em sẽ hướng dẫn mọi người làm thêm một cái ngách mới ở thị trường U.S nữa nha. | Thì cái dạng này là cực kỳ ở trên nha. Mấy bác có thể nhìn thấy kênh này. Hiện tại là đang nêm video. Mọi người thấy view rất là",
+        "transcriptWords": 6840,
+        "sopSummary": "primary: Quy trình sản xuất tự động video lịch sử quân sự bản đồ địa hình 3D thị trường Hoa Kỳ theo mẫu @TerrainWalk bằng Claude và h2-terrain-studio.plugin. | additional: ['Cài đặt tệp h2-terrain-studio.plugin vào Claude Desktop và chuẩn bị thư mục làm việc cho dự án lịch sử quân sự Hoa Kỳ.', 'Gọi ",
+        "avoidFlags": [
+          "Làm trùng lặp các trận đánh mà kênh đối thủ @TerrainWalk vừa đăng tải thay vì để lệnh /kich-ban-terrain tự động quét và loại trừ.",
+          "Dựng bản đồ phẳng 2D thiếu thông số độ cao địa hình (như cao độ sườn đồi, thung lũng và tầm bắn pháo binh) làm mất đi bản sắc cốt lõi của ngách."
+        ],
+        "takeaways": [],
+        "attachedCount": 5
       }
     ]
   }

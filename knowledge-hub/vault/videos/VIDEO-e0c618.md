@@ -6,7 +6,7 @@ module_id: "HUAN-M06"
 module_title: "6. QUY TRÌNH ĐANG TẠO RA >1.000.000$ YOUTUBE"
 seq: "11"
 niche: "Chăm Sóc Tương Tác & Đặt Quảng Cáo Tối Ưu RPM"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "16:03"
 published_at: "2026-09-01"
 toolsCount: 8
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-e0c618&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M06|HUAN-M06 — 6. QUY TRÌNH ĐANG TẠO RA >1.000.000$ YOUTUBE]] (Bài `#11`)  
 > - **Ngách nội dung (Niche):** [[niches/cham-soc-tuong-tac-dat-quang-cao-toi-uu-rpm|Chăm Sóc Tương Tác & Đặt Quảng Cáo Tối Ưu RPM]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `16:03` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `16:03` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-e0c618&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-e0c618/README.md)
 
 ---

@@ -1,12 +1,12 @@
 ---
 handle: "@SOISANG"
-name: "Soi Sáng"
+name: "@SOISANG"
 url: "https://www.youtube.com/@SOISANG"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @SOISANG (Soi Sáng)
+# Kênh Đối Thủ / Kênh Mẫu: @SOISANG (@SOISANG)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@SOISANG](https://www.youtube.com/@SOISANG)

@@ -1,12 +1,12 @@
 ---
 handle: "@ApertureThinking"
-name: "Aperture (Kênh hình mẫu ngách Tổng hợp kiến thức / Facts)"
+name: "@ApertureThinking"
 url: "https://www.youtube.com/@ApertureThinking"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ApertureThinking (Aperture (Kênh hình mẫu ngách Tổng hợp kiến thức / Facts))
+# Kênh Đối Thủ / Kênh Mẫu: @ApertureThinking (@ApertureThinking)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ApertureThinking](https://www.youtube.com/@ApertureThinking)

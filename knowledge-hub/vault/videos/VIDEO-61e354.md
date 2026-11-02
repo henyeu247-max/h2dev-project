@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M03"
 module_title: "Module 2 — Tự tìm Key/ Ngách & Phân tích đối thủ"
 seq: "01"
-niche: "Sức Khỏe & Dinh Dưỡng"
+niche: "Nghiên Cứu Từ Khóa & Lọc Key View Ngoại"
 markets: ["🇺🇸 Mỹ", "🌐 Ngoại"]
 duration: "22:39"
 published_at: "2025-08-20"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-61e354&track=h2dev"
 # VIDEO-61e354 — Hướng Dẫn Tư Duy Tìm, Lọc Key Youtube View Ngoại, Xác Định Được Key Trends, Key Ngon
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M03|H2DEV-M03 — Module 2 — Tự tìm Key/ Ngách & Phân tích đối thủ]] (Bài `#01`)  
-> - **Ngách nội dung (Niche):** [[niches/suc-khoe-dinh-duong|Sức Khỏe & Dinh Dưỡng]]  
+> - **Ngách nội dung (Niche):** [[niches/nghien-cuu-tu-khoa-loc-key-view-ngoai|Nghiên Cứu Từ Khóa & Lọc Key View Ngoại]]  
 > - **Thị trường:** 🇺🇸 Mỹ · 🌐 Ngoại | **Thời lượng:** `22:39` | **Ngày đăng:** `2025-08-20`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-61e354&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-61e354/README.md)
 

@@ -7,7 +7,8 @@
            kenhHandle = /kenh-mau?handle=@x  (handle khop TUYET DOI)
            docDid   = /tai-lieu?did=DOC_n    (doc_id trong DB, de hien nhan + chan lech)
            docIdx   = /tai-lieu?di=<n>        (vi tri 0-based trong data-tabs/tai-lieu-full.json) */
-      rawRid: '', kenhHandle: '', docDid: '', docIdx: -1, sodoQ: '', sodoNode: '' };
+      rawRid: '', kenhHandle: '', docDid: '', docIdx: -1, sodoQ: '', sodoNode: '',
+      tatcaMarketsExpanded: false, tatcaNichesExpanded: false, tatcaRecentExpanded: false };
     // G3: taxonomy tach ra assets/app/taxonomy.js (window.H2Taxonomy)
     // G3: helpers tach ra assets/app/ui-core.js (window.H2UICore)
     const {
@@ -97,7 +98,7 @@
      * (tabMarkup / more-menu) khong phai biet gi ve he icon. */
     TABS.forEach(t => { t.icon = ico(t.icon, 16); });
 
-    const APP_BUILD_VER = '20261030-uifix97';
+    const APP_BUILD_VER = '20261031-uifix98';
     // G-std: fallback chain like FckSignups useTools (primary -> no-ver -> fail soft)
     const _loadErrors = [];
     function noteLoadError(path, msg) {
@@ -198,32 +199,39 @@
           liveChannels: aKenh.filter(k => k && !k.dead).length,
           deadChannels: aKenh.filter(k => k && k.dead).length,
           nguonReup: aReup.length,
-          totalVideoSizeMb: totalMb || 85122,
-          modulesTotal: 35,
+          totalVideoSizeMb: totalMb || 88174,
+          modulesTotal: 36,
           rawChannels: 156,
           rawDeepProfiles: 149
         };
       }
       const c = (raw && raw.counts) || raw || {};
       const st = (raw && raw.storage) || {};
-      const vH2Count = Number(c.videosH2dev ?? c.h2devVideos ?? c.videos ?? 148);
+      const vH2Count = Number(c.videosH2dev ?? c.h2devVideos ?? c.videos ?? 153);
       const vHuanCount = Number(c.videosHuan ?? c.huanVideos ?? 140);
-      const vDgmdCount = Number(c.videosDgmd ?? c.dgmdVideos ?? 45);
-      const totalVids = Number(c.totalVideos ?? c.videosTotal ?? (vH2Count + vHuanCount + vDgmdCount)) || 333;
+      const vDgmdCount = Number(c.videosDgmd ?? c.dgmdVideos ?? 52);
+      const totalVids = Number(c.totalVideos ?? c.videosTotal ?? (vH2Count + vHuanCount + vDgmdCount)) || 345;
       const summary = Object.assign({}, raw, {
         totalVideos: totalVids,
         videosH2dev: vH2Count,
         videosHuan: vHuanCount,
         videosDgmd: vDgmdCount,
-        documents: Number(c.documents ?? c.totalDocuments ?? c.taiLieu ?? 580),
+        documents: Number(c.documents ?? c.totalDocuments ?? c.taiLieu ?? 596),
         channels: Number(c.channels ?? c.totalChannels ?? c.kenhTotal ?? 1076),
         liveChannels: Number(c.liveChannels ?? c.kenhLive ?? 987),
         deadChannels: Number(c.deadChannels ?? c.kenhDead ?? 89),
         deadChannelsCount: Number(c.deadChannels ?? c.deadChannelsCount ?? c.kenhDead ?? 89),
         nguonReup: Number(c.nguonReup ?? c.reupSources ?? c.reupTotal ?? 52),
         reupSources: Number(c.nguonReup ?? c.reupSources ?? c.reupTotal ?? 52),
-        totalVideoSizeMb: Number(st.totalVideoSizeMb ?? st.diskMb ?? c.totalVideoSizeMb ?? c.diskMb ?? c.videoSizeMb ?? ((st.mediaBytes || c.mediaBytes) ? Math.round(Number(st.mediaBytes || c.mediaBytes) / (1024 * 1024)) : 85122.8)),
-        modulesTotal: Number(c.modulesTotal ?? c.modules ?? c.totalModules ?? 35),
+        totalVideoSizeMb: Number(st.totalVideoSizeMb ?? st.diskMb ?? c.totalVideoSizeMb ?? c.diskMb ?? c.videoSizeMb ?? ((st.mediaBytes || c.mediaBytes) ? Math.round(Number(st.mediaBytes || c.mediaBytes) / (1024 * 1024)) : 88174.2)),
+        modulesTotal: Number(c.modulesTotal ?? c.modules ?? c.totalModules ?? 36),
+        modulesH2dev: Number(c.modulesH2dev ?? 12),
+        modulesHuan: Number(c.modulesHuan ?? 13),
+        modulesDgmd: Number(c.modulesDgmd ?? 11),
+        musicTracks: Number(c.musicTracks ?? 49),
+        musicSafe: Number(c.musicSafe ?? 36),
+        chienLuocSteps: Number(c.chienLuocSteps ?? 24),
+        matrix144Words: Number(c.matrix144Words ?? 373559),
         rawChannels: Number(c.rawChannels ?? c.canonicalRaw ?? 156),
         rawDeepProfiles: Number(c.rawDeepProfiles ?? c.canonicalRawUniqueChannels ?? 149)
       });
@@ -346,6 +354,12 @@
       if (!topNav) return;
       const bar = document.getElementById('vd-topbar');
       const off = (bar ? bar.getBoundingClientRect().height : 0) + 12;
+      const pr = document.getElementById('panel-root');
+      if (pr && pr.scrollHeight > pr.clientHeight + 2) {
+        const prRect = pr.getBoundingClientRect();
+        const navRect = topNav.getBoundingClientRect();
+        pr.scrollTop = Math.max(0, pr.scrollTop + (navRect.top - prRect.top) - 16);
+      }
       window.scrollTo(0, Math.max(0, topNav.getBoundingClientRect().top + window.scrollY - off));
       const b = topNav.querySelector('button'); if (b) { try { b.focus({ preventScroll: true }); } catch (e2) {} }
     }
@@ -510,8 +524,19 @@
     function expandNicheMore(btn) {
       const wrap = btn.closest('[data-niche-list]');
       if (!wrap) return;
-      wrap.querySelectorAll('[data-more]').forEach(el => el.classList.remove('hidden'));
-      btn.remove();
+      const moreEls = [...wrap.querySelectorAll('[data-more]')];
+      if (!moreEls.length) return;
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+      const hiddenCount = Number(btn.getAttribute('data-hidden-count')) || moreEls.length;
+      if (isExpanded) {
+        moreEls.forEach(el => el.classList.add('hidden'));
+        btn.setAttribute('aria-expanded', 'false');
+        btn.textContent = `+ ${hiddenCount} video khác ▾`;
+      } else {
+        moreEls.forEach(el => el.classList.remove('hidden'));
+        btn.setAttribute('aria-expanded', 'true');
+        btn.textContent = 'Thu gọn ▴';
+      }
     }
     function quickAccessBar(options) {
       const items = (options && Array.isArray(options.items)) ? options.items.filter(Boolean) : [];
@@ -570,6 +595,7 @@
           const kind = btn.getAttribute('data-toggle-tatca-list');
           if (kind === 'markets') state.tatcaMarketsExpanded = !state.tatcaMarketsExpanded;
           else if (kind === 'niches') state.tatcaNichesExpanded = !state.tatcaNichesExpanded;
+          else if (kind === 'recent') state.tatcaRecentExpanded = !state.tatcaRecentExpanded;
           render();
         });
       });
@@ -582,6 +608,9 @@
             extra.kindFilter = btn.getAttribute('data-kind') || '';
             extra.docBranch = btn.getAttribute('data-doc-branch') || '';
             extra.promptNiche = btn.getAttribute('data-prompt-niche') || '';
+            extra.docDid = btn.getAttribute('data-doc-did') || '';
+            const rawDi = btn.getAttribute('data-doc-idx');
+            extra.docIdx = (rawDi !== null && rawDi !== '' && Number.isInteger(Number(rawDi))) ? Number(rawDi) : -1;
             extra.promptQ = '';
             extra.docPage = 1;
           }
@@ -619,7 +648,11 @@
             extra.watchFilter = btn.getAttribute('data-watch-filter') || '';
             extra.videoPage = 1;
           }
-          if (tab === 'kenh-mau') { extra.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; extra.kenhQ = ''; }
+          if (tab === 'kenh-mau') {
+            extra.kenhNiche = btn.getAttribute('data-kenh-niche') || '';
+            extra.kenhStatus = btn.getAttribute('data-kenh-status') || '';
+            extra.kenhQ = '';
+          }
           if (tab === 'sodo') {
             extra.sodoNode = btn.getAttribute('data-sodo-node') || '';
             extra.sodoQ = btn.getAttribute('data-sodo-q') || '';
@@ -1089,8 +1122,14 @@
       document.querySelectorAll('[data-reup-niche]').forEach(btn => { btn.onclick = () => { state.reupNiche = btn.getAttribute('data-reup-niche') || ''; syncReupUrl(); render(); }; });
       const rr = document.getElementById('freset-reup');
       if (rr) { rr.onclick = () => { state.reupQ = ''; state.reupType = ''; state.reupNiche = ''; syncReupUrl(); render(); }; }
-      document.querySelectorAll('[data-kenh-status]').forEach(btn => { btn.onclick = () => { state.kenhStatus = btn.getAttribute('data-kenh-status') || ''; state.kenhPage = 1; syncKenhUrl(); render(); }; });
-      document.querySelectorAll('[data-kenh-niche]').forEach(btn => { btn.onclick = () => { state.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; state.kenhPage = 1; syncKenhUrl(); render(); }; });
+      document.querySelectorAll('[data-kenh-status]').forEach(btn => {
+        if (btn.hasAttribute('data-open-tab')) return;
+        btn.onclick = () => { state.kenhStatus = btn.getAttribute('data-kenh-status') || ''; state.kenhPage = 1; syncKenhUrl(); render(); };
+      });
+      document.querySelectorAll('[data-kenh-niche]').forEach(btn => {
+        if (btn.hasAttribute('data-open-tab')) return;
+        btn.onclick = () => { state.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; state.kenhPage = 1; syncKenhUrl(); render(); };
+      });
       const rk = document.getElementById('freset-kenh');
       if (rk) { rk.onclick = () => { state.kenhQ = ''; state.kenhHandle = ''; state.kenhNiche = ''; state.kenhStatus = ''; state.kenhPage = 1; syncKenhUrl(); render(); }; }
       const rke = document.getElementById('freset-kenh-empty');
@@ -1177,6 +1216,45 @@
       document.querySelectorAll('[data-nx-tier]').forEach(btn => {
         btn.onclick = () => { state.nxTier = btn.getAttribute('data-nx-tier') || ''; state.nxPage = 1; syncNxPageUrl(); render(); };
       });
+      document.querySelectorAll('[data-nx-kpi-tier]').forEach(card => {
+        if (card.hasAttribute('data-open-tab')) return;
+        card.onclick = () => {
+          const targetTier = card.getAttribute('data-nx-kpi-tier') || '';
+          state.nxTier = (state.nxTier === targetTier) ? '' : targetTier;
+          state.nxPage = 1;
+          syncNxPageUrl();
+          render();
+        };
+      });
+      document.querySelectorAll('[data-nx-radar]').forEach(btn => {
+        btn.onclick = () => {
+          const rCode = (btn.getAttribute('data-nx-radar') || '').trim();
+          if (!rCode) return;
+          const isSame = String(state.nxQ || '').trim().toUpperCase() === rCode.toUpperCase();
+          state.nxQ = isSame ? '' : rCode;
+          state.nxTier = '';
+          state.nxMarket = '';
+          state.nxPage = 1;
+          syncNxPageUrl();
+          Promise.resolve(render()).then(() => {
+            if (!state.nxQ) return;
+            requestAnimationFrame(() => {
+              const cardEl = document.getElementById('niche-card-' + rCode.toUpperCase());
+              if (!cardEl) return;
+              const pr = document.getElementById('panel-root');
+              if (pr && pr.scrollHeight > pr.clientHeight + 2) {
+                const prRect = pr.getBoundingClientRect();
+                const cRect = cardEl.getBoundingClientRect();
+                pr.scrollTop = Math.max(0, pr.scrollTop + (cRect.top - prRect.top) - 16);
+              } else {
+                const bar = document.getElementById('vd-topbar');
+                const off = (bar ? bar.getBoundingClientRect().height : 0) + 12;
+                window.scrollTo(0, Math.max(0, cardEl.getBoundingClientRect().top + window.scrollY - off));
+              }
+            });
+          });
+        };
+      });
       document.querySelectorAll('[data-nx-market]').forEach(btn => {
         btn.onclick = () => { state.nxMarket = btn.getAttribute('data-nx-market') || ''; state.nxPage = 1; syncNxPageUrl(); render(); };
       });
@@ -1187,6 +1265,10 @@
       const fr_nx = document.getElementById('freset-nx');
       if (fr_nx) {
         fr_nx.onclick = () => { state.nxQ = ''; state.nxTier = ''; state.nxMarket = ''; state.nxLimit = 0; state.nxPage = 1; syncNxPageUrl(); render(); };
+      }
+      const fre_nx = document.getElementById('freset-nx-empty');
+      if (fre_nx) {
+        fre_nx.onclick = () => { state.nxQ = ''; state.nxTier = ''; state.nxMarket = ''; state.nxLimit = 0; state.nxPage = 1; syncNxPageUrl(); render(); };
       }
     }
 
@@ -1215,13 +1297,14 @@
         state.clSubTab = state.clSubTab || 'principles';
         const curTab = state.clSubTab;
         const isAll = curTab === 'all';
+        const mCount = Number((window._overviewSummaryCache && (window._overviewSummaryCache.videosH2dev || window._overviewSummaryCache.videos)) || 153);
         if (topbarSubnav) {
           topbarSubnav.innerHTML = quickAccessBar({
             id: 'strategy-quick-access', label: 'Nội dung chiến lược', mode: 'tab', className: 'quick-access--topbar',
             items: [
               { label: '4 Nguyên tắc', shortLabel: 'Nguyên tắc', active: curTab === 'principles', action: { type: 'strategy-tab', patch: { clSubTab: 'principles' } } },
               { label: 'Quy trình A–Z', shortLabel: 'Quy trình', active: curTab === 'workflow', action: { type: 'strategy-tab', patch: { clSubTab: 'workflow' } } },
-              { label: 'Ma trận 148 Bài', shortLabel: '148 Bài', active: curTab === 'matrix144', action: { type: 'strategy-tab', patch: { clSubTab: 'matrix144' } } },
+              { label: `Ma trận ${mCount} Bài`, shortLabel: `${mCount} Bài`, active: curTab === 'matrix144', action: { type: 'strategy-tab', patch: { clSubTab: 'matrix144' } } },
               { label: 'Phân bổ ngách', shortLabel: 'Ngách', active: curTab === 'distribution', action: { type: 'strategy-tab', patch: { clSubTab: 'distribution' } } },
               { label: 'YPP & Chính sách', shortLabel: 'YPP', active: curTab === 'policy', action: { type: 'strategy-tab', patch: { clSubTab: 'policy' } } },
               { label: 'Tất cả nội dung', shortLabel: 'Tất cả', active: isAll, action: { type: 'strategy-tab', patch: { clSubTab: 'all' } } }
@@ -1350,8 +1433,8 @@
         if (!window._cachedStatsText) {
           try {
             const ov = await loadOverviewSummary();
-            const totalVideos = Number(ov.totalVideos || ov.lessons || 333);
-            const totalDocs = Number(ov.documents || 580);
+            const totalVideos = Number(ov.totalVideos || ov.lessons || 345);
+            const totalDocs = Number(ov.documents || 596);
             const kenhLive = Number(ov.liveChannels || ov.channels || 987);
             window._cachedStatsText = totalVideos + " video · " + totalDocs + " TL · " + kenhLive + " kênh";
           } catch(e) {}
@@ -1406,9 +1489,22 @@
       state.skuFilter = (t === 'video') ? (qp.get('skus') || '') : '';
       state.watchFilter = (t === 'video') ? (qp.get('watch') || '') : '';
       state.freeOnly = (t === 'video') && qp.get('free') === '1';
+      function normNxMarketParam(val) {
+        const s = String(val || '').trim();
+        if (!s) return '';
+        const up = s.toUpperCase();
+        if (['US', 'JP', 'KR', 'VN', 'GLOBAL'].includes(up)) return up;
+        const low = s.toLowerCase();
+        if (/jp|nhật|japan/.test(low)) return 'JP';
+        if (/kr|hàn|korea/.test(low)) return 'KR';
+        if (/\bvn\b|việt|vietnam/.test(low)) return 'VN';
+        if (/\bus\b|\ben\b|mỹ|tiếng anh/.test(low)) return 'US';
+        if (/global|toàn cầu|khác|trung|china/.test(low)) return 'GLOBAL';
+        return up;
+      }
       state.nxQ = (t === 'ngachxanh') ? (qp.get('q') || qp.get('niche') || '') : '';
       state.nxTier = (t === 'ngachxanh') ? (qp.get('nt') || '') : '';
-      state.nxMarket = (t === 'ngachxanh') ? (qp.get('nxm') || qp.get('market') || '') : '';
+      state.nxMarket = (t === 'ngachxanh') ? normNxMarketParam(qp.get('nxm') || qp.get('market') || '') : '';
       state.nxLimit = (t === 'ngachxanh') ? (parseInt(qp.get('nxl'), 10) || 0) : 0;
       state.rawPage = (t === 'rawkenh') ? (parseInt(qp.get('page'), 10) || 1) : 1;
       state.videoPage = (t === 'video') ? (parseInt(qp.get('vp'), 10) || 1) : 1;

@@ -1,12 +1,12 @@
 ---
 handle: "@TuDuyDung"
-name: "Tư Duy Đúng"
+name: "@TuDuyDung"
 url: "https://www.youtube.com/@TuDuyDung"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TuDuyDung (Tư Duy Đúng)
+# Kênh Đối Thủ / Kênh Mẫu: @TuDuyDung (@TuDuyDung)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TuDuyDung](https://www.youtube.com/@TuDuyDung)

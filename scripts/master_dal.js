@@ -267,10 +267,11 @@ function searchFts(keyword, limit = 20) {
 // 7. Projection Exporter (Dumps tables back to data-tabs/ and catalog)
 function exportProjections() {
   const db = getMasterDb();
+  const liveC = computeCounts();
   try {
-    // Check if there are changes
-    const lessons = db.prepare(`SELECT * FROM lessons ORDER BY rowid ASC`).all();
-    if (lessons.length === C.videos) {
+    // Check if there are changes (filter H2DEV track lessons against liveC.videos)
+    const lessons = db.prepare(`SELECT * FROM lessons WHERE track = 'h2dev' ORDER BY rowid ASC`).all();
+    if (lessons.length === liveC.videos) {
       // Export videos.json projection format
       const videosJsonPath = path.join(ROOT, 'data-tabs', 'videos.json');
       const existingVideos = JSON.parse(fs.readFileSync(videosJsonPath, 'utf8'));

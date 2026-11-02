@@ -1,12 +1,12 @@
 ---
 handle: "@ZingMP3"
-name: "Zing MP3"
+name: "@ZingMP3"
 url: "https://www.youtube.com/@ZingMP3"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ZingMP3 (Zing MP3)
+# Kênh Đối Thủ / Kênh Mẫu: @ZingMP3 (@ZingMP3)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ZingMP3](https://www.youtube.com/@ZingMP3)

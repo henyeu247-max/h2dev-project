@@ -1,12 +1,12 @@
 ---
 handle: "@MasterPhungPhuong"
-name: "Master Phùng Phương (Phong thủy Phùng Gia)"
+name: "@MasterPhungPhuong"
 url: "https://www.youtube.com/@MasterPhungPhuong"
 status: "LIVE_HTTP_200"
 videos_count: 13
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @MasterPhungPhuong (Master Phùng Phương (Phong thủy Phùng Gia))
+# Kênh Đối Thủ / Kênh Mẫu: @MasterPhungPhuong (@MasterPhungPhuong)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@MasterPhungPhuong](https://www.youtube.com/@MasterPhungPhuong)

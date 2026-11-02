@@ -484,7 +484,7 @@
   // ============================================================================
   // MODE 2: OBSIDIAN NETWORK GRAPH CANVAS (EGO-CONSTELLATION + GALAXY CLUSTERS)
   // ============================================================================
-  let graphScope = 'ego'; // 'ego' (Mạch Tâm Điểm Rõ Nét) | 'galaxy' (Toàn Cảnh 4.198 Nút)
+  let graphScope = 'ego'; // 'ego' (Mạch Tâm Điểm Rõ Nét) | 'galaxy' (Toàn Cảnh 4.243 Nút)
   let egoPositions = new Map();
   let egoVisibleSet = new Set();
 
@@ -1396,7 +1396,11 @@
 
         if (statsBadge && data.stats) {
           const st = data.stats;
-          statsBadge.textContent = `Hệ thống 97yo-dev · ${st.projects || 17} Dự Án · 3 Nhánh (${st.videos || 333} Video) · ${st.policies || 12} Chính Sách · ${st.sops || 300} SOP · ${st.files || 891} File · ${st.totalNodes} Nút · ${st.totalEdges} Liên Kết`;
+          const totalVids = st.videos || ((st.videosH2dev || 0) + (st.videosHuan || 0) + (st.videosDgmd || 0)) || 345;
+          try {
+            document.title = `97yo-dev Nexus Graph — Hệ Thống Hóa Đa Dự Án & Bản Đồ Liên Kết ${totalVids} Video`;
+          } catch (_) {}
+          statsBadge.textContent = `Hệ thống 97yo-dev · ${st.projects || 17} Dự Án · 3 Nhánh (${totalVids} Video) · ${st.policies || 12} Chính Sách · ${st.sops || 596} SOP · ${st.files || 941} File · ${st.totalNodes} Nút · ${st.totalEdges} Liên Kết`;
           const btnMat = document.getElementById('btnModeMatrix');
           if (btnMat) btnMat.textContent = `3. Ma Trận ${st.projects || 17} Dự Án`;
           const fAll = document.querySelector('#kgTrackFilters button[data-track="all"]');
@@ -1413,20 +1417,20 @@
             btnGal.title = `Vẽ toàn cảnh ${fmtNodes} nút phân cụm theo Dự án & Nhánh đào tạo`;
           }
           if (fInf) fInf.textContent = `Hạ tầng ${st.projects || 17} Dự án (${st.infraNodes || 0})`;
-          if (fPol) fPol.textContent = `Chính sách & SOP (${(st.policies || 12) + (st.checklists || 12) + (st.sops || 300)})`;
-          if (fH2) fH2.textContent = `Nhánh H2DEV (${st.videosH2dev || 148})`;
+          if (fPol) fPol.textContent = `Chính sách & SOP (${(st.policies || 12) + (st.checklists || 12) + (st.sops || 596)})`;
+          if (fH2) fH2.textContent = `Nhánh H2DEV (${st.videosH2dev || 153})`;
           if (fHu) fHu.textContent = `Nhánh Huân (${st.videosHuan || 140})`;
-          if (fDg) fDg.textContent = `Nhánh DGMD (${st.videosDgmd || 45})`;
+          if (fDg) fDg.textContent = `Nhánh DGMD (${st.videosDgmd || 52})`;
           const legEl = document.getElementById('kgLegend');
           if (legEl) {
             legEl.innerHTML = [
               `<span><i class="kg-dot" style="background:#f97316;"></i>Dự án (${st.projects || 17})</span>`,
-              `<span><i class="kg-dot" style="background:#eab308;"></i>Nhánh Data / Module (${(st.domains || 0) + (st.modules || 35)})</span>`,
+              `<span><i class="kg-dot" style="background:#eab308;"></i>Nhánh Data / Module (${(st.domains || 0) + (st.modules || 36)})</span>`,
               `<span><i class="kg-dot" style="background:#f43f5e;"></i>Chính sách &amp; Checklist (${(st.policies || 12) + (st.checklists || 12)})</span>`,
               `<span><i class="kg-dot" style="background:#14b8a6;"></i>Thư mục / Ngách (${(st.directories || 0) + (st.niches || 0)})</span>`,
               `<span><i class="kg-dot" style="background:#60a5fa;"></i>File Thực Thi (${st.files || 0})</span>`,
-              `<span><i class="kg-dot" style="background:#38bdf8;"></i>Video SKU (${st.videos || 333})</span>`,
-              `<span><i class="kg-dot" style="background:#818cf8;"></i>Tài liệu SOP (${st.sops || 300})</span>`,
+              `<span><i class="kg-dot" style="background:#38bdf8;"></i>Video SKU (${totalVids})</span>`,
+              `<span><i class="kg-dot" style="background:#818cf8;"></i>Tài liệu SOP (${st.sops || 596})</span>`,
               `<span><i class="kg-dot" style="background:#a855f7;"></i>Công cụ (${st.tools || 204})</span>`,
               `<span><i class="kg-dot" style="background:#f472b6;"></i>Kênh Mẫu (${st.channels || 0})</span>`
             ].join('');

@@ -1,12 +1,12 @@
 ---
 handle: "@GrabOfficial"
-name: "Grab (Case study cải tiến mô hình 1-N và 1 x mũ n bằng nền tảng công nghệ & đòn bẩy truyền thông)"
+name: "@GrabOfficial"
 url: "https://www.youtube.com/@GrabOfficial"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @GrabOfficial (Grab (Case study cải tiến mô hình 1-N và 1 x mũ n bằng nền tảng công nghệ & đòn bẩy truyền thông))
+# Kênh Đối Thủ / Kênh Mẫu: @GrabOfficial (@GrabOfficial)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@GrabOfficial](https://www.youtube.com/@GrabOfficial)

@@ -1,16 +1,16 @@
 ---
 handle: "@DuocSiNguyenHien"
-name: "Dược sĩ Nguyễn Hiền (Kênh sức khỏe GODA)"
+name: "@DuocSiNguyenHien"
 url: "https://www.youtube.com/@DuocSiNguyenHien"
-status: "DEAD"
+status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @DuocSiNguyenHien (Dược sĩ Nguyễn Hiền (Kênh sức khỏe GODA))
+# Kênh Đối Thủ / Kênh Mẫu: @DuocSiNguyenHien (@DuocSiNguyenHien)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@DuocSiNguyenHien](https://www.youtube.com/@DuocSiNguyenHien)
-- **Trạng thái kiểm định:** `DEAD (Đã dừng / Gỡ)`
+- **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`
 

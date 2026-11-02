@@ -17,7 +17,7 @@ Dim httpCheck
 On Error Resume Next
 Set httpCheck = CreateObject("MSXML2.ServerXMLHTTP.6.0")
 If Not httpCheck Is Nothing Then
-  httpCheck.open "GET", "http://127.0.0.1:8899", False
+  httpCheck.open "GET", "http://127.0.0.1:8899/health", False
   httpCheck.setTimeouts 1000, 1000, 1000, 1000
   httpCheck.send
   If Err.Number = 0 And httpCheck.status >= 200 And httpCheck.status < 400 Then

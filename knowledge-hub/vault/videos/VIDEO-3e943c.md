@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M04"
 module_title: "Hướng dẫn quy trình dùng Claude AI làm YouTuBe"
 seq: "01"
-niche: "Prompt AI & Nhân Bản Kịch Bản"
+niche: "Kỹ Thuật AI & Hạ Tầng Công Cụ"
 markets: ["🌐 Ngoại"]
 duration: "4:42"
 published_at: "2026-05-16"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-3e943c&track=h2dev"
 # VIDEO-3e943c — Nên dùng bản web hay app? và giải thích nên dùng gói nào của Claude AI
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M04|H2DEV-M04 — Hướng dẫn quy trình dùng Claude AI làm YouTuBe]] (Bài `#01`)  
-> - **Ngách nội dung (Niche):** [[niches/prompt-ai-nhan-ban-kich-ban|Prompt AI & Nhân Bản Kịch Bản]]  
+> - **Ngách nội dung (Niche):** [[niches/ky-thuat-ai-ha-tang-cong-cu|Kỹ Thuật AI & Hạ Tầng Công Cụ]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `4:42` | **Ngày đăng:** `2026-05-16`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-3e943c&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-3e943c/README.md)
 

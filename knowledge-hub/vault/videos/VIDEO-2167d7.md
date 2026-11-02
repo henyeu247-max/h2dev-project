@@ -6,7 +6,7 @@ module_id: "HUAN-M01"
 module_title: "1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z"
 seq: "12"
 niche: "Luật Bản Quyền Fair Use & Bán Content"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "17:47"
 published_at: "2026-09-01"
 toolsCount: 12
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-2167d7&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M01|HUAN-M01 — 1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z]] (Bài `#12`)  
 > - **Ngách nội dung (Niche):** [[niches/luat-ban-quyen-fair-use-ban-content|Luật Bản Quyền Fair Use & Bán Content]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `17:47` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `17:47` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-2167d7&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-2167d7/README.md)
 
 ---

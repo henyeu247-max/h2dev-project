@@ -6,7 +6,7 @@ module_id: "HUAN-M06"
 module_title: "6. QUY TRÌNH ĐANG TẠO RA >1.000.000$ YOUTUBE"
 seq: "06"
 niche: "Quy trình sản xuất & Tư duy Shuhari"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "04:35"
 published_at: "2026-09-01"
 toolsCount: 1
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-e26a17&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M06|HUAN-M06 — 6. QUY TRÌNH ĐANG TẠO RA >1.000.000$ YOUTUBE]] (Bài `#06`)  
 > - **Ngách nội dung (Niche):** [[niches/quy-trinh-san-xuat-tu-duy-shuhari|Quy trình sản xuất & Tư duy Shuhari]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `04:35` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `04:35` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-e26a17&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-e26a17/README.md)
 
 ---

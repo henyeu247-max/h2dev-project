@@ -1,12 +1,12 @@
 ---
 handle: "@Sunhuyn"
-name: "Sunhuyn"
+name: "@Sunhuyn"
 url: "https://www.youtube.com/@Sunhuyn"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Sunhuyn (Sunhuyn)
+# Kênh Đối Thủ / Kênh Mẫu: @Sunhuyn (@Sunhuyn)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Sunhuyn](https://www.youtube.com/@Sunhuyn)

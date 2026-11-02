@@ -6,7 +6,7 @@ module_id: "DGMD-M08"
 module_title: "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1"
 seq: "01"
 niche: "Âm Nhạc Truyền Thống & Tâm Linh (Nhạc Chầu Văn AI)"
-markets: ["🇻🇳 Việt Nam"]
+markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
 duration: "13:16"
 published_at: "2026-10-12"
 toolsCount: 6
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-f2ebfb&track=dgmd"
 # VIDEO-f2ebfb — Quy Trình Sản Xuất Video Nhạc Chầu Văn
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M08|DGMD-M08 — BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/am-nhac-truyen-thong-tam-linh-nhac-chau-van-ai|Âm Nhạc Truyền Thống & Tâm Linh (Nhạc Chầu Văn AI)]]  
-> - **Thị trường:** 🇻🇳 Việt Nam | **Thời lượng:** `13:16` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `13:16` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-f2ebfb&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-f2ebfb/README.md)
 
 ---

@@ -6,7 +6,7 @@ module_id: "HUAN-M13"
 module_title: "CẢM NHẬN THỰC TẾ CỦA KHÓA OFFLINE"
 seq: "04"
 niche: "Quản Trị Hệ Thống Kênh Nút Vàng/Bạc & Huấn Luyện Đội Nhóm Chủ Động"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "02:37"
 published_at: "2026-09-01"
 toolsCount: 2
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-899ac6&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M13|HUAN-M13 — CẢM NHẬN THỰC TẾ CỦA KHÓA OFFLINE]] (Bài `#04`)  
 > - **Ngách nội dung (Niche):** [[niches/quan-tri-he-thong-kenh-nut-vang-bac-huan-luyen-doi-nhom-chu-dong|Quản Trị Hệ Thống Kênh Nút Vàng/Bạc & Huấn Luyện Đội Nhóm Chủ Động]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `02:37` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `02:37` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-899ac6&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-899ac6/README.md)
 
 ---
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-899ac6&track=huan"
 - Trong nghề YouTube, nghe người khác nói hay đọc tài liệu chỉ mang lại giả thuyết; chỉ khi trực tiếp đưa vào thử nghiệm (dùng thật, test thật trên kênh) mới xác định được chính xác công thức nào hiệu quả với đội nhóm của mình.
 - Nguyên lý 'Quả trứng vỡ từ bên trong là sự sống, vỡ từ bên ngoài là thức ăn' là kim chỉ nam để quản trị nhân sự: thay vì ép buộc nhân viên bằng mệnh lệnh hành chính từ bên ngoài, người Leader phải đánh thức khát vọng và tính tự chủ từ bên trong mỗi thành viên.
 - Cách học đem lại hiệu quả gấp 10 lần tại Huân Academy: Bắt buộc phải xem hết toàn bộ chuỗi video trong khóa học Online và ghi chép cẩn thận ra sổ tay trước; khi đến lớp Offline hoặc buổi Zoom chuyên sâu, mọi mảnh ghép chiến lược sẽ lập tức khớp nối hoàn hảo.
+- Trong buổi học ngày hôm qua và hôm nay thì em đúc kết lại bằng 2 từ, đấy là tuyệt vời ạ.
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình 5 bước học tập chuyển hóa và vận hành đội nhóm săn Nút Bạc / Nút Vàng theo phương pháp của Đỗ Phương Hảo:

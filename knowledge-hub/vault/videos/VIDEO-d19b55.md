@@ -6,7 +6,7 @@ module_id: "DGMD-M05"
 module_title: "COMBO 3 QUY TRÌNH VIEW NGOẠI 2"
 seq: "02"
 niche: "Hoạt Hình 3D Tập Yoga & Sức Khỏe (Kids / Character Yoga)"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
+markets: ["🌍 View Ngoại"]
 duration: "21:25"
 published_at: "2026-10-12"
 toolsCount: 9
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-d19b55&track=dgmd"
 # VIDEO-d19b55 — Quy Trình Sản Xuất Video Sức Khỏe Yoga
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M05|DGMD-M05 — COMBO 3 QUY TRÌNH VIEW NGOẠI 2]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/hoat-hinh-3d-tap-yoga-suc-khoe-kids-character-yoga|Hoạt Hình 3D Tập Yoga & Sức Khỏe (Kids / Character Yoga)]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `21:25` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại | **Thời lượng:** `21:25` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-d19b55&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-d19b55/README.md)
 
 ---
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-d19b55&track=dgmd"
 - Sử dụng câu lệnh chuẩn để yêu cầu AI liệt kê chi tiết các động tác yoga/giãn cơ kèm lời dẫn hướng dẫn tập luyện từng bước.
 - Tạo nhạc nền thư giãn bằng Suno và dùng giọng đọc AI truyền cảm cho phần lời dẫn mở đầu bằng tiếng Việt ('Chỉ cần 5 phút mỗi ngày...').
 - Đưa hình ảnh động tác, giọng đọc và nhạc nền vào CapCut, tách nền nhân vật đặt lên thảm tập và thêm đồng hồ đếm ngược cho từng bài tập.
+- Chào anh chị em học viên. Hôm nay chúng ta đến với bài học yoga. Và đến với bài học này thì một bài
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình 3 bước sản xuất video Hoạt Hình 3D Tập Yoga bằng ChatGPT, Google Flow, Grok Imagine, Suno AI & CapCut PC

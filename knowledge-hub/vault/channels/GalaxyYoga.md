@@ -1,12 +1,12 @@
 ---
 handle: "@GalaxyYoga"
-name: "Galaxy Yoga"
+name: "@GalaxyYoga"
 url: "https://www.youtube.com/@GalaxyYoga"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @GalaxyYoga (Galaxy Yoga)
+# Kênh Đối Thủ / Kênh Mẫu: @GalaxyYoga (@GalaxyYoga)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@GalaxyYoga](https://www.youtube.com/@GalaxyYoga)

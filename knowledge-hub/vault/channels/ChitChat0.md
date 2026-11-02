@@ -1,12 +1,12 @@
 ---
 handle: "@ChitChat0"
-name: "ChitChat English"
+name: "@ChitChat0"
 url: "https://www.youtube.com/@ChitChat0"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ChitChat0 (ChitChat English)
+# Kênh Đối Thủ / Kênh Mẫu: @ChitChat0 (@ChitChat0)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ChitChat0](https://www.youtube.com/@ChitChat0)

@@ -6,7 +6,7 @@ module_id: "HUAN-M03"
 module_title: "3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY"
 seq: "04"
 niche: "Ngòi nổ nội dung (Nhân tố X) & Công thức Video Triệu View"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "31:14"
 published_at: "2026-09-01"
 toolsCount: 6
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-49a108&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M03|HUAN-M03 — 3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY]] (Bài `#04`)  
 > - **Ngách nội dung (Niche):** [[niches/ngoi-no-noi-dung-nhan-to-x-cong-thuc-video-trieu-view|Ngòi nổ nội dung (Nhân tố X) & Công thức Video Triệu View]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `31:14` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `31:14` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-49a108&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-49a108/README.md)
 
 ---

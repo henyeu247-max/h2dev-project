@@ -1,12 +1,12 @@
 ---
 handle: "@wisdom_insights"
-name: "Wisdom Insights"
+name: "@wisdom_insights"
 url: "https://www.youtube.com/@wisdom_insights"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @wisdom_insights (Wisdom Insights)
+# Kênh Đối Thủ / Kênh Mẫu: @wisdom_insights (@wisdom_insights)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@wisdom_insights](https://www.youtube.com/@wisdom_insights)

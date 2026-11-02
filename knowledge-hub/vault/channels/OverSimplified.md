@@ -1,12 +1,12 @@
 ---
 handle: "@OverSimplified"
-name: "OverSimplified"
+name: "@OverSimplified"
 url: "https://www.youtube.com/@OverSimplified"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @OverSimplified (OverSimplified)
+# Kênh Đối Thủ / Kênh Mẫu: @OverSimplified (@OverSimplified)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@OverSimplified](https://www.youtube.com/@OverSimplified)

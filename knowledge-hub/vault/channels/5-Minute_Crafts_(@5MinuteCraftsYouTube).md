@@ -1,15 +1,15 @@
 ---
 handle: "@5-Minute Crafts (@5MinuteCraftsYouTube)"
-name: "5-Minute Crafts (@5MinuteCraftsYouTube)"
-url: "https://www.youtube.com/@5MinuteCraftsYouTube"
+name: "@5-Minute Crafts (@5MinuteCraftsYouTube)"
+url: "https://www.youtube.com/@5-Minute%20Crafts%20(%405MinuteCraftsYouTube)"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @5-Minute Crafts (@5MinuteCraftsYouTube) (5-Minute Crafts (@5MinuteCraftsYouTube))
+# Kênh Đối Thủ / Kênh Mẫu: @5-Minute Crafts (@5MinuteCraftsYouTube) (@5-Minute Crafts (@5MinuteCraftsYouTube))
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/@5MinuteCraftsYouTube](https://www.youtube.com/@5MinuteCraftsYouTube)
+- **URL YouTube:** [https://www.youtube.com/@5-Minute%20Crafts%20(%405MinuteCraftsYouTube)](https://www.youtube.com/@5-Minute%20Crafts%20(%405MinuteCraftsYouTube))
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

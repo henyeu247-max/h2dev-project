@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "04"
-niche: "Triết Lý & Phật Pháp Việt Nam"
+niche: "Tâm Linh & Lời Phật Dạy View Việt"
 markets: ["🇻🇳 Việt"]
 duration: "9:41"
 published_at: "2026-08-08"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-484f9e&track=h2dev"
 # VIDEO-484f9e — Ngách nhỏ bán content thị trường Việt và Cách edit hạn chế lỗi quét do AI mới nhất hiện tại
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#04`)  
-> - **Ngách nội dung (Niche):** [[niches/triet-ly-phat-phap-viet-nam|Triết Lý & Phật Pháp Việt Nam]]  
+> - **Ngách nội dung (Niche):** [[niches/tam-linh-loi-phat-day-view-viet|Tâm Linh & Lời Phật Dạy View Việt]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `9:41` | **Ngày đăng:** `2026-08-08`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-484f9e&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-484f9e/README.md)
 

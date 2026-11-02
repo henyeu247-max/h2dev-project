@@ -1,17 +1,17 @@
 ---
 tool_slug: "youtube"
 tool_name: "YouTube"
-videos_count: 200
+videos_count: 209
 tracks: ["h2dev", "huan", "dgmd"]
 ---
 
 # Công Cụ Thực Chiến: YouTube
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **Số bài giảng sử dụng công cụ này:** `200` video
+- **Số bài giảng sử dụng công cụ này:** `209` video
 - **Tracks:** `H2DEV`, `HUAN`, `DGMD`
 
-## Danh Sách Bài Giảng Ứng Dụng YouTube (200)
+## Danh Sách Bài Giảng Ứng Dụng YouTube (209)
 - [[videos/VIDEO-9873fb|VIDEO-9873fb — Khám kênh thực tế thành viên Pro sau video đầu tiên – Phân tích dữ liệu và hướng dẫn áp dụng tư duy nhân bản thị trường để phát triển kênh]] (`H2DEV`)
 - [[videos/VIDEO-4425fc|VIDEO-4425fc — Hướng dẫn Fix và giải thích cách tạo tài khoản Google Adsense (GA) an toàn, trâu nhất để không bị quét]] (`H2DEV`)
 - [[videos/VIDEO-d84a78|VIDEO-d84a78 — HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN]] (`H2DEV`)
@@ -85,6 +85,8 @@ tracks: ["h2dev", "huan", "dgmd"]
 - [[videos/VIDEO-44cf22|VIDEO-44cf22 — Share key và giải thích về chủ đề rpm cao ở các thị trường - UPDATE 23/5]] (`H2DEV`)
 - [[videos/VIDEO-5cb825|VIDEO-5cb825 — Share Key Và Hướng Dẫn Làm Youtube View Ngoại Và Prompt Lấy + Tạo Kịch Bản Từ Kênh Đối Thủ]] (`H2DEV`)
 - [[videos/VIDEO-73d98a|VIDEO-73d98a — Update key (ngách cực nhỏ) mới nhất 06-09-2026]] (`H2DEV`)
+- [[videos/VIDEO-bfabb6|VIDEO-bfabb6 — Hướng dẫn làm Tự động hóa ngách người que view Việt bằng Claude KHÔNG ĐỤNG tới Capcut, 100% edit giống đối thủ  |  Update 23-10-2026 ]] (`H2DEV`)
+- [[videos/VIDEO-9ff392|VIDEO-9ff392 — Thực chiến share ngách lịch sử Việt Nam hướng dẫn làm + kèm Skill ( Claude tự động edit video ) |  Update 25-10-2026]] (`H2DEV`)
 - [[videos/VIDEO-9ea5e3|VIDEO-9ea5e3 — TÚT (MẸO) HƯỚNG DẪN CÁCH KHẮC PHỤC GÃY VIEW MỚI NHẤT 2026]] (`H2DEV`)
 - [[videos/VIDEO-9a4ddc|VIDEO-9a4ddc — TÚT/ TRICK (mẹo) test bản quyền khi reup - bán content dạng nguồn từ douyin sang youtube]] (`H2DEV`)
 - [[videos/ZOOM-01-Nen-tang-moi-truong|ZOOM-01-Nen-tang-moi-truong — Zoom 01 — Nền tảng & Môi trường: Proxy, Gmail, Tạo kênh, Ngâm kênh]] (`H2DEV`)
@@ -194,17 +196,20 @@ tracks: ["h2dev", "huan", "dgmd"]
 - [[videos/VIDEO-f97cd2|VIDEO-f97cd2 — Quy Trình Sản Xuất Video 1000 Người Đăng Ký Nhanh Nhất]] (`DGMD`)
 - [[videos/VIDEO-a18f2a|VIDEO-a18f2a — Quy Trình Sản Xuất Video Sự Khác Nhau Là Gì ?]] (`DGMD`)
 - [[videos/VIDEO-38145b|VIDEO-38145b — Hướng dẫn kháng kênh youtube bị xóa]] (`DGMD`)
+- [[videos/VIDEO-583a09|VIDEO-583a09 — Khắc phục tình trạng 0 view để tạo kênh mới ]] (`DGMD`)
 - [[videos/VIDEO-d4f7e6|VIDEO-d4f7e6 — Quy Trình Sản Xuất Video Jesus Shorts ]] (`DGMD`)
 - [[videos/VIDEO-dd1345|VIDEO-dd1345 — Quy Trình Sản Xuất Video Doyin]] (`DGMD`)
 - [[videos/VIDEO-ab68db|VIDEO-ab68db — Quy Trình Sản Xuất Video Nhạc Cổ Trung Hoa]] (`DGMD`)
 - [[videos/VIDEO-d19b55|VIDEO-d19b55 — Quy Trình Sản Xuất Video Sức Khỏe Yoga]] (`DGMD`)
 - [[videos/VIDEO-54dd2a|VIDEO-54dd2a — Quy Trình Sản Xuất Video Xếp Hạng Shorts]] (`DGMD`)
 - [[videos/VIDEO-bfdec7|VIDEO-bfdec7 — Quy Trình Sản Xuất Video Biến Đổi Nhân Vật View Nhật]] (`DGMD`)
+- [[videos/VIDEO-7e6773|VIDEO-7e6773 — Quy Trình Sản Xuất Video Ghibli ASMR ]] (`DGMD`)
 - [[videos/VIDEO-f2ebfb|VIDEO-f2ebfb — Quy Trình Sản Xuất Video Nhạc Chầu Văn]] (`DGMD`)
 - [[videos/VIDEO-043b07|VIDEO-043b07 — Quy Trình Sản Xuất Video Nhạc Xẩm]] (`DGMD`)
 - [[videos/VIDEO-2b7592|VIDEO-2b7592 — Quy Trình Sản Xuất Video Review Phim]] (`DGMD`)
 - [[videos/VIDEO-3b377d|VIDEO-3b377d — Quy Trình Sản Xuất Video Lời Phật Dạy]] (`DGMD`)
 - [[videos/VIDEO-11a507|VIDEO-11a507 — Quy Trình Sản Xuất Video AUDIO]] (`DGMD`)
+- [[videos/VIDEO-e02e02|VIDEO-e02e02 — Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay]] (`DGMD`)
 - [[videos/VIDEO-d8c6a8|VIDEO-d8c6a8 — Quy Trình Sản Xuất Video Bắt Nhịp Đọc Theo Chữ]] (`DGMD`)
 - [[videos/VIDEO-10991e|VIDEO-10991e — Quy Trình Sản Xuất Video Có Sẵn Trên Nền Tảng Tiktok Bằng Máy Tính]] (`DGMD`)
 - [[videos/VIDEO-0056a9|VIDEO-0056a9 — Quy Trình Sản Xuất Video Có Sẵn Trên Nền Tảng Tiktok Bằng Điện Thoại]] (`DGMD`)
@@ -212,3 +217,7 @@ tracks: ["h2dev", "huan", "dgmd"]
 - [[videos/VIDEO-743af8|VIDEO-743af8 — Tư Duy Tìm Từ Khóa Trước Khi Sản Xuất Video]] (`DGMD`)
 - [[videos/VIDEO-e3bcfa|VIDEO-e3bcfa — Cách Dùng Hashtag Đúng Để YouTube Hiểu Nội Dung Video]] (`DGMD`)
 - [[videos/VIDEO-136554|VIDEO-136554 — Khai Thác Google Trends Để Tìm Chủ Đề Viral]] (`DGMD`)
+- [[videos/VIDEO-434f80|VIDEO-434f80 — Quy Trình Sản Xuất Video PHIM AI VIỆT ]] (`DGMD`)
+- [[videos/VIDEO-ca0383|VIDEO-ca0383 — Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1]] (`DGMD`)
+- [[videos/VIDEO-7112d8|VIDEO-7112d8 — Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast]] (`DGMD`)
+- [[videos/VIDEO-0419c4|VIDEO-0419c4 — Quy Trình Sản Xuất Video  MAMA CAT ASMR ]] (`DGMD`)

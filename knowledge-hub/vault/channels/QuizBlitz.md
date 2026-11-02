@@ -1,12 +1,12 @@
 ---
 handle: "@QuizBlitz"
-name: "Quiz Blitz"
+name: "@QuizBlitz"
 url: "https://www.youtube.com/@QuizBlitz"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @QuizBlitz (Quiz Blitz)
+# Kênh Đối Thủ / Kênh Mẫu: @QuizBlitz (@QuizBlitz)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@QuizBlitz](https://www.youtube.com/@QuizBlitz)

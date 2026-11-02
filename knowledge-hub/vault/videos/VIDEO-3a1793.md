@@ -6,7 +6,7 @@ module_id: "HUAN-M13"
 module_title: "CẢM NHẬN THỰC TẾ CỦA KHÓA OFFLINE"
 seq: "06"
 niche: "Chuyển Hóa Thương Hiệu Cá Nhân Sang Hệ Thống Nhân Bản & Tầm Vóc Quốc Tế"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "05:08"
 published_at: "2026-09-01"
 toolsCount: 3
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-3a1793&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M13|HUAN-M13 — CẢM NHẬN THỰC TẾ CỦA KHÓA OFFLINE]] (Bài `#06`)  
 > - **Ngách nội dung (Niche):** [[niches/chuyen-hoa-thuong-hieu-ca-nhan-sang-he-thong-nhan-ban-tam-voc-quoc-te|Chuyển Hóa Thương Hiệu Cá Nhân Sang Hệ Thống Nhân Bản & Tầm Vóc Quốc Tế]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `05:08` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `05:08` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-3a1793&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-3a1793/README.md)
 
 ---
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-3a1793&track=huan"
 - Sự kết hợp giữa khóa học Online (để tra cứu, xem đi xem lại từng bước kỹ thuật mỗi khi quên) và sự kiện Offline (để mở rộng tầm nhìn chiến lược, giải quyết bài toán nhân bản hệ thống) tạo nên lộ trình hoàn chỉnh cho cả người mới lẫn chuyên gia.
 - Dưới góc nhìn của một người từng trực tiếp tham dự hội nghị Affiliate World tại Bangkok (Thái Lan) — nơi quy tụ các diễn giả triệu đô toàn cầu, Dương K đánh giá chương trình YouTube Total Success của Nguyễn Văn Huân tại Việt Nam có chất lượng chuyên môn, quy mô và sự cho đi sánh ngang các sự kiện quốc tế.
 - Để vượt qua giới hạn của kênh thương hiệu cá nhân, nhà sáng tạo bắt buộc phải đóng gói kiến thức thành quy trình chuẩn (SOP) và mở rộng sang mô hình kênh Faceless để đội ngũ nhân sự có thể vận hành song song.
+- Hello mọi người, xin chào mọi người, mình tên là Dương ạ.
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình 5 bước chuyển hóa từ Kênh Thương Hiệu Cá Nhân tự phát sang Hệ Thống Kênh Nhân Bản bài bản:

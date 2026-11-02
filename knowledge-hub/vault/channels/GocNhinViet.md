@@ -1,12 +1,12 @@
 ---
 handle: "@GocNhinViet"
-name: "Góc Nhìn Việt"
+name: "@GocNhinViet"
 url: "https://www.youtube.com/@GocNhinViet"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @GocNhinViet (Góc Nhìn Việt)
+# Kênh Đối Thủ / Kênh Mẫu: @GocNhinViet (@GocNhinViet)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@GocNhinViet](https://www.youtube.com/@GocNhinViet)

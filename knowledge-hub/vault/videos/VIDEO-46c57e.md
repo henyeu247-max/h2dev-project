@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M01"
 module_title: "Xử lý & Kháng lỗi kênh YouTube"
 seq: "04"
-niche: "Kháng Bản Quyền & Xử Lý Lỗi GA"
+niche: "Kháng nghị & Chính sách YouTube"
 markets: ["🌐 Ngoại"]
 duration: "2:56"
 published_at: "2026-05-08"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-46c57e&track=h2dev"
 # VIDEO-46c57e — KHÁNG LỖI SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG MỚI NHẤT 2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M01|H2DEV-M01 — Xử lý & Kháng lỗi kênh YouTube]] (Bài `#04`)  
-> - **Ngách nội dung (Niche):** [[niches/khang-ban-quyen-xu-ly-loi-ga|Kháng Bản Quyền & Xử Lý Lỗi GA]]  
+> - **Ngách nội dung (Niche):** [[niches/khang-nghi-chinh-sach-youtube|Kháng nghị & Chính sách YouTube]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `2:56` | **Ngày đăng:** `2026-05-08`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-46c57e&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-46c57e/README.md)
 

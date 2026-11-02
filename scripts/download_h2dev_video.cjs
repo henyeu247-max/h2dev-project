@@ -237,7 +237,7 @@ async function main() {
   const targetMp4 = path.join(targetDir, `${SKU}.mp4`);
 
   console.log(`Step 7: Remuxing to MP4 via FFmpeg: ${targetMp4}...`);
-  execSync(`"${FFMPEG}" -y -i "${mergedTsPath}" -c copy "${targetMp4}"`, { stdio: 'inherit' });
+  execSync(`"${FFMPEG}" -y -i "${mergedTsPath}" -c copy -movflags +faststart "${targetMp4}"`, { stdio: 'inherit' });
 
   // 11. Verify with FFprobe
   console.log('Step 8: Verifying with FFprobe...');

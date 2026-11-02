@@ -5,12 +5,12 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "84"
-niche: "Sức Khỏe & Dinh Dưỡng"
+niche: "Phân Tích Chủ Đề RPM Cao Đa Thị Trường"
 markets: ["🇻🇳 Việt", "🌐 Ngoại"]
 duration: "11:54"
 published_at: "2025-08-19"
 toolsCount: 2
-channelsCount: 0
+channelsCount: 7
 docsCount: 3
 player_url: "/player.html?sku=VIDEO-44cf22&track=h2dev"
 ---
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-44cf22&track=h2dev"
 # VIDEO-44cf22 — Share key và giải thích về chủ đề rpm cao ở các thị trường - UPDATE 23/5
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#84`)  
-> - **Ngách nội dung (Niche):** [[niches/suc-khoe-dinh-duong|Sức Khỏe & Dinh Dưỡng]]  
+> - **Ngách nội dung (Niche):** [[niches/phan-tich-chu-de-rpm-cao-da-thi-truong|Phân Tích Chủ Đề RPM Cao Đa Thị Trường]]  
 > - **Thị trường:** 🇻🇳 Việt · 🌐 Ngoại | **Thời lượng:** `11:54` | **Ngày đăng:** `2025-08-19`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-44cf22&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-44cf22/README.md)
 
@@ -50,7 +50,13 @@ player_url: "/player.html?sku=VIDEO-44cf22&track=h2dev"
 - [[tools/vidiq|vidIQ]]
 
 ## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)
-- *(Bài học tập trung vào tư duy/kỹ thuật nền tảng, không gắn kênh đối thủ cụ thể)*
+- [[channels/DepthPsychologyHub|@DepthPsychologyHub]]
+- [[channels/TríTuệCóẢnhHưởng|@TríTuệCóẢnhHưởng]]
+- [[channels/SoyMenteFuerte|@SoyMenteFuerte]]
+- [[channels/MentalDoseEn|@MentalDoseEn]]
+- [[channels/WiseEldersyt|@WiseEldersyt]]
+- [[channels/Revenge_with_Jake|@Revenge_with_Jake]]
+- [[channels/LifeAdviceForYouyt|@LifeAdviceForYouyt]]
 
 ## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)
 - **Hồ sơ phân tích & SOP thực chiến: Share key và giải thích về chủ đề rpm cao ở các thị trường - UPDATE 23/5 (README.md):** `docs/VIDEO-44cf22/README.md`

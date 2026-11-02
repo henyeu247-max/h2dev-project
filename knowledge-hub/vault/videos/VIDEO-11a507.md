@@ -6,7 +6,7 @@ module_id: "DGMD-M08"
 module_title: "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1"
 seq: "05"
 niche: "Truyện Audio Drama Tâm Lý & Ngôn Tình (Video Dài 16–60 Phút)"
-markets: ["🇻🇳 Việt Nam"]
+markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
 duration: "19:28"
 published_at: "2026-10-12"
 toolsCount: 9
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-11a507&track=dgmd"
 # VIDEO-11a507 — Quy Trình Sản Xuất Video AUDIO
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M08|DGMD-M08 — BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1]] (Bài `#05`)  
 > - **Ngách nội dung (Niche):** [[niches/truyen-audio-drama-tam-ly-ngon-tinh-video-dai-16-60-phut|Truyện Audio Drama Tâm Lý & Ngôn Tình (Video Dài 16–60 Phút)]]  
-> - **Thị trường:** 🇻🇳 Việt Nam | **Thời lượng:** `19:28` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `19:28` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-11a507&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-11a507/README.md)
 
 ---

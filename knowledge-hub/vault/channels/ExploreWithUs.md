@@ -1,12 +1,12 @@
 ---
 handle: "@ExploreWithUs"
-name: "EXPLORE WITH US"
+name: "@ExploreWithUs"
 url: "https://www.youtube.com/@ExploreWithUs"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ExploreWithUs (EXPLORE WITH US)
+# Kênh Đối Thủ / Kênh Mẫu: @ExploreWithUs (@ExploreWithUs)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ExploreWithUs](https://www.youtube.com/@ExploreWithUs)

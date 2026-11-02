@@ -1,12 +1,12 @@
 ---
 handle: "@ManhOTo"
-name: "Mạnh Ô Tô"
+name: "@ManhOTo"
 url: "https://www.youtube.com/@ManhOTo"
 status: "LIVE_HTTP_200"
 videos_count: 4
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ManhOTo (Mạnh Ô Tô)
+# Kênh Đối Thủ / Kênh Mẫu: @ManhOTo (@ManhOTo)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ManhOTo](https://www.youtube.com/@ManhOTo)

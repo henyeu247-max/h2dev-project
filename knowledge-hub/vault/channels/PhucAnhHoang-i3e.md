@@ -1,12 +1,12 @@
 ---
 handle: "@PhucAnhHoang-i3e"
-name: "Phuc Anh Hoang"
+name: "@PhucAnhHoang-i3e"
 url: "https://www.youtube.com/@PhucAnhHoang-i3e"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @PhucAnhHoang-i3e (Phuc Anh Hoang)
+# Kênh Đối Thủ / Kênh Mẫu: @PhucAnhHoang-i3e (@PhucAnhHoang-i3e)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@PhucAnhHoang-i3e](https://www.youtube.com/@PhucAnhHoang-i3e)

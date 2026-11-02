@@ -1,12 +1,12 @@
 ---
 handle: "@5PhutThuCong"
-name: "5 Phút Thủ Công"
+name: "@5PhutThuCong"
 url: "https://www.youtube.com/@5PhutThuCong"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @5PhutThuCong (5 Phút Thủ Công)
+# Kênh Đối Thủ / Kênh Mẫu: @5PhutThuCong (@5PhutThuCong)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@5PhutThuCong](https://www.youtube.com/@5PhutThuCong)

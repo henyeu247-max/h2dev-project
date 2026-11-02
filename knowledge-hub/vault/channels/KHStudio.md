@@ -1,16 +1,16 @@
 ---
 handle: "@KHStudio"
-name: "KH Studio"
+name: "@KHStudio"
 url: "https://www.youtube.com/@KHStudio"
-status: "DEAD"
+status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @KHStudio (KH Studio)
+# Kênh Đối Thủ / Kênh Mẫu: @KHStudio (@KHStudio)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@KHStudio](https://www.youtube.com/@KHStudio)
-- **Trạng thái kiểm định:** `DEAD (Đã dừng / Gỡ)`
+- **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`
 

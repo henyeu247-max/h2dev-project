@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-e9e879&track=h2dev"
 # VIDEO-e9e879 — Thực chiến & Show kênh ngách làm reup mới bật kiếm tiền - Full quy trình thực chiến sản xuất video -> đăng video lên kênh không che 
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#26`)  
 > - **Ngách nội dung (Niche):** [[niches/reup-khai-thac-hoat-hinh|Reup & Khai Thác Hoạt Hình]]  
 > - **Thị trường:** 🇨🇳 Trung | **Thời lượng:** `10:02` | **Ngày đăng:** `2026-05-11`  

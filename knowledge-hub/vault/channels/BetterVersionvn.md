@@ -1,12 +1,12 @@
 ---
 handle: "@BetterVersionvn"
-name: "Better Version"
+name: "@BetterVersionvn"
 url: "https://www.youtube.com/@BetterVersionvn"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @BetterVersionvn (Better Version)
+# Kênh Đối Thủ / Kênh Mẫu: @BetterVersionvn (@BetterVersionvn)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@BetterVersionvn](https://www.youtube.com/@BetterVersionvn)

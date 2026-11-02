@@ -1,12 +1,12 @@
 ---
 handle: "@thanhhieumangdep"
-name: "Thành Hiếu Mang Dép"
+name: "@thanhhieumangdep"
 url: "https://www.youtube.com/@thanhhieumangdep"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @thanhhieumangdep (Thành Hiếu Mang Dép)
+# Kênh Đối Thủ / Kênh Mẫu: @thanhhieumangdep (@thanhhieumangdep)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@thanhhieumangdep](https://www.youtube.com/@thanhhieumangdep)

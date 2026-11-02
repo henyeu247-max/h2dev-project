@@ -1,12 +1,12 @@
 ---
 handle: "@Oogway_Ranks"
-name: "Oogway Ranks"
+name: "@Oogway_Ranks"
 url: "https://www.youtube.com/@Oogway_Ranks"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Oogway_Ranks (Oogway Ranks)
+# Kênh Đối Thủ / Kênh Mẫu: @Oogway_Ranks (@Oogway_Ranks)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Oogway_Ranks](https://www.youtube.com/@Oogway_Ranks)

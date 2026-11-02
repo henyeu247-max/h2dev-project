@@ -1,12 +1,12 @@
 ---
 handle: "@GiangVenus"
-name: "Giang Venus"
+name: "@GiangVenus"
 url: "https://www.youtube.com/@GiangVenus"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @GiangVenus (Giang Venus)
+# Kênh Đối Thủ / Kênh Mẫu: @GiangVenus (@GiangVenus)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@GiangVenus](https://www.youtube.com/@GiangVenus)

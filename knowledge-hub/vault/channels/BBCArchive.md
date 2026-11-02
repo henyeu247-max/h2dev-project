@@ -1,12 +1,12 @@
 ---
 handle: "@BBCArchive"
-name: "BBC Archive"
+name: "@BBCArchive"
 url: "https://www.youtube.com/@BBCArchive"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @BBCArchive (BBC Archive)
+# Kênh Đối Thủ / Kênh Mẫu: @BBCArchive (@BBCArchive)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@BBCArchive](https://www.youtube.com/@BBCArchive)

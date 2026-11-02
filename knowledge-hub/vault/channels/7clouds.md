@@ -1,12 +1,12 @@
 ---
 handle: "@7clouds"
-name: "7clouds"
+name: "@7clouds"
 url: "https://www.youtube.com/@7clouds"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @7clouds (7clouds)
+# Kênh Đối Thủ / Kênh Mẫu: @7clouds (@7clouds)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@7clouds](https://www.youtube.com/@7clouds)

@@ -1,12 +1,12 @@
 ---
 handle: "@MauryShow"
-name: "The Maury Show"
+name: "@MauryShow"
 url: "https://www.youtube.com/@MauryShow"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @MauryShow (The Maury Show)
+# Kênh Đối Thủ / Kênh Mẫu: @MauryShow (@MauryShow)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@MauryShow](https://www.youtube.com/@MauryShow)

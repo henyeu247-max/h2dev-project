@@ -6,7 +6,7 @@ module_id: "H2DEV-M10"
 module_title: "Module 8 — Công cụ & Tài nguyên hỗ trợ"
 seq: "04"
 niche: "Bán Content & Phát Triển Kênh"
-markets: ["🇻🇳 Việt", "🇨🇳 Trung"]
+markets: ["🇰🇷 Hàn"]
 duration: "3:04"
 published_at: "2025-10-11"
 toolsCount: 4
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-04c2e3&track=h2dev"
 # VIDEO-04c2e3 — Tool Elevenlab, Clone Minimax, Dịch SRT, Tài Khoản ChatGPT Plus/ CapCut Pro - Giá rẻ
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M10|H2DEV-M10 — Module 8 — Công cụ & Tài nguyên hỗ trợ]] (Bài `#04`)  
 > - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇨🇳 Trung | **Thời lượng:** `3:04` | **Ngày đăng:** `2025-10-11`  
+> - **Thị trường:** 🇰🇷 Hàn | **Thời lượng:** `3:04` | **Ngày đăng:** `2025-10-11`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-04c2e3&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-04c2e3/README.md)
 
 ---

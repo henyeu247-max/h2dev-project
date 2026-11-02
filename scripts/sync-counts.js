@@ -67,14 +67,16 @@ const DOC_RULES = [
     build: c => `$1${c.kichBan}$2` },
   { file: 'TREE.md', pattern: /(raw-kenh-mau\.json      # )\d+( record canonical \()\d+( kênh unique · )\d+( bản ghi trùng channel\) · OCR 83 · Vision )\d+\/\d+/g,
     build: c => `$1${c.canonicalRaw}$2${c.canonicalRawUniqueChannels}$3${c.canonicalRaw - c.canonicalRawUniqueChannels}$4${c.canonicalRaw}/${c.canonicalRaw}` },
-  { file: 'TREE.md', pattern: /(thumbs\\                # )\d+\/\d+( khớp videos\.json \+ 140 HUAN \+ placeholder\.svg \()\d+( files\))/g,
-    build: c => `$1${c.videos}/${c.videos}$2${c.thumbFiles}$3` },
+  { file: 'TREE.md', pattern: /(catalog_huan\.json · catalog_dgmd\.json\s+# )\d+( record Huân Academy \+ )\d+( record DGMD \(tổng )\d+( bài 3 nhánh\))/g,
+    build: c => `$1${c.huanVideos ?? c.videosHuan}$2${c.dgmdVideos ?? c.videosDgmd}$3${c.totalSystemVideos}$4` },
+  { file: 'TREE.md', pattern: /(thumbs\\                # )\d+\/\d+( khớp videos\.json \+ )\d+( HUAN \+ placeholder\.svg \()\d+( files\))/g,
+    build: c => `$1${c.h2devVideos ?? c.videos}/${c.h2devVideos ?? c.videos}$2${c.huanVideos ?? c.videosHuan}$3${c.thumbFiles}$4` },
   { file: 'TREE.md', pattern: /(video\\\s+# )\d+( thư mục: )\d+( VIDEO-<sku>\\<sku>\.mp4 \+ )\d+( ZOOM-<slug>\\<slug>\.webm \(~)[\d.]+( GiB \/ )[\d.]+( GB\))/g,
     build: c => `$1${c.videoDirs}$2${c.videoDirs - c.zoomSessions}$3${c.zoomSessions}$4${(c.mediaBytes / 1073741824).toFixed(2)}$5${(c.mediaBytes / 1e9).toFixed(2)}$6` },
 
   // ---- 00_README.md ----
-  { file: '00_README.md', pattern: /(kho học H2DEV \()\d+( bài: )\d+( video \+ )\d+( buổi Zoom\))/g,
-    build: c => `$1${c.videos}$2${c.videoLessons}$3${c.zoomSessions}$4` },
+  { file: '00_README.md', pattern: /(kho học H2DEV \()\d+( bài: )\d+( video \+ )\d+( buổi Zoom\) cùng 2 nhánh con Huân Academy \()\d+( bài\) và Đại Gia Mang Dép \()\d+( bài\) — tổng hợp \*\*)\d+( bài học\*\*)/g,
+    build: c => `$1${c.h2devVideos ?? c.videos}$2${c.videoLessons}$3${c.zoomSessions}$4${c.huanVideos ?? c.videosHuan}$5${c.dgmdVideos ?? c.videosDgmd}$6${c.totalSystemVideos}$7` },
   // docs/ (tong + VIDEO-* + ZOOM-*) tren dong "Tai san"
   { file: '00_README.md', pattern: /(`docs\/` )\d+( thư mục \()\d+( `VIDEO-\*` \+ )\d+( `ZOOM-\*`)/g,
     build: c => `$1${c.docsTotalDirs}$2${c.docsVideoDirs}$3${c.docsZoomDirs}$4` },
@@ -136,6 +138,8 @@ const DOC_RULES = [
 
 
   // ---- data-tabs/ngach-xanh.json ----
+  { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[^}]*?"video":\s*)\d+/g,
+    build: c => `$1${c.h2devVideos ?? c.videos}` },
   { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[^}]*?"taiLieu":\s*)\d+/g,
     build: c => `$1${c.documents}` },
   { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[^}]*?"kenhMau":\s*)\d+/g,
@@ -148,20 +152,30 @@ const DOC_RULES = [
     build: c => `$1${c.deadChannels}` },
   { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[^}]*?"kenhLiveTrongFile":\s*)\d+/g,
     build: c => `$1${c.liveChannels}` },
+  { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[^}]*?"videoSystem":\s*)\d+/g,
+    build: c => `$1${c.totalSystemVideos}` },
+  { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[^}]*?"videoH2dev":\s*)\d+/g,
+    build: c => `$1${c.h2devVideos ?? c.videos}` },
+  { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[^}]*?"videoHuan":\s*)\d+/g,
+    build: c => `$1${c.huanVideos ?? c.videosHuan}` },
+  { file: 'data-tabs/ngach-xanh.json', pattern: /("phamViKho":\s*\{[^}]*?"videoDgmd":\s*)\d+/g,
+    build: c => `$1${c.dgmdVideos ?? c.videosDgmd}` },
   { file: 'data-tabs/ngach-xanh.json', pattern: /("phamVi":\s*")\d+(\/)\d+( record \(H01\.\.H40\)\.)/g,
     build: c => `$1${c.niches}$2${c.niches}$3` },
-  { file: 'data-tabs/ngach-xanh.json', pattern: /(\(148 H2DEV \+ 140 Huân \+ 45 Đạt GMD\), )\d+( tài liệu SOP\/Master Prompts, )\d+( kênh mẫu \()\d+( live · )\d+( dead\) và 347\/347 kênh trong intelligence\.db)/g,
-    build: c => `$1${c.documents}$2${c.channels}$3${c.liveChannels}$4${c.deadChannels}$5` },
-  { file: 'data-tabs/ngach-xanh.json', pattern: /("ghiChu":\s*"Hệ thống 97yo-dev \(3 nhánh: 148 H2DEV · 140 Huân Academy · 45 DGMD = 333 bài học; )\d+( tài liệu catalog \+ 1\.409 tài liệu đính kèm 3 nhánh \[499 H2DEV · 750 Huân · 160 DGMD\]; )\d+( kênh mẫu gồm )\d+( live · )\d+( dead; )\d+( hồ sơ raw kênh\)\.)/g,
-    build: c => `$1${c.documents}$2${c.channels}$3${c.liveChannels}$4${c.deadChannels}$5${c.canonicalRaw}$6` },
+  { file: 'data-tabs/ngach-xanh.json', pattern: /(phủ kín 100% \()\d+\/\d+(\) video bài học trên 3 nhánh \()\d+( H2DEV \+ )\d+( Huân \+ )\d+( Đạt GMD\), )\d+( tài liệu SOP\/Master Prompts, )\d+( kênh mẫu \()\d+( live · )\d+( dead\) và 347\/347 kênh trong intelligence\.db)/g,
+    build: c => `$1${c.totalSystemVideos}/${c.totalSystemVideos}$2${c.h2devVideos ?? c.videos}$3${c.huanVideos ?? c.videosHuan}$4${c.dgmdVideos ?? c.videosDgmd}$5${c.documents}$6${c.channels}$7${c.liveChannels}$8${c.deadChannels}$9` },
+  { file: 'data-tabs/ngach-xanh.json', pattern: /("ghiChu":\s*"Hệ thống 97yo-dev \(3 nhánh: )\d+( H2DEV · )\d+( Huân Academy · )\d+( DGMD = )\d+( bài học; )\d+( tài liệu catalog)/g,
+    build: c => `$1${c.h2devVideos ?? c.videos}$2${c.huanVideos ?? c.videosHuan}$3${c.dgmdVideos ?? c.videosDgmd}$4${c.totalSystemVideos}$5${c.documents}$6` },
+  { file: 'data-tabs/ngach-xanh.json', pattern: /("ghiChu":\s*"Hệ thống 97yo-dev [^\r\n]*?tài liệu đính kèm 3 nhánh \[\d+ H2DEV · \d+ Huân · \d+ DGMD\]; )\d+( kênh mẫu gồm )\d+( live · )\d+( dead; )\d+( hồ sơ raw kênh\)\.)/g,
+    build: c => `$1${c.channels}$2${c.liveChannels}$3${c.deadChannels}$4${c.canonicalRaw}$5` },
   { file: 'data-tabs/ngach-xanh.json', pattern: /(\[BẰNG CHỨNG THỰC NGHIỆM TỪ )\d+( KÊNH DEAD & 4 HỒ SƠ TERMINATED TRONG KHO 97YO-DEV\] — Đối soát thực nghiệm trên )\d+( kênh mẫu \()\d+( live · )\d+( dead: )\d+( kênh 404 gone, )\d+( kênh xóa trắng video empty wipe; trong đó 16 kênh gắn cờ DEAD_TERMINATED\))/g,
     build: c => `$1${c.deadChannels}$2${c.channels}$3${c.liveChannels}$4${c.deadChannels}$5${c.deadChannelsGone}$6${c.deadChannelsEmpty}$7` },
-  { file: 'data-tabs/chien-luoc.json', pattern: /(Đề cương & SOP )\d+( bước thực chiến toàn diện trên hệ thống 97yo-dev\)\. Tổng hợp và đối soát từ 333 video bài học toàn hệ thống \()\d+( H2DEV \[)\d+( video \+ )\d+( Zoom\] · 140 Huân Academy · 45 DGMD\), )\d+( tài liệu SOP catalog)/g,
-    build: c => `$1${c.chienLuocSteps}$2${c.videos}$3${c.videoLessons}$4${c.zoomSessions}$5${c.documents}$6` },
-  { file: 'data-tabs/chien-luoc.json', pattern: /(\(\+1\.409 tài liệu đính kèm 3 nhánh\), )\d+( Ngách trụ cột × 120 Vi Ngách \(Micro-Niches\), )[\d.]+( kênh mẫu \()\d+( live · )\d+( dead\) và 19 H2DEV Specialized Agent Skills\.)/g,
+  { file: 'data-tabs/chien-luoc.json', pattern: /(Đề cương & SOP )\d+( bước thực chiến toàn diện trên hệ thống 97yo-dev\)\. Tổng hợp và đối soát từ )\d+( video bài học toàn hệ thống \()\d+( H2DEV \[)\d+( video \+ )\d+( Zoom\] · )\d+( Huân Academy · )\d+( DGMD\), )\d+( tài liệu SOP catalog)/g,
+    build: c => `$1${c.chienLuocSteps}$2${c.totalSystemVideos}$3${c.h2devVideos ?? c.videos}$4${c.videoLessons}$5${c.zoomSessions}$6${c.huanVideos ?? c.videosHuan}$7${c.dgmdVideos ?? c.videosDgmd}$8${c.documents}$9` },
+  { file: 'data-tabs/chien-luoc.json', pattern: /(\(\+[\d.]+ tài liệu đính kèm 3 nhánh\), )\d+( Ngách trụ cột × 120 Vi Ngách \(Micro-Niches\), )[\d.]+( kênh mẫu \()\d+( live · )\d+( dead\) và 19 H2DEV Specialized Agent Skills\.)/g,
     build: c => `$1${c.niches}$2${String(c.channels).replace(/\B(?=(\d{3})+(?!\d))/g, '.')}$3${c.liveChannels}$4${c.deadChannels}$5` },
-  { file: 'data-tabs/chien-luoc.json', pattern: /("nguonDuLieu":\s*"Hệ thống 97yo-dev: 333 bài học \()\d+( H2DEV \[)\d+( video bài giảng \+ )\d+( buổi Zoom\] \+ 140 Huân Academy \+ 45 DGMD\) \+ )\d+( tài liệu SOP catalog)/g,
-    build: c => `$1${c.videos}$2${c.videoLessons}$3${c.zoomSessions}$4${c.documents}$5` },
+  { file: 'data-tabs/chien-luoc.json', pattern: /("nguonDuLieu":\s*"Hệ thống 97yo-dev: )\d+( bài học \()\d+( H2DEV \[)\d+( video bài giảng \+ )\d+( buổi Zoom\] \+ )\d+( Huân Academy \+ )\d+( DGMD\) \+ )\d+( tài liệu SOP catalog)/g,
+    build: c => `$1${c.totalSystemVideos}$2${c.h2devVideos ?? c.videos}$3${c.videoLessons}$4${c.zoomSessions}$5${c.huanVideos ?? c.videosHuan}$6${c.dgmdVideos ?? c.videosDgmd}$7${c.documents}$8` },
   { file: 'data-tabs/chien-luoc.json', pattern: /(tài liệu SOP catalog \+ )\d+( Ngách trụ cột × 120 Vi Ngách \+ )[\d.]+( kênh mẫu \()\d+( live · )\d+( dead\) \+ )\d+( hồ sơ raw kênh \()\d+( kênh độc nhất\) \+ )\d+( nguồn tư liệu gốc & 19 H2DEV Specialized Skills\.)/g,
     build: c => `$1${c.niches}$2${String(c.channels).replace(/\B(?=(\d{3})+(?!\d))/g, '.')}$3${c.liveChannels}$4${c.deadChannels}$5${c.canonicalRaw}$6${c.canonicalRawUniqueChannels}$7${c.nguonReup}$8` },
   { file: 'data-tabs/chien-luoc.json', pattern: /(Khai thác cơ sở dữ liệu )\d+( hồ sơ Raw kênh \()\d+( kênh độc nhất\) và )\d+( đối thủ mẫu \()\d+( kênh live · )\d+( case study DIE\)\.)/g,
@@ -172,8 +186,30 @@ const DOC_RULES = [
     build: c => `$1${c.deadChannels}$2` },
   { file: 'data-tabs/chien-luoc.json', pattern: /("tabLabel":\s*"Kho )\d+( Nguồn Reup")/g,
     build: c => `$1${c.nguonReup}$2` },
-  { file: 'data-tabs/dong-bo-ngoai.json', pattern: /(\(333 bài học · 3 nhánh: 148 H2DEV \+ 140 Huân \+ 45 DGMD · )\d+( tài liệu catalog · )[\d.]+( kênh mẫu: )\d+( live \+ )\d+( dead · )\d+( raw kênh · )\d+( Ngách trụ cột)/g,
-    build: c => `$1${c.documents}$2${String(c.channels).replace(/\B(?=(\d{3})+(?!\d))/g, '.')}$3${c.liveChannels}$4${c.deadChannels}$5${c.canonicalRaw}$6${c.niches}$7` },
+  { file: 'data-tabs/chien-luoc.json', pattern: /("Tab Video = Nguồn bài học )\d+( SKU toàn hệ thống 97yo-dev \()\d+( H2DEV \[)\d+( video \+ )\d+( Zoom\] · )\d+( Huân Academy · )\d+( DGMD\) đã gắn mã ngách H01\.\.H40\.")/g,
+    build: c => `$1${c.totalSystemVideos}$2${c.h2devVideos ?? c.videos}$3${c.videoLessons}$4${c.zoomSessions}$5${c.huanVideos ?? c.videosHuan}$6${c.dgmdVideos ?? c.videosDgmd}$7` },
+  { file: 'data-tabs/chien-luoc.json', pattern: /("Tab Kịch bản = Thư viện )\d+( tài liệu SOP catalog)/g,
+    build: c => `$1${c.documents}$2` },
+  { file: 'data-tabs/chien-luoc.json', pattern: /("Tab Kênh mẫu = Kho )[\d.]+( kênh đối thủ thực tế \()\d+( kênh sống tăng trưởng \+ )\d+( case study DIE 404\/rỗng để né bẫy\)\.")/g,
+    build: c => `$1${String(c.channels).replace(/\B(?=(\d{3})+(?!\d))/g, '.')}$2${c.liveChannels}$3${c.deadChannels}$4` },
+  { file: 'data-tabs/chien-luoc.json', pattern: /("matrix144":\s*\{\s*"totalVideos":\s*)\d+/g,
+    build: c => `$1${c.h2devVideos ?? c.videos}` },
+  { file: 'learn.html', pattern: /(<span class="track-label">Nhánh H2DEV · Faceless \()\d+( Video\)<\/span>)/g,
+    build: c => `$1${c.h2devVideos ?? c.videos}$2` },
+  { file: 'learn.html', pattern: /(<span class="track-label">Nhánh Đại Gia Mang Dép \()\d+( Video\)<\/span>)/g,
+    build: c => `$1${c.dgmdVideos ?? c.videosDgmd}$2` },
+  { file: 'learn.html', pattern: /(<span class="track-label">Nhánh Huân Academy \()\d+( Video\)<\/span>)/g,
+    build: c => `$1${c.huanVideos ?? c.videosHuan}$2` },
+  { file: 'learn.html', pattern: /(<span class="track-label">Tất cả 3 nhánh \()\d+( Module · )\d+( Video\)<\/span>)/g,
+    build: c => `$1${c.modulesTotal}$2${c.totalSystemVideos}$3` },
+  { file: 'graph.html', pattern: /(<title>97yo-dev Nexus Graph — Hệ Thống Hóa Đa Dự Án &amp; Bản Đồ Liên Kết )\d+( Video<\/title>)/g,
+    build: c => `$1${c.totalSystemVideos}$2` },
+  { file: 'graph.html', pattern: /(Hệ thống 97yo-dev · Đang tải cấu trúc \d+ Dự án &amp; 3 Nhánh Đào Tạo \()\d+( Video\)\.\.\.)/g,
+    build: c => `$1${c.totalSystemVideos}$2` },
+  { file: 'data-tabs/dong-bo-ngoai.json', pattern: /(\()\d+( bài học · 3 nhánh: )\d+( H2DEV \+ )\d+( Huân \+ )\d+( DGMD · )\d+( tài liệu catalog)/g,
+    build: c => `$1${c.totalSystemVideos}$2${c.h2devVideos ?? c.videos}$3${c.huanVideos ?? c.videosHuan}$4${c.dgmdVideos ?? c.videosDgmd}$5${c.documents}$6` },
+  { file: 'data-tabs/dong-bo-ngoai.json', pattern: /(tài liệu catalog · )[\d.]+( kênh mẫu: )\d+( live \+ )\d+( dead · )\d+( raw kênh · )\d+( Ngách trụ cột)/g,
+    build: c => `$1${String(c.channels).replace(/\B(?=(\d{3})+(?!\d))/g, '.')}$2${c.liveChannels}$3${c.deadChannels}$4${c.canonicalRaw}$5${c.niches}$6` },
   { file: 'data-tabs/dong-bo-ngoai.json', pattern: /(WeChat Vault và )\d+( Master Prompts\.)/g,
     build: c => `$1${c.masterPrompts}$2` },
 
@@ -188,7 +224,16 @@ const DOC_RULES = [
     build: c => `$1${c.channelsWithNgayDo}$2${c.channels}$3${c.liveChannels}$4${c.deadChannels}$5${c.deadChannelsGone}$6${c.deadChannelsEmpty}$7` },
   { file: 'docs/WORKING_STATE.md',
     pattern: /(\*\*Tổng kho bài học \(`videos\.json`\):\*\* \*\*)\d+( bài\*\* \()\d+( Video bài giảng PRO \+ )\d+( Buổi Zoom Masterclass; )\d+( Free · )\d+( Pro\))/g,
-    build: c => `$1${c.videos}$2${c.videoLessons}$3${c.zoomSessions}$4${c.videoFree}$5${c.videoPro}$6` },
+    build: c => `$1${c.h2devVideos ?? c.videos}$2${c.videoLessons}$3${c.zoomSessions}$4${c.videoFree}$5${c.videoPro}$6` },
+  { file: 'docs/WORKING_STATE.md',
+    pattern: /(thuộc hệ thống \*\*97yo-dev\*\* tổng \*\*)\d+( bài học\*\* \()\d+( H2DEV \+ )\d+( Huân Academy \+ )\d+( DGMD; )\d+( module\)\.)/g,
+    build: c => `$1${c.totalSystemVideos}$2${c.h2devVideos ?? c.videos}$3${c.huanVideos ?? c.videosHuan}$4${c.dgmdVideos ?? c.videosDgmd}$5${c.modulesTotal}$6` },
+  { file: 'docs/WORKING_STATE.md',
+    pattern: /(→ nguồn: `data-tabs\/videos\.json` \()\d+(\) \+ `data\/videos_huan\.json` \()\d+(\) \+ `data\/videos_dgmd\.json` \()\d+(\) = \*\*)\d+(\*\* bài học toàn hệ thống\.)/g,
+    build: c => `$1${c.h2devVideos ?? c.videos}$2${c.huanVideos ?? c.videosHuan}$3${c.dgmdVideos ?? c.videosDgmd}$4${c.totalSystemVideos}$5` },
+  { file: 'docs/WORKING_STATE.md',
+    pattern: /(\*\*Kiểm định media toàn vẹn:\*\* \*\*)\d+\/\d+( file\*\* mp4\/webm tồn tại \()\d+( H2DEV \+ )\d+( Huân \+ )\d+( DGMD\))/g,
+    build: c => `$1${c.mediaFiles}/${c.totalSystemVideos}$2${c.h2devVideos ?? c.videos}$3${c.huanVideos ?? c.videosHuan}$4${c.dgmdVideos ?? c.videosDgmd}$5` },
   { file: 'docs/WORKING_STATE.md',
     pattern: /(\*\*Kho tài liệu & Master Prompts \(`tai-lieu-full\.json`\):\*\* \*\*)\d+( tài liệu\*\*)/g,
     build: c => `$1${c.documents}$2` },
@@ -196,8 +241,18 @@ const DOC_RULES = [
     pattern: /(\*\*Ma trận ngách YouTube \(`ngach-xanh\.json`\):\*\* \*\*)\d+( ngách\*\* \(`xanh:true` \*\*)\d+(\*\*)/g,
     build: c => `$1${c.niches}$2${c.nichesGreenTrue}$3` },
   { file: 'docs/WORKING_STATE.md',
+    pattern: /(\(40 ngách chuẩn `H01\.\.H40` phủ )\d+\/\d+( SKU toàn hệ thống\))/g,
+    build: c => `$1${c.totalSystemVideos}/${c.totalSystemVideos}$2` },
+  { file: 'docs/WORKING_STATE.md',
     pattern: /(dung lượng ~)[\d.]+( GB \/ )[\d.]+( GiB\))/g,
     build: c => `$1${(c.mediaBytes / 1e9).toFixed(2)}$2${(c.mediaBytes / 1073741824).toFixed(2)}$3` },
+  { file: 'docs/WORKING_STATE.md',
+    pattern: /(`audit_videos_v2\.py`[^\r\n]*?:\s*\*\*)\d+\/\d+( H2DEV \+ )\d+\/\d+( Huân & DGMD clean)/g,
+    build: c => {
+      const h2 = c.h2devVideos ?? c.videos;
+      const hd = (c.huanVideos ?? c.videosHuan) + (c.dgmdVideos ?? c.videosDgmd);
+      return `$1${h2}/${h2}$2${hd}/${hd}$3`;
+    } },
   { file: 'knowledge-hub/docs/MEMORY.md',
     pattern: /(0 file 0 byte · )[\d.]+( GB \()[\d.]+( GiB\))/g,
     build: c => `$1${(c.mediaBytes / 1e9).toFixed(2)}$2${(c.mediaBytes / 1073741824).toFixed(2)}$3` },
@@ -287,8 +342,8 @@ const DB_DOC_RULES = [
     pattern: /(Bảng kèm theo: `lessons` )\d+( · `lesson_timestamps` )\d+( · `competitor_channels` )\d+( · `competitor_top_videos` )\d+( · `documents` )\d+( · `reup_sources` )\d+( · `niches` )\d+(?: · `policies` \d+ · `checklists` \d+)?/g,
     build: d => `$1${d.lessons}$2${d.lesson_timestamps}$3${d.competitor_channels}$4${d.competitor_top_videos}$5${d.documents}$6${d.reup_sources}$7${d.niches} · \`policies\` ${d.policies} · \`checklists\` ${d.checklists}` },
   { file: 'docs/WORKING_STATE.md', label: 'muc 4.2 Master database (lessons..documents)',
-    pattern: /(Master database `data\/h2dev_master\.db` đã rebuild đầy đủ \*\*)\d+( lessons\*\* \(148 H2DEV · 140 Huân · 45 DGMD\), \*\*)[\d.]+( lesson timestamps\*\*, \*\*)[\d.]+( competitor channels\*\*, \*\*)[\d.]+( top videos\*\*, \*\*)[\d.]+( documents\*\*)/g,
-    build: d => `$1${viNum(d.lessons)}$2${viNum(d.lesson_timestamps)}$3${viNum(d.competitor_channels)}$4${viNum(d.competitor_top_videos)}$5${viNum(d.documents)}$6` },
+    pattern: /(Master database `data\/h2dev_master\.db` đã rebuild đầy đủ \*\*)\d+( lessons\*\* \()\d+( H2DEV · )\d+( Huân · )\d+( DGMD\), \*\*)[\d.]+( lesson timestamps\*\*, \*\*)[\d.]+( competitor channels\*\*, \*\*)[\d.]+( top videos\*\*, \*\*)[\d.]+( documents\*\*)/g,
+    build: (d, c = {}) => `$1${viNum(d.lessons)}$2${c.h2devVideos ?? c.videos ?? 153}$3${c.huanVideos ?? c.videosHuan ?? 140}$4${c.dgmdVideos ?? c.videosDgmd ?? 52}$5${viNum(d.lesson_timestamps)}$6${viNum(d.competitor_channels)}$7${viNum(d.competitor_top_videos)}$8${viNum(d.documents)}$9` },
   { file: 'docs/WORKING_STATE.md', label: 'muc 4.2 Master database (reup..FTS5)',
     pattern: /(Master database `data\/h2dev_master\.db` [^\r\n]*?documents\*\*, \*\*)[\d.]+( reup sources\*\*, \*\*)[\d.]+( niches\*\*, \*\*)[\d.]+( policies\*\*, \*\*)[\d.]+( checklists\*\* và \*\*)[\d.]+( FTS5 search index entries\*\*)/g,
     build: d => `$1${viNum(d.reup_sources)}$2${viNum(d.niches)}$3${viNum(d.policies)}$4${viNum(d.checklists)}$5${viNum(d.search_fts)}$6` },
@@ -301,12 +356,16 @@ const DB_DOC_RULES = [
   { file: 'assets/app/graph-main.js', label: 'graphScope comment total nodes',
     pattern: /(\/\/ 'ego' \(Mạch Tâm Điểm Rõ Nét\) \| 'galaxy' \(Toàn Cảnh )[\d.]+( Nút\))/g,
     build: d => `$1${viNum(d.kg_nodes)}$2` },
+  { file: 'docs/PROGRESS.md', label: 'h2dev_knowledge_graph.db nodes & edges',
+    pattern: /(`h2dev_knowledge_graph\.db` \(`)[\d.]+(` nodes, `)[\d.]+(` edges\))/g,
+    build: d => `$1${viNum(d.kg_nodes)}$2${viNum(d.kg_edges)}$3` },
 ];
 
 // opts.docPath: ghi de duong dan doc (dung de test tren ban sao tam, KHONG dung file live).
 function applyDbRules({ write, dbPath = DB_PATH, docPath = null } = {}) {
   const res = readDbCounts(dbPath);
   if (res.skipped) return { skipped: res.skipped, changes: [], missing: [] };
+  const liveCounts = buildManifest().counts || {};
   const changes = [];
   const missing = [...(res.errors || [])];
   const contents = new Map();
@@ -318,7 +377,7 @@ function applyDbRules({ write, dbPath = DB_PATH, docPath = null } = {}) {
     const entry = contents.get(full);
     const before = entry.cur !== undefined ? entry.cur : entry.orig;
     if (!before.match(rule.pattern)) { missing.push(`${rule.file}: ${rule.label} (khong tim thay neo)`); entry.cur = before; continue; }
-    const after = before.replace(rule.pattern, rule.build(res.counts));
+    const after = before.replace(rule.pattern, rule.build(res.counts, liveCounts));
     if (after !== before) changes.push({ file: rule.file, label: rule.label });
     entry.cur = after;
   }

@@ -6,7 +6,7 @@ module_id: "HUAN-M08"
 module_title: "8. LỜI HỨA CUỐI CÙNG - BẠN SẼ KHÔNG THỂ THUA NẾU"
 seq: "02"
 niche: "16 Concept Nội Dung Triệu View & Tháp Maslow"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "33:35"
 published_at: "2026-09-01"
 toolsCount: 9
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-2772a7&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M08|HUAN-M08 — 8. LỜI HỨA CUỐI CÙNG - BẠN SẼ KHÔNG THỂ THUA NẾU]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/16-concept-noi-dung-trieu-view-thap-maslow|16 Concept Nội Dung Triệu View & Tháp Maslow]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `33:35` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `33:35` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-2772a7&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-2772a7/README.md)
 
 ---

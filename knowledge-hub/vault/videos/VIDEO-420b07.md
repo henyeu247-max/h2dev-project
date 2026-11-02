@@ -6,7 +6,7 @@ module_id: "HUAN-M03"
 module_title: "3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY"
 seq: "07"
 niche: "Phân tích nguồn lưu lượng truy cập (Traffic Sources) trên YouTube"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "15:04"
 published_at: "2026-09-01"
 toolsCount: 9
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-420b07&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M03|HUAN-M03 — 3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY]] (Bài `#07`)  
 > - **Ngách nội dung (Niche):** [[niches/phan-tich-nguon-luu-luong-truy-cap-traffic-sources-tren-youtube|Phân tích nguồn lưu lượng truy cập (Traffic Sources) trên YouTube]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `15:04` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `15:04` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-420b07&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-420b07/README.md)
 
 ---

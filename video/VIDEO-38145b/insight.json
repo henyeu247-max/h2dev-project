@@ -60,7 +60,8 @@
     "Quy tắc thời điểm vàng quyết định tỷ lệ về kênh: Khi kênh vừa bị bot YouTube quét xóa, tuyệt đối không bấm kháng nghị ngay lập tức mà phải chờ ít nhất 1 ngày (24 giờ) đến 4 ngày rồi mới gửi đơn.",
     "Không cần viết đơn dài dòng hay cầu kỳ bằng ngoại ngữ: Chỉ cần sao chép nguyên văn nội dung email thông báo xóa kênh của YouTube trong Gmail (ví dụ lỗi 'Chính sách đối với hành vi lách quy định') dán thẳng vào ChatGPT.",
     "Sử dụng câu lệnh đơn giản nhưng cực kỳ hiệu quả: 'dựa vào gmail này , bạn hãy cho tôi xin 1 mẫu kháng kênh youtube , ngắn gọn dễ hiểu' để ChatGPT sinh ra bức thư giải trình lịch sự, yêu cầu nhân viên YouTube xem xét thủ công.",
-    "Khung nhập kháng nghị trực tiếp tại studio.youtube.com/channel-appeal giới hạn tối đa 800 ký tự; mẫu văn bản của ChatGPT dài khoảng 683/800 ký tự vừa khít tiêu chuẩn và giúp lấy lại kênh chỉ sau hơn 10 giờ."
+    "Khung nhập kháng nghị trực tiếp tại studio.youtube.com/channel-appeal giới hạn tối đa 800 ký tự; mẫu văn bản của ChatGPT dài khoảng 683/800 ký tự vừa khít tiêu chuẩn và giúp lấy lại kênh chỉ sau hơn 10 giờ.",
+    "Hôm nay, mình sẽ hướng dẫn anh em kháng kênh YouTube bị die. Do YouTube quét, nhưng YouTube không biết đây là kênh của thầy giáo mang dép."
   ],
   "edit_sop": {
     "primary": "Quy trình 5 bước dùng ChatGPT kháng nghị khôi phục kênh YouTube bị quét xóa trong YouTube Studio",
@@ -97,13 +98,13 @@
       "title": "Master Prompt & Mẫu Văn Kháng Kênh YouTube Bị Xóa (Tiếng Việt 683/800 Ký Tự + Tiếng Anh)",
       "file": "assets/docs-dgmd/VIDEO-38145b/master_prompt.md",
       "readFile": "assets/docs-dgmd/VIDEO-38145b/master_prompt.md",
-      "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-38145b/master_prompt.md"
+      "link": "assets/docs-dgmd/VIDEO-38145b/master_prompt.md"
     },
     {
       "title": "Mẫu Đơn Kháng Nghị Khôi Phục Kênh YouTube Bị Xóa Nhầm (ChatGPT Appeal TXT)",
       "file": "assets/docs-dgmd/VIDEO-38145b/master_prompt.txt",
       "readFile": "assets/docs-dgmd/VIDEO-38145b/master_prompt.txt",
-      "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-38145b/master_prompt.txt"
+      "link": "assets/docs-dgmd/VIDEO-38145b/master_prompt.txt"
     }
   ]
 }

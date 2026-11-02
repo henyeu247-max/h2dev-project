@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-d8c6a8&track=dgmd"
 # VIDEO-d8c6a8 — Quy Trình Sản Xuất Video Bắt Nhịp Đọc Theo Chữ
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M09|DGMD-M09 — COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/tro-choi-tuong-tac-thu-thach-bat-nhip-say-the-word-on-beat|Trò Chơi Tương Tác & Thử Thách Bắt Nhịp (Say The Word On Beat)]]  
 > - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `29:31` | **Ngày đăng:** `2026-10-12`  

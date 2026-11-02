@@ -1,15 +1,15 @@
 ---
 handle: "@BÍ QUYẾT THÀNH CÔNG (@biquyetthanhcong68)"
-name: "BÍ QUYẾT THÀNH CÔNG (@biquyetthanhcong68)"
-url: "https://www.youtube.com/@biquyetthanhcong68"
+name: "@BÍ QUYẾT THÀNH CÔNG (@biquyetthanhcong68)"
+url: "https://www.youtube.com/@B%C3%8D%20QUY%E1%BA%BET%20TH%C3%80NH%20C%C3%94NG%20(%40biquyetthanhcong68)"
 status: "LIVE_HTTP_200"
 videos_count: 4
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @BÍ QUYẾT THÀNH CÔNG (@biquyetthanhcong68) (BÍ QUYẾT THÀNH CÔNG (@biquyetthanhcong68))
+# Kênh Đối Thủ / Kênh Mẫu: @BÍ QUYẾT THÀNH CÔNG (@biquyetthanhcong68) (@BÍ QUYẾT THÀNH CÔNG (@biquyetthanhcong68))
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/@biquyetthanhcong68](https://www.youtube.com/@biquyetthanhcong68)
+- **URL YouTube:** [https://www.youtube.com/@B%C3%8D%20QUY%E1%BA%BET%20TH%C3%80NH%20C%C3%94NG%20(%40biquyetthanhcong68)](https://www.youtube.com/@B%C3%8D%20QUY%E1%BA%BET%20TH%C3%80NH%20C%C3%94NG%20(%40biquyetthanhcong68))
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

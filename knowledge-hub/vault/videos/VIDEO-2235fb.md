@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-2235fb&track=h2dev"
 # VIDEO-2235fb — Show kênh REUP nhân bản thị trường Hoa Kỳ, view cực kỳ kinh khủng + thêm kênh thị trường Thái Lan và hướng dẫn tư duy làm đúng ngách đúng thị trường auto có view
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#25`)  
 > - **Ngách nội dung (Niche):** [[niches/reup-khai-thac-hoat-hinh|Reup & Khai Thác Hoạt Hình]]  
 > - **Thị trường:** 🇺🇸 Mỹ · 🇹🇭 Thái · 🇻🇳 Việt | **Thời lượng:** `4:00` | **Ngày đăng:** `2026-05-13`  

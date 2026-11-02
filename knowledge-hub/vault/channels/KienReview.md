@@ -1,12 +1,12 @@
 ---
 handle: "@KienReview"
-name: "Kiên Review"
+name: "@KienReview"
 url: "https://www.youtube.com/@KienReview"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @KienReview (Kiên Review)
+# Kênh Đối Thủ / Kênh Mẫu: @KienReview (@KienReview)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@KienReview](https://www.youtube.com/@KienReview)

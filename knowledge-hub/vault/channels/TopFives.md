@@ -1,15 +1,15 @@
 ---
 handle: "@TopFives"
-name: "Top Fives"
-url: "https://www.youtube.com/@TopFives"
+name: "@TopFives"
+url: "https://www.youtube.com/@topfives"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TopFives (Top Fives)
+# Kênh Đối Thủ / Kênh Mẫu: @TopFives (@TopFives)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/@TopFives](https://www.youtube.com/@TopFives)
+- **URL YouTube:** [https://www.youtube.com/@topfives](https://www.youtube.com/@topfives)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Discovery / Địa lý Tò mò / Khám phá Thế giới & Du lịch Quốc tế 4K`
 - **Thị trường:** `🇺🇸 US, 🌍 Quốc tế`

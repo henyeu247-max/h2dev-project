@@ -1,0 +1,32 @@
+{
+  "id": 12803,
+  "sku": "VIDEO-9ff392",
+  "upstream_sku": "VIDEO-9ff392",
+  "name": "Thực chiến share ngách lịch sử Việt Nam hướng dẫn làm + kèm Skill ( Claude tự động edit video ) |  Update 25-10-2026",
+  "url_key": "thuc-chien-share-ngach-lich-su-viet-nam-huong-dan-lam-kem-skill-claude-tu-dong-edit-video-update-25-10-2026",
+  "published_at": "2026-10-25",
+  "time": "1111",
+  "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1792915445-update-video-pro-25-10-2026&protected=False&version=v2&token=gAAAAABq3bgAM_FEux6BCqLb2kL001gXDKZtWA6jUbZ0tPpdGASSYd_CcnVpxhP4J7hpeY75xq3yYVIM58TZ_HTXTYP1192kdEV-lrIZGggCTE38_hd_kI4%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
+  "protected": false,
+  "bai_h_c_free": false,
+  "lesson_files": null,
+  "attachments": null,
+  "video_subtitle": null,
+  "image": {
+    "url": "https://saas-api.mona.academy/media/catalog/product/S/a/Samurai_v_B_n_S_Vi_t_C_p_Nh_t.png.png",
+    "label": "Samurai và Bản Đồ Sử Việt Cập Nhật.png"
+  },
+  "thumbnail": {
+    "url": "https://saas-api.mona.academy/media/catalog/product/S/a/Samurai_v_B_n_S_Vi_t_C_p_Nh_t.png.png",
+    "label": "Samurai và Bản Đồ Sử Việt Cập Nhật.png"
+  },
+  "tags": null,
+  "gdrive_files": [
+    {
+      "file_id": "1kBMlTolKsRFLbPY8Xyd2abIOhce4QheM",
+      "filename": "h2-bandosu-studio.plugin",
+      "bytes": 17369325
+    }
+  ],
+  "gdoc_files": []
+}

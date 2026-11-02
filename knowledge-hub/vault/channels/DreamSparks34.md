@@ -1,12 +1,12 @@
 ---
 handle: "@DreamSparks34"
-name: "Dream Sparks (Kênh hình mẫu ngách Câu chuyện Phật giáo - Gautam Buddha Motivational Story)"
+name: "@DreamSparks34"
 url: "https://www.youtube.com/@DreamSparks34"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @DreamSparks34 (Dream Sparks (Kênh hình mẫu ngách Câu chuyện Phật giáo - Gautam Buddha Motivational Story))
+# Kênh Đối Thủ / Kênh Mẫu: @DreamSparks34 (@DreamSparks34)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@DreamSparks34](https://www.youtube.com/@DreamSparks34)

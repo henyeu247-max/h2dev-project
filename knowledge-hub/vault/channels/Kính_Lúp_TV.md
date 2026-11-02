@@ -1,15 +1,15 @@
 ---
 handle: "@Kính Lúp TV"
-name: "Kính Lúp TV"
-url: "https://www.youtube.com/@KinhLupTV"
+name: "@Kính Lúp TV"
+url: "https://www.youtube.com/@K%C3%ADnh%20L%C3%BAp%20TV"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Kính Lúp TV (Kính Lúp TV)
+# Kênh Đối Thủ / Kênh Mẫu: @Kính Lúp TV (@Kính Lúp TV)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/@KinhLupTV](https://www.youtube.com/@KinhLupTV)
+- **URL YouTube:** [https://www.youtube.com/@K%C3%ADnh%20L%C3%BAp%20TV](https://www.youtube.com/@K%C3%ADnh%20L%C3%BAp%20TV)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

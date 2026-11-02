@@ -6,11 +6,11 @@ module_id: "HUAN-M13"
 module_title: "CẢM NHẬN THỰC TẾ CỦA KHÓA OFFLINE"
 seq: "03"
 niche: "Chuyển Dịch Từ Creator/Filmmaker Sang Chủ Hệ Thống Kinh Doanh Vô Hạn"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "02:01"
 published_at: "2026-09-01"
 toolsCount: 1
-channelsCount: 2
+channelsCount: 1
 docsCount: 5
 player_url: "/player.html?sku=VIDEO-8d13ec&track=huan"
 ---
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-8d13ec&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M13|HUAN-M13 — CẢM NHẬN THỰC TẾ CỦA KHÓA OFFLINE]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/chuyen-dich-tu-creator-filmmaker-sang-chu-he-thong-kinh-doanh-vo-han|Chuyển Dịch Từ Creator/Filmmaker Sang Chủ Hệ Thống Kinh Doanh Vô Hạn]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `02:01` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `02:01` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-8d13ec&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-8d13ec/README.md)
 
 ---
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-8d13ec&track=huan"
 - Căn bệnh 'Tưởng là biết rồi nhưng làm hời hợt' khiến nhiều kênh có hình ảnh rất đẹp nhưng vẫn dậm chân tại chỗ. Khác biệt giữa kênh bình thường và kênh triệu view nằm ở độ chi tiết và kỷ luật trong từng bước thực thi.
 - Bài học đắt giá nhất vượt ra ngoài phạm vi kỹ thuật YouTube là 'Mô hình kinh doanh Hữu hạn và Vô hạn' (Finite vs. Infinite Business Model): giúp nhà sáng tạo thoát khỏi cảnh bán sức lao động cá nhân (hữu hạn) để xây dựng hệ thống tài sản số và sản phẩm nhân bản không giới hạn (vô hạn).
 - Khi tham gia một chương trình đào tạo chiến lược, người học cần mở tư duy ('mở não') để tiếp nhận cấu trúc vận hành doanh nghiệp thay vì chỉ tìm kiếm vài thủ thuật tối ưu bề nổi.
+- Thôi, chia sẻ cuối cùng, chia sẻ cuối cùng. Xin mời góc trái. Chia sẻ cuối cùng, cuối cùng.
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình 5 bước giúp KOL / Editor / Videographer thoát khỏi bẫy 'thợ làm nghề' để xây dựng cỗ máy YouTube toàn diện:
@@ -52,7 +53,6 @@ player_url: "/player.html?sku=VIDEO-8d13ec&track=huan"
 
 ## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)
 - [[channels/HuanVN|@HuanVN]]
-- [[channels/MinhTravel|@MinhTravel]] *(DIE)*
 
 ## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)
 - **Hồ sơ phân tích & SOP thực chiến: Minh Travel - Kol Hơn 100K Người Theo Dõi Chia Sẻ Về Quay Dựng Video Nổi Tiếng Ở VN (README.md):** `docs/VIDEO-8d13ec/README.md`

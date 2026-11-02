@@ -1,12 +1,12 @@
 ---
 handle: "@thestoiccommunity"
-name: "The Stoic Community (Kênh Stoic 309K sub phân tích trực tiếp trên màn hình)"
+name: "@thestoiccommunity"
 url: "https://www.youtube.com/@thestoiccommunity"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @thestoiccommunity (The Stoic Community (Kênh Stoic 309K sub phân tích trực tiếp trên màn hình))
+# Kênh Đối Thủ / Kênh Mẫu: @thestoiccommunity (@thestoiccommunity)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@thestoiccommunity](https://www.youtube.com/@thestoiccommunity)

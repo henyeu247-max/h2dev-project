@@ -1,0 +1,587 @@
+1
+00:00:00,000 --> 00:00:02,000
+Ok, anh em hãy xem đây nhé.
+
+2
+00:00:03,940 --> 00:00:07,300
+Mẹ ơi, đêm khuya rồi, mẹ cất thứ gì dưới gốc cao thế?
+
+3
+00:00:08,700 --> 00:00:11,840
+Chút đồ cũ thôi con, mẹ cất xong rồi vào nghỉ ngay đây.
+
+4
+00:00:12,040 --> 00:00:19,820
+Ok, chào tất cả anh em. Hôm nay sẽ hướng dẫn anh em là sản xuất những cái video hoạt hình như thế này, dạng hoạt hình 2D vẽ tay nhé.
+
+5
+00:00:20,440 --> 00:00:28,260
+Thì như anh em thấy ở đây, đây là một kênh YouTube đang khá phụ biến về những cái video mà đấu gạo hay đánh.
+
+6
+00:00:28,260 --> 00:00:37,980
+Cũng như cái chủ đề này thì anh em có thể đăng 2 nền tảng, có thể là đăng 3 nền tảng và anh em xây dựng kênh nha. Ví dụ như kênh Facebook này nha anh em nha.
+
+7
+00:00:38,980 --> 00:00:48,840
+Kênh Facebook này được view rất là cao nha anh em nha. Anh em nhìn thấy không? Những cái video này người ta có thể mang đến 2 triệu view và cái này anh em có thể cắm affiliate được nha.
+
+8
+00:00:49,000 --> 00:00:56,420
+Và cái view Việt trong cái chủ đề này thì nó chỉ từ RPM1 đến RPM5 nha anh em nha.
+
+9
+00:00:56,420 --> 00:01:00,420
+Thì hôm nay cách sản xuất như thế nào thì ở đây tôi không dạy anh em dùng tool
+
+10
+00:01:00,420 --> 00:01:05,420
+Tại vì nếu mà anh em người mới anh em nhảy vào tool thì outtool là anh em được bị fail luôn
+
+11
+00:01:05,420 --> 00:01:10,420
+Và những cái chủ đề này thì chúng ta có thể làm được xây dựng luôn
+
+12
+00:01:10,420 --> 00:01:13,420
+Khi ở đây tôi đã chuẩn bị 1 cái master from
+
+13
+00:01:13,420 --> 00:01:16,120
+Đây ở trong cái master from này nha anh em nha
+
+14
+00:01:16,120 --> 00:01:20,720
+Khi mà anh em truy cập vào trang web đại gia mang dép này
+
+15
+00:01:20,720 --> 00:01:21,960
+Chào toàn bộ anh chị em Hồng Viên
+
+16
+00:01:21,960 --> 00:01:23,360
+Đại gia mang dép.com nhé
+
+17
+00:01:23,360 --> 00:01:26,200
+Thì anh em nhấn cho tôi vào bài mới cập nhật nhé
+
+18
+00:01:26,200 --> 00:01:29,860
+Cái mới cập nhật này thì tôi sẽ chia sẻ cái quy trình này lên
+
+19
+00:01:29,860 --> 00:01:33,060
+Nó sẽ có ở trong phần mô tả này nha anh em nhé
+
+20
+00:01:33,060 --> 00:01:33,646
+Đã
+
+21
+00:01:33,646 --> 00:01:38,766
+Nó sẽ có trong cái phần mô tả này là cái đường link của cái Master From này nha anh em nhé.
+
+22
+00:01:39,166 --> 00:01:47,406
+Thì để sản xuất những bộ phim như thế này mà chúng ta không cần phải quy trình rắc rối hay là sử dụng tool hay là dùng những con cloud,
+
+23
+00:01:47,406 --> 00:01:58,506
+các thứ để chúng ta làm đúng không? Thì chúng ta chỉ cần cho tôi là một con ChatGPT này và con tài khoản flow nha anh em nhé. Ở đây thì cái Master Chrome này thì anh em nhấn Ctrl A nhé.
+
+24
+00:01:58,506 --> 00:02:05,826
+Thì sao chép toàn bộ Master Chrome từ đầu đến 27 trang nha anh em nhé. Thì sau khi anh em đã sao chép
+
+25
+00:02:05,826 --> 00:02:13,146
+27 trang rồi thì anh em dám cho mình vào một cái bộ trò chuyện mới của con ChatGPT nhé. Anh em nhấn tải lên.
+
+26
+00:02:13,146 --> 00:02:23,066
+Bây giờ là gì ạ? Dựa vào cái Master Prompt của tôi thì nó sẽ lên cho anh em là 20 bộ phim thì anh em có thể tạo ra 200 bộ, 300
+
+27
+00:02:23,066 --> 00:02:32,986
+bộ đều được nhé. Chứ không nhất thiết là cứ 20 bộ phim đâu. Và cái này thì nó dựa vào những cái gì mà nó đã học trong cái Master Prompt rồi thì
+
+28
+00:02:32,986 --> 00:02:42,906
+anh em có thể sử dụng những cái công cụ giống như là sáng sang các cuộc trò chuyện mới hoặc là anh em khi tạo xong 20 bộ phim này nhé.
+
+29
+00:02:43,146 --> 00:02:46,026
+Mỗi bộ phim nó có độ dài tầm...
+
+30
+00:02:46,100 --> 00:02:48,340
+hơn 4 phút đến 8 phút đây nha
+
+31
+00:02:48,340 --> 00:02:53,780
+mỗi tập gồm 120 giây thì nó gồm 5 tập nha anh em nhé
+
+32
+00:02:53,780 --> 00:02:57,940
+anh em có thể yêu cầu nó viết lên tầm 10 tập 20 tập để được nha
+
+33
+00:02:57,940 --> 00:03:02,740
+20 bộ phim này trong 20 bộ phim thì mỗi bộ phim có 5 tập nha anh em nhé
+
+34
+00:03:02,740 --> 00:03:05,460
+thì bắt đầu là anh em sẽ nhấn cho tôi nè
+
+35
+00:03:05,460 --> 00:03:07,780
+nó sẽ có 2 dạng
+
+36
+00:03:07,780 --> 00:03:09,540
+1 là anh em tạo 20 bộ phim
+
+37
+00:03:09,540 --> 00:03:11,940
+2 là anh em tạo 100 bộ phim
+
+38
+00:03:12,000 --> 00:03:14,660
+3 là anh em khởi tạo luôn tầm 1 nha
+
+39
+00:03:14,660 --> 00:03:21,660
+thì ok thì mình sẽ tạo danh sách 20 bộ phim nhé. Ở đây thì anh em có thể nhấn cho mình là tạo danh sách 100 bộ phim được.
+
+40
+00:03:21,660 --> 00:03:31,660
+Thì cái này thì mình đã yêu cầu nó đóng gói thành cái master from chi tiết cũng như là không bị vi phạm chính sách khi mà anh em tạo video nha anh em nhé.
+
+41
+00:03:31,660 --> 00:03:44,360
+Ok đấy, trích đấu gạo này thì anh em biết là ở trong cái master from này của mình thì mình đã yêu cầu nó ghi nhớ là nó sẽ tạo ra những câu chuyện dân gian khó thật.
+
+42
+00:03:44,360 --> 00:03:45,120
+có thật nhé
+
+43
+00:03:45,380 --> 00:03:47,180
+như là những câu chuyện dân gian
+
+44
+00:03:47,440 --> 00:03:48,720
+ở Việt Nam nhé anh em nhé
+
+45
+00:03:48,960 --> 00:03:51,520
+và những cái thời điểm từ năm 1990
+
+46
+00:03:51,780 --> 00:03:52,300
+anh em nhé
+
+47
+00:03:52,560 --> 00:03:53,060
+đấy
+
+48
+00:03:53,840 --> 00:03:54,860
+cái cảnh như thế này
+
+49
+00:03:55,120 --> 00:03:57,160
+bây giờ chúng ta sẽ dựng bằng 2D
+
+50
+00:03:57,420 --> 00:03:58,440
+quả hình Việt Tây này
+
+51
+00:03:58,700 --> 00:04:00,740
+nó sẽ khá là tốt cho anh chị em
+
+52
+00:04:01,000 --> 00:04:02,280
+khi mới bắt đầu sản xuất nhé
+
+53
+00:04:02,800 --> 00:04:03,300
+Ok
+
+54
+00:04:03,560 --> 00:04:04,360
+nó sẽ lên cho anh em
+
+55
+00:04:04,360 --> 00:04:05,120
+như thế này
+
+56
+00:04:05,380 --> 00:04:06,400
+Ok thì
+
+57
+00:04:06,660 --> 00:04:09,676
+Khi đợi một lúc thì nó đã sản xuất cho anh em 20 bộ phim nhé
+
+58
+00:04:09,676 --> 00:04:16,156
+Thì nó yêu cầu anh em là sản xuất tập phim 1 hoặc là sản xuất tập phim 2, phim 3.
+
+59
+00:04:16,456 --> 00:04:17,816
+Thì anh em có thể sao chép nha.
+
+60
+00:04:18,576 --> 00:04:20,256
+Vũ tiền dưới góc phong nha.
+
+61
+00:04:20,396 --> 00:04:23,936
+Thì anh em có thể sản xuất bộ phim 002 được hay 001 được.
+
+62
+00:04:24,336 --> 00:04:27,056
+Thì nó sẽ khác toàn bộ cái bộ phim khác nha anh em nha.
+
+63
+00:04:27,056 --> 00:04:36,756
+nó chỉ có giống cái từ khóa là trích đấu vào bí mật thôi nhưng cái quan trọng ở trong cái video đấy nó vẫn có đầy đủ nhé Ok thì ở đây thì tôi
+
+64
+00:04:36,756 --> 00:04:46,456
+sẽ sản xuất cái bộ phim 002 tiền dưới góc cao nha thì anh em copy cho mình nè sau đó thì anh em dán tiếp theo cho mình và chắc xin ti nha
+
+65
+00:04:46,456 --> 00:04:56,156
+đấy thì bây giờ là nó sẽ tạo ra cho anh em là bộ phim thứ hai nha bộ phim thứ hai nó sẽ ghi là 5 tập phim và mỗi tập là 20 cảnh
+
+66
+00:04:56,156 --> 00:05:07,556
+thì mỗi cảnh 6 giây anh em nhé để anh em tiết kiệm cái credit khi anh em tạo video nhé. Đối với cái tài khoản Pell3 thì năm nay tôi nói thật anh em là nó khá là đắt
+
+67
+00:05:07,556 --> 00:05:18,356
+Chỉ bình thường là nó quá rẻ cho anh em để đầu tư. Năm ngoái thì nó chỉ có rơi vào tầm 100.000 thôi nhưng mà năm nay nếu mà anh em mua chung ấy thì
+
+68
+00:05:18,500 --> 00:05:27,813
+Nó khá là đắt ạ. Đây là nhân vật tham chiếu nhé. Đây là nhân vật tham chiếu cho tất cả bộ phim. Vùng 5
+
+69
+00:05:28,000 --> 00:05:37,127
+tập, mỗi tập dài tầm 120 giây. Anh em ghi nhớ cho mình nhé. Mỗi cảnh 6 giây. Mỗi một tập phim nó sẽ
+
+70
+00:05:37,127 --> 00:05:46,440
+là 20 cảnh. 20 cảnh này thì nó sẽ tầm 1 cảnh 6 giây. Bắt đầu là chúng ta sẽ sao chép nhanh em nhé.
+
+71
+00:05:48,500 --> 00:05:56,500
+Nó sẽ ghi cho anh em là tầm 1 này, tầm 1 trong cái bộ phim đầu tiên nhé, là chiếc mó cong này.
+
+72
+00:05:56,500 --> 00:06:04,500
+Đó, quy trình sản xuất, đây là mình đang yêu cầu nó là sử dụng quy trình là ủng tiền dưới gốc cao nhanh nhé.
+
+73
+00:06:04,500 --> 00:06:12,500
+Thì đây là, đây là anh em sau đó thì anh em nhấn sản xuất tầm 1 nhé. Đầu tiên thì nó đã ghi cho anh em cảnh tham chiếu như thế này nhé.
+
+74
+00:06:12,500 --> 00:06:18,740
+Tham chiếu như thế này anh em nhé. Ghi anh em cảnh tham chiếu như thế này thì anh em chỉ cần soundcheck form như thế này nhé.
+
+75
+00:06:19,160 --> 00:06:25,420
+Sau đó thì anh em sang cho mình cái công cụ của V3Ucha nhé. Cái này thì chúng ta không cần tool nhé, cũng nhanh nhé anh em nhé.
+
+76
+00:06:25,420 --> 00:06:28,420
+Ok thì anh em nhấn vào cái dấu cộng này
+
+77
+00:06:28,420 --> 00:06:32,020
+Tạo dự án mới nhé
+
+78
+00:06:32,020 --> 00:06:36,320
+Trong tạo dự án mới thì nó sẽ có cái model như thế này
+
+79
+00:06:36,320 --> 00:06:38,520
+thì anh em chọn cho mình là tạo hình ảnh nhé
+
+80
+00:06:38,520 --> 00:06:41,260
+Đầu tiên thì anh em tạo cho mình hình ảnh tham chiếu nhân vật
+
+81
+00:06:41,260 --> 00:06:43,520
+thì ở đây là 16.9 anh em nhé
+
+82
+00:06:43,520 --> 00:06:45,360
+Anh em dắm vào đây cho mình
+
+83
+00:06:45,420 --> 00:06:48,740
+ok và tiếp theo nhé
+
+84
+00:06:58,516 --> 00:07:08,206
+Anh em cứ chủ động cho mình là anh em cứ dán tiếp theo nhé cạnh hai
+
+85
+00:07:08,206 --> 00:07:17,896
+anh em có copy dần dần mình làm cái bước này mình sẽ ăn chậm nhé 3
+
+86
+00:07:17,896 --> 00:07:29,896
+45 Nó sẽ có nó sẽ để là nhân vật này nhé nhân vật chính anh em nhé
+
+87
+00:07:29,896 --> 00:07:38,896
+sau khi nó đã để những nhân vật chính này thì anh em có thể sử dụng form viết bục cảnh chi tiết cũng được nhé
+
+88
+00:07:38,896 --> 00:07:40,896
+hoặc không cần form vid bức ảnh nhé
+
+89
+00:07:42,096 --> 00:07:48,336
+ở đây là chúng ta sẽ đến với cái Master Prompt để tạo tiếng
+
+90
+00:07:48,500 --> 00:07:57,980
+Ở đây tạo video nhé. Ở cảnh đầu tiên thì anh em nhớ nhé. Cảnh 1 này. Cảnh 1 thì chúng ta sẽ tải ảnh nào đây. Thì anh em có thể nhìn
+
+91
+00:07:58,000 --> 00:08:07,460
+tới đây là ảnh gần tải. C1 và C2. Nghĩa là nhân vật 1 và nhân vật 2 nhé. Ok. Thì anh em nhấn vào đây cho mình. Thì anh em nhấn tạo thêm
+
+92
+00:08:07,460 --> 00:08:16,940
+này. Thêm này. Thì nó sẽ là nhân vật 1, nhân vật 2, nhân vật 3 và nhân vật 4 nhé. Sau đó thì anh em sẽ lựa chọn cho mình video nhé.
+
+93
+00:08:16,940 --> 00:08:26,173
+Ở đây thì tôi nghĩ anh em dùng phiên bản Omni 1.1 Flash nhé, thì anh em chọn cho tôi 720 và 6 giây này. Đối
+
+94
+00:08:26,173 --> 00:08:35,407
+với video dài anh em nhé, đây là chúng ta đang sản xuất video dài nhé. Ok anh em tạo cho mình. Đấy, cái thứ 2 này.
+
+95
+00:08:35,407 --> 00:08:44,640
+Nó sẽ cũng là dùng ảnh tham chiếu 1 nhé, ảnh tham chiếu 2 này anh em. Thì anh em trở lại cái ứng dụng này.
+
+96
+00:08:44,640 --> 00:08:52,080
+và ảnh tham chiếu 2 và ảnh tham chiếu 1
+
+97
+00:08:52,080 --> 00:08:56,460
+cái này thì anh em cứ để tham chiếu như cũ nhé
+
+98
+00:08:56,460 --> 00:08:58,320
+ảnh tham chiếu 3
+
+99
+00:08:58,320 --> 00:09:04,640
+Cảnh form thứ 3 anh em nhé
+
+100
+00:09:04,640 --> 00:09:07,960
+Đây là bộ phim Hoạt Thình nhé
+
+101
+00:09:07,960 --> 00:09:11,800
+Tôi sẽ tạo tầm 10 cạnh anh em nhé
+
+102
+00:09:11,800 --> 00:09:18,980
+Để cho anh em xem nó đỡ bị lâu nhé, tốn thời gian nhé
+
+103
+00:09:18,980 --> 00:09:24,640
+Kể cả cái này anh em có thể làm cái bộ phim dài tầm 1 tiếng
+
+104
+00:09:24,640 --> 00:09:29,520
+Ví dụ như những cái form nào thì anh em để ý lại
+
+105
+00:09:29,520 --> 00:09:32,320
+Đây là chỉ cần một cái hình ảnh tham chiếu đầu tiên nhé
+
+106
+00:09:32,320 --> 00:09:35,466
+Anh em thêm cho mình nhé
+
+107
+00:09:35,466 --> 00:09:44,366
+Ok cảnh thứ 3 và cảnh thứ 1 anh em nhé anh em để ý nhé đây là nhân vật 3 và nhân
+
+108
+00:09:44,366 --> 00:09:53,266
+vật 1 thì anh em thêm cho mình nhân vật 3 này nhân vật 1 này anh em dán form mà được nhé
+
+109
+00:09:53,266 --> 00:10:01,146
+cái phong cách bối cảnh thì nó đã nhất khoáng mình đã hiểu ở trong mắt con mình anh em nhé
+
+110
+00:10:01,146 --> 00:10:03,146
+Nhân vật 1, Nhân vật 3
+
+111
+00:10:03,146 --> 00:10:07,146
+Mình sẽ tạo tạm cho 10 cảnh
+
+112
+00:10:07,146 --> 00:10:11,146
+Tại vì 1 tập phim nó là 20 cảnh
+
+113
+00:10:15,146 --> 00:10:19,146
+Nhân vật tham chiếu thứ 2, nhân vật tham chiếu thứ 3
+
+114
+00:10:19,146 --> 00:10:25,146
+Tại sao nó đánh cái CHR01
+
+115
+00:10:25,146 --> 00:10:29,146
+Ví dụ nhé, cái CHR đầu tiên thì nó là cái ảnh tham chiếu
+
+116
+00:10:29,146 --> 00:10:31,146
+yaitu
+
+117
+00:10:32,400 --> 00:10:42,840
+anh em copy cho mình 123 anh em thêm vào 12 mình đang làm rất là chậm cho anh em không phải vối mắt thì cái
+
+118
+00:10:42,840 --> 00:10:53,280
+bước tạo video nha thì ở đây là 321 là thì nó cũng giống cái cảnh này luôn thì anh em có thể dán vào đây
+
+119
+00:10:53,280 --> 00:11:03,080
+Cảnh tiếp theo là cảnh thứ nhất anh em có thể xóa đi nhân vật thì anh em up lên thì đây là 10 cảnh nha nha nha Đây
+
+120
+00:11:03,080 --> 00:11:12,880
+là mình đang tạo người cảnh này thực ra nó là 20 cảnh là một tập thì khi hết tầm 1 nha anh em nhé anh em anh em nhấn
+
+121
+00:11:12,880 --> 00:11:22,680
+tiết cho mình sản xuất tập 2 anh em nhé anh em ghi sản xuất tập 2 thì nó sẽ lối liền ở cái cảnh ở cái tầm 1
+
+122
+00:11:22,680 --> 00:11:32,280
+Ví dụ nhé, một bộ phim nó có tầm 30 tập đúng không? Thì nó tầm 1 là cái gì, tầm 2 là cái gì, tầm 3 là cái gì và toàn bộ video nó sẽ
+
+123
+00:11:32,280 --> 00:11:41,880
+xuyên suốt trong một bộ phim như thế. Thì anh em cứ nhấn cho mình sản xuất tầm 2, tầm 3 nhé. Ok, thì anh em có thể xem, mình sẽ edit cho anh em xem nhé.
+
+124
+00:11:41,880 --> 00:11:52,500
+anh em tại về cái này anh em không cần làm tun đâu một ngày em có thể sản xuất được video tầm
+
+125
+00:11:52,500 --> 00:11:57,420
+một tiếng hai tiếng điểm được nha chứ không nhất thiết là anh em phải dùng tùm với nhất quán được
+
+126
+00:11:57,420 --> 00:12:00,401
+anh em bỏ qua chung nếu mà anh em là người mới
+
+127
+00:12:00,401 --> 00:12:07,341
+Nguyên mới có khi là anh em dùng tool thì anh em sẽ bị trứng lại và không hiểu là mình đang làm cái gì.
+
+128
+00:12:08,121 --> 00:12:13,921
+Ok, thì đây là cái toàn bộ những cái cảnh mà mình đã thải về nha anh em nha.
+
+129
+00:12:18,141 --> 00:12:28,008
+anh em có thể xem nào ok đây mình làm rất xin nhất anh em chéo bằng xong thì anh em có
+
+130
+00:12:28,008 --> 00:12:37,874
+thể xem qua bộ phim này ở đây thì anh em có thể cắt nhé bạn sau thì nó nó thừa như này
+
+131
+00:12:37,874 --> 00:12:47,741
+thì anh em có thể thêm vào đây cắt đi anh em thủ động cắt nhé Tại vì là nó tùy có
+
+132
+00:12:47,741 --> 00:12:51,661
+Cái cảnh nó dài mình không cần cắt luôn. Ok anh em hãy xem đây nhé.
+
+133
+00:12:54,000 --> 00:12:57,601
+Mẹ ơi, đêm khuya rồi, mẹ cất thứ gì dưới gốc cao thế?
+
+134
+00:12:59,021 --> 00:13:02,141
+Chút đồ cũ thôi con, mẹ cất xong rồi vào nghỉ ngay đây.
+
+135
+00:13:04,401 --> 00:13:07,701
+Mẹ có chuyện gì cần lo, cứ nói để con còn biết giúp chứ.
+
+136
+00:13:08,981 --> 00:13:12,801
+Mẹ biết con thương mẹ, cứ để mẹ tự thu xếp việc nhỏ này.
+
+137
+00:13:13,850 --> 00:13:18,850
+Sáng hôm sau, sân nhà bà Năm vẫn yên bình như mọi ngày.
+
+138
+00:13:21,930 --> 00:13:25,590
+Mẹ ơi, áo mẹ sờn rồi, hôm chợ tới con mua vải mới nhá.
+
+139
+00:13:27,670 --> 00:13:31,370
+Áo này vẫn tốt, tiền còn để dành cho những việc cần hơn con ạ.
+
+140
+00:13:33,670 --> 00:13:36,870
+Mẹ cứ dành dụm mãi, chẳng chịu sắm sửa gì cho chính mình.
+
+141
+00:13:36,890 --> 00:13:41,990
+Ok, đấy là cái quy trình mà sản xuất ra những cái video như thế này nha anh em nhá.
+
+142
+00:13:41,990 --> 00:13:51,983
+Đây là một cách mà anh em sản xuất video hòa đình nhé thì anh em sẽ làm dài cho mình nhé thì anh em có thể làm tầm 17 phút cũng được nhé
+
+143
+00:13:51,983 --> 00:14:01,977
+anh em làm 1 tập 2 tập thì anh em có thể ghi là sản xuất cho tôi 1 bộ phim tầm 17 phút 20 phút đều được nhé thì nó sẽ ghi cho anh
+
+144
+00:14:01,977 --> 00:14:11,970
+em là anh em chỉ cần ghi xuống luôn anh em chỉ cần ghi ở dưới master from này nhé anh em nhé đây là 1 master from này thì để lớn cấp cái
+
+145
+00:14:11,970 --> 00:14:19,270
+truy cập vào cái đường link mà Master Chrome này nha anh em nha. Thì anh em có thể nhấn vào cái nâng cấp Pro nha anh em nha.
+
+146
+00:14:19,270 --> 00:14:32,470
+Nâng cấp Pro thì mình sẽ để cho anh em bộ nha. Ví dụ như cái bộ mà bộ mà khóa học kiểu như là nó mình mới update lên nó chỉ có 1 video nó chỉ tầm rơi vào tầm 9.9
+
+147
+00:14:32,470 --> 00:14:39,970
+nó chỉ rơi vào tầm 9.9 đến 100.000 anh em nha để cho những anh em người mới có thể sản xuất nha. Ok, chào anh em.

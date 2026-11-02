@@ -1,12 +1,12 @@
 ---
 handle: "@StudyClasses_sa"
-name: "Saba study Classes"
+name: "@StudyClasses_sa"
 url: "https://www.youtube.com/@StudyClasses_sa"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @StudyClasses_sa (Saba study Classes)
+# Kênh Đối Thủ / Kênh Mẫu: @StudyClasses_sa (@StudyClasses_sa)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@StudyClasses_sa](https://www.youtube.com/@StudyClasses_sa)

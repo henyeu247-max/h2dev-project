@@ -607,7 +607,7 @@
         "title": "Bộ Công Thức Kịch Bản Câu 3 Tương Tác & Thông Số Kỹ Thuật CapCut Shorts PK Đu Trend (Master Prompt)",
         "file": "assets/docs-dgmd/VIDEO-f97cd2/master_prompt.md",
         "readFile": "assets/docs-dgmd/VIDEO-f97cd2/master_prompt.md",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-f97cd2/master_prompt.md"
+        "link": "assets/docs-dgmd/VIDEO-f97cd2/master_prompt.md"
       }
     ],
     "key_timestamps": [
@@ -715,7 +715,7 @@
         "title": "Bộ Master Prompt Toàn Diện: Tạo Bộ 3 Ảnh Góc Đồng Hồ 11h–1h & Kịch Bản Sự Khác Nhau Là Gì (Master Prompt)",
         "file": "assets/docs-dgmd/VIDEO-a18f2a/master_prompt.md",
         "readFile": "assets/docs-dgmd/VIDEO-a18f2a/master_prompt.md",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-a18f2a/master_prompt.md"
+        "link": "assets/docs-dgmd/VIDEO-a18f2a/master_prompt.md"
       },
       {
         "title": "Tài Liệu Gốc 11 Trang Google Docs: MASTER PROMPT – PHÂN TÍCH 2 THỨ DỄ NHẦM THEO PHONG CÁCH BỐ LÁO (doc_1.txt)",
@@ -727,7 +727,7 @@
         "title": "Bản Sao Lưu Master Prompt Gốc: Phân Tích 2 Thứ Dễ Nhầm Theo Phong Cách Bố Láo (master_prompt.txt)",
         "file": "assets/docs-dgmd/VIDEO-a18f2a/master_prompt.txt",
         "readFile": "assets/docs-dgmd/VIDEO-a18f2a/master_prompt.txt",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-a18f2a/master_prompt.txt"
+        "link": "assets/docs-dgmd/VIDEO-a18f2a/master_prompt.txt"
       }
     ],
     "key_timestamps": [
@@ -879,7 +879,8 @@
       "Quy tắc thời điểm vàng quyết định tỷ lệ về kênh: Khi kênh vừa bị bot YouTube quét xóa, tuyệt đối không bấm kháng nghị ngay lập tức mà phải chờ ít nhất 1 ngày (24 giờ) đến 4 ngày rồi mới gửi đơn.",
       "Không cần viết đơn dài dòng hay cầu kỳ bằng ngoại ngữ: Chỉ cần sao chép nguyên văn nội dung email thông báo xóa kênh của YouTube trong Gmail (ví dụ lỗi 'Chính sách đối với hành vi lách quy định') dán thẳng vào ChatGPT.",
       "Sử dụng câu lệnh đơn giản nhưng cực kỳ hiệu quả: 'dựa vào gmail này , bạn hãy cho tôi xin 1 mẫu kháng kênh youtube , ngắn gọn dễ hiểu' để ChatGPT sinh ra bức thư giải trình lịch sự, yêu cầu nhân viên YouTube xem xét thủ công.",
-      "Khung nhập kháng nghị trực tiếp tại studio.youtube.com/channel-appeal giới hạn tối đa 800 ký tự; mẫu văn bản của ChatGPT dài khoảng 683/800 ký tự vừa khít tiêu chuẩn và giúp lấy lại kênh chỉ sau hơn 10 giờ."
+      "Khung nhập kháng nghị trực tiếp tại studio.youtube.com/channel-appeal giới hạn tối đa 800 ký tự; mẫu văn bản của ChatGPT dài khoảng 683/800 ký tự vừa khít tiêu chuẩn và giúp lấy lại kênh chỉ sau hơn 10 giờ.",
+      "Hôm nay, mình sẽ hướng dẫn anh em kháng kênh YouTube bị die. Do YouTube quét, nhưng YouTube không biết đây là kênh của thầy giáo mang dép."
     ],
     "edit_sop": {
       "primary": "Quy trình 5 bước dùng ChatGPT kháng nghị khôi phục kênh YouTube bị quét xóa trong YouTube Studio",
@@ -916,15 +917,96 @@
         "title": "Master Prompt & Mẫu Văn Kháng Kênh YouTube Bị Xóa (Tiếng Việt 683/800 Ký Tự + Tiếng Anh)",
         "file": "assets/docs-dgmd/VIDEO-38145b/master_prompt.md",
         "readFile": "assets/docs-dgmd/VIDEO-38145b/master_prompt.md",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-38145b/master_prompt.md"
+        "link": "assets/docs-dgmd/VIDEO-38145b/master_prompt.md"
       },
       {
         "title": "Mẫu Đơn Kháng Nghị Khôi Phục Kênh YouTube Bị Xóa Nhầm (ChatGPT Appeal TXT)",
         "file": "assets/docs-dgmd/VIDEO-38145b/master_prompt.txt",
         "readFile": "assets/docs-dgmd/VIDEO-38145b/master_prompt.txt",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-38145b/master_prompt.txt"
+        "link": "assets/docs-dgmd/VIDEO-38145b/master_prompt.txt"
       }
     ]
+  },
+  "VIDEO-583a09": {
+    "sku": "VIDEO-583a09",
+    "title": "Khắc phục tình trạng 0 view để tạo kênh mới ",
+    "actual_topic": "Mẹo Khắc Phục Tình Trạng Kênh YouTube Mới Bị 0 View Bằng Cách Tạo Kênh Phụ Trên Gmail Đã Có Kênh Lớn",
+    "summary": "Chia sẻ kinh nghiệm thực chiến khắc phục triệt để tình trạng kênh YouTube mới lập bị 0 lượt xem bằng phương pháp tạo kênh thương hiệu mới trực tiếp trên tài khoản Gmail đang sở hữu kênh có lượng xem cao, sau đó chuyển quyền sang Gmail riêng sau 7 ngày.",
+    "category_group": "chuyen_gia",
+    "niche_primary": "Kỹ Thuật Khởi Tạo Kênh YouTube & Phá Băng Đề Xuất",
+    "niche_id": "fix-zero-view-new-channel",
+    "target_market": "Việt Nam & Toàn Cầu",
+    "market_code": "VN_GLOBAL",
+    "key_takeaways": [
+      "Tận dụng độ uy tín của tài khoản Gmail đang quản lý kênh YouTube đã thành công (có lượt xem và tương tác cao) để tạo kênh mới giúp vượt qua giai đoạn bị kẹt 0 lượt xem.",
+      "Dù kênh gốc trên Gmail là kênh tiếng Việt nhưng kênh mới tạo trên cùng Gmail đó làm nội dung tiếng Anh hướng tới khán giả Nhật Bản (chiếm tới 93% người xem) vẫn được thuật toán phân phối mạnh.",
+      "Thao tác khởi tạo đơn giản ngay trong mục Cài đặt của YouTube: Nhấn vào ảnh đại diện, vào phần Cài đặt, chọn Tạo kênh mới để hưởng trọn vẹn độ tin cậy từ Gmail gốc.",
+      "Sau khoảng 7 ngày khi kênh mới đã bắt đầu cắn đề xuất và lên lượt xem ổn định, tiến hành cấp quyền và chuyển kênh thương hiệu đó sang một tài khoản Gmail độc lập để quản lý an toàn.",
+      "Hôm nay tôi sẽ chia sẻ cho anh em một cách khắc phục tình trạng kênh mới không view"
+    ],
+    "edit_sop": {
+      "primary": "Quy trình 4 bước tạo kênh YouTube mới trên Gmail đã có kênh lớn để phá băng tình trạng 0 lượt xem và tách Gmail sau 7 ngày.",
+      "additional": [
+        "Đăng nhập vào tài khoản Gmail đang sở hữu ít nhất một kênh YouTube hoạt động tốt, đã có lượt xem và độ uy tín cao.",
+        "Nhấn vào biểu tượng ảnh đại diện góc phải trên YouTube, truy cập mục Cài đặt và chọn tính năng Tạo kênh mới để lập kênh thương hiệu.",
+        "Thiết lập thông tin kênh mới, đăng tải video đều đặn trong 3 đến 5 ngày đầu để thuật toán YouTube tự động phân phối tới đúng tệp khán giả mục tiêu.",
+        "Sau 7 ngày khi kênh mới đã có đà tăng trưởng lượt xem tự nhiên, thực hiện chuyển quyền chủ sở hữu kênh thương hiệu sang một Gmail mới riêng biệt."
+      ]
+    },
+    "sop_steps": [
+      "Đăng nhập vào tài khoản Gmail đang sở hữu ít nhất một kênh YouTube hoạt động tốt, đã có lượt xem và độ uy tín cao.",
+      "Nhấn vào biểu tượng ảnh đại diện góc phải trên YouTube, truy cập mục Cài đặt và chọn tính năng Tạo kênh mới để lập kênh thương hiệu.",
+      "Thiết lập thông tin kênh mới, đăng tải video đều đặn trong 3 đến 5 ngày đầu để thuật toán YouTube tự động phân phối tới đúng tệp khán giả mục tiêu.",
+      "Sau 7 ngày khi kênh mới đã có đà tăng trưởng lượt xem tự nhiên, thực hiện chuyển quyền chủ sở hữu kênh thương hiệu sang một Gmail mới riêng biệt."
+    ],
+    "avoid_flags": [
+      "Lập hàng loạt kênh mới trên những tài khoản Gmail trắng vừa tạo chưa có lịch sử hoạt động khiến video đăng lên dễ bị chôn chân ở mức 0 lượt xem.",
+      "Chuyển kênh sang Gmail khác ngay lập tức khi vừa tạo xong thay vì đợi đủ 7 ngày để hệ thống ghi nhận độ tin cậy và phân phối lượt xem ổn định."
+    ],
+    "tools_mentioned": [
+      "YouTube",
+      "Gmail"
+    ],
+    "channels_mentioned": [],
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Nguyên nhân kênh YouTube mới tạo bị tình trạng 0 lượt xem và tư duy mượn độ uy tín từ Gmail cũ"
+      },
+      {
+        "seconds": 9,
+        "time": "00:09",
+        "label": "Phân tích bài toán khởi tạo kênh mới trên thị trường YouTube để video đầu tiên được đề xuất ngay"
+      },
+      {
+        "seconds": 43,
+        "time": "00:43",
+        "label": "Tuyệt chiêu dùng chung Gmail của kênh lớn đã có lượt xem cao để tạo kênh thương hiệu mới"
+      },
+      {
+        "seconds": 63,
+        "time": "01:03",
+        "label": "Minh chứng thực tế kênh mới tạo trên cùng Gmail bắt đầu cắn đề xuất và lên lượt xem tự nhiên"
+      },
+      {
+        "seconds": 125,
+        "time": "02:05",
+        "label": "Thao tác chi tiết vào mục Cài đặt YouTube để tạo kênh mới trực tiếp trên tài khoản Gmail đang khỏe"
+      },
+      {
+        "seconds": 147,
+        "time": "02:27",
+        "label": "Quy trình tách và chuyển quyền sở hữu kênh thương hiệu sang Gmail riêng sau 7 ngày khi kênh đã có đà"
+      }
+    ],
+    "course_docs": [],
+    "analysis_method": "agv_3.8_multimodal_7layer_verified",
+    "accuracy_status": "GROUNDED_VERIFIED",
+    "visual_audio_checked": true,
+    "verified_expert_summary": true,
+    "claims_require_external_verification": false,
+    "source_transcript": "video/VIDEO-583a09/transcript.txt"
   },
   "VIDEO-d4f7e6": {
     "sku": "VIDEO-d4f7e6",
@@ -1032,7 +1114,7 @@
         "title": "Master Prompt Quy Trình Sản Xuất Video Jesus Shorts 9:16 (ChatGPT + Google Flow + Grok Imagine)",
         "file": "assets/docs-dgmd/VIDEO-d4f7e6/master_prompt.md",
         "readFile": "assets/docs-dgmd/VIDEO-d4f7e6/master_prompt.md",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-d4f7e6/master_prompt.md"
+        "link": "assets/docs-dgmd/VIDEO-d4f7e6/master_prompt.md"
       }
     ]
   },
@@ -1111,7 +1193,8 @@
       "Hai kênh mẫu thực tế trên màn hình là Triệu Que Củi (@TrieuNe05 — 363N sub, 283 video, 391 triệu lượt xem) và Đảo Chiều (@daochieu037 — 1,17M sub, 1,2N video) chứng minh mỏ vàng nội dung Douyin khi được thuyết minh bình luận hài hước bằng tiếng Việt có khả năng kéo hàng trăm triệu view cực nhanh.",
       "Điểm đột phá của quy trình là sử dụng khả năng nhìn trực tiếp file video (Multimodal Video Understanding) của Google Gemini: Sau khi nạp Master Prompt 10 bước, học viên tải thẳng file .mp4 tải từ Douyin lên Gemini để AI tự xem từng giây và viết 3 phiên bản kịch bản (Hài hước, Cà khịa, Kể chuyện) khớp chính xác thời lượng theo công thức 2.5 - 3 từ/giây.",
       "Cách khai thác kho video Douyin vô tận: Đăng ký tài khoản Douyin bằng số điện thoại Việt Nam, dùng Google Dịch chuyển các từ khóa ngách (động vật hài hước, ăn uống, giải trí, gia đình) sang tiếng Trung rồi dán vào thanh tìm kiếm Douyin và tải video không logo qua công cụ tải video Douyin (Snaptik Douyin).",
-      "Công thức hậu kỳ tốc độ cao trên CapCut Pro: Tách kịch bản theo từng mốc 4 giây (0-4s, 4-8s, 8-12s), dùng tính năng Chuyển văn bản thành lời nói giọng 'Cô gái hoạt ngôn', đẩy tốc độ đọc lên 1.2x kèm bật 'Thay đổi âm thanh độ cao', chạy Phụ đề tự động tiếng Việt và phủ lớp Bộ lọc '4K' lên toàn bộ video."
+      "Công thức hậu kỳ tốc độ cao trên CapCut Pro: Tách kịch bản theo từng mốc 4 giây (0-4s, 4-8s, 8-12s), dùng tính năng Chuyển văn bản thành lời nói giọng 'Cô gái hoạt ngôn', đẩy tốc độ đọc lên 1.2x kèm bật 'Thay đổi âm thanh độ cao', chạy Phụ đề tự động tiếng Việt và phủ lớp Bộ lọc '4K' lên toàn bộ video.",
+      "Chào anh chị em học viên, hôm nay chúng ta đến với cái bài sản xuất video short trên nền tảng YouTube. Anh em có thể nhìn thấy 2 kênh YouTube này, tôi đang lấy 2 kênh để"
     ],
     "edit_sop": {
       "primary": "Quy trình sản xuất Shorts review hài hước từ nguồn Douyin bằng Google Gemini + CapCut Pro",
@@ -1149,7 +1232,7 @@
         "title": "Master Prompt AI Chuyên Gia Phân Tích Video Ngắn Douyin & Viết Kịch Bản Review Hài Hước (Markdown)",
         "file": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.md",
         "readFile": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.md",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-dd1345/master_prompt.md"
+        "link": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.md"
       },
       {
         "title": "Tài Liệu Gốc Master Prompt Video Douyin (Google Docs TXT)",
@@ -1161,7 +1244,7 @@
         "title": "Bản Sao Master Prompt Video Douyin (TXT)",
         "file": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.txt",
         "readFile": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.txt",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-dd1345/master_prompt.txt"
+        "link": "assets/docs-dgmd/VIDEO-dd1345/master_prompt.txt"
       }
     ]
   },
@@ -1928,7 +2011,8 @@
       "Ngách hướng dẫn bài tập giãn cơ / yoga kết hợp nhân vật 3D quen thuộc (như Rumi, Spiderman) thu hút lượng người xem lớn nhờ hình ảnh trực quan dễ tập theo.",
       "Sử dụng câu lệnh chuẩn để yêu cầu AI liệt kê chi tiết các động tác yoga/giãn cơ kèm lời dẫn hướng dẫn tập luyện từng bước.",
       "Tạo nhạc nền thư giãn bằng Suno và dùng giọng đọc AI truyền cảm cho phần lời dẫn mở đầu bằng tiếng Việt ('Chỉ cần 5 phút mỗi ngày...').",
-      "Đưa hình ảnh động tác, giọng đọc và nhạc nền vào CapCut, tách nền nhân vật đặt lên thảm tập và thêm đồng hồ đếm ngược cho từng bài tập."
+      "Đưa hình ảnh động tác, giọng đọc và nhạc nền vào CapCut, tách nền nhân vật đặt lên thảm tập và thêm đồng hồ đếm ngược cho từng bài tập.",
+      "Chào anh chị em học viên. Hôm nay chúng ta đến với bài học yoga. Và đến với bài học này thì một bài"
     ],
     "category_group": "chuyen_gia",
     "niche_primary": "Hoạt Hình 3D Tập Yoga & Sức Khỏe (Kids / Character Yoga)",
@@ -2249,7 +2333,8 @@
       "Ngách video bảng xếp hạng (Ranking / Top List) có ưu điểm giữ chân người xem từ đầu đến cuối vì khán giả luôn tò mò vị trí số 1.",
       "Dùng AI để tổng hợp danh sách xếp hạng, thông số so sánh và tạo các khung hình minh họa đồng bộ theo tỷ lệ khung hình chuẩn.",
       "Khi dựng trên CapCut, sắp xếp thứ tự đếm ngược rõ ràng, kết hợp hiệu ứng chuyển cảnh mượt mà và xuất file ở tốc độ khung hình 60fps.",
-      "Có thể mở rộng mô hình kênh xếp hạng ra thị trường quốc tế để đạt doanh thu khoảng 2.000 – 3.000 USD/tháng khi kênh lên đề xuất."
+      "Có thể mở rộng mô hình kênh xếp hạng ra thị trường quốc tế để đạt doanh thu khoảng 2.000 – 3.000 USD/tháng khi kênh lên đề xuất.",
+      "Chào anh chị em học viên, hôm nay chúng ta đến với chủ đề view ngoại, video ngắn và chủ đề ở đây là chủ đề xếp hạng."
     ],
     "channels_mentioned": [
       "@Oogway_Ranks",
@@ -2614,6 +2699,108 @@
       "Khi ghi tên nhân vật lên video, bắt buộc phải có dòng chữ tiếng Nhật chuẩn (Kanji/Kana lấy từ bảng ChatGPT); tuyệt đối không viết phiên âm tiếng Việt (như 'Si-zu-ka' hay 'Chai-en') vì người xem Nhật Bản sẽ không hiểu.",
       "Khi xuất bản video trên CapCut PC, chỉ chọn độ phân giải 720p hoặc 1080p (tuyệt đối không xuất 2K/4K gây nặng file vô ích vì đây là video trình chiếu hình ảnh), và hoàn toàn có thể tận dụng kênh Shorts Việt sẵn có chuyển sang đăng video dài View Nhật, kiên trì chờ 5–20 ngày để thuật toán đẩy đề xuất."
     ]
+  },
+  "VIDEO-7e6773": {
+    "sku": "VIDEO-7e6773",
+    "title": "Quy Trình Sản Xuất Video Ghibli ASMR ",
+    "actual_topic": "Quy Trình Sản Xuất Phim Hoạt Hình Ghibli ASMR Gia Đình Trong Mưa Bão Hướng Tới Thị Trường Hoa Kỳ Và Nhật Bản",
+    "summary": "Hướng dẫn vận hành bộ Master Prompt V4.0 (Japanese Cozy Storm ASMR Animation Universe) để tự động lên 100 ý tưởng và sản xuất chuỗi video hoạt hình phong cách Ghibli ASMR dài 8 đến 10 phút nhắm vào khán giả Hoa Kỳ và Nhật Bản.",
+    "category_group": "view_ngoai",
+    "niche_primary": "Hoạt Hình Ghibli ASMR Mưa Bão & Gia Đình Ấm Cúng",
+    "niche_id": "ghibli-storm-asmr-animation",
+    "target_market": "Hoa Kỳ & Nhật Bản",
+    "market_code": "US_JP",
+    "key_takeaways": [
+      "Chủ đề hoạt hình phong cách Ghibli kết hợp âm thanh ASMR thiên nhiên (mưa bão bên ngoài ngôi nhà ấm áp) đang bùng nổ lượt xem tại thị trường Hoa Kỳ và Nhật Bản.",
+      "Bộ Master Prompt V4.0 tự động khởi tạo danh sách 100 ý tưởng bộ phim độc lập (từ mã G001 đến G100) giúp người làm xây dựng lộ trình đăng tải xuyên suốt trên một kênh.",
+      "Mỗi bộ phim được thiết kế với thời lượng dài từ 8 đến 10 phút, chia thành các cụm phân cảnh liên hoàn (từ cảnh 1 đến cảnh 20, rồi tiếp tục từ cảnh 21 đến cảnh 40).",
+      "Tích hợp chi tiết chỉ dẫn âm thanh ASMR sống động (tiếng mưa đập vào cửa kính, tiếng sấm rền xa, tiếng củi cháy lách tách và tiếng nấu ăn trong bếp) trong từng câu lệnh tạo video.",
+      "thì anh em chỉ sử dụng là nhân mục đầu tiên nha anh em em."
+    ],
+    "edit_sop": {
+      "primary": "Quy trình sản xuất bộ phim hoạt hình Ghibli ASMR mưa bão dài 8 đến 10 phút bằng Master Prompt V4.0 cho thị trường Hoa Kỳ và Nhật Bản.",
+      "additional": [
+        "Sao chép bộ Master Prompt V4.0 Japanese Cozy Storm ASMR dán vào trình tạo văn bản AI để xuất danh sách 100 ý tưởng phim từ G001 đến G100.",
+        "Chọn mã bộ phim đầu tiên (G001) để hệ thống sinh bảng thiết kế nhân vật gia đình và bối cảnh ngôi nhà truyền thống Nhật Bản giữa đêm bão.",
+        "Tạo hình ảnh tham chiếu nhân vật gốc rồi yêu cầu xuất câu lệnh chi tiết theo từng cụm từ cảnh 1 đến cảnh 20 và từ cảnh 21 đến cảnh 40.",
+        "Đưa ảnh tham chiếu cùng từng câu lệnh phân cảnh vào công cụ tạo video để kết xuất hình ảnh chuyển động kèm âm thanh ASMR mưa bão và ghép thành phim dài 8 đến 10 phút."
+      ]
+    },
+    "sop_steps": [
+      "Sao chép bộ Master Prompt V4.0 Japanese Cozy Storm ASMR dán vào trình tạo văn bản AI để xuất danh sách 100 ý tưởng phim từ G001 đến G100.",
+      "Chọn mã bộ phim đầu tiên (G001) để hệ thống sinh bảng thiết kế nhân vật gia đình và bối cảnh ngôi nhà truyền thống Nhật Bản giữa đêm bão.",
+      "Tạo hình ảnh tham chiếu nhân vật gốc rồi yêu cầu xuất câu lệnh chi tiết theo từng cụm từ cảnh 1 đến cảnh 20 và từ cảnh 21 đến cảnh 40.",
+      "Đưa ảnh tham chiếu cùng từng câu lệnh phân cảnh vào công cụ tạo video để kết xuất hình ảnh chuyển động kèm âm thanh ASMR mưa bão và ghép thành phim dài 8 đến 10 phút."
+    ],
+    "avoid_flags": [
+      "Chỉ sản xuất vài video ngắn ngủi rời rạc thay vì bám sát lộ trình 100 bộ phim (G001 đến G100) để thuật toán YouTube nhận diện đúng tệp khán giả Hoa Kỳ và Nhật Bản.",
+      "Yêu cầu xuất một lần toàn bộ hàng chục cảnh khiến câu lệnh bị cắt cụt thay vì chia nhỏ quy trình xuất từ cảnh 1 đến 20 rồi tiếp nối từ cảnh 21 đến 40."
+    ],
+    "tools_mentioned": [
+      "YouTube"
+    ],
+    "channels_mentioned": [],
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Giới thiệu ngách hoạt hình Ghibli ASMR chủ đề gia đình trong mưa bão đang thịnh hành tại Mỹ và Nhật"
+      },
+      {
+        "seconds": 52,
+        "time": "00:52",
+        "label": "Chiến lược xây kênh 100 video từ bộ Master Prompt V4.0 hướng tới khán giả Hoa Kỳ và Nhật Bản"
+      },
+      {
+        "seconds": 187,
+        "time": "03:07",
+        "label": "Kích hoạt Master Prompt tự động lập danh sách 100 ý tưởng kịch bản phim hoạt hình mưa bão 8 đến 10 phút"
+      },
+      {
+        "seconds": 317,
+        "time": "05:17",
+        "label": "Thiết lập tạo hình ảnh tham chiếu nhân vật gia đình và bối cảnh ngôi nhà gỗ ấm cúng dưới cơn bão"
+      },
+      {
+        "seconds": 454,
+        "time": "07:34",
+        "label": "Quy trình sinh chuỗi câu lệnh chuyển động và âm thanh ASMR tiếng mưa rơi, gió thổi, lửa trại"
+      },
+      {
+        "seconds": 601,
+        "time": "10:01",
+        "label": "Sản xuất cuốn chiếu từng cụm 10 đến 20 phân cảnh nối tiếp nhau để hoàn thiện bộ phim 8 phút"
+      }
+    ],
+    "course_docs": [
+      {
+        "title": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Sản Xuất Video Ghibli ASMR (master_prompt.md)",
+        "name": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Sản Xuất Video Ghibli ASMR (master_prompt.md)",
+        "file": "assets/docs-dgmd/VIDEO-7e6773/master_prompt.md",
+        "readFile": "assets/docs-dgmd/VIDEO-7e6773/master_prompt.md",
+        "link": "https://docs.google.com/document/d/15wYqylvk_CTRHyxaNpy_IBxYgJ7yMd2PvaxDnfeIT_Q/edit?usp=sharing"
+      },
+      {
+        "title": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Video Ghibli ASMR (doc_1.txt)",
+        "name": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Video Ghibli ASMR (doc_1.txt)",
+        "file": "assets/docs-dgmd/VIDEO-7e6773/doc_1.txt",
+        "readFile": "assets/docs-dgmd/VIDEO-7e6773/doc_1.txt",
+        "link": "https://docs.google.com/document/d/15wYqylvk_CTRHyxaNpy_IBxYgJ7yMd2PvaxDnfeIT_Q/edit?usp=sharing"
+      },
+      {
+        "title": "Mô tả bài giảng gốc: Quy Trình Sản Xuất Video Ghibli ASMR (description.txt)",
+        "name": "Mô tả bài giảng gốc: Quy Trình Sản Xuất Video Ghibli ASMR (description.txt)",
+        "file": "assets/docs-dgmd/VIDEO-7e6773/description.txt",
+        "readFile": "assets/docs-dgmd/VIDEO-7e6773/description.txt",
+        "link": "assets/docs-dgmd/VIDEO-7e6773/description.txt"
+      }
+    ],
+    "analysis_method": "agv_3.8_multimodal_7layer_verified",
+    "accuracy_status": "GROUNDED_VERIFIED",
+    "visual_audio_checked": true,
+    "verified_expert_summary": true,
+    "claims_require_external_verification": false,
+    "source_transcript": "video/VIDEO-7e6773/transcript.txt"
   },
   "VIDEO-77e80c": {
     "sku": "VIDEO-77e80c",
@@ -3929,6 +4116,110 @@
     "source_transcript": "video/VIDEO-c0353f/transcript.txt",
     "accuracy_status": "GROUNDED_VERIFIED",
     "visual_audio_checked": true
+  },
+  "VIDEO-e02e02": {
+    "sku": "VIDEO-e02e02",
+    "title": "Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay",
+    "actual_topic": "Quy Trình Sản Xuất Phim Hoạt Hình 2D Vẽ Tay Bối Cảnh Làng Quê Việt Nam Xưa Bằng Master Prompt V2.0 Đa Nền Tảng",
+    "summary": "Hướng dẫn sử dụng bộ Master Prompt V2.0 (Vietnam Old Village Family 2D Animation) trên ChatGPT để sản xuất phim hoạt hình 2D vẽ tay bối cảnh làng quê Việt Nam xưa, tối ưu đăng đa nền tảng YouTube và Facebook kèm gắn tiếp thị liên kết.",
+    "category_group": "chuyen_gia",
+    "niche_primary": "Hoạt Hình 2D Vẽ Tay Làng Quê Việt Nam & Truyện Gia Đình",
+    "niche_id": "vn-old-village-2d-animation",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
+    "key_takeaways": [
+      "Ngách hoạt hình 2D vẽ tay bối cảnh làng quê Việt Nam xưa (tình mẫu tử, gia đình nghèo vượt khó) thu hút hàng triệu lượt xem trên cả YouTube và Facebook, rất phù hợp gắn giỏ hàng tiếp thị liên kết.",
+      "Sử dụng bộ Master Prompt V2.0 Vietnam Old Village giúp người mới làm chủ toàn bộ quy trình từ kịch bản, thiết kế nhân vật đến câu lệnh tạo video mà không bị phụ thuộc vào các công cụ bên ngoài dễ lỗi.",
+      "Cấu trúc thời lượng chuẩn mực: Mỗi tập phim tiêu chuẩn dài 120 giây được chia thành 20 phân cảnh, mỗi phân cảnh kéo dài đúng 6 giây (hoặc mở rộng thành phim dài 17 đến 20 phút tùy chỉnh).",
+      "Khóa chặt tính đồng nhất nhân vật bằng hồ sơ hình ảnh tham chiếu C1 (người mẹ), C2 (người con) trước khi đưa câu lệnh vào tạo các đoạn hoạt hình có sẵn lời thoại tiếng Việt truyền cảm.",
+      "Chút đồ cũ thôi con, mẹ cất xong rồi vào nghỉ ngay đây."
+    ],
+    "edit_sop": {
+      "primary": "Quy trình sản xuất phim hoạt hình 2D vẽ tay làng quê Việt Nam xưa bằng bộ Master Prompt V2.0 đăng đa nền tảng YouTube và Facebook.",
+      "additional": [
+        "Sao chép bộ Master Prompt V2.0 Vietnam Old Village dán vào ChatGPT và nhập số lượng tập phim cùng thời lượng mong muốn.",
+        "Sử dụng các câu lệnh thiết kế nhân vật do hệ thống xuất ra để tạo và tải về bộ ảnh tham chiếu nhân vật gốc C1 và C2.",
+        "Lần lượt đính kèm ảnh tham chiếu C1, C2 cùng câu lệnh từng phân cảnh 6 giây để tạo chuỗi 20 đoạn video hoạt hình có thoại tiếng Việt.",
+        "Đưa toàn bộ các phân cảnh đã tạo vào trình biên tập, sắp xếp theo đúng thứ tự từ cảnh 1 đến cảnh 20 để xuất bản lên YouTube và Facebook."
+      ]
+    },
+    "sop_steps": [
+      "Sao chép bộ Master Prompt V2.0 Vietnam Old Village dán vào ChatGPT và nhập số lượng tập phim cùng thời lượng mong muốn.",
+      "Sử dụng các câu lệnh thiết kế nhân vật do hệ thống xuất ra để tạo và tải về bộ ảnh tham chiếu nhân vật gốc C1 và C2.",
+      "Lần lượt đính kèm ảnh tham chiếu C1, C2 cùng câu lệnh từng phân cảnh 6 giây để tạo chuỗi 20 đoạn video hoạt hình có thoại tiếng Việt.",
+      "Đưa toàn bộ các phân cảnh đã tạo vào trình biên tập, sắp xếp theo đúng thứ tự từ cảnh 1 đến cảnh 20 để xuất bản lên YouTube và Facebook."
+    ],
+    "avoid_flags": [
+      "Nhảy vào dùng các công cụ tự động trôi nổi khi chưa nắm vững cấu trúc câu lệnh gốc khiến nhân vật bị biến dạng và lệch bối cảnh văn hóa Việt Nam.",
+      "Quên đính kèm hình ảnh tham chiếu nhân vật C1 và C2 khi tạo từng phân cảnh 6 giây làm trang phục và gương mặt nhân vật thay đổi liên tục."
+    ],
+    "tools_mentioned": [
+      "ChatGPT",
+      "YouTube",
+      "Facebook"
+    ],
+    "channels_mentioned": [],
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Xem video mẫu hoạt hình 2D vẽ tay bối cảnh làng quê Việt Nam xưa và tiềm năng đa nền tảng"
+      },
+      {
+        "seconds": 49,
+        "time": "00:49",
+        "label": "Phân tích doanh thu RPM thị trường Việt Nam và hướng khai thác song song YouTube cùng Facebook"
+      },
+      {
+        "seconds": 192,
+        "time": "03:12",
+        "label": "Truy cập hệ thống lấy bộ Master Prompt V2.0 Vietnam Old Village và khởi tạo tập phim đầu tiên"
+      },
+      {
+        "seconds": 328,
+        "time": "05:28",
+        "label": "Quy tắc cấu trúc thời lượng: Mỗi tập 120 giây chia thành 20 phân cảnh, mỗi cảnh 6 giây đồng nhất"
+      },
+      {
+        "seconds": 478,
+        "time": "07:58",
+        "label": "Tạo và tải ảnh tham chiếu nhân vật C1, C2 để khóa ngoại hình người mẹ và người con xuyên suốt"
+      },
+      {
+        "seconds": 774,
+        "time": "12:54",
+        "label": "Ghép hoàn chỉnh các phân cảnh video 6 giây kèm lời thoại tiếng Việt tự nhiên và kiểm tra thành phẩm"
+      }
+    ],
+    "course_docs": [
+      {
+        "title": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay (master_prompt.md)",
+        "name": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay (master_prompt.md)",
+        "file": "assets/docs-dgmd/VIDEO-e02e02/master_prompt.md",
+        "readFile": "assets/docs-dgmd/VIDEO-e02e02/master_prompt.md",
+        "link": "https://docs.google.com/document/d/1jR99uIcQXUV6-Sgsx0oq2FPeLX2FdfRha5nvIfABKDE/edit?usp=sharing"
+      },
+      {
+        "title": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay (doc_1.txt)",
+        "name": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay (doc_1.txt)",
+        "file": "assets/docs-dgmd/VIDEO-e02e02/doc_1.txt",
+        "readFile": "assets/docs-dgmd/VIDEO-e02e02/doc_1.txt",
+        "link": "https://docs.google.com/document/d/1jR99uIcQXUV6-Sgsx0oq2FPeLX2FdfRha5nvIfABKDE/edit?usp=sharing"
+      },
+      {
+        "title": "Mô tả bài giảng gốc: Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay (description.txt)",
+        "name": "Mô tả bài giảng gốc: Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay (description.txt)",
+        "file": "assets/docs-dgmd/VIDEO-e02e02/description.txt",
+        "readFile": "assets/docs-dgmd/VIDEO-e02e02/description.txt",
+        "link": "assets/docs-dgmd/VIDEO-e02e02/description.txt"
+      }
+    ],
+    "analysis_method": "agv_3.8_multimodal_7layer_verified",
+    "accuracy_status": "GROUNDED_VERIFIED",
+    "visual_audio_checked": true,
+    "verified_expert_summary": true,
+    "claims_require_external_verification": false,
+    "source_transcript": "video/VIDEO-e02e02/transcript.txt"
   },
   "VIDEO-af2c29": {
     "sku": "VIDEO-af2c29",
@@ -5354,7 +5645,7 @@
         "title": "Bộ Tài Liệu Thực Chiến & Checklist 5 Bước Đăng Video Chuẩn SEO Trên Máy Tính (Bài 42)",
         "file": "assets/docs-dgmd/VIDEO-4483df/master_prompt.md",
         "readFile": "assets/docs-dgmd/VIDEO-4483df/master_prompt.md",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-4483df/master_prompt.md"
+        "link": "assets/docs-dgmd/VIDEO-4483df/master_prompt.md"
       }
     ],
     "key_timestamps": [
@@ -5454,13 +5745,13 @@
         "title": "Bộ Tài Liệu Thực Chiến & Master Prompt: 14 Góc Quay Điện Ảnh Khi Đặt Câu Prompt Sinh Ảnh & Video AI (Bài 43)",
         "file": "assets/docs-dgmd/VIDEO-ad6a82/master_prompt.md",
         "readFile": "assets/docs-dgmd/VIDEO-ad6a82/master_prompt.md",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-ad6a82/master_prompt.md"
+        "link": "assets/docs-dgmd/VIDEO-ad6a82/master_prompt.md"
       },
       {
         "title": "Bảng Tra Cứu Góc Quay Điện Ảnh Cho Prompt Sinh Ảnh AI (Bản Text Gốc)",
         "file": "assets/docs-dgmd/VIDEO-ad6a82/master_prompt.txt",
         "readFile": "assets/docs-dgmd/VIDEO-ad6a82/master_prompt.txt",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-ad6a82/master_prompt.txt"
+        "link": "assets/docs-dgmd/VIDEO-ad6a82/master_prompt.txt"
       }
     ],
     "key_timestamps": [
@@ -5643,19 +5934,19 @@
         "title": "Cẩm Nang Thực Chiến & Master Prompt 30 Tình Huống Đời Thường (Markdown)",
         "file": "assets/docs-dgmd/VIDEO-fc62eb/master_prompt.md",
         "readFile": "assets/docs-dgmd/VIDEO-fc62eb/master_prompt.md",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-fc62eb/master_prompt.md"
+        "link": "assets/docs-dgmd/VIDEO-fc62eb/master_prompt.md"
       },
       {
         "title": "Công Thức Đúc Master Prompt Nhất Quán Nhân Vật AI (TXT)",
         "file": "assets/docs-dgmd/VIDEO-fc62eb/master_prompt.txt",
         "readFile": "assets/docs-dgmd/VIDEO-fc62eb/master_prompt.txt",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-fc62eb/master_prompt.txt"
+        "link": "assets/docs-dgmd/VIDEO-fc62eb/master_prompt.txt"
       },
       {
         "title": "Tài Liệu Học Phần Gốc: Tư Duy Master Prompt (HTML)",
         "file": "assets/docs-dgmd/VIDEO-fc62eb/description.html",
         "readFile": "assets/docs-dgmd/VIDEO-fc62eb/description.html",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-fc62eb/description.html"
+        "link": "assets/docs-dgmd/VIDEO-fc62eb/description.html"
       }
     ]
   },
@@ -5759,7 +6050,7 @@
         "title": "Cẩm Nang Thực Chiến & Master Prompt Tạo Tool Tự Động Hóa (Markdown)",
         "file": "assets/docs-dgmd/VIDEO-27e4e0/master_prompt.md",
         "readFile": "assets/docs-dgmd/VIDEO-27e4e0/master_prompt.md",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-27e4e0/master_prompt.md"
+        "link": "assets/docs-dgmd/VIDEO-27e4e0/master_prompt.md"
       },
       {
         "title": "Master Prompt Gốc Tạo Tool Tự Động Nhất Quán Nhân Vật (doc_1.txt)",
@@ -5771,14 +6062,500 @@
         "title": "Bản Sao Master Prompt Tạo Tool (master_prompt.txt)",
         "file": "assets/docs-dgmd/VIDEO-27e4e0/master_prompt.txt",
         "readFile": "assets/docs-dgmd/VIDEO-27e4e0/master_prompt.txt",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-27e4e0/master_prompt.txt"
+        "link": "assets/docs-dgmd/VIDEO-27e4e0/master_prompt.txt"
       },
       {
         "title": "Tài Liệu Google Docs Export (master_prompt.html)",
         "file": "assets/docs-dgmd/VIDEO-27e4e0/master_prompt.html",
         "readFile": "assets/docs-dgmd/VIDEO-27e4e0/master_prompt.html",
-        "link": "http://127.0.0.1:8899/assets/docs-dgmd/VIDEO-27e4e0/master_prompt.html"
+        "link": "assets/docs-dgmd/VIDEO-27e4e0/master_prompt.html"
       }
     ]
+  },
+  "VIDEO-434f80": {
+    "sku": "VIDEO-434f80",
+    "title": "Quy Trình Sản Xuất Video PHIM AI VIỆT ",
+    "actual_topic": "Quy Trình Sản Xuất Phim Ngắn AI Drama Gia Đình Việt Nam (Tổng Tài, Mẹ Chồng Nàng Dâu) Bằng Master Prompt V1.0",
+    "summary": "Hướng dẫn thực chiến sản xuất chuỗi phim ngắn AI drama gia đình Việt Nam đương đại (chủ đề tổng tài giả nghèo, mẹ chồng nàng dâu, nhân quả) bằng bộ Master Prompt V1.0 kết hợp Google Flow (mô hình Nano Banana) để kiếm tiền đa nền tảng và gắn giỏ hàng.",
+    "category_group": "chuyen_gia",
+    "niche_primary": "Phim Ngắn AI Drama Gia Đình Việt Nam",
+    "niche_id": "vn-ai-family-drama-series",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
+    "key_takeaways": [
+      "Thể loại phim ngắn AI drama gia đình Việt Nam (mẹ chồng nàng dâu, tổng tài giả nghèo, ngoại tình, nhân quả) đạt lượng xem khổng lồ trên TikTok, YouTube và thu hút hợp đồng quảng cáo cùng hoa hồng Shopee.",
+      "Bộ Master Prompt V1.0 chuẩn hóa toàn bộ thông số kỹ thuật: Mỗi bộ phim gồm 7 tập, mỗi tập dài khoảng 90 giây được ghép từ các phân cảnh 6 giây với 2 góc máy linh hoạt.",
+      "Quy tắc khóa đồng bộ khẩu hình và âm thanh: Trong mỗi phân cảnh 6 giây chỉ cho phép đúng 1 nhân vật cất lời với độ dài câu thoại từ 4 đến 5,5 giây bằng tiếng Việt tự nhiên.",
+      "Sử dụng mô hình tạo ảnh Nano Banana trên Google Flow để khởi tạo bộ ảnh tham chiếu cho 4 đến 5 nhân vật chính trước khi đưa vào kết xuất hàng loạt phân cảnh video.",
+      "Ok, chào các em yêu của thầy. Hôm nay tao sẽ tiếp tục lên một video để dạy chúng mày làm phim AI và sẽ làm như thế nào, kiếm tiền như thế nào."
+    ],
+    "edit_sop": {
+      "primary": "Quy trình sản xuất bộ phim ngắn AI drama gia đình Việt Nam bằng Master Prompt V1.0 và Google Flow.",
+      "additional": [
+        "Sao chép bộ Master Prompt V1.0 Vietnamese Cinematic AI Family Drama dán vào trình tạo kịch bản và thiết lập số tập cùng thời lượng mỗi tập.",
+        "Mở Google Flow (chọn mô hình tạo ảnh Nano Banana), dán các câu lệnh thiết kế nhân vật để tạo và tải về bộ ảnh tham chiếu của 4 đến 5 nhân vật chính.",
+        "Chuyển sang chế độ tạo video từ khung hình tham chiếu, đính kèm đúng ảnh nhân vật xuất hiện trong cảnh và dán câu lệnh phân cảnh 6 giây có kèm lời thoại tiếng Việt.",
+        "Tải toàn bộ các đoạn video 6 giây từ cảnh 1 đến cảnh cuối đưa vào phần mềm biên tập để nối thành tập phim hoàn chỉnh đăng lên TikTok và YouTube."
+      ]
+    },
+    "sop_steps": [
+      "Sao chép bộ Master Prompt V1.0 Vietnamese Cinematic AI Family Drama dán vào trình tạo kịch bản và thiết lập số tập cùng thời lượng mỗi tập.",
+      "Mở Google Flow (chọn mô hình tạo ảnh Nano Banana), dán các câu lệnh thiết kế nhân vật để tạo và tải về bộ ảnh tham chiếu của 4 đến 5 nhân vật chính.",
+      "Chuyển sang chế độ tạo video từ khung hình tham chiếu, đính kèm đúng ảnh nhân vật xuất hiện trong cảnh và dán câu lệnh phân cảnh 6 giây có kèm lời thoại tiếng Việt.",
+      "Tải toàn bộ các đoạn video 6 giây từ cảnh 1 đến cảnh cuối đưa vào phần mềm biên tập để nối thành tập phim hoàn chỉnh đăng lên TikTok và YouTube."
+    ],
+    "avoid_flags": [
+      "Nhồi nhét hai nhân vật cùng nói chuyện trong một phân cảnh 6 giây hoặc viết câu thoại quá dài khiến khẩu hình nhân vật bị lệch và câu nói bị cắt đứt.",
+      "Đính kèm sai hình ảnh tham chiếu nhân vật của từng phân cảnh làm gương mặt mẹ chồng, nàng dâu hoặc tổng tài bị tráo đổi lẫn lộn."
+    ],
+    "tools_mentioned": [
+      "Google Flow",
+      "YouTube",
+      "Shopee",
+      "TikTok"
+    ],
+    "channels_mentioned": [],
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Giới thiệu xu hướng phim ngắn AI drama gia đình Việt Nam (tổng tài, mẹ chồng nàng dâu) và nguồn thu"
+      },
+      {
+        "seconds": 58,
+        "time": "00:58",
+        "label": "Cấu trúc mỗi tập phim ngắn khoảng 1 phút 30 giây tối ưu giữ chân khán giả trên nền tảng dọc 9:16"
+      },
+      {
+        "seconds": 219,
+        "time": "03:39",
+        "label": "Sử dụng Master Prompt V1.0 cấu hình số tập, thời lượng mỗi cảnh 6 giây và khóa 1 nhân vật nói mỗi cảnh"
+      },
+      {
+        "seconds": 381,
+        "time": "06:21",
+        "label": "Chọn mô hình Nano Banana trên Google Flow để tạo bộ ảnh tham chiếu nhân vật đồng nhất ngoại hình"
+      },
+      {
+        "seconds": 547,
+        "time": "09:07",
+        "label": "Đưa ảnh tham chiếu và câu lệnh phân cảnh vào tạo các đoạn video 6 giây có sẵn lời thoại tiếng Việt"
+      },
+      {
+        "seconds": 716,
+        "time": "11:56",
+        "label": "Kéo các phân cảnh từ cảnh 1 đến cảnh cuối vào trình dựng để ghép thành tập phim hoàn chỉnh"
+      }
+    ],
+    "course_docs": [
+      {
+        "title": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Sản Xuất Video PHIM AI VIỆT (master_prompt.md)",
+        "name": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Sản Xuất Video PHIM AI VIỆT (master_prompt.md)",
+        "file": "assets/docs-dgmd/VIDEO-434f80/master_prompt.md",
+        "readFile": "assets/docs-dgmd/VIDEO-434f80/master_prompt.md",
+        "link": "https://docs.google.com/document/d/1PyaoC9pk9UxivTRzYmIoe5rEp-QtEXeKE_5M1POXKUY/edit?usp=sharing"
+      },
+      {
+        "title": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Video PHIM AI VIỆT (doc_1.txt)",
+        "name": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Video PHIM AI VIỆT (doc_1.txt)",
+        "file": "assets/docs-dgmd/VIDEO-434f80/doc_1.txt",
+        "readFile": "assets/docs-dgmd/VIDEO-434f80/doc_1.txt",
+        "link": "https://docs.google.com/document/d/1PyaoC9pk9UxivTRzYmIoe5rEp-QtEXeKE_5M1POXKUY/edit?usp=sharing"
+      },
+      {
+        "title": "Mô tả bài giảng gốc: Quy Trình Sản Xuất Video PHIM AI VIỆT (description.txt)",
+        "name": "Mô tả bài giảng gốc: Quy Trình Sản Xuất Video PHIM AI VIỆT (description.txt)",
+        "file": "assets/docs-dgmd/VIDEO-434f80/description.txt",
+        "readFile": "assets/docs-dgmd/VIDEO-434f80/description.txt",
+        "link": "assets/docs-dgmd/VIDEO-434f80/description.txt"
+      }
+    ],
+    "analysis_method": "agv_3.8_multimodal_7layer_verified",
+    "accuracy_status": "GROUNDED_VERIFIED",
+    "visual_audio_checked": true,
+    "verified_expert_summary": true,
+    "claims_require_external_verification": false,
+    "source_transcript": "video/VIDEO-434f80/transcript.txt"
+  },
+  "VIDEO-ca0383": {
+    "sku": "VIDEO-ca0383",
+    "title": "Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1",
+    "actual_topic": "Quy Trình Sản Xuất Phim Ngắn AI Tình Huống Drama Nhật Bản 36 Giây Bằng Master Prompt V1.0 Kiếm Tiền Đa Nền Tảng",
+    "summary": "Hướng dẫn vận hành bộ Master Prompt V1.0 (Japanese AI Drama Production System) để người không biết tiếng Nhật vẫn tự động sản xuất được 100 bộ phim ngắn tình huống Nhật Bản dài 36 giây (6 cảnh x 6 giây) kiếm tiền trên cả hai nền tảng.",
+    "category_group": "view_ngoai",
+    "niche_primary": "Phim Ngắn AI Tình Huống Drama Nhật Bản",
+    "niche_id": "jp-ai-short-drama",
+    "target_market": "Nhật Bản",
+    "market_code": "JP",
+    "key_takeaways": [
+      "Hiệu suất đầu tư cực kỳ tối ưu cho thị trường Nhật Bản: Mỗi thước phim tình huống 36 giây chỉ tiêu tốn khoảng 60 credit và mất vài phút thao tác nhưng mang lại nguồn thu ngoại tệ từ cả hai nền tảng.",
+      "Bộ Master Prompt V1.0 Japanese AI Drama tự động thiết kế 100 kịch bản phim ngắn độc lập chuẩn văn hóa Nhật Bản mà không đòi hỏi người làm phải biết tiếng Nhật.",
+      "Cấu trúc vàng 36 giây cho nền tảng dọc: Mỗi bộ phim bao gồm đúng 6 phân cảnh liên hoàn (mỗi cảnh 6 giây) đi từ mở đầu kịch tính, xung đột cao trào đến cú lật bất ngờ.",
+      "Quy trình hậu kỳ nhanh gọn: Sau khi ghép 6 phân cảnh 6 giây, sử dụng tính năng tự động nhận diện và tạo phụ đề tiếng Nhật trực tiếp rồi bật nhãn nội dung AI khi đăng tải.",
+      "Mang về thu nhập là 0.23 đô trên 1.000 view. Nghĩa là 1 video này chúng mày chỉ sản xuất trong vòng 2 phút. Ok. Chào các em yêu của thầy. Hôm nay tao lại dạy cho chúng"
+    ],
+    "edit_sop": {
+      "primary": "Quy trình sản xuất phim ngắn AI tình huống Nhật Bản 36 giây (6 phân cảnh) bằng Master Prompt V1.0 đăng đa nền tảng.",
+      "additional": [
+        "Sao chép bộ Master Prompt V1.0 Japanese AI Drama Production System dán vào trình tạo kịch bản để nhận danh sách cốt truyện và bảng phân cảnh.",
+        "Sử dụng câu lệnh thiết kế nhân vật để tạo hình ảnh tham chiếu chuẩn gương mặt, trang phục và bối cảnh đời sống Nhật Bản.",
+        "Đính kèm ảnh tham chiếu nhân vật vào mục tạo video và lần lượt dán câu lệnh từ cảnh 1 đến cảnh 6 để xuất 6 đoạn video có sẵn lời thoại tiếng Nhật.",
+        "Đưa 6 đoạn video vào trình dựng, bật tính năng tự động tạo phụ đề tiếng Nhật và đăng tải đồng thời lên cả hai nền tảng."
+      ]
+    },
+    "sop_steps": [
+      "Sao chép bộ Master Prompt V1.0 Japanese AI Drama Production System dán vào trình tạo kịch bản để nhận danh sách cốt truyện và bảng phân cảnh.",
+      "Sử dụng câu lệnh thiết kế nhân vật để tạo hình ảnh tham chiếu chuẩn gương mặt, trang phục và bối cảnh đời sống Nhật Bản.",
+      "Đính kèm ảnh tham chiếu nhân vật vào mục tạo video và lần lượt dán câu lệnh từ cảnh 1 đến cảnh 6 để xuất 6 đoạn video có sẵn lời thoại tiếng Nhật.",
+      "Đưa 6 đoạn video vào trình dựng, bật tính năng tự động tạo phụ đề tiếng Nhật và đăng tải đồng thời lên cả hai nền tảng."
+    ],
+    "avoid_flags": [
+      "Ngại làm thị trường ngoại vì không biết tiếng Nhật thay vì dùng Master Prompt tự động sinh sẵn lời thoại tiếng Nhật chuẩn xác kèm giải nghĩa.",
+      "Bỏ quên bước tạo và đính kèm hình ảnh nhân vật tham chiếu khiến nhân vật chính trong 6 phân cảnh 6 giây không đồng nhất diện mạo."
+    ],
+    "tools_mentioned": [
+      "YouTube"
+    ],
+    "channels_mentioned": [],
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Phân tích tiềm năng làm phim ngắn AI tình huống Nhật Bản đăng đa nền tảng kiếm tiền từ lượt xem ngoại"
+      },
+      {
+        "seconds": 55,
+        "time": "00:55",
+        "label": "Kiểm chứng hiệu quả thực tế của video tình huống Nhật Bản với chi phí chỉ khoảng 60 credit mỗi tập"
+      },
+      {
+        "seconds": 184,
+        "time": "03:04",
+        "label": "Sao chép bộ Master Prompt V1.0 Japanese AI Drama để tự động sinh 100 kịch bản phim 36 giây"
+      },
+      {
+        "seconds": 325,
+        "time": "05:25",
+        "label": "Tạo bảng thiết kế nhân vật chuẩn văn hóa Nhật Bản và sao chép câu lệnh cảnh 1 để dựng hình"
+      },
+      {
+        "seconds": 467,
+        "time": "07:47",
+        "label": "Đính kèm ảnh tham chiếu nhân vật vào công cụ tạo video để xuất 6 phân cảnh 6 giây có thoại tiếng Nhật"
+      },
+      {
+        "seconds": 747,
+        "time": "12:27",
+        "label": "Ghép 6 phân cảnh, bật tính năng tự động tạo phụ đề tiếng Nhật và xuất bản lên hai nền tảng"
+      }
+    ],
+    "course_docs": [
+      {
+        "title": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1 (master_prompt.md)",
+        "name": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1 (master_prompt.md)",
+        "file": "assets/docs-dgmd/VIDEO-ca0383/master_prompt.md",
+        "readFile": "assets/docs-dgmd/VIDEO-ca0383/master_prompt.md",
+        "link": "https://docs.google.com/document/d/1AtfdVbkvkFxkDZoL9JpgKL0WP4xPpqAkxO2qSC__X40/edit?usp=sharing"
+      },
+      {
+        "title": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1 (doc_1.txt)",
+        "name": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1 (doc_1.txt)",
+        "file": "assets/docs-dgmd/VIDEO-ca0383/doc_1.txt",
+        "readFile": "assets/docs-dgmd/VIDEO-ca0383/doc_1.txt",
+        "link": "https://docs.google.com/document/d/1AtfdVbkvkFxkDZoL9JpgKL0WP4xPpqAkxO2qSC__X40/edit?usp=sharing"
+      },
+      {
+        "title": "Mô tả bài giảng gốc: Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1 (description.txt)",
+        "name": "Mô tả bài giảng gốc: Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1 (description.txt)",
+        "file": "assets/docs-dgmd/VIDEO-ca0383/description.txt",
+        "readFile": "assets/docs-dgmd/VIDEO-ca0383/description.txt",
+        "link": "assets/docs-dgmd/VIDEO-ca0383/description.txt"
+      }
+    ],
+    "analysis_method": "agv_3.8_multimodal_7layer_verified",
+    "accuracy_status": "GROUNDED_VERIFIED",
+    "visual_audio_checked": true,
+    "verified_expert_summary": true,
+    "claims_require_external_verification": false,
+    "source_transcript": "video/VIDEO-ca0383/transcript.txt"
+  },
+  "VIDEO-fa13f3": {
+    "sku": "VIDEO-fa13f3",
+    "title": "Quy Trình Gắn Sản Phảm Affiliate ",
+    "actual_topic": "Quy Trình Liên Kết Tài Khoản Và Gắn Sản Phẩm Shopee Affiliate Hoa Hồng Cao Trên Fanpage Facebook",
+    "summary": "Hướng dẫn thực hành liên kết tài khoản đối tác Shopee Affiliate trong Bảng điều khiển chuyên nghiệp trên Facebook, cách lọc sản phẩm có tỷ lệ hoa hồng cao (từ 15% đến 79%) và mẹo gắn 5 đến 10 sản phẩm vào mỗi video để tối ưu doanh thu.",
+    "category_group": "chuyen_gia",
+    "niche_primary": "Kiếm Tiền Shopee Affiliate Trên Fanpage & Phim Ngắn AI",
+    "niche_id": "facebook-shopee-affiliate-workflow",
+    "target_market": "Việt Nam",
+    "market_code": "VN",
+    "key_takeaways": [
+      "Ưu tiên tuyệt đối việc liên kết tài khoản Shopee Affiliate thay vì các sàn khác trong mục Đối tác liên kết của Facebook vì lượng người mua hàng thực tế trên Shopee vượt trội.",
+      "Cơ chế ghi nhận hoa hồng gián tiếp cực kỳ có lợi: Khi khán giả nhấp vào đường dẫn sản phẩm gắn trên video nhưng mua bất kỳ mặt hàng nào khác trên Shopee thì người sáng tạo vẫn nhận được hoa hồng.",
+      "Kỹ thuật chọn sản phẩm tối ưu lợi nhuận: Sử dụng bộ lọc Hoa hồng phần trăm để ưu tiên các mặt hàng thông dụng (như áo sơ mi, thời trang, đồ gia dụng) có mức hoa hồng từ 15% đến 79%.",
+      "Mẹo tăng tỷ lệ nhấp chuột: Gắn từ 5 đến 10 sản phẩm vào mỗi thước phim đăng tải để hệ thống tự động đẩy phần hiển thị sản phẩm và bình luận của trang lên vị trí đầu tiên.",
+      "Ok, chào anh em. Hôm nay sẽ hướng dẫn anh em là gắn affiliate ở sản phẩm nha anh em nha."
+    ],
+    "edit_sop": {
+      "primary": "Quy trình 4 bước liên kết Shopee Affiliate, lọc sản phẩm hoa hồng cao và gắn 5 đến 10 sản phẩm lên mỗi video Fanpage Facebook.",
+      "additional": [
+        "Truy cập Bảng điều khiển dành cho người sáng tạo nội dung trên Facebook, vào mục Kiếm tiền, chọn Đối tác liên kết và kết nối với tài khoản Shopee.",
+        "Hoàn tất thủ tục khai thuế và liên kết tài khoản ngân hàng chính chủ trong trang quản trị Shopee Affiliate để nhận thanh toán định kỳ.",
+        "Tìm kiếm mặt hàng phổ thông (như áo sơ mi) và bật bộ lọc sắp xếp theo tỷ lệ phần trăm hoa hồng để chọn các sản phẩm có hoa hồng cao.",
+        "Khi đăng tải thước phim lên Fanpage, nhấn vào mục Đối tác liên kết và gắn từ 5 đến 10 sản phẩm vào bài đăng để tối đa hóa lượt nhấp chuột chuyển đổi."
+      ]
+    },
+    "sop_steps": [
+      "Truy cập Bảng điều khiển dành cho người sáng tạo nội dung trên Facebook, vào mục Kiếm tiền, chọn Đối tác liên kết và kết nối với tài khoản Shopee.",
+      "Hoàn tất thủ tục khai thuế và liên kết tài khoản ngân hàng chính chủ trong trang quản trị Shopee Affiliate để nhận thanh toán định kỳ.",
+      "Tìm kiếm mặt hàng phổ thông (như áo sơ mi) và bật bộ lọc sắp xếp theo tỷ lệ phần trăm hoa hồng để chọn các sản phẩm có hoa hồng cao.",
+      "Khi đăng tải thước phim lên Fanpage, nhấn vào mục Đối tác liên kết và gắn từ 5 đến 10 sản phẩm vào bài đăng để tối đa hóa lượt nhấp chuột chuyển đổi."
+    ],
+    "avoid_flags": [
+      "Quên khai báo thông tin thuế và chưa liên kết tài khoản ngân hàng trên hệ thống Shopee khiến tiền hoa hồng phát sinh không thể giải ngân.",
+      "Chỉ gắn duy nhất 1 sản phẩm hoa hồng thấp thay vì gắn đủ từ 5 đến 10 sản phẩm đa dạng vào mỗi video để tận dụng cơ chế hưởng hoa hồng chéo."
+    ],
+    "tools_mentioned": [
+      "Shopee",
+      "Facebook"
+    ],
+    "channels_mentioned": [],
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Mở đầu quy trình gắn giỏ hàng và liên kết sản phẩm Shopee Affiliate trên Fanpage Facebook"
+      },
+      {
+        "seconds": 15,
+        "time": "00:15",
+        "label": "Truy cập Bảng điều khiển chuyên nghiệp, vào mục Kiếm tiền và chọn Đối tác liên kết Shopee"
+      },
+      {
+        "seconds": 58,
+        "time": "00:58",
+        "label": "Đăng ký tài khoản Shopee Affiliate, hoàn tất thủ tục khai thuế và liên kết tài khoản ngân hàng"
+      },
+      {
+        "seconds": 99,
+        "time": "01:39",
+        "label": "Cơ chế đối soát đơn hàng hàng ngày và nhận hoa hồng tự động khi khách mua bất kỳ sản phẩm nào"
+      },
+      {
+        "seconds": 142,
+        "time": "02:22",
+        "label": "Cách lọc sản phẩm theo tỷ lệ phần trăm hoa hồng cao (từ 15% đến 79%) để tối ưu doanh thu"
+      },
+      {
+        "seconds": 187,
+        "time": "03:07",
+        "label": "Mẹo gắn từ 5 đến 10 đường dẫn sản phẩm vào mỗi thước phim để đẩy bình luận chứa link lên đầu"
+      }
+    ],
+    "course_docs": [],
+    "analysis_method": "agv_3.8_multimodal_7layer_verified",
+    "accuracy_status": "GROUNDED_VERIFIED",
+    "visual_audio_checked": true,
+    "verified_expert_summary": true,
+    "claims_require_external_verification": false,
+    "source_transcript": "video/VIDEO-fa13f3/transcript.txt"
+  },
+  "VIDEO-7112d8": {
+    "sku": "VIDEO-7112d8",
+    "title": "Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast",
+    "actual_topic": "Quy Trình Xây Dựng Thương Hiệu Cá Nhân Bằng Kênh Podcast AI Không Lộ Mặt Với Master Prompt V1.0",
+    "summary": "Hướng dẫn người ngại quay mặt xây dựng thương hiệu cá nhân và kênh Podcast triệu lượt xem trên YouTube, TikTok, Facebook bằng bộ Master Prompt V1.0 (Image-to-Video Podcast Exact Dialogue Lock) trên ChatGPT.",
+    "category_group": "chuyen_gia",
+    "niche_primary": "Xây Dựng Thương Hiệu Cá Nhân & Kênh Podcast AI",
+    "niche_id": "ai-podcast-personal-brand",
+    "target_market": "Việt Nam & Toàn Cầu",
+    "market_code": "VN_GLOBAL",
+    "key_takeaways": [
+      "Giải pháp hoàn hảo cho người ngại lộ diện trước ống kính: Sử dụng hình tượng nhân vật AI cố định ngồi chia sẻ triết lý sống, kinh doanh theo định dạng Podcast giúp xây dựng thương hiệu cá nhân có tỷ lệ chuyển đổi rất cao.",
+      "Quy tắc vàng định vị nhân vật thương hiệu: Bắt buộc giữ cố định một gương mặt, một bối cảnh phòng thu, một góc máy và một kiểu trang phục đặc trưng xuyên suốt toàn bộ các video trên kênh.",
+      "Bộ Master Prompt V1.0 Image-to-Video Podcast tự động chia đoạn văn bản tâm đắc bất kỳ thành các phân cảnh đúng 10 giây, giữ nguyên vẹn 100% từng chữ trong lời thoại mà không cắt ngang từ.",
+      "Khóa chặt thông số giọng nói cố định (tông giọng trầm ấm, nhịp độ điềm tĩnh, truyền cảm) trong mọi câu lệnh để người nghe nhận diện ngay chất giọng đặc trưng của kênh.",
+      "áo ghép là 1 này, áo grab là 2 này, áo sơ mi là 3 này. Ok, chào các em yêu của thầy. Hôm nay chúng ta sẽ đến với một cái quy"
+    ],
+    "edit_sop": {
+      "primary": "Quy trình 4 bước sản xuất video Podcast AI xây dựng thương hiệu cá nhân trong 5 phút bằng Master Prompt V1.0 trên ChatGPT.",
+      "additional": [
+        "Chuẩn bị một hình ảnh chân dung nhân vật ngồi trước micro trong bối cảnh phòng thu ấm cúng làm hình ảnh định danh cố định cho toàn kênh.",
+        "Sao chép bộ Master Prompt V1.0 Image-to-Video Podcast dán vào ChatGPT để thiết lập hệ thống tự động chia phân cảnh 10 giây và khóa giọng đọc.",
+        "Tải hình ảnh nhân vật cố định lên ChatGPT kèm đoạn bài giảng hoặc triết lý trưởng thành cần truyền tải để hệ thống xuất chuỗi câu lệnh tạo video.",
+        "Đưa ảnh nhân vật và từng câu lệnh 10 giây vào công cụ tạo video để xuất các đoạn clip nhân vật nói chuyện tự nhiên, sau đó nối lại và cắt bỏ khoảng trống dư thừa ở cuối."
+      ]
+    },
+    "sop_steps": [
+      "Chuẩn bị một hình ảnh chân dung nhân vật ngồi trước micro trong bối cảnh phòng thu ấm cúng làm hình ảnh định danh cố định cho toàn kênh.",
+      "Sao chép bộ Master Prompt V1.0 Image-to-Video Podcast dán vào ChatGPT để thiết lập hệ thống tự động chia phân cảnh 10 giây và khóa giọng đọc.",
+      "Tải hình ảnh nhân vật cố định lên ChatGPT kèm đoạn bài giảng hoặc triết lý trưởng thành cần truyền tải để hệ thống xuất chuỗi câu lệnh tạo video.",
+      "Đưa ảnh nhân vật và từng câu lệnh 10 giây vào công cụ tạo video để xuất các đoạn clip nhân vật nói chuyện tự nhiên, sau đó nối lại và cắt bỏ khoảng trống dư thừa ở cuối."
+    ],
+    "avoid_flags": [
+      "Thay đổi trang phục, bối cảnh hoặc góc máy liên tục qua từng ngày đăng bài khiến khán giả không ghi nhớ được hình ảnh nhận diện thương hiệu.",
+      "Để đoạn lời thoại trong một cảnh 10 giây quá dài hoặc ngắt câu giữa chừng làm tốc độ nói bị gấp gáp và mất đi thần thái điềm đạm của một chuyên gia Podcast."
+    ],
+    "tools_mentioned": [
+      "ChatGPT",
+      "YouTube",
+      "TikTok",
+      "Facebook"
+    ],
+    "channels_mentioned": [],
+    "key_timestamps": [
+      {
+        "seconds": 0,
+        "time": "00:00",
+        "label": "Tư duy xây dựng thương hiệu cá nhân bằng kênh Podcast AI cho người ngại lộ mặt năm 2026"
+      },
+      {
+        "seconds": 51,
+        "time": "00:51",
+        "label": "Phân tích các kênh và fanpage Podcast triệu lượt xem có tỷ lệ chuyển đổi khách hàng cao"
+      },
+      {
+        "seconds": 187,
+        "time": "03:07",
+        "label": "Cách vận hành bộ Master Prompt V1.0 Image-to-Video Podcast khóa chính xác từng câu thoại"
+      },
+      {
+        "seconds": 323,
+        "time": "05:23",
+        "label": "Nguyên tắc định hình phong cách cá nhân: Giữ cố định 1 bối cảnh, 1 góc máy và 1 trang phục đặc trưng"
+      },
+      {
+        "seconds": 465,
+        "time": "07:45",
+        "label": "Thiết lập nhân vật đóng vai doanh nhân hoặc nhà triết học chia sẻ bài học trưởng thành sâu sắc"
+      },
+      {
+        "seconds": 609,
+        "time": "10:09",
+        "label": "Chia lời thoại thành các phân cảnh 10 giây, đồng bộ giọng nói nam nữ nhất quán và cắt ghép hoàn thiện"
+      }
+    ],
+    "course_docs": [
+      {
+        "title": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast (master_prompt.md)",
+        "name": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast (master_prompt.md)",
+        "file": "assets/docs-dgmd/VIDEO-7112d8/master_prompt.md",
+        "readFile": "assets/docs-dgmd/VIDEO-7112d8/master_prompt.md",
+        "link": "https://docs.google.com/document/d/1mipQtEYLMPzMpuvhxFZtZi1rJAiomBs2dwpwbTMDkVE/edit?usp=sharing"
+      },
+      {
+        "title": "Tài Liệu Google Docs Gốc: Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast (doc_1.txt)",
+        "name": "Tài Liệu Google Docs Gốc: Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast (doc_1.txt)",
+        "file": "assets/docs-dgmd/VIDEO-7112d8/doc_1.txt",
+        "readFile": "assets/docs-dgmd/VIDEO-7112d8/doc_1.txt",
+        "link": "https://docs.google.com/document/d/1mipQtEYLMPzMpuvhxFZtZi1rJAiomBs2dwpwbTMDkVE/edit?usp=sharing"
+      },
+      {
+        "title": "Mô tả bài giảng gốc: Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast (description.txt)",
+        "name": "Mô tả bài giảng gốc: Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast (description.txt)",
+        "file": "assets/docs-dgmd/VIDEO-7112d8/description.txt",
+        "readFile": "assets/docs-dgmd/VIDEO-7112d8/description.txt",
+        "link": "assets/docs-dgmd/VIDEO-7112d8/description.txt"
+      }
+    ],
+    "analysis_method": "agv_3.8_multimodal_7layer_verified",
+    "accuracy_status": "GROUNDED_VERIFIED",
+    "visual_audio_checked": true,
+    "verified_expert_summary": true,
+    "claims_require_external_verification": false,
+    "source_transcript": "video/VIDEO-7112d8/transcript.txt"
+  },
+  "VIDEO-0419c4": {
+    "sku": "VIDEO-0419c4",
+    "title": "Quy Trình Sản Xuất Video MAMA CAT ASMR",
+    "actual_topic": "Quy trình sản xuất phim hoạt hình 3D Mama Cat Christmas ASMR bằng Master Prompt V3.0 trên ChatGPT, tạo ảnh tham chiếu nhân vật và render video 6 giây trên Google Flow, ghép âm thanh Pixabay/Suno trên CapCut",
+    "category_group": "chuyen_gia",
+    "niche_primary": "QUY TRÌNH HOẠT HÌNH AI NGOẠI",
+    "target_market": "Việt Nam & Toàn Cầu",
+    "market_code": "VN_GLOBAL",
+    "tools_mentioned": [
+      "ChatGPT",
+      "YouTube",
+      "CapCut",
+      "Pixabay"
+    ],
+    "channels_mentioned": [],
+    "key_timestamps": [
+      {
+        "time": "00:00",
+        "seconds": 0,
+        "label": "Phân tích từ khóa ngách Mama Cat ASMR kết hợp xu hướng Giáng sinh trên YouTube"
+      },
+      {
+        "time": "05:39",
+        "seconds": 339,
+        "label": "Khởi tạo 100 câu chuyện độc lập từ Master Prompt V3.0 chống lặp lại trên ChatGPT"
+      },
+      {
+        "time": "07:08",
+        "seconds": 428,
+        "label": "Tạo 3 ảnh tham chiếu nhân vật mèo và 2 bối cảnh cố định trên Google Flow"
+      },
+      {
+        "time": "08:47",
+        "seconds": 527,
+        "label": "Thiết lập tạo video 16:9 thời lượng 6 giây theo đúng mã nhân vật và bối cảnh"
+      },
+      {
+        "time": "14:02",
+        "seconds": 842,
+        "label": "Tìm kiếm và tải hiệu ứng âm thanh tiếng mèo kêu ASMR trên kho Pixabay"
+      },
+      {
+        "time": "15:15",
+        "seconds": 915,
+        "label": "Tạo nhạc nền Giáng sinh bằng Suno AI và hoàn thiện âm lượng trên CapCut"
+      }
+    ],
+    "key_takeaways": [
+      "Khai thác ngách Mama Cat ASMR kết hợp chủ đề Giáng sinh (Christmas) với cấu trúc mỗi tập gốc dài 3 đến 5 phút, sau đó tổng hợp ghép thành video dài 21 phút đến 1 tiếng để tối ưu thời lượng xem.",
+      "Sử dụng Master Prompt V3.0 trên ChatGPT để khởi tạo 100 kịch bản phim hoạt hình 3D khác nhau hoàn toàn, tích hợp sẵn câu lệnh chống hành vi lặp đi lặp lại giúp giảm rủi ro tắt kiếm tiền YouTube.",
+      "Khóa đồng nhất ngoại hình 3 nhân vật (mèo mẹ Mama Cat, mèo anh, mèo em) và 2 bối cảnh (phòng khách, căn bếp) bằng cách tạo ảnh tham chiếu trên Google Flow trước khi sinh video.",
+      "Khi tạo từng phân cảnh trên Google Flow, chọn đúng mã ảnh tham chiếu nhân vật kết hợp bối cảnh (ví dụ nhân vật 1-2 và bối cảnh 2), thiết lập chế độ Video khung hình 16:9, thời lượng 6 giây và tải về bản 720p.",
+      "Đưa toàn bộ phân cảnh vào CapCut sắp xếp theo thứ tự thời gian, chèn hiệu ứng tiếng mèo kêu và tiếng làm bánh từ kho Pixabay hoặc Myinstants, kết hợp nhạc nền Giáng sinh tạo từ Suno AI đã giảm nhỏ âm lượng."
+    ],
+    "edit_sop": {
+      "primary": "Quy trình 4 bước sản xuất phim hoạt hình 3D Mama Cat ASMR từ Master Prompt V3.0 đến hoàn thiện trên CapCut",
+      "additional": [
+        "Sao chép toàn bộ hơn 10 trang Master Prompt V3.0 dán vào ChatGPT và yêu cầu sản xuất bộ phim đầu tiên gồm 2 phần A và B kèm bộ từ khóa SEO YouTube và câu lệnh tạo thumbnail.",
+        "Dán lần lượt 3 câu lệnh tạo ảnh nhân vật (mèo mẹ, mèo anh, mèo em) và 2 câu lệnh bối cảnh vào Google Flow để sinh bộ ảnh tham chiếu gốc giúp khóa ngoại hình xuyên suốt tập phim.",
+        "Tạo từng cảnh video 6 giây tỉ lệ 16:9 trên Google Flow bằng cách ghép đúng mã ảnh tham chiếu nhân vật với ảnh bối cảnh phòng khách hoặc căn bếp theo chỉ dẫn của từng phân cảnh rồi tải về độ phân giải 720p.",
+        "Nhập các đoạn video đã tải vào CapCut, bổ sung hiệu ứng âm thanh ASMR từ Pixabay.com và nhạc nền Giáng sinh tạo trên Suno AI (chế độ Style), hạ nhỏ âm lượng nhạc nền và tạo ảnh thumbnail bằng ChatGPT."
+      ]
+    },
+    "sop_steps": [
+      "Sao chép toàn bộ hơn 10 trang Master Prompt V3.0 dán vào ChatGPT và yêu cầu sản xuất bộ phim đầu tiên gồm 2 phần A và B kèm bộ từ khóa SEO YouTube và câu lệnh tạo thumbnail.",
+      "Dán lần lượt 3 câu lệnh tạo ảnh nhân vật (mèo mẹ, mèo anh, mèo em) và 2 câu lệnh bối cảnh vào Google Flow để sinh bộ ảnh tham chiếu gốc giúp khóa ngoại hình xuyên suốt tập phim.",
+      "Tạo từng cảnh video 6 giây tỉ lệ 16:9 trên Google Flow bằng cách ghép đúng mã ảnh tham chiếu nhân vật với ảnh bối cảnh phòng khách hoặc căn bếp theo chỉ dẫn của từng phân cảnh rồi tải về độ phân giải 720p.",
+      "Nhập các đoạn video đã tải vào CapCut, bổ sung hiệu ứng âm thanh ASMR từ Pixabay.com và nhạc nền Giáng sinh tạo trên Suno AI (chế độ Style), hạ nhỏ âm lượng nhạc nền và tạo ảnh thumbnail bằng ChatGPT."
+    ],
+    "avoid_flags": [
+      "Không sản xuất hàng loạt video có cốt truyện và hành động lặp đi lặp lại; bắt buộc dùng câu lệnh biến thiên 100 kịch bản độc lập trong Master Prompt để tránh bị YouTube quét lỗi nội dung trùng lặp.",
+      "Không chọn nhầm mã số ảnh tham chiếu nhân vật và bối cảnh trên Google Flow (phải ghi chú rõ mã nhân vật 1, 2, 3 và bối cảnh phòng khách, căn bếp) để tránh râu ông nọ cắm cằm bà kia giữa các cảnh.",
+      "Không để nhạc nền Suno AI quá to lấn át tiếng động ASMR; sau khi chuẩn hóa âm lượng trên CapCut phải kéo nhỏ nhạc nền xuống để giữ chất lượng âm thanh chữa lành."
+    ],
+    "source_transcript": "video/VIDEO-0419c4/transcript.txt",
+    "accuracy_status": "GROUNDED_VERIFIED",
+    "visual_audio_checked": true,
+    "course_docs": [
+      {
+        "title": "Tài Liệu Thực Chiến & Master Prompt: Quy Trình Sản Xuất Video  MAMA CAT ASMR  (master_prompt.md)",
+        "file": "assets/docs-dgmd/VIDEO-0419c4/master_prompt.md",
+        "readFile": "assets/docs-dgmd/VIDEO-0419c4/master_prompt.md",
+        "link": "assets/docs-dgmd/VIDEO-0419c4/master_prompt.md"
+      },
+      {
+        "title": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Video  MAMA CAT ASMR  (doc_1.txt)",
+        "file": "assets/docs-dgmd/VIDEO-0419c4/doc_1.txt",
+        "readFile": "assets/docs-dgmd/VIDEO-0419c4/doc_1.txt",
+        "link": "assets/docs-dgmd/VIDEO-0419c4/doc_1.txt"
+      }
+    ],
+    "niche_id": "dgmd_workflow"
   }
 }

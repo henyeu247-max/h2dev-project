@@ -1,16 +1,16 @@
 ---
 handle: "@Adam-RoseFans1"
-name: "Adam-RoseFans1"
+name: "@Adam-RoseFans1"
 url: "https://www.youtube.com/@Adam-RoseFans1"
-status: "DEAD"
+status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Adam-RoseFans1 (Adam-RoseFans1)
+# Kênh Đối Thủ / Kênh Mẫu: @Adam-RoseFans1 (@Adam-RoseFans1)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Adam-RoseFans1](https://www.youtube.com/@Adam-RoseFans1)
-- **Trạng thái kiểm định:** `DEAD (Đã dừng / Gỡ)`
+- **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`
 

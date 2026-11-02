@@ -11,7 +11,8 @@
     "Tool chỉ là công cụ hỗ trợ tăng năng suất; yếu tố quyết định thắng bại là tư duy chọn ngách/key ít cạnh tranh, nhân bản sang quốc gia khác và giữ chân khán giả.",
     "Quy trình chuẩn khi lập kênh mới: tạo kênh và thiết lập thông tin trước, để kênh ngâm khoảng 2–3 ngày rồi trong thời gian chờ đó mới đi sản xuất video để đăng lên.",
     "Về Proxy và trình duyệt nuôi kênh: người mới làm 2–3 kênh chưa bắt buộc phải mua proxy; khi làm hệ thống nhiều kênh thì dùng GPM hoặc MKT gắn proxy (IPv4 hoặc IPv6) để tách biệt địa chỉ IP.",
-    "Bảo mật Gmail khi đi mua: tuyệt đối không đổi mật khẩu ngay lúc mới đăng nhập (dễ dính xác minh/disable); hãy thêm mail khôi phục, bật 2FA qua Google Authenticator và nuôi trên máy khoảng 7 ngày rồi mới đổi mật khẩu."
+    "Bảo mật Gmail khi đi mua: tuyệt đối không đổi mật khẩu ngay lúc mới đăng nhập (dễ dính xác minh/disable); hãy thêm mail khôi phục, bật 2FA qua Google Authenticator và nuôi trên máy khoảng 7 ngày rồi mới đổi mật khẩu.",
+    "đúng không? ở đây tôi đoán là có nhiều anh em đang bị như thế"
   ],
   "edit_sop": {
     "primary": "Nền tảng và môi trường làm kênh: proxy, Gmail, tạo kênh rồi ngâm kênh trong lúc sản xuất video",
@@ -33,7 +34,6 @@
     "YouTube",
     "Gmail",
     "Google Authenticator",
-    "GPM",
     "MKT"
   ],
   "channels_mentioned": [],

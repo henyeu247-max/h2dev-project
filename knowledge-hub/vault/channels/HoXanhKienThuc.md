@@ -1,12 +1,12 @@
 ---
 handle: "@HoXanhKienThuc"
-name: "Hố Xanh Kiến Thức"
+name: "@HoXanhKienThuc"
 url: "https://www.youtube.com/@HoXanhKienThuc"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @HoXanhKienThuc (Hố Xanh Kiến Thức)
+# Kênh Đối Thủ / Kênh Mẫu: @HoXanhKienThuc (@HoXanhKienThuc)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@HoXanhKienThuc](https://www.youtube.com/@HoXanhKienThuc)

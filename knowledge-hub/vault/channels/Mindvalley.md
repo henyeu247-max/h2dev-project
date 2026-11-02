@@ -1,12 +1,12 @@
 ---
 handle: "@Mindvalley"
-name: "Mindvalley"
+name: "@Mindvalley"
 url: "https://www.youtube.com/@Mindvalley"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Mindvalley (Mindvalley)
+# Kênh Đối Thủ / Kênh Mẫu: @Mindvalley (@Mindvalley)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Mindvalley](https://www.youtube.com/@Mindvalley)

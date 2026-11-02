@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "93"
-niche: "Tâm Sự Gia Đình & Người Cao Tuổi Việt Nam"
+niche: "Nhà Máy Sản Xuất & Cơ Khí Công Nghiệp"
 markets: ["🇻🇳 Việt"]
 duration: "6:02"
 published_at: "2026-09-21"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-0be6c9&track=h2dev"
 # VIDEO-0be6c9 — Kinh khủng với ngách cực nhỏ view Việt - kênh mới 8 video hơn 3 triệu view - bán content ngách người cao tuổi
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#93`)  
-> - **Ngách nội dung (Niche):** [[niches/tam-su-gia-dinh-nguoi-cao-tuoi-viet-nam|Tâm Sự Gia Đình & Người Cao Tuổi Việt Nam]]  
+> - **Ngách nội dung (Niche):** [[niches/nha-may-san-xuat-co-khi-cong-nghiep|Nhà Máy Sản Xuất & Cơ Khí Công Nghiệp]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `6:02` | **Ngày đăng:** `2026-09-21`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-0be6c9&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-0be6c9/README.md)
 
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-0be6c9&track=h2dev"
 - Một số kênh mượn tên và hình ảnh người nổi tiếng (như bác Lại Văn Sâm) để tăng tỷ lệ click, nhưng tiềm ẩn rủi ro pháp lý rất lớn tại Việt Nam nếu làm lâu dài.
 - Lời khuyên an toàn: nếu làm để kiếm thêm thu nhập bền vững thì nên thay bằng nhân vật hư cấu hoặc đi sang ngách tâm sự người già, chuyện con cái bất hiếu thay vì dùng tên thật của người nổi tiếng trong nước.
 - Khi nghiên cứu đối thủ, hãy vào mục Phổ biến của kênh để xem các công thức tiêu đề câu kéo cảm xúc mạnh nhất rồi biến tấu lại cho kênh của mình.
+- Hôm nay thì em chia sẻ thêm một cái ngách ở thị trường view Việt mình nữa nha mọi người.
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình 3 bước thực chiến: Phân tích các kênh Việt Nam làm ngách ngoại tình U60/U70, mượn hình ảnh người nổi tiếng (bác Lại Văn Sâm) và ngách con cái bất hiếu

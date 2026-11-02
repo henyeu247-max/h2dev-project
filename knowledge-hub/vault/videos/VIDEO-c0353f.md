@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-c0353f&track=dgmd"
 # VIDEO-c0353f — Quy Trình Sản Xuất Video Audio View Việt
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M08|DGMD-M08 — BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1]] (Bài `#06`)  
 > - **Ngách nội dung (Niche):** [[niches/truyen-audio-tam-su-tuoi-gia-gia-dinh|Truyện Audio Tâm Sự Tuổi Già & Gia Đình]]  
 > - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `20:14` | **Ngày đăng:** `2026-10-12`  

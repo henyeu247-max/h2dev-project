@@ -32,45 +32,37 @@ async function main() {
   await page.waitForTimeout(3000);
 
   const query = `
-    query getCourse($sku: String!) {
-      getCourse(sku: $sku) {
-        id
-        sku
-        name
-        ... on GroupedProduct {
-          items {
-            product {
-              id
-              sku
-              name
-              time
-              video_link
-              url_key
-              image { url }
-              thumbnail { url }
-              description { html }
-            }
-          }
+    query($sku: String!) {
+      getCourseNoCategory(sku: $sku) {
+        __typename
+        ... on ProductInterface {
+          id
+          sku
+          name
+          time
+          video_link
+          url_key
+          image { url }
+          thumbnail { url }
+          description { html }
         }
       }
     }
   `;
 
-  const gqlRes = await page.evaluate(async (q) => {
+  const gqlRes = await page.evaluate(async ({ q, targetSku }) => {
     const res = await fetch('https://api.daigiamangdep.com/graphql', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ query: q, variables: { sku: 'COURSE1' } })
+      body: JSON.stringify({ query: q, variables: { sku: targetSku } })
     });
     return await res.json();
-  }, query);
+  }, { q: query, targetSku: SKU });
 
-  const items = gqlRes.data?.getCourse?.items || [];
-  const found = items.find(it => it.product?.sku === SKU);
-  if (!found) {
-    throw new Error(`Product SKU ${SKU} not found in DGMD COURSE1 items (${items.length} items available)`);
+  const product = gqlRes.data?.getCourseNoCategory;
+  if (!product || !product.video_link) {
+    throw new Error(`Product SKU ${SKU} or video_link not found in DGMD getCourseNoCategory`);
   }
-  const product = found.product;
   console.log(`Product found: "${product.name}"`);
   console.log(`Duration: ${product.time}s | Link: ${product.video_link.slice(0, 80)}...`);
 
@@ -294,13 +286,18 @@ async function main() {
   await new Promise(r => outWs.on('finish', r));
   console.log(`Merged TS file: ${(fs.statSync(mergedTs).size / 1024 / 1024).toFixed(2)} MB`);
 
-  // 9. Remux to MP4
+  // 9. Remux to MP4 (via temp file first so GoogleDriveFS receives MOOV_FIRST complete MP4)
   const outDir = path.join(ROOT, 'video', SKU);
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
   const outMp4 = path.join(outDir, `${SKU}.mp4`);
+  const tmpMp4 = path.join(taskScratch, `${SKU}_faststart.mp4`);
 
   console.log(`Step 7: Remuxing to MP4 via FFmpeg: ${outMp4}...`);
-  execSync(`"${FFMPEG}" -y -i "${mergedTs}" -c copy -movflags +faststart "${outMp4}"`, { stdio: 'inherit' });
+  execSync(`"${FFMPEG}" -y -i "${mergedTs}" -c copy -movflags +faststart "${tmpMp4}"`, { stdio: 'inherit' });
+  fs.copyFileSync(tmpMp4, outMp4);
+
+  // Clean up scratch directory
+  try { fs.rmSync(taskScratch, { recursive: true, force: true }); } catch (_) {}
 
   // 10. Verify via FFprobe
   console.log('Step 8: Verifying with FFprobe...');
@@ -308,18 +305,21 @@ async function main() {
   const probe = JSON.parse(probeRaw);
   console.log(`>>> VERIFIED: duration=${parseFloat(probe.format.duration).toFixed(2)}s, size=${(probe.format.size/1024/1024).toFixed(2)}MB, video+audio OK!`);
 
-  // 11. Download thumbnail
+  // 11. Download thumbnail to assets/thumbs-dgmd/<SKU>.png
   const thumbUrl = product.thumbnail?.url || product.image?.url;
   if (thumbUrl) {
-    const thumbExt = path.extname(new URL(thumbUrl).pathname) || '.png';
-    const thumbDest = path.join(ROOT, 'assets', 'thumbs', `${SKU}.png`);
-    try {
-      const tRes = await fetch(thumbUrl);
-      const tBuf = await tRes.arrayBuffer();
-      fs.writeFileSync(thumbDest, Buffer.from(tBuf));
-      console.log(`Saved thumbnail: ${thumbDest}`);
-    } catch (e) {
-      console.log(`Thumbnail download failed: ${e.message}`);
+    const thumbDir = path.join(ROOT, 'assets', 'thumbs-dgmd');
+    fs.mkdirSync(thumbDir, { recursive: true });
+    const thumbDest = path.join(thumbDir, `${SKU}.png`);
+    if (!fs.existsSync(thumbDest)) {
+      try {
+        const tRes = await fetch(thumbUrl);
+        const tBuf = await tRes.arrayBuffer();
+        fs.writeFileSync(thumbDest, Buffer.from(tBuf));
+        console.log(`Saved thumbnail: ${thumbDest}`);
+      } catch (e) {
+        console.log(`Thumbnail download failed: ${e.message}`);
+      }
     }
   }
 

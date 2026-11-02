@@ -1,12 +1,12 @@
 ---
 handle: "@5PhutThuVi"
-name: "5 Phút Thú Vị"
+name: "@5PhutThuVi"
 url: "https://www.youtube.com/@5PhutThuVi"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @5PhutThuVi (5 Phút Thú Vị)
+# Kênh Đối Thủ / Kênh Mẫu: @5PhutThuVi (@5PhutThuVi)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@5PhutThuVi](https://www.youtube.com/@5PhutThuVi)

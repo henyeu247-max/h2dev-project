@@ -6,7 +6,7 @@ module_id: "DGMD-M10"
 module_title: "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE"
 seq: "10"
 niche: "Prompt Engineering & Visual AI"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
+markets: ["🌍 View Ngoại"]
 duration: "06:02"
 published_at: "2026-10-12"
 toolsCount: 3
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-ad6a82&track=dgmd"
 # VIDEO-ad6a82 — Các Góc Quay Khi Đặt Câu Prompt 
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M10|DGMD-M10 — TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE]] (Bài `#10`)  
 > - **Ngách nội dung (Niche):** [[niches/prompt-engineering-visual-ai|Prompt Engineering & Visual AI]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `06:02` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại | **Thời lượng:** `06:02` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-ad6a82&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-ad6a82/README.md)
 
 ---

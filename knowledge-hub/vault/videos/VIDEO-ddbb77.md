@@ -6,7 +6,7 @@ module_id: "HUAN-M04"
 module_title: "4. BẢN ĐỒ TỪ 0 TỚI 500 TRĂM TRIỆU MỖI THÁNG"
 seq: "06"
 niche: "Chiến Lược Ngoại Hóa & Công Thức RPM 30"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "31:17"
 published_at: "2026-09-01"
 toolsCount: 7
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-ddbb77&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M04|HUAN-M04 — 4. BẢN ĐỒ TỪ 0 TỚI 500 TRĂM TRIỆU MỖI THÁNG]] (Bài `#06`)  
 > - **Ngách nội dung (Niche):** [[niches/chien-luoc-ngoai-hoa-cong-thuc-rpm-30|Chiến Lược Ngoại Hóa & Công Thức RPM 30]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `31:17` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `31:17` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-ddbb77&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-ddbb77/README.md)
 
 ---

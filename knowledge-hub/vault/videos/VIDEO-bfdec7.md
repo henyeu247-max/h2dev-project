@@ -6,7 +6,7 @@ module_id: "DGMD-M06"
 module_title: "COMBO 3 QUY TRÌNH VIEW NGOẠI 3"
 seq: "03"
 niche: "Biến Đổi Visual & Anime"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
+markets: ["🌍 View Ngoại"]
 duration: "25:53"
 published_at: "2026-10-12"
 toolsCount: 8
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-bfdec7&track=dgmd"
 # VIDEO-bfdec7 — Quy Trình Sản Xuất Video Biến Đổi Nhân Vật View Nhật
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M06|DGMD-M06 — COMBO 3 QUY TRÌNH VIEW NGOẠI 3]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/bien-doi-visual-anime|Biến Đổi Visual & Anime]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `25:53` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại | **Thời lượng:** `25:53` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-bfdec7&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-bfdec7/README.md)
 
 ---

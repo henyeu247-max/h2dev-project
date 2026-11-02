@@ -6,7 +6,7 @@ module_id: "HUAN-M03"
 module_title: "3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY"
 seq: "19"
 niche: "SEO & Tối ưu kênh YouTube"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "16:56"
 published_at: "2026-09-01"
 toolsCount: 7
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-83da88&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M03|HUAN-M03 — 3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY]] (Bài `#19`)  
 > - **Ngách nội dung (Niche):** [[niches/seo-toi-uu-kenh-youtube|SEO & Tối ưu kênh YouTube]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `16:56` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `16:56` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-83da88&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-83da88/README.md)
 
 ---

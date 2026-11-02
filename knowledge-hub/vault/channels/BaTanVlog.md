@@ -1,15 +1,15 @@
 ---
 handle: "@BaTanVlog"
-name: "Bà Tân Vlog"
-url: "https://www.youtube.com/channel/UC1a6kG81k6iR-qA5bM-A-hQ"
+name: "@BaTanVlog"
+url: "https://www.youtube.com/@BaTanVlog"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @BaTanVlog (Bà Tân Vlog)
+# Kênh Đối Thủ / Kênh Mẫu: @BaTanVlog (@BaTanVlog)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/channel/UC1a6kG81k6iR-qA5bM-A-hQ](https://www.youtube.com/channel/UC1a6kG81k6iR-qA5bM-A-hQ)
+- **URL YouTube:** [https://www.youtube.com/@BaTanVlog](https://www.youtube.com/@BaTanVlog)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

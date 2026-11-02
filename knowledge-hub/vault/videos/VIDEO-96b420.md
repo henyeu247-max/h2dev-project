@@ -6,7 +6,7 @@ module_id: "DGMD-M05"
 module_title: "COMBO 3 QUY TRÌNH VIEW NGOẠI 2"
 seq: "01"
 niche: "Học Tiếng Anh Thụ Động"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
+markets: ["🌍 View Ngoại"]
 duration: "17:00"
 published_at: "2026-10-12"
 toolsCount: 4
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-96b420&track=dgmd"
 # VIDEO-96b420 — Quy Trình Sản Xuất Video Hội Thoại Tiếng Anh
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M05|DGMD-M05 — COMBO 3 QUY TRÌNH VIEW NGOẠI 2]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/hoc-tieng-anh-thu-dong|Học Tiếng Anh Thụ Động]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `17:00` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại | **Thời lượng:** `17:00` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-96b420&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-96b420/README.md)
 
 ---

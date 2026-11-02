@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-806c0c&track=h2dev"
 # VIDEO-806c0c — UPDATE VIDEO 19/10/2025 - SHARE KEY (Ngách Nhỏ) MỚI RẤT ÍT CẠNH TRANH VÀ TRENDS CAO
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#75`)  
 > - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
 > - **Thị trường:** 🇰🇷 Hàn | **Thời lượng:** `4:19` | **Ngày đăng:** `2025-10-19`  

@@ -1,12 +1,12 @@
 ---
 handle: "@YogaLunaThai"
-name: "Yoga Luna Thái"
+name: "@YogaLunaThai"
 url: "https://www.youtube.com/@YogaLunaThai"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @YogaLunaThai (Yoga Luna Thái)
+# Kênh Đối Thủ / Kênh Mẫu: @YogaLunaThai (@YogaLunaThai)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@YogaLunaThai](https://www.youtube.com/@YogaLunaThai)

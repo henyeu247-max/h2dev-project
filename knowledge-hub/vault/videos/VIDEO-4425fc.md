@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M01"
 module_title: "Xử lý & Kháng lỗi kênh YouTube"
 seq: "06"
-niche: "Kháng Bản Quyền & Xử Lý Lỗi GA"
+niche: "Google AdSense & Quản trị dòng tiền"
 markets: ["🌐 Ngoại"]
 duration: "9:11"
 published_at: "2026-05-30"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-4425fc&track=h2dev"
 # VIDEO-4425fc — Hướng dẫn Fix và giải thích cách tạo tài khoản Google Adsense (GA) an toàn, trâu nhất để không bị quét
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M01|H2DEV-M01 — Xử lý & Kháng lỗi kênh YouTube]] (Bài `#06`)  
-> - **Ngách nội dung (Niche):** [[niches/khang-ban-quyen-xu-ly-loi-ga|Kháng Bản Quyền & Xử Lý Lỗi GA]]  
+> - **Ngách nội dung (Niche):** [[niches/google-adsense-quan-tri-dong-tien|Google AdSense & Quản trị dòng tiền]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `9:11` | **Ngày đăng:** `2026-05-30`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-4425fc&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-4425fc/README.md)
 

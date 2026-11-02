@@ -1,12 +1,12 @@
 ---
 handle: "@ThaiCongTV"
-name: "Thái Công TV / Quách Thái Công (Case study dùng YouTube định vị tagline 'Nhà thiết kế triệu đô')"
+name: "@ThaiCongTV"
 url: "https://www.youtube.com/@ThaiCongTV"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ThaiCongTV (Thái Công TV / Quách Thái Công (Case study dùng YouTube định vị tagline 'Nhà thiết kế triệu đô'))
+# Kênh Đối Thủ / Kênh Mẫu: @ThaiCongTV (@ThaiCongTV)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ThaiCongTV](https://www.youtube.com/@ThaiCongTV)

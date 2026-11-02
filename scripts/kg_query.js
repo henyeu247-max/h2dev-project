@@ -128,13 +128,15 @@ function getGraphStatsFromDb(autoSync = true) {
     try {
       masterDbCounts = {
         lessons: masterDal.queryOne('SELECT COUNT(*) AS c FROM lessons').c,
+        timestamps: masterDal.queryOne('SELECT COUNT(*) AS c FROM lesson_timestamps').c,
         niches: masterDal.queryOne('SELECT COUNT(*) AS c FROM niches').c,
         channels: masterDal.queryOne('SELECT COUNT(*) AS c FROM competitor_channels').c,
         topVideos: masterDal.queryOne('SELECT COUNT(*) AS c FROM competitor_top_videos').c,
         documents: masterDal.queryOne('SELECT COUNT(*) AS c FROM documents').c,
         reupSources: masterDal.queryOne('SELECT COUNT(*) AS c FROM reup_sources').c,
         policies: masterDal.queryOne('SELECT COUNT(*) AS c FROM policies').c,
-        checklists: masterDal.queryOne('SELECT COUNT(*) AS c FROM checklists').c
+        checklists: masterDal.queryOne('SELECT COUNT(*) AS c FROM checklists').c,
+        ftsTotal: masterDal.queryOne('SELECT COUNT(*) AS c FROM search_fts').c
       };
     } catch {}
     const deadChannelsCount = (ov && ov.counts && typeof ov.counts.deadChannels === 'number')

@@ -1,12 +1,12 @@
 ---
 handle: "@NhakhoaOze.official"
-name: "Nha Khoa Oze"
+name: "@NhakhoaOze.official"
 url: "https://www.youtube.com/@NhakhoaOze.official"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @NhakhoaOze.official (Nha Khoa Oze)
+# Kênh Đối Thủ / Kênh Mẫu: @NhakhoaOze.official (@NhakhoaOze.official)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@NhakhoaOze.official](https://www.youtube.com/@NhakhoaOze.official)

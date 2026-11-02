@@ -1,12 +1,12 @@
 ---
 handle: "@PhongThuyTamNguyen"
-name: "Thầy Phong Thủy Tam Nguyên"
+name: "@PhongThuyTamNguyen"
 url: "https://www.youtube.com/@PhongThuyTamNguyen"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @PhongThuyTamNguyen (Thầy Phong Thủy Tam Nguyên)
+# Kênh Đối Thủ / Kênh Mẫu: @PhongThuyTamNguyen (@PhongThuyTamNguyen)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@PhongThuyTamNguyen](https://www.youtube.com/@PhongThuyTamNguyen)

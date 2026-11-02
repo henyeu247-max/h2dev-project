@@ -6,7 +6,7 @@ module_id: "DGMD-M04"
 module_title: "COMBO 3 QUY TRÌNH VIEW NGOẠI 1"
 seq: "01"
 niche: "Âm Nhạc Thư Giãn & Cổ Phong Trung Hoa (Ancient Chinese Instrumental)"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
+markets: ["🌍 View Ngoại"]
 duration: "13:23"
 published_at: "2026-10-12"
 toolsCount: 8
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-ab68db&track=dgmd"
 # VIDEO-ab68db — Quy Trình Sản Xuất Video Nhạc Cổ Trung Hoa
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M04|DGMD-M04 — COMBO 3 QUY TRÌNH VIEW NGOẠI 1]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/am-nhac-thu-gian-co-phong-trung-hoa-ancient-chinese-instrumental|Âm Nhạc Thư Giãn & Cổ Phong Trung Hoa (Ancient Chinese Instrumental)]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `13:23` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại | **Thời lượng:** `13:23` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-ab68db&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-ab68db/README.md)
 
 ---

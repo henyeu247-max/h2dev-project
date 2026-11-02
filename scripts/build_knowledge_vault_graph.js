@@ -3,7 +3,7 @@
  * build_knowledge_vault_graph.js — Hệ thống hóa Dữ liệu & Hạ tầng Đa Dự Án Vĩnh viễn (Nexus Dual-Layer Graph)
  *
  * Kiến trúc 2 Lớp chuẩn hóa từ gốc tới đỉnh (Zero-Touch Auto-Discovery & Live Sync):
- *   - LỚP 1 (Knowledge Layer): 333 Video (148 H2DEV + 140 Huân + 45 DGMD), 35 Modules, 204 Niches, 204 Tools, 501 Channels.
+ *   - LỚP 1 (Knowledge Layer): Dynamic 3-Track Videos (H2DEV + Huân + DGMD), Modules, Niches, Tools, Channels.
  *   - LỚP 2 (Infrastructure & Multi-Project Code/Data Lineage):
  *       Workspace (D:\YTB) -> Project (17+ Dự án tự động phát hiện) -> Domain/Data Branch -> Directory -> File -> Code/Data Dependencies
  *       Tự động bóc tách liên kết thực thi: IMPORTS, READS_DATA, WRITES_DATA, INVOKES_SCRIPT, SERVES_UI.
@@ -102,7 +102,7 @@ function inferFileRole(relPath, ext, contentSample) {
 function buildKnowledgeAndInfraGraph(options = {}) {
   const tStart = performance.now();
   if (!options.silent) {
-    console.log('=== [97YO-DEV NEXUS GRAPH BUILDER — 333 VIDEOS (3 CHILD TRACKS) + 17 PROJECTS INFRASTRUCTURE] ===');
+    console.log('=== [97YO-DEV NEXUS GRAPH BUILDER — DYNAMIC 3-TRACK VIDEOS + 17 PROJECTS INFRASTRUCTURE] ===');
   }
   ensureDirs();
   const registry = loadRegistry();
@@ -231,11 +231,12 @@ function buildKnowledgeAndInfraGraph(options = {}) {
   }, 'D:/YTB 97yo-dev Master Multi-Project Workspace H2DEV Huân DGMD Pipelines Research Repos', [], { layer: 'infra', level: 0 });
 
   // Track definitions (3 Child Branches of 97yo-dev)
+  const totalSysVideos = h2devCat.length + huanCat.length + dgmdCat.length;
   const tracks = [
     {
       id: 'track:h2dev',
       code: 'h2dev',
-      name: 'Nhánh H2DEV · YouTube Faceless Master (148 Videos)',
+      name: `Nhánh H2DEV · YouTube Faceless Master (${h2devCat.length} Videos)`,
       file: 'tracks/TRACK-H2DEV.md',
       modules: h2devMods,
       catalog: h2devCat,
@@ -244,7 +245,7 @@ function buildKnowledgeAndInfraGraph(options = {}) {
     {
       id: 'track:huan',
       code: 'huan',
-      name: 'Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)',
+      name: `Nhánh Huân Academy · YouTube AI & Tự Động Hóa (${huanCat.length} Videos)`,
       file: 'tracks/TRACK-HUAN.md',
       modules: huanMods,
       catalog: huanCat,
@@ -253,7 +254,7 @@ function buildKnowledgeAndInfraGraph(options = {}) {
     {
       id: 'track:dgmd',
       code: 'dgmd',
-      name: 'Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)',
+      name: `Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (${dgmdCat.length} Videos)`,
       file: 'tracks/TRACK-DGMD.md',
       modules: dgmdMods,
       catalog: dgmdCat,
@@ -265,7 +266,7 @@ function buildKnowledgeAndInfraGraph(options = {}) {
   const toolVideos = new Map();
   const channelVideos = new Map();
 
-  // 2. Process all 3 Tracks -> Modules -> 333 Videos (Layer 1: Knowledge)
+  // 2. Process all 3 Tracks -> Modules -> Videos (Layer 1: Knowledge)
   for (const tr of tracks) {
     const catBySku = new Map(tr.catalog.map(v => [v.sku, v]));
     const modLinksForTrack = [];
@@ -505,7 +506,7 @@ videos_count: ${tr.catalog.length}
 
 # ${tr.name}
 
-- **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME (Bản Đồ Tri Thức Tổng Thể 333 Videos)]]
+- **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME (Bản Đồ Tri Thức Tổng Thể ${totalSysVideos} Videos)]]
 - **Số chương (Modules):** \`${tr.modules.length}\`
 - **Tổng số video bài giảng:** \`${tr.catalog.length}\`
 
@@ -938,7 +939,7 @@ ${citedSkus.map(s => `- [[videos/${s}|${s} — ${allVideoTitleBySku.get(s)?.titl
   discoveredProjects.push({
     id: 'project:h2dev-project',
     slug: 'h2dev-project',
-    name: 'Hệ Thống Lõi 97yo-dev (Master Hub & 3 Nhánh Đào Tạo — 333 Video)',
+    name: `Hệ Thống Lõi 97yo-dev (Master Hub & 3 Nhánh Đào Tạo — ${totalSysVideos} Video)`,
     category: 'core-platform',
     absPath: ROOT,
     relToWs: 'H2DEV-Project',
@@ -1342,7 +1343,7 @@ ${projFiles.slice(0, 120).map(f => `- \`${f.meta.relToProject || f.label}\` — 
 
     // Write Obsidian JSON Canvas (`knowledge-hub/vault/00-ARCHITECTURE-MAP.canvas`)
     const canvasNodes = [
-      { id: wsId, type: 'text', x: 0, y: 300, width: 340, height: 120, color: '1', text: `# 🌐 Hệ Thống Trung Tâm 97yo-dev\nDomain: 97yo-dev-learn.tonymmo.com\n${discoveredProjects.length} Dự án · 3 Nhánh Đào Tạo (333 Video) · Auto-Sync Live` }
+      { id: wsId, type: 'text', x: 0, y: 300, width: 340, height: 120, color: '1', text: `# 🌐 Hệ Thống Trung Tâm 97yo-dev\nDomain: 97yo-dev-learn.tonymmo.com\n${discoveredProjects.length} Dự án · 3 Nhánh Đào Tạo (${totalSysVideos} Video) · Auto-Sync Live` }
     ];
     const canvasEdges = [];
     discoveredProjects.forEach((p, idx) => {

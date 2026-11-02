@@ -1,15 +1,15 @@
 ---
 handle: "@MariHoNgoc"
-name: "Mari Hồ Ngọc"
-url: "https://www.youtube.com/channel/UCxk--0Ei8TjnKQX-rdnWMeg"
+name: "@MariHoNgoc"
+url: "https://www.youtube.com/@MariHoNgoc"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @MariHoNgoc (Mari Hồ Ngọc)
+# Kênh Đối Thủ / Kênh Mẫu: @MariHoNgoc (@MariHoNgoc)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/channel/UCxk--0Ei8TjnKQX-rdnWMeg](https://www.youtube.com/channel/UCxk--0Ei8TjnKQX-rdnWMeg)
+- **URL YouTube:** [https://www.youtube.com/@MariHoNgoc](https://www.youtube.com/@MariHoNgoc)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

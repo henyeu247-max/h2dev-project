@@ -1,0 +1,102 @@
+{
+  "sku": "VIDEO-ca0383",
+  "title": "Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1",
+  "actual_topic": "Quy Trình Sản Xuất Phim Ngắn AI Tình Huống Drama Nhật Bản 36 Giây Bằng Master Prompt V1.0 Kiếm Tiền Đa Nền Tảng",
+  "summary": "Hướng dẫn vận hành bộ Master Prompt V1.0 (Japanese AI Drama Production System) để người không biết tiếng Nhật vẫn tự động sản xuất được 100 bộ phim ngắn tình huống Nhật Bản dài 36 giây (6 cảnh x 6 giây) kiếm tiền trên cả hai nền tảng.",
+  "category_group": "view_ngoai",
+  "niche_primary": "Phim Ngắn AI Tình Huống Drama Nhật Bản",
+  "niche_id": "jp-ai-short-drama",
+  "target_market": "Nhật Bản",
+  "market_code": "JP",
+  "key_takeaways": [
+    "Hiệu suất đầu tư cực kỳ tối ưu cho thị trường Nhật Bản: Mỗi thước phim tình huống 36 giây chỉ tiêu tốn khoảng 60 credit và mất vài phút thao tác nhưng mang lại nguồn thu ngoại tệ từ cả hai nền tảng.",
+    "Bộ Master Prompt V1.0 Japanese AI Drama tự động thiết kế 100 kịch bản phim ngắn độc lập chuẩn văn hóa Nhật Bản mà không đòi hỏi người làm phải biết tiếng Nhật.",
+    "Cấu trúc vàng 36 giây cho nền tảng dọc: Mỗi bộ phim bao gồm đúng 6 phân cảnh liên hoàn (mỗi cảnh 6 giây) đi từ mở đầu kịch tính, xung đột cao trào đến cú lật bất ngờ.",
+    "Quy trình hậu kỳ nhanh gọn: Sau khi ghép 6 phân cảnh 6 giây, sử dụng tính năng tự động nhận diện và tạo phụ đề tiếng Nhật trực tiếp rồi bật nhãn nội dung AI khi đăng tải.",
+    "Mang về thu nhập là 0.23 đô trên 1.000 view. Nghĩa là 1 video này chúng mày chỉ sản xuất trong vòng 2 phút. Ok. Chào các em yêu của thầy. Hôm nay tao lại dạy cho chúng"
+  ],
+  "edit_sop": {
+    "primary": "Quy trình sản xuất phim ngắn AI tình huống Nhật Bản 36 giây (6 phân cảnh) bằng Master Prompt V1.0 đăng đa nền tảng.",
+    "additional": [
+      "Sao chép bộ Master Prompt V1.0 Japanese AI Drama Production System dán vào trình tạo kịch bản để nhận danh sách cốt truyện và bảng phân cảnh.",
+      "Sử dụng câu lệnh thiết kế nhân vật để tạo hình ảnh tham chiếu chuẩn gương mặt, trang phục và bối cảnh đời sống Nhật Bản.",
+      "Đính kèm ảnh tham chiếu nhân vật vào mục tạo video và lần lượt dán câu lệnh từ cảnh 1 đến cảnh 6 để xuất 6 đoạn video có sẵn lời thoại tiếng Nhật.",
+      "Đưa 6 đoạn video vào trình dựng, bật tính năng tự động tạo phụ đề tiếng Nhật và đăng tải đồng thời lên cả hai nền tảng."
+    ]
+  },
+  "sop_steps": [
+    "Sao chép bộ Master Prompt V1.0 Japanese AI Drama Production System dán vào trình tạo kịch bản để nhận danh sách cốt truyện và bảng phân cảnh.",
+    "Sử dụng câu lệnh thiết kế nhân vật để tạo hình ảnh tham chiếu chuẩn gương mặt, trang phục và bối cảnh đời sống Nhật Bản.",
+    "Đính kèm ảnh tham chiếu nhân vật vào mục tạo video và lần lượt dán câu lệnh từ cảnh 1 đến cảnh 6 để xuất 6 đoạn video có sẵn lời thoại tiếng Nhật.",
+    "Đưa 6 đoạn video vào trình dựng, bật tính năng tự động tạo phụ đề tiếng Nhật và đăng tải đồng thời lên cả hai nền tảng."
+  ],
+  "avoid_flags": [
+    "Ngại làm thị trường ngoại vì không biết tiếng Nhật thay vì dùng Master Prompt tự động sinh sẵn lời thoại tiếng Nhật chuẩn xác kèm giải nghĩa.",
+    "Bỏ quên bước tạo và đính kèm hình ảnh nhân vật tham chiếu khiến nhân vật chính trong 6 phân cảnh 6 giây không đồng nhất diện mạo."
+  ],
+  "tools_mentioned": [
+    "YouTube"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "seconds": 0,
+      "time": "00:00",
+      "label": "Phân tích tiềm năng làm phim ngắn AI tình huống Nhật Bản đăng đa nền tảng kiếm tiền từ lượt xem ngoại"
+    },
+    {
+      "seconds": 55,
+      "time": "00:55",
+      "label": "Kiểm chứng hiệu quả thực tế của video tình huống Nhật Bản với chi phí chỉ khoảng 60 credit mỗi tập"
+    },
+    {
+      "seconds": 184,
+      "time": "03:04",
+      "label": "Sao chép bộ Master Prompt V1.0 Japanese AI Drama để tự động sinh 100 kịch bản phim 36 giây"
+    },
+    {
+      "seconds": 325,
+      "time": "05:25",
+      "label": "Tạo bảng thiết kế nhân vật chuẩn văn hóa Nhật Bản và sao chép câu lệnh cảnh 1 để dựng hình"
+    },
+    {
+      "seconds": 467,
+      "time": "07:47",
+      "label": "Đính kèm ảnh tham chiếu nhân vật vào công cụ tạo video để xuất 6 phân cảnh 6 giây có thoại tiếng Nhật"
+    },
+    {
+      "seconds": 747,
+      "time": "12:27",
+      "label": "Ghép 6 phân cảnh, bật tính năng tự động tạo phụ đề tiếng Nhật và xuất bản lên hai nền tảng"
+    }
+  ],
+  "course_docs": [
+    {
+      "title": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1 (master_prompt.md)",
+      "name": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1 (master_prompt.md)",
+      "file": "assets/docs-dgmd/VIDEO-ca0383/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-ca0383/master_prompt.md",
+      "link": "https://docs.google.com/document/d/1AtfdVbkvkFxkDZoL9JpgKL0WP4xPpqAkxO2qSC__X40/edit?usp=sharing"
+    },
+    {
+      "title": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1 (doc_1.txt)",
+      "name": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1 (doc_1.txt)",
+      "file": "assets/docs-dgmd/VIDEO-ca0383/doc_1.txt",
+      "readFile": "assets/docs-dgmd/VIDEO-ca0383/doc_1.txt",
+      "link": "https://docs.google.com/document/d/1AtfdVbkvkFxkDZoL9JpgKL0WP4xPpqAkxO2qSC__X40/edit?usp=sharing"
+    },
+    {
+      "title": "Mô tả bài giảng gốc: Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1 (description.txt)",
+      "name": "Mô tả bài giảng gốc: Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1 (description.txt)",
+      "file": "assets/docs-dgmd/VIDEO-ca0383/description.txt",
+      "readFile": "assets/docs-dgmd/VIDEO-ca0383/description.txt",
+      "link": "assets/docs-dgmd/VIDEO-ca0383/description.txt"
+    }
+  ],
+  "analysis_method": "agv_3.8_multimodal_7layer_verified",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-ca0383/transcript.txt"
+}

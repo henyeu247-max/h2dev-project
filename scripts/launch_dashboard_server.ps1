@@ -1,7 +1,10 @@
 # launch_dashboard_server.ps1: Bounded idempotent hidden launcher for AGV Dashboard Server
 $port = 18765
 $serverScript = "D:\YTB\H2DEV-Project\scripts\dashboard_server.py"
-$pythonExe = "C:\Users\SaxukeB\AppData\Local\Programs\Python\Python313\python.exe"
+$pythonExe = "C:\Users\SaxukeB\AppData\Local\Programs\Python\Python313\pythonw.exe"
+if (-not (Test-Path $pythonExe)) {
+    $pythonExe = "C:\Users\SaxukeB\AppData\Local\Programs\Python\Python313\python.exe"
+}
 $logDir = "D:\YTB\H2DEV-Project\logs"
 if (-not (Test-Path $logDir)) { New-Item -ItemType Directory -Path $logDir -Force | Out-Null }
 $stdoutPath = Join-Path $logDir "dashboard_server.out.log"

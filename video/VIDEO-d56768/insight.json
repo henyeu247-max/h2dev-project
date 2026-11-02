@@ -38,33 +38,33 @@
   ],
   "key_timestamps": [
     {
-      "seconds": 0,
       "time": "00:00",
+      "seconds": 0,
       "label": "Phân tích Kênh 1 (@chuyenhaytuoigia): Đăng 3 video dài 1-2 tiếng/ngày đạt 70K view, RPM Việt $1-$2"
     },
     {
-      "seconds": 66,
       "time": "01:06",
+      "seconds": 66,
       "label": "Kỹ thuật dùng 2 giọng đọc AI đối thoại kịch tính và cách Việt hóa kịch bản drama từ Nhật/Hàn"
     },
     {
-      "seconds": 155,
       "time": "02:35",
+      "seconds": 155,
       "label": "Cách tìm ảnh người già Việt Nam trên Google: Mỗi câu chuyện thay một gương mặt nhân vật khác nhau"
     },
     {
-      "seconds": 191,
       "time": "03:11",
+      "seconds": 191,
       "label": "Phân tích Kênh 2 (@PodcastGanThan): Mới đăng 4 ngày trên phôi kênh cổ 2021"
     },
     {
-      "seconds": 247,
       "time": "04:07",
+      "seconds": 247,
       "label": "So sánh từ khóa thực tế: Video về 'Gan' nổ 21.000 view trong khi video về 'Thận' chỉ đạt ~350 view"
     },
     {
-      "seconds": 308,
       "time": "05:08",
+      "seconds": 308,
       "label": "Phân tích Kênh 3 (@bsminhtam60, 90,8K sub): Bài học tập trung 1 ngách bệnh mũi nhọn trước khi mở rộng"
     }
   ],
@@ -74,10 +74,9 @@
   "claims_require_external_verification": false,
   "source_transcript": "video/VIDEO-d56768/transcript.txt",
   "sop_steps": [
-    "Kênh mẫu dùng hai giọng đọc đối thoại cho truyện drama gia đình (con dâu và mẹ chồng)",
-    "Có thể tìm từ khóa ở thị trường Nhật hoặc Hàn, lấy nội dung về rồi Việt hóa",
-    "Edit theo quy trình cũ: chèn video tự nhiên có sóng âm, thêm dòng AI",
-    "Ảnh nhân vật: search Google người già, phụ nữ người già Việt Nam rồi ghép vào, mỗi video dùng người khác nhau",
-    "Ngách sức khỏe: ghép nhiều ảnh video thực tế minh họa, đọc tới đâu minh họa tới đó"
+    "Tìm kiếm kịch bản drama gia đình (mẹ chồng nàng dâu, thừa kế) từ thị trường Nhật Bản hoặc Hàn Quốc, sau đó dùng prompt Việt hóa toàn bộ tên riêng, bối cảnh và văn phong sang thuần Việt.",
+    "Sử dụng 2 giọng đọc AI phân vai đối thoại kịch tính, kéo dài thời lượng video lên trên 1–2 tiếng để tối ưu RPM đạt $1–$2 tại thị trường Việt Nam.",
+    "Lên Google tìm kiếm hình ảnh người già, phụ nữ cao tuổi Việt Nam để mỗi video thay đổi một nhân vật đại diện khác nhau, ghép trên nền video tự nhiên kèm sóng âm.",
+    "Với ngách sức khỏe view Việt (@PodcastGanThan, @bsminhtam60): Giai đoạn đầu tập trung đánh duy nhất từ khóa 'Gan' (giải độc gan, gan nhiễm mỡ) đang có lượng tìm kiếm và đề xuất cao gấp hàng chục lần từ khóa 'Thận'; ghép nhiều hình ảnh và footage y khoa minh họa sát từng câu thoại."
   ]
 }

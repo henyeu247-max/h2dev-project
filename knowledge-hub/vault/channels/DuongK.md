@@ -1,12 +1,12 @@
 ---
 handle: "@DuongK"
-name: "Dương K (Creator / Nhà sản xuất âm nhạc chia sẻ trực tiếp tại hội trường K3 Hà Nội)"
+name: "@DuongK"
 url: "https://www.youtube.com/@DuongK"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @DuongK (Dương K (Creator / Nhà sản xuất âm nhạc chia sẻ trực tiếp tại hội trường K3 Hà Nội))
+# Kênh Đối Thủ / Kênh Mẫu: @DuongK (@DuongK)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@DuongK](https://www.youtube.com/@DuongK)

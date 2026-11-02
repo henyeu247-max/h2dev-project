@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-33d701&track=h2dev"
 # VIDEO-33d701 — MẸO EDIT LÁCH LỖI KHÔNG TRUNG THỰC MỚI NHẤT TỪ ĐỐI THỦ VÀ SHARE NGÁCH TRIẾT LÝ THỊ TRƯỜNG NHẬT KÊNH MỚI BUILD ĐÃ BKT + THÊM 3 NGÁCH NHỎ NHẬT & VIỆT
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#50`)  
 > - **Ngách nội dung (Niche):** [[niches/triet-ly-song-dao-lam-nguoi|Triết Lý Sống & Đạo Làm Người]]  
 > - **Thị trường:** 🇯🇵 Nhật · 🇻🇳 Việt | **Thời lượng:** `8:48` | **Ngày đăng:** `2026-03-26`  

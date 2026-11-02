@@ -1,12 +1,12 @@
 ---
 handle: "@realadamrose"
-name: "Adam Rose"
+name: "@realadamrose"
 url: "https://www.youtube.com/@realadamrose"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @realadamrose (Adam Rose)
+# Kênh Đối Thủ / Kênh Mẫu: @realadamrose (@realadamrose)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@realadamrose](https://www.youtube.com/@realadamrose)

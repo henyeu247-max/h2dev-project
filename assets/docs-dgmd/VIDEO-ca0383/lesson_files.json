@@ -1,0 +1,33 @@
+{
+  "id": 571,
+  "sku": "VIDEO-ca0383",
+  "upstream_sku": "VIDEO-ca0383",
+  "name": "Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1",
+  "url_key": "quy-trinh-san-xuat-phim-ai-tinh-huong-nhat-1",
+  "published_at": "2026-10-30",
+  "time": "847",
+  "video_link": "https://video.mona-cloud.com/api/video/?user=42838816&video=1793356315-quy-trinh-san-xuat-phim-nhat&protected=False&version=v2&token=gAAAAABq5HIgjRTb2BRTgP4W5iAzaIoJYgdzgJKR9E7l6qwCOGixhkjwy3z6QLuTy6ehx4QFjotHpY9JA7tUwxz2VK_tcS66ZC2G8_jKBa0b5w5iTPUgPfo%3D",
+  "protected": false,
+  "bai_h_c_free": false,
+  "lesson_files": null,
+  "attachments": null,
+  "video_subtitle": null,
+  "image": {
+    "url": "https://api.daigiamangdep.com/media/catalog/product/f/6/f6eee17d-6539-40f4-a711-f6b042a68eea.png.png",
+    "label": "f6eee17d-6539-40f4-a711-f6b042a68eea.png"
+  },
+  "thumbnail": {
+    "url": "https://api.daigiamangdep.com/media/catalog/product/f/6/f6eee17d-6539-40f4-a711-f6b042a68eea.png.png",
+    "label": "f6eee17d-6539-40f4-a711-f6b042a68eea.png"
+  },
+  "tags": null,
+  "gdrive_files": [],
+  "gdoc_files": [
+    {
+      "doc_id": "1AtfdVbkvkFxkDZoL9JpgKL0WP4xPpqAkxO2qSC__X40",
+      "filename": "doc_1.txt",
+      "bytes": 28599,
+      "lines": 574
+    }
+  ]
+}

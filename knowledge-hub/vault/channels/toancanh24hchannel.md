@@ -1,16 +1,16 @@
 ---
 handle: "@toancanh24hchannel"
-name: "TOÀN CẢNH 24H"
+name: "@toancanh24hchannel"
 url: "https://www.youtube.com/@toancanh24hchannel"
-status: "DEAD"
+status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @toancanh24hchannel (TOÀN CẢNH 24H)
+# Kênh Đối Thủ / Kênh Mẫu: @toancanh24hchannel (@toancanh24hchannel)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@toancanh24hchannel](https://www.youtube.com/@toancanh24hchannel)
-- **Trạng thái kiểm định:** `DEAD (Đã dừng / Gỡ)`
+- **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`
 

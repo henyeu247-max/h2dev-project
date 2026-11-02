@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M09"
 module_title: "Module 7 — Nhân bản thị trường & Xây dựng hệ thống kênh"
 seq: "01"
-niche: "Sức Khỏe & Dinh Dưỡng"
+niche: "Sức khỏe & Tâm linh người cao tuổi (Nhân bản đa thị trường)"
 markets: ["🇯🇵 Nhật"]
 duration: "43:08"
 published_at: "2025-08-21"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-f59aa7&track=h2dev"
 # VIDEO-f59aa7 — VIP_ Tư duy nhân bản thị trường và hướng dẫn từ A-Z cách làm edit và thumb
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M09|H2DEV-M09 — Module 7 — Nhân bản thị trường & Xây dựng hệ thống kênh]] (Bài `#01`)  
-> - **Ngách nội dung (Niche):** [[niches/suc-khoe-dinh-duong|Sức Khỏe & Dinh Dưỡng]]  
+> - **Ngách nội dung (Niche):** [[niches/suc-khoe-tam-linh-nguoi-cao-tuoi-nhan-ban-da-thi-truong|Sức khỏe & Tâm linh người cao tuổi (Nhân bản đa thị trường)]]  
 > - **Thị trường:** 🇯🇵 Nhật | **Thời lượng:** `43:08` | **Ngày đăng:** `2025-08-21`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-f59aa7&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-f59aa7/README.md)
 
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-f59aa7&track=h2dev"
 - Tư duy nhân bản thị trường: lấy các chủ đề đã nổ view ở Nhật/Hàn hoặc Việt Nam (như chữ số cuối năm sinh nói về kiếp trước, 5 vị trí ngứa cảnh báo ung thư, thói quen người già) rồi dịch nguyên kịch bản sang thị trường đích mà không cần tự nghĩ mới.
 - Quy trình tạo voice và avatar: dùng Vbee cho thị trường Việt hoặc ElevenLabs cho thị trường ngoại, sau đó đưa file âm thanh vào HeyGen để tạo nhân vật AI nhép môi khớp khẩu hình trước khi ghép trên CapCut.
 - Kỹ thuật dựng CapCut: tách nền nhân vật HeyGen đặt ở góc khung hình, chèn cảnh quay minh họa (B-roll), hiệu ứng âm thanh chuyển cảnh và phụ đề cỡ lớn dễ đọc cho khán giả lớn tuổi.
+- Hôm nay em sẽ hướng dẫn cho các bạn về cách làm kênh nhân bản ở các thị trường cho mọi người.
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình 3 bước thực chiến: VIP_ Tư duy nhân bản thị trường và hướng dẫn từ A-Z cách làm edit và thumb

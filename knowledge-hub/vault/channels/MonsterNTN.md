@@ -1,12 +1,12 @@
 ---
 handle: "@MonsterNTN"
-name: "NTN Vlogs (Monster NTN - Nguyễn Thành Nam)"
+name: "@MonsterNTN"
 url: "https://www.youtube.com/@MonsterNTN"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @MonsterNTN (NTN Vlogs (Monster NTN - Nguyễn Thành Nam))
+# Kênh Đối Thủ / Kênh Mẫu: @MonsterNTN (@MonsterNTN)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@MonsterNTN](https://www.youtube.com/@MonsterNTN)

@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "95"
-niche: "Quy Trình AI & Train Prompt Kịch Bản Thực Chiến"
+niche: "Mẹo Tương Tác & Tăng Đề Xuất Thuật Toán"
 markets: ["🇰🇷 Hàn"]
 duration: "27:58"
 published_at: "2026-10-02"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-043d15&track=h2dev"
 # VIDEO-043d15 — *Thực chiến Hướng dẫn train prompt và làm kịch bản ngách nhỏ key sức khỏe thị trường Hàn Quốc | Update 02-10-2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#95`)  
-> - **Ngách nội dung (Niche):** [[niches/quy-trinh-ai-train-prompt-kich-ban-thuc-chien|Quy Trình AI & Train Prompt Kịch Bản Thực Chiến]]  
+> - **Ngách nội dung (Niche):** [[niches/meo-tuong-tac-tang-de-xuat-thuat-toan|Mẹo Tương Tác & Tăng Đề Xuất Thuật Toán]]  
 > - **Thị trường:** 🇰🇷 Hàn | **Thời lượng:** `27:58` | **Ngày đăng:** `2026-10-02`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-043d15&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-043d15/README.md)
 

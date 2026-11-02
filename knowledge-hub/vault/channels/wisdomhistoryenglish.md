@@ -1,12 +1,12 @@
 ---
 handle: "@wisdomhistoryenglish"
-name: "Wisdom History English"
+name: "@wisdomhistoryenglish"
 url: "https://www.youtube.com/@wisdomhistoryenglish"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @wisdomhistoryenglish (Wisdom History English)
+# Kênh Đối Thủ / Kênh Mẫu: @wisdomhistoryenglish (@wisdomhistoryenglish)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@wisdomhistoryenglish](https://www.youtube.com/@wisdomhistoryenglish)

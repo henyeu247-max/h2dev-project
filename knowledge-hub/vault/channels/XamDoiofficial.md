@@ -1,12 +1,12 @@
 ---
 handle: "@XamDoiofficial"
-name: "Xẩm-Đời"
+name: "@XamDoiofficial"
 url: "https://www.youtube.com/@XamDoiofficial"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @XamDoiofficial (Xẩm-Đời)
+# Kênh Đối Thủ / Kênh Mẫu: @XamDoiofficial (@XamDoiofficial)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@XamDoiofficial](https://www.youtube.com/@XamDoiofficial)

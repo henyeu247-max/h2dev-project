@@ -1,12 +1,12 @@
 ---
 handle: "@NhaKhoaLacVietIntech"
-name: "Nha Khoa Lạc Việt Intech"
+name: "@NhaKhoaLacVietIntech"
 url: "https://www.youtube.com/@NhaKhoaLacVietIntech"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @NhaKhoaLacVietIntech (Nha Khoa Lạc Việt Intech)
+# Kênh Đối Thủ / Kênh Mẫu: @NhaKhoaLacVietIntech (@NhaKhoaLacVietIntech)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@NhaKhoaLacVietIntech](https://www.youtube.com/@NhaKhoaLacVietIntech)

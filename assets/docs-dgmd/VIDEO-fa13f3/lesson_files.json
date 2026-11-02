@@ -1,0 +1,26 @@
+{
+  "id": 572,
+  "sku": "VIDEO-fa13f3",
+  "upstream_sku": "VIDEO-fa13f3",
+  "name": "Quy Trình Gắn Sản Phảm Affiliate ",
+  "url_key": "quy-trinh-gan-san-pham-affiliate",
+  "published_at": "2026-10-30",
+  "time": "260",
+  "video_link": "https://video.mona-cloud.com/api/video/?user=42838816&video=1793513397-1101-2&protected=False&version=v2&token=gAAAAABq5te4VW3-r0pg-3KHouu3iAPqNOEI9Y5PTqI4u8FOJl3dR0VLq-dCn5eELL7UKeY5CxR0qHuqto6YzcHZSMV6Dcwvmcf3S5kLydS1AED2VpDvek8%3D",
+  "protected": false,
+  "bai_h_c_free": false,
+  "lesson_files": null,
+  "attachments": null,
+  "video_subtitle": null,
+  "image": {
+    "url": "https://api.daigiamangdep.com/media/catalog/product/9/9/99db0f48-f176-4566-a9ec-853302fc58fa_1.png",
+    "label": "99db0f48-f176-4566-a9ec-853302fc58fa.png"
+  },
+  "thumbnail": {
+    "url": "https://api.daigiamangdep.com/media/catalog/product/9/9/99db0f48-f176-4566-a9ec-853302fc58fa_1.png",
+    "label": "99db0f48-f176-4566-a9ec-853302fc58fa.png"
+  },
+  "tags": null,
+  "gdrive_files": [],
+  "gdoc_files": []
+}

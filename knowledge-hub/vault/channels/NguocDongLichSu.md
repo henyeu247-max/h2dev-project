@@ -1,12 +1,12 @@
 ---
 handle: "@NguocDongLichSu"
-name: "Ngược Dòng Lịch Sử"
+name: "@NguocDongLichSu"
 url: "https://www.youtube.com/@NguocDongLichSu"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @NguocDongLichSu (Ngược Dòng Lịch Sử)
+# Kênh Đối Thủ / Kênh Mẫu: @NguocDongLichSu (@NguocDongLichSu)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@NguocDongLichSu](https://www.youtube.com/@NguocDongLichSu)

@@ -125,6 +125,36 @@ async function main() {
     else fail('1.5 ngach search', `q="${q}" rows=${rows}`);
     await nxSearch.fill('');
     await page.waitForTimeout(300);
+
+    // 1.5b uifix98 /ngach mathematical & UI invariants
+    await nxSearch.fill('H27');
+    await page.waitForTimeout(350);
+    const h27Cards = await page.evaluate(() => Array.from(document.querySelectorAll('.niche-card')).map(c => c.id));
+    await nxSearch.fill('');
+    await page.waitForTimeout(250);
+    await page.goto(`${BASE}/ngach?nxl=40`, { waitUntil: 'networkidle', timeout: 60000 });
+    await page.waitForTimeout(400);
+    const nxAudit = await page.evaluate(() => {
+      const cards = Array.from(document.querySelectorAll('.niche-card'));
+      const docLinks = Array.from(document.querySelectorAll('.niche-card [data-open-tab="tai-lieu"]'));
+      const kenhBtns = Array.from(document.querySelectorAll('.niche-card [data-open-tab="kenh-mau"][data-kenh-niche]'));
+      const marketBtns = Array.from(document.querySelectorAll('[data-nx-market]')).filter(b => b.getAttribute('data-nx-market'));
+      const marketSum = marketBtns.reduce((s, b) => s + Number((b.textContent.match(/\((\d+)\)/) || [])[1] || 0), 0);
+      const navLabels = Array.from(document.querySelectorAll('nav[aria-label]')).map(n => n.getAttribute('aria-label'));
+      const dupNavs = navLabels.filter((v, i, a) => a.indexOf(v) !== i);
+      return {
+        cardsCount: cards.length,
+        docLinksCount: docLinks.length,
+        kenhBtnsCount: kenhBtns.length,
+        marketSum,
+        dupNavsCount: dupNavs.length
+      };
+    });
+    if (h27Cards.length === 1 && h27Cards[0] === 'niche-card-H27' && nxAudit.cardsCount === 40 && nxAudit.docLinksCount === 444 && nxAudit.kenhBtnsCount === 40 && nxAudit.marketSum === 40 && nxAudit.dupNavsCount === 0) {
+      pass('1.5b /ngach uifix98 invariants (40 niches, 444 docs, 40 kenh links, H27 exact, 0 dup nav)', JSON.stringify(nxAudit));
+    } else {
+      fail('1.5b /ngach uifix98 invariants', JSON.stringify({ h27Cards, ...nxAudit }));
+    }
   } else {
     fail('1.5 ngach search', '#fq-nx missing');
   }

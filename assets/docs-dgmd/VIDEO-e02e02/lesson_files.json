@@ -1,0 +1,33 @@
+{
+  "id": 567,
+  "sku": "VIDEO-e02e02",
+  "upstream_sku": "VIDEO-e02e02",
+  "name": "Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay",
+  "url_key": "quy-trinh-san-xuat-video-hoat-hinh-2d-ve-tay",
+  "published_at": "2026-10-24",
+  "time": "880",
+  "video_link": "https://video.mona-cloud.com/api/video/?user=42838816&video=1792815238-quy-trinh-san-xuat-video-hoat-hinh-2d-ve-tay&protected=True&version=v2&token=gAAAAABq3DCQj3-UlsflBQm7xQtSa6w4hOhnYB7QHQ3JRPtafW_uLkIkZyHtZ5MWF1jmldLy6IBMqUdt9DA40VWVajhU6hye0C5dKN85mXV9iaGUtax_Wl0%3D",
+  "protected": true,
+  "bai_h_c_free": false,
+  "lesson_files": null,
+  "attachments": null,
+  "video_subtitle": null,
+  "image": {
+    "url": "https://api.daigiamangdep.com/media/catalog/product/2/8/289ed926-7ac1-4240-a6d8-6719a1012c9d.png.png",
+    "label": "289ed926-7ac1-4240-a6d8-6719a1012c9d.png"
+  },
+  "thumbnail": {
+    "url": "https://api.daigiamangdep.com/media/catalog/product/2/8/289ed926-7ac1-4240-a6d8-6719a1012c9d.png.png",
+    "label": "289ed926-7ac1-4240-a6d8-6719a1012c9d.png"
+  },
+  "tags": null,
+  "gdrive_files": [],
+  "gdoc_files": [
+    {
+      "doc_id": "1jR99uIcQXUV6-Sgsx0oq2FPeLX2FdfRha5nvIfABKDE",
+      "filename": "doc_1.txt",
+      "bytes": 41563,
+      "lines": 791
+    }
+  ]
+}

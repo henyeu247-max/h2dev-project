@@ -7,7 +7,7 @@ lesson_count: 3
 
 # Module DGMD-M07 — COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1
 
-- **Thuộc Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]
 - **Tổng số bài giảng:** `3` video
 - **Mô tả:** Quy trình sản xuất video Facebook Reels, xây dựng Page triệu view và chủ đề Phật pháp.
 

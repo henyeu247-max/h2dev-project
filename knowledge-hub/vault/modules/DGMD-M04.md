@@ -7,7 +7,7 @@ lesson_count: 3
 
 # Module DGMD-M04 — COMBO 3 QUY TRÌNH VIEW NGOẠI 1
 
-- **Thuộc Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]
 - **Tổng số bài giảng:** `3` video
 - **Mô tả:** Bộ ba quy trình sản xuất nhắm thị trường quốc tế: Douyin, Kênh nhạc cổ và Bán Content.
 

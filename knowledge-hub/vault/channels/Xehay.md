@@ -1,12 +1,12 @@
 ---
 handle: "@Xehay"
-name: "Xe Hay / Hùng Lâm (Case study reviewer ô tô xây dựng thương hiệu cá nhân mở rộng bán đa sản phẩm)"
+name: "@Xehay"
 url: "https://www.youtube.com/@Xehay"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Xehay (Xe Hay / Hùng Lâm (Case study reviewer ô tô xây dựng thương hiệu cá nhân mở rộng bán đa sản phẩm))
+# Kênh Đối Thủ / Kênh Mẫu: @Xehay (@Xehay)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Xehay](https://www.youtube.com/@Xehay)

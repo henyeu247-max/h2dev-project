@@ -1,12 +1,12 @@
 ---
 handle: "@BibleStories.official"
-name: "Bible Stories Official (Kênh hình mẫu ngách Câu chuyện Kinh Thánh - Story of Jesus)"
+name: "@BibleStories.official"
 url: "https://www.youtube.com/@BibleStories.official"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @BibleStories.official (Bible Stories Official (Kênh hình mẫu ngách Câu chuyện Kinh Thánh - Story of Jesus))
+# Kênh Đối Thủ / Kênh Mẫu: @BibleStories.official (@BibleStories.official)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@BibleStories.official](https://www.youtube.com/@BibleStories.official)

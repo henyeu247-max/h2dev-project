@@ -5,7 +5,7 @@ Dim http, shell, fso, scriptDir, target
 On Error Resume Next
 Set http = CreateObject("MSXML2.ServerXMLHTTP.6.0")
 If Not http Is Nothing Then
-  http.open "GET", "http://127.0.0.1:8899", False
+  http.open "GET", "http://127.0.0.1:8899/health", False
   http.setTimeouts 1000, 1000, 1000, 1000
   http.send
   If Err.Number = 0 And http.status >= 200 And http.status < 400 Then

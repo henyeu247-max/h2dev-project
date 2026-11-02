@@ -1,12 +1,12 @@
 ---
 handle: "@fachannel"
-name: "F.A CHANNEL"
+name: "@fachannel"
 url: "https://www.youtube.com/@fachannel"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @fachannel (F.A CHANNEL)
+# Kênh Đối Thủ / Kênh Mẫu: @fachannel (@fachannel)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@fachannel](https://www.youtube.com/@fachannel)

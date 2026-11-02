@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "01"
-niche: "Bán Content Đa Thị Trường Hàn & Việt"
+niche: "Triết Lý Đời Sống & Chuyện Nhân Gian"
 markets: ["🇰🇷 Hàn", "🇻🇳 Việt"]
 duration: "11:11"
 published_at: "2026-08-27"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-3a38f9&track=h2dev"
 # VIDEO-3a38f9 — Quá kinh khủng với 2 kênh mới hoàn toàn làm đúng ngách không bao giờ thiếu view - Share kênh Thị trường Hàn và Việt
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#01`)  
-> - **Ngách nội dung (Niche):** [[niches/ban-content-da-thi-truong-han-viet|Bán Content Đa Thị Trường Hàn & Việt]]  
+> - **Ngách nội dung (Niche):** [[niches/triet-ly-doi-song-chuyen-nhan-gian|Triết Lý Đời Sống & Chuyện Nhân Gian]]  
 > - **Thị trường:** 🇰🇷 Hàn · 🇻🇳 Việt | **Thời lượng:** `11:11` | **Ngày đăng:** `2026-08-27`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-3a38f9&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-3a38f9/README.md)
 
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-3a38f9&track=h2dev"
 - Tuyệt đối không bao giờ buff sub hay bơm sub ảo: việc này làm kênh bị flop, mất đề xuất tự nhiên và rất dễ dính đợt quét của YouTube.
 - Kênh mẫu Việt Nam làm ngách drama nhắm thẳng vào tệp khán giả 60–70+ tuổi (tiêu đề gắn tuổi 71, 77...) kết hợp ghép cảnh quay tự nhiên giúp cắn view đều dù mới lập.
 - Khi nhân bản kịch bản từ Nhật/Hàn về Việt Nam, dùng Claude hoặc ChatGPT để Việt hóa văn phong cho gần gũi với người xem trong nước và ưu tiên tạo kênh trên Gmail cá nhân đang dùng thực tế để có độ trust cao.
+- Rồi em chào tất cả mọi người nha, tiếp tục hôm nay thì em sẽ cho mọi người thêm một cái ngách mới ở thị trường Hàn Quốc nha, đây là một cái kênh mới hoàn toàn nha
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Share ngách người già thị trường Hàn và ngách drama người già thị trường Việt

@@ -1,15 +1,15 @@
 ---
 handle: "@InspectZero"
-name: "Inspect Zero (3.2M view Lifetime - $29,009.70)"
-url: "https://www.youtube.com/channel/UCCNilaZaTM9YQmbEzdfb05w"
+name: "@InspectZero"
+url: "https://www.youtube.com/@InspectZero"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @InspectZero (Inspect Zero (3.2M view Lifetime - $29,009.70))
+# Kênh Đối Thủ / Kênh Mẫu: @InspectZero (@InspectZero)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/channel/UCCNilaZaTM9YQmbEzdfb05w](https://www.youtube.com/channel/UCCNilaZaTM9YQmbEzdfb05w)
+- **URL YouTube:** [https://www.youtube.com/@InspectZero](https://www.youtube.com/@InspectZero)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

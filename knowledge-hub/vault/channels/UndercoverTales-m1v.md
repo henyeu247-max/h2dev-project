@@ -1,12 +1,12 @@
 ---
 handle: "@UndercoverTales-m1v"
-name: "Undercover Tales"
+name: "@UndercoverTales-m1v"
 url: "https://www.youtube.com/@UndercoverTales-m1v"
 status: "LIVE_HTTP_200"
 videos_count: 5
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @UndercoverTales-m1v (Undercover Tales)
+# Kênh Đối Thủ / Kênh Mẫu: @UndercoverTales-m1v (@UndercoverTales-m1v)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@UndercoverTales-m1v](https://www.youtube.com/@UndercoverTales-m1v)

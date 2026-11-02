@@ -1,0 +1,26 @@
+{
+  "id": 12508,
+  "sku": "VIDEO-DD983D",
+  "upstream_sku": "VIDEO-dd983d",
+  "name": "Update ngách thị trường Nhật và phân tích + cách edit để không bị quét lỗi do AI và một số lỗi liên quan..",
+  "url_key": "update-ngach-thi-truong-nhat-va-phan-tich-cach-edit-de-khong-bi-quet-loi-do-ai-va-mot-so-loi-lien-quan",
+  "published_at": "2026-08-14",
+  "time": "600",
+  "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1786713087-update-key-pro-14-08-2026&protected=False&version=v2&token=gAAAAABqfxQIVL3ggU0Sox9qKYGEPfIOPcRDZIIuUO-xUOhYbrZGiOcdJE-KczhJTQoxvJgXDokhXOD7tN3Kfju_zSM6ByXQF0Bqzuc1Wc_LasOQTn39Cfk%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
+  "protected": false,
+  "bai_h_c_free": false,
+  "lesson_files": null,
+  "attachments": null,
+  "video_subtitle": null,
+  "image": {
+    "url": "https://saas-api.mona.academy/media/catalog/product/C/h/ChatGPT_Image_20_07_10_14_thg_8_2026.png.png",
+    "label": "ChatGPT Image 20_07_10 14 thg 8, 2026.png"
+  },
+  "thumbnail": {
+    "url": "https://saas-api.mona.academy/media/catalog/product/C/h/ChatGPT_Image_20_07_10_14_thg_8_2026.png.png",
+    "label": "ChatGPT Image 20_07_10 14 thg 8, 2026.png"
+  },
+  "tags": null,
+  "gdrive_files": [],
+  "gdoc_files": []
+}

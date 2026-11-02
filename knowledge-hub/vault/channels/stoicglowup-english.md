@@ -1,12 +1,12 @@
 ---
 handle: "@stoicglowup-english"
-name: "Stoic Glow Up (41,1 N sub — Case study kênh tiếng Anh điểm SEO vidIQ 87,6/100, tối ưu mô tả, timestamp & thẻ tag #1)"
+name: "@stoicglowup-english"
 url: "https://www.youtube.com/@stoicglowup-english"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @stoicglowup-english (Stoic Glow Up (41,1 N sub — Case study kênh tiếng Anh điểm SEO vidIQ 87,6/100, tối ưu mô tả, timestamp & thẻ tag #1))
+# Kênh Đối Thủ / Kênh Mẫu: @stoicglowup-english (@stoicglowup-english)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@stoicglowup-english](https://www.youtube.com/@stoicglowup-english)

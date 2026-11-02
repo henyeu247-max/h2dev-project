@@ -5,8 +5,8 @@ track: "h2dev"
 module_id: "H2DEV-M05"
 module_title: "Module 3 — Tự train Prompt bất kỳ chủ đề mình muốn"
 seq: "02"
-niche: "Prompt AI & Nhân Bản Kịch Bản"
-markets: ["🇯🇵 Nhật"]
+niche: "Tự Động Hóa Prompt & Clone Voice"
+markets: ["🇻🇳 Việt", "🌐 Ngoại"]
 duration: "31:41"
 published_at: "2025-12-08"
 toolsCount: 4
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-54422c&track=h2dev"
 # VIDEO-54422c — HƯỚNG DẪN TỰ TRAIN PROMPT - TỰ TẠO PROMPT CHO BẤT KỲ CHỦ ĐỀ NÀO MUỐN
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M05|H2DEV-M05 — Module 3 — Tự train Prompt bất kỳ chủ đề mình muốn]] (Bài `#02`)  
-> - **Ngách nội dung (Niche):** [[niches/prompt-ai-nhan-ban-kich-ban|Prompt AI & Nhân Bản Kịch Bản]]  
-> - **Thị trường:** 🇯🇵 Nhật | **Thời lượng:** `31:41` | **Ngày đăng:** `2025-12-08`  
+> - **Ngách nội dung (Niche):** [[niches/tu-dong-hoa-prompt-clone-voice|Tự Động Hóa Prompt & Clone Voice]]  
+> - **Thị trường:** 🇻🇳 Việt · 🌐 Ngoại | **Thời lượng:** `31:41` | **Ngày đăng:** `2025-12-08`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-54422c&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-54422c/README.md)
 
 ---

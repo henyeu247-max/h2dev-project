@@ -1,12 +1,12 @@
 ---
 handle: "@biquyetthanhcong68"
-name: "Bí Quyết Thành Công (BMG)"
+name: "@biquyetthanhcong68"
 url: "https://www.youtube.com/@biquyetthanhcong68"
 status: "LIVE_HTTP_200"
 videos_count: 4
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @biquyetthanhcong68 (Bí Quyết Thành Công (BMG))
+# Kênh Đối Thủ / Kênh Mẫu: @biquyetthanhcong68 (@biquyetthanhcong68)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@biquyetthanhcong68](https://www.youtube.com/@biquyetthanhcong68)

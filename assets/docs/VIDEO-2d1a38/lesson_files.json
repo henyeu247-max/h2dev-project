@@ -1,0 +1,32 @@
+{
+  "id": 12814,
+  "sku": "VIDEO-2d1a38",
+  "upstream_sku": "VIDEO-2d1a38",
+  "name": "Hướng dẫn Thực chiến ngách mới Thị trường Hoa Kỳ (US) + Tặng kèm Skill edit video tự động 100% giống đối thủ  |  Update 29-10-2026",
+  "url_key": "huong-dan-thuc-chien-ngach-moi-thi-truong-hoa-ky-us-tang-kem-skill-edit-video-tu-dong-100-giong-doi-thu-update-29-10-2026",
+  "published_at": "2026-10-29",
+  "time": "2120",
+  "video_link": "https://video.mona-cloud.com/api/video/?user=48175094&video=1793265297-update-video-pro-29-10-2026&protected=False&version=v2&token=gAAAAABq4w6cDFg8Khz3hi9dke_0j2nehezv619dZjFK_px6RYAme4VBxC0bpDD_q4d4loIV6g2bIwoRAV5uWf-cxvianeNlccJfErsQRM01KNJMVmudgcY%3D&link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006",
+  "protected": false,
+  "bai_h_c_free": false,
+  "lesson_files": null,
+  "attachments": null,
+  "video_subtitle": null,
+  "image": {
+    "url": "https://saas-api.mona.academy/media/catalog/product/C/_/C_p_nh_t_Claude_v_Samurai_ch_nh_s_a_video.png",
+    "label": "Cập nhật Claude và Samurai chỉnh sửa video.png"
+  },
+  "thumbnail": {
+    "url": "https://saas-api.mona.academy/media/catalog/product/C/_/C_p_nh_t_Claude_v_Samurai_ch_nh_s_a_video.png",
+    "label": "Cập nhật Claude và Samurai chỉnh sửa video.png"
+  },
+  "tags": null,
+  "gdrive_files": [
+    {
+      "file_id": "1p8WmKPj4yZop06FgPvwcIFHhpPY9b7RO",
+      "filename": "h2-terrain-studio.plugin",
+      "bytes": 468566
+    }
+  ],
+  "gdoc_files": []
+}

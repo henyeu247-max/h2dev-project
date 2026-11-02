@@ -1,12 +1,12 @@
 ---
 handle: "@songannhienbmg"
-name: "Sống An Nhiên (50.0M view - $64,006)"
+name: "@songannhienbmg"
 url: "https://www.youtube.com/@songannhienbmg"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @songannhienbmg (Sống An Nhiên (50.0M view - $64,006))
+# Kênh Đối Thủ / Kênh Mẫu: @songannhienbmg (@songannhienbmg)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@songannhienbmg](https://www.youtube.com/@songannhienbmg)

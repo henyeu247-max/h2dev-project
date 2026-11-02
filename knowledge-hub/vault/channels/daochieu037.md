@@ -1,12 +1,12 @@
 ---
 handle: "@daochieu037"
-name: "Đảo Chiều"
+name: "@daochieu037"
 url: "https://www.youtube.com/@daochieu037"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @daochieu037 (Đảo Chiều)
+# Kênh Đối Thủ / Kênh Mẫu: @daochieu037 (@daochieu037)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@daochieu037](https://www.youtube.com/@daochieu037)

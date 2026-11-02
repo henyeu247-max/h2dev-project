@@ -1,12 +1,12 @@
 ---
 handle: "@mrnightmare"
-name: "Mr. Nightmare"
+name: "@mrnightmare"
 url: "https://www.youtube.com/@mrnightmare"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @mrnightmare (Mr. Nightmare)
+# Kênh Đối Thủ / Kênh Mẫu: @mrnightmare (@mrnightmare)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@mrnightmare](https://www.youtube.com/@mrnightmare)

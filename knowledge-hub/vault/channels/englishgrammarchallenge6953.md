@@ -1,12 +1,12 @@
 ---
 handle: "@englishgrammarchallenge6953"
-name: "English Grammar Challenge"
+name: "@englishgrammarchallenge6953"
 url: "https://www.youtube.com/@englishgrammarchallenge6953"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @englishgrammarchallenge6953 (English Grammar Challenge)
+# Kênh Đối Thủ / Kênh Mẫu: @englishgrammarchallenge6953 (@englishgrammarchallenge6953)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@englishgrammarchallenge6953](https://www.youtube.com/@englishgrammarchallenge6953)

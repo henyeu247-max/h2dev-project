@@ -1,12 +1,12 @@
 ---
 handle: "@RussellBrunson"
-name: "Russell Brunson"
+name: "@RussellBrunson"
 url: "https://www.youtube.com/@RussellBrunson"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @RussellBrunson (Russell Brunson)
+# Kênh Đối Thủ / Kênh Mẫu: @RussellBrunson (@RussellBrunson)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@RussellBrunson](https://www.youtube.com/@RussellBrunson)

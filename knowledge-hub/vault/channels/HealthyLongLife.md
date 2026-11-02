@@ -1,12 +1,12 @@
 ---
 handle: "@HealthyLongLife"
-name: "Healthy Long Life"
+name: "@HealthyLongLife"
 url: "https://www.youtube.com/@HealthyLongLife"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @HealthyLongLife (Healthy Long Life)
+# Kênh Đối Thủ / Kênh Mẫu: @HealthyLongLife (@HealthyLongLife)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@HealthyLongLife](https://www.youtube.com/@HealthyLongLife)

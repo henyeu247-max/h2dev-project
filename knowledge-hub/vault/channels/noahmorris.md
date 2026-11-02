@@ -1,12 +1,12 @@
 ---
 handle: "@noahmorris"
-name: "Noah Morris"
+name: "@noahmorris"
 url: "https://www.youtube.com/@noahmorris"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @noahmorris (Noah Morris)
+# Kênh Đối Thủ / Kênh Mẫu: @noahmorris (@noahmorris)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@noahmorris](https://www.youtube.com/@noahmorris)

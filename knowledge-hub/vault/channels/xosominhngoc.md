@@ -1,12 +1,12 @@
 ---
 handle: "@xosominhngoc"
-name: "Xổ Số Minh Ngọc"
+name: "@xosominhngoc"
 url: "https://www.youtube.com/@xosominhngoc"
 status: "LIVE_HTTP_200"
 videos_count: 3
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @xosominhngoc (Xổ Số Minh Ngọc)
+# Kênh Đối Thủ / Kênh Mẫu: @xosominhngoc (@xosominhngoc)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@xosominhngoc](https://www.youtube.com/@xosominhngoc)

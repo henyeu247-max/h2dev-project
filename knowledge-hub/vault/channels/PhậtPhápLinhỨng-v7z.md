@@ -1,12 +1,12 @@
 ---
 handle: "@PhậtPhápLinhỨng-v7z"
-name: "Phật Pháp Linh Ứng"
+name: "@PhậtPhápLinhỨng-v7z"
 url: "https://www.youtube.com/@Ph%E1%BA%ADtPh%C3%A1pLinh%E1%BB%A8ng-v7z"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @PhậtPhápLinhỨng-v7z (Phật Pháp Linh Ứng)
+# Kênh Đối Thủ / Kênh Mẫu: @PhậtPhápLinhỨng-v7z (@PhậtPhápLinhỨng-v7z)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Ph%E1%BA%ADtPh%C3%A1pLinh%E1%BB%A8ng-v7z](https://www.youtube.com/@Ph%E1%BA%ADtPh%C3%A1pLinh%E1%BB%A8ng-v7z)

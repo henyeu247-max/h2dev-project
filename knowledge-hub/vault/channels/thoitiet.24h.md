@@ -1,12 +1,12 @@
 ---
 handle: "@thoitiet.24h"
-name: "THỜI TIẾT 24H"
+name: "@thoitiet.24h"
 url: "https://www.youtube.com/@thoitiet.24h"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @thoitiet.24h (THỜI TIẾT 24H)
+# Kênh Đối Thủ / Kênh Mẫu: @thoitiet.24h (@thoitiet.24h)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@thoitiet.24h](https://www.youtube.com/@thoitiet.24h)

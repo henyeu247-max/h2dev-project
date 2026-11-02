@@ -1,12 +1,12 @@
 ---
 handle: "@TheRichDadChannel"
-name: "Robert Kiyosaki (The Rich Dad Channel)"
+name: "@TheRichDadChannel"
 url: "https://www.youtube.com/@TheRichDadChannel"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TheRichDadChannel (Robert Kiyosaki (The Rich Dad Channel))
+# Kênh Đối Thủ / Kênh Mẫu: @TheRichDadChannel (@TheRichDadChannel)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TheRichDadChannel](https://www.youtube.com/@TheRichDadChannel)

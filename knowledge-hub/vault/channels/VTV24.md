@@ -1,12 +1,12 @@
 ---
 handle: "@VTV24"
-name: "VTV24"
+name: "@VTV24"
 url: "https://www.youtube.com/@VTV24"
 status: "LIVE_HTTP_200"
 videos_count: 4
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @VTV24 (VTV24)
+# Kênh Đối Thủ / Kênh Mẫu: @VTV24 (@VTV24)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@VTV24](https://www.youtube.com/@VTV24)

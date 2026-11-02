@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "11"
-niche: "Tâm Linh & Triết Lý Saito Hitori"
+niche: "Bán Content & Reup Đa Thị Trường"
 markets: ["🇯🇵 Nhật", "🇰🇷 Hàn", "🇻🇳 Việt"]
 duration: "10:10"
 published_at: "2026-07-02"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-c5837a&track=h2dev"
 # VIDEO-c5837a — Update share các ngách Bán content và Reup mới nhất - tất cả thị trường Nhật - Hàn - Việt
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#11`)  
-> - **Ngách nội dung (Niche):** [[niches/tam-linh-triet-ly-saito-hitori|Tâm Linh & Triết Lý Saito Hitori]]  
+> - **Ngách nội dung (Niche):** [[niches/ban-content-reup-da-thi-truong|Bán Content & Reup Đa Thị Trường]]  
 > - **Thị trường:** 🇯🇵 Nhật · 🇰🇷 Hàn · 🇻🇳 Việt | **Thời lượng:** `10:10` | **Ngày đăng:** `2026-07-02`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-c5837a&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-c5837a/README.md)
 

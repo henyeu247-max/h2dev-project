@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "40"
-niche: "Sức Khỏe & Dinh Dưỡng"
+niche: "Tư Duy Chọn Ngách Xanh & Đọc Chỉ Số"
 markets: ["🇰🇷 Hàn", "🇯🇵 Nhật"]
 duration: "5:03"
 published_at: "2026-04-08"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-1a7f58&track=h2dev"
 # VIDEO-1a7f58 — NGÁCH NHỎ THỊ TRƯỜNG HÀN + NHẬT (PHÂN TÍCH HƯỚNG LÀM CHUẨN TRÁNH LỖI KHÔNH TRUNG THỰC MỚI NHẤT TỪ KÊNH ĐỐI THỦ)
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#40`)  
-> - **Ngách nội dung (Niche):** [[niches/suc-khoe-dinh-duong|Sức Khỏe & Dinh Dưỡng]]  
+> - **Ngách nội dung (Niche):** [[niches/tu-duy-chon-ngach-xanh-doc-chi-so|Tư Duy Chọn Ngách Xanh & Đọc Chỉ Số]]  
 > - **Thị trường:** 🇰🇷 Hàn · 🇯🇵 Nhật | **Thời lượng:** `5:03` | **Ngày đăng:** `2026-04-08`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-1a7f58&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-1a7f58/README.md)
 

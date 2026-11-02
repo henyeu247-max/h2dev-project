@@ -1,12 +1,12 @@
 ---
 handle: "@HuanVN"
-name: "Nguyễn Văn Huân (Huan.vn - Giảng viên đào tạo)"
+name: "@HuanVN"
 url: "https://www.youtube.com/@HuanVN"
 status: "LIVE_HTTP_200"
 videos_count: 8
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @HuanVN (Nguyễn Văn Huân (Huan.vn - Giảng viên đào tạo))
+# Kênh Đối Thủ / Kênh Mẫu: @HuanVN (@HuanVN)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@HuanVN](https://www.youtube.com/@HuanVN)

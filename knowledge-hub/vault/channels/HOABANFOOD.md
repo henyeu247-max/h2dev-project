@@ -1,12 +1,12 @@
 ---
 handle: "@HOABANFOOD"
-name: "HOA BAN FOOD"
+name: "@HOABANFOOD"
 url: "https://www.youtube.com/@HOABANFOOD"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @HOABANFOOD (HOA BAN FOOD)
+# Kênh Đối Thủ / Kênh Mẫu: @HOABANFOOD (@HOABANFOOD)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@HOABANFOOD](https://www.youtube.com/@HOABANFOOD)

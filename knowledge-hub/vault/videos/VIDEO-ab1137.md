@@ -5,12 +5,12 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "97"
-niche: "Nhân Bản Kênh & Chiến Lược Thị Trường"
+niche: "Dưỡng Sinh & Mẹo Sức Khỏe Hàn - Nhật"
 markets: ["🇯🇵 Nhật", "🇰🇷 Hàn"]
 duration: "3:05"
 published_at: "2026-10-11"
 toolsCount: 0
-channelsCount: 0
+channelsCount: 1
 docsCount: 3
 player_url: "/player.html?sku=VIDEO-ab1137&track=h2dev"
 ---
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-ab1137&track=h2dev"
 # VIDEO-ab1137 — Khám kênh show thực tế kênh làm nhân bản thị trường từ Hàn sang Nhật sau chỉ 1 video đầu tiên
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#97`)  
-> - **Ngách nội dung (Niche):** [[niches/nhan-ban-kenh-chien-luoc-thi-truong|Nhân Bản Kênh & Chiến Lược Thị Trường]]  
+> - **Ngách nội dung (Niche):** [[niches/duong-sinh-meo-suc-khoe-han---nhat|Dưỡng Sinh & Mẹo Sức Khỏe Hàn - Nhật]]  
 > - **Thị trường:** 🇯🇵 Nhật · 🇰🇷 Hàn | **Thời lượng:** `3:05` | **Ngày đăng:** `2026-10-11`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-ab1137&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-ab1137/README.md)
 
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-ab1137&track=h2dev"
 - 📌 Ăn đề xuất ngay từ 1 video đầu tiên: Chỉ sau khoảng 1 ngày đăng thử video đầu tiên, kênh đã đạt hơn 535 lượt xem trong YouTube Studio (hơn 1.400 view tổng khi báo cáo trong nhóm) với thời lượng xem trung bình 4 phút 03 giây, trong đó 94,8% lưu lượng đến từ Tính năng duyệt xem (Browse features) và 5,0% từ Video đề xuất.
 - 📌 Quy luật 70% thắng lợi nằm ở Chọn Ngách: Khi chọn đúng ngách nhỏ đang có sóng nhu cầu cao và ít cạnh tranh, thuật toán YouTube tự động phân phối đề xuất ngay từ video đầu tiên; có thể nhân bản tiếp từ Hàn sang Nhật hoặc về Việt Nam.
 - 📌 Bài toán RPM & Thuế giữa Hàn/Nhật và Hoa Kỳ (US): Thị trường Hoa Kỳ tuy rộng nhưng cạnh tranh cực kỳ khốc liệt và bị khấu trừ thuế Mỹ rất nặng (tới 30% từ view Mỹ), trong khi làm thị trường Hàn Quốc và Nhật Bản vừa dễ lên view vừa giữ được RPM thực nhận rất tốt do không bị trừ thuế Mỹ.
+- Hôm trước ngày 8 tháng 10 á em có share một cái ngách là cái ngách này nói về dạng làm vườn, trồng cây các thứ ở thị trường Hàn Quốc này mấy bác.
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình nhân bản ngách làm vườn theo mùa vụ từ Hàn Quốc sang Nhật Bản (và Việt Nam) ăn đề xuất tự nhiên ngay từ video đầu tiên.
@@ -47,7 +48,7 @@ player_url: "/player.html?sku=VIDEO-ab1137&track=h2dev"
 - *(Không sử dụng công cụ bên thứ ba đặc thù)*
 
 ## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)
-- *(Bài học tập trung vào tư duy/kỹ thuật nền tảng, không gắn kênh đối thủ cụ thể)*
+- [[channels/HopeGarden-KR|@HopeGarden-KR]] *(DIE)*
 
 ## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)
 - **Hồ sơ phân tích & SOP thực chiến: Khám kênh show thực tế kênh làm nhân bản thị trường từ Hàn sang Nhật sau chỉ 1 video đầu tiên (README.md):** `docs/VIDEO-ab1137/README.md`

@@ -6,7 +6,7 @@ module_id: "HUAN-M06"
 module_title: "6. QUY TRÌNH ĐANG TẠO RA >1.000.000$ YOUTUBE"
 seq: "03"
 niche: "Phân tích DNA Video & Nguồn Tài nguyên Sản xuất"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "19:10"
 published_at: "2026-09-01"
 toolsCount: 13
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-c8df1e&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M06|HUAN-M06 — 6. QUY TRÌNH ĐANG TẠO RA >1.000.000$ YOUTUBE]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/phan-tich-dna-video-nguon-tai-nguyen-san-xuat|Phân tích DNA Video & Nguồn Tài nguyên Sản xuất]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `19:10` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `19:10` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-c8df1e&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-c8df1e/README.md)
 
 ---

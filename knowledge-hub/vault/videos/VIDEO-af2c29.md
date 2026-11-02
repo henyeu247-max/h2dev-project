@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-af2c29&track=dgmd"
 # VIDEO-af2c29 — Quy Trình Sản Xuất Video Âm Thanh Động Vật 
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M09|DGMD-M09 — COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/am-thanh-dong-vat-tre-em|Âm Thanh Động Vật & Trẻ Em]]  
 > - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `18:41` | **Ngày đăng:** `2026-10-12`  

@@ -1,12 +1,12 @@
 ---
 handle: "@jhgochannel"
-name: "JHGO Channel (Quân Sự Quốc Tế)"
+name: "@jhgochannel"
 url: "https://www.youtube.com/@jhgochannel"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @jhgochannel (JHGO Channel (Quân Sự Quốc Tế))
+# Kênh Đối Thủ / Kênh Mẫu: @jhgochannel (@jhgochannel)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@jhgochannel](https://www.youtube.com/@jhgochannel)

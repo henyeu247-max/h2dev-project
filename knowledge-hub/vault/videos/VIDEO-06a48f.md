@@ -6,7 +6,7 @@ module_id: "DGMD-M01"
 module_title: "BẠN SẼ HỌC ĐƯỢC GÌ TRONG DGMD ACADEMY"
 seq: "01"
 niche: "Phát Triển Kênh & Chiến Lược Chủ Đề Đa Nền Tảng"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
+markets: ["🌍 View Ngoại"]
 duration: "02:31"
 published_at: "2026-10-12"
 toolsCount: 3
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-06a48f&track=dgmd"
 # VIDEO-06a48f — Các Chủ Đề Thực Chiến Được Cập Nhật Liên Tục Mỗi Tháng
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M01|DGMD-M01 — BẠN SẼ HỌC ĐƯỢC GÌ TRONG DGMD ACADEMY]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/phat-trien-kenh-chien-luoc-chu-de-da-nen-tang|Phát Triển Kênh & Chiến Lược Chủ Đề Đa Nền Tảng]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `02:31` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại | **Thời lượng:** `02:31` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-06a48f&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-06a48f/README.md)
 
 ---

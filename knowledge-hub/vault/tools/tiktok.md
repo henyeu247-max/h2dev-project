@@ -1,17 +1,17 @@
 ---
 tool_slug: "tiktok"
 tool_name: "TikTok"
-videos_count: 43
+videos_count: 45
 tracks: ["h2dev", "huan", "dgmd"]
 ---
 
 # Công Cụ Thực Chiến: TikTok
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **Số bài giảng sử dụng công cụ này:** `43` video
+- **Số bài giảng sử dụng công cụ này:** `45` video
 - **Tracks:** `H2DEV`, `HUAN`, `DGMD`
 
-## Danh Sách Bài Giảng Ứng Dụng TikTok (43)
+## Danh Sách Bài Giảng Ứng Dụng TikTok (45)
 - [[videos/VIDEO-d84a78|VIDEO-d84a78 — HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN]] (`H2DEV`)
 - [[videos/VIDEO-5c438a|VIDEO-5c438a — Giải thích và hướng dẫn đưa ra cách chọn mail (mail mới + mail cổ), chọn kênh (kênh mới + kênh cổ) - (tút chọn để làm chắc chắn có độ trust, cắn view)]] (`H2DEV`)
 - [[videos/VIDEO-10ceec|VIDEO-10ceec — SHOW NGÁCH REUP MỚI CỰC HOT VÀ NHIỀU NGUỒN GỐC ĐỂ LÀM TỪ BILIBILI]] (`H2DEV`)
@@ -55,3 +55,5 @@ tracks: ["h2dev", "huan", "dgmd"]
 - [[videos/VIDEO-0056a9|VIDEO-0056a9 — Quy Trình Sản Xuất Video Có Sẵn Trên Nền Tảng Tiktok Bằng Điện Thoại]] (`DGMD`)
 - [[videos/VIDEO-52b908|VIDEO-52b908 — Hiểu Rõ 15 Danh Mục Quan Trọng Trong YouTube Studio]] (`DGMD`)
 - [[videos/VIDEO-d22348|VIDEO-d22348 — 10 Sai Lầm Khiến YouTube Từ Chối Hoặc Tắt Kiếm Tiền]] (`DGMD`)
+- [[videos/VIDEO-434f80|VIDEO-434f80 — Quy Trình Sản Xuất Video PHIM AI VIỆT ]] (`DGMD`)
+- [[videos/VIDEO-7112d8|VIDEO-7112d8 — Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast]] (`DGMD`)

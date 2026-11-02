@@ -1,12 +1,12 @@
 ---
 handle: "@longpt"
-name: "Phạm Thành Long"
+name: "@longpt"
 url: "https://www.youtube.com/@longpt"
 status: "LIVE_HTTP_200"
-videos_count: 12
+videos_count: 11
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @longpt (Phạm Thành Long)
+# Kênh Đối Thủ / Kênh Mẫu: @longpt (@longpt)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@longpt](https://www.youtube.com/@longpt)
@@ -14,7 +14,7 @@ videos_count: 12
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`
 
-## Các Video Bài Giảng Phân Tích Kênh Này (12)
+## Các Video Bài Giảng Phân Tích Kênh Này (11)
 - [[videos/VIDEO-83da88|VIDEO-83da88 — Quy trình Đăng Video Lên Youtube SEO 100 ĐIỂM VIDIQ]] (`HUAN`)
 - [[videos/VIDEO-c9ec3e|VIDEO-c9ec3e — Swiped - Công thức chiến thắng của các GURU hàng đầu Thế giới - 80 năm chưa thay đổi]] (`HUAN`)
 - [[videos/VIDEO-254b84|VIDEO-254b84 — Công thức để một người không có tài năng gì nổi trội từ nhân viên đi tắt lên CEO và thành lập Sự Nghiệp riêng của mình]] (`HUAN`)
@@ -23,7 +23,6 @@ videos_count: 12
 - [[videos/VIDEO-16241d|VIDEO-16241d — Tư Duy Lẳng Lặng Hành Động Và Vào Nhóm Dẫn Đầu  ]] (`HUAN`)
 - [[videos/VIDEO-34d0d7|VIDEO-34d0d7 — SEO CHUẨN ĐƯA TỪ KHÓA LÊN TOP TÌM KIẾM NHANH CHÓNG...]] (`HUAN`)
 - [[videos/VIDEO-6a7a0e|VIDEO-6a7a0e — Bí Mật Tìm Ra Hàng Trăm Chủ Đề SIÊU NGON 1000$-50.000$ 1 Tháng]] (`HUAN`)
-- [[videos/VIDEO-84853e|VIDEO-84853e — B1 Cuộc cách mạng chuyển đổi số, Kỷ nguyên bán kết quả và niềm tin]] (`HUAN`)
 - [[videos/VIDEO-b480d8|VIDEO-b480d8 — B2 Bí mật nhóm tiên phong có sức ảnh hưởng tới hàng triệu người trên Internet với mô hình 1 x mũ n]] (`HUAN`)
 - [[videos/VIDEO-cb28c1|VIDEO-cb28c1 — B3 Niềm tin sai lầm khiến bạn trì hoãn không hành động và sự thật về để tạo sổ đỏ trên internet]] (`HUAN`)
 - [[videos/VIDEO-a17fe8|VIDEO-a17fe8 — B4 Biến khách hàng lạnh thành ấm thành nóng nhờ youtube]] (`HUAN`)

@@ -1,12 +1,12 @@
 ---
 handle: "@Xenopaw"
-name: "Xenopaw"
+name: "@Xenopaw"
 url: "https://www.youtube.com/@Xenopaw"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Xenopaw (Xenopaw)
+# Kênh Đối Thủ / Kênh Mẫu: @Xenopaw (@Xenopaw)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Xenopaw](https://www.youtube.com/@Xenopaw)

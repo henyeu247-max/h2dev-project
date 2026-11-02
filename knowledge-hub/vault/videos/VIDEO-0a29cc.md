@@ -6,7 +6,7 @@ module_id: "HUAN-M09"
 module_title: "9. CHỦ ĐỀ RA TIỀN NGAY 100$-1000$-5000$-10.000$-50.000$ MỖI THÁNG"
 seq: "03"
 niche: "Phân Tầng Mục Tiêu Doanh Thu & Kỹ Thuật Tách Ngách Từ Kênh Lớn"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "36:26"
 published_at: "2026-09-01"
 toolsCount: 14
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-0a29cc&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M09|HUAN-M09 — 9. CHỦ ĐỀ RA TIỀN NGAY 100$-1000$-5000$-10.000$-50.000$ MỖI THÁNG]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/phan-tang-muc-tieu-doanh-thu-ky-thuat-tach-ngach-tu-kenh-lon|Phân Tầng Mục Tiêu Doanh Thu & Kỹ Thuật Tách Ngách Từ Kênh Lớn]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `36:26` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `36:26` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-0a29cc&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-0a29cc/README.md)
 
 ---
@@ -71,7 +71,7 @@ player_url: "/player.html?sku=VIDEO-0a29cc&track=huan"
 - [[channels/vandehomnay|@vandehomnay]]
 - [[channels/thoitiet.24h|@thoitiet.24h]]
 - [[channels/EliteStoriesYT|@EliteStoriesYT]]
-- [[channels/toancanh24hchannel|@toancanh24hchannel]] *(DIE)*
+- [[channels/toancanh24hchannel|@toancanh24hchannel]]
 - [[channels/ExploreWithUs|@ExploreWithUs]]
 - [[channels/xosominhngoc|@xosominhngoc]]
 - [[channels/BRIGHTSIDEOFFICIAL|@BRIGHTSIDEOFFICIAL]]

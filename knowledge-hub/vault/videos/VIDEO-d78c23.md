@@ -6,7 +6,7 @@ module_id: "HUAN-M12"
 module_title: "SUPPORT KỸ THUẬT "
 seq: "03"
 niche: "Chiến lược Hệ thống & Lịch sử Chính sách YouTube (2015-2025)"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "35:40"
 published_at: "2026-09-01"
 toolsCount: 5
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-d78c23&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M12|HUAN-M12 — SUPPORT KỸ THUẬT ]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/chien-luoc-he-thong-lich-su-chinh-sach-youtube-2015-2025|Chiến lược Hệ thống & Lịch sử Chính sách YouTube (2015-2025)]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `35:40` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `35:40` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-d78c23&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-d78c23/README.md)
 
 ---

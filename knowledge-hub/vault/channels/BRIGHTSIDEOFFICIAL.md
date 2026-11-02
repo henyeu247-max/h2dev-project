@@ -1,15 +1,15 @@
 ---
 handle: "@BRIGHTSIDEOFFICIAL"
-name: "BRIGHT SIDE"
-url: "https://www.youtube.com/@BRIGHTSIDEOFFICIAL"
+name: "@BRIGHTSIDEOFFICIAL"
+url: "https://www.youtube.com/@BrightSideOfficial"
 status: "LIVE_HTTP_200"
 videos_count: 8
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @BRIGHTSIDEOFFICIAL (BRIGHT SIDE)
+# Kênh Đối Thủ / Kênh Mẫu: @BRIGHTSIDEOFFICIAL (@BRIGHTSIDEOFFICIAL)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/@BRIGHTSIDEOFFICIAL](https://www.youtube.com/@BRIGHTSIDEOFFICIAL)
+- **URL YouTube:** [https://www.youtube.com/@BrightSideOfficial](https://www.youtube.com/@BrightSideOfficial)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Khoa học / Trái Đất EN (documentary thiên nhiên–vũ trụ)`
 - **Thị trường:** `🇯🇵 Nhật`

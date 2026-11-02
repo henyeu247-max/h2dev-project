@@ -6,7 +6,7 @@ module_id: "HUAN-M10"
 module_title: "DÀNH RIÊNG CHO AE LÀM THƯƠNG HIỆU"
 seq: "05"
 niche: "Quản trị mục tiêu OKR & Chiến lược định vị kênh"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "19:25"
 published_at: "2026-09-01"
 toolsCount: 5
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-d6bbed&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M10|HUAN-M10 — DÀNH RIÊNG CHO AE LÀM THƯƠNG HIỆU]] (Bài `#05`)  
 > - **Ngách nội dung (Niche):** [[niches/quan-tri-muc-tieu-okr-chien-luoc-dinh-vi-kenh|Quản trị mục tiêu OKR & Chiến lược định vị kênh]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `19:25` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `19:25` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-d6bbed&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-d6bbed/README.md)
 
 ---

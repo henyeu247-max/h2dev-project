@@ -25,33 +25,33 @@
   "source_transcript": "video/VIDEO-043d15/transcript.txt",
   "key_timestamps": [
     {
-      "seconds": 0,
       "time": "00:00",
+      "seconds": 0,
       "label": "Mở đầu: Mục tiêu đóng gói Claude Skill tái sử dụng lâu dài và phân biệt 3 kênh đối thủ"
     },
     {
-      "seconds": 161,
       "time": "02:41",
+      "seconds": 161,
       "label": "Bước 1: Copy danh sách video phổ biến của 2 kênh cùng ngách nạp vào Claude phân tích"
     },
     {
-      "seconds": 375,
       "time": "06:15",
+      "seconds": 375,
       "label": "Bước 2: Lấy 4 kịch bản cao view nhất bằng Notepad++ kèm mô tả và thẻ tag kênh/video"
     },
     {
-      "seconds": 617,
       "time": "10:17",
+      "seconds": 617,
       "label": "Bước 3: Thiết lập Brand Keyword (밥상 건강) và cấu trúc Claude Skill 3 chế độ (kèm Bán Content 70%)"
     },
     {
-      "seconds": 1134,
       "time": "18:54",
+      "seconds": 1134,
       "label": "Thực hành gọi Skill trên New Chat: Gợi ý 20 chủ đề và xuất kịch bản 9.000 từ kèm SEO"
     },
     {
-      "seconds": 1388,
       "time": "23:08",
+      "seconds": 1388,
       "label": "Cấu hình ElevenLabs chuẩn: Chọn giọng Hàn Giáo dục, model Multilingual v2, Speed 0.96 và Change Voice Settings"
     }
   ],
@@ -79,10 +79,10 @@
     "Không chọn lệch model ElevenLabs giữa Web và Tool (ví dụ web là Eleven Multilingual v2 nhưng tool chọn sai model sẽ khiến giọng Hàn đọc méo sang tiếng Thái Lan) và không quên tích ô 'Change Voice Settings'."
   ],
   "sop_steps": [
-    "Copy toàn bộ thông tin 2 đến 3 kênh đối thủ cùng ngách dán vào Claude, ba kênh là ổn nhất để có đủ dữ liệu phân tích",
-    "Lấy 4 kịch bản cao view nhất của 2 kênh bằng web lấy kịch bản free, lưu bằng Notepad++, rồi tải lên cùng tên kênh, mô tả và thẻ từ khóa của kênh và video",
-    "Trả lời các câu hỏi của Claude (tên kênh, từ khóa thương hiệu, thời lượng theo đề xuất, giọng ElevenLabs) rồi lưu skill ba chế độ",
-    "Ba chế độ: gợi ý đề tài (mặc định 10, nhập số để ra nhiều hơn), nhập chủ đề tự viết, và dán kịch bản cùng tiêu đề đối thủ để bán content",
-    "Tạo giọng bằng tool riêng dùng API ElevenLabs, chọn đúng model, tốc độ như trên web (ví dụ 0.96) rồi bấm Start và Join"
+    "Vào tab Phổ biến của 2 kênh đối thủ cùng ngách (@건강채소연구노트, @채소와과일건강백서), copy danh sách tiêu đề dán vào Claude để phân tích bước 1.",
+    "Dùng web lấy transcript miễn phí rút 4 kịch bản cao view nhất lưu qua Notepad++, tải lên Claude kèm mô tả video, thẻ tag kênh và thẻ tag video.",
+    "Yêu cầu Claude thiết kế Skill tích hợp 3 chế độ (1: Gợi ý 10-20 đề tài; 2: Viết từ chủ đề nhập vào; 3: Bán content 70% từ kịch bản đối thủ), chốt Brand Keyword '밥상 건강' và bấm Lưu Skill.",
+    "Mở New Chat mới cho mỗi bài, gõ '/' gọi Skill, chọn đề tài để AI xuất kịch bản ~9.000 từ kèm text thumbnail, mô tả, thẻ tag và bảng kiểm chứng thông tin.",
+    "Trên ElevenLabs, lọc giọng Hàn Quốc (mục Giáo dục), copy Voice ID sang tool API, chọn đúng model Eleven Multilingual v2, đặt Speed 0.96, tích chọn 'Change Voice Settings' rồi bấm Start -> Join Voice."
   ]
 }

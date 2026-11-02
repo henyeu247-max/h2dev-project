@@ -6,7 +6,7 @@ module_id: "HUAN-M07"
 module_title: "7. CẬP NHẬT K7"
 seq: "04"
 niche: "Chống Phụ Thuộc AI & Quy Trình Kiểm Duyệt Human Check"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "03:06"
 published_at: "2026-09-01"
 toolsCount: 2
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-47dc80&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M07|HUAN-M07 — 7. CẬP NHẬT K7]] (Bài `#04`)  
 > - **Ngách nội dung (Niche):** [[niches/chong-phu-thuoc-ai-quy-trinh-kiem-duyet-human-check|Chống Phụ Thuộc AI & Quy Trình Kiểm Duyệt Human Check]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `03:06` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `03:06` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-47dc80&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-47dc80/README.md)
 
 ---

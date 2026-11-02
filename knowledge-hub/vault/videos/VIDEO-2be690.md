@@ -6,7 +6,7 @@ module_id: "HUAN-M01"
 module_title: "1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z"
 seq: "17"
 niche: "Tổng quan hệ sinh thái quyền lợi, hỗ trợ trọn đời và kho kết quả thực tế YouTube Total Success"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "05:45"
 published_at: "2026-09-01"
 toolsCount: 4
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-2be690&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M01|HUAN-M01 — 1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z]] (Bài `#17`)  
 > - **Ngách nội dung (Niche):** [[niches/tong-quan-he-sinh-thai-quyen-loi-ho-tro-tron-doi-va-kho-ket-qua-thuc-te-youtube-total-success|Tổng quan hệ sinh thái quyền lợi, hỗ trợ trọn đời và kho kết quả thực tế YouTube Total Success]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `05:45` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `05:45` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-2be690&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-2be690/README.md)
 
 ---
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=VIDEO-2be690&track=huan"
 - Cam kết Đồng hành Trọn đời theo Hành động ('Còn Hỏi, Còn Làm Là Còn Hỗ Trợ'): Huân và đội ngũ GODA thiết lập nhóm Zalo riêng cho từng khóa và cộng đồng Facebook riêng tư để giải đáp liên tục cho đến khi học viên tạo ra thu nhập thực tế từ YouTube.
 - Triết lý 'Excellence or Nothing' (Xuất Sắc Hoặc Không Có Gì) & Đặc quyền 3 Khóa Offline Liên tiếp: Học viên được quyền tham dự 3 kỳ đào tạo Offline 2 ngày liên tiếp (kỳ 1 miễn phí hoàn toàn, kỳ 2 và kỳ 3 chỉ góp chi phí hội trường và suất ăn/teabreak 2 ngày) để liên tục cập nhật kỹ thuật mới nhất trên thế giới và mở rộng mối quan hệ với các chủ kênh lớn (như chủ sở hữu nút Kim Cương thứ 4 tại Việt Nam).
 - Động lực Cộng đồng qua Nhật ký Doanh thu Thời gian thực (Real-time Revenue Transparency): Thay vì lý thuyết suông, việc công khai minh bạch từng cột mốc doanh thu thực tế (như hành trình xây kênh từ ngày 29/11/2023 bật kiếm tiền với chưa tới 30 video, ngày 01/12 nhảy $422,71/ngày, lên $691,77/ngày, chạm $4.261/ngày ngày 24/02 và vượt ngưỡng ở mức $6.097/ngày) giúp toàn bộ thành viên trong cộng đồng củng cố niềm tin và thúc đẩy nhau tăng tốc.
+- Thì anh em hỏi là anh em có cái quyền lợi gì khi mà tham gia YouTube Total Success? Tức là nhiều anh em vẫn đang không biết cái này thì mình sẽ chia sẻ anh em một chút nha.
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Quy trình năm bước thực chiến: Bài giảng tổng kết hệ sinh thái quyền lợi toàn diện và minh chứng doanh thu thực tế của chương trình YouTube Total Success (YTS - HUAN.VN...

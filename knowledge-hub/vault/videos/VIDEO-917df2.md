@@ -6,7 +6,7 @@ module_id: "HUAN-M03"
 module_title: "3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY"
 seq: "11"
 niche: "Thiết kế Thumbnail & Tối ưu CTR"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "12:23"
 published_at: "2026-09-01"
 toolsCount: 4
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-917df2&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M03|HUAN-M03 — 3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY]] (Bài `#11`)  
 > - **Ngách nội dung (Niche):** [[niches/thiet-ke-thumbnail-toi-uu-ctr|Thiết kế Thumbnail & Tối ưu CTR]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `12:23` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `12:23` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-917df2&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-917df2/README.md)
 
 ---
@@ -59,7 +59,7 @@ player_url: "/player.html?sku=VIDEO-917df2&track=huan"
 - [[channels/Web5Ngay|@Web5Ngay]]
 - [[channels/ThaiPham|@ThaiPham]]
 - [[channels/BaiHocThanhCong|@BaiHocThanhCong]]
-- [[channels/Biquyetthanhcong|@Biquyetthanhcong]] *(DIE)*
+- [[channels/Biquyetthanhcong|@Biquyetthanhcong]]
 - [[channels/GocNhinViet|@GocNhinViet]]
 - [[channels/VTV24|@VTV24]]
 - [[channels/KinhLupTV|@KinhLupTV]]

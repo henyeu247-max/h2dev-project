@@ -1,12 +1,12 @@
 ---
 handle: "@NoCopyrightSounds"
-name: "NoCopyrightSounds (NCS)"
+name: "@NoCopyrightSounds"
 url: "https://www.youtube.com/@NoCopyrightSounds"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @NoCopyrightSounds (NoCopyrightSounds (NCS))
+# Kênh Đối Thủ / Kênh Mẫu: @NoCopyrightSounds (@NoCopyrightSounds)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@NoCopyrightSounds](https://www.youtube.com/@NoCopyrightSounds)

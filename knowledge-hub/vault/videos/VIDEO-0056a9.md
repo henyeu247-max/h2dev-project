@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-0056a9&track=dgmd"
 # VIDEO-0056a9 — Quy Trình Sản Xuất Video Có Sẵn Trên Nền Tảng Tiktok Bằng Điện Thoại
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M09|DGMD-M09 — COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI]] (Bài `#04`)  
 > - **Ngách nội dung (Niche):** [[niches/khai-thac-video-trend-tiktok-bat-kiem-tien-nhanh-mobile|Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (Mobile)]]  
 > - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `09:22` | **Ngày đăng:** `2026-10-12`  

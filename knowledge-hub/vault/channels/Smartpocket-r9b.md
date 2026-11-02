@@ -1,12 +1,12 @@
 ---
 handle: "@Smartpocket-r9b"
-name: "Smart Pocket"
+name: "@Smartpocket-r9b"
 url: "https://www.youtube.com/@Smartpocket-r9b"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Smartpocket-r9b (Smart Pocket)
+# Kênh Đối Thủ / Kênh Mẫu: @Smartpocket-r9b (@Smartpocket-r9b)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Smartpocket-r9b](https://www.youtube.com/@Smartpocket-r9b)

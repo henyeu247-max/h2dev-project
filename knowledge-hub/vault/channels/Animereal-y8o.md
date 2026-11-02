@@ -1,12 +1,12 @@
 ---
 handle: "@Animereal-y8o"
-name: "Anime real"
+name: "@Animereal-y8o"
 url: "https://www.youtube.com/@Animereal-y8o"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Animereal-y8o (Anime real)
+# Kênh Đối Thủ / Kênh Mẫu: @Animereal-y8o (@Animereal-y8o)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Animereal-y8o](https://www.youtube.com/@Animereal-y8o)

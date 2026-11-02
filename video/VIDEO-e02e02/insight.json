@@ -1,0 +1,104 @@
+{
+  "sku": "VIDEO-e02e02",
+  "title": "Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay",
+  "actual_topic": "Quy Trình Sản Xuất Phim Hoạt Hình 2D Vẽ Tay Bối Cảnh Làng Quê Việt Nam Xưa Bằng Master Prompt V2.0 Đa Nền Tảng",
+  "summary": "Hướng dẫn sử dụng bộ Master Prompt V2.0 (Vietnam Old Village Family 2D Animation) trên ChatGPT để sản xuất phim hoạt hình 2D vẽ tay bối cảnh làng quê Việt Nam xưa, tối ưu đăng đa nền tảng YouTube và Facebook kèm gắn tiếp thị liên kết.",
+  "category_group": "chuyen_gia",
+  "niche_primary": "Hoạt Hình 2D Vẽ Tay Làng Quê Việt Nam & Truyện Gia Đình",
+  "niche_id": "vn-old-village-2d-animation",
+  "target_market": "Việt Nam",
+  "market_code": "VN",
+  "key_takeaways": [
+    "Ngách hoạt hình 2D vẽ tay bối cảnh làng quê Việt Nam xưa (tình mẫu tử, gia đình nghèo vượt khó) thu hút hàng triệu lượt xem trên cả YouTube và Facebook, rất phù hợp gắn giỏ hàng tiếp thị liên kết.",
+    "Sử dụng bộ Master Prompt V2.0 Vietnam Old Village giúp người mới làm chủ toàn bộ quy trình từ kịch bản, thiết kế nhân vật đến câu lệnh tạo video mà không bị phụ thuộc vào các công cụ bên ngoài dễ lỗi.",
+    "Cấu trúc thời lượng chuẩn mực: Mỗi tập phim tiêu chuẩn dài 120 giây được chia thành 20 phân cảnh, mỗi phân cảnh kéo dài đúng 6 giây (hoặc mở rộng thành phim dài 17 đến 20 phút tùy chỉnh).",
+    "Khóa chặt tính đồng nhất nhân vật bằng hồ sơ hình ảnh tham chiếu C1 (người mẹ), C2 (người con) trước khi đưa câu lệnh vào tạo các đoạn hoạt hình có sẵn lời thoại tiếng Việt truyền cảm.",
+    "Chút đồ cũ thôi con, mẹ cất xong rồi vào nghỉ ngay đây."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình sản xuất phim hoạt hình 2D vẽ tay làng quê Việt Nam xưa bằng bộ Master Prompt V2.0 đăng đa nền tảng YouTube và Facebook.",
+    "additional": [
+      "Sao chép bộ Master Prompt V2.0 Vietnam Old Village dán vào ChatGPT và nhập số lượng tập phim cùng thời lượng mong muốn.",
+      "Sử dụng các câu lệnh thiết kế nhân vật do hệ thống xuất ra để tạo và tải về bộ ảnh tham chiếu nhân vật gốc C1 và C2.",
+      "Lần lượt đính kèm ảnh tham chiếu C1, C2 cùng câu lệnh từng phân cảnh 6 giây để tạo chuỗi 20 đoạn video hoạt hình có thoại tiếng Việt.",
+      "Đưa toàn bộ các phân cảnh đã tạo vào trình biên tập, sắp xếp theo đúng thứ tự từ cảnh 1 đến cảnh 20 để xuất bản lên YouTube và Facebook."
+    ]
+  },
+  "sop_steps": [
+    "Sao chép bộ Master Prompt V2.0 Vietnam Old Village dán vào ChatGPT và nhập số lượng tập phim cùng thời lượng mong muốn.",
+    "Sử dụng các câu lệnh thiết kế nhân vật do hệ thống xuất ra để tạo và tải về bộ ảnh tham chiếu nhân vật gốc C1 và C2.",
+    "Lần lượt đính kèm ảnh tham chiếu C1, C2 cùng câu lệnh từng phân cảnh 6 giây để tạo chuỗi 20 đoạn video hoạt hình có thoại tiếng Việt.",
+    "Đưa toàn bộ các phân cảnh đã tạo vào trình biên tập, sắp xếp theo đúng thứ tự từ cảnh 1 đến cảnh 20 để xuất bản lên YouTube và Facebook."
+  ],
+  "avoid_flags": [
+    "Nhảy vào dùng các công cụ tự động trôi nổi khi chưa nắm vững cấu trúc câu lệnh gốc khiến nhân vật bị biến dạng và lệch bối cảnh văn hóa Việt Nam.",
+    "Quên đính kèm hình ảnh tham chiếu nhân vật C1 và C2 khi tạo từng phân cảnh 6 giây làm trang phục và gương mặt nhân vật thay đổi liên tục."
+  ],
+  "tools_mentioned": [
+    "ChatGPT",
+    "YouTube",
+    "Facebook"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "seconds": 0,
+      "time": "00:00",
+      "label": "Xem video mẫu hoạt hình 2D vẽ tay bối cảnh làng quê Việt Nam xưa và tiềm năng đa nền tảng"
+    },
+    {
+      "seconds": 49,
+      "time": "00:49",
+      "label": "Phân tích doanh thu RPM thị trường Việt Nam và hướng khai thác song song YouTube cùng Facebook"
+    },
+    {
+      "seconds": 192,
+      "time": "03:12",
+      "label": "Truy cập hệ thống lấy bộ Master Prompt V2.0 Vietnam Old Village và khởi tạo tập phim đầu tiên"
+    },
+    {
+      "seconds": 328,
+      "time": "05:28",
+      "label": "Quy tắc cấu trúc thời lượng: Mỗi tập 120 giây chia thành 20 phân cảnh, mỗi cảnh 6 giây đồng nhất"
+    },
+    {
+      "seconds": 478,
+      "time": "07:58",
+      "label": "Tạo và tải ảnh tham chiếu nhân vật C1, C2 để khóa ngoại hình người mẹ và người con xuyên suốt"
+    },
+    {
+      "seconds": 774,
+      "time": "12:54",
+      "label": "Ghép hoàn chỉnh các phân cảnh video 6 giây kèm lời thoại tiếng Việt tự nhiên và kiểm tra thành phẩm"
+    }
+  ],
+  "course_docs": [
+    {
+      "title": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay (master_prompt.md)",
+      "name": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay (master_prompt.md)",
+      "file": "assets/docs-dgmd/VIDEO-e02e02/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-e02e02/master_prompt.md",
+      "link": "https://docs.google.com/document/d/1jR99uIcQXUV6-Sgsx0oq2FPeLX2FdfRha5nvIfABKDE/edit?usp=sharing"
+    },
+    {
+      "title": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay (doc_1.txt)",
+      "name": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay (doc_1.txt)",
+      "file": "assets/docs-dgmd/VIDEO-e02e02/doc_1.txt",
+      "readFile": "assets/docs-dgmd/VIDEO-e02e02/doc_1.txt",
+      "link": "https://docs.google.com/document/d/1jR99uIcQXUV6-Sgsx0oq2FPeLX2FdfRha5nvIfABKDE/edit?usp=sharing"
+    },
+    {
+      "title": "Mô tả bài giảng gốc: Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay (description.txt)",
+      "name": "Mô tả bài giảng gốc: Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay (description.txt)",
+      "file": "assets/docs-dgmd/VIDEO-e02e02/description.txt",
+      "readFile": "assets/docs-dgmd/VIDEO-e02e02/description.txt",
+      "link": "assets/docs-dgmd/VIDEO-e02e02/description.txt"
+    }
+  ],
+  "analysis_method": "agv_3.8_multimodal_7layer_verified",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-e02e02/transcript.txt"
+}

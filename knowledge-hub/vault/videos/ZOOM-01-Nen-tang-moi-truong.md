@@ -5,11 +5,11 @@ track: "h2dev"
 module_id: "H2DEV-M11"
 module_title: "Zoom — Quy trình xây kênh từ A–Z (2026-09)"
 seq: "01"
-niche: "Hệ thống / Quy trình"
+niche: "Hạ Tầng Kỹ Thuật: Proxy, Gmail & Ngâm Kênh"
 markets: ["🇻🇳 Việt"]
 duration: "53:02"
 published_at: "2026-09-11"
-toolsCount: 5
+toolsCount: 4
 channelsCount: 0
 docsCount: 4
 player_url: "/player.html?sku=ZOOM-01-Nen-tang-moi-truong&track=h2dev"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=ZOOM-01-Nen-tang-moi-truong&track=h2dev"
 # ZOOM-01-Nen-tang-moi-truong — Zoom 01 — Nền tảng & Môi trường: Proxy, Gmail, Tạo kênh, Ngâm kênh
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M11|H2DEV-M11 — Zoom — Quy trình xây kênh từ A–Z (2026-09)]] (Bài `#01`)  
-> - **Ngách nội dung (Niche):** [[niches/he-thong-quy-trinh|Hệ thống / Quy trình]]  
+> - **Ngách nội dung (Niche):** [[niches/ha-tang-ky-thuat-proxy-gmail-ngam-kenh|Hạ Tầng Kỹ Thuật: Proxy, Gmail & Ngâm Kênh]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `53:02` | **Ngày đăng:** `2026-09-11`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=ZOOM-01-Nen-tang-moi-truong&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/ZOOM-01-Nen-tang-moi-truong/README.md)
 
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=ZOOM-01-Nen-tang-moi-truong&track=h2dev"
 - Quy trình chuẩn khi lập kênh mới: tạo kênh và thiết lập thông tin trước, để kênh ngâm khoảng 2–3 ngày rồi trong thời gian chờ đó mới đi sản xuất video để đăng lên.
 - Về Proxy và trình duyệt nuôi kênh: người mới làm 2–3 kênh chưa bắt buộc phải mua proxy; khi làm hệ thống nhiều kênh thì dùng GPM hoặc MKT gắn proxy (IPv4 hoặc IPv6) để tách biệt địa chỉ IP.
 - Bảo mật Gmail khi đi mua: tuyệt đối không đổi mật khẩu ngay lúc mới đăng nhập (dễ dính xác minh/disable); hãy thêm mail khôi phục, bật 2FA qua Google Authenticator và nuôi trên máy khoảng 7 ngày rồi mới đổi mật khẩu.
+- đúng không? ở đây tôi đoán là có nhiều anh em đang bị như thế
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Nền tảng và môi trường làm kênh: proxy, Gmail, tạo kênh rồi ngâm kênh trong lúc sản xuất video
@@ -51,7 +52,6 @@ player_url: "/player.html?sku=ZOOM-01-Nen-tang-moi-truong&track=h2dev"
 - [[tools/youtube|YouTube]]
 - [[tools/gmail|Gmail]]
 - [[tools/google-authenticator|Google Authenticator]]
-- [[tools/gpm|GPM]]
 - [[tools/mkt|MKT]]
 
 ## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)

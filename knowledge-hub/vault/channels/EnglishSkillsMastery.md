@@ -1,12 +1,12 @@
 ---
 handle: "@EnglishSkillsMastery"
-name: "English Skills Mastery"
+name: "@EnglishSkillsMastery"
 url: "https://www.youtube.com/@EnglishSkillsMastery"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @EnglishSkillsMastery (English Skills Mastery)
+# Kênh Đối Thủ / Kênh Mẫu: @EnglishSkillsMastery (@EnglishSkillsMastery)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@EnglishSkillsMastery](https://www.youtube.com/@EnglishSkillsMastery)

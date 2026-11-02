@@ -1,0 +1,33 @@
+{
+  "id": 570,
+  "sku": "VIDEO-434f80",
+  "upstream_sku": "VIDEO-434f80",
+  "name": "Quy Trình Sản Xuất Video PHIM AI VIỆT ",
+  "url_key": "quy-trinh-san-xuat-video-phim-ai-viet",
+  "published_at": "2026-10-30",
+  "time": "999",
+  "video_link": "https://video.mona-cloud.com/api/video/?user=42838816&video=1793352784-quy-trinh-san-xuat-phim-ai&protected=False&version=v2&token=gAAAAABq5GRYRnoRgqNZ-R2fbGqKNcq-wHx3B9M1t6V3L5FLLOyDqui1NiCxyn_cDumITaJMsLUkudFE3joWAju2geSi8nZjQ7MHrBlyMHwJdk-dlYPsuAg%3D",
+  "protected": false,
+  "bai_h_c_free": false,
+  "lesson_files": null,
+  "attachments": null,
+  "video_subtitle": null,
+  "image": {
+    "url": "https://api.daigiamangdep.com/media/catalog/product/b/9/b917c27b-559c-4939-b2d3-88b022f37f7e.png",
+    "label": "b917c27b-559c-4939-b2d3-88b022f37f7e.png"
+  },
+  "thumbnail": {
+    "url": "https://api.daigiamangdep.com/media/catalog/product/b/9/b917c27b-559c-4939-b2d3-88b022f37f7e.png",
+    "label": "b917c27b-559c-4939-b2d3-88b022f37f7e.png"
+  },
+  "tags": null,
+  "gdrive_files": [],
+  "gdoc_files": [
+    {
+      "doc_id": "1PyaoC9pk9UxivTRzYmIoe5rEp-QtEXeKE_5M1POXKUY",
+      "filename": "doc_1.txt",
+      "bytes": 33190,
+      "lines": 1130
+    }
+  ]
+}

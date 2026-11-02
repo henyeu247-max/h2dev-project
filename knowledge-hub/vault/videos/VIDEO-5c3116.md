@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "76"
-niche: "Bán Content & Phát Triển Kênh"
+niche: "Tin Tức & Đời Sống Thị Trường Canada"
 markets: ["🇨🇦 Canada", "🌐 Ngoại"]
 duration: "17:14"
 published_at: "2025-08-21"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-5c3116&track=h2dev"
 # VIDEO-5c3116 — Share Key thị trường Canada mới nhất và hướng dẫn làm chi tiết từ A-Z - UPDATE 21/8/2025
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#76`)  
-> - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
+> - **Ngách nội dung (Niche):** [[niches/tin-tuc-doi-song-thi-truong-canada|Tin Tức & Đời Sống Thị Trường Canada]]  
 > - **Thị trường:** 🇨🇦 Canada · 🌐 Ngoại | **Thời lượng:** `17:14` | **Ngày đăng:** `2025-08-21`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-5c3116&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-5c3116/README.md)
 

@@ -1,16 +1,16 @@
 ---
 handle: "@cameosub"
-name: "Cá Mèo Sub"
+name: "@cameosub"
 url: "https://www.youtube.com/@cameosub"
-status: "DEAD"
+status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @cameosub (Cá Mèo Sub)
+# Kênh Đối Thủ / Kênh Mẫu: @cameosub (@cameosub)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@cameosub](https://www.youtube.com/@cameosub)
-- **Trạng thái kiểm định:** `DEAD (Đã dừng / Gỡ)`
+- **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`
 

@@ -1,12 +1,12 @@
 ---
 handle: "@Top10HuyenBi"
-name: "Top 10 Huyền Bí"
+name: "@Top10HuyenBi"
 url: "https://www.youtube.com/@Top10HuyenBi"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Top10HuyenBi (Top 10 Huyền Bí)
+# Kênh Đối Thủ / Kênh Mẫu: @Top10HuyenBi (@Top10HuyenBi)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Top10HuyenBi](https://www.youtube.com/@Top10HuyenBi)

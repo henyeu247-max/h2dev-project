@@ -6,7 +6,7 @@ module_id: "HUAN-M10"
 module_title: "DÀNH RIÊNG CHO AE LÀM THƯƠNG HIỆU"
 seq: "06"
 niche: "Quản trị mục tiêu đột phá & Tăng trưởng doanh số"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "08:08"
 published_at: "2026-09-01"
 toolsCount: 2
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-dac857&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M10|HUAN-M10 — DÀNH RIÊNG CHO AE LÀM THƯƠNG HIỆU]] (Bài `#06`)  
 > - **Ngách nội dung (Niche):** [[niches/quan-tri-muc-tieu-dot-pha-tang-truong-doanh-so|Quản trị mục tiêu đột phá & Tăng trưởng doanh số]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `08:08` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `08:08` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-dac857&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-dac857/README.md)
 
 ---

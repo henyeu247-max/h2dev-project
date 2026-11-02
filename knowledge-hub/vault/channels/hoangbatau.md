@@ -1,12 +1,12 @@
 ---
 handle: "@hoangbatau"
-name: "Hoàng Bá Tàu (Case study phủ thương hiệu chuyên gia marketing bằng ngân sách quảng cáo 50–60 tỷ/năm)"
+name: "@hoangbatau"
 url: "https://www.youtube.com/@hoangbatau"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @hoangbatau (Hoàng Bá Tàu (Case study phủ thương hiệu chuyên gia marketing bằng ngân sách quảng cáo 50–60 tỷ/năm))
+# Kênh Đối Thủ / Kênh Mẫu: @hoangbatau (@hoangbatau)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@hoangbatau](https://www.youtube.com/@hoangbatau)

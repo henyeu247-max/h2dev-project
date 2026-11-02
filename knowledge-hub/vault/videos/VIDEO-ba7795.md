@@ -6,7 +6,7 @@ module_id: "HUAN-M01"
 module_title: "1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z"
 seq: "16"
 niche: "Lộ trình 2 cấp độ (Level 1 & Level 2) cho người mới bắt đầu xây kênh YouTube"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "07:54"
 published_at: "2026-09-01"
 toolsCount: 2
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-ba7795&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M01|HUAN-M01 — 1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z]] (Bài `#16`)  
 > - **Ngách nội dung (Niche):** [[niches/lo-trinh-2-cap-do-level-1-level-2-cho-nguoi-moi-bat-dau-xay-kenh-youtube|Lộ trình 2 cấp độ (Level 1 & Level 2) cho người mới bắt đầu xây kênh YouTube]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `07:54` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `07:54` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-ba7795&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-ba7795/README.md)
 
 ---

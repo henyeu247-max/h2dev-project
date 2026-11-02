@@ -1,15 +1,15 @@
 ---
 handle: "@SoiSangBrightSideVietnamese"
-name: "Soi Sáng"
-url: "https://www.youtube.com/channel/UChQtq0f3T1peK2w4olNyWYw"
+name: "@SoiSangBrightSideVietnamese"
+url: "https://www.youtube.com/@SoiSangBrightSideVietnamese"
 status: "LIVE_HTTP_200"
 videos_count: 4
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @SoiSangBrightSideVietnamese (Soi Sáng)
+# Kênh Đối Thủ / Kênh Mẫu: @SoiSangBrightSideVietnamese (@SoiSangBrightSideVietnamese)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/channel/UChQtq0f3T1peK2w4olNyWYw](https://www.youtube.com/channel/UChQtq0f3T1peK2w4olNyWYw)
+- **URL YouTube:** [https://www.youtube.com/@SoiSangBrightSideVietnamese](https://www.youtube.com/@SoiSangBrightSideVietnamese)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

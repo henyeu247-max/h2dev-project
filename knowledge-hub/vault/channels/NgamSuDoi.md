@@ -1,12 +1,12 @@
 ---
 handle: "@NgamSuDoi"
-name: "Ngẫm Sự Đời"
+name: "@NgamSuDoi"
 url: "https://www.youtube.com/@NgamSuDoi"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @NgamSuDoi (Ngẫm Sự Đời)
+# Kênh Đối Thủ / Kênh Mẫu: @NgamSuDoi (@NgamSuDoi)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@NgamSuDoi](https://www.youtube.com/@NgamSuDoi)

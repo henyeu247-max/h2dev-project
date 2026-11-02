@@ -1,12 +1,12 @@
 ---
 handle: "@ezsu"
-name: "EZ Sử"
+name: "@ezsu"
 url: "https://www.youtube.com/@ezsu"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ezsu (EZ Sử)
+# Kênh Đối Thủ / Kênh Mẫu: @ezsu (@ezsu)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ezsu](https://www.youtube.com/@ezsu)

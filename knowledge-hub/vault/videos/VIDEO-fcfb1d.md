@@ -6,7 +6,7 @@ module_id: "HUAN-M05"
 module_title: "5. FACELESS VÀ 10 TƯ DUY CHIẾN THẮNG"
 seq: "02"
 niche: "Mô Hình Kinh Doanh Vô Hạn & Chiến Lược Nhân Bản YouTube Global"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "33:07"
 published_at: "2026-09-01"
 toolsCount: 3
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-fcfb1d&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M05|HUAN-M05 — 5. FACELESS VÀ 10 TƯ DUY CHIẾN THẮNG]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/mo-hinh-kinh-doanh-vo-han-chien-luoc-nhan-ban-youtube-global|Mô Hình Kinh Doanh Vô Hạn & Chiến Lược Nhân Bản YouTube Global]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `33:07` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `33:07` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-fcfb1d&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-fcfb1d/README.md)
 
 ---

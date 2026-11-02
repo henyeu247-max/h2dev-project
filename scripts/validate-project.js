@@ -11,7 +11,7 @@ const errors = [];
 const warnings = [];
 
 function pythonArgs(script, ...args) {
-  const cmd = process.env.H2DEV_PYTHON || 'py';
+  const cmd = process.env.H2DEV_PYTHON || (process.platform === 'win32' ? 'py' : 'python3');
   const base = path.basename(cmd).toLowerCase();
   return { cmd, args: [...(base === 'py' || base === 'py.exe' ? ['-3'] : []), script, ...args] };
 }
@@ -131,6 +131,16 @@ if (EXPECTED_VIDEOS === undefined) {
 if (catalog.length !== EXPECTED_VIDEOS || catalogFull.length !== EXPECTED_VIDEOS || videos.length !== EXPECTED_VIDEOS) {
   errors.push(`Expected ${EXPECTED_VIDEOS} video records; got catalog=${catalog.length}, full=${catalogFull.length}, tabs=${videos.length}`);
 }
+if (chienLuoc && chienLuoc.matrix144) {
+  const m144Items = array(chienLuoc.matrix144.items);
+  if (m144Items.length !== EXPECTED_VIDEOS || chienLuoc.matrix144.totalVideos !== EXPECTED_VIDEOS) {
+    errors.push(`data-tabs/chien-luoc.json: matrix144.items.length=${m144Items.length}, totalVideos=${chienLuoc.matrix144.totalVideos}, expected ${EXPECTED_VIDEOS} — chạy: node scripts/build_h2dev_data.js`);
+  }
+  const cSum = Object.values(chienLuoc.matrix144.clusterCounts || {}).reduce((a, b) => a + Number(b || 0), 0);
+  if (cSum !== EXPECTED_VIDEOS) {
+    errors.push(`data-tabs/chien-luoc.json: tổng matrix144.clusterCounts=${cSum} != ${EXPECTED_VIDEOS} — chạy: node scripts/build_h2dev_data.js`);
+  }
+}
 for (const sku of fullSkus) {
   if (!videoSkus.has(sku)) errors.push(`videos.json missing ${sku}`);
   if (!catalogSkus.has(sku)) errors.push(`catalog.json missing ${sku}`);
@@ -164,7 +174,7 @@ const videoDirs = fs.existsSync(path.join(ROOT, 'video'))
 const thumbs = fs.existsSync(path.join(ROOT, 'assets', 'thumbs'))
   ? fs.readdirSync(path.join(ROOT, 'assets', 'thumbs')).filter(name => name !== 'placeholder.svg')
   : [];
-const EXPECTED_SYSTEM_VIDEOS = C.totalSystemVideos || (EXPECTED_VIDEOS + (C.videosHuan || 140) + (C.videosDgmd || 45));
+const EXPECTED_SYSTEM_VIDEOS = C.totalSystemVideos || (EXPECTED_VIDEOS + (C.videosHuan || 140) + (C.videosDgmd || 52));
 if (videoDirs.length !== EXPECTED_VIDEOS && videoDirs.length !== EXPECTED_SYSTEM_VIDEOS) warnings.push(`video directory count is ${videoDirs.length}, expected ${EXPECTED_VIDEOS} (or ${EXPECTED_SYSTEM_VIDEOS} across 3 tracks)`);
 const thumbSkus = new Set(thumbs.map(n => n.replace(/\.[^.]+$/, '')));
 if (thumbSkus.size !== EXPECTED_VIDEOS) warnings.push(`thumbnail SKU count is ${thumbSkus.size}, expected ${EXPECTED_VIDEOS} (files=${thumbs.length})`);
@@ -299,7 +309,7 @@ for (const [index, meta] of array(ngachXanh.ngachMetaKho).entries()) {
 // Gate F9 (2026-10-27): Kiểm tra toàn vẹn 40 ngách chuẩn (H01..H40) trong ngach-xanh.json & intelligence.db
 // - Đúng 40 ngách (hang: 1..40), 0 ngách trống mauSach / mauPhu / docs / thiTruong / skus
 // - Mọi handle trong mauSach/mauPhu phải có isLive === true trong data/ngachxanh_handle_probes.json và dead === false trong kenh-mau.json, không trùng mauBan / deadHandles2026
-// - Hợp (union) skus của 40 ngách phải phủ đủ 333/333 SKU hệ thống (148 H2DEV + 140 Huân + 45 DGMD)
+// - Hợp (union) skus của 40 ngách phải phủ đủ toàn bộ SKU hệ thống (H2DEV + Huân + DGMD)
 // - Mọi con số mẫu sống / SKU / RPM trong thiTruongXanh (M7) và bangXepHang (M8, 40 dòng) phải khớp 100% mảng thật
 // - 347/347 kênh trong data/intelligence.db phải có primary_niche IS NOT NULL
 {
@@ -645,8 +655,14 @@ try {
     if (!mc) errors.push('assets/music_player_modal.js: fetch music_catalog.json thiếu tham số ?v=...');
     else versionSet.add(mc[1]);
   }
+  if (exists('assets/app/main.js')) {
+    const mjs = fs.readFileSync(path.join(ROOT, 'assets', 'app', 'main.js'), 'utf8');
+    const abv = /const\s+APP_BUILD_VER\s*=\s*['"]([^'"]+)['"]/.exec(mjs);
+    if (!abv) errors.push('assets/app/main.js: thiếu hằng số APP_BUILD_VER');
+    else versionSet.add(abv[1]);
+  }
   if (versionSet.size > 1) {
-    errors.push(`Cache-busting ?v= không đồng nhất giữa các trang HTML / JS: [${[...versionSet].join(', ')}] — phải thống nhất 1 phiên bản uifix duy nhất`);
+    errors.push(`Cache-busting ?v= / APP_BUILD_VER không đồng nhất giữa các trang HTML / JS: [${[...versionSet].join(', ')}] — phải thống nhất 1 phiên bản uifix duy nhất`);
   }
   const swRel = 'assets/app/sw.js';
   if (exists(swRel)) {
@@ -739,9 +755,9 @@ try {
 // Guard 3-Track (H2DEV + HUAN + DGMD) & edit_sop schema + insight.json sync + music_catalog safeForYPP + file:/// guard + tai-lieu-full kind guard
 {
   const KEY_NAME_RE = /^(primary|additional|trim_start|trim_end|emphasis|b_roll|voice|visual|music|subtitles|trim|speed_bgm|sub|footage|captions|pacing|music_sfx|avoid|cuts|trim_start_seconds|trim_end_seconds)$/i;
-  const expH2dev = C.videos ?? 148;
+  const expH2dev = C.videos ?? 153;
   const expHuan = C.videosHuan ?? 140;
-  const expDgmd = C.videosDgmd ?? 45;
+  const expDgmd = C.videosDgmd ?? 52;
   const trackFiles = [
     { name: 'h2dev', ins: 'data/video_insights.json', vids: 'data-tabs/videos.json', expected: expH2dev },
     { name: 'huan', ins: 'data/video_insights_huan.json', vids: 'data/videos_huan.json', expected: expHuan },
@@ -922,7 +938,10 @@ if (errors.length) {
   process.exitCode = 1;
 } else {
   console.log('Validation passed.');
-  console.log(`Videos: 333 (H2DEV ${videos.length} + HUAN 140 + DGMD 45); channels: ${channels.length}; kich-ban: ${scripts.length}; tai-lieu-full: ${docsMerged.length}; thumbnails: ${thumbs.length}; video directories: ${videoDirs.length}`);
+  const huanCount = liveCounts.videosHuan ?? 140;
+  const dgmdCount = liveCounts.videosDgmd ?? 52;
+  const sysTotal = liveCounts.totalSystemVideos ?? (videos.length + huanCount + dgmdCount);
+  console.log(`Videos: ${sysTotal} (H2DEV ${videos.length} + HUAN ${huanCount} + DGMD ${dgmdCount}); channels: ${channels.length}; kich-ban: ${scripts.length}; tai-lieu-full: ${docsMerged.length}; thumbnails: ${thumbs.length}; video directories: ${videoDirs.length}`);
   if (warnings.length) {
     console.log('Warnings:');
     warnings.forEach(warning => console.log(`- ${warning}`));

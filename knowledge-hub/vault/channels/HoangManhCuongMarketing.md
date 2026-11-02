@@ -1,12 +1,12 @@
 ---
 handle: "@HoangManhCuongMarketing"
-name: "Hoàng Mạnh Cường Marketing (Topmax)"
+name: "@HoangManhCuongMarketing"
 url: "https://www.youtube.com/@HoangManhCuongMarketing"
 status: "LIVE_HTTP_200"
 videos_count: 13
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @HoangManhCuongMarketing (Hoàng Mạnh Cường Marketing (Topmax))
+# Kênh Đối Thủ / Kênh Mẫu: @HoangManhCuongMarketing (@HoangManhCuongMarketing)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@HoangManhCuongMarketing](https://www.youtube.com/@HoangManhCuongMarketing)

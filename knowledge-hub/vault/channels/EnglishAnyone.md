@@ -1,12 +1,12 @@
 ---
 handle: "@EnglishAnyone"
-name: "EnglishAnyone"
+name: "@EnglishAnyone"
 url: "https://www.youtube.com/@EnglishAnyone"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @EnglishAnyone (EnglishAnyone)
+# Kênh Đối Thủ / Kênh Mẫu: @EnglishAnyone (@EnglishAnyone)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@EnglishAnyone](https://www.youtube.com/@EnglishAnyone)

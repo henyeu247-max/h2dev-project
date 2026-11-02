@@ -14,9 +14,7 @@ tracks: ["huan"]
 ## 1. Các Video Bài Giảng Thuộc Ngách (1)
 - [[videos/VIDEO-84853e|VIDEO-84853e — B1 Cuộc cách mạng chuyển đổi số, Kỷ nguyên bán kết quả và niềm tin]] (`HUAN` · `29:41`)
 
-## 2. Kênh Đối Thủ / Kênh Mẫu Liên Quan (6)
-- [[channels/longpt|@longpt]]
-- [[channels/TonyRobbinsLive|@TonyRobbinsLive]]
+## 2. Kênh Đối Thủ / Kênh Mẫu Liên Quan (4)
 - [[channels/drhieu|@drhieu]]
 - [[channels/MasterPhungPhuong|@MasterPhungPhuong]]
 - [[channels/hoangbatau|@hoangbatau]]

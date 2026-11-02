@@ -1,12 +1,12 @@
 ---
 handle: "@BlueBearKids"
-name: "Blue Bear Kids"
+name: "@BlueBearKids"
 url: "https://www.youtube.com/@BlueBearKids"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @BlueBearKids (Blue Bear Kids)
+# Kênh Đối Thủ / Kênh Mẫu: @BlueBearKids (@BlueBearKids)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@BlueBearKids](https://www.youtube.com/@BlueBearKids)

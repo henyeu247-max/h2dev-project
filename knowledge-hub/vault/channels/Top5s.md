@@ -1,12 +1,12 @@
 ---
 handle: "@Top5s"
-name: "Top5s"
+name: "@Top5s"
 url: "https://www.youtube.com/@Top5s"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Top5s (Top5s)
+# Kênh Đối Thủ / Kênh Mẫu: @Top5s (@Top5s)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Top5s](https://www.youtube.com/@Top5s)

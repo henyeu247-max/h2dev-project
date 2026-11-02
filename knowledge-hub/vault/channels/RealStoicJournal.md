@@ -1,12 +1,12 @@
 ---
 handle: "@RealStoicJournal"
-name: "Stoic Journal (Kênh hình mẫu ngách Chủ nghĩa Khắc kỷ - Stoicism)"
+name: "@RealStoicJournal"
 url: "https://www.youtube.com/@RealStoicJournal"
 status: "LIVE_HTTP_200"
 videos_count: 3
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @RealStoicJournal (Stoic Journal (Kênh hình mẫu ngách Chủ nghĩa Khắc kỷ - Stoicism))
+# Kênh Đối Thủ / Kênh Mẫu: @RealStoicJournal (@RealStoicJournal)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@RealStoicJournal](https://www.youtube.com/@RealStoicJournal)

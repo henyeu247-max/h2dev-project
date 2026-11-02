@@ -6,7 +6,7 @@ module_id: "HUAN-M07"
 module_title: "7. CẬP NHẬT K7"
 seq: "02"
 niche: "Tư Duy Hành Động & Xây Dựng Đội Nhóm Đồng Hành"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "21:13"
 published_at: "2026-09-01"
 toolsCount: 5
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-8d78b4&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M07|HUAN-M07 — 7. CẬP NHẬT K7]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/tu-duy-hanh-dong-xay-dung-doi-nhom-dong-hanh|Tư Duy Hành Động & Xây Dựng Đội Nhóm Đồng Hành]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `21:13` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `21:13` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-8d78b4&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-8d78b4/README.md)
 
 ---

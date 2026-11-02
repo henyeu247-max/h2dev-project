@@ -1,12 +1,12 @@
 ---
 handle: "@TheGioiDiDong"
-name: "Thế Giới Di Động"
+name: "@TheGioiDiDong"
 url: "https://www.youtube.com/@TheGioiDiDong"
 status: "LIVE_HTTP_200"
 videos_count: 3
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TheGioiDiDong (Thế Giới Di Động)
+# Kênh Đối Thủ / Kênh Mẫu: @TheGioiDiDong (@TheGioiDiDong)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TheGioiDiDong](https://www.youtube.com/@TheGioiDiDong)

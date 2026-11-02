@@ -164,11 +164,11 @@ async function main() {
         ins.key_takeaways = ins.KeyTakeaways;
         mutated = true;
       }
-      if (!Array.isArray(ins.key_takeaways) || ins.key_takeaways.length < 4) {
+      if (!Array.isArray(ins.key_takeaways) || ins.key_takeaways.length < 5) {
         const synthesized = [];
         if (Array.isArray(ins.Step_7_Monetization)) synthesized.push(...ins.Step_7_Monetization);
         if (Array.isArray(ins.Step_6_Edit_Checklist)) synthesized.push(...ins.Step_6_Edit_Checklist);
-        if (synthesized.length >= 4) {
+        if (synthesized.length >= 5) {
           ins.key_takeaways = synthesized.slice(0, 6);
           mutated = true;
         }
@@ -193,7 +193,7 @@ async function main() {
         ins.tools_mentioned = ins.tools_used;
         mutated = true;
       }
-      if (!Array.isArray(ins.key_takeaways) || ins.key_takeaways.length < 4) {
+      if (!Array.isArray(ins.key_takeaways) || ins.key_takeaways.length < 5) {
         const synthesized = [];
         if (ins.Core_Value) synthesized.push(ins.Core_Value);
         if (ins.Key_Action) synthesized.push(ins.Key_Action);
@@ -202,7 +202,7 @@ async function main() {
         if (Array.isArray(ins.sop_steps)) synthesized.push(...ins.sop_steps);
         if (Array.isArray(ins.edit_sop?.additional)) synthesized.push(...ins.edit_sop.additional);
         const uniq = [...new Set(synthesized.filter(Boolean))];
-        if (uniq.length >= 4) {
+        if (uniq.length >= 5) {
           ins.key_takeaways = uniq.slice(0, 6);
           mutated = true;
         }
@@ -485,6 +485,8 @@ async function main() {
         ? prevCatItem.tags
         : ['DGMD Academy', contentNiche, ...(normalizedInsight.tools_mentioned || []).slice(0, 4)];
 
+      const ingestedAt = prevCatItem.ingested_at || p.ingested_at || '';
+
       const catalogItem = {
         sku,
         title: lessonTitle,
@@ -494,7 +496,7 @@ async function main() {
         resolution: '1080p',
         width: 1920,
         height: 1080,
-        badge: prevCatItem.badge || (isFree ? 'MIỄN PHÍ' : 'PRO'),
+        badge: prevCatItem.badge || p.badge || (isFree ? 'MIỄN PHÍ' : 'PRO'),
         size_mb: sizeMb,
         duration_sec: durSec,
         duration: durStr,
@@ -506,6 +508,7 @@ async function main() {
         index: globalIndex,
         seq: seqStr,
         published_at: publishedAt,
+        ...(ingestedAt ? { ingested_at: ingestedAt } : {}),
         actual_topic: normalizedInsight.actual_topic,
         category_id: String(prevMod.category_id || prevCatItem.category_id || ''),
         category_name: prevMod.title,
@@ -551,6 +554,7 @@ async function main() {
         niche: cleanNiche || contentNiche,
         market: markets,
         published_at: publishedAt,
+        ...(ingestedAt ? { ingested_at: ingestedAt } : {}),
         badge: catalogItem.badge,
         free: isFree,
         is_free: isFree,

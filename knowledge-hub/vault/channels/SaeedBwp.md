@@ -1,12 +1,12 @@
 ---
 handle: "@SaeedBwp"
-name: "Saeed Bwp (Kênh hướng dẫn từng bước cách làm video AI Animal Rescue, AI Cartoon 3D & AI Motivational)"
+name: "@SaeedBwp"
 url: "https://www.youtube.com/@SaeedBwp"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @SaeedBwp (Saeed Bwp (Kênh hướng dẫn từng bước cách làm video AI Animal Rescue, AI Cartoon 3D & AI Motivational))
+# Kênh Đối Thủ / Kênh Mẫu: @SaeedBwp (@SaeedBwp)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@SaeedBwp](https://www.youtube.com/@SaeedBwp)

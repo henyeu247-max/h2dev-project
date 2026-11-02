@@ -1,5 +1,6 @@
 // H2DEV Project server - serves the project at http://0.0.0.0:8899/
 // Toàn bộ dự án và tài liệu nghiên cứu mở 100%, không áp đặt cơ chế kiểm duyệt/chặn dữ liệu.
+if (!process.env.UV_THREADPOOL_SIZE) process.env.UV_THREADPOOL_SIZE = '16';
 const _origEmitWarningServer = process.emitWarning;
 process.emitWarning = function (w, ...rest) {
   if (String((w && w.message) || w).includes('SQLite is an experimental')) return;
@@ -51,6 +52,9 @@ initLogRotation(30 * 60 * 1000); // Quét định kỳ mỗi 30 phút
 const ROOT = __dirname; // D:/YTB/H2DEV-Project
 const PORT = process.env.PORT || 8899;
 const HOST = process.env.HOST || '0.0.0.0'; // 0.0.0.0 = mở LAN/Tailscale; 127.0.0.1 = chỉ local
+const VIDEO_MOUNT_DIR = process.env.H2DEV_VIDEO_MOUNT_DIR
+  ? path.resolve(process.env.H2DEV_VIDEO_MOUNT_DIR)
+  : (process.platform === 'linux' ? '/mnt/gdrive_h2dev/video' : '');
 
 const MIME = {
   '.html':'text/html; charset=utf-8',
@@ -304,6 +308,10 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
     } else if (mime === 'application/json') {
       headers['Cache-Control'] = 'no-cache, must-revalidate';
     }
+    const isVideoExt = ext === '.mp4' || ext === '.webm';
+    if (isVideoExt) {
+      headers['CDN-Cache-Control'] = 'no-store';
+    }
 
     if(status===206){
       // Video/Audio Range requests: ALWAYS uncompressed, exact byte boundaries
@@ -312,7 +320,8 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
       headers['Content-Range'] = 'bytes '+start+'-'+end+'/'+total;
       res.writeHead(status, headers);
       if(isHead){ res.end(); return; }
-      const stream = fs.createReadStream(full, {start, end});
+      const streamOpts = isVideoExt ? { start, end, highWaterMark: 256 * 1024 } : { start, end };
+      const stream = fs.createReadStream(full, streamOpts);
       stream.on('error', () => { stream.destroy(); res.destroy(); });
       res.on('close', () => { try { stream.destroy(); } catch (_) {} });
       stream.pipe(res);
@@ -384,7 +393,7 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
       headers['Content-Length'] = total;
       res.writeHead(200, headers);
       if (isHead) { res.end(); return; }
-      const stream = fs.createReadStream(full);
+      const stream = fs.createReadStream(full, isVideoExt ? { highWaterMark: 256 * 1024 } : undefined);
       stream.on('error', () => { stream.destroy(); res.destroy(); });
       res.on('close', () => { try { stream.destroy(); } catch (_) {} });
       stream.pipe(res);
@@ -1092,8 +1101,10 @@ const server = http.createServer(async (req,res)=>{
     return;
   }
 
-  fs.stat(full, (err, st)=>{
-    if(!err && st.isDirectory()){
+  const isVideoMediaReq = firstSeg === 'video' && relSegs.length >= 2 && /\.(mp4|webm)$/i.test(full);
+  fs.lstat(full, (err, st)=>{
+    const isSymlink = !err && st && typeof st.isSymbolicLink === 'function' && st.isSymbolicLink();
+    if(!err && !isSymlink && st.isDirectory()){
       const idx = path.join(full, 'index.html');
       fs.stat(idx, (e2,s2)=>{
         if(!e2 && s2.isFile()) sendFile(req, res, idx, MIME['.html'], req.headers.range, isHead);
@@ -1101,9 +1112,57 @@ const server = http.createServer(async (req,res)=>{
       });
       return;
     }
-    if(!err && st.isFile()){
+    if(!err && !isSymlink && st.isFile()){
       const mime = MIME[path.extname(full).toLowerCase()] || 'application/octet-stream';
       sendFile(req, res, full, mime, req.headers.range, isHead);
+      return;
+    }
+    if (VIDEO_MOUNT_DIR && isVideoMediaReq && (err || isSymlink)) {
+      const mountFull = path.resolve(VIDEO_MOUNT_DIR, ...relSegs.slice(1));
+      const mountRel = path.relative(VIDEO_MOUNT_DIR, mountFull);
+      if (mountRel !== '..' && !mountRel.startsWith('..' + path.sep) && !path.isAbsolute(mountRel)) {
+        fs.stat(mountFull, (mErr, mSt) => {
+          if (!mErr && mSt.isFile()) {
+            const mime = MIME[path.extname(mountFull).toLowerCase()] || 'application/octet-stream';
+            sendFile(req, res, mountFull, mime, req.headers.range, isHead);
+            return;
+          }
+          if (isSymlink) {
+            fs.stat(full, (sErr, sSt) => {
+              if (!sErr && sSt.isFile()) {
+                const mime = MIME[path.extname(full).toLowerCase()] || 'application/octet-stream';
+                sendFile(req, res, full, mime, req.headers.range, isHead);
+                return;
+              }
+              res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
+              res.end('404 Not Found: '+urlPath);
+            });
+            return;
+          }
+          res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
+          res.end('404 Not Found: '+urlPath);
+        });
+        return;
+      }
+    }
+    if (isSymlink) {
+      fs.stat(full, (sErr, sSt) => {
+        if (!sErr && sSt.isDirectory()) {
+          const idx = path.join(full, 'index.html');
+          fs.stat(idx, (e2, s2) => {
+            if (!e2 && s2.isFile()) sendFile(req, res, idx, MIME['.html'], req.headers.range, isHead);
+            else { res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*', 'X-Content-Type-Options':'nosniff'})); res.end('404 Not Found'); }
+          });
+          return;
+        }
+        if (!sErr && sSt.isFile()) {
+          const mime = MIME[path.extname(full).toLowerCase()] || 'application/octet-stream';
+          sendFile(req, res, full, mime, req.headers.range, isHead);
+          return;
+        }
+        res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
+        res.end('404 Not Found: '+urlPath);
+      });
       return;
     }
     if(!path.extname(full)){

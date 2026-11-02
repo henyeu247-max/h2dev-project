@@ -1,17 +1,17 @@
 ---
 tool_slug: "capcut"
 tool_name: "CapCut"
-videos_count: 66
+videos_count: 67
 tracks: ["h2dev", "huan", "dgmd"]
 ---
 
 # Công Cụ Thực Chiến: CapCut
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **Số bài giảng sử dụng công cụ này:** `66` video
+- **Số bài giảng sử dụng công cụ này:** `67` video
 - **Tracks:** `H2DEV`, `HUAN`, `DGMD`
 
-## Danh Sách Bài Giảng Ứng Dụng CapCut (66)
+## Danh Sách Bài Giảng Ứng Dụng CapCut (67)
 - [[videos/VIDEO-54422c|VIDEO-54422c — HƯỚNG DẪN TỰ TRAIN PROMPT - TỰ TẠO PROMPT CHO BẤT KỲ CHỦ ĐỀ NÀO MUỐN]] (`H2DEV`)
 - [[videos/VIDEO-f74bb1|VIDEO-f74bb1 — Update ngách cực nhỏ thị trường Hàn Quốc mới nhất]] (`H2DEV`)
 - [[videos/VIDEO-ca0b1a|VIDEO-ca0b1a — Show kênh thực chiến không che - hướng dẫn quy trình làm bán content nhân bản thị trường US sang Việt]] (`H2DEV`)
@@ -78,3 +78,4 @@ tracks: ["h2dev", "huan", "dgmd"]
 - [[videos/VIDEO-d8c6a8|VIDEO-d8c6a8 — Quy Trình Sản Xuất Video Bắt Nhịp Đọc Theo Chữ]] (`DGMD`)
 - [[videos/VIDEO-10991e|VIDEO-10991e — Quy Trình Sản Xuất Video Có Sẵn Trên Nền Tảng Tiktok Bằng Máy Tính]] (`DGMD`)
 - [[videos/VIDEO-0056a9|VIDEO-0056a9 — Quy Trình Sản Xuất Video Có Sẵn Trên Nền Tảng Tiktok Bằng Điện Thoại]] (`DGMD`)
+- [[videos/VIDEO-0419c4|VIDEO-0419c4 — Quy Trình Sản Xuất Video  MAMA CAT ASMR ]] (`DGMD`)

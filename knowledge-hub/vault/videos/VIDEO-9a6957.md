@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "38"
-niche: "Triết Lý Sống & Đạo Làm Người"
+niche: "Liên Kết GA & Bật Kiếm Tiền YPP"
 markets: ["🇰🇷 Hàn"]
 duration: "3:45"
 published_at: "2026-04-11"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-9a6957&track=h2dev"
 # VIDEO-9a6957 — NGÁCH CỰC NHỎ KINH TẾ THỊ TRƯỜNG HÀN (EDIT THUẦN TRÁNH LỖI KHÔNG TRUNG THỰC)   *LƯU Ý: KHÔNG PHẢI DẠNG NGƯỜI QUE
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#38`)  
-> - **Ngách nội dung (Niche):** [[niches/triet-ly-song-dao-lam-nguoi|Triết Lý Sống & Đạo Làm Người]]  
+> - **Ngách nội dung (Niche):** [[niches/lien-ket-ga-bat-kiem-tien-ypp|Liên Kết GA & Bật Kiếm Tiền YPP]]  
 > - **Thị trường:** 🇰🇷 Hàn | **Thời lượng:** `3:45` | **Ngày đăng:** `2026-04-11`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-9a6957&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-9a6957/README.md)
 

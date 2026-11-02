@@ -1,12 +1,12 @@
 ---
 handle: "@OnSports"
-name: "On Sports"
+name: "@OnSports"
 url: "https://www.youtube.com/@OnSports"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @OnSports (On Sports)
+# Kênh Đối Thủ / Kênh Mẫu: @OnSports (@OnSports)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@OnSports](https://www.youtube.com/@OnSports)

@@ -1,12 +1,12 @@
 ---
 handle: "@DamVinhHungOfficial"
-name: "Đàm Vĩnh Hưng"
+name: "@DamVinhHungOfficial"
 url: "https://www.youtube.com/@DamVinhHungOfficial"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @DamVinhHungOfficial (Đàm Vĩnh Hưng)
+# Kênh Đối Thủ / Kênh Mẫu: @DamVinhHungOfficial (@DamVinhHungOfficial)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@DamVinhHungOfficial](https://www.youtube.com/@DamVinhHungOfficial)

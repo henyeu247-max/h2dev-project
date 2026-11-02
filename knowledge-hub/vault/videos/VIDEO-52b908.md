@@ -6,11 +6,11 @@ module_id: "DGMD-M10"
 module_title: "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE"
 seq: "06"
 niche: "SEO & Thuật Toán YouTube"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
+markets: ["🌍 View Ngoại"]
 duration: "16:51"
 published_at: "2026-10-12"
 toolsCount: 5
-channelsCount: 2
+channelsCount: 1
 docsCount: 3
 player_url: "/player.html?sku=VIDEO-52b908&track=dgmd"
 ---
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-52b908&track=dgmd"
 # VIDEO-52b908 — Hiểu Rõ 15 Danh Mục Quan Trọng Trong YouTube Studio
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M10|DGMD-M10 — TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE]] (Bài `#06`)  
 > - **Ngách nội dung (Niche):** [[niches/seo-thuat-toan-youtube|SEO & Thuật Toán YouTube]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `16:51` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại | **Thời lượng:** `16:51` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-52b908&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-52b908/README.md)
 
 ---
@@ -54,7 +54,6 @@ player_url: "/player.html?sku=VIDEO-52b908&track=dgmd"
 - [[tools/facebook|Facebook]]
 
 ## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)
-- [[channels/LinhGioiHatVan|@LinhGioiHatVan]]
 - [[channels/MrBeast|@MrBeast]]
 
 ## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)

@@ -6,7 +6,7 @@ module_id: "HUAN-M10"
 module_title: "DÀNH RIÊNG CHO AE LÀM THƯƠNG HIỆU"
 seq: "04"
 niche: "Xây dựng kênh YouTube thương hiệu & Chuyển đổi khách hàng"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "08:20"
 published_at: "2026-09-01"
 toolsCount: 4
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-a17fe8&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M10|HUAN-M10 — DÀNH RIÊNG CHO AE LÀM THƯƠNG HIỆU]] (Bài `#04`)  
 > - **Ngách nội dung (Niche):** [[niches/xay-dung-kenh-youtube-thuong-hieu-chuyen-doi-khach-hang|Xây dựng kênh YouTube thương hiệu & Chuyển đổi khách hàng]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `08:20` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `08:20` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-a17fe8&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-a17fe8/README.md)
 
 ---

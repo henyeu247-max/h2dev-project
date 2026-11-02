@@ -1,15 +1,15 @@
 ---
 handle: "@BIQUYETTHANHCONGBMG"
-name: "BÍ QUYẾT THÀNH CÔNG (86M view - $155,000)"
-url: "https://www.youtube.com/channel/UCc0CniFSF4F6Nk6UU69hjrA"
+name: "@BIQUYETTHANHCONGBMG"
+url: "https://www.youtube.com/@BIQUYETTHANHCONGBMG"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @BIQUYETTHANHCONGBMG (BÍ QUYẾT THÀNH CÔNG (86M view - $155,000))
+# Kênh Đối Thủ / Kênh Mẫu: @BIQUYETTHANHCONGBMG (@BIQUYETTHANHCONGBMG)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/channel/UCc0CniFSF4F6Nk6UU69hjrA](https://www.youtube.com/channel/UCc0CniFSF4F6Nk6UU69hjrA)
+- **URL YouTube:** [https://www.youtube.com/@BIQUYETTHANHCONGBMG](https://www.youtube.com/@BIQUYETTHANHCONGBMG)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

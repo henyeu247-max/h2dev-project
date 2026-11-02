@@ -162,6 +162,26 @@
     currentTrack = track;
     try { sessionStorage.setItem(TRACK_KEY, currentTrack); } catch (e) {}
     syncTrackButtons();
+  fetch('/api/overview-summary', { cache: 'no-store' })
+    .then(function (r) { return r.ok ? r.json() : fetch('data/overview_summary.json', { cache: 'no-store' }).then(function (r2) { return r2.ok ? r2.json() : null; }); })
+    .then(function (ovRaw) {
+      if (!ovRaw) return;
+      var c = ovRaw.counts || ovRaw;
+      var nH2 = Number(c.videosH2dev || c.h2devVideos || c.videos || 0);
+      var nDg = Number(c.videosDgmd || c.dgmdVideos || 0);
+      var nHu = Number(c.videosHuan || c.huanVideos || 0);
+      var nTot = Number(c.videosTotal || c.totalVideos || (nH2 + nDg + nHu));
+      var mTot = Number(c.modulesTotal || c.modules || 36);
+      var setLbl = function (tr, txt) {
+        var el = document.querySelector('#trackSwitcher button[data-track="' + tr + '"] .track-label');
+        if (el) el.textContent = txt;
+      };
+      if (nH2) setLbl('h2dev', 'Nhánh H2DEV · Faceless (' + nH2 + ' Video)');
+      if (nDg) setLbl('dgmd', 'Nhánh Đại Gia Mang Dép (' + nDg + ' Video)');
+      if (nHu) setLbl('huan', 'Nhánh Huân Academy (' + nHu + ' Video)');
+      if (nTot) setLbl('all', 'Tất cả 3 nhánh (' + mTot + ' Module · ' + nTot + ' Video)');
+    })
+    .catch(function () {});
     var u = new URL(location.href);
     if (currentTrack === 'dgmd' || currentTrack === 'huan' || currentTrack === 'all') u.searchParams.set('track', currentTrack);
     else u.searchParams.delete('track');
@@ -550,6 +570,26 @@
      (truoc day panel trong hoan toan -> nguoi dung khong biet dang tai). */
   if (C.skeletonList) els.panelRoot.innerHTML = C.skeletonList(6, { thumb: true, lines: 2 });
   syncTrackButtons();
+  fetch('/api/overview-summary', { cache: 'no-store' })
+    .then(function (r) { return r.ok ? r.json() : fetch('data/overview_summary.json', { cache: 'no-store' }).then(function (r2) { return r2.ok ? r2.json() : null; }); })
+    .then(function (ovRaw) {
+      if (!ovRaw) return;
+      var c = ovRaw.counts || ovRaw;
+      var nH2 = Number(c.videosH2dev || c.h2devVideos || c.videos || 0);
+      var nDg = Number(c.videosDgmd || c.dgmdVideos || 0);
+      var nHu = Number(c.videosHuan || c.huanVideos || 0);
+      var nTot = Number(c.videosTotal || c.totalVideos || (nH2 + nDg + nHu));
+      var mTot = Number(c.modulesTotal || c.modules || 36);
+      var setLbl = function (tr, txt) {
+        var el = document.querySelector('#trackSwitcher button[data-track="' + tr + '"] .track-label');
+        if (el) el.textContent = txt;
+      };
+      if (nH2) setLbl('h2dev', 'Nhánh H2DEV · Faceless (' + nH2 + ' Video)');
+      if (nDg) setLbl('dgmd', 'Nhánh Đại Gia Mang Dép (' + nDg + ' Video)');
+      if (nHu) setLbl('huan', 'Nhánh Huân Academy (' + nHu + ' Video)');
+      if (nTot) setLbl('all', 'Tất cả 3 nhánh (' + mTot + ' Module · ' + nTot + ' Video)');
+    })
+    .catch(function () {});
   try {
     var curUrl = new URL(location.href);
     if (currentTrack && currentTrack !== 'h2dev' && curUrl.searchParams.get('track') !== currentTrack) {

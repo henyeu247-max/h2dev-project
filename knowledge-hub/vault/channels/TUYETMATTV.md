@@ -1,12 +1,12 @@
 ---
 handle: "@TUYETMATTV"
-name: "TUYỆT MẬT TV (Bí Ẩn)"
+name: "@TUYETMATTV"
 url: "https://www.youtube.com/@TUYETMATTV"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @TUYETMATTV (TUYỆT MẬT TV (Bí Ẩn))
+# Kênh Đối Thủ / Kênh Mẫu: @TUYETMATTV (@TUYETMATTV)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@TUYETMATTV](https://www.youtube.com/@TUYETMATTV)

@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-0bb86b&track=h2dev"
 # VIDEO-0bb86b — Chỉ 1 video đầu duy nhất nổ gần 200K View - Share ngách mới cực nhỏ thị trường Hàn và Nhật
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#92`)  
 > - **Ngách nội dung (Niche):** [[niches/triet-ly-song-tai-chinh-tuoi-gia|Triết Lý Sống & Tài Chính Tuổi Già]]  
 > - **Thị trường:** 🇰🇷 Hàn · 🇯🇵 Nhật | **Thời lượng:** `10:37` | **Ngày đăng:** `2026-09-17`  

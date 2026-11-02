@@ -127,22 +127,129 @@ ASR_FIXES = [
     ("gói bồ rồ", "gói Pro"),
     ("cơn này", "kênh này"),
     ("Cơn này", "Kênh này"),
+    ("cơ này", "kênh này"),
+    ("Cơ này", "Kênh này"),
+    ("cái cân", "cái kênh"),
     ("bộ cây", "bộ kênh"),
     ("cây này là", "kênh này là"),
     ("ngắt nhỏ", "ngách nhỏ"),
     ("cái nách", "cái ngách"),
     ("từ khó", "từ khóa"),
+    ("tư khói", "từ khóa"),
     ("tỷ lợi", "tỷ lệ"),
+    ("tỉ lợi", "tỷ lệ"),
     ("danh thu", "doanh thu"),
     ("chỉ số viền", "chỉ số view"),
+    ("Đa Mỹ", "Đam Mỹ"),
+    ("trước lý", "triết lý"),
+    ("trích lý", "triết lý"),
+    ("trực lý", "triết lý"),
+    ("mô tẻ", "mô tả"),
+    ("đe số", "đa số"),
+    ("sao chip", "sao chép"),
+    ("trình diệt", "trình duyệt"),
+    ("trần diệt", "trình duyệt"),
+    ("xuất khí", "xuất xứ"),
+    ("người dè", "người già"),
+    ("rỡ mờ", "RPM"),
+    ("câu lợi", "câu lệnh"),
+    ("xem que", "xem qua"),
+    ("nghe que", "nghe qua"),
+    ("mua mèo xong", "mua mail xong"),
+    ("tí lỡ", "tỷ lệ"),
+    ("Tí lỡ", "Tỷ lệ"),
+    ("phổ lốt", "upload"),
+    ("phở lốt", "upload"),
+    ("đồ đam mê", "đồ ăn"),
+    ("đồ ra me", "drama"),
+    ("tri cập", "truy cập"),
+    ("bút xúc", "bức xúc"),
+    ("Edict", "Edit"),
+    ("lực 5G", "luật 5 giây"),
+    ("Điết rất là", "Edit rất là"),
+    ("chỉnh châu", "chỉnh chu"),
+    ("ghiên ra", "gen ra"),
+    ("ghen ra", "gen ra"),
+    ("Ghen ra", "Gen ra"),
+    ("Rea Contractivity", "ra ChatGPT"),
+    ("hồ ké", "ok"),
+    ("view ngõ", "view ngoại"),
+    ("tập khán giả", "tệp khán giả"),
+    ("lẹt đẹp", "lẹt đẹt"),
+    ("dạng triệu", "hàng triệu"),
+    ("gách", "ngách"),
+    ("Gách", "Ngách"),
+    ("người quê", "người que"),
+    ("con clock", "con Claude"),
+    ("file book plugin", "file bộ plugin"),
+    ("file blogging", "file plugin"),
+    ("Blu-In-Skills", "Plugin Skills"),
+    ("tạo vôi", "tạo voice"),
+    ("chăn đipti", "ChatGPT"),
+    ("chat TV", "ChatGPT"),
+    ("cái cơn ", "cái kênh "),
+    ("những cái cơn ", "những cái kênh "),
+    ("cơn đối thủ", "kênh đối thủ"),
+    ("cơn góc", "kênh gốc"),
+    ("cò lon", "clone"),
+    ("vỉa vời", "vẽ vời"),
+    ("nó vỉa", "nó vẽ"),
+    ("để vỉa ra", "để vẽ ra"),
+    ("ngách vỉa", "ngách vẽ"),
+    ("xem quê kênh", "xem qua kênh"),
+    ("plugin ngắt", "plugin ngách"),
+    ("những cái ngắt", "những cái ngách"),
+    ("ngắt nào", "ngách nào"),
+    ("ngắt này", "ngách này"),
+    ("ngắt khác", "ngách khác"),
+    ("tịch bản", "kịch bản"),
+    ("WattF", "What If"),
+    ("trang WordShitting", "workspace settings"),
+    ("xin đi đến đây", "xem video đến đây"),
+    ("đồ mô", "demo"),
+    ("2 đơ, 3 đơ", "2D, 3D"),
+    ("Matterform", "Master Prompt"),
+    ("MatterFrom", "Master Prompt"),
+    ("lân cấp", "nâng cấp"),
+    ("tải giamangget.com", "daigiamangdep.com"),
+    ("đạigiamangz.com", "daigiamangdep.com"),
+    ("trên sopi", "trên Shopee"),
+    ("nhế này nhé sopi", "như thế này nhé Shopee"),
+    ("app philet", "affiliate"),
+    ("người sản tạo đồ dung", "người sáng tạo nội dung"),
+    ("thức phim", "thước phim"),
+    ("view nhập", "view Nhật"),
+    ("view nhật", "view Nhật"),
+    ("niên tục", "liên tục"),
 ]
 
 
+def _norm_cmp(s: str) -> str:
+    import unicodedata, re as _re
+    s = str(s or "").lower().replace("đ", "d")
+    s = "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")
+    return _re.sub(r"[^a-z0-9]+", " ", s).strip()
+
+
 def clean_text(t: str) -> str:
-    t = t.strip()
+    import re as _re
+    t = t.strip().replace("[", "").replace("]", "")
+    # Collapse any prior substring-collision artifacts first
+    t = _re.sub(r"\b([Nn])n+gách\b", lambda m: ("Ngách" if m.group(1).isupper() else "ngách"), t)
+    t = _re.sub(r"\b([Tt]ừ\s+khóa)a+\b", r"\1", t)
     for wrong, right in ASR_FIXES:
-        t = t.replace(wrong, right)
-    return t
+        if wrong and wrong != right:
+            if wrong in right:
+                t = t.replace(right, "\x00").replace(wrong, right).replace("\x00", right)
+            else:
+                t = t.replace(wrong, right)
+    t = _re.sub(r"\bghen ra\b", "gen ra", t, flags=_re.I)
+    t = _re.sub(r"\bRea\b", "ra", t)
+    t = _re.sub(r"(?:^|(?<=\s))từ khó(?=\s|$|[.,!?])", "từ khóa", t, flags=_re.I)
+    t = _re.sub(r"(?:^|(?<=\s))gách(?=\s|$|[.,!?])", "ngách", t, flags=_re.I)
+    t = _re.sub(r"\b([Nn])n+gách\b", lambda m: ("Ngách" if m.group(1).isupper() else "ngách"), t)
+    t = _re.sub(r"\b([Tt]ừ\s+khóa)a+\b", r"\1", t)
+    return t.strip()
 
 
 def silent_share(start, end, regions):
@@ -174,6 +281,31 @@ def overlap(a0, a1, b0, b1):
     return max(0.0, min(a1, b1) - max(a0, b0))
 
 
+def _split_long_seg(s, max_dur=13.5):
+    s0, s1 = float(s["start"]), float(s["end"])
+    txt = (s.get("text") or "").strip()
+    dur = s1 - s0
+    if dur < 14.0:
+        return [{"start": round(s0, 3), "end": round(s1, 3), "text": txt}]
+    words = txt.split()
+    n_parts = max(2, int(dur // max_dur) + 1)
+    if len(words) < n_parts:
+        n_parts = max(1, len(words))
+    if n_parts <= 1:
+        return [{"start": round(s0, 3), "end": round(s0 + 13.5, 3), "text": txt}]
+    out = []
+    step_t = dur / n_parts
+    for i in range(n_parts):
+        p0 = round(s0 + i * step_t, 3)
+        p1 = round(s1 if i == n_parts - 1 else (s0 + (i + 1) * step_t), 3)
+        w0 = int(round(i * len(words) / n_parts))
+        w1 = int(round((i + 1) * len(words) / n_parts))
+        part_txt = " ".join(words[w0:w1]).strip()
+        if part_txt and p1 > p0 + 0.1:
+            out.append({"start": p0, "end": p1, "text": part_txt})
+    return out
+
+
 def dedup_and_clean(segs):
     segs = sorted(segs, key=lambda s: (float(s["start"]), -float(s["end"])))
     cleaned = []
@@ -199,7 +331,35 @@ def dedup_and_clean(segs):
     for i in range(len(cleaned) - 1):
         if cleaned[i]["end"] > cleaned[i + 1]["start"]:
             cleaned[i]["end"] = cleaned[i + 1]["start"]
-    return [c for c in cleaned if c["end"] > c["start"] + 0.1]
+    cleaned = [c for c in cleaned if c["end"] > c["start"] + 0.1]
+
+    # Split any segment >= 14.0s into proportional sub-segments < 14.0s
+    split_list = []
+    for c in cleaned:
+        split_list.extend(_split_long_seg(c))
+
+    # Deduplicate consecutive exact or near-duplicate segments
+    deduped = []
+    for c in split_list:
+        if deduped:
+            prev = deduped[-1]
+            if c["text"].strip() == prev["text"].strip():
+                continue
+            cur_n = _norm_cmp(c["text"])
+            prev_n = _norm_cmp(prev["text"])
+            min_len = min(len(cur_n), len(prev_n))
+            max_len = max(len(cur_n), len(prev_n))
+            cp = 0
+            while cp < min_len and cur_n[cp] == prev_n[cp]:
+                cp += 1
+            short_dur = min(c["end"] - c["start"], prev["end"] - prev["start"])
+            if max_len >= 18 and (cp / max_len) >= 0.65 and short_dur < 0.6:
+                if len(c["text"]) > len(prev["text"]):
+                    prev["text"] = c["text"]
+                prev["end"] = max(prev["end"], c["end"])
+                continue
+        deduped.append(c)
+    return deduped
 
 
 def transcribe_clean(sku, key_mgr, chunk_size=180.0):
@@ -506,22 +666,14 @@ def patch_existing(sku, key_mgr):
 
     good_segs = dedup_and_clean(good_segs)
 
-    # Bước kiểm tra cuối: nếu vẫn còn bất kỳ khoảng trống >= 10.0s không im lặng (do nhạc nền / thao tác màn hình không lời), điền chú thích <= 8.0s
+    # Bước kiểm tra cuối: theo H2DEV-SCAR-033, TUYỆT ĐỐI KHÔNG chèn nhãn giả "[Thao tác thực hành...]".
+    # Mọi khoảng trống >= 10.0s không im lặng còn lại phải được bóc tách âm thanh thật qua fill_transcript_gaps.py.
     final_segs = []
     prev_end = 0.0
     for s in good_segs + [{"start": total, "end": total, "text": ""}]:
         gap = float(s["start"]) - prev_end
         if gap >= 10.0 and silent_share(prev_end, float(s["start"]), regions) < 0.8:
-            cur = prev_end
-            while cur < float(s["start"]) - 0.2:
-                nxt = min(float(s["start"]), cur + 8.0)
-                if nxt - cur >= 1.5:
-                    final_segs.append({
-                        "start": round(cur, 3),
-                        "end": round(nxt, 3),
-                        "text": "[Thao tác thực hành trực tiếp trên màn hình máy tính và kiểm tra kết quả thực tế theo bài giảng]"
-                    })
-                cur = nxt
+            print(f"[{sku}] [WARN] Còn khoảng trống tiếng nói {gap:.1f}s ({prev_end:.1f}s -> {float(s['start']):.1f}s) — cần chạy fill_transcript_gaps.py để bóc âm thanh thật!")
         if s["text"]:
             dur = float(s["end"]) - float(s["start"])
             sl = silent_share(float(s["start"]), float(s["end"]), regions)

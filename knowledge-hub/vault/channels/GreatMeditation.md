@@ -1,12 +1,12 @@
 ---
 handle: "@GreatMeditation"
-name: "Great Meditation (Kênh hình mẫu ngách Thiền tập - Guided Meditation)"
+name: "@GreatMeditation"
 url: "https://www.youtube.com/@GreatMeditation"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @GreatMeditation (Great Meditation (Kênh hình mẫu ngách Thiền tập - Guided Meditation))
+# Kênh Đối Thủ / Kênh Mẫu: @GreatMeditation (@GreatMeditation)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@GreatMeditation](https://www.youtube.com/@GreatMeditation)

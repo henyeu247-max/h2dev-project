@@ -6,7 +6,7 @@ module_id: "HUAN-M03"
 module_title: "3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY"
 seq: "18"
 niche: "Chiến Lược Jetlag & Đóng Đinh Motif từ khóa Triệu View"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "28:04"
 published_at: "2026-09-01"
 toolsCount: 5
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-5c20aa&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M03|HUAN-M03 — 3. TẠO RA VIDEO VÀ CHIẾN LƯỢC CHỦ ĐỘNG ĐƯA VIDEO LÊN TRIỆU VIEW - KHÔNG CẦU MAY]] (Bài `#18`)  
 > - **Ngách nội dung (Niche):** [[niches/chien-luoc-jetlag-dong-dinh-motif-tu-khoa-trieu-view|Chiến Lược Jetlag & Đóng Đinh Motif từ khóa Triệu View]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `28:04` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `28:04` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-5c20aa&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-5c20aa/README.md)
 
 ---
@@ -66,7 +66,7 @@ player_url: "/player.html?sku=VIDEO-5c20aa&track=huan"
 - [[channels/BaTanVlog|@BaTanVlog]]
 - [[channels/PhuongHuuDuong|@PhuongHuuDuong]]
 - [[channels/KinhLupTV|@KinhLupTV]]
-- [[channels/Biquyetthanhcong|@Biquyetthanhcong]] *(DIE)*
+- [[channels/Biquyetthanhcong|@Biquyetthanhcong]]
 - [[channels/Web5Ngay|@Web5Ngay]]
 - [[channels/HoangManhCuongMarketing|@HoangManhCuongMarketing]]
 - [[channels/thaipham|@thaipham]]

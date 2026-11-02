@@ -1,17 +1,17 @@
 ---
 tool_slug: "gmail"
 tool_name: "Gmail"
-videos_count: 12
+videos_count: 13
 tracks: ["h2dev", "huan", "dgmd"]
 ---
 
 # Công Cụ Thực Chiến: Gmail
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **Số bài giảng sử dụng công cụ này:** `12` video
+- **Số bài giảng sử dụng công cụ này:** `13` video
 - **Tracks:** `H2DEV`, `HUAN`, `DGMD`
 
-## Danh Sách Bài Giảng Ứng Dụng Gmail (12)
+## Danh Sách Bài Giảng Ứng Dụng Gmail (13)
 - [[videos/VIDEO-5c438a|VIDEO-5c438a — Giải thích và hướng dẫn đưa ra cách chọn mail (mail mới + mail cổ), chọn kênh (kênh mới + kênh cổ) - (tút chọn để làm chắc chắn có độ trust, cắn view)]] (`H2DEV`)
 - [[videos/VIDEO-943781|VIDEO-943781 — Mẹo, tips phân chia nuôi các mail + kênh trên cùng 1 thiết bị mà không bao giờ bị dính spam (mà không cần phải fake vpn hay nuôi trên proxy)]] (`H2DEV`)
 - [[videos/VIDEO-3e5a21|VIDEO-3e5a21 — HƯỚNG DẪN ADD QUYỀN QUẢN LÝ KÊNH VÀ MAIL KHÔI PHỤC TRÁNH BỊ GOOGLE QUÉT LỖI SPAM HÀNG LOẠT - DIE KÊNH HÀNG LOẠT]] (`H2DEV`)
@@ -23,4 +23,5 @@ tracks: ["h2dev", "huan", "dgmd"]
 - [[videos/VIDEO-f83f59|VIDEO-f83f59 — 9. SOP QUY TRÌNH TẠO EMAIL va ADSENSE]] (`HUAN`)
 - [[videos/VIDEO-e706d3|VIDEO-e706d3 — Khắc phục lỗi khi tạo tài khoản adsense ]] (`DGMD`)
 - [[videos/VIDEO-38145b|VIDEO-38145b — Hướng dẫn kháng kênh youtube bị xóa]] (`DGMD`)
+- [[videos/VIDEO-583a09|VIDEO-583a09 — Khắc phục tình trạng 0 view để tạo kênh mới ]] (`DGMD`)
 - [[videos/VIDEO-36880b|VIDEO-36880b — Cách Tạo 1 Kênh Youtube Chuẩn Chủ Đề Và Danh Mục]] (`DGMD`)

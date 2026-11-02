@@ -41,6 +41,13 @@ function runWorkerSync(opts = {}) {
     silent: true
   });
 
+  if (rebuildMaster) {
+    try {
+      const { applyDbRules } = require('./sync-counts');
+      applyDbRules({ write: true });
+    } catch (_) {}
+  }
+
   return { ok: true, stats, rebuildMaster };
 }
 

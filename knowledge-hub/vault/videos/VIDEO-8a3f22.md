@@ -6,7 +6,7 @@ module_id: "HUAN-M02"
 module_title: "2. TẠO KÊNH, CHĂM SÓC KÊNH - BƯỚC ĐẦU THẤU HIỂU YOUTUBE"
 seq: "10"
 niche: "Chiến Lược Dream 100 & Nghiên Cứu Đối Thủ"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "10:09"
 published_at: "2026-09-01"
 toolsCount: 9
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-8a3f22&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M02|HUAN-M02 — 2. TẠO KÊNH, CHĂM SÓC KÊNH - BƯỚC ĐẦU THẤU HIỂU YOUTUBE]] (Bài `#10`)  
 > - **Ngách nội dung (Niche):** [[niches/chien-luoc-dream-100-nghien-cuu-doi-thu|Chiến Lược Dream 100 & Nghiên Cứu Đối Thủ]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `10:09` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `10:09` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-8a3f22&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-8a3f22/README.md)
 
 ---

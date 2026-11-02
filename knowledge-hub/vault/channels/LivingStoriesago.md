@@ -1,12 +1,12 @@
 ---
 handle: "@LivingStoriesago"
-name: "Living Stories"
+name: "@LivingStoriesago"
 url: "https://www.youtube.com/@LivingStoriesago"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @LivingStoriesago (Living Stories)
+# Kênh Đối Thủ / Kênh Mẫu: @LivingStoriesago (@LivingStoriesago)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@LivingStoriesago](https://www.youtube.com/@LivingStoriesago)

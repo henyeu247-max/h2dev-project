@@ -6,7 +6,7 @@ module_id: "DGMD-M02"
 module_title: "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN"
 seq: "02"
 niche: "Chiến Lược Xây Kênh 100K Sub & Bình Thẩm Shorts Fair Use"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại", "📘 Facebook"]
+markets: ["🌍 View Ngoại", "📘 Facebook"]
 duration: "28:02"
 published_at: "2026-10-12"
 toolsCount: 10
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-f2a5c1&track=dgmd"
 # VIDEO-f2a5c1 — Quy Trình Xây Kênh 100.000 Subscribe 
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M02|DGMD-M02 — BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/chien-luoc-xay-kenh-100k-sub-binh-tham-shorts-fair-use|Chiến Lược Xây Kênh 100K Sub & Bình Thẩm Shorts Fair Use]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại · 📘 Facebook | **Thời lượng:** `28:02` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại · 📘 Facebook | **Thời lượng:** `28:02` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-f2a5c1&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-f2a5c1/README.md)
 
 ---

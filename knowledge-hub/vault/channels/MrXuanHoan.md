@@ -1,12 +1,12 @@
 ---
 handle: "@MrXuanHoan"
-name: "Mr. Xuân Hoàn"
+name: "@MrXuanHoan"
 url: "https://www.youtube.com/@MrXuanHoan"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @MrXuanHoan (Mr. Xuân Hoàn)
+# Kênh Đối Thủ / Kênh Mẫu: @MrXuanHoan (@MrXuanHoan)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@MrXuanHoan](https://www.youtube.com/@MrXuanHoan)

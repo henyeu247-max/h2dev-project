@@ -1,0 +1,599 @@
+1
+00:00:00,000 --> 00:00:11,220
+Ok, chào các em yêu của thầy. Hôm nay tao sẽ tiếp tục lên một video để dạy chúng mày làm phim AI và sẽ làm như thế nào, kiếm tiền như thế nào.
+
+2
+00:00:11,840 --> 00:00:18,860
+Chúng mày ở đây, chúng mày thấy kênh của thầy đúng không? Và chúng mày thấy các thước phim về video AI như thế này theo từng tập đúng không?
+
+3
+00:00:19,240 --> 00:00:29,780
+Và kênh này không bật kiếm tiền, vậy thì tao kiếm tiền ở đâu? Hiểu chưa? Không phải gói đăng ký và tao sẽ kiếm tiền từ đối tác liên kết.
+
+4
+00:00:30,000 --> 00:00:39,093
+Và fanpage này cũng không kiếm tiền từ nội dung. Hiểu chưa? Và chúng mày hãy xem đây. Đây là Shopee. Đấy. Chúng ta cầm điện thoại tấm đứt cho chúng
+
+5
+00:00:39,093 --> 00:00:48,187
+mày xem. Thì chúng mày nhìn thấy là các thước phim như thế này đúng không? Đấy. Cái giá của sự phản bội này được 74.000 cầm về. Và những
+
+6
+00:00:48,187 --> 00:00:57,280
+cái thước phim sau ví dụ như là top sản phẩm bán chảy là doanh số hàng đầu để. Đấy. Các thước phim như thế này. Chúng mày nhìn thấy không?
+
+7
+00:00:58,000 --> 00:01:06,280
+Mỗi tập nó chỉ rất ngắn, ví dụ như cái tập 2 này nó chỉ mất tầm 1 phút 30 giây
+
+8
+00:01:06,280 --> 00:01:11,280
+À 3 phút 30 giây để chúng mày sản xuất được cái phim này, hiểu chưa?
+
+9
+00:01:11,280 --> 00:01:17,280
+Và làm như thế nào cho nó hiệu quả thì tao sẽ dạy chúng mày sản xuất phim AI
+
+10
+00:01:17,280 --> 00:01:22,140
+Đây là quy trình để chúng mình áp dụng vào save new fanpage cho tao
+
+11
+00:01:22,140 --> 00:01:25,720
+Và có thể save kênh tiktok cũng như save kênh YouTube
+
+12
+00:01:25,720 --> 00:01:28,021
+Ok đây là doanh số nha
+
+13
+00:01:28,021 --> 00:01:33,201
+Và hôm nay chúng ta sẽ đến với một cái bài học là xây dựng Firm AI.
+
+14
+00:01:33,201 --> 00:01:39,641
+Vào đầu thì chúng mày sẽ cần cho tao một cái master from. Ở đây tao đã nghiệt kê rồi.
+
+15
+00:01:39,641 --> 00:01:48,641
+thì Master From chúng mày sẽ lấy ở đâu thì chúng mày hãy truy cập vào cho tao là www.đạigiamangvet.com
+
+16
+00:01:48,641 --> 00:02:00,641
+đấy thì chúng mày nhấn luôn vào học ngay này thì trong cái website này của thầy hiểu không thì các em nhấn vào bài mới cập nhập nha thì thầy sẽ tăng lên ở trên này
+
+17
+00:02:00,641 --> 00:02:07,721
+Thì ở trong này có những cái khóa nào đơn giản chúng mày có thể nâng cấp gói hiểu không? Rất ít
+
+18
+00:02:07,721 --> 00:02:14,801
+tiền, chỉ vài trăm nghìn thôi. Nhưng cái gói PMI này thì nó sẽ chọn bộ là nó có mấy video luôn.
+
+19
+00:02:15,541 --> 00:02:22,981
+Ok, thì chúng mày nhấn vào cho tao ví dụ như là trong cái bài mà quy trình ấy thì nó sẽ có cái phần gì ạ?
+
+20
+00:02:22,981 --> 00:02:30,421
+Thì trong cái quy trình thì nó sẽ có phần mô tả ở đây nhé các em nhé. Các em có thể nhấn vào phần mô
+
+21
+00:02:30,421 --> 00:02:37,861
+tả đây là thì thầy sẽ có cái đường link master from thì các em chỉ cần dám vào là nó sẽ ra cái master from.
+
+22
+00:02:38,050 --> 00:02:49,810
+Cũng giống như cái MasterFront này vậy. Ok. Thì đầu tiên, các em chỉ cần sử dụng cho thầy một con ChatGP, con Google Flow và con CắtCắt.
+
+23
+00:02:50,810 --> 00:02:59,270
+Thì làm như thế nào? Ở đây, các em nhấn Ctrl A, toàn bộ cái form này nha. Nó có gồm 19 trang nha. Các em yêu của thầy nha.
+
+24
+00:02:59,270 --> 00:03:05,330
+Thì các em nhấn sao chép này. Sau đó dựa vào chính thông minh của các em nữa.
+
+25
+00:03:05,330 --> 00:03:12,110
+Đây là một cái về lốt. Các em dán ra đây cho thầy.
+
+26
+00:03:13,270 --> 00:03:17,750
+Sau khi các em dán ra xong thì các em muốn xây dựng bao nhiêu bộ phim.
+
+27
+00:03:18,390 --> 00:03:21,990
+Các em có thể xây dựng 10 bộ. 10 bộ nó sẽ không bao giờ giống nhau nhé.
+
+28
+00:03:22,210 --> 00:03:24,510
+Tại vì cấu trục ở trong đây nó đã khác nhau hoàn toàn.
+
+29
+00:03:25,330 --> 00:03:28,270
+Và mỗi bộ phim có bao nhiêu tập.
+
+30
+00:03:28,270 --> 00:03:38,210
+Được không? Ví dụ như các em làm 5 tập đi, cũng được. Và mỗi thời nượng của mỗi tập là bao nhiêu giây? Các em thể để 90 giây, 60 giây cũng được nhé.
+
+31
+00:03:39,000 --> 00:03:47,470
+Không nhất thiết là các em phải để là 90 giây. Thời nượng mỗi clip này ở trong con flow ấy thì nó sẽ tạo được 8 giây, 10 giây. Đúng không?
+
+32
+00:03:47,470 --> 00:03:53,350
+đúng không thì các em thể để số 10 nhưng mà thầy sẽ bảo anh em là sẽ để cho thầy là số 6 thôi là ok
+
+33
+00:03:53,350 --> 00:04:01,850
+đấy và sau đó thì khi mà thấy thay đổi số 10 hoặc số 5 tập phim này các em nhấn Ctrl A nhé
+
+34
+00:04:01,850 --> 00:04:07,470
+Ctrl C nhé sau đó là gì ạ Các em sẽ dán vào cái cửa sổ của
+
+35
+00:04:07,470 --> 00:04:09,470
+chắc dvd cho thầy sáng rồi
+
+36
+00:04:09,470 --> 00:04:12,470
+và bây giờ quy trình sẽ là gì ạ
+
+37
+00:04:12,470 --> 00:04:14,470
+quy trình sẽ là tự động
+
+38
+00:04:14,470 --> 00:04:15,470
+hiểu chưa
+
+39
+00:04:15,470 --> 00:04:18,470
+các em sẽ biết là nó tự làm hết cho các em
+
+40
+00:04:18,470 --> 00:04:21,470
+các em chỉ copy paste
+
+41
+00:04:21,470 --> 00:04:23,470
+đấy là cái tư duy
+
+42
+00:04:23,470 --> 00:04:24,470
+hiểu chưa
+
+43
+00:04:24,470 --> 00:04:25,516
+tư duy là gì ạ
+
+44
+00:04:25,516 --> 00:04:36,276
+Tư duy của thầy giáo đại gia mang dép. Đây là tập 1 này. Nó sẽ tạo ra cho các em làm mẹ chồng đổ an cho làng dâu 500 củ.
+
+45
+00:04:37,236 --> 00:04:45,216
+Thì các em sẽ tạo như thế nào? Và thầy sẽ bảo làm như thế nào cho nó nhanh để cho nó chạy xong cái này nha. Các em yêu của thầy nha.
+
+46
+00:04:45,456 --> 00:04:52,956
+Đây nha, lần đầu tiên thì nó sẽ tạo cho các em cái gì ạ? Là cấu trúc của bộ phim của các em đúng không?
+
+47
+00:04:52,956 --> 00:05:01,116
+Thì ở trong bộ phim này có gì ạ? Có 5 nhân vật gồm bà Vân, Ngọc Mai, Minh Đức, Thu Hương và Khánh Linh ạ.
+
+48
+00:05:01,316 --> 00:05:07,356
+Đấy thì nó sẽ ra cho các em 5 nhân vật như thế này này. Không phải chatGP nào nó hiện bình ảnh đâu nha các em nha.
+
+49
+00:05:07,356 --> 00:05:15,136
+Các em phải dùng bản flirt nha. Thì sau khi ra xong 5 cái này thì các em nhìn thấy đây nó sẽ ra cho các em là các form.
+
+50
+00:05:15,616 --> 00:05:20,236
+Cái form này sẽ để làm gì ạ? Để tạo ảnh tham chiếu nha các em yêu của thầy nha.
+
+51
+00:05:20,236 --> 00:05:22,856
+Khi mà đã có platform tham chiếu này
+
+52
+00:05:22,950 --> 00:05:32,157
+Thì bây giờ nó sẽ làm gì ạ? Dựng lên các tập như thế này. Đầu tiên là làng dâu bị uang. Các em sẽ bắt đầu sản xuất theo từng tập nhé.
+
+53
+00:05:32,157 --> 00:05:41,363
+Nhấn sao chép ở dưới đây hoặc là bắt đầu sản xuất tầm 1 nhé. Các em có thể ghi nhé. Đấy. Thì sau khi dán cái sản xuất tầm 1 đây này, các
+
+54
+00:05:41,363 --> 00:05:50,570
+em chỉ cần ghi là sản xuất tập VDR001 là được hoặc là sản xuất tầm 1 là được. Đấy. Thì bây giờ trong cái thời gian nó đang tạo cái gì ạ?
+
+55
+00:05:50,570 --> 00:06:00,490
+tạo cho các em là cái tập 1 của form đúng không thì các em sẽ làm gì ok các em sẽ nên tạo cho thầy là
+
+56
+00:06:00,490 --> 00:06:10,410
+ảnh tham chiếu đây này đầu tiên là ảnh của nhân vật thu hương nhé các em nhấn sao chép nhé sau đó sang Google flow các em
+
+57
+00:06:10,410 --> 00:06:20,330
+nhấn tạo dự án mới này đấy sau khi nhấn tạo dự án mới đầu tiên thì các em phải nhớ cho thầy cái bức này nhé
+
+58
+00:06:21,000 --> 00:06:30,010
+Các em chọn model tạo ảnh là Lalo Balala, các em chọn tỉ lệ tạo ảnh là 16.9, các em dán vào đây, Camson V.
+
+59
+00:06:30,010 --> 00:06:35,330
+Tiếp theo là cứ như thế các em tạo nha, CTR2 này các em dán vào đây.
+
+60
+00:06:35,330 --> 00:06:40,990
+Đấy, nhân vật thứ 3 này, các em yêu thầy nha.
+
+61
+00:06:40,990 --> 00:06:45,410
+Các em phải làm cho từng trình cựu
+
+62
+00:06:45,410 --> 00:06:47,610
+Nhân vật thứ tư là
+
+63
+00:06:47,610 --> 00:06:50,050
+Quá dễ đúng không em
+
+64
+00:06:50,050 --> 00:06:52,070
+Chỉ có là gì ạ
+
+65
+00:06:52,070 --> 00:06:55,450
+Là sao chép và copy tôi
+
+66
+00:06:55,450 --> 00:06:56,450
+Các em yêu của thầy
+
+67
+00:06:56,450 --> 00:06:57,670
+Đấy
+
+68
+00:06:57,670 --> 00:07:00,990
+Thì sau khi đã tạo xong 5
+
+69
+00:07:00,990 --> 00:07:02,790
+cái form như thế này rồi đúng không
+
+70
+00:07:02,790 --> 00:07:05,350
+thì các em yêu của thầy sẽ làm gì ạ
+
+71
+00:07:05,350 --> 00:07:08,410
+bây giờ là tạo từng tầm một
+
+72
+00:07:08,410 --> 00:07:09,430
+đây này
+
+73
+00:07:09,430 --> 00:07:11,972
+thì khi mà lúc nãy là sản xuất tầm một đúng không
+
+74
+00:07:11,972 --> 00:07:21,312
+thì các em sẽ làm gì? Ở đây nó có form như thế này nha các em nha. Các em để ý cho thầy nha. Ví dụ, ở trong cái form này
+
+75
+00:07:21,312 --> 00:07:30,652
+nó sẽ cần cái gì ạ? Thầy sẽ phóng to ra cho các em nha. Nó sẽ có ảnh tham chiếu đầu tiên là gì ạ? Là CHR03 là ảnh tham
+
+76
+00:07:30,652 --> 00:07:39,992
+chiếu nhân vật thứ 3. Và ảnh tham chiếu nhân vật thứ nhất đúng không? Thì các em copy vào đây. Cực kỳ nhanh nha. 3 này. Đấy. Và thêm 1 này.
+
+77
+00:07:39,992 --> 00:07:49,859
+Ở đây thì thầy sẽ sản xuất ở phần video nha. Các em chọn cho thầy là 9.16 nha. Và mỗi cảnh là 6 giây này. Số được 1
+
+78
+00:07:49,859 --> 00:07:59,725
+thôi nha. Các em dám vào đây. Đó. Và tiếp theo là gì ạ? Cảnh thứ 2 là 1 và 3. Thì các em sẽ gì ạ? Trở lại
+
+79
+00:07:59,725 --> 00:08:09,592
+cái cảnh này cũng được. Thay vì là nó có 2 nhân vật 1 và 3. Các em dám vào đây. Đấy. Tiếp theo là cảnh thứ 4 này.
+
+80
+00:08:11,000 --> 00:08:22,760
+Cảnh thứ 5 là gì ạ? 3 và 2. Cứ như thế, các em tạo cho thầy hiểu không? Cảnh thứ 4 này là 2 và 3. Hiểu không?
+
+81
+00:08:24,600 --> 00:08:37,540
+Thì các em sẽ chọn là gì? 2 này và 3 này. Các em dán vào cho thầy. Ok chưa? Tiếp theo là cảnh thứ 5 này. Lại là 3 và 2 này. Các em yêu của thầy này. Đấy.
+
+82
+00:08:37,540 --> 00:08:47,280
+Các em lại chọn tại cái cạnh đấy 3 và 2 là được nha em dám vào và tiếp theo là gì ạ 1 và 3
+
+83
+00:08:47,280 --> 00:08:57,020
+thì các em lại chọn là gì ạ nhân vật thứ nhất này và nhân vật thứ 3 nhé các em yêu của thầy nhé dám vào
+
+84
+00:08:57,020 --> 00:09:06,760
+đấy thì nhân vật thứ 7 là gì ạ là 4 và 1 đúng không thì các em sẽ chọn là 4 này và 1 này
+
+85
+00:09:07,000 --> 00:09:10,060
+Các em dám vào như thế này
+
+86
+00:09:10,060 --> 00:09:15,460
+Nhân vật cảnh thứ 8 là gì ạ
+
+87
+00:09:15,460 --> 00:09:16,760
+1 và 4
+
+88
+00:09:16,760 --> 00:09:18,760
+Các em lại thêm này 1 này
+
+89
+00:09:18,760 --> 00:09:20,260
+Lại 4 này
+
+90
+00:09:20,260 --> 00:09:21,760
+Nếu mà thêm từ từ hiểu không
+
+91
+00:09:21,760 --> 00:09:24,760
+Không là nếu mà các em nhanh thì cực kì này nhanh
+
+92
+00:09:24,760 --> 00:09:26,760
+Các em dùng cho thầy 2 màn
+
+93
+00:09:26,760 --> 00:09:34,820
+5 là 4 và 1 thì có thể sử dụng lại cái con này 4 này 1 này dám vào cảnh thứ 10 này là 3 và 4 này
+
+94
+00:09:34,820 --> 00:09:40,346
+3 này 4 này bắt đầu mẹ chồng đã chiến con dâu chưa
+
+95
+00:09:40,346 --> 00:09:48,026
+Cảnh thứ 2 và 1, chọn cho thầy là cảnh 2 và 1, nhân vật 2
+
+96
+00:09:48,026 --> 00:09:55,706
+và nhân vật 1, nhân vật 2 này, các em dán vào đây cho thầy.
+
+97
+00:09:57,606 --> 00:10:03,366
+Với đây, tiếp theo cảnh 12 là 1 và 2 tiếp nha, các em lại trở lại cái cảnh đấy.
+
+98
+00:10:05,166 --> 00:10:07,506
+Cảnh thứ 13 là 3 và 1 này.
+
+99
+00:10:07,506 --> 00:10:17,499
+Các em cứ chọn cho thầy nâng lượt, hiểu không? Kiểu đứng số thú vị, 3 và 1, 15 này, 14 này, là 1 và
+
+100
+00:10:17,499 --> 00:10:27,493
+3 này, đấy thì lại dùng này, cạnh này, 1 và 3 này, 1 và 3 là nhân vật bà mẹ chồng này, đúng không?
+
+101
+00:10:27,493 --> 00:10:37,486
+Đây mẹ chồng đổi con dâu, lấy 500 củ, cảnh thứ 15 là 1 và 4 này, 1 và 4 này, 1 này, 1 này,
+
+102
+00:10:37,506 --> 00:10:48,566
+4 này, 4 này, đấy, thì sau khi tạo xong như thế này nha, trước tiên đến với tập edit, thì trong khi edit thì các em dám sản xuất tập 2,
+
+103
+00:10:48,900 --> 00:10:56,640
+của bộ phim thứ nhất nghĩa là bộ phim này có 5 tập thì các em phải tư duy là bộ phim này có 5 tập nha các em nha
+
+104
+00:10:56,640 --> 00:11:04,800
+người chồng tin vợ này sau khi đã tạo xong 15 cảnh như thế này nha các em tải về thầy nha thầy cho các em xem
+
+105
+00:11:04,800 --> 00:11:14,340
+cái gì ạ một siêu phẩm mang tính chất là sản xuất phim của thầy giáo gì ạ thầy giáo đại gia mang dép các em nhìn thấy
+
+106
+00:11:14,340 --> 00:11:24,333
+Lâu nhất quán từ bối cảnh, từ bộ phim nhé, các em yêu của thầy nhé. Thầy gọi là gì? Thầy quá là đậm tấp và quá là đẹp dai, nhỉ không? Khi
+
+107
+00:11:24,333 --> 00:11:34,327
+đã đưa ra cho các em quy trình, các em chỉ cần việc sao chép và làm video thôi. Mỗi video tầm 1 phút như này, các em chỉ tầm 3 phút để các
+
+108
+00:11:34,327 --> 00:11:44,320
+em làm nhé. Điều chưa? Ok. Thì đây là các cắt này. Sau đó là các em nhấn nhập nhé. Đấy. Thì đây là phim AI nha. Các em yêu của thầy nhé.
+
+109
+00:11:44,340 --> 00:11:55,470
+Đó, các em nhấn OK nè. Bây giờ là gì ạ? Các em sẽ được chọn là mới muộn nhất đến sớm nhất nha các em yêu thầy nha. Cái
+
+110
+00:11:56,000 --> 00:12:06,600
+cảnh này là cảnh 1 nè. Còn những cái cảnh sau là đây. Thầy sẽ kéo vào. Bây giờ các em xem một bộ phim cho thầy nha. Bộ phim này.
+
+111
+00:12:06,600 --> 00:12:08,600
+Nửa tỏi của tôi biến mất
+
+112
+00:12:08,900 --> 00:12:09,960
+Hương
+
+113
+00:12:09,960 --> 00:12:11,900
+Cô còn định chối đến bao giờ
+
+114
+00:12:11,900 --> 00:12:14,000
+Mẹ nói gì vậy
+
+115
+00:12:14,000 --> 00:12:16,700
+Con chưa từng đụng đến số tiền đó
+
+116
+00:12:16,700 --> 00:12:19,840
+Tiền để trong tủ khóa kín
+
+117
+00:12:19,840 --> 00:12:21,340
+Ngoài cô ra
+
+118
+00:12:21,340 --> 00:12:22,620
+Ai dám lấy
+
+119
+00:12:22,620 --> 00:12:23,861
+Mẹ
+
+120
+00:12:23,861 --> 00:12:28,541
+Mẹ, bình tĩnh đã. Chuyện lớn thế này phải kiểm tra cho rõ.
+
+121
+00:12:29,901 --> 00:12:34,461
+Đây, chìa khóa tủ đây. Sao nó lại nằm trong túi của Hương?
+
+122
+00:12:34,461 --> 00:12:40,761
+Hương, con không biết chìa khóa đó ở đâu ra. Có người đang gài bẫy con.
+
+123
+00:12:41,921 --> 00:12:46,541
+Chị Hương, em cũng muốn tin chị, nhưng mọi chuyện khó hiểu quá.
+
+124
+00:12:46,821 --> 00:12:53,321
+Đấy, thấy chưa? Các em nghe chưa? Ở đây thì các em có thể biên tập nha. Ví dụ như cái cảnh sau này, các em cắt này.
+
+125
+00:12:53,641 --> 00:13:03,241
+Đấy, cắt cho thầy nha. Ví dụ như những cái cảnh mà tại sao phải cắt? Các em nhìn thấy cái sống của cái đến đoạn nói không? Ví dụ như từ đoạn này đến đoạn này đúng không? Các em nhìn ra.
+
+126
+00:13:03,241 --> 00:13:07,341
+Chị hỏi thế là ý gì? Em đâu có liên quan đến chuyện tiền bạc?
+
+127
+00:13:07,341 --> 00:13:12,441
+Đấy thì các em cắt cái đoạn cửa đi. Nếu các em không cắt cũng được, không vấn đề gì cả.
+
+128
+00:13:13,341 --> 00:13:20,701
+Sau cái video này nha, các em nhấn ở cuối cho thầy là văn bản này, thêm văn bản này. Ví dụ như các em ghi là hết tập 1.
+
+129
+00:13:22,041 --> 00:13:25,681
+Và gì ạ? Và chọn cho thầy là hệ thống chữ này Amton nha.
+
+130
+00:13:25,941 --> 00:13:30,361
+Đấy thì các em cuối cùng là các em kéo thanh trắng ở dưới này nhấn O.
+
+131
+00:13:30,361 --> 00:13:44,201
+O là điểm ra, ví dụ như các em búng xuất đến đây không? Các em nhấn O là xuất ra là ok. Thì các em xuất cho thầy cái bộ tập phim này. Thì thường thì ở trong cái cấu trúc phim ấy thì nó đã có từng tầm 1. Đây này.
+
+132
+00:13:44,350 --> 00:13:54,283
+Ví dụ như tầm 1 nàng dâu bì vu an 500 củ đúng không? Thì các em nhấn vào tệ này các em xuất ra cho thầy là nàng dâu bì vu an 500 củ. Đấy rất
+
+133
+00:13:54,283 --> 00:14:04,217
+là nhanh đúng không? Và tiếp theo là gì ạ? Tiếp theo là tập 2 các em cứ làm cho thầy. Một tập nó sẽ có gì ạ? 5 bộ thì các em có thể đăng 6 video.
+
+134
+00:14:04,217 --> 00:14:14,150
+Đăng 6 tập trước xong rồi bắt đầu đăng 1 video full các em ghép vào là ok. Các em hiểu chưa? Đấy tập 2 này. Sau khi sản xuất tập 2 nó sẽ như này nhé.
+
+135
+00:14:14,350 --> 00:14:23,703
+Các em copy vẫn như thế nha, nó vẫn nhất quá nha. Ví dụ như 4 và 1, được chưa? 4 và 1 thì các em sẽ lựa chọn nhân vật
+
+136
+00:14:23,703 --> 00:14:33,057
+nào? Nhân vật 4 này. Và nhân vật 1. Đấy, các em lại dán vào đây. Nó cứ thế, các em làm đủ cho thầy 5 tập. Đấy là quy trình. Và
+
+137
+00:14:33,057 --> 00:14:42,410
+cứ tiếp theo như thế thôi. Còn tạo ảnh thăm nail như thế nào? Các em vào cho thầy nó chắc thì mở cho thầy một cái dự án mới lên.
+
+138
+00:14:42,410 --> 00:14:51,410
+Nghĩa là bộ phim này là bộ phim là mẹ chồng đàn dâu, mẹ chồng đổi cho con dâu ăn 500 củ
+
+139
+00:14:51,410 --> 00:15:02,410
+Thì chúng ta sẽ lấy cho tôi là 3 anh ngải, 3 nhân vật hoặc là 5 nhân vật anh em vất vả cũng được nha
+
+140
+00:15:02,410 --> 00:15:12,250
+tiếp thiết nha sao xem này đánh đây chúng ta sẽ tạo ảnh thumbnail sao chết này sao chết này
+
+141
+00:15:12,250 --> 00:15:22,410
+hãy tặng hãy tặng cho tôi một hình ảnh hình ảnh
+
+142
+00:15:22,410 --> 00:15:29,619
+bộ phim các em góp cho thấy kịch bản đây
+
+143
+00:15:29,619 --> 00:15:36,828
+nhẹ trồng đổ quan cho con dâu 5.3 gì ạ
+
+144
+00:15:36,828 --> 00:15:46,548
+tình hình ảnh, sắc, nét, thiết kế đơn giản, tình hình ảnh, sản, các em có thể ghi thêm ở sau cái này là
+
+145
+00:15:46,548 --> 00:15:56,268
+tập 1. Đấy, ok. Thì các em nhấn tặng cho thầy là bây giờ chúng ta sẽ có một tình hình ảnh thumbnail. Tình
+
+146
+00:15:56,268 --> 00:16:05,988
+hình ảnh là gì ạ? Mẹ chồng đổ an cho làng dâu 500 củ. Đấy là cái cách mà các em sẽ sản xuất.
+
+147
+00:16:05,988 --> 00:16:14,268
+Thầy sẽ update quy trình này trên website, các em hãy vào trong phần bố tả này để lấy masterclass để sản xuất nha.
+
+148
+00:16:15,408 --> 00:16:23,588
+Form cực kỳ chuẩn, các em có thể nhìn thấy không? Đây là một hình ảnh thumbnail, mẹ chồng đổ oan cho làng dâu 5 chấm củ.
+
+149
+00:16:24,288 --> 00:16:27,808
+Các em có thể đăng tải lên fanpage, sau đó gắn affiliate.
+
+150
+00:16:27,808 --> 00:16:39,028
+ở trong cái mục đám phim này thầy sẽ lên cho các em một video để gắn affiliate chuẩn nhất ở trên Shopee để để nhận tiền từ link kết. Ok, chào các em yêu của thầy.

@@ -1,12 +1,12 @@
 ---
 handle: "@Việt_Sử_Toàn_Thư"
-name: "Việt Sử Toàn Thư"
+name: "@Việt_Sử_Toàn_Thư"
 url: "https://www.youtube.com/@Vi%E1%BB%87t_S%E1%BB%AD_To%C3%A0n_Th%C6%B0"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Việt_Sử_Toàn_Thư (Việt Sử Toàn Thư)
+# Kênh Đối Thủ / Kênh Mẫu: @Việt_Sử_Toàn_Thư (@Việt_Sử_Toàn_Thư)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Vi%E1%BB%87t_S%E1%BB%AD_To%C3%A0n_Th%C6%B0](https://www.youtube.com/@Vi%E1%BB%87t_S%E1%BB%AD_To%C3%A0n_Th%C6%B0)

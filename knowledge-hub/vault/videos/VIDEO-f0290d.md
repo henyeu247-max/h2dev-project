@@ -6,7 +6,7 @@ module_id: "HUAN-M02"
 module_title: "2. TẠO KÊNH, CHĂM SÓC KÊNH - BƯỚC ĐẦU THẤU HIỂU YOUTUBE"
 seq: "09"
 niche: "Nghiên Cứu Ngách & Mô Hình Hóa Đối Thủ"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "06:06"
 published_at: "2026-09-01"
 toolsCount: 1
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-f0290d&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M02|HUAN-M02 — 2. TẠO KÊNH, CHĂM SÓC KÊNH - BƯỚC ĐẦU THẤU HIỂU YOUTUBE]] (Bài `#09`)  
 > - **Ngách nội dung (Niche):** [[niches/nghien-cuu-ngach-mo-hinh-hoa-doi-thu|Nghiên Cứu Ngách & Mô Hình Hóa Đối Thủ]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `06:06` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `06:06` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-f0290d&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-f0290d/README.md)
 
 ---

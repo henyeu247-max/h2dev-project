@@ -1,0 +1,70 @@
+---
+sku: "VIDEO-7112d8"
+title: "Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast"
+track: "dgmd"
+module_id: "DGMD-M11"
+module_title: "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE"
+seq: "04"
+niche: "Xây Dựng Thương Hiệu Cá Nhân & Kênh Podcast AI"
+markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
+duration: "14:07"
+published_at: "2026-11-01"
+toolsCount: 4
+channelsCount: 0
+docsCount: 5
+player_url: "/player.html?sku=VIDEO-7112d8&track=dgmd"
+---
+
+# VIDEO-7112d8 — Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast
+
+> **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
+> - **Module:** [[modules/DGMD-M11|DGMD-M11 — PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE]] (Bài `#04`)  
+> - **Ngách nội dung (Niche):** [[niches/xay-dung-thuong-hieu-ca-nhan-kenh-podcast-ai|Xây Dựng Thương Hiệu Cá Nhân & Kênh Podcast AI]]  
+> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `14:07` | **Ngày đăng:** `2026-11-01`  
+> - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-7112d8&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-7112d8/README.md)
+
+---
+
+## 1. Chủ Đề Thực Tế & Giá Trị Cốt Lõi (`Key Takeaways`)
+- **Chủ đề thực tế:** Quy Trình Xây Dựng Thương Hiệu Cá Nhân Bằng Kênh Podcast AI Không Lộ Mặt Với Master Prompt V1.0
+- Giải pháp hoàn hảo cho người ngại lộ diện trước ống kính: Sử dụng hình tượng nhân vật AI cố định ngồi chia sẻ triết lý sống, kinh doanh theo định dạng Podcast giúp xây dựng thương hiệu cá nhân có tỷ lệ chuyển đổi rất cao.
+- Quy tắc vàng định vị nhân vật thương hiệu: Bắt buộc giữ cố định một gương mặt, một bối cảnh phòng thu, một góc máy và một kiểu trang phục đặc trưng xuyên suốt toàn bộ các video trên kênh.
+- Bộ Master Prompt V1.0 Image-to-Video Podcast tự động chia đoạn văn bản tâm đắc bất kỳ thành các phân cảnh đúng 10 giây, giữ nguyên vẹn 100% từng chữ trong lời thoại mà không cắt ngang từ.
+- Khóa chặt thông số giọng nói cố định (tông giọng trầm ấm, nhịp độ điềm tĩnh, truyền cảm) trong mọi câu lệnh để người nghe nhận diện ngay chất giọng đặc trưng của kênh.
+- áo ghép là 1 này, áo grab là 2 này, áo sơ mi là 3 này. Ok, chào các em yêu của thầy. Hôm nay chúng ta sẽ đến với một cái quy
+
+## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
+- **Trọng tâm:** Quy trình 4 bước sản xuất video Podcast AI xây dựng thương hiệu cá nhân trong 5 phút bằng Master Prompt V1.0 trên ChatGPT.
+1. Chuẩn bị một hình ảnh chân dung nhân vật ngồi trước micro trong bối cảnh phòng thu ấm cúng làm hình ảnh định danh cố định cho toàn kênh.
+2. Sao chép bộ Master Prompt V1.0 Image-to-Video Podcast dán vào ChatGPT để thiết lập hệ thống tự động chia phân cảnh 10 giây và khóa giọng đọc.
+3. Tải hình ảnh nhân vật cố định lên ChatGPT kèm đoạn bài giảng hoặc triết lý trưởng thành cần truyền tải để hệ thống xuất chuỗi câu lệnh tạo video.
+4. Đưa ảnh nhân vật và từng câu lệnh 10 giây vào công cụ tạo video để xuất các đoạn clip nhân vật nói chuyện tự nhiên, sau đó nối lại và cắt bỏ khoảng trống dư thừa ở cuối.
+
+## 3. Cảnh Báo Rủi Ro & Lỗi Cần Tránh (`Avoid Flags`)
+- ⚠️ Thay đổi trang phục, bối cảnh hoặc góc máy liên tục qua từng ngày đăng bài khiến khán giả không ghi nhớ được hình ảnh nhận diện thương hiệu.
+- ⚠️ Để đoạn lời thoại trong một cảnh 10 giây quá dài hoặc ngắt câu giữa chừng làm tốc độ nói bị gấp gáp và mất đi thần thái điềm đạm của một chuyên gia Podcast.
+
+## 4. Liên Kết Công Cụ AI & Phần Mềm (`Tools Mentioned`)
+- [[tools/chatgpt|ChatGPT]]
+- [[tools/youtube|YouTube]]
+- [[tools/tiktok|TikTok]]
+- [[tools/facebook|Facebook]]
+
+## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)
+- *(Bài học tập trung vào tư duy/kỹ thuật nền tảng, không gắn kênh đối thủ cụ thể)*
+
+## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)
+- **Hồ sơ phân tích & SOP thực chiến: Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast (README.md):** `docs/VIDEO-7112d8/README.md`
+- **Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast (master_prompt.md):** `assets/docs-dgmd/VIDEO-7112d8/master_prompt.md`
+- **Tài Liệu Google Docs Gốc: Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast (doc_1.txt):** `assets/docs-dgmd/VIDEO-7112d8/doc_1.txt`
+- **Mô tả bài giảng gốc: Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast (description.txt):** `assets/docs-dgmd/VIDEO-7112d8/description.txt`
+- **Bản ghi phụ đề đầy đủ (Transcript .txt):** `video/VIDEO-7112d8/transcript.txt`
+
+## 7. Mốc Thời Gian Trọng Tâm (`Key Timestamps`)
+- `00:00` (0s) — Tư duy xây dựng thương hiệu cá nhân bằng kênh Podcast AI cho người ngại lộ mặt năm 2026
+- `00:51` (51s) — Phân tích các kênh và fanpage Podcast triệu lượt xem có tỷ lệ chuyển đổi khách hàng cao
+- `03:07` (187s) — Cách vận hành bộ Master Prompt V1.0 Image-to-Video Podcast khóa chính xác từng câu thoại
+- `05:23` (323s) — Nguyên tắc định hình phong cách cá nhân: Giữ cố định 1 bối cảnh, 1 góc máy và 1 trang phục đặc trưng
+- `07:45` (465s) — Thiết lập nhân vật đóng vai doanh nhân hoặc nhà triết học chia sẻ bài học trưởng thành sâu sắc
+- `10:09` (609s) — Chia lời thoại thành các phân cảnh 10 giây, đồng bộ giọng nói nam nữ nhất quán và cắt ghép hoàn thiện

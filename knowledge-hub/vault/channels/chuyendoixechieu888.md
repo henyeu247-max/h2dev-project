@@ -1,12 +1,12 @@
 ---
 handle: "@chuyendoixechieu888"
-name: "Chuyện Đời Tuổi Già"
+name: "@chuyendoixechieu888"
 url: "https://www.youtube.com/@chuyendoixechieu888"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @chuyendoixechieu888 (Chuyện Đời Tuổi Già)
+# Kênh Đối Thủ / Kênh Mẫu: @chuyendoixechieu888 (@chuyendoixechieu888)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@chuyendoixechieu888](https://www.youtube.com/@chuyendoixechieu888)

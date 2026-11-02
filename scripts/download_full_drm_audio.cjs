@@ -166,7 +166,7 @@ async function main() {
 
   const tempRemuxMp4 = path.join(WORK_DIR, `${SKU}_remuxed.mp4`);
   console.log('Bước 8: Ghép âm thanh giải mã sạch với video 1080p gốc...');
-  execSync(`"${FFMPEG}" -y -i "${targetMp4}" -i "${decAudioPath}" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k "${tempRemuxMp4}"`, { stdio: 'inherit' });
+  execSync(`"${FFMPEG}" -y -i "${targetMp4}" -i "${decAudioPath}" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -movflags +faststart "${tempRemuxMp4}"`, { stdio: 'inherit' });
 
   // Promote file
   fs.copyFileSync(tempRemuxMp4, targetMp4);

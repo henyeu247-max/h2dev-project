@@ -1,12 +1,12 @@
 ---
 handle: "@YabaiFunny"
-name: "YabaiFunny"
+name: "@YabaiFunny"
 url: "https://www.youtube.com/@YabaiFunny"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @YabaiFunny (YabaiFunny)
+# Kênh Đối Thủ / Kênh Mẫu: @YabaiFunny (@YabaiFunny)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@YabaiFunny](https://www.youtube.com/@YabaiFunny)

@@ -7,7 +7,7 @@ lesson_count: 3
 
 # Module DGMD-M03 — QUY TRÌNH SẢN XUẤT VIDEO NGẮN
 
-- **Thuộc Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]
 - **Tổng số bài giảng:** `3` video
 - **Mô tả:** Quy trình sản xuất các thể loại Shorts / Reels / Douyin triệu view với thời lượng tối ưu.
 

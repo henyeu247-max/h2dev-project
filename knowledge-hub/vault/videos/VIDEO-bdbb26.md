@@ -6,7 +6,7 @@ module_id: "HUAN-M06"
 module_title: "6. QUY TRÌNH ĐANG TẠO RA >1.000.000$ YOUTUBE"
 seq: "09"
 niche: "Huấn luyện ChatGPT & Viết kịch bản dài (Long-form Content)"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "28:17"
 published_at: "2026-09-01"
 toolsCount: 6
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-bdbb26&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M06|HUAN-M06 — 6. QUY TRÌNH ĐANG TẠO RA >1.000.000$ YOUTUBE]] (Bài `#09`)  
 > - **Ngách nội dung (Niche):** [[niches/huan-luyen-chatgpt-viet-kich-ban-dai-long-form-content|Huấn luyện ChatGPT & Viết kịch bản dài (Long-form Content)]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `28:17` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `28:17` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-bdbb26&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-bdbb26/README.md)
 
 ---

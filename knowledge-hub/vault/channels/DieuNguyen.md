@@ -1,12 +1,12 @@
 ---
 handle: "@DieuNguyen"
-name: "Diệu Nguyễn"
+name: "@DieuNguyen"
 url: "https://www.youtube.com/@DieuNguyen"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @DieuNguyen (Diệu Nguyễn)
+# Kênh Đối Thủ / Kênh Mẫu: @DieuNguyen (@DieuNguyen)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@DieuNguyen](https://www.youtube.com/@DieuNguyen)

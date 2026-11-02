@@ -1,12 +1,12 @@
 ---
 handle: "@HayLangNgheTuoiGia"
-name: "Lắng Nghe Tuổi Già"
+name: "@HayLangNgheTuoiGia"
 url: "https://www.youtube.com/@HayLangNgheTuoiGia"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @HayLangNgheTuoiGia (Lắng Nghe Tuổi Già)
+# Kênh Đối Thủ / Kênh Mẫu: @HayLangNgheTuoiGia (@HayLangNgheTuoiGia)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@HayLangNgheTuoiGia](https://www.youtube.com/@HayLangNgheTuoiGia)

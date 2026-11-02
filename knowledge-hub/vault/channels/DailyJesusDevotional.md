@@ -1,12 +1,12 @@
 ---
 handle: "@DailyJesusDevotional"
-name: "Daily Jesus Devotional"
+name: "@DailyJesusDevotional"
 url: "https://www.youtube.com/@DailyJesusDevotional"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @DailyJesusDevotional (Daily Jesus Devotional)
+# Kênh Đối Thủ / Kênh Mẫu: @DailyJesusDevotional (@DailyJesusDevotional)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@DailyJesusDevotional](https://www.youtube.com/@DailyJesusDevotional)

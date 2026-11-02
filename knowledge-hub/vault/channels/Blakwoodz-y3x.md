@@ -1,12 +1,12 @@
 ---
 handle: "@Blakwoodz-y3x"
-name: "Blakwoodz"
+name: "@Blakwoodz-y3x"
 url: "https://www.youtube.com/@Blakwoodz-y3x"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Blakwoodz-y3x (Blakwoodz)
+# Kênh Đối Thủ / Kênh Mẫu: @Blakwoodz-y3x (@Blakwoodz-y3x)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@Blakwoodz-y3x](https://www.youtube.com/@Blakwoodz-y3x)

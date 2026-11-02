@@ -1,12 +1,12 @@
 ---
 handle: "@quotes_official"
-name: "Quotes Official (Kênh hình mẫu ngách Quotes trong bảng Excel Tab 8)"
+name: "@quotes_official"
 url: "https://www.youtube.com/@quotes_official"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @quotes_official (Quotes Official (Kênh hình mẫu ngách Quotes trong bảng Excel Tab 8))
+# Kênh Đối Thủ / Kênh Mẫu: @quotes_official (@quotes_official)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@quotes_official](https://www.youtube.com/@quotes_official)

@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M11"
 module_title: "Zoom — Quy trình xây kênh từ A–Z (2026-09)"
 seq: "04"
-niche: "Hệ thống / Quy trình"
+niche: "Quản Trị Google AdSense & Kháng Nghị YPP"
 markets: ["🇻🇳 Việt"]
 duration: "37:14"
 published_at: "2026-09-11"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=ZOOM-04-Adsense-khang-loi&track=h2dev"
 # ZOOM-04-Adsense-khang-loi — Zoom 04 — Google AdSense & Kháng lỗi: Bảo vệ kênh
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M11|H2DEV-M11 — Zoom — Quy trình xây kênh từ A–Z (2026-09)]] (Bài `#04`)  
-> - **Ngách nội dung (Niche):** [[niches/he-thong-quy-trinh|Hệ thống / Quy trình]]  
+> - **Ngách nội dung (Niche):** [[niches/quan-tri-google-adsense-khang-nghi-ypp|Quản Trị Google AdSense & Kháng Nghị YPP]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `37:14` | **Ngày đăng:** `2026-09-11`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=ZOOM-04-Adsense-khang-loi&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/ZOOM-04-Adsense-khang-loi/README.md)
 
@@ -32,6 +32,7 @@ player_url: "/player.html?sku=ZOOM-04-Adsense-khang-loi&track=h2dev"
 - Thời điểm tạo và nối AdSense: đa số người làm đợi kênh đủ điều kiện bật kiếm tiền rồi mới tạo/nối ở Bước 2 trong YouTube Studio; khi nối nên dùng tab ẩn danh hoặc mạng 4G để tránh liên đới IP.
 - Quản lý rủi ro tài khoản AdSense: mỗi căn cước công dân chuẩn chỉ lập 1 AdSense chính chủ; không nên gom quá nhiều kênh lớn vào chung một gà mua ngoài mà nên tách riêng khi kênh đã có doanh thu tốt.
 - Triết lý làm YouTube bền vững: tuân thủ nguyên tắc Đúng – Đủ – Đều (đăng cố định khung giờ, đúng tuyến nội dung cho một tệp khán giả) và tỉnh táo trước các khóa học đắt tiền.
+- đưa cái tiền đấy về một cái ví nào đó để các bạn (rút) được đúng không nó sẽ không thể là về phải về thẳng
 
 ## 2. Quy Trình Sản Xuất & Dựng Video (`Edit SOP`)
 - **Trọng tâm:** Zoom về Google AdSense (gà), thanh toán, thuế, kháng lỗi và kỷ luật đăng video đúng đủ đều

@@ -5,8 +5,8 @@ track: "h2dev"
 module_id: "H2DEV-M02"
 module_title: "Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)"
 seq: "05"
-niche: "Kháng Bản Quyền & Xử Lý Lỗi GA"
-markets: ["🇨🇳 Trung"]
+niche: "Nuôi kênh & Xây dựng Trust Score"
+markets: ["🇻🇳 Việt"]
 duration: "4:14"
 published_at: "2026-03-20"
 toolsCount: 0
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-7f0bb4&track=h2dev"
 # VIDEO-7f0bb4 — NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ KHI BUILD KÊNH - CHUẨN CHÍNH SÁCH MỚI 2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M02|H2DEV-M02 — Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)]] (Bài `#05`)  
-> - **Ngách nội dung (Niche):** [[niches/khang-ban-quyen-xu-ly-loi-ga|Kháng Bản Quyền & Xử Lý Lỗi GA]]  
-> - **Thị trường:** 🇨🇳 Trung | **Thời lượng:** `4:14` | **Ngày đăng:** `2026-03-20`  
+> - **Ngách nội dung (Niche):** [[niches/nuoi-kenh-xay-dung-trust-score|Nuôi kênh & Xây dựng Trust Score]]  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `4:14` | **Ngày đăng:** `2026-03-20`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-7f0bb4&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-7f0bb4/README.md)
 
 ---

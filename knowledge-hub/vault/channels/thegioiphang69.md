@@ -1,12 +1,12 @@
 ---
 handle: "@thegioiphang69"
-name: "Thế Giới Phẳng (320K sub)"
+name: "@thegioiphang69"
 url: "https://www.youtube.com/@thegioiphang69"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @thegioiphang69 (Thế Giới Phẳng (320K sub))
+# Kênh Đối Thủ / Kênh Mẫu: @thegioiphang69 (@thegioiphang69)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@thegioiphang69](https://www.youtube.com/@thegioiphang69)

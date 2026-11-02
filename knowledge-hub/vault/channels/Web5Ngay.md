@@ -1,15 +1,15 @@
 ---
 handle: "@Web5Ngay"
-name: "Web 5 Ngày"
-url: "https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw"
+name: "@Web5Ngay"
+url: "https://www.youtube.com/@Web5Ngay"
 status: "LIVE_HTTP_200"
 videos_count: 21
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @Web5Ngay (Web 5 Ngày)
+# Kênh Đối Thủ / Kênh Mẫu: @Web5Ngay (@Web5Ngay)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw](https://www.youtube.com/channel/UCt1Oul3UUHpYa8c5jYckeRw)
+- **URL YouTube:** [https://www.youtube.com/@Web5Ngay](https://www.youtube.com/@Web5Ngay)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

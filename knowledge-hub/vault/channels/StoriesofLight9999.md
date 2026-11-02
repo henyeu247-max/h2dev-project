@@ -1,12 +1,12 @@
 ---
 handle: "@StoriesofLight9999"
-name: "Stories of Light"
+name: "@StoriesofLight9999"
 url: "https://www.youtube.com/@StoriesofLight9999"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @StoriesofLight9999 (Stories of Light)
+# Kênh Đối Thủ / Kênh Mẫu: @StoriesofLight9999 (@StoriesofLight9999)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@StoriesofLight9999](https://www.youtube.com/@StoriesofLight9999)

@@ -1,15 +1,15 @@
 ---
 handle: "@HieuMangDep"
-name: "Hiếu Mang Dép"
-url: "https://www.youtube.com/channel/UCs9II6amKbHIPJYPKLEI_pA"
+name: "@HieuMangDep"
+url: "https://www.youtube.com/@HieuMangDep"
 status: "LIVE_HTTP_200"
 videos_count: 3
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @HieuMangDep (Hiếu Mang Dép)
+# Kênh Đối Thủ / Kênh Mẫu: @HieuMangDep (@HieuMangDep)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/channel/UCs9II6amKbHIPJYPKLEI_pA](https://www.youtube.com/channel/UCs9II6amKbHIPJYPKLEI_pA)
+- **URL YouTube:** [https://www.youtube.com/@HieuMangDep](https://www.youtube.com/@HieuMangDep)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

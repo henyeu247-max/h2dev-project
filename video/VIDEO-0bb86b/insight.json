@@ -24,33 +24,33 @@
   "source_transcript": "video/VIDEO-0bb86b/transcript.txt",
   "key_timestamps": [
     {
-      "seconds": 3,
       "time": "00:03",
+      "seconds": 3,
       "label": "Kênh Hàn @인생의_고수: Mới đăng 1 video đầu tiên về tiền bạc sau tuổi 65 đã nổ 196K view sau 5 ngày"
     },
     {
-      "seconds": 76,
       "time": "01:16",
+      "seconds": 76,
       "label": "Phân tích kỹ thuật dùng giọng AI ElevenLabs & Cảnh báo lỗi để 1 ảnh nền tĩnh suốt video"
     },
     {
-      "seconds": 156,
       "time": "02:36",
+      "seconds": 156,
       "label": "Kênh @기적의마인드-w7d: Nhân bản ngách Triết lý tiền bạc Carl Jung từ thị trường US sang Hàn Quốc"
     },
     {
-      "seconds": 262,
       "time": "04:22",
+      "seconds": 262,
       "label": "Kênh Nhật @gyakkyoyori_risukatsu (37 video): Ngách Drama cảm động ghép video chó mèo làm nền"
     },
     {
-      "seconds": 389,
       "time": "06:29",
+      "seconds": 389,
       "label": "Kênh Hàn @인생반전이야기: Spam 3-5 bài/ngày và bài học kiên trì đến video thứ 10 mới nổ 134K view"
     },
     {
-      "seconds": 532,
       "time": "08:52",
+      "seconds": 532,
       "label": "Mẹo làm Thumbnail: Chụp màn hình ảnh bìa đối thủ đưa vào ChatGPT để tạo phông nền tương tự"
     }
   ],
@@ -76,10 +76,9 @@
     "Xác định rõ các ngách Drama công sở spam 3–5 video/ngày thường chỉ ăn đề xuất mạnh trong 1–2 tháng đầu trước khi bị quét nên cần chuẩn bị sẵn kế hoạch gối đầu kênh mới."
   ],
   "sop_steps": [
-    "Kênh đối thủ dùng giọng đọc AI, ElevenLabs clone voice; tác giả có video hướng dẫn clone voice",
-    "Video nền kênh đối thủ là quay chuột, ghép video chó mèo, video nấu ăn, thêm sticker nhạc có sẵn trong CapCut",
-    "Chụp màn hình các kênh đối thủ rồi cho ChatGPT học để tạo ảnh nền tương tự",
-    "Phải làm khoảng 10 đến 15 video thì kênh mới bắt đầu được phân phối",
-    "Lấy content từ kênh đối thủ về làm lại, tìm kênh bằng từ khóa tương ứng"
+    "Dịch tiêu đề các kênh đối thủ (@인생의_고수, @기적의마인드-w7d) sang tiếng Việt/tiếng Anh để tìm nguồn kịch bản triết lý tiền bạc từ thị trường Mỹ đem sang Hàn Quốc.",
+    "Sử dụng giọng đọc AI trầm ấm trên ElevenLabs (hoặc clone voice) kết hợp cảnh nhân vật cầm giấy/sách che mặt hoặc footage chó mèo, nấu ăn, đời sống chuyển động liên tục.",
+    "Chụp màn hình các mẫu Thumbnail AI ấn tượng của kênh đối thủ (@인생반전이야기) đưa vào ChatGPT để AI học bố cục và sinh ra hình nền thumbnail tương tự.",
+    "Duy trì kỷ luật đăng đều đặn tối thiểu 10 đến 15 video trên kênh mới để thuật toán YouTube nhận diện đúng tệp khán giả và bắt đầu đẩy đề xuất."
   ]
 }

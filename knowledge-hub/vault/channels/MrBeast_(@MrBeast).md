@@ -1,15 +1,15 @@
 ---
 handle: "@MrBeast (@MrBeast)"
-name: "MrBeast (@MrBeast)"
-url: "https://www.youtube.com/@MrBeast"
+name: "@MrBeast (@MrBeast)"
+url: "https://www.youtube.com/@MrBeast%20(%40MrBeast)"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @MrBeast (@MrBeast) (MrBeast (@MrBeast))
+# Kênh Đối Thủ / Kênh Mẫu: @MrBeast (@MrBeast) (@MrBeast (@MrBeast))
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/@MrBeast](https://www.youtube.com/@MrBeast)
+- **URL YouTube:** [https://www.youtube.com/@MrBeast%20(%40MrBeast)](https://www.youtube.com/@MrBeast%20(%40MrBeast))
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

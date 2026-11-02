@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M06"
 module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 seq: "87"
-niche: "Bán Content & Phát Triển Kênh"
+niche: "Lịch Sử Đời Sống & Kể Chuyện Ngủ Ngon (US)"
 markets: ["🇺🇸 Mỹ", "🌐 Ngoại"]
 duration: "20:15"
 published_at: "2025-08-20"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-3df94e&track=h2dev"
 # VIDEO-3df94e — Hơn $18K- Tháng Kênh Này Đã Kiếm Được - Share Key View Ngoại Và Quy Trình Làm AI Bán Content YouTube
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#87`)  
-> - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
+> - **Ngách nội dung (Niche):** [[niches/lich-su-doi-song-ke-chuyen-ngu-ngon-us|Lịch Sử Đời Sống & Kể Chuyện Ngủ Ngon (US)]]  
 > - **Thị trường:** 🇺🇸 Mỹ · 🌐 Ngoại | **Thời lượng:** `20:15` | **Ngày đăng:** `2025-08-20`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-3df94e&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-3df94e/README.md)
 

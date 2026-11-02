@@ -1,12 +1,12 @@
 ---
 handle: "@NetflixKContent"
-name: "Netflix K-Content"
+name: "@NetflixKContent"
 url: "https://www.youtube.com/@NetflixKContent"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @NetflixKContent (Netflix K-Content)
+# Kênh Đối Thủ / Kênh Mẫu: @NetflixKContent (@NetflixKContent)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@NetflixKContent](https://www.youtube.com/@NetflixKContent)

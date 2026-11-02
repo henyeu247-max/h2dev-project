@@ -1,15 +1,15 @@
 ---
 handle: "@ChillBuồnStudio"
-name: "Chill Buồn Studio"
-url: "https://www.youtube.com/channel/UCpV0ce2xtGTY-2R0K0Ncr4g"
+name: "@ChillBuồnStudio"
+url: "https://www.youtube.com/@ChillBu%E1%BB%93nStudio"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ChillBuồnStudio (Chill Buồn Studio)
+# Kênh Đối Thủ / Kênh Mẫu: @ChillBuồnStudio (@ChillBuồnStudio)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/channel/UCpV0ce2xtGTY-2R0K0Ncr4g](https://www.youtube.com/channel/UCpV0ce2xtGTY-2R0K0Ncr4g)
+- **URL YouTube:** [https://www.youtube.com/@ChillBu%E1%BB%93nStudio](https://www.youtube.com/@ChillBu%E1%BB%93nStudio)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

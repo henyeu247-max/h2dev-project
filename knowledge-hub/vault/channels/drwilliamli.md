@@ -1,12 +1,12 @@
 ---
 handle: "@drwilliamli"
-name: "Dr. William Li"
+name: "@drwilliamli"
 url: "https://www.youtube.com/@drwilliamli"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @drwilliamli (Dr. William Li)
+# Kênh Đối Thủ / Kênh Mẫu: @drwilliamli (@drwilliamli)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@drwilliamli](https://www.youtube.com/@drwilliamli)

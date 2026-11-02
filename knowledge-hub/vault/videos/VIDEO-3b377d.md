@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-3b377d&track=dgmd"
 # VIDEO-3b377d — Quy Trình Sản Xuất Video Lời Phật Dạy
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M08|DGMD-M08 — BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1]] (Bài `#04`)  
 > - **Ngách nội dung (Niche):** [[niches/tam-linh-loi-phat-day-video-dai-60-120-phut|Tâm Linh & Lời Phật Dạy (Video Dài 60–120 Phút)]]  
 > - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `22:23` | **Ngày đăng:** `2026-10-12`  

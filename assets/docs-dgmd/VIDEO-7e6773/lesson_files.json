@@ -1,0 +1,33 @@
+{
+  "id": 568,
+  "sku": "VIDEO-7e6773",
+  "upstream_sku": "VIDEO-7e6773",
+  "name": "Quy Trình Sản Xuất Video Ghibli ASMR ",
+  "url_key": "quy-trinh-san-xuat-video-ghibli-asmr",
+  "published_at": "2026-10-24",
+  "time": "832",
+  "video_link": "https://video.mona-cloud.com/api/video/?user=42838816&video=1792834862-1024-1&protected=True&version=v2&token=gAAAAABq3H05S-nn3dO27zselATXHkF3zDbGy2-usFGErfT-0PE5rWPLqZsHTY0r3RaU6D2deVYTCVgoxr8apDfHKv9-04QEtSAOSISYpgWZO9xQBUbzOAI%3D",
+  "protected": true,
+  "bai_h_c_free": false,
+  "lesson_files": null,
+  "attachments": null,
+  "video_subtitle": null,
+  "image": {
+    "url": "https://api.daigiamangdep.com/media/catalog/product/f/9/f92dbe02-55f8-4c44-a491-a1efc12c8349_1.png",
+    "label": "f92dbe02-55f8-4c44-a491-a1efc12c8349.png"
+  },
+  "thumbnail": {
+    "url": "https://api.daigiamangdep.com/media/catalog/product/f/9/f92dbe02-55f8-4c44-a491-a1efc12c8349_1.png",
+    "label": "f92dbe02-55f8-4c44-a491-a1efc12c8349.png"
+  },
+  "tags": null,
+  "gdrive_files": [],
+  "gdoc_files": [
+    {
+      "doc_id": "15wYqylvk_CTRHyxaNpy_IBxYgJ7yMd2PvaxDnfeIT_Q",
+      "filename": "doc_1.txt",
+      "bytes": 45971,
+      "lines": 1059
+    }
+  ]
+}

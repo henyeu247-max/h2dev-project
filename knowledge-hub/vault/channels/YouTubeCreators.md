@@ -1,12 +1,12 @@
 ---
 handle: "@YouTubeCreators"
-name: "YouTube Creators"
+name: "@YouTubeCreators"
 url: "https://www.youtube.com/@YouTubeCreators"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @YouTubeCreators (YouTube Creators)
+# Kênh Đối Thủ / Kênh Mẫu: @YouTubeCreators (@YouTubeCreators)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@YouTubeCreators](https://www.youtube.com/@YouTubeCreators)

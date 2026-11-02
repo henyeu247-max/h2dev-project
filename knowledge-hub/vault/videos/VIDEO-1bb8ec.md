@@ -6,7 +6,7 @@ module_id: "HUAN-M07"
 module_title: "7. CẬP NHẬT K7"
 seq: "06"
 niche: "Lịch sử Tiến hóa Công thức Sản xuất Video (2016–2026)"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "14:24"
 published_at: "2026-09-01"
 toolsCount: 7
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-1bb8ec&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M07|HUAN-M07 — 7. CẬP NHẬT K7]] (Bài `#06`)  
 > - **Ngách nội dung (Niche):** [[niches/lich-su-tien-hoa-cong-thuc-san-xuat-video-2016-2026|Lịch sử Tiến hóa Công thức Sản xuất Video (2016–2026)]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `14:24` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `14:24` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-1bb8ec&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-1bb8ec/README.md)
 
 ---

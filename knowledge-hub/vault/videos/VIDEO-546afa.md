@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-546afa&track=h2dev"
 # VIDEO-546afa — CHỈ MỚI 5 VIDEO KIẾM HƠN 600k VIEW VÀ 3k SUB VỚI NGÁCH NHỎ THỊ TRƯỜNG NHẬT VÀ SHARE THÊM 1 NGÁCH NHỎ Ở THỊ TRƯỜNG VIỆT
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#52`)  
 > - **Ngách nội dung (Niche):** [[niches/suc-khoe-dinh-duong|Sức Khỏe & Dinh Dưỡng]]  
 > - **Thị trường:** 🇯🇵 Nhật · 🇻🇳 Việt | **Thời lượng:** `5:01` | **Ngày đăng:** `2026-03-19`  

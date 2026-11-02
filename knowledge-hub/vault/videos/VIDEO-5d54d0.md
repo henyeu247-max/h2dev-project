@@ -5,8 +5,8 @@ track: "h2dev"
 module_id: "H2DEV-M04"
 module_title: "Hướng dẫn quy trình dùng Claude AI làm YouTuBe"
 seq: "03"
-niche: "Prompt AI & Nhân Bản Kịch Bản"
-markets: ["🇯🇵 Nhật"]
+niche: "Bán Content Triết Lý Nhật Bản"
+markets: ["🇻🇳 Việt", "🇨🇳 Trung"]
 duration: "1:00:59"
 published_at: "2026-05-23"
 toolsCount: 3
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-5d54d0&track=h2dev"
 # VIDEO-5d54d0 — Thực chiến hướng dẫn train Claude làm prompt bám theo kịch bản đối thủ xào nấu cho bất kỳ chủ đề (ngách) nào muốn - Quy trình chuẩn bán content dành cho ngách bám theo 70% kịch bản đối thủ
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M04|H2DEV-M04 — Hướng dẫn quy trình dùng Claude AI làm YouTuBe]] (Bài `#03`)  
-> - **Ngách nội dung (Niche):** [[niches/prompt-ai-nhan-ban-kich-ban|Prompt AI & Nhân Bản Kịch Bản]]  
-> - **Thị trường:** 🇯🇵 Nhật | **Thời lượng:** `1:00:59` | **Ngày đăng:** `2026-05-23`  
+> - **Ngách nội dung (Niche):** [[niches/ban-content-triet-ly-nhat-ban|Bán Content Triết Lý Nhật Bản]]  
+> - **Thị trường:** 🇻🇳 Việt · 🇨🇳 Trung | **Thời lượng:** `1:00:59` | **Ngày đăng:** `2026-05-23`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-5d54d0&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-5d54d0/README.md)
 
 ---

@@ -1,12 +1,12 @@
 ---
 handle: "@ThaiPham"
-name: "Thái Phạm"
+name: "@ThaiPham"
 url: "https://www.youtube.com/@ThaiPham"
 status: "LIVE_HTTP_200"
 videos_count: 8
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ThaiPham (Thái Phạm)
+# Kênh Đối Thủ / Kênh Mẫu: @ThaiPham (@ThaiPham)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ThaiPham](https://www.youtube.com/@ThaiPham)

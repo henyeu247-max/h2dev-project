@@ -1,12 +1,12 @@
 ---
 handle: "@MixiGaming3con"
-name: "MixiGaming (Độ Mixi)"
+name: "@MixiGaming3con"
 url: "https://www.youtube.com/@MixiGaming3con"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @MixiGaming3con (MixiGaming (Độ Mixi))
+# Kênh Đối Thủ / Kênh Mẫu: @MixiGaming3con (@MixiGaming3con)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@MixiGaming3con](https://www.youtube.com/@MixiGaming3con)

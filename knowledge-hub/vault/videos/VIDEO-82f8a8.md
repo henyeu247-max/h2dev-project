@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-82f8a8&track=h2dev"
 # VIDEO-82f8a8 — Share Key MỚI NHẤT Update 23/08/2025 - Ngách nhỏ thị trường Nhật Bản
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#81`)  
 > - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
 > - **Thị trường:** 🇯🇵 Nhật | **Thời lượng:** `9:09` | **Ngày đăng:** `2025-08-23`  

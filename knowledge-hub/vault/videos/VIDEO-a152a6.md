@@ -6,7 +6,7 @@ module_id: "DGMD-M04"
 module_title: "COMBO 3 QUY TRÌNH VIEW NGOẠI 1"
 seq: "03"
 niche: "Bán Content & Reup Hợp Pháp"
-markets: ["🇻🇳 Việt Nam", "🌍 View Ngoại"]
+markets: ["🌍 View Ngoại"]
 duration: "23:57"
 published_at: "2026-10-12"
 toolsCount: 10
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-a152a6&track=dgmd"
 # VIDEO-a152a6 — Quy Trình Sản Xuất Video Bán Content 
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M04|DGMD-M04 — COMBO 3 QUY TRÌNH VIEW NGOẠI 1]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/ban-content-reup-hop-phap|Bán Content & Reup Hợp Pháp]]  
-> - **Thị trường:** 🇻🇳 Việt Nam · 🌍 View Ngoại | **Thời lượng:** `23:57` | **Ngày đăng:** `2026-10-12`  
+> - **Thị trường:** 🌍 View Ngoại | **Thời lượng:** `23:57` | **Ngày đăng:** `2026-10-12`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-a152a6&track=dgmd) · [Hồ sơ gốc README.md](../../../docs/VIDEO-a152a6/README.md)
 
 ---
@@ -63,7 +63,7 @@ player_url: "/player.html?sku=VIDEO-a152a6&track=dgmd"
 ## 5. Liên Kết Kênh Mẫu & Đối Thủ (`Competitor Channels`)
 - [[channels/realadamrose|@realadamrose]]
 - [[channels/Smartpocket-r9b|@Smartpocket-r9b]]
-- [[channels/Adam-RoseFans1|@Adam-RoseFans1]] *(DIE)*
+- [[channels/Adam-RoseFans1|@Adam-RoseFans1]]
 
 ## 6. Tài Liệu Đính Kèm Bài Học (`Course Docs`)
 - **Hồ sơ phân tích & SOP thực chiến: Quy Trình Sản Xuất Video Bán Content  (README.md):** `docs/VIDEO-a152a6/README.md`

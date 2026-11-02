@@ -1,12 +1,12 @@
 ---
 handle: "@BigManMarketing"
-name: "Big Man Marketing"
+name: "@BigManMarketing"
 url: "https://www.youtube.com/@BigManMarketing"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @BigManMarketing (Big Man Marketing)
+# Kênh Đối Thủ / Kênh Mẫu: @BigManMarketing (@BigManMarketing)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@BigManMarketing](https://www.youtube.com/@BigManMarketing)

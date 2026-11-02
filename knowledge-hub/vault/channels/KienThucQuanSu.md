@@ -1,15 +1,15 @@
 ---
 handle: "@KienThucQuanSu"
-name: "CDTeam - Kiến Thức Quân Sự"
-url: "https://www.youtube.com/c/Ki%E1%BA%BFnTh%E1%BB%A9cQu%C3%A2nS%E1%BB%B1"
+name: "@KienThucQuanSu"
+url: "https://www.youtube.com/@KienThucQuanSu"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @KienThucQuanSu (CDTeam - Kiến Thức Quân Sự)
+# Kênh Đối Thủ / Kênh Mẫu: @KienThucQuanSu (@KienThucQuanSu)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **URL YouTube:** [https://www.youtube.com/c/Ki%E1%BA%BFnTh%E1%BB%A9cQu%C3%A2nS%E1%BB%B1](https://www.youtube.com/c/Ki%E1%BA%BFnTh%E1%BB%A9cQu%C3%A2nS%E1%BB%B1)
+- **URL YouTube:** [https://www.youtube.com/@KienThucQuanSu](https://www.youtube.com/@KienThucQuanSu)
 - **Trạng thái kiểm định:** `LIVE (HTTP 200 OK)`
 - **Ngách (kenh-mau.json):** `Đa ngách`
 - **Thị trường:** `Toàn cầu`

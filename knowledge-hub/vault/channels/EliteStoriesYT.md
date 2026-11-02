@@ -1,12 +1,12 @@
 ---
 handle: "@EliteStoriesYT"
-name: "Elite Stories"
+name: "@EliteStoriesYT"
 url: "https://www.youtube.com/@EliteStoriesYT"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @EliteStoriesYT (Elite Stories)
+# Kênh Đối Thủ / Kênh Mẫu: @EliteStoriesYT (@EliteStoriesYT)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@EliteStoriesYT](https://www.youtube.com/@EliteStoriesYT)

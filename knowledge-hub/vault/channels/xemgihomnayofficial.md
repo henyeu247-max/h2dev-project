@@ -1,12 +1,12 @@
 ---
 handle: "@xemgihomnayofficial"
-name: "XEM GÌ HÔM NAY (1.5 Tỷ view - $282,476)"
+name: "@xemgihomnayofficial"
 url: "https://www.youtube.com/@xemgihomnayofficial"
 status: "LIVE_HTTP_200"
 videos_count: 2
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @xemgihomnayofficial (XEM GÌ HÔM NAY (1.5 Tỷ view - $282,476))
+# Kênh Đối Thủ / Kênh Mẫu: @xemgihomnayofficial (@xemgihomnayofficial)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@xemgihomnayofficial](https://www.youtube.com/@xemgihomnayofficial)

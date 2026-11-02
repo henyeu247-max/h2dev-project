@@ -1,12 +1,12 @@
 ---
 handle: "@ShopeeUniVietnam"
-name: "Shopee Uni Vietnam"
+name: "@ShopeeUniVietnam"
 url: "https://www.youtube.com/@ShopeeUniVietnam"
 status: "LIVE_HTTP_200"
 videos_count: 1
 ---
 
-# Kênh Đối Thủ / Kênh Mẫu: @ShopeeUniVietnam (Shopee Uni Vietnam)
+# Kênh Đối Thủ / Kênh Mẫu: @ShopeeUniVietnam (@ShopeeUniVietnam)
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
 - **URL YouTube:** [https://www.youtube.com/@ShopeeUniVietnam](https://www.youtube.com/@ShopeeUniVietnam)

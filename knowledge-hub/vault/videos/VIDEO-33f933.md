@@ -6,7 +6,7 @@ module_id: "HUAN-M02"
 module_title: "2. TẠO KÊNH, CHĂM SÓC KÊNH - BƯỚC ĐẦU THẤU HIỂU YOUTUBE"
 seq: "13"
 niche: "Đặt Tên Kênh & Tối Ưu SEO Thương Hiệu"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "15:03"
 published_at: "2026-09-01"
 toolsCount: 2
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-33f933&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M02|HUAN-M02 — 2. TẠO KÊNH, CHĂM SÓC KÊNH - BƯỚC ĐẦU THẤU HIỂU YOUTUBE]] (Bài `#13`)  
 > - **Ngách nội dung (Niche):** [[niches/dat-ten-kenh-toi-uu-seo-thuong-hieu|Đặt Tên Kênh & Tối Ưu SEO Thương Hiệu]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `15:03` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `15:03` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-33f933&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-33f933/README.md)
 
 ---

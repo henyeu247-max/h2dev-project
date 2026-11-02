@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-d4f7e6&track=dgmd"
 # VIDEO-d4f7e6 — Quy Trình Sản Xuất Video Jesus Shorts 
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (45 Videos)]]  
+> - **Track:** [[tracks/TRACK-DGMD|Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)]]  
 > - **Module:** [[modules/DGMD-M03|DGMD-M03 — QUY TRÌNH SẢN XUẤT VIDEO NGẮN]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/tam-linh-ton-giao-toan-cau|Tâm Linh & Tôn Giáo Toàn Cầu]]  
 > - **Thị trường:** 🌍 View Ngoại · 📱 Shorts / Reels | **Thời lượng:** `07:08` | **Ngày đăng:** `2026-10-12`  

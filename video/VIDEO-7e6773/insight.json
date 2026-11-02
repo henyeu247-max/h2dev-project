@@ -1,0 +1,102 @@
+{
+  "sku": "VIDEO-7e6773",
+  "title": "Quy Trình Sản Xuất Video Ghibli ASMR ",
+  "actual_topic": "Quy Trình Sản Xuất Phim Hoạt Hình Ghibli ASMR Gia Đình Trong Mưa Bão Hướng Tới Thị Trường Hoa Kỳ Và Nhật Bản",
+  "summary": "Hướng dẫn vận hành bộ Master Prompt V4.0 (Japanese Cozy Storm ASMR Animation Universe) để tự động lên 100 ý tưởng và sản xuất chuỗi video hoạt hình phong cách Ghibli ASMR dài 8 đến 10 phút nhắm vào khán giả Hoa Kỳ và Nhật Bản.",
+  "category_group": "view_ngoai",
+  "niche_primary": "Hoạt Hình Ghibli ASMR Mưa Bão & Gia Đình Ấm Cúng",
+  "niche_id": "ghibli-storm-asmr-animation",
+  "target_market": "Hoa Kỳ & Nhật Bản",
+  "market_code": "US_JP",
+  "key_takeaways": [
+    "Chủ đề hoạt hình phong cách Ghibli kết hợp âm thanh ASMR thiên nhiên (mưa bão bên ngoài ngôi nhà ấm áp) đang bùng nổ lượt xem tại thị trường Hoa Kỳ và Nhật Bản.",
+    "Bộ Master Prompt V4.0 tự động khởi tạo danh sách 100 ý tưởng bộ phim độc lập (từ mã G001 đến G100) giúp người làm xây dựng lộ trình đăng tải xuyên suốt trên một kênh.",
+    "Mỗi bộ phim được thiết kế với thời lượng dài từ 8 đến 10 phút, chia thành các cụm phân cảnh liên hoàn (từ cảnh 1 đến cảnh 20, rồi tiếp tục từ cảnh 21 đến cảnh 40).",
+    "Tích hợp chi tiết chỉ dẫn âm thanh ASMR sống động (tiếng mưa đập vào cửa kính, tiếng sấm rền xa, tiếng củi cháy lách tách và tiếng nấu ăn trong bếp) trong từng câu lệnh tạo video.",
+    "thì anh em chỉ sử dụng là nhân mục đầu tiên nha anh em em."
+  ],
+  "edit_sop": {
+    "primary": "Quy trình sản xuất bộ phim hoạt hình Ghibli ASMR mưa bão dài 8 đến 10 phút bằng Master Prompt V4.0 cho thị trường Hoa Kỳ và Nhật Bản.",
+    "additional": [
+      "Sao chép bộ Master Prompt V4.0 Japanese Cozy Storm ASMR dán vào trình tạo văn bản AI để xuất danh sách 100 ý tưởng phim từ G001 đến G100.",
+      "Chọn mã bộ phim đầu tiên (G001) để hệ thống sinh bảng thiết kế nhân vật gia đình và bối cảnh ngôi nhà truyền thống Nhật Bản giữa đêm bão.",
+      "Tạo hình ảnh tham chiếu nhân vật gốc rồi yêu cầu xuất câu lệnh chi tiết theo từng cụm từ cảnh 1 đến cảnh 20 và từ cảnh 21 đến cảnh 40.",
+      "Đưa ảnh tham chiếu cùng từng câu lệnh phân cảnh vào công cụ tạo video để kết xuất hình ảnh chuyển động kèm âm thanh ASMR mưa bão và ghép thành phim dài 8 đến 10 phút."
+    ]
+  },
+  "sop_steps": [
+    "Sao chép bộ Master Prompt V4.0 Japanese Cozy Storm ASMR dán vào trình tạo văn bản AI để xuất danh sách 100 ý tưởng phim từ G001 đến G100.",
+    "Chọn mã bộ phim đầu tiên (G001) để hệ thống sinh bảng thiết kế nhân vật gia đình và bối cảnh ngôi nhà truyền thống Nhật Bản giữa đêm bão.",
+    "Tạo hình ảnh tham chiếu nhân vật gốc rồi yêu cầu xuất câu lệnh chi tiết theo từng cụm từ cảnh 1 đến cảnh 20 và từ cảnh 21 đến cảnh 40.",
+    "Đưa ảnh tham chiếu cùng từng câu lệnh phân cảnh vào công cụ tạo video để kết xuất hình ảnh chuyển động kèm âm thanh ASMR mưa bão và ghép thành phim dài 8 đến 10 phút."
+  ],
+  "avoid_flags": [
+    "Chỉ sản xuất vài video ngắn ngủi rời rạc thay vì bám sát lộ trình 100 bộ phim (G001 đến G100) để thuật toán YouTube nhận diện đúng tệp khán giả Hoa Kỳ và Nhật Bản.",
+    "Yêu cầu xuất một lần toàn bộ hàng chục cảnh khiến câu lệnh bị cắt cụt thay vì chia nhỏ quy trình xuất từ cảnh 1 đến 20 rồi tiếp nối từ cảnh 21 đến 40."
+  ],
+  "tools_mentioned": [
+    "YouTube"
+  ],
+  "channels_mentioned": [],
+  "key_timestamps": [
+    {
+      "seconds": 0,
+      "time": "00:00",
+      "label": "Giới thiệu ngách hoạt hình Ghibli ASMR chủ đề gia đình trong mưa bão đang thịnh hành tại Mỹ và Nhật"
+    },
+    {
+      "seconds": 52,
+      "time": "00:52",
+      "label": "Chiến lược xây kênh 100 video từ bộ Master Prompt V4.0 hướng tới khán giả Hoa Kỳ và Nhật Bản"
+    },
+    {
+      "seconds": 187,
+      "time": "03:07",
+      "label": "Kích hoạt Master Prompt tự động lập danh sách 100 ý tưởng kịch bản phim hoạt hình mưa bão 8 đến 10 phút"
+    },
+    {
+      "seconds": 317,
+      "time": "05:17",
+      "label": "Thiết lập tạo hình ảnh tham chiếu nhân vật gia đình và bối cảnh ngôi nhà gỗ ấm cúng dưới cơn bão"
+    },
+    {
+      "seconds": 454,
+      "time": "07:34",
+      "label": "Quy trình sinh chuỗi câu lệnh chuyển động và âm thanh ASMR tiếng mưa rơi, gió thổi, lửa trại"
+    },
+    {
+      "seconds": 601,
+      "time": "10:01",
+      "label": "Sản xuất cuốn chiếu từng cụm 10 đến 20 phân cảnh nối tiếp nhau để hoàn thiện bộ phim 8 phút"
+    }
+  ],
+  "course_docs": [
+    {
+      "title": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Sản Xuất Video Ghibli ASMR (master_prompt.md)",
+      "name": "Cẩm Nang Thực Chiến & Master Prompt: Quy Trình Sản Xuất Video Ghibli ASMR (master_prompt.md)",
+      "file": "assets/docs-dgmd/VIDEO-7e6773/master_prompt.md",
+      "readFile": "assets/docs-dgmd/VIDEO-7e6773/master_prompt.md",
+      "link": "https://docs.google.com/document/d/15wYqylvk_CTRHyxaNpy_IBxYgJ7yMd2PvaxDnfeIT_Q/edit?usp=sharing"
+    },
+    {
+      "title": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Video Ghibli ASMR (doc_1.txt)",
+      "name": "Tài Liệu Google Docs Gốc: Quy Trình Sản Xuất Video Ghibli ASMR (doc_1.txt)",
+      "file": "assets/docs-dgmd/VIDEO-7e6773/doc_1.txt",
+      "readFile": "assets/docs-dgmd/VIDEO-7e6773/doc_1.txt",
+      "link": "https://docs.google.com/document/d/15wYqylvk_CTRHyxaNpy_IBxYgJ7yMd2PvaxDnfeIT_Q/edit?usp=sharing"
+    },
+    {
+      "title": "Mô tả bài giảng gốc: Quy Trình Sản Xuất Video Ghibli ASMR (description.txt)",
+      "name": "Mô tả bài giảng gốc: Quy Trình Sản Xuất Video Ghibli ASMR (description.txt)",
+      "file": "assets/docs-dgmd/VIDEO-7e6773/description.txt",
+      "readFile": "assets/docs-dgmd/VIDEO-7e6773/description.txt",
+      "link": "assets/docs-dgmd/VIDEO-7e6773/description.txt"
+    }
+  ],
+  "analysis_method": "agv_3.8_multimodal_7layer_verified",
+  "accuracy_status": "GROUNDED_VERIFIED",
+  "visual_audio_checked": true,
+  "verified_expert_summary": true,
+  "claims_require_external_verification": false,
+  "source_transcript": "video/VIDEO-7e6773/transcript.txt"
+}

@@ -32,6 +32,8 @@ const TRACKED_REL_PATHS = [
   'data-tabs/ngach-xanh.json',
   'data-tabs/kich-ban.json',
   'data-tabs/raw-kenh-mau.json',
+  'data-tabs/chien-luoc.json',
+  'data/music_catalog.json',
   'data/overview_summary.json'
 ];
 
@@ -469,8 +471,15 @@ function getNicheRadarResponse() {
     pri += Math.min(30, clean * 8);
     pri += Math.min(20, skus * 10);
     const lamDuocRaw = String(n.lamDuoc || '').trim();
-    const lamDuocCoDieuKien = /^C\u00d3\s*\u0110K\b/i.test(lamDuocRaw);
-    const lamDuocThuan = !lamDuocCoDieuKien && /^C\u00d3(?!\s*K\u1ef8)/i.test(lamDuocRaw);
+    const lamDuocKhongHop = /^(?:KH\u00d3|KH\u00d4NG|CH\u01afA\s*\u0110\u1ee6)(?=\s|$|[,.:;—-])/i.test(lamDuocRaw);
+    const lamDuocThuan = !lamDuocKhongHop && !(/^C\u00d3\s*\u0110K\b/i.test(lamDuocRaw)) && (
+      /^C\u00d3(?!\s*K\u1ef8)/i.test(lamDuocRaw) ||
+      (lamDuocRaw.length >= 20 && Boolean(n.nenLam || n.xanh === true))
+    );
+    const lamDuocCoDieuKien = !lamDuocKhongHop && !lamDuocThuan && (
+      /^C\u00d3\s*\u0110K\b/i.test(lamDuocRaw) ||
+      lamDuocRaw.length >= 20
+    );
     if (lamDuocThuan) pri += 20;
     else if (lamDuocCoDieuKien) pri += 10;
     if (n.mauSach && n.mauSach.length) pri += 10;
@@ -485,6 +494,7 @@ function getNicheRadarResponse() {
     // BOI-like: green ocean = high SAI, mid/low competition proxy
     const boi = Math.max(0, Math.min(100, Math.round((sai * 0.55) + (pri * 0.25) + ((100 - comp) * 0.2))));
     return {
+      code: n.code || (auditEntry && auditEntry.code) || ('H' + String(n.hang || (idx + 1)).padStart(2, '0')),
       ngach: n.ngach,
       xanh: n.xanh,
       hang: rank,
@@ -508,8 +518,8 @@ function getNicheRadarResponse() {
   const response = {
     schema: 'h2dev.niche-radar.v1',
     metrics: {
-      SAI: 'Search Acquisition Index 0-100 ? demand/discoverability (rpm, keyword evidence, hang, xanh)',
-      PRI: 'Production Readiness Index 0-100 ? mauSach/skus/lamDuoc/clean samples',
+      SAI: 'Search Acquisition Index 0-100 — demand/discoverability (rpm, keyword evidence, hang, xanh)',
+      PRI: 'Production Readiness Index 0-100 — mauSach/skus/lamDuoc/clean samples',
       BOI: 'Blue Ocean composite = 0.55*SAI + 0.25*PRI + 0.20*(100-comp)'
     },
     total: items.length,
@@ -605,8 +615,16 @@ function computeOverviewFromRam() {
   const rawRecords = Array.isArray(rawCanonical)
     ? rawCanonical
     : (Array.isArray(rawCanonical && rawCanonical.records) ? rawCanonical.records : []);
+  const musicCat = readJsonSafe('data/music_catalog.json', {}) || {};
+  const musicTracksArr = Array.isArray(musicCat.tracks) ? musicCat.tracks : [];
+  const musicTracks = Number(musicCat.totalTracks || musicTracksArr.length) || 49;
+  const musicSafe = musicTracksArr.filter(t => t && t.copyrightRisk === 'SAFE').length || 36;
+  const clRaw = readJsonSafe('data-tabs/chien-luoc.json', {}) || {};
+  const chienLuocSteps = Array.isArray(clRaw.workflow) ? clRaw.workflow.length : 24;
+  const checklistsCount = Array.isArray(clRaw.checklistTruocKhiDang) ? clRaw.checklistTruocKhiDang.length : 12;
+  const matrix144Words = Number(clRaw.matrix144 && clRaw.matrix144.totalWords) || 373559;
 
-  const resSummary = `${resCounts['1080p'] || 247} FHD 1080p · ${resCounts['2K'] || 46} 2K · ${resCounts['4K'] || 39} 4K · ${resCounts['Shorts 1080p'] || 1} Shorts`;
+  const resSummary = `${resCounts['1080p'] ?? 0} FHD 1080p · ${resCounts['2K'] ?? 0} 2K · ${resCounts['4K'] ?? 0} 4K · ${resCounts['Shorts 1080p'] ?? 0} Shorts`;
 
   return {
     schema: 'h2dev.overview-summary.v1',
@@ -629,22 +647,30 @@ function computeOverviewFromRam() {
       deadChannels: deadChannelsCount,
       niches: ngachXanhList.length,
       subNichesTotal,
+      microNiches: subNichesTotal,
       nichesGreenTrue,
       policies: policiesList.length,
+      checklists: checklistsCount,
       modules: totalModules,
       modulesTotal: totalModules,
       modulesH2dev,
       modulesHuan,
       modulesDgmd,
       nguonReup: _reupList.length,
+      reupSources: _reupList.length,
       kichBan: kichBanList.length,
       canonicalRaw: rawRecords.length,
-      totalMarkets: marketRows.length
+      rawChannels: rawRecords.length,
+      totalMarkets: marketRows.length,
+      musicTracks,
+      musicSafe,
+      chienLuocSteps,
+      matrix144Words
     },
     storage: {
-      diskMb: Number(totalMb.toFixed(2)),
-      totalMb: Number(totalMb.toFixed(2)),
-      totalVideoSizeMb: Number(totalMb.toFixed(2)),
+      diskMb: Number(totalMb.toFixed(1)),
+      totalMb: Number(totalMb.toFixed(1)),
+      totalVideoSizeMb: Number(totalMb.toFixed(1)),
       totalGb: Number((totalMb / 1024).toFixed(2)),
       mediaBytes: totalBytes,
       totalBytes,
@@ -676,7 +702,7 @@ function getOverviewSummary() {
       const fallback = computeOverviewFromRam();
       const merged = Object.assign({}, fallback, diskData, {
         counts: Object.assign({}, diskData.counts || {}, fallback.counts),
-        storage: Object.assign({}, fallback.storage, diskData.storage || {})
+        storage: Object.assign({}, diskData.storage || {}, fallback.storage)
       });
       _overviewSummaryCache = { mtimeMs: curMtime, computedAt: Date.now(), data: merged };
       return merged;

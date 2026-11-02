@@ -5,7 +5,7 @@ track: "h2dev"
 module_id: "H2DEV-M05"
 module_title: "Module 3 — Tự train Prompt bất kỳ chủ đề mình muốn"
 seq: "03"
-niche: "Prompt AI & Nhân Bản Kịch Bản"
+niche: "Triết Lý Nhân Sinh View Việt"
 markets: ["🇻🇳 Việt"]
 duration: "33:10"
 published_at: "2025-08-21"
@@ -18,9 +18,9 @@ player_url: "/player.html?sku=VIDEO-b380a1&track=h2dev"
 # VIDEO-b380a1 — Share Key (ngách cực nhỏ) view Việt mới và hướng dẫn tự tạo prompt lấy kịch bản theo chủ yếu bất kỳ - UPDATE 8/8/2025
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (148 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
 > - **Module:** [[modules/H2DEV-M05|H2DEV-M05 — Module 3 — Tự train Prompt bất kỳ chủ đề mình muốn]] (Bài `#03`)  
-> - **Ngách nội dung (Niche):** [[niches/prompt-ai-nhan-ban-kich-ban|Prompt AI & Nhân Bản Kịch Bản]]  
+> - **Ngách nội dung (Niche):** [[niches/triet-ly-nhan-sinh-view-viet|Triết Lý Nhân Sinh View Việt]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `33:10` | **Ngày đăng:** `2025-08-21`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-b380a1&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-b380a1/README.md)
 

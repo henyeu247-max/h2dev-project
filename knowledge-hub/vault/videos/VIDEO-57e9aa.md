@@ -6,7 +6,7 @@ module_id: "HUAN-M11"
 module_title: "CASE STUDY THÀNH CÔNG CẬP NHẬT LIÊN TỤC"
 seq: "04"
 niche: "Case Study Tăng Trưởng & Kiên Trì Cày Video"
-markets: ["🇻🇳 Việt", "🇺🇸 US / Global"]
+markets: ["🇻🇳 Việt"]
 duration: "02:37"
 published_at: "2026-09-01"
 toolsCount: 2
@@ -21,7 +21,7 @@ player_url: "/player.html?sku=VIDEO-57e9aa&track=huan"
 > - **Track:** [[tracks/TRACK-HUAN|Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)]]  
 > - **Module:** [[modules/HUAN-M11|HUAN-M11 — CASE STUDY THÀNH CÔNG CẬP NHẬT LIÊN TỤC]] (Bài `#04`)  
 > - **Ngách nội dung (Niche):** [[niches/case-study-tang-truong-kien-tri-cay-video|Case Study Tăng Trưởng & Kiên Trì Cày Video]]  
-> - **Thị trường:** 🇻🇳 Việt · 🇺🇸 US / Global | **Thời lượng:** `02:37` | **Ngày đăng:** `2026-09-01`  
+> - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `02:37` | **Ngày đăng:** `2026-09-01`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-57e9aa&track=huan) · [Hồ sơ gốc README.md](../../../docs/VIDEO-57e9aa/README.md)
 
 ---

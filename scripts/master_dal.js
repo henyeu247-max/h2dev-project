@@ -448,10 +448,10 @@ function searchFts(keyword, limit = 20, entityTypeFilter = '') {
   const sql = `
     SELECT entity_id, entity_type, title,
            snippet(search_fts, 3, '<mark>', '</mark>', '...', 15) AS snippet,
-           bm25(search_fts, 15.0, 1.0, 12.0, 1.8, 1.5) AS _rank
+           rank AS _rank
     FROM search_fts
     WHERE search_fts MATCH ?
-    ORDER BY _rank ASC
+    ORDER BY rank ASC
     LIMIT ?
   `;
 

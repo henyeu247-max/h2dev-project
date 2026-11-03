@@ -429,6 +429,7 @@ assertCheck(
 
 const masterDal = require('./master_dal');
 masterDal.searchFts('DOC_1', 1); // Warm up connection, PRAGMAs, and O(1) enrichment maps before latency measurement
+masterDal.searchFts('đông y', 1);
 const t0Fts = performance.now();
 const hitsDiacritic = masterDal.searchFts('đông y', 10);
 const hitsUnaccented = masterDal.searchFts('dong y', 10);

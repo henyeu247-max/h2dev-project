@@ -12,7 +12,7 @@ tracks: ["h2dev"]
 - **Hiện diện trên các Track:** `H2DEV`
 
 ## 1. Các Video Bài Giảng Thuộc Ngách (1)
-- [[videos/VIDEO-448a91|VIDEO-448a91 — Thực chiến share ngách view ngoại Thị trường Nhật Bản - Tặng kèm skill edit video  |  Update 27-10-2026]] (`H2DEV` · `00:00`)
+- [[videos/VIDEO-448a91|VIDEO-448a91 — Thực chiến share ngách view ngoại Thị trường Nhật Bản - Tặng kèm skill edit video  |  Update 27-10-2026]] (`H2DEV` · `24:33`)
 
 ## 2. Kênh Đối Thủ / Kênh Mẫu Liên Quan (1)
 - [[channels/kodaikaranotayori|@kodaikaranotayori]]

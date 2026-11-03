@@ -83,6 +83,19 @@
     if ((et === "lesson" || et === "video") && /^(?:VIDEO|ZOOM|HUAN|DGMD)-[A-Za-z0-9-]+$/i.test(id)) {
       return { href: "/lotrinh/" + encodeURIComponent(id), label: "Mở bài học ↗", rawId: "" };
     }
+    if (et === "timestamp") {
+      var tsParts = id.split("@");
+      var tsSku = String(r.sku || tsParts[0] || "").trim();
+      var tsSec = (typeof r.seconds === "number" && r.seconds >= 0) ? r.seconds : (parseInt(tsParts[1] || "0", 10) || 0);
+      if (/^(?:VIDEO|ZOOM|HUAN|DGMD)-[A-Za-z0-9-]+$/i.test(tsSku)) {
+        return {
+          href: "/lotrinh/" + encodeURIComponent(tsSku) + (tsSec > 0 ? ("?t=" + tsSec) : ""),
+          label: "Mở bài học tại mốc " + tsSec + "s ↗",
+          rawId: ""
+        };
+      }
+      return null;
+    }
     if (et === "sop" && /^DOC_\d+$/.test(id)) {
       /* Tab Tai lieu render tu data-tabs/tai-lieu-full.json (khong tu DB) => can ca doc_id (nhan/kiem)
          VA vi tri trong JSON (di) de mo dung 1 muc. server bo sung doc_index (do that 300/300). */
@@ -91,13 +104,13 @@
       return { href: "/tai-lieu?did=" + encodeURIComponent(id) + "&di=" + docIdx, label: "Mở đúng tài liệu trong tab Tài liệu ↗", rawId: "" };
     }
     if (et === "transcript" && parentRawId) {
-      return { href: "/rawkenh?rid=" + encodeURIComponent(parentRawId), label: "Mở đúng kênh chứa video ↗", rawId: parentRawId };
+      return { href: "/rawkenh?rid=" + encodeURIComponent(parentRawId) + (id ? "&vid=" + encodeURIComponent(id) : ""), label: "Mở đúng kênh chứa video ↗", rawId: parentRawId };
     }
     if (et === "policy") {
-      return { href: "/chienluoc?sub=policy", label: "Mở trụ cột Chính sách YouTube 2026 ↗", rawId: "" };
+      return { href: "/chienluoc?sub=policy" + (id ? "&item=" + encodeURIComponent(id) : ""), label: "Mở trụ cột Chính sách YouTube 2026 (" + id + ") ↗", rawId: "" };
     }
     if (et === "checklist") {
-      return { href: "/chienluoc?sub=policy", label: "Mở Checklist Trước Khi Đăng ↗", rawId: "" };
+      return { href: "/chienluoc?sub=policy" + (id ? "&item=" + encodeURIComponent(id) : ""), label: "Mở Checklist Trước Khi Đăng (" + id + ") ↗", rawId: "" };
     }
     if (et === "niche") {
       var nCodeMatch = String(id || "").match(/^(?:niche:)?(H\d{2})\b/i);
@@ -107,8 +120,27 @@
       var nName = String(r.niche_name || r.title || "").replace(/^\[[^\]]+\]\s*/, "").trim();
       return { href: "/ngachxanh" + (nName ? ("?niche=" + encodeURIComponent(nName)) : ""), label: "Mở đúng Ngách Xanh ↗", rawId: "" };
     }
+    if (et === "subniche") {
+      var snParent = String(r.niche_code || "").trim();
+      if (!snParent) {
+        var mTitleCode = String(r.title || "").match(/·\s*(H\d{2})\b/i) || String(id).match(/^SN-(H\d{2})-/i);
+        if (mTitleCode) snParent = mTitleCode[1].toUpperCase();
+      }
+      var qCode = snParent || id;
+      return { href: "/ngachxanh?q=" + encodeURIComponent(qCode) + "&sub=" + encodeURIComponent(id), label: "Mở Vi ngách (" + id + ") ↗", rawId: "" };
+    }
+    if (et === "meta") {
+      var metaCode = String(r.meta_code || id || "META-01").trim();
+      return { href: "/ngachxanh?q=" + encodeURIComponent(metaCode), label: "Mở Nhóm Vận Hành (" + metaCode + ") ↗", rawId: "" };
+    }
     if (et === "reup") {
-      return { href: "/nguonreup", label: "Mở Kho Nguồn Reup ↗", rawId: "" };
+      var mReup = String(r.reup_id || id || "").match(/^(?:REUP[-_]?)?0*(\d+)$/i);
+      if (mReup) {
+        var reupCode = "REUP-" + String(parseInt(mReup[1], 10)).padStart(3, "0");
+        return { href: "/nguonreup?reup=" + encodeURIComponent(reupCode), label: "Mở đúng Nguồn Reup (" + reupCode + ") ↗", rawId: "" };
+      }
+      var reupName = String(r.reup_name || r.title || "").replace(/^\[[^\]]+\]\s*/, "").trim();
+      return { href: reupName ? ("/nguonreup?rq=" + encodeURIComponent(reupName)) : "/nguonreup", label: "Mở Nguồn Reup ↗", rawId: "" };
     }
     return null;
   }
@@ -117,7 +149,7 @@
     return (rows || []).map(function (r) {
       var et = (r.entity_type || "").toLowerCase();
       /* PHASE 3 (2026-09-23): icon = TEN icon (he CSS mask), khong dung emoji. */
-      var icon = et === "channel" ? "tv" : et === "lesson" || et === "video" ? "graduation-cap" : et === "sop" ? "file-text" : et === "transcript" ? "scroll-text" : et === "policy" ? "shield" : et === "checklist" ? "check" : et === "niche" ? "flame" : et === "reup" ? "layers" : "search";
+      var icon = et === "channel" ? "tv" : et === "lesson" || et === "video" ? "graduation-cap" : et === "timestamp" ? "clock" : et === "sop" ? "file-text" : et === "transcript" ? "scroll-text" : et === "policy" ? "shield" : et === "checklist" ? "check" : (et === "niche" || et === "subniche") ? "flame" : (et === "reup" || et === "meta") ? "layers" : "search";
       var badge = r.entity_type || "FTS";
       var dest = ftsDestination(et, r);
       return {

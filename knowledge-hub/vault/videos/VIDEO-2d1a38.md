@@ -7,7 +7,7 @@ module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi 
 seq: "105"
 niche: "Lịch Sử Quân Sự & Bản Đồ Địa Hình 3D (US)"
 markets: ["🇺🇸 Mỹ", "🌐 Ngoại"]
-duration: "00:00"
+duration: "35:21"
 published_at: "2026-10-29"
 toolsCount: 1
 channelsCount: 1
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-2d1a38&track=h2dev"
 # VIDEO-2d1a38 — Hướng dẫn Thực chiến ngách mới Thị trường Hoa Kỳ (US) + Tặng kèm Skill edit video tự động 100% giống đối thủ  |  Update 29-10-2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#105`)  
 > - **Ngách nội dung (Niche):** [[niches/lich-su-quan-su-ban-do-dia-hinh-3d-us|Lịch Sử Quân Sự & Bản Đồ Địa Hình 3D (US)]]  
-> - **Thị trường:** 🇺🇸 Mỹ · 🌐 Ngoại | **Thời lượng:** `00:00` | **Ngày đăng:** `2026-10-29`  
+> - **Thị trường:** 🇺🇸 Mỹ · 🌐 Ngoại | **Thời lượng:** `35:21` | **Ngày đăng:** `2026-10-29`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-2d1a38&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-2d1a38/README.md)
 
 ---

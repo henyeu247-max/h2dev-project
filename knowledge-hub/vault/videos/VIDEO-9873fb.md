@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-9873fb&track=h2dev"
 # VIDEO-9873fb — Khám kênh thực tế thành viên Pro sau video đầu tiên – Phân tích dữ liệu và hướng dẫn áp dụng tư duy nhân bản thị trường để phát triển kênh
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M00|H2DEV-M00 — Bắt đầu tại đây — Cộng đồng & Hỗ trợ]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/kham-kenh-thuc-chien|Khám Kênh Thực Chiến]]  
 > - **Thị trường:** 🇯🇵 Nhật | **Thời lượng:** `4:36` | **Ngày đăng:** `2026-04-15`  

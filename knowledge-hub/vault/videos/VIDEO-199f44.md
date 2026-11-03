@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-199f44&track=h2dev"
 # VIDEO-199f44 — Hướng dẫn cách ngâm kênh và các thủ thuật mẹo tương tác kênh đối thủ trong quá trình ngâm kênh
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M02|H2DEV-M02 — Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)]] (Bài `#10`)  
 > - **Ngách nội dung (Niche):** [[niches/ky-thuat-ngam-kenh-tuong-tac-kenh-doi-thu|Kỹ Thuật Ngâm Kênh & Tương Tác Kênh Đối Thủ]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `2:25` | **Ngày đăng:** `2025-08-22`  

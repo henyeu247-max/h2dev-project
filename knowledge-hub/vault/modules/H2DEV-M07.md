@@ -7,7 +7,7 @@ lesson_count: 6
 
 # Module H2DEV-M07 — Module 5 — Edit video & Thumbnail chuẩn A-Z
 
-- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]
 - **Tổng số bài giảng:** `6` video
 - **Mô tả:** Hướng dẫn quy trình làm thumb, clone thumb đối thủ, edit key Chill Dude / triết lý / Nonagon.
 

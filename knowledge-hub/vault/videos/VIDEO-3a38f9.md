@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-3a38f9&track=h2dev"
 # VIDEO-3a38f9 — Quá kinh khủng với 2 kênh mới hoàn toàn làm đúng ngách không bao giờ thiếu view - Share kênh Thị trường Hàn và Việt
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/triet-ly-doi-song-chuyen-nhan-gian|Triết Lý Đời Sống & Chuyện Nhân Gian]]  
 > - **Thị trường:** 🇰🇷 Hàn · 🇻🇳 Việt | **Thời lượng:** `11:11` | **Ngày đăng:** `2026-08-27`  

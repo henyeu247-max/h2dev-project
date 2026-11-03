@@ -1,14 +1,16 @@
 /* H2Main - G6 extract main app script from index.html */
 
-    const state = { tab: 'tatca', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', docBranch: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', kenhStatus: '', nxTier: '', nxMarket: '', nxQ: '', nxLimit: 0, rawQ: '', rawNiche: '', rawGroup: '', rawGroupOpen: '', rawNicheExpanded: false, promptNicheExpanded: false, rawStatus: '', rawVitality: '', rawFaceless: '', rawLang: '', rawPage: 1, docPage: 1, nxPage: 1,
+    const state = { tab: 'tatca', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', docBranch: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', kenhStatus: '', nxTier: '', nxMarket: '', nxBranch: '', nxSort: 'rank', nxQ: '', nxSub: '', nxLimit: 0, rawQ: '', rawNiche: '', rawGroup: '', rawGroupOpen: '', rawNicheExpanded: false, promptNicheExpanded: false, rawStatus: '', rawVitality: '', rawFaceless: '', rawLang: '', rawPage: 1, docPage: 1, nxPage: 1,
       /* FIX (uifix88) F1 — dinh danh DICH CHINH XAC tu ket qua tim kiem toan van (search_fts),
          de mo DUNG MOT muc thay vi loc theo ten/chuoi con (ten trung nhau -> ra nhieu muc).
            rawRid   = /rawkenh?rid=RAW-nnn   (id ho so Raw, khop records[i].id)
            kenhHandle = /kenh-mau?handle=@x  (handle khop TUYET DOI)
            docDid   = /tai-lieu?did=DOC_n    (doc_id trong DB, de hien nhan + chan lech)
            docIdx   = /tai-lieu?di=<n>        (vi tri 0-based trong data-tabs/tai-lieu-full.json) */
-      rawRid: '', kenhHandle: '', docDid: '', docIdx: -1, sodoQ: '', sodoNode: '',
-      tatcaMarketsExpanded: false, tatcaNichesExpanded: false, tatcaRecentExpanded: false };
+      rawRid: '', kenhHandle: '', docDid: '', docIdx: -1, reupId: '', sodoQ: '', sodoNode: '', sodoPathFrom: '', sodoPathTo: '', clMatrixCluster: 'all', clMatrixQ: '',
+      tatcaMarketsExpanded: (function () { try { return sessionStorage.getItem('h2dev-tatca-markets') === '1'; } catch (e) { return false; } })(),
+      tatcaNichesExpanded: (function () { try { return sessionStorage.getItem('h2dev-tatca-niches') === '1'; } catch (e) { return false; } })(),
+      tatcaRecentExpanded: (function () { try { return sessionStorage.getItem('h2dev-tatca-recent') === '1'; } catch (e) { return false; } })() };
     // G3: taxonomy tach ra assets/app/taxonomy.js (window.H2Taxonomy)
     // G3: helpers tach ra assets/app/ui-core.js (window.H2UICore)
     const {
@@ -98,7 +100,7 @@
      * (tabMarkup / more-menu) khong phai biet gi ve he icon. */
     TABS.forEach(t => { t.icon = ico(t.icon, 16); });
 
-    const APP_BUILD_VER = '20261031-uifix98';
+    const APP_BUILD_VER = '20261103-uifix102';
     // G-std: fallback chain like FckSignups useTools (primary -> no-ver -> fail soft)
     const _loadErrors = [];
     function noteLoadError(path, msg) {
@@ -199,7 +201,7 @@
           liveChannels: aKenh.filter(k => k && !k.dead).length,
           deadChannels: aKenh.filter(k => k && k.dead).length,
           nguonReup: aReup.length,
-          totalVideoSizeMb: totalMb || 88174,
+          totalVideoSizeMb: totalMb || 88334.5,
           modulesTotal: 36,
           rawChannels: 156,
           rawDeepProfiles: 149
@@ -207,23 +209,23 @@
       }
       const c = (raw && raw.counts) || raw || {};
       const st = (raw && raw.storage) || {};
-      const vH2Count = Number(c.videosH2dev ?? c.h2devVideos ?? c.videos ?? 153);
+      const vH2Count = Number(c.videosH2dev ?? c.h2devVideos ?? c.videos ?? 154);
       const vHuanCount = Number(c.videosHuan ?? c.huanVideos ?? 140);
-      const vDgmdCount = Number(c.videosDgmd ?? c.dgmdVideos ?? 52);
-      const totalVids = Number(c.totalVideos ?? c.videosTotal ?? (vH2Count + vHuanCount + vDgmdCount)) || 345;
+      const vDgmdCount = Number(c.videosDgmd ?? c.dgmdVideos ?? 53);
+      const totalVids = Number(c.totalVideos ?? c.videosTotal ?? (vH2Count + vHuanCount + vDgmdCount)) || 347;
       const summary = Object.assign({}, raw, {
         totalVideos: totalVids,
         videosH2dev: vH2Count,
         videosHuan: vHuanCount,
         videosDgmd: vDgmdCount,
-        documents: Number(c.documents ?? c.totalDocuments ?? c.taiLieu ?? 596),
+        documents: Number(c.documents ?? c.totalDocuments ?? c.taiLieu ?? 598),
         channels: Number(c.channels ?? c.totalChannels ?? c.kenhTotal ?? 1076),
         liveChannels: Number(c.liveChannels ?? c.kenhLive ?? 987),
         deadChannels: Number(c.deadChannels ?? c.kenhDead ?? 89),
         deadChannelsCount: Number(c.deadChannels ?? c.deadChannelsCount ?? c.kenhDead ?? 89),
         nguonReup: Number(c.nguonReup ?? c.reupSources ?? c.reupTotal ?? 52),
         reupSources: Number(c.nguonReup ?? c.reupSources ?? c.reupTotal ?? 52),
-        totalVideoSizeMb: Number(st.totalVideoSizeMb ?? st.diskMb ?? c.totalVideoSizeMb ?? c.diskMb ?? c.videoSizeMb ?? ((st.mediaBytes || c.mediaBytes) ? Math.round(Number(st.mediaBytes || c.mediaBytes) / (1024 * 1024)) : 88174.2)),
+        totalVideoSizeMb: Number(st.totalVideoSizeMb ?? st.diskMb ?? c.totalVideoSizeMb ?? c.diskMb ?? c.videoSizeMb ?? ((st.mediaBytes || c.mediaBytes) ? Math.round(Number(st.mediaBytes || c.mediaBytes) / (1024 * 1024)) : 88334.5)),
         modulesTotal: Number(c.modulesTotal ?? c.modules ?? c.totalModules ?? 36),
         modulesH2dev: Number(c.modulesH2dev ?? 12),
         modulesHuan: Number(c.modulesHuan ?? 13),
@@ -231,7 +233,7 @@
         musicTracks: Number(c.musicTracks ?? 49),
         musicSafe: Number(c.musicSafe ?? 36),
         chienLuocSteps: Number(c.chienLuocSteps ?? 24),
-        matrix144Words: Number(c.matrix144Words ?? 373559),
+        matrix144Words: Number(c.matrix144Words ?? 383276),
         rawChannels: Number(c.rawChannels ?? c.canonicalRaw ?? 156),
         rawDeepProfiles: Number(c.rawDeepProfiles ?? c.canonicalRawUniqueChannels ?? 149)
       });
@@ -277,6 +279,7 @@
       try {
         const u = new URL(location.href);
         const onReup = state.tab === 'nguonreup';
+        if (onReup && state.reupId) u.searchParams.set('reup', state.reupId); else u.searchParams.delete('reup');
         if (onReup && state.reupQ) u.searchParams.set('rq', state.reupQ); else if (state.tab !== 'rawkenh') u.searchParams.delete('rq');
         if (onReup && state.reupType) u.searchParams.set('rt', state.reupType); else u.searchParams.delete('rt');
         if (onReup && state.reupNiche) u.searchParams.set('rn', state.reupNiche); else if (state.tab !== 'rawkenh') u.searchParams.delete('rn');
@@ -300,7 +303,7 @@
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
     }
-    /* NANG CAP 2026-09-30: np/q/nt/nxm/nxl (tab Ngach xanh) — cung co che voi dp. */
+    /* NANG CAP 2026-09-30: np/q/sub/nt/nxm/nxl (tab Ngach xanh) — cung co che voi dp. */
     function syncNxPageUrl() {
       try {
         const u = new URL(location.href);
@@ -308,9 +311,12 @@
         if (onNx && state.nxPage > 1) u.searchParams.set('np', String(state.nxPage)); else u.searchParams.delete('np');
         if (onNx && state.nxQ) u.searchParams.set('q', state.nxQ); else if (state.tab !== 'lotrinh') u.searchParams.delete('q');
         if (onNx && !state.nxQ) u.searchParams.delete('niche');
+        if (onNx && state.nxSub) u.searchParams.set('sub', state.nxSub); else if (state.tab !== 'chienluoc') u.searchParams.delete('sub');
         if (onNx && state.nxTier) u.searchParams.set('nt', state.nxTier); else u.searchParams.delete('nt');
         if (onNx && state.nxMarket) u.searchParams.set('nxm', state.nxMarket); else u.searchParams.delete('nxm');
         if (onNx && !state.nxMarket) u.searchParams.delete('market');
+        if (onNx && state.nxBranch) u.searchParams.set('nxb', state.nxBranch); else u.searchParams.delete('nxb');
+        if (onNx && state.nxSort && state.nxSort !== 'rank') u.searchParams.set('nxs', state.nxSort); else u.searchParams.delete('nxs');
         if (onNx && state.nxLimit > 0) u.searchParams.set('nxl', String(state.nxLimit)); else u.searchParams.delete('nxl');
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
@@ -322,8 +328,8 @@
         const onVideo = state.tab === 'video';
         u.searchParams.delete('vbranch');
         u.searchParams.delete('vmod');
-        const hasActiveVideoFilter = Boolean(state.q || state.nicheFilter || state.skuFilter || state.marketFilter);
-        if (onVideo && (state.videoTrack === 'dgmd' || state.videoTrack === 'huan' || state.videoTrack === 'all' || (state.videoTrack === 'h2dev' && hasActiveVideoFilter))) u.searchParams.set('track', state.videoTrack); else if (state.tab !== 'lotrinh') u.searchParams.delete('track');
+        const hasActiveVideoFilter = Boolean(state.q || state.nicheFilter || state.skuFilter || state.marketFilter || state.recentOnly || state.watchFilter || state.freeOnly || (state.sortBy && state.sortBy !== 'newest') || state.videoPage > 1);
+        if (onVideo && (state.videoTrack === 'h2dev' || state.videoTrack === 'dgmd' || state.videoTrack === 'huan' || (state.videoTrack === 'all' && hasActiveVideoFilter))) u.searchParams.set('track', state.videoTrack); else if (state.tab !== 'lotrinh') u.searchParams.delete('track');
         if (onVideo && state.q) u.searchParams.set('vq', state.q); else u.searchParams.delete('vq');
         if (onVideo && state.nicheFilter) u.searchParams.set('niche', state.nicheFilter); else if (state.tab !== 'ngachxanh') u.searchParams.delete('niche');
         if (onVideo && state.skuFilter) u.searchParams.set('skus', state.skuFilter); else u.searchParams.delete('skus');
@@ -331,6 +337,7 @@
         if (onVideo && state.sortBy && state.sortBy !== 'newest') u.searchParams.set('sort', state.sortBy); else u.searchParams.delete('sort');
         if (onVideo && state.watchFilter) u.searchParams.set('watch', state.watchFilter); else u.searchParams.delete('watch');
         if (onVideo && state.freeOnly) u.searchParams.set('free', '1'); else u.searchParams.delete('free');
+        if (onVideo && state.recentOnly) u.searchParams.set('recent', '1'); else u.searchParams.delete('recent');
         if (onVideo && state.videoPage > 1) u.searchParams.set('vp', String(state.videoPage)); else u.searchParams.delete('vp');
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
@@ -369,7 +376,10 @@
     function syncClSubUrl() {
       try {
         const u = new URL(location.href);
-        if (state.tab === 'chienluoc' && state.clSubTab && state.clSubTab !== 'principles') u.searchParams.set('sub', state.clSubTab); else u.searchParams.delete('sub');
+        const onCl = state.tab === 'chienluoc';
+        if (onCl && state.clSubTab && state.clSubTab !== 'principles') u.searchParams.set('sub', state.clSubTab); else if (state.tab !== 'ngachxanh') u.searchParams.delete('sub');
+        if (onCl && state.clMatrixCluster && state.clMatrixCluster !== 'all') u.searchParams.set('clm', state.clMatrixCluster); else u.searchParams.delete('clm');
+        if (onCl && state.clMatrixQ) u.searchParams.set('clq', state.clMatrixQ); else u.searchParams.delete('clq');
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
     }
@@ -410,22 +420,26 @@
     function applyTabParams(url) {
       const t = state.tab;
       /* --- Video --- */
-      const hasActiveVideoFilter = Boolean(state.q || state.nicheFilter || state.skuFilter || state.marketFilter);
-      if (t === 'video' && (state.videoTrack === 'dgmd' || state.videoTrack === 'huan' || state.videoTrack === 'all' || (state.videoTrack === 'h2dev' && hasActiveVideoFilter))) url.searchParams.set('track', state.videoTrack);
+      const hasActiveVideoFilter = Boolean(state.q || state.nicheFilter || state.skuFilter || state.marketFilter || state.recentOnly || state.watchFilter || state.freeOnly || (state.sortBy && state.sortBy !== 'newest') || state.videoPage > 1);
+      if (t === 'video' && (state.videoTrack === 'h2dev' || state.videoTrack === 'dgmd' || state.videoTrack === 'huan' || (state.videoTrack === 'all' && hasActiveVideoFilter))) url.searchParams.set('track', state.videoTrack);
       if (t === 'video' && state.q) url.searchParams.set('vq', state.q);
       if (t === 'video' && state.skuFilter) url.searchParams.set('skus', state.skuFilter);
       if (t === 'video' && state.sortBy && state.sortBy !== 'newest') url.searchParams.set('sort', state.sortBy);
       if (t === 'video' && state.videoPage > 1) url.searchParams.set('vp', String(state.videoPage));
       if (t === 'video' && state.watchFilter) url.searchParams.set('watch', state.watchFilter);
       if (t === 'video' && state.freeOnly) url.searchParams.set('free', '1');
+      if (t === 'video' && state.recentOnly) url.searchParams.set('recent', '1');
       /* market/niche: chi co nghia o tab Video + Ngach xanh (truoc day dinh sang moi tab) */
       if (t === 'video' && state.marketFilter) url.searchParams.set('market', state.marketFilter);
       if (t === 'video' && state.nicheFilter) url.searchParams.set('niche', state.nicheFilter);
       /* --- Ngach xanh --- */
       if (t === 'ngachxanh' && state.nxPage > 1) url.searchParams.set('np', String(state.nxPage));
       if (t === 'ngachxanh' && state.nxQ) url.searchParams.set('q', state.nxQ);
+      if (t === 'ngachxanh' && state.nxSub) url.searchParams.set('sub', state.nxSub);
       if (t === 'ngachxanh' && state.nxTier) url.searchParams.set('nt', state.nxTier);
       if (t === 'ngachxanh' && state.nxMarket) url.searchParams.set('nxm', state.nxMarket);
+      if (t === 'ngachxanh' && state.nxBranch) url.searchParams.set('nxb', state.nxBranch);
+      if (t === 'ngachxanh' && state.nxSort && state.nxSort !== 'rank') url.searchParams.set('nxs', state.nxSort);
       if (t === 'ngachxanh' && state.nxLimit > 0) url.searchParams.set('nxl', String(state.nxLimit));
       /* --- Tai lieu --- */
       if (t === 'tai-lieu' && state.docPage > 1) url.searchParams.set('dp', String(state.docPage));
@@ -438,6 +452,7 @@
       if (t === 'tai-lieu' && state.kindFilter) url.searchParams.set('kind', state.kindFilter);
       if (t === 'tai-lieu' && state.promptNiche) url.searchParams.set('pn', state.promptNiche);
       /* --- Nguon reup --- */
+      if (t === 'nguonreup' && state.reupId) url.searchParams.set('reup', state.reupId);
       if (t === 'nguonreup' && state.reupQ) url.searchParams.set('rq', state.reupQ);
       if (t === 'nguonreup' && state.reupType) url.searchParams.set('rt', state.reupType);
       if (t === 'nguonreup' && state.reupNiche) url.searchParams.set('rn', state.reupNiche);
@@ -460,9 +475,13 @@
       if (t === 'lotrinh' && state.lotrinhTrack) url.searchParams.set('track', state.lotrinhTrack);
       /* --- Chien luoc --- */
       if (t === 'chienluoc' && state.clSubTab && state.clSubTab !== 'principles') url.searchParams.set('sub', state.clSubTab);
+      if (t === 'chienluoc' && state.clMatrixCluster && state.clMatrixCluster !== 'all') url.searchParams.set('clm', state.clMatrixCluster);
+      if (t === 'chienluoc' && state.clMatrixQ) url.searchParams.set('clq', state.clMatrixQ);
       /* --- So do DB --- */
       if (t === 'sodo' && state.sodoQ) url.searchParams.set('sq', state.sodoQ);
       if (t === 'sodo' && state.sodoNode) url.searchParams.set('snode', state.sodoNode);
+      if (t === 'sodo' && state.sodoPathFrom) url.searchParams.set('sfrom', state.sodoPathFrom);
+      if (t === 'sodo' && state.sodoPathTo) url.searchParams.set('sto', state.sodoPathTo);
       return url;
     }
     /* Xoa khoi state moi dinh danh/bo loc KHONG thuoc tab dang mo (chuyen tab khong mang rac theo).
@@ -475,37 +494,44 @@
       if (nextTab !== 'tai-lieu' && keep.docDid === undefined) { state.docDid = ''; state.docIdx = -1; }
       if (nextTab !== 'sodo' && keep.sodoNode === undefined) state.sodoNode = '';
       if (nextTab !== 'sodo' && keep.sodoQ === undefined) state.sodoQ = '';
-      if (nextTab !== 'chienluoc' && keep.clSubTab === undefined) state.clSubTab = 'principles';
+      if (nextTab !== 'sodo' && keep.sodoPathFrom === undefined) state.sodoPathFrom = '';
+      if (nextTab !== 'sodo' && keep.sodoPathTo === undefined) state.sodoPathTo = '';
+      if (nextTab !== 'chienluoc' && keep.clSubTab === undefined) { state.clSubTab = 'principles'; state.clMatrixCluster = 'all'; state.clMatrixQ = ''; }
       if (nextTab !== 'lotrinh' && keep.lotrinhTrack === undefined) state.lotrinhTrack = '';
       /* Bo loc raw chi song o tab Raw. */
       if (nextTab !== 'rawkenh') { state.rawQ = ''; state.rawNiche = ''; state.rawGroup = ''; state.rawVitality = ''; state.rawFaceless = ''; state.rawLang = ''; state.rawPage = 1; }
       /* Bo loc nguonreup chi song o tab Nguon reup. */
-      if (nextTab !== 'nguonreup') { state.reupQ = ''; state.reupType = ''; state.reupNiche = ''; }
+      if (nextTab !== 'nguonreup') { state.reupId = ''; state.reupQ = ''; state.reupType = ''; state.reupNiche = ''; }
       /* Bo loc ngachxanh chi song o tab Ngach xanh. */
-      if (nextTab !== 'ngachxanh') { state.nxQ = ''; state.nxTier = ''; state.nxMarket = ''; state.nxLimit = 0; state.nxPage = 1; }
+      if (nextTab !== 'ngachxanh') { state.nxQ = ''; state.nxSub = ''; state.nxTier = ''; state.nxMarket = ''; state.nxBranch = ''; state.nxSort = 'rank'; state.nxLimit = 0; state.nxPage = 1; }
       /* Tu khoa tab Tai lieu / Kenh mau. */
       if (nextTab !== 'tai-lieu' && keep.promptQ === undefined) { state.promptQ = ''; state.docBranch = ''; state.kindFilter = ''; state.promptNiche = ''; state.docPage = 1; }
       if (nextTab !== 'kenh-mau' && keep.kenhQ === undefined) { state.kenhQ = ''; state.kenhNiche = ''; state.kenhStatus = ''; state.kenhPage = 1; }
-      if (nextTab !== 'video') { state.watchFilter = ''; state.freeOnly = false; state.skuFilter = ''; state.q = ''; state.sortBy = ''; state.videoPage = 1; }
+      if (nextTab !== 'video') { state.watchFilter = ''; state.freeOnly = false; state.recentOnly = false; state.skuFilter = ''; state.q = ''; state.sortBy = ''; state.videoPage = 1; }
       if (nextTab !== 'video' && nextTab !== 'ngachxanh') { state.nicheFilter = ''; state.marketFilter = ''; }
     }
     function openTab(id, extra, pushHistory = true) {
-      state.tab = id || 'tatca';
+      const rawId = String(id || 'tatca').trim().toLowerCase();
+      state.tab = (typeof URL_ALIAS === 'object' && URL_ALIAS[rawId]) ? URL_ALIAS[rawId] : (id || 'tatca');
       resetScrollToTop();
-      // Nếu mở tab Video mà không kèm danh sách SKU cụ thể, xóa sạch mọi bộ lọc ẩn
-      // còn sót từ tab trước (ví dụ skuFilter từ Ngách xanh) để không rơi vào trạng thái 0/tổng.
-      if (state.tab === 'video' && !(extra && (extra.skuFilter || extra.nicheFilter || extra.marketFilter || extra.freeOnly || extra.watchFilter || extra.q))) {
+      // Khi mở tab Video, luôn reset sạch bộ lọc video về mặc định trước khi áp `extra`
+      // để tránh dính kết hợp ngầm với nicheFilter/marketFilter cũ gây 0/tổng.
+      if (state.tab === 'video') {
         state.skuFilter = '';
         state.nicheFilter = '';
         state.marketFilter = '';
         state.q = '';
         state.sortBy = '';
         state.freeOnly = false;
+        state.recentOnly = false;
         state.watchFilter = '';
         state.videoPage = 1;
       }
       clearForeignTabState(state.tab, extra);
       if (extra) Object.assign(state, extra);
+      if (state.tab === 'video' && extra && extra.videoTrack) {
+        try { sessionStorage.setItem('h2dev-video-track', extra.videoTrack); } catch (err) {}
+      }
       if (pushHistory) {
         try {
           /* PHASE 1: /tatca la canonical (tatca = trang mac dinh, khong con /tongquan) */
@@ -519,7 +545,7 @@
     }
     function openNicheVideos(key, skus) {
       try { sessionStorage.setItem('h2dev-video-track', 'all'); } catch (err) {}
-      openTab('video', { videoTrack: 'all', nicheFilter: key || '', skuFilter: skus || '', q: '', marketFilter: '', freeOnly: false, videoPage: 1 });
+      openTab('video', { videoTrack: 'all', nicheFilter: key || '', skuFilter: skus || '', q: '', marketFilter: '', freeOnly: false, recentOnly: false, videoPage: 1 });
     }
     function expandNicheMore(btn) {
       const wrap = btn.closest('[data-niche-list]');
@@ -593,25 +619,33 @@
         btn.addEventListener('click', e => {
           e.preventDefault();
           const kind = btn.getAttribute('data-toggle-tatca-list');
-          if (kind === 'markets') state.tatcaMarketsExpanded = !state.tatcaMarketsExpanded;
-          else if (kind === 'niches') state.tatcaNichesExpanded = !state.tatcaNichesExpanded;
-          else if (kind === 'recent') state.tatcaRecentExpanded = !state.tatcaRecentExpanded;
+          if (kind === 'markets') {
+            state.tatcaMarketsExpanded = !state.tatcaMarketsExpanded;
+            try { sessionStorage.setItem('h2dev-tatca-markets', state.tatcaMarketsExpanded ? '1' : '0'); } catch (err) {}
+          } else if (kind === 'niches') {
+            state.tatcaNichesExpanded = !state.tatcaNichesExpanded;
+            try { sessionStorage.setItem('h2dev-tatca-niches', state.tatcaNichesExpanded ? '1' : '0'); } catch (err) {}
+          } else if (kind === 'recent') {
+            state.tatcaRecentExpanded = !state.tatcaRecentExpanded;
+            try { sessionStorage.setItem('h2dev-tatca-recent', state.tatcaRecentExpanded ? '1' : '0'); } catch (err) {}
+          }
           render();
         });
       });
       document.querySelectorAll('[data-open-tab]').forEach(btn => {
         btn.addEventListener('click', e => {
           e.preventDefault();
-          const tab = btn.getAttribute('data-open-tab');
+          const rawTabAttr = (btn.getAttribute('data-open-tab') || '').trim();
+          const tab = (typeof URL_ALIAS === 'object' && URL_ALIAS[rawTabAttr.toLowerCase()]) ? URL_ALIAS[rawTabAttr.toLowerCase()] : rawTabAttr;
           const extra = {};
           if (tab === 'tai-lieu') {
             extra.kindFilter = btn.getAttribute('data-kind') || '';
-            extra.docBranch = btn.getAttribute('data-doc-branch') || '';
+            extra.docBranch = (btn.getAttribute('data-doc-branch') || '').toUpperCase();
             extra.promptNiche = btn.getAttribute('data-prompt-niche') || '';
             extra.docDid = btn.getAttribute('data-doc-did') || '';
             const rawDi = btn.getAttribute('data-doc-idx');
             extra.docIdx = (rawDi !== null && rawDi !== '' && Number.isInteger(Number(rawDi))) ? Number(rawDi) : -1;
-            extra.promptQ = '';
+            extra.promptQ = btn.getAttribute('data-doc-q') || '';
             extra.docPage = 1;
           }
           if (tab === 'lotrinh') {
@@ -637,38 +671,86 @@
               extra.videoTrack = 'all';
               try { sessionStorage.setItem('h2dev-video-track', 'all'); } catch (err) {}
             } else if (btn.getAttribute('data-kpi-card') === '1' && state.tab === 'chienluoc') {
-              extra.videoTrack = 'h2dev';
-              try { sessionStorage.setItem('h2dev-video-track', 'h2dev'); } catch (err) {}
+              extra.videoTrack = 'all';
+              try { sessionStorage.setItem('h2dev-video-track', 'all'); } catch (err) {}
             }
             extra.nicheFilter = btn.getAttribute('data-open-niche') || '';
             extra.skuFilter = btn.getAttribute('data-skus') || '';
             extra.marketFilter = btn.getAttribute('data-market-filter') || '';
             extra.q = '';
             extra.freeOnly = btn.getAttribute('data-free-only') === 'true';
+            extra.recentOnly = btn.getAttribute('data-recent-only') === 'true';
             extra.watchFilter = btn.getAttribute('data-watch-filter') || '';
             extra.videoPage = 1;
+          }
+          if (tab === 'ngachxanh') {
+            extra.nxQ = btn.getAttribute('data-nx-q') || '';
+            extra.nxSub = btn.getAttribute('data-nx-sub') || '';
+            extra.nxTier = '';
+            extra.nxMarket = '';
+            extra.nxBranch = '';
+            extra.nxPage = 1;
           }
           if (tab === 'kenh-mau') {
             extra.kenhNiche = btn.getAttribute('data-kenh-niche') || '';
             extra.kenhStatus = btn.getAttribute('data-kenh-status') || '';
-            extra.kenhQ = '';
+            extra.kenhHandle = btn.getAttribute('data-kenh-handle') || '';
+            extra.kenhQ = extra.kenhHandle || btn.getAttribute('data-kenh-q') || '';
+            extra.kenhPage = 1;
+          }
+          if (tab === 'rawkenh') {
+            extra.rawRid = btn.getAttribute('data-raw-rid') || '';
+            extra.rawQ = btn.getAttribute('data-raw-q') || '';
+            extra.rawNiche = btn.getAttribute('data-raw-niche') || '';
+            extra.rawVitality = btn.getAttribute('data-raw-vitality') || '';
+            extra.rawLang = btn.getAttribute('data-raw-lang') || '';
+            extra.rawPage = 1;
           }
           if (tab === 'sodo') {
             extra.sodoNode = btn.getAttribute('data-sodo-node') || '';
             extra.sodoQ = btn.getAttribute('data-sodo-q') || '';
+            extra.sodoPathFrom = btn.getAttribute('data-sodo-path-from') || '';
+            extra.sodoPathTo = btn.getAttribute('data-sodo-path-to') || '';
+          }
+          if (tab === 'nguonreup') {
+            extra.reupId = btn.getAttribute('data-reup-id') || '';
+            extra.reupQ = btn.getAttribute('data-reup-q') || '';
+            extra.reupType = btn.getAttribute('data-reup-type') || '';
+            extra.reupNiche = btn.getAttribute('data-reup-niche') || '';
           }
           openTab(tab, extra);
+          if (tab === 'ngachxanh' || tab === 'nguonreup') {
+            setTimeout(() => applyDeepTargetScrollAndModal(), 60);
+          }
         });
       });
-      document.querySelectorAll('[data-sodo-jump]').forEach(btn => {
-        btn.onclick = (e) => {
+      document.querySelectorAll('[data-sodo-spa-url]').forEach(link => {
+        link.onclick = (e) => {
+          if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || e.button !== 0) return;
+          const url = link.getAttribute('data-sodo-spa-url') || link.getAttribute('href') || '';
+          if (!url) return;
           e.preventDefault();
-          e.stopPropagation();
+          navigateDirectUrl(url);
+        };
+      });
+      document.querySelectorAll('[data-sodo-jump]').forEach(btn => {
+        const triggerSodoJump = (e) => {
+          if (e) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
           const snode = btn.getAttribute('data-sodo-jump') || '';
+          const hasSqAttr = btn.hasAttribute('data-sodo-q');
           const sq = btn.getAttribute('data-sodo-q') || '';
           if (state.tab === 'sodo') {
-            if (snode) state.sodoNode = snode;
-            if (sq !== '') state.sodoQ = sq;
+            if (hasSqAttr) {
+              const isSamePreset = (!snode || state.sodoNode === snode) && state.sodoQ === sq;
+              if (snode) state.sodoNode = snode;
+              state.sodoQ = isSamePreset ? '' : sq;
+            } else {
+              if (snode) state.sodoNode = snode;
+              state.sodoQ = '';
+            }
             try {
               const u = applyTabParams(new URL('/sodo', location.origin));
               history.replaceState(history.state, '', u.pathname + u.search);
@@ -676,6 +758,12 @@
             render();
           } else {
             openTab('sodo', { sodoNode: snode, sodoQ: sq });
+          }
+        };
+        btn.onclick = triggerSodoJump;
+        btn.onkeydown = (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            triggerSodoJump(e);
           }
         };
       });
@@ -704,49 +792,73 @@
           render();
         };
       }
+      const runSodoPathTrace = async (fromQ, toQ) => {
+        const outEl = document.getElementById('sodo-path-result');
+        if (!outEl || !fromQ || !toQ) return;
+        state.sodoPathFrom = fromQ;
+        state.sodoPathTo = toQ;
+        try {
+          const u = applyTabParams(new URL('/sodo', location.origin));
+          history.replaceState(history.state, '', u.pathname + u.search);
+        } catch (_) {}
+        outEl.innerHTML = '<div class="text-xs text-gray-400">Đang truy vết đường đi ngắn nhất...</div>';
+        try {
+          const r = await fetch(`/api/kg/path?from=${encodeURIComponent(fromQ)}&to=${encodeURIComponent(toQ)}`, { cache: 'no-store' });
+          const d = await r.json();
+          if (!d || !d.found) {
+            outEl.innerHTML = `<div class="p-2.5 rounded-lg bg-rose-950/30 border border-rose-500/40 text-xs text-rose-300" role="alert">${esc((d && d.error) || 'Không tìm thấy đường nối giữa 2 thực thể này.')}</div>`;
+            return;
+          }
+          outEl.innerHTML = `
+            <div class="p-3 rounded-xl bg-surface-2 border border-border text-xs">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="font-semibold text-emerald-400">Tìm thấy đường nối ngắn nhất (${d.hops} bước · ${d.latencyMs} ms)</span>
+              </div>
+              <div class="flex flex-wrap items-center gap-1.5">
+                ${(d.pathNodes || []).map((n, idx) => `
+                  <button type="button" class="filter-btn text-xs" data-sodo-jump="${esc(n.id)}">[${esc(n.type.toUpperCase())}] ${esc(n.label)}</button>
+                  ${idx < (d.pathEdges || []).length ? `<span class="text-gray-400 font-mono">${esc(d.pathEdges[idx].dir)} (${esc(d.pathEdges[idx].relation)}) ${esc(d.pathEdges[idx].dir)}</span>` : ''}
+                `).join('')}
+              </div>
+            </div>
+          `;
+          outEl.querySelectorAll('[data-sodo-jump]').forEach(b => {
+            b.onclick = () => {
+              state.sodoNode = b.getAttribute('data-sodo-jump') || '';
+              state.sodoQ = '';
+              try {
+                const u = applyTabParams(new URL('/sodo', location.origin));
+                history.replaceState(history.state, '', u.pathname + u.search);
+              } catch (_) {}
+              render();
+            };
+          });
+        } catch (err) {
+          outEl.innerHTML = '<div class="text-xs text-rose-400" role="alert">Lỗi truy vấn đường đi đồ thị.</div>';
+        }
+      };
       const pathBtn = document.getElementById('sodo-path-btn');
       if (pathBtn) {
-        pathBtn.onclick = async (e) => {
+        pathBtn.onclick = (e) => {
           e.preventDefault();
           const fromEl = document.getElementById('sodo-path-from');
           const toEl = document.getElementById('sodo-path-to');
-          const outEl = document.getElementById('sodo-path-result');
-          if (!fromEl || !toEl || !outEl) return;
-          const fromQ = fromEl.value.trim();
-          const toQ = toEl.value.trim();
-          if (!fromQ || !toQ) return;
-          outEl.innerHTML = '<div class="text-xs text-gray-400">Đang truy vết đường đi ngắn nhất...</div>';
-          try {
-            const r = await fetch(`/api/kg/path?from=${encodeURIComponent(fromQ)}&to=${encodeURIComponent(toQ)}`, { cache: 'no-store' });
-            const d = await r.json();
-            if (!d || !d.found) {
-              outEl.innerHTML = `<div class="text-xs text-rose-400">${esc((d && d.error) || 'Không tìm thấy đường nối')}</div>`;
-              return;
-            }
-            outEl.innerHTML = `
-              <div class="p-3 rounded-xl bg-surface-2 border border-border text-xs">
-                <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                  <span class="font-semibold text-emerald-400">Tìm thấy đường nối ngắn nhất (${d.hops} bước · ${d.latencyMs} ms)</span>
-                </div>
-                <div class="flex flex-wrap items-center gap-1.5">
-                  ${(d.pathNodes || []).map((n, idx) => `
-                    <button type="button" class="filter-btn text-xs" data-sodo-jump="${esc(n.id)}">[${esc(n.type.toUpperCase())}] ${esc(n.label)}</button>
-                    ${idx < (d.pathEdges || []).length ? `<span class="text-gray-400 font-mono">${esc(d.pathEdges[idx].dir)} (${esc(d.pathEdges[idx].relation)}) ${esc(d.pathEdges[idx].dir)}</span>` : ''}
-                  `).join('')}
-                </div>
-              </div>
-            `;
-            outEl.querySelectorAll('[data-sodo-jump]').forEach(b => {
-              b.onclick = () => {
-                state.sodoNode = b.getAttribute('data-sodo-jump') || '';
-                render();
-              };
-            });
-          } catch (err) {
-            outEl.innerHTML = '<div class="text-xs text-rose-400">Lỗi truy vấn đường đi đồ thị.</div>';
-          }
+          if (!fromEl || !toEl) return;
+          runSodoPathTrace(fromEl.value.trim(), toEl.value.trim());
         };
       }
+      document.querySelectorAll('[data-sodo-path-from][data-sodo-path-to]').forEach(presetBtn => {
+        presetBtn.onclick = (e) => {
+          e.preventDefault();
+          const fVal = presetBtn.getAttribute('data-sodo-path-from') || '';
+          const tVal = presetBtn.getAttribute('data-sodo-path-to') || '';
+          const fromEl = document.getElementById('sodo-path-from');
+          const toEl = document.getElementById('sodo-path-to');
+          if (fromEl) fromEl.value = fVal;
+          if (toEl) toEl.value = tVal;
+          runSodoPathTrace(fVal, tVal);
+        };
+      });
       document.querySelectorAll('[data-cl-tab]').forEach(btn => {
         btn.onclick = (e) => {
           e.preventDefault();
@@ -756,6 +868,83 @@
           resetScrollToTop();
         };
       });
+      const clSearchInp = document.getElementById('cl-matrix-search');
+      if (clSearchInp) {
+        clSearchInp.oninput = () => {
+          state.clMatrixQ = (clSearchInp.value || '').trim();
+          const container = document.getElementById('cl-panel-matrix144');
+          if (container) applyMatrix144Filter(container);
+        };
+      }
+      const clClearBtn = document.getElementById('cl-matrix-clear');
+      if (clClearBtn) {
+        clClearBtn.onclick = (e) => {
+          e.preventDefault();
+          state.clMatrixCluster = 'all';
+          state.clMatrixQ = '';
+          const inp = document.getElementById('cl-matrix-search');
+          if (inp) inp.value = '';
+          const container = document.getElementById('cl-panel-matrix144');
+          if (container) applyMatrix144Filter(container);
+        };
+      }
+      const clResetCheckBtn = document.getElementById('cl-checklist-reset');
+      if (clResetCheckBtn) {
+        clResetCheckBtn.onclick = (e) => {
+          e.preventDefault();
+          const boxes = document.querySelectorAll('#cl-checklist-12 [data-check-id]');
+          boxes.forEach(box => {
+            const cid = box.getAttribute('data-check-id');
+            if (cid) saveCheck(cid, false);
+            box.checked = false;
+            box.setAttribute('aria-checked', 'false');
+          });
+          const prog = document.getElementById('cl-checklist-progress');
+          if (prog) prog.textContent = `Đã hoàn thành 0/${boxes.length}`;
+        };
+      }
+    }
+    function applyMatrix144Filter(container) {
+      if (!container) return;
+      const cluster = state.clMatrixCluster || 'all';
+      const qLow = String(state.clMatrixQ || '').trim().toLowerCase();
+      container.querySelectorAll('[data-matrix-filter]').forEach(b => {
+        const isAct = b.getAttribute('data-matrix-filter') === cluster;
+        b.classList.toggle('active', isAct);
+        b.setAttribute('aria-pressed', isAct ? 'true' : 'false');
+      });
+      const cards = container.querySelectorAll('#cl-matrix-grid article');
+      let visCount = 0;
+      cards.forEach(card => {
+        const c = card.getAttribute('data-matrix-cluster');
+        const hay = card.getAttribute('data-matrix-search') || '';
+        const matchC = cluster === 'all' || c === cluster;
+        const matchQ = !qLow || hay.includes(qLow);
+        if (matchC && matchQ) {
+          card.style.display = '';
+          visCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      const cntEl = document.getElementById('cl-matrix-count');
+      if (cntEl) cntEl.textContent = `${visCount}/${cards.length}`;
+      const clrBtn = document.getElementById('cl-matrix-clear');
+      if (clrBtn) clrBtn.classList.toggle('hidden', !(qLow || cluster !== 'all'));
+      const descBox = document.getElementById('cl-matrix-cluster-desc');
+      if (descBox) {
+        const clData = CAT['data-tabs/chien-luoc.json'];
+        const clusters = (clData && clData.matrix144 && clData.matrix144.clusters) || [];
+        const activeObj = cluster !== 'all' ? clusters.find(x => x && x.id === cluster) : null;
+        if (activeObj) {
+          descBox.classList.remove('hidden');
+          descBox.innerHTML = `<div class="flex flex-wrap items-center gap-2"><span class="px-2 py-0.5 rounded bg-brand-tint text-brand-tint-fg font-mono font-bold">${esc(activeObj.badge || activeObj.id)}</span><strong class="text-white">${esc(activeObj.name)}:</strong><span>${esc(activeObj.desc || '')}</span></div>`;
+        } else {
+          descBox.classList.add('hidden');
+          descBox.innerHTML = '';
+        }
+      }
+      syncClSubUrl();
     }
     document.addEventListener('click', (e) => {
       const btn = e.target.closest('[data-quick-action]');
@@ -794,24 +983,12 @@
     document.addEventListener('click', (e) => {
       const filterBtn = e.target.closest('[data-matrix-filter]');
       if (!filterBtn) return;
-      const cluster = filterBtn.getAttribute('data-matrix-filter');
+      const rawCluster = filterBtn.getAttribute('data-matrix-filter') || 'all';
       const container = filterBtn.closest('#cl-panel-matrix144');
       if (!container) return;
-      
-      container.querySelectorAll('[data-matrix-filter]').forEach(b => {
-        if (b === filterBtn) b.classList.add('active');
-        else b.classList.remove('active');
-      });
-
-      const cards = container.querySelectorAll('#cl-matrix-grid article');
-      cards.forEach(card => {
-        const c = card.getAttribute('data-matrix-cluster');
-        if (cluster === 'all' || c === cluster) {
-          card.style.display = '';
-        } else {
-          card.style.display = 'none';
-        }
-      });
+      const isAlreadyActive = rawCluster !== 'all' && filterBtn.classList.contains('active');
+      state.clMatrixCluster = isAlreadyActive ? 'all' : rawCluster;
+      applyMatrix144Filter(container);
     });
     document.addEventListener('keydown', (e) => {
       const btn = e.target.closest('.quick-access [role="tablist"] [data-quick-action]');
@@ -871,7 +1048,7 @@
       ico, stripDecorEmoji,
       highlightQuery, fmtMb, fmtBytes, loadChecks, loadWatched,
       watchedBadge, watchedProgress, watchedResumeLabel,
-      quickAccessBar, openNicheVideos, expandNicheMore, bindNicheActions,
+      quickAccessBar, openNicheVideos, expandNicheMore, bindNicheActions, syncVideoUrl,
       RAW_NICHE_GROUPS, RAW_NICHE_TO_GROUP, rawNicheGroup, NICHE_MAP,
       APP_BUILD_VER: (typeof APP_BUILD_VER !== 'undefined' ? APP_BUILD_VER : '')
     });
@@ -900,9 +1077,14 @@
           /* FIX (uifix88) F1: nguoi dung go tay -> bo dinh danh 1 muc (did/di, rid, handle) de
              tim kiem lai toan bo, khong bi khoa trong 1 muc. */
           if (state.tab === 'tai-lieu') { state.promptQ = val; state.docPage = 1; state.docDid = ''; state.docIdx = -1; syncDocPageUrl(); }
-          else if (state.tab === 'nguonreup') { state.reupQ = val; syncReupUrl(); }
+          else if (state.tab === 'nguonreup') { state.reupQ = val; state.reupId = ''; syncReupUrl(); }
           else if (state.tab === 'kenh-mau') { state.kenhQ = val; state.kenhPage = 1; state.kenhHandle = ''; syncKenhUrl(); }
           else if (state.tab === 'rawkenh') { state.rawQ = val; state.rawPage = 1; state.rawRid = ''; syncRawUrl(); }
+          else if (state.tab === 'tatca') {
+            state.q = val;
+            const clearBtn = document.getElementById('btn-clear-tatca-q');
+            if (clearBtn) clearBtn.classList.toggle('hidden', !val);
+          }
           else { state.q = val; state.videoPage = 1; syncVideoUrl(); }
 
           // Real-time live suggestions for rawkenh tab
@@ -913,7 +1095,21 @@
           if (state.tab === 'video' && window.showVideoSearchSuggestions) {
             window.showVideoSearchSuggestions(val);
           }
+          // Real-time FTS5 suggestions for tatca, tai-lieu, and kenh-mau tabs
+          if (state.tab === 'tatca' && window.showTabFtsSuggestions) {
+            window.showTabFtsSuggestions(val, 'tatca-search-suggestions', 'fq');
+          }
+          if (state.tab === 'tai-lieu' && window.showTabFtsSuggestions) {
+            window.showTabFtsSuggestions(val, 'doc-search-suggestions', 'fq');
+          }
+          if (state.tab === 'kenh-mau' && window.showTabFtsSuggestions) {
+            window.showTabFtsSuggestions(val, 'kenh-search-suggestions', 'fq');
+          }
+          if (state.tab === 'nguonreup' && window.showTabFtsSuggestions) {
+            window.showTabFtsSuggestions(val, 'reup-search-suggestions', 'fq');
+          }
 
+          if (state.tab === 'tatca') return;
           clearTimeout(searchDebounceTimer);
           searchDebounceTimer = setTimeout(() => {
             render();
@@ -921,20 +1117,46 @@
         };
 
         fq.onfocus = () => {
+          if (window._videoSugDismissed) return;
           if (state.tab === 'rawkenh' && fq.value.trim() && window.showRawSearchSuggestions) {
             window.showRawSearchSuggestions(fq.value);
           }
           if (state.tab === 'video' && fq.value.trim() && window.showVideoSearchSuggestions) {
             window.showVideoSearchSuggestions(fq.value);
           }
+          if (state.tab === 'tatca' && fq.value.trim() && window.showTabFtsSuggestions) {
+            window.showTabFtsSuggestions(fq.value, 'tatca-search-suggestions', 'fq');
+          }
+          if (state.tab === 'tai-lieu' && fq.value.trim() && window.showTabFtsSuggestions) {
+            window.showTabFtsSuggestions(fq.value, 'doc-search-suggestions', 'fq');
+          }
+          if (state.tab === 'kenh-mau' && fq.value.trim() && window.showTabFtsSuggestions) {
+            window.showTabFtsSuggestions(fq.value, 'kenh-search-suggestions', 'fq');
+          }
+          if (state.tab === 'nguonreup' && fq.value.trim() && window.showTabFtsSuggestions) {
+            window.showTabFtsSuggestions(fq.value, 'reup-search-suggestions', 'fq');
+          }
         };
 
         let activeSugIdx = -1;
         fq.onkeydown = (e) => {
           const isVideoTab = (state.tab === 'video');
-          const boxId = isVideoTab ? 'video-search-suggestions' : 'raw-search-suggestions';
-          const rowClass = isVideoTab ? '.js-v-sug-row' : '.js-sug-row';
+          const isDocTab = (state.tab === 'tai-lieu');
+          const isKenhTab = (state.tab === 'kenh-mau');
+          const isTatcaTab = (state.tab === 'tatca');
+          const isReupTab = (state.tab === 'nguonreup');
+          const boxId = isVideoTab ? 'video-search-suggestions' : (isDocTab ? 'doc-search-suggestions' : (isKenhTab ? 'kenh-search-suggestions' : (isTatcaTab ? 'tatca-search-suggestions' : (isReupTab ? 'reup-search-suggestions' : 'raw-search-suggestions'))));
+          const rowClass = isVideoTab ? '.js-v-sug-row' : ((isDocTab || isKenhTab || isTatcaTab || isReupTab) ? '.js-tab-fts-row' : '.js-sug-row');
           const box = document.getElementById(boxId);
+          if (isTatcaTab && e.key === 'Enter' && (!box || box.classList.contains('hidden') || !box.querySelectorAll(rowClass).length)) {
+            const qVal = (fq.value || '').trim();
+            if (qVal) {
+              e.preventDefault();
+              try { sessionStorage.setItem('h2dev-video-track', 'all'); } catch (err) {}
+              openTab('video', { q: qVal, videoTrack: 'all', videoPage: 1 });
+            }
+            return;
+          }
           if (!box || box.classList.contains('hidden')) return;
           const rows = box.querySelectorAll(rowClass);
           if (!rows.length) return;
@@ -952,6 +1174,10 @@
               e.preventDefault();
               window._videoSugDismissed = true;
               rows[activeSugIdx].click();
+            } else if (isTatcaTab && rows[0]) {
+              e.preventDefault();
+              window._videoSugDismissed = true;
+              rows[0].click();
             } else {
               window._videoSugDismissed = true;
               box.classList.add('hidden');
@@ -960,6 +1186,19 @@
             window._videoSugDismissed = true;
             box.classList.add('hidden');
           }
+        };
+      }
+
+      const btnClearTatcaQ = document.getElementById('btn-clear-tatca-q');
+      if (btnClearTatcaQ) {
+        btnClearTatcaQ.onclick = (e) => {
+          e.stopPropagation();
+          state.q = '';
+          btnClearTatcaQ.classList.add('hidden');
+          const fqEl = document.getElementById('fq');
+          if (fqEl) { fqEl.value = ''; fqEl.focus(); }
+          const box = document.getElementById('tatca-search-suggestions');
+          if (box) box.classList.add('hidden');
         };
       }
 
@@ -1011,7 +1250,7 @@
             /* FIX (uifix87) LỖI 2: goi y FTS (kenh/SOP/transcript/bai hoc tu Master DB) hoac moc tua (timestamp)
                -> bam vao phai DIEU HUONG toi dich that (directUrl), khong duoc chi dien state.q. */
             if (rowType === 'fts' || rowType === 'timestamp') {
-              if (directUrl) { location.href = directUrl; return; }
+              if (directUrl) { navigateDirectUrl(directUrl); return; }
               window.H2Search.showFtsNotice(vSugBox, 'dòng này không có đích mở được nên không lọc theo tên');
               return;
             }
@@ -1022,15 +1261,22 @@
             state.q = term || sku;
             state.skuFilter = '';
             state.nicheFilter = '';
+            state.marketFilter = '';
+            state.freeOnly = false;
+            state.recentOnly = false;
+            state.watchFilter = '';
             if (sku && state.videoTrack !== 'all') {
               const skuUp = sku.toUpperCase();
               const matchedVid = (window._allVideos || []).find(x => x && String(x.sku || '').toUpperCase() === skuUp)
                 || (Array.isArray(CAT['data/videos_huan.json']) && CAT['data/videos_huan.json'].find(x => x && String(x.sku || '').toUpperCase() === skuUp))
                 || (Array.isArray(CAT['data/videos_dgmd.json']) && CAT['data/videos_dgmd.json'].find(x => x && String(x.sku || '').toUpperCase() === skuUp));
-              const isHuanSku = Boolean((matchedVid && (matchedVid.isHuan || matchedVid.platform === 'huan.academy' || matchedVid.track === 'huan' || /^HUAN-/i.test(matchedVid.module_id || ''))) || /^HUAN-/i.test(sku));
-              const isDgmdSku = Boolean((matchedVid && (matchedVid.isDgmd || matchedVid.platform === 'daigiamangdep.com' || matchedVid.track === 'dgmd' || /^DGMD-/i.test(matchedVid.module_id || ''))) || /^DGMD-/i.test(sku));
+              const isHuanSku = Boolean((matchedVid && (matchedVid._track === 'huan' || matchedVid.isHuan || matchedVid.platform === 'huan.academy' || matchedVid.track === 'huan' || /^HUAN-/i.test(matchedVid.module_id || ''))) || /^HUAN-/i.test(sku));
+              const isDgmdSku = Boolean((matchedVid && (matchedVid._track === 'dgmd' || matchedVid.isDgmd || matchedVid.platform === 'daigiamangdep.com' || matchedVid.track === 'dgmd' || /^DGMD-/i.test(matchedVid.module_id || ''))) || /^DGMD-/i.test(sku));
               const skuTrack = isHuanSku ? 'huan' : (isDgmdSku ? 'dgmd' : 'h2dev');
-              if (state.videoTrack !== skuTrack) state.videoTrack = 'all';
+              if (state.videoTrack !== skuTrack) {
+                state.videoTrack = 'all';
+                try { sessionStorage.setItem('h2dev-video-track', 'all'); } catch (err) {}
+              }
             }
             state.videoPage = 1;
             syncVideoUrl();
@@ -1062,7 +1308,7 @@
                dien state.rawQ = ten video thi bo loc raw ra 0 ho so (do that: 00/156). */
             if (type === 'fts') {
               const url = row.getAttribute('data-url');
-              if (url) { location.href = url; return; }
+              if (url) { navigateDirectUrl(url); return; }
               /* FIX (uifix88) F3: khong co dich that -> khong loc theo ten (ra 0 ket qua gia). */
               if (window.H2Search && window.H2Search.showFtsNotice) {
                 window.H2Search.showFtsNotice(sugBox, 'dòng này không có đích mở được nên không lọc theo tên');
@@ -1072,12 +1318,23 @@
             }
             if (type === 'niche') {
               state.rawNiche = term;
+              state.rawGroup = '';
+              state.rawVitality = '';
+              state.rawFaceless = '';
+              state.rawLang = '';
               state.rawQ = '';
               state.rawRid = '';
+              state.rawPage = 1;
             } else {
               /* FIX (uifix88) F1: dong goi y co rawId (video raw) -> mo DUNG 1 ho so bang id,
                  thay vi loc theo ten video (loc ten video truoc day ra 0 ho so). */
               const ridRow = row.getAttribute('data-raw-id') || '';
+              state.rawGroup = '';
+              state.rawNiche = '';
+              state.rawVitality = '';
+              state.rawFaceless = '';
+              state.rawLang = '';
+              state.rawPage = 1;
               if (ridRow) { state.rawRid = ridRow; state.rawQ = ''; }
               else { state.rawQ = term; state.rawRid = ''; }
             }
@@ -1087,48 +1344,244 @@
         };
       }
 
+      // Bind click handlers for FTS5 suggestion boxes on /tatca, /tai-lieu, /kenh-mau, /ngachxanh, /nguonreup
+      ['tatca-search-suggestions', 'doc-search-suggestions', 'kenh-search-suggestions', 'nx-search-suggestions', 'reup-search-suggestions'].forEach(id => {
+        const ftsBox = document.getElementById(id);
+        if (!ftsBox) return;
+        ftsBox.onclick = (e) => {
+          if (e.target.closest('.js-tab-fts-jump')) return;
+          const row = e.target.closest('.js-tab-fts-row');
+          if (row) {
+            e.stopPropagation();
+            const directUrl = row.getAttribute('data-url') || '';
+            window._videoSugDismissed = true;
+            ftsBox.classList.add('hidden');
+            if (directUrl) navigateDirectUrl(directUrl);
+          }
+        };
+      });
+
       // Outside click listener to dismiss suggestion dropdowns
       if (!window._searchOutsideBound) {
         window._searchOutsideBound = true;
         document.addEventListener('click', (e) => {
           const rawBox = document.getElementById('raw-search-suggestions');
           const vidBox = document.getElementById('video-search-suggestions');
+          const docBox = document.getElementById('doc-search-suggestions');
+          const kenhBox = document.getElementById('kenh-search-suggestions');
+          const nxBox = document.getElementById('nx-search-suggestions');
+          const tatcaBox = document.getElementById('tatca-search-suggestions');
+          const reupBox = document.getElementById('reup-search-suggestions');
           const fqEl = document.getElementById('fq');
-          if (rawBox && !rawBox.contains(e.target) && e.target !== fqEl) {
-            rawBox.classList.add('hidden');
-          }
-          if (vidBox && !vidBox.contains(e.target) && e.target !== fqEl) {
-            vidBox.classList.add('hidden');
-          }
+          const fqNxEl = document.getElementById('fq-nx');
+          if (rawBox && !rawBox.contains(e.target) && e.target !== fqEl) rawBox.classList.add('hidden');
+          if (vidBox && !vidBox.contains(e.target) && e.target !== fqEl) vidBox.classList.add('hidden');
+          if (docBox && !docBox.contains(e.target) && e.target !== fqEl) docBox.classList.add('hidden');
+          if (kenhBox && !kenhBox.contains(e.target) && e.target !== fqEl) kenhBox.classList.add('hidden');
+          if (nxBox && !nxBox.contains(e.target) && e.target !== fqNxEl) nxBox.classList.add('hidden');
+          if (tatcaBox && !tatcaBox.contains(e.target) && e.target !== fqEl) tatcaBox.classList.add('hidden');
+          if (reupBox && !reupBox.contains(e.target) && e.target !== fqEl) reupBox.classList.add('hidden');
         });
       }
 
+      const btnClearDocQ = document.getElementById('btn-clear-doc-q');
+      if (btnClearDocQ) {
+        btnClearDocQ.onclick = (e) => {
+          e.stopPropagation();
+          state.promptQ = '';
+          state.docDid = '';
+          state.docIdx = -1;
+          state.docPage = 1;
+          const fqEl = document.getElementById('fq');
+          if (fqEl) { fqEl.value = ''; fqEl.focus(); }
+          const box = document.getElementById('doc-search-suggestions');
+          if (box) box.classList.add('hidden');
+          syncDocPageUrl();
+          render();
+        };
+      }
+      document.querySelectorAll('[data-doc-kpi]').forEach(card => {
+        card.style.cursor = 'pointer';
+        card.onclick = () => {
+          const kpi = card.getAttribute('data-doc-kpi') || 'all';
+          state.docDid = '';
+          state.docIdx = -1;
+          state.docPage = 1;
+          if (kpi === 'all') {
+            state.promptQ = '';
+            state.docSourceFilter = '';
+            state.docBranch = '';
+            state.kindFilter = '';
+            state.promptNiche = '';
+          } else if (kpi === 'local') {
+            state.docSourceFilter = state.docSourceFilter === 'local' ? '' : 'local';
+          } else if (kpi === 'link') {
+            state.docSourceFilter = state.docSourceFilter === 'link' ? '' : 'link';
+          } else if (kpi === 'niches') {
+            state.promptNicheExpanded = true;
+          }
+          syncDocPageUrl();
+          Promise.resolve(render()).then(() => {
+            if (kpi === 'niches') {
+              const firstNicheBtn = document.querySelector('[data-prompt-niche]');
+              if (firstNicheBtn) scrollElementIntoContainer(firstNicheBtn);
+            }
+          });
+        };
+      });
       document.querySelectorAll('[data-doc-branch]').forEach(btn => {
         if (btn.hasAttribute('data-open-tab')) return;
-        btn.onclick = () => { state.docBranch = btn.getAttribute('data-doc-branch') || ''; state.docPage = 1; state.docDid = ''; state.docIdx = -1; syncDocPageUrl(); render(); };
+        btn.onclick = () => {
+          const val = btn.getAttribute('data-doc-branch') || '';
+          state.docBranch = (val && state.docBranch === val) ? '' : val;
+          state.docSourceFilter = '';
+          state.docPage = 1; state.docDid = ''; state.docIdx = -1; syncDocPageUrl(); render();
+        };
       });
       document.querySelectorAll('[data-kind]').forEach(btn => {
         if (btn.hasAttribute('data-open-tab')) return;
-        btn.onclick = () => { state.kindFilter = btn.getAttribute('data-kind') || ''; state.docPage = 1; syncDocPageUrl(); render(); };
+        btn.onclick = () => {
+          const val = btn.getAttribute('data-kind') || '';
+          state.kindFilter = (val && state.kindFilter === val) ? '' : val;
+          state.docSourceFilter = '';
+          state.docPage = 1; state.docDid = ''; state.docIdx = -1; syncDocPageUrl(); render();
+        };
       });
       const rp = document.getElementById('freset-prompt');
-      if (rp) { rp.onclick = () => { state.promptQ = ''; state.docBranch = ''; state.kindFilter = ''; state.promptNiche = ''; state.docPage = 1; state.docDid = ''; state.docIdx = -1; syncDocPageUrl(); render(); }; }
+      if (rp) { rp.onclick = () => { state.promptQ = ''; state.docSourceFilter = ''; state.docBranch = ''; state.kindFilter = ''; state.promptNiche = ''; state.docPage = 1; state.docDid = ''; state.docIdx = -1; syncDocPageUrl(); render(); }; }
       const pnToggle = document.querySelector('[data-prompt-niche-toggle]'); if (pnToggle) pnToggle.onclick = () => { state.promptNicheExpanded = !state.promptNicheExpanded; render(); };
       document.querySelectorAll('[data-prompt-niche]').forEach(btn => {
         if (btn.hasAttribute('data-open-tab')) return;
-        btn.onclick = () => { state.promptNiche = btn.getAttribute('data-prompt-niche') || ''; state.docPage = 1; syncDocPageUrl(); render(); };
+        btn.onclick = () => {
+          const val = btn.getAttribute('data-prompt-niche') || '';
+          state.promptNiche = (val && state.promptNiche === val) ? '' : val;
+          state.docPage = 1; state.docDid = ''; state.docIdx = -1; syncDocPageUrl(); render();
+        };
       });
-      document.querySelectorAll('[data-reup-type]').forEach(btn => { btn.onclick = () => { state.reupType = btn.getAttribute('data-reup-type') || ''; syncReupUrl(); render(); }; });
-      document.querySelectorAll('[data-reup-niche]').forEach(btn => { btn.onclick = () => { state.reupNiche = btn.getAttribute('data-reup-niche') || ''; syncReupUrl(); render(); }; });
+      const btnClearReupQ = document.getElementById('btn-clear-reup-q');
+      if (btnClearReupQ) {
+        btnClearReupQ.onclick = (e) => {
+          e.stopPropagation();
+          state.reupQ = '';
+          state.reupId = '';
+          const fqEl = document.getElementById('fq');
+          if (fqEl) { fqEl.value = ''; fqEl.focus(); }
+          const box = document.getElementById('reup-search-suggestions');
+          if (box) box.classList.add('hidden');
+          syncReupUrl();
+          render();
+        };
+      }
+      const btnClearReupTarget = document.getElementById('btn-clear-reup-target');
+      if (btnClearReupTarget) {
+        btnClearReupTarget.onclick = (e) => {
+          e.stopPropagation();
+          state.reupId = '';
+          syncReupUrl();
+          render();
+        };
+      }
+      document.querySelectorAll('[data-reup-kpi]').forEach(card => {
+        card.style.cursor = 'pointer';
+        card.onclick = () => {
+          const kpi = card.getAttribute('data-reup-kpi') || 'all';
+          if (kpi === 'all' || kpi === 'skus') {
+            state.reupId = '';
+            state.reupQ = '';
+            state.reupType = '';
+            state.reupNiche = '';
+            syncReupUrl();
+            render();
+          } else if (kpi === 'types') {
+            const bar = document.getElementById('reup-types-filter-bar');
+            if (bar) bar.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } else if (kpi === 'reused') {
+            state.reupId = '';
+            state.reupNiche = state.reupNiche === 'Reup & Khai Thác Hoạt Hình' ? '' : 'Reup & Khai Thác Hoạt Hình';
+            syncReupUrl();
+            render();
+          }
+        };
+      });
+      document.querySelectorAll('[data-reup-type]').forEach(btn => {
+        btn.onclick = () => {
+          const val = btn.getAttribute('data-reup-type') || '';
+          state.reupId = '';
+          state.reupType = (val && state.reupType === val) ? '' : val;
+          syncReupUrl();
+          render();
+        };
+      });
+      document.querySelectorAll('[data-reup-niche]').forEach(btn => {
+        btn.onclick = () => {
+          const val = btn.getAttribute('data-reup-niche') || '';
+          state.reupId = '';
+          state.reupNiche = (val && state.reupNiche === val) ? '' : val;
+          syncReupUrl();
+          render();
+        };
+      });
       const rr = document.getElementById('freset-reup');
-      if (rr) { rr.onclick = () => { state.reupQ = ''; state.reupType = ''; state.reupNiche = ''; syncReupUrl(); render(); }; }
+      if (rr) { rr.onclick = () => { state.reupId = ''; state.reupQ = ''; state.reupType = ''; state.reupNiche = ''; syncReupUrl(); render(); }; }
+      const rreupEmpty = document.getElementById('freset-reup-empty');
+      if (rreupEmpty) { rreupEmpty.onclick = () => { state.reupId = ''; state.reupQ = ''; state.reupType = ''; state.reupNiche = ''; syncReupUrl(); render(); }; }
+      const btnClearKenhQ = document.getElementById('btn-clear-kenh-q');
+      if (btnClearKenhQ) {
+        btnClearKenhQ.onclick = (e) => {
+          e.stopPropagation();
+          state.kenhQ = '';
+          state.kenhHandle = '';
+          state.kenhPage = 1;
+          const fqEl = document.getElementById('fq');
+          if (fqEl) { fqEl.value = ''; fqEl.focus(); }
+          const box = document.getElementById('kenh-search-suggestions');
+          if (box) box.classList.add('hidden');
+          syncKenhUrl();
+          render();
+        };
+      }
+      document.querySelectorAll('[data-kenh-kpi]').forEach(card => {
+        card.style.cursor = 'pointer';
+        card.onclick = () => {
+          const kpi = card.getAttribute('data-kenh-kpi') || 'all';
+          state.kenhHandle = '';
+          state.kenhPage = 1;
+          if (kpi === 'all') {
+            state.kenhQ = '';
+            state.kenhNiche = '';
+            state.kenhStatus = '';
+          } else if (kpi === 'live') {
+            state.kenhStatus = state.kenhStatus === 'live' ? '' : 'live';
+          } else if (kpi === 'dead') {
+            state.kenhStatus = state.kenhStatus === 'dead' ? '' : 'dead';
+          } else if (kpi === 'raw') {
+            state.kenhStatus = state.kenhStatus === 'raw' ? '' : 'raw';
+          }
+          syncKenhUrl();
+          render();
+        };
+      });
       document.querySelectorAll('[data-kenh-status]').forEach(btn => {
         if (btn.hasAttribute('data-open-tab')) return;
-        btn.onclick = () => { state.kenhStatus = btn.getAttribute('data-kenh-status') || ''; state.kenhPage = 1; syncKenhUrl(); render(); };
+        btn.onclick = () => {
+          const val = btn.getAttribute('data-kenh-status') || '';
+          state.kenhStatus = (val && state.kenhStatus === val) ? '' : val;
+          state.kenhHandle = '';
+          state.kenhPage = 1;
+          syncKenhUrl();
+          render();
+        };
       });
       document.querySelectorAll('[data-kenh-niche]').forEach(btn => {
         if (btn.hasAttribute('data-open-tab')) return;
-        btn.onclick = () => { state.kenhNiche = btn.getAttribute('data-kenh-niche') || ''; state.kenhPage = 1; syncKenhUrl(); render(); };
+        btn.onclick = () => {
+          const val = btn.getAttribute('data-kenh-niche') || '';
+          state.kenhNiche = (val && state.kenhNiche === val) ? '' : val;
+          state.kenhHandle = '';
+          state.kenhPage = 1;
+          syncKenhUrl();
+          render();
+        };
       });
       const rk = document.getElementById('freset-kenh');
       if (rk) { rk.onclick = () => { state.kenhQ = ''; state.kenhHandle = ''; state.kenhNiche = ''; state.kenhStatus = ''; state.kenhPage = 1; syncKenhUrl(); render(); }; }
@@ -1136,11 +1589,64 @@
       if (rke) { rke.onclick = () => { state.kenhQ = ''; state.kenhHandle = ''; state.kenhNiche = ''; state.kenhStatus = ''; state.kenhPage = 1; syncKenhUrl(); render(); }; }
       /* FIX (uifix88) F2: moi thay doi bo loc Raw deu day vao URL (rq/rid/rn/rg/page) de F5 va
          Back/Forward khong lech trang thai. */
-      document.querySelectorAll('[data-raw-group]').forEach(btn => { btn.onclick = () => { const g = btn.getAttribute('data-raw-group') || ''; state.rawGroup = (state.rawGroup === g) ? '' : g; state.rawNiche = ''; state.rawPage = 1; syncRawUrl(); render(); }; });
+      const btnClearRawRid = document.getElementById('btn-clear-raw-rid');
+      if (btnClearRawRid) {
+        btnClearRawRid.onclick = () => {
+          state.rawRid = '';
+          state.rawPage = 1;
+          syncRawUrl();
+          render();
+        };
+      }
+      document.querySelectorAll('[data-raw-kpi]').forEach(card => {
+        card.style.cursor = 'pointer';
+        card.onclick = () => {
+          const kpi = card.getAttribute('data-raw-kpi') || 'all';
+          state.rawRid = '';
+          state.rawQ = '';
+          state.rawPage = 1;
+          if (kpi === 'all') {
+            state.rawGroup = '';
+            state.rawNiche = '';
+            state.rawVitality = '';
+            state.rawFaceless = '';
+            state.rawLang = '';
+          } else if (kpi === 'active') {
+            state.rawVitality = state.rawVitality === 'active' ? '' : 'active';
+            state.rawFaceless = '';
+            state.rawGroup = '';
+            state.rawNiche = '';
+            state.rawLang = '';
+            state.rawFiltersExpanded = true;
+          } else if (kpi === 'faceless') {
+            state.rawFaceless = state.rawFaceless === 'faceless' ? '' : 'faceless';
+            state.rawVitality = '';
+            state.rawGroup = '';
+            state.rawNiche = '';
+            state.rawLang = '';
+            state.rawFiltersExpanded = true;
+          } else if (kpi === 'groups') {
+            state.rawGroup = '';
+            state.rawNiche = '';
+            state.rawVitality = '';
+            state.rawFaceless = '';
+            state.rawLang = '';
+          }
+          syncRawUrl();
+          Promise.resolve(render()).then(() => {
+            if (kpi === 'groups') {
+              const gBar = document.getElementById('raw-groups-filter-bar');
+              if (gBar) gBar.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          });
+        };
+      });
+      document.querySelectorAll('[data-raw-group]').forEach(btn => { btn.onclick = () => { const g = btn.getAttribute('data-raw-group') || ''; state.rawGroup = (state.rawGroup === g) ? '' : g; state.rawNiche = ''; state.rawRid = ''; state.rawPage = 1; syncRawUrl(); render(); }; });
       document.querySelectorAll('[data-raw-niche]').forEach(btn => {
         btn.onclick = () => {
           const val = btn.getAttribute('data-raw-niche') || '';
           state.rawNiche = (state.rawNiche === val) ? '' : val;
+          state.rawRid = '';
           state.rawPage = 1;
           syncRawUrl();
           render();
@@ -1150,6 +1656,7 @@
       if (subSelect) {
         subSelect.onchange = () => {
           state.rawNiche = subSelect.value;
+          state.rawRid = '';
           state.rawPage = 1;
           syncRawUrl();
           render();
@@ -1157,9 +1664,36 @@
       }
       const rfToggle = document.querySelector('[data-raw-filters-toggle]'); if (rfToggle) rfToggle.onclick = () => { state.rawFiltersExpanded = !state.rawFiltersExpanded; render(); };
 
-      document.querySelectorAll('[data-raw-vitality]').forEach(btn => { btn.onclick = () => { state.rawVitality = btn.getAttribute('data-raw-vitality') || ''; state.rawPage = 1; syncRawUrl(); render(); }; });
-      document.querySelectorAll('[data-raw-faceless]').forEach(btn => { btn.onclick = () => { state.rawFaceless = btn.getAttribute('data-raw-faceless') || ''; state.rawPage = 1; syncRawUrl(); render(); }; });
-      document.querySelectorAll('[data-raw-lang]').forEach(btn => { btn.onclick = () => { state.rawLang = btn.getAttribute('data-raw-lang') || ''; state.rawPage = 1; syncRawUrl(); render(); }; });
+      document.querySelectorAll('[data-raw-vitality]').forEach(btn => {
+        btn.onclick = () => {
+          const val = btn.getAttribute('data-raw-vitality') || '';
+          state.rawVitality = (val && state.rawVitality === val) ? '' : val;
+          state.rawRid = '';
+          state.rawPage = 1;
+          syncRawUrl();
+          render();
+        };
+      });
+      document.querySelectorAll('[data-raw-faceless]').forEach(btn => {
+        btn.onclick = () => {
+          const val = btn.getAttribute('data-raw-faceless') || '';
+          state.rawFaceless = (val && state.rawFaceless === val) ? '' : val;
+          state.rawRid = '';
+          state.rawPage = 1;
+          syncRawUrl();
+          render();
+        };
+      });
+      document.querySelectorAll('[data-raw-lang]').forEach(btn => {
+        btn.onclick = () => {
+          const val = btn.getAttribute('data-raw-lang') || '';
+          state.rawLang = (val && state.rawLang === val) ? '' : val;
+          state.rawRid = '';
+          state.rawPage = 1;
+          syncRawUrl();
+          render();
+        };
+      });
       /* FIX (uifix88) F2: #freset-raw / #freset-raw-empty truoc day chi xoa state -> rq con tren URL,
          F5 loc lai. Nay xoa state + URL (syncRawUrl). */
       const rr2 = document.getElementById('freset-raw');
@@ -1179,12 +1713,6 @@
         fn.onchange = () => {
           state.nicheFilter = fn.value;
           state.skuFilter = '';
-          const optGrp = fn.selectedOptions && fn.selectedOptions[0] && fn.selectedOptions[0].parentElement
-            ? (fn.selectedOptions[0].parentElement.label || '')
-            : '';
-          if (fn.value && (/^H\d{2}\b/i.test(fn.value) || optGrp.includes('40 Ngách chuẩn') || optGrp.includes('Nhóm ngách lớn'))) {
-            state.videoTrack = 'all';
-          }
           state.videoPage = 1;
           syncVideoUrl();
           render();
@@ -1204,23 +1732,114 @@
       });
       const fq_nx = document.getElementById('fq-nx');
       if (fq_nx) {
+        let activeNxSugIdx = -1;
         fq_nx.oninput = () => {
+          activeNxSugIdx = -1;
+          window._videoSugDismissed = false;
           state.nxQ = fq_nx.value;
+          state.nxSub = '';
           state.nxPage = 1; syncNxPageUrl();
+          if (window.showTabFtsSuggestions) {
+            window.showTabFtsSuggestions(fq_nx.value, 'nx-search-suggestions', 'fq-nx');
+          }
           clearTimeout(searchDebounceTimer);
           searchDebounceTimer = setTimeout(() => {
-            render();
+            Promise.resolve(render()).then(() => {
+              const qTrim = String(state.nxQ || '').trim();
+              if (/^#?(?:H\d{2}|META-0[1-5]|SUB-\d{1,3}|SN-H\d{2}-\d{3})\b/i.test(qTrim)) {
+                applyDeepTargetScrollAndModal();
+              }
+            });
           }, 200);
         };
+        fq_nx.onfocus = () => {
+          if (fq_nx.value.trim() && window.showTabFtsSuggestions) {
+            window.showTabFtsSuggestions(fq_nx.value, 'nx-search-suggestions', 'fq-nx');
+          }
+        };
+        fq_nx.onkeydown = (e) => {
+          const box = document.getElementById('nx-search-suggestions');
+          if (!box || box.classList.contains('hidden')) return;
+          const rows = box.querySelectorAll('.js-tab-fts-row');
+          if (e.key === 'ArrowDown' && rows.length) {
+            e.preventDefault();
+            activeNxSugIdx = (activeNxSugIdx + 1) % rows.length;
+            rows.forEach((r, i) => r.classList.toggle('is-sug-active', i === activeNxSugIdx));
+          } else if (e.key === 'ArrowUp' && rows.length) {
+            e.preventDefault();
+            activeNxSugIdx = (activeNxSugIdx - 1 + rows.length) % rows.length;
+            rows.forEach((r, i) => r.classList.toggle('is-sug-active', i === activeNxSugIdx));
+          } else if (e.key === 'Enter') {
+            if (activeNxSugIdx >= 0 && activeNxSugIdx < rows.length) {
+              e.preventDefault();
+              window._videoSugDismissed = true;
+              rows[activeNxSugIdx].click();
+            } else {
+              window._videoSugDismissed = true;
+              box.classList.add('hidden');
+            }
+          } else if (e.key === 'Escape') {
+            window._videoSugDismissed = true;
+            box.classList.add('hidden');
+          }
+        };
       }
+      const btnClearNxQ = document.getElementById('btn-clear-nx-q');
+      if (btnClearNxQ) {
+        btnClearNxQ.onclick = (e) => {
+          e.stopPropagation();
+          state.nxQ = '';
+          state.nxSub = '';
+          state.nxPage = 1;
+          const fqNxEl = document.getElementById('fq-nx');
+          if (fqNxEl) { fqNxEl.value = ''; fqNxEl.focus(); }
+          const box = document.getElementById('nx-search-suggestions');
+          if (box) box.classList.add('hidden');
+          syncNxPageUrl();
+          render();
+        };
+      }
+      document.querySelectorAll('[data-nx-sub-chip]').forEach(el => {
+        const triggerSub = (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const subCode = (el.getAttribute('data-nx-sub-chip') || '').trim().toUpperCase();
+          if (!subCode) return;
+          const isAlreadyActive = (String(state.nxSub || '').toUpperCase() === subCode) || (String(state.nxQ || '').trim().replace(/^#/, '').toUpperCase() === subCode);
+          if (isAlreadyActive) {
+            state.nxSub = '';
+            state.nxQ = '';
+          } else {
+            state.nxSub = subCode;
+            state.nxQ = subCode;
+          }
+          state.nxPage = 1;
+          syncNxPageUrl();
+          Promise.resolve(render()).then(() => {
+            if (state.nxSub) applyDeepTargetScrollAndModal();
+          });
+        };
+        el.onclick = triggerSub;
+        el.onkeydown = (e) => {
+          if (e.key === 'Enter' || e.key === ' ') triggerSub(e);
+        };
+      });
       document.querySelectorAll('[data-nx-tier]').forEach(btn => {
-        btn.onclick = () => { state.nxTier = btn.getAttribute('data-nx-tier') || ''; state.nxPage = 1; syncNxPageUrl(); render(); };
+        btn.onclick = () => {
+          const val = btn.getAttribute('data-nx-tier') || '';
+          state.nxTier = (val && state.nxTier === val) ? '' : val;
+          state.nxSub = '';
+          state.nxPage = 1;
+          syncNxPageUrl();
+          render();
+        };
       });
       document.querySelectorAll('[data-nx-kpi-tier]').forEach(card => {
         if (card.hasAttribute('data-open-tab')) return;
         card.onclick = () => {
           const targetTier = card.getAttribute('data-nx-kpi-tier') || '';
           state.nxTier = (state.nxTier === targetTier) ? '' : targetTier;
+          state.nxSub = '';
           state.nxPage = 1;
           syncNxPageUrl();
           render();
@@ -1232,8 +1851,10 @@
           if (!rCode) return;
           const isSame = String(state.nxQ || '').trim().toUpperCase() === rCode.toUpperCase();
           state.nxQ = isSame ? '' : rCode;
+          state.nxSub = '';
           state.nxTier = '';
           state.nxMarket = '';
+          state.nxBranch = '';
           state.nxPage = 1;
           syncNxPageUrl();
           Promise.resolve(render()).then(() => {
@@ -1256,27 +1877,51 @@
         };
       });
       document.querySelectorAll('[data-nx-market]').forEach(btn => {
-        btn.onclick = () => { state.nxMarket = btn.getAttribute('data-nx-market') || ''; state.nxPage = 1; syncNxPageUrl(); render(); };
+        btn.onclick = () => {
+          const val = btn.getAttribute('data-nx-market') || '';
+          state.nxMarket = (val && state.nxMarket === val) ? '' : val;
+          state.nxSub = '';
+          state.nxPage = 1;
+          syncNxPageUrl();
+          render();
+        };
+      });
+      document.querySelectorAll('[data-nx-branch]').forEach(btn => {
+        btn.onclick = () => {
+          const val = btn.getAttribute('data-nx-branch') || '';
+          state.nxBranch = (val && state.nxBranch === val) ? '' : val;
+          state.nxSub = '';
+          state.nxPage = 1;
+          syncNxPageUrl();
+          render();
+        };
+      });
+      document.querySelectorAll('[data-nx-sort]').forEach(btn => {
+        btn.onclick = () => { state.nxSort = btn.getAttribute('data-nx-sort') || 'rank'; state.nxPage = 1; syncNxPageUrl(); render(); };
       });
       const fr = document.getElementById('freset');
-      if (fr) { fr.onclick = () => { state.q = ''; state.nicheFilter = ''; state.skuFilter = ''; state.marketFilter = ''; state.sortBy = ''; state.freeOnly = false; state.watchFilter = ''; state.videoPage = 1; syncVideoUrl(); render(); }; }
+      if (fr) { fr.onclick = () => { state.q = ''; state.nicheFilter = ''; state.skuFilter = ''; state.marketFilter = ''; state.sortBy = ''; state.freeOnly = false; state.recentOnly = false; state.watchFilter = ''; state.videoPage = 1; syncVideoUrl(); render(); }; }
       const fre = document.getElementById('freset-empty');
-      if (fre) { fre.onclick = () => { state.q = ''; state.nicheFilter = ''; state.skuFilter = ''; state.marketFilter = ''; state.sortBy = ''; state.freeOnly = false; state.watchFilter = ''; state.videoPage = 1; syncVideoUrl(); render(); }; }
+      if (fre) { fre.onclick = () => { state.q = ''; state.nicheFilter = ''; state.skuFilter = ''; state.marketFilter = ''; state.sortBy = ''; state.freeOnly = false; state.recentOnly = false; state.watchFilter = ''; state.videoPage = 1; syncVideoUrl(); render(); }; }
       const fr_nx = document.getElementById('freset-nx');
       if (fr_nx) {
-        fr_nx.onclick = () => { state.nxQ = ''; state.nxTier = ''; state.nxMarket = ''; state.nxLimit = 0; state.nxPage = 1; syncNxPageUrl(); render(); };
+        fr_nx.onclick = () => { state.nxQ = ''; state.nxSub = ''; state.nxTier = ''; state.nxMarket = ''; state.nxBranch = ''; state.nxSort = 'rank'; state.nxLimit = 0; state.nxPage = 1; syncNxPageUrl(); render(); };
       }
       const fre_nx = document.getElementById('freset-nx-empty');
       if (fre_nx) {
-        fre_nx.onclick = () => { state.nxQ = ''; state.nxTier = ''; state.nxMarket = ''; state.nxLimit = 0; state.nxPage = 1; syncNxPageUrl(); render(); };
+        fre_nx.onclick = () => { state.nxQ = ''; state.nxSub = ''; state.nxTier = ''; state.nxMarket = ''; state.nxBranch = ''; state.nxSort = 'rank'; state.nxLimit = 0; state.nxPage = 1; syncNxPageUrl(); render(); };
       }
     }
 
     function normalizeFilterChipA11y() {
       document.querySelectorAll('#content button.filter-btn[data-page]').forEach(btn => btn.removeAttribute('aria-pressed'));
       document.querySelectorAll('#content button.filter-btn:not([data-page])').forEach(btn => {
-        if (btn.hasAttribute('data-open-tab') || btn.hasAttribute('data-sodo-jump') || btn.hasAttribute('data-page') || btn.getAttribute('data-quick-action') === 'cross-tab') {
+        if (btn.hasAttribute('data-open-tab') || btn.hasAttribute('data-sodo-jump') || btn.hasAttribute('data-sodo-path-from') || btn.hasAttribute('data-page') || btn.getAttribute('data-quick-action') === 'cross-tab') {
           btn.removeAttribute('aria-pressed');
+          if (btn.hasAttribute('data-sodo-jump')) {
+            if (btn.classList.contains('active')) btn.setAttribute('aria-current', 'true');
+            else btn.removeAttribute('aria-current');
+          }
           return;
         }
         btn.setAttribute('aria-pressed', btn.classList.contains('active') ? 'true' : 'false');
@@ -1297,14 +1942,16 @@
         state.clSubTab = state.clSubTab || 'principles';
         const curTab = state.clSubTab;
         const isAll = curTab === 'all';
-        const mCount = Number((window._overviewSummaryCache && (window._overviewSummaryCache.videosH2dev || window._overviewSummaryCache.videos)) || 153);
+        const mCount = Number((window._overviewSummaryCache && (window._overviewSummaryCache.videosH2dev || window._overviewSummaryCache.videos)) || (Array.isArray(CAT['data-tabs/videos.json']) && CAT['data-tabs/videos.json'].length) || 0);
+        const mLabel = mCount ? `Ma trận ${mCount} Bài` : 'Ma trận Bài học';
+        const mShortLabel = mCount ? `${mCount} Bài` : 'Ma trận';
         if (topbarSubnav) {
           topbarSubnav.innerHTML = quickAccessBar({
             id: 'strategy-quick-access', label: 'Nội dung chiến lược', mode: 'tab', className: 'quick-access--topbar',
             items: [
               { label: '4 Nguyên tắc', shortLabel: 'Nguyên tắc', active: curTab === 'principles', action: { type: 'strategy-tab', patch: { clSubTab: 'principles' } } },
               { label: 'Quy trình A–Z', shortLabel: 'Quy trình', active: curTab === 'workflow', action: { type: 'strategy-tab', patch: { clSubTab: 'workflow' } } },
-              { label: `Ma trận ${mCount} Bài`, shortLabel: `${mCount} Bài`, active: curTab === 'matrix144', action: { type: 'strategy-tab', patch: { clSubTab: 'matrix144' } } },
+              { label: mLabel, shortLabel: mShortLabel, active: curTab === 'matrix144', action: { type: 'strategy-tab', patch: { clSubTab: 'matrix144' } } },
               { label: 'Phân bổ ngách', shortLabel: 'Ngách', active: curTab === 'distribution', action: { type: 'strategy-tab', patch: { clSubTab: 'distribution' } } },
               { label: 'YPP & Chính sách', shortLabel: 'YPP', active: curTab === 'policy', action: { type: 'strategy-tab', patch: { clSubTab: 'policy' } } },
               { label: 'Tất cả nội dung', shortLabel: 'Tất cả', active: isAll, action: { type: 'strategy-tab', patch: { clSubTab: 'all' } } }
@@ -1361,7 +2008,7 @@
             lExtra.set('embed', '1');
             const tr = state.lotrinhTrack || lQp.get('track') || '';
             if (tr) lExtra.set('track', tr);
-            ['tab', 'q'].forEach(k => { if (lQp.get(k)) lExtra.set(k, lQp.get(k)); });
+            ['tab', 'q', 'module', 'mod', 'sku'].forEach(k => { if (lQp.get(k)) lExtra.set(k, lQp.get(k)); });
             html = `<iframe id="lotrinh-embed-frame" class="learn-frame" title="Lộ trình học" src="/learn.html?${lExtra.toString()}"></iframe>`;
             break;
           }
@@ -1379,7 +2026,7 @@
         }
         /* UI-02: lan render nay da stale (user doi tab giua chung) -> bo qua, khong ghi de DOM */
         if (gen !== renderGen) return;
-        const rawSugBox = state.tab === 'rawkenh' && document.activeElement === activeEl && activeId === 'fq' && state.rawQ.trim()
+        const rawSugBox = state.tab === 'rawkenh' && !window._videoSugDismissed && document.activeElement === activeEl && activeId === 'fq' && state.rawQ.trim()
           ? document.getElementById('raw-search-suggestions') : null;
         const rawSugHtml = rawSugBox && !rawSugBox.classList.contains('hidden') ? rawSugBox.innerHTML : '';
         el.innerHTML = renderLoadErrorBanner() + html;
@@ -1425,16 +2072,36 @@
               const cached = (window._lastVideoSugQuery === curQ) ? window._lastVideoSugItems : undefined;
               window.showVideoSearchSuggestions(restored.value, cached);
             }
+            if (activeId === 'fq' && (state.tab === 'tatca' || state.tab === 'tai-lieu' || state.tab === 'kenh-mau' || state.tab === 'nguonreup') && (restored.value || '').trim() && !window._videoSugDismissed && window.showTabFtsSuggestions) {
+              const curQ = (restored.value || '').trim();
+              const cached = (window._lastTabSugQuery === curQ) ? window._lastTabSugItems : undefined;
+              const boxId = state.tab === 'tatca' ? 'tatca-search-suggestions' : (state.tab === 'tai-lieu' ? 'doc-search-suggestions' : (state.tab === 'kenh-mau' ? 'kenh-search-suggestions' : 'reup-search-suggestions'));
+              window.showTabFtsSuggestions(restored.value, boxId, 'fq', cached);
+            }
+            if (activeId === 'fq-nx' && state.tab === 'ngachxanh' && (restored.value || '').trim() && !window._videoSugDismissed && window.showTabFtsSuggestions) {
+              const curQ = (restored.value || '').trim();
+              const cached = (window._lastTabSugQuery === curQ) ? window._lastTabSugItems : undefined;
+              window.showTabFtsSuggestions(restored.value, 'nx-search-suggestions', 'fq-nx', cached);
+            }
           }
         }
         document.querySelectorAll('[data-check-id]').forEach(box => {
-          box.onchange = () => { saveCheck(box.getAttribute('data-check-id'), box.checked); box.setAttribute('aria-checked', box.checked ? 'true' : 'false'); };
+          box.onchange = () => {
+            saveCheck(box.getAttribute('data-check-id'), box.checked);
+            box.setAttribute('aria-checked', box.checked ? 'true' : 'false');
+            const prog = document.getElementById('cl-checklist-progress');
+            if (prog) {
+              const allBoxes = document.querySelectorAll('#cl-checklist-12 [data-check-id]');
+              const done = [...allBoxes].filter(b => b.checked).length;
+              prog.textContent = `Đã hoàn thành ${done}/${allBoxes.length}`;
+            }
+          };
         });
         if (!window._cachedStatsText) {
           try {
             const ov = await loadOverviewSummary();
-            const totalVideos = Number(ov.totalVideos || ov.lessons || 345);
-            const totalDocs = Number(ov.documents || 596);
+            const totalVideos = Number(ov.totalVideos || ov.lessons || 347);
+            const totalDocs = Number(ov.documents || 598);
             const kenhLive = Number(ov.liveChannels || ov.channels || 987);
             window._cachedStatsText = totalVideos + " video · " + totalDocs + " TL · " + kenhLive + " kênh";
           } catch(e) {}
@@ -1458,7 +2125,18 @@
        Bat buoc khoi phuc DU 9 tham so: tab, market, niche, page, rn, rg, rq, watch, free, sub. */
     const URL_TABS = ['tatca', 'lotrinh', 'video', 'ngachxanh', 'tai-lieu', 'nhac', 'nguonreup', 'kenh-mau', 'rawkenh', 'chienluoc', 'sodo'];
     /* Alias URL cu -> tab id moi (BE da 301, day la lop bao hiem cho link noi bo con sot) */
-    const URL_ALIAS = { 'tongquan': 'tatca', 'kichban': 'tai-lieu', 'kenh': 'kenh-mau', 'ngach': 'ngachxanh' };
+    const URL_ALIAS = {
+      'tongquan': 'tatca', 'tat-ca': 'tatca',
+      'kichban': 'tai-lieu', 'tailieu': 'tai-lieu',
+      'nhac-nen': 'nhac', 'nhacnen': 'nhac',
+      'nguon-reup': 'nguonreup', 'reup': 'nguonreup',
+      'kenh': 'kenh-mau', 'kenhmau': 'kenh-mau',
+      'ngach': 'ngachxanh', 'ngach-xanh': 'ngachxanh',
+      'raw': 'rawkenh', 'raw-kenh': 'rawkenh', 'raw-kenh-mau': 'rawkenh',
+      'chien-luoc': 'chienluoc',
+      'so-do': 'sodo', 'sodo-db': 'sodo', 'so-do-db': 'sodo',
+      'lo-trinh': 'lotrinh'
+    };
     function readStateFromURL(validTabs) {
       const tabs = validTabs || URL_TABS;
       const qp = new URLSearchParams(location.search);
@@ -1476,11 +2154,14 @@
       const rawVmod = (qp.get('vmod') || qp.get('niche') || '').trim();
       const inferredVmodTrack = /^huan-m/i.test(rawVmod) ? 'huan' : (/^dgmd-m/i.test(rawVmod) ? 'dgmd' : (/^(?:h2dev-)?m\d+/i.test(rawVmod) ? 'h2dev' : ''));
       const explicitVideoTrack = qp.get('track') || qp.get('vbranch') || inferredVmodTrack || '';
-      const hasCrossTrackVideoFilter = Boolean(qp.get('vq') || qp.get('niche') || qp.get('vmod') || qp.get('skus') || qp.get('market'));
+      const hasCrossTrackVideoFilter = Boolean(qp.get('vq') || qp.get('niche') || qp.get('vmod') || qp.get('skus') || qp.get('market') || qp.get('recent') || qp.get('watch') || qp.get('free'));
       state.videoTrack = (t === 'video')
-        ? (explicitVideoTrack || (hasCrossTrackVideoFilter ? 'all' : (sessionStorage.getItem('h2dev-video-track') || 'h2dev')))
-        : 'h2dev';
-      if (state.videoTrack !== 'dgmd' && state.videoTrack !== 'huan' && state.videoTrack !== 'h2dev' && state.videoTrack !== 'all') state.videoTrack = 'h2dev';
+        ? (explicitVideoTrack || (hasCrossTrackVideoFilter ? 'all' : (sessionStorage.getItem('h2dev-video-track') || 'all')))
+        : 'all';
+      if (state.videoTrack !== 'dgmd' && state.videoTrack !== 'huan' && state.videoTrack !== 'h2dev' && state.videoTrack !== 'all') state.videoTrack = 'all';
+      if (t === 'video') {
+        try { sessionStorage.setItem('h2dev-video-track', state.videoTrack); } catch (err) {}
+      }
       state.q = (t === 'video') ? (qp.get('vq') || '') : '';
       state.sortBy = (t === 'video') ? (qp.get('sort') || '') : '';
       state.marketFilter = (t === 'video') ? (qp.get('market') || '') : '';
@@ -1489,6 +2170,7 @@
       state.skuFilter = (t === 'video') ? (qp.get('skus') || '') : '';
       state.watchFilter = (t === 'video') ? (qp.get('watch') || '') : '';
       state.freeOnly = (t === 'video') && qp.get('free') === '1';
+      state.recentOnly = (t === 'video') && qp.get('recent') === '1';
       function normNxMarketParam(val) {
         const s = String(val || '').trim();
         if (!s) return '';
@@ -1503,8 +2185,13 @@
         return up;
       }
       state.nxQ = (t === 'ngachxanh') ? (qp.get('q') || qp.get('niche') || '') : '';
+      state.nxSub = (t === 'ngachxanh') ? (qp.get('sub') || '').trim().toUpperCase() : '';
       state.nxTier = (t === 'ngachxanh') ? (qp.get('nt') || '') : '';
       state.nxMarket = (t === 'ngachxanh') ? normNxMarketParam(qp.get('nxm') || qp.get('market') || '') : '';
+      const rawNxb = (t === 'ngachxanh') ? (qp.get('nxb') || '').toUpperCase() : '';
+      state.nxBranch = ['H2DEV', 'HUAN', 'DGMD', 'RECENT'].includes(rawNxb) ? rawNxb : '';
+      const rawNxs = (t === 'ngachxanh') ? (qp.get('nxs') || '').toLowerCase() : '';
+      state.nxSort = ['rank', 'boi', 'rpm', 'videos'].includes(rawNxs) ? rawNxs : 'rank';
       state.nxLimit = (t === 'ngachxanh') ? (parseInt(qp.get('nxl'), 10) || 0) : 0;
       state.rawPage = (t === 'rawkenh') ? (parseInt(qp.get('page'), 10) || 1) : 1;
       state.videoPage = (t === 'video') ? (parseInt(qp.get('vp'), 10) || 1) : 1;
@@ -1532,6 +2219,8 @@
          Nay doc 'pq' -> state.promptQ (dung chung voi o tim cua tab Tai lieu).
          Tuong tu 'kq' -> state.kenhQ cho gợi ý FTS loại CHANNEL mở tab Kênh mẫu. */
       state.promptQ = (t === 'tai-lieu') ? (qp.get('pq') || '') : '';
+      const rawReupId = (t === 'nguonreup') ? (qp.get('reup') || '').trim().toUpperCase() : '';
+      state.reupId = rawReupId.replace(/^REUP_(\d+)$/, (_, n) => 'REUP-' + String(parseInt(n, 10)).padStart(3, '0'));
       state.reupQ = (t === 'nguonreup') ? (qp.get('rq') || '') : '';
       state.reupType = (t === 'nguonreup') ? (qp.get('rt') || '') : '';
       state.reupNiche = (t === 'nguonreup') ? (qp.get('rn') || '') : '';
@@ -1540,9 +2229,18 @@
       state.kenhNiche = (t === 'kenh-mau') ? (qp.get('kn') || '') : '';
       state.sodoQ = (t === 'sodo') ? (qp.get('sq') || '') : '';
       state.sodoNode = (t === 'sodo') ? (qp.get('snode') || '') : '';
-      /* sub la gia tri tu URL -> chi nhan gia tri hop le */
-      const subQ = qp.get('sub');
-      state.clSubTab = (subQ && CL_SUBTABS.includes(subQ)) ? subQ : 'principles';
+      state.sodoPathFrom = (t === 'sodo') ? (qp.get('sfrom') || '') : '';
+      state.sodoPathTo = (t === 'sodo') ? (qp.get('sto') || '') : '';
+      state.clMatrixCluster = (t === 'chienluoc') ? (qp.get('clm') || 'all') : 'all';
+      state.clMatrixQ = (t === 'chienluoc') ? (qp.get('clq') || '') : '';
+      /* sub / cl la gia tri tu URL -> chi nhan gia tri hop le */
+      const subQ = qp.get('sub') || qp.get('cl');
+      const rawHash = String(location.hash || '').replace(/^#/, '').trim();
+      const hasPolicyTarget = (t === 'chienluoc') && Boolean(qp.get('item') || /^(?:cl-item-CL\d+|policy-item-P\d+|cl-checklist-12)$/i.test(rawHash));
+      const hasMatrixTarget = (t === 'chienluoc') && Boolean((state.clMatrixCluster && state.clMatrixCluster !== 'all') || state.clMatrixQ);
+      state.clSubTab = (subQ && CL_SUBTABS.includes(subQ))
+        ? subQ
+        : (hasPolicyTarget ? 'policy' : (hasMatrixTarget ? 'matrix144' : 'principles'));
       return state;
     }
     /* FIX (uifix88) F2 — don URL: bo moi tham so KHONG thuoc tab dang mo (giu tab + tham so mine).
@@ -1550,14 +2248,105 @@
     const PARAM_OWNER = {
       track: ['video', 'lotrinh'], vbranch: ['video'], vmod: ['video'], vq: ['video'], sort: ['video'],
       market: ['video', 'ngachxanh'], niche: ['video', 'ngachxanh'],
-      skus: ['video'], vp: ['video'], watch: ['video'], free: ['video'],
-      q: ['ngachxanh', 'lotrinh'], nt: ['ngachxanh'], nxm: ['ngachxanh'], nxl: ['ngachxanh'], np: ['ngachxanh'],
+      skus: ['video'], vp: ['video'], watch: ['video'], free: ['video'], recent: ['video'],
+      q: ['ngachxanh', 'lotrinh'], nt: ['ngachxanh'], nxm: ['ngachxanh'], nxb: ['ngachxanh'], nxs: ['ngachxanh'], nxl: ['ngachxanh'], np: ['ngachxanh'],
       pq: ['tai-lieu'], dp: ['tai-lieu'], did: ['tai-lieu'], di: ['tai-lieu'], db: ['tai-lieu'], kind: ['tai-lieu'], pn: ['tai-lieu'],
-      rt: ['nguonreup'],
+      rt: ['nguonreup'], reup: ['nguonreup'],
       kq: ['kenh-mau'], handle: ['kenh-mau'], kp: ['kenh-mau'], ks: ['kenh-mau'], kn: ['kenh-mau'],
-      rq: ['rawkenh', 'nguonreup'], rn: ['rawkenh', 'nguonreup'], rg: ['rawkenh'], rid: ['rawkenh'], page: ['rawkenh'], rv: ['rawkenh'], rf: ['rawkenh'], rl: ['rawkenh'],
-      sub: ['chienluoc'], sq: ['sodo'], snode: ['sodo'], tab: ['lotrinh']
+      rq: ['rawkenh', 'nguonreup'], rn: ['rawkenh', 'nguonreup'], rg: ['rawkenh'], rid: ['rawkenh'], vid: ['rawkenh'], page: ['rawkenh'], rv: ['rawkenh'], rf: ['rawkenh'], rl: ['rawkenh'],
+      sub: ['chienluoc', 'ngachxanh'], cl: ['chienluoc'], clm: ['chienluoc'], clq: ['chienluoc'], item: ['chienluoc'], sq: ['sodo'], snode: ['sodo'], sfrom: ['sodo'], sto: ['sodo'],
+      tab: ['lotrinh'], module: ['lotrinh'], mod: ['lotrinh'], sku: ['lotrinh'],
+      mfilter: ['nhac'], mq: ['nhac'], mopen: ['nhac']
     };
+    function scrollElementIntoContainer(targetEl) {
+      if (!targetEl) return;
+      requestAnimationFrame(() => {
+        const pr = document.getElementById('panel-root');
+        if (pr && pr.scrollHeight > pr.clientHeight + 2) {
+          const prRect = pr.getBoundingClientRect();
+          const cRect = targetEl.getBoundingClientRect();
+          pr.scrollTop = Math.max(0, pr.scrollTop + (cRect.top - prRect.top) - 16);
+        } else {
+          const bar = document.getElementById('vd-topbar');
+          const off = (bar ? bar.getBoundingClientRect().height : 0) + 12;
+          window.scrollTo(0, Math.max(0, targetEl.getBoundingClientRect().top + window.scrollY - off));
+        }
+      });
+    }
+    function applyDeepTargetScrollAndModal() {
+      try {
+        const qp = new URLSearchParams(location.search);
+        if (state.tab === 'ngachxanh') {
+          const qUp = String(state.nxQ || '').trim().replace(/^#/, '').toUpperCase();
+          const subUp = String(state.nxSub || '').trim().replace(/^#/, '').toUpperCase() || ((/^(?:SUB-\d{1,3}|SN-H\d{2}-\d{3})$/.test(qUp)) ? qUp : '');
+          if (subUp) {
+            const subEl = document.getElementById('subniche-' + subUp)
+              || document.querySelector('[data-sub-idx-id="subniche-' + subUp + '"]')
+              || document.querySelector('.niche-card');
+            scrollElementIntoContainer(subEl);
+          } else if (/^H\d{2}$/.test(qUp)) {
+            scrollElementIntoContainer(document.getElementById('niche-card-' + qUp));
+          } else if (/^META-0[1-5]$/.test(qUp)) {
+            scrollElementIntoContainer(document.getElementById('meta-card-' + qUp) || document.getElementById('nx-meta-section'));
+          }
+        } else if (state.tab === 'chienluoc') {
+          const rawHash = String(location.hash || '').replace(/^#/, '').trim();
+          const hashCodeMatch = rawHash.match(/^(?:policy-item-|cl-item-)(P\d{2}|CL\d{2})$/i);
+          const itemCode = String(qp.get('item') || (hashCodeMatch ? hashCodeMatch[1] : '') || '').trim().toUpperCase();
+          const el = itemCode
+            ? (document.getElementById('policy-item-' + itemCode) || document.getElementById('cl-item-' + itemCode))
+            : (rawHash ? document.getElementById(rawHash) : null);
+          if (el) {
+            el.classList.add('ring-2', 'ring-brand-400');
+            const toggleBtn = el.querySelector('.policy-toggle');
+            if (toggleBtn && toggleBtn.getAttribute('aria-expanded') !== 'true') {
+              toggleBtn.click();
+            }
+            scrollElementIntoContainer(el);
+          }
+        } else if (state.tab === 'rawkenh') {
+          const vid = (qp.get('vid') || '').trim();
+          if (vid && state.rawRid && window.openRawDeepModal) {
+            setTimeout(() => { window.openRawDeepModal(state.rawRid); }, 60);
+          }
+        } else if (state.tab === 'nhac') {
+          const mf = (qp.get('mfilter') || '').trim();
+          const mq = (qp.get('mq') || '').trim();
+          const mopen = (qp.get('mopen') || '').trim();
+          if ((mf || mq || mopen === '1') && typeof window.openMusicStudioModal === 'function') {
+            setTimeout(() => { window.openMusicStudioModal(mf || 'all', mq); }, 60);
+          }
+        } else if (state.tab === 'nguonreup' && state.reupId) {
+          const cardEl = document.getElementById('reup-card-' + state.reupId);
+          if (cardEl) {
+            cardEl.classList.add('ring-2', 'ring-brand-400');
+            scrollElementIntoContainer(cardEl);
+          }
+        }
+      } catch (_) {}
+    }
+    function navigateDirectUrl(directUrl) {
+      if (!directUrl) return;
+      try {
+        const u = new URL(directUrl, location.origin);
+        const pRaw = u.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+        const p = URL_ALIAS[pRaw] || pRaw;
+        const spaTabs = ['tatca', 'video', 'ngachxanh', 'tai-lieu', 'nhac', 'nguonreup', 'kenh-mau', 'rawkenh', 'chienluoc', 'sodo'];
+        if (spaTabs.includes(p)) {
+          history.pushState({ tab: p }, '', '/' + p + u.search);
+          readStateFromURL(['tatca', 'lotrinh', ...spaTabs]);
+          scrubForeignParams();
+          renderTabs();
+          resetScrollToTop();
+          Promise.resolve(render()).then(() => {
+            applyDeepTargetScrollAndModal();
+          });
+          return;
+        }
+      } catch (_) {}
+      location.href = directUrl;
+    }
+    window.navigateDirectUrl = navigateDirectUrl;
     function scrubForeignParams() {
       try {
         const u = new URL(location.href);
@@ -1586,6 +2375,7 @@
       renderTabs();
       try { await render(); } finally { document.documentElement.classList.remove('h2-first-render'); }
       resetScrollToTop();
+      applyDeepTargetScrollAndModal();
 
       // Click logo thương hiệu để về trang chủ Tổng quan & cuộn lên đầu trang
       document.querySelectorAll('.vd-brand').forEach(brandEl => {
@@ -1640,8 +2430,8 @@
         /* FIX (uifix88) F2: Back/Forward co the tro lai URL dinh tham so tab khac -> don. */
         scrubForeignParams();
         renderTabs();
-        render();
         resetScrollToTop();
+        Promise.resolve(render()).then(() => { applyDeepTargetScrollAndModal(); });
       });
       window.addEventListener('pageshow', (e) => { if (e.persisted) syncRender(); });
       window.addEventListener('visibilitychange', () => { if (!document.hidden) syncRender(); });
@@ -1650,11 +2440,12 @@
         if (state.tab !== 'lotrinh') return;
         try {
           const u = new URL(location.href);
-          ['track', 'tab', 'q'].forEach(k => {
+          ['track', 'tab', 'q', 'module'].forEach(k => {
             const val = e.data[k];
             if (val && !(k === 'track' && val === 'h2dev')) u.searchParams.set(k, String(val));
             else u.searchParams.delete(k);
           });
+          u.searchParams.delete('mod');
           history.replaceState(history.state, '', u.pathname + u.search);
         } catch (err) {}
       });
@@ -1741,7 +2532,14 @@
           }
         };
 
-        const records = window._rawKenhRecords || [];
+        let records = window._rawKenhRecords || [];
+        if (!records.length) {
+          try {
+            const rawData = await loadJSON('data-tabs/raw-kenh-mau.json');
+            records = Array.isArray(rawData) ? rawData : (rawData && Array.isArray(rawData.records) ? rawData.records : []);
+            window._rawKenhRecords = records;
+          } catch (_) {}
+        }
         const r = records.find(x => x.id === rawId) || {};
         const ch = r.channel || {};
         const vA = r.vitalityAudit || {};
@@ -1780,21 +2578,169 @@
         let voiceProfile = null;
         let productionToolkit = null;
         if (dossierPath) {
-          const fetchJsonSafe = (subPath) => fetch(dossierPath + subPath)
-            .then(res => res.ok ? res.json() : null)
+          const fetchJsonSafe = (subPath, isOptional) => fetch(dossierPath + subPath + (isOptional ? '?optional=1' : ''))
+            .then(res => (res.ok && res.status !== 204) ? res.json() : null)
             .catch(e => { console.warn('[H2DEV] đọc ' + subPath + ' lỗi', e); return null; });
           [profile, topVideos, voiceProfile, productionToolkit] = await Promise.all([
-            fetchJsonSafe('/channel-profile.json'),
-            fetchJsonSafe('/top-videos.json'),
-            fetchJsonSafe('/voice_profile.json'),
-            fetchJsonSafe('/production_toolkit.json')
+            fetchJsonSafe('/channel-profile.json', false),
+            fetchJsonSafe('/top-videos.json', false),
+            fetchJsonSafe('/voice_profile.json', true),
+            fetchJsonSafe('/production_toolkit.json', true)
           ]);
         }
 
         const pData = profile || {};
+        const effectiveVoiceDna = r.voiceDna || (r.duplicateOf && (records.find(x => x.id === r.duplicateOf) || {}).voiceDna) || null;
         const tvList = (topVideos && topVideos.videos) ? (topVideos.videos.slice().sort((a, b) => (b.views || 0) - (a.views || 0))) : [];
-        const demoVid = r.featuredDemoVideo || (r.deepIntelligence && r.deepIntelligence.featuredDemoVideo) || (tvList[0] || null);
-        const tags = (pData.channelTags && pData.channelTags.length) ? pData.channelTags : (ocr.tags || []);
+        const hasRealSubVideo = (v) => Boolean(v && (v.transcriptJsonRel || v.hasTranscript || (v.segmentCount && v.segmentCount > 0) || (v.transcriptSegmentsCount && v.transcriptSegmentsCount > 0)));
+        window._lastRawTopVideos = tvList;
+        window._lastRawChannelRecord = r;
+        window._lastRawProfile = pData;
+        const rawDemo = (r.deepIntelligence && r.deepIntelligence.featuredDemoVideo) || r.featuredDemoVideo || null;
+        const matchedDemoInTv = (rawDemo && rawDemo.videoId) ? tvList.find(v => v.videoId === rawDemo.videoId) : null;
+        const demoVid = (matchedDemoInTv && hasRealSubVideo(matchedDemoInTv) ? matchedDemoInTv : null)
+          || tvList.find(v => hasRealSubVideo(v))
+          || matchedDemoInTv
+          || rawDemo
+          || (tvList[0] || null);
+        if (!voiceProfile && effectiveVoiceDna && effectiveVoiceDna.sampleUrl) {
+          const aLang = r.audioLanguageInfo || {};
+          const vDna = effectiveVoiceDna;
+          const langLabel = aLang.language || (r.deepIntelligence && r.deepIntelligence.audioLanguage) || vDna.code || 'Tiếng Anh';
+          const paceLabel = vDna.wpm ? (vDna.wpm + (vDna.wpmNote ? ' cpm' : ' WPM')) : 'Nhịp chuẩn theo ngách';
+          const toneLabel = (r.visionAnalysis && r.visionAnalysis.mainTopic) || r.editorialNiche || r.niche || 'Narrator Storytelling';
+          const sampleTitle = (demoVid && demoVid.title) || (tvList[0] && tvList[0].title) || (pData.title || ch.title || r.id);
+          const sceneStr = `Acoustic studio recording booth tailored for ${r.editorialNiche || r.niche || 'documentary storytelling'}. Close-mic condenser presence, dry room acoustics, EBU R128 -16 LUFS broadcast mastering.`;
+          const contextStr = `Authoritative, engaging narrator in ${langLabel} (${paceLabel}). Clear articulation with natural dramatic pauses and high retention pacing.`;
+          const speechStr = (demoVid && demoVid.hookSnippet) || `In the heart of "${sampleTitle}", a single overlooked detail changed everything we thought we knew...`;
+          voiceProfile = {
+            audioSpecs: { publicUrl: vDna.sampleUrl },
+            sourceVideo: { timeWindow: '45s' },
+            voiceCharacteristics: {
+              genderEstimate: 'Giọng chuẩn kênh (' + (vDna.code || aLang.code || 'en-US') + ')',
+              ageRange: 'Trưởng thành (Narrator)',
+              languageFlag: vDna.flag || aLang.flag || '',
+              audioLanguage: langLabel,
+              languageDialect: aLang.dialect || vDna.code || 'Standard',
+              actualPaceWPM: paceLabel,
+              toneAndStyle: toneLabel,
+              targetAudience: (r.visionAnalysis && r.visionAnalysis.audienceAge) || 'Khán giả đại chúng & tệp ngách mục tiêu'
+            },
+            promptingStudio: {
+              scene: sceneStr,
+              sampleContext: contextStr,
+              speakerTag: 'Speaker 1 - Lead Narrator',
+              sampleSpeechBlock: speechStr,
+              combinedPromptTemplate: `Scene: ${sceneStr}\nSample Context: ${contextStr}\n\nSpeaker 1 - Lead Narrator:\n${speechStr}`
+            },
+            elevenlabsCloningConfiguration: {
+              recommendedModel: 'ElevenLabs Multilingual v2 / Turbo v2.5',
+              primaryVoiceMatch: `Clone từ phôi mẫu ${r.id} (${vDna.code || aLang.code || 'en-US'})`,
+              alternativeVoices: ['Adam / Brian (Deep Documentary)', 'Rachel / Matilda (Warm Storyteller)'],
+              voiceSettings: {
+                stability: 0.50,
+                similarity_boost: 0.80,
+                style: 0.20,
+                use_speaker_boost: true
+              },
+              voiceDesignPrompt: `A professional ${langLabel} documentary narrator voice with ${paceLabel} pacing, warm resonance, crisp studio articulation, and engaging storytelling cadence.`,
+              dubbingProductionSOP: `Thu/xuất file WAV/MP3 Mono 44.1kHz, chuẩn hóa âm lượng EBU R128 (-16 LUFS), giữ nhịp đọc ổn định ${paceLabel} và chèn khoảng nghỉ 0.35s giữa các luận điểm.`
+            }
+          };
+        }
+        if (!productionToolkit) {
+          const tv0 = demoVid || tvList[0] || {};
+          const thVis = r.thumbnailVision || {};
+          const visAn = r.visionAnalysis || {};
+          const cMatrix = (pData.satelliteEcosystem && pData.satelliteEcosystem.contentMatrix6Months) || {};
+          const aLang = r.audioLanguageInfo || {};
+          const vDna = effectiveVoiceDna || {};
+          const chName = pData.title || ch.title || r.folderName || r.id;
+          const nDisplay = r.editorialNiche || r.nicheName || r.niche || 'YouTube Faceless';
+          const nCode = String(r.nicheCode || '').toUpperCase();
+          const skillMap = {
+            H01: { skill: 'h2dev-senior-wisdom', sop: 'raw-niches/KR_SeniorWisdom/README.md', repo: 'docs/NOI-BO/prompt/north-effect.md' },
+            H03: { skill: 'h2dev-everyday-history', sop: 'assets/docs/tai-lieu/pipeline-everyday-history-geography.md', repo: 'raw-niches/US_EverydayHistory/README.md' },
+            H04: { skill: 'h2dev-ton-giao', sop: 'assets/docs/tai-lieu/pipeline-video-ton-giao.md', repo: 'pipelines/bible-explainer/README.md' },
+            H05: { skill: 'h2dev-bible', sop: 'assets/docs/tai-lieu/pipeline-bible-explainer.md', repo: 'pipelines/bible-explainer/README.md' },
+            H07: { skill: 'h2dev-senior-wisdom', sop: 'raw-niches/KR_SeniorWisdom/README.md', repo: 'docs/NOI-BO/prompt/north-effect.md' },
+            H09: { skill: 'h2dev-dark-crime', sop: 'docs/NOI-BO/prompt/documentary-master-zero-ai-look.md', repo: 'docs/NOI-BO/prompt/north-effect.md' },
+            H10: { skill: 'h2dev-everyday-history', sop: 'raw-niches/US_EverydayHistory/README.md', repo: 'pipelines/bible-explainer/README.md' },
+            H11: { skill: 'h2dev-geopolitics-military', sop: 'raw-niches/DE_ScienceParadox/README.md', repo: 'docs/NOI-BO/prompt/documentary-master-zero-ai-look.md' },
+            H12: { skill: 'h2dev-wildlife-script', sop: 'pipelines/wildlife/README.md', repo: 'docs/NOI-BO/prompt/wildlife-multi-biome-kiwi-naturalism-v5.md' },
+            H14: { skill: 'h2dev-hoat-hinh', sop: 'assets/docs/tai-lieu/pipeline-hoat-hinh-ai.md', repo: 'pipelines/hoat-hinh-ai/README.md' }
+          };
+          const mappedSkill = skillMap[nCode] || { skill: 'h2dev-documentary-master', sop: 'docs/NOI-BO/prompt/north-effect.md', repo: 'docs/NOI-BO/zoom/QUY-TRINH-XAY-KENH-A-Z.md' };
+          const wpmStr = vDna.wpm ? (vDna.wpm + (vDna.wpmNote ? ' cpm' : ' WPM')) : '130–145 WPM';
+          const hookText = tv0.hookSnippet || (tv0.description ? String(tv0.description).slice(0, 220) : '') || `Mở đầu trực diện nghịch lý chủ đề "${tv0.title || nDisplay}" trong 15 giây đầu, không chào hỏi dông dài.`;
+          const coreStyleShort = thVis.facelessType || visAn.productionFormat || 'Cinematic Faceless Documentary (16:9 · 60fps)';
+          const coreCameraLight = thVis.thumbnailStyle || visAn.contentStyle || 'Ống kính 35mm–50mm Prime, tương phản Chiaroscuro sâu, ánh sáng điện ảnh tự nhiên';
+          const coreStyleDetail = `${nDisplay} — Phong cách thị giác chuẩn kênh ${chName}, ưu tiên bố cục rõ chủ thể, chuyển cảnh nhịp 4–6s và khử hoàn toàn cảm giác nhựa AI.`;
+          productionToolkit = {
+            targetMarket: {
+              primaryRegion: `${pData.country || ch.country || 'US & Global'} (${aLang.language || 'Đa ngôn ngữ'})`
+            },
+            visualDirective: {
+              styleName: coreStyleShort,
+              styleShort: coreStyleShort,
+              mascot: thVis.isFaceless === false ? 'Host / Narrator xuất hiện dẫn chuyện kết hợp B-roll' : `Ẩn mặt (Faceless) · Chủ thể trọng tâm ${nDisplay}`,
+              cameraLighting: coreCameraLight,
+              style: coreStyleDetail,
+              aspectRatio: '16:9 (1920x1080 Full HD · 60fps)',
+              colorGrading: coreCameraLight,
+              masterVisualPrompt: `Cinematic documentary visual in the style of ${chName} (${nDisplay}), 50mm prime lens, natural volumetric lighting, high micro-contrast, authentic historical/factual texture, 8k resolution --ar 16:9 --v 6.1`,
+              multiAngleArchetypes: [
+                { shotType: 'SHOT 1 — Establishing Wide', description: `Toàn cảnh bối cảnh ${nDisplay} mở đầu tạo chiều sâu không gian và quy mô sự kiện.`, prompt: `Wide establishing shot of ${nDisplay}, cinematic atmospheric lighting, deep perspective, 8k --ar 16:9` },
+                { shotType: 'SHOT 2 — Medium Focal Subject', description: `Trung cảnh khóa vào chủ thể/nhân vật trung tâm của "${tv0.title || chName}".`, prompt: `Medium cinematic shot focused on the core subject of ${tv0.title || nDisplay}, 50mm lens, dramatic rim light --ar 16:9` },
+                { shotType: 'SHOT 3 — Macro Evidence / Detail', description: 'Cận cảnh chi tiết bằng chứng, số liệu, bản đồ hoặc hiện vật tăng độ tin cậy.', prompt: `Extreme macro close-up of documentary evidence and intricate texture related to ${nDisplay}, shallow depth of field --ar 16:9` },
+                { shotType: 'SHOT 4 — Dynamic Transition B-Roll', description: 'Góc máy chuyển tiếp tốc độ cao dùng cho các mốc Attention Reset mỗi 60 giây.', prompt: `Dynamic over-the-shoulder perspective in ${nDisplay}, natural motion blur, high contrast documentary grading --ar 16:9` }
+              ],
+              cameraMotionSOP: [
+                'Mở cảnh bằng Slow Push-in (Zoom 100% -> 108% trong 4 giây) khóa vào chủ thể trung tâm.',
+                'Chuyển cảnh Pan ngang mượt mà theo trục ánh sáng, chèn B-roll/tư liệu đổi cảnh mỗi 4–6 giây giữ nhịp thị giác.',
+                'Kết hợp hiệu ứng chiều sâu Parallax 2.5D và hạt bụi ánh sáng tự nhiên chống cảm giác ảnh tĩnh.'
+              ],
+              negativePrompt: 'plastic skin, 3d cartoon slop, uncanny valley, deformed hands, blurry text, watermark, static slideshow'
+            },
+            scriptBlueprint: {
+              scriptRefVid: tv0.videoId || '',
+              scriptRefTitle: tv0.title || '',
+              northEffectSopPath: 'docs/NOI-BO/prompt/north-effect.md',
+              hookArchetype: `Hook Nghịch Lý / Câu Hỏi Mở 0–15s (${nDisplay})`,
+              openingFormula: hookText,
+              pacingStructure: `Cấu trúc ${cMatrix.targetLength || '12–20 phút'} · Tốc độ đọc ${wpmStr} · Cài đặt Attention Reset mỗi 60–90 giây bằng câu hỏi chuyển ý và SFX.`,
+              masterScriptPromptShort: 'Áp dụng công thức North Effect 70/30: Giữ 70% khung sự thật/dẫn chứng cốt lõi từ video Outlier đối thủ, sáng tạo mới 30% góc nhìn phân tích, mở đầu nghịch lý và dẫn chứng độc bản.',
+              masterScriptPrompt: `[SYSTEM ROLE: Senior Documentary Scriptwriter - ${nDisplay}]\nHãy viết kịch bản phân tích chuyên sâu theo phong cách kênh ${chName} (${ch.handle || r.id}), ngôn ngữ ${aLang.language || 'bản xứ'}, tốc độ đọc chuẩn ${wpmStr}.\n- Video tham chiếu Outlier: "${tv0.title || nDisplay}"\n- Quy tắc 70/30 North Effect: Giữ 70% cấu trúc giữ chân đã kiểm chứng, biến đổi 30% dẫn chứng mới và Hook nghịch lý 15s đầu.\n- Chia kịch bản thành 4 Hồi rõ ràng, đánh dấu [B-ROLL] và [SFX] mỗi 30 giây.`
+            },
+            packagingCTR: {
+              titleFormula: `[Nghịch Lý / Con Số Cụ Thể] + [Chủ Thể Trọng Tâm ${nDisplay}] + [Hệ Quả Bất Ngờ / Bí Ẩn]`,
+              thumbnailComposition: thVis.thumbnailStyle || 'Quy tắc 65/35: 1 chủ thể trung tâm rõ nét chiếm 65% khung hình + Text Overlay <= 4 từ tương phản cực cao.',
+              thumbnailText: (tv0.title ? String(tv0.title).split(/\s+/).slice(0, 4).join(' ').toUpperCase() : 'THE HIDDEN TRUTH'),
+              cleanThumbnailPrompt: `High-CTR YouTube thumbnail background for "${tv0.title || nDisplay}", dramatic rim lighting, single focal subject on the right two-thirds, clean negative space on the left for bold typography, hyper-detailed, 8k --ar 16:9`,
+              exampleTitles: tvList.slice(0, 3).map(v => v.title).filter(Boolean)
+            },
+            productionStack: {
+              matchingSkill: mappedSkill.skill,
+              scriptTool: 'Claude Sonnet 4.6 + Công thức North Effect 70/30',
+              voiceTool: `ElevenLabs / Minimax (${aLang.language || 'Bản xứ'} · ${wpmStr} · Chuẩn -16 LUFS)`,
+              videoTool: 'Midjourney v6 / Flux.1 Pro + Veo 3.1 / CapCut PC (Hậu kỳ 5 lớp)',
+              bgmSoundtrack: 'Ambient 432Hz (-26dB, Sidechain Ducking -6dB khi có lời thoại)',
+              soundEffects: 'Whoosh chuyển cảnh, Riser kịch tính, Room Tone tự nhiên (-20dB)',
+              sopDocPath: mappedSkill.sop,
+              repoPath: mappedSkill.repo
+            },
+            launchpad5Steps: [
+              { step: 1, title: 'Chọn đề tài Outlier từ Top Videos', detail: `Khai thác các chủ đề vượt ngưỡng trung bình kênh (như "${tv0.title || nDisplay}") và kiểm tra Search Volume trên vidIQ.` },
+              { step: 2, title: 'Đúc kịch bản 4 Hồi chuẩn 70/30', detail: `Viết lại 100% Hook 15s đầu theo nghịch lý, chia Part 1.000 từ trên Claude để giữ chiều sâu phân tích.` },
+              { step: 3, title: 'Sản xuất Voice DNA & Master Audio 3 tầng', detail: `Xuất voice tốc độ ${wpmStr} chuẩn -16 LUFS, lồng nhạc nền 432Hz và tối thiểu 10 điểm nhấn SFX.` },
+              { step: 4, title: 'Dựng Visual 5P & Đóng gói Bao bì CTR', detail: `Đổi cảnh mỗi 4–6 giây, kết hợp B-roll/chuyển động camera 5P và thiết kế 2 phương án Thumbnail A/B.` },
+              { step: 5, title: 'Kiểm định YPP & Lịch đăng ổn định', detail: `Đăng ở chế độ Unlisted trước 2 giờ để hệ thống duyệt xanh, duy trì tần suất ${cMatrix.cadence || '2–3 video/tuần'}.` }
+            ]
+          };
+        }
+        const tags = (pData.channelTags && pData.channelTags.length)
+          ? pData.channelTags
+          : ((pData.topTagsSample && pData.topTagsSample.length) ? pData.topTagsSample : (ocr.tags || []));
         const yppNote = (productionToolkit && productionToolkit.yppRiskNote) || pData.yppRiskNote || {};
         const dataGaps = (productionToolkit && productionToolkit.dataGaps) || pData.dataGaps || {};
         const retentionProxy = (productionToolkit && productionToolkit.retentionAvdProxy) || pData.retentionAvdProxy || null;
@@ -1838,11 +2784,14 @@
                     <div class="row-wrap">
                       <h3 class="raw-deep-header-title truncate" style="font-size: 16px; font-weight: 700; color:#fff; margin:0;">${esc(pData.title || ch.title || r.id)}</h3>
                       <span style="font-size: 12px; font-family:monospace; padding:0.12rem 0.45rem; border-radius:0.375rem; background:var(--surface-2); color:var(--fg-muted); border:1px solid var(--border-strong);">${esc(r.id)}</span>
+                      ${r.nicheCode ? `<button type="button" class="js-raw-modal-jump" data-open-tab="ngachxanh" data-nx-q="${esc(r.nicheCode)}" style="font-size: 12px; font-family:monospace; font-weight:700; padding:0.12rem 0.45rem; border-radius:0.375rem; background:rgba(56,189,248,0.18); color:#38bdf8; border:1px solid rgba(56,189,248,0.4); cursor:pointer;" title="Mở ngách ${esc(r.nicheCode)} trên Ngách Xanh">${esc(r.nicheCode)} ↗</button>` : ''}
                       <span style="font-size: 12px; font-weight:600; padding:0.12rem 0.45rem; border-radius:0.375rem; background:rgba(239,68,68,0.2); color:#fca5a5; border:1px solid rgba(239,68,68,0.4);">${esc(nicheDisplay)}</span>
                     </div>
                   </div>
                 </div>
                 <div class="raw-deep-header-actions" style="display:flex; align-items:center; gap:0.4rem; flex-shrink:0;">
+                  <button type="button" class="js-raw-modal-jump" data-open-tab="kenh-mau" data-kenh-q="${esc(r.id)}" style="padding:0.42rem 0.7rem; border-radius:0.55rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.25rem;" title="Đối chiếu kênh trong Kênh mẫu"><span class="raw-deep-mobile-hide">Kênh mẫu </span>↗</button>
+                  <button type="button" class="js-raw-modal-jump" data-sodo-jump="${esc(r.id)}" style="padding:0.42rem 0.7rem; border-radius:0.55rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.25rem;" title="Truy vết kênh ${esc(r.id)} trên Sơ đồ DB"><span class="raw-deep-mobile-hide">Sơ đồ DB </span>↗</button>
                   <a href="${esc(ytUrl)}" target="_blank" rel="noopener noreferrer" style="padding:0.42rem 0.8rem; border-radius:0.55rem; background:rgba(239,68,68,0.85); color:#fff; font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:0.3rem;"><span style="display:inline-flex;">${ico('tv', 14)}</span><span class="raw-deep-mobile-hide"> Mở YouTube ${ico('arrow-up-right', 14)}</span></a>
                   <button type="button" id="close-raw-deep" style="padding:0.42rem 0.8rem; border-radius:0.55rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center;" title="Đóng [Esc]">${ico('x', 14)}</button>
                 </div>
@@ -1851,12 +2800,12 @@
                 <span style="color:var(--fg-2); font-weight:600;">${esc(decodeURIComponent(pData.handle || ch.handle || ''))}</span>
                 <span>•</span>
                 <span>Quốc gia: <strong class="c-slate-100">${esc(countryDisplay)}</strong></span>
-                ${(voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) || (r.voiceDna) || (r.audioLanguageInfo && r.audioLanguageInfo.flag) ? `
+                ${(voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) || (effectiveVoiceDna) || (r.audioLanguageInfo && r.audioLanguageInfo.flag) ? `
                 <span>•</span>
                 <span style="display:inline-flex; align-items:center; gap:0.25rem; background:rgba(56,189,248,0.12); border:1px solid rgba(56,189,248,0.35); padding:0.08rem 0.45rem; border-radius:0.35rem; color:#38bdf8; font-weight:700;">
-                  <span>${esc((voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) || (r.voiceDna && r.voiceDna.flag) || (r.audioLanguageInfo && r.audioLanguageInfo.flag))}</span>
-                  <span>${esc((voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.audioLanguage) || (r.voiceDna && r.voiceDna.code) || (r.audioLanguageInfo && r.audioLanguageInfo.language))}</span>
-                  ${r.voiceDna && r.voiceDna.wpm ? `<span>· ${esc(String(r.voiceDna.wpm))}${r.voiceDna.wpmNote ? ' cpm' : ' WPM'}</span>` : ''}
+                  <span>${esc((voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) || (effectiveVoiceDna && effectiveVoiceDna.flag) || (r.audioLanguageInfo && r.audioLanguageInfo.flag))}</span>
+                  <span>${esc((voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.audioLanguage) || (effectiveVoiceDna && effectiveVoiceDna.code) || (r.audioLanguageInfo && r.audioLanguageInfo.language))}</span>
+                  ${effectiveVoiceDna && effectiveVoiceDna.wpm ? `<span>· ${esc(String(effectiveVoiceDna.wpm))}${effectiveVoiceDna.wpmNote ? ' cpm' : ' WPM'}</span>` : ''}
                 </span>` : ''}
                 <span>•</span>
                 <span style="color:${vA.healthStatus === 'DEAD_OR_PURGED' ? 'var(--danger)' : '#10b981'}; font-weight:600;">${esc(stripDecorEmoji(vA.healthBadge) || (pData.longevityAudit ? pData.longevityAudit.sustainabilityStatus : ''))}</span>
@@ -2035,6 +2984,39 @@
                 </div>
               </div>`;
               })() : ''}
+
+              ${r.fileName ? (() => {
+                const rawImgSrc = 'assets/raw-kenh/' + encodeURIComponent(r.fileName);
+                const rawImgTitle = (pData.title || ch.title || r.id).trim();
+                return `
+              <div id="raw-screenshot-proof" style="background:var(--surface); border:1px solid var(--border); border-radius:0.875rem; padding:0.9rem 1.1rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
+                <div style="display:flex; align-items:center; gap:0.85rem; min-width:0; flex:1;">
+                  <div class="js-view-raw-image" role="button" tabindex="0" aria-label="Phóng to ảnh chụp màn hình gốc: ${esc(rawImgTitle)}" data-src="${esc(rawImgSrc)}" data-title="${esc(rawImgTitle)}" style="width:96px; height:54px; border-radius:0.5rem; overflow:hidden; border:1px solid var(--border-strong); cursor:pointer; flex-shrink:0; background:#000;">
+                    <img src="${esc(rawImgSrc)}" alt="${esc(rawImgTitle)}" width="192" height="108" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" style="width:100%; height:100%; object-fit:cover;">
+                  </div>
+                  <div style="min-width:0;">
+                    <div style="font-size:13px; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
+                      <span>${ico('camera', 14)}</span> Ảnh Chụp Màn Hình Bằng Chứng Gốc (${esc(r.fileName)})
+                    </div>
+                    <p style="font-size:12px; color:var(--fg-muted); margin:0.2rem 0 0 0;">Ảnh raw đối chiếu lúc phát hiện kênh${ocr && ocr.scannedAt ? ' (' + esc(String(ocr.scannedAt).slice(0, 10)) + ')' : ''}. Bấm để phóng to kiểm chứng.</p>
+                  </div>
+                </div>
+                <button type="button" class="js-view-raw-image" data-src="${esc(rawImgSrc)}" data-title="${esc(rawImgTitle)}" style="font-size:12px; padding:0.4rem 0.85rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:#38bdf8; cursor:pointer; font-weight:700; display:inline-flex; align-items:center; gap:0.35rem;">${ico('search', 14)} Phóng to ảnh gốc</button>
+              </div>`;
+              })() : ''}
+
+              ${tags && tags.length ? `
+              <div id="raw-channel-tags-box" style="background:var(--surface); border:1px solid var(--border); border-radius:0.875rem; padding:1rem 1.1rem;">
+                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+                  <div style="font-size: 14px; font-weight:700; color:var(--fg-2); display:flex; align-items:center; gap:0.4rem;">
+                    <span>${ico('tag', 14)}</span> Bộ Tags Kênh &amp; Từ Khóa SEO Đắt Giá (${tags.length} tags):
+                  </div>
+                  <button type="button" id="btn-copy-raw-tags" style="font-size: 12px; padding:0.3rem 0.75rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); cursor:pointer; font-weight:600;">${ico('clipboard-copy', 14)} Sao chép tất cả Tags</button>
+                </div>
+                <div style="display:flex; flex-wrap:wrap; gap:0.4rem; max-height:160px; overflow-y:auto; padding-right:0.25rem;">
+                  ${tags.map(t => `<span style="font-size: 12px; padding:0.25rem 0.6rem; border-radius:0.5rem; background:var(--surface-2); color:var(--fg-2); border:1px solid var(--border-strong);">#${esc(t)}</span>`).join('')}
+                </div>
+              </div>` : ''}
               </div> <!-- End Tab Panel 1: Overview -->
 
               <!-- Tab Panel 2: Vũ Khí Tác Chiến (Mission Control) -->
@@ -2061,9 +3043,10 @@
                       ${ico('alert-triangle', 14)} Đang thẩm định đối thủ (${openGaps.length} gaps chưa khóa)
                     </span>`;
 
-                const refVid = sb.scriptRefVid || (ps.referenceVideo && ps.referenceVideo.videoId) || (topVideos && topVideos.videos && topVideos.videos[0] && topVideos.videos[0].videoId) || '';
-                const refTitle = sb.scriptRefTitle || (ps.referenceVideo && ps.referenceVideo.title) || (topVideos && topVideos.videos && topVideos.videos[0] && topVideos.videos[0].title) || '';
-                const refViews = (topVideos && topVideos.videos && topVideos.videos[0] && formatNum(topVideos.videos[0].views)) || '1M+';
+                const refVid = sb.scriptRefVid || (ps.referenceVideo && ps.referenceVideo.videoId) || (demoVid && demoVid.videoId) || (tvList[0] && tvList[0].videoId) || '';
+                const matchedRefVideo = (refVid && tvList.find(v => v.videoId === refVid)) || demoVid || tvList[0] || null;
+                const refTitle = sb.scriptRefTitle || (ps.referenceVideo && ps.referenceVideo.title) || (matchedRefVideo && matchedRefVideo.title) || '';
+                const refViews = (matchedRefVideo && matchedRefVideo.views != null) ? formatNum(matchedRefVideo.views) : 'N/A';
                 const sopPath = ps.sopDocPath || ps.skillDocPath || 'assets/docs/tai-lieu/pipeline-hoat-hinh-ai.md';
                 const repoPath = ps.repoPath || ps.skillRepoPath || 'pipelines/hoat-hinh-ai/README.md';
 
@@ -2098,16 +3081,16 @@
                         <span>${ico('palette', 14)}</span> Chỉ Thị Thị Giác (Visual Directive)
                       </div>
                       <div class="row-wrap">
-                        <button type="button" class="btn-copy-visual-prompt" style="font-size: 12px; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-sky-600 hover:text-white transition">${ico('clipboard-copy', 14)} Copy Master Shot</button>
-                        <button type="button" class="btn-copy-visual-kit" style="font-size: 12px; color:#c084fc; background:rgba(168,85,247,0.15); border:1px solid rgba(168,85,247,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-purple-600 hover:text-white transition">${ico('package', 14)} Copy Trọn Bộ Visual Kit</button>
+                        <button type="button" class="btn-copy-visual-prompt hover:bg-sky-600 hover:text-white transition" style="font-size: 12px; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">${ico('clipboard-copy', 14)} Copy Master Shot</button>
+                        <button type="button" class="btn-copy-visual-kit hover:bg-purple-600 hover:text-white transition" style="font-size: 12px; color:#c084fc; background:rgba(168,85,247,0.15); border:1px solid rgba(168,85,247,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">${ico('package', 14)} Copy Trọn Bộ Visual Kit</button>
                       </div>
                     </div>
 
                     <div style="font-size: 12px; color:var(--fg-2); background:var(--surface); padding:0.75rem 0.85rem; border-radius:0.5rem; border:1px solid var(--border); display:flex; flex-direction:column; gap:0.5rem;">
-                      <div><strong class="c-amber">STYLE_SHORT:</strong> <span class="c-ink">${esc(vd.styleShort || '')}</span></div>
+                      <div><strong class="c-amber">STYLE_SHORT:</strong> <span class="c-ink">${esc(vd.styleShort || vd.styleName || '')}</span></div>
                       <div><strong class="c-sky">MASCOT / BRAND:</strong> <span class="c-ink">${esc(vd.mascot || 'None')}</span></div>
-                      <div><strong class="c-violet">CAMERA / LIGHT:</strong> <span class="c-slate-100">${esc(vd.cameraLighting || '')}</span></div>
-                      <div style="font-size: 12px; color:var(--fg-muted); line-height:1.45;"><strong class="c-emerald">STYLE DETAILS:</strong> ${esc(vd.style || '')}</div>
+                      <div><strong class="c-violet">CAMERA / LIGHT:</strong> <span class="c-slate-100">${esc(vd.cameraLighting || vd.colorGrading || '')}</span></div>
+                      <div style="font-size: 12px; color:var(--fg-muted); line-height:1.45;"><strong class="c-emerald">STYLE DETAILS:</strong> ${esc(vd.style || vd.styleName || '')}</div>
                       
                       ${vd.masterVisualPrompt ? `
                       <div style="border-top:1px solid var(--border); padding-top:0.4rem;">
@@ -2147,11 +3130,11 @@
                         <span>${ico('file-edit', 14)}</span> Khuôn Đúc Kịch Bản (Script Blueprint)
                       </div>
                       <div style="display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap;">
-                        <button type="button" class="btn-open-video-sub" data-dossier="${esc(dossierPath)}" data-vid="${esc(refVid)}" data-title="${esc(refTitle)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(refViews)}" style="font-size: 12px; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.55rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">${ico('scroll-text', 14)} Kịch Bản Gốc (${esc(refVid ? refVid.slice(0,6) : 'Sub')})</button>
-                        <a href="${esc(sb.northEffectSopPath || 'docs/NOI-BO/prompt/north-effect.md')}" target="_blank" rel="noopener noreferrer" style="font-size: 12px; padding:0.25rem 0.55rem; border-radius:0.4rem; background:rgba(168,85,247,0.2); border:1px solid rgba(168,85,247,0.4); color:#e9d5ff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;" class="hover:bg-purple-600 hover:text-white transition">
+                        ${refVid ? `<button type="button" class="btn-open-video-sub" data-dossier="${esc(dossierPath)}" data-vid="${esc(refVid)}" data-title="${esc(refTitle)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(refViews)}" style="font-size: 12px; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.55rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">${ico('scroll-text', 14)} Kịch Bản Gốc (${esc(refVid.slice(0, 6))})</button>` : `<span style="font-size: 12px; color:var(--fg-muted); background:var(--surface-2); border:1px solid var(--border-strong); padding:0.25rem 0.55rem; border-radius:0.4rem;">Chưa có video mẫu (Kênh 404)</span>`}
+                        <a href="${esc(sb.northEffectSopPath || 'docs/NOI-BO/prompt/north-effect.md')}" data-doc-preview="${esc(sb.northEffectSopPath || 'docs/NOI-BO/prompt/north-effect.md')}" data-doc-title="SOP North Effect 70/30" target="_blank" rel="noopener noreferrer" class="hover:bg-purple-600 hover:text-white transition" style="font-size: 12px; padding:0.25rem 0.55rem; border-radius:0.4rem; background:rgba(168,85,247,0.2); border:1px solid rgba(168,85,247,0.4); color:#e9d5ff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;">
                           <span>${ico('file-text', 14)} SOP North Effect</span> ${ico('arrow-up-right', 14)}
                         </a>
-                        <button type="button" class="btn-copy-master-prompt" style="font-size: 12px; color:#34d399; background:rgba(16,185,129,0.18); border:1px solid rgba(16,185,129,0.5); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-emerald-600 hover:text-white transition">${ico('clipboard-copy', 14)} Copy Full Master Prompt</button>
+                        <button type="button" class="btn-copy-master-prompt hover:bg-emerald-600 hover:text-white transition" style="font-size: 12px; color:#34d399; background:rgba(16,185,129,0.18); border:1px solid rgba(16,185,129,0.5); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">${ico('clipboard-copy', 14)} Copy Full Master Prompt</button>
                       </div>
                     </div>
 
@@ -2191,8 +3174,8 @@
                         <span>${ico('target', 14)}</span> Bao Bì CTR (Title & Thumbnail)
                       </div>
                       <div class="row-wrap">
-                        <button type="button" class="btn-copy-thumb-prompt" style="font-size: 12px; color:#f59e0b; background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-amber-600 hover:text-white transition">${ico('clipboard-copy', 14)} Copy AI Image Prompt</button>
-                        <button type="button" class="btn-copy-full-packaging" style="font-size: 12px; color:#f43f5e; background:rgba(244,63,94,0.15); border:1px solid rgba(244,63,94,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;" class="hover:bg-rose-600 hover:text-white transition">${ico('package', 14)} Copy Trọn Bộ Bao Bì CTR</button>
+                        <button type="button" class="btn-copy-thumb-prompt hover:bg-amber-600 hover:text-white transition" style="font-size: 12px; color:#f59e0b; background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">${ico('clipboard-copy', 14)} Copy AI Image Prompt</button>
+                        <button type="button" class="btn-copy-full-packaging hover:bg-rose-600 hover:text-white transition" style="font-size: 12px; color:#f43f5e; background:rgba(244,63,94,0.15); border:1px solid rgba(244,63,94,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">${ico('package', 14)} Copy Trọn Bộ Bao Bì CTR</button>
                       </div>
                     </div>
 
@@ -2238,10 +3221,10 @@
                       
                       <!-- Direct Links to Skill and Repo -->
                       <div style="display:flex; align-items:center; gap:0.4rem; margin-top:0.4rem; pt-1; border-top:1px solid var(--border); flex-wrap:wrap;">
-                        <a href="${esc(sopPath)}" target="_blank" rel="noopener noreferrer" style="font-size: 12px; padding:0.3rem 0.65rem; border-radius:0.4rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#e9d5ff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.3rem;" class="hover:bg-purple-600 hover:text-white transition">
+                        <a href="${esc(sopPath)}" ${/\.(md|txt)$/i.test(sopPath) ? `data-doc-preview="${esc(sopPath)}" data-doc-title="${esc(ps.matchingSkill || 'SOP Skill Gốc')}"` : ''} target="_blank" rel="noopener noreferrer" class="hover:bg-purple-600 hover:text-white transition" style="font-size: 12px; padding:0.3rem 0.65rem; border-radius:0.4rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#e9d5ff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.3rem;">
                           <span>${ico('file-text', 14)} Xem Toàn Bộ SOP Skill Gốc</span> ${ico('arrow-up-right', 14)}
                         </a>
-                        <a href="${esc(repoPath)}" target="_blank" rel="noopener noreferrer" style="font-size: 12px; padding:0.3rem 0.65rem; border-radius:0.4rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem;" class="hover:text-white hover:bg-slate-700 transition">
+                        <a href="${esc(repoPath)}" ${/\.(md|txt)$/i.test(repoPath) ? `data-doc-preview="${esc(repoPath)}" data-doc-title="Tài liệu Pipeline & Repo"` : ''} target="_blank" rel="noopener noreferrer" class="hover:text-white hover:bg-slate-700 transition" style="font-size: 12px; padding:0.3rem 0.65rem; border-radius:0.4rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem;">
                           <span>${ico('folder-open', 14)} Repo Code</span> ${ico('arrow-up-right', 14)}
                         </a>
                       </div>
@@ -2337,7 +3320,14 @@
                     </div>
                   </div>
                 </div>
-              </div>` : ''}
+              </div>` : `
+              <div style="background:var(--surface); border:1px dashed var(--border-strong); border-radius:1rem; padding:1.25rem; display:flex; align-items:center; gap:0.85rem; color:var(--fg-muted); font-size:13px;">
+                <span style="display:inline-flex; color:#f59e0b; flex-shrink:0;">${ico('alert-triangle', 20)}</span>
+                <div>
+                  <div style="font-weight:700; color:var(--fg);">Kênh chưa có Video Demo công khai trên YouTube Live</div>
+                  <div style="font-size:12px; color:var(--fg-muted); margin-top:0.2rem;">Kênh đã chuyển trạng thái Ngừng hoạt động / 404 hoặc ẩn toàn bộ video công khai sau thời điểm chụp ảnh raw gốc. Xem ảnh chụp màn hình gốc ở Tab 1 hoặc đối soát dữ liệu OCR ở Tab 4.</div>
+                </div>
+              </div>`}
 
               <!-- Section: Mẫu Giọng Chuẩn Của Kênh & Gợi Ý Clone Voice (Voice DNA Studio) -->
               ${voiceProfile ? (() => {
@@ -2485,21 +3475,14 @@
                 </div>` : ''}
 
               </div>`;
-              })() : ''}
-
-              <!-- Section: Bộ Tags Kênh (Channel Tags) -->
-              ${tags && tags.length ? `
-              <div style="background:var(--surface); border:1px solid var(--border); border-radius:0.875rem; padding:1rem 1.1rem;">
-                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
-                  <div style="font-size: 14px; font-weight:700; color:var(--fg-2); display:flex; align-items:center; gap:0.4rem;">
-                    <span>${ico('tag', 14)}</span> Bộ Tags Kênh Đắt Giá (${tags.length} tags):
-                  </div>
-                  <button type="button" id="btn-copy-raw-tags" style="font-size: 12px; padding:0.3rem 0.75rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); cursor:pointer; font-weight:600;">${ico('clipboard-copy', 14)} Sao chép tất cả Tags</button>
+              })() : `
+              <div style="background:var(--surface); border:1px dashed var(--border-strong); border-radius:1rem; padding:1.25rem; display:flex; align-items:center; gap:0.85rem; color:var(--fg-muted); font-size:13px;">
+                <span style="display:inline-flex; color:#38bdf8; flex-shrink:0;">${ico('mic', 20)}</span>
+                <div>
+                  <div style="font-weight:700; color:var(--fg);">Kênh thiên về Nhạc Nền / ASMR / Không dùng Lời Thoại (No Voiceover)</div>
+                  <div style="font-size:12px; color:var(--fg-muted); margin-top:0.2rem;">Kênh này vận hành bằng âm thanh hiện trường, nhạc ambient hoặc đã ngừng hoạt động trước khi thu mẫu giọng đọc. Sử dụng kho Nhạc & SFX ở thanh công cụ trên để phối âm cho tuyến nội dung này.</div>
                 </div>
-                <div style="display:flex; flex-wrap:wrap; gap:0.4rem; max-height:160px; overflow-y:auto; padding-right:0.25rem;">
-                  ${tags.map(t => `<span style="font-size: 12px; padding:0.25rem 0.6rem; border-radius:0.5rem; background:var(--surface-2); color:var(--fg-2); border:1px solid var(--border-strong);">#${esc(t)}</span>`).join('')}
-                </div>
-              </div>` : ''}
+              </div>`}
               </div> <!-- End Tab Panel 3: Voice DNA & Demo -->
 
               <!-- Tab Panel 4: Top Videos Live & Tiến Hóa Kênh -->
@@ -2512,12 +3495,17 @@
                   </div>
                   <span style="font-size: 12px; color:#38bdf8; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.3); padding:0.15rem 0.5rem; border-radius:0.375rem; font-weight:600;">Sắp xếp: Cao nhất đến thấp nhất (Most Viewed)</span>
                 </div>
-                <p style="font-size: 12px; color:var(--fg-muted); margin:0 0 0.85rem 0;">100% video dưới đây đang hoạt động thực tế trên YouTube, có đầy đủ Sub song ngữ 1:1, timestamps và phân tích kịch bản Voice AI.</p>
+                ${(() => {
+                  const hasRealSubVideo = (v) => Boolean(v && (v.transcriptJsonRel || v.hasTranscript || (v.segmentCount && v.segmentCount > 0) || (v.transcriptSegmentsCount && v.transcriptSegmentsCount > 0)));
+                  const subCount = tvList.filter(hasRealSubVideo).length;
+                  return `<p style="font-size: 12px; color:var(--fg-muted); margin:0 0 0.85rem 0;">${subCount === tvList.length && tvList.length > 0 ? '100% video dưới đây đang hoạt động thực tế trên YouTube, có đầy đủ Sub song ngữ 1:1, timestamps và phân tích kịch bản Voice AI.' : `Có <strong class="c-slate-100">${subCount}/${tvList.length} video</strong> đã bóc tách Sub song ngữ 1:1 & kịch bản AI; các video còn lại cung cấp đầy đủ Hồ sơ Metadata Live, VPH & Gợi ý tái chế North Effect 70/30.`}</p>`;
+                })()}
                 ${tvList.length ? `
                 <div class="raw-top-videos-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:0.85rem;">
                   ${tvList.map((v, i) => {
                     const displayRank = v.displayRank || (i + 1);
                     const sourceRank = v.sourceRank || v.rank || '';
+                    const hasSub = Boolean(v.transcriptJsonRel || v.hasTranscript || (v.segmentCount && v.segmentCount > 0) || (v.transcriptSegmentsCount && v.transcriptSegmentsCount > 0));
                     return `
                     <div style="background:var(--surface); border:1px solid var(--border); border-radius:0.75rem; overflow:hidden; display:flex; flex-direction:column; transition:all 0.2s;" class="hover:border-slate-500">
                       <!-- Compact Thumbnail Container with Play Trigger -->
@@ -2567,16 +3555,43 @@
                         </div>
 
                         <button type="button" class="btn-open-video-sub w-full py-1.5 px-2 rounded-lg bg-indigo-600/30 hover:bg-indigo-600/70 border border-indigo-500/40 text-indigo-200 hover:text-white font-semibold text-xs flex items-center justify-center gap-1.5 transition-colors cursor-pointer" data-dossier="${esc(dossierPath)}" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(formatNum(v.views))}">
-                          <span>${ico('scroll-text', 14)} Xem Sub, Lời Thoại & Kịch Bản AI</span> →
+                          <span>${ico('scroll-text', 14)} ${hasSub ? 'Xem Sub, Lời Thoại & Kịch Bản AI' : 'Xem Thông Tin & Phân Tích Video'}</span> →
                         </button>
                       </div>
                     </div>
                   `}).join('')}
                 </div>` : `
                 <div style="padding:1.5rem; text-align:center; color:var(--fg-faint); font-size: 14px;">
-                  Đang đồng bộ danh sách Top Video của kênh này.
+                  Kênh chưa có danh sách Top Video công khai trên YouTube Live (đã ẩn video hoặc 404). Xem bảng OCR Snapshot bên dưới nếu có.
                 </div>`}
               </div>
+
+              <!-- Section: Ma Trận Nội Dung 6 Tháng & Rubric Chấm Điểm Thumbnail (nếu có trong profile.json) -->
+              ${(pData.satelliteEcosystem && pData.satelliteEcosystem.contentMatrix6Months && pData.satelliteEcosystem.contentMatrix6Months.length) || pData.thumbnailScoringRubric ? `
+              <div style="background:var(--surface); border:1px solid var(--border); border-radius:0.875rem; padding:1rem 1.1rem; display:flex; flex-direction:column; gap:0.85rem;">
+                <div style="font-size: 14px; font-weight:700; color:var(--fg-2); display:flex; align-items:center; gap:0.4rem;">
+                  <span>${ico('layers', 14)}</span> Ma Trận Tuyến Nội Dung & Rubric Chấm Điểm CTR (Deep Dossier Intelligence):
+                </div>
+                ${pData.satelliteEcosystem && Array.isArray(pData.satelliteEcosystem.contentMatrix6Months) && pData.satelliteEcosystem.contentMatrix6Months.length ? `
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:0.65rem;">
+                  ${pData.satelliteEcosystem.contentMatrix6Months.map(cm => `
+                    <div style="background:var(--surface-2); border:1px solid var(--border); border-radius:0.625rem; padding:0.75rem; font-size:12px;">
+                      <div style="font-weight:700; color:#38bdf8; margin-bottom:0.25rem;">${esc(cm.pillar || cm.phase || cm.month || 'Tuyến nội dung')} ${cm.ratio ? `<span class="c-amber">(${esc(cm.ratio)})</span>` : ''}</div>
+                      <div style="color:var(--fg-2); line-height:1.45;">${esc(cm.focus || cm.goal || cm.description || '')}</div>
+                      ${cm.exampleTitle ? `<div style="color:var(--fg-muted); font-style:italic; margin-top:0.3rem;">VD: "${esc(cm.exampleTitle)}"</div>` : ''}
+                    </div>
+                  `).join('')}
+                </div>` : ''}
+                ${pData.thumbnailScoringRubric && Array.isArray(pData.thumbnailScoringRubric.criteria) ? `
+                <div style="background:var(--surface-2); border:1px solid rgba(245,158,11,0.25); border-radius:0.625rem; padding:0.75rem 0.9rem; font-size:12px;">
+                  <div style="font-weight:700; color:#fbbf24; margin-bottom:0.35rem;">Rubric Chấm Điểm Thumbnail Trước Khi Đăng (Ngưỡng đạt: ${esc(String(pData.thumbnailScoringRubric.minimumPassingScore || 80))}/${esc(String(pData.thumbnailScoringRubric.maxScore || 100))}):</div>
+                  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:0.5rem;">
+                    ${pData.thumbnailScoringRubric.criteria.map(cr => `
+                      <div style="color:var(--fg-2); line-height:1.4;">• <strong class="c-slate-100">${esc(cr.criterion || '')} (${esc(String(cr.weight || ''))}đ):</strong> ${esc(cr.passCondition || '')}</div>
+                    `).join('')}
+                  </div>
+                </div>` : ''}
+              </div>` : ''}
 
               <!-- Section: Tốc Độ Tăng Trưởng Thực Tế 7 Ngày Qua (vidIQ Live Velocity) -->
               ${vRec && vRec.length ? `
@@ -2864,6 +3879,24 @@
         modal.querySelectorAll('.raw-tab-btn').forEach(btn => {
           btn.onclick = () => switchRawTab(btn.getAttribute('data-tab'));
         });
+        modal.querySelectorAll('.js-raw-modal-jump').forEach(btn => {
+          btn.onclick = (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            if (typeof window.closeRawDeepModal === 'function') window.closeRawDeepModal();
+            const snode = btn.getAttribute('data-sodo-jump') || '';
+            if (snode) {
+              openTab('sodo', { sodoNode: snode, sodoQ: '' });
+              return;
+            }
+            const targetTab = btn.getAttribute('data-open-tab') || '';
+            if (targetTab === 'ngachxanh') {
+              openTab('ngachxanh', { nxQ: btn.getAttribute('data-nx-q') || '', nxSub: '', nxTier: '', nxMarket: '', nxBranch: '', nxPage: 1 });
+            } else if (targetTab === 'kenh-mau') {
+              openTab('kenh-mau', { kenhQ: btn.getAttribute('data-kenh-q') || '', kenhHandle: '', kenhNiche: '', kenhStatus: '', kenhPage: 1 });
+            }
+          };
+        });
 
         if (jumpTarget === 'mission-control') {
           switchRawTab('mission');
@@ -2886,13 +3919,14 @@
           const title = btn.getAttribute('data-title') || '';
           const channel = btn.getAttribute('data-channel') || '';
           const views = btn.getAttribute('data-views') || '';
+          const initTab = btn.getAttribute('data-init-tab') || '';
           if (window.openVideoTranscriptModal) {
-            window.openVideoTranscriptModal(dossier, vid, title, channel, views);
+            window.openVideoTranscriptModal(dossier, vid, title, channel, views, initTab);
           }
         }
       });
 
-      function inlineMdFull(md) {
+      function inlineMdFull(md, baseSku) {
         if (!md) return '';
         const codeBlocks = [];
         const inlineCodes = [];
@@ -2915,13 +3949,18 @@
           s = s
             .replace(/\*\*(.+?)\*\*/g, '<strong style="color:#fff; font-weight:700;">$1</strong>')
             .replace(/\*(.+?)\*/g, '<em class="c-slate-300">$1</em>')
-            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, rawUrl) => {
-              const u = String(rawUrl || '').trim();
+            .replace(/\[((?:[^\[\]]|\[[^\]]*\])+)\]\(([^)]+)\)/g, (_, label, rawUrl) => {
+              let u = String(rawUrl || '').trim().replace(/^(?:\.\.?\/)+/, '');
+              if (/^(?:docs|video|assets|data|data-tabs)\//i.test(u)) u = '/' + u;
+              else if (baseSku && /^[A-Za-z0-9_.-]+\.(?:md|txt|json|csv|pdf)$/i.test(u)) u = '/docs/' + encodeURIComponent(baseSku) + '/' + u;
               if (/^(https?:\/\/|\/|#)/i.test(u)) {
-                const ext = /^https?:\/\//i.test(u) ? ' target="_blank" rel="noopener noreferrer"' : '';
+                const ext = /^#/i.test(u) ? '' : ' target="_blank" rel="noopener noreferrer"';
                 return `<a href="${u}"${ext} style="color:#38bdf8; text-decoration:underline; font-weight:600;">${label}</a>`;
               }
               return `${label} (${u})`;
+            })
+            .replace(/(^|[\s(])(https?:\/\/[^\s<)"']+)/gi, (_, pfx, url) => {
+              return `${pfx}<a href="${url}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8; text-decoration:underline; font-weight:600;">${url}</a>`;
             })
             .replace(/@@BR@@/g, '<br>')
             .replace(/@@INLINECODE_(\d+)@@/g, (_, i) => inlineCodes[Number(i)] || '');
@@ -3010,7 +4049,102 @@
         return out.join('');
       }
 
-      window.openVideoTranscriptModal = async function(dossierPath, videoId, videoTitle, channelName, views) {
+      window.openDocPreviewModal = async function(fileUrl, docTitle, docSku, docCode) {
+        if (!fileUrl) return;
+        let modal = document.getElementById('doc-preview-modal');
+        const closeDocModal = () => {
+          if (!modal) return;
+          modal.style.display = 'none';
+          const otherOpen = ['quick-video-modal', 'raw-deep-modal', 'video-transcript-modal', 'raw-image-modal', 'music-studio-modal'].some(id => {
+            const el = document.getElementById(id);
+            return el && el.style.display && el.style.display !== 'none';
+          });
+          if (!otherOpen) document.body.style.overflow = '';
+          if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
+            try { modal._prevActiveElement.focus(); } catch (err) {}
+          }
+        };
+        if (!modal) {
+          modal = document.createElement('div');
+          modal.id = 'doc-preview-modal';
+          modal.setAttribute('role', 'dialog');
+          modal.setAttribute('aria-modal', 'true');
+          modal.setAttribute('aria-label', 'Đọc nhanh tài liệu');
+          modal.tabIndex = -1;
+          modal.style.cssText = 'position:fixed; inset:0; z-index:var(--h2-z-modal-top, 110); background:var(--h2-overlay-bg); backdrop-filter:blur(var(--h2-backdrop-blur)); -webkit-backdrop-filter:blur(var(--h2-backdrop-blur)); display:flex; align-items:center; justify-content:center; padding:1rem; overflow-y:auto;';
+          document.body.appendChild(modal);
+          modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeDocModal();
+          });
+        }
+        modal._prevActiveElement = document.activeElement;
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        const cleanUrl = String(fileUrl).replace(/^\//, '');
+        modal.innerHTML = `<div class="text-white text-sm font-mono p-6 bg-surface rounded-2xl border border-border-strong">Đang tải nội dung tài liệu (${esc(docCode || cleanUrl)})...</div>`;
+        focusModal(modal);
+        try {
+          const resp = await fetch('/' + cleanUrl, { cache: 'no-store' });
+          if (!resp.ok) throw new Error('HTTP ' + resp.status);
+          const rawText = await resp.text();
+          const renderedHtml = inlineMdFull(rawText, docSku || '');
+          modal.innerHTML = `
+            <div style="position:relative; width:100%; max-width:960px; max-height:90vh; background:var(--surface-2); border:1px solid var(--border-strong); border-radius:1.25rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
+              <div style="padding:1rem 1.25rem; background:var(--surface); border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; gap:0.75rem; flex-shrink:0; flex-wrap:wrap;">
+                <div style="min-width:0; flex:1;">
+                  <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap; margin-bottom:0.25rem;">
+                    ${docCode ? `<span class="badge badge-brand font-mono">${esc(docCode)}</span>` : ''}
+                    ${docSku ? `<span class="badge badge-muted font-mono">${esc(docSku)}</span>` : ''}
+                    <span class="badge badge-blue font-mono">${esc(cleanUrl)}</span>
+                  </div>
+                  <h3 style="font-size:16px; font-weight:700; color:#fff; margin:0;" class="truncate">${esc(docTitle || cleanUrl)}</h3>
+                </div>
+                <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
+                  <button type="button" id="btn-copy-doc-preview" class="filter-btn text-xs">${ico('copy', 14)} Sao chép nội dung</button>
+                  <a href="/${esc(cleanUrl)}" target="_blank" rel="noopener noreferrer" class="filter-btn text-xs">${ico('arrow-up-right', 14)} Mở tab riêng</a>
+                  <button type="button" id="btn-close-doc-preview" class="filter-btn text-xs" title="Đóng [Esc]">${ico('x', 14)} Đóng</button>
+                </div>
+              </div>
+              <div id="doc-preview-body" style="padding:1.25rem 1.5rem; overflow-y:auto; flex:1; min-height:0; font-size:14px; line-height:1.65; color:var(--fg);">
+                ${renderedHtml || `<pre style="white-space:pre-wrap; word-break:break-word; font-family:monospace; font-size:13px; color:var(--fg-2);">${esc(rawText)}</pre>`}
+              </div>
+            </div>
+          `;
+          const closeBtn = modal.querySelector('#btn-close-doc-preview');
+          if (closeBtn) {
+            closeBtn.onclick = closeDocModal;
+            try { closeBtn.focus(); } catch (_) {}
+          }
+          const copyBtn = modal.querySelector('#btn-copy-doc-preview');
+          if (copyBtn) {
+            copyBtn.onclick = () => {
+              if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(rawText).then(() => {
+                  copyBtn.textContent = 'Đã sao chép!';
+                  setTimeout(() => { copyBtn.innerHTML = `${ico('copy', 14)} Sao chép nội dung`; }, 1800);
+                }).catch(() => {});
+              }
+            };
+          }
+        } catch (err) {
+          modal.innerHTML = `
+            <div style="padding:1.5rem; background:var(--surface-2); border:1px solid var(--border-strong); border-radius:1rem; max-width:520px; width:100%;">
+              <div class="text-sm font-bold text-rose-400 mb-2">Không tải được nội dung tài liệu (${esc(cleanUrl)})</div>
+              <div class="flex justify-end gap-2 mt-4">
+                <a href="/${esc(cleanUrl)}" target="_blank" rel="noopener noreferrer" class="filter-btn text-xs">Mở trực tiếp ↗</a>
+                <button type="button" id="btn-close-doc-preview-err" class="filter-btn text-xs">Đóng</button>
+              </div>
+            </div>
+          `;
+          const errClose = modal.querySelector('#btn-close-doc-preview-err');
+          if (errClose) {
+            errClose.onclick = closeDocModal;
+            try { errClose.focus(); } catch (_) {}
+          }
+        }
+      };
+
+      window.openVideoTranscriptModal = async function(dossierPath, videoId, videoTitle, channelName, views, initTab) {
         const isLessonSku = !dossierPath && /^(?:VIDEO|ZOOM|HUAN|DGMD)-[A-Za-z0-9-]+$/i.test(String(videoId || '').trim());
         const skuNorm = isLessonSku ? String(videoId || '').trim() : '';
         const findLessonInPool = () => {
@@ -3041,7 +4175,11 @@
         const closeSubModal = () => {
           if (!modal) return;
           modal.style.display = 'none';
-          document.body.style.overflow = '';
+          const otherOpen = ['doc-preview-modal', 'quick-video-modal', 'raw-deep-modal', 'raw-image-modal', 'music-studio-modal'].some(id => {
+            const el = document.getElementById(id);
+            return el && el.style.display && el.style.display !== 'none';
+          });
+          if (!otherOpen) document.body.style.overflow = '';
           if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
             try { modal._prevActiveElement.focus(); } catch (err) {}
           }
@@ -3112,12 +4250,12 @@
           } catch (e) { console.warn('[H2DEV] đọc tài liệu bài học lỗi', e); }
         } else {
           try {
-            const res = await fetch(dossierPath + '/transcripts/' + videoId + '_transcript.json');
-            if (res.ok) trData = await res.json();
+            const res = await fetch(dossierPath + '/transcripts/' + videoId + '_transcript.json?optional=1');
+            if (res.ok && res.status !== 204) trData = await res.json();
           } catch (e) { console.warn('[H2DEV] đọc transcript dossier lỗi', e); }
           try {
-            const sRes = await fetch(dossierPath + '/transcripts/' + videoId + '_summary_vi.md');
-            if (sRes.ok) summaryMd = await sRes.text();
+            const sRes = await fetch(dossierPath + '/transcripts/' + videoId + '_summary_vi.md?optional=1');
+            if (sRes.ok && sRes.status !== 204) summaryMd = await sRes.text();
           } catch (e) { console.warn('[H2DEV] đọc summary dossier lỗi', e); }
         }
 
@@ -3137,12 +4275,29 @@
         }
 
         function formatSec(sec) {
-          if (sec == null) return '00:00';
-          sec = Math.floor(Number(sec));
-          const m = Math.floor(sec / 60);
-          const s = sec % 60;
+          if (sec == null || sec === '') return '00:00';
+          if (typeof sec === 'string') {
+            const iso = sec.match(/^PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$/i);
+            if (iso) {
+              const h = parseInt(iso[1] || '0', 10);
+              const m = parseInt(iso[2] || '0', 10);
+              const s = parseInt(iso[3] || '0', 10);
+              if (h > 0) return h + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+              return String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+            }
+            if (/^\d{1,2}:\d{2}(?::\d{2})?$/.test(sec.trim())) return sec.trim();
+          }
+          const num = Math.floor(Number(sec));
+          if (!Number.isFinite(num) || num < 0) return '00:00';
+          const h = Math.floor(num / 3600);
+          const m = Math.floor((num % 3600) / 60);
+          const s = num % 60;
+          if (h > 0) return h + ':' + (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
           return (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
         }
+
+        const rawRecForLang = window._lastRawChannelRecord || null;
+        const origLangFlag = (rawRecForLang && ((rawRecForLang.voiceDna && (rawRecForLang.voiceDna.flag || rawRecForLang.voiceDna.languageFlag)) || (rawRecForLang.audioLanguageInfo && rawRecForLang.audioLanguageInfo.flag) || (rawRecForLang.deepIntelligence && rawRecForLang.deepIntelligence.languageFlag))) || '';
 
         const mdTitleFallback = summaryMd
           ? ((summaryMd.match(/^#\s+(.+)$/m) || [])[1] || '').replace(/^[^\wÀ-ỹ]+/, '').trim()
@@ -3150,16 +4305,40 @@
         const resolvedTitle = (trData && (trData.titleVi || trData.title)) || videoTitle || mdTitleFallback || skuNorm || String(videoId || '');
 
         const segments = (trData && Array.isArray(trData.segments)) ? trData.segments : [];
+        const matchedRawVid = (!isLessonSku && videoId)
+          ? ((window._lastRawTopVideos || []).find(x => x && x.videoId === videoId)
+            || ((window._lastRawChannelRecord && window._lastRawChannelRecord.ocr && window._lastRawChannelRecord.ocr.videoRows) || []).find(x => x && x.videoId === videoId)
+            || null)
+          : null;
+        const fallbackVideoBriefText = (!isLessonSku && !segments.length)
+          ? [
+              `HỒ SƠ PHÂN TÍCH VIDEO ĐỐI THỦ — ${resolvedTitle}`,
+              `================================================================`,
+              `• Kênh đối thủ: ${channelName || 'N/A'}`,
+              `• Mã Video YouTube: ${videoId} (https://www.youtube.com/watch?v=${videoId})`,
+              `• Lượt xem ghi nhận: ${views || (matchedRawVid && matchedRawVid.views ? Number(matchedRawVid.views).toLocaleString('vi-VN') : 'N/A')} views`,
+              matchedRawVid && matchedRawVid.vph != null ? `• Tốc độ tăng trưởng (VPH): ${Math.round(matchedRawVid.vph)} views/giờ` : '',
+              matchedRawVid && matchedRawVid.duration ? `• Thời lượng: ${formatSec(matchedRawVid.duration)}` : '',
+              matchedRawVid && matchedRawVid.publishedAt ? `• Ngày đăng: ${String(matchedRawVid.publishedAt).slice(0, 10)}` : '',
+              matchedRawVid && matchedRawVid.breakoutScore != null ? `• Điểm đột phá (Breakout Score): ${matchedRawVid.breakoutScore}` : '',
+              matchedRawVid && matchedRawVid.estimatedEarnings ? `• Doanh thu ước tính: ${matchedRawVid.estimatedEarnings}` : '',
+              matchedRawVid && (matchedRawVid.hookSnippet || matchedRawVid.description) ? `\n[MỞ ĐẦU / MÔ TẢ GỐC]:\n${matchedRawVid.hookSnippet || matchedRawVid.description}` : '',
+              matchedRawVid && Array.isArray(matchedRawVid.tags) && matchedRawVid.tags.length ? `\n[TAGS]:\n${matchedRawVid.tags.map(t => '#' + t).join(' ')}` : '',
+              `\n[GỢI Ý TÁI CHẾ NORTH EFFECT 70/30]:\n- Giữ 70% chủ đề cốt lõi ("${resolvedTitle}") đã chứng minh nhu cầu thực tế trên kênh ${channelName}.\n- Viết lại 100% Hook 15 giây đầu bằng nghịch lý hoặc câu hỏi trực diện và bổ sung 30% dẫn chứng mới.`
+            ].filter(Boolean).join('\n')
+          : '';
         const fullEn = (trData && (trData.fullText || trData.full_text))
           ? (trData.fullText || trData.full_text)
-          : segments.map(s => s.text || '').join(' ');
+          : (segments.length ? segments.map(s => s.text || '').join(' ') : fallbackVideoBriefText);
         const fullVi = (trData && (trData.fullTextVi || trData.full_text))
           ? (trData.fullTextVi || trData.full_text)
-          : segments.map(s => s.viText || s.text || '').filter(Boolean).join(' ');
-        const fullBilingual = segments.map(s => {
-          const line1 = `[${formatSec(s.start)}] ${s.text || ''}`;
-          return (s.viText && s.viText !== s.text) ? `${line1}\n-> ${s.viText}` : line1;
-        }).join('\n\n');
+          : (segments.length ? segments.map(s => s.viText || s.text || '').filter(Boolean).join(' ') : fallbackVideoBriefText);
+        const fullBilingual = segments.length
+          ? segments.map(s => {
+              const line1 = `[${formatSec(s.start)}] ${s.text || ''}`;
+              return (s.viText && s.viText !== s.text) ? `${line1}\n-> ${s.viText}` : line1;
+            }).join('\n\n')
+          : fallbackVideoBriefText;
 
         const headerActionsHtml = isLessonSku
           ? `
@@ -3216,7 +4395,7 @@
               <div style="display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap;" id="sub-tabs-container">
                 <button type="button" class="sub-tab-btn" data-tab="bilingual" style="min-height:44px; box-sizing:border-box; padding:0.35rem 0.65rem; border-radius:0.5rem; font-size: 12px; font-weight:700; background:#2563eb; color:#fff; border:1px solid #3b82f6; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">${ico('globe', 14)} ${isLessonSku ? 'Phân đoạn theo mốc' : 'Song ngữ 1:1'}</button>
                 <button type="button" class="sub-tab-btn" data-tab="vietnamese" style="min-height:44px; box-sizing:border-box; padding:0.35rem 0.65rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:var(--surface-2); color:var(--fg-2); border:1px solid var(--border-strong); cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">🇻🇳 ${isLessonSku ? 'Toàn văn lời giảng' : 'Tiếng Việt'}</button>
-                ${(isLessonSku || String(fullVi || '').trim() === String(fullEn || '').trim()) ? '' : `<button type="button" class="sub-tab-btn" id="sub-lang-toggle" data-tab="original" style="min-height:44px; box-sizing:border-box; padding:0.35rem 0.65rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:var(--surface-2); color:var(--fg-2); border:1px solid var(--border-strong); cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">🇺🇸 Tiếng Gốc</button>`}
+                ${(isLessonSku || String(fullVi || '').trim() === String(fullEn || '').trim()) ? '' : `<button type="button" class="sub-tab-btn" id="sub-lang-toggle" data-tab="original" style="min-height:44px; box-sizing:border-box; padding:0.35rem 0.65rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:var(--surface-2); color:var(--fg-2); border:1px solid var(--border-strong); cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">${origLangFlag ? esc(origLangFlag) : ico('globe', 14)} Tiếng Gốc</button>`}
                 ${summaryMd ? `<button type="button" class="sub-tab-btn" data-tab="summary" style="min-height:44px; box-sizing:border-box; padding:0.35rem 0.65rem; border-radius:0.5rem; font-size: 12px; font-weight:600; background:var(--surface-2); color:#fcd34d; border:1px solid rgba(245,158,11,0.4); cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">${ico('mic', 14)} ${isLessonSku ? 'Tài liệu & SOP' : 'Kịch bản AI'}</button>` : ''}
               </div>
               <div style="display:flex; align-items:center; gap:0.35rem;">
@@ -3255,7 +4434,26 @@
 
           if (tab === 'bilingual') {
             if (!segments.length) {
-              contentEl.innerHTML = `<div style="text-align:center; color:var(--fg-muted); padding:2rem;">Chưa có phân đoạn phụ đề cho video này.</div>`;
+              if (!isLessonSku && fallbackVideoBriefText) {
+                contentEl.innerHTML = `<div style="background:var(--surface); border:1px solid var(--border-strong); border-radius:0.75rem; padding:1.25rem; display:flex; flex-direction:column; gap:0.75rem;">
+                  <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; border-bottom:1px solid var(--border); padding-bottom:0.6rem;">
+                    <span style="font-size:13px; font-weight:700; color:#38bdf8; display:inline-flex; align-items:center; gap:0.35rem;">${ico('sparkles', 14)} Hồ Sơ Phân Tích Metadata &amp; Hook Video Đối Thủ</span>
+                    <span style="font-size:12px; color:#fbbf24; background:rgba(245,158,11,0.12); border:1px solid rgba(245,158,11,0.35); padding:0.15rem 0.5rem; border-radius:0.35rem;">Metadata Live · Sẵn sàng sao chép</span>
+                  </div>
+                  <div style="white-space:pre-wrap; font-size:13px; line-height:1.65; color:var(--fg-2); font-family:inherit;">${esc(fallbackVideoBriefText)}</div>
+                  ${summaryMd ? `<div style="padding-top:0.4rem;"><button type="button" class="js-switch-sub-summary" style="padding:0.45rem 0.9rem; border-radius:0.5rem; background:#2563eb; color:#fff; border:1px solid #3b82f6; font-size:12px; font-weight:700; cursor:pointer;">Xem Kịch bản AI chi tiết ↗</button></div>` : ''}
+                </div>`;
+                const swBtn = contentEl.querySelector('.js-switch-sub-summary');
+                if (swBtn) swBtn.onclick = () => renderTabContent('summary');
+                return;
+              }
+              const noteText = (trData && trData.note) ? esc(trData.note) : 'Chưa có phân đoạn phụ đề cho video này.';
+              contentEl.innerHTML = `<div style="text-align:center; color:var(--fg-muted); padding:2rem;">
+                <p style="margin-bottom:0.75rem; color:var(--fg); font-weight:600;">${noteText}</p>
+                ${summaryMd ? `<button type="button" class="js-switch-sub-summary" style="padding:0.45rem 0.9rem; border-radius:0.5rem; background:#2563eb; color:#fff; border:1px solid #3b82f6; font-size:12px; font-weight:700; cursor:pointer;">Xem Tài liệu & SOP bài học ↗</button>` : ''}
+              </div>`;
+              const swBtn = contentEl.querySelector('.js-switch-sub-summary');
+              if (swBtn) swBtn.onclick = () => renderTabContent('summary');
               return;
             }
             contentEl.innerHTML = `
@@ -3278,10 +4476,9 @@
               </div>
             `;
           } else if (tab === 'vietnamese') {
+            const viBody = fullVi || segments.map(s => s.viText || s.text || '').join('\n') || (trData && trData.note) || 'Chưa có lời giảng dạng văn bản cho video này.';
             contentEl.innerHTML = `
-              <div style="background:var(--surface); border:1px solid var(--border-strong); border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size: 14px; line-height:1.6; color:#fef3c7;">
-                ${esc(fullVi || segments.map(s => s.viText || s.text || '').join('\n'))}
-              </div>
+              <div style="background:var(--surface); border:1px solid var(--border-strong); border-radius:0.75rem; padding:1.25rem; white-space:pre-wrap; font-size: 14px; line-height:1.6; color:#fef3c7;">${esc(viBody)}</div>
             `;
           } else if (tab === 'original') {
             contentEl.innerHTML = `
@@ -3292,7 +4489,7 @@
           } else if (tab === 'summary') {
             contentEl.innerHTML = `
               <div class="max-w-none" style="background:var(--surface); border:1px solid var(--border-strong); border-radius:0.875rem; padding:1.25rem; color:var(--fg); font-size: 14px; line-height:1.6;">
-                ${inlineMdFull(summaryMd)}
+                ${inlineMdFull(summaryMd, skuNorm)}
               </div>
             `;
           }
@@ -3337,7 +4534,8 @@
         };
 
         // Render initial tab
-        renderTabContent('bilingual');
+        const defaultTab = (initTab === 'summary' && summaryMd) ? 'summary' : ((!segments.length && summaryMd) ? 'summary' : 'bilingual');
+        renderTabContent(defaultTab);
       };
 
       window.viewRawImage = function(src, title) {
@@ -3353,7 +4551,9 @@
           modal.onclick = (e) => {
             if (e.target === modal || e.target.id === 'close-raw-img' || (e.target.closest && e.target.closest('#close-raw-img'))) {
               modal.style.display = 'none';
-              document.body.style.overflow = '';
+              const otherOpen = document.getElementById('raw-deep-modal')?.style.display === 'flex' ||
+                                document.getElementById('video-transcript-modal')?.style.display === 'flex';
+              if (!otherOpen) document.body.style.overflow = '';
               if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
                 try { modal._prevActiveElement.focus(); } catch (err) {}
               }
@@ -3464,7 +4664,7 @@
         if (trBtn && !trBtn.hasAttribute('data-open-tab')) {
           e.preventDefault();
           const tr = trBtn.getAttribute('data-video-track');
-          if (tr && tr !== state.videoTrack) {
+          if (tr) {
             state.videoTrack = tr;
             try { sessionStorage.setItem('h2dev-video-track', tr); } catch (err) {}
             state.videoPage = 1;
@@ -3474,6 +4674,7 @@
             state.skuFilter = '';
             state.sortBy = '';
             state.freeOnly = false;
+            state.recentOnly = false;
             state.watchFilter = '';
             syncVideoUrl();
             render();
@@ -3485,7 +4686,42 @@
           const action = act.getAttribute('data-action');
           if (action === 'video-filter-reset') {
             e.preventDefault();
-            state.freeOnly = false; state.marketFilter = ''; state.nicheFilter = ''; state.q = ''; state.skuFilter = ''; state.sortBy = ''; state.watchFilter = ''; state.videoPage = 1;
+            state.freeOnly = false; state.recentOnly = false; state.marketFilter = ''; state.nicheFilter = ''; state.q = ''; state.skuFilter = ''; state.sortBy = ''; state.watchFilter = ''; state.videoPage = 1;
+            syncVideoUrl();
+            render();
+            return;
+          }
+          if (action === 'video-clear-niche') {
+            e.preventDefault();
+            state.nicheFilter = ''; state.skuFilter = ''; state.videoPage = 1;
+            syncVideoUrl();
+            render();
+            return;
+          }
+          if (action === 'video-card-niche') {
+            e.preventDefault();
+            const nf = act.getAttribute('data-niche') || '';
+            state.nicheFilter = (state.nicheFilter === nf && !state.skuFilter) ? '' : nf;
+            state.skuFilter = '';
+            state.videoPage = 1;
+            syncVideoUrl();
+            render();
+            return;
+          }
+          if (action === 'video-card-module') {
+            e.preventDefault();
+            const mod = act.getAttribute('data-mod') || '';
+            state.nicheFilter = (state.nicheFilter === mod && !state.skuFilter) ? '' : mod;
+            state.skuFilter = '';
+            state.videoPage = 1;
+            syncVideoUrl();
+            render();
+            return;
+          }
+          if (action === 'video-filter-recent') {
+            e.preventDefault();
+            state.recentOnly = !state.recentOnly;
+            state.videoPage = 1;
             syncVideoUrl();
             render();
             return;
@@ -3513,8 +4749,9 @@
             e.preventDefault();
             const p = parseInt(act.getAttribute('data-page') || '1', 10);
             state.rawPage = Number.isFinite(p) && p > 0 ? p : 1;
+            const fromBottom = act.getAttribute('data-pos') === 'bottom';
             syncRawUrl();
-            render();
+            Promise.resolve(render()).then(() => { if (fromBottom) scrollToTopPager('Phân trang hồ sơ raw'); });
             return;
           }
           if (action === 'video-page') {
@@ -3551,8 +4788,9 @@
             e.preventDefault();
             const p = parseInt(act.getAttribute('data-page') || '1', 10);
             state.kenhPage = Number.isFinite(p) && p > 0 ? p : 1;
+            const fromBottom = act.getAttribute('data-pos') === 'bottom';
             syncKenhUrl();
-            render();
+            Promise.resolve(render()).then(() => { if (fromBottom) scrollToTopPager('Phân trang kênh mẫu'); });
             return;
           }
         }
@@ -3583,6 +4821,39 @@
           if (window.viewRawImage) window.viewRawImage(img.getAttribute('data-src') || '', img.getAttribute('data-title') || '');
           return;
         }
+        const docPrevBtn = t.closest('[data-doc-preview]');
+        if (docPrevBtn) {
+          e.stopPropagation();
+          e.preventDefault();
+          if (typeof window.openDocPreviewModal === 'function') {
+            window.openDocPreviewModal(
+              docPrevBtn.getAttribute('data-doc-preview') || '',
+              docPrevBtn.getAttribute('data-doc-title') || '',
+              docPrevBtn.getAttribute('data-doc-sku') || '',
+              docPrevBtn.getAttribute('data-doc-code') || ''
+            );
+          }
+          return;
+        }
+        const copyReupBtn = t.closest('[data-copy-reup-url]');
+        if (copyReupBtn) {
+          e.stopPropagation();
+          e.preventDefault();
+          const urlToCopy = copyReupBtn.getAttribute('data-copy-reup-url') || '';
+          if (urlToCopy) {
+            const origHtml = copyReupBtn.innerHTML;
+            const markCopied = () => {
+              copyReupBtn.innerHTML = `${ico('check', 14)} Đã chép!`;
+              setTimeout(() => { copyReupBtn.innerHTML = origHtml; }, 1800);
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(urlToCopy).then(markCopied).catch(markCopied);
+            } else {
+              markCopied();
+            }
+          }
+          return;
+        }
         const demo = t.closest('.js-play-demo');
         if (demo) {
           e.stopPropagation();
@@ -3600,12 +4871,22 @@
           return;
         }
         if (e.key === 'Tab') {
-          const openModal = ['quick-video-modal', 'raw-deep-modal', 'video-transcript-modal', 'raw-image-modal', 'music-studio-modal']
+          const openModal = ['doc-preview-modal', 'quick-video-modal', 'raw-deep-modal', 'video-transcript-modal', 'raw-image-modal', 'music-studio-modal']
             .map(id => document.getElementById(id))
             .find(m => m && m.style.display === 'flex');
           if (openModal) trapFocus(openModal, e);
         }
         if (e.key === 'Escape') {
+          const docPrevModal = document.getElementById('doc-preview-modal');
+          if (docPrevModal && docPrevModal.style.display === 'flex') {
+            docPrevModal.style.display = 'none';
+            const otherOpen = document.getElementById('raw-deep-modal')?.style.display === 'flex' || document.getElementById('video-transcript-modal')?.style.display === 'flex';
+            if (!otherOpen) document.body.style.overflow = '';
+            if (docPrevModal._prevActiveElement && typeof docPrevModal._prevActiveElement.focus === 'function') {
+              try { docPrevModal._prevActiveElement.focus(); } catch (err) {}
+            }
+            return;
+          }
           const musicModal = document.getElementById('music-studio-modal');
           if (musicModal && musicModal.style.display === 'flex') {
             const closeM = document.getElementById('close-music-studio');
@@ -3624,7 +4905,9 @@
           const imgModal = document.getElementById('raw-image-modal');
           if (imgModal && imgModal.style.display === 'flex') {
             imgModal.style.display = 'none';
-            document.body.style.overflow = '';
+            const otherOpen = document.getElementById('raw-deep-modal')?.style.display === 'flex' ||
+                              document.getElementById('video-transcript-modal')?.style.display === 'flex';
+            if (!otherOpen) document.body.style.overflow = '';
             if (imgModal._prevActiveElement && typeof imgModal._prevActiveElement.focus === 'function') {
               try { imgModal._prevActiveElement.focus(); } catch (err) {}
             }
@@ -3633,7 +4916,9 @@
           const subModal = document.getElementById('video-transcript-modal');
           if (subModal && subModal.style.display === 'flex') {
             subModal.style.display = 'none';
-            document.body.style.overflow = '';
+            const otherOpen = document.getElementById('raw-deep-modal')?.style.display === 'flex' ||
+                              document.getElementById('raw-image-modal')?.style.display === 'flex';
+            if (!otherOpen) document.body.style.overflow = '';
             if (subModal._prevActiveElement && typeof subModal._prevActiveElement.focus === 'function') {
               try { subModal._prevActiveElement.focus(); } catch (err) {}
             }
@@ -3654,14 +4939,54 @@
             }
             return;
           }
+        } else if ((e.key === 'k' || e.key === 'K') && (e.ctrlKey || e.metaKey) && !e.altKey) {
+          e.preventDefault();
+          const searchIds = ['music-search', 'fq', 'fq-nx', 'fq-doc', 'fq-kenh', 'fq-raw', 'fq-reup', 'music-q', 'cl-matrix-search', 'sodo-deep-q'];
+          const searchEl = searchIds.map(id => document.getElementById(id)).find(el => el && el.offsetParent !== null);
+          if (searchEl) {
+            searchEl.focus();
+            searchEl.select();
+          } else if (state.tab === 'nhac' && typeof window.openMusicStudioModal === 'function') {
+            Promise.resolve(window.openMusicStudioModal('all')).then(() => {
+              const mInp = document.getElementById('music-search');
+              if (mInp) { mInp.focus(); mInp.select(); }
+            });
+          } else if (state.tab === 'chienluoc') {
+            state.clSubTab = 'matrix144';
+            syncClSubUrl();
+            Promise.resolve(render()).then(() => {
+              const clInp = document.getElementById('cl-matrix-search');
+              if (clInp) { clInp.focus(); clInp.select(); }
+            });
+          } else {
+            Promise.resolve(openTab('video')).then(() => {
+              const fqEl = document.getElementById('fq');
+              if (fqEl) { fqEl.focus(); fqEl.select(); }
+            });
+          }
         } else if (e.key === '/' && !e.ctrlKey && !e.metaKey && !e.altKey) {
           const activeTag = document.activeElement ? document.activeElement.tagName.toUpperCase() : '';
           if (activeTag !== 'INPUT' && activeTag !== 'TEXTAREA') {
-            const fq = document.getElementById('fq');
-            if (fq) {
+            const searchIds = ['music-search', 'fq', 'fq-nx', 'fq-doc', 'fq-kenh', 'fq-raw', 'fq-reup', 'music-q', 'cl-matrix-search', 'sodo-deep-q'];
+            const searchEl = searchIds.map(id => document.getElementById(id)).find(el => el && el.offsetParent !== null);
+            if (searchEl) {
               e.preventDefault();
-              fq.focus();
-              fq.select();
+              searchEl.focus();
+              searchEl.select();
+            } else if (state.tab === 'nhac' && typeof window.openMusicStudioModal === 'function') {
+              e.preventDefault();
+              Promise.resolve(window.openMusicStudioModal('all')).then(() => {
+                const mInp = document.getElementById('music-search');
+                if (mInp) { mInp.focus(); mInp.select(); }
+              });
+            } else if (state.tab === 'chienluoc') {
+              e.preventDefault();
+              state.clSubTab = 'matrix144';
+              syncClSubUrl();
+              Promise.resolve(render()).then(() => {
+                const clInp = document.getElementById('cl-matrix-search');
+                if (clInp) { clInp.focus(); clInp.select(); }
+              });
             }
           }
         }

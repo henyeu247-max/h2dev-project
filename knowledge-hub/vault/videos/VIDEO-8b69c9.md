@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-8b69c9&track=h2dev"
 # VIDEO-8b69c9 — NGÁCH THỊ TRƯỜNG HÀN VÀ NHẬT - PHÂN TÍCH VÀ HƯỚNG CÁCH EDIT TRÁNH BỊ QUÉT LỖI KHÔNG TRUNG THỰC MỚI NHẤT 2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#58`)  
 > - **Ngách nội dung (Niche):** [[niches/dinh-huong-xay-kenh-chon-thi-truong|Định Hướng Xây Kênh & Chọn Thị Trường]]  
 > - **Thị trường:** 🇰🇷 Hàn · 🇯🇵 Nhật | **Thời lượng:** `7:18` | **Ngày đăng:** `2026-02-22`  

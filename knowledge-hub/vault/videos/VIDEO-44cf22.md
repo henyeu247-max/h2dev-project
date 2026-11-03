@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-44cf22&track=h2dev"
 # VIDEO-44cf22 — Share key và giải thích về chủ đề rpm cao ở các thị trường - UPDATE 23/5
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#84`)  
 > - **Ngách nội dung (Niche):** [[niches/phan-tich-chu-de-rpm-cao-da-thi-truong|Phân Tích Chủ Đề RPM Cao Đa Thị Trường]]  
 > - **Thị trường:** 🇻🇳 Việt · 🌐 Ngoại | **Thời lượng:** `11:54` | **Ngày đăng:** `2025-08-19`  

@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-f77c31&track=h2dev"
 # VIDEO-f77c31 — Doanh thu kênh làm bán content ngách view Việt sau 10 ngày bật kiếm tiền
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M01|H2DEV-M01 — Xử lý & Kháng lỗi kênh YouTube]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/ban-content-triet-ly-nguoi-gia|Bán content & Triết lý người già]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `2:08` | **Ngày đăng:** `2026-05-19`  

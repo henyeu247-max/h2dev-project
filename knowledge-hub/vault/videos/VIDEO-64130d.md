@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-64130d&track=h2dev"
 # VIDEO-64130d — TOOL DỊCH PHỤ ĐỀ SRT VIP - HƯỚNG DẪN DÙNG TOOL DỊCH PHỤ ĐỀ SRT CHUYÊN VIETSUB LÀM REUP/ BÁN CONTENT
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M10|H2DEV-M10 — Module 8 — Công cụ & Tài nguyên hỗ trợ]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/reup-khai-thac-hoat-hinh|Reup & Khai Thác Hoạt Hình]]  
 > - **Thị trường:** 🇻🇳 Việt · 🇨🇳 Trung | **Thời lượng:** `7:22` | **Ngày đăng:** `2026-04-05`  

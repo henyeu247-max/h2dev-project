@@ -18,7 +18,7 @@ player_url: "/player.html?sku=ZOOM-04-Adsense-khang-loi&track=h2dev"
 # ZOOM-04-Adsense-khang-loi — Zoom 04 — Google AdSense & Kháng lỗi: Bảo vệ kênh
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M11|H2DEV-M11 — Zoom — Quy trình xây kênh từ A–Z (2026-09)]] (Bài `#04`)  
 > - **Ngách nội dung (Niche):** [[niches/quan-tri-google-adsense-khang-nghi-ypp|Quản Trị Google AdSense & Kháng Nghị YPP]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `37:14` | **Ngày đăng:** `2026-09-11`  

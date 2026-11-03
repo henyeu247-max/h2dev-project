@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-e24c31&track=h2dev"
 # VIDEO-e24c31 — Update ngách mới cực trends bán content view ngoại, show kênh mới hoàn toàn 5 video
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#05`)  
 > - **Ngách nội dung (Niche):** [[niches/phong-thuy-thu-hut-tai-loc-han-quoc|Phong Thủy & Thu Hút Tài Lộc Hàn Quốc]]  
 > - **Thị trường:** 🌐 Ngoại · 🇰🇷 Hàn | **Thời lượng:** `10:10` | **Ngày đăng:** `2026-08-03`  

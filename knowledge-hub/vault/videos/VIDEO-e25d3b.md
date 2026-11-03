@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-e25d3b&track=h2dev"
 # VIDEO-e25d3b — HỢP TÁC KÊNH VÀ SHARE NGÁCH NHỎ THỊ TRƯỜNG HÀN + US (MỸ) CỰC TRENDS MỚI NHẤT
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#55`)  
 > - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
 > - **Thị trường:** 🇰🇷 Hàn · 🇺🇸 Mỹ | **Thời lượng:** `6:25` | **Ngày đăng:** `2026-03-07`  

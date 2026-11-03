@@ -7,7 +7,7 @@ lesson_count: 7
 
 # Module H2DEV-M01 — Xử lý & Kháng lỗi kênh YouTube
 
-- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]
 - **Tổng số bài giảng:** `7` video
 - **Mô tả:** Tổng hợp các video kháng lỗi sử dụng lại nội dung, trùng lặp, bản quyền, Fix GA, ...
 

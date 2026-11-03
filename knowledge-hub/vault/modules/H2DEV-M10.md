@@ -7,7 +7,7 @@ lesson_count: 4
 
 # Module H2DEV-M10 — Module 8 — Công cụ & Tài nguyên hỗ trợ
 
-- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]
 - **Tổng số bài giảng:** `4` video
 - **Mô tả:** Free tool tạo giọng đọc, tool dịch SRT VIP, 6 bộ tool miễn phí, Elevenlab / Minimax giá rẻ.
 

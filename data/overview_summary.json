@@ -1,16 +1,16 @@
 {
   "schema": "h2dev.overview-summary.v1",
-  "generatedAt": "2026-11-02T14:53:26.100Z",
+  "generatedAt": "2026-11-03T14:26:10.102Z",
   "counts": {
-    "videosTotal": 346,
-    "videosH2dev": 153,
+    "videosTotal": 347,
+    "videosH2dev": 154,
     "videosHuan": 140,
     "videosDgmd": 53,
     "modulesTotal": 36,
     "modulesH2dev": 12,
     "modulesHuan": 13,
     "modulesDgmd": 11,
-    "documents": 597,
+    "documents": 598,
     "channels": 1076,
     "deadChannels": 89,
     "liveChannels": 987,
@@ -23,9 +23,9 @@
     "musicTracks": 49,
     "musicSafe": 36,
     "chienLuocSteps": 24,
-    "matrix144Words": 373559
+    "matrix144Words": 383276
   },
   "storage": {
-    "totalVideoSizeMb": 88334.5
+    "totalVideoSizeMb": 88438
   }
 }

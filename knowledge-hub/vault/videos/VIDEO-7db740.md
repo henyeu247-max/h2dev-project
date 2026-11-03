@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-7db740&track=h2dev"
 # VIDEO-7db740 — CÁCH SEO CHUẨN TỪ KHOÁ KÊNH - TỪ KHOÁ VIDEO VÀ MÔ TẢ VIDEO MỚI NHẤT CHÍNH SÁCH 2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M02|H2DEV-M02 — Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)]] (Bài `#04`)  
 > - **Ngách nội dung (Niche):** [[niches/seo-thuat-toan-toi-uu-metadata|SEO Thuật toán & Tối ưu Metadata]]  
 > - **Thị trường:** 🇻🇳 Việt · 🌐 Ngoại | **Thời lượng:** `3:21` | **Ngày đăng:** `2026-03-20`  

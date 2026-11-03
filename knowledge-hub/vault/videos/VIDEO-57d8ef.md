@@ -7,7 +7,7 @@ module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi 
 seq: "103"
 niche: "Lịch Sử Quân Sự & Hoạt Họa Bản Đồ Việt Nam"
 markets: ["🇻🇳 Việt Nam"]
-duration: "00:00"
+duration: "10:52"
 published_at: "2026-10-25"
 toolsCount: 0
 channelsCount: 0
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-57d8ef&track=h2dev"
 # VIDEO-57d8ef — Demo ngách lịch sử Việt - Claude tự động làm kịch bản, edit video.. A-Z
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#103`)  
 > - **Ngách nội dung (Niche):** [[niches/lich-su-quan-su-hoat-hoa-ban-do-viet-nam|Lịch Sử Quân Sự & Hoạt Họa Bản Đồ Việt Nam]]  
-> - **Thị trường:** 🇻🇳 Việt Nam | **Thời lượng:** `00:00` | **Ngày đăng:** `2026-10-25`  
+> - **Thị trường:** 🇻🇳 Việt Nam | **Thời lượng:** `10:52` | **Ngày đăng:** `2026-10-25`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-57d8ef&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-57d8ef/README.md)
 
 ---

@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-5785a5&track=h2dev"
 # VIDEO-5785a5 — THỰC CHIẾN KÊNH ĐANG BẬT KIẾM TIỀN NGÁCH REUP MỚI NHẤT HƯỚNG DẪN SEARCH NGUỒN GỐC VÀ LÀM TỪ A-Z
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#41`)  
 > - **Ngách nội dung (Niche):** [[niches/reup-khai-thac-hoat-hinh|Reup & Khai Thác Hoạt Hình]]  
 > - **Thị trường:** 🇻🇳 Việt · 🇨🇳 Trung | **Thời lượng:** `10:15` | **Ngày đăng:** `2026-04-06`  

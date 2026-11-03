@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-ed1be9&track=h2dev"
 # VIDEO-ed1be9 — Hướng dẫn edit key _Chill Dude.._chi tiết từ A-Z
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M07|H2DEV-M07 — Module 5 — Edit video & Thumbnail chuẩn A-Z]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/hoat-hinh-2d-nguoi-que-chill-dude|Hoạt Hình 2D Người Que (Chill Dude)]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `58:58` | **Ngày đăng:** `2025-08-22`  

@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-cb907b&track=h2dev"
 # VIDEO-cb907b — SHOW KÊNH THỰC CHIẾN VÀ FULL QUY TRÌNH HƯỚNG DẪN REUP NGÁCH VIEW VIỆT RPM 2$ KHÔNG BAO GIỜ HẾT TRENDS - UPDATE 12-01-2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#60`)  
 > - **Ngách nội dung (Niche):** [[niches/reup-khai-thac-hoat-hinh|Reup & Khai Thác Hoạt Hình]]  
 > - **Thị trường:** 🇻🇳 Việt · 🇨🇳 Trung | **Thời lượng:** `31:17` | **Ngày đăng:** `2026-01-11`  

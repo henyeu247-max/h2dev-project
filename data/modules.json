@@ -1,9 +1,9 @@
 {
   "generatedAt": "2026-08-20T16:24:20.718Z",
   "source": "data/catalog_full.json + snapshot cấu trúc khóa học site gốc h2dev.vn (file raw nguồn đã gỡ 2026-10-08)",
-  "totalLessons": 144,
-  "totalFree": 27,
-  "totalPro": 117,
+  "totalLessons": 154,
+  "totalFree": 28,
+  "totalPro": 126,
   "modules": [
     {
       "id": "M00",
@@ -8749,6 +8749,60 @@
             "🌐 Ngoại"
           ],
           "ingested_at": "2026-11-02"
+        },
+        {
+          "sku": "VIDEO-acef2c",
+          "title": "Ngách làm bán content Thị trường Việt và Nhật  | Update 03-11-2026",
+          "file": "video/VIDEO-acef2c/VIDEO-acef2c.mp4",
+          "mp4": "video/VIDEO-acef2c/VIDEO-acef2c.mp4",
+          "thumb": "assets/thumbs/VIDEO-acef2c.png",
+          "image": "assets/thumbs/VIDEO-acef2c.png",
+          "duration_sec": 454,
+          "duration": "07:34",
+          "is_free": false,
+          "free": false,
+          "badge": "PRO",
+          "published_at": "2026-11-03",
+          "ingested_at": "2026-11-03",
+          "contentNiche": "Bán Content Drama Gia Đình & Người Que Đa Thị Trường (Việt - Nhật - US)",
+          "niche": "Bán Content Drama Gia Đình & Người Que Đa Thị Trường (Việt - Nhật - US)",
+          "market": [
+            "🇻🇳 Việt Nam",
+            "🇯🇵 Nhật Bản",
+            "🇺🇸 Hoa Kỳ"
+          ],
+          "docs": [
+            {
+              "name": "Hồ sơ phân tích & SOP thực chiến: Ngách làm bán content Thị trường Việt và Nhật  | Update 03-11-2026 (README.md)",
+              "title": "Hồ sơ phân tích & SOP thực chiến: Ngách làm bán content Thị trường Việt và Nhật  | Update 03-11-2026 (README.md)",
+              "link": "docs/VIDEO-acef2c/README.md",
+              "file": "docs/VIDEO-acef2c/README.md",
+              "readFile": "docs/VIDEO-acef2c/README.md",
+              "path": "docs/VIDEO-acef2c/README.md",
+              "size": 3717
+            },
+            {
+              "name": "Tài liệu thực chiến đính kèm: README.md",
+              "title": "Tài liệu thực chiến đính kèm: README.md",
+              "link": "assets/docs/VIDEO-acef2c/README.md",
+              "file": "assets/docs/VIDEO-acef2c/README.md",
+              "readFile": "assets/docs/VIDEO-acef2c/README.md",
+              "path": "assets/docs/VIDEO-acef2c/README.md",
+              "size": 2521
+            },
+            {
+              "name": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "title": "Bản ghi phụ đề đầy đủ (Transcript timestamped .txt)",
+              "link": "video/VIDEO-acef2c/transcript.txt",
+              "file": "video/VIDEO-acef2c/transcript.txt",
+              "readFile": "video/VIDEO-acef2c/transcript.txt",
+              "path": "video/VIDEO-acef2c/transcript.txt",
+              "size": 9549
+            }
+          ],
+          "docsCount": 3,
+          "channels": [],
+          "seq": "106"
         }
       ]
     },
@@ -9711,7 +9765,7 @@
       "id": "M11",
       "title": "Zoom — Quy trình xây kênh từ A–Z (2026-09)",
       "desc": "4 buổi Zoom thực chiến: nền tảng môi trường, chiến lược kênh, quy trình tool, AdSense & kháng lỗi.",
-      "count": 4,
+      "count": 5,
       "countOriginal": 4,
       "totalDuration": "04:06:08",
       "items": [

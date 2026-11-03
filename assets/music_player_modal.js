@@ -18,7 +18,7 @@
   async function loadMusicCatalog() {
     if (musicData) return musicData;
     try {
-      const res = await fetch('data/music_catalog.json?v=20261031-uifix98');
+      const res = await fetch('data/music_catalog.json?v=20261103-uifix102');
       musicData = await res.json();
       return musicData;
     } catch (e) {
@@ -104,7 +104,14 @@
 
         <!-- Row 3: Meta Info (Ngách & Mood compact) -->
         <div style="font-size: 12px; color:var(--fg-2); line-height:1.4; display:flex; flex-direction:column; gap:0.15rem;">
-          <div class="truncate"><strong style="color:var(--fg-muted);">Ngách:</strong> <span style="color:#38bdf8; font-weight:600;">${esc(t.categoryNiche)}</span></div>
+          ${(() => {
+            const rawCat = String(t.categoryNiche || '').trim();
+            const firstSeg = rawCat.split('(')[0].split('/')[0].trim();
+            const nxQuery = /^long-form ambient$/i.test(firstSeg)
+              ? 'H01'
+              : (/^lịch sử đời sống$/i.test(firstSeg) ? 'H30' : firstSeg);
+            return `<div class="truncate"><strong style="color:var(--fg-muted);">Ngách:</strong> <a href="/ngachxanh?q=${encodeURIComponent(nxQuery)}" data-nx-q="${esc(nxQuery)}" class="js-music-niche-link" style="color:#38bdf8; font-weight:600; text-decoration:none;" title="Đối chiếu ngách ${esc(rawCat)} trên Tab Ngách Xanh">${esc(rawCat)} ↗</a></div>`;
+          })()}
           <div class="truncate" title="${esc(t.mood || t.moodDescription)}"><strong style="color:var(--fg-muted);">Mood:</strong> ${esc(t.mood || t.moodDescription)}</div>
         </div>
 
@@ -122,8 +129,25 @@
     `;
   }
 
-  window.openMusicStudioModal = async function(initialFilter = 'all') {
-    currentFilter = initialFilter;
+  function syncMusicUrlState(isOpen) {
+    try {
+      const pRaw = location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+      if (pRaw !== 'nhac' && pRaw !== 'nhac-nen' && pRaw !== 'nhacnen') return;
+      const u = new URL(location.href);
+      if (isOpen && currentFilter && currentFilter !== 'all') u.searchParams.set('mfilter', currentFilter);
+      else u.searchParams.delete('mfilter');
+      if (isOpen && searchQuery && searchQuery.trim()) u.searchParams.set('mq', searchQuery.trim());
+      else u.searchParams.delete('mq');
+      u.searchParams.delete('mopen');
+      history.replaceState(history.state, '', u.pathname + u.search + u.hash);
+    } catch (_) {}
+  }
+
+  window.openMusicStudioModal = async function(initialFilter = 'all', initialQuery = '') {
+    currentFilter = initialFilter || 'all';
+    if (typeof initialQuery === 'string' && initialQuery !== '') {
+      searchQuery = initialQuery;
+    }
     const cat = await loadMusicCatalog();
     if (!cat || !cat.tracks) {
       showToast('Không thể tải kho nhạc nền. Vui lòng thử lại!');
@@ -144,6 +168,18 @@
       document.body.appendChild(modal);
 
       modal.onclick = (e) => {
+        const navLink = e.target.closest && e.target.closest('.js-music-niche-link, .js-music-sodo-link');
+        if (navLink) {
+          modal.style.display = 'none';
+          document.body.style.overflow = '';
+          modal.querySelectorAll('audio').forEach(a => { a.pause(); a.currentTime = 0; });
+          const targetHref = navLink.getAttribute('href') || '';
+          if (targetHref && typeof window.navigateDirectUrl === 'function' && !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey) {
+            e.preventDefault();
+            window.navigateDirectUrl(targetHref);
+          }
+          return;
+        }
         const copyBtn = e.target.closest && e.target.closest('.js-copy-music-path');
         if (copyBtn) {
           const path = copyBtn.getAttribute('data-copy-path') || '';
@@ -161,6 +197,7 @@
           modal.style.display = 'none';
           document.body.style.overflow = '';
           modal.querySelectorAll('audio').forEach(a => { a.pause(); a.currentTime = 0; });
+          syncMusicUrlState(false);
           if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
             try { modal._prevActiveElement.focus(); } catch (err) {}
           }
@@ -204,6 +241,7 @@
 
       const totalCount = cat.tracks.length;
       const safeCount = cat.tracks.filter(t => t.copyrightRisk === 'SAFE').length;
+      const reviewCount = cat.tracks.filter(t => t.copyrightRisk === 'REVIEW').length;
       const copyCount = cat.tracks.filter(t => t.copyrightRisk === 'COPYRIGHTED').length;
       const historyCount = cat.tracks.filter(t => { const cn = (t.categoryNiche || '').toLowerCase(); return cn.includes('lịch sử') || cn.includes('khảo cổ') || cn.includes('everyday'); }).length;
       const cophongCount = cat.tracks.filter(t => { const cn = (t.categoryNiche || '').toLowerCase(); return cn.includes('cổ trang') || cn.includes('tiên hiệp') || cn.includes('guzheng') || cn.includes('pipa') || cn.includes('gamela'); }).length;
@@ -225,9 +263,10 @@
                 <span style="color:#a855f7;display:inline-flex;align-items:center;">${ico('headphones', 24)}</span>
                 <h3 style="font-size: 16px; font-weight: 700; color:#fff; margin:0;" class="truncate">Trạm Nhạc Nền ${nicheCount} Ngách YouTube</h3>
                 <span style="font-size: 12px; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.35rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#e9d5ff;">${totalCount} Tracks (${safeCount} SAFE YPP)</span>
+                <a href="/sodo?snode=track:h2dev" class="js-music-sodo-link" style="font-size:12px; font-weight:700; padding:0.15rem 0.55rem; border-radius:0.35rem; background:var(--surface-2); border:1px solid var(--border-strong); color:#38bdf8; text-decoration:none;">Sơ đồ DB ↗</a>
               </div>
             </div>
-            <button type="button" id="close-music-studio" style="width:32px; height:32px; border-radius:50%; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 14px; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;" title="Đóng [Esc]">${ico('x', 16)}</button>
+            <button type="button" id="close-music-studio" style="width:38px; height:38px; border-radius:50%; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 14px; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;" aria-label="Đóng Trạm Nhạc Nền" title="Đóng [Esc]">${ico('x', 16)}</button>
           </div>
 
           <!-- Sticky Search & Filter Toolbar -->
@@ -252,6 +291,7 @@
                 <option value="wildlife" ${currentFilter==='wildlife'?'selected':''}>Sinh tồn (${wildlifeCount})</option>
                 <option value="military" ${currentFilter==='military'?'selected':''}>Quân sự (${militaryCount})</option>
                 <option value="ambient" ${currentFilter==='ambient'?'selected':''}>15-25p Ambient (${ambientCount})</option>
+                <option value="review" ${currentFilter==='review'?'selected':''}>Thận trọng / CC-BY (${reviewCount})</option>
                 <option value="copyrighted" ${currentFilter==='copyrighted'?'selected':''}>Bản quyền (${copyCount})</option>
               </select>
             </div>
@@ -269,13 +309,14 @@
               <button type="button" data-mfilter="wildlife" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='wildlife'?'#38bdf8':'var(--border-strong)'}; background:${currentFilter==='wildlife'?'#0369a1':'var(--surface)'}; color:#bae6fd;">${icoColored('paw-print',14,'#bae6fd')} Sinh tồn (${wildlifeCount})</button>
               <button type="button" data-mfilter="military" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='military'?'#38bdf8':'var(--border-strong)'}; background:${currentFilter==='military'?'#0369a1':'var(--surface)'}; color:#bae6fd;">${icoColored('swords',14,'#bae6fd')} Quân sự (${militaryCount})</button>
               <button type="button" data-mfilter="ambient" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='ambient'?'#38bdf8':'var(--border-strong)'}; background:${currentFilter==='ambient'?'#0369a1':'var(--surface)'}; color:#bae6fd;">${icoColored('hourglass',14,'#bae6fd')} Ambient (${ambientCount})</button>
+              <button type="button" data-mfilter="review" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='review'?'#f59e0b':'var(--border-strong)'}; background:${currentFilter==='review'?'#92400e':'var(--surface)'}; color:#fde68a;">${icoColored('alert-circle',14,'#fde68a')} Thận trọng (${reviewCount})</button>
               <button type="button" data-mfilter="copyrighted" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='copyrighted'?'#ef4444':'var(--border-strong)'}; background:${currentFilter==='copyrighted'?'#b91c1c':'var(--surface)'}; color:#fca5a5;">${icoColored('alert-triangle',14,'#fca5a5')} Bản quyền (${copyCount})</button>
             </div>
           </div>
 
           <!-- Cards Grid -->
           <div class="music-studio-grid" style="flex:1; overflow-y:auto; padding:1rem; display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:0.85rem; align-content:start;">
-            ${filtered.length ? filtered.map(renderTrackCard).join('') : '<div style="grid-column:1/-1; text-align:center; padding:3rem 1rem; color:var(--fg-muted); font-size: 14px;">Không tìm thấy bài hát nào phù hợp bộ lọc</div>'}
+            ${filtered.length ? filtered.map(renderTrackCard).join('') : `<div style="grid-column:1/-1; text-align:center; padding:3rem 1rem; color:var(--fg-muted); font-size: 14px;"><div>Không tìm thấy bài hát nào phù hợp bộ lọc</div><button type="button" id="music-empty-reset" style="margin-top:0.75rem; padding:0.4rem 0.9rem; border-radius:0.5rem; background:#7e22ce; border:1px solid #a855f7; color:#fff; font-size:12px; font-weight:700; cursor:pointer;">Xóa bộ lọc &amp; Xem tất cả (${totalCount})</button></div>`}
           </div>
         </div>
       `;
@@ -284,6 +325,7 @@
       if (searchInput) {
         searchInput.oninput = (e) => {
           searchQuery = e.target.value;
+          syncMusicUrlState(true);
           renderModalBody();
           const nextInput = modal.querySelector('#music-search');
           if (nextInput) { nextInput.focus(); nextInput.setSelectionRange(nextInput.value.length, nextInput.value.length); }
@@ -291,24 +333,32 @@
       }
       const resetBtn = modal.querySelector('#music-reset');
       if (resetBtn) {
-        resetBtn.onclick = () => { searchQuery = ''; renderModalBody(); };
+        resetBtn.onclick = () => { searchQuery = ''; syncMusicUrlState(true); renderModalBody(); };
+      }
+      const emptyResetBtn = modal.querySelector('#music-empty-reset');
+      if (emptyResetBtn) {
+        emptyResetBtn.onclick = () => { searchQuery = ''; currentFilter = 'all'; syncMusicUrlState(true); renderModalBody(); };
       }
       const mobileSelect = modal.querySelector('#mobile-mfilter-select');
       if (mobileSelect) {
         mobileSelect.onchange = () => {
           currentFilter = mobileSelect.value;
+          syncMusicUrlState(true);
           renderModalBody();
         };
       }
       modal.querySelectorAll('[data-mfilter]').forEach(b => {
         b.onclick = () => {
-          currentFilter = b.getAttribute('data-mfilter');
+          const val = b.getAttribute('data-mfilter') || 'all';
+          currentFilter = (val !== 'all' && currentFilter === val) ? 'all' : val;
+          syncMusicUrlState(true);
           renderModalBody();
         };
       });
     }
 
     renderModalBody();
+    syncMusicUrlState(true);
     /* UI-07 (2026-09-28): capture trigger khi mo + focus vao trong modal
        (close o dong 148 da restore _prevActiveElement nhung trc day khong ai gan).
        Escape + Tab-trap cho modal nay da co o global keydown (main.js muc Global Shortcuts). */
@@ -326,7 +376,8 @@
       e.preventDefault();
       e.stopPropagation();
       const mfilter = btn.getAttribute('data-music-filter') || 'all';
-      window.openMusicStudioModal(mfilter);
+      const mq = btn.getAttribute('data-music-query') || '';
+      window.openMusicStudioModal(mfilter, mq);
     }
   }, true);
 })();

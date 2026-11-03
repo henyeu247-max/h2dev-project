@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-9ea5e3&track=h2dev"
 # VIDEO-9ea5e3 — TÚT (MẸO) HƯỚNG DẪN CÁCH KHẮC PHỤC GÃY VIEW MỚI NHẤT 2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M08|H2DEV-M08 — Module 6 — Mẹo & Thủ thuật khác phục lỗi gãy view và chống die kênh (TÚT - TRICK)]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `14:02` | **Ngày đăng:** `2025-12-18`  

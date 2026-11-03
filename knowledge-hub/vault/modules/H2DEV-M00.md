@@ -7,7 +7,7 @@ lesson_count: 2
 
 # Module H2DEV-M00 — Bắt đầu tại đây — Cộng đồng & Hỗ trợ
 
-- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]
 - **Tổng số bài giảng:** `2` video
 - **Mô tả:** Hướng dẫn tham gia cộng đồng VIP riêng tư — Giao lưu, trao đổi và hỗ trợ YouTube H2DEV.
 

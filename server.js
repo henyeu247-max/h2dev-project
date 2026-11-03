@@ -12,7 +12,11 @@ const fs = require('fs');
 const path = require('path');
 const zlib = require('node:zlib');
 const { initLogRotation, checkAndRotateAll } = require('./scripts/logrotate');
-const { searchFts, mutateDatabase, query, queryOne } = require('./scripts/master_dal');
+let masterDal = require('./scripts/master_dal');
+const searchFts = (...args) => masterDal.searchFts(...args);
+const mutateDatabase = (...args) => masterDal.mutateDatabase(...args);
+const query = (...args) => masterDal.query(...args);
+const queryOne = (...args) => masterDal.queryOne(...args);
 const { startAutoSyncWatcher, getSyncStatus, triggerSyncNow, ensureGraphFresh } = require('./scripts/kg_auto_sync');
 const { traceNodeInDb, searchGraphInDb, listProjectsFromDb } = require('./scripts/kg_query');
 const hotStore = require('./scripts/hot_memory_store');
@@ -523,9 +527,13 @@ const server = http.createServer(async (req,res)=>{
       }
       if (apiPath === '/api/kg/reload' && (req.method === 'POST' || req.method === 'GET')) {
         try {
+          try { kgQuery.closeKgDb(); } catch (_) {}
+          try { masterDal.reloadReadDb(); } catch (_) {}
           delete require.cache[require.resolve('./scripts/kg_auto_sync')];
           delete require.cache[require.resolve('./scripts/build_knowledge_vault_graph')];
           delete require.cache[require.resolve('./scripts/kg_query')];
+          delete require.cache[require.resolve('./scripts/master_dal')];
+          masterDal = require('./scripts/master_dal');
           refreshCachesOnDataSync();
         } catch (_) {}
         const wantRestart = parsedUrl.searchParams.get('restart') === '1';
@@ -540,6 +548,8 @@ const server = http.createServer(async (req,res)=>{
       if (apiPath === '/api/kg/sync' && (req.method === 'POST' || req.method === 'GET')) {
         const reason = (parsedUrl.searchParams.get('reason') || 'web_ui_manual_sync').trim();
         const full = parsedUrl.searchParams.get('full') === '1';
+        try { kgQuery.closeKgDb(); } catch (_) {}
+        try { masterDal.reloadReadDb(); } catch (_) {}
         const result = kgSync.triggerSyncNow(reason, full);
         refreshCachesOnDataSync();
         sendJson(req, res, 200, result, false);
@@ -550,7 +560,7 @@ const server = http.createServer(async (req,res)=>{
         return;
       }
       if (apiPath === '/api/kg/trace' && (req.method === 'GET' || isHead)) {
-        const q = (parsedUrl.searchParams.get('q') || '').trim();
+        const q = (parsedUrl.searchParams.get('q') || parsedUrl.searchParams.get('node') || '').trim();
         if (!q) {
           sendJson(req, res, 400, { found: false, error: 'Missing q parameter' }, isHead);
           return;
@@ -746,10 +756,11 @@ const server = http.createServer(async (req,res)=>{
     if (req.method === 'GET' || isHead) {
       const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
       const q = (parsedUrl.searchParams.get('q') || '').trim();
+      const typeFilter = (parsedUrl.searchParams.get('type') || '').trim();
       const rawLim = parseInt(parsedUrl.searchParams.get('limit') || '20', 10);
       const limit = Number.isFinite(rawLim) ? Math.min(50, Math.max(1, rawLim)) : 20;
       try {
-        const rows = searchFts(q, limit);
+        const rows = searchFts(q, limit, typeFilter);
         /* FIX (uifix87, siết lại ở uifix88) LỖI 2/F1 — bo sung DU LIEU DIEU HUONG cho tung entity_type
            cua search_fts. Truoc day frontend tu doan URL tu entity_id nen SOP/TRANSCRIPT roi vao href "#"
            (76% ket qua) va CHANNEL tro "/#kenh" (router khong doc hash). O day chi BO SUNG truong du lieu
@@ -767,9 +778,26 @@ const server = http.createServer(async (req,res)=>{
           const transcriptRows = rows.filter(r => String(r.entity_type).toUpperCase() === 'TRANSCRIPT');
           const sopRows = rows.filter(r => String(r.entity_type).toUpperCase() === 'SOP');
           const nicheRows = rows.filter(r => String(r.entity_type).toUpperCase() === 'NICHE');
+          const subNicheRows = rows.filter(r => String(r.entity_type).toUpperCase() === 'SUBNICHE');
+          const metaRows = rows.filter(r => String(r.entity_type).toUpperCase() === 'META');
+          const timestampRows = rows.filter(r => String(r.entity_type).toUpperCase() === 'TIMESTAMP');
           const reupRows = rows.filter(r => String(r.entity_type).toUpperCase() === 'REUP');
           for (const r of nicheRows) {
             r.niche_name = String(r.title || '').replace(/^\[[^\]]+\]\s*/, '').trim();
+          }
+          for (const r of subNicheRows) {
+            const mParent = String(r.title || '').match(/·\s*(H\d{2})\b/i);
+            r.niche_code = mParent ? mParent[1].toUpperCase() : '';
+            r.subniche_name = String(r.title || '').replace(/^\[[^\]]+\]\s*/, '').trim();
+          }
+          for (const r of metaRows) {
+            r.meta_code = String(r.entity_id || '');
+            r.meta_name = String(r.title || '').replace(/^\[[^\]]+\]\s*/, '').trim();
+          }
+          for (const r of timestampRows) {
+            const [skuPart, secPart] = String(r.entity_id || '').split('@');
+            r.sku = skuPart || '';
+            r.seconds = Number(secPart || 0);
           }
           for (const r of reupRows) {
             r.reup_name = String(r.title || '').replace(/^\[[^\]]+\]\s*/, '').trim();
@@ -957,16 +985,38 @@ const server = http.createServer(async (req,res)=>{
   // --- 1.1. Redirect 301 cho route cu / alias -> canonical (/tongquan cung 301 ve /) ---
   const REDIRECTS = {
     '/tongquan': '/',
+    '/tat-ca': '/tatca',
+    '/ngach': '/ngachxanh',
+    '/ngach-xanh': '/ngachxanh',
     '/kichban': '/tai-lieu',
     '/tailieu': '/tai-lieu',
+    '/nhac-nen': '/nhac',
+    '/nhacnen': '/nhac',
+    '/nguon-reup': '/nguonreup',
+    '/reup': '/nguonreup',
     '/kenh': '/kenh-mau',
-    '/raw': '/rawkenh'
+    '/kenhmau': '/kenh-mau',
+    '/raw': '/rawkenh',
+    '/raw-kenh': '/rawkenh',
+    '/raw-kenh-mau': '/rawkenh',
+    '/chien-luoc': '/chienluoc',
+    '/so-do': '/sodo',
+    '/sodo-db': '/sodo',
+    '/so-do-db': '/sodo',
+    '/lo-trinh': '/lotrinh'
   };
   const redirectKey = urlPath.replace(/\/+$/, '').toLowerCase() || '/';
   if (REDIRECTS[redirectKey] !== undefined) {
     const qs = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
     res.writeHead(301, withSecure({ 'Location': REDIRECTS[redirectKey] + qs, 'Content-Type': 'text/plain; charset=utf-8' }));
     res.end('301 Moved Permanently: ' + REDIRECTS[redirectKey]);
+    return;
+  }
+  if (/^\/lo-trinh\/(.+)$/i.test(urlPath)) {
+    const mLo = urlPath.match(/^\/lo-trinh\/(.+)$/i);
+    const qs = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
+    res.writeHead(301, withSecure({ 'Location': '/lotrinh/' + mLo[1] + qs, 'Content-Type': 'text/plain; charset=utf-8' }));
+    res.end('301 Moved Permanently: /lotrinh/' + mLo[1]);
     return;
   }
 
@@ -990,7 +1040,7 @@ const server = http.createServer(async (req,res)=>{
     } else {
       urlPath = '/learn.html';
     }
-  } else if (/^\/(?:tatca|video|ngach|ngachxanh|tai-lieu|nhac|nguonreup|kenh-mau|rawkenh|chienluoc|sodo)\/?$/i.test(urlPath)) {
+  } else if (/^\/(?:tatca|video|ngach|ngachxanh|tai-lieu|nhac|nguonreup|kenh-mau|kenhmau|rawkenh|raw-kenh|raw-kenh-mau|chienluoc|sodo)\/?$/i.test(urlPath)) {
     urlPath = '/index.html';
   } else if (/^\/graph\/?$/i.test(urlPath)) {
     urlPath = '/graph.html';
@@ -1171,6 +1221,11 @@ const server = http.createServer(async (req,res)=>{
         if(!e2 && s2.isFile()) sendFile(req, res, idx, MIME['.html'], req.headers.range, isHead);
         else { res.writeHead(404, withSecure({'Content-Type':'text/plain', 'Access-Control-Allow-Origin':'*', 'X-Content-Type-Options':'nosniff'})); res.end('404: '+urlPath); }
       });
+      return;
+    }
+    if (req.url && req.url.includes('optional=1') && /^\/data\/raw-channels-deep\//i.test(urlPath)) {
+      res.writeHead(204, withSecure({ 'Access-Control-Allow-Origin': '*' }));
+      res.end();
       return;
     }
     res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));

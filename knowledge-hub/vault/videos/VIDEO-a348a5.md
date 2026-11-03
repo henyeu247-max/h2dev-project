@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-a348a5&track=h2dev"
 # VIDEO-a348a5 — Hướng dẫn làm thumb key triết lý _ khắc kỷ
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M07|H2DEV-M07 — Module 5 — Edit video & Thumbnail chuẩn A-Z]] (Bài `#05`)  
 > - **Ngách nội dung (Niche):** [[niches/triet-ly-song-dao-lam-nguoi|Triết Lý Sống & Đạo Làm Người]]  
 > - **Thị trường:** 🇺🇸 Mỹ · 🌐 Ngoại | **Thời lượng:** `7:27` | **Ngày đăng:** `2025-08-21`  

@@ -18,7 +18,7 @@ player_url: "/player.html?sku=ZOOM-01-Nen-tang-moi-truong&track=h2dev"
 # ZOOM-01-Nen-tang-moi-truong — Zoom 01 — Nền tảng & Môi trường: Proxy, Gmail, Tạo kênh, Ngâm kênh
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M11|H2DEV-M11 — Zoom — Quy trình xây kênh từ A–Z (2026-09)]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/ha-tang-ky-thuat-proxy-gmail-ngam-kenh|Hạ Tầng Kỹ Thuật: Proxy, Gmail & Ngâm Kênh]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `53:02` | **Ngày đăng:** `2026-09-11`  

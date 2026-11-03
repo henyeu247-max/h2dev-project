@@ -7,7 +7,7 @@ videos_count: 53
 
 # Nhánh Đại Gia Mang Dép (DGMD) · Thực Chiến Đa Kênh (53 Videos)
 
-- **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME (Bản Đồ Tri Thức Tổng Thể 346 Videos)]]
+- **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME (Bản Đồ Tri Thức Tổng Thể 347 Videos)]]
 - **Số chương (Modules):** `11`
 - **Tổng số video bài giảng:** `53`
 

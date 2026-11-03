@@ -1,17 +1,17 @@
 ---
 tool_slug: "youtube"
 tool_name: "YouTube"
-videos_count: 209
+videos_count: 210
 tracks: ["h2dev", "huan", "dgmd"]
 ---
 
 # Công Cụ Thực Chiến: YouTube
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **Số bài giảng sử dụng công cụ này:** `209` video
+- **Số bài giảng sử dụng công cụ này:** `210` video
 - **Tracks:** `H2DEV`, `HUAN`, `DGMD`
 
-## Danh Sách Bài Giảng Ứng Dụng YouTube (209)
+## Danh Sách Bài Giảng Ứng Dụng YouTube (210)
 - [[videos/VIDEO-9873fb|VIDEO-9873fb — Khám kênh thực tế thành viên Pro sau video đầu tiên – Phân tích dữ liệu và hướng dẫn áp dụng tư duy nhân bản thị trường để phát triển kênh]] (`H2DEV`)
 - [[videos/VIDEO-4425fc|VIDEO-4425fc — Hướng dẫn Fix và giải thích cách tạo tài khoản Google Adsense (GA) an toàn, trâu nhất để không bị quét]] (`H2DEV`)
 - [[videos/VIDEO-d84a78|VIDEO-d84a78 — HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN]] (`H2DEV`)
@@ -87,6 +87,7 @@ tracks: ["h2dev", "huan", "dgmd"]
 - [[videos/VIDEO-73d98a|VIDEO-73d98a — Update key (ngách cực nhỏ) mới nhất 06-09-2026]] (`H2DEV`)
 - [[videos/VIDEO-bfabb6|VIDEO-bfabb6 — Hướng dẫn làm Tự động hóa ngách người que view Việt bằng Claude KHÔNG ĐỤNG tới Capcut, 100% edit giống đối thủ  |  Update 23-10-2026 ]] (`H2DEV`)
 - [[videos/VIDEO-9ff392|VIDEO-9ff392 — Thực chiến share ngách lịch sử Việt Nam hướng dẫn làm + kèm Skill ( Claude tự động edit video ) |  Update 25-10-2026]] (`H2DEV`)
+- [[videos/VIDEO-acef2c|VIDEO-acef2c — Ngách làm bán content Thị trường Việt và Nhật  | Update 03-11-2026]] (`H2DEV`)
 - [[videos/VIDEO-9ea5e3|VIDEO-9ea5e3 — TÚT (MẸO) HƯỚNG DẪN CÁCH KHẮC PHỤC GÃY VIEW MỚI NHẤT 2026]] (`H2DEV`)
 - [[videos/VIDEO-9a4ddc|VIDEO-9a4ddc — TÚT/ TRICK (mẹo) test bản quyền khi reup - bán content dạng nguồn từ douyin sang youtube]] (`H2DEV`)
 - [[videos/ZOOM-01-Nen-tang-moi-truong|ZOOM-01-Nen-tang-moi-truong — Zoom 01 — Nền tảng & Môi trường: Proxy, Gmail, Tạo kênh, Ngâm kênh]] (`H2DEV`)

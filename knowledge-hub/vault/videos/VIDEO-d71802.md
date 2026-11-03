@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-d71802&track=h2dev"
 # VIDEO-d71802 — SHOW KÊNH TRIẾT LÝ HÀN CỦA THÀNH VIÊN PRO VỪA BUILD 1 TUẦN VÀ SHARE THÊM NGÁCH THỊ TRƯỜNG HÀN KHÔNG BAO GIỜ HẾT TREDNS
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#49`)  
 > - **Ngách nội dung (Niche):** [[niches/triet-ly-song-dao-lam-nguoi|Triết Lý Sống & Đạo Làm Người]]  
 > - **Thị trường:** 🇰🇷 Hàn | **Thời lượng:** `2:12` | **Ngày đăng:** `2026-03-28`  

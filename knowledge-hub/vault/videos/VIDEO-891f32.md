@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-891f32&track=h2dev"
 # VIDEO-891f32 — Share Key Và Hướng Dẫn Làm Youtube View Ngoại Và Prompt Tạo Kịch Bản Dài Hơn 2 Tiếng Trên ChatGPT
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#86`)  
 > - **Ngách nội dung (Niche):** [[niches/prompt-ai-nhan-ban-kich-ban|Prompt AI & Nhân Bản Kịch Bản]]  
 > - **Thị trường:** 🇺🇸 Mỹ · 🌐 Ngoại | **Thời lượng:** `13:48` | **Ngày đăng:** `2025-08-20`  

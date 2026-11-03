@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-5c438a&track=h2dev"
 # VIDEO-5c438a — Giải thích và hướng dẫn đưa ra cách chọn mail (mail mới + mail cổ), chọn kênh (kênh mới + kênh cổ) - (tút chọn để làm chắc chắn có độ trust, cắn view)
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M02|H2DEV-M02 — Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/tai-nguyen-kenh-do-trust-thuat-toan|Tài nguyên kênh & Độ trust thuật toán]]  
 > - **Thị trường:** 🇺🇸 Mỹ · 🌐 Ngoại | **Thời lượng:** `14:21` | **Ngày đăng:** `2025-08-19`  

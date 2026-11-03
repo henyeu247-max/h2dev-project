@@ -282,11 +282,26 @@ if(btnTheater){
   };
 }
 
-// Lắng nghe phím tắt toàn cục (T: Rạp chiếu, F: Toàn màn hình, Space/K: Play/Pause, J/L: Tua -10s/+10s, M: Tắt tiếng)
+// Lắng nghe phím tắt toàn cục (T: Rạp chiếu, F: Toàn màn hình, Space/K: Play/Pause, J/L: Tua -10s/+10s, M: Tắt tiếng, /: Tìm phụ đề)
 window.addEventListener('keydown', (e)=>{
-  const activeTag = (document.activeElement && document.activeElement.tagName) || '';
-  if(activeTag === 'INPUT' || activeTag === 'TEXTAREA' || activeTag === 'SELECT') return;
-  
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
+  const docModalEl = document.getElementById('docModal');
+  if (docModalEl && docModalEl.style.display && docModalEl.style.display !== 'none') return;
+  const activeEl = document.activeElement;
+  const activeTag = (activeEl && activeEl.tagName) || '';
+  if (activeTag === 'INPUT' || activeTag === 'TEXTAREA' || activeTag === 'SELECT' || (activeEl && activeEl.isContentEditable)) return;
+
+  if (e.key === '/') {
+    const trInput = document.getElementById('transcriptSearch');
+    if (trInput && trInput.offsetParent !== null) {
+      e.preventDefault();
+      trInput.focus();
+      trInput.select();
+      return;
+    }
+  }
+
+  const isInteractiveFocus = activeTag === 'BUTTON' || activeTag === 'A' || Boolean(activeEl && activeEl.closest && activeEl.closest('[role="button"], [role="tab"]'));
   const key = e.key.toLowerCase();
   const pv = document.getElementById('pv');
 
@@ -303,7 +318,7 @@ window.addEventListener('keydown', (e)=>{
         (document.exitFullscreen || document.webkitExitFullscreen || document.mozCancelFullScreen || document.msExitFullscreen).call(document);
       }
     }
-  } else if(key === 'k' || (e.code === 'Space' && activeTag !== 'BUTTON')){
+  } else if(key === 'k' || (e.code === 'Space' && !isInteractiveFocus)){
     e.preventDefault();
     if(pv){
       if(pv.paused) pv.play(); else pv.pause();
@@ -320,10 +335,10 @@ window.addEventListener('keydown', (e)=>{
       pv.muted = !pv.muted;
       if (typeof showToast === 'function') showToast(pv.muted ? 'Đã tắt tiếng' : 'Đã bật tiếng', 1500);
     }
-  } else if(e.code === 'ArrowLeft'){
+  } else if(e.code === 'ArrowLeft' && !isInteractiveFocus){
     e.preventDefault();
     if(pv && Number.isFinite(pv.currentTime)) pv.currentTime = Math.max(0, pv.currentTime - 5);
-  } else if(e.code === 'ArrowRight'){
+  } else if(e.code === 'ArrowRight' && !isInteractiveFocus){
     e.preventDefault();
     if(pv && Number.isFinite(pv.currentTime)) pv.currentTime = Math.min(pv.duration || 999999, pv.currentTime + 5);
   }
@@ -507,8 +522,20 @@ window.addEventListener('keydown', (e)=>{
       ? `<span class="badge badge-red inline-flex items-center gap-1">${ico('star', 14)}QUAN TRỌNG</span>`
       : (v.badge === 'NỔI BẬT' ? `<span class="badge badge-amber inline-flex items-center gap-1">${ico('star', 14)}NỔI BẬT</span>` : '');
     const licenseBadge = (v.free ?? v.is_free) ? badge('FREE', 'badge-green') : badge('PRO', 'badge-red');
+    const curMod = routePos >= 0 && route[routePos] ? route[routePos].module : null;
+    const rawModId = (curMod && curMod.id) || v.module_id || v.moduleId || '';
+    const modKgId = rawModId ? (/^(H2DEV-|HUAN-|DGMD-)/i.test(rawModId) ? rawModId.toUpperCase() : ('H2DEV-' + String(rawModId).toUpperCase())) : '';
+    const modBadge = modKgId
+      ? `<a href="/lotrinh?track=${encodeURIComponent(activePlayerTrack)}&module=${encodeURIComponent(modKgId)}&sku=${encodeURIComponent(resolvedSku)}" class="badge badge-blue hover:opacity-90" style="text-decoration:none;" title="Mở vị trí bài học trong Lộ trình (${esc((curMod && curMod.title) || modKgId)})">${esc(modKgId)} ↗</a>`
+      : '';
+    const metaNiche = String(v.niche || v.contentNiche || v.nicheCode || (bootstrapInsight && bootstrapInsight.niche_primary) || '').trim();
+    const nicheMetaBadge = metaNiche
+      ? `<a href="/ngachxanh?q=${encodeURIComponent(metaNiche)}" class="badge badge-green hover:opacity-90" style="text-decoration:none;" title="Đối chiếu ngách ${esc(metaNiche)} trên Tab Ngách Xanh">${esc(metaNiche)} ↗</a>`
+      : '';
     metaEl.innerHTML = [
-      badge(esc(sku), 'badge-muted font-mono badge-sku'),
+      badge(esc(resolvedSku), 'badge-muted font-mono badge-sku'),
+      modBadge,
+      nicheMetaBadge,
       curBadge,
       licenseBadge,
       formatBadge,
@@ -583,26 +610,47 @@ window.addEventListener('keydown', (e)=>{
     h+=`<a href="/sodo?snode=${encodeURIComponent('video:' + resolvedSku)}">${ico('layout-grid', 14)}<span>Sơ đồ DB (${esc(resolvedSku)})</span></a>`;
     if(localAvailable) h+=`<a href="${esc(local)}" download class="btn-download-mp4">${ico('download', 14)}<span>Tải ${isWebm?'WEBM':'MP4'} Full HD</span></a>`;
     srcBox.innerHTML=h;
-    if(v.channels&&v.channels.length){
+    const renderChannelList = function (rawChannels) {
+      const seenHandles = new Set();
+      const deduped = [];
+      (rawChannels || []).forEach(c => {
+        const rh = (typeof c === 'object' && c !== null) ? (c.handle || c.name || '') : String(c || '');
+        const cleanH = rh.replace(/^@/, '').trim();
+        if (!cleanH || seenHandles.has(cleanH.toLowerCase())) return;
+        seenHandles.add(cleanH.toLowerCase());
+        deduped.push(c);
+      });
+      if (!deduped.length) return;
       document.getElementById('pchannels').classList.remove('hidden');
-      document.getElementById('pchannelslist').innerHTML=v.channels.map(c=>{
+      document.getElementById('pchannelslist').innerHTML = deduped.map(c => {
         const rawHandle = (typeof c === 'object' && c !== null) ? (c.handle || c.name || '') : String(c);
-        const handle = rawHandle.replace(/^@/,'').trim();
+        const handle = rawHandle.replace(/^@/, '').trim();
         const customUrl = (typeof c === 'object' && c !== null && c.url && /^https?:\/\//i.test(c.url))
           ? c.url
           : `https://www.youtube.com/@${encodeURIComponent(handle)}`;
         const deadInfo = deadChannelsMap.get(handle.toLowerCase());
         const isDead = Boolean(deadInfo) || Boolean(c && typeof c === 'object' && c.dead);
         const deadNote = (c && typeof c === 'object' && c.deadNote) || (deadInfo && deadInfo.deadNote) || 'Kênh đã dừng hoặc bị YouTube gỡ';
+        const dossierUrl = `/kenh-mau?handle=${encodeURIComponent('@' + handle)}`;
+        const primaryHref = isDead ? dossierUrl : customUrl;
+        const primaryTarget = isDead ? '' : ' target="_blank" rel="noopener noreferrer"';
         return `<div class="inline-flex flex-wrap items-center gap-1.5 bg-surface-card border ${isDead ? 'border-red-500/40 bg-red-950/20' : 'border-ink-600'} p-1.5 rounded-xl text-xs" title="${isDead ? esc(deadNote) : ''}">
-          <a href="${esc(customUrl)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-brand-400 font-semibold px-2 py-1 transition-colors ${isDead ? 'text-gray-400 line-through' : ''}"><span class="h2-icon h2-icon--16" data-h2i="tv" aria-hidden="true"></span> @${esc(handle)}${isDead ? '<span class="channel-chip-dead-badge">DIE</span>' : ''}↗</a>
-          <a href="/kenh-mau?kq=${encodeURIComponent(handle)}" class="btn-press bg-ink-700 hover:bg-ink-600 text-brand-300 hover:text-white px-2 py-1 rounded-xl text-xs font-medium border border-ink-600" title="Xem hồ sơ kênh mẫu @${esc(handle)} trong hệ thống">Hồ sơ</a>
+          <a href="${esc(primaryHref)}"${primaryTarget} class="inline-flex items-center gap-1 hover:text-brand-400 font-semibold px-2 py-1 transition-colors ${isDead ? 'text-gray-400 line-through' : ''}"><span class="h2-icon h2-icon--16" data-h2i="tv" aria-hidden="true"></span> @${esc(handle)}${isDead ? '<span class="channel-chip-dead-badge">DIE</span>' : ''}↗</a>
+          ${isDead ? `<a href="${esc(customUrl)}" target="_blank" rel="noopener noreferrer" class="btn-press bg-ink-700 hover:bg-ink-600 text-rose-300 hover:text-white px-2 py-1 rounded-xl text-xs font-medium border border-ink-600" title="Kiểm tra liên kết YouTube gốc (@${esc(handle)})">YT ↗</a>` : ''}
+          <a href="${esc(dossierUrl)}" class="btn-press bg-ink-700 hover:bg-ink-600 text-brand-300 hover:text-white px-2 py-1 rounded-xl text-xs font-medium border border-ink-600" title="Xem hồ sơ kênh mẫu @${esc(handle)} trong hệ thống">Hồ sơ</a>
+          <a href="/rawkenh?rq=${encodeURIComponent('@' + handle)}" class="btn-press bg-ink-700 hover:bg-ink-600 text-emerald-300 hover:text-white px-2 py-1 rounded-xl text-xs font-medium border border-ink-600" title="Tra cứu dữ liệu thô @${esc(handle)} trên Tab Raw Kênh">Raw</a>
           <a href="/sodo?snode=${encodeURIComponent('channel:' + handle.toLowerCase())}" class="btn-press bg-ink-700 hover:bg-ink-600 text-sky-300 hover:text-white px-2 py-1 rounded-xl text-xs font-medium border border-ink-600" title="Xem liên kết kênh @${esc(handle)} trên Sơ đồ DB">Sơ đồ</a>
           <button type="button" class="btn-press bg-ink-700 hover:bg-ink-600 text-gray-300 hover:text-white px-2 py-1 rounded-xl text-xs font-mono border border-ink-600" data-copy-handle="@${esc(handle)}" title="Sao chép handle @${esc(handle)}"><span class="h2-icon h2-icon--14" data-h2i="clipboard" aria-hidden="true"></span> Copy</button>
           ${isDead ? `<span class="w-full px-2 pt-1 text-xs text-rose-300">Lý do DIE: ${esc(deadNote)}</span>` : ''}
         </div>`;
       }).join('');
-    }
+    };
+    const initialChannels = [
+      ...(Array.isArray(v.channels) ? v.channels : []),
+      ...((bootstrapInsight && Array.isArray(bootstrapInsight.channels_mentioned)) ? bootstrapInsight.channels_mentioned : [])
+    ];
+    if (initialChannels.length) renderChannelList(initialChannels);
+
     if(v.docs&&v.docs.length){
       document.getElementById('pdocs').classList.remove('hidden');
       document.getElementById('pdocslist').innerHTML=v.docs.map(d=>{
@@ -614,7 +662,9 @@ window.addEventListener('keydown', (e)=>{
         const isReadable = Boolean(readFileTarget);
         const readBtn = isReadable ? `<button type="button" class="btn-press btn-doc-link inline-flex items-center gap-1 bg-brand-500/20 hover:bg-brand-500/30 text-brand-300 border border-brand-500/40 cursor-pointer" data-doc-file="${esc(readFileTarget)}" data-doc-name="${esc(name)}">${ico('eye', 14)}<span>Đọc trực tiếp</span></button>` : '';
         const localFile=d.file?`<a href="${esc(d.file)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1">${ico('file-text', 14)}<span>Mở file local</span></a>`:'';
-        return `<article class="card p-4 sm:p-5 min-w-0 overflow-hidden"><div class="text-sm font-semibold text-white break-words [overflow-wrap:anywhere]">${esc(name)}</div>${host&&isExternal?`<div class="text-xs text-gray-400 mt-1">${esc(host)}</div>`:''}<div class="mt-2.5 flex flex-wrap gap-2">${readBtn}${link}${localFile}</div></article>`;
+        const hubLink=`<a href="/tai-lieu?pq=${encodeURIComponent(resolvedSku)}" class="btn-doc-link inline-flex items-center gap-1" title="Mở bài học này trong Kho Tài Liệu"><span>Kho tài liệu ↗</span></a>`;
+        const graphLink=`<a href="/sodo?snode=${encodeURIComponent('video:' + resolvedSku)}" class="btn-doc-link inline-flex items-center gap-1" title="Xem liên kết bài học trên Sơ đồ DB"><span>Sơ đồ DB ↗</span></a>`;
+        return `<article class="card p-4 sm:p-5 min-w-0 overflow-hidden"><div class="text-sm font-semibold text-white break-words [overflow-wrap:anywhere]">${esc(name)}</div>${host&&isExternal?`<div class="text-xs text-gray-400 mt-1">${esc(host)}</div>`:''}<div class="mt-2.5 flex flex-wrap gap-2">${readBtn}${link}${localFile}${hubLink}${graphLink}</div></article>`;
       }).join('');
     }
 
@@ -657,14 +707,26 @@ window.addEventListener('keydown', (e)=>{
             legacyNoticeEl.classList.remove('hidden');
           }
           
+          if (!initialChannels.length && Array.isArray(ins.channels_mentioned) && ins.channels_mentioned.length) {
+            renderChannelList(ins.channels_mentioned);
+          }
           // Badges
           const badgesEl = document.getElementById('insightBadges');
           const marketBadgeClass = ins.market_code === 'JP' ? 'badge-red' : (ins.market_code === 'KR' ? 'badge-blue' : (ins.market_code === 'VN' ? 'badge-green' : 'badge-amber'));
+          const mktText = stripDecorEmoji(ins.target_market);
+          const rawMktCode = String(ins.market_code || '').trim();
+          const mktHref = (!rawMktCode || /^all$/i.test(rawMktCode))
+            ? '/video'
+            : `/video?market=${encodeURIComponent(rawMktCode)}`;
+          const nicheHref = `/ngachxanh?q=${encodeURIComponent(ins.niche_primary || '')}`;
           badgesEl.innerHTML = [
-            badge(esc(stripDecorEmoji(ins.target_market)), marketBadgeClass),
-            badge(esc(ins.niche_primary), 'badge-muted'),
-            ...(ins.tools_mentioned || []).map(t => badge(esc(t), 'badge-blue font-mono text-xs'))
-          ].join(' ');
+            mktText ? `<a href="${esc(mktHref)}" class="badge ${marketBadgeClass} hover:opacity-90" style="text-decoration:none;" title="Lọc các bài học cùng thị trường ${esc(ins.market_code || mktText)}">${esc(mktText)} ↗</a>` : '',
+            ins.niche_primary ? `<a href="${esc(nicheHref)}" class="badge badge-muted hover:text-white" style="text-decoration:none;" title="Đối chiếu ngách ${esc(ins.niche_primary)} trên Tab Ngách Xanh">${esc(ins.niche_primary)} ↗</a>` : '',
+            ...(ins.tools_mentioned || []).map(t => {
+              const toolSlug = String(t || '').trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+              return `<a href="/sodo?snode=${encodeURIComponent('tool:' + toolSlug)}" class="badge badge-blue font-mono text-xs hover:opacity-90" style="text-decoration:none;" title="Xem công cụ ${esc(t)} trên Sơ đồ DB">${esc(t)} ↗</a>`;
+            })
+          ].filter(Boolean).join(' ');
 
           // Takeaways
           const takeawaysEl = document.getElementById('insightTakeaways');
@@ -851,6 +913,56 @@ window.addEventListener('keydown', (e)=>{
             </div>`;
           }).join('');
 
+          const trSearchInput = document.getElementById('transcriptSearch');
+          const trMatchCount = document.getElementById('transcriptMatchCount');
+          const trClearBtn = document.getElementById('transcriptSearchClear');
+          const normStr = (str) => (window.H2Core && typeof H2Core.normalize === 'function')
+            ? H2Core.normalize(str)
+            : String(str || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
+          if (trMatchCount) trMatchCount.textContent = `${transcriptSegments.length} dòng`;
+          const filterTranscriptLines = () => {
+            const qRaw = trSearchInput ? trSearchInput.value.trim() : '';
+            const nq = normStr(qRaw);
+            const lines = Array.from(tList.querySelectorAll('.transcript-line'));
+            let matched = 0;
+            lines.forEach((lineEl, idx) => {
+              const segText = (transcriptSegments[idx] && transcriptSegments[idx].text) || '';
+              const timeLabel = lineEl.querySelector('.transcript-time')?.textContent || '';
+              const isMatch = !nq || normStr(segText).includes(nq) || normStr(timeLabel).includes(nq);
+              lineEl.classList.toggle('hidden', !isMatch);
+              if (isMatch) matched++;
+            });
+            let emptyEl = document.getElementById('transcriptEmptyMatch');
+            if (!matched && nq) {
+              if (!emptyEl) {
+                emptyEl = document.createElement('div');
+                emptyEl.id = 'transcriptEmptyMatch';
+                emptyEl.className = 'p-4 text-center text-gray-400 text-xs';
+                tList.appendChild(emptyEl);
+              }
+              emptyEl.textContent = `Không tìm thấy dòng phụ đề khớp "${qRaw}".`;
+              emptyEl.classList.remove('hidden');
+            } else if (emptyEl) {
+              emptyEl.classList.add('hidden');
+            }
+            if (trMatchCount) {
+              trMatchCount.textContent = nq ? `${matched}/${transcriptSegments.length} dòng` : `${transcriptSegments.length} dòng`;
+            }
+            if (trClearBtn) trClearBtn.classList.toggle('hidden', !nq);
+          };
+          if (trSearchInput) {
+            trSearchInput.addEventListener('input', filterTranscriptLines);
+          }
+          if (trClearBtn) {
+            trClearBtn.addEventListener('click', () => {
+              if (trSearchInput) {
+                trSearchInput.value = '';
+                filterTranscriptLines();
+                trSearchInput.focus();
+              }
+            });
+          }
+
           let isProgrammaticScroll = false;
           let progScrollTimer = null;
           tList.__markProgrammaticScroll = () => {
@@ -911,7 +1023,10 @@ window.addEventListener('keydown', (e)=>{
       }
     } catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); }
     const store=loadStore();
-    const rec=store[sku]||{watched:false,note:'',t:0,d:0};
+    if (sku !== resolvedSku && store[sku] && !store[resolvedSku]) {
+      store[resolvedSku] = store[sku];
+    }
+    const rec=store[resolvedSku]||store[sku]||{watched:false,note:'',t:0,d:0};
     const stateEl=document.getElementById('pstate');
     const btnW=document.getElementById('btnWatched');
     const btnR=document.getElementById('btnResume');
@@ -922,7 +1037,7 @@ window.addEventListener('keydown', (e)=>{
     const btnClearProgress=document.getElementById('btnClearProgress');
     const P95=0.95;
     const renderState = function (){
-      const rec2=store[sku]||{watched:false,note:'',t:0,d:0};
+      const rec2=store[resolvedSku]||store[sku]||{watched:false,note:'',t:0,d:0};
       const d=Number(rec2.d)||0, t=Number(rec2.t)||0;
       const ratio=(d>0&&t>0)?Math.min(1, t/d):0;
       const done=Boolean(rec2.watched)||ratio>=P95;
@@ -949,35 +1064,36 @@ window.addEventListener('keydown', (e)=>{
     stateEl.classList.remove('hidden');
     renderState();
     btnW.onclick=()=>{
-      const cur=store[sku]||{watched:false,note:noteInput.value,t:rec.t,d:rec.d};
+      const cur=store[resolvedSku]||store[sku]||{watched:false,note:noteInput.value,t:rec.t,d:rec.d};
       cur.watched=!cur.watched;
       if(cur.watched&&!cur.d) cur.d = (Number.isFinite(pv.duration)&&pv.duration>0) ? pv.duration : (v.duration_sec || 0);
-      store[sku]=Object.assign({},rec,cur,{watched:cur.watched,note:noteInput.value});
+      store[resolvedSku]=Object.assign({},rec,cur,{watched:cur.watched,note:noteInput.value});
       saveStore(store); renderState();
     };
     btnR.onclick=()=>{
-      const target=Number((store[sku]||{}).t)||0;
+      const target=Number((store[resolvedSku]||store[sku]||{}).t)||0;
       if(Number.isFinite(target)&&target>0){
         pv.currentTime=Math.min(target, (Number.isFinite(pv.duration)&&pv.duration>0)?pv.duration:target);
         pv.play();
       }
     };
     btnClearProgress.onclick=()=>{
-      delete store[sku];
+      delete store[resolvedSku];
+      if (sku !== resolvedSku) delete store[sku];
       saveStore(store);
       renderState();
     };
     noteInput.oninput=()=>{
-      const cur=store[sku]||{watched:false,note:'',t:rec.t,d:rec.d};
+      const cur=store[resolvedSku]||store[sku]||{watched:false,note:'',t:rec.t,d:rec.d};
       cur.note=noteInput.value;
-      store[sku]=cur;
+      store[resolvedSku]=cur;
       saveStore(store);
     };
     /* Save recent watched (for learn.html resume banner) */
     try{
-      const recentPayload={sku:sku,track:activePlayerTrack,ts:Date.now(),nextSku:nextItem?nextItem.sku:null};
+      const recentPayload={sku:resolvedSku,track:activePlayerTrack,ts:Date.now(),nextSku:nextItem?nextItem.sku:null};
       localStorage.setItem('h2dev-recent', JSON.stringify(recentPayload));
-      localStorage.setItem('recentWatched', JSON.stringify({item_id:sku,item_name:v.title,track:activePlayerTrack,next_video_url:(nextItem&&(nextItem.mp4||nextItem.file))||null}));
+      localStorage.setItem('recentWatched', JSON.stringify({item_id:resolvedSku,item_name:v.title,track:activePlayerTrack,next_video_url:(nextItem&&(nextItem.mp4||nextItem.file))||null}));
     }catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); }
 
     /* auto-save progress every 3s while playing + mark watched at 95% */
@@ -1019,22 +1135,22 @@ window.addEventListener('keydown', (e)=>{
       const now=Date.now();
       if(now-lastSave<3000) return;
       lastSave=now;
-      const cur=store[sku]||{watched:false,note:noteInput.value,t:0,d:0};
+      const cur=store[resolvedSku]||store[sku]||{watched:false,note:noteInput.value,t:0,d:0};
       cur.t=Math.max(Number(cur.t)||0, t);
       cur.d=d;
       if(t/d>=P95) cur.watched=true;
-      store[sku]=cur;
+      store[resolvedSku]=cur;
       saveStore(store);
       renderState();
     });
     pv.addEventListener('ended',()=>{
-      const cur=store[sku]||{watched:false,note:noteInput.value,t:0,d:0};
+      const cur=store[resolvedSku]||store[sku]||{watched:false,note:noteInput.value,t:0,d:0};
       cur.watched=true;
       if(Number.isFinite(pv.duration)&&pv.duration>0){
         cur.d=pv.duration;
         cur.t=pv.duration;
       }
-      store[sku]=cur; saveStore(store); renderState();
+      store[resolvedSku]=cur; saveStore(store); renderState();
     });
     // Khởi tạo tab mặc định khi vào trang trên mobile
     if (window.innerWidth < 1024) {
@@ -1275,6 +1391,12 @@ document.addEventListener('click', (e) => {
       const p = pv.play();
       if (p && typeof p.catch === 'function') p.catch(() => {});
     }
+    try {
+      const u = new URL(location.href);
+      if (sec > 0) u.searchParams.set('t', String(Math.floor(sec)));
+      else u.searchParams.delete('t');
+      history.replaceState(null, '', u);
+    } catch (err) {}
     return;
   }
   const act = t.closest('[data-action]');
@@ -1301,6 +1423,12 @@ document.addEventListener('keydown', (e) => {
       const p = pv.play();
       if (p && typeof p.catch === 'function') p.catch(() => {});
     }
+    try {
+      const u = new URL(location.href);
+      if (sec > 0) u.searchParams.set('t', String(Math.floor(sec)));
+      else u.searchParams.delete('t');
+      history.replaceState(null, '', u);
+    } catch (err) {}
   }
 });
 

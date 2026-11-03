@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-ba3904&track=h2dev"
 # VIDEO-ba3904 — Hướng dẫn tham gia cộng đồng VIP riêng tư – Giao lưu, trao đổi và hỗ trợ YouTube H2Dev
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M00|H2DEV-M00 — Bắt đầu tại đây — Cộng đồng & Hỗ trợ]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/cong-dong-ho-tro-vip|Cộng đồng & Hỗ trợ VIP]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `4:27` | **Ngày đăng:** `2026-04-10`  

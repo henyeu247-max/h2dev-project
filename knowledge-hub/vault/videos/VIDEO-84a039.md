@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-84a039&track=h2dev"
 # VIDEO-84a039 — Kênh mới tạo 6 ngày và đăng được 5 video đã đủ bật kiếm tiền - Update 2 ngách bán content view ngoại mới nhất
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#17`)  
 > - **Ngách nội dung (Niche):** [[niches/tam-linh-thu-hut-may-man|Tâm Linh & Thu Hút May Mắn]]  
 > - **Thị trường:** 🌐 Ngoại · 🇯🇵 Nhật | **Thời lượng:** `10:10` | **Ngày đăng:** `2026-06-05`  

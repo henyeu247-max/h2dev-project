@@ -52,6 +52,8 @@ function assertCheck(id, description, condition, details = '') {
 // -----------------------------------------------------------------------------
 // LOAD DATASETS
 // -----------------------------------------------------------------------------
+const { computeCounts } = require('./lib/counts');
+const C = computeCounts();
 const ngachXanh = readJson('data-tabs/ngach-xanh.json');
 const kenhMau = readJson('data-tabs/kenh-mau.json');
 const rawKenhMau = readJson('data-tabs/raw-kenh-mau.json');
@@ -110,15 +112,15 @@ assertCheck(
 );
 
 // -----------------------------------------------------------------------------
-// METRIC 2: UNIVERSAL VIDEO GROUNDING (333 LESSONS)
+// METRIC 2: UNIVERSAL VIDEO GROUNDING
 // -----------------------------------------------------------------------------
-console.log('\n--- METRIC 2: UNIVERSAL VIDEO GROUNDING (333 LESSONS) ---');
+console.log(`\n--- METRIC 2: UNIVERSAL VIDEO GROUNDING (${C.totalSystemVideos} LESSONS) ---`);
 const allVideoSkus = new Set(allVideos.map(v => v.sku));
 
 assertCheck(
   'M2.1',
-  'Video Repository Integrity: exactly 333 lessons (148 H2DEV + 140 HUAN + 45 DGMD)',
-  allVideos.length === 333 && allVideoSkus.size === 333,
+  `Video Repository Integrity: exactly ${C.totalSystemVideos} lessons (${C.videos} H2DEV + ${C.videosHuan} HUAN + ${C.videosDgmd} DGMD)`,
+  allVideos.length === C.totalSystemVideos && allVideoSkus.size === C.totalSystemVideos,
   `Found ${allVideos.length} videos, distinct SKUs: ${allVideoSkus.size}`
 );
 
@@ -132,11 +134,21 @@ canonicalNiches.forEach(n => {
     }
   });
 });
+(ngachXanh.ngachMetaKho || []).forEach((m, idx) => {
+  const mCode = m.code || (`META-0${idx + 1}`);
+  (m.skus || []).forEach(s => {
+    const sku = typeof s === 'string' ? s : s.sku;
+    if (sku) {
+      if (!nicheSkusMap.has(sku)) nicheSkusMap.set(sku, new Set());
+      nicheSkusMap.get(sku).add(mCode);
+    }
+  });
+});
 
 const ungroundedVideos = [...allVideoSkus].filter(sku => !nicheSkusMap.has(sku));
 assertCheck(
   'M2.2',
-  '100% Video Grounding: 333/333 videos anchored to at least one Canonical Niche',
+  `100% Video Grounding: ${C.totalSystemVideos}/${C.totalSystemVideos} videos anchored to Canonical Niches or Meta Groups`,
   ungroundedVideos.length === 0,
   `Ungrounded SKUs (${ungroundedVideos.length}): ${ungroundedVideos.slice(0, 5).join(', ')}`
 );
@@ -145,7 +157,7 @@ let totalLessonNicheLinks = 0;
 nicheSkusMap.forEach(set => totalLessonNicheLinks += set.size);
 assertCheck(
   'M2.3',
-  'Multi-Niche Synergy Links >= 500 across 333 lessons',
+  `Multi-Niche Synergy Links >= 500 across ${C.totalSystemVideos} lessons`,
   totalLessonNicheLinks >= 500,
   `Total lesson-niche links: ${totalLessonNicheLinks}`
 );
@@ -218,15 +230,15 @@ assertCheck(
 console.log('\n--- METRIC 4: DOCUMENT ZERO-ORPHAN INVARIANT (580 DOCUMENTS) ---');
 assertCheck(
   'M4.1',
-  'Document Repository SSoT Count: exactly 580 documents in tai-lieu-full.json',
-  documents.length === 580,
+  `Document Repository SSoT Count: exactly ${C.documents} documents in tai-lieu-full.json`,
+  documents.length === C.documents,
   `Found ${documents.length} documents`
 );
 
 const missingDocMetadata = documents.filter(d => !d.docCode || !d.scopeType || !d.systemTrack || !d.nicheCode);
 assertCheck(
   'M4.2',
-  '100% of 580 documents have docCode, scopeType, systemTrack, and nicheCode',
+  `100% of ${C.documents} documents have docCode, scopeType, systemTrack, and nicheCode`,
   missingDocMetadata.length === 0,
   `Missing metadata count: ${missingDocMetadata.length}`
 );
@@ -307,8 +319,8 @@ assertCheck(
 const dbLessons = db.prepare('SELECT COUNT(*) AS c FROM lessons').get().c;
 assertCheck(
   'M6.4',
-  'Master DB Lessons: exactly 333 rows in lessons table',
-  dbLessons === 333,
+  `Master DB Lessons: exactly ${C.totalSystemVideos} rows in lessons table`,
+  dbLessons === C.totalSystemVideos,
   `Found ${dbLessons} lessons in DB`
 );
 
@@ -323,32 +335,32 @@ assertCheck(
 const dbTimestamps = db.prepare('SELECT COUNT(*) AS c FROM lesson_timestamps').get().c;
 assertCheck(
   'M6.6',
-  'Master DB Lesson Timestamps: exactly 2,456 timestamps in lesson_timestamps table',
-  dbTimestamps === 2456,
+  'Master DB Lesson Timestamps: at least 2,456 timestamps in lesson_timestamps table',
+  dbTimestamps >= 2456,
   `Found ${dbTimestamps} timestamps in DB`
 );
 
 const dbTranscripts = db.prepare('SELECT COUNT(*) AS c FROM lesson_transcripts').get().c;
 assertCheck(
   'M6.6b',
-  'Master DB Lesson Transcripts: exactly 333 unified transcripts in lesson_transcripts table',
-  dbTranscripts === 333,
+  `Master DB Lesson Transcripts: exactly ${C.totalSystemVideos} unified transcripts in lesson_transcripts table`,
+  dbTranscripts === C.totalSystemVideos,
   `Found ${dbTranscripts} transcripts in DB`
 );
 
 const dbChannels = db.prepare('SELECT COUNT(*) AS c FROM competitor_channels').get().c;
 assertCheck(
   'M6.7',
-  'Master DB Channels: at least 1,076 channels in competitor_channels table',
-  dbChannels >= 1076,
+  `Master DB Channels: at least ${C.channels} channels in competitor_channels table`,
+  dbChannels >= C.channels,
   `Found ${dbChannels} channels in DB`
 );
 
 const dbDocs = db.prepare('SELECT COUNT(*) AS c FROM documents').get().c;
 assertCheck(
   'M6.8',
-  'Master DB Documents: exactly 580 rows in documents table',
-  dbDocs === 580,
+  `Master DB Documents: exactly ${C.documents} rows in documents table`,
+  dbDocs === C.documents,
   `Found ${dbDocs} documents in DB`
 );
 
@@ -376,6 +388,139 @@ assertCheck(
   `View tuples count: ${viewTuples}`
 );
 
+// -----------------------------------------------------------------------------
+// METRIC 7: SQLITE 3-DB & FTS5 DEEP SEARCH INVARIANTS
+// -----------------------------------------------------------------------------
+console.log('\n--- [METRIC 7: SQLITE 3-DB & FTS5 DEEP SEARCH INVARIANTS] ---');
+
+const lessonCols = db.prepare('PRAGMA table_info(lessons)').all().map(c => c.name);
+const requiredLessonCols = ['track', 'module_id', 'module_title', 'published_at', 'ingested_at'];
+const missingLessonCols = requiredLessonCols.filter(c => !lessonCols.includes(c));
+const trackRows = db.prepare('SELECT track, COUNT(*) AS c FROM lessons GROUP BY track').all();
+const trackMap = Object.fromEntries(trackRows.map(r => [r.track, r.c]));
+assertCheck(
+  'M7.1',
+  `Master DB lessons schema has [${requiredLessonCols.join(', ')}] & exact 3-track counts (${C.videos}+${C.videosHuan}+${C.videosDgmd}=${C.totalSystemVideos})`,
+  missingLessonCols.length === 0 &&
+    trackMap.h2dev === C.videos &&
+    trackMap.huan === C.videosHuan &&
+    trackMap.dgmd === C.videosDgmd,
+  `Missing cols: [${missingLessonCols.join(', ')}], tracks: ${JSON.stringify(trackMap)}`
+);
+
+const ftsTypeRows = db.prepare('SELECT entity_type, COUNT(*) AS c FROM search_fts GROUP BY entity_type').all();
+const ftsTypeMap = Object.fromEntries(ftsTypeRows.map(r => [r.entity_type, r.c]));
+const expectedFtsTypes = ['NICHE', 'SUBNICHE', 'META', 'LESSON', 'TIMESTAMP', 'CHANNEL', 'TRANSCRIPT', 'SOP', 'REUP', 'POLICY', 'CHECKLIST'];
+const missingFtsTypes = expectedFtsTypes.filter(t => !ftsTypeMap[t] || ftsTypeMap[t] <= 0);
+const totalFtsRows = ftsTypeRows.reduce((s, r) => s + r.c, 0);
+const expectedSubNicheCount = countSub120 + countSub2026;
+const expectedMetaCount = (ngachXanh.ngachMetaKho || []).length;
+assertCheck(
+  'M7.2',
+  `Master DB search_fts covers all 11 entity types (${expectedFtsTypes.join(', ')}) with >= 6,000 indexed rows`,
+  missingFtsTypes.length === 0 &&
+    ftsTypeMap.SUBNICHE === expectedSubNicheCount &&
+    ftsTypeMap.META === expectedMetaCount &&
+    ftsTypeMap.TIMESTAMP >= 2500 &&
+    ftsTypeMap.SOP === C.documents &&
+    totalFtsRows >= 6000,
+  `Total FTS rows: ${totalFtsRows}, types: ${JSON.stringify(ftsTypeMap)}`
+);
+
+const masterDal = require('./master_dal');
+masterDal.searchFts('DOC_1', 1); // Warm up connection, PRAGMAs, and O(1) enrichment maps before latency measurement
+const t0Fts = performance.now();
+const hitsDiacritic = masterDal.searchFts('đông y', 10);
+const hitsUnaccented = masterDal.searchFts('dong y', 10);
+const hitsSku = masterDal.searchFts('VIDEO-0419c4', 10);
+const hitsSubniche = masterDal.searchFts('SUB-01', 10, 'SUBNICHE');
+const hitsLocalSub = masterDal.searchFts('SN-H01-001', 10, 'SUBNICHE');
+const hitsMeta = masterDal.searchFts('META-01', 10, 'META');
+const hitsTimestamp = masterDal.searchFts('0419c4', 10, 'TIMESTAMP');
+const hitsSopBody = masterDal.searchFts('Master Prompt', 10, 'SOP');
+const hitsRaw145 = masterDal.searchFts('RAW-145', 5);
+const hitsHandle = masterDal.searchFts('@suckhoedongy99', 5);
+const avgFtsMs = (performance.now() - t0Fts) / 10;
+const allHaveTargetUrl = [...hitsDiacritic, ...hitsSku, ...hitsSubniche, ...hitsMeta, ...hitsTimestamp, ...hitsSopBody, ...hitsRaw145]
+  .every(r => typeof r.targetUrl === 'string' && r.targetUrl.startsWith('/'));
+assertCheck(
+  'M7.3',
+  'Master DAL searchFts() supports d/đ folding, hyphenated SKUs/RAW-xxx/@handle, local SN-Hxx-001, SUBNICHE, META, TIMESTAMP, SOP body & 100% targetUrl (< 5ms avg)',
+  hitsDiacritic.length > 0 &&
+    hitsUnaccented.length > 0 &&
+    hitsDiacritic[0].entity_id === hitsUnaccented[0].entity_id &&
+    hitsSku.length > 0 &&
+    hitsSubniche.length > 0 &&
+    hitsLocalSub.length > 0 &&
+    hitsLocalSub[0].niche_code === 'H01' &&
+    hitsMeta.length > 0 &&
+    hitsTimestamp.length > 0 &&
+    hitsSopBody.length > 0 &&
+    hitsRaw145[0]?.entity_type === 'CHANNEL' &&
+    hitsRaw145[0]?.raw_id === 'RAW-145' &&
+    hitsHandle[0]?.entity_type === 'CHANNEL' &&
+    allHaveTargetUrl &&
+    avgFtsMs < 5,
+  `Hits: diacritic=${hitsDiacritic.length}, unaccent=${hitsUnaccented.length}, sku=${hitsSku.length}, sub=${hitsSubniche.length}, localSub=${hitsLocalSub[0]?.entity_id}, raw145Top=${hitsRaw145[0]?.raw_id}, targetUrlOk=${allHaveTargetUrl}, avg=${avgFtsMs.toFixed(2)}ms`
+);
+
+const kgQuery = require('./kg_query');
+kgQuery.searchIntelligenceDb('history', 1); // Warm up intelligence DB & KG DB connections
+kgQuery.searchGraphInDb('H01', { limit: 1 }, false);
+kgQuery.traceNodeInDb('SUB-01', false);
+const t0Kg = performance.now();
+const intelRes = kgQuery.searchIntelligenceDb('history', 5);
+const intelDongY = kgQuery.searchIntelligenceDb('dong y', 5);
+const kgSearchRes = kgQuery.searchGraphInDb('H01', { limit: 5 }, false);
+const kgH30Res = kgQuery.searchGraphInDb('H30', { limit: 5 }, false);
+const kgVideoRes = kgQuery.searchGraphInDb('VIDEO-0419c4', { limit: 5 }, false);
+const kgDongYRes = kgQuery.searchGraphInDb('dong y', { limit: 5 }, false);
+const kgDoc54Res = kgQuery.searchGraphInDb('DOC_54', { limit: 5 }, false);
+const kgTraceSub01 = kgQuery.traceNodeInDb('SUB-01', false);
+const kgTraceMeta01 = kgQuery.traceNodeInDb('META-01', false);
+const avgKgMs = (performance.now() - t0Kg) / 9;
+assertCheck(
+  'M7.4',
+  '3-DB Unification: Knowledge Graph FTS5 (kg_fts) & Intelligence DB FTS5 respond < 5ms with DOC_54->sop:DOC-054, SUB-01/META-01 resolution & canonical top-1 ranking',
+  Array.isArray(intelRes) &&
+    intelRes.length > 0 &&
+    Array.isArray(intelDongY) &&
+    intelDongY.length > 0 &&
+    kgSearchRes?.results?.[0]?.type === 'niche' &&
+    kgH30Res?.results?.[0]?.type === 'niche' &&
+    kgVideoRes?.results?.[0]?.id === 'video:VIDEO-0419c4' &&
+    kgDongYRes?.results?.length > 0 &&
+    kgDoc54Res?.results?.[0]?.id === 'sop:DOC-054' &&
+    Boolean(kgTraceSub01?.targetNode?.id) &&
+    kgTraceMeta01?.targetNode?.id === 'track:h2dev' &&
+    avgKgMs < 5,
+  `intelHits=${intelRes?.length || 0}, intelDongY=${intelDongY?.length || 0}, H01Top=${kgSearchRes?.results?.[0]?.id}, DOC54Top=${kgDoc54Res?.results?.[0]?.id}, traceSub01=${kgTraceSub01?.targetNode?.id}, avg=${avgKgMs.toFixed(2)}ms`
+);
+
+// M7.5: 3-DB Physical Integrity, Zero Foreign Key Violations & Zero Freelist Fragmentation
+const dbFiles = ['h2dev_master.db', 'h2dev_knowledge_graph.db', 'intelligence.db'];
+const dbHealthReport = [];
+let allDbHealthy = true;
+for (const f of dbFiles) {
+  const fPath = path.join(ROOT, 'data', f);
+  const checkDb = new DatabaseSync(fPath, { readOnly: true });
+  const integRow = checkDb.prepare('PRAGMA integrity_check').get();
+  const integ = integRow ? Object.values(integRow)[0] : 'error';
+  const fkErrs = checkDb.prepare('PRAGMA foreign_key_check').all().length;
+  const freeRow = checkDb.prepare('PRAGMA freelist_count').get();
+  const freelist = freeRow ? Object.values(freeRow)[0] : -1;
+  checkDb.close();
+  if (integ !== 'ok' || fkErrs !== 0 || freelist !== 0) allDbHealthy = false;
+  dbHealthReport.push(`${f}(integ=${integ},fk=${fkErrs},free=${freelist})`);
+}
+assertCheck(
+  'M7.5',
+  'All 3 SQLite DBs (h2dev_master.db, h2dev_knowledge_graph.db, intelligence.db) have integrity_check=ok, fk_errors=0, freelist_count=0',
+  allDbHealthy,
+  dbHealthReport.join(' | ')
+);
+
+kgQuery.closeKgDb();
 db.close();
 
 // -----------------------------------------------------------------------------

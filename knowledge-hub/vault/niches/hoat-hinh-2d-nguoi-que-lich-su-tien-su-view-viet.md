@@ -12,7 +12,7 @@ tracks: ["h2dev"]
 - **Hiện diện trên các Track:** `H2DEV`
 
 ## 1. Các Video Bài Giảng Thuộc Ngách (1)
-- [[videos/VIDEO-bfabb6|VIDEO-bfabb6 — Hướng dẫn làm Tự động hóa ngách người que view Việt bằng Claude KHÔNG ĐỤNG tới Capcut, 100% edit giống đối thủ  |  Update 23-10-2026 ]] (`H2DEV` · `00:00`)
+- [[videos/VIDEO-bfabb6|VIDEO-bfabb6 — Hướng dẫn làm Tự động hóa ngách người que view Việt bằng Claude KHÔNG ĐỤNG tới Capcut, 100% edit giống đối thủ  |  Update 23-10-2026 ]] (`H2DEV` · `31:47`)
 
 ## 2. Kênh Đối Thủ / Kênh Mẫu Liên Quan (0)
 - *(Chưa gắn kênh mẫu riêng)*

@@ -1,7 +1,73 @@
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
+
+function resLabel(w, h) {
+  if (w >= 3840 || h >= 2160) return '4K';
+  if (w >= 2560 || h >= 1440) return '2K';
+  if (w < h && (w >= 1080 || h >= 1920)) return 'Shorts 1080p';
+  if (w >= 1920 || h >= 1080) return '1080p';
+  if (w >= 1280 || h >= 720) return '720p';
+  return '1080p';
+}
+
+function loadProbedDims() {
+  const p = path.join(ROOT, '_internal', 'probed_video_dims.json');
+  if (fs.existsSync(p)) {
+    try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch (_) {}
+  }
+  return {};
+}
+
+function resolveVideoDim(sku, probedMap) {
+  if (probedMap[sku] && Number(probedMap[sku].width) > 0) {
+    return probedMap[sku];
+  }
+  const mp4Abs = path.join(ROOT, 'video', sku, `${sku}.mp4`);
+  if (fs.existsSync(mp4Abs)) {
+    try {
+      const out = execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height,duration', '-of', 'json', mp4Abs], { encoding: 'utf8' });
+      const st = (JSON.parse(out).streams || [])[0] || {};
+      const w = Number(st.width) || 1920;
+      const h = Number(st.height) || 1080;
+      const d = Math.round(Number(st.duration) || 0);
+      const entry = { width: w, height: h, resolution: resLabel(w, h), duration_sec: d };
+      probedMap[sku] = entry;
+      return entry;
+    } catch (_) {}
+  }
+  return { width: 1920, height: 1080, resolution: '1080p', duration_sec: 0 };
+}
+
+function loadSkuNicheCodesMap() {
+  const nxPath = path.join(ROOT, 'data-tabs', 'ngach-xanh.json');
+  const map = new Map();
+  if (!fs.existsSync(nxPath)) return map;
+  try {
+    const nx = JSON.parse(fs.readFileSync(nxPath, 'utf8'));
+    (nx.ngachXanh || []).forEach((n, idx) => {
+      const code = String(n.id || n.code || ('H' + String(idx + 1).padStart(2, '0'))).trim().toUpperCase();
+      (n.skus || []).forEach(s => {
+        const k = String(typeof s === 'string' ? s : (s && s.sku) || '').trim().toLowerCase();
+        if (!k) return;
+        if (!map.has(k)) map.set(k, []);
+        const arr = map.get(k);
+        if (!arr.includes(code)) arr.push(code);
+      });
+    });
+    (nx.ngachMetaKho || []).forEach((m, idx) => {
+      const metaCode = String(m.code || ('META-0' + (idx + 1))).trim().toUpperCase();
+      (m.skus || []).forEach(s => {
+        const k = String(typeof s === 'string' ? s : (s && s.sku) || '').trim().toLowerCase();
+        if (!k || map.has(k)) return;
+        map.set(k, ['META-OPS', metaCode]);
+      });
+    });
+  } catch (_) {}
+  return map;
+}
 
 function formatDuration(sec) {
   const s = parseInt(sec || '0', 10);
@@ -85,6 +151,8 @@ async function main() {
   for (const item of existingCatalog) {
     catalogBySku[item.sku] = item;
   }
+  const probedDims = loadProbedDims();
+  const skuNicheCodesMap = loadSkuNicheCodesMap();
 
   const modulesHuan = [];
   const catalogHuan = [];
@@ -434,6 +502,9 @@ async function main() {
       videoInsightsHuan[sku] = normalizedInsight;
 
       const ingestedAt = prevCatItem.ingested_at || p.ingested_at || '';
+      const dim = resolveVideoDim(sku, probedDims);
+      const mappedCodes = skuNicheCodesMap.get(String(sku || '').toLowerCase()) || prevCatItem.nicheCodes || ['H02'];
+      const primaryCode = mappedCodes[0] || prevCatItem.nicheCode || 'H02';
 
       const catalogItem = {
         sku,
@@ -441,9 +512,9 @@ async function main() {
         file: isLocal ? localMp4 : (prevCatItem.video_link || ''),
         thumb: thumbFile,
         image: thumbFile,
-        resolution: '1080p',
-        width: 1920,
-        height: 1080,
+        resolution: dim.resolution,
+        width: dim.width,
+        height: dim.height,
         badge: prevCatItem.badge || p.badge || (isFree ? 'MIỄN PHÍ' : 'PRO'),
         size_mb: sizeMb,
         duration_sec: durSec,
@@ -465,6 +536,9 @@ async function main() {
         position: pIdx + 1,
         contentNiche,
         niche: contentNiche,
+        niche_primary: contentNiche,
+        nicheCode: primaryCode,
+        nicheCodes: mappedCodes,
         market: markets,
         tags: ['Huân Academy', contentNiche, ...(normalizedInsight.tools_mentioned || []).slice(0, 4)],
         docs,
@@ -476,7 +550,6 @@ async function main() {
         mp4: isLocal ? localMp4 : '',
         size: sizeBytes,
         tools_mentioned: normalizedInsight.tools_mentioned,
-        niche_primary: contentNiche,
         local: isLocal,
         drm: false,
         isHuan: true,
@@ -493,6 +566,9 @@ async function main() {
         title: lessonTitle,
         duration: durStr,
         duration_sec: durSec,
+        resolution: dim.resolution,
+        width: dim.width,
+        height: dim.height,
         category: prevMod.title,
         category_name: prevMod.title,
         module: modId,
@@ -500,12 +576,17 @@ async function main() {
         module_title: prevMod.title,
         contentNiche,
         niche: contentNiche,
+        niche_primary: contentNiche,
+        nicheCode: primaryCode,
+        nicheCodes: mappedCodes,
         market: markets,
         published_at: publishedAt,
         ...(ingestedAt ? { ingested_at: ingestedAt } : {}),
         badge: catalogItem.badge,
         free: isFree,
         is_free: isFree,
+        is_pro: !isFree,
+        access: isFree ? 'free' : 'pro',
         drm: false,
         is_drm: false,
         isHuan: true,

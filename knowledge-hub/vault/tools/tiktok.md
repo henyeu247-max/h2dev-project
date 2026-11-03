@@ -1,21 +1,22 @@
 ---
 tool_slug: "tiktok"
 tool_name: "TikTok"
-videos_count: 45
+videos_count: 46
 tracks: ["h2dev", "huan", "dgmd"]
 ---
 
 # Công Cụ Thực Chiến: TikTok
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **Số bài giảng sử dụng công cụ này:** `45` video
+- **Số bài giảng sử dụng công cụ này:** `46` video
 - **Tracks:** `H2DEV`, `HUAN`, `DGMD`
 
-## Danh Sách Bài Giảng Ứng Dụng TikTok (45)
+## Danh Sách Bài Giảng Ứng Dụng TikTok (46)
 - [[videos/VIDEO-d84a78|VIDEO-d84a78 — HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN]] (`H2DEV`)
 - [[videos/VIDEO-5c438a|VIDEO-5c438a — Giải thích và hướng dẫn đưa ra cách chọn mail (mail mới + mail cổ), chọn kênh (kênh mới + kênh cổ) - (tút chọn để làm chắc chắn có độ trust, cắn view)]] (`H2DEV`)
 - [[videos/VIDEO-10ceec|VIDEO-10ceec — SHOW NGÁCH REUP MỚI CỰC HOT VÀ NHIỀU NGUỒN GỐC ĐỂ LÀM TỪ BILIBILI]] (`H2DEV`)
 - [[videos/VIDEO-acd33f|VIDEO-acd33f — NGUỒN MỚI REUP "CÂU CÁ VẠN CÂN" MỚI NHẤT - VIEW QUÁ KINH KHỦNG - SHOW 2 KÊNH MỚI ĐANG LÀM THẬT SỰ KHIẾP SỢ VÌ VIEW]] (`H2DEV`)
+- [[videos/VIDEO-acef2c|VIDEO-acef2c — Ngách làm bán content Thị trường Việt và Nhật  | Update 03-11-2026]] (`H2DEV`)
 - [[videos/VIDEO-f8a932|VIDEO-f8a932 — Cách Thức Tạo Ra Tiền Với DREAM 100 và MÔ HÌNH HÓA Kênh Thành Công]] (`HUAN`)
 - [[videos/VIDEO-dd6e77|VIDEO-dd6e77 — Điều gì khiến lớp học này đặc biệt]] (`HUAN`)
 - [[videos/VIDEO-49833b|VIDEO-49833b — Kiếm tiền Youtube qua nguồn nào? 1 người làm có thể tạo ra tiền tỷ hay không]] (`HUAN`)

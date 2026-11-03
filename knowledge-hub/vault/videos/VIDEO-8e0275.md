@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-8e0275&track=h2dev"
 # VIDEO-8e0275 — Hướng dẫn tạo edit + thumb key Nonagon
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M07|H2DEV-M07 — Module 5 — Edit video & Thumbnail chuẩn A-Z]] (Bài `#06`)  
 > - **Ngách nội dung (Niche):** [[niches/thiet-ke-thumbnail-edit-key-nonagon|Thiết Kế Thumbnail & Edit Key Nonagon]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `1:28:14` | **Ngày đăng:** `2025-08-19`  

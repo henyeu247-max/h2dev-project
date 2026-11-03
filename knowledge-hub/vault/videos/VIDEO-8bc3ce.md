@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-8bc3ce&track=h2dev"
 # VIDEO-8bc3ce — Cứu kênh làm Reup dash(doanh thu) hơn 1k7 $ - Reup view Việt
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M01|H2DEV-M01 — Xử lý & Kháng lỗi kênh YouTube]] (Bài `#07`)  
 > - **Ngách nội dung (Niche):** [[niches/reup-hoat-hinh-view-viet-khang-tat-kiem-tien|Reup Hoạt Hình View Việt & Kháng Tắt Kiếm Tiền]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `1:53` | **Ngày đăng:** `2026-09-11`  

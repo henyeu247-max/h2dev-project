@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-ff9be6&track=h2dev"
 # VIDEO-ff9be6 — XÁC ĐỊNH BAO NHIÊU VIDEO KHÔNG LÊN LÀ BỎ VÀ PHÂN TÍCH CHỈ SỐ ĐỂ GIỮ LÀM TIẾP
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M02|H2DEV-M02 — Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)]] (Bài `#06`)  
 > - **Ngách nội dung (Niche):** [[niches/phan-tich-chi-so-danh-gia-kenh|Phân tích chỉ số & Đánh giá kênh]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `5:32` | **Ngày đăng:** `2026-03-20`  

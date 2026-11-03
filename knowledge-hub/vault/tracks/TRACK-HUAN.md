@@ -7,7 +7,7 @@ videos_count: 140
 
 # Nhánh Huân Academy · YouTube AI & Tự Động Hóa (140 Videos)
 
-- **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME (Bản Đồ Tri Thức Tổng Thể 346 Videos)]]
+- **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME (Bản Đồ Tri Thức Tổng Thể 347 Videos)]]
 - **Số chương (Modules):** `13`
 - **Tổng số video bài giảng:** `140`
 

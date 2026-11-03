@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-bdfab7&track=h2dev"
 # VIDEO-bdfab7 — BẮT BUỘC PHẢI XEM - HƯỚNG DẪN CHI TIẾT TỰ TRAIN PROMPT VÀ PHÂN TÍCH KÊNH ĐỐI THỦ TỰ TẠO PROMPT CHO CHỦ ĐỀ (KEY) BẤT KỲ NÀO MUỐN + HƯỚNG DẪN VÀ SHARE NGÁCH NHỎ SỨC KHOẺ THỊ TRƯỜNG HÀN QUỐC CỰC TRENDS - UPDATE MỚI NHẤT 01-03-2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M05|H2DEV-M05 — Module 3 — Tự train Prompt bất kỳ chủ đề mình muốn]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/suc-khoe-nguoi-cao-tuoi-han-quoc|Sức Khỏe Người Cao Tuổi Hàn Quốc]]  
 > - **Thị trường:** 🇰🇷 Hàn | **Thời lượng:** `25:07` | **Ngày đăng:** `2026-02-28`  

@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-3e5a21&track=h2dev"
 # VIDEO-3e5a21 — HƯỚNG DẪN ADD QUYỀN QUẢN LÝ KÊNH VÀ MAIL KHÔI PHỤC TRÁNH BỊ GOOGLE QUÉT LỖI SPAM HÀNG LOẠT - DIE KÊNH HÀNG LOẠT
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M02|H2DEV-M02 — Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)]] (Bài `#11`)  
 > - **Ngách nội dung (Niche):** [[niches/phan-quyen-kenh-bao-mat-he-thong-chong-quet|Phân quyền kênh & Bảo mật hệ thống chống quét]]  
 > - **Thị trường:** 🇯🇵 Nhật · 🇰🇷 Hàn · 🇺🇸 Mỹ · 🇻🇳 Việt · 🌐 Ngoại | **Thời lượng:** `2:23` | **Ngày đăng:** `2025-11-25`  

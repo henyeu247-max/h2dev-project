@@ -46,6 +46,7 @@ const db = new DatabaseSync(DB_PATH);
 
 // 1. Performance PRAGMAs
 db.exec(`
+  PRAGMA busy_timeout = 15000;
   PRAGMA journal_mode = WAL;
   PRAGMA synchronous = NORMAL;
   PRAGMA mmap_size = 30000000000;
@@ -108,12 +109,17 @@ CREATE TABLE sub_niches (
     FOREIGN KEY (niche_code) REFERENCES niches (niche_id) ON DELETE CASCADE
 ) STRICT;
 
--- 3. Lessons Table (333 records across 3 branches)
+-- 3. Lessons Table (347 records across 3 branches)
 CREATE TABLE lessons (
     sku TEXT PRIMARY KEY,
+    track TEXT NOT NULL DEFAULT 'h2dev',
+    module_id TEXT DEFAULT '',
+    module_title TEXT DEFAULT '',
+    published_at TEXT DEFAULT '',
+    ingested_at TEXT DEFAULT '',
     title TEXT NOT NULL,
     actual_topic TEXT,
-    niche_id TEXT NOT NULL,
+    niche_id TEXT,
     content_niche TEXT,
     target_market TEXT,
     market_code TEXT,
@@ -136,17 +142,16 @@ CREATE TABLE lessons (
     avoid_flags_json TEXT,
     tools_mentioned_json TEXT,
     readme_path TEXT,
-    FOREIGN KEY (niche_id) REFERENCES niches (niche_id)
+    FOREIGN KEY (niche_id) REFERENCES niches (niche_id) ON DELETE SET NULL
 ) STRICT;
 
--- 4. Junction Table: N-N Lessons <-> Niches
+-- 4. Junction Table: N-N Lessons <-> Niches (H01..H40 + META-01..META-05)
 CREATE TABLE lesson_niches (
     sku TEXT NOT NULL,
     niche_code TEXT NOT NULL,
     is_primary INTEGER NOT NULL DEFAULT 0,
     PRIMARY KEY (sku, niche_code),
-    FOREIGN KEY (sku) REFERENCES lessons (sku) ON DELETE CASCADE,
-    FOREIGN KEY (niche_code) REFERENCES niches (niche_id) ON DELETE CASCADE
+    FOREIGN KEY (sku) REFERENCES lessons (sku) ON DELETE CASCADE
 ) STRICT;
 
 -- 5. Lesson Timestamps Table
@@ -280,10 +285,12 @@ CREATE VIRTUAL TABLE search_fts USING fts5(
     entity_type,
     title,
     content_text,
-    folded_text
+    folded_text,
+    tokenize = 'unicode61 remove_diacritics 2'
 );
 
 -- Indices for rapid traversal
+CREATE INDEX idx_lessons_track ON lessons (track, module_id);
 CREATE INDEX idx_lessons_niche ON lessons (niche_id, visual_audio_checked);
 CREATE INDEX idx_lesson_niches_niche ON lesson_niches (niche_code, is_primary);
 CREATE INDEX idx_lesson_niches_sku ON lesson_niches (sku, niche_code);
@@ -397,6 +404,12 @@ for (const sn of ngachData.subNiches2026 || []) {
       sn.benchmarkRPM?.max || 0.0,
       JSON.stringify(sn.sampleChannels || [])
     );
+    insertFts.run(
+      snId,
+      'SUBNICHE',
+      `[Vi ngách ${snId} · ${sn.parentCode}] ${sn.title}`,
+      `${snId} ${sn.parentCode} ${sn.title} ${sn.formula || ''} ${sn.whyGreen || ''} ${(sn.sampleChannels || []).join(' ')}`
+    );
     subNicheCount++;
   }
 }
@@ -412,8 +425,11 @@ function parseRpmRange(rpmStr) {
 }
 
 for (const n of ngachData.ngachXanh || []) {
-  for (const sn of n.subNiches120 || []) {
+  const snList = n.subNiches120 || [];
+  for (let localIdx = 0; localIdx < snList.length; localIdx++) {
+    const sn = snList[localIdx];
     const snId = `SN-${n.code}-${sn.id}`;
+    const localAlias = `SN-${n.code}-${String(localIdx + 1).padStart(3, '0')}`;
     if (!subNicheIdSet.has(snId)) {
       subNicheIdSet.add(snId);
       const rpm = parseRpmRange(sn.rpm);
@@ -427,10 +443,28 @@ for (const n of ngachData.ngachXanh || []) {
         rpm.high,
         JSON.stringify(sn.handles || [])
       );
+      insertFts.run(
+        snId,
+        'SUBNICHE',
+        `[Vi ngách ${snId} · ${n.code}] ${sn.name}`,
+        `${snId} ${localAlias} SUB-${sn.id} ${n.code} ${sn.name} ${sn.formula || ''} ${sn.rpm || ''} ${(sn.handles || []).join(' ')}`
+      );
       subNicheCount++;
     }
   }
 }
+
+// 3) 5 nhóm vận hành Meta (META-01..META-05) into FTS5
+(ngachData.ngachMetaKho || []).forEach((m, idx) => {
+  const metaCode = String(m.code || ('META-0' + (idx + 1))).trim().toUpperCase();
+  const metaSkus = (m.skus || []).map(s => typeof s === 'string' ? s : s.sku).filter(Boolean);
+  insertFts.run(
+    metaCode,
+    'META',
+    `[Nhóm Vận Hành ${metaCode}] ${m.ngach}`,
+    `${metaCode} ${m.ngach} ${m.moTa || ''} ${metaSkus.join(' ')}`
+  );
+});
 
 db.exec('COMMIT;');
 console.log(`Ingested exactly ${nicheCount} Canonical Niches (H01..H40) and ${subNicheCount} Sub-Niches.`);
@@ -466,6 +500,36 @@ const allCatalogFull = catalogFull.concat(catalogHuan, catalogDgmd);
 
 const slimBySku = new Map(catalogSlim.concat(catalogHuan, catalogDgmd).map(v => [v.sku, v]));
 const tabsBySku = new Map((Array.isArray(videoTabs) ? videoTabs : []).concat(videosHuan, videosDgmd).map(v => [v.sku, v]));
+const h2devSkuSet = new Set(catalogFull.map(v => v.sku));
+const huanSkuSet = new Set(catalogHuan.map(v => v.sku));
+const dgmdSkuSet = new Set(catalogDgmd.map(v => v.sku));
+
+const moduleMetaBySku = new Map();
+function indexModuleItems(fileName, defaultPrefix) {
+  try {
+    const p = path.join(ROOT, 'data', fileName);
+    if (!fs.existsSync(p)) return;
+    const raw = JSON.parse(fs.readFileSync(p, 'utf8'));
+    const mods = Array.isArray(raw) ? raw : (raw.modules || []);
+    for (const m of mods) {
+      const mId = m.id || defaultPrefix;
+      const mTitle = m.title || '';
+      for (const item of (m.items || [])) {
+        if (item && item.sku && !moduleMetaBySku.has(item.sku)) {
+          moduleMetaBySku.set(item.sku, {
+            module_id: mId,
+            module_title: mTitle,
+            published_at: item.published_at || '',
+            ingested_at: item.ingested_at || ''
+          });
+        }
+      }
+    }
+  } catch (_) {}
+}
+indexModuleItems('modules.json', 'M00');
+indexModuleItems('modules_huan.json', 'HUAN-M01');
+indexModuleItems('modules_dgmd.json', 'DGMD-M01');
 
 const MARKET_FLAG_TO_CODE = {
   '🇻🇳 Việt': 'VN', '🇻🇳 Việt Nam': 'VN', '🇯🇵 Nhật': 'JP', '🇯🇵 Nhật Bản': 'JP',
@@ -485,7 +549,7 @@ function marketCodeFromTab(tab) {
   return codes.length ? codes.join(',') : null;
 }
 
-// Build map: SKU -> array of niche codes from ngachXanh.skus
+// Build map: SKU -> array of niche codes from ngachXanh.skus + ngachMetaKho.skus
 const skuToNicheCodes = new Map();
 for (const n of ngachData.ngachXanh || []) {
   for (const s of (n.skus || [])) {
@@ -498,15 +562,28 @@ for (const n of ngachData.ngachXanh || []) {
     }
   }
 }
+(ngachData.ngachMetaKho || []).forEach((m, idx) => {
+  const metaCode = String(m.code || ('META-0' + (idx + 1))).trim().toUpperCase();
+  for (const s of (m.skus || [])) {
+    const sku = typeof s === 'string' ? s : s.sku;
+    if (sku) {
+      if (!skuToNicheCodes.has(sku)) skuToNicheCodes.set(sku, []);
+      if (!skuToNicheCodes.get(sku).includes(metaCode)) {
+        skuToNicheCodes.get(sku).push(metaCode);
+      }
+    }
+  }
+});
 
 const insertLesson = db.prepare(`
   INSERT INTO lessons (
-    sku, title, actual_topic, niche_id, content_niche, target_market, market_code,
+    sku, track, module_id, module_title, published_at, ingested_at,
+    title, actual_topic, niche_id, content_niche, target_market, market_code,
     duration, duration_sec, size_bytes, resolution, width, height, mp4_path,
     thumbnail_path, origin_url, is_free, is_pro, has_video_stream, has_audio_stream,
     visual_audio_checked, key_takeaways_json, edit_sop, avoid_flags_json,
     tools_mentioned_json, readme_path
-  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
 
 const insertLessonNiche = db.prepare(`
@@ -538,11 +615,13 @@ for (const v of allCatalogFull) {
   const slim = slimBySku.get(sku) || {};
   const tab = tabsBySku.get(sku) || {};
 
-  // Niche lookup: primary niche code
+  // Niche lookup: primary niche code (H01..H40 or META-01..META-05)
   const rawLinkedCodes = skuToNicheCodes.get(sku) || [];
-  const preferredPrimary = v.nicheCode || tab.nicheCode || rawLinkedCodes[0] || 'H30';
-  const linkedNicheCodes = Array.from(new Set([preferredPrimary, ...rawLinkedCodes]));
+  const rawHxCodes = rawLinkedCodes.filter(c => /^H\d{2}$/i.test(c));
+  const preferredPrimary = rawHxCodes[0] || rawLinkedCodes[0] || v.nicheCode || tab.nicheCode || 'META-01';
+  const linkedNicheCodes = Array.from(new Set([preferredPrimary, ...rawLinkedCodes].filter(c => c !== 'META-OPS')));
   const primaryNicheCode = preferredPrimary;
+  const fkNicheId = /^H\d{2}$/i.test(primaryNicheCode) ? primaryNicheCode : (rawHxCodes[0] || null);
 
   const nicheName = v.niche_primary || insight.niche_primary || 'Everyday History EN';
   const resolvedContentNiche = v.contentNiche || v.niche || nicheName;
@@ -572,12 +651,23 @@ for (const v of allCatalogFull) {
   else if (width >= 2560 || height >= 2560) resolution = '2K';
   else if (height > width) resolution = 'Shorts 1080p';
   const originUrl = v.origin || v.video_link || (sku.startsWith('ZOOM-') ? `docs/NOI-BO/zoom/${sku}.md` : '');
+  const track = huanSkuSet.has(sku) ? 'huan' : (dgmdSkuSet.has(sku) ? 'dgmd' : 'h2dev');
+  const modMeta = moduleMetaBySku.get(sku) || {};
+  const moduleId = v.module_id || tab.module_id || slim.module_id || modMeta.module_id || '';
+  const moduleTitle = v.module_title || tab.module_title || slim.module_title || modMeta.module_title || '';
+  const publishedAt = v.published_at || tab.published_at || slim.published_at || modMeta.published_at || '';
+  const ingestedAt = v.ingested_at || tab.ingested_at || slim.ingested_at || modMeta.ingested_at || '';
 
   insertLesson.run(
     sku,
+    track,
+    moduleId,
+    moduleTitle,
+    publishedAt,
+    ingestedAt,
     v.title,
     insight.actual_topic || v.actual_topic || v.title,
-    primaryNicheCode,
+    fkNicheId,
     resolvedContentNiche,
     targetMarket,
     marketCode,
@@ -611,16 +701,29 @@ for (const v of allCatalogFull) {
     lessonNicheLinksCount++;
   }
 
+  const tsSummaryText = (insight.key_timestamps || [])
+    .map(ts => `${ts.time || ''} ${ts.label || ts.title || ''}`)
+    .join(' ');
+
   insertFts.run(
     sku,
     'LESSON',
     `[${sku}] ${v.title}`,
-    `${sku} ${v.title} ${insight.actual_topic || ''} ${resolvedContentNiche} ${primaryNicheCode} ${takeaways.join(' ')} ${editSop} ${tools.join(' ')}`
+    `${sku} ${track} ${moduleId} ${moduleTitle} ${v.title} ${insight.actual_topic || ''} ${resolvedContentNiche} ${linkedNicheCodes.join(' ')} ${takeaways.join(' ')} ${editSop} ${tools.join(' ')} ${tsSummaryText}`
   );
 
   // Ingest timestamps from insight.key_timestamps
   for (const ts of insight.key_timestamps || []) {
-    insertTimestamp.run(sku, ts.seconds || 0, ts.time || '00:00', ts.label || ts.title || '');
+    const secVal = Number(ts.seconds || 0);
+    const timeLbl = ts.time || '00:00';
+    const tsTitle = ts.label || ts.title || '';
+    insertTimestamp.run(sku, secVal, timeLbl, tsTitle);
+    insertFts.run(
+      `${sku}@${secVal}`,
+      'TIMESTAMP',
+      `[${sku} · ${timeLbl}] ${tsTitle}`,
+      `${sku} ${v.title} ${timeLbl} ${tsTitle} ${resolvedContentNiche} ${primaryNicheCode}`
+    );
     timestampCount++;
   }
 
@@ -898,6 +1001,28 @@ const insertDoc = db.prepare(`
 db.exec('BEGIN TRANSACTION;');
 const lessonSkuSet = new Set(db.prepare('SELECT sku FROM lessons').all().map(r => r.sku));
 let docCount = 0;
+const sopBodyCache = new Map();
+
+function readSopBodyExcerpt(relPath) {
+  const cleanRel = String(relPath || '').trim().replace(/^\/+/, '');
+  if (!cleanRel || !/\.(md|txt|csv|tsv|json|html)$/i.test(cleanRel)) return '';
+  if (sopBodyCache.has(cleanRel)) return sopBodyCache.get(cleanRel);
+  let excerpt = '';
+  try {
+    const fullPath = path.join(ROOT, cleanRel);
+    if (fs.existsSync(fullPath) && fs.statSync(fullPath).isFile()) {
+      const raw = fs.readFileSync(fullPath, 'utf8');
+      excerpt = raw
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/[`#*>\[\]|_~-]+/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .slice(0, 6000);
+    }
+  } catch (_) {}
+  sopBodyCache.set(cleanRel, excerpt);
+  return excerpt;
+}
 
 for (let i = 0; i < docsData.length; i++) {
   const d = docsData[i];
@@ -909,6 +1034,8 @@ for (let i = 0; i < docsData.length; i++) {
   }
   const docSku = (d.sku && lessonSkuSet.has(d.sku)) ? d.sku : null;
   const nicheId = (d.nicheCode && d.nicheCode.startsWith('H')) ? d.nicheCode : null;
+  const localFile = d.fileLocal || d.file || '';
+  const bodyExcerpt = readSopBodyExcerpt(localFile);
 
   insertDoc.run(
     docSku,
@@ -920,11 +1047,16 @@ for (let i = 0; i < docsData.length; i++) {
     d.systemTrack || 'H2DEV',
     d.contentNiche || '',
     d.link || '',
-    d.fileLocal || d.file || '',
+    localFile,
     d.source || 'H2DEV'
   );
   docCount++;
-  insertFts.run(`DOC_${docCount}`, 'SOP', d.name, `${docCode} DOC_${docCount} ${d.name} ${d.contentNiche || ''} ${d.kind || ''} ${nicheId || ''}`);
+  insertFts.run(
+    `DOC_${docCount}`,
+    'SOP',
+    d.name,
+    `${docCode} DOC_${docCount} ${docSku || ''} ${d.name} ${d.contentNiche || ''} ${d.kind || ''} ${d.nicheCode || nicheId || ''} ${bodyExcerpt}`
+  );
 }
 
 db.exec('COMMIT;');
@@ -956,11 +1088,16 @@ db.exec('BEGIN TRANSACTION;');
 let reupCount = 0;
 for (const r of reupData) {
   let hostType = 'Khác';
-  if (r.link && r.link.includes('bilibili.com')) hostType = 'Bilibili';
-  else if (r.link && r.link.includes('douyin.com')) hostType = 'Douyin';
-  else if (r.link && (r.link.includes('pexels.com') || r.link.includes('pixabay.com'))) hostType = 'Stock footage';
+  const linkLow = String(r.link || '').toLowerCase();
+  const nameLow = String(r.name || '').toLowerCase();
+  if (linkLow.includes('bilibili.com') || nameLow.includes('bilibili')) hostType = 'Bilibili';
+  else if (linkLow.includes('douyin.com') || nameLow.includes('douyin')) hostType = 'Douyin';
+  else if (linkLow.includes('pexels.com') || linkLow.includes('pixabay.com')) hostType = 'Stock footage';
+  else if (/vietsubmmo|tool|dreamina|labs\.google|fx|whisky|elevenlabs|capcut|midjourney/.test(linkLow + ' ' + nameLow)) hostType = 'Tool / Web';
+  else if (/drive\.google|docs\.google|spreadsheets|forms\.gle|baike\.baidu|ncbi\.nlm\.nih\.gov|archive\.org/.test(linkLow)) hostType = 'Kho tư liệu / Học thuật';
 
   const nicheId = (r.nicheCode && r.nicheCode.startsWith('H')) ? r.nicheCode : 'H22';
+  const cNiche = r.contentNiche || r.videoNiche || '';
 
   insertReup.run(
     r.sku || null,
@@ -968,10 +1105,11 @@ for (const r of reupData) {
     r.name,
     hostType,
     r.link || '',
-    r.contentNiche || ''
+    cNiche
   );
   reupCount++;
-  insertFts.run(`REUP_${reupCount}`, 'REUP', `[${hostType}] ${r.name}`, `REUP_${reupCount} ${r.name} ${hostType} ${r.sku || ''} ${nicheId}`);
+  const reupCode = `REUP-${String(reupCount).padStart(3, '0')}`;
+  insertFts.run(`REUP_${reupCount}`, 'REUP', `[${hostType}] ${r.name}`, `REUP_${reupCount} ${reupCode} ${r.name} ${hostType} ${r.sku || ''} ${nicheId} ${cNiche} ${r.videoTitle || ''}`);
 }
 
 let policyCount = 0;
@@ -1002,6 +1140,8 @@ for (let i = 0; i < (chienLuocData.checklistTruocKhiDang || []).length; i++) {
   insertFts.run(checkId, 'CHECKLIST', `[Checklist] ${title}`, `${checkId} ${title} ${body}`);
 }
 
+db.exec("INSERT INTO search_fts(search_fts) VALUES('optimize');");
+
 // 8. Create v_cross_tab_lineage View
 db.exec(`
 CREATE VIEW v_cross_tab_lineage AS
@@ -1013,7 +1153,7 @@ SELECT
     NULL AS sub_niche_id,
     NULL AS sku,
     NULL AS channel_handle,
-    '/tatca,/ngach,/sodo,/graph' AS projected_tabs_csv
+    '/tatca,/ngachxanh,/sodo,/graph' AS projected_tabs_csv
 FROM niches n
 
 UNION ALL
@@ -1026,7 +1166,7 @@ SELECT
     sn.sub_niche_id AS sub_niche_id,
     NULL AS sku,
     NULL AS channel_handle,
-    '/tatca,/ngach,/graph' AS projected_tabs_csv
+    '/tatca,/ngachxanh,/graph' AS projected_tabs_csv
 FROM sub_niches sn
 
 UNION ALL
@@ -1052,7 +1192,7 @@ SELECT
     NULL AS sub_niche_id,
     NULL AS sku,
     c.handle AS channel_handle,
-    '/tatca,/kenh,/graph' AS projected_tabs_csv
+    '/tatca,/kenh-mau,/graph' AS projected_tabs_csv
 FROM competitor_channels c
 
 UNION ALL
@@ -1065,7 +1205,7 @@ SELECT
     NULL AS sub_niche_id,
     d.sku AS sku,
     NULL AS channel_handle,
-    '/tatca,/tailieu,/graph' AS projected_tabs_csv
+    '/tatca,/tai-lieu,/graph' AS projected_tabs_csv
 FROM documents d
 
 UNION ALL
@@ -1078,7 +1218,7 @@ SELECT
     NULL AS sub_niche_id,
     r.sku AS sku,
     NULL AS channel_handle,
-    '/tatca,/video,/tailieu' AS projected_tabs_csv
+    '/tatca,/nguonreup,/video,/tai-lieu' AS projected_tabs_csv
 FROM reup_sources r;
 
 INSERT INTO search_fts(search_fts, rank) VALUES('rank', 'bm25(10.0, 1.0, 5.0, 2.0, 1.5)');
@@ -1128,7 +1268,7 @@ if (fkCheck.length > 0) {
   console.error('Foreign Key Violations details:', fkCheck);
 }
 
-try { db.exec('PRAGMA wal_checkpoint(TRUNCATE);'); } catch (_) {}
+try { db.exec('PRAGMA user_version = 20261103; VACUUM; PRAGMA wal_checkpoint(TRUNCATE);'); } catch (_) {}
 
 if (!process.env.H2DEV_MASTER_DB_PATH) {
   const modsH2dev = C.modules || (() => { try { const d = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'modules.json'), 'utf8')); return (Array.isArray(d) ? d : (d.modules || [])).length; } catch (_) { return 12; } })();
@@ -1344,7 +1484,8 @@ if (!process.env.H2DEV_MASTER_DB_PATH) {
             const deg = inb.length + outb.length;
             const meta = n.meta || {};
             const rawIdsStr = (meta.rawIds || (meta.rawId ? [meta.rawId] : [])).join(' ');
-            const fullBody = `${n.id} ${n.sku || ''} ${rawIdsStr} ${n.label || ''} ${foldVi((n.label || '') + ' ' + rawIdsStr)}`.trim();
+            const codeStr = [meta.code, meta.nicheCode].filter(Boolean).join(' ');
+            const fullBody = `${n.id} ${n.sku || ''} ${codeStr} ${rawIdsStr} ${n.label || ''} ${foldVi((n.label || '') + ' ' + codeStr + ' ' + rawIdsStr)}`.trim();
             insNode.run(n.id, n.type || 'item', n.layer || 'knowledge', Number(n.level || 4), n.parentId || '', n.label || n.id, n.track || '', n.sku || '', n.path || '', deg, JSON.stringify(meta));
             insBacklink.run(n.id, inb.length, outb.length, JSON.stringify(inb), JSON.stringify(outb));
             insFts.run(n.id, n.type || 'item', n.label || n.id, fullBody, '');
@@ -1353,8 +1494,9 @@ if (!process.env.H2DEV_MASTER_DB_PATH) {
             insEdge.run(e.source, e.target, e.relation, Number(e.weight || 1.0));
           }
           kgDb.exec("INSERT INTO kg_fts(kg_fts) VALUES('optimize')");
+          kgDb.exec('PRAGMA user_version = 20261103;');
           kgDb.exec('COMMIT');
-          try { kgDb.exec('PRAGMA wal_checkpoint(TRUNCATE);'); } catch (_) {}
+          try { kgDb.exec('VACUUM; PRAGMA wal_checkpoint(TRUNCATE);'); } catch (_) {}
         } finally {
           kgDb.close();
         }

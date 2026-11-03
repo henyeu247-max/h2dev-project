@@ -213,7 +213,8 @@
   function renderLessonRow(v, opts) {
     opts = opts || {};
     var sku = v.sku;
-    var href = '/lotrinh/' + encodeURIComponent(sku);
+    var trackParam = (opts.track && opts.track !== 'h2dev') ? ('?track=' + encodeURIComponent(opts.track)) : '';
+    var href = '/lotrinh/' + encodeURIComponent(sku) + trackParam;
     var favs = loadFavs();
     var isFav = favs.indexOf(sku) >= 0;
     var pr = videoProgress(sku);
@@ -240,6 +241,11 @@
     // PHASE 3 (2026-09-23): emoji -> .h2-icon (he icon CSS mask duy nhat).
     if (pr.done) tags += '<span class="ltag ltag-done">' + ico('check', 14) + ' Đã xem</span>';
     else if (pr.inProgress) tags += '<span class="ltag ltag-progress">' + ico('hourglass', 14) + ' ' + Math.round(pr.ratio * 100) + '%</span>';
+    var nicheLabel = String(v.niche || v.contentNiche || v.nicheCode || '').trim();
+    if (nicheLabel) {
+      tags += '<a class="ltag" target="_top" href="/ngachxanh?q=' + encodeURIComponent(nicheLabel) + '" title="Đối chiếu ngách: ' + esc(nicheLabel) + '" style="text-decoration:none;border:1px solid rgba(56,189,248,.35);color:#7dd3fc;">' + esc(nicheLabel) + '</a>';
+    }
+    tags += '<a class="ltag" target="_top" href="/sodo?snode=video:' + encodeURIComponent(sku) + '" title="Xem trên Sơ đồ DB: video:' + esc(sku) + '" style="text-decoration:none;border:1px solid rgba(148,163,184,.3);color:#cbd5e1;">Sơ đồ ↗</a>';
     var action = opts.showAction ? '<a class="lesson-watch" target="_top" href="' + href + '" aria-label="Xem video: ' + esc(v.title) + '">Xem video</a>' : '';
 
     return '' +
@@ -258,7 +264,7 @@
   }
 
   /* ---------- module head (chuẩn gốc: title + Số lượng + Thời lượng + toggle) ---------- */
-  function renderSectionHead(title, count, durSecs, extra) {
+  function renderSectionHead(title, count, durSecs, extra, isCollapsed) {
     return '' +
       '<div class="sec-head">' +
         '<p class="sec-title">' + esc(title) + '</p>' +
@@ -267,7 +273,7 @@
           '<span class="sec-stat">Thời lượng: <b>' + fmtTotalDur(durSecs) + '</b></span>' +
           (extra || '') +
         '</div>' +
-        '<button class="sec-toggle" type="button" aria-label="Thu gọn / mở rộng"></button>' +
+        '<button class="sec-toggle" type="button" aria-label="Thu gọn / mở rộng" aria-expanded="' + (isCollapsed ? 'false' : 'true') + '"></button>' +
       '</div>';
   }
 

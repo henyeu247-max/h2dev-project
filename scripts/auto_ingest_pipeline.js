@@ -1092,14 +1092,50 @@ function ensureSkuRegisteredInDataFiles(item, prod, quiet = false) {
     }
   }
 
+  // Infer canonical niche (H01..H40) or Meta group (META-OPS) — NEVER fallback-dump into H30
+  const contentNiche = item.chapter_title || title;
+  const blobLower = `${title || ''} ${contentNiche || ''}`.toLowerCase();
+  let inferredHang = null;
+  let inferredMetaGroup = null;
+  if (/mama cat|ghibli|pixar|3d ai|hoạt hình ai ngoại|cổ tích/.test(blobLower)) inferredHang = 37;
+  else if (/phim ai|phim ngắn ai|sci-fi|tiên hiệp/.test(blobLower)) inferredHang = 38;
+  else if (/người que|stickman|2d vẽ tay|chill dude|nonagon/.test(blobLower)) inferredHang = 25;
+  else if (/khảo cổ|tiền sử|cổ đại|sumer|ai cập|kodai/.test(blobLower)) inferredHang = 27;
+  else if (/lịch sử|quân sự|chiến dịch|bản đồ địa hình|bản đồ sử/.test(blobLower)) inferredHang = 19;
+  else if (/địa chính trị|geopolitics|bản đồ/.test(blobLower)) inferredHang = 18;
+  else if (/nhạc|âm nhạc|cổ phong|lofi|chầu văn|xẩm|cover/.test(blobLower)) inferredHang = 40;
+  else if (/tiếng anh|english|esl|quiz english|hội thoại tiếng anh/.test(blobLower)) inferredHang = 36;
+  else if (/triết lý|khắc kỷ|podcast/.test(blobLower)) inferredHang = 20;
+  else if (/kinh thánh|bible/.test(blobLower)) inferredHang = 1;
+  else if (/phật pháp|phật giáo/.test(blobLower)) inferredHang = 2;
+  else if (/sức khỏe|dinh dưỡng|lão hóa/.test(blobLower)) inferredHang = 4;
+  else if (/phong thủy|tử vi/.test(blobLower)) inferredHang = 5;
+  else if (/tội phạm|dark crime|bodycam/.test(blobLower)) inferredHang = 35;
+  else if (/động vật|wildlife|thiên nhiên/.test(blobLower)) inferredHang = 29;
+  else if (/everyday history|đồ vật thường ngày/.test(blobLower)) inferredHang = 30;
+  else if (/adsense|\bga\b|kháng|bản quyền|fair\s*use|affiliate|tắt kiếm tiền/.test(blobLower)) inferredMetaGroup = 'Kiếm tiền / Chính sách';
+  else if (/prompt|chatgpt|claude|tool|vps|tự động/.test(blobLower)) inferredMetaGroup = 'Nền tảng / Tool';
+  else if (/thumb|edit|seo|vidiq|hashtag/.test(blobLower)) inferredMetaGroup = 'Edit / Thumb';
+  else if (/dream\s*100|tìm ngách|từ khóa|0 view|share key/.test(blobLower)) inferredMetaGroup = 'Share key / Ngách nhỏ';
+  else inferredMetaGroup = 'Nhân bản / Kênh';
+
+  const nxPath = path.join(ROOT, 'data-tabs', 'ngach-xanh.json');
+  const nxPre = fs.existsSync(nxPath) ? JSON.parse(fs.readFileSync(nxPath, 'utf8')) : {};
+  const nxPreList = Array.isArray(nxPre.ngachXanh) ? nxPre.ngachXanh : [];
+  const resolvedNicheCode = inferredHang ? `H${String(inferredHang).padStart(2, '0')}` : 'META-OPS';
+  const resolvedNicheName40 = inferredHang && nxPreList[inferredHang - 1]
+    ? nxPreList[inferredHang - 1].ngach
+    : 'Meta & Quy trình kỹ thuật (Đa ngách)';
+
   // Register in data-tabs/tai-lieu-full.json if not yet present (with full schema required by validate-project.js & build_master_db.js)
   const tlPath = path.join(ROOT, 'data-tabs', 'tai-lieu-full.json');
+  let registeredDocNum = null;
   if (fs.existsSync(tlPath)) {
     const tlList = JSON.parse(fs.readFileSync(tlPath, 'utf8'));
     if (!tlList.some(x => (x.sku || '').toUpperCase() === sku.toUpperCase())) {
-      logMsg(`Registering ${sku} document card in data-tabs/tai-lieu-full.json...`, quiet);
+      logMsg(`Registering ${sku} document card in data-tabs/tai-lieu-full.json (${resolvedNicheCode})...`, quiet);
       const nextDocNum = tlList.length + 1;
-      const contentNiche = item.chapter_title || title;
+      registeredDocNum = nextDocNum;
       tlList.push({
         sku,
         name: `Hồ sơ phân tích & SOP thực chiến: ${title} (README.md)`,
@@ -1109,8 +1145,8 @@ function ensureSkuRegisteredInDataFiles(item, prod, quiet = false) {
         kind: 'sop',
         source: branch.toLowerCase(),
         contentNiche,
-        nicheCode: 'H30',
-        nicheName40: 'Everyday History EN (lịch sử đồ vật thường ngày)',
+        nicheCode: resolvedNicheCode,
+        nicheName40: resolvedNicheName40,
         branch: branch.toUpperCase(),
         docId: `DOC_${String(nextDocNum).padStart(3, '0')}`,
         docCode: `DOC-${String(nextDocNum).padStart(3, '0')}`,
@@ -1123,53 +1159,56 @@ function ensureSkuRegisteredInDataFiles(item, prod, quiet = false) {
     }
   }
 
-  // Register in data-tabs/ngach-xanh.json (40 niches union + thiTruongXanh + bangXepHang + auditTong2026.xepHang)
-  const nxPath = path.join(ROOT, 'data-tabs', 'ngach-xanh.json');
+  // Register in data-tabs/ngach-xanh.json (canonical H01..H40 OR ngachMetaKho + summary tables)
   if (fs.existsSync(nxPath)) {
     const nxData = JSON.parse(fs.readFileSync(nxPath, 'utf8'));
     const nxList = Array.isArray(nxData.ngachXanh) ? nxData.ngachXanh : [];
-    const alreadyCovered = nxList.some(n => (n.skus || []).some(s => (typeof s === 'string' ? s : s?.sku || '').toUpperCase() === sku.toUpperCase()));
-    if (!alreadyCovered && nxList.length >= 30) {
-      logMsg(`Registering new SKU ${sku} into data-tabs/ngach-xanh.json (H30 & summary tables)...`, quiet);
-      const targetHang = 30; // H30 Everyday History EN / general system coverage
-      const rec = nxList[targetHang - 1];
-      rec.skus = rec.skus || [];
-      rec.skus.push(sku);
-      const newSkuCount = rec.skus.length;
-      const hangCode = `H${String(targetHang).padStart(2, '0')}`;
-
-      if (Array.isArray(nxData.heThong40Ngach)) {
-        const hRec = nxData.heThong40Ngach.find(x => x.code === hangCode || x.hang === targetHang);
-        if (hRec && Array.isArray(hRec.skus) && !hRec.skus.includes(sku)) {
-          hRec.skus.push(sku);
+    const metaList = Array.isArray(nxData.ngachMetaKho) ? nxData.ngachMetaKho : [];
+    const alreadyCovered = nxList.some(n => (n.skus || []).some(s => (typeof s === 'string' ? s : s?.sku || '').toUpperCase() === sku.toUpperCase()))
+      || metaList.some(m => (m.skus || []).some(s => (typeof s === 'string' ? s : s?.sku || '').toUpperCase() === sku.toUpperCase()));
+    if (!alreadyCovered) {
+      if (inferredHang && nxList[inferredHang - 1]) {
+        const targetHang = inferredHang;
+        const hangCode = `H${String(targetHang).padStart(2, '0')}`;
+        logMsg(`Registering new SKU ${sku} into data-tabs/ngach-xanh.json (${hangCode})...`, quiet);
+        const rec = nxList[targetHang - 1];
+        rec.skus = rec.skus || [];
+        rec.skus.push(sku);
+        if (registeredDocNum) {
+          rec.docs = rec.docs || [];
+          const docLabel = `TL-${String(registeredDocNum).padStart(3, '0')} (sop · ${sku}): Hồ sơ phân tích & SOP thực chiến: ${title} (README.md)`;
+          if (!rec.docs.includes(docLabel)) rec.docs.push(docLabel);
         }
-      }
+        const newSkuCount = rec.skus.length;
 
-      if (nxData.auditTong2026 && Array.isArray(nxData.auditTong2026.xepHang)) {
-        const xh = nxData.auditTong2026.xepHang.find(x => x.code === hangCode);
-        if (xh && typeof xh.lienKetVideo === 'string') {
-          xh.lienKetVideo = xh.lienKetVideo.replace(/\b\d+\s+SKU bài học/, `${newSkuCount} SKU bài học`);
-        }
-      }
-
-      if (nxData.thiTruongXanh && typeof nxData.thiTruongXanh === 'object') {
-        for (const k of Object.keys(nxData.thiTruongXanh)) {
-          nxData.thiTruongXanh[k] = String(nxData.thiTruongXanh[k]).replace(
-            /(Everyday History EN \(\d+\s+mẫu sống(?:\s*\[[^\]]*\])?,\s*)\d+(\s+SKU\))/,
-            `$1${newSkuCount}$2`
-          );
-        }
-      }
-
-      if (Array.isArray(nxData.bangXepHang)) {
-        nxData.bangXepHang = nxData.bangXepHang.map(row => {
-          if (String(row).includes(`(${hangCode}):`)) {
-            return String(row).replace(/,\s*\d+\s+SKU bài học,/, `, ${newSkuCount} SKU bài học,`);
+        if (Array.isArray(nxData.heThong40Ngach)) {
+          const hRec = nxData.heThong40Ngach.find(x => x.code === hangCode || x.hang === targetHang);
+          if (hRec && Array.isArray(hRec.skus) && !hRec.skus.includes(sku)) {
+            hRec.skus.push(sku);
           }
-          return row;
-        });
+        }
+        if (nxData.auditTong2026 && Array.isArray(nxData.auditTong2026.xepHang)) {
+          const xh = nxData.auditTong2026.xepHang.find(x => x.code === hangCode);
+          if (xh && typeof xh.lienKetVideo === 'string') {
+            xh.lienKetVideo = `${newSkuCount} SKU bài học · ${(rec.mauSach || []).length} mẫu sạch + ${(rec.mauPhu || []).length} mẫu phụ · ${(rec.docs || []).length} tài liệu`;
+          }
+        }
+        if (Array.isArray(nxData.bangXepHang)) {
+          nxData.bangXepHang = nxData.bangXepHang.map(row => {
+            if (String(row).includes(`(${hangCode}):`)) {
+              return String(row).replace(/,\s*\d+\s+SKU bài học,/, `, ${newSkuCount} SKU bài học,`);
+            }
+            return row;
+          });
+        }
+      } else {
+        const targetMeta = metaList.find(m => m.ngach === inferredMetaGroup) || metaList[0];
+        if (targetMeta) {
+          logMsg(`Registering new SKU ${sku} into data-tabs/ngach-xanh.json ngachMetaKho (${targetMeta.ngach})...`, quiet);
+          targetMeta.skus = targetMeta.skus || [];
+          if (!targetMeta.skus.includes(sku)) targetMeta.skus.push(sku);
+        }
       }
-
       fs.writeFileSync(nxPath, JSON.stringify(nxData, null, 2), 'utf8');
     }
   }

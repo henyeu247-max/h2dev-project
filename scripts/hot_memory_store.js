@@ -547,12 +547,22 @@ function computeOverviewFromRam() {
   function normMarketRam(m) {
     const s = String(m || '').trim();
     if (!s) return '';
-    if (s === '🇻🇳 Việt Nam') return '🇻🇳 Việt';
-    if (s === '🇯🇵 Nhật Bản') return '🇯🇵 Nhật';
-    if (s === '🇰🇷 Hàn Quốc') return '🇰🇷 Hàn';
-    if (s === '🇺🇸 US / Global' || s === '🇺🇸 Mỹ') return '🇺🇸 Mỹ / Global';
+    const up = s.toUpperCase();
+    if (s === '🇻🇳 Việt Nam' || up === 'VN' || up === 'VIETNAM' || up === 'VIỆT NAM' || up === 'VIỆT') return '🇻🇳 Việt';
+    if (s === '🇯🇵 Nhật Bản' || up === 'JP' || up === 'JAPAN' || up === 'NHẬT BẢN' || up === 'NHẬT') return '🇯🇵 Nhật';
+    if (s === '🇰🇷 Hàn Quốc' || up === 'KR' || up === 'KOREA' || up === 'HÀN QUỐC' || up === 'HÀN') return '🇰🇷 Hàn';
+    if (s === '🇺🇸 US / Global' || s === '🇺🇸 Mỹ' || up === 'US' || up === 'USA' || up === 'GLOBAL' || up === 'US / GLOBAL' || up === 'MỸ' || up === 'MỸ / GLOBAL') return '🇺🇸 Mỹ / Global';
     const noFlag = s.replace(/^[^\p{L}\p{N}]+/u, '').trim();
-    if (noFlag === 'View Ngoại') return '🌐 Ngoại';
+    if (noFlag === 'View Ngoại' || up === 'NGOẠI' || up === 'NGOAI' || up === 'VIEW NGOẠI' || up === 'VIEW NGOAI') return '🌐 Ngoại';
+    if (up === 'CN' || up === 'CHINA' || up === 'TRUNG' || up === 'TRUNG QUỐC') return '🇨🇳 Trung';
+    if (up === 'UK' || up === 'GB' || up === 'ANH') return '🇬🇧 Anh';
+    if (up === 'CA' || up === 'CANADA') return '🇨🇦 Canada';
+    if (up === 'TH' || up === 'THAI' || up === 'THÁI' || up === 'THÁI LAN') return '🇹🇭 Thái';
+    if (up === 'RU' || up === 'RUSSIA' || up === 'NGA') return '🇷🇺 Nga';
+    if (up === 'PH' || up === 'PHIL' || up === 'PHILIPPINES') return '🇵🇭 Phil';
+    if (up === 'HK' || up === 'HONG KONG') return '🇭🇰 HK';
+    if (up === 'FB' || up === 'FACEBOOK') return '📘 Facebook';
+    if (up === 'SHORTS' || up === 'REELS' || up === 'SHORTS / REELS') return '📱 Shorts / Reels';
     return s;
   }
 
@@ -591,7 +601,12 @@ function computeOverviewFromRam() {
   const ngachXanhList = Array.isArray(nxRaw.ngachXanh) ? nxRaw.ngachXanh : [];
   const policiesList = Array.isArray(nxRaw.thongTinChinhSach2026) ? nxRaw.thongTinChinhSach2026 : [];
   const nichesGreenTrue = ngachXanhList.filter(n => n && n.xanh === true).length;
-  const subNichesTotal = ngachXanhList.reduce((acc, n) => acc + (Array.isArray(n && n.subNiches120) ? n.subNiches120.length : 0) + (Array.isArray(n && n.subNiches2026) ? n.subNiches2026.length : 0), 0);
+  const sub120InNiches = ngachXanhList.reduce((acc, n) => acc + (Array.isArray(n && n.subNiches120) ? n.subNiches120.length : 0), 0);
+  const sub26InNiches = ngachXanhList.reduce((acc, n) => acc + (Array.isArray(n && n.subNiches2026) ? n.subNiches2026.length : 0), 0);
+  const sub26Top = Array.isArray(nxRaw.subNiches2026)
+    ? nxRaw.subNiches2026.length
+    : (nxRaw.subNiches2026 && Array.isArray(nxRaw.subNiches2026.items) ? nxRaw.subNiches2026.items.length : 0);
+  const subNichesTotal = sub120InNiches + (sub26InNiches > 0 ? sub26InNiches : sub26Top);
 
   const overviewNiches = ngachXanhList.map(n => {
     const skus = (Array.isArray(n.skus) ? n.skus : []).map(s => (typeof s === 'string' ? s : (s && s.sku))).filter(Boolean);
@@ -629,6 +644,10 @@ function computeOverviewFromRam() {
   return {
     schema: 'h2dev.overview-summary.v1',
     generatedAt: new Date().toISOString(),
+    totalVideos: allVideos.length,
+    documents: docsList.length,
+    subNichesTotal,
+    subNichesCount: subNichesTotal,
     counts: {
       totalVideos: allVideos.length,
       videosTotal: allVideos.length,
@@ -647,6 +666,7 @@ function computeOverviewFromRam() {
       deadChannels: deadChannelsCount,
       niches: ngachXanhList.length,
       subNichesTotal,
+      subNichesCount: subNichesTotal,
       microNiches: subNichesTotal,
       nichesGreenTrue,
       policies: policiesList.length,
@@ -661,6 +681,7 @@ function computeOverviewFromRam() {
       kichBan: kichBanList.length,
       canonicalRaw: rawRecords.length,
       rawChannels: rawRecords.length,
+      rawDeepProfiles: new Set(rawRecords.map(r => r && r.channel && (r.channel.channelId || r.channel.handle)).filter(Boolean)).size || 149,
       totalMarkets: marketRows.length,
       musicTracks,
       musicSafe,

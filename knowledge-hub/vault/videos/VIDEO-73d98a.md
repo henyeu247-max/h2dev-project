@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-73d98a&track=h2dev"
 # VIDEO-73d98a — Update key (ngách cực nhỏ) mới nhất 06-09-2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#89`)  
 > - **Ngách nội dung (Niche):** [[niches/drama-cam-dong-duong-lao|Drama Cảm Động & Dưỡng Lão]]  
 > - **Thị trường:** 🇯🇵 Nhật · 🇰🇷 Hàn | **Thời lượng:** `9:19` | **Ngày đăng:** `2026-09-06`  

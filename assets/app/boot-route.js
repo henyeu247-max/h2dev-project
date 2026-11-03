@@ -8,7 +8,7 @@
   try {
     var p = location.pathname.replace(/\/+$/, "");
     var q = new URLSearchParams(location.search);
-    var isCl = /^\/chienluoc$/i.test(p) || ((p === "" || /^\/index\.html$/i.test(p)) && q.get("tab") === "chienluoc");
+    var isCl = /^\/chien-?luoc$/i.test(p) || ((p === "" || /^\/index\.html$/i.test(p)) && /^chien-?luoc$/i.test(q.get("tab") || ""));
     if (!isCl) return;
     var tb = document.getElementById("vd-topbar");
     var sub = document.getElementById("topbar-subnav");

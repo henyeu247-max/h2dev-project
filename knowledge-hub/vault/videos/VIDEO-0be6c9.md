@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-0be6c9&track=h2dev"
 # VIDEO-0be6c9 — Kinh khủng với ngách cực nhỏ view Việt - kênh mới 8 video hơn 3 triệu view - bán content ngách người cao tuổi
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#93`)  
 > - **Ngách nội dung (Niche):** [[niches/nha-may-san-xuat-co-khi-cong-nghiep|Nhà Máy Sản Xuất & Cơ Khí Công Nghiệp]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `6:02` | **Ngày đăng:** `2026-09-21`  

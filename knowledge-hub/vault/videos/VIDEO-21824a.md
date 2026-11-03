@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-21824a&track=h2dev"
 # VIDEO-21824a — Bật kiếm tiền kênh học viên Pro
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M01|H2DEV-M01 — Xử lý & Kháng lỗi kênh YouTube]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/ton-giao-giai-nghia-kinh-thanh|Tôn giáo & Giải nghĩa Kinh Thánh]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `3:02` | **Ngày đăng:** `2026-06-06`  

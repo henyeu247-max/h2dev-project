@@ -300,9 +300,9 @@ for (const [field, expected] of Object.entries(liveScope)) {
 // historical snapshots opt-in so stale current counts cannot silently return.
 for (const [index, meta] of array(ngachXanh.ngachMetaKho).entries()) {
   const evidence = typeof meta?.evidence === 'string' ? meta.evidence : '';
-  const videoDenom = new RegExp(`/${EXPECTED_VIDEOS}\\s+video\\b`, 'i');
+  const videoDenom = new RegExp(`/(?:${EXPECTED_VIDEOS}|${C.totalSystemVideos})\\s+video\\b`, 'i');
   if (/(?:^|\/)\d+\s+video\b/i.test(evidence) && !videoDenom.test(evidence) && meta?.historicalSnapshot !== true) {
-    errors.push(`data-tabs/ngach-xanh.json: ngachMetaKho[${index}].evidence must use current /${EXPECTED_VIDEOS} video denominator`);
+    errors.push(`data-tabs/ngach-xanh.json: ngachMetaKho[${index}].evidence must use current /${C.totalSystemVideos} (or /${EXPECTED_VIDEOS}) video denominator`);
   }
 }
 
@@ -377,16 +377,25 @@ for (const [index, meta] of array(ngachXanh.ngachMetaKho).entries()) {
       }
     }
   }
-  if (coveredNicheSkus.size !== allSystemSkus.size) {
-    errors.push(`data-tabs/ngach-xanh.json: union skus cua 40 ngach=${coveredNicheSkus.size}/${allSystemSkus.size}`);
+  const h30Skus = nxList[29] ? array(nxList[29].skus) : [];
+  if (h30Skus.length > 30) {
+    errors.push(`data-tabs/ngach-xanh.json: H30 (Everyday History EN) dang chua ${h30Skus.length} SKU (> 30) — nghi van do don rac fallback vao H30 thay vi phan loai dung ngach / ngachMetaKho`);
   }
   for (const [idx, m] of array(ngachXanh.ngachMetaKho).entries()) {
     const skus = array(m.skus).map(s => typeof s === 'string' ? s : (s && s.sku)).filter(Boolean);
+    if (skus.length === 0) {
+      errors.push(`data-tabs/ngach-xanh.json: ngachMetaKho[${idx}] (${m.ngach}) co skus rong`);
+    }
     for (const s of skus) {
       if (!allSystemSkus.has(s)) {
         errors.push(`data-tabs/ngach-xanh.json: ngachMetaKho[${idx}] (${m.ngach}) chua SKU la: ${s}`);
+      } else {
+        coveredNicheSkus.add(s);
       }
     }
+  }
+  if (coveredNicheSkus.size !== allSystemSkus.size) {
+    errors.push(`data-tabs/ngach-xanh.json: union skus cua (40 ngach + ngachMetaKho)=${coveredNicheSkus.size}/${allSystemSkus.size}`);
   }
 
   // M7: Kiểm tra thiTruongXanh khớp 100% số mẫu sống và số SKU thật
@@ -755,19 +764,35 @@ try {
 // Guard 3-Track (H2DEV + HUAN + DGMD) & edit_sop schema + insight.json sync + music_catalog safeForYPP + file:/// guard + tai-lieu-full kind guard
 {
   const KEY_NAME_RE = /^(primary|additional|trim_start|trim_end|emphasis|b_roll|voice|visual|music|subtitles|trim|speed_bgm|sub|footage|captions|pacing|music_sfx|avoid|cuts|trim_start_seconds|trim_end_seconds)$/i;
-  const expH2dev = C.videos ?? 153;
-  const expHuan = C.videosHuan ?? 140;
-  const expDgmd = C.videosDgmd ?? 52;
+  const expH2dev = C.videos;
+  const expHuan = C.videosHuan;
+  const expDgmd = C.videosDgmd;
   const trackFiles = [
-    { name: 'h2dev', ins: 'data/video_insights.json', vids: 'data-tabs/videos.json', expected: expH2dev },
-    { name: 'huan', ins: 'data/video_insights_huan.json', vids: 'data/videos_huan.json', expected: expHuan },
-    { name: 'dgmd', ins: 'data/video_insights_dgmd.json', vids: 'data/videos_dgmd.json', expected: expDgmd },
+    { name: 'h2dev', ins: 'data/video_insights.json', vids: 'data-tabs/videos.json', mods: 'data/modules.json', expected: expH2dev },
+    { name: 'huan', ins: 'data/video_insights_huan.json', vids: 'data/videos_huan.json', mods: 'data/modules_huan.json', expected: expHuan },
+    { name: 'dgmd', ins: 'data/video_insights_dgmd.json', vids: 'data/videos_dgmd.json', mods: 'data/modules_dgmd.json', expected: expDgmd },
   ];
+  const REQ_VID_FIELDS = ['sku', 'title', 'module_id', 'module_title', 'category_name', 'size', 'size_mb', 'duration', 'duration_sec', 'width', 'height', 'resolution', 'niche', 'contentNiche', 'niche_primary', 'nicheCode', 'nicheCodes', 'published_at', 'docs', 'docsCount'];
   for (const tf of trackFiles) {
     const insObj = readJson(tf.ins) || {};
     const vidArr = readJson(tf.vids) || [];
+    const modObj = readJson(tf.mods) || {};
     if (Object.keys(insObj).length !== tf.expected || vidArr.length !== tf.expected) {
       errors.push(`Track ${tf.name}: kỳ vọng ${tf.expected} SKU, nhưng ${tf.ins}=${Object.keys(insObj).length}, ${tf.vids}=${vidArr.length}`);
+    }
+    for (const v of vidArr) {
+      for (const f of REQ_VID_FIELDS) {
+        if (v[f] === undefined || v[f] === null || v[f] === '' || (Array.isArray(v[f]) && f === 'nicheCodes' && v[f].length === 0)) {
+          errors.push(`${tf.vids} [${v.sku}]: thiếu trường bắt buộc "${f}" (chuẩn hóa schema /video)`);
+        }
+      }
+    }
+    for (const m of array(modObj.modules)) {
+      const expectedModLen = array(m.items || m.videos).length;
+      const matchedInVids = vidArr.filter(v => (v.module_title || v.category_name) === m.title).length;
+      if (matchedInVids !== expectedModLen) {
+        errors.push(`${tf.vids} vs ${tf.mods} [${m.id} — ${m.title}]: số bài khớp module_title trên /video (${matchedInVids}) != số bài trong module (${expectedModLen})`);
+      }
     }
     for (const [sku, rec] of Object.entries(insObj)) {
       const es = rec.edit_sop;
@@ -939,7 +964,7 @@ if (errors.length) {
 } else {
   console.log('Validation passed.');
   const huanCount = liveCounts.videosHuan ?? 140;
-  const dgmdCount = liveCounts.videosDgmd ?? 52;
+  const dgmdCount = liveCounts.videosDgmd ?? 53;
   const sysTotal = liveCounts.totalSystemVideos ?? (videos.length + huanCount + dgmdCount);
   console.log(`Videos: ${sysTotal} (H2DEV ${videos.length} + HUAN ${huanCount} + DGMD ${dgmdCount}); channels: ${channels.length}; kich-ban: ${scripts.length}; tai-lieu-full: ${docsMerged.length}; thumbnails: ${thumbs.length}; video directories: ${videoDirs.length}`);
   if (warnings.length) {

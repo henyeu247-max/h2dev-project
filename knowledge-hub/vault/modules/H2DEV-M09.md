@@ -7,7 +7,7 @@ lesson_count: 1
 
 # Module H2DEV-M09 — Module 7 — Nhân bản thị trường & Xây dựng hệ thống kênh
 
-- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]
 - **Tổng số bài giảng:** `1` video
 - **Mô tả:** VIP — Tư duy nhân bản thị trường + hướng dẫn từ A-Z cách làm edit và thumb.
 

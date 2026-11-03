@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-00136f&track=h2dev"
 # VIDEO-00136f — HƯỚNG DẪN FIX / ADD QUYỀN CHO TK GOOGLE ADSENSE KHÔNG BỊ DIE (MẤT) KHI LỠ BỊ QUÉT
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M02|H2DEV-M02 — Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)]] (Bài `#12`)  
 > - **Ngách nội dung (Niche):** [[niches/quan-tri-adsense-bat-kiem-tien|Quản Trị AdSense & Bật Kiếm Tiền]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `4:39` | **Ngày đăng:** `2025-12-18`  

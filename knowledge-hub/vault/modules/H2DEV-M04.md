@@ -7,7 +7,7 @@ lesson_count: 4
 
 # Module H2DEV-M04 — Hướng dẫn quy trình dùng Claude AI làm YouTuBe
 
-- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]
 - **Tổng số bài giảng:** `4` video
 - **Mô tả:** Nên dùng bản web hay app? Train prompt Claude cho bất kỳ ngách nào, đóng gói Skill.
 

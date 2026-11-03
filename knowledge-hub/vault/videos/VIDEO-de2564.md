@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-de2564&track=h2dev"
 # VIDEO-de2564 — NGÁCH NHỎ STORIES THỊ TRƯỜNG NHẬT BẢN
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#71`)  
 > - **Ngách nội dung (Niche):** [[niches/drama-gia-dinh-xa-hoi|Drama Gia Đình & Xã Hội]]  
 > - **Thị trường:** 🇯🇵 Nhật | **Thời lượng:** `3:43` | **Ngày đăng:** `2025-11-22`  

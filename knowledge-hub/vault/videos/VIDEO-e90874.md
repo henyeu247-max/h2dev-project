@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-e90874&track=h2dev"
 # VIDEO-e90874 — Tặng Prompt Master Tự Nhân Bản Sang Mọi Thị Trường (bất kỳ mong muốn) | Hướng Dẫn Thực Chiến
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M04|H2DEV-M04 — Hướng dẫn quy trình dùng Claude AI làm YouTuBe]] (Bài `#04`)  
 > - **Ngách nội dung (Niche):** [[niches/nhan-ban-thi-truong-da-quoc-gia|Nhân Bản Thị Trường Đa Quốc Gia]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `18:34` | **Ngày đăng:** `2026-07-06`  

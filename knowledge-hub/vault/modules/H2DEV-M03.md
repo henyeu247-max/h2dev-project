@@ -7,7 +7,7 @@ lesson_count: 1
 
 # Module H2DEV-M03 — Module 2 — Tự tìm Key/ Ngách & Phân tích đối thủ
 
-- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]
 - **Tổng số bài giảng:** `1` video
 - **Mô tả:** Hướng dẫn tư duy tìm, lọc Key YouTube View Ngoại, xác định Key Trends, Key Ngon.
 

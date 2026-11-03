@@ -12369,5 +12369,85 @@
     "verified_expert_summary": true,
     "claims_require_external_verification": false,
     "source_transcript": "video/VIDEO-2d1a38/transcript.txt"
+  },
+  "VIDEO-acef2c": {
+    "sku": "VIDEO-acef2c",
+    "title": "Ngách làm bán content Thị trường Việt và Nhật  | Update 03-11-2026",
+    "actual_topic": "Khai thác ngách bán content Drama gia đình Việt Nam ghép B-roll tự quay & mở rộng ngách hoạt hình người que Nhật Bản, Hoa Kỳ đa nền tảng (YouTube, TikTok, Fanpage)",
+    "category_group": "ban_content",
+    "niche_primary": "Bán Content Drama Gia Đình & Người Que Đa Thị Trường (Việt - Nhật - US)",
+    "target_market": "Việt Nam, Nhật Bản & Hoa Kỳ",
+    "market_code": "VN_JP_US",
+    "tools_mentioned": [
+      "Claude",
+      "YouTube",
+      "TikTok"
+    ],
+    "channels_mentioned": [],
+    "key_timestamps": [
+      {
+        "time": "00:00",
+        "seconds": 0,
+        "label": "Giới thiệu ngách bán content Drama gia đình thị trường Việt Nam"
+      },
+      {
+        "time": "00:22",
+        "seconds": 22,
+        "label": "Phân tích chủ đề ngoại tình, mẹ chồng nàng dâu & giọng đọc AI clone"
+      },
+      {
+        "time": "01:02",
+        "seconds": 62,
+        "label": "Kỹ thuật tự quay B-roll đời thật kết hợp video stock tránh lỗi Reused Content"
+      },
+      {
+        "time": "01:55",
+        "seconds": 115,
+        "label": "Phương pháp tìm lọc ngách nhỏ qua cột video đề xuất bên phải YouTube"
+      },
+      {
+        "time": "02:24",
+        "seconds": 144,
+        "label": "Khảo sát các kênh đối thủ ngách hoạt hình người que tại Nhật Bản"
+      },
+      {
+        "time": "04:43",
+        "seconds": 283,
+        "label": "Đa nền tảng tỷ lệ dọc 9:16 đăng TikTok và Fanpage từ video Claude AI"
+      },
+      {
+        "time": "05:42",
+        "seconds": 342,
+        "label": "Phân tích kênh người que thị trường US và cách train Claude học phong cách đối thủ"
+      }
+    ],
+    "key_takeaways": [
+      "Ngách bán content Drama gia đình (mẹ chồng nàng dâu, hôn nhân) tại Việt Nam vẫn giữ sức hút lớn khi đầu tư sâu vào kịch bản và giọng đọc AI clone tự nhiên.",
+      "Kết hợp cảnh tự quay bằng điện thoại ở phần mở đầu với nguồn video stock miễn phí giúp phòng tránh hiệu quả lỗi sử dụng lại nội dung (Reused Content).",
+      "Xem nhiều video cùng chủ đề để thuật toán đề xuất cột bên phải YouTube tự động lọc ra các kênh đối thủ và ngách nhỏ tiềm năng.",
+      "Tận dụng tốc độ dựng video tự động bằng Claude AI để xuất thêm định dạng dọc 9:16 phát triển đồng thời trên TikTok và Fanpage kiếm tiền.",
+      "Có thể nhân bản các kênh người que thị trường Nhật Bản và Hoa Kỳ về Việt Nam bằng cách nạp kịch bản mẫu của đối thủ vào Claude để huấn luyện phong cách."
+    ],
+    "edit_sop": {
+      "primary": "Quy trình sản xuất video bán content Drama gia đình kết hợp B-roll tự quay và nhân bản ngách người que đa nền tảng bằng Claude AI",
+      "additional": [
+        "Lọc kênh đối thủ qua cột đề xuất bên phải YouTube, chọn chủ đề Drama gia đình hoặc người que có lượng xem đột biến để xây dựng kịch bản và tạo giọng đọc AI clone.",
+        "Tự quay các cảnh sinh hoạt thực tế ghép vào phần đầu video kết hợp nguồn video stock cho phần thân bài nhằm triệt tiêu rủi ro quét lỗi nội dung AI và lỗi sử dụng lại nội dung.",
+        "Sử dụng bộ công cụ Claude AI dựng video tự động ở cả tỷ lệ ngang 16:9 cho YouTube và tỷ lệ dọc 9:16 để đăng chéo lên TikTok cùng Fanpage."
+      ]
+    },
+    "sop_steps": [
+      "Lọc kênh đối thủ qua cột đề xuất bên phải YouTube, chọn chủ đề Drama gia đình hoặc người que có lượng xem đột biến để xây dựng kịch bản và tạo giọng đọc AI clone.",
+      "Tự quay các cảnh sinh hoạt thực tế ghép vào phần đầu video kết hợp nguồn video stock cho phần thân bài nhằm triệt tiêu rủi ro quét lỗi nội dung AI và lỗi sử dụng lại nội dung.",
+      "Sử dụng bộ công cụ Claude AI dựng video tự động ở cả tỷ lệ ngang 16:9 cho YouTube và tỷ lệ dọc 9:16 để đăng chéo lên TikTok cùng Fanpage."
+    ],
+    "avoid_flags": [
+      "Không ghép hình ảnh AI hoặc video AI vào ngách bán content Drama đời sống vì rất dễ bị YouTube đánh lỗi nội dung AI kém chất lượng và tắt kiếm tiền.",
+      "Không đánh giá kênh đối thủ tắt kiếm tiền chỉ vì họ ẩn nút Tham gia hội viên (Join), vì việc bật hội viên hoàn toàn tùy thuộc lựa chọn của chủ kênh.",
+      "Không đặt tiêu đề giật tít quá đà gây phản cảm khi kênh đã lên view cao để hạn chế rủi ro bị hệ thống quét kiểm duyệt."
+    ],
+    "source_transcript": "video/VIDEO-acef2c/transcript.txt",
+    "accuracy_status": "GROUNDED_VERIFIED",
+    "visual_audio_checked": true
   }
 }

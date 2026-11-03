@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-d84a78&track=h2dev"
 # VIDEO-d84a78 — HỢP TÁC LÀM KÊNH YOUTUBE ĂN CHIA DOANH THU - VÀ HƯỚNG DẪN XEM VIDEO ĐÚNG QUY TRÌNH CHUẨN
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M02|H2DEV-M02 — Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/hop-tac-phat-trien-phat-phap-han-quoc|Hợp tác phát triển & Phật pháp Hàn Quốc]]  
 > - **Thị trường:** 🇰🇷 Hàn · 🇻🇳 Việt | **Thời lượng:** `7:54` | **Ngày đăng:** `2026-03-15`  

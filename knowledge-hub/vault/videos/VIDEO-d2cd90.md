@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-d2cd90&track=h2dev"
 # VIDEO-d2cd90 — Update 5 ngách nhỏ bán content ngoại mới nhất
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#09`)  
 > - **Ngách nội dung (Niche):** [[niches/chua-lanh-tre-hoa-nhat-ban|Chữa Lành & Trẻ Hóa Nhật Bản]]  
 > - **Thị trường:** 🇯🇵 Nhật | **Thời lượng:** `10:06` | **Ngày đăng:** `2026-07-16`  

@@ -7,7 +7,7 @@ lesson_count: 4
 
 # Module H2DEV-M11 — Zoom — Quy trình xây kênh từ A–Z (2026-09)
 
-- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]
 - **Tổng số bài giảng:** `4` video
 - **Mô tả:** 4 buổi Zoom thực chiến: nền tảng môi trường, chiến lược kênh, quy trình tool, AdSense & kháng lỗi.
 

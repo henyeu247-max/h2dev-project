@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-46c57e&track=h2dev"
 # VIDEO-46c57e — KHÁNG LỖI SỬ DỤNG LẠI NỘI DUNG - TRÙNG LẶP NỘI DUNG MỚI NHẤT 2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M01|H2DEV-M01 — Xử lý & Kháng lỗi kênh YouTube]] (Bài `#04`)  
 > - **Ngách nội dung (Niche):** [[niches/khang-nghi-chinh-sach-youtube|Kháng nghị & Chính sách YouTube]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `2:56` | **Ngày đăng:** `2026-05-08`  

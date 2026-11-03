@@ -7,7 +7,7 @@ lesson_count: 3
 
 # Module H2DEV-M05 — Module 3 — Tự train Prompt bất kỳ chủ đề mình muốn
 
-- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]
 - **Tổng số bài giảng:** `3` video
 - **Mô tả:** Tự train prompt + phân tích kênh đối thủ + share ngách nhỏ sức khỏe thị trường Hàn.
 

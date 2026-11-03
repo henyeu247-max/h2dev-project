@@ -16,9 +16,9 @@
 > kiểm tra đồng bộ bằng `node scripts/sync-counts.js --check`). Các file JSON dữ liệu gốc tại `data-tabs/`.
 
 - **Tập tin chân lý số liệu:** `data/counts-manifest.json` (tự động cập nhật qua `node scripts/sync-counts.js`).
-- **Tổng kho bài học (`videos.json`):** **153 bài** (149 Video bài giảng PRO + 4 Buổi Zoom Masterclass; 28 Free · 125 Pro) — thuộc hệ thống **97yo-dev** tổng **346 bài học** (153 H2DEV + 140 Huân Academy + 53 DGMD; 36 module).
-  → nguồn: `data-tabs/videos.json` (153) + `data/videos_huan.json` (140) + `data/videos_dgmd.json` (53) = **346** bài học toàn hệ thống.
-- **Kiểm định media toàn vẹn:** **346/346 file** mp4/webm tồn tại (153 H2DEV + 140 Huân + 53 DGMD), 0 file 0 byte (`counts-manifest.mediaFiles`, dung lượng ~92.62 GB / 86.26 GiB). `audit_videos_v2.py` (đo lại 2026-11-02): **153/153 H2DEV + 193/193 Huân & DGMD clean · 0 issues · 0 standards_gaps**. Lệnh đo: `py -3 scripts/audit_videos_v2.py`.
+- **Tổng kho bài học (`videos.json`):** **154 bài** (150 Video bài giảng PRO + 4 Buổi Zoom Masterclass; 28 Free · 126 Pro) — thuộc hệ thống **97yo-dev** tổng **347 bài học** (154 H2DEV + 140 Huân Academy + 53 DGMD; 36 module).
+  → nguồn: `data-tabs/videos.json` (154) + `data/videos_huan.json` (140) + `data/videos_dgmd.json` (53) = **347** bài học toàn hệ thống.
+- **Kiểm định media toàn vẹn:** **347/347 file** mp4/webm tồn tại (154 H2DEV + 140 Huân + 53 DGMD), 0 file 0 byte (`counts-manifest.mediaFiles`, dung lượng ~92.73 GB / 86.36 GiB). `audit_videos_v2.py` (đo lại 2026-11-02): **154/154 H2DEV + 193/193 Huân & DGMD clean · 0 issues · 0 standards_gaps**. Lệnh đo: `py -3 scripts/audit_videos_v2.py`.
   - `VIDEO-f59aa7`: ĐÃ PHỤC HỒI đủ tiếng — giải mã Widevine CENC (pipeline `scripts/download_full_drm_audio.cjs` + `scripts/get_drm_key.py`), 108.5 MB, mean_volume -22.0 dB; phụ đề 397 đoạn phủ toàn thời lượng 43:08.
   - `VIDEO-8e0275`: video thao tác màn hình KHÔNG micro từ tác giả gốc → `content_kind=silent_screen_tutorial`, không phải lỗi.
   - Còn **53 review_flags** kiểm tay (không phải data hỏng, `0 standards_gaps`): S9 32 (xác nhận hình/tiếng bằng heuristic) · A10 9 (thumbnail ≠ nội dung theo vision) · S6 8 (takeaway neo transcript thấp) · A8d 8 (cờ kiểm phụ đề thủ công). Hàng đợi: `data/media-review-queue.json` (36 open · 5 resolved).
@@ -27,15 +27,15 @@
   → nguồn: `data-tabs/kenh-mau.json` (1076/1076 có `ngay_do`; 987 sống · 89 dead = 75 DIE 404 + 14 kênh rỗng; chạy `scripts/probe-kenh-mau.py` rồi `scripts/classify-kenh-mau.py`, bằng chứng `_audit/20261014-kenh-mau-probe.jsonl` & `data/ngachxanh_handle_probes.json`). Kênh dead = 404 / bị chấm dứt / kênh rỗng 0 video; GIỮ NGUYÊN trong kho làm case study dẫn chứng bài học, không xóa.
 - **Kênh mẫu canonical (`raw-kenh-mau.json`):** **156 hồ sơ** (149 kênh unique, 12 nhóm lớn + 3 nhóm đặc nhiệm).
   → nguồn: `counts-manifest.canonicalRaw` / `canonicalRawUniqueChannels`.
-- **Kho tài liệu & Master Prompts (`tai-lieu-full.json`):** **597 tài liệu**.
+- **Kho tài liệu & Master Prompts (`tai-lieu-full.json`):** **598 tài liệu**.
   → nguồn: `data-tabs/tai-lieu-full.json` (100% có `kind`, `contentNiche`, `branch`, `nicheCode`; xem `classifyPrompt` trong `assets/app/tabs/content.js`).
 - **Ma trận ngách YouTube (`ngach-xanh.json`):** **40 ngách** (`xanh:true` **16** ngách).
-  → nguồn: `data-tabs/ngach-xanh.json` (40 ngách chuẩn `H01..H40` phủ 346/346 SKU toàn hệ thống).
+  → nguồn: `data-tabs/ngach-xanh.json` (40 ngách chuẩn `H01..H40` phủ 347/347 SKU toàn hệ thống).
 - **Kho nhạc nền:** **49 tracks** đã audit Gemini Multimodal & FFprobe (36 SAFE YPP · 9 REVIEW · 4 COPYRIGHTED cấm dùng).
   → nguồn: rule workspace SSoT + `data/music_catalog.json`. *(Số cũ ghi 38 là SAI — đã sửa 2026-09-24.)*
-- **Master SQLite Database:** **3.560 entries** FTS5 trong `h2dev_master.db`.
-  → nguồn: đo trực tiếp `SELECT COUNT(*) FROM search_fts` trên VPS = **3560**. *(Số cũ ghi 2.003 là SAI — đã sửa 2026-09-24.)*
-  Bảng kèm theo: `lessons` 346 · `lesson_timestamps` 2534 · `competitor_channels` 1080 · `competitor_top_videos` 1421 · `documents` 597 · `reup_sources` 52 · `niches` 40 · `policies` 12 · `checklists` 12.
+- **Master SQLite Database:** **6.286 entries** FTS5 trong `h2dev_master.db`.
+  → nguồn: đo trực tiếp `SELECT COUNT(*) FROM search_fts` trên VPS = **6286**. *(Số cũ ghi 2.003 là SAI — đã sửa 2026-09-24.)*
+  Bảng kèm theo: `lessons` 347 · `lesson_timestamps` 2541 · `competitor_channels` 1080 · `competitor_top_videos` 1421 · `documents` 598 · `reup_sources` 52 · `niches` 40 · `policies` 12 · `checklists` 12.
 
 ### 1.1. NHẬT KÝ HIỆU CHỈNH SỐ LIỆU (2026-09-24)
 
@@ -108,6 +108,6 @@ Phát hiện khi audit `gate-icons.js` chặng P3.6: 3 số trong file này **l�
    - Đủ 5 bước Kỹ thuật Edit & SOP né quét AI chi tiết (> 500 – 1.385 ký tự), không có chuỗi fallback ngắn.
    - $\ge 3$ Rào chắn phòng thủ & Tránh gậy bản quyền (Avoid Flags).
 4. **Đồng bộ Master SQLite WAL & Nexus Dual-Layer Graph:**
-   - Master database `data/h2dev_master.db` đã rebuild đầy đủ **346 lessons** (153 H2DEV · 140 Huân · 53 DGMD), **2.534 lesson timestamps**, **1.080 competitor channels**, **1.421 top videos**, **597 documents**, **52 reup sources**, **40 niches**, **12 policies**, **12 checklists** và **3.560 FTS5 search index entries**.
-   - Nexus Dual-Layer Graph (`data/h2dev_knowledge_graph.db` + `data/knowledge_graph.json` + Obsidian Vault `knowledge-hub/vault/` + Web Explorer `/graph`) đã lập chỉ mục toàn diện **4.243 nodes** và **8.607 edges** qua 2 lớp (2.880 Knowledge nodes + 1.363 Infra nodes trên 17 dự án).
+   - Master database `data/h2dev_master.db` đã rebuild đầy đủ **347 lessons** (154 H2DEV · 140 Huân · 53 DGMD), **2.541 lesson timestamps**, **1.080 competitor channels**, **1.421 top videos**, **598 documents**, **52 reup sources**, **40 niches**, **12 policies**, **12 checklists** và **6.286 FTS5 search index entries**.
+   - Nexus Dual-Layer Graph (`data/h2dev_knowledge_graph.db` + `data/knowledge_graph.json` + Obsidian Vault `knowledge-hub/vault/` + Web Explorer `/graph`) đã lập chỉ mục toàn diện **4.246 nodes** và **8.360 edges** qua 2 lớp (2.883 Knowledge nodes + 1.363 Infra nodes trên 17 dự án).
 5. **Quality Gates:** Toàn bộ Core Gates (`validate-project.js`, `sync-counts.js --check`, `gate-icons.js`, `gate-typography.js`, `gate-p1.js`, `gate-p2.js`, `gate-shell.js`, `check-ui-classes.js`, `guard-no-inline-onclick.js`) đều **PASS 100%**.

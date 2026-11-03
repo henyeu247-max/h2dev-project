@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-a59a5e&track=h2dev"
 # VIDEO-a59a5e — Update share 2 ngách mới kênh mới hoàn toàn | Mới nhất 08-10-2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#96`)  
 > - **Ngách nội dung (Niche):** [[niches/kiem-soat-sinh-hoc-giai-tri-tong-hop|Kiểm Soát Sinh Học & Giải Trí Tổng Hợp]]  
 > - **Thị trường:** 🇰🇷 Hàn | **Thời lượng:** `7:45` | **Ngày đăng:** `2026-10-08`  

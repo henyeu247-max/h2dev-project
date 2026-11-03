@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-5d54d0&track=h2dev"
 # VIDEO-5d54d0 — Thực chiến hướng dẫn train Claude làm prompt bám theo kịch bản đối thủ xào nấu cho bất kỳ chủ đề (ngách) nào muốn - Quy trình chuẩn bán content dành cho ngách bám theo 70% kịch bản đối thủ
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M04|H2DEV-M04 — Hướng dẫn quy trình dùng Claude AI làm YouTuBe]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/ban-content-triet-ly-nhat-ban|Bán Content Triết Lý Nhật Bản]]  
 > - **Thị trường:** 🇻🇳 Việt · 🇨🇳 Trung | **Thời lượng:** `1:00:59` | **Ngày đăng:** `2026-05-23`  

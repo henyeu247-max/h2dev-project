@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-3e943c&track=h2dev"
 # VIDEO-3e943c — Nên dùng bản web hay app? và giải thích nên dùng gói nào của Claude AI
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M04|H2DEV-M04 — Hướng dẫn quy trình dùng Claude AI làm YouTuBe]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/ky-thuat-ai-ha-tang-cong-cu|Kỹ Thuật AI & Hạ Tầng Công Cụ]]  
 > - **Thị trường:** 🌐 Ngoại | **Thời lượng:** `4:42` | **Ngày đăng:** `2026-05-16`  

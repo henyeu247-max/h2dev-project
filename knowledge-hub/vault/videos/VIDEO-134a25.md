@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-134a25&track=h2dev"
 # VIDEO-134a25 — NGÁCH THỊ TRƯỜNG NHẬT BẢN TRENDS CỰC CAO - RPM 6-8
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#62`)  
 > - **Ngách nội dung (Niche):** [[niches/triet-ly-song-dao-lam-nguoi|Triết Lý Sống & Đạo Làm Người]]  
 > - **Thị trường:** 🇯🇵 Nhật | **Thời lượng:** `5:38` | **Ngày đăng:** `2025-12-19`  

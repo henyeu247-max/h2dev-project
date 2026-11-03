@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-1b4be3&track=h2dev"
 # VIDEO-1b4be3 — HƯỚNG DẪN CÁCH EDIT VIDEO HẠN CHẾ TRÁNH BỊ YOUTUBE QUÉT VÌ NỘI DUNG KHÔNG TRUNG THỰC / CÁC VẤN ĐỀ LIÊN QUAN ĐẾN AI + SHARE KEY NGÁCH THỊ TRƯỜNG NHẬT BẢN - VIỆT
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M08|H2DEV-M08 — Module 6 — Mẹo & Thủ thuật khác phục lỗi gãy view và chống die kênh (TÚT - TRICK)]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/drama-gia-dinh-xa-hoi|Drama Gia Đình & Xã Hội]]  
 > - **Thị trường:** 🇯🇵 Nhật · 🇻🇳 Việt | **Thời lượng:** `11:55` | **Ngày đăng:** `2025-12-27`  

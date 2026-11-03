@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-a7bfd0&track=h2dev"
 # VIDEO-a7bfd0 — Update ngách mới và khám kênh + giải thích một số lỗi tránh bị 0 view, lẹt đẹt, không lên được
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#06`)  
 > - **Ngách nội dung (Niche):** [[niches/kham-kenh-khac-phuc-loi-0-view|Khám Kênh & Khắc Phục Lỗi 0 View]]  
 > - **Thị trường:** 🇰🇷 Hàn · 🇻🇳 Việt | **Thời lượng:** `10:28` | **Ngày đăng:** `2026-07-29`  

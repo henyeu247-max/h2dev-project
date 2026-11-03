@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-6283a6&track=h2dev"
 # VIDEO-6283a6 — Update free tool tạo giọng đọc tiếng Việt (Ngọc Huyền) vào tool dịch Phụ đề SRT
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M10|H2DEV-M10 — Module 8 — Công cụ & Tài nguyên hỗ trợ]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/cong-cu-tu-dong-hoa-san-xuat-h2dev|Công Cụ & Tự Động Hóa Sản Xuất H2DEV]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `2:53` | **Ngày đăng:** `2026-05-11`  

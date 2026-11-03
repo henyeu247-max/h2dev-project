@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-9a4ddc&track=h2dev"
 # VIDEO-9a4ddc — TÚT/ TRICK (mẹo) test bản quyền khi reup - bán content dạng nguồn từ douyin sang youtube
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M08|H2DEV-M08 — Module 6 — Mẹo & Thủ thuật khác phục lỗi gãy view và chống die kênh (TÚT - TRICK)]] (Bài `#04`)  
 > - **Ngách nội dung (Niche):** [[niches/khang-ban-quyen-xu-ly-loi-ga|Kháng Bản Quyền & Xử Lý Lỗi GA]]  
 > - **Thị trường:** 🇻🇳 Việt · 🇨🇳 Trung · 🌐 Ngoại | **Thời lượng:** `10:46` | **Ngày đăng:** `2025-08-22`  

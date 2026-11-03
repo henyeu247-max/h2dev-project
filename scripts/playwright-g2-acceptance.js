@@ -136,24 +136,35 @@ async function main() {
     await page.waitForTimeout(400);
     const nxAudit = await page.evaluate(() => {
       const cards = Array.from(document.querySelectorAll('.niche-card'));
-      const docLinks = Array.from(document.querySelectorAll('.niche-card [data-open-tab="tai-lieu"]'));
+      const docLinks = Array.from(document.querySelectorAll('.niche-card a[data-open-tab="tai-lieu"][data-doc-did]'));
+      const docBtns = Array.from(document.querySelectorAll('.niche-card button[data-open-tab="tai-lieu"][data-doc-q]'));
       const kenhBtns = Array.from(document.querySelectorAll('.niche-card [data-open-tab="kenh-mau"][data-kenh-niche]'));
+      const branchBtns = Array.from(document.querySelectorAll('[data-nx-branch]'));
+      const sortBtns = Array.from(document.querySelectorAll('[data-nx-sort]'));
       const marketBtns = Array.from(document.querySelectorAll('[data-nx-market]')).filter(b => b.getAttribute('data-nx-market'));
       const marketSum = marketBtns.reduce((s, b) => s + Number((b.textContent.match(/\((\d+)\)/) || [])[1] || 0), 0);
       const navLabels = Array.from(document.querySelectorAll('nav[aria-label]')).map(n => n.getAttribute('aria-label'));
       const dupNavs = navLabels.filter((v, i, a) => a.indexOf(v) !== i);
+      const h30Card = document.getElementById('niche-card-H30');
+      const h30Skus = h30Card && h30Card.querySelector('[data-open-niche]')
+        ? (h30Card.querySelector('[data-open-niche]').getAttribute('data-skus') || '').split(',').filter(Boolean).length
+        : 0;
       return {
         cardsCount: cards.length,
         docLinksCount: docLinks.length,
+        docBtnsCount: docBtns.length,
         kenhBtnsCount: kenhBtns.length,
+        branchBtnsCount: branchBtns.length,
+        sortBtnsCount: sortBtns.length,
+        h30Skus,
         marketSum,
         dupNavsCount: dupNavs.length
       };
     });
-    if (h27Cards.length === 1 && h27Cards[0] === 'niche-card-H27' && nxAudit.cardsCount === 40 && nxAudit.docLinksCount === 444 && nxAudit.kenhBtnsCount === 40 && nxAudit.marketSum === 40 && nxAudit.dupNavsCount === 0) {
-      pass('1.5b /ngach uifix98 invariants (40 niches, 444 docs, 40 kenh links, H27 exact, 0 dup nav)', JSON.stringify(nxAudit));
+    if (h27Cards.length === 1 && h27Cards[0] === 'niche-card-H27' && nxAudit.cardsCount === 40 && nxAudit.docLinksCount >= 450 && nxAudit.docBtnsCount === 40 && nxAudit.kenhBtnsCount === 40 && nxAudit.branchBtnsCount === 5 && nxAudit.sortBtnsCount === 4 && nxAudit.h30Skus > 0 && nxAudit.h30Skus <= 30 && nxAudit.marketSum === 40 && nxAudit.dupNavsCount === 0) {
+      pass('1.5b /ngach uifix101 invariants (40 niches, auto-merged docs, 40 doc/kenh jump btns, 5 branch chips, 4 sort chips, H30 clean <=30, H27 exact, 0 dup nav)', JSON.stringify(nxAudit));
     } else {
-      fail('1.5b /ngach uifix98 invariants', JSON.stringify({ h27Cards, ...nxAudit }));
+      fail('1.5b /ngach uifix101 invariants', JSON.stringify({ h27Cards, ...nxAudit }));
     }
   } else {
     fail('1.5 ngach search', '#fq-nx missing');

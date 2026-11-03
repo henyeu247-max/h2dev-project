@@ -7,7 +7,7 @@ module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi 
 seq: "101"
 niche: "Hoạt Hình 2D Người Que & Lịch Sử Tiền Sử View Việt"
 markets: ["🇻🇳 Việt Nam"]
-duration: "00:00"
+duration: "31:47"
 published_at: "2026-10-23"
 toolsCount: 5
 channelsCount: 0
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-bfabb6&track=h2dev"
 # VIDEO-bfabb6 — Hướng dẫn làm Tự động hóa ngách người que view Việt bằng Claude KHÔNG ĐỤNG tới Capcut, 100% edit giống đối thủ  |  Update 23-10-2026 
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#101`)  
 > - **Ngách nội dung (Niche):** [[niches/hoat-hinh-2d-nguoi-que-lich-su-tien-su-view-viet|Hoạt Hình 2D Người Que & Lịch Sử Tiền Sử View Việt]]  
-> - **Thị trường:** 🇻🇳 Việt Nam | **Thời lượng:** `00:00` | **Ngày đăng:** `2026-10-23`  
+> - **Thị trường:** 🇻🇳 Việt Nam | **Thời lượng:** `31:47` | **Ngày đăng:** `2026-10-23`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-bfabb6&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-bfabb6/README.md)
 
 ---

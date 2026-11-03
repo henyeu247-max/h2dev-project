@@ -12,7 +12,7 @@ tracks: ["h2dev"]
 - **Hiện diện trên các Track:** `H2DEV`
 
 ## 1. Các Video Bài Giảng Thuộc Ngách (1)
-- [[videos/VIDEO-2d1a38|VIDEO-2d1a38 — Hướng dẫn Thực chiến ngách mới Thị trường Hoa Kỳ (US) + Tặng kèm Skill edit video tự động 100% giống đối thủ  |  Update 29-10-2026]] (`H2DEV` · `00:00`)
+- [[videos/VIDEO-2d1a38|VIDEO-2d1a38 — Hướng dẫn Thực chiến ngách mới Thị trường Hoa Kỳ (US) + Tặng kèm Skill edit video tự động 100% giống đối thủ  |  Update 29-10-2026]] (`H2DEV` · `35:21`)
 
 ## 2. Kênh Đối Thủ / Kênh Mẫu Liên Quan (1)
 - [[channels/TerrainWalk|@TerrainWalk]]

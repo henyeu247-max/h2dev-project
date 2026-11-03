@@ -7,7 +7,7 @@ module_title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi 
 seq: "104"
 niche: "Kể Chuyện Cổ Đại & Tiến Hóa Nhân Loại (Nhật Bản)"
 markets: ["🇯🇵 Nhật"]
-duration: "00:00"
+duration: "24:33"
 published_at: "2026-10-27"
 toolsCount: 2
 channelsCount: 1
@@ -18,10 +18,10 @@ player_url: "/player.html?sku=VIDEO-448a91&track=h2dev"
 # VIDEO-448a91 — Thực chiến share ngách view ngoại Thị trường Nhật Bản - Tặng kèm skill edit video  |  Update 27-10-2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#104`)  
 > - **Ngách nội dung (Niche):** [[niches/ke-chuyen-co-dai-tien-hoa-nhan-loai-nhat-ban|Kể Chuyện Cổ Đại & Tiến Hóa Nhân Loại (Nhật Bản)]]  
-> - **Thị trường:** 🇯🇵 Nhật | **Thời lượng:** `00:00` | **Ngày đăng:** `2026-10-27`  
+> - **Thị trường:** 🇯🇵 Nhật | **Thời lượng:** `24:33` | **Ngày đăng:** `2026-10-27`  
 > - **Mở trên Player:** [Xem Video & Phụ Đề Tương Tác](/player.html?sku=VIDEO-448a91&track=h2dev) · [Hồ sơ gốc README.md](../../../docs/VIDEO-448a91/README.md)
 
 ---

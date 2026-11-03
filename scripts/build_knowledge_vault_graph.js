@@ -207,6 +207,7 @@ function buildKnowledgeAndInfraGraph(options = {}) {
       cur.meta = { ...cur.meta, ...meta };
       if (sku && !cur.sku) cur.sku = sku;
       if (body && !cur.body) cur.body = body;
+      else if (body && cur.body && !cur.body.includes(body)) cur.body = `${body} ${cur.body}`.trim();
       if (relPath && !cur.path) cur.path = relPath;
       if (parentId && !cur.parentId) cur.parentId = parentId;
       if (projectId && !cur.projectId) cur.projectId = projectId;
@@ -464,8 +465,8 @@ ${timestamps.map(ts => `- \`${ts.time}\` (${ts.seconds}s) — ${ts.label}`).join
           toolsCount: tools.length,
           channelsCount: rawChans.length,
           docsCount: docs.length,
-          playerUrl: `/player.html?sku=${sku}&track=${tr.code}`,
-          targetUrl: `/player.html?sku=${sku}&track=${tr.code}`
+          playerUrl: `/lotrinh/${encodeURIComponent(sku)}`,
+          targetUrl: `/lotrinh/${encodeURIComponent(sku)}`
         }, ftsBody, wikilinksList, { layer: 'knowledge', level: 4, parentId: modNodeId });
       }
 
@@ -546,7 +547,7 @@ ${nData.channels.size ? [...nData.channels].map(c => `- ${c}`).join('\n') : '- *
     addNode(nNodeId, 'niche', `Ngách: ${nData.name}`, [...nData.tracks].join(','), `niche:${nData.name}`, `knowledge-hub/vault/${nRelFile}`, {
       videoCount: nData.skus.length,
       channelCount: nData.channels.size,
-      targetUrl: `/ngachxanh?niche=${encodeURIComponent(nData.name)}`
+      targetUrl: `/video?niche=${encodeURIComponent(nData.name)}`
     }, `${nData.name} ${nData.skus.map(x => x.sku + ' ' + x.title).join(' ')}`, nData.skus.map(x => `[[videos/${x.sku}]]`), { layer: 'knowledge', level: 3 });
   }
 
@@ -645,6 +646,16 @@ ${cData.skus.map(v => `- [[videos/${v.sku}|${v.sku} — ${v.title}]] (\`${v.trac
   const auditRankMap = new Map(
     ((ngachXanhData.auditTong2026 && ngachXanhData.auditTong2026.xepHang) || []).map(r => [r.ngach, r.thuTu || r.rank])
   );
+  const subNiches2026ByParent = new Map();
+  const sn26RawList = Array.isArray(ngachXanhData.subNiches2026)
+    ? ngachXanhData.subNiches2026
+    : (ngachXanhData.subNiches2026?.items || []);
+  for (const sn26 of sn26RawList) {
+    if (!sn26 || !sn26.parentCode) continue;
+    const pCode = String(sn26.parentCode).toUpperCase();
+    if (!subNiches2026ByParent.has(pCode)) subNiches2026ByParent.set(pCode, []);
+    subNiches2026ByParent.get(pCode).push(sn26);
+  }
   const nicheNodeByCode = new Map();
   const nicheTlDocLinks = [];
   for (const nx of (ngachXanhData.ngachXanh || [])) {
@@ -655,6 +666,22 @@ ${cData.skus.map(v => `- [[videos/${v.sku}|${v.sku} — ${v.title}]] (\`${v.trac
     nicheNodeByCode.set(nxCode, nNodeId);
     const nxAlias = /Everyday History EN/i.test(nx.ngach) ? 'US_EverydayHistory US EverydayHistory' : '';
     const auditRank = auditRankMap.get(nx.ngach) || nx.hang || 0;
+    const sn120List = nx.subNiches120 || [];
+    const sn26List = subNiches2026ByParent.get(nxCode) || [];
+    const subNicheCodes = [
+      ...sn120List.flatMap((sn, idx) => [
+        `SN-${nxCode}-${sn.id}`,
+        `SN-${nxCode}-${String(idx + 1).padStart(3, '0')}`,
+        `SUB-${sn.id}`,
+        `SUB-${String(parseInt(sn.id, 10) || 0).padStart(2, '0')}`
+      ]),
+      ...sn26List.map(sn => sn.subCode || sn.id)
+    ].filter(Boolean);
+    const subNicheText = [
+      ...subNicheCodes,
+      ...sn120List.map(sn => `${sn.name || ''} ${sn.formula || ''}`),
+      ...sn26List.map(sn => `${sn.title || ''} ${sn.formula || ''}`)
+    ].join(' ');
     addNode(nNodeId, 'niche', `Ngách: ${nx.ngach}`, 'h2dev', `niche:${nx.ngach}`, `knowledge-hub/vault/${nRelFile}`, {
       code: nxCode,
       hang: auditRank,
@@ -664,9 +691,10 @@ ${cData.skus.map(v => `- [[videos/${v.sku}|${v.sku} — ${v.title}]] (\`${v.trac
       videoCount: (nx.skus || []).length,
       channelCount: (nx.mauSach || []).length + (nx.mauPhu || []).length + (nx.mauBan || []).length,
       expandedChannelCount: (nx.kenhMoRong2026 || []).length,
-      subNicheCount: (nx.subNiches120 || []).length,
-      targetUrl: `/ngachxanh?niche=${encodeURIComponent(nx.ngach)}`
-    }, `${nxCode} ${nx.ngach} ${nxAlias} ${nx.evidence || ''} ${nx.lamDuoc || ''} ${nx.viPham || ''}`, [], { layer: 'knowledge', level: 3, parentId: 'track:h2dev' });
+      subNicheCount: sn120List.length,
+      subNicheCodes: [...new Set(subNicheCodes)],
+      targetUrl: `/ngachxanh?q=${encodeURIComponent(nxCode)}`
+    }, `${nxCode} ${nx.ngach} ${nxAlias} ${subNicheText} ${nx.evidence || ''} ${nx.lamDuoc || ''} ${nx.viPham || ''}`, [], { layer: 'knowledge', level: 3, parentId: 'track:h2dev' });
     addEdge('track:h2dev', nNodeId, 'HAS_NICHE', 1.3);
 
     for (const skuRef of (nx.skus || [])) {
@@ -701,18 +729,51 @@ ${cData.skus.map(v => `- [[videos/${v.sku}|${v.sku} — ${v.title}]] (\`${v.trac
     }
   }
 
+  // Enrich track:h2dev with META-01..META-05 operational meta groups so KG search & trace resolve META-01..05
+  if (nodes.has('track:h2dev') && Array.isArray(ngachXanhData.ngachMetaKho)) {
+    const trH2 = nodes.get('track:h2dev');
+    const metaTokens = ngachXanhData.ngachMetaKho.map((m, idx) => {
+      const mc = String(m.code || ('META-0' + (idx + 1))).toUpperCase();
+      return `${mc} ${m.ngach || ''} ${m.moTa || ''}`;
+    }).join(' ');
+    trH2.body = `${trH2.body || ''} ${metaTokens}`.trim();
+  }
+
   // Enrich existing channel nodes with Raw Dossier metadata (RAW-001..RAW-156) without creating extra unlinked channel nodes
+  const rawByIdMap = new Map(rawKenhData.filter(x => x && x.id).map(x => [x.id, x]));
   for (const r of rawKenhData) {
-    const cleanH = String(r?.channel?.handle || '').replace(/^@/, '').trim().toLowerCase();
-    const cNodeId = `channel:${cleanH}`;
-    if (cleanH && nodes.has(cNodeId)) {
-      const cn = nodes.get(cNodeId);
+    const dupRec = r?.duplicateOf ? rawByIdMap.get(r.duplicateOf) : null;
+    const candidateHandles = [
+      r?.channel?.handle,
+      dupRec?.channel?.handle,
+      ...(Array.isArray(r?.handleHistory) ? r.handleHistory.map(h => (typeof h === 'string' ? h : h?.handle)) : []),
+      r?.visionAnalysis?.handle,
+      r?.ocr?.handle
+    ];
+    let matchedChannelNode = null;
+    for (const h of candidateHandles) {
+      const cleanH = String(h || '').replace(/^@/, '').trim().toLowerCase();
+      if (cleanH && nodes.has(`channel:${cleanH}`)) {
+        matchedChannelNode = nodes.get(`channel:${cleanH}`);
+        break;
+      }
+    }
+    if (matchedChannelNode) {
+      const cn = matchedChannelNode;
       const rawIds = new Set([...(cn.meta.rawIds || []), r.id].filter(Boolean));
       cn.meta.rawId = cn.meta.rawId || r.id;
       cn.meta.rawIds = [...rawIds];
       cn.meta.channelId = cn.meta.channelId || r?.channel?.channelId || '';
       cn.meta.rawUrl = `/rawkenh?rid=${encodeURIComponent(cn.meta.rawId)}`;
+      cn.meta.targetUrl = cn.meta.rawUrl;
       cn.body = `${cn.body || ''} ${[...rawIds].join(' ')} ${r?.channel?.channelId || ''} ${r?.channel?.title || ''} ${r?.niche || ''}`.trim();
+    } else if (r?.nicheCode && nicheNodeByCode.has(r.nicheCode)) {
+      const nn = nodes.get(nicheNodeByCode.get(r.nicheCode));
+      if (nn) {
+        const rawIds = new Set([...(nn.meta.rawIds || []), r.id].filter(Boolean));
+        nn.meta.rawIds = [...rawIds];
+        nn.body = `${nn.body || ''} ${r.id} ${r?.channel?.handle || ''} ${r?.channel?.title || ''}`.trim();
+      }
     }
   }
 
@@ -842,7 +903,7 @@ ${[...new Set(citedHandles)].map(h => `- [[channels/${safeFileSlug(h)}|${h}]]`).
       idx: i + 1,
       citedSkus,
       citedChannels: [...new Set(citedHandles)],
-      targetUrl: '/chienluoc?sub=policy'
+      targetUrl: `/chienluoc?sub=policy&item=${pCode}`
     }, `${pCode} ${title} ${body}`, wLinks, {
       layer: 'knowledge',
       level: 2,
@@ -921,7 +982,7 @@ ${citedSkus.map(s => `- [[videos/${s}|${s} — ${allVideoTitleBySku.get(s)?.titl
       idx: i + 1,
       policies: linkedPolicies,
       citedSkus,
-      targetUrl: '/chienluoc?sub=policy'
+      targetUrl: `/chienluoc?sub=policy&item=${clCode}`
     }, `${clCode} ${title} ${body}`, wLinks, {
       layer: 'knowledge',
       level: 3,
@@ -1478,7 +1539,7 @@ ${projFiles.slice(0, 120).map(f => `- \`${f.meta.relToProject || f.label}\` — 
         n.meta.targetUrl = `/lotrinh?track=${encodeURIComponent(n.track || 'h2dev')}`;
       } else if (n.type === 'niche') {
         const cleanNiche = String(n.label || '').replace(/^Ngách:\s*/i, '').trim();
-        n.meta.targetUrl = `/ngachxanh?niche=${encodeURIComponent(cleanNiche)}`;
+        n.meta.targetUrl = `/video?niche=${encodeURIComponent(cleanNiche)}`;
       } else if (n.type === 'channel') {
         const hKey = n.id.replace(/^channel:/, '').toLowerCase();
         const rList = rawByHandleLower.get(hKey) || [];
@@ -1488,10 +1549,10 @@ ${projFiles.slice(0, 120).map(f => `- \`${f.meta.relToProject || f.label}\` — 
           n.meta.rawUrl = `/rawkenh?rid=${encodeURIComponent(rList[0].id)}`;
         }
         const hStr = n.meta.handle || n.label;
-        if (kenhByHandleLower.has(hKey)) {
-          n.meta.targetUrl = `/kenh-mau?handle=${encodeURIComponent(hStr)}`;
-        } else if (n.meta.rawUrl) {
+        if (n.meta.rawUrl) {
           n.meta.targetUrl = n.meta.rawUrl;
+        } else if (kenhByHandleLower.has(hKey)) {
+          n.meta.targetUrl = `/kenh-mau?handle=${encodeURIComponent(hStr)}`;
         } else {
           n.meta.targetUrl = `/kenh-mau?kq=${encodeURIComponent(hStr)}`;
         }
@@ -1499,7 +1560,8 @@ ${projFiles.slice(0, 120).map(f => `- \`${f.meta.relToProject || f.label}\` — 
         const cleanTool = String(n.label || '').replace(/^Tool:\s*/i, '').trim();
         n.meta.targetUrl = `/sodo?sq=${encodeURIComponent(cleanTool)}`;
       } else if (n.type === 'policy' || n.type === 'checklist') {
-        n.meta.targetUrl = `/chienluoc?sub=policy`;
+        const itemCode = n.sku || n.id.replace(/^(policy|checklist):/i, '');
+        n.meta.targetUrl = `/chienluoc?sub=policy&item=${encodeURIComponent(itemCode)}`;
       } else if (n.type === 'sop') {
         const mSop = n.id.match(/^sop:DOC-0*(\d+)$/i);
         const dNum = mSop ? parseInt(mSop[1], 10) : 1;
@@ -1509,7 +1571,11 @@ ${projFiles.slice(0, 120).map(f => `- \`${f.meta.relToProject || f.label}\` — 
       }
     }
     const rawIdsStr = (n.meta.rawIds || (n.meta.rawId ? [n.meta.rawId] : [])).join(' ');
-    const fullBody = `${n.id} ${n.sku || ''} ${rawIdsStr} ${n.body || n.label} ${foldVi((n.label || '') + ' ' + (n.body || '') + ' ' + rawIdsStr)}`.trim();
+    const sopAliasStr = n.type === 'sop' && n.meta.docId
+      ? `DOC_${n.meta.docId} DOC-${n.meta.docId} DOC-${String(n.meta.docId).padStart(3, '0')} TL-${String(n.meta.docId).padStart(2, '0')}`
+      : '';
+    const codeStr = [n.meta.code, n.meta.nicheCode, sopAliasStr, ...(n.meta.subNicheCodes || [])].filter(Boolean).join(' ');
+    const fullBody = `${n.id} ${n.sku || ''} ${codeStr} ${rawIdsStr} ${n.body || n.label} ${foldVi((n.label || '') + ' ' + codeStr + ' ' + (n.body || '') + ' ' + rawIdsStr)}`.trim();
     insNode.run(n.id, n.type, n.layer, n.level, n.parentId || '', n.label, n.track, n.sku, n.path, deg, JSON.stringify(n.meta));
     insBacklink.run(n.id, inb.length, outb.length, JSON.stringify(inb), JSON.stringify(outb));
     insFts.run(n.id, n.type, n.label, fullBody, (n.wikilinks || []).join(' '));
@@ -1521,8 +1587,9 @@ ${projFiles.slice(0, 120).map(f => `- \`${f.meta.relToProject || f.label}\` — 
     insSync.run(s.path, s.mtimeMs, s.sizeBytes);
   }
   db.exec(`INSERT INTO kg_fts(kg_fts) VALUES('optimize')`);
+  db.exec('PRAGMA user_version = 20261103;');
   db.exec('COMMIT');
-  try { db.exec('PRAGMA wal_checkpoint(TRUNCATE);'); } catch (_) {}
+  try { db.exec('VACUUM; PRAGMA wal_checkpoint(TRUNCATE);'); } catch (_) {}
   db.close();
 
   // 7. Export JSON Graph (`data/knowledge_graph.json`) for Web Interactive Dual-Layer Explorer

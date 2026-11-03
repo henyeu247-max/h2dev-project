@@ -1,17 +1,17 @@
 ---
 tool_slug: "claude"
 tool_name: "Claude"
-videos_count: 20
+videos_count: 21
 tracks: ["h2dev", "huan", "dgmd"]
 ---
 
 # Công Cụ Thực Chiến: Claude
 
 - **Quay về Trang Chủ Vault:** [[00-MOC-HOME|00-MOC-HOME]]
-- **Số bài giảng sử dụng công cụ này:** `20` video
+- **Số bài giảng sử dụng công cụ này:** `21` video
 - **Tracks:** `H2DEV`, `HUAN`, `DGMD`
 
-## Danh Sách Bài Giảng Ứng Dụng Claude (20)
+## Danh Sách Bài Giảng Ứng Dụng Claude (21)
 - [[videos/VIDEO-3e943c|VIDEO-3e943c — Nên dùng bản web hay app? và giải thích nên dùng gói nào của Claude AI]] (`H2DEV`)
 - [[videos/VIDEO-54c8f7|VIDEO-54c8f7 — Full quy trình thực chiến hướng dẫn dùng Claude train prompt bất kỳ chủ đề ngách nào mình muốn và cách đóng gói Skill để dùng làm viết kịch bản, tạo ảnh, tạo thumb... (video dài hơn 1 giờ) - Quy Trình dạng tự tạo làm mới chủ đề, kịch bản, hình ảnh... ]] (`H2DEV`)
 - [[videos/VIDEO-5d54d0|VIDEO-5d54d0 — Thực chiến hướng dẫn train Claude làm prompt bám theo kịch bản đối thủ xào nấu cho bất kỳ chủ đề (ngách) nào muốn - Quy trình chuẩn bán content dành cho ngách bám theo 70% kịch bản đối thủ]] (`H2DEV`)
@@ -29,6 +29,7 @@ tracks: ["h2dev", "huan", "dgmd"]
 - [[videos/VIDEO-9ff392|VIDEO-9ff392 — Thực chiến share ngách lịch sử Việt Nam hướng dẫn làm + kèm Skill ( Claude tự động edit video ) |  Update 25-10-2026]] (`H2DEV`)
 - [[videos/VIDEO-448a91|VIDEO-448a91 — Thực chiến share ngách view ngoại Thị trường Nhật Bản - Tặng kèm skill edit video  |  Update 27-10-2026]] (`H2DEV`)
 - [[videos/VIDEO-2d1a38|VIDEO-2d1a38 — Hướng dẫn Thực chiến ngách mới Thị trường Hoa Kỳ (US) + Tặng kèm Skill edit video tự động 100% giống đối thủ  |  Update 29-10-2026]] (`H2DEV`)
+- [[videos/VIDEO-acef2c|VIDEO-acef2c — Ngách làm bán content Thị trường Việt và Nhật  | Update 03-11-2026]] (`H2DEV`)
 - [[videos/ZOOM-02-Chien-luoc-kenh-san-xuat|ZOOM-02-Chien-luoc-kenh-san-xuat — Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt]] (`H2DEV`)
 - [[videos/VIDEO-a9a03e|VIDEO-a9a03e — 10. SOP PHIM HOẠT HÌNH]] (`HUAN`)
 - [[videos/VIDEO-5779d8|VIDEO-5779d8 — Quy Trình Sản Xuất Tool Phát Trực Tiếp Đa Luồng]] (`DGMD`)

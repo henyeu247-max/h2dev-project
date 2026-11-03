@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-61ad94&track=h2dev"
 # VIDEO-61ad94 — Update ngách bán content Nhật, Hàn..
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/drama-gia-dinh-doi-song-nhat---han|Drama Gia Đình & Đời Sống Nhật - Hàn]]  
 > - **Thị trường:** 🇯🇵 Nhật · 🇰🇷 Hàn | **Thời lượng:** `10:30` | **Ngày đăng:** `2026-08-22`  

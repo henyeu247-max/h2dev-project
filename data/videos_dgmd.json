@@ -6,13 +6,22 @@
     "title": "Các Chủ Đề Thực Chiến Được Cập Nhật Liên Tục Mỗi Tháng",
     "duration": "02:31",
     "duration_sec": 151,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "BẠN SẼ HỌC ĐƯỢC GÌ TRONG DGMD ACADEMY",
     "category_name": "BẠN SẼ HỌC ĐƯỢC GÌ TRONG DGMD ACADEMY",
     "module": "DGMD-M01",
     "module_id": "DGMD-M01",
     "module_title": "BẠN SẼ HỌC ĐƯỢC GÌ TRONG DGMD ACADEMY",
     "contentNiche": "Phát Triển Kênh & Chiến Lược Chủ Đề Đa Nền Tảng",
-    "niche": "BẠN SẼ HỌC ĐƯỢC GÌ TRONG DGMD ACADEMY",
+    "niche": "Phát Triển Kênh & Chiến Lược Chủ Đề Đa Nền Tảng",
+    "niche_primary": "Phát Triển Kênh & Chiến Lược Chủ Đề Đa Nền Tảng",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-02"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -20,6 +29,8 @@
     "badge": "NỔI BẬT",
     "free": true,
     "is_free": true,
+    "is_pro": false,
+    "access": "free",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -69,7 +80,11 @@
     "file": "video/VIDEO-06a48f/VIDEO-06a48f.mp4",
     "video_link": "video/VIDEO-06a48f/VIDEO-06a48f.mp4",
     "size": 83030946,
-    "size_mb": 79.18
+    "size_mb": 79.18,
+    "actual_topic": "Định hướng hệ thống khóa học thực chiến daigiamangdep.academy: Đóng gói quy trình A-Z (Tạo ảnh nhất quán nhân vật, câu lệnh tạo video AI & không AI, edit, thumbnail), khai thác 3 nguồn tiền (View, Affiliate, Kênh tài sản số) và cập nhật ngách theo tháng (Yoga, Nhạc Chầu Văn, Nhạc trẻ em/người lớn, Tiếng Anh, Sự kiện World Cup 1-2 tháng).",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 2,
@@ -78,13 +93,25 @@
     "title": "Quy Trình Sản Xuất Video Reels Phật Pháp",
     "duration": "14:41",
     "duration_sec": 881,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "category_name": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "module": "DGMD-M02",
     "module_id": "DGMD-M02",
     "module_title": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "contentNiche": "Tâm Linh & Video AI Phật Pháp (Facebook Reels / Shorts)",
-    "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche": "Tâm Linh & Video AI Phật Pháp (Facebook Reels / Shorts)",
+    "niche_primary": "Tâm Linh & Video AI Phật Pháp (Facebook Reels / Shorts)",
+    "nicheCode": "H02",
+    "nicheCodes": [
+      "H02",
+      "H05",
+      "H08",
+      "H10",
+      "H12"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook",
@@ -94,6 +121,8 @@
     "badge": "NỔI BẬT",
     "free": true,
     "is_free": true,
+    "is_pro": false,
+    "access": "free",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -160,7 +189,11 @@
     "file": "video/VIDEO-9c557d/VIDEO-9c557d.mp4",
     "video_link": "video/VIDEO-9c557d/VIDEO-9c557d.mp4",
     "size": 251775876,
-    "size_mb": 240.11
+    "size_mb": 240.11,
+    "actual_topic": "Quy trình công nghiệp sản xuất 40-100 video Reels Phật Pháp/ngày kéo 37,9 triệu view/tháng (Fanpage GÕ TỈNH) & kiếm tiền Affiliate Shopee: Lấy mẫu Bồ Tát trên Pinterest -> ChatGPT sinh 10 prompt ảnh + 10 câu thoại 50 từ -> Tạo ảnh 9:16 miễn phí trên Google Flow (Nano Banana 2) -> Tạo video nhân vật nói tiếng Việt 720p 10s trên Grok Imagine -> Dựng gộp trên CapCut PC (Ctrl+B, xuất lẻ bằng phím tắt I/O 2K 30fps).",
+    "target_market": "🌍 View Ngoại / 📘 Facebook / 📱 Shorts / Reels",
+    "market_code": "GLOBAL,FB,SHORTS",
+    "visual_audio_checked": true
   },
   {
     "index": 3,
@@ -169,13 +202,22 @@
     "title": "Quy Trình Xây Kênh 100.000 Subscribe ",
     "duration": "28:02",
     "duration_sec": 1682,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "category_name": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "module": "DGMD-M02",
     "module_id": "DGMD-M02",
     "module_title": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "contentNiche": "Chiến Lược Xây Kênh 100K Sub & Bình Thẩm Shorts Fair Use",
-    "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche": "Chiến Lược Xây Kênh 100K Sub & Bình Thẩm Shorts Fair Use",
+    "niche_primary": "Chiến Lược Xây Kênh 100K Sub & Bình Thẩm Shorts Fair Use",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -184,6 +226,8 @@
     "badge": "QUAN TRỌNG",
     "free": true,
     "is_free": true,
+    "is_pro": false,
+    "access": "free",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -247,7 +291,11 @@
     "file": "video/VIDEO-f2a5c1/VIDEO-f2a5c1.mp4",
     "video_link": "video/VIDEO-f2a5c1/VIDEO-f2a5c1.mp4",
     "size": 486678692,
-    "size_mb": 464.13
+    "size_mb": 464.13,
+    "actual_topic": "Quy trình xây kênh Shorts đạt Nút Bạc (100.000 Subscribe) và kiếm 57 triệu/tháng (Kênh mẫu School Baby Channel 287,4 triệu VNĐ, 1 video 9,2M view kéo +56,7N sub; Thành Hiếu Mang Dép 1,16M sub): Chọn 3 nhóm từ khóa lớn (Tôn giáo Jesus #jesus 25M video, Game Minecraft, Nhạc Kpop Rumi #rumi / Skibidi Toilet / Sprunki) -> Bình thẩm Fair Use trên CapCut PC (Giọng Cô gái hoạt ngôn & Thanh niên tự tin 1.2x-1.3x, Dừng hình + Nút Like/Sub + Nhãn dán red circle/red arrow + Đếm ngược 3-2-1 + Bộ lọc 4K + Nhạc nền mức 24).",
+    "target_market": "🌍 View Ngoại / 📘 Facebook",
+    "market_code": "GLOBAL,FB",
+    "visual_audio_checked": true
   },
   {
     "index": 4,
@@ -256,13 +304,21 @@
     "title": "Quy Trình Xây Kênh Nhạc Cover Nguồn Free",
     "duration": "11:59",
     "duration_sec": 719,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "category_name": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "module": "DGMD-M02",
     "module_id": "DGMD-M02",
     "module_title": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "contentNiche": "Âm Nhạc Bản Quyền Mở",
-    "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche": "Âm Nhạc Bản Quyền Mở",
+    "niche_primary": "Âm Nhạc Bản Quyền Mở",
+    "nicheCode": "H40",
+    "nicheCodes": [
+      "H40"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -271,6 +327,8 @@
     "badge": "NỔI BẬT",
     "free": true,
     "is_free": true,
+    "is_pro": false,
+    "access": "free",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -319,7 +377,11 @@
     "file": "video/VIDEO-d124e8/VIDEO-d124e8.mp4",
     "video_link": "video/VIDEO-d124e8/VIDEO-d124e8.mp4",
     "size": 183575797,
-    "size_mb": 175.07
+    "size_mb": 175.07,
+    "actual_topic": "Quy trình xây kênh YouTube Shorts nhạc Cover nguồn miễn phí từ TikTok/Douyin: Dùng Google Gemini bóc lời bài hát tự động, dựng phôi nền giấy nhăn + mặt nạ bo góc trên CapCut PC để ăn view tìm kiếm và cán mốc 1.000 Subscribe",
+    "target_market": "🌍 View Ngoại / 📘 Facebook",
+    "market_code": "GLOBAL,FB",
+    "visual_audio_checked": true
   },
   {
     "index": 5,
@@ -328,13 +390,22 @@
     "title": "Khắc phục lỗi khi tạo tài khoản adsense ",
     "duration": "03:32",
     "duration_sec": 212,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "category_name": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "module": "DGMD-M02",
     "module_id": "DGMD-M02",
     "module_title": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "contentNiche": "Quản Trị AdSense & Hạ Tầng Kênh",
-    "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche": "Quản Trị AdSense & Hạ Tầng Kênh",
+    "niche_primary": "Quản Trị AdSense & Hạ Tầng Kênh",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -343,6 +414,8 @@
     "badge": "QUAN TRỌNG",
     "free": true,
     "is_free": true,
+    "is_pro": false,
+    "access": "free",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -389,7 +462,11 @@
     "file": "video/VIDEO-e706d3/VIDEO-e706d3.mp4",
     "video_link": "video/VIDEO-e706d3/VIDEO-e706d3.mp4",
     "size": 22903131,
-    "size_mb": 21.84
+    "size_mb": 21.84,
+    "actual_topic": "Quy trình khắc phục lỗi không được phê duyệt Bước 2 Google AdSense (GA) và bộ 4 điều kiện chuẩn (CCCD mới + SĐT mới + Gmail mới ngâm 12–48h + Hồ sơ khách/Ẩn danh) để tự tạo tài khoản GA New",
+    "target_market": "🌍 View Ngoại / 📘 Facebook",
+    "market_code": "GLOBAL,FB",
+    "visual_audio_checked": true
   },
   {
     "index": 6,
@@ -398,13 +475,23 @@
     "title": "Quy Trình Sản Xuất Video 1000 Người Đăng Ký Nhanh Nhất",
     "duration": "16:14",
     "duration_sec": 974,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "category_name": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "module": "DGMD-M02",
     "module_id": "DGMD-M02",
     "module_title": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "contentNiche": "Phát Triển Kênh & Kỹ Thuật YouTube",
-    "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche": "Phát Triển Kênh & Kỹ Thuật YouTube",
+    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04",
+      "H09",
+      "H34"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -413,6 +500,8 @@
     "badge": "QUAN TRỌNG",
     "free": true,
     "is_free": true,
+    "is_pro": false,
+    "access": "free",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -464,7 +553,11 @@
     "file": "video/VIDEO-f97cd2/VIDEO-f97cd2.mp4",
     "video_link": "video/VIDEO-f97cd2/VIDEO-f97cd2.mp4",
     "size": 183419487,
-    "size_mb": 174.92
+    "size_mb": 174.92,
+    "actual_topic": "Quy trình sản xuất video Shorts PK đu trend nhảy TikTok chia đôi màn hình kéo 1.000–10.000 sub tự nhiên nhanh nhất (Case study video 22s đạt 192.429 view & +8.100 sub trên kênh @tuoicuaxechieu, mẫu đối thủ @Popa-Pipo 16M view) để bật kiếm tiền và chuyển đổi sang video dài.",
+    "target_market": "🌍 View Ngoại / 📘 Facebook",
+    "market_code": "GLOBAL,FB",
+    "visual_audio_checked": true
   },
   {
     "index": 7,
@@ -473,13 +566,22 @@
     "title": "Quy Trình Sản Xuất Video Sự Khác Nhau Là Gì ?",
     "duration": "20:59",
     "duration_sec": 1259,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "category_name": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "module": "DGMD-M02",
     "module_id": "DGMD-M02",
     "module_title": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "contentNiche": "So Sánh & Đố Vui Visual",
-    "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche": "So Sánh & Đố Vui Visual",
+    "niche_primary": "So Sánh & Đố Vui Visual",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30",
+      "H39"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -488,6 +590,8 @@
     "badge": "NỔI BẬT",
     "free": true,
     "is_free": true,
+    "is_pro": false,
+    "access": "free",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -552,7 +656,11 @@
     "file": "video/VIDEO-a18f2a/VIDEO-a18f2a.mp4",
     "video_link": "video/VIDEO-a18f2a/VIDEO-a18f2a.mp4",
     "size": 256288258,
-    "size_mb": 244.42
+    "size_mb": 244.42,
+    "actual_topic": "Quy trình sản xuất video ngắn đa nền tảng (Facebook Reels, TikTok, YouTube Shorts) dạng 'Đây là A, đây là B, điểm khác nhau là gì?' đạt 2,7–3,2 triệu view (mẫu Sấu Khoa Học 230K follow, Học Bá Biết Tuốt 136K follow, Giáo Sư Biết Tuốt 38K follow): Tạo bộ 3 ảnh Stickman chỉ thước kẻ theo góc đồng hồ 11h–1h bằng ChatGPT, nạp Master Prompt 11 trang phong cách bố láo và dựng khung viền gỗ 1:1 trên CapCut PC.",
+    "target_market": "🌍 View Ngoại / 📘 Facebook",
+    "market_code": "GLOBAL,FB",
+    "visual_audio_checked": true
   },
   {
     "index": 8,
@@ -561,13 +669,22 @@
     "title": "Hướng dẫn kháng kênh youtube bị xóa",
     "duration": "01:24",
     "duration_sec": 84,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "category_name": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "module": "DGMD-M02",
     "module_id": "DGMD-M02",
     "module_title": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "contentNiche": "Quản Trị AdSense & Kháng Kênh",
-    "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche": "Quản Trị AdSense & Kháng Kênh",
+    "niche_primary": "Quản Trị AdSense & Kháng Kênh",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -576,6 +693,8 @@
     "badge": "QUAN TRỌNG",
     "free": true,
     "is_free": true,
+    "is_pro": false,
+    "access": "free",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -631,7 +750,11 @@
     "file": "video/VIDEO-38145b/VIDEO-38145b.mp4",
     "video_link": "video/VIDEO-38145b/VIDEO-38145b.mp4",
     "size": 13987471,
-    "size_mb": 13.34
+    "size_mb": 13.34,
+    "actual_topic": "Quy trình thực chiến dùng ChatGPT soạn đơn kháng nghị tiếng Việt (683/800 ký tự) lấy lại kênh YouTube bị quét lỗi lách quy định (Circumvention Policy) sau hơn 10 giờ",
+    "target_market": "🌍 View Ngoại / 📘 Facebook",
+    "market_code": "GLOBAL,FB",
+    "visual_audio_checked": true
   },
   {
     "index": 9,
@@ -640,13 +763,22 @@
     "title": "Khắc phục tình trạng 0 view để tạo kênh mới ",
     "duration": "02:48",
     "duration_sec": 168,
+    "resolution": "4K",
+    "width": 4010,
+    "height": 2160,
     "category": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "category_name": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "module": "DGMD-M02",
     "module_id": "DGMD-M02",
     "module_title": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
     "contentNiche": "Kỹ Thuật Khởi Tạo Kênh YouTube & Phá Băng Đề Xuất",
-    "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche": "Kỹ Thuật Khởi Tạo Kênh YouTube & Phá Băng Đề Xuất",
+    "niche_primary": "Kỹ Thuật Khởi Tạo Kênh YouTube & Phá Băng Đề Xuất",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-02"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại",
@@ -657,6 +789,8 @@
     "badge": "MIỄN PHÍ",
     "free": true,
     "is_free": true,
+    "is_pro": false,
+    "access": "free",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -697,7 +831,11 @@
     "file": "video/VIDEO-583a09/VIDEO-583a09.mp4",
     "video_link": "video/VIDEO-583a09/VIDEO-583a09.mp4",
     "size": 31453735,
-    "size_mb": 30
+    "size_mb": 30,
+    "actual_topic": "Mẹo Khắc Phục Tình Trạng Kênh YouTube Mới Bị 0 View Bằng Cách Tạo Kênh Phụ Trên Gmail Đã Có Kênh Lớn",
+    "target_market": "🇻🇳 Việt Nam / 🌍 View Ngoại / 📘 Facebook",
+    "market_code": "VN,GLOBAL,FB",
+    "visual_audio_checked": true
   },
   {
     "index": 10,
@@ -706,13 +844,24 @@
     "title": "Quy Trình Sản Xuất Video Jesus Shorts ",
     "duration": "07:08",
     "duration_sec": 428,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
     "category_name": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
     "module": "DGMD-M03",
     "module_id": "DGMD-M03",
     "module_title": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
     "contentNiche": "Tâm Linh & Tôn Giáo Toàn Cầu",
-    "niche": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
+    "niche": "Tâm Linh & Tôn Giáo Toàn Cầu",
+    "niche_primary": "Tâm Linh & Tôn Giáo Toàn Cầu",
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01",
+      "H06",
+      "H07",
+      "H20"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📱 Shorts / Reels"
@@ -721,6 +870,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -769,7 +920,11 @@
     "file": "video/VIDEO-d4f7e6/VIDEO-d4f7e6.mp4",
     "video_link": "video/VIDEO-d4f7e6/VIDEO-d4f7e6.mp4",
     "size": 83889505,
-    "size_mb": 80
+    "size_mb": 80,
+    "actual_topic": "Quy trình sản xuất video 3D Jesus & Satan trên cầu treo bằng Pinterest + ChatGPT + Google Flow (9:16) + Grok Imagine (720p 10s) & hậu kỳ CapCut PC 9,9s đăng qua điện thoại",
+    "target_market": "🌍 View Ngoại / 📱 Shorts / Reels",
+    "market_code": "GLOBAL,SHORTS",
+    "visual_audio_checked": true
   },
   {
     "index": 11,
@@ -778,13 +933,22 @@
     "title": "Quy Trình Sản Xuất Video Doyin",
     "duration": "07:01",
     "duration_sec": 421,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
     "category_name": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
     "module": "DGMD-M03",
     "module_id": "DGMD-M03",
     "module_title": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
     "contentNiche": "Bán Content & Reup Hợp Pháp",
-    "niche": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
+    "niche": "Bán Content & Reup Hợp Pháp",
+    "niche_primary": "Bán Content & Reup Hợp Pháp",
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22",
+      "H23"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📱 Shorts / Reels"
@@ -793,6 +957,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -864,7 +1030,11 @@
     "file": "video/VIDEO-dd1345/VIDEO-dd1345.mp4",
     "video_link": "video/VIDEO-dd1345/VIDEO-dd1345.mp4",
     "size": 86951250,
-    "size_mb": 82.92
+    "size_mb": 82.92,
+    "actual_topic": "Quy trình khai thác video Douyin triệu view bằng Google Dịch + Master Prompt 10 bước trên Google Gemini (tải trực tiếp file MP4 phân tích theo timeline) & hậu kỳ CapCut Pro (voice Cô gái hoạt ngôn 1.2x + Filter 4K)",
+    "target_market": "🌍 View Ngoại / 📱 Shorts / Reels",
+    "market_code": "GLOBAL,SHORTS",
+    "visual_audio_checked": true
   },
   {
     "index": 12,
@@ -873,13 +1043,22 @@
     "title": "Quy Trình Sản Xuất Video Thể Thao Shorts",
     "duration": "37:43",
     "duration_sec": 2263,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
     "category_name": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
     "module": "DGMD-M03",
     "module_id": "DGMD-M03",
     "module_title": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
     "contentNiche": "Thể Thao & Câu Đố Bóng Đá Tương Tác (Sports Quiz Shorts)",
-    "niche": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
+    "niche": "Thể Thao & Câu Đố Bóng Đá Tương Tác (Sports Quiz Shorts)",
+    "niche_primary": "Thể Thao & Câu Đố Bóng Đá Tương Tác (Sports Quiz Shorts)",
+    "nicheCode": "H27",
+    "nicheCodes": [
+      "H27",
+      "H28"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📱 Shorts / Reels"
@@ -888,6 +1067,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -936,7 +1117,11 @@
     "file": "video/VIDEO-53a547/VIDEO-53a547.mp4",
     "video_link": "video/VIDEO-53a547/VIDEO-53a547.mp4",
     "size": 318644291,
-    "size_mb": 303.88
+    "size_mb": 303.88,
+    "actual_topic": "Quy trình sản xuất video Thể Thao Shorts tương tác (Guess The Player / Câu đố bóng đá 9:16): Dùng ChatGPT tạo 5 câu hỏi cho 4 siêu sao (Ronaldo, Messi, Neymar, Mbappé) kèm câu thứ 5 kéo Like/Tim/Sub/Comment, lấy ảnh Pinterest đưa qua Grok tạo nhân vật MC Messi phông xanh 9:16 & 4 mặt cầu thủ 1:1 cùng 7 clip đọc câu hỏi 720p, và hậu kỳ CapCut PC (Dừng hình, thước căn 1 giây, Tô viền trơn tru cỡ 50 xanh/đỏ).",
+    "target_market": "🌍 View Ngoại / 📱 Shorts / Reels",
+    "market_code": "GLOBAL,SHORTS",
+    "visual_audio_checked": true
   },
   {
     "index": 13,
@@ -945,13 +1130,21 @@
     "title": "Quy Trình Sản Xuất Video Nhạc Cổ Trung Hoa",
     "duration": "13:23",
     "duration_sec": 803,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO 3 QUY TRÌNH VIEW NGOẠI 1",
     "category_name": "COMBO 3 QUY TRÌNH VIEW NGOẠI 1",
     "module": "DGMD-M04",
     "module_id": "DGMD-M04",
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 1",
     "contentNiche": "Âm Nhạc Thư Giãn & Cổ Phong Trung Hoa (Ancient Chinese Instrumental)",
-    "niche": "VIEW NGOẠI 1",
+    "niche": "Âm Nhạc Thư Giãn & Cổ Phong Trung Hoa (Ancient Chinese Instrumental)",
+    "niche_primary": "Âm Nhạc Thư Giãn & Cổ Phong Trung Hoa (Ancient Chinese Instrumental)",
+    "nicheCode": "H40",
+    "nicheCodes": [
+      "H40"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -959,6 +1152,8 @@
     "badge": "QUAN TRỌNG",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -1008,7 +1203,11 @@
     "file": "video/VIDEO-ab68db/VIDEO-ab68db.mp4",
     "video_link": "video/VIDEO-ab68db/VIDEO-ab68db.mp4",
     "size": 161091293,
-    "size_mb": 153.63
+    "size_mb": 153.63,
+    "actual_topic": "Quy trình sản xuất video Nhạc Cổ Trung Hoa không lời dài 25–60 phút (theo kênh mẫu @shenharmony2798): Chụp ảnh mẫu (Alt+Z) đưa vào ChatGPT lấy prompt tạo ảnh 16:9 trên Google Flow (Nano Banana 2), dùng Master Prompt tạo video tĩnh 10s (720p) trên Grok và nhạc cụ cổ truyền lặp mượt trên Suno AI, hậu kỳ CapCut PC bằng kỹ thuật Đảo ngược (Ping-Pong Loop), nối chồng âm thanh Mờ dần 8.0s và phủ hiệu ứng Phát sáng + Băng tuyết.",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 14,
@@ -1017,13 +1216,21 @@
     "title": "Quy Trình Sản Xuất Video Quiz English ",
     "duration": "35:06",
     "duration_sec": 2106,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO 3 QUY TRÌNH VIEW NGOẠI 1",
     "category_name": "COMBO 3 QUY TRÌNH VIEW NGOẠI 1",
     "module": "DGMD-M04",
     "module_id": "DGMD-M04",
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 1",
     "contentNiche": "Quiz & Trắc Nghiệm Kiến Thức",
-    "niche": "VIEW NGOẠI 1",
+    "niche": "Quiz & Trắc Nghiệm Kiến Thức",
+    "niche_primary": "Quiz & Trắc Nghiệm Kiến Thức",
+    "nicheCode": "H36",
+    "nicheCodes": [
+      "H36"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1031,6 +1238,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -1079,7 +1288,11 @@
     "file": "video/VIDEO-23723f/VIDEO-23723f.mp4",
     "video_link": "video/VIDEO-23723f/VIDEO-23723f.mp4",
     "size": 311230362,
-    "size_mb": 296.81
+    "size_mb": 296.81,
+    "actual_topic": "Bài 13 hướng dẫn chi tiết quy trình công nghiệp hóa sản xuất video Quiz English & Đố vui trắc nghiệm đa ngôn ngữ dựa trên hình mẫu kênh đối thủ English Grammar Challenge (@englishgrammarchallenge6953 — 123 N người đăng ký, 875 video, có video đạt 6,2 triệu lượt xem). Quy trình kết hợp ChatGPT (viết 30 câu hỏi 4 đáp án + Hook mở đầu), Picsart (thiết kế bộ phôi khung câu hỏi 16:9 và bộ đôi thanh thời gian Trắng/Vàng trùng khít tọa độ), CapCut PC (tạo giọng đọc TTS 'Nguồn nhỏ ngọt ngào', dùng Mặt nạ Hình chữ nhật + Keyframe làm thanh đếm ngược 7 giây, đóng gói phôi Compound Clip rồi nhân bản/Uncompound để thay chữ hàng loạt) và Suno AI v5.5 (tạo nhạc nền Quiz Safari Bounce không lời).",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 15,
@@ -1088,13 +1301,21 @@
     "title": "Quy Trình Sản Xuất Video Bán Content ",
     "duration": "23:57",
     "duration_sec": 1437,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO 3 QUY TRÌNH VIEW NGOẠI 1",
     "category_name": "COMBO 3 QUY TRÌNH VIEW NGOẠI 1",
     "module": "DGMD-M04",
     "module_id": "DGMD-M04",
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 1",
     "contentNiche": "Bán Content & Reup Hợp Pháp",
-    "niche": "VIEW NGOẠI 1",
+    "niche": "Bán Content & Reup Hợp Pháp",
+    "niche_primary": "Bán Content & Reup Hợp Pháp",
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1102,6 +1323,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -1171,7 +1394,11 @@
     "file": "video/VIDEO-a152a6/VIDEO-a152a6.mp4",
     "video_link": "video/VIDEO-a152a6/VIDEO-a152a6.mp4",
     "size": 211968943,
-    "size_mb": 202.15
+    "size_mb": 202.15,
+    "actual_topic": "Bài 14 hướng dẫn toàn diện quy trình sản xuất dòng video Bán Content (Semi-Content) kết hợp nhân vật nổi tiếng Adam Rose (@realadamrose — 6,26 triệu người đăng ký, có video Shorts đạt 257 triệu lượt xem) theo mô hình các kênh đối thủ như Smart Pocket (@Smartpocket-r9b — 533 video, có video dài 1 tiếng đạt 2 triệu lượt xem với RPM rất cao). Quy trình đi từ khâu tìm nguồn ngách thu hút nam giới trên Douyin bằng từ khóa tiếng Trung phồn thể, tải hàng loạt qua trình duyệt Cốc Cốc, xử lý khung 16:9 (tỷ lệ 174%, nền mờ) và cắt ghép cảnh phản ứng Adam Rose trên CapCut PC, đến việc dùng Google Gemini đọc trực tiếp file video theo Master Prompt để xuất bảng câu bình luận tiếng Anh hài hước theo từng mốc giây nhằm đáp ứng yếu tố bình phẩm Fair Use, kết hợp nhạc nền Suno AI, hiệu ứng âm thanh myinstants.com và làm Thumbnail điểm nhấn trên Picsart.",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 16,
@@ -1180,13 +1407,21 @@
     "title": "Quy Trình Sản Xuất Video Hội Thoại Tiếng Anh",
     "duration": "17:00",
     "duration_sec": 1020,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO 3 QUY TRÌNH VIEW NGOẠI 2",
     "category_name": "COMBO 3 QUY TRÌNH VIEW NGOẠI 2",
     "module": "DGMD-M05",
     "module_id": "DGMD-M05",
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 2",
     "contentNiche": "Học Tiếng Anh Thụ Động",
-    "niche": "VIEW NGOẠI 2",
+    "niche": "Học Tiếng Anh Thụ Động",
+    "niche_primary": "Học Tiếng Anh Thụ Động",
+    "nicheCode": "H36",
+    "nicheCodes": [
+      "H36"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1194,6 +1429,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -1251,7 +1488,11 @@
     "file": "video/VIDEO-96b420/VIDEO-96b420.mp4",
     "video_link": "video/VIDEO-96b420/VIDEO-96b420.mp4",
     "size": 148665835,
-    "size_mb": 141.78
+    "size_mb": 141.78,
+    "actual_topic": "Bài 15 mở đầu Module 5 hướng dẫn quy trình sản xuất dòng video Hội thoại Tiếng Anh (English Conversation for Beginners) theo mô hình kênh đối thủ ChitChat English (@ChitChat0 — có video đạt 7,6 triệu và 3,1 triệu lượt xem, mang tính Evergreen bền vững qua nhiều năm). Chỉ với 3 công cụ duy nhất gồm ChatGPT, Picsart và CapCut PC, giảng viên hướng dẫn từ cách viết câu lệnh tạo kịch bản hội thoại chia 2 cột Anh – Việt (giúp người không biết tiếng Anh vẫn dễ dàng biên tập), tạo bộ 3 hình ảnh đồng nhất phong cách 'Pixar Cinematic 3D Style' đúng tỷ lệ (2 nhân vật 9:16 góc trung cảnh quay mặt đối diện nhau + 1 bối cảnh 16:9 không người), tách nền tự động và làm chuyển động lắc nhẹ bằng hiệu ứng 'Máy ảnh rung', tự thiết kế cặp bong bóng thoại riêng trên Picsart, đến kỹ thuật lồng tiếng TTS Nam/Nữ đối đáp so le, chuẩn hóa âm lượng (-23 LUFS) và trích xuất Ảnh bìa làm Thumbnail ngay trên CapCut.",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 17,
@@ -1260,13 +1501,23 @@
     "title": "Quy Trình Sản Xuất Video Sức Khỏe Yoga",
     "duration": "21:25",
     "duration_sec": 1285,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO 3 QUY TRÌNH VIEW NGOẠI 2",
     "category_name": "COMBO 3 QUY TRÌNH VIEW NGOẠI 2",
     "module": "DGMD-M05",
     "module_id": "DGMD-M05",
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 2",
     "contentNiche": "Hoạt Hình 3D Tập Yoga & Sức Khỏe (Kids / Character Yoga)",
-    "niche": "VIEW NGOẠI 2",
+    "niche": "Hoạt Hình 3D Tập Yoga & Sức Khỏe (Kids / Character Yoga)",
+    "niche_primary": "Hoạt Hình 3D Tập Yoga & Sức Khỏe (Kids / Character Yoga)",
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1274,6 +1525,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -1326,7 +1579,11 @@
     "file": "video/VIDEO-d19b55/VIDEO-d19b55.mp4",
     "video_link": "video/VIDEO-d19b55/VIDEO-d19b55.mp4",
     "size": 205481851,
-    "size_mb": 195.96
+    "size_mb": 195.96,
+    "actual_topic": "Quy trình sản xuất video Hoạt Hình 3D Tập Yoga (Kids Yoga / Character Yoga) view ngoại triệu view",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 18,
@@ -1335,13 +1592,21 @@
     "title": "Quy Trình Sản Xuất Video Nhận Biết English",
     "duration": "25:18",
     "duration_sec": 1518,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO 3 QUY TRÌNH VIEW NGOẠI 2",
     "category_name": "COMBO 3 QUY TRÌNH VIEW NGOẠI 2",
     "module": "DGMD-M05",
     "module_id": "DGMD-M05",
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 2",
     "contentNiche": "Học Tiếng Anh Thụ Động",
-    "niche": "VIEW NGOẠI 2",
+    "niche": "Học Tiếng Anh Thụ Động",
+    "niche_primary": "Học Tiếng Anh Thụ Động",
+    "nicheCode": "H36",
+    "nicheCodes": [
+      "H36"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1349,6 +1614,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -1397,7 +1664,11 @@
     "file": "video/VIDEO-0963e3/VIDEO-0963e3.mp4",
     "video_link": "video/VIDEO-0963e3/VIDEO-0963e3.mp4",
     "size": 207122312,
-    "size_mb": 197.53
+    "size_mb": 197.53,
+    "actual_topic": "Quy trình sản xuất video Nhận Biết Tiếng Anh cho trẻ em & người mới bắt đầu",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 19,
@@ -1406,13 +1677,22 @@
     "title": "Quy Trình Sản Xuất Video Xếp Hạng Shorts",
     "duration": "20:20",
     "duration_sec": 1220,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO 3 QUY TRÌNH VIEW NGOẠI 3",
     "category_name": "COMBO 3 QUY TRÌNH VIEW NGOẠI 3",
     "module": "DGMD-M06",
     "module_id": "DGMD-M06",
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 3",
     "contentNiche": "Bảng Xếp Hạng & Top Trend",
-    "niche": "VIEW NGOẠI 3",
+    "niche": "Bảng Xếp Hạng & Top Trend",
+    "niche_primary": "Bảng Xếp Hạng & Top Trend",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30",
+      "H39"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📱 Shorts / Reels"
@@ -1421,6 +1701,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -1474,7 +1756,11 @@
     "file": "video/VIDEO-54dd2a/VIDEO-54dd2a.mp4",
     "video_link": "video/VIDEO-54dd2a/VIDEO-54dd2a.mp4",
     "size": 306128997,
-    "size_mb": 291.95
+    "size_mb": 291.95,
+    "actual_topic": "Quy trình sản xuất video Bảng Xếp Hạng Shorts (Tier List / Ranking) thu hút view ngoại",
+    "target_market": "🌍 View Ngoại / 📱 Shorts / Reels",
+    "market_code": "GLOBAL,SHORTS",
+    "visual_audio_checked": true
   },
   {
     "index": 20,
@@ -1483,13 +1769,23 @@
     "title": "Quy Trình Sản Xuất Video PODCAST Sức Khỏe",
     "duration": "22:24",
     "duration_sec": 1344,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO 3 QUY TRÌNH VIEW NGOẠI 3",
     "category_name": "COMBO 3 QUY TRÌNH VIEW NGOẠI 3",
     "module": "DGMD-M06",
     "module_id": "DGMD-M06",
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 3",
     "contentNiche": "Sức Khỏe & Đời Sống",
-    "niche": "VIEW NGOẠI 3",
+    "niche": "Sức Khỏe & Đời Sống",
+    "niche_primary": "Sức Khỏe & Đời Sống",
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1497,6 +1793,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -1556,7 +1854,11 @@
     "file": "video/VIDEO-73c662/VIDEO-73c662.mp4",
     "video_link": "video/VIDEO-73c662/VIDEO-73c662.mp4",
     "size": 179947449,
-    "size_mb": 171.61
+    "size_mb": 171.61,
+    "actual_topic": "Quy trình sản xuất video Podcast Sức Khỏe chia sẻ kiến thức y khoa thường thức",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 21,
@@ -1565,13 +1867,21 @@
     "title": "Quy Trình Sản Xuất Video Biến Đổi Nhân Vật View Nhật",
     "duration": "25:53",
     "duration_sec": 1553,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO 3 QUY TRÌNH VIEW NGOẠI 3",
     "category_name": "COMBO 3 QUY TRÌNH VIEW NGOẠI 3",
     "module": "DGMD-M06",
     "module_id": "DGMD-M06",
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 3",
     "contentNiche": "Biến Đổi Visual & Anime",
-    "niche": "VIEW NGOẠI 3",
+    "niche": "Biến Đổi Visual & Anime",
+    "niche_primary": "Biến Đổi Visual & Anime",
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1579,6 +1889,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -1629,7 +1941,11 @@
     "file": "video/VIDEO-bfdec7/VIDEO-bfdec7.mp4",
     "video_link": "video/VIDEO-bfdec7/VIDEO-bfdec7.mp4",
     "size": 298955482,
-    "size_mb": 285.11
+    "size_mb": 285.11,
+    "actual_topic": "Quy trình sản xuất video Biến Đổi Nhân Vật Hoạt Hình sang Phiên Bản Thực Tế / Robot săn View Nhật",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 22,
@@ -1638,13 +1954,21 @@
     "title": "Quy Trình Sản Xuất Video Ghibli ASMR ",
     "duration": "13:53",
     "duration_sec": 833,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO 3 QUY TRÌNH VIEW NGOẠI 3",
     "category_name": "COMBO 3 QUY TRÌNH VIEW NGOẠI 3",
     "module": "DGMD-M06",
     "module_id": "DGMD-M06",
     "module_title": "COMBO 3 QUY TRÌNH VIEW NGOẠI 3",
     "contentNiche": "Hoạt Hình Ghibli ASMR Mưa Bão & Gia Đình Ấm Cúng",
-    "niche": "VIEW NGOẠI 3",
+    "niche": "Hoạt Hình Ghibli ASMR Mưa Bão & Gia Đình Ấm Cúng",
+    "niche_primary": "Hoạt Hình Ghibli ASMR Mưa Bão & Gia Đình Ấm Cúng",
+    "nicheCode": "H37",
+    "nicheCodes": [
+      "H37"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1653,6 +1977,8 @@
     "badge": "PRO",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -1719,7 +2045,11 @@
     "file": "video/VIDEO-7e6773/VIDEO-7e6773.mp4",
     "video_link": "video/VIDEO-7e6773/VIDEO-7e6773.mp4",
     "size": 195091862,
-    "size_mb": 186.05
+    "size_mb": 186.05,
+    "actual_topic": "Quy Trình Sản Xuất Phim Hoạt Hình Ghibli ASMR Gia Đình Trong Mưa Bão Hướng Tới Thị Trường Hoa Kỳ Và Nhật Bản",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 23,
@@ -1728,13 +2058,21 @@
     "title": "Quy Trình Sản Xuất Video Reels Tiếng Anh",
     "duration": "14:58",
     "duration_sec": 898,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1",
     "category_name": "COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1",
     "module": "DGMD-M07",
     "module_id": "DGMD-M07",
     "module_title": "COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1",
     "contentNiche": "Học Tiếng Anh Thụ Động",
-    "niche": "SẢN XUẤT FACEBOOK 1",
+    "niche": "Học Tiếng Anh Thụ Động",
+    "niche_primary": "Học Tiếng Anh Thụ Động",
+    "nicheCode": "H36",
+    "nicheCodes": [
+      "H36"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook",
@@ -1744,6 +2082,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -1791,7 +2131,11 @@
     "file": "video/VIDEO-77e80c/VIDEO-77e80c.mp4",
     "video_link": "video/VIDEO-77e80c/VIDEO-77e80c.mp4",
     "size": 220432685,
-    "size_mb": 210.22
+    "size_mb": 210.22,
+    "actual_topic": "Quy trình xây dựng Fanpage Reels Tiếng Anh mẹ và bé đồng nhất nhân vật 3D Pixar (Case study Page Thế Giới Anh Ngữ Của Bé 227K follow - video 2,3M view) bằng Pinterest, Google Flow (Nano Banana 2), ChatGPT, Grok Imagine (720p 10s) & CapCut PC.",
+    "target_market": "🌍 View Ngoại / 📘 Facebook / 📱 Shorts / Reels",
+    "market_code": "GLOBAL,FB,SHORTS",
+    "visual_audio_checked": true
   },
   {
     "index": 24,
@@ -1800,13 +2144,23 @@
     "title": "Quy Trình Sản Xuất Page Triệu View",
     "duration": "17:42",
     "duration_sec": 1062,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1",
     "category_name": "COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1",
     "module": "DGMD-M07",
     "module_id": "DGMD-M07",
     "module_title": "COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1",
     "contentNiche": "Phát Triển Kênh & Kỹ Thuật YouTube",
-    "niche": "SẢN XUẤT FACEBOOK 1",
+    "niche": "Phát Triển Kênh & Kỹ Thuật YouTube",
+    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01",
+      "H07",
+      "H20"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -1815,6 +2169,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -1861,7 +2217,11 @@
     "file": "video/VIDEO-5a4861/VIDEO-5a4861.mp4",
     "video_link": "video/VIDEO-5a4861/VIDEO-5a4861.mp4",
     "size": 116288113,
-    "size_mb": 110.9
+    "size_mb": 110.9,
+    "actual_topic": "Quy trình xây dựng Fanpage Reels Triệu View ngách Thử thách dừng hình khớp viền (Pause Challenge - Case study Page Mohamed Boukrine 3,1M follow, video 56M & 35M view) bằng Pinterest, Picsart Pro (tạo 3 lớp ảnh + đảo ngược viền Stroke đỏ), ChatGPT & Keyframe CapCut PC.",
+    "target_market": "🌍 View Ngoại / 📘 Facebook",
+    "market_code": "GLOBAL,FB",
+    "visual_audio_checked": true
   },
   {
     "index": 25,
@@ -1870,13 +2230,24 @@
     "title": "Update Quy Trình Sản Xuất Video Phật Pháp 2",
     "duration": "17:38",
     "duration_sec": 1058,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1",
     "category_name": "COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1",
     "module": "DGMD-M07",
     "module_id": "DGMD-M07",
     "module_title": "COMBO QUY TRÌNH SẢN XUẤT FACEBOOK 1",
     "contentNiche": "Phật Pháp & Tâm Linh",
-    "niche": "SẢN XUẤT FACEBOOK 1",
+    "niche": "Phật Pháp & Tâm Linh",
+    "niche_primary": "Phật Pháp & Tâm Linh",
+    "nicheCode": "H02",
+    "nicheCodes": [
+      "H02",
+      "H05",
+      "H08",
+      "H12"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -1885,6 +2256,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -1931,7 +2304,11 @@
     "file": "video/VIDEO-ca7ecf/VIDEO-ca7ecf.mp4",
     "video_link": "video/VIDEO-ca7ecf/VIDEO-ca7ecf.mp4",
     "size": 142525973,
-    "size_mb": 135.92
+    "size_mb": 135.92,
+    "actual_topic": "Quy trình nâng cấp sản xuất hàng loạt 2 video Reels Phật Pháp kịch tính (Đức Phật Tổ đối kháng Quỷ Satan kèm phép màu biến hóa ở giây thứ 2 - Case study Facebook Dinh Hieu chưa đến 7 ngày đạt 1.000.000 view, video 3,4K like & 906 bình luận) bằng Pinterest, ChatGPT, Google Flow (Nano Banana 2), Grok Imagine & phím tắt I/O trên CapCut PC.",
+    "target_market": "🌍 View Ngoại / 📘 Facebook",
+    "market_code": "GLOBAL,FB",
+    "visual_audio_checked": true
   },
   {
     "index": 26,
@@ -1940,13 +2317,21 @@
     "title": "Quy Trình Sản Xuất Video Nhạc Chầu Văn",
     "duration": "13:16",
     "duration_sec": 796,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "category_name": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "module": "DGMD-M08",
     "module_id": "DGMD-M08",
     "module_title": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "contentNiche": "Âm Nhạc Truyền Thống & Tâm Linh (Nhạc Chầu Văn AI)",
-    "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche": "Âm Nhạc Truyền Thống & Tâm Linh (Nhạc Chầu Văn AI)",
+    "niche_primary": "Âm Nhạc Truyền Thống & Tâm Linh (Nhạc Chầu Văn AI)",
+    "nicheCode": "H40",
+    "nicheCodes": [
+      "H40"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -1955,6 +2340,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -2004,7 +2391,11 @@
     "file": "video/VIDEO-f2ebfb/VIDEO-f2ebfb.mp4",
     "video_link": "video/VIDEO-f2ebfb/VIDEO-f2ebfb.mp4",
     "size": 200201037,
-    "size_mb": 190.93
+    "size_mb": 190.93,
+    "actual_topic": "Quy trình sản xuất MV Nhạc Chầu Văn dài 16:9 tối ưu RPM cao (Case study kênh Phật Giáo Làng Sen đạt 897K view bài Văn Cô Bơ Thoải Phủ) bằng cách lấy Bản chép lời YouTube đưa vào ChatGPT viết lại lời mới + Style Prompt cho Suno AI (xuất WAV), tách nền ảnh tham chiếu Pinterest và sinh 30 cặp Prompt Ảnh/Video 16:9 trên Grok Imagine.",
+    "target_market": "🇻🇳 Việt Nam / 🌍 View Ngoại",
+    "market_code": "VN,GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 27,
@@ -2013,13 +2404,21 @@
     "title": "Quy Trình Sản Xuất Video Nhạc Xẩm",
     "duration": "09:04",
     "duration_sec": 544,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "category_name": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "module": "DGMD-M08",
     "module_id": "DGMD-M08",
     "module_title": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "contentNiche": "Âm Nhạc Dân Gian & Đời Sống (Nhạc Xẩm AI)",
-    "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche": "Âm Nhạc Dân Gian & Đời Sống (Nhạc Xẩm AI)",
+    "niche_primary": "Âm Nhạc Dân Gian & Đời Sống (Nhạc Xẩm AI)",
+    "nicheCode": "H40",
+    "nicheCodes": [
+      "H40"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2028,6 +2427,8 @@
     "badge": "QUAN TRỌNG",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -2077,7 +2478,11 @@
     "file": "video/VIDEO-043b07/VIDEO-043b07.mp4",
     "video_link": "video/VIDEO-043b07/VIDEO-043b07.mp4",
     "size": 123554554,
-    "size_mb": 117.83
+    "size_mb": 117.83,
+    "actual_topic": "Quy trình sản xuất video Nhạc Xẩm AI nhắm vào tệp khán giả người lớn/trung niên (Case study kênh Xẩm-Đời đạt 420K view sau 3 tuần) theo luồng đảo ngược 'Tạo Ảnh Trước - Sáng Tác Nhạc Sau' ngay trên ChatGPT và Suno AI, kết hợp hậu kỳ 1 ảnh tĩnh trên CapCut PC bằng hiệu ứng Camera rung, nhãn dán đĩa xoay và phụ đề thủ công 2 câu/lần.",
+    "target_market": "🇻🇳 Việt Nam / 🌍 View Ngoại",
+    "market_code": "VN,GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 28,
@@ -2086,13 +2491,22 @@
     "title": "Quy Trình Sản Xuất Video Review Phim",
     "duration": "14:05",
     "duration_sec": 845,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "category_name": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "module": "DGMD-M08",
     "module_id": "DGMD-M08",
     "module_title": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "contentNiche": "Review Phim & Hoạt Hình Câu Cá (Douyin Vietsub)",
-    "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche": "Review Phim & Hoạt Hình Câu Cá (Douyin Vietsub)",
+    "niche_primary": "Review Phim & Hoạt Hình Câu Cá (Douyin Vietsub)",
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22",
+      "H23"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2101,6 +2515,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -2151,7 +2567,11 @@
     "file": "video/VIDEO-2b7592/VIDEO-2b7592.mp4",
     "video_link": "video/VIDEO-2b7592/VIDEO-2b7592.mp4",
     "size": 173197742,
-    "size_mb": 165.17
+    "size_mb": 165.17,
+    "actual_topic": "Quy trình sản xuất video Review Hoạt Hình Câu Cá Vạn Cân triệu view từ Douyin: Khảo sát kênh mẫu (@redevietsub 200K view/ngày, @caucavancanchinhchu, @cameosub), dùng Google Dịch lấy từ khóa tiếng Trung phồn thể (釣魚動畫), tải không logo qua Snaptik Douyin (UnduhTikTok), dựng CapCut (Tách giọng nói, Phụ đề tự động Trung-Việt, TTS 'Cô gái hoạt ngôn' tốc độ 1.2x giữ cao độ, hạ nhạc nền -24.2 dB, nhân đôi layer + Blur 100% + Mask đảo ngược che sub gốc, phông Anton/Bangers-Regular) và tái tạo Thumbnail CTR cao bằng ChatGPT.",
+    "target_market": "🇻🇳 Việt Nam / 🌍 View Ngoại",
+    "market_code": "VN,GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 29,
@@ -2160,13 +2580,22 @@
     "title": "Quy Trình Sản Xuất Video Lời Phật Dạy",
     "duration": "22:23",
     "duration_sec": 1343,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "category_name": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "module": "DGMD-M08",
     "module_id": "DGMD-M08",
     "module_title": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "contentNiche": "Tâm Linh & Lời Phật Dạy (Video Dài 60–120 Phút)",
-    "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche": "Tâm Linh & Lời Phật Dạy (Video Dài 60–120 Phút)",
+    "niche_primary": "Tâm Linh & Lời Phật Dạy (Video Dài 60–120 Phút)",
+    "nicheCode": "H02",
+    "nicheCodes": [
+      "H02",
+      "H12"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2175,6 +2604,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -2233,7 +2664,11 @@
     "file": "video/VIDEO-3b377d/VIDEO-3b377d.mp4",
     "video_link": "video/VIDEO-3b377d/VIDEO-3b377d.mp4",
     "size": 189974873,
-    "size_mb": 181.17
+    "size_mb": 181.17,
+    "actual_topic": "Quy trình sản xuất video Lời Phật Dạy dài 60–120 phút (15.000–20.000 chữ): Khảo sát kênh mẫu (@PhậtPhápLinhỨng-v7z, @loiphatdaymoinhat), lấy Bản chép lời (Transcript) video phổ biến đưa vào ChatGPT sinh 100 ý tưởng & chạy Master Prompt 17 phần, clone giọng Phật pháp bằng MiniMax Audio, tạo nhạc thiền định bằng Suno AI v5.5 ('Hoa sen bình minh'), tái tạo ảnh tượng Phật qua Pinterest + ChatGPT + Google Flow AI, tải video hoa trên Pexels và dựng hoàn chỉnh trên CapCut PC (Xóa nền tự động, Chroma Key nút Like/Sub, hiệu ứng Khói/Bokeh, Thumbnail chữ Anton).",
+    "target_market": "🇻🇳 Việt Nam / 🌍 View Ngoại",
+    "market_code": "VN,GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 30,
@@ -2242,13 +2677,22 @@
     "title": "Quy Trình Sản Xuất Video AUDIO",
     "duration": "19:28",
     "duration_sec": 1168,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "category_name": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "module": "DGMD-M08",
     "module_id": "DGMD-M08",
     "module_title": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "contentNiche": "Truyện Audio Drama Tâm Lý & Ngôn Tình (Video Dài 16–60 Phút)",
-    "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche": "Truyện Audio Drama Tâm Lý & Ngôn Tình (Video Dài 16–60 Phút)",
+    "niche_primary": "Truyện Audio Drama Tâm Lý & Ngôn Tình (Video Dài 16–60 Phút)",
+    "nicheCode": "H15",
+    "nicheCodes": [
+      "H15",
+      "H23"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2257,6 +2701,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -2316,7 +2762,11 @@
     "file": "video/VIDEO-11a507/VIDEO-11a507.mp4",
     "video_link": "video/VIDEO-11a507/VIDEO-11a507.mp4",
     "size": 328460507,
-    "size_mb": 313.24
+    "size_mb": 313.24,
+    "actual_topic": "Quy trình sản xuất video Truyện Audio Drama tâm lý – đấu trí – yêu qua mạng dài 16–60 phút: Khảo sát 3 kênh mẫu (@MeoCungAudio, @KhoBáuTrọngSinh, @nhalamaudio), trích xuất Bản chép lời (Transcript) video đối thủ 200K view đưa vào ChatGPT sinh 100 ý tưởng mới và chạy Master Prompt 10 phần (9.500–12.000 từ), xuất giọng đọc trên MiniMax Audio (Polished Announcer, bật Long Text 200.000 ký tự, tốc độ 1.2x), tải nền giấy + sticker mèo/đĩa than trên Pinterest, tìm video Mukbang/ASMR dài 19 phút trên Douyin tải qua Cốc Cốc, dựng đa lớp trên CapCut PC (16:9, Mặt nạ Hình chữ nhật bo góc tròn, gộp Sticker thành Clip ghép áp hiệu ứng Camera rung, chỉnh tốc độ Audio 1.2x giữ cao độ) và thiết kế Thumbnail 1920x1080 trên Picsart với font Anton.",
+    "target_market": "🇻🇳 Việt Nam / 🌍 View Ngoại",
+    "market_code": "VN,GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 31,
@@ -2325,13 +2775,24 @@
     "title": "Quy Trình Sản Xuất Video Audio View Việt",
     "duration": "20:14",
     "duration_sec": 1214,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "category_name": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "module": "DGMD-M08",
     "module_id": "DGMD-M08",
     "module_title": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "contentNiche": "Truyện Audio Tâm Sự Tuổi Già & Gia Đình",
-    "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche": "Truyện Audio Tâm Sự Tuổi Già & Gia Đình",
+    "niche_primary": "Truyện Audio Tâm Sự Tuổi Già & Gia Đình",
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04",
+      "H09",
+      "H15",
+      "H34"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2340,6 +2801,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -2398,7 +2861,11 @@
     "file": "video/VIDEO-c0353f/VIDEO-c0353f.mp4",
     "video_link": "video/VIDEO-c0353f/VIDEO-c0353f.mp4",
     "size": 276563017,
-    "size_mb": 263.75
+    "size_mb": 263.75,
+    "actual_topic": "Bài 29 hướng dẫn toàn diện quy trình sản xuất dòng video Truyện Audio Tuổi Già & Tâm Lý Gia Đình View Việt dài 60–115 phút, nhắm trực tiếp vào tệp khán giả trung niên và người cao tuổi tại Việt Nam có tỷ lệ giữ chân cực cao. Giảng viên phân tích 2 kênh mẫu đang tăng trưởng mạnh chỉ với 24–49 video (Lắng Nghe Tuổi Già @HayLangNgheTuoiGia và Chuyện Đời Tuổi Già @chuyendoixechieu888), giải thích lợi thế làm View Việt không bị khấu trừ thuế Hoa Kỳ cao và cách gắn 3 thẻ hashtag chuẩn (#truyentuoigia #doctruyendemkhuya #truyenaudiogiadinh). Học viên được thực hành trọn bộ 5 công cụ: nạp Master Prompt 6 trang vào ChatGPT để sinh 100 ý tưởng không trùng lặp và triển khai truyện dài 41.000–60.000+ ký tự ('Người giữ cầu và chiếc đèn tín hiệu sáng ngày anh mất'), tải 5 video cánh đồng lúa miễn phí trên Pexels, lấy phông nền xanh lá cây và ảnh cụ già trên Pinterest đưa vào ChatGPT vẽ lại ảnh nhân vật AI tách nền, tạo giọng đọc 'Ngạn Kể Chuyện' trên Vbee Studio, dựng trên CapCut PC (tỷ lệ 16:9, tính năng Thay thế clip giữ nguyên vị trí khung cảnh quê, Phụ đề tự động font Anton đóng khung đen bo góc 28%, xuất 1080p) và thiết kế Thumbnail 1920x1080 chữ to trên Picsart.",
+    "target_market": "🇻🇳 Việt Nam / 🌍 View Ngoại",
+    "market_code": "VN,GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 32,
@@ -2407,13 +2874,21 @@
     "title": "Quy Trình Sản Xuất Video Hoạt Hình 2d Vẽ Tay",
     "duration": "14:40",
     "duration_sec": 880,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "category_name": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "module": "DGMD-M08",
     "module_id": "DGMD-M08",
     "module_title": "BỘ 6 QUY TRÌNH YOUTUBE VIEW VIỆT 1",
     "contentNiche": "Hoạt Hình 2D Vẽ Tay Làng Quê Việt Nam & Truyện Gia Đình",
-    "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche": "Hoạt Hình 2D Vẽ Tay Làng Quê Việt Nam & Truyện Gia Đình",
+    "niche_primary": "Hoạt Hình 2D Vẽ Tay Làng Quê Việt Nam & Truyện Gia Đình",
+    "nicheCode": "H25",
+    "nicheCodes": [
+      "H25"
+    ],
     "market": [
       "🇻🇳 Việt Nam"
     ],
@@ -2422,6 +2897,8 @@
     "badge": "PRO",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -2490,7 +2967,11 @@
     "file": "video/VIDEO-e02e02/VIDEO-e02e02.mp4",
     "video_link": "video/VIDEO-e02e02/VIDEO-e02e02.mp4",
     "size": 208652268,
-    "size_mb": 198.99
+    "size_mb": 198.99,
+    "actual_topic": "Quy Trình Sản Xuất Phim Hoạt Hình 2D Vẽ Tay Bối Cảnh Làng Quê Việt Nam Xưa Bằng Master Prompt V2.0 Đa Nền Tảng",
+    "target_market": "🇻🇳 Việt Nam",
+    "market_code": "VN",
+    "visual_audio_checked": true
   },
   {
     "index": 33,
@@ -2499,13 +2980,21 @@
     "title": "Quy Trình Sản Xuất Video Âm Thanh Động Vật ",
     "duration": "18:41",
     "duration_sec": 1121,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "category_name": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "module": "DGMD-M09",
     "module_id": "DGMD-M09",
     "module_title": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "contentNiche": "Âm Thanh Động Vật & Trẻ Em",
-    "niche": "YOUTUBE VIEW VIỆT & VIEW NGOẠI",
+    "niche": "Âm Thanh Động Vật & Trẻ Em",
+    "niche_primary": "Âm Thanh Động Vật & Trẻ Em",
+    "nicheCode": "H29",
+    "nicheCodes": [
+      "H29"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2514,6 +3003,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -2565,7 +3056,11 @@
     "file": "video/VIDEO-af2c29/VIDEO-af2c29.mp4",
     "video_link": "video/VIDEO-af2c29/VIDEO-af2c29.mp4",
     "size": 392674336,
-    "size_mb": 374.48
+    "size_mb": 374.48,
+    "actual_topic": "Bài 30 hướng dẫn chi tiết quy trình sản xuất dòng video Âm Thanh Động Vật (Animal Sounds / Farm Animals Compilation) đánh thị trường View Ngoại toàn cầu mà không cần tự đi quay phim hay dùng công cụ tạo video AI phức tạp. Giảng viên phân tích trực tiếp kênh đối thủ mẫu Animal Farm Sounds (@animalfarmsounds86) cùng các kênh đạt hàng triệu view/tháng trên kết quả tìm kiếm YouTube (@BlueBearKids, @QuizBlitz), đồng thời giải thích nguyên lý trẻ nhỏ 3–5 tuổi luôn xem bằng điện thoại và tài khoản Gmail của bố mẹ (người lớn). Quy trình thực chiến đi qua trọn bộ công cụ miễn phí: dùng ChatGPT liệt kê bảng tên động vật song ngữ Việt – Anh theo từng môi trường sống, lên Pexels tải các video động vật thực tế tỷ lệ ngang 16:9 (Chó, Mèo, Gà, Vịt, Bò), vào Pixabay (Sound Effects) tải hiệu ứng tiếng kêu thật của từng loài, dựng trên CapCut PC (tắt âm gốc video, làm mờ hai bên khung vuông, nhân bản tiếng kêu ngắn, bôi đen toàn bộ track âm thanh bật 'Chuẩn hóa âm lượng', chèn chữ tiếng Anh Dog/Cat/Chicken/Duck/Cow, áp chuyển tiếp 'Mờ chậm' cho toàn bộ clip, phủ bộ lọc '4K' cường độ 50%, xuất 1080p/2K 60fps) và lên Pinterest tải ảnh 7 con vật thật + nền cỏ xanh 16:9 để ghép Thumbnail 1920x1080 bằng tính năng 'Gỡ nền' trên Picsart.",
+    "target_market": "🇻🇳 Việt Nam / 🌍 View Ngoại",
+    "market_code": "VN,GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 34,
@@ -2574,13 +3069,21 @@
     "title": "Quy Trình Sản Xuất Video Bắt Nhịp Đọc Theo Chữ",
     "duration": "29:31",
     "duration_sec": 1771,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "category_name": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "module": "DGMD-M09",
     "module_id": "DGMD-M09",
     "module_title": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "contentNiche": "Trò Chơi Tương Tác & Thử Thách Bắt Nhịp (Say The Word On Beat)",
-    "niche": "YOUTUBE VIEW VIỆT & VIEW NGOẠI",
+    "niche": "Trò Chơi Tương Tác & Thử Thách Bắt Nhịp (Say The Word On Beat)",
+    "niche_primary": "Trò Chơi Tương Tác & Thử Thách Bắt Nhịp (Say The Word On Beat)",
+    "nicheCode": "H25",
+    "nicheCodes": [
+      "H25"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2589,6 +3092,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -2638,7 +3143,11 @@
     "file": "video/VIDEO-d8c6a8/VIDEO-d8c6a8.mp4",
     "video_link": "video/VIDEO-d8c6a8/VIDEO-d8c6a8.mp4",
     "size": 263395726,
-    "size_mb": 251.19
+    "size_mb": 251.19,
+    "actual_topic": "Quy trình sản xuất video thử thách 'Say The Word On Beat Challenge' (Đọc chữ/hình theo nhịp nhạc) theo mẫu kênh @WibloDares (440K views): Săn học liệu đối lập trên Pinterest (Ronaldo/Messi, Apple/Pen, Rumi/Mira, A/B, 1/2), thiết kế 8 thẻ vuông 1080x1080 viền đen & khung báo nhịp xanh lá trên Picsart, dựng lưới 8 ô (2 hàng x 4 cột) kèm hiệu ứng Camera rung và đảo phôi nhịp 1-1-2-2 / 2-2-1-1 trên CapCut PC.",
+    "target_market": "🇻🇳 Việt Nam / 🌍 View Ngoại",
+    "market_code": "VN,GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 35,
@@ -2647,13 +3156,22 @@
     "title": "Quy Trình Sản Xuất Video Có Sẵn Trên Nền Tảng Tiktok Bằng Máy Tính",
     "duration": "15:52",
     "duration_sec": 952,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "category_name": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "module": "DGMD-M09",
     "module_id": "DGMD-M09",
     "module_title": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "contentNiche": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (PC)",
-    "niche": "YOUTUBE VIEW VIỆT & VIEW NGOẠI",
+    "niche": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (PC)",
+    "niche_primary": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (PC)",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2662,6 +3180,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -2711,7 +3231,11 @@
     "file": "video/VIDEO-10991e/VIDEO-10991e.mp4",
     "video_link": "video/VIDEO-10991e/VIDEO-10991e.mp4",
     "size": 200837187,
-    "size_mb": 191.53
+    "size_mb": 191.53,
+    "actual_topic": "Quy trình khai thác video livestream có sẵn trên TikTok bằng máy tính để bật kiếm tiền YouTube trong 7 ngày (Case study kênh Hiếu Mang Dép 301.708 sub, 464.745 view & 18.000 giờ xem/28 ngày): Săn từ khóa trend + 'live' trên TikTok PC, tải qua Cốc Cốc/SnapTik, xử lý khung 16:9 + Mặt nạ bo góc + Nền mờ + Phụ đề tự động phông Anton xuất 720p trên CapCut PC và tạo Thumbnail 16:9 bằng ChatGPT.",
+    "target_market": "🇻🇳 Việt Nam / 🌍 View Ngoại",
+    "market_code": "VN,GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 36,
@@ -2720,13 +3244,22 @@
     "title": "Quy Trình Sản Xuất Video Có Sẵn Trên Nền Tảng Tiktok Bằng Điện Thoại",
     "duration": "09:22",
     "duration_sec": 562,
+    "resolution": "2K",
+    "width": 1080,
+    "height": 1920,
     "category": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "category_name": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "module": "DGMD-M09",
     "module_id": "DGMD-M09",
     "module_title": "COMBO 4 QUY TRÌNH YOUTUBE VIEW VIỆT & VIEW NGOẠI",
     "contentNiche": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (Mobile)",
-    "niche": "YOUTUBE VIEW VIỆT & VIEW NGOẠI",
+    "niche": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (Mobile)",
+    "niche_primary": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (Mobile)",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2735,6 +3268,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -2784,7 +3319,11 @@
     "file": "video/VIDEO-0056a9/VIDEO-0056a9.mp4",
     "video_link": "video/VIDEO-0056a9/VIDEO-0056a9.mp4",
     "size": 165828171,
-    "size_mb": 158.15
+    "size_mb": 158.15,
+    "actual_topic": "Quy trình sản xuất video dài 16:9 bắt trend từ TikTok hoàn toàn bằng điện thoại di động (Thực hành trực tiếp trên Samsung S25 Ultra): Tìm từ khóa 'Vua Quạt live' trên app TikTok, tải MP4 không logo bằng Google Chrome (SnapTik), biên tập trên CapCut Mobile (Đổi khung 16:9, Cắt xén, Mặt nạ hình chữ nhật bo góc, Làm mờ nền, Phụ đề tự động tiếng Việt, Xuất 720p), tạo Thumbnail 16:9 bằng app ChatGPT và đăng lên app YouTube.",
+    "target_market": "🇻🇳 Việt Nam / 🌍 View Ngoại",
+    "market_code": "VN,GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 37,
@@ -2793,13 +3332,22 @@
     "title": "Quy Trình Sản Xuất Tool Phát Trực Tiếp Đa Luồng",
     "duration": "11:50",
     "duration_sec": 710,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "category_name": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "module": "DGMD-M10",
     "module_id": "DGMD-M10",
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "contentNiche": "Tự Động Hóa & Lập Trình Tool Livestream Đa Luồng",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "Tự Động Hóa & Lập Trình Tool Livestream Đa Luồng",
+    "niche_primary": "Tự Động Hóa & Lập Trình Tool Livestream Đa Luồng",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-05"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -2807,6 +3355,8 @@
     "badge": "QUAN TRỌNG",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -2873,7 +3423,11 @@
     "file": "video/VIDEO-5779d8/VIDEO-5779d8.mp4",
     "video_link": "video/VIDEO-5779d8/VIDEO-5779d8.mp4",
     "size": 146468446,
-    "size_mb": 139.68
+    "size_mb": 139.68,
+    "actual_topic": "Quy trình dùng ChatGPT tự code và đóng gói phần mềm Windows 'PHÁT TRỰC TIẾP ĐA LUỒNG v1.0.0' (.exe) theo mô hình kênh @LofiGirl (phát 10–20 luồng live 24/7): Kỹ thuật Meta-Prompting 2 bước (nhập prompt mồi tạo Master Prompt 18 mục rồi yêu cầu ChatGPT xuất mã nguồn PySide6), tải gói ffmpeg-release-essentials.zip từ gyan.dev nạp ffmpeg.exe/ffprobe.exe vào thư mục bin, chạy build_onefile.bat và phát lặp vô tận qua rtmp://a.rtmp.youtube.com/live2.",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 38,
@@ -2882,13 +3436,22 @@
     "title": "Update Quy Trình Sản Xuất tool Tự Động Và Nhất Quán Nhân Vật",
     "duration": "14:44",
     "duration_sec": 884,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "category_name": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "module": "DGMD-M10",
     "module_id": "DGMD-M10",
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "contentNiche": "Tooling & Tự Động Hóa YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "Tooling & Tự Động Hóa YouTube",
+    "niche_primary": "Tooling & Tự Động Hóa YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-05"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -2896,6 +3459,8 @@
     "badge": "QUAN TRỌNG",
     "free": true,
     "is_free": true,
+    "is_pro": false,
+    "access": "free",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -2963,7 +3528,11 @@
     "file": "video/VIDEO-17e135/VIDEO-17e135.mp4",
     "video_link": "video/VIDEO-17e135/VIDEO-17e135.mp4",
     "size": 259109320,
-    "size_mb": 247.11
+    "size_mb": 247.11,
+    "actual_topic": "Quy trình dùng ChatGPT sinh Master Prompt để tự động code Web-Tool tạo ảnh/video hàng loạt trên Google Flow (chạy 5 prompt/lượt, tự tải về máy) và khóa nhất quán nhân vật 100–1.000 phân cảnh",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 39,
@@ -2972,13 +3541,22 @@
     "title": "Tư Duy Tìm Từ Khóa Trước Khi Sản Xuất Video",
     "duration": "04:40",
     "duration_sec": 280,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "category_name": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "module": "DGMD-M10",
     "module_id": "DGMD-M10",
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "contentNiche": "SEO & Thuật Toán YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "SEO & Thuật Toán YouTube",
+    "niche_primary": "SEO & Thuật Toán YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -2986,6 +3564,8 @@
     "badge": "QUAN TRỌNG",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -3039,7 +3619,11 @@
     "file": "video/VIDEO-743af8/VIDEO-743af8.mp4",
     "video_link": "video/VIDEO-743af8/VIDEO-743af8.mp4",
     "size": 57002113,
-    "size_mb": 54.36
+    "size_mb": 54.36,
+    "actual_topic": "4 trụ cột tư duy từ khóa quyết định 80% thành công trên YouTube: Bản chất hành vi tìm kiếm (case study Yoga & iPhone 17), cơ chế AI đọc từ khóa để phân phối, 5 vị trí đặt từ khóa (Tiêu đề, Lời nói trong video, Mô tả, Thẻ tag ẩn, từ khóa kênh) & công thức lọc 'từ khóa ngon' (kênh bé @GalaxyYoga 17,1N sub nhưng nổ 1,4M–2,6M view).",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 40,
@@ -3048,13 +3632,22 @@
     "title": "Cách Dùng Hashtag Đúng Để YouTube Hiểu Nội Dung Video",
     "duration": "05:59",
     "duration_sec": 359,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "category_name": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "module": "DGMD-M10",
     "module_id": "DGMD-M10",
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "contentNiche": "SEO & Thuật Toán YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "SEO & Thuật Toán YouTube",
+    "niche_primary": "SEO & Thuật Toán YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3062,6 +3655,8 @@
     "badge": "QUAN TRỌNG",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -3116,7 +3711,11 @@
     "file": "video/VIDEO-e3bcfa/VIDEO-e3bcfa.mp4",
     "video_link": "video/VIDEO-e3bcfa/VIDEO-e3bcfa.mp4",
     "size": 55375128,
-    "size_mb": 52.81
+    "size_mb": 52.81,
+    "actual_topic": "Bản chất và công thức sử dụng thẻ Hashtag (#) chuẩn thuật toán YouTube 2026: Phân tích dung lượng thẻ thực tế (#funny 475M video/39M kênh, #asmr 37M video/3.3M kênh vs #asmrfunny 3K video), 2 sai lầm làm sập đề xuất (Spam 20–30 thẻ & Gắn thẻ lệch chủ đề #monkey/#bongda), quy tắc cấm chèn # vào tiêu đề video dài và công thức 3–5 thẻ ở phần mô tả.",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 41,
@@ -3125,13 +3724,22 @@
     "title": "Khai Thác Google Trends Để Tìm Chủ Đề Viral",
     "duration": "06:49",
     "duration_sec": 409,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "category_name": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "module": "DGMD-M10",
     "module_id": "DGMD-M10",
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "contentNiche": "SEO & Thuật Toán YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "SEO & Thuật Toán YouTube",
+    "niche_primary": "SEO & Thuật Toán YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3139,6 +3747,8 @@
     "badge": "QUAN TRỌNG",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -3192,7 +3802,11 @@
     "file": "video/VIDEO-136554/VIDEO-136554.mp4",
     "video_link": "video/VIDEO-136554/VIDEO-136554.mp4",
     "size": 83586671,
-    "size_mb": 79.71
+    "size_mb": 79.71,
+    "actual_topic": "Phân loại 3 nhóm từ khóa (Đang Trend, Ngắn hạn, Dài hạn) và thực chiến Google Trends (United States, 5 năm qua, Tìm kiếm trên YouTube): Bắt sóng nhân vật tóc tím 'Rumi' (MV Golden 1,4 tỷ view, lai ghép Rumi unboxing/2D/AI), nhận diện bẫy trend ngắn hạn ('US and Iran'), và khai thác từ khóa dài hạn bất tử ('Jesus', 'Animal', 'Cat', 'Monkey' AI/2D/quay thật).",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 42,
@@ -3201,13 +3815,22 @@
     "title": "Hiểu Rõ 15 Danh Mục Quan Trọng Trong YouTube Studio",
     "duration": "16:51",
     "duration_sec": 1011,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "category_name": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "module": "DGMD-M10",
     "module_id": "DGMD-M10",
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "contentNiche": "SEO & Thuật Toán YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "SEO & Thuật Toán YouTube",
+    "niche_primary": "SEO & Thuật Toán YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3215,6 +3838,8 @@
     "badge": "QUAN TRỌNG",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -3265,7 +3890,11 @@
     "file": "video/VIDEO-52b908/VIDEO-52b908.mp4",
     "video_link": "video/VIDEO-52b908/VIDEO-52b908.mp4",
     "size": 305928869,
-    "size_mb": 291.76
+    "size_mb": 291.76,
+    "actual_topic": "Thực hành cấu hình Danh mục mặc định trên YouTube Studio và bóc tách chi tiết ma trận từ khóa của 15 Danh mục nội dung (8-10 nhánh chủ đề con/danh mục)",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 43,
@@ -3274,13 +3903,22 @@
     "title": "10 Sai Lầm Khiến YouTube Từ Chối Hoặc Tắt Kiếm Tiền",
     "duration": "13:27",
     "duration_sec": 807,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "category_name": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "module": "DGMD-M10",
     "module_id": "DGMD-M10",
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "contentNiche": "Quản Trị AdSense & Hạ Tầng Kênh",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "Quản Trị AdSense & Hạ Tầng Kênh",
+    "niche_primary": "Quản Trị AdSense & Hạ Tầng Kênh",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3288,6 +3926,8 @@
     "badge": "QUAN TRỌNG",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -3339,7 +3979,11 @@
     "file": "video/VIDEO-d22348/VIDEO-d22348.mp4",
     "video_link": "video/VIDEO-d22348/VIDEO-d22348.mp4",
     "size": 151413293,
-    "size_mb": 144.4
+    "size_mb": 144.4,
+    "actual_topic": "Giải phẫu 10 lỗi vi phạm chính sách khiến kênh YouTube bị từ chối bật kiếm tiền hoặc bị tắt kiếm tiền (Reup, Thiếu Transform Fair Use, Nhạc bản quyền, Nhạy cảm, Clickbait, Spam, AI không chỉnh sửa, Thiếu giọng nói con người, Tranh cãi tôn giáo/chính trị & Thiếu cải tiến)",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 44,
@@ -3348,13 +3992,22 @@
     "title": "Cách Tạo 1 Kênh Youtube Chuẩn Chủ Đề Và Danh Mục",
     "duration": "11:13",
     "duration_sec": 673,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "category_name": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "module": "DGMD-M10",
     "module_id": "DGMD-M10",
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "contentNiche": "Phát Triển Kênh & Kỹ Thuật YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "Phát Triển Kênh & Kỹ Thuật YouTube",
+    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3362,6 +4015,8 @@
     "badge": "NỔI BẬT",
     "free": true,
     "is_free": true,
+    "is_pro": false,
+    "access": "free",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -3411,7 +4066,11 @@
     "file": "video/VIDEO-36880b/VIDEO-36880b.mp4",
     "video_link": "video/VIDEO-36880b/VIDEO-36880b.mp4",
     "size": 136103333,
-    "size_mb": 129.8
+    "size_mb": 129.8,
+    "actual_topic": "Quy trình tạo kênh YouTube chuẩn chủ đề và 15 danh mục từ Gmail trắng: Đúc Master Prompt 7 phần trên ChatGPT phân tích ảnh chụp kênh đối thủ (@StorylineEnglishOfficial), lọc 5 tên kênh & 5 ID (@wisdomhistoryenglish), cài đặt danh mục Giáo dục (Education), Quốc gia Hoa Kỳ, phân quyền & xác minh tính năng trong YouTube Studio, thiết kế Avatar 1:1 & Banner 16:9 bằng Google Flow (Nano Banana 2).",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 45,
@@ -3420,13 +4079,22 @@
     "title": "Quy Trình Đăng Video Chuẩn SEO Trên Máy Tính",
     "duration": "07:22",
     "duration_sec": 442,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "category_name": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "module": "DGMD-M10",
     "module_id": "DGMD-M10",
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "contentNiche": "SEO & Thuật Toán YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "SEO & Thuật Toán YouTube",
+    "niche_primary": "SEO & Thuật Toán YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3434,6 +4102,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -3483,7 +4153,11 @@
     "file": "video/VIDEO-4483df/VIDEO-4483df.mp4",
     "video_link": "video/VIDEO-4483df/VIDEO-4483df.mp4",
     "size": 67591230,
-    "size_mb": 64.46
+    "size_mb": 64.46,
+    "actual_topic": "Quy trình 5 bước đăng tải video chuẩn SEO trên máy tính trong YouTube Studio (demo thực tế trên kênh @ChillBuồnStudio): Đổi tên file gốc MP4 và Thumbnail chứa từ khóa chính ('doraemon đến thăm việt nam'), dùng ChatGPT tạo 3 biến thể tiêu đề chạy Thử nghiệm A/B, viết mô tả chứa từ khóa kèm đúng 3–5 thẻ #hashtag và 3 thẻ tag ẩn, khai báo Sử dụng AI, chọn chuẩn 1 trong 15 Danh mục (Nhạc) và tính khung giờ thức dậy của quốc gia mục tiêu (VN / Hoa Kỳ) trước khi Xuất bản.",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 46,
@@ -3492,13 +4166,22 @@
     "title": "Các Góc Quay Khi Đặt Câu Prompt ",
     "duration": "06:02",
     "duration_sec": 362,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "category_name": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "module": "DGMD-M10",
     "module_id": "DGMD-M10",
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "contentNiche": "Prompt Engineering & Visual AI",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "Prompt Engineering & Visual AI",
+    "niche_primary": "Prompt Engineering & Visual AI",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-05"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3507,6 +4190,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -3562,7 +4247,11 @@
     "file": "video/VIDEO-ad6a82/VIDEO-ad6a82.mp4",
     "video_link": "video/VIDEO-ad6a82/VIDEO-ad6a82.mp4",
     "size": 99860202,
-    "size_mb": 95.23
+    "size_mb": 95.23,
+    "actual_topic": "Hệ thống 14 góc quay điện ảnh trong tài liệu 'Offline Thực Chiến.pdf' (Góc ngang toàn thân, Cận mặt, Trung cảnh, Toàn cảnh, 4 góc thấp, Góc qua vai, Góc nhìn từ trên cao, Góc rộng, Góc 3/4, Góc nghiêng, Góc nghiêng khung) và thực hành biến đổi góc máy từ 1 ảnh gốc Donald Trump trên Grok Imagine (grok.com/imagine) tỷ lệ 16:9.",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 47,
@@ -3571,13 +4260,22 @@
     "title": "Hãy Tạo Ra Master Prompt Trước Khi Sản Xuất Video",
     "duration": "09:45",
     "duration_sec": 585,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "category_name": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "module": "DGMD-M10",
     "module_id": "DGMD-M10",
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "contentNiche": "Prompt Engineering & Visual AI",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "Prompt Engineering & Visual AI",
+    "niche_primary": "Prompt Engineering & Visual AI",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-05"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3586,6 +4284,8 @@
     "badge": "NỔI BẬT",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -3650,7 +4350,11 @@
     "file": "video/VIDEO-fc62eb/VIDEO-fc62eb.mp4",
     "video_link": "video/VIDEO-fc62eb/VIDEO-fc62eb.mp4",
     "size": 140270094,
-    "size_mb": 133.77
+    "size_mb": 133.77,
+    "actual_topic": "Tư duy xây dựng Master Prompt trên ChatGPT để tự động sinh hàng loạt Prompt phân cảnh đồng nhất nhân vật trên Google Flow (Nano Banana 2)",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 48,
@@ -3659,13 +4363,22 @@
     "title": "Quy Trình Tạo Ra Tool Tự Động Nhất Quán Nhân Vật",
     "duration": "07:27",
     "duration_sec": 447,
+    "resolution": "1080p",
+    "width": 1920,
+    "height": 1080,
     "category": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "category_name": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "module": "DGMD-M10",
     "module_id": "DGMD-M10",
     "module_title": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
     "contentNiche": "Tooling & Tự Động Hóa YouTube",
-    "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche": "Tooling & Tự Động Hóa YouTube",
+    "niche_primary": "Tooling & Tự Động Hóa YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-05"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3674,6 +4387,8 @@
     "badge": "QUAN TRỌNG",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -3747,7 +4462,11 @@
     "file": "video/VIDEO-27e4e0/VIDEO-27e4e0.mp4",
     "video_link": "video/VIDEO-27e4e0/VIDEO-27e4e0.mp4",
     "size": 154966593,
-    "size_mb": 147.79
+    "size_mb": 147.79,
+    "actual_topic": "Quy trình dùng Master Prompt dựng Tool tự động tạo ảnh hàng loạt và khóa nhân vật tham chiếu ngay trong Trình tạo công cụ của Google Flow (Nano Banana)",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 49,
@@ -3756,13 +4475,21 @@
     "title": "Quy Trình Sản Xuất Video PHIM AI VIỆT ",
     "duration": "16:39",
     "duration_sec": 999,
+    "resolution": "4K",
+    "width": 3840,
+    "height": 2160,
     "category": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
     "category_name": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
     "module": "DGMD-M11",
     "module_id": "DGMD-M11",
     "module_title": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
     "contentNiche": "Phim Ngắn AI Drama Gia Đình Việt Nam",
-    "niche": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
+    "niche": "Phim Ngắn AI Drama Gia Đình Việt Nam",
+    "niche_primary": "Phim Ngắn AI Drama Gia Đình Việt Nam",
+    "nicheCode": "H38",
+    "nicheCodes": [
+      "H38"
+    ],
     "market": [
       "🇻🇳 Việt Nam"
     ],
@@ -3771,6 +4498,8 @@
     "badge": "PRO",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -3840,7 +4569,11 @@
     "file": "video/VIDEO-434f80/VIDEO-434f80.mp4",
     "video_link": "video/VIDEO-434f80/VIDEO-434f80.mp4",
     "size": 266165459,
-    "size_mb": 253.84
+    "size_mb": 253.84,
+    "actual_topic": "Quy Trình Sản Xuất Phim Ngắn AI Drama Gia Đình Việt Nam (Tổng Tài, Mẹ Chồng Nàng Dâu) Bằng Master Prompt V1.0",
+    "target_market": "🇻🇳 Việt Nam",
+    "market_code": "VN",
+    "visual_audio_checked": true
   },
   {
     "index": 50,
@@ -3849,13 +4582,22 @@
     "title": "Quy Trình Sản Xuất Phim AI Tình Huống Nhật 1",
     "duration": "14:08",
     "duration_sec": 848,
+    "resolution": "4K",
+    "width": 3840,
+    "height": 2160,
     "category": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
     "category_name": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
     "module": "DGMD-M11",
     "module_id": "DGMD-M11",
     "module_title": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
     "contentNiche": "Phim Ngắn AI Tình Huống Drama Nhật Bản",
-    "niche": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
+    "niche": "Phim Ngắn AI Tình Huống Drama Nhật Bản",
+    "niche_primary": "Phim Ngắn AI Tình Huống Drama Nhật Bản",
+    "nicheCode": "H15",
+    "nicheCodes": [
+      "H15",
+      "H38"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3864,6 +4606,8 @@
     "badge": "PRO",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -3930,7 +4674,11 @@
     "file": "video/VIDEO-ca0383/VIDEO-ca0383.mp4",
     "video_link": "video/VIDEO-ca0383/VIDEO-ca0383.mp4",
     "size": 213498388,
-    "size_mb": 203.61
+    "size_mb": 203.61,
+    "actual_topic": "Quy Trình Sản Xuất Phim Ngắn AI Tình Huống Drama Nhật Bản 36 Giây Bằng Master Prompt V1.0 Kiếm Tiền Đa Nền Tảng",
+    "target_market": "🌍 View Ngoại",
+    "market_code": "GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 51,
@@ -3939,13 +4687,22 @@
     "title": "Quy Trình Gắn Sản Phảm Affiliate ",
     "duration": "04:21",
     "duration_sec": 261,
+    "resolution": "2K",
+    "width": 2560,
+    "height": 1440,
     "category": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
     "category_name": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
     "module": "DGMD-M11",
     "module_id": "DGMD-M11",
     "module_title": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
     "contentNiche": "Kiếm Tiền Shopee Affiliate Trên Fanpage & Phim Ngắn AI",
-    "niche": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
+    "niche": "Kiếm Tiền Shopee Affiliate Trên Fanpage & Phim Ngắn AI",
+    "niche_primary": "Kiếm Tiền Shopee Affiliate Trên Fanpage & Phim Ngắn AI",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt Nam"
     ],
@@ -3954,6 +4711,8 @@
     "badge": "PRO",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -3994,7 +4753,11 @@
     "file": "video/VIDEO-fa13f3/VIDEO-fa13f3.mp4",
     "video_link": "video/VIDEO-fa13f3/VIDEO-fa13f3.mp4",
     "size": 69249708,
-    "size_mb": 66.04
+    "size_mb": 66.04,
+    "actual_topic": "Quy Trình Liên Kết Tài Khoản Và Gắn Sản Phẩm Shopee Affiliate Hoa Hồng Cao Trên Fanpage Facebook",
+    "target_market": "🇻🇳 Việt Nam",
+    "market_code": "VN",
+    "visual_audio_checked": true
   },
   {
     "index": 52,
@@ -4003,13 +4766,21 @@
     "title": "Quy Trình Xây Dựng Thương Hiệu Bằng Kênh Podcast",
     "duration": "14:07",
     "duration_sec": 847,
+    "resolution": "2K",
+    "width": 2560,
+    "height": 1440,
     "category": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
     "category_name": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
     "module": "DGMD-M11",
     "module_id": "DGMD-M11",
     "module_title": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
     "contentNiche": "Xây Dựng Thương Hiệu Cá Nhân & Kênh Podcast AI",
-    "niche": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
+    "niche": "Xây Dựng Thương Hiệu Cá Nhân & Kênh Podcast AI",
+    "niche_primary": "Xây Dựng Thương Hiệu Cá Nhân & Kênh Podcast AI",
+    "nicheCode": "H20",
+    "nicheCodes": [
+      "H20"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -4019,6 +4790,8 @@
     "badge": "PRO",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -4088,7 +4861,11 @@
     "file": "video/VIDEO-7112d8/VIDEO-7112d8.mp4",
     "video_link": "video/VIDEO-7112d8/VIDEO-7112d8.mp4",
     "size": 206450220,
-    "size_mb": 196.89
+    "size_mb": 196.89,
+    "actual_topic": "Quy Trình Xây Dựng Thương Hiệu Cá Nhân Bằng Kênh Podcast AI Không Lộ Mặt Với Master Prompt V1.0",
+    "target_market": "🇻🇳 Việt Nam / 🌍 View Ngoại",
+    "market_code": "VN,GLOBAL",
+    "visual_audio_checked": true
   },
   {
     "index": 53,
@@ -4097,13 +4874,21 @@
     "title": "Quy Trình Sản Xuất Video  MAMA CAT ASMR ",
     "duration": "18:43",
     "duration_sec": 1123,
+    "resolution": "720p",
+    "width": 1280,
+    "height": 720,
     "category": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
     "category_name": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
     "module": "DGMD-M11",
     "module_id": "DGMD-M11",
     "module_title": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
     "contentNiche": "QUY TRÌNH HOẠT HÌNH AI NGOẠI",
-    "niche": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
+    "niche": "QUY TRÌNH HOẠT HÌNH AI NGOẠI",
+    "niche_primary": "QUY TRÌNH HOẠT HÌNH AI NGOẠI",
+    "nicheCode": "H37",
+    "nicheCodes": [
+      "H37"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -4113,6 +4898,8 @@
     "badge": "PRO",
     "free": false,
     "is_free": false,
+    "is_pro": true,
+    "access": "pro",
     "drm": false,
     "is_drm": false,
     "isDgmd": true,
@@ -4171,6 +4958,10 @@
     "file": "video/VIDEO-0419c4/VIDEO-0419c4.mp4",
     "video_link": "video/VIDEO-0419c4/VIDEO-0419c4.mp4",
     "size": 168049940,
-    "size_mb": 160.26
+    "size_mb": 160.26,
+    "actual_topic": "Quy trình sản xuất phim hoạt hình 3D Mama Cat Christmas ASMR bằng Master Prompt V3.0 trên ChatGPT, tạo ảnh tham chiếu nhân vật và render video 6 giây trên Google Flow, ghép âm thanh Pixabay/Suno trên CapCut",
+    "target_market": "🇻🇳 Việt Nam / 🌍 View Ngoại",
+    "market_code": "VN,GLOBAL",
+    "visual_audio_checked": true
   }
 ]

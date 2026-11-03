@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-aacc70&track=h2dev"
 # VIDEO-aacc70 — Chia Sẻ Tút (mẹo) Bám Theo Key Đối Thủ Làm Video Không Bao Giờ Bị 0 View
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M08|H2DEV-M08 — Module 6 — Mẹo & Thủ thuật khác phục lỗi gãy view và chống die kênh (TÚT - TRICK)]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/kham-kenh-toi-uu-tang-truong|Khám Kênh & Tối Ưu Tăng Trưởng]]  
 > - **Thị trường:** 🇰🇷 Hàn | **Thời lượng:** `7:07` | **Ngày đăng:** `2025-08-23`  

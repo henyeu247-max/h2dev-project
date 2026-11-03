@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-54422c&track=h2dev"
 # VIDEO-54422c — HƯỚNG DẪN TỰ TRAIN PROMPT - TỰ TẠO PROMPT CHO BẤT KỲ CHỦ ĐỀ NÀO MUỐN
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M05|H2DEV-M05 — Module 3 — Tự train Prompt bất kỳ chủ đề mình muốn]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/tu-dong-hoa-prompt-clone-voice|Tự Động Hóa Prompt & Clone Voice]]  
 > - **Thị trường:** 🇻🇳 Việt · 🌐 Ngoại | **Thời lượng:** `31:41` | **Ngày đăng:** `2025-12-08`  

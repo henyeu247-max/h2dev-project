@@ -28,6 +28,12 @@
     "position": 1,
     "contentNiche": "Thu Nhập Thực Tế & Lộ Trình View Ngoại",
     "niche": "Thu Nhập Thực Tế & Lộ Trình View Ngoại",
+    "niche_primary": "Thu Nhập Thực Tế & Lộ Trình View Ngoại",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -95,7 +101,6 @@
       "YouTube",
       "Zalo"
     ],
-    "niche_primary": "Thu Nhập Thực Tế & Lộ Trình View Ngoại",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -130,6 +135,12 @@
     "position": 2,
     "contentNiche": "Phương Pháp Bán Content & Luật Fair Use Cho Người Làm 1 Mình",
     "niche": "Phương Pháp Bán Content & Luật Fair Use Cho Người Làm 1 Mình",
+    "niche_primary": "Phương Pháp Bán Content & Luật Fair Use Cho Người Làm 1 Mình",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -201,7 +212,6 @@
       "YouTube",
       "Fair Use"
     ],
-    "niche_primary": "Phương Pháp Bán Content & Luật Fair Use Cho Người Làm 1 Mình",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -236,6 +246,12 @@
     "position": 3,
     "contentNiche": "Kế Hoạch Tổng Thể 7 Bước & Bộ Công Cụ Triển Khai Kênh 1 Người",
     "niche": "Kế Hoạch Tổng Thể 7 Bước & Bộ Công Cụ Triển Khai Kênh 1 Người",
+    "niche_primary": "Kế Hoạch Tổng Thể 7 Bước & Bộ Công Cụ Triển Khai Kênh 1 Người",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -325,7 +341,6 @@
       "Leonardo AI",
       "Excel"
     ],
-    "niche_primary": "Kế Hoạch Tổng Thể 7 Bước & Bộ Công Cụ Triển Khai Kênh 1 Người",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -360,6 +375,12 @@
     "position": 4,
     "contentNiche": "Chọn Chủ Đề Ngách & Chiến Lược Dream 100",
     "niche": "Chọn Chủ Đề Ngách & Chiến Lược Dream 100",
+    "niche_primary": "Chọn Chủ Đề Ngách & Chiến Lược Dream 100",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-02"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -464,7 +485,6 @@
       "Google",
       "Zalo"
     ],
-    "niche_primary": "Chọn Chủ Đề Ngách & Chiến Lược Dream 100",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -499,6 +519,12 @@
     "position": 5,
     "contentNiche": "Quy Trình Lên Kịch Bản Shu-Ha-Ri & 3 Phương Pháp Sáng Tạo Content",
     "niche": "Quy Trình Lên Kịch Bản Shu-Ha-Ri & 3 Phương Pháp Sáng Tạo Content",
+    "niche_primary": "Quy Trình Lên Kịch Bản Shu-Ha-Ri & 3 Phương Pháp Sáng Tạo Content",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -584,7 +610,6 @@
       "Facebook",
       "Excel"
     ],
-    "niche_primary": "Quy Trình Lên Kịch Bản Shu-Ha-Ri & 3 Phương Pháp Sáng Tạo Content",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -619,6 +644,12 @@
     "position": 6,
     "contentNiche": "Kho Tài Nguyên Video, Giọng Đọc AI & Nguồn Thuê Nhân Sự Giá Rẻ",
     "niche": "Kho Tài Nguyên Video, Giọng Đọc AI & Nguồn Thuê Nhân Sự Giá Rẻ",
+    "niche_primary": "Kho Tài Nguyên Video, Giọng Đọc AI & Nguồn Thuê Nhân Sự Giá Rẻ",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -710,7 +741,6 @@
       "Epidemic Sound",
       "Shazam"
     ],
-    "niche_primary": "Kho Tài Nguyên Video, Giọng Đọc AI & Nguồn Thuê Nhân Sự Giá Rẻ",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -745,6 +775,12 @@
     "position": 7,
     "contentNiche": "Tiêu Chí Dựng Video Triệu View & 7 Điều Cấm Kỵ Cho Editor",
     "niche": "Tiêu Chí Dựng Video Triệu View & 7 Điều Cấm Kỵ Cho Editor",
+    "niche_primary": "Tiêu Chí Dựng Video Triệu View & 7 Điều Cấm Kỵ Cho Editor",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -836,7 +872,6 @@
       "Social Blade",
       "Excel"
     ],
-    "niche_primary": "Tiêu Chí Dựng Video Triệu View & 7 Điều Cấm Kỵ Cho Editor",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -871,6 +906,12 @@
     "position": 8,
     "contentNiche": "Quy Trình Nuôi Kênh & Tương Tác Chủ Động Tăng View Đầu",
     "niche": "Quy Trình Nuôi Kênh & Tương Tác Chủ Động Tăng View Đầu",
+    "niche_primary": "Quy Trình Nuôi Kênh & Tương Tác Chủ Động Tăng View Đầu",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -947,7 +988,6 @@
       "Dream 100",
       "GPM Login"
     ],
-    "niche_primary": "Quy Trình Nuôi Kênh & Tương Tác Chủ Động Tăng View Đầu",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -982,6 +1022,12 @@
     "position": 9,
     "contentNiche": "Quy Trình SEO & Upload Video Chuẩn Thuật Toán Đề Xuất",
     "niche": "Quy Trình SEO & Upload Video Chuẩn Thuật Toán Đề Xuất",
+    "niche_primary": "Quy Trình SEO & Upload Video Chuẩn Thuật Toán Đề Xuất",
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01",
+      "H06"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -1079,7 +1125,6 @@
       "Canva",
       "Zalo"
     ],
-    "niche_primary": "Quy Trình SEO & Upload Video Chuẩn Thuật Toán Đề Xuất",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -1114,6 +1159,12 @@
     "position": 10,
     "contentNiche": "Dream 100, Mô Hình Hóa & Tự Động Hóa Hệ Thống Kênh",
     "niche": "Dream 100, Mô Hình Hóa & Tự Động Hóa Hệ Thống Kênh",
+    "niche_primary": "Dream 100, Mô Hình Hóa & Tự Động Hóa Hệ Thống Kênh",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-05"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -1212,7 +1263,6 @@
       "TikTok",
       "vidIQ"
     ],
-    "niche_primary": "Dream 100, Mô Hình Hóa & Tự Động Hóa Hệ Thống Kênh",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -1247,6 +1297,12 @@
     "position": 11,
     "contentNiche": "Luật Bản Quyền Fair Use & Xử Lý Content ID Cho Kênh Bán Content",
     "niche": "Luật Bản Quyền Fair Use & Xử Lý Content ID Cho Kênh Bán Content",
+    "niche_primary": "Luật Bản Quyền Fair Use & Xử Lý Content ID Cho Kênh Bán Content",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -1316,7 +1372,6 @@
       "Instagram",
       "vidIQ"
     ],
-    "niche_primary": "Luật Bản Quyền Fair Use & Xử Lý Content ID Cho Kênh Bán Content",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -1328,9 +1383,9 @@
     "file": "video/VIDEO-2167d7/VIDEO-2167d7.mp4",
     "thumb": "assets/thumbs-huan/VIDEO-2167d7.png",
     "image": "assets/thumbs-huan/VIDEO-2167d7.png",
-    "resolution": "1080p",
-    "width": 1920,
-    "height": 1080,
+    "resolution": "4K",
+    "width": 3840,
+    "height": 2160,
     "badge": "MIỄN PHÍ",
     "size_mb": 631.69,
     "duration_sec": 1067,
@@ -1351,6 +1406,12 @@
     "position": 12,
     "contentNiche": "Luật Bản Quyền Fair Use & Bán Content",
     "niche": "Luật Bản Quyền Fair Use & Bán Content",
+    "niche_primary": "Luật Bản Quyền Fair Use & Bán Content",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -1432,7 +1493,6 @@
       "Reddit",
       "Instagram"
     ],
-    "niche_primary": "Luật Bản Quyền Fair Use & Bán Content",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -1467,6 +1527,16 @@
     "position": 13,
     "contentNiche": "Chọn Chủ Đề Ra Tiền Ngay (Tin Tức, Câu Chuyện & DIY)",
     "niche": "Chọn Chủ Đề Ra Tiền Ngay (Tin Tức, Câu Chuyện & DIY)",
+    "niche_primary": "Chọn Chủ Đề Ra Tiền Ngay (Tin Tức, Câu Chuyện & DIY)",
+    "nicheCode": "H18",
+    "nicheCodes": [
+      "H18",
+      "H19",
+      "H27",
+      "H30",
+      "H31",
+      "H32"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -1556,7 +1626,6 @@
       "Epidemic Sound",
       "Pixabay"
     ],
-    "niche_primary": "Chọn Chủ Đề Ra Tiền Ngay (Tin Tức, Câu Chuyện & DIY)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -1591,6 +1660,13 @@
     "position": 14,
     "contentNiche": "Case Study Doanh Thu Thực Tế & Bàn Đạp Nhóm Chủ Đề Nước Ngoài",
     "niche": "Case Study Doanh Thu Thực Tế & Bàn Đạp Nhóm Chủ Đề Nước Ngoài",
+    "niche_primary": "Case Study Doanh Thu Thực Tế & Bàn Đạp Nhóm Chủ Đề Nước Ngoài",
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -1673,7 +1749,6 @@
       "CafeF",
       "CafeBiz"
     ],
-    "niche_primary": "Case Study Doanh Thu Thực Tế & Bàn Đạp Nhóm Chủ Đề Nước Ngoài",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -1708,6 +1783,25 @@
     "position": 15,
     "contentNiche": "1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z",
     "niche": "1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z",
+    "niche_primary": "1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z",
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01",
+      "H02",
+      "H08",
+      "H09",
+      "H12",
+      "H13",
+      "H14",
+      "H15",
+      "H18",
+      "H19",
+      "H20",
+      "H21",
+      "H23",
+      "H26",
+      "H34"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -1798,7 +1892,6 @@
       "VideoScribe",
       "Storyblocks"
     ],
-    "niche_primary": "1. ĐẾ CHẾ KIẾM TIỀN YOUTUBE CHỈ VỚI 1 NGƯỜI TỪ A-Z",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -1833,6 +1926,12 @@
     "position": 16,
     "contentNiche": "Lộ trình 2 cấp độ (Level 1 & Level 2) cho người mới bắt đầu xây kênh YouTube",
     "niche": "Lộ trình 2 cấp độ (Level 1 & Level 2) cho người mới bắt đầu xây kênh YouTube",
+    "niche_primary": "Lộ trình 2 cấp độ (Level 1 & Level 2) cho người mới bắt đầu xây kênh YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -1891,7 +1990,6 @@
       "YouTube",
       "Excel"
     ],
-    "niche_primary": "Lộ trình 2 cấp độ (Level 1 & Level 2) cho người mới bắt đầu xây kênh YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -1926,6 +2024,12 @@
     "position": 17,
     "contentNiche": "Tổng quan hệ sinh thái quyền lợi, hỗ trợ trọn đời và kho kết quả thực tế YouTube Total Success",
     "niche": "Tổng quan hệ sinh thái quyền lợi, hỗ trợ trọn đời và kho kết quả thực tế YouTube Total Success",
+    "niche_primary": "Tổng quan hệ sinh thái quyền lợi, hỗ trợ trọn đời và kho kết quả thực tế YouTube Total Success",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -1996,7 +2100,6 @@
       "Facebook",
       "Zoom"
     ],
-    "niche_primary": "Tổng quan hệ sinh thái quyền lợi, hỗ trợ trọn đời và kho kết quả thực tế YouTube Total Success",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -2031,6 +2134,13 @@
     "position": 1,
     "contentNiche": "Năng lực Thực chiến Hệ thống Đa kênh & Chuyển đổi Thương hiệu Bán hàng",
     "niche": "Năng lực Thực chiến Hệ thống Đa kênh & Chuyển đổi Thương hiệu Bán hàng",
+    "niche_primary": "Năng lực Thực chiến Hệ thống Đa kênh & Chuyển đổi Thương hiệu Bán hàng",
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05",
+      "H07",
+      "H10"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -2112,7 +2222,6 @@
       "GODA",
       "SKPlayer"
     ],
-    "niche_primary": "Năng lực Thực chiến Hệ thống Đa kênh & Chuyển đổi Thương hiệu Bán hàng",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -2147,6 +2256,12 @@
     "position": 2,
     "contentNiche": "Tiêu chí Chọn Mentor & Hệ thống Chuyển giao Thực chiến",
     "niche": "Tiêu chí Chọn Mentor & Hệ thống Chuyển giao Thực chiến",
+    "niche_primary": "Tiêu chí Chọn Mentor & Hệ thống Chuyển giao Thực chiến",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -2214,7 +2329,6 @@
       "YouTube",
       "GODA"
     ],
-    "niche_primary": "Tiêu chí Chọn Mentor & Hệ thống Chuyển giao Thực chiến",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -2249,6 +2363,12 @@
     "position": 3,
     "contentNiche": "Cơ chế Kiếm tiền YouTube, Tối ưu RPM Ngoại & Chiến lược Kéo Đề xuất X10",
     "niche": "Cơ chế Kiếm tiền YouTube, Tối ưu RPM Ngoại & Chiến lược Kéo Đề xuất X10",
+    "niche_primary": "Cơ chế Kiếm tiền YouTube, Tối ưu RPM Ngoại & Chiến lược Kéo Đề xuất X10",
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05",
+      "H10"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -2327,7 +2447,6 @@
       "Social Blade",
       "GODA"
     ],
-    "niche_primary": "Cơ chế Kiếm tiền YouTube, Tối ưu RPM Ngoại & Chiến lược Kéo Đề xuất X10",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -2362,6 +2481,12 @@
     "position": 4,
     "contentNiche": "5 Nguồn Thu Nhập Gián Tiếp YouTube & Chiến Lược Affiliate Trọn Đời",
     "niche": "5 Nguồn Thu Nhập Gián Tiếp YouTube & Chiến Lược Affiliate Trọn Đời",
+    "niche_primary": "5 Nguồn Thu Nhập Gián Tiếp YouTube & Chiến Lược Affiliate Trọn Đời",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -2446,7 +2571,6 @@
       "ClickBank",
       "GODA"
     ],
-    "niche_primary": "5 Nguồn Thu Nhập Gián Tiếp YouTube & Chiến Lược Affiliate Trọn Đời",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -2481,6 +2605,12 @@
     "position": 5,
     "contentNiche": "Tư duy & Chiến lược Tăng trưởng Kênh (Điểm Aha Bùng Phát)",
     "niche": "Tư duy & Chiến lược Tăng trưởng Kênh (Điểm Aha Bùng Phát)",
+    "niche_primary": "Tư duy & Chiến lược Tăng trưởng Kênh (Điểm Aha Bùng Phát)",
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05",
+      "H10"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -2558,7 +2688,6 @@
       "Cốc Cốc",
       "GODA"
     ],
-    "niche_primary": "Tư duy & Chiến lược Tăng trưởng Kênh (Điểm Aha Bùng Phát)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -2593,6 +2722,12 @@
     "position": 6,
     "contentNiche": "Tư duy & Kỷ luật Vận hành Kênh (Đúng - Đủ - Đều)",
     "niche": "Tư duy & Kỷ luật Vận hành Kênh (Đúng - Đủ - Đều)",
+    "niche_primary": "Tư duy & Kỷ luật Vận hành Kênh (Đúng - Đủ - Đều)",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -2667,7 +2802,6 @@
       "Facebook",
       "GODA"
     ],
-    "niche_primary": "Tư duy & Kỷ luật Vận hành Kênh (Đúng - Đủ - Đều)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -2702,6 +2836,12 @@
     "position": 7,
     "contentNiche": "Nghiên cứu Thị trường Ngách & Định vị Thương hiệu (Vua Ngách)",
     "niche": "Nghiên cứu Thị trường Ngách & Định vị Thương hiệu (Vua Ngách)",
+    "niche_primary": "Nghiên cứu Thị trường Ngách & Định vị Thương hiệu (Vua Ngách)",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-02"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -2771,7 +2911,6 @@
       "Google AdSense",
       "GODA"
     ],
-    "niche_primary": "Nghiên cứu Thị trường Ngách & Định vị Thương hiệu (Vua Ngách)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -2806,6 +2945,11 @@
     "position": 8,
     "contentNiche": "Phân tích Case Study Đột phá Ngách & Hiệu ứng Hào quang",
     "niche": "Phân tích Case Study Đột phá Ngách & Hiệu ứng Hào quang",
+    "niche_primary": "Phân tích Case Study Đột phá Ngách & Hiệu ứng Hào quang",
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -2879,7 +3023,6 @@
       "Google AdSense",
       "GODA"
     ],
-    "niche_primary": "Phân tích Case Study Đột phá Ngách & Hiệu ứng Hào quang",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -2914,6 +3057,11 @@
     "position": 9,
     "contentNiche": "Nghiên Cứu Ngách & Mô Hình Hóa Đối Thủ",
     "niche": "Nghiên Cứu Ngách & Mô Hình Hóa Đối Thủ",
+    "niche_primary": "Nghiên Cứu Ngách & Mô Hình Hóa Đối Thủ",
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -2983,7 +3131,6 @@
     "tools_mentioned": [
       "YouTube"
     ],
-    "niche_primary": "Nghiên Cứu Ngách & Mô Hình Hóa Đối Thủ",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -3018,6 +3165,12 @@
     "position": 10,
     "contentNiche": "Chiến Lược Dream 100 & Nghiên Cứu Đối Thủ",
     "niche": "Chiến Lược Dream 100 & Nghiên Cứu Đối Thủ",
+    "niche_primary": "Chiến Lược Dream 100 & Nghiên Cứu Đối Thủ",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-02"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -3096,7 +3249,6 @@
       "Twitter",
       "Twitch"
     ],
-    "niche_primary": "Chiến Lược Dream 100 & Nghiên Cứu Đối Thủ",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -3131,6 +3283,12 @@
     "position": 11,
     "contentNiche": "Tư Duy Tăng Trưởng & Quy Luật Keep Going",
     "niche": "Tư Duy Tăng Trưởng & Quy Luật Keep Going",
+    "niche_primary": "Tư Duy Tăng Trưởng & Quy Luật Keep Going",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -3206,7 +3364,6 @@
       "YouTube",
       "YouTube Shorts"
     ],
-    "niche_primary": "Tư Duy Tăng Trưởng & Quy Luật Keep Going",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -3241,6 +3398,12 @@
     "position": 12,
     "contentNiche": "Case Study Điểm Bùng Phát & Doanh Thu Thực Tế",
     "niche": "Case Study Điểm Bùng Phát & Doanh Thu Thực Tế",
+    "niche_primary": "Case Study Điểm Bùng Phát & Doanh Thu Thực Tế",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -3310,7 +3473,6 @@
       "ElevenLabs",
       "Zalo"
     ],
-    "niche_primary": "Case Study Điểm Bùng Phát & Doanh Thu Thực Tế",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -3345,6 +3507,11 @@
     "position": 13,
     "contentNiche": "Đặt Tên Kênh & Tối Ưu SEO Thương Hiệu",
     "niche": "Đặt Tên Kênh & Tối Ưu SEO Thương Hiệu",
+    "niche_primary": "Đặt Tên Kênh & Tối Ưu SEO Thương Hiệu",
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -3422,7 +3589,6 @@
       "YouTube",
       "YouTube Studio"
     ],
-    "niche_primary": "Đặt Tên Kênh & Tối Ưu SEO Thương Hiệu",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -3457,6 +3623,12 @@
     "position": 14,
     "contentNiche": "Cấu Trúc Kênh Thương Hiệu & Tối Ưu YouTube Studio",
     "niche": "Cấu Trúc Kênh Thương Hiệu & Tối Ưu YouTube Studio",
+    "niche_primary": "Cấu Trúc Kênh Thương Hiệu & Tối Ưu YouTube Studio",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -3533,7 +3705,6 @@
       "Microsoft Word",
       "Microsoft Excel"
     ],
-    "niche_primary": "Cấu Trúc Kênh Thương Hiệu & Tối Ưu YouTube Studio",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -3568,6 +3739,12 @@
     "position": 1,
     "contentNiche": "Kho Ý Tưởng & Chiến Lược Content Triệu View",
     "niche": "Kho Ý Tưởng & Chiến Lược Content Triệu View",
+    "niche_primary": "Kho Ý Tưởng & Chiến Lược Content Triệu View",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-02"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -3639,7 +3816,6 @@
       "TikTok",
       "Instagram"
     ],
-    "niche_primary": "Kho Ý Tưởng & Chiến Lược Content Triệu View",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -3674,6 +3850,12 @@
     "position": 2,
     "contentNiche": "Mô Hình Kênh Faceless & Hệ Thống Hóa Doanh Nghiệp",
     "niche": "Mô Hình Kênh Faceless & Hệ Thống Hóa Doanh Nghiệp",
+    "niche_primary": "Mô Hình Kênh Faceless & Hệ Thống Hóa Doanh Nghiệp",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -3748,7 +3930,6 @@
     "tools_mentioned": [
       "YouTube"
     ],
-    "niche_primary": "Mô Hình Kênh Faceless & Hệ Thống Hóa Doanh Nghiệp",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -3783,6 +3964,12 @@
     "position": 3,
     "contentNiche": "Quy trình 80/20 & Quản trị vận hành kênh YouTube",
     "niche": "Quy trình 80/20 & Quản trị vận hành kênh YouTube",
+    "niche_primary": "Quy trình 80/20 & Quản trị vận hành kênh YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -3877,7 +4064,6 @@
       "vidIQ",
       "Shopee"
     ],
-    "niche_primary": "Quy trình 80/20 & Quản trị vận hành kênh YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -3912,6 +4098,12 @@
     "position": 4,
     "contentNiche": "Ngòi nổ nội dung (Nhân tố X) & Công thức Video Triệu View",
     "niche": "Ngòi nổ nội dung (Nhân tố X) & Công thức Video Triệu View",
+    "niche_primary": "Ngòi nổ nội dung (Nhân tố X) & Công thức Video Triệu View",
+    "nicheCode": "H24",
+    "nicheCodes": [
+      "H24",
+      "H29"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -3997,7 +4189,6 @@
       "Facebook Reels",
       "vidIQ"
     ],
-    "niche_primary": "Ngòi nổ nội dung (Nhân tố X) & Công thức Video Triệu View",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -4032,6 +4223,11 @@
     "position": 5,
     "contentNiche": "Công thức Góc Nhìn Mới (Multi-Angle) & Đón Luồng Đề Xuất Thịnh Hành",
     "niche": "Công thức Góc Nhìn Mới (Multi-Angle) & Đón Luồng Đề Xuất Thịnh Hành",
+    "niche_primary": "Công thức Góc Nhìn Mới (Multi-Angle) & Đón Luồng Đề Xuất Thịnh Hành",
+    "nicheCode": "H29",
+    "nicheCodes": [
+      "H29"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -4115,7 +4311,6 @@
       "Google",
       "Facebook"
     ],
-    "niche_primary": "Công thức Góc Nhìn Mới (Multi-Angle) & Đón Luồng Đề Xuất Thịnh Hành",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -4150,6 +4345,12 @@
     "position": 6,
     "contentNiche": "Định vị kênh, quản trị mục tiêu OKR & nguyên lý nội dung YouTube",
     "niche": "Định vị kênh, quản trị mục tiêu OKR & nguyên lý nội dung YouTube",
+    "niche_primary": "Định vị kênh, quản trị mục tiêu OKR & nguyên lý nội dung YouTube",
+    "nicheCode": "H24",
+    "nicheCodes": [
+      "H24",
+      "H29"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -4235,7 +4436,6 @@
       "Google",
       "Facebook"
     ],
-    "niche_primary": "Định vị kênh, quản trị mục tiêu OKR & nguyên lý nội dung YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -4270,6 +4470,12 @@
     "position": 7,
     "contentNiche": "Phân tích nguồn lưu lượng truy cập (Traffic Sources) trên YouTube",
     "niche": "Phân tích nguồn lưu lượng truy cập (Traffic Sources) trên YouTube",
+    "niche_primary": "Phân tích nguồn lưu lượng truy cập (Traffic Sources) trên YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -4360,7 +4566,6 @@
       "Word",
       "Excel"
     ],
-    "niche_primary": "Phân tích nguồn lưu lượng truy cập (Traffic Sources) trên YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -4395,6 +4600,11 @@
     "position": 8,
     "contentNiche": "Phân tích luồng khán giả & chiến lược sản xuất video ăn đề xuất",
     "niche": "Phân tích luồng khán giả & chiến lược sản xuất video ăn đề xuất",
+    "niche_primary": "Phân tích luồng khán giả & chiến lược sản xuất video ăn đề xuất",
+    "nicheCode": "H29",
+    "nicheCodes": [
+      "H29"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -4482,7 +4692,6 @@
       "Microsoft Word / Excel",
       "YouTube Community Tab"
     ],
-    "niche_primary": "Phân tích luồng khán giả & chiến lược sản xuất video ăn đề xuất",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -4517,6 +4726,12 @@
     "position": 9,
     "contentNiche": "Sáng tạo nội dung từ câu hỏi khán giả & chiếm lĩnh Top Tìm Kiếm",
     "niche": "Sáng tạo nội dung từ câu hỏi khán giả & chiếm lĩnh Top Tìm Kiếm",
+    "niche_primary": "Sáng tạo nội dung từ câu hỏi khán giả & chiếm lĩnh Top Tìm Kiếm",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -4603,7 +4818,6 @@
       "Facebook Group & Fanpage",
       "TikTok Comments"
     ],
-    "niche_primary": "Sáng tạo nội dung từ câu hỏi khán giả & chiếm lĩnh Top Tìm Kiếm",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -4638,6 +4852,12 @@
     "position": 10,
     "contentNiche": "Công thức đặt tiêu đề triệu view, tối ưu ngòi nổ & tử huyệt cảm xúc",
     "niche": "Công thức đặt tiêu đề triệu view, tối ưu ngòi nổ & tử huyệt cảm xúc",
+    "niche_primary": "Công thức đặt tiêu đề triệu view, tối ưu ngòi nổ & tử huyệt cảm xúc",
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05",
+      "H29"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -4722,7 +4942,6 @@
       "Sách Tử Huyệt Cảm Xúc - Roy Garn",
       "Sách Thôi Miên Bằng Ngôn Từ - Joe Vitale"
     ],
-    "niche_primary": "Công thức đặt tiêu đề triệu view, tối ưu ngòi nổ & tử huyệt cảm xúc",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -4757,6 +4976,11 @@
     "position": 11,
     "contentNiche": "Thiết kế Thumbnail & Tối ưu CTR",
     "niche": "Thiết kế Thumbnail & Tối ưu CTR",
+    "niche_primary": "Thiết kế Thumbnail & Tối ưu CTR",
+    "nicheCode": "H29",
+    "nicheCodes": [
+      "H29"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -4837,7 +5061,6 @@
       "TikTok",
       "Google"
     ],
-    "niche_primary": "Thiết kế Thumbnail & Tối ưu CTR",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -4872,6 +5095,12 @@
     "position": 12,
     "contentNiche": "Phễu Chuyển Đổi CTR & Giữ Chân Khán Giả",
     "niche": "Phễu Chuyển Đổi CTR & Giữ Chân Khán Giả",
+    "niche_primary": "Phễu Chuyển Đổi CTR & Giữ Chân Khán Giả",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -4941,7 +5170,6 @@
       "YouTube Shorts",
       "Reels"
     ],
-    "niche_primary": "Phễu Chuyển Đổi CTR & Giữ Chân Khán Giả",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -4976,6 +5204,11 @@
     "position": 13,
     "contentNiche": "Chiến Lược Ngòi Nổ & Nhân Bản Hệ Sinh Thái Kênh Doanh Thu Lớn",
     "niche": "Chiến Lược Ngòi Nổ & Nhân Bản Hệ Sinh Thái Kênh Doanh Thu Lớn",
+    "niche_primary": "Chiến Lược Ngòi Nổ & Nhân Bản Hệ Sinh Thái Kênh Doanh Thu Lớn",
+    "nicheCode": "H29",
+    "nicheCodes": [
+      "H29"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -5053,7 +5286,6 @@
       "YouTube Analytics",
       "AirServer"
     ],
-    "niche_primary": "Chiến Lược Ngòi Nổ & Nhân Bản Hệ Sinh Thái Kênh Doanh Thu Lớn",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -5088,6 +5320,12 @@
     "position": 14,
     "contentNiche": "Tìm Ngách & Chiến Lược Kênh Phụ Kéo Kênh Mới",
     "niche": "Tìm Ngách & Chiến Lược Kênh Phụ Kéo Kênh Mới",
+    "niche_primary": "Tìm Ngách & Chiến Lược Kênh Phụ Kéo Kênh Mới",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-02"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -5163,7 +5401,6 @@
       "Website",
       "AirServer"
     ],
-    "niche_primary": "Tìm Ngách & Chiến Lược Kênh Phụ Kéo Kênh Mới",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -5198,6 +5435,12 @@
     "position": 15,
     "contentNiche": "Nghiên Cứu từ khóa & SEO YouTube",
     "niche": "Nghiên Cứu từ khóa & SEO YouTube",
+    "niche_primary": "Nghiên Cứu từ khóa & SEO YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -5276,7 +5519,6 @@
       "Google",
       "TikTok"
     ],
-    "niche_primary": "Nghiên Cứu từ khóa & SEO YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -5311,6 +5553,12 @@
     "position": 16,
     "contentNiche": "Nghiên Cứu từ khóa Lý Tưởng & Chiến Lược Nội Dung 6-3-1",
     "niche": "Nghiên Cứu từ khóa Lý Tưởng & Chiến Lược Nội Dung 6-3-1",
+    "niche_primary": "Nghiên Cứu từ khóa Lý Tưởng & Chiến Lược Nội Dung 6-3-1",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-02"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -5392,7 +5640,6 @@
       "Zoom",
       "Gmail"
     ],
-    "niche_primary": "Nghiên Cứu từ khóa Lý Tưởng & Chiến Lược Nội Dung 6-3-1",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -5427,6 +5674,15 @@
     "position": 17,
     "contentNiche": "Quy Trình Sản Xuất Video Công Nghiệp & Cài Ngòi Nổ Triệu View",
     "niche": "Quy Trình Sản Xuất Video Công Nghiệp & Cài Ngòi Nổ Triệu View",
+    "niche_primary": "Quy Trình Sản Xuất Video Công Nghiệp & Cài Ngòi Nổ Triệu View",
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05",
+      "H11",
+      "H17",
+      "H18",
+      "H19"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -5526,7 +5782,6 @@
       "Douyin",
       "Facebook"
     ],
-    "niche_primary": "Quy Trình Sản Xuất Video Công Nghiệp & Cài Ngòi Nổ Triệu View",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -5561,6 +5816,11 @@
     "position": 18,
     "contentNiche": "Chiến Lược Jetlag & Đóng Đinh Motif từ khóa Triệu View",
     "niche": "Chiến Lược Jetlag & Đóng Đinh Motif từ khóa Triệu View",
+    "niche_primary": "Chiến Lược Jetlag & Đóng Đinh Motif từ khóa Triệu View",
+    "nicheCode": "H29",
+    "nicheCodes": [
+      "H29"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -5658,7 +5918,6 @@
       "Brands Vietnam",
       "YouTube Shorts"
     ],
-    "niche_primary": "Chiến Lược Jetlag & Đóng Đinh Motif từ khóa Triệu View",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -5693,6 +5952,12 @@
     "position": 19,
     "contentNiche": "SEO & Tối ưu kênh YouTube",
     "niche": "SEO & Tối ưu kênh YouTube",
+    "niche_primary": "SEO & Tối ưu kênh YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -5778,7 +6043,6 @@
       "Facebook",
       "Twitter"
     ],
-    "niche_primary": "SEO & Tối ưu kênh YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -5813,6 +6077,12 @@
     "position": 1,
     "contentNiche": "Nghiên cứu ngách & Ý tưởng (Swiped / Dream 100)",
     "niche": "Nghiên cứu ngách & Ý tưởng (Swiped / Dream 100)",
+    "niche_primary": "Nghiên cứu ngách & Ý tưởng (Swiped / Dream 100)",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-02"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -5889,7 +6159,6 @@
       "Note Card System",
       "Facebook"
     ],
-    "niche_primary": "Nghiên cứu ngách & Ý tưởng (Swiped / Dream 100)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -5924,6 +6193,11 @@
     "position": 2,
     "contentNiche": "Tư duy & Vận hành Hệ thống YouTube",
     "niche": "Tư duy & Vận hành Hệ thống YouTube",
+    "niche_primary": "Tư duy & Vận hành Hệ thống YouTube",
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -5999,7 +6273,6 @@
       "huan.vn",
       "GODA"
     ],
-    "niche_primary": "Tư duy & Vận hành Hệ thống YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -6034,6 +6307,12 @@
     "position": 3,
     "contentNiche": "Quản trị & Nhân bản Hệ thống YouTube",
     "niche": "Quản trị & Nhân bản Hệ thống YouTube",
+    "niche_primary": "Quản trị & Nhân bản Hệ thống YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -6105,7 +6384,6 @@
       "Excel",
       "glints.com"
     ],
-    "niche_primary": "Quản trị & Nhân bản Hệ thống YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -6140,6 +6418,12 @@
     "position": 4,
     "contentNiche": "Phát Triển Sự Nghiệp & Nhân Bản Đội Ngũ",
     "niche": "Phát Triển Sự Nghiệp & Nhân Bản Đội Ngũ",
+    "niche_primary": "Phát Triển Sự Nghiệp & Nhân Bản Đội Ngũ",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -6209,7 +6493,6 @@
       "YouTube",
       "Facebook"
     ],
-    "niche_primary": "Phát Triển Sự Nghiệp & Nhân Bản Đội Ngũ",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -6244,6 +6527,12 @@
     "position": 5,
     "contentNiche": "Lộ Trình Xây Kênh Từ Con Số 0",
     "niche": "Lộ Trình Xây Kênh Từ Con Số 0",
+    "niche_primary": "Lộ Trình Xây Kênh Từ Con Số 0",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -6321,7 +6610,6 @@
       "Shopee",
       "Facebook"
     ],
-    "niche_primary": "Lộ Trình Xây Kênh Từ Con Số 0",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -6356,6 +6644,12 @@
     "position": 6,
     "contentNiche": "Chiến Lược Ngoại Hóa & Công Thức RPM 30",
     "niche": "Chiến Lược Ngoại Hóa & Công Thức RPM 30",
+    "niche_primary": "Chiến Lược Ngoại Hóa & Công Thức RPM 30",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -6435,7 +6729,6 @@
       "TikTok",
       "Amazon"
     ],
-    "niche_primary": "Chiến Lược Ngoại Hóa & Công Thức RPM 30",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -6470,6 +6763,12 @@
     "position": 1,
     "contentNiche": "Mô Hình YouTube Faceless & Kỷ Luật Sản Xuất",
     "niche": "Mô Hình YouTube Faceless & Kỷ Luật Sản Xuất",
+    "niche_primary": "Mô Hình YouTube Faceless & Kỷ Luật Sản Xuất",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -6545,7 +6844,6 @@
       "ProShow Gold",
       "Google Ads"
     ],
-    "niche_primary": "Mô Hình YouTube Faceless & Kỷ Luật Sản Xuất",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -6580,6 +6878,11 @@
     "position": 2,
     "contentNiche": "Mô Hình Kinh Doanh Vô Hạn & Chiến Lược Nhân Bản YouTube Global",
     "niche": "Mô Hình Kinh Doanh Vô Hạn & Chiến Lược Nhân Bản YouTube Global",
+    "niche_primary": "Mô Hình Kinh Doanh Vô Hạn & Chiến Lược Nhân Bản YouTube Global",
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -6660,7 +6963,6 @@
       "Facebook",
       "Netflix"
     ],
-    "niche_primary": "Mô Hình Kinh Doanh Vô Hạn & Chiến Lược Nhân Bản YouTube Global",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -6695,6 +6997,12 @@
     "position": 3,
     "contentNiche": "Kiểm Soát Đầu Vào Đầu Ra & Chiến Lược Kênh Faceless RPM Cao",
     "niche": "Kiểm Soát Đầu Vào Đầu Ra & Chiến Lược Kênh Faceless RPM Cao",
+    "niche_primary": "Kiểm Soát Đầu Vào Đầu Ra & Chiến Lược Kênh Faceless RPM Cao",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -6777,7 +7085,6 @@
       "Twitter",
       "Zalo"
     ],
-    "niche_primary": "Kiểm Soát Đầu Vào Đầu Ra & Chiến Lược Kênh Faceless RPM Cao",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -6812,6 +7119,12 @@
     "position": 4,
     "contentNiche": "Tháp Hành Vi, Tư Duy Chọn Tương Lai & Định Lượng Video Đầu Vào",
     "niche": "Tháp Hành Vi, Tư Duy Chọn Tương Lai & Định Lượng Video Đầu Vào",
+    "niche_primary": "Tháp Hành Vi, Tư Duy Chọn Tương Lai & Định Lượng Video Đầu Vào",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -6895,7 +7208,6 @@
       "TikTok",
       "Khan Academy"
     ],
-    "niche_primary": "Tháp Hành Vi, Tư Duy Chọn Tương Lai & Định Lượng Video Đầu Vào",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -6930,6 +7242,12 @@
     "position": 5,
     "contentNiche": "Thiết Lập Mục Tiêu Thực Tế & Rèn Nội Lực Cá Nhân (Myself)",
     "niche": "Thiết Lập Mục Tiêu Thực Tế & Rèn Nội Lực Cá Nhân (Myself)",
+    "niche_primary": "Thiết Lập Mục Tiêu Thực Tế & Rèn Nội Lực Cá Nhân (Myself)",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -7008,7 +7326,6 @@
       "YouTube",
       "Facebook"
     ],
-    "niche_primary": "Thiết Lập Mục Tiêu Thực Tế & Rèn Nội Lực Cá Nhân (Myself)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -7043,6 +7360,12 @@
     "position": 6,
     "contentNiche": "Kỹ Năng Tự Học Shuhari & Kích Hoạt Điểm Aha Qua Dream 100",
     "niche": "Kỹ Năng Tự Học Shuhari & Kích Hoạt Điểm Aha Qua Dream 100",
+    "niche_primary": "Kỹ Năng Tự Học Shuhari & Kích Hoạt Điểm Aha Qua Dream 100",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-02"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -7121,7 +7444,6 @@
       "Facebook",
       "Dream 100"
     ],
-    "niche_primary": "Kỹ Năng Tự Học Shuhari & Kích Hoạt Điểm Aha Qua Dream 100",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -7156,6 +7478,12 @@
     "position": 7,
     "contentNiche": "Tư Duy Hệ Thống & Quy Luật Tăng Trưởng YouTube",
     "niche": "Tư Duy Hệ Thống & Quy Luật Tăng Trưởng YouTube",
+    "niche_primary": "Tư Duy Hệ Thống & Quy Luật Tăng Trưởng YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -7239,7 +7567,6 @@
       "Zalo",
       "Dream 100"
     ],
-    "niche_primary": "Tư Duy Hệ Thống & Quy Luật Tăng Trưởng YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -7274,6 +7601,12 @@
     "position": 8,
     "contentNiche": "Mô Hình Kinh Doanh & Tài Sản Số YouTube",
     "niche": "Mô Hình Kinh Doanh & Tài Sản Số YouTube",
+    "niche_primary": "Mô Hình Kinh Doanh & Tài Sản Số YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -7348,7 +7681,6 @@
     "tools_mentioned": [
       "YouTube"
     ],
-    "niche_primary": "Mô Hình Kinh Doanh & Tài Sản Số YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -7383,6 +7715,12 @@
     "position": 9,
     "contentNiche": "Phân Tích Dấu Vết Đối Thủ & Nhân Bản Hệ Thống",
     "niche": "Phân Tích Dấu Vết Đối Thủ & Nhân Bản Hệ Thống",
+    "niche_primary": "Phân Tích Dấu Vết Đối Thủ & Nhân Bản Hệ Thống",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -7457,7 +7795,6 @@
     "tools_mentioned": [
       "YouTube"
     ],
-    "niche_primary": "Phân Tích Dấu Vết Đối Thủ & Nhân Bản Hệ Thống",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -7492,6 +7829,12 @@
     "position": 10,
     "contentNiche": "Tư duy & Chiến lược Hệ thống YouTube",
     "niche": "Tư duy & Chiến lược Hệ thống YouTube",
+    "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -7557,7 +7900,6 @@
     "tools_mentioned": [
       "YouTube"
     ],
-    "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -7592,6 +7934,12 @@
     "position": 11,
     "contentNiche": "Tư duy & Chiến lược Hệ thống YouTube",
     "niche": "Tư duy & Chiến lược Hệ thống YouTube",
+    "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-05"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -7654,7 +8002,6 @@
       "Canva",
       "CapCut"
     ],
-    "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -7689,6 +8036,12 @@
     "position": 12,
     "contentNiche": "Tư duy & Chiến lược Hệ thống YouTube",
     "niche": "Tư duy & Chiến lược Hệ thống YouTube",
+    "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -7754,7 +8107,6 @@
     "tools_mentioned": [
       "YouTube"
     ],
-    "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -7789,6 +8141,12 @@
     "position": 13,
     "contentNiche": "Tư duy & Chiến lược Hệ thống YouTube",
     "niche": "Tư duy & Chiến lược Hệ thống YouTube",
+    "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -7848,7 +8206,6 @@
     "tools_mentioned": [
       "YouTube"
     ],
-    "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -7883,6 +8240,12 @@
     "position": 14,
     "contentNiche": "Tư duy & Chiến lược Hệ thống YouTube",
     "niche": "Tư duy & Chiến lược Hệ thống YouTube",
+    "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -7936,7 +8299,6 @@
     "mp4": "video/VIDEO-4868d7/VIDEO-4868d7.mp4",
     "size": 41398541,
     "tools_mentioned": [],
-    "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -7971,6 +8333,12 @@
     "position": 15,
     "contentNiche": "Tư duy & Chiến lược Hệ thống YouTube",
     "niche": "Tư duy & Chiến lược Hệ thống YouTube",
+    "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -8027,7 +8395,6 @@
     "tools_mentioned": [
       "YouTube"
     ],
-    "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -8062,6 +8429,12 @@
     "position": 16,
     "contentNiche": "Tư duy & Chiến lược Hệ thống YouTube",
     "niche": "Tư duy & Chiến lược Hệ thống YouTube",
+    "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -8118,7 +8491,6 @@
     "tools_mentioned": [
       "YouTube"
     ],
-    "niche_primary": "Tư duy & Chiến lược Hệ thống YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -8153,6 +8525,13 @@
     "position": 17,
     "contentNiche": "Chiến lược Bán Content & Phân tích Doanh thu Hệ thống Kênh Faceless",
     "niche": "Chiến lược Bán Content & Phân tích Doanh thu Hệ thống Kênh Faceless",
+    "niche_primary": "Chiến lược Bán Content & Phân tích Doanh thu Hệ thống Kênh Faceless",
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04",
+      "H27",
+      "H28"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -8237,7 +8616,6 @@
       "VideoScribe",
       "Vbee"
     ],
-    "niche_primary": "Chiến lược Bán Content & Phân tích Doanh thu Hệ thống Kênh Faceless",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -8272,6 +8650,12 @@
     "position": 18,
     "contentNiche": "Chiến lược Vùng Xám & Bán Content Lấy Ngắn Nuôi Dài",
     "niche": "Chiến lược Vùng Xám & Bán Content Lấy Ngắn Nuôi Dài",
+    "niche_primary": "Chiến lược Vùng Xám & Bán Content Lấy Ngắn Nuôi Dài",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -8342,7 +8726,6 @@
       "YouTube",
       "vidIQ"
     ],
-    "niche_primary": "Chiến lược Vùng Xám & Bán Content Lấy Ngắn Nuôi Dài",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -8377,6 +8760,11 @@
     "position": 19,
     "contentNiche": "Luật Kiếm Tiền YouTube, Kháng Cáo & 4 Trụ Cột Fair Use",
     "niche": "Luật Kiếm Tiền YouTube, Kháng Cáo & 4 Trụ Cột Fair Use",
+    "niche_primary": "Luật Kiếm Tiền YouTube, Kháng Cáo & 4 Trụ Cột Fair Use",
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -8461,7 +8849,6 @@
       "Google Docs",
       "Google Sheets"
     ],
-    "niche_primary": "Luật Kiếm Tiền YouTube, Kháng Cáo & 4 Trụ Cột Fair Use",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -8496,6 +8883,12 @@
     "position": 20,
     "contentNiche": "Case Study Học Viên Bật Kiếm Tiền & Tư Duy Làm Đơn Giản",
     "niche": "Case Study Học Viên Bật Kiếm Tiền & Tư Duy Làm Đơn Giản",
+    "niche_primary": "Case Study Học Viên Bật Kiếm Tiền & Tư Duy Làm Đơn Giản",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -8567,7 +8960,6 @@
       "Adobe Premiere",
       "Zalo"
     ],
-    "niche_primary": "Case Study Học Viên Bật Kiếm Tiền & Tư Duy Làm Đơn Giản",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -8602,6 +8994,12 @@
     "position": 21,
     "contentNiche": "Tổng Kết Tư Duy Ngày 1 & Quy Luật Tăng Trưởng Cấp Số Nhân",
     "niche": "Tổng Kết Tư Duy Ngày 1 & Quy Luật Tăng Trưởng Cấp Số Nhân",
+    "niche_primary": "Tổng Kết Tư Duy Ngày 1 & Quy Luật Tăng Trưởng Cấp Số Nhân",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -8669,7 +9067,6 @@
       "YouTube",
       "Google"
     ],
-    "niche_primary": "Tổng Kết Tư Duy Ngày 1 & Quy Luật Tăng Trưởng Cấp Số Nhân",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -8704,6 +9101,15 @@
     "position": 1,
     "contentNiche": "Nghiên cứu Chủ đề & Dream 100 View Ngoại",
     "niche": "Nghiên cứu Chủ đề & Dream 100 View Ngoại",
+    "niche_primary": "Nghiên cứu Chủ đề & Dream 100 View Ngoại",
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16",
+      "H18",
+      "H19"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -8794,7 +9200,6 @@
       "Google Sheets",
       "VPS"
     ],
-    "niche_primary": "Nghiên cứu Chủ đề & Dream 100 View Ngoại",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -8829,6 +9234,13 @@
     "position": 2,
     "contentNiche": "Chiến lược Dream 100 Video (3 Tháng - 1 Năm)",
     "niche": "Chiến lược Dream 100 Video (3 Tháng - 1 Năm)",
+    "niche_primary": "Chiến lược Dream 100 Video (3 Tháng - 1 Năm)",
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -8914,7 +9326,6 @@
       "Google Sheets",
       "1of10"
     ],
-    "niche_primary": "Chiến lược Dream 100 Video (3 Tháng - 1 Năm)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -8949,6 +9360,13 @@
     "position": 3,
     "contentNiche": "Phân tích DNA Video & Nguồn Tài nguyên Sản xuất",
     "niche": "Phân tích DNA Video & Nguồn Tài nguyên Sản xuất",
+    "niche_primary": "Phân tích DNA Video & Nguồn Tài nguyên Sản xuất",
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -9041,7 +9459,6 @@
       "YouTube Audio Library",
       "Epidemic Sound"
     ],
-    "niche_primary": "Phân tích DNA Video & Nguồn Tài nguyên Sản xuất",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -9076,6 +9493,13 @@
     "position": 4,
     "contentNiche": "Phân tích Kỹ thuật Kênh & Tối ưu SEO YouTube",
     "niche": "Phân tích Kỹ thuật Kênh & Tối ưu SEO YouTube",
+    "niche_primary": "Phân tích Kỹ thuật Kênh & Tối ưu SEO YouTube",
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -9162,7 +9586,6 @@
       "Google Translate",
       "Google Sheets"
     ],
-    "niche_primary": "Phân tích Kỹ thuật Kênh & Tối ưu SEO YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -9197,6 +9620,13 @@
     "position": 5,
     "contentNiche": "Triển khai Ý tưởng Kênh & Kế hoạch 30 Video Đầu tiên",
     "niche": "Triển khai Ý tưởng Kênh & Kế hoạch 30 Video Đầu tiên",
+    "niche_primary": "Triển khai Ý tưởng Kênh & Kế hoạch 30 Video Đầu tiên",
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -9286,7 +9716,6 @@
       "Google Sheets",
       "YouTube"
     ],
-    "niche_primary": "Triển khai Ý tưởng Kênh & Kế hoạch 30 Video Đầu tiên",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -9321,6 +9750,12 @@
     "position": 6,
     "contentNiche": "Quy trình sản xuất & Tư duy Shuhari",
     "niche": "Quy trình sản xuất & Tư duy Shuhari",
+    "niche_primary": "Quy trình sản xuất & Tư duy Shuhari",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -9395,7 +9830,6 @@
     "tools_mentioned": [
       "YouTube"
     ],
-    "niche_primary": "Quy trình sản xuất & Tư duy Shuhari",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -9430,6 +9864,12 @@
     "position": 7,
     "contentNiche": "Nghiên cứu Dream 100, Phân tích Thumbnail & Tiêu đề",
     "niche": "Nghiên cứu Dream 100, Phân tích Thumbnail & Tiêu đề",
+    "niche_primary": "Nghiên cứu Dream 100, Phân tích Thumbnail & Tiêu đề",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -9535,7 +9975,6 @@
       "Google Dịch",
       "SEO"
     ],
-    "niche_primary": "Nghiên cứu Dream 100, Phân tích Thumbnail & Tiêu đề",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -9570,6 +10009,12 @@
     "position": 8,
     "contentNiche": "Phân tích kỹ thuật, SEO & Lợi thế cạnh tranh kênh",
     "niche": "Phân tích kỹ thuật, SEO & Lợi thế cạnh tranh kênh",
+    "niche_primary": "Phân tích kỹ thuật, SEO & Lợi thế cạnh tranh kênh",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -9664,7 +10109,6 @@
       "Canva",
       "SEO"
     ],
-    "niche_primary": "Phân tích kỹ thuật, SEO & Lợi thế cạnh tranh kênh",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -9699,6 +10143,12 @@
     "position": 9,
     "contentNiche": "Huấn luyện ChatGPT & Viết kịch bản dài (Long-form Content)",
     "niche": "Huấn luyện ChatGPT & Viết kịch bản dài (Long-form Content)",
+    "niche_primary": "Huấn luyện ChatGPT & Viết kịch bản dài (Long-form Content)",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-05"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -9774,7 +10224,6 @@
       "Word",
       "Google Docs"
     ],
-    "niche_primary": "Huấn luyện ChatGPT & Viết kịch bản dài (Long-form Content)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -9809,6 +10258,12 @@
     "position": 10,
     "contentNiche": "Sản xuất hậu kỳ, Thumbnail AI & Quy trình Upload SEO 2025",
     "niche": "Sản xuất hậu kỳ, Thumbnail AI & Quy trình Upload SEO 2025",
+    "niche_primary": "Sản xuất hậu kỳ, Thumbnail AI & Quy trình Upload SEO 2025",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -9900,7 +10355,6 @@
       "Photoshop",
       "YouTube"
     ],
-    "niche_primary": "Sản xuất hậu kỳ, Thumbnail AI & Quy trình Upload SEO 2025",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -9935,6 +10389,12 @@
     "position": 11,
     "contentNiche": "Chăm Sóc Tương Tác & Đặt Quảng Cáo Tối Ưu RPM",
     "niche": "Chăm Sóc Tương Tác & Đặt Quảng Cáo Tối Ưu RPM",
+    "niche_primary": "Chăm Sóc Tương Tác & Đặt Quảng Cáo Tối Ưu RPM",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -10013,7 +10473,6 @@
       "YouTube Summary",
       "ViewStats"
     ],
-    "niche_primary": "Chăm Sóc Tương Tác & Đặt Quảng Cáo Tối Ưu RPM",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -10048,6 +10507,12 @@
     "position": 1,
     "contentNiche": "Toàn Cảnh Chiến Lược Chủ Đề YouTube 3 Năm & Hạ Tầng Google AdSense (GA)",
     "niche": "Toàn Cảnh Chiến Lược Chủ Đề YouTube 3 Năm & Hạ Tầng Google AdSense (GA)",
+    "niche_primary": "Toàn Cảnh Chiến Lược Chủ Đề YouTube 3 Năm & Hạ Tầng Google AdSense (GA)",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -10126,7 +10591,6 @@
       "YouTube Studio",
       "Yahoo Messenger"
     ],
-    "niche_primary": "Toàn Cảnh Chiến Lược Chủ Đề YouTube 3 Năm & Hạ Tầng Google AdSense (GA)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -10161,6 +10625,12 @@
     "position": 2,
     "contentNiche": "Tư Duy Hành Động & Xây Dựng Đội Nhóm Đồng Hành",
     "niche": "Tư Duy Hành Động & Xây Dựng Đội Nhóm Đồng Hành",
+    "niche_primary": "Tư Duy Hành Động & Xây Dựng Đội Nhóm Đồng Hành",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -10233,7 +10703,6 @@
       "Amazon",
       "Yahoo"
     ],
-    "niche_primary": "Tư Duy Hành Động & Xây Dựng Đội Nhóm Đồng Hành",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -10268,6 +10737,12 @@
     "position": 3,
     "contentNiche": "Lựa Chọn Chủ Đề Đúng & Nghiên Cứu Sâu Dream 100",
     "niche": "Lựa Chọn Chủ Đề Đúng & Nghiên Cứu Sâu Dream 100",
+    "niche_primary": "Lựa Chọn Chủ Đề Đúng & Nghiên Cứu Sâu Dream 100",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-02"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -10341,7 +10816,6 @@
       "Dream 100",
       "NotebookLM"
     ],
-    "niche_primary": "Lựa Chọn Chủ Đề Đúng & Nghiên Cứu Sâu Dream 100",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -10376,6 +10850,12 @@
     "position": 4,
     "contentNiche": "Chống Phụ Thuộc AI & Quy Trình Kiểm Duyệt Human Check",
     "niche": "Chống Phụ Thuộc AI & Quy Trình Kiểm Duyệt Human Check",
+    "niche_primary": "Chống Phụ Thuộc AI & Quy Trình Kiểm Duyệt Human Check",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -10445,7 +10925,6 @@
       "ChatGPT",
       "YouTube"
     ],
-    "niche_primary": "Chống Phụ Thuộc AI & Quy Trình Kiểm Duyệt Human Check",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -10480,6 +10959,12 @@
     "position": 5,
     "contentNiche": "Tư duy Đổi mới & Tránh Bẫy Số Lượng",
     "niche": "Tư duy Đổi mới & Tránh Bẫy Số Lượng",
+    "niche_primary": "Tư duy Đổi mới & Tránh Bẫy Số Lượng",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -10549,7 +11034,6 @@
       "Proxy",
       "YouTube"
     ],
-    "niche_primary": "Tư duy Đổi mới & Tránh Bẫy Số Lượng",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -10584,6 +11068,11 @@
     "position": 6,
     "contentNiche": "Lịch sử Tiến hóa Công thức Sản xuất Video (2016–2026)",
     "niche": "Lịch sử Tiến hóa Công thức Sản xuất Video (2016–2026)",
+    "niche_primary": "Lịch sử Tiến hóa Công thức Sản xuất Video (2016–2026)",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -10661,7 +11150,6 @@
       "VidIQ",
       "YouTube"
     ],
-    "niche_primary": "Lịch sử Tiến hóa Công thức Sản xuất Video (2016–2026)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -10696,6 +11184,12 @@
     "position": 7,
     "contentNiche": "Chiến lược Sản xuất Video 2026 & Bảo vệ Kênh",
     "niche": "Chiến lược Sản xuất Video 2026 & Bảo vệ Kênh",
+    "niche_primary": "Chiến lược Sản xuất Video 2026 & Bảo vệ Kênh",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -10767,7 +11261,6 @@
       "1of10",
       "YouTube"
     ],
-    "niche_primary": "Chiến lược Sản xuất Video 2026 & Bảo vệ Kênh",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -10802,6 +11295,12 @@
     "position": 8,
     "contentNiche": "Chiến lược Nâng cấp Chất lượng Pro Max & Nhân bản Đa quốc gia",
     "niche": "Chiến lược Nâng cấp Chất lượng Pro Max & Nhân bản Đa quốc gia",
+    "niche_primary": "Chiến lược Nâng cấp Chất lượng Pro Max & Nhân bản Đa quốc gia",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -10871,7 +11370,6 @@
       "CMS",
       "NotebookLM"
     ],
-    "niche_primary": "Chiến lược Nâng cấp Chất lượng Pro Max & Nhân bản Đa quốc gia",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -10906,6 +11404,13 @@
     "position": 9,
     "contentNiche": "SOP Tạo Email Chính Chủ & Đăng Ký Google AdSense",
     "niche": "SOP Tạo Email Chính Chủ & Đăng Ký Google AdSense",
+    "niche_primary": "SOP Tạo Email Chính Chủ & Đăng Ký Google AdSense",
+    "nicheCode": "H08",
+    "nicheCodes": [
+      "H08",
+      "H20",
+      "H34"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -10981,7 +11486,6 @@
       "Proxy",
       "Google News"
     ],
-    "niche_primary": "SOP Tạo Email Chính Chủ & Đăng Ký Google AdSense",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -11016,6 +11520,12 @@
     "position": 10,
     "contentNiche": "Kể Chuyện Bằng Nhân Vật Hoạt Hình (2D Animation)",
     "niche": "Kể Chuyện Bằng Nhân Vật Hoạt Hình (2D Animation)",
+    "niche_primary": "Kể Chuyện Bằng Nhân Vật Hoạt Hình (2D Animation)",
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22",
+      "H25"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -11140,7 +11650,6 @@
       "Photoshop",
       "Canva"
     ],
-    "niche_primary": "Kể Chuyện Bằng Nhân Vật Hoạt Hình (2D Animation)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -11175,6 +11684,17 @@
     "position": 1,
     "contentNiche": "Tìm Chủ Đề YouTube Faceless & Chiến Lược Jetlag",
     "niche": "Tìm Chủ Đề YouTube Faceless & Chiến Lược Jetlag",
+    "niche_primary": "Tìm Chủ Đề YouTube Faceless & Chiến Lược Jetlag",
+    "nicheCode": "H11",
+    "nicheCodes": [
+      "H11",
+      "H18",
+      "H19",
+      "H27",
+      "H30",
+      "H32",
+      "H33"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -11283,7 +11803,6 @@
       "ElevenLabs",
       "Skillshare"
     ],
-    "niche_primary": "Tìm Chủ Đề YouTube Faceless & Chiến Lược Jetlag",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -11318,6 +11837,12 @@
     "position": 2,
     "contentNiche": "16 Concept Nội Dung Triệu View & Tháp Maslow",
     "niche": "16 Concept Nội Dung Triệu View & Tháp Maslow",
+    "niche_primary": "16 Concept Nội Dung Triệu View & Tháp Maslow",
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01",
+      "H06"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -11421,7 +11946,6 @@
       "ElevenLabs",
       "Leonardo"
     ],
-    "niche_primary": "16 Concept Nội Dung Triệu View & Tháp Maslow",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -11456,6 +11980,12 @@
     "position": 3,
     "contentNiche": "Quy trình Vận hành Đội ngũ & Biểu mẫu Dream 100",
     "niche": "Quy trình Vận hành Đội ngũ & Biểu mẫu Dream 100",
+    "niche_primary": "Quy trình Vận hành Đội ngũ & Biểu mẫu Dream 100",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-02"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -11561,7 +12091,6 @@
       "Google Docs",
       "1of10"
     ],
-    "niche_primary": "Quy trình Vận hành Đội ngũ & Biểu mẫu Dream 100",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -11596,6 +12125,17 @@
     "position": 4,
     "contentNiche": "Chiến Lược Lên Top 1 Chủ Đề & Tối Ưu View Tính Năng (Browse Features)",
     "niche": "Chiến Lược Lên Top 1 Chủ Đề & Tối Ưu View Tính Năng (Browse Features)",
+    "niche_primary": "Chiến Lược Lên Top 1 Chủ Đề & Tối Ưu View Tính Năng (Browse Features)",
+    "nicheCode": "H13",
+    "nicheCodes": [
+      "H13",
+      "H14",
+      "H18",
+      "H19",
+      "H21",
+      "H30",
+      "H31"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -11681,7 +12221,6 @@
       "YouTube Studio",
       "Cốc Cốc"
     ],
-    "niche_primary": "Chiến Lược Lên Top 1 Chủ Đề & Tối Ưu View Tính Năng (Browse Features)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -11716,6 +12255,16 @@
     "position": 5,
     "contentNiche": "Tư Duy Top 1 & Nhân Bản Case Study",
     "niche": "Tư Duy Top 1 & Nhân Bản Case Study",
+    "niche_primary": "Tư Duy Top 1 & Nhân Bản Case Study",
+    "nicheCode": "H13",
+    "nicheCodes": [
+      "H13",
+      "H14",
+      "H18",
+      "H19",
+      "H21",
+      "H31"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -11799,7 +12348,6 @@
       "Eagle Camp",
       "Internet Power System"
     ],
-    "niche_primary": "Tư Duy Top 1 & Nhân Bản Case Study",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -11834,6 +12382,15 @@
     "position": 6,
     "contentNiche": "Thuật Toán Đề Xuất & Fair Use",
     "niche": "Thuật Toán Đề Xuất & Fair Use",
+    "niche_primary": "Thuật Toán Đề Xuất & Fair Use",
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H09",
+      "H16",
+      "H34"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -11919,7 +12476,6 @@
       "Fair Use",
       "Twitch.tv"
     ],
-    "niche_primary": "Thuật Toán Đề Xuất & Fair Use",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -11954,6 +12510,12 @@
     "position": 7,
     "contentNiche": "Cảm Xúc Khán Giả & Tháp Nhu Cầu Maslow",
     "niche": "Cảm Xúc Khán Giả & Tháp Nhu Cầu Maslow",
+    "niche_primary": "Cảm Xúc Khán Giả & Tháp Nhu Cầu Maslow",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -12039,7 +12601,6 @@
       "SEO",
       "Email Marketing"
     ],
-    "niche_primary": "Cảm Xúc Khán Giả & Tháp Nhu Cầu Maslow",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -12074,6 +12635,12 @@
     "position": 8,
     "contentNiche": "Tư Duy, Quản Trị Cảm Xúc & Cộng Đồng Kỷ Luật Làm YouTube",
     "niche": "Tư Duy, Quản Trị Cảm Xúc & Cộng Đồng Kỷ Luật Làm YouTube",
+    "niche_primary": "Tư Duy, Quản Trị Cảm Xúc & Cộng Đồng Kỷ Luật Làm YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -12139,7 +12706,6 @@
     "mp4": "video/VIDEO-014625/VIDEO-014625.mp4",
     "size": 309437821,
     "tools_mentioned": [],
-    "niche_primary": "Tư Duy, Quản Trị Cảm Xúc & Cộng Đồng Kỷ Luật Làm YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -12174,6 +12740,12 @@
     "position": 9,
     "contentNiche": "Quy Tắc 100 & Checklist Vận Hành Hệ Thống Kênh YouTube 1 Trang",
     "niche": "Quy Tắc 100 & Checklist Vận Hành Hệ Thống Kênh YouTube 1 Trang",
+    "niche_primary": "Quy Tắc 100 & Checklist Vận Hành Hệ Thống Kênh YouTube 1 Trang",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -12239,7 +12811,6 @@
     "mp4": "video/VIDEO-c289d8/VIDEO-c289d8.mp4",
     "size": 250134150,
     "tools_mentioned": [],
-    "niche_primary": "Quy Tắc 100 & Checklist Vận Hành Hệ Thống Kênh YouTube 1 Trang",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -12274,6 +12845,12 @@
     "position": 10,
     "contentNiche": "Chiến Lược Tăng Trưởng Kênh: Nhiều Hơn, Tốt Hơn & Làm Mới",
     "niche": "Chiến Lược Tăng Trưởng Kênh: Nhiều Hơn, Tốt Hơn & Làm Mới",
+    "niche_primary": "Chiến Lược Tăng Trưởng Kênh: Nhiều Hơn, Tốt Hơn & Làm Mới",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -12341,7 +12918,6 @@
     "mp4": "video/VIDEO-e8feca/VIDEO-e8feca.mp4",
     "size": 433525447,
     "tools_mentioned": [],
-    "niche_primary": "Chiến Lược Tăng Trưởng Kênh: Nhiều Hơn, Tốt Hơn & Làm Mới",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -12376,6 +12952,12 @@
     "position": 11,
     "contentNiche": "Tư Duy Xác Suất Tích Lũy & Vòng Quay Vô Hạn Trên YouTube",
     "niche": "Tư Duy Xác Suất Tích Lũy & Vòng Quay Vô Hạn Trên YouTube",
+    "niche_primary": "Tư Duy Xác Suất Tích Lũy & Vòng Quay Vô Hạn Trên YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -12441,7 +13023,6 @@
     "mp4": "video/VIDEO-1456c3/VIDEO-1456c3.mp4",
     "size": 247638799,
     "tools_mentioned": [],
-    "niche_primary": "Tư Duy Xác Suất Tích Lũy & Vòng Quay Vô Hạn Trên YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -12476,6 +13057,12 @@
     "position": 12,
     "contentNiche": "Mô Hình Kinh Doanh Không Giới Hạn & Nhân Bản Đội Ngũ YouTube",
     "niche": "Mô Hình Kinh Doanh Không Giới Hạn & Nhân Bản Đội Ngũ YouTube",
+    "niche_primary": "Mô Hình Kinh Doanh Không Giới Hạn & Nhân Bản Đội Ngũ YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -12541,7 +13128,6 @@
     "mp4": "video/VIDEO-ab04c5/VIDEO-ab04c5.mp4",
     "size": 447962334,
     "tools_mentioned": [],
-    "niche_primary": "Mô Hình Kinh Doanh Không Giới Hạn & Nhân Bản Đội Ngũ YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -12576,6 +13162,12 @@
     "position": 13,
     "contentNiche": "Tổng Kết Lộ Trình Khóa Học & Thực Thi Quy Tắc 100",
     "niche": "Tổng Kết Lộ Trình Khóa Học & Thực Thi Quy Tắc 100",
+    "niche_primary": "Tổng Kết Lộ Trình Khóa Học & Thực Thi Quy Tắc 100",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -12641,7 +13233,6 @@
     "mp4": "video/VIDEO-1740d9/VIDEO-1740d9.mp4",
     "size": 377654923,
     "tools_mentioned": [],
-    "niche_primary": "Tổng Kết Lộ Trình Khóa Học & Thực Thi Quy Tắc 100",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -12676,6 +13267,12 @@
     "position": 1,
     "contentNiche": "Tư Duy Hệ Thống & Lộ Trình Khởi Nghiệp YouTube",
     "niche": "Tư Duy Hệ Thống & Lộ Trình Khởi Nghiệp YouTube",
+    "niche_primary": "Tư Duy Hệ Thống & Lộ Trình Khởi Nghiệp YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -12741,7 +13338,6 @@
     "mp4": "video/VIDEO-f8d00f/VIDEO-f8d00f.mp4",
     "size": 827162071,
     "tools_mentioned": [],
-    "niche_primary": "Tư Duy Hệ Thống & Lộ Trình Khởi Nghiệp YouTube",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -12776,6 +13372,12 @@
     "position": 2,
     "contentNiche": "Chiến Lược Chọn Chủ Đề RPM Cao & Mô Hình Bán Content Fair Use",
     "niche": "Chiến Lược Chọn Chủ Đề RPM Cao & Mô Hình Bán Content Fair Use",
+    "niche_primary": "Chiến Lược Chọn Chủ Đề RPM Cao & Mô Hình Bán Content Fair Use",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -12842,7 +13444,6 @@
     "mp4": "video/VIDEO-6d0657/VIDEO-6d0657.mp4",
     "size": 563248174,
     "tools_mentioned": [],
-    "niche_primary": "Chiến Lược Chọn Chủ Đề RPM Cao & Mô Hình Bán Content Fair Use",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -12877,6 +13478,13 @@
     "position": 3,
     "contentNiche": "Phân Tầng Mục Tiêu Doanh Thu & Kỹ Thuật Tách Ngách Từ Kênh Lớn",
     "niche": "Phân Tầng Mục Tiêu Doanh Thu & Kỹ Thuật Tách Ngách Từ Kênh Lớn",
+    "niche_primary": "Phân Tầng Mục Tiêu Doanh Thu & Kỹ Thuật Tách Ngách Từ Kênh Lớn",
+    "nicheCode": "H08",
+    "nicheCodes": [
+      "H08",
+      "H20",
+      "H34"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -12981,7 +13589,6 @@
       "TikTok",
       "Google"
     ],
-    "niche_primary": "Phân Tầng Mục Tiêu Doanh Thu & Kỹ Thuật Tách Ngách Từ Kênh Lớn",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -13016,6 +13623,12 @@
     "position": 4,
     "contentNiche": "Chiến Lược Kênh & Vận Hành (Operations)",
     "niche": "Chiến Lược Kênh & Vận Hành (Operations)",
+    "niche_primary": "Chiến Lược Kênh & Vận Hành (Operations)",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇺🇸 US / Global"
     ],
@@ -13084,7 +13697,6 @@
       "Chrome",
       "Cốc Cốc"
     ],
-    "niche_primary": "Chiến Lược Kênh & Vận Hành (Operations)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -13119,6 +13731,14 @@
     "position": 5,
     "contentNiche": "Chiến Lược Kênh & Vận Hành (Operations)",
     "niche": "Chiến Lược Kênh & Vận Hành (Operations)",
+    "niche_primary": "Chiến Lược Kênh & Vận Hành (Operations)",
+    "nicheCode": "H07",
+    "nicheCodes": [
+      "H07",
+      "H08",
+      "H20",
+      "H34"
+    ],
     "market": [
       "🇺🇸 US / Global"
     ],
@@ -13203,7 +13823,6 @@
       "ChatGPT",
       "Google Sheets"
     ],
-    "niche_primary": "Chiến Lược Kênh & Vận Hành (Operations)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -13238,6 +13857,13 @@
     "position": 6,
     "contentNiche": "Chiến Lược Kênh & Vận Hành (Operations)",
     "niche": "Chiến Lược Kênh & Vận Hành (Operations)",
+    "niche_primary": "Chiến Lược Kênh & Vận Hành (Operations)",
+    "nicheCode": "H27",
+    "nicheCodes": [
+      "H27",
+      "H28",
+      "H29"
+    ],
     "market": [
       "🇺🇸 US / Global"
     ],
@@ -13322,7 +13948,6 @@
       "Grok",
       "Google Sheets"
     ],
-    "niche_primary": "Chiến Lược Kênh & Vận Hành (Operations)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -13357,6 +13982,11 @@
     "position": 1,
     "contentNiche": "Chuyển đổi số & Xây dựng thương hiệu chuyên gia",
     "niche": "Chuyển đổi số & Xây dựng thương hiệu chuyên gia",
+    "niche_primary": "Chuyển đổi số & Xây dựng thương hiệu chuyên gia",
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -13435,7 +14065,6 @@
       "Instagram",
       "Shopee"
     ],
-    "niche_primary": "Chuyển đổi số & Xây dựng thương hiệu chuyên gia",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -13470,6 +14099,12 @@
     "position": 2,
     "contentNiche": "Mô hình 1 x mũ n & Chiến lược Đa kênh",
     "niche": "Mô hình 1 x mũ n & Chiến lược Đa kênh",
+    "niche_primary": "Mô hình 1 x mũ n & Chiến lược Đa kênh",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -13548,7 +14183,6 @@
       "Google",
       "Instagram"
     ],
-    "niche_primary": "Mô hình 1 x mũ n & Chiến lược Đa kênh",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -13583,6 +14217,11 @@
     "position": 3,
     "contentNiche": "Tư duy Xây kênh & Chuyển đổi Thương hiệu",
     "niche": "Tư duy Xây kênh & Chuyển đổi Thương hiệu",
+    "niche_primary": "Tư duy Xây kênh & Chuyển đổi Thương hiệu",
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -13661,7 +14300,6 @@
       "Google",
       "Facebook Reels"
     ],
-    "niche_primary": "Tư duy Xây kênh & Chuyển đổi Thương hiệu",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -13696,6 +14334,12 @@
     "position": 4,
     "contentNiche": "Xây dựng kênh YouTube thương hiệu & Chuyển đổi khách hàng",
     "niche": "Xây dựng kênh YouTube thương hiệu & Chuyển đổi khách hàng",
+    "niche_primary": "Xây dựng kênh YouTube thương hiệu & Chuyển đổi khách hàng",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -13779,7 +14423,6 @@
       "Shopee",
       "vidIQ"
     ],
-    "niche_primary": "Xây dựng kênh YouTube thương hiệu & Chuyển đổi khách hàng",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -13814,6 +14457,11 @@
     "position": 5,
     "contentNiche": "Quản trị mục tiêu OKR & Chiến lược định vị kênh",
     "niche": "Quản trị mục tiêu OKR & Chiến lược định vị kênh",
+    "niche_primary": "Quản trị mục tiêu OKR & Chiến lược định vị kênh",
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -13889,7 +14537,6 @@
       "Facebook",
       "OKR"
     ],
-    "niche_primary": "Quản trị mục tiêu OKR & Chiến lược định vị kênh",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -13924,6 +14571,12 @@
     "position": 6,
     "contentNiche": "Quản trị mục tiêu đột phá & Tăng trưởng doanh số",
     "niche": "Quản trị mục tiêu đột phá & Tăng trưởng doanh số",
+    "niche_primary": "Quản trị mục tiêu đột phá & Tăng trưởng doanh số",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -13991,7 +14644,6 @@
       "GoodNotes",
       "Telegram"
     ],
-    "niche_primary": "Quản trị mục tiêu đột phá & Tăng trưởng doanh số",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -14026,6 +14678,12 @@
     "position": 1,
     "contentNiche": "Case Study Thực Chiến & Mở Rộng Đội Nhóm",
     "niche": "Case Study Thực Chiến & Mở Rộng Đội Nhóm",
+    "niche_primary": "Case Study Thực Chiến & Mở Rộng Đội Nhóm",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -14095,7 +14753,6 @@
       "Zalo",
       "Facebook"
     ],
-    "niche_primary": "Case Study Thực Chiến & Mở Rộng Đội Nhóm",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -14130,6 +14787,12 @@
     "position": 2,
     "contentNiche": "Case Study Sinh Viên Solo & Quy Luật Keep Going",
     "niche": "Case Study Sinh Viên Solo & Quy Luật Keep Going",
+    "niche_primary": "Case Study Sinh Viên Solo & Quy Luật Keep Going",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -14197,7 +14860,6 @@
       "YouTube Studio",
       "ElevenLabs"
     ],
-    "niche_primary": "Case Study Sinh Viên Solo & Quy Luật Keep Going",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -14232,6 +14894,12 @@
     "position": 3,
     "contentNiche": "Case Study Xây Kênh Chuyên Gia & Nhân Hiệu",
     "niche": "Case Study Xây Kênh Chuyên Gia & Nhân Hiệu",
+    "niche_primary": "Case Study Xây Kênh Chuyên Gia & Nhân Hiệu",
+    "nicheCode": "H02",
+    "nicheCodes": [
+      "H02",
+      "H20"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -14303,7 +14971,6 @@
       "Google Drive",
       "Zalo"
     ],
-    "niche_primary": "Case Study Xây Kênh Chuyên Gia & Nhân Hiệu",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -14338,6 +15005,12 @@
     "position": 4,
     "contentNiche": "Case Study Tăng Trưởng & Kiên Trì Cày Video",
     "niche": "Case Study Tăng Trưởng & Kiên Trì Cày Video",
+    "niche_primary": "Case Study Tăng Trưởng & Kiên Trì Cày Video",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -14405,7 +15078,6 @@
       "YouTube Studio",
       "Zalo"
     ],
-    "niche_primary": "Case Study Tăng Trưởng & Kiên Trì Cày Video",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -14440,6 +15112,12 @@
     "position": 1,
     "contentNiche": "Chủ Nghĩa Khắc Kỷ (Stoic) & Quy Trình AI",
     "niche": "Chủ Nghĩa Khắc Kỷ (Stoic) & Quy Trình AI",
+    "niche_primary": "Chủ Nghĩa Khắc Kỷ (Stoic) & Quy Trình AI",
+    "nicheCode": "H08",
+    "nicheCodes": [
+      "H08",
+      "H20"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -14516,7 +15194,6 @@
       "Google Dịch",
       "CapCut"
     ],
-    "niche_primary": "Chủ Nghĩa Khắc Kỷ (Stoic) & Quy Trình AI",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -14551,6 +15228,12 @@
     "position": 2,
     "contentNiche": "Chủ Nghĩa Khắc Kỷ (Stoic) Thị Trường Ngoại & AI",
     "niche": "Chủ Nghĩa Khắc Kỷ (Stoic) Thị Trường Ngoại & AI",
+    "niche_primary": "Chủ Nghĩa Khắc Kỷ (Stoic) Thị Trường Ngoại & AI",
+    "nicheCode": "H08",
+    "nicheCodes": [
+      "H08",
+      "H20"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -14625,7 +15308,6 @@
       "Discord",
       "CapCut"
     ],
-    "niche_primary": "Chủ Nghĩa Khắc Kỷ (Stoic) Thị Trường Ngoại & AI",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -14660,6 +15342,11 @@
     "position": 3,
     "contentNiche": "Chiến lược Hệ thống & Lịch sử Chính sách YouTube (2015-2025)",
     "niche": "Chiến lược Hệ thống & Lịch sử Chính sách YouTube (2015-2025)",
+    "niche_primary": "Chiến lược Hệ thống & Lịch sử Chính sách YouTube (2015-2025)",
+    "nicheCode": "H05",
+    "nicheCodes": [
+      "H05"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -14735,7 +15422,6 @@
       "PlayHT",
       "vidIQ"
     ],
-    "niche_primary": "Chiến lược Hệ thống & Lịch sử Chính sách YouTube (2015-2025)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -14770,6 +15456,12 @@
     "position": 4,
     "contentNiche": "Chiến lược Chống AI Slop, Xây dựng Context & Ứng dụng NotebookLM",
     "niche": "Chiến lược Chống AI Slop, Xây dựng Context & Ứng dụng NotebookLM",
+    "niche_primary": "Chiến lược Chống AI Slop, Xây dựng Context & Ứng dụng NotebookLM",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-05"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -14845,7 +15537,6 @@
       "GPM Login",
       "Amazon"
     ],
-    "niche_primary": "Chiến lược Chống AI Slop, Xây dựng Context & Ứng dụng NotebookLM",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -14880,6 +15571,11 @@
     "position": 5,
     "contentNiche": "Chiến Lược Nội Dung & Chống AI Slop 2026",
     "niche": "Chiến Lược Nội Dung & Chống AI Slop 2026",
+    "niche_primary": "Chiến Lược Nội Dung & Chống AI Slop 2026",
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -14976,7 +15672,6 @@
       "Google Trends",
       "VidIQ"
     ],
-    "niche_primary": "Chiến Lược Nội Dung & Chống AI Slop 2026",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -15011,6 +15706,12 @@
     "position": 6,
     "contentNiche": "Quản Trị VPS & Bảo Mật Google AdSense",
     "niche": "Quản Trị VPS & Bảo Mật Google AdSense",
+    "niche_primary": "Quản Trị VPS & Bảo Mật Google AdSense",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -15096,7 +15797,6 @@
       "Cloudflare",
       "TeamViewer"
     ],
-    "niche_primary": "Quản Trị VPS & Bảo Mật Google AdSense",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -15131,6 +15831,12 @@
     "position": 7,
     "contentNiche": "Hạ Tầng VPS, Nuôi Kênh & Bảo Mật Google AdSense (GA)",
     "niche": "Hạ Tầng VPS, Nuôi Kênh & Bảo Mật Google AdSense (GA)",
+    "niche_primary": "Hạ Tầng VPS, Nuôi Kênh & Bảo Mật Google AdSense (GA)",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -15207,7 +15913,6 @@
       "YouTube",
       "Google AdSense"
     ],
-    "niche_primary": "Hạ Tầng VPS, Nuôi Kênh & Bảo Mật Google AdSense (GA)",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -15242,6 +15947,12 @@
     "position": 1,
     "contentNiche": "Quản Trị Doanh Nghiệp YouTube & Tư Duy Lãnh Đạo",
     "niche": "Quản Trị Doanh Nghiệp YouTube & Tư Duy Lãnh Đạo",
+    "niche_primary": "Quản Trị Doanh Nghiệp YouTube & Tư Duy Lãnh Đạo",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -15313,7 +16024,6 @@
       "Ma trận Checklist Nhân Sự & KPI phòng ban",
       "Quy trình đào tạo nội bộ YouTube Total Success"
     ],
-    "niche_primary": "Quản Trị Doanh Nghiệp YouTube & Tư Duy Lãnh Đạo",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -15348,6 +16058,12 @@
     "position": 2,
     "contentNiche": "Phễu Bán Hàng B2B Qua YouTube & Tinh Thần Học Tập Không Giới Hạn Tuổi Tác",
     "niche": "Phễu Bán Hàng B2B Qua YouTube & Tinh Thần Học Tập Không Giới Hạn Tuổi Tác",
+    "niche_primary": "Phễu Bán Hàng B2B Qua YouTube & Tinh Thần Học Tập Không Giới Hạn Tuổi Tác",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -15417,7 +16133,6 @@
       "YouTube",
       "GODA"
     ],
-    "niche_primary": "Phễu Bán Hàng B2B Qua YouTube & Tinh Thần Học Tập Không Giới Hạn Tuổi Tác",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -15452,6 +16167,12 @@
     "position": 3,
     "contentNiche": "Chuyển Dịch Từ Creator/Filmmaker Sang Chủ Hệ Thống Kinh Doanh Vô Hạn",
     "niche": "Chuyển Dịch Từ Creator/Filmmaker Sang Chủ Hệ Thống Kinh Doanh Vô Hạn",
+    "niche_primary": "Chuyển Dịch Từ Creator/Filmmaker Sang Chủ Hệ Thống Kinh Doanh Vô Hạn",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -15519,7 +16240,6 @@
     "tools_mentioned": [
       "YouTube"
     ],
-    "niche_primary": "Chuyển Dịch Từ Creator/Filmmaker Sang Chủ Hệ Thống Kinh Doanh Vô Hạn",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -15554,6 +16274,12 @@
     "position": 4,
     "contentNiche": "Quản Trị Hệ Thống Kênh Nút Vàng/Bạc & Huấn Luyện Đội Nhóm Chủ Động",
     "niche": "Quản Trị Hệ Thống Kênh Nút Vàng/Bạc & Huấn Luyện Đội Nhóm Chủ Động",
+    "niche_primary": "Quản Trị Hệ Thống Kênh Nút Vàng/Bạc & Huấn Luyện Đội Nhóm Chủ Động",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -15623,7 +16349,6 @@
       "YouTube",
       "GODA"
     ],
-    "niche_primary": "Quản Trị Hệ Thống Kênh Nút Vàng/Bạc & Huấn Luyện Đội Nhóm Chủ Động",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -15658,6 +16383,11 @@
     "position": 5,
     "contentNiche": "Mô Hình YouTube Faceless Cho Chuyên Gia / Bác Sĩ Làm Thêm & Cốt Lõi Tư Duy Chiến Lược",
     "niche": "Mô Hình YouTube Faceless Cho Chuyên Gia / Bác Sĩ Làm Thêm & Cốt Lõi Tư Duy Chiến Lược",
+    "niche_primary": "Mô Hình YouTube Faceless Cho Chuyên Gia / Bác Sĩ Làm Thêm & Cốt Lõi Tư Duy Chiến Lược",
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -15727,7 +16457,6 @@
       "YouTube",
       "GODA"
     ],
-    "niche_primary": "Mô Hình YouTube Faceless Cho Chuyên Gia / Bác Sĩ Làm Thêm & Cốt Lõi Tư Duy Chiến Lược",
     "local": true,
     "drm": false,
     "isHuan": true,
@@ -15762,6 +16491,12 @@
     "position": 6,
     "contentNiche": "Chuyển Hóa Thương Hiệu Cá Nhân Sang Hệ Thống Nhân Bản & Tầm Vóc Quốc Tế",
     "niche": "Chuyển Hóa Thương Hiệu Cá Nhân Sang Hệ Thống Nhân Bản & Tầm Vóc Quốc Tế",
+    "niche_primary": "Chuyển Hóa Thương Hiệu Cá Nhân Sang Hệ Thống Nhân Bản & Tầm Vóc Quốc Tế",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🇻🇳 Việt"
     ],
@@ -15834,7 +16569,6 @@
       "GODA",
       "Affiliate World"
     ],
-    "niche_primary": "Chuyển Hóa Thương Hiệu Cá Nhân Sang Hệ Thống Nhân Bản & Tầm Vóc Quốc Tế",
     "local": true,
     "drm": false,
     "isHuan": true,

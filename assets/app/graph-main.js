@@ -218,11 +218,28 @@
     return trs.includes(activeTrack) || trs.includes('all');
   }
 
+  function foldVi(s) {
+    return String(s || '')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/đ/g, 'd')
+      .replace(/Đ/g, 'D')
+      .toLowerCase();
+  }
+
   function matchesSearch(n) {
     if (!searchQuery) return true;
     const pid = getProjectId(n);
-    const hay = `${n.id} ${n.label} ${n.sku || ''} ${n.path || ''} ${pid}`.toLowerCase();
-    return hay.includes(searchQuery);
+    const m = n.meta || {};
+    const sopAliases = (n.type === 'sop' && m.docId)
+      ? `DOC_${m.docId} DOC-${m.docId} DOC-${String(m.docId).padStart(3, '0')} TL-${String(m.docId).padStart(2, '0')} TL-${String(m.docId).padStart(3, '0')}`
+      : '';
+    const extraCodes = `${m.code || ''} ${m.nicheCode || ''} ${m.rawId || ''} ${Array.isArray(m.rawIds) ? m.rawIds.join(' ') : ''} ${m.handle || ''} ${sopAliases} ${Array.isArray(m.subNicheCodes) ? m.subNicheCodes.join(' ') : ''}`;
+    const rawHay = `${n.id} ${n.label} ${n.sku || ''} ${n.path || ''} ${pid} ${extraCodes}`.toLowerCase();
+    if (rawHay.includes(searchQuery)) return true;
+    const foldedHay = foldVi(rawHay);
+    const foldedQ = foldVi(searchQuery);
+    return foldedHay.includes(foldedQ);
   }
 
   function isNodeVisible(n) {
@@ -484,7 +501,7 @@
   // ============================================================================
   // MODE 2: OBSIDIAN NETWORK GRAPH CANVAS (EGO-CONSTELLATION + GALAXY CLUSTERS)
   // ============================================================================
-  let graphScope = 'ego'; // 'ego' (Mạch Tâm Điểm Rõ Nét) | 'galaxy' (Toàn Cảnh 4.243 Nút)
+  let graphScope = 'ego'; // 'ego' (Mạch Tâm Điểm Rõ Nét) | 'galaxy' (Toàn Cảnh 4.246 Nút)
   let egoPositions = new Map();
   let egoVisibleSet = new Set();
 
@@ -921,12 +938,15 @@
     const chain = getLineageChain(node);
 
     const rawTargetLink = node.meta?.playerUrl || node.meta?.targetUrl || (node.type === 'video' && node.sku ? `/lotrinh/${encodeURIComponent(node.sku)}` : '');
-    const webTargetUrl = rawTargetLink.replace(/^\/player\.html\?sku=([^&]+).*$/i, '/lotrinh/$1');
+    const webTargetUrl = rawTargetLink
+      .replace(/^\/player\.html\?sku=([^&]+).*$/i, '/lotrinh/$1')
+      .replace(/([?&])sub=checklist\b/i, '$1sub=policy');
+    const isSelfSodo = /^\/sodo(?:\?|$)/i.test(webTargetUrl);
     const rawTargetUrl = node.meta?.rawUrl || '';
     const sodoUrl = `/sodo?snode=${encodeURIComponent(node.id)}`;
     const playerBtn = `
       <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        ${webTargetUrl ? `<a href="${esc(webTargetUrl)}" class="nx-chip" style="background:#0284c7;border-color:#38bdf8;color:#ffffff;font-weight:600;">↗ Mở Trên Web 97yo-dev</a>` : ''}
+        ${webTargetUrl && !isSelfSodo ? `<a href="${esc(webTargetUrl)}" class="nx-chip" style="background:#0284c7;border-color:#38bdf8;color:#ffffff;font-weight:600;">↗ Mở Trên Web 97yo-dev</a>` : ''}
         ${rawTargetUrl ? `<a href="${esc(rawTargetUrl)}" class="nx-chip" style="background:rgba(16,185,129,0.22);border-color:#10b981;color:#34d399;font-weight:600;">📊 Hồ Sơ Raw Kênh</a>` : ''}
         <a href="${esc(sodoUrl)}" class="nx-chip" style="background:rgba(168,85,247,0.22);border-color:#a855f7;color:#e9d5ff;font-weight:600;">🧭 Xem ở Tab Sơ đồ DB</a>
         <button type="button" class="nx-chip js-copy-deeplink" data-node-id="${esc(node.id)}" style="background:rgba(30,41,59,0.9);border-color:rgba(148,163,184,0.35);color:#cbd5e1;">🔗 Copy Deep-Link</button>
@@ -1012,19 +1032,82 @@
     if (!rawQ) return null;
     const q = String(rawQ).trim();
     if (nodeById.has(q)) return nodeById.get(q);
-    const qLower = q.toLowerCase();
-    for (const prefix of ['', 'video:', 'channel:', 'niche:', 'policy:', 'checklist:', 'sop:', 'project:', 'file:', 'tool:', 'module:', 'track:']) {
-      const cand = prefix + q;
+    const cleanHandle = q.replace(/^(?:channel:|raw:)?@?/i, '');
+    const qNoPrefix = q.replace(/^(niche|module|tool|channel|raw|video|lesson|sop|doc|policy|checklist|reup|project|domain|dir|file|track):/i, '').trim();
+    const qSlug = qNoPrefix.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').replace(/[^a-zA-Z0-9_-]+/g, '-').replace(/^-+|-+$/g, '').toLowerCase();
+
+    const mDoc = qNoPrefix.match(/^(?:DOC|TL)[-_]?0*(\d+)$/i);
+    const normSopCode = mDoc ? `DOC-${String(parseInt(mDoc[1], 10)).padStart(3, '0')}` : qNoPrefix;
+    const mPol = qNoPrefix.match(/^P[-_]?0*(\d+)$/i);
+    const normPolCode = mPol ? `P${String(parseInt(mPol[1], 10)).padStart(2, '0')}` : qNoPrefix;
+    const mCl = qNoPrefix.match(/^CL[-_]?0*(\d+)$/i);
+    const normClCode = mCl ? `CL${String(parseInt(mCl[1], 10)).padStart(2, '0')}` : qNoPrefix;
+    const mMod = qNoPrefix.match(/^(?:(H2DEV|HUAN|DGMD)[-_])?M0*(\d+)$/i);
+    const normModCode = mMod ? `${(mMod[1] || 'H2DEV').toUpperCase()}-M${String(parseInt(mMod[2], 10)).padStart(2, '0')}` : qNoPrefix;
+
+    const candidates = [
+      q,
+      qNoPrefix,
+      `video:${qNoPrefix}`,
+      `sop:${normSopCode}`,
+      `policy:${normPolCode}`,
+      `checklist:${normClCode}`,
+      `module:${normModCode}`,
+      `channel:${cleanHandle}`,
+      `niche:${qNoPrefix}`,
+      `niche:${qSlug}`,
+      `tool:${qSlug}`,
+      `project:${qNoPrefix}`,
+      `file:${qNoPrefix}`,
+      `file:H2DEV-Project/${qNoPrefix}`,
+      `track:${qNoPrefix}`
+    ];
+    const qNoLower = qNoPrefix.toLowerCase();
+    for (const cand of candidates) {
+      const cLow = cand.toLowerCase();
       for (const [id, n] of nodeById.entries()) {
-        if (id.toLowerCase() === cand.toLowerCase() || (n.sku && n.sku.toLowerCase() === qLower)) return n;
+        if (id.toLowerCase() === cLow || (n.sku && n.sku.toLowerCase() === qNoLower)) return n;
       }
     }
-    return nodes.find(n => n.label.toLowerCase().includes(qLower) || (n.path && n.path.toLowerCase().includes(qLower))) || null;
+
+    if (/^(?:H\d{1,2}|SUB-\d+|SN-H\d+-\d+)$/i.test(qNoPrefix)) {
+      const normNicheCode = /^H\d$/i.test(qNoPrefix)
+        ? `H0${qNoPrefix.slice(1)}`
+        : (/^SUB-\d$/i.test(qNoPrefix) ? `SUB-0${qNoPrefix.slice(4)}` : qNoPrefix.toUpperCase());
+      const hitNiche = nodes.find(n => n.type === 'niche' && n.meta && (String(n.meta.code || '').toUpperCase() === normNicheCode || (Array.isArray(n.meta.subNicheCodes) && n.meta.subNicheCodes.some(c => String(c).toUpperCase() === normNicheCode))));
+      if (hitNiche) return hitNiche;
+    }
+
+    if (/^META-0?[1-5]$/i.test(qNoPrefix) && nodeById.has('track:h2dev')) {
+      return nodeById.get('track:h2dev');
+    }
+
+    if (/^RAW-\d+$/i.test(qNoPrefix)) {
+      const rawNum = qNoPrefix.replace(/^RAW-0*/i, '');
+      const normRawCode = `RAW-${String(parseInt(rawNum || '1', 10)).padStart(3, '0')}`;
+      const hitRaw = nodes.find(n => (n.type === 'channel' || n.type === 'niche') && n.meta && (n.meta.rawId === normRawCode || (Array.isArray(n.meta.rawIds) && n.meta.rawIds.includes(normRawCode))));
+      if (hitRaw) return hitRaw;
+    }
+
+    if (/^REUP[-_]?\d+$/i.test(qNoPrefix)) {
+      const reupNum = parseInt(qNoPrefix.replace(/^REUP[-_]?0*/i, '') || '1', 10);
+      const normReupCode = `REUP-${String(reupNum).padStart(3, '0')}`;
+      const hitReup = nodes.find(n => n.meta && (n.meta.reupId === normReupCode || (Array.isArray(n.meta.reupIds) && n.meta.reupIds.includes(normReupCode))));
+      if (hitReup) return hitReup;
+      if (nodeById.has('niche:H22')) return nodeById.get('niche:H22');
+      if (nodeById.has('track:h2dev')) return nodeById.get('track:h2dev');
+    }
+
+    return nodes.find(n => n.label.toLowerCase().includes(qNoLower) || (n.path && n.path.toLowerCase().includes(qNoLower))) || null;
   }
 
   function selectAndFocusNode(node, centerCanvas) {
     if (!node) return;
     selectedNode = node;
+    const backSodoLink = document.querySelector('.nx-topbar a[href^="/sodo"]');
+    if (backSodoLink && node.id) {
+      backSodoLink.setAttribute('href', `/sodo?snode=${encodeURIComponent(node.id)}`);
+    }
     syncFlowSelectionFromNode(node);
     renderInspector(node);
     renderFlowchart();
@@ -1350,7 +1433,8 @@
     kgSearchDebounceTimer = setTimeout(() => {
       searchQuery = (searchInput.value || '').trim().toLowerCase();
       if (searchQuery) {
-        const firstMatch = nodes.find(n => isNodeVisible(n));
+        const exactResolved = resolveNodeByQuery(searchQuery);
+        const firstMatch = (exactResolved && matchesTrackFilter(exactResolved)) ? exactResolved : nodes.find(n => isNodeVisible(n));
         if (firstMatch) {
           selectAndFocusNode(firstMatch, true);
           renderMatrixView();
@@ -1396,11 +1480,11 @@
 
         if (statsBadge && data.stats) {
           const st = data.stats;
-          const totalVids = st.videos || ((st.videosH2dev || 0) + (st.videosHuan || 0) + (st.videosDgmd || 0)) || 345;
+          const totalVids = st.videos || ((st.videosH2dev || 0) + (st.videosHuan || 0) + (st.videosDgmd || 0)) || 0;
           try {
             document.title = `97yo-dev Nexus Graph — Hệ Thống Hóa Đa Dự Án & Bản Đồ Liên Kết ${totalVids} Video`;
           } catch (_) {}
-          statsBadge.textContent = `Hệ thống 97yo-dev · ${st.projects || 17} Dự Án · 3 Nhánh (${totalVids} Video) · ${st.policies || 12} Chính Sách · ${st.sops || 596} SOP · ${st.files || 941} File · ${st.totalNodes} Nút · ${st.totalEdges} Liên Kết`;
+          statsBadge.textContent = `Hệ thống 97yo-dev · ${st.projects || 17} Dự Án · 3 Nhánh (${totalVids} Video) · ${st.policies || 12} Chính Sách · ${st.sops || 0} SOP · ${st.files || 0} File · ${st.totalNodes} Nút · ${st.totalEdges} Liên Kết`;
           const btnMat = document.getElementById('btnModeMatrix');
           if (btnMat) btnMat.textContent = `3. Ma Trận ${st.projects || 17} Dự Án`;
           const fAll = document.querySelector('#kgTrackFilters button[data-track="all"]');
@@ -1417,10 +1501,10 @@
             btnGal.title = `Vẽ toàn cảnh ${fmtNodes} nút phân cụm theo Dự án & Nhánh đào tạo`;
           }
           if (fInf) fInf.textContent = `Hạ tầng ${st.projects || 17} Dự án (${st.infraNodes || 0})`;
-          if (fPol) fPol.textContent = `Chính sách & SOP (${(st.policies || 12) + (st.checklists || 12) + (st.sops || 596)})`;
-          if (fH2) fH2.textContent = `Nhánh H2DEV (${st.videosH2dev || 153})`;
-          if (fHu) fHu.textContent = `Nhánh Huân (${st.videosHuan || 140})`;
-          if (fDg) fDg.textContent = `Nhánh DGMD (${st.videosDgmd || 52})`;
+          if (fPol) fPol.textContent = `Chính sách & SOP (${(st.policies || 12) + (st.checklists || 12) + (st.sops || 0)})`;
+          if (fH2) fH2.textContent = `Nhánh H2DEV (${st.videosH2dev || 0})`;
+          if (fHu) fHu.textContent = `Nhánh Huân (${st.videosHuan || 0})`;
+          if (fDg) fDg.textContent = `Nhánh DGMD (${st.videosDgmd || 0})`;
           const legEl = document.getElementById('kgLegend');
           if (legEl) {
             legEl.innerHTML = [
@@ -1430,8 +1514,8 @@
               `<span><i class="kg-dot" style="background:#14b8a6;"></i>Thư mục / Ngách (${(st.directories || 0) + (st.niches || 0)})</span>`,
               `<span><i class="kg-dot" style="background:#60a5fa;"></i>File Thực Thi (${st.files || 0})</span>`,
               `<span><i class="kg-dot" style="background:#38bdf8;"></i>Video SKU (${totalVids})</span>`,
-              `<span><i class="kg-dot" style="background:#818cf8;"></i>Tài liệu SOP (${st.sops || 596})</span>`,
-              `<span><i class="kg-dot" style="background:#a855f7;"></i>Công cụ (${st.tools || 204})</span>`,
+              `<span><i class="kg-dot" style="background:#818cf8;"></i>Tài liệu SOP (${st.sops || 0})</span>`,
+              `<span><i class="kg-dot" style="background:#a855f7;"></i>Công cụ (${st.tools || 0})</span>`,
               `<span><i class="kg-dot" style="background:#f472b6;"></i>Kênh Mẫu (${st.channels || 0})</span>`
             ].join('');
           }

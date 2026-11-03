@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-2553da&track=h2dev"
 # VIDEO-2553da — SHOW THỰC TẾ KÊNH EM BUILD LÀM TRONG 20 NGÀY KHÔNG CHE VÀ VỪA ĐỦ ĐẾN ĐIỀU KIỆN BẬT KIẾM TIỀN | UPDATE 18-04-2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#33`)  
 > - **Ngách nội dung (Niche):** [[niches/ban-content-phat-trien-kenh|Bán Content & Phát Triển Kênh]]  
 > - **Thị trường:** 🇻🇳 Việt · 🇰🇷 Hàn | **Thời lượng:** `3:33` | **Ngày đăng:** `2026-04-18`  

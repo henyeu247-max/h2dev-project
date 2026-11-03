@@ -18,7 +18,7 @@ player_url: "/player.html?sku=ZOOM-03-Quy-trinh-tool-toi-uu&track=h2dev"
 # ZOOM-03-Quy-trinh-tool-toi-uu — Zoom 03 — Quy trình Tool & Tối ưu: AVD, SEO, Seeding, Quảng cáo
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M11|H2DEV-M11 — Zoom — Quy trình xây kênh từ A–Z (2026-09)]] (Bài `#03`)  
 > - **Ngách nội dung (Niche):** [[niches/quy-trinh-tool-toi-uu-avd-seo-seeding|Quy Trình Tool, Tối Ưu AVD, SEO & Seeding]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `1:14:22` | **Ngày đăng:** `2026-09-11`  

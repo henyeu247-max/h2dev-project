@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-54c8f7&track=h2dev"
 # VIDEO-54c8f7 — Full quy trình thực chiến hướng dẫn dùng Claude train prompt bất kỳ chủ đề ngách nào mình muốn và cách đóng gói Skill để dùng làm viết kịch bản, tạo ảnh, tạo thumb... (video dài hơn 1 giờ) - Quy Trình dạng tự tạo làm mới chủ đề, kịch bản, hình ảnh... 
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M04|H2DEV-M04 — Hướng dẫn quy trình dùng Claude AI làm YouTuBe]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/toi-uu-mat-xem-livestream-quang-cao|Tối Ưu Mắt Xem Livestream & Quảng Cáo]]  
 > - **Thị trường:** 🇻🇳 Việt · 🌐 Ngoại | **Thời lượng:** `1:12:34` | **Ngày đăng:** `2026-05-18`  

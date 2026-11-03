@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-f59aa7&track=h2dev"
 # VIDEO-f59aa7 — VIP_ Tư duy nhân bản thị trường và hướng dẫn từ A-Z cách làm edit và thumb
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M09|H2DEV-M09 — Module 7 — Nhân bản thị trường & Xây dựng hệ thống kênh]] (Bài `#01`)  
 > - **Ngách nội dung (Niche):** [[niches/suc-khoe-tam-linh-nguoi-cao-tuoi-nhan-ban-da-thi-truong|Sức khỏe & Tâm linh người cao tuổi (Nhân bản đa thị trường)]]  
 > - **Thị trường:** 🇯🇵 Nhật | **Thời lượng:** `43:08` | **Ngày đăng:** `2025-08-21`  

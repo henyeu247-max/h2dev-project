@@ -18,7 +18,7 @@ player_url: "/player.html?sku=ZOOM-02-Chien-luoc-kenh-san-xuat&track=h2dev"
 # ZOOM-02-Chien-luoc-kenh-san-xuat — Zoom 02 — Chiến lược tách kênh & Sản xuất hàng loạt
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M11|H2DEV-M11 — Zoom — Quy trình xây kênh từ A–Z (2026-09)]] (Bài `#02`)  
 > - **Ngách nội dung (Niche):** [[niches/chien-luoc-tach-kenh-san-xuat-hang-loat|Chiến Lược Tách Kênh & Sản Xuất Hàng Loạt]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `1:21:33` | **Ngày đăng:** `2026-09-11`  

@@ -17,7 +17,14 @@
   };
   var TRACK_KEY = 'h2dev-track';
   var initParams = new URLSearchParams(location.search);
-  var currentTrack = initParams.get('track') || sessionStorage.getItem(TRACK_KEY) || 'h2dev';
+  var initMod = (initParams.get('module') || initParams.get('mod') || '').trim();
+  var initSku = (initParams.get('sku') || '').trim();
+  var inferredTrack = '';
+  if (/^HUAN-/i.test(initMod) || /^HUAN-/i.test(initSku)) inferredTrack = 'huan';
+  else if (/^DGMD-/i.test(initMod) || /^DGMD-/i.test(initSku)) inferredTrack = 'dgmd';
+  else if (/^H2DEV-/i.test(initMod) || /^M\d+/i.test(initMod)) inferredTrack = 'h2dev';
+  var fromPlayerRef = Boolean(document.referrer && document.referrer.indexOf('/lotrinh/') !== -1);
+  var currentTrack = initParams.get('track') || inferredTrack || (fromPlayerRef ? sessionStorage.getItem(TRACK_KEY) : '') || 'h2dev';
   if (currentTrack !== 'dgmd' && currentTrack !== 'huan' && currentTrack !== 'h2dev' && currentTrack !== 'all') currentTrack = 'h2dev';
   var currentData = null;
 
@@ -25,8 +32,24 @@
   if (['danhmuc', 'moi', 'yeuthich', 'timkiem'].indexOf(initTab) < 0) initTab = 'danhmuc';
   var initQ = initParams.get('q') || '';
   if (initQ) initTab = 'timkiem';
-  var state = { tab: initTab, q: initQ };
+  var state = { tab: initTab, q: initQ, mod: initMod, sku: initSku };
   var COLLAPSE_KEY = 'h2dev-collapsed';
+
+  function toKgModuleId(modId) {
+    var raw = String(modId || '').trim();
+    if (!raw) return '';
+    if (/^(H2DEV-|HUAN-|DGMD-)/i.test(raw)) return raw.toUpperCase();
+    return 'H2DEV-' + raw.toUpperCase();
+  }
+
+  function isSameModuleId(modId, targetMod) {
+    if (!modId || !targetMod) return false;
+    var uA = String(modId).trim().toUpperCase();
+    var uB = String(targetMod).trim().toUpperCase();
+    if (uA === uB) return true;
+    if (/^(HUAN-|DGMD-)/.test(uA) || /^(HUAN-|DGMD-)/.test(uB)) return uA === uB;
+    return uA.replace(/^H2DEV-/, '') === uB.replace(/^H2DEV-/, '');
+  }
 
   function notifyParentLearnState() {
     try {
@@ -35,7 +58,8 @@
           type: 'h2dev:learn-state',
           track: currentTrack,
           tab: state.tab,
-          q: state.q
+          q: state.q,
+          module: state.mod || ''
         }, '*');
       }
     } catch (e) {}
@@ -145,6 +169,11 @@
           'stroke-dasharray="' + CIR.toFixed(2) + '" stroke-dashoffset="' + (CIR * (1 - st.ratio)).toFixed(2) + '" ' +
           'transform="rotate(-90 18 18)"></circle>' +
       '</svg>';
+    var sodoBtn = document.querySelector('a.back-home[href^="/sodo"]');
+    if (sodoBtn) {
+      var snode = state.mod ? ('module:' + toKgModuleId(state.mod)) : ('track:' + (currentTrack === 'all' ? 'h2dev' : currentTrack));
+      sodoBtn.setAttribute('href', '/sodo?snode=' + encodeURIComponent(snode));
+    }
   }
 
   function syncTrackButtons() {
@@ -154,6 +183,28 @@
       var isAct = (b.dataset.track === currentTrack);
       b.classList.toggle('active', isAct);
       b.setAttribute('aria-checked', isAct ? 'true' : 'false');
+      b.setAttribute('tabindex', isAct ? '0' : '-1');
+    });
+  }
+
+  function initTrackKeyboard() {
+    if (!els.trackSwitcher) return;
+    els.trackSwitcher.addEventListener('keydown', function (e) {
+      var keys = ['ArrowLeft', 'ArrowRight', 'Home', 'End'];
+      if (keys.indexOf(e.key) === -1) return;
+      var btns = Array.prototype.slice.call(els.trackSwitcher.querySelectorAll('.track-btn'));
+      if (!btns.length) return;
+      var idx = btns.indexOf(document.activeElement);
+      if (idx === -1) idx = btns.findIndex(function (b) { return b.dataset.track === currentTrack; });
+      if (idx === -1) return;
+      e.preventDefault();
+      var next = idx;
+      if (e.key === 'ArrowLeft') next = (idx - 1 + btns.length) % btns.length;
+      else if (e.key === 'ArrowRight') next = (idx + 1) % btns.length;
+      else if (e.key === 'Home') next = 0;
+      else if (e.key === 'End') next = btns.length - 1;
+      btns[next].focus();
+      btns[next].click();
     });
   }
 
@@ -252,13 +303,18 @@
     var recent = C.loadRecent();
     var html = '<div class="sections-col">';
     data.modules.forEach(function (m) {
-      var isCol = collapsed.indexOf(m.id) >= 0;
+      var isTargetMod = Boolean(state.mod && isSameModuleId(m.id, state.mod));
+      var hasTargetSku = Boolean(state.sku && m.items.some(function (x) { return String(x.sku).toUpperCase() === String(state.sku).toUpperCase(); }));
+      var isCol = (isTargetMod || hasTargetSku) ? false : (collapsed.indexOf(m.id) >= 0);
       var rows = m.items.map(function (v) {
-        return C.renderLessonRow(v, { seq: v.seq, back: 'learn.html', active: recent && recent.sku === v.sku, showAction: true });
+        var isTargetRow = Boolean(state.sku && String(v.sku).toUpperCase() === String(state.sku).toUpperCase());
+        return C.renderLessonRow(v, { seq: v.seq, back: 'learn.html', track: currentTrack, active: isTargetRow || (recent && recent.sku === v.sku), showAction: true });
       }).join('');
+      var kgMod = toKgModuleId(m.id);
+      var extraStat = '<a class="sec-stat" target="_top" href="/sodo?snode=module:' + encodeURIComponent(kgMod) + '" title="Xem module trên Sơ đồ DB: module:' + C.esc(kgMod) + '" style="text-decoration:none;color:#38bdf8;font-weight:600;">Sơ đồ DB ↗</a>';
       html += '' +
-        '<section class="mod-sec' + (isCol ? ' collapsed' : '') + '" data-mod="' + C.esc(m.id) + '">' +
-          C.renderSectionHead(m.title, m.items.length, moduleSecs(m)) +
+        '<section class="mod-sec' + (isCol ? ' collapsed' : '') + (isTargetMod ? ' is-target-mod' : '') + '" data-mod="' + C.esc(m.id) + '" data-kg-mod="' + C.esc(kgMod) + '">' +
+          C.renderSectionHead(m.title, m.items.length, moduleSecs(m), extraStat, isCol) +
           '<div class="sec-body"><div class="row-list">' + rows + '</div></div>' +
         '</section>';
     });
@@ -288,11 +344,11 @@
       var secs = 0; list.forEach(function (v) { secs += C.durToSecs(v.duration); });
       var mm = k.slice(5, 7), yyyy = k.slice(0, 4);
       var rows = list.map(function (v, i) {
-        return C.renderLessonRow(v, { seq: C.pad2(i + 1), updatedLine: true, back: 'learn.html', active: recent && recent.sku === v.sku, showAction: true });
+        return C.renderLessonRow(v, { seq: C.pad2(i + 1), updatedLine: true, back: 'learn.html', track: currentTrack, active: recent && recent.sku === v.sku, showAction: true });
       }).join('');
       html += '' +
         '<section class="mod-sec month-sec" data-month="' + C.esc(k) + '">' +
-          C.renderSectionHead('Tháng ' + mm + '/' + yyyy, cum, secs) +
+          C.renderSectionHead('Tháng ' + mm + '/' + yyyy, cum, secs, '', false) +
           '<div class="sec-body"><div class="row-list">' + rows + '</div></div>' +
         '</section>';
     });
@@ -316,11 +372,13 @@
       var secs = 0; list.forEach(function (v) { secs += C.durToSecs(v.duration); });
       var rows = list.map(function (v) {
         var seq = m.items.findIndex(function (x) { return x.sku === v.sku; });
-        return C.renderLessonRow(v, { seq: C.pad2(seq + 1), back: 'learn.html', active: recent && recent.sku === v.sku, showAction: true });
+        return C.renderLessonRow(v, { seq: C.pad2(seq + 1), back: 'learn.html', track: currentTrack, active: recent && recent.sku === v.sku, showAction: true });
       }).join('');
+      var kgMod = toKgModuleId(m.id);
+      var extraStat = '<a class="sec-stat" target="_top" href="/sodo?snode=module:' + encodeURIComponent(kgMod) + '" title="Xem module trên Sơ đồ DB: module:' + C.esc(kgMod) + '" style="text-decoration:none;color:#38bdf8;font-weight:600;">Sơ đồ DB ↗</a>';
       html += '' +
-        '<section class="mod-sec" data-mod="' + C.esc(m.id) + '">' +
-          C.renderSectionHead(m.title, list.length, secs) +
+        '<section class="mod-sec" data-mod="' + C.esc(m.id) + '" data-kg-mod="' + C.esc(kgMod) + '">' +
+          C.renderSectionHead(m.title, list.length, secs, extraStat, false) +
           '<div class="sec-body"><div class="row-list">' + rows + '</div></div>' +
         '</section>';
     });
@@ -333,14 +391,17 @@
    * TAB 4 — TÌM KIẾM BÀI HỌC (chuẩn gốc: search bar + card compact)
    * ============================================================ */
   function searchCard(v) {
-    var href = '/lotrinh/' + encodeURIComponent(v.sku);
+    var trackParam = (currentTrack && currentTrack !== 'h2dev') ? ('?track=' + encodeURIComponent(currentTrack)) : '';
+    var href = '/lotrinh/' + encodeURIComponent(v.sku) + trackParam;
+    var nicheLabel = String(v.niche || v.contentNiche || v.nicheCode || '').trim();
     return '' +
-      '<a class="s-card" target="_top" href="' + href + '">' +
+      '<a class="s-card" target="_top" href="' + href + '" data-sku="' + C.esc(v.sku) + '">' +
         '<img src="' + C.esc(v.image || '') + '" alt="' + C.esc(v.title || '') + '" loading="lazy">' +
         '<span class="s-card-body">' +
           '<span class="s-card-title">' + (C.escTitle || C.esc)(v.title) + '</span>' +
           '<span class="s-card-tags">' +
             (v.badge === 'QUAN TRỌNG' || v.badge === 'NỔI BẬT' ? '<span class="ltag ' + (v.badge === 'QUAN TRỌNG' ? 'badge-important' : 'badge-featured') + '">' + (v.badge === 'QUAN TRỌNG' ? C.ICONS.tagImportant : C.ICONS.tagFeatured) + C.esc(v.badge) + '</span>' : '') + ((v.free ?? v.is_free) ? '<span class="ltag ltag-free">FREE</span>' : '<span class="ltag ltag-pro">PRO</span>') +
+            (nicheLabel ? '<span class="ltag" style="border:1px solid rgba(56,189,248,.35);color:#7dd3fc;">' + C.esc(nicheLabel) + '</span>' : '') +
             (v.duration ? '<span class="s-card-dur">' + C.ICONS.clock + C.esc(v.duration) + '</span>' : '') +
           '</span>' +
         '</span>' +
@@ -352,7 +413,7 @@
     var html = '' +
       '<div class="search-bar">' +
         '<span class="search-ico">' + C.ICONS.search + '</span>' +
-        '<input id="searchInput" type="text" placeholder="Tìm kiếm bài học" value="' + C.esc(q) + '" autocomplete="off">' +
+        '<input id="searchInput" type="text" placeholder="Tìm kiếm bài học, mã SKU, module (M01, HUAN-M01) hoặc ngách..." value="' + C.esc(q) + '" autocomplete="off">' +
         '<button class="search-clear' + (q ? '' : ' hidden') + '" id="searchClear" type="button" title="Xoá từ khoá">' + C.ICONS.close + '</button>' +
       '</div>' +
       '<div id="searchResults"></div>';
@@ -372,19 +433,65 @@
       res = list.filter(function (v) {
         if (C.normalize(v.title).indexOf(nq) >= 0) return true;
         if (C.normalize(v.sku).indexOf(nq) >= 0) return true;
+        var nicheStr = [v.niche, v.contentNiche, v.nicheCode].filter(Boolean).join(' ');
+        if (nicheStr && C.normalize(nicheStr).indexOf(nq) >= 0) return true;
         if ((v.channels || []).some(function (c) {
           var ct = (typeof c === 'object' && c !== null) ? [c.handle, c.name, c.url].filter(Boolean).join(' ') : String(c || '');
           return C.normalize(ct).indexOf(nq) >= 0;
         })) return true;
         for (var mi = 0; mi < data.modules.length; mi++) {
           var m = data.modules[mi];
-          if (m.items.some(function (x) { return x.sku === v.sku; }) && C.normalize(m.title).indexOf(nq) >= 0) return true;
+          if (m.items.some(function (x) { return x.sku === v.sku; })) {
+            if (C.normalize(m.title).indexOf(nq) >= 0) return true;
+            if (C.normalize(m.id).indexOf(nq) >= 0) return true;
+            if (C.normalize(toKgModuleId(m.id)).indexOf(nq) >= 0) return true;
+          }
         }
         return false;
       });
     }
     if (!res.length) { box.innerHTML = C.renderEmptyState('search'); return; }
     box.innerHTML = '<div class="s-grid">' + res.map(searchCard).join('') + '</div>';
+  }
+
+  function applyDeepTarget(data) {
+    if (!state.mod && !state.sku) return;
+    if (state.tab !== 'danhmuc') return;
+    var collapsed = loadCollapsed();
+    var changedCollapse = false;
+    var targetSec = null;
+    var secs = Array.prototype.slice.call(els.panelRoot.querySelectorAll('.mod-sec[data-mod]'));
+    secs.forEach(function (sec) {
+      var modId = sec.dataset.mod;
+      var matchMod = Boolean(state.mod && isSameModuleId(modId, state.mod));
+      var matchSkuRow = state.sku ? sec.querySelector('.lesson-row[data-sku="' + CSS.escape(state.sku) + '"]') : null;
+      if (matchMod || matchSkuRow) {
+        targetSec = matchSkuRow || sec;
+        sec.classList.remove('collapsed');
+        var tog = sec.querySelector('.sec-toggle');
+        if (tog) tog.setAttribute('aria-expanded', 'true');
+        var ci = collapsed.indexOf(modId);
+        if (ci >= 0) {
+          collapsed.splice(ci, 1);
+          changedCollapse = true;
+        }
+        sec.style.outline = '2px solid rgba(56,189,248,.65)';
+        sec.style.outlineOffset = '2px';
+        if (matchSkuRow) {
+          matchSkuRow.classList.add('is-active');
+        }
+      }
+    });
+    if (changedCollapse) saveCollapsed(collapsed);
+    if (targetSec) {
+      setTimeout(function () {
+        try {
+          targetSec.scrollIntoView({ behavior: C.scrollBehavior ? C.scrollBehavior() : 'smooth', block: 'center' });
+        } catch (e) {
+          targetSec.scrollIntoView();
+        }
+      }, 60);
+    }
   }
 
   /* ---------- render theo tab ---------- */
@@ -401,6 +508,7 @@
     els.panelRoot.innerHTML = html;
     if (state.tab === 'timkiem') runSearch(data);
     els.panelRoot.setAttribute('aria-busy', 'false');
+    if (state.tab === 'danhmuc') applyDeepTarget(data);
   }
 
   function syncAll(data) {
@@ -490,9 +598,19 @@
         if (!b) return;
         var tr = b.dataset.track;
         if (tr && tr !== currentTrack) {
+          state.mod = '';
+          state.sku = '';
+          try {
+            var uTr = new URL(location.href);
+            uTr.searchParams.delete('module');
+            uTr.searchParams.delete('mod');
+            uTr.searchParams.delete('sku');
+            history.replaceState(null, '', uTr);
+          } catch (err) {}
           switchTrack(tr);
         }
       });
+      initTrackKeyboard();
     }
 
     els.tabbar.addEventListener('click', function (e) {
@@ -509,9 +627,46 @@
     /* PHASE 2: kich hoat dieu huong tab bang ban phim */
     initTabKeyboard();
 
-    // Điều hướng toàn bộ cửa sổ cha khi nhúng iframe (đảm bảo thanh URL browser đổi đúng /lotrinh/:sku)
+    // Phím tắt toàn cục `/` hoặc `Ctrl+K` để mở tab Tìm kiếm bài học và focus #searchInput
+    document.addEventListener('keydown', function (e) {
+      var tag = e.target && e.target.tagName ? e.target.tagName.toUpperCase() : '';
+      var isEditable = tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || (e.target && e.target.isContentEditable);
+      if ((e.ctrlKey || e.metaKey) && String(e.key).toLowerCase() === 'k') {
+        e.preventDefault();
+        if (state.tab !== 'timkiem') {
+          state.tab = 'timkiem';
+          syncAll(currentData || data);
+          try {
+            var u = new URL(location.href);
+            u.searchParams.set('tab', 'timkiem');
+            history.replaceState(null, '', u);
+          } catch (err) {}
+          notifyParentLearnState();
+        }
+        var inp = document.getElementById('searchInput');
+        if (inp) { inp.focus(); inp.select(); }
+        return;
+      }
+      if (!isEditable && !e.ctrlKey && !e.metaKey && !e.altKey && e.key === '/') {
+        e.preventDefault();
+        if (state.tab !== 'timkiem') {
+          state.tab = 'timkiem';
+          syncAll(currentData || data);
+          try {
+            var u2 = new URL(location.href);
+            u2.searchParams.set('tab', 'timkiem');
+            history.replaceState(null, '', u2);
+          } catch (err) {}
+          notifyParentLearnState();
+        }
+        var inp2 = document.getElementById('searchInput');
+        if (inp2) { inp2.focus(); inp2.select(); }
+      }
+    });
+
+    // Điều hướng toàn bộ cửa sổ cha khi nhúng iframe (đảm bảo thanh URL browser đổi đúng /lotrinh/:sku, /sodo, /ngachxanh)
     document.addEventListener('click', function (e) {
-      var a = e.target.closest('a[href^="/lotrinh/"]');
+      var a = e.target.closest('a[href^="/lotrinh/"], a[href^="/sodo"], a[href^="/ngachxanh"]');
       if (a && window.self !== window.top) {
         e.preventDefault();
         try {
@@ -538,6 +693,7 @@
         return;
       }
 
+      if (e.target.closest('.sec-head a')) return;
       var head = e.target.closest('.sec-head');
       if (head) {
         var sec = head.closest('.mod-sec');
@@ -545,19 +701,42 @@
         var id = sec.dataset.mod || ('month:' + sec.dataset.month);
         var collapsed = loadCollapsed();
         var i = collapsed.indexOf(id);
+        var willCollapse = i < 0;
         if (i >= 0) collapsed.splice(i, 1); else collapsed.push(id);
         saveCollapsed(collapsed);
-        sec.classList.toggle('collapsed', i < 0);
+        sec.classList.toggle('collapsed', willCollapse);
+        var tog = sec.querySelector('.sec-toggle');
+        if (tog) tog.setAttribute('aria-expanded', willCollapse ? 'false' : 'true');
+        if (sec.dataset.mod) {
+          state.mod = willCollapse ? '' : toKgModuleId(sec.dataset.mod);
+          try {
+            var uMod = new URL(location.href);
+            if (state.mod) uMod.searchParams.set('module', state.mod);
+            else uMod.searchParams.delete('module');
+            uMod.searchParams.delete('mod');
+            history.replaceState(null, '', uMod);
+          } catch (err) {}
+          var sodoBtn = document.querySelector('a.back-home[href^="/sodo"]');
+          if (sodoBtn) {
+            var snode = state.mod ? ('module:' + toKgModuleId(state.mod)) : ('track:' + (currentTrack === 'all' ? 'h2dev' : currentTrack));
+            sodoBtn.setAttribute('href', '/sodo?snode=' + encodeURIComponent(snode));
+          }
+          notifyParentLearnState();
+        }
         return;
       }
     });
 
-    // deep-link ?tab= ?q= (mod param cũ → mở tab danh mục)
+    // deep-link ?tab= ?q= ?module= ?sku=
     var p = new URLSearchParams(location.search);
     var t = p.get('tab');
     if (t && ['danhmuc', 'moi', 'yeuthich', 'timkiem'].indexOf(t) >= 0) state.tab = t;
     var q = p.get('q');
     if (q) { state.tab = 'timkiem'; state.q = q; }
+    var mParam = (p.get('module') || p.get('mod') || '').trim();
+    if (mParam) state.mod = mParam;
+    var sParam = (p.get('sku') || '').trim();
+    if (sParam) state.sku = sParam;
   }
 
   /* ---------- boot ---------- */

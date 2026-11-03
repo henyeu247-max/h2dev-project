@@ -28,6 +28,12 @@
     "position": 1,
     "contentNiche": "Phát Triển Kênh & Chiến Lược Chủ Đề Đa Nền Tảng",
     "niche": "BẠN SẼ HỌC ĐƯỢC GÌ TRONG DGMD ACADEMY",
+    "niche_primary": "Phát Triển Kênh & Chiến Lược Chủ Đề Đa Nền Tảng",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-02"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -78,7 +84,6 @@
       "Facebook",
       "TikTok"
     ],
-    "niche_primary": "Phát Triển Kênh & Chiến Lược Chủ Đề Đa Nền Tảng",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -113,6 +118,15 @@
     "position": 1,
     "contentNiche": "Tâm Linh & Video AI Phật Pháp (Facebook Reels / Shorts)",
     "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche_primary": "Tâm Linh & Video AI Phật Pháp (Facebook Reels / Shorts)",
+    "nicheCode": "H02",
+    "nicheCodes": [
+      "H02",
+      "H05",
+      "H08",
+      "H10",
+      "H12"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook",
@@ -186,7 +200,6 @@
       "CapCut",
       "Shopee"
     ],
-    "niche_primary": "Tâm Linh & Video AI Phật Pháp (Facebook Reels / Shorts)",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -221,6 +234,12 @@
     "position": 2,
     "contentNiche": "Chiến Lược Xây Kênh 100K Sub & Bình Thẩm Shorts Fair Use",
     "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche_primary": "Chiến Lược Xây Kênh 100K Sub & Bình Thẩm Shorts Fair Use",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -293,7 +312,6 @@
       "Douyin",
       "TikTok"
     ],
-    "niche_primary": "Chiến Lược Xây Kênh 100K Sub & Bình Thẩm Shorts Fair Use",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -328,6 +346,11 @@
     "position": 3,
     "contentNiche": "Âm Nhạc Bản Quyền Mở",
     "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche_primary": "Âm Nhạc Bản Quyền Mở",
+    "nicheCode": "H40",
+    "nicheCodes": [
+      "H40"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -381,7 +404,6 @@
       "Pinterest",
       "CapCut"
     ],
-    "niche_primary": "Âm Nhạc Bản Quyền Mở",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -416,6 +438,12 @@
     "position": 4,
     "contentNiche": "Quản Trị AdSense & Hạ Tầng Kênh",
     "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche_primary": "Quản Trị AdSense & Hạ Tầng Kênh",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -465,7 +493,6 @@
       "Cốc Cốc",
       "Notepad"
     ],
-    "niche_primary": "Quản Trị AdSense & Hạ Tầng Kênh",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -500,6 +527,13 @@
     "position": 5,
     "contentNiche": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04",
+      "H09",
+      "H34"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -555,7 +589,6 @@
       "YouTube",
       "Cốc Cốc"
     ],
-    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -590,6 +623,12 @@
     "position": 6,
     "contentNiche": "So Sánh & Đố Vui Visual",
     "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche_primary": "So Sánh & Đố Vui Visual",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30",
+      "H39"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -659,7 +698,6 @@
       "YouTube",
       "Google"
     ],
-    "niche_primary": "So Sánh & Đố Vui Visual",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -694,6 +732,12 @@
     "position": 7,
     "contentNiche": "Quản Trị AdSense & Kháng Kênh",
     "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche_primary": "Quản Trị AdSense & Kháng Kênh",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -752,7 +796,6 @@
       "YouTube",
       "Cốc Cốc"
     ],
-    "niche_primary": "Quản Trị AdSense & Kháng Kênh",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -764,9 +807,9 @@
     "file": "video/VIDEO-583a09/VIDEO-583a09.mp4",
     "thumb": "assets/thumbs-dgmd/VIDEO-583a09.png",
     "image": "assets/thumbs-dgmd/VIDEO-583a09.png",
-    "resolution": "1080p",
-    "width": 1920,
-    "height": 1080,
+    "resolution": "4K",
+    "width": 4010,
+    "height": 2160,
     "badge": "MIỄN PHÍ",
     "size_mb": 30,
     "duration_sec": 168,
@@ -788,6 +831,12 @@
     "position": 8,
     "contentNiche": "Kỹ Thuật Khởi Tạo Kênh YouTube & Phá Băng Đề Xuất",
     "niche": "BỘ VIDEO MIỄN PHÍ – TỔNG HỢP CÁC QUY TRÌNH YOUTUBE FACEBOOK THỰC CHIẾN",
+    "niche_primary": "Kỹ Thuật Khởi Tạo Kênh YouTube & Phá Băng Đề Xuất",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-02"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại",
@@ -830,7 +879,6 @@
       "YouTube",
       "Gmail"
     ],
-    "niche_primary": "Kỹ Thuật Khởi Tạo Kênh YouTube & Phá Băng Đề Xuất",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -865,6 +913,14 @@
     "position": 1,
     "contentNiche": "Tâm Linh & Tôn Giáo Toàn Cầu",
     "niche": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
+    "niche_primary": "Tâm Linh & Tôn Giáo Toàn Cầu",
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01",
+      "H06",
+      "H07",
+      "H20"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📱 Shorts / Reels"
@@ -919,7 +975,6 @@
       "Google Drive",
       "YouTube"
     ],
-    "niche_primary": "Tâm Linh & Tôn Giáo Toàn Cầu",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -954,6 +1009,12 @@
     "position": 2,
     "contentNiche": "Bán Content & Reup Hợp Pháp",
     "niche": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
+    "niche_primary": "Bán Content & Reup Hợp Pháp",
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22",
+      "H23"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📱 Shorts / Reels"
@@ -1033,7 +1094,6 @@
       "TikTok",
       "Facebook"
     ],
-    "niche_primary": "Bán Content & Reup Hợp Pháp",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -1068,6 +1128,12 @@
     "position": 3,
     "contentNiche": "Thể Thao & Câu Đố Bóng Đá Tương Tác (Sports Quiz Shorts)",
     "niche": "QUY TRÌNH SẢN XUẤT VIDEO NGẮN",
+    "niche_primary": "Thể Thao & Câu Đố Bóng Đá Tương Tác (Sports Quiz Shorts)",
+    "nicheCode": "H27",
+    "nicheCodes": [
+      "H27",
+      "H28"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📱 Shorts / Reels"
@@ -1117,7 +1183,6 @@
       "ChatGPT",
       "CapCut"
     ],
-    "niche_primary": "Thể Thao & Câu Đố Bóng Đá Tương Tác (Sports Quiz Shorts)",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -1152,6 +1217,11 @@
     "position": 1,
     "contentNiche": "Âm Nhạc Thư Giãn & Cổ Phong Trung Hoa (Ancient Chinese Instrumental)",
     "niche": "VIEW NGOẠI 1",
+    "niche_primary": "Âm Nhạc Thư Giãn & Cổ Phong Trung Hoa (Ancient Chinese Instrumental)",
+    "nicheCode": "H40",
+    "nicheCodes": [
+      "H40"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1207,7 +1277,6 @@
       "YouTube",
       "Cốc Cốc"
     ],
-    "niche_primary": "Âm Nhạc Thư Giãn & Cổ Phong Trung Hoa (Ancient Chinese Instrumental)",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -1242,6 +1311,11 @@
     "position": 2,
     "contentNiche": "Quiz & Trắc Nghiệm Kiến Thức",
     "niche": "VIEW NGOẠI 1",
+    "niche_primary": "Quiz & Trắc Nghiệm Kiến Thức",
+    "nicheCode": "H36",
+    "nicheCodes": [
+      "H36"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1293,7 +1367,6 @@
       "CapCut",
       "Suno AI"
     ],
-    "niche_primary": "Quiz & Trắc Nghiệm Kiến Thức",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -1328,6 +1401,11 @@
     "position": 3,
     "contentNiche": "Bán Content & Reup Hợp Pháp",
     "niche": "VIEW NGOẠI 1",
+    "niche_primary": "Bán Content & Reup Hợp Pháp",
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1405,7 +1483,6 @@
       "Pinterest",
       "ChatGPT"
     ],
-    "niche_primary": "Bán Content & Reup Hợp Pháp",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -1440,6 +1517,11 @@
     "position": 1,
     "contentNiche": "Học Tiếng Anh Thụ Động",
     "niche": "VIEW NGOẠI 2",
+    "niche_primary": "Học Tiếng Anh Thụ Động",
+    "nicheCode": "H36",
+    "nicheCodes": [
+      "H36"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1499,7 +1581,6 @@
       "Picsart",
       "CapCut"
     ],
-    "niche_primary": "Học Tiếng Anh Thụ Động",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -1534,6 +1615,13 @@
     "position": 2,
     "contentNiche": "Hoạt Hình 3D Tập Yoga & Sức Khỏe (Kids / Character Yoga)",
     "niche": "VIEW NGOẠI 2",
+    "niche_primary": "Hoạt Hình 3D Tập Yoga & Sức Khỏe (Kids / Character Yoga)",
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1593,7 +1681,6 @@
       "Picsart",
       "YouTube"
     ],
-    "niche_primary": "Hoạt Hình 3D Tập Yoga & Sức Khỏe (Kids / Character Yoga)",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -1628,6 +1715,11 @@
     "position": 3,
     "contentNiche": "Học Tiếng Anh Thụ Động",
     "niche": "VIEW NGOẠI 2",
+    "niche_primary": "Học Tiếng Anh Thụ Động",
+    "nicheCode": "H36",
+    "nicheCodes": [
+      "H36"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1681,7 +1773,6 @@
       "CapCut",
       "Picsart"
     ],
-    "niche_primary": "Học Tiếng Anh Thụ Động",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -1716,6 +1807,12 @@
     "position": 1,
     "contentNiche": "Bảng Xếp Hạng & Top Trend",
     "niche": "VIEW NGOẠI 3",
+    "niche_primary": "Bảng Xếp Hạng & Top Trend",
+    "nicheCode": "H30",
+    "nicheCodes": [
+      "H30",
+      "H39"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📱 Shorts / Reels"
@@ -1778,7 +1875,6 @@
       "MyInstants",
       "CapCut"
     ],
-    "niche_primary": "Bảng Xếp Hạng & Top Trend",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -1813,6 +1909,13 @@
     "position": 2,
     "contentNiche": "Sức Khỏe & Đời Sống",
     "niche": "VIEW NGOẠI 3",
+    "niche_primary": "Sức Khỏe & Đời Sống",
+    "nicheCode": "H03",
+    "nicheCodes": [
+      "H03",
+      "H04",
+      "H16"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1877,7 +1980,6 @@
       "Pixabay",
       "CapCut"
     ],
-    "niche_primary": "Sức Khỏe & Đời Sống",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -1912,6 +2014,11 @@
     "position": 3,
     "contentNiche": "Biến Đổi Visual & Anime",
     "niche": "VIEW NGOẠI 3",
+    "niche_primary": "Biến Đổi Visual & Anime",
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -1968,7 +2075,6 @@
       "Picsart",
       "YouTube"
     ],
-    "niche_primary": "Biến Đổi Visual & Anime",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -2004,6 +2110,11 @@
     "position": 4,
     "contentNiche": "Hoạt Hình Ghibli ASMR Mưa Bão & Gia Đình Ấm Cúng",
     "niche": "VIEW NGOẠI 3",
+    "niche_primary": "Hoạt Hình Ghibli ASMR Mưa Bão & Gia Đình Ấm Cúng",
+    "nicheCode": "H37",
+    "nicheCodes": [
+      "H37"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -2069,7 +2180,6 @@
     "tools_mentioned": [
       "YouTube"
     ],
-    "niche_primary": "Hoạt Hình Ghibli ASMR Mưa Bão & Gia Đình Ấm Cúng",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -2104,6 +2214,11 @@
     "position": 1,
     "contentNiche": "Học Tiếng Anh Thụ Động",
     "niche": "SẢN XUẤT FACEBOOK 1",
+    "niche_primary": "Học Tiếng Anh Thụ Động",
+    "nicheCode": "H36",
+    "nicheCodes": [
+      "H36"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook",
@@ -2159,7 +2274,6 @@
       "CapCut",
       "Facebook"
     ],
-    "niche_primary": "Học Tiếng Anh Thụ Động",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -2194,6 +2308,13 @@
     "position": 2,
     "contentNiche": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche": "SẢN XUẤT FACEBOOK 1",
+    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
+    "nicheCode": "H01",
+    "nicheCodes": [
+      "H01",
+      "H07",
+      "H20"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -2245,7 +2366,6 @@
       "Cốc Cốc",
       "Facebook"
     ],
-    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -2280,6 +2400,14 @@
     "position": 3,
     "contentNiche": "Phật Pháp & Tâm Linh",
     "niche": "SẢN XUẤT FACEBOOK 1",
+    "niche_primary": "Phật Pháp & Tâm Linh",
+    "nicheCode": "H02",
+    "nicheCodes": [
+      "H02",
+      "H05",
+      "H08",
+      "H12"
+    ],
     "market": [
       "🌍 View Ngoại",
       "📘 Facebook"
@@ -2333,7 +2461,6 @@
       "Facebook Reels",
       "TikTok"
     ],
-    "niche_primary": "Phật Pháp & Tâm Linh",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -2368,6 +2495,11 @@
     "position": 1,
     "contentNiche": "Âm Nhạc Truyền Thống & Tâm Linh (Nhạc Chầu Văn AI)",
     "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche_primary": "Âm Nhạc Truyền Thống & Tâm Linh (Nhạc Chầu Văn AI)",
+    "nicheCode": "H40",
+    "nicheCodes": [
+      "H40"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2422,7 +2554,6 @@
       "Grok",
       "CapCut"
     ],
-    "niche_primary": "Âm Nhạc Truyền Thống & Tâm Linh (Nhạc Chầu Văn AI)",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -2457,6 +2588,11 @@
     "position": 2,
     "contentNiche": "Âm Nhạc Dân Gian & Đời Sống (Nhạc Xẩm AI)",
     "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche_primary": "Âm Nhạc Dân Gian & Đời Sống (Nhạc Xẩm AI)",
+    "nicheCode": "H40",
+    "nicheCodes": [
+      "H40"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2512,7 +2648,6 @@
       "Canva",
       "CapCut"
     ],
-    "niche_primary": "Âm Nhạc Dân Gian & Đời Sống (Nhạc Xẩm AI)",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -2547,6 +2682,12 @@
     "position": 3,
     "contentNiche": "Review Phim & Hoạt Hình Câu Cá (Douyin Vietsub)",
     "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche_primary": "Review Phim & Hoạt Hình Câu Cá (Douyin Vietsub)",
+    "nicheCode": "H22",
+    "nicheCodes": [
+      "H22",
+      "H23"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2603,7 +2744,6 @@
       "Snaptik Douyin",
       "YouTube"
     ],
-    "niche_primary": "Review Phim & Hoạt Hình Câu Cá (Douyin Vietsub)",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -2638,6 +2778,12 @@
     "position": 4,
     "contentNiche": "Tâm Linh & Lời Phật Dạy (Video Dài 60–120 Phút)",
     "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche_primary": "Tâm Linh & Lời Phật Dạy (Video Dài 60–120 Phút)",
+    "nicheCode": "H02",
+    "nicheCodes": [
+      "H02",
+      "H12"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2706,7 +2852,6 @@
       "Cốc Cốc",
       "YouTube"
     ],
-    "niche_primary": "Tâm Linh & Lời Phật Dạy (Video Dài 60–120 Phút)",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -2741,6 +2886,12 @@
     "position": 5,
     "contentNiche": "Truyện Audio Drama Tâm Lý & Ngôn Tình (Video Dài 16–60 Phút)",
     "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche_primary": "Truyện Audio Drama Tâm Lý & Ngôn Tình (Video Dài 16–60 Phút)",
+    "nicheCode": "H15",
+    "nicheCodes": [
+      "H15",
+      "H23"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2808,7 +2959,6 @@
       "Picsart",
       "YouTube"
     ],
-    "niche_primary": "Truyện Audio Drama Tâm Lý & Ngôn Tình (Video Dài 16–60 Phút)",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -2843,6 +2993,14 @@
     "position": 6,
     "contentNiche": "Truyện Audio Tâm Sự Tuổi Già & Gia Đình",
     "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche_primary": "Truyện Audio Tâm Sự Tuổi Già & Gia Đình",
+    "nicheCode": "H04",
+    "nicheCodes": [
+      "H04",
+      "H09",
+      "H15",
+      "H34"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -2906,7 +3064,6 @@
       "CapCut",
       "Picsart"
     ],
-    "niche_primary": "Truyện Audio Tâm Sự Tuổi Già & Gia Đình",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -2942,6 +3099,11 @@
     "position": 7,
     "contentNiche": "Hoạt Hình 2D Vẽ Tay Làng Quê Việt Nam & Truyện Gia Đình",
     "niche": "YOUTUBE VIEW VIỆT 1",
+    "niche_primary": "Hoạt Hình 2D Vẽ Tay Làng Quê Việt Nam & Truyện Gia Đình",
+    "nicheCode": "H25",
+    "nicheCodes": [
+      "H25"
+    ],
     "market": [
       "🇻🇳 Việt Nam"
     ],
@@ -3011,7 +3173,6 @@
       "YouTube",
       "Facebook"
     ],
-    "niche_primary": "Hoạt Hình 2D Vẽ Tay Làng Quê Việt Nam & Truyện Gia Đình",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -3046,6 +3207,11 @@
     "position": 1,
     "contentNiche": "Âm Thanh Động Vật & Trẻ Em",
     "niche": "YOUTUBE VIEW VIỆT & VIEW NGOẠI",
+    "niche_primary": "Âm Thanh Động Vật & Trẻ Em",
+    "nicheCode": "H29",
+    "nicheCodes": [
+      "H29"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -3103,7 +3269,6 @@
       "CapCut",
       "Picsart"
     ],
-    "niche_primary": "Âm Thanh Động Vật & Trẻ Em",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -3138,6 +3303,11 @@
     "position": 2,
     "contentNiche": "Trò Chơi Tương Tác & Thử Thách Bắt Nhịp (Say The Word On Beat)",
     "niche": "YOUTUBE VIEW VIỆT & VIEW NGOẠI",
+    "niche_primary": "Trò Chơi Tương Tác & Thử Thách Bắt Nhịp (Say The Word On Beat)",
+    "nicheCode": "H25",
+    "nicheCodes": [
+      "H25"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -3191,7 +3361,6 @@
       "YouTube",
       "TikTok"
     ],
-    "niche_primary": "Trò Chơi Tương Tác & Thử Thách Bắt Nhịp (Say The Word On Beat)",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -3226,6 +3395,12 @@
     "position": 3,
     "contentNiche": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (PC)",
     "niche": "YOUTUBE VIEW VIỆT & VIEW NGOẠI",
+    "niche_primary": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (PC)",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -3285,7 +3460,6 @@
       "Picsart",
       "YouTube"
     ],
-    "niche_primary": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (PC)",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -3297,9 +3471,9 @@
     "file": "video/VIDEO-0056a9/VIDEO-0056a9.mp4",
     "thumb": "assets/thumbs-dgmd/VIDEO-0056a9.png",
     "image": "assets/thumbs-dgmd/VIDEO-0056a9.png",
-    "resolution": "1080p",
-    "width": 1920,
-    "height": 1080,
+    "resolution": "2K",
+    "width": 1080,
+    "height": 1920,
     "badge": "NỔI BẬT",
     "size_mb": 158.15,
     "duration_sec": 562,
@@ -3320,6 +3494,12 @@
     "position": 4,
     "contentNiche": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (Mobile)",
     "niche": "YOUTUBE VIEW VIỆT & VIEW NGOẠI",
+    "niche_primary": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (Mobile)",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -3373,7 +3553,6 @@
       "Google Chrome",
       "YouTube"
     ],
-    "niche_primary": "Khai Thác Video Trend TikTok & Bật Kiếm Tiền Nhanh (Mobile)",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -3408,6 +3587,12 @@
     "position": 1,
     "contentNiche": "Tự Động Hóa & Lập Trình Tool Livestream Đa Luồng",
     "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche_primary": "Tự Động Hóa & Lập Trình Tool Livestream Đa Luồng",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-05"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3477,7 +3662,6 @@
       "YouTube",
       "Facebook"
     ],
-    "niche_primary": "Tự Động Hóa & Lập Trình Tool Livestream Đa Luồng",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -3512,6 +3696,12 @@
     "position": 2,
     "contentNiche": "Tooling & Tự Động Hóa YouTube",
     "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche_primary": "Tooling & Tự Động Hóa YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-05"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3581,7 +3771,6 @@
       "ChatGPT",
       "Pinterest"
     ],
-    "niche_primary": "Tooling & Tự Động Hóa YouTube",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -3616,6 +3805,12 @@
     "position": 3,
     "contentNiche": "SEO & Thuật Toán YouTube",
     "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche_primary": "SEO & Thuật Toán YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3669,7 +3864,6 @@
       "YouTube",
       "Cốc Cốc"
     ],
-    "niche_primary": "SEO & Thuật Toán YouTube",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -3704,6 +3898,12 @@
     "position": 4,
     "contentNiche": "SEO & Thuật Toán YouTube",
     "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche_primary": "SEO & Thuật Toán YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3758,7 +3958,6 @@
       "YouTube",
       "Cốc Cốc"
     ],
-    "niche_primary": "SEO & Thuật Toán YouTube",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -3793,6 +3992,12 @@
     "position": 5,
     "contentNiche": "SEO & Thuật Toán YouTube",
     "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche_primary": "SEO & Thuật Toán YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3847,7 +4052,6 @@
       "YouTube",
       "Cốc Cốc"
     ],
-    "niche_primary": "SEO & Thuật Toán YouTube",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -3882,6 +4086,12 @@
     "position": 6,
     "contentNiche": "SEO & Thuật Toán YouTube",
     "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche_primary": "SEO & Thuật Toán YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -3935,7 +4145,6 @@
       "TikTok",
       "Facebook"
     ],
-    "niche_primary": "SEO & Thuật Toán YouTube",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -3970,6 +4179,12 @@
     "position": 7,
     "contentNiche": "Quản Trị AdSense & Hạ Tầng Kênh",
     "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche_primary": "Quản Trị AdSense & Hạ Tầng Kênh",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -4029,7 +4244,6 @@
       "Spotify",
       "Zing MP3"
     ],
-    "niche_primary": "Quản Trị AdSense & Hạ Tầng Kênh",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -4064,6 +4278,12 @@
     "position": 8,
     "contentNiche": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-01"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -4116,7 +4336,6 @@
       "Grok",
       "Gmail"
     ],
-    "niche_primary": "Phát Triển Kênh & Kỹ Thuật YouTube",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -4151,6 +4370,12 @@
     "position": 9,
     "contentNiche": "SEO & Thuật Toán YouTube",
     "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche_primary": "SEO & Thuật Toán YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-04"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -4200,7 +4425,6 @@
       "YouTube Studio",
       "ChatGPT"
     ],
-    "niche_primary": "SEO & Thuật Toán YouTube",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -4236,6 +4460,12 @@
     "position": 10,
     "contentNiche": "Prompt Engineering & Visual AI",
     "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche_primary": "Prompt Engineering & Visual AI",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-05"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -4292,7 +4522,6 @@
       "Google Flow",
       "ChatGPT"
     ],
-    "niche_primary": "Prompt Engineering & Visual AI",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -4328,6 +4557,12 @@
     "position": 11,
     "contentNiche": "Prompt Engineering & Visual AI",
     "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche_primary": "Prompt Engineering & Visual AI",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-05"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -4393,7 +4628,6 @@
       "Google Flow",
       "Nano Banana 2"
     ],
-    "niche_primary": "Prompt Engineering & Visual AI",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -4429,6 +4663,12 @@
     "position": 12,
     "contentNiche": "Tooling & Tự Động Hóa YouTube",
     "niche": "TƯ DUY CẦN NHỚ KHI XÂY DỰNG KÊNH YOUTUBE",
+    "niche_primary": "Tooling & Tự Động Hóa YouTube",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-05"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -4504,7 +4744,6 @@
       "ChatGPT",
       "Google Docs"
     ],
-    "niche_primary": "Tooling & Tự Động Hóa YouTube",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -4516,9 +4755,9 @@
     "file": "video/VIDEO-434f80/VIDEO-434f80.mp4",
     "thumb": "assets/thumbs-dgmd/VIDEO-434f80.png",
     "image": "assets/thumbs-dgmd/VIDEO-434f80.png",
-    "resolution": "1080p",
-    "width": 1920,
-    "height": 1080,
+    "resolution": "4K",
+    "width": 3840,
+    "height": 2160,
     "badge": "PRO",
     "size_mb": 253.84,
     "duration_sec": 999,
@@ -4540,6 +4779,11 @@
     "position": 1,
     "contentNiche": "Phim Ngắn AI Drama Gia Đình Việt Nam",
     "niche": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
+    "niche_primary": "Phim Ngắn AI Drama Gia Đình Việt Nam",
+    "nicheCode": "H38",
+    "nicheCodes": [
+      "H38"
+    ],
     "market": [
       "🇻🇳 Việt Nam"
     ],
@@ -4611,7 +4855,6 @@
       "Shopee",
       "TikTok"
     ],
-    "niche_primary": "Phim Ngắn AI Drama Gia Đình Việt Nam",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -4623,9 +4866,9 @@
     "file": "video/VIDEO-ca0383/VIDEO-ca0383.mp4",
     "thumb": "assets/thumbs-dgmd/VIDEO-ca0383.png",
     "image": "assets/thumbs-dgmd/VIDEO-ca0383.png",
-    "resolution": "1080p",
-    "width": 1920,
-    "height": 1080,
+    "resolution": "4K",
+    "width": 3840,
+    "height": 2160,
     "badge": "PRO",
     "size_mb": 203.61,
     "duration_sec": 848,
@@ -4647,6 +4890,12 @@
     "position": 2,
     "contentNiche": "Phim Ngắn AI Tình Huống Drama Nhật Bản",
     "niche": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
+    "niche_primary": "Phim Ngắn AI Tình Huống Drama Nhật Bản",
+    "nicheCode": "H15",
+    "nicheCodes": [
+      "H15",
+      "H38"
+    ],
     "market": [
       "🌍 View Ngoại"
     ],
@@ -4712,7 +4961,6 @@
     "tools_mentioned": [
       "YouTube"
     ],
-    "niche_primary": "Phim Ngắn AI Tình Huống Drama Nhật Bản",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -4724,9 +4972,9 @@
     "file": "video/VIDEO-fa13f3/VIDEO-fa13f3.mp4",
     "thumb": "assets/thumbs-dgmd/VIDEO-fa13f3.png",
     "image": "assets/thumbs-dgmd/VIDEO-fa13f3.png",
-    "resolution": "1080p",
-    "width": 1920,
-    "height": 1080,
+    "resolution": "2K",
+    "width": 2560,
+    "height": 1440,
     "badge": "PRO",
     "size_mb": 66.04,
     "duration_sec": 261,
@@ -4748,6 +4996,12 @@
     "position": 3,
     "contentNiche": "Kiếm Tiền Shopee Affiliate Trên Fanpage & Phim Ngắn AI",
     "niche": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
+    "niche_primary": "Kiếm Tiền Shopee Affiliate Trên Fanpage & Phim Ngắn AI",
+    "nicheCode": "META-OPS",
+    "nicheCodes": [
+      "META-OPS",
+      "META-03"
+    ],
     "market": [
       "🇻🇳 Việt Nam"
     ],
@@ -4788,7 +5042,6 @@
       "Shopee",
       "Facebook"
     ],
-    "niche_primary": "Kiếm Tiền Shopee Affiliate Trên Fanpage & Phim Ngắn AI",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -4800,9 +5053,9 @@
     "file": "video/VIDEO-7112d8/VIDEO-7112d8.mp4",
     "thumb": "assets/thumbs-dgmd/VIDEO-7112d8.png",
     "image": "assets/thumbs-dgmd/VIDEO-7112d8.png",
-    "resolution": "1080p",
-    "width": 1920,
-    "height": 1080,
+    "resolution": "2K",
+    "width": 2560,
+    "height": 1440,
     "badge": "PRO",
     "size_mb": 196.89,
     "duration_sec": 847,
@@ -4824,6 +5077,11 @@
     "position": 4,
     "contentNiche": "Xây Dựng Thương Hiệu Cá Nhân & Kênh Podcast AI",
     "niche": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
+    "niche_primary": "Xây Dựng Thương Hiệu Cá Nhân & Kênh Podcast AI",
+    "nicheCode": "H20",
+    "nicheCodes": [
+      "H20"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -4896,7 +5154,6 @@
       "TikTok",
       "Facebook"
     ],
-    "niche_primary": "Xây Dựng Thương Hiệu Cá Nhân & Kênh Podcast AI",
     "local": true,
     "drm": false,
     "isDgmd": true,
@@ -4908,9 +5165,9 @@
     "file": "video/VIDEO-0419c4/VIDEO-0419c4.mp4",
     "thumb": "assets/thumbs-dgmd/VIDEO-0419c4.png",
     "image": "assets/thumbs-dgmd/VIDEO-0419c4.png",
-    "resolution": "1080p",
-    "width": 1920,
-    "height": 1080,
+    "resolution": "720p",
+    "width": 1280,
+    "height": 720,
     "badge": "PRO",
     "size_mb": 160.26,
     "duration_sec": 1123,
@@ -4932,6 +5189,11 @@
     "position": 5,
     "contentNiche": "QUY TRÌNH HOẠT HÌNH AI NGOẠI",
     "niche": "PHIM AI & XÂY DỰNG THƯƠNG HIỆU PODCAST / AFFILIATE",
+    "niche_primary": "QUY TRÌNH HOẠT HÌNH AI NGOẠI",
+    "nicheCode": "H37",
+    "nicheCodes": [
+      "H37"
+    ],
     "market": [
       "🇻🇳 Việt Nam",
       "🌍 View Ngoại"
@@ -4993,7 +5255,6 @@
       "CapCut",
       "Pixabay"
     ],
-    "niche_primary": "QUY TRÌNH HOẠT HÌNH AI NGOẠI",
     "local": true,
     "drm": false,
     "isDgmd": true,

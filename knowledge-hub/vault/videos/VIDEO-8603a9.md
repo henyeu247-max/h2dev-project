@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-8603a9&track=h2dev"
 # VIDEO-8603a9 — Share Key (Ngách Nhỏ) Các Thị Trường HongKong, Hàn, Việt - Update 7/9/2025
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#80`)  
 > - **Ngách nội dung (Niche):** [[niches/tam-linh-thu-hut-may-man|Tâm Linh & Thu Hút May Mắn]]  
 > - **Thị trường:** 🇭🇰 HK · 🇰🇷 Hàn · 🇻🇳 Việt | **Thời lượng:** `7:26` | **Ngày đăng:** `2025-09-07`  

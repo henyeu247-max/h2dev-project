@@ -170,6 +170,8 @@ const DOC_RULES = [
     build: c => `$1${c.channels}$2${c.liveChannels}$3${c.deadChannels}$4${c.canonicalRaw}$5` },
   { file: 'data-tabs/ngach-xanh.json', pattern: /(\[BẰNG CHỨNG THỰC NGHIỆM TỪ )\d+( KÊNH DEAD & 4 HỒ SƠ TERMINATED TRONG KHO 97YO-DEV\] — Đối soát thực nghiệm trên )\d+( kênh mẫu \()\d+( live · )\d+( dead: )\d+( kênh 404 gone, )\d+( kênh xóa trắng video empty wipe; trong đó 16 kênh gắn cờ DEAD_TERMINATED\))/g,
     build: c => `$1${c.deadChannels}$2${c.channels}$3${c.liveChannels}$4${c.deadChannels}$5${c.deadChannelsGone}$6${c.deadChannelsEmpty}$7` },
+  { file: 'data-tabs/ngach-xanh.json', pattern: /("evidence":\s*"\d+\/)\d+( video \()/g,
+    build: c => `$1${c.totalSystemVideos}$2` },
   { file: 'data-tabs/chien-luoc.json', pattern: /(Đề cương & SOP )\d+( bước thực chiến toàn diện trên hệ thống 97yo-dev\)\. Tổng hợp và đối soát từ )\d+( video bài học toàn hệ thống \()\d+( H2DEV \[)\d+( video \+ )\d+( Zoom\] · )\d+( Huân Academy · )\d+( DGMD\), )\d+( tài liệu SOP catalog)/g,
     build: c => `$1${c.chienLuocSteps}$2${c.totalSystemVideos}$3${c.h2devVideos ?? c.videos}$4${c.videoLessons}$5${c.zoomSessions}$6${c.huanVideos ?? c.videosHuan}$7${c.dgmdVideos ?? c.videosDgmd}$8${c.documents}$9` },
   { file: 'data-tabs/chien-luoc.json', pattern: /(\(\+[\d.]+ tài liệu đính kèm 3 nhánh\), )\d+( Ngách trụ cột × 120 Vi Ngách \(Micro-Niches\), )[\d.]+( kênh mẫu \()\d+( live · )\d+( dead\) và 19 H2DEV Specialized Agent Skills\.)/g,
@@ -254,8 +256,8 @@ const DOC_RULES = [
       return `$1${h2}/${h2}$2${hd}/${hd}$3`;
     } },
   { file: 'knowledge-hub/docs/MEMORY.md',
-    pattern: /(0 file 0 byte · )[\d.]+( GB \()[\d.]+( GiB\))/g,
-    build: c => `$1${(c.mediaBytes / 1e9).toFixed(2)}$2${(c.mediaBytes / 1073741824).toFixed(2)}$3` },
+    pattern: /(- Media: )\d+\/\d+( file có trên đĩa \()\d+( H2DEV \+ )\d+( Huân \+ )\d+( DGMD\), 0 file 0 byte · )[\d.]+( GB \()[\d.]+( GiB\) · `docs\/` )\d+( thư mục)/g,
+    build: c => `$1${c.mediaFiles}/${c.totalSystemVideos}$2${c.h2devVideos ?? c.videos}$3${c.huanVideos ?? c.videosHuan}$4${c.dgmdVideos ?? c.videosDgmd}$5${(c.mediaBytes / 1e9).toFixed(2)}$6${(c.mediaBytes / 1073741824).toFixed(2)}$7${c.docsTotalDirs}$8` },
 ];
 
 // ---- DB COUNT GATE (2026-10-09) ----

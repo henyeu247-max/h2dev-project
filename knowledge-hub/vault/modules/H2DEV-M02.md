@@ -7,7 +7,7 @@ lesson_count: 12
 
 # Module H2DEV-M02 — Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)
 
-- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]
+- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]
 - **Tổng số bài giảng:** `12` video
 - **Mô tả:** Quy trình setup setting kênh chuẩn ngay từ đầu theo chính sách mới nhất 2026.
 

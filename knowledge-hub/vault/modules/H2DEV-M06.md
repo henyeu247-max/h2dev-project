@@ -2,13 +2,13 @@
 module_id: "H2DEV-M06"
 title: "VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục"
 track: "h2dev"
-lesson_count: 105
+lesson_count: 106
 ---
 
 # Module H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục
 
-- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]
-- **Tổng số bài giảng:** `105` video
+- **Thuộc Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]
+- **Tổng số bài giảng:** `106` video
 - **Mô tả:** Module lớn nhất 86 bài. Share key + thực chiến các ngách nhỏ trên mọi thị trường: Nhật · Hàn · Việt · US · Canada · Philippines. Cập nhật liên tục.
 
 ## Danh Sách Bài Học Trong Module
@@ -112,8 +112,9 @@ lesson_count: 105
 - `#98` [[videos/VIDEO-0b3f44|VIDEO-0b3f44 — Share 2 ngách nhỏ bán content view ngoại mới | Update 13-10-2026]] (`5:03` · Bán Content Ngách Cực Nhỏ & Tối Ưu CTR)
 - `#99` [[videos/VIDEO-e0e9cd|VIDEO-e0e9cd — V2 - Thực chiến quy trình A-Z làm ngách đang cực HOT trends = Claude Automation | Update 22-10-2026]] (`25:36` · Hoạt Hình 2D Người Que & Giả Định What-If)
 - `#100` [[videos/VIDEO-0c72ab|VIDEO-0c72ab — V1 - Full 50 phút Thực chiến hướng dẫn quy trình A-Z làm ngách "What-If" đang cực HOT trends bằng Claude và Edit 100% = Claude code  |  Update 21-10-2026]] (`50:03` · Tự Động Hóa Code 2D & Ngách Giả Định What-If)
-- `#101` [[videos/VIDEO-bfabb6|VIDEO-bfabb6 — Hướng dẫn làm Tự động hóa ngách người que view Việt bằng Claude KHÔNG ĐỤNG tới Capcut, 100% edit giống đối thủ  |  Update 23-10-2026 ]] (`00:00` · Hoạt Hình 2D Người Que & Lịch Sử Tiền Sử View Việt)
-- `#102` [[videos/VIDEO-9ff392|VIDEO-9ff392 — Thực chiến share ngách lịch sử Việt Nam hướng dẫn làm + kèm Skill ( Claude tự động edit video ) |  Update 25-10-2026]] (`00:00` · Lịch Sử Quân Sự & Hoạt Họa Bản Đồ Việt Nam)
-- `#103` [[videos/VIDEO-57d8ef|VIDEO-57d8ef — Demo ngách lịch sử Việt - Claude tự động làm kịch bản, edit video.. A-Z]] (`00:00` · Lịch Sử Quân Sự & Hoạt Họa Bản Đồ Việt Nam)
-- `#104` [[videos/VIDEO-448a91|VIDEO-448a91 — Thực chiến share ngách view ngoại Thị trường Nhật Bản - Tặng kèm skill edit video  |  Update 27-10-2026]] (`00:00` · Kể Chuyện Cổ Đại & Tiến Hóa Nhân Loại (Nhật Bản))
-- `#105` [[videos/VIDEO-2d1a38|VIDEO-2d1a38 — Hướng dẫn Thực chiến ngách mới Thị trường Hoa Kỳ (US) + Tặng kèm Skill edit video tự động 100% giống đối thủ  |  Update 29-10-2026]] (`00:00` · Lịch Sử Quân Sự & Bản Đồ Địa Hình 3D (US))
+- `#101` [[videos/VIDEO-bfabb6|VIDEO-bfabb6 — Hướng dẫn làm Tự động hóa ngách người que view Việt bằng Claude KHÔNG ĐỤNG tới Capcut, 100% edit giống đối thủ  |  Update 23-10-2026 ]] (`31:47` · Hoạt Hình 2D Người Que & Lịch Sử Tiền Sử View Việt)
+- `#102` [[videos/VIDEO-9ff392|VIDEO-9ff392 — Thực chiến share ngách lịch sử Việt Nam hướng dẫn làm + kèm Skill ( Claude tự động edit video ) |  Update 25-10-2026]] (`18:32` · Lịch Sử Quân Sự & Hoạt Họa Bản Đồ Việt Nam)
+- `#103` [[videos/VIDEO-57d8ef|VIDEO-57d8ef — Demo ngách lịch sử Việt - Claude tự động làm kịch bản, edit video.. A-Z]] (`10:52` · Lịch Sử Quân Sự & Hoạt Họa Bản Đồ Việt Nam)
+- `#104` [[videos/VIDEO-448a91|VIDEO-448a91 — Thực chiến share ngách view ngoại Thị trường Nhật Bản - Tặng kèm skill edit video  |  Update 27-10-2026]] (`24:33` · Kể Chuyện Cổ Đại & Tiến Hóa Nhân Loại (Nhật Bản))
+- `#105` [[videos/VIDEO-2d1a38|VIDEO-2d1a38 — Hướng dẫn Thực chiến ngách mới Thị trường Hoa Kỳ (US) + Tặng kèm Skill edit video tự động 100% giống đối thủ  |  Update 29-10-2026]] (`35:21` · Lịch Sử Quân Sự & Bản Đồ Địa Hình 3D (US))
+- `#106` [[videos/VIDEO-acef2c|VIDEO-acef2c — Ngách làm bán content Thị trường Việt và Nhật  | Update 03-11-2026]] (`07:34` · Bán Content Drama Gia Đình & Người Que Đa Thị Trường (Việt - Nhật - US))

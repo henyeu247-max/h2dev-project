@@ -1,7 +1,81 @@
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
+
+function resLabel(w, h) {
+  if (w >= 3840 || h >= 2160) return '4K';
+  if (w >= 2560 || h >= 1440) return '2K';
+  if (w < h && (w >= 1080 || h >= 1920)) return 'Shorts 1080p';
+  if (w >= 1920 || h >= 1080) return '1080p';
+  if (w >= 1280 || h >= 720) return '720p';
+  return '1080p';
+}
+
+function loadProbedDims() {
+  const p = path.join(ROOT, '_internal', 'probed_video_dims.json');
+  if (fs.existsSync(p)) {
+    try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch (_) {}
+  }
+  return {};
+}
+
+function resolveVideoDim(sku, existingItem, probedMap) {
+  if (probedMap[sku] && Number(probedMap[sku].width) > 0) {
+    return probedMap[sku];
+  }
+  if (existingItem && Number(existingItem.width) > 0 && Number(existingItem.height) > 0 && existingItem.resolution) {
+    return {
+      width: Number(existingItem.width),
+      height: Number(existingItem.height),
+      resolution: String(existingItem.resolution),
+      duration_sec: Number(existingItem.duration_sec || 0)
+    };
+  }
+  const mp4Abs = path.join(ROOT, 'video', sku, `${sku}.mp4`);
+  if (fs.existsSync(mp4Abs)) {
+    try {
+      const out = execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height,duration', '-of', 'json', mp4Abs], { encoding: 'utf8' });
+      const st = (JSON.parse(out).streams || [])[0] || {};
+      const w = Number(st.width) || 1920;
+      const h = Number(st.height) || 1080;
+      const d = Math.round(Number(st.duration) || 0);
+      const entry = { width: w, height: h, resolution: resLabel(w, h), duration_sec: d };
+      probedMap[sku] = entry;
+      return entry;
+    } catch (_) {}
+  }
+  return { width: 1920, height: 1080, resolution: '1080p', duration_sec: 0 };
+}
+
+function loadSkuNicheCodesMap() {
+  const nxPath = path.join(ROOT, 'data-tabs', 'ngach-xanh.json');
+  const map = new Map();
+  if (!fs.existsSync(nxPath)) return map;
+  try {
+    const nx = JSON.parse(fs.readFileSync(nxPath, 'utf8'));
+    (nx.ngachXanh || []).forEach((n, idx) => {
+      const code = String(n.id || n.code || ('H' + String(idx + 1).padStart(2, '0'))).trim().toUpperCase();
+      (n.skus || []).forEach(s => {
+        const k = String(typeof s === 'string' ? s : (s && s.sku) || '').trim().toLowerCase();
+        if (!k) return;
+        if (!map.has(k)) map.set(k, []);
+        const arr = map.get(k);
+        if (!arr.includes(code)) arr.push(code);
+      });
+    });
+    (nx.ngachMetaKho || []).forEach((m, idx) => {
+      const metaCode = String(m.code || ('META-0' + (idx + 1))).trim().toUpperCase();
+      (m.skus || []).forEach(s => {
+        const k = String(typeof s === 'string' ? s : (s && s.sku) || '').trim().toLowerCase();
+        if (!k || map.has(k)) return;
+        map.set(k, ['META-OPS', metaCode]);
+      });
+    });
+  } catch (_) {}
+  return map;
+}
 
 function formatDuration(sec) {
   const s = parseInt(sec || '0', 10);
@@ -83,6 +157,8 @@ async function main() {
   const catBySku = new Map(catalogList.map(x => [x.sku, x]));
   const cfBySku = new Map(catalogFullList.map(x => [x.sku, x]));
   const vtBySku = new Map(videosTabList.map(x => [x.sku, x]));
+  const probedDims = loadProbedDims();
+  const skuNicheCodesMap = loadSkuNicheCodesMap();
 
   // Map module sequence and metadata per SKU
   const modMetaBySku = new Map();
@@ -347,6 +423,7 @@ async function main() {
         }
       }
       const isReadable = resolvedFile && /\.(md|txt)$/i.test(resolvedFile) && fs.existsSync(path.join(ROOT, resolvedFile));
+      if (resolvedFile && fs.existsSync(path.join(ROOT, resolvedFile)) && fs.statSync(path.join(ROOT, resolvedFile)).size === 0) continue;
       docs.push({
         ...d,
         name: d.name || d.title || path.basename(resolvedFile || lRel),
@@ -363,6 +440,8 @@ async function main() {
       for (const fn of fs.readdirSync(assetDocDir)) {
         if (!/\.(md|txt)$/i.test(fn)) continue;
         const rel = `assets/docs/${sku}/${fn}`;
+        const fSize = fs.statSync(path.join(ROOT, rel)).size;
+        if (fSize === 0) continue;
         if (seenDocFiles.has(rel.toLowerCase())) continue;
         seenDocFiles.add(rel.toLowerCase());
         docs.push({
@@ -372,7 +451,7 @@ async function main() {
           file: rel,
           readFile: rel,
           path: rel,
-          size: fs.statSync(path.join(ROOT, rel)).size
+          size: fSize
         });
       }
     }
@@ -399,45 +478,55 @@ async function main() {
     const publishedAt = vtItem.published_at || catItem.published_at || cfItem.published_at || '2026-08-01';
     const ingestedAt = vtItem.ingested_at || catItem.ingested_at || cfItem.ingested_at || '';
     const seqStr = modMeta.seq || vtItem.seq || catItem.seq || '01';
+    const dim = resolveVideoDim(sku, vtItem.width ? vtItem : catItem, probedDims);
+    const finalDurSec = Math.round(Number(realDur || dim.duration_sec || vtItem.duration_sec || catItem.duration_sec || 600));
+    const finalDurStr = vtItem.duration || catItem.duration || formatDuration(finalDurSec);
+    const localMp4Abs = path.join(ROOT, 'video', sku, `${sku}.mp4`);
+    const diskSizeBytes = fs.existsSync(localMp4Abs) ? fs.statSync(localMp4Abs).size : 0;
+    const finalSizeBytes = Number(vtItem.size || catItem.size || diskSizeBytes || 0);
+    const finalSizeMb = Number(vtItem.size_mb || catItem.size_mb || (finalSizeBytes ? (finalSizeBytes / (1024 * 1024)).toFixed(2) : 0));
+    const isFree = Boolean(vtItem.free ?? vtItem.is_free ?? catItem.free ?? catItem.is_free ?? false);
+    const isDrm = Boolean(vtItem.drm ?? vtItem.is_drm ?? catItem.drm ?? catItem.is_drm ?? false);
+    const finalBadge = vtItem.badge || catItem.badge || (isFree ? 'MIỄN PHÍ' : 'PRO');
+    const mappedCodes = skuNicheCodesMap.get(String(sku || '').toLowerCase()) || vtItem.nicheCodes || catItem.nicheCodes || ['H02'];
+    const primaryCode = mappedCodes[0] || vtItem.nicheCode || catItem.nicheCode || 'H02';
 
-    catItem.seq = seqStr;
-    catItem.module_id = modMeta.module_id;
-    catItem.contentNiche = contentNiche;
-    catItem.niche = vtItem.niche || contentNiche;
-    catItem.market = markets;
-    catItem.published_at = publishedAt;
-    if (ingestedAt) catItem.ingested_at = ingestedAt;
-    catItem.docs = docs;
-    catItem.docsCount = docs.length;
-    catItem.channels = groundedChannels;
-    catItem.actual_topic = ins.actual_topic;
+    const applyUnifiedFields = (target) => {
+      target.seq = seqStr;
+      target.module_id = modMeta.module_id;
+      target.module_title = modMeta.module_title;
+      target.category_name = target.category_name || modMeta.module_title;
+      target.contentNiche = contentNiche;
+      target.niche = vtItem.niche || contentNiche;
+      target.niche_primary = contentNiche;
+      target.nicheCode = primaryCode;
+      target.nicheCodes = mappedCodes;
+      target.market = markets;
+      target.published_at = publishedAt;
+      if (ingestedAt) target.ingested_at = ingestedAt;
+      target.duration = finalDurStr;
+      target.duration_sec = finalDurSec;
+      target.size = finalSizeBytes;
+      target.size_mb = finalSizeMb;
+      target.width = dim.width;
+      target.height = dim.height;
+      target.resolution = dim.resolution;
+      target.free = isFree;
+      target.is_free = isFree;
+      target.is_pro = !isFree;
+      target.access = isFree ? 'free' : 'pro';
+      target.drm = isDrm;
+      target.is_drm = isDrm;
+      target.badge = finalBadge;
+      target.docs = docs;
+      target.docsCount = docs.length;
+      target.channels = groundedChannels;
+      target.actual_topic = ins.actual_topic;
+    };
 
-    if (cfBySku.has(sku)) {
-      cfItem.seq = seqStr;
-      cfItem.module_id = modMeta.module_id;
-      cfItem.contentNiche = contentNiche;
-      cfItem.niche = vtItem.niche || contentNiche;
-      cfItem.market = markets;
-      cfItem.published_at = publishedAt;
-      if (ingestedAt) cfItem.ingested_at = ingestedAt;
-      cfItem.docs = docs;
-      cfItem.docsCount = docs.length;
-      cfItem.channels = groundedChannels;
-      cfItem.actual_topic = ins.actual_topic;
-    }
-
-    if (vtBySku.has(sku)) {
-      vtItem.seq = seqStr;
-      vtItem.module_id = modMeta.module_id;
-      vtItem.contentNiche = contentNiche;
-      vtItem.niche = vtItem.niche || contentNiche;
-      vtItem.market = markets;
-      vtItem.published_at = publishedAt;
-      if (ingestedAt) vtItem.ingested_at = ingestedAt;
-      vtItem.docs = docs;
-      vtItem.docsCount = docs.length;
-      vtItem.channels = groundedChannels;
-    }
+    applyUnifiedFields(catItem);
+    if (cfBySku.has(sku)) applyUnifiedFields(cfItem);
+    if (vtBySku.has(sku)) applyUnifiedFields(vtItem);
   }
 
   // Update modules.json items
@@ -502,8 +591,6 @@ async function main() {
       for (const vid of videosTabList) {
         const sku = vid.sku;
         const keyLower = String(sku || '').toLowerCase();
-        if (itemBySkuLower.has(keyLower)) continue;
-
         const insObj = existingInsights[sku] || {};
         const tjPath = path.join(ROOT, 'video', sku, 'transcript.json');
         const trObj = fs.existsSync(tjPath) ? JSON.parse(fs.readFileSync(tjPath, 'utf8')) : {};
@@ -516,7 +603,28 @@ async function main() {
         const cMeta = clusterById.get(cId) || clusters[0];
         const es = (insObj && insObj.edit_sop) || {};
         const addArr = Array.isArray(es.additional) ? es.additional : [];
-        const sopStr = `primary: ${es.primary || ''} | additional: [${addArr.map(s => `'${String(s).replace(/'/g, "\\'")}'`).join(', ')}]`.slice(0, 300);
+        const primaryClean = String(es.primary || '').replace(/^primary:\s*/i, '').replace(/\s*[:.]\s*$/, '').trim();
+        const stepsClean = addArr.map((s, idx) => {
+          const txt = String(s || '').replace(/^(?:Bước\s*\d+(?:\s*\([^)]*\))?\s*[:.-]?\s*|\d+\.\s*)/i, '').trim();
+          return txt ? `Bước ${idx + 1}: ${txt}` : '';
+        }).filter(Boolean).join(' · ');
+        const sopStr = [primaryClean, stepsClean].filter(Boolean).join(' — ');
+        const takeawaysArr = Array.isArray(insObj.key_takeaways) ? insObj.key_takeaways.slice(0, 3) : [];
+        const avoidArr = Array.isArray(insObj.avoid_flags) ? insObj.avoid_flags.slice(0, 3) : [];
+        const attCount = Array.isArray(vid.docs) ? vid.docs.length : (vid.docsCount || 2);
+
+        if (itemBySkuLower.has(keyLower)) {
+          const existingIt = itemBySkuLower.get(keyLower);
+          existingIt.title = vid.title || insObj.title || existingIt.title || sku;
+          existingIt.duration = vid.duration || existingIt.duration || '10:00';
+          if (sample) existingIt.transcriptSample = sample;
+          if (wordCount > 0) existingIt.transcriptWords = wordCount;
+          if (sopStr) existingIt.sopSummary = sopStr;
+          if (avoidArr.length) existingIt.avoidFlags = avoidArr;
+          if (takeawaysArr.length) existingIt.takeaways = takeawaysArr;
+          existingIt.attachedCount = attCount;
+          continue;
+        }
 
         const newItem = {
           sku,
@@ -527,9 +635,9 @@ async function main() {
           transcriptSample: sample,
           transcriptWords: wordCount,
           sopSummary: sopStr,
-          avoidFlags: Array.isArray(insObj.avoid_flags) ? insObj.avoid_flags.slice(0, 3) : [],
-          takeaways: [],
-          attachedCount: Array.isArray(vid.docs) ? vid.docs.length : (vid.docsCount || 2)
+          avoidFlags: avoidArr,
+          takeaways: takeawaysArr,
+          attachedCount: attCount
         };
         existingItems.push(newItem);
         itemBySkuLower.set(keyLower, newItem);

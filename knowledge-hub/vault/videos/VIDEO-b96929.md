@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-b96929&track=h2dev"
 # VIDEO-b96929 — Hướng dẫn edit key triết lý _ khắc kỷ chi tiết từ A-Z 
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M07|H2DEV-M07 — Module 5 — Edit video & Thumbnail chuẩn A-Z]] (Bài `#04`)  
 > - **Ngách nội dung (Niche):** [[niches/triet-ly-song-dao-lam-nguoi|Triết Lý Sống & Đạo Làm Người]]  
 > - **Thị trường:** 🌐 Ngoại · 🇺🇸 Mỹ | **Thời lượng:** `21:52` | **Ngày đăng:** `2025-08-19`  

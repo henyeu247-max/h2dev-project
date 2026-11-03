@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-e0e9cd&track=h2dev"
 # VIDEO-e0e9cd — V2 - Thực chiến quy trình A-Z làm ngách đang cực HOT trends = Claude Automation | Update 22-10-2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M06|H2DEV-M06 — VIP - Module 4 — Thực chiến Share key / Hướng dẫn chi tiết quy trình làm, edit, train prompt, tạo thumbnail – Nhiều thị trường (ngách nhỏ) – Cập nhật thường xuyên liên tục]] (Bài `#99`)  
 > - **Ngách nội dung (Niche):** [[niches/hoat-hinh-2d-nguoi-que-gia-dinh-what-if|Hoạt Hình 2D Người Que & Giả Định What-If]]  
 > - **Thị trường:** 🇺🇸 Mỹ · 🌐 Ngoại | **Thời lượng:** `25:36` | **Ngày đăng:** `2026-10-22`  

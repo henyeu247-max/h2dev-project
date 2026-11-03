@@ -18,7 +18,7 @@ player_url: "/player.html?sku=VIDEO-7f0bb4&track=h2dev"
 # VIDEO-7f0bb4 — NGÂM KÊNH CHUẨN VÀ XÁC MINH ĐỘ TRUST MẠNH NGAY TỪ KHI BUILD KÊNH - CHUẨN CHÍNH SÁCH MỚI 2026
 
 > **Chuỗi Liên Kết Tri Thức (Knowledge Graph Links):**  
-> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (153 Videos)]]  
+> - **Track:** [[tracks/TRACK-H2DEV|Nhánh H2DEV · YouTube Faceless Master (154 Videos)]]  
 > - **Module:** [[modules/H2DEV-M02|H2DEV-M02 — Module 1 — Nền tảng & Setup/ Setting kênh chuẩn từ đầu (BẮT BUỘC XEM TRƯỚC)]] (Bài `#05`)  
 > - **Ngách nội dung (Niche):** [[niches/nuoi-kenh-xay-dung-trust-score|Nuôi kênh & Xây dựng Trust Score]]  
 > - **Thị trường:** 🇻🇳 Việt | **Thời lượng:** `4:14` | **Ngày đăng:** `2026-03-20`  

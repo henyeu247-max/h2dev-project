@@ -697,10 +697,16 @@ const server = http.createServer(async (req,res)=>{
   }
   if (apiPath === '/api/intelligence/breakouts') {
     if (req.method === 'GET' || isHead) {
+      const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
+      const view = (parsedUrl.searchParams.get('view') || 'breakouts').trim();
+      const niche = (parsedUrl.searchParams.get('niche') || '').trim();
+      const maxSubs = parseInt(parsedUrl.searchParams.get('maxSubs') || '0', 10) || 0;
+      const search = (parsedUrl.searchParams.get('q') || parsedUrl.searchParams.get('search') || '').trim();
+      const limit = parseInt(parsedUrl.searchParams.get('limit') || '30', 10) || 30;
       try {
         const kgQuery = require('./scripts/kg_query');
         if (typeof kgQuery.queryIntelligenceBreakouts === 'function') {
-          sendJson(req, res, 200, kgQuery.queryIntelligenceBreakouts(30), isHead);
+          sendJson(req, res, 200, kgQuery.queryIntelligenceBreakouts({ view, niche, maxSubs, search, limit }), isHead);
           return;
         }
       } catch (_) {}

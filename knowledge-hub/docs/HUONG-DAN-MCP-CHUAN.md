@@ -1,7 +1,7 @@
 # HƯỚNG DẪN DÙNG MCP CHUẨN (H2DEV-Project & D:\Mcp-Pool-Vps)
 
-> Cập nhật: **2026-09-16**  
-> Mục đích: Chuẩn hóa kiến trúc MCP nội bộ + **routing thực chiến theo evidence live** (benchmark Check-Pass trên máy anh).  
+> Cập nhật: **2026-11-04**  
+> Mục đích: Chuẩn hóa kiến trúc 3 MCP Servers nội bộ (`126` tools live) + **routing thực chiến theo evidence live** (benchmark Check-Pass trên máy anh).  
 > Proof: `_audit/mcp-bench-*.json`, `_audit/mcp-web-bench-*.json`, `_audit/mcp-web-fair-*.json`  
 > Backup bản cũ: `_backup/20260916-mcp-guide/HUONG-DAN-MCP-CHUAN.md`
 
@@ -11,10 +11,12 @@
 
 | Dịch vụ | Địa chỉ | Bản chất | Mã nguồn |
 |---|---|---|---|
-| **MCP Pool v2 Local** | `http://127.0.0.1:3988/mcp` | Tool server thực chiến (**187 tools live** — 20 namespace, đo 19/09/2026) | `D:\Mcp-Pool-Vps\` |
-| Healthcheck | `http://127.0.0.1:3988/health` | Kỳ vọng: `{"status":"ok","version":"2.0.0","tools":187,...}` | Windows Service `MCP_Pool_Service` AUTO |
-| **9Router** | `http://127.0.0.1:20128` | **AI Chat Model Gateway** — chỉ LLM chat | **KHÔNG phải MCP tool server** |
-| H2DEV Web | `http://127.0.0.1:8899` | App học liệu / Mission Control | `D:\YTB\H2DEV-Project\` |
+| **MCP Pool v2 Local** | `http://127.0.0.1:3988/mcp` | Tool server thực chiến (**86 tools live** — `deepseek`, `classifier`, `youtube_intelligence` 31 tools, `exa`, `firecrawl`, `tavily`, `keenable`, `ydc`, `jev`, `context7`, `memory`, `skills_sh`, `ui-skills`) | `D:\Mcp-Pool-Vps\` |
+| **ag-gui-mcp v3.4.0** | `http://127.0.0.1:18741/mcp` | Điều phối đa CLI Agent (`codex`, `claude`, `pi`, `orca`), Git Worktree, `ag_workflow` (bằng chứng SHA256) & `ag_mcp_pool` (**25 tools live**) | Local Service `:18741` |
+| **imagegen-mcp v1.0.0** | `http://127.0.0.1:18742/mcp` | Tạo/sửa/hậu kỳ ảnh đa provider (`gemini` 9 acc, `gpt-proxy` 4 acc, `grok-proxy`, `codex`, `grok` — **15 tools live**) | `D:\SŨA CHỮA LINH TINH PC\tools\imagegen-mcp\` |
+| Healthcheck | `http://127.0.0.1:3988/health` | Kỳ vọng: `{"status":"ok","version":"2.0.0",...}` | Windows Service `MCP_Pool_Service` AUTO |
+| **9Router / Cockpit / CLIProxy** | `:20128` / `:54435` / `:8317` | **AI Chat Model Gateways** — chỉ LLM chat/completions | **KHÔNG phải MCP tool server** |
+| H2DEV Web | `http://127.0.0.1:8899` | App học liệu / Mission Control (`347` bài · `598` SOP · `6.286` FTS5) | `D:\YTB\H2DEV-Project\` |
 
 **Cốt lõi:** 9Router = “não” chat. Mọi tay chân (YouTube / web / browser) = MCP Pool `:3988`. Auth: header `X-API-Key` từ `MCP_POOL_API_KEY` trong `D:\Mcp-Pool-Vps\.env` (không hardcode vào repo).
 
@@ -40,24 +42,29 @@ Khởi động khi chết cổng: `D:\Mcp-Pool-Vps\start.cmd` hoặc `start-pool
 
 ---
 
-## 3. TẦNG A — YOUTUBE INTELLIGENCE ($0, ĐƯỜNG CHÍNH STREAM B)
+## 3. TẦNG A — YOUTUBE INTELLIGENCE (31 TOOLS $0.00, ĐƯỜNG CHÍNH STREAM B)
 
-Ưu tiên tuyệt đối khi làm ngách / đối thủ / YPP / outlier. Live bench 2026-09-16:
+Ưu tiên tuyệt đối khi làm ngách / đối thủ / YPP / outlier / kịch bản / cắt Shorts. Kết nối trực tiếp `data/intelligence.db` (`513` kênh · `271` breakout · `341` faceless · `7.473` video · `1.391` outlier · `3.285` cạnh co-watch):
 
 | Tool | Latency tham chiếu | Ghi chú schema |
 |---|---:|---|
 | `youtube_intelligence__niche_rpm_predictor` | ~51ms | `nicheKey` enum + `monthlyViews` |
-| `youtube_intelligence__query_database` | ~72ms | view: breakouts / all_channels / recent_edges |
-| `youtube_intelligence__breakout_finder` | ~157ms | |
+| `youtube_intelligence__query_database` | <5ms | `view`: `breakouts` / `dream100` / `outliers` / `top_videos` / `all_channels` / `recent_edges` / `stats` + `sql` SELECT |
+| `youtube_intelligence__breakout_finder` | ~157ms | Radar săn kênh nhỏ bão view qua VSR Multiplier |
 | `youtube_intelligence__latest_videos` | ~183ms | **required `channelId` (UC...)** |
-| `youtube_intelligence__keyword_suggest` | ~288ms | |
-| `youtube_intelligence__search_channels` | ~428ms | |
+| `youtube_intelligence__keyword_suggest` | ~288ms | Đào từ khóa đề xuất qua YouTube Autocomplete |
+| `youtube_intelligence__search_channels` | ~428ms | Tìm kiếm kênh InnerTube không tốn quota |
 | `youtube_intelligence__channel_dossier` | ~450ms | `channel: "@Handle"` hoặc URL |
-| `youtube_intelligence__outlier_scanner` | ~461ms | |
-| `youtube_intelligence__check_monetization` | ~1.3s | |
-| `youtube_intelligence__video_details` | ~1.8s | `videoId` |
-| `youtube_intelligence__transcript` | ~2.3s | `videoId` |
-| `youtube_intelligence__spider_niche` | ~8.7s | `seedVideoId` — co-watch 2-hop |
+| `youtube_intelligence__outlier_scanner` | ~461ms | Tính trung vị và bội số Outlier >= 3x |
+| `youtube_intelligence__check_monetization` | ~1.3s | Thẩm định kiếm tiền YPP đa tín hiệu |
+| `youtube_intelligence__video_details` | ~1.8s | `videoId` — bóc tags ẩn & metadata |
+| `youtube_intelligence__transcript` | ~2.3s | `videoId` — phụ đề có timestamp |
+| `youtube_intelligence__spider_niche` | ~8.7s | `seedVideoId` — co-watch 2-hop + Blue Ocean Index (BOI) |
+| `youtube_intelligence__director_script_storyboard_generator` | ~120ms | Kịch bản 5 Hồi + Storyboard song ngữ CN/EN 10 thể loại + khóa nhân vật 3-view turnaround |
+| `youtube_intelligence__viral_shorts_highlight_detector` | ~80ms | Bóc đoạn cao trào Shorts 30–50s kết hợp Most Replayed Heatmap |
+| `youtube_intelligence__local_shorts_clipper` | ~0.8s | Cắt Shorts `9:16` / Intro Vault `16:9` + bơm **SEO Thô MP4** (`-c copy` `<1s`) |
+| `youtube_intelligence__script_ypp_pacing_linter` · `seo_tag_matrix_generator` · `title_hook_deconstructor` · `avd_retention_forecaster` | <90ms | Kiểm duyệt kịch bản chống AI-slop, nén bộ thẻ SEO <500 ký tự, phân tích Hook & AVD |
+| `youtube_intelligence__underdog_hunter` · `vph_trending_radar` · `comment_goldmine_extractor` · `serp_xray_analyzer` · `channel_cadence_analyzer` · `keyword_opportunity_scorer` · `thumbnail_vision_clusterer` · `thumbnail_ab_change_tracker` · `thumbnail_prompt_replicator` · `sponsor_detector` · `best_time_to_post_calculator` · `free_broll_footage_finder` | <500ms | Trọn bộ 31 vũ khí tình báo & sản xuất miễn phí 100% |
 
 Fallback script local (không MCP): `scripts/free_yt_engine.py` (`py -3`).  
 

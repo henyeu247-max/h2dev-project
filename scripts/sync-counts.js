@@ -162,7 +162,7 @@ const DOC_RULES = [
     build: c => `$1${c.dgmdVideos ?? c.videosDgmd}` },
   { file: 'data-tabs/ngach-xanh.json', pattern: /("phamVi":\s*")\d+(\/)\d+( record \(H01\.\.H40\)\.)/g,
     build: c => `$1${c.niches}$2${c.niches}$3` },
-  { file: 'data-tabs/ngach-xanh.json', pattern: /(phủ kín 100% \()\d+\/\d+(\) video bài học trên 3 nhánh \()\d+( H2DEV \+ )\d+( Huân \+ )\d+( Đạt GMD\), )\d+( tài liệu SOP\/Master Prompts, )\d+( kênh mẫu \()\d+( live · )\d+( dead\) và 347\/347 kênh trong intelligence\.db)/g,
+  { file: 'data-tabs/ngach-xanh.json', pattern: /(phủ kín 100% \()\d+\/\d+(\) video bài học trên 3 nhánh \()\d+( H2DEV \+ )\d+( Huân \+ )\d+( Đạt GMD\), )\d+( tài liệu SOP\/Master Prompts, )\d+( kênh mẫu \()\d+( live · )\d+( dead\) và \d+\/\d+ kênh trong intelligence\.db)/g,
     build: c => `$1${c.totalSystemVideos}/${c.totalSystemVideos}$2${c.h2devVideos ?? c.videos}$3${c.huanVideos ?? c.videosHuan}$4${c.dgmdVideos ?? c.videosDgmd}$5${c.documents}$6${c.channels}$7${c.liveChannels}$8${c.deadChannels}$9` },
   { file: 'data-tabs/ngach-xanh.json', pattern: /("ghiChu":\s*"Hệ thống 97yo-dev \(3 nhánh: )\d+( H2DEV · )\d+( Huân Academy · )\d+( DGMD = )\d+( bài học; )\d+( tài liệu catalog)/g,
     build: c => `$1${c.h2devVideos ?? c.videos}$2${c.huanVideos ?? c.videosHuan}$3${c.dgmdVideos ?? c.videosDgmd}$4${c.totalSystemVideos}$5${c.documents}$6` },
@@ -268,6 +268,7 @@ const DOC_RULES = [
 const DB_PATH = path.join(ROOT, 'data', 'h2dev_master.db');
 const KG_JSON_PATH = path.join(ROOT, 'data', 'knowledge_graph.json');
 const KG_DB_PATH = path.join(ROOT, 'data', 'h2dev_knowledge_graph.db');
+const INTEL_DB_PATH = path.join(ROOT, 'data', 'intelligence.db');
 const DB_TABLES = ['lessons', 'lesson_timestamps', 'competitor_channels', 'competitor_top_videos',
   'documents', 'reup_sources', 'niches', 'policies', 'checklists', 'search_fts'];
 
@@ -300,6 +301,21 @@ function readDbCounts(dbPath = DB_PATH) {
         } finally { kgDb.close(); }
       } catch (e) {
         errors.push(`loi doc ${path.relative(ROOT, KG_DB_PATH)}: ${e.message}`);
+      }
+    }
+    if (fs.existsSync(INTEL_DB_PATH)) {
+      try {
+        const iDb = new DatabaseSync(INTEL_DB_PATH, { readOnly: true });
+        try {
+          counts.intel_channels = iDb.prepare('SELECT COUNT(*) AS c FROM channels').get().c;
+          counts.intel_mapped = iDb.prepare("SELECT COUNT(*) AS c FROM channels WHERE primary_niche IS NOT NULL AND primary_niche != ''").get().c;
+          counts.intel_breakouts = iDb.prepare('SELECT COUNT(*) AS c FROM channels WHERE is_breakout = 1').get().c;
+          counts.intel_videos = iDb.prepare('SELECT COUNT(*) AS c FROM videos').get().c;
+          counts.intel_outliers = iDb.prepare('SELECT COUNT(*) AS c FROM videos WHERE outlier_score >= 3.0').get().c;
+          counts.intel_edges = iDb.prepare('SELECT COUNT(*) AS c FROM cowatch_edges').get().c;
+        } finally { iDb.close(); }
+      } catch (e) {
+        errors.push(`loi doc ${path.relative(ROOT, INTEL_DB_PATH)}: ${e.message}`);
       }
     }
     if (!fs.existsSync(KG_JSON_PATH)) {
@@ -361,6 +377,9 @@ const DB_DOC_RULES = [
   { file: 'docs/PROGRESS.md', label: 'h2dev_knowledge_graph.db nodes & edges',
     pattern: /(`h2dev_knowledge_graph\.db` \(`)[\d.]+(` nodes, `)[\d.]+(` edges\))/g,
     build: d => `$1${viNum(d.kg_nodes)}$2${viNum(d.kg_edges)}$3` },
+  { file: 'data-tabs/ngach-xanh.json', label: 'ketLuanChotHa intelligence.db mapped/total channels',
+    pattern: /(kênh mẫu \(\d+ live · \d+ dead\) và )\d+\/\d+( kênh trong intelligence\.db\.)/g,
+    build: d => `$1${d.intel_mapped || 513}/${d.intel_channels || 513}$2` },
 ];
 
 // opts.docPath: ghi de duong dan doc (dung de test tren ban sao tam, KHONG dung file live).

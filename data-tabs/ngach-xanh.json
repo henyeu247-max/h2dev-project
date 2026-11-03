@@ -417,7 +417,7 @@
       ],
       "quyTacSongConH2DEV": "Bắt buộc bật nhãn Altered/Synthetic Content đối với cảnh chân thực (SynthID watermark scanning), tuyệt đối không dùng 1 ảnh tĩnh suốt video, và mỗi video phải có kịch bản phân tích nguyên nhân - hệ quả độc lập."
     },
-    "ketLuanChotHa": "Hệ sinh thái Ngách Xanh H2DEV 2026 đã hợp nhất toàn diện 40 ngách chuẩn (H01..H40), phủ kín 100% (347/347) video bài học trên 3 nhánh (154 H2DEV + 140 Huân + 53 Đạt GMD), 598 tài liệu SOP/Master Prompts, 1076 kênh mẫu (987 live · 89 dead) và 347/347 kênh trong intelligence.db. Kiểm chứng YPP thực tế (check_monetization ad-slot) tháng 10/2026 khẳng định: YouTube KHÔNG cấm AI, nhưng quét 0/4 ads cực gắt với các kênh lặp template tĩnh. 12 ngách Ưu tiên Sản xuất dẫn đầu bởi Everyday History EN (H30), 2D Paint / Stickman Explainer (H25), Bible Explainer EN (H01), Wildlife Documentary (H29), Geopolitics Maps (H18), Ancient Civilizations (H27) và AI Film Mythic Lore (H38)."
+    "ketLuanChotHa": "Hệ sinh thái Ngách Xanh H2DEV 2026 đã hợp nhất toàn diện 40 ngách chuẩn (H01..H40), phủ kín 100% (347/347) video bài học trên 3 nhánh (154 H2DEV + 140 Huân + 53 Đạt GMD), 598 tài liệu SOP/Master Prompts, 1076 kênh mẫu (987 live · 89 dead) và 513/513 kênh trong intelligence.db. Kiểm chứng YPP thực tế (check_monetization ad-slot) tháng 10/2026 khẳng định: YouTube KHÔNG cấm AI, nhưng quét 0/4 ads cực gắt với các kênh lặp template tĩnh. 12 ngách Ưu tiên Sản xuất dẫn đầu bởi Everyday History EN (H30), 2D Paint / Stickman Explainer (H25), Bible Explainer EN (H01), Wildlife Documentary (H29), Geopolitics Maps (H18), Ancient Civilizations (H27) và AI Film Mythic Lore (H38)."
   },
   "phamViKho": {
     "video": 154,

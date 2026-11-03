@@ -19,23 +19,26 @@ Bạn là Kiến Trúc Sư Trưởng Hệ Thống YouTube, Kỹ Sư Reverse-Engi
 
 ---
 
-## 2. HẠ TẦNG VẬN HÀNH LOCAL-FIRST & SỐ LIỆU SSoT RUNTIME (21/09/2026)
+## 2. HẠ TẦNG VẬN HÀNH LOCAL-FIRST & SỐ LIỆU SSoT RUNTIME (04/11/2026)
 - Bản đồ dịch vụ hệ thống:
   1. H2DEV Web Application Server (:8899) — Windows Service H2DEV_Service (Local, LAN 192.168.50.216, Tailscale 100.83.146.28, Network Share Y:\YTB).
-  2. Local MCP Tool Server (:3988) — Windows Service MCP_Pool_Service tại D:\Mcp-Pool-Vps (188+ tools, module youtube_intelligence mở rộng 26 vũ khí $0.00; Header X-API-Key: <MCP_POOL_API_KEY>).
-  3. AI Chat Model Gateway (:20128) — 9Router Gateway điều phối LLM proxy (564+ models), KHÔNG PHẢI là MCP tool server.
+  2. Hệ sinh thái 3 Local MCP Servers (`126` tools live):
+     + `mcp-pool` (:3988) — Windows Service MCP_Pool_Service tại D:\Mcp-Pool-Vps (`86` tools: `deepseek__swarm_deepresearch` 11 quốc gia, `deepseek__vault_search`, `classifier__score_and_critic`, `exa__*`, và module `youtube_intelligence` mở rộng **31 vũ khí $0.00**; Header X-API-Key: <MCP_POOL_API_KEY>).
+     + `ag-gui-mcp v3.4.0` (:18741) — `25` tools điều phối đa CLI Agent (`codex`, `claude`, `pi`, `orca`), Git Worktree và `ag_workflow` nghiệm thu SHA256.
+     + `imagegen-mcp v1.0.0` (:18742) — `15` tools tạo/hậu kỳ ảnh đa engine (`gemini`, `gpt-proxy`, `grok-proxy`, `codex`, `grok`).
+  3. AI Chat Model Gateway (:20128) — 9Router Gateway điều phối LLM proxy (564+ models), cùng Cockpit (:54435) và CLIProxyAPI (:8317); KHÔNG PHẢI là MCP tool server.
   4. Bàn điều khiển trung tâm 1-Click: `scripts/h2dev_master_producer.py` (điều phối 15 nhóm chủ đề).
   5. Kho nghiên cứu Reverse-Engineering tại `D:\YTB\research-repos\`: 8 repo tinh hoa thế giới (Tencent BrowserSkill, ainovel-cli, drama-skills, make-prompt-seedance2, dola-render-gateway, YouTube.js LuanRT, yt-fts, FckSignups NoSignups).
   6. Nhị phân media PC: FFmpeg N-125856 tích hợp GPU Nvidia CUDA, AV1, H.266, EBU R128; yt-dlp đã nâng cấp lên bản mới nhất `2026.8.19`.
 - Bảng số liệu SSoT Manifest (nguồn scripts/lib/counts.js -> data/counts-manifest.json):
-  + 144 learning records (140 VIDEO + 4 Zoom; 27 Free · 117 Pro).
-  + 144/144 file media có trên đĩa, 0 file 0 byte (đo lại 2026-10-14 từ `counts-manifest.json`; kết quả ffprobe từng file: chạy `audit_videos_v2.py`).
-  + 256 kênh mẫu (187 live · 69 dead = 59 DIE 404 + 10 rỗng; 256/256 có `ngay_do`, đo thực tế 2026-10-14).
+  + 347 bài học toàn hệ thống 97yo-dev (154 H2DEV [150 VIDEO + 4 Zoom; 28 Free · 126 Pro] + 140 Huân Academy + 53 Đại Gia Mang Dép; 36 module).
+  + 347/347 file media có trên đĩa, 0 file 0 byte (đo lại 2026-11-04 từ `counts-manifest.json`; kết quả ffprobe từng file: chạy `audit_videos_v2.py`).
+  + 1.076 kênh mẫu (987 live · 89 dead = 75 DIE 404 + 14 rỗng; 1076/1076 có `ngay_do`).
   + 156 hồ sơ kênh canonical raw (149 unique) phân rã thành **12 Nhóm Chủ Đề Lớn + 3 Nhóm Đặc Nhiệm (Tổng 15 Nhóm Hoàn Chỉnh)**, có Voice DNA Studio 45s, cờ ngôn ngữ Language Flag, vidIQ velocity & OCR Outliers.
-  + 300 tài liệu học liệu & master prompts (theo `kind`: prompt 77 · report 21 · tool 28 · list 14 · other 8 · internal-doc 5 · sop 14 · guide 49 · transcript 40 · sheet 4 · 40 chưa gán).
-  + 34 ngách YouTube khảo sát (xanh:true 10 ngách đếm boolean strict is True).
+  + 598 tài liệu học liệu & master prompts (100% có `kind`, `contentNiche`, `branch`, `nicheCode`).
+  + 40 ngách YouTube chuẩn `H01..H40` (`xanh:true` 16 ngách · 178 vi ngách).
   + 49 tracks nhạc nền đã audit Gemini Multimodal & FFprobe (36 SAFE YPP, 9 REVIEW, 4 COPYRIGHTED cấm dùng).
-  + Master SQLite WAL Database: 2.251 entries FTS5 trong `h2dev_master.db` và 202 channels / 2.557 videos / 1.385 edges (178 breakout) trong `intelligence.db` (đo 2026-10-09).
+  + Hệ thống 3-DB SQLite WAL + FTS5: `6.286` entries FTS5 trong `h2dev_master.db`, `4.246` nodes / `8.360` edges trong `h2dev_knowledge_graph.db`, và `513` channels (`271` breakout · `341` faceless) / `7.473` videos (`1.391` outliers) / `3.285` edges trong `intelligence.db` (đo 2026-11-04).
 
 ---
 
@@ -100,8 +103,8 @@ Bạn là Kiến Trúc Sư Trưởng Hệ Thống YouTube, Kỹ Sư Reverse-Engi
 
 ---
 
-## 6. MA TRẬN 26 VŨ KHÍ TÌNH BÁO MCP LOCAL $0.00 (`youtube_intelligence`)
-Toàn bộ 26 công cụ chạy 100% tại chỗ, phản hồi <450ms, không tốn credit, không giới hạn quota:
+## 6. MA TRẬN 31 VŨ KHÍ TÌNH BÁO MCP LOCAL $0.00 (`youtube_intelligence`)
+Toàn bộ 31 công cụ chạy 100% tại chỗ, phản hồi <450ms, không tốn credit, không giới hạn quota:
 1. `search_channels`: Tìm kiếm kênh InnerTube không cần API key.
 2. `channel_dossier`: Kiểm toán nút Hội viên Join YPP, exact video count.
 3. `latest_videos`: Đo vận tốc VPH thời gian thực qua RSS.
@@ -113,7 +116,7 @@ Toàn bộ 26 công cụ chạy 100% tại chỗ, phản hồi <450ms, không t�
 9. `niche_rpm_predictor`: Động cơ kinh tế học AdSense đa biến mở cho 249 quốc gia thực chứng (Mediacube 2026), hỗ trợ trộn lẫn tệp khán giả Audience Blend.
 10. `breakout_finder`: Radar săn kênh nhỏ bão view qua chỉ số VSR Multiplier (views / subs).
 11. `spider_niche`: Cào đồ thị gợi ý /next và tính chỉ số Blue Ocean Index (BOI).
-12. `query_database`: Truy vấn cơ sở dữ liệu SQLite WAL intelligence.db tốc độ <5ms.
+12. `query_database`: Truy vấn cơ sở dữ liệu SQLite WAL `intelligence.db` tốc độ <5ms (`view='breakouts'|'dream100'|'outliers'|'top_videos'|'all_channels'|'recent_edges'|'stats'` & read-only SQL).
 13. `title_hook_deconstructor`: Bóc tách 12 động cơ nhận thức tâm lý, 5 cơ chế cú pháp, cảnh báo cắt chữ mobile (an toàn <=50, cắt >60).
 14. `avd_retention_forecaster`: Dự báo mục tiêu AVD thuật toán (>=50%), nhịp độ WPM chuẩn mực và 4 mốc phòng thủ tỷ lệ giữ chân.
 15. `channel_cadence_analyzer`: Radar đo chu kỳ xuất bản, phân rã vận tốc và cảnh báo nguy cơ hủy kiếm tiền sau 180 ngày không đăng video.
@@ -123,11 +126,16 @@ Toàn bộ 26 công cụ chạy 100% tại chỗ, phản hồi <450ms, không t�
 19. `script_ypp_pacing_linter`: Máy kiểm duyệt kịch bản phòng thủ YPP 2026, bắt bài văn mẫu AI (delve into, tapestry) và kiểm tra ngưỡng 8 phút Mid-roll.
 20. `seo_tag_matrix_generator`: Ma trận thẻ SEO 3 tầng (Root Anchors, Context, Human Queries) tự động nén dưới 500 ký tự cho YouTube Studio.
 21. `serp_xray_analyzer`: Máy X-Ray quét sâu Top 20 tìm kiếm, đo độ bão hòa tiêu đề và phát hiện cơ hội leo Top Blue Ocean.
-22. `viral_shorts_highlight_detector`: Bóc tách phân đoạn Shorts viral 30–50s bùng nổ cảm xúc từ video dài.
+22. `viral_shorts_highlight_detector`: Bóc tách phân đoạn Shorts viral 30–50s kết hợp dữ liệu Most Replayed Heatmap và điểm cao trào cảm xúc.
 23. `thumbnail_ab_change_tracker`: Giám sát lịch sử đổi ảnh bìa/tiêu đề thử nghiệm A/B của đối thủ.
 24. `best_time_to_post_calculator`: Tính lịch đăng tối ưu theo múi giờ quốc tế (EST, PST, JST, KST, GMT, ICT) và biểu đồ nhiệt tuần.
 25. `free_broll_footage_finder`: Tìm kiếm và tải video B-Roll Public Domain 100% miễn phí từ Wikimedia Commons.
 26. `director_script_storyboard_generator`: Bộ tạo kịch bản & phân cảnh đạo diễn chuẩn OpenCreator (10 thể loại, 5 hồi kịch tính, khóa nhân vật 3-view turnaround, visual prompt song ngữ CN/EN, 3 lớp âm thanh).
+27. `local_shorts_clipper`: Cắt xuất Shorts dọc `9:16` / Intro Vault ngang `16:9` bằng `yt-dlp` + `ffmpeg` và bơm trực tiếp **SEO Thô MP4** (`-c copy` `<1s` không giới hạn thời lượng).
+28. `underdog_hunter`: Săn kênh siêu nhỏ mới nổi có video bùng nổ vượt ngưỡng trung vị ngách.
+29. `vph_trending_radar`: Radar đo tốc độ tăng trưởng lượt xem theo giờ (Views Per Hour) thời gian thực.
+30. `comment_goldmine_extractor`: Khai thác mỏ vàng bình luận khán giả để tìm nỗi đau, câu hỏi lặp lại và chủ đề video kế tiếp.
+31. `thumbnail_prompt_replicator`: Dịch ngược bố cục thumbnail đối thủ thành prompt tạo ảnh chuẩn tỷ lệ 16:9.
 
 ---
 

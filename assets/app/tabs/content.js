@@ -4372,14 +4372,20 @@ async function renderSoDoDb() {
   const nodesByType = safeArray(kgStats && kgStats.nodesByType);
   const edgesByRel = safeArray(kgStats && kgStats.edgesByRelation);
   const topHubs = safeArray(kgStats && kgStats.topConnectedHubs).slice(0, 10);
-  const totalNodes = nodesByLayer.reduce((a, x) => a + (x.count || 0), 0) || 4247;
-  const totalEdges = edgesByRel.reduce((a, x) => a + (x.count || 0), 0) || 8366;
+  const totalNodes = nodesByLayer.reduce((a, x) => a + (x.count || 0), 0) || 4246;
+  const totalEdges = edgesByRel.reduce((a, x) => a + (x.count || 0), 0) || 8360;
   const knowNodes = (nodesByLayer.find(x => x.layer === 'knowledge') || {}).count || 2883;
-  const infraNodes = (nodesByLayer.find(x => x.layer === 'infra') || {}).count || 1364;
+  const infraNodes = (nodesByLayer.find(x => x.layer === 'infra') || {}).count || 1363;
   const projCount = (nodesByType.find(x => x.type === 'project') || {}).count || 17;
   const domainCount = (nodesByType.find(x => x.type === 'domain') || {}).count || 88;
   const dirCount = (nodesByType.find(x => x.type === 'directory') || {}).count || 316;
-  const fileCount = (nodesByType.find(x => x.type === 'file') || {}).count || 942;
+  const fileCount = (nodesByType.find(x => x.type === 'file') || {}).count || 941;
+  const intelStats = (kgStats && kgStats.intelligenceStats) || {};
+  const intelChannelsFmt = Number(intelStats.channelsCount || 513).toLocaleString('vi-VN');
+  const intelBreakoutsFmt = Number(intelStats.breakoutCount || 271).toLocaleString('vi-VN');
+  const intelVideosFmt = Number(intelStats.videosCount || 7473).toLocaleString('vi-VN');
+  const intelOutliersFmt = Number(intelStats.outliersCount || 1391).toLocaleString('vi-VN');
+  const intelEdgesFmt = Number(intelStats.cowatchEdgesCount || 3285).toLocaleString('vi-VN');
   const ftsTotalCount = Number(ms.ftsTotal || msCounts.ftsTotal || dbCounts.ftsTotal || 6286);
   const ftsTotalFmt = ftsTotalCount.toLocaleString('vi-VN');
   const obsidianFilesCount = Number(ms.obsidianFiles || knowNodes || 2883);
@@ -4944,10 +4950,10 @@ async function renderSoDoDb() {
 
           <div class="p-3.5 rounded-xl bg-surface-2 border border-border">
             <div class="flex items-center justify-between gap-2 mb-1">
-              <span class="badge badge-amber">TẦNG 3 · LIVE AUTO-SYNC &amp; API</span>
-              <span class="text-xs font-mono text-amber-300">8 API Đồ thị &amp; Tìm kiếm Đa luồng (&lt; 2ms)</span>
+              <span class="badge badge-amber">TẦNG 3 · INTELLIGENCE DB &amp; LIVE API</span>
+              <span class="text-xs font-mono text-amber-300">data/intelligence.db (${intelChannelsFmt} Kênh · ${intelVideosFmt} Video)</span>
             </div>
-            <p class="text-xs text-gray-400 leading-relaxed">Hỗ trợ Web UI &amp; AI Agent: <code class="text-gray-200">/api/kg/deep</code>, <code class="text-gray-200">/api/kg/trace</code>, <code class="text-gray-200">/api/kg/path</code>, <code class="text-gray-200">/api/kg/stats</code>.</p>
+            <p class="text-xs text-gray-400 leading-relaxed">Kho tình báo đối thủ (${intelBreakoutsFmt} kênh Breakout · ${intelOutliersFmt} video Outlier &ge;3x · ${intelEdgesFmt} cạnh Co-Watch) &amp; API phản hồi &lt; 2ms: <code class="text-gray-200">/api/kg/deep</code>, <code class="text-gray-200">/api/kg/trace</code>, <code class="text-gray-200">/api/kg/path</code>, <code class="text-gray-200">/api/intelligence/breakouts</code>.</p>
             <div class="mt-2 pt-2 border-t border-hairline flex flex-wrap gap-1.5">
               <button type="button" class="filter-btn text-xs" data-sodo-jump="file:H2DEV-Project/server.js">server.js ↑</button>
               <button type="button" class="filter-btn text-xs" data-sodo-jump="file:H2DEV-Project/scripts/kg_auto_sync.js">kg_auto_sync.js ↑</button>

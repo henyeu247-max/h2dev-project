@@ -109,5 +109,5 @@ Phát hiện khi audit `gate-icons.js` chặng P3.6: 3 số trong file này **l�
    - $\ge 3$ Rào chắn phòng thủ & Tránh gậy bản quyền (Avoid Flags).
 4. **Đồng bộ Master SQLite WAL & Nexus Dual-Layer Graph:**
    - Master database `data/h2dev_master.db` đã rebuild đầy đủ **347 lessons** (154 H2DEV · 140 Huân · 53 DGMD), **2.541 lesson timestamps**, **1.080 competitor channels**, **1.421 top videos**, **598 documents**, **52 reup sources**, **40 niches**, **12 policies**, **12 checklists** và **6.286 FTS5 search index entries**.
-   - Nexus Dual-Layer Graph (`data/h2dev_knowledge_graph.db` + `data/knowledge_graph.json` + Obsidian Vault `knowledge-hub/vault/` + Web Explorer `/graph`) đã lập chỉ mục toàn diện **4.246 nodes** và **8.360 edges** qua 2 lớp (2.883 Knowledge nodes + 1.363 Infra nodes trên 17 dự án).
+   - Nexus Dual-Layer Graph (`data/h2dev_knowledge_graph.db` + `data/knowledge_graph.json` + Obsidian Vault `knowledge-hub/vault/` + Web Explorer `/graph`) đã lập chỉ mục toàn diện **4.246 nodes** và **8.361 edges** qua 2 lớp (2.883 Knowledge nodes + 1.363 Infra nodes trên 17 dự án).
 5. **Quality Gates:** Toàn bộ Core Gates (`validate-project.js`, `sync-counts.js --check`, `gate-icons.js`, `gate-typography.js`, `gate-p1.js`, `gate-p2.js`, `gate-shell.js`, `check-ui-classes.js`, `guard-no-inline-onclick.js`) đều **PASS 100%**.

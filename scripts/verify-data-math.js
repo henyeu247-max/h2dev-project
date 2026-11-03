@@ -520,6 +520,25 @@ assertCheck(
   dbHealthReport.join(' | ')
 );
 
+// M7.6: Intelligence DB Live Harvest & Dream100 / Outliers API Invariants
+const intelStatsView = kgQuery.queryIntelligenceBreakouts({ view: 'stats' });
+const intelDream100View = kgQuery.queryIntelligenceBreakouts({ view: 'dream100', niche: 'H30', maxSubs: 100000, limit: 10 });
+const intelOutliersView = kgQuery.queryIntelligenceBreakouts({ view: 'outliers', niche: 'H27', limit: 10 });
+assertCheck(
+  'M7.6',
+  'Intelligence DB (data/intelligence.db) has >= 500 mapped channels, >= 7,000 videos, >= 1,300 outliers, >= 3,000 cowatch edges & Dream100/Outliers views active',
+  intelStatsView.totalChannels >= 500 &&
+    intelStatsView.totalBreakouts >= 250 &&
+    intelStatsView.totalVideos >= 7000 &&
+    intelStatsView.totalOutliers >= 1300 &&
+    intelStatsView.totalEdges >= 3000 &&
+    Array.isArray(intelDream100View.channels) &&
+    intelDream100View.channels.length > 0 &&
+    Array.isArray(intelOutliersView.videos) &&
+    intelOutliersView.videos.length > 0,
+  `channels=${intelStatsView.totalChannels}, breakouts=${intelStatsView.totalBreakouts}, videos=${intelStatsView.totalVideos}, outliers=${intelStatsView.totalOutliers}, edges=${intelStatsView.totalEdges}, dream100H30=${intelDream100View.channels?.length || 0}, outliersH27=${intelOutliersView.videos?.length || 0}`
+);
+
 kgQuery.closeKgDb();
 db.close();
 

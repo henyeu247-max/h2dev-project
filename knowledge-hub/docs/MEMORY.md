@@ -47,7 +47,7 @@
   13. `h2dev-hoat-hinh` (Hoạt hình 3D thiếu nhi)
 - **Bàn điều khiển trung tâm 1-Click:** `scripts/h2dev_master_producer.py` (điều phối 15 nhóm chủ đề).
 - **Kho nghiên cứu Reverse-Engineering tại `D:\YTB\research-repos\`:** BrowserSkill (Tencent), ainovel-cli, drama-skills (linux.do), make-prompt-seedance2, dola-render-gateway, YouTube.js (LuanRT), yt-fts, FckSignups.
-- **MCP Pool Local :3988:** 188+ tools, module `youtube_intelligence` sở hữu **26 công cụ chuyên sâu $0.00**.
+- **Hệ sinh thái 3 MCP Servers Local (`126` tools live):** `ag-gui-mcp v3.4.0` (`:18741` — `25` tools điều phối đa Agent `codex`/`claude`/`pi`/`orca` & `ag_workflow`), `mcp-pool` (`:3988` — `86` tools gồm `deepseek__swarm_deepresearch` 11 quốc gia, `deepseek__vault_search`, `classifier__score_and_critic` 3-Persona Critic, `exa__*` và module `youtube_intelligence` sở hữu **31 công cụ chuyên sâu $0.00** kết nối `data/intelligence.db` `513` kênh · `271` breakout · `7.473` video · `1.391` outlier · `3.285` cạnh co-watch), và `imagegen-mcp v1.0.0` (`:18742` — `15` tools tạo/hậu kỳ ảnh đa provider `gemini`/`gpt-proxy`/`grok-proxy`/`codex`/`grok`).
 - **Quy chế Credit:** Đóng băng tool tính phí vidIQ (còn 75 add-on, 0 renewable đến 09/10/2026); khai thác You.com ($199.34 USD khả dụng) và youtube_intelligence.
 - **Nhị phân media PC:** FFmpeg N-125856 hỗ trợ Nvidia GPU / AV1 / H.266 / EBU R128; yt-dlp đã nâng cấp lên bản mới nhất `2026.8.19`.
 

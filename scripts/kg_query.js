@@ -190,7 +190,9 @@ function getGraphStatsFromDb(autoSync = true) {
     channelsCount: 0,
     videosCount: 0,
     cowatchEdgesCount: 0,
-    breakoutCount: 0
+    breakoutCount: 0,
+    facelessCount: 0,
+    outliersCount: 0
   };
   try {
     const idb = openIntelDb();
@@ -199,7 +201,9 @@ function getGraphStatsFromDb(autoSync = true) {
         channelsCount: idb.prepare('SELECT COUNT(*) AS c FROM channels').get().c,
         videosCount: idb.prepare('SELECT COUNT(*) AS c FROM videos').get().c,
         cowatchEdgesCount: idb.prepare('SELECT COUNT(*) AS c FROM cowatch_edges').get().c,
-        breakoutCount: idb.prepare('SELECT COUNT(*) AS c FROM channels WHERE is_breakout = 1').get().c
+        breakoutCount: idb.prepare('SELECT COUNT(*) AS c FROM channels WHERE is_breakout = 1').get().c,
+        facelessCount: idb.prepare('SELECT COUNT(*) AS c FROM channels WHERE is_faceless = 1').get().c,
+        outliersCount: idb.prepare('SELECT COUNT(*) AS c FROM videos WHERE outlier_score >= 3.0').get().c
       };
     }
   } catch {}
@@ -903,18 +907,97 @@ function searchIntelligenceDb(qRaw, limit = 12) {
   return results.slice(0, limit);
 }
 
-function queryIntelligenceBreakouts(limit = 30) {
+function queryIntelligenceBreakouts(limitOrOpts = 30) {
   const idb = openIntelDb();
-  if (!idb) return { total: 0, totalBreakouts: 0, channels: [] };
+  const isObj = limitOrOpts && typeof limitOrOpts === 'object';
+  const rawLim = isObj ? limitOrOpts.limit : limitOrOpts;
+  const safeLim = Number.isFinite(Number(rawLim)) ? Math.max(1, Math.min(200, Number(rawLim))) : 30;
+  const view = isObj && limitOrOpts.view ? String(limitOrOpts.view).trim().toLowerCase() : 'breakouts';
+  const niche = isObj && limitOrOpts.niche ? String(limitOrOpts.niche).trim().toUpperCase() : '';
+  const maxSubs = isObj && Number.isFinite(Number(limitOrOpts.maxSubs)) && Number(limitOrOpts.maxSubs) > 0 ? Number(limitOrOpts.maxSubs) : 0;
+  const search = isObj && limitOrOpts.search ? String(limitOrOpts.search).trim() : '';
+
+  if (!idb) return { view, total: 0, totalBreakouts: 0, totalChannels: 0, totalVideos: 0, totalOutliers: 0, totalEdges: 0, channels: [] };
   try {
-    const safeLim = Number.isFinite(Number(limit)) ? Math.max(1, Math.min(200, Number(limit))) : 30;
-    const rows = idb.prepare(
-      'SELECT channel_id, handle, title, channel_age_days, median_views, top_outlier_multiplier, is_faceless, faceless_type, primary_niche, last_crawled_at FROM channels WHERE is_breakout = 1 ORDER BY median_views DESC LIMIT ?'
-    ).all(safeLim);
+    const totalChannels = idb.prepare('SELECT COUNT(*) AS c FROM channels').get().c;
     const totalBreakouts = idb.prepare('SELECT COUNT(*) AS c FROM channels WHERE is_breakout = 1').get().c;
-    return { total: rows.length, totalBreakouts, channels: rows };
+    const totalFaceless = idb.prepare('SELECT COUNT(*) AS c FROM channels WHERE is_faceless = 1').get().c;
+    const totalVideos = idb.prepare('SELECT COUNT(*) AS c FROM videos').get().c;
+    const totalOutliers = idb.prepare('SELECT COUNT(*) AS c FROM videos WHERE outlier_score >= 3.0').get().c;
+    const totalEdges = idb.prepare('SELECT COUNT(*) AS c FROM cowatch_edges').get().c;
+
+    if (view === 'stats') {
+      const topNiches = idb.prepare('SELECT primary_niche, COUNT(*) AS channel_count, CAST(AVG(median_views) AS INTEGER) AS avg_median_views FROM channels WHERE primary_niche IS NOT NULL GROUP BY primary_niche ORDER BY channel_count DESC LIMIT 12').all();
+      return {
+        view: 'stats',
+        total: topNiches.length,
+        totalBreakouts,
+        totalChannels,
+        totalFaceless,
+        totalVideos,
+        totalOutliers,
+        totalEdges,
+        topNiches,
+        channels: []
+      };
+    }
+
+    if (view === 'outliers' || view === 'top_videos') {
+      const conds = [view === 'outliers' ? 'v.outlier_score >= 3.0' : '1=1'];
+      const params = [];
+      if (niche) { conds.push('UPPER(c.primary_niche) = ?'); params.push(niche); }
+      if (search) { conds.push('(LOWER(v.title) LIKE LOWER(?) OR LOWER(c.title) LIKE LOWER(?) OR LOWER(c.handle) LIKE LOWER(?))'); const pat = `%${search}%`; params.push(pat, pat, pat); }
+      params.push(safeLim);
+      const orderClause = view === 'outliers' ? 'v.outlier_score DESC, v.views DESC' : 'v.views DESC';
+      const videos = idb.prepare(`
+        SELECT v.video_id, v.channel_id, v.title, v.views, v.outlier_score, c.handle, c.title AS channel_title, c.primary_niche, c.median_views
+        FROM videos v
+        LEFT JOIN channels c ON c.channel_id = v.channel_id
+        WHERE ${conds.join(' AND ')}
+        ORDER BY ${orderClause}
+        LIMIT ?
+      `).all(...params);
+      return {
+        view,
+        total: videos.length,
+        totalBreakouts,
+        totalChannels,
+        totalVideos,
+        totalOutliers,
+        totalEdges,
+        channels: [],
+        videos
+      };
+    }
+
+    const conds = [];
+    const params = [];
+    if (view === 'dream100') {
+      conds.push('is_breakout = 1');
+      if (maxSubs > 0) { conds.push('(subscriber_count <= ? OR subscriber_count IS NULL OR subscriber_count = 0)'); params.push(maxSubs); }
+    } else if (view !== 'all_channels') {
+      conds.push('is_breakout = 1');
+    }
+    if (niche) { conds.push('UPPER(primary_niche) = ?'); params.push(niche); }
+    if (search) { conds.push('(LOWER(title) LIKE LOWER(?) OR LOWER(handle) LIKE LOWER(?) OR LOWER(primary_niche) LIKE LOWER(?))'); const pat = `%${search}%`; params.push(pat, pat, pat); }
+    const whereSql = conds.length ? `WHERE ${conds.join(' AND ')}` : '';
+    params.push(safeLim);
+    const rows = idb.prepare(
+      `SELECT channel_id, handle, title, subscriber_count, video_count, view_count, channel_age_days, median_views, top_outlier_multiplier, is_faceless, faceless_type, is_breakout, primary_niche, country, last_crawled_at FROM channels ${whereSql} ORDER BY median_views DESC LIMIT ?`
+    ).all(...params);
+    return {
+      view,
+      total: rows.length,
+      totalBreakouts,
+      totalChannels,
+      totalFaceless,
+      totalVideos,
+      totalOutliers,
+      totalEdges,
+      channels: rows
+    };
   } catch (err) {
-    return { total: 0, totalBreakouts: 0, channels: [], error: err.message };
+    return { view, total: 0, totalBreakouts: 0, channels: [], error: err.message };
   }
 }
 

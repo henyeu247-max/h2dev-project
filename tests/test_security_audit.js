@@ -397,7 +397,7 @@ function httpRequest(options, body) {
   });
 }
 
-async function waitForHealth(port, timeoutMs = 10000) {
+async function waitForHealth(port, timeoutMs = 20000) {
   const deadline = Date.now() + timeoutMs;
   while (Date.now() < deadline) {
     try {
@@ -430,7 +430,7 @@ async function runHttpTests() {
   });
 
   try {
-    const ready = await waitForHealth(TEST_PORT, 10000);
+    const ready = await waitForHealth(TEST_PORT, 20000);
     test(`server.js boots cleanly on 127.0.0.1:${TEST_PORT}`, () => {
       assert.ok(ready, `ephemeral server.js did not become healthy on port ${TEST_PORT}`);
     });

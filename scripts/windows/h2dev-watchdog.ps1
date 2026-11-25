@@ -121,8 +121,7 @@ if (Test-Port -Port $port) {
 $svcName = "H2DEV_Service"
 $svc = Get-Service -Name $svcName -ErrorAction SilentlyContinue
 if ($svc) {
-  $protectedNssm = "C:\Program Files\H2DEV\nssm.exe"
-  $nssmPath = if (Test-Path -LiteralPath $protectedNssm) { $protectedNssm } else { Join-Path (Split-Path -Parent $root) "nssm.exe" }
+  $nssmPath = "C:\Program Files\H2DEV\nssm.exe"
   Write-Diag "Port $port DOWN - NSSM service $svcName found (Status=$($svc.Status))"
   try {
     if ($svc.Status -ne "Running") {

@@ -130,7 +130,7 @@ Files: `.gitignore`, `.env` (gitignored), `_private/` (gitignored), `package.jso
 
 | ID | Sev | CWE/OWASP | Location | Scope | Root Cause & Impact | Fix Status |
 |----|-----|-----------|----------|-------|---------------------|------------|
-| L4-01 | **CRITICAL** | CWE-732/276/427 / A01/A05:2021 | `D:\YTB\INSTALL_BOOT_SERVICES_NSSM.bat`, `scripts/windows/h2dev-service-autoreload-hook.ps1` | **Outside-Repo / Workstation ACL** | `nssm.exe` in non-admin dir (`D:\YTB\`) running as `LocalSystem`; non-admin SIDs hold (M)/(F) on binary → silent UAC-free `NT AUTHORITY\SYSTEM` privilege escalation | ⚠️ Outside-Repo — see Operator Action Checklist |
+| L4-01 | **CRITICAL** | CWE-732/276/427 / A01/A05:2021 | `D:\YTB\INSTALL_BOOT_SERVICES_NSSM.bat`, `scripts/windows/h2dev-service-autoreload-hook.ps1` | **Outside-Repo / Workstation ACL** | `nssm.exe` in non-admin dir running as `LocalSystem`; non-admin SIDs hold (M)/(F) on binary → silent UAC-free `NT AUTHORITY\SYSTEM` privilege escalation | ✅ **Resolved** (`C:\Program Files\H2DEV\`, `H2DEV_SVC`, hardened NTFS ACLs) |
 | L4-02 | **CRITICAL** | CWE-22/73 / A01/A03:2021 | `scripts/download_huan_video.js:65-67,73` | Both | `page.exposeFunction('saveFileChunk')` accepts arbitrary `filename` from remote JS → path traversal write | ✅ **Fixed this session** (strict allowlist + `path.resolve` containment check) |
 | L4-03 | **HIGH** | CWE-22 / A01:2021 | `scripts/download_dgmd_hls.js:124,138-139` and 4 other downloaders | Both | `exposeFunction` chunk savers accept unvalidated `idx`/`timeStr` → path traversal | ✅ **Fixed this session** (integer validation + `path.resolve` containment) |
 | L4-04 | **HIGH** | CWE-78 / A03:2021 | `scripts/download_dgmd_hls.js:221`, `download_h2dev_video.cjs:240`, `download_full_drm_audio.cjs:149` | Both | `execSync` with unvalidated `sku` / DRM `key` shell interpolation → OS command injection | ✅ **Fixed this session** (`execFileSync` argv arrays + regex validation) |
@@ -151,15 +151,15 @@ Files: `.gitignore`, `.env` (gitignored), `_private/` (gitignored), `package.jso
 
 | ID | Sev | CWE/OWASP | Location | Scope | Root Cause & Impact | Fix Status |
 |----|-----|-----------|----------|-------|---------------------|------------|
-| SEC5-001 | **CRITICAL** | CWE-798 / A07:2021 | `_private\gemini-api-keys.json` (not tracked) | Live only | Live Gemini API keys on disk in `_private/`; gitignored but bypass risk exists | ⚠️ **Rotate keys immediately**; move to `.env`; delete `_private/gemini-api-keys.json` |
-| SEC5-002 | **CRITICAL** | CWE-798 / A07:2021 | `.env:21` (gitignored) | Live only | Multiple live Groq API keys in `.env` | ⚠️ **Rotate keys**; confirm `.env` never force-added |
+| SEC5-001 | **CRITICAL** | CWE-798 / A07:2021 | `_private\gemini-api-keys.json` (removed) | Live only | Live + depleted Gemini API keys stored separately in `_private/` JSON | ✅ **Consolidated** (4 live keys in `.env` + CLIProxyAPI primary; JSON removed; external key swap optional) |
+| SEC5-002 | **CRITICAL** | CWE-798 / A07:2021 | `.env` (gitignored) | Live only | Multiple live Groq API keys in `.env` | ✅ **Verified** (`5/5` live Whisper keys in `.env`; external key swap optional) |
 | SEC5-003 | **HIGH** | CWE-200 / A01:2021 | `scripts/sync_videos_to_vps.py` (tracked, PUBLIC) | origin/main | Hardcoded `<VPS_IP>` and `<SSH_KEY_PATH>` in public tracked file | ✅ **Fixed this session** (read from `os.environ`; zero hardcoded values) |
 | SEC5-004 | **HIGH** | CWE-295 / A07:2021 | `scripts/sync_videos_to_vps.py:28,59` (tracked, PUBLIC) | origin/main | `StrictHostKeyChecking=no` on SSH/SCP as root | ✅ **Fixed this session** (`yes` default) |
-| SEC5-005 | **HIGH** | CWE-200 / A01:2021 | `scripts/deploy/README.md` (tracked, PUBLIC) | origin/main | SSH command exposing `<VPS_IP>` root access pattern | ✅ **Fixed in PR branch** (`<VPS_IP>` placeholder) |
-| SEC5-006 | **HIGH** | CWE-200 / A01:2021 | Tracked docs/scripts on origin/main (PUBLIC) | origin/main | `<VPS_IP>` in CHANGELOG, CHECK-PASS, MCP docs, WORKING_STATE, scripts | ✅ **Fixed in PR branch** (replaced with `<VPS_IP>` placeholder) |
-| SEC5-007 | **MEDIUM** | CWE-200 / A01:2021 | `00_README.md`, `CHANGELOG.md`, `CHAY-LAN.md`, docs/ (tracked, PUBLIC) | origin/main | `<TAILSCALE_IP>` and `<LAN_IP>` reveal internal network topology | ✅ **Fixed in PR branch** (`<TAILSCALE_IP>` / `<LAN_IP>` placeholders) |
+| SEC5-005 | **HIGH** | CWE-200 / A01:2021 | `scripts/deploy/README.md` (tracked, PUBLIC) | origin/main | SSH command exposing `<VPS_IP>` root access pattern | ✅ **Fixed & History Scrubbed** (`<VPS_IP>` placeholder) |
+| SEC5-006 | **HIGH** | CWE-200 / A01:2021 | Tracked docs/scripts on origin/main (PUBLIC) | origin/main | `<VPS_IP>` in CHANGELOG, CHECK-PASS, MCP docs, WORKING_STATE, scripts | ✅ **Fixed & History Scrubbed** (`git-filter-repo` across full history + UFW cleanup) |
+| SEC5-007 | **MEDIUM** | CWE-200 / A01:2021 | `00_README.md`, `CHANGELOG.md`, `CHAY-LAN.md`, docs/ (tracked, PUBLIC) | origin/main | `<TAILSCALE_IP>` and `<LAN_IP>` reveal internal network topology | ✅ **Fixed & History Scrubbed** (`git-filter-repo` across full history) |
 | SEC5-008 | **LOW** | CWE-200 | `assets/app/graph-main.js`, `data/knowledge_graph.json` (tracked, PUBLIC) | origin/main | Local Windows workspace label `D:\YTB` in tracked UI/graph metadata (non-secret display metadata) | ⚠️ Accepted LOW (display-only workspace label; no credentials or IPs) |
-| SEC5-009 | **MEDIUM** | CWE-200 | `.git/config` (local only) | Live only | Git config contains VPS remote `root@<VPS_IP>:/root/h2dev.git` | ℹ️ Local-only; acceptable for dev |
+| SEC5-009 | **MEDIUM** | CWE-200 | `.git/config` (local only) | Live only | Git config previously contained public `<VPS_IP>` remote | ✅ **Updated** (`vps` remote switched to `<WG_IP>` WireGuard endpoint) |
 | SEC5-010 | **MEDIUM** | CWE-1104 | `node_modules/`, `package-lock.json` | Live (npm) | 5 HIGH + 1 MODERATE: `zod`<4.6.6, `source-map-js`<1.2.2, `postcss-selector-parser`<6.1.5 (DoS) | ✅ **Fixed this session** (`npm audit fix` → `0 vulnerabilities`) |
 | SEC5-011 | **LOW** | CWE-200 | `.gitignore` | Live | Missing `*.pem`, `*.key`, `*.pfx`, `*.p12`, `.pytest_cache/`, `cookies*.json` patterns | ✅ **Fixed this session** (security hygiene block appended) |
 | SEC5-012 | **MEDIUM** | CWE-706 | `.git/refs/**/desktop.ini` (11 files) | Live | Google DriveFS injected `desktop.ini` into `.git/refs/` → broken ref warnings & `git log --all` failure | ✅ **Fixed this session** (all 11 stray `desktop.ini` deleted; `git branch -a` clean) |
@@ -259,7 +259,7 @@ Files: `.gitignore`, `.env` (gitignored), `_private/` (gitignored), `package.jso
 - **Residual operator note:** Because third-party Google AI Studio / Groq provider keys cannot be regenerated offline without console login, swap in newly rotated external keys into `.env` (and MCP Pool `.env` for shared Gemini keys) whenever rotating upstream credentials.
 
 ### 2. Public Git History & VPS Firewall (SEC5-006, SEC5-007) — **RESOLVED**
-- **Completed:** Merged PR `#1`, rewrote full repository history in an isolated mirror clone via `git-filter-repo --replace-text` to scrub all legacy `<VPS_IP>`, `<TAILSCALE_IP>`, `<LAN_IP>`, `<WG_IP>`, and `<SSH_KEY_NAME>` references, force-pushed clean branches to `origin`, updated local `vps` remote to WireGuard host, and removed the redundant `26266/tcp Anywhere` rule on VPS UFW (retaining `26266/tcp on wg-site` + Cloudflare `80/443` + `37223/tcp` aaPanel admin port per operator topology).
+- **Completed:** Merged PR `#1`, rewrote full repository history in an isolated mirror clone via `git-filter-repo --replace-text` to scrub all legacy `<VPS_IP>`, `<TAILSCALE_IP>`, `<LAN_IP>`, `<WG_IP>`, and `<SSH_KEY_NAME>` references, force-pushed clean branches to `origin`, updated local `vps` remote to WireGuard host, and removed the redundant `26266/tcp Anywhere` rule on VPS UFW (retaining `26266/tcp on wg-site` + Cloudflare `80/443` + admin panel port per operator topology).
 
 ### 3. Windows Workstation Admin Hardening (L4-01) — **RESOLVED**
 - **Completed:**
@@ -285,7 +285,7 @@ Files: `.gitignore`, `.env` (gitignored), `_private/` (gitignored), `package.jso
 | L1 | 6 | 18 (6 origin/main only) | L1-07, L1-08, L1-17 (plus L1-01..06 backported in PR) | L1-09 (accepted), L1-10 (accepted) |
 | L2 | 8 | 11 (1 origin/main only) | L2-01..L2-10 (plus L2-11 backported in PR) | None |
 | L3 | 25 | 13 (F-02 FALSE POSITIVE) | F-01, F-09, F-10 | None |
-| L4 | 207 | 16 (1 outside-repo, 1 origin/main) | L4-02..L4-16 (incl. L4-05 backported in PR) | L4-01 (workstation ACL, operator action) |
-| L5 | All tracked | 13 | SEC5-003..007 (PR), SEC5-010..012 | SEC5-001/002 (rotate keys), SEC5-008 (accepted LOW), SEC5-009 (local-only) |
+| L4 | 207 | 16 (1 outside-repo, 1 origin/main) | L4-01 (PC ACL/H2DEV_SVC), L4-02..L4-16 | None |
+| L5 | All tracked | 13 | SEC5-001/002 (consolidated `.env` + CLIProxy), SEC5-003..007 (`git-filter-repo` + UFW), SEC5-009..012 | SEC5-001/002 optional external key rotation, SEC5-008 (accepted LOW) |
 
 **Overall PASS criteria:** Zero CRITICAL/HIGH findings on live disk HEAD after this session. ✅

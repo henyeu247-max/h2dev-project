@@ -1,6 +1,6 @@
 # LIVE RUNTIME STATE — D:\YTB\H2DEV-Project
 # Context Hierarchy Layer 4 | Single Source of Runtime Truth
-# Cập nhật lúc: 2026-11-19 (mục 1, 2 và 4.2 đồng bộ tự động qua sync-counts.js; mục 3 đo lại 2026-11-19; mục 4.1 nghiệm thu 2026-10-09)
+# Cập nhật lúc: 2026-11-25 (mục 1, 2 và 4.2 đồng bộ tự động qua sync-counts.js; mục 2 cập nhật hardening L4-01 & VPS sync; mục 3 đo lại 2026-11-19; mục 4.1 nghiệm thu 2026-10-09)
 
 > **Bản chất kỹ thuật:** File này ghi nhận trạng thái thực tế đang chạy (Live Reality) của hệ sinh thái `D:\YTB\H2DEV-Project`.
 > Mọi Agent khi bắt đầu phiên làm việc đọc file này để nắm ngay thực trạng runtime mà không cần quét lại từ đầu.

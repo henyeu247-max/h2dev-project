@@ -113,9 +113,10 @@ async function uploadToFilesApi(filePath, mimeType, apiKey) {
 
   console.log(`[Files API] Bat dau upload file lon: ${fileName} (${(fileBytes.length / (1024 * 1024)).toFixed(2)} MB)...`);
 
-  const initRes = await fetch(`https://generativelanguage.googleapis.com/upload/v1beta/files?key=${apiKey}`, {
+  const initRes = await fetch('https://generativelanguage.googleapis.com/upload/v1beta/files', {
     method: 'POST',
     headers: {
+      'x-goog-api-key': apiKey,
       'X-Goog-Upload-Protocol': 'resumable',
       'X-Goog-Upload-Command': 'start',
       'X-Goog-Upload-Header-Content-Length': String(fileBytes.length),
@@ -252,9 +253,9 @@ async function analyzeAudio(filePath, options = {}) {
     let lastModelErr = null;
     for (const model of models) {
       const t0 = Date.now();
-      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
+      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
         body: JSON.stringify(payload),
       });
       const data = await res.json();

@@ -198,9 +198,9 @@ async function processImage(imagePath) {
     const { model, key } = getEndpoint(keys);
     attempts++;
     try {
-      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${key}`, {
+      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
         body: JSON.stringify(payload),
         signal: AbortSignal.timeout(30000)
       });

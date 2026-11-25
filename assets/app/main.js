@@ -2329,7 +2329,11 @@
       if (!directUrl) return;
       try {
         const u = new URL(directUrl, location.origin);
-        if ((u.protocol !== 'http:' && u.protocol !== 'https:') || u.origin !== location.origin) {
+        if (
+          (u.protocol !== 'http:' && u.protocol !== 'https:') ||
+          u.origin !== location.origin ||
+          u.pathname.startsWith('//')
+        ) {
           console.warn('[navigateDirectUrl] Blocked unsafe URL:', directUrl);
           return;
         }
@@ -2347,7 +2351,7 @@
           });
           return;
         }
-        location.href = u.pathname + u.search + u.hash;
+        location.href = u.href;
       } catch (_) {
         console.warn('[navigateDirectUrl] Invalid URL:', directUrl);
       }

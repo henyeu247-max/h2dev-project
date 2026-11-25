@@ -12,24 +12,28 @@
 
 A full 5-layer adversarial security audit was conducted across 207+ live code files. The audit revealed **significant security improvement on live disk vs `origin/main`**: 6 CRITICAL/HIGH findings (L1-01..L1-06) exist **only on `origin/main`** (public GitHub) and are already fixed on the live disk. All live-disk fixes have been surgically applied during this remediation session.
 
-| Layer | CRITICAL | HIGH | MEDIUM | LOW | INFO | Total |
-|-------|----------|------|--------|-----|------|-------|
-| L1 Web/Auth | 2* | 4* | 3 | 3 | 5 | 17 |
-| L2 SQLite/KG | 0 | 3 | 5 | 2 | 1 | 11 |
-| L3 SPA/XSS/SW | 0 | 1 | 0 | 1 | 11 | 13 |
-| L4 Pipelines/Windows | 1† | 7 | 4 | 4 | 0 | 16 |
-| L5 Secrets/Deps | 2 | 4 | 4 | 1 | 1 | 12 |
-| **Total** | **5** | **19** | **16** | **11** | **18** | **69** |
+- ✅ SEC5-010 — fixed via `npm audit fix` (`found 0 vulnerabilities` across 105 audited packages: 30 prod + 75 dev)
+- ✅ SEC5-011 — fixed by Worker 4 (`.gitignore` hygiene block)
+- ✅ SEC5-012 — removed 11 stray `.git/refs/**/desktop.ini` files (`git branch -a` clean)
 
-> `*` = `origin/main` only (already fixed on live disk).  
-> `†` = Outside-Repo (workstation ACL issue, not in git).
+| Layer | CRITICAL | HIGH | MEDIUM | LOW | INFO | FALSE POSITIVE | Total |
+|-------|----------|------|--------|-----|------|----------------|-------|
+| L1 Web/Auth | 2* | 4* | 4 | 3 | 5 | 0 | 18 |
+| L2 SQLite/KG | 0 | 3 | 5 | 2 | 1 | 0 | 11 |
+| L3 SPA/XSS/SW | 0 | 1 | 0 | 1 | 10 | 1 | 13 |
+| L4 Pipelines/Windows | 2† | 6 | 5 | 3 | 0 | 0 | 16 |
+| L5 Secrets/Deps | 2 | 4 | 4 | 2 | 1 | 0 | 13 |
+| **Total** | **6** | **18** | **18** | **11** | **17** | **1** | **71** |
+
+> `*` = `origin/main` only (already fixed on live disk; backported to `origin/main` in this PR).  
+> `†` = Includes 1 Outside-Repo workstation ACL finding (`L4-01`) + 1 code issue (`L4-02`).
 
 **Remediation Status (this session):**
-- ✅ L1-07, L1-08, L1-17, F-01, F-09 — fixed by Worker 1 (`server.js`, `auth-login.js`, `main.js`, `dashboard_server.py`)
+- ✅ L1-07, L1-08, L1-17, F-01, F-09 — fixed by Worker 1 (`server.js` + NTFS ADS `:` guard, `auth-login.js`, `main.js`, `dashboard_server.py`)
 - ✅ L2-01..L2-10 — fixed by Worker 2 (6 data-layer scripts)
-- ✅ L4-02..L4-16, SEC5-003, SEC5-004 — fixed by Worker 3 (pipelines, downloaders, windows scripts)
+- ✅ L4-02..L4-16, SEC5-003, SEC5-004 — fixed by Worker 3 (pipelines, downloaders, windows scripts; `L4-05` also backported to `origin/main` in this PR)
 - ✅ SEC5-005..SEC5-007 — scrubbed infrastructure IPs/SSH patterns from PR tracked docs & scripts
-- ✅ SEC5-010 — fixed via `npm audit fix` (`found 0 vulnerabilities` across 104 audited packages)
+- ✅ SEC5-010 — fixed via `npm audit fix` (`found 0 vulnerabilities` across 105 packages)
 - ✅ SEC5-011 — fixed by Worker 4 (`.gitignore` hygiene block)
 - ✅ SEC5-012 — removed 11 stray `.git/refs/**/desktop.ini` files (`git branch -a` clean)
 
@@ -283,8 +287,9 @@ Keys appeared in tool scan output during this audit session. Treat as potentiall
 
 ### 4. Service Restart & Ongoing Operations
 - **H2DEV_Service Restarted:** `D:\YTB\RESTART-H2DEV-SERVICE-ADMIN.cmd` executed cleanly as Administrator (`_private -> HTTP 403`, `data-tabs -> HTTP 200`, `/health -> 200 {"ok":true}`).
+- **AGV Dashboard (`:18765`):** `scripts/dashboard_server.py` restarted cleanly via `scripts/launch_dashboard_server.ps1` with live `L1-17` security headers (`X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`).
 - **L1-09 (LIVE_EMBED_CSP):** `unsafe-inline`/`unsafe-eval` on embed proxy is an inherent third-party embed risk. Consider adding a `sandbox` attribute on the embedding `<iframe>` for additional isolation. No server-side change addresses this fully without breaking the embed.
-- **SEC5-010 (npm audit):** Resolved during this session via `npm audit fix` (`0` vulnerabilities across 104 audited packages).
+- **SEC5-010 (npm audit):** Resolved during this session via `npm audit fix` (`0` vulnerabilities across 105 audited packages).
 - **SEC5-012 (.git/refs/**/desktop.ini):** Resolved during this session (11 stray Google DriveFS `desktop.ini` files removed from `.git/refs/`; `git branch -a` runs with 0 warnings).
 
 ---
@@ -293,10 +298,10 @@ Keys appeared in tool scan output during this audit session. Treat as potentiall
 
 | Layer | Files Audited | Findings | Fixed This Session | Residual |
 |-------|--------------|----------|--------------------|---------|
-| L1 | 6 | 18 (6 origin/main only) | L1-07, L1-08, L1-17 | L1-09 (accepted), L1-10 (accepted) |
-| L2 | 8 | 11 (1 origin/main only) | L2-01..L2-10 | None |
-| L3 | 25 | 13 (F-02 FALSE POSITIVE) | F-01, F-09 | None |
-| L4 | 207 | 16 (1 outside-repo, 1 origin/main) | L4-02..L4-16 | L4-01 (workstation ACL, operator action) |
-| L5 | All tracked | 13 | SEC5-003..007 (PR), SEC5-010..012 | SEC5-001/002 (rotate keys), SEC5-008 (accepted LOW) |
+| L1 | 6 | 18 (6 origin/main only) | L1-07, L1-08, L1-17 (plus L1-01..06 backported in PR) | L1-09 (accepted), L1-10 (accepted) |
+| L2 | 8 | 11 (1 origin/main only) | L2-01..L2-10 (plus L2-11 backported in PR) | None |
+| L3 | 25 | 13 (F-02 FALSE POSITIVE) | F-01, F-09, F-10 | None |
+| L4 | 207 | 16 (1 outside-repo, 1 origin/main) | L4-02..L4-16 (incl. L4-05 backported in PR) | L4-01 (workstation ACL, operator action) |
+| L5 | All tracked | 13 | SEC5-003..007 (PR), SEC5-010..012 | SEC5-001/002 (rotate keys), SEC5-008 (accepted LOW), SEC5-009 (local-only) |
 
 **Overall PASS criteria:** Zero CRITICAL/HIGH findings on live disk HEAD after this session. ✅

@@ -34,6 +34,10 @@ class StrictDashboardHandler(http.server.BaseHTTPRequestHandler):
         "Referrer-Policy": "no-referrer",
     }
 
+    def end_headers(self):
+        self._send_security_headers()
+        super().end_headers()
+
     def _send_security_headers(self):
         for k, v in self.SECURITY_HEADERS.items():
             self.send_header(k, v)
@@ -56,7 +60,6 @@ class StrictDashboardHandler(http.server.BaseHTTPRequestHandler):
 
         if target == "FAVICON":
             self.send_response(204)
-            self._send_security_headers()
             self.end_headers()
             return
 
@@ -65,7 +68,6 @@ class StrictDashboardHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.send_header("Content-Length", str(len(data)))
-            self._send_security_headers()
             self.end_headers()
             self.wfile.write(data)
             return
@@ -81,7 +83,6 @@ class StrictDashboardHandler(http.server.BaseHTTPRequestHandler):
             self.send_header("Content-Type", "text/html; charset=utf-8")
             self.send_header("Content-Length", str(len(data)))
             self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
-            self._send_security_headers()
             self.end_headers()
             self.wfile.write(data)
 
@@ -93,7 +94,6 @@ class StrictDashboardHandler(http.server.BaseHTTPRequestHandler):
 
         if target == "FAVICON":
             self.send_response(204)
-            self._send_security_headers()
             self.end_headers()
             return
 
@@ -102,7 +102,6 @@ class StrictDashboardHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.send_header("Content-Length", str(data_len))
-            self._send_security_headers()
             self.end_headers()
             return
 
@@ -116,7 +115,6 @@ class StrictDashboardHandler(http.server.BaseHTTPRequestHandler):
             self.send_header("Content-Type", "text/html; charset=utf-8")
             self.send_header("Content-Length", str(file_len))
             self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
-            self._send_security_headers()
             self.end_headers()
 
     def log_message(self, format, *args):

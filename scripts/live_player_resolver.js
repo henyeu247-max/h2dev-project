@@ -6,7 +6,7 @@
 async function getLivePlayerUrl(sku) {
   if (!sku || !/^VIDEO-[A-Za-z0-9]+$/i.test(sku)) return null;
 
-  // Check DGMD catalog first
+  // Check DGMD & HUAN catalogs first
   try {
     const fs = require('fs');
     const path = require('path');
@@ -72,7 +72,32 @@ async function getLivePlayerUrl(sku) {
 
   const data = await apiRes.json();
   const vl = data?.data?.getCourseNoCategory?.video_link || null;
-  return vl ? { url: vl, referer: 'https://h2dev.vn/' } : null;
+  if (vl) return { url: vl, referer: 'https://h2dev.vn/' };
+
+  // Fallback query HUAN and DGMD upstream GraphQL APIs if SKU was not yet in local catalog JSONs
+  for (const [ep, orig] of [
+    ['https://api.huan.academy/graphql', 'https://huan.academy'],
+    ['https://api.daigiamangdep.com/graphql', 'https://daigiamangdep.com']
+  ]) {
+    try {
+      const fRes = await fetch(ep, {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+          'origin': orig,
+          'referer': `${orig}/learn`,
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131'
+        },
+        body: JSON.stringify({ query: gq, variables: { sku } }),
+        signal: AbortSignal.timeout(10000)
+      });
+      const fData = await fRes.json();
+      const fVl = fData?.data?.getCourseNoCategory?.video_link || null;
+      if (fVl) return { url: fVl, referer: `${orig}/learn` };
+    } catch (_) {}
+  }
+
+  return null;
 }
 
 module.exports = { getLivePlayerUrl };

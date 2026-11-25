@@ -40,11 +40,11 @@ async function callMcp(key) {
   console.log('Tool: ' + tool + ' | Args: ' + JSON.stringify(args));
   const results = [];
   for (let i = 0; i < KEYS.length; i++) {
-    const short = KEYS[i].slice(0, 18) + '...';
+    const masked = `len=${String(KEYS[i] || '').length}`;
     try {
       const res = await callMcp(KEYS[i]);
       const ok = res.status === 200 && !/isError":true|ValidationException|"error"/i.test(res.text);
-      console.log(`[key ${i + 1}/${KEYS.length} ${short}] HTTP ${res.status} → ${ok ? 'OK' : 'FAIL'}`);
+      console.log(`[key ${i + 1}/${KEYS.length} ${masked}] HTTP ${res.status} → ${ok ? 'OK' : 'FAIL'}`);
       if (ok) {
         try { const j = JSON.parse(res.text); const inner = JSON.parse(j.result.content[0].text); console.log('\nDATA: ' + JSON.stringify(inner.body || inner, null, 1).slice(0, 2500)); }
         catch (e) { console.log(res.text.slice(0, 2000)); }
@@ -52,7 +52,7 @@ async function callMcp(key) {
       }
       results.push(`key${i + 1}: FAIL (${res.text.slice(0, 150)})`);
     } catch (e) {
-      console.log(`[key ${i + 1} ${short}] NETWORK ERR: ${e.message}`);
+      console.log(`[key ${i + 1} ${masked}] NETWORK ERR: ${e.message}`);
       results.push(`key${i + 1}: NETWORK ERR`);
     }
   }

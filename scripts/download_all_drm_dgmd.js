@@ -4,8 +4,35 @@
 
 const { chromium } = require('playwright');
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
-const { execSync } = require('child_process');
+const { execFileSync } = require('child_process');
+const PY_CMD = process.platform === 'win32' ? 'py' : 'python3';
+const PY_PREFIX = process.platform === 'win32' ? ['-3'] : [];
+const SAFE_SKU_RE = /^[A-Za-z0-9_-]+$/;
+
+function assertSafeSku(sku) {
+  const s = String(sku || '').trim();
+  if (!SAFE_SKU_RE.test(s)) {
+    throw new Error(`Invalid SKU format: ${s}`);
+  }
+  return s;
+}
+
+const ALLOWED_LICENSE_HOST = 'widevine-dash.ezdrm.com';
+
+function assertAllowedLicenseUrl(rawUrl) {
+  let u;
+  try {
+    u = new URL(String(rawUrl || '').trim());
+  } catch (_) {
+    throw new Error(`Invalid DRM license URL: ${rawUrl}`);
+  }
+  if (u.protocol !== 'https:' || u.hostname.toLowerCase() !== ALLOWED_LICENSE_HOST) {
+    throw new Error(`Disallowed DRM license URL (must be https://${ALLOWED_LICENSE_HOST}/...): ${rawUrl}`);
+  }
+  return u.toString();
+}
 
 const ROOT = 'd:/YTB/H2DEV-Project';
 const FFMPEG = 'D:/Linly-Dubbing/bin/ffmpeg.exe';
@@ -60,13 +87,29 @@ function syncSkuMetadata(sku, sizeBytes, sizeMb) {
     }
 
     // Rebuild videos_dgmd.json
-    execSync('node scripts/build_dgmd_data.js', { cwd: ROOT, stdio: 'ignore' });
+    execFileSync(process.execPath, ['scripts/build_dgmd_data.js'], { cwd: ROOT, stdio: 'ignore', windowsHide: true });
   } catch (err) {
     console.warn('Lỗi đồng bộ metadata:', err.message);
   }
 }
 
-async function downloadDrmSku(sku, browser, retryCount = 0) {
+function cleanupDrmArtifacts({ workDir, stagingMp4Path, streams = [] }) {
+  for (const s of streams) {
+    if (s && !s.ended && s.stream) {
+      try { s.stream.destroy(); } catch (_) {}
+      s.ended = true;
+    }
+  }
+  try { if (stagingMp4Path && fs.existsSync(stagingMp4Path)) fs.unlinkSync(stagingMp4Path); } catch (_) {}
+  try { if (workDir && fs.existsSync(workDir)) fs.rmSync(workDir, { recursive: true, force: true }); } catch (_) {}
+}
+
+async function downloadDrmSku(sku, browser, retryCount = 0, opts = {}) {
+  sku = assertSafeSku(sku);
+  if (retryCount && typeof retryCount === 'object') {
+    opts = retryCount;
+    retryCount = 0;
+  }
   console.log(`\n================================================================`);
   console.log(`>>> BẮT ĐẦU TẢI & GIẢI MÃ SKU: ${sku} (Lần thử ${retryCount + 1})`);
   console.log(`================================================================`);
@@ -75,7 +118,7 @@ async function downloadDrmSku(sku, browser, retryCount = 0) {
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
   const finalMp4Path = path.join(outDir, `${sku}.mp4`);
 
-  const workDir = path.join(ROOT, '_tmp_drm_work_' + sku);
+  const workDir = path.join(os.tmpdir(), `h2dev_drm_work_${sku}_${process.pid}_${Date.now()}`);
   if (fs.existsSync(workDir)) fs.rmSync(workDir, { recursive: true, force: true });
   fs.mkdirSync(workDir, { recursive: true });
 
@@ -83,9 +126,14 @@ async function downloadDrmSku(sku, browser, retryCount = 0) {
   const encVideoPath = path.join(workDir, 'video_encrypted.mp4');
   const cleanAudioPath = path.join(workDir, 'audio_clean.m4a');
   const cleanVideoPath = path.join(workDir, 'video_clean.mp4');
+  const tmpMp4Path = path.join(workDir, `${sku}.mp4`);
+  const cacheDir = path.join(ROOT, '.cache');
+  const stagingMp4Path = path.join(cacheDir, `staging_drm_${sku}_${process.pid}_${Date.now()}.mp4`);
 
   const audioStream = fs.createWriteStream(encAudioPath);
   const videoStream = fs.createWriteStream(encVideoPath);
+  let audioEnded = false;
+  let videoEnded = false;
 
   const page = await browser.newPage();
 
@@ -170,10 +218,13 @@ async function downloadDrmSku(sku, browser, retryCount = 0) {
     if (!pssh) throw new Error('Không thể trích xuất PSSH từ init segment');
 
     console.log('Bước 4: Giải mã khóa Widevine License EZDRM...');
-    const licenseUrl = 'https://widevine-dash.ezdrm.com/widevine-php/widevine-foreignkey.php?pX=A98506';
-    const keyOutput = execSync(`py -3 scripts/get_drm_key.py "${pssh}" "${licenseUrl}"`, { cwd: ROOT, encoding: 'utf8' }).trim();
+    const mpdLicMatch = mpdText.match(/https?:\/\/[^\s"'<>]+widevine-foreignkey\.php\?pX=[A-Za-z0-9_-]+/i);
+    const licenseUrl = assertAllowedLicenseUrl(
+      mpdLicMatch ? mpdLicMatch[0] : 'https://widevine-dash.ezdrm.com/widevine-php/widevine-foreignkey.php?pX=A98506'
+    );
+    const keyOutput = execFileSync(PY_CMD, [...PY_PREFIX, 'scripts/get_drm_key.py', pssh, licenseUrl], { cwd: ROOT, encoding: 'utf8', shell: false, windowsHide: true }).trim();
     const [kid, key] = keyOutput.split(':');
-    if (!key || key.length !== 32) throw new Error('Lấy Content Key thất bại: ' + keyOutput);
+    if (!key || !/^[0-9a-f]{32}$/i.test(key)) throw new Error('Lấy Content Key thất bại: ' + keyOutput);
     console.log(`>>> CONTENT KEY THÀNH CÔNG: KID=${kid} | KEY=${key}`);
 
     console.log('Bước 5: Tải toàn bộ phân đoạn Audio & Video qua Shaka NetworkingEngine...');
@@ -209,7 +260,7 @@ async function downloadDrmSku(sku, browser, retryCount = 0) {
         }
       }
     }, audioUrls);
-    await new Promise(r => audioStream.end(r));
+    await new Promise(r => audioStream.end(() => { audioEnded = true; r(); }));
     console.log('Xong!');
 
     // Tải Video (Concurrency 10)
@@ -239,7 +290,7 @@ async function downloadDrmSku(sku, browser, retryCount = 0) {
         }
       }
     }, videoUrls);
-    await new Promise(r => videoStream.end(r));
+    await new Promise(r => videoStream.end(() => { videoEnded = true; r(); }));
     console.log('Xong!');
 
     const dlDuration = ((Date.now() - tStart) / 1000).toFixed(1);
@@ -249,40 +300,59 @@ async function downloadDrmSku(sku, browser, retryCount = 0) {
 
     // Bước 6: Giải mã bằng FFmpeg
     console.log('Bước 6: Giải mã CENC bằng FFmpeg decryption key...');
-    execSync(`"${FFMPEG}" -y -decryption_key ${key} -i "${encAudioPath}" -c copy "${cleanAudioPath}"`, { stdio: 'ignore' });
-    execSync(`"${FFMPEG}" -y -decryption_key ${key} -i "${encVideoPath}" -c copy "${cleanVideoPath}"`, { stdio: 'ignore' });
+    execFileSync(FFMPEG, ['-y', '-decryption_key', key, '-i', encAudioPath, '-c', 'copy', cleanAudioPath], { stdio: 'ignore', windowsHide: true });
+    execFileSync(FFMPEG, ['-y', '-decryption_key', key, '-i', encVideoPath, '-c', 'copy', cleanVideoPath], { stdio: 'ignore', windowsHide: true });
 
-    // Bước 7: Mux thành MP4 hoàn chỉnh
+    // Bước 7: Mux thành MP4 hoàn chỉnh trong workDir rồi đưa nguyên tử vào video/
     console.log('Bước 7: Mux Video + Audio thành MP4 hoàn chỉnh...');
-    execSync(`"${FFMPEG}" -y -i "${cleanVideoPath}" -i "${cleanAudioPath}" -c copy -movflags +faststart "${finalMp4Path}"`, { stdio: 'ignore' });
+    execFileSync(FFMPEG, ['-y', '-i', cleanVideoPath, '-i', cleanAudioPath, '-c', 'copy', '-movflags', '+faststart', tmpMp4Path], { stdio: 'ignore', windowsHide: true });
+
+    fs.mkdirSync(cacheDir, { recursive: true });
+    fs.copyFileSync(tmpMp4Path, stagingMp4Path);
+    fs.renameSync(stagingMp4Path, finalMp4Path);
 
     const finalStat = fs.statSync(finalMp4Path);
     const sizeMb = (finalStat.size / (1024 * 1024)).toFixed(2);
     console.log(`>>> HOÀN TẤT MP4 CHUẨN ĐẦU RA: ${finalMp4Path} (${sizeMb} MB)`);
 
-    // Dọn dẹp thư mục tạm
-    fs.rmSync(workDir, { recursive: true, force: true });
+    cleanupDrmArtifacts({
+      workDir,
+      stagingMp4Path,
+      streams: [
+        { stream: audioStream, ended: audioEnded },
+        { stream: videoStream, ended: videoEnded }
+      ]
+    });
 
     // Đồng bộ ngay lập tức metadata
     syncSkuMetadata(sku, finalStat.size, sizeMb);
 
-    // Bước 8: Chạy Whisper transcribe
-    console.log('Bước 8: Bóc tách phụ đề tự động bằng Whisper...');
-    try {
-      execSync(`py -3 scripts/transcribe_sku.py ${sku}`, { cwd: ROOT, stdio: 'inherit' });
-    } catch (wErr) {
-      console.warn(`Whisper cảnh báo cho ${sku}:`, wErr.message);
+    // Bước 8: Chạy Whisper transcribe (bỏ qua nếu được gọi từ auto_ingest_pipeline.js để chạy chuẩn CUDA retranscribe_clean_turbo.py)
+    if (!opts || !opts.skipTranscribe) {
+      console.log('Bước 8: Bóc tách phụ đề tự động bằng Whisper...');
+      try {
+        execFileSync(PY_CMD, [...PY_PREFIX, 'scripts/transcribe_sku.py', String(sku)], { cwd: ROOT, stdio: 'inherit', windowsHide: true });
+      } catch (wErr) {
+        console.warn(`Whisper cảnh báo cho ${sku}:`, wErr.message);
+      }
     }
 
     return { sku, sizeMb: parseFloat(sizeMb), finalMp4Path };
   } catch (err) {
     if (!page.isClosed()) await page.close().catch(() => {});
-    if (fs.existsSync(workDir)) fs.rmSync(workDir, { recursive: true, force: true });
+    cleanupDrmArtifacts({
+      workDir,
+      stagingMp4Path,
+      streams: [
+        { stream: audioStream, ended: audioEnded },
+        { stream: videoStream, ended: videoEnded }
+      ]
+    });
 
     if (retryCount < 1) {
       console.warn(`\n[RETRY] Gặp lỗi với ${sku}: ${err.message}. Đang thử lại...`);
       await new Promise(r => setTimeout(r, 4000));
-      return downloadDrmSku(sku, browser, retryCount + 1);
+      return downloadDrmSku(sku, browser, retryCount + 1, opts);
     }
     throw err;
   }
@@ -323,8 +393,8 @@ async function run() {
       }
 
       console.log(`\n>>> TOÀN BỘ DANH SÁCH ĐÃ ĐƯỢC XỬ LÝ XONG!`);
-      execSync('node scripts/build_dgmd_data.js', { cwd: ROOT, stdio: 'inherit' });
-      execSync('node scripts/sync-counts.js', { cwd: ROOT, stdio: 'inherit' });
+      execFileSync(process.execPath, ['scripts/build_dgmd_data.js'], { cwd: ROOT, stdio: 'inherit', windowsHide: true });
+      execFileSync(process.execPath, ['scripts/sync-counts.js'], { cwd: ROOT, stdio: 'inherit', windowsHide: true });
     }
   } finally {
     await browser.close();

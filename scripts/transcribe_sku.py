@@ -9,6 +9,7 @@ Sử dụng:
 """
 
 import os
+import re
 import sys
 import json
 import time
@@ -17,6 +18,8 @@ import threading
 from pathlib import Path
 import urllib.request
 import urllib.error
+
+SAFE_SKU_RE = re.compile(r"^[A-Za-z0-9_-]+$")
 
 # Force UTF-8 on Windows console
 if sys.platform == "win32":
@@ -183,7 +186,7 @@ def get_video_duration(video_file: Path) -> float:
         str(video_file)
     ]
     try:
-        out = subprocess.check_output(cmd).decode().strip()
+        out = subprocess.check_output(cmd, creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0)).decode().strip()
         return float(out)
     except Exception as e:
         print(f"Lỗi lấy thời lượng file {video_file}: {e}")
@@ -206,10 +209,7 @@ def extract_audio_chunk(video_file: Path, start_sec: float, dur_sec: float, outp
     (nhu f59aa7 mat 69% packet) thi noi dung van thieu — phai thay file goc.
     Kiem tra bang `audio_integrity()` trong `audit_videos_v2.py`.
     """
-    cmd = [
-        FFMPEG_CMD,
-        "-y",
-        "-hwaccel", "cuda",
+    common_tail = [
         "-threads", "2",
         "-ss", str(round(start_sec, 2)),
         "-t", str(round(dur_sec, 2)),
@@ -222,12 +222,20 @@ def extract_audio_chunk(video_file: Path, start_sec: float, dur_sec: float, outp
         "-f", "mp3",
         str(output_mp3)
     ]
-    try:
-        subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
-        return output_mp3.exists() and output_mp3.stat().st_size > 0
-    except subprocess.CalledProcessError as e:
-        print(f"Lỗi tách audio chunk ({start_sec}s -> {dur_sec}s): {e}")
-        return False
+    cmds = [
+        [FFMPEG_CMD, "-y", "-hwaccel", "cuda", *common_tail],
+        [FFMPEG_CMD, "-y", *common_tail],
+    ]
+    last_err = None
+    for cmd in cmds:
+        try:
+            subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True, creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
+            if output_mp3.exists() and output_mp3.stat().st_size > 0:
+                return True
+        except subprocess.CalledProcessError as e:
+            last_err = e
+    print(f"Lỗi tách audio chunk ({start_sec}s -> {dur_sec}s): {last_err}")
+    return False
 
 
 def call_groq_whisper(key_mgr: GroqKeyManager, audio_path: Path, max_retries: int = 25,
@@ -302,6 +310,9 @@ def format_srt_time(seconds: float) -> str:
 
 
 def transcribe_video_sku(key_mgr: GroqKeyManager, sku: str, chunk_size: float = 600.0):
+    if not isinstance(sku, str) or not SAFE_SKU_RE.fullmatch(sku.strip()):
+        raise ValueError(f"Invalid SKU format: {sku!r}")
+    sku = sku.strip()
     folder = VIDEO_DIR / sku
     if not folder.exists():
         print(f"[Lỗi] Không tìm thấy thư mục {folder}")
@@ -377,9 +388,19 @@ def transcribe_video_sku(key_mgr: GroqKeyManager, sku: str, chunk_size: float = 
             print(f"[{sku}] ⚠️  Có {compressed_count} segment nén chữ — nên bóc lại "
                   f"theo từng segment (xem scripts/restore_over_annotated.py) trước khi xuất bản.")
 
-        # 1. Ghi transcript.json
+        # 1. Ghi transcript.json (kèm metadata chuẩn hóa)
+        full_text_lines = [seg["text"] for seg in all_segments]
+        payload = {
+            "sku": sku,
+            "duration": total_dur,
+            "language": "vi",
+            "model": "whisper-large-v3",
+            "total_segments": len(all_segments),
+            "full_text": " ".join(full_text_lines).strip(),
+            "segments": all_segments,
+        }
         with open(json_path, "w", encoding="utf-8") as jf:
-            json.dump({"sku": sku, "duration": total_dur, "segments": all_segments}, jf, ensure_ascii=False, indent=2)
+            json.dump(payload, jf, ensure_ascii=False, indent=2)
 
         # 2. Ghi transcript.srt
         with open(srt_path, "w", encoding="utf-8") as sf:
@@ -389,7 +410,6 @@ def transcribe_video_sku(key_mgr: GroqKeyManager, sku: str, chunk_size: float = 
                 sf.write(f"{seg['text']}\n\n")
 
         # 3. Ghi transcript.txt
-        full_text_lines = [seg["text"] for seg in all_segments]
         with open(txt_path, "w", encoding="utf-8") as tf:
             tf.write("\n".join(full_text_lines) + "\n")
 
@@ -416,6 +436,9 @@ if __name__ == "__main__":
         sys.exit(1)
 
     sku = sys.argv[1].strip()
+    if not SAFE_SKU_RE.fullmatch(sku):
+        print(f"[Lỗi] SKU không hợp lệ (chỉ chấp nhận ^[A-Za-z0-9_-]+$): {sku}")
+        sys.exit(1)
     key_mgr = GroqKeyManager(GROQ_CONFIG_PATH)
     success = transcribe_video_sku(key_mgr, sku)
     sys.exit(0 if success else 1)

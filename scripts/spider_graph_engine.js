@@ -15,31 +15,84 @@ const { execFile } = require('child_process');
 const DB_PATH = path.resolve(__dirname, '..', 'data', 'intelligence.db');
 const USER_AGENT =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36';
+const MAX_UPSTREAM_BYTES = 2 * 1024 * 1024;
+const ALLOWED_INNERTUBE_ENDPOINTS = new Set(['next']);
+const VALID_VIDEO_ID_RE = /^[A-Za-z0-9_-]{11}$/;
+const VALID_CHANNEL_ID_RE = /^UC[A-Za-z0-9_-]{20,}$/;
+
+// Helper: Bounded response body reader (prevents oversized upstream bodies)
+async function readBodyLimited(res, maxBytes = MAX_UPSTREAM_BYTES) {
+  const clHeader = res.headers && typeof res.headers.get === 'function' ? res.headers.get('content-length') : null;
+  if (clHeader !== null && clHeader !== '') {
+    const cl = Number(clHeader);
+    if (Number.isFinite(cl) && cl > maxBytes) {
+      if (res.body && typeof res.body.cancel === 'function') {
+        try { await res.body.cancel(); } catch (_) {}
+      }
+      throw new Error(`Upstream response exceeds maxBytes (${cl} > ${maxBytes})`);
+    }
+  }
+  if (!res.body || typeof res.body.getReader !== 'function') {
+    const txt = await res.text();
+    const byteLen = Buffer.byteLength(txt, 'utf8');
+    if (byteLen > maxBytes) {
+      throw new Error(`Upstream response exceeds maxBytes (${byteLen} > ${maxBytes})`);
+    }
+    return txt;
+  }
+  const reader = res.body.getReader();
+  const chunks = [];
+  let total = 0;
+  try {
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      if (value) {
+        total += value.byteLength;
+        if (total > maxBytes) {
+          try { await reader.cancel(); } catch (_) {}
+          throw new Error(`Upstream response exceeds maxBytes (> ${maxBytes})`);
+        }
+        chunks.push(Buffer.from(value.buffer, value.byteOffset, value.byteLength));
+      }
+    }
+  } finally {
+    try { reader.releaseLock(); } catch (_) {}
+  }
+  return Buffer.concat(chunks, total).toString('utf8');
+}
 
 // Helper: HTTP GET text
 async function fetchText(url) {
   const res = await fetch(url, {
     headers: { 'User-Agent': USER_AGENT },
+    redirect: 'error',
     signal: AbortSignal.timeout(15000),
   });
   if (!res.ok) throw new Error(`HTTP ${res.status} on ${url}`);
-  return await res.text();
+  return await readBodyLimited(res);
 }
 
 // Helper: InnerTube POST JSON
 async function postInnerTube(endpoint, body) {
-  const url = `https://www.youtube.com/youtubei/v1/${endpoint}`;
+  const ep = String(endpoint || '').trim();
+  if (!ALLOWED_INNERTUBE_ENDPOINTS.has(ep)) {
+    throw new Error(`Disallowed InnerTube endpoint: ${ep}`);
+  }
+  const url = `https://www.youtube.com/youtubei/v1/${ep}`;
   const res = await fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       'User-Agent': USER_AGENT,
     },
+    redirect: 'error',
     body: JSON.stringify(body),
     signal: AbortSignal.timeout(15000),
   });
-  if (!res.ok) throw new Error(`InnerTube HTTP ${res.status} on ${endpoint}`);
-  return await res.json();
+  if (!res.ok) throw new Error(`InnerTube HTTP ${res.status} on ${ep}`);
+  const raw = await readBodyLimited(res);
+  return JSON.parse(raw);
 }
 
 // Helper: parse human view strings ('1.3M views' -> 1300000, '45K views' -> 45000)
@@ -61,8 +114,12 @@ function parseViewString(str) {
 
 // 1. Hop 1 /next Crawler: Extract co-watched recommendation list
 async function getWatchNextRecommendations(videoId) {
+  const vid = String(videoId || '').trim();
+  if (!VALID_VIDEO_ID_RE.test(vid)) {
+    throw new Error(`Invalid YouTube videoId: ${vid}`);
+  }
   const payload = {
-    videoId,
+    videoId: vid,
     context: {
       client: { clientName: 'WEB', clientVersion: '2.20240901.01.00', hl: 'en', gl: 'US' },
     },
@@ -91,12 +148,13 @@ async function getWatchNextRecommendations(videoId) {
     const viewsRaw = rows[1]?.metadataParts?.[0]?.text?.content;
     const timeAgo = rows[1]?.metadataParts?.[1]?.text?.content;
 
-    if (targetVid && title) {
+    if (targetVid && VALID_VIDEO_ID_RE.test(String(targetVid)) && title) {
+      const safeChannelId = (channelId && VALID_CHANNEL_ID_RE.test(String(channelId))) ? String(channelId) : '';
       discovered.push({
-        sourceVideoId: videoId,
-        targetVideoId: targetVid,
+        sourceVideoId: vid,
+        targetVideoId: String(targetVid),
         title,
-        channelId: channelId || '',
+        channelId: safeChannelId,
         channelName: channelName || '',
         viewsEstimated: parseViewString(viewsRaw),
         timeAgo: timeAgo || '',
@@ -110,21 +168,26 @@ async function getWatchNextRecommendations(videoId) {
 
 // 2. RSS Streamer: 15 latest uploads with real-time views and VPH
 async function getChannelRssVideos(channelId) {
-  if (!channelId) return [];
-  const url = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
+  const cid = String(channelId || '').trim();
+  if (!VALID_CHANNEL_ID_RE.test(cid)) {
+    throw new Error(`Invalid YouTube channelId: ${cid}`);
+  }
+  const url = `https://www.youtube.com/feeds/videos.xml?channel_id=${encodeURIComponent(cid)}`;
   try {
     const xml = await fetchText(url);
     const entries = xml.split('<entry>').slice(1);
     const now = Date.now();
 
     return entries.map((e) => {
-      const videoId = e.match(/<yt:videoId>(.*?)<\/yt:videoId>/)?.[1] || '';
+      const rawVid = e.match(/<yt:videoId>(.*?)<\/yt:videoId>/)?.[1] || '';
+      const videoId = VALID_VIDEO_ID_RE.test(rawVid) ? rawVid : '';
       const title = e.match(/<title>(.*?)<\/title>/)?.[1] || '';
       const published = e.match(/<published>(.*?)<\/published>/)?.[1] || '';
       const viewsMatch = e.match(/<media:statistics views="(\d+)"/);
       const views = viewsMatch ? parseInt(viewsMatch[1], 10) : 0;
 
-      const pubMs = new Date(published).getTime();
+      const parsedMs = new Date(published).getTime();
+      const pubMs = Number.isFinite(parsedMs) ? parsedMs : now;
       const hoursAge = Math.max(1.0, (now - pubMs) / (1000 * 60 * 60));
       const vph = Math.round((views / hoursAge) * 10) / 10;
 
@@ -136,8 +199,8 @@ async function getChannelRssVideos(channelId) {
         views,
         hoursAge: Math.round(hoursAge * 10) / 10,
         vph,
-        url: `https://www.youtube.com/watch?v=${videoId}`,
-        thumbnail: `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`,
+        url: videoId ? `https://www.youtube.com/watch?v=${encodeURIComponent(videoId)}` : '',
+        thumbnail: videoId ? `https://i.ytimg.com/vi/${encodeURIComponent(videoId)}/maxresdefault.jpg` : '',
       };
     });
   } catch (err) {
@@ -220,11 +283,16 @@ function checkFacelessTitleSignals(titles, channelName = '') {
 
 // 5. 2-Hop Spider Graph Traversal Engine
 async function executeSpiderGraphTraversal(seedVideoId, options = {}) {
-  const maxHop2Videos = options.maxHop2Videos || 3;
+  const safeSeed = String(seedVideoId || '').trim();
+  if (!VALID_VIDEO_ID_RE.test(safeSeed)) {
+    throw new Error(`Invalid seedVideoId: ${safeSeed}`);
+  }
+  const rawHop2 = parseInt(options && options.maxHop2Videos, 10);
+  const maxHop2Videos = Math.max(1, Math.min(Number.isFinite(rawHop2) ? rawHop2 : 3, 5));
   const sleepMs = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-  console.log(`[SpiderGraph] Starting Hop 1 from Seed Video: ${seedVideoId}...`);
-  const hop1Recommendations = await getWatchNextRecommendations(seedVideoId);
+  console.log(`[SpiderGraph] Starting Hop 1 from Seed Video: ${safeSeed}...`);
+  const hop1Recommendations = await getWatchNextRecommendations(safeSeed);
   console.log(`[SpiderGraph] Hop 1 discovered ${hop1Recommendations.length} co-watched videos.`);
 
   // Group channels discovered
@@ -233,7 +301,7 @@ async function executeSpiderGraphTraversal(seedVideoId, options = {}) {
 
   for (const r of hop1Recommendations) {
     edges.push(r);
-    if (r.channelId && !channelsMap.has(r.channelId)) {
+    if (r.channelId && VALID_CHANNEL_ID_RE.test(r.channelId) && !channelsMap.has(r.channelId)) {
       channelsMap.set(r.channelId, {
         channelId: r.channelId,
         channelName: r.channelName,
@@ -258,7 +326,7 @@ async function executeSpiderGraphTraversal(seedVideoId, options = {}) {
       console.log(`  -> Hop 2 from [${t.targetVideoId}] returned ${hop2List.length} recommendations.`);
       for (const r2 of hop2List) {
         edges.push(r2);
-        if (r2.channelId && !channelsMap.has(r2.channelId)) {
+        if (r2.channelId && VALID_CHANNEL_ID_RE.test(r2.channelId) && !channelsMap.has(r2.channelId)) {
           channelsMap.set(r2.channelId, {
             channelId: r2.channelId,
             channelName: r2.channelName,
@@ -281,8 +349,14 @@ async function executeSpiderGraphTraversal(seedVideoId, options = {}) {
   const channelsList = Array.from(channelsMap.values()).slice(0, 15); // Enrich top 15 candidates
 
   for (const c of channelsList) {
+    if (!VALID_CHANNEL_ID_RE.test(String(c.channelId || ''))) continue;
     await sleepMs(200);
-    const vids = await getChannelRssVideos(c.channelId);
+    let vids = [];
+    try {
+      vids = await getChannelRssVideos(c.channelId);
+    } catch (_) {
+      vids = [];
+    }
     if (vids.length === 0) continue;
 
     const outlierReport = calculateTrimmedOutliers(vids);
@@ -363,10 +437,10 @@ async function executeSpiderGraphTraversal(seedVideoId, options = {}) {
   );
 
   // Persist to local SQLite intelligence.db
-  const persisted = saveToDatabase({ edges, enrichedChannels, allRssVideos, seedVideoId });
+  const persisted = saveToDatabase({ edges, enrichedChannels, allRssVideos, seedVideoId: safeSeed });
 
   return {
-    seedVideoId,
+    seedVideoId: safeSeed,
     totalEdgesDiscovered: edges.length,
     totalUniqueChannels: channelsMap.size,
     blueOceanScore: boi,
@@ -387,7 +461,7 @@ function saveToDatabase({ edges, enrichedChannels, allRssVideos, seedVideoId, de
     const { DatabaseSync } = require('node:sqlite');
     if (!fs.existsSync(DB_PATH)) return { videosInserted: 0, skipped: 'db_not_found' };
     db = new DatabaseSync(DB_PATH);
-    db.exec('PRAGMA journal_mode = WAL; PRAGMA synchronous = NORMAL; PRAGMA busy_timeout = 5000;');
+    db.exec('PRAGMA busy_timeout = 5000; PRAGMA journal_mode = WAL; PRAGMA synchronous = NORMAL;');
     ensureIntelligenceFtsSchema(db);
 
     const insertEdge = db.prepare(`
@@ -545,6 +619,9 @@ if (require.main === module) {
 }
 
 module.exports = {
+  fetchText,
+  postInnerTube,
+  readBodyLimited,
   getWatchNextRecommendations,
   getChannelRssVideos,
   calculateTrimmedOutliers,

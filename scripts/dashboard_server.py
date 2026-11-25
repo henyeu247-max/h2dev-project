@@ -28,6 +28,20 @@ def _safe_dashboard_file(target_file=None):
 class StrictDashboardHandler(http.server.BaseHTTPRequestHandler):
     server_version = "AGVDashboardServer/3.3"
 
+    SECURITY_HEADERS = {
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "Referrer-Policy": "no-referrer",
+    }
+
+    def end_headers(self):
+        self._send_security_headers()
+        super().end_headers()
+
+    def _send_security_headers(self):
+        for k, v in self.SECURITY_HEADERS.items():
+            self.send_header(k, v)
+
     def _resolve_and_validate(self):
         raw_path = urllib.parse.unquote(self.path.split("?")[0].split("#")[0])
         if raw_path in ("/", "/agv_commands_skills_dashboard.html"):

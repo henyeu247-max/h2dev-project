@@ -21,10 +21,46 @@ const DB_PATH = process.env.H2DEV_MASTER_DB_PATH
 const { computeCounts } = require('./lib/counts');
 const C = computeCounts();
 
+const UNSAFE_JSON_KEYS = new Set(['__proto__', 'constructor', 'prototype']);
+
+function safeMerge(target, ...sources) {
+  const out = (target && typeof target === 'object') ? target : {};
+  for (const src of sources) {
+    if (!src || typeof src !== 'object') continue;
+    for (const key of Object.keys(src)) {
+      if (UNSAFE_JSON_KEYS.has(key)) continue;
+      out[key] = src[key];
+    }
+  }
+  return out;
+}
+
+function resolveSafeRootPath(relPath) {
+  const raw = String(relPath || '').trim().replace(/\\/g, '/').replace(/^\/+/, '');
+  if (!raw || raw.includes('\0')) return null;
+  const resolved = path.resolve(ROOT, raw);
+  const rel = path.relative(ROOT, resolved);
+  if (!rel || rel.startsWith('..') || path.isAbsolute(rel)) return null;
+  const segs = rel.split(/[\\/]+/);
+  if (segs.some(s => {
+    const low = s.toLowerCase();
+    return low === '.env' || low.startsWith('.env.') || low === '_private' || low === '.git';
+  })) {
+    return null;
+  }
+  return resolved;
+}
+
 function writeFileAtomicSync(targetPath, content) {
-  const tmpPath = `${targetPath}.${process.pid}.tmp`;
-  fs.writeFileSync(tmpPath, content, 'utf8');
-  fs.renameSync(tmpPath, targetPath);
+  const tmpPath = `${targetPath}.${process.pid}.${crypto.randomBytes(4).toString('hex')}.tmp`;
+  try {
+    fs.writeFileSync(tmpPath, content, 'utf8');
+    fs.renameSync(tmpPath, targetPath);
+  } finally {
+    try {
+      if (fs.existsSync(tmpPath)) fs.unlinkSync(tmpPath);
+    } catch (_) {}
+  }
 }
 
 // Ensure DB directory exists
@@ -32,12 +68,7 @@ if (!fs.existsSync(path.dirname(DB_PATH))) {
   fs.mkdirSync(path.dirname(DB_PATH), { recursive: true });
 }
 
-// Remove old DB file if starting fresh
-if (fs.existsSync(DB_PATH)) {
-  try { fs.unlinkSync(DB_PATH); } catch (e) {}
-  try { fs.unlinkSync(DB_PATH + '-wal'); } catch (e) {}
-  try { fs.unlinkSync(DB_PATH + '-shm'); } catch (e) {}
-}
+// Keep existing DB file in-place for atomic WAL transaction rebuild (no unlink race for live readers)
 
 console.log('=== [1/8] INITIALIZING MASTER SQLITE WAL DATABASE ===');
 console.log('Target Database Path:', DB_PATH);
@@ -54,9 +85,10 @@ db.exec(`
   PRAGMA foreign_keys = ON;
 `);
 
-// 2. DDL Schemas (drop existing tables/views if file is memory-mapped by live server)
+// 2. DDL Schemas (drop existing tables/views atomically inside a single transaction so live readers never see 0 rows)
 db.exec(`
   PRAGMA foreign_keys = OFF;
+  BEGIN IMMEDIATE;
   DROP VIEW IF EXISTS v_cross_tab_lineage;
   DROP TABLE IF EXISTS search_fts;
   DROP TABLE IF EXISTS checklists;
@@ -71,7 +103,6 @@ db.exec(`
   DROP TABLE IF EXISTS sub_niches;
   DROP TABLE IF EXISTS lessons;
   DROP TABLE IF EXISTS niches;
-  PRAGMA foreign_keys = ON;
 `);
 
 db.exec(`
@@ -164,7 +195,7 @@ CREATE TABLE lesson_timestamps (
     FOREIGN KEY (sku) REFERENCES lessons (sku) ON DELETE CASCADE
 ) STRICT;
 
--- 5b. Lesson Transcripts Table (333 Gold Standard Subtitles)
+-- 5b. Lesson Transcripts Table (347 Gold Standard Subtitles)
 CREATE TABLE lesson_transcripts (
     sku TEXT PRIMARY KEY,
     total_segments INTEGER NOT NULL DEFAULT 0,
@@ -175,7 +206,7 @@ CREATE TABLE lesson_transcripts (
     FOREIGN KEY (sku) REFERENCES lessons (sku) ON DELETE CASCADE
 ) STRICT;
 
--- 6. Competitor Channels Table (1,086 records)
+-- 6. Competitor Channels Table (1,080 records)
 CREATE TABLE competitor_channels (
     channel_id TEXT PRIMARY KEY,
     raw_id TEXT,
@@ -341,7 +372,7 @@ const insertSubNiche = db.prepare(`
   ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
 `);
 
-db.exec('BEGIN TRANSACTION;');
+db.exec('SAVEPOINT sp_step;');
 
 // 40 Canonical Niches H01..H40
 let nicheCount = 0;
@@ -354,6 +385,7 @@ for (const n of ngachData.ngachXanh || []) {
   const slug = foldVi(n.ngach).replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
   const rankNum = auditRankMap.get(n.ngach) || n.hang || 1;
   const isGreen = n.xanh === true ? 1 : 2;
+  const nicheRpm = parseRpmRange(n.rpm, { low: 6.0, high: 14.0 });
 
   insertNiche.run(
     code,
@@ -369,8 +401,8 @@ for (const n of ngachData.ngachXanh || []) {
     n.canhTranh || '',
     n.doMoi || '',
     n.evidence || '',
-    6.0,
-    14.0,
+    nicheRpm.low,
+    nicheRpm.high,
     JSON.stringify(n.thiTruong || []),
     'CORE'
   );
@@ -415,13 +447,24 @@ for (const sn of ngachData.subNiches2026 || []) {
 }
 
 // 2) 146 vi ngách từ subNiches120 (SN-Hxx-xxx)
-function parseRpmRange(rpmStr) {
-  if (!rpmStr) return { low: 0.0, high: 0.0 };
-  const m = String(rpmStr).match(/\$([\d.]+)[–-](\$)?([\d.]+)/);
-  if (m) return { low: parseFloat(m[1]), high: parseFloat(m[3]) };
-  const mSingle = String(rpmStr).match(/\$([\d.]+)/);
-  if (mSingle) return { low: parseFloat(mSingle[1]), high: parseFloat(mSingle[1]) };
-  return { low: 0.0, high: 0.0 };
+function parseRpmRange(rpmStr, fallback = { low: 0.0, high: 0.0 }) {
+  if (!rpmStr) return fallback;
+  const s = String(rpmStr);
+  const pairMatches = [...s.matchAll(/\$([\d.]+)\s*[–—-]\s*\$?([\d.]+)/g)];
+  if (pairMatches.length > 0) {
+    const lows = pairMatches.map(m => parseFloat(m[1])).filter(Number.isFinite);
+    const highs = pairMatches.map(m => parseFloat(m[2])).filter(Number.isFinite);
+    if (lows.length && highs.length) {
+      const low = Math.min(...lows);
+      const high = Math.max(...highs, low);
+      return { low, high };
+    }
+  }
+  const singleMatches = [...s.matchAll(/\$([\d.]+)/g)].map(m => parseFloat(m[1])).filter(Number.isFinite);
+  if (singleMatches.length > 0) {
+    return { low: Math.min(...singleMatches), high: Math.max(...singleMatches) };
+  }
+  return fallback;
 }
 
 for (const n of ngachData.ngachXanh || []) {
@@ -466,7 +509,7 @@ for (const n of ngachData.ngachXanh || []) {
   );
 });
 
-db.exec('COMMIT;');
+db.exec('RELEASE SAVEPOINT sp_step;');
 console.log(`Ingested exactly ${nicheCount} Canonical Niches (H01..H40) and ${subNicheCount} Sub-Niches.`);
 
 function formatEditSop(sop) {
@@ -495,7 +538,7 @@ const videosDgmd = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'videos_dg
 const videoInsightsH2 = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'video_insights.json'), 'utf8'));
 const videoInsightsHuan = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'video_insights_huan.json'), 'utf8'));
 const videoInsightsDgmd = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'video_insights_dgmd.json'), 'utf8'));
-const videoInsights = Object.assign({}, videoInsightsH2, videoInsightsHuan, videoInsightsDgmd);
+const videoInsights = safeMerge({}, videoInsightsH2, videoInsightsHuan, videoInsightsDgmd);
 const allCatalogFull = catalogFull.concat(catalogHuan, catalogDgmd);
 
 const slimBySku = new Map(catalogSlim.concat(catalogHuan, catalogDgmd).map(v => [v.sku, v]));
@@ -534,7 +577,7 @@ indexModuleItems('modules_dgmd.json', 'DGMD-M01');
 const MARKET_FLAG_TO_CODE = {
   '🇻🇳 Việt': 'VN', '🇻🇳 Việt Nam': 'VN', '🇯🇵 Nhật': 'JP', '🇯🇵 Nhật Bản': 'JP',
   '🇰🇷 Hàn': 'KR', '🇰🇷 Hàn Quốc': 'KR', '🇨🇳 Trung': 'CN',
-  '🇺🇸 Mỹ': 'US', '🇺🇸 US / Global': 'US', '🇺🇸 Mỹ / Global': 'US',
+  '🇺🇸 Mỹ': 'US', '🇺🇸 US / Global': 'US', '🇺🇸 Mỹ / Global': 'US', '🇺🇸 Hoa Kỳ': 'US',
   '🇷🇺 Nga': 'RU', '🌐 Ngoại': 'GLOBAL', '🌍 View Ngoại': 'GLOBAL', 'View Ngoại': 'GLOBAL',
   '🇨🇦 Canada': 'CA', '🇹🇭 Thái': 'TH', '🇵🇭 Phil': 'PH', '🇬🇧 Anh': 'GB', '🇭🇰 HK': 'HK',
   '📘 Facebook': 'FB', '📱 Shorts / Reels': 'SHORTS'
@@ -601,7 +644,33 @@ const insertTranscript = db.prepare(`
   VALUES (?, ?, ?, ?, ?, ?)
 `);
 
-db.exec('BEGIN TRANSACTION;');
+function resolveLessonMp4Path(sku, v, slim, tab) {
+  let raw = v.mp4_path || v.mp4 || slim.mp4 || tab.mp4 || v.file || slim.file || tab.file || '';
+  raw = String(raw || '').trim().replace(/\\/g, '/').replace(/^\/+/, '');
+  if (raw) {
+    if (!raw.startsWith('video/')) raw = `video/${sku}/${raw}`;
+    const safeMp4 = resolveSafeRootPath(raw);
+    if (safeMp4 && fs.existsSync(safeMp4)) return raw;
+  }
+  const vDir = resolveSafeRootPath(path.join('video', String(sku || '')));
+  if (vDir && fs.existsSync(vDir)) {
+    const media = fs.readdirSync(vDir).find(f => /\.(mp4|webm|mkv|mov)$/i.test(f));
+    if (media) return `video/${sku}/${media}`;
+  }
+  return resolveSafeRootPath(raw) ? raw : '';
+}
+
+function resolveLessonThumbPath(sku, v, slim, tab) {
+  const raw = String(v.image || slim.image || tab.image || v.thumb || slim.thumb || tab.thumb || '')
+    .trim()
+    .replace(/\\/g, '/')
+    .replace(/^\/+/, '');
+  if (raw) return resolveSafeRootPath(raw) ? raw : '';
+  const fallback = `assets/thumbs/${String(sku || '').trim()}.jpg`;
+  return resolveSafeRootPath(fallback) ? fallback : '';
+}
+
+db.exec('SAVEPOINT sp_step;');
 let lessonCount = 0;
 let timestampCount = 0;
 let transcriptCount = 0;
@@ -677,8 +746,8 @@ for (const v of allCatalogFull) {
     resolution,
     width,
     height,
-    v.mp4_path || (v.file ? `video/${sku}/${v.file}` : ''),
-    v.thumb || `assets/thumbs/${sku}.jpg`,
+    resolveLessonMp4Path(sku, v, slim, tab),
+    resolveLessonThumbPath(sku, v, slim, tab),
     originUrl,
     isFree ? 1 : 0,
     isPro ? 1 : 0,
@@ -728,8 +797,8 @@ for (const v of allCatalogFull) {
   }
 
   // Ingest canonical subtitle transcript from video/<SKU>/transcript.json
-  const trFile = path.join(ROOT, 'video', sku, 'transcript.json');
-  if (fs.existsSync(trFile)) {
+  const trFile = resolveSafeRootPath(path.join('video', String(sku || ''), 'transcript.json'));
+  if (trFile && fs.existsSync(trFile)) {
     try {
       const trRaw = fs.readFileSync(trFile, 'utf8').replace(/\r\n/g, '\n');
       const trHash = crypto.createHash('sha256').update(trRaw, 'utf8').digest('hex');
@@ -745,7 +814,7 @@ for (const v of allCatalogFull) {
   }
 }
 
-db.exec('COMMIT;');
+db.exec('RELEASE SAVEPOINT sp_step;');
 console.log(`Ingested ${lessonCount} Lessons, ${lessonNicheLinksCount} Lesson-Niche Links, ${timestampCount} Timestamps, and ${transcriptCount} Transcripts.`);
 
 console.log(`=== [4/8] INGESTING COMPETITOR CHANNELS & DOSSIERS (${C.channels || 1076}+ Channels) ===`);
@@ -776,42 +845,210 @@ const insertChannel = db.prepare(`
     channel_lifecycle_json = coalesce(competitor_channels.channel_lifecycle_json, excluded.channel_lifecycle_json)
 `);
 
-db.exec('BEGIN TRANSACTION;');
+db.exec('SAVEPOINT sp_step;');
 let channelCount = 0;
 const processedChannelIds = new Set();
 const processedHandles = new Set();
 const ftsChannelIds = new Set();
+const canonicalByChannelId = new Map();
+const normalizeHandleAt = (h) => {
+  const s = String(h || '').trim();
+  if (!s) return '';
+  return s.startsWith('@') ? s : `@${s}`;
+};
+const collectKenhAliases = (k) => {
+  if (!k || typeof k !== 'object') return [];
+  const out = [];
+  const seen = new Set();
+  const push = (val) => {
+    const raw = typeof val === 'string' ? val : (val && typeof val === 'object' ? val.handle : '');
+    const h = normalizeHandleAt(raw);
+    if (!h || h === '@') return;
+    const low = h.toLowerCase();
+    if (seen.has(low)) return;
+    seen.add(low);
+    out.push(h);
+  };
+  push(k.handle);
+  push(k.handle_hien_tai);
+  push(k.currentHandle);
+  push(k.handle_cu);
+  if (Array.isArray(k.aliasHandles)) k.aliasHandles.forEach(push);
+  if (Array.isArray(k.aliases)) k.aliases.forEach(push);
+  if (Array.isArray(k.handle_history)) k.handle_history.forEach(push);
+  return out;
+};
+
+const kmByHandle = new Map();
+const kmByAlias = new Map();
+const kmByChannelId = new Map();
+for (const k of kenhMau) {
+  if (!k) continue;
+  const h = normalizeHandleAt(k.handle).toLowerCase();
+  if (h && !kmByHandle.has(h)) kmByHandle.set(h, k);
+  if (k.channelId && /^UC[\w-]{20,}$/.test(k.channelId) && !kmByChannelId.has(k.channelId)) {
+    kmByChannelId.set(k.channelId, k);
+  }
+  for (const a of collectKenhAliases(k)) {
+    const al = a.toLowerCase();
+    if (al && !kmByAlias.has(al)) kmByAlias.set(al, k);
+  }
+}
+
+const rawGroupMetaByCid = new Map();
+for (const r of rawKenhMau) {
+  const cid = r?.channel?.channelId;
+  if (!cid) continue;
+  if (!rawGroupMetaByCid.has(cid)) rawGroupMetaByCid.set(cid, { rawIds: [], handles: [] });
+  const grp = rawGroupMetaByCid.get(cid);
+  if (r.id && !grp.rawIds.includes(r.id)) grp.rawIds.push(r.id);
+  const rh = normalizeHandleAt(r?.channel?.handle);
+  if (rh && !grp.handles.some(x => x.toLowerCase() === rh.toLowerCase())) grp.handles.push(rh);
+  if (Array.isArray(r.handleHistory)) {
+    for (const he of r.handleHistory) {
+      const hh = normalizeHandleAt(typeof he === 'string' ? he : he?.handle);
+      if (hh && !grp.handles.some(x => x.toLowerCase() === hh.toLowerCase())) grp.handles.push(hh);
+    }
+  }
+}
+
+const updateCanonicalHandleHistory = db.prepare(`
+  UPDATE competitor_channels SET handle_history_json = ? WHERE channel_id = ?
+`);
+
+function parseNumericStat(val) {
+  if (val === null || val === undefined || val === '') return null;
+  if (typeof val === 'number') return Number.isFinite(val) ? Math.trunc(val) : null;
+  const s = String(val).trim();
+  if (!s || !/^-?\d+(?:\.\d+)?$/.test(s)) return null;
+  const n = Number(s);
+  return Number.isFinite(n) ? Math.trunc(n) : null;
+}
+
+function pickStat(...candidates) {
+  let firstValid = null;
+  for (const c of candidates) {
+    const n = parseNumericStat(c);
+    if (n !== null) {
+      if (n > 0) return n;
+      if (firstValid === null) firstValid = n;
+    }
+  }
+  return firstValid !== null ? firstValid : 0;
+}
 
 // 1. Ingest Canonical Raw Channels (with deep dossiers)
 for (const r of rawKenhMau) {
   const ch = r.channel || {};
   const channelId = ch.channelId || `RAW_CH_${r.id}`;
-  const handle = ch.handle || (r.visionAnalysis?.handle ? '@' + r.visionAnalysis.handle.replace(/^@/, '') : `@${r.id}`);
-  const cleanHandle = handle.toLowerCase();
+  const rawHandle = ch.handle || (r.visionAnalysis?.handle ? '@' + r.visionAnalysis.handle.replace(/^@/, '') : `@${r.id}`);
+  const cleanRawHandle = normalizeHandleAt(rawHandle).toLowerCase();
 
+  const alreadyProcessedChannel = processedChannelIds.has(channelId);
   processedChannelIds.add(channelId);
-  processedHandles.add(cleanHandle);
 
-  const title = ch.title || r.title || r.id;
-  const nicheId = r.nicheCode || 'H30';
+  let kmMatch = kmByChannelId.get(channelId) || kmByHandle.get(cleanRawHandle) || kmByAlias.get(cleanRawHandle) || null;
+  if (!kmMatch && Array.isArray(r.handleHistory)) {
+    for (const he of r.handleHistory) {
+      const hh = normalizeHandleAt(typeof he === 'string' ? he : he?.handle).toLowerCase();
+      if (hh && (kmByHandle.has(hh) || kmByAlias.has(hh))) {
+        kmMatch = kmByHandle.get(hh) || kmByAlias.get(hh);
+        break;
+      }
+    }
+  }
+
+  let handle = normalizeHandleAt(rawHandle);
+  if (kmMatch) {
+    const kmHandle = normalizeHandleAt(kmMatch.handle);
+    const kmHienTai = normalizeHandleAt(kmMatch.handle_hien_tai || kmMatch.currentHandle);
+    const kmCu = normalizeHandleAt(kmMatch.handle_cu);
+    if (kmHienTai) {
+      handle = kmHienTai;
+    } else if (kmCu && kmCu.toLowerCase() === cleanRawHandle && kmHandle) {
+      handle = kmHandle;
+    } else if (kmHandle && kmHandle.toLowerCase() === cleanRawHandle) {
+      handle = kmHandle;
+    }
+  }
+  const cleanHandle = handle.toLowerCase();
+  processedHandles.add(cleanHandle);
+  if (kmMatch?.handle) processedHandles.add(normalizeHandleAt(kmMatch.handle).toLowerCase());
+
+  const title = ch.title || kmMatch?.title || r.title || r.id;
+  const nicheId = r.nicheCode || kmMatch?.nicheCode || 'H30';
 
   const vat = r.vitalityAudit || {};
   const deepIntel = r.deepIntelligence || {};
   const langInfo = r.audioLanguageInfo || {};
 
   const folderName = deepIntel.folderName || `${r.id}_${(ch.title || '').replace(/[^a-zA-Z0-9]/g, '_')}`;
-  let dossierDir = path.join(ROOT, 'data', 'raw-channels-deep', folderName);
-  if (!fs.existsSync(dossierDir)) {
+  let dossierDir = resolveSafeRootPath(path.join('data', 'raw-channels-deep', String(folderName)));
+  if (!dossierDir || !fs.existsSync(dossierDir)) {
     try {
       const entries = fs.readdirSync(path.join(ROOT, 'data', 'raw-channels-deep'));
       const match = entries.find(e => e.startsWith(r.id));
-      if (match) dossierDir = path.join(ROOT, 'data', 'raw-channels-deep', match);
+      if (match) dossierDir = resolveSafeRootPath(path.join('data', 'raw-channels-deep', match));
     } catch(e) {}
   }
 
-  const voiceSampleFile = path.join(ROOT, 'assets', 'voice-samples', `${r.id}.mp3`);
-  const hasVoiceSample = fs.existsSync(voiceSampleFile) ? 1 : 0;
+  const voiceSampleFile = resolveSafeRootPath(path.join('assets', 'voice-samples', `${r.id}.mp3`));
+  const hasVoiceSample = (voiceSampleFile && fs.existsSync(voiceSampleFile)) ? 1 : 0;
   const voiceSamplePath = hasVoiceSample ? `assets/voice-samples/${r.id}.mp3` : null;
+  const resolvedYppStatus = (kmMatch && kmMatch.dead)
+    ? (kmMatch.deadKind === 'empty' ? 'DEAD_EMPTY' : 'DEAD_404')
+    : (vat.healthStatus || 'ACTIVE');
+  const resolvedIsMonetized = (kmMatch && kmMatch.dead)
+    ? 0
+    : (vat.monetizationStatus === 'MONETIZED_ACTIVE' ? 1 : 0);
+
+  const resolvedSubs = pickStat(ch.subscribers, kmMatch?.subscribers);
+  const resolvedViews = pickStat(ch.views, kmMatch?.totalViews, kmMatch?.views);
+  const resolvedVideoCount = pickStat(ch.videoCount, kmMatch?.videoCount, (typeof kmMatch?.videos === 'number' ? kmMatch.videos : null));
+  const resolvedLatestDate = vat.latestUploadDate || null;
+  const resolvedDaysSince = vat.daysSinceLatest || 0;
+  const resolvedWpm = r.voiceDna?.wpm || 135;
+  const resolvedFlag = langInfo.flag || '🌐';
+  const resolvedLangCode = langInfo.code || 'en-US';
+  const resolvedHasMissionControl = fs.existsSync(dossierDir) ? 1 : 0;
+  const resolvedSopDocPath = deepIntel.dossierPath || null;
+
+  const resolvedHandleHistory = [];
+  const seenRawHist = new Set();
+  const pushRawHist = (entry) => {
+    if (!entry || !entry.handle) return;
+    const hNorm = normalizeHandleAt(entry.handle);
+    const key = hNorm.toLowerCase();
+    if (!key || key === '@' || seenRawHist.has(key)) return;
+    seenRawHist.add(key);
+    resolvedHandleHistory.push({ ...entry, handle: hNorm });
+  };
+  if (Array.isArray(r.handleHistory)) {
+    r.handleHistory.forEach(e => {
+      if (typeof e === 'string') pushRawHist({ handle: e, channelId, source: 'raw-kenh-mau.json' });
+      else if (e && e.handle) pushRawHist(e);
+    });
+  }
+  pushRawHist({ handle: rawHandle, channelId, firstSeenDate: vat.latestUploadDate || null, source: `raw-kenh-mau.json:${r.id}` });
+  const rawGrp = rawGroupMetaByCid.get(channelId);
+  if (rawGrp) {
+    for (const gh of rawGrp.handles) {
+      pushRawHist({ handle: gh, channelId, source: 'raw-kenh-mau.json:group' });
+    }
+  }
+  if (kmMatch) {
+    for (const ka of collectKenhAliases(kmMatch)) {
+      pushRawHist({
+        handle: ka,
+        channelId,
+        firstSeenDate: kmMatch.ngay_do || null,
+        source: ka.toLowerCase() === normalizeHandleAt(kmMatch.handle_hien_tai).toLowerCase()
+          ? 'kenh-mau.json:handle_hien_tai'
+          : 'kenh-mau.json:alias'
+      });
+    }
+  }
+  const resolvedLifecycle = r.channelLifecycle || {};
 
   insertChannel.run(
     channelId,
@@ -822,33 +1059,59 @@ for (const r of rawKenhMau) {
     ch.country || 'US',
     r.avatar || ch.avatar || '',
     r.avatar || ch.avatar || '',
-    Number(ch.subscribers || 0),
-    Number(ch.views || 0),
-    Number(ch.videoCount || 0),
+    resolvedSubs,
+    resolvedViews,
+    resolvedVideoCount,
     nicheId,
     r.editorialNiche || r.niche || '',
-    vat.latestUploadDate || null,
-    vat.daysSinceLatest || 0,
-    vat.healthStatus || 'ACTIVE',
-    vat.monetizationStatus === 'MONETIZED_ACTIVE' ? 1 : 0,
+    resolvedLatestDate,
+    resolvedDaysSince,
+    resolvedYppStatus,
+    resolvedIsMonetized,
     hasVoiceSample,
     voiceSamplePath,
-    r.voiceDna?.wpm || 135,
-    langInfo.flag || '🌐',
-    langInfo.code || 'en-US',
+    resolvedWpm,
+    resolvedFlag,
+    resolvedLangCode,
     null,
-    fs.existsSync(dossierDir) ? 1 : 0,
-    deepIntel.dossierPath || null,
+    resolvedHasMissionControl,
+    resolvedSopDocPath,
     null,
     null,
-    JSON.stringify(r.handleHistory || []),
-    JSON.stringify(r.channelLifecycle || {})
+    JSON.stringify(resolvedHandleHistory),
+    JSON.stringify(resolvedLifecycle)
   );
-  channelCount++;
+  if (!alreadyProcessedChannel) channelCount++;
+
+  if (!canonicalByChannelId.has(channelId) || !r.duplicateOf) {
+    canonicalByChannelId.set(channelId, {
+      channelId,
+      rawId: r.id,
+      handle,
+      title,
+      country: ch.country || 'US',
+      subscribers: resolvedSubs,
+      totalViews: resolvedViews,
+      videoCount: resolvedVideoCount,
+      latestUploadDate: resolvedLatestDate,
+      daysSinceLatest: resolvedDaysSince,
+      hasVoiceSample,
+      voiceSamplePath,
+      wpm: resolvedWpm,
+      languageFlag: resolvedFlag,
+      audioLanguageCode: resolvedLangCode,
+      hasMissionControl: resolvedHasMissionControl,
+      sopDocPath: resolvedSopDocPath,
+      handleHistory: resolvedHandleHistory,
+      channelLifecycle: resolvedLifecycle
+    });
+  }
 
   if (!ftsChannelIds.has(channelId)) {
     ftsChannelIds.add(channelId);
-    insertFts.run(channelId, 'CHANNEL', title, `${title} ${handle} ${r.id} ${r.editorialNiche || ''} ${nicheId}`);
+    const allRawIds = rawGrp ? rawGrp.rawIds.join(' ') : r.id;
+    const allAliasText = resolvedHandleHistory.map(e => e.handle).join(' ');
+    insertFts.run(channelId, 'CHANNEL', title, `${title} ${handle} ${allAliasText} ${allRawIds} ${channelId} ${r.editorialNiche || ''} ${kmMatch?.niche || ''} ${nicheId}`);
   }
 }
 
@@ -863,10 +1126,39 @@ for (const k of kenhMau) {
   processedHandles.add(cleanHandle);
 
   const realId = (k.channelId && /^UC[\w-]{20,}$/.test(k.channelId)) ? k.channelId : '';
+  const canonicalMeta = realId ? canonicalByChannelId.get(realId) : null;
+  const isDuplicateChannelId = Boolean(realId && processedChannelIds.has(realId));
   const title = (k.title && k.title !== k.handle) ? k.title : (k.handle || 'Unknown Channel');
   const nicheId = k.nicheCode || 'H30';
 
-  let channelId = (realId && !processedChannelIds.has(realId)) ? realId : '';
+  const kAliases = collectKenhAliases(k);
+
+  if (isDuplicateChannelId && canonicalMeta) {
+    const mergedHistory = [];
+    const seenHist = new Set();
+    const pushHist = (e) => {
+      if (!e || !e.handle) return;
+      const hNorm = normalizeHandleAt(e.handle);
+      const key = hNorm.toLowerCase();
+      if (!key || key === '@' || seenHist.has(key)) return;
+      seenHist.add(key);
+      mergedHistory.push({ ...e, handle: hNorm });
+    };
+    if (Array.isArray(canonicalMeta.handleHistory)) canonicalMeta.handleHistory.forEach(pushHist);
+    for (const ka of kAliases) {
+      pushHist({
+        handle: ka,
+        channelId: realId,
+        firstSeenDate: k.ngay_do || null,
+        source: ka.toLowerCase() === cleanHandle ? 'kenh-mau.json' : 'kenh-mau.json:alias'
+      });
+    }
+    canonicalMeta.handleHistory = mergedHistory;
+    updateCanonicalHandleHistory.run(JSON.stringify(mergedHistory), realId);
+    continue;
+  }
+
+  let channelId = (realId && !isDuplicateChannelId) ? realId : '';
   if (!channelId) {
     const gidBase = handle.replace(/[^a-zA-Z0-9]/g, '');
     channelId = gidBase
@@ -883,46 +1175,127 @@ for (const k of kenhMau) {
     ? (k.avatar.startsWith('assets/') ? k.avatar : `assets/avatars/${k.avatar}`)
     : '';
 
+  const resolvedSubs = pickStat(k.subscribers, canonicalMeta?.subscribers);
+  const resolvedViews = pickStat(k.totalViews, k.views, canonicalMeta?.totalViews);
+  const resolvedVideoCount = pickStat(k.videoCount, (typeof k.videos === 'number' ? k.videos : null), canonicalMeta?.videoCount);
+  const resolvedRawId = canonicalMeta ? (canonicalMeta.rawId || null) : null;
+  const resolvedCountry = canonicalMeta ? (canonicalMeta.country || 'US') : 'US';
+  const resolvedLatestDate = k.ngay_do || canonicalMeta?.latestUploadDate || null;
+  const resolvedDaysSince = canonicalMeta ? (canonicalMeta.daysSinceLatest || 0) : 0;
+  const resolvedHasVoice = canonicalMeta ? (canonicalMeta.hasVoiceSample || 0) : 0;
+  const resolvedVoicePath = canonicalMeta ? (canonicalMeta.voiceSamplePath || null) : null;
+  const resolvedWpm = canonicalMeta ? (canonicalMeta.wpm || 135) : 135;
+  const resolvedFlag = canonicalMeta ? (canonicalMeta.languageFlag || '🌐') : '🌐';
+  const resolvedLangCode = canonicalMeta ? (canonicalMeta.audioLanguageCode || 'ALL') : 'ALL';
+  const resolvedHasMission = canonicalMeta ? (canonicalMeta.hasMissionControl || 0) : 0;
+  const resolvedSopPath = canonicalMeta ? (canonicalMeta.sopDocPath || null) : null;
+
+  const mergedHistory = [];
+  const seenHist = new Set();
+  const pushHist = (e) => {
+    if (!e || !e.handle) return;
+    const hNorm = normalizeHandleAt(e.handle);
+    const key = hNorm.toLowerCase();
+    if (!key || key === '@' || seenHist.has(key)) return;
+    seenHist.add(key);
+    mergedHistory.push({ ...e, handle: hNorm });
+  };
+  if (canonicalMeta && Array.isArray(canonicalMeta.handleHistory)) {
+    canonicalMeta.handleHistory.forEach(pushHist);
+  }
+  pushHist({
+    handle: k.handle || '',
+    channelId: realId || null,
+    firstSeenDate: k.ngay_do || null,
+    source: 'kenh-mau.json'
+  });
+  if (k.handle_hien_tai && String(k.handle_hien_tai).toLowerCase() !== cleanHandle) {
+    pushHist({
+      handle: k.handle_hien_tai,
+      channelId: realId || null,
+      firstSeenDate: k.ngay_do || null,
+      source: 'kenh-mau.json:handle_hien_tai'
+    });
+  }
+  for (const ka of kAliases) {
+    pushHist({
+      handle: ka,
+      channelId: realId || null,
+      firstSeenDate: k.ngay_do || null,
+      source: 'kenh-mau.json:alias'
+    });
+  }
+
+  const resolvedLifecycle = {
+    state: k.dead ? (k.deadKind === 'empty' ? 'DEAD_EMPTY' : 'DEAD_404') : 'ACTIVE',
+    stateReason: 'kenh-mau.json'
+  };
+
   insertChannel.run(
     channelId,
-    null,
+    resolvedRawId,
     k.handle,
     title,
     k.url || `https://www.youtube.com/${k.handle}`,
-    'US',
+    resolvedCountry,
     avatarPath,
     avatarPath,
-    Number(k.subscribers || 0),
-    Number(k.totalViews || 0),
-    k.count || 0,
+    resolvedSubs,
+    resolvedViews,
+    resolvedVideoCount,
     nicheId,
     k.niche || '',
-    k.ngay_do || null,
-    0,
-    k.status || (k.dead ? 'DEAD_404' : 'ACTIVE'),
+    resolvedLatestDate,
+    resolvedDaysSince,
+    k.dead ? (k.deadKind === 'empty' ? 'DEAD_EMPTY' : 'DEAD_404') : 'ACTIVE',
     k.dead ? 0 : 1,
-    0,
+    resolvedHasVoice,
+    resolvedVoicePath,
+    resolvedWpm,
+    resolvedFlag,
+    resolvedLangCode,
     null,
-    135,
-    '🌐',
-    'ALL',
-    null,
-    0,
+    resolvedHasMission,
+    resolvedSopPath,
     null,
     null,
-    null,
-    JSON.stringify([{ handle: k.handle || '', channelId: null, firstSeenDate: k.ngay_do || null, source: 'kenh-mau.json' }]),
-    JSON.stringify({ state: k.dead ? 'DEAD_404' : 'ACTIVE', stateReason: 'kenh-mau.json' })
+    JSON.stringify(mergedHistory),
+    JSON.stringify(resolvedLifecycle)
   );
   channelCount++;
 
+  if (realId) {
+    canonicalByChannelId.set(realId, {
+      channelId: realId,
+      rawId: resolvedRawId,
+      handle: k.handle,
+      title,
+      country: resolvedCountry,
+      subscribers: resolvedSubs,
+      totalViews: resolvedViews,
+      videoCount: resolvedVideoCount,
+      latestUploadDate: resolvedLatestDate,
+      daysSinceLatest: resolvedDaysSince,
+      hasVoiceSample: resolvedHasVoice,
+      voiceSamplePath: resolvedVoicePath,
+      wpm: resolvedWpm,
+      languageFlag: resolvedFlag,
+      audioLanguageCode: resolvedLangCode,
+      hasMissionControl: resolvedHasMission,
+      sopDocPath: resolvedSopPath,
+      handleHistory: mergedHistory,
+      channelLifecycle: resolvedLifecycle
+    });
+  }
+
   if (!ftsChannelIds.has(channelId)) {
     ftsChannelIds.add(channelId);
-    insertFts.run(channelId, 'CHANNEL', title, `${title} ${k.handle} ${k.niche || ''} ${nicheId}`);
+    const aliasText = mergedHistory.map(e => e.handle).join(' ');
+    insertFts.run(channelId, 'CHANNEL', title, `${title} ${k.handle} ${aliasText} ${resolvedRawId || ''} ${channelId} ${k.niche || ''} ${nicheId}`);
   }
 }
 
-db.exec('COMMIT;');
+db.exec('RELEASE SAVEPOINT sp_step;');
 console.log(`Ingested ${channelCount} Channels into table 'competitor_channels'.`);
 
 console.log('=== [5/8] INGESTING TOP VIDEOS FROM DOSSIERS ===');
@@ -935,7 +1308,7 @@ const insertTopVideo = db.prepare(`
   ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
 
-db.exec('BEGIN TRANSACTION;');
+db.exec('SAVEPOINT sp_step;');
 let topVideoCount = 0;
 
 function parseIsoDuration(s) {
@@ -949,13 +1322,17 @@ function parseIsoDuration(s) {
 if (fs.existsSync(deepDir)) {
   const folders = fs.readdirSync(deepDir).filter(f => fs.statSync(path.join(deepDir, f)).isDirectory());
   for (const folder of folders) {
-    const topVidsPath = path.join(deepDir, folder, 'top-videos.json');
-    if (!fs.existsSync(topVidsPath)) continue;
+    const topVidsPath = resolveSafeRootPath(path.join('data', 'raw-channels-deep', folder, 'top-videos.json'));
+    if (!topVidsPath || !fs.existsSync(topVidsPath)) continue;
 
     try {
       const tvData = JSON.parse(fs.readFileSync(topVidsPath, 'utf8'));
       const channelId = tvData.channelId;
       if (!channelId || !processedChannelIds.has(channelId)) continue;
+      const parentMeta = canonicalByChannelId.get(channelId);
+      const chFtsMeta = parentMeta
+        ? `${parentMeta.handle || ''} ${parentMeta.title || ''} ${parentMeta.rawId || ''} ${(parentMeta.handleHistory || []).map(h => h.handle).join(' ')}`
+        : '';
 
       const vids = tvData.videos || [];
       for (const v of vids) {
@@ -978,7 +1355,7 @@ if (fs.existsSync(deepDir)) {
         );
         topVideoCount++;
 
-        insertFts.run(v.videoId, 'TRANSCRIPT', v.title || '', `${v.title || ''} ${v.hookSnippetEN || ''} ${v.hookSnippetVI || ''}`);
+        insertFts.run(v.videoId, 'TRANSCRIPT', v.title || '', `${v.title || ''} ${v.videoId} ${channelId} ${chFtsMeta} ${v.hookSnippetEN || ''} ${v.hookSnippetVI || ''}`);
       }
     } catch (e) {
       // Ignore individual file parse issues
@@ -986,7 +1363,7 @@ if (fs.existsSync(deepDir)) {
   }
 }
 
-db.exec('COMMIT;');
+db.exec('RELEASE SAVEPOINT sp_step;');
 console.log(`Ingested ${topVideoCount} Top Videos into table 'competitor_top_videos'.`);
 
 console.log(`=== [6/8] INGESTING DOCUMENTS (${C.documents || 596} Records) ===`);
@@ -998,7 +1375,7 @@ const insertDoc = db.prepare(`
   ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
 
-db.exec('BEGIN TRANSACTION;');
+db.exec('SAVEPOINT sp_step;');
 const lessonSkuSet = new Set(db.prepare('SELECT sku FROM lessons').all().map(r => r.sku));
 let docCount = 0;
 const sopBodyCache = new Map();
@@ -1009,8 +1386,8 @@ function readSopBodyExcerpt(relPath) {
   if (sopBodyCache.has(cleanRel)) return sopBodyCache.get(cleanRel);
   let excerpt = '';
   try {
-    const fullPath = path.join(ROOT, cleanRel);
-    if (fs.existsSync(fullPath) && fs.statSync(fullPath).isFile()) {
+    const fullPath = resolveSafeRootPath(cleanRel);
+    if (fullPath && fs.existsSync(fullPath) && fs.statSync(fullPath).isFile()) {
       const raw = fs.readFileSync(fullPath, 'utf8');
       excerpt = raw
         .replace(/<[^>]+>/g, ' ')
@@ -1059,7 +1436,7 @@ for (let i = 0; i < docsData.length; i++) {
   );
 }
 
-db.exec('COMMIT;');
+db.exec('RELEASE SAVEPOINT sp_step;');
 console.log(`Ingested ${docCount} Documents into table 'documents'.`);
 
 console.log('=== [7/8] INGESTING REUP SOURCES, POLICIES & CHECKLISTS ===');
@@ -1084,7 +1461,7 @@ const insertChecklist = db.prepare(`
   ) VALUES (?, ?, ?, ?, ?)
 `);
 
-db.exec('BEGIN TRANSACTION;');
+db.exec('SAVEPOINT sp_step;');
 let reupCount = 0;
 for (const r of reupData) {
   let hostType = 'Khác';
@@ -1225,7 +1602,9 @@ INSERT INTO search_fts(search_fts, rank) VALUES('rank', 'bm25(10.0, 1.0, 5.0, 2.
 INSERT INTO search_fts(search_fts) VALUES('optimize');
 `);
 
+db.exec('RELEASE SAVEPOINT sp_step;');
 db.exec('COMMIT;');
+db.exec('PRAGMA foreign_keys = ON;');
 console.log(`Ingested ${reupCount} Reup Sources, ${policyCount} Policies, ${checklistCount} Checklists, and created v_cross_tab_lineage.`);
 
 console.log('=== [8/8] AUDIT & VERIFY MASTER DATABASE N/N 100% ===');
@@ -1413,92 +1792,97 @@ if (!process.env.H2DEV_MASTER_DB_PATH) {
         }
         const kgDb = new DatabaseSync(kgDbPath);
         try {
-          kgDb.exec(`
-            PRAGMA busy_timeout = 5000;
-            PRAGMA journal_mode = WAL;
-            PRAGMA synchronous = NORMAL;
-            BEGIN IMMEDIATE;
-            DROP TABLE IF EXISTS kg_nodes;
-            DROP TABLE IF EXISTS kg_edges;
-            DROP TABLE IF EXISTS kg_backlinks;
-            DROP TABLE IF EXISTS kg_sync_state;
-            DROP TABLE IF EXISTS kg_fts;
-            CREATE TABLE kg_nodes (
-              id TEXT PRIMARY KEY,
-              type TEXT NOT NULL,
-              layer TEXT NOT NULL,
-              level INTEGER NOT NULL DEFAULT 4,
-              parent_id TEXT NOT NULL DEFAULT '',
-              label TEXT NOT NULL,
-              track TEXT NOT NULL,
-              sku TEXT NOT NULL,
-              path TEXT NOT NULL,
-              degree INTEGER NOT NULL DEFAULT 0,
-              metadata_json TEXT NOT NULL
-            ) STRICT;
-            CREATE TABLE kg_edges (
-              source TEXT NOT NULL,
-              target TEXT NOT NULL,
-              relation TEXT NOT NULL,
-              weight REAL NOT NULL DEFAULT 1.0,
-              PRIMARY KEY (source, target, relation)
-            ) STRICT;
-            CREATE TABLE kg_backlinks (
-              node_id TEXT PRIMARY KEY,
-              inbound_count INTEGER NOT NULL,
-              outbound_count INTEGER NOT NULL,
-              inbound_json TEXT NOT NULL,
-              outbound_json TEXT NOT NULL
-            ) STRICT;
-            CREATE TABLE kg_sync_state (
-              path TEXT PRIMARY KEY,
-              mtime_ms INTEGER NOT NULL,
-              size_bytes INTEGER NOT NULL
-            ) STRICT;
-            CREATE VIRTUAL TABLE kg_fts USING fts5(
-              id UNINDEXED,
-              type,
-              label,
-              body,
-              wikilinks,
-              tokenize = 'unicode61 remove_diacritics 2'
-            );
-            CREATE INDEX idx_kg_nodes_type ON kg_nodes(type);
-            CREATE INDEX idx_kg_nodes_layer ON kg_nodes(layer);
-            CREATE INDEX idx_kg_nodes_parent ON kg_nodes(parent_id);
-            CREATE INDEX idx_kg_nodes_sku ON kg_nodes(sku);
-            CREATE INDEX idx_kg_nodes_id_lower ON kg_nodes(LOWER(id));
-            CREATE INDEX idx_kg_nodes_sku_lower ON kg_nodes(LOWER(sku));
-            CREATE INDEX idx_kg_nodes_path_lower ON kg_nodes(LOWER(path));
-            CREATE INDEX idx_kg_nodes_label_lower ON kg_nodes(LOWER(label));
-            CREATE INDEX idx_kg_edges_source ON kg_edges(source);
-            CREATE INDEX idx_kg_edges_target ON kg_edges(target);
-          `);
-          const insNode = kgDb.prepare('INSERT INTO kg_nodes (id, type, layer, level, parent_id, label, track, sku, path, degree, metadata_json) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
-          const insEdge = kgDb.prepare('INSERT OR IGNORE INTO kg_edges (source, target, relation, weight) VALUES (?, ?, ?, ?)');
-          const insBacklink = kgDb.prepare('INSERT INTO kg_backlinks (node_id, inbound_count, outbound_count, inbound_json, outbound_json) VALUES (?, ?, ?, ?, ?)');
-          const insFts = kgDb.prepare('INSERT INTO kg_fts (id, type, label, body, wikilinks) VALUES (?, ?, ?, ?, ?)');
-          for (const n of kgJson.nodes) {
-            const inb = inboundMap.get(n.id) || [];
-            const outb = outboundMap.get(n.id) || [];
-            const deg = inb.length + outb.length;
-            const meta = n.meta || {};
-            const rawIdsStr = (meta.rawIds || (meta.rawId ? [meta.rawId] : [])).join(' ');
-            const codeStr = [meta.code, meta.nicheCode].filter(Boolean).join(' ');
-            const fullBody = `${n.id} ${n.sku || ''} ${codeStr} ${rawIdsStr} ${n.label || ''} ${foldVi((n.label || '') + ' ' + codeStr + ' ' + rawIdsStr)}`.trim();
-            insNode.run(n.id, n.type || 'item', n.layer || 'knowledge', Number(n.level || 4), n.parentId || '', n.label || n.id, n.track || '', n.sku || '', n.path || '', deg, JSON.stringify(meta));
-            insBacklink.run(n.id, inb.length, outb.length, JSON.stringify(inb), JSON.stringify(outb));
-            insFts.run(n.id, n.type || 'item', n.label || n.id, fullBody, '');
+          try {
+            kgDb.exec(`
+              PRAGMA busy_timeout = 5000;
+              PRAGMA journal_mode = WAL;
+              PRAGMA synchronous = NORMAL;
+              BEGIN IMMEDIATE;
+              DROP TABLE IF EXISTS kg_nodes;
+              DROP TABLE IF EXISTS kg_edges;
+              DROP TABLE IF EXISTS kg_backlinks;
+              DROP TABLE IF EXISTS kg_sync_state;
+              DROP TABLE IF EXISTS kg_fts;
+              CREATE TABLE kg_nodes (
+                id TEXT PRIMARY KEY,
+                type TEXT NOT NULL,
+                layer TEXT NOT NULL,
+                level INTEGER NOT NULL DEFAULT 4,
+                parent_id TEXT NOT NULL DEFAULT '',
+                label TEXT NOT NULL,
+                track TEXT NOT NULL,
+                sku TEXT NOT NULL,
+                path TEXT NOT NULL,
+                degree INTEGER NOT NULL DEFAULT 0,
+                metadata_json TEXT NOT NULL
+              ) STRICT;
+              CREATE TABLE kg_edges (
+                source TEXT NOT NULL,
+                target TEXT NOT NULL,
+                relation TEXT NOT NULL,
+                weight REAL NOT NULL DEFAULT 1.0,
+                PRIMARY KEY (source, target, relation)
+              ) STRICT;
+              CREATE TABLE kg_backlinks (
+                node_id TEXT PRIMARY KEY,
+                inbound_count INTEGER NOT NULL,
+                outbound_count INTEGER NOT NULL,
+                inbound_json TEXT NOT NULL,
+                outbound_json TEXT NOT NULL
+              ) STRICT;
+              CREATE TABLE kg_sync_state (
+                path TEXT PRIMARY KEY,
+                mtime_ms INTEGER NOT NULL,
+                size_bytes INTEGER NOT NULL
+              ) STRICT;
+              CREATE VIRTUAL TABLE kg_fts USING fts5(
+                id UNINDEXED,
+                type,
+                label,
+                body,
+                wikilinks,
+                tokenize = 'unicode61 remove_diacritics 2'
+              );
+              CREATE INDEX idx_kg_nodes_type ON kg_nodes(type);
+              CREATE INDEX idx_kg_nodes_layer ON kg_nodes(layer);
+              CREATE INDEX idx_kg_nodes_parent ON kg_nodes(parent_id);
+              CREATE INDEX idx_kg_nodes_sku ON kg_nodes(sku);
+              CREATE INDEX idx_kg_nodes_id_lower ON kg_nodes(LOWER(id));
+              CREATE INDEX idx_kg_nodes_sku_lower ON kg_nodes(LOWER(sku));
+              CREATE INDEX idx_kg_nodes_path_lower ON kg_nodes(LOWER(path));
+              CREATE INDEX idx_kg_nodes_label_lower ON kg_nodes(LOWER(label));
+              CREATE INDEX idx_kg_edges_source ON kg_edges(source);
+              CREATE INDEX idx_kg_edges_target ON kg_edges(target);
+            `);
+            const insNode = kgDb.prepare('INSERT INTO kg_nodes (id, type, layer, level, parent_id, label, track, sku, path, degree, metadata_json) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+            const insEdge = kgDb.prepare('INSERT OR IGNORE INTO kg_edges (source, target, relation, weight) VALUES (?, ?, ?, ?)');
+            const insBacklink = kgDb.prepare('INSERT INTO kg_backlinks (node_id, inbound_count, outbound_count, inbound_json, outbound_json) VALUES (?, ?, ?, ?, ?)');
+            const insFts = kgDb.prepare('INSERT INTO kg_fts (id, type, label, body, wikilinks) VALUES (?, ?, ?, ?, ?)');
+            for (const n of kgJson.nodes) {
+              const inb = inboundMap.get(n.id) || [];
+              const outb = outboundMap.get(n.id) || [];
+              const deg = inb.length + outb.length;
+              const meta = n.meta || {};
+              const rawIdsStr = (meta.rawIds || (meta.rawId ? [meta.rawId] : [])).join(' ');
+              const codeStr = [meta.code, meta.nicheCode].filter(Boolean).join(' ');
+              const fullBody = `${n.id} ${n.sku || ''} ${codeStr} ${rawIdsStr} ${n.label || ''} ${foldVi((n.label || '') + ' ' + codeStr + ' ' + rawIdsStr)}`.trim();
+              insNode.run(n.id, n.type || 'item', n.layer || 'knowledge', Number(n.level || 4), n.parentId || '', n.label || n.id, n.track || '', n.sku || '', n.path || '', deg, JSON.stringify(meta));
+              insBacklink.run(n.id, inb.length, outb.length, JSON.stringify(inb), JSON.stringify(outb));
+              insFts.run(n.id, n.type || 'item', n.label || n.id, fullBody, '');
+            }
+            for (const e of kgJson.edges) {
+              insEdge.run(e.source, e.target, e.relation, Number(e.weight || 1.0));
+            }
+            kgDb.exec("INSERT INTO kg_fts(kg_fts) VALUES('optimize')");
+            kgDb.exec('PRAGMA user_version = 20261103;');
+            kgDb.exec('COMMIT');
+          } catch (kgTxErr) {
+            try { kgDb.exec('ROLLBACK'); } catch (_) {}
+            throw kgTxErr;
           }
-          for (const e of kgJson.edges) {
-            insEdge.run(e.source, e.target, e.relation, Number(e.weight || 1.0));
-          }
-          kgDb.exec("INSERT INTO kg_fts(kg_fts) VALUES('optimize')");
-          kgDb.exec('PRAGMA user_version = 20261103;');
-          kgDb.exec('COMMIT');
           try { kgDb.exec('VACUUM; PRAGMA wal_checkpoint(TRUNCATE);'); } catch (_) {}
         } finally {
-          kgDb.close();
+          try { kgDb.close(); } catch (_) {}
         }
         console.log(`Hydrated ${expectedNodes} kg_nodes and ${expectedEdges} kg_edges into h2dev_knowledge_graph.db -> PASS`);
       }

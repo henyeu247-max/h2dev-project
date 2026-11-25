@@ -17,19 +17,23 @@
  */
 
 let chromium = null;
-try {
-  ({ chromium } = require('playwright'));
-} catch (_) {
-  chromium = null;
-}
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
-const { execSync } = require('child_process');
+const { execFileSync } = require('child_process');
+
+const urlCheckCache = new Map();
 
 function checkUrlHttp200(url, redirects = 0) {
+  if (redirects === 0 && urlCheckCache.has(url)) {
+    return Promise.resolve(urlCheckCache.get(url));
+  }
   return new Promise((resolve) => {
-    if (redirects > 5) return resolve({ status: 0, error: 'Too many redirects' });
+    const finish = (val) => {
+      if (redirects === 0) urlCheckCache.set(url, val);
+      resolve(val);
+    };
+    if (redirects > 5) return finish({ status: 0, error: 'Too many redirects' });
     https.get(url, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
@@ -43,12 +47,12 @@ function checkUrlHttp200(url, redirects = 0) {
           loc = `${u.protocol}//${u.host}${loc}`;
         }
         res.resume();
-        checkUrlHttp200(loc, redirects + 1).then(resolve);
+        checkUrlHttp200(loc, redirects + 1).then(finish);
         return;
       }
       res.resume();
-      resolve({ status: res.statusCode });
-    }).on('error', e => resolve({ status: 0, error: e.message }));
+      finish({ status: res.statusCode });
+    }).on('error', e => finish({ status: 0, error: e.message }));
   });
 }
 
@@ -156,7 +160,24 @@ const BAD_SUB_PATTERNS = [
   'view ngõ',
   'tập khán giả',
   'lẹt đẹp',
-  'dạng triệu'
+  'dạng triệu',
+  /\bH\s+subscribe\s+cho\b/i,
+  /subscribe\s+cho\s+k\b/i,
+  /\bGhi\s+M\s+G\b/i,
+  /\bkh\s+b\s+l\s+nh\b/i,
+  /\bcon\s+Coloss\b/i,
+  /\bColossedit\b/i,
+  /\bcon\s+Glock\b/i,
+  /\bđăng\s+ký\s+kênh\s+để\s+nhận\s+thêm/i,
+  /\bnhớ\s+đăng\s+ký\s+kênh\b/i,
+  /\bsubscribe\s+kênh\b/i
+];
+
+const SPLIT_LINE_HALLUCINATION_RES = [
+  /\b(?:hãy|nhớ)\s+đăng\s+ký\s+kênh\s+để\s+(?:nhận\s+thêm|ủng\s+hộ)/i,
+  /\bsubscribe\s+cho\s+kênh\b/i,
+  /\bghiền\s+mì\s+gõ\b/i,
+  /\bla\s+la\s+school\b/i
 ];
 
 const UNBRACKETED_ACTION_RES = [
@@ -185,6 +206,44 @@ function isCompressed(text) {
   return (short >= 0.70 && novowel >= 0.35) || novowel >= 0.45;
 }
 
+function hasCompressedWindow(text, winSize = 8) {
+  const toks = text.trim().split(/\s+/).map(t => t.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, '')).filter(t => /[a-zA-ZÀ-ỹ]/.test(t) && !/\d/.test(t));
+  if (toks.length < winSize) return false;
+  for (let i = 0; i <= toks.length - winSize; i++) {
+    const win = toks.slice(i, i + winSize);
+    const short = win.filter(t => t.length <= 2).length / winSize;
+    const novowel = win.filter(t => ![...t.toLowerCase()].some(c => VOWELS.has(c))).length / winSize;
+    if ((short >= 0.75 && novowel >= 0.625) || novowel >= 0.625) {
+      return win.join(' ');
+    }
+  }
+  return null;
+}
+
+function isValidZipFile(filePath) {
+  try {
+    const fd = fs.openSync(filePath, 'r');
+    try {
+      const buf = Buffer.alloc(4);
+      const n = fs.readSync(fd, buf, 0, 4, 0);
+      const ok = n === 4 && buf[0] === 0x50 && buf[1] === 0x4b && buf[2] === 0x03 && buf[3] === 0x04;
+      return { ok, headerHex: buf.slice(0, n).toString('hex') };
+    } finally {
+      fs.closeSync(fd);
+    }
+  } catch (e) {
+    return { ok: false, headerHex: '', error: e.message };
+  }
+}
+
+const RAW_HTML_ENTITY_RE = /&(?:aacute|eacute|igrave|oacute|ugrave|yacute|agrave|egrave|ograve|acirc|ecirc|ocirc|ucirc|atilde|otilde|Aacute|Eacute|Iacute|Oacute|Uacute|Yacute|Agrave|Egrave|Ograve|bull|nbsp|ndash|mdash|lsquo|rsquo|ldquo|rdquo|hellip);/;
+
+function findUnescapedHtmlEntities(mdText) {
+  const stripped = String(mdText || '').replace(/```[\s\S]*?```/g, '');
+  const m = stripped.match(RAW_HTML_ENTITY_RE);
+  return m ? m[0] : null;
+}
+
 function silentShare(start, end, regions) {
   if (end <= start) return 1.0;
   let covered = 0;
@@ -206,7 +265,8 @@ function norm(s) {
     .trim();
 }
 
-async function verifyOneSku(browser, sku, trackCtx) {
+async function verifyOneSku(browser, sku, trackCtx, opts = {}) {
+  const { noShot = false } = opts;
   const { track, globalCatalog, globalVideos, globalModules, insAll, shotSubdir } = trackCtx;
   console.log(`\n======================================================================`);
   console.log(`>>> KIỂM ĐỊNH 10 CỔNG A-Z (CHUẨN 7 LỚP H2DEV - TRACK: ${track.toUpperCase()}) CHO SKU: ${sku}`);
@@ -230,7 +290,7 @@ async function verifyOneSku(browser, sku, trackCtx) {
     errors.push(`[Gate 1] Thiếu file MP4/WEBM hoặc dung lượng < 1MB: ${mp4Path}`);
   } else if (fs.existsSync('D:\\Linly-Dubbing\\bin\\ffmpeg.exe')) {
     try {
-      const out = execSync(`ffprobe -v error -show_entries format=duration:stream=codec_type,codec_name,width,height -of json "${mp4Path}"`).toString();
+      const out = execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration:stream=codec_type,codec_name,width,height', '-of', 'json', mp4Path], { windowsHide: true }).toString();
       const probe = JSON.parse(out);
       realDur = parseFloat(probe.format?.duration || '0');
       const vStream = (probe.streams || []).find(s => s.codec_type === 'video');
@@ -241,11 +301,14 @@ async function verifyOneSku(browser, sku, trackCtx) {
       const startT = 1;
       const midT = Math.max(1, Math.floor(realDur / 2));
       const endT = Math.max(1, Math.floor(realDur - 3));
-      const cuvidFlag = videoCodec === 'h264' ? '-hwaccel cuda -c:v h264_cuvid' : (videoCodec === 'vp9' ? '-hwaccel cuda -c:v vp9_cuvid' : (videoCodec === 'vp8' ? '-hwaccel cuda -c:v vp8_cuvid' : '-hwaccel cuda'));
+      const cuvidArgs = videoCodec === 'h264'
+        ? ['-hwaccel', 'cuda', '-c:v', 'h264_cuvid']
+        : (videoCodec === 'vp9'
+          ? ['-hwaccel', 'cuda', '-c:v', 'vp9_cuvid']
+          : (videoCodec === 'vp8' ? ['-hwaccel', 'cuda', '-c:v', 'vp8_cuvid'] : ['-hwaccel', 'cuda']));
       for (const pt of [startT, midT, endT]) {
-        const hwDecodeCmd = `D:\\Linly-Dubbing\\bin\\ffmpeg.exe -hide_banner -v error ${cuvidFlag} -ss ${pt} -t 1 -i "${mp4Path}" -f null -`;
         try {
-          execSync(hwDecodeCmd, { stdio: 'pipe' });
+          execFileSync('D:\\Linly-Dubbing\\bin\\ffmpeg.exe', ['-hide_banner', '-v', 'error', ...cuvidArgs, '-ss', String(pt), '-t', '1', '-i', mp4Path, '-f', 'null', '-'], { stdio: 'pipe', windowsHide: true });
         } catch (hwErr) {
           errors.push(`[Gate 1] Giải mã phần cứng GPU NVDEC (${videoCodec}) thất bại tại mốc ${pt}s!`);
           break;
@@ -393,7 +456,10 @@ async function verifyOneSku(browser, sku, trackCtx) {
     await page.waitForSelector('#insightEditSop', { timeout: 15000 }).catch(() => {});
     await page.waitForTimeout(1500);
   } else {
-    const httpRes = await fetch(url, { signal: AbortSignal.timeout(15000) });
+    const httpRes = await fetch(url, {
+      signal: AbortSignal.timeout(15000),
+      headers: { Connection: 'close' }
+    });
     if (!httpRes.ok) {
       errors.push(`[Gate 2] HTTP GET ${url} failed with status ${httpRes.status}`);
     } else {
@@ -449,6 +515,11 @@ async function verifyOneSku(browser, sku, trackCtx) {
   for (const line of trLines) {
     if (isCompressed(line.text)) {
       errors.push(`[Gate 4] Phát hiện dòng nén chữ (rớt nguyên âm) tại [${line.time}]: "${line.text}"`);
+    } else {
+      const compWin = hasCompressedWindow(line.text, 8);
+      if (compWin) {
+        errors.push(`[Gate 4] Phát hiện cụm nén chữ / ảo giác nhúng trong câu ("${compWin}") tại [${line.time}]: "${line.text}"`);
+      }
     }
     for (const rx of UNBRACKETED_ACTION_RES) {
       if (rx.test(line.text)) {
@@ -467,6 +538,18 @@ async function verifyOneSku(browser, sku, trackCtx) {
     }
     if (/(?:^|\s)gách(?:\s|$|[.,!?])/i.test(line.text)) {
       errors.push(`[Gate 4] Phát hiện lỗi ASR "gách" (ngách) tại [${line.time}]: "${line.text}"`);
+    }
+  }
+  for (let i = 0; i < trLines.length; i++) {
+    for (const span of [2, 3]) {
+      if (i + span > trLines.length) continue;
+      const joined = trLines.slice(i, i + span).map(x => x.text).join(' ').replace(/\s+/g, ' ').trim();
+      for (const rx of SPLIT_LINE_HALLUCINATION_RES) {
+        if (rx.test(joined)) {
+          errors.push(`[Gate 4] Phát hiện ảo giác tách nhiều dòng (${rx}) tại [${trLines[i].time}..${trLines[i + span - 1].time}]: "${joined}"`);
+          break;
+        }
+      }
     }
   }
   if (!errors.some(e => e.startsWith('[Gate 4]'))) {
@@ -596,6 +679,30 @@ async function verifyOneSku(browser, sku, trackCtx) {
   // ---------------- GATE 8: HỒ SƠ README.MD & ĐỌC TRỰC TIẾP TÀI LIỆU (#PDOCS / #DOCMODAL) ----------------
   if (!fs.existsSync(readmePath) || fs.statSync(readmePath).size < 500) {
     errors.push(`[Gate 8] Thiếu hoặc quá ngắn file hồ sơ bài học docs/${sku}/README.md`);
+  } else {
+    const rawEnt = findUnescapedHtmlEntities(readmeText);
+    if (rawEnt) {
+      errors.push(`[Gate 8] File docs/${sku}/README.md còn HTML entity chưa giải mã (${rawEnt})`);
+    }
+  }
+  const zipDirsToCheck = [
+    path.join(ROOT, 'docs', sku),
+    path.join(ROOT, 'assets', 'docs', sku),
+    path.join(ROOT, 'assets', 'docs-huan', sku),
+    path.join(ROOT, 'assets', 'docs-dgmd', sku)
+  ];
+  for (const zDir of zipDirsToCheck) {
+    if (!fs.existsSync(zDir)) continue;
+    for (const fn of fs.readdirSync(zDir)) {
+      if (!/\.zip$/i.test(fn)) continue;
+      const zPath = path.join(zDir, fn);
+      if (!fs.statSync(zPath).isFile()) continue;
+      const zChk = isValidZipFile(zPath);
+      if (!zChk.ok) {
+        const relZ = path.relative(ROOT, zPath).replace(/\\/g, '/');
+        errors.push(`[Gate 8] File .zip không hợp lệ / sai magic bytes PK\\x03\\x04 (header=0x${zChk.headerHex || 'empty'}): ${relZ}`);
+      }
+    }
   }
   const readableDocsFallback = (catItemForGate2?.docs || []).filter(d => d && (d.readFile || /\.(md|txt)$/i.test(d.file || '')));
   const docUiCheck = page ? await page.evaluate(async () => {
@@ -647,7 +754,8 @@ async function verifyOneSku(browser, sku, trackCtx) {
   };
   if (!docUiCheck.pdocsVisible || docUiCheck.readBtnCount < 2 || !docUiCheck.modalOpened || !docUiCheck.modalClosed || docUiCheck.modalBodyLen < 200) {
     errors.push(`[Gate 8] Khối Tài liệu đính kèm (#pdocs) hoặc Modal Đọc trực tiếp (#docModal) lỗi: ${JSON.stringify(docUiCheck)}`);
-  } else {
+  }
+  if (!errors.some(e => e.startsWith('[Gate 8]'))) {
     console.log(`[PASS Gate 8] Hồ sơ README.md (${fs.statSync(readmePath).size} B) & Modal "Đọc trực tiếp" (#docModal) hoạt động hoàn hảo (${docUiCheck.readBtnCount} tài liệu, nội dung render ${docUiCheck.modalBodyLen} ký tự)!`);
   }
 
@@ -673,11 +781,15 @@ async function verifyOneSku(browser, sku, trackCtx) {
     if (expectedChans.length > 0 && page) {
       const chanDom = await page.evaluate(() => {
         const box = document.getElementById('pchannels');
-        const items = Array.from(document.querySelectorAll('#pchannelslist a[target="_blank"]')).map(a => ({
-          text: a.innerText.trim(),
-          href: a.href,
-          isDead: a.classList.contains('line-through') || a.innerHTML.includes('channel-chip-dead-badge')
-        }));
+        const items = Array.from(document.querySelectorAll('#pchannelslist a[target="_blank"]')).map(a => {
+          const card = a.closest('div');
+          const cardIsDead = Boolean(card && (card.querySelector('.channel-chip-dead-badge') || card.classList.contains('border-red-500/40')));
+          return {
+            text: a.innerText.trim(),
+            href: a.href,
+            isDead: cardIsDead || a.classList.contains('line-through') || a.innerHTML.includes('channel-chip-dead-badge')
+          };
+        });
         return {
           visible: Boolean(box && !box.classList.contains('hidden')),
           count: items.length,
@@ -703,10 +815,12 @@ async function verifyOneSku(browser, sku, trackCtx) {
 
   // ---------------- GATE 10: CHỤP ẢNH NGHIỆM THU PC (1440px) & KIỂM ĐỊNH MOBILE UI (390x844) ----------------
   const shotDir = path.join(ROOT, '_audit', shotSubdir);
-  fs.mkdirSync(shotDir, { recursive: true });
   const shotPath = path.join(shotDir, `${sku}.png`);
   if (page) {
-    await page.screenshot({ path: shotPath, fullPage: true });
+    if (!noShot) {
+      fs.mkdirSync(shotDir, { recursive: true });
+      await page.screenshot({ path: shotPath, fullPage: true });
+    }
 
     // Kiểm tra Responsive Mobile Phone (390x844): 0 tràn ngang, nút Đọc trực tiếp >= 36px, #docModal bottom-sheet
     await page.setViewportSize({ width: 390, height: 844 });
@@ -733,14 +847,16 @@ async function verifyOneSku(browser, sku, trackCtx) {
         sheetOk
       };
     });
-    const mobileShotPath = path.join(shotDir, `${sku}_mobile.png`);
-    await page.screenshot({ path: mobileShotPath, fullPage: false });
+    if (!noShot) {
+      const mobileShotPath = path.join(shotDir, `${sku}_mobile.png`);
+      await page.screenshot({ path: mobileShotPath, fullPage: false });
+    }
     await page.close();
 
     if (mobileCheck.docOverflow > 1 || mobileCheck.btnHeight < 36 || !mobileCheck.sheetOk) {
       errors.push(`[Gate 10] Lỗi Mobile UI (390x844): ${JSON.stringify(mobileCheck)}`);
     } else {
-      console.log(`[PASS Gate 10] PC (1440px) & Mobile UI (390px: overflow=${mobileCheck.docOverflow}px, btnH=${mobileCheck.btnHeight}px, bottomSheet=OK) -> Ảnh: ${shotPath}`);
+      console.log(`[PASS Gate 10] PC (1440px) & Mobile UI (390px: overflow=${mobileCheck.docOverflow}px, btnH=${mobileCheck.btnHeight}px, bottomSheet=OK)${noShot ? ' (--no-shot: skipped screenshot write)' : ` -> Ảnh: ${shotPath}`}`);
     }
   } else {
     console.log(`[PASS Gate 10] Headless Server HTTP & Responsive Stylesheet Check OK (${url})`);
@@ -757,10 +873,16 @@ async function verifyOneSku(browser, sku, trackCtx) {
 }
 
 async function main() {
-  const skus = process.argv.slice(2).filter(a => !a.startsWith('-'));
-  if (!skus.length) {
-    console.error('Cách dùng: node scripts/verify_sku_az.js VIDEO-xxxxxx [VIDEO-yyyyyy ...]');
-    process.exit(1);
+  const argv = process.argv.slice(2);
+  const runAll = argv.includes('--all');
+  const noShot = argv.includes('--no-shot') || argv.includes('--no-screenshots');
+  const noBrowser = argv.includes('--no-browser');
+  const trackFlag = (argv.find(a => a.startsWith('--track=')) || '').split('=')[1]?.toLowerCase() || '';
+  let skus = argv.filter(a => !a.startsWith('-'));
+  if (!runAll && !skus.length) {
+    console.error('Cách dùng: node scripts/verify_sku_az.js [--all] [--no-shot] [--no-browser] [--track=h2dev|huan|dgmd] [VIDEO-xxxxxx ...]');
+    process.exitCode = 1;
+    return;
   }
   const tracks = {
     huan: {
@@ -791,6 +913,21 @@ async function main() {
     }
   };
 
+  if (runAll) {
+    const seenSkus = new Set(skus.map(s => s.toUpperCase()));
+    const trackOrder = trackFlag && tracks[trackFlag] ? [tracks[trackFlag]] : [tracks.h2dev, tracks.huan, tracks.dgmd];
+    for (const t of trackOrder) {
+      for (const item of t.globalCatalog) {
+        if (!item || !item.sku) continue;
+        const u = item.sku.toUpperCase();
+        if (!seenSkus.has(u)) {
+          seenSkus.add(u);
+          skus.push(item.sku);
+        }
+      }
+    }
+  }
+
   function resolveTrackCtx(sku) {
     if (tracks.huan.globalCatalog.some(x => x.sku === sku)) return tracks.huan;
     if (tracks.dgmd.globalCatalog.some(x => x.sku === sku)) return tracks.dgmd;
@@ -798,40 +935,60 @@ async function main() {
   }
 
   let browser = null;
-  if (chromium) {
+  if (!noBrowser) {
     try {
-      browser = await chromium.launch({
-        headless: true,
-        args: [
-          '--enable-gpu',
-          '--enable-gpu-rasterization',
-          '--enable-zero-copy',
-          '--ignore-gpu-blocklist'
-        ]
-      });
+      ({ chromium } = require('playwright'));
     } catch (_) {
-      browser = null;
+      chromium = null;
+    }
+    if (chromium) {
+      try {
+        browser = await chromium.launch({
+          headless: true,
+          args: [
+            '--enable-gpu',
+            '--enable-gpu-rasterization',
+            '--enable-zero-copy',
+            '--ignore-gpu-blocklist'
+          ]
+        });
+      } catch (_) {
+        browser = null;
+      }
     }
   }
   let allOk = true;
+  const failedSkus = [];
+  let passCount = 0;
   try {
     for (const sku of skus) {
       try {
         const trackCtx = resolveTrackCtx(sku);
-        const ok = await verifyOneSku(browser, sku, trackCtx);
-        if (!ok) allOk = false;
+        const ok = await verifyOneSku(browser, sku, trackCtx, { noShot });
+        if (ok) {
+          passCount++;
+        } else {
+          allOk = false;
+          failedSkus.push(sku);
+        }
       } catch (skuErr) {
         console.error(`\n❌ [FAIL] SKU ${sku} GẶP LỖI RUNTIME EXCEPTION: ${skuErr.message}`);
         allOk = false;
+        failedSkus.push(sku);
       }
     }
   } finally {
     if (browser) await browser.close();
   }
-  process.exit(allOk ? 0 : 1);
+  if (skus.length > 1) {
+    console.log(`\n======================================================================`);
+    console.log(`TỔNG KẾT VERIFY_SKU_AZ: ${passCount}/${skus.length} PASS | ${failedSkus.length} FAIL${failedSkus.length ? ` (${failedSkus.join(', ')})` : ''}`);
+    console.log(`======================================================================`);
+  }
+  process.exitCode = allOk ? 0 : 1;
 }
 
 main().catch(err => {
   console.error(err);
-  process.exit(1);
+  process.exitCode = 1;
 });

@@ -19,9 +19,27 @@ Requirements:
 """
 
 import json
+import re
 import shutil
 import subprocess
 from pathlib import Path
+
+SAFE_ID_RE = re.compile(r"^[A-Za-z0-9_-]+$")
+
+
+def assert_safe_id(val: str, label: str = "shot_id") -> str:
+    s = str(val or "").strip()
+    if not SAFE_ID_RE.fullmatch(s):
+        raise ValueError(f"Invalid {label} (must match ^[A-Za-z0-9_-]+$): {val!r}")
+    return s
+
+
+def format_concat_line(clip_path: Path) -> str:
+    abs_path = clip_path.resolve().as_posix()
+    if "\r" in abs_path or "\n" in abs_path:
+        raise ValueError(f"Illegal newline in concat path: {abs_path!r}")
+    escaped = abs_path.replace("'", "'\\''")
+    return f"file '{escaped}'\n"
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -39,11 +57,14 @@ def check_ffmpeg() -> bool:
 
 
 def valid_clip(path: Path) -> bool:
-    """Require a non-empty, decodable video clip before merging."""
+    """A clip must be non-empty and decodable; exists() is not sufficient."""
     if not path.is_file() or path.stat().st_size < 1024:
         return False
     try:
-        subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=codec_name,duration", "-of", "json", str(path)], capture_output=True, text=True, check=True, timeout=30)
+        subprocess.run([
+            "ffprobe", "-v", "error", "-select_streams", "v:0",
+            "-show_entries", "stream=codec_name,duration", "-of", "json", str(path)
+        ], capture_output=True, text=True, check=True, timeout=30)
         return True
     except (FileNotFoundError, subprocess.SubprocessError):
         return False
@@ -80,7 +101,7 @@ def main():
     missing   = []
 
     for shot in all_shots:
-        sid       = shot["shot_id"]
+        sid       = assert_safe_id(shot.get("shot_id"), "shot_id")
         clip_path = clips_dir / f"{sid}.mp4"
         if valid_clip(clip_path):
             available.append((sid, clip_path))
@@ -90,14 +111,14 @@ def main():
     print(f"  Shots in order : {len(all_shots)}")
     print(f"  Clips found    : {len(available)}")
     if missing:
-        print(f"  Missing clips  : {', '.join(missing)}  ← will be skipped")
+        print(f"  Missing/invalid clips : {', '.join(missing)}")
     print()
 
-    if not available:
-        print("ERROR: No clips found in ./clips/ — run generate_videos.py first.")
-        raise SystemExit(1)
     if missing:
         print("ERROR: Refusing to merge with missing or invalid clips. Generate every shot first.")
+        raise SystemExit(1)
+    if not available:
+        print("ERROR: No valid clips found in ./clips/ — run generate_videos.py first.")
         raise SystemExit(1)
 
     if len(available) == 1:
@@ -110,9 +131,7 @@ def main():
     concat_path = Path("concat.txt")
     with open(concat_path, "w", encoding="utf-8") as f:
         for sid, clip_path in available:
-            # Use forward-slash absolute path (safe on all platforms)
-            abs_path = clip_path.resolve().as_posix()
-            f.write(f"file '{abs_path}'\n")
+            f.write(format_concat_line(clip_path))
 
     print(f"Merging {len(available)} clips in order:")
     for sid, _ in available:
@@ -136,7 +155,11 @@ def main():
 
     if result.returncode != 0:
         print("Stream copy failed; retrying with H.264/AAC re-encode...")
-        fallback = ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat_path), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", str(output_path)]
+        fallback = [
+            "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat_path),
+            "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k",
+            str(output_path),
+        ]
         result = subprocess.run(fallback, capture_output=True, text=True)
 
     # Always clean up concat file
@@ -158,7 +181,7 @@ def main():
     print(f"     Size     : {size_mb:.1f} MB")
     print(f"     Merged   : {len(available)} clips")
     if missing:
-        print(f"     Skipped  : {len(missing)} missing  ({', '.join(missing)})")
+        print(f"     Missing  : {len(missing)} ({', '.join(missing)})")
     print(f"{'='*50}")
 
 

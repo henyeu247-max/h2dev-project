@@ -8,6 +8,7 @@ Writes MP3 to --output, prints metadata JSON to stdout.
 import argparse
 import json
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -21,6 +22,14 @@ load_dotenv(SKILL_ROOT / ".env")
 API_BASE = "https://api.elevenlabs.io/v1"
 MAX_ATTEMPTS = 3
 RETRY_WAIT_BASE = 3  # seconds: 3, 6, 9 between attempts
+SAFE_ID_RE = re.compile(r"^[A-Za-z0-9_-]+$")
+
+
+def assert_safe_voice_id(voice_id: str) -> str:
+    s = str(voice_id or "").strip()
+    if not SAFE_ID_RE.fullmatch(s):
+        raise SystemExit(f"Invalid voice_id (must match ^[A-Za-z0-9_-]+$): {voice_id!r}")
+    return s
 
 
 def generate_voice(
@@ -33,6 +42,7 @@ def generate_voice(
     style: float = 0.35,
     speed: float = 0.92,
 ) -> dict:
+    voice_id = assert_safe_voice_id(voice_id)
     api_key = os.environ.get("ELEVENLABS_API_KEY")
     if not api_key:
         raise SystemExit(
@@ -117,14 +127,14 @@ def main() -> None:
     lines = [ln for ln in raw.split("\n") if ln.strip() != "==="]
     text = "\n".join(lines).strip()
     # Collapse runs of blank lines left behind by stripped markers.
-    import re
     text = re.sub(r"\n{3,}", "\n\n", text)
     if not text:
         raise SystemExit(f"Text file is empty: {args.text_file}")
 
+    voice_id = assert_safe_voice_id(args.voice_id)
     result = generate_voice(
         text=text,
-        voice_id=args.voice_id,
+        voice_id=voice_id,
         output_path=Path(args.output),
         model=args.model,
         stability=args.stability,

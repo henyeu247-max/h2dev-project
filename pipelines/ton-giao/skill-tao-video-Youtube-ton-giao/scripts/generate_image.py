@@ -8,15 +8,58 @@ Prints metadata JSON to stdout.
 """
 
 import argparse
+import ipaddress
 import json
 import os
+import socket
 import sys
 import time
 import subprocess
 from pathlib import Path
+from urllib.parse import urlparse, urljoin
 
 import requests
 from dotenv import load_dotenv
+
+
+def validate_remote_url(url: str) -> str:
+    parsed = urlparse(str(url or "").strip())
+    if parsed.scheme != "https" or not parsed.hostname:
+        raise ValueError(f"Disallowed remote URL (must be https:// with hostname): {url!r}")
+    host = parsed.hostname.strip().lower().rstrip(".")
+    if host in ("localhost", "localhost.localdomain") or host.endswith((".localhost", ".local", ".internal")):
+        raise ValueError(f"Disallowed local/internal host: {host!r}")
+    try:
+        infos = socket.getaddrinfo(host, parsed.port or 443, type=socket.SOCK_STREAM)
+    except socket.gaierror as e:
+        raise ValueError(f"Failed to resolve host {host!r}: {e}") from e
+    if not infos:
+        raise ValueError(f"No IP addresses resolved for host {host!r}")
+    for info in infos:
+        ip_str = info[4][0].split("%")[0]
+        ip_obj = ipaddress.ip_address(ip_str)
+        if (
+            ip_obj.is_private
+            or ip_obj.is_loopback
+            or ip_obj.is_link_local
+            or ip_obj.is_multicast
+            or ip_obj.is_reserved
+            or ip_obj.is_unspecified
+            or not ip_obj.is_global
+        ):
+            raise ValueError(f"Disallowed non-public IP {ip_str} for host {host!r}")
+    return parsed.geturl()
+
+
+def safe_https_get(url: str, timeout: int = 120, max_redirects: int = 3) -> requests.Response:
+    current = validate_remote_url(url)
+    for _ in range(max_redirects + 1):
+        resp = requests.get(current, timeout=timeout, allow_redirects=False)
+        if resp.status_code in (301, 302, 303, 307, 308) and resp.headers.get("Location"):
+            current = validate_remote_url(urljoin(current, resp.headers["Location"]))
+            continue
+        return resp
+    raise ValueError(f"Too many redirects fetching {url!r}")
 
 SKILL_ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(SKILL_ROOT / ".env")
@@ -156,7 +199,7 @@ def download_image(url: str, output_path: Path) -> int:
     last_err = None
     for attempt in range(1, MAX_ATTEMPTS + 1):
         try:
-            response = requests.get(url, timeout=120)
+            response = safe_https_get(url, timeout=120)
             if response.status_code == 200 and len(response.content) > 0:
                 output_path.parent.mkdir(parents=True, exist_ok=True)
                 partial = output_path.with_suffix(output_path.suffix + ".part")
@@ -168,7 +211,7 @@ def download_image(url: str, output_path: Path) -> int:
                     partial.replace(output_path)
                     return output_path.stat().st_size
             last_err = f"HTTP {response.status_code}, body size {len(response.content)}"
-        except requests.RequestException as e:
+        except (requests.RequestException, ValueError) as e:
             last_err = str(e)
         if attempt < MAX_ATTEMPTS:
             wait = RETRY_WAIT_BASE * attempt

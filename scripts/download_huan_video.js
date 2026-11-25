@@ -4,13 +4,24 @@
 
 const { chromium } = require('playwright');
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
-const { execSync } = require('child_process');
+const { execFileSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
 const SKU = process.argv[2] || 'VIDEO-78d170';
+const SAFE_SKU_RE = /^[A-Za-z0-9_-]+$/;
+
+function assertSafeSku(sku) {
+  const s = String(sku || '').trim();
+  if (!SAFE_SKU_RE.test(s)) {
+    throw new Error(`Invalid SKU format: ${s}`);
+  }
+  return s;
+}
 
 async function downloadHuanSku(sku, browserInstance = null) {
+  sku = assertSafeSku(sku);
   console.log(`\n======================================================`);
   console.log(`>>> HUAN ACADEMY DOWNLOADER: ${sku}`);
   console.log(`======================================================\n`);
@@ -33,9 +44,12 @@ async function downloadHuanSku(sku, browserInstance = null) {
     return finalMp4Path;
   }
 
-  const workDir = path.join(ROOT, '_tmp_huan_work_' + sku);
+  const workDir = path.join(os.tmpdir(), `h2dev_huan_work_${sku}_${process.pid}_${Date.now()}`);
   if (fs.existsSync(workDir)) fs.rmSync(workDir, { recursive: true, force: true });
   fs.mkdirSync(workDir, { recursive: true });
+  const tmpMp4Path = path.join(workDir, `${sku}.mp4`);
+  const cacheDir = path.join(ROOT, '.cache');
+  const stagingMp4Path = path.join(cacheDir, `staging_huan_${sku}_${process.pid}_${Date.now()}.mp4`);
 
   const shouldCloseBrowser = !browserInstance;
   const browser = browserInstance || await chromium.launch({
@@ -58,8 +72,16 @@ async function downloadHuanSku(sku, browserInstance = null) {
   page.on('console', msg => console.log('PAGE:', msg.text()));
   page.on('pageerror', err => console.error('PAGE ERROR:', err.message));
 
+  const workDirResolved = path.resolve(workDir);
   await page.exposeFunction('saveFileChunk', (filename, b64) => {
-    fs.writeFileSync(path.join(workDir, filename), Buffer.from(b64, 'base64'));
+    if (typeof filename !== 'string' || !/^(?:enc\.key|seg_\d{1,6}\.ts)$/.test(filename)) {
+      throw new Error(`Invalid chunk filename: ${String(filename)}`);
+    }
+    const targetPath = path.resolve(workDirResolved, filename);
+    if (!targetPath.startsWith(workDirResolved + path.sep)) {
+      throw new Error(`Chunk path escaped workDir: ${filename}`);
+    }
+    fs.writeFileSync(targetPath, Buffer.from(b64, 'base64'));
   });
 
   try {
@@ -87,7 +109,7 @@ async function downloadHuanSku(sku, browserInstance = null) {
       const resM = await net.request(window.shaka.net.NetworkingEngine.RequestType.MANIFEST, reqM).promise;
       const masterText = new TextDecoder().decode(resM.data);
 
-      const lines = masterText.split('\n');
+      const lines = masterText.split(/\r?\n|\r/);
       // Priority: 1080p > 720p > first m3u8
       let subRel = null;
       for (let i = 0; i < lines.length; i++) {
@@ -123,9 +145,23 @@ async function downloadHuanSku(sku, browserInstance = null) {
       };
 
       // Get AES-128 key
-      const keyMatch = subText.match(/URI="([^"]+)"/);
-      const keyUri = keyMatch ? (keyMatch[1].startsWith('http') ? keyMatch[1] : base + keyMatch[1]) : null;
+      const subLines = subText.split(/\r?\n|\r/);
+      let keyMethod = null;
+      let keyUri = null;
+      for (const rawL of subLines) {
+        const l = rawL.trim();
+        if (l.startsWith('#EXT-X-KEY:')) {
+          const mMethod = l.match(/METHOD=([^,\s]+)/i);
+          const mUri = l.match(/URI="([^"]+)"/i);
+          if (mMethod) keyMethod = mMethod[1].trim().toUpperCase();
+          if (mUri) keyUri = mUri[1].startsWith('http') ? mUri[1] : base + mUri[1];
+          break;
+        }
+      }
       if (keyUri) {
+        if (keyMethod && keyMethod !== 'AES-128') {
+          throw new Error(`Unsupported HLS key method: ${keyMethod}`);
+        }
         const rk = window.shaka.net.NetworkingEngine.makeRequest([keyUri], {});
         const resK = await net.request(window.shaka.net.NetworkingEngine.RequestType.KEY, rk).promise;
         await window.saveFileChunk('enc.key', toB64(resK.data));
@@ -141,14 +177,15 @@ async function downloadHuanSku(sku, browserInstance = null) {
       } catch (e) {}
 
       // Collect segment URLs and durations
-      const subLines = subText.split('\n');
       const segments = [];
       let currentDuration = '10.000';
 
       for (let i = 0; i < subLines.length; i++) {
         const line = subLines[i].trim();
         if (line.startsWith('#EXTINF:')) {
-          currentDuration = line.replace('#EXTINF:', '').replace(',', '').trim();
+          const rawDur = line.slice('#EXTINF:'.length).split(',')[0].trim();
+          const numDur = Number(rawDur);
+          currentDuration = (Number.isFinite(numDur) && numDur > 0) ? numDur.toFixed(3) : '10.000';
         } else if (line.includes('.ts')) {
           const segUrl = line.startsWith('http') ? line : base + line;
           segments.push({ url: segUrl, duration: currentDuration });
@@ -157,6 +194,7 @@ async function downloadHuanSku(sku, browserInstance = null) {
 
       return {
         hasKey: Boolean(keyUri),
+        keyMethod: keyMethod || (keyUri ? 'AES-128' : null),
         segments
       };
     });
@@ -212,19 +250,39 @@ async function downloadHuanSku(sku, browserInstance = null) {
     console.log('Bước 3: Tạo local playlist, giải mã bằng FFmpeg & kiểm chứng phần cứng CUDA GPU NVDEC...');
     let m3u8 = `#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:12\n#EXT-X-MEDIA-SEQUENCE:0\n`;
     if (streamMeta.hasKey) {
-      m3u8 += `#EXT-X-KEY:METHOD=AES-128,URI="enc.key"\n`;
+      const keyMethod = String(streamMeta.keyMethod || 'AES-128').toUpperCase();
+      if (keyMethod !== 'AES-128') {
+        throw new Error(`Disallowed HLS key method: ${keyMethod}`);
+      }
+      m3u8 += `#EXT-X-KEY:METHOD=${keyMethod},URI="enc.key"\n`;
     }
     streamMeta.segments.forEach((s, idx) => {
-      m3u8 += `#EXTINF:${s.duration},\nseg_${idx}.ts\n`;
+      const durNum = Number(s.duration);
+      if (!Number.isFinite(durNum) || durNum <= 0) {
+        throw new Error(`Invalid #EXTINF duration at segment ${idx}: ${s.duration}`);
+      }
+      m3u8 += `#EXTINF:${durNum.toFixed(3)},\nseg_${idx}.ts\n`;
     });
     m3u8 += `#EXT-X-ENDLIST\n`;
 
     fs.writeFileSync(path.join(workDir, 'local.m3u8'), m3u8);
 
     const ffmpegBin = fs.existsSync('D:\\Linly-Dubbing\\bin\\ffmpeg.exe') ? 'D:\\Linly-Dubbing\\bin\\ffmpeg.exe' : 'ffmpeg';
-    execSync(`"${ffmpegBin}" -y -threads 2 -allowed_extensions ALL -i "${path.join(workDir, 'local.m3u8')}" -c copy -movflags +faststart "${finalMp4Path}"`, { stdio: 'ignore' });
+    execFileSync(
+      ffmpegBin,
+      ['-y', '-threads', '2', '-allowed_extensions', 'ts,key', '-i', path.join(workDir, 'local.m3u8'), '-c', 'copy', '-movflags', '+faststart', tmpMp4Path],
+      { stdio: 'ignore', windowsHide: true }
+    );
     // Verify hardware decode on NVIDIA CUDA GPU (h264_cuvid)
-    execSync(`"${ffmpegBin}" -hide_banner -v error -hwaccel cuda -c:v h264_cuvid -ss 1 -t 1 -i "${finalMp4Path}" -f null -`, { stdio: 'pipe' });
+    execFileSync(
+      ffmpegBin,
+      ['-hide_banner', '-v', 'error', '-hwaccel', 'cuda', '-c:v', 'h264_cuvid', '-ss', '1', '-t', '1', '-i', tmpMp4Path, '-f', 'null', '-'],
+      { stdio: 'pipe', windowsHide: true }
+    );
+
+    fs.mkdirSync(cacheDir, { recursive: true });
+    fs.copyFileSync(tmpMp4Path, stagingMp4Path);
+    fs.renameSync(stagingMp4Path, finalMp4Path);
 
     const finalSize = fs.statSync(finalMp4Path).size;
     const finalSizeMb = (finalSize / (1024 * 1024)).toFixed(2);
@@ -261,12 +319,12 @@ async function downloadHuanSku(sku, browserInstance = null) {
       }
     } catch (e) {}
 
-    // Clean temp workDir
-    fs.rmSync(workDir, { recursive: true, force: true });
     return finalMp4Path;
   } finally {
-    await page.close();
-    if (shouldCloseBrowser) await browser.close();
+    await page.close().catch(() => {});
+    if (shouldCloseBrowser) await browser.close().catch(() => {});
+    try { if (fs.existsSync(stagingMp4Path)) fs.unlinkSync(stagingMp4Path); } catch (_) {}
+    try { if (fs.existsSync(workDir)) fs.rmSync(workDir, { recursive: true, force: true }); } catch (_) {}
   }
 }
 

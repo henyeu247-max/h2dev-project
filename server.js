@@ -9,8 +9,11 @@ process.emitWarning = function (w, ...rest) {
 const http = require('http');
 const https = require('https');
 const fs = require('fs');
+const net = require('net');
 const path = require('path');
 const zlib = require('node:zlib');
+const dns = require('node:dns').promises;
+const authGate = require('./scripts/auth_gate');
 const { initLogRotation, checkAndRotateAll } = require('./scripts/logrotate');
 let masterDal = require('./scripts/master_dal');
 const searchFts = (...args) => masterDal.searchFts(...args);
@@ -18,8 +21,11 @@ const mutateDatabase = (...args) => masterDal.mutateDatabase(...args);
 const query = (...args) => masterDal.query(...args);
 const queryOne = (...args) => masterDal.queryOne(...args);
 const { startAutoSyncWatcher, getSyncStatus, triggerSyncNow, ensureGraphFresh } = require('./scripts/kg_auto_sync');
-const { traceNodeInDb, searchGraphInDb, listProjectsFromDb } = require('./scripts/kg_query');
+const kgSync = require('./scripts/kg_auto_sync');
+const kgQuery = require('./scripts/kg_query');
+const { traceNodeInDb, searchGraphInDb, listProjectsFromDb } = kgQuery;
 const hotStore = require('./scripts/hot_memory_store');
+let spiderInFlight = false;
 
 // G4: Security headers chung cho moi response
 const SECURE_HEADERS = {
@@ -30,7 +36,7 @@ const SECURE_HEADERS = {
   'Content-Security-Policy': [
     "default-src 'self'",
     "script-src 'self'",
-    "script-src-attr 'unsafe-inline'",
+    "script-src-attr 'none'",
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' data: blob: https://i.ytimg.com https://yt3.ggpht.com https://*.googleusercontent.com https://*.ggpht.com https://i9.ytimg.com https://api.daigiamangdep.com",
     "media-src 'self' blob: https://*.mona-cloud.com https://video.mona-cloud.com",
@@ -45,6 +51,7 @@ const SECURE_HEADERS = {
 };
 const LIVE_EMBED_CSP = SECURE_HEADERS['Content-Security-Policy']
   .replace("script-src 'self'", "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.mona-cloud.com https://video.mona-cloud.com https://cdnjs.cloudflare.com")
+  .replace("script-src-attr 'none'", "script-src-attr 'unsafe-inline'")
   .replace("base-uri 'self'", "base-uri 'self' https://*.mona-cloud.com https://video.mona-cloud.com");
 function withSecure(extra) {
   return Object.assign({}, SECURE_HEADERS, extra || {});
@@ -54,8 +61,74 @@ function withSecure(extra) {
 initLogRotation(30 * 60 * 1000); // Quét định kỳ mỗi 30 phút
 
 const ROOT = __dirname; // D:/YTB/H2DEV-Project
+const ROOT_REAL = fs.realpathSync(ROOT);
+let NHAC_NEN_REAL = null;
+try { NHAC_NEN_REAL = fs.realpathSync(path.join(ROOT, 'assets', 'nhac-nen')); } catch (_) {}
 const PORT = process.env.PORT || 8899;
-const HOST = process.env.HOST || '0.0.0.0'; // 0.0.0.0 = mở LAN/Tailscale; 127.0.0.1 = chỉ local
+const HOST = process.env.HOST || '127.0.0.1'; // 0.0.0.0 = mở LAN/Tailscale; 127.0.0.1 = chỉ local
+const EXTRA_ALLOWED_ORIGINS = String(process.env.H2DEV_ALLOWED_ORIGINS || '')
+  .split(',')
+  .map(s => s.trim())
+  .filter(Boolean);
+const ALLOWED_ORIGINS = new Set([
+  `http://127.0.0.1:${PORT}`,
+  `http://localhost:${PORT}`,
+  ...(String(PORT) === '80' ? ['http://127.0.0.1', 'http://localhost'] : []),
+  ...EXTRA_ALLOWED_ORIGINS,
+]);
+const SAFE_HOST_RE = /^[a-z0-9.\-:[\]]+$/i;
+function isAllowedOrigin(origin, req) {
+  if (typeof origin !== 'string' || !origin) return false;
+  const secFetchSite = req && req.headers && typeof req.headers['sec-fetch-site'] === 'string'
+    ? req.headers['sec-fetch-site'].trim().toLowerCase()
+    : '';
+  if (secFetchSite === 'cross-site') return false;
+  if (ALLOWED_ORIGINS.has(origin)) return true;
+  const method = req && req.method ? String(req.method).toUpperCase() : '';
+  const host = req && req.headers && typeof req.headers.host === 'string' ? req.headers.host.trim() : '';
+  if (!host || !SAFE_HOST_RE.test(host)) return false;
+  if (method === 'GET' || method === 'HEAD' || method === 'OPTIONS') {
+    return origin === `http://${host}` || origin === `https://${host}`;
+  }
+  if (method === 'POST') {
+    const rawXfProto = req && req.headers && typeof req.headers['x-forwarded-proto'] === 'string'
+      ? req.headers['x-forwarded-proto'].split(',')[0].trim().toLowerCase()
+      : '';
+    if (rawXfProto === 'https' || rawXfProto === 'http') {
+      return origin === `${rawXfProto}://${host}`;
+    }
+    if (rawXfProto) return false;
+    if (req && req.socket && req.socket.encrypted) {
+      return origin === `https://${host}`;
+    }
+    return origin === `http://${host}` || origin === `https://${host}`;
+  }
+  return false;
+}
+function getCorsHeaders(req, existingVary) {
+  const origin = req && req.headers ? req.headers.origin : undefined;
+  const vary = existingVary
+    ? (String(existingVary).toLowerCase().includes('origin') ? existingVary : `${existingVary}, Origin`)
+    : 'Origin';
+  if (isAllowedOrigin(origin, req)) {
+    return { 'Access-Control-Allow-Origin': origin, 'Vary': vary };
+  }
+  return { 'Vary': vary };
+}
+function safeParseUrl(req) {
+  try {
+    const hasHostHeader = Boolean(req && req.headers && Object.prototype.hasOwnProperty.call(req.headers, 'host'));
+    const rawHost = hasHostHeader && typeof req.headers.host === 'string' ? req.headers.host.trim() : '';
+    if (hasHostHeader && (!rawHost || !SAFE_HOST_RE.test(rawHost))) {
+      return null;
+    }
+    const baseHost = rawHost || '127.0.0.1';
+    const rawUrl = req && typeof req.url === 'string' ? req.url : '/';
+    return new URL(rawUrl, `http://${baseHost}`);
+  } catch (_) {
+    return null;
+  }
+}
 const VIDEO_MOUNT_DIR = process.env.H2DEV_VIDEO_MOUNT_DIR
   ? path.resolve(process.env.H2DEV_VIDEO_MOUNT_DIR)
   : (process.platform === 'linux' ? '/mnt/gdrive_h2dev/video' : '');
@@ -188,12 +261,13 @@ function setGzipCache(fullPath, entry) {
   dynamicLruBytes += bufLen;
 }
 
-function refreshCachesOnDataSync() {
+function refreshCachesOnDataSync(opts = {}) {
   DGMD_EMBED_CACHE.clear();
   try {
     hotStore.reloadHotStore();
   } catch (err) {
     console.error('[HotStore] reload error:', err && err.message ? err.message : err);
+    if (opts && opts.throwOnError) throw err;
   }
   for (const [key, cached] of PINNED_CORE_CACHE.entries()) {
     try {
@@ -235,8 +309,8 @@ function matchEtag(clientHeader, serverEtag) {
 function sendFile(req, res, full, mime, rangeHeader, isHead = false){
   fs.stat(full, (err, st)=>{
     if(err || !st.isFile()){
-      res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
-      res.end('404 Not Found');
+      res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req)}));
+      res.end(isHead ? undefined : '404 Not Found');
       return;
     }
     const ext = path.extname(full).toLowerCase();
@@ -246,37 +320,40 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
       const m = /^bytes=(\d*)-(\d*)$/.exec(rangeHeader);
       if(m){
         const rs=m[1], re=m[2];
+        if(rs==='' && re===''){
+          res.writeHead(416, withSecure({'Content-Range':'bytes */'+total, 'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req)}));
+          res.end(isHead ? undefined : 'Range Not Satisfiable');
+          return;
+        }
         if(rs==='' && re!==''){ start=Math.max(0,total-parseInt(re,10)); end=total-1; }
         else if(rs!==''){ start=parseInt(rs,10); end=(re!==''?parseInt(re,10):total-1); }
         if(start>end || start>=total || end<0){
-          res.writeHead(416, withSecure({'Content-Range':'bytes */'+total, 'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
-          res.end('Range Not Satisfiable');
+          res.writeHead(416, withSecure({'Content-Range':'bytes */'+total, 'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req)}));
+          res.end(isHead ? undefined : 'Range Not Satisfiable');
           return;
         }
         end=Math.min(end,total-1);
         status=206;
       } else {
-        res.writeHead(416, withSecure({'Content-Range':'bytes */'+total, 'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
-        res.end('Range Not Satisfiable');
+        res.writeHead(416, withSecure({'Content-Range':'bytes */'+total, 'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req)}));
+        res.end(isHead ? undefined : 'Range Not Satisfiable');
         return;
       }
     }
     const headers = Object.assign(withSecure({
       'Content-Type': mime,
-      'Access-Control-Allow-Origin': '*',
+      ...getCorsHeaders(req, 'Accept-Encoding'),
       'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
       'Content-Disposition': 'inline',
-      'Vary': 'Accept-Encoding',
     }), SECURE_HEADERS);
 
     const etag = `W/"${st.mtimeMs.toString(36)}-${st.size.toString(36)}"`;
     headers['ETag'] = etag;
 
     /* UI-06 production fix (2026-09-28): cho phep SW script tai /assets/app/sw.js
-       dang ky scope '/' — khong co header nay browser se giam scope xuong
-       /assets/app/ va trang goc lai khong duoc control (offline chet). */
+       dang ky scope '/' — chi cap header cho SW chinh thuc, khong cap cho /sw.js root legacy. */
     const normFull = full.replace(/\\/g, '/');
-    if (normFull.endsWith('/assets/app/sw.js') || normFull.endsWith('/sw.js')) {
+    if (normFull.endsWith('/assets/app/sw.js')) {
       headers['Service-Worker-Allowed'] = '/';
     }
 
@@ -311,6 +388,17 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
       headers['Cache-Control'] = 'public, max-age=86400, stale-while-revalidate=604800';
     } else if (mime === 'application/json') {
       headers['Cache-Control'] = 'no-cache, must-revalidate';
+    }
+    const isPublicAuthAsset = normFull.endsWith('/assets/auth-login.js') || normFull.endsWith('/favicon.ico');
+    if (authGate.isEnabled() && !isPublicAuthAsset) {
+      headers['Cache-Control'] = 'private, no-cache';
+      headers['CDN-Cache-Control'] = 'no-store';
+      const curVary = String(headers['Vary'] || '').trim();
+      if (!curVary) {
+        headers['Vary'] = 'Cookie';
+      } else if (!/\bcookie\b/i.test(curVary)) {
+        headers['Vary'] = `${curVary}, Cookie`;
+      }
     }
     const isVideoExt = ext === '.mp4' || ext === '.webm';
     if (isVideoExt) {
@@ -379,7 +467,10 @@ function sendFile(req, res, full, mime, rangeHeader, isHead = false){
           if (isHead) { res.end(); return; }
           res.end(gzBuf);
         }).catch(() => {
-          if (!res.headersSent) { res.writeHead(500); res.end('Gzip/Read Error'); }
+          if (!res.headersSent) {
+            res.writeHead(500, withSecure({ 'Content-Type': 'text/plain; charset=utf-8', ...getCorsHeaders(req) }));
+            res.end(isHead ? undefined : 'Gzip/Read Error');
+          }
         });
         return;
       }
@@ -418,10 +509,9 @@ function sendJson(req, res, status, value, isHead = false, extraHeaders = {}){
 
   const headers = {
     'Content-Type':'application/json; charset=utf-8',
-    'Access-Control-Allow-Origin':'*',
     'Cache-Control':'no-store',
-    'Vary': 'Accept-Encoding',
     ...SECURE_HEADERS,
+    ...getCorsHeaders(req, 'Accept-Encoding'),
     ...extraHeaders,
   };
 
@@ -443,45 +533,129 @@ function sendJson(req, res, status, value, isHead = false, extraHeaders = {}){
   }
 }
 
-// DGMD Mona Cloud embed proxy: cache RAM 10 phút, tự inject no-referrer để bypass hotlink CDN
+// DGMD Mona Cloud embed proxy: cache RAM 10 phút (tối đa 100 entries), tự inject no-referrer để bypass hotlink CDN
 const DGMD_EMBED_CACHE = new Map();
+const DGMD_EMBED_TTL_MS = 10 * 60 * 1000;
+const DGMD_EMBED_MAX_ENTRIES = 100;
+function pruneDgmdEmbedCache(now = Date.now()) {
+  for (const [k, v] of DGMD_EMBED_CACHE.entries()) {
+    if (!v || (now - v.ts >= DGMD_EMBED_TTL_MS)) {
+      DGMD_EMBED_CACHE.delete(k);
+    }
+  }
+  while (DGMD_EMBED_CACHE.size >= DGMD_EMBED_MAX_ENTRIES) {
+    const oldestKey = DGMD_EMBED_CACHE.keys().next().value;
+    if (oldestKey === undefined) break;
+    DGMD_EMBED_CACHE.delete(oldestKey);
+  }
+}
+function getDgmdEmbedCache(cacheKey, now = Date.now()) {
+  const entry = DGMD_EMBED_CACHE.get(cacheKey);
+  if (!entry) return null;
+  if (now - entry.ts >= DGMD_EMBED_TTL_MS) {
+    DGMD_EMBED_CACHE.delete(cacheKey);
+    return null;
+  }
+  DGMD_EMBED_CACHE.delete(cacheKey);
+  DGMD_EMBED_CACHE.set(cacheKey, entry);
+  return entry;
+}
+function setDgmdEmbedCache(cacheKey, html, now = Date.now()) {
+  if (DGMD_EMBED_CACHE.has(cacheKey)) {
+    DGMD_EMBED_CACHE.delete(cacheKey);
+  }
+  pruneDgmdEmbedCache(now);
+  DGMD_EMBED_CACHE.set(cacheKey, { html, ts: now });
+}
+const ALLOWED_UPSTREAM_ROOT_DOMAINS = [
+  'mona-cloud.com',
+  'mona.academy',
+  'huan.academy',
+  'daigiamangdep.com',
+  'h2dev.vn'
+];
+function isAllowedUpstreamHost(hostname) {
+  const host = String(hostname || '').trim().toLowerCase().replace(/\.+$/, '');
+  if (!host || net.isIP(host) !== 0) return false;
+  if (host === 'localhost' || host.endsWith('.local') || host.endsWith('.internal')) return false;
+  return ALLOWED_UPSTREAM_ROOT_DOMAINS.some((root) => host === root || host.endsWith('.' + root));
+}
+function isPrivateOrLoopbackIp(ip) {
+  const raw = String(ip || '').trim().toLowerCase();
+  if (!raw) return true;
+  if (raw.startsWith('::ffff:')) return isPrivateOrLoopbackIp(raw.slice(7));
+  if (raw === '::1' || raw === '::' || raw.startsWith('fe80:') || raw.startsWith('fc') || raw.startsWith('fd')) return true;
+  const parts = raw.split('.').map(Number);
+  if (parts.length !== 4 || parts.some((n) => !Number.isInteger(n) || n < 0 || n > 255)) return net.isIP(raw) !== 0;
+  if (parts[0] === 0 || parts[0] === 10 || parts[0] === 127) return true;
+  if (parts[0] === 169 && parts[1] === 254) return true;
+  if (parts[0] === 172 && parts[1] >= 16 && parts[1] <= 31) return true;
+  if (parts[0] === 192 && parts[1] === 168) return true;
+  if (parts[0] === 100 && parts[1] >= 64 && parts[1] <= 127) return true;
+  return false;
+}
+async function assertAllowedUpstreamUrl(rawUrl) {
+  let u;
+  try {
+    u = new URL(String(rawUrl || ''));
+  } catch (_) {
+    throw new Error('URL nguồn video không hợp lệ');
+  }
+  if (u.protocol !== 'https:') {
+    throw new Error('Chỉ cho phép nạp nguồn video qua HTTPS');
+  }
+  if (u.username || u.password) {
+    throw new Error('URL nguồn video không được chứa thông tin xác thực');
+  }
+  if (!isAllowedUpstreamHost(u.hostname)) {
+    throw new Error(`Tên miền nguồn không nằm trong danh sách cho phép: ${u.hostname}`);
+  }
+  const addrs = await dns.lookup(u.hostname, { all: true }).catch(() => []);
+  for (const rec of addrs) {
+    if (isPrivateOrLoopbackIp(rec.address)) {
+      throw new Error(`Từ chối kết nối tới IP nội bộ/loopback của ${u.hostname}`);
+    }
+  }
+  return u.toString();
+}
+async function fetchAllowedUpstreamHtml(startUrl, { referer, maxRedirects = 5 } = {}) {
+  let currentUrl = await assertAllowedUpstreamUrl(startUrl);
+  for (let hop = 0; hop < maxRedirects; hop += 1) {
+    const res = await fetch(currentUrl, {
+      redirect: 'manual',
+      signal: AbortSignal.timeout(5000),
+      headers: {
+        'Referer': referer || 'https://daigiamangdep.com/learn/study/',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'vi,en-US;q=0.9,en;q=0.8'
+      }
+    });
+    if (res.status >= 300 && res.status < 400 && res.headers.get('location')) {
+      const nextUrl = new URL(res.headers.get('location'), currentUrl).toString();
+      currentUrl = await assertAllowedUpstreamUrl(nextUrl);
+      continue;
+    }
+    if (res.status !== 200) {
+      throw new Error(`Mona Cloud phản hồi mã lỗi ${res.status}`);
+    }
+    const html = await res.text();
+    if (!/<(?:!doctype\s+html|html|head|body)\b/i.test(html)) {
+      throw new Error('Mona Cloud returned invalid HTML');
+    }
+    return html;
+  }
+  throw new Error('Quá nhiều lần redirect khi nạp video Mona Cloud');
+}
 function fetchMonaEmbedHtml(videoLink, originUrl, maxRedirects = 5) {
   let targetUrl = videoLink;
   if (!targetUrl.includes('link=')) {
     targetUrl += (targetUrl.includes('?') ? '&' : '?') + 'link=https://video.mona-cloud.com/statics/mb9802.js?ver=2501141006';
   }
-
-  function get(url, redirectsLeft) {
-    if (redirectsLeft <= 0) {
-      return Promise.reject(new Error('Quá nhiều lần redirect khi nạp video Mona Cloud'));
-    }
-    return fetch(url, {
-      redirect: 'manual',
-      signal: AbortSignal.timeout(5000),
-      headers: {
-        'Referer': originUrl || 'https://daigiamangdep.com/learn/study/',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-        'Accept-Language': 'vi,en-US;q=0.9,en;q=0.8'
-      }
-    }).then((res) => {
-      if (res.status >= 300 && res.status < 400 && res.headers.get('location')) {
-        const nextUrl = new URL(res.headers.get('location'), url).toString();
-        return get(nextUrl, redirectsLeft - 1);
-      }
-      if (res.status !== 200) {
-        throw new Error(`Mona Cloud phản hồi mã lỗi ${res.status}`);
-      }
-      return res.text().then((html) => {
-        if (!/<(?:!doctype\s+html|html|head|body)\b/i.test(html)) {
-          throw new Error('Mona Cloud returned invalid HTML');
-        }
-        return html;
-      });
-    });
-  }
-
-  return get(targetUrl, maxRedirects).then((html) => {
+  return fetchAllowedUpstreamHtml(targetUrl, {
+    referer: originUrl || 'https://daigiamangdep.com/learn/study/',
+    maxRedirects
+  }).then((html) => {
     // Inject <meta name="referrer" content="no-referrer"> để child requests (m3u8, .ts) không rò rỉ 127.0.0.1 ra Mona Cloud CDN
     // Kèm style ẩn banner cảnh báo nước ngoài (null) không cần thiết
     const injection = '\n<meta name="referrer" content="no-referrer">\n<style>div[style*="z-index: 1000"][style*="rgba(0, 0, 0, 0.3)"] { display: none !important; }</style>\n';
@@ -493,26 +667,51 @@ function fetchMonaEmbedHtml(videoLink, originUrl, maxRedirects = 5) {
 }
 
 const server = http.createServer(async (req,res)=>{
+  const isHead = (req.method === 'HEAD');
+  const parsedReqUrl = safeParseUrl(req);
+  if (!parsedReqUrl) {
+    res.writeHead(400, withSecure({
+      'Content-Type': 'text/plain; charset=utf-8',
+      'Cache-Control': 'no-store',
+      ...getCorsHeaders(req),
+    }));
+    res.end(isHead ? undefined : '400 Bad Request');
+    return;
+  }
+  const reqOrigin = req.headers.origin;
+  if (reqOrigin !== undefined && !isAllowedOrigin(reqOrigin, req)) {
+    res.writeHead(403, withSecure({
+      'Content-Type': 'text/plain; charset=utf-8',
+      'Cache-Control': 'no-store',
+      'Vary': 'Origin',
+    }));
+    res.end(isHead ? undefined : 'Forbidden');
+    return;
+  }
   if(req.method === 'OPTIONS'){
     res.writeHead(204, withSecure({
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type, Range',
+      ...getCorsHeaders(req),
+      'Access-Control-Allow-Methods': 'GET, HEAD, POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Range, X-Requested-With, X-H2DEV-Action',
     }));
     res.end();
     return;
   }
-  const isHead = (req.method === 'HEAD');
   const apiPath = req.url.split('?')[0];
   if (apiPath === '/health' && (req.method === 'GET' || isHead)) {
-    res.writeHead(200, withSecure({ 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' }));
+    res.writeHead(200, withSecure({ 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', ...getCorsHeaders(req) }));
     res.end(isHead ? undefined : JSON.stringify({ ok: true }));
     return;
   }
+  if (authGate.handle(req, res, { apiPath, isHead, withSecure, sendJson, getCorsHeaders })) {
+    return;
+  }
   if (apiPath.startsWith('/api/kg/')) {
-    const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
-    const kgSync = require('./scripts/kg_auto_sync');
-    const kgQuery = require('./scripts/kg_query');
+    const parsedUrl = safeParseUrl(req);
+    if (!parsedUrl) {
+      sendJson(req, res, 400, { error: 'Bad Request' }, isHead);
+      return;
+    }
     try {
       if (apiPath === '/api/kg/status' && (req.method === 'GET' || isHead)) {
         if (parsedUrl.searchParams.get('check') === '1') {
@@ -525,27 +724,72 @@ const server = http.createServer(async (req,res)=>{
         sendJson(req, res, 200, kgQuery.getGraphStatsFromDb(true), isHead);
         return;
       }
-      if (apiPath === '/api/kg/reload' && (req.method === 'POST' || req.method === 'GET')) {
+      if (apiPath === '/api/kg/reload') {
+        if (req.method !== 'POST') {
+          sendJson(req, res, 405, { error: 'Method Not Allowed' }, isHead, { 'Allow': 'POST, OPTIONS' });
+          return;
+        }
+        const secFetchSite = String(req.headers['sec-fetch-site'] || '').trim().toLowerCase();
+        if (secFetchSite === 'cross-site') {
+          sendJson(req, res, 403, { reloaded: false, error: 'Cross-site request rejected' }, false);
+          return;
+        }
+        const xrw = String(req.headers['x-requested-with'] || '').trim();
+        const ct = String(req.headers['content-type'] || '').trim().toLowerCase();
+        if (!xrw && !ct.startsWith('application/json')) {
+          sendJson(req, res, 403, { reloaded: false, error: 'Missing X-Requested-With or application/json header' }, false);
+          return;
+        }
+        let reloadErr = null;
         try {
-          try { kgQuery.closeKgDb(); } catch (_) {}
-          try { masterDal.reloadReadDb(); } catch (_) {}
-          delete require.cache[require.resolve('./scripts/kg_auto_sync')];
-          delete require.cache[require.resolve('./scripts/build_knowledge_vault_graph')];
-          delete require.cache[require.resolve('./scripts/kg_query')];
-          delete require.cache[require.resolve('./scripts/master_dal')];
-          masterDal = require('./scripts/master_dal');
-          refreshCachesOnDataSync();
-        } catch (_) {}
+          kgQuery.closeKgDb();
+          masterDal.reloadReadDb();
+          if (typeof kgSync.reloadState === 'function') kgSync.reloadState();
+          refreshCachesOnDataSync({ throwOnError: true });
+        } catch (err) {
+          reloadErr = err;
+        }
+        if (reloadErr) {
+          sendJson(req, res, 500, {
+            reloaded: false,
+            error: reloadErr && reloadErr.message ? reloadErr.message : String(reloadErr),
+          }, false);
+          return;
+        }
         const wantRestart = parsedUrl.searchParams.get('restart') === '1';
         const remoteIp = req.socket && req.socket.remoteAddress || '';
-        const isLoopback = remoteIp === '127.0.0.1' || remoteIp === '::1' || remoteIp === '::ffff:127.0.0.1';
-        sendJson(req, res, 200, { reloaded: true, restarting: Boolean(wantRestart && isLoopback) }, false);
-        if (wantRestart && isLoopback) {
+        const hasProxyHeader = Boolean(
+          req.headers && (
+            req.headers['cf-connecting-ip'] ||
+            req.headers['x-real-ip'] ||
+            req.headers['x-forwarded-for'] ||
+            req.headers['forwarded']
+          )
+        );
+        const isLoopback = !hasProxyHeader && (remoteIp === '127.0.0.1' || remoteIp === '::1' || remoteIp === '::ffff:127.0.0.1');
+        const allowRestart = Boolean(wantRestart && isLoopback && !authGate.isEnabled());
+        sendJson(req, res, 200, { reloaded: true, restarting: allowRestart }, false);
+        if (allowRestart) {
           setTimeout(() => process.exit(0), 150);
         }
         return;
       }
-      if (apiPath === '/api/kg/sync' && (req.method === 'POST' || req.method === 'GET')) {
+      if (apiPath === '/api/kg/sync') {
+        if (req.method !== 'POST') {
+          sendJson(req, res, 405, { error: 'Method Not Allowed' }, isHead, { 'Allow': 'POST, OPTIONS' });
+          return;
+        }
+        const secFetchSite = String(req.headers['sec-fetch-site'] || '').trim().toLowerCase();
+        if (secFetchSite === 'cross-site') {
+          sendJson(req, res, 403, { synced: false, error: 'Cross-site request rejected' }, false);
+          return;
+        }
+        const xrw = String(req.headers['x-requested-with'] || '').trim();
+        const ct = String(req.headers['content-type'] || '').trim().toLowerCase();
+        if (!xrw && !ct.startsWith('application/json')) {
+          sendJson(req, res, 403, { synced: false, error: 'Missing X-Requested-With or application/json header' }, false);
+          return;
+        }
         const reason = (parsedUrl.searchParams.get('reason') || 'web_ui_manual_sync').trim();
         const full = parsedUrl.searchParams.get('full') === '1';
         try { kgQuery.closeKgDb(); } catch (_) {}
@@ -600,7 +844,8 @@ const server = http.createServer(async (req,res)=>{
         return;
       }
     } catch (kgErr) {
-      sendJson(req, res, 500, { error: kgErr.message }, isHead);
+      console.error('[kg] Internal error:', kgErr.message);
+      sendJson(req, res, 500, { error: 'Internal Server Error' }, isHead);
       return;
     }
   }
@@ -620,7 +865,8 @@ const server = http.createServer(async (req,res)=>{
       try {
         sendJson(req, res, 200, hotStore.getOverviewSummary(), isHead);
       } catch (err) {
-        sendJson(req, res, 500, { error: err.message }, isHead);
+        console.error('[overview-summary] Internal error:', err.message);
+        sendJson(req, res, 500, { error: 'Internal Server Error' }, isHead);
       }
       return;
     }
@@ -629,7 +875,11 @@ const server = http.createServer(async (req,res)=>{
   }
   if (apiPath === '/api/player/bootstrap') {
     if (req.method === 'GET' || isHead) {
-      const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
+      const parsedUrl = safeParseUrl(req);
+      if (!parsedUrl) {
+        sendJson(req, res, 400, { error: 'Bad Request' }, isHead);
+        return;
+      }
       const sku = (parsedUrl.searchParams.get('sku') || '').trim();
       if (!sku) {
         sendJson(req, res, 400, { error: 'Missing sku parameter' }, isHead);
@@ -648,47 +898,57 @@ const server = http.createServer(async (req,res)=>{
   }
   if (apiPath === '/api/dgmd-embed') {
     if (req.method === 'GET' || isHead) {
-      const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
+      const parsedUrl = safeParseUrl(req);
+      if (!parsedUrl) {
+        res.writeHead(400, withSecure({ 'Content-Type': 'text/plain; charset=utf-8', ...getCorsHeaders(req) }));
+        res.end(isHead ? undefined : '400 Bad Request');
+        return;
+      }
       const sku = (parsedUrl.searchParams.get('sku') || '').trim();
       if (!sku) {
-        res.writeHead(400, { 'Content-Type': 'text/plain; charset=utf-8' });
+        res.writeHead(400, withSecure({ 'Content-Type': 'text/plain; charset=utf-8', ...getCorsHeaders(req) }));
         res.end(isHead ? undefined : 'Missing sku parameter');
         return;
       }
       try {
         const item = hotStore.getDgmdItemBySku(sku);
         if (!item || !item.file) {
-          res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+          res.writeHead(404, withSecure({ 'Content-Type': 'text/plain; charset=utf-8', ...getCorsHeaders(req) }));
           res.end(isHead ? undefined : 'Video not found in DGMD catalog');
           return;
         }
 
         const now = Date.now();
         const cacheKey = 'embed:' + item.sku.toUpperCase();
-        const cached = DGMD_EMBED_CACHE.get(cacheKey);
-        if (cached && (now - cached.ts < 10 * 60 * 1000)) {
+        const cached = getDgmdEmbedCache(cacheKey, now);
+        if (cached) {
           res.writeHead(200, withSecure({
             'Content-Type': 'text/html; charset=utf-8',
             'Cache-Control': 'no-cache',
-            'X-Frame-Options': 'SAMEORIGIN'
+            'X-Frame-Options': 'SAMEORIGIN',
+            'Content-Security-Policy': LIVE_EMBED_CSP,
+            ...getCorsHeaders(req)
           }));
           res.end(isHead ? undefined : cached.html);
           return;
         }
 
         const html = await fetchMonaEmbedHtml(item.file, item.origin);
-        DGMD_EMBED_CACHE.set(cacheKey, { html, ts: now });
+        setDgmdEmbedCache(cacheKey, html, now);
 
         res.writeHead(200, withSecure({
           'Content-Type': 'text/html; charset=utf-8',
           'Cache-Control': 'no-cache',
-          'X-Frame-Options': 'SAMEORIGIN'
+          'X-Frame-Options': 'SAMEORIGIN',
+          'Content-Security-Policy': LIVE_EMBED_CSP,
+          ...getCorsHeaders(req)
         }));
         res.end(isHead ? undefined : html);
         return;
       } catch (err) {
-        res.writeHead(502, withSecure({ 'Content-Type': 'text/plain; charset=utf-8' }));
-        res.end(isHead ? undefined : `Proxy error: ${err.message}`);
+        console.error('[dgmd-embed] Proxy error:', err.message);
+        res.writeHead(502, withSecure({ 'Content-Type': 'text/plain; charset=utf-8', ...getCorsHeaders(req) }));
+        res.end(isHead ? undefined : 'Upstream proxy error');
         return;
       }
     }
@@ -697,14 +957,17 @@ const server = http.createServer(async (req,res)=>{
   }
   if (apiPath === '/api/intelligence/breakouts') {
     if (req.method === 'GET' || isHead) {
-      const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
+      const parsedUrl = safeParseUrl(req);
+      if (!parsedUrl) {
+        sendJson(req, res, 400, { error: 'Bad Request' }, isHead);
+        return;
+      }
       const view = (parsedUrl.searchParams.get('view') || 'breakouts').trim();
       const niche = (parsedUrl.searchParams.get('niche') || '').trim();
       const maxSubs = parseInt(parsedUrl.searchParams.get('maxSubs') || '0', 10) || 0;
       const search = (parsedUrl.searchParams.get('q') || parsedUrl.searchParams.get('search') || '').trim();
       const limit = parseInt(parsedUrl.searchParams.get('limit') || '30', 10) || 30;
       try {
-        const kgQuery = require('./scripts/kg_query');
         if (typeof kgQuery.queryIntelligenceBreakouts === 'function') {
           sendJson(req, res, 200, kgQuery.queryIntelligenceBreakouts({ view, niche, maxSubs, search, limit }), isHead);
           return;
@@ -726,7 +989,8 @@ const server = http.createServer(async (req,res)=>{
         sendJson(req, res, 200, { total: rows.length, totalBreakouts, channels: rows }, isHead);
         return;
       } catch (err) {
-        sendJson(req, res, 500, { error: err.message }, isHead);
+        console.error('[intelligence/breakouts] Internal error:', err.message);
+        sendJson(req, res, 500, { error: 'Internal Server Error' }, isHead);
         return;
       } finally {
         if (db) db.close();
@@ -738,41 +1002,195 @@ const server = http.createServer(async (req,res)=>{
   // Route nay goi mang va ghi DB: chi nhan POST kem header X-H2DEV-Action: spider.
   // Trang web khac khong gui duoc header nay (OPTIONS khong cho phep), nen khong kich hoat duoc bang GET hay form.
   if (apiPath === '/api/intelligence/spider') {
+    const parsedUrl = safeParseUrl(req);
+    if (!parsedUrl) {
+      sendJson(req, res, 400, { error: 'Bad Request' }, isHead);
+      return;
+    }
+    if (parsedUrl.searchParams.has('seed')) {
+      const rawSeed = parsedUrl.searchParams.get('seed') || '';
+      if (!/^[A-Za-z0-9_-]{11}$/.test(rawSeed)) {
+        sendJson(req, res, 400, { error: 'Invalid seed parameter' }, isHead);
+        return;
+      }
+    }
     if (req.method === 'POST' && req.headers['x-h2dev-action'] === 'spider') {
-      const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
+      if (spiderInFlight) {
+        sendJson(req, res, 429, { error: 'Spider traversal already in progress' }, false);
+        return;
+      }
       const seed = parsedUrl.searchParams.get('seed') || 'Q1tXposwAAo';
+      if (!/^[A-Za-z0-9_-]{11}$/.test(seed)) {
+        sendJson(req, res, 400, { error: 'Invalid seed parameter' }, false);
+        return;
+      }
+      spiderInFlight = true;
       try {
         const spider = require('./scripts/spider_graph_engine');
         const report = await spider.executeSpiderGraphTraversal(seed, { maxHop2Videos: 2 });
         sendJson(req, res, 200, report, false);
         return;
       } catch (err) {
-        sendJson(req, res, 500, { error: err.message }, false);
+        console.error('[intelligence/spider] Internal error:', err.message);
+        sendJson(req, res, 500, { error: 'Internal Server Error' }, false);
         return;
+      } finally {
+        spiderInFlight = false;
       }
     }
     if (req.method === 'POST') {
       sendJson(req, res, 403, { error: 'Thieu header X-H2DEV-Action: spider' }, false);
       return;
     }
-    sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'POST, OPTIONS' });
+    sendJson(req, res, 405, { error: 'Method Not Allowed' }, isHead, { 'Allow': 'POST, OPTIONS' });
     return;
   }
   if (apiPath === '/api/search') {
     if (req.method === 'GET' || isHead) {
-      const parsedUrl = new URL(req.url, 'http://' + (req.headers.host || '127.0.0.1'));
+      const parsedUrl = safeParseUrl(req);
+      if (!parsedUrl) {
+        sendJson(req, res, 400, { error: 'Bad Request' }, isHead);
+        return;
+      }
       const q = (parsedUrl.searchParams.get('q') || '').trim();
       const typeFilter = (parsedUrl.searchParams.get('type') || '').trim();
+      const scope = (parsedUrl.searchParams.get('scope') || '').trim().toLowerCase();
       const rawLim = parseInt(parsedUrl.searchParams.get('limit') || '20', 10);
       const limit = Number.isFinite(rawLim) ? Math.min(50, Math.max(1, rawLim)) : 20;
+      const parseJsonSafe = (raw, fallback) => {
+        if (!raw || typeof raw !== 'string') return fallback;
+        try { return JSON.parse(raw); } catch (_) { return fallback; }
+      };
+      const normHandle = (v) => String(v || '').trim().replace(/^@/, '').toLowerCase();
+      const matchKenhHandle = (candidates, kenhHandles) => {
+        if (!kenhHandles || !kenhHandles.size) return '';
+        for (const candRaw of candidates) {
+          const cand = String(candRaw || '').trim();
+          if (!cand) continue;
+          const lower = cand.toLowerCase();
+          const withAt = lower.startsWith('@') ? lower : ('@' + lower);
+          const noAt = normHandle(cand);
+          if (kenhHandles.has(lower)) return cand;
+          if (kenhHandles.has(withAt)) return cand.startsWith('@') ? cand : ('@' + cand);
+          if (noAt && kenhHandles.has(noAt)) return cand;
+        }
+        return '';
+      };
       try {
-        const rows = searchFts(q, limit, typeFilter);
+        const VALID_FTS_TYPES = new Set([
+          'CHANNEL', 'CHECKLIST', 'LESSON', 'META', 'NICHE',
+          'POLICY', 'REUP', 'SOP', 'SUBNICHE', 'TIMESTAMP', 'TRANSCRIPT'
+        ]);
+        const typeList = typeFilter
+          ? [...new Set(
+              typeFilter
+                .split(',')
+                .map(t => t.replace(/[^A-Za-z_]/g, '').toUpperCase())
+                .filter(t => VALID_FTS_TYPES.has(t))
+            )]
+          : [];
+        const effectiveTypes = (!typeFilter && scope === 'kenh-mau')
+          ? ['CHANNEL', 'TRANSCRIPT']
+          : typeList;
+        const hasChannelType = typeList.includes('CHANNEL');
+        const isChannelScoped = scope === 'kenh-mau' || hasChannelType;
+        const shouldAliasFallback = Boolean(q && (hasChannelType || (!typeFilter && (isChannelScoped || q.startsWith('@')))));
+        const collectChannelAliases = (existingRows) => {
+          if (!shouldAliasFallback) return [];
+          const qAlias = q.replace(/^@/, '').trim();
+          if (qAlias.length < 3 || /\s/.test(qAlias)) return [];
+          const likeEsc = '%' + qAlias.replace(/[\\%_]/g, '\\$&') + '%';
+          const aliasHits = query(
+            `SELECT channel_id, title, handle, handle_history_json
+               FROM competitor_channels
+              WHERE handle LIKE ? ESCAPE '\\' OR handle_history_json LIKE ? ESCAPE '\\'
+              LIMIT 5`,
+            [likeEsc, likeEsc]
+          );
+          const seenCh = new Set(existingRows.filter(r => String(r.entity_type).toUpperCase() === 'CHANNEL').map(r => String(r.entity_id)));
+          const extraCh = [];
+          const qLow = qAlias.toLowerCase();
+          for (const c of aliasHits) {
+            const cid = String(c.channel_id || '');
+            if (!cid || seenCh.has(cid)) continue;
+            const hist = parseJsonSafe(c.handle_history_json, []);
+            const histHandles = Array.isArray(hist) ? hist.map(x => typeof x === 'string' ? x : (x && x.handle) || '') : [];
+            const allH = [c.handle || '', ...histHandles].filter(Boolean);
+            const matched = isChannelScoped
+              ? allH.some(h => normHandle(h) === qLow || normHandle(h).includes(qLow))
+              : allH.some(h => normHandle(h) === qLow);
+            if (matched) {
+              seenCh.add(cid);
+              extraCh.push({
+                entity_id: cid,
+                entity_type: 'CHANNEL',
+                title: c.title || c.handle || cid,
+                snippet: allH.join(' · ')
+              });
+            }
+          }
+          return extraCh;
+        };
+
+        let rows;
+        if (effectiveTypes.length > 1) {
+          if (effectiveTypes.length === 2 && effectiveTypes.includes('CHANNEL') && effectiveTypes.includes('TRANSCRIPT')) {
+            let chRows = searchFts(q, limit, 'CHANNEL');
+            const extraCh = collectChannelAliases(chRows);
+            if (extraCh.length) {
+              chRows = extraCh.concat(chRows).slice(0, limit);
+            }
+            const trLimit = Math.max(2, Math.ceil(limit / 2));
+            const trRows = searchFts(q, trLimit, 'TRANSCRIPT');
+            if (chRows.length && trRows.length) {
+              const reserveTr = Math.min(trRows.length, Math.max(2, Math.floor(limit / 3)));
+              const chTake = Math.min(chRows.length, Math.max(0, limit - reserveTr));
+              rows = chRows.slice(0, chTake).concat(trRows.slice(0, limit - chTake));
+            } else {
+              rows = (chRows.length ? chRows : trRows).slice(0, limit);
+            }
+          } else {
+            const perTypeLimit = Math.max(2, Math.ceil(limit / effectiveTypes.length));
+            const buckets = effectiveTypes.map(t => searchFts(q, perTypeLimit, t));
+            const merged = [];
+            const seen = new Set();
+            let idx = 0;
+            while (merged.length < limit) {
+              let added = false;
+              for (const b of buckets) {
+                if (idx < b.length) {
+                  const item = b[idx];
+                  const key = `${item.entity_type}:${item.entity_id}`;
+                  if (!seen.has(key)) {
+                    seen.add(key);
+                    merged.push(item);
+                    if (merged.length >= limit) break;
+                  }
+                  added = true;
+                }
+              }
+              if (!added) break;
+              idx++;
+            }
+            rows = merged;
+            const extraCh = collectChannelAliases(rows);
+            if (extraCh.length) {
+              rows = extraCh.concat(rows).slice(0, limit);
+            }
+          }
+        } else {
+          rows = searchFts(q, limit, effectiveTypes.length === 1 ? effectiveTypes[0] : typeFilter);
+          const extraCh = collectChannelAliases(rows);
+          if (extraCh.length) {
+            rows = extraCh.concat(rows).slice(0, limit);
+          }
+        }
         /* FIX (uifix87, siết lại ở uifix88) LỖI 2/F1 — bo sung DU LIEU DIEU HUONG cho tung entity_type
            cua search_fts. Truoc day frontend tu doan URL tu entity_id nen SOP/TRANSCRIPT roi vao href "#"
            (76% ket qua) va CHANNEL tro "/#kenh" (router khong doc hash). O day chi BO SUNG truong du lieu
            that (khong doi shape cu, khong doi searchFts cua master_dal):
              CHANNEL    + raw_id (co ho so Raw kenh) / kenh_handle (co trong data-tabs/kenh-mau.json)
-             TRANSCRIPT + parent_channel_title + parent_raw_id (video thuoc kenh nao — de mo dung kenh)
+             TRANSCRIPT + parent_channel_title + parent_raw_id + parent_kenh_handle (video thuoc kenh nao)
              SOP        + doc_id (so nguyen khop documents.doc_id) + doc_index (vi tri 0-based trong
                           data-tabs/tai-lieu-full.json, vi tab Tai lieu render tu JSON chu khong tu DB)
            Do duoc tren TOAN BO search_fts (2251 dong, doc read-only, 2026-10-22):
@@ -811,30 +1229,60 @@ const server = http.createServer(async (req,res)=>{
           if (channelRows.length) {
             const ids = channelRows.map(r => String(r.entity_id));
             const ph = ids.map(() => '?').join(',');
-            const ccs = query(`SELECT channel_id, raw_id, handle FROM competitor_channels WHERE channel_id IN (${ph})`, ids);
+            const ccs = query(
+              `SELECT channel_id, raw_id, handle, handle_history_json, channel_lifecycle_json, niche_id, ypp_status, has_voice_sample, voice_sample_path, subscribers, total_views
+                 FROM competitor_channels
+                WHERE channel_id IN (${ph})`,
+              ids
+            );
             const byId = new Map(ccs.map(c => [String(c.channel_id), c]));
             const kenhHandles = hotStore.getKenhHandleSet();
             for (const r of channelRows) {
               const c = byId.get(String(r.entity_id)) || {};
               r.raw_id = c.raw_id || '';
-              const h = String(c.handle || '');
-              /* handle phai khop TUYET DOI (khong phai chuoi con) de khong mo nham kenh. */
-              r.kenh_handle = (h && kenhHandles.has(h.toLowerCase())) ? h : '';
+              const histRaw = parseJsonSafe(c.handle_history_json, []);
+              const handleHistory = Array.isArray(histRaw) ? histRaw : [];
+              const hienTaiItem = handleHistory.find(x => x && typeof x === 'object' && /handle_hien_tai/i.test(String(x.source || '')));
+              const lastHistItem = handleHistory.length ? handleHistory[handleHistory.length - 1] : null;
+              const lastHistHandle = lastHistItem ? (typeof lastHistItem === 'string' ? lastHistItem : (lastHistItem.handle || '')) : '';
+              const handleHienTai = String((hienTaiItem && hienTaiItem.handle) || lastHistHandle || c.handle || '').trim();
+              const lc = parseJsonSafe(c.channel_lifecycle_json, null);
+              const lcState = lc && typeof lc === 'object' ? String(lc.state || lc.healthState || '') : '';
+              const isDead = Boolean(/^(?:DEAD|TERMINATED)/i.test(lcState) || /^DEAD/i.test(String(c.ypp_status || '')));
+              const histHandleStrings = handleHistory.map(x => typeof x === 'string' ? x : (x && x.handle) || '').filter(Boolean);
+              r.handle_history = handleHistory;
+              r.handle_hien_tai = handleHienTai;
+              r.niche_code = c.niche_id || '';
+              r.dead = isDead;
+              r.has_voice = Boolean(c.has_voice_sample || c.voice_sample_path);
+              r.voice_sample_path = c.voice_sample_path || '';
+              r.subscribers = Number(c.subscribers || 0) || 0;
+              r.total_views = Number(c.total_views || 0) || 0;
+              /* handle phai khop TUYET DOI (khong phai chuoi con) tren handle chuan hoac handle_hien_tai / handleHistory. */
+              r.kenh_handle = matchKenhHandle([c.handle, handleHienTai, ...histHandleStrings], kenhHandles);
+              if (!r.targetUrl) {
+                if (r.raw_id) r.targetUrl = `/rawkenh?rid=${encodeURIComponent(r.raw_id)}`;
+                else if (r.kenh_handle) r.targetUrl = `/kenh-mau?handle=${encodeURIComponent(r.kenh_handle)}`;
+              }
             }
           }
           if (transcriptRows.length) {
             const ids = transcriptRows.map(r => String(r.entity_id));
             const ph = ids.map(() => '?').join(',');
             const parents = query(
-              `SELECT tv.video_id AS video_id, cc.title AS channel_title, cc.raw_id AS raw_id
+              `SELECT tv.video_id AS video_id, cc.title AS channel_title, cc.raw_id AS raw_id, cc.handle AS handle, cc.handle_history_json AS handle_history_json
                  FROM competitor_top_videos tv
                  JOIN competitor_channels cc ON cc.channel_id = tv.channel_id
                 WHERE tv.video_id IN (${ph})`, ids);
             const byVid = new Map(parents.map(p => [String(p.video_id), p]));
+            const kenhHandles = hotStore.getKenhHandleSet();
             for (const r of transcriptRows) {
               const p = byVid.get(String(r.entity_id)) || {};
               r.parent_channel_title = p.channel_title || '';
               r.parent_raw_id = p.raw_id || '';
+              const pHist = parseJsonSafe(p.handle_history_json, []);
+              const pHistHandles = Array.isArray(pHist) ? pHist.map(x => typeof x === 'string' ? x : (x && x.handle) || '').filter(Boolean) : [];
+              r.parent_kenh_handle = matchKenhHandle([p.handle, ...pHistHandles], kenhHandles);
             }
           }
           if (sopRows.length) {
@@ -870,7 +1318,8 @@ const server = http.createServer(async (req,res)=>{
           /* Bo sung loi KHONG duoc lam hong ket qua tim kiem: tra rows goc + co loi rieng.
              F3: client BAY GIO doc truong `error` nay va hien canh bao (khong con nuot loi);
              dong nao thieu du lieu dieu huong thi client khong render nut "Mo". */
-          sendJson(req, res, 200, { query: q, total: rows.length, results: rows, error: 'enrich: ' + enrichErr.message }, isHead);
+          console.error('[search] Enrich error:', enrichErr.message);
+          sendJson(req, res, 200, { query: q, total: rows.length, results: rows, error: 'enrich: partial data' }, isHead);
           return;
         }
         sendJson(req, res, 200, { query: q, total: rows.length, results: rows }, isHead);
@@ -878,87 +1327,93 @@ const server = http.createServer(async (req,res)=>{
       } catch (err) {
         /* FIX (uifix87) LỖI 3 — truoc day tra 200 + results:[] + error: loi ha tang bi bien thanh
            "khong co ket qua" o UI. Nay tra 503 (service khong san sang) de client phan biet. */
-        sendJson(req, res, 503, { query: q, total: 0, results: [], error: err.message }, isHead);
+        console.error('[search] Service error:', err.message);
+        sendJson(req, res, 503, { query: q, total: 0, results: [], error: 'Service temporarily unavailable' }, isHead);
         return;
       }
     }
     sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
     return;
   }
+  if (apiPath === '/api/niche-radar') {
+    if (req.method === 'GET' || isHead) {
+      try {
+        sendJson(req, res, 200, hotStore.getNicheRadarResponse(), isHead);
+      } catch (e) {
+        console.error('[niche-radar] Internal error:', e.message || e);
+        sendJson(req, res, 500, { error: 'Internal Server Error' }, isHead);
+      }
+      return;
+    }
+    sendJson(req, res, 405, { error: 'Method Not Allowed' }, isHead, { 'Allow': 'GET, HEAD, OPTIONS' });
+    return;
+  }
   if (apiPath.startsWith('/live/')) {
     if (req.method === 'GET' || isHead) {
       const sku = apiPath.replace('/live/', '').trim();
-      if (/^VIDEO-[A-Za-z0-9]+$/i.test(sku)) {
-        try {
-          const cacheKey = 'live:' + sku.toUpperCase();
-          const now = Date.now();
-          const cached = DGMD_EMBED_CACHE.get(cacheKey);
-          if (cached && (now - cached.ts < 10 * 60 * 1000)) {
-            res.writeHead(200, withSecure({
-              'Content-Type': 'text/html; charset=utf-8',
-              'Access-Control-Allow-Origin': '*',
-              'Cache-Control': 'no-cache, no-store, must-revalidate',
-              'Content-Security-Policy': LIVE_EMBED_CSP
-            }));
-            res.end(isHead ? undefined : cached.html);
-            return;
-          }
-
-          const { getLivePlayerUrl } = require('./scripts/live_player_resolver');
-          const liveInfo = await getLivePlayerUrl(sku);
-          const liveUrl = (typeof liveInfo === 'object' && liveInfo) ? liveInfo.url : liveInfo;
-          const ref = (typeof liveInfo === 'object' && liveInfo) ? liveInfo.referer : 'https://h2dev.vn/';
-          if (liveUrl) {
-            const monaRes = await fetch(liveUrl, {
-              signal: AbortSignal.timeout(5000),
-              headers: {
-                'User-Agent': req.headers['user-agent'] || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131',
-                'Referer': ref
-              }
-            });
-            if (monaRes.status !== 200) throw new Error(`Mona Cloud response ${monaRes.status}`);
-            let html = await monaRes.text();
-            if (!/<(?:!doctype\s+html|html|head|body)\b/i.test(html)) {
-              throw new Error('Mona Cloud returned invalid HTML');
-            }
-            const liveInjection = '<base href="https://video.mona-cloud.com/"><meta name="referrer" content="no-referrer">';
-            if (html.includes('<head>')) {
-              html = html.replace('<head>', '<head>' + liveInjection);
-            } else {
-              html = liveInjection + html;
-            }
-            DGMD_EMBED_CACHE.set(cacheKey, { html, ts: now });
-            res.writeHead(200, withSecure({
-              'Content-Type': 'text/html; charset=utf-8',
-              'Access-Control-Allow-Origin': '*',
-              'Cache-Control': 'no-cache, no-store, must-revalidate',
-              'Content-Security-Policy': LIVE_EMBED_CSP
-            }));
-            res.end(isHead ? undefined : html);
-            return;
-          } else {
-            res.writeHead(404, withSecure({ 'Content-Type': 'text/plain; charset=utf-8' }));
-            res.end(isHead ? undefined : `Không tìm thấy luồng phát trực tiếp cho SKU ${sku}`);
-            return;
-          }
-        } catch (err) {
-          res.writeHead(502, withSecure({ 'Content-Type': 'text/plain; charset=utf-8' }));
-          res.end(isHead ? undefined : `Lỗi kết nối máy chủ nguồn: ${err.message}`);
+      if (!/^VIDEO-[A-Za-z0-9]+$/i.test(sku)) {
+        sendJson(req, res, 400, { error: 'Invalid SKU' }, isHead);
+        return;
+      }
+      try {
+        const cacheKey = 'live:' + sku.toUpperCase();
+        const now = Date.now();
+        const cached = getDgmdEmbedCache(cacheKey, now);
+        if (cached) {
+          res.writeHead(200, withSecure({
+            'Content-Type': 'text/html; charset=utf-8',
+            ...getCorsHeaders(req),
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Content-Security-Policy': LIVE_EMBED_CSP
+          }));
+          res.end(isHead ? undefined : cached.html);
           return;
         }
+
+        const { getLivePlayerUrl } = require('./scripts/live_player_resolver');
+        const liveInfo = await getLivePlayerUrl(sku);
+        const liveUrl = (typeof liveInfo === 'object' && liveInfo) ? liveInfo.url : liveInfo;
+        const ref = (typeof liveInfo === 'object' && liveInfo) ? liveInfo.referer : 'https://h2dev.vn/';
+        if (liveUrl) {
+          let html = await fetchAllowedUpstreamHtml(liveUrl, { referer: ref, maxRedirects: 5 });
+          const liveInjection = '<base href="https://video.mona-cloud.com/"><meta name="referrer" content="no-referrer">';
+          if (html.includes('<head>')) {
+            html = html.replace('<head>', '<head>' + liveInjection);
+          } else {
+            html = liveInjection + html;
+          }
+          setDgmdEmbedCache(cacheKey, html, now);
+          res.writeHead(200, withSecure({
+            'Content-Type': 'text/html; charset=utf-8',
+            ...getCorsHeaders(req),
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Content-Security-Policy': LIVE_EMBED_CSP
+          }));
+          res.end(isHead ? undefined : html);
+          return;
+        } else {
+          res.writeHead(404, withSecure({ 'Content-Type': 'text/plain; charset=utf-8', ...getCorsHeaders(req) }));
+          res.end(isHead ? undefined : `Không tìm thấy luồng phát trực tiếp cho SKU ${sku}`);
+          return;
+        }
+      } catch (err) {
+        console.error('[live] Upstream proxy error:', err.message);
+        res.writeHead(502, withSecure({ 'Content-Type': 'text/plain; charset=utf-8', ...getCorsHeaders(req) }));
+        res.end(isHead ? undefined : 'Upstream proxy error');
+        return;
       }
     }
-    sendJson(req, res, 405, { error: 'Method Not Allowed' }, false, { 'Allow': 'GET, HEAD, OPTIONS' });
+    sendJson(req, res, 405, { error: 'Method Not Allowed' }, isHead, { 'Allow': 'GET, HEAD, OPTIONS' });
     return;
   }
   if (req.method !== 'GET' && !isHead) {
     res.writeHead(405, {
       'Allow': 'GET, HEAD, OPTIONS',
       'Content-Type': 'text/plain; charset=utf-8',
-      'Access-Control-Allow-Origin': '*',
+      ...getCorsHeaders(req),
       ...SECURE_HEADERS,
     });
-    res.end('Method Not Allowed');
+    res.end(isHead ? undefined : 'Method Not Allowed');
     return;
   }
 
@@ -978,10 +1433,10 @@ const server = http.createServer(async (req,res)=>{
   } catch (err) {
     res.writeHead(400, {
       'Content-Type': 'text/plain; charset=utf-8',
-      'Access-Control-Allow-Origin': '*',
+      ...getCorsHeaders(req),
       ...SECURE_HEADERS,
     });
-    res.end('400 Bad Request: Malformed URI');
+    res.end(isHead ? undefined : '400 Bad Request: Malformed URI');
     return;
   }
   if(urlPath === '/' || urlPath === '') urlPath = '/index.html';
@@ -995,6 +1450,7 @@ const server = http.createServer(async (req,res)=>{
     '/ngach': '/ngachxanh',
     '/ngach-xanh': '/ngachxanh',
     '/kichban': '/tai-lieu',
+    '/kich-ban': '/tai-lieu',
     '/tailieu': '/tai-lieu',
     '/nhac-nen': '/nhac',
     '/nhacnen': '/nhac',
@@ -1009,20 +1465,43 @@ const server = http.createServer(async (req,res)=>{
     '/so-do': '/sodo',
     '/sodo-db': '/sodo',
     '/so-do-db': '/sodo',
-    '/lo-trinh': '/lotrinh'
+    '/sododb': '/sodo',
+    '/bandokienthuc': '/graph',
+    '/ban-do-kien-thuc': '/graph',
+    '/chinhsach': '/chienluoc?sub=policy',
+    '/chinh-sach': '/chienluoc?sub=policy',
+    '/lotrinhkenh': '/lotrinh',
+    '/lo-trinh': '/lotrinh',
+    '/learn': '/lotrinh',
+    '/videos': '/video'
   };
   const redirectKey = urlPath.replace(/\/+$/, '').toLowerCase() || '/';
   if (REDIRECTS[redirectKey] !== undefined) {
-    const qs = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
-    res.writeHead(301, withSecure({ 'Location': REDIRECTS[redirectKey] + qs, 'Content-Type': 'text/plain; charset=utf-8' }));
-    res.end('301 Moved Permanently: ' + REDIRECTS[redirectKey]);
+    const targetBase = REDIRECTS[redirectKey];
+    const rawQs = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
+    const qs = rawQs.replace(/[\r\n\0]+/g, '');
+    const finalTarget = targetBase + (qs ? (targetBase.includes('?') ? '&' + qs.slice(1) : qs) : '');
+    res.writeHead(301, withSecure({ 'Location': finalTarget, 'Content-Type': 'text/plain; charset=utf-8' }));
+    res.end(isHead ? undefined : ('301 Moved Permanently: ' + finalTarget));
     return;
   }
-  if (/^\/lo-trinh\/(.+)$/i.test(urlPath)) {
-    const mLo = urlPath.match(/^\/lo-trinh\/(.+)$/i);
-    const qs = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
-    res.writeHead(301, withSecure({ 'Location': '/lotrinh/' + mLo[1] + qs, 'Content-Type': 'text/plain; charset=utf-8' }));
-    res.end('301 Moved Permanently: /lotrinh/' + mLo[1]);
+  if (/^\/lo-trinh\/([\s\S]+)$/i.test(urlPath)) {
+    const mLo = urlPath.match(/^\/lo-trinh\/([\s\S]+)$/i);
+    const safeSegs = mLo[1].replace(/[\r\n\0]+/g, '').split('/').map((seg) => encodeURIComponent(seg)).join('/');
+    const rawQs = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
+    const qs = rawQs.replace(/[\r\n\0]+/g, '');
+    const finalTarget = '/lotrinh/' + safeSegs + qs;
+    res.writeHead(301, withSecure({ 'Location': finalTarget, 'Content-Type': 'text/plain; charset=utf-8' }));
+    res.end(isHead ? undefined : ('301 Moved Permanently: ' + finalTarget));
+    return;
+  }
+  const mVideoSku = urlPath.match(/^\/video\/([^/]+)\/?$/i);
+  if (mVideoSku && !mVideoSku[1].startsWith('.') && !path.extname(mVideoSku[1])) {
+    const rawQs = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
+    const qs = rawQs.replace(/[\r\n\0]+/g, '');
+    const finalTarget = '/lotrinh/' + encodeURIComponent(mVideoSku[1]) + qs;
+    res.writeHead(301, withSecure({ 'Location': finalTarget, 'Content-Type': 'text/plain; charset=utf-8' }));
+    res.end(isHead ? undefined : ('301 Moved Permanently: ' + finalTarget));
     return;
   }
 
@@ -1035,11 +1514,11 @@ const server = http.createServer(async (req,res)=>{
       const isValidSku = hotStore.isValidSku(sku);
       if (!isValidSku) {
         res.writeHead(404, withSecure({ 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' }));
-        res.end('<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><title>404 — Không tìm thấy bài học</title>'
+        res.end(isHead ? undefined : ('<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><title>404 — Không tìm thấy bài học</title>'
           + '<meta name="robots" content="noindex"></head><body style="background:#050505;color:#f0f0f0;font-family:Inter,sans-serif;padding:48px;text-align:center">'
           + '<h1 style="font-size:24px">404 — Không tìm thấy bài học</h1>'
-          + '<p style="color:#a9a9a9">Mã bài học <code>' + sku.replace(/[<>&"]/g, '') + '</code> không tồn tại trong kho.</p>'
-          + '<p><a href="/lotrinh" style="color:#ff8095">← Về danh mục lộ trình</a></p></body></html>');
+          + '<p style="color:#a9a9a9">Mã bài học <code>' + String(sku).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;') + '</code> không tồn tại trong kho.</p>'
+          + '<p><a href="/lotrinh" style="color:#ff8095">← Về danh mục lộ trình</a></p></body></html>'));
         return;
       }
       urlPath = '/player.html';
@@ -1057,18 +1536,10 @@ const server = http.createServer(async (req,res)=>{
   let full = path.resolve(ROOT, '.'+urlPath);
   const relative = path.relative(ROOT, full);
 
-  // Bảo vệ cơ bản: Chống path traversal vượt ra ngoài thư mục dự án ROOT
-  if(relative === '..' || relative.startsWith('..'+path.sep) || path.isAbsolute(relative)){
-    res.writeHead(403, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
-    res.end('Forbidden');
-    return;
-  }
-
-  // Bảo vệ file secret cấu hình môi trường (.env)
-  const baseName = path.basename(full).toLowerCase();
-  if (baseName.startsWith('.env')) {
-    res.writeHead(403, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
-    res.end('Forbidden');
+  // Bảo vệ cơ bản: Chống path traversal vượt ra ngoài thư mục dự án ROOT và NTFS Alternate Data Streams (:$DATA / ':')
+  if(relative === '..' || relative.startsWith('..'+path.sep) || path.isAbsolute(relative) || relative.includes(':') || urlPath.includes(':')){
+    res.writeHead(403, withSecure({'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req)}));
+    res.end(isHead ? undefined : 'Forbidden');
     return;
   }
 
@@ -1079,21 +1550,17 @@ const server = http.createServer(async (req,res)=>{
   // Danh sách dưới đây khớp tuyên bố TREE.md (mục "web bị chặn / 403") + bổ sung 16/09/2026.
   // LƯU Ý: tất cả entry viết CHỮ THƯỜNG — so khớp bằng toLowerCase() vì Windows
   // filesystem không phân biệt hoa/thường (tránh bypass kiểu /.GIT/config hay /_PRIVATE/).
-  if (apiPath === '/api/niche-radar') {
-    if (req.method === 'GET' || isHead) {
-      try {
-        sendJson(req, res, 200, hotStore.getNicheRadarResponse(), isHead);
-      } catch (e) {
-        sendJson(req, res, 500, { error: String(e.message || e) }, isHead);
-      }
-      return;
-    }
-    sendJson(req, res, 405, { error: 'Method Not Allowed' }, isHead);
-    return;
-  }
-
   const SENSITIVE_SEGMENTS = new Set([
     '.git',         // CRITICAL 16/09: toàn bộ lịch sử git từng bị tải qua HTTP (kể cả commit chứa key cũ)
+    '.agents',      // thư mục agent/MCP config (có thể là junction chứa mcp_config.json)
+    '.agent',       // thư mục agent nội bộ
+    '.claude',      // cấu hình/credential Claude Code
+    '.gemini',      // cấu hình/credential Gemini/Antigravity
+    '.codex',       // cấu hình/credential Codex
+    '.vscode',      // cấu hình workspace IDE
+    '.exe',         // thư mục binary/tool nội bộ
+    '.pi',          // thư mục cấu hình/session nội bộ
+    '.pytest_cache', // cache pytest — không phục vụ web
     'node_modules', // dependency tree — không phục vụ web
     '_private',     // chứa mcp-keys-h2dev.md (danh mục key)
     '_backup',      // chứa .env.bak và bản backup key plaintext
@@ -1104,26 +1571,109 @@ const server = http.createServer(async (req,res)=>{
     '_verify',      // scratch verify nội bộ
     '_frames',      // frame trích từ video (file con từng tải được)
     '_tmp_audio',   // audio tạm của pipeline
+    '_tools',       // công cụ giải mã / DRM nội bộ
     '.cache',       // cache runtime (checkpoint, thumbnail tải về)
     '.venv-gpu',    // môi trường Python GPU — không phục vụ web
     '.zcode',       // cấu hình agent nội bộ
     'logs',         // log server/watchdog — có thể chứa path & thông tin vận hành
     'inbox',        // vùng thả file mới (TREE.md: web bị chặn)
+    'models',       // model AI cục bộ — không phục vụ web
+    'outputs',      // kết quả pipeline nội bộ
+    'pipelines',    // mã nguồn pipeline nội bộ
+    'raw-niches',   // dữ liệu raw ngách nội bộ
+    'tests',        // bộ kiểm thử nội bộ
     'raw-kenh-goc', // ảnh raw canonical bản gốc (TREE.md: web bị CHẶN 403)
     'design-is-2026-08-22', // audit UI nội bộ (TREE.md: web bị CHẶN 403)
     'raw kênh mẫu tìm kiếm', // historical only (TREE.md: chặn từ 31/08)
   ]);
+  const SENSITIVE_ROOT_FILES = new Set([
+    'server.js',
+    'package.json',
+    'package-lock.json',
+    'tailwind.config.js',
+    'agents.md',
+    'claude.md',
+    'chay-lan.md',
+    '.eslintrc.json',
+    '.prettierrc',
+    '.prettierignore',
+    '.gitignore',
+    '.gitattributes',
+  ]);
+  const isSensitiveRelPath = (relPath, checkRootFiles = true) => {
+    const segs = String(relPath || '').split(/[\\/]+/).filter(Boolean);
+    if (checkRootFiles && segs.length === 1) {
+      const rootClean = segs[0].toLowerCase().replace(/[. ]+$/, '').split(':')[0];
+      if (
+        SENSITIVE_ROOT_FILES.has(rootClean) ||
+        rootClean.endsWith('.vbs') ||
+        rootClean.endsWith('.cmd') ||
+        rootClean.endsWith('.bat')
+      ) {
+        return true;
+      }
+    }
+    for (const seg of segs) {
+      const clean = seg.toLowerCase().replace(/[. ]+$/, '').split(':')[0];
+      if (SENSITIVE_SEGMENTS.has(clean)) return true;
+      if (
+        clean.startsWith('.env') ||
+        clean === 'mcp_config.json' ||
+        clean === 'desktop.ini' ||
+        clean === 'thumbs.db' ||
+        clean === '.ds_store' ||
+        clean.startsWith('.tmp.drive') ||
+        clean.endsWith('.key') ||
+        clean.endsWith('.pem') ||
+        /\.(db|sqlite|sqlite3)(-(wal|shm|journal))?$/i.test(clean) ||
+        /^mcp-keys/i.test(clean)
+      ) {
+        return true;
+      }
+    }
+    return false;
+  };
+  const isInsideRealDir = (baseReal, targetReal) => {
+    const rel = path.relative(baseReal, targetReal);
+    return rel !== '..' && !rel.startsWith('..' + path.sep) && !path.isAbsolute(rel);
+  };
+  const checkResolvedPath = (targetPath, allowMusicMountChild = false) => {
+    let realTarget;
+    try {
+      realTarget = fs.realpathSync(targetPath);
+    } catch (_) {
+      return { ok: false, status: 404 };
+    }
+    if (isInsideRealDir(ROOT_REAL, realTarget)) {
+      const realRel = path.relative(ROOT_REAL, realTarget);
+      if (isSensitiveRelPath(realRel, true)) return { ok: false, status: 403 };
+      const first = realRel.split(/[\\/]+/).filter(Boolean)[0];
+      if (first && first.toLowerCase() === 'scripts') return { ok: false, status: 404 };
+      return { ok: true, realTarget };
+    }
+    if (allowMusicMountChild && NHAC_NEN_REAL && isInsideRealDir(NHAC_NEN_REAL, realTarget)) {
+      const musicRel = path.relative(NHAC_NEN_REAL, realTarget);
+      if (isSensitiveRelPath(musicRel, false)) return { ok: false, status: 403 };
+      return { ok: true, realTarget };
+    }
+    return { ok: false, status: 403 };
+  };
+  const sendPathCheckError = (status, nosniff = false) => {
+    if (status === 403) {
+      res.writeHead(403, withSecure({'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req)}));
+      res.end(isHead ? undefined : 'Forbidden');
+      return;
+    }
+    const hdrs = {'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req)};
+    if (nosniff) hdrs['X-Content-Type-Options'] = 'nosniff';
+    res.writeHead(404, withSecure(hdrs));
+    res.end(isHead ? undefined : '404 Not Found');
+  };
   const relSegs = relative.split(path.sep);
-  if (relSegs.some(seg => SENSITIVE_SEGMENTS.has(seg.toLowerCase()))) {
-    res.writeHead(403, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
-    res.end('Forbidden');
-    return;
-  }
-  // Bảo vệ file database/secret binary ở thư mục data (không lộ dump toàn bộ DB qua web tĩnh).
-  // Bao gồm cả các file phụ trợ của SQLite: -wal, -shm, -journal.
-  if (/\.(db|sqlite|sqlite3)(-(wal|shm|journal))?$/i.test(baseName) || /^mcp-keys/i.test(baseName)) {
-    res.writeHead(403, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
-    res.end('Forbidden');
+  const isMusicMountChild = relSegs.length >= 3 && relSegs[0].toLowerCase() === 'assets' && relSegs[1].toLowerCase() === 'nhac-nen';
+  if (isSensitiveRelPath(relative)) {
+    res.writeHead(403, withSecure({'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req)}));
+    res.end(isHead ? undefined : 'Forbidden');
     return;
   }
 
@@ -1152,8 +1702,8 @@ const server = http.createServer(async (req,res)=>{
    */
   const firstSeg = relSegs[0] ? relSegs[0].toLowerCase() : '';
   if (firstSeg === 'scripts') {
-    res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'X-Content-Type-Options':'nosniff'}));
-    res.end('404 Not Found');
+    res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'X-Content-Type-Options':'nosniff', ...getCorsHeaders(req)}));
+    res.end(isHead ? undefined : '404 Not Found');
     return;
   }
 
@@ -1161,14 +1711,20 @@ const server = http.createServer(async (req,res)=>{
   fs.lstat(full, (err, st)=>{
     const isSymlink = !err && st && typeof st.isSymbolicLink === 'function' && st.isSymbolicLink();
     if(!err && !isSymlink && st.isDirectory()){
+      const dirCheck = checkResolvedPath(full, isMusicMountChild);
+      if (!dirCheck.ok) { sendPathCheckError(dirCheck.status, true); return; }
       const idx = path.join(full, 'index.html');
+      const idxCheck = checkResolvedPath(idx, isMusicMountChild);
+      if (!idxCheck.ok) { sendPathCheckError(idxCheck.status, true); return; }
       fs.stat(idx, (e2,s2)=>{
         if(!e2 && s2.isFile()) sendFile(req, res, idx, MIME['.html'], req.headers.range, isHead);
-        else { res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*', 'X-Content-Type-Options':'nosniff'})); res.end('404 Not Found'); }
+        else { res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req), 'X-Content-Type-Options':'nosniff'})); res.end(isHead ? undefined : '404 Not Found'); }
       });
       return;
     }
     if(!err && !isSymlink && st.isFile()){
+      const fileCheck = checkResolvedPath(full, isMusicMountChild);
+      if (!fileCheck.ok) { sendPathCheckError(fileCheck.status); return; }
       const mime = MIME[path.extname(full).toLowerCase()] || 'application/octet-stream';
       sendFile(req, res, full, mime, req.headers.range, isHead);
       return;
@@ -1177,37 +1733,73 @@ const server = http.createServer(async (req,res)=>{
       const mountFull = path.resolve(VIDEO_MOUNT_DIR, ...relSegs.slice(1));
       const mountRel = path.relative(VIDEO_MOUNT_DIR, mountFull);
       if (mountRel !== '..' && !mountRel.startsWith('..' + path.sep) && !path.isAbsolute(mountRel)) {
-        fs.stat(mountFull, (mErr, mSt) => {
-          if (!mErr && mSt.isFile()) {
-            const mime = MIME[path.extname(mountFull).toLowerCase()] || 'application/octet-stream';
-            sendFile(req, res, mountFull, mime, req.headers.range, isHead);
-            return;
-          }
-          if (isSymlink) {
-            fs.stat(full, (sErr, sSt) => {
-              if (!sErr && sSt.isFile()) {
-                const mime = MIME[path.extname(full).toLowerCase()] || 'application/octet-stream';
-                sendFile(req, res, full, mime, req.headers.range, isHead);
-                return;
-              }
-              res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
-              res.end('404 Not Found: '+urlPath);
-            });
-            return;
-          }
-          res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
-          res.end('404 Not Found: '+urlPath);
-        });
+        let mountDirReal = null;
+        let mountFullReal = null;
+        try {
+          mountDirReal = fs.realpathSync(VIDEO_MOUNT_DIR);
+          mountFullReal = fs.realpathSync(mountFull);
+        } catch (_) {}
+        if (mountDirReal && mountFullReal && !isInsideRealDir(mountDirReal, mountFullReal)) {
+          res.writeHead(403, withSecure({'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req)}));
+          res.end(isHead ? undefined : 'Forbidden');
+          return;
+        }
+        if (mountDirReal && mountFullReal) {
+          fs.stat(mountFullReal, (mErr, mSt) => {
+            if (!mErr && mSt.isFile()) {
+              const mime = MIME[path.extname(mountFullReal).toLowerCase()] || 'application/octet-stream';
+              sendFile(req, res, mountFullReal, mime, req.headers.range, isHead);
+              return;
+            }
+            if (isSymlink) {
+              const symCheck = checkResolvedPath(full, false);
+              if (!symCheck.ok) { sendPathCheckError(symCheck.status); return; }
+              fs.stat(full, (sErr, sSt) => {
+                if (!sErr && sSt.isFile()) {
+                  const mime = MIME[path.extname(full).toLowerCase()] || 'application/octet-stream';
+                  sendFile(req, res, full, mime, req.headers.range, isHead);
+                  return;
+                }
+                res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req)}));
+                res.end(isHead ? undefined : '404 Not Found');
+              });
+              return;
+            }
+            res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req)}));
+            res.end(isHead ? undefined : '404 Not Found');
+          });
+          return;
+        }
+        if (isSymlink) {
+          const symCheck = checkResolvedPath(full, false);
+          if (!symCheck.ok) { sendPathCheckError(symCheck.status); return; }
+          fs.stat(full, (sErr, sSt) => {
+            if (!sErr && sSt.isFile()) {
+              const mime = MIME[path.extname(full).toLowerCase()] || 'application/octet-stream';
+              sendFile(req, res, full, mime, req.headers.range, isHead);
+              return;
+            }
+            res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req)}));
+            res.end(isHead ? undefined : '404 Not Found');
+          });
+          return;
+        }
+        res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req)}));
+        res.end(isHead ? undefined : '404 Not Found');
         return;
       }
     }
     if (isSymlink) {
+      const symCheck = checkResolvedPath(full, false);
+      if (!symCheck.ok) { sendPathCheckError(symCheck.status); return; }
       fs.stat(full, (sErr, sSt) => {
         if (!sErr && sSt.isDirectory()) {
           const idx = path.join(full, 'index.html');
+          const idxCheck = checkResolvedPath(idx, false);
+          if (!idxCheck.ok) { sendPathCheckError(idxCheck.status, true); return; }
           fs.stat(idx, (e2, s2) => {
             if (!e2 && s2.isFile()) sendFile(req, res, idx, MIME['.html'], req.headers.range, isHead);
-            else { res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*', 'X-Content-Type-Options':'nosniff'})); res.end('404 Not Found'); }
+            else { res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req), 'X-Content-Type-Options':'nosniff'})); res.end(isHead ? undefined : '404 Not Found'); }
           });
           return;
         }
@@ -1216,8 +1808,8 @@ const server = http.createServer(async (req,res)=>{
           sendFile(req, res, full, mime, req.headers.range, isHead);
           return;
         }
-        res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
-        res.end('404 Not Found: '+urlPath);
+        res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req)}));
+        res.end(isHead ? undefined : '404 Not Found');
       });
       return;
     }
@@ -1225,27 +1817,29 @@ const server = http.createServer(async (req,res)=>{
       const idx = path.join(full, 'index.html');
       fs.stat(idx, (e2,s2)=>{
         if(!e2 && s2.isFile()) sendFile(req, res, idx, MIME['.html'], req.headers.range, isHead);
-        else { res.writeHead(404, withSecure({'Content-Type':'text/plain', 'Access-Control-Allow-Origin':'*', 'X-Content-Type-Options':'nosniff'})); res.end('404: '+urlPath); }
+        else { res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req), 'X-Content-Type-Options':'nosniff'})); res.end(isHead ? undefined : '404 Not Found'); }
       });
       return;
     }
     if (req.url && req.url.includes('optional=1') && /^\/data\/raw-channels-deep\//i.test(urlPath)) {
-      res.writeHead(204, withSecure({ 'Access-Control-Allow-Origin': '*' }));
+      res.writeHead(204, withSecure({ ...getCorsHeaders(req) }));
       res.end();
       return;
     }
-    res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', 'Access-Control-Allow-Origin':'*'}));
-    res.end('404 Not Found: '+urlPath);
+    res.writeHead(404, withSecure({'Content-Type':'text/plain; charset=utf-8', ...getCorsHeaders(req)}));
+    res.end(isHead ? undefined : '404 Not Found');
   });
 });
 
 server.listen(PORT, HOST, ()=>{
   console.log('H2DEV Project running at http://'+HOST+':'+PORT+'/');
   console.log('Root: '+ROOT);
-  checkAndRotateAll();
-  startAutoSyncWatcher(() => {
-    refreshCachesOnDataSync();
-  });
+  if (process.env.H2DEV_DISABLE_KG_WATCHER !== '1') {
+    checkAndRotateAll();
+    startAutoSyncWatcher(() => {
+      refreshCachesOnDataSync();
+    });
+  }
 });
 
 // Xử lý ngoại lệ an toàn, chống sập server và ghi vết lỗi

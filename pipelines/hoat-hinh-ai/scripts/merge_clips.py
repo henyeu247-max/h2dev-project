@@ -19,9 +19,27 @@ Requirements:
 """
 
 import json
+import re
 import shutil
 import subprocess
 from pathlib import Path
+
+SAFE_ID_RE = re.compile(r"^[A-Za-z0-9_-]+$")
+
+
+def assert_safe_id(val: str, label: str = "shot_id") -> str:
+    s = str(val or "").strip()
+    if not SAFE_ID_RE.fullmatch(s):
+        raise ValueError(f"Invalid {label} (must match ^[A-Za-z0-9_-]+$): {val!r}")
+    return s
+
+
+def format_concat_line(clip_path: Path) -> str:
+    abs_path = clip_path.resolve().as_posix()
+    if "\r" in abs_path or "\n" in abs_path:
+        raise ValueError(f"Illegal newline in concat path: {abs_path!r}")
+    escaped = abs_path.replace("'", "'\\''")
+    return f"file '{escaped}'\n"
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -83,7 +101,7 @@ def main():
     missing   = []
 
     for shot in all_shots:
-        sid       = shot["shot_id"]
+        sid       = assert_safe_id(shot.get("shot_id"), "shot_id")
         clip_path = clips_dir / f"{sid}.mp4"
         if valid_clip(clip_path):
             available.append((sid, clip_path))
@@ -113,9 +131,7 @@ def main():
     concat_path = Path("concat.txt")
     with open(concat_path, "w", encoding="utf-8") as f:
         for sid, clip_path in available:
-            # Use forward-slash absolute path (safe on all platforms)
-            abs_path = clip_path.resolve().as_posix()
-            f.write(f"file '{abs_path}'\n")
+            f.write(format_concat_line(clip_path))
 
     print(f"Merging {len(available)} clips in order:")
     for sid, _ in available:
@@ -154,6 +170,8 @@ def main():
         # Show last 3000 chars of stderr (ffmpeg is verbose)
         print(result.stderr[-3000:] if result.stderr else "(no output)")
         raise SystemExit(1)
+    if not valid_clip(output_path):
+        raise SystemExit("ERROR: final_animation.mp4 was created but is not decodable")
 
     # ── Summary ───────────────────────────────────────────────────────────────
     size_mb = output_path.stat().st_size / (1024 * 1024)

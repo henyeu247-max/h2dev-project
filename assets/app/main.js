@@ -2329,6 +2329,14 @@
       if (!directUrl) return;
       try {
         const u = new URL(directUrl, location.origin);
+        if (
+          (u.protocol !== 'http:' && u.protocol !== 'https:') ||
+          u.origin !== location.origin ||
+          u.pathname.startsWith('//')
+        ) {
+          console.warn('[navigateDirectUrl] Blocked unsafe URL:', directUrl);
+          return;
+        }
         const pRaw = u.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
         const p = URL_ALIAS[pRaw] || pRaw;
         const spaTabs = ['tatca', 'video', 'ngachxanh', 'tai-lieu', 'nhac', 'nguonreup', 'kenh-mau', 'rawkenh', 'chienluoc', 'sodo'];
@@ -2343,8 +2351,10 @@
           });
           return;
         }
-      } catch (_) {}
-      location.href = directUrl;
+        location.href = u.href;
+      } catch (_) {
+        console.warn('[navigateDirectUrl] Invalid URL:', directUrl);
+      }
     }
     window.navigateDirectUrl = navigateDirectUrl;
     function scrubForeignParams() {

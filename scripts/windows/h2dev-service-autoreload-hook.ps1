@@ -24,7 +24,7 @@ $ErrorActionPreference = 'Continue'
 
 $root       = 'D:\YTB\H2DEV-Project'
 $port       = 8899
-$nssm       = 'D:\YTB\nssm.exe'
+$nssm       = 'C:\Program Files\H2DEV\nssm.exe'
 $svcName    = 'H2DEV_Service'
 $sentinel   = Join-Path $root '.cache\auto-reload-enabled'
 $statusFile = Join-Path $root '.cache\h2dev-service-reload.json'
@@ -105,9 +105,23 @@ if ($curPid -gt 0) {
 }
 
 $jsMtime = $null
+$changedJsFiles = @()
 try {
-  $js = Join-Path $root 'server.js'
-  if (Test-Path $js) { $jsMtime = (Get-Item $js).LastWriteTime }
+  $watchCandidates = @()
+  $serverJs = Join-Path $root 'server.js'
+  if (Test-Path $serverJs) { $watchCandidates += (Get-Item $serverJs) }
+  $scriptsDir = Join-Path $root 'scripts'
+  if (Test-Path $scriptsDir) {
+    $watchCandidates += Get-ChildItem -Path $scriptsDir -Filter '*.js' -File -ErrorAction SilentlyContinue
+    $libDir = Join-Path $scriptsDir 'lib'
+    if (Test-Path $libDir) {
+      $watchCandidates += Get-ChildItem -Path $libDir -Filter '*.js' -File -ErrorAction SilentlyContinue
+    }
+  }
+  foreach ($f in $watchCandidates) {
+    if (-not $jsMtime -or ($f.LastWriteTime -gt $jsMtime)) { $jsMtime = $f.LastWriteTime }
+    if ($procStart -and ($f.LastWriteTime -gt $procStart)) { $changedJsFiles += $f.FullName }
+  }
 } catch { }
 
 # --- 2) decide ---
@@ -116,7 +130,7 @@ $reason = ''
 if ($curPid -le 0) {
   $action = 'reload'; $reason = 'port-down'
 } elseif ($jsMtime -and $procStart -and ($jsMtime -gt $procStart)) {
-  $action = 'reload'; $reason = 'code-changed-after-start'
+  $action = 'reload'; $reason = ('code-changed-after-start(' + $changedJsFiles.Count + ')')
 }
 
 if ($action -ne 'reload') {
@@ -130,21 +144,39 @@ if ($action -ne 'reload') {
 
 Write-HookLog ('RELOAD needed reason=' + $reason + ' pid=' + $curPid + ' jsMtime=' + (To-Iso $jsMtime) + ' procStart=' + (To-Iso $procStart) + ' dryRun=' + $dryRun)
 
-# Safety gate: never reload a server.js that fails the syntax check.
+# Safety gate: never reload when server.js or changed scripts/*.js fail node --check.
 # A broken file would make the service flap every 5 minutes; we prefer
 # to keep the old (working) process running instead.
 $nodeExe = 'C:\Program Files\nodejs\node.exe'
 if (-not (Test-Path $nodeExe)) { $nodeExe = 'node' }
 $syntaxOk = $true
-try {
-  $chk = & $nodeExe --check (Join-Path $root 'server.js') 2>&1
-  $syntaxOk = ($LASTEXITCODE -eq 0)
-} catch { $syntaxOk = $false }
+$failedFile = ''
+$chk = ''
+$filesToSyntaxCheck = @()
+$serverJsPath = Join-Path $root 'server.js'
+if (Test-Path $serverJsPath) { $filesToSyntaxCheck += $serverJsPath }
+foreach ($cf in $changedJsFiles) {
+  if ($filesToSyntaxCheck -notcontains $cf) { $filesToSyntaxCheck += $cf }
+}
+foreach ($tf in $filesToSyntaxCheck) {
+  try {
+    $chk = & $nodeExe --check $tf 2>&1
+    if ($LASTEXITCODE -ne 0) {
+      $syntaxOk = $false
+      $failedFile = $tf
+      break
+    }
+  } catch {
+    $syntaxOk = $false
+    $failedFile = $tf
+    break
+  }
+}
 if (-not $syntaxOk) {
-  Write-HookLog ('server.js FAILED node --check - reload SKIPPED (keeping old process). detail=' + (($chk | Out-String).Trim() -replace '\s+', ' '))
+  Write-HookLog ($failedFile + ' FAILED node --check - reload SKIPPED (keeping old process). detail=' + (($chk | Out-String).Trim() -replace '\s+', ' '))
   Save-Status @{
     schema = 'h2dev-autoreload/1'; checkedAt = $checkedAt; action = 'skipped'; reason = 'syntax-error'
-    pid = $curPid; user = $whoAmI; admin = $isAdmin
+    failedFile = $failedFile; pid = $curPid; user = $whoAmI; admin = $isAdmin
   }
   exit 0
 }

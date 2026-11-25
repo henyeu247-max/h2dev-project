@@ -5,13 +5,25 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { execFileSync } = require('child_process');
+const PY_CMD = process.platform === 'win32' ? 'py' : 'python3';
+const PY_PREFIX = process.platform === 'win32' ? ['-3'] : [];
+const SAFE_SKU_RE = /^[A-Za-z0-9_-]+$/;
+
+function assertSafeSku(sku) {
+  const s = String(sku || '').trim();
+  if (!SAFE_SKU_RE.test(s)) {
+    throw new Error(`Invalid SKU format: ${s}`);
+  }
+  return s;
+}
 
 const ROOT = 'd:/YTB/H2DEV-Project';
 const FFMPEG = 'D:/Linly-Dubbing/bin/ffmpeg.exe';
 const FFPROBE = 'D:/Linly-Dubbing/bin/ffprobe.exe';
 
 async function downloadAndDecryptDrmSku(sku) {
+  sku = assertSafeSku(sku);
   console.log(`\n================================================================`);
   console.log(`>>> DOWNLOADING & DECRYPTING DRM SKU: ${sku}`);
   console.log(`================================================================`);
@@ -141,8 +153,11 @@ async function downloadAndDecryptDrmSku(sku) {
   if (!pssh) throw new Error('Could not extract PSSH from init segments');
 
   const licenseUrl = 'https://widevine-dash.ezdrm.com/widevine-php/widevine-foreignkey.php?pX=A98506';
-  const keyOutput = execSync(`py -3 scripts/get_drm_key.py "${pssh}" "${licenseUrl}"`, { cwd: ROOT, encoding: 'utf8' }).trim();
+  const keyOutput = execFileSync(PY_CMD, [...PY_PREFIX, 'scripts/get_drm_key.py', pssh, licenseUrl], { cwd: ROOT, encoding: 'utf8', shell: false, windowsHide: true }).trim();
   const [kid, key] = keyOutput.split(':');
+  if (!key || !/^[0-9a-f]{32}$/i.test(key)) {
+    throw new Error('Invalid DRM decryption key format: ' + keyOutput);
+  }
   console.log(`>>> ĐÃ CÓ KEY: KID=${kid} | KEY=${key}`);
 
   // Bước 5: Ghép và giải mã Audio
@@ -155,7 +170,7 @@ async function downloadAndDecryptDrmSku(sku) {
   for (const t of sortedAudioTimes) audioStream.write(audioSegs.get(t));
   await new Promise(r => audioStream.end(r));
 
-  execSync(`"${FFMPEG}" -y -decryption_key ${key} -i "${encAudioPath}" -c copy "${cleanAudioPath}"`, { stdio: 'inherit' });
+  execFileSync(FFMPEG, ['-y', '-decryption_key', key, '-i', encAudioPath, '-c', 'copy', cleanAudioPath], { stdio: 'inherit' });
 
   // Bước 6: Ghép và giải mã Video
   console.log('Bước 6: Ghép và giải mã Video sang MP4 sạch...');
@@ -167,11 +182,11 @@ async function downloadAndDecryptDrmSku(sku) {
   for (const t of sortedVideoTimes) videoStream.write(videoSegs.get(t));
   await new Promise(r => videoStream.end(r));
 
-  execSync(`"${FFMPEG}" -y -decryption_key ${key} -i "${encVideoPath}" -c copy "${cleanVideoPath}"`, { stdio: 'inherit' });
+  execFileSync(FFMPEG, ['-y', '-decryption_key', key, '-i', encVideoPath, '-c', 'copy', cleanVideoPath], { stdio: 'inherit' });
 
   // Bước 7: Mux Video + Audio thành MP4 hoàn chỉnh
   console.log('Bước 7: Mux Video + Audio thành MP4 hoàn chỉnh...');
-  execSync(`"${FFMPEG}" -y -i "${cleanVideoPath}" -i "${cleanAudioPath}" -c copy -movflags +faststart "${finalMp4Path}"`, { stdio: 'inherit' });
+  execFileSync(FFMPEG, ['-y', '-i', cleanVideoPath, '-i', cleanAudioPath, '-c', 'copy', '-movflags', '+faststart', finalMp4Path], { stdio: 'inherit' });
 
   const finalSize = fs.statSync(finalMp4Path).size;
   console.log(`\n>>> XUẤT BẢN THÀNH CÔNG MP4 LOCAL: ${finalMp4Path} (${(finalSize / 1024 / 1024).toFixed(2)} MB)`);
@@ -179,7 +194,7 @@ async function downloadAndDecryptDrmSku(sku) {
   // Bước 8: Chạy Whisper transcribe
   console.log('Bước 8: Chạy Whisper transcribe tạo phụ đề bóc tách...');
   try {
-    execSync(`py -3 scripts/transcribe_sku.py ${sku}`, { cwd: ROOT, stdio: 'inherit' });
+    execFileSync(PY_CMD, [...PY_PREFIX, 'scripts/transcribe_sku.py', String(sku)], { cwd: ROOT, stdio: 'inherit' });
   } catch (trErr) {
     console.warn('Whisper warning:', trErr.message);
   }
@@ -192,7 +207,7 @@ async function downloadAndDecryptDrmSku(sku) {
 }
 
 if (require.main === module) {
-  const targetSku = process.argv[2] || 'VIDEO-73c662';
+  const targetSku = assertSafeSku(process.argv[2] || 'VIDEO-73c662');
   downloadAndDecryptDrmSku(targetSku).catch(err => {
     console.error('\nLỖI DRM PIPELINE:', err);
     process.exit(1);

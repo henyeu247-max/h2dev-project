@@ -62,12 +62,44 @@ let _modulesByTrack = { h2dev: [], huan: [], dgmd: [] };
 let _routeByTrack = { h2dev: [], huan: [], dgmd: [] };
 
 // Cached Derived Responses
-let _nicheRadarCache = { mtimeMs: -1, data: null };
+let _nicheRadarCache = { stamp: '0:0', data: null };
 let _overviewSummaryCache = { mtimeMs: -1, computedAt: 0, data: null };
+
+const UNSAFE_JSON_KEYS = new Set(['__proto__', 'constructor', 'prototype']);
+
+function resolveSafeRootPath(relPath) {
+  const raw = String(relPath || '').trim().replace(/\\/g, '/').replace(/^\/+/, '');
+  if (!raw) return null;
+  const resolved = path.resolve(ROOT, raw);
+  const rel = path.relative(ROOT, resolved);
+  if (!rel || rel.startsWith('..') || path.isAbsolute(rel)) return null;
+  const segs = rel.split(/[\\/]+/);
+  if (segs.some(s => {
+    const low = s.toLowerCase();
+    return low === '.env' || low.startsWith('.env.') || low === '_private' || low === '.git';
+  })) {
+    return null;
+  }
+  return resolved;
+}
+
+function safeMerge(target, ...sources) {
+  const out = (target && typeof target === 'object') ? target : {};
+  for (const src of sources) {
+    if (!src || typeof src !== 'object') continue;
+    for (const key of Object.keys(src)) {
+      if (UNSAFE_JSON_KEYS.has(key)) continue;
+      out[key] = src[key];
+    }
+  }
+  return out;
+}
 
 function getFileMtimeMs(relPath) {
   try {
-    const st = fs.statSync(path.join(ROOT, relPath));
+    const full = resolveSafeRootPath(relPath);
+    if (!full) return 0;
+    const st = fs.statSync(full);
     return st.isFile() ? st.mtimeMs : 0;
   } catch (_) {
     return 0;
@@ -76,7 +108,9 @@ function getFileMtimeMs(relPath) {
 
 function getFileStamp(relPath) {
   try {
-    const st = fs.statSync(path.join(ROOT, relPath));
+    const full = resolveSafeRootPath(relPath);
+    if (!full) return '0:0';
+    const st = fs.statSync(full);
     return st.isFile() ? `${st.mtimeMs}:${st.size}` : '0:0';
   } catch (_) {
     return '0:0';
@@ -84,7 +118,8 @@ function getFileStamp(relPath) {
 }
 
 function readJsonSafe(relPath, fallback = null, trackFile = true) {
-  const full = path.join(ROOT, relPath);
+  const full = resolveSafeRootPath(relPath);
+  if (!full) return fallback;
   try {
     for (let attempt = 0; attempt < 3; attempt++) {
       let stBefore;
@@ -201,7 +236,7 @@ function reloadHotStore() {
       const key = String(v.sku).trim().toLowerCase();
       if (!key) continue;
       nextSkuSet.add(key);
-      const merged = Object.assign({}, v);
+      const merged = safeMerge({}, v);
       targetTrackMap.set(key, merged);
       nextVideoRecordMap.set(key, { track, video: merged });
     }
@@ -211,7 +246,7 @@ function reloadHotStore() {
       if (!key) continue;
       nextSkuSet.add(key);
       const prev = targetTrackMap.get(key) || {};
-      const merged = Object.assign({}, prev, c, {
+      const merged = safeMerge({}, prev, c, {
         mp4: c.mp4 || prev.mp4 || c.file || prev.file || '',
         file: c.file || prev.file || c.mp4 || prev.mp4 || '',
         image: c.image || prev.image || c.thumb || prev.thumb || '',
@@ -230,7 +265,7 @@ function reloadHotStore() {
         if (!key) continue;
         nextSkuSet.add(key);
         const prev = targetTrackMap.get(key) || {};
-        const merged = Object.assign({}, it, prev, {
+        const merged = safeMerge({}, it, prev, {
           mp4: prev.mp4 || it.mp4 || prev.file || it.file || '',
           file: prev.file || it.file || prev.mp4 || it.mp4 || '',
           image: prev.image || it.image || prev.thumb || it.thumb || '',
@@ -284,7 +319,7 @@ function reloadHotStore() {
           moduleId: mod.id || `M${String(mIdx + 1).padStart(2, '0')}`,
           moduleTitle: mod.title || '',
           moduleIndex: mIdx + 1,
-          item: Object.assign({}, itemEntry, { mp4: mp4Path })
+          item: safeMerge({}, itemEntry, { mp4: mp4Path })
         });
         return itemEntry;
       });
@@ -327,7 +362,7 @@ function reloadHotStore() {
     const obj = readJsonSafe(rel, {});
     if (obj && typeof obj === 'object') {
       for (const [k, val] of Object.entries(obj)) {
-        if (!val) continue;
+        if (!val || UNSAFE_JSON_KEYS.has(k)) continue;
         nextInsightsMap.set(String(k).trim().toLowerCase(), val);
         if (val.sku) {
           nextInsightsMap.set(String(val.sku).trim().toLowerCase(), val);
@@ -394,7 +429,7 @@ function reloadHotStore() {
   _reupBySkuMap = nextReupBySku;
 
   // Reset derived caches so they recompute on next access
-  _nicheRadarCache = { mtimeMs: -1, data: null };
+  _nicheRadarCache = { stamp: '0:0', data: null };
   _overviewSummaryCache = { mtimeMs: -1, computedAt: 0, data: null };
   _storeLoaded = true;
 
@@ -436,8 +471,8 @@ function getHuanItemBySku(sku) {
 
 function getNicheRadarResponse() {
   const relPath = 'data-tabs/ngach-xanh.json';
-  const curMtime = getFileMtimeMs(relPath);
-  if (_nicheRadarCache.data && _nicheRadarCache.mtimeMs === curMtime) {
+  const curStamp = getFileStamp(relPath);
+  if (_nicheRadarCache.data && _nicheRadarCache.stamp === curStamp) {
     return _nicheRadarCache.data;
   }
 
@@ -526,7 +561,7 @@ function getNicheRadarResponse() {
     items
   };
 
-  _nicheRadarCache = { mtimeMs: curMtime, data: response };
+  _nicheRadarCache = { stamp: curStamp, data: response };
   return response;
 }
 
@@ -540,7 +575,7 @@ function computeOverviewFromRam() {
   let totalMb = 0;
   let totalBytes = 0;
   let freeCount = 0;
-  const marketCounts = {};
+  const marketCountsMap = new Map();
   let emptyMarket = 0;
   const resCounts = { '1080p': 0, '2K': 0, '4K': 0, 'Shorts 1080p': 0 };
 
@@ -551,7 +586,7 @@ function computeOverviewFromRam() {
     if (s === '🇻🇳 Việt Nam' || up === 'VN' || up === 'VIETNAM' || up === 'VIỆT NAM' || up === 'VIỆT') return '🇻🇳 Việt';
     if (s === '🇯🇵 Nhật Bản' || up === 'JP' || up === 'JAPAN' || up === 'NHẬT BẢN' || up === 'NHẬT') return '🇯🇵 Nhật';
     if (s === '🇰🇷 Hàn Quốc' || up === 'KR' || up === 'KOREA' || up === 'HÀN QUỐC' || up === 'HÀN') return '🇰🇷 Hàn';
-    if (s === '🇺🇸 US / Global' || s === '🇺🇸 Mỹ' || up === 'US' || up === 'USA' || up === 'GLOBAL' || up === 'US / GLOBAL' || up === 'MỸ' || up === 'MỸ / GLOBAL') return '🇺🇸 Mỹ / Global';
+    if (s === '🇺🇸 US / Global' || s === '🇺🇸 Mỹ' || s === '🇺🇸 Hoa Kỳ' || up === 'US' || up === 'USA' || up === 'GLOBAL' || up === 'US / GLOBAL' || up === 'MỸ' || up === 'MỸ / GLOBAL' || up === 'HOA KỲ') return '🇺🇸 Mỹ / Global';
     const noFlag = s.replace(/^[^\p{L}\p{N}]+/u, '').trim();
     if (noFlag === 'View Ngoại' || up === 'NGOẠI' || up === 'NGOAI' || up === 'VIEW NGOẠI' || up === 'VIEW NGOAI') return '🌐 Ngoại';
     if (up === 'CN' || up === 'CHINA' || up === 'TRUNG' || up === 'TRUNG QUỐC') return '🇨🇳 Trung';
@@ -582,12 +617,12 @@ function computeOverviewFromRam() {
       emptyMarket++;
     } else {
       for (const m of vMarkets) {
-        marketCounts[m] = (marketCounts[m] || 0) + 1;
+        marketCountsMap.set(m, (marketCountsMap.get(m) || 0) + 1);
       }
     }
   }
 
-  const marketRows = Object.entries(marketCounts).sort((a, b) => b[1] - a[1]);
+  const marketRows = [...marketCountsMap.entries()].sort((a, b) => b[1] - a[1]);
   if (emptyMarket) marketRows.push(['Chưa gắn', emptyMarket]);
 
   const kenhRaw = normalizeArray(readJsonSafe('data-tabs/kenh-mau.json', []));
@@ -721,24 +756,22 @@ function getOverviewSummary() {
     const diskData = readJsonSafe(relPath, null);
     if (diskData && typeof diskData === 'object') {
       const fallback = computeOverviewFromRam();
-      const merged = Object.assign({}, fallback, diskData, {
-        counts: Object.assign({}, diskData.counts || {}, fallback.counts),
-        storage: Object.assign({}, diskData.storage || {}, fallback.storage)
+      const merged = safeMerge({}, fallback, diskData, {
+        counts: safeMerge({}, diskData.counts || {}, fallback.counts),
+        storage: safeMerge({}, diskData.storage || {}, fallback.storage)
       });
       _overviewSummaryCache = { mtimeMs: curMtime, computedAt: Date.now(), data: merged };
       return merged;
     }
   }
-  if (_overviewSummaryCache.data && _overviewSummaryCache.mtimeMs === 0) {
-    return _overviewSummaryCache.data;
-  }
-  const computed = computeOverviewFromRam();
-  _overviewSummaryCache = { mtimeMs: 0, computedAt: Date.now(), data: computed };
-  return computed;
+  // When overview_summary.json is missing/removed (curMtime === 0) or unreadable,
+  // reset stale cache rather than returning an old cached object.
+  _overviewSummaryCache = { mtimeMs: -1, computedAt: 0, data: null };
+  return computeOverviewFromRam();
 }
 
 function getInsightForSku(resolvedSku) {
-  if (!resolvedSku) return null;
+  if (!resolvedSku || /[\\/]|\.\./.test(String(resolvedSku))) return null;
   const skuKey = String(resolvedSku).trim().toLowerCase();
   const ramIns = _insightsBySkuLower.get(skuKey) || null;
   const relPath = `video/${resolvedSku}/insight.json`;
@@ -748,7 +781,7 @@ function getInsightForSku(resolvedSku) {
     if (cached && cached.stamp === curStamp) {
       _singleInsightCache.delete(skuKey);
       _singleInsightCache.set(skuKey, cached);
-      return ramIns ? Object.assign({}, cached.data, ramIns) : cached.data;
+      return ramIns ? safeMerge({}, cached.data, ramIns) : cached.data;
     }
     const diskIns = readJsonSafe(relPath, null, false);
     if (diskIns) {
@@ -758,14 +791,14 @@ function getInsightForSku(resolvedSku) {
         _singleInsightCache.delete(oldestKey);
       }
       _singleInsightCache.set(skuKey, { stamp: curStamp, data: diskIns });
-      return ramIns ? Object.assign({}, diskIns, ramIns) : diskIns;
+      return ramIns ? safeMerge({}, diskIns, ramIns) : diskIns;
     }
   }
   return ramIns;
 }
 
 function getTranscriptForSku(resolvedSku) {
-  if (!resolvedSku) return null;
+  if (!resolvedSku || /[\\/]|\.\./.test(String(resolvedSku))) return null;
   const skuKey = String(resolvedSku).trim().toLowerCase();
   const relPath = `video/${resolvedSku}/transcript.json`;
   const curStamp = getFileStamp(relPath);
@@ -895,6 +928,7 @@ module.exports = {
   getDgmdItemBySku,
   getHuanItemBySku,
   getNicheRadarResponse,
+  computeOverviewFromRam,
   getOverviewSummary,
   getPlayerBootstrap
 };

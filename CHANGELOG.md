@@ -617,7 +617,7 @@
 - Cắt giảm từ 200 tools xuống còn 126 tools, tiết kiệm ngay ~32.000 tokens context cho mỗi lượt chat.
 
 ### 5. Đồng Bộ VPS Production 5 Bước & Check-Pass 100%
-- SCP `VIDEO-f59aa7.mp4` (61.6 MB), transcript `.srt`, và `.agents` sang VPS `103.249.201.164`.
+- SCP `VIDEO-f59aa7.mp4` (61.6 MB), transcript `.srt`, và `.agents` sang VPS `<VPS_IP>`.
 - Rebuild SQLite master database: `data/h2dev_master.db` (2014 FTS5 entries).
 - Pass `validate-project.js`, pass `deep-ui-acceptance.js` (11/11 pass), pass `find-404.js` (0 lỗi).
 
@@ -2386,7 +2386,7 @@ User xác nhận VPS API đang dừng/chậm → chuyển test **9Router LOCAL `
     + Tab 4: Kịch bản lồng tiếng Voice AI hoàn chỉnh & Phân tích cấu trúc 3 hồi + Prompt Midjourney/Veo 3.1.
     + Bộ 4 nút Sao Chép Tiện Ích: Copy Song Ngữ, Copy Tiếng Việt, Copy Tiếng Gốc, Copy Kịch Bản AI.
 - **Đồng bộ tuyệt đối Local ↔ VPS:**
-  - Codebase và giao diện tại Local (`http://100.83.146.28:8899/`) và VPS (`https://h2dev-learn.tonymmo.com/`) hoàn toàn đồng nhất 100%.
+  - Codebase và giao diện tại Local (`http://<TAILSCALE_IP>:8899/`) và VPS (`https://h2dev-learn.tonymmo.com/`) hoàn toàn đồng nhất 100%.
 
 ## 2026-09-13 — Khóa vĩnh viễn Bộ 10 Tiêu Chuẩn Vàng Nghiệm Thu Check Pass 1 Video & Đồng bộ Memory 3 Tầng
 
@@ -2590,8 +2590,8 @@ User xác nhận VPS API đang dừng/chậm → chuyển test **9Router LOCAL `
 - No code or core-data change was made by this documentation closeout; product E2E, paid/provider work, upload, publish, and service changes remain out of scope.
 # H2DEV-Project — CHANGELOG & TRẠNG THÁI (bản chuẩn hiện tại)
 
-> Cập nhật: **2026-09-09** · Server chạy trên máy **192.168.50.216** (laptop-saxukeb)
-> ⚠️ QUY TẮC: mọi data/code nằm trên máy 50.216 (share `Y:` = `\\192.168.50.216\laptopshare`). Không clone sang máy khác.
+> Cập nhật: **2026-09-09** · Server chạy trên máy **<LAN_IP>** (laptop-saxukeb)
+> ⚠️ QUY TẮC: mọi data/code nằm trên máy 50.216 (share `Y:` = `\\<LAN_IP>\laptopshare`). Không clone sang máy khác.
 
 ## 2026-09-09 — Nâng cấp vidIQ API Key mới và kích hoạt toàn diện MCP Pool
 
@@ -2760,7 +2760,7 @@ Backup: `_backup\20260831-normalize\` (`chien-luoc.json` + `ngach-xanh.json` tr�
 
 ### 2. 🔒 Vá lộ file qua web (`server.js:150`)
 
-Đo bằng `curl` trên LAN `192.168.50.216:8899` — **3 vùng từng trả HTTP 200**:
+Đo bằng `curl` trên LAN `<LAN_IP>:8899` — **3 vùng từng trả HTTP 200**:
 
 | Vùng | Trước | Sau |
 |---|---|---|
@@ -2913,7 +2913,7 @@ Audit bằng evidence thật: `validate-project.js` PASS (130/161/45/96/130/130)
 || Việc | Chi tiết |
 |---|---|---|
 | **Sửa SSoT** | `AGENTS.md` Rules cứng: đổi nguồn MCP từ `d:\YTB\.mcp.json` (**không tồn tại**) → `.agents\mcp_config.json` (MCP Pool 194 tools). Thêm dòng cảnh báo legacy. |
-| **Khởi động server** | Port 8899 đang `ECONNREFUSED` → chạy `node server.js`. Verify: local HTTP 200 · LAN `192.168.50.216:8899` HTTP 200. |
+| **Khởi động server** | Port 8899 đang `ECONNREFUSED` → chạy `node server.js`. Verify: local HTTP 200 · LAN `<LAN_IP>:8899` HTTP 200. |
 | **Sửa script** | `scripts/check-broken-refs.js` báo 18 MISSING, **100% false positive** (quét cả template literal `${esc()}`). Viết lại bộ lọc: bỏ `${...}`, url tuyệt đối, `data:`/`blob:`/`javascript:`/`#`/query. Kết quả mới: 9 ref tĩnh · **0 broken** · 27 dynamic bỏ qua. |
 | **Dọn gốc** | `D:\YTB\MCP_POOL_HUONG_DAN.md` (8.202 B) → `docs\NOI-BO\MCP_POOL_HUONG_DAN.md` (theo `KE-HOACH-SUA-CHUA-TOAN-DIEN-2026-08-27.md:451`). Gốc `D:\YTB` giờ chỉ còn `README.md`. |
 | **Backup** | `_backup\20260828\AGENTS.md` + `check-broken-refs.js` (trước khi sửa). |
@@ -3058,7 +3058,7 @@ Backup YTB: `data/_backup_desc_20260822_214012/` · Vault: `SS_20260731_MONA_ACA
 
 ## 🎨 BẢN 2026-08-22 (c) — UI Linear dark / Vercel restraint
 
-Audit Rams live `http://100.83.146.28:8899/` = **14/30 REDESIGN chrome** (`DESIGN-IS-2026-08-22/`).
+Audit Rams live `http://<TAILSCALE_IP>:8899/` = **14/30 REDESIGN chrome** (`DESIGN-IS-2026-08-22/`).
 
 - Token: `#08090a` / indigo `#5e6ad2` · Inter only · tab active hairline, không pink gradient.
 - Chrome: H1 không emoji, CTA `btn-primary`, footer 148 live / 13 dead.
@@ -3208,7 +3208,7 @@ Phá header+tab ngang. App sidebar 8 mục, contrast YouTube Studio (`#0f1115` /
 
 ## 🌐 BẢN 2026-08-20 (13) — Sửa web `index.html` đồng bộ data mới (check qua server local)
 
-Check server web: Tailscale `100.83.146.28` không truy cập được (TCP failed) nhưng **local `127.0.0.1:8899` / LAN `192.168.50.216:8899` chạy OK** (STATUS 200, port 8899 listen 0.0.0.0). Web serve file tĩnh từ `D:\YTB\H2DEV-Project` → data web = data JSON trên máy (tự động khớp sau khi sửa data).
+Check server web: Tailscale `<TAILSCALE_IP>` không truy cập được (TCP failed) nhưng **local `127.0.0.1:8899` / LAN `<LAN_IP>:8899` chạy OK** (STATUS 200, port 8899 listen 0.0.0.0). Web serve file tĩnh từ `D:\YTB\H2DEV-Project` → data web = data JSON trên máy (tự động khớp sau khi sửa data).
 
 **Phát hiện + sửa 2 lỗi trong `index.html`:**
 1. **`NICHE_MAP` thiếu 6 ngách mới (30-34 + Trái Đất)** → các ngách này fallback sai nhóm hiển thị. Đã thêm map: Khoa học/Trái Đất → "Khoa học EN" · Everyday History + Food History → "Lịch sử / Quân sự" · True Origin → "Kinh tế / Tài chính" · UFO/Roswell → "Drama / Stories" · Senior Wisdom KR → "Sức khỏe / Lão hóa".
@@ -3460,7 +3460,7 @@ Script tái chạy (an toàn, không nhân đôi card): `node scripts/sync-ngoai
 | **Tray icon** | Nền **đỏ + chữ Y trắng**. Menu: Open Web / Restart / Stop / Start / Open Log / Exit |
 | **Tự chạy khi mở máy** | Task `H2DEV-Server-AutoStart` (AtLogOn) — đã đăng ký |
 | **Tự update code** | Sửa `server.js` → Restart qua tray. Sửa data/HTML → refresh là thấy mới |
-| **Địa chỉ truy cập** | LAN `http://192.168.50.216:8899/` · Tailscale `http://100.83.146.28:8899/` |
+| **Địa chỉ truy cập** | LAN `http://<LAN_IP>:8899/` · Tailscale `http://<TAILSCALE_IP>:8899/` |
 | **Cài đặt lần đầu** | `install-h2dev-startup.ps1` (Admin): mở firewall 8899 + đăng ký task |
 
 ---

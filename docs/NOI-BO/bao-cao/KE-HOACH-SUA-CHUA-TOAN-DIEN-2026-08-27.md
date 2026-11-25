@@ -82,7 +82,7 @@ git add -A; git commit -m "baseline 2026-08-27 (pre-remediation)"
 | `docs/NOI-BO/chat/phien-1-khoi-dong-du-an.md` | **10 chuỗi dạng key thật** (Tavily / Firecrawl / Context.dev) — em đếm pattern, không in giá trị |
 | `knowledge-hub/docs/HUONG-DAN-MCP-CHUAN.md:13,51-52,113` | Bearer key của MCP Pool VPS bằng plaintext |
 
-`server.js:150` chặn `_backup, _private, node_modules, inbox, _verify, .git, _archive` + `.env*` + `mcp-keys*` — **`docs/` và `knowledge-hub/` không nằm trong danh sách**. Server bind `0.0.0.0` (`server.js:8`), CORS `Access-Control-Allow-Origin: *` (`server.js:67-70`), không có auth. → bất kỳ thiết bị nào chạm được `192.168.50.216:8899` hoặc `100.83.146.28:8899` đọc được 2 file đó.
+`server.js:150` chặn `_backup, _private, node_modules, inbox, _verify, .git, _archive` + `.env*` + `mcp-keys*` — **`docs/` và `knowledge-hub/` không nằm trong danh sách**. Server bind `0.0.0.0` (`server.js:8`), CORS `Access-Control-Allow-Origin: *` (`server.js:67-70`), không có auth. → bất kỳ thiết bị nào chạm được `<LAN_IP>:8899` hoặc `<TAILSCALE_IP>:8899` đọc được 2 file đó.
 
 ### B1.1 — Xoay vòng key [ANH DUYỆT / ANH LÀM]
 Xoay trước, sửa file sau — ngược thứ tự là vô nghĩa vì key đã nằm ngoài tầm kiểm soát.

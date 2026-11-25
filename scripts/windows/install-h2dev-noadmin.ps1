@@ -1,4 +1,4 @@
-# ============================================================
+﻿# ============================================================
 #  H2DEV Auto-Start Installer (NO ADMIN needed)
 #  Uses Startup folder + HKCU registry — works without elevation.
 #
@@ -12,11 +12,14 @@
 # ============================================================
 $ErrorActionPreference = "Continue"
 
-$root = Split-Path -Parent $MyInvocation.MyCommand.Path
-$log  = Join-Path $root "h2dev-tray.log"
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$root      = Split-Path -Parent (Split-Path -Parent $scriptDir)
+$logDir    = Join-Path $root "logs"
+$log       = Join-Path $logDir "h2dev-tray.log"
 
 function Write-Diag($msg) {
   try {
+    if (-not (Test-Path $logDir)) { New-Item -ItemType Directory -Path $logDir -Force | Out-Null }
     Add-Content -Path $log -Value ("[{0}] [INSTALL] {1}" -f (Get-Date -Format "yyyy-MM-dd HH:mm:ss"), $msg)
   } catch { }
 }
@@ -33,10 +36,12 @@ $startupFolder = [Environment]::GetFolderPath("Startup")
 $shortcutPath  = Join-Path $startupFolder "H2DEV-Server.lnk"
 $vbsPath       = Join-Path $root "h2dev-silent.vbs"
 
+$wscriptExe    = "$env:SystemRoot\System32\wscript.exe"
+
 try {
   $shell = New-Object -ComObject WScript.Shell
   $shortcut = $shell.CreateShortcut($shortcutPath)
-  $shortcut.TargetPath = "C:\Windows\System32\wscript.exe"
+  $shortcut.TargetPath = $wscriptExe
   $shortcut.Arguments = "`"$vbsPath`""
   $shortcut.WorkingDirectory = $root
   $shortcut.WindowStyle = 7  # minimized
@@ -54,7 +59,7 @@ Write-Host ""
 Write-Host "[2/3] Adding HKCU Run key (backup auto-start) ..."
 $runKey = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run"
 try {
-  Set-ItemProperty -Path $runKey -Name "H2DEV-Server" -Value "wscript.exe `"$vbsPath`"" -ErrorAction Stop
+  Set-ItemProperty -Path $runKey -Name "H2DEV-Server" -Value "`"$wscriptExe`" `"$vbsPath`"" -ErrorAction Stop
   Write-Host "      OK - HKCU Run key added."
   Write-Diag "HKCU Run key added"
 } catch {
@@ -65,7 +70,7 @@ try {
 Write-Host ""
 Write-Host "[3/3] Starting server now (hidden tray) ..."
 try {
-  Start-Process -FilePath "wscript.exe" -ArgumentList "`"$vbsPath`"" -WindowStyle Hidden
+  Start-Process -FilePath $wscriptExe -ArgumentList "`"$vbsPath`"" -WindowStyle Hidden
   Write-Host "      OK - tray launched (hidden). Waiting 4 seconds ..."
   Write-Diag "Tray launched via wscript"
   Start-Sleep -Seconds 4
@@ -86,6 +91,8 @@ if ($listening) {
   Write-Diag "Port 8899 not listening after install"
 }
 
+$lanIp = if ($env:H2DEV_LAN_IP) { $env:H2DEV_LAN_IP } else { "<LAN_IP>" }
+$tsIp  = if ($env:H2DEV_TAILSCALE_IP) { $env:H2DEV_TAILSCALE_IP } else { "<TAILSCALE_IP>" }
 Write-Host ""
 Write-Host "=============================================="
 Write-Host " DONE. H2DEV server now auto-starts at logon:"
@@ -94,9 +101,9 @@ Write-Host "  - HKCU Run key backup: H2DEV-Server"
 Write-Host "  - Runs hidden (tray icon in system tray)"
 Write-Host ""
 Write-Host " Access:"
-Write-Host "   Local:    http://127.0.0.1:8899/"
-Write-Host "   LAN:      http://192.168.50.216:8899/"
-Write-Host "   Tailscale: http://100.83.146.28:8899/"
+Write-Host "   Local:     http://127.0.0.1:8899/"
+Write-Host "   LAN:       http://${lanIp}:8899/"
+Write-Host "   Tailscale: http://${tsIp}:8899/"
 Write-Host ""
 Write-Host " Manage (tray icon):"
 Write-Host "   Right-click tray icon > Open Web / Restart / Stop / Exit"

@@ -32,15 +32,69 @@ Requirements:
 """
 
 import os
+import re
 import sys
 import json
 import time
+import socket
+import ipaddress
 import threading
 import argparse
 import subprocess
+import shutil
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+from urllib.parse import urlparse, urljoin
 import requests
+
+SAFE_ID_RE = re.compile(r"^[A-Za-z0-9_-]+$")
+
+
+def assert_safe_id(val: str, label: str = "id") -> str:
+    s = str(val or "").strip()
+    if not SAFE_ID_RE.fullmatch(s):
+        raise ValueError(f"Invalid {label} (must match ^[A-Za-z0-9_-]+$): {val!r}")
+    return s
+
+
+def validate_remote_url(url: str) -> str:
+    parsed = urlparse(str(url or "").strip())
+    if parsed.scheme != "https" or not parsed.hostname:
+        raise ValueError(f"Disallowed remote URL (must be https:// with hostname): {url!r}")
+    host = parsed.hostname.strip().lower().rstrip(".")
+    if host in ("localhost", "localhost.localdomain") or host.endswith((".localhost", ".local", ".internal")):
+        raise ValueError(f"Disallowed local/internal host: {host!r}")
+    try:
+        infos = socket.getaddrinfo(host, parsed.port or 443, type=socket.SOCK_STREAM)
+    except socket.gaierror as e:
+        raise ValueError(f"Failed to resolve host {host!r}: {e}") from e
+    if not infos:
+        raise ValueError(f"No IP addresses resolved for host {host!r}")
+    for info in infos:
+        ip_str = info[4][0].split("%")[0]
+        ip_obj = ipaddress.ip_address(ip_str)
+        if (
+            ip_obj.is_private
+            or ip_obj.is_loopback
+            or ip_obj.is_link_local
+            or ip_obj.is_multicast
+            or ip_obj.is_reserved
+            or ip_obj.is_unspecified
+            or not ip_obj.is_global
+        ):
+            raise ValueError(f"Disallowed non-public IP {ip_str} for host {host!r}")
+    return parsed.geturl()
+
+
+def safe_https_get(url: str, timeout: int = 120, max_redirects: int = 3) -> requests.Response:
+    current = validate_remote_url(url)
+    for _ in range(max_redirects + 1):
+        resp = requests.get(current, timeout=timeout, allow_redirects=False)
+        if resp.status_code in (301, 302, 303, 307, 308) and resp.headers.get("Location"):
+            current = validate_remote_url(urljoin(current, resp.headers["Location"]))
+            continue
+        return resp
+    raise ValueError(f"Too many redirects fetching {url!r}")
 
 # Force UTF-8 stdout on Windows (cp1252 console can't render →, ✓, etc.)
 if hasattr(sys.stdout, "reconfigure"):
@@ -139,26 +193,6 @@ def fmt_elapsed(start: float) -> str:
     return f"{s // 60}m{s % 60:02d}s" if s >= 60 else f"{s}s"
 
 
-def valid_media(path: Path, kind: str) -> bool:
-    """Validate a generated asset; a path existing alone is not success."""
-    if not path.is_file() or path.stat().st_size < 32:
-        return False
-    try:
-        with path.open("rb") as fh:
-            head = fh.read(128)
-        if kind == "image":
-            if not (head.startswith(b"\x89PNG\r\n\x1a\n") or head.startswith(b"\xff\xd8\xff")):
-                return False
-            subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "json", str(path)], check=True, capture_output=True, text=True, timeout=30)
-            return True
-        if b"ftyp" not in head[:64] and not head.startswith(b"\x1a\x45\xdf\xa3"):
-            return False
-        subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "default=nw=1:nk=1", str(path)], check=True, capture_output=True, text=True, timeout=30)
-        return True
-    except (OSError, subprocess.SubprocessError):
-        return False
-
-
 # ── Shared Jobs API helpers ───────────────────────────────────────────────────
 
 def submit_job(model: str, input_payload: dict) -> tuple:
@@ -214,17 +248,40 @@ def poll_job(task_id: str, label: str) -> tuple:
     return None, f"Timed out after {timeout_s // 60}m{timeout_s % 60:02d}s"
 
 
+def valid_media(path: Path, kind: str) -> bool:
+    """Validate magic bytes and decodability; existence alone is insufficient."""
+    if not path.is_file() or path.stat().st_size < 32:
+        return False
+    try:
+        with path.open("rb") as fh:
+            head = fh.read(128)
+        probe = shutil.which("ffprobe") or "ffprobe"
+        if kind == "image":
+            if not (head.startswith(b"\x89PNG\r\n\x1a\n") or head.startswith(b"\xff\xd8\xff")):
+                return False
+            subprocess.run([probe, "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "json", str(path)], check=True, capture_output=True, text=True, timeout=30)
+            return True
+        if b"ftyp" not in head[:64] and not head.startswith(b"\x1a\x45\xdf\xa3"):
+            return False
+        subprocess.run([probe, "-v", "error", "-show_entries", "format=duration", "-of", "default=nw=1:nk=1", str(path)],
+                       check=True, capture_output=True, text=True, timeout=30)
+        return True
+    except (OSError, subprocess.SubprocessError):
+        return False
+
+
 def download_file(url: str, output_path: Path) -> bool:
     try:
-        resp = requests.get(url, timeout=120)
+        resp = safe_https_get(url, timeout=120)
         resp.raise_for_status()
         kind = "image" if output_path.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp"} else "video"
         partial = output_path.with_suffix(output_path.suffix + ".part")
         partial.write_bytes(resp.content)
         if not valid_media(partial, kind):
             partial.unlink(missing_ok=True)
+            tprint(f"    Downloaded response is not a valid {kind}: {output_path.name}")
             return False
-        partial.replace(output_path)
+        os.replace(partial, output_path)
         return True
     except Exception as e:
         tprint(f"    Download failed: {e}")
@@ -236,10 +293,10 @@ def download_file(url: str, output_path: Path) -> bool:
 def run_composite(shot: dict, bg_map: dict, char_map: dict,
                   composite_path: Path) -> tuple:
     """Generate one composite image. Returns (shot_id, url, None) or (shot_id, None, error)."""
-    sid = shot["shot_id"]
+    sid = assert_safe_id(shot.get("shot_id"), "shot_id")
     t0  = time.time()
     if composite_path.exists() and valid_media(composite_path, "image"):
-        return sid, None, "valid composite exists; refusing to overwrite without a recorded job URL"
+        return sid, None, "valid composite exists but no saved remote URL; add it to composites/manifest.json"
 
     # Build input_urls: background first, then characters
     bg         = bg_map.get(shot.get("background", ""), {})
@@ -285,7 +342,7 @@ def run_composite(shot: dict, bg_map: dict, char_map: dict,
 
 def run_video(shot: dict, composite_url: str, clip_path: Path) -> tuple:
     """Generate one video clip. Returns (shot_id, True, None) or (shot_id, False, error)."""
-    sid = shot["shot_id"]
+    sid = assert_safe_id(shot.get("shot_id"), "shot_id")
     t0  = time.time()
     if valid_media(clip_path, "video"):
         return sid, True, None
@@ -339,8 +396,16 @@ def main():
     chars_data = json.loads(Path("characters.json").read_text(encoding="utf-8"))
     bgs_data   = json.loads(Path("backgrounds.json").read_text(encoding="utf-8"))
 
-    char_map = {c["character_id"]: c for c in chars_data["characters"]}
-    bg_map   = {b["bg_id"]:        b for b in bgs_data["backgrounds"]}
+    char_map = {}
+    for c in chars_data["characters"]:
+        cid = assert_safe_id(c.get("character_id"), "character_id")
+        c["character_id"] = cid
+        char_map[cid] = c
+    bg_map = {}
+    for b in bgs_data["backgrounds"]:
+        bid = assert_safe_id(b.get("bg_id"), "bg_id")
+        b["bg_id"] = bid
+        bg_map[bid] = b
 
     # Verify image_url fields (set by generate_images.py, Step 3)
     missing = []
@@ -357,10 +422,13 @@ def main():
         raise SystemExit(1)
 
     all_shots = shots_data.get("shots", [])
+    for s in all_shots:
+        s["shot_id"] = assert_safe_id(s.get("shot_id"), "shot_id")
 
     # ── Build pending list ─────────────────────────────────────────────────────
     if args.shot:
-        # Single-shot mode — Claude calls this once per shot for approval workflow
+        args.shot = assert_safe_id(args.shot, "shot_id")
+        # Single-shot mode — process only the requested shot.
         target = next((s for s in all_shots if s["shot_id"] == args.shot), None)
         if not target:
             print(f"ERROR: shot_id '{args.shot}' not found in shots.json")
@@ -373,10 +441,10 @@ def main():
         skipped = []
         print(f"  Mode    : single-shot  ({args.shot})")
     else:
-        # Bulk mode — process all pending shots without pausing
+        # Bulk mode — process all shots whose clips are not valid.
         pending = [s for s in all_shots if not valid_media(Path("clips") / f"{s['shot_id']}.mp4", "video")]
         skipped = [s["shot_id"] for s in all_shots if s not in pending]
-        print(f"  Mode    : bulk  ({len(pending)} pending, {len(skipped)} already done)")
+        print(f"  Mode    : bulk  ({len(pending)} pending, {len(skipped)} already valid)")
 
     print(f"  Video   : grok-imagine/image-to-video  (duration: {VIDEO_DURATION}s, {VIDEO_RESOLUTION}, {VIDEO_ASPECT_RATIO}, mode: {VIDEO_MODE})\n")
 
@@ -390,17 +458,18 @@ def main():
     Path("clips").mkdir(exist_ok=True)
 
     results        = {"success": [], "failed": [], "skipped": skipped}
+    composite_urls = {}   # shot_id → composite_url (filled in Phase 1)
     composite_index_path = Path("composites") / "manifest.json"
     try:
         composite_index = json.loads(composite_index_path.read_text(encoding="utf-8")) if composite_index_path.exists() else {}
     except (OSError, json.JSONDecodeError):
         composite_index = {}
-    composite_urls = {}   # shot_id → composite_url (filled in Phase 1)
     for shot in pending:
         sid = shot["shot_id"]
         saved_url = composite_index.get(sid)
         if saved_url and valid_media(Path("composites") / f"{sid}.png", "image"):
             composite_urls[sid] = saved_url
+
     composite_pending = [s for s in pending if s["shot_id"] not in composite_urls]
 
     # ── Phase 1: Composites ────────────────────────────────────────────────────
@@ -439,13 +508,12 @@ def main():
                 else:
                     tprint(f"  [{sid}] composite FAILED: {err}")
                     results["failed"].append(sid)
-
-    if composite_pending:
-        composite_index_tmp = composite_index_path.with_suffix(composite_index_path.suffix + ".part")
-        composite_index_tmp.write_text(json.dumps(composite_index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        composite_index_tmp.replace(composite_index_path)
     else:
         print("Phase 1 — all valid composites reused from composites/manifest.json.\n")
+
+    composite_index_tmp = composite_index_path.with_suffix(composite_index_path.suffix + ".part")
+    composite_index_tmp.write_text(json.dumps(composite_index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    os.replace(composite_index_tmp, composite_index_path)
     print(f"\nPhase 1 done in {fmt_elapsed(p1_start)}: "
           f"{len(composite_urls)}/{len(pending)} composites ready.\n")
 
@@ -514,7 +582,7 @@ def main():
             print(f"  - {sid}")
         raise SystemExit(1)
     else:
-        print("\nAll done! The Story-to-Animation pipeline is complete.")
+        print("\nAll requested shots have valid local outputs. Review the MP4s before publishing.")
 
 
 if __name__ == "__main__":

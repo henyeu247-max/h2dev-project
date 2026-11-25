@@ -5,13 +5,26 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
-const { execSync } = require('child_process');
+const { execFileSync } = require('child_process');
+
+const PY_CMD = process.platform === 'win32' ? 'py' : 'python3';
+const PY_PREFIX = process.platform === 'win32' ? ['-3'] : [];
+const SAFE_SKU_RE = /^[A-Za-z0-9_-]+$/;
+
+function assertSafeSku(sku) {
+  const s = String(sku || '').trim();
+  if (!SAFE_SKU_RE.test(s)) {
+    throw new Error(`Invalid SKU format: ${s}`);
+  }
+  return s;
+}
 
 const ROOT = 'd:/YTB/H2DEV-Project';
 const FFMPEG = 'D:/Linly-Dubbing/bin/ffmpeg.exe';
 const FFPROBE = 'D:/Linly-Dubbing/bin/ffprobe.exe';
 
 async function downloadHlsLesson(sku, browser) {
+  sku = assertSafeSku(sku);
   console.log(`\n================================================================`);
   console.log(`>>> BẮT ĐẦU TẢI HLS AES-128 SKU: ${sku}`);
   console.log(`================================================================`);
@@ -47,7 +60,7 @@ async function downloadHlsLesson(sku, browser) {
       return await res.text();
     }, masterUrl);
 
-    const lines = masterText.split('\n').map(l => l.trim()).filter(Boolean);
+    const lines = masterText.split(/\r?\n|\r/).map(l => l.trim()).filter(Boolean);
     let chosenRel = null;
     for (let i = 0; i < lines.length; i++) {
       if (lines[i].includes('RESOLUTION=1920x1080') && i + 1 < lines.length) {
@@ -77,7 +90,7 @@ async function downloadHlsLesson(sku, browser) {
     return await res.text();
   }, targetChunkUrl);
 
-  const chunkLines = chunkM3u8Text.split('\n').map(l => l.trim()).filter(Boolean);
+  const chunkLines = chunkM3u8Text.split(/\r?\n|\r/).map(l => l.trim()).filter(Boolean);
   let keyRelUrl = null;
   const segmentUrls = [];
 
@@ -121,7 +134,11 @@ async function downloadHlsLesson(sku, browser) {
     console.log('AES-128 Key:', rawKey.toString('hex'));
   }
 
+  const scratchResolved = path.resolve(taskScratch);
   await page.exposeFunction('saveHlsDecryptedSeg_' + sku, (i, b64) => {
+    if (!Number.isInteger(i) || i < 0 || i > 1_000_000) {
+      throw new Error('Invalid segment index');
+    }
     const encBuf = Buffer.from(b64, 'base64');
     let decBuf = encBuf;
     if (rawKey) {
@@ -135,7 +152,10 @@ async function downloadHlsLesson(sku, browser) {
         decBuf = encBuf;
       }
     }
-    const segPath = path.join(taskScratch, `seg_${String(i).padStart(5, '0')}.ts`);
+    const segPath = path.resolve(scratchResolved, `seg_${String(i).padStart(5, '0')}.ts`);
+    if (!segPath.startsWith(scratchResolved + path.sep)) {
+      throw new Error('Segment path escaped scratchDir');
+    }
     fs.writeFileSync(segPath, decBuf);
   });
 
@@ -218,7 +238,7 @@ async function downloadHlsLesson(sku, browser) {
 
   // Mux sang MP4
   console.log('Mux sang MP4 hoàn chỉnh bằng FFmpeg...');
-  execSync(`"${FFMPEG}" -y -i "${mergedTs}" -c copy -movflags +faststart "${finalMp4Path}"`, { stdio: 'ignore' });
+  execFileSync(FFMPEG, ['-y', '-i', mergedTs, '-c', 'copy', '-movflags', '+faststart', finalMp4Path], { stdio: 'ignore', shell: false, windowsHide: true });
   fs.rmSync(taskScratch, { recursive: true, force: true });
 
   const finalStat = fs.statSync(finalMp4Path);
@@ -242,7 +262,7 @@ async function downloadHlsLesson(sku, browser) {
   // Whisper transcribe
   console.log('Bóc tách phụ đề bằng Whisper...');
   try {
-    execSync(`py -3 scripts/transcribe_sku.py ${sku}`, { cwd: ROOT, stdio: 'inherit' });
+    execFileSync(PY_CMD, [...PY_PREFIX, 'scripts/transcribe_sku.py', sku], { cwd: ROOT, stdio: 'inherit', shell: false, windowsHide: true });
   } catch (wErr) {
     console.warn(`Whisper warning:`, wErr.message);
   }
@@ -252,12 +272,12 @@ async function downloadHlsLesson(sku, browser) {
 
 async function run() {
   const targetSkus = process.argv.slice(2);
-  const skus = targetSkus.length > 0 ? targetSkus : ['VIDEO-11a507', 'VIDEO-c0353f', 'VIDEO-af2c29'];
+  const skus = (targetSkus.length > 0 ? targetSkus : ['VIDEO-11a507', 'VIDEO-c0353f', 'VIDEO-af2c29']).map(assertSafeSku);
 
   const browser = await chromium.launch({
     headless: false,
     channel: 'msedge',
-    args: ['--disable-web-security', '--autoplay-policy=no-user-gesture-required']
+    args: ['--autoplay-policy=no-user-gesture-required']
   });
 
   try {
@@ -270,7 +290,7 @@ async function run() {
     }
   } finally {
     await browser.close();
-    execSync('node scripts/build_videos_dgmd.js', { cwd: ROOT, stdio: 'ignore' });
+    execFileSync(process.execPath, ['scripts/build_videos_dgmd.js'], { cwd: ROOT, stdio: 'ignore', shell: false, windowsHide: true });
   }
 }
 

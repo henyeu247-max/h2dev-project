@@ -1,6 +1,6 @@
-# ============================================================
+﻿# ============================================================
 #  H2DEV Server - Tray icon manager (ASCII only)
-#  Run on MACHINE 192.168.50.216 (laptop-saxukeb)
+#  Run on local host machine (<LAN_IP>)
 #  - Starts `node server.js` hidden (LAN + Tailscale)
 #  - Kills any previous H2DEV node before starting (no port conflict)
 #  - Tray menu: Open Web / Restart / Stop / Start / Open Log / Exit
@@ -42,11 +42,15 @@ function Write-Diag($msg) {
   } catch { }
 }
 
-# Find node processes that run our server.js (match "server.js" in cmdline)
+# Find node processes that run H2DEV server.js (never custom-server.js or McpPoolLocal)
 function Get-ServerPids {
   try {
     Get-CimInstance Win32_Process -Filter "Name='node.exe'" -ErrorAction SilentlyContinue |
-      Where-Object { $_.CommandLine -match "server\.js" } |
+      Where-Object {
+        $_.CommandLine -and
+        $_.CommandLine -match '(?:^|[\s"''\\/])server\.js(?:\s|"|''|$)' -and
+        $_.CommandLine -notmatch 'custom-server\.js|McpPoolLocal|Mcp-Pool'
+      } |
       Select-Object -ExpandProperty ProcessId
   } catch { @() }
 }
@@ -74,7 +78,7 @@ function Start-Server {
     if (-not (Test-Path -LiteralPath $script:logDir)) { New-Item -ItemType Directory -Force -Path $script:logDir | Out-Null }
     Rotate-LogIfLarge -path $script:log
     Rotate-LogIfLarge -path $script:err
-    $env:HOST = "0.0.0.0"
+    $env:HOST = "127.0.0.1"
     $env:PORT = "$($script:port)"
     $script:proc = Start-Process -FilePath $script:nodeExe `
       -ArgumentList "server.js" `
@@ -102,7 +106,7 @@ function Stop-Server {
 if ($Action -eq "start-hidden") {
   Write-Diag "start-hidden invoked"
   $id = Start-Server
-  Write-Diag "start-hidden done PID=$id URL=http://0.0.0.0:$script:port"
+  Write-Diag "start-hidden done PID=$id URL=http://127.0.0.1:$script:port"
   exit 0
 }
 if ($Action -eq "stop") {
@@ -198,7 +202,7 @@ $notify.ContextMenuStrip = $menu
 
 # start server on launch
 $id = Start-Server
-Write-Diag "Tray started. Server PID=$id URL=http://0.0.0.0:$script:port"
+Write-Diag "Tray started. Server PID=$id URL=http://127.0.0.1:$script:port"
 
 [System.Windows.Forms.Application]::Run()
 $notify.Dispose()

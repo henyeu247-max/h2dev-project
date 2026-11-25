@@ -1,6 +1,6 @@
 # Lịch sử chat — phien-6-audit-toan-dien-mcp-chinh-sach
 
-- Session: CodeBuddy (máy laptop-saxukeb 192.168.50.216) — workspace `d:/YTB`
+- Session: CodeBuddy (máy laptop-saxukeb <LAN_IP>) — workspace `d:/YTB`
 - Thời gian: 2026-08-18 → 2026-08-19
 - Chủ đề: đọc toàn dự án · hoàn thiện 9 MCP cho CodeBuddy · audit & chuẩn hóa toàn bộ data (videos/kenh-mau/tai-lieu/ngach-xanh) theo báo cáo 17/08 + vidIQ + mở URL gốc · đưa "Prompt / AI" về META · verify chính sách YouTube Halprin 7 điểm qua nguồn độc lập
 - Kết quả net: Validation PASSED 129 video · 131 kênh (108 sống/23 dead ẩn) · 90 tài liệu · 129/129 skus ngách · 9/9 MCP chạy · CHANGELOG mục (3)(4)(5)(6)
@@ -17,7 +17,7 @@ Xin chào check đọc all dự ány này nhé
 
 **Tổng quan dự án:** H2DEV Project = "não" quản lý kho học Faceless YouTube — 129 video, 131 kênh mẫu, 77 kịch bản/tài liệu, 4 pipeline sản xuất.
 
-- Backend: `server.js` — Node thuần, port 8899, bind 0.0.0.0 (LAN 192.168.50.216 + Tailscale 100.83.146.28)
+- Backend: `server.js` — Node thuần, port 8899, bind 0.0.0.0 (LAN <LAN_IP> + Tailscale <TAILSCALE_IP>)
 - Frontend: `index.html` (7 tab) + `player.html` (tracking localStorage key `h2dev-watched`, save 3s/lần, tự "Đã xem" khi ≥95%)
 - Data sống: `data-tabs/` 8 file JSON (videos, kenh-mau, tai-lieu-full, nguon-reup, ngach-xanh, chien-luoc, kich-ban, dong-bo-ngoai)
 - 7 tab: Tổng quan · Video · Ngách xanh · Kịch bản & Tài liệu · Nguồn reup · Kênh mẫu · Chiến lược
@@ -117,7 +117,7 @@ Audit toàn diện (subagent quét docs/VIDEO-* · docs/NOI-BO · pipelines · k
 
 ### 🧑 **Bạn**
 
-K đủ căn cứ là sao ? không đủ căn cứ: @mokamoka-e9f, @LamNgo-qz3bw, 3 kênh UC…, @kurumanozokitai) bạn k check đuọucw hay là data hiện k nói hoặc nó k nằm ở các file hoặc list chuẩn ? mình check được mà @mokamoka-e9f rõ ràng là phật pháp nhật nằm ở http://100.83.146.28:8899/player.html?sku=VIDEO-e24c31&back=1 hình như mình nhớ k nhầm là thế và nó đúng ở video chuẩn ngách mà sao check k được hoặc k ra hoặc chưa đưa đúng nơi
+K đủ căn cứ là sao ? không đủ căn cứ: @mokamoka-e9f, @LamNgo-qz3bw, 3 kênh UC…, @kurumanozokitai) bạn k check đuọucw hay là data hiện k nói hoặc nó k nằm ở các file hoặc list chuẩn ? mình check được mà @mokamoka-e9f rõ ràng là phật pháp nhật nằm ở http://<TAILSCALE_IP>:8899/player.html?sku=VIDEO-e24c31&back=1 hình như mình nhớ k nhầm là thế và nó đúng ở video chuẩn ngách mà sao check k được hoặc k ra hoặc chưa đưa đúng nơi
 
 ### 🤖 **CodeBuddy**
 

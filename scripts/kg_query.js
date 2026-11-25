@@ -34,6 +34,20 @@ let _cachedIntelDb = null;
 let _cachedIntelMtime = 0;
 let _cachedIntelStmt = new Map();
 
+const UNSAFE_JSON_KEYS = new Set(['__proto__', 'constructor', 'prototype']);
+
+function safeAssign(target, ...sources) {
+  const out = (target && typeof target === 'object') ? target : {};
+  for (const src of sources) {
+    if (!src || typeof src !== 'object') continue;
+    for (const key of Object.keys(src)) {
+      if (UNSAFE_JSON_KEYS.has(key)) continue;
+      out[key] = src[key];
+    }
+  }
+  return out;
+}
+
 function foldVi(str) {
   return String(str || '')
     .normalize('NFD')
@@ -180,7 +194,7 @@ function getGraphStatsFromDb(autoSync = true) {
             return masterDal.queryOne("SELECT COUNT(*) AS c FROM competitor_channels WHERE is_monetized = 0 OR ypp_status IN ('DEAD_404', 'TERMINATED_BY_YOUTUBE')").c;
           } catch { return 0; }
         })();
-    masterSummary = Object.assign({}, ov || {}, {
+    masterSummary = safeAssign({}, ov || {}, {
       deadChannelsCount,
       masterDbCounts
     });
@@ -228,7 +242,7 @@ function listProjectsFromDb(autoSync = true) {
   const result = projs.map(p => {
     const meta = JSON.parse(p.metadata_json || '{}');
     const domCount = db.prepare(`SELECT COUNT(*) as c FROM kg_nodes WHERE type = 'domain' AND parent_id = ?`).get(p.id).c;
-    const fileCount = db.prepare(`SELECT COUNT(*) as c FROM kg_nodes WHERE type = 'file' AND metadata_json LIKE ?`).get(`%"projectId":"${p.id}"%`).c;
+    const fileCount = db.prepare(`SELECT COUNT(*) as c FROM kg_nodes WHERE type = 'file' AND metadata_json LIKE ? ESCAPE '\\'`).get(`%"projectId":"${escLike(p.id)}"%`).c;
     return {
       id: p.id,
       name: p.label,
@@ -251,26 +265,26 @@ function escLike(s) {
 }
 
 function findNodeFlexible(db, rawQuery) {
-  const q = String(rawQuery || '').trim().replace(/\\/g, '/');
+  const q = String(rawQuery || '').trim().slice(0, 256).replace(/\\/g, '/');
   if (!q) return null;
   const cleanHandle = q.replace(/^(?:channel:|raw:)?@?/i, '');
   const qNoPrefix = q.replace(/^(niche|module|tool|channel|raw|video|lesson|sop|doc|policy|checklist|project|domain|dir|file|track|reup):/i, '').trim();
   const qSlug = foldVi(qNoPrefix).replace(/[^a-zA-Z0-9_-]+/g, '-').replace(/^-+|-+$/g, '').toLowerCase();
 
   // Normalize DOC_54 / DOC-54 / TL-54 / sop:DOC_54 / sop:TL-54 -> DOC-054
-  const mDoc = qNoPrefix.match(/^(?:DOC|TL)[-_]?0*(\d+)$/i);
+  const mDoc = qNoPrefix.match(/^(?:DOC|TL)[-_]?(\d+)$/i);
   const normSopCode = mDoc ? `DOC-${String(parseInt(mDoc[1], 10)).padStart(3, '0')}` : qNoPrefix;
 
   // Normalize P1 / policy:P1 -> P01
-  const mPol = qNoPrefix.match(/^P[-_]?0*(\d+)$/i);
+  const mPol = qNoPrefix.match(/^P[-_]?(\d+)$/i);
   const normPolCode = mPol ? `P${String(parseInt(mPol[1], 10)).padStart(2, '0')}` : qNoPrefix;
 
   // Normalize CL1 / checklist:CL1 -> CL01
-  const mCl = qNoPrefix.match(/^CL[-_]?0*(\d+)$/i);
+  const mCl = qNoPrefix.match(/^CL[-_]?(\d+)$/i);
   const normClCode = mCl ? `CL${String(parseInt(mCl[1], 10)).padStart(2, '0')}` : qNoPrefix;
 
   // Normalize M1 / M01 / module:M01 -> H2DEV-M01
-  const mMod = qNoPrefix.match(/^(?:(H2DEV|HUAN|DGMD)[-_])?M0*(\d+)$/i);
+  const mMod = qNoPrefix.match(/^(?:(H2DEV|HUAN|DGMD)[-_])?M(\d+)$/i);
   const normModCode = mMod ? `${(mMod[1] || 'H2DEV').toUpperCase()}-M${String(parseInt(mMod[2], 10)).padStart(2, '0')}` : qNoPrefix;
 
   // 1. Exact ID or SKU or Path or Policy/Checklist/SOP/Channel/Niche-Slug match (uses expression indexes)
@@ -320,9 +334,9 @@ function findNodeFlexible(db, rawQuery) {
       : (/^SUB-\d$/i.test(qNoPrefix) ? `SUB-0${qNoPrefix.slice(4)}` : qNoPrefix.toUpperCase());
     node = prepareKg(`
       SELECT * FROM kg_nodes
-      WHERE type = 'niche' AND metadata_json LIKE ?
+      WHERE type = 'niche' AND metadata_json LIKE ? ESCAPE '\\'
       LIMIT 1
-    `, false).get(`%"${normNicheCode}"%`);
+    `, false).get(`%"${escLike(normNicheCode)}"%`);
     if (node) return node;
   }
 
@@ -338,10 +352,10 @@ function findNodeFlexible(db, rawQuery) {
     const normRawCode = `RAW-${String(parseInt(rawNum || '1', 10)).padStart(3, '0')}`;
     node = prepareKg(`
       SELECT * FROM kg_nodes
-      WHERE type IN ('channel', 'niche') AND metadata_json LIKE ?
+      WHERE type IN ('channel', 'niche') AND metadata_json LIKE ? ESCAPE '\\'
       ORDER BY CASE WHEN type = 'channel' THEN 0 ELSE 1 END
       LIMIT 1
-    `, false).get(`%"${normRawCode}"%`);
+    `, false).get(`%"${escLike(normRawCode)}"%`);
     if (node) return node;
   }
 
@@ -359,7 +373,7 @@ function findNodeFlexible(db, rawQuery) {
         if (node) return node;
       }
       if (reupEntry && reupEntry.nicheCode) {
-        node = prepareKg(`SELECT * FROM kg_nodes WHERE type = 'niche' AND metadata_json LIKE ? LIMIT 1`, false).get(`%"${reupEntry.nicheCode}"%`);
+        node = prepareKg(`SELECT * FROM kg_nodes WHERE type = 'niche' AND metadata_json LIKE ? ESCAPE '\\' LIMIT 1`, false).get(`%"${escLike(reupEntry.nicheCode)}"%`);
         if (node) return node;
       }
     } catch (_) {}
@@ -406,7 +420,6 @@ function traceNodeInDb(rawQuery, autoSync = true) {
   const lineageChain = [];
   let cur = node;
   const visitedUp = new Set();
-  const stmtGetById = prepareKg(`SELECT * FROM kg_nodes WHERE id = ?`, false);
   while (cur && !visitedUp.has(cur.id)) {
     visitedUp.add(cur.id);
     lineageChain.unshift({
@@ -418,7 +431,7 @@ function traceNodeInDb(rawQuery, autoSync = true) {
       path: cur.path
     });
     if (!cur.parent_id) break;
-    cur = stmtGetById.get(cur.parent_id);
+    cur = prepareKg(`SELECT * FROM kg_nodes WHERE id = ?`, false).get(cur.parent_id);
   }
 
   // 2. Get Backlinks & Outbound Links
@@ -429,24 +442,29 @@ function traceNodeInDb(rawQuery, autoSync = true) {
   const neighborIds = [...new Set([...inbound.map(x => x.source), ...outbound.map(x => x.target)])];
   const labelMap = new Map();
   if (neighborIds.length) {
-    const placeholders = neighborIds.map(() => '?').join(',');
-    const nRows = db.prepare(`SELECT id, type, layer, level, label, sku, path, degree, metadata_json FROM kg_nodes WHERE id IN (${placeholders})`).all(...neighborIds);
-    for (const r of nRows) {
-      let meta = {};
-      try { meta = JSON.parse(r.metadata_json || '{}'); } catch {}
-      labelMap.set(r.id, {
-        id: r.id,
-        type: r.type,
-        layer: r.layer,
-        level: r.level,
-        label: r.label,
-        sku: r.sku || '',
-        path: r.path || '',
-        degree: r.degree,
-        rawId: meta.rawId || '',
-        docId: meta.docId || null,
-        targetUrl: meta.targetUrl || ''
-      });
+    const CHUNK = 500;
+    for (let i = 0; i < neighborIds.length; i += CHUNK) {
+      const slice = neighborIds.slice(i, i + CHUNK);
+      const placeholders = slice.map(() => '?').join(',');
+      const curDb = openDb(false);
+      const nRows = curDb.prepare(`SELECT id, type, layer, level, label, sku, path, degree, metadata_json FROM kg_nodes WHERE id IN (${placeholders})`).all(...slice);
+      for (const r of nRows) {
+        let meta = {};
+        try { meta = JSON.parse(r.metadata_json || '{}'); } catch {}
+        labelMap.set(r.id, {
+          id: r.id,
+          type: r.type,
+          layer: r.layer,
+          level: r.level,
+          label: r.label,
+          sku: r.sku || '',
+          path: r.path || '',
+          degree: r.degree,
+          rawId: meta.rawId || '',
+          docId: meta.docId || null,
+          targetUrl: meta.targetUrl || ''
+        });
+      }
     }
   }
 
@@ -490,8 +508,10 @@ function traceNodeInDb(rawQuery, autoSync = true) {
     inboundImpactCallers: impactCallers,
     structuralChildren: childrenNodes.slice(0, 50),
     totalChildrenCount: childrenNodes.length,
-    outboundAll: enrichedOutbound,
-    inboundAll: enrichedInbound
+    outboundCount: enrichedOutbound.length,
+    inboundCount: enrichedInbound.length,
+    outboundAll: enrichedOutbound.slice(0, 500),
+    inboundAll: enrichedInbound.slice(0, 500)
   };
 }
 
@@ -499,18 +519,19 @@ function buildKgFtsTokens(cleanStr) {
   const words = cleanStr
     .split(/[\s/]+/)
     .map(w => w.replace(/^[-._]+|[-._]+$/g, ''))
-    .filter(Boolean);
+    .filter(Boolean)
+    .slice(0, 16);
   return words.map((w, idx) => {
     const folded = foldVi(w).toLowerCase();
     const wSafe = w.replace(/"/g, '');
     const fSafe = folded.replace(/"/g, '');
     const dToDbar = fSafe.replace(/d/g, 'đ');
-    const subParts = fSafe.split(/[-._]+/).filter(Boolean);
+    const subParts = fSafe.split(/[-._]+/).filter(Boolean).slice(0, 16);
     const usePrefix = wSafe.length >= 3 && (words.length === 1 || idx === words.length - 1) && !/^\d+$/.test(wSafe);
     const sfx = usePrefix ? '*' : '';
     const variants = new Set([`"${wSafe}"${sfx}`, `"${fSafe}"${sfx}`]);
     if (dToDbar !== fSafe) variants.add(`"${dToDbar}"${sfx}`);
-    const mDoc = fSafe.match(/^(?:sop:)?(?:doc|tl)[-_]?0*(\d+)$/i);
+    const mDoc = fSafe.match(/^(?:sop:)?(?:doc|tl)[-_]?(\d+)$/i);
     if (mDoc) {
       const paddedNum = String(parseInt(mDoc[1], 10)).padStart(3, '0');
       variants.add(`("doc" AND "${paddedNum}")`);
@@ -525,16 +546,16 @@ function buildKgFtsTokens(cleanStr) {
 function searchGraphInDb(qRaw, options = {}, autoSync = true) {
   const t0 = performance.now();
   openDb(autoSync);
-  const rawTrim = String(qRaw || '').trim();
+  const rawTrim = String(qRaw || '').trim().slice(0, 256);
   const clean = rawTrim.replace(/[^\p{L}\p{N}\s_.\-/]+/gu, ' ').trim();
   if (!clean) return { query: qRaw, latencyMs: 0, count: 0, results: [] };
 
   const tokenExprs = buildKgFtsTokens(clean);
   if (!tokenExprs.length) return { query: qRaw, latencyMs: 0, count: 0, results: [] };
 
-  const limit = options.limit || 20;
+  const limit = Math.max(1, Math.min(parseInt(options && options.limit, 10) || 20, 100));
   const foldedTrim = foldVi(rawTrim).toLowerCase();
-  const mDoc = rawTrim.match(/^(?:sop:)?(?:DOC|TL)[-_]?0*(\d+)$/i);
+  const mDoc = rawTrim.match(/^(?:sop:)?(?:DOC|TL)[-_]?(\d+)$/i);
   const normSopCode = mDoc ? `DOC-${String(parseInt(mDoc[1], 10)).padStart(3, '0')}` : rawTrim;
   const rawEsc = escLike(rawTrim);
   const foldedEsc = escLike(foldedTrim);
@@ -558,8 +579,8 @@ function searchGraphInDb(qRaw, options = {}, autoSync = true) {
       params.push(options.layer);
     }
     if (options.track) {
-      sql += ` AND n.track LIKE ?`;
-      params.push(`%${options.track}%`);
+      sql += ` AND n.track LIKE ? ESCAPE '\\'`;
+      params.push(`%${escLike(options.track)}%`);
     }
     sql += `
       ORDER BY
@@ -571,11 +592,11 @@ function searchGraphInDb(qRaw, options = {}, autoSync = true) {
             OR LOWER(n.id) = LOWER('checklist:' || ?)
             OR LOWER(n.id) = LOWER('niche:' || ?)
             OR LOWER(n.label) = LOWER(?)
-            OR (n.type = 'niche' AND n.metadata_json LIKE '%"code":"' || UPPER(?) || '"%')
+            OR (n.type = 'niche' AND n.metadata_json LIKE ? ESCAPE '\\')
           THEN -2000.0
           WHEN LOWER(n.sku) = LOWER(?)
           THEN -1200.0
-          WHEN n.metadata_json LIKE '%"' || UPPER(?) || '"%'
+          WHEN n.metadata_json LIKE ? ESCAPE '\\'
           THEN -900.0
           WHEN LOWER(n.label) LIKE LOWER(?) ESCAPE '\\' OR LOWER(n.label) LIKE LOWER(?) ESCAPE '\\'
           THEN -80.0
@@ -586,9 +607,9 @@ function searchGraphInDb(qRaw, options = {}, autoSync = true) {
       LIMIT ?
     `;
     params.push(
-      rawTrim, rawTrim, normSopCode, rawTrim, rawTrim, rawTrim, rawTrim, rawTrim,
+      rawTrim, rawTrim, normSopCode, rawTrim, rawTrim, rawTrim, rawTrim, `%"code":"${rawEsc.toUpperCase()}"%`,
       rawTrim,
-      rawTrim,
+      `%"${rawEsc.toUpperCase()}"%`,
       `%${rawEsc}%`, `%${foldedEsc}%`,
       limit
     );
@@ -656,7 +677,7 @@ function tracePathInDb(fromQuery, toQuery, autoSync = true) {
     };
   }
 
-  const edges = db.prepare(`SELECT source, target, relation FROM kg_edges`).all();
+  const edges = prepareKg(`SELECT source, target, relation FROM kg_edges`, false).all();
   const adj = new Map();
   for (const e of edges) {
     if (!adj.has(e.source)) adj.set(e.source, []);
@@ -707,9 +728,15 @@ function tracePathInDb(fromQuery, toQuery, autoSync = true) {
   }
   nodeIds.unshift(startNode.id);
 
-  const placeholders = nodeIds.map(() => '?').join(',');
-  const rows = db.prepare(`SELECT id, type, layer, level, label, path, sku, metadata_json FROM kg_nodes WHERE id IN (${placeholders})`).all(...nodeIds);
-  const rowMap = new Map(rows.map(r => [r.id, r]));
+  const rowMap = new Map();
+  const CHUNK = 500;
+  for (let i = 0; i < nodeIds.length; i += CHUNK) {
+    const slice = nodeIds.slice(i, i + CHUNK);
+    const placeholders = slice.map(() => '?').join(',');
+    const curDb = openDb(false);
+    const rows = curDb.prepare(`SELECT id, type, layer, level, label, path, sku, metadata_json FROM kg_nodes WHERE id IN (${placeholders})`).all(...slice);
+    for (const r of rows) rowMap.set(r.id, r);
+  }
   const pathNodes = nodeIds.map(id => {
     const r = rowMap.get(id) || { id, label: id, type: 'unknown', layer: 'knowledge' };
     let meta = {};
@@ -739,7 +766,8 @@ function tracePathInDb(fromQuery, toQuery, autoSync = true) {
 }
 
 function searchIntelligenceDb(qRaw, limit = 12) {
-  const q = String(qRaw || '').trim();
+  const safeLimit = Math.max(1, Math.min(parseInt(limit, 10) || 12, 100));
+  const q = String(qRaw || '').trim().slice(0, 256);
   if (!q) return [];
   const idb = openIntelDb();
   if (!idb) return [];
@@ -751,7 +779,8 @@ function searchIntelligenceDb(qRaw, limit = 12) {
     .replace(/[^\p{L}\p{N}\s_-]/gu, ' ')
     .split(/[\s-]+/)
     .map(w => w.replace(/"/g, '').trim())
-    .filter(Boolean);
+    .filter(Boolean)
+    .slice(0, 16);
 
   if (cleanTokens.length > 0) {
     const ftsClauses = cleanTokens.map((w, idx) => {
@@ -774,7 +803,7 @@ function searchIntelligenceDb(qRaw, limit = 12) {
         ORDER BY bm25(channels_fts, 0.0, 5.0, 8.0, 4.0, 1.0) ASC, c.is_breakout DESC, c.median_views DESC
         LIMIT ?
       `);
-      const chRows = chFtsStmt ? chFtsStmt.all(ftsMatchExpr, limit) : [];
+      const chRows = chFtsStmt ? chFtsStmt.all(ftsMatchExpr, safeLimit) : [];
       for (const c of chRows) {
         seenIds.add(`CH:${c.channel_id}`);
         const outMult = c.top_outlier_multiplier ? (String(c.top_outlier_multiplier).endsWith('x') ? c.top_outlier_multiplier : `${Number(c.top_outlier_multiplier).toFixed(1)}x`) : '';
@@ -798,8 +827,8 @@ function searchIntelligenceDb(qRaw, limit = 12) {
           ].filter(Boolean).join(' · ')
         });
       }
-      if (results.length < limit) {
-        const rem = limit - results.length;
+      if (results.length < safeLimit) {
+        const rem = safeLimit - results.length;
         const vFtsStmt = prepareIntel(`
           SELECT v.video_id, v.channel_id, v.title, v.views, v.outlier_score, c.handle, c.primary_niche
           FROM videos_fts f
@@ -837,15 +866,15 @@ function searchIntelligenceDb(qRaw, limit = 12) {
 
   // 2. Fallback / supplement for exact channel_id / video_id (UNINDEXED in FTS5)
   if (results.length === 0) {
-    const pat = `%${q}%`;
+    const pat = `%${escLike(q)}%`;
     try {
       const chRows = idb.prepare(`
         SELECT channel_id, handle, title, primary_niche, median_views, top_outlier_multiplier, is_breakout, is_faceless, faceless_type
         FROM channels
-        WHERE LOWER(channel_id) = LOWER(?) OR LOWER(handle) LIKE LOWER(?) OR LOWER(title) LIKE LOWER(?) OR LOWER(primary_niche) LIKE LOWER(?)
+        WHERE LOWER(channel_id) = LOWER(?) OR LOWER(handle) LIKE LOWER(?) ESCAPE '\\' OR LOWER(title) LIKE LOWER(?) ESCAPE '\\' OR LOWER(primary_niche) LIKE LOWER(?) ESCAPE '\\'
         ORDER BY is_breakout DESC, median_views DESC
         LIMIT ?
-      `).all(q, pat, pat, pat, limit);
+      `).all(q, pat, pat, pat, safeLimit);
       for (const c of chRows) {
         if (seenIds.has(`CH:${c.channel_id}`)) continue;
         const outMult = c.top_outlier_multiplier ? (String(c.top_outlier_multiplier).endsWith('x') ? c.top_outlier_multiplier : `${Number(c.top_outlier_multiplier).toFixed(1)}x`) : '';
@@ -869,13 +898,13 @@ function searchIntelligenceDb(qRaw, limit = 12) {
           ].filter(Boolean).join(' · ')
         });
       }
-      if (results.length < limit) {
-        const rem = limit - results.length;
+      if (results.length < safeLimit) {
+        const rem = safeLimit - results.length;
         const vRows = idb.prepare(`
           SELECT v.video_id, v.channel_id, v.title, v.views, v.outlier_score, c.handle, c.primary_niche
           FROM videos v
           LEFT JOIN channels c ON c.channel_id = v.channel_id
-          WHERE LOWER(v.video_id) = LOWER(?) OR LOWER(v.title) LIKE LOWER(?)
+          WHERE LOWER(v.video_id) = LOWER(?) OR LOWER(v.title) LIKE LOWER(?) ESCAPE '\\'
           ORDER BY v.views DESC
           LIMIT ?
         `).all(q, pat, rem);
@@ -904,18 +933,18 @@ function searchIntelligenceDb(qRaw, limit = 12) {
     } catch {}
   }
 
-  return results.slice(0, limit);
+  return results.slice(0, safeLimit);
 }
 
 function queryIntelligenceBreakouts(limitOrOpts = 30) {
   const idb = openIntelDb();
   const isObj = limitOrOpts && typeof limitOrOpts === 'object';
   const rawLim = isObj ? limitOrOpts.limit : limitOrOpts;
-  const safeLim = Number.isFinite(Number(rawLim)) ? Math.max(1, Math.min(200, Number(rawLim))) : 30;
+  const safeLim = Math.max(1, Math.min(parseInt(rawLim, 10) || 30, 100));
   const view = isObj && limitOrOpts.view ? String(limitOrOpts.view).trim().toLowerCase() : 'breakouts';
-  const niche = isObj && limitOrOpts.niche ? String(limitOrOpts.niche).trim().toUpperCase() : '';
+  const niche = isObj && limitOrOpts.niche ? String(limitOrOpts.niche).trim().slice(0, 32).toUpperCase() : '';
   const maxSubs = isObj && Number.isFinite(Number(limitOrOpts.maxSubs)) && Number(limitOrOpts.maxSubs) > 0 ? Number(limitOrOpts.maxSubs) : 0;
-  const search = isObj && limitOrOpts.search ? String(limitOrOpts.search).trim() : '';
+  const search = isObj && limitOrOpts.search ? String(limitOrOpts.search).trim().slice(0, 256) : '';
 
   if (!idb) return { view, total: 0, totalBreakouts: 0, totalChannels: 0, totalVideos: 0, totalOutliers: 0, totalEdges: 0, channels: [] };
   try {
@@ -946,7 +975,7 @@ function queryIntelligenceBreakouts(limitOrOpts = 30) {
       const conds = [view === 'outliers' ? 'v.outlier_score >= 3.0' : '1=1'];
       const params = [];
       if (niche) { conds.push('UPPER(c.primary_niche) = ?'); params.push(niche); }
-      if (search) { conds.push('(LOWER(v.title) LIKE LOWER(?) OR LOWER(c.title) LIKE LOWER(?) OR LOWER(c.handle) LIKE LOWER(?))'); const pat = `%${search}%`; params.push(pat, pat, pat); }
+      if (search) { conds.push(`(LOWER(v.title) LIKE LOWER(?) ESCAPE '\\' OR LOWER(c.title) LIKE LOWER(?) ESCAPE '\\' OR LOWER(c.handle) LIKE LOWER(?) ESCAPE '\\')`); const pat = `%${escLike(search)}%`; params.push(pat, pat, pat); }
       params.push(safeLim);
       const orderClause = view === 'outliers' ? 'v.outlier_score DESC, v.views DESC' : 'v.views DESC';
       const videos = idb.prepare(`
@@ -979,7 +1008,7 @@ function queryIntelligenceBreakouts(limitOrOpts = 30) {
       conds.push('is_breakout = 1');
     }
     if (niche) { conds.push('UPPER(primary_niche) = ?'); params.push(niche); }
-    if (search) { conds.push('(LOWER(title) LIKE LOWER(?) OR LOWER(handle) LIKE LOWER(?) OR LOWER(primary_niche) LIKE LOWER(?))'); const pat = `%${search}%`; params.push(pat, pat, pat); }
+    if (search) { conds.push(`(LOWER(title) LIKE LOWER(?) ESCAPE '\\' OR LOWER(handle) LIKE LOWER(?) ESCAPE '\\' OR LOWER(primary_niche) LIKE LOWER(?) ESCAPE '\\')`); const pat = `%${escLike(search)}%`; params.push(pat, pat, pat); }
     const whereSql = conds.length ? `WHERE ${conds.join(' AND ')}` : '';
     params.push(safeLim);
     const rows = idb.prepare(
@@ -1009,14 +1038,16 @@ function queryIntelligenceBreakouts(limitOrOpts = 30) {
 function deepSearchAll(rawQueries, options = {}) {
   const t0 = performance.now();
   ensureGraphFresh();
-  const list = Array.isArray(rawQueries)
-    ? rawQueries
+  const rawList = Array.isArray(rawQueries)
+    ? rawQueries.map(s => String(s || '').trim().slice(0, 256)).filter(Boolean)
     : String(rawQueries || '')
+        .slice(0, 512)
         .split('|')
-        .map(s => s.trim())
+        .map(s => s.trim().slice(0, 256))
         .filter(Boolean);
+  const list = [...new Set(rawList)].slice(0, 12);
 
-  const limitPerQuery = options.limit || 12;
+  const limitPerQuery = Math.max(1, Math.min(parseInt(options && options.limit, 10) || 12, 100));
   const batches = list.map(q => {
     const qt0 = performance.now();
     let masterHits = [];
@@ -1031,8 +1062,8 @@ function deepSearchAll(rawQueries, options = {}) {
       latencyMs: Number((performance.now() - qt0).toFixed(2)),
       exactNodeFound: directTrace.found ? directTrace.targetNode : null,
       lineageString: directTrace.found ? directTrace.lineageString : null,
-      outboundCount: directTrace.found ? directTrace.outboundAll.length : 0,
-      inboundCount: directTrace.found ? directTrace.inboundAll.length : 0,
+      outboundCount: directTrace.found ? (directTrace.outboundCount ?? directTrace.outboundAll.length) : 0,
+      inboundCount: directTrace.found ? (directTrace.inboundCount ?? directTrace.inboundAll.length) : 0,
       masterFtsCount: masterHits.length,
       masterResults: masterHits,
       graphFtsCount: graphSearch.count,

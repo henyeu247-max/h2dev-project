@@ -15,7 +15,7 @@ MCP Pool là một **MCP server tập trung** chạy trên VPS, gộp **17 nhóm
 | **Auth** | `Authorization: [REDACTED-MCP-POOL-2026-08-31]` HOẶC `X-API-Key: mcp-pool-[REDACTED]` |
 | **Transport** | MCP Streamable HTTP (JSON-RPC) |
 | **Tools** | 194 tools / 17 nhóm |
-| **Server (VPS)** | `103.249.201.164` (aaPanel, Nginx, PM2) |
+| **Server (VPS)** | `<VPS_IP>` (aaPanel, Nginx, PM2) |
 | **Code (local)** | `G:\Hermes - Agent\mcp-pool\` |
 
 **Cơ chế:** MCP Pool spawn/forward tới các MCP server gốc:
@@ -137,7 +137,7 @@ Source: G:\Hermes - Agent\mcp-pool\  (toàn bộ thư mục)
 
 ### Bước 2 — Deploy lên VPS
 ```bash
-scp -r mcp-pool/* root@103.249.201.164:/opt/mcp-pool/
+scp -r mcp-pool/* root@<VPS_IP>:/opt/mcp-pool/
 cd /opt/mcp-pool && npm install --production
 ```
 

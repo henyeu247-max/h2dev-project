@@ -2,9 +2,14 @@ const { chromium } = require('d:/YTB/H2DEV-Project/node_modules/playwright');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
-const { execSync } = require('child_process');
+const { execFileSync } = require('child_process');
 
 const SKU = process.argv[2] || 'VIDEO-73d98a';
+const SAFE_SKU_RE = /^[A-Za-z0-9_-]+$/;
+if (!SAFE_SKU_RE.test(SKU)) {
+  console.error(`Invalid SKU format: ${SKU}`);
+  process.exit(1);
+}
 const FFMPEG = 'D:/Linly-Dubbing/bin/ffmpeg.exe';
 const FFPROBE = 'D:/Linly-Dubbing/bin/ffprobe.exe';
 const ROOT = 'd:/YTB/H2DEV-Project';
@@ -155,13 +160,20 @@ async function main() {
   const decryptedFiles = new Array(segmentUrls.length);
   let savedCount = 0;
 
+  const tempDirResolved = path.resolve(tempDir);
   await page.exposeFunction('saveDecryptedSegment', (idx, base64Data) => {
+    if (!Number.isInteger(idx) || idx < 0 || idx > 1_000_000) {
+      throw new Error('Invalid segment index');
+    }
     const encBuf = Buffer.from(base64Data, 'base64');
     const iv = Buffer.alloc(16);
     iv.writeUInt32BE(idx, 12);
     const decipher = crypto.createDecipheriv('aes-128-cbc', keyBuffer, iv);
     const decBuf = Buffer.concat([decipher.update(encBuf), decipher.final()]);
-    const segPath = path.join(tempDir, `seg_${String(idx).padStart(5, '0')}.ts`);
+    const segPath = path.resolve(tempDirResolved, `seg_${String(idx).padStart(5, '0')}.ts`);
+    if (!segPath.startsWith(tempDirResolved + path.sep)) {
+      throw new Error('Segment path escaped scratchDir');
+    }
     fs.writeFileSync(segPath, decBuf);
     decryptedFiles[idx] = segPath;
     savedCount++;
@@ -237,11 +249,19 @@ async function main() {
   const targetMp4 = path.join(targetDir, `${SKU}.mp4`);
 
   console.log(`Step 7: Remuxing to MP4 via FFmpeg: ${targetMp4}...`);
-  execSync(`"${FFMPEG}" -y -i "${mergedTsPath}" -c copy -movflags +faststart "${targetMp4}"`, { stdio: 'inherit' });
+  execFileSync(
+    FFMPEG,
+    ['-y', '-i', mergedTsPath, '-c', 'copy', '-movflags', '+faststart', targetMp4],
+    { stdio: 'inherit', shell: false, windowsHide: true }
+  );
 
   // 11. Verify with FFprobe
   console.log('Step 8: Verifying with FFprobe...');
-  const probeOutput = execSync(`"${FFPROBE}" -v error -show_entries format=duration,size,bit_rate:stream=codec_name,codec_type,width,height -of json "${targetMp4}"`, { encoding: 'utf8' });
+  const probeOutput = execFileSync(
+    FFPROBE,
+    ['-v', 'error', '-show_entries', 'format=duration,size,bit_rate:stream=codec_name,codec_type,width,height', '-of', 'json', targetMp4],
+    { encoding: 'utf8', shell: false, windowsHide: true }
+  );
   const probe = JSON.parse(probeOutput);
   console.log('FFprobe format:', JSON.stringify(probe.format, null, 2));
   console.log('FFprobe streams:', JSON.stringify(probe.streams, null, 2));

@@ -72,7 +72,24 @@ function shouldIgnoreRelPath(relPath) {
   if (!relPath) return true;
   const norm = String(relPath).replace(/\\/g, '/').replace(/\/+$/g, '');
   const base = path.basename(norm);
-  if (IGNORED_FILES.has(base) || base.startsWith('.env') || base.endsWith('.tmp') || base.endsWith('.log') || base.endsWith('.db-journal')) {
+  const lowBase = base.toLowerCase();
+  if (
+    IGNORED_FILES.has(base) ||
+    lowBase === 'desktop.ini' ||
+    lowBase === 'thumbs.db' ||
+    lowBase === '.ds_store' ||
+    lowBase.startsWith('.env') ||
+    lowBase.startsWith('~$') ||
+    lowBase.startsWith('.tmp.drive') ||
+    lowBase.endsWith('.tmp') ||
+    lowBase.endsWith('.log') ||
+    lowBase.endsWith('.db-journal') ||
+    lowBase.endsWith('.db-wal') ||
+    lowBase.endsWith('.db-shm') ||
+    lowBase.endsWith('.sqlite-wal') ||
+    lowBase.endsWith('.sqlite-shm') ||
+    /\s\(\d+\)\.(?:db|db-wal|db-shm|sqlite)$/i.test(lowBase)
+  ) {
     return true;
   }
   if (Date.now() < cooldownUntil) return true;
@@ -216,8 +233,23 @@ function triggerSyncNow(reason = 'manual', fullMarkdown = false) {
   }
 }
 
+function isAutoIngestLockActive() {
+  try {
+    const lockFile = path.join(ROOT, '.cache', 'auto-ingest.lock');
+    if (!fs.existsSync(lockFile)) return false;
+    const raw = JSON.parse(fs.readFileSync(lockFile, 'utf8'));
+    const pid = Number(raw && raw.pid);
+    const ageMs = Date.now() - Number((raw && (raw.startedAtMs ?? raw.ts)) || 0);
+    if (pid > 0 && ageMs < 2 * 3600 * 1000) {
+      process.kill(pid, 0);
+      return true;
+    }
+  } catch (_) {}
+  return false;
+}
+
 function triggerSyncAsync(reason = 'watcher', fullMarkdown = false, onDone = null, dirtyMaster = false) {
-  const rebuildMaster = Boolean(dirtyMaster || /(?:^|\/)(?:data-tabs|data)\//i.test(String(reason || '')));
+  const rebuildMaster = !isAutoIngestLockActive() && Boolean(dirtyMaster || /(?:^|\/)(?:data-tabs|data)\//i.test(String(reason || '')));
   if (!IS_MASTER_WORKSPACE && fs.existsSync(DB_PATH) && fs.existsSync(JSON_GRAPH_PATH)) {
     const res = triggerSyncNow(reason, fullMarkdown);
     if (typeof onDone === 'function') onDone(res);
@@ -402,11 +434,24 @@ function getSyncStatus() {
   };
 }
 
+function reloadState() {
+  cooldownUntil = 0;
+  _lastFreshCheckAt = 0;
+  try {
+    const g = JSON.parse(fs.readFileSync(JSON_GRAPH_PATH, 'utf8'));
+    if (g && g.generatedAt) {
+      lastSyncedAt = Math.max(lastSyncedAt, new Date(g.generatedAt).getTime());
+    }
+  } catch (_) {}
+  return getSyncStatus();
+}
+
 module.exports = {
   isGraphStale,
   triggerSyncNow,
   triggerSyncAsync,
   ensureGraphFresh,
   startAutoSyncWatcher,
+  reloadState,
   getSyncStatus
 };

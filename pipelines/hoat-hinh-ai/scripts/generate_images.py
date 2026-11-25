@@ -26,13 +26,66 @@ Requirements:
 """
 
 import os
+import re
 import sys
 import json
 import time
 import base64
+import socket
+import ipaddress
 import subprocess
 from pathlib import Path
+from urllib.parse import urlparse, urljoin
 import requests
+
+SAFE_ID_RE = re.compile(r"^[A-Za-z0-9_-]+$")
+
+
+def assert_safe_id(val: str, label: str = "id") -> str:
+    s = str(val or "").strip()
+    if not SAFE_ID_RE.fullmatch(s):
+        raise ValueError(f"Invalid {label} (must match ^[A-Za-z0-9_-]+$): {val!r}")
+    return s
+
+
+def validate_remote_url(url: str) -> str:
+    parsed = urlparse(str(url or "").strip())
+    if parsed.scheme != "https" or not parsed.hostname:
+        raise ValueError(f"Disallowed remote URL (must be https:// with hostname): {url!r}")
+    host = parsed.hostname.strip().lower().rstrip(".")
+    if host in ("localhost", "localhost.localdomain") or host.endswith((".localhost", ".local", ".internal")):
+        raise ValueError(f"Disallowed local/internal host: {host!r}")
+    try:
+        infos = socket.getaddrinfo(host, parsed.port or 443, type=socket.SOCK_STREAM)
+    except socket.gaierror as e:
+        raise ValueError(f"Failed to resolve host {host!r}: {e}") from e
+    if not infos:
+        raise ValueError(f"No IP addresses resolved for host {host!r}")
+    for info in infos:
+        ip_str = info[4][0].split("%")[0]
+        ip_obj = ipaddress.ip_address(ip_str)
+        if (
+            ip_obj.is_private
+            or ip_obj.is_loopback
+            or ip_obj.is_link_local
+            or ip_obj.is_multicast
+            or ip_obj.is_reserved
+            or ip_obj.is_unspecified
+            or not ip_obj.is_global
+        ):
+            raise ValueError(f"Disallowed non-public IP {ip_str} for host {host!r}")
+    return parsed.geturl()
+
+
+def safe_https_get(url: str, timeout: int = 60, max_redirects: int = 3) -> requests.Response:
+    current = validate_remote_url(url)
+    for _ in range(max_redirects + 1):
+        resp = requests.get(current, timeout=timeout, allow_redirects=False)
+        if resp.status_code in (301, 302, 303, 307, 308) and resp.headers.get("Location"):
+            current = validate_remote_url(urljoin(current, resp.headers["Location"]))
+            continue
+        return resp
+    raise ValueError(f"Too many redirects fetching {url!r}")
 
 # Force UTF-8 stdout on Windows (cp1252 console can't render →, ✓, etc.)
 if hasattr(sys.stdout, "reconfigure"):
@@ -194,7 +247,7 @@ def valid_image(path: Path) -> bool:
 def download_file(url: str, output_path: Path) -> bool:
     """Download an image atomically and validate it before accepting the file."""
     try:
-        resp = requests.get(url, timeout=60)
+        resp = safe_https_get(url, timeout=60)
         resp.raise_for_status()
         output_path.parent.mkdir(parents=True, exist_ok=True)
         partial = output_path.with_suffix(output_path.suffix + ".part")
@@ -298,9 +351,13 @@ def main():
     characters = chars_data.get("characters", [])
     print(f"Generating {len(characters)} character image(s)...\n")
 
+    chars_dir = Path("characters").resolve()
+    bgs_dir = Path("backgrounds").resolve()
     for char in characters:
-        cid = char["character_id"]
-        out = Path("characters") / f"{cid}.png"
+        cid = assert_safe_id(char.get("character_id"), "character_id")
+        out = (chars_dir / f"{cid}.png").resolve()
+        if out.parent != chars_dir:
+            raise ValueError(f"Character path escaped directory: {cid!r}")
         print(f"  [{cid}] {char['name']}...")
 
         url, err = generate_and_host(char["prompt"], "1:1", out)
@@ -319,8 +376,10 @@ def main():
     print(f"\nGenerating {len(backgrounds)} background image(s)...\n")
 
     for bg in backgrounds:
-        bid = bg["bg_id"]
-        out = Path("backgrounds") / f"{bid}.png"
+        bid = assert_safe_id(bg.get("bg_id"), "bg_id")
+        out = (bgs_dir / f"{bid}.png").resolve()
+        if out.parent != bgs_dir:
+            raise ValueError(f"Background path escaped directory: {bid!r}")
         print(f"  [{bid}] {bg['name']}...")
 
         url, err = generate_and_host(bg["prompt"], "16:9", out)

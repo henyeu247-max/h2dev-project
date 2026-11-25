@@ -165,7 +165,7 @@ Get-ChildItem -Path video,assets\nhac-nen,assets\thumbs,assets\avatars -Recurse 
 | Môi trường | URL | Cách chạy |
 |---|---|---|
 | **Local** | `http://127.0.0.1:8899` | Windows Service `H2DEV_Service` |
-| **Production** | `https://h2dev-learn.tonymmo.com` | VPS `103.249.201.164` + Cloudflare |
+| **Production** | `https://h2dev-learn.tonymmo.com` | VPS `<VPS_IP>` + Cloudflare |
 
 ### 4.2. Kiểm tra bắt buộc
 

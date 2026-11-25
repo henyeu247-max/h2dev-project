@@ -1,8 +1,8 @@
 # H2DEV Server — Windows Service + Tray + Auto-Reload
 
-> Chạy trên **MÁY CHÍNH 192.168.50.216** (laptop-saxukeb).
+> Chạy trên **MÁY CHÍNH <LAN_IP>** (laptop-saxukeb).
 > **Nguồn cục bộ:** `D:\YTB\H2DEV-Project`
-> **Ổ mạng (máy khác map):** `Y:\YTB\` = `\\192.168.50.216\laptopshare`
+> **Ổ mạng (máy khác map):** `Y:\YTB\` = `\\<LAN_IP>\laptopshare`
 > Cập nhật: 2026-09-16
 
 ## Cách server đang chạy (runtime thật)
@@ -18,7 +18,7 @@
 ## Cài đặt 1 lần (chạy với Quyền Admin)
 
 ```powershell
-# Trên máy 192.168.50.216, PowerShell Administrator:
+# Trên máy <LAN_IP>, PowerShell Administrator:
 cd D:\YTB\H2DEV-Project
 powershell -ExecutionPolicy Bypass -File .\scripts\windows\install-h2dev-startup.ps1
 ```
@@ -32,9 +32,9 @@ Máy trạm thấy data mới nhất ngay khi máy chính lưu file (không cầ
 
 | Đường | URL / Ghi chú |
 |---|---|
-| LAN nội bộ | `http://192.168.50.216:8899/` |
-| Tailscale | `http://100.83.146.28:8899/` |
-| Ổ mạng (Explorer) | `Y:\YTB\H2DEV-Project\` (map `\\192.168.50.216\laptopshare`) |
+| LAN nội bộ | `http://<LAN_IP>:8899/` |
+| Tailscale | `http://<TAILSCALE_IP>:8899/` |
+| Ổ mạng (Explorer) | `Y:\YTB\H2DEV-Project\` (map `\\<LAN_IP>\laptopshare`) |
 
 ## Update code
 

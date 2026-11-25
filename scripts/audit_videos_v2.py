@@ -277,15 +277,17 @@ def audio_integrity(path, real_dur, cache=None, key=None):
     if real_dur and real_dur > 40:
         probe_len = 10.0
         start = max(0.0, min(real_dur * 0.5, real_dur - probe_len - 1))
-        tmp = os.path.join(tempfile.gettempdir(), "h2dev_probe_%s.wav" % os.path.basename(path))
+        tmp = None
         try:
+            with tempfile.NamedTemporaryFile(prefix="h2dev_probe_", suffix=".wav", delete=False) as tf:
+                tmp = tf.name
             subprocess.run(
                 [FFMPEG, "-v", "error", "-y", "-hwaccel", "cuda", "-threads", "2",
                  "-ss", "%.2f" % start, "-t", "%.2f" % probe_len,
                  "-i", path, "-vn", "-ac", "1", "-ar", "16000", "-f", "wav", tmp],
                 stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=600)
             got = None
-            if os.path.exists(tmp):
+            if tmp and os.path.exists(tmp):
                 try:
                     got = float(subprocess.check_output(
                         [FFPROBE, "-v", "error", "-show_entries", "format=duration",
@@ -304,10 +306,11 @@ def audio_integrity(path, real_dur, cache=None, key=None):
         except Exception as exc:  # noqa: BLE001
             out["method_3_error"] = str(exc)[:100]
         finally:
-            try:
-                os.remove(tmp)
-            except OSError:
-                pass
+            if tmp:
+                try:
+                    os.remove(tmp)
+                except OSError:
+                    pass
 
     # Tong hop: BAT KY phep nao bao "broken" => file hong.
     # Neu khong phep nao cho ket luan (toan 'not-available'/'not-applicable') => khong-verify-duoc.

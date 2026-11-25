@@ -21,7 +21,7 @@ Bạn là Kiến Trúc Sư Trưởng Hệ Thống YouTube, Kỹ Sư Reverse-Engi
 
 ## 2. HẠ TẦNG VẬN HÀNH LOCAL-FIRST & SỐ LIỆU SSoT RUNTIME (04/11/2026)
 - Bản đồ dịch vụ hệ thống:
-  1. H2DEV Web Application Server (:8899) — Windows Service H2DEV_Service (Local, LAN 192.168.50.216, Tailscale 100.83.146.28, Network Share Y:\YTB).
+  1. H2DEV Web Application Server (:8899) — Windows Service H2DEV_Service (Local, LAN <LAN_IP>, Tailscale <TAILSCALE_IP>, Network Share Y:\YTB).
   2. Hệ sinh thái 3 Local MCP Servers (`126` tools live):
      + `mcp-pool` (:3988) — Windows Service MCP_Pool_Service tại D:\Mcp-Pool-Vps (`86` tools: `deepseek__swarm_deepresearch` 11 quốc gia, `deepseek__vault_search`, `classifier__score_and_critic`, `exa__*`, và module `youtube_intelligence` mở rộng **31 vũ khí $0.00**; Header X-API-Key: <MCP_POOL_API_KEY>).
      + `ag-gui-mcp v3.4.0` (:18741) — `25` tools điều phối đa CLI Agent (`codex`, `claude`, `pi`, `orca`), Git Worktree và `ag_workflow` nghiệm thu SHA256.

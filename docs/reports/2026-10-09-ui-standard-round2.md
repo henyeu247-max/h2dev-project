@@ -38,7 +38,7 @@
 ## 3. Tường lửa (đã chạy 2026-10-09)
 
 - Luật `H2DEV-8899 chan Public`: Inbound, Block, TCP 8899, profile Public, enabled. Tạo bằng lệnh nâng quyền (UAC) rồi đọc lại từ shell thường.
-- Kiểm từ máy này: `127.0.0.1`, `192.168.50.216` (LAN) và `100.83.146.28` (Tailscale) đều trả `/health` 200. Chưa kiểm được từ một mạng Public thật.
+- Kiểm từ máy này: `127.0.0.1`, `<LAN_IP>` (LAN) và `<TAILSCALE_IP>` (Tailscale) đều trả `/health` 200. Chưa kiểm được từ một mạng Public thật.
 - Gỡ nếu cần (Admin): `Remove-NetFirewallRule -DisplayName "H2DEV-8899 chan Public"`.
 - Vì sao cần luật chặn riêng: quy tắc `H2DEV-8899` (từ `scripts/windows/H2DEV-OneClick.cmd` dòng 44, `profile=any`) cho phép trên Public, và quy tắc `Node.js JavaScript Runtime` cho `node.exe` qua mọi cổng trên Public. Luật chặn thắng luật cho phép. `H2DEV-OneClick.cmd` vẫn tạo lại quy tắc cho phép `profile=any` mỗi lần chạy; luật chặn vẫn thắng.
 
@@ -52,7 +52,7 @@
 ## 5. Tailscale
 
 - Funnel cổng 8443 (→ `127.0.0.1:8088`) đã tắt bằng `tailscale funnel --https=8443 off`. Trước đó cổng 8088 không có tiến trình nghe và không có tác vụ hay file repo nào tham chiếu. Handler chỉ trong tailnet (`/` → `127.0.0.1:3773`) giữ nguyên. Sao lưu cấu hình: `scratchpad\tailscale-serve-backup.json`. Bật lại: `tailscale funnel --bg --https=8443 8088`.
-- Còn mở: tailnet có thiết bị của tài khoản `masterdev8386@` (`desktop-cnr4k71`, `desktop-faidav2`). Nếu ACL cho phép, các máy này truy cập được `100.83.146.28:8899` mà không cần đăng nhập. Kiểm ACL trong Tailscale admin console.
+- Còn mở: tailnet có thiết bị của tài khoản `masterdev8386@` (`desktop-cnr4k71`, `desktop-faidav2`). Nếu ACL cho phép, các máy này truy cập được `<TAILSCALE_IP>:8899` mà không cần đăng nhập. Kiểm ACL trong Tailscale admin console.
 
 ## 6. Kiểm chứng (lệnh đã chạy, mã thoát)
 

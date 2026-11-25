@@ -40,7 +40,7 @@
 ### 1.1. NHẬT KÝ HIỆU CHỈNH SỐ LIỆU (2026-09-24)
 
 Phát hiện khi audit `gate-icons.js` chặng P3.6: 3 số trong file này **lệch so với runtime thật**.
-Đã đo 2 đầu (Local `D:\YTB\H2DEV-Project` + VPS `103.249.201.164`) để chốt số đúng — không suy đoán:
+Đã đo 2 đầu (Local `D:\YTB\H2DEV-Project` + VPS `<VPS_IP>`) để chốt số đúng — không suy đoán:
 
 | Mục | Số cũ (sai) | Số thật (đã sửa) | Cách chứng thực |
 |---|---|---|---|
@@ -63,7 +63,7 @@ Phát hiện khi audit `gate-icons.js` chặng P3.6: 3 số trong file này **l�
 - **Cổng 3988:** `MCP_Pool_Service` (NSSM, Running) $\rightarrow$ `[CÓ] LISTENING`.
 - **Cổng 20128:** 9Router Gateway $\rightarrow$ `[CÓ] LISTENING`.
 - **Cổng 20140:** Claude gateway (`~/.claude/gateway`) $\rightarrow$ `[CÓ] LISTENING`.
-- **VPS production:** `103.249.201.164` — deploy qua `git push vps main` (post-receive: `sync-counts --check` → rebuild SQLite → PM2 reload `h2dev-learn`). Lưu ý: thư mục `video/` KHÔNG nằm trong git — media đổi phải rsync riêng.
+- **VPS production:** `<VPS_IP>` — deploy qua `git push vps main` (post-receive: `sync-counts --check` → rebuild SQLite → PM2 reload `h2dev-learn`). Lưu ý: thư mục `video/` KHÔNG nằm trong git — media đổi phải rsync riêng.
 - **Chính sách credit vidIQ:** Tài khoản còn 75 Add-on credits, 0 renewable. Đóng băng 100% các tool tính phí.
 
 ---

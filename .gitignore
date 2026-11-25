@@ -81,3 +81,27 @@ _tools/
 assets/voice-samples-tmp/
 .pi/
 .playwright-mcp/
+
+# OS & Google DriveFS sync junk / conflict snapshots
+desktop.ini
+Thumbs.db
+.DS_Store
+data/*(*).db*
+.tmp.drivedownload/
+.tmp.driveupload/
+
+# ── Security Hygiene Block (SEC5-011 — 2026-11-25) ──────────────────────────
+# TLS/SSL certificates and private keys — never commit
+*.pem
+*.key
+*.pfx
+*.p12
+*.crt
+*.csr
+# Cookie jars — may contain session credentials
+cookies*.json
+*_cookies*.json
+*_cookies.txt
+cookies.txt
+# Python test cache
+.pytest_cache/

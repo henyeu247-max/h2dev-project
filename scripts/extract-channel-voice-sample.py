@@ -211,6 +211,7 @@ def try_download_audio_section(video_url, output_path, start_sec=20, duration=45
         "--audio-quality", "192K",
         "-o", output_path,
         "--force-overwrites",
+        "--",
         video_url
     ]
 

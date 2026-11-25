@@ -13,8 +13,8 @@ Hook `post-receive` chạy trên VPS sau mỗi `git push vps main`:
 ## Cài / cập nhật hook trên VPS
 ```bash
 # Từ máy local (đường dẫn tuyệt đối):
-scp scripts/deploy/post-receive root@103.249.201.164:/root/h2dev.git/hooks/post-receive
-ssh root@103.249.201.164 "chmod +x /root/h2dev.git/hooks/post-receive && bash -n /root/h2dev.git/hooks/post-receive"
+scp scripts/deploy/post-receive root@<VPS_IP>:/root/h2dev.git/hooks/post-receive
+ssh root@<VPS_IP> "chmod +x /root/h2dev.git/hooks/post-receive && bash -n /root/h2dev.git/hooks/post-receive"
 ```
 > Windows: file phải dùng **LF** (không CRLF) vì là script bash. Kiểm tra: `file scripts/deploy/post-receive`.
 

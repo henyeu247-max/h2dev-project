@@ -6,14 +6,14 @@ Web quản lý **toàn bộ** kho học H2DEV (154 bài: 150 video + 4 buổi Zo
 
 ## Cơ chế vận hành & Đồng bộ
 
-- **Máy chủ chính:** Chạy tại thư mục cục bộ `D:\YTB\H2DEV-Project` trên máy `192.168.50.216`.
+- **Máy chủ chính:** Chạy tại thư mục cục bộ `D:\YTB\H2DEV-Project` trên máy `<LAN_IP>`.
 - **Khởi động server:**
   - Một nhấp: `H2DEV-OneClick.cmd`
   - Hoặc: `node server.js` (tự động bind `0.0.0.0:8899`)
 - **Truy cập & Tự động đồng bộ sang các máy khác:**
-  - **Mạng nội bộ (LAN):** [http://192.168.50.216:8899/](http://192.168.50.216:8899/)
-  - **Mạng từ xa (Tailscale):** [http://100.83.146.28:8899/](http://100.83.146.28:8899/) (Tất cả máy trong mạng Tailscale tự động thấy data cập nhật ngay khi máy chính lưu file).
-  - **Ổ mạng máy trạm:** Mapped thành ổ `Y:` (`\\192.168.50.216\laptopshare`).
+  - **Mạng nội bộ (LAN):** [http://<LAN_IP>:8899/](http://<LAN_IP>:8899/)
+  - **Mạng từ xa (Tailscale):** [http://<TAILSCALE_IP>:8899/](http://<TAILSCALE_IP>:8899/) (Tất cả máy trong mạng Tailscale tự động thấy data cập nhật ngay khi máy chính lưu file).
+  - **Ổ mạng máy trạm:** Mapped thành ổ `Y:` (`\\<LAN_IP>\laptopshare`).
 
 Cây chuẩn: **[TREE.md](TREE.md)**
 

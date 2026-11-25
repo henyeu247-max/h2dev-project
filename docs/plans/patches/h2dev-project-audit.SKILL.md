@@ -40,7 +40,7 @@ So với `docsVideoDirs` trong manifest. Thư mục nào không có `description
 ### 4. Server probe
 ```bash
 curl -s -o /dev/null -w "%{http_code}\n" --max-time 5 http://127.0.0.1:8899/
-curl -s -o /dev/null -w "%{http_code}\n" --max-time 5 http://192.168.50.216:8899/
+curl -s -o /dev/null -w "%{http_code}\n" --max-time 5 http://<LAN_IP>:8899/
 ```
 `000` hoặc ECONNREFUSED = server chết. Khởi động: `node server.js` (background).
 

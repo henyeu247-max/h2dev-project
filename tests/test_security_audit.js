@@ -396,6 +396,7 @@ async function runHttpTests() {
     PORT: String(TEST_PORT),
     ACCESS_PASSWORD: TEST_PW,
     AUTH_SECRET: '0123456789abcdef0123456789abcdef0123456789abcdef',
+    H2DEV_DISABLE_KG_WATCHER: '1',
   });
   const child = spawn(process.execPath, [path.join(ROOT, 'server.js')], {
     cwd: ROOT,

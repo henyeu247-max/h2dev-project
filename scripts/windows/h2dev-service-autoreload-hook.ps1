@@ -24,7 +24,7 @@ $ErrorActionPreference = 'Continue'
 
 $root       = 'D:\YTB\H2DEV-Project'
 $port       = 8899
-$nssm       = 'D:\YTB\nssm.exe'
+$nssm       = 'C:\Program Files\H2DEV\nssm.exe'
 $svcName    = 'H2DEV_Service'
 $sentinel   = Join-Path $root '.cache\auto-reload-enabled'
 $statusFile = Join-Path $root '.cache\h2dev-service-reload.json'

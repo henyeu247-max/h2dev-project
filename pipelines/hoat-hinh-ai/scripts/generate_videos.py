@@ -32,16 +32,69 @@ Requirements:
 """
 
 import os
+import re
 import sys
 import json
 import time
+import socket
+import ipaddress
 import threading
 import argparse
 import subprocess
 import shutil
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+from urllib.parse import urlparse, urljoin
 import requests
+
+SAFE_ID_RE = re.compile(r"^[A-Za-z0-9_-]+$")
+
+
+def assert_safe_id(val: str, label: str = "id") -> str:
+    s = str(val or "").strip()
+    if not SAFE_ID_RE.fullmatch(s):
+        raise ValueError(f"Invalid {label} (must match ^[A-Za-z0-9_-]+$): {val!r}")
+    return s
+
+
+def validate_remote_url(url: str) -> str:
+    parsed = urlparse(str(url or "").strip())
+    if parsed.scheme != "https" or not parsed.hostname:
+        raise ValueError(f"Disallowed remote URL (must be https:// with hostname): {url!r}")
+    host = parsed.hostname.strip().lower().rstrip(".")
+    if host in ("localhost", "localhost.localdomain") or host.endswith((".localhost", ".local", ".internal")):
+        raise ValueError(f"Disallowed local/internal host: {host!r}")
+    try:
+        infos = socket.getaddrinfo(host, parsed.port or 443, type=socket.SOCK_STREAM)
+    except socket.gaierror as e:
+        raise ValueError(f"Failed to resolve host {host!r}: {e}") from e
+    if not infos:
+        raise ValueError(f"No IP addresses resolved for host {host!r}")
+    for info in infos:
+        ip_str = info[4][0].split("%")[0]
+        ip_obj = ipaddress.ip_address(ip_str)
+        if (
+            ip_obj.is_private
+            or ip_obj.is_loopback
+            or ip_obj.is_link_local
+            or ip_obj.is_multicast
+            or ip_obj.is_reserved
+            or ip_obj.is_unspecified
+            or not ip_obj.is_global
+        ):
+            raise ValueError(f"Disallowed non-public IP {ip_str} for host {host!r}")
+    return parsed.geturl()
+
+
+def safe_https_get(url: str, timeout: int = 120, max_redirects: int = 3) -> requests.Response:
+    current = validate_remote_url(url)
+    for _ in range(max_redirects + 1):
+        resp = requests.get(current, timeout=timeout, allow_redirects=False)
+        if resp.status_code in (301, 302, 303, 307, 308) and resp.headers.get("Location"):
+            current = validate_remote_url(urljoin(current, resp.headers["Location"]))
+            continue
+        return resp
+    raise ValueError(f"Too many redirects fetching {url!r}")
 
 # Force UTF-8 stdout on Windows (cp1252 console can't render →, ✓, etc.)
 if hasattr(sys.stdout, "reconfigure"):
@@ -219,7 +272,7 @@ def valid_media(path: Path, kind: str) -> bool:
 
 def download_file(url: str, output_path: Path) -> bool:
     try:
-        resp = requests.get(url, timeout=120)
+        resp = safe_https_get(url, timeout=120)
         resp.raise_for_status()
         kind = "image" if output_path.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp"} else "video"
         partial = output_path.with_suffix(output_path.suffix + ".part")
@@ -240,7 +293,7 @@ def download_file(url: str, output_path: Path) -> bool:
 def run_composite(shot: dict, bg_map: dict, char_map: dict,
                   composite_path: Path) -> tuple:
     """Generate one composite image. Returns (shot_id, url, None) or (shot_id, None, error)."""
-    sid = shot["shot_id"]
+    sid = assert_safe_id(shot.get("shot_id"), "shot_id")
     t0  = time.time()
     if composite_path.exists() and valid_media(composite_path, "image"):
         return sid, None, "valid composite exists but no saved remote URL; add it to composites/manifest.json"
@@ -289,7 +342,7 @@ def run_composite(shot: dict, bg_map: dict, char_map: dict,
 
 def run_video(shot: dict, composite_url: str, clip_path: Path) -> tuple:
     """Generate one video clip. Returns (shot_id, True, None) or (shot_id, False, error)."""
-    sid = shot["shot_id"]
+    sid = assert_safe_id(shot.get("shot_id"), "shot_id")
     t0  = time.time()
     if valid_media(clip_path, "video"):
         return sid, True, None
@@ -343,8 +396,16 @@ def main():
     chars_data = json.loads(Path("characters.json").read_text(encoding="utf-8"))
     bgs_data   = json.loads(Path("backgrounds.json").read_text(encoding="utf-8"))
 
-    char_map = {c["character_id"]: c for c in chars_data["characters"]}
-    bg_map   = {b["bg_id"]:        b for b in bgs_data["backgrounds"]}
+    char_map = {}
+    for c in chars_data["characters"]:
+        cid = assert_safe_id(c.get("character_id"), "character_id")
+        c["character_id"] = cid
+        char_map[cid] = c
+    bg_map = {}
+    for b in bgs_data["backgrounds"]:
+        bid = assert_safe_id(b.get("bg_id"), "bg_id")
+        b["bg_id"] = bid
+        bg_map[bid] = b
 
     # Verify image_url fields (set by generate_images.py, Step 3)
     missing = []
@@ -361,9 +422,12 @@ def main():
         raise SystemExit(1)
 
     all_shots = shots_data.get("shots", [])
+    for s in all_shots:
+        s["shot_id"] = assert_safe_id(s.get("shot_id"), "shot_id")
 
     # ── Build pending list ─────────────────────────────────────────────────────
     if args.shot:
+        args.shot = assert_safe_id(args.shot, "shot_id")
         # Single-shot mode — process only the requested shot.
         target = next((s for s in all_shots if s["shot_id"] == args.shot), None)
         if not target:

@@ -56,6 +56,36 @@ function safeFileSlug(str) {
   return s || 'item';
 }
 
+const UNSAFE_META_KEYS = new Set(['__proto__', 'constructor', 'prototype']);
+
+function resolveSafePath(baseDir, rawRel) {
+  const raw = String(rawRel || '').trim().replace(/\\/g, '/').replace(/^\/+/, '');
+  if (!raw) return null;
+  const resolved = path.resolve(baseDir, raw);
+  const rel = path.relative(baseDir, resolved);
+  if (!rel || rel.startsWith('..') || path.isAbsolute(rel)) return null;
+  const segs = rel.split(/[\\/]+/);
+  if (segs.some(s => {
+    const low = s.toLowerCase();
+    return low === '.env' || low.startsWith('.env.') || low === '_private' || low === '.git';
+  })) {
+    return null;
+  }
+  return resolved;
+}
+
+function safeMergeMeta(base, extra) {
+  const out = {};
+  for (const src of [base, extra]) {
+    if (!src || typeof src !== 'object') continue;
+    for (const key of Object.keys(src)) {
+      if (UNSAFE_META_KEYS.has(key)) continue;
+      out[key] = src[key];
+    }
+  }
+  return out;
+}
+
 function yamlStr(val) {
   return JSON.stringify(String(val ?? ''));
 }
@@ -127,28 +157,78 @@ function buildKnowledgeAndInfraGraph(options = {}) {
   const chienLuocData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'chien-luoc.json'), 'utf8'));
   const taiLieuFullData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'tai-lieu-full.json'), 'utf8'));
   const rawKenhData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data-tabs', 'raw-kenh-mau.json'), 'utf8')).records || [];
+  const normalizeAt = (h) => {
+    const s = String(h || '').trim();
+    if (!s) return '';
+    return s.startsWith('@') ? s : `@${s}`;
+  };
+  const collectKenhAliases = (k) => {
+    if (!k || typeof k !== 'object') return [];
+    const out = [];
+    const seen = new Set();
+    const push = (val) => {
+      const raw = typeof val === 'string' ? val : (val && typeof val === 'object' ? val.handle : '');
+      const h = normalizeAt(raw);
+      if (!h || h === '@') return;
+      const low = h.toLowerCase();
+      if (seen.has(low)) return;
+      seen.add(low);
+      out.push(h);
+    };
+    push(k.handle);
+    push(k.handle_hien_tai);
+    push(k.currentHandle);
+    push(k.handle_cu);
+    if (Array.isArray(k.aliasHandles)) k.aliasHandles.forEach(push);
+    if (Array.isArray(k.aliases)) k.aliases.forEach(push);
+    if (Array.isArray(k.handle_history)) k.handle_history.forEach(push);
+    return out;
+  };
   const kenhByHandleLower = new Map();
+  const kenhByAnyHandleLower = new Map();
+  const kenhByChannelId = new Map();
   for (const k of kenhMau) {
-    if (k && k.handle) {
-      kenhByHandleLower.set(String(k.handle).replace(/^@/, '').toLowerCase(), k);
+    if (!k) continue;
+    if (k.handle) {
+      const key = String(k.handle).replace(/^@/, '').trim().toLowerCase();
+      if (key) {
+        kenhByHandleLower.set(key, k);
+        kenhByAnyHandleLower.set(key, k);
+      }
+    }
+    if (k.channelId && /^UC[\w-]{20,}$/.test(k.channelId) && !kenhByChannelId.has(k.channelId)) {
+      kenhByChannelId.set(k.channelId, k);
+    }
+    for (const alias of collectKenhAliases(k)) {
+      const aKey = alias.replace(/^@/, '').trim().toLowerCase();
+      if (aKey && !kenhByAnyHandleLower.has(aKey)) {
+        kenhByAnyHandleLower.set(aKey, k);
+      }
     }
   }
   const rawById = new Map(rawKenhData.map(r => [r.id, r]));
   const rawByHandleLower = new Map();
+  const rawByChannelId = new Map();
+  const pushRawHandle = (hStr, r) => {
+    const oh = String(hStr || '').replace(/^@/, '').trim().toLowerCase();
+    if (!oh) return;
+    const list = rawByHandleLower.get(oh) || [];
+    if (!list.includes(r)) list.push(r);
+    rawByHandleLower.set(oh, list);
+  };
   for (const r of rawKenhData) {
-    const h = String(r?.channel?.handle || '').replace(/^@/, '').toLowerCase();
-    if (h) {
-      const list = rawByHandleLower.get(h) || [];
-      list.push(r);
-      rawByHandleLower.set(h, list);
-    }
+    pushRawHandle(r?.channel?.handle, r);
+    pushRawHandle(r?.visionAnalysis?.handle, r);
+    pushRawHandle(r?.ocr?.handle, r);
     for (const oldH of (r.handleHistory || [])) {
-      const oh = String(oldH || '').replace(/^@/, '').toLowerCase();
-      if (oh) {
-        const list = rawByHandleLower.get(oh) || [];
-        list.push(r);
-        rawByHandleLower.set(oh, list);
-      }
+      const oh = typeof oldH === 'string' ? oldH : oldH?.handle;
+      pushRawHandle(oh, r);
+    }
+    const cid = r?.channel?.channelId;
+    if (cid) {
+      const cList = rawByChannelId.get(cid) || [];
+      cList.push(r);
+      rawByChannelId.set(cid, cList);
     }
   }
   function foldVi(s) {
@@ -204,7 +284,7 @@ function buildKnowledgeAndInfraGraph(options = {}) {
       });
     } else {
       const cur = nodes.get(id);
-      cur.meta = { ...cur.meta, ...meta };
+      cur.meta = safeMergeMeta(cur.meta, meta);
       if (sku && !cur.sku) cur.sku = sku;
       if (body && !cur.body) cur.body = body;
       else if (body && cur.body && !cur.body.includes(body)) cur.body = `${body} ${cur.body}`.trim();
@@ -266,6 +346,7 @@ function buildKnowledgeAndInfraGraph(options = {}) {
   const nicheVideos = new Map();
   const toolVideos = new Map();
   const channelVideos = new Map();
+  const channelAliasRefs = new Map();
 
   // 2. Process all 3 Tracks -> Modules -> Videos (Layer 1: Knowledge)
   for (const tr of tracks) {
@@ -293,8 +374,8 @@ function buildKnowledgeAndInfraGraph(options = {}) {
         const it = m.items[iIdx];
         const sku = it.sku;
         const v = catBySku.get(sku) || it;
-        const localInsPath = path.join(ROOT, 'video', sku, 'insight.json');
-        const ins = fs.existsSync(localInsPath)
+        const localInsPath = resolveSafePath(ROOT, path.join('video', String(sku || ''), 'insight.json'));
+        const ins = (localInsPath && fs.existsSync(localInsPath))
           ? JSON.parse(fs.readFileSync(localInsPath, 'utf8'))
           : (tr.insights[sku] || tr.insights[sku.toUpperCase()] || tr.insights[sku.toLowerCase()] || {});
 
@@ -345,33 +426,45 @@ function buildKnowledgeAndInfraGraph(options = {}) {
           const cleanH = handleRaw.replace(/^@/, '').trim();
           if (!cleanH) continue;
           const hKey = cleanH.toLowerCase();
-          const fSlug = safeFileSlug(cleanH);
-          const cNodeId = `channel:${hKey}`;
-          const kInfo = kenhByHandleLower.get(hKey);
+          const kInfo = kenhByHandleLower.get(hKey) || kenhByAnyHandleLower.get(hKey);
+          const canonClean = kInfo && kInfo.handle ? String(kInfo.handle).replace(/^@/, '').trim() : cleanH;
+          const canonKey = canonClean.toLowerCase();
+          const fSlug = safeFileSlug(canonClean);
+          const cNodeId = `channel:${canonKey}`;
           const isDead = Boolean((typeof c === 'object' && c?.dead) || kInfo?.dead);
-          const cUrl = (typeof c === 'object' && c?.url) || kInfo?.url || `https://www.youtube.com/@${encodeURIComponent(cleanH)}`;
-          const cName = (typeof c === 'object' && c?.name) || kInfo?.title || `@${cleanH}`;
+          const cUrl = kInfo?.url || (typeof c === 'object' && c?.url) || `https://www.youtube.com/@${encodeURIComponent(canonClean)}`;
+          const cName = kInfo?.title || (typeof c === 'object' && c?.name) || `@${canonClean}`;
 
-          if (!channelVideos.has(hKey)) {
-            channelVideos.set(hKey, {
-              handle: `@${cleanH}`,
+          if (!channelVideos.has(canonKey)) {
+            channelVideos.set(canonKey, {
+              handle: `@${canonClean}`,
               fileSlug: fSlug,
               name: cName,
               url: cUrl,
               dead: isDead,
               skus: [],
               tracks: new Set(),
-              kInfo
+              kInfo,
+              aliases: new Set(collectKenhAliases(kInfo))
             });
           }
-          const cEntry = channelVideos.get(hKey);
+          const cEntry = channelVideos.get(canonKey);
+          cEntry.aliases.add(`@${cleanH}`);
           if (!cEntry.skus.some(x => x.sku === sku)) {
             cEntry.skus.push({ sku, title, track: tr.code });
           }
           cEntry.tracks.add(tr.code);
-          nEntry.channels.add(`[[channels/${fSlug}|@${cleanH}]]`);
+          nEntry.channels.add(`[[channels/${fSlug}|@${canonClean}]]`);
           addEdge(vNodeId, cNodeId, 'ANALYZES_CHANNEL', 1.3);
-          chanWikiLinks.push(`[[channels/${fSlug}|@${cleanH}]]${isDead ? ' *(DIE)*' : ''}`);
+          if (hKey !== canonKey) {
+            if (!channelAliasRefs.has(hKey)) {
+              channelAliasRefs.set(hKey, { aliasHandle: `@${cleanH}`, canonKey, kInfo, skus: [] });
+            }
+            const ref = channelAliasRefs.get(hKey);
+            if (!ref.skus.some(x => x.sku === sku)) ref.skus.push({ sku, title, track: tr.code });
+            addEdge(vNodeId, `channel:${hKey}`, 'ANALYZES_CHANNEL', 1.2);
+          }
+          chanWikiLinks.push(`[[channels/${fSlug}|@${canonClean}]]${isDead ? ' *(DIE)*' : ''}`);
         }
 
         const takeaways = Array.isArray(ins.key_takeaways) ? ins.key_takeaways : [];
@@ -604,14 +697,18 @@ ${cData.skus.map(v => `- [[videos/${v.sku}|${v.sku} — ${v.title}]] (\`${v.trac
 `;
       fs.writeFileSync(path.join(VAULT_DIR, cRelFile), cMd, 'utf8');
     }
+    const cAliases = [...new Set([...(cData.aliases || []), ...collectKenhAliases(cData.kInfo)])];
     addNode(cNodeId, 'channel', `${cData.handle}`, [...cData.tracks].join(','), '', `knowledge-hub/vault/${cRelFile}`, {
       handle: cData.handle,
       name: cData.name,
       url: cData.url,
       dead: cData.dead,
+      channelId: cData.kInfo?.channelId || '',
+      nicheCode: cData.kInfo?.nicheCode || '',
+      aliasHandles: cAliases,
       videoCount: cData.skus.length,
       targetUrl: `/kenh-mau?handle=${encodeURIComponent(cData.handle)}`
-    }, `${cData.handle} ${cData.name} ${cData.kInfo?.niche || ''} ${cData.skus.map(x => x.sku + ' ' + x.title).join(' ')}`, cData.skus.map(x => `[[videos/${x.sku}]]`), { layer: 'knowledge', level: 5 });
+    }, `${cData.handle} ${cData.name} ${cAliases.join(' ')} ${cData.kInfo?.channelId || ''} ${cData.kInfo?.nicheCode || ''} ${cData.kInfo?.niche || ''} ${cData.skus.map(x => x.sku + ' ' + x.title).join(' ')}`, cData.skus.map(x => `[[videos/${x.sku}]]`), { layer: 'knowledge', level: 5 });
   }
 
   // 3.1. Ingest all 40 Canonical Niches + 5 Meta + 5 Red from ngach-xanh.json & link SKUs + Channels
@@ -622,25 +719,74 @@ ${cData.skus.map(v => `- [[videos/${v.sku}|${v.sku} — ${v.title}]] (\`${v.trac
     const cleanH = String(handleStr || '').replace(/^@/, '').trim();
     if (!cleanH) return null;
     const hKey = cleanH.toLowerCase();
-    const cNodeId = `channel:${hKey}`;
+    const kInfo = kenhByHandleLower.get(hKey) || kenhByAnyHandleLower.get(hKey);
+    const canonClean = kInfo && kInfo.handle ? String(kInfo.handle).replace(/^@/, '').trim() : cleanH;
+    const canonKey = canonClean.toLowerCase();
+    const cNodeId = `channel:${canonKey}`;
+    const cAliases = collectKenhAliases(kInfo);
     if (!nodes.has(cNodeId)) {
-      const fSlug = safeFileSlug(cleanH);
-      const kInfo = kenhByHandleLower.get(hKey);
+      const fSlug = safeFileSlug(canonClean);
       const isDead = Boolean(kInfo?.dead);
-      const cUrl = kInfo?.url || `https://www.youtube.com/@${encodeURIComponent(cleanH)}`;
-      const cName = kInfo?.title || `@${cleanH}`;
-      addNode(cNodeId, 'channel', `@${cleanH}`, 'all', '', `knowledge-hub/vault/channels/${fSlug}.md`, {
-        handle: `@${cleanH}`,
+      const cUrl = kInfo?.url || `https://www.youtube.com/@${encodeURIComponent(canonClean)}`;
+      const cName = kInfo?.title || `@${canonClean}`;
+      addNode(cNodeId, 'channel', `@${canonClean}`, 'all', '', `knowledge-hub/vault/channels/${fSlug}.md`, {
+        handle: `@${canonClean}`,
         name: cName,
         url: cUrl,
         dead: isDead,
         channelId: kInfo?.channelId || '',
         nicheCode: kInfo?.nicheCode || '',
+        aliasHandles: cAliases,
         videoCount: 0,
-        targetUrl: `/kenh-mau?handle=${encodeURIComponent('@' + cleanH)}`
-      }, `@${cleanH} ${cName} ${kInfo?.channelId || ''} ${kInfo?.nicheCode || ''} ${kInfo?.niche || ''}`, [], { layer: 'knowledge', level: 5 });
+        targetUrl: `/kenh-mau?handle=${encodeURIComponent('@' + canonClean)}`
+      }, `@${canonClean} ${cName} ${cAliases.join(' ')} ${kInfo?.channelId || ''} ${kInfo?.nicheCode || ''} ${kInfo?.niche || ''}`, [], { layer: 'knowledge', level: 5 });
+    } else if (kInfo) {
+      const cur = nodes.get(cNodeId);
+      const mergedAliases = [...new Set([...(cur.meta.aliasHandles || []), ...cAliases])];
+      cur.meta.aliasHandles = mergedAliases;
+      if (!cur.meta.channelId && kInfo.channelId) cur.meta.channelId = kInfo.channelId;
+      if (!cur.meta.nicheCode && kInfo.nicheCode) cur.meta.nicheCode = kInfo.nicheCode;
+      cur.body = `${cur.body || ''} ${mergedAliases.join(' ')} ${kInfo.channelId || ''} ${kInfo.nicheCode || ''}`.trim();
     }
     return cNodeId;
+  }
+  function ensureAliasChannelNode(aliasHandleStr, canonNodeId) {
+    const cleanA = String(aliasHandleStr || '').replace(/^@/, '').trim();
+    if (!cleanA || !canonNodeId || !nodes.has(canonNodeId)) return null;
+    const aKey = cleanA.toLowerCase();
+    const aNodeId = `channel:${aKey}`;
+    if (aNodeId === canonNodeId) return canonNodeId;
+    const canonNode = nodes.get(canonNodeId);
+    const canonHandle = canonNode.meta.handle || canonNode.label;
+    if (!nodes.has(aNodeId)) {
+      const fSlug = safeFileSlug(cleanA);
+      addNode(aNodeId, 'channel', `@${cleanA}`, canonNode.track || 'all', '', `knowledge-hub/vault/channels/${fSlug}.md`, {
+        handle: `@${cleanA}`,
+        canonicalHandle: canonHandle,
+        aliasOf: canonNodeId,
+        name: canonNode.meta.name || `@${cleanA}`,
+        url: canonNode.meta.url || `https://www.youtube.com/@${encodeURIComponent(cleanA)}`,
+        dead: Boolean(canonNode.meta.dead),
+        channelId: canonNode.meta.channelId || '',
+        nicheCode: canonNode.meta.nicheCode || '',
+        aliasHandles: canonNode.meta.aliasHandles || [],
+        rawId: canonNode.meta.rawId || undefined,
+        rawIds: canonNode.meta.rawIds || undefined,
+        rawUrl: canonNode.meta.rawUrl || undefined,
+        videoCount: canonNode.meta.videoCount || 0,
+        targetUrl: `/kenh-mau?handle=${encodeURIComponent(canonHandle)}`
+      }, `@${cleanA} ${canonHandle} ${(canonNode.meta.aliasHandles || []).join(' ')} ${canonNode.meta.channelId || ''} ${canonNode.meta.nicheCode || ''}`, [], { layer: 'knowledge', level: 5 });
+    } else {
+      const aNode = nodes.get(aNodeId);
+      aNode.meta.canonicalHandle = canonHandle;
+      aNode.meta.aliasOf = canonNodeId;
+      if (canonNode.meta.rawId && !aNode.meta.rawId) aNode.meta.rawId = canonNode.meta.rawId;
+      if (canonNode.meta.rawIds) aNode.meta.rawIds = [...new Set([...(aNode.meta.rawIds || []), ...canonNode.meta.rawIds])];
+      if (canonNode.meta.rawUrl && !aNode.meta.rawUrl) aNode.meta.rawUrl = canonNode.meta.rawUrl;
+      aNode.meta.targetUrl = `/kenh-mau?handle=${encodeURIComponent(canonHandle)}`;
+    }
+    addEdge(aNodeId, canonNodeId, 'ALIAS_OF', 1.5);
+    return aNodeId;
   }
 
   const auditRankMap = new Map(
@@ -691,7 +837,7 @@ ${cData.skus.map(v => `- [[videos/${v.sku}|${v.sku} — ${v.title}]] (\`${v.trac
       videoCount: (nx.skus || []).length,
       channelCount: (nx.mauSach || []).length + (nx.mauPhu || []).length + (nx.mauBan || []).length,
       expandedChannelCount: (nx.kenhMoRong2026 || []).length,
-      subNicheCount: sn120List.length,
+      subNicheCount: sn120List.length + sn26List.length,
       subNicheCodes: [...new Set(subNicheCodes)],
       targetUrl: `/ngachxanh?q=${encodeURIComponent(nxCode)}`
     }, `${nxCode} ${nx.ngach} ${nxAlias} ${subNicheText} ${nx.evidence || ''} ${nx.lamDuoc || ''} ${nx.viPham || ''}`, [], { layer: 'knowledge', level: 3, parentId: 'track:h2dev' });
@@ -718,7 +864,7 @@ ${cData.skus.map(v => `- [[videos/${v.sku}|${v.sku} — ${v.title}]] (\`${v.trac
     }
   }
 
-  // Ensure all 1,082 channels in data-tabs/kenh-mau.json are in the graph & linked to their niche
+  // Ensure all channels in data-tabs/kenh-mau.json are in the graph & linked to their niche
   for (const k of kenhMau) {
     if (!k || !k.handle) continue;
     const cNodeId = ensureChannelNode(k.handle);
@@ -739,7 +885,7 @@ ${cData.skus.map(v => `- [[videos/${v.sku}|${v.sku} — ${v.title}]] (\`${v.trac
     trH2.body = `${trH2.body || ''} ${metaTokens}`.trim();
   }
 
-  // Enrich existing channel nodes with Raw Dossier metadata (RAW-001..RAW-156) without creating extra unlinked channel nodes
+  // Enrich existing channel nodes with Raw Dossier metadata (RAW-001..RAW-166) and link RAW aliases
   const rawByIdMap = new Map(rawKenhData.filter(x => x && x.id).map(x => [x.id, x]));
   for (const r of rawKenhData) {
     const dupRec = r?.duplicateOf ? rawByIdMap.get(r.duplicateOf) : null;
@@ -751,11 +897,36 @@ ${cData.skus.map(v => `- [[videos/${v.sku}|${v.sku} — ${v.title}]] (\`${v.trac
       r?.ocr?.handle
     ];
     let matchedChannelNode = null;
-    for (const h of candidateHandles) {
-      const cleanH = String(h || '').replace(/^@/, '').trim().toLowerCase();
-      if (cleanH && nodes.has(`channel:${cleanH}`)) {
-        matchedChannelNode = nodes.get(`channel:${cleanH}`);
-        break;
+    const cidMatch = r?.channel?.channelId ? kenhByChannelId.get(r.channel.channelId) : null;
+    if (cidMatch && cidMatch.handle) {
+      const cIdNode = ensureChannelNode(cidMatch.handle);
+      if (cIdNode && nodes.has(cIdNode)) matchedChannelNode = nodes.get(cIdNode);
+    }
+    if (!matchedChannelNode) {
+      for (const h of candidateHandles) {
+        const cleanH = String(h || '').replace(/^@/, '').trim().toLowerCase();
+        if (!cleanH) continue;
+        if (nodes.has(`channel:${cleanH}`)) {
+          matchedChannelNode = nodes.get(`channel:${cleanH}`);
+          break;
+        }
+        const kMatch = kenhByAnyHandleLower.get(cleanH);
+        if (kMatch && kMatch.handle) {
+          const cIdNode = ensureChannelNode(kMatch.handle);
+          if (cIdNode && nodes.has(cIdNode)) {
+            matchedChannelNode = nodes.get(cIdNode);
+            break;
+          }
+        }
+      }
+    }
+    if (!matchedChannelNode && r?.channel?.handle) {
+      const fallbackNodeId = ensureChannelNode(r.channel.handle);
+      if (fallbackNodeId && nodes.has(fallbackNodeId)) {
+        matchedChannelNode = nodes.get(fallbackNodeId);
+        if (r?.nicheCode && nicheNodeByCode.has(r.nicheCode)) {
+          addEdge(nicheNodeByCode.get(r.nicheCode), fallbackNodeId, 'BENCHMARKS_CHANNEL', 1.15);
+        }
       }
     }
     if (matchedChannelNode) {
@@ -765,8 +936,21 @@ ${cData.skus.map(v => `- [[videos/${v.sku}|${v.sku} — ${v.title}]] (\`${v.trac
       cn.meta.rawIds = [...rawIds];
       cn.meta.channelId = cn.meta.channelId || r?.channel?.channelId || '';
       cn.meta.rawUrl = `/rawkenh?rid=${encodeURIComponent(cn.meta.rawId)}`;
-      cn.meta.targetUrl = cn.meta.rawUrl;
-      cn.body = `${cn.body || ''} ${[...rawIds].join(' ')} ${r?.channel?.channelId || ''} ${r?.channel?.title || ''} ${r?.niche || ''}`.trim();
+      const cnHandle = cn.meta.handle || cn.label;
+      cn.meta.targetUrl = `/kenh-mau?handle=${encodeURIComponent(cnHandle)}`;
+      const histHandles = Array.isArray(r?.handleHistory)
+        ? r.handleHistory.map(h => (typeof h === 'string' ? h : h?.handle)).filter(Boolean)
+        : [];
+      const rawAliasList = [r?.channel?.handle, ...histHandles].filter(Boolean);
+      cn.meta.aliasHandles = [...new Set([...(cn.meta.aliasHandles || []), ...rawAliasList.map(h => normalizeAt(h))])];
+      cn.body = `${cn.body || ''} ${[...rawIds].join(' ')} ${rawAliasList.join(' ')} ${r?.channel?.channelId || ''} ${r?.channel?.title || ''} ${r?.niche || ''}`.trim();
+
+      if (r?.channel?.handle) {
+        const rawHKey = String(r.channel.handle).replace(/^@/, '').trim().toLowerCase();
+        if (rawHKey && `channel:${rawHKey}` !== cn.id) {
+          ensureAliasChannelNode(r.channel.handle, cn.id);
+        }
+      }
     } else if (r?.nicheCode && nicheNodeByCode.has(r.nicheCode)) {
       const nn = nodes.get(nicheNodeByCode.get(r.nicheCode));
       if (nn) {
@@ -775,6 +959,10 @@ ${cData.skus.map(v => `- [[videos/${v.sku}|${v.sku} — ${v.title}]] (\`${v.trac
         nn.body = `${nn.body || ''} ${r.id} ${r?.channel?.handle || ''} ${r?.channel?.title || ''}`.trim();
       }
     }
+  }
+
+  for (const [, ref] of channelAliasRefs.entries()) {
+    ensureAliasChannelNode(ref.aliasHandle, `channel:${ref.canonKey}`);
   }
 
   // 3.2. Ingest 300 Catalog SOP Documents (`sop:DOC-001`..`sop:DOC-300`) from tai-lieu-full.json
@@ -1102,20 +1290,27 @@ ${citedSkus.map(s => `- [[videos/${s}|${s} — ${allVideoTitleBySku.get(s)?.titl
   }
 
   function indexFileEntry(absFile, proj, domainId, parentNodeId) {
-    const ext = path.extname(absFile).toLowerCase();
-    const base = path.basename(absFile);
+    const resolvedFile = path.resolve(absFile);
+    const relCheck = path.relative(WORKSPACE_ROOT, resolvedFile);
+    if (!relCheck || relCheck.startsWith('..') || path.isAbsolute(relCheck)) return null;
+    if (relCheck.split(/[\\/]+/).some(s => {
+      const low = s.toLowerCase();
+      return low === '.env' || low.startsWith('.env.') || low === '_private' || low === '.git';
+    })) return null;
+    const ext = path.extname(resolvedFile).toLowerCase();
+    const base = path.basename(resolvedFile);
     if (base.toLowerCase().startsWith('.env') || base.toLowerCase().startsWith('mcp-keys')) return null;
     if (!allowedExts.has(ext) && !['.db'].includes(ext)) return null;
 
     let st;
-    try { st = fs.statSync(absFile); } catch (_) { return null; }
-    const relToWs = toPosix(path.relative(WORKSPACE_ROOT, absFile));
-    const relToProj = toPosix(path.relative(proj.absPath, absFile));
+    try { st = fs.statSync(resolvedFile); } catch (_) { return null; }
+    const relToWs = toPosix(relCheck);
+    const relToProj = toPosix(path.relative(proj.absPath, resolvedFile));
     const fileNodeId = `file:${relToWs}`;
 
     let sample = '';
     if (st.size <= 512 * 1024 && allowedExts.has(ext)) {
-      try { sample = fs.readFileSync(absFile, 'utf8'); } catch (_) {}
+      try { sample = fs.readFileSync(resolvedFile, 'utf8'); } catch (_) {}
     }
     const role = inferFileRole(relToWs, ext, sample);
 
@@ -1445,152 +1640,159 @@ ${projFiles.slice(0, 120).map(f => `- \`${f.meta.relToProject || f.label}\` — 
 
   // 6. Build SQLite WAL + FTS5 + Property Graph (`data/h2dev_knowledge_graph.db`)
   const db = new DatabaseSync(DB_PATH);
-  db.exec(`
-    PRAGMA busy_timeout = 5000;
-    PRAGMA journal_mode = WAL;
-    PRAGMA synchronous = NORMAL;
-    PRAGMA mmap_size = 268435456;
-    PRAGMA cache_size = -64000;
-  `);
+  try {
+    try {
+      db.exec(`
+        PRAGMA busy_timeout = 5000;
+        PRAGMA journal_mode = WAL;
+        PRAGMA synchronous = NORMAL;
+        PRAGMA mmap_size = 268435456;
+        PRAGMA cache_size = -64000;
+      `);
 
-  db.exec('BEGIN IMMEDIATE;');
-  db.exec(`
-    DROP TABLE IF EXISTS kg_nodes;
-    DROP TABLE IF EXISTS kg_edges;
-    DROP TABLE IF EXISTS kg_backlinks;
-    DROP TABLE IF EXISTS kg_sync_state;
-    DROP TABLE IF EXISTS kg_fts;
+      db.exec('BEGIN IMMEDIATE;');
+      db.exec(`
+        DROP TABLE IF EXISTS kg_nodes;
+        DROP TABLE IF EXISTS kg_edges;
+        DROP TABLE IF EXISTS kg_backlinks;
+        DROP TABLE IF EXISTS kg_sync_state;
+        DROP TABLE IF EXISTS kg_fts;
 
-    CREATE TABLE kg_nodes (
-      id TEXT PRIMARY KEY,
-      type TEXT NOT NULL,
-      layer TEXT NOT NULL,
-      level INTEGER NOT NULL DEFAULT 4,
-      parent_id TEXT NOT NULL DEFAULT '',
-      label TEXT NOT NULL,
-      track TEXT NOT NULL,
-      sku TEXT NOT NULL,
-      path TEXT NOT NULL,
-      degree INTEGER NOT NULL DEFAULT 0,
-      metadata_json TEXT NOT NULL
-    ) STRICT;
+        CREATE TABLE kg_nodes (
+          id TEXT PRIMARY KEY,
+          type TEXT NOT NULL,
+          layer TEXT NOT NULL,
+          level INTEGER NOT NULL DEFAULT 4,
+          parent_id TEXT NOT NULL DEFAULT '',
+          label TEXT NOT NULL,
+          track TEXT NOT NULL,
+          sku TEXT NOT NULL,
+          path TEXT NOT NULL,
+          degree INTEGER NOT NULL DEFAULT 0,
+          metadata_json TEXT NOT NULL
+        ) STRICT;
 
-    CREATE TABLE kg_edges (
-      source TEXT NOT NULL,
-      target TEXT NOT NULL,
-      relation TEXT NOT NULL,
-      weight REAL NOT NULL DEFAULT 1.0,
-      PRIMARY KEY (source, target, relation)
-    ) STRICT;
+        CREATE TABLE kg_edges (
+          source TEXT NOT NULL,
+          target TEXT NOT NULL,
+          relation TEXT NOT NULL,
+          weight REAL NOT NULL DEFAULT 1.0,
+          PRIMARY KEY (source, target, relation)
+        ) STRICT;
 
-    CREATE TABLE kg_backlinks (
-      node_id TEXT PRIMARY KEY,
-      inbound_count INTEGER NOT NULL,
-      outbound_count INTEGER NOT NULL,
-      inbound_json TEXT NOT NULL,
-      outbound_json TEXT NOT NULL
-    ) STRICT;
+        CREATE TABLE kg_backlinks (
+          node_id TEXT PRIMARY KEY,
+          inbound_count INTEGER NOT NULL,
+          outbound_count INTEGER NOT NULL,
+          inbound_json TEXT NOT NULL,
+          outbound_json TEXT NOT NULL
+        ) STRICT;
 
-    CREATE TABLE kg_sync_state (
-      path TEXT PRIMARY KEY,
-      mtime_ms INTEGER NOT NULL,
-      size_bytes INTEGER NOT NULL
-    ) STRICT;
+        CREATE TABLE kg_sync_state (
+          path TEXT PRIMARY KEY,
+          mtime_ms INTEGER NOT NULL,
+          size_bytes INTEGER NOT NULL
+        ) STRICT;
 
-    CREATE VIRTUAL TABLE kg_fts USING fts5(
-      id UNINDEXED,
-      type,
-      label,
-      body,
-      wikilinks,
-      tokenize = 'unicode61 remove_diacritics 2'
-    );
+        CREATE VIRTUAL TABLE kg_fts USING fts5(
+          id UNINDEXED,
+          type,
+          label,
+          body,
+          wikilinks,
+          tokenize = 'unicode61 remove_diacritics 2'
+        );
 
-    CREATE INDEX idx_kg_nodes_type ON kg_nodes(type);
-    CREATE INDEX idx_kg_nodes_layer ON kg_nodes(layer);
-    CREATE INDEX idx_kg_nodes_parent ON kg_nodes(parent_id);
-    CREATE INDEX idx_kg_nodes_sku ON kg_nodes(sku);
-    CREATE INDEX idx_kg_nodes_id_lower ON kg_nodes(LOWER(id));
-    CREATE INDEX idx_kg_nodes_sku_lower ON kg_nodes(LOWER(sku));
-    CREATE INDEX idx_kg_nodes_path_lower ON kg_nodes(LOWER(path));
-    CREATE INDEX idx_kg_nodes_label_lower ON kg_nodes(LOWER(label));
-    CREATE INDEX idx_kg_edges_source ON kg_edges(source);
-    CREATE INDEX idx_kg_edges_target ON kg_edges(target);
-  `);
+        CREATE INDEX idx_kg_nodes_type ON kg_nodes(type);
+        CREATE INDEX idx_kg_nodes_layer ON kg_nodes(layer);
+        CREATE INDEX idx_kg_nodes_parent ON kg_nodes(parent_id);
+        CREATE INDEX idx_kg_nodes_sku ON kg_nodes(sku);
+        CREATE INDEX idx_kg_nodes_id_lower ON kg_nodes(LOWER(id));
+        CREATE INDEX idx_kg_nodes_sku_lower ON kg_nodes(LOWER(sku));
+        CREATE INDEX idx_kg_nodes_path_lower ON kg_nodes(LOWER(path));
+        CREATE INDEX idx_kg_nodes_label_lower ON kg_nodes(LOWER(label));
+        CREATE INDEX idx_kg_edges_source ON kg_edges(source);
+        CREATE INDEX idx_kg_edges_target ON kg_edges(target);
+      `);
 
-  const insNode = db.prepare(`INSERT INTO kg_nodes (id, type, layer, level, parent_id, label, track, sku, path, degree, metadata_json) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`);
-  const insEdge = db.prepare(`INSERT INTO kg_edges (source, target, relation, weight) VALUES (?, ?, ?, ?)`);
-  const insBacklink = db.prepare(`INSERT INTO kg_backlinks (node_id, inbound_count, outbound_count, inbound_json, outbound_json) VALUES (?, ?, ?, ?, ?)`);
-  const insSync = db.prepare(`INSERT OR REPLACE INTO kg_sync_state (path, mtime_ms, size_bytes) VALUES (?, ?, ?)`);
-  const insFts = db.prepare(`INSERT INTO kg_fts (id, type, label, body, wikilinks) VALUES (?, ?, ?, ?, ?)`);
+      const insNode = db.prepare(`INSERT INTO kg_nodes (id, type, layer, level, parent_id, label, track, sku, path, degree, metadata_json) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`);
+      const insEdge = db.prepare(`INSERT INTO kg_edges (source, target, relation, weight) VALUES (?, ?, ?, ?)`);
+      const insBacklink = db.prepare(`INSERT INTO kg_backlinks (node_id, inbound_count, outbound_count, inbound_json, outbound_json) VALUES (?, ?, ?, ?, ?)`);
+      const insSync = db.prepare(`INSERT OR REPLACE INTO kg_sync_state (path, mtime_ms, size_bytes) VALUES (?, ?, ?)`);
+      const insFts = db.prepare(`INSERT INTO kg_fts (id, type, label, body, wikilinks) VALUES (?, ?, ?, ?, ?)`);
 
-  for (const [nId, n] of nodes.entries()) {
-    const inb = inboundMap.get(nId) || [];
-    const outb = outboundMap.get(nId) || [];
-    const deg = inb.length + outb.length;
-    n.degree = deg;
-    n.meta = n.meta || {};
-    if (!n.meta.targetUrl) {
-      if (n.type === 'video') {
-        n.meta.targetUrl = n.meta.playerUrl || `/lotrinh/${encodeURIComponent(n.sku || n.id.replace(/^video:/, ''))}${n.track && n.track !== 'h2dev' ? '?track=' + encodeURIComponent(n.track) : ''}`;
-      } else if (n.type === 'track') {
-        n.meta.targetUrl = `/lotrinh?track=${encodeURIComponent(n.track || 'h2dev')}`;
-      } else if (n.type === 'module') {
-        n.meta.targetUrl = `/lotrinh?track=${encodeURIComponent(n.track || 'h2dev')}`;
-      } else if (n.type === 'niche') {
-        const cleanNiche = String(n.label || '').replace(/^Ngách:\s*/i, '').trim();
-        n.meta.targetUrl = `/video?niche=${encodeURIComponent(cleanNiche)}`;
-      } else if (n.type === 'channel') {
-        const hKey = n.id.replace(/^channel:/, '').toLowerCase();
-        const rList = rawByHandleLower.get(hKey) || [];
-        if (rList.length && !n.meta.rawId) {
-          n.meta.rawId = rList[0].id;
-          n.meta.rawIds = rList.map(x => x.id);
-          n.meta.rawUrl = `/rawkenh?rid=${encodeURIComponent(rList[0].id)}`;
+      for (const [nId, n] of nodes.entries()) {
+        const inb = inboundMap.get(nId) || [];
+        const outb = outboundMap.get(nId) || [];
+        const deg = inb.length + outb.length;
+        n.degree = deg;
+        n.meta = n.meta || {};
+        if (!n.meta.targetUrl) {
+          if (n.type === 'video') {
+            n.meta.targetUrl = n.meta.playerUrl || `/lotrinh/${encodeURIComponent(n.sku || n.id.replace(/^video:/, ''))}${n.track && n.track !== 'h2dev' ? '?track=' + encodeURIComponent(n.track) : ''}`;
+          } else if (n.type === 'track') {
+            n.meta.targetUrl = `/lotrinh?track=${encodeURIComponent(n.track || 'h2dev')}`;
+          } else if (n.type === 'module') {
+            n.meta.targetUrl = `/lotrinh?track=${encodeURIComponent(n.track || 'h2dev')}`;
+          } else if (n.type === 'niche') {
+            const cleanNiche = String(n.label || '').replace(/^Ngách:\s*/i, '').trim();
+            n.meta.targetUrl = `/video?niche=${encodeURIComponent(cleanNiche)}`;
+          } else if (n.type === 'channel') {
+            const hKey = n.id.replace(/^channel:/, '').toLowerCase();
+            const rList = rawByHandleLower.get(hKey) || (n.meta.channelId ? rawByChannelId.get(n.meta.channelId) : null) || [];
+            if (rList.length && !n.meta.rawId) {
+              n.meta.rawId = rList[0].id;
+              n.meta.rawIds = rList.map(x => x.id);
+              n.meta.rawUrl = `/rawkenh?rid=${encodeURIComponent(rList[0].id)}`;
+            }
+            const resolvedK = kenhByHandleLower.get(hKey) || kenhByAnyHandleLower.get(hKey);
+            const hStr = n.meta.canonicalHandle || resolvedK?.handle || n.meta.handle || n.label;
+            if (resolvedK || n.meta.canonicalHandle) {
+              n.meta.targetUrl = `/kenh-mau?handle=${encodeURIComponent(hStr)}`;
+            } else {
+              n.meta.targetUrl = `/kenh-mau?kq=${encodeURIComponent(hStr)}`;
+            }
+          } else if (n.type === 'tool') {
+            const cleanTool = String(n.label || '').replace(/^Tool:\s*/i, '').trim();
+            n.meta.targetUrl = `/sodo?sq=${encodeURIComponent(cleanTool)}`;
+          } else if (n.type === 'policy' || n.type === 'checklist') {
+            const itemCode = n.sku || n.id.replace(/^(policy|checklist):/i, '');
+            n.meta.targetUrl = `/chienluoc?sub=policy&item=${encodeURIComponent(itemCode)}`;
+          } else if (n.type === 'sop') {
+            const mSop = n.id.match(/^sop:DOC-(\d+)$/i);
+            const dNum = mSop ? parseInt(mSop[1], 10) : 1;
+            n.meta.targetUrl = `/tai-lieu?did=DOC_${dNum}&di=${dNum - 1}`;
+          } else {
+            n.meta.targetUrl = `/sodo?snode=${encodeURIComponent(n.id)}`;
+          }
         }
-        const hStr = n.meta.handle || n.label;
-        if (n.meta.rawUrl) {
-          n.meta.targetUrl = n.meta.rawUrl;
-        } else if (kenhByHandleLower.has(hKey)) {
-          n.meta.targetUrl = `/kenh-mau?handle=${encodeURIComponent(hStr)}`;
-        } else {
-          n.meta.targetUrl = `/kenh-mau?kq=${encodeURIComponent(hStr)}`;
-        }
-      } else if (n.type === 'tool') {
-        const cleanTool = String(n.label || '').replace(/^Tool:\s*/i, '').trim();
-        n.meta.targetUrl = `/sodo?sq=${encodeURIComponent(cleanTool)}`;
-      } else if (n.type === 'policy' || n.type === 'checklist') {
-        const itemCode = n.sku || n.id.replace(/^(policy|checklist):/i, '');
-        n.meta.targetUrl = `/chienluoc?sub=policy&item=${encodeURIComponent(itemCode)}`;
-      } else if (n.type === 'sop') {
-        const mSop = n.id.match(/^sop:DOC-0*(\d+)$/i);
-        const dNum = mSop ? parseInt(mSop[1], 10) : 1;
-        n.meta.targetUrl = `/tai-lieu?did=DOC_${dNum}&di=${dNum - 1}`;
-      } else {
-        n.meta.targetUrl = `/sodo?snode=${encodeURIComponent(n.id)}`;
+        const rawIdsStr = (n.meta.rawIds || (n.meta.rawId ? [n.meta.rawId] : [])).join(' ');
+        const sopAliasStr = n.type === 'sop' && n.meta.docId
+          ? `DOC_${n.meta.docId} DOC-${n.meta.docId} DOC-${String(n.meta.docId).padStart(3, '0')} TL-${String(n.meta.docId).padStart(2, '0')}`
+          : '';
+        const codeStr = [n.meta.code, n.meta.nicheCode, sopAliasStr, ...(n.meta.subNicheCodes || [])].filter(Boolean).join(' ');
+        const fullBody = `${n.id} ${n.sku || ''} ${codeStr} ${rawIdsStr} ${n.body || n.label} ${foldVi((n.label || '') + ' ' + codeStr + ' ' + (n.body || '') + ' ' + rawIdsStr)}`.trim();
+        insNode.run(n.id, n.type, n.layer, n.level, n.parentId || '', n.label, n.track, n.sku, n.path, deg, JSON.stringify(n.meta));
+        insBacklink.run(n.id, inb.length, outb.length, JSON.stringify(inb), JSON.stringify(outb));
+        insFts.run(n.id, n.type, n.label, fullBody, (n.wikilinks || []).join(' '));
       }
+      for (const e of edges) {
+        insEdge.run(e.source, e.target, e.relation, e.weight);
+      }
+      for (const s of syncStateRows) {
+        insSync.run(s.path, s.mtimeMs, s.sizeBytes);
+      }
+      db.exec(`INSERT INTO kg_fts(kg_fts) VALUES('optimize')`);
+      db.exec('PRAGMA user_version = 20261103;');
+      db.exec('COMMIT');
+    } catch (err) {
+      try { db.exec('ROLLBACK'); } catch (_) {}
+      throw err;
     }
-    const rawIdsStr = (n.meta.rawIds || (n.meta.rawId ? [n.meta.rawId] : [])).join(' ');
-    const sopAliasStr = n.type === 'sop' && n.meta.docId
-      ? `DOC_${n.meta.docId} DOC-${n.meta.docId} DOC-${String(n.meta.docId).padStart(3, '0')} TL-${String(n.meta.docId).padStart(2, '0')}`
-      : '';
-    const codeStr = [n.meta.code, n.meta.nicheCode, sopAliasStr, ...(n.meta.subNicheCodes || [])].filter(Boolean).join(' ');
-    const fullBody = `${n.id} ${n.sku || ''} ${codeStr} ${rawIdsStr} ${n.body || n.label} ${foldVi((n.label || '') + ' ' + codeStr + ' ' + (n.body || '') + ' ' + rawIdsStr)}`.trim();
-    insNode.run(n.id, n.type, n.layer, n.level, n.parentId || '', n.label, n.track, n.sku, n.path, deg, JSON.stringify(n.meta));
-    insBacklink.run(n.id, inb.length, outb.length, JSON.stringify(inb), JSON.stringify(outb));
-    insFts.run(n.id, n.type, n.label, fullBody, (n.wikilinks || []).join(' '));
+    try { db.exec('VACUUM; PRAGMA wal_checkpoint(TRUNCATE);'); } catch (_) {}
+  } finally {
+    try { db.close(); } catch (_) {}
   }
-  for (const e of edges) {
-    insEdge.run(e.source, e.target, e.relation, e.weight);
-  }
-  for (const s of syncStateRows) {
-    insSync.run(s.path, s.mtimeMs, s.sizeBytes);
-  }
-  db.exec(`INSERT INTO kg_fts(kg_fts) VALUES('optimize')`);
-  db.exec('PRAGMA user_version = 20261103;');
-  db.exec('COMMIT');
-  try { db.exec('VACUUM; PRAGMA wal_checkpoint(TRUNCATE);'); } catch (_) {}
-  db.close();
 
   // 7. Export JSON Graph (`data/knowledge_graph.json`) for Web Interactive Dual-Layer Explorer
   const countByType = (t) => [...nodes.values()].filter(n => n.type === t).length;
@@ -1644,7 +1846,6 @@ ${projFiles.slice(0, 120).map(f => `- \`${f.meta.relToProject || f.label}\` — 
     })),
     edges
   };
-  const tmpJsonPath = `${JSON_GRAPH_PATH}.${process.pid}.tmp`;
   if (fs.existsSync(JSON_GRAPH_PATH)) {
     try {
       const prevGraph = JSON.parse(fs.readFileSync(JSON_GRAPH_PATH, 'utf8'));
@@ -1670,8 +1871,15 @@ ${projFiles.slice(0, 120).map(f => `- \`${f.meta.relToProject || f.label}\` — 
       }
     } catch (_) {}
   }
-  fs.writeFileSync(tmpJsonPath, JSON.stringify(jsonGraph, null, 2), 'utf8');
-  fs.renameSync(tmpJsonPath, JSON_GRAPH_PATH);
+  const tmpJsonPath = `${JSON_GRAPH_PATH}.${process.pid}.${crypto.randomBytes(4).toString('hex')}.tmp`;
+  try {
+    fs.writeFileSync(tmpJsonPath, JSON.stringify(jsonGraph, null, 2), 'utf8');
+    fs.renameSync(tmpJsonPath, JSON_GRAPH_PATH);
+  } finally {
+    try {
+      if (fs.existsSync(tmpJsonPath)) fs.unlinkSync(tmpJsonPath);
+    } catch (_) {}
+  }
 
   if (!options.silent) {
     console.log(`✅ H2DEV NEXUS GRAPH BUILT IN ${elapsedMs}ms:`);

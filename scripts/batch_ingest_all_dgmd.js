@@ -2,7 +2,9 @@ const { chromium } = require('d:/YTB/H2DEV-Project/node_modules/playwright');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
-const { execSync } = require('child_process');
+const { execFileSync } = require('child_process');
+const PY_CMD = process.platform === 'win32' ? 'py' : 'python3';
+const PY_PREFIX = process.platform === 'win32' ? ['-3'] : [];
 
 const ROOT = 'd:/YTB/H2DEV-Project';
 const FFMPEG = 'D:/Linly-Dubbing/bin/ffmpeg.exe';
@@ -73,7 +75,10 @@ async function main() {
 
   for (let idx = 0; idx < catalog.length; idx++) {
     const item = catalog[idx];
-    const sku = item.sku;
+    const sku = String(item.sku || '').trim();
+    if (!/^[A-Za-z0-9_-]+$/.test(sku)) {
+      throw new Error(`Invalid SKU format in catalog: ${sku}`);
+    }
     console.log(`\n----------------------------------------------------`);
     console.log(`[${idx + 1}/${catalog.length}] ${sku}: "${item.title}"`);
 
@@ -198,9 +203,13 @@ async function main() {
 
         const taskScratch = path.join(SCRATCH, `download_${sku}`);
         if (!fs.existsSync(taskScratch)) fs.mkdirSync(taskScratch, { recursive: true });
+        const taskScratchResolved = path.resolve(taskScratch);
 
         // Concurrency: 6 workers in page context
         await page.exposeFunction('saveDecryptedSegment_' + sku, (i, base64Data) => {
+          if (!Number.isInteger(i) || i < 0 || i > 1_000_000) {
+            throw new Error('Invalid segment index');
+          }
           const encBuf = Buffer.from(base64Data, 'base64');
           let decBuf = encBuf;
           if (rawKey) {
@@ -214,7 +223,10 @@ async function main() {
               decBuf = encBuf;
             }
           }
-          const segPath = path.join(taskScratch, `seg_${String(i).padStart(5, '0')}.ts`);
+          const segPath = path.resolve(taskScratchResolved, `seg_${String(i).padStart(5, '0')}.ts`);
+          if (!segPath.startsWith(taskScratchResolved + path.sep)) {
+            throw new Error('Segment path escaped scratchDir');
+          }
           fs.writeFileSync(segPath, decBuf);
         });
 
@@ -286,7 +298,7 @@ async function main() {
         await new Promise(r => outWs.on('finish', r));
 
         // Remux
-        execSync(`"${FFMPEG}" -y -i "${mergedTs}" -c copy -movflags +faststart "${mp4Path}"`, { stdio: 'ignore' });
+        execFileSync(FFMPEG, ['-y', '-i', mergedTs, '-c', 'copy', '-movflags', '+faststart', mp4Path], { stdio: 'ignore' });
         fs.unlinkSync(mergedTs); // cleanup merged ts
         mp4Ready = true;
       } catch (dlErr) {
@@ -299,7 +311,7 @@ async function main() {
     let actualSize = 0;
     if (mp4Ready && fs.existsSync(mp4Path)) {
       try {
-        const probeRaw = execSync(`"${FFPROBE}" -v quiet -print_format json -show_format -show_streams "${mp4Path}"`, { encoding: 'utf-8' });
+        const probeRaw = execFileSync(FFPROBE, ['-v', 'quiet', '-print_format', 'json', '-show_format', '-show_streams', mp4Path], { encoding: 'utf-8' });
         const probe = JSON.parse(probeRaw);
         actualDurationSec = Math.round(parseFloat(probe.format.duration || 0));
         actualSize = parseInt(probe.format.size || 0, 10);
@@ -320,7 +332,7 @@ async function main() {
       if (!fs.existsSync(jsonPath) || fs.statSync(jsonPath).size < 50) {
         console.log(`   * Running Whisper transcribe for ${sku}...`);
         try {
-          execSync(`py -3 scripts/transcribe_sku.py ${sku}`, { cwd: ROOT, stdio: 'inherit' });
+          execFileSync(PY_CMD, [...PY_PREFIX, 'scripts/transcribe_sku.py', String(sku)], { cwd: ROOT, stdio: 'inherit' });
         } catch (trErr) {
           console.error(`   [Transcribe Error]:`, trErr.message);
         }
@@ -524,7 +536,7 @@ ${docs.length ? docs.map(d => `- [${d.name}](${d.url || d.link}) *(Đã lưu tr�
 
   // Rebuild data/videos_dgmd.json
   console.log('\n[4/4] Rebuilding data/videos_dgmd.json...');
-  execSync('node scripts/build_videos_dgmd.js', { cwd: ROOT, stdio: 'inherit' });
+  execFileSync(process.execPath, ['scripts/build_videos_dgmd.js'], { cwd: ROOT, stdio: 'inherit' });
 
   console.log('\n================================================================');
   console.log('>>> DGMD FULL INGEST & STANDARDIZATION COMPLETE! <<<');

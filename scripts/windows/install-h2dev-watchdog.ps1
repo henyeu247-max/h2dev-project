@@ -1,5 +1,5 @@
-# ============================================================
-#  H2DEV Watchdog Installer - run ONCE on machine <LAN_IP>
+﻿# ============================================================
+#  H2DEV Watchdog Installer - run ONCE on host machine
 #  Creates Scheduled Task "H2DEV-Watchdog" that runs every 5 min,
 #  checks port 8899, starts server if down.
 #  Also updates main task "H2DEV-Server-AutoStart" with restart policy.
@@ -9,7 +9,8 @@
 # ============================================================
 $ErrorActionPreference = "Stop"
 
-$root = Split-Path -Parent $MyInvocation.MyCommand.Path
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$root = Split-Path -Parent (Split-Path -Parent $scriptDir)
 $watchdogTask = "H2DEV-Watchdog"
 $autoStartTask = "H2DEV-Server-AutoStart"
 
@@ -18,13 +19,13 @@ Write-Host " H2DEV Watchdog Installer"
 Write-Host " Root: $root"
 Write-Host "=============================================="
 
-# --- 1. Firewall (ensure open) ---
+# --- 1. Firewall (ensure open for Private profile only) ---
 Write-Host ""
-Write-Host "[1/4] Ensuring firewall port 8899 open ..."
+Write-Host "[1/4] Ensuring firewall port 8899 open (profile=private) ..."
 netsh advfirewall firewall delete rule name="H2DEV-8899" | Out-Null
-netsh advfirewall firewall add rule name="H2DEV-8899" dir=in action=allow protocol=TCP localport=8899 profile=any | Out-Null
+netsh advfirewall firewall add rule name="H2DEV-8899" dir=in action=allow protocol=TCP localport=8899 profile=private | Out-Null
 if ($LASTEXITCODE -eq 0) {
-  Write-Host "      OK - firewall port 8899 opened."
+  Write-Host "      OK - firewall port 8899 opened (Private profile)."
 } else {
   Write-Host "      WARNING - could not open firewall (need Administrator)."
 }
@@ -38,10 +39,10 @@ $wscriptExe = Join-Path $env:windir "System32\wscript.exe"
 if (-not (Test-Path $watchdogVbs)) { throw "missing $watchdogVbs - create h2dev-watchdog-hidden.vbs first" }
 # CRITICAL: never use powershell.exe as task action — flashes console every 5 min.
 # Gold standard = wscript //b + VBS WshShell.Run style 0 (same as 9Router-Local-Ensure).
-$wdAction   = New-ScheduledTaskAction -Execute $wscriptExe -Argument "/b /nologo `"$watchdogVbs`""
+$wdAction   = New-ScheduledTaskAction -Execute $wscriptExe -Argument "/b /nologo `"$watchdogVbs`"" -WorkingDirectory $root
 $wdTrigger  = New-ScheduledTaskTrigger -AtLogOn
-$wdTrigger2 = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes(1) -RepetitionInterval (New-TimeSpan -Minutes 5) -RepetitionDuration (New-TimeSpan -Days 365)
-$wdSettings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -StartWhenAvailable -ExecutionTimeLimit (New-TimeSpan -Minutes 2)
+$wdTrigger2 = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes(1) -RepetitionInterval (New-TimeSpan -Minutes 5)
+$wdSettings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -StartWhenAvailable -Hidden -ExecutionTimeLimit (New-TimeSpan -Minutes 2)
 
 try {
   Unregister-ScheduledTask -TaskName $watchdogTask -Confirm:$false -ErrorAction SilentlyContinue
@@ -62,9 +63,9 @@ try {
   $existing = Get-ScheduledTask -TaskName $autoStartTask -ErrorAction SilentlyContinue
   if ($existing) {
     # Re-register with restart policy
-    $action   = New-ScheduledTaskAction -Execute $wscript -Argument "`"$vbsPath`""
+    $action   = New-ScheduledTaskAction -Execute $wscript -Argument "`"$vbsPath`"" -WorkingDirectory $root
     $trigger  = New-ScheduledTaskTrigger -AtLogOn
-    $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -StartWhenAvailable -RestartCount 999 -RestartInterval (New-TimeSpan -Minutes 1) -ExecutionTimeLimit (New-TimeSpan -Minutes 5)
+    $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -StartWhenAvailable -Hidden -RestartCount 999 -RestartInterval (New-TimeSpan -Minutes 1) -ExecutionTimeLimit (New-TimeSpan -Minutes 5)
     Register-ScheduledTask -TaskName $autoStartTask -Action $action -Trigger $trigger -Settings $settings -Description "Auto start H2DEV server (hidden) + tray icon + restart on failure" -Force | Out-Null
     Write-Host "      OK - auto-start task updated with restart policy."
   } else {
@@ -90,6 +91,8 @@ if ($listening) {
   Write-Host "      WARNING - port 8899 not yet listening. Watchdog will retry in 5 min."
 }
 
+$lanIp = if ($env:H2DEV_LAN_IP) { $env:H2DEV_LAN_IP } else { "<LAN_IP>" }
+$tsIp  = if ($env:H2DEV_TAILSCALE_IP) { $env:H2DEV_TAILSCALE_IP } else { "<TAILSCALE_IP>" }
 Write-Host ""
 Write-Host "=============================================="
 Write-Host " DONE. H2DEV server now:"
@@ -98,11 +101,12 @@ Write-Host "  - Restarts on failure (up to 999 times, 1 min apart)"
 Write-Host "  - Watchdog checks every 5 min, restarts if down"
 Write-Host ""
 Write-Host " Access:"
-Write-Host "   LAN:       http://<LAN_IP>:8899/"
-Write-Host "   Tailscale: http://<TAILSCALE_IP>:8899/"
+Write-Host "   Local:     http://127.0.0.1:8899/"
+Write-Host "   LAN:       http://${lanIp}:8899/"
+Write-Host "   Tailscale: http://${tsIp}:8899/"
 Write-Host ""
 Write-Host " Manage:"
 Write-Host "   Restart now:  schtasks /run /tn H2DEV-Watchdog"
-Write-Host "   Stop server:  node -e `"require('child_process').execSync('taskkill /f /im node.exe')`""
+Write-Host "   Stop server:  scripts\windows\stop-h2dev.cmd"
 Write-Host "   Tray icon:    double-click h2dev-silent.vbs"
 Write-Host "=============================================="

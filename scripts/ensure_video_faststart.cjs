@@ -17,6 +17,7 @@
  *      để giữ nguyên NTFS file ID (local_stable_id) cho GoogleDriveFS.exe.
  */
 
+const crypto = require('crypto');
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
@@ -42,10 +43,14 @@ for (let i = 0; i < rawArgs.length; i++) {
 }
 const EXPLICIT_SKUS = explicitSkuList.map(a => a.toUpperCase());
 const EXPLICIT_SKU_SET = new Set(EXPLICIT_SKUS);
-const PROCESS_ALL = args.has('--all') || args.has('--apply') || EXPLICIT_SKU_SET.size > 0;
+const WATCH_MODE = args.has('--watch');
+const PROCESS_ALL = (args.has('--all') || args.has('--apply') || EXPLICIT_SKU_SET.size > 0) && !WATCH_MODE;
 const CHECK_ONLY = (args.has('--check') || args.has('--dry-run')) && !args.has('--apply');
 const MIN_AGE_MS = PROCESS_ALL ? 0 : 10 * 1000;
-const LOCK_FILE = path.join(os.tmpdir(), 'h2dev_ensure_video_faststart.lock');
+const LOCK_USER = process.env.USERNAME || process.env.USER || '';
+const LOCK_HASH = crypto.createHash('sha256').update(`${ROOT}|${LOCK_USER}`).digest('hex').slice(0, 16);
+const LOCK_DIR = path.join(os.tmpdir(), `h2dev_faststart_${LOCK_HASH}`);
+const LOCK_FILE = path.join(LOCK_DIR, 'faststart.lock');
 const CACHE_FILE = path.join(ROOT, '.cache', 'faststart-checked.json');
 
 function loadFaststartCache() {
@@ -66,29 +71,55 @@ function saveFaststartCache(cacheObj) {
   } catch (_) {}
 }
 
+function tryCreateLockExclusive() {
+  fs.mkdirSync(LOCK_DIR, { recursive: true, mode: 0o700 });
+  const fd = fs.openSync(LOCK_FILE, fs.constants.O_CREAT | fs.constants.O_EXCL | fs.constants.O_WRONLY, 0o600);
+  try {
+    fs.writeFileSync(fd, String(process.pid), 'utf8');
+  } finally {
+    fs.closeSync(fd);
+  }
+}
+
 function acquireLock() {
   if (CHECK_ONLY || EXPLICIT_SKU_SET.size > 0) return true;
   try {
-    if (fs.existsSync(LOCK_FILE)) {
-      const stat = fs.statSync(LOCK_FILE);
-      const ageMs = Date.now() - stat.mtimeMs;
-      const pid = parseInt(fs.readFileSync(LOCK_FILE, 'utf8').trim(), 10);
-      let alive = false;
-      if (Number.isFinite(pid) && pid > 0) {
-        try {
-          process.kill(pid, 0);
-          alive = true;
-        } catch (_) {
-          alive = false;
-        }
-      }
-      if (alive && ageMs < 60 * 60 * 1000) {
-        console.log(`[FaststartGuard] Another instance (PID ${pid}) is running. Exiting.`);
-        return false;
+    try {
+      tryCreateLockExclusive();
+      return true;
+    } catch (err) {
+      if (err.code !== 'EEXIST') throw err;
+    }
+    const stat = fs.lstatSync(LOCK_FILE);
+    if (stat.isSymbolicLink()) {
+      throw new Error(`Refusing symlink lock file: ${LOCK_FILE}`);
+    }
+    const ageMs = Date.now() - stat.mtimeMs;
+    const pid = parseInt(fs.readFileSync(LOCK_FILE, 'utf8').trim(), 10);
+    let alive = false;
+    if (Number.isFinite(pid) && pid > 0) {
+      try {
+        process.kill(pid, 0);
+        alive = true;
+      } catch (_) {
+        alive = false;
       }
     }
-    fs.writeFileSync(LOCK_FILE, String(process.pid), 'utf8');
-    return true;
+    if (alive && ageMs < 60 * 60 * 1000) {
+      console.log(`[FaststartGuard] Another instance (PID ${pid}) is running. Exiting.`);
+      return false;
+    }
+    try { fs.unlinkSync(LOCK_FILE); } catch (_) {}
+    try {
+      tryCreateLockExclusive();
+      return true;
+    } catch (retryErr) {
+      if (retryErr.code === 'EEXIST') {
+        console.log('[FaststartGuard] Another instance acquired lock concurrently. Exiting.');
+        return false;
+      }
+      throw retryErr;
+    }
   } catch (_) {
     return true;
   }
@@ -166,7 +197,18 @@ function inspectMp4Atoms(filePath) {
   }
 }
 
-function collectSkuMp4Files(filterSet = null) {
+function hasWebmMedia(skuDir, sku) {
+  try {
+    const expectedWebm = path.join(skuDir, `${sku}.webm`);
+    if (fs.existsSync(expectedWebm) && fs.statSync(expectedWebm).isFile()) return true;
+    for (const f of fs.readdirSync(skuDir)) {
+      if (f.toLowerCase().endsWith('.webm') && fs.statSync(path.join(skuDir, f)).isFile()) return true;
+    }
+  } catch (_) {}
+  return false;
+}
+
+function collectSkuMp4Files(filterSet = null, webmOut = null) {
   if (!fs.existsSync(VIDEO_ROOT)) return [];
   const entries = fs.readdirSync(VIDEO_ROOT, { withFileTypes: true });
   const results = [];
@@ -185,6 +227,7 @@ function collectSkuMp4Files(filterSet = null) {
       } catch (_) {}
     } else {
       // Fallback: check any <name>.mp4 inside video/<SKU>/
+      let foundMp4 = false;
       try {
         const files = fs.readdirSync(skuDir);
         for (const f of files) {
@@ -193,10 +236,14 @@ function collectSkuMp4Files(filterSet = null) {
             const st = fs.statSync(full);
             if (st.isFile()) {
               results.push({ sku, filePath: full });
+              foundMp4 = true;
             }
           }
         }
       } catch (_) {}
+      if (!foundMp4 && webmOut && hasWebmMedia(skuDir, sku)) {
+        webmOut.push(sku);
+      }
     }
   }
   results.sort((a, b) => a.sku.localeCompare(b.sku));
@@ -204,12 +251,8 @@ function collectSkuMp4Files(filterSet = null) {
 }
 
 function remuxFaststart({ sku, filePath }, info) {
-  const tempOut = path.join(os.tmpdir(), `${sku}_faststart.mp4`);
-  try {
-    if (fs.existsSync(tempOut)) {
-      fs.unlinkSync(tempOut);
-    }
-  } catch (_) {}
+  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'h2dev-faststart-'));
+  const tempOut = path.join(tempDir, `${sku}_faststart.mp4`);
 
   const ffArgs = [
     '-nostdin',
@@ -224,39 +267,37 @@ function remuxFaststart({ sku, filePath }, info) {
   ];
 
   const t0 = Date.now();
-  const res = spawnSync(FFMPEG, ffArgs, {
-    encoding: 'utf8',
-    timeout: 30 * 60 * 1000,
-    windowsHide: true,
-  });
-
-  if (res.error || res.status !== 0) {
-    try { if (fs.existsSync(tempOut)) fs.unlinkSync(tempOut); } catch (_) {}
-    const errMsg = res.error ? res.error.message : (res.stderr || `exit ${res.status}`).trim();
-    throw new Error(`FFmpeg failed for ${sku}: ${errMsg}`);
-  }
-
-  if (!fs.existsSync(tempOut)) {
-    throw new Error(`Temp output missing for ${sku}: ${tempOut}`);
-  }
-
-  const outInfo = inspectMp4Atoms(tempOut);
-  const ratio = info.fileSize > 0 ? (outInfo.fileSize / info.fileSize) : 0;
-  if (ratio <= 0.99) {
-    try { fs.unlinkSync(tempOut); } catch (_) {}
-    throw new Error(`Output size check failed for ${sku}: ${(ratio * 100).toFixed(2)}% of original (${outInfo.fileSize} vs ${info.fileSize})`);
-  }
-
-  if (!(outInfo.moovOffset >= 0 && outInfo.mdatOffset > outInfo.moovOffset)) {
-    try { fs.unlinkSync(tempOut); } catch (_) {}
-    throw new Error(`Output atom order check failed for ${sku}: status=${outInfo.status} (moov=${outInfo.moovOffset}, mdat=${outInfo.mdatOffset})`);
-  }
-
-  // Copy in-place over original file to preserve NTFS file ID (local_stable_id in GoogleDriveFS)
-  fs.copyFileSync(tempOut, filePath);
   try {
-    fs.unlinkSync(tempOut);
-  } catch (_) {}
+    const res = spawnSync(FFMPEG, ffArgs, {
+      encoding: 'utf8',
+      timeout: 30 * 60 * 1000,
+      windowsHide: true,
+    });
+
+    if (res.error || res.status !== 0) {
+      const errMsg = res.error ? res.error.message : (res.stderr || `exit ${res.status}`).trim();
+      throw new Error(`FFmpeg failed for ${sku}: ${errMsg}`);
+    }
+
+    if (!fs.existsSync(tempOut)) {
+      throw new Error(`Temp output missing for ${sku}: ${tempOut}`);
+    }
+
+    const outInfo = inspectMp4Atoms(tempOut);
+    const ratio = info.fileSize > 0 ? (outInfo.fileSize / info.fileSize) : 0;
+    if (ratio <= 0.99) {
+      throw new Error(`Output size check failed for ${sku}: ${(ratio * 100).toFixed(2)}% of original (${outInfo.fileSize} vs ${info.fileSize})`);
+    }
+
+    if (!(outInfo.moovOffset >= 0 && outInfo.mdatOffset > outInfo.moovOffset)) {
+      throw new Error(`Output atom order check failed for ${sku}: status=${outInfo.status} (moov=${outInfo.moovOffset}, mdat=${outInfo.mdatOffset})`);
+    }
+
+    // Copy in-place over original file to preserve NTFS file ID (local_stable_id in GoogleDriveFS)
+    fs.copyFileSync(tempOut, filePath);
+  } finally {
+    try { fs.rmSync(tempDir, { recursive: true, force: true }); } catch (_) {}
+  }
 
   const finalInfo = inspectMp4Atoms(filePath);
   if (finalInfo.status !== 'MOOV_FIRST') {
@@ -280,7 +321,8 @@ function main() {
   }
 
   try {
-    const mp4Files = collectSkuMp4Files(EXPLICIT_SKU_SET);
+    const skippedWebmSkus = [];
+    const mp4Files = collectSkuMp4Files(EXPLICIT_SKU_SET, skippedWebmSkus);
     let moovFirstCount = 0;
     let mdatFirstCount = 0;
     let skippedRecentCount = 0;
@@ -291,8 +333,9 @@ function main() {
 
     if (EXPLICIT_SKU_SET.size > 0) {
       const foundUpper = new Set(mp4Files.map(x => x.sku.toUpperCase()));
+      const webmUpper = new Set(skippedWebmSkus.map(s => s.toUpperCase()));
       for (const reqSku of EXPLICIT_SKU_SET) {
-        if (!foundUpper.has(reqSku)) {
+        if (!foundUpper.has(reqSku) && !webmUpper.has(reqSku)) {
           errors.push({ sku: reqSku, error: `MP4 file not found under video/${reqSku}/` });
         }
       }
@@ -399,6 +442,7 @@ function main() {
 
     const summary = {
       totalMp4: mp4Files.length,
+      skippedWebm: skippedWebmSkus.length,
       moovFirst: moovFirstCount,
       mdatFirstRemaining: mdatFirstCount,
       converted: convertedCount,

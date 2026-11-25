@@ -6,9 +6,16 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { execFileSync, spawnSync } = require('child_process');
 
+const PY_CMD = process.platform === 'win32' ? 'py' : 'python3';
+const PY_PREFIX = process.platform === 'win32' ? ['-3'] : [];
+const SAFE_SKU_RE = /^[A-Za-z0-9_-]+$/;
 const SKU = process.argv[2] || 'VIDEO-f59aa7';
+if (!SAFE_SKU_RE.test(SKU)) {
+  console.error(`Invalid SKU format: ${SKU}`);
+  process.exit(1);
+}
 const ROOT = path.resolve(__dirname, '..');
 const WORK_DIR = path.join(ROOT, '_tmp_drm_audio_work');
 const FFMPEG = 'D:/Linly-Dubbing/bin/ffmpeg.exe';
@@ -21,6 +28,7 @@ async function main() {
 
   if (fs.existsSync(WORK_DIR)) fs.rmSync(WORK_DIR, { recursive: true, force: true });
   fs.mkdirSync(WORK_DIR, { recursive: true });
+  const workDirResolved = path.resolve(WORK_DIR);
 
   console.log('Bước 1: Khởi động trình duyệt Edge và nạp luồng phát...');
   const browser = await chromium.launch({
@@ -36,12 +44,24 @@ async function main() {
   await page.exposeFunction('saveSegmentData', (type, timeStr, base64) => {
     const buf = Buffer.from(base64, 'base64');
     if (type === 'init') {
-      fs.writeFileSync(path.join(WORK_DIR, 'init.m4a'), buf);
+      const initPath = path.resolve(workDirResolved, 'init.m4a');
+      if (!initPath.startsWith(workDirResolved + path.sep)) {
+        throw new Error('Init path escaped scratchDir');
+      }
+      fs.writeFileSync(initPath, buf);
       initSaved = true;
     } else {
-      const t = parseInt(timeStr, 10);
-      const filename = `seg_${timeStr.padStart(10, '0')}.m4s`;
-      fs.writeFileSync(path.join(WORK_DIR, filename), buf);
+      const timeVal = String(timeStr ?? '').trim();
+      if (!/^\d{1,9}$/.test(timeVal) || !Number.isInteger(Number(timeVal))) {
+        throw new Error('Invalid segment timestamp');
+      }
+      const t = parseInt(timeVal, 10);
+      const filename = `seg_${timeVal.padStart(10, '0')}.m4s`;
+      const segPath = path.resolve(workDirResolved, filename);
+      if (!segPath.startsWith(workDirResolved + path.sep)) {
+        throw new Error('Segment path escaped scratchDir');
+      }
+      fs.writeFileSync(segPath, buf);
       capturedSegments.set(t, filename);
       if (capturedSegments.size % 20 === 0) {
         process.stdout.write(`Đã thu thập: ${capturedSegments.size} phân đoạn audio...\r`);
@@ -139,19 +159,43 @@ async function main() {
 
   // Bước 5: Trích xuất khóa giải mã Widevine DRM tự động
   console.log('Bước 5: Trích xuất khóa giải mã Widevine DRM...');
-  const keyOutput = execSync(`py -3 "${path.join(__dirname, 'get_drm_key.py')}" "AAAAP3Bzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAAB8SEJczlSnXFlRSR1k8BB0uLtoaBWV6ZHJtSOPclZsG" "https://widevine-dash.ezdrm.com/widevine-php/widevine-foreignkey.php?pX=A98506"`, { encoding: 'utf8' }).trim();
+  const keyOutput = execFileSync(
+    PY_CMD,
+    [
+      ...PY_PREFIX,
+      path.join(__dirname, 'get_drm_key.py'),
+      'AAAAP3Bzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAAB8SEJczlSnXFlRSR1k8BB0uLtoaBWV6ZHJtSOPclZsG',
+      'https://widevine-dash.ezdrm.com/widevine-php/widevine-foreignkey.php?pX=A98506'
+    ],
+    { encoding: 'utf8', shell: false, windowsHide: true }
+  ).trim();
   const [kid, key] = keyOutput.split(':');
+  if (!key || !/^[0-9a-f]{32}$/i.test(key)) {
+    throw new Error(`Invalid DRM decryption key format: ${keyOutput}`);
+  }
   console.log(`Đã trích xuất Key thành công: KID=${kid} | KEY=${key}`);
 
   // Bước 6: Giải mã bằng FFmpeg
   console.log('Bước 6: Giải mã toàn bộ âm thanh sang M4A sạch qua FFmpeg...');
   const decAudioPath = path.join(WORK_DIR, 'audio_clean.m4a');
-  execSync(`"${FFMPEG}" -y -decryption_key ${key} -i "${encCombinedPath}" -c copy "${decAudioPath}"`, { stdio: 'inherit' });
+  execFileSync(
+    FFMPEG,
+    ['-y', '-decryption_key', key, '-i', encCombinedPath, '-c', 'copy', decAudioPath],
+    { stdio: 'inherit', shell: false, windowsHide: true }
+  );
   console.log(`File audio giải mã sạch: ${(fs.statSync(decAudioPath).size / 1024 / 1024).toFixed(2)} MB`);
 
   // Bước 7: Đo âm lượng và kiểm tra FFprobe
   console.log('Bước 7: Kiểm định phổ âm lượng của file âm thanh mới giải mã...');
-  const volOut = execSync(`"${FFMPEG}" -i "${decAudioPath}" -af volumedetect -f null - 2>&1`, { encoding: 'utf8' });
+  const volRes = spawnSync(
+    FFMPEG,
+    ['-i', decAudioPath, '-af', 'volumedetect', '-f', 'null', '-'],
+    { encoding: 'utf8', shell: false, windowsHide: true }
+  );
+  if (volRes.error || volRes.status !== 0) {
+    throw new Error(`FFmpeg volumedetect failed: ${(volRes.error && volRes.error.message) || volRes.stderr || 'exit ' + volRes.status}`);
+  }
+  const volOut = `${volRes.stdout || ''}\n${volRes.stderr || ''}`;
   const meanVol = volOut.match(/mean_volume:\s*([^\n\r]+)/)?.[1] || 'unknown';
   const maxVol = volOut.match(/max_volume:\s*([^\n\r]+)/)?.[1] || 'unknown';
   console.log(`Âm lượng thực tế: mean_volume=${meanVol}, max_volume=${maxVol}`);
@@ -166,7 +210,11 @@ async function main() {
 
   const tempRemuxMp4 = path.join(WORK_DIR, `${SKU}_remuxed.mp4`);
   console.log('Bước 8: Ghép âm thanh giải mã sạch với video 1080p gốc...');
-  execSync(`"${FFMPEG}" -y -i "${targetMp4}" -i "${decAudioPath}" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -movflags +faststart "${tempRemuxMp4}"`, { stdio: 'inherit' });
+  execFileSync(
+    FFMPEG,
+    ['-y', '-i', targetMp4, '-i', decAudioPath, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', tempRemuxMp4],
+    { stdio: 'inherit', shell: false, windowsHide: true }
+  );
 
   // Promote file
   fs.copyFileSync(tempRemuxMp4, targetMp4);

@@ -15,9 +15,21 @@ for /f "tokens=5" %%a in ('netstat -ano ^| findstr /R ":8899.*LISTENING"') do (
     echo.
     echo Các địa chỉ truy cập:
     echo  - Localhost: http://127.0.0.1:8899/
-    echo  - Tailscale: http://<TAILSCALE_IP>:8899/
-    echo  - Mạng LAN:  http://<LAN_IP>:8899/
-    echo  - Web VPS:   https://h2dev-learn.tonymmo.com/
+    if defined H2DEV_TAILSCALE_IP (
+        echo  - Tailscale: http://%H2DEV_TAILSCALE_IP%:8899/
+    ) else (
+        echo  - Tailscale: http://^<TAILSCALE_IP^>:8899/
+    )
+    if defined H2DEV_LAN_IP (
+        echo  - Mạng LAN:  http://%H2DEV_LAN_IP%:8899/
+    ) else (
+        echo  - Mạng LAN:  http://^<LAN_IP^>:8899/
+    )
+    if defined H2DEV_VPS_URL (
+        echo  - Web VPS:   %H2DEV_VPS_URL%
+    ) else (
+        echo  - Web VPS:   https://h2dev-learn.tonymmo.com/
+    )
     echo.
     echo Thư mục log:  D:\YTB\H2DEV-Project\logs\server.log
 )

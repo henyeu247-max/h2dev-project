@@ -61,14 +61,21 @@ def assemble_video(project_dir, output_mp4=None):
     else:
         output_mp4 = Path(output_mp4)
 
-    # Tạo concat demuxer file
+    # Tạo concat demuxer file (reject CR/LF và escape dấu nháy đơn)
+    def _concat_line(p):
+        resolved = p.resolve().as_posix()
+        if "\r" in resolved or "\n" in resolved:
+            raise ValueError(f"Illegal newline in concat path: {resolved!r}")
+        escaped = resolved.replace("'", "'\\''")
+        return f"file '{escaped}'"
+
     concat_file = project_path / "_concat_list.txt"
     lines = []
     for img in images:
-        lines.append(f"file '{img.resolve()}'")
+        lines.append(_concat_line(img))
         lines.append(f"duration {dur_per_img:.3f}")
     # Concat file cần lặp lại ảnh cuối
-    lines.append(f"file '{images[-1].resolve()}'")
+    lines.append(_concat_line(images[-1]))
 
     concat_file.write_text("\n".join(lines), encoding="utf-8")
 

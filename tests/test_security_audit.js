@@ -285,9 +285,8 @@ test('assets/auth-login.js: safeClientNext blocks javascript: (L3/F-01)', () => 
 test('assets/app/main.js: navigateDirectUrl has origin guard (F-01 fix)', () => {
   if (!fileExists('assets/app/main.js')) return skipTest('main.js', 'not found');
   const src = fileContent('assets/app/main.js');
-  assert.ok(src.includes('navigateDirectUrl'), 'main.js missing navigateDirectUrl function');
-  // Find the navigateDirectUrl function and verify it has an origin/protocol check
-  const startIdx = src.indexOf('navigateDirectUrl');
+  assert.ok(src.includes('function navigateDirectUrl'), 'main.js missing navigateDirectUrl function');
+  const startIdx = src.indexOf('function navigateDirectUrl');
   const fnBlock = src.slice(startIdx, startIdx + 1500);
   assert.ok(
     fnBlock.includes('.origin') || fnBlock.includes('.protocol') || fnBlock.includes('new URL'),
@@ -295,17 +294,18 @@ test('assets/app/main.js: navigateDirectUrl has origin guard (F-01 fix)', () => 
   );
 });
 
-test('assets/app/main.js: navigateDirectUrl does not use raw location.href = directUrl', () => {
+test('assets/app/main.js: navigateDirectUrl blocks protocol-relative //evil.com and uses u.href (F-01 fix)', () => {
   if (!fileExists('assets/app/main.js')) return skipTest('main.js', 'not found');
   const src = fileContent('assets/app/main.js');
-  // After fix: location.href = directUrl (without guard) must be replaced
-  // The fixed version uses location.href = u.pathname + u.search + u.hash
-  const startIdx = src.indexOf('navigateDirectUrl');
+  const startIdx = src.indexOf('function navigateDirectUrl');
   const fnBlock = src.slice(startIdx, startIdx + 1500);
-  // Check that the raw un-guarded assignment is gone
   const rawAssign = /location\.href\s*=\s*directUrl\s*;/.test(fnBlock);
   assert.ok(!rawAssign,
     'navigateDirectUrl still contains raw `location.href = directUrl;` without origin guard');
+  assert.ok(fnBlock.includes("startsWith('//')"),
+    'navigateDirectUrl missing u.pathname.startsWith("//") guard against same-origin //evil.com');
+  assert.ok(fnBlock.includes('location.href = u.href'),
+    'navigateDirectUrl must assign validated u.href');
 });
 
 // ── Layer 1: auth_gate.js behavioral checks ───────────────────────────────────

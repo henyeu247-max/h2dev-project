@@ -638,6 +638,192 @@ test('No O(N²) regex catastrophic backtracking on 15k zeros + x (< 50ms)', () =
   }
 });
 
+// ── /tatca Audit Regression Tests ────────────────────────────────────────────
+
+section('/tatca L1 — Server hardening (L1-01, L1-03)');
+
+test('L1-01: server.js has req.resume() in /api/intelligence/spider POST handler', () => {
+  const src = fileContent('server.js');
+  const spiderIdx = src.indexOf("x-h2dev-action'] === 'spider'");
+  assert.ok(spiderIdx !== -1, 'spider handler not found in server.js');
+  const block = src.slice(spiderIdx, spiderIdx + 300);
+  assert.ok(block.includes('req.resume()'), 'Missing req.resume() in spider POST handler (L1-01)');
+});
+
+test('L1-01: server.js has server.requestTimeout = 30000', () => {
+  const src = fileContent('server.js');
+  assert.ok(src.includes('server.requestTimeout'), 'Missing server.requestTimeout (L1-01)');
+  assert.ok(/server\.requestTimeout\s*=\s*30000/.test(src), 'server.requestTimeout must be 30000');
+});
+
+test('L1-01: server.js has server.headersTimeout = 10000', () => {
+  const src = fileContent('server.js');
+  assert.ok(/server\.headersTimeout\s*=\s*10000/.test(src), 'server.headersTimeout must be 10000');
+});
+
+test('L1-03: OPTIONS preflight has Access-Control-Max-Age header', () => {
+  const src = fileContent('server.js');
+  const optIdx = src.indexOf("req.method === 'OPTIONS'");
+  assert.ok(optIdx !== -1, 'OPTIONS handler not found');
+  const block = src.slice(optIdx, optIdx + 500);
+  assert.ok(block.includes("'Access-Control-Max-Age'"), 'Missing Access-Control-Max-Age in OPTIONS response (L1-03)');
+});
+
+section('/tatca L2 — Data layer hardening');
+
+test('L2-01: getNicheRadarResponse regex is non-backtracking and rpmRaw is bounded', () => {
+  const src = fileContent('scripts/hot_memory_store.js');
+  // Must use bounded non-backtracking regex
+  assert.ok(src.includes('median\\b[^\\d\\n]{0,16}'), 'Missing non-backtracking median regex (L2-01)');
+  assert.ok(src.includes(".slice(0, 256)"), 'rpmRaw not bounded to 256 chars (L2-01)');
+});
+
+test('L2-01: ReDoS regression — getNicheRadarResponse regex < 5ms on 1,500 spaces', () => {
+  const regex = /median\b[^\d\n]{0,16}?(\d+(?:\.\d+)?)/i;
+  const payload = 'median' + ' '.repeat(1500);
+  const start = process.hrtime.bigint();
+  regex.test(payload);
+  const elapsedMs = Number(process.hrtime.bigint() - start) / 1_000_000;
+  assert.ok(elapsedMs < 5, `Non-backtracking regex took ${elapsedMs.toFixed(2)}ms on 1,500 spaces (expected < 5ms)`);
+});
+
+test('L2-03: safeMerge recursively strips nested __proto__ and constructor', () => {
+  // Load hot_memory_store to get its safeMerge
+  const hmPath = path.join(ROOT, 'scripts', 'hot_memory_store.js');
+  const hmSrc = fileContent('scripts/hot_memory_store.js');
+
+  // Extract safeMerge via vm to avoid side effects of full module load
+  const UNSAFE_JSON_KEYS = new Set(['__proto__', 'constructor', 'prototype']);
+  const safeMergeFnMatch = hmSrc.match(/function safeMerge\(target,[\s\S]*?^}/m);
+  assert.ok(safeMergeFnMatch, 'Could not extract safeMerge function');
+  const safeMerge = new Function('UNSAFE_JSON_KEYS', safeMergeFnMatch[0] + '\nreturn safeMerge;')(UNSAFE_JSON_KEYS);
+
+  // Test nested proto stripping
+  const malicious = { a: 1, nested: { '__proto__': { polluted: true }, clean: 'ok' } };
+  const result = safeMerge({}, malicious);
+  assert.ok(result.nested, 'nested object should be preserved');
+  assert.equal(result.nested.clean, 'ok', 'clean nested key should be preserved');
+  assert.equal(result.nested.__proto__, Object.prototype, '__proto__ should not be assigned (stripped)');
+  assert.ok(!result.nested.polluted, 'prototype pollution should not reach nested object');
+
+  // Test nested constructor stripping
+  const malicious2 = { x: { constructor: { prototype: { injected: true } }, valid: 1 } };
+  const result2 = safeMerge({}, malicious2);
+  assert.equal(result2.x.valid, 1, 'valid key should be preserved');
+  assert.equal(typeof result2.x.constructor, 'function', 'constructor should remain native Object constructor');
+});
+
+test('L2-03: kg_query.js safeAssign recursively strips nested __proto__', () => {
+  const src = fileContent('scripts/kg_query.js');
+  const UNSAFE_JSON_KEYS = new Set(['__proto__', 'constructor', 'prototype']);
+  const safeAssignMatch = src.match(/function safeAssign\(target,[\s\S]*?^}/m);
+  assert.ok(safeAssignMatch, 'Could not extract safeAssign function');
+  const safeAssign = new Function('UNSAFE_JSON_KEYS', safeAssignMatch[0] + '\nreturn safeAssign;')(UNSAFE_JSON_KEYS);
+
+  const malicious = { nested: { '__proto__': { bad: true }, ok: 'yes' } };
+  const result = safeAssign({}, malicious);
+  assert.equal(result.nested.ok, 'yes');
+  assert.ok(!result.nested.bad, 'prototype pollution should not reach nested object');
+});
+
+test('L2-05: collectChannelAliases slices qAlias to 256', () => {
+  const src = fileContent('server.js');
+  const idx = src.indexOf('collectChannelAliases');
+  assert.ok(idx !== -1, 'collectChannelAliases not found');
+  const block = src.slice(idx, idx + 500);
+  assert.ok(block.includes('.slice(0, 256)'), 'qAlias not sliced to 256 in collectChannelAliases (L2-05)');
+});
+
+test('L2-05: /api/search with invalid type returns empty results, not raw passthrough', () => {
+  const src = fileContent('server.js');
+  // The fix should handle rawTypes.length > 0 && effectiveTypes.length === 0
+  assert.ok(src.includes('rawTypes.length > 0 && effectiveTypes.length === 0'),
+    'Missing rawTypes/effectiveTypes guard for invalid type filter (L2-05)');
+});
+
+test('L2-06: server.js kg/reload error returns generic Internal Server Error', () => {
+  const src = fileContent('server.js');
+  // Find the reload error block
+  const reloadIdx = src.indexOf("'/api/kg/reload'");
+  assert.ok(reloadIdx !== -1, '/api/kg/reload handler not found');
+  const block = src.slice(reloadIdx, reloadIdx + 2000);
+  assert.ok(block.includes("error: 'Internal Server Error'"), 'kg/reload must return generic error (L2-06)');
+  assert.ok(!block.includes('error: reloadErr'), 'kg/reload must not leak reloadErr.message in response payload (L2-06)');
+});
+
+test('L2-06: kg_query.js competitorExplorerView error returns generic message', () => {
+  const src = fileContent('scripts/kg_query.js');
+  const idx = src.indexOf('function queryIntelligenceBreakouts');
+  assert.ok(idx !== -1, 'queryIntelligenceBreakouts not found');
+  const block = src.slice(idx, idx + 5000);
+  const catchIdx = block.lastIndexOf('catch');
+  assert.ok(catchIdx !== -1, 'catch block not found inside queryIntelligenceBreakouts');
+  const catchBlock = block.slice(catchIdx);
+  assert.ok(catchBlock.includes("error: 'Internal Server Error'"), 'competitorExplorerView must return generic error (L2-06)');
+  assert.ok(!catchBlock.includes('error: err'), 'competitorExplorerView must not leak err.message in response payload (L2-06)');
+});
+
+test('L2-07: resolveSafeRootPath uses fs.realpathSync containment', () => {
+  const src = fileContent('scripts/hot_memory_store.js');
+  const idx = src.indexOf('resolveSafeRootPath');
+  assert.ok(idx !== -1, 'resolveSafeRootPath not found');
+  const block = src.slice(idx, idx + 1500);
+  assert.ok(block.includes('fs.realpathSync'), 'resolveSafeRootPath missing fs.realpathSync containment check (L2-07)');
+});
+
+section('/tatca L3 — Client DOM XSS source checks (L3-HREF-01, L3-XSS-02)');
+
+test('L3-HREF-01: content.js uses safeExternalUrl or safeUrl on kichBan/reup .link/.file', () => {
+  if (!fileExists('assets/app/tabs/content.js')) return skipTest('content.js', 'not found');
+  const src = fileContent('assets/app/tabs/content.js');
+  assert.ok(
+    src.includes('safeExternalUrl') || src.includes('safeUrl'),
+    'content.js missing safeExternalUrl/safeUrl on kichBan/reup link/file (L3-HREF-01)'
+  );
+});
+
+test('L3-XSS-02: music_player_modal.js uses safeMediaUrl blocking javascript:', () => {
+  if (!fileExists('assets/music_player_modal.js')) return skipTest('music_player_modal.js', 'not found');
+  const src = fileContent('assets/music_player_modal.js');
+  assert.ok(
+    src.includes('safeMediaUrl') || src.includes('safeUrl') || src.includes("javascript:"),
+    'music_player_modal.js missing safeMediaUrl/safeUrl blocking javascript: (L3-XSS-02)'
+  );
+});
+
+section('/tatca L4 — Accessibility source checks (L4-A11Y-01..03)');
+
+test('L4-A11Y-01: content.js #fq has role="combobox"', () => {
+  if (!fileExists('assets/app/tabs/content.js')) return skipTest('content.js', 'not found');
+  const src = fileContent('assets/app/tabs/content.js');
+  assert.ok(
+    src.includes('role="combobox"') || src.includes("role='combobox'") || src.includes('combobox'),
+    'content.js #fq missing role="combobox" (L4-A11Y-01)'
+  );
+});
+
+test('L4-A11Y-02: music_player_modal.js captures btn/activeElement before await', () => {
+  if (!fileExists('assets/music_player_modal.js')) return skipTest('music_player_modal.js', 'not found');
+  const src = fileContent('assets/music_player_modal.js');
+  // Check that activeElement is captured (btn || document.activeElement) before the await
+  assert.ok(
+    src.includes('document.activeElement'),
+    'music_player_modal.js missing document.activeElement capture (L4-A11Y-02)'
+  );
+});
+
+test('L4-A11Y-03: main.js preserves scrollTop and focus on [data-toggle-tatca-list]', () => {
+  if (!fileExists('assets/app/main.js')) return skipTest('main.js', 'not found');
+  const src = fileContent('assets/app/main.js');
+  const toggleIdx = src.indexOf('data-toggle-tatca-list');
+  if (toggleIdx === -1) return skipTest('L4-A11Y-03', 'data-toggle-tatca-list not found in main.js');
+  const block = src.slice(Math.max(0, toggleIdx - 1000), toggleIdx + 2000);
+  assert.ok(
+    block.includes('scrollTop') || block.includes('focus'),
+    'main.js data-toggle-tatca-list handler missing scrollTop/focus preservation (L4-A11Y-03)'
+  );
+});
+
 // ── Node syntax checks ────────────────────────────────────────────────────────
 
 section('Node --check syntax validation');

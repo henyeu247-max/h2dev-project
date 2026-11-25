@@ -1834,10 +1834,12 @@ const server = http.createServer(async (req,res)=>{
 server.listen(PORT, HOST, ()=>{
   console.log('H2DEV Project running at http://'+HOST+':'+PORT+'/');
   console.log('Root: '+ROOT);
-  checkAndRotateAll();
-  startAutoSyncWatcher(() => {
-    refreshCachesOnDataSync();
-  });
+  if (process.env.H2DEV_DISABLE_KG_WATCHER !== '1') {
+    checkAndRotateAll();
+    startAutoSyncWatcher(() => {
+      refreshCachesOnDataSync();
+    });
+  }
 });
 
 // Xử lý ngoại lệ an toàn, chống sập server và ghi vết lỗi

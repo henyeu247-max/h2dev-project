@@ -37,15 +37,36 @@ let _cachedIntelStmt = new Map();
 const UNSAFE_JSON_KEYS = new Set(['__proto__', 'constructor', 'prototype']);
 
 function safeAssign(target, ...sources) {
-  const out = (target && typeof target === 'object') ? target : {};
-  for (const src of sources) {
-    if (!src || typeof src !== 'object') continue;
-    for (const key of Object.keys(src)) {
-      if (UNSAFE_JSON_KEYS.has(key)) continue;
-      out[key] = src[key];
+  const visited = new Set();
+  function _merge(tgt, srcs, depth) {
+    if (depth > 10) return tgt;
+    const out = (tgt && typeof tgt === 'object' && !Array.isArray(tgt)) ? tgt : {};
+    if (visited.has(out)) return out;
+    visited.add(out);
+    for (const src of srcs) {
+      if (!src || typeof src !== 'object' || Array.isArray(src)) continue;
+      if (visited.has(src)) continue;
+      visited.add(src);
+      for (const key of Object.keys(src)) {
+        if (UNSAFE_JSON_KEYS.has(key)) continue;
+        const val = src[key];
+        if (val && typeof val === 'object' && !Array.isArray(val)) {
+          out[key] = _merge(out[key], [val], depth + 1);
+        } else if (Array.isArray(val)) {
+          out[key] = val.map(item => {
+            if (item && typeof item === 'object' && !Array.isArray(item)) {
+              return _merge({}, [item], depth + 1);
+            }
+            return item;
+          });
+        } else {
+          out[key] = val;
+        }
+      }
     }
+    return out;
   }
-  return out;
+  return _merge(target, sources, 0);
 }
 
 function foldVi(str) {
@@ -1026,7 +1047,8 @@ function queryIntelligenceBreakouts(limitOrOpts = 30) {
       channels: rows
     };
   } catch (err) {
-    return { view, total: 0, totalBreakouts: 0, channels: [], error: err.message };
+    console.error('[kg_query:competitorExplorerView] Internal error:', err.message || err);
+    return { view, total: 0, totalBreakouts: 0, channels: [], error: 'Internal Server Error' };
   }
 }
 

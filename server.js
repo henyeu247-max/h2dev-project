@@ -667,6 +667,7 @@ function fetchMonaEmbedHtml(videoLink, originUrl, maxRedirects = 5) {
 }
 
 const server = http.createServer(async (req,res)=>{
+
   const isHead = (req.method === 'HEAD');
   const parsedReqUrl = safeParseUrl(req);
   if (!parsedReqUrl) {
@@ -693,6 +694,7 @@ const server = http.createServer(async (req,res)=>{
       ...getCorsHeaders(req),
       'Access-Control-Allow-Methods': 'GET, HEAD, POST, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type, Range, X-Requested-With, X-H2DEV-Action',
+      'Access-Control-Max-Age': '3600',
     }));
     res.end();
     return;
@@ -750,9 +752,10 @@ const server = http.createServer(async (req,res)=>{
           reloadErr = err;
         }
         if (reloadErr) {
+          console.error('[kg/reload] Internal error:', reloadErr.message || reloadErr);
           sendJson(req, res, 500, {
             reloaded: false,
-            error: reloadErr && reloadErr.message ? reloadErr.message : String(reloadErr),
+            error: 'Internal Server Error',
           }, false);
           return;
         }
@@ -1015,6 +1018,7 @@ const server = http.createServer(async (req,res)=>{
       }
     }
     if (req.method === 'POST' && req.headers['x-h2dev-action'] === 'spider') {
+      req.resume(); // L1-01: drain unread body immediately to prevent Slowloris accumulation
       if (spiderInFlight) {
         sendJson(req, res, 429, { error: 'Spider traversal already in progress' }, false);
         return;
@@ -1081,14 +1085,14 @@ const server = http.createServer(async (req,res)=>{
           'CHANNEL', 'CHECKLIST', 'LESSON', 'META', 'NICHE',
           'POLICY', 'REUP', 'SOP', 'SUBNICHE', 'TIMESTAMP', 'TRANSCRIPT'
         ]);
-        const typeList = typeFilter
+        const rawTypes = typeFilter
           ? [...new Set(
               typeFilter
                 .split(',')
                 .map(t => t.replace(/[^A-Za-z_]/g, '').toUpperCase())
-                .filter(t => VALID_FTS_TYPES.has(t))
             )]
           : [];
+        const typeList = rawTypes.filter(t => VALID_FTS_TYPES.has(t));
         const effectiveTypes = (!typeFilter && scope === 'kenh-mau')
           ? ['CHANNEL', 'TRANSCRIPT']
           : typeList;
@@ -1097,7 +1101,7 @@ const server = http.createServer(async (req,res)=>{
         const shouldAliasFallback = Boolean(q && (hasChannelType || (!typeFilter && (isChannelScoped || q.startsWith('@')))));
         const collectChannelAliases = (existingRows) => {
           if (!shouldAliasFallback) return [];
-          const qAlias = q.replace(/^@/, '').trim();
+          const qAlias = q.replace(/^@/, '').trim().slice(0, 256);
           if (qAlias.length < 3 || /\s/.test(qAlias)) return [];
           const likeEsc = '%' + qAlias.replace(/[\\%_]/g, '\\$&') + '%';
           const aliasHits = query(
@@ -1179,7 +1183,15 @@ const server = http.createServer(async (req,res)=>{
             }
           }
         } else {
-          rows = searchFts(q, limit, effectiveTypes.length === 1 ? effectiveTypes[0] : typeFilter);
+          // L2-05: when rawTypes were given but none are valid, return empty rather than passing raw invalid type
+          const ftsType = effectiveTypes.length === 1
+            ? effectiveTypes[0]
+            : (rawTypes.length > 0 && effectiveTypes.length === 0 ? '' : typeFilter);
+          if (rawTypes.length > 0 && effectiveTypes.length === 0) {
+            rows = [];
+          } else {
+            rows = searchFts(q, limit, ftsType);
+          }
           const extraCh = collectChannelAliases(rows);
           if (extraCh.length) {
             rows = extraCh.concat(rows).slice(0, limit);
@@ -1830,6 +1842,10 @@ const server = http.createServer(async (req,res)=>{
     res.end(isHead ? undefined : '404 Not Found');
   });
 });
+
+// L1-01: Bounded server timeouts to prevent Slowloris-style accumulation
+server.requestTimeout = 30000;
+server.headersTimeout = 10000;
 
 server.listen(PORT, HOST, ()=>{
   console.log('H2DEV Project running at http://'+HOST+':'+PORT+'/');

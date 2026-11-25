@@ -1,6 +1,6 @@
 # LIVE RUNTIME STATE — D:\YTB\H2DEV-Project
 # Context Hierarchy Layer 4 | Single Source of Runtime Truth
-# Cập nhật lúc: 2026-11-02 (mục 1, 2 và 4.2 đồng bộ tự động qua sync-counts.js; mục 3 đo 2026-10-14; mục 4.1 nghiệm thu 2026-10-09)
+# Cập nhật lúc: 2026-11-19 (mục 1, 2 và 4.2 đồng bộ tự động qua sync-counts.js; mục 3 đo lại 2026-11-19; mục 4.1 nghiệm thu 2026-10-09)
 
 > **Bản chất kỹ thuật:** File này ghi nhận trạng thái thực tế đang chạy (Live Reality) của hệ sinh thái `D:\YTB\H2DEV-Project`.
 > Mọi Agent khi bắt đầu phiên làm việc đọc file này để nắm ngay thực trạng runtime mà không cần quét lại từ đầu.
@@ -16,26 +16,26 @@
 > kiểm tra đồng bộ bằng `node scripts/sync-counts.js --check`). Các file JSON dữ liệu gốc tại `data-tabs/`.
 
 - **Tập tin chân lý số liệu:** `data/counts-manifest.json` (tự động cập nhật qua `node scripts/sync-counts.js`).
-- **Tổng kho bài học (`videos.json`):** **154 bài** (150 Video bài giảng PRO + 4 Buổi Zoom Masterclass; 28 Free · 126 Pro) — thuộc hệ thống **97yo-dev** tổng **347 bài học** (154 H2DEV + 140 Huân Academy + 53 DGMD; 36 module).
-  → nguồn: `data-tabs/videos.json` (154) + `data/videos_huan.json` (140) + `data/videos_dgmd.json` (53) = **347** bài học toàn hệ thống.
-- **Kiểm định media toàn vẹn:** **347/347 file** mp4/webm tồn tại (154 H2DEV + 140 Huân + 53 DGMD), 0 file 0 byte (`counts-manifest.mediaFiles`, dung lượng ~92.73 GB / 86.36 GiB). `audit_videos_v2.py` (đo lại 2026-11-02): **154/154 H2DEV + 193/193 Huân & DGMD clean · 0 issues · 0 standards_gaps**. Lệnh đo: `py -3 scripts/audit_videos_v2.py`.
+- **Tổng kho bài học (`videos.json`):** **162 bài** (158 Video bài giảng PRO + 4 Buổi Zoom Masterclass; 28 Free · 134 Pro) — thuộc hệ thống **97yo-dev** tổng **355 bài học** (162 H2DEV + 140 Huân Academy + 53 DGMD; 36 module).
+  → nguồn: `data-tabs/videos.json` (162) + `data/videos_huan.json` (140) + `data/videos_dgmd.json` (53) = **355** bài học toàn hệ thống.
+- **Kiểm định media toàn vẹn:** **355/355 file** mp4/webm tồn tại (162 H2DEV + 140 Huân + 53 DGMD), 0 file 0 byte (`counts-manifest.mediaFiles`, dung lượng ~93.70 GB / 87.27 GiB). `audit_videos_v2.py` (đo lại 2026-11-02): **162/162 H2DEV + 193/193 Huân & DGMD clean · 0 issues · 0 standards_gaps**. Lệnh đo: `py -3 scripts/audit_videos_v2.py`.
   - `VIDEO-f59aa7`: ĐÃ PHỤC HỒI đủ tiếng — giải mã Widevine CENC (pipeline `scripts/download_full_drm_audio.cjs` + `scripts/get_drm_key.py`), 108.5 MB, mean_volume -22.0 dB; phụ đề 397 đoạn phủ toàn thời lượng 43:08.
   - `VIDEO-8e0275`: video thao tác màn hình KHÔNG micro từ tác giả gốc → `content_kind=silent_screen_tutorial`, không phải lỗi.
   - Còn **53 review_flags** kiểm tay (không phải data hỏng, `0 standards_gaps`): S9 32 (xác nhận hình/tiếng bằng heuristic) · A10 9 (thumbnail ≠ nội dung theo vision) · S6 8 (takeaway neo transcript thấp) · A8d 8 (cờ kiểm phụ đề thủ công). Hàng đợi: `data/media-review-queue.json` (36 open · 5 resolved).
   → nguồn: `counts-manifest.mediaFiles` + `py -3 scripts/audit_videos_v2.py` + `data/media-review-queue.json`.
-- **Danh bạ kênh mẫu (`kenh-mau.json`):** **1076 kênh** (987 live · 89 dead).
-  → nguồn: `data-tabs/kenh-mau.json` (1076/1076 có `ngay_do`; 987 sống · 89 dead = 75 DIE 404 + 14 kênh rỗng; chạy `scripts/probe-kenh-mau.py` rồi `scripts/classify-kenh-mau.py`, bằng chứng `_audit/20261014-kenh-mau-probe.jsonl` & `data/ngachxanh_handle_probes.json`). Kênh dead = 404 / bị chấm dứt / kênh rỗng 0 video; GIỮ NGUYÊN trong kho làm case study dẫn chứng bài học, không xóa.
+- **Danh bạ kênh mẫu (`kenh-mau.json`):** **1740 kênh** (1444 live · 296 dead).
+  → nguồn: `data-tabs/kenh-mau.json` (1740/1740 có `ngay_do`; 1444 sống · 296 dead = 194 DIE 404 + 102 kênh rỗng; chạy `scripts/probe-kenh-mau.py` rồi `scripts/classify-kenh-mau.py`, bằng chứng `_audit/20261014-kenh-mau-probe.jsonl` & `data/ngachxanh_handle_probes.json`). Kênh dead = 404 / bị chấm dứt / kênh rỗng 0 video; GIỮ NGUYÊN trong kho làm case study dẫn chứng bài học, không xóa.
 - **Kênh mẫu canonical (`raw-kenh-mau.json`):** **156 hồ sơ** (149 kênh unique, 12 nhóm lớn + 3 nhóm đặc nhiệm).
   → nguồn: `counts-manifest.canonicalRaw` / `canonicalRawUniqueChannels`.
-- **Kho tài liệu & Master Prompts (`tai-lieu-full.json`):** **598 tài liệu**.
+- **Kho tài liệu & Master Prompts (`tai-lieu-full.json`):** **761 tài liệu**.
   → nguồn: `data-tabs/tai-lieu-full.json` (100% có `kind`, `contentNiche`, `branch`, `nicheCode`; xem `classifyPrompt` trong `assets/app/tabs/content.js`).
 - **Ma trận ngách YouTube (`ngach-xanh.json`):** **40 ngách** (`xanh:true` **16** ngách).
-  → nguồn: `data-tabs/ngach-xanh.json` (40 ngách chuẩn `H01..H40` phủ 347/347 SKU toàn hệ thống).
-- **Kho nhạc nền:** **49 tracks** đã audit Gemini Multimodal & FFprobe (36 SAFE YPP · 9 REVIEW · 4 COPYRIGHTED cấm dùng).
+  → nguồn: `data-tabs/ngach-xanh.json` (40 ngách chuẩn `H01..H40` phủ 355/355 SKU toàn hệ thống).
+- **Kho nhạc nền:** **49 tracks** (49/49 kiểm định FFprobe · 32/49 audit Gemini Multimodal; 36 SAFE YPP · 9 REVIEW · 4 COPYRIGHTED cấm dùng).
   → nguồn: rule workspace SSoT + `data/music_catalog.json`. *(Số cũ ghi 38 là SAI — đã sửa 2026-09-24.)*
-- **Master SQLite Database:** **6.286 entries** FTS5 trong `h2dev_master.db`.
-  → nguồn: đo trực tiếp `SELECT COUNT(*) FROM search_fts` trên VPS = **6286**. *(Số cũ ghi 2.003 là SAI — đã sửa 2026-09-24.)*
-  Bảng kèm theo: `lessons` 347 · `lesson_timestamps` 2541 · `competitor_channels` 1080 · `competitor_top_videos` 1421 · `documents` 598 · `reup_sources` 52 · `niches` 40 · `policies` 12 · `checklists` 12.
+- **Master SQLite Database:** **7.165 entries** FTS5 trong `h2dev_master.db`.
+  → nguồn: đo trực tiếp `SELECT COUNT(*) FROM search_fts` trên VPS = **7165**. *(Số cũ ghi 2.003 là SAI — đã sửa 2026-09-24.)*
+  Bảng kèm theo: `lessons` 355 · `lesson_timestamps` 2589 · `competitor_channels` 1740 · `competitor_top_videos` 1421 · `documents` 761 · `reup_sources` 52 · `niches` 40 · `policies` 12 · `checklists` 12.
 
 ### 1.1. NHẬT KÝ HIỆU CHỈNH SỐ LIỆU (2026-09-24)
 
@@ -55,31 +55,31 @@ Phát hiện khi audit `gate-icons.js` chặng P3.6: 3 số trong file này **l�
 
 ## 2. HẠ TẦNG DỊCH VỤ & MẠNG NỘI BỘ
 > Đo lại 2026-09-30 bằng `Get-NetTCPConnection -State Listen` + `Get-Service`. PID đổi sau mỗi lần khởi động — đừng dùng PID làm bằng chứng lâu dài.
-- **Cổng 8899:** `H2DEV_Service` (NSSM, Running) $\rightarrow$ `[CÓ] LISTENING`. Runtime Playwright: `/`, `/player.html`, `/learn.html`, `/graph.html` 0 console error.
+- **Cổng 8899:** `H2DEV_Service` (NSSM tại `C:\Program Files\H2DEV\nssm.exe`, chạy dưới tài khoản ít quyền `H2DEV_SVC`, Running) $\rightarrow$ `[CÓ] LISTENING`. Runtime Playwright: `/`, `/player.html`, `/learn.html`, `/graph.html` 0 console error.
 - **Cơ chế Watchdog & Chống Spawn Storm (cập nhật 2026-11-02):**
   - `h2dev-watchdog-hidden.vbs`, `h2dev-silent.vbs`, `scripts/windows/h2dev-watchdog.ps1`: kiểm tra trực tiếp `http://127.0.0.1:8899/health` (~60B JSON), khóa đơn tiến trình bằng `Global\H2DevWatchdogMutex`, ghi log tập trung tại `logs/` kèm tự xoay vòng 1 MB.
   - `scripts/windows/h2dev-auto-ingest-hidden.vbs` & `h2dev-faststart-guard-hidden.vbs`: gọi trực tiếp `node.exe` không bọc `cmd.exe /c`; `auto_ingest_pipeline.js` khóa `.cache/auto-ingest.lock` (PID-verified) và xoay vòng log 2 MB; `ensure_video_faststart.cjs` cache `(fileSize, mtimeMs)` tại `.cache/faststart-checked.json` (quét 341 MP4 trong ~55ms).
   - `scripts/audit_videos_v2.py`: bật GPU NVDEC (`-hwaccel cuda -threads 2`), `-vn -threads 2` cho `ebur128`, và cache metadata `ffprobe_meta_cache.json` theo `(size, mtime_ns)` (153 SKU chạy trong ~1.7s, 0 issues).
 - **Cổng 3988:** `MCP_Pool_Service` (NSSM, Running) $\rightarrow$ `[CÓ] LISTENING`.
 - **Cổng 20128:** 9Router Gateway $\rightarrow$ `[CÓ] LISTENING`.
-- **Cổng 20140:** Claude gateway (`~/.claude/gateway`) $\rightarrow$ `[CÓ] LISTENING`.
-- **VPS production:** `<VPS_IP>` — deploy qua `git push vps main` (post-receive: `sync-counts --check` → rebuild SQLite → PM2 reload `h2dev-learn`). Lưu ý: thư mục `video/` KHÔNG nằm trong git — media đổi phải rsync riêng.
+- **Cổng 20140:** Claude gateway cũ (`~/.claude/gateway`) → `[ĐÃ GỠ / NOT LISTENING]` (đo live 2026-11-19).
+- **VPS production (`site-vps`):** `https://97yo-dev-learn.tonymmo.com` — SSH/SCP qua WireGuard `wg-site` (`<WG_IP>:<SSH_PORT>`, key `~/.ssh/<SSH_KEY_NAME>`); deploy metadata/app qua `scripts/auto_ingest_pipeline.js --sync-vps` (hoặc `git push vps main` `post-receive`: `sync-counts --check` → rebuild SQLite → `pm2 reload h2dev-learn`). Lưu ý: thư mục `video/` KHÔNG nằm trong git — media đồng bộ qua `rclone gdrive:` → mount VPS `/mnt/gdrive_h2dev/video` + `/usr/local/bin/h2dev-sync-video-symlinks.sh`.
 - **Chính sách credit vidIQ:** Tài khoản còn 75 Add-on credits, 0 renewable. Đóng băng 100% các tool tính phí.
 
 ---
 
 ## 3. TRẠM VŨ KHÍ TÁC CHIẾN (SKILLS & PIPELINES)
-- **Skill chuyên dụng `h2dev-*`:** nằm trong kho skill chung `~/.agents/source/skills/` (đồng bộ ra mọi tool bằng `~/.agents/sync/agents_sync.py`); thư mục `D:\YTB\.agents\skills\` không còn tồn tại (đo 2026-10-14). Các script sinh nội dung vẫn được `scripts/h2dev_master_producer.py` điều phối.
-- **5 thư mục pipeline** tại `D:\YTB\H2DEV-Project\pipelines\` — mức độ sẵn sàng THẬT (đo 2026-09-30):
+- **Skill chuyên dụng `h2dev-*`:** nằm trong kho skill chung `~/.agents/source/skills/` (đồng bộ ra mọi tool bằng `~/.agents/sync/agents_sync.py`) và hiện có bản project-level trên đĩa tại `D:\YTB\.agents\skills\` (đo 2026-11-19: **29 thư mục skill**). Các script sinh nội dung vẫn được `scripts/h2dev_master_producer.py` điều phối.
+- **5 thư mục pipeline** tại `D:\YTB\H2DEV-Project\pipelines\` — mức độ sẵn sàng THẬT (đo 2026-09-30, đối soát cập nhật 2026-11-19):
   | Pipeline | Có script chạy được | Ghi chú |
   |---|---|---|
-  | `hoat-hinh-ai` | CÓ (`generate_images.py`, `generate_videos.py`, `merge_clips.py`) | cần `KIE_API_TOKEN` + `IMGBB_API_KEY` |
+  | `hoat-hinh-ai` | CÓ (`generate_images.py`, `generate_videos.py`, `merge_clips.py`) | cần `KIE_API_TOKEN` + `IMGBB_API_KEY`; kiểm định clip trong `merge_clips.py` cập nhật `2026-11-14` |
   | `ton-giao` | CÓ (`generate_voice.py`, `generate_image.py`, `merge_video.py`) | cần `ELEVENLABS_API_KEY` + `KIE_API_KEY` |
-  | `wildlife` | CÓ — mới là khung (`generate_wildlife_script.py` sinh từ 3 case mẫu, `generate_motion_prompts.py`) | kịch bản sinh theo template, CHƯA gọi LLM; chưa có bước voice/merge |
+  | `wildlife` | CÓ — mới là khung (`generate_wildlife_script.py` sinh từ 3 case mẫu, `generate_motion_prompts.py`) | kịch bản sinh theo template, CHƯA gọi LLM; chưa có bước voice/merge; tài liệu (`MULTI_BIOME_NATURALISM_V5.md`, `README.md`, `wild-v4.2-gem/`) cập nhật `2026-10-27..28` |
   | `everyday-history` | CÓ — mới là khung (`generate_everyday_history.py` template 3 đồ vật, `assemble_history_video.py` ghép tĩnh) | câu narration lặp theo template → KHÔNG dùng làm bản đọc; chưa có Ken Burns thật |
   | `bible-explainer` | KHÔNG — chỉ zip skill + ảnh mẫu | dùng kèm `ton-giao` để có voice/merge |
 - **Pilot `PILOT-01-THE-MIRROR`:** `paused` (Phương án B, anh chốt 2026-09-30). Kịch bản EN 1.927 từ đã đủ; không làm media cho pilot này đến khi anh mở lại.
-- **8 Repo Reverse-Engineering:** Sẵn sàng tại `D:\YTB\research-repos\` (Tencent BrowserSkill, ainovel-cli, drama-skills, make-prompt-seedance2, dola-render-gateway, YouTube.js LuanRT, yt-fts, FckSignups NoSignups).
+- **10 Repo Reverse-Engineering:** Sẵn sàng tại `D:\YTB\research-repos\` (`ai-storyboard-video-starter`, `ainovel-cli`, `BrowserSkill` Tencent, `dola-render-gateway`, `drama-skills`, `FckSignups`, `make-prompt-seedance2`, `super-video-maker-skill`, `YouTube.js` LuanRT, `yt-fts`).
 
 ---
 
@@ -108,6 +108,6 @@ Phát hiện khi audit `gate-icons.js` chặng P3.6: 3 số trong file này **l�
    - Đủ 5 bước Kỹ thuật Edit & SOP né quét AI chi tiết (> 500 – 1.385 ký tự), không có chuỗi fallback ngắn.
    - $\ge 3$ Rào chắn phòng thủ & Tránh gậy bản quyền (Avoid Flags).
 4. **Đồng bộ Master SQLite WAL & Nexus Dual-Layer Graph:**
-   - Master database `data/h2dev_master.db` đã rebuild đầy đủ **347 lessons** (154 H2DEV · 140 Huân · 53 DGMD), **2.541 lesson timestamps**, **1.080 competitor channels**, **1.421 top videos**, **598 documents**, **52 reup sources**, **40 niches**, **12 policies**, **12 checklists** và **6.286 FTS5 search index entries**.
-   - Nexus Dual-Layer Graph (`data/h2dev_knowledge_graph.db` + `data/knowledge_graph.json` + Obsidian Vault `knowledge-hub/vault/` + Web Explorer `/graph`) đã lập chỉ mục toàn diện **4.246 nodes** và **8.361 edges** qua 2 lớp (2.883 Knowledge nodes + 1.363 Infra nodes trên 17 dự án).
+   - Master database `data/h2dev_master.db` đã rebuild đầy đủ **355 lessons** (162 H2DEV · 140 Huân · 53 DGMD), **2.589 lesson timestamps**, **1.740 competitor channels**, **1.421 top videos**, **761 documents**, **52 reup sources**, **40 niches**, **12 policies**, **12 checklists** và **7.165 FTS5 search index entries**.
+   - Nexus Dual-Layer Graph (`data/h2dev_knowledge_graph.db` + `data/knowledge_graph.json` + Obsidian Vault `knowledge-hub/vault/` + Web Explorer `/graph`) đã lập chỉ mục toàn diện **4.799 nodes** và **9.386 edges** qua 2 lớp (3.446 Knowledge nodes + 1.353 Infra nodes trên 18 dự án).
 5. **Quality Gates:** Toàn bộ Core Gates (`validate-project.js`, `sync-counts.js --check`, `gate-icons.js`, `gate-typography.js`, `gate-p1.js`, `gate-p2.js`, `gate-shell.js`, `check-ui-classes.js`, `guard-no-inline-onclick.js`) đều **PASS 100%**.

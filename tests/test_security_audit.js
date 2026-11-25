@@ -142,6 +142,30 @@ test('scripts/auto_ingest_pipeline.js: no hardcoded private IPs or SSH key filen
   checkNoHardcodedInfra('scripts/auto_ingest_pipeline.js');
 });
 
+test('.env.example: no real IPs, keys, or SSH key filenames', () => {
+  checkNoHardcodedInfra('.env.example');
+});
+
+test('SEC5-001/002: _private/gemini-api-keys.json consolidated out and OCR/audio scripts load .env + CLIProxy', () => {
+  assert.equal(fileExists('_private/gemini-api-keys.json'), false,
+    '_private/gemini-api-keys.json must be removed after consolidation into .env');
+  const ocrSrc = fileContent('scripts/batch_ocr_raw_channels.cjs');
+  assert.ok(ocrSrc.includes('GEMINI_KEYS') && ocrSrc.includes('processViaCliProxy'),
+    'batch_ocr_raw_channels.cjs must support .env GEMINI_KEYS and CLIProxyAPI primary engine');
+  const audioSrc = fileContent('scripts/gemini_audio_engine.js');
+  assert.ok(audioSrc.includes('GEMINI_KEYS') && audioSrc.includes('analyzeViaCliProxy'),
+    'gemini_audio_engine.js must support .env GEMINI_KEYS and CLIProxyAPI primary engine');
+});
+
+test('L4-01: Windows service scripts point to protected C:\\Program Files\\H2DEV\\nssm.exe', () => {
+  const hook = fileContent('scripts/windows/h2dev-service-autoreload-hook.ps1');
+  const wd = fileContent('scripts/windows/h2dev-watchdog.ps1');
+  assert.ok(hook.includes('C:\\Program Files\\H2DEV\\nssm.exe'),
+    'h2dev-service-autoreload-hook.ps1 must reference C:\\Program Files\\H2DEV\\nssm.exe');
+  assert.ok(wd.includes('C:\\Program Files\\H2DEV\\nssm.exe'),
+    'h2dev-watchdog.ps1 must reference C:\\Program Files\\H2DEV\\nssm.exe');
+});
+
 // ── Layer 4: Static checks on patched downloaders/pipelines ──────────────────
 
 section('L4 — Downloader static security checks');
@@ -643,6 +667,8 @@ nodeSyntaxCheck('scripts/auto_ingest_pipeline.js');
 nodeSyntaxCheck('scripts/download_dgmd_hls.js');
 nodeSyntaxCheck('scripts/download_huan_video.js');
 nodeSyntaxCheck('scripts/install-market-skill.js');
+nodeSyntaxCheck('scripts/batch_ocr_raw_channels.cjs');
+nodeSyntaxCheck('scripts/gemini_audio_engine.js');
 nodeSyntaxCheck('assets/auth-login.js');
 nodeSyntaxCheck('assets/app/main.js');
 nodeSyntaxCheck('tests/test_security_audit.js');

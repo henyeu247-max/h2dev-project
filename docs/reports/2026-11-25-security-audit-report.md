@@ -253,37 +253,21 @@ Files: `.gitignore`, `.env` (gitignored), `_private/` (gitignored), `package.jso
 > [!CAUTION]
 > These items require **manual operator action** and are outside automated remediation scope.
 
-### 1. API Key Rotation (SEC5-001, SEC5-002) — **URGENT**
-Keys appeared in tool scan output during this audit session. Treat as potentially observed.
+### 1. API Key Hygiene & CLIProxy Standardization (SEC5-001, SEC5-002) — **CONSOLIDATED (KEY SWAP OPTIONAL)**
+- **Completed:** Audited all `10` Gemini candidates and `5` Groq keys across `_private/`, `.env`, `docs/`, `data/`, and SQLite DBs. Consolidated ONLY the `4` live Gemini keys (`dd43490cc7` + `3` active `AQ.*` keys) and `5` live Groq keys into gitignored `.env` (UTF-8 no BOM), purged the `6` depleted/suspended keys, and deleted `_private/gemini-api-keys.json`.
+- **Upgraded:** [batch_ocr_raw_channels.cjs](../../scripts/batch_ocr_raw_channels.cjs) and [gemini_audio_engine.js](../../scripts/gemini_audio_engine.js) now load `.env` directly and route **Engine A (Primary)** through local CLIProxyAPI (`gemini-3.8-flash-medium`, live-verified for Vision + Audio `<= 15 MB`) before falling back to **Engine B (Direct Google AI Studio)** (`gemini-3-flash-preview` / `gemini-flash-latest` / `gemini-2.5-flash-lite`).
+- **Residual operator note:** Because third-party Google AI Studio / Groq provider keys cannot be regenerated offline without console login, swap in newly rotated external keys into `.env` (and MCP Pool `.env` for shared Gemini keys) whenever rotating upstream credentials.
 
-- **Action:** Rotate all Gemini API keys stored locally. Move consolidated keys to `.env` and delete the JSON file in `_private/`.
-- **Action:** Rotate all Groq API keys in `.env`.
-- **Rule:** Never commit `_private/` contents. Never `git add -f` any file in `_private/` or `.env`.
-- **Going forward:** Consolidate all secrets into `.env` only; ensure it remains gitignored.
+### 2. Public Git History & VPS Firewall (SEC5-006, SEC5-007) — **RESOLVED**
+- **Completed:** Merged PR `#1`, rewrote full repository history in an isolated mirror clone via `git-filter-repo --replace-text` to scrub all legacy `<VPS_IP>`, `<TAILSCALE_IP>`, `<LAN_IP>`, `<WG_IP>`, and `<SSH_KEY_NAME>` references, force-pushed clean branches to `origin`, updated local `vps` remote to WireGuard host, and removed the redundant `26266/tcp Anywhere` rule on VPS UFW (retaining `26266/tcp on wg-site` + Cloudflare `80/443` + `37223/tcp` aaPanel admin port per operator topology).
 
-### 2. Public Git History — Infrastructure IP Exposure (SEC5-006, SEC5-007)
-`origin/main` **prior commits** contain hardcoded infrastructure IPs (`<VPS_IP>`, `<TAILSCALE_IP>`, `<LAN_IP>`). HEAD has been scrubbed in this PR. Prior commits remain in git history on the public GitHub repository.
-
-- **Action (optional but recommended):** Use `git-filter-repo` to rewrite history:
-  ```bash
-  pip install git-filter-repo
-  # Create a replacements file with real values → placeholders, then:
-  git filter-repo --replace-text <replacements_file>
-  git push origin main --force
-  ```
-- **Action (minimum):** Consider rotating the VPS IP if warranted. At minimum, ensure firewall rules on the VPS restrict inbound by allowlisted IPs only.
-
-### 3. Windows Workstation Admin Hardening (L4-01) — **HIGH PRIORITY**
-
-> [!WARNING]
-> `nssm.exe` and NSSM-managed services run as `NT AUTHORITY\SYSTEM` from a directory where non-admin local users and SMB service accounts hold `(M)/(F)` ACL rights. This is a local privilege escalation vector. This finding is **Outside-Repo** (`D:\YTB\`, not tracked in git) and cannot be fixed by code changes alone.
-
-**Recommended hardening steps:**
-1. Move `nssm.exe` to `%ProgramFiles%\H2DEV\nssm.exe`
-2. Apply strict ACLs: `icacls "%ProgramFiles%\H2DEV" /inheritance:r /grant "SYSTEM:(F)" "Administrators:(F)"` (remove all other SIDs)
-3. Move `h2dev-service-autoreload-hook.ps1` to the same protected directory
-4. Create a least-privilege local service account (e.g., `H2DEV_SVC`) and configure NSSM to run services under it instead of `LocalSystem`
-5. Verify with `sc.exe qc H2DEV_Service` and `icacls "%ProgramFiles%\H2DEV\nssm.exe"`
+### 3. Windows Workstation Admin Hardening (L4-01) — **RESOLVED**
+- **Completed:**
+  1. Moved `nssm.exe` and `h2dev-service-autoreload-hook.ps1` into `C:\Program Files\H2DEV\` and removed legacy root `D:\YTB\nssm.exe`.
+  2. Locked `C:\Program Files\H2DEV\` ACL (`SYSTEM:(F)`, `Administrators:(F)`, `Users:(RX)` — inheritance stripped; zero SMB/stale SID write access).
+  3. Updated all callers (`INSTALL_BOOT_SERVICES_NSSM.bat`, `UNINSTALL_BOOT_SERVICES_NSSM.bat`, `RESTART-H2DEV-SERVICE-ADMIN.cmd`, `D:\McpPoolLocal\RESTART-MCP-POOL-ADMIN.cmd`, `D:\9 Router\scripts\ensure-9router-local-hidden.vbs`, `scripts/windows/h2dev-watchdog.ps1`).
+  4. Created dedicated least-privilege local account `H2DEV_SVC` (`Users` only, `SeServiceLogonRight` granted), migrated `H2DEV_Service` away from `LocalSystem` to `.\H2DEV_SVC`, and hardened ACLs on `.env` (`H2DEV_SVC:(R)`), `server.js` & `scripts/auth_gate.js` (`H2DEV_SVC:(RX)`), `_private/`, `scripts/windows/`, watchdogs, and MCP Pool binaries/env (`SYSTEM`/`Administrators`/`SaxukeB:(F)` only, stripping SMB/stale SIDs while preserving `D:\` general `D_FULL` share).
+  5. Re-pointed `MCP_Pool_Service` `binPath` to `"C:\Program Files\H2DEV\nssm.exe"` and verified `:8899`, `:3988`, `:18765`, `H2DEV-Watchdog`, and `9Router-Local-Ensure`.
 
 ### 4. Service Restart & Ongoing Operations
 - **H2DEV_Service Restarted:** `D:\YTB\RESTART-H2DEV-SERVICE-ADMIN.cmd` executed cleanly as Administrator (`_private -> HTTP 403`, `data-tabs -> HTTP 200`, `/health -> 200 {"ok":true}`).

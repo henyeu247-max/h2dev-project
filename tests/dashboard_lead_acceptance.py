@@ -57,12 +57,16 @@ with sync_playwright() as playwright:
     check("search placeholder count agrees", str(counts["skills"]) in page.locator("#builder-skill-search").get_attribute("placeholder"))
     source = Path.home() / ".agents" / "source" / "skills"
     expected_names = set()
+    nested_names = set()
     for skill in source.rglob("SKILL.md"):
         if "_backup" in skill.parts or ".cache" in skill.parts:
             continue
         match = re.search(r"^name:\s*([^\n]+)", skill.read_text(encoding="utf-8"), re.MULTILINE)
         check("frontmatter " + str(skill.relative_to(source)), bool(match))
-        expected_names.add(match.group(1).strip().strip(chr(34) + chr(39)))
+        skill_name = match.group(1).strip().strip(chr(34) + chr(39))
+        expected_names.add(skill_name)
+        if len(skill.relative_to(source).parts) > 2:
+            nested_names.add(skill_name)
     actual_names = set(page.evaluate("ALL_ITEMS.filter(x => x.cat === 'skill-global').map(x => x.name)"))
     check("all source skills discoverable", expected_names <= actual_names)
 
@@ -86,12 +90,13 @@ with sync_playwright() as playwright:
     page.locator("#plat-pills-box [data-plat='codex']").click()
     page.evaluate("selectedSysCmds.push('/goal');updateBuilder()")
     check("Codex excludes GUI goal", "/goal" not in page.locator("#builder-out").inner_text())
-    page.locator("#builder-skill-search").fill("unity-navmesh")
-    row = page.locator(".skill-picker-row").filter(has_text="/unity-navmesh")
-    check("search finds formerly missing skill", row.count() == 1)
+    target_skill = sorted(nested_names)[0] if nested_names else sorted(expected_names)[0]
+    page.locator("#builder-skill-search").fill(target_skill)
+    row = page.locator(".skill-picker-row").filter(has_text="/" + target_skill)
+    check("search finds real nested source skill", row.count() == 1)
     row.click()
     output = page.locator("#builder-out").inner_text()
-    check("Codex skill syntax", "$unity-navmesh" in output)
+    check("Codex skill syntax", ("$" + target_skill) in output)
     page.locator('[onclick="copyBuilder()"]').first.click()
     clipboard = page.evaluate("navigator.clipboard.readText()")
     check("copy exact generated prompt", clipboard == output)

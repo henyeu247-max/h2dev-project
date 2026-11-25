@@ -2993,7 +2993,7 @@ function buildVpsSyncPlan(processedLessons, syncGlobalData = false) {
 
   const relPathsToSync = [...relPathSet];
   const reloadCmd = syncGlobalData
-    ? '(pm2 reload h2dev-learn --update-env || pm2 restart h2dev-learn) && for i in 1 2 3 4 5; do curl -fsS http://127.0.0.1:8899/health >/dev/null && break; sleep 1; done && curl -fsS http://127.0.0.1:8899/health >/dev/null'
+    ? '(pm2 reload h2dev-learn --update-env || pm2 restart h2dev-learn) && for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15; do curl -fsS http://127.0.0.1:8899/health >/dev/null && break; sleep 1; done && curl -fsS http://127.0.0.1:8899/health >/dev/null'
     : '(curl -fsS -X POST http://127.0.0.1:8899/api/kg/reload -H "X-Requested-With: auto-ingest" >/dev/null || pm2 reload h2dev-learn --update-env || pm2 restart h2dev-learn)';
   const remoteUntarReloadCmd = [
     `tar -xf - -C ${shellSingleQuote(VPS_APP_DIR)}`,

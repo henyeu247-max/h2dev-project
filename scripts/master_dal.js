@@ -20,7 +20,6 @@ const { DatabaseSync } = require('node:sqlite');
 const ROOT = path.resolve(__dirname, '..');
 const DB_PATH = path.join(ROOT, 'data', 'h2dev_master.db');
 const { computeCounts } = require('./lib/counts');
-const C = computeCounts();
 
 // Safe connection opener with performance PRAGMAs
 function getMasterDb() {

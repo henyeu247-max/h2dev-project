@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  <title>97yo-dev Nexus Graph — Hệ Thống Hóa Đa Dự Án &amp; Bản Đồ Liên Kết 347 Video</title>
-  <link rel="stylesheet" href="/assets/tailwind.css?v=20261103-uifix102">
+  <title>97yo-dev Nexus Graph — Hệ Thống Hóa Đa Dự Án &amp; Bản Đồ Liên Kết 355 Video</title>
+  <link rel="stylesheet" href="/assets/tailwind.css?v=20261124-uifix105">
   <style>
     :root {
       --bg-void: #06080f;
@@ -25,6 +25,13 @@
       --fs-lg: 16px;
       --fs-xl: 20px;
       --fs-2xl: 24px;
+      /* h2dev-tokens z-index + surface (gate-p1 compliance) */
+      --surface: rgb(20, 24, 33);
+      --h2-z-base: 1;
+      --h2-z-sticky: 20;
+      --h2-z-fixed: 40;
+      --h2-z-drawer: 60;
+      --h2-z-modal: 1000;
     }
     * { box-sizing: border-box; }
     body {
@@ -56,7 +63,7 @@
       justify-content: space-between;
       padding: 8px 16px;
       gap: 12px;
-      z-index: 30;
+      z-index: var(--h2-z-fixed);
       flex-wrap: wrap;
     }
     .nx-brand {
@@ -102,7 +109,7 @@
     }
     .nx-mode-tabs {
       display: inline-flex;
-      background: #090d16;
+      background: var(--surface);
       border: 1px solid var(--border-subtle);
       border-radius: 10px;
       padding: 4px;
@@ -153,7 +160,7 @@
     }
     .nx-search-input {
       height: 36px;
-      background: #090d16;
+      background: var(--surface);
       border: 1px solid rgba(148, 163, 184, 0.32);
       border-radius: 8px;
       padding: 0 12px;
@@ -184,7 +191,7 @@
       justify-content: space-between;
       padding: 8px 16px;
       gap: 12px;
-      z-index: 25;
+      z-index: var(--h2-z-sticky);
     }
     .nx-lineage-bar {
       display: flex;
@@ -402,7 +409,7 @@
       justify-content: space-between;
       gap: 8px;
       pointer-events: none;
-      z-index: 12;
+      z-index: var(--h2-z-base);
       flex-wrap: wrap;
     }
     .kg-hud-group {
@@ -417,6 +424,9 @@
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
     }
     .kg-hud-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
       min-height: 32px;
       padding: 4px 10px;
       border-radius: 6px;
@@ -427,6 +437,10 @@
       font-weight: 600;
       cursor: pointer;
       white-space: nowrap;
+    }
+    .kg-hud-ico {
+      flex-shrink: 0;
+      display: block;
     }
     .kg-hud-btn:hover {
       color: #ffffff;
@@ -449,7 +463,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      z-index: 10;
+      z-index: var(--h2-z-base);
     }
     .kg-dot {
       width: 9px;
@@ -483,7 +497,7 @@
       border-left: 1px solid var(--border-subtle);
       display: flex;
       flex-direction: column;
-      z-index: 20;
+      z-index: var(--h2-z-sticky);
       overflow-y: auto;
       padding: 16px;
     }
@@ -626,7 +640,7 @@
         width: 100%;
         max-width: 100%;
         height: 46px;
-        z-index: 80;
+        z-index: var(--h2-z-drawer);
         border-left: none;
         border-top: 2px solid var(--accent-cyan);
         border-radius: 14px 14px 0 0;
@@ -654,7 +668,7 @@
         position: sticky;
         top: 0;
         background: var(--bg-panel);
-        z-index: 5;
+        z-index: var(--h2-z-base);
         width: 100%;
         border-left: none;
         border-right: none;
@@ -690,7 +704,7 @@
           </span>
         </div>
         <div id="kgStatsBadge" class="num-tab" style="font-size:var(--fs-xs);color:#38bdf8;font-weight:600;margin-top:2px;">
-          Hệ thống 97yo-dev · Đang tải cấu trúc 17 Dự án &amp; 3 Nhánh Đào Tạo (347 Video)...
+          Hệ thống 97yo-dev · Đang tải cấu trúc 18 Dự án &amp; 3 Nhánh Đào Tạo (355 Video)...
         </div>
       </div>
     </div>
@@ -761,7 +775,7 @@
 
         <div class="nx-flow-col">
           <div class="nx-flow-col-header">
-            <span class="nx-flow-col-title">Cấp 4 · File Thực Thi & Video SKU</span>
+            <span class="nx-flow-col-title">Cấp 4 · File / Video / SOP / Kênh / Tool</span>
             <span class="nx-flow-col-count" id="colCount4">0</span>
           </div>
           <div class="nx-flow-col-body" id="colBody4"></div>
@@ -780,8 +794,8 @@
       <section id="nxGraphView" aria-label="Đồ thị mạng lưới Obsidian">
         <div class="kg-hud-bar">
           <div class="kg-hud-group" role="group" aria-label="Phạm vi hiển thị đồ thị">
-            <button type="button" class="kg-hud-btn is-active" id="btnScopeEgo" data-graph-scope="ego" title="Chỉ vẽ nút đang chọn, chuỗi gốc-đỉnh và các nút liên kết trực tiếp để nhìn rõ nhất">🎯 Mạch Tâm Điểm (Rõ Nét)</button>
-            <button type="button" class="kg-hud-btn" id="btnScopeGalaxy" data-graph-scope="galaxy" title="Vẽ toàn cảnh 4.246 nút phân cụm theo Dự án & Nhánh đào tạo">🌌 Toàn Cảnh 4.246 Nút</button>
+            <button type="button" class="kg-hud-btn is-active" id="btnScopeEgo" data-graph-scope="ego" title="Chỉ vẽ nút đang chọn, chuỗi gốc-đỉnh và các nút liên kết trực tiếp để nhìn rõ nhất"><svg class="kg-hud-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg><span>Mạch Tâm Điểm (Rõ Nét)</span></button>
+            <button type="button" class="kg-hud-btn" id="btnScopeGalaxy" data-graph-scope="galaxy" title="Vẽ toàn cảnh 4.799 nút phân cụm theo Dự án & Nhánh đào tạo"><svg class="kg-hud-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span id="btnScopeGalaxyLabel">Toàn Cảnh 4.799 Nút</span></button>
           </div>
           <div class="kg-hud-group" role="group" aria-label="Điều khiển thu phóng">
             <button type="button" class="kg-hud-btn" id="btnZoomIn" title="Phóng to đồ thị">＋</button>
@@ -793,7 +807,7 @@
         <div class="kg-legend" id="kgLegend">
           <span><i class="kg-dot" style="background:#f97316;"></i>Dự án</span>
           <span><i class="kg-dot" style="background:#eab308;"></i>Nhánh Data / Module</span>
-          <span><i class="kg-dot" style="background:#f43f5e;"></i>Chính sách &amp; Checklist</span>
+          <span><i class="kg-dot" style="background:#fda4af;"></i>Chính sách &amp; Checklist</span>
           <span><i class="kg-dot" style="background:#14b8a6;"></i>Thư mục / Ngách</span>
           <span><i class="kg-dot" style="background:#60a5fa;"></i>File Thực Thi</span>
           <span><i class="kg-dot" style="background:#38bdf8;"></i>Video SKU</span>
@@ -812,13 +826,13 @@
     <!-- Right Inspector Sidebar (Bottom-Sheet on Mobile) -->
     <aside class="nx-sidebar" id="kgInspector" aria-label="Chi tiết kiểm toán và liên kết mạch">
       <button type="button" class="nx-mobile-sheet-handle" id="nxMobileSheetToggle" style="display:none;" aria-expanded="false">
-        <span style="font-size:var(--fs-xs);font-weight:600;color:#38bdf8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:72%;" id="nxMobileSheetTitle">▲ Chi Tiết Kiểm Toán &amp; Liên Kết Mạch</span>
+        <span style="font-size:var(--fs-xs);font-weight:600;color:#38bdf8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:72%;" id="nxMobileSheetTitle" title="▲ Chi Tiết Kiểm Toán &amp; Liên Kết Mạch">▲ Chi Tiết Kiểm Toán &amp; Liên Kết Mạch</span>
         <span style="font-size:var(--fs-xs);color:#cbd5e1;flex-shrink:0;" id="nxMobileSheetStatus">Chạm mở chi tiết</span>
       </button>
       <div id="kgInspectorContent" style="padding-top:8px;"></div>
     </aside>
   </main>
 
-  <script src="/assets/app/graph-main.js?v=20261103-uifix102"></script>
+  <script src="/assets/app/graph-main.js?v=20261124-uifix105"></script>
 </body>
 </html>

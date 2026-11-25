@@ -13,7 +13,7 @@
     file: '#60a5fa',
     track: '#f87171',
     module: '#fbbf24',
-    policy: '#f43f5e',
+    policy: '#fda4af',
     checklist: '#fb7185',
     video: '#38bdf8',
     sop: '#818cf8',
@@ -234,7 +234,7 @@
     const sopAliases = (n.type === 'sop' && m.docId)
       ? `DOC_${m.docId} DOC-${m.docId} DOC-${String(m.docId).padStart(3, '0')} TL-${String(m.docId).padStart(2, '0')} TL-${String(m.docId).padStart(3, '0')}`
       : '';
-    const extraCodes = `${m.code || ''} ${m.nicheCode || ''} ${m.rawId || ''} ${Array.isArray(m.rawIds) ? m.rawIds.join(' ') : ''} ${m.handle || ''} ${sopAliases} ${Array.isArray(m.subNicheCodes) ? m.subNicheCodes.join(' ') : ''}`;
+    const extraCodes = `${m.code || ''} ${m.name || ''} ${m.niche || ''} ${m.contentNiche || ''} ${m.docCode || ''} ${m.module_id || ''} ${m.nicheCode || ''} ${m.channelId || ''} ${m.canonicalHandle || ''} ${Array.isArray(m.aliasHandles) ? m.aliasHandles.join(' ') : ''} ${m.rawId || ''} ${Array.isArray(m.rawIds) ? m.rawIds.join(' ') : ''} ${m.handle || ''} ${sopAliases} ${Array.isArray(m.subNicheCodes) ? m.subNicheCodes.join(' ') : ''}`;
     const rawHay = `${n.id} ${n.label} ${n.sku || ''} ${n.path || ''} ${pid} ${extraCodes}`.toLowerCase();
     if (rawHay.includes(searchQuery)) return true;
     const foldedHay = foldVi(rawHay);
@@ -418,9 +418,9 @@
       return (b.degree || 0) - (a.degree || 0);
     });
 
-    // Column 4: Core Files, Video SKUs & SOP Documents
+    // Column 4: Core Files, Video SKUs, SOP Documents, Channels & Tools
     const col4Items = nodes.filter(n => {
-      if (n.type !== 'file' && n.type !== 'video' && n.type !== 'sop') return false;
+      if (n.type !== 'file' && n.type !== 'video' && n.type !== 'sop' && n.type !== 'channel' && n.type !== 'tool') return false;
       if (!matchesTrackFilter(n)) return false;
       if (!searchQuery && lineageIds.has(n.id)) return true;
       if (!matchesSearch(n)) return false;
@@ -438,7 +438,7 @@
       }
       if (flowRootNode) {
         if (flowRootNode.type === 'project') return getProjectId(n) === flowRootNode.id || isDescendantOf(n.id, flowRootNode.id);
-        if (flowRootNode.type === 'track') return n.track === flowRootNode.track;
+        if (flowRootNode.type === 'track') return String(n.track || '').includes(flowRootNode.track);
       }
       return true;
     }).sort((a, b) => {
@@ -454,7 +454,7 @@
       const ins = inEdgesByTarget.get(selectedNode.id) || [];
       for (const e of outs) {
         const tgt = nodeById.get(e.target);
-        if (tgt && (!searchQuery || matchesSearch(tgt))) {
+        if (tgt && matchesTrackFilter(tgt) && (!searchQuery || matchesSearch(tgt))) {
           col5Cards.push({
             node: tgt,
             subtitle: `OUTBOUND [${e.relation}] → ${tgt.path || tgt.id}`
@@ -463,7 +463,7 @@
       }
       for (const e of ins) {
         const src = nodeById.get(e.source);
-        if (src && (!searchQuery || matchesSearch(src))) {
+        if (src && matchesTrackFilter(src) && (!searchQuery || matchesSearch(src))) {
           col5Cards.push({
             node: src,
             subtitle: `INBOUND [${e.relation}] ← ${src.path || src.id}`
@@ -486,7 +486,7 @@
 
     colCounts[4].textContent = String(col4Items.length);
     colBodies[4].innerHTML = col4Items.slice(0, 180).map(n => renderCardHtml(n, lineageIds)).join('') ||
-      renderEmptyBox('Không có File / Video SKU', 'Không có phần tử thực thi khớp bộ lọc.', Boolean(searchQuery));
+      renderEmptyBox('Không có File / Video / SOP / Kênh / Tool', 'Không có phần tử thực thi khớp bộ lọc.', Boolean(searchQuery));
 
     colCounts[5].textContent = String(col5Cards.length);
     colBodies[5].innerHTML = col5Cards.slice(0, 150).map(item =>
@@ -501,7 +501,7 @@
   // ============================================================================
   // MODE 2: OBSIDIAN NETWORK GRAPH CANVAS (EGO-CONSTELLATION + GALAXY CLUSTERS)
   // ============================================================================
-  let graphScope = 'ego'; // 'ego' (Mạch Tâm Điểm Rõ Nét) | 'galaxy' (Toàn Cảnh 4.246 Nút)
+  let graphScope = 'ego'; // 'ego' (Mạch Tâm Điểm Rõ Nét) | 'galaxy' (Toàn Cảnh 4.799 Nút)
   let egoPositions = new Map();
   let egoVisibleSet = new Set();
 
@@ -928,6 +928,7 @@
       const sheetTitleEl = document.getElementById('nxMobileSheetTitle');
       if (sheetTitleEl) {
         sheetTitleEl.textContent = '▲ Chi Tiết: Trống';
+        sheetTitleEl.title = sheetTitleEl.textContent;
       }
       return;
     }
@@ -937,16 +938,30 @@
     const ins = inEdgesByTarget.get(node.id) || [];
     const chain = getLineageChain(node);
 
+    const isSafeGraphHref = (u) => typeof u === 'string' && (/^https?:\/\//i.test(u) || /^\/(?!\/)/.test(u));
+    const isChannelNode = String(node.id || '').startsWith('channel:') || node.type === 'channel';
     const rawTargetLink = node.meta?.playerUrl || node.meta?.targetUrl || (node.type === 'video' && node.sku ? `/lotrinh/${encodeURIComponent(node.sku)}` : '');
-    const webTargetUrl = rawTargetLink
+    const normalizedTargetUrl = String(rawTargetLink || '').trim()
       .replace(/^\/player\.html\?sku=([^&]+).*$/i, '/lotrinh/$1')
       .replace(/([?&])sub=checklist\b/i, '$1sub=policy');
+    let webTargetUrl = isSafeGraphHref(normalizedTargetUrl) ? normalizedTargetUrl : '';
     const isSelfSodo = /^\/sodo(?:\?|$)/i.test(webTargetUrl);
-    const rawTargetUrl = node.meta?.rawUrl || '';
+    const rawTargetCandidate = String(node.meta?.rawUrl || '').trim();
+    const rawTargetUrl = isSafeGraphHref(rawTargetCandidate) ? rawTargetCandidate : '';
+    const chHandle = String(node.meta?.handle || (isChannelNode && /^@/.test(node.label || '') ? node.label : '')).trim();
+    const kenhMauUrl = (isChannelNode && chHandle)
+      ? `/kenh-mau?handle=${encodeURIComponent(chHandle.startsWith('@') ? chHandle : ('@' + chHandle))}`
+      : '';
+    if (isChannelNode && rawTargetUrl && kenhMauUrl) {
+      webTargetUrl = kenhMauUrl;
+    }
+    const webTargetLabel = isChannelNode && (/^\/kenh-mau/i.test(webTargetUrl) || rawTargetUrl)
+      ? 'Mở trên Kênh mẫu ↗'
+      : '↗ Mở Trên Web 97yo-dev';
     const sodoUrl = `/sodo?snode=${encodeURIComponent(node.id)}`;
     const playerBtn = `
       <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        ${webTargetUrl && !isSelfSodo ? `<a href="${esc(webTargetUrl)}" class="nx-chip" style="background:#0284c7;border-color:#38bdf8;color:#ffffff;font-weight:600;">↗ Mở Trên Web 97yo-dev</a>` : ''}
+        ${webTargetUrl && !isSelfSodo ? `<a href="${esc(webTargetUrl)}" class="nx-chip" style="background:#0284c7;border-color:#38bdf8;color:#ffffff;font-weight:600;">${webTargetLabel}</a>` : ''}
         ${rawTargetUrl ? `<a href="${esc(rawTargetUrl)}" class="nx-chip" style="background:rgba(16,185,129,0.22);border-color:#10b981;color:#34d399;font-weight:600;">📊 Hồ Sơ Raw Kênh</a>` : ''}
         <a href="${esc(sodoUrl)}" class="nx-chip" style="background:rgba(168,85,247,0.22);border-color:#a855f7;color:#e9d5ff;font-weight:600;">🧭 Xem ở Tab Sơ đồ DB</a>
         <button type="button" class="nx-chip js-copy-deeplink" data-node-id="${esc(node.id)}" style="background:rgba(30,41,59,0.9);border-color:rgba(148,163,184,0.35);color:#cbd5e1;">🔗 Copy Deep-Link</button>
@@ -983,7 +998,7 @@
 
       <div style="margin-bottom:16px;">
         <h3 style="font-size:var(--fs-xs);font-weight:600;color:#cbd5e1;margin:0 0 6px 0;">Lệnh Agent / CLI Truy Vết Tức Thì (&lt;15ms):</h3>
-        <code style="display:block;padding:8px 10px;background:#090d16;border:1px solid rgba(148,163,184,0.24);border-radius:6px;font-size:var(--fs-xs);color:#34d399;word-break:break-all;">${esc(cliCmd)}</code>
+        <code style="display:block;padding:8px 10px;background:var(--surface);border:1px solid rgba(148,163,184,0.24);border-radius:6px;font-size:var(--fs-xs);color:#34d399;word-break:break-all;">${esc(cliCmd)}</code>
       </div>
 
       <div style="margin-bottom:16px;">
@@ -1011,6 +1026,7 @@
     const sheetTitleEl = document.getElementById('nxMobileSheetTitle');
     if (sheetTitleEl) {
       sheetTitleEl.textContent = `▲ Chi Tiết: ${node.label}`;
+      sheetTitleEl.title = sheetTitleEl.textContent;
     }
   }
 
@@ -1416,6 +1432,7 @@
     }
     renderFlowchart();
     drawCanvas();
+    syncUrlState();
   });
 
   document.getElementById('kgResetZoom')?.addEventListener('click', () => {
@@ -1472,8 +1489,12 @@
   // ============================================================================
   function loadGraphData(preserveSelection) {
     return fetch('/data/knowledge_graph.json?t=' + Date.now(), { cache: 'no-store' })
-      .then(r => r.json())
+      .then(r => (r.ok ? r.json() : null))
       .then(data => {
+        if (!data) {
+          if (statsBadge) statsBadge.textContent = 'Không thể tải dữ liệu đồ thị';
+          return;
+        }
         const prevSelectedId = preserveSelection && selectedNode ? selectedNode.id : null;
         buildIndices(data);
         layoutGraph(nodes);
@@ -1497,7 +1518,12 @@
           const btnGal = document.getElementById('btnScopeGalaxy');
           if (btnGal && st.totalNodes) {
             const fmtNodes = String(st.totalNodes).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
-            btnGal.textContent = `🌌 Toàn Cảnh ${fmtNodes} Nút`;
+            const btnGalLabel = document.getElementById('btnScopeGalaxyLabel');
+            if (btnGalLabel) {
+              btnGalLabel.textContent = `Toàn Cảnh ${fmtNodes} Nút`;
+            } else {
+              btnGal.textContent = `Toàn Cảnh ${fmtNodes} Nút`;
+            }
             btnGal.title = `Vẽ toàn cảnh ${fmtNodes} nút phân cụm theo Dự án & Nhánh đào tạo`;
           }
           if (fInf) fInf.textContent = `Hạ tầng ${st.projects || 17} Dự án (${st.infraNodes || 0})`;
@@ -1510,7 +1536,7 @@
             legEl.innerHTML = [
               `<span><i class="kg-dot" style="background:#f97316;"></i>Dự án (${st.projects || 17})</span>`,
               `<span><i class="kg-dot" style="background:#eab308;"></i>Nhánh Data / Module (${(st.domains || 0) + (st.modules || 36)})</span>`,
-              `<span><i class="kg-dot" style="background:#f43f5e;"></i>Chính sách &amp; Checklist (${(st.policies || 12) + (st.checklists || 12)})</span>`,
+              `<span><i class="kg-dot" style="background:#fda4af;"></i>Chính sách &amp; Checklist (${(st.policies || 12) + (st.checklists || 12)})</span>`,
               `<span><i class="kg-dot" style="background:#14b8a6;"></i>Thư mục / Ngách (${(st.directories || 0) + (st.niches || 0)})</span>`,
               `<span><i class="kg-dot" style="background:#60a5fa;"></i>File Thực Thi (${st.files || 0})</span>`,
               `<span><i class="kg-dot" style="background:#38bdf8;"></i>Video SKU (${totalVids})</span>`,
@@ -1558,19 +1584,25 @@
       })
       .catch(err => {
         console.error('Failed to load knowledge_graph.json', err);
+        if (statsBadge) statsBadge.textContent = 'Lỗi tải dữ liệu đồ thị';
       });
   }
 
   forceSyncBtn?.addEventListener('click', () => {
     if (syncTextEl) syncTextEl.textContent = 'ĐANG QUÉT ĐỒNG BỘ...';
-    fetch('/api/kg/sync', { method: 'POST' })
-      .then(r => r.json())
+    fetch('/api/kg/sync', { method: 'POST', headers: { 'X-Requested-With': 'XMLHttpRequest' } })
+      .then(r => (r.ok ? r.json() : null))
       .then(res => {
-        if (res && res.syncVersion) lastSyncVersion = res.syncVersion;
+        if (!res) {
+          if (syncTextEl) syncTextEl.textContent = 'ĐỒNG BỘ THẤT BẠI';
+          return loadGraphData(true);
+        }
+        if (res.syncVersion) lastSyncVersion = res.syncVersion;
         if (syncTextEl) syncTextEl.textContent = 'ĐÃ ĐỒNG BỘ TỨC THÌ';
         return loadGraphData(true);
       })
-      .catch(() => {
+      .catch(err => {
+        console.error('Failed to sync knowledge graph', err);
         if (syncTextEl) syncTextEl.textContent = 'LIVE AUTO-SYNC';
         loadGraphData(true);
       });

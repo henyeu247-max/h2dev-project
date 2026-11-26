@@ -3,6 +3,46 @@
   let musicData = null;
   let currentFilter = 'all';
   let searchQuery = '';
+  let activeAudioEl = null;
+
+  function eqSvg() {
+    return '<svg class="h2-svg-anim h2-eq-bars" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><rect x="1" y="3" width="2.5" height="9" rx="1"/><rect x="5.5" y="1" width="2.5" height="11" rx="1"/><rect x="10" y="4" width="2.5" height="8" rx="1"/></svg>';
+  }
+
+  function syncNowPlayingUI() {
+    const modal = document.getElementById('music-studio-modal');
+    if (!modal) return;
+    const playingAudio = Array.from(modal.querySelectorAll('audio')).find(a => !a.paused && !a.ended) || null;
+    if (playingAudio) activeAudioEl = playingAudio;
+    const isPlaying = Boolean(playingAudio);
+
+    modal.querySelectorAll('.music-track-card').forEach(card => {
+      const cardAudio = card.querySelector('audio');
+      const match = Boolean(activeAudioEl && cardAudio === activeAudioEl && isPlaying);
+      card.classList.toggle('is-playing', match);
+      const eq = card.querySelector('.js-track-eq');
+      if (eq) eq.style.display = match ? 'inline-flex' : 'none';
+    });
+
+    const bar = modal.querySelector('#music-now-playing');
+    if (!bar) return;
+    if (!activeAudioEl || !activeAudioEl.isConnected) {
+      bar.classList.add('hidden');
+      return;
+    }
+    const card = activeAudioEl.closest('.music-track-card');
+    const title = (card && card.getAttribute('data-track-title')) || 'Đang phát nhạc nền';
+    const titleEl = bar.querySelector('#music-np-title');
+    const toggleBtn = bar.querySelector('#music-np-toggle');
+    const eqWrap = bar.querySelector('#music-np-eq');
+    if (titleEl) { titleEl.textContent = title; titleEl.title = title; }
+    if (eqWrap) eqWrap.style.display = isPlaying ? 'inline-flex' : 'none';
+    if (toggleBtn) {
+      toggleBtn.setAttribute('aria-label', isPlaying ? 'Tạm dừng' : 'Phát tiếp');
+      toggleBtn.innerHTML = isPlaying ? ico('pause', 14) : ico('play', 14);
+    }
+    bar.classList.remove('hidden');
+  }
 
   // Audio Singleton: chống phát chồng nhiều bài nhạc trong modal hoặc ngoài trang
   document.addEventListener('play', (e) => {
@@ -13,12 +53,22 @@
         try { audioEl.pause(); } catch (_) {}
       }
     });
+    activeAudioEl = target;
+    syncNowPlayingUI();
+  }, true);
+
+  document.addEventListener('pause', (e) => {
+    if (e.target && e.target.tagName === 'AUDIO') syncNowPlayingUI();
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.tagName === 'AUDIO') syncNowPlayingUI();
   }, true);
 
   async function loadMusicCatalog() {
     if (musicData) return musicData;
     try {
-      const res = await fetch('data/music_catalog.json?v=20261103-uifix102');
+      const res = await fetch('data/music_catalog.json?v=20261126-uifix110');
       musicData = await res.json();
       return musicData;
     } catch (e) {
@@ -30,6 +80,28 @@
   function esc(s) {
     if (globalThis.H2Core && typeof globalThis.H2Core.esc === 'function') return globalThis.H2Core.esc(s);
     return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  }
+
+  /* L3-XSS-02: strict media URL validator — allows only https?:// or safe relative/root-relative paths */
+  function safeMediaUrl(raw) {
+    const u = String(raw == null ? '' : raw).trim();
+    if (!u) return '';
+    // Reject control chars
+    if (/[\u0000-\u001F\u007F]/.test(u)) return '';
+    // Reject protocol-relative, UNC paths, scheme: (except https?://)
+    if (/^\/\//.test(u) || /^\\\\/.test(u)) return '';
+    // Reject anything with backtick, angle bracket, quotes, or &quot; / &#39; / &lt; / &gt; entities
+    if (/[`<>"']/.test(u) || /(&quot;|&#39;|&lt;|&gt;)/i.test(u)) return '';
+    // Allow https?://
+    if (/^https?:\/\//i.test(u)) return u;
+    // Allow root-relative paths that don't contain //
+    if (/^\/(?!\/)/.test(u) && !/\/\//.test(u)) return u;
+    // Allow relative paths without scheme: (no colon in first segment)
+    const head = u.split(/[/?#]/)[0];
+    if (/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(head) || head.includes(':')) return '';
+    // Reject if contains //
+    if (/\/\//.test(u)) return '';
+    return u;
   }
 
   /* Icon: uy quyen cho H2Core.ico (1 chuan duy nhat - ICON-MAPPING.md muc 1b).
@@ -60,9 +132,9 @@
       el.className = 'toast-msg js-music-toast';
       el.setAttribute('role', 'status');
       el.setAttribute('aria-live', 'polite');
-      document.body.appendChild(el);
+      const box = document.getElementById('toast-box') || document.body;
+      box.appendChild(el);
     }
-    el.style.zIndex = '100010';
     el.textContent = msg;
     if (el._h2Timer) clearTimeout(el._h2Timer);
     el._h2Timer = setTimeout(() => { el.remove(); }, 2200);
@@ -80,25 +152,26 @@
         ? icoColored('alert-triangle', 14, '#fca5a5') + ' BẢN QUYỀN'
         : icoColored('alert-circle', 14, '#fde68a') + ' THẬN TRỌNG');
     const rawSrc = t.streamUrl || ('assets/nhac-nen/' + (t.folder && t.folder !== 'Nhạc nền' ? t.folder + '/' : '') + t.fileName);
-    const streamSrc = rawSrc + (rawSrc.includes('?') ? '&' : '?') + 'v=20260922-g2';
+    const safeSrc = safeMediaUrl(rawSrc);
+    const streamSrc = safeSrc ? safeSrc + (safeSrc.includes('?') ? '&' : '?') + 'v=20261126-uifix110' : '';
 
     return `
-      <div style="background:var(--surface); border:1px solid ${isCopy ? '#7f1d1d' : 'var(--border-strong)'}; border-radius:0.75rem; padding:0.85rem 1rem; display:flex; flex-direction:column; gap:0.5rem; box-shadow:0 4px 14px rgba(0,0,0,0.35);">
+      <div class="music-track-card" data-track-id="${esc(t.id)}" data-track-title="${esc(t.fileName)}" style="border-color:${isCopy ? '#7f1d1d' : 'var(--border-strong)'};">
         <!-- Row 1: Badges + Download -->
         <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem; flex-wrap:wrap;">
           <div style="display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap; min-width:0;">
-            <span style="font-size: 12px; font-weight: 700; padding:0.1rem 0.4rem; border-radius:0.35rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#d8b4fe; font-family:monospace;">${esc(t.id)}</span>
+            <span style="font-size: 12px; font-weight: 700; padding:0.1rem 0.4rem; border-radius:0.35rem; background:rgba(226,2,58,0.16); border:1px solid rgba(226,2,58,0.45); color:#fda4af; font-family:monospace;">${esc(t.id)}</span>
             <span style="font-size: 12px; font-weight:700; padding:0.1rem 0.4rem; border-radius:0.35rem; ${badgeColor}">${badgeText}</span>
             <span style="font-size: 12px; color:var(--fg-muted); font-family:monospace;">${esc(t.durationFormatted)} • ${t.sizeMB} MB</span>
           </div>
-          <a href="${esc(streamSrc)}" download="${esc(t.fileName)}" style="flex-shrink:0; font-size: 12px; padding:0.25rem 0.6rem; border-radius:0.4rem; background:#2563eb; color:#fff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;">
+          ${streamSrc ? `<a href="${esc(streamSrc)}" download="${esc(t.fileName)}" class="btn-ghost" style="flex-shrink:0; font-size: 12px; padding:0.25rem 0.6rem; border-radius:0.4rem; background:var(--surface-2); border:1px solid var(--border-strong); color:#fff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;">
             ${ico('download', 14)} Tải MP3
-          </a>
+          </a>` : ''}
         </div>
 
         <!-- Row 2: Title -->
         <div>
-          <h4 style="font-size: 14px; font-weight:700; color:var(--fg); margin:0; word-break:break-word; line-height:1.35;" title="${esc(t.fileName)}">${esc(t.fileName)}</h4>
+          <h4 style="font-size: 14px; font-weight:700; color:var(--fg); margin:0; word-break:break-word; line-height:1.35; display:flex; align-items:center; gap:0.35rem;" title="${esc(t.fileName)}"><span class="js-track-eq" style="display:none; color:var(--brand); align-items:center;">${eqSvg()}</span><span>${esc(t.fileName)}</span></h4>
           ${t.detectedTitle ? `<div style="font-size: 12px; color:#f87171; font-weight:600; margin-top:0.15rem; display:flex; align-items:center; gap:0.2rem;">${ico('alert-triangle', 14)} <span>Phát hiện: ${esc(t.detectedTitle)}${t.detectedArtist ? ' — ' + esc(t.detectedArtist) : ''}</span></div>` : ''}
         </div>
 
@@ -110,14 +183,14 @@
             const nxQuery = /^long-form ambient$/i.test(firstSeg)
               ? 'H01'
               : (/^lịch sử đời sống$/i.test(firstSeg) ? 'H30' : firstSeg);
-            return `<div class="truncate"><strong style="color:var(--fg-muted);">Ngách:</strong> <a href="/ngachxanh?q=${encodeURIComponent(nxQuery)}" data-nx-q="${esc(nxQuery)}" class="js-music-niche-link" style="color:#38bdf8; font-weight:600; text-decoration:none;" title="Đối chiếu ngách ${esc(rawCat)} trên Tab Ngách Xanh">${esc(rawCat)} ↗</a></div>`;
+            return `<div class="truncate"><strong style="color:var(--fg-muted);">Ngách:</strong> <a href="/ngachxanh?q=${encodeURIComponent(nxQuery)}" data-nx-q="${esc(nxQuery)}" class="js-music-niche-link" style="display:inline-flex; align-items:center; padding:2px 0; color:#38bdf8; font-weight:600; text-decoration:none;" title="Đối chiếu ngách ${esc(rawCat)} trên Tab Ngách Xanh">${esc(rawCat)} ↗</a></div>`;
           })()}
           <div class="truncate" title="${esc(t.mood || t.moodDescription)}"><strong style="color:var(--fg-muted);">Mood:</strong> ${esc(t.mood || t.moodDescription)}</div>
         </div>
 
         <!-- Row 4: Audio Player -->
         <div style="margin-top:auto; padding-top:0.2rem;">
-          <audio controls preload="none" style="width:100%; height:34px; border-radius:0.35rem; outline:none;" src="${esc(streamSrc)}"></audio>
+          ${streamSrc ? `<audio controls preload="none" style="width:100%; height:34px; border-radius:0.35rem; outline:none;" src="${esc(streamSrc)}"></audio>` : `<div style="font-size:12px; color:var(--fg-muted); padding:0.25rem 0;">Không thể tải nhạc (URL không hợp lệ)</div>`}
         </div>
 
         <!-- Row 5: Footer & Copy Path (Chống tràn viền) -->
@@ -138,16 +211,18 @@
       else u.searchParams.delete('mfilter');
       if (isOpen && searchQuery && searchQuery.trim()) u.searchParams.set('mq', searchQuery.trim());
       else u.searchParams.delete('mq');
-      u.searchParams.delete('mopen');
+      if (isOpen) u.searchParams.set('mopen', '1');
+      else u.searchParams.delete('mopen');
       history.replaceState(history.state, '', u.pathname + u.search + u.hash);
     } catch (_) {}
   }
 
-  window.openMusicStudioModal = async function(initialFilter = 'all', initialQuery = '') {
+  window.openMusicStudioModal = async function(initialFilter = 'all', initialQuery = '', _triggerEl = null) {
+    /* L4-A11Y-02: Capture trigger element SYNCHRONOUSLY before any await, so focus can be restored on close */
+    const _prevActive = _triggerEl || (document.activeElement && document.activeElement !== document.body ? document.activeElement : null) || document.getElementById('btn-music-studio');
     currentFilter = initialFilter || 'all';
-    if (typeof initialQuery === 'string' && initialQuery !== '') {
-      searchQuery = initialQuery;
-    }
+    // uifix103: luôn reset searchQuery để xóa filter cũ khi mở lại modal không có query
+    searchQuery = typeof initialQuery === 'string' ? initialQuery : '';
     const cat = await loadMusicCatalog();
     if (!cat || !cat.tracks) {
       showToast('Không thể tải kho nhạc nền. Vui lòng thử lại!');
@@ -173,6 +248,7 @@
           modal.style.display = 'none';
           document.body.style.overflow = '';
           modal.querySelectorAll('audio').forEach(a => { a.pause(); a.currentTime = 0; });
+          syncMusicUrlState(false);
           const targetHref = navLink.getAttribute('href') || '';
           if (targetHref && typeof window.navigateDirectUrl === 'function' && !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey) {
             e.preventDefault();
@@ -184,7 +260,12 @@
         if (copyBtn) {
           const path = copyBtn.getAttribute('data-copy-path') || '';
           const id = copyBtn.getAttribute('data-copy-id') || '';
-          if (navigator.clipboard && navigator.clipboard.writeText) {
+          if (globalThis.H2Core && typeof globalThis.H2Core.copyWithFeedback === 'function') {
+            globalThis.H2Core.copyWithFeedback(copyBtn, path, {
+              successLabel: 'Đã copy',
+              toastMsg: 'Đã copy đường dẫn local: ' + id
+            });
+          } else if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(path)
               .then(() => showToast('Đã copy đường dẫn local: ' + id))
               .catch(() => showToast('Không copy được path: ' + id));
@@ -197,6 +278,8 @@
           modal.style.display = 'none';
           document.body.style.overflow = '';
           modal.querySelectorAll('audio').forEach(a => { a.pause(); a.currentTime = 0; });
+          activeAudioEl = null;
+          syncNowPlayingUI();
           syncMusicUrlState(false);
           if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
             try { modal._prevActiveElement.focus(); } catch (err) {}
@@ -204,11 +287,10 @@
         }
       };
     }
-    modal._prevActiveElement = document.activeElement;
 
-    function renderModalBody() {
+    function getFilteredTracks() {
       const q = searchQuery.toLowerCase().trim();
-      const filtered = cat.tracks.filter(t => {
+      return cat.tracks.filter(t => {
         const cn = (t.categoryNiche || '').toLowerCase();
         if (currentFilter === 'safe' && t.copyrightRisk !== 'SAFE') return false;
         if (currentFilter === 'copyrighted' && t.copyrightRisk !== 'COPYRIGHTED') return false;
@@ -222,7 +304,6 @@
         if (currentFilter === 'wildlife' && (!cn.includes('sinh tồn'))) return false;
         if (currentFilter === 'military' && (!cn.includes('quân sự') && !cn.includes('chiến tranh') && !cn.includes('mars'))) return false;
         if (currentFilter === 'ambient' && (!cn.includes('long-form') && (t.durationSeconds || 0) < 600)) return false;
-
         if (!q) return true;
         const hay = [
           t.id || '',
@@ -238,7 +319,9 @@
         /* FIX 2026-09-30 (UI-01): tim khong dau dung chung hop dong voi H2SearchCore. */
         return (globalThis.H2SearchCore && H2SearchCore.includes) ? H2SearchCore.includes(hay, q) : hay.includes(q);
       });
+    }
 
+    function getCountMap() {
       const totalCount = cat.tracks.length;
       const safeCount = cat.tracks.filter(t => t.copyrightRisk === 'SAFE').length;
       const reviewCount = cat.tracks.filter(t => t.copyrightRisk === 'REVIEW').length;
@@ -253,33 +336,39 @@
       const militaryCount = cat.tracks.filter(t => { const cn = (t.categoryNiche || '').toLowerCase(); return cn.includes('quân sự') || cn.includes('chiến tranh') || cn.includes('mars'); }).length;
       const ambientCount = cat.tracks.filter(t => { const cn = (t.categoryNiche || '').toLowerCase(); return cn.includes('long-form') || (t.durationSeconds || 0) >= 600; }).length;
       const nicheCount = new Set(cat.tracks.map(t => t.categoryNiche || 'Khác')).size;
+      return { totalCount, safeCount, reviewCount, copyCount, historyCount, cophongCount, darkcrimeCount, animationCount, prophecyCount, philosophyCount, wildlifeCount, militaryCount, ambientCount, nicheCount };
+    }
 
+    // uifix103: renderModalShell — xây dựng khung cố định 1 lần (khi modal.innerHTML rỗng)
+    // KHÔNG gọi lại khi chỉ thay đổi searchQuery hoặc filter chip.
+    function renderModalShell(cm) {
+      const { totalCount, safeCount, reviewCount, copyCount, historyCount, cophongCount, darkcrimeCount, animationCount, prophecyCount, philosophyCount, wildlifeCount, militaryCount, ambientCount, nicheCount } = cm;
       modal.innerHTML = `
         <div style="position:relative; width:100%; max-width:1180px; max-height:92vh; background:var(--bg); border:1px solid var(--border-strong); border-radius:1rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 60px rgba(0,0,0,0.95);">
           <!-- Compact Header -->
           <div style="display:flex; align-items:center; justify-content:space-between; padding:0.8rem 1.1rem; background:var(--surface); border-bottom:1px solid var(--border-strong); gap:0.75rem; flex-shrink:0;">
             <div style="min-width:0; flex:1;">
               <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap;">
-                <span style="color:#a855f7;display:inline-flex;align-items:center;">${ico('headphones', 24)}</span>
+                <span style="color:var(--brand);display:inline-flex;align-items:center;">${ico('headphones', 24)}</span>
                 <h3 style="font-size: 16px; font-weight: 700; color:#fff; margin:0;" class="truncate">Trạm Nhạc Nền ${nicheCount} Ngách YouTube</h3>
-                <span style="font-size: 12px; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.35rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#e9d5ff;">${totalCount} Tracks (${safeCount} SAFE YPP)</span>
-                <a href="/sodo?snode=track:h2dev" class="js-music-sodo-link" style="font-size:12px; font-weight:700; padding:0.15rem 0.55rem; border-radius:0.35rem; background:var(--surface-2); border:1px solid var(--border-strong); color:#38bdf8; text-decoration:none;">Sơ đồ DB ↗</a>
+                <span style="font-size: 12px; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.35rem; background:rgba(226,2,58,0.16); border:1px solid rgba(226,2,58,0.45); color:#fda4af;">${totalCount} Tracks (${safeCount} SAFE YPP)</span>
+                <a href="/sodo?snode=track:h2dev" class="js-music-sodo-link" style="display:inline-flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; padding:0.15rem 0.55rem; border-radius:0.35rem; background:var(--surface-2); border:1px solid var(--border-strong); color:#38bdf8; text-decoration:none;">Sơ đồ DB ↗</a>
               </div>
             </div>
-            <button type="button" id="close-music-studio" style="width:38px; height:38px; border-radius:50%; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 14px; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;" aria-label="Đóng Trạm Nhạc Nền" title="Đóng [Esc]">${ico('x', 16)}</button>
+            <button type="button" id="close-music-studio" style="width:44px; height:44px; border-radius:50%; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 14px; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;" aria-label="Đóng Trạm Nhạc Nền" title="Đóng [Esc]">${ico('x', 16)}</button>
           </div>
 
           <!-- Sticky Search & Filter Toolbar -->
           <div style="padding:0.65rem 1.1rem; background:var(--surface); border-bottom:1px solid var(--border-strong); display:flex; flex-direction:column; gap:0.5rem; flex-shrink:0;">
             <!-- Search Bar with built-in clear -->
             <div style="position:relative; display:flex; align-items:center;">
-              <input type="text" id="music-search" placeholder="Tìm mã (MUSIC-046), tên bài, mood, nhạc cụ..." value="${esc(searchQuery)}" style="width:100%; background:var(--surface); border:1px solid var(--border-strong); border-radius:0.5rem; padding:0.45rem 2rem 0.45rem 0.75rem; font-size: 13px; color:#fff; outline:none;">
-              ${searchQuery ? `<button type="button" id="music-reset" style="position:absolute; right:8px; background:none; border:none; color:var(--fg-muted); font-size: 14px; cursor:pointer; padding:2px 6px; display:inline-flex; align-items:center;">${ico('x', 14)}</button>` : ''}
+              <input type="text" id="music-search" aria-label="Tìm kiếm nhạc nền" placeholder="Tìm mã (MUSIC-046), tên bài, mood, nhạc cụ..." value="${esc(searchQuery)}" style="width:100%; background:var(--surface); border:1px solid var(--border-strong); border-radius:0.5rem; padding:0.45rem 2.75rem 0.45rem 0.75rem; font-size: 13px; color:#fff; outline:none;">
+              <button type="button" id="music-reset" aria-label="Xóa từ khóa tìm kiếm nhạc nền" title="Xóa tìm kiếm" style="position:absolute; right:4px; width:36px; height:36px; justify-content:center; background:none; border:none; color:var(--fg-muted); font-size: 14px; cursor:pointer; padding:0; display:${searchQuery ? 'inline-flex' : 'none'}; align-items:center;">${ico('x', 14)}</button>
             </div>
 
             <!-- Mobile-Friendly Dropdown Selector -->
             <div class="mobile-only-filter">
-              <select id="mobile-mfilter-select" style="width:100%; background:var(--surface); border:1px solid var(--border-strong); border-radius:0.5rem; padding:0.42rem 0.65rem; font-size: 12px; color:#fff; font-weight:600; outline:none;">
+              <select id="mobile-mfilter-select" aria-label="Lọc nhạc nền theo ngách và trạng thái YPP" style="width:100%; background:var(--surface); border:1px solid var(--border-strong); border-radius:0.5rem; padding:0.42rem 0.65rem; font-size: 12px; color:#fff; font-weight:600; outline:none;">
                 <option value="all" ${currentFilter==='all'?'selected':''}>Tất cả (${totalCount})</option>
                 <option value="safe" ${currentFilter==='safe'?'selected':''}>100% SAFE YPP (${safeCount})</option>
                 <option value="cophong" ${currentFilter==='cophong'?'selected':''}>Cổ Trang / Tiên Hiệp (${cophongCount})</option>
@@ -296,14 +385,14 @@
               </select>
             </div>
 
-            <!-- Chip bar: xuong dong trong khung (UI-fix 2026-10-09). Truoc day vuot ngang, chip cuoi bi cat o mep. -->
-            <div style="display:flex; flex-wrap:wrap; gap:0.35rem; padding-bottom:0.15rem;">
-              <button type="button" data-mfilter="all" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; border:1px solid ${currentFilter==='all'?'#a855f7':'var(--border-strong)'}; background:${currentFilter==='all'?'#7e22ce':'var(--surface)'}; color:#fff;">Tất cả (${totalCount})</button>
+            <!-- Chip bar: xuong dong trong khung (UI-fix 2026-10-09). -->
+            <div id="music-chip-bar" style="display:flex; flex-wrap:wrap; gap:0.35rem; padding-bottom:0.15rem;">
+              <button type="button" data-mfilter="all" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; border:1px solid ${currentFilter==='all'?'var(--brand)':'var(--border-strong)'}; background:${currentFilter==='all'?'var(--brand)':'var(--surface)'}; color:#fff;">Tất cả (${totalCount})</button>
               <button type="button" data-mfilter="safe" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='safe'?'#10b981':'var(--border-strong)'}; background:${currentFilter==='safe'?'#047857':'var(--surface)'}; color:#6ee7b7;">${icoColored('shield-check',14,'#6ee7b7')} SAFE (${safeCount})</button>
               <button type="button" data-mfilter="cophong" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='cophong'?'#ec4899':'var(--border-strong)'}; background:${currentFilter==='cophong'?'#be185d':'var(--surface)'}; color:#fbcfe8;">${icoColored('drama',14,'#fbcfe8')} Cổ Trang (${cophongCount})</button>
               <button type="button" data-mfilter="darkcrime" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='darkcrime'?'#f59e0b':'var(--border-strong)'}; background:${currentFilter==='darkcrime'?'#b45309':'var(--surface)'}; color:#fde68a;">${icoColored('fingerprint',14,'#fde68a')} Dark Crime (${darkcrimeCount})</button>
               <button type="button" data-mfilter="history" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='history'?'#38bdf8':'var(--border-strong)'}; background:${currentFilter==='history'?'#0369a1':'var(--surface)'}; color:#bae6fd;">${icoColored('landmark',14,'#bae6fd')} Lịch sử (${historyCount})</button>
-              <button type="button" data-mfilter="animation" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='animation'?'#8b5cf6':'var(--border-strong)'}; background:${currentFilter==='animation'?'#6d28d9':'var(--surface)'}; color:#ddd6fe;">${icoColored('sparkles',14,'#ddd6fe')} Hoạt hình (${animationCount})</button>
+              <button type="button" data-mfilter="animation" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='animation'?'#38bdf8':'var(--border-strong)'}; background:${currentFilter==='animation'?'#0369a1':'var(--surface)'}; color:#bae6fd;">${icoColored('sparkles',14,'#bae6fd')} Hoạt hình (${animationCount})</button>
               <button type="button" data-mfilter="philosophy" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='philosophy'?'#38bdf8':'var(--border-strong)'}; background:${currentFilter==='philosophy'?'#0369a1':'var(--surface)'}; color:#bae6fd;">${icoColored('moon',14,'#bae6fd')} Triết lý (${philosophyCount})</button>
               <button type="button" data-mfilter="prophecy" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='prophecy'?'#38bdf8':'var(--border-strong)'}; background:${currentFilter==='prophecy'?'#0369a1':'var(--surface)'}; color:#bae6fd;">${icoColored('wand-sparkles',14,'#bae6fd')} Tiên tri (${prophecyCount})</button>
               <button type="button" data-mfilter="wildlife" style="padding:0.25rem 0.65rem; border-radius:0.4rem; font-size: 12px; font-weight:700; cursor:pointer; flex-shrink:0; display:inline-flex; align-items:center; gap:0.25rem; border:1px solid ${currentFilter==='wildlife'?'#38bdf8':'var(--border-strong)'}; background:${currentFilter==='wildlife'?'#0369a1':'var(--surface)'}; color:#bae6fd;">${icoColored('paw-print',14,'#bae6fd')} Sinh tồn (${wildlifeCount})</button>
@@ -316,35 +405,106 @@
 
           <!-- Cards Grid -->
           <div class="music-studio-grid" style="flex:1; overflow-y:auto; padding:1rem; display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:0.85rem; align-content:start;">
-            ${filtered.length ? filtered.map(renderTrackCard).join('') : `<div style="grid-column:1/-1; text-align:center; padding:3rem 1rem; color:var(--fg-muted); font-size: 14px;"><div>Không tìm thấy bài hát nào phù hợp bộ lọc</div><button type="button" id="music-empty-reset" style="margin-top:0.75rem; padding:0.4rem 0.9rem; border-radius:0.5rem; background:#7e22ce; border:1px solid #a855f7; color:#fff; font-size:12px; font-weight:700; cursor:pointer;">Xóa bộ lọc &amp; Xem tất cả (${totalCount})</button></div>`}
+          </div>
+
+          <!-- Sticky Now-Playing Mini-Bar -->
+          <div id="music-now-playing" class="music-now-playing hidden">
+            <div style="display:flex; align-items:center; gap:0.5rem; min-width:0; flex:1;">
+              <span id="music-np-eq" style="color:var(--brand); display:inline-flex; align-items:center; flex-shrink:0;">${eqSvg()}</span>
+              <span id="music-np-title" class="truncate" style="font-size:13px; font-weight:700; color:#fff;"></span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.35rem; flex-shrink:0;">
+              <button type="button" id="music-np-prev" class="btn-ghost" aria-label="Bài trước" style="min-height:36px; min-width:36px; padding:0 0.5rem; border-radius:0.5rem; border:1px solid var(--border-strong); background:var(--surface); color:var(--fg); display:inline-flex; align-items:center; justify-content:center;">${ico('chevron-left', 14)}</button>
+              <button type="button" id="music-np-toggle" class="h2-btn h2-btn--brand h2-btn--sm" aria-label="Tạm dừng" style="min-height:36px; min-width:36px; padding:0 0.7rem;">${ico('pause', 14)}</button>
+              <button type="button" id="music-np-next" class="btn-ghost" aria-label="Bài tiếp" style="min-height:36px; min-width:36px; padding:0 0.5rem; border-radius:0.5rem; border:1px solid var(--border-strong); background:var(--surface); color:var(--fg); display:inline-flex; align-items:center; justify-content:center;">${ico('chevron-right', 14)}</button>
+            </div>
           </div>
         </div>
       `;
+      _bindShellEvents();
+    }
 
+    // uifix103: updateModalList — chỉ cập nhật .music-studio-grid + chip styles + nút reset
+    // KHÔNG tạo lại #music-search hay phá <audio> đang phát.
+    function updateModalList() {
+      const cm = getCountMap();
+      const filtered = getFilteredTracks();
+      const { totalCount } = cm;
+
+      // Update grid
+      const grid = modal.querySelector('.music-studio-grid');
+      if (grid) {
+        grid.innerHTML = filtered.length
+          ? filtered.map(renderTrackCard).join('')
+          : `<div style="grid-column:1/-1; text-align:center; padding:3rem 1rem; color:var(--fg-muted); font-size: 14px;"><div>Không tìm thấy bài hát nào phù hợp bộ lọc</div><button type="button" id="music-empty-reset" style="margin-top:0.75rem; padding:0.4rem 0.9rem; border-radius:0.5rem; background:var(--brand); border:1px solid var(--brand); color:#fff; font-size:12px; font-weight:700; cursor:pointer;">Xóa bộ lọc &amp; Xem tất cả (${totalCount})</button></div>`;
+        const emptyResetBtn = grid.querySelector('#music-empty-reset');
+        if (emptyResetBtn) emptyResetBtn.onclick = () => {
+          searchQuery = '';
+          currentFilter = 'all';
+          const musicSearch = modal.querySelector('#music-search');
+          if (musicSearch) musicSearch.value = '';
+          const mobileSelect = modal.querySelector('#mobile-mfilter-select');
+          if (mobileSelect) mobileSelect.value = 'all';
+          syncMusicUrlState(true);
+          updateModalList();
+        };
+      }
+
+      // Update reset button visibility
+      const resetBtn = modal.querySelector('#music-reset');
+      if (resetBtn) resetBtn.style.display = searchQuery ? 'inline-flex' : 'none';
+
+      // Update chip active styles
+      modal.querySelectorAll('[data-mfilter]').forEach(b => {
+        const val = b.getAttribute('data-mfilter') || 'all';
+        const isActive = val === currentFilter;
+        // minimal: toggle border/background color based on active state
+        // (chip styles already set in innerHTML; just update border/bg for active chip)
+        const chipColors = {
+          all:         { border: 'var(--brand)', bg: 'var(--brand)' },
+          safe:        { border: '#10b981', bg: '#047857' },
+          cophong:     { border: '#ec4899', bg: '#be185d' },
+          darkcrime:   { border: '#f59e0b', bg: '#b45309' },
+          history:     { border: '#38bdf8', bg: '#0369a1' },
+          animation:   { border: '#38bdf8', bg: '#0369a1' },
+          philosophy:  { border: '#38bdf8', bg: '#0369a1' },
+          prophecy:    { border: '#38bdf8', bg: '#0369a1' },
+          wildlife:    { border: '#38bdf8', bg: '#0369a1' },
+          military:    { border: '#38bdf8', bg: '#0369a1' },
+          ambient:     { border: '#38bdf8', bg: '#0369a1' },
+          review:      { border: '#f59e0b', bg: '#92400e' },
+          copyrighted: { border: '#ef4444', bg: '#b91c1c' },
+        };
+        const c = chipColors[val] || { border: 'var(--border-strong)', bg: 'var(--surface)' };
+        b.style.borderColor = isActive ? c.border : 'var(--border-strong)';
+        b.style.background  = isActive ? c.bg   : 'var(--surface)';
+      });
+
+      // Update mobile select
+      const mobileSelect = modal.querySelector('#mobile-mfilter-select');
+      if (mobileSelect) mobileSelect.value = currentFilter;
+    }
+
+    function _bindShellEvents() {
       const searchInput = modal.querySelector('#music-search');
       if (searchInput) {
         searchInput.oninput = (e) => {
           searchQuery = e.target.value;
           syncMusicUrlState(true);
-          renderModalBody();
-          const nextInput = modal.querySelector('#music-search');
-          if (nextInput) { nextInput.focus(); nextInput.setSelectionRange(nextInput.value.length, nextInput.value.length); }
+          updateModalList();
+          // giữ focus và con trỏ — KHÔNG gọi renderModalBody (tránh destroy #music-search)
         };
       }
       const resetBtn = modal.querySelector('#music-reset');
       if (resetBtn) {
-        resetBtn.onclick = () => { searchQuery = ''; syncMusicUrlState(true); renderModalBody(); };
-      }
-      const emptyResetBtn = modal.querySelector('#music-empty-reset');
-      if (emptyResetBtn) {
-        emptyResetBtn.onclick = () => { searchQuery = ''; currentFilter = 'all'; syncMusicUrlState(true); renderModalBody(); };
+        resetBtn.onclick = () => { searchQuery = ''; syncMusicUrlState(true); if (searchInput) { searchInput.value = ''; } updateModalList(); };
       }
       const mobileSelect = modal.querySelector('#mobile-mfilter-select');
       if (mobileSelect) {
         mobileSelect.onchange = () => {
           currentFilter = mobileSelect.value;
           syncMusicUrlState(true);
-          renderModalBody();
+          updateModalList();
         };
       }
       modal.querySelectorAll('[data-mfilter]').forEach(b => {
@@ -352,9 +512,41 @@
           const val = b.getAttribute('data-mfilter') || 'all';
           currentFilter = (val !== 'all' && currentFilter === val) ? 'all' : val;
           syncMusicUrlState(true);
-          renderModalBody();
+          updateModalList();
         };
       });
+      const stepTrack = (delta) => {
+        const audios = Array.from(modal.querySelectorAll('.music-studio-grid audio'));
+        if (!audios.length) return;
+        const curIdx = activeAudioEl ? audios.indexOf(activeAudioEl) : -1;
+        const nextIdx = curIdx === -1 ? 0 : (curIdx + delta + audios.length) % audios.length;
+        const nextAudio = audios[nextIdx];
+        if (nextAudio) {
+          try { nextAudio.scrollIntoView({ block: 'nearest' }); } catch (_) {}
+          const p = nextAudio.play();
+          if (p && typeof p.catch === 'function') p.catch(() => {});
+        }
+      };
+      const npToggle = modal.querySelector('#music-np-toggle');
+      const npPrev = modal.querySelector('#music-np-prev');
+      const npNext = modal.querySelector('#music-np-next');
+      if (npToggle) npToggle.onclick = () => {
+        if (!activeAudioEl) return stepTrack(0);
+        if (activeAudioEl.paused) {
+          const p = activeAudioEl.play();
+          if (p && typeof p.catch === 'function') p.catch(() => {});
+        } else {
+          activeAudioEl.pause();
+        }
+      };
+      if (npPrev) npPrev.onclick = () => stepTrack(-1);
+      if (npNext) npNext.onclick = () => stepTrack(1);
+    }
+
+    function renderModalBody() {
+      const cm = getCountMap();
+      renderModalShell(cm);
+      updateModalList();
     }
 
     renderModalBody();
@@ -362,7 +554,7 @@
     /* UI-07 (2026-09-28): capture trigger khi mo + focus vao trong modal
        (close o dong 148 da restore _prevActiveElement nhung trc day khong ai gan).
        Escape + Tab-trap cho modal nay da co o global keydown (main.js muc Global Shortcuts). */
-    modal._prevActiveElement = document.activeElement;
+    modal._prevActiveElement = _prevActive;
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
     if (globalThis.H2Core && typeof globalThis.H2Core.focusModal === 'function') {
@@ -377,7 +569,8 @@
       e.stopPropagation();
       const mfilter = btn.getAttribute('data-music-filter') || 'all';
       const mq = btn.getAttribute('data-music-query') || '';
-      window.openMusicStudioModal(mfilter, mq);
+      /* L4-A11Y-02: pass btn synchronously as trigger before async loadMusicCatalog */
+      window.openMusicStudioModal(mfilter, mq, btn);
     }
   }, true);
 })();

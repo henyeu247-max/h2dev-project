@@ -64,23 +64,69 @@ async function mapPool(items, concurrency, worker) {
   });
 
   try {
+    const rawCatalog = JSON.parse(fs.readFileSync(path.join(PROJECT_ROOT, 'data-tabs', 'raw-kenh-mau.json'), 'utf8'));
+    const rawRecords = Array.isArray(rawCatalog) ? rawCatalog : (Array.isArray(rawCatalog.records) ? rawCatalog.records : []);
+    const EXPECTED_TOTAL = rawRecords.length;
+    const PAGE_SIZE = 24;
+    const EXPECTED_PAGE1 = Math.min(PAGE_SIZE, EXPECTED_TOTAL);
+    const EXPECTED_PAGES = Math.max(1, Math.ceil(EXPECTED_TOTAL / PAGE_SIZE));
+
     const rawUrl = BASE.replace(/\/$/, '') + '/rawkenh';
-    console.log(`Navigating to ${rawUrl}...`);
+    console.log(`Navigating to ${rawUrl}... (expected ${EXPECTED_TOTAL} records across ${EXPECTED_PAGES} pages of ${PAGE_SIZE})`);
     await page.goto(rawUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
-    await page.waitForTimeout(2000);
+    await page.waitForSelector('article[data-raw-card]', { timeout: 20000 });
+    await page.waitForTimeout(800);
 
-    const allCards = page.locator('article[data-raw-card]');
-    const count = await allCards.count();
-    add('Raw Channels Cards Count', count === 124, `Expected 124, got ${count}`);
-    assert(count === 124, `Expected 124 raw cards, got ${count}`);
+    const page1Cards = page.locator('article[data-raw-card]');
+    const page1Count = await page1Cards.count();
+    add('Raw Channels Page 1 Cards Count', page1Count === EXPECTED_PAGE1, `Expected ${EXPECTED_PAGE1}, got ${page1Count}`);
+    assert(page1Count === EXPECTED_PAGE1, `Expected ${EXPECTED_PAGE1} raw cards on page 1, got ${page1Count}`);
 
-    const imgUrls = await page.evaluate(() => {
-      const cards = document.querySelectorAll('article[data-raw-card]');
-      return Array.from(cards).map((c) => ({
-        id: c.getAttribute('data-raw-card'),
-        src: c.querySelector('img')?.src || '',
-      }));
-    });
+    const seenById = new Map();
+    const collectCurrentPageCards = async () => {
+      const items = await page.evaluate(() => {
+        const cards = document.querySelectorAll('article[data-raw-card]');
+        return Array.from(cards).map((c) => {
+          const rect = c.getBoundingClientRect();
+          const st = window.getComputedStyle(c);
+          return {
+            id: c.getAttribute('data-raw-card'),
+            src: c.querySelector('img')?.src || '',
+            visible: st.display !== 'none' && st.visibility !== 'hidden' && rect.width > 0 && rect.height > 0,
+            preview: (c.innerText || '').split('\n')[0] || '',
+          };
+        });
+      });
+      for (const it of items) {
+        if (it.id && !seenById.has(it.id)) seenById.set(it.id, it);
+      }
+      return items.length;
+    };
+
+    await collectCurrentPageCards();
+    for (let p = 2; p <= EXPECTED_PAGES; p++) {
+      const nextBtn = page.locator(`button[data-action="raw-page"][data-page="${p}"]`).first();
+      await nextBtn.click();
+      await page.waitForFunction(
+        (targetPage) => {
+          const nav = document.querySelector('nav[aria-label^="Phân trang hồ sơ raw"]');
+          return Boolean(nav && nav.textContent && nav.textContent.includes(`Trang ${targetPage}/`));
+        },
+        p,
+        { timeout: 15000 }
+      );
+      await page.waitForTimeout(150);
+      await collectCurrentPageCards();
+    }
+
+    add(
+      'Raw Channels Total Paginated Cards Count',
+      seenById.size === EXPECTED_TOTAL,
+      `Expected ${EXPECTED_TOTAL} across ${EXPECTED_PAGES} pages, got ${seenById.size}`
+    );
+    assert(seenById.size === EXPECTED_TOTAL, `Expected ${EXPECTED_TOTAL} raw cards across pages, got ${seenById.size}`);
+
+    const imgUrls = Array.from(seenById.values()).map((it) => ({ id: it.id, src: it.src }));
 
     const broken = [];
     let ok = 0;
@@ -123,19 +169,18 @@ async function mapPool(items, concurrency, worker) {
     });
 
     add(
-      'All 124 Images Return HTTP 200',
-      broken.length === 0 && ok === 124,
-      `Loaded: ${ok}/124, Broken: ${broken.length}`
+      `All ${EXPECTED_TOTAL} Images Return HTTP 200`,
+      broken.length === 0 && ok === EXPECTED_TOTAL,
+      `Loaded: ${ok}/${EXPECTED_TOTAL}, Broken: ${broken.length}`
     );
-    assert(broken.length === 0 && ok === 124, `Broken images: ${JSON.stringify(broken).slice(0, 2000)}`);
+    assert(broken.length === 0 && ok === EXPECTED_TOTAL, `Broken images: ${JSON.stringify(broken).slice(0, 2000)}`);
 
     const testIds = ['RAW-110', 'RAW-114', 'RAW-117', 'RAW-121', 'RAW-124', 'RAW-136'];
     for (const tid of testIds) {
-      const card = page.locator(`article[data-raw-card="${tid}"]`);
-      const visible = await card.isVisible();
-      const txt = await card.innerText();
-      add(`New Channel ${tid} Visible in DOM`, visible, `Preview: ${txt.split('\n')[0]}`);
-      assert(visible, `Card ${tid} should be visible`);
+      const rec = seenById.get(tid);
+      const visible = Boolean(rec && rec.visible);
+      add(`Channel ${tid} Visible Across Pages`, visible, `Preview: ${rec ? rec.preview : 'MISSING'}`);
+      assert(visible, `Card ${tid} should be visible in paginated DOM`);
     }
 
     const searchInput = page.locator('#fq, #raw-search-input, input.search-input-premium').first();
@@ -157,7 +202,9 @@ async function mapPool(items, concurrency, worker) {
     }
 
     add('Zero Console Errors', results.consoleErrors.length === 0, `Errors: ${results.consoleErrors.length}`);
+    assert(results.consoleErrors.length === 0, `Console errors: ${results.consoleErrors.join('; ')}`);
     add('Zero Failed Network Requests', results.failedRequests.length === 0, `Failed: ${results.failedRequests.length}`);
+    assert(results.failedRequests.length === 0, `Failed requests: ${JSON.stringify(results.failedRequests)}`);
 
     await page.screenshot({ path: OUT_PNG, fullPage: false });
     add('Screenshot Proof Captured', fs.existsSync(OUT_PNG), OUT_PNG);

@@ -154,7 +154,7 @@ function statCard(icon, label, value, sub, tabTarget, live, extraAttrs) {
    *   khong chua <svg>), icon se BI ESCAPE thanh text => hien chu "<span class=...>".
    *   Day la chan bat buoc phai sua TRUOC khi gop (xem _tmp-p36-mapping.md muc B1).
    *   VAN GIU NGUYEN tinh bao mat: whitelist 2 dang noi bo, moi thu khac esc(). */
-  const isSvg = typeof icon === 'string' && icon.includes('<svg');
+  const isSvg = typeof icon === 'string' && /^\s*<svg[\s>]/i.test(icon);
   /* khop CA 2 dang: class="h2-icon" (khong size) VA class="h2-icon h2-icon--16" (co size).
    * Dung regex de khong phu thuoc dau dong ngoac. */
   const isH2Icon = typeof icon === 'string' && /class="h2-icon(\s|")/.test(icon);
@@ -200,9 +200,27 @@ function pageBanner(title, sub, stats) {
   ${/* FIX 2026-09-30: topbar da co <h1 id="page-title"> -> render h1 o day tao 2 h1/trang (sai cau truc
        heading cho trinh doc man hinh). Tieu de khoi noi dung la h2; giu class .page-h1 nen hinh thuc khong doi. */ ''}
   ${title ? `<h2 class="page-h1">${esc(title)}</h2>` : ''}
-  ${sub ? `<p class="page-lede" title="${esc(sub)}">${sub}</p>` : ''}
+  ${sub ? `<p class="page-lede" title="${esc(sub)}">${esc(sub)}</p>` : ''}
   ${cards ? `<div class="bento-grid mb-6">${cards}</div>` : ''}`;
 }
+
+  if (typeof document !== 'undefined' && typeof document.addEventListener === 'function') {
+    document.addEventListener('error', function (e) {
+      var img = e && e.target;
+      if (!img || img.tagName !== 'IMG') return;
+      var mode = img.getAttribute('data-img-fallback');
+      if (!mode) return;
+      img.removeAttribute('data-img-fallback');
+      if (mode === 'placeholder') {
+        img.src = 'assets/thumbs/placeholder.svg';
+      } else if (mode === 'hide-inline-flex' || mode === 'hide-flex') {
+        img.style.display = 'none';
+        if (img.nextElementSibling) {
+          img.nextElementSibling.style.display = mode === 'hide-inline-flex' ? 'inline-flex' : 'flex';
+        }
+      }
+    }, true);
+  }
 
   global.H2UICore = {
     safeArray: safeArray,

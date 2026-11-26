@@ -62,6 +62,12 @@
     }[c]));
   }
 
+  function ico(name, size) {
+    return `<span class="h2-icon h2-icon--${size || 14}" data-h2i="${String(name)}" aria-hidden="true"></span>`;
+  }
+
+  let positionsDirty = true;
+
   // DOM Elements
   const canvas = document.getElementById('kgCanvas');
   const ctx = canvas ? canvas.getContext('2d') : null;
@@ -255,7 +261,7 @@
     if (!chain.length) {
       lineageBarEl.innerHTML = `
         <span style="color:#cbd5e1;font-weight:600;">Chuỗi Logic Gốc → Đỉnh:</span>
-        <button type="button" class="nx-crumb is-current js-jump-node" data-node-id="workspace:d-ytb" title="D:\\YTB Master Workspace">🌐 D:\\YTB Master Workspace</button>
+        <button type="button" class="nx-crumb is-current js-jump-node" data-node-id="workspace:d-ytb" title="D:\\YTB Master Workspace">${ico('globe', 14)} D:\\YTB Master Workspace</button>
       `;
       return;
     }
@@ -501,7 +507,7 @@
   // ============================================================================
   // MODE 2: OBSIDIAN NETWORK GRAPH CANVAS (EGO-CONSTELLATION + GALAXY CLUSTERS)
   // ============================================================================
-  let graphScope = 'ego'; // 'ego' (Mạch Tâm Điểm Rõ Nét) | 'galaxy' (Toàn Cảnh 4.799 Nút)
+  let graphScope = 'ego'; // 'ego' (Mạch Tâm Điểm Rõ Nét) | 'galaxy' (Toàn Cảnh 4.800 Nút)
   let egoPositions = new Map();
   let egoVisibleSet = new Set();
 
@@ -602,6 +608,7 @@
   }
 
   function applyActiveGraphPositions() {
+    window.__h2GraphPosCalls = (window.__h2GraphPosCalls || 0) + 1;
     if (graphScope === 'ego') {
       const focus = selectedNode || nodeById.get('project:h2dev-project') || nodes[0];
       computeEgoLayout(focus);
@@ -625,7 +632,10 @@
     const rect = canvas.getBoundingClientRect();
     if (rect.width === 0 || rect.height === 0) return;
 
-    applyActiveGraphPositions();
+    if (positionsDirty) {
+      applyActiveGraphPositions();
+      positionsDirty = false;
+    }
     const isMob = window.innerWidth <= 900;
     const topPad = isMob ? 52 : 60;
     const bottomPad = isMob ? 98 : 64;
@@ -681,11 +691,14 @@
 
     // 100% Zero-Smear Physical Buffer Clear
     ctx.setTransform(1, 0, 0, 1, 0, 0);
-    ctx.fillStyle = '#06080f';
+    ctx.fillStyle = '#050505';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-    applyActiveGraphPositions();
+    if (positionsDirty) {
+      applyActiveGraphPositions();
+      positionsDirty = false;
+    }
 
     ctx.save();
     ctx.translate(camX, camY);
@@ -872,7 +885,7 @@
       const pDirs = nodes.filter(n => n.type === 'directory' && getProjectId(n) === p.id).length;
       const pFiles = nodes.filter(n => n.type === 'file' && getProjectId(n) === p.id).length;
       return `
-        <div style="background:rgba(15,23,42,0.92);border:1px solid rgba(148,163,184,0.2);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px;justify-content:space-between;">
+        <div style="background:var(--surface, #0f0f0f);border:1px solid var(--border-strong, rgba(255,255,255,0.14));border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px;justify-content:space-between;">
           <div style="display:flex;flex-direction:column;gap:8px;">
             <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
               <span style="font-size:var(--fs-xs);font-weight:600;padding:2px 8px;border-radius:6px;background:rgba(249,115,22,0.18);color:#fb923c;border:1px solid rgba(249,115,22,0.4);text-transform:uppercase;">${esc(meta.category || 'project')}</span>
@@ -881,27 +894,30 @@
             <h3 style="font-size:var(--fs-md);font-weight:600;color:#ffffff;margin:0;line-height:1.35;">${esc(p.label)}</h3>
             <div style="font-size:var(--fs-xs);font-family:monospace;color:#38bdf8;word-break:break-all;">Root: D:\\YTB\\${esc(p.path === '.' ? '' : p.path)}</div>
             <div class="num-tab" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:4px;">
-              <div style="background:rgba(30,41,59,0.75);padding:8px;border-radius:8px;text-align:center;">
+              <div style="background:var(--surface-2, #1a1a1a);padding:8px;border-radius:8px;text-align:center;">
                 <div style="font-size:var(--fs-lg);font-weight:600;color:#facc15;">${pDomains}</div>
                 <div style="font-size:var(--fs-xs);color:#cbd5e1;">Nhánh Data</div>
               </div>
-              <div style="background:rgba(30,41,59,0.75);padding:8px;border-radius:8px;text-align:center;">
+              <div style="background:var(--surface-2, #1a1a1a);padding:8px;border-radius:8px;text-align:center;">
                 <div style="font-size:var(--fs-lg);font-weight:600;color:#2dd4bf;">${pDirs}</div>
                 <div style="font-size:var(--fs-xs);color:#cbd5e1;">Thư mục</div>
               </div>
-              <div style="background:rgba(30,41,59,0.75);padding:8px;border-radius:8px;text-align:center;">
+              <div style="background:var(--surface-2, #1a1a1a);padding:8px;border-radius:8px;text-align:center;">
                 <div style="font-size:var(--fs-lg);font-weight:600;color:#60a5fa;">${pFiles}</div>
                 <div style="font-size:var(--fs-xs);color:#cbd5e1;">File lõi</div>
               </div>
             </div>
           </div>
           <button type="button" class="nx-btn js-open-project-flow" data-node-id="${esc(p.id)}" style="margin-top:8px;justify-content:center;background:rgba(2,132,199,0.24);border-color:#38bdf8;color:#ffffff;width:100%;">
-            🔍 Mở Sơ Đồ Nhánh Logic Của Dự Án
+            ${ico('search', 14)} Mở Sơ Đồ Nhánh Logic Của Dự Án
           </button>
         </div>
       `;
     }).join('');
 
+    if (matrixViewEl) {
+      matrixViewEl.setAttribute('aria-label', `Bảng kiểm toán ${projects.length} dự án`);
+    }
     matrixContentEl.innerHTML = `
       <div style="margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
         <div>
@@ -909,7 +925,7 @@
           <p style="font-size:var(--fs-xs);color:#cbd5e1;margin:4px 0 0 0;">Số liệu thực tế từng dự án được bóc tách tự động từ cơ sở dữ liệu đồ thị (Zero-Touch Real-Time Auto-Sync).</p>
         </div>
       </div>
-      ${projects.length ? `<div class="nx-matrix-grid">${cardsHtml}</div>` : renderEmptyBox('Không tìm thấy dự án khớp từ khóa', 'Hãy xóa từ khóa tìm kiếm để xem toàn bộ 17 dự án.', true)}
+      ${projects.length ? `<div class="nx-matrix-grid">${cardsHtml}</div>` : renderEmptyBox('Không tìm thấy dự án khớp từ khóa', 'Hãy xóa từ khóa tìm kiếm để xem toàn bộ ' + nodes.filter(n => n.type === 'project').length + ' dự án.', true)}
     `;
   }
 
@@ -962,9 +978,9 @@
     const playerBtn = `
       <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
         ${webTargetUrl && !isSelfSodo ? `<a href="${esc(webTargetUrl)}" class="nx-chip" style="background:#0284c7;border-color:#38bdf8;color:#ffffff;font-weight:600;">${webTargetLabel}</a>` : ''}
-        ${rawTargetUrl ? `<a href="${esc(rawTargetUrl)}" class="nx-chip" style="background:rgba(16,185,129,0.22);border-color:#10b981;color:#34d399;font-weight:600;">📊 Hồ Sơ Raw Kênh</a>` : ''}
-        <a href="${esc(sodoUrl)}" class="nx-chip" style="background:rgba(168,85,247,0.22);border-color:#a855f7;color:#e9d5ff;font-weight:600;">🧭 Xem ở Tab Sơ đồ DB</a>
-        <button type="button" class="nx-chip js-copy-deeplink" data-node-id="${esc(node.id)}" style="background:rgba(30,41,59,0.9);border-color:rgba(148,163,184,0.35);color:#cbd5e1;">🔗 Copy Deep-Link</button>
+        ${rawTargetUrl ? `<a href="${esc(rawTargetUrl)}" class="nx-chip" style="background:rgba(16,185,129,0.22);border-color:#10b981;color:#34d399;font-weight:600;">${ico('bar-chart-3', 14)} Hồ Sơ Raw Kênh</a>` : ''}
+        <a href="${esc(sodoUrl)}" class="nx-chip" style="background:rgba(226,2,58,0.18);border-color:rgba(226,2,58,0.5);color:#fda4af;font-weight:600;">${ico('compass', 14)} Xem ở Tab Sơ đồ DB</a>
+        <button type="button" class="nx-chip js-copy-deeplink" data-node-id="${esc(node.id)}">${ico('link', 14)} <span>Copy Deep-Link</span></button>
       </div>
     `;
 
@@ -1129,7 +1145,11 @@
     renderFlowchart();
     syncUrlState();
     if (activeMode === 'graph' && canvas) {
-      applyActiveGraphPositions();
+      if (graphScope === 'ego') positionsDirty = true;
+      if (positionsDirty) {
+        applyActiveGraphPositions();
+        positionsDirty = false;
+      }
       if (graphScope === 'ego') {
         fitCameraToGraph();
       } else if (centerCanvas) {
@@ -1138,6 +1158,8 @@
         camY = rect.height / 2 - (node.y || 0) * camScale;
       }
       drawCanvas();
+    } else if (graphScope === 'ego') {
+      positionsDirty = true;
     }
   }
 
@@ -1175,6 +1197,7 @@
   document.querySelectorAll('[data-graph-scope]').forEach(btn => {
     btn.addEventListener('click', () => {
       graphScope = btn.getAttribute('data-graph-scope') || 'ego';
+      positionsDirty = true;
       document.querySelectorAll('[data-graph-scope]').forEach(b => b.classList.toggle('is-active', b === btn));
       fitCameraToGraph();
       drawCanvas();
@@ -1266,8 +1289,13 @@
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(u.toString()).catch(() => {});
       }
-      copyBtn.textContent = '✅ Đã copy Deep-Link!';
-      setTimeout(() => { copyBtn.textContent = '🔗 Copy Deep-Link'; }, 1800);
+      copyBtn.classList.add('is-copied');
+      copyBtn.innerHTML = `${ico('check', 14)} <span>Đã copy Deep-Link!</span>`;
+      if (window.H2FX && typeof window.H2FX.burst === 'function') window.H2FX.burst(copyBtn, 'copy');
+      setTimeout(() => {
+        copyBtn.classList.remove('is-copied');
+        copyBtn.innerHTML = `${ico('link', 14)} <span>Copy Deep-Link</span>`;
+      }, 1800);
     }
   });
 
@@ -1422,6 +1450,7 @@
     const btn = e.target.closest('button[data-track]');
     if (!btn) return;
     activeTrack = btn.getAttribute('data-track') || 'all';
+    positionsDirty = true;
     document.querySelectorAll('#kgTrackFilters button').forEach(b => b.classList.toggle('is-active', b === btn));
     if (activeTrack === 'infra') {
       const p = nodeById.get('project:h2dev-project');
@@ -1437,6 +1466,7 @@
 
   document.getElementById('kgResetZoom')?.addEventListener('click', () => {
     searchQuery = '';
+    positionsDirty = true;
     if (searchInput) searchInput.value = '';
     const defaultProj = nodeById.get('project:h2dev-project') || nodes[0];
     if (defaultProj) selectAndFocusNode(defaultProj, false);
@@ -1449,6 +1479,7 @@
     clearTimeout(kgSearchDebounceTimer);
     kgSearchDebounceTimer = setTimeout(() => {
       searchQuery = (searchInput.value || '').trim().toLowerCase();
+      positionsDirty = true;
       if (searchQuery) {
         const exactResolved = resolveNodeByQuery(searchQuery);
         const firstMatch = (exactResolved && matchesTrackFilter(exactResolved)) ? exactResolved : nodes.find(n => isNodeVisible(n));
@@ -1498,16 +1529,18 @@
         const prevSelectedId = preserveSelection && selectedNode ? selectedNode.id : null;
         buildIndices(data);
         layoutGraph(nodes);
+        positionsDirty = true;
 
         if (statsBadge && data.stats) {
           const st = data.stats;
+          const dynProjCount = st.projects || nodes.filter(n => n.type === 'project').length;
           const totalVids = st.videos || ((st.videosH2dev || 0) + (st.videosHuan || 0) + (st.videosDgmd || 0)) || 0;
           try {
             document.title = `97yo-dev Nexus Graph — Hệ Thống Hóa Đa Dự Án & Bản Đồ Liên Kết ${totalVids} Video`;
           } catch (_) {}
-          statsBadge.textContent = `Hệ thống 97yo-dev · ${st.projects || 17} Dự Án · 3 Nhánh (${totalVids} Video) · ${st.policies || 12} Chính Sách · ${st.sops || 0} SOP · ${st.files || 0} File · ${st.totalNodes} Nút · ${st.totalEdges} Liên Kết`;
+          statsBadge.textContent = `Hệ thống 97yo-dev · ${dynProjCount} Dự Án · 3 Nhánh (${totalVids} Video) · ${st.policies || 12} Chính Sách · ${st.sops || 0} SOP · ${st.files || 0} File · ${st.totalNodes} Nút · ${st.totalEdges} Liên Kết`;
           const btnMat = document.getElementById('btnModeMatrix');
-          if (btnMat) btnMat.textContent = `3. Ma Trận ${st.projects || 17} Dự Án`;
+          if (btnMat) btnMat.textContent = `3. Ma Trận ${dynProjCount} Dự Án`;
           const fAll = document.querySelector('#kgTrackFilters button[data-track="all"]');
           const fInf = document.querySelector('#kgTrackFilters button[data-track="infra"]');
           const fPol = document.querySelector('#kgTrackFilters button[data-track="policy"]');
@@ -1526,7 +1559,7 @@
             }
             btnGal.title = `Vẽ toàn cảnh ${fmtNodes} nút phân cụm theo Dự án & Nhánh đào tạo`;
           }
-          if (fInf) fInf.textContent = `Hạ tầng ${st.projects || 17} Dự án (${st.infraNodes || 0})`;
+          if (fInf) fInf.textContent = `Hạ tầng ${dynProjCount} Dự án (${st.infraNodes || 0})`;
           if (fPol) fPol.textContent = `Chính sách & SOP (${(st.policies || 12) + (st.checklists || 12) + (st.sops || 0)})`;
           if (fH2) fH2.textContent = `Nhánh H2DEV (${st.videosH2dev || 0})`;
           if (fHu) fHu.textContent = `Nhánh Huân (${st.videosHuan || 0})`;
@@ -1534,7 +1567,7 @@
           const legEl = document.getElementById('kgLegend');
           if (legEl) {
             legEl.innerHTML = [
-              `<span><i class="kg-dot" style="background:#f97316;"></i>Dự án (${st.projects || 17})</span>`,
+              `<span><i class="kg-dot" style="background:#f97316;"></i>Dự án (${dynProjCount})</span>`,
               `<span><i class="kg-dot" style="background:#eab308;"></i>Nhánh Data / Module (${(st.domains || 0) + (st.modules || 36)})</span>`,
               `<span><i class="kg-dot" style="background:#fda4af;"></i>Chính sách &amp; Checklist (${(st.policies || 12) + (st.checklists || 12)})</span>`,
               `<span><i class="kg-dot" style="background:#14b8a6;"></i>Thư mục / Ngách (${(st.directories || 0) + (st.niches || 0)})</span>`,
@@ -1589,6 +1622,10 @@
   }
 
   forceSyncBtn?.addEventListener('click', () => {
+    if (forceSyncBtn.disabled) return;
+    forceSyncBtn.disabled = true;
+    const syncIcon = forceSyncBtn.querySelector('.h2-icon');
+    if (syncIcon) syncIcon.classList.add('h2-icon--spin');
     if (syncTextEl) syncTextEl.textContent = 'ĐANG QUÉT ĐỒNG BỘ...';
     fetch('/api/kg/sync', { method: 'POST', headers: { 'X-Requested-With': 'XMLHttpRequest' } })
       .then(r => (r.ok ? r.json() : null))
@@ -1599,12 +1636,17 @@
         }
         if (res.syncVersion) lastSyncVersion = res.syncVersion;
         if (syncTextEl) syncTextEl.textContent = 'ĐÃ ĐỒNG BỘ TỨC THÌ';
+        if (window.H2FX && typeof window.H2FX.burst === 'function') window.H2FX.burst(forceSyncBtn, 'success');
         return loadGraphData(true);
       })
       .catch(err => {
         console.error('Failed to sync knowledge graph', err);
         if (syncTextEl) syncTextEl.textContent = 'LIVE AUTO-SYNC';
-        loadGraphData(true);
+        return loadGraphData(true);
+      })
+      .finally(() => {
+        forceSyncBtn.disabled = false;
+        if (syncIcon) syncIcon.classList.remove('h2-icon--spin');
       });
   });
 

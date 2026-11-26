@@ -1,13 +1,13 @@
 /* H2Main - G6 extract main app script from index.html */
 
-    const state = { tab: 'tatca', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', docBranch: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', kenhStatus: '', nxTier: '', nxMarket: '', nxBranch: '', nxSort: 'rank', nxQ: '', nxSub: '', nxLimit: 0, rawQ: '', rawNiche: '', rawGroup: '', rawGroupOpen: '', rawNicheExpanded: false, promptNicheExpanded: false, rawStatus: '', rawVitality: '', rawFaceless: '', rawLang: '', rawPage: 1, docPage: 1, nxPage: 1,
+    const state = { tab: 'tatca', q: '', nicheFilter: '', skuFilter: '', marketFilter: '', sortBy: '', freeOnly: false, watchFilter: '', kindFilter: '', docBranch: '', promptQ: '', promptNiche: '', reupQ: '', reupType: '', reupNiche: '', kenhQ: '', kenhNiche: '', kenhStatus: '', kenhSort: '', kenhLang: '', kenhMarket: '', kenhCap: '', kenhPageSize: 24, nxTier: '', nxMarket: '', nxBranch: '', nxSort: 'rank', nxQ: '', nxSub: '', nxLimit: 0, rawQ: '', rawNiche: '', rawGroup: '', rawGroupOpen: '', rawNicheExpanded: false, promptNicheExpanded: false, rawStatus: '', rawVitality: '', rawFaceless: '', rawLang: '', rawPage: 1, docPage: 1, nxPage: 1,
       /* FIX (uifix88) F1 — dinh danh DICH CHINH XAC tu ket qua tim kiem toan van (search_fts),
          de mo DUNG MOT muc thay vi loc theo ten/chuoi con (ten trung nhau -> ra nhieu muc).
            rawRid   = /rawkenh?rid=RAW-nnn   (id ho so Raw, khop records[i].id)
            kenhHandle = /kenh-mau?handle=@x  (handle khop TUYET DOI)
            docDid   = /tai-lieu?did=DOC_n    (doc_id trong DB, de hien nhan + chan lech)
            docIdx   = /tai-lieu?di=<n>        (vi tri 0-based trong data-tabs/tai-lieu-full.json) */
-      rawRid: '', kenhHandle: '', docDid: '', docIdx: -1, reupId: '', sodoQ: '', sodoNode: '', sodoPathFrom: '', sodoPathTo: '', clMatrixCluster: 'all', clMatrixQ: '',
+      rawRid: '', kenhHandle: '', docDid: '', docIdx: -1, reupId: '', sodoQ: '', sodoNode: '', sodoPathFrom: '', sodoPathTo: '', clMatrixCluster: 'all', clMatrixTrack: 'all', clMatrixQ: '',
       tatcaMarketsExpanded: (function () { try { return sessionStorage.getItem('h2dev-tatca-markets') === '1'; } catch (e) { return false; } })(),
       tatcaNichesExpanded: (function () { try { return sessionStorage.getItem('h2dev-tatca-niches') === '1'; } catch (e) { return false; } })(),
       tatcaRecentExpanded: (function () { try { return sessionStorage.getItem('h2dev-tatca-recent') === '1'; } catch (e) { return false; } })() };
@@ -32,6 +32,22 @@
       statCard,
       pageBanner
     } = window.H2UICore;
+    // uifix103: safeUrl — chỉ cho phép đường dẫn nội bộ hoặc https (XSS guard)
+    function safeUrl(raw) {
+      const u = String(raw == null ? '' : raw).trim();
+      if (!u || /[\u0000-\u001F\u007F]/.test(u)) return '';
+      if (/^\/\//.test(u) || /^\\\\/.test(u)) return '';
+      if (/^https?:\/\//i.test(u)) return u;
+      if (/^\/(?!\/)/.test(u)) return u;
+      if (/^#/.test(u)) return u;
+      if (/^\.\.?\//.test(u)) return u;
+      return '';
+    }
+    function safeExternalUrl(raw) {
+      const u = String(raw == null ? '' : raw).trim();
+      if (!u || /[\u0000-\u001F\u007F]/.test(u)) return '';
+      return /^https?:\/\//i.test(u) ? u : '';
+    }
     // G3: tab nav tach ra assets/app/tabs/nav.js (init sau khi c? TABS)
     let _tabNav = null;
     function ensureTabNav() {
@@ -100,7 +116,7 @@
      * (tabMarkup / more-menu) khong phai biet gi ve he icon. */
     TABS.forEach(t => { t.icon = ico(t.icon, 16); });
 
-    const APP_BUILD_VER = '20261103-uifix102';
+    const APP_BUILD_VER = '20261126-uifix110';
     // G-std: fallback chain like FckSignups useTools (primary -> no-ver -> fail soft)
     const _loadErrors = [];
     function noteLoadError(path, msg) {
@@ -161,8 +177,13 @@
       return musicStats;
     }
 
+    const OVERVIEW_SUMMARY_TTL_MS = 60000;
     async function loadOverviewSummary() {
-      if (window._overviewSummaryCache) return window._overviewSummaryCache;
+      const forceBypass = /(?:^|[?&])nocache=1(?:&|$)/i.test(location.search || '');
+      const cacheAge = Date.now() - Number(window._overviewSummaryCacheAt || 0);
+      if (!forceBypass && window._overviewSummaryCache && cacheAge >= 0 && cacheAge < OVERVIEW_SUMMARY_TTL_MS) {
+        return window._overviewSummaryCache;
+      }
       let raw = null;
       try {
         const r = await fetch('/api/overview-summary', { cache: 'no-store' });
@@ -201,7 +222,7 @@
           liveChannels: aKenh.filter(k => k && !k.dead).length,
           deadChannels: aKenh.filter(k => k && k.dead).length,
           nguonReup: aReup.length,
-          totalVideoSizeMb: totalMb || 88334.5,
+          totalVideoSizeMb: totalMb || 89363.8,
           modulesTotal: 36,
           rawChannels: 156,
           rawDeepProfiles: 149
@@ -209,23 +230,23 @@
       }
       const c = (raw && raw.counts) || raw || {};
       const st = (raw && raw.storage) || {};
-      const vH2Count = Number(c.videosH2dev ?? c.h2devVideos ?? c.videos ?? 154);
+      const vH2Count = Number(c.videosH2dev ?? c.h2devVideos ?? c.videos ?? 162);
       const vHuanCount = Number(c.videosHuan ?? c.huanVideos ?? 140);
       const vDgmdCount = Number(c.videosDgmd ?? c.dgmdVideos ?? 53);
-      const totalVids = Number(c.totalVideos ?? c.videosTotal ?? (vH2Count + vHuanCount + vDgmdCount)) || 347;
+      const totalVids = Number(c.totalVideos ?? c.videosTotal ?? (vH2Count + vHuanCount + vDgmdCount)) || 355;
       const summary = Object.assign({}, raw, {
         totalVideos: totalVids,
         videosH2dev: vH2Count,
         videosHuan: vHuanCount,
         videosDgmd: vDgmdCount,
-        documents: Number(c.documents ?? c.totalDocuments ?? c.taiLieu ?? 598),
-        channels: Number(c.channels ?? c.totalChannels ?? c.kenhTotal ?? 1076),
-        liveChannels: Number(c.liveChannels ?? c.kenhLive ?? 987),
-        deadChannels: Number(c.deadChannels ?? c.kenhDead ?? 89),
-        deadChannelsCount: Number(c.deadChannels ?? c.deadChannelsCount ?? c.kenhDead ?? 89),
+        documents: Number(c.documents ?? c.totalDocuments ?? c.taiLieu ?? 761),
+        channels: Number(c.channels ?? c.totalChannels ?? c.kenhTotal ?? 1740),
+        liveChannels: Number(c.liveChannels ?? c.kenhLive ?? 1444),
+        deadChannels: Number(c.deadChannels ?? c.kenhDead ?? 296),
+        deadChannelsCount: Number(c.deadChannels ?? c.deadChannelsCount ?? c.kenhDead ?? 296),
         nguonReup: Number(c.nguonReup ?? c.reupSources ?? c.reupTotal ?? 52),
         reupSources: Number(c.nguonReup ?? c.reupSources ?? c.reupTotal ?? 52),
-        totalVideoSizeMb: Number(st.totalVideoSizeMb ?? st.diskMb ?? c.totalVideoSizeMb ?? c.diskMb ?? c.videoSizeMb ?? ((st.mediaBytes || c.mediaBytes) ? Math.round(Number(st.mediaBytes || c.mediaBytes) / (1024 * 1024)) : 88334.5)),
+        totalVideoSizeMb: Number(st.totalVideoSizeMb ?? st.diskMb ?? c.totalVideoSizeMb ?? c.diskMb ?? c.videoSizeMb ?? ((st.mediaBytes || c.mediaBytes) ? Math.round(Number(st.mediaBytes || c.mediaBytes) / (1024 * 1024)) : 89363.8)),
         modulesTotal: Number(c.modulesTotal ?? c.modules ?? c.totalModules ?? 36),
         modulesH2dev: Number(c.modulesH2dev ?? 12),
         modulesHuan: Number(c.modulesHuan ?? 13),
@@ -233,11 +254,12 @@
         musicTracks: Number(c.musicTracks ?? 49),
         musicSafe: Number(c.musicSafe ?? 36),
         chienLuocSteps: Number(c.chienLuocSteps ?? 24),
-        matrix144Words: Number(c.matrix144Words ?? 383276),
+        matrix144Words: Number(c.matrix144Words ?? 1004569),
         rawChannels: Number(c.rawChannels ?? c.canonicalRaw ?? 156),
         rawDeepProfiles: Number(c.rawDeepProfiles ?? c.canonicalRawUniqueChannels ?? 149)
       });
       window._overviewSummaryCache = summary;
+      window._overviewSummaryCacheAt = Date.now();
       return summary;
     }
 
@@ -272,6 +294,7 @@
         if (onDoc && state.docBranch) u.searchParams.set('db', state.docBranch); else u.searchParams.delete('db');
         if (onDoc && state.kindFilter) u.searchParams.set('kind', state.kindFilter); else u.searchParams.delete('kind');
         if (onDoc && state.promptNiche) u.searchParams.set('pn', state.promptNiche); else u.searchParams.delete('pn');
+        if (onDoc && state.docSourceFilter) u.searchParams.set('ds', state.docSourceFilter); else u.searchParams.delete('ds');
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
     }
@@ -308,18 +331,39 @@
       try {
         const u = new URL(location.href);
         const onNx = state.tab === 'ngachxanh';
+        if (onNx) {
+          u.searchParams.delete('niche');
+          u.searchParams.delete('market');
+        }
         if (onNx && state.nxPage > 1) u.searchParams.set('np', String(state.nxPage)); else u.searchParams.delete('np');
         if (onNx && state.nxQ) u.searchParams.set('q', state.nxQ); else if (state.tab !== 'lotrinh') u.searchParams.delete('q');
-        if (onNx && !state.nxQ) u.searchParams.delete('niche');
         if (onNx && state.nxSub) u.searchParams.set('sub', state.nxSub); else if (state.tab !== 'chienluoc') u.searchParams.delete('sub');
         if (onNx && state.nxTier) u.searchParams.set('nt', state.nxTier); else u.searchParams.delete('nt');
         if (onNx && state.nxMarket) u.searchParams.set('nxm', state.nxMarket); else u.searchParams.delete('nxm');
-        if (onNx && !state.nxMarket) u.searchParams.delete('market');
         if (onNx && state.nxBranch) u.searchParams.set('nxb', state.nxBranch); else u.searchParams.delete('nxb');
         if (onNx && state.nxSort && state.nxSort !== 'rank') u.searchParams.set('nxs', state.nxSort); else u.searchParams.delete('nxs');
         if (onNx && state.nxLimit > 0) u.searchParams.set('nxl', String(state.nxLimit)); else u.searchParams.delete('nxl');
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
+    }
+    function resetNxFilters() {
+      state.nxQ = '';
+      state.nxSub = '';
+      state.nxTier = '';
+      state.nxMarket = '';
+      state.nxBranch = '';
+      state.nxSort = 'rank';
+      state.nxLimit = 0;
+      state.nxPage = 1;
+      syncNxPageUrl();
+      render();
+    }
+    function isExactNxEntityQuery(qRaw, subRaw) {
+      const qS = String(qRaw || '').trim();
+      const sS = String(subRaw || '').trim();
+      if (/^(?:h\d{2}(?:\s*|\s*[—-].*)|meta-0[1-5]\b|#?sn-h\d{2}-\d{3}\b|#?sub-\d{1,3}\b|#?\d{3}\b|#?tl-\d{3}\b|#?doc[-_]?\d{1,3}\b|(?:video|zoom|huan|dgmd)-[a-z0-9_-]+\b)/i.test(qS)) return true;
+      if (/^#?(?:sn-h\d{2}-\d{3}|sub-\d{1,3}|\d{1,3})\b/i.test(sS)) return true;
+      return false;
     }
     /* Dong bo toan bo bo loc tab Video (track/vq/niche/skus/market/sort/watch/free/vp) len URL. */
     function syncVideoUrl() {
@@ -342,7 +386,7 @@
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
     }
-    /* FIX (uifix87) LỖI 2 / (uifix88) F2: 'kq/handle/kp/ks/kn' (tab Kenh mau) dong bo URL. */
+    /* FIX (uifix87) LỖI 2 / (uifix88) F2: 'kq/handle/kp/ks/kn/ksort/klang/kmkt/kcap/kps' (tab Kenh mau) dong bo URL. */
     function syncKenhUrl() {
       try {
         const u = new URL(location.href);
@@ -352,6 +396,12 @@
         if (onKenh && state.kenhPage > 1) u.searchParams.set('kp', String(state.kenhPage)); else u.searchParams.delete('kp');
         if (onKenh && state.kenhStatus) u.searchParams.set('ks', state.kenhStatus); else u.searchParams.delete('ks');
         if (onKenh && state.kenhNiche) u.searchParams.set('kn', state.kenhNiche); else u.searchParams.delete('kn');
+        if (onKenh && state.kenhSort) u.searchParams.set('ksort', state.kenhSort); else u.searchParams.delete('ksort');
+        if (onKenh && state.kenhLang) u.searchParams.set('klang', state.kenhLang); else u.searchParams.delete('klang');
+        if (onKenh && state.kenhMarket) u.searchParams.set('kmkt', state.kenhMarket); else u.searchParams.delete('kmkt');
+        if (onKenh && state.kenhCap) u.searchParams.set('kcap', state.kenhCap); else u.searchParams.delete('kcap');
+        if (onKenh && state.kenhPageSize && state.kenhPageSize !== 24) u.searchParams.set('kps', String(state.kenhPageSize)); else u.searchParams.delete('kps');
+        if (onKenh) u.searchParams.delete('q');
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
     }
@@ -379,6 +429,7 @@
         const onCl = state.tab === 'chienluoc';
         if (onCl && state.clSubTab && state.clSubTab !== 'principles') u.searchParams.set('sub', state.clSubTab); else if (state.tab !== 'ngachxanh') u.searchParams.delete('sub');
         if (onCl && state.clMatrixCluster && state.clMatrixCluster !== 'all') u.searchParams.set('clm', state.clMatrixCluster); else u.searchParams.delete('clm');
+        if (onCl && state.clMatrixTrack && state.clMatrixTrack !== 'all') u.searchParams.set('clt', state.clMatrixTrack); else u.searchParams.delete('clt');
         if (onCl && state.clMatrixQ) u.searchParams.set('clq', state.clMatrixQ); else u.searchParams.delete('clq');
         history.replaceState(history.state, '', u.pathname + u.search);
       } catch (err) {}
@@ -394,6 +445,32 @@
         more.hidden = !hasLinks && !(txt && txt.scrollHeight > txt.clientHeight + 1);
       });
     }
+    function measureNxPointClamp() {
+      document.querySelectorAll('#content .niche-card').forEach(card => {
+        const facts = card.querySelector('.nx-card-facts');
+        const btn = facts ? facts.querySelector('[data-nx-expand-points]') : null;
+        if (!facts || !btn) return;
+        const points = [...facts.querySelectorAll('.nx-card-point')];
+        const isExpanded = points.some(pt => pt.classList.contains('is-expanded'));
+        if (isExpanded) {
+          btn.hidden = false;
+          btn.classList.remove('hidden');
+          btn.style.removeProperty('display');
+          btn.setAttribute('aria-expanded', 'true');
+          btn.textContent = 'Thu gọn ▴';
+          return;
+        }
+        const isClamped = points.some(pt => {
+          if (pt.clientHeight > 0) return pt.scrollHeight > pt.clientHeight + 1;
+          return String(pt.textContent || '').trim().length > 150;
+        });
+        btn.hidden = !isClamped;
+        btn.classList.toggle('hidden', !isClamped);
+        if (isClamped) btn.style.removeProperty('display'); else btn.style.display = 'none';
+        btn.setAttribute('aria-expanded', 'false');
+        btn.textContent = 'Xem đầy đủ ▾';
+      });
+    }
     function bindPolicyToggles() {
       document.querySelectorAll('#content .policy-toggle').forEach(btn => {
         btn.addEventListener('click', () => {
@@ -407,9 +484,17 @@
         });
       });
       measurePolicyClamp();
+      measureNxPointClamp();
       if (!window.__policyResizeBound) {
         window.__policyResizeBound = true;
-        window.addEventListener('resize', () => measurePolicyClamp());
+        let policyResizeTimer = null;
+        window.addEventListener('resize', () => {
+          clearTimeout(policyResizeTimer);
+          policyResizeTimer = setTimeout(() => {
+            measurePolicyClamp();
+            measureNxPointClamp();
+          }, 100);
+        });
       }
     }
     /* FIX (uifix88) F2 — 1 nguon duy nhat dung URL tu state, CO KIEM TAB.
@@ -451,6 +536,7 @@
       if (t === 'tai-lieu' && state.docBranch) url.searchParams.set('db', state.docBranch);
       if (t === 'tai-lieu' && state.kindFilter) url.searchParams.set('kind', state.kindFilter);
       if (t === 'tai-lieu' && state.promptNiche) url.searchParams.set('pn', state.promptNiche);
+      if (t === 'tai-lieu' && state.docSourceFilter) url.searchParams.set('ds', state.docSourceFilter);
       /* --- Nguon reup --- */
       if (t === 'nguonreup' && state.reupId) url.searchParams.set('reup', state.reupId);
       if (t === 'nguonreup' && state.reupQ) url.searchParams.set('rq', state.reupQ);
@@ -462,6 +548,11 @@
       if (t === 'kenh-mau' && state.kenhPage > 1) url.searchParams.set('kp', String(state.kenhPage));
       if (t === 'kenh-mau' && state.kenhStatus) url.searchParams.set('ks', state.kenhStatus);
       if (t === 'kenh-mau' && state.kenhNiche) url.searchParams.set('kn', state.kenhNiche);
+      if (t === 'kenh-mau' && state.kenhSort) url.searchParams.set('ksort', state.kenhSort);
+      if (t === 'kenh-mau' && state.kenhLang) url.searchParams.set('klang', state.kenhLang);
+      if (t === 'kenh-mau' && state.kenhMarket) url.searchParams.set('kmkt', state.kenhMarket);
+      if (t === 'kenh-mau' && state.kenhCap) url.searchParams.set('kcap', state.kenhCap);
+      if (t === 'kenh-mau' && state.kenhPageSize && state.kenhPageSize !== 24) url.searchParams.set('kps', String(state.kenhPageSize));
       /* --- Raw kenh --- */
       if (t === 'rawkenh' && state.rawPage > 1) url.searchParams.set('page', String(state.rawPage));
       if (t === 'rawkenh' && state.rawNiche) url.searchParams.set('rn', state.rawNiche);
@@ -476,6 +567,7 @@
       /* --- Chien luoc --- */
       if (t === 'chienluoc' && state.clSubTab && state.clSubTab !== 'principles') url.searchParams.set('sub', state.clSubTab);
       if (t === 'chienluoc' && state.clMatrixCluster && state.clMatrixCluster !== 'all') url.searchParams.set('clm', state.clMatrixCluster);
+      if (t === 'chienluoc' && state.clMatrixTrack && state.clMatrixTrack !== 'all') url.searchParams.set('clt', state.clMatrixTrack);
       if (t === 'chienluoc' && state.clMatrixQ) url.searchParams.set('clq', state.clMatrixQ);
       /* --- So do DB --- */
       if (t === 'sodo' && state.sodoQ) url.searchParams.set('sq', state.sodoQ);
@@ -496,7 +588,7 @@
       if (nextTab !== 'sodo' && keep.sodoQ === undefined) state.sodoQ = '';
       if (nextTab !== 'sodo' && keep.sodoPathFrom === undefined) state.sodoPathFrom = '';
       if (nextTab !== 'sodo' && keep.sodoPathTo === undefined) state.sodoPathTo = '';
-      if (nextTab !== 'chienluoc' && keep.clSubTab === undefined) { state.clSubTab = 'principles'; state.clMatrixCluster = 'all'; state.clMatrixQ = ''; }
+      if (nextTab !== 'chienluoc' && keep.clSubTab === undefined) { state.clSubTab = 'principles'; state.clMatrixCluster = 'all'; state.clMatrixTrack = 'all'; state.clMatrixQ = ''; }
       if (nextTab !== 'lotrinh' && keep.lotrinhTrack === undefined) state.lotrinhTrack = '';
       /* Bo loc raw chi song o tab Raw. */
       if (nextTab !== 'rawkenh') { state.rawQ = ''; state.rawNiche = ''; state.rawGroup = ''; state.rawVitality = ''; state.rawFaceless = ''; state.rawLang = ''; state.rawPage = 1; }
@@ -505,18 +597,26 @@
       /* Bo loc ngachxanh chi song o tab Ngach xanh. */
       if (nextTab !== 'ngachxanh') { state.nxQ = ''; state.nxSub = ''; state.nxTier = ''; state.nxMarket = ''; state.nxBranch = ''; state.nxSort = 'rank'; state.nxLimit = 0; state.nxPage = 1; }
       /* Tu khoa tab Tai lieu / Kenh mau. */
-      if (nextTab !== 'tai-lieu' && keep.promptQ === undefined) { state.promptQ = ''; state.docBranch = ''; state.kindFilter = ''; state.promptNiche = ''; state.docPage = 1; }
-      if (nextTab !== 'kenh-mau' && keep.kenhQ === undefined) { state.kenhQ = ''; state.kenhNiche = ''; state.kenhStatus = ''; state.kenhPage = 1; }
-      if (nextTab !== 'video') { state.watchFilter = ''; state.freeOnly = false; state.recentOnly = false; state.skuFilter = ''; state.q = ''; state.sortBy = ''; state.videoPage = 1; }
+      if (nextTab !== 'tai-lieu' && keep.promptQ === undefined) { state.promptQ = ''; state.docSourceFilter = ''; state.docBranch = ''; state.kindFilter = ''; state.promptNiche = ''; state.docPage = 1; }
+      if (nextTab !== 'kenh-mau' && keep.kenhQ === undefined) { state.kenhQ = ''; state.kenhNiche = ''; state.kenhStatus = ''; state.kenhSort = ''; state.kenhLang = ''; state.kenhMarket = ''; state.kenhCap = ''; state.kenhPage = 1; state.kenhPageSize = 24; }
+      if (nextTab !== 'video') { state.videoTrack = 'all'; state.watchFilter = ''; state.freeOnly = false; state.recentOnly = false; state.skuFilter = ''; state.q = ''; state.sortBy = ''; state.videoPage = 1; }
       if (nextTab !== 'video' && nextTab !== 'ngachxanh') { state.nicheFilter = ''; state.marketFilter = ''; }
     }
     function openTab(id, extra, pushHistory = true) {
+      if (typeof window.H2AudioStopAll === 'function') window.H2AudioStopAll();
+      try {
+        const rawM = document.getElementById('raw-deep-modal');
+        if (rawM && rawM.style.display === 'flex' && typeof window.closeRawDeepModal === 'function') {
+          window.closeRawDeepModal();
+        }
+      } catch (_) {}
       const rawId = String(id || 'tatca').trim().toLowerCase();
       state.tab = (typeof URL_ALIAS === 'object' && URL_ALIAS[rawId]) ? URL_ALIAS[rawId] : (id || 'tatca');
       resetScrollToTop();
       // Khi mở tab Video, luôn reset sạch bộ lọc video về mặc định trước khi áp `extra`
       // để tránh dính kết hợp ngầm với nicheFilter/marketFilter cũ gây 0/tổng.
       if (state.tab === 'video') {
+        state.videoTrack = 'all';
         state.skuFilter = '';
         state.nicheFilter = '';
         state.marketFilter = '';
@@ -529,8 +629,8 @@
       }
       clearForeignTabState(state.tab, extra);
       if (extra) Object.assign(state, extra);
-      if (state.tab === 'video' && extra && extra.videoTrack) {
-        try { sessionStorage.setItem('h2dev-video-track', extra.videoTrack); } catch (err) {}
+      if (state.tab === 'video') {
+        try { sessionStorage.setItem('h2dev-video-track', state.videoTrack || 'all'); } catch (err) {}
       }
       if (pushHistory) {
         try {
@@ -616,9 +716,13 @@
         btn.addEventListener('click', e => { e.preventDefault(); expandNicheMore(btn); });
       });
       document.querySelectorAll('[data-toggle-tatca-list]').forEach(btn => {
-        btn.addEventListener('click', e => {
+        btn.addEventListener('click', async e => {
           e.preventDefault();
           const kind = btn.getAttribute('data-toggle-tatca-list');
+          /* L4-A11Y-03: save #panel-root + window scroll before async render, restore after */
+          const panelRoot = document.getElementById('panel-root');
+          const savedPanelScroll = panelRoot ? panelRoot.scrollTop : 0;
+          const savedWinScroll = window.scrollY || window.pageYOffset || 0;
           if (kind === 'markets') {
             state.tatcaMarketsExpanded = !state.tatcaMarketsExpanded;
             try { sessionStorage.setItem('h2dev-tatca-markets', state.tatcaMarketsExpanded ? '1' : '0'); } catch (err) {}
@@ -629,7 +733,12 @@
             state.tatcaRecentExpanded = !state.tatcaRecentExpanded;
             try { sessionStorage.setItem('h2dev-tatca-recent', state.tatcaRecentExpanded ? '1' : '0'); } catch (err) {}
           }
-          render();
+          await render();
+          /* Restore scrollTop/window scroll and move focus to the re-rendered toggle button */
+          if (panelRoot) panelRoot.scrollTop = savedPanelScroll;
+          window.scrollTo(0, savedWinScroll);
+          const reBtn = document.querySelector(`[data-toggle-tatca-list="${CSS.escape(kind)}"]`);
+          if (reBtn) reBtn.focus({ preventScroll: true });
         });
       });
       document.querySelectorAll('[data-open-tab]').forEach(btn => {
@@ -689,6 +798,8 @@
             extra.nxTier = '';
             extra.nxMarket = '';
             extra.nxBranch = '';
+            extra.nxSort = 'rank';
+            extra.nxLimit = 0;
             extra.nxPage = 1;
           }
           if (tab === 'kenh-mau') {
@@ -696,6 +807,10 @@
             extra.kenhStatus = btn.getAttribute('data-kenh-status') || '';
             extra.kenhHandle = btn.getAttribute('data-kenh-handle') || '';
             extra.kenhQ = extra.kenhHandle || btn.getAttribute('data-kenh-q') || '';
+            extra.kenhSort = '';
+            extra.kenhLang = '';
+            extra.kenhMarket = '';
+            extra.kenhCap = '';
             extra.kenhPage = 1;
           }
           if (tab === 'rawkenh') {
@@ -718,9 +833,9 @@
             extra.reupType = btn.getAttribute('data-reup-type') || '';
             extra.reupNiche = btn.getAttribute('data-reup-niche') || '';
           }
-          openTab(tab, extra);
+          const openPromise = openTab(tab, extra);
           if (tab === 'ngachxanh' || tab === 'nguonreup') {
-            setTimeout(() => applyDeepTargetScrollAndModal(), 60);
+            Promise.resolve(openPromise).then(() => applyDeepTargetScrollAndModal());
           }
         });
       });
@@ -801,6 +916,10 @@
           const u = applyTabParams(new URL('/sodo', location.origin));
           history.replaceState(history.state, '', u.pathname + u.search);
         } catch (_) {}
+        const pathBtnEl = document.getElementById('sodo-path-btn');
+        const pathBtnIcon = pathBtnEl && pathBtnEl.querySelector('.h2-icon');
+        if (pathBtnEl) pathBtnEl.disabled = true;
+        if (pathBtnIcon) pathBtnIcon.classList.add('h2-icon--spin');
         outEl.innerHTML = '<div class="text-xs text-gray-400">Đang truy vết đường đi ngắn nhất...</div>';
         try {
           const r = await fetch(`/api/kg/path?from=${encodeURIComponent(fromQ)}&to=${encodeURIComponent(toQ)}`, { cache: 'no-store' });
@@ -835,6 +954,9 @@
           });
         } catch (err) {
           outEl.innerHTML = '<div class="text-xs text-rose-400" role="alert">Lỗi truy vấn đường đi đồ thị.</div>';
+        } finally {
+          if (pathBtnEl) pathBtnEl.disabled = false;
+          if (pathBtnIcon) pathBtnIcon.classList.remove('h2-icon--spin');
         }
       };
       const pathBtn = document.getElementById('sodo-path-btn');
@@ -881,6 +1003,7 @@
         clClearBtn.onclick = (e) => {
           e.preventDefault();
           state.clMatrixCluster = 'all';
+          state.clMatrixTrack = 'all';
           state.clMatrixQ = '';
           const inp = document.getElementById('cl-matrix-search');
           if (inp) inp.value = '';
@@ -901,36 +1024,66 @@
           });
           const prog = document.getElementById('cl-checklist-progress');
           if (prog) prog.textContent = `Đã hoàn thành 0/${boxes.length}`;
+          const barFill = document.getElementById('cl-policy-bar-fill');
+          if (barFill) barFill.style.width = '0%';
         };
       }
     }
     function applyMatrix144Filter(container) {
       if (!container) return;
       const cluster = state.clMatrixCluster || 'all';
-      const qLow = String(state.clMatrixQ || '').trim().toLowerCase();
-      container.querySelectorAll('[data-matrix-filter]').forEach(b => {
-        const isAct = b.getAttribute('data-matrix-filter') === cluster;
-        b.classList.toggle('active', isAct);
-        b.setAttribute('aria-pressed', isAct ? 'true' : 'false');
-      });
+      const track = state.clMatrixTrack || 'all';
+      const qRaw = String(state.clMatrixQ || '').trim();
+      const qLow = qRaw.toLowerCase();
+      const qFold = (window.H2SearchCore && typeof window.H2SearchCore.fold === 'function')
+        ? window.H2SearchCore.fold(qRaw).toLowerCase()
+        : qLow;
       const cards = container.querySelectorAll('#cl-matrix-grid article');
       let visCount = 0;
+      const clusterTotals = { all: 0 };
+      const trackTotals = { all: 0, h2dev: 0, huan: 0, dgmd: 0 };
       cards.forEach(card => {
-        const c = card.getAttribute('data-matrix-cluster');
+        const c = card.getAttribute('data-matrix-cluster') || '';
+        const tr = card.getAttribute('data-matrix-track') || 'h2dev';
         const hay = card.getAttribute('data-matrix-search') || '';
         const matchC = cluster === 'all' || c === cluster;
-        const matchQ = !qLow || hay.includes(qLow);
+        const matchT = track === 'all' || tr === track;
+        const matchQ = !qLow || hay.includes(qLow) || (qFold && hay.includes(qFold));
+        if (matchT && matchQ) {
+          clusterTotals.all++;
+          if (c) clusterTotals[c] = (clusterTotals[c] || 0) + 1;
+        }
         if (matchC && matchQ) {
+          trackTotals.all++;
+          if (trackTotals[tr] !== undefined) trackTotals[tr]++;
+        }
+        if (matchC && matchT && matchQ) {
           card.style.display = '';
           visCount++;
         } else {
           card.style.display = 'none';
         }
       });
+      container.querySelectorAll('[data-matrix-filter]').forEach(b => {
+        const cid = b.getAttribute('data-matrix-filter') || 'all';
+        const isAct = cid === cluster;
+        b.classList.toggle('active', isAct);
+        b.setAttribute('aria-pressed', isAct ? 'true' : 'false');
+        const cSpan = b.querySelector('[data-chip-count]');
+        if (cSpan) cSpan.textContent = `· ${clusterTotals[cid] || 0}`;
+      });
+      container.querySelectorAll('[data-matrix-track]').forEach(b => {
+        const tid = b.getAttribute('data-matrix-track') || 'all';
+        const isTAct = tid === track;
+        b.classList.toggle('active', isTAct);
+        b.setAttribute('aria-pressed', isTAct ? 'true' : 'false');
+        const tSpan = b.querySelector('[data-chip-count]');
+        if (tSpan) tSpan.textContent = `· ${trackTotals[tid] || 0}`;
+      });
       const cntEl = document.getElementById('cl-matrix-count');
       if (cntEl) cntEl.textContent = `${visCount}/${cards.length}`;
       const clrBtn = document.getElementById('cl-matrix-clear');
-      if (clrBtn) clrBtn.classList.toggle('hidden', !(qLow || cluster !== 'all'));
+      if (clrBtn) clrBtn.classList.toggle('hidden', !(qLow || cluster !== 'all' || track !== 'all'));
       const descBox = document.getElementById('cl-matrix-cluster-desc');
       if (descBox) {
         const clData = CAT['data-tabs/chien-luoc.json'];
@@ -981,6 +1134,16 @@
     });
 
     document.addEventListener('click', (e) => {
+      const trackBtn = e.target.closest('[data-matrix-track]');
+      if (trackBtn) {
+        const rawTrack = trackBtn.getAttribute('data-matrix-track') || 'all';
+        const container = trackBtn.closest('#cl-panel-matrix144');
+        if (!container) return;
+        const isAlreadyActive = rawTrack !== 'all' && trackBtn.classList.contains('active');
+        state.clMatrixTrack = isAlreadyActive ? 'all' : rawTrack;
+        applyMatrix144Filter(container);
+        return;
+      }
       const filterBtn = e.target.closest('[data-matrix-filter]');
       if (!filterBtn) return;
       const rawCluster = filterBtn.getAttribute('data-matrix-filter') || 'all';
@@ -1048,7 +1211,7 @@
       ico, stripDecorEmoji,
       highlightQuery, fmtMb, fmtBytes, loadChecks, loadWatched,
       watchedBadge, watchedProgress, watchedResumeLabel,
-      quickAccessBar, openNicheVideos, expandNicheMore, bindNicheActions, syncVideoUrl,
+      quickAccessBar, openNicheVideos, expandNicheMore, bindNicheActions, syncVideoUrl, syncNxPageUrl,
       RAW_NICHE_GROUPS, RAW_NICHE_TO_GROUP, rawNicheGroup, NICHE_MAP,
       APP_BUILD_VER: (typeof APP_BUILD_VER !== 'undefined' ? APP_BUILD_VER : '')
     });
@@ -1074,6 +1237,10 @@
           activeSugIdx = -1;
           window._videoSugDismissed = false;
           const val = fq.value;
+          if (fq.getAttribute('role') === 'combobox') {
+            fq.removeAttribute('aria-activedescendant');
+            if (!val.trim()) fq.setAttribute('aria-expanded', 'false');
+          }
           /* FIX (uifix88) F1: nguoi dung go tay -> bo dinh danh 1 muc (did/di, rid, handle) de
              tim kiem lai toan bo, khong bi khoa trong 1 muc. */
           if (state.tab === 'tai-lieu') { state.promptQ = val; state.docPage = 1; state.docDid = ''; state.docIdx = -1; syncDocPageUrl(); }
@@ -1085,7 +1252,13 @@
             const clearBtn = document.getElementById('btn-clear-tatca-q');
             if (clearBtn) clearBtn.classList.toggle('hidden', !val);
           }
-          else { state.q = val; state.videoPage = 1; syncVideoUrl(); }
+          else {
+            state.q = val;
+            state.videoPage = 1;
+            const clearVideoBtn = document.getElementById('btn-clear-video-q');
+            if (clearVideoBtn) clearVideoBtn.classList.toggle('hidden', !val);
+            syncVideoUrl();
+          }
 
           // Real-time live suggestions for rawkenh tab
           if (state.tab === 'rawkenh' && window.showRawSearchSuggestions) {
@@ -1164,15 +1337,33 @@
           if (e.key === 'ArrowDown') {
             e.preventDefault();
             activeSugIdx = (activeSugIdx + 1) % rows.length;
-            rows.forEach((r, i) => r.classList.toggle('is-sug-active', i === activeSugIdx));
+            rows.forEach((r, i) => {
+              const sel = (i === activeSugIdx);
+              r.classList.toggle('is-sug-active', sel);
+              r.setAttribute('aria-selected', sel ? 'true' : 'false');
+            });
+            if (fq.getAttribute('role') === 'combobox' && rows[activeSugIdx] && rows[activeSugIdx].id) {
+              fq.setAttribute('aria-activedescendant', rows[activeSugIdx].id);
+            }
           } else if (e.key === 'ArrowUp') {
             e.preventDefault();
             activeSugIdx = (activeSugIdx - 1 + rows.length) % rows.length;
-            rows.forEach((r, i) => r.classList.toggle('is-sug-active', i === activeSugIdx));
+            rows.forEach((r, i) => {
+              const sel = (i === activeSugIdx);
+              r.classList.toggle('is-sug-active', sel);
+              r.setAttribute('aria-selected', sel ? 'true' : 'false');
+            });
+            if (fq.getAttribute('role') === 'combobox' && rows[activeSugIdx] && rows[activeSugIdx].id) {
+              fq.setAttribute('aria-activedescendant', rows[activeSugIdx].id);
+            }
           } else if (e.key === 'Enter') {
             if (activeSugIdx >= 0 && activeSugIdx < rows.length) {
               e.preventDefault();
               window._videoSugDismissed = true;
+              if (fq.getAttribute('role') === 'combobox') {
+                fq.setAttribute('aria-expanded', 'false');
+                fq.removeAttribute('aria-activedescendant');
+              }
               rows[activeSugIdx].click();
             } else if (isTatcaTab && rows[0]) {
               e.preventDefault();
@@ -1181,10 +1372,18 @@
             } else {
               window._videoSugDismissed = true;
               box.classList.add('hidden');
+              if (fq.getAttribute('role') === 'combobox') {
+                fq.setAttribute('aria-expanded', 'false');
+                fq.removeAttribute('aria-activedescendant');
+              }
             }
           } else if (e.key === 'Escape') {
             window._videoSugDismissed = true;
             box.classList.add('hidden');
+            if (fq.getAttribute('role') === 'combobox') {
+              fq.setAttribute('aria-expanded', 'false');
+              fq.removeAttribute('aria-activedescendant');
+            }
           }
         };
       }
@@ -1224,6 +1423,7 @@
           e.stopPropagation();
           state.q = '';
           state.videoPage = 1;
+          btnClearVideoQ.classList.add('hidden');
           const fqEl = document.getElementById('fq');
           if (fqEl) { fqEl.value = ''; fqEl.focus(); }
           const box = document.getElementById('video-search-suggestions');
@@ -1349,13 +1549,36 @@
         const ftsBox = document.getElementById(id);
         if (!ftsBox) return;
         ftsBox.onclick = (e) => {
-          if (e.target.closest('.js-tab-fts-jump')) return;
+          const altBtn = e.target.closest('.js-tab-fts-alt');
+          if (altBtn) {
+            e.stopPropagation();
+            const altUrl = altBtn.getAttribute('data-url') || '';
+            window._videoSugDismissed = true;
+            ftsBox.classList.add('hidden');
+            const fqEl = document.getElementById('fq');
+            if (fqEl && fqEl.getAttribute('role') === 'combobox') {
+              fqEl.setAttribute('aria-expanded', 'false');
+              fqEl.removeAttribute('aria-activedescendant');
+            }
+            if (altUrl) navigateDirectUrl(altUrl);
+            return;
+          }
           const row = e.target.closest('.js-tab-fts-row');
           if (row) {
             e.stopPropagation();
             const directUrl = row.getAttribute('data-url') || '';
             window._videoSugDismissed = true;
             ftsBox.classList.add('hidden');
+            if (id === 'nx-search-suggestions') {
+              const fqNxEl = document.getElementById('fq-nx');
+              if (fqNxEl) { fqNxEl.setAttribute('aria-expanded', 'false'); fqNxEl.removeAttribute('aria-activedescendant'); }
+            } else if (id === 'kenh-search-suggestions') {
+              const fqEl = document.getElementById('fq');
+              if (fqEl && fqEl.getAttribute('role') === 'combobox') {
+                fqEl.setAttribute('aria-expanded', 'false');
+                fqEl.removeAttribute('aria-activedescendant');
+              }
+            }
             if (directUrl) navigateDirectUrl(directUrl);
           }
         };
@@ -1377,9 +1600,24 @@
           if (rawBox && !rawBox.contains(e.target) && e.target !== fqEl) rawBox.classList.add('hidden');
           if (vidBox && !vidBox.contains(e.target) && e.target !== fqEl) vidBox.classList.add('hidden');
           if (docBox && !docBox.contains(e.target) && e.target !== fqEl) docBox.classList.add('hidden');
-          if (kenhBox && !kenhBox.contains(e.target) && e.target !== fqEl) kenhBox.classList.add('hidden');
-          if (nxBox && !nxBox.contains(e.target) && e.target !== fqNxEl) nxBox.classList.add('hidden');
-          if (tatcaBox && !tatcaBox.contains(e.target) && e.target !== fqEl) tatcaBox.classList.add('hidden');
+          if (kenhBox && !kenhBox.contains(e.target) && e.target !== fqEl) {
+            kenhBox.classList.add('hidden');
+            if (fqEl && fqEl.getAttribute('role') === 'combobox') {
+              fqEl.setAttribute('aria-expanded', 'false');
+              fqEl.removeAttribute('aria-activedescendant');
+            }
+          }
+          if (nxBox && !nxBox.contains(e.target) && e.target !== fqNxEl) {
+            nxBox.classList.add('hidden');
+            if (fqNxEl) { fqNxEl.setAttribute('aria-expanded', 'false'); fqNxEl.removeAttribute('aria-activedescendant'); }
+          }
+          if (tatcaBox && !tatcaBox.contains(e.target) && e.target !== fqEl) {
+            tatcaBox.classList.add('hidden');
+            if (fqEl && fqEl.getAttribute('role') === 'combobox') {
+              fqEl.setAttribute('aria-expanded', 'false');
+              fqEl.removeAttribute('aria-activedescendant');
+            }
+          }
           if (reupBox && !reupBox.contains(e.target) && e.target !== fqEl) reupBox.classList.add('hidden');
         });
       }
@@ -1525,6 +1763,10 @@
       if (rr) { rr.onclick = () => { state.reupId = ''; state.reupQ = ''; state.reupType = ''; state.reupNiche = ''; syncReupUrl(); render(); }; }
       const rreupEmpty = document.getElementById('freset-reup-empty');
       if (rreupEmpty) { rreupEmpty.onclick = () => { state.reupId = ''; state.reupQ = ''; state.reupType = ''; state.reupNiche = ''; syncReupUrl(); render(); }; }
+      function hasExactKenhEntityQ(val) {
+        const t = String(val || '').trim();
+        return Boolean(t && (/^#?H\d{2}(?:\b|\s|—|-|$)/i.test(t) || /^#?RAW-\d{3}$/i.test(t) || /^@[^\s]+$/.test(t) || /^UC[A-Za-z0-9_-]{16,}$/i.test(t)));
+      }
       const btnClearKenhQ = document.getElementById('btn-clear-kenh-q');
       if (btnClearKenhQ) {
         btnClearKenhQ.onclick = (e) => {
@@ -1533,7 +1775,14 @@
           state.kenhHandle = '';
           state.kenhPage = 1;
           const fqEl = document.getElementById('fq');
-          if (fqEl) { fqEl.value = ''; fqEl.focus(); }
+          if (fqEl) {
+            fqEl.value = '';
+            if (fqEl.getAttribute('role') === 'combobox') {
+              fqEl.setAttribute('aria-expanded', 'false');
+              fqEl.removeAttribute('aria-activedescendant');
+            }
+            fqEl.focus();
+          }
           const box = document.getElementById('kenh-search-suggestions');
           if (box) box.classList.add('hidden');
           syncKenhUrl();
@@ -1541,21 +1790,30 @@
         };
       }
       document.querySelectorAll('[data-kenh-kpi]').forEach(card => {
+        card.classList.toggle('active', card.getAttribute('data-kenh-kpi-active') === '1');
         card.style.cursor = 'pointer';
+        card.onkeydown = (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            card.click();
+          }
+        };
         card.onclick = () => {
           const kpi = card.getAttribute('data-kenh-kpi') || 'all';
+          const wasBypassed = Boolean(state.kenhHandle || hasExactKenhEntityQ(state.kenhQ));
           state.kenhHandle = '';
+          if (hasExactKenhEntityQ(state.kenhQ)) state.kenhQ = '';
           state.kenhPage = 1;
           if (kpi === 'all') {
             state.kenhQ = '';
             state.kenhNiche = '';
             state.kenhStatus = '';
-          } else if (kpi === 'live') {
-            state.kenhStatus = state.kenhStatus === 'live' ? '' : 'live';
-          } else if (kpi === 'dead') {
-            state.kenhStatus = state.kenhStatus === 'dead' ? '' : 'dead';
-          } else if (kpi === 'raw') {
-            state.kenhStatus = state.kenhStatus === 'raw' ? '' : 'raw';
+            state.kenhSort = '';
+            state.kenhLang = '';
+            state.kenhMarket = '';
+            state.kenhCap = '';
+          } else if (kpi === 'live' || kpi === 'dead' || kpi === 'raw') {
+            state.kenhStatus = (!wasBypassed && state.kenhStatus === kpi) ? '' : kpi;
           }
           syncKenhUrl();
           render();
@@ -1565,8 +1823,10 @@
         if (btn.hasAttribute('data-open-tab')) return;
         btn.onclick = () => {
           const val = btn.getAttribute('data-kenh-status') || '';
-          state.kenhStatus = (val && state.kenhStatus === val) ? '' : val;
+          const wasBypassed = Boolean(state.kenhHandle || hasExactKenhEntityQ(state.kenhQ));
           state.kenhHandle = '';
+          if (hasExactKenhEntityQ(state.kenhQ)) state.kenhQ = '';
+          state.kenhStatus = (!wasBypassed && val && state.kenhStatus === val) ? '' : val;
           state.kenhPage = 1;
           syncKenhUrl();
           render();
@@ -1576,17 +1836,135 @@
         if (btn.hasAttribute('data-open-tab')) return;
         btn.onclick = () => {
           const val = btn.getAttribute('data-kenh-niche') || '';
-          state.kenhNiche = (val && state.kenhNiche === val) ? '' : val;
+          const wasBypassed = Boolean(state.kenhHandle || hasExactKenhEntityQ(state.kenhQ));
           state.kenhHandle = '';
+          if (hasExactKenhEntityQ(state.kenhQ)) state.kenhQ = '';
+          state.kenhNiche = (!wasBypassed && val && state.kenhNiche === val) ? '' : val;
           state.kenhPage = 1;
           syncKenhUrl();
           render();
         };
       });
+      document.querySelectorAll('[data-kenh-cap]').forEach(btn => {
+        btn.onclick = () => {
+          const val = (btn.getAttribute('data-kenh-cap') || '').toLowerCase();
+          const wasBypassed = Boolean(state.kenhHandle || hasExactKenhEntityQ(state.kenhQ));
+          state.kenhHandle = '';
+          if (hasExactKenhEntityQ(state.kenhQ)) state.kenhQ = '';
+          state.kenhCap = (!wasBypassed && val && state.kenhCap === val) ? '' : val;
+          state.kenhPage = 1;
+          syncKenhUrl();
+          render();
+        };
+      });
+      const kenhNxSel = document.getElementById('kenh-nx-select');
+      if (kenhNxSel) {
+        kenhNxSel.onchange = () => {
+          state.kenhHandle = '';
+          if (hasExactKenhEntityQ(state.kenhQ)) state.kenhQ = '';
+          state.kenhNiche = kenhNxSel.value || '';
+          state.kenhPage = 1;
+          syncKenhUrl();
+          render();
+        };
+      }
+      const kenhSortSel = document.getElementById('kenh-sort');
+      if (kenhSortSel) {
+        kenhSortSel.onchange = () => {
+          state.kenhSort = kenhSortSel.value || '';
+          state.kenhPage = 1;
+          syncKenhUrl();
+          render();
+        };
+      }
+      const kenhLangSel = document.getElementById('kenh-lang');
+      if (kenhLangSel) {
+        kenhLangSel.onchange = () => {
+          state.kenhHandle = '';
+          if (hasExactKenhEntityQ(state.kenhQ)) state.kenhQ = '';
+          state.kenhLang = kenhLangSel.value || '';
+          state.kenhPage = 1;
+          syncKenhUrl();
+          render();
+        };
+      }
+      const kenhMktSel = document.getElementById('kenh-market');
+      if (kenhMktSel) {
+        kenhMktSel.onchange = () => {
+          state.kenhHandle = '';
+          if (hasExactKenhEntityQ(state.kenhQ)) state.kenhQ = '';
+          state.kenhMarket = kenhMktSel.value || '';
+          state.kenhPage = 1;
+          syncKenhUrl();
+          render();
+        };
+      }
+      document.querySelectorAll('.js-km-page-size').forEach(sel => {
+        sel.onchange = () => {
+          const sz = parseInt(sel.value, 10);
+          state.kenhPageSize = [24, 48, 96].includes(sz) ? sz : 24;
+          state.kenhPage = 1;
+          syncKenhUrl();
+          render();
+        };
+      });
+      function triggerKenhPageJump(inputEl, pos) {
+        if (!inputEl) return;
+        const maxP = parseInt(inputEl.getAttribute('max') || '1', 10) || 1;
+        const rawP = parseInt(inputEl.value || '1', 10);
+        const nextP = Number.isFinite(rawP) ? Math.min(Math.max(1, rawP), maxP) : 1;
+        state.kenhPage = nextP;
+        syncKenhUrl();
+        Promise.resolve(render()).then(() => {
+          if (pos === 'bottom') scrollToTopPager('Phân trang kênh mẫu');
+        });
+      }
+      document.querySelectorAll('.js-km-page-jump').forEach(inp => {
+        inp.onkeydown = (e) => {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            const nav = inp.closest('nav');
+            const btn = nav ? nav.querySelector('.js-km-page-jump-btn') : null;
+            triggerKenhPageJump(inp, btn ? btn.getAttribute('data-pos') : 'top');
+          }
+        };
+      });
+      document.querySelectorAll('.js-km-page-jump-btn').forEach(btn => {
+        btn.onclick = () => {
+          const wrap = btn.closest('.km-page-jump');
+          const inp = wrap ? wrap.querySelector('.js-km-page-jump') : null;
+          triggerKenhPageJump(inp, btn.getAttribute('data-pos') || 'top');
+        };
+      });
+      const rkb = document.getElementById('freset-kenh-bypass');
+      if (rkb) {
+        rkb.onclick = () => {
+          if (state.kenhHandle && state.kenhQ === state.kenhHandle) state.kenhQ = '';
+          else if (hasExactKenhEntityQ(state.kenhQ)) state.kenhQ = '';
+          state.kenhHandle = '';
+          state.kenhPage = 1;
+          syncKenhUrl();
+          render();
+        };
+      }
+      function resetAllKenhFilters() {
+        state.kenhQ = '';
+        state.kenhHandle = '';
+        state.kenhNiche = '';
+        state.kenhStatus = '';
+        state.kenhSort = '';
+        state.kenhLang = '';
+        state.kenhMarket = '';
+        state.kenhCap = '';
+        state.kenhPage = 1;
+        state.kenhPageSize = 24;
+        syncKenhUrl();
+        render();
+      }
       const rk = document.getElementById('freset-kenh');
-      if (rk) { rk.onclick = () => { state.kenhQ = ''; state.kenhHandle = ''; state.kenhNiche = ''; state.kenhStatus = ''; state.kenhPage = 1; syncKenhUrl(); render(); }; }
+      if (rk) { rk.onclick = resetAllKenhFilters; }
       const rke = document.getElementById('freset-kenh-empty');
-      if (rke) { rke.onclick = () => { state.kenhQ = ''; state.kenhHandle = ''; state.kenhNiche = ''; state.kenhStatus = ''; state.kenhPage = 1; syncKenhUrl(); render(); }; }
+      if (rke) { rke.onclick = resetAllKenhFilters; }
       /* FIX (uifix88) F2: moi thay doi bo loc Raw deu day vao URL (rq/rid/rn/rg/page) de F5 va
          Back/Forward khong lech trang thai. */
       const btnClearRawRid = document.getElementById('btn-clear-raw-rid');
@@ -1722,8 +2100,6 @@
       if (fm) { fm.onchange = () => { state.marketFilter = fm.value; state.videoPage = 1; syncVideoUrl(); render(); }; }
       const fs = document.getElementById('fsort');
       if (fs) { fs.onchange = () => { state.sortBy = fs.value; state.videoPage = 1; syncVideoUrl(); render(); }; }
-      const ff = document.getElementById('ffree');
-      if (ff) { ff.onchange = () => { state.freeOnly = ff.checked; state.videoPage = 1; syncVideoUrl(); render(); }; }
       document.querySelectorAll('[data-watch]').forEach(btn => {
         btn.onclick = () => { state.watchFilter = state.watchFilter === btn.getAttribute('data-watch') ? '' : btn.getAttribute('data-watch'); state.videoPage = 1; syncVideoUrl(); render(); };
       });
@@ -1733,8 +2109,15 @@
       const fq_nx = document.getElementById('fq-nx');
       if (fq_nx) {
         let activeNxSugIdx = -1;
+        const closeNxSugBox = (box) => {
+          activeNxSugIdx = -1;
+          if (box) box.classList.add('hidden');
+          fq_nx.setAttribute('aria-expanded', 'false');
+          fq_nx.removeAttribute('aria-activedescendant');
+        };
         fq_nx.oninput = () => {
           activeNxSugIdx = -1;
+          fq_nx.removeAttribute('aria-activedescendant');
           window._videoSugDismissed = false;
           state.nxQ = fq_nx.value;
           state.nxSub = '';
@@ -1744,12 +2127,7 @@
           }
           clearTimeout(searchDebounceTimer);
           searchDebounceTimer = setTimeout(() => {
-            Promise.resolve(render()).then(() => {
-              const qTrim = String(state.nxQ || '').trim();
-              if (/^#?(?:H\d{2}|META-0[1-5]|SUB-\d{1,3}|SN-H\d{2}-\d{3})\b/i.test(qTrim)) {
-                applyDeepTargetScrollAndModal();
-              }
-            });
+            render();
           }, 200);
         };
         fq_nx.onfocus = () => {
@@ -1759,28 +2137,49 @@
         };
         fq_nx.onkeydown = (e) => {
           const box = document.getElementById('nx-search-suggestions');
-          if (!box || box.classList.contains('hidden')) return;
-          const rows = box.querySelectorAll('.js-tab-fts-row');
+          const boxOpen = Boolean(box && !box.classList.contains('hidden'));
+          const rows = boxOpen ? box.querySelectorAll('.js-tab-fts-row') : [];
           if (e.key === 'ArrowDown' && rows.length) {
             e.preventDefault();
             activeNxSugIdx = (activeNxSugIdx + 1) % rows.length;
-            rows.forEach((r, i) => r.classList.toggle('is-sug-active', i === activeNxSugIdx));
+            rows.forEach((r, i) => {
+              const sel = i === activeNxSugIdx;
+              r.classList.toggle('is-sug-active', sel);
+              r.setAttribute('aria-selected', sel ? 'true' : 'false');
+            });
+            if (rows[activeNxSugIdx] && rows[activeNxSugIdx].id) fq_nx.setAttribute('aria-activedescendant', rows[activeNxSugIdx].id);
           } else if (e.key === 'ArrowUp' && rows.length) {
             e.preventDefault();
             activeNxSugIdx = (activeNxSugIdx - 1 + rows.length) % rows.length;
-            rows.forEach((r, i) => r.classList.toggle('is-sug-active', i === activeNxSugIdx));
+            rows.forEach((r, i) => {
+              const sel = i === activeNxSugIdx;
+              r.classList.toggle('is-sug-active', sel);
+              r.setAttribute('aria-selected', sel ? 'true' : 'false');
+            });
+            if (rows[activeNxSugIdx] && rows[activeNxSugIdx].id) fq_nx.setAttribute('aria-activedescendant', rows[activeNxSugIdx].id);
           } else if (e.key === 'Enter') {
-            if (activeNxSugIdx >= 0 && activeNxSugIdx < rows.length) {
+            if (boxOpen && activeNxSugIdx >= 0 && activeNxSugIdx < rows.length) {
               e.preventDefault();
               window._videoSugDismissed = true;
               rows[activeNxSugIdx].click();
             } else {
+              e.preventDefault();
               window._videoSugDismissed = true;
-              box.classList.add('hidden');
+              closeNxSugBox(box);
+              clearTimeout(searchDebounceTimer);
+              state.nxQ = fq_nx.value;
+              state.nxPage = 1;
+              syncNxPageUrl();
+              Promise.resolve(render()).then(() => {
+                const qTrim = String(state.nxQ || '').trim();
+                if (/^#?(?:H\d{2}|META-0[1-5]|SUB-\d{1,3}|SN-H\d{2}-\d{3})\b/i.test(qTrim)) {
+                  applyDeepTargetScrollAndModal();
+                }
+              });
             }
           } else if (e.key === 'Escape') {
             window._videoSugDismissed = true;
-            box.classList.add('hidden');
+            closeNxSugBox(box);
           }
         };
       }
@@ -1792,7 +2191,12 @@
           state.nxSub = '';
           state.nxPage = 1;
           const fqNxEl = document.getElementById('fq-nx');
-          if (fqNxEl) { fqNxEl.value = ''; fqNxEl.focus(); }
+          if (fqNxEl) {
+            fqNxEl.value = '';
+            fqNxEl.setAttribute('aria-expanded', 'false');
+            fqNxEl.removeAttribute('aria-activedescendant');
+            fqNxEl.focus();
+          }
           const box = document.getElementById('nx-search-suggestions');
           if (box) box.classList.add('hidden');
           syncNxPageUrl();
@@ -1800,18 +2204,26 @@
         };
       }
       document.querySelectorAll('[data-nx-sub-chip]').forEach(el => {
-        const triggerSub = (e) => {
+        el.onclick = (e) => {
           e.preventDefault();
           e.stopPropagation();
           const subCode = (el.getAttribute('data-nx-sub-chip') || '').trim().toUpperCase();
           if (!subCode) return;
-          const isAlreadyActive = (String(state.nxSub || '').toUpperCase() === subCode) || (String(state.nxQ || '').trim().replace(/^#/, '').toUpperCase() === subCode);
+          const rawCurSub = String(state.nxSub || '').trim().replace(/^#/, '').toUpperCase();
+          const rawCurQ = String(state.nxQ || '').trim().replace(/^#/, '').toUpperCase();
+          const scopedCurSub = (/^\d{1,3}$/.test(rawCurSub) && /^H\d{2}$/.test(rawCurQ))
+            ? ('SN-' + rawCurQ + '-' + rawCurSub.padStart(3, '0'))
+            : rawCurSub;
+          const isAlreadyActive = (scopedCurSub === subCode) || (rawCurSub === subCode) || (rawCurQ === subCode);
           if (isAlreadyActive) {
             state.nxSub = '';
-            state.nxQ = '';
+            if (rawCurQ === subCode || (/^\d{1,3}$/.test(rawCurSub) && /^H\d{2}$/.test(rawCurQ))) state.nxQ = '';
           } else {
             state.nxSub = subCode;
-            state.nxQ = subCode;
+            state.nxQ = '';
+            state.nxTier = '';
+            state.nxMarket = '';
+            state.nxBranch = '';
           }
           state.nxPage = 1;
           syncNxPageUrl();
@@ -1819,16 +2231,18 @@
             if (state.nxSub) applyDeepTargetScrollAndModal();
           });
         };
-        el.onclick = triggerSub;
-        el.onkeydown = (e) => {
-          if (e.key === 'Enter' || e.key === ' ') triggerSub(e);
-        };
       });
       document.querySelectorAll('[data-nx-tier]').forEach(btn => {
         btn.onclick = () => {
           const val = btn.getAttribute('data-nx-tier') || '';
-          state.nxTier = (val && state.nxTier === val) ? '' : val;
-          state.nxSub = '';
+          if (isExactNxEntityQuery(state.nxQ, state.nxSub)) {
+            state.nxQ = '';
+            state.nxSub = '';
+            state.nxTier = val;
+          } else {
+            state.nxTier = (val && state.nxTier === val) ? '' : val;
+            state.nxSub = '';
+          }
           state.nxPage = 1;
           syncNxPageUrl();
           render();
@@ -1838,8 +2252,14 @@
         if (card.hasAttribute('data-open-tab')) return;
         card.onclick = () => {
           const targetTier = card.getAttribute('data-nx-kpi-tier') || '';
-          state.nxTier = (state.nxTier === targetTier) ? '' : targetTier;
-          state.nxSub = '';
+          if (isExactNxEntityQuery(state.nxQ, state.nxSub)) {
+            state.nxQ = '';
+            state.nxSub = '';
+            state.nxTier = targetTier;
+          } else {
+            state.nxTier = (state.nxTier === targetTier) ? '' : targetTier;
+            state.nxSub = '';
+          }
           state.nxPage = 1;
           syncNxPageUrl();
           render();
@@ -1859,28 +2279,21 @@
           syncNxPageUrl();
           Promise.resolve(render()).then(() => {
             if (!state.nxQ) return;
-            requestAnimationFrame(() => {
-              const cardEl = document.getElementById('niche-card-' + rCode.toUpperCase());
-              if (!cardEl) return;
-              const pr = document.getElementById('panel-root');
-              if (pr && pr.scrollHeight > pr.clientHeight + 2) {
-                const prRect = pr.getBoundingClientRect();
-                const cRect = cardEl.getBoundingClientRect();
-                pr.scrollTop = Math.max(0, pr.scrollTop + (cRect.top - prRect.top) - 16);
-              } else {
-                const bar = document.getElementById('vd-topbar');
-                const off = (bar ? bar.getBoundingClientRect().height : 0) + 12;
-                window.scrollTo(0, Math.max(0, cardEl.getBoundingClientRect().top + window.scrollY - off));
-              }
-            });
+            scrollElementIntoContainer(document.getElementById('niche-card-' + rCode.toUpperCase()));
           });
         };
       });
       document.querySelectorAll('[data-nx-market]').forEach(btn => {
         btn.onclick = () => {
           const val = btn.getAttribute('data-nx-market') || '';
-          state.nxMarket = (val && state.nxMarket === val) ? '' : val;
-          state.nxSub = '';
+          if (isExactNxEntityQuery(state.nxQ, state.nxSub)) {
+            state.nxQ = '';
+            state.nxSub = '';
+            state.nxMarket = val;
+          } else {
+            state.nxMarket = (val && state.nxMarket === val) ? '' : val;
+            state.nxSub = '';
+          }
           state.nxPage = 1;
           syncNxPageUrl();
           render();
@@ -1889,8 +2302,14 @@
       document.querySelectorAll('[data-nx-branch]').forEach(btn => {
         btn.onclick = () => {
           const val = btn.getAttribute('data-nx-branch') || '';
-          state.nxBranch = (val && state.nxBranch === val) ? '' : val;
-          state.nxSub = '';
+          if (isExactNxEntityQuery(state.nxQ, state.nxSub)) {
+            state.nxQ = '';
+            state.nxSub = '';
+            state.nxBranch = val;
+          } else {
+            state.nxBranch = (val && state.nxBranch === val) ? '' : val;
+            state.nxSub = '';
+          }
           state.nxPage = 1;
           syncNxPageUrl();
           render();
@@ -1905,11 +2324,11 @@
       if (fre) { fre.onclick = () => { state.q = ''; state.nicheFilter = ''; state.skuFilter = ''; state.marketFilter = ''; state.sortBy = ''; state.freeOnly = false; state.recentOnly = false; state.watchFilter = ''; state.videoPage = 1; syncVideoUrl(); render(); }; }
       const fr_nx = document.getElementById('freset-nx');
       if (fr_nx) {
-        fr_nx.onclick = () => { state.nxQ = ''; state.nxSub = ''; state.nxTier = ''; state.nxMarket = ''; state.nxBranch = ''; state.nxSort = 'rank'; state.nxLimit = 0; state.nxPage = 1; syncNxPageUrl(); render(); };
+        fr_nx.onclick = resetNxFilters;
       }
       const fre_nx = document.getElementById('freset-nx-empty');
       if (fre_nx) {
-        fre_nx.onclick = () => { state.nxQ = ''; state.nxSub = ''; state.nxTier = ''; state.nxMarket = ''; state.nxBranch = ''; state.nxSort = 'rank'; state.nxLimit = 0; state.nxPage = 1; syncNxPageUrl(); render(); };
+        fre_nx.onclick = resetNxFilters;
       }
     }
 
@@ -1942,7 +2361,12 @@
         state.clSubTab = state.clSubTab || 'principles';
         const curTab = state.clSubTab;
         const isAll = curTab === 'all';
-        const mCount = Number((window._overviewSummaryCache && (window._overviewSummaryCache.videosH2dev || window._overviewSummaryCache.videos)) || (Array.isArray(CAT['data-tabs/videos.json']) && CAT['data-tabs/videos.json'].length) || 0);
+        const clCat = CAT['data-tabs/chien-luoc.json'];
+        const mCount = Number(
+          (clCat && clCat.matrix144 && Array.isArray(clCat.matrix144.items) && clCat.matrix144.items.length) ||
+          (window._overviewSummaryCache && (window._overviewSummaryCache.totalVideos || window._overviewSummaryCache.lessons)) ||
+          355
+        );
         const mLabel = mCount ? `Ma trận ${mCount} Bài` : 'Ma trận Bài học';
         const mShortLabel = mCount ? `${mCount} Bài` : 'Ma trận';
         if (topbarSubnav) {
@@ -2047,7 +2471,7 @@
     try {
       const a11yEl = document.getElementById('a11y-status');
       const meta = TABS.find(t => t.id === state.tab);
-      if (a11yEl && meta) a11yEl.textContent = 'Da mo tab ' + meta.name;
+      if (a11yEl && meta) a11yEl.textContent = 'Đã mở tab ' + meta.name;
     } catch (e) {}
         syncTopbarSubnav();
         bindSearch();
@@ -2089,20 +2513,23 @@
           box.onchange = () => {
             saveCheck(box.getAttribute('data-check-id'), box.checked);
             box.setAttribute('aria-checked', box.checked ? 'true' : 'false');
+            const allBoxes = document.querySelectorAll('#cl-checklist-12 [data-check-id]');
+            const done = [...allBoxes].filter(b => b.checked).length;
             const prog = document.getElementById('cl-checklist-progress');
-            if (prog) {
-              const allBoxes = document.querySelectorAll('#cl-checklist-12 [data-check-id]');
-              const done = [...allBoxes].filter(b => b.checked).length;
-              prog.textContent = `Đã hoàn thành ${done}/${allBoxes.length}`;
+            if (prog) prog.textContent = `Đã hoàn thành ${done}/${allBoxes.length}`;
+            const barFill = document.getElementById('cl-policy-bar-fill');
+            if (barFill) barFill.style.width = `${Math.round((done / Math.max(1, allBoxes.length)) * 100)}%`;
+            if (box.checked && window.H2FX && typeof window.H2FX.burst === 'function') {
+              window.H2FX.burst(done === allBoxes.length && prog ? prog : box, done === allBoxes.length ? 'milestone' : 'success');
             }
           };
         });
         if (!window._cachedStatsText) {
           try {
             const ov = await loadOverviewSummary();
-            const totalVideos = Number(ov.totalVideos || ov.lessons || 347);
-            const totalDocs = Number(ov.documents || 598);
-            const kenhLive = Number(ov.liveChannels || ov.channels || 987);
+            const totalVideos = Number(ov.totalVideos || ov.lessons || 355);
+            const totalDocs = Number(ov.documents || 761);
+            const kenhLive = Number(ov.liveChannels || ov.channels || 1444);
             window._cachedStatsText = totalVideos + " video · " + totalDocs + " TL · " + kenhLive + " kênh";
           } catch(e) {}
         }
@@ -2127,15 +2554,15 @@
     /* Alias URL cu -> tab id moi (BE da 301, day la lop bao hiem cho link noi bo con sot) */
     const URL_ALIAS = {
       'tongquan': 'tatca', 'tat-ca': 'tatca',
-      'kichban': 'tai-lieu', 'tailieu': 'tai-lieu',
+      'kichban': 'tai-lieu', 'kich-ban': 'tai-lieu', 'tailieu': 'tai-lieu',
       'nhac-nen': 'nhac', 'nhacnen': 'nhac',
       'nguon-reup': 'nguonreup', 'reup': 'nguonreup',
       'kenh': 'kenh-mau', 'kenhmau': 'kenh-mau',
       'ngach': 'ngachxanh', 'ngach-xanh': 'ngachxanh',
       'raw': 'rawkenh', 'raw-kenh': 'rawkenh', 'raw-kenh-mau': 'rawkenh',
       'chien-luoc': 'chienluoc',
-      'so-do': 'sodo', 'sodo-db': 'sodo', 'so-do-db': 'sodo',
-      'lo-trinh': 'lotrinh'
+      'so-do': 'sodo', 'sodo-db': 'sodo', 'so-do-db': 'sodo', 'sododb': 'sodo',
+      'lo-trinh': 'lotrinh', 'lotrinhkenh': 'lotrinh'
     };
     function readStateFromURL(validTabs) {
       const tabs = validTabs || URL_TABS;
@@ -2154,9 +2581,8 @@
       const rawVmod = (qp.get('vmod') || qp.get('niche') || '').trim();
       const inferredVmodTrack = /^huan-m/i.test(rawVmod) ? 'huan' : (/^dgmd-m/i.test(rawVmod) ? 'dgmd' : (/^(?:h2dev-)?m\d+/i.test(rawVmod) ? 'h2dev' : ''));
       const explicitVideoTrack = qp.get('track') || qp.get('vbranch') || inferredVmodTrack || '';
-      const hasCrossTrackVideoFilter = Boolean(qp.get('vq') || qp.get('niche') || qp.get('vmod') || qp.get('skus') || qp.get('market') || qp.get('recent') || qp.get('watch') || qp.get('free'));
       state.videoTrack = (t === 'video')
-        ? (explicitVideoTrack || (hasCrossTrackVideoFilter ? 'all' : (sessionStorage.getItem('h2dev-video-track') || 'all')))
+        ? (explicitVideoTrack || 'all')
         : 'all';
       if (state.videoTrack !== 'dgmd' && state.videoTrack !== 'huan' && state.videoTrack !== 'h2dev' && state.videoTrack !== 'all') state.videoTrack = 'all';
       if (t === 'video') {
@@ -2214,6 +2640,8 @@
       state.docBranch = (t === 'tai-lieu') ? (qp.get('db') || '').toUpperCase() : '';
       state.kindFilter = (t === 'tai-lieu') ? (qp.get('kind') || '') : '';
       state.promptNiche = (t === 'tai-lieu') ? (qp.get('pn') || '') : '';
+      const rawDs = (t === 'tai-lieu') ? (qp.get('ds') || '').toLowerCase() : '';
+      state.docSourceFilter = (rawDs === 'local' || rawDs === 'link') ? rawDs : '';
       /* FIX (uifix87) LỖI 2: gợi ý FTS loại SOP mở /tai-lieu (loc dung 1 muc qua did/di).
          Truoc day router KHONG doc 'pq' => link mo tab Tai lieu nhung o tim kiem trong.
          Nay doc 'pq' -> state.promptQ (dung chung voi o tim cua tab Tai lieu).
@@ -2224,20 +2652,29 @@
       state.reupQ = (t === 'nguonreup') ? (qp.get('rq') || '') : '';
       state.reupType = (t === 'nguonreup') ? (qp.get('rt') || '') : '';
       state.reupNiche = (t === 'nguonreup') ? (qp.get('rn') || '') : '';
-      state.kenhQ = (t === 'kenh-mau') ? (qp.get('kq') || qp.get('handle') || '') : '';
+      state.kenhQ = (t === 'kenh-mau') ? (qp.get('kq') || qp.get('q') || qp.get('handle') || '') : '';
       state.kenhStatus = (t === 'kenh-mau') ? (qp.get('ks') || '') : '';
       state.kenhNiche = (t === 'kenh-mau') ? (qp.get('kn') || '') : '';
+      const rawKsort = (t === 'kenh-mau') ? String(qp.get('ksort') || '').toLowerCase() : '';
+      state.kenhSort = ['subs', 'views', 'videos', 'lessons', 'az'].includes(rawKsort) ? rawKsort : '';
+      state.kenhLang = (t === 'kenh-mau') ? (qp.get('klang') || '') : '';
+      state.kenhMarket = (t === 'kenh-mau') ? (qp.get('kmkt') || '').toUpperCase() : '';
+      const rawKcap = (t === 'kenh-mau') ? String(qp.get('kcap') || '').toLowerCase() : '';
+      state.kenhCap = ['voice', 'lessons', 'revived'].includes(rawKcap) ? rawKcap : '';
+      const rawKps = (t === 'kenh-mau') ? parseInt(qp.get('kps') || '24', 10) : 24;
+      state.kenhPageSize = [24, 48, 96].includes(rawKps) ? rawKps : 24;
       state.sodoQ = (t === 'sodo') ? (qp.get('sq') || '') : '';
       state.sodoNode = (t === 'sodo') ? (qp.get('snode') || '') : '';
       state.sodoPathFrom = (t === 'sodo') ? (qp.get('sfrom') || '') : '';
       state.sodoPathTo = (t === 'sodo') ? (qp.get('sto') || '') : '';
       state.clMatrixCluster = (t === 'chienluoc') ? (qp.get('clm') || 'all') : 'all';
+      state.clMatrixTrack = (t === 'chienluoc') ? (qp.get('clt') || 'all') : 'all';
       state.clMatrixQ = (t === 'chienluoc') ? (qp.get('clq') || '') : '';
       /* sub / cl la gia tri tu URL -> chi nhan gia tri hop le */
       const subQ = qp.get('sub') || qp.get('cl');
       const rawHash = String(location.hash || '').replace(/^#/, '').trim();
       const hasPolicyTarget = (t === 'chienluoc') && Boolean(qp.get('item') || /^(?:cl-item-CL\d+|policy-item-P\d+|cl-checklist-12)$/i.test(rawHash));
-      const hasMatrixTarget = (t === 'chienluoc') && Boolean((state.clMatrixCluster && state.clMatrixCluster !== 'all') || state.clMatrixQ);
+      const hasMatrixTarget = (t === 'chienluoc') && Boolean((state.clMatrixCluster && state.clMatrixCluster !== 'all') || (state.clMatrixTrack && state.clMatrixTrack !== 'all') || state.clMatrixQ);
       state.clSubTab = (subQ && CL_SUBTABS.includes(subQ))
         ? subQ
         : (hasPolicyTarget ? 'policy' : (hasMatrixTarget ? 'matrix144' : 'principles'));
@@ -2250,11 +2687,11 @@
       market: ['video', 'ngachxanh'], niche: ['video', 'ngachxanh'],
       skus: ['video'], vp: ['video'], watch: ['video'], free: ['video'], recent: ['video'],
       q: ['ngachxanh', 'lotrinh'], nt: ['ngachxanh'], nxm: ['ngachxanh'], nxb: ['ngachxanh'], nxs: ['ngachxanh'], nxl: ['ngachxanh'], np: ['ngachxanh'],
-      pq: ['tai-lieu'], dp: ['tai-lieu'], did: ['tai-lieu'], di: ['tai-lieu'], db: ['tai-lieu'], kind: ['tai-lieu'], pn: ['tai-lieu'],
+      pq: ['tai-lieu'], dp: ['tai-lieu'], did: ['tai-lieu'], di: ['tai-lieu'], db: ['tai-lieu'], kind: ['tai-lieu'], pn: ['tai-lieu'], ds: ['tai-lieu'],
       rt: ['nguonreup'], reup: ['nguonreup'],
-      kq: ['kenh-mau'], handle: ['kenh-mau'], kp: ['kenh-mau'], ks: ['kenh-mau'], kn: ['kenh-mau'],
+      kq: ['kenh-mau'], handle: ['kenh-mau'], kp: ['kenh-mau'], ks: ['kenh-mau'], kn: ['kenh-mau'], ksort: ['kenh-mau'], klang: ['kenh-mau'], kmkt: ['kenh-mau'], kcap: ['kenh-mau'], kps: ['kenh-mau'],
       rq: ['rawkenh', 'nguonreup'], rn: ['rawkenh', 'nguonreup'], rg: ['rawkenh'], rid: ['rawkenh'], vid: ['rawkenh'], page: ['rawkenh'], rv: ['rawkenh'], rf: ['rawkenh'], rl: ['rawkenh'],
-      sub: ['chienluoc', 'ngachxanh'], cl: ['chienluoc'], clm: ['chienluoc'], clq: ['chienluoc'], item: ['chienluoc'], sq: ['sodo'], snode: ['sodo'], sfrom: ['sodo'], sto: ['sodo'],
+      sub: ['chienluoc', 'ngachxanh'], cl: ['chienluoc'], clm: ['chienluoc'], clt: ['chienluoc'], clq: ['chienluoc'], item: ['chienluoc'], sq: ['sodo'], snode: ['sodo'], sfrom: ['sodo'], sto: ['sodo'],
       tab: ['lotrinh'], module: ['lotrinh'], mod: ['lotrinh'], sku: ['lotrinh'],
       mfilter: ['nhac'], mq: ['nhac'], mopen: ['nhac']
     };
@@ -2278,7 +2715,11 @@
         const qp = new URLSearchParams(location.search);
         if (state.tab === 'ngachxanh') {
           const qUp = String(state.nxQ || '').trim().replace(/^#/, '').toUpperCase();
-          const subUp = String(state.nxSub || '').trim().replace(/^#/, '').toUpperCase() || ((/^(?:SUB-\d{1,3}|SN-H\d{2}-\d{3})$/.test(qUp)) ? qUp : '');
+          const rawSubUp = String(state.nxSub || '').trim().replace(/^#/, '').toUpperCase();
+          const scopedSubUp = (/^\d{1,3}$/.test(rawSubUp) && /^H\d{2}$/.test(qUp))
+            ? ('SN-' + qUp + '-' + rawSubUp.padStart(3, '0'))
+            : rawSubUp;
+          const subUp = scopedSubUp || ((/^(?:SUB-\d{1,3}|SN-H\d{2}-\d{3})$/.test(qUp)) ? qUp : '');
           if (subUp) {
             const subEl = document.getElementById('subniche-' + subUp)
               || document.querySelector('[data-sub-idx-id="subniche-' + subUp + '"]')
@@ -2376,6 +2817,8 @@
       readStateFromURL(validTabs);
       /* FIX (uifix88) F2: link cu/link FTS co the dinh tham so cua tab khac -> don ngay lan dau. */
       scrubForeignParams();
+      if (state.tab === 'ngachxanh') syncNxPageUrl();
+      else if (state.tab === 'kenh-mau') syncKenhUrl();
       /* NANG CAP 2026-09-30 (CLS): dung subnav NGAY (dong bo) — truoc await dau tien, de lan ve dau da co subnav. */
       syncTopbarSubnav();
       /* NANG CAP 2026-09-30 (CLS): an footer suot lan render DAU (skeleton -> noi dung that doi chieu cao, trang ngan
@@ -2435,10 +2878,12 @@
         }, 60);
       }
       window.addEventListener('popstate', () => {
+        if (typeof window.H2AudioStopAll === 'function') window.H2AudioStopAll();
         /* PHASE 1: dung CHUNG readStateFromURL -> khoi phuc du 9 tham so (truoc day mat 6) */
         readStateFromURL(URL_TABS);
         /* FIX (uifix88) F2: Back/Forward co the tro lai URL dinh tham so tab khac -> don. */
         scrubForeignParams();
+        if (state.tab === 'kenh-mau') syncKenhUrl();
         renderTabs();
         resetScrollToTop();
         Promise.resolve(render()).then(() => { applyDeepTargetScrollAndModal(); });
@@ -2446,7 +2891,9 @@
       window.addEventListener('pageshow', (e) => { if (e.persisted) syncRender(); });
       window.addEventListener('visibilitychange', () => { if (!document.hidden) syncRender(); });
       window.addEventListener('message', (e) => {
-        if (!e || !e.data || e.data.type !== 'h2dev:learn-state') return;
+        // uifix103: validate origin để chống postMessage injection (XSS)
+        if (!e || !e.data || e.origin !== window.location.origin) return;
+        if (e.data.type !== 'h2dev:learn-state') return;
         if (state.tab !== 'lotrinh') return;
         try {
           const u = new URL(location.href);
@@ -2459,14 +2906,131 @@
           history.replaceState(history.state, '', u.pathname + u.search);
         } catch (err) {}
       });
+      const _voiceAudioMgr = { audio: null, activeBtn: null, activeUrl: '' };
+      function syncVoiceBtnState(btn, playing) {
+        if (!btn) return;
+        btn.classList.toggle('is-playing', playing);
+        btn.setAttribute('aria-pressed', playing ? 'true' : 'false');
+        const labelEl = btn.querySelector('span:not(.h2-icon)');
+        if (labelEl) labelEl.textContent = playing ? 'Đang phát…' : 'Nghe phôi giọng';
+        const iconEl = btn.querySelector('.h2-icon');
+        if (iconEl) iconEl.setAttribute('data-h2i', playing ? 'pause' : 'play');
+        const eqEl = btn.querySelector('.h2-eq-bars');
+        if (playing) {
+          if (!eqEl) {
+            btn.insertAdjacentHTML('beforeend', '<svg class="h2-svg-anim h2-eq-bars" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><rect x="1" y="4" width="2.5" height="9" rx="1" fill="currentColor"/><rect x="5.5" y="2" width="2.5" height="11" rx="1" fill="currentColor"/><rect x="10" y="5" width="2.5" height="8" rx="1" fill="currentColor"/></svg>');
+          }
+        } else if (eqEl) {
+          eqEl.remove();
+        }
+      }
+      function stopAllAudioPlayback(exceptEl) {
+        if (_voiceAudioMgr.audio && _voiceAudioMgr.audio !== exceptEl) {
+          try {
+            _voiceAudioMgr.audio.pause();
+            _voiceAudioMgr.audio.currentTime = 0;
+          } catch (_) {}
+        }
+        if (_voiceAudioMgr.activeBtn) {
+          syncVoiceBtnState(_voiceAudioMgr.activeBtn, false);
+        }
+        document.querySelectorAll('.km-voice-play-btn.is-playing, .km-voice-play-btn[aria-pressed="true"]').forEach(b => {
+          syncVoiceBtnState(b, false);
+        });
+        _voiceAudioMgr.activeBtn = null;
+        _voiceAudioMgr.activeUrl = '';
+        document.querySelectorAll('audio').forEach(aud => {
+          if (aud !== exceptEl && !aud.paused) {
+            try { aud.pause(); aud.currentTime = 0; } catch (_) {}
+          }
+        });
+      }
+      window.H2AudioStopAll = function() { stopAllAudioPlayback(null); };
+      function safeKmUrl(raw) {
+        const u = String(raw == null ? '' : raw).trim();
+        if (!u || /[\u0000-\u001F\u007F]/.test(u)) return '';
+        if (/^\/\//.test(u) || /^\\\\/.test(u)) return '';
+        if (/^https?:\/\//i.test(u)) return u;
+        if (/^\/(?!\/)/.test(u)) return u;
+        if (/^#/.test(u)) return u;
+        const noCtrl = u.replace(/[\s\u0000-\u001F]+/g, '');
+        const head = noCtrl.split(/[/?#]/)[0];
+        if (/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(head) || head.includes(':')) return '';
+        return u;
+      }
+      function safeKmExternalUrl(raw) {
+        const u = String(raw == null ? '' : raw).trim();
+        if (!u || /[\u0000-\u001F\u007F]/.test(u)) return '';
+        return /^https?:\/\//i.test(u) ? u : '';
+      }
+      function normKmHandleKey(val) {
+        let s = String(val || '').trim();
+        try { s = decodeURIComponent(s); } catch (_) {}
+        return s.replace(/^@/, '').trim().toLowerCase();
+      }
+      function pickKmPositiveNum(...vals) {
+        for (const v of vals) {
+          if (v === null || v === undefined || v === '' || typeof v === 'boolean') continue;
+          const n = Number(v);
+          if (Number.isFinite(n) && n > 0) return n;
+        }
+        return 0;
+      }
+      function fmtKmNum(n) {
+        const num = Number(n);
+        if (!Number.isFinite(num) || num <= 0) return '—';
+        if (num >= 1000000) return (num / 1000000).toFixed(2).replace(/\.?0+$/, '') + 'M';
+        if (num >= 1000) return (num / 1000).toFixed(1).replace(/\.0$/, '') + 'K';
+        return num.toLocaleString('vi-VN');
+      }
+      function toggleVoicePreview(btn) {
+        const rawVoiceUrl = btn.getAttribute('data-voice-url') || '';
+        const safeVoiceUrl = safeKmUrl(rawVoiceUrl);
+        if (!safeVoiceUrl) return;
+        const wasSamePlaying = (_voiceAudioMgr.activeBtn === btn || _voiceAudioMgr.activeUrl === safeVoiceUrl)
+          && _voiceAudioMgr.audio && !_voiceAudioMgr.audio.paused;
+        stopAllAudioPlayback(null);
+        if (wasSamePlaying) return;
+        if (!_voiceAudioMgr.audio) {
+          _voiceAudioMgr.audio = new Audio();
+          _voiceAudioMgr.audio.preload = 'none';
+          _voiceAudioMgr.audio.addEventListener('ended', () => {
+            if (_voiceAudioMgr.activeBtn) syncVoiceBtnState(_voiceAudioMgr.activeBtn, false);
+            _voiceAudioMgr.activeBtn = null;
+            _voiceAudioMgr.activeUrl = '';
+          });
+          _voiceAudioMgr.audio.addEventListener('error', () => {
+            if (_voiceAudioMgr.activeBtn) syncVoiceBtnState(_voiceAudioMgr.activeBtn, false);
+            _voiceAudioMgr.activeBtn = null;
+            _voiceAudioMgr.activeUrl = '';
+          });
+        }
+        try {
+          _voiceAudioMgr.audio.src = safeVoiceUrl;
+          _voiceAudioMgr.audio.currentTime = 0;
+          _voiceAudioMgr.activeBtn = btn;
+          _voiceAudioMgr.activeUrl = safeVoiceUrl;
+          syncVoiceBtnState(btn, true);
+          const p = _voiceAudioMgr.audio.play();
+          if (p && typeof p.catch === 'function') {
+            p.catch(() => {
+              syncVoiceBtnState(btn, false);
+              if (_voiceAudioMgr.activeBtn === btn) {
+                _voiceAudioMgr.activeBtn = null;
+                _voiceAudioMgr.activeUrl = '';
+              }
+            });
+          }
+        } catch (_) {
+          syncVoiceBtnState(btn, false);
+          _voiceAudioMgr.activeBtn = null;
+          _voiceAudioMgr.activeUrl = '';
+        }
+      }
       document.addEventListener('play', (e) => {
         const target = e.target;
         if (!target || target.tagName !== 'AUDIO') return;
-        document.querySelectorAll('audio').forEach(aud => {
-          if (aud !== target && !aud.paused) {
-            try { aud.pause(); } catch (err) {}
-          }
-        });
+        stopAllAudioPlayback(target);
       }, true);
 
       // Cử chỉ vuốt trái / phải chuyển tab (Touch Swipe Tabs Navigation)
@@ -2504,8 +3068,25 @@
         }
       });
 
-      // Mở Modal Hồ Sơ Chuyên Sâu & Top Videos của Kênh Mẫu (Toàn bộ dữ liệu mở 100%)
+      // Mở Modal Hồ Sơ Chuyên Sâu, Hồ Sơ Kênh Mẫu & Nghe thử phôi giọng
       document.addEventListener('click', (e) => {
+        const voiceBtn = e.target.closest('.km-voice-play-btn');
+        if (voiceBtn) {
+          e.preventDefault();
+          e.stopPropagation();
+          toggleVoicePreview(voiceBtn);
+          return;
+        }
+        const dossierBtn = e.target.closest('.btn-open-km-dossier');
+        if (dossierBtn) {
+          e.preventDefault();
+          e.stopPropagation();
+          const h = dossierBtn.getAttribute('data-km-handle') || '';
+          if (h && window.openChannelDossierModal) {
+            window.openChannelDossierModal(h);
+          }
+          return;
+        }
         const btn = e.target.closest('.btn-open-raw-deep');
         if (btn) {
           const rawId = btn.getAttribute('data-raw-id');
@@ -2515,6 +3096,248 @@
           }
         }
       });
+
+      window.openChannelDossierModal = async function(handleOrKey) {
+        stopAllAudioPlayback(null);
+        let modal = document.getElementById('raw-deep-modal');
+        if (!modal) {
+          modal = document.createElement('div');
+          modal.id = 'raw-deep-modal';
+          modal.setAttribute('role', 'dialog');
+          modal.setAttribute('aria-modal', 'true');
+          modal.setAttribute('aria-label', 'Hồ sơ kênh đối thủ');
+          modal.tabIndex = -1;
+          modal.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:var(--h2-z-modal); background:var(--h2-overlay-bg); backdrop-filter:blur(var(--h2-backdrop-blur)); -webkit-backdrop-filter:blur(var(--h2-backdrop-blur)); align-items:center; justify-content:center; padding:16px; box-sizing:border-box;';
+          document.body.appendChild(modal);
+        }
+        modal.setAttribute('aria-label', 'Hồ sơ kênh đối thủ: ' + String(handleOrKey || ''));
+        const _kmCtl = window.H2RawDeepModal.makeControls(modal);
+        window.closeRawDeepModal = _kmCtl.closeRawDeepModal;
+        window.switchRawTab = _kmCtl.switchRawTab;
+        _kmCtl.bindModalEvents();
+
+        modal.innerHTML = `
+          <div class="raw-deep-container bg-surface border border-border-strong rounded-2xl w-full overflow-hidden flex flex-col shadow-2xl" style="max-width:56rem; max-height:90vh;">
+            <div class="flex items-center justify-between p-4 bg-surface-2 border-b border-border-strong shrink-0">
+              <div class="flex items-center gap-3 min-w-0">
+                <span class="inline-flex text-brand-400">${ico('tv', 20)}</span>
+                <div class="min-w-0">
+                  <h3 class="text-sm font-bold text-white truncate">Hồ sơ kênh: ${esc(handleOrKey)}</h3>
+                  <p class="text-xs text-gray-400">Đang nạp dữ liệu kênh &amp; bài học liên kết...</p>
+                </div>
+              </div>
+              <button type="button" id="close-raw-deep" class="h2-btn h2-btn--ghost h2-btn--sm">${ico('x', 14)} Đóng</button>
+            </div>
+            <div class="p-6 text-center text-gray-400 text-sm">${ico('hourglass', 20)} Đang tổng hợp hồ sơ kênh...</div>
+          </div>
+        `;
+        modal.style.display = 'flex';
+        modal._prevActiveElement = document.activeElement;
+        document.body.style.overflow = 'hidden';
+        focusModal(modal);
+
+        const [kenhRaw, nxRaw, rawData, vH2, vHuan, vDgmd] = await Promise.all([
+          loadJSON('data-tabs/kenh-mau.json').then(safeArray).catch(() => []),
+          loadJSON('data-tabs/ngach-xanh.json').catch(() => ({})),
+          loadJSON('data-tabs/raw-kenh-mau.json').catch(() => ({ records: [] })),
+          loadJSON('data-tabs/videos.json').then(safeArray).catch(() => []),
+          loadJSON('data/videos_huan.json').then(safeArray).catch(() => []),
+          loadJSON('data/videos_dgmd.json').then(safeArray).catch(() => [])
+        ]);
+        if (modal.style.display !== 'flex') return;
+
+        const targetKey = normKmHandleKey(handleOrKey);
+        const rawTarget = String(handleOrKey || '').trim().toLowerCase();
+        const collectHandles = (c) => [
+          c && c.handle,
+          c && c.handle_hien_tai,
+          c && c.handle_cu,
+          ...safeArray(c && c.aliasHandles),
+          ...safeArray(c && c.aliases),
+          ...safeArray(c && c.handle_history)
+        ].map(x => normKmHandleKey(typeof x === 'string' ? x : (x && x.handle) || '')).filter(Boolean);
+
+        const ch = kenhRaw.find(c => {
+          if (!c) return false;
+          if (collectHandles(c).includes(targetKey)) return true;
+          if (c.channelId && String(c.channelId).trim().toLowerCase() === rawTarget) return true;
+          return false;
+        }) || { handle: String(handleOrKey || '').trim(), title: String(handleOrKey || '').trim(), niche: 'Khác' };
+
+        const rawRecords = Array.isArray(rawData) ? rawData : safeArray(rawData && rawData.records);
+        const chKeys = collectHandles(ch);
+        if (!chKeys.length && targetKey) chKeys.push(targetKey);
+        const rawRec = rawRecords.find(r => {
+          if (!r) return false;
+          const rCh = r.channel || {};
+          const rCid = String(rCh.channelId || rCh.id || '').trim().toLowerCase();
+          if (ch.channelId && rCid && rCid === String(ch.channelId).trim().toLowerCase()) return true;
+          const rKeys = [rCh.handle, r.visionAnalysis && r.visionAnalysis.handle, r.ocr && r.ocr.handle, ...safeArray(r.handleHistory).map(x => typeof x === 'string' ? x : (x && x.handle) || '')]
+            .map(normKmHandleKey).filter(Boolean);
+          return rKeys.some(k => chKeys.includes(k));
+        }) || null;
+        const rawCh = (rawRec && rawRec.channel) || {};
+
+        const nxMap = new Map();
+        const mauBanSet = new Set();
+        safeArray(nxRaw && nxRaw.ngachXanh).forEach((n, idx) => {
+          const code = String(n.code || ('H' + String(n.hang || (idx + 1)).padStart(2, '0'))).trim().toUpperCase();
+          nxMap.set(code, n.ngach || code);
+          safeArray(n.mauBan).forEach(item => {
+            const k = normKmHandleKey(typeof item === 'string' ? item : (item && item.handle) || '');
+            if (k) mauBanSet.add(k);
+          });
+        });
+
+        const skuMap = new Map();
+        const reverseSkus = [];
+        const registerCatalog = (arr, branch) => {
+          safeArray(arr).forEach(v => {
+            if (!v || !v.sku) return;
+            const skuUp = String(v.sku).trim().toUpperCase();
+            if (!skuMap.has(skuUp)) skuMap.set(skuUp, { sku: String(v.sku).trim(), title: v.title || '', branch, moduleId: v.module_id || '' });
+            const vChans = safeArray(v.channels).map(normKmHandleKey).filter(Boolean);
+            if (vChans.some(vc => chKeys.includes(vc))) reverseSkus.push(String(v.sku).trim());
+          });
+        };
+        registerCatalog(vH2, 'H2DEV');
+        registerCatalog(vHuan, 'HUÂN');
+        registerCatalog(vDgmd, 'DGMD');
+
+        const skuSet = new Map();
+        [...safeArray(ch.videos), ...safeArray(ch.skus), ...safeArray(rawRec && rawRec.relatedVideos).map(x => typeof x === 'string' ? x : (x && x.sku)), ...reverseSkus].forEach(s => {
+          const cleanS = String(s || '').trim();
+          if (!cleanS) return;
+          const up = cleanS.toUpperCase();
+          if (!skuSet.has(up)) skuSet.set(up, cleanS);
+        });
+        const lessonItems = [...skuSet.values()].map(rawSku => {
+          const meta = skuMap.get(rawSku.toUpperCase());
+          return {
+            sku: (meta && meta.sku) || rawSku,
+            title: (meta && meta.title) || '',
+            branch: (meta && meta.branch) || ''
+          };
+        });
+
+        const handleLabel = String(ch.handle || ch.title || handleOrKey || '').trim();
+        const primaryKey = normKmHandleKey(ch.handle) || targetKey;
+        const displayTitle = String(ch.title || rawCh.title || ch.name || '').trim();
+        const primaryNxCode = String(ch.nicheCode || (rawRec && rawRec.nicheCode) || '').trim().toUpperCase();
+        const nxName = primaryNxCode ? (nxMap.get(primaryNxCode) || '') : '';
+        const subsVal = pickKmPositiveNum(ch.subscribers, ch.subs_live, rawCh.subscribers, rawCh.subscriberCount);
+        const viewsVal = pickKmPositiveNum(ch.views, ch.totalViews, ch.views_live, rawCh.views, rawCh.totalViews, rawCh.viewCount);
+        const vidVal = pickKmPositiveNum(ch.videoCount, ch.videos_live, rawCh.videoCount, rawCh.videos);
+        const lessonCount = lessonItems.length || (ch.count != null && Number.isFinite(Number(ch.count)) ? Number(ch.count) : 0);
+        const isRevived = Boolean(ch && !ch.dead && (ch.deadNoteCu || ch.deadKindCu || ch.handle_cu || ch.revived));
+        const isMauBan = chKeys.some(k => mauBanSet.has(k));
+        const safeAv = safeKmUrl(ch.avatar || (rawRec && rawRec.assets && rawRec.assets.avatarUrl) || rawCh.avatar || '');
+        const safeYtUrl = safeKmExternalUrl(ch.url || rawCh.channelUrl || (primaryKey ? ('https://www.youtube.com/@' + primaryKey) : ''));
+        const effVoice = ch.voiceDna || (rawRec && rawRec.voiceDna) || null;
+        const safeVoiceUrl = effVoice && effVoice.sampleUrl ? safeKmUrl(effVoice.sampleUrl) : '';
+        const aliasList = [...new Set([
+          ch.handle_hien_tai,
+          ch.handle_cu,
+          ...safeArray(ch.aliasHandles),
+          ...safeArray(ch.aliases),
+          ...safeArray(ch.handle_history)
+        ].map(x => String(typeof x === 'string' ? x : (x && x.handle) || '').trim()).filter(x => x && normKmHandleKey(x) !== primaryKey))];
+
+        modal.innerHTML = `
+          <div class="raw-deep-container bg-surface border border-border-strong rounded-2xl w-full overflow-hidden flex flex-col shadow-2xl" style="max-width:56rem; max-height:90vh;">
+            <div class="flex items-center justify-between gap-3 p-4 bg-surface-2 border-b border-border-strong shrink-0">
+              <div class="flex items-center gap-3 min-w-0">
+                ${safeAv
+                  ? `<img src="${esc(safeAv)}" alt="${esc(handleLabel)}" width="44" height="44" class="w-11 h-11 rounded-xl object-cover shrink-0 bg-ink-700" data-img-fallback="hide-flex"><div class="w-11 h-11 rounded-xl bg-brand-600/25 text-brand-200 font-bold text-sm items-center justify-center shrink-0 hidden">${esc((handleLabel.replace(/^@/, '')[0] || '?').toUpperCase())}</div>`
+                  : `<div class="w-11 h-11 rounded-xl bg-brand-600/25 text-brand-200 font-bold text-sm flex items-center justify-center shrink-0">${esc((handleLabel.replace(/^@/, '')[0] || '?').toUpperCase())}</div>`}
+                <div class="min-w-0">
+                  <div class="flex flex-wrap items-center gap-1.5">
+                    <h3 class="text-base font-bold text-white truncate">${esc(handleLabel)}</h3>
+                    <span class="badge ${ch.dead ? 'badge-red' : 'badge-green'} text-xs">${ch.dead ? (ch.deadKind === 'empty' ? 'RỖNG · 0 VIDEO' : 'DIE · 404') : 'SỐNG'}</span>
+                    ${isRevived ? `<span class="badge badge-blue text-xs">HỒI SINH</span>` : ''}
+                    ${isMauBan ? `<span class="badge badge-amber text-xs">MẪU BẨN</span>` : ''}
+                  </div>
+                  ${displayTitle ? `<p class="text-xs text-gray-300 truncate mt-0.5">${esc(displayTitle)}</p>` : ''}
+                </div>
+              </div>
+              <button type="button" id="close-raw-deep" class="h2-btn h2-btn--ghost h2-btn--sm shrink-0">${ico('x', 14)} Đóng</button>
+            </div>
+            <div class="raw-deep-body p-4 sm:p-5 overflow-y-auto flex flex-col gap-4">
+              <div class="km-dossier-grid">
+                <div class="card p-3.5 space-y-2">
+                  <div class="text-xs font-bold uppercase tracking-wider text-gray-400">Định danh &amp; Ngách</div>
+                  <div class="flex flex-wrap items-center gap-1.5">
+                    ${primaryNxCode ? `<span class="km-dossier-badge">${esc(primaryNxCode)}${nxName ? ' · ' + esc(nxName) : ''}</span>` : ''}
+                    ${ch.niche ? `<span class="km-dossier-badge">${esc(ch.niche)}</span>` : ''}
+                    ${ch.rawNiche && ch.rawNiche !== ch.niche ? `<span class="km-dossier-badge">Raw: ${esc(ch.rawNiche)}</span>` : ''}
+                    ${(effVoice && effVoice.code) || ch.language ? `<span class="km-dossier-badge">${esc((effVoice && effVoice.flag) || '')} ${esc((effVoice && effVoice.code) || ch.language)}</span>` : ''}
+                    ${safeArray(ch.markets).map(m => `<span class="km-dossier-badge">${esc(stripDecorEmoji(m))}</span>`).join('')}
+                  </div>
+                  ${aliasList.length ? `<div class="text-xs text-gray-300"><span class="text-gray-400">Handle liên quan / cũ:</span> ${aliasList.map(a => `<span class="km-dossier-badge">${esc(a)}</span>`).join(' ')}</div>` : ''}
+                  ${ch.channelId ? `<div class="text-xs text-gray-400 font-mono truncate">Channel ID: <span class="text-gray-200">${esc(ch.channelId)}</span></div>` : ''}
+                  ${ch.ngay_do || ch.ngay_do_check ? `<div class="text-xs text-gray-400">Đo kiểm: <span class="text-gray-200">${esc([ch.ngay_do, ch.ngay_do_check].filter(Boolean).join(' · '))}</span></div>` : ''}
+                  ${ch.nguon_do ? `<div class="text-xs text-gray-400 break-words">Nguồn đo: <span class="text-gray-300">${esc(ch.nguon_do)}</span></div>` : ''}
+                </div>
+                <div class="card p-3.5 space-y-2">
+                  <div class="text-xs font-bold uppercase tracking-wider text-gray-400">Chỉ số &amp; Lịch sử trạng thái</div>
+                  <div class="grid grid-cols-2 gap-2 text-xs">
+                    <div class="bg-surface-2 rounded-xl p-2 border border-border"><div class="text-gray-400">Subscribers</div><div class="text-sm font-bold text-white font-mono mt-0.5">${esc(fmtKmNum(subsVal))}</div></div>
+                    <div class="bg-surface-2 rounded-xl p-2 border border-border"><div class="text-gray-400">Lượt xem</div><div class="text-sm font-bold text-white font-mono mt-0.5">${esc(fmtKmNum(viewsVal))}</div></div>
+                    <div class="bg-surface-2 rounded-xl p-2 border border-border"><div class="text-gray-400">Số video</div><div class="text-sm font-bold text-white font-mono mt-0.5">${esc(fmtKmNum(vidVal))}</div></div>
+                    <div class="bg-surface-2 rounded-xl p-2 border border-border"><div class="text-gray-400">Bài học liên kết</div><div class="text-sm font-bold text-brand-300 font-mono mt-0.5">${esc(String(lessonCount || 0))}</div></div>
+                  </div>
+                  ${ch.lastUpload ? `<div class="text-xs text-gray-400">Video gần nhất: <span class="text-gray-200 font-mono">${esc(String(ch.lastUpload).slice(0, 10))}</span></div>` : ''}
+                  ${ch.deadNote ? `<div class="text-xs text-red-300 rounded-xl p-2 break-words" style="background:rgba(239,68,68,0.12); border:1px solid rgba(239,68,68,0.35);">${esc(ch.deadNote)}</div>` : ''}
+                  ${ch.deadNoteCu ? `<div class="text-xs text-amber-300 rounded-xl p-2 break-words" style="background:rgba(245,158,11,0.12); border:1px solid rgba(245,158,11,0.35);">Dẫn chứng cũ: ${esc(ch.deadNoteCu)}</div>` : ''}
+                  ${ch.note ? `<div class="text-xs text-gray-300 break-words">Ghi chú: ${esc(ch.note)}</div>` : ''}
+                </div>
+              </div>
+              ${safeVoiceUrl ? `
+                <div class="km-dossier-audio">
+                  <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+                    <span class="font-semibold text-sky-300">${ico('music', 14)} Phôi giọng mẫu 45s (${esc((effVoice && effVoice.flag) || '')} ${esc((effVoice && effVoice.code) || '')}${effVoice && effVoice.wpm ? ' · ' + esc(String(effVoice.wpm)) + (effVoice.wpmNote ? ' cpm' : ' WPM') : ''})</span>
+                    ${effVoice && effVoice.measuredAt ? `<span class="text-gray-400">Đo ngày ${esc(effVoice.measuredAt)}</span>` : ''}
+                  </div>
+                  <audio controls preload="none" src="${esc(safeVoiceUrl)}"></audio>
+                </div>` : ''}
+              <div class="card p-3.5 space-y-2">
+                <div class="text-xs font-bold uppercase tracking-wider text-gray-400">Bài học phân tích kênh này (${lessonItems.length})</div>
+                ${lessonItems.length ? `
+                  <div class="km-dossier-skus">
+                    ${lessonItems.map(it => `<a href="/lotrinh/${esc(encodeURIComponent(it.sku))}" title="${esc(it.title || it.sku)}">${esc(it.sku)}${it.branch ? ' [' + esc(it.branch) + ']' : ''}${it.title ? ' · ' + esc(it.title.slice(0, 56)) : ''} ↗</a>`).join('')}
+                  </div>` : `<p class="text-xs text-gray-400">Chưa gắn bài học trực tiếp — mở Ngách xanh hoặc Video ngách để xem giáo trình cùng tuyến.</p>`}
+              </div>
+              <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-hairline">
+                <div class="flex flex-wrap items-center gap-2">
+                  ${primaryKey ? `<button type="button" class="js-km-modal-jump filter-btn text-xs" data-sodo-jump="channel:${esc(primaryKey)}">Sơ đồ DB ↗</button>` : ''}
+                  ${primaryNxCode ? `<button type="button" class="js-km-modal-jump filter-btn text-xs" data-open-tab="ngachxanh" data-nx-q="${esc(primaryNxCode)}">Ngách xanh (${esc(primaryNxCode)}) ↗</button>` : ''}
+                  ${(primaryNxCode || ch.niche) ? `<button type="button" class="js-km-modal-jump filter-btn text-xs" data-open-tab="video" data-open-niche="${esc(primaryNxCode || nicheKeyFor(ch.niche) || ch.niche)}">Video ngách →</button>` : ''}
+                </div>
+                ${safeYtUrl ? `<a href="${esc(safeYtUrl)}" target="_blank" rel="noopener noreferrer" class="filter-btn text-xs text-brand-300">Mở kênh trên YouTube ${ico('arrow-up-right', 14)}</a>` : ''}
+              </div>
+            </div>
+          </div>
+        `;
+        modal.querySelectorAll('.js-km-modal-jump').forEach(btn => {
+          btn.onclick = (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            if (typeof window.closeRawDeepModal === 'function') window.closeRawDeepModal();
+            const snode = btn.getAttribute('data-sodo-jump') || '';
+            if (snode) {
+              openTab('sodo', { sodoNode: snode, sodoQ: '' });
+              return;
+            }
+            const targetTab = btn.getAttribute('data-open-tab') || '';
+            if (targetTab === 'ngachxanh') {
+              openTab('ngachxanh', { nxQ: btn.getAttribute('data-nx-q') || '', nxSub: '', nxTier: '', nxMarket: '', nxBranch: '', nxPage: 1 });
+            } else if (targetTab === 'video') {
+              try { sessionStorage.setItem('h2dev-video-track', 'all'); } catch (_) {}
+              openTab('video', { videoTrack: 'all', nicheFilter: btn.getAttribute('data-open-niche') || '', skuFilter: '', q: '', marketFilter: '', freeOnly: false, recentOnly: false, videoPage: 1 });
+            }
+          };
+        });
+      };
 
       window.openRawDeepModal = async function(rawId, jumpTarget) {
         let modal = document.getElementById('raw-deep-modal');
@@ -2754,7 +3577,9 @@
         const yppNote = (productionToolkit && productionToolkit.yppRiskNote) || pData.yppRiskNote || {};
         const dataGaps = (productionToolkit && productionToolkit.dataGaps) || pData.dataGaps || {};
         const retentionProxy = (productionToolkit && productionToolkit.retentionAvdProxy) || pData.retentionAvdProxy || null;
-        const ytUrl = ch.url || ('https://www.youtube.com/results?search_query=' + encodeURIComponent(ch.title || ch.handle || ''));
+        const rawHandleStr = String(pData.handle || ch.handle || (ocr && ocr.handle) || '').trim();
+        const decodedHandle = (() => { try { return decodeURIComponent(rawHandleStr); } catch (_) { return rawHandleStr; } })().replace(/^@+/, '').trim();
+        const ytUrl = safeExternalUrl(ch.url) || safeExternalUrl(pData.url) || (decodedHandle ? ('https://www.youtube.com/@' + encodeURIComponent(decodedHandle)) : ('https://www.youtube.com/results?search_query=' + encodeURIComponent(pData.title || ch.title || r.id || '')));
         const rawSubs = pData.subscribers != null ? pData.subscribers : ch.subscribers;
         const subsDisplay = (rawSubs != null && rawSubs !== '') ? Number(rawSubs).toLocaleString('vi-VN') : (ocr.subsText || 'N/A');
         const rawViews = pData.views != null ? pData.views : ch.views;
@@ -2789,7 +3614,7 @@
             <div class="raw-deep-header" style="padding:1rem 1.25rem; background:var(--surface); border-bottom:1px solid var(--border); flex-shrink:0;">
               <div class="raw-deep-header-row1" style="display:flex; align-items:center; justify-content:space-between; width:100%; gap:0.75rem;">
                 <div class="raw-deep-header-avatar-info" style="display:flex; align-items:center; gap:0.75rem; min-width:0; flex:1;">
-                  <img src="${esc(pData.avatar || ch.avatar || 'assets/thumbs/placeholder.svg')}" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" alt="Avatar" loading="lazy" decoding="async" class="raw-deep-header-avatar" width="48" height="48" style="width:48px; height:48px; border-radius:0.75rem; object-fit:cover; border:1px solid var(--border-strong); flex-shrink:0;">
+                  <img src="${esc(pData.avatar || ch.avatar || 'assets/thumbs/placeholder.svg')}" data-img-fallback="placeholder" alt="Avatar" loading="lazy" decoding="async" class="raw-deep-header-avatar" width="48" height="48" style="width:48px; height:48px; border-radius:0.75rem; object-fit:cover; border:1px solid var(--border-strong); flex-shrink:0;">
                   <div style="min-width:0; flex:1;">
                     <div class="row-wrap">
                       <h3 class="raw-deep-header-title truncate" style="font-size: 16px; font-weight: 700; color:#fff; margin:0;">${esc(pData.title || ch.title || r.id)}</h3>
@@ -2800,14 +3625,14 @@
                   </div>
                 </div>
                 <div class="raw-deep-header-actions" style="display:flex; align-items:center; gap:0.4rem; flex-shrink:0;">
-                  <button type="button" class="js-raw-modal-jump" data-open-tab="kenh-mau" data-kenh-q="${esc(r.id)}" style="padding:0.42rem 0.7rem; border-radius:0.55rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.25rem;" title="Đối chiếu kênh trong Kênh mẫu"><span class="raw-deep-mobile-hide">Kênh mẫu </span>↗</button>
-                  <button type="button" class="js-raw-modal-jump" data-sodo-jump="${esc(r.id)}" style="padding:0.42rem 0.7rem; border-radius:0.55rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.25rem;" title="Truy vết kênh ${esc(r.id)} trên Sơ đồ DB"><span class="raw-deep-mobile-hide">Sơ đồ DB </span>↗</button>
-                  <a href="${esc(ytUrl)}" target="_blank" rel="noopener noreferrer" style="padding:0.42rem 0.8rem; border-radius:0.55rem; background:rgba(239,68,68,0.85); color:#fff; font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:0.3rem;"><span style="display:inline-flex;">${ico('tv', 14)}</span><span class="raw-deep-mobile-hide"> Mở YouTube ${ico('arrow-up-right', 14)}</span></a>
-                  <button type="button" id="close-raw-deep" style="padding:0.42rem 0.8rem; border-radius:0.55rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center;" title="Đóng [Esc]">${ico('x', 14)}</button>
+                  <button type="button" class="js-raw-modal-jump" data-open-tab="kenh-mau" data-kenh-q="${esc(r.id)}" aria-label="Đối chiếu kênh trong Kênh mẫu" style="padding:0.42rem 0.7rem; border-radius:0.55rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.25rem;" title="Đối chiếu kênh trong Kênh mẫu"><span style="display:inline-flex;">${ico('tv', 14)}</span><span class="raw-deep-mobile-hide">Kênh mẫu ↗</span></button>
+                  <button type="button" class="js-raw-modal-jump" data-sodo-jump="${esc(r.id)}" aria-label="Truy vết kênh ${esc(r.id)} trên Sơ đồ DB" style="padding:0.42rem 0.7rem; border-radius:0.55rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.25rem;" title="Truy vết kênh ${esc(r.id)} trên Sơ đồ DB"><span style="display:inline-flex;">${ico('layout-grid', 14)}</span><span class="raw-deep-mobile-hide">Sơ đồ DB ↗</span></button>
+                  <a href="${esc(ytUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Mở kênh trên YouTube" style="padding:0.42rem 0.8rem; border-radius:0.55rem; background:rgba(239,68,68,0.85); color:#fff; font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;"><span style="display:inline-flex;">${ico('tv', 14)}</span><span class="raw-deep-mobile-hide"> Mở YouTube ${ico('arrow-up-right', 14)}</span></a>
+                  <button type="button" id="close-raw-deep" style="padding:0.42rem 0.8rem; border-radius:0.55rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; justify-content:center;" aria-label="Đóng hồ sơ kênh" title="Đóng [Esc]">${ico('x', 14)}</button>
                 </div>
               </div>
               <div class="raw-deep-header-meta" style="display:flex; align-items:center; gap:0.5rem; font-size: 12px; color:var(--fg-muted); margin-top:0.35rem; flex-wrap:wrap;">
-                <span style="color:var(--fg-2); font-weight:600;">${esc(decodeURIComponent(pData.handle || ch.handle || ''))}</span>
+                <span style="color:var(--fg-2); font-weight:600;">${esc((function(){ try { return decodeURIComponent(pData.handle || ch.handle || ''); } catch(e) { return pData.handle || ch.handle || ''; } })())}</span>
                 <span>•</span>
                 <span>Quốc gia: <strong class="c-slate-100">${esc(countryDisplay)}</strong></span>
                 ${(voiceProfile && voiceProfile.voiceCharacteristics && voiceProfile.voiceCharacteristics.languageFlag) || (effectiveVoiceDna) || (r.audioLanguageInfo && r.audioLanguageInfo.flag) ? `
@@ -2855,8 +3680,8 @@
                 </div>
                 <div class="raw-deep-kpi-card" style="background:var(--surface); border:1px solid var(--border); border-radius:0.875rem; padding:0.85rem 1rem;">
                   <div style="font-size: 12px; text-transform:uppercase; color:var(--fg-muted); font-weight:600;">Tổng lượt xem (Views)</div>
-                  <div class="kpi-val" style="font-size: 20px; font-weight: 700; color:#a855f7; margin-top:0.25rem;">${viewsDisplay}</div>
-                  <div class="kpi-sub" style="font-size: 12px; color:var(--fg-faint); margin-top:0.2rem;">30 ngày qua: <span style="color:#a855f7; font-weight:600;">${viewGained} views</span> ${g30.viewsGained < 0 ? `<span style="font-size: 12px; color:#38bdf8; font-weight:600;">(${vidAnomaly})</span>` : ''}</div>
+                  <div class="kpi-val" style="font-size: 20px; font-weight: 700; color:var(--brand-ink, #ff8095); margin-top:0.25rem;">${viewsDisplay}</div>
+                  <div class="kpi-sub" style="font-size: 12px; color:var(--fg-faint); margin-top:0.2rem;">30 ngày qua: <span style="color:var(--brand-ink, #ff8095); font-weight:600;">${viewGained} views</span> ${g30.viewsGained < 0 ? `<span style="font-size: 12px; color:#38bdf8; font-weight:600;">(${esc(String(vidAnomaly))})</span>` : ''}</div>
                 </div>
                 <div class="raw-deep-kpi-card" style="background:var(--surface); border:1px solid var(--border); border-radius:0.875rem; padding:0.85rem 1rem;">
                   <div style="font-size: 12px; text-transform:uppercase; color:var(--fg-muted); font-weight:600;">Quy mô video & Doanh thu</div>
@@ -2883,7 +3708,7 @@
               <div id="raw-retention-proxy" style="background:rgba(14,165,233,0.08); border:1px solid rgba(14,165,233,0.38); border-radius:0.875rem; padding:0.9rem 1.1rem;">
                 <div style="display:flex; align-items:center; justify-content:space-between; gap:0.75rem; flex-wrap:wrap;">
                   <div style="font-size: 13px; font-weight: 700; color:#7dd3fc; display:flex; align-items:center; gap:0.45rem;">
-                    <span>◌</span> Public retention signal — không phải AVD thật
+                    ${ico('activity', 14)} <span>Public retention signal — không phải AVD thật</span>
                   </div>
                   <span style="font-size: 12px; font-weight: 700; color:#fbbf24; background:rgba(245,158,11,0.12); border:1px solid rgba(245,158,11,0.35); padding:0.2rem 0.55rem; border-radius:0.4rem;">${esc(retentionProxy.status)}</span>
                 </div>
@@ -3002,7 +3827,7 @@
               <div id="raw-screenshot-proof" style="background:var(--surface); border:1px solid var(--border); border-radius:0.875rem; padding:0.9rem 1.1rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
                 <div style="display:flex; align-items:center; gap:0.85rem; min-width:0; flex:1;">
                   <div class="js-view-raw-image" role="button" tabindex="0" aria-label="Phóng to ảnh chụp màn hình gốc: ${esc(rawImgTitle)}" data-src="${esc(rawImgSrc)}" data-title="${esc(rawImgTitle)}" style="width:96px; height:54px; border-radius:0.5rem; overflow:hidden; border:1px solid var(--border-strong); cursor:pointer; flex-shrink:0; background:#000;">
-                    <img src="${esc(rawImgSrc)}" alt="${esc(rawImgTitle)}" width="192" height="108" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/thumbs/placeholder.svg'" style="width:100%; height:100%; object-fit:cover;">
+                    <img src="${esc(rawImgSrc)}" alt="${esc(rawImgTitle)}" width="192" height="108" loading="lazy" decoding="async" data-img-fallback="placeholder" style="width:100%; height:100%; object-fit:cover;">
                   </div>
                   <div style="min-width:0;">
                     <div style="font-size:13px; font-weight:700; color:#fff; display:flex; align-items:center; gap:0.4rem;">
@@ -3092,7 +3917,7 @@
                       </div>
                       <div class="row-wrap">
                         <button type="button" class="btn-copy-visual-prompt hover:bg-sky-600 hover:text-white transition" style="font-size: 12px; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">${ico('clipboard-copy', 14)} Copy Master Shot</button>
-                        <button type="button" class="btn-copy-visual-kit hover:bg-purple-600 hover:text-white transition" style="font-size: 12px; color:#c084fc; background:rgba(168,85,247,0.15); border:1px solid rgba(168,85,247,0.4); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">${ico('package', 14)} Copy Trọn Bộ Visual Kit</button>
+                        <button type="button" class="btn-copy-visual-kit filter-btn text-xs" style="color:var(--brand-ink, #ff8095); border-color:rgba(226,2,58,0.45); background:rgba(226,2,58,0.14); font-weight:700;">${ico('package', 14)} Copy Trọn Bộ Visual Kit</button>
                       </div>
                     </div>
 
@@ -3112,7 +3937,7 @@
 
                       ${vd.multiAngleArchetypes && vd.multiAngleArchetypes.length ? `
                       <div style="border-top:1px solid var(--border); padding-top:0.4rem;">
-                        <strong style="color:#a855f7; font-size: 12px;">4 CẢNH QUAY CỐT LÕI (MULTI-ANGLE ARCHETYPES):</strong>
+                        <strong style="color:var(--brand-ink, #ff8095); font-size: 12px;">4 CẢNH QUAY CỐT LÕI (MULTI-ANGLE ARCHETYPES):</strong>
                         <div style="margin-top:0.25rem; display:flex; flex-direction:column; gap:0.35rem; max-height:140px; overflow-y:auto; padding-right:0.25rem;">
                           ${vd.multiAngleArchetypes.map(a => `
                           <div style="background:var(--bg); border:1px solid var(--border); border-radius:0.375rem; padding:0.35rem 0.5rem; font-size: 12px;">
@@ -3141,7 +3966,7 @@
                       </div>
                       <div style="display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap;">
                         ${refVid ? `<button type="button" class="btn-open-video-sub" data-dossier="${esc(dossierPath)}" data-vid="${esc(refVid)}" data-title="${esc(refTitle)}" data-channel="${esc(pData.title || ch.title || '')}" data-views="${esc(refViews)}" style="font-size: 12px; color:#38bdf8; background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.4); padding:0.25rem 0.55rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">${ico('scroll-text', 14)} Kịch Bản Gốc (${esc(refVid.slice(0, 6))})</button>` : `<span style="font-size: 12px; color:var(--fg-muted); background:var(--surface-2); border:1px solid var(--border-strong); padding:0.25rem 0.55rem; border-radius:0.4rem;">Chưa có video mẫu (Kênh 404)</span>`}
-                        <a href="${esc(sb.northEffectSopPath || 'docs/NOI-BO/prompt/north-effect.md')}" data-doc-preview="${esc(sb.northEffectSopPath || 'docs/NOI-BO/prompt/north-effect.md')}" data-doc-title="SOP North Effect 70/30" target="_blank" rel="noopener noreferrer" class="hover:bg-purple-600 hover:text-white transition" style="font-size: 12px; padding:0.25rem 0.55rem; border-radius:0.4rem; background:rgba(168,85,247,0.2); border:1px solid rgba(168,85,247,0.4); color:#e9d5ff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;">
+                        <a href="${esc(sb.northEffectSopPath || 'docs/NOI-BO/prompt/north-effect.md')}" data-doc-preview="${esc(sb.northEffectSopPath || 'docs/NOI-BO/prompt/north-effect.md')}" data-doc-title="SOP North Effect 70/30" target="_blank" rel="noopener noreferrer" class="filter-btn text-xs" style="background:rgba(226,2,58,0.16); border-color:rgba(226,2,58,0.45); color:#fda4af; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;">
                           <span>${ico('file-text', 14)} SOP North Effect</span> ${ico('arrow-up-right', 14)}
                         </a>
                         <button type="button" class="btn-copy-master-prompt hover:bg-emerald-600 hover:text-white transition" style="font-size: 12px; color:#34d399; background:rgba(16,185,129,0.18); border:1px solid rgba(16,185,129,0.5); padding:0.25rem 0.6rem; border-radius:0.4rem; cursor:pointer; font-weight:700;">${ico('clipboard-copy', 14)} Copy Full Master Prompt</button>
@@ -3217,7 +4042,7 @@
                         <span>${ico('wrench', 14)}</span> Tech Stack & Matching Skill
                       </div>
                       ${ps.matchingSkill ? `
-                      <span style="font-size: 12px; color:#c084fc; background:rgba(168,85,247,0.2); border:1px solid rgba(168,85,247,0.5); padding:0.2rem 0.6rem; border-radius:0.4rem; font-weight: 700;">
+                      <span style="font-size: 12px; color:#fda4af; background:rgba(226,2,58,0.16); border:1px solid rgba(226,2,58,0.45); padding:0.2rem 0.6rem; border-radius:0.4rem; font-weight: 700;">
                         Skill: ${esc(ps.matchingSkill)}
                       </span>` : ''}
                     </div>
@@ -3231,7 +4056,7 @@
                       
                       <!-- Direct Links to Skill and Repo -->
                       <div style="display:flex; align-items:center; gap:0.4rem; margin-top:0.4rem; pt-1; border-top:1px solid var(--border); flex-wrap:wrap;">
-                        <a href="${esc(sopPath)}" ${/\.(md|txt)$/i.test(sopPath) ? `data-doc-preview="${esc(sopPath)}" data-doc-title="${esc(ps.matchingSkill || 'SOP Skill Gốc')}"` : ''} target="_blank" rel="noopener noreferrer" class="hover:bg-purple-600 hover:text-white transition" style="font-size: 12px; padding:0.3rem 0.65rem; border-radius:0.4rem; background:rgba(168,85,247,0.25); border:1px solid rgba(168,85,247,0.5); color:#e9d5ff; text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:0.3rem;">
+                        <a href="${esc(sopPath)}" ${/\.(md|txt)$/i.test(sopPath) ? `data-doc-preview="${esc(sopPath)}" data-doc-title="${esc(ps.matchingSkill || 'SOP Skill Gốc')}"` : ''} target="_blank" rel="noopener noreferrer" class="btn-primary text-xs inline-flex items-center gap-1" style="text-decoration:none; font-weight:700;">
                           <span>${ico('file-text', 14)} Xem Toàn Bộ SOP Skill Gốc</span> ${ico('arrow-up-right', 14)}
                         </a>
                         <a href="${esc(repoPath)}" ${/\.(md|txt)$/i.test(repoPath) ? `data-doc-preview="${esc(repoPath)}" data-doc-title="Tài liệu Pipeline & Repo"` : ''} target="_blank" rel="noopener noreferrer" class="hover:text-white hover:bg-slate-700 transition" style="font-size: 12px; padding:0.3rem 0.65rem; border-radius:0.4rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:0.3rem;">
@@ -3273,7 +4098,7 @@
                 </div>
                 <div style="display:flex; flex-wrap:wrap; gap:0.55rem; justify-content:center; margin-top:0.25rem;">
                   <button type="button" data-action="raw-tab" data-tab="voice" style="padding:0.45rem 0.95rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:#38bdf8; font-size: 12px; font-weight:600; cursor:pointer;" class="hover:text-white transition">${ico('mic', 14)} Khai thác Voice DNA Studio →</button>
-                  <button type="button" data-action="raw-tab" data-tab="videos" style="padding:0.45rem 0.95rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:#a855f7; font-size: 12px; font-weight:600; cursor:pointer;" class="hover:text-white transition">${ico('tv', 14)} Xem Top 7-10 Video Live →</button>
+                  <button type="button" data-action="raw-tab" data-tab="videos" style="padding:0.45rem 0.95rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--brand-ink, #ff8095); font-size: 12px; font-weight:600; cursor:pointer;" class="hover:text-white transition">${ico('tv', 14)} Xem Top 7-10 Video Live →</button>
                 </div>
               </div>`}
               </div> <!-- End Tab Panel 2: Mission Control -->
@@ -3363,7 +4188,11 @@
                 </div>
 
                 <!-- Audio Player -->
-                <div style="background:var(--surface); border:1px solid var(--border); border-radius:0.75rem; padding:0.6rem 0.75rem;">
+                <div style="background:var(--surface); border:1px solid var(--border); border-radius:0.75rem; padding:0.6rem 0.75rem; display:flex; flex-direction:column; gap:0.4rem;">
+                  <div id="raw-voice-eq" class="hidden flex items-center gap-1.5 text-xs font-semibold text-rose-400">
+                    <svg class="h2-svg-anim h2-eq-bars" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><rect x="1" y="3" width="2.5" height="9" rx="1"/><rect x="5.5" y="1" width="2.5" height="11" rx="1"/><rect x="10" y="4" width="2.5" height="8" rx="1"/></svg>
+                    <span>Đang phát Voice DNA mẫu</span>
+                  </div>
                   <audio controls preload="none" style="width:100%; height:38px; border-radius:0.375rem; outline:none;" src="${esc(cacheBustAudioSrc)}"></audio>
                 </div>
 
@@ -3440,12 +4269,12 @@
 
                 <!-- ElevenLabs Voice Cloning Configuration -->
                 ${voiceProfile.elevenlabsCloningConfiguration ? `
-                <div style="background:var(--surface); border:1px solid rgba(168,85,247,0.3); border-radius:0.75rem; padding:0.85rem 1rem; display:flex; flex-direction:column; gap:0.6rem;">
+                <div style="background:var(--surface); border:1px solid rgba(226,2,58,0.35); border-radius:0.75rem; padding:0.85rem 1rem; display:flex; flex-direction:column; gap:0.6rem;">
                   <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
-                    <div style="font-size: 13px; font-weight:700; color:#c084fc; display:flex; align-items:center; gap:0.35rem;">
+                    <div style="font-size: 13px; font-weight:700; color:var(--brand-ink, #ff8095); display:flex; align-items:center; gap:0.35rem;">
                       <span>${ico('zap', 14)}</span> Cấu Hình Clone Voice Trên ElevenLabs:
                     </div>
-                    <span style="font-size: 12px; background:rgba(168,85,247,0.15); color:#d8b4fe; padding:0.15rem 0.5rem; border-radius:0.375rem; border:1px solid rgba(168,85,247,0.3);">${esc(voiceProfile.elevenlabsCloningConfiguration.recommendedModel || 'Multilingual v2')}</span>
+                    <span style="font-size: 12px; background:rgba(226,2,58,0.15); color:#fda4af; padding:0.15rem 0.5rem; border-radius:0.375rem; border:1px solid rgba(226,2,58,0.35);">${esc(voiceProfile.elevenlabsCloningConfiguration.recommendedModel || 'Multilingual v2')}</span>
                   </div>
 
                   <div style="font-size: 13px; color:var(--fg-2); display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center;">
@@ -3458,11 +4287,11 @@
                   ${voiceProfile.elevenlabsCloningConfiguration.voiceSettings ? `
                   <div style="display:flex; flex-wrap:wrap; gap:0.5rem; font-size: 12px; color:var(--fg-muted); background:var(--surface-2); padding:0.5rem 0.75rem; border-radius:0.5rem; border:1px solid var(--border);">
                     <span>Settings:</span>
-                    <span>Stability: <strong class="c-amber">${voiceProfile.elevenlabsCloningConfiguration.voiceSettings.stability}</strong></span>
+                    <span>Stability: <strong class="c-amber">${esc(String(voiceProfile.elevenlabsCloningConfiguration.voiceSettings.stability ?? ''))}</strong></span>
                     <span>•</span>
-                    <span>Similarity: <strong class="c-sky">${voiceProfile.elevenlabsCloningConfiguration.voiceSettings.similarity_boost}</strong></span>
+                    <span>Similarity: <strong class="c-sky">${esc(String(voiceProfile.elevenlabsCloningConfiguration.voiceSettings.similarity_boost ?? ''))}</strong></span>
                     <span>•</span>
-                    <span>Style: <strong class="c-purple">${voiceProfile.elevenlabsCloningConfiguration.voiceSettings.style}</strong></span>
+                    <span>Style: <strong class="c-purple">${esc(String(voiceProfile.elevenlabsCloningConfiguration.voiceSettings.style ?? ''))}</strong></span>
                     <span>•</span>
                     <span>Speaker Boost: <strong class="c-green">ON</strong></span>
                   </div>` : ''}
@@ -3556,7 +4385,7 @@
 
                         <!-- Unified Action Buttons: Xem Video (Cinema) + Mở YT + Xem Sub -->
                         <div style="display:grid; grid-template-columns:1fr auto; gap:0.35rem; margin-top:0.25rem;">
-                          <button type="button" class="js-quick-video py-1.5 px-2.5 rounded-lg bg-rose-600/30 hover:bg-rose-600/80 border border-rose-500/40 hover:border-rose-400 text-brand-200 hover:text-white font-semibold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-badge="#${displayRank} Top Video" title="Phát video trực tiếp tại chỗ">
+                          <button type="button" class="js-quick-video btn-primary font-semibold text-xs flex items-center justify-center gap-1.5 cursor-pointer" data-vid="${esc(v.videoId)}" data-title="${esc(v.title)}" data-channel="${esc(pData.title || ch.title || '')}" data-badge="#${displayRank} Top Video" title="Phát video trực tiếp tại chỗ">
                             <span style="font-size: 12px; display:inline-flex;">${ico('play', 14)}</span> Xem Video
                           </button>
                           <a href="${esc(v.url || ('https://www.youtube.com/watch?v=' + v.videoId))}" target="_blank" rel="noopener noreferrer" style="padding:0.35rem 0.65rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-muted); font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:0.2rem;" class="hover:text-white hover:bg-slate-700 transition" title="Mở trên YouTube tab mới">
@@ -3629,13 +4458,13 @@
                         const diffViews = prevViews != null ? (row.views - prevViews) : null;
                         return `
                         <tr style="border-bottom:1px solid var(--border); color:var(--fg-2);">
-                          <td style="padding:0.45rem 0.6rem; font-family:monospace; color:#38bdf8;">${row.date}</td>
+                          <td style="padding:0.45rem 0.6rem; font-family:monospace; color:#38bdf8;">${esc(String(row.date || ''))}</td>
                           <td style="padding:0.45rem 0.6rem; font-weight:600;">${Number(row.subscribers).toLocaleString('vi-VN')}</td>
-                          <td style="padding:0.45rem 0.6rem; font-weight:600; color:#a855f7;">${Number(row.views).toLocaleString('vi-VN')}</td>
+                          <td style="padding:0.45rem 0.6rem; font-weight:600; color:var(--brand-ink, #ff8095);">${Number(row.views).toLocaleString('vi-VN')}</td>
                           <td style="padding:0.45rem 0.6rem;">
                             ${diffViews != null ? `<span style="color:#10b981; font-weight:700;">+${Number(diffViews).toLocaleString('vi-VN')}</span>` : `<span style="color:var(--fg-faint);">Mốc đầu</span>`}
                           </td>
-                          <td style="padding:0.45rem 0.6rem; color:var(--fg-muted);">${row.videos}</td>
+                          <td style="padding:0.45rem 0.6rem; color:var(--fg-muted);">${esc(String(row.videos ?? ''))}</td>
                         </tr>
                         `;
                       }).join('')}
@@ -3705,9 +4534,15 @@
         `;
 
         function copyWithFallback(text, btn, successLabel, defaultLabel) {
+          if (window.H2Core && typeof window.H2Core.copyWithFeedback === 'function') {
+            return window.H2Core.copyWithFeedback(btn, text, {
+              successLabel: successLabel || 'Đã sao chép!',
+              defaultHtml: defaultLabel && !btn.querySelector('.h2-icon') ? esc(defaultLabel) : undefined,
+              toast: true
+            });
+          }
           function markSuccess() {
             if (btn) {
-              /* PHASE 3: textContent KHONG nhan HTML => nhan trang thai phai la CHU THUAN, khong emoji. */
               btn.textContent = successLabel || 'Đã sao chép!';
               setTimeout(() => { btn.textContent = defaultLabel || 'Sao chép'; }, 2000);
             }
@@ -3963,7 +4798,9 @@
               let u = String(rawUrl || '').trim().replace(/^(?:\.\.?\/)+/, '');
               if (/^(?:docs|video|assets|data|data-tabs)\//i.test(u)) u = '/' + u;
               else if (baseSku && /^[A-Za-z0-9_.-]+\.(?:md|txt|json|csv|pdf)$/i.test(u)) u = '/docs/' + encodeURIComponent(baseSku) + '/' + u;
-              if (/^(https?:\/\/|\/|#)/i.test(u)) {
+              /* L3-XSS-01/03: reject URL containing whitespace, quotes, backticks, angle brackets, backslashes, or HTML entities */
+              if (/[\s"'`<>\\]/.test(u) || /(&quot;|&#39;|&lt;|&gt;)/i.test(u)) return `${label} (${u})`;
+              if (!/^\/\//.test(u) && /^(https?:\/\/|\/(?!\/)|#)/i.test(u)) {
                 const ext = /^#/i.test(u) ? '' : ' target="_blank" rel="noopener noreferrer"';
                 return `<a href="${u}"${ext} style="color:#38bdf8; text-decoration:underline; font-weight:600;">${label}</a>`;
               }
@@ -4059,17 +4896,25 @@
         return out.join('');
       }
 
+      const MODAL_IDS = ['cmd-palette-modal', 'doc-preview-modal', 'quick-video-modal', 'raw-deep-modal', 'video-transcript-modal', 'raw-image-modal', 'music-studio-modal'];
+      function hasAnyOtherModalOpen(excludeId) {
+        return MODAL_IDS.some(id => {
+          if (id === excludeId) return false;
+          const el = document.getElementById(id);
+          return el && el.style.display && el.style.display !== 'none';
+        });
+      }
+
       window.openDocPreviewModal = async function(fileUrl, docTitle, docSku, docCode) {
-        if (!fileUrl) return;
+        const rawFileUrl = String(fileUrl || '').trim();
+        if (!rawFileUrl || /^\/\//.test(rawFileUrl) || /^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(rawFileUrl) || rawFileUrl.includes('\\') || /(?:^|\/)\.\.(?:\/|$)/.test(rawFileUrl)) return;
+        const cleanUrl = rawFileUrl.replace(/^\/+/, '');
+        if (!cleanUrl || /^\/\//.test('/' + cleanUrl)) return;
         let modal = document.getElementById('doc-preview-modal');
         const closeDocModal = () => {
           if (!modal) return;
           modal.style.display = 'none';
-          const otherOpen = ['quick-video-modal', 'raw-deep-modal', 'video-transcript-modal', 'raw-image-modal', 'music-studio-modal'].some(id => {
-            const el = document.getElementById(id);
-            return el && el.style.display && el.style.display !== 'none';
-          });
-          if (!otherOpen) document.body.style.overflow = '';
+          if (!hasAnyOtherModalOpen('doc-preview-modal')) document.body.style.overflow = '';
           if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
             try { modal._prevActiveElement.focus(); } catch (err) {}
           }
@@ -4090,7 +4935,6 @@
         modal._prevActiveElement = document.activeElement;
         modal.style.display = 'flex';
         document.body.style.overflow = 'hidden';
-        const cleanUrl = String(fileUrl).replace(/^\//, '');
         modal.innerHTML = `<div class="text-white text-sm font-mono p-6 bg-surface rounded-2xl border border-border-strong">Đang tải nội dung tài liệu (${esc(docCode || cleanUrl)})...</div>`;
         focusModal(modal);
         try {
@@ -4099,23 +4943,24 @@
           const rawText = await resp.text();
           const renderedHtml = inlineMdFull(rawText, docSku || '');
           modal.innerHTML = `
-            <div style="position:relative; width:100%; max-width:960px; max-height:90vh; background:var(--surface-2); border:1px solid var(--border-strong); border-radius:1.25rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
-              <div style="padding:1rem 1.25rem; background:var(--surface); border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; gap:0.75rem; flex-shrink:0; flex-wrap:wrap;">
+            <div style="position:relative; width:100%; min-width:0; max-width:960px; max-height:90vh; background:var(--surface-2); border:1px solid var(--border-strong); border-radius:1.25rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
+              <div style="padding:1rem 1.25rem; background:var(--surface); border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; gap:0.75rem; flex-shrink:0; flex-wrap:wrap; min-width:0;">
                 <div style="min-width:0; flex:1;">
-                  <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap; margin-bottom:0.25rem;">
+                  <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap; margin-bottom:0.25rem; min-width:0;">
                     ${docCode ? `<span class="badge badge-brand font-mono">${esc(docCode)}</span>` : ''}
                     ${docSku ? `<span class="badge badge-muted font-mono">${esc(docSku)}</span>` : ''}
                     <span class="badge badge-blue font-mono">${esc(cleanUrl)}</span>
                   </div>
                   <h3 style="font-size:16px; font-weight:700; color:#fff; margin:0;" class="truncate">${esc(docTitle || cleanUrl)}</h3>
                 </div>
-                <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
+                <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0; flex-wrap:wrap; min-width:0; max-width:100%;">
+                  <button type="button" id="btn-doc-scroll-top" class="filter-btn text-xs" title="Cuộn lên đầu tài liệu">${ico('chevron-up', 14)} Đầu trang</button>
                   <button type="button" id="btn-copy-doc-preview" class="filter-btn text-xs">${ico('copy', 14)} Sao chép nội dung</button>
                   <a href="/${esc(cleanUrl)}" target="_blank" rel="noopener noreferrer" class="filter-btn text-xs">${ico('arrow-up-right', 14)} Mở tab riêng</a>
                   <button type="button" id="btn-close-doc-preview" class="filter-btn text-xs" title="Đóng [Esc]">${ico('x', 14)} Đóng</button>
                 </div>
               </div>
-              <div id="doc-preview-body" style="padding:1.25rem 1.5rem; overflow-y:auto; flex:1; min-height:0; font-size:14px; line-height:1.65; color:var(--fg);">
+              <div id="doc-preview-body" style="padding:1.25rem 1.5rem; overflow-y:auto; overflow-x:auto; flex:1; min-height:0; min-width:0; font-size:14px; line-height:1.65; color:var(--fg);">
                 ${renderedHtml || `<pre style="white-space:pre-wrap; word-break:break-word; font-family:monospace; font-size:13px; color:var(--fg-2);">${esc(rawText)}</pre>`}
               </div>
             </div>
@@ -4125,14 +4970,22 @@
             closeBtn.onclick = closeDocModal;
             try { closeBtn.focus(); } catch (_) {}
           }
+          const topBtn = modal.querySelector('#btn-doc-scroll-top');
+          const docBody = modal.querySelector('#doc-preview-body');
+          if (topBtn && docBody) {
+            topBtn.onclick = () => {
+              docBody.scrollTo({ top: 0, behavior: (window.H2Core && H2Core.scrollBehavior ? H2Core.scrollBehavior() : 'smooth') });
+            };
+          }
           const copyBtn = modal.querySelector('#btn-copy-doc-preview');
           if (copyBtn) {
             copyBtn.onclick = () => {
-              if (navigator.clipboard && window.isSecureContext) {
-                navigator.clipboard.writeText(rawText).then(() => {
-                  copyBtn.textContent = 'Đã sao chép!';
-                  setTimeout(() => { copyBtn.innerHTML = `${ico('copy', 14)} Sao chép nội dung`; }, 1800);
-                }).catch(() => {});
+              if (window.H2Core && typeof window.H2Core.copyWithFeedback === 'function') {
+                window.H2Core.copyWithFeedback(copyBtn, rawText, {
+                  successLabel: 'Đã sao chép!',
+                  defaultHtml: `${ico('copy', 14)} Sao chép nội dung`,
+                  duration: 1800
+                });
               }
             };
           }
@@ -4185,11 +5038,7 @@
         const closeSubModal = () => {
           if (!modal) return;
           modal.style.display = 'none';
-          const otherOpen = ['doc-preview-modal', 'quick-video-modal', 'raw-deep-modal', 'raw-image-modal', 'music-studio-modal'].some(id => {
-            const el = document.getElementById(id);
-            return el && el.style.display && el.style.display !== 'none';
-          });
-          if (!otherOpen) document.body.style.overflow = '';
+          if (!hasAnyOtherModalOpen('video-transcript-modal')) document.body.style.overflow = '';
           if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
             try { modal._prevActiveElement.focus(); } catch (err) {}
           }
@@ -4230,6 +5079,7 @@
            (close handler tu 2125 da doc _prevActiveElement nhung trc day khong ai gan). */
         modal._prevActiveElement = document.activeElement;
         modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
         focusModal(modal);
 
         // Fetch transcript & summary
@@ -4350,10 +5200,11 @@
             }).join('\n\n')
           : fallbackVideoBriefText;
 
+        const safeLessonOrigin = (lessonObj && lessonObj.origin && /^https?:\/\//i.test(String(lessonObj.origin).trim()) && !/[\u0000-\u001F\u007F]/.test(String(lessonObj.origin))) ? String(lessonObj.origin).trim() : '';
         const headerActionsHtml = isLessonSku
           ? `
             <a href="/lotrinh/${encodeURIComponent(skuNorm)}" style="min-height:44px; box-sizing:border-box; padding:0.4rem 0.75rem; border-radius:0.5rem; background:rgba(225,29,72,0.92); border:1px solid #f43f5e; color:#fff; font-size: 12px; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:0.35rem;" title="Mở trình phát bài học ${esc(skuNorm)}">${ico('clapperboard', 14)} Mở Bài Học ${ico('arrow-up-right', 14)}</a>
-            ${lessonObj && lessonObj.origin ? `<a href="${esc(lessonObj.origin)}" target="_blank" rel="noopener noreferrer" style="min-height:44px; box-sizing:border-box; padding:0.4rem 0.75rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:#38bdf8; font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:0.35rem;">${ico('tv', 14)} Trang gốc ${ico('arrow-up-right', 14)}</a>` : ''}
+            ${safeLessonOrigin ? `<a href="${esc(safeLessonOrigin)}" target="_blank" rel="noopener noreferrer" style="min-height:44px; box-sizing:border-box; padding:0.4rem 0.75rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:#38bdf8; font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:0.35rem;">${ico('tv', 14)} Trang gốc ${ico('arrow-up-right', 14)}</a>` : ''}
             <button type="button" id="close-video-sub" style="min-height:44px; box-sizing:border-box; padding:0.4rem 0.75rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">${ico('x', 14)} Đóng</button>
           `
           : `
@@ -4561,9 +5412,7 @@
           modal.onclick = (e) => {
             if (e.target === modal || e.target.id === 'close-raw-img' || (e.target.closest && e.target.closest('#close-raw-img'))) {
               modal.style.display = 'none';
-              const otherOpen = document.getElementById('raw-deep-modal')?.style.display === 'flex' ||
-                                document.getElementById('video-transcript-modal')?.style.display === 'flex';
-              if (!otherOpen) document.body.style.overflow = '';
+              if (!hasAnyOtherModalOpen('raw-image-modal')) document.body.style.overflow = '';
               if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
                 try { modal._prevActiveElement.focus(); } catch (err) {}
               }
@@ -4582,20 +5431,30 @@
           document.body.appendChild(modal);
         }
         document.querySelector('#raw-img-title span:last-child').textContent = title || 'Ảnh kênh gốc';
-        document.getElementById('raw-img-src').src = src;
+        // uifix103: validate src trước khi gán (XSS guard)
+        const safeSrc = safeUrl(src);
+        if (safeSrc) document.getElementById('raw-img-src').src = safeSrc;
         modal.style.display = 'flex';
         modal._prevActiveElement = document.activeElement;
         document.body.style.overflow = 'hidden';
         focusModal(modal);
       };
 
+      const SAFE_YT_ID_RE = /^[A-Za-z0-9_-]{6,20}$/;
+
       window.playEmbeddedDemoVideo = function(containerId, videoId) {
+        const cleanVid = String(videoId || '').trim();
+        if (!SAFE_YT_ID_RE.test(cleanVid)) return;
         const container = document.getElementById(containerId);
         if (!container) return;
-        container.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1" style="width:100%; height:100%; border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+        const safeVid = encodeURIComponent(cleanVid);
+        container.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${safeVid}?autoplay=1&rel=0&modestbranding=1" style="width:100%; height:100%; border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
       };
 
       window.openQuickVideoModal = function(videoId, videoTitle, channelName, badgeLabel) {
+        const cleanVid = String(videoId || '').trim();
+        if (!SAFE_YT_ID_RE.test(cleanVid)) return;
+        const safeVid = encodeURIComponent(cleanVid);
         let modal = document.getElementById('quick-video-modal');
         if (!modal) {
           modal = document.createElement('div');
@@ -4609,10 +5468,7 @@
           const closeModal = () => {
             modal.style.display = 'none';
             modal.innerHTML = '';
-            const otherOpen = document.getElementById('raw-deep-modal')?.style.display === 'flex' ||
-                              document.getElementById('video-transcript-modal')?.style.display === 'flex' ||
-                              document.getElementById('raw-image-modal')?.style.display === 'flex';
-            if (!otherOpen) {
+            if (!hasAnyOtherModalOpen('quick-video-modal')) {
               document.body.style.overflow = '';
             }
             if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
@@ -4647,12 +5503,12 @@
               <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
                 <!-- P1-P2 TOUCH (2026-09-27): min-height/min-width 44px (WCAG 2.5.5).
                      Do truoc: a 115x29, button 76x31 -> deu < 44px chieu cao. -->
-                <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener noreferrer" style="min-height:44px; min-width:44px; box-sizing:border-box; font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.5rem; background:#2563eb; color:#fff; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">${ico('arrow-up-right', 14)} Mở YouTube</a>
+                <a href="https://www.youtube.com/watch?v=${safeVid}" target="_blank" rel="noopener noreferrer" style="min-height:44px; min-width:44px; box-sizing:border-box; font-size: 12px; padding:0.35rem 0.75rem; border-radius:0.5rem; background:#2563eb; color:#fff; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;">${ico('arrow-up-right', 14)} Mở YouTube</a>
                 <button type="button" id="close-quick-video" style="min-height:44px; min-width:44px; box-sizing:border-box; padding:0.35rem 0.75rem; border-radius:0.5rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;" title="Đóng [Esc]">${ico('x', 14)} Đóng</button>
               </div>
             </div>
             <div style="width:100%; aspect-ratio:16/9; background:#000;">
-              <iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1" style="width:100%; height:100%; border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe src="https://www.youtube-nocookie.com/embed/${safeVid}?autoplay=1&rel=0&modestbranding=1" style="width:100%; height:100%; border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div>
         `;
@@ -4704,6 +5560,13 @@
           if (action === 'video-clear-niche') {
             e.preventDefault();
             state.nicheFilter = ''; state.skuFilter = ''; state.videoPage = 1;
+            syncVideoUrl();
+            render();
+            return;
+          }
+          if (action === 'video-clear-market') {
+            e.preventDefault();
+            state.marketFilter = ''; state.videoPage = 1;
             syncVideoUrl();
             render();
             return;
@@ -4803,11 +5666,31 @@
             Promise.resolve(render()).then(() => { if (fromBottom) scrollToTopPager('Phân trang kênh mẫu'); });
             return;
           }
+          if (action === 'nx-reset-filters') {
+            e.preventDefault();
+            resetNxFilters();
+            return;
+          }
         }
-        const openMusicBtn = t.closest('#btn-open-music-studio, .js-open-music-studio');
+        const expandPointsBtn = t.closest('[data-nx-expand-points]');
+        if (expandPointsBtn) {
+          e.preventDefault();
+          const facts = expandPointsBtn.closest('.nx-card-facts');
+          if (facts) {
+            const nextExpanded = expandPointsBtn.getAttribute('aria-expanded') !== 'true';
+            facts.querySelectorAll('.nx-card-point').forEach(pt => pt.classList.toggle('is-expanded', nextExpanded));
+            expandPointsBtn.setAttribute('aria-expanded', String(nextExpanded));
+            expandPointsBtn.textContent = nextExpanded ? 'Thu gọn ▴' : 'Xem đầy đủ ▾';
+          }
+          return;
+        }
+        // uifix103: #btn-open-music-studio já tem .js-open-music-studio (content.js:2776)
+        // → música_player_modal.js:374 escuta .js-open-music-studio (captura),
+        //   este listener deve escutar SOMENTE .js-open-music-studio para evitar duplo disparo.
+        const openMusicBtn = t.closest('.js-open-music-studio');
         if (openMusicBtn) {
           e.preventDefault();
-          if (typeof window.openMusicStudioModal === 'function') window.openMusicStudioModal();
+          if (typeof window.openMusicStudioModal === 'function') window.openMusicStudioModal('all', '', openMusicBtn);
           return;
         }
         const quick = t.closest('.js-quick-video');
@@ -4851,15 +5734,11 @@
           e.preventDefault();
           const urlToCopy = copyReupBtn.getAttribute('data-copy-reup-url') || '';
           if (urlToCopy) {
-            const origHtml = copyReupBtn.innerHTML;
-            const markCopied = () => {
-              copyReupBtn.innerHTML = `${ico('check', 14)} Đã chép!`;
-              setTimeout(() => { copyReupBtn.innerHTML = origHtml; }, 1800);
-            };
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-              navigator.clipboard.writeText(urlToCopy).then(markCopied).catch(markCopied);
-            } else {
-              markCopied();
+            if (window.H2Core && typeof window.H2Core.copyWithFeedback === 'function') {
+              window.H2Core.copyWithFeedback(copyReupBtn, urlToCopy, {
+                successLabel: 'Đã chép!',
+                duration: 1800
+              });
             }
           }
           return;
@@ -4872,7 +5751,160 @@
         }
       }, true);
 
-      // Global Shortcuts: Escape to close modals, / to focus search, Tab trap trong modal
+      let _cmdItems = [];
+      let _cmdSelIdx = 0;
+      let _cmdTimer = null;
+      function closeCmdPalette() {
+        const modal = document.getElementById('cmd-palette-modal');
+        if (!modal) return;
+        if (_cmdTimer) { clearTimeout(_cmdTimer); _cmdTimer = null; }
+        modal.style.display = 'none';
+        if (!hasAnyOtherModalOpen('cmd-palette-modal')) document.body.style.overflow = '';
+        if (modal._prevActiveElement && typeof modal._prevActiveElement.focus === 'function') {
+          try { modal._prevActiveElement.focus(); } catch (_) {}
+        }
+      }
+      function executeCmdItem(item) {
+        if (!item) return;
+        closeCmdPalette();
+        if (item.kind === 'tab' && item.tabId) {
+          openTab(item.tabId);
+        } else if (item.kind === 'music') {
+          if (typeof window.openMusicStudioModal === 'function') window.openMusicStudioModal('all');
+        } else if (item.kind === 'url' && item.href) {
+          if (item.href.startsWith('/graph') || item.href.startsWith('/lotrinh/')) {
+            window.location.assign(item.href);
+          } else if (typeof navigateDirectUrl === 'function') {
+            navigateDirectUrl(item.href);
+          } else {
+            window.location.assign(item.href);
+          }
+        }
+      }
+      function renderCmdList(items) {
+        _cmdItems = items;
+        if (_cmdSelIdx >= _cmdItems.length) _cmdSelIdx = Math.max(0, _cmdItems.length - 1);
+        const listEl = document.getElementById('cmd-palette-list');
+        const inpEl = document.getElementById('cmd-palette-input');
+        if (!listEl) return;
+        if (!_cmdItems.length) {
+          listEl.innerHTML = '<div class="p-4 text-center text-xs text-gray-400">Không tìm thấy mục phù hợp.</div>';
+          if (inpEl) inpEl.removeAttribute('aria-activedescendant');
+          return;
+        }
+        listEl.innerHTML = _cmdItems.map((it, idx) => `
+          <button type="button" id="cmd-opt-${idx}" role="option" aria-selected="${idx === _cmdSelIdx ? 'true' : 'false'}" data-cmd-idx="${idx}" class="cmd-palette-item${idx === _cmdSelIdx ? ' is-selected' : ''}">
+            <span class="flex items-center gap-2 min-w-0">
+              ${ico(it.icon || 'search', 14)}
+              <span class="truncate font-medium">${esc(it.title)}</span>
+            </span>
+            <span class="badge badge-muted shrink-0 font-mono">${esc(it.meta || '')}</span>
+          </button>
+        `).join('');
+        if (inpEl) inpEl.setAttribute('aria-activedescendant', 'cmd-opt-' + _cmdSelIdx);
+        listEl.querySelectorAll('[data-cmd-idx]').forEach(btn => {
+          btn.onclick = () => {
+            const idx = Number(btn.getAttribute('data-cmd-idx'));
+            executeCmdItem(_cmdItems[idx]);
+          };
+        });
+      }
+      function updateCmdQuery(qRaw) {
+        const q = String(qRaw || '').trim();
+        const qLow = q.toLowerCase();
+        const quickLinks = [
+          { kind: 'url', href: '/graph', icon: 'compass', title: 'Đồ thị Obsidian & 18 Dự án', meta: '/graph' },
+          { kind: 'music', icon: 'headphones', title: 'Mở Trạm Nhạc Nền Studio', meta: 'Audio' }
+        ];
+        const tabItems = TABS.map(t => ({ kind: 'tab', tabId: t.id, icon: 'layers', title: t.name, meta: '/' + t.id }));
+        const baseMatches = qLow
+          ? [...tabItems, ...quickLinks].filter(x => x.title.toLowerCase().includes(qLow) || x.meta.toLowerCase().includes(qLow))
+          : [...tabItems, ...quickLinks];
+        _cmdSelIdx = 0;
+        renderCmdList(baseMatches);
+        if (!q || !window.H2Search || typeof window.H2Search.fetchApiSearch !== 'function') return;
+        if (_cmdTimer) clearTimeout(_cmdTimer);
+        _cmdTimer = setTimeout(async () => {
+          try {
+            const res = await window.H2Search.fetchApiSearch(q, 12);
+            const inpEl = document.getElementById('cmd-palette-input');
+            if (!inpEl || String(inpEl.value || '').trim() !== q) return;
+            const rows = Array.isArray(res && res.rows) ? res.rows : [];
+            const ftsItems = [];
+            rows.forEach(r => {
+              const et = String(r.entity_type || '').toLowerCase();
+              const dest = window.H2Search.ftsDestination(et, r);
+              if (!dest || !dest.href) return;
+              ftsItems.push({
+                kind: 'url',
+                href: dest.href,
+                icon: et === 'lesson' ? 'play' : (et === 'sop' ? 'file-text' : (et === 'channel' ? 'tv' : 'search')),
+                title: r.title || r.entity_id || dest.href,
+                meta: (et || 'FTS').toUpperCase()
+              });
+            });
+            _cmdSelIdx = 0;
+            renderCmdList([...baseMatches.slice(0, 4), ...ftsItems].slice(0, 16));
+          } catch (_) {}
+        }, 140);
+      }
+      function openCmdPalette() {
+        let modal = document.getElementById('cmd-palette-modal');
+        if (!modal) {
+          modal = document.createElement('div');
+          modal.id = 'cmd-palette-modal';
+          modal.className = 'cmd-palette-backdrop';
+          modal.setAttribute('role', 'dialog');
+          modal.setAttribute('aria-modal', 'true');
+          modal.setAttribute('aria-label', 'Bảng điều hướng nhanh');
+          modal.tabIndex = -1;
+          modal.innerHTML = `
+            <div class="cmd-palette-panel">
+              <div style="display:flex; align-items:center; gap:8px; padding:12px 14px; border-bottom:1px solid var(--border);">
+                ${ico('search', 16)}
+                <input id="cmd-palette-input" type="search" role="combobox" aria-autocomplete="list" aria-expanded="true" aria-owns="cmd-palette-list" aria-label="Tìm nhanh 12 tab và dữ liệu toàn hệ thống" placeholder="Nhập tên tab, SKU, SOP, @handle kênh, ngách H01-H40..." autocomplete="off" class="search-input-premium w-full text-xs">
+                <button type="button" id="cmd-palette-close" class="filter-btn text-xs shrink-0" aria-label="Đóng bảng điều hướng">Esc</button>
+              </div>
+              <div id="cmd-palette-list" role="listbox" style="overflow-y:auto; max-height:60vh;"></div>
+            </div>
+          `;
+          document.body.appendChild(modal);
+          modal.addEventListener('click', (ev) => { if (ev.target === modal) closeCmdPalette(); });
+          const cBtn = modal.querySelector('#cmd-palette-close');
+          if (cBtn) cBtn.onclick = closeCmdPalette;
+          const inp = modal.querySelector('#cmd-palette-input');
+          if (inp) {
+            inp.addEventListener('input', () => updateCmdQuery(inp.value));
+            inp.addEventListener('keydown', (ev) => {
+              if (ev.key === 'ArrowDown' && _cmdItems.length) {
+                ev.preventDefault();
+                _cmdSelIdx = (_cmdSelIdx + 1) % _cmdItems.length;
+                renderCmdList(_cmdItems);
+              } else if (ev.key === 'ArrowUp' && _cmdItems.length) {
+                ev.preventDefault();
+                _cmdSelIdx = (_cmdSelIdx - 1 + _cmdItems.length) % _cmdItems.length;
+                renderCmdList(_cmdItems);
+              } else if (ev.key === 'Enter' && _cmdItems[_cmdSelIdx]) {
+                ev.preventDefault();
+                executeCmdItem(_cmdItems[_cmdSelIdx]);
+              }
+            });
+          }
+        }
+        modal._prevActiveElement = document.activeElement;
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        const inp = modal.querySelector('#cmd-palette-input');
+        if (inp) {
+          inp.value = '';
+          updateCmdQuery('');
+          try { inp.focus(); } catch (_) {}
+        }
+      }
+      const btnCmdPalette = document.getElementById('btn-cmd-palette');
+      if (btnCmdPalette) btnCmdPalette.addEventListener('click', openCmdPalette);
+
+      // Global Shortcuts: Escape to close modals, Ctrl+K Command Palette, / to focus search, Tab trap trong modal
       document.addEventListener('keydown', (e) => {
         /* FULL PASS 2026-09-30: o anh raw (div) truoc day chi bam chuot duoc -> nay la role=button, Enter/Space mo anh. */
         if ((e.key === 'Enter' || e.key === ' ') && e.target && e.target.classList && e.target.classList.contains('js-view-raw-image')) {
@@ -4881,17 +5913,21 @@
           return;
         }
         if (e.key === 'Tab') {
-          const openModal = ['doc-preview-modal', 'quick-video-modal', 'raw-deep-modal', 'video-transcript-modal', 'raw-image-modal', 'music-studio-modal']
+          const openModal = MODAL_IDS
             .map(id => document.getElementById(id))
             .find(m => m && m.style.display === 'flex');
           if (openModal) trapFocus(openModal, e);
         }
         if (e.key === 'Escape') {
+          const cmdModal = document.getElementById('cmd-palette-modal');
+          if (cmdModal && cmdModal.style.display === 'flex') {
+            closeCmdPalette();
+            return;
+          }
           const docPrevModal = document.getElementById('doc-preview-modal');
           if (docPrevModal && docPrevModal.style.display === 'flex') {
             docPrevModal.style.display = 'none';
-            const otherOpen = document.getElementById('raw-deep-modal')?.style.display === 'flex' || document.getElementById('video-transcript-modal')?.style.display === 'flex';
-            if (!otherOpen) document.body.style.overflow = '';
+            if (!hasAnyOtherModalOpen('doc-preview-modal')) document.body.style.overflow = '';
             if (docPrevModal._prevActiveElement && typeof docPrevModal._prevActiveElement.focus === 'function') {
               try { docPrevModal._prevActiveElement.focus(); } catch (err) {}
             }
@@ -4901,13 +5937,20 @@
           if (musicModal && musicModal.style.display === 'flex') {
             const closeM = document.getElementById('close-music-studio');
             if (closeM) closeM.click();
-            else { musicModal.style.display = 'none'; document.body.style.overflow = ''; }
+            else {
+              musicModal.style.display = 'none';
+              if (!hasAnyOtherModalOpen('music-studio-modal')) document.body.style.overflow = '';
+            }
             return;
           }
           const quickModal = document.getElementById('quick-video-modal');
           if (quickModal && quickModal.style.display === 'flex') {
             if (window.closeQuickVideoModal) window.closeQuickVideoModal();
-            else { quickModal.style.display = 'none'; quickModal.innerHTML = ''; }
+            else {
+              quickModal.style.display = 'none';
+              quickModal.innerHTML = '';
+              if (!hasAnyOtherModalOpen('quick-video-modal')) document.body.style.overflow = '';
+            }
             return;
           }
           /* FULL PASS 2026-09-30: anh raw co the mo CHONG len modal Raw kenh -> Esc phai dong anh truoc
@@ -4915,9 +5958,7 @@
           const imgModal = document.getElementById('raw-image-modal');
           if (imgModal && imgModal.style.display === 'flex') {
             imgModal.style.display = 'none';
-            const otherOpen = document.getElementById('raw-deep-modal')?.style.display === 'flex' ||
-                              document.getElementById('video-transcript-modal')?.style.display === 'flex';
-            if (!otherOpen) document.body.style.overflow = '';
+            if (!hasAnyOtherModalOpen('raw-image-modal')) document.body.style.overflow = '';
             if (imgModal._prevActiveElement && typeof imgModal._prevActiveElement.focus === 'function') {
               try { imgModal._prevActiveElement.focus(); } catch (err) {}
             }
@@ -4926,9 +5967,7 @@
           const subModal = document.getElementById('video-transcript-modal');
           if (subModal && subModal.style.display === 'flex') {
             subModal.style.display = 'none';
-            const otherOpen = document.getElementById('raw-deep-modal')?.style.display === 'flex' ||
-                              document.getElementById('raw-image-modal')?.style.display === 'flex';
-            if (!otherOpen) document.body.style.overflow = '';
+            if (!hasAnyOtherModalOpen('video-transcript-modal')) document.body.style.overflow = '';
             if (subModal._prevActiveElement && typeof subModal._prevActiveElement.focus === 'function') {
               try { subModal._prevActiveElement.focus(); } catch (err) {}
             }
@@ -4942,7 +5981,7 @@
               rawModal.querySelectorAll('audio').forEach(a => { try { a.pause(); a.currentTime = 0; } catch (e) {} });
               rawModal.querySelectorAll('iframe').forEach(f => { try { f.src = 'about:blank'; } catch (e) {} });
               rawModal.style.display = 'none';
-              document.body.style.overflow = '';
+              if (!hasAnyOtherModalOpen('raw-deep-modal')) document.body.style.overflow = '';
               if (rawModal._prevActiveElement && typeof rawModal._prevActiveElement.focus === 'function') {
                 try { rawModal._prevActiveElement.focus(); } catch (err) {}
               }
@@ -4951,29 +5990,7 @@
           }
         } else if ((e.key === 'k' || e.key === 'K') && (e.ctrlKey || e.metaKey) && !e.altKey) {
           e.preventDefault();
-          const searchIds = ['music-search', 'fq', 'fq-nx', 'fq-doc', 'fq-kenh', 'fq-raw', 'fq-reup', 'music-q', 'cl-matrix-search', 'sodo-deep-q'];
-          const searchEl = searchIds.map(id => document.getElementById(id)).find(el => el && el.offsetParent !== null);
-          if (searchEl) {
-            searchEl.focus();
-            searchEl.select();
-          } else if (state.tab === 'nhac' && typeof window.openMusicStudioModal === 'function') {
-            Promise.resolve(window.openMusicStudioModal('all')).then(() => {
-              const mInp = document.getElementById('music-search');
-              if (mInp) { mInp.focus(); mInp.select(); }
-            });
-          } else if (state.tab === 'chienluoc') {
-            state.clSubTab = 'matrix144';
-            syncClSubUrl();
-            Promise.resolve(render()).then(() => {
-              const clInp = document.getElementById('cl-matrix-search');
-              if (clInp) { clInp.focus(); clInp.select(); }
-            });
-          } else {
-            Promise.resolve(openTab('video')).then(() => {
-              const fqEl = document.getElementById('fq');
-              if (fqEl) { fqEl.focus(); fqEl.select(); }
-            });
-          }
+          openCmdPalette();
         } else if (e.key === '/' && !e.ctrlKey && !e.metaKey && !e.altKey) {
           const activeTag = document.activeElement ? document.activeElement.tagName.toUpperCase() : '';
           if (activeTag !== 'INPUT' && activeTag !== 'TEXTAREA') {

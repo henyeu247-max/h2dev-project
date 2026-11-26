@@ -80,19 +80,71 @@ function resolveSafeRootPath(relPath) {
   })) {
     return null;
   }
+  // L2-07: fs.realpathSync containment — verify symlinks don't escape ROOT
+  try {
+    let checkPath = resolved;
+    if (!fs.existsSync(checkPath)) {
+      // Walk up to the first existing parent
+      checkPath = path.dirname(checkPath);
+      while (checkPath && checkPath !== ROOT && !fs.existsSync(checkPath)) {
+        checkPath = path.dirname(checkPath);
+      }
+    }
+    if (checkPath) {
+      const realResolved = fs.realpathSync(checkPath);
+      const realRoot = fs.realpathSync(ROOT);
+      if (!realResolved.startsWith(realRoot + path.sep) && realResolved !== realRoot) {
+        return null;
+      }
+    }
+  } catch (_) {
+    return null; // fail closed
+  }
   return resolved;
 }
 
 function safeMerge(target, ...sources) {
-  const out = (target && typeof target === 'object') ? target : {};
-  for (const src of sources) {
-    if (!src || typeof src !== 'object') continue;
-    for (const key of Object.keys(src)) {
-      if (UNSAFE_JSON_KEYS.has(key)) continue;
-      out[key] = src[key];
+  const ancestors = new Set();
+  function _cloneArray(arr, depth) {
+    if (depth > 10) return [];
+    if (ancestors.has(arr)) return [];
+    ancestors.add(arr);
+    try {
+      return arr.map(item => {
+        if (Array.isArray(item)) return _cloneArray(item, depth + 1);
+        if (item && typeof item === 'object') return _merge({}, [item], depth + 1);
+        return item;
+      });
+    } finally {
+      ancestors.delete(arr);
     }
   }
-  return out;
+  function _merge(tgt, srcs, depth) {
+    if (depth > 10) return tgt;
+    const out = (tgt && typeof tgt === 'object' && !Array.isArray(tgt)) ? tgt : {};
+    for (const src of srcs) {
+      if (!src || typeof src !== 'object' || Array.isArray(src)) continue;
+      if (src === out || ancestors.has(src)) continue;
+      ancestors.add(src);
+      try {
+        for (const key of Object.keys(src)) {
+          if (UNSAFE_JSON_KEYS.has(key)) continue;
+          const val = src[key];
+          if (val && typeof val === 'object' && !Array.isArray(val)) {
+            out[key] = _merge(out[key], [val], depth + 1);
+          } else if (Array.isArray(val)) {
+            out[key] = _cloneArray(val, depth + 1);
+          } else {
+            out[key] = val;
+          }
+        }
+      } finally {
+        ancestors.delete(src);
+      }
+    }
+    return out;
+  }
+  return _merge(target, sources, 0);
 }
 
 function getFileMtimeMs(relPath) {
@@ -491,8 +543,8 @@ function getNicheRadarResponse() {
     const skus = (n.skus || []).length;
     const rank = Number((auditEntry && (auditEntry.rank || auditEntry.thuTu)) || n.hang) || 99;
     const tier = (auditEntry && (auditEntry.tier || auditEntry.nhom)) || (n.xanh === true ? 'UU_TIEN_SAN_XUAT' : 'WATCHLIST');
-    const rpmRaw = String(n.rpm || '');
-    const rpmMatch = rpmRaw.match(/median\s*:?\s*\$?\s*(\d+(?:\.\d+)?)/i) || rpmRaw.match(/\$(\d+(?:\.\d+)?)/);
+    const rpmRaw = String(n.rpm || '').slice(0, 256);
+    const rpmMatch = rpmRaw.match(/median\b[^\d\n]{0,16}?(\d+(?:\.\d+)?)/i) || rpmRaw.match(/\$(\d+(?:\.\d+)?)/);
     const rpmNum = rpmMatch ? parseFloat(rpmMatch[1]) : 0;
     // SAI = Search Acquisition Index (demand / discoverability)
     let sai = 20;

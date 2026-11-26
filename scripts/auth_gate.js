@@ -7,7 +7,7 @@ const crypto = require('crypto');
 const ROOT = path.resolve(__dirname, '..');
 const ENV_PATH = path.join(ROOT, '.env');
 const COOKIE_NAME = '_97yo_auth';
-const AUTH_LOGIN_VER = '20261124-uifix105';
+const AUTH_LOGIN_VER = '20261126-uifix110';
 const TTL_SEC = 30 * 24 * 60 * 60; // 30 days
 const WINDOW_MS = 15 * 60 * 1000; // 15 minutes
 const MAX_FAILS = 5;
@@ -248,26 +248,41 @@ function loginPage(next, error) {
     padding: 20px;
   }
   .card {
-    width: 100%; max-width: 390px; background: #101116; border: 1px solid #262730;
-    border-radius: 16px; padding: 28px 24px; box-shadow: 0 24px 48px rgba(0,0,0,0.6);
+    width: 100%; max-width: 390px; background: #0f0f0f; border: 1px solid #222;
+    border-radius: 16px; padding: 28px 24px; box-shadow: 0 24px 48px rgba(0,0,0,0.65);
   }
   .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
-  .dot { width: 12px; height: 12px; border-radius: 50%; background: #E2023A; box-shadow: 0 0 14px rgba(226,2,58,0.8); }
-  .title { font-size: 18px; font-weight: 700; margin: 0; letter-spacing: -0.01em; }
-  .sub { font-size: 13px; color: #9ca3af; margin: 0 0 20px 0; line-height: 1.45; }
+  @keyframes dotPulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 12px rgba(226,2,58,0.8); }
+    50% { transform: scale(1.22); box-shadow: 0 0 18px rgba(226,2,58,1); }
+  }
+  .dot {
+    width: 12px; height: 12px; border-radius: 50%; background: #E2023A;
+    box-shadow: 0 0 12px rgba(226,2,58,0.8); animation: dotPulse 2s ease-in-out infinite;
+  }
+  .title { font-size: 18px; font-weight: 700; margin: 0; letter-spacing: -0.02em; }
+  .sub { font-size: 13px; color: #9ca3af; margin: 0 0 20px 0; line-height: 1.5; }
   label { display: block; font-size: 12px; font-weight: 600; color: #d1d5db; margin-bottom: 6px; }
   .pw-wrap { position: relative; margin-bottom: 14px; }
   input[type="password"], input[type="text"] {
-    width: 100%; padding: 11px 44px 11px 12px; border-radius: 10px; border: 1px solid #2e303c;
-    background: #090a0e; color: #fff; font-size: 14px; outline: none;
+    width: 100%; padding: 11px 44px 11px 12px; border-radius: 10px; border: 1px solid #222;
+    background: #050505; color: #fff; font-size: 14px; outline: none; transition: border-color 120ms ease;
   }
   input:focus { border-color: #E2023A; }
   .eye-btn {
     position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
     background: transparent; border: 0; color: #9ca3af; cursor: pointer;
     padding: 6px 8px; border-radius: 8px; font-size: 12px; font-weight: 600;
+    display: inline-flex; align-items: center; justify-content: center;
   }
   .eye-btn:hover { color: #fff; background: rgba(255,255,255,0.06); }
+  @keyframes authShake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    80% { transform: translateX(-2px); }
+  }
+  .card.is-shaking { animation: authShake 260ms ease; }
   .err {
     margin-bottom: 14px; padding: 10px 12px; border-radius: 10px; font-size: 13px;
     background: rgba(226,2,58,0.12); border: 1px solid rgba(226,2,58,0.45); color: #fda4af;
@@ -276,13 +291,19 @@ function loginPage(next, error) {
   .submit-btn {
     width: 100%; padding: 11px 16px; border: 0; border-radius: 10px; cursor: pointer;
     background: #E2023A; color: #fff; font-size: 14px; font-weight: 700;
+    transition: background-color 120ms ease, transform 120ms ease;
   }
   .submit-btn:hover { background: #c90233; }
+  .submit-btn:active { transform: scale(0.98); }
   .submit-btn:disabled { opacity: 0.6; cursor: wait; }
+  @media (prefers-reduced-motion: reduce) {
+    .dot, .card.is-shaking { animation: none !important; }
+    .submit-btn, input { transition: none !important; }
+  }
 </style>
 </head>
 <body>
-  <main class="card">
+  <main class="card" id="loginCard">
     <div class="brand">
       <span class="dot" aria-hidden="true"></span>
       <h1 class="title">97yo-dev Studio</h1>
@@ -293,7 +314,7 @@ function loginPage(next, error) {
       <label for="pw">Mật khẩu truy cập</label>
       <div class="pw-wrap">
         <input id="pw" name="password" type="password" autocomplete="current-password" required autofocus>
-        <button id="eye" type="button" class="eye-btn" aria-label="Hiện mật khẩu" aria-pressed="false">Hiện</button>
+        <button id="eye" type="button" class="eye-btn" aria-label="Hiện mật khẩu" aria-pressed="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
       </div>
       <div id="errBox" class="err" role="alert"${cleanErr ? '' : ' hidden'}>${escHtml(cleanErr)}</div>
       <button id="submitBtn" type="submit" class="submit-btn">Đăng nhập</button>

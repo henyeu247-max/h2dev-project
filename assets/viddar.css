@@ -85,8 +85,8 @@
   --topbar-bg: rgba(5,5,5,0.92);
   --bottom-nav-bg: rgba(5,5,5,0.94);
   --focus-ring: 0 0 0 2px var(--bg), 0 0 0 4px rgba(226,2,58,.6);
-  --r-md: 4px;
-  --r-lg: 4px;
+  --r-md: 10px;
+  --r-lg: 14px;
   --row-h: 36px;
   --pad-page: 28px;
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -97,6 +97,7 @@
 [data-density="comfortable"] { --row-h: 44px; --pad-page: 36px; }
 
 *, *::before, *::after { box-sizing: border-box; }
+b, strong { font-weight: 700; }
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -380,7 +381,7 @@ code { font-size: 12px; color: var(--fg-2); }
 .btn-primary, a.btn-primary { color: #fff; background: var(--brand); border-color: var(--brand); box-shadow: 3px 3px 0 rgba(226,2,58,0.3); }
 .btn-primary:hover { background: #fff; color: #000; border-color: #fff; box-shadow: 3px 3px 0 #838383; }
 .btn-ghost { background: transparent; }
- .btn:focus-visible, .btn-primary:focus-visible, a:focus-visible, button:focus-visible, .btn:focus, a:focus, button:focus { outline: none; box-shadow: var(--focus-ring); }
+ .btn:focus-visible, .btn-primary:focus-visible, a:focus-visible, button:focus-visible, [data-nx-sub-chip]:focus-visible, [role="button"]:focus-visible, .nx-card-point-toggle:focus-visible, .btn:focus, a:focus, button:focus { outline: none; box-shadow: var(--focus-ring); }
  .tab-btn:focus { outline: none; box-shadow: var(--focus-ring); }
 .card, .studio-card, .bento-card, .interactive-card, .niche-card {
   position: relative;
@@ -412,7 +413,8 @@ code { font-size: 12px; color: var(--fg-2); }
    (2) TUONG PHAN: nen dropdown KHONG duoc gan bang --surface-2 (#1a1a1a) vi the card cung la
        #0f0f0f -> chi chenh 4% -> mat nguoi van thay "lo". Nen dung --bg (#050505) dam hon nen card
        -> tach lop ro rang, van 1 he token. Header dung --surface (khong dung hex #060910 toi hon ca nen trang). */
-#video-search-suggestions, #raw-search-suggestions {
+#video-search-suggestions, #raw-search-suggestions, #nx-search-suggestions, #kenh-search-suggestions,
+#tatca-search-suggestions, #doc-search-suggestions, #reup-search-suggestions {
   background-color: var(--bg) !important;
   backdrop-filter: blur(var(--h2-backdrop-blur)) saturate(180%) !important;
   -webkit-backdrop-filter: blur(var(--h2-backdrop-blur)) saturate(180%) !important;
@@ -420,22 +422,38 @@ code { font-size: 12px; color: var(--fg-2); }
   box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.98), 0 0 0 1px rgba(255, 255, 255, 0.16) !important;
   z-index: var(--h2-z-modal-top) !important;
 }
-#video-search-suggestions > .px-3\\.5, #raw-search-suggestions > .px-3\\.5 {
+#video-search-suggestions > .px-3\.5:not(.js-v-sug-row),
+#raw-search-suggestions > .px-3\.5:not(.js-sug-row),
+#nx-search-suggestions > .px-3\.5:not(.js-tab-fts-row),
+#kenh-search-suggestions > .px-3\.5:not(.js-tab-fts-row),
+#tatca-search-suggestions > .px-3\.5:not(.js-tab-fts-row),
+#doc-search-suggestions > .px-3\.5:not(.js-tab-fts-row),
+#reup-search-suggestions > .px-3\.5:not(.js-tab-fts-row) {
   background-color: var(--surface) !important;
 }
-.js-v-sug-row, .js-sug-row {
+.js-v-sug-row, .js-sug-row, .js-tab-fts-row {
   background-color: var(--bg) !important;
   transition: background-color 0.15s ease !important;
 }
-.js-v-sug-row:hover, .js-sug-row:hover {
+.js-v-sug-row:hover, .js-sug-row:hover, .js-tab-fts-row:hover {
   background-color: #1e293b !important;
   background: #1e293b !important;
 }
 /* UI-fix 2026-10-09: dien thoai (<=520px) — nhan + nut "Tua den" xuong dong rieng.
    Truoc do cot nhan chi rong ~110px, moi goi y xuong 5-6 dong. Do lai 390px: dong dau 294px -> 163px, nhan 110px -> 282px. */
 @media (max-width: 520px) {
-  #video-search-suggestions .js-v-sug-row { flex-wrap: wrap !important; }
-  #video-search-suggestions .js-v-sug-row > div:last-child { width: 100% !important; justify-content: flex-start !important; padding-left: 26px !important; }
+  #video-search-suggestions .js-v-sug-row,
+  #nx-search-suggestions .js-tab-fts-row,
+  #kenh-search-suggestions .js-tab-fts-row,
+  #tatca-search-suggestions .js-tab-fts-row,
+  #doc-search-suggestions .js-tab-fts-row,
+  #reup-search-suggestions .js-tab-fts-row { flex-wrap: wrap !important; }
+  #video-search-suggestions .js-v-sug-row > div:last-child,
+  #nx-search-suggestions .js-tab-fts-row > div:last-child,
+  #kenh-search-suggestions .js-tab-fts-row > div:last-child,
+  #tatca-search-suggestions .js-tab-fts-row > div:last-child,
+  #doc-search-suggestions .js-tab-fts-row > div:last-child,
+  #reup-search-suggestions .js-tab-fts-row > div:last-child { width: 100% !important; justify-content: flex-start !important; padding-left: 26px !important; }
 }
 .card::after, .interactive-card::after, .bento-card::after, .niche-card::after {
   content: "";
@@ -506,15 +524,14 @@ code { font-size: 12px; color: var(--fg-2); }
 @media (max-width: 720px) {
   .max-w-\[140px\] { max-width: min(140px, 42vw); }
 }
-.badge-green { color: var(--success-fg); background: rgba(0,255,136,0.12); border-color: transparent; }
+.badge-green { background: #0c2a1a !important; color: #86efac !important; border-color: #14532d !important; }
 .badge-amber { color: #ffcc00; background: rgba(255,204,0,0.12); border-color: transparent; }
-.badge-red { color: var(--brand-tint-fg); background: var(--brand-tint); border-color: transparent; }
+.badge-red { background: #3f1218 !important; color: #ffb4c0 !important; border-color: #7f1d2a !important; }
 .badge-blue, .badge-sky, .badge-muted { color: var(--fg-muted); background: var(--surface-2); border-color: var(--border); }
 
 .niche-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(340px,100%),1fr)); gap: 0.75rem; align-items: stretch; }
-.niche-grid > :last-child:nth-child(odd):nth-child(n+3) { grid-column: 1 / -1; }
 .niche-card { display: flex; flex-direction: column; gap: 0; min-width: 0; overflow: hidden; background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--tier-strip, var(--border)); border-radius: var(--r-lg); position: relative; padding-top: 0; }
-.nc-rank { display: grid; place-items: center; flex: 0 0 auto; width: 30px; height: 30px; border-radius: 2px; font: 800 14px/1 var(--font-mono); border: 1px solid var(--brand-hover); font-variant-numeric: tabular-nums; }
+.nc-rank { display: grid; place-items: center; flex: 0 0 auto; width: 30px; height: 30px; border-radius: 2px; font: 700 14px/1 var(--font-mono); border: 1px solid var(--brand-hover); font-variant-numeric: tabular-nums; }
 .rank-badge-gold { color: #ffcc00; background: rgba(255,204,0,0.12); border-color: rgba(255,204,0,0.35); }
 .rank-badge-silver { color: var(--fg-2); background: var(--surface-2); border: 1px solid var(--border); }
 .rank-badge-slate { color: var(--fg-muted); background: var(--surface-2); border: 1px solid var(--border); }
@@ -542,6 +559,27 @@ code { font-size: 12px; color: var(--fg-2); }
 .niche-card.is-tier-tach { border-left-color: #8a0122; }
 .nx-card-facts { display: grid; gap: 6px; min-width: 0; padding: 4px 14px 8px; color: var(--fg-2); line-height: 1.5; }   /* P1-D: 1.45 -> 1.5 (bac body) */
 .nx-card-point { overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.nx-card-point.is-expanded { display: block; -webkit-line-clamp: unset; -webkit-box-orient: initial; overflow: visible; }
+.nx-card-point-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  justify-self: start;
+  width: fit-content;
+  min-height: 24px;
+  padding: 2px 8px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm, 2px);
+  color: var(--brand-ink);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.nx-card-point-toggle:hover {
+  color: var(--brand-hover);
+  border-color: var(--brand);
+}
 .nx-card-subniches { overflow-wrap: anywhere; min-width: 0; }
 .nx-card-channel-label { font: 12px/1.35 var(--font-mono); color: var(--fg-muted); padding: 0 14px 4px; text-transform: uppercase; letter-spacing: 0.04em; }   /* P1-D: 1.3 -> 1.35 */
 .nc-channels { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 4px; padding: 0 14px 8px; }
@@ -551,8 +589,6 @@ code { font-size: 12px; color: var(--fg-2); }
 }
 .nx-card-action { padding: 8px 14px 12px; border-top: 1px solid var(--hairline); margin-top: auto; }
 .nx-card-action button { display: inline-flex; align-items: center; gap: 4px; min-height: 44px; padding: 6px 8px; font-size: 12px; color: var(--brand-ink); font-weight: 600; }
-.nx-filter-head input { width: 100%; }
-.nx-filter-row { min-width: 0; }
 .nx-filter-chips { display: flex; flex-wrap: wrap; gap: 6px; min-width: 0; }
 .policy-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(min(260px,100%),1fr)); gap: 12px; }
 .policy-card { min-width: 0; padding: 12px; background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--r-md); }
@@ -581,12 +617,13 @@ code { font-size: 12px; color: var(--fg-2); }
 .filter-btn:hover { color: var(--fg); border-color: var(--brand); }
 .filter-btn:active { transform: scale(0.98); }
 .filter-btn.active {
-  background: var(--brand) !important;
-  color: #fff !important;
-  border-color: var(--brand) !important;
-  font-weight: 700 !important;
+  background: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
+  font-weight: 700;
 }
-.filter-btn.active:hover { background: var(--brand-hover) !important; }
+.filter-btn.active [data-chip-count] { color: #fff; }
+.filter-btn.active:hover { background: var(--brand-hover); }
 
 /* --- Track Switcher (H2DEV vs DGMD vs HUAN vs ALL) --- */
 .track-switcher {
@@ -692,17 +729,9 @@ code { font-size: 12px; color: var(--fg-2); }
   }
 }
 
-.nx-filter-row { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); align-items: start; gap: 8px; }
+.nx-filter-row { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); align-items: start; gap: 8px; min-width: 0; }
 .nx-filter-head { min-width: 0; }
 .nx-filter-head input { width: 100%; }
-@media (max-width: 640px) {
-  .nx-filter-head { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; }
-  .nx-filter-head > div, .nx-filter-head > button { width: 100%; max-width: none; }
-  .nx-filter-row { grid-template-columns: minmax(0, 1fr); gap: 5px; padding-block: 8px; }
-  .nx-filter-chips { gap: 6px; }
-  .nx-filter-chips .filter-btn { min-height: 44px; }
-  .channel-chip { min-height: 44px; padding: 10px 12px; }
-}
 .text-gray-400, .text-gray-500, .text-gray-600 { color: var(--fg-muted) !important; }
 .text-gray-200, .text-gray-300 { color: var(--fg-2) !important; }
 .text-brand-200, .text-brand-300, .text-brand-400, .text-brand-500, .text-brand-text { color: var(--brand-ink) !important; }
@@ -736,9 +765,9 @@ code { font-size: 12px; color: var(--fg-2); }
 .card-interactive:hover, .grid-card:hover { transform: none !important; box-shadow: none !important; border-color: var(--border-strong) !important; }
 .input-dark:focus { border-color: var(--brand) !important; box-shadow: var(--focus-ring) !important; }
 .input-dark:hover:not(:focus) { border-color: var(--border-strong) !important; }
-.badge-red { background: var(--brand-tint) !important; color: var(--brand-tint-fg) !important; border-color: transparent !important; }
 .badge-muted { background: var(--surface-2) !important; color: var(--fg-muted) !important; border-color: var(--border) !important; }
-.rounded-xl, .rounded { border-radius: 4px; }
+.rounded { border-radius: 8px; }
+.rounded-xl { border-radius: 14px; }
 .hover\:border-brand-500:hover, [class*="hover:border-brand"]:hover { border-color: var(--brand) !important; }
 /* Utilities used by templates but absent from the stale tailwind build. */
 .bg-brand { background-color: var(--brand); }
@@ -804,6 +833,7 @@ details[open] > summary .group-open\:rotate-180 { transform: rotate(180deg); }
 img, video { max-width: 100%; height: auto; }
 #content .card, #content .bento-card, #content .flex { min-width: 0; max-width: 100%; }
 #content .card { overflow-x: clip; overflow-y: visible; }
+:where(#content .grid) { grid-template-columns: minmax(0,1fr); }
 #content .grid { width: 100%; min-width: 0; }
 #content .grid-cols-1 { grid-template-columns: minmax(0,1fr); }
 #content .grid-cols-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
@@ -874,7 +904,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     overflow: hidden !important;
     z-index: var(--h2-z-topbar-mobile) !important;
     border-bottom: 1px solid var(--border) !important;
-    background: #050505 !important;
+    background: #050505;
     box-sizing: border-box !important;
   }
   .vd-topbar.has-subnav {
@@ -967,7 +997,7 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
     width: 100% !important;
     height: calc(56px + env(safe-area-inset-bottom, 0px)) !important;
     padding: 0 4px env(safe-area-inset-bottom, 0px) !important;
-    background: #050505 !important;
+    background: #050505;
     border-top: 1px solid var(--border) !important;
     z-index: var(--h2-z-topbar-mobile) !important;
     box-sizing: border-box !important;
@@ -1101,7 +1131,8 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
   }
   .nx-filter-panel { padding: 14px !important; }
   .nx-filter-head { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
-  .nx-filter-head input, .nx-filter-head button { width: 100%; max-width: none; min-height: 44px; }
+  .nx-filter-head > div, .nx-filter-head > button, .nx-filter-head input { width: 100%; max-width: none; }
+  .nx-filter-head input, .nx-filter-head > button { min-height: 44px; }
   .nx-filter-row { grid-template-columns: minmax(0, 1fr); gap: 6px; padding-block: 10px; }
   .nx-filter-row > span { display: block; margin: 0 0 4px; }
   .nx-filter-chips { gap: 8px; }
@@ -1407,16 +1438,6 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 .text-gray-400 { color: var(--fg-2) !important; }
 #content .filter-btn { min-height: 44px !important; }
 .nx-filter-chips .filter-btn { min-height: 44px !important; }
-.badge-red {
-  background: #3f1218 !important;
-  color: #ffb4c0 !important;
-  border-color: #7f1d2a !important;
-}
-.badge-green {
-  background: #0c2a1a !important;
-  color: #86efac !important;
-  border-color: #14532d !important;
-}
 .overview-grid > .card { min-width: 0; height: 100%; }
 .market-row .market-label { color: var(--fg-2); min-width: 2.5rem; }
 .line-clamp-2, .nx-card-point {
@@ -1457,7 +1478,11 @@ body.theater-active #theaterVideoBox { border: 0; border-radius: 0; }
 /* UI4 perf */
 /* NANG CAP 2026-09-30 (CLS): bo .bento-card — 4 the KPI luon o dau trang nen khong loi perf, nhung
    contain-intrinsic-size 180px lam luoi KPI cao 422px roi co ve 214px -> layout-shift 0.127 @375 /rawkenh. */
-.niche-card, .nx-card, [data-raw-card], .lesson-row {
+.niche-card {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 850px;
+}
+.nx-card, [data-raw-card], .lesson-row {
   content-visibility: auto;
   contain-intrinsic-size: auto 180px;
 }
@@ -1543,12 +1568,6 @@ button.niche-row:focus-visible,
 .overview-grid > .card > .market-list,
 .overview-grid > .card > .niche-list { flex: 1 1 auto; }
 .bento-card { min-width: 0; min-height: 96px; }
-@media (min-width: 1280px) {
-  #panel-root > .tq-head,
-  #panel-root > .bento-grid,
-  #panel-root > .card,
-  #panel-root > .overview-grid { max-width: 1200px; }
-}
 
 /* UI Design pass — overview lists (screenshot QA) */
 .overview-grid > .card {
@@ -1736,7 +1755,6 @@ button.niche-row:focus-visible,
     min-height: 44px;
     padding: 6px 4px;
   }
-  .overview-grid > .card { min-height: 420px; }
 }
 
 .bento-grid > .bento-card {
@@ -1867,8 +1885,8 @@ button.niche-row:focus-visible,
     padding-bottom: 2px;
   }
   #content .flex-wrap:has(> .filter-btn)::-webkit-scrollbar, #content .nx-filter-chips::-webkit-scrollbar { display: none; }
-  #content .flex-wrap:has(> .filter-btn) > .filter-btn, #content .nx-filter-chips > .filter-btn {
-    flex: 0 0 auto !important;
+  :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud) > .filter-btn, #content .nx-filter-chips > .filter-btn {
+    flex: 1 1 auto !important;
     white-space: normal !important;
     max-width: 100% !important;
     overflow-wrap: normal !important;
@@ -1885,15 +1903,16 @@ button.niche-row:focus-visible,
 
 /* 2026-10-09: Truc quan hoa kenh DIE / 404 trong tab Kenh mau */
 .kenh-card-dead {
-  border: 1px dashed rgba(239, 68, 68, 0.35) !important;
-  background-color: var(--surface-2) !important;
-  filter: grayscale(1);
-  opacity: 0.7;
-  transition: opacity 0.2s, border-color 0.2s;
+  border: 1px dashed rgba(239, 68, 68, 0.45) !important;
+  background-color: var(--bg-subtle) !important;
+  filter: grayscale(0.75);
+  opacity: 0.85;
+  transition: opacity 0.2s, border-color 0.2s, filter 0.2s;
 }
 .kenh-card-dead:hover {
   opacity: 1;
-  border-color: rgba(239, 68, 68, 0.7) !important;
+  filter: grayscale(0);
+  border-color: rgba(239, 68, 68, 0.75) !important;
 }
 .kenh-dead-title {
   text-decoration: line-through;
@@ -1901,10 +1920,11 @@ button.niche-row:focus-visible,
 }
 .kenh-dead-stamp {
   position: absolute;
-  bottom: -4px;
-  right: -4px;
+  bottom: 0;
+  right: 0;
   padding: 1px 4px;
   border-radius: 4px;
+  border: 1px solid var(--bg-subtle);
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
@@ -1961,8 +1981,8 @@ button.niche-row:focus-visible,
   color: #fbbf24 !important;
 }
 .channel-chip-ban-badge {
-  background-color: #d97706 !important;
-  color: #ffffff !important;
+  background-color: var(--warning) !important;
+  color: var(--bg) !important;
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
@@ -2014,23 +2034,57 @@ button.niche-row:focus-visible,
   #video-filter-watch .filter-btn { min-height: 44px; height: 100% !important; display: inline-flex; align-items: center; padding: 8px 4px !important; line-height: 1.2 !important; justify-content: center !important; text-align: center !important; white-space: normal !important; box-sizing: border-box; }
   #video-chip-cloud { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 8px !important; }
   #video-chip-cloud > .filter-btn:last-child:nth-child(odd) { grid-column: 1 / -1; }
-  #video-chip-cloud .filter-btn { min-height: 40px; justify-content: center; text-align: center; white-space: normal !important; }
+  #video-chip-cloud .filter-btn { min-height: var(--h2-touch-min); justify-content: center; text-align: center; white-space: normal !important; }
 }
 /* UI-standard G-3 (2026-10-09): nhom chip loc tren may tinh bang va dien thoai (<= 1024px) chay theo flex-wrap; chip tu gian de
    hang cuoi khong con chip le. Khong dung so cot co dinh nen khong vo khi chieu rong thay doi. Nhom co id rieng giu nguyen luoi. */
 @media (max-width: 1024px) {
-  :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud):not(.policy-links):not([hidden]) { display: flex !important; flex-wrap: wrap !important; gap: 8px !important; }
-  :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud):not(.policy-links):not([hidden]) > .filter-btn { flex: 1 1 112px; min-height: 40px; line-height: 1.2; justify-content: center; text-align: center; white-space: normal !important; }
+  :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud):not(.policy-links):not(.nhac-quick-filters):not([hidden]) { display: flex !important; flex-wrap: wrap !important; gap: 8px !important; }
+  :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud):not(.policy-links):not(.nhac-quick-filters):not([hidden]) > .filter-btn { flex: 1 1 112px; min-height: var(--h2-touch-min); line-height: 1.2; justify-content: center; text-align: center; white-space: normal !important; }
+  #video-chip-cloud .filter-btn { min-height: var(--h2-touch-min); }
+  #content .video-grid :is([data-action="video-card-module"], [data-action="video-card-niche"], [data-market-chip], .btn-open-video-sub),
+  #content :is([data-action="video-clear-niche"], [data-action="video-clear-market"], .js-v-sug-jump) {
+    min-height: var(--h2-touch-min);
+    min-width: var(--h2-touch-min);
+    justify-content: center;
+  }
 }
 
 /* UI-standard A-1 (2026-10-09): nut chu nho (text-xs) co vung cham toi thieu 24px, giu nguyen bo cuc chip; nut .btn-press trong the video giu min-height 38px. */
-#content button.text-xs:where(:not(.btn-press):not(.btn-primary):not(.filter-btn)) { min-height: 24px; display: inline-flex; align-items: center; }
+#content button.text-xs:where(:not(.btn-press):not(.btn-primary):not(.filter-btn):not(.hidden):not([hidden])) { min-height: 24px; display: inline-flex; align-items: center; }
+#content .h2-inline-action,
+#content [data-action="video-card-module"],
+#content .btn-open-video-sub:not(.btn-press) { min-height: 24px; min-width: 24px; display: inline-flex; align-items: center; justify-content: center; }
+#content .badge:is(button, a[href], [role="button"], [data-nx-sub-chip]):where(:not(.hidden):not([hidden])) { min-height: 24px; min-width: 24px; box-sizing: border-box; }
+@media (max-width: 1024px) {
+  #content .badge[data-nx-sub-chip]:where(:not(.hidden):not([hidden])) {
+    min-height: var(--h2-touch-min);
+    padding: 6px 10px;
+    text-align: left;
+  }
+}
+@media (max-width: 640px) {
+  #content .nx-card-subniches {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 6px;
+  }
+  #content .nx-card-subniches > b {
+    flex: 1 0 100%;
+  }
+  #content .nx-card-subniches > [data-nx-sub-chip] {
+    margin: 0 !important;
+  }
+}
 #content .tq-head button.btn-primary { min-height: 44px; padding: 10px 14px; }
 #content #fq,
 #content #freset,
 #content #fq-nx,
 #content #freset-nx,
 #content #freset-nx-empty,
+#content #freset-kenh,
+#content #freset-kenh-empty,
 #content .nx-card-action button,
 #content button[data-open-niche],
 #content button[data-expand-niche],
@@ -2044,8 +2098,121 @@ button.niche-row:focus-visible,
 @media (min-width: 1280px) {
   #content .video-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
 }
-#btn-clear-video-q { position: absolute; }
-#btn-clear-video-q::after { content: ""; position: absolute; top: 50%; left: 50%; width: 44px; height: 44px; transform: translate(-50%, -50%); }
+#btn-clear-video-q,
+#btn-clear-kenh-q { position: absolute; }
+#btn-clear-video-q::after,
+#btn-clear-kenh-q::after { content: ""; position: absolute; top: 50%; left: 50%; width: 44px; height: 44px; transform: translate(-50%, -50%); }
+
+/* /kenh-mau: desktop >=24px clickable targets, KPI active state, collapsible 92-niche drawer */
+#kenh-grid .km-handle-link,
+.km-handle-link,
+#kenh-grid .km-card-actions a,
+.km-card-actions a,
+#kenh-grid .card a[href]:where(:not(.hidden):not([hidden])),
+#kenh-grid .card button:where(:not(.filter-btn):not(.btn-press):not(.btn-primary):not(.hidden):not([hidden])) {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  max-width: 100%;
+}
+.km-handle-link { min-width: 0; }
+.km-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  min-width: 0;
+}
+.km-card-head .km-handle-link,
+.km-card-head .kenh-dead-title {
+  flex: 1 1 140px;
+  min-width: 120px;
+  max-width: 100%;
+}
+.km-card-badges {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--h2-space-1);
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.btn-open-km-dossier {
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+.btn-open-km-dossier.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--h2-space-1);
+}
+.btn-open-km-dossier:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+.bento-card[data-kenh-kpi].active,
+.bento-card[data-nx-kpi-tier].active {
+  border-color: var(--brand);
+  background: var(--surface-2);
+  box-shadow: inset 0 0 0 1px var(--brand);
+}
+.bento-card[data-kenh-kpi].active::after,
+.bento-card[data-nx-kpi-tier].active::after {
+  width: 100%;
+}
+.bento-card[data-kenh-kpi].active .stat-icon,
+.bento-card[data-nx-kpi-tier].active .stat-icon {
+  border-color: var(--brand);
+  color: var(--brand-ink);
+}
+.bento-card[data-kenh-kpi]:focus-visible,
+.bento-card[data-nx-kpi-tier]:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+.km-niche-drawer {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--hairline);
+}
+.km-niche-drawer > summary {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: var(--h2-touch-min, 44px);
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--surface-2);
+  color: var(--fg-2);
+  font-size: var(--h2-font-xs);
+  font-weight: 600;
+  line-height: 1.35;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color var(--h2-motion-fast) var(--h2-motion-ease),
+              border-color var(--h2-motion-fast) var(--h2-motion-ease),
+              color var(--h2-motion-fast) var(--h2-motion-ease);
+}
+.km-niche-drawer > summary::-webkit-details-marker { display: none; }
+.km-niche-drawer > summary:hover {
+  border-color: var(--brand);
+  color: var(--fg);
+}
+.km-niche-drawer > summary:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+.km-niche-drawer[open] > summary {
+  border-color: var(--border-strong);
+  color: var(--fg);
+  margin-bottom: 10px;
+}
 .js-v-sug-jump { min-height: 24px; display: inline-flex; align-items: center; }
 @media (min-width: 641px) {
   #video-filter-selects > select#fniche { max-width: 260px; }
@@ -2061,18 +2228,11 @@ button.niche-row:focus-visible,
 
 /* UI-fix 2026-10-09 (M1): chip le cuoi hang chiem ca hang (G-3). Loai tru hai khoi loc video (giu layout rieng).
    D-06: hang co nhan di kem (vd "Tinh trang song:", toi 4 chip) tu 641px chia deu chieu rong chip (G-2). Cum nhieu chip (vd Kenh mau 34 chip) giu auto: chia deu o day lam chip co 30px (da do bang anh). */
-:where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud) > .filter-btn { flex: 1 1 auto; }
-@media (max-width: 640px) {
-  :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud) > .filter-btn,
-  #content .nx-filter-chips > .filter-btn { flex: 1 1 auto !important; }
-}
+:where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud) > .filter-btn { flex: 0 1 auto; }
 @media (min-width: 641px) {
-  :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud):has(> :not(.filter-btn)):not(:has(> .filter-btn ~ .filter-btn ~ .filter-btn ~ .filter-btn ~ .filter-btn)) > .filter-btn { flex: 1 1 0; min-width: max-content; }
+  :where(#content .flex-wrap:has(> .filter-btn ~ .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud):not(.justify-between):not(.justify-center):not(:has(> :is(h1, h2, h3, h4, .h2-btn))):has(> :not(.filter-btn)):not(:has(> .filter-btn ~ .filter-btn ~ .filter-btn ~ .filter-btn ~ .filter-btn)) > .filter-btn { flex: 1 1 0; min-width: max-content; }
 }
 
-/* UI-fix 2026-10-09 (M1): luoi the kenh (Kenh mau) 2/3 cot: the le cuoi chiem ca hang, khong mo coi. */
-.grid.sm\:grid-cols-2.xl\:grid-cols-3.gap-3.min-w-0 { display: flex; flex-wrap: wrap; }
-.grid.sm\:grid-cols-2.xl\:grid-cols-3.gap-3.min-w-0 > .card { flex: 1 1 300px; }
 /* UI-fix 2026-10-09 (M1): chip le cuoi hang nhom loc Ngach gian ca hang tu 641 den 820px (<=640px da co luat rieng). */
 @media (min-width: 641px) and (max-width: 820px) { #content .nx-filter-chips > .filter-btn { flex: 1 1 auto; } }
 /* UI-fix 2026-10-09 (M1): nut Di nhanh le cuoi hang (641-820px, thanh flex) gian ca hang; phone (grid) va topbar giu nguyen. */
@@ -2080,7 +2240,8 @@ button.niche-row:focus-visible,
 
 /* UI-fix 2026-10-09 (G-3): thanh topbar co dung 6 nut tren dien thoai (vd /chienluoc) giu MOT hang (dai subnav cao 48px, tu cuon ngang); truoc day 6 nut tren luoi 5 cot thanh 2 hang cao 92px, tran khoi dai 48px nen hang dau bi tieu de che va nut thu 6 nam ngoai tieu de. */
 @media (max-width: 640px) {
-  .quick-access--topbar .quick-access__list:has(> .quick-access__button:nth-child(6):last-child) { grid-template-columns: repeat(6, minmax(76px, 1fr)); }
+  .quick-access--topbar .quick-access__list:has(> .quick-access__button:nth-child(6):last-child) { display: flex; flex-wrap: nowrap; gap: 4px; width: max-content; min-width: 100%; }
+  .vd-topbar-subnav .quick-access--topbar .quick-access__list:has(> .quick-access__button:nth-child(6):last-child) > .quick-access__button { flex: 1 0 auto; min-width: var(--h2-touch-min); padding: 6px 6px; white-space: nowrap; }
   #video-transcript-modal { padding: 8px !important; }
   #video-transcript-modal .video-sub-modal-box { max-height: 95vh !important; border-radius: 12px !important; }
   #video-transcript-modal .video-sub-header { padding: 8px 10px !important; gap: 6px !important; }
@@ -2104,4 +2265,594 @@ button.niche-row:focus-visible,
 .max-w-full { max-width: 100%; }
 .pointer-events-none { pointer-events: none; }
 .text-ellipsis { text-overflow: ellipsis; }
+
+/* =====================================================================================
+   /kenh-mau — Goi 2 Components & Mobile 375x812 Above-the-Fold Compaction
+   ===================================================================================== */
+.km-controls-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--h2-space-2);
+  margin-top: var(--h2-space-3);
+  padding-top: var(--h2-space-3);
+  border-top: 1px solid var(--hairline);
+  min-width: 0;
+  max-width: 100%;
+}
+.km-select {
+  min-height: 36px;
+  padding: 6px 28px 6px 10px;
+  background: var(--bg-subtle);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  font-family: var(--font-sans);
+  font-size: var(--h2-font-xs);
+  font-weight: var(--h2-fw-semibold);
+  line-height: var(--h2-lh-heading);
+  letter-spacing: var(--h2-ls-normal);
+  min-width: 0;
+  max-width: 100%;
+  cursor: pointer;
+  transition: border-color var(--h2-motion-fast) var(--h2-motion-ease),
+              background-color var(--h2-motion-fast) var(--h2-motion-ease);
+}
+.km-select:hover {
+  border-color: var(--border-strong);
+  background: var(--surface-2);
+}
+.km-select:focus-visible {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: var(--focus-ring);
+}
+.km-select option,
+.km-select optgroup {
+  background: var(--surface);
+  color: var(--fg);
+}
+#content .km-filter-scroll.km-filter-scroll {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--h2-space-2);
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Inline Voice Play Button on /kenh-mau cards & dossier */
+.km-voice-play-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--h2-space-1);
+  min-height: 24px;
+  padding: 2px 8px;
+  border-radius: var(--r-sm);
+  border: 1px solid rgba(0, 204, 255, 0.35);
+  background: rgba(0, 204, 255, 0.08);
+  color: var(--info);
+  font-family: var(--font-sans);
+  font-size: var(--h2-font-xs);
+  font-weight: var(--h2-fw-semibold);
+  line-height: var(--h2-lh-heading);
+  letter-spacing: var(--h2-ls-normal);
+  white-space: nowrap;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background-color var(--h2-motion-fast) var(--h2-motion-ease),
+              border-color var(--h2-motion-fast) var(--h2-motion-ease),
+              color var(--h2-motion-fast) var(--h2-motion-ease);
+}
+.km-voice-play-btn:hover {
+  background: rgba(0, 204, 255, 0.16);
+  border-color: var(--info);
+  color: var(--fg);
+}
+.km-voice-play-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+.km-voice-play-btn.is-playing {
+  background: rgba(0, 255, 136, 0.14);
+  border-color: var(--success);
+  color: var(--success-fg);
+  font-weight: var(--h2-fw-bold);
+}
+.km-voice-play-btn.is-playing:hover {
+  background: rgba(0, 255, 136, 0.22);
+  border-color: var(--success-fg);
+  color: var(--fg);
+}
+.km-voice-play-btn .h2-icon {
+  width: var(--h2-icon-14);
+  height: var(--h2-icon-14);
+  min-width: var(--h2-icon-14);
+  min-height: var(--h2-icon-14);
+  flex: 0 0 auto;
+}
+
+/* Universal Channel Dossier Modal inside #raw-deep-modal */
+.km-dossier-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--h2-space-3);
+  width: 100%;
+  min-width: 0;
+}
+.km-dossier-grid > * {
+  min-width: 0;
+}
+.km-dossier-audio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--h2-space-2);
+  padding: var(--h2-space-3);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  min-width: 0;
+}
+.km-dossier-audio audio {
+  width: 100%;
+  max-width: 100%;
+  height: 40px;
+  accent-color: var(--brand);
+  border-radius: var(--r-sm);
+}
+.km-dossier-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--h2-space-1);
+  max-width: 100%;
+  padding: 2px 8px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--fg-2);
+  font-family: var(--font-sans);
+  font-size: var(--h2-font-xs);
+  font-weight: var(--h2-fw-semibold);
+  line-height: var(--h2-lh-heading);
+  letter-spacing: var(--h2-ls-label);
+  white-space: nowrap;
+}
+.km-dossier-skus {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--h2-space-2);
+  min-width: 0;
+}
+.km-dossier-skus a,
+.km-dossier-skus button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--h2-space-1);
+  min-height: 32px;
+  padding: 4px 10px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-subtle);
+  color: var(--fg-2);
+  font-family: var(--font-mono);
+  font-size: var(--h2-font-xs);
+  font-weight: var(--h2-fw-medium);
+  line-height: var(--h2-lh-heading);
+  text-decoration: none;
+  transition: border-color var(--h2-motion-fast) var(--h2-motion-ease),
+              background-color var(--h2-motion-fast) var(--h2-motion-ease),
+              color var(--h2-motion-fast) var(--h2-motion-ease);
+}
+.km-dossier-skus a:hover,
+.km-dossier-skus button:hover {
+  border-color: var(--brand);
+  background: var(--surface-2);
+  color: var(--fg);
+}
+.km-dossier-skus a:focus-visible,
+.km-dossier-skus button:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+/* Enhanced Pagination on /kenh-mau */
+.km-pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--h2-space-2) var(--h2-space-3);
+  width: 100%;
+  min-width: 0;
+  font-size: var(--h2-font-xs);
+  line-height: var(--h2-lh-heading);
+  color: var(--fg-muted);
+}
+.km-pager-pages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--h2-space-1);
+  min-width: 0;
+}
+.km-pager-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--h2-space-1);
+  min-width: 32px;
+  min-height: 32px;
+  padding: 4px 10px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--fg-2);
+  font-family: var(--font-mono);
+  font-size: var(--h2-font-xs);
+  font-weight: var(--h2-fw-medium);
+  font-variant-numeric: tabular-nums;
+  line-height: var(--h2-lh-none);
+  white-space: nowrap;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background-color var(--h2-motion-fast) var(--h2-motion-ease),
+              border-color var(--h2-motion-fast) var(--h2-motion-ease),
+              color var(--h2-motion-fast) var(--h2-motion-ease);
+}
+.km-pager-btn:hover:not(:disabled) {
+  background: var(--surface-2);
+  border-color: var(--brand);
+  color: var(--fg);
+}
+.km-pager-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+.km-pager-btn.active,
+.km-pager-btn[aria-current="page"] {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--brand-fg);
+  font-weight: var(--h2-fw-bold);
+}
+.km-pager-btn.active:hover,
+.km-pager-btn[aria-current="page"]:hover {
+  background: var(--brand-hover);
+  border-color: var(--brand-hover);
+}
+.km-pager-btn:disabled,
+.km-pager-btn[aria-disabled="true"] {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.km-page-jump {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--h2-space-1);
+  min-width: 0;
+}
+input.km-page-jump,
+.km-page-jump input {
+  width: 60px;
+  min-height: 32px;
+  padding: 4px 8px;
+  background: var(--bg-subtle);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  font-family: var(--font-mono);
+  font-size: var(--h2-font-xs);
+  font-variant-numeric: tabular-nums;
+  line-height: var(--h2-lh-none);
+  text-align: center;
+}
+input.km-page-jump:focus-visible,
+.km-page-jump input:focus-visible {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: var(--focus-ring);
+}
+.km-page-size {
+  min-height: 32px;
+  padding: 4px 24px 4px 8px;
+  background: var(--bg-subtle);
+  color: var(--fg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  font-family: var(--font-sans);
+  font-size: var(--h2-font-xs);
+  font-weight: var(--h2-fw-medium);
+  font-variant-numeric: tabular-nums;
+  line-height: var(--h2-lh-heading);
+  cursor: pointer;
+}
+.km-page-size:hover {
+  border-color: var(--border-strong);
+  background: var(--surface-2);
+  color: var(--fg);
+}
+.km-page-size:focus-visible {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: var(--focus-ring);
+}
+
+/* Desktop & Tablet >=900px: 4-col KPI bento + single-row controls on /kenh-mau */
+@media (min-width: 900px) {
+  #content[aria-labelledby="tab-kenh-mau"] .bento-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: var(--h2-space-3);
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .bento-grid > .bento-card,
+  #content[aria-labelledby="tab-kenh-mau"] .bento-grid > .bento-card:nth-child(odd):last-child {
+    grid-column: auto;
+    min-height: 84px;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .search-filter-card {
+    padding: var(--h2-space-3) var(--h2-space-4);
+    margin-bottom: var(--h2-space-3);
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .search-filter-card > .km-filter-scroll,
+  #content[aria-labelledby="tab-kenh-mau"] .search-filter-card > div:has(> [data-kenh-status]) {
+    margin-top: var(--h2-space-2);
+    padding-top: var(--h2-space-2);
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .km-controls-row {
+    display: grid;
+    grid-template-columns: minmax(240px, 1.8fr) repeat(3, minmax(150px, 1fr));
+    align-items: center;
+    gap: 8px;
+    margin-top: var(--h2-space-2);
+    padding-top: var(--h2-space-2);
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .km-controls-row .km-select {
+    width: 100%;
+    min-width: 0;
+    min-height: var(--h2-touch-min);
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .km-controls-row .km-filter-scroll {
+    grid-column: 1 / -1;
+    flex-wrap: wrap;
+    gap: 6px;
+    min-width: 0;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .km-controls-row .km-filter-scroll > .filter-btn {
+    flex: 0 0 auto;
+    padding: 6px 10px;
+    white-space: nowrap;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .km-niche-drawer {
+    margin-top: var(--h2-space-2);
+    padding-top: var(--h2-space-2);
+  }
+}
+
+/* Mobile 375x812 & 360x640 Above-the-Fold Compaction & Touch Targets for /kenh-mau */
+@media (max-width: 640px) {
+  #content[aria-labelledby="tab-kenh-mau"] .page-banner {
+    margin-bottom: var(--h2-space-1);
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .page-h1 {
+    margin-bottom: var(--h2-space-1);
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .page-lede {
+    display: none;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .bento-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+    margin-bottom: var(--h2-space-2) !important;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .bento-grid > .bento-card,
+  #content[aria-labelledby="tab-kenh-mau"] .bento-grid > .bento-card:last-child:nth-child(odd) {
+    flex-direction: row !important;
+    align-items: center !important;
+    min-height: var(--h2-touch-min) !important;
+    padding: 6px 8px !important;
+    gap: 6px !important;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .bento-grid .bento-card .stat-icon,
+  #content[aria-labelledby="tab-kenh-mau"] .bento-grid .bento-card .stat-sub {
+    display: none !important;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .bento-card .stat-value {
+    font-size: var(--h2-font-md) !important;
+    line-height: var(--h2-lh-display) !important;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .bento-card .stat-label {
+    font-size: var(--h2-font-xs) !important;
+    line-height: var(--h2-lh-display) !important;
+    letter-spacing: var(--h2-ls-normal) !important;
+  }
+
+  /* Compact search-filter-card + inline #freset-kenh next to #fq */
+  #content[aria-labelledby="tab-kenh-mau"] .search-filter-card {
+    padding: 8px 10px !important;
+    margin-bottom: var(--h2-space-2) !important;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .search-filter-card > .flex:has(> #kenh-search-wrap) {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: var(--h2-space-2) !important;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] #kenh-search-wrap {
+    flex: 1 1 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] #fq {
+    min-height: var(--h2-touch-min);
+    padding-right: 48px;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] #btn-clear-kenh-q {
+    min-width: var(--h2-touch-min);
+    width: var(--h2-touch-min);
+    min-height: var(--h2-touch-min);
+    height: var(--h2-touch-min);
+    right: 0;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] #freset-kenh {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    min-height: var(--h2-touch-min) !important;
+    padding: 8px 12px !important;
+    white-space: nowrap !important;
+  }
+
+  /* Single-row horizontal scrollable filter chip rail */
+  #content .km-filter-scroll.km-filter-scroll,
+  #content[aria-labelledby="tab-kenh-mau"] .search-filter-card > div:has(> [data-kenh-status]) {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 6px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none !important;
+    overscroll-behavior-x: contain;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin-top: 6px !important;
+    padding-top: 6px !important;
+    padding-bottom: 0;
+  }
+  #content .km-filter-scroll.km-filter-scroll::-webkit-scrollbar,
+  #content[aria-labelledby="tab-kenh-mau"] .search-filter-card > div:has(> [data-kenh-status])::-webkit-scrollbar {
+    display: none;
+  }
+  #content .km-filter-scroll.km-filter-scroll > *,
+  #content[aria-labelledby="tab-kenh-mau"] .search-filter-card > div:has(> [data-kenh-status]) > * {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+  }
+  #content .km-filter-scroll.km-filter-scroll > .filter-btn,
+  #content .km-filter-scroll.km-filter-scroll > button,
+  #content[aria-labelledby="tab-kenh-mau"] .search-filter-card > div:has(> [data-kenh-status]) > .filter-btn {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+    min-height: var(--h2-touch-min) !important;
+    padding: 8px 12px !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  /* Compact controls row (2-col select grid) & niche drawer */
+  #content[aria-labelledby="tab-kenh-mau"] .km-controls-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+    margin-top: 6px;
+    padding-top: 6px;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .km-select {
+    width: 100%;
+    min-width: 0;
+    min-height: var(--h2-touch-min);
+    padding: 8px 26px 8px 10px;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .km-controls-row .km-filter-scroll {
+    grid-column: 1 / -1;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    border-top: 0;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .km-niche-drawer {
+    margin-top: 6px !important;
+    padding-top: 6px !important;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .km-niche-drawer > summary {
+    min-height: var(--h2-touch-min);
+    padding: 8px 10px;
+  }
+
+  /* 44px mobile touch targets across /kenh-mau & dossier */
+  .km-voice-play-btn {
+    min-height: var(--h2-touch-min);
+    padding: 8px 12px;
+  }
+  .km-pager {
+    gap: 6px;
+    margin-bottom: 6px !important;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .km-pager-pages {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    max-width: 100%;
+    gap: 4px;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .km-pager-pages::-webkit-scrollbar {
+    display: none;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] .km-pager-pages > * {
+    flex: 0 0 auto;
+  }
+  .km-pager-btn {
+    min-width: var(--h2-touch-min);
+    min-height: var(--h2-touch-min);
+    padding: 8px 12px;
+  }
+  input.km-page-jump,
+  .km-page-jump input,
+  .km-page-jump button,
+  .km-page-size {
+    min-height: var(--h2-touch-min);
+  }
+  #content[aria-labelledby="tab-kenh-mau"] #kenh-grid > section > div:first-child {
+    gap: 6px;
+    margin-bottom: 6px !important;
+  }
+  #content[aria-labelledby="tab-kenh-mau"] #kenh-grid > section > div:first-child > h3 {
+    font-size: var(--h2-font-base);
+    line-height: var(--h2-lh-display);
+  }
+  #content[aria-labelledby="tab-kenh-mau"] #kenh-grid button:not(.hidden):not([hidden]):not(#btn-clear-kenh-q),
+  #content[aria-labelledby="tab-kenh-mau"] #kenh-grid a[href]:not(.hidden):not([hidden]) {
+    min-height: var(--h2-touch-min);
+  }
+  .km-dossier-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--h2-space-2);
+  }
+  .km-dossier-audio audio {
+    height: var(--h2-touch-min);
+  }
+  .km-dossier-skus a,
+  .km-dossier-skus button {
+    min-height: var(--h2-touch-min);
+    padding: 8px 12px;
+  }
+  /* Wave 3 G-3: can hang nut trang /nhac o 390px khong de nut le don doc */
+  #content .nhac-status-row > button {
+    flex: 1 1 130px;
+    justify-content: center;
+    min-height: 36px;
+  }
+  #content .nhac-status-row > button:last-child:nth-child(odd) {
+    flex-basis: 100%;
+  }
+  #content .nhac-quick-filters {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+  }
+  #content .nhac-quick-filters > .filter-btn {
+    width: 100%;
+    min-width: 0;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}
+
 

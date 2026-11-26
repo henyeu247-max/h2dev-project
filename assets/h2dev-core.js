@@ -372,22 +372,116 @@
       var f = modal.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
       if (f) try { f.focus(); } catch (e) {}
     },
-    showToast: function (msg, duration) {
+    showToast: function (msg, duration, opts) {
       duration = duration || 3000;
+      opts = opts || {};
       var box = document.getElementById('toast-box') || document.body;
       var el = document.createElement('div');
-      el.className = 'toast-msg';
-      el.innerHTML = '<span>' + esc(msg) + '</span>';
+      var type = opts.type === 'error' ? 'error' : (opts.type === 'info' ? 'info' : 'success');
+      var icoName = opts.icon || (type === 'error' ? 'alert-circle' : (type === 'info' ? 'info' : 'check'));
+      el.className = 'toast-msg toast-msg--' + type;
+      el.innerHTML = ico(icoName, 14) + '<span>' + esc(msg) + '</span>';
       box.appendChild(el);
       try {
         var a11yEl = document.getElementById('a11y-status');
         if (a11yEl) a11yEl.textContent = msg;
       } catch (e) {}
       setTimeout(function () {
-        el.style.opacity = '0';
-        el.style.transition = 'opacity 0.3s ease';
-        setTimeout(function () { try { el.remove(); } catch (e) {} }, 300);
+        el.classList.add('is-leaving');
+        setTimeout(function () { try { el.remove(); } catch (e) {} }, 220);
       }, duration);
+    },
+    copyWithFeedback: function (btn, text, opts) {
+      opts = opts || {};
+      var payload = String(text == null ? '' : text);
+      if (!payload) return Promise.resolve(false);
+      var dur = opts.duration || 1600;
+
+      function applyFeedback(ok) {
+        if (ok) {
+          if (btn && btn.nodeType === 1) {
+            if (!btn._h2OrigState) {
+              var iconEl = btn.querySelector('.h2-icon');
+              btn._h2OrigState = {
+                iconName: iconEl ? iconEl.getAttribute('data-h2i') : '',
+                html: btn.innerHTML
+              };
+            }
+            var orig = btn._h2OrigState;
+            var curIcon = btn.querySelector('.h2-icon');
+            if (curIcon) {
+              curIcon.setAttribute('data-h2i', 'check');
+              curIcon.classList.add('h2-ico-pop');
+            }
+            var lbl = btn.querySelector('.js-copy-label');
+            if (lbl) {
+              if (!lbl._origText) lbl._origText = lbl.textContent;
+              lbl.textContent = opts.successLabel || 'Đã sao chép';
+            } else if (curIcon) {
+              // Preserve icon and replace only trailing text nodes
+              var kids = Array.from(btn.childNodes);
+              kids.forEach(function (n) {
+                if (n !== curIcon && !(n.contains && n.contains(curIcon))) {
+                  if (n.nodeType === 3) n.nodeValue = '';
+                  else if (n.nodeType === 1 && !n.querySelector('.h2-icon')) n.remove();
+                }
+              });
+              var sp = document.createElement('span');
+              sp.className = 'js-copy-label';
+              sp.textContent = ' ' + (opts.successLabel || 'Đã sao chép!');
+              btn.appendChild(sp);
+            } else {
+              btn.textContent = opts.successLabel || 'Đã sao chép!';
+            }
+            btn.classList.add('is-copied');
+            if (btn._h2CopyTimer) clearTimeout(btn._h2CopyTimer);
+            btn._h2CopyTimer = setTimeout(function () {
+              btn.classList.remove('is-copied');
+              btn.innerHTML = opts.defaultHtml || orig.html;
+              btn._h2OrigState = null;
+            }, dur);
+          }
+          if (global.H2FX && typeof global.H2FX.burst === 'function' && btn) {
+            global.H2FX.burst(btn, 'copy');
+          }
+          if (opts.toast !== false) {
+            global.H2Core.showToast(opts.toastMsg || 'Đã sao chép vào clipboard', 1800, { type: 'success' });
+          }
+          return true;
+        }
+        if (btn && btn.nodeType === 1) {
+          btn.classList.add('h2-ico-wiggle');
+          setTimeout(function () { btn.classList.remove('h2-ico-wiggle'); }, 350);
+        }
+        global.H2Core.showToast(opts.errMsg || 'Không thể tự động sao chép!', 2400, { type: 'error' });
+        return false;
+      }
+
+      function execFallback() {
+        try {
+          var ta = document.createElement('textarea');
+          ta.value = payload;
+          ta.style.position = 'fixed';
+          ta.style.left = '-9999px';
+          ta.style.top = '-9999px';
+          ta.setAttribute('readonly', '');
+          document.body.appendChild(ta);
+          ta.focus();
+          ta.select();
+          var ok = document.execCommand('copy');
+          document.body.removeChild(ta);
+          return !!ok;
+        } catch (e) {
+          return false;
+        }
+      }
+
+      if (navigator.clipboard && window.isSecureContext && typeof navigator.clipboard.writeText === 'function') {
+        return navigator.clipboard.writeText(payload)
+          .then(function () { return applyFeedback(true); })
+          .catch(function () { return applyFeedback(execFallback()); });
+      }
+      return Promise.resolve(applyFeedback(execFallback()));
     }
   };
   global.showToast = global.H2Core.showToast;

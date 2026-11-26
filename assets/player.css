@@ -12,6 +12,13 @@
 .leading-snug { line-height: var(--h2-lh-heading, 1.35); }
 .leading-relaxed { line-height: var(--h2-lh-prose, 1.6); }
 #pmeta { gap: 6px !important; margin-top: 8px !important; }
+#pmeta > .badge,
+#pmeta > a.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  box-sizing: border-box;
+}
 #psources { gap: 8px !important; margin-top: 10px !important; display: flex; flex-wrap: wrap; }
 #psources > a {
   display: inline-flex;
@@ -43,7 +50,7 @@
   background: var(--brand) !important;
   color: #fff !important;
 }
-.player-controls { display: flex; flex-direction: column; gap: 10px; background: var(--surface) !important; border-color: var(--border) !important; }
+.player-controls { display: flex; flex-direction: column; gap: 10px; background: var(--surface); border-color: var(--border); }
 .player-controls > div { min-width: 0; }
 .player-controls #pstate { margin-left: auto; }
 .player-controls #noteInput { min-height: 34px; font-size: 12px; background: var(--bg-subtle); border-color: var(--border); }
@@ -70,7 +77,7 @@
 .player-controls #progressWrap { padding-top: 8px !important; }
 .player-controls #progressBar { background: var(--brand) !important; }
 /* One panel, two readable blocks. No card-inside-card stacking. */
-.player-insights { background: var(--surface) !important; border-color: var(--border) !important; box-shadow: none !important; }
+.player-insights { background: var(--surface); border-color: var(--border); box-shadow: none; }
 .player-insights > .flex { margin-bottom: 14px !important; padding-bottom: 12px !important; border-color: var(--border) !important; }
 .player-insights h3, .player-insights h4 { letter-spacing: 0; }
 .player-insights .space-y-4, .player-insights .space-y-3\.5 { display: flex; flex-direction: column; gap: 12px !important; }
@@ -102,11 +109,13 @@
   align-items: baseline;
   gap: 10px;
   padding: 7px 10px;
+  border-left: 2px solid transparent;
   border-radius: 2px;
   cursor: pointer;
-  transition: background 0.1s ease;
+  transition: background 0.1s ease, border-color 0.1s ease;
 }
-.transcript-line:hover, .transcript-line.is-active { background: var(--surface-2); }
+.transcript-line:hover { background: var(--surface-2); }
+.transcript-line.is-active { background: var(--surface-2); border-left-color: var(--brand); }
 .transcript-line .transcript-time {
   font-family: var(--font-mono);
   font-size: 12px;
@@ -289,6 +298,32 @@
   #pdocslist :is(a, button).btn-doc-link {
     min-height: 40px;
   }
+  /* Wave 3 G-3: can hang chip kenh doi thu @390px, khong de nut Copy rot le hang */
+  #pchannelslist {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  #pchannelslist > div {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 6px !important;
+  }
+  #pchannelslist > div > a:first-child {
+    flex: 1 0 100%;
+    min-height: 44px;
+    justify-content: flex-start;
+  }
+  #pchannelslist > div > :is(a, button):not(:first-child) {
+    flex: 1 1 68px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 /* Toast notification — DA CHUYEN sang h2dev-shell.css (muc 9) ngay 2026-09-23.
@@ -373,3 +408,41 @@ body:has(#playerMain[aria-busy="true"]) .h2-shell-footer { display: none !import
 /* Gap G1 (2026-10-14): chip kenh DIE o trang bai hoc (player-main.js, ham render #pchannelslist) dung 3 class Tailwind ma tailwind.css khong sinh (JS render dong, khong nam trong HTML nen gate check-ui-classes khong thay): khong co vien do, nen do, gach ngang ten kenh; chi con huy hieu DIE. Khai bao tuong minh o day (red-500 .40 / red-950 .20, cung ho mau voi .channel-chip-dead trong viddar.css). Rule `#pchannelslist > div` o tren dung !important cho nen va vien nen vien/nen do phai di qua selector ID + class de thang no. Chi trang player nap file nay. */
 #pchannelslist > div.border-red-500\/40 { border-color: rgba(239, 68, 68, 0.4) !important; background: rgba(69, 10, 10, 0.2) !important; }
 .line-through { text-decoration-line: line-through; }
+
+#docModalRawLink,
+#docModal button[data-action="copy-doc"],
+#docModal button[data-action="close-doc"] {
+  min-height: 38px;
+}
+#docModal button[data-action="close-doc"] {
+  min-width: 38px;
+}
+#close-shortcut-modal {
+  width: 36px;
+  height: 36px;
+}
+#docModalBody {
+  min-width: 0;
+  overflow-x: auto;
+  overflow-wrap: anywhere;
+}
+#docModalBody table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+@media (max-width: 1024px) {
+  #docModalRawLink,
+  #docModal button[data-action="copy-doc"],
+  #docModal button[data-action="close-doc"] {
+    min-height: var(--h2-touch-min);
+    min-width: var(--h2-touch-min);
+    justify-content: center;
+  }
+  #close-shortcut-modal {
+    width: var(--h2-touch-min);
+    height: var(--h2-touch-min);
+    min-width: var(--h2-touch-min);
+    min-height: var(--h2-touch-min);
+  }
+}

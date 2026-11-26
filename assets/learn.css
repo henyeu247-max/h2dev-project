@@ -123,8 +123,18 @@ html.is-embed .learn-header {
   padding: 6px 12px;
 }
 html.is-embed .learn-brand span,
-html.is-embed .progress-pill,
-html.is-embed .learn-brand h1 { display: none; }
+html.is-embed .progress-pill { display: none; }
+html.is-embed .learn-brand h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 html.is-embed .back-home {
   display: inline-flex !important;
   min-height: 44px;
@@ -238,8 +248,7 @@ html.learn-booting .learn-footer { visibility: hidden; animation: learn-boot-rev
   .tabbar .tab-btn { height: var(--h2-touch-min, 44px); }
 }
 
-/* UI-standard A-1 (2026-10-09): tieu de bai hoc la lien ket doc lap, vung cham toi thieu 24px. */
-.row-title { display: inline-block; min-height: 24px; }
+/* .row-title: thuộc quyền sở hữu của h2dev-components-lesson-row.css (min-height: 44px) */
 
 /* Track Switcher: Chuyển đổi giữa 2 lộ trình H2DEV và DGMD (Đại Gia Mang Dép) */
 .track-switcher {

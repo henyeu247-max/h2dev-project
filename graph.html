@@ -4,20 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
   <title>97yo-dev Nexus Graph — Hệ Thống Hóa Đa Dự Án &amp; Bản Đồ Liên Kết 355 Video</title>
-  <link rel="stylesheet" href="/assets/tailwind.css?v=20261124-uifix105">
+  <link rel="stylesheet" href="/assets/tailwind.css?v=20261126-uifix109">
+  <link rel="stylesheet" href="/assets/h2dev-tokens.css?v=20261126-uifix109">
+  <link rel="stylesheet" href="/assets/h2dev-icons.css?v=20261126-uifix109">
+  <link rel="stylesheet" href="/assets/h2dev-motion.css?v=20261126-uifix109">
   <style>
     :root {
-      --bg-void: #06080f;
-      --bg-panel: rgba(13, 18, 29, 0.96);
-      --bg-card: rgba(20, 27, 43, 0.92);
-      --bg-card-hover: rgba(30, 41, 66, 0.96);
-      --border-subtle: rgba(148, 163, 184, 0.16);
-      --border-active: #38bdf8;
+      --bg: #050505;
+      --surface: #0f0f0f;
+      --surface-2: #1a1a1a;
+      --brand: #E2023A;
+      --border-strong: rgba(255, 255, 255, 0.14);
+      --bg-void: #050505;
+      --bg-panel: rgba(15, 15, 15, 0.96);
+      --bg-card: #0f0f0f;
+      --bg-card-hover: #1a1a1a;
+      --border-subtle: rgba(255, 255, 255, 0.1);
+      --border-active: #E2023A;
       --accent-cyan: #38bdf8;
       --accent-emerald: #10b981;
       --accent-amber: #f59e0b;
-      --accent-purple: #a855f7;
-      --accent-rose: #f43f5e;
+      --accent-rose: #E2023A;
       /* Strictly 6 font sizes across the entire page (T-1 <= 7, T-2 >= 12px) */
       --fs-xs: 12px;
       --fs-sm: 13px;
@@ -25,13 +32,6 @@
       --fs-lg: 16px;
       --fs-xl: 20px;
       --fs-2xl: 24px;
-      /* h2dev-tokens z-index + surface (gate-p1 compliance) */
-      --surface: rgb(20, 24, 33);
-      --h2-z-base: 1;
-      --h2-z-sticky: 20;
-      --h2-z-fixed: 40;
-      --h2-z-drawer: 60;
-      --h2-z-modal: 1000;
     }
     * { box-sizing: border-box; }
     body {
@@ -94,12 +94,17 @@
       letter-spacing: 0.04em;
       white-space: nowrap;
     }
+    @keyframes nxPulseRing {
+      0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 8px #10b981; }
+      50% { opacity: 0.45; transform: scale(1.28); box-shadow: 0 0 14px #10b981; }
+    }
     .nx-pulse {
       width: 8px;
       height: 8px;
       border-radius: 999px;
       background: #10b981;
       box-shadow: 0 0 8px #10b981;
+      animation: nxPulseRing 1.8s ease-in-out infinite;
     }
     .nx-controls {
       display: flex;
@@ -133,9 +138,9 @@
       background: rgba(56, 189, 248, 0.12);
     }
     .nx-mode-btn.is-active {
-      background: linear-gradient(135deg, #0284c7, #2563eb);
+      background: var(--brand);
       color: #ffffff;
-      box-shadow: 0 2px 10px rgba(2, 132, 199, 0.35);
+      box-shadow: 0 2px 10px rgba(226, 2, 58, 0.35);
     }
     .nx-btn {
       min-height: 36px;
@@ -143,8 +148,8 @@
       border-radius: 8px;
       font-size: var(--fs-xs);
       font-weight: 600;
-      background: rgba(30, 41, 59, 0.8);
-      border: 1px solid rgba(148, 163, 184, 0.28);
+      background: var(--surface-2);
+      border: 1px solid var(--border-strong);
       color: #e2e8f0;
       cursor: pointer;
       display: inline-flex;
@@ -154,8 +159,8 @@
       white-space: nowrap;
     }
     .nx-btn:hover {
-      background: rgba(56, 189, 248, 0.2);
-      border-color: var(--accent-cyan);
+      background: rgba(226, 2, 58, 0.16);
+      border-color: var(--brand);
       color: #ffffff;
     }
     .nx-search-input {
@@ -184,7 +189,7 @@
     /* Sub-bar: Lineage Breadcrumb + Scope Filter */
     .nx-subbar {
       min-height: 44px;
-      background: rgba(10, 14, 23, 0.96);
+      background: var(--surface);
       border-bottom: 1px solid var(--border-subtle);
       display: flex;
       align-items: center;
@@ -210,15 +215,15 @@
       min-height: 28px;
       padding: 4px 10px;
       border-radius: 6px;
-      background: rgba(30, 41, 59, 0.78);
-      border: 1px solid rgba(148, 163, 184, 0.24);
+      background: var(--surface-2);
+      border: 1px solid var(--border-strong);
       color: #e2e8f0;
       cursor: pointer;
       font-size: var(--fs-xs);
       font-weight: 500;
     }
     .nx-crumb.is-current {
-      background: rgba(56, 189, 248, 0.2);
+      background: rgba(56, 189, 248, 0.16);
       border-color: var(--accent-cyan);
       color: #38bdf8;
       font-weight: 600;
@@ -239,8 +244,8 @@
       border-radius: 6px;
       font-size: var(--fs-xs);
       font-weight: 600;
-      background: rgba(30, 41, 59, 0.7);
-      border: 1px solid rgba(148, 163, 184, 0.24);
+      background: var(--surface-2);
+      border: 1px solid var(--border-strong);
       color: #cbd5e1;
       cursor: pointer;
       font-variant-numeric: tabular-nums;
@@ -282,7 +287,7 @@
       height: 100%;
     }
     .nx-flow-col {
-      background: rgba(13, 18, 29, 0.9);
+      background: var(--surface);
       border: 1px solid var(--border-subtle);
       border-radius: 12px;
       display: flex;
@@ -293,7 +298,7 @@
     }
     .nx-flow-col-header {
       padding: 12px;
-      background: rgba(15, 23, 42, 0.96);
+      background: var(--surface-2);
       border-bottom: 1px solid var(--border-subtle);
       display: flex;
       align-items: center;
@@ -304,7 +309,7 @@
       font-size: var(--fs-xs);
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
       color: #cbd5e1;
       margin: 0;
     }
@@ -389,7 +394,7 @@
       width: 100%;
       min-height: 0;
       overflow: hidden;
-      background: radial-gradient(circle at 50% 50%, #0d1526 0%, #06080f 75%);
+      background: radial-gradient(circle at 50% 50%, #14080d 0%, #050505 75%);
     }
     #kgCanvas {
       width: 100%;
@@ -416,8 +421,8 @@
       display: inline-flex;
       align-items: center;
       gap: 4px;
-      background: rgba(13, 18, 29, 0.92);
-      border: 1px solid rgba(148, 163, 184, 0.24);
+      background: var(--bg-panel);
+      border: 1px solid var(--border-strong);
       border-radius: 10px;
       padding: 4px;
       pointer-events: auto;
@@ -455,7 +460,7 @@
       position: absolute;
       left: 12px;
       bottom: 12px;
-      background: rgba(13, 18, 29, 0.92);
+      background: var(--bg-panel);
       border: 1px solid var(--border-subtle);
       border-radius: 10px;
       padding: 8px 12px;
@@ -508,8 +513,8 @@
       min-height: 28px;
       padding: 4px 10px;
       border-radius: 6px;
-      background: rgba(30, 41, 59, 0.82);
-      border: 1px solid rgba(148, 163, 184, 0.24);
+      background: var(--surface-2);
+      border: 1px solid var(--border-strong);
       font-size: var(--fs-xs);
       font-weight: 500;
       color: #e2e8f0;
@@ -567,7 +572,7 @@
         padding: 3px;
       }
       .nx-mode-btn {
-        min-height: 34px;
+        min-height: 44px;
         padding: 4px 4px;
         font-size: var(--fs-xs);
         text-align: center;
@@ -579,16 +584,16 @@
         flex: 1;
         min-width: 140px;
         width: auto;
-        height: 34px;
+        height: 44px;
       }
       .nx-btn {
-        min-height: 34px;
+        min-height: 44px;
         padding: 4px 8px;
         font-size: var(--fs-xs);
       }
       .nx-subbar {
         padding: 4px 10px;
-        min-height: 38px;
+        min-height: 44px;
         gap: 6px;
       }
       #nxLineageBar {
@@ -601,8 +606,8 @@
         gap: 6px;
       }
       .nx-chip-filter {
-        min-height: 30px;
-        padding: 2px 8px;
+        min-height: 44px;
+        padding: 2px 10px;
       }
       #nxFlowView {
         display: flex;
@@ -688,6 +693,7 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="/assets/h2dev-studio-v2.css?v=20261126-uifix109">
 </head>
 <body>
     <!-- Main Navigation & Command Bar -->
@@ -718,11 +724,11 @@
 
       <input id="kgSearch" class="nx-search-input" type="search" aria-label="Tìm kiếm Dự án, Thư mục, File hoặc Video SKU" placeholder="Tìm Dự án, Thư mục, File (counts.js), SKU...">
 
-      <button type="button" id="btnForceSync" class="nx-btn" title="Quét & đồng bộ tức thì toàn bộ dự án trên ổ đĩa">
-        ⚡ Đồng bộ tức thì
+      <button type="button" id="btnForceSync" class="nx-btn" title="Quét &amp; đồng bộ tức thì toàn bộ dự án trên ổ đĩa">
+        <span class="h2-icon h2-icon--14" data-h2i="zap" aria-hidden="true"></span><span>Đồng bộ tức thì</span>
       </button>
       <button type="button" id="kgResetZoom" class="nx-btn" title="Đặt lại góc nhìn mặc định">
-        🎯 Mặc định
+        <span class="h2-icon h2-icon--14" data-h2i="target" aria-hidden="true"></span><span>Mặc định</span>
       </button>
     </div>
   </header>
@@ -731,7 +737,7 @@
   <div class="nx-subbar">
     <div class="nx-lineage-bar" id="nxLineageBar" aria-label="Chuỗi phả hệ từ gốc tới đỉnh">
       <span style="color:#cbd5e1;font-weight:600;">Chuỗi Logic Gốc → Đỉnh:</span>
-      <button type="button" class="nx-crumb is-current" data-node-id="workspace:d-ytb">🌐 D:\YTB Master Workspace</button>
+      <button type="button" class="nx-crumb is-current" data-node-id="workspace:d-ytb"><span class="h2-icon h2-icon--14" data-h2i="globe" aria-hidden="true"></span> D:\YTB Master Workspace</button>
     </div>
 
     <div class="nx-layer-filters" id="kgTrackFilters" role="group" aria-label="Bộ lọc phân tầng dữ liệu">
@@ -795,12 +801,12 @@
         <div class="kg-hud-bar">
           <div class="kg-hud-group" role="group" aria-label="Phạm vi hiển thị đồ thị">
             <button type="button" class="kg-hud-btn is-active" id="btnScopeEgo" data-graph-scope="ego" title="Chỉ vẽ nút đang chọn, chuỗi gốc-đỉnh và các nút liên kết trực tiếp để nhìn rõ nhất"><svg class="kg-hud-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg><span>Mạch Tâm Điểm (Rõ Nét)</span></button>
-            <button type="button" class="kg-hud-btn" id="btnScopeGalaxy" data-graph-scope="galaxy" title="Vẽ toàn cảnh 4.799 nút phân cụm theo Dự án & Nhánh đào tạo"><svg class="kg-hud-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span id="btnScopeGalaxyLabel">Toàn Cảnh 4.799 Nút</span></button>
+            <button type="button" class="kg-hud-btn" id="btnScopeGalaxy" data-graph-scope="galaxy" title="Vẽ toàn cảnh 4.800 nút phân cụm theo Dự án & Nhánh đào tạo"><svg class="kg-hud-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span id="btnScopeGalaxyLabel">Toàn Cảnh 4.800 Nút</span></button>
           </div>
           <div class="kg-hud-group" role="group" aria-label="Điều khiển thu phóng">
             <button type="button" class="kg-hud-btn" id="btnZoomIn" title="Phóng to đồ thị">＋</button>
             <button type="button" class="kg-hud-btn" id="btnZoomOut" title="Thu nhỏ đồ thị">－</button>
-            <button type="button" class="kg-hud-btn" id="btnZoomFit" title="Căn vừa khít màn hình">⛶ Vừa khung</button>
+            <button type="button" class="kg-hud-btn" id="btnZoomFit" title="Căn vừa khít màn hình"><span class="h2-icon h2-icon--14" data-h2i="scan" aria-hidden="true"></span><span>Vừa khung</span></button>
           </div>
         </div>
         <canvas id="kgCanvas"></canvas>
@@ -818,7 +824,7 @@
       </section>
 
       <!-- VIEW 3: MULTI-PROJECT AUDIT MATRIX -->
-      <section id="nxMatrixView" aria-label="Bảng kiểm toán 17 dự án">
+      <section id="nxMatrixView" aria-label="Bảng kiểm toán các dự án">
         <div id="nxMatrixContent"></div>
       </section>
     </div>
@@ -833,6 +839,7 @@
     </aside>
   </main>
 
-  <script src="/assets/app/graph-main.js?v=20261124-uifix105"></script>
+  <script src="/assets/app/h2dev-fx.js?v=20261126-uifix109"></script>
+  <script src="/assets/app/graph-main.js?v=20261126-uifix109"></script>
 </body>
 </html>

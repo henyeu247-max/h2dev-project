@@ -43,7 +43,11 @@
   }
 
   function tokenIn(hay, hayFold, kw) {
-    return hasMarks(kw) ? hay.indexOf(kw) >= 0 : hayFold.indexOf(kw) >= 0;
+    if (hasMarks(kw)) return hay.indexOf(kw) >= 0;
+    if (/^[a-z0-9+]{1,2}$/i.test(kw)) {
+      return (" " + hayFold.trim() + " ").indexOf(" " + kw + " ") >= 0;
+    }
+    return hayFold.indexOf(kw) >= 0;
   }
 
   /** Number of query keywords found in haystack. */
@@ -66,7 +70,14 @@
     var q = lowerNFC(query).trim();
     if (!q) return true;
     var t = lowerNFC(text);
-    return hasMarks(q) ? t.indexOf(q) >= 0 : fold(t).indexOf(q) >= 0;
+    if (hasMarks(q)) return t.indexOf(q) >= 0;
+    var qFold = fold(q);
+    var tFold = fold(t);
+    if (/^[a-z0-9+]{1,2}$/i.test(qFold)) {
+      var normFold = fold(haystackOf([t])).trim();
+      return (" " + normFold + " ").indexOf(" " + qFold + " ") >= 0;
+    }
+    return tFold.indexOf(qFold) >= 0;
   }
 
   /** Score + sort helpers */

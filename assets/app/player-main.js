@@ -61,6 +61,18 @@ function esc(s){
   if (window.H2Core && typeof window.H2Core.esc === 'function') return window.H2Core.esc(s);
   return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
+function safeUrl(raw){
+  const u = String(raw == null ? '' : raw).trim();
+  if (!u || /[\u0000-\u001F\u007F]/.test(u)) return '';
+  if (/^\/\//.test(u) || /^\\\\/.test(u)) return '';
+  if (/^https?:\/\//i.test(u)) return u;
+  if (/^\/(?!\/)/.test(u)) return u;
+  if (/^#/.test(u)) return u;
+  const noCtrl = u.replace(/[\s\u0000-\u001F]+/g, '');
+  const head = noCtrl.split(/[/?#]/)[0];
+  if (/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(head) || head.includes(':')) return '';
+  return u;
+}
 function fmtBytes(n){
   if (window.H2Core && typeof window.H2Core.fmtBytes === 'function') return window.H2Core.fmtBytes(n);
   if(!n)return'';if(n>1e9)return(n/1e9).toFixed(2)+' GB';if(n>1e6)return(n/1e6).toFixed(0)+' MB';return(n/1e3).toFixed(0)+' KB';
@@ -129,18 +141,37 @@ if(btnBack) btnBack.onclick = goBack;
   window.addEventListener('scroll', onScroll, { passive:true });
   onScroll();
 })();
-const floatingBackBtn=document.getElementById('floatingBackBtn');
-if(floatingBackBtn) floatingBackBtn.onclick = goBack;
 
-// Tự động hiện nút nổi khi cuộn xuống dưới, ẩn khi ở đỉnh
-window.addEventListener('scroll', () => {
-  if (!floatingBackBtn) return;
-  if (window.scrollY > 120) {
-    floatingBackBtn.classList.add('is-visible');
-  } else {
-    floatingBackBtn.classList.remove('is-visible');
+function openShortcutModal() {
+  const m = document.getElementById('player-shortcut-modal');
+  if (!m) return;
+  m._prevActiveElement = document.activeElement;
+  m.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  try { m.focus({ preventScroll: true }); } catch (_) {}
+  const closeBtn = document.getElementById('close-shortcut-modal');
+  if (closeBtn) try { closeBtn.focus(); } catch (_) {}
+}
+function closeShortcutModal() {
+  const m = document.getElementById('player-shortcut-modal');
+  if (!m) return;
+  m.style.display = 'none';
+  const dm = document.getElementById('docModal');
+  if (!dm || !dm.style.display || dm.style.display === 'none') document.body.style.overflow = '';
+  if (m._prevActiveElement && typeof m._prevActiveElement.focus === 'function') {
+    try { m._prevActiveElement.focus(); } catch (_) {}
   }
-}, { passive: true });
+}
+const btnShortcuts = document.getElementById('btnShortcuts');
+if (btnShortcuts) btnShortcuts.addEventListener('click', openShortcutModal);
+const btnCloseShortcut = document.getElementById('close-shortcut-modal');
+if (btnCloseShortcut) btnCloseShortcut.addEventListener('click', closeShortcutModal);
+const shortcutBackdrop = document.getElementById('player-shortcut-modal');
+if (shortcutBackdrop) {
+  shortcutBackdrop.addEventListener('click', (e) => {
+    if (e.target === shortcutBackdrop) closeShortcutModal();
+  });
+}
 
 // Cử chỉ vuốt từ mép trái sang phải để quay lại (Edge Swipe Back)
 let playerTouchStartX = 0, playerTouchStartY = 0;
@@ -177,7 +208,7 @@ function setTheaterMode(active, save=true){
     try{ localStorage.setItem(THEATER_KEY, active ? '1' : '0'); }catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); }
   }
 }
-function setPlayerTab(tab, btn) {
+function setPlayerTab(tab, btn, syncUrl = true) {
   const colOverview = document.getElementById('colOverview');
   const pInsights = document.getElementById('pinsights');
   const pTranscript = document.getElementById('ptranscript');
@@ -194,6 +225,14 @@ function setPlayerTab(tab, btn) {
     btn.className = 'flex-1 py-2 px-2.5 rounded-xl text-xs font-bold text-white bg-surface border border-border/80 transition-colors text-center flex items-center justify-center gap-1 min-h-[44px]';
     btn.setAttribute('aria-selected', 'true');
     btn.setAttribute('tabindex', '0');
+  }
+  if (syncUrl && typeof history !== 'undefined' && history.replaceState) {
+    try {
+      const u = new URL(location.href);
+      if (tab && tab !== 'overview') u.searchParams.set('ptab', tab);
+      else u.searchParams.delete('ptab');
+      history.replaceState(null, '', u.pathname + u.search + u.hash);
+    } catch (e) {}
   }
   if (window.innerWidth < 1024) {
     if (tab === 'overview') {
@@ -282,14 +321,24 @@ if(btnTheater){
   };
 }
 
-// Lắng nghe phím tắt toàn cục (T: Rạp chiếu, F: Toàn màn hình, Space/K: Play/Pause, J/L: Tua -10s/+10s, M: Tắt tiếng, /: Tìm phụ đề)
+// Lắng nghe phím tắt toàn cục (T: Rạp chiếu, F: Toàn màn hình, Space/K: Play/Pause, J/L: Tua -10s/+10s, M: Tắt tiếng, /: Tìm phụ đề, ?: Phím tắt)
 window.addEventListener('keydown', (e)=>{
   if (e.ctrlKey || e.metaKey || e.altKey) return;
+  const scModalEl = document.getElementById('player-shortcut-modal');
+  const scOpen = Boolean(scModalEl && scModalEl.style.display === 'flex');
   const docModalEl = document.getElementById('docModal');
   if (docModalEl && docModalEl.style.display && docModalEl.style.display !== 'none') return;
   const activeEl = document.activeElement;
   const activeTag = (activeEl && activeEl.tagName) || '';
   if (activeTag === 'INPUT' || activeTag === 'TEXTAREA' || activeTag === 'SELECT' || (activeEl && activeEl.isContentEditable)) return;
+
+  if (e.key === '?') {
+    e.preventDefault();
+    if (scOpen) closeShortcutModal();
+    else openShortcutModal();
+    return;
+  }
+  if (scOpen) return;
 
   if (e.key === '/') {
     const trInput = document.getElementById('transcriptSearch');
@@ -346,6 +395,7 @@ window.addEventListener('keydown', (e)=>{
 (async()=>{
   let transcriptSegments = [];
   let activeSegIndex = -1;
+  let prevActiveTrEl = null;
   let userIsScrolling = false;
   let scrollTimeout = null;
   try{
@@ -546,7 +596,9 @@ window.addEventListener('keydown', (e)=>{
     const declared = (v.mp4 && /(^|\/)video\//.test(v.mp4)) ? ('/' + v.mp4.replace(/^\//, '')) : '';
     const defaultExt = /^ZOOM-/i.test(resolvedSku) ? 'webm' : 'mp4';
     const local = declared || `/video/${encodeURIComponent(resolvedSku)}/${encodeURIComponent(resolvedSku)}.${defaultExt}`;
-    const localAvailable = Boolean(local);
+    // uifix103: hasLocalHint phân biệt SKU có file local thật vs chỉ có đường dẫn suy luận
+    const hasLocalHint = v.local !== false && (Boolean(declared) || Number(v.size_mb || 0) > 0 || Number(v.size || 0) > 0 || /^ZOOM-/i.test(resolvedSku));
+    const localAvailable = Boolean(local) && hasLocalHint;
     let isWebm = /\.webm(\?|$)/i.test(local);
 
     if (localAvailable) {
@@ -606,7 +658,8 @@ window.addEventListener('keydown', (e)=>{
       btnPG.title = `Xem sơ đồ liên kết của bài học ${resolvedSku}`;
     }
     let h='';
-    if(v.origin) h+=`<a href="${esc(v.origin)}" target="_blank" rel="noopener noreferrer">${ico('globe', 14)}<span>${isHuan ? 'Bài học gốc (Nhánh Huân Academy)' : isDgmd ? 'Bài học gốc (Nhánh DGMD)' : 'Bài học gốc (Nhánh H2DEV)'}</span></a>`;
+    const safeOriginHref = v.origin ? safeUrl(v.origin) : '';
+    if(safeOriginHref) h+=`<a href="${esc(safeOriginHref)}" target="_blank" rel="noopener noreferrer">${ico('globe', 14)}<span>${isHuan ? 'Bài học gốc (Nhánh Huân Academy)' : isDgmd ? 'Bài học gốc (Nhánh DGMD)' : 'Bài học gốc (Nhánh H2DEV)'}</span></a>`;
     h+=`<a href="/sodo?snode=${encodeURIComponent('video:' + resolvedSku)}">${ico('layout-grid', 14)}<span>Sơ đồ DB (${esc(resolvedSku)})</span></a>`;
     if(localAvailable) h+=`<a href="${esc(local)}" download class="btn-download-mp4">${ico('download', 14)}<span>Tải ${isWebm?'WEBM':'MP4'} Full HD</span></a>`;
     srcBox.innerHTML=h;
@@ -661,7 +714,8 @@ window.addEventListener('keydown', (e)=>{
         const readFileTarget = d.readFile || ((d.file && /\.(md|txt)$/i.test(d.file)) ? d.file : '');
         const isReadable = Boolean(readFileTarget);
         const readBtn = isReadable ? `<button type="button" class="btn-press btn-doc-link inline-flex items-center gap-1 bg-brand-500/20 hover:bg-brand-500/30 text-brand-300 border border-brand-500/40 cursor-pointer" data-doc-file="${esc(readFileTarget)}" data-doc-name="${esc(name)}">${ico('eye', 14)}<span>Đọc trực tiếp</span></button>` : '';
-        const localFile=d.file?`<a href="${esc(d.file)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1">${ico('file-text', 14)}<span>Mở file local</span></a>`:'';
+        const safeFileHref = d.file ? safeUrl(d.file) : '';
+        const localFile=safeFileHref?`<a href="${esc(safeFileHref)}" target="_blank" rel="noopener noreferrer" class="btn-doc-link inline-flex items-center gap-1">${ico('file-text', 14)}<span>Mở file local</span></a>`:'';
         const hubLink=`<a href="/tai-lieu?pq=${encodeURIComponent(resolvedSku)}" class="btn-doc-link inline-flex items-center gap-1" title="Mở bài học này trong Kho Tài Liệu"><span>Kho tài liệu ↗</span></a>`;
         const graphLink=`<a href="/sodo?snode=${encodeURIComponent('video:' + resolvedSku)}" class="btn-doc-link inline-flex items-center gap-1" title="Xem liên kết bài học trên Sơ đồ DB"><span>Sơ đồ DB ↗</span></a>`;
         return `<article class="card p-4 sm:p-5 min-w-0 overflow-hidden"><div class="text-sm font-semibold text-white break-words [overflow-wrap:anywhere]">${esc(name)}</div>${host&&isExternal?`<div class="text-xs text-gray-400 mt-1">${esc(host)}</div>`:''}<div class="mt-2.5 flex flex-wrap gap-2">${readBtn}${link}${localFile}${hubLink}${graphLink}</div></article>`;
@@ -788,7 +842,7 @@ window.addEventListener('keydown', (e)=>{
             document.getElementById('insightTimelineWrap').classList.remove('hidden');
             const tlEl = document.getElementById('insightTimeline');
             tlEl.innerHTML = ins.key_timestamps.map(k => {
-              return `<button type="button" class="inline-flex items-center gap-1.5 bg-ink-800 hover:bg-ink-700 border border-ink-600 px-2.5 py-1.5 rounded-xl text-xs transition-colors cursor-pointer" data-seek="${k.seconds}">
+              return `<button type="button" class="inline-flex items-center gap-1.5 bg-ink-800 hover:bg-ink-700 border border-ink-600 px-2.5 py-1.5 rounded-xl text-xs transition-colors cursor-pointer" data-seek="${esc(String(k.seconds))}">
                 <span class="font-mono text-sky-400 font-bold bg-ink-900 px-1.5 py-0.5 rounded text-xs">${esc(k.time)}</span>
                 <span class="text-gray-300 text-xs truncate max-w-[200px]" title="${esc(k.label)}">${esc(k.label)}</span>
               </button>`;
@@ -991,35 +1045,8 @@ window.addEventListener('keydown', (e)=>{
 
     /* ---------- Watched + progress + resume + note (shared store) ---------- */
     try {
-      const adminResponse = await fetch('/api/admin-state', {cache:'no-store'});
-      if (adminResponse.ok) {
-        const adminState = await adminResponse.json();
-        const curW = loadStore();
-        const remoteW = (adminState.watched && typeof adminState.watched === 'object') ? adminState.watched : {};
-        const mergedW = Object.assign({}, remoteW);
-        for (const k in curW) {
-          if (!mergedW[k]) {
-            mergedW[k] = curW[k];
-          } else {
-            mergedW[k] = {
-              watched: Boolean(curW[k].watched || mergedW[k].watched),
-              t: Math.max(curW[k].t || 0, mergedW[k].t || 0),
-              d: Math.max(curW[k].d || 0, mergedW[k].d || 0),
-              note: curW[k].note || mergedW[k].note || ''
-            };
-          }
-        }
-        localStorage.setItem('h2dev-watched', JSON.stringify(mergedW));
-
-        const curF = JSON.parse(localStorage.getItem('h2dev-fav') || '[]');
-        const remoteF = Array.isArray(adminState.favorites) ? adminState.favorites : [];
-        const favSet = new Set([...remoteF, ...(Array.isArray(curF) ? curF : [])].filter(Boolean));
-        localStorage.setItem('h2dev-fav', JSON.stringify([...favSet]));
-
-        if (adminState.recent && !localStorage.getItem('h2dev-recent')) {
-          localStorage.setItem('h2dev-recent', JSON.stringify(adminState.recent));
-        }
-        localStorage.setItem('h2dev-admin', JSON.stringify(Object.assign({}, adminState, { watched: mergedW, favorites: [...favSet] })));
+      if (window.H2Core && typeof window.H2Core.hydrateAdmin === 'function') {
+        await window.H2Core.hydrateAdmin();
       }
     } catch (e) { console.warn('[H2DEV] ghi localStorage lỗi', e); }
     const store=loadStore();
@@ -1056,9 +1083,10 @@ window.addEventListener('keydown', (e)=>{
         btnR.classList.add('hidden');
         btnR.classList.remove('inline-flex');
       }
-      pWrap.classList.toggle('hidden', !done);
-      pBar.style.width=Math.min(100,Math.round(ratio*100))+'%';
-      pLabel.textContent=done?('100% · đã xem'):(ratio>0?Math.round(ratio*100)+'%':'');
+      const pct = Math.min(100, Math.round(ratio * 100));
+      pWrap.classList.toggle('hidden', !(pct > 0 || done));
+      pBar.style.width = pct + '%';
+      pLabel.textContent = done ? ('100% · đã xem') : (pct > 0 ? pct + '%' : '');
       noteInput.value=rec2.note||'';
     }
     stateEl.classList.remove('hidden');
@@ -1069,6 +1097,9 @@ window.addEventListener('keydown', (e)=>{
       if(cur.watched&&!cur.d) cur.d = (Number.isFinite(pv.duration)&&pv.duration>0) ? pv.duration : (v.duration_sec || 0);
       store[resolvedSku]=Object.assign({},rec,cur,{watched:cur.watched,note:noteInput.value});
       saveStore(store); renderState();
+      if (cur.watched && window.H2FX && typeof window.H2FX.burst === 'function') {
+        window.H2FX.burst(btnW, 'milestone');
+      }
     };
     btnR.onclick=()=>{
       const target=Number((store[resolvedSku]||store[sku]||{}).t)||0;
@@ -1083,11 +1114,23 @@ window.addEventListener('keydown', (e)=>{
       saveStore(store);
       renderState();
     };
+    let noteSaveTimer = null;
     noteInput.oninput=()=>{
       const cur=store[resolvedSku]||store[sku]||{watched:false,note:'',t:rec.t,d:rec.d};
       cur.note=noteInput.value;
       store[resolvedSku]=cur;
       saveStore(store);
+      const noteBadge = document.getElementById('noteSaveStatus');
+      if (noteBadge) {
+        noteBadge.classList.remove('hidden');
+        noteBadge.classList.add('is-saved');
+        noteBadge.innerHTML = '<span class="h2-icon h2-icon--14" data-h2i="check" aria-hidden="true"></span> Đã lưu';
+        if (noteSaveTimer) clearTimeout(noteSaveTimer);
+        noteSaveTimer = setTimeout(() => {
+          noteBadge.classList.remove('is-saved');
+          noteBadge.classList.add('hidden');
+        }, 2200);
+      }
     };
     /* Save recent watched (for learn.html resume banner) */
     try{
@@ -1118,11 +1161,12 @@ window.addEventListener('keydown', (e)=>{
         }
         if (curIndex !== -1 && curIndex !== activeSegIndex) {
           activeSegIndex = curIndex;
-          const lines = tList.querySelectorAll('.transcript-line');
-          lines.forEach((l, idx) => {
-            l.classList.toggle('is-active', idx === curIndex);
-          });
+          if (prevActiveTrEl) prevActiveTrEl.classList.remove('is-active');
           const activeEl = document.getElementById('tr-seg-' + curIndex);
+          if (activeEl) {
+            activeEl.classList.add('is-active');
+            prevActiveTrEl = activeEl;
+          }
           if (activeEl && !userIsScrolling) {
             const topPos = activeEl.offsetTop - tList.offsetTop - (tList.clientHeight / 2) + (activeEl.clientHeight / 2);
             if (typeof tList.__markProgrammaticScroll === 'function') tList.__markProgrammaticScroll();
@@ -1152,9 +1196,12 @@ window.addEventListener('keydown', (e)=>{
       }
       store[resolvedSku]=cur; saveStore(store); renderState();
     });
-    // Khởi tạo tab mặc định khi vào trang trên mobile
+    // Khởi tạo tab mặc định (hoặc từ ?ptab=) khi vào trang trên mobile
     if (window.innerWidth < 1024) {
-      setPlayerTab('overview', document.querySelector('#playerTabSelector button'));
+      const ptab = new URLSearchParams(location.search).get('ptab');
+      const initTab = (ptab === 'insights' || ptab === 'transcript' || ptab === 'overview') ? ptab : 'overview';
+      const initBtn = document.querySelector(`#playerTabSelector button[data-player-tab="${initTab}"]`) || document.querySelector('#playerTabSelector button');
+      setPlayerTab(initTab, initBtn, false);
     }
     document.getElementById('playerMain')?.setAttribute('aria-busy', 'false');
   }catch(error){
@@ -1235,7 +1282,11 @@ function renderMarkdownDoc(md) {
 
   function inlineMd(str) {
     return esc(str)
-      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-brand-400 hover:underline">$1</a>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, text, url) => {
+        const safeHref = safeUrl(url);
+        if (!safeHref) return text;
+        return `<a href="${safeHref}" target="_blank" rel="noopener noreferrer" class="text-brand-400 hover:underline">${text}</a>`;
+      })
       .replace(/\*\*([^*]+)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')
       .replace(/\*([^*]+)\*/g, '<em class="text-gray-300">$1</em>')
       .replace(/`([^`]+)`/g, '<code class="px-1.5 py-0.5 rounded bg-ink-800 border border-ink-600 text-amber-300 font-mono text-xs">$1</code>')
@@ -1247,7 +1298,7 @@ function renderMarkdownDoc(md) {
     const trimmed = line.trim();
     if (trimmed.startsWith('```')) {
       if (inCode) {
-        out.push('<pre class="p-3.5 bg-ink-900 border border-ink-600 rounded-xl text-xs font-mono text-emerald-300 overflow-x-auto my-2"><code>' + esc(codeBuf.join('\n')) + '</code></pre>');
+        out.push('<div class="code-copy-wrap my-2"><button type="button" class="code-copy-btn" aria-label="Sao chép đoạn mã"><span class="h2-icon h2-icon--14" data-h2i="copy" aria-hidden="true"></span><span>Copy</span></button><pre class="p-3.5 bg-ink-900 border border-ink-600 rounded-xl text-xs font-mono text-emerald-300 overflow-x-auto"><code>' + esc(codeBuf.join('\n')) + '</code></pre></div>');
         codeBuf = [];
         inCode = false;
       } else {
@@ -1297,7 +1348,15 @@ async function viewDocInModal(filePath, title) {
   if (!modal || !titleEl || !bodyEl) return;
   
   titleEl.textContent = title || filePath.split('/').pop();
-  rawLink.href = filePath;
+  // uifix103: validate filePath trước khi gán href / fetch (XSS guard)
+  const safeFilePath = safeUrl(filePath);
+  if (!safeFilePath) {
+    bodyEl.innerHTML = '<div class="text-center text-red-400" style="padding:2rem 0">Đường dẫn tài liệu không hợp lệ.</div>';
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    return;
+  }
+  rawLink.href = safeFilePath;
   bodyEl.innerHTML = '<div class="text-center text-gray-400 py-12 flex flex-col items-center gap-3"><div class="w-6 h-6 border-2 border-brand-500 border-t-transparent rounded-full animate-spin"></div><div>Đang tải tài liệu…</div></div>';
   modal._prevActiveElement = document.activeElement;
   modal.style.display = 'flex';
@@ -1306,11 +1365,11 @@ async function viewDocInModal(filePath, title) {
   try { modal.focus({ preventScroll: true }); } catch (e) {}
 
   try {
-    const res = await fetch(filePath);
+    const res = await fetch(safeFilePath);
     if (!res.ok) throw new Error('Không thể tải file: HTTP ' + res.status);
     const text = await res.text();
     currentDocRawText = text;
-    if (/\.md$/i.test(filePath)) {
+    if (/\.md$/i.test(safeFilePath)) {
       bodyEl.innerHTML = renderMarkdownDoc(text);
     } else {
       bodyEl.innerHTML = `<pre class="bg-ink-900/80 p-4 rounded-xl border border-ink-600 text-xs font-mono text-gray-200 overflow-x-auto whitespace-pre-wrap">${esc(text)}</pre>`;
@@ -1399,6 +1458,18 @@ document.addEventListener('click', (e) => {
     } catch (err) {}
     return;
   }
+  const codeCopyBtn = t.closest('.code-copy-btn');
+  if (codeCopyBtn) {
+    const wrap = codeCopyBtn.closest('.code-copy-wrap');
+    const codeEl = wrap && wrap.querySelector('pre > code');
+    const rawCode = codeEl ? (codeEl.textContent || '') : '';
+    if (window.H2Core && typeof window.H2Core.copyWithFeedback === 'function') {
+      window.H2Core.copyWithFeedback(codeCopyBtn, rawCode, { successLabel: 'Đã chép!', toastMsg: 'Đã sao chép đoạn mã' });
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(rawCode).then(() => showToast('Đã sao chép đoạn mã')).catch(() => {});
+    }
+    return;
+  }
   const act = t.closest('[data-action]');
   if (act) {
     const action = act.getAttribute('data-action');
@@ -1413,6 +1484,8 @@ document.addEventListener('keydown', (e) => {
   const modal = document.getElementById('docModal');
   const open = modal && modal.style.display && modal.style.display !== 'none';
   if (open) trapFocus(modal, e);
+  const scModal = document.getElementById('player-shortcut-modal');
+  if (scModal && scModal.style.display === 'flex') trapFocus(scModal, e);
   const seg = e.target && e.target.closest && e.target.closest('.transcript-line[data-seek]');
   if (seg && (e.key === 'Enter' || e.key === ' ')) {
     e.preventDefault();
@@ -1434,6 +1507,8 @@ document.addEventListener('keydown', (e) => {
 
 window.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
+    const scModal = document.getElementById('player-shortcut-modal');
+    if (scModal && scModal.style.display === 'flex') { closeShortcutModal(); return; }
     const modal = document.getElementById('docModal');
     if (modal && modal.style.display && modal.style.display !== 'none') closeDocModal();
   }

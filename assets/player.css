@@ -12,6 +12,13 @@
 .leading-snug { line-height: var(--h2-lh-heading, 1.35); }
 .leading-relaxed { line-height: var(--h2-lh-prose, 1.6); }
 #pmeta { gap: 6px !important; margin-top: 8px !important; }
+#pmeta > .badge,
+#pmeta > a.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  box-sizing: border-box;
+}
 #psources { gap: 8px !important; margin-top: 10px !important; display: flex; flex-wrap: wrap; }
 #psources > a {
   display: inline-flex;
@@ -43,7 +50,7 @@
   background: var(--brand) !important;
   color: #fff !important;
 }
-.player-controls { display: flex; flex-direction: column; gap: 10px; background: var(--surface) !important; border-color: var(--border) !important; }
+.player-controls { display: flex; flex-direction: column; gap: 10px; background: var(--surface); border-color: var(--border); }
 .player-controls > div { min-width: 0; }
 .player-controls #pstate { margin-left: auto; }
 .player-controls #noteInput { min-height: 34px; font-size: 12px; background: var(--bg-subtle); border-color: var(--border); }
@@ -70,7 +77,7 @@
 .player-controls #progressWrap { padding-top: 8px !important; }
 .player-controls #progressBar { background: var(--brand) !important; }
 /* One panel, two readable blocks. No card-inside-card stacking. */
-.player-insights { background: var(--surface) !important; border-color: var(--border) !important; box-shadow: none !important; }
+.player-insights { background: var(--surface); border-color: var(--border); box-shadow: none; }
 .player-insights > .flex { margin-bottom: 14px !important; padding-bottom: 12px !important; border-color: var(--border) !important; }
 .player-insights h3, .player-insights h4 { letter-spacing: 0; }
 .player-insights .space-y-4, .player-insights .space-y-3\.5 { display: flex; flex-direction: column; gap: 12px !important; }
@@ -102,11 +109,13 @@
   align-items: baseline;
   gap: 10px;
   padding: 7px 10px;
+  border-left: 2px solid transparent;
   border-radius: 2px;
   cursor: pointer;
-  transition: background 0.1s ease;
+  transition: background 0.1s ease, border-color 0.1s ease;
 }
-.transcript-line:hover, .transcript-line.is-active { background: var(--surface-2); }
+.transcript-line:hover { background: var(--surface-2); }
+.transcript-line.is-active { background: var(--surface-2); border-left-color: var(--brand); }
 .transcript-line .transcript-time {
   font-family: var(--font-mono);
   font-size: 12px;
@@ -288,6 +297,32 @@
   }
   #pdocslist :is(a, button).btn-doc-link {
     min-height: 40px;
+  }
+  /* Wave 3 G-3: can hang chip kenh doi thu @390px, khong de nut Copy rot le hang */
+  #pchannelslist {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  #pchannelslist > div {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 6px !important;
+  }
+  #pchannelslist > div > a:first-child {
+    flex: 1 0 100%;
+    min-height: 44px;
+    justify-content: flex-start;
+  }
+  #pchannelslist > div > :is(a, button):not(:first-child) {
+    flex: 1 1 68px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
 

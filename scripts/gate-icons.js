@@ -31,6 +31,7 @@ const JS_TARGETS = [
   'assets/app/taxonomy.js',
   'assets/app/player-main.js',
   'assets/app/modals/raw-deep.js',
+  'assets/app/graph-main.js',
   'assets/h2dev-core.js',
   'assets/music_player_modal.js',
   'assets/learn.js'
@@ -44,6 +45,7 @@ const EMOJI_CLEAN = [
   'assets/app/tabs/content.js',
   'assets/app/search.js',
   'assets/app/icons.js',
+  'assets/app/graph-main.js',
   'assets/music_player_modal.js',
   /* 2026-09-24 — dot 2: 5 emoji cuoi cung cua Phase 3 (ui-core 1, h2dev-core 1, player-main 3) */
   'assets/app/ui-core.js',
@@ -148,7 +150,7 @@ if (!emojiHits) ok('0 emoji trang tri ngoai du kien trong ' + EMOJI_CLEAN.length
 /* ---------- [5] Size class phai nam trong 4 muc chuan ---------- */
 head('[5] Size class h2-icon--NN chi dung 14/16/20/24 (h2dev-icons.css dong 11)');
 let sizeHits = 0;
-const sizeTargets = JS_TARGETS.concat(['index.html', 'player.html', 'learn.html'])
+const sizeTargets = JS_TARGETS.concat(['index.html', 'player.html', 'learn.html', 'graph.html'])
   .filter(f => fs.existsSync(path.join(ROOT, f)));
 for (const rel of sizeTargets) {
   const lines = fs.readFileSync(path.join(ROOT, rel), 'utf8').split(/\r?\n/);

@@ -12,12 +12,14 @@
    *   3) HTTP >= 400          -> reject Error h2SearchServiceError = true (banner loi trong dropdown)
    *   4) loi mang/abort       -> { rows: [] } (khong phai loi dich vu, tranh banner gia khi offline)
    * Doi shape tu mang -> object { rows, warning }: 2 noi goi trong tabs/content.js da cap nhat. */
-  function fetchApiSearch(q, limit) {
+  function fetchApiSearch(q, limit, opts) {
     if (!q || !q.trim()) return Promise.resolve({ rows: [], warning: "" });
     if (inflight) { try { inflight.abort(); } catch (e) {} }
     var ctrl = typeof AbortController !== "undefined" ? new AbortController() : null;
     inflight = ctrl;
     var url = "/api/search?q=" + encodeURIComponent(q.trim()) + "&limit=" + (limit || 8);
+    if (opts && opts.type) url += "&type=" + encodeURIComponent(String(opts.type).trim());
+    if (opts && opts.scope) url += "&scope=" + encodeURIComponent(String(opts.scope).trim());
     return fetch(url, { signal: ctrl ? ctrl.signal : undefined })
       .then(function (r) {
         if (!r.ok) {
@@ -68,12 +70,36 @@
    *   SOP                       -> /tai-lieu?did=<DOC_n>        tab Tai lieu loc DUNG 1 muc theo doc id
    *   LESSON                    -> /lotrinh/<SKU>              trang player 1 bai (server validate SKU)
    * Khong co du lieu de mo -> dest = null => directUrl rong, UI khong render nut "Mo" (khong co link gia). */
-  function ftsDestination(et, r) {
+  function ftsDestination(et, r, opts) {
     var id = String(r.entity_id || "").trim();
     var rawId = String(r.raw_id || "").trim();
     var parentRawId = String(r.parent_raw_id || "").trim();
     var kenhHandle = String(r.kenh_handle || "").trim();
+    var handleHienTai = String(r.handle_hien_tai || "").trim();
+    var parentKenhHandle = String(r.parent_kenh_handle || "").trim();
+    var isKenhCtx = Boolean(opts && opts.contextTab === "kenh-mau");
     if (et === "channel") {
+      if (isKenhCtx) {
+        var bestHandle = kenhHandle || handleHienTai;
+        var altRaw = rawId ? ("/rawkenh?rid=" + encodeURIComponent(rawId)) : "";
+        if (bestHandle) {
+          return {
+            href: "/kenh-mau?handle=" + encodeURIComponent(bestHandle),
+            label: "Mở trong Kênh mẫu ↗",
+            rawId: rawId,
+            altRawUrl: altRaw
+          };
+        }
+        if (rawId) {
+          return {
+            href: altRaw,
+            label: "Mở đúng hồ sơ kênh raw ↗",
+            rawId: rawId,
+            altRawUrl: ""
+          };
+        }
+        return null;
+      }
       if (rawId) return { href: "/rawkenh?rid=" + encodeURIComponent(rawId), label: "Mở đúng hồ sơ kênh raw ↗", rawId: rawId };
       if (kenhHandle) return { href: "/kenh-mau?handle=" + encodeURIComponent(kenhHandle), label: "Mở đúng kênh trong tab Kênh mẫu ↗", rawId: "" };
       /* 0/386 kenh roi vao day (do that: 149 co raw_id + 237 co handle trong kenh-mau = 386/386).
@@ -103,8 +129,33 @@
       if (docIdx < 0) return null;
       return { href: "/tai-lieu?did=" + encodeURIComponent(id) + "&di=" + docIdx, label: "Mở đúng tài liệu trong tab Tài liệu ↗", rawId: "" };
     }
-    if (et === "transcript" && parentRawId) {
-      return { href: "/rawkenh?rid=" + encodeURIComponent(parentRawId) + (id ? "&vid=" + encodeURIComponent(id) : ""), label: "Mở đúng kênh chứa video ↗", rawId: parentRawId };
+    if (et === "transcript") {
+      if (isKenhCtx) {
+        var altVidRaw = parentRawId ? ("/rawkenh?rid=" + encodeURIComponent(parentRawId) + (id ? "&vid=" + encodeURIComponent(id) : "")) : "";
+        if (parentKenhHandle) {
+          return {
+            href: "/kenh-mau?handle=" + encodeURIComponent(parentKenhHandle),
+            label: "Top Video · Mở kênh trong Kênh mẫu ↗",
+            rawId: parentRawId,
+            altRawUrl: altVidRaw,
+            badgeOverride: "Top Video"
+          };
+        }
+        if (parentRawId) {
+          return {
+            href: altVidRaw,
+            label: "Top Video (Raw) ↗",
+            rawId: parentRawId,
+            altRawUrl: "",
+            badgeOverride: "Top Video (Raw)"
+          };
+        }
+        return null;
+      }
+      if (parentRawId) {
+        return { href: "/rawkenh?rid=" + encodeURIComponent(parentRawId) + (id ? "&vid=" + encodeURIComponent(id) : ""), label: "Mở đúng kênh chứa video ↗", rawId: parentRawId };
+      }
+      return null;
     }
     if (et === "policy") {
       return { href: "/chienluoc?sub=policy" + (id ? "&item=" + encodeURIComponent(id) : ""), label: "Mở trụ cột Chính sách YouTube 2026 (" + id + ") ↗", rawId: "" };
@@ -145,13 +196,13 @@
     return null;
   }
 
-  function ftsToSuggestions(rows) {
+  function ftsToSuggestions(rows, opts) {
     return (rows || []).map(function (r) {
       var et = (r.entity_type || "").toLowerCase();
       /* PHASE 3 (2026-09-23): icon = TEN icon (he CSS mask), khong dung emoji. */
       var icon = et === "channel" ? "tv" : et === "lesson" || et === "video" ? "graduation-cap" : et === "timestamp" ? "clock" : et === "sop" ? "file-text" : et === "transcript" ? "scroll-text" : et === "policy" ? "shield" : et === "checklist" ? "check" : (et === "niche" || et === "subniche") ? "flame" : (et === "reup" || et === "meta") ? "layers" : "search";
-      var badge = r.entity_type || "FTS";
-      var dest = ftsDestination(et, r);
+      var dest = ftsDestination(et, r, opts);
+      var badge = (dest && dest.badgeOverride) ? dest.badgeOverride : (r.entity_type || "FTS");
       return {
         type: "fts",
         icon: icon,
@@ -161,6 +212,7 @@
         sub: String(r.snippet || "").replace(/<\/?mark>/g, "").slice(0, 120),
         searchTerm: String(r.title || r.entity_id || "").replace(/<\/?mark>/g, ""),
         rawId: dest && dest.rawId ? dest.rawId : "",
+        altRawUrl: dest && dest.altRawUrl ? dest.altRawUrl : "",
         directUrl: dest ? dest.href : "",
         btnLabel: dest ? dest.label : "",
         /* F3: dong KHONG co dich that -> UI khong duoc cho bam ra ket qua rong gia. */

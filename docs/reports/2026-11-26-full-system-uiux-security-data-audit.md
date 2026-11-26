@@ -60,3 +60,30 @@
 
 - **`phase08-final-hydrogen` (`gemini-4-hydrogen-xhigh`):** **`9.80 / 10.00`** (`P1: 1.95`, `P2: 1.95`, `P3: 1.98`, `P4: 2.00`, `P5: 1.92`) — `16/16` suites `EXIT 0`, `26/26` Playwright checks (`0` `A-1`, `0` overflow, `0` contrast issues, `H2FX` 0 idle rAF).
 - **`phase08-final-neon` (`gemini-4-neon-xhigh`):** **`CHECK-PASS`** — `92/92` security tests, tight CSP/CORS/CSRF, `11/11` `403` traversal blocks, `29/29` `aria-controls`, zero XSS/injection regressions across modified files.
+
+---
+
+## 4. Wave 2 Deep E2E & Spot Test-Fix Addendum (`uifix110` + `SW v29`)
+
+### 4.1 Surgical Fixes Applied & Verified Live (`http://127.0.0.1:8899`, `PID 177452`)
+1. **P1 CRITICAL — `video.docs` Wiped to `{}` (`scripts/hot_memory_store.js:106-143`, `assets/app/player-main.js:425`):** Replaced global `visited` Set in `safeMerge` with per-branch `ancestors` stack tracking (`add`/`finally delete` + `_cloneArray`) and added `hasValidDocs` fallback guard in `player-main.js`. Verified live bootstrap & DOM: `VIDEO-DD983D` (`6/6` populated docs, `6` `button[data-doc-file]`), `VIDEO-a152a6` (`5/5`), `VIDEO-96b420` (`4/4`), `0` blank `"Tài nguyên"` cards.
+2. **P1 — `#doc-preview-modal` Mobile Overflow (`assets/app/main.js:4945-4962`, `assets/h2dev-studio-v2.css`):** Added `min-width:0`, `flex-wrap:wrap`, `overflow-x:auto`, and `#doc-preview-body table { display:block; max-width:100%; overflow-x:auto }`. Verified `panelSW === panelCW` (`378px` @`390`, `348px` @`360`) and `0px` horizontal overflow.
+3. **P1 — `/nhac@1440` Stretched Buttons (`assets/viddar.css:2233`):** Scoped `flex: 1 1 0` to `:has(> .filter-btn ~ .filter-btn)` and excluded `.justify-between`/`.justify-center`/headings/`.h2-btn`. Verified `Sơ đồ DB`: `97px` (was `754px`), `Xem toàn bộ 49 tracks`: `174px` (was `719px`).
+4. **P1 — `/kenh-mau@900-1440` `.km-select` Clipping (`assets/viddar.css:2607-2629`, `assets/h2dev-studio-v2.css`):** Switched `.km-controls-row` to `minmax(240px, 1.8fr) repeat(3, minmax(150px, 1fr))` with `.km-filter-scroll` on `grid-column: 1 / -1`. Verified widths `377/210/210/210px` @`1440` and `349/194/194/194px` @`1024`, `0` mid-word clipping.
+5. **P2 — `#raw-deep-modal` Mobile Icons & `ytUrl` Fallback (`assets/app/main.js:3580, 3627`, `assets/app/tabs/content.js:3541`, `assets/h2dev-studio-v2.css`):** Distinct `tv` + `layout-grid` icons (`44×44px` mobile) and `safeExternalUrl()` + `@handle` fallback prior to YouTube search query.
+6. **P2 — `#music-studio-modal` & Player Modals (`assets/music_player_modal.js:186, 355`, `player.html:251-273`, `assets/player.css`, `assets/h2dev-studio-v2.css`):** Centered `.js-music-sodo-link` (`44px`), moved `.js-music-niche-link` sizing to CSS (`24px` desktop / `44px` mobile, `49/49` verified), and moved `#docModal`/`#close-shortcut-modal` sizing out of inline styles so all 4 controls measure `44×44px` on `<= 1024px`.
+7. **P2 — `/graph` (`graph.html:177-188, 626-635, 689-708`):** Added `.kg-hud-btn:focus-visible`, mobile `44×44px` `.kg-hud-btn` (`5/5` verified), and `@media (max-width: 380px)` mode-tab wrapping (`#btnModeFlow`/`#btnModeGraph`/`#btnModeMatrix` `sw === cw = 111px`, `clipped: false`).
+8. **P3 — `/chienluoc` & Active Tab Focus (`assets/app/tabs/content.js:4468`, `assets/viddar.css:2243`, `assets/h2dev-studio-v2.css`):** `85/85` `.cl-panel` inline handle/SKU buttons `>= 24px` (`0` below), all 6 `/chienluoc` topbar subnav buttons fit unclipped inside `390px` (`12..383px`, `44px` tall), and `#tabs .tab-btn.active:focus-visible` restores `--focus-ring`.
+9. **Legitimate Test-Fix & Cache-Busting (`uifix110` + `SW v29`):** Updated `scripts/audit-raw-124-e2e.js` for dynamic `PAGE_SIZE = 24` pagination against `data-tabs/raw-kenh-mau.json` (`156` cards across 7 pages, `156/156` HTTP 200 images), strengthened `scripts/verify_player_ui.js` (`#insightBadges a, span` + non-empty `#pdocslist` assertion), added `pytest.ini` (`norecursedirs`), ran `sync-tokens.js`, and bumped all assets to `?v=20261126-uifix110` (`0` stale `uifix109`) + `h2dev-shell-v29`/`h2dev-data-v29`.
+
+### 4.2 Wave 2 Full Verification Matrix (`EXIT 0` Across All Suites)
+| Suite / Gate | Exit | Measured Result |
+|---|---:|---|
+| `sync-tokens --check` / `gate-p1` / `gate-p2` / `gate-icons` / `gate-typography` / `check-ui-classes` / `guard-no-inline-onclick` / `gate-shell` | `0` | `8/8` PASS (`97` tokens / `12` CSS, `65/225` icons, `8/8` shell) |
+| `validate-project` / `sync-counts --check` / `tests/test_security_audit.js` / `py -3 -m pytest -q` | `0` | `355` videos, `1740` channels, `761` docs, `92/92` security, `12/12` pytest |
+| `playwright-g2-acceptance.js` | `0` | `26/26 PASS` (`0` console/page errors) |
+| `deep-ui-acceptance.js` | `0` | `12/12 PASS` (`0` console errors) |
+| `verify_player_ui.js` | `0` | `2/2` SKUs PASS (`VIDEO-a152a6` `5/5` docs & `12` badges; `VIDEO-96b420` `4/4` docs & `6` badges; `0` blank) |
+| `audit-raw-124-e2e.js` | `0` | `13/13 PASS` (page 1 = `24`, 7 pages = `156/156`, `156/156` HTTP 200 images, `0` errors) |
+| `cross-browser-acceptance.js` | `0` | `28 PASS / 0 FAIL` (Chromium, Firefox, WebKit) |
+| `teamwork_e2e_full_verification.js` | `0` | `ALL PASS 100%` (`24/24` steps, `355/355` matrix144 cards desktop & mobile) |

@@ -43,6 +43,11 @@
       if (/^\.\.?\//.test(u)) return u;
       return '';
     }
+    function safeExternalUrl(raw) {
+      const u = String(raw == null ? '' : raw).trim();
+      if (!u || /[\u0000-\u001F\u007F]/.test(u)) return '';
+      return /^https?:\/\//i.test(u) ? u : '';
+    }
     // G3: tab nav tach ra assets/app/tabs/nav.js (init sau khi c? TABS)
     let _tabNav = null;
     function ensureTabNav() {
@@ -111,7 +116,7 @@
      * (tabMarkup / more-menu) khong phai biet gi ve he icon. */
     TABS.forEach(t => { t.icon = ico(t.icon, 16); });
 
-    const APP_BUILD_VER = '20261126-uifix109';
+    const APP_BUILD_VER = '20261126-uifix110';
     // G-std: fallback chain like FckSignups useTools (primary -> no-ver -> fail soft)
     const _loadErrors = [];
     function noteLoadError(path, msg) {
@@ -3572,7 +3577,9 @@
         const yppNote = (productionToolkit && productionToolkit.yppRiskNote) || pData.yppRiskNote || {};
         const dataGaps = (productionToolkit && productionToolkit.dataGaps) || pData.dataGaps || {};
         const retentionProxy = (productionToolkit && productionToolkit.retentionAvdProxy) || pData.retentionAvdProxy || null;
-        const ytUrl = ch.url || ('https://www.youtube.com/results?search_query=' + encodeURIComponent(ch.title || ch.handle || ''));
+        const rawHandleStr = String(pData.handle || ch.handle || (ocr && ocr.handle) || '').trim();
+        const decodedHandle = (() => { try { return decodeURIComponent(rawHandleStr); } catch (_) { return rawHandleStr; } })().replace(/^@+/, '').trim();
+        const ytUrl = safeExternalUrl(ch.url) || safeExternalUrl(pData.url) || (decodedHandle ? ('https://www.youtube.com/@' + encodeURIComponent(decodedHandle)) : ('https://www.youtube.com/results?search_query=' + encodeURIComponent(pData.title || ch.title || r.id || '')));
         const rawSubs = pData.subscribers != null ? pData.subscribers : ch.subscribers;
         const subsDisplay = (rawSubs != null && rawSubs !== '') ? Number(rawSubs).toLocaleString('vi-VN') : (ocr.subsText || 'N/A');
         const rawViews = pData.views != null ? pData.views : ch.views;
@@ -3618,10 +3625,10 @@
                   </div>
                 </div>
                 <div class="raw-deep-header-actions" style="display:flex; align-items:center; gap:0.4rem; flex-shrink:0;">
-                  <button type="button" class="js-raw-modal-jump" data-open-tab="kenh-mau" data-kenh-q="${esc(r.id)}" style="padding:0.42rem 0.7rem; border-radius:0.55rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.25rem;" title="Đối chiếu kênh trong Kênh mẫu"><span class="raw-deep-mobile-hide">Kênh mẫu </span>↗</button>
-                  <button type="button" class="js-raw-modal-jump" data-sodo-jump="${esc(r.id)}" style="padding:0.42rem 0.7rem; border-radius:0.55rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:0.25rem;" title="Truy vết kênh ${esc(r.id)} trên Sơ đồ DB"><span class="raw-deep-mobile-hide">Sơ đồ DB </span>↗</button>
-                  <a href="${esc(ytUrl)}" target="_blank" rel="noopener noreferrer" style="padding:0.42rem 0.8rem; border-radius:0.55rem; background:rgba(239,68,68,0.85); color:#fff; font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:0.3rem;"><span style="display:inline-flex;">${ico('tv', 14)}</span><span class="raw-deep-mobile-hide"> Mở YouTube ${ico('arrow-up-right', 14)}</span></a>
-                  <button type="button" id="close-raw-deep" style="padding:0.42rem 0.8rem; border-radius:0.55rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center;" title="Đóng [Esc]">${ico('x', 14)}</button>
+                  <button type="button" class="js-raw-modal-jump" data-open-tab="kenh-mau" data-kenh-q="${esc(r.id)}" aria-label="Đối chiếu kênh trong Kênh mẫu" style="padding:0.42rem 0.7rem; border-radius:0.55rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.25rem;" title="Đối chiếu kênh trong Kênh mẫu"><span style="display:inline-flex;">${ico('tv', 14)}</span><span class="raw-deep-mobile-hide">Kênh mẫu ↗</span></button>
+                  <button type="button" class="js-raw-modal-jump" data-sodo-jump="${esc(r.id)}" aria-label="Truy vết kênh ${esc(r.id)} trên Sơ đồ DB" style="padding:0.42rem 0.7rem; border-radius:0.55rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:0.25rem;" title="Truy vết kênh ${esc(r.id)} trên Sơ đồ DB"><span style="display:inline-flex;">${ico('layout-grid', 14)}</span><span class="raw-deep-mobile-hide">Sơ đồ DB ↗</span></button>
+                  <a href="${esc(ytUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Mở kênh trên YouTube" style="padding:0.42rem 0.8rem; border-radius:0.55rem; background:rgba(239,68,68,0.85); color:#fff; font-size: 12px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:0.3rem;"><span style="display:inline-flex;">${ico('tv', 14)}</span><span class="raw-deep-mobile-hide"> Mở YouTube ${ico('arrow-up-right', 14)}</span></a>
+                  <button type="button" id="close-raw-deep" style="padding:0.42rem 0.8rem; border-radius:0.55rem; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg-2); font-size: 12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; justify-content:center;" aria-label="Đóng hồ sơ kênh" title="Đóng [Esc]">${ico('x', 14)}</button>
                 </div>
               </div>
               <div class="raw-deep-header-meta" style="display:flex; align-items:center; gap:0.5rem; font-size: 12px; color:var(--fg-muted); margin-top:0.35rem; flex-wrap:wrap;">
@@ -4936,24 +4943,24 @@
           const rawText = await resp.text();
           const renderedHtml = inlineMdFull(rawText, docSku || '');
           modal.innerHTML = `
-            <div style="position:relative; width:100%; max-width:960px; max-height:90vh; background:var(--surface-2); border:1px solid var(--border-strong); border-radius:1.25rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
-              <div style="padding:1rem 1.25rem; background:var(--surface); border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; gap:0.75rem; flex-shrink:0; flex-wrap:wrap;">
+            <div style="position:relative; width:100%; min-width:0; max-width:960px; max-height:90vh; background:var(--surface-2); border:1px solid var(--border-strong); border-radius:1.25rem; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(0,0,0,0.95);">
+              <div style="padding:1rem 1.25rem; background:var(--surface); border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; gap:0.75rem; flex-shrink:0; flex-wrap:wrap; min-width:0;">
                 <div style="min-width:0; flex:1;">
-                  <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap; margin-bottom:0.25rem;">
+                  <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap; margin-bottom:0.25rem; min-width:0;">
                     ${docCode ? `<span class="badge badge-brand font-mono">${esc(docCode)}</span>` : ''}
                     ${docSku ? `<span class="badge badge-muted font-mono">${esc(docSku)}</span>` : ''}
                     <span class="badge badge-blue font-mono">${esc(cleanUrl)}</span>
                   </div>
                   <h3 style="font-size:16px; font-weight:700; color:#fff; margin:0;" class="truncate">${esc(docTitle || cleanUrl)}</h3>
                 </div>
-                <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
+                <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0; flex-wrap:wrap; min-width:0; max-width:100%;">
                   <button type="button" id="btn-doc-scroll-top" class="filter-btn text-xs" title="Cuộn lên đầu tài liệu">${ico('chevron-up', 14)} Đầu trang</button>
                   <button type="button" id="btn-copy-doc-preview" class="filter-btn text-xs">${ico('copy', 14)} Sao chép nội dung</button>
                   <a href="/${esc(cleanUrl)}" target="_blank" rel="noopener noreferrer" class="filter-btn text-xs">${ico('arrow-up-right', 14)} Mở tab riêng</a>
                   <button type="button" id="btn-close-doc-preview" class="filter-btn text-xs" title="Đóng [Esc]">${ico('x', 14)} Đóng</button>
                 </div>
               </div>
-              <div id="doc-preview-body" style="padding:1.25rem 1.5rem; overflow-y:auto; flex:1; min-height:0; font-size:14px; line-height:1.65; color:var(--fg);">
+              <div id="doc-preview-body" style="padding:1.25rem 1.5rem; overflow-y:auto; overflow-x:auto; flex:1; min-height:0; min-width:0; font-size:14px; line-height:1.65; color:var(--fg);">
                 ${renderedHtml || `<pre style="white-space:pre-wrap; word-break:break-word; font-family:monospace; font-size:13px; color:var(--fg-2);">${esc(rawText)}</pre>`}
               </div>
             </div>

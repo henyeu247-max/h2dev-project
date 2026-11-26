@@ -422,7 +422,8 @@ window.addEventListener('keydown', (e)=>{
         const trackModules = Array.isArray(boot.trackModules) ? boot.trackModules : [];
         const flatItems = trackModules.flatMap(m => Array.isArray(m.items) ? m.items : []);
         const mergedVideo = Object.assign({}, boot.video);
-        if (Array.isArray(boot.docs) && boot.docs.length && (!mergedVideo.docs || !mergedVideo.docs.length)) {
+        const hasValidDocs = Array.isArray(mergedVideo.docs) && mergedVideo.docs.some(d => d && (d.title || d.file || d.readFile || d.link));
+        if (Array.isArray(boot.docs) && boot.docs.length && !hasValidDocs) {
           mergedVideo.docs = boot.docs;
         }
         const bySku = new Map(flatItems.map(it => [it.sku, it]));

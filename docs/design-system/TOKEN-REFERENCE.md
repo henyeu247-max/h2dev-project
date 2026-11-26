@@ -68,7 +68,7 @@ tap day du (CSS that co 97). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--focus-ring` | `0 0 0 2px var(--bg), 0 0 0 4px rgba(226,2,58,.6)` | `assets/viddar.css:87` | 24 |
+| `--focus-ring` | `0 0 0 2px var(--bg), 0 0 0 4px rgba(226,2,58,.6)` | `assets/viddar.css:87` | 25 |
 
 ### `font` (3 token)
 
@@ -185,7 +185,7 @@ tap day du (CSS that co 97). Tai lieu nay SINH TU MA NGUON nen khong the troi.
 
 | Token | Gia tri | Nguon (file:line) | Luot dung |
 |---|---|---|---|
-| `--h2-touch-min` | `44px` | `assets/h2dev-tokens.css:64` | 53 |
+| `--h2-touch-min` | `44px` | `assets/h2dev-tokens.css:64` | 61 |
 
 ### `h2-translate` (1 token)
 

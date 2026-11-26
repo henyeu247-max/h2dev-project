@@ -408,3 +408,41 @@ body:has(#playerMain[aria-busy="true"]) .h2-shell-footer { display: none !import
 /* Gap G1 (2026-10-14): chip kenh DIE o trang bai hoc (player-main.js, ham render #pchannelslist) dung 3 class Tailwind ma tailwind.css khong sinh (JS render dong, khong nam trong HTML nen gate check-ui-classes khong thay): khong co vien do, nen do, gach ngang ten kenh; chi con huy hieu DIE. Khai bao tuong minh o day (red-500 .40 / red-950 .20, cung ho mau voi .channel-chip-dead trong viddar.css). Rule `#pchannelslist > div` o tren dung !important cho nen va vien nen vien/nen do phai di qua selector ID + class de thang no. Chi trang player nap file nay. */
 #pchannelslist > div.border-red-500\/40 { border-color: rgba(239, 68, 68, 0.4) !important; background: rgba(69, 10, 10, 0.2) !important; }
 .line-through { text-decoration-line: line-through; }
+
+#docModalRawLink,
+#docModal button[data-action="copy-doc"],
+#docModal button[data-action="close-doc"] {
+  min-height: 38px;
+}
+#docModal button[data-action="close-doc"] {
+  min-width: 38px;
+}
+#close-shortcut-modal {
+  width: 36px;
+  height: 36px;
+}
+#docModalBody {
+  min-width: 0;
+  overflow-x: auto;
+  overflow-wrap: anywhere;
+}
+#docModalBody table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+@media (max-width: 1024px) {
+  #docModalRawLink,
+  #docModal button[data-action="copy-doc"],
+  #docModal button[data-action="close-doc"] {
+    min-height: var(--h2-touch-min);
+    min-width: var(--h2-touch-min);
+    justify-content: center;
+  }
+  #close-shortcut-modal {
+    width: var(--h2-touch-min);
+    height: var(--h2-touch-min);
+    min-width: var(--h2-touch-min);
+    min-height: var(--h2-touch-min);
+  }
+}

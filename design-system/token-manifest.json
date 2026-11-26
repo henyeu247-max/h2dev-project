@@ -250,10 +250,11 @@
       "value": "0 0 0 2px var(--bg), 0 0 0 4px rgba(226,2,58,.6)",
       "file": "assets/viddar.css",
       "line": 87,
-      "uses": 24,
+      "uses": 25,
       "usedIn": [
         "assets/h2dev-primitives.css",
         "assets/h2dev-shell.css",
+        "assets/h2dev-studio-v2.css",
         "assets/learn.css",
         "assets/player.css",
         "assets/viddar.css"
@@ -746,13 +747,14 @@
       "value": "44px",
       "file": "assets/h2dev-tokens.css",
       "line": 64,
-      "uses": 53,
+      "uses": 61,
       "usedIn": [
         "assets/h2dev-components-lesson-row.css",
         "assets/h2dev-primitives.css",
         "assets/h2dev-shell.css",
         "assets/h2dev-studio-v2.css",
         "assets/learn.css",
+        "assets/player.css",
         "assets/viddar.css",
         "scripts/gate-p2.js"
       ]

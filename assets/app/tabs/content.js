@@ -3538,7 +3538,9 @@ async function renderRawKenh() {
     const ocr = r.ocr || null;
     const vA = r.vitalityAudit || {};
     const vG = r.vidiqVerification && r.vidiqVerification.growth30d;
-    const ytUrl = ch.url || ('https://www.youtube.com/results?search_query=' + encodeURIComponent(ch.title || ch.handle || ''));
+    const rawHandleStr = String(ch.handle || vision.handle || (ocr && ocr.handle) || '').trim();
+    const decodedHandle = (() => { try { return decodeURIComponent(rawHandleStr); } catch (_) { return rawHandleStr; } })().replace(/^@+/, '').trim();
+    const ytUrl = safeExternalUrl(ch.url) || (decodedHandle ? ('https://www.youtube.com/@' + encodeURIComponent(decodedHandle)) : ('https://www.youtube.com/results?search_query=' + encodeURIComponent(ch.title || r.id || '')));
     const isTerminated = vA.healthStatus === 'DEAD_OR_PURGED' || (r.channelLifecycle && /^TERMINATED/.test(r.channelLifecycle.state || ''));
     const statusBadge = isTerminated
       ? `<span class="badge badge-red font-bold text-xs uppercase tracking-wider shrink-0">Đã bị gỡ · 404</span>`
@@ -4463,7 +4465,7 @@ async function renderChienLuoc() {
       if (part.startsWith('@') && part.length >= 3) {
         const cleanH = part.replace(/[.,;:)\]]+$/, '');
         const suffix = part.slice(cleanH.length);
-        return `<button type="button" data-open-tab="kenh-mau" data-kenh-handle="${esc(cleanH)}" class="text-emerald-400 hover:text-emerald-300 underline decoration-dotted font-mono cursor-pointer" title="Mở hồ sơ kênh mẫu ${esc(cleanH)}">${esc(cleanH)} ↗</button>${esc(suffix)}`;
+        return `<button type="button" data-open-tab="kenh-mau" data-kenh-handle="${esc(cleanH)}" class="inline-flex items-center text-emerald-400 hover:text-emerald-300 underline decoration-dotted font-mono cursor-pointer" title="Mở hồ sơ kênh mẫu ${esc(cleanH)}">${esc(cleanH)} ↗</button>${esc(suffix)}`;
       }
       return esc(part);
     }).join('');

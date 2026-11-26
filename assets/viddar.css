@@ -2230,7 +2230,7 @@ button.niche-row:focus-visible,
    D-06: hang co nhan di kem (vd "Tinh trang song:", toi 4 chip) tu 641px chia deu chieu rong chip (G-2). Cum nhieu chip (vd Kenh mau 34 chip) giu auto: chia deu o day lam chip co 30px (da do bang anh). */
 :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud) > .filter-btn { flex: 0 1 auto; }
 @media (min-width: 641px) {
-  :where(#content .flex-wrap:has(> .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud):has(> :not(.filter-btn)):not(:has(> .filter-btn ~ .filter-btn ~ .filter-btn ~ .filter-btn ~ .filter-btn)) > .filter-btn { flex: 1 1 0; min-width: max-content; }
+  :where(#content .flex-wrap:has(> .filter-btn ~ .filter-btn)):not(#video-filter-watch):not(#video-chip-cloud):not(.justify-between):not(.justify-center):not(:has(> :is(h1, h2, h3, h4, .h2-btn))):has(> :not(.filter-btn)):not(:has(> .filter-btn ~ .filter-btn ~ .filter-btn ~ .filter-btn ~ .filter-btn)) > .filter-btn { flex: 1 1 0; min-width: max-content; }
 }
 
 /* UI-fix 2026-10-09 (M1): chip le cuoi hang nhom loc Ngach gian ca hang tu 641 den 820px (<=640px da co luat rieng). */
@@ -2240,7 +2240,8 @@ button.niche-row:focus-visible,
 
 /* UI-fix 2026-10-09 (G-3): thanh topbar co dung 6 nut tren dien thoai (vd /chienluoc) giu MOT hang (dai subnav cao 48px, tu cuon ngang); truoc day 6 nut tren luoi 5 cot thanh 2 hang cao 92px, tran khoi dai 48px nen hang dau bi tieu de che va nut thu 6 nam ngoai tieu de. */
 @media (max-width: 640px) {
-  .quick-access--topbar .quick-access__list:has(> .quick-access__button:nth-child(6):last-child) { grid-template-columns: repeat(6, minmax(76px, 1fr)); }
+  .quick-access--topbar .quick-access__list:has(> .quick-access__button:nth-child(6):last-child) { display: flex; flex-wrap: nowrap; gap: 4px; width: max-content; min-width: 100%; }
+  .vd-topbar-subnav .quick-access--topbar .quick-access__list:has(> .quick-access__button:nth-child(6):last-child) > .quick-access__button { flex: 1 0 auto; min-width: var(--h2-touch-min); padding: 6px 6px; white-space: nowrap; }
   #video-transcript-modal { padding: 8px !important; }
   #video-transcript-modal .video-sub-modal-box { max-height: 95vh !important; border-radius: 12px !important; }
   #video-transcript-modal .video-sub-header { padding: 8px 10px !important; gap: 6px !important; }
@@ -2605,9 +2606,9 @@ input.km-page-jump:focus-visible,
   }
   #content[aria-labelledby="tab-kenh-mau"] .km-controls-row {
     display: grid;
-    grid-template-columns: minmax(0, 1.3fr) repeat(3, minmax(0, 1fr)) auto;
+    grid-template-columns: minmax(240px, 1.8fr) repeat(3, minmax(150px, 1fr));
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     margin-top: var(--h2-space-2);
     padding-top: var(--h2-space-2);
   }
@@ -2617,7 +2618,8 @@ input.km-page-jump:focus-visible,
     min-height: var(--h2-touch-min);
   }
   #content[aria-labelledby="tab-kenh-mau"] .km-controls-row .km-filter-scroll {
-    flex-wrap: nowrap;
+    grid-column: 1 / -1;
+    flex-wrap: wrap;
     gap: 6px;
     min-width: 0;
   }

@@ -71,6 +71,12 @@ body.app-body {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 6px 18px rgba(226, 2, 58, 0.16);
 }
 
+#tabs .tab-btn:focus-visible,
+#tabs .tab-btn.active:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
 #tabs .tab-btn.active::before {
   content: "";
   position: absolute;
@@ -530,10 +536,45 @@ textarea:focus-visible {
   align-items: center;
 }
 
-@media (min-width: 1025px) {
-  .km-select {
-    min-width: max-content;
-  }
+#doc-preview-modal > div {
+  min-width: 0;
+}
+
+#doc-preview-modal .badge {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#doc-preview-body {
+  min-width: 0;
+  overflow-x: auto;
+  overflow-wrap: anywhere;
+}
+
+#doc-preview-body table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#doc-preview-body pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.js-music-niche-link {
+  min-height: 24px;
+}
+
+.cl-panel button[data-kenh-handle],
+.cl-panel button[data-skus],
+.cl-panel button[data-open-tab],
+.cl-panel button[data-doc-preview],
+.cl-panel button[data-sodo-jump] {
+  min-height: 24px;
+  display: inline-flex;
+  align-items: center;
 }
 
 @media (max-width: 1024px) {
@@ -551,10 +592,16 @@ textarea:focus-visible {
     box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.55);
   }
 
-  #close-raw-deep {
+  #close-raw-deep,
+  .raw-deep-header-actions > button,
+  .raw-deep-header-actions > a {
     min-width: var(--h2-touch-min);
     min-height: var(--h2-touch-min);
     justify-content: center;
+  }
+
+  .js-music-niche-link {
+    min-height: var(--h2-touch-min);
   }
 
   #content .badge:is(button, a[href], [role="button"], [data-nx-sub-chip]):where(:not(.hidden):not([hidden])),
@@ -571,6 +618,12 @@ textarea:focus-visible {
   .tq-head {
     padding: 16px;
     border-radius: 14px;
+  }
+
+  .vd-topbar-subnav:has(.quick-access--topbar) {
+    scroll-snap-type: x proximity;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 

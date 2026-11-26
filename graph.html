@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
   <title>97yo-dev Nexus Graph — Hệ Thống Hóa Đa Dự Án &amp; Bản Đồ Liên Kết 355 Video</title>
-  <link rel="stylesheet" href="/assets/tailwind.css?v=20261126-uifix109">
-  <link rel="stylesheet" href="/assets/h2dev-tokens.css?v=20261126-uifix109">
-  <link rel="stylesheet" href="/assets/h2dev-icons.css?v=20261126-uifix109">
-  <link rel="stylesheet" href="/assets/h2dev-motion.css?v=20261126-uifix109">
+  <link rel="stylesheet" href="/assets/tailwind.css?v=20261126-uifix110">
+  <link rel="stylesheet" href="/assets/h2dev-tokens.css?v=20261126-uifix110">
+  <link rel="stylesheet" href="/assets/h2dev-icons.css?v=20261126-uifix110">
+  <link rel="stylesheet" href="/assets/h2dev-motion.css?v=20261126-uifix110">
   <style>
     :root {
       --bg: #050505;
@@ -180,7 +180,8 @@
     .nx-chip-filter:focus-visible,
     .nx-flow-card:focus-visible,
     .nx-crumb:focus-visible,
-    .nx-chip:focus-visible {
+    .nx-chip:focus-visible,
+    .kg-hud-btn:focus-visible {
       border-color: var(--accent-cyan);
       outline: 2px solid var(--accent-cyan);
       outline-offset: 1px;
@@ -627,6 +628,11 @@
         left: 8px;
         right: 8px;
       }
+      .kg-hud-btn {
+        min-height: 44px;
+        min-width: 44px;
+        justify-content: center;
+      }
       .kg-legend {
         left: 8px;
         right: 8px;
@@ -685,6 +691,25 @@
       }
     }
 
+    @media (max-width: 380px) {
+      .nx-topbar {
+        padding: 6px 8px;
+      }
+      .nx-mode-tabs {
+        gap: 2px;
+        padding: 2px;
+      }
+      .nx-mode-btn {
+        padding: 4px 3px;
+        letter-spacing: -0.02em;
+        white-space: normal;
+        line-height: 1.2;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       *, ::before, ::after {
         animation-duration: 0.01ms !important;
@@ -693,7 +718,7 @@
       }
     }
   </style>
-  <link rel="stylesheet" href="/assets/h2dev-studio-v2.css?v=20261126-uifix109">
+  <link rel="stylesheet" href="/assets/h2dev-studio-v2.css?v=20261126-uifix110">
 </head>
 <body>
     <!-- Main Navigation & Command Bar -->
@@ -839,7 +864,7 @@
     </aside>
   </main>
 
-  <script src="/assets/app/h2dev-fx.js?v=20261126-uifix109"></script>
-  <script src="/assets/app/graph-main.js?v=20261126-uifix109"></script>
+  <script src="/assets/app/h2dev-fx.js?v=20261126-uifix110"></script>
+  <script src="/assets/app/graph-main.js?v=20261126-uifix110"></script>
 </body>
 </html>

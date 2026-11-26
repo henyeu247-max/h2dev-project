@@ -68,7 +68,7 @@
   async function loadMusicCatalog() {
     if (musicData) return musicData;
     try {
-      const res = await fetch('data/music_catalog.json?v=20261126-uifix109');
+      const res = await fetch('data/music_catalog.json?v=20261126-uifix110');
       musicData = await res.json();
       return musicData;
     } catch (e) {
@@ -153,7 +153,7 @@
         : icoColored('alert-circle', 14, '#fde68a') + ' THẬN TRỌNG');
     const rawSrc = t.streamUrl || ('assets/nhac-nen/' + (t.folder && t.folder !== 'Nhạc nền' ? t.folder + '/' : '') + t.fileName);
     const safeSrc = safeMediaUrl(rawSrc);
-    const streamSrc = safeSrc ? safeSrc + (safeSrc.includes('?') ? '&' : '?') + 'v=20261126-uifix109' : '';
+    const streamSrc = safeSrc ? safeSrc + (safeSrc.includes('?') ? '&' : '?') + 'v=20261126-uifix110' : '';
 
     return `
       <div class="music-track-card" data-track-id="${esc(t.id)}" data-track-title="${esc(t.fileName)}" style="border-color:${isCopy ? '#7f1d1d' : 'var(--border-strong)'};">
@@ -183,7 +183,7 @@
             const nxQuery = /^long-form ambient$/i.test(firstSeg)
               ? 'H01'
               : (/^lịch sử đời sống$/i.test(firstSeg) ? 'H30' : firstSeg);
-            return `<div class="truncate"><strong style="color:var(--fg-muted);">Ngách:</strong> <a href="/ngachxanh?q=${encodeURIComponent(nxQuery)}" data-nx-q="${esc(nxQuery)}" class="js-music-niche-link" style="display:inline-flex; align-items:center; min-height:24px; padding:2px 0; color:#38bdf8; font-weight:600; text-decoration:none;" title="Đối chiếu ngách ${esc(rawCat)} trên Tab Ngách Xanh">${esc(rawCat)} ↗</a></div>`;
+            return `<div class="truncate"><strong style="color:var(--fg-muted);">Ngách:</strong> <a href="/ngachxanh?q=${encodeURIComponent(nxQuery)}" data-nx-q="${esc(nxQuery)}" class="js-music-niche-link" style="display:inline-flex; align-items:center; padding:2px 0; color:#38bdf8; font-weight:600; text-decoration:none;" title="Đối chiếu ngách ${esc(rawCat)} trên Tab Ngách Xanh">${esc(rawCat)} ↗</a></div>`;
           })()}
           <div class="truncate" title="${esc(t.mood || t.moodDescription)}"><strong style="color:var(--fg-muted);">Mood:</strong> ${esc(t.mood || t.moodDescription)}</div>
         </div>
@@ -352,7 +352,7 @@
                 <span style="color:var(--brand);display:inline-flex;align-items:center;">${ico('headphones', 24)}</span>
                 <h3 style="font-size: 16px; font-weight: 700; color:#fff; margin:0;" class="truncate">Trạm Nhạc Nền ${nicheCount} Ngách YouTube</h3>
                 <span style="font-size: 12px; font-weight:700; padding:0.12rem 0.5rem; border-radius:0.35rem; background:rgba(226,2,58,0.16); border:1px solid rgba(226,2,58,0.45); color:#fda4af;">${totalCount} Tracks (${safeCount} SAFE YPP)</span>
-                <a href="/sodo?snode=track:h2dev" class="js-music-sodo-link" style="font-size:12px; font-weight:700; padding:0.15rem 0.55rem; border-radius:0.35rem; background:var(--surface-2); border:1px solid var(--border-strong); color:#38bdf8; text-decoration:none;">Sơ đồ DB ↗</a>
+                <a href="/sodo?snode=track:h2dev" class="js-music-sodo-link" style="display:inline-flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; padding:0.15rem 0.55rem; border-radius:0.35rem; background:var(--surface-2); border:1px solid var(--border-strong); color:#38bdf8; text-decoration:none;">Sơ đồ DB ↗</a>
               </div>
             </div>
             <button type="button" id="close-music-studio" style="width:44px; height:44px; border-radius:50%; background:var(--surface-2); border:1px solid var(--border-strong); color:var(--fg); font-size: 14px; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;" aria-label="Đóng Trạm Nhạc Nền" title="Đóng [Esc]">${ico('x', 16)}</button>
